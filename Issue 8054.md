@@ -112,7 +112,7 @@ Changing status from new to needs_review.
 archive/issue_comments_070456.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8054.patch](tarball://root/attachments/some-uuid/ticket8054/trac_8054.patch) by mhansen created at 2010-08-26 19:02:59",
     "created_at": "2010-08-26T19:02:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8054",
     "type": "issue_comment",
@@ -121,7 +121,7 @@ archive/issue_comments_070456.json:
 }
 ```
 
-Attachment
+Attachment [trac_8054.patch](tarball://root/attachments/some-uuid/ticket8054/trac_8054.patch) by mhansen created at 2010-08-26 19:02:59
 
 
 
@@ -365,7 +365,7 @@ I've cc'd Rob Beezer about [comment:8 rebasing patches].
 archive/issue_comments_070467.json:
 ```json
 {
-    "body": "Attachment\n\noriginal patch rebased on 4.6.alpha1",
+    "body": "Attachment [trac_8054.2.patch](tarball://root/attachments/some-uuid/ticket8054/trac_8054.2.patch) by zimmerma created at 2010-09-19 18:56:36\n\noriginal patch rebased on 4.6.alpha1",
     "created_at": "2010-09-19T18:56:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8054",
     "type": "issue_comment",
@@ -374,7 +374,7 @@ archive/issue_comments_070467.json:
 }
 ```
 
-Attachment
+Attachment [trac_8054.2.patch](tarball://root/attachments/some-uuid/ticket8054/trac_8054.2.patch) by zimmerma created at 2010-09-19 18:56:36
 
 original patch rebased on 4.6.alpha1
 
@@ -508,7 +508,7 @@ Thanks, Rob.  I wasn't sure whether this is in the Guide.  I should reread it in
 archive/issue_comments_070473.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8054.3.patch](tarball://root/attachments/some-uuid/ticket8054/trac_8054.3.patch) by zimmerma created at 2010-09-20 07:47:48",
     "created_at": "2010-09-20T07:47:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8054",
     "type": "issue_comment",
@@ -517,7 +517,7 @@ archive/issue_comments_070473.json:
 }
 ```
 
-Attachment
+Attachment [trac_8054.3.patch](tarball://root/attachments/some-uuid/ticket8054/trac_8054.3.patch) by zimmerma created at 2010-09-20 07:47:48
 
 
 

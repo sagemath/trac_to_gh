@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6174
 archive/issue_comments_049235.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6174-sage_local_bin.patch](tarball://root/attachments/some-uuid/ticket6174/trac_6174-sage_local_bin.patch) by was created at 2009-06-01 00:16:31",
     "created_at": "2009-06-01T00:16:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6174",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_049235.json:
 }
 ```
 
-Attachment
+Attachment [trac_6174-sage_local_bin.patch](tarball://root/attachments/some-uuid/ticket6174/trac_6174-sage_local_bin.patch) by was created at 2009-06-01 00:16:31
 
 
 
@@ -49,7 +49,7 @@ Attachment
 archive/issue_comments_049236.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [README.txt](tarball://root/attachments/some-uuid/ticket6174/README.txt) by was created at 2009-06-01 00:37:01",
     "created_at": "2009-06-01T00:37:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6174",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_049236.json:
 }
 ```
 
-Attachment
+Attachment [README.txt](tarball://root/attachments/some-uuid/ticket6174/README.txt) by was created at 2009-06-01 00:37:01
 
 
 

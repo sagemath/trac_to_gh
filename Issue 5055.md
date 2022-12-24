@@ -177,7 +177,7 @@ Based on 3.3.alpha0
 archive/issue_comments_038516.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5055.patch](tarball://root/attachments/some-uuid/ticket5055/trac_5055.patch) by kcrisman created at 2009-01-24 02:49:57",
     "created_at": "2009-01-24T02:49:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5055",
     "type": "issue_comment",
@@ -186,7 +186,7 @@ archive/issue_comments_038516.json:
 }
 ```
 
-Attachment
+Attachment [trac_5055.patch](tarball://root/attachments/some-uuid/ticket5055/trac_5055.patch) by kcrisman created at 2009-01-24 02:49:57
 
 
 

@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9836
 archive/issue_comments_097050.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [lp_flot1.png](tarball://root/attachments/some-uuid/ticket9836/lp_flot1.png) by ncohen created at 2010-08-29 03:57:32",
     "created_at": "2010-08-29T03:57:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9835",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_097050.json:
 }
 ```
 
-Attachment
+Attachment [lp_flot1.png](tarball://root/attachments/some-uuid/ticket9836/lp_flot1.png) by ncohen created at 2010-08-29 03:57:32
 
 
 
@@ -53,7 +53,7 @@ Attachment
 archive/issue_comments_097051.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [lp_flot2.png](tarball://root/attachments/some-uuid/ticket9836/lp_flot2.png) by ncohen created at 2010-08-29 03:57:46",
     "created_at": "2010-08-29T03:57:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9835",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_097051.json:
 }
 ```
 
-Attachment
+Attachment [lp_flot2.png](tarball://root/attachments/some-uuid/ticket9836/lp_flot2.png) by ncohen created at 2010-08-29 03:57:46
 
 
 
@@ -157,7 +157,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_097056.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9836-reviewer.patch](tarball://root/attachments/some-uuid/ticket9836/trac_9836-reviewer.patch) by mvngu created at 2010-09-11 08:18:56",
     "created_at": "2010-09-11T08:18:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9835",
     "type": "issue_comment",
@@ -166,7 +166,7 @@ archive/issue_comments_097056.json:
 }
 ```
 
-Attachment
+Attachment [trac_9836-reviewer.patch](tarball://root/attachments/some-uuid/ticket9836/trac_9836-reviewer.patch) by mvngu created at 2010-09-11 08:18:56
 
 
 
@@ -227,7 +227,7 @@ Nathann
 archive/issue_comments_097059.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9836 - renaming a variable.patch](tarball://root/attachments/some-uuid/ticket9836/trac_9836 - renaming a variable.patch) by ncohen created at 2010-09-11 10:49:02",
     "created_at": "2010-09-11T10:49:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9835",
     "type": "issue_comment",
@@ -236,7 +236,7 @@ archive/issue_comments_097059.json:
 }
 ```
 
-Attachment
+Attachment [trac_9836 - renaming a variable.patch](tarball://root/attachments/some-uuid/ticket9836/trac_9836 - renaming a variable.patch) by ncohen created at 2010-09-11 10:49:02
 
 
 
@@ -299,7 +299,7 @@ Resolution: fixed
 archive/issue_comments_097063.json:
 ```json
 {
-    "body": "Attachment\n\nAdd new .png files to `MANIFEST.in`",
+    "body": "Attachment [trac_9836-manifest.patch](tarball://root/attachments/some-uuid/ticket9836/trac_9836-manifest.patch) by mpatel created at 2010-09-16 01:01:51\n\nAdd new .png files to `MANIFEST.in`",
     "created_at": "2010-09-16T01:01:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9835",
     "type": "issue_comment",
@@ -308,7 +308,7 @@ archive/issue_comments_097063.json:
 }
 ```
 
-Attachment
+Attachment [trac_9836-manifest.patch](tarball://root/attachments/some-uuid/ticket9836/trac_9836-manifest.patch) by mpatel created at 2010-09-16 01:01:51
 
 Add new .png files to `MANIFEST.in`
 

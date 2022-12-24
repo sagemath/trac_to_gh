@@ -67,7 +67,7 @@ Changing status from new to assigned.
 archive/issue_comments_035195.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4672.patch](tarball://root/attachments/some-uuid/ticket4672/trac_4672.patch) by mhansen created at 2008-12-02 06:00:34",
     "created_at": "2008-12-02T06:00:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4672",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_035195.json:
 }
 ```
 
-Attachment
+Attachment [trac_4672.patch](tarball://root/attachments/some-uuid/ticket4672/trac_4672.patch) by mhansen created at 2008-12-02 06:00:34
 
 
 
@@ -197,7 +197,7 @@ exit code: 1024
 archive/issue_comments_035200.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4672-2.patch](tarball://root/attachments/some-uuid/ticket4672/trac_4672-2.patch) by mhansen created at 2008-12-04 10:57:08",
     "created_at": "2008-12-04T10:57:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4672",
     "type": "issue_comment",
@@ -206,7 +206,7 @@ archive/issue_comments_035200.json:
 }
 ```
 
-Attachment
+Attachment [trac_4672-2.patch](tarball://root/attachments/some-uuid/ticket4672/trac_4672-2.patch) by mhansen created at 2008-12-04 10:57:08
 
 
 

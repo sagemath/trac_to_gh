@@ -51,7 +51,7 @@ Applies to 4.1.1
 archive/issue_comments_027267.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch implements this in the trivial cases now possible:  for a number field (including QQ) return QQbar;  for RR return CC, with the same precision (this was already implemented);  for CC, return the same field;  for finite fields, raise NotImplementedError; else raise NotImplementedError.\n\nI'm not sure if this is what Jason intended, but it would be a major undertaking to implement this in any other cases (finite fields, p-adic fields, function fields. ...)",
+    "body": "Attachment [trac_3835-algebraic_closure.patch](tarball://root/attachments/some-uuid/ticket3835/trac_3835-algebraic_closure.patch) by cremona created at 2009-08-30 20:36:33\n\nThe attached patch implements this in the trivial cases now possible:  for a number field (including QQ) return QQbar;  for RR return CC, with the same precision (this was already implemented);  for CC, return the same field;  for finite fields, raise NotImplementedError; else raise NotImplementedError.\n\nI'm not sure if this is what Jason intended, but it would be a major undertaking to implement this in any other cases (finite fields, p-adic fields, function fields. ...)",
     "created_at": "2009-08-30T20:36:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3835",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_027267.json:
 }
 ```
 
-Attachment
+Attachment [trac_3835-algebraic_closure.patch](tarball://root/attachments/some-uuid/ticket3835/trac_3835-algebraic_closure.patch) by cremona created at 2009-08-30 20:36:33
 
 The attached patch implements this in the trivial cases now possible:  for a number field (including QQ) return QQbar;  for RR return CC, with the same precision (this was already implemented);  for CC, return the same field;  for finite fields, raise NotImplementedError; else raise NotImplementedError.
 

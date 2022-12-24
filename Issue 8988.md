@@ -69,7 +69,7 @@ I have marked this ticket as "needs review" despite of the broken doctest. Since
 archive/issue_comments_083023.json:
 ```json
 {
-    "body": "Attachment\n\nOops, forgot to click replace existing file. Only the second patch should be applied. I have added a more formal reference to \"Toric Varieties\" book (and I checked with David Cox that it is OK to put a link to the draft). I have also moved the `kaehler_cone` function from Fano toric varieties to this patch.",
+    "body": "Attachment [trac_8988_add_support_for_toric_varieties.2.patch](tarball://root/attachments/some-uuid/ticket8988/trac_8988_add_support_for_toric_varieties.2.patch) by novoselt created at 2010-05-19 03:50:39\n\nOops, forgot to click replace existing file. Only the second patch should be applied. I have added a more formal reference to \"Toric Varieties\" book (and I checked with David Cox that it is OK to put a link to the draft). I have also moved the `kaehler_cone` function from Fano toric varieties to this patch.",
     "created_at": "2010-05-19T03:50:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_083023.json:
 }
 ```
 
-Attachment
+Attachment [trac_8988_add_support_for_toric_varieties.2.patch](tarball://root/attachments/some-uuid/ticket8988/trac_8988_add_support_for_toric_varieties.2.patch) by novoselt created at 2010-05-19 03:50:39
 
 Oops, forgot to click replace existing file. Only the second patch should be applied. I have added a more formal reference to "Toric Varieties" book (and I checked with David Cox that it is OK to put a link to the draft). I have also moved the `kaehler_cone` function from Fano toric varieties to this patch.
 
@@ -447,7 +447,7 @@ Apply after the main patch. Broken doctests are fixed by setting random seed.
 archive/issue_comments_083040.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good now. One final nitpick is that the Kaehler cone lives in some `ToricLattice` which is somewhat confusing. I propose a `ToricVariety_field.Pic()` method returning a suitable lattice for the Kahler cone to live in. For now thats just `ZZ^k` but in the future we could be more fancy. Also, rename `kaehler_cone` -> `Kaehler_cone` since it is a name. Patch is attached, let me know what you think.",
+    "body": "Attachment [trac_8988_doctest_fix_for_symbolic_random_tests.patch](tarball://root/attachments/some-uuid/ticket8988/trac_8988_doctest_fix_for_symbolic_random_tests.patch) by vbraun created at 2010-06-21 16:42:23\n\nLooks good now. One final nitpick is that the Kaehler cone lives in some `ToricLattice` which is somewhat confusing. I propose a `ToricVariety_field.Pic()` method returning a suitable lattice for the Kahler cone to live in. For now thats just `ZZ^k` but in the future we could be more fancy. Also, rename `kaehler_cone` -> `Kaehler_cone` since it is a name. Patch is attached, let me know what you think.",
     "created_at": "2010-06-21T16:42:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
@@ -456,7 +456,7 @@ archive/issue_comments_083040.json:
 }
 ```
 
-Attachment
+Attachment [trac_8988_doctest_fix_for_symbolic_random_tests.patch](tarball://root/attachments/some-uuid/ticket8988/trac_8988_doctest_fix_for_symbolic_random_tests.patch) by vbraun created at 2010-06-21 16:42:23
 
 Looks good now. One final nitpick is that the Kaehler cone lives in some `ToricLattice` which is somewhat confusing. I propose a `ToricVariety_field.Pic()` method returning a suitable lattice for the Kahler cone to live in. For now thats just `ZZ^k` but in the future we could be more fancy. Also, rename `kaehler_cone` -> `Kaehler_cone` since it is a name. Patch is attached, let me know what you think.
 
@@ -607,7 +607,7 @@ Added a Mori_vectors() method while I'm at it.
 archive/issue_comments_083048.json:
 ```json
 {
-    "body": "Attachment\n\nAdded parameters to `fan` method and changed the behaviour of `__call__` for fans in the case of no parameters at all - it seems more natural to return the fan in this case rather than all cones of all dimensions (which is what `cones` does).",
+    "body": "Attachment [trac_8988_Kahlercone_lattice.patch](tarball://root/attachments/some-uuid/ticket8988/trac_8988_Kahlercone_lattice.patch) by novoselt created at 2010-06-29 04:44:27\n\nAdded parameters to `fan` method and changed the behaviour of `__call__` for fans in the case of no parameters at all - it seems more natural to return the fan in this case rather than all cones of all dimensions (which is what `cones` does).",
     "created_at": "2010-06-29T04:44:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
@@ -616,7 +616,7 @@ archive/issue_comments_083048.json:
 }
 ```
 
-Attachment
+Attachment [trac_8988_Kahlercone_lattice.patch](tarball://root/attachments/some-uuid/ticket8988/trac_8988_Kahlercone_lattice.patch) by novoselt created at 2010-06-29 04:44:27
 
 Added parameters to `fan` method and changed the behaviour of `__call__` for fans in the case of no parameters at all - it seems more natural to return the fan in this case rather than all cones of all dimensions (which is what `cones` does).
 
@@ -627,7 +627,7 @@ Added parameters to `fan` method and changed the behaviour of `__call__` for fan
 archive/issue_comments_083049.json:
 ```json
 {
-    "body": "Attachment\n\nApply this patch and doctest fix.",
+    "body": "Attachment [trac_8988_add_support_for_toric_varieties.patch](tarball://root/attachments/some-uuid/ticket8988/trac_8988_add_support_for_toric_varieties.patch) by novoselt created at 2010-06-29 05:46:41\n\nApply this patch and doctest fix.",
     "created_at": "2010-06-29T05:46:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
@@ -636,7 +636,7 @@ archive/issue_comments_083049.json:
 }
 ```
 
-Attachment
+Attachment [trac_8988_add_support_for_toric_varieties.patch](tarball://root/attachments/some-uuid/ticket8988/trac_8988_add_support_for_toric_varieties.patch) by novoselt created at 2010-06-29 05:46:41
 
 Apply this patch and doctest fix.
 
@@ -647,7 +647,7 @@ Apply this patch and doctest fix.
 archive/issue_comments_083050.json:
 ```json
 {
-    "body": "Attachment\n\nCode to be included later.",
+    "body": "Attachment [trac_8988_Kaehler_Mori_cones.patch](tarball://root/attachments/some-uuid/ticket8988/trac_8988_Kaehler_Mori_cones.patch) by novoselt created at 2010-06-29 05:48:50\n\nCode to be included later.",
     "created_at": "2010-06-29T05:48:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
@@ -656,7 +656,7 @@ archive/issue_comments_083050.json:
 }
 ```
 
-Attachment
+Attachment [trac_8988_Kaehler_Mori_cones.patch](tarball://root/attachments/some-uuid/ticket8988/trac_8988_Kaehler_Mori_cones.patch) by novoselt created at 2010-06-29 05:48:50
 
 Code to be included later.
 
@@ -946,7 +946,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_083062.json:
 ```json
 {
-    "body": "Attachment\n\nHere's the fix.",
+    "body": "Attachment [trac_8988-sageinspect_doctest_fix.patch](tarball://root/attachments/some-uuid/ticket8988/trac_8988-sageinspect_doctest_fix.patch) by davidloeffler created at 2010-07-01 08:37:38\n\nHere's the fix.",
     "created_at": "2010-07-01T08:37:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
@@ -955,7 +955,7 @@ archive/issue_comments_083062.json:
 }
 ```
 
-Attachment
+Attachment [trac_8988-sageinspect_doctest_fix.patch](tarball://root/attachments/some-uuid/ticket8988/trac_8988-sageinspect_doctest_fix.patch) by davidloeffler created at 2010-07-01 08:37:38
 
 Here's the fix.
 
@@ -1040,7 +1040,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_083067.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8988_cmp_fix.patch](tarball://root/attachments/some-uuid/ticket8988/trac_8988_cmp_fix.patch) by novoselt created at 2010-07-01 16:28:46",
     "created_at": "2010-07-01T16:28:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
@@ -1049,7 +1049,7 @@ archive/issue_comments_083067.json:
 }
 ```
 
-Attachment
+Attachment [trac_8988_cmp_fix.patch](tarball://root/attachments/some-uuid/ticket8988/trac_8988_cmp_fix.patch) by novoselt created at 2010-07-01 16:28:46
 
 
 

@@ -52,7 +52,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3938
 archive/issue_comments_028218.json:
 ```json
 {
-    "body": "Attachment\n\nI've been playing around with this a bit, simplified your patch some, but one consequence is that \n\n\n```\nsage: parent(RealField(100)(1.5) + float(1.5)) # good?\n<type 'float'>\nsage: RealField(100)(2^4000) == float('inf')   # bad?\nTrue\n```\n\n\nThoughts?",
+    "body": "Attachment [trac3938-coercion-converts-native.patch](tarball://root/attachments/some-uuid/ticket3938/trac3938-coercion-converts-native.patch) by robertwb created at 2008-08-24 08:43:53\n\nI've been playing around with this a bit, simplified your patch some, but one consequence is that \n\n\n```\nsage: parent(RealField(100)(1.5) + float(1.5)) # good?\n<type 'float'>\nsage: RealField(100)(2^4000) == float('inf')   # bad?\nTrue\n```\n\n\nThoughts?",
     "created_at": "2008-08-24T08:43:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3938",
     "type": "issue_comment",
@@ -61,7 +61,7 @@ archive/issue_comments_028218.json:
 }
 ```
 
-Attachment
+Attachment [trac3938-coercion-converts-native.patch](tarball://root/attachments/some-uuid/ticket3938/trac3938-coercion-converts-native.patch) by robertwb created at 2008-08-24 08:43:53
 
 I've been playing around with this a bit, simplified your patch some, but one consequence is that 
 
@@ -101,7 +101,7 @@ Both of these changes make float act more like RDF.  I've sometimes wished that 
 archive/issue_comments_028220.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3938-type-coercion-2.patch](tarball://root/attachments/some-uuid/ticket3938/3938-type-coercion-2.patch) by robertwb created at 2008-08-27 16:13:58",
     "created_at": "2008-08-27T16:13:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3938",
     "type": "issue_comment",
@@ -110,7 +110,7 @@ archive/issue_comments_028220.json:
 }
 ```
 
-Attachment
+Attachment [3938-type-coercion-2.patch](tarball://root/attachments/some-uuid/ticket3938/3938-type-coercion-2.patch) by robertwb created at 2008-08-27 16:13:58
 
 
 
@@ -119,7 +119,7 @@ Attachment
 archive/issue_comments_028221.json:
 ```json
 {
-    "body": "Attachment\n\nI feel your pain...what a nasty patch to try and write! Well, I finally feel like I've got a correct, working solution. Apply all three patches.",
+    "body": "Attachment [3938-type-coercion-3.patch](tarball://root/attachments/some-uuid/ticket3938/3938-type-coercion-3.patch) by robertwb created at 2008-08-27 16:15:59\n\nI feel your pain...what a nasty patch to try and write! Well, I finally feel like I've got a correct, working solution. Apply all three patches.",
     "created_at": "2008-08-27T16:15:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3938",
     "type": "issue_comment",
@@ -128,7 +128,7 @@ archive/issue_comments_028221.json:
 }
 ```
 
-Attachment
+Attachment [3938-type-coercion-3.patch](tarball://root/attachments/some-uuid/ticket3938/3938-type-coercion-3.patch) by robertwb created at 2008-08-27 16:15:59
 
 I feel your pain...what a nasty patch to try and write! Well, I finally feel like I've got a correct, working solution. Apply all three patches.
 
@@ -310,7 +310,7 @@ Thanks for rebasing this. Since you're not the one who originally wrote it, do y
 archive/issue_comments_028229.json:
 ```json
 {
-    "body": "Attachment\n\nMerged the three patches, added a few fixes to precision.",
+    "body": "Attachment [3938.patch](tarball://root/attachments/some-uuid/ticket3938/3938.patch) by roed created at 2009-01-24 07:49:26\n\nMerged the three patches, added a few fixes to precision.",
     "created_at": "2009-01-24T07:49:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3938",
     "type": "issue_comment",
@@ -319,7 +319,7 @@ archive/issue_comments_028229.json:
 }
 ```
 
-Attachment
+Attachment [3938.patch](tarball://root/attachments/some-uuid/ticket3938/3938.patch) by roed created at 2009-01-24 07:49:26
 
 Merged the three patches, added a few fixes to precision.
 
@@ -374,7 +374,7 @@ OK, I'll go ahead and add those doctests.
 archive/issue_comments_028232.json:
 ```json
 {
-    "body": "Attachment\n\napply only this patch",
+    "body": "Attachment [3938-type-coercion-final.patch](tarball://root/attachments/some-uuid/ticket3938/3938-type-coercion-final.patch) by robertwb created at 2009-01-24 10:46:21\n\napply only this patch",
     "created_at": "2009-01-24T10:46:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3938",
     "type": "issue_comment",
@@ -383,7 +383,7 @@ archive/issue_comments_028232.json:
 }
 ```
 
-Attachment
+Attachment [3938-type-coercion-final.patch](tarball://root/attachments/some-uuid/ticket3938/3938-type-coercion-final.patch) by robertwb created at 2009-01-24 10:46:21
 
 apply only this patch
 

@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9005
 archive/issue_comments_083300.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [derangements.sage](tarball://root/attachments/some-uuid/ticket9005/derangements.sage) by amca01 created at 2010-05-29 06:00:16",
     "created_at": "2010-05-29T06:00:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9005",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_083300.json:
 }
 ```
 
-Attachment
+Attachment [derangements.sage](tarball://root/attachments/some-uuid/ticket9005/derangements.sage) by amca01 created at 2010-05-29 06:00:16
 
 
 
@@ -165,7 +165,7 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_083307.json:
 ```json
 {
-    "body": "Attachment\n\nSorry about that. Fixed.",
+    "body": "Attachment [trac_9005-derangements-ts.patch](tarball://root/attachments/some-uuid/ticket9005/trac_9005-derangements-ts.patch) by tscrim created at 2013-04-23 15:16:47\n\nSorry about that. Fixed.",
     "created_at": "2013-04-23T15:16:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9005",
     "type": "issue_comment",
@@ -174,7 +174,7 @@ archive/issue_comments_083307.json:
 }
 ```
 
-Attachment
+Attachment [trac_9005-derangements-ts.patch](tarball://root/attachments/some-uuid/ticket9005/trac_9005-derangements-ts.patch) by tscrim created at 2013-04-23 15:16:47
 
 Sorry about that. Fixed.
 

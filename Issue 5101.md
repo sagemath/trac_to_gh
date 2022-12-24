@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5101
 archive/issue_comments_038961.json:
 ```json
 {
-    "body": "Attachment\n\nI've looked over the patch and it looks reasonable.  Doctests pass on 3.3alpha3 for all (nontrivially) touched files.  Positive review.\n\nThis does depend on someone reviewing 2898, though.",
+    "body": "Attachment [sage-input-sequel.patch](tarball://root/attachments/some-uuid/ticket5101/sage-input-sequel.patch) by jason created at 2009-02-06 07:55:39\n\nI've looked over the patch and it looks reasonable.  Doctests pass on 3.3alpha3 for all (nontrivially) touched files.  Positive review.\n\nThis does depend on someone reviewing 2898, though.",
     "created_at": "2009-02-06T07:55:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5101",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_038961.json:
 }
 ```
 
-Attachment
+Attachment [sage-input-sequel.patch](tarball://root/attachments/some-uuid/ticket5101/sage-input-sequel.patch) by jason created at 2009-02-06 07:55:39
 
 I've looked over the patch and it looks reasonable.  Doctests pass on 3.3alpha3 for all (nontrivially) touched files.  Positive review.
 

@@ -115,7 +115,7 @@ Changing status from new to assigned.
 archive/issue_comments_036999.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4882.patch](tarball://root/attachments/some-uuid/ticket4882/trac_4882.patch) by mabshoff created at 2008-12-26 17:49:57",
     "created_at": "2008-12-26T17:49:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4882",
     "type": "issue_comment",
@@ -124,7 +124,7 @@ archive/issue_comments_036999.json:
 }
 ```
 
-Attachment
+Attachment [trac_4882.patch](tarball://root/attachments/some-uuid/ticket4882/trac_4882.patch) by mabshoff created at 2008-12-26 17:49:57
 
 
 
@@ -253,7 +253,7 @@ Michael
 archive/issue_comments_037002.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4882-part2.patch](tarball://root/attachments/some-uuid/ticket4882/trac_4882-part2.patch) by mabshoff created at 2008-12-26 22:26:46",
     "created_at": "2008-12-26T22:26:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4882",
     "type": "issue_comment",
@@ -262,7 +262,7 @@ archive/issue_comments_037002.json:
 }
 ```
 
-Attachment
+Attachment [trac_4882-part2.patch](tarball://root/attachments/some-uuid/ticket4882/trac_4882-part2.patch) by mabshoff created at 2008-12-26 22:26:46
 
 
 

@@ -119,7 +119,7 @@ patch that at least puts some files in the right places
 archive/issue_comments_002126.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached an initial patch which I believe puts all the right files and new lines of code in the right places. I haven't tried building yet. Apply this patch by `patch -p1 < gcd1.patch` in the gmp-4.2.1 directory.",
+    "body": "Attachment [gcd1.patch](tarball://root/attachments/some-uuid/ticket424/gcd1.patch) by dmharvey created at 2007-09-06 16:54:05\n\nI've attached an initial patch which I believe puts all the right files and new lines of code in the right places. I haven't tried building yet. Apply this patch by `patch -p1 < gcd1.patch` in the gmp-4.2.1 directory.",
     "created_at": "2007-09-06T16:54:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/424",
     "type": "issue_comment",
@@ -128,7 +128,7 @@ archive/issue_comments_002126.json:
 }
 ```
 
-Attachment
+Attachment [gcd1.patch](tarball://root/attachments/some-uuid/ticket424/gcd1.patch) by dmharvey created at 2007-09-06 16:54:05
 
 I've attached an initial patch which I believe puts all the right files and new lines of code in the right places. I haven't tried building yet. Apply this patch by `patch -p1 < gcd1.patch` in the gmp-4.2.1 directory.
 
@@ -157,7 +157,7 @@ fixed up various configuration/build files to work properly
 archive/issue_comments_002128.json:
 ```json
 {
-    "body": "Attachment\n\npatch for gmp spkg",
+    "body": "Attachment [gcd2.patch](tarball://root/attachments/some-uuid/ticket424/gcd2.patch) by dmharvey created at 2007-09-07 01:16:25\n\npatch for gmp spkg",
     "created_at": "2007-09-07T01:16:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/424",
     "type": "issue_comment",
@@ -166,7 +166,7 @@ archive/issue_comments_002128.json:
 }
 ```
 
-Attachment
+Attachment [gcd2.patch](tarball://root/attachments/some-uuid/ticket424/gcd2.patch) by dmharvey created at 2007-09-07 01:16:25
 
 patch for gmp spkg
 
@@ -177,7 +177,7 @@ patch for gmp spkg
 archive/issue_comments_002129.json:
 ```json
 {
-    "body": "Attachment\n\nI just attached a patch (`fastgcd.hg`) which should be applied to the GMP spkg (`gmp-4.2.1.p9.spkg`. BTW the file `spkg-install~` should be deleted from that spkg too.) This patch supersedes the files `gcd1.patch` and `gcd2.patch`. This new patch adds all relevant files, and also modifies the build scripts. (It also addresses #605, I hope). I've tested it on OSX ppc and intel, haven't tested it on sage.math yet.",
+    "body": "Attachment [fastgcd.hg](tarball://root/attachments/some-uuid/ticket424/fastgcd.hg) by dmharvey created at 2007-09-07 01:19:10\n\nI just attached a patch (`fastgcd.hg`) which should be applied to the GMP spkg (`gmp-4.2.1.p9.spkg`. BTW the file `spkg-install~` should be deleted from that spkg too.) This patch supersedes the files `gcd1.patch` and `gcd2.patch`. This new patch adds all relevant files, and also modifies the build scripts. (It also addresses #605, I hope). I've tested it on OSX ppc and intel, haven't tested it on sage.math yet.",
     "created_at": "2007-09-07T01:19:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/424",
     "type": "issue_comment",
@@ -186,7 +186,7 @@ archive/issue_comments_002129.json:
 }
 ```
 
-Attachment
+Attachment [fastgcd.hg](tarball://root/attachments/some-uuid/ticket424/fastgcd.hg) by dmharvey created at 2007-09-07 01:19:10
 
 I just attached a patch (`fastgcd.hg`) which should be applied to the GMP spkg (`gmp-4.2.1.p9.spkg`. BTW the file `spkg-install~` should be deleted from that spkg too.) This patch supersedes the files `gcd1.patch` and `gcd2.patch`. This new patch adds all relevant files, and also modifies the build scripts. (It also addresses #605, I hope). I've tested it on OSX ppc and intel, haven't tested it on sage.math yet.
 

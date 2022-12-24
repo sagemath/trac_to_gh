@@ -43,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7110
 archive/issue_comments_058926.json:
 ```json
 {
-    "body": "Attachment\n\nPort/merge/base #4046, #6459, #6694, #6865, #6939 for sagenb.",
+    "body": "Attachment [trac_7110-sagenb_ports.patch](tarball://root/attachments/some-uuid/ticket7110/trac_7110-sagenb_ports.patch) by mpatel created at 2009-10-04 14:52:11\n\nPort/merge/base #4046, #6459, #6694, #6865, #6939 for sagenb.",
     "created_at": "2009-10-04T14:52:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7110",
     "type": "issue_comment",
@@ -52,7 +52,7 @@ archive/issue_comments_058926.json:
 }
 ```
 
-Attachment
+Attachment [trac_7110-sagenb_ports.patch](tarball://root/attachments/some-uuid/ticket7110/trac_7110-sagenb_ports.patch) by mpatel created at 2009-10-04 14:52:11
 
 Port/merge/base #4046, #6459, #6694, #6865, #6939 for sagenb.
 
@@ -97,7 +97,7 @@ However:
 archive/issue_comments_058928.json:
 ```json
 {
-    "body": "Attachment\n\nv2: converted missed \"main.js\" in notebook.py.  Apply only this patch.",
+    "body": "Attachment [trac_7110-sagenb_ports_v2.patch](tarball://root/attachments/some-uuid/ticket7110/trac_7110-sagenb_ports_v2.patch) by mpatel created at 2009-10-04 17:28:00\n\nv2: converted missed \"main.js\" in notebook.py.  Apply only this patch.",
     "created_at": "2009-10-04T17:28:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7110",
     "type": "issue_comment",
@@ -106,7 +106,7 @@ archive/issue_comments_058928.json:
 }
 ```
 
-Attachment
+Attachment [trac_7110-sagenb_ports_v2.patch](tarball://root/attachments/some-uuid/ticket7110/trac_7110-sagenb_ports_v2.patch) by mpatel created at 2009-10-04 17:28:00
 
 v2: converted missed "main.js" in notebook.py.  Apply only this patch.
 
@@ -159,7 +159,7 @@ Please apply all three patches in lexicographical order ***after*** the [attachm
 archive/issue_comments_058931.json:
 ```json
 {
-    "body": "Attachment\n\nMinimal rebase of #4046, #6694, #6865, #6939 for SageNB.  Apply only this patch.",
+    "body": "Attachment [trac_7110-sagenb_ports_minimal.patch](tarball://root/attachments/some-uuid/ticket7110/trac_7110-sagenb_ports_minimal.patch) by mpatel created at 2009-10-11 13:38:22\n\nMinimal rebase of #4046, #6694, #6865, #6939 for SageNB.  Apply only this patch.",
     "created_at": "2009-10-11T13:38:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7110",
     "type": "issue_comment",
@@ -168,7 +168,7 @@ archive/issue_comments_058931.json:
 }
 ```
 
-Attachment
+Attachment [trac_7110-sagenb_ports_minimal.patch](tarball://root/attachments/some-uuid/ticket7110/trac_7110-sagenb_ports_minimal.patch) by mpatel created at 2009-10-11 13:38:22
 
 Minimal rebase of #4046, #6694, #6865, #6939 for SageNB.  Apply only this patch.
 

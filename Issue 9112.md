@@ -83,7 +83,7 @@ I have a patch for this which I was just about to attach, but does change the re
 archive/issue_comments_084769.json:
 ```json
 {
-    "body": "Attachment\n\nAfter #8910, you'll be able to do something like\n\n\n```\nsage: S = SemistandardTableaux([3,2,1])\nsage: s = S.random_element()\nsage: s\n[[2, 2, 2], [3, 5], [4]]\nsage: s.parent() # after #8910\nSemistandard tableaux of shape [3, 2, 1]\n```\n\n\nIf you had a different parent such as \"Semistandard tableaux of shape [3, 2, 1] with maximum entry 8\" then you could get at the 8 from the parent method of the tableaux.\n\nI see this as similar to the following example\n\n\n```\n\nsage: R = Integers(6)\nsage: f = R(1); f\n1\nsage: f.parent().order()\n6\n```\n\n\nHere, the element `f` does not print out that it is 1 mod 6.  It just prints out 1.",
+    "body": "Attachment [combinat-tableau_py.patch](tarball://root/attachments/some-uuid/ticket9112/combinat-tableau_py.patch) by mhansen created at 2010-06-01 23:24:59\n\nAfter #8910, you'll be able to do something like\n\n\n```\nsage: S = SemistandardTableaux([3,2,1])\nsage: s = S.random_element()\nsage: s\n[[2, 2, 2], [3, 5], [4]]\nsage: s.parent() # after #8910\nSemistandard tableaux of shape [3, 2, 1]\n```\n\n\nIf you had a different parent such as \"Semistandard tableaux of shape [3, 2, 1] with maximum entry 8\" then you could get at the 8 from the parent method of the tableaux.\n\nI see this as similar to the following example\n\n\n```\n\nsage: R = Integers(6)\nsage: f = R(1); f\n1\nsage: f.parent().order()\n6\n```\n\n\nHere, the element `f` does not print out that it is 1 mod 6.  It just prints out 1.",
     "created_at": "2010-06-01T23:24:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9112",
     "type": "issue_comment",
@@ -92,7 +92,7 @@ archive/issue_comments_084769.json:
 }
 ```
 
-Attachment
+Attachment [combinat-tableau_py.patch](tarball://root/attachments/some-uuid/ticket9112/combinat-tableau_py.patch) by mhansen created at 2010-06-01 23:24:59
 
 After #8910, you'll be able to do something like
 
@@ -302,7 +302,7 @@ I'll fix those things and post the new patch.
 archive/issue_comments_084775.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9112_tableau_py.patch](tarball://root/attachments/some-uuid/ticket9112/trac_9112_tableau_py.patch) by hthomas created at 2010-06-02 17:53:49",
     "created_at": "2010-06-02T17:53:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9112",
     "type": "issue_comment",
@@ -311,7 +311,7 @@ archive/issue_comments_084775.json:
 }
 ```
 
-Attachment
+Attachment [trac_9112_tableau_py.patch](tarball://root/attachments/some-uuid/ticket9112/trac_9112_tableau_py.patch) by hthomas created at 2010-06-02 17:53:49
 
 
 
@@ -380,7 +380,7 @@ Changing status from new to needs_review.
 archive/issue_comments_084779.json:
 ```json
 {
-    "body": "Attachment\n\nThis looks good for the most part.  I've uploaded a reviewer patch which fixes some failing doctests, changes `__repr__` to `_repr_` throughout the file, improves some docstrings, and improves the efficiency of `__contains__` for semistandard tableaux.  There is a lot more that can be done with this file, but these patches make sage better and there is no reason for them not to go in right away.  I'll open another ticket for general cleanup of tableau.py.\n\nSo, in short, I give a positive review to the patch [http://trac.sagemath.org/sage_trac/attachment/ticket/9112/trac_9112_tableau_py.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/9112/trac_9112_tableau_py.patch) , provided my reviewer patch is applied on top of it.  So now someone (possibly the original author) needs to approve the reviewer patch, and the ticket can be marked as positive review.",
+    "body": "Attachment [trac_9112_reviewer.patch](tarball://root/attachments/some-uuid/ticket9112/trac_9112_reviewer.patch) by jbandlow created at 2010-06-17 13:03:05\n\nThis looks good for the most part.  I've uploaded a reviewer patch which fixes some failing doctests, changes `__repr__` to `_repr_` throughout the file, improves some docstrings, and improves the efficiency of `__contains__` for semistandard tableaux.  There is a lot more that can be done with this file, but these patches make sage better and there is no reason for them not to go in right away.  I'll open another ticket for general cleanup of tableau.py.\n\nSo, in short, I give a positive review to the patch [http://trac.sagemath.org/sage_trac/attachment/ticket/9112/trac_9112_tableau_py.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/9112/trac_9112_tableau_py.patch) , provided my reviewer patch is applied on top of it.  So now someone (possibly the original author) needs to approve the reviewer patch, and the ticket can be marked as positive review.",
     "created_at": "2010-06-17T13:03:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9112",
     "type": "issue_comment",
@@ -389,7 +389,7 @@ archive/issue_comments_084779.json:
 }
 ```
 
-Attachment
+Attachment [trac_9112_reviewer.patch](tarball://root/attachments/some-uuid/ticket9112/trac_9112_reviewer.patch) by jbandlow created at 2010-06-17 13:03:05
 
 This looks good for the most part.  I've uploaded a reviewer patch which fixes some failing doctests, changes `__repr__` to `_repr_` throughout the file, improves some docstrings, and improves the efficiency of `__contains__` for semistandard tableaux.  There is a lot more that can be done with this file, but these patches make sage better and there is no reason for them not to go in right away.  I'll open another ticket for general cleanup of tableau.py.
 
@@ -545,7 +545,7 @@ Nevermind. That works just fine. If the user were to call that they would get an
 archive/issue_comments_084786.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9112_rereviewed.patch](tarball://root/attachments/some-uuid/ticket9112/trac_9112_rereviewed.patch) by jbandlow created at 2010-06-28 13:49:35",
     "created_at": "2010-06-28T13:49:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9112",
     "type": "issue_comment",
@@ -554,7 +554,7 @@ archive/issue_comments_084786.json:
 }
 ```
 
-Attachment
+Attachment [trac_9112_rereviewed.patch](tarball://root/attachments/some-uuid/ticket9112/trac_9112_rereviewed.patch) by jbandlow created at 2010-06-28 13:49:35
 
 
 
@@ -563,7 +563,7 @@ Attachment
 archive/issue_comments_084787.json:
 ```json
 {
-    "body": "Attachment\n\nThanks Eric, positive review!  Nice work.  I've uploaded a patch which folds all the other changes together, to make things easier on the release manager. It contains nothing new.",
+    "body": "Attachment [trac_9112_folded.patch](tarball://root/attachments/some-uuid/ticket9112/trac_9112_folded.patch) by jbandlow created at 2010-06-28 13:52:53\n\nThanks Eric, positive review!  Nice work.  I've uploaded a patch which folds all the other changes together, to make things easier on the release manager. It contains nothing new.",
     "created_at": "2010-06-28T13:52:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9112",
     "type": "issue_comment",
@@ -572,7 +572,7 @@ archive/issue_comments_084787.json:
 }
 ```
 
-Attachment
+Attachment [trac_9112_folded.patch](tarball://root/attachments/some-uuid/ticket9112/trac_9112_folded.patch) by jbandlow created at 2010-06-28 13:52:53
 
 Thanks Eric, positive review!  Nice work.  I've uploaded a patch which folds all the other changes together, to make things easier on the release manager. It contains nothing new.
 
@@ -619,7 +619,7 @@ The patch `trac_9112_folded_untabified.patch` uses tabs for indentation, which i
 archive/issue_comments_084790.json:
 ```json
 {
-    "body": "Attachment\n\nVersion without tabs - apply only this patch",
+    "body": "Attachment [trac_9112_folded_untabified.patch](tarball://root/attachments/some-uuid/ticket9112/trac_9112_folded_untabified.patch) by davidloeffler created at 2010-06-30 18:25:54\n\nVersion without tabs - apply only this patch",
     "created_at": "2010-06-30T18:25:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9112",
     "type": "issue_comment",
@@ -628,7 +628,7 @@ archive/issue_comments_084790.json:
 }
 ```
 
-Attachment
+Attachment [trac_9112_folded_untabified.patch](tarball://root/attachments/some-uuid/ticket9112/trac_9112_folded_untabified.patch) by davidloeffler created at 2010-06-30 18:25:54
 
 Version without tabs - apply only this patch
 

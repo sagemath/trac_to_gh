@@ -271,7 +271,7 @@ Changing the __index__ method to return int(Integer(self)) fixes the problem.
 archive/issue_comments_028466.json:
 ```json
 {
-    "body": "Attachment\n\nApply trac_3962-3.patch only.  It incorporates both an updated __index__ method and the necessary doctest fixes and additions.",
+    "body": "Attachment [trac_3962-3.patch](tarball://root/attachments/some-uuid/ticket3962/trac_3962-3.patch) by jason created at 2008-10-02 03:45:46\n\nApply trac_3962-3.patch only.  It incorporates both an updated __index__ method and the necessary doctest fixes and additions.",
     "created_at": "2008-10-02T03:45:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3962",
     "type": "issue_comment",
@@ -280,7 +280,7 @@ archive/issue_comments_028466.json:
 }
 ```
 
-Attachment
+Attachment [trac_3962-3.patch](tarball://root/attachments/some-uuid/ticket3962/trac_3962-3.patch) by jason created at 2008-10-02 03:45:46
 
 Apply trac_3962-3.patch only.  It incorporates both an updated __index__ method and the necessary doctest fixes and additions.
 

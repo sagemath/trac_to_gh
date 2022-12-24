@@ -171,7 +171,7 @@ add doctests
 archive/issue_comments_062322.json:
 ```json
 {
-    "body": "Attachment\n\nThe new pynac package here\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.10.spkg\n\ncontains fixes for both the problem in the description and the one in comment:3.\n\nattachment:trac_7406-power_latex.patch contains doctests for the fix.\n\nNote that the new pynac version also contains fixes for #7508 and #7264. Tests should be run with the patches from those tickets also applied in this order:\n\n* #7508\n* #7264 \n* #7406 (this ticket)\n\nThis ticket now depends on #7490, #7508 and #7264.",
+    "body": "Attachment [trac_7406-power_latex.patch](tarball://root/attachments/some-uuid/ticket7406/trac_7406-power_latex.patch) by burcin created at 2009-11-22 18:11:40\n\nThe new pynac package here\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.10.spkg\n\ncontains fixes for both the problem in the description and the one in comment:3.\n\nattachment:trac_7406-power_latex.patch contains doctests for the fix.\n\nNote that the new pynac version also contains fixes for #7508 and #7264. Tests should be run with the patches from those tickets also applied in this order:\n\n* #7508\n* #7264 \n* #7406 (this ticket)\n\nThis ticket now depends on #7490, #7508 and #7264.",
     "created_at": "2009-11-22T18:11:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7406",
     "type": "issue_comment",
@@ -180,7 +180,7 @@ archive/issue_comments_062322.json:
 }
 ```
 
-Attachment
+Attachment [trac_7406-power_latex.patch](tarball://root/attachments/some-uuid/ticket7406/trac_7406-power_latex.patch) by burcin created at 2009-11-22 18:11:40
 
 The new pynac package here
 

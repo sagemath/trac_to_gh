@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1682
 archive/issue_comments_010670.json:
 ```json
 {
-    "body": "Attachment\n\npatch by was",
+    "body": "Attachment [trac-1576-enable_by_default.patch](tarball://root/attachments/some-uuid/ticket1682/trac-1576-enable_by_default.patch) by mabshoff created at 2008-01-04 18:15:42\n\npatch by was",
     "created_at": "2008-01-04T18:15:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1682",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_010670.json:
 }
 ```
 
-Attachment
+Attachment [trac-1576-enable_by_default.patch](tarball://root/attachments/some-uuid/ticket1682/trac-1576-enable_by_default.patch) by mabshoff created at 2008-01-04 18:15:42
 
 patch by was
 
@@ -96,7 +96,7 @@ I think the default level is the right one (hence the default). I would be happy
 archive/issue_comments_010673.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1682-implicit-mul-doc.patch](tarball://root/attachments/some-uuid/ticket1682/1682-implicit-mul-doc.patch) by robertwb created at 2008-01-09 07:28:47",
     "created_at": "2008-01-09T07:28:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1682",
     "type": "issue_comment",
@@ -105,7 +105,7 @@ archive/issue_comments_010673.json:
 }
 ```
 
-Attachment
+Attachment [1682-implicit-mul-doc.patch](tarball://root/attachments/some-uuid/ticket1682/1682-implicit-mul-doc.patch) by robertwb created at 2008-01-09 07:28:47
 
 
 
@@ -469,7 +469,7 @@ or
 archive/issue_comments_010683.json:
 ```json
 {
-    "body": "Attachment\n\nfix \"time ...\" bug",
+    "body": "Attachment [1682-implicit-mul-time.patch](tarball://root/attachments/some-uuid/ticket1682/1682-implicit-mul-time.patch) by robertwb created at 2008-01-10 08:52:02\n\nfix \"time ...\" bug",
     "created_at": "2008-01-10T08:52:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1682",
     "type": "issue_comment",
@@ -478,7 +478,7 @@ archive/issue_comments_010683.json:
 }
 ```
 
-Attachment
+Attachment [1682-implicit-mul-time.patch](tarball://root/attachments/some-uuid/ticket1682/1682-implicit-mul-time.patch) by robertwb created at 2008-01-10 08:52:02
 
 fix "time ..." bug
 
@@ -738,7 +738,7 @@ The reasons:
 archive/issue_comments_010687.json:
 ```json
 {
-    "body": "Attachment\n\nThe above patch makes this optional via an `implicit_multiplication(...)` function. All patches should be applied.",
+    "body": "Attachment [1682-implicit-mul-no-default.patch](tarball://root/attachments/some-uuid/ticket1682/1682-implicit-mul-no-default.patch) by robertwb created at 2008-01-15 05:55:39\n\nThe above patch makes this optional via an `implicit_multiplication(...)` function. All patches should be applied.",
     "created_at": "2008-01-15T05:55:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1682",
     "type": "issue_comment",
@@ -747,7 +747,7 @@ archive/issue_comments_010687.json:
 }
 ```
 
-Attachment
+Attachment [1682-implicit-mul-no-default.patch](tarball://root/attachments/some-uuid/ticket1682/1682-implicit-mul-no-default.patch) by robertwb created at 2008-01-15 05:55:39
 
 The above patch makes this optional via an `implicit_multiplication(...)` function. All patches should be applied.
 

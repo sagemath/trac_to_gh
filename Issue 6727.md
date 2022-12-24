@@ -49,7 +49,7 @@ based on Sage 4.1.1.rc2
 archive/issue_comments_055172.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good.  I think \"PNG's\" should be \"PNGs\", but I still give this a positive review since its certainly an improvement.  All tests for sage/plot/ passed.",
+    "body": "Attachment [trac_6727-spell-check-plot.patch](tarball://root/attachments/some-uuid/ticket6727/trac_6727-spell-check-plot.patch) by mhampton created at 2009-08-12 23:03:38\n\nLooks good.  I think \"PNG's\" should be \"PNGs\", but I still give this a positive review since its certainly an improvement.  All tests for sage/plot/ passed.",
     "created_at": "2009-08-12T23:03:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6727",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_055172.json:
 }
 ```
 
-Attachment
+Attachment [trac_6727-spell-check-plot.patch](tarball://root/attachments/some-uuid/ticket6727/trac_6727-spell-check-plot.patch) by mhampton created at 2009-08-12 23:03:38
 
 Looks good.  I think "PNG's" should be "PNGs", but I still give this a positive review since its certainly an improvement.  All tests for sage/plot/ passed.
 

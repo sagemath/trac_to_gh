@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4602
 archive/issue_comments_034499.json:
 ```json
 {
-    "body": "Attachment\n\ntypos in files under directory sage/catalogue",
+    "body": "Attachment [trac_4602.patch](tarball://root/attachments/some-uuid/ticket4602/trac_4602.patch) by mvngu created at 2008-11-24 10:29:23\n\ntypos in files under directory sage/catalogue",
     "created_at": "2008-11-24T10:29:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4602",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_034499.json:
 }
 ```
 
-Attachment
+Attachment [trac_4602.patch](tarball://root/attachments/some-uuid/ticket4602/trac_4602.patch) by mvngu created at 2008-11-24 10:29:23
 
 typos in files under directory sage/catalogue
 

@@ -103,7 +103,7 @@ More generally this patch allows coercion of any polynomial to QQ, as long as it
 archive/issue_comments_008534.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1334.hg](tarball://root/attachments/some-uuid/ticket1334/1334.hg) by dmharvey created at 2007-12-01 17:46:46",
     "created_at": "2007-12-01T17:46:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1334",
     "type": "issue_comment",
@@ -112,7 +112,7 @@ archive/issue_comments_008534.json:
 }
 ```
 
-Attachment
+Attachment [1334.hg](tarball://root/attachments/some-uuid/ticket1334/1334.hg) by dmharvey created at 2007-12-01 17:46:46
 
 
 

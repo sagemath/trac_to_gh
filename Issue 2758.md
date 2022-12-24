@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2758
 archive/issue_comments_018960.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [iml-gfortran.patch](tarball://root/attachments/some-uuid/ticket2758/iml-gfortran.patch) by tabbott created at 2008-04-01 18:52:17",
     "created_at": "2008-04-01T18:52:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2758",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_018960.json:
 }
 ```
 
-Attachment
+Attachment [iml-gfortran.patch](tarball://root/attachments/some-uuid/ticket2758/iml-gfortran.patch) by tabbott created at 2008-04-01 18:52:17
 
 
 
@@ -49,7 +49,7 @@ Attachment
 archive/issue_comments_018961.json:
 ```json
 {
-    "body": "Attachment\n\nBoth patches look good to me. Positive review. The linbox patch has been merged in linbox-1.1.5rc2.p7, the iml patch has been merged in iml-1.0.1.p10.\n\nCheers,\n\nMichael",
+    "body": "Attachment [linbox-gfortran.patch](tarball://root/attachments/some-uuid/ticket2758/linbox-gfortran.patch) by mabshoff created at 2008-04-01 20:50:44\n\nBoth patches look good to me. Positive review. The linbox patch has been merged in linbox-1.1.5rc2.p7, the iml patch has been merged in iml-1.0.1.p10.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-01T20:50:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2758",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_018961.json:
 }
 ```
 
-Attachment
+Attachment [linbox-gfortran.patch](tarball://root/attachments/some-uuid/ticket2758/linbox-gfortran.patch) by mabshoff created at 2008-04-01 20:50:44
 
 Both patches look good to me. Positive review. The linbox patch has been merged in linbox-1.1.5rc2.p7, the iml patch has been merged in iml-1.0.1.p10.
 

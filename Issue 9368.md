@@ -73,7 +73,7 @@ Changing status from new to needs_review.
 archive/issue_comments_088982.json:
 ```json
 {
-    "body": "Attachment\n\nA new package can be found at \n\nhttp://boxen.math.washington.edu/home/kirkby/patches/fortran-20100629.spkg\n\nNote, this is just a tar file, not a compressed tar file, as compressing the contents, which are already compressed, just makes the package bigger and need more CPU time to process",
+    "body": "Attachment [9368.patch](tarball://root/attachments/some-uuid/ticket9368/9368.patch) by drkirkby created at 2010-06-28 23:46:42\n\nA new package can be found at \n\nhttp://boxen.math.washington.edu/home/kirkby/patches/fortran-20100629.spkg\n\nNote, this is just a tar file, not a compressed tar file, as compressing the contents, which are already compressed, just makes the package bigger and need more CPU time to process",
     "created_at": "2010-06-28T23:46:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9368",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_088982.json:
 }
 ```
 
-Attachment
+Attachment [9368.patch](tarball://root/attachments/some-uuid/ticket9368/9368.patch) by drkirkby created at 2010-06-28 23:46:42
 
 A new package can be found at 
 
@@ -391,7 +391,7 @@ Re-closing this ticket :)
 archive/issue_comments_088996.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket9368/deps) by rlm created at 2010-07-15 13:21:01",
     "created_at": "2010-07-15T13:21:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9368",
     "type": "issue_comment",
@@ -400,7 +400,7 @@ archive/issue_comments_088996.json:
 }
 ```
 
-Attachment
+Attachment [deps](tarball://root/attachments/some-uuid/ticket9368/deps) by rlm created at 2010-07-15 13:21:01
 
 
 

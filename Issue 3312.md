@@ -53,7 +53,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3312
 archive/issue_comments_022907.json:
 ```json
 {
-    "body": "Attachment\n\nadd clear_mapper call to db_config.py",
+    "body": "Attachment [3312_clearmappers.patch](tarball://root/attachments/some-uuid/ticket3312/3312_clearmappers.patch) by yi created at 2008-05-27 05:14:46\n\nadd clear_mapper call to db_config.py",
     "created_at": "2008-05-27T05:14:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3312",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_022907.json:
 }
 ```
 
-Attachment
+Attachment [3312_clearmappers.patch](tarball://root/attachments/some-uuid/ticket3312/3312_clearmappers.patch) by yi created at 2008-05-27 05:14:46
 
 add clear_mapper call to db_config.py
 

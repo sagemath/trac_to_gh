@@ -49,7 +49,7 @@ Changing status from new to needs_review.
 archive/issue_comments_080571.json:
 ```json
 {
-    "body": "Attachment\n\nChanges in the patch include:\n\n* Add `sage/logic/propcalc.py` to the reference manual.\n* Remove tab characters.\n* Clean-ups in accordance with [PEP 008](http://www.python.org/dev/peps/pep-0008/).",
+    "body": "Attachment [trac_8796-propcalc-clean-ups.patch](tarball://root/attachments/some-uuid/ticket8796/trac_8796-propcalc-clean-ups.patch) by mvngu created at 2010-05-03 02:50:50\n\nChanges in the patch include:\n\n* Add `sage/logic/propcalc.py` to the reference manual.\n* Remove tab characters.\n* Clean-ups in accordance with [PEP 008](http://www.python.org/dev/peps/pep-0008/).",
     "created_at": "2010-05-03T02:50:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8796",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_080571.json:
 }
 ```
 
-Attachment
+Attachment [trac_8796-propcalc-clean-ups.patch](tarball://root/attachments/some-uuid/ticket8796/trac_8796-propcalc-clean-ups.patch) by mvngu created at 2010-05-03 02:50:50
 
 Changes in the patch include:
 

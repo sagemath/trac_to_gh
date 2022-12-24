@@ -71,7 +71,7 @@ Whoever fixes this, please make sure that #1777 is taken care of (which can be f
 archive/issue_comments_019735.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [jmol-custom-menu.patch](tarball://root/attachments/some-uuid/ticket2873/jmol-custom-menu.patch) by jason created at 2009-02-14 09:48:17",
     "created_at": "2009-02-14T09:48:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2873",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_019735.json:
 }
 ```
 
-Attachment
+Attachment [jmol-custom-menu.patch](tarball://root/attachments/some-uuid/ticket2873/jmol-custom-menu.patch) by jason created at 2009-02-14 09:48:17
 
 
 

@@ -177,7 +177,7 @@ Michael
 archive/issue_comments_036481.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4812.patch](tarball://root/attachments/some-uuid/ticket4812/trac_4812.patch) by mhansen created at 2008-12-22 16:37:06",
     "created_at": "2008-12-22T16:37:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4812",
     "type": "issue_comment",
@@ -186,7 +186,7 @@ archive/issue_comments_036481.json:
 }
 ```
 
-Attachment
+Attachment [trac_4812.patch](tarball://root/attachments/some-uuid/ticket4812/trac_4812.patch) by mhansen created at 2008-12-22 16:37:06
 
 
 

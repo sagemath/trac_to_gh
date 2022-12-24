@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4175
 archive/issue_comments_030287.json:
 ```json
 {
-    "body": "Attachment\n\nThis gets rid of a lot of cruft and hundreds of lines of unneeded code now that we have cpdef functions (as well as hundreds of lines of ever .c function that cimports Element). \n\nAll tests pass with sage -testall.",
+    "body": "Attachment [4175-no-impl.patch](tarball://root/attachments/some-uuid/ticket4175/4175-no-impl.patch) by robertwb created at 2008-09-23 07:24:11\n\nThis gets rid of a lot of cruft and hundreds of lines of unneeded code now that we have cpdef functions (as well as hundreds of lines of ever .c function that cimports Element). \n\nAll tests pass with sage -testall.",
     "created_at": "2008-09-23T07:24:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4175",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_030287.json:
 }
 ```
 
-Attachment
+Attachment [4175-no-impl.patch](tarball://root/attachments/some-uuid/ticket4175/4175-no-impl.patch) by robertwb created at 2008-09-23 07:24:11
 
 This gets rid of a lot of cruft and hundreds of lines of unneeded code now that we have cpdef functions (as well as hundreds of lines of ever .c function that cimports Element). 
 
@@ -142,7 +142,7 @@ Michael
 archive/issue_comments_030292.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4175-no-impl-RRx.patch](tarball://root/attachments/some-uuid/ticket4175/4175-no-impl-RRx.patch) by robertwb created at 2008-09-23 23:08:15",
     "created_at": "2008-09-23T23:08:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4175",
     "type": "issue_comment",
@@ -151,7 +151,7 @@ archive/issue_comments_030292.json:
 }
 ```
 
-Attachment
+Attachment [4175-no-impl-RRx.patch](tarball://root/attachments/some-uuid/ticket4175/4175-no-impl-RRx.patch) by robertwb created at 2008-09-23 23:08:15
 
 
 

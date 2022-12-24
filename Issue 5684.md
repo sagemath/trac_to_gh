@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5684
 archive/issue_comments_044448.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [laurent_polynomial_negpow.patch](tarball://root/attachments/some-uuid/ticket5684/laurent_polynomial_negpow.patch) by wjp created at 2009-04-04 20:41:12",
     "created_at": "2009-04-04T20:41:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5684",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_044448.json:
 }
 ```
 
-Attachment
+Attachment [laurent_polynomial_negpow.patch](tarball://root/attachments/some-uuid/ticket5684/laurent_polynomial_negpow.patch) by wjp created at 2009-04-04 20:41:12
 
 
 

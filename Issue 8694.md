@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8694
 archive/issue_comments_079197.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [schemes_output_before.pdf](tarball://root/attachments/some-uuid/ticket8694/schemes_output_before.pdf) by novoselt created at 2010-04-15 19:56:41",
     "created_at": "2010-04-15T19:56:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8694",
     "type": "issue_comment",
@@ -53,7 +53,7 @@ archive/issue_comments_079197.json:
 }
 ```
 
-Attachment
+Attachment [schemes_output_before.pdf](tarball://root/attachments/some-uuid/ticket8694/schemes_output_before.pdf) by novoselt created at 2010-04-15 19:56:41
 
 
 
@@ -62,7 +62,7 @@ Attachment
 archive/issue_comments_079198.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [schemes_output_after.pdf](tarball://root/attachments/some-uuid/ticket8694/schemes_output_after.pdf) by novoselt created at 2010-04-15 19:56:51",
     "created_at": "2010-04-15T19:56:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8694",
     "type": "issue_comment",
@@ -71,7 +71,7 @@ archive/issue_comments_079198.json:
 }
 ```
 
-Attachment
+Attachment [schemes_output_after.pdf](tarball://root/attachments/some-uuid/ticket8694/schemes_output_after.pdf) by novoselt created at 2010-04-15 19:56:51
 
 
 
@@ -170,7 +170,7 @@ Good point. It looks like it used to be "scheme" in repr and I changed it to "su
 archive/issue_comments_079204.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8694_improve_schemes_printing_and_latexing.patch](tarball://root/attachments/some-uuid/ticket8694/trac_8694_improve_schemes_printing_and_latexing.patch) by novoselt created at 2010-05-23 17:44:27",
     "created_at": "2010-05-23T17:44:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8694",
     "type": "issue_comment",
@@ -179,7 +179,7 @@ archive/issue_comments_079204.json:
 }
 ```
 
-Attachment
+Attachment [trac_8694_improve_schemes_printing_and_latexing.patch](tarball://root/attachments/some-uuid/ticket8694/trac_8694_improve_schemes_printing_and_latexing.patch) by novoselt created at 2010-05-23 17:44:27
 
 
 

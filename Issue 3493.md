@@ -79,7 +79,7 @@ The first issue doesn't seem to be a problem with the new documentation.  I'm at
 archive/issue_comments_024602.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3493.patch](tarball://root/attachments/some-uuid/ticket3493/3493.patch) by jhpalmieri created at 2009-02-26 17:21:00",
     "created_at": "2009-02-26T17:21:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3493",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_024602.json:
 }
 ```
 
-Attachment
+Attachment [3493.patch](tarball://root/attachments/some-uuid/ticket3493/3493.patch) by jhpalmieri created at 2009-02-26 17:21:00
 
 
 

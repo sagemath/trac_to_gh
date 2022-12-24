@@ -90,7 +90,7 @@ Resolution: fixed
 archive/issue_comments_031443.json:
 ```json
 {
-    "body": "Attachment\n\nthis is fixed in 3.1.3  yeah!",
+    "body": "Attachment [sage-4299.patch](tarball://root/attachments/some-uuid/ticket4299/sage-4299.patch) by was created at 2008-10-15 15:22:01\n\nthis is fixed in 3.1.3  yeah!",
     "created_at": "2008-10-15T15:22:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4299",
     "type": "issue_comment",
@@ -99,6 +99,6 @@ archive/issue_comments_031443.json:
 }
 ```
 
-Attachment
+Attachment [sage-4299.patch](tarball://root/attachments/some-uuid/ticket4299/sage-4299.patch) by was created at 2008-10-15 15:22:01
 
 this is fixed in 3.1.3  yeah!

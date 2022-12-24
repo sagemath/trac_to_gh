@@ -192,7 +192,7 @@ Anyway, I've attached a patch that fixes the bug, and makes is_transitive() retu
 archive/issue_comments_025075.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3544.patch](tarball://root/attachments/some-uuid/ticket3544/trac_3544.patch) by was created at 2009-01-22 12:52:36",
     "created_at": "2009-01-22T12:52:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3544",
     "type": "issue_comment",
@@ -201,7 +201,7 @@ archive/issue_comments_025075.json:
 }
 ```
 
-Attachment
+Attachment [trac_3544.patch](tarball://root/attachments/some-uuid/ticket3544/trac_3544.patch) by was created at 2009-01-22 12:52:36
 
 
 

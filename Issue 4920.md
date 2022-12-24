@@ -51,7 +51,7 @@ Patch at http://sage.math.washington.edu/home/mhansen/trac_4920.patch
 archive/issue_comments_037336.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4920-2.patch](tarball://root/attachments/some-uuid/ticket4920/trac_4920-2.patch) by mhansen created at 2009-01-02 06:50:56",
     "created_at": "2009-01-02T06:50:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4920",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_037336.json:
 }
 ```
 
-Attachment
+Attachment [trac_4920-2.patch](tarball://root/attachments/some-uuid/ticket4920/trac_4920-2.patch) by mhansen created at 2009-01-02 06:50:56
 
 
 
@@ -187,7 +187,7 @@ The most important thing is that all the original information is still in the fi
 archive/issue_comments_037343.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch latex-fix-4920.patch fixes some markup problems that prevented the generation of PDF output.",
+    "body": "Attachment [latex-fix-4920.patch](tarball://root/attachments/some-uuid/ticket4920/latex-fix-4920.patch) by cwitty created at 2009-01-23 08:08:05\n\nThe patch latex-fix-4920.patch fixes some markup problems that prevented the generation of PDF output.",
     "created_at": "2009-01-23T08:08:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4920",
     "type": "issue_comment",
@@ -196,7 +196,7 @@ archive/issue_comments_037343.json:
 }
 ```
 
-Attachment
+Attachment [latex-fix-4920.patch](tarball://root/attachments/some-uuid/ticket4920/latex-fix-4920.patch) by cwitty created at 2009-01-23 08:08:05
 
 The patch latex-fix-4920.patch fixes some markup problems that prevented the generation of PDF output.
 
@@ -207,7 +207,7 @@ The patch latex-fix-4920.patch fixes some markup problems that prevented the gen
 archive/issue_comments_037344.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage.modular-final.patch](tarball://root/attachments/some-uuid/ticket4920/sage.modular-final.patch) by mhansen created at 2009-02-21 19:20:38",
     "created_at": "2009-02-21T19:20:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4920",
     "type": "issue_comment",
@@ -216,7 +216,7 @@ archive/issue_comments_037344.json:
 }
 ```
 
-Attachment
+Attachment [sage.modular-final.patch](tarball://root/attachments/some-uuid/ticket4920/sage.modular-final.patch) by mhansen created at 2009-02-21 19:20:38
 
 
 

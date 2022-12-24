@@ -87,7 +87,7 @@ Resolution: fixed
 archive/issue_comments_005966.json:
 ```json
 {
-    "body": "Attachment\n\nthis is applied to 2.8.9.alpha1",
+    "body": "Attachment [schubert.patch](tarball://root/attachments/some-uuid/ticket977/schubert.patch) by malb created at 2007-10-24 21:48:49\n\nthis is applied to 2.8.9.alpha1",
     "created_at": "2007-10-24T21:48:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/977",
     "type": "issue_comment",
@@ -96,6 +96,6 @@ archive/issue_comments_005966.json:
 }
 ```
 
-Attachment
+Attachment [schubert.patch](tarball://root/attachments/some-uuid/ticket977/schubert.patch) by malb created at 2007-10-24 21:48:49
 
 this is applied to 2.8.9.alpha1

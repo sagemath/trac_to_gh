@@ -55,7 +55,7 @@ Changing status from new to assigned.
 archive/issue_comments_020106.json:
 ```json
 {
-    "body": "Attachment\n\ncleaned up patch",
+    "body": "Attachment [rubiks-gcc-4.3-buildfix.patch](tarball://root/attachments/some-uuid/ticket2920/rubiks-gcc-4.3-buildfix.patch) by mabshoff created at 2008-04-14 22:30:41\n\ncleaned up patch",
     "created_at": "2008-04-14T22:30:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2920",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_020106.json:
 }
 ```
 
-Attachment
+Attachment [rubiks-gcc-4.3-buildfix.patch](tarball://root/attachments/some-uuid/ticket2920/rubiks-gcc-4.3-buildfix.patch) by mabshoff created at 2008-04-14 22:30:41
 
 cleaned up patch
 

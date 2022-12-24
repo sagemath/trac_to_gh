@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7470
 archive/issue_comments_062923.json:
 ```json
 {
-    "body": "Attachment\n\nChanges \\code{} blocks to !`` !`` blocks.",
+    "body": "Attachment [trac_7470-minor-docstring-js-py.patch](tarball://root/attachments/some-uuid/ticket7470/trac_7470-minor-docstring-js-py.patch) by timdumol created at 2009-11-15 17:17:33\n\nChanges \\code{} blocks to !`` !`` blocks.",
     "created_at": "2009-11-15T17:17:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7470",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_062923.json:
 }
 ```
 
-Attachment
+Attachment [trac_7470-minor-docstring-js-py.patch](tarball://root/attachments/some-uuid/ticket7470/trac_7470-minor-docstring-js-py.patch) by timdumol created at 2009-11-15 17:17:33
 
 Changes \code{} blocks to !`` !`` blocks.
 

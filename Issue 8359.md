@@ -266,7 +266,7 @@ Anne
 archive/issue_comments_074695.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8359-coxeter-groups-permutation-nt.patch](tarball://root/attachments/some-uuid/ticket8359/trac_8359-coxeter-groups-permutation-nt.patch) by aschilling created at 2013-02-04 23:07:09",
     "created_at": "2013-02-04T23:07:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8359",
     "type": "issue_comment",
@@ -275,7 +275,7 @@ archive/issue_comments_074695.json:
 }
 ```
 
-Attachment
+Attachment [trac_8359-coxeter-groups-permutation-nt.patch](tarball://root/attachments/some-uuid/ticket8359/trac_8359-coxeter-groups-permutation-nt.patch) by aschilling created at 2013-02-04 23:07:09
 
 
 

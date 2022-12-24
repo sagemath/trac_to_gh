@@ -54,7 +54,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5125
 archive/issue_comments_039169.json:
 ```json
 {
-    "body": "Attachment\n\nload(\"B.sobj\") this file to test if the bug is fixed.",
+    "body": "Attachment [B.sobj](tarball://root/attachments/some-uuid/ticket5125/B.sobj) by malb created at 2009-01-29 00:02:41\n\nload(\"B.sobj\") this file to test if the bug is fixed.",
     "created_at": "2009-01-29T00:02:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5125",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_039169.json:
 }
 ```
 
-Attachment
+Attachment [B.sobj](tarball://root/attachments/some-uuid/ticket5125/B.sobj) by malb created at 2009-01-29 00:02:41
 
 load("B.sobj") this file to test if the bug is fixed.
 
@@ -92,7 +92,7 @@ Wait-- sorry, that doesn't work either. Now things that **are** Groebner bases a
 archive/issue_comments_039171.json:
 ```json
 {
-    "body": "Attachment\n\nnow it works on `B.sobj` as well as on its groebner basis",
+    "body": "Attachment [basis_is_groebner.patch](tarball://root/attachments/some-uuid/ticket5125/basis_is_groebner.patch) by john_perry created at 2009-01-30 23:24:11\n\nnow it works on `B.sobj` as well as on its groebner basis",
     "created_at": "2009-01-30T23:24:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5125",
     "type": "issue_comment",
@@ -101,7 +101,7 @@ archive/issue_comments_039171.json:
 }
 ```
 
-Attachment
+Attachment [basis_is_groebner.patch](tarball://root/attachments/some-uuid/ticket5125/basis_is_groebner.patch) by john_perry created at 2009-01-30 23:24:11
 
 now it works on `B.sobj` as well as on its groebner basis
 
@@ -150,7 +150,7 @@ apply after basis_is_groebner.patch
 archive/issue_comments_039174.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch fixes the issue for me. I've added a second patch which documents that the bug is indeed fixed. mabshoff, this patch should definitely go in for 3.3 because right now Sage gives wrong answers!",
+    "body": "Attachment [basis_is_groebner_doctest.patch](tarball://root/attachments/some-uuid/ticket5125/basis_is_groebner_doctest.patch) by malb created at 2009-01-31 15:30:33\n\nThe attached patch fixes the issue for me. I've added a second patch which documents that the bug is indeed fixed. mabshoff, this patch should definitely go in for 3.3 because right now Sage gives wrong answers!",
     "created_at": "2009-01-31T15:30:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5125",
     "type": "issue_comment",
@@ -159,7 +159,7 @@ archive/issue_comments_039174.json:
 }
 ```
 
-Attachment
+Attachment [basis_is_groebner_doctest.patch](tarball://root/attachments/some-uuid/ticket5125/basis_is_groebner_doctest.patch) by malb created at 2009-01-31 15:30:33
 
 The attached patch fixes the issue for me. I've added a second patch which documents that the bug is indeed fixed. mabshoff, this patch should definitely go in for 3.3 because right now Sage gives wrong answers!
 

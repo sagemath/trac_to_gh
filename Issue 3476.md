@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3476
 archive/issue_comments_024492.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3476-ncalexan-sage-scripts-doctest-1.patch](tarball://root/attachments/some-uuid/ticket3476/3476-ncalexan-sage-scripts-doctest-1.patch) by ncalexan created at 2008-06-19 21:54:31",
     "created_at": "2008-06-19T21:54:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3476",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_024492.json:
 }
 ```
 
-Attachment
+Attachment [3476-ncalexan-sage-scripts-doctest-1.patch](tarball://root/attachments/some-uuid/ticket3476/3476-ncalexan-sage-scripts-doctest-1.patch) by ncalexan created at 2008-06-19 21:54:31
 
 
 
@@ -57,7 +57,7 @@ Attachment
 archive/issue_comments_024493.json:
 ```json
 {
-    "body": "Attachment\n\nThe attachments came in the wrong order -- the one with `sage-scripts` applies to sage/local/bin.",
+    "body": "Attachment [3476-ncalexan-sage-timeit-1.patch](tarball://root/attachments/some-uuid/ticket3476/3476-ncalexan-sage-timeit-1.patch) by ncalexan created at 2008-06-19 21:56:06\n\nThe attachments came in the wrong order -- the one with `sage-scripts` applies to sage/local/bin.",
     "created_at": "2008-06-19T21:56:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3476",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_024493.json:
 }
 ```
 
-Attachment
+Attachment [3476-ncalexan-sage-timeit-1.patch](tarball://root/attachments/some-uuid/ticket3476/3476-ncalexan-sage-timeit-1.patch) by ncalexan created at 2008-06-19 21:56:06
 
 The attachments came in the wrong order -- the one with `sage-scripts` applies to sage/local/bin.
 
@@ -77,7 +77,7 @@ The attachments came in the wrong order -- the one with `sage-scripts` applies t
 archive/issue_comments_024494.json:
 ```json
 {
-    "body": "Attachment\n\n`diff-python-doctest-to-ncadoctest` records the changes from upstream Python `doctest.py` to `ncadoctest.py` for future reference.",
+    "body": "Attachment [diff-python-doctest-to-ncadoctest](tarball://root/attachments/some-uuid/ticket3476/diff-python-doctest-to-ncadoctest) by ncalexan created at 2008-06-19 22:18:26\n\n`diff-python-doctest-to-ncadoctest` records the changes from upstream Python `doctest.py` to `ncadoctest.py` for future reference.",
     "created_at": "2008-06-19T22:18:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3476",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_024494.json:
 }
 ```
 
-Attachment
+Attachment [diff-python-doctest-to-ncadoctest](tarball://root/attachments/some-uuid/ticket3476/diff-python-doctest-to-ncadoctest) by ncalexan created at 2008-06-19 22:18:26
 
 `diff-python-doctest-to-ncadoctest` records the changes from upstream Python `doctest.py` to `ncadoctest.py` for future reference.
 
@@ -280,7 +280,7 @@ Michael
 archive/issue_comments_024503.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3476-scripts.patch](tarball://root/attachments/some-uuid/ticket3476/trac_3476-scripts.patch) by mhansen created at 2008-11-08 05:05:41",
     "created_at": "2008-11-08T05:05:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3476",
     "type": "issue_comment",
@@ -289,7 +289,7 @@ archive/issue_comments_024503.json:
 }
 ```
 
-Attachment
+Attachment [trac_3476-scripts.patch](tarball://root/attachments/some-uuid/ticket3476/trac_3476-scripts.patch) by mhansen created at 2008-11-08 05:05:41
 
 
 

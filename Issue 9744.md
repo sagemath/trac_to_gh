@@ -43,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9744
 archive/issue_comments_095406.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [implicit-plot-fill.patch](tarball://root/attachments/some-uuid/ticket9744/implicit-plot-fill.patch) by jason created at 2010-08-14 16:40:45",
     "created_at": "2010-08-14T16:40:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
@@ -52,7 +52,7 @@ archive/issue_comments_095406.json:
 }
 ```
 
-Attachment
+Attachment [implicit-plot-fill.patch](tarball://root/attachments/some-uuid/ticket9744/implicit-plot-fill.patch) by jason created at 2010-08-14 16:40:45
 
 
 
@@ -133,7 +133,7 @@ I think it's #8529 that you meant.  Anyway, is there anything wrong with this ro
 archive/issue_comments_095411.json:
 ```json
 {
-    "body": "Attachment\n\nThis is just a modification of Jason's fix to work with the current version. I had to change 'contour' to 'contours', and also remove the 'cmap' option in order for it to work (you can see what I mean by comparing the two patches). I'm pretty new to this, so I'm not sure if this is the appropriate fix or not, but it has the desired effect.",
+    "body": "Attachment [trac_9744.patch](tarball://root/attachments/some-uuid/ticket9744/trac_9744.patch) by mboratko created at 2011-11-22 16:38:40\n\nThis is just a modification of Jason's fix to work with the current version. I had to change 'contour' to 'contours', and also remove the 'cmap' option in order for it to work (you can see what I mean by comparing the two patches). I'm pretty new to this, so I'm not sure if this is the appropriate fix or not, but it has the desired effect.",
     "created_at": "2011-11-22T16:38:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
@@ -142,7 +142,7 @@ archive/issue_comments_095411.json:
 }
 ```
 
-Attachment
+Attachment [trac_9744.patch](tarball://root/attachments/some-uuid/ticket9744/trac_9744.patch) by mboratko created at 2011-11-22 16:38:40
 
 This is just a modification of Jason's fix to work with the current version. I had to change 'contour' to 'contours', and also remove the 'cmap' option in order for it to work (you can see what I mean by comparing the two patches). I'm pretty new to this, so I'm not sure if this is the appropriate fix or not, but it has the desired effect.
 
@@ -741,7 +741,7 @@ fixes filled implicit plotting with lambdas
 archive/issue_comments_095434.json:
 ```json
 {
-    "body": "Attachment\n\nAh, good point. The new patch should do the job.",
+    "body": "Attachment [trac_9744_v2.patch](tarball://root/attachments/some-uuid/ticket9744/trac_9744_v2.patch) by benjaminfjones created at 2012-02-25 02:29:30\n\nAh, good point. The new patch should do the job.",
     "created_at": "2012-02-25T02:29:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
@@ -750,7 +750,7 @@ archive/issue_comments_095434.json:
 }
 ```
 
-Attachment
+Attachment [trac_9744_v2.patch](tarball://root/attachments/some-uuid/ticket9744/trac_9744_v2.patch) by benjaminfjones created at 2012-02-25 02:29:30
 
 Ah, good point. The new patch should do the job.
 
@@ -815,7 +815,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_095438.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9744-reviewer.patch](tarball://root/attachments/some-uuid/ticket9744/trac_9744-reviewer.patch) by kcrisman created at 2012-02-25 04:09:23",
     "created_at": "2012-02-25T04:09:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
@@ -824,7 +824,7 @@ archive/issue_comments_095438.json:
 }
 ```
 
-Attachment
+Attachment [trac_9744-reviewer.patch](tarball://root/attachments/some-uuid/ticket9744/trac_9744-reviewer.patch) by kcrisman created at 2012-02-25 04:09:23
 
 
 

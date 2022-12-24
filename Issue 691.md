@@ -103,7 +103,7 @@ Actually, there is a problem with f._compute.  Ignore the above patch for now.
 archive/issue_comments_003596.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [691.patch](tarball://root/attachments/some-uuid/ticket691/691.patch) by mhansen created at 2007-09-19 01:23:17",
     "created_at": "2007-09-19T01:23:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/691",
     "type": "issue_comment",
@@ -112,7 +112,7 @@ archive/issue_comments_003596.json:
 }
 ```
 
-Attachment
+Attachment [691.patch](tarball://root/attachments/some-uuid/ticket691/691.patch) by mhansen created at 2007-09-19 01:23:17
 
 
 
@@ -121,7 +121,7 @@ Attachment
 archive/issue_comments_003597.json:
 ```json
 {
-    "body": "Attachment\n\nPatch attached which fixes the issues.",
+    "body": "Attachment [691.2.patch](tarball://root/attachments/some-uuid/ticket691/691.2.patch) by mhansen created at 2007-09-19 01:24:18\n\nPatch attached which fixes the issues.",
     "created_at": "2007-09-19T01:24:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/691",
     "type": "issue_comment",
@@ -130,7 +130,7 @@ archive/issue_comments_003597.json:
 }
 ```
 
-Attachment
+Attachment [691.2.patch](tarball://root/attachments/some-uuid/ticket691/691.2.patch) by mhansen created at 2007-09-19 01:24:18
 
 Patch attached which fixes the issues.
 

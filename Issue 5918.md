@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5918
 archive/issue_comments_046767.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5918.patch](tarball://root/attachments/some-uuid/ticket5918/trac_5918.patch) by saliola created at 2009-04-28 14:40:24",
     "created_at": "2009-04-28T14:40:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5918",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_046767.json:
 }
 ```
 
-Attachment
+Attachment [trac_5918.patch](tarball://root/attachments/some-uuid/ticket5918/trac_5918.patch) by saliola created at 2009-04-28 14:40:24
 
 
 
@@ -122,7 +122,7 @@ rebased to 3.4.2.alpha0 (apply only this patch)
 archive/issue_comments_046771.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5918-rebased.patch](tarball://root/attachments/some-uuid/ticket5918/trac_5918-rebased.patch) by saliola created at 2009-04-28 20:13:34",
     "created_at": "2009-04-28T20:13:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5918",
     "type": "issue_comment",
@@ -131,7 +131,7 @@ archive/issue_comments_046771.json:
 }
 ```
 
-Attachment
+Attachment [trac_5918-rebased.patch](tarball://root/attachments/some-uuid/ticket5918/trac_5918-rebased.patch) by saliola created at 2009-04-28 20:13:34
 
 
 
@@ -168,7 +168,7 @@ Finally, this does raise coverage to (basically) 100% and passes all doctests. I
 archive/issue_comments_046773.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of trac_5918-rebased.patch",
+    "body": "Attachment [trac_5918-typos-docfixes.patch](tarball://root/attachments/some-uuid/ticket5918/trac_5918-typos-docfixes.patch) by ddrake created at 2009-04-29 09:14:09\n\napply on top of trac_5918-rebased.patch",
     "created_at": "2009-04-29T09:14:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5918",
     "type": "issue_comment",
@@ -177,7 +177,7 @@ archive/issue_comments_046773.json:
 }
 ```
 
-Attachment
+Attachment [trac_5918-typos-docfixes.patch](tarball://root/attachments/some-uuid/ticket5918/trac_5918-typos-docfixes.patch) by ddrake created at 2009-04-29 09:14:09
 
 apply on top of trac_5918-rebased.patch
 

@@ -131,7 +131,7 @@ Apply to Sage library
 archive/issue_comments_099243.json:
 ```json
 {
-    "body": "Attachment\n\n*Non-empty* patch is up.",
+    "body": "Attachment [trac_9951-add_non-empty_fake_init_file_to_tests_french_book.patch](tarball://root/attachments/some-uuid/ticket9951/trac_9951-add_non-empty_fake_init_file_to_tests_french_book.patch) by leif created at 2010-09-20 03:44:02\n\n*Non-empty* patch is up.",
     "created_at": "2010-09-20T03:44:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9950",
     "type": "issue_comment",
@@ -140,7 +140,7 @@ archive/issue_comments_099243.json:
 }
 ```
 
-Attachment
+Attachment [trac_9951-add_non-empty_fake_init_file_to_tests_french_book.patch](tarball://root/attachments/some-uuid/ticket9951/trac_9951-add_non-empty_fake_init_file_to_tests_french_book.patch) by leif created at 2010-09-20 03:44:02
 
 *Non-empty* patch is up.
 

@@ -53,7 +53,7 @@ Changing status from new to needs_review.
 archive/issue_comments_086316.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-9212-identity-zero-mutable.patch](tarball://root/attachments/some-uuid/ticket9212/trac-9212-identity-zero-mutable.patch) by jason created at 2010-06-11 07:17:30",
     "created_at": "2010-06-11T07:17:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_086316.json:
 }
 ```
 
-Attachment
+Attachment [trac-9212-identity-zero-mutable.patch](tarball://root/attachments/some-uuid/ticket9212/trac-9212-identity-zero-mutable.patch) by jason created at 2010-06-11 07:17:30
 
 
 
@@ -360,7 +360,7 @@ I have a "positive review" report, but no reviewer patch to make it happen.  So 
 archive/issue_comments_086331.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of previous patches",
+    "body": "Attachment [trac-9212-fix-doctests.patch](tarball://root/attachments/some-uuid/ticket9212/trac-9212-fix-doctests.patch) by jason created at 2010-06-14 20:35:23\n\napply on top of previous patches",
     "created_at": "2010-06-14T20:35:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
@@ -369,7 +369,7 @@ archive/issue_comments_086331.json:
 }
 ```
 
-Attachment
+Attachment [trac-9212-fix-doctests.patch](tarball://root/attachments/some-uuid/ticket9212/trac-9212-fix-doctests.patch) by jason created at 2010-06-14 20:35:23
 
 apply on top of previous patches
 

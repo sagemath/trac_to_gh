@@ -125,7 +125,7 @@ Compute Jordan Canonical form extremely naively.
 archive/issue_comments_005392.json:
 ```json
 {
-    "body": "Attachment\n\nThat's funny, I just wrote some code last night to compute jordan canonical form using the powers of A-xI, the by-hand method you learn in linear algebra.  I've attached it above.  Your code probably blows this out of the water, but it would be interesting to see the speed comparison anyway.  The patch is a bit faster after you apply the patch in #1973.",
+    "body": "Attachment [jordan-form.patch](tarball://root/attachments/some-uuid/ticket874/jordan-form.patch) by jason created at 2008-01-29 16:14:23\n\nThat's funny, I just wrote some code last night to compute jordan canonical form using the powers of A-xI, the by-hand method you learn in linear algebra.  I've attached it above.  Your code probably blows this out of the water, but it would be interesting to see the speed comparison anyway.  The patch is a bit faster after you apply the patch in #1973.",
     "created_at": "2008-01-29T16:14:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/874",
     "type": "issue_comment",
@@ -134,7 +134,7 @@ archive/issue_comments_005392.json:
 }
 ```
 
-Attachment
+Attachment [jordan-form.patch](tarball://root/attachments/some-uuid/ticket874/jordan-form.patch) by jason created at 2008-01-29 16:14:23
 
 That's funny, I just wrote some code last night to compute jordan canonical form using the powers of A-xI, the by-hand method you learn in linear algebra.  I've attached it above.  Your code probably blows this out of the water, but it would be interesting to see the speed comparison anyway.  The patch is a bit faster after you apply the patch in #1973.
 
@@ -219,7 +219,7 @@ Michael
 archive/issue_comments_005396.json:
 ```json
 {
-    "body": "Attachment\n\nApply (and review) instead of original jordan-form.patch.",
+    "body": "Attachment [jordan-form.2.patch](tarball://root/attachments/some-uuid/ticket874/jordan-form.2.patch) by jason created at 2008-02-16 05:49:22\n\nApply (and review) instead of original jordan-form.patch.",
     "created_at": "2008-02-16T05:49:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/874",
     "type": "issue_comment",
@@ -228,7 +228,7 @@ archive/issue_comments_005396.json:
 }
 ```
 
-Attachment
+Attachment [jordan-form.2.patch](tarball://root/attachments/some-uuid/ticket874/jordan-form.2.patch) by jason created at 2008-02-16 05:49:22
 
 Apply (and review) instead of original jordan-form.patch.
 
@@ -304,7 +304,7 @@ Yes, I agree with craig.  It's very good to have a step 1 that implements someth
 archive/issue_comments_005400.json:
 ```json
 {
-    "body": "Attachment\n\nAdds a note saying that the computation is naive.",
+    "body": "Attachment [jordan-form.3.patch](tarball://root/attachments/some-uuid/ticket874/jordan-form.3.patch) by jason created at 2008-02-22 20:37:11\n\nAdds a note saying that the computation is naive.",
     "created_at": "2008-02-22T20:37:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/874",
     "type": "issue_comment",
@@ -313,7 +313,7 @@ archive/issue_comments_005400.json:
 }
 ```
 
-Attachment
+Attachment [jordan-form.3.patch](tarball://root/attachments/some-uuid/ticket874/jordan-form.3.patch) by jason created at 2008-02-22 20:37:11
 
 Adds a note saying that the computation is naive.
 
@@ -418,7 +418,7 @@ abort: patch failed to apply
 archive/issue_comments_005405.json:
 ```json
 {
-    "body": "Attachment\n\nNew patch posted which applies cleanly against 2.10.3.alpha0 + #1186. Just apply 874.patch.\n\n\nPositive review from me.",
+    "body": "Attachment [874.patch](tarball://root/attachments/some-uuid/ticket874/874.patch) by mhansen created at 2008-02-27 20:10:11\n\nNew patch posted which applies cleanly against 2.10.3.alpha0 + #1186. Just apply 874.patch.\n\n\nPositive review from me.",
     "created_at": "2008-02-27T20:10:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/874",
     "type": "issue_comment",
@@ -427,7 +427,7 @@ archive/issue_comments_005405.json:
 }
 ```
 
-Attachment
+Attachment [874.patch](tarball://root/attachments/some-uuid/ticket874/874.patch) by mhansen created at 2008-02-27 20:10:11
 
 New patch posted which applies cleanly against 2.10.3.alpha0 + #1186. Just apply 874.patch.
 

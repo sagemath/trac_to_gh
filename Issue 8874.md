@@ -103,7 +103,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_081561.json:
 ```json
 {
-    "body": "Attachment\n\nI've made it so that it checks the diagonal entries.",
+    "body": "Attachment [trac_8874.patch](tarball://root/attachments/some-uuid/ticket8874/trac_8874.patch) by mhansen created at 2010-05-04 21:03:52\n\nI've made it so that it checks the diagonal entries.",
     "created_at": "2010-05-04T21:03:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8874",
     "type": "issue_comment",
@@ -112,7 +112,7 @@ archive/issue_comments_081561.json:
 }
 ```
 
-Attachment
+Attachment [trac_8874.patch](tarball://root/attachments/some-uuid/ticket8874/trac_8874.patch) by mhansen created at 2010-05-04 21:03:52
 
 I've made it so that it checks the diagonal entries.
 

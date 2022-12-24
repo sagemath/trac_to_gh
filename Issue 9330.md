@@ -135,7 +135,7 @@ See #9442 for the warning when building the reference manual.
 archive/issue_comments_088007.json:
 ```json
 {
-    "body": "Attachment\n\nexported against 4.5.2.alpha1",
+    "body": "Attachment [trac_9330.patch](tarball://root/attachments/some-uuid/ticket9330/trac_9330.patch) by wuthrich created at 2010-07-28 15:36:22\n\nexported against 4.5.2.alpha1",
     "created_at": "2010-07-28T15:36:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9330",
     "type": "issue_comment",
@@ -144,7 +144,7 @@ archive/issue_comments_088007.json:
 }
 ```
 
-Attachment
+Attachment [trac_9330.patch](tarball://root/attachments/some-uuid/ticket9330/trac_9330.patch) by wuthrich created at 2010-07-28 15:36:22
 
 exported against 4.5.2.alpha1
 
@@ -340,7 +340,7 @@ exported against 4.5.2.alpha1, to be apply after trac_9330.patch
 archive/issue_comments_088017.json:
 ```json
 {
-    "body": "Attachment\n\nYop, sorry, I did not see that the 'when' was still missing. Here is an additional patch.\n\nLuckily the filename is not visible to the user, so I don't have to bother changing it. ... and it gives some voice to the other order.\n\nThere is no problem with the rebase, because the patches here are exported against 4.5.2.alpha1 and #9442 was merged in 4.5.alpha4 if I am not mistaken. At least the addition lines are clearly in the file before I edited it.",
+    "body": "Attachment [trac_9330_2.patch](tarball://root/attachments/some-uuid/ticket9330/trac_9330_2.patch) by wuthrich created at 2010-07-29 10:06:37\n\nYop, sorry, I did not see that the 'when' was still missing. Here is an additional patch.\n\nLuckily the filename is not visible to the user, so I don't have to bother changing it. ... and it gives some voice to the other order.\n\nThere is no problem with the rebase, because the patches here are exported against 4.5.2.alpha1 and #9442 was merged in 4.5.alpha4 if I am not mistaken. At least the addition lines are clearly in the file before I edited it.",
     "created_at": "2010-07-29T10:06:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9330",
     "type": "issue_comment",
@@ -349,7 +349,7 @@ archive/issue_comments_088017.json:
 }
 ```
 
-Attachment
+Attachment [trac_9330_2.patch](tarball://root/attachments/some-uuid/ticket9330/trac_9330_2.patch) by wuthrich created at 2010-07-29 10:06:37
 
 Yop, sorry, I did not see that the 'when' was still missing. Here is an additional patch.
 

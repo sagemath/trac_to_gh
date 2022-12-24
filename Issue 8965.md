@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8965
 archive/issue_comments_082625.json:
 ```json
 {
-    "body": "Attachment\n\nFound a typo in comment; apply both patches",
+    "body": "Attachment [trac_8965_decorate2.patch](tarball://root/attachments/some-uuid/ticket8965/trac_8965_decorate2.patch) by jdc created at 2010-05-14 18:09:12\n\nFound a typo in comment; apply both patches",
     "created_at": "2010-05-14T18:09:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8965",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_082625.json:
 }
 ```
 
-Attachment
+Attachment [trac_8965_decorate2.patch](tarball://root/attachments/some-uuid/ticket8965/trac_8965_decorate2.patch) by jdc created at 2010-05-14 18:09:12
 
 Found a typo in comment; apply both patches
 
@@ -53,7 +53,7 @@ Found a typo in comment; apply both patches
 archive/issue_comments_082626.json:
 ```json
 {
-    "body": "Attachment\n\nfolded the previous two patches into one patch; based on Sage 4.4.2.rc0",
+    "body": "Attachment [trac_8965-decorate-folded.patch](tarball://root/attachments/some-uuid/ticket8965/trac_8965-decorate-folded.patch) by mvngu created at 2010-05-15 02:38:25\n\nfolded the previous two patches into one patch; based on Sage 4.4.2.rc0",
     "created_at": "2010-05-15T02:38:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8965",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_082626.json:
 }
 ```
 
-Attachment
+Attachment [trac_8965-decorate-folded.patch](tarball://root/attachments/some-uuid/ticket8965/trac_8965-decorate-folded.patch) by mvngu created at 2010-05-15 02:38:25
 
 folded the previous two patches into one patch; based on Sage 4.4.2.rc0
 
@@ -163,7 +163,7 @@ single patch, ready for review
 archive/issue_comments_082632.json:
 ```json
 {
-    "body": "Attachment\n\nThe only patch needed now is trac_8965_decorate.patch.  (I couldn't figure out how to delete the others.)  It reverts to the original implementation of Parallel.__call__, since the simpler one didn't handle the case where the function being wrapped can be called with no arguments.  The latest patch includes doctests for this situation.\n\nThe latest patch only changes documentation or comments, besides one whitespace change to the code.",
+    "body": "Attachment [trac_8965_decorate.patch](tarball://root/attachments/some-uuid/ticket8965/trac_8965_decorate.patch) by jdc created at 2010-05-16 00:29:13\n\nThe only patch needed now is trac_8965_decorate.patch.  (I couldn't figure out how to delete the others.)  It reverts to the original implementation of Parallel.__call__, since the simpler one didn't handle the case where the function being wrapped can be called with no arguments.  The latest patch includes doctests for this situation.\n\nThe latest patch only changes documentation or comments, besides one whitespace change to the code.",
     "created_at": "2010-05-16T00:29:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8965",
     "type": "issue_comment",
@@ -172,7 +172,7 @@ archive/issue_comments_082632.json:
 }
 ```
 
-Attachment
+Attachment [trac_8965_decorate.patch](tarball://root/attachments/some-uuid/ticket8965/trac_8965_decorate.patch) by jdc created at 2010-05-16 00:29:13
 
 The only patch needed now is trac_8965_decorate.patch.  (I couldn't figure out how to delete the others.)  It reverts to the original implementation of Parallel.__call__, since the simpler one didn't handle the case where the function being wrapped can be called with no arguments.  The latest patch includes doctests for this situation.
 

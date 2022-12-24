@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3579
 archive/issue_comments_025270.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac3579-random_graph_generator_bug_fix.patch](tarball://root/attachments/some-uuid/ticket3579/trac3579-random_graph_generator_bug_fix.patch) by ekirkman created at 2008-07-10 17:06:56",
     "created_at": "2008-07-10T17:06:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3579",
     "type": "issue_comment",
@@ -49,7 +49,7 @@ archive/issue_comments_025270.json:
 }
 ```
 
-Attachment
+Attachment [trac3579-random_graph_generator_bug_fix.patch](tarball://root/attachments/some-uuid/ticket3579/trac3579-random_graph_generator_bug_fix.patch) by ekirkman created at 2008-07-10 17:06:56
 
 
 

@@ -112,7 +112,7 @@ Changing status from new to needs_review.
 archive/issue_comments_094178.json:
 ```json
 {
-    "body": "Attachment\n\nSolves the numerical noise issue computing sinh(1.0). The archsinh case is more complex, and will be on another ticket.",
+    "body": "Attachment [9689-sinh-noise-fix.patch](tarball://root/attachments/some-uuid/ticket9689/9689-sinh-noise-fix.patch) by drkirkby created at 2010-08-05 22:39:19\n\nSolves the numerical noise issue computing sinh(1.0). The archsinh case is more complex, and will be on another ticket.",
     "created_at": "2010-08-05T22:39:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9689",
     "type": "issue_comment",
@@ -121,7 +121,7 @@ archive/issue_comments_094178.json:
 }
 ```
 
-Attachment
+Attachment [9689-sinh-noise-fix.patch](tarball://root/attachments/some-uuid/ticket9689/9689-sinh-noise-fix.patch) by drkirkby created at 2010-08-05 22:39:19
 
 Solves the numerical noise issue computing sinh(1.0). The archsinh case is more complex, and will be on another ticket.
 

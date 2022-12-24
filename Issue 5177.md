@@ -55,7 +55,7 @@ Michael
 archive/issue_comments_039656.json:
 ```json
 {
-    "body": "Attachment\n\nUses twisted.internet.threads.deferToThread to delete cell directory on cell delete. Should apply cleanly on sagenb-0.5.0.",
+    "body": "Attachment [trac_5177-delete-cell-dirs.patch](tarball://root/attachments/some-uuid/ticket5177/trac_5177-delete-cell-dirs.patch) by timdumol created at 2010-01-17 09:48:43\n\nUses twisted.internet.threads.deferToThread to delete cell directory on cell delete. Should apply cleanly on sagenb-0.5.0.",
     "created_at": "2010-01-17T09:48:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5177",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_039656.json:
 }
 ```
 
-Attachment
+Attachment [trac_5177-delete-cell-dirs.patch](tarball://root/attachments/some-uuid/ticket5177/trac_5177-delete-cell-dirs.patch) by timdumol created at 2010-01-17 09:48:43
 
 Uses twisted.internet.threads.deferToThread to delete cell directory on cell delete. Should apply cleanly on sagenb-0.5.0.
 
@@ -111,7 +111,7 @@ Changing status from new to needs_review.
 archive/issue_comments_039659.json:
 ```json
 {
-    "body": "Attachment\n\nTrivial rebase on new patch queue. (Deletion of one empty line)",
+    "body": "Attachment [trac_5177-delete-cell-dirs.2.patch](tarball://root/attachments/some-uuid/ticket5177/trac_5177-delete-cell-dirs.2.patch) by timdumol created at 2010-01-17 22:05:28\n\nTrivial rebase on new patch queue. (Deletion of one empty line)",
     "created_at": "2010-01-17T22:05:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5177",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_039659.json:
 }
 ```
 
-Attachment
+Attachment [trac_5177-delete-cell-dirs.2.patch](tarball://root/attachments/some-uuid/ticket5177/trac_5177-delete-cell-dirs.2.patch) by timdumol created at 2010-01-17 22:05:28
 
 Trivial rebase on new patch queue. (Deletion of one empty line)
 
@@ -247,7 +247,7 @@ I'm adding `schilly` to the Cc: list, since he's almost certainly better qualifi
 archive/issue_comments_039664.json:
 ```json
 {
-    "body": "Attachment\n\nAlso delete files when deleting all output.  Synchronous only.  Replaces previous.",
+    "body": "Attachment [trac_5177-delete-cell-dirs.3.patch](tarball://root/attachments/some-uuid/ticket5177/trac_5177-delete-cell-dirs.3.patch) by mpatel created at 2010-01-25 06:58:32\n\nAlso delete files when deleting all output.  Synchronous only.  Replaces previous.",
     "created_at": "2010-01-25T06:58:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5177",
     "type": "issue_comment",
@@ -256,7 +256,7 @@ archive/issue_comments_039664.json:
 }
 ```
 
-Attachment
+Attachment [trac_5177-delete-cell-dirs.3.patch](tarball://root/attachments/some-uuid/ticket5177/trac_5177-delete-cell-dirs.3.patch) by mpatel created at 2010-01-25 06:58:32
 
 Also delete files when deleting all output.  Synchronous only.  Replaces previous.
 
@@ -341,7 +341,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_039669.json:
 ```json
 {
-    "body": "Attachment\n\nAdd doctects to V3.  Apply only this patch.  sagenb repo.",
+    "body": "Attachment [trac_5177-delete-cell-dirs.4.patch](tarball://root/attachments/some-uuid/ticket5177/trac_5177-delete-cell-dirs.4.patch) by mpatel created at 2010-03-09 10:21:33\n\nAdd doctects to V3.  Apply only this patch.  sagenb repo.",
     "created_at": "2010-03-09T10:21:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5177",
     "type": "issue_comment",
@@ -350,7 +350,7 @@ archive/issue_comments_039669.json:
 }
 ```
 
-Attachment
+Attachment [trac_5177-delete-cell-dirs.4.patch](tarball://root/attachments/some-uuid/ticket5177/trac_5177-delete-cell-dirs.4.patch) by mpatel created at 2010-03-09 10:21:33
 
 Add doctects to V3.  Apply only this patch.  sagenb repo.
 

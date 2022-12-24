@@ -105,7 +105,7 @@ sage: p=zeta8^2*x+zeta8
 archive/issue_comments_016360.json:
 ```json
 {
-    "body": "Attachment\n\nnew patch, adding more doctests, should apply to sage 2.10.3.rc2",
+    "body": "Attachment [mpoly_over_numberfield.patch](tarball://root/attachments/some-uuid/ticket2420/mpoly_over_numberfield.patch) by SimonKing created at 2008-03-08 00:35:50\n\nnew patch, adding more doctests, should apply to sage 2.10.3.rc2",
     "created_at": "2008-03-08T00:35:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2420",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_016360.json:
 }
 ```
 
-Attachment
+Attachment [mpoly_over_numberfield.patch](tarball://root/attachments/some-uuid/ticket2420/mpoly_over_numberfield.patch) by SimonKing created at 2008-03-08 00:35:50
 
 new patch, adding more doctests, should apply to sage 2.10.3.rc2
 
@@ -486,7 +486,7 @@ So, it is almost done, but I'd like to fix the last problem too.
 archive/issue_comments_016367.json:
 ```json
 {
-    "body": "Attachment\n\nDisregard first patch; apply after the patches from #9205, #9438, #9423, #8909 and #5618",
+    "body": "Attachment [trac_2420_GAP_interface_polynomials.patch](tarball://root/attachments/some-uuid/ticket2420/trac_2420_GAP_interface_polynomials.patch) by SimonKing created at 2010-07-08 09:58:17\n\nDisregard first patch; apply after the patches from #9205, #9438, #9423, #8909 and #5618",
     "created_at": "2010-07-08T09:58:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2420",
     "type": "issue_comment",
@@ -495,7 +495,7 @@ archive/issue_comments_016367.json:
 }
 ```
 
-Attachment
+Attachment [trac_2420_GAP_interface_polynomials.patch](tarball://root/attachments/some-uuid/ticket2420/trac_2420_GAP_interface_polynomials.patch) by SimonKing created at 2010-07-08 09:58:17
 
 Disregard first patch; apply after the patches from #9205, #9438, #9423, #8909 and #5618
 
@@ -730,7 +730,7 @@ Replaces the previous patches
 archive/issue_comments_016374.json:
 ```json
 {
-    "body": "Attachment\n\nI have rebased the patch, so that it should work on top of sage-4.7.rc2. I haven't run tests, though.\n\nFor the patchbot:\n\nApply trac2420_gap_interface_polynomials.patch",
+    "body": "Attachment [trac2420_gap_interface_polynomials.patch](tarball://root/attachments/some-uuid/ticket2420/trac2420_gap_interface_polynomials.patch) by SimonKing created at 2011-07-22 13:07:54\n\nI have rebased the patch, so that it should work on top of sage-4.7.rc2. I haven't run tests, though.\n\nFor the patchbot:\n\nApply trac2420_gap_interface_polynomials.patch",
     "created_at": "2011-07-22T13:07:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2420",
     "type": "issue_comment",
@@ -739,7 +739,7 @@ archive/issue_comments_016374.json:
 }
 ```
 
-Attachment
+Attachment [trac2420_gap_interface_polynomials.patch](tarball://root/attachments/some-uuid/ticket2420/trac2420_gap_interface_polynomials.patch) by SimonKing created at 2011-07-22 13:07:54
 
 I have rebased the patch, so that it should work on top of sage-4.7.rc2. I haven't run tests, though.
 

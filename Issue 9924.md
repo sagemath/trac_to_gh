@@ -311,7 +311,7 @@ Nathann
 archive/issue_comments_098808.json:
 ```json
 {
-    "body": "Attachment\n\nThere is now one ticket to be reviewed here, and the patch Dima requested is also waiting for review at #9930 (though it depends on #9420 too)..\n\nSorry for all that !!! `^^;`\n\nNathann",
+    "body": "Attachment [trac_9925.patch](tarball://root/attachments/some-uuid/ticket9925/trac_9925.patch) by ncohen created at 2010-09-17 08:17:38\n\nThere is now one ticket to be reviewed here, and the patch Dima requested is also waiting for review at #9930 (though it depends on #9420 too)..\n\nSorry for all that !!! `^^;`\n\nNathann",
     "created_at": "2010-09-17T08:17:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_comment",
@@ -320,7 +320,7 @@ archive/issue_comments_098808.json:
 }
 ```
 
-Attachment
+Attachment [trac_9925.patch](tarball://root/attachments/some-uuid/ticket9925/trac_9925.patch) by ncohen created at 2010-09-17 08:17:38
 
 There is now one ticket to be reviewed here, and the patch Dima requested is also waiting for review at #9930 (though it depends on #9420 too)..
 

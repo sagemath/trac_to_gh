@@ -61,7 +61,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/790
 archive/issue_comments_004754.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac790.patch](tarball://root/attachments/some-uuid/ticket790/trac790.patch) by was created at 2007-11-03 18:38:07",
     "created_at": "2007-11-03T18:38:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/790",
     "type": "issue_comment",
@@ -70,7 +70,7 @@ archive/issue_comments_004754.json:
 }
 ```
 
-Attachment
+Attachment [trac790.patch](tarball://root/attachments/some-uuid/ticket790/trac790.patch) by was created at 2007-11-03 18:38:07
 
 
 

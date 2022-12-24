@@ -490,7 +490,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_066838.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [python-7761.patch](tarball://root/attachments/some-uuid/ticket7761/python-7761.patch) by drkirkby created at 2010-01-10 21:41:26",
     "created_at": "2010-01-10T21:41:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7761",
     "type": "issue_comment",
@@ -499,7 +499,7 @@ archive/issue_comments_066838.json:
 }
 ```
 
-Attachment
+Attachment [python-7761.patch](tarball://root/attachments/some-uuid/ticket7761/python-7761.patch) by drkirkby created at 2010-01-10 21:41:26
 
 
 
@@ -857,7 +857,7 @@ Dave
 archive/issue_comments_066851.json:
 ```json
 {
-    "body": "Attachment\n\nMade a new spkg work on Open nSolaris, leaving the OSX solution as is.\n\n[http://boxen.math.washington.edu/home/jsp/ports/python-2.6.4.p6.spkg](http://boxen.math.washington.edu/home/jsp/ports/python-2.6.4.p6.spkg)\n\nSee also the patch:\n[http://boxen.math.washington.edu/home/jsp/ports/python-2.6.4.p6.patch](http://boxen.math.washington.edu/home/jsp/ports/python-2.6.4.p6.patch)\n\nOn 'hawk':\n\n\n```\n(cd /export/home/jaap/sage_port/sage-4.3.2.alpha1/local/bin; ln python2.6 python)\nrm -f /export/home/jaap/sage_port/sage-4.3.2.alpha1/local/bin/python-config\n(cd /export/home/jaap/sage_port/sage-4.3.2.alpha1/local/bin; ln -s python2.6-config python-config)\n/usr/bin/ginstall -c -m 644 ./Misc/python.man \\\n                /export/home/jaap/sage_port/sage-4.3.2.alpha1/local/share/man/man1/python.1\nSleeping for three seconds before testing python\nhashlib module imported\n/export/home/jaap/sage_port/sage-4.3.2.alpha1\n\n```\n\n\nBig question: does this work for Solaris 10?\n\nJaap",
+    "body": "Attachment [python-2.6.4.p6.patch](tarball://root/attachments/some-uuid/ticket7761/python-2.6.4.p6.patch) by jsp created at 2010-02-23 14:33:49\n\nMade a new spkg work on Open nSolaris, leaving the OSX solution as is.\n\n[http://boxen.math.washington.edu/home/jsp/ports/python-2.6.4.p6.spkg](http://boxen.math.washington.edu/home/jsp/ports/python-2.6.4.p6.spkg)\n\nSee also the patch:\n[http://boxen.math.washington.edu/home/jsp/ports/python-2.6.4.p6.patch](http://boxen.math.washington.edu/home/jsp/ports/python-2.6.4.p6.patch)\n\nOn 'hawk':\n\n\n```\n(cd /export/home/jaap/sage_port/sage-4.3.2.alpha1/local/bin; ln python2.6 python)\nrm -f /export/home/jaap/sage_port/sage-4.3.2.alpha1/local/bin/python-config\n(cd /export/home/jaap/sage_port/sage-4.3.2.alpha1/local/bin; ln -s python2.6-config python-config)\n/usr/bin/ginstall -c -m 644 ./Misc/python.man \\\n                /export/home/jaap/sage_port/sage-4.3.2.alpha1/local/share/man/man1/python.1\nSleeping for three seconds before testing python\nhashlib module imported\n/export/home/jaap/sage_port/sage-4.3.2.alpha1\n\n```\n\n\nBig question: does this work for Solaris 10?\n\nJaap",
     "created_at": "2010-02-23T14:33:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7761",
     "type": "issue_comment",
@@ -866,7 +866,7 @@ archive/issue_comments_066851.json:
 }
 ```
 
-Attachment
+Attachment [python-2.6.4.p6.patch](tarball://root/attachments/some-uuid/ticket7761/python-2.6.4.p6.patch) by jsp created at 2010-02-23 14:33:49
 
 Made a new spkg work on Open nSolaris, leaving the OSX solution as is.
 

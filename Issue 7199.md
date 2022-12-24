@@ -144,7 +144,7 @@ Been busy with other stuff: http://trac.sagemath.org/sage_trac/query?status=clos
 archive/issue_comments_059736.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac7199-improve_stack_for_sparse_matrices.patch](tarball://root/attachments/some-uuid/ticket7199/trac7199-improve_stack_for_sparse_matrices.patch) by ylchapuy created at 2010-08-15 14:57:24",
     "created_at": "2010-08-15T14:57:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7199",
     "type": "issue_comment",
@@ -153,7 +153,7 @@ archive/issue_comments_059736.json:
 }
 ```
 
-Attachment
+Attachment [trac7199-improve_stack_for_sparse_matrices.patch](tarball://root/attachments/some-uuid/ticket7199/trac7199-improve_stack_for_sparse_matrices.patch) by ylchapuy created at 2010-08-15 14:57:24
 
 
 

@@ -113,7 +113,7 @@ Changing status from new to needs_review.
 archive/issue_comments_075569.json:
 ```json
 {
-    "body": "Attachment\n\nDepends on many tickets already merged in 4.3.4.alpha1",
+    "body": "Attachment [trac_8429_split_word-sl.patch](tarball://root/attachments/some-uuid/ticket8429/trac_8429_split_word-sl.patch) by slabbe created at 2010-03-06 14:32:29\n\nDepends on many tickets already merged in 4.3.4.alpha1",
     "created_at": "2010-03-06T14:32:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8429",
     "type": "issue_comment",
@@ -122,7 +122,7 @@ archive/issue_comments_075569.json:
 }
 ```
 
-Attachment
+Attachment [trac_8429_split_word-sl.patch](tarball://root/attachments/some-uuid/ticket8429/trac_8429_split_word-sl.patch) by slabbe created at 2010-03-06 14:32:29
 
 Depends on many tickets already merged in 4.3.4.alpha1
 

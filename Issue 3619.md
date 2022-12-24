@@ -190,7 +190,7 @@ Depends on #3776
 archive/issue_comments_025542.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3619.patch](tarball://root/attachments/some-uuid/ticket3619/sage-3619.patch) by TimothyClemans created at 2008-08-13 02:28:39",
     "created_at": "2008-08-13T02:28:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3619",
     "type": "issue_comment",
@@ -199,7 +199,7 @@ archive/issue_comments_025542.json:
 }
 ```
 
-Attachment
+Attachment [sage-3619.patch](tarball://root/attachments/some-uuid/ticket3619/sage-3619.patch) by TimothyClemans created at 2008-08-13 02:28:39
 
 
 
@@ -208,7 +208,7 @@ Attachment
 archive/issue_comments_025543.json:
 ```json
 {
-    "body": "Attachment\n\nnew patch against sagenb that simply adds calls to log.msg in a few places, which will properly log user login attempts using the standard twisted loging facility",
+    "body": "Attachment [sagenb-3619.patch](tarball://root/attachments/some-uuid/ticket3619/sagenb-3619.patch) by was created at 2009-11-19 22:43:29\n\nnew patch against sagenb that simply adds calls to log.msg in a few places, which will properly log user login attempts using the standard twisted loging facility",
     "created_at": "2009-11-19T22:43:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3619",
     "type": "issue_comment",
@@ -217,7 +217,7 @@ archive/issue_comments_025543.json:
 }
 ```
 
-Attachment
+Attachment [sagenb-3619.patch](tarball://root/attachments/some-uuid/ticket3619/sagenb-3619.patch) by was created at 2009-11-19 22:43:29
 
 new patch against sagenb that simply adds calls to log.msg in a few places, which will properly log user login attempts using the standard twisted loging facility
 

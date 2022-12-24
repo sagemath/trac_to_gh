@@ -327,7 +327,7 @@ Mercurial patch to get _socket to build on OpenSolaris
 archive/issue_comments_083704.json:
 ```json
 {
-    "body": "Attachment\n\nTested on OpenSolaris x86 and Fedora 12. With all other tests given, this is ok.\n\nPositive review.\n\nJaap",
+    "body": "Attachment [permit_underscore_socket_to_build.patch](tarball://root/attachments/some-uuid/ticket9041/permit_underscore_socket_to_build.patch) by jsp created at 2010-06-12 12:16:52\n\nTested on OpenSolaris x86 and Fedora 12. With all other tests given, this is ok.\n\nPositive review.\n\nJaap",
     "created_at": "2010-06-12T12:16:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9041",
     "type": "issue_comment",
@@ -336,7 +336,7 @@ archive/issue_comments_083704.json:
 }
 ```
 
-Attachment
+Attachment [permit_underscore_socket_to_build.patch](tarball://root/attachments/some-uuid/ticket9041/permit_underscore_socket_to_build.patch) by jsp created at 2010-06-12 12:16:52
 
 Tested on OpenSolaris x86 and Fedora 12. With all other tests given, this is ok.
 

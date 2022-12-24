@@ -65,7 +65,7 @@ Michael
 archive/issue_comments_041852.json:
 ```json
 {
-    "body": "Attachment\n\nOops, forgot to doctest the documentation.  I've replaced my original patch with a new one that also fixes these two doctest failures.",
+    "body": "Attachment [deprecate-symbolic-unnamed-call.patch](tarball://root/attachments/some-uuid/ticket5413/deprecate-symbolic-unnamed-call.patch) by cwitty created at 2009-03-03 02:40:26\n\nOops, forgot to doctest the documentation.  I've replaced my original patch with a new one that also fixes these two doctest failures.",
     "created_at": "2009-03-03T02:40:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5413",
     "type": "issue_comment",
@@ -74,7 +74,7 @@ archive/issue_comments_041852.json:
 }
 ```
 
-Attachment
+Attachment [deprecate-symbolic-unnamed-call.patch](tarball://root/attachments/some-uuid/ticket5413/deprecate-symbolic-unnamed-call.patch) by cwitty created at 2009-03-03 02:40:26
 
 Oops, forgot to doctest the documentation.  I've replaced my original patch with a new one that also fixes these two doctest failures.
 
@@ -234,7 +234,7 @@ After discussions on IRC and sage-devel (http://groups.google.com/group/sage-dev
 archive/issue_comments_041860.json:
 ```json
 {
-    "body": "Attachment\n\nI've posted a patch that implements the more extensive deprecation described here: http://groups.google.com/group/sage-devel/browse_thread/thread/97cdf80edb089481#\n\nThe patch now depends on #5093.\n\nApply only the second patch.",
+    "body": "Attachment [trac5413-deprecate-symbolic-unnamed-call.patch](tarball://root/attachments/some-uuid/ticket5413/trac5413-deprecate-symbolic-unnamed-call.patch) by cwitty created at 2009-03-20 03:06:10\n\nI've posted a patch that implements the more extensive deprecation described here: http://groups.google.com/group/sage-devel/browse_thread/thread/97cdf80edb089481#\n\nThe patch now depends on #5093.\n\nApply only the second patch.",
     "created_at": "2009-03-20T03:06:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5413",
     "type": "issue_comment",
@@ -243,7 +243,7 @@ archive/issue_comments_041860.json:
 }
 ```
 
-Attachment
+Attachment [trac5413-deprecate-symbolic-unnamed-call.patch](tarball://root/attachments/some-uuid/ticket5413/trac5413-deprecate-symbolic-unnamed-call.patch) by cwitty created at 2009-03-20 03:06:10
 
 I've posted a patch that implements the more extensive deprecation described here: http://groups.google.com/group/sage-devel/browse_thread/thread/97cdf80edb089481#
 
@@ -392,7 +392,7 @@ Michael
 archive/issue_comments_041866.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5413-reviewer.patch](tarball://root/attachments/some-uuid/ticket5413/trac_5413-reviewer.patch) by mabshoff created at 2009-03-25 23:30:42",
     "created_at": "2009-03-25T23:30:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5413",
     "type": "issue_comment",
@@ -401,7 +401,7 @@ archive/issue_comments_041866.json:
 }
 ```
 
-Attachment
+Attachment [trac_5413-reviewer.patch](tarball://root/attachments/some-uuid/ticket5413/trac_5413-reviewer.patch) by mabshoff created at 2009-03-25 23:30:42
 
 
 

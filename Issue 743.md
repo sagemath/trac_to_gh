@@ -189,7 +189,7 @@ for some comments on labels for vertices.
 archive/issue_comments_004354.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [vertex_association.hg](tarball://root/attachments/some-uuid/ticket743/vertex_association.hg) by rlm created at 2008-01-27 02:06:27",
     "created_at": "2008-01-27T02:06:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/743",
     "type": "issue_comment",
@@ -198,7 +198,7 @@ archive/issue_comments_004354.json:
 }
 ```
 
-Attachment
+Attachment [vertex_association.hg](tarball://root/attachments/some-uuid/ticket743/vertex_association.hg) by rlm created at 2008-01-27 02:06:27
 
 
 
@@ -279,7 +279,7 @@ Resolution: fixed
 archive/issue_comments_004359.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-743-fix.patch](tarball://root/attachments/some-uuid/ticket743/trac-743-fix.patch) by cwitty created at 2008-01-27 04:14:27",
     "created_at": "2008-01-27T04:14:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/743",
     "type": "issue_comment",
@@ -288,7 +288,7 @@ archive/issue_comments_004359.json:
 }
 ```
 
-Attachment
+Attachment [trac-743-fix.patch](tarball://root/attachments/some-uuid/ticket743/trac-743-fix.patch) by cwitty created at 2008-01-27 04:14:27
 
 
 

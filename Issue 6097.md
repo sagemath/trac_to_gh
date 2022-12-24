@@ -73,7 +73,7 @@ This must be fixed by improving sageinspect.  That should be easy.
 archive/issue_comments_048607.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [abstract_method-6097-nt.patch](tarball://root/attachments/some-uuid/ticket6097/abstract_method-6097-nt.patch) by nthiery created at 2009-05-21 23:41:43",
     "created_at": "2009-05-21T23:41:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6097",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_048607.json:
 }
 ```
 
-Attachment
+Attachment [abstract_method-6097-nt.patch](tarball://root/attachments/some-uuid/ticket6097/abstract_method-6097-nt.patch) by nthiery created at 2009-05-21 23:41:43
 
 
 

@@ -195,7 +195,7 @@ PS The vale of N_max would presumably be different for the different algorithms 
 archive/issue_comments_007698.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_1234.patch](tarball://root/attachments/some-uuid/ticket1234/trac_1234.patch) by was created at 2009-01-22 08:20:11",
     "created_at": "2009-01-22T08:20:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1234",
     "type": "issue_comment",
@@ -204,7 +204,7 @@ archive/issue_comments_007698.json:
 }
 ```
 
-Attachment
+Attachment [trac_1234.patch](tarball://root/attachments/some-uuid/ticket1234/trac_1234.patch) by was created at 2009-01-22 08:20:11
 
 
 

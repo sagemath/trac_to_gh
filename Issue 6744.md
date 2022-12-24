@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6744
 archive/issue_comments_055487.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [install_script_stores_start_time.patch](tarball://root/attachments/some-uuid/ticket6744/install_script_stores_start_time.patch) by schilly created at 2009-08-14 10:01:08",
     "created_at": "2009-08-14T10:01:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6744",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_055487.json:
 }
 ```
 
-Attachment
+Attachment [install_script_stores_start_time.patch](tarball://root/attachments/some-uuid/ticket6744/install_script_stores_start_time.patch) by schilly created at 2009-08-14 10:01:08
 
 
 

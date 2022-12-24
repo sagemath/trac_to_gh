@@ -53,7 +53,7 @@ Changing status from new to assigned.
 archive/issue_comments_021972.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [termcap-1.3.1-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3171/termcap-1.3.1-64bit-osx.patch) by gfurnish created at 2008-05-19 00:32:50",
     "created_at": "2008-05-19T00:32:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3171",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_021972.json:
 }
 ```
 
-Attachment
+Attachment [termcap-1.3.1-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3171/termcap-1.3.1-64bit-osx.patch) by gfurnish created at 2008-05-19 00:32:50
 
 
 

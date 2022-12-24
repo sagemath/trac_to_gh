@@ -440,7 +440,7 @@ non-ascii characters which I had to delete before merging his patch.
 archive/issue_comments_075403.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8414_weyl_group_space-review-nt.patch](tarball://root/attachments/some-uuid/ticket8414/trac_8414_weyl_group_space-review-nt.patch) by nthiery created at 2010-04-18 18:09:08",
     "created_at": "2010-04-18T18:09:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8414",
     "type": "issue_comment",
@@ -449,7 +449,7 @@ archive/issue_comments_075403.json:
 }
 ```
 
-Attachment
+Attachment [trac_8414_weyl_group_space-review-nt.patch](tarball://root/attachments/some-uuid/ticket8414/trac_8414_weyl_group_space-review-nt.patch) by nthiery created at 2010-04-18 18:09:08
 
 
 
@@ -504,7 +504,7 @@ Rename lattice() method space() in WeylGroups. Add keys option to reflections()
 archive/issue_comments_075406.json:
 ```json
 {
-    "body": "Attachment\n\n> Please also include #8414: in front of the patch description!\n\nOK, I changed the patch description to begin #8414.",
+    "body": "Attachment [trac_8414_weyl_group_space.patch](tarball://root/attachments/some-uuid/ticket8414/trac_8414_weyl_group_space.patch) by bump created at 2010-04-19 01:21:22\n\n> Please also include #8414: in front of the patch description!\n\nOK, I changed the patch description to begin #8414.",
     "created_at": "2010-04-19T01:21:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8414",
     "type": "issue_comment",
@@ -513,7 +513,7 @@ archive/issue_comments_075406.json:
 }
 ```
 
-Attachment
+Attachment [trac_8414_weyl_group_space.patch](tarball://root/attachments/some-uuid/ticket8414/trac_8414_weyl_group_space.patch) by bump created at 2010-04-19 01:21:22
 
 > Please also include #8414: in front of the patch description!
 

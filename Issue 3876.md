@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3876
 archive/issue_comments_027641.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sigma.patch](tarball://root/attachments/some-uuid/ticket3876/sigma.patch) by kcrisman created at 2008-08-15 17:56:42",
     "created_at": "2008-08-15T17:56:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3876",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_027641.json:
 }
 ```
 
-Attachment
+Attachment [sigma.patch](tarball://root/attachments/some-uuid/ticket3876/sigma.patch) by kcrisman created at 2008-08-15 17:56:42
 
 
 
@@ -49,7 +49,7 @@ Attachment
 archive/issue_comments_027642.json:
 ```json
 {
-    "body": "Attachment\n\nAdds plotting to the Euler phi function",
+    "body": "Attachment [euler_phi.patch](tarball://root/attachments/some-uuid/ticket3876/euler_phi.patch) by kcrisman created at 2008-08-24 03:56:44\n\nAdds plotting to the Euler phi function",
     "created_at": "2008-08-24T03:56:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3876",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_027642.json:
 }
 ```
 
-Attachment
+Attachment [euler_phi.patch](tarball://root/attachments/some-uuid/ticket3876/euler_phi.patch) by kcrisman created at 2008-08-24 03:56:44
 
 Adds plotting to the Euler phi function
 

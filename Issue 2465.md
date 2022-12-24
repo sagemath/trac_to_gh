@@ -80,7 +80,7 @@ Changing assignee from failure to was.
 archive/issue_comments_016707.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-2465.patch](tarball://root/attachments/some-uuid/ticket2465/sage-2465.patch) by was created at 2008-03-11 02:02:49",
     "created_at": "2008-03-11T02:02:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2465",
     "type": "issue_comment",
@@ -89,7 +89,7 @@ archive/issue_comments_016707.json:
 }
 ```
 
-Attachment
+Attachment [sage-2465.patch](tarball://root/attachments/some-uuid/ticket2465/sage-2465.patch) by was created at 2008-03-11 02:02:49
 
 
 

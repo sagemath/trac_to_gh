@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5901
 archive/issue_comments_046647.json:
 ```json
 {
-    "body": "Attachment\n\nI don't think this is applicable anymore. As far as I know, the testing is done in the user's home folder. Making $SAGE_ROOT unwritable didn't give me any permission errors either.",
+    "body": "Attachment [sage_scripts-maketest.patch](tarball://root/attachments/some-uuid/ticket5901/sage_scripts-maketest.patch) by timdumol created at 2010-04-18 13:31:21\n\nI don't think this is applicable anymore. As far as I know, the testing is done in the user's home folder. Making $SAGE_ROOT unwritable didn't give me any permission errors either.",
     "created_at": "2010-04-18T13:31:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5901",
     "type": "issue_comment",
@@ -41,7 +41,7 @@ archive/issue_comments_046647.json:
 }
 ```
 
-Attachment
+Attachment [sage_scripts-maketest.patch](tarball://root/attachments/some-uuid/ticket5901/sage_scripts-maketest.patch) by timdumol created at 2010-04-18 13:31:21
 
 I don't think this is applicable anymore. As far as I know, the testing is done in the user's home folder. Making $SAGE_ROOT unwritable didn't give me any permission errors either.
 

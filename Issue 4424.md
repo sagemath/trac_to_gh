@@ -114,7 +114,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4424
 archive/issue_comments_032524.json:
 ```json
 {
-    "body": "Attachment\n\nI attched each m file from the extcode repo and then added each .sig file to the repo. Pointless, but what the hell :)\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_4424.patch](tarball://root/attachments/some-uuid/ticket4424/trac_4424.patch) by mabshoff created at 2008-11-02 18:05:39\n\nI attched each m file from the extcode repo and then added each .sig file to the repo. Pointless, but what the hell :)\n\nCheers,\n\nMichael",
     "created_at": "2008-11-02T18:05:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4424",
     "type": "issue_comment",
@@ -123,7 +123,7 @@ archive/issue_comments_032524.json:
 }
 ```
 
-Attachment
+Attachment [trac_4424.patch](tarball://root/attachments/some-uuid/ticket4424/trac_4424.patch) by mabshoff created at 2008-11-02 18:05:39
 
 I attched each m file from the extcode repo and then added each .sig file to the repo. Pointless, but what the hell :)
 

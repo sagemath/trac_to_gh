@@ -53,7 +53,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3371
 archive/issue_comments_023584.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3371.patch](tarball://root/attachments/some-uuid/ticket3371/sage-3371.patch) by fwclarke created at 2008-06-05 17:09:07",
     "created_at": "2008-06-05T17:09:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3371",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_023584.json:
 }
 ```
 
-Attachment
+Attachment [sage-3371.patch](tarball://root/attachments/some-uuid/ticket3371/sage-3371.patch) by fwclarke created at 2008-06-05 17:09:07
 
 
 
@@ -125,7 +125,7 @@ extra touch-ups
 archive/issue_comments_023588.json:
 ```json
 {
-    "body": "Attachment\n\nI approve of the changes in this ticket.",
+    "body": "Attachment [trac-3371.patch](tarball://root/attachments/some-uuid/ticket3371/trac-3371.patch) by roed created at 2008-06-18 09:05:14\n\nI approve of the changes in this ticket.",
     "created_at": "2008-06-18T09:05:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3371",
     "type": "issue_comment",
@@ -134,7 +134,7 @@ archive/issue_comments_023588.json:
 }
 ```
 
-Attachment
+Attachment [trac-3371.patch](tarball://root/attachments/some-uuid/ticket3371/trac-3371.patch) by roed created at 2008-06-18 09:05:14
 
 I approve of the changes in this ticket.
 
@@ -145,7 +145,7 @@ I approve of the changes in this ticket.
 archive/issue_comments_023589.json:
 ```json
 {
-    "body": "Attachment\n\nadd a doctest",
+    "body": "Attachment [trac-3371-doctest.patch](tarball://root/attachments/some-uuid/ticket3371/trac-3371-doctest.patch) by craigcitro created at 2008-06-18 09:05:31\n\nadd a doctest",
     "created_at": "2008-06-18T09:05:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3371",
     "type": "issue_comment",
@@ -154,7 +154,7 @@ archive/issue_comments_023589.json:
 }
 ```
 
-Attachment
+Attachment [trac-3371-doctest.patch](tarball://root/attachments/some-uuid/ticket3371/trac-3371-doctest.patch) by craigcitro created at 2008-06-18 09:05:31
 
 add a doctest
 

@@ -38,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7813
 archive/issue_comments_067602.json:
 ```json
 {
-    "body": "Attachment\n\nSee lines 156, 159, and 162. `hg qnew -f docs patch` did not work for me this time so I include the whole file.",
+    "body": "Attachment [conf.py](tarball://root/attachments/some-uuid/ticket7813/conf.py) by slosoi created at 2010-01-02 03:46:15\n\nSee lines 156, 159, and 162. `hg qnew -f docs patch` did not work for me this time so I include the whole file.",
     "created_at": "2010-01-02T03:46:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7813",
     "type": "issue_comment",
@@ -47,6 +47,6 @@ archive/issue_comments_067602.json:
 }
 ```
 
-Attachment
+Attachment [conf.py](tarball://root/attachments/some-uuid/ticket7813/conf.py) by slosoi created at 2010-01-02 03:46:15
 
 See lines 156, 159, and 162. `hg qnew -f docs patch` did not work for me this time so I include the whole file.

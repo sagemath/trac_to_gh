@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7399
 archive/issue_comments_062214.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [7399-graph-plot3d.patch](tarball://root/attachments/some-uuid/ticket7399/7399-graph-plot3d.patch) by robertwb created at 2009-11-06 03:14:36",
     "created_at": "2009-11-06T03:14:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7399",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_062214.json:
 }
 ```
 
-Attachment
+Attachment [7399-graph-plot3d.patch](tarball://root/attachments/some-uuid/ticket7399/7399-graph-plot3d.patch) by robertwb created at 2009-11-06 03:14:36
 
 
 

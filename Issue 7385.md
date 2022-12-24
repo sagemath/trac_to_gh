@@ -73,7 +73,7 @@ Changing status from new to needs_review.
 archive/issue_comments_062112.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch should fix your problem. This depends on #7309 and #7310.",
+    "body": "Attachment [trac_7385-renaming-published-worksheets.patch](tarball://root/attachments/some-uuid/ticket7385/trac_7385-renaming-published-worksheets.patch) by timdumol created at 2009-11-04 11:22:17\n\nThis patch should fix your problem. This depends on #7309 and #7310.",
     "created_at": "2009-11-04T11:22:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7385",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_062112.json:
 }
 ```
 
-Attachment
+Attachment [trac_7385-renaming-published-worksheets.patch](tarball://root/attachments/some-uuid/ticket7385/trac_7385-renaming-published-worksheets.patch) by timdumol created at 2009-11-04 11:22:17
 
 This patch should fix your problem. This depends on #7309 and #7310.
 

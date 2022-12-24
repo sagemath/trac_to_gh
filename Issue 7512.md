@@ -87,7 +87,7 @@ Changing status from new to needs_review.
 archive/issue_comments_063584.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-7512-fast_callable-callable_expressions.patch](tarball://root/attachments/some-uuid/ticket7512/trac-7512-fast_callable-callable_expressions.patch) by jason created at 2010-01-20 13:21:43",
     "created_at": "2010-01-20T13:21:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7512",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_063584.json:
 }
 ```
 
-Attachment
+Attachment [trac-7512-fast_callable-callable_expressions.patch](tarball://root/attachments/some-uuid/ticket7512/trac-7512-fast_callable-callable_expressions.patch) by jason created at 2010-01-20 13:21:43
 
 
 

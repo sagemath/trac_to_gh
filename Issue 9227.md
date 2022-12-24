@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9227
 archive/issue_comments_086585.json:
 ```json
 {
-    "body": "Attachment\n\npatch to add mm and km",
+    "body": "Attachment [trac_9227_mm_and_km_units.patch](tarball://root/attachments/some-uuid/ticket9227/trac_9227_mm_and_km_units.patch) by allmar created at 2010-08-27 23:01:00\n\npatch to add mm and km",
     "created_at": "2010-08-27T23:01:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9227",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_086585.json:
 }
 ```
 
-Attachment
+Attachment [trac_9227_mm_and_km_units.patch](tarball://root/attachments/some-uuid/ticket9227/trac_9227_mm_and_km_units.patch) by allmar created at 2010-08-27 23:01:00
 
 patch to add mm and km
 
@@ -113,7 +113,7 @@ twice. You should replace one by a comparison to yards, feet or something else.
 archive/issue_comments_086589.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9227_mm_and_km_units.2.patch](tarball://root/attachments/some-uuid/ticket9227/trac_9227_mm_and_km_units.2.patch) by spice created at 2011-01-07 22:56:41",
     "created_at": "2011-01-07T22:56:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9227",
     "type": "issue_comment",
@@ -122,7 +122,7 @@ archive/issue_comments_086589.json:
 }
 ```
 
-Attachment
+Attachment [trac_9227_mm_and_km_units.2.patch](tarball://root/attachments/some-uuid/ticket9227/trac_9227_mm_and_km_units.2.patch) by spice created at 2011-01-07 22:56:41
 
 
 

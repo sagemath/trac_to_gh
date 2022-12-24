@@ -93,7 +93,7 @@ Fixing ordinal_str for numbers of the form n*100+11, n*100+12, n*100+13
 archive/issue_comments_056444.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me. It passes unit tests and the documentation builds correctly. \n\nAdam",
+    "body": "Attachment [ordinal_str.patch](tarball://root/attachments/some-uuid/ticket6842/ordinal_str.patch) by awebb created at 2009-08-29 12:18:58\n\nLooks good to me. It passes unit tests and the documentation builds correctly. \n\nAdam",
     "created_at": "2009-08-29T12:18:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6842",
     "type": "issue_comment",
@@ -102,7 +102,7 @@ archive/issue_comments_056444.json:
 }
 ```
 
-Attachment
+Attachment [ordinal_str.patch](tarball://root/attachments/some-uuid/ticket6842/ordinal_str.patch) by awebb created at 2009-08-29 12:18:58
 
 Looks good to me. It passes unit tests and the documentation builds correctly. 
 

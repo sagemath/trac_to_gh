@@ -104,7 +104,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_069901.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7999-encoding.patch](tarball://root/attachments/some-uuid/ticket7999/trac_7999-encoding.patch) by mpatel created at 2010-01-19 19:42:03",
     "created_at": "2010-01-19T19:42:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7999",
     "type": "issue_comment",
@@ -113,7 +113,7 @@ archive/issue_comments_069901.json:
 }
 ```
 
-Attachment
+Attachment [trac_7999-encoding.patch](tarball://root/attachments/some-uuid/ticket7999/trac_7999-encoding.patch) by mpatel created at 2010-01-19 19:42:03
 
 
 

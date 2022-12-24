@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/958
 archive/issue_comments_005840.json:
 ```json
 {
-    "body": "Attachment\n\n2.8.10 will have the above patch.  Then, \n\nmake install DESTDIR=/usr/local/sage-2.8.7\n\nwill copy the entire sage directory to $(DESTDIR)/sage, and put a copy of the sage startup script in $(DESTDIR)/bin .",
+    "body": "Attachment [958.patch](tarball://root/attachments/some-uuid/ticket958/958.patch) by cwitty created at 2007-10-27 18:43:39\n\n2.8.10 will have the above patch.  Then, \n\nmake install DESTDIR=/usr/local/sage-2.8.7\n\nwill copy the entire sage directory to $(DESTDIR)/sage, and put a copy of the sage startup script in $(DESTDIR)/bin .",
     "created_at": "2007-10-27T18:43:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/958",
     "type": "issue_comment",
@@ -50,7 +50,7 @@ archive/issue_comments_005840.json:
 }
 ```
 
-Attachment
+Attachment [958.patch](tarball://root/attachments/some-uuid/ticket958/958.patch) by cwitty created at 2007-10-27 18:43:39
 
 2.8.10 will have the above patch.  Then, 
 

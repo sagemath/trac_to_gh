@@ -282,7 +282,7 @@ appears to fix the problem.  However, it appears that this issue is unrelated to
 archive/issue_comments_013048.json:
 ```json
 {
-    "body": "Attachment\n\nThanks to gfurnish's brilliance, we found a sticky maxima issue corrected in the first patch (with an added doctest to make sure something like that doesn't happen again!)",
+    "body": "Attachment [symbolic-matrix-maxima.patch](tarball://root/attachments/some-uuid/ticket2021/symbolic-matrix-maxima.patch) by jason created at 2008-02-01 19:09:46\n\nThanks to gfurnish's brilliance, we found a sticky maxima issue corrected in the first patch (with an added doctest to make sure something like that doesn't happen again!)",
     "created_at": "2008-02-01T19:09:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2021",
     "type": "issue_comment",
@@ -291,7 +291,7 @@ archive/issue_comments_013048.json:
 }
 ```
 
-Attachment
+Attachment [symbolic-matrix-maxima.patch](tarball://root/attachments/some-uuid/ticket2021/symbolic-matrix-maxima.patch) by jason created at 2008-02-01 19:09:46
 
 Thanks to gfurnish's brilliance, we found a sticky maxima issue corrected in the first patch (with an added doctest to make sure something like that doesn't happen again!)
 

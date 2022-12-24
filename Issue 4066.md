@@ -77,7 +77,7 @@ Michael
 archive/issue_comments_029347.json:
 ```json
 {
-    "body": "Attachment\n\nOk, I have attached an updated patch that \n\n* passes -ba\n* builds fine on Solaris, OSX and Linux and passes doctests on OSX and Linux\n\nNote that _[A-Z] are numerical constants on BSD and Solaris and should not be used as variable names.\n\nI am CCing Robert since he was involved in writing that code (I think :))\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_4066_solaris_fixes.patch](tarball://root/attachments/some-uuid/ticket4066/trac_4066_solaris_fixes.patch) by mabshoff created at 2008-09-05 09:49:36\n\nOk, I have attached an updated patch that \n\n* passes -ba\n* builds fine on Solaris, OSX and Linux and passes doctests on OSX and Linux\n\nNote that _[A-Z] are numerical constants on BSD and Solaris and should not be used as variable names.\n\nI am CCing Robert since he was involved in writing that code (I think :))\n\nCheers,\n\nMichael",
     "created_at": "2008-09-05T09:49:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4066",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_029347.json:
 }
 ```
 
-Attachment
+Attachment [trac_4066_solaris_fixes.patch](tarball://root/attachments/some-uuid/ticket4066/trac_4066_solaris_fixes.patch) by mabshoff created at 2008-09-05 09:49:36
 
 Ok, I have attached an updated patch that 
 

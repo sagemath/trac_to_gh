@@ -111,7 +111,7 @@ Changing status from new to needs_review.
 archive/issue_comments_071612.json:
 ```json
 {
-    "body": "Attachment\n\n(I didn't check `conf.py` for the other documents, but they build with just the usual warnings, so I don't think we need to modify them.)",
+    "body": "Attachment [trac_8146-french.patch](tarball://root/attachments/some-uuid/ticket8146/trac_8146-french.patch) by jhpalmieri created at 2010-02-02 02:46:33\n\n(I didn't check `conf.py` for the other documents, but they build with just the usual warnings, so I don't think we need to modify them.)",
     "created_at": "2010-02-02T02:46:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8146",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_071612.json:
 }
 ```
 
-Attachment
+Attachment [trac_8146-french.patch](tarball://root/attachments/some-uuid/ticket8146/trac_8146-french.patch) by jhpalmieri created at 2010-02-02 02:46:33
 
 (I didn't check `conf.py` for the other documents, but they build with just the usual warnings, so I don't think we need to modify them.)
 

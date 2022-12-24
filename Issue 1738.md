@@ -49,7 +49,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1738
 archive/issue_comments_010995.json:
 ```json
 {
-    "body": "Attachment\n\nIt looks good to me except change the somewhat too verbose\n\n```\n  sage: x = PolynomialRing(RationalField(),'x').gen() \n```\n\nto one of the following (take your pick):\n\n```\n  sage: x = polygen(QQ, 'x')\n```\n\nor \n\n```\n  sage: R.<x> = QQ[]\n```\n\nor \n\n```\n  sage: x = PolynomialRing(QQ,'x').gen()\n```\n\n\nI think it is important that the docstrings give illustrations of good usage of Sage.",
+    "body": "Attachment [fraction_field_pow.patch](tarball://root/attachments/some-uuid/ticket1738/fraction_field_pow.patch) by was created at 2008-01-10 03:43:39\n\nIt looks good to me except change the somewhat too verbose\n\n```\n  sage: x = PolynomialRing(RationalField(),'x').gen() \n```\n\nto one of the following (take your pick):\n\n```\n  sage: x = polygen(QQ, 'x')\n```\n\nor \n\n```\n  sage: R.<x> = QQ[]\n```\n\nor \n\n```\n  sage: x = PolynomialRing(QQ,'x').gen()\n```\n\n\nI think it is important that the docstrings give illustrations of good usage of Sage.",
     "created_at": "2008-01-10T03:43:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1738",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_010995.json:
 }
 ```
 
-Attachment
+Attachment [fraction_field_pow.patch](tarball://root/attachments/some-uuid/ticket1738/fraction_field_pow.patch) by was created at 2008-01-10 03:43:39
 
 It looks good to me except change the somewhat too verbose
 

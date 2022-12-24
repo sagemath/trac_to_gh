@@ -130,7 +130,7 @@ Also, re: William's note above about "hacking the Python/C API" -- that's not fo
 archive/issue_comments_005414.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_875.hg](tarball://root/attachments/some-uuid/ticket875/trac_875.hg) by cwitty created at 2007-10-27 19:45:45",
     "created_at": "2007-10-27T19:45:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/875",
     "type": "issue_comment",
@@ -139,7 +139,7 @@ archive/issue_comments_005414.json:
 }
 ```
 
-Attachment
+Attachment [trac_875.hg](tarball://root/attachments/some-uuid/ticket875/trac_875.hg) by cwitty created at 2007-10-27 19:45:45
 
 
 

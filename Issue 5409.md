@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5409
 archive/issue_comments_041805.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5409.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409.patch) by was created at 2009-03-01 07:56:18",
     "created_at": "2009-03-01T07:56:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5409",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_041805.json:
 }
 ```
 
-Attachment
+Attachment [trac_5409.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409.patch) by was created at 2009-03-01 07:56:18
 
 
 
@@ -51,7 +51,7 @@ Attachment
 archive/issue_comments_041806.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5409-part3.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409-part3.patch) by was created at 2009-03-01 22:07:08",
     "created_at": "2009-03-01T22:07:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5409",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_041806.json:
 }
 ```
 
-Attachment
+Attachment [trac_5409-part3.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409-part3.patch) by was created at 2009-03-01 22:07:08
 
 
 
@@ -69,7 +69,7 @@ Attachment
 archive/issue_comments_041807.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5409-part4.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409-part4.patch) by was created at 2009-03-02 08:35:07",
     "created_at": "2009-03-02T08:35:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5409",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_041807.json:
 }
 ```
 
-Attachment
+Attachment [trac_5409-part4.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409-part4.patch) by was created at 2009-03-02 08:35:07
 
 
 
@@ -87,7 +87,7 @@ Attachment
 archive/issue_comments_041808.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5409-part5.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409-part5.patch) by was created at 2009-03-02 09:44:15",
     "created_at": "2009-03-02T09:44:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5409",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_041808.json:
 }
 ```
 
-Attachment
+Attachment [trac_5409-part5.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409-part5.patch) by was created at 2009-03-02 09:44:15
 
 
 
@@ -105,7 +105,7 @@ Attachment
 archive/issue_comments_041809.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5409-part6.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409-part6.patch) by was created at 2009-03-02 09:52:38",
     "created_at": "2009-03-02T09:52:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5409",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_041809.json:
 }
 ```
 
-Attachment
+Attachment [trac_5409-part6.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409-part6.patch) by was created at 2009-03-02 09:52:38
 
 
 
@@ -211,7 +211,7 @@ diff -r 311c05f56282 sage/rings/ring.pyx
 archive/issue_comments_041812.json:
 ```json
 {
-    "body": "Attachment\n\nreview patch -- fix doctests except for pickle jar",
+    "body": "Attachment [trac_5409.part7-reviewer.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409.part7-reviewer.patch) by tornaria created at 2009-03-02 18:29:37\n\nreview patch -- fix doctests except for pickle jar",
     "created_at": "2009-03-02T18:29:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5409",
     "type": "issue_comment",
@@ -220,7 +220,7 @@ archive/issue_comments_041812.json:
 }
 ```
 
-Attachment
+Attachment [trac_5409.part7-reviewer.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409.part7-reviewer.patch) by tornaria created at 2009-03-02 18:29:37
 
 review patch -- fix doctests except for pickle jar
 
@@ -264,7 +264,7 @@ Quaternion Algebra (2, 3) with base ring Rational Field
 archive/issue_comments_041814.json:
 ```json
 {
-    "body": "Attachment\n\nfix caching",
+    "body": "Attachment [trac_5409-part7.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409-part7.patch) by was created at 2009-03-02 19:16:31\n\nfix caching",
     "created_at": "2009-03-02T19:16:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5409",
     "type": "issue_comment",
@@ -273,7 +273,7 @@ archive/issue_comments_041814.json:
 }
 ```
 
-Attachment
+Attachment [trac_5409-part7.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409-part7.patch) by was created at 2009-03-02 19:16:31
 
 fix caching
 
@@ -326,7 +326,7 @@ sage: v.inner_product(v)
 archive/issue_comments_041816.json:
 ```json
 {
-    "body": "Attachment\n\nWe didn't do quat alg from discriminants for number fields yet.   I'm going to also get rid of \"norm\" and \"trace\" and just have \"reduced_norm\" and \"reduced_trace\" since even Gonzalo clearly got confused by having both and an alias.",
+    "body": "Attachment [trac_5409-part8.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409-part8.patch) by was created at 2009-03-04 04:46:25\n\nWe didn't do quat alg from discriminants for number fields yet.   I'm going to also get rid of \"norm\" and \"trace\" and just have \"reduced_norm\" and \"reduced_trace\" since even Gonzalo clearly got confused by having both and an alias.",
     "created_at": "2009-03-04T04:46:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5409",
     "type": "issue_comment",
@@ -335,7 +335,7 @@ archive/issue_comments_041816.json:
 }
 ```
 
-Attachment
+Attachment [trac_5409-part8.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409-part8.patch) by was created at 2009-03-04 04:46:25
 
 We didn't do quat alg from discriminants for number fields yet.   I'm going to also get rid of "norm" and "trace" and just have "reduced_norm" and "reduced_trace" since even Gonzalo clearly got confused by having both and an alias.
 
@@ -364,7 +364,7 @@ get rid of "norm" and "trace" -- this confused gonzalo; now have only reduced no
 archive/issue_comments_041818.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5409-part9.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409-part9.patch) by bober created at 2009-03-04 08:23:01",
     "created_at": "2009-03-04T08:23:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5409",
     "type": "issue_comment",
@@ -373,7 +373,7 @@ archive/issue_comments_041818.json:
 }
 ```
 
-Attachment
+Attachment [trac_5409-part9.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409-part9.patch) by bober created at 2009-03-04 08:23:01
 
 
 
@@ -400,7 +400,7 @@ Bug fixes and doctests
 archive/issue_comments_041820.json:
 ```json
 {
-    "body": "Attachment\n\nI got it to patch correctly against 3.4.rc0.  I found some bugs and added a few doctests.  Partial positive review.  JV",
+    "body": "Attachment [11771.patch](tarball://root/attachments/some-uuid/ticket5409/11771.patch) by jvoight created at 2009-03-04 19:56:25\n\nI got it to patch correctly against 3.4.rc0.  I found some bugs and added a few doctests.  Partial positive review.  JV",
     "created_at": "2009-03-04T19:56:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5409",
     "type": "issue_comment",
@@ -409,7 +409,7 @@ archive/issue_comments_041820.json:
 }
 ```
 
-Attachment
+Attachment [11771.patch](tarball://root/attachments/some-uuid/ticket5409/11771.patch) by jvoight created at 2009-03-04 19:56:25
 
 I got it to patch correctly against 3.4.rc0.  I found some bugs and added a few doctests.  Partial positive review.  JV
 
@@ -663,7 +663,7 @@ positive review (I fixed the other two small mistakes from John Voight's patch i
 archive/issue_comments_041828.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5409-part12-reviewer.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409-part12-reviewer.patch) by mabshoff created at 2009-03-10 19:46:26",
     "created_at": "2009-03-10T19:46:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5409",
     "type": "issue_comment",
@@ -672,7 +672,7 @@ archive/issue_comments_041828.json:
 }
 ```
 
-Attachment
+Attachment [trac_5409-part12-reviewer.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409-part12-reviewer.patch) by mabshoff created at 2009-03-10 19:46:26
 
 
 

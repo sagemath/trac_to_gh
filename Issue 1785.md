@@ -79,7 +79,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1785
 archive/issue_comments_011299.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1785-ell_point_ext.patch](tarball://root/attachments/some-uuid/ticket1785/1785-ell_point_ext.patch) by AlexGhitza created at 2008-09-07 07:29:44",
     "created_at": "2008-09-07T07:29:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1785",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_011299.json:
 }
 ```
 
-Attachment
+Attachment [1785-ell_point_ext.patch](tarball://root/attachments/some-uuid/ticket1785/1785-ell_point_ext.patch) by AlexGhitza created at 2008-09-07 07:29:44
 
 
 

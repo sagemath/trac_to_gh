@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4019
 archive/issue_comments_028985.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4019-QQx-numer.patch](tarball://root/attachments/some-uuid/ticket4019/4019-QQx-numer.patch) by robertwb created at 2008-08-31 09:06:25",
     "created_at": "2008-08-31T09:06:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4019",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_028985.json:
 }
 ```
 
-Attachment
+Attachment [4019-QQx-numer.patch](tarball://root/attachments/some-uuid/ticket4019/4019-QQx-numer.patch) by robertwb created at 2008-08-31 09:06:25
 
 
 

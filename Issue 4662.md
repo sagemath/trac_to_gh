@@ -71,7 +71,7 @@ Changing assignee from tba to mabshoff.
 archive/issue_comments_035105.json:
 ```json
 {
-    "body": "Attachment\n\nFixes two LaTeX problems and a spelling error as an added bonus.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_4662.patch](tarball://root/attachments/some-uuid/ticket4662/trac_4662.patch) by mabshoff created at 2008-11-30 10:40:58\n\nFixes two LaTeX problems and a spelling error as an added bonus.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-30T10:40:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4662",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_035105.json:
 }
 ```
 
-Attachment
+Attachment [trac_4662.patch](tarball://root/attachments/some-uuid/ticket4662/trac_4662.patch) by mabshoff created at 2008-11-30 10:40:58
 
 Fixes two LaTeX problems and a spelling error as an added bonus.
 

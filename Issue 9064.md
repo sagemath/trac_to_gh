@@ -138,7 +138,7 @@ Remove matrix/padics.
 archive/issue_comments_084118.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:1 was]:\n> So there is no patch to post, and I take David Roe's statement (above) as a positive review.\n\nI've attached a patch made with the Mercurial queues extension.",
+    "body": "Attachment [trac_9064-remove_padic_matrix.patch](tarball://root/attachments/some-uuid/ticket9064/trac_9064-remove_padic_matrix.patch) by mpatel created at 2010-08-31 02:06:01\n\nReplying to [comment:1 was]:\n> So there is no patch to post, and I take David Roe's statement (above) as a positive review.\n\nI've attached a patch made with the Mercurial queues extension.",
     "created_at": "2010-08-31T02:06:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9064",
     "type": "issue_comment",
@@ -147,7 +147,7 @@ archive/issue_comments_084118.json:
 }
 ```
 
-Attachment
+Attachment [trac_9064-remove_padic_matrix.patch](tarball://root/attachments/some-uuid/ticket9064/trac_9064-remove_padic_matrix.patch) by mpatel created at 2010-08-31 02:06:01
 
 Replying to [comment:1 was]:
 > So there is no patch to post, and I take David Roe's statement (above) as a positive review.

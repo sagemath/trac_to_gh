@@ -54,7 +54,7 @@ This is in the docs, not in the def, of course.
 archive/issue_comments_043189.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [slope_field_typo.patch](tarball://root/attachments/some-uuid/ticket5552/slope_field_typo.patch) by kcrisman created at 2009-03-18 00:40:52",
     "created_at": "2009-03-18T00:40:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5552",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_043189.json:
 }
 ```
 
-Attachment
+Attachment [slope_field_typo.patch](tarball://root/attachments/some-uuid/ticket5552/slope_field_typo.patch) by kcrisman created at 2009-03-18 00:40:52
 
 
 

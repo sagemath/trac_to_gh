@@ -242,7 +242,7 @@ malb -- A number field is a totally different sort of object in Sage than
 archive/issue_comments_007027.json:
 ```json
 {
-    "body": "Attachment\n\nafter #2111 has been merged, this patch fixes the issue of this ticket",
+    "body": "Attachment [trac_1151.patch](tarball://root/attachments/some-uuid/ticket1151/trac_1151.patch) by malb created at 2008-02-08 12:19:27\n\nafter #2111 has been merged, this patch fixes the issue of this ticket",
     "created_at": "2008-02-08T12:19:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1151",
     "type": "issue_comment",
@@ -251,7 +251,7 @@ archive/issue_comments_007027.json:
 }
 ```
 
-Attachment
+Attachment [trac_1151.patch](tarball://root/attachments/some-uuid/ticket1151/trac_1151.patch) by malb created at 2008-02-08 12:19:27
 
 after #2111 has been merged, this patch fixes the issue of this ticket
 

@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/496
 archive/issue_comments_002474.json:
 ```json
 {
-    "body": "Attachment\n\nAttached patch fixes the problem.",
+    "body": "Attachment [arith_496.hg](tarball://root/attachments/some-uuid/ticket496/arith_496.hg) by boothby created at 2007-08-28 06:43:29\n\nAttached patch fixes the problem.",
     "created_at": "2007-08-28T06:43:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/496",
     "type": "issue_comment",
@@ -49,7 +49,7 @@ archive/issue_comments_002474.json:
 }
 ```
 
-Attachment
+Attachment [arith_496.hg](tarball://root/attachments/some-uuid/ticket496/arith_496.hg) by boothby created at 2007-08-28 06:43:29
 
 Attached patch fixes the problem.
 

@@ -104,7 +104,7 @@ the first part.
 archive/issue_comments_035137.json:
 ```json
 {
-    "body": "Attachment\n\nWith respect to the above description, this new version of the patch does everything as said before, but the modular_symbols are handled differently.\n\nIn ell_modular_symbol there are now two option, either to use or not to use eclib (for the + part at least). I implemented an optional argument that controls what method is used to normalize the modular symbols, for both eclib and sage's own modular symbols.",
+    "body": "Attachment [twisted_padic_l_functions.1.patch](tarball://root/attachments/some-uuid/ticket4667/twisted_padic_l_functions.1.patch) by wuthrich created at 2008-12-10 12:48:16\n\nWith respect to the above description, this new version of the patch does everything as said before, but the modular_symbols are handled differently.\n\nIn ell_modular_symbol there are now two option, either to use or not to use eclib (for the + part at least). I implemented an optional argument that controls what method is used to normalize the modular symbols, for both eclib and sage's own modular symbols.",
     "created_at": "2008-12-10T12:48:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4667",
     "type": "issue_comment",
@@ -113,7 +113,7 @@ archive/issue_comments_035137.json:
 }
 ```
 
-Attachment
+Attachment [twisted_padic_l_functions.1.patch](tarball://root/attachments/some-uuid/ticket4667/twisted_padic_l_functions.1.patch) by wuthrich created at 2008-12-10 12:48:16
 
 With respect to the above description, this new version of the patch does everything as said before, but the modular_symbols are handled differently.
 
@@ -144,7 +144,7 @@ New Patch, replaces the first patch. Exported against 3.2.1.
 archive/issue_comments_035139.json:
 ```json
 {
-    "body": "Attachment\n\nTarget time for the review: January 10th",
+    "body": "Attachment [twisted_padic_lseries.patch](tarball://root/attachments/some-uuid/ticket4667/twisted_padic_lseries.patch) by GeorgSWeber created at 2008-12-29 21:12:25\n\nTarget time for the review: January 10th",
     "created_at": "2008-12-29T21:12:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4667",
     "type": "issue_comment",
@@ -153,7 +153,7 @@ archive/issue_comments_035139.json:
 }
 ```
 
-Attachment
+Attachment [twisted_padic_lseries.patch](tarball://root/attachments/some-uuid/ticket4667/twisted_padic_lseries.patch) by GeorgSWeber created at 2008-12-29 21:12:25
 
 Target time for the review: January 10th
 
@@ -310,7 +310,7 @@ New patch, replaces the previous two. Exported against 3.3.rc3
 archive/issue_comments_035144.json:
 ```json
 {
-    "body": "Attachment\n\napply after the last one above (it changes only one line)",
+    "body": "Attachment [trac4667.twisted_padic_lseries.patch](tarball://root/attachments/some-uuid/ticket4667/trac4667.twisted_padic_lseries.patch) by GeorgSWeber created at 2009-02-26 05:17:01\n\napply after the last one above (it changes only one line)",
     "created_at": "2009-02-26T05:17:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4667",
     "type": "issue_comment",
@@ -319,7 +319,7 @@ archive/issue_comments_035144.json:
 }
 ```
 
-Attachment
+Attachment [trac4667.twisted_padic_lseries.patch](tarball://root/attachments/some-uuid/ticket4667/trac4667.twisted_padic_lseries.patch) by GeorgSWeber created at 2009-02-26 05:17:01
 
 apply after the last one above (it changes only one line)
 
@@ -330,7 +330,7 @@ apply after the last one above (it changes only one line)
 archive/issue_comments_035145.json:
 ```json
 {
-    "body": "Attachment\n\nAs I said in my remark of #4933, this patch here definitely should be applied before any work on #4933 is done.\n\nCould you help with the rebase? It's just two of the six files where rebasing is needed, and with the scripts, shouldn't it be rather easy?\n\nP.S.:\n\nApply the last two patches only, the latter is just a one-liner that makes a certain doctest optional. That doctest is only of illustrative nature anyway, and depends on the optional larger Cremona ell curves database for curves of conductor between 10000 and 130000. (A curve of conductor around 15000 is involved.)",
+    "body": "Attachment [trac4667_doctestfix.patch](tarball://root/attachments/some-uuid/ticket4667/trac4667_doctestfix.patch) by GeorgSWeber created at 2009-02-26 05:24:17\n\nAs I said in my remark of #4933, this patch here definitely should be applied before any work on #4933 is done.\n\nCould you help with the rebase? It's just two of the six files where rebasing is needed, and with the scripts, shouldn't it be rather easy?\n\nP.S.:\n\nApply the last two patches only, the latter is just a one-liner that makes a certain doctest optional. That doctest is only of illustrative nature anyway, and depends on the optional larger Cremona ell curves database for curves of conductor between 10000 and 130000. (A curve of conductor around 15000 is involved.)",
     "created_at": "2009-02-26T05:24:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4667",
     "type": "issue_comment",
@@ -339,7 +339,7 @@ archive/issue_comments_035145.json:
 }
 ```
 
-Attachment
+Attachment [trac4667_doctestfix.patch](tarball://root/attachments/some-uuid/ticket4667/trac4667_doctestfix.patch) by GeorgSWeber created at 2009-02-26 05:24:17
 
 As I said in my remark of #4933, this patch here definitely should be applied before any work on #4933 is done.
 
@@ -400,7 +400,7 @@ I added the 'positive review' back, but maybe soneone else should check the test
 archive/issue_comments_035148.json:
 ```json
 {
-    "body": "Attachment\n\nReplaces all previous patches.",
+    "body": "Attachment [trac_4667_z.patch](tarball://root/attachments/some-uuid/ticket4667/trac_4667_z.patch) by wuthrich created at 2009-03-25 19:23:27\n\nReplaces all previous patches.",
     "created_at": "2009-03-25T19:23:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4667",
     "type": "issue_comment",
@@ -409,7 +409,7 @@ archive/issue_comments_035148.json:
 }
 ```
 
-Attachment
+Attachment [trac_4667_z.patch](tarball://root/attachments/some-uuid/ticket4667/trac_4667_z.patch) by wuthrich created at 2009-03-25 19:23:27
 
 Replaces all previous patches.
 
@@ -575,7 +575,7 @@ but this is due to having installed the optional package. I still don't know if 
 archive/issue_comments_035154.json:
 ```json
 {
-    "body": "Attachment\n\napply after the previous patch",
+    "body": "Attachment [trac_4667_z2.patch](tarball://root/attachments/some-uuid/ticket4667/trac_4667_z2.patch) by wuthrich created at 2009-03-26 15:04:10\n\napply after the previous patch",
     "created_at": "2009-03-26T15:04:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4667",
     "type": "issue_comment",
@@ -584,7 +584,7 @@ archive/issue_comments_035154.json:
 }
 ```
 
-Attachment
+Attachment [trac_4667_z2.patch](tarball://root/attachments/some-uuid/ticket4667/trac_4667_z2.patch) by wuthrich created at 2009-03-26 15:04:10
 
 apply after the previous patch
 

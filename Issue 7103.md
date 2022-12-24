@@ -49,7 +49,7 @@ Here's an attempt.  If init.sage isn't present, then run the script "sage-starts
 archive/issue_comments_058786.json:
 ```json
 {
-    "body": "Attachment\n\napply to scripts repository",
+    "body": "Attachment [trac_7103-scripts.patch](tarball://root/attachments/some-uuid/ticket7103/trac_7103-scripts.patch) by jhpalmieri created at 2009-10-04 00:34:35\n\napply to scripts repository",
     "created_at": "2009-10-04T00:34:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7103",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_058786.json:
 }
 ```
 
-Attachment
+Attachment [trac_7103-scripts.patch](tarball://root/attachments/some-uuid/ticket7103/trac_7103-scripts.patch) by jhpalmieri created at 2009-10-04 00:34:35
 
 apply to scripts repository
 
@@ -171,7 +171,7 @@ As far as I could tell, the presence (or lack) of init.sage was unrelated to the
 archive/issue_comments_058792.json:
 ```json
 {
-    "body": "Attachment\n\napply to scripts repository",
+    "body": "Attachment [trac_7103-scripts-v2.patch](tarball://root/attachments/some-uuid/ticket7103/trac_7103-scripts-v2.patch) by jhpalmieri created at 2009-11-12 22:15:42\n\napply to scripts repository",
     "created_at": "2009-11-12T22:15:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7103",
     "type": "issue_comment",
@@ -180,7 +180,7 @@ archive/issue_comments_058792.json:
 }
 ```
 
-Attachment
+Attachment [trac_7103-scripts-v2.patch](tarball://root/attachments/some-uuid/ticket7103/trac_7103-scripts-v2.patch) by jhpalmieri created at 2009-11-12 22:15:42
 
 apply to scripts repository
 

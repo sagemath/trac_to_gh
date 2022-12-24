@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3252
 archive/issue_comments_022495.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [libsingular_kbase.patch](tarball://root/attachments/some-uuid/ticket3252/libsingular_kbase.patch) by yi created at 2008-05-18 03:35:48",
     "created_at": "2008-05-18T03:35:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3252",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_022495.json:
 }
 ```
 
-Attachment
+Attachment [libsingular_kbase.patch](tarball://root/attachments/some-uuid/ticket3252/libsingular_kbase.patch) by yi created at 2008-05-18 03:35:48
 
 
 
@@ -67,7 +67,7 @@ The patch looks good, applies cleanly and does as advertised. However, two new f
 archive/issue_comments_022497.json:
 ```json
 {
-    "body": "Attachment\n\nadd doctests as requested by reviewer",
+    "body": "Attachment [libsingular_kbase_doctest.patch](tarball://root/attachments/some-uuid/ticket3252/libsingular_kbase_doctest.patch) by yi created at 2008-05-18 15:12:45\n\nadd doctests as requested by reviewer",
     "created_at": "2008-05-18T15:12:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3252",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_022497.json:
 }
 ```
 
-Attachment
+Attachment [libsingular_kbase_doctest.patch](tarball://root/attachments/some-uuid/ticket3252/libsingular_kbase_doctest.patch) by yi created at 2008-05-18 15:12:45
 
 add doctests as requested by reviewer
 

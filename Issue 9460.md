@@ -627,7 +627,7 @@ Tests on sage.math. Built in $HOME, not on /scratch. A script was not used.
 archive/issue_comments_090709.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:17 leif]:\n\n> It's obviously an ECL/Maxima issue, but I think either related to uncatched or badly handled filesystem errors, or ECL again messing things up in concurrent builds.\n> \n> So I'm not that sure that it's the package *version*, rather than the *build circumstances*.\n> \n\nI too think this is the build problem. \n* Why should William now get a failure of `devel/sage/sage/schemes/elliptic_curves/lseries_ell.py` when I assume that worked before? `devel/sage/sage/schemes/elliptic_curves/lseries_ell.py` passed on sage.math when I built it.  \n* Why should Maxima pass all tests for me, and all tests for John, yet fail for Metesh and William? \n* Why should I get 4 failures when I build on sage.math, which don't share anything in common with the failures observed by William? \n\nI think one pass with the old Maxima and old ECL does not prove the problem is with ECL and/or Maxima. Since there issues which are not 100% reproducible, I fail to see how one good build by one person proves anything. (And even \"good build\" is not really true, as there is the elliptic curves test failed). \n\nIMHO, just changing ECL and Maxima and producing a 4.5 would be unwise until there is more proof there is not another more subtle error. \n\n\nI've just run 'dmesg' on sage.math and don't see anything like uncorrected RAM errors. In fact, I don't see any corrected RAM errors, so I doubt it is a memory fault. \n\nDave",
+    "body": "Attachment [ptestlong.log](tarball://root/attachments/some-uuid/ticket9460/ptestlong.log) by drkirkby created at 2010-07-10 09:30:58\n\nReplying to [comment:17 leif]:\n\n> It's obviously an ECL/Maxima issue, but I think either related to uncatched or badly handled filesystem errors, or ECL again messing things up in concurrent builds.\n> \n> So I'm not that sure that it's the package *version*, rather than the *build circumstances*.\n> \n\nI too think this is the build problem. \n* Why should William now get a failure of `devel/sage/sage/schemes/elliptic_curves/lseries_ell.py` when I assume that worked before? `devel/sage/sage/schemes/elliptic_curves/lseries_ell.py` passed on sage.math when I built it.  \n* Why should Maxima pass all tests for me, and all tests for John, yet fail for Metesh and William? \n* Why should I get 4 failures when I build on sage.math, which don't share anything in common with the failures observed by William? \n\nI think one pass with the old Maxima and old ECL does not prove the problem is with ECL and/or Maxima. Since there issues which are not 100% reproducible, I fail to see how one good build by one person proves anything. (And even \"good build\" is not really true, as there is the elliptic curves test failed). \n\nIMHO, just changing ECL and Maxima and producing a 4.5 would be unwise until there is more proof there is not another more subtle error. \n\n\nI've just run 'dmesg' on sage.math and don't see anything like uncorrected RAM errors. In fact, I don't see any corrected RAM errors, so I doubt it is a memory fault. \n\nDave",
     "created_at": "2010-07-10T09:30:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
@@ -636,7 +636,7 @@ archive/issue_comments_090709.json:
 }
 ```
 
-Attachment
+Attachment [ptestlong.log](tarball://root/attachments/some-uuid/ticket9460/ptestlong.log) by drkirkby created at 2010-07-10 09:30:58
 
 Replying to [comment:17 leif]:
 
@@ -696,7 +696,7 @@ Dave
 archive/issue_comments_090711.json:
 ```json
 {
-    "body": "Attachment\n\nDeps file, which 1) Makes Maxima build before Sage 2) Makes SAGETEX depend on BASE. 3) Makes R dependancy on Fortran clearer, though not necessary",
+    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket9460/deps) by drkirkby created at 2010-07-10 09:44:46\n\nDeps file, which 1) Makes Maxima build before Sage 2) Makes SAGETEX depend on BASE. 3) Makes R dependancy on Fortran clearer, though not necessary",
     "created_at": "2010-07-10T09:44:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
@@ -705,7 +705,7 @@ archive/issue_comments_090711.json:
 }
 ```
 
-Attachment
+Attachment [deps](tarball://root/attachments/some-uuid/ticket9460/deps) by drkirkby created at 2010-07-10 09:44:46
 
 Deps file, which 1) Makes Maxima build before Sage 2) Makes SAGETEX depend on BASE. 3) Makes R dependancy on Fortran clearer, though not necessary
 
@@ -734,7 +734,7 @@ Difference from the deps file in sage-4.5.alpha4.
 archive/issue_comments_090713.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:23 drkirkby]:\n> Given Maxima has a library interface, should Maxima not be built before the Sage library, rather than the other way around?\n\nIn my *sequential* build, the Sage library was built **before** Maxima, while the other way around in the *parallel* build.\n\nBoth builds passed all doctests (`ptestlong`).",
+    "body": "Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket9460/deps.diff) by leif created at 2010-07-10 10:40:17\n\nReplying to [comment:23 drkirkby]:\n> Given Maxima has a library interface, should Maxima not be built before the Sage library, rather than the other way around?\n\nIn my *sequential* build, the Sage library was built **before** Maxima, while the other way around in the *parallel* build.\n\nBoth builds passed all doctests (`ptestlong`).",
     "created_at": "2010-07-10T10:40:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
@@ -743,7 +743,7 @@ archive/issue_comments_090713.json:
 }
 ```
 
-Attachment
+Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket9460/deps.diff) by leif created at 2010-07-10 10:40:17
 
 Replying to [comment:23 drkirkby]:
 > Given Maxima has a library interface, should Maxima not be built before the Sage library, rather than the other way around?

@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4297
 archive/issue_comments_031435.json:
 ```json
 {
-    "body": "Attachment\n\nMakes annotating the Sage library much easier. Good work!",
+    "body": "Attachment [4297-sage-cython.patch](tarball://root/attachments/some-uuid/ticket4297/4297-sage-cython.patch) by rlm created at 2008-10-15 14:50:44\n\nMakes annotating the Sage library much easier. Good work!",
     "created_at": "2008-10-15T14:50:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4297",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_031435.json:
 }
 ```
 
-Attachment
+Attachment [4297-sage-cython.patch](tarball://root/attachments/some-uuid/ticket4297/4297-sage-cython.patch) by rlm created at 2008-10-15 14:50:44
 
 Makes annotating the Sage library much easier. Good work!
 

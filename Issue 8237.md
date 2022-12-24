@@ -169,7 +169,7 @@ What the heck?
 archive/issue_comments_072762.json:
 ```json
 {
-    "body": "Attachment\n\nfix conversion of different infinities back from maxima",
+    "body": "Attachment [trac_8237-maxima_infinity.patch](tarball://root/attachments/some-uuid/ticket8237/trac_8237-maxima_infinity.patch) by burcin created at 2010-02-11 22:00:42\n\nfix conversion of different infinities back from maxima",
     "created_at": "2010-02-11T22:00:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8237",
     "type": "issue_comment",
@@ -178,7 +178,7 @@ archive/issue_comments_072762.json:
 }
 ```
 
-Attachment
+Attachment [trac_8237-maxima_infinity.patch](tarball://root/attachments/some-uuid/ticket8237/trac_8237-maxima_infinity.patch) by burcin created at 2010-02-11 22:00:42
 
 fix conversion of different infinities back from maxima
 
@@ -326,7 +326,7 @@ apply only this patch
 archive/issue_comments_072768.json:
 ```json
 {
-    "body": "Attachment\n\nI was trying to get the first patch out quickly, so it ended up being too sloppy. I hope attachment:trac_8237-maxima_infinity.take2.patch is cleaner. :)\n\nI think it's more natural to put the maxima conversions for different infinities in `sage/symbolic/constants.py` where all the other constants are declared, so I removed the lines in `calculus.py`. I also added doctests with `limit(1/x, ...)`.",
+    "body": "Attachment [trac_8237-maxima_infinity.take2.patch](tarball://root/attachments/some-uuid/ticket8237/trac_8237-maxima_infinity.take2.patch) by burcin created at 2010-02-20 14:36:11\n\nI was trying to get the first patch out quickly, so it ended up being too sloppy. I hope attachment:trac_8237-maxima_infinity.take2.patch is cleaner. :)\n\nI think it's more natural to put the maxima conversions for different infinities in `sage/symbolic/constants.py` where all the other constants are declared, so I removed the lines in `calculus.py`. I also added doctests with `limit(1/x, ...)`.",
     "created_at": "2010-02-20T14:36:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8237",
     "type": "issue_comment",
@@ -335,7 +335,7 @@ archive/issue_comments_072768.json:
 }
 ```
 
-Attachment
+Attachment [trac_8237-maxima_infinity.take2.patch](tarball://root/attachments/some-uuid/ticket8237/trac_8237-maxima_infinity.take2.patch) by burcin created at 2010-02-20 14:36:11
 
 I was trying to get the first patch out quickly, so it ended up being too sloppy. I hope attachment:trac_8237-maxima_infinity.take2.patch is cleaner. :)
 
@@ -512,7 +512,7 @@ apply only this patch
 archive/issue_comments_072774.json:
 ```json
 {
-    "body": "Attachment\n\nI rebased the patch so that it applies cleanly after #7661.\n\nThis ticket depends on #7661. Only attachment:trac_8237-maxima_infinity.take3.patch should be applied.",
+    "body": "Attachment [trac_8237-maxima_infinity.take3.patch](tarball://root/attachments/some-uuid/ticket8237/trac_8237-maxima_infinity.take3.patch) by burcin created at 2010-04-12 08:35:08\n\nI rebased the patch so that it applies cleanly after #7661.\n\nThis ticket depends on #7661. Only attachment:trac_8237-maxima_infinity.take3.patch should be applied.",
     "created_at": "2010-04-12T08:35:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8237",
     "type": "issue_comment",
@@ -521,7 +521,7 @@ archive/issue_comments_072774.json:
 }
 ```
 
-Attachment
+Attachment [trac_8237-maxima_infinity.take3.patch](tarball://root/attachments/some-uuid/ticket8237/trac_8237-maxima_infinity.take3.patch) by burcin created at 2010-04-12 08:35:08
 
 I rebased the patch so that it applies cleanly after #7661.
 

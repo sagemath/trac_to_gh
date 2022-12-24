@@ -104,7 +104,7 @@ patch against Sage 3.2.rc1
 archive/issue_comments_033345.json:
 ```json
 {
-    "body": "Attachment\n\nWell, this makes the doctest failure go away on my Intel Mac. (I followed the proposal from Jason.)\n\nBut please someone have a look if it is worth the price paid.",
+    "body": "Attachment [4502-crude_hack.patch](tarball://root/attachments/some-uuid/ticket4502/4502-crude_hack.patch) by GeorgSWeber created at 2008-11-16 09:54:01\n\nWell, this makes the doctest failure go away on my Intel Mac. (I followed the proposal from Jason.)\n\nBut please someone have a look if it is worth the price paid.",
     "created_at": "2008-11-16T09:54:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4502",
     "type": "issue_comment",
@@ -113,7 +113,7 @@ archive/issue_comments_033345.json:
 }
 ```
 
-Attachment
+Attachment [4502-crude_hack.patch](tarball://root/attachments/some-uuid/ticket4502/4502-crude_hack.patch) by GeorgSWeber created at 2008-11-16 09:54:01
 
 Well, this makes the doctest failure go away on my Intel Mac. (I followed the proposal from Jason.)
 
@@ -170,7 +170,7 @@ I don't think this fix is worth the performance penalty, which for me looks like
 archive/issue_comments_033348.json:
 ```json
 {
-    "body": "Attachment\n\ndoctest changed in trac_4502.patch.  Apply instead of previous patch.",
+    "body": "Attachment [trac_4502.patch](tarball://root/attachments/some-uuid/ticket4502/trac_4502.patch) by jason created at 2008-11-18 16:59:41\n\ndoctest changed in trac_4502.patch.  Apply instead of previous patch.",
     "created_at": "2008-11-18T16:59:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4502",
     "type": "issue_comment",
@@ -179,7 +179,7 @@ archive/issue_comments_033348.json:
 }
 ```
 
-Attachment
+Attachment [trac_4502.patch](tarball://root/attachments/some-uuid/ticket4502/trac_4502.patch) by jason created at 2008-11-18 16:59:41
 
 doctest changed in trac_4502.patch.  Apply instead of previous patch.
 
@@ -234,7 +234,7 @@ Michael
 archive/issue_comments_033351.json:
 ```json
 {
-    "body": "Attachment\n\npatch against Sage 3.2.rc1; apply only this one",
+    "body": "Attachment [4502-next_try.patch](tarball://root/attachments/some-uuid/ticket4502/4502-next_try.patch) by GeorgSWeber created at 2008-11-18 21:23:33\n\npatch against Sage 3.2.rc1; apply only this one",
     "created_at": "2008-11-18T21:23:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4502",
     "type": "issue_comment",
@@ -243,7 +243,7 @@ archive/issue_comments_033351.json:
 }
 ```
 
-Attachment
+Attachment [4502-next_try.patch](tarball://root/attachments/some-uuid/ticket4502/4502-next_try.patch) by GeorgSWeber created at 2008-11-18 21:23:33
 
 patch against Sage 3.2.rc1; apply only this one
 
@@ -506,7 +506,7 @@ Thanks a lot!!!
 archive/issue_comments_033360.json:
 ```json
 {
-    "body": "Attachment\n\napply only this one (doctest just nuked)",
+    "body": "Attachment [4502-next_try.2.patch](tarball://root/attachments/some-uuid/ticket4502/4502-next_try.2.patch) by GeorgSWeber created at 2008-11-18 22:17:47\n\napply only this one (doctest just nuked)",
     "created_at": "2008-11-18T22:17:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4502",
     "type": "issue_comment",
@@ -515,7 +515,7 @@ archive/issue_comments_033360.json:
 }
 ```
 
-Attachment
+Attachment [4502-next_try.2.patch](tarball://root/attachments/some-uuid/ticket4502/4502-next_try.2.patch) by GeorgSWeber created at 2008-11-18 22:17:47
 
 apply only this one (doctest just nuked)
 
@@ -589,7 +589,7 @@ OK, no problem. (Except for the time it will take --- another 12 hours or so til
 archive/issue_comments_033364.json:
 ```json
 {
-    "body": "Attachment\n\naddressing the reviewers wishes (hopefully)",
+    "body": "Attachment [4502-next_try.3.patch](tarball://root/attachments/some-uuid/ticket4502/4502-next_try.3.patch) by GeorgSWeber created at 2008-11-19 18:07:04\n\naddressing the reviewers wishes (hopefully)",
     "created_at": "2008-11-19T18:07:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4502",
     "type": "issue_comment",
@@ -598,7 +598,7 @@ archive/issue_comments_033364.json:
 }
 ```
 
-Attachment
+Attachment [4502-next_try.3.patch](tarball://root/attachments/some-uuid/ticket4502/4502-next_try.3.patch) by GeorgSWeber created at 2008-11-19 18:07:04
 
 addressing the reviewers wishes (hopefully)
 

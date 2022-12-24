@@ -212,7 +212,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_057301.json:
 ```json
 {
-    "body": "Attachment\n\nOkay, I fixed everything and this should be ready for review now.  Doctests pass on 4.4.1 in matrix/*.py[x]",
+    "body": "Attachment [trac-6934-SR-eigenvectors.patch](tarball://root/attachments/some-uuid/ticket6934/trac-6934-SR-eigenvectors.patch) by jason created at 2010-05-25 17:02:55\n\nOkay, I fixed everything and this should be ready for review now.  Doctests pass on 4.4.1 in matrix/*.py[x]",
     "created_at": "2010-05-25T17:02:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6934",
     "type": "issue_comment",
@@ -221,7 +221,7 @@ archive/issue_comments_057301.json:
 }
 ```
 
-Attachment
+Attachment [trac-6934-SR-eigenvectors.patch](tarball://root/attachments/some-uuid/ticket6934/trac-6934-SR-eigenvectors.patch) by jason created at 2010-05-25 17:02:55
 
 Okay, I fixed everything and this should be ready for review now.  Doctests pass on 4.4.1 in matrix/*.py[x]
 
@@ -300,7 +300,7 @@ It's too bad that we don't have a generic RootOf construct (I don't believe maxi
 archive/issue_comments_057305.json:
 ```json
 {
-    "body": "Attachment\n\nOK, I see.  For example, this does a nice job with eigenvalues of graphs.  I've attached some doctests along these lines - if you want to include them, then go ahead and provide the review for the reviewer patch.  I'm clear for a positive review on the rest.",
+    "body": "Attachment [trac_6934-reviewer-doctests.patch](tarball://root/attachments/some-uuid/ticket6934/trac_6934-reviewer-doctests.patch) by rbeezer created at 2010-05-29 06:03:53\n\nOK, I see.  For example, this does a nice job with eigenvalues of graphs.  I've attached some doctests along these lines - if you want to include them, then go ahead and provide the review for the reviewer patch.  I'm clear for a positive review on the rest.",
     "created_at": "2010-05-29T06:03:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6934",
     "type": "issue_comment",
@@ -309,7 +309,7 @@ archive/issue_comments_057305.json:
 }
 ```
 
-Attachment
+Attachment [trac_6934-reviewer-doctests.patch](tarball://root/attachments/some-uuid/ticket6934/trac_6934-reviewer-doctests.patch) by rbeezer created at 2010-05-29 06:03:53
 
 OK, I see.  For example, this does a nice job with eigenvalues of graphs.  I've attached some doctests along these lines - if you want to include them, then go ahead and provide the review for the reviewer patch.  I'm clear for a positive review on the rest.
 
@@ -320,7 +320,7 @@ OK, I see.  For example, this does a nice job with eigenvalues of graphs.  I've 
 archive/issue_comments_057306.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of previous patches",
+    "body": "Attachment [trac-6934-more-doctest-issues.patch](tarball://root/attachments/some-uuid/ticket6934/trac-6934-more-doctest-issues.patch) by jason created at 2010-09-03 21:53:07\n\napply on top of previous patches",
     "created_at": "2010-09-03T21:53:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6934",
     "type": "issue_comment",
@@ -329,7 +329,7 @@ archive/issue_comments_057306.json:
 }
 ```
 
-Attachment
+Attachment [trac-6934-more-doctest-issues.patch](tarball://root/attachments/some-uuid/ticket6934/trac-6934-more-doctest-issues.patch) by jason created at 2010-09-03 21:53:07
 
 apply on top of previous patches
 
@@ -432,7 +432,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_057312.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-6934-more-doctests-issues.patch](tarball://root/attachments/some-uuid/ticket6934/trac-6934-more-doctests-issues.patch) by rbeezer created at 2010-09-05 06:31:29",
     "created_at": "2010-09-05T06:31:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6934",
     "type": "issue_comment",
@@ -441,7 +441,7 @@ archive/issue_comments_057312.json:
 }
 ```
 
-Attachment
+Attachment [trac-6934-more-doctests-issues.patch](tarball://root/attachments/some-uuid/ticket6934/trac-6934-more-doctests-issues.patch) by rbeezer created at 2010-09-05 06:31:29
 
 
 

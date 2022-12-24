@@ -53,7 +53,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8545
 archive/issue_comments_077262.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8545_opi.patch](tarball://root/attachments/some-uuid/ticket8545/trac_8545_opi.patch) by bump created at 2010-03-15 21:05:02",
     "created_at": "2010-03-15T21:05:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8545",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_077262.json:
 }
 ```
 
-Attachment
+Attachment [trac_8545_opi.patch](tarball://root/attachments/some-uuid/ticket8545/trac_8545_opi.patch) by bump created at 2010-03-15 21:05:02
 
 
 

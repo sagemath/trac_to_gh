@@ -77,7 +77,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3150
 archive/issue_comments_021849.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [dlxmem.patch](tarball://root/attachments/some-uuid/ticket3150/dlxmem.patch) by mabshoff created at 2008-05-10 21:09:39",
     "created_at": "2008-05-10T21:09:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3150",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_021849.json:
 }
 ```
 
-Attachment
+Attachment [dlxmem.patch](tarball://root/attachments/some-uuid/ticket3150/dlxmem.patch) by mabshoff created at 2008-05-10 21:09:39
 
 
 

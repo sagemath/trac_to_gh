@@ -60,7 +60,7 @@ Changing status from new to needs_work.
 archive/issue_comments_070326.json:
 ```json
 {
-    "body": "Attachment\n\nI get some errors on 4.6.1 when building the docs:\n\n\n```\ndocstring of sage.matrix.matrix_double_dense.Matrix_double_dense.condition:11: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.\ndocstring of sage.matrix.matrix_double_dense:7: (ERROR/3) Unexpected indentation.\ndocstring of sage.matrix.matrix_double_dense.Matrix_double_dense.numpy:11: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\ndocstring of sage.matrix.matrix_double_dense:13: (ERROR/3) Unexpected indentation.\ndocstring of sage.matrix.matrix_double_dense:13: (ERROR/3) Unexpected indentation.\n<autodoc>:0: (ERROR/3) Unexpected indentation.\n```\n",
+    "body": "Attachment [trac_8046_matrix_double_doc_add.patch](tarball://root/attachments/some-uuid/ticket8046/trac_8046_matrix_double_doc_add.patch) by jason created at 2011-02-24 05:47:58\n\nI get some errors on 4.6.1 when building the docs:\n\n\n```\ndocstring of sage.matrix.matrix_double_dense.Matrix_double_dense.condition:11: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.\ndocstring of sage.matrix.matrix_double_dense:7: (ERROR/3) Unexpected indentation.\ndocstring of sage.matrix.matrix_double_dense.Matrix_double_dense.numpy:11: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\ndocstring of sage.matrix.matrix_double_dense:13: (ERROR/3) Unexpected indentation.\ndocstring of sage.matrix.matrix_double_dense:13: (ERROR/3) Unexpected indentation.\n<autodoc>:0: (ERROR/3) Unexpected indentation.\n```\n",
     "created_at": "2011-02-24T05:47:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8046",
     "type": "issue_comment",
@@ -69,7 +69,7 @@ archive/issue_comments_070326.json:
 }
 ```
 
-Attachment
+Attachment [trac_8046_matrix_double_doc_add.patch](tarball://root/attachments/some-uuid/ticket8046/trac_8046_matrix_double_doc_add.patch) by jason created at 2011-02-24 05:47:58
 
 I get some errors on 4.6.1 when building the docs:
 
@@ -161,7 +161,7 @@ So really there is just one warning that could still be fixed.
 archive/issue_comments_070330.json:
 ```json
 {
-    "body": "Attachment\n\nI'm attaching a 'referee' patch to fix up some docstrings.  The first change in that patch fixes the warning message about the unexpected unindent; the others just tidy some things up.",
+    "body": "Attachment [trac_8046_matrix_double_dense.patch](tarball://root/attachments/some-uuid/ticket8046/trac_8046_matrix_double_dense.patch) by jhpalmieri created at 2012-01-12 06:42:50\n\nI'm attaching a 'referee' patch to fix up some docstrings.  The first change in that patch fixes the warning message about the unexpected unindent; the others just tidy some things up.",
     "created_at": "2012-01-12T06:42:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8046",
     "type": "issue_comment",
@@ -170,7 +170,7 @@ archive/issue_comments_070330.json:
 }
 ```
 
-Attachment
+Attachment [trac_8046_matrix_double_dense.patch](tarball://root/attachments/some-uuid/ticket8046/trac_8046_matrix_double_dense.patch) by jhpalmieri created at 2012-01-12 06:42:50
 
 I'm attaching a 'referee' patch to fix up some docstrings.  The first change in that patch fixes the warning message about the unexpected unindent; the others just tidy some things up.
 
@@ -181,7 +181,7 @@ I'm attaching a 'referee' patch to fix up some docstrings.  The first change in 
 archive/issue_comments_070331.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8046-ref.patch](tarball://root/attachments/some-uuid/ticket8046/trac_8046-ref.patch) by jhpalmieri created at 2012-01-12 06:43:02",
     "created_at": "2012-01-12T06:43:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8046",
     "type": "issue_comment",
@@ -190,7 +190,7 @@ archive/issue_comments_070331.json:
 }
 ```
 
-Attachment
+Attachment [trac_8046-ref.patch](tarball://root/attachments/some-uuid/ticket8046/trac_8046-ref.patch) by jhpalmieri created at 2012-01-12 06:43:02
 
 
 

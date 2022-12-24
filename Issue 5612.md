@@ -195,7 +195,7 @@ Joal Heagney
 archive/issue_comments_043833.json:
 ```json
 {
-    "body": "Attachment\n\nI added the example of symbolic matrix to the doc and fixed the bug reported by Joal Heagney. The error came from is_integral_domain() function in ring.pyx. Since a field is a specific type of integral domain, I just added a if clause.",
+    "body": "Attachment [trac_5612_solve_symbolic_matrix.patch](tarball://root/attachments/some-uuid/ticket5612/trac_5612_solve_symbolic_matrix.patch) by abrochard created at 2012-06-02 23:42:16\n\nI added the example of symbolic matrix to the doc and fixed the bug reported by Joal Heagney. The error came from is_integral_domain() function in ring.pyx. Since a field is a specific type of integral domain, I just added a if clause.",
     "created_at": "2012-06-02T23:42:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5612",
     "type": "issue_comment",
@@ -204,7 +204,7 @@ archive/issue_comments_043833.json:
 }
 ```
 
-Attachment
+Attachment [trac_5612_solve_symbolic_matrix.patch](tarball://root/attachments/some-uuid/ticket5612/trac_5612_solve_symbolic_matrix.patch) by abrochard created at 2012-06-02 23:42:16
 
 I added the example of symbolic matrix to the doc and fixed the bug reported by Joal Heagney. The error came from is_integral_domain() function in ring.pyx. Since a field is a specific type of integral domain, I just added a if clause.
 

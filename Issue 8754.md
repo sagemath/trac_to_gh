@@ -80,7 +80,7 @@ Changing status from new to needs_review.
 archive/issue_comments_080082.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8754-sagenb.patch](tarball://root/attachments/some-uuid/ticket8754/trac_8754-sagenb.patch) by was created at 2010-04-25 00:41:39",
     "created_at": "2010-04-25T00:41:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8754",
     "type": "issue_comment",
@@ -89,7 +89,7 @@ archive/issue_comments_080082.json:
 }
 ```
 
-Attachment
+Attachment [trac_8754-sagenb.patch](tarball://root/attachments/some-uuid/ticket8754/trac_8754-sagenb.patch) by was created at 2010-04-25 00:41:39
 
 
 
@@ -116,7 +116,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_080084.json:
 ```json
 {
-    "body": "Attachment\n\nAdded a development section.  Replaces the last patch",
+    "body": "Attachment [trac_8754-sagenb.2.patch](tarball://root/attachments/some-uuid/ticket8754/trac_8754-sagenb.2.patch) by acleone created at 2010-04-25 01:27:44\n\nAdded a development section.  Replaces the last patch",
     "created_at": "2010-04-25T01:27:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8754",
     "type": "issue_comment",
@@ -125,7 +125,7 @@ archive/issue_comments_080084.json:
 }
 ```
 
-Attachment
+Attachment [trac_8754-sagenb.2.patch](tarball://root/attachments/some-uuid/ticket8754/trac_8754-sagenb.2.patch) by acleone created at 2010-04-25 01:27:44
 
 Added a development section.  Replaces the last patch
 
@@ -136,7 +136,7 @@ Added a development section.  Replaces the last patch
 archive/issue_comments_080085.json:
 ```json
 {
-    "body": "Attachment\n\nNewest Version.  Added a \"Reviewing Patches\" section.  Apply only this.",
+    "body": "Attachment [trac_8754-sagenb.replaces2.patch](tarball://root/attachments/some-uuid/ticket8754/trac_8754-sagenb.replaces2.patch) by acleone created at 2010-05-29 22:29:00\n\nNewest Version.  Added a \"Reviewing Patches\" section.  Apply only this.",
     "created_at": "2010-05-29T22:29:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8754",
     "type": "issue_comment",
@@ -145,7 +145,7 @@ archive/issue_comments_080085.json:
 }
 ```
 
-Attachment
+Attachment [trac_8754-sagenb.replaces2.patch](tarball://root/attachments/some-uuid/ticket8754/trac_8754-sagenb.replaces2.patch) by acleone created at 2010-05-29 22:29:00
 
 Newest Version.  Added a "Reviewing Patches" section.  Apply only this.
 

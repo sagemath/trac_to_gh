@@ -299,7 +299,7 @@ Here's a rebased patch.
 archive/issue_comments_032610.json:
 ```json
 {
-    "body": "Attachment\n\nrebased against 3.4.2.alpha0",
+    "body": "Attachment [4435.patch](tarball://root/attachments/some-uuid/ticket4435/4435.patch) by jhpalmieri created at 2009-04-24 19:30:58\n\nrebased against 3.4.2.alpha0",
     "created_at": "2009-04-24T19:30:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4435",
     "type": "issue_comment",
@@ -308,7 +308,7 @@ archive/issue_comments_032610.json:
 }
 ```
 
-Attachment
+Attachment [4435.patch](tarball://root/attachments/some-uuid/ticket4435/4435.patch) by jhpalmieri created at 2009-04-24 19:30:58
 
 rebased against 3.4.2.alpha0
 

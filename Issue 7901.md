@@ -103,7 +103,7 @@ I've attached the Mercurial patch, which overwrites the old one.
 archive/issue_comments_068717.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated patch to fix spkg-install and SPKG.txt",
+    "body": "Attachment [pari-variables-to-commands.patch](tarball://root/attachments/some-uuid/ticket7901/pari-variables-to-commands.patch) by drkirkby created at 2010-01-12 16:53:52\n\nUpdated patch to fix spkg-install and SPKG.txt",
     "created_at": "2010-01-12T16:53:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7901",
     "type": "issue_comment",
@@ -112,7 +112,7 @@ archive/issue_comments_068717.json:
 }
 ```
 
-Attachment
+Attachment [pari-variables-to-commands.patch](tarball://root/attachments/some-uuid/ticket7901/pari-variables-to-commands.patch) by drkirkby created at 2010-01-12 16:53:52
 
 Updated patch to fix spkg-install and SPKG.txt
 

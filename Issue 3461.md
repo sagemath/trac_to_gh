@@ -50,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3461
 archive/issue_comments_024412.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3461.patch](tarball://root/attachments/some-uuid/ticket3461/trac_3461.patch) by mhansen created at 2010-01-17 03:24:37",
     "created_at": "2010-01-17T03:24:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3461",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_024412.json:
 }
 ```
 
-Attachment
+Attachment [trac_3461.patch](tarball://root/attachments/some-uuid/ticket3461/trac_3461.patch) by mhansen created at 2010-01-17 03:24:37
 
 
 
@@ -86,7 +86,7 @@ Changing status from new to needs_review.
 archive/issue_comments_024414.json:
 ```json
 {
-    "body": "Attachment\n\nreplaces previous patch",
+    "body": "Attachment [trac_3461_new.patch](tarball://root/attachments/some-uuid/ticket3461/trac_3461_new.patch) by davidloeffler created at 2010-05-17 10:03:34\n\nreplaces previous patch",
     "created_at": "2010-05-17T10:03:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3461",
     "type": "issue_comment",
@@ -95,7 +95,7 @@ archive/issue_comments_024414.json:
 }
 ```
 
-Attachment
+Attachment [trac_3461_new.patch](tarball://root/attachments/some-uuid/ticket3461/trac_3461_new.patch) by davidloeffler created at 2010-05-17 10:03:34
 
 replaces previous patch
 

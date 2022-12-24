@@ -151,7 +151,7 @@ x^3 + x^2*y - x*y^2 - y^3
 archive/issue_comments_033477.json:
 ```json
 {
-    "body": "Attachment\n\ncall method for MatrixGroupelement (this time with doc test) and left_matrix_action for MPolynomial",
+    "body": "Attachment [matrixgroupCall.patch](tarball://root/attachments/some-uuid/ticket4513/matrixgroupCall.patch) by SimonKing created at 2008-11-14 07:26:53\n\ncall method for MatrixGroupelement (this time with doc test) and left_matrix_action for MPolynomial",
     "created_at": "2008-11-14T07:26:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4513",
     "type": "issue_comment",
@@ -160,7 +160,7 @@ archive/issue_comments_033477.json:
 }
 ```
 
-Attachment
+Attachment [matrixgroupCall.patch](tarball://root/attachments/some-uuid/ticket4513/matrixgroupCall.patch) by SimonKing created at 2008-11-14 07:26:53
 
 call method for MatrixGroupelement (this time with doc test) and left_matrix_action for MPolynomial
 
@@ -245,7 +245,7 @@ Another version of left_matrix_action
 archive/issue_comments_033481.json:
 ```json
 {
-    "body": "Attachment\n\nIn `matrixgroupCallNew.patch` (to be applied after the first patch), I modified the method according to my above concerns. In the example from my original post, the average running time improves from ~240 microseconds to 164 microseconds, and in a larger example it improved from 6.5s to 5.4s\n\nNevertheless, I made two separate patches, so that the reviewer (if there is any...) can compare by him- or herself.\n\nCheers\n   Simon",
+    "body": "Attachment [matrixgroupCallNew.patch](tarball://root/attachments/some-uuid/ticket4513/matrixgroupCallNew.patch) by SimonKing created at 2008-11-14 09:36:29\n\nIn `matrixgroupCallNew.patch` (to be applied after the first patch), I modified the method according to my above concerns. In the example from my original post, the average running time improves from ~240 microseconds to 164 microseconds, and in a larger example it improved from 6.5s to 5.4s\n\nNevertheless, I made two separate patches, so that the reviewer (if there is any...) can compare by him- or herself.\n\nCheers\n   Simon",
     "created_at": "2008-11-14T09:36:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4513",
     "type": "issue_comment",
@@ -254,7 +254,7 @@ archive/issue_comments_033481.json:
 }
 ```
 
-Attachment
+Attachment [matrixgroupCallNew.patch](tarball://root/attachments/some-uuid/ticket4513/matrixgroupCallNew.patch) by SimonKing created at 2008-11-14 09:36:29
 
 In `matrixgroupCallNew.patch` (to be applied after the first patch), I modified the method according to my above concerns. In the example from my original post, the average running time improves from ~240 microseconds to 164 microseconds, and in a larger example it improved from 6.5s to 5.4s
 
@@ -321,7 +321,7 @@ Slight improvement; extended functionality
 archive/issue_comments_033484.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:6 SimonKing]:\n> One observation: \n> Reverse the outer loop\n> {{{\n>         for i from l>i>=0:\n>             X = tuple(Expo[i])\n>             c = Coef[i]\n>             for k from 0<=k<n:\n>                 if X[k]:\n>                     c *= Im[k]**X[k]\n>             q += c\n> }}}\n> It results in a further improvement of computation time. Is this coincidence? Or is it since summation of polynomials should better start with the smallest summands?\n\nI made a couple of tests, and there was a small but consistent improvement. So, in the third patch (to be applied after the other two) I did it in that way.\n\nThe `left_matrix_action` shall eventually be used for computing the Reynolds operator of a group action; moreover, the Reynolds operator should be applicable on a *list* of polynomials. Then, the function would repeatedly compute the image of the ring variables under the action of some group element. But then it would be better to compute that image only *once* and pass it to `left_matrix_action`. The new patch provides this functionality. Example (continuing the original example):\n\n```\nsage: L=[X.left_matrix_action(g) for X in R.gens()]\nsage: p.left_matrix_action(L)\nx^3 + x^2*y - x*y^2 - y^3\n```\n",
+    "body": "Attachment [matrixgroupCallNew2.patch](tarball://root/attachments/some-uuid/ticket4513/matrixgroupCallNew2.patch) by SimonKing created at 2008-11-14 12:25:13\n\nReplying to [comment:6 SimonKing]:\n> One observation: \n> Reverse the outer loop\n> {{{\n>         for i from l>i>=0:\n>             X = tuple(Expo[i])\n>             c = Coef[i]\n>             for k from 0<=k<n:\n>                 if X[k]:\n>                     c *= Im[k]**X[k]\n>             q += c\n> }}}\n> It results in a further improvement of computation time. Is this coincidence? Or is it since summation of polynomials should better start with the smallest summands?\n\nI made a couple of tests, and there was a small but consistent improvement. So, in the third patch (to be applied after the other two) I did it in that way.\n\nThe `left_matrix_action` shall eventually be used for computing the Reynolds operator of a group action; moreover, the Reynolds operator should be applicable on a *list* of polynomials. Then, the function would repeatedly compute the image of the ring variables under the action of some group element. But then it would be better to compute that image only *once* and pass it to `left_matrix_action`. The new patch provides this functionality. Example (continuing the original example):\n\n```\nsage: L=[X.left_matrix_action(g) for X in R.gens()]\nsage: p.left_matrix_action(L)\nx^3 + x^2*y - x*y^2 - y^3\n```\n",
     "created_at": "2008-11-14T12:25:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4513",
     "type": "issue_comment",
@@ -330,7 +330,7 @@ archive/issue_comments_033484.json:
 }
 ```
 
-Attachment
+Attachment [matrixgroupCallNew2.patch](tarball://root/attachments/some-uuid/ticket4513/matrixgroupCallNew2.patch) by SimonKing created at 2008-11-14 12:25:13
 
 Replying to [comment:6 SimonKing]:
 > One observation: 
@@ -584,7 +584,7 @@ Substitution is a right action. Substitution of the *inverse* is a left action.
 archive/issue_comments_033492.json:
 ```json
 {
-    "body": "Attachment\n\nReplaces the other patches",
+    "body": "Attachment [trac-4513_matrix_action_on_polynomials.patch](tarball://root/attachments/some-uuid/ticket4513/trac-4513_matrix_action_on_polynomials.patch) by SimonKing created at 2010-07-17 13:49:02\n\nReplaces the other patches",
     "created_at": "2010-07-17T13:49:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4513",
     "type": "issue_comment",
@@ -593,7 +593,7 @@ archive/issue_comments_033492.json:
 }
 ```
 
-Attachment
+Attachment [trac-4513_matrix_action_on_polynomials.patch](tarball://root/attachments/some-uuid/ticket4513/trac-4513_matrix_action_on_polynomials.patch) by SimonKing created at 2010-07-17 13:49:02
 
 Replaces the other patches
 

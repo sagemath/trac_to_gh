@@ -117,7 +117,7 @@ NTL now used for all composite modn
 archive/issue_comments_004498.json:
 ```json
 {
-    "body": "Attachment\n\nThe latest bundle includes improvements to Laurent series, Monsky-Waschnitzer computations MUCH faster now (just waiting on fast p-adic linear algebra).",
+    "body": "Attachment [fast-modn-poly.hg](tarball://root/attachments/some-uuid/ticket758/fast-modn-poly.hg) by robertwb created at 2007-09-30 07:52:03\n\nThe latest bundle includes improvements to Laurent series, Monsky-Waschnitzer computations MUCH faster now (just waiting on fast p-adic linear algebra).",
     "created_at": "2007-09-30T07:52:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/758",
     "type": "issue_comment",
@@ -126,7 +126,7 @@ archive/issue_comments_004498.json:
 }
 ```
 
-Attachment
+Attachment [fast-modn-poly.hg](tarball://root/attachments/some-uuid/ticket758/fast-modn-poly.hg) by robertwb created at 2007-09-30 07:52:03
 
 The latest bundle includes improvements to Laurent series, Monsky-Waschnitzer computations MUCH faster now (just waiting on fast p-adic linear algebra).
 

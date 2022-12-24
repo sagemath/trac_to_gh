@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4579
 archive/issue_comments_034336.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4579-move-mpz-longlong.patch](tarball://root/attachments/some-uuid/ticket4579/4579-move-mpz-longlong.patch) by robertwb created at 2008-11-22 00:42:44",
     "created_at": "2008-11-22T00:42:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4579",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_034336.json:
 }
 ```
 
-Attachment
+Attachment [4579-move-mpz-longlong.patch](tarball://root/attachments/some-uuid/ticket4579/4579-move-mpz-longlong.patch) by robertwb created at 2008-11-22 00:42:44
 
 
 

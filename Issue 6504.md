@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6504
 archive/issue_comments_052983.json:
 ```json
 {
-    "body": "Attachment\n\nPatches are the same, I just forgot to put the ticket number on the first one.",
+    "body": "Attachment [trac_6504_toy_buch.patch](tarball://root/attachments/some-uuid/ticket6504/trac_6504_toy_buch.patch) by mhampton created at 2009-07-09 22:54:41\n\nPatches are the same, I just forgot to put the ticket number on the first one.",
     "created_at": "2009-07-09T22:54:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6504",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_052983.json:
 }
 ```
 
-Attachment
+Attachment [trac_6504_toy_buch.patch](tarball://root/attachments/some-uuid/ticket6504/trac_6504_toy_buch.patch) by mhampton created at 2009-07-09 22:54:41
 
 Patches are the same, I just forgot to put the ticket number on the first one.
 
@@ -71,7 +71,7 @@ fixes a few whitespace issues in the original patch
 archive/issue_comments_052985.json:
 ```json
 {
-    "body": "Attachment\n\nI read the patch and it looks fine, it applies cleanly and passes doctest. There were a few whitespace issues w.r.t. the reference manual, which are fixed in the attached patch (only apply this one). The update needs signing off by mhampton.",
+    "body": "Attachment [trac_6504_toy_buch.2.patch](tarball://root/attachments/some-uuid/ticket6504/trac_6504_toy_buch.2.patch) by malb created at 2009-07-13 20:14:13\n\nI read the patch and it looks fine, it applies cleanly and passes doctest. There were a few whitespace issues w.r.t. the reference manual, which are fixed in the attached patch (only apply this one). The update needs signing off by mhampton.",
     "created_at": "2009-07-13T20:14:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6504",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_052985.json:
 }
 ```
 
-Attachment
+Attachment [trac_6504_toy_buch.2.patch](tarball://root/attachments/some-uuid/ticket6504/trac_6504_toy_buch.2.patch) by malb created at 2009-07-13 20:14:13
 
 I read the patch and it looks fine, it applies cleanly and passes doctest. There were a few whitespace issues w.r.t. the reference manual, which are fixed in the attached patch (only apply this one). The update needs signing off by mhampton.
 
@@ -91,7 +91,7 @@ I read the patch and it looks fine, it applies cleanly and passes doctest. There
 archive/issue_comments_052986.json:
 ```json
 {
-    "body": "Attachment\n\nsupersedes previous versions; better ref manual formatting",
+    "body": "Attachment [trac_6504_toy_buch.3.patch](tarball://root/attachments/some-uuid/ticket6504/trac_6504_toy_buch.3.patch) by mhampton created at 2009-07-14 03:53:19\n\nsupersedes previous versions; better ref manual formatting",
     "created_at": "2009-07-14T03:53:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6504",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_052986.json:
 }
 ```
 
-Attachment
+Attachment [trac_6504_toy_buch.3.patch](tarball://root/attachments/some-uuid/ticket6504/trac_6504_toy_buch.3.patch) by mhampton created at 2009-07-14 03:53:19
 
 supersedes previous versions; better ref manual formatting
 
@@ -247,7 +247,7 @@ Fixed an issue with spol function
 archive/issue_comments_052991.json:
 ```json
 {
-    "body": "Attachment\n\nOK, I fixed the spol function so that multi_polynomial_ideal.py passes tests as well.  I had thought what I had done was equivalent but I guess not over finite fields - actually I wonder if this is a failure in coercion but that's beyond the scope of this ticket.",
+    "body": "Attachment [trac_6504_toy_buch.4.patch](tarball://root/attachments/some-uuid/ticket6504/trac_6504_toy_buch.4.patch) by mhampton created at 2009-07-19 14:25:03\n\nOK, I fixed the spol function so that multi_polynomial_ideal.py passes tests as well.  I had thought what I had done was equivalent but I guess not over finite fields - actually I wonder if this is a failure in coercion but that's beyond the scope of this ticket.",
     "created_at": "2009-07-19T14:25:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6504",
     "type": "issue_comment",
@@ -256,7 +256,7 @@ archive/issue_comments_052991.json:
 }
 ```
 
-Attachment
+Attachment [trac_6504_toy_buch.4.patch](tarball://root/attachments/some-uuid/ticket6504/trac_6504_toy_buch.4.patch) by mhampton created at 2009-07-19 14:25:03
 
 OK, I fixed the spol function so that multi_polynomial_ideal.py passes tests as well.  I had thought what I had done was equivalent but I guess not over finite fields - actually I wonder if this is a failure in coercion but that's beyond the scope of this ticket.
 

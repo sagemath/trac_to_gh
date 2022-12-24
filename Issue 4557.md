@@ -71,7 +71,7 @@ Michael
 archive/issue_comments_034148.json:
 ```json
 {
-    "body": "Attachment\n\nadded doctests.",
+    "body": "Attachment [trac-4557-cos-fast_float.patch](tarball://root/attachments/some-uuid/ticket4557/trac-4557-cos-fast_float.patch) by jason created at 2008-11-19 22:33:39\n\nadded doctests.",
     "created_at": "2008-11-19T22:33:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4557",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_034148.json:
 }
 ```
 
-Attachment
+Attachment [trac-4557-cos-fast_float.patch](tarball://root/attachments/some-uuid/ticket4557/trac-4557-cos-fast_float.patch) by jason created at 2008-11-19 22:33:39
 
 added doctests.
 

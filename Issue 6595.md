@@ -299,7 +299,7 @@ Wow.  I fixed the first bug that the Sun compiler finds (which doesn't matter), 
 archive/issue_comments_053974.json:
 ```json
 {
-    "body": "Attachment\n\nThis one patch (sagelib_6595.patch) makes it so at least c_lib builds fine using CC... by fixing at least two potentially *major* bugs in c_lib.  Here's to porting/portability/multiple compilers/not ignoring warnings, etc!  And to Kirkby's persistence.",
+    "body": "Attachment [sagelib_6595.patch](tarball://root/attachments/some-uuid/ticket6595/sagelib_6595.patch) by was created at 2009-12-23 01:24:50\n\nThis one patch (sagelib_6595.patch) makes it so at least c_lib builds fine using CC... by fixing at least two potentially *major* bugs in c_lib.  Here's to porting/portability/multiple compilers/not ignoring warnings, etc!  And to Kirkby's persistence.",
     "created_at": "2009-12-23T01:24:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6595",
     "type": "issue_comment",
@@ -308,7 +308,7 @@ archive/issue_comments_053974.json:
 }
 ```
 
-Attachment
+Attachment [sagelib_6595.patch](tarball://root/attachments/some-uuid/ticket6595/sagelib_6595.patch) by was created at 2009-12-23 01:24:50
 
 This one patch (sagelib_6595.patch) makes it so at least c_lib builds fine using CC... by fixing at least two potentially *major* bugs in c_lib.  Here's to porting/portability/multiple compilers/not ignoring warnings, etc!  And to Kirkby's persistence.
 
@@ -433,7 +433,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_053979.json:
 ```json
 {
-    "body": "Attachment\n\nMy 'sage -upgrade' seems to have hit a problem, as this library is built twice. The first time it builds fine, with no warnings g++. \n\nThe second time it has the same issues as before - same warning, from the Sun compiler 'CC'. I can only assume something is a bit messed up here. It's clearly patched ok, but I must have left-over code being built. \n\nNote however, there is no -Wall option, so we wont catch many warnings from gcc/g++. It might be worth adding that at some point in the future, given you have noticed two serious bugs in what is a relatively small amount of code. But I don't know how to enable the warnings with SCons. \n\nI looked at your changes to the C and C++ code, and they look fine. I don't fully understand what that code is supposed to do, but clearly computing an answer, then not bothering to return it was rather obviously a mistake, which should have been caught with a compiler warning. \n\nLuckily the Sun compiler was not so forgiving as g++, so allowed those errors to be found. \n\nDave",
+    "body": "Attachment [sagelib_6595-part2.patch](tarball://root/attachments/some-uuid/ticket6595/sagelib_6595-part2.patch) by drkirkby created at 2009-12-23 15:58:40\n\nMy 'sage -upgrade' seems to have hit a problem, as this library is built twice. The first time it builds fine, with no warnings g++. \n\nThe second time it has the same issues as before - same warning, from the Sun compiler 'CC'. I can only assume something is a bit messed up here. It's clearly patched ok, but I must have left-over code being built. \n\nNote however, there is no -Wall option, so we wont catch many warnings from gcc/g++. It might be worth adding that at some point in the future, given you have noticed two serious bugs in what is a relatively small amount of code. But I don't know how to enable the warnings with SCons. \n\nI looked at your changes to the C and C++ code, and they look fine. I don't fully understand what that code is supposed to do, but clearly computing an answer, then not bothering to return it was rather obviously a mistake, which should have been caught with a compiler warning. \n\nLuckily the Sun compiler was not so forgiving as g++, so allowed those errors to be found. \n\nDave",
     "created_at": "2009-12-23T15:58:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6595",
     "type": "issue_comment",
@@ -442,7 +442,7 @@ archive/issue_comments_053979.json:
 }
 ```
 
-Attachment
+Attachment [sagelib_6595-part2.patch](tarball://root/attachments/some-uuid/ticket6595/sagelib_6595-part2.patch) by drkirkby created at 2009-12-23 15:58:40
 
 My 'sage -upgrade' seems to have hit a problem, as this library is built twice. The first time it builds fine, with no warnings g++. 
 
@@ -688,7 +688,7 @@ Attaching patch, which should resolve all issues and hopefully not break anywher
 archive/issue_comments_053990.json:
 ```json
 {
-    "body": "Attachment\n\nRevised version of SConstruct for c_lib",
+    "body": "Attachment [6595-SConstruct.patch](tarball://root/attachments/some-uuid/ticket6595/6595-SConstruct.patch) by drkirkby created at 2009-12-31 02:58:16\n\nRevised version of SConstruct for c_lib",
     "created_at": "2009-12-31T02:58:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6595",
     "type": "issue_comment",
@@ -697,7 +697,7 @@ archive/issue_comments_053990.json:
 }
 ```
 
-Attachment
+Attachment [6595-SConstruct.patch](tarball://root/attachments/some-uuid/ticket6595/6595-SConstruct.patch) by drkirkby created at 2009-12-31 02:58:16
 
 Revised version of SConstruct for c_lib
 

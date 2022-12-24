@@ -56,7 +56,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4832
 archive/issue_comments_036626.json:
 ```json
 {
-    "body": "Attachment\n\nRead only review -- there's no way this fails :)",
+    "body": "Attachment [4832.patch](tarball://root/attachments/some-uuid/ticket4832/4832.patch) by ncalexan created at 2009-01-21 08:15:58\n\nRead only review -- there's no way this fails :)",
     "created_at": "2009-01-21T08:15:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4832",
     "type": "issue_comment",
@@ -65,7 +65,7 @@ archive/issue_comments_036626.json:
 }
 ```
 
-Attachment
+Attachment [4832.patch](tarball://root/attachments/some-uuid/ticket4832/4832.patch) by ncalexan created at 2009-01-21 08:15:58
 
 Read only review -- there's no way this fails :)
 

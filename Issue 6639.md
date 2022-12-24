@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6639
 archive/issue_comments_054433.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [lyndon_words_def-pm.patch](tarball://root/attachments/some-uuid/ticket6639/lyndon_words_def-pm.patch) by pmcnamara created at 2009-07-27 13:06:28",
     "created_at": "2009-07-27T13:06:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6639",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_054433.json:
 }
 ```
 
-Attachment
+Attachment [lyndon_words_def-pm.patch](tarball://root/attachments/some-uuid/ticket6639/lyndon_words_def-pm.patch) by pmcnamara created at 2009-07-27 13:06:28
 
 
 

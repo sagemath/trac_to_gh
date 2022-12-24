@@ -71,7 +71,7 @@ Changing status from new to needs_review.
 archive/issue_comments_095101.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [rc4.patch](tarball://root/attachments/some-uuid/ticket9730/rc4.patch) by sg.sourav created at 2010-08-12 19:12:08",
     "created_at": "2010-08-12T19:12:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9730",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_095101.json:
 }
 ```
 
-Attachment
+Attachment [rc4.patch](tarball://root/attachments/some-uuid/ticket9730/rc4.patch) by sg.sourav created at 2010-08-12 19:12:08
 
 
 
@@ -201,7 +201,7 @@ Modified version of rc4.patch including sanity checks (passed doctests)
 archive/issue_comments_095106.json:
 ```json
 {
-    "body": "Attachment\n\napply rc4_mod1.patch",
+    "body": "Attachment [rc4_mod1.patch](tarball://root/attachments/some-uuid/ticket9730/rc4_mod1.patch) by chapoton created at 2013-08-22 17:17:55\n\napply rc4_mod1.patch",
     "created_at": "2013-08-22T17:17:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9730",
     "type": "issue_comment",
@@ -210,7 +210,7 @@ archive/issue_comments_095106.json:
 }
 ```
 
-Attachment
+Attachment [rc4_mod1.patch](tarball://root/attachments/some-uuid/ticket9730/rc4_mod1.patch) by chapoton created at 2013-08-22 17:17:55
 
 apply rc4_mod1.patch
 
@@ -239,7 +239,7 @@ apply only rc4_mod1.patch
 archive/issue_comments_095108.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9730_addon.patch](tarball://root/attachments/some-uuid/ticket9730/trac_9730_addon.patch) by chapoton created at 2013-08-22 17:31:12",
     "created_at": "2013-08-22T17:31:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9730",
     "type": "issue_comment",
@@ -248,7 +248,7 @@ archive/issue_comments_095108.json:
 }
 ```
 
-Attachment
+Attachment [trac_9730_addon.patch](tarball://root/attachments/some-uuid/ticket9730/trac_9730_addon.patch) by chapoton created at 2013-08-22 17:31:12
 
 
 

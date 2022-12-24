@@ -112,7 +112,7 @@ archive/issue_comments_003285.json:
 archive/issue_comments_003286.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-637.patch](tarball://root/attachments/some-uuid/ticket637/sage-637.patch) by was created at 2008-05-11 05:03:26",
     "created_at": "2008-05-11T05:03:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/637",
     "type": "issue_comment",
@@ -121,7 +121,7 @@ archive/issue_comments_003286.json:
 }
 ```
 
-Attachment
+Attachment [sage-637.patch](tarball://root/attachments/some-uuid/ticket637/sage-637.patch) by was created at 2008-05-11 05:03:26
 
 
 
@@ -310,7 +310,7 @@ http://sage.math.washington.edu/home/boothby/pippenger.sws
 archive/issue_comments_003293.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-637-part2.patch](tarball://root/attachments/some-uuid/ticket637/sage-637-part2.patch) by was created at 2008-05-15 01:12:27",
     "created_at": "2008-05-15T01:12:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/637",
     "type": "issue_comment",
@@ -319,7 +319,7 @@ archive/issue_comments_003293.json:
 }
 ```
 
-Attachment
+Attachment [sage-637-part2.patch](tarball://root/attachments/some-uuid/ticket637/sage-637-part2.patch) by was created at 2008-05-15 01:12:27
 
 
 
@@ -369,7 +369,7 @@ This occurs whenever I try to upload from a URL:
 archive/issue_comments_003295.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-637-part3.patch](tarball://root/attachments/some-uuid/ticket637/sage-637-part3.patch) by was created at 2008-05-15 02:16:05",
     "created_at": "2008-05-15T02:16:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/637",
     "type": "issue_comment",
@@ -378,7 +378,7 @@ archive/issue_comments_003295.json:
 }
 ```
 
-Attachment
+Attachment [sage-637-part3.patch](tarball://root/attachments/some-uuid/ticket637/sage-637-part3.patch) by was created at 2008-05-15 02:16:05
 
 
 

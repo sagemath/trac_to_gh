@@ -224,7 +224,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_032833.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4453-rebased.patch](tarball://root/attachments/some-uuid/ticket4453/trac_4453-rebased.patch) by robertwb created at 2010-07-29 06:02:03",
     "created_at": "2010-07-29T06:02:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4453",
     "type": "issue_comment",
@@ -233,7 +233,7 @@ archive/issue_comments_032833.json:
 }
 ```
 
-Attachment
+Attachment [trac_4453-rebased.patch](tarball://root/attachments/some-uuid/ticket4453/trac_4453-rebased.patch) by robertwb created at 2010-07-29 06:02:03
 
 
 
@@ -514,7 +514,7 @@ Paul
 archive/issue_comments_032846.json:
 ```json
 {
-    "body": "Attachment\n\nApply trac_4453-rebased.patch, 4453-doctest-fix.patch",
+    "body": "Attachment [4453-doctest-fix.patch](tarball://root/attachments/some-uuid/ticket4453/4453-doctest-fix.patch) by robertwb created at 2012-10-24 07:22:12\n\nApply trac_4453-rebased.patch, 4453-doctest-fix.patch",
     "created_at": "2012-10-24T07:22:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4453",
     "type": "issue_comment",
@@ -523,7 +523,7 @@ archive/issue_comments_032846.json:
 }
 ```
 
-Attachment
+Attachment [4453-doctest-fix.patch](tarball://root/attachments/some-uuid/ticket4453/4453-doctest-fix.patch) by robertwb created at 2012-10-24 07:22:12
 
 Apply trac_4453-rebased.patch, 4453-doctest-fix.patch
 

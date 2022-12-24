@@ -950,7 +950,7 @@ Paul
 archive/issue_comments_017536.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_2567.patch](tarball://root/attachments/some-uuid/ticket2567/trac_2567.patch) by mhansen created at 2012-03-28 20:56:15",
     "created_at": "2012-03-28T20:56:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
@@ -959,7 +959,7 @@ archive/issue_comments_017536.json:
 }
 ```
 
-Attachment
+Attachment [trac_2567.patch](tarball://root/attachments/some-uuid/ticket2567/trac_2567.patch) by mhansen created at 2012-03-28 20:56:15
 
 
 

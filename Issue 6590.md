@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6590
 archive/issue_comments_053931.json:
 ```json
 {
-    "body": "Attachment\n\nHow come the some of the new __cinit__ functions have different signatures from the corresponding __init__ functions?  I thought the signatures should be the same, or at least the __cinit__ should have a *args or **kwds to accept the arguments passed to __init__\n\n\nIn particular, I refer to sage/libs/ntl/ntl_mat_GF2.pyx, sage/libs/ntl/ntl_mat_ZZ.pyx,  sage/matrix/matrix_integer_2x2.pyx, etc.",
+    "body": "Attachment [6590-cinit.patch](tarball://root/attachments/some-uuid/ticket6590/6590-cinit.patch) by jason created at 2009-07-25 05:59:11\n\nHow come the some of the new __cinit__ functions have different signatures from the corresponding __init__ functions?  I thought the signatures should be the same, or at least the __cinit__ should have a *args or **kwds to accept the arguments passed to __init__\n\n\nIn particular, I refer to sage/libs/ntl/ntl_mat_GF2.pyx, sage/libs/ntl/ntl_mat_ZZ.pyx,  sage/matrix/matrix_integer_2x2.pyx, etc.",
     "created_at": "2009-07-25T05:59:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6590",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_053931.json:
 }
 ```
 
-Attachment
+Attachment [6590-cinit.patch](tarball://root/attachments/some-uuid/ticket6590/6590-cinit.patch) by jason created at 2009-07-25 05:59:11
 
 How come the some of the new __cinit__ functions have different signatures from the corresponding __init__ functions?  I thought the signatures should be the same, or at least the __cinit__ should have a *args or **kwds to accept the arguments passed to __init__
 
@@ -72,7 +72,7 @@ If no __init__ parameters are not needed by __cinit__ they can simply be omitted
 archive/issue_comments_053933.json:
 ```json
 {
-    "body": "Attachment\n\nrebased against sage-4.1.1, apply instead of previous patch",
+    "body": "Attachment [6590-cinit_rebased.patch](tarball://root/attachments/some-uuid/ticket6590/6590-cinit_rebased.patch) by AlexGhitza created at 2009-08-17 14:06:44\n\nrebased against sage-4.1.1, apply instead of previous patch",
     "created_at": "2009-08-17T14:06:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6590",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_053933.json:
 }
 ```
 
-Attachment
+Attachment [6590-cinit_rebased.patch](tarball://root/attachments/some-uuid/ticket6590/6590-cinit_rebased.patch) by AlexGhitza created at 2009-08-17 14:06:44
 
 rebased against sage-4.1.1, apply instead of previous patch
 

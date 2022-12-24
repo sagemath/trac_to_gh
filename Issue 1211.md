@@ -128,7 +128,7 @@ sage: (2*x^2) % (2*x)
 archive/issue_comments_007518.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1211.hg](tarball://root/attachments/some-uuid/ticket1211/1211.hg) by dmharvey created at 2007-12-01 17:14:11",
     "created_at": "2007-12-01T17:14:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1211",
     "type": "issue_comment",
@@ -137,7 +137,7 @@ archive/issue_comments_007518.json:
 }
 ```
 
-Attachment
+Attachment [1211.hg](tarball://root/attachments/some-uuid/ticket1211/1211.hg) by dmharvey created at 2007-12-01 17:14:11
 
 
 

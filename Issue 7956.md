@@ -87,7 +87,7 @@ TypeError: _point_morphism_class() takes exactly 1 non-keyword argument (3 given
 archive/issue_comments_069422.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [affine_morphism.patch](tarball://root/attachments/some-uuid/ticket7956/affine_morphism.patch) by wjp created at 2010-01-16 18:32:00",
     "created_at": "2010-01-16T18:32:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7956",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_069422.json:
 }
 ```
 
-Attachment
+Attachment [affine_morphism.patch](tarball://root/attachments/some-uuid/ticket7956/affine_morphism.patch) by wjp created at 2010-01-16 18:32:00
 
 
 
@@ -105,7 +105,7 @@ Attachment
 archive/issue_comments_069423.json:
 ```json
 {
-    "body": "Attachment\n\nAdd a doctest constructing such a morphism.",
+    "body": "Attachment [sage-trac_7956.patch](tarball://root/attachments/some-uuid/ticket7956/sage-trac_7956.patch) by mjo created at 2012-01-13 19:24:00\n\nAdd a doctest constructing such a morphism.",
     "created_at": "2012-01-13T19:24:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7956",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_069423.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac_7956.patch](tarball://root/attachments/some-uuid/ticket7956/sage-trac_7956.patch) by mjo created at 2012-01-13 19:24:00
 
 Add a doctest constructing such a morphism.
 

@@ -540,7 +540,7 @@ OK.  But I haven't time right now to do any testing, so I haven't looked at patc
 archive/issue_comments_008065.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac1284-flattened.patch](tarball://root/attachments/some-uuid/ticket1284/trac1284-flattened.patch) by rlm created at 2008-05-14 20:07:53",
     "created_at": "2008-05-14T20:07:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1284",
     "type": "issue_comment",
@@ -549,7 +549,7 @@ archive/issue_comments_008065.json:
 }
 ```
 
-Attachment
+Attachment [trac1284-flattened.patch](tarball://root/attachments/some-uuid/ticket1284/trac1284-flattened.patch) by rlm created at 2008-05-14 20:07:53
 
 
 

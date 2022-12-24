@@ -220,7 +220,7 @@ Got:
 archive/issue_comments_025282.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-3580.patch](tarball://root/attachments/some-uuid/ticket3580/trac-3580.patch) by craigcitro created at 2008-11-09 08:22:18",
     "created_at": "2008-11-09T08:22:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3580",
     "type": "issue_comment",
@@ -229,7 +229,7 @@ archive/issue_comments_025282.json:
 }
 ```
 
-Attachment
+Attachment [trac-3580.patch](tarball://root/attachments/some-uuid/ticket3580/trac-3580.patch) by craigcitro created at 2008-11-09 08:22:18
 
 
 

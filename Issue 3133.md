@@ -190,7 +190,7 @@ See #3315 for another input format that parametric_plot should take (functions r
 archive/issue_comments_021764.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-3133-parametric_plot-vector.patch](tarball://root/attachments/some-uuid/ticket3133/trac-3133-parametric_plot-vector.patch) by jason created at 2009-09-17 21:44:17",
     "created_at": "2009-09-17T21:44:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3133",
     "type": "issue_comment",
@@ -199,7 +199,7 @@ archive/issue_comments_021764.json:
 }
 ```
 
-Attachment
+Attachment [trac-3133-parametric_plot-vector.patch](tarball://root/attachments/some-uuid/ticket3133/trac-3133-parametric_plot-vector.patch) by jason created at 2009-09-17 21:44:17
 
 
 

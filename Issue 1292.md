@@ -152,7 +152,7 @@ For the IntegerModRing case, we could probably do something with http://www.shou
 archive/issue_comments_008111.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached a patch that only does root finding by factorization if the coefficient ring is an integral domain; so for this problem, it uses enumeration instead, and does find all four roots.  I think that using a non-stupid root-finding algorithm here should be a separate ticket; that's an enhancement request, instead of a critical bug fix.\n\nNOTE THAT THIS PATCH REQUIRES THAT PATCHES FROM #1270 AND #1273 ARE ALREADY APPLIED.  This is just because #1273 happens to touch the same paragraph in the docstring of roots() that I needed to change for this patch, so I had to choose between depending on #1273 or conflicting with #1273.  Since I hope and expect that #1273 will be applied for 2.8.15, I chose to depend on it; if #1273 is rejected, I'll upload a modified patch that doesn't depend on #1273.",
+    "body": "Attachment [1292.patch](tarball://root/attachments/some-uuid/ticket1292/1292.patch) by cwitty created at 2007-11-28 02:09:51\n\nI've attached a patch that only does root finding by factorization if the coefficient ring is an integral domain; so for this problem, it uses enumeration instead, and does find all four roots.  I think that using a non-stupid root-finding algorithm here should be a separate ticket; that's an enhancement request, instead of a critical bug fix.\n\nNOTE THAT THIS PATCH REQUIRES THAT PATCHES FROM #1270 AND #1273 ARE ALREADY APPLIED.  This is just because #1273 happens to touch the same paragraph in the docstring of roots() that I needed to change for this patch, so I had to choose between depending on #1273 or conflicting with #1273.  Since I hope and expect that #1273 will be applied for 2.8.15, I chose to depend on it; if #1273 is rejected, I'll upload a modified patch that doesn't depend on #1273.",
     "created_at": "2007-11-28T02:09:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1292",
     "type": "issue_comment",
@@ -161,7 +161,7 @@ archive/issue_comments_008111.json:
 }
 ```
 
-Attachment
+Attachment [1292.patch](tarball://root/attachments/some-uuid/ticket1292/1292.patch) by cwitty created at 2007-11-28 02:09:51
 
 I've attached a patch that only does root finding by factorization if the coefficient ring is an integral domain; so for this problem, it uses enumeration instead, and does find all four roots.  I think that using a non-stupid root-finding algorithm here should be a separate ticket; that's an enhancement request, instead of a critical bug fix.
 

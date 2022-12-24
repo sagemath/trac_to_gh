@@ -103,7 +103,7 @@ Resolution: fixed
 archive/issue_comments_057803.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6988-unnest.patch](tarball://root/attachments/some-uuid/ticket6988/trac_6988-unnest.patch) by mvngu created at 2009-09-22 19:24:40",
     "created_at": "2009-09-22T19:24:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6988",
     "type": "issue_comment",
@@ -112,7 +112,7 @@ archive/issue_comments_057803.json:
 }
 ```
 
-Attachment
+Attachment [trac_6988-unnest.patch](tarball://root/attachments/some-uuid/ticket6988/trac_6988-unnest.patch) by mvngu created at 2009-09-22 19:24:40
 
 
 

@@ -158,7 +158,7 @@ Also, unfortunately, the primary source of random numbers in Sage (GMP's Mersenn
 archive/issue_comments_040955.json:
 ```json
 {
-    "body": "Attachment\n\nI posted a new patch (and deleted the old version) that moves `@`random_testing into its own file (and adds it to the reference manual).  I didn't implement the other requested feature, of providing an iteration loop, for the reasons mentioned in my previous comment.",
+    "body": "Attachment [trac5318-random-testing.patch](tarball://root/attachments/some-uuid/ticket5318/trac5318-random-testing.patch) by cwitty created at 2009-03-21 04:25:18\n\nI posted a new patch (and deleted the old version) that moves `@`random_testing into its own file (and adds it to the reference manual).  I didn't implement the other requested feature, of providing an iteration loop, for the reasons mentioned in my previous comment.",
     "created_at": "2009-03-21T04:25:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5318",
     "type": "issue_comment",
@@ -167,7 +167,7 @@ archive/issue_comments_040955.json:
 }
 ```
 
-Attachment
+Attachment [trac5318-random-testing.patch](tarball://root/attachments/some-uuid/ticket5318/trac5318-random-testing.patch) by cwitty created at 2009-03-21 04:25:18
 
 I posted a new patch (and deleted the old version) that moves `@`random_testing into its own file (and adds it to the reference manual).  I didn't implement the other requested feature, of providing an iteration loop, for the reasons mentioned in my previous comment.
 

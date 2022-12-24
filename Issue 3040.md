@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3040
 archive/issue_comments_020915.json:
 ```json
 {
-    "body": "Attachment\n\nWhoever reviews this also ought to review #2171\n\nCheers,\n\nMichael",
+    "body": "Attachment [sage-3040.patch](tarball://root/attachments/some-uuid/ticket3040/sage-3040.patch) by mabshoff created at 2008-04-27 03:32:04\n\nWhoever reviews this also ought to review #2171\n\nCheers,\n\nMichael",
     "created_at": "2008-04-27T03:32:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3040",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_020915.json:
 }
 ```
 
-Attachment
+Attachment [sage-3040.patch](tarball://root/attachments/some-uuid/ticket3040/sage-3040.patch) by mabshoff created at 2008-04-27 03:32:04
 
 Whoever reviews this also ought to review #2171
 
@@ -127,7 +127,7 @@ Oh, and I noticed that this patch didn't have a doctest. I mistakenly let it thr
 archive/issue_comments_020919.json:
 ```json
 {
-    "body": "Attachment\n\nsage-3040.patch no longer applies cleanly. Please rebase.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac-3040-doctest.patch](tarball://root/attachments/some-uuid/ticket3040/trac-3040-doctest.patch) by mabshoff created at 2008-06-08 22:53:02\n\nsage-3040.patch no longer applies cleanly. Please rebase.\n\nCheers,\n\nMichael",
     "created_at": "2008-06-08T22:53:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3040",
     "type": "issue_comment",
@@ -136,7 +136,7 @@ archive/issue_comments_020919.json:
 }
 ```
 
-Attachment
+Attachment [trac-3040-doctest.patch](tarball://root/attachments/some-uuid/ticket3040/trac-3040-doctest.patch) by mabshoff created at 2008-06-08 22:53:02
 
 sage-3040.patch no longer applies cleanly. Please rebase.
 
@@ -151,7 +151,7 @@ Michael
 archive/issue_comments_020920.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3040-doctest-rebase.patch](tarball://root/attachments/some-uuid/ticket3040/sage-3040-doctest-rebase.patch) by was created at 2008-06-09 07:25:44",
     "created_at": "2008-06-09T07:25:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3040",
     "type": "issue_comment",
@@ -160,7 +160,7 @@ archive/issue_comments_020920.json:
 }
 ```
 
-Attachment
+Attachment [sage-3040-doctest-rebase.patch](tarball://root/attachments/some-uuid/ticket3040/sage-3040-doctest-rebase.patch) by was created at 2008-06-09 07:25:44
 
 
 

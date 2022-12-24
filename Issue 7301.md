@@ -760,7 +760,7 @@ apply this patch only to 4.3.
 archive/issue_comments_060874.json:
 ```json
 {
-    "body": "Attachment\n\nThis passes sage -testall on an ubuntu machine. \n\nNathann: Can you please look at this? Please check your LP code, which I modified slightly. Feel free to add a referee's patch (eg, adding an AUTHORS field, which I just noticed I forgot).\n\nIt turned out that partition was the wrong place to put it. My colleague who refereed it did not like that the integer vectors were not allowed to have trailing 0's and so that ruled out allowing gale_ryser_theorem to be a method for the Partition class.",
+    "body": "Attachment [trac_7301.2.patch](tarball://root/attachments/some-uuid/ticket7301/trac_7301.2.patch) by wdj created at 2009-12-28 18:57:30\n\nThis passes sage -testall on an ubuntu machine. \n\nNathann: Can you please look at this? Please check your LP code, which I modified slightly. Feel free to add a referee's patch (eg, adding an AUTHORS field, which I just noticed I forgot).\n\nIt turned out that partition was the wrong place to put it. My colleague who refereed it did not like that the integer vectors were not allowed to have trailing 0's and so that ruled out allowing gale_ryser_theorem to be a method for the Partition class.",
     "created_at": "2009-12-28T18:57:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
@@ -769,7 +769,7 @@ archive/issue_comments_060874.json:
 }
 ```
 
-Attachment
+Attachment [trac_7301.2.patch](tarball://root/attachments/some-uuid/ticket7301/trac_7301.2.patch) by wdj created at 2009-12-28 18:57:30
 
 This passes sage -testall on an ubuntu machine. 
 
@@ -898,7 +898,7 @@ Done. Thanks.
 archive/issue_comments_060877.json:
 ```json
 {
-    "body": "Attachment\n\nseems to apply to 4.3* and test okay. Apply only this patch.",
+    "body": "Attachment [trac_7301-referee.patch](tarball://root/attachments/some-uuid/ticket7301/trac_7301-referee.patch) by wdj created at 2010-01-06 20:18:15\n\nseems to apply to 4.3* and test okay. Apply only this patch.",
     "created_at": "2010-01-06T20:18:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
@@ -907,7 +907,7 @@ archive/issue_comments_060877.json:
 }
 ```
 
-Attachment
+Attachment [trac_7301-referee.patch](tarball://root/attachments/some-uuid/ticket7301/trac_7301-referee.patch) by wdj created at 2010-01-06 20:18:15
 
 seems to apply to 4.3* and test okay. Apply only this patch.
 
@@ -1052,7 +1052,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_060883.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7301.patch](tarball://root/attachments/some-uuid/ticket7301/trac_7301.patch) by ncohen created at 2010-01-11 11:28:16",
     "created_at": "2010-01-11T11:28:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
@@ -1061,7 +1061,7 @@ archive/issue_comments_060883.json:
 }
 ```
 
-Attachment
+Attachment [trac_7301.patch](tarball://root/attachments/some-uuid/ticket7301/trac_7301.patch) by ncohen created at 2010-01-11 11:28:16
 
 
 

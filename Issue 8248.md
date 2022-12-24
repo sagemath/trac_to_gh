@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8248
 archive/issue_comments_072951.json:
 ```json
 {
-    "body": "Attachment\n\nApplies to 4.3.2",
+    "body": "Attachment [trac_8248-isogeny.patch](tarball://root/attachments/some-uuid/ticket8248/trac_8248-isogeny.patch) by cremona created at 2010-02-12 11:04:19\n\nApplies to 4.3.2",
     "created_at": "2010-02-12T11:04:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8248",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_072951.json:
 }
 ```
 
-Attachment
+Attachment [trac_8248-isogeny.patch](tarball://root/attachments/some-uuid/ticket8248/trac_8248-isogeny.patch) by cremona created at 2010-02-12 11:04:19
 
 Applies to 4.3.2
 

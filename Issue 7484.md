@@ -338,7 +338,7 @@ archive/issue_comments_063210.json:
 archive/issue_comments_063211.json:
 ```json
 {
-    "body": "Attachment\n\nbased on Sage 4.3.3.alpha0",
+    "body": "Attachment [README.txt](tarball://root/attachments/some-uuid/ticket7484/README.txt) by mvngu created at 2010-02-15 03:58:45\n\nbased on Sage 4.3.3.alpha0",
     "created_at": "2010-02-15T03:58:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7484",
     "type": "issue_comment",
@@ -347,7 +347,7 @@ archive/issue_comments_063211.json:
 }
 ```
 
-Attachment
+Attachment [README.txt](tarball://root/attachments/some-uuid/ticket7484/README.txt) by mvngu created at 2010-02-15 03:58:45
 
 based on Sage 4.3.3.alpha0
 
@@ -394,7 +394,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_063214.json:
 ```json
 {
-    "body": "Attachment\n\nA few comments: Those in bold are specifically about Fortran. The others are not, so you can ignore them for this ticket, tough you might chose to update them, as they are minor changes:\n\n* Line 22: says Sage is distributed under the GPL, but does say what version. I believe it should be GPL 2 (or at your option any later version). \n* Line 110 should make it clear Sage 4.3.0.1 does work on Solaris 10 SPARC and more recent versions nearly work. \n* **Line 113 mentions gFortran. I believe the F should be changed to lower case**\n* Line 127 should make it clear this port is for x64. OpenSolaris does exist on SPARC, though I do not believe it has many users. \n* **Lines 144 + 145. Again refers to a gFortran. Also, there is no reason gfortran needs to be installed system wide. Someone can create their own private copy of gcc with Fortran support.**\n* **Line 168. I think changing 32- to 32-bit would be preferable.**\n*  Line 299. I would change to simply Sage needs GCC >= 4.0.1\n* Line 300 seems a bit pointless, as long as we say Sage needs gcc >=4.0.1\n* Line 301 can be removed, as it is totally impossible to build Sage with that. The 'prereq' script will exit immediately with an error. \n\nDave",
+    "body": "Attachment [README.diff](tarball://root/attachments/some-uuid/ticket7484/README.diff) by drkirkby created at 2010-02-21 06:01:12\n\nA few comments: Those in bold are specifically about Fortran. The others are not, so you can ignore them for this ticket, tough you might chose to update them, as they are minor changes:\n\n* Line 22: says Sage is distributed under the GPL, but does say what version. I believe it should be GPL 2 (or at your option any later version). \n* Line 110 should make it clear Sage 4.3.0.1 does work on Solaris 10 SPARC and more recent versions nearly work. \n* **Line 113 mentions gFortran. I believe the F should be changed to lower case**\n* Line 127 should make it clear this port is for x64. OpenSolaris does exist on SPARC, though I do not believe it has many users. \n* **Lines 144 + 145. Again refers to a gFortran. Also, there is no reason gfortran needs to be installed system wide. Someone can create their own private copy of gcc with Fortran support.**\n* **Line 168. I think changing 32- to 32-bit would be preferable.**\n*  Line 299. I would change to simply Sage needs GCC >= 4.0.1\n* Line 300 seems a bit pointless, as long as we say Sage needs gcc >=4.0.1\n* Line 301 can be removed, as it is totally impossible to build Sage with that. The 'prereq' script will exit immediately with an error. \n\nDave",
     "created_at": "2010-02-21T06:01:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7484",
     "type": "issue_comment",
@@ -403,7 +403,7 @@ archive/issue_comments_063214.json:
 }
 ```
 
-Attachment
+Attachment [README.diff](tarball://root/attachments/some-uuid/ticket7484/README.diff) by drkirkby created at 2010-02-21 06:01:12
 
 A few comments: Those in bold are specifically about Fortran. The others are not, so you can ignore them for this ticket, tough you might chose to update them, as they are minor changes:
 

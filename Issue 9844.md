@@ -186,7 +186,7 @@ Btw, the `-lmpir` (or `-lgmp`) is only needed if we build a *static* version of 
 archive/issue_comments_097153.json:
 ```json
 {
-    "body": "Attachment\n\nDiff between the p2 (#9592) and Mike's p4 spkg - for review/reference.",
+    "body": "Attachment [lcalc-20100428-1.23.p2-p4.diff](tarball://root/attachments/some-uuid/ticket9845/lcalc-20100428-1.23.p2-p4.diff) by leif created at 2010-09-02 23:41:16\n\nDiff between the p2 (#9592) and Mike's p4 spkg - for review/reference.",
     "created_at": "2010-09-02T23:41:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9844",
     "type": "issue_comment",
@@ -195,7 +195,7 @@ archive/issue_comments_097153.json:
 }
 ```
 
-Attachment
+Attachment [lcalc-20100428-1.23.p2-p4.diff](tarball://root/attachments/some-uuid/ticket9845/lcalc-20100428-1.23.p2-p4.diff) by leif created at 2010-09-02 23:41:16
 
 Diff between the p2 (#9592) and Mike's p4 spkg - for review/reference.
 
@@ -322,7 +322,7 @@ I also made the other changes suggested by Leif.  New spkg: [http://sage.math.wa
 archive/issue_comments_097160.json:
 ```json
 {
-    "body": "Attachment\n\nignore this file",
+    "body": "Attachment [lcalc-20100428-1.23.p2-p4.2.diff](tarball://root/attachments/some-uuid/ticket9845/lcalc-20100428-1.23.p2-p4.2.diff) by jdemeyer created at 2010-09-19 16:35:01\n\nignore this file",
     "created_at": "2010-09-19T16:35:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9844",
     "type": "issue_comment",
@@ -331,7 +331,7 @@ archive/issue_comments_097160.json:
 }
 ```
 
-Attachment
+Attachment [lcalc-20100428-1.23.p2-p4.2.diff](tarball://root/attachments/some-uuid/ticket9845/lcalc-20100428-1.23.p2-p4.2.diff) by jdemeyer created at 2010-09-19 16:35:01
 
 ignore this file
 
@@ -342,7 +342,7 @@ ignore this file
 archive/issue_comments_097161.json:
 ```json
 {
-    "body": "Attachment\n\nDiff between p4 and p5 - for review/reference.",
+    "body": "Attachment [lcalc-20100428-1.23.p4-p5.diff](tarball://root/attachments/some-uuid/ticket9845/lcalc-20100428-1.23.p4-p5.diff) by jdemeyer created at 2010-09-19 16:42:01\n\nDiff between p4 and p5 - for review/reference.",
     "created_at": "2010-09-19T16:42:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9844",
     "type": "issue_comment",
@@ -351,7 +351,7 @@ archive/issue_comments_097161.json:
 }
 ```
 
-Attachment
+Attachment [lcalc-20100428-1.23.p4-p5.diff](tarball://root/attachments/some-uuid/ticket9845/lcalc-20100428-1.23.p4-p5.diff) by jdemeyer created at 2010-09-19 16:42:01
 
 Diff between p4 and p5 - for review/reference.
 

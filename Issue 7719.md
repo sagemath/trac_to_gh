@@ -57,7 +57,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7719
 archive/issue_comments_066291.json:
 ```json
 {
-    "body": "Attachment\n\nApplies to 4.3.rc0.  Preliminary version",
+    "body": "Attachment [trac_7719-agm.patch](tarball://root/attachments/some-uuid/ticket7719/trac_7719-agm.patch) by cremona created at 2009-12-17 11:51:00\n\nApplies to 4.3.rc0.  Preliminary version",
     "created_at": "2009-12-17T11:51:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_066291.json:
 }
 ```
 
-Attachment
+Attachment [trac_7719-agm.patch](tarball://root/attachments/some-uuid/ticket7719/trac_7719-agm.patch) by cremona created at 2009-12-17 11:51:00
 
 Applies to 4.3.rc0.  Preliminary version
 
@@ -290,7 +290,7 @@ On another note, see #7739
 archive/issue_comments_066298.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [7719-agm-optimize.patch](tarball://root/attachments/some-uuid/ticket7719/7719-agm-optimize.patch) by robertwb created at 2009-12-19 09:15:15",
     "created_at": "2009-12-19T09:15:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
@@ -299,7 +299,7 @@ archive/issue_comments_066298.json:
 }
 ```
 
-Attachment
+Attachment [7719-agm-optimize.patch](tarball://root/attachments/some-uuid/ticket7719/7719-agm-optimize.patch) by robertwb created at 2009-12-19 09:15:15
 
 
 
@@ -495,7 +495,7 @@ Sounds like ylchapuy will be needed for a final review of this one -- thanks.
 archive/issue_comments_066305.json:
 ```json
 {
-    "body": "Attachment\n\nReplaces previous patch",
+    "body": "Attachment [trac_7719-bugfix.patch](tarball://root/attachments/some-uuid/ticket7719/trac_7719-bugfix.patch) by cremona created at 2009-12-19 18:20:18\n\nReplaces previous patch",
     "created_at": "2009-12-19T18:20:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
@@ -504,7 +504,7 @@ archive/issue_comments_066305.json:
 }
 ```
 
-Attachment
+Attachment [trac_7719-bugfix.patch](tarball://root/attachments/some-uuid/ticket7719/trac_7719-bugfix.patch) by cremona created at 2009-12-19 18:20:18
 
 Replaces previous patch
 
@@ -634,7 +634,7 @@ apply first and this only
 archive/issue_comments_066312.json:
 ```json
 {
-    "body": "Attachment\n\nAfter I coded up the previous suggestion, I felt the best way was to simply run the whole thing with a bit of extra precision. This way the last couple bits in the final iteration will actually be correct for that step, not just as correct as they could be due to rounding limitations. I also fixed a bug with a.agm(-a) and added some more tests. \n\nI folded it into the above patch, so apply trac_7719-agm.patch and 7719-bugfix2.patch. I'm positively reviewing cremona's changes--he needs to look at mine.",
+    "body": "Attachment [7719-bugfix2.patch](tarball://root/attachments/some-uuid/ticket7719/7719-bugfix2.patch) by robertwb created at 2009-12-19 22:45:57\n\nAfter I coded up the previous suggestion, I felt the best way was to simply run the whole thing with a bit of extra precision. This way the last couple bits in the final iteration will actually be correct for that step, not just as correct as they could be due to rounding limitations. I also fixed a bug with a.agm(-a) and added some more tests. \n\nI folded it into the above patch, so apply trac_7719-agm.patch and 7719-bugfix2.patch. I'm positively reviewing cremona's changes--he needs to look at mine.",
     "created_at": "2009-12-19T22:45:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
@@ -643,7 +643,7 @@ archive/issue_comments_066312.json:
 }
 ```
 
-Attachment
+Attachment [7719-bugfix2.patch](tarball://root/attachments/some-uuid/ticket7719/7719-bugfix2.patch) by robertwb created at 2009-12-19 22:45:57
 
 After I coded up the previous suggestion, I felt the best way was to simply run the whole thing with a bit of extra precision. This way the last couple bits in the final iteration will actually be correct for that step, not just as correct as they could be due to rounding limitations. I also fixed a bug with a.agm(-a) and added some more tests. 
 
@@ -696,7 +696,7 @@ apply first and this only
 archive/issue_comments_066315.json:
 ```json
 {
-    "body": "Attachment\n\nI think returning zero is the right thing to do for these degenerate cases--after all the AGM as a limit of the arithmetic and geometric means does exist. I've updated the patch.",
+    "body": "Attachment [7719-bugfix3.patch](tarball://root/attachments/some-uuid/ticket7719/7719-bugfix3.patch) by robertwb created at 2009-12-20 10:05:19\n\nI think returning zero is the right thing to do for these degenerate cases--after all the AGM as a limit of the arithmetic and geometric means does exist. I've updated the patch.",
     "created_at": "2009-12-20T10:05:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
@@ -705,7 +705,7 @@ archive/issue_comments_066315.json:
 }
 ```
 
-Attachment
+Attachment [7719-bugfix3.patch](tarball://root/attachments/some-uuid/ticket7719/7719-bugfix3.patch) by robertwb created at 2009-12-20 10:05:19
 
 I think returning zero is the right thing to do for these degenerate cases--after all the AGM as a limit of the arithmetic and geometric means does exist. I've updated the patch.
 
@@ -716,7 +716,7 @@ I think returning zero is the right thing to do for these degenerate cases--afte
 archive/issue_comments_066316.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of bugfix3",
+    "body": "Attachment [7719-avoid_an_add.patch](tarball://root/attachments/some-uuid/ticket7719/7719-avoid_an_add.patch) by ylchapuy created at 2009-12-20 11:37:39\n\napply on top of bugfix3",
     "created_at": "2009-12-20T11:37:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
@@ -725,7 +725,7 @@ archive/issue_comments_066316.json:
 }
 ```
 
-Attachment
+Attachment [7719-avoid_an_add.patch](tarball://root/attachments/some-uuid/ticket7719/7719-avoid_an_add.patch) by ylchapuy created at 2009-12-20 11:37:39
 
 apply on top of bugfix3
 
@@ -781,7 +781,7 @@ I'll merge all our patches into a single one for the final review.
 archive/issue_comments_066319.json:
 ```json
 {
-    "body": "Attachment\n\nReplaces all previous",
+    "body": "Attachment [trac_7719-cagm.patch](tarball://root/attachments/some-uuid/ticket7719/trac_7719-cagm.patch) by cremona created at 2009-12-20 12:42:55\n\nReplaces all previous",
     "created_at": "2009-12-20T12:42:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
@@ -790,7 +790,7 @@ archive/issue_comments_066319.json:
 }
 ```
 
-Attachment
+Attachment [trac_7719-cagm.patch](tarball://root/attachments/some-uuid/ticket7719/trac_7719-cagm.patch) by cremona created at 2009-12-20 12:42:55
 
 Replaces all previous
 

@@ -55,7 +55,7 @@ based on Sage 4.1.1
 archive/issue_comments_055748.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6770-modform-typos.patch](tarball://root/attachments/some-uuid/ticket6770/trac_6770-modform-typos.patch) by mvngu created at 2009-08-17 07:44:49",
     "created_at": "2009-08-17T07:44:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6770",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_055748.json:
 }
 ```
 
-Attachment
+Attachment [trac_6770-modform-typos.patch](tarball://root/attachments/some-uuid/ticket6770/trac_6770-modform-typos.patch) by mvngu created at 2009-08-17 07:44:49
 
 
 

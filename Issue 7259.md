@@ -65,7 +65,7 @@ Changing status from new to needs_review.
 archive/issue_comments_060293.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7259-revert-category-in-sets.patch](tarball://root/attachments/some-uuid/ticket7259/trac_7259-revert-category-in-sets.patch) by nthiery created at 2009-10-21 08:42:11",
     "created_at": "2009-10-21T08:42:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7259",
     "type": "issue_comment",
@@ -74,7 +74,7 @@ archive/issue_comments_060293.json:
 }
 ```
 
-Attachment
+Attachment [trac_7259-revert-category-in-sets.patch](tarball://root/attachments/some-uuid/ticket7259/trac_7259-revert-category-in-sets.patch) by nthiery created at 2009-10-21 08:42:11
 
 
 

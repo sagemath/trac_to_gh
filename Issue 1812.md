@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1812
 archive/issue_comments_011458.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [finite_field_givaro_doctest.patch](tarball://root/attachments/some-uuid/ticket1812/finite_field_givaro_doctest.patch) by malb created at 2008-01-17 22:41:03",
     "created_at": "2008-01-17T22:41:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1812",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_011458.json:
 }
 ```
 
-Attachment
+Attachment [finite_field_givaro_doctest.patch](tarball://root/attachments/some-uuid/ticket1812/finite_field_givaro_doctest.patch) by malb created at 2008-01-17 22:41:03
 
 
 

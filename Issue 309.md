@@ -267,7 +267,7 @@ Michael
 archive/issue_comments_001471.json:
 ```json
 {
-    "body": "Attachment\n\nmhansen gave me a crash course on iterators and I have implemented a method QQ.range_by_height().  John's request from above becomes then\n\n\n```\nsage: for q in QQ.range_by_height(3):                                          \n....:     print q                                                              \n....:                                                                          \n0\n1\n-1\n1/2\n-1/2\n2\n-2\n```\n\n\nI have replaced the old patch with one that contains this method as well.",
+    "body": "Attachment [309-rational_iter_height.patch](tarball://root/attachments/some-uuid/ticket309/309-rational_iter_height.patch) by AlexGhitza created at 2008-09-02 02:07:45\n\nmhansen gave me a crash course on iterators and I have implemented a method QQ.range_by_height().  John's request from above becomes then\n\n\n```\nsage: for q in QQ.range_by_height(3):                                          \n....:     print q                                                              \n....:                                                                          \n0\n1\n-1\n1/2\n-1/2\n2\n-2\n```\n\n\nI have replaced the old patch with one that contains this method as well.",
     "created_at": "2008-09-02T02:07:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/309",
     "type": "issue_comment",
@@ -276,7 +276,7 @@ archive/issue_comments_001471.json:
 }
 ```
 
-Attachment
+Attachment [309-rational_iter_height.patch](tarball://root/attachments/some-uuid/ticket309/309-rational_iter_height.patch) by AlexGhitza created at 2008-09-02 02:07:45
 
 mhansen gave me a crash course on iterators and I have implemented a method QQ.range_by_height().  John's request from above becomes then
 
@@ -377,7 +377,7 @@ Michael
 archive/issue_comments_001474.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of 309-rational_iter_height.patch and the patch from #4037",
+    "body": "Attachment [309-rational_iter_height_interactive.patch](tarball://root/attachments/some-uuid/ticket309/309-rational_iter_height_interactive.patch) by AlexGhitza created at 2008-09-02 04:52:50\n\napply on top of 309-rational_iter_height.patch and the patch from #4037",
     "created_at": "2008-09-02T04:52:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/309",
     "type": "issue_comment",
@@ -386,7 +386,7 @@ archive/issue_comments_001474.json:
 }
 ```
 
-Attachment
+Attachment [309-rational_iter_height_interactive.patch](tarball://root/attachments/some-uuid/ticket309/309-rational_iter_height_interactive.patch) by AlexGhitza created at 2008-09-02 04:52:50
 
 apply on top of 309-rational_iter_height.patch and the patch from #4037
 

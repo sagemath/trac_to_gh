@@ -53,7 +53,7 @@ minor doc edits
 archive/issue_comments_065954.json:
 ```json
 {
-    "body": "Attachment\n\nMinor tweaks.",
+    "body": "Attachment [trac_7685_improve_integer_factor_doc.patch](tarball://root/attachments/some-uuid/ticket7685/trac_7685_improve_integer_factor_doc.patch) by dsm created at 2012-05-26 05:10:07\n\nMinor tweaks.",
     "created_at": "2012-05-26T05:10:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7685",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_065954.json:
 }
 ```
 
-Attachment
+Attachment [trac_7685_improve_integer_factor_doc.patch](tarball://root/attachments/some-uuid/ticket7685/trac_7685_improve_integer_factor_doc.patch) by dsm created at 2012-05-26 05:10:07
 
 Minor tweaks.
 

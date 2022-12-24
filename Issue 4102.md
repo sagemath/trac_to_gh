@@ -313,7 +313,7 @@ work in progress making Bessel functions symbolic
 archive/issue_comments_029609.json:
 ```json
 {
-    "body": "Attachment\n\nNice!  A few comments of the type you solicited:\n* Why `typ` and not `type`?  Some Python reserved thing, maybe?  But it looks like a typ-o to the (quickly reading) end user.\n* I'd like to be able to plot `f(x) = Bessel(0)` but maybe that doesn't make sense?  I guess a variable is necessary... anyway, just throwing it out there.\n* `f = maxima(Bessel(typ='K')(x,y))` turns out great, but does it convert back?  Like `f.derivative('y')` is `-(bessel_k(x+1,y)+bessel_k(x-1,y))/2`, but does it then (when put in the `_sage_` method) go back to \"our\" uppercase Bessel functions?\n* Maybe Python 3 string formatting?  Though I am not sure how to mix that with LaTeX braces.\n* At least some of the error messages should be in doctests, maybe the ones with the wrong type and a non-implemented system.\n* `class_attrs['_conversions'] = {} ` --- what do we do with this in Maxima, then?  Maybe it's better to raise an error; Maxima tends to otherwise just take things as new variables, which could be dangerous.\n* How many of the currently-deleted doctests do you think would be worth preserving in the long run?  Any deprecation needed here?\nAnyway, clearly a lot of planning and looks very promising!",
+    "body": "Attachment [trac_symbolic_bessel.metaclass.2.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel.metaclass.2.patch) by kcrisman created at 2012-11-20 01:01:12\n\nNice!  A few comments of the type you solicited:\n* Why `typ` and not `type`?  Some Python reserved thing, maybe?  But it looks like a typ-o to the (quickly reading) end user.\n* I'd like to be able to plot `f(x) = Bessel(0)` but maybe that doesn't make sense?  I guess a variable is necessary... anyway, just throwing it out there.\n* `f = maxima(Bessel(typ='K')(x,y))` turns out great, but does it convert back?  Like `f.derivative('y')` is `-(bessel_k(x+1,y)+bessel_k(x-1,y))/2`, but does it then (when put in the `_sage_` method) go back to \"our\" uppercase Bessel functions?\n* Maybe Python 3 string formatting?  Though I am not sure how to mix that with LaTeX braces.\n* At least some of the error messages should be in doctests, maybe the ones with the wrong type and a non-implemented system.\n* `class_attrs['_conversions'] = {} ` --- what do we do with this in Maxima, then?  Maybe it's better to raise an error; Maxima tends to otherwise just take things as new variables, which could be dangerous.\n* How many of the currently-deleted doctests do you think would be worth preserving in the long run?  Any deprecation needed here?\nAnyway, clearly a lot of planning and looks very promising!",
     "created_at": "2012-11-20T01:01:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -322,7 +322,7 @@ archive/issue_comments_029609.json:
 }
 ```
 
-Attachment
+Attachment [trac_symbolic_bessel.metaclass.2.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel.metaclass.2.patch) by kcrisman created at 2012-11-20 01:01:12
 
 Nice!  A few comments of the type you solicited:
 * Why `typ` and not `type`?  Some Python reserved thing, maybe?  But it looks like a typ-o to the (quickly reading) end user.
@@ -532,7 +532,7 @@ sage: m.sage()
 archive/issue_comments_029615.json:
 ```json
 {
-    "body": "Attachment\n\nmore work in progress",
+    "body": "Attachment [trac_symbolic_bessel_v2.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_v2.patch) by benjaminfjones created at 2012-12-28 01:48:57\n\nmore work in progress",
     "created_at": "2012-12-28T01:48:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -541,7 +541,7 @@ archive/issue_comments_029615.json:
 }
 ```
 
-Attachment
+Attachment [trac_symbolic_bessel_v2.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_v2.patch) by benjaminfjones created at 2012-12-28 01:48:57
 
 more work in progress
 
@@ -629,7 +629,7 @@ more work in progress, v3
 archive/issue_comments_029620.json:
 ```json
 {
-    "body": "Attachment\n\nDumb comments since I don't have time for proper review - and more importantly, there are no obvious horrible things (though I haven't gone in depth with branches yet).   If all this really works and there are no typos, I think this will be a VERY nice addition.\n* `unqiue` typo\n* `Verfify` typo\n* `increasin` typo\n* I don't know why, but the math following \"It follows from Bessel's...\" doesn't look right in the doc (the `:math:` directive is not parsed)\n* Is \\operatorname{bessel\\_I}(\\alpha, x) standard or should we just just the I sub whatever?\n* ``test_relation()`` needs to be in double back ticks or have a link to the appropriate place in the ref manual\n* Trac tickets should use `:trac:` syntax\n* Does `f(x) = Bessel(0): plot(f, (x, 1, 10))` work, or must one use `Bessel(0)(x)`?  The example after that makes it look like maybe not...\n* Bessel Y and Bessel K need a little filling out - and one of the `:math:` directives doesn't show up at all, the other isn't parsed right for some reason again\n* I'd personally get rid of the whitespace changes in sage/functions/special.py - unlikely to have an effect, but not really necessary.\n* How should we deal with the removal of the `\"maxima\"` and `\"pari\"` arguments?  I'm not sure if it's really feasible to have a deprecation period for that, but we should discuss it.\n* I suppose we don't need to keep *all* old tests, but some of them are rather different and might be worth putting in a TESTS section somewhere, just so that we don't have some unexpected regression only they catch.\n* The switch to alpha from nu - I would rather not deprecate this either, but in principle someone could have used it as a keyword argument in the past...",
+    "body": "Attachment [trac_symbolic_bessel_v3.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_v3.patch) by kcrisman created at 2013-02-08 17:36:59\n\nDumb comments since I don't have time for proper review - and more importantly, there are no obvious horrible things (though I haven't gone in depth with branches yet).   If all this really works and there are no typos, I think this will be a VERY nice addition.\n* `unqiue` typo\n* `Verfify` typo\n* `increasin` typo\n* I don't know why, but the math following \"It follows from Bessel's...\" doesn't look right in the doc (the `:math:` directive is not parsed)\n* Is \\operatorname{bessel\\_I}(\\alpha, x) standard or should we just just the I sub whatever?\n* ``test_relation()`` needs to be in double back ticks or have a link to the appropriate place in the ref manual\n* Trac tickets should use `:trac:` syntax\n* Does `f(x) = Bessel(0): plot(f, (x, 1, 10))` work, or must one use `Bessel(0)(x)`?  The example after that makes it look like maybe not...\n* Bessel Y and Bessel K need a little filling out - and one of the `:math:` directives doesn't show up at all, the other isn't parsed right for some reason again\n* I'd personally get rid of the whitespace changes in sage/functions/special.py - unlikely to have an effect, but not really necessary.\n* How should we deal with the removal of the `\"maxima\"` and `\"pari\"` arguments?  I'm not sure if it's really feasible to have a deprecation period for that, but we should discuss it.\n* I suppose we don't need to keep *all* old tests, but some of them are rather different and might be worth putting in a TESTS section somewhere, just so that we don't have some unexpected regression only they catch.\n* The switch to alpha from nu - I would rather not deprecate this either, but in principle someone could have used it as a keyword argument in the past...",
     "created_at": "2013-02-08T17:36:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -638,7 +638,7 @@ archive/issue_comments_029620.json:
 }
 ```
 
-Attachment
+Attachment [trac_symbolic_bessel_v3.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_v3.patch) by kcrisman created at 2013-02-08 17:36:59
 
 Dumb comments since I don't have time for proper review - and more importantly, there are no obvious horrible things (though I haven't gone in depth with branches yet).   If all this really works and there are no typos, I think this will be a VERY nice addition.
 * `unqiue` typo
@@ -889,7 +889,7 @@ It doesn't make a difference to me, I used alpha because that's what's on the wi
 archive/issue_comments_029626.json:
 ```json
 {
-    "body": "Attachment\n\nfix doctests and tutorial references involving Bessel function API",
+    "body": "Attachment [trac_symbolic_bessel_doctests.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_doctests.patch) by benjaminfjones created at 2013-03-12 20:47:19\n\nfix doctests and tutorial references involving Bessel function API",
     "created_at": "2013-03-12T20:47:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -898,7 +898,7 @@ archive/issue_comments_029626.json:
 }
 ```
 
-Attachment
+Attachment [trac_symbolic_bessel_doctests.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_doctests.patch) by benjaminfjones created at 2013-03-12 20:47:19
 
 fix doctests and tutorial references involving Bessel function API
 
@@ -1189,7 +1189,7 @@ add deprecation of old API
 archive/issue_comments_029640.json:
 ```json
 {
-    "body": "Attachment\n\nlatest symbolic Bessel functions patch, ready for review",
+    "body": "Attachment [trac_symbolic_bessel_v5.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_v5.patch) by benjaminfjones created at 2013-03-28 00:08:11\n\nlatest symbolic Bessel functions patch, ready for review",
     "created_at": "2013-03-28T00:08:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -1198,7 +1198,7 @@ archive/issue_comments_029640.json:
 }
 ```
 
-Attachment
+Attachment [trac_symbolic_bessel_v5.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_v5.patch) by benjaminfjones created at 2013-03-28 00:08:11
 
 latest symbolic Bessel functions patch, ready for review
 
@@ -1560,7 +1560,7 @@ Copy of trac_symbolic_bessel_v5, minus one doctest block
 archive/issue_comments_029653.json:
 ```json
 {
-    "body": "Attachment\n\nCopy of trac_symbolic_bessel_v5, minus one doctest block",
+    "body": "Attachment [trac_symbolic_bessel_v6.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_v6.patch) by benjaminfjones created at 2013-05-20 23:23:06\n\nCopy of trac_symbolic_bessel_v5, minus one doctest block",
     "created_at": "2013-05-20T23:23:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -1569,7 +1569,7 @@ archive/issue_comments_029653.json:
 }
 ```
 
-Attachment
+Attachment [trac_symbolic_bessel_v6.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_v6.patch) by benjaminfjones created at 2013-05-20 23:23:06
 
 Copy of trac_symbolic_bessel_v5, minus one doctest block
 
@@ -1883,7 +1883,7 @@ adds bessel.py, lazy imports in all.py
 archive/issue_comments_029668.json:
 ```json
 {
-    "body": "Attachment\n\nfixes/updates doctests external to sage/functions/bessel.py",
+    "body": "Attachment [trac_symbolic_bessel_v7.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_v7.patch) by benjaminfjones created at 2013-06-15 05:26:15\n\nfixes/updates doctests external to sage/functions/bessel.py",
     "created_at": "2013-06-15T05:26:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -1892,7 +1892,7 @@ archive/issue_comments_029668.json:
 }
 ```
 
-Attachment
+Attachment [trac_symbolic_bessel_v7.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_v7.patch) by benjaminfjones created at 2013-06-15 05:26:15
 
 fixes/updates doctests external to sage/functions/bessel.py
 
@@ -1921,7 +1921,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_029670.json:
 ```json
 {
-    "body": "Attachment\n\nOK, uploaded two new patches which:\n1. address the problem raised in comment:41, solution is to replace construction of a new `MaximaFunction` object (which alters the symbol table) to construcing and evaluating the function directly inside Maxima using `maxima.function()`.\n2. change Bessel imports in `sage/functions/all.py` to lazy imports\n\nDoctests in all the touched files pass, I'll wait for the patchbot to see about the rest.\n\nHope y'all at Sage Days have a chance to review the patches.\n\n---- \n\nPatchbot, apply trac_symbolic_bessel_v7.patch trac_symbolic_bessel_v7-doctests.patch",
+    "body": "Attachment [trac_symbolic_bessel_v7-doctests.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_v7-doctests.patch) by benjaminfjones created at 2013-06-15 05:33:06\n\nOK, uploaded two new patches which:\n1. address the problem raised in comment:41, solution is to replace construction of a new `MaximaFunction` object (which alters the symbol table) to construcing and evaluating the function directly inside Maxima using `maxima.function()`.\n2. change Bessel imports in `sage/functions/all.py` to lazy imports\n\nDoctests in all the touched files pass, I'll wait for the patchbot to see about the rest.\n\nHope y'all at Sage Days have a chance to review the patches.\n\n---- \n\nPatchbot, apply trac_symbolic_bessel_v7.patch trac_symbolic_bessel_v7-doctests.patch",
     "created_at": "2013-06-15T05:33:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -1930,7 +1930,7 @@ archive/issue_comments_029670.json:
 }
 ```
 
-Attachment
+Attachment [trac_symbolic_bessel_v7-doctests.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_v7-doctests.patch) by benjaminfjones created at 2013-06-15 05:33:06
 
 OK, uploaded two new patches which:
 1. address the problem raised in comment:41, solution is to replace construction of a new `MaximaFunction` object (which alters the symbol table) to construcing and evaluating the function directly inside Maxima using `maxima.function()`.
@@ -2029,7 +2029,7 @@ I think my preference would be to put 'lazy import symbolic functions' off to an
 archive/issue_comments_029675.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_symbolic_bessel_v7.2.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_v7.2.patch) by benjaminfjones created at 2013-06-16 01:21:59",
     "created_at": "2013-06-16T01:21:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -2038,7 +2038,7 @@ archive/issue_comments_029675.json:
 }
 ```
 
-Attachment
+Attachment [trac_symbolic_bessel_v7.2.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_v7.2.patch) by benjaminfjones created at 2013-06-16 01:21:59
 
 
 
@@ -2135,7 +2135,7 @@ Looks good otherwise!
 archive/issue_comments_029680.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [bessel_2.patch](tarball://root/attachments/some-uuid/ticket4102/bessel_2.patch) by eviatarbach created at 2013-06-17 21:36:06",
     "created_at": "2013-06-17T21:36:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -2144,7 +2144,7 @@ archive/issue_comments_029680.json:
 }
 ```
 
-Attachment
+Attachment [bessel_2.patch](tarball://root/attachments/some-uuid/ticket4102/bessel_2.patch) by eviatarbach created at 2013-06-17 21:36:06
 
 
 
@@ -2197,7 +2197,7 @@ Patchbot apply trac_symbolic_bessel_v7.2.patch trac_symbolic_bessel_v7-doctests.
 archive/issue_comments_029683.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [bessel_2.2.patch](tarball://root/attachments/some-uuid/ticket4102/bessel_2.2.patch) by eviatarbach created at 2013-06-17 22:34:01",
     "created_at": "2013-06-17T22:34:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -2206,7 +2206,7 @@ archive/issue_comments_029683.json:
 }
 ```
 
-Attachment
+Attachment [bessel_2.2.patch](tarball://root/attachments/some-uuid/ticket4102/bessel_2.2.patch) by eviatarbach created at 2013-06-17 22:34:01
 
 
 
@@ -2410,7 +2410,7 @@ Perhaps this is due to #9880.
 archive/issue_comments_029693.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4102-bessel_doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket4102/trac_4102-bessel_doctest_fixes.patch) by burcin created at 2013-06-19 14:43:46",
     "created_at": "2013-06-19T14:43:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -2419,7 +2419,7 @@ archive/issue_comments_029693.json:
 }
 ```
 
-Attachment
+Attachment [trac_4102-bessel_doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket4102/trac_4102-bessel_doctest_fixes.patch) by burcin created at 2013-06-19 14:43:46
 
 
 
@@ -2550,7 +2550,7 @@ Got:
 archive/issue_comments_029700.json:
 ```json
 {
-    "body": "Attachment\n\nNew patch, adding a tolerance for the integral which is higher than the maximum error given by GSL.",
+    "body": "Attachment [trac_4102-bessel_doctest_fixes2.patch](tarball://root/attachments/some-uuid/ticket4102/trac_4102-bessel_doctest_fixes2.patch) by eviatarbach created at 2013-06-20 20:17:30\n\nNew patch, adding a tolerance for the integral which is higher than the maximum error given by GSL.",
     "created_at": "2013-06-20T20:17:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -2559,7 +2559,7 @@ archive/issue_comments_029700.json:
 }
 ```
 
-Attachment
+Attachment [trac_4102-bessel_doctest_fixes2.patch](tarball://root/attachments/some-uuid/ticket4102/trac_4102-bessel_doctest_fixes2.patch) by eviatarbach created at 2013-06-20 20:17:30
 
 New patch, adding a tolerance for the integral which is higher than the maximum error given by GSL.
 
@@ -2671,7 +2671,7 @@ sage: bessel_J(nu, z).diff(z)
 archive/issue_comments_029706.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac4102_diff.patch](tarball://root/attachments/some-uuid/ticket4102/trac4102_diff.patch) by eviatarbach created at 2013-08-07 06:38:34",
     "created_at": "2013-08-07T06:38:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -2680,7 +2680,7 @@ archive/issue_comments_029706.json:
 }
 ```
 
-Attachment
+Attachment [trac4102_diff.patch](tarball://root/attachments/some-uuid/ticket4102/trac4102_diff.patch) by eviatarbach created at 2013-08-07 06:38:34
 
 
 

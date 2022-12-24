@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8564
 archive/issue_comments_077535.json:
 ```json
 {
-    "body": "Attachment\n\nondrej's patch with a header",
+    "body": "Attachment [sympy1.patch](tarball://root/attachments/some-uuid/ticket8564/sympy1.patch) by burcin created at 2010-04-02 16:49:32\n\nondrej's patch with a header",
     "created_at": "2010-04-02T16:49:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8564",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_077535.json:
 }
 ```
 
-Attachment
+Attachment [sympy1.patch](tarball://root/attachments/some-uuid/ticket8564/sympy1.patch) by burcin created at 2010-04-02 16:49:32
 
 ondrej's patch with a header
 
@@ -53,7 +53,7 @@ ondrej's patch with a header
 archive/issue_comments_077536.json:
 ```json
 {
-    "body": "Attachment\n\ndoctest",
+    "body": "Attachment [trac_8564-doctests.patch](tarball://root/attachments/some-uuid/ticket8564/trac_8564-doctests.patch) by burcin created at 2010-04-02 16:49:53\n\ndoctest",
     "created_at": "2010-04-02T16:49:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8564",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_077536.json:
 }
 ```
 
-Attachment
+Attachment [trac_8564-doctests.patch](tarball://root/attachments/some-uuid/ticket8564/trac_8564-doctests.patch) by burcin created at 2010-04-02 16:49:53
 
 doctest
 

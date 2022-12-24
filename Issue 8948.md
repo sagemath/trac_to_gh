@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8948
 archive/issue_comments_082385.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-8948-vector-printing-space.patch](tarball://root/attachments/some-uuid/ticket8948/trac-8948-vector-printing-space.patch) by jason created at 2010-05-11 06:30:03",
     "created_at": "2010-05-11T06:30:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8948",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_082385.json:
 }
 ```
 
-Attachment
+Attachment [trac-8948-vector-printing-space.patch](tarball://root/attachments/some-uuid/ticket8948/trac-8948-vector-printing-space.patch) by jason created at 2010-05-11 06:30:03
 
 
 
@@ -107,7 +107,7 @@ Yep, code looks good.  I *always* put a thin space into my vectors, so this will
 archive/issue_comments_082389.json:
 ```json
 {
-    "body": "Attachment\n\nAttachment is totally doctests that needed fixing, plus one new one.  No change to the code.  I'm fine with a positive review on the code once somebody checks my doctest changes.",
+    "body": "Attachment [trac_8948-vector-printing-doctests.patch](tarball://root/attachments/some-uuid/ticket8948/trac_8948-vector-printing-doctests.patch) by rbeezer created at 2011-01-23 04:37:45\n\nAttachment is totally doctests that needed fixing, plus one new one.  No change to the code.  I'm fine with a positive review on the code once somebody checks my doctest changes.",
     "created_at": "2011-01-23T04:37:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8948",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_082389.json:
 }
 ```
 
-Attachment
+Attachment [trac_8948-vector-printing-doctests.patch](tarball://root/attachments/some-uuid/ticket8948/trac_8948-vector-printing-doctests.patch) by rbeezer created at 2011-01-23 04:37:45
 
 Attachment is totally doctests that needed fixing, plus one new one.  No change to the code.  I'm fine with a positive review on the code once somebody checks my doctest changes.
 

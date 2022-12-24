@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8888
 archive/issue_comments_081711.json:
 ```json
 {
-    "body": "Attachment\n\nPlease review.",
+    "body": "Attachment [trac_8888_partition_rim-fh.patch](tarball://root/attachments/some-uuid/ticket8888/trac_8888_partition_rim-fh.patch) by hivert created at 2010-05-05 17:01:29\n\nPlease review.",
     "created_at": "2010-05-05T17:01:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8888",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_081711.json:
 }
 ```
 
-Attachment
+Attachment [trac_8888_partition_rim-fh.patch](tarball://root/attachments/some-uuid/ticket8888/trac_8888_partition_rim-fh.patch) by hivert created at 2010-05-05 17:01:29
 
 Please review.
 
@@ -163,7 +163,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_081717.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8888_reviewer_jb.patch](tarball://root/attachments/some-uuid/ticket8888/trac_8888_reviewer_jb.patch) by jbandlow created at 2010-05-13 14:57:55",
     "created_at": "2010-05-13T14:57:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8888",
     "type": "issue_comment",
@@ -172,7 +172,7 @@ archive/issue_comments_081717.json:
 }
 ```
 
-Attachment
+Attachment [trac_8888_reviewer_jb.patch](tarball://root/attachments/some-uuid/ticket8888/trac_8888_reviewer_jb.patch) by jbandlow created at 2010-05-13 14:57:55
 
 
 

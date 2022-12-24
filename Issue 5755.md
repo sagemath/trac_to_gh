@@ -89,7 +89,7 @@ Since #7007 got positive review, here is the patch documenting the fix.
 archive/issue_comments_044986.json:
 ```json
 {
-    "body": "Attachment\n\nBased on 4.1.2.alpha4, depends on #7007",
+    "body": "Attachment [trac_5755-symbolic-to-poly.patch](tarball://root/attachments/some-uuid/ticket5755/trac_5755-symbolic-to-poly.patch) by kcrisman created at 2009-09-30 18:59:33\n\nBased on 4.1.2.alpha4, depends on #7007",
     "created_at": "2009-09-30T18:59:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5755",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_044986.json:
 }
 ```
 
-Attachment
+Attachment [trac_5755-symbolic-to-poly.patch](tarball://root/attachments/some-uuid/ticket5755/trac_5755-symbolic-to-poly.patch) by kcrisman created at 2009-09-30 18:59:33
 
 Based on 4.1.2.alpha4, depends on #7007
 

@@ -125,7 +125,7 @@ I am replacing the patch with one that has fixes for a couple of issues on the l
 archive/issue_comments_079279.json:
 ```json
 {
-    "body": "Attachment\n\napplies to sage-4.4.3 and sage-4.4.4.alpha0",
+    "body": "Attachment [siegel_combined.patch](tarball://root/attachments/some-uuid/ticket8701/siegel_combined.patch) by AlexGhitza created at 2010-06-14 07:03:44\n\napplies to sage-4.4.3 and sage-4.4.4.alpha0",
     "created_at": "2010-06-14T07:03:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8701",
     "type": "issue_comment",
@@ -134,7 +134,7 @@ archive/issue_comments_079279.json:
 }
 ```
 
-Attachment
+Attachment [siegel_combined.patch](tarball://root/attachments/some-uuid/ticket8701/siegel_combined.patch) by AlexGhitza created at 2010-06-14 07:03:44
 
 applies to sage-4.4.3 and sage-4.4.4.alpha0
 
@@ -217,7 +217,7 @@ Addresses many of the comments from before.   I need still need to add copyright
 archive/issue_comments_079284.json:
 ```json
 {
-    "body": "Attachment\n\nAddresses ncalexander's concern about the way the groups are defined",
+    "body": "Attachment [siegel_modular_group.patch](tarball://root/attachments/some-uuid/ticket8701/siegel_modular_group.patch) by ncryan created at 2011-04-21 23:04:20\n\nAddresses ncalexander's concern about the way the groups are defined",
     "created_at": "2011-04-21T23:04:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8701",
     "type": "issue_comment",
@@ -226,7 +226,7 @@ archive/issue_comments_079284.json:
 }
 ```
 
-Attachment
+Attachment [siegel_modular_group.patch](tarball://root/attachments/some-uuid/ticket8701/siegel_modular_group.patch) by ncryan created at 2011-04-21 23:04:20
 
 Addresses ncalexander's concern about the way the groups are defined
 
@@ -237,7 +237,7 @@ Addresses ncalexander's concern about the way the groups are defined
 archive/issue_comments_079285.json:
 ```json
 {
-    "body": "Attachment\n\nRaises an exception when trying to find the image of a form F under the Hecke operator T(p) when p divides the level of F",
+    "body": "Attachment [hecke_operators_bad_primes_exception.patch](tarball://root/attachments/some-uuid/ticket8701/hecke_operators_bad_primes_exception.patch) by ncryan created at 2011-04-21 23:05:17\n\nRaises an exception when trying to find the image of a form F under the Hecke operator T(p) when p divides the level of F",
     "created_at": "2011-04-21T23:05:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8701",
     "type": "issue_comment",
@@ -246,7 +246,7 @@ archive/issue_comments_079285.json:
 }
 ```
 
-Attachment
+Attachment [hecke_operators_bad_primes_exception.patch](tarball://root/attachments/some-uuid/ticket8701/hecke_operators_bad_primes_exception.patch) by ncryan created at 2011-04-21 23:05:17
 
 Raises an exception when trying to find the image of a form F under the Hecke operator T(p) when p divides the level of F
 
@@ -257,7 +257,7 @@ Raises an exception when trying to find the image of a form F under the Hecke op
 archive/issue_comments_079286.json:
 ```json
 {
-    "body": "Attachment\n\nFix an issue with sage 4.6.2",
+    "body": "Attachment [fix-siegel](tarball://root/attachments/some-uuid/ticket8701/fix-siegel) by tornaria created at 2011-04-22 21:13:12\n\nFix an issue with sage 4.6.2",
     "created_at": "2011-04-22T21:13:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8701",
     "type": "issue_comment",
@@ -266,7 +266,7 @@ archive/issue_comments_079286.json:
 }
 ```
 
-Attachment
+Attachment [fix-siegel](tarball://root/attachments/some-uuid/ticket8701/fix-siegel) by tornaria created at 2011-04-22 21:13:12
 
 Fix an issue with sage 4.6.2
 
@@ -295,7 +295,7 @@ Have the constructor coerce the coefficients into the ring they're supposed to b
 archive/issue_comments_079288.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [fix-coeffs-in-ring](tarball://root/attachments/some-uuid/ticket8701/fix-coeffs-in-ring) by novoselt created at 2011-05-20 16:32:37",
     "created_at": "2011-05-20T16:32:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8701",
     "type": "issue_comment",
@@ -304,7 +304,7 @@ archive/issue_comments_079288.json:
 }
 ```
 
-Attachment
+Attachment [fix-coeffs-in-ring](tarball://root/attachments/some-uuid/ticket8701/fix-coeffs-in-ring) by novoselt created at 2011-05-20 16:32:37
 
 
 
@@ -313,7 +313,7 @@ Attachment
 archive/issue_comments_079289.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8701_siegel_rebased.patch](tarball://root/attachments/some-uuid/ticket8701/trac_8701_siegel_rebased.patch) by chapoton created at 2013-09-01 12:18:09",
     "created_at": "2013-09-01T12:18:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8701",
     "type": "issue_comment",
@@ -322,7 +322,7 @@ archive/issue_comments_079289.json:
 }
 ```
 
-Attachment
+Attachment [trac_8701_siegel_rebased.patch](tarball://root/attachments/some-uuid/ticket8701/trac_8701_siegel_rebased.patch) by chapoton created at 2013-09-01 12:18:09
 
 
 
@@ -371,7 +371,7 @@ apply only trac_8701_siegel_folded_v1.patch
 archive/issue_comments_079292.json:
 ```json
 {
-    "body": "Attachment\n\napply only trac_8701_siegel_folded_v1.patch",
+    "body": "Attachment [trac_8701_siegel_folded_v1.patch](tarball://root/attachments/some-uuid/ticket8701/trac_8701_siegel_folded_v1.patch) by chapoton created at 2013-09-06 19:18:51\n\napply only trac_8701_siegel_folded_v1.patch",
     "created_at": "2013-09-06T19:18:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8701",
     "type": "issue_comment",
@@ -380,7 +380,7 @@ archive/issue_comments_079292.json:
 }
 ```
 
-Attachment
+Attachment [trac_8701_siegel_folded_v1.patch](tarball://root/attachments/some-uuid/ticket8701/trac_8701_siegel_folded_v1.patch) by chapoton created at 2013-09-06 19:18:51
 
 apply only trac_8701_siegel_folded_v1.patch
 

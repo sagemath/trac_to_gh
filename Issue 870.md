@@ -94,7 +94,7 @@ malb's temporary solution
 archive/issue_comments_005365.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [GNUmakefile.in](tarball://root/attachments/some-uuid/ticket870/GNUmakefile.in) by was created at 2007-10-13 07:37:25",
     "created_at": "2007-10-13T07:37:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/870",
     "type": "issue_comment",
@@ -103,7 +103,7 @@ archive/issue_comments_005365.json:
 }
 ```
 
-Attachment
+Attachment [GNUmakefile.in](tarball://root/attachments/some-uuid/ticket870/GNUmakefile.in) by was created at 2007-10-13 07:37:25
 
 
 

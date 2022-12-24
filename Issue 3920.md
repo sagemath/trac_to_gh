@@ -87,7 +87,7 @@ Just a short comment: could you put back in the matrix() and vector() functions 
 archive/issue_comments_028040.json:
 ```json
 {
-    "body": "Attachment\n\nSince you use \"\\code\" in the docstring for vector and matrix, the docstrings need to start with r\"\"\" instead of \"\"\".  Patch attached.",
+    "body": "Attachment [vector_matrix.patch](tarball://root/attachments/some-uuid/ticket3920/vector_matrix.patch) by jhpalmieri created at 2008-10-17 21:25:37\n\nSince you use \"\\code\" in the docstring for vector and matrix, the docstrings need to start with r\"\"\" instead of \"\"\".  Patch attached.",
     "created_at": "2008-10-17T21:25:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3920",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_028040.json:
 }
 ```
 
-Attachment
+Attachment [vector_matrix.patch](tarball://root/attachments/some-uuid/ticket3920/vector_matrix.patch) by jhpalmieri created at 2008-10-17 21:25:37
 
 Since you use "\code" in the docstring for vector and matrix, the docstrings need to start with r""" instead of """.  Patch attached.
 
@@ -107,7 +107,7 @@ Since you use "\code" in the docstring for vector and matrix, the docstrings nee
 archive/issue_comments_028041.json:
 ```json
 {
-    "body": "Attachment\n\napply after malb's patch",
+    "body": "Attachment [10736.patch](tarball://root/attachments/some-uuid/ticket3920/10736.patch) by jhpalmieri created at 2008-10-17 21:25:55\n\napply after malb's patch",
     "created_at": "2008-10-17T21:25:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3920",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_028041.json:
 }
 ```
 
-Attachment
+Attachment [10736.patch](tarball://root/attachments/some-uuid/ticket3920/10736.patch) by jhpalmieri created at 2008-10-17 21:25:55
 
 apply after malb's patch
 

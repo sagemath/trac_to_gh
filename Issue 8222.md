@@ -51,7 +51,7 @@ this is a very ugly first draft
 archive/issue_comments_072566.json:
 ```json
 {
-    "body": "Attachment\n\na quick test (gets reverted in following patch)",
+    "body": "Attachment [8222.patch](tarball://root/attachments/some-uuid/ticket8222/8222.patch) by kevinc created at 2010-03-09 19:46:00\n\na quick test (gets reverted in following patch)",
     "created_at": "2010-03-09T19:46:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8222",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_072566.json:
 }
 ```
 
-Attachment
+Attachment [8222.patch](tarball://root/attachments/some-uuid/ticket8222/8222.patch) by kevinc created at 2010-03-09 19:46:00
 
 a quick test (gets reverted in following patch)
 
@@ -71,7 +71,7 @@ a quick test (gets reverted in following patch)
 archive/issue_comments_072567.json:
 ```json
 {
-    "body": "Attachment\n\ncleaned up code, added orientation slider and auto maximize checkbox",
+    "body": "Attachment [8222-part2.patch](tarball://root/attachments/some-uuid/ticket8222/8222-part2.patch) by kevinc created at 2010-03-09 19:47:35\n\ncleaned up code, added orientation slider and auto maximize checkbox",
     "created_at": "2010-03-09T19:47:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8222",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_072567.json:
 }
 ```
 
-Attachment
+Attachment [8222-part2.patch](tarball://root/attachments/some-uuid/ticket8222/8222-part2.patch) by kevinc created at 2010-03-09 19:47:35
 
 cleaned up code, added orientation slider and auto maximize checkbox
 
@@ -91,7 +91,7 @@ cleaned up code, added orientation slider and auto maximize checkbox
 archive/issue_comments_072568.json:
 ```json
 {
-    "body": "Attachment\n\nFixed crashes when calling graph_editor for graphs with multiple components or fewer than 4 vertices, increased graph editor size.",
+    "body": "Attachment [8222-part4.patch](tarball://root/attachments/some-uuid/ticket8222/8222-part4.patch) by kevinc created at 2010-03-09 20:11:50\n\nFixed crashes when calling graph_editor for graphs with multiple components or fewer than 4 vertices, increased graph editor size.",
     "created_at": "2010-03-09T20:11:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8222",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_072568.json:
 }
 ```
 
-Attachment
+Attachment [8222-part4.patch](tarball://root/attachments/some-uuid/ticket8222/8222-part4.patch) by kevinc created at 2010-03-09 20:11:50
 
 Fixed crashes when calling graph_editor for graphs with multiple components or fewer than 4 vertices, increased graph editor size.
 
@@ -189,7 +189,7 @@ Changing status from new to needs_work.
 archive/issue_comments_072573.json:
 ```json
 {
-    "body": "Attachment\n\nGreat work! I loved the spring-electric layout with auto-max (that's how I imagined it all along). Everything worked as expect, so the patch is basically ready to go. However, since we are making basically an User Interface, I have some comments on the design decisions.\n\nI am mostly guided by the mantra that passing UI decisions to the user is not a solution. We should man up and fix the most useful behavior that 99% of users will use (and maybe add the sliders hidden behind a \"tweak\" button or skip them all together).\n\n\n- Correct me if wrong but Live with auto-max, spring-el. and default sliders give exactly what I expect on 99% of the graphs. I suggest we make this default (and get rid or hide everything else).\n\n\n- Similarly, I see no reason for live behavior that shoots vertices out of screen. Link auto-max along with live. At the same time, when graph is paused (not live) auto-max should be off.\n\n\n- Numbering for vertices should be off by default (graph theorists seldom number their vertices).\n\n\n- I see only two useful vertex sizes, one for unnumbered vertices and one for numbered. The vertex size slider can be skipped (or hidder by \"tweaks\" button).\n\n\n- Unnumbered vertices should be filled black.\n\n\n- There should be a warning (use JS confirm) with circle layout, since it can potentially destroy a carefully planned layout and there is no undo.\n\nRado",
+    "body": "Attachment [8222-big.patch](tarball://root/attachments/some-uuid/ticket8222/8222-big.patch) by rkirov created at 2010-03-22 00:08:07\n\nGreat work! I loved the spring-electric layout with auto-max (that's how I imagined it all along). Everything worked as expect, so the patch is basically ready to go. However, since we are making basically an User Interface, I have some comments on the design decisions.\n\nI am mostly guided by the mantra that passing UI decisions to the user is not a solution. We should man up and fix the most useful behavior that 99% of users will use (and maybe add the sliders hidden behind a \"tweak\" button or skip them all together).\n\n\n- Correct me if wrong but Live with auto-max, spring-el. and default sliders give exactly what I expect on 99% of the graphs. I suggest we make this default (and get rid or hide everything else).\n\n\n- Similarly, I see no reason for live behavior that shoots vertices out of screen. Link auto-max along with live. At the same time, when graph is paused (not live) auto-max should be off.\n\n\n- Numbering for vertices should be off by default (graph theorists seldom number their vertices).\n\n\n- I see only two useful vertex sizes, one for unnumbered vertices and one for numbered. The vertex size slider can be skipped (or hidder by \"tweaks\" button).\n\n\n- Unnumbered vertices should be filled black.\n\n\n- There should be a warning (use JS confirm) with circle layout, since it can potentially destroy a carefully planned layout and there is no undo.\n\nRado",
     "created_at": "2010-03-22T00:08:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8222",
     "type": "issue_comment",
@@ -198,7 +198,7 @@ archive/issue_comments_072573.json:
 }
 ```
 
-Attachment
+Attachment [8222-big.patch](tarball://root/attachments/some-uuid/ticket8222/8222-big.patch) by rkirov created at 2010-03-22 00:08:07
 
 Great work! I loved the spring-electric layout with auto-max (that's how I imagined it all along). Everything worked as expect, so the patch is basically ready to go. However, since we are making basically an User Interface, I have some comments on the design decisions.
 
@@ -249,7 +249,7 @@ I have implemented my vision (all of the comments above) at http://www.math.uiuc
 archive/issue_comments_072575.json:
 ```json
 {
-    "body": "Attachment\n\ncontains kevin's code, my improvements and the new processing library.",
+    "body": "Attachment [8222-sagenb.patch](tarball://root/attachments/some-uuid/ticket8222/8222-sagenb.patch) by rkirov created at 2010-03-23 04:53:32\n\ncontains kevin's code, my improvements and the new processing library.",
     "created_at": "2010-03-23T04:53:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8222",
     "type": "issue_comment",
@@ -258,7 +258,7 @@ archive/issue_comments_072575.json:
 }
 ```
 
-Attachment
+Attachment [8222-sagenb.patch](tarball://root/attachments/some-uuid/ticket8222/8222-sagenb.patch) by rkirov created at 2010-03-23 04:53:32
 
 contains kevin's code, my improvements and the new processing library.
 
@@ -269,7 +269,7 @@ contains kevin's code, my improvements and the new processing library.
 archive/issue_comments_072576.json:
 ```json
 {
-    "body": "Attachment\n\ncontains kevin's patch, and my JSON-fication of the graph editor code",
+    "body": "Attachment [8222-sage.patch](tarball://root/attachments/some-uuid/ticket8222/8222-sage.patch) by rkirov created at 2010-03-23 04:54:23\n\ncontains kevin's patch, and my JSON-fication of the graph editor code",
     "created_at": "2010-03-23T04:54:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8222",
     "type": "issue_comment",
@@ -278,7 +278,7 @@ archive/issue_comments_072576.json:
 }
 ```
 
-Attachment
+Attachment [8222-sage.patch](tarball://root/attachments/some-uuid/ticket8222/8222-sage.patch) by rkirov created at 2010-03-23 04:54:23
 
 contains kevin's patch, and my JSON-fication of the graph editor code
 
@@ -356,7 +356,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_072580.json:
 ```json
 {
-    "body": "Attachment\n\nHi Rob,\n\nYou are the second person complaining for the sagenb patch so I probably made the wrong patch. So I erased my sagenb folder, pasted the new code and made a new patch. Try 8222-sagenb-mega.patch. It has everything to make the graph_editor look like the one on my website. Also has fix for the loop bug you found, which the old one didn't have.\n\nThere is a hg repo for the notebook, you don't need to recreate anything. Just extract and go to /sagenb-0.7.5.3/src/sagenb . Now all your \"hg patch\" commands should work.\n\nHere is a summary of everything needed to make this run:\n1) apply 8222-sage.patch to Sage.\n2) untar sagenb (with tar -xvf sagenb-0.7.5.3.spgk)\n3) apply 8222-sagenb-mega.patch in sagenb-0.7.5.3/src/sagenb with \"hg patch 8222-sagenb-mega.patch\"\n4) run SAGEPATH/sage -python setup.py -develop in sagenb-0.7.5.3/src/sagenb\n5) run sage and enjoy!\n\nRado",
+    "body": "Attachment [8222-sagenb-mega.patch](tarball://root/attachments/some-uuid/ticket8222/8222-sagenb-mega.patch) by rkirov created at 2010-03-26 21:09:35\n\nHi Rob,\n\nYou are the second person complaining for the sagenb patch so I probably made the wrong patch. So I erased my sagenb folder, pasted the new code and made a new patch. Try 8222-sagenb-mega.patch. It has everything to make the graph_editor look like the one on my website. Also has fix for the loop bug you found, which the old one didn't have.\n\nThere is a hg repo for the notebook, you don't need to recreate anything. Just extract and go to /sagenb-0.7.5.3/src/sagenb . Now all your \"hg patch\" commands should work.\n\nHere is a summary of everything needed to make this run:\n1) apply 8222-sage.patch to Sage.\n2) untar sagenb (with tar -xvf sagenb-0.7.5.3.spgk)\n3) apply 8222-sagenb-mega.patch in sagenb-0.7.5.3/src/sagenb with \"hg patch 8222-sagenb-mega.patch\"\n4) run SAGEPATH/sage -python setup.py -develop in sagenb-0.7.5.3/src/sagenb\n5) run sage and enjoy!\n\nRado",
     "created_at": "2010-03-26T21:09:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8222",
     "type": "issue_comment",
@@ -365,7 +365,7 @@ archive/issue_comments_072580.json:
 }
 ```
 
-Attachment
+Attachment [8222-sagenb-mega.patch](tarball://root/attachments/some-uuid/ticket8222/8222-sagenb-mega.patch) by rkirov created at 2010-03-26 21:09:35
 
 Hi Rob,
 
@@ -481,7 +481,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_072585.json:
 ```json
 {
-    "body": "Attachment\n\nHi Rob,\n\nI was waiting to see what Kevin has to say (since I basically took his code and tweaked with my personal preferences, without consulting with him). However, I haven't heard back from him. You are right we should add some type checking.\n\nI wanted to remove auto-maximize, but since it has Kevin's original work, I wanted to hear back from him. Are you in favor of removing it? If nobody else, says something, I will just make final patch with:\n\n1) removed red-edges\n2) removed buttons for maximize and auto-maximize\n3) switch delete to keyboard 'd'\n\non the sage side:\n\n1) add type checking\n2) incorporate pang's patch (thanks for patch, that was very sloppy of me)\n\nThen Rob can review it and have the new (in my opinion much superior version of graph editor) in Sage.",
+    "body": "Attachment [8222-removed-duplicate-line.patch](tarball://root/attachments/some-uuid/ticket8222/8222-removed-duplicate-line.patch) by rkirov created at 2010-04-03 17:14:07\n\nHi Rob,\n\nI was waiting to see what Kevin has to say (since I basically took his code and tweaked with my personal preferences, without consulting with him). However, I haven't heard back from him. You are right we should add some type checking.\n\nI wanted to remove auto-maximize, but since it has Kevin's original work, I wanted to hear back from him. Are you in favor of removing it? If nobody else, says something, I will just make final patch with:\n\n1) removed red-edges\n2) removed buttons for maximize and auto-maximize\n3) switch delete to keyboard 'd'\n\non the sage side:\n\n1) add type checking\n2) incorporate pang's patch (thanks for patch, that was very sloppy of me)\n\nThen Rob can review it and have the new (in my opinion much superior version of graph editor) in Sage.",
     "created_at": "2010-04-03T17:14:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8222",
     "type": "issue_comment",
@@ -490,7 +490,7 @@ archive/issue_comments_072585.json:
 }
 ```
 
-Attachment
+Attachment [8222-removed-duplicate-line.patch](tarball://root/attachments/some-uuid/ticket8222/8222-removed-duplicate-line.patch) by rkirov created at 2010-04-03 17:14:07
 
 Hi Rob,
 
@@ -560,7 +560,7 @@ Rob
 archive/issue_comments_072587.json:
 ```json
 {
-    "body": "Attachment\n\nrequires 8222-sage.patch contains type check and pang's patch",
+    "body": "Attachment [8222-sage-2.patch](tarball://root/attachments/some-uuid/ticket8222/8222-sage-2.patch) by rkirov created at 2010-04-04 07:36:06\n\nrequires 8222-sage.patch contains type check and pang's patch",
     "created_at": "2010-04-04T07:36:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8222",
     "type": "issue_comment",
@@ -569,7 +569,7 @@ archive/issue_comments_072587.json:
 }
 ```
 
-Attachment
+Attachment [8222-sage-2.patch](tarball://root/attachments/some-uuid/ticket8222/8222-sage-2.patch) by rkirov created at 2010-04-04 07:36:06
 
 requires 8222-sage.patch contains type check and pang's patch
 
@@ -598,7 +598,7 @@ requires 8222-sagenb-mega.patch , has rob's suggested improvements
 archive/issue_comments_072589.json:
 ```json
 {
-    "body": "Attachment\n\nall ready for review",
+    "body": "Attachment [8222-sagenb-2.patch](tarball://root/attachments/some-uuid/ticket8222/8222-sagenb-2.patch) by rkirov created at 2010-04-04 07:41:30\n\nall ready for review",
     "created_at": "2010-04-04T07:41:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8222",
     "type": "issue_comment",
@@ -607,7 +607,7 @@ archive/issue_comments_072589.json:
 }
 ```
 
-Attachment
+Attachment [8222-sagenb-2.patch](tarball://root/attachments/some-uuid/ticket8222/8222-sagenb-2.patch) by rkirov created at 2010-04-04 07:41:30
 
 all ready for review
 
@@ -654,7 +654,7 @@ Dialog string change
 archive/issue_comments_072592.json:
 ```json
 {
-    "body": "Attachment\n\nAll-in-one patch for notebook code",
+    "body": "Attachment [trac_8222-reviewer.patch](tarball://root/attachments/some-uuid/ticket8222/trac_8222-reviewer.patch) by rbeezer created at 2010-04-15 05:28:54\n\nAll-in-one patch for notebook code",
     "created_at": "2010-04-15T05:28:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8222",
     "type": "issue_comment",
@@ -663,7 +663,7 @@ archive/issue_comments_072592.json:
 }
 ```
 
-Attachment
+Attachment [trac_8222-reviewer.patch](tarball://root/attachments/some-uuid/ticket8222/trac_8222-reviewer.patch) by rbeezer created at 2010-04-15 05:28:54
 
 All-in-one patch for notebook code
 
@@ -674,7 +674,7 @@ All-in-one patch for notebook code
 archive/issue_comments_072593.json:
 ```json
 {
-    "body": "Attachment\n\nAll-in-one patch for sage library",
+    "body": "Attachment [trac_8222-sagenb-graph-editor.patch](tarball://root/attachments/some-uuid/ticket8222/trac_8222-sagenb-graph-editor.patch) by rbeezer created at 2010-04-15 05:29:31\n\nAll-in-one patch for sage library",
     "created_at": "2010-04-15T05:29:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8222",
     "type": "issue_comment",
@@ -683,7 +683,7 @@ archive/issue_comments_072593.json:
 }
 ```
 
-Attachment
+Attachment [trac_8222-sagenb-graph-editor.patch](tarball://root/attachments/some-uuid/ticket8222/trac_8222-sagenb-graph-editor.patch) by rbeezer created at 2010-04-15 05:29:31
 
 All-in-one patch for sage library
 
@@ -694,7 +694,7 @@ All-in-one patch for sage library
 archive/issue_comments_072594.json:
 ```json
 {
-    "body": "Attachment\n\nGreat improvements!  The \"live\" layout works great, and I really like the way dragging a vertex against the edge makes it appear to bounce off the wall.  Turning off auto-maximize was a good idea, I think.\n\nTested with 4.3.4 and sagenb-0.7.5.1.  sagenb was updated with all patches available to date.\n\nPasses all tests in sage/graphs, HTML docs build without warnings.\n\nI have added a reviewer patch.  There was a misspelling on the dialog warning about the circular layout change and while I was there I made a little change to the tail end of the string.  the patch file is just to make it easy to see the change.\n\nThere are also two new comprehensive patches, wrapping everything up (including reviewer patch).  Apply `trac_8222-sagenb-graph-editor.patch` to the notebook code and apply `trac_8222-sage-graph-editor.patch` to the sage library repo.\n\nRado - This is all ready for a positive review, subject to approval of the reviewer patch.  Have a look at that, and if everything looks OK with the combined patches, please mark this as positive review and add yourself as an author.  Great work! - Rob",
+    "body": "Attachment [trac_8222-sage-graph-editor.patch](tarball://root/attachments/some-uuid/ticket8222/trac_8222-sage-graph-editor.patch) by rbeezer created at 2010-04-15 05:33:24\n\nGreat improvements!  The \"live\" layout works great, and I really like the way dragging a vertex against the edge makes it appear to bounce off the wall.  Turning off auto-maximize was a good idea, I think.\n\nTested with 4.3.4 and sagenb-0.7.5.1.  sagenb was updated with all patches available to date.\n\nPasses all tests in sage/graphs, HTML docs build without warnings.\n\nI have added a reviewer patch.  There was a misspelling on the dialog warning about the circular layout change and while I was there I made a little change to the tail end of the string.  the patch file is just to make it easy to see the change.\n\nThere are also two new comprehensive patches, wrapping everything up (including reviewer patch).  Apply `trac_8222-sagenb-graph-editor.patch` to the notebook code and apply `trac_8222-sage-graph-editor.patch` to the sage library repo.\n\nRado - This is all ready for a positive review, subject to approval of the reviewer patch.  Have a look at that, and if everything looks OK with the combined patches, please mark this as positive review and add yourself as an author.  Great work! - Rob",
     "created_at": "2010-04-15T05:33:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8222",
     "type": "issue_comment",
@@ -703,7 +703,7 @@ archive/issue_comments_072594.json:
 }
 ```
 
-Attachment
+Attachment [trac_8222-sage-graph-editor.patch](tarball://root/attachments/some-uuid/ticket8222/trac_8222-sage-graph-editor.patch) by rbeezer created at 2010-04-15 05:33:24
 
 Great improvements!  The "live" layout works great, and I really like the way dragging a vertex against the edge makes it appear to bounce off the wall.  Turning off auto-maximize was a good idea, I think.
 

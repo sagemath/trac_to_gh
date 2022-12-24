@@ -105,7 +105,7 @@ A patch of Craig that's applied before padicpoly.
 archive/issue_comments_048423.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [padicpoly.patch](tarball://root/attachments/some-uuid/ticket6084/padicpoly.patch) by roed created at 2009-05-21 06:58:35",
     "created_at": "2009-05-21T06:58:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_048423.json:
 }
 ```
 
-Attachment
+Attachment [padicpoly.patch](tarball://root/attachments/some-uuid/ticket6084/padicpoly.patch) by roed created at 2009-05-21 06:58:35
 
 
 
@@ -123,7 +123,7 @@ Attachment
 archive/issue_comments_048424.json:
 ```json
 {
-    "body": "Attachment\n\nA patch of Craig's needed for the rest to apply cleanly",
+    "body": "Attachment [powser-part1.2.patch](tarball://root/attachments/some-uuid/ticket6084/powser-part1.2.patch) by roed created at 2009-05-26 21:58:29\n\nA patch of Craig's needed for the rest to apply cleanly",
     "created_at": "2009-05-26T21:58:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
@@ -132,7 +132,7 @@ archive/issue_comments_048424.json:
 }
 ```
 
-Attachment
+Attachment [powser-part1.2.patch](tarball://root/attachments/some-uuid/ticket6084/powser-part1.2.patch) by roed created at 2009-05-26 21:58:29
 
 A patch of Craig's needed for the rest to apply cleanly
 
@@ -143,7 +143,7 @@ A patch of Craig's needed for the rest to apply cleanly
 archive/issue_comments_048425.json:
 ```json
 {
-    "body": "Attachment\n\nFixes aimed at ticket 5075",
+    "body": "Attachment [trac_5075.patch](tarball://root/attachments/some-uuid/ticket6084/trac_5075.patch) by roed created at 2009-05-26 21:59:00\n\nFixes aimed at ticket 5075",
     "created_at": "2009-05-26T21:59:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
@@ -152,7 +152,7 @@ archive/issue_comments_048425.json:
 }
 ```
 
-Attachment
+Attachment [trac_5075.patch](tarball://root/attachments/some-uuid/ticket6084/trac_5075.patch) by roed created at 2009-05-26 21:59:00
 
 Fixes aimed at ticket 5075
 
@@ -163,7 +163,7 @@ Fixes aimed at ticket 5075
 archive/issue_comments_048426.json:
 ```json
 {
-    "body": "Attachment\n\nChanges outside sage.rings.padics and sage.rings.polynomial.padics",
+    "body": "Attachment [padicpoly_outside.patch](tarball://root/attachments/some-uuid/ticket6084/padicpoly_outside.patch) by roed created at 2009-05-26 22:00:08\n\nChanges outside sage.rings.padics and sage.rings.polynomial.padics",
     "created_at": "2009-05-26T22:00:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
@@ -172,7 +172,7 @@ archive/issue_comments_048426.json:
 }
 ```
 
-Attachment
+Attachment [padicpoly_outside.patch](tarball://root/attachments/some-uuid/ticket6084/padicpoly_outside.patch) by roed created at 2009-05-26 22:00:08
 
 Changes outside sage.rings.padics and sage.rings.polynomial.padics
 
@@ -183,7 +183,7 @@ Changes outside sage.rings.padics and sage.rings.polynomial.padics
 archive/issue_comments_048427.json:
 ```json
 {
-    "body": "Attachment\n\nChanges in sage.rings.padics",
+    "body": "Attachment [padicpoly_ring_padic.patch](tarball://root/attachments/some-uuid/ticket6084/padicpoly_ring_padic.patch) by roed created at 2009-05-26 22:00:36\n\nChanges in sage.rings.padics",
     "created_at": "2009-05-26T22:00:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
@@ -192,7 +192,7 @@ archive/issue_comments_048427.json:
 }
 ```
 
-Attachment
+Attachment [padicpoly_ring_padic.patch](tarball://root/attachments/some-uuid/ticket6084/padicpoly_ring_padic.patch) by roed created at 2009-05-26 22:00:36
 
 Changes in sage.rings.padics
 
@@ -203,7 +203,7 @@ Changes in sage.rings.padics
 archive/issue_comments_048428.json:
 ```json
 {
-    "body": "Attachment\n\nNew files in sage.rings.polynomial.padics",
+    "body": "Attachment [padicpoly_new.patch](tarball://root/attachments/some-uuid/ticket6084/padicpoly_new.patch) by roed created at 2009-05-26 22:00:56\n\nNew files in sage.rings.polynomial.padics",
     "created_at": "2009-05-26T22:00:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
@@ -212,7 +212,7 @@ archive/issue_comments_048428.json:
 }
 ```
 
-Attachment
+Attachment [padicpoly_new.patch](tarball://root/attachments/some-uuid/ticket6084/padicpoly_new.patch) by roed created at 2009-05-26 22:00:56
 
 New files in sage.rings.polynomial.padics
 
@@ -241,7 +241,7 @@ Apply after other patches
 archive/issue_comments_048430.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [padicpoly_update1.patch](tarball://root/attachments/some-uuid/ticket6084/padicpoly_update1.patch) by roed created at 2009-06-08 18:34:56",
     "created_at": "2009-06-08T18:34:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
@@ -250,7 +250,7 @@ archive/issue_comments_048430.json:
 }
 ```
 
-Attachment
+Attachment [padicpoly_update1.patch](tarball://root/attachments/some-uuid/ticket6084/padicpoly_update1.patch) by roed created at 2009-06-08 18:34:56
 
 
 
@@ -313,7 +313,7 @@ Yep.  I started working on this again a week and a half ago.  I'm currently fixi
 archive/issue_comments_048434.json:
 ```json
 {
-    "body": "Attachment\n\nShould apply against 4.3.2 and build; there are still doctest failures.",
+    "body": "Attachment [6084_ALL.patch](tarball://root/attachments/some-uuid/ticket6084/6084_ALL.patch) by roed created at 2010-02-23 17:58:54\n\nShould apply against 4.3.2 and build; there are still doctest failures.",
     "created_at": "2010-02-23T17:58:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
@@ -322,7 +322,7 @@ archive/issue_comments_048434.json:
 }
 ```
 
-Attachment
+Attachment [6084_ALL.patch](tarball://root/attachments/some-uuid/ticket6084/6084_ALL.patch) by roed created at 2010-02-23 17:58:54
 
 Should apply against 4.3.2 and build; there are still doctest failures.
 
@@ -450,7 +450,7 @@ Indeed, I'd be happy to help :)
 archive/issue_comments_048441.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6084_2.patch](tarball://root/attachments/some-uuid/ticket6084/6084_2.patch) by roed created at 2011-06-10 15:07:01",
     "created_at": "2011-06-10T15:07:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
@@ -459,7 +459,7 @@ archive/issue_comments_048441.json:
 }
 ```
 
-Attachment
+Attachment [6084_2.patch](tarball://root/attachments/some-uuid/ticket6084/6084_2.patch) by roed created at 2011-06-10 15:07:01
 
 
 
@@ -468,7 +468,7 @@ Attachment
 archive/issue_comments_048442.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6084_3.patch](tarball://root/attachments/some-uuid/ticket6084/6084_3.patch) by roed created at 2011-06-10 15:07:12",
     "created_at": "2011-06-10T15:07:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
@@ -477,7 +477,7 @@ archive/issue_comments_048442.json:
 }
 ```
 
-Attachment
+Attachment [6084_3.patch](tarball://root/attachments/some-uuid/ticket6084/6084_3.patch) by roed created at 2011-06-10 15:07:12
 
 
 
@@ -486,7 +486,7 @@ Attachment
 archive/issue_comments_048443.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6084_4.patch](tarball://root/attachments/some-uuid/ticket6084/6084_4.patch) by roed created at 2011-06-10 15:07:31",
     "created_at": "2011-06-10T15:07:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
@@ -495,7 +495,7 @@ archive/issue_comments_048443.json:
 }
 ```
 
-Attachment
+Attachment [6084_4.patch](tarball://root/attachments/some-uuid/ticket6084/6084_4.patch) by roed created at 2011-06-10 15:07:31
 
 
 
@@ -504,7 +504,7 @@ Attachment
 archive/issue_comments_048444.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6084_5.patch](tarball://root/attachments/some-uuid/ticket6084/6084_5.patch) by roed created at 2011-06-10 15:07:40",
     "created_at": "2011-06-10T15:07:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
@@ -513,7 +513,7 @@ archive/issue_comments_048444.json:
 }
 ```
 
-Attachment
+Attachment [6084_5.patch](tarball://root/attachments/some-uuid/ticket6084/6084_5.patch) by roed created at 2011-06-10 15:07:40
 
 
 
@@ -522,7 +522,7 @@ Attachment
 archive/issue_comments_048445.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6084_7.patch](tarball://root/attachments/some-uuid/ticket6084/6084_7.patch) by roed created at 2011-06-10 15:07:52",
     "created_at": "2011-06-10T15:07:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
@@ -531,7 +531,7 @@ archive/issue_comments_048445.json:
 }
 ```
 
-Attachment
+Attachment [6084_7.patch](tarball://root/attachments/some-uuid/ticket6084/6084_7.patch) by roed created at 2011-06-10 15:07:52
 
 
 
@@ -540,7 +540,7 @@ Attachment
 archive/issue_comments_048446.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6084_8.patch](tarball://root/attachments/some-uuid/ticket6084/6084_8.patch) by roed created at 2011-06-10 15:08:37",
     "created_at": "2011-06-10T15:08:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
@@ -549,7 +549,7 @@ archive/issue_comments_048446.json:
 }
 ```
 
-Attachment
+Attachment [6084_8.patch](tarball://root/attachments/some-uuid/ticket6084/6084_8.patch) by roed created at 2011-06-10 15:08:37
 
 
 
@@ -558,7 +558,7 @@ Attachment
 archive/issue_comments_048447.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6084_10.patch](tarball://root/attachments/some-uuid/ticket6084/6084_10.patch) by roed created at 2011-06-10 15:08:50",
     "created_at": "2011-06-10T15:08:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
@@ -567,7 +567,7 @@ archive/issue_comments_048447.json:
 }
 ```
 
-Attachment
+Attachment [6084_10.patch](tarball://root/attachments/some-uuid/ticket6084/6084_10.patch) by roed created at 2011-06-10 15:08:50
 
 
 
@@ -728,7 +728,7 @@ I'll write more about the contents of the individual patches and some more of th
 archive/issue_comments_048453.json:
 ```json
 {
-    "body": "Attachment\n\nReplaces 6084_1.patch",
+    "body": "Attachment [6084_1.2.patch](tarball://root/attachments/some-uuid/ticket6084/6084_1.2.patch) by roed created at 2011-06-12 20:28:26\n\nReplaces 6084_1.patch",
     "created_at": "2011-06-12T20:28:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
@@ -737,7 +737,7 @@ archive/issue_comments_048453.json:
 }
 ```
 
-Attachment
+Attachment [6084_1.2.patch](tarball://root/attachments/some-uuid/ticket6084/6084_1.2.patch) by roed created at 2011-06-12 20:28:26
 
 Replaces 6084_1.patch
 
@@ -748,7 +748,7 @@ Replaces 6084_1.patch
 archive/issue_comments_048454.json:
 ```json
 {
-    "body": "Attachment\n\nReplaces 6084_2.patch",
+    "body": "Attachment [6084_2.2.patch](tarball://root/attachments/some-uuid/ticket6084/6084_2.2.patch) by roed created at 2011-06-12 20:28:44\n\nReplaces 6084_2.patch",
     "created_at": "2011-06-12T20:28:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
@@ -757,7 +757,7 @@ archive/issue_comments_048454.json:
 }
 ```
 
-Attachment
+Attachment [6084_2.2.patch](tarball://root/attachments/some-uuid/ticket6084/6084_2.2.patch) by roed created at 2011-06-12 20:28:44
 
 Replaces 6084_2.patch
 
@@ -786,7 +786,7 @@ Replaces 6084_5.patch
 archive/issue_comments_048456.json:
 ```json
 {
-    "body": "Attachment\n\nReplaces 6084_6.patch",
+    "body": "Attachment [6084_5.2.patch](tarball://root/attachments/some-uuid/ticket6084/6084_5.2.patch) by roed created at 2011-06-12 20:29:30\n\nReplaces 6084_6.patch",
     "created_at": "2011-06-12T20:29:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
@@ -795,7 +795,7 @@ archive/issue_comments_048456.json:
 }
 ```
 
-Attachment
+Attachment [6084_5.2.patch](tarball://root/attachments/some-uuid/ticket6084/6084_5.2.patch) by roed created at 2011-06-12 20:29:30
 
 Replaces 6084_6.patch
 
@@ -806,7 +806,7 @@ Replaces 6084_6.patch
 archive/issue_comments_048457.json:
 ```json
 {
-    "body": "Attachment\n\nReplaces 6084_7.patch",
+    "body": "Attachment [6084_7.2.patch](tarball://root/attachments/some-uuid/ticket6084/6084_7.2.patch) by roed created at 2011-06-12 20:29:59\n\nReplaces 6084_7.patch",
     "created_at": "2011-06-12T20:29:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
@@ -815,7 +815,7 @@ archive/issue_comments_048457.json:
 }
 ```
 
-Attachment
+Attachment [6084_7.2.patch](tarball://root/attachments/some-uuid/ticket6084/6084_7.2.patch) by roed created at 2011-06-12 20:29:59
 
 Replaces 6084_7.patch
 
@@ -826,7 +826,7 @@ Replaces 6084_7.patch
 archive/issue_comments_048458.json:
 ```json
 {
-    "body": "Attachment\n\nReplaces 6084_8.patch",
+    "body": "Attachment [6084_8.2.patch](tarball://root/attachments/some-uuid/ticket6084/6084_8.2.patch) by roed created at 2011-06-12 20:30:25\n\nReplaces 6084_8.patch",
     "created_at": "2011-06-12T20:30:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
@@ -835,7 +835,7 @@ archive/issue_comments_048458.json:
 }
 ```
 
-Attachment
+Attachment [6084_8.2.patch](tarball://root/attachments/some-uuid/ticket6084/6084_8.2.patch) by roed created at 2011-06-12 20:30:25
 
 Replaces 6084_8.patch
 
@@ -864,7 +864,7 @@ Replaces 6084_9.patch
 archive/issue_comments_048460.json:
 ```json
 {
-    "body": "Attachment\n\nReplaces 6084_10.patch",
+    "body": "Attachment [6084_9.2.patch](tarball://root/attachments/some-uuid/ticket6084/6084_9.2.patch) by roed created at 2011-06-12 20:31:06\n\nReplaces 6084_10.patch",
     "created_at": "2011-06-12T20:31:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
@@ -873,7 +873,7 @@ archive/issue_comments_048460.json:
 }
 ```
 
-Attachment
+Attachment [6084_9.2.patch](tarball://root/attachments/some-uuid/ticket6084/6084_9.2.patch) by roed created at 2011-06-12 20:31:06
 
 Replaces 6084_10.patch
 
@@ -884,7 +884,7 @@ Replaces 6084_10.patch
 archive/issue_comments_048461.json:
 ```json
 {
-    "body": "Attachment\n\nCollects all patches in the .2 revision.  Only apply this patch",
+    "body": "Attachment [6084_10.2.patch](tarball://root/attachments/some-uuid/ticket6084/6084_10.2.patch) by roed created at 2011-06-12 20:31:56\n\nCollects all patches in the .2 revision.  Only apply this patch",
     "created_at": "2011-06-12T20:31:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
@@ -893,7 +893,7 @@ archive/issue_comments_048461.json:
 }
 ```
 
-Attachment
+Attachment [6084_10.2.patch](tarball://root/attachments/some-uuid/ticket6084/6084_10.2.patch) by roed created at 2011-06-12 20:31:56
 
 Collects all patches in the .2 revision.  Only apply this patch
 
@@ -904,7 +904,7 @@ Collects all patches in the .2 revision.  Only apply this patch
 archive/issue_comments_048462.json:
 ```json
 {
-    "body": "Attachment\n\nShould apply against 4.7.1.alpha4.  One can apply only 6084_ALL.2.patch, with the rest existing so that one can view code on trac.\n\nThe breakdown into patches is not the best, but here's a description.\nPatch 1: Some changes to polynomials and power series to allow leading terms that are indistinguishable from 0.\nPatch 2: Original changes outside both sage.rings.padics and sage.rings.polynomial.\nPatch 3: Changes to sage.rings.padics\nPatch 4: The new code in sage.rings.polynomial\nPatch 5: A small change to polynomial_ring_constructor to allow arbitrary kwds to be passed on to polynomial ring __init__ methods.\nPatch 6: First update, bugfixes\nPatch 7: Second update, bugfixes\nPatch 8: Third update, bugfixes\nPatch 9: Fourth update, bugfixes\nPatch 10: Removing an ill-advised attempt to use fmpz_montgomery types to speed up computations for polynomials over Zp with p odd.\n\nIf reviewers would like, I can split up the ALL patch into more reasonable chunks.  Suggestions are welcome.  Bugs still remain, which I will continue to hunt down.",
+    "body": "Attachment [6084_ALL.2.patch](tarball://root/attachments/some-uuid/ticket6084/6084_ALL.2.patch) by roed created at 2011-06-12 20:39:41\n\nShould apply against 4.7.1.alpha4.  One can apply only 6084_ALL.2.patch, with the rest existing so that one can view code on trac.\n\nThe breakdown into patches is not the best, but here's a description.\nPatch 1: Some changes to polynomials and power series to allow leading terms that are indistinguishable from 0.\nPatch 2: Original changes outside both sage.rings.padics and sage.rings.polynomial.\nPatch 3: Changes to sage.rings.padics\nPatch 4: The new code in sage.rings.polynomial\nPatch 5: A small change to polynomial_ring_constructor to allow arbitrary kwds to be passed on to polynomial ring __init__ methods.\nPatch 6: First update, bugfixes\nPatch 7: Second update, bugfixes\nPatch 8: Third update, bugfixes\nPatch 9: Fourth update, bugfixes\nPatch 10: Removing an ill-advised attempt to use fmpz_montgomery types to speed up computations for polynomials over Zp with p odd.\n\nIf reviewers would like, I can split up the ALL patch into more reasonable chunks.  Suggestions are welcome.  Bugs still remain, which I will continue to hunt down.",
     "created_at": "2011-06-12T20:39:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
@@ -913,7 +913,7 @@ archive/issue_comments_048462.json:
 }
 ```
 
-Attachment
+Attachment [6084_ALL.2.patch](tarball://root/attachments/some-uuid/ticket6084/6084_ALL.2.patch) by roed created at 2011-06-12 20:39:41
 
 Should apply against 4.7.1.alpha4.  One can apply only 6084_ALL.2.patch, with the rest existing so that one can view code on trac.
 

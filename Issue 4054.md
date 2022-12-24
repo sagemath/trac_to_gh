@@ -91,7 +91,7 @@ Michael
 archive/issue_comments_029223.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4054-long_docs.patch](tarball://root/attachments/some-uuid/ticket4054/trac_4054-long_docs.patch) by rlm created at 2008-09-04 22:54:41",
     "created_at": "2008-09-04T22:54:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4054",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_029223.json:
 }
 ```
 
-Attachment
+Attachment [trac_4054-long_docs.patch](tarball://root/attachments/some-uuid/ticket4054/trac_4054-long_docs.patch) by rlm created at 2008-09-04 22:54:41
 
 
 

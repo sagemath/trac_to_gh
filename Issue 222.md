@@ -82,7 +82,7 @@ Resolution: fixed
 archive/issue_comments_000993.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac222.patch](tarball://root/attachments/some-uuid/ticket222/trac222.patch) by mabshoff created at 2007-10-22 00:03:54",
     "created_at": "2007-10-22T00:03:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/222",
     "type": "issue_comment",
@@ -91,4 +91,4 @@ archive/issue_comments_000993.json:
 }
 ```
 
-Attachment
+Attachment [trac222.patch](tarball://root/attachments/some-uuid/ticket222/trac222.patch) by mabshoff created at 2007-10-22 00:03:54

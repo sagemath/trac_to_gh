@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9269
 archive/issue_comments_087303.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9269.patch](tarball://root/attachments/some-uuid/ticket9269/trac_9269.patch) by rlm created at 2010-06-18 22:50:21",
     "created_at": "2010-06-18T22:50:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9269",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_087303.json:
 }
 ```
 
-Attachment
+Attachment [trac_9269.patch](tarball://root/attachments/some-uuid/ticket9269/trac_9269.patch) by rlm created at 2010-06-18 22:50:21
 
 
 
@@ -69,7 +69,7 @@ Changing status from new to needs_review.
 archive/issue_comments_087305.json:
 ```json
 {
-    "body": "Attachment\n\nWhy has CPLEX been removed from some tags and not others?",
+    "body": "Attachment [trac_9269-part2.patch](tarball://root/attachments/some-uuid/ticket9269/trac_9269-part2.patch) by jhpalmieri created at 2010-06-19 18:12:19\n\nWhy has CPLEX been removed from some tags and not others?",
     "created_at": "2010-06-19T18:12:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9269",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_087305.json:
 }
 ```
 
-Attachment
+Attachment [trac_9269-part2.patch](tarball://root/attachments/some-uuid/ticket9269/trac_9269-part2.patch) by jhpalmieri created at 2010-06-19 18:12:19
 
 Why has CPLEX been removed from some tags and not others?
 

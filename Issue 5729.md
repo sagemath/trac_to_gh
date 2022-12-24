@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5729
 archive/issue_comments_044761.json:
 ```json
 {
-    "body": "Attachment\n\nchanged according to Nicolas' suggestions",
+    "body": "Attachment [crystal-cleanup-track.patch](tarball://root/attachments/some-uuid/ticket5729/crystal-cleanup-track.patch) by aschilling created at 2009-04-10 01:19:31\n\nchanged according to Nicolas' suggestions",
     "created_at": "2009-04-10T01:19:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5729",
     "type": "issue_comment",
@@ -43,7 +43,7 @@ archive/issue_comments_044761.json:
 }
 ```
 
-Attachment
+Attachment [crystal-cleanup-track.patch](tarball://root/attachments/some-uuid/ticket5729/crystal-cleanup-track.patch) by aschilling created at 2009-04-10 01:19:31
 
 changed according to Nicolas' suggestions
 
@@ -54,7 +54,7 @@ changed according to Nicolas' suggestions
 archive/issue_comments_044762.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [crystal-5729-track.patch](tarball://root/attachments/some-uuid/ticket5729/crystal-5729-track.patch) by aschilling created at 2009-04-10 02:09:14",
     "created_at": "2009-04-10T02:09:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5729",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_044762.json:
 }
 ```
 
-Attachment
+Attachment [crystal-5729-track.patch](tarball://root/attachments/some-uuid/ticket5729/crystal-5729-track.patch) by aschilling created at 2009-04-10 02:09:14
 
 
 
@@ -72,7 +72,7 @@ Attachment
 archive/issue_comments_044763.json:
 ```json
 {
-    "body": "Attachment\n\nFinal version of the patch uploaded:\n- fixes 2/3 remaining calls to parent() \n- Micro doc improvements",
+    "body": "Attachment [crystal-5729-track.2.patch](tarball://root/attachments/some-uuid/ticket5729/crystal-5729-track.2.patch) by nthiery created at 2009-04-10 05:49:20\n\nFinal version of the patch uploaded:\n- fixes 2/3 remaining calls to parent() \n- Micro doc improvements",
     "created_at": "2009-04-10T05:49:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5729",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_044763.json:
 }
 ```
 
-Attachment
+Attachment [crystal-5729-track.2.patch](tarball://root/attachments/some-uuid/ticket5729/crystal-5729-track.2.patch) by nthiery created at 2009-04-10 05:49:20
 
 Final version of the patch uploaded:
 - fixes 2/3 remaining calls to parent() 

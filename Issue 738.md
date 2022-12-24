@@ -90,7 +90,7 @@ Changing status from new to assigned.
 archive/issue_comments_004324.json:
 ```json
 {
-    "body": "Attachment\n\nfixes this bug",
+    "body": "Attachment [patch-738.hg](tarball://root/attachments/some-uuid/ticket738/patch-738.hg) by dmharvey created at 2007-09-23 21:36:49\n\nfixes this bug",
     "created_at": "2007-09-23T21:36:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/738",
     "type": "issue_comment",
@@ -99,7 +99,7 @@ archive/issue_comments_004324.json:
 }
 ```
 
-Attachment
+Attachment [patch-738.hg](tarball://root/attachments/some-uuid/ticket738/patch-738.hg) by dmharvey created at 2007-09-23 21:36:49
 
 fixes this bug
 

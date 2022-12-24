@@ -145,7 +145,7 @@ based on Sage 4.3.5
 archive/issue_comments_079233.json:
 ```json
 {
-    "body": "Attachment\n\nThanks, Simon... ;-)\n\nI think what's at all meant by \"Notebook\" has to be explained, too. A typical German reader would first think of his laptop, not a user interface (which is funny if not annoying in the translation of the user guide when talking about `ssh_keygen`...).\n\nIt would be nice if you could supply a patch on top of Minh's.\n\n-Leif",
+    "body": "Attachment [trac_8698-tour-de.patch](tarball://root/attachments/some-uuid/ticket8698/trac_8698-tour-de.patch) by leif created at 2010-04-19 02:22:59\n\nThanks, Simon... ;-)\n\nI think what's at all meant by \"Notebook\" has to be explained, too. A typical German reader would first think of his laptop, not a user interface (which is funny if not annoying in the translation of the user guide when talking about `ssh_keygen`...).\n\nIt would be nice if you could supply a patch on top of Minh's.\n\n-Leif",
     "created_at": "2010-04-19T02:22:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8698",
     "type": "issue_comment",
@@ -154,7 +154,7 @@ archive/issue_comments_079233.json:
 }
 ```
 
-Attachment
+Attachment [trac_8698-tour-de.patch](tarball://root/attachments/some-uuid/ticket8698/trac_8698-tour-de.patch) by leif created at 2010-04-19 02:22:59
 
 Thanks, Simon... ;-)
 
@@ -189,7 +189,7 @@ Adding a section on the notebook; adding the missing plots; some proof reading
 archive/issue_comments_079235.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:5 leif]:\n> I think what's at all meant by \"Notebook\" has to be explained, too. \n\nGood idea (and perhaps it would make sense to have this in English, too).\n\n> It would be nice if you could supply a patch on top of Minh's.\n\nDone. \n\nMy patch adds a section on the notebook (I hope I didn't write too much nonsense, because I hardly ever use the notebook) and the two png-plots that were missing.\n\nMinh: Is it OK to first finish this ticket off before focusing on #8660? Or should the two tickets be united at an earlier stage?\n\nBest regards, Simon",
+    "body": "Attachment [trac_8698-tour-de-sage_reviewer.patch](tarball://root/attachments/some-uuid/ticket8698/trac_8698-tour-de-sage_reviewer.patch) by SimonKing created at 2010-04-19 09:20:20\n\nReplying to [comment:5 leif]:\n> I think what's at all meant by \"Notebook\" has to be explained, too. \n\nGood idea (and perhaps it would make sense to have this in English, too).\n\n> It would be nice if you could supply a patch on top of Minh's.\n\nDone. \n\nMy patch adds a section on the notebook (I hope I didn't write too much nonsense, because I hardly ever use the notebook) and the two png-plots that were missing.\n\nMinh: Is it OK to first finish this ticket off before focusing on #8660? Or should the two tickets be united at an earlier stage?\n\nBest regards, Simon",
     "created_at": "2010-04-19T09:20:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8698",
     "type": "issue_comment",
@@ -198,7 +198,7 @@ archive/issue_comments_079235.json:
 }
 ```
 
-Attachment
+Attachment [trac_8698-tour-de-sage_reviewer.patch](tarball://root/attachments/some-uuid/ticket8698/trac_8698-tour-de-sage_reviewer.patch) by SimonKing created at 2010-04-19 09:20:20
 
 Replying to [comment:5 leif]:
 > I think what's at all meant by "Notebook" has to be explained, too. 

@@ -51,7 +51,7 @@ brief info on the .spkg extension
 archive/issue_comments_033374.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch **trac_4504.patch** creates a new file to briefly explain Sage's .spkg files. It also contains pointers to more info on the structure of Sage packages. It was created using sage-3.1.4 and the new file to be created by this patch should be\n\n```\nSAGE_ROOT/spkg/README.txt\n```\n",
+    "body": "Attachment [trac_4504.patch](tarball://root/attachments/some-uuid/ticket4504/trac_4504.patch) by mvngu created at 2008-11-12 23:00:07\n\nThe patch **trac_4504.patch** creates a new file to briefly explain Sage's .spkg files. It also contains pointers to more info on the structure of Sage packages. It was created using sage-3.1.4 and the new file to be created by this patch should be\n\n```\nSAGE_ROOT/spkg/README.txt\n```\n",
     "created_at": "2008-11-12T23:00:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4504",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_033374.json:
 }
 ```
 
-Attachment
+Attachment [trac_4504.patch](tarball://root/attachments/some-uuid/ticket4504/trac_4504.patch) by mvngu created at 2008-11-12 23:00:07
 
 The patch **trac_4504.patch** creates a new file to briefly explain Sage's .spkg files. It also contains pointers to more info on the structure of Sage packages. It was created using sage-3.1.4 and the new file to be created by this patch should be
 
@@ -305,7 +305,7 @@ BTW --- if you have a sage src distro, just issue "sage -bdist my_version" and a
 archive/issue_comments_033385.json:
 ```json
 {
-    "body": "Attachment\n\nexplain .spkg files for source distros",
+    "body": "Attachment [trac_4504-spkg-src.tex](tarball://root/attachments/some-uuid/ticket4504/trac_4504-spkg-src.tex) by mvngu created at 2008-12-06 01:50:25\n\nexplain .spkg files for source distros",
     "created_at": "2008-12-06T01:50:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4504",
     "type": "issue_comment",
@@ -314,7 +314,7 @@ archive/issue_comments_033385.json:
 }
 ```
 
-Attachment
+Attachment [trac_4504-spkg-src.tex](tarball://root/attachments/some-uuid/ticket4504/trac_4504-spkg-src.tex) by mvngu created at 2008-12-06 01:50:25
 
 explain .spkg files for source distros
 
@@ -343,7 +343,7 @@ explain .spkg for binary distros
 archive/issue_comments_033387.json:
 ```json
 {
-    "body": "Attachment\n\nThe files **trac_4504-spkg-src.tex** and **trac_4504-spkg-bin.tex** are readme files that briefly explain Sage's .spkg extensions. Due to some stupidity on my part, I named them with the \".tex\" extension and forgot to change the \".tex\" to \".txt\". Sorry folks.\n\n\n\nThe file **trac_4504-spkg-src.tex** gives some brief explanation about files with the .spkg extension as part of their name. That is, **trac_4504-spkg-src.tex** is a replacement for **trac_4504.patch**, so we can ignore **trac_4504.patch**. For source distributions of Sage, **trac_4504-spkg-src.tex** should be renamed to \"README.txt\" and placed under the directory `SAGE_ROOT/spkg` or somewhere under that directory tree.\n\n\n\nThe file **trac_4504-spkg-bin.tex** gives some brief explanation about the empty .spkg files found in binary distributions of Sage. For binary distributions of Sage, **trac_4504-spkg-bin.tex** should be renamed to \"README.txt\" and placed under the directory `SAGE_ROOT/spkg` or somewhere under that directory tree.",
+    "body": "Attachment [trac_4504-spkg-bin.tex](tarball://root/attachments/some-uuid/ticket4504/trac_4504-spkg-bin.tex) by mvngu created at 2008-12-06 02:08:59\n\nThe files **trac_4504-spkg-src.tex** and **trac_4504-spkg-bin.tex** are readme files that briefly explain Sage's .spkg extensions. Due to some stupidity on my part, I named them with the \".tex\" extension and forgot to change the \".tex\" to \".txt\". Sorry folks.\n\n\n\nThe file **trac_4504-spkg-src.tex** gives some brief explanation about files with the .spkg extension as part of their name. That is, **trac_4504-spkg-src.tex** is a replacement for **trac_4504.patch**, so we can ignore **trac_4504.patch**. For source distributions of Sage, **trac_4504-spkg-src.tex** should be renamed to \"README.txt\" and placed under the directory `SAGE_ROOT/spkg` or somewhere under that directory tree.\n\n\n\nThe file **trac_4504-spkg-bin.tex** gives some brief explanation about the empty .spkg files found in binary distributions of Sage. For binary distributions of Sage, **trac_4504-spkg-bin.tex** should be renamed to \"README.txt\" and placed under the directory `SAGE_ROOT/spkg` or somewhere under that directory tree.",
     "created_at": "2008-12-06T02:08:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4504",
     "type": "issue_comment",
@@ -352,7 +352,7 @@ archive/issue_comments_033387.json:
 }
 ```
 
-Attachment
+Attachment [trac_4504-spkg-bin.tex](tarball://root/attachments/some-uuid/ticket4504/trac_4504-spkg-bin.tex) by mvngu created at 2008-12-06 02:08:59
 
 The files **trac_4504-spkg-src.tex** and **trac_4504-spkg-bin.tex** are readme files that briefly explain Sage's .spkg extensions. Due to some stupidity on my part, I named them with the ".tex" extension and forgot to change the ".tex" to ".txt". Sorry folks.
 
@@ -435,7 +435,7 @@ In a source install, these are all Sage spkg files (actually .tar or .tar.bz2 fi
 archive/issue_comments_033389.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4504_scripts_sdist.patch](tarball://root/attachments/some-uuid/ticket4504/trac_4504_scripts_sdist.patch) by was created at 2008-12-06 21:50:24",
     "created_at": "2008-12-06T21:50:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4504",
     "type": "issue_comment",
@@ -444,7 +444,7 @@ archive/issue_comments_033389.json:
 }
 ```
 
-Attachment
+Attachment [trac_4504_scripts_sdist.patch](tarball://root/attachments/some-uuid/ticket4504/trac_4504_scripts_sdist.patch) by was created at 2008-12-06 21:50:24
 
 
 
@@ -707,7 +707,7 @@ updated 2nd draft
 archive/issue_comments_033401.json:
 ```json
 {
-    "body": "Attachment\n\nThe file **trac_4504-draft2.txt** is an updated 2nd draft to reflect changes in where the standard documentation is now located since Sage 3.4.",
+    "body": "Attachment [trac_4504-draft2.txt](tarball://root/attachments/some-uuid/ticket4504/trac_4504-draft2.txt) by mvngu created at 2009-03-24 09:31:08\n\nThe file **trac_4504-draft2.txt** is an updated 2nd draft to reflect changes in where the standard documentation is now located since Sage 3.4.",
     "created_at": "2009-03-24T09:31:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4504",
     "type": "issue_comment",
@@ -716,7 +716,7 @@ archive/issue_comments_033401.json:
 }
 ```
 
-Attachment
+Attachment [trac_4504-draft2.txt](tarball://root/attachments/some-uuid/ticket4504/trac_4504-draft2.txt) by mvngu created at 2009-03-24 09:31:08
 
 The file **trac_4504-draft2.txt** is an updated 2nd draft to reflect changes in where the standard documentation is now located since Sage 3.4.
 

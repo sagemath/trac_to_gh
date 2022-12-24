@@ -55,7 +55,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1558
 archive/issue_comments_009930.json:
 ```json
 {
-    "body": "Attachment\n\na patch with better decision process for pari or ntl",
+    "body": "Attachment [uni-factoring-ntl.patch](tarball://root/attachments/some-uuid/ticket1558/uni-factoring-ntl.patch) by jbmohler created at 2007-12-19 19:51:48\n\na patch with better decision process for pari or ntl",
     "created_at": "2007-12-19T19:51:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1558",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_009930.json:
 }
 ```
 
-Attachment
+Attachment [uni-factoring-ntl.patch](tarball://root/attachments/some-uuid/ticket1558/uni-factoring-ntl.patch) by jbmohler created at 2007-12-19 19:51:48
 
 a patch with better decision process for pari or ntl
 

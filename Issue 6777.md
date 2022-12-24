@@ -164,7 +164,7 @@ Patch to add a doctest expecting a TypeError
 archive/issue_comments_055825.json:
 ```json
 {
-    "body": "Attachment\n\nmjo's patch looks good to me.  I updated the formatting slightly.",
+    "body": "Attachment [sage-trac_6777.patch](tarball://root/attachments/some-uuid/ticket6777/sage-trac_6777.patch) by mhansen created at 2011-12-17 20:55:16\n\nmjo's patch looks good to me.  I updated the formatting slightly.",
     "created_at": "2011-12-17T20:55:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6777",
     "type": "issue_comment",
@@ -173,7 +173,7 @@ archive/issue_comments_055825.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac_6777.patch](tarball://root/attachments/some-uuid/ticket6777/sage-trac_6777.patch) by mhansen created at 2011-12-17 20:55:16
 
 mjo's patch looks good to me.  I updated the formatting slightly.
 

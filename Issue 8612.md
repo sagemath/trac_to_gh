@@ -68,7 +68,7 @@ Changing status from new to needs_review.
 archive/issue_comments_078035.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8612.patch](tarball://root/attachments/some-uuid/ticket8612/trac_8612.patch) by was created at 2010-03-26 05:51:05",
     "created_at": "2010-03-26T05:51:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8612",
     "type": "issue_comment",
@@ -77,7 +77,7 @@ archive/issue_comments_078035.json:
 }
 ```
 
-Attachment
+Attachment [trac_8612.patch](tarball://root/attachments/some-uuid/ticket8612/trac_8612.patch) by was created at 2010-03-26 05:51:05
 
 
 
@@ -146,7 +146,7 @@ I've posted a part2 patch that fixes the issue you've pointed out.
 archive/issue_comments_078038.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8612-part2.patch](tarball://root/attachments/some-uuid/ticket8612/trac_8612-part2.patch) by was created at 2010-03-29 04:30:33",
     "created_at": "2010-03-29T04:30:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8612",
     "type": "issue_comment",
@@ -155,7 +155,7 @@ archive/issue_comments_078038.json:
 }
 ```
 
-Attachment
+Attachment [trac_8612-part2.patch](tarball://root/attachments/some-uuid/ticket8612/trac_8612-part2.patch) by was created at 2010-03-29 04:30:33
 
 
 
@@ -258,7 +258,7 @@ Resolution: fixed
 archive/issue_comments_078044.json:
 ```json
 {
-    "body": "Attachment\n\nMerged into sage-4.3.5",
+    "body": "Attachment [trac_8612_multimodular_echelon.patch](tarball://root/attachments/some-uuid/ticket8612/trac_8612_multimodular_echelon.patch) by was created at 2010-03-29 22:06:58\n\nMerged into sage-4.3.5",
     "created_at": "2010-03-29T22:06:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8612",
     "type": "issue_comment",
@@ -267,6 +267,6 @@ archive/issue_comments_078044.json:
 }
 ```
 
-Attachment
+Attachment [trac_8612_multimodular_echelon.patch](tarball://root/attachments/some-uuid/ticket8612/trac_8612_multimodular_echelon.patch) by was created at 2010-03-29 22:06:58
 
 Merged into sage-4.3.5

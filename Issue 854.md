@@ -49,7 +49,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/854
 archive/issue_comments_005295.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-2.8.6-fix-memleak-in-MultiModularBasis.patch](tarball://root/attachments/some-uuid/ticket854/Sage-2.8.6-fix-memleak-in-MultiModularBasis.patch) by mabshoff created at 2007-10-12 01:03:42",
     "created_at": "2007-10-12T01:03:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/854",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_005295.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.8.6-fix-memleak-in-MultiModularBasis.patch](tarball://root/attachments/some-uuid/ticket854/Sage-2.8.6-fix-memleak-in-MultiModularBasis.patch) by mabshoff created at 2007-10-12 01:03:42
 
 
 

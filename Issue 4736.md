@@ -50,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4736
 archive/issue_comments_035757.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4736_bin.patch](tarball://root/attachments/some-uuid/ticket4736/trac_4736_bin.patch) by gfurnish created at 2008-12-07 05:47:46",
     "created_at": "2008-12-07T05:47:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4736",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_035757.json:
 }
 ```
 
-Attachment
+Attachment [trac_4736_bin.patch](tarball://root/attachments/some-uuid/ticket4736/trac_4736_bin.patch) by gfurnish created at 2008-12-07 05:47:46
 
 
 
@@ -147,7 +147,7 @@ Michael
 archive/issue_comments_035760.json:
 ```json
 {
-    "body": "Attachment\n\nApply on top of existing patch.",
+    "body": "Attachment [trac_4736_2_bin.patch](tarball://root/attachments/some-uuid/ticket4736/trac_4736_2_bin.patch) by gfurnish created at 2008-12-08 22:28:47\n\nApply on top of existing patch.",
     "created_at": "2008-12-08T22:28:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4736",
     "type": "issue_comment",
@@ -156,7 +156,7 @@ archive/issue_comments_035760.json:
 }
 ```
 
-Attachment
+Attachment [trac_4736_2_bin.patch](tarball://root/attachments/some-uuid/ticket4736/trac_4736_2_bin.patch) by gfurnish created at 2008-12-08 22:28:47
 
 Apply on top of existing patch.
 

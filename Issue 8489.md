@@ -52,7 +52,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8489
 archive/issue_comments_076538.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8489-sagetex_sageexample-nt.patch](tarball://root/attachments/some-uuid/ticket8489/trac_8489-sagetex_sageexample-nt.patch) by nthiery created at 2010-03-10 15:25:44",
     "created_at": "2010-03-10T15:25:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8489",
     "type": "issue_comment",
@@ -61,7 +61,7 @@ archive/issue_comments_076538.json:
 }
 ```
 
-Attachment
+Attachment [trac_8489-sagetex_sageexample-nt.patch](tarball://root/attachments/some-uuid/ticket8489/trac_8489-sagetex_sageexample-nt.patch) by nthiery created at 2010-03-10 15:25:44
 
 
 
@@ -70,7 +70,7 @@ Attachment
 archive/issue_comments_076539.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [example-sageexample.pdf](tarball://root/attachments/some-uuid/ticket8489/example-sageexample.pdf) by nthiery created at 2010-03-10 15:27:06",
     "created_at": "2010-03-10T15:27:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8489",
     "type": "issue_comment",
@@ -79,7 +79,7 @@ archive/issue_comments_076539.json:
 }
 ```
 
-Attachment
+Attachment [example-sageexample.pdf](tarball://root/attachments/some-uuid/ticket8489/example-sageexample.pdf) by nthiery created at 2010-03-10 15:27:06
 
 
 
@@ -106,7 +106,7 @@ Changing status from new to needs_review.
 archive/issue_comments_076541.json:
 ```json
 {
-    "body": "Attachment\n\nClone of the current spkg, with patch applied, but version number not bumped up",
+    "body": "Attachment [sagetex-2.2.3.p0.spkg](tarball://root/attachments/some-uuid/ticket8489/sagetex-2.2.3.p0.spkg) by nthiery created at 2010-03-10 15:41:28\n\nClone of the current spkg, with patch applied, but version number not bumped up",
     "created_at": "2010-03-10T15:41:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8489",
     "type": "issue_comment",
@@ -115,7 +115,7 @@ archive/issue_comments_076541.json:
 }
 ```
 
-Attachment
+Attachment [sagetex-2.2.3.p0.spkg](tarball://root/attachments/some-uuid/ticket8489/sagetex-2.2.3.p0.spkg) by nthiery created at 2010-03-10 15:41:28
 
 Clone of the current spkg, with patch applied, but version number not bumped up
 
@@ -247,7 +247,7 @@ Yeah, just reusing my_file.sage looked cool, and worked on trivial examples, but
 archive/issue_comments_076548.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [doctest-spacing-nt.patch](tarball://root/attachments/some-uuid/ticket8489/doctest-spacing-nt.patch) by nthiery created at 2010-03-17 23:34:17",
     "created_at": "2010-03-17T23:34:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8489",
     "type": "issue_comment",
@@ -256,7 +256,7 @@ archive/issue_comments_076548.json:
 }
 ```
 
-Attachment
+Attachment [doctest-spacing-nt.patch](tarball://root/attachments/some-uuid/ticket8489/doctest-spacing-nt.patch) by nthiery created at 2010-03-17 23:34:17
 
 
 
@@ -378,7 +378,7 @@ Example of quotes changed to backquotes in PDF
 archive/issue_comments_076554.json:
 ```json
 {
-    "body": "Attachment\n\nddrake: what do you say about the last comment about quotes being changed?",
+    "body": "Attachment [test.pdf](tarball://root/attachments/some-uuid/ticket8489/test.pdf) by jason created at 2010-04-15 02:28:57\n\nddrake: what do you say about the last comment about quotes being changed?",
     "created_at": "2010-04-15T02:28:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8489",
     "type": "issue_comment",
@@ -387,7 +387,7 @@ archive/issue_comments_076554.json:
 }
 ```
 
-Attachment
+Attachment [test.pdf](tarball://root/attachments/some-uuid/ticket8489/test.pdf) by jason created at 2010-04-15 02:28:57
 
 ddrake: what do you say about the last comment about quotes being changed?
 

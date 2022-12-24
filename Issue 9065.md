@@ -225,7 +225,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_084128.json:
 ```json
 {
-    "body": "Attachment\n\nFixed another trivial failing test in a separate file. Hopefuly the last one!\n\nFlorent just checked it, and is ok to leave the positive review.",
+    "body": "Attachment [trac_9065-facade_parents-nt.patch](tarball://root/attachments/some-uuid/ticket9065/trac_9065-facade_parents-nt.patch) by nthiery created at 2011-04-26 04:34:27\n\nFixed another trivial failing test in a separate file. Hopefuly the last one!\n\nFlorent just checked it, and is ok to leave the positive review.",
     "created_at": "2011-04-26T04:34:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9065",
     "type": "issue_comment",
@@ -234,7 +234,7 @@ archive/issue_comments_084128.json:
 }
 ```
 
-Attachment
+Attachment [trac_9065-facade_parents-nt.patch](tarball://root/attachments/some-uuid/ticket9065/trac_9065-facade_parents-nt.patch) by nthiery created at 2011-04-26 04:34:27
 
 Fixed another trivial failing test in a separate file. Hopefuly the last one!
 

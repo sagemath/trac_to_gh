@@ -67,7 +67,7 @@ Changing assignee from was to robertwb.
 archive/issue_comments_009479.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [extcode-3d-cmd.hg](tarball://root/attachments/some-uuid/ticket1473/extcode-3d-cmd.hg) by robertwb created at 2007-12-14 06:27:28",
     "created_at": "2007-12-14T06:27:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1473",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_009479.json:
 }
 ```
 
-Attachment
+Attachment [extcode-3d-cmd.hg](tarball://root/attachments/some-uuid/ticket1473/extcode-3d-cmd.hg) by robertwb created at 2007-12-14 06:27:28
 
 
 
@@ -85,7 +85,7 @@ Attachment
 archive/issue_comments_009480.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-main-3d-cmd.hg](tarball://root/attachments/some-uuid/ticket1473/sage-main-3d-cmd.hg) by robertwb created at 2007-12-14 09:32:10",
     "created_at": "2007-12-14T09:32:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1473",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_009480.json:
 }
 ```
 
-Attachment
+Attachment [sage-main-3d-cmd.hg](tarball://root/attachments/some-uuid/ticket1473/sage-main-3d-cmd.hg) by robertwb created at 2007-12-14 09:32:10
 
 
 
@@ -103,7 +103,7 @@ Attachment
 archive/issue_comments_009481.json:
 ```json
 {
-    "body": "Attachment\n\nThis works fine for me.",
+    "body": "Attachment [extcode-java3d-update.diff](tarball://root/attachments/some-uuid/ticket1473/extcode-java3d-update.diff) by was created at 2007-12-15 07:37:41\n\nThis works fine for me.",
     "created_at": "2007-12-15T07:37:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1473",
     "type": "issue_comment",
@@ -112,7 +112,7 @@ archive/issue_comments_009481.json:
 }
 ```
 
-Attachment
+Attachment [extcode-java3d-update.diff](tarball://root/attachments/some-uuid/ticket1473/extcode-java3d-update.diff) by was created at 2007-12-15 07:37:41
 
 This works fine for me.
 

@@ -36,7 +36,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7458
 archive/issue_comments_062820.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sylvester.patch](tarball://root/attachments/some-uuid/ticket7458/sylvester.patch) by lftabera created at 2010-11-06 11:47:07",
     "created_at": "2010-11-06T11:47:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7458",
     "type": "issue_comment",
@@ -45,7 +45,7 @@ archive/issue_comments_062820.json:
 }
 ```
 
-Attachment
+Attachment [sylvester.patch](tarball://root/attachments/some-uuid/ticket7458/sylvester.patch) by lftabera created at 2010-11-06 11:47:07
 
 
 
@@ -72,7 +72,7 @@ Changing status from new to needs_work.
 archive/issue_comments_062822.json:
 ```json
 {
-    "body": "Attachment\n\nThis is a very basic feature that has to be in Sage.\n\nI have rebased Carlo patch to 4.6  but have not touched the code.\n\nI have some concerns that makes me mark the patch as needs work:\n\n- The univariate case should accept the same syntax as the multivariate case. In the univariate case, the preferred call is f.sylvester_matrix(g), but I do not want Sage to throw an error if I wrote f.sylvester_matrix(g, x)\n\n- Corner cases must be well documented. \n\n\n```\nsage: K.<x>=QQ[]\nsage: K(1).sylvester_matrix(K(1))\n[]\n```\n\n\nIn particular, I am not sure how to deal with the sylvester matrix of 0 and constant or 0 and 0\nCurretly it throws an error. My opinion is that this is not defined but  should throw a more meaningful error.\n\nMaple for instance return the empty matrix. So in maple:\n\nDeterminant(Sylvester_Matrix)  != Resultant \n\nIn this corner cases.\n\nI will  try to check what other CAS do to get a wider picture.\n\n- An example explicitly relating Sylvester matrix and resultant should be added.",
+    "body": "Attachment [trac-7458-sylvester-rebase-4.6.patch](tarball://root/attachments/some-uuid/ticket7458/trac-7458-sylvester-rebase-4.6.patch) by lftabera created at 2010-11-06 12:06:38\n\nThis is a very basic feature that has to be in Sage.\n\nI have rebased Carlo patch to 4.6  but have not touched the code.\n\nI have some concerns that makes me mark the patch as needs work:\n\n- The univariate case should accept the same syntax as the multivariate case. In the univariate case, the preferred call is f.sylvester_matrix(g), but I do not want Sage to throw an error if I wrote f.sylvester_matrix(g, x)\n\n- Corner cases must be well documented. \n\n\n```\nsage: K.<x>=QQ[]\nsage: K(1).sylvester_matrix(K(1))\n[]\n```\n\n\nIn particular, I am not sure how to deal with the sylvester matrix of 0 and constant or 0 and 0\nCurretly it throws an error. My opinion is that this is not defined but  should throw a more meaningful error.\n\nMaple for instance return the empty matrix. So in maple:\n\nDeterminant(Sylvester_Matrix)  != Resultant \n\nIn this corner cases.\n\nI will  try to check what other CAS do to get a wider picture.\n\n- An example explicitly relating Sylvester matrix and resultant should be added.",
     "created_at": "2010-11-06T12:06:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7458",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_062822.json:
 }
 ```
 
-Attachment
+Attachment [trac-7458-sylvester-rebase-4.6.patch](tarball://root/attachments/some-uuid/ticket7458/trac-7458-sylvester-rebase-4.6.patch) by lftabera created at 2010-11-06 12:06:38
 
 This is a very basic feature that has to be in Sage.
 
@@ -183,7 +183,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_062826.json:
 ```json
 {
-    "body": "Attachment\n\nFinally, if one of the polynomials is zero, the code raises a ValueError.",
+    "body": "Attachment [trac-7458-sylvester-improvements.patch](tarball://root/attachments/some-uuid/ticket7458/trac-7458-sylvester-improvements.patch) by lftabera created at 2010-11-12 13:36:54\n\nFinally, if one of the polynomials is zero, the code raises a ValueError.",
     "created_at": "2010-11-12T13:36:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7458",
     "type": "issue_comment",
@@ -192,7 +192,7 @@ archive/issue_comments_062826.json:
 }
 ```
 
-Attachment
+Attachment [trac-7458-sylvester-improvements.patch](tarball://root/attachments/some-uuid/ticket7458/trac-7458-sylvester-improvements.patch) by lftabera created at 2010-11-12 13:36:54
 
 Finally, if one of the polynomials is zero, the code raises a ValueError.
 

@@ -49,7 +49,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9479
 archive/issue_comments_091002.json:
 ```json
 {
-    "body": "Attachment\n\nthe attached spkg should fix that issue.\n\nPaul",
+    "body": "Attachment [readline-6.2.p4.spkg](tarball://root/attachments/some-uuid/ticket9479/readline-6.2.p4.spkg) by zimmerma created at 2013-08-23 14:39:23\n\nthe attached spkg should fix that issue.\n\nPaul",
     "created_at": "2013-08-23T14:39:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9479",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_091002.json:
 }
 ```
 
-Attachment
+Attachment [readline-6.2.p4.spkg](tarball://root/attachments/some-uuid/ticket9479/readline-6.2.p4.spkg) by zimmerma created at 2013-08-23 14:39:23
 
 the attached spkg should fix that issue.
 

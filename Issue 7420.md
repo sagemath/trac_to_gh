@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7420
 archive/issue_comments_062438.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7420-fix-infinite-coercion-discovery-loop.patch](tarball://root/attachments/some-uuid/ticket7420/trac_7420-fix-infinite-coercion-discovery-loop.patch) by nthiery created at 2009-11-10 00:48:04",
     "created_at": "2009-11-10T00:48:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7420",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_062438.json:
 }
 ```
 
-Attachment
+Attachment [trac_7420-fix-infinite-coercion-discovery-loop.patch](tarball://root/attachments/some-uuid/ticket7420/trac_7420-fix-infinite-coercion-discovery-loop.patch) by nthiery created at 2009-11-10 00:48:04
 
 
 
@@ -172,7 +172,7 @@ This is a variant of the previous patch, using register_pair
 archive/issue_comments_062444.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:3 robertwb]:\n> Yes, calling _register_pair would work here\n\nI gave it a shot, and this works almost fine: all sage tests pass; except that for jack polynomials. Looking at it, it appears that the coercion model is picking a path which is *really* far from the shortest (see the attached log). The previous version was doing reasonably. This sounds like a pure piece of luck though, since in both cases, the strategy seems to be depth first search + limited selection among the first conversions found.\n\nRobert, Mike: from here, I see two options:\n- Either you spot something stupid I did in the second version of the patch, and then we go for it after fixing it.\n- Or we go for the first version of the patch for the moment (after applying Robert's suggestion for better indentation)\n\nIn both cases, after the category patches are in, we should definitely rewrite the coercion lookup to use a breath first search.",
+    "body": "Attachment [trac_7420-fix-infinite-coercion-discovery-loop-2.patch](tarball://root/attachments/some-uuid/ticket7420/trac_7420-fix-infinite-coercion-discovery-loop-2.patch) by nthiery created at 2009-11-11 08:44:48\n\nReplying to [comment:3 robertwb]:\n> Yes, calling _register_pair would work here\n\nI gave it a shot, and this works almost fine: all sage tests pass; except that for jack polynomials. Looking at it, it appears that the coercion model is picking a path which is *really* far from the shortest (see the attached log). The previous version was doing reasonably. This sounds like a pure piece of luck though, since in both cases, the strategy seems to be depth first search + limited selection among the first conversions found.\n\nRobert, Mike: from here, I see two options:\n- Either you spot something stupid I did in the second version of the patch, and then we go for it after fixing it.\n- Or we go for the first version of the patch for the moment (after applying Robert's suggestion for better indentation)\n\nIn both cases, after the category patches are in, we should definitely rewrite the coercion lookup to use a breath first search.",
     "created_at": "2009-11-11T08:44:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7420",
     "type": "issue_comment",
@@ -181,7 +181,7 @@ archive/issue_comments_062444.json:
 }
 ```
 
-Attachment
+Attachment [trac_7420-fix-infinite-coercion-discovery-loop-2.patch](tarball://root/attachments/some-uuid/ticket7420/trac_7420-fix-infinite-coercion-discovery-loop-2.patch) by nthiery created at 2009-11-11 08:44:48
 
 Replying to [comment:3 robertwb]:
 > Yes, calling _register_pair would work here
@@ -201,7 +201,7 @@ In both cases, after the category patches are in, we should definitely rewrite t
 archive/issue_comments_062445.json:
 ```json
 {
-    "body": "Attachment\n\nLog showing a *long* conversion path",
+    "body": "Attachment [log](tarball://root/attachments/some-uuid/ticket7420/log) by nthiery created at 2009-11-11 08:45:21\n\nLog showing a *long* conversion path",
     "created_at": "2009-11-11T08:45:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7420",
     "type": "issue_comment",
@@ -210,7 +210,7 @@ archive/issue_comments_062445.json:
 }
 ```
 
-Attachment
+Attachment [log](tarball://root/attachments/some-uuid/ticket7420/log) by nthiery created at 2009-11-11 08:45:21
 
 Log showing a *long* conversion path
 

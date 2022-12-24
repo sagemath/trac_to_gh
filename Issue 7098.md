@@ -51,7 +51,7 @@ Based on 4.1.2.alpha4
 archive/issue_comments_058739.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [calculus-100.patch](tarball://root/attachments/some-uuid/ticket7098/calculus-100.patch) by kcrisman created at 2009-10-02 16:15:26",
     "created_at": "2009-10-02T16:15:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7098",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_058739.json:
 }
 ```
 
-Attachment
+Attachment [calculus-100.patch](tarball://root/attachments/some-uuid/ticket7098/calculus-100.patch) by kcrisman created at 2009-10-02 16:15:26
 
 
 

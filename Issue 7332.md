@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7332
 archive/issue_comments_061312.json:
 ```json
 {
-    "body": "Attachment\n\nAdds `css_escape` filter and makes `worksheet_listing.html` use it.",
+    "body": "Attachment [trac_7332-css-escape.patch](tarball://root/attachments/some-uuid/ticket7332/trac_7332-css-escape.patch) by timdumol created at 2009-10-28 13:55:47\n\nAdds `css_escape` filter and makes `worksheet_listing.html` use it.",
     "created_at": "2009-10-28T13:55:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7332",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_061312.json:
 }
 ```
 
-Attachment
+Attachment [trac_7332-css-escape.patch](tarball://root/attachments/some-uuid/ticket7332/trac_7332-css-escape.patch) by timdumol created at 2009-10-28 13:55:47
 
 Adds `css_escape` filter and makes `worksheet_listing.html` use it.
 
@@ -91,7 +91,7 @@ Fixed `notebook_lib.js` so that the checkboxes work after the patch.
 archive/issue_comments_061315.json:
 ```json
 {
-    "body": "Attachment\n\nDeepends on #7310.",
+    "body": "Attachment [trac_7332-css-escape.2.patch](tarball://root/attachments/some-uuid/ticket7332/trac_7332-css-escape.2.patch) by timdumol created at 2009-10-29 04:12:52\n\nDeepends on #7310.",
     "created_at": "2009-10-29T04:12:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7332",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_061315.json:
 }
 ```
 
-Attachment
+Attachment [trac_7332-css-escape.2.patch](tarball://root/attachments/some-uuid/ticket7332/trac_7332-css-escape.2.patch) by timdumol created at 2009-10-29 04:12:52
 
 Deepends on #7310.
 
@@ -111,7 +111,7 @@ Deepends on #7310.
 archive/issue_comments_061316.json:
 ```json
 {
-    "body": "Attachment\n\nAlso fix the overall checkbox (\"controlbox\"). Apply only this patch.",
+    "body": "Attachment [trac_7332-css-escape.3.patch](tarball://root/attachments/some-uuid/ticket7332/trac_7332-css-escape.3.patch) by mpatel created at 2009-10-31 08:38:41\n\nAlso fix the overall checkbox (\"controlbox\"). Apply only this patch.",
     "created_at": "2009-10-31T08:38:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7332",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_061316.json:
 }
 ```
 
-Attachment
+Attachment [trac_7332-css-escape.3.patch](tarball://root/attachments/some-uuid/ticket7332/trac_7332-css-escape.3.patch) by mpatel created at 2009-10-31 08:38:41
 
 Also fix the overall checkbox ("controlbox"). Apply only this patch.
 

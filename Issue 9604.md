@@ -117,7 +117,7 @@ updated patch
 archive/issue_comments_093033.json:
 ```json
 {
-    "body": "Attachment\n\nI'll put bugs in front of toric divisors, since they have chances to be settled quickly.",
+    "body": "Attachment [toricvarieties.hg](tarball://root/attachments/some-uuid/ticket9604/toricvarieties.hg) by novoselt created at 2010-08-26 21:35:42\n\nI'll put bugs in front of toric divisors, since they have chances to be settled quickly.",
     "created_at": "2010-08-26T21:35:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9604",
     "type": "issue_comment",
@@ -126,7 +126,7 @@ archive/issue_comments_093033.json:
 }
 ```
 
-Attachment
+Attachment [toricvarieties.hg](tarball://root/attachments/some-uuid/ticket9604/toricvarieties.hg) by novoselt created at 2010-08-26 21:35:42
 
 I'll put bugs in front of toric divisors, since they have chances to be settled quickly.
 

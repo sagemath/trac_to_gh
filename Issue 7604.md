@@ -103,7 +103,7 @@ Changing status from new to needs_review.
 archive/issue_comments_064876.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [contfrac.py](tarball://root/attachments/some-uuid/ticket7604/contfrac.py) by solevillar created at 2009-12-04 16:42:14",
     "created_at": "2009-12-04T16:42:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7604",
     "type": "issue_comment",
@@ -112,7 +112,7 @@ archive/issue_comments_064876.json:
 }
 ```
 
-Attachment
+Attachment [contfrac.py](tarball://root/attachments/some-uuid/ticket7604/contfrac.py) by solevillar created at 2009-12-04 16:42:14
 
 
 
@@ -167,7 +167,7 @@ Use instead
 archive/issue_comments_064879.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.\n\nsolevillar`@`gmail.com, could we get your name for the release notes?  Or, you could updated the Authors field on this ticket.  Thanks!",
+    "body": "Attachment [trac_7604.patch](tarball://root/attachments/some-uuid/ticket7604/trac_7604.patch) by mhansen created at 2009-12-07 08:12:11\n\nLooks good to me.\n\nsolevillar`@`gmail.com, could we get your name for the release notes?  Or, you could updated the Authors field on this ticket.  Thanks!",
     "created_at": "2009-12-07T08:12:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7604",
     "type": "issue_comment",
@@ -176,7 +176,7 @@ archive/issue_comments_064879.json:
 }
 ```
 
-Attachment
+Attachment [trac_7604.patch](tarball://root/attachments/some-uuid/ticket7604/trac_7604.patch) by mhansen created at 2009-12-07 08:12:11
 
 Looks good to me.
 

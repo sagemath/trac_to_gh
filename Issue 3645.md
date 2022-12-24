@@ -55,7 +55,7 @@ archive/issue_comments_025768.json:
 archive/issue_comments_025769.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3645.patch](tarball://root/attachments/some-uuid/ticket3645/3645.patch) by jhpalmieri created at 2008-07-11 22:06:22",
     "created_at": "2008-07-11T22:06:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3645",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_025769.json:
 }
 ```
 
-Attachment
+Attachment [3645.patch](tarball://root/attachments/some-uuid/ticket3645/3645.patch) by jhpalmieri created at 2008-07-11 22:06:22
 
 
 
@@ -91,7 +91,7 @@ Looks good to me!
 archive/issue_comments_025771.json:
 ```json
 {
-    "body": "Attachment\n\nREFEREE REPORT:\n\nI've added a patch that\n1. Note that capital N is a synomym for n?\n2. Note that digits is the number of *decimal* digits?\n\nWith that I give this a positive review. \n\n -- William",
+    "body": "Attachment [doc-3645-part2.patch](tarball://root/attachments/some-uuid/ticket3645/doc-3645-part2.patch) by was created at 2008-07-24 10:36:00\n\nREFEREE REPORT:\n\nI've added a patch that\n1. Note that capital N is a synomym for n?\n2. Note that digits is the number of *decimal* digits?\n\nWith that I give this a positive review. \n\n -- William",
     "created_at": "2008-07-24T10:36:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3645",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_025771.json:
 }
 ```
 
-Attachment
+Attachment [doc-3645-part2.patch](tarball://root/attachments/some-uuid/ticket3645/doc-3645-part2.patch) by was created at 2008-07-24 10:36:00
 
 REFEREE REPORT:
 
@@ -157,7 +157,7 @@ Resolution: fixed
 archive/issue_comments_025774.json:
 ```json
 {
-    "body": "Attachment\n\nMerged 3645-newest.patch in Sage 3.1.alpha0",
+    "body": "Attachment [3645-newest.patch](tarball://root/attachments/some-uuid/ticket3645/3645-newest.patch) by mabshoff created at 2008-07-30 23:21:27\n\nMerged 3645-newest.patch in Sage 3.1.alpha0",
     "created_at": "2008-07-30T23:21:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3645",
     "type": "issue_comment",
@@ -166,6 +166,6 @@ archive/issue_comments_025774.json:
 }
 ```
 
-Attachment
+Attachment [3645-newest.patch](tarball://root/attachments/some-uuid/ticket3645/3645-newest.patch) by mabshoff created at 2008-07-30 23:21:27
 
 Merged 3645-newest.patch in Sage 3.1.alpha0

@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3530
 archive/issue_comments_024896.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [clib_pragmas.patch](tarball://root/attachments/some-uuid/ticket3530/clib_pragmas.patch) by malb created at 2008-06-28 14:45:47",
     "created_at": "2008-06-28T14:45:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3530",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_024896.json:
 }
 ```
 
-Attachment
+Attachment [clib_pragmas.patch](tarball://root/attachments/some-uuid/ticket3530/clib_pragmas.patch) by malb created at 2008-06-28 14:45:47
 
 
 
@@ -211,7 +211,7 @@ Resolution: fixed
 archive/issue_comments_024905.json:
 ```json
 {
-    "body": "Attachment\n\nOops, somebody forgot to doctest on his install :)",
+    "body": "Attachment [trac_3530_clib_pragmas-doctest-fixes.patch](tarball://root/attachments/some-uuid/ticket3530/trac_3530_clib_pragmas-doctest-fixes.patch) by mabshoff created at 2008-07-06 18:55:04\n\nOops, somebody forgot to doctest on his install :)",
     "created_at": "2008-07-06T18:55:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3530",
     "type": "issue_comment",
@@ -220,7 +220,7 @@ archive/issue_comments_024905.json:
 }
 ```
 
-Attachment
+Attachment [trac_3530_clib_pragmas-doctest-fixes.patch](tarball://root/attachments/some-uuid/ticket3530/trac_3530_clib_pragmas-doctest-fixes.patch) by mabshoff created at 2008-07-06 18:55:04
 
 Oops, somebody forgot to doctest on his install :)
 

@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5079
 archive/issue_comments_038673.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5079-preparse-1.patch](tarball://root/attachments/some-uuid/ticket5079/5079-preparse-1.patch) by robertwb created at 2009-01-24 09:55:08",
     "created_at": "2009-01-24T09:55:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5079",
     "type": "issue_comment",
@@ -51,7 +51,7 @@ archive/issue_comments_038673.json:
 }
 ```
 
-Attachment
+Attachment [5079-preparse-1.patch](tarball://root/attachments/some-uuid/ticket5079/5079-preparse-1.patch) by robertwb created at 2009-01-24 09:55:08
 
 
 
@@ -60,7 +60,7 @@ Attachment
 archive/issue_comments_038674.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5079-preparse-2.patch](tarball://root/attachments/some-uuid/ticket5079/5079-preparse-2.patch) by robertwb created at 2009-01-24 10:25:59",
     "created_at": "2009-01-24T10:25:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5079",
     "type": "issue_comment",
@@ -69,7 +69,7 @@ archive/issue_comments_038674.json:
 }
 ```
 
-Attachment
+Attachment [5079-preparse-2.patch](tarball://root/attachments/some-uuid/ticket5079/5079-preparse-2.patch) by robertwb created at 2009-01-24 10:25:59
 
 
 
@@ -78,7 +78,7 @@ Attachment
 archive/issue_comments_038675.json:
 ```json
 {
-    "body": "Attachment\n\nAlso takes care of #4501 and parsing numbers of the form 5L, and Py3 binary and octal numbers, as well as simplifying the preparser.",
+    "body": "Attachment [5079-preparse-3.patch](tarball://root/attachments/some-uuid/ticket5079/5079-preparse-3.patch) by robertwb created at 2009-01-24 10:27:15\n\nAlso takes care of #4501 and parsing numbers of the form 5L, and Py3 binary and octal numbers, as well as simplifying the preparser.",
     "created_at": "2009-01-24T10:27:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5079",
     "type": "issue_comment",
@@ -87,7 +87,7 @@ archive/issue_comments_038675.json:
 }
 ```
 
-Attachment
+Attachment [5079-preparse-3.patch](tarball://root/attachments/some-uuid/ticket5079/5079-preparse-3.patch) by robertwb created at 2009-01-24 10:27:15
 
 Also takes care of #4501 and parsing numbers of the form 5L, and Py3 binary and octal numbers, as well as simplifying the preparser.
 
@@ -211,7 +211,7 @@ Michael
 archive/issue_comments_038679.json:
 ```json
 {
-    "body": "Attachment\n\nThe above was caused by the notebook calling strip_string_literals and not properly handling the returns.  Accept the following as proof that everything in sage is calling it right:\n\n\n\n```\nsage: search_src('strip_string_literals')\nmisc/preparser.py:    -- Robert Bradshaw (2007-09-19): * strip_string_literals, containing_block \nmisc/preparser.py:def strip_string_literals(code, state=None):\nmisc/preparser.py:        sage: from sage.misc.preparser import strip_string_literals\nmisc/preparser.py:        sage: s, literals, state = strip_string_literals(r'''['a', \"b\", 'c', \"d\\\"\"]''')\nmisc/preparser.py:        sage: print strip_string_literals(r'-\"\\\\\\\"\"-\"\\\\\"-')[0]\nmisc/preparser.py:        sage: s, literals, state = strip_string_literals(\"[a, '''b''', c, '']\")\nmisc/preparser.py:        sage: s, literals, state = strip_string_literals(\"code '#' # ccc 't'\"); s\nmisc/preparser.py:        sage: s, literals, state = strip_string_literals('s = \"some'); s\nmisc/preparser.py:        sage: s, literals, state = strip_string_literals('thing\" * 5', state); s\nmisc/preparser.py:        L, literals, quote_state = strip_string_literals(line, quote_state)\nmisc/preparser.py:        contents, literals, state = strip_string_literals(contents)\nmisc/preparser.py:    code, literals, state = strip_string_literals(code)\nserver/notebook/cell.py:from   sage.misc.preparser import strip_string_literals\nserver/notebook/cell.py:        s = strip_string_literals(self.input_text())[0]\n```\n",
+    "body": "Attachment [5079-notebook.patch](tarball://root/attachments/some-uuid/ticket5079/5079-notebook.patch) by boothby created at 2009-01-24 19:51:58\n\nThe above was caused by the notebook calling strip_string_literals and not properly handling the returns.  Accept the following as proof that everything in sage is calling it right:\n\n\n\n```\nsage: search_src('strip_string_literals')\nmisc/preparser.py:    -- Robert Bradshaw (2007-09-19): * strip_string_literals, containing_block \nmisc/preparser.py:def strip_string_literals(code, state=None):\nmisc/preparser.py:        sage: from sage.misc.preparser import strip_string_literals\nmisc/preparser.py:        sage: s, literals, state = strip_string_literals(r'''['a', \"b\", 'c', \"d\\\"\"]''')\nmisc/preparser.py:        sage: print strip_string_literals(r'-\"\\\\\\\"\"-\"\\\\\"-')[0]\nmisc/preparser.py:        sage: s, literals, state = strip_string_literals(\"[a, '''b''', c, '']\")\nmisc/preparser.py:        sage: s, literals, state = strip_string_literals(\"code '#' # ccc 't'\"); s\nmisc/preparser.py:        sage: s, literals, state = strip_string_literals('s = \"some'); s\nmisc/preparser.py:        sage: s, literals, state = strip_string_literals('thing\" * 5', state); s\nmisc/preparser.py:        L, literals, quote_state = strip_string_literals(line, quote_state)\nmisc/preparser.py:        contents, literals, state = strip_string_literals(contents)\nmisc/preparser.py:    code, literals, state = strip_string_literals(code)\nserver/notebook/cell.py:from   sage.misc.preparser import strip_string_literals\nserver/notebook/cell.py:        s = strip_string_literals(self.input_text())[0]\n```\n",
     "created_at": "2009-01-24T19:51:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5079",
     "type": "issue_comment",
@@ -220,7 +220,7 @@ archive/issue_comments_038679.json:
 }
 ```
 
-Attachment
+Attachment [5079-notebook.patch](tarball://root/attachments/some-uuid/ticket5079/5079-notebook.patch) by boothby created at 2009-01-24 19:51:58
 
 The above was caused by the notebook calling strip_string_literals and not properly handling the returns.  Accept the following as proof that everything in sage is calling it right:
 
@@ -252,7 +252,7 @@ server/notebook/cell.py:        s = strip_string_literals(self.input_text())[0]
 archive/issue_comments_038680.json:
 ```json
 {
-    "body": "Attachment\n\nI added a patch which folds all of the above ones together.\n\n+1 on Tom's changes.",
+    "body": "Attachment [trac_5079.patch](tarball://root/attachments/some-uuid/ticket5079/trac_5079.patch) by mhansen created at 2009-01-24 22:58:07\n\nI added a patch which folds all of the above ones together.\n\n+1 on Tom's changes.",
     "created_at": "2009-01-24T22:58:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5079",
     "type": "issue_comment",
@@ -261,7 +261,7 @@ archive/issue_comments_038680.json:
 }
 ```
 
-Attachment
+Attachment [trac_5079.patch](tarball://root/attachments/some-uuid/ticket5079/trac_5079.patch) by mhansen created at 2009-01-24 22:58:07
 
 I added a patch which folds all of the above ones together.
 

@@ -80,7 +80,7 @@ Changing status from new to assigned.
 archive/issue_comments_038147.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ticket-5002.patch](tarball://root/attachments/some-uuid/ticket5002/ticket-5002.patch) by aschilling created at 2009-04-05 03:28:01",
     "created_at": "2009-04-05T03:28:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5002",
     "type": "issue_comment",
@@ -89,7 +89,7 @@ archive/issue_comments_038147.json:
 }
 ```
 
-Attachment
+Attachment [ticket-5002.patch](tarball://root/attachments/some-uuid/ticket5002/ticket-5002.patch) by aschilling created at 2009-04-05 03:28:01
 
 
 
@@ -355,7 +355,7 @@ removed reference to lazy attribute
 archive/issue_comments_038158.json:
 ```json
 {
-    "body": "Attachment\n\nI removed the reference to lazy attribute. I hope it is now ok to be integrated.\nIn the process I also had to touch fast_crystals.py and spins.py.",
+    "body": "Attachment [crystal-5002-track.patch](tarball://root/attachments/some-uuid/ticket5002/crystal-5002-track.patch) by aschilling created at 2009-04-09 07:04:39\n\nI removed the reference to lazy attribute. I hope it is now ok to be integrated.\nIn the process I also had to touch fast_crystals.py and spins.py.",
     "created_at": "2009-04-09T07:04:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5002",
     "type": "issue_comment",
@@ -364,7 +364,7 @@ archive/issue_comments_038158.json:
 }
 ```
 
-Attachment
+Attachment [crystal-5002-track.patch](tarball://root/attachments/some-uuid/ticket5002/crystal-5002-track.patch) by aschilling created at 2009-04-09 07:04:39
 
 I removed the reference to lazy attribute. I hope it is now ok to be integrated.
 In the process I also had to touch fast_crystals.py and spins.py.

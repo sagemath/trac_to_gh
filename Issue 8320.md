@@ -51,7 +51,7 @@ HTML short titles for selected docs.  sage repo.
 archive/issue_comments_073797.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch adds shorter HTML titles, which appear in Sphinx headers and footers, for selected docs: the developer's guide, Bordeaux lectures, numerical primer, and reference manual.  The others' titles overflow only with very large font sizes.  But feel free to make adjustments, e.g., for consistency.",
+    "body": "Attachment [trac_8320-html_short_title.patch](tarball://root/attachments/some-uuid/ticket8320/trac_8320-html_short_title.patch) by mpatel created at 2010-02-21 21:57:54\n\nThe patch adds shorter HTML titles, which appear in Sphinx headers and footers, for selected docs: the developer's guide, Bordeaux lectures, numerical primer, and reference manual.  The others' titles overflow only with very large font sizes.  But feel free to make adjustments, e.g., for consistency.",
     "created_at": "2010-02-21T21:57:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8320",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_073797.json:
 }
 ```
 
-Attachment
+Attachment [trac_8320-html_short_title.patch](tarball://root/attachments/some-uuid/ticket8320/trac_8320-html_short_title.patch) by mpatel created at 2010-02-21 21:57:54
 
 The patch adds shorter HTML titles, which appear in Sphinx headers and footers, for selected docs: the developer's guide, Bordeaux lectures, numerical primer, and reference manual.  The others' titles overflow only with very large font sizes.  But feel free to make adjustments, e.g., for consistency.
 
@@ -107,7 +107,7 @@ Changing status from new to needs_review.
 archive/issue_comments_073800.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of previous patch",
+    "body": "Attachment [trac_8320-reviewer.patch](tarball://root/attachments/some-uuid/ticket8320/trac_8320-reviewer.patch) by mvngu created at 2010-02-26 04:36:01\n\napply on top of previous patch",
     "created_at": "2010-02-26T04:36:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8320",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_073800.json:
 }
 ```
 
-Attachment
+Attachment [trac_8320-reviewer.patch](tarball://root/attachments/some-uuid/ticket8320/trac_8320-reviewer.patch) by mvngu created at 2010-02-26 04:36:01
 
 apply on top of previous patch
 

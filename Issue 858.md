@@ -52,7 +52,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/858
 archive/issue_comments_005313.json:
 ```json
 {
-    "body": "Attachment\n\npatch #1",
+    "body": "Attachment [858.patch](tarball://root/attachments/some-uuid/ticket858/858.patch) by mhansen created at 2007-10-12 05:44:40\n\npatch #1",
     "created_at": "2007-10-12T05:44:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/858",
     "type": "issue_comment",
@@ -61,7 +61,7 @@ archive/issue_comments_005313.json:
 }
 ```
 
-Attachment
+Attachment [858.patch](tarball://root/attachments/some-uuid/ticket858/858.patch) by mhansen created at 2007-10-12 05:44:40
 
 patch #1
 
@@ -72,7 +72,7 @@ patch #1
 archive/issue_comments_005314.json:
 ```json
 {
-    "body": "Attachment\n\nadded doctest",
+    "body": "Attachment [858.2.patch](tarball://root/attachments/some-uuid/ticket858/858.2.patch) by mhansen created at 2007-10-12 05:46:21\n\nadded doctest",
     "created_at": "2007-10-12T05:46:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/858",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_005314.json:
 }
 ```
 
-Attachment
+Attachment [858.2.patch](tarball://root/attachments/some-uuid/ticket858/858.2.patch) by mhansen created at 2007-10-12 05:46:21
 
 added doctest
 

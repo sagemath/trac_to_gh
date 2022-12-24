@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1429
 archive/issue_comments_009209.json:
 ```json
 {
-    "body": "Attachment\n\nHmmm... the attached bundle is for the documentation repository, but it looks like the hg trac plugin is barfing maybe because it's trying to diff against the wrong repository.\n\nPlease let me know if I've screwed up the bundle somehow. thanks.",
+    "body": "Attachment [1429.hg](tarball://root/attachments/some-uuid/ticket1429/1429.hg) by dmharvey created at 2007-12-27 19:32:31\n\nHmmm... the attached bundle is for the documentation repository, but it looks like the hg trac plugin is barfing maybe because it's trying to diff against the wrong repository.\n\nPlease let me know if I've screwed up the bundle somehow. thanks.",
     "created_at": "2007-12-27T19:32:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1429",
     "type": "issue_comment",
@@ -51,7 +51,7 @@ archive/issue_comments_009209.json:
 }
 ```
 
-Attachment
+Attachment [1429.hg](tarball://root/attachments/some-uuid/ticket1429/1429.hg) by dmharvey created at 2007-12-27 19:32:31
 
 Hmmm... the attached bundle is for the documentation repository, but it looks like the hg trac plugin is barfing maybe because it's trying to diff against the wrong repository.
 

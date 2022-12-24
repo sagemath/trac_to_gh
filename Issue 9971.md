@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9972
 archive/issue_comments_099981.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch is in principle ready, but while we are at it - do we want to make custom `_repr_` for such morphisms? If yes, how should they be different from the standard?\n\nAlso, the speed is far from spectacular, but it is not easy to make it better until simple polyhedra work faster - currently most time is spend on constructing them for intersection purposes and I tried hard not to intersect more cones than necessary.",
+    "body": "Attachment [trac_9972_add_toric_lattice_morphisms.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_add_toric_lattice_morphisms.patch) by novoselt created at 2010-09-23 02:19:05\n\nThe patch is in principle ready, but while we are at it - do we want to make custom `_repr_` for such morphisms? If yes, how should they be different from the standard?\n\nAlso, the speed is far from spectacular, but it is not easy to make it better until simple polyhedra work faster - currently most time is spend on constructing them for intersection purposes and I tried hard not to intersect more cones than necessary.",
     "created_at": "2010-09-23T02:19:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_099981.json:
 }
 ```
 
-Attachment
+Attachment [trac_9972_add_toric_lattice_morphisms.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_add_toric_lattice_morphisms.patch) by novoselt created at 2010-09-23 02:19:05
 
 The patch is in principle ready, but while we are at it - do we want to make custom `_repr_` for such morphisms? If yes, how should they be different from the standard?
 
@@ -573,7 +573,7 @@ But its a potential pitfall to watch out for. We could always insist on the user
 archive/issue_comments_100002.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated patch",
+    "body": "Attachment [trac_9972_improve_element_constructors.2.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_improve_element_constructors.2.patch) by vbraun created at 2010-10-08 18:57:58\n\nUpdated patch",
     "created_at": "2010-10-08T18:57:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
@@ -582,7 +582,7 @@ archive/issue_comments_100002.json:
 }
 ```
 
-Attachment
+Attachment [trac_9972_improve_element_constructors.2.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_improve_element_constructors.2.patch) by vbraun created at 2010-10-08 18:57:58
 
 Updated patch
 
@@ -1192,7 +1192,7 @@ Now that we agree on this ;-) can you go ahead and remove the `Enhanced*` versio
 archive/issue_comments_100024.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9972_add_cone_embedding.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_add_cone_embedding.patch) by novoselt created at 2010-10-14 23:44:15",
     "created_at": "2010-10-14T23:44:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
@@ -1201,7 +1201,7 @@ archive/issue_comments_100024.json:
 }
 ```
 
-Attachment
+Attachment [trac_9972_add_cone_embedding.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_add_cone_embedding.patch) by novoselt created at 2010-10-14 23:44:15
 
 
 
@@ -1210,7 +1210,7 @@ Attachment
 archive/issue_comments_100025.json:
 ```json
 {
-    "body": "Attachment\n\nOops, sorry - I should have written that it was supposed to be the first. I unfolded the patches back so that it is clear who is writing/reviewing what and we don't need to seek the third person for the final review. I have updated my patch to fix the mistake that you caught. In your part I have removed `is_equivalent` from `Cone_of_fan` since this optimization is now performed by general cones. I have also removed extra parenthesis from `cone = fan().embed(x)`.\n\nI also have one more issue with your patch which got lost above, regarding new containment check: cones are equal if they have the same rays in the same order and equivalent if they define the same set of points. If the same cone happened to sit in different fans (or cones, for that matter) and so has several different objects representing it, it does not change anything. We can check if cones belong to the same ambient structure for code optimization, but the output should be the same. Also, to me it feels perfectly natural to ask e.g. whether a cone of some fan belongs to a subdivision of this fan. So I think that `cone in fan` should return `True` if `cone` is equivalent to any of the cones of `fan`. What is the ambient structure of `cone` and what is its ray order does not matter. If you really disagree with this, then I think that `cone in fan` should return `True` ONLY if `cone.ambient() is fan` is `True`. But I definitely prefer the first variant. Then one can write\n\n```\nsage: if cone in fan:\nsage:     cone = fan.embed(cone)\nsage:     Do something, say with cone.adjacent()\nsage: else:\nsage:     Deal with it somehow.\n```\n",
+    "body": "Attachment [trac_9972_improve_element_constructors.3.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_improve_element_constructors.3.patch) by novoselt created at 2010-10-15 00:15:07\n\nOops, sorry - I should have written that it was supposed to be the first. I unfolded the patches back so that it is clear who is writing/reviewing what and we don't need to seek the third person for the final review. I have updated my patch to fix the mistake that you caught. In your part I have removed `is_equivalent` from `Cone_of_fan` since this optimization is now performed by general cones. I have also removed extra parenthesis from `cone = fan().embed(x)`.\n\nI also have one more issue with your patch which got lost above, regarding new containment check: cones are equal if they have the same rays in the same order and equivalent if they define the same set of points. If the same cone happened to sit in different fans (or cones, for that matter) and so has several different objects representing it, it does not change anything. We can check if cones belong to the same ambient structure for code optimization, but the output should be the same. Also, to me it feels perfectly natural to ask e.g. whether a cone of some fan belongs to a subdivision of this fan. So I think that `cone in fan` should return `True` if `cone` is equivalent to any of the cones of `fan`. What is the ambient structure of `cone` and what is its ray order does not matter. If you really disagree with this, then I think that `cone in fan` should return `True` ONLY if `cone.ambient() is fan` is `True`. But I definitely prefer the first variant. Then one can write\n\n```\nsage: if cone in fan:\nsage:     cone = fan.embed(cone)\nsage:     Do something, say with cone.adjacent()\nsage: else:\nsage:     Deal with it somehow.\n```\n",
     "created_at": "2010-10-15T00:15:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
@@ -1219,7 +1219,7 @@ archive/issue_comments_100025.json:
 }
 ```
 
-Attachment
+Attachment [trac_9972_improve_element_constructors.3.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_improve_element_constructors.3.patch) by novoselt created at 2010-10-15 00:15:07
 
 Oops, sorry - I should have written that it was supposed to be the first. I unfolded the patches back so that it is clear who is writing/reviewing what and we don't need to seek the third person for the final review. I have updated my patch to fix the mistake that you caught. In your part I have removed `is_equivalent` from `Cone_of_fan` since this optimization is now performed by general cones. I have also removed extra parenthesis from `cone = fan().embed(x)`.
 
@@ -1241,7 +1241,7 @@ sage:     Deal with it somehow.
 archive/issue_comments_100026.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9972_remove_enhanced_cones_and_fans.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_remove_enhanced_cones_and_fans.patch) by novoselt created at 2010-10-15 00:58:09",
     "created_at": "2010-10-15T00:58:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
@@ -1250,7 +1250,7 @@ archive/issue_comments_100026.json:
 }
 ```
 
-Attachment
+Attachment [trac_9972_remove_enhanced_cones_and_fans.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_remove_enhanced_cones_and_fans.patch) by novoselt created at 2010-10-15 00:58:09
 
 
 
@@ -1313,7 +1313,7 @@ Oops I had forgotten to refresh the patch. Correct version follows.
 archive/issue_comments_100030.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated patch",
+    "body": "Attachment [trac_9972_improve_element_constructors.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_improve_element_constructors.patch) by vbraun created at 2010-10-15 13:17:30\n\nUpdated patch",
     "created_at": "2010-10-15T13:17:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
@@ -1322,7 +1322,7 @@ archive/issue_comments_100030.json:
 }
 ```
 
-Attachment
+Attachment [trac_9972_improve_element_constructors.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_improve_element_constructors.patch) by vbraun created at 2010-10-15 13:17:30
 
 Updated patch
 
@@ -1417,7 +1417,7 @@ OK, `preimage_cones` can now be computed, everything is doctested, the last issu
 archive/issue_comments_100035.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9972_fix_fan_warning.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_fix_fan_warning.patch) by novoselt created at 2010-10-23 18:02:22",
     "created_at": "2010-10-23T18:02:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
@@ -1426,7 +1426,7 @@ archive/issue_comments_100035.json:
 }
 ```
 
-Attachment
+Attachment [trac_9972_fix_fan_warning.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_fix_fan_warning.patch) by novoselt created at 2010-10-23 18:02:22
 
 
 
@@ -1958,7 +1958,7 @@ preimage_cones implemented
 archive/issue_comments_100059.json:
 ```json
 {
-    "body": "Attachment\n\nGrrr... That was due to my optimization attempt without proper thinking. The new version uses the same cycle as the very first one (which was finding everything and even more), but requires equality of image cones. Should work now, the blow up example in the documentation is extended to include the preimage cones of the quadrant...",
+    "body": "Attachment [trac_9972_add_fan_morphisms.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_add_fan_morphisms.patch) by novoselt created at 2010-11-10 22:56:37\n\nGrrr... That was due to my optimization attempt without proper thinking. The new version uses the same cycle as the very first one (which was finding everything and even more), but requires equality of image cones. Should work now, the blow up example in the documentation is extended to include the preimage cones of the quadrant...",
     "created_at": "2010-11-10T22:56:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
@@ -1967,7 +1967,7 @@ archive/issue_comments_100059.json:
 }
 ```
 
-Attachment
+Attachment [trac_9972_add_fan_morphisms.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_add_fan_morphisms.patch) by novoselt created at 2010-11-10 22:56:37
 
 Grrr... That was due to my optimization attempt without proper thinking. The new version uses the same cycle as the very first one (which was finding everything and even more), but requires equality of image cones. Should work now, the blow up example in the documentation is extended to include the preimage cones of the quadrant...
 

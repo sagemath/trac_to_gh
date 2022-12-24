@@ -195,7 +195,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_075440.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8418_reduced_rauzy_graph-jl.patch](tarball://root/attachments/some-uuid/ticket8418/trac_8418_reduced_rauzy_graph-jl.patch) by jleroy created at 2010-03-03 16:43:40",
     "created_at": "2010-03-03T16:43:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8418",
     "type": "issue_comment",
@@ -204,7 +204,7 @@ archive/issue_comments_075440.json:
 }
 ```
 
-Attachment
+Attachment [trac_8418_reduced_rauzy_graph-jl.patch](tarball://root/attachments/some-uuid/ticket8418/trac_8418_reduced_rauzy_graph-jl.patch) by jleroy created at 2010-03-03 16:43:40
 
 
 
@@ -213,7 +213,7 @@ Attachment
 archive/issue_comments_075441.json:
 ```json
 {
-    "body": "Attachment\n\nApplies over the precedent patch",
+    "body": "Attachment [trac_8418_review-sl.patch](tarball://root/attachments/some-uuid/ticket8418/trac_8418_review-sl.patch) by slabbe created at 2010-03-03 17:38:50\n\nApplies over the precedent patch",
     "created_at": "2010-03-03T17:38:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8418",
     "type": "issue_comment",
@@ -222,7 +222,7 @@ archive/issue_comments_075441.json:
 }
 ```
 
-Attachment
+Attachment [trac_8418_review-sl.patch](tarball://root/attachments/some-uuid/ticket8418/trac_8418_review-sl.patch) by slabbe created at 2010-03-03 17:38:50
 
 Applies over the precedent patch
 
@@ -378,7 +378,7 @@ Precision of the input field -- apply on top of the two first patches
 archive/issue_comments_075449.json:
 ```json
 {
-    "body": "Attachment\n\nI just added a new patch for my review. I had forgotten the word \"reduced\" and I gave more details about the input. Still positive review !",
+    "body": "Attachment [trac_8418_review-abm.patch](tarball://root/attachments/some-uuid/ticket8418/trac_8418_review-abm.patch) by abmasse created at 2010-03-05 12:03:53\n\nI just added a new patch for my review. I had forgotten the word \"reduced\" and I gave more details about the input. Still positive review !",
     "created_at": "2010-03-05T12:03:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8418",
     "type": "issue_comment",
@@ -387,7 +387,7 @@ archive/issue_comments_075449.json:
 }
 ```
 
-Attachment
+Attachment [trac_8418_review-abm.patch](tarball://root/attachments/some-uuid/ticket8418/trac_8418_review-abm.patch) by abmasse created at 2010-03-05 12:03:53
 
 I just added a new patch for my review. I had forgotten the word "reduced" and I gave more details about the input. Still positive review !
 

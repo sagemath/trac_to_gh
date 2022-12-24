@@ -55,7 +55,7 @@ Changing status from new to assigned.
 archive/issue_comments_041094.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-3.3-release-notes-draft1.txt](tarball://root/attachments/some-uuid/ticket5335/Sage-3.3-release-notes-draft1.txt) by mabshoff created at 2009-02-22 12:26:59",
     "created_at": "2009-02-22T12:26:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5335",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_041094.json:
 }
 ```
 
-Attachment
+Attachment [Sage-3.3-release-notes-draft1.txt](tarball://root/attachments/some-uuid/ticket5335/Sage-3.3-release-notes-draft1.txt) by mabshoff created at 2009-02-22 12:26:59
 
 
 
@@ -160,7 +160,7 @@ found in trac.
 archive/issue_comments_041098.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-3.3-release-notes-draft2.txt](tarball://root/attachments/some-uuid/ticket5335/Sage-3.3-release-notes-draft2.txt) by mabshoff created at 2009-02-22 19:10:26",
     "created_at": "2009-02-22T19:10:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5335",
     "type": "issue_comment",
@@ -169,7 +169,7 @@ archive/issue_comments_041098.json:
 }
 ```
 
-Attachment
+Attachment [Sage-3.3-release-notes-draft2.txt](tarball://root/attachments/some-uuid/ticket5335/Sage-3.3-release-notes-draft2.txt) by mabshoff created at 2009-02-22 19:10:26
 
 
 
@@ -178,7 +178,7 @@ Attachment
 archive/issue_comments_041099.json:
 ```json
 {
-    "body": "Attachment\n\nOk, put up draft 3 with a corrected description of the FC 9/10 libSingular problem.\n\nCheers,\n\nMichael",
+    "body": "Attachment [Sage-3.3-release-notes-draft3.txt](tarball://root/attachments/some-uuid/ticket5335/Sage-3.3-release-notes-draft3.txt) by mabshoff created at 2009-02-22 19:11:23\n\nOk, put up draft 3 with a corrected description of the FC 9/10 libSingular problem.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-22T19:11:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5335",
     "type": "issue_comment",
@@ -187,7 +187,7 @@ archive/issue_comments_041099.json:
 }
 ```
 
-Attachment
+Attachment [Sage-3.3-release-notes-draft3.txt](tarball://root/attachments/some-uuid/ticket5335/Sage-3.3-release-notes-draft3.txt) by mabshoff created at 2009-02-22 19:11:23
 
 Ok, put up draft 3 with a corrected description of the FC 9/10 libSingular problem.
 
@@ -278,7 +278,7 @@ patch against draft 3
 archive/issue_comments_041104.json:
 ```json
 {
-    "body": "Attachment\n\nrelease note resulting from applying above patch",
+    "body": "Attachment [trac_5335-typo-diff.patch](tarball://root/attachments/some-uuid/ticket5335/trac_5335-typo-diff.patch) by mvngu created at 2009-02-23 02:32:50\n\nrelease note resulting from applying above patch",
     "created_at": "2009-02-23T02:32:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5335",
     "type": "issue_comment",
@@ -287,7 +287,7 @@ archive/issue_comments_041104.json:
 }
 ```
 
-Attachment
+Attachment [trac_5335-typo-diff.patch](tarball://root/attachments/some-uuid/ticket5335/trac_5335-typo-diff.patch) by mvngu created at 2009-02-23 02:32:50
 
 release note resulting from applying above patch
 
@@ -298,7 +298,7 @@ release note resulting from applying above patch
 archive/issue_comments_041105.json:
 ```json
 {
-    "body": "Attachment\n\nOK, I'm very late here, but I can't resist being somewhat pedantic :-) Draft 4 of the release note fixes some typos in draft 3.",
+    "body": "Attachment [Sage-3.3-release-notes-draft4.txt](tarball://root/attachments/some-uuid/ticket5335/Sage-3.3-release-notes-draft4.txt) by mvngu created at 2009-02-23 02:34:44\n\nOK, I'm very late here, but I can't resist being somewhat pedantic :-) Draft 4 of the release note fixes some typos in draft 3.",
     "created_at": "2009-02-23T02:34:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5335",
     "type": "issue_comment",
@@ -307,6 +307,6 @@ archive/issue_comments_041105.json:
 }
 ```
 
-Attachment
+Attachment [Sage-3.3-release-notes-draft4.txt](tarball://root/attachments/some-uuid/ticket5335/Sage-3.3-release-notes-draft4.txt) by mvngu created at 2009-02-23 02:34:44
 
 OK, I'm very late here, but I can't resist being somewhat pedantic :-) Draft 4 of the release note fixes some typos in draft 3.

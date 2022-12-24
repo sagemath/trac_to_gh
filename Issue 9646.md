@@ -159,7 +159,7 @@ There was indeed a precision error in the code and the patch that I attach shoul
 archive/issue_comments_093531.json:
 ```json
 {
-    "body": "Attachment\n\nexported against 4.6",
+    "body": "Attachment [trac_9646.patch](tarball://root/attachments/some-uuid/ticket9646/trac_9646.patch) by wuthrich created at 2010-11-14 16:37:27\n\nexported against 4.6",
     "created_at": "2010-11-14T16:37:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9646",
     "type": "issue_comment",
@@ -168,7 +168,7 @@ archive/issue_comments_093531.json:
 }
 ```
 
-Attachment
+Attachment [trac_9646.patch](tarball://root/attachments/some-uuid/ticket9646/trac_9646.patch) by wuthrich created at 2010-11-14 16:37:27
 
 exported against 4.6
 
@@ -310,7 +310,7 @@ to be applied after the first patch
 archive/issue_comments_093537.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9646_2.patch](tarball://root/attachments/some-uuid/ticket9646/trac_9646_2.patch) by davidloeffler created at 2010-12-16 12:07:21",
     "created_at": "2010-12-16T12:07:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9646",
     "type": "issue_comment",
@@ -319,7 +319,7 @@ archive/issue_comments_093537.json:
 }
 ```
 
-Attachment
+Attachment [trac_9646_2.patch](tarball://root/attachments/some-uuid/ticket9646/trac_9646_2.patch) by davidloeffler created at 2010-12-16 12:07:21
 
 
 

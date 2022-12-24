@@ -212,7 +212,7 @@ Everything else is harmless as far as I can tell.
 archive/issue_comments_037035.json:
 ```json
 {
-    "body": "Attachment\n\nthis patch fixes all the problems reported in the tickets and commentary up to this point.",
+    "body": "Attachment [trac_4885.patch](tarball://root/attachments/some-uuid/ticket4885/trac_4885.patch) by was created at 2008-12-31 01:20:05\n\nthis patch fixes all the problems reported in the tickets and commentary up to this point.",
     "created_at": "2008-12-31T01:20:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4885",
     "type": "issue_comment",
@@ -221,7 +221,7 @@ archive/issue_comments_037035.json:
 }
 ```
 
-Attachment
+Attachment [trac_4885.patch](tarball://root/attachments/some-uuid/ticket4885/trac_4885.patch) by was created at 2008-12-31 01:20:05
 
 this patch fixes all the problems reported in the tickets and commentary up to this point.
 
@@ -283,7 +283,7 @@ The first is very clear and explicit, but of course not right anymore.  The seco
 archive/issue_comments_037038.json:
 ```json
 {
-    "body": "Attachment\n\nAssuming mhansen gave my patch a positive review modulo me giving his a positive review, this gets a positive review. I nitpick about the docs, but that's not enough to stop this going in.",
+    "body": "Attachment [trac_4885-2.patch](tarball://root/attachments/some-uuid/ticket4885/trac_4885-2.patch) by was created at 2009-01-02 21:26:34\n\nAssuming mhansen gave my patch a positive review modulo me giving his a positive review, this gets a positive review. I nitpick about the docs, but that's not enough to stop this going in.",
     "created_at": "2009-01-02T21:26:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4885",
     "type": "issue_comment",
@@ -292,7 +292,7 @@ archive/issue_comments_037038.json:
 }
 ```
 
-Attachment
+Attachment [trac_4885-2.patch](tarball://root/attachments/some-uuid/ticket4885/trac_4885-2.patch) by was created at 2009-01-02 21:26:34
 
 Assuming mhansen gave my patch a positive review modulo me giving his a positive review, this gets a positive review. I nitpick about the docs, but that's not enough to stop this going in.
 

@@ -68,7 +68,7 @@ Michael
 archive/issue_comments_041870.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5414-install.diff](tarball://root/attachments/some-uuid/ticket5414/trac_5414-install.diff) by mhansen created at 2009-03-11 05:11:22",
     "created_at": "2009-03-11T05:11:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5414",
     "type": "issue_comment",
@@ -77,7 +77,7 @@ archive/issue_comments_041870.json:
 }
 ```
 
-Attachment
+Attachment [trac_5414-install.diff](tarball://root/attachments/some-uuid/ticket5414/trac_5414-install.diff) by mhansen created at 2009-03-11 05:11:22
 
 
 
@@ -86,7 +86,7 @@ Attachment
 archive/issue_comments_041871.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5414.patch](tarball://root/attachments/some-uuid/ticket5414/trac_5414.patch) by mhansen created at 2009-03-11 05:18:20",
     "created_at": "2009-03-11T05:18:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5414",
     "type": "issue_comment",
@@ -95,7 +95,7 @@ archive/issue_comments_041871.json:
 }
 ```
 
-Attachment
+Attachment [trac_5414.patch](tarball://root/attachments/some-uuid/ticket5414/trac_5414.patch) by mhansen created at 2009-03-11 05:18:20
 
 
 
@@ -162,7 +162,7 @@ Michael
 archive/issue_comments_041875.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5414-scripts.patch](tarball://root/attachments/some-uuid/ticket5414/trac_5414-scripts.patch) by mhansen created at 2009-03-11 05:40:35",
     "created_at": "2009-03-11T05:40:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5414",
     "type": "issue_comment",
@@ -171,7 +171,7 @@ archive/issue_comments_041875.json:
 }
 ```
 
-Attachment
+Attachment [trac_5414-scripts.patch](tarball://root/attachments/some-uuid/ticket5414/trac_5414-scripts.patch) by mhansen created at 2009-03-11 05:40:35
 
 
 

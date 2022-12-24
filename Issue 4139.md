@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4139
 archive/issue_comments_030046.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4139.patch](tarball://root/attachments/some-uuid/ticket4139/trac_4139.patch) by mhansen created at 2008-09-17 09:04:00",
     "created_at": "2008-09-17T09:04:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4139",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_030046.json:
 }
 ```
 
-Attachment
+Attachment [trac_4139.patch](tarball://root/attachments/some-uuid/ticket4139/trac_4139.patch) by mhansen created at 2008-09-17 09:04:00
 
 
 
@@ -253,7 +253,7 @@ Got:
 archive/issue_comments_030052.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4139-rebase-fix.patch](tarball://root/attachments/some-uuid/ticket4139/trac_4139-rebase-fix.patch) by mhansen created at 2008-09-19 07:43:07",
     "created_at": "2008-09-19T07:43:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4139",
     "type": "issue_comment",
@@ -262,7 +262,7 @@ archive/issue_comments_030052.json:
 }
 ```
 
-Attachment
+Attachment [trac_4139-rebase-fix.patch](tarball://root/attachments/some-uuid/ticket4139/trac_4139-rebase-fix.patch) by mhansen created at 2008-09-19 07:43:07
 
 
 
@@ -364,7 +364,7 @@ Michael
 archive/issue_comments_030056.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4139_doctest-fix.patch](tarball://root/attachments/some-uuid/ticket4139/trac_4139_doctest-fix.patch) by mabshoff created at 2008-09-19 14:45:13",
     "created_at": "2008-09-19T14:45:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4139",
     "type": "issue_comment",
@@ -373,7 +373,7 @@ archive/issue_comments_030056.json:
 }
 ```
 
-Attachment
+Attachment [trac_4139_doctest-fix.patch](tarball://root/attachments/some-uuid/ticket4139/trac_4139_doctest-fix.patch) by mabshoff created at 2008-09-19 14:45:13
 
 
 

@@ -157,7 +157,7 @@ Know what, I don't think I even realized that m was mandatory the way I wrote it
 archive/issue_comments_026644.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [integer-log-exp.patch](tarball://root/attachments/some-uuid/ticket3750/integer-log-exp.patch) by kcrisman created at 2008-10-26 00:15:09",
     "created_at": "2008-10-26T00:15:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3750",
     "type": "issue_comment",
@@ -166,7 +166,7 @@ archive/issue_comments_026644.json:
 }
 ```
 
-Attachment
+Attachment [integer-log-exp.patch](tarball://root/attachments/some-uuid/ticket3750/integer-log-exp.patch) by kcrisman created at 2008-10-26 00:15:09
 
 
 
@@ -269,7 +269,7 @@ then the last version of the patch should address all concerns raised above.  Th
 archive/issue_comments_026649.json:
 ```json
 {
-    "body": "Attachment\n\nBased on 3.2.alpha0",
+    "body": "Attachment [integer-log-exp-final.patch](tarball://root/attachments/some-uuid/ticket3750/integer-log-exp-final.patch) by kcrisman created at 2008-10-30 18:46:30\n\nBased on 3.2.alpha0",
     "created_at": "2008-10-30T18:46:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3750",
     "type": "issue_comment",
@@ -278,7 +278,7 @@ archive/issue_comments_026649.json:
 }
 ```
 
-Attachment
+Attachment [integer-log-exp-final.patch](tarball://root/attachments/some-uuid/ticket3750/integer-log-exp-final.patch) by kcrisman created at 2008-10-30 18:46:30
 
 Based on 3.2.alpha0
 
@@ -402,7 +402,7 @@ Michael
 archive/issue_comments_026652.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached a patch which fixes the issue.",
+    "body": "Attachment [trac_3750-fix.patch](tarball://root/attachments/some-uuid/ticket3750/trac_3750-fix.patch) by mhansen created at 2008-11-06 12:49:30\n\nI've attached a patch which fixes the issue.",
     "created_at": "2008-11-06T12:49:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3750",
     "type": "issue_comment",
@@ -411,7 +411,7 @@ archive/issue_comments_026652.json:
 }
 ```
 
-Attachment
+Attachment [trac_3750-fix.patch](tarball://root/attachments/some-uuid/ticket3750/trac_3750-fix.patch) by mhansen created at 2008-11-06 12:49:30
 
 I've attached a patch which fixes the issue.
 

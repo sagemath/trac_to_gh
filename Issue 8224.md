@@ -91,7 +91,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8224
 archive/issue_comments_072621.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8224_help_fix-sl.patch](tarball://root/attachments/some-uuid/ticket8224/trac_8224_help_fix-sl.patch) by slabbe created at 2010-02-09 23:59:21",
     "created_at": "2010-02-09T23:59:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8224",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_072621.json:
 }
 ```
 
-Attachment
+Attachment [trac_8224_help_fix-sl.patch](tarball://root/attachments/some-uuid/ticket8224/trac_8224_help_fix-sl.patch) by slabbe created at 2010-02-09 23:59:21
 
 
 

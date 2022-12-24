@@ -118,7 +118,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4112
 archive/issue_comments_029781.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4112.patch](tarball://root/attachments/some-uuid/ticket4112/trac_4112.patch) by craigcitro created at 2008-09-14 09:01:46",
     "created_at": "2008-09-14T09:01:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4112",
     "type": "issue_comment",
@@ -127,7 +127,7 @@ archive/issue_comments_029781.json:
 }
 ```
 
-Attachment
+Attachment [trac_4112.patch](tarball://root/attachments/some-uuid/ticket4112/trac_4112.patch) by craigcitro created at 2008-09-14 09:01:46
 
 
 
@@ -136,7 +136,7 @@ Attachment
 archive/issue_comments_029782.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review for trac-4112.patch. There is also some orthogonal issue, but that is followed up at #4116.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac-4112.patch](tarball://root/attachments/some-uuid/ticket4112/trac-4112.patch) by mabshoff created at 2008-09-14 09:34:42\n\nPositive review for trac-4112.patch. There is also some orthogonal issue, but that is followed up at #4116.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-14T09:34:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4112",
     "type": "issue_comment",
@@ -145,7 +145,7 @@ archive/issue_comments_029782.json:
 }
 ```
 
-Attachment
+Attachment [trac-4112.patch](tarball://root/attachments/some-uuid/ticket4112/trac-4112.patch) by mabshoff created at 2008-09-14 09:34:42
 
 Positive review for trac-4112.patch. There is also some orthogonal issue, but that is followed up at #4116.
 

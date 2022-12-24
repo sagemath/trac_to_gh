@@ -71,7 +71,7 @@ Changing status from new to needs_review.
 archive/issue_comments_089045.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9371_two_torsion_rank.patch](tarball://root/attachments/some-uuid/ticket9371/trac_9371_two_torsion_rank.patch) by weigandt created at 2010-07-01 18:37:27",
     "created_at": "2010-07-01T18:37:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9371",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_089045.json:
 }
 ```
 
-Attachment
+Attachment [trac_9371_two_torsion_rank.patch](tarball://root/attachments/some-uuid/ticket9371/trac_9371_two_torsion_rank.patch) by weigandt created at 2010-07-01 18:37:27
 
 
 
@@ -166,7 +166,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_089050.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9371_field_two_torsion.patch](tarball://root/attachments/some-uuid/ticket9371/trac_9371_field_two_torsion.patch) by weigandt created at 2011-03-23 01:42:01",
     "created_at": "2011-03-23T01:42:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9371",
     "type": "issue_comment",
@@ -175,7 +175,7 @@ archive/issue_comments_089050.json:
 }
 ```
 
-Attachment
+Attachment [trac_9371_field_two_torsion.patch](tarball://root/attachments/some-uuid/ticket9371/trac_9371_field_two_torsion.patch) by weigandt created at 2011-03-23 01:42:01
 
 
 
@@ -220,7 +220,7 @@ added documentation, replaces previous patch
 archive/issue_comments_089053.json:
 ```json
 {
-    "body": "Attachment\n\nit initially failed sage/interface/r.py, but once I ran it separately and it worked.",
+    "body": "Attachment [trac_9371_field_two_torsion.2.patch](tarball://root/attachments/some-uuid/ticket9371/trac_9371_field_two_torsion.2.patch) by gagansekhon created at 2011-03-23 22:06:25\n\nit initially failed sage/interface/r.py, but once I ran it separately and it worked.",
     "created_at": "2011-03-23T22:06:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9371",
     "type": "issue_comment",
@@ -229,7 +229,7 @@ archive/issue_comments_089053.json:
 }
 ```
 
-Attachment
+Attachment [trac_9371_field_two_torsion.2.patch](tarball://root/attachments/some-uuid/ticket9371/trac_9371_field_two_torsion.2.patch) by gagansekhon created at 2011-03-23 22:06:25
 
 it initially failed sage/interface/r.py, but once I ran it separately and it worked.
 

@@ -65,7 +65,7 @@ To be more precise, the problem is that the docstring of PolynomialRing says the
 archive/issue_comments_021672.json:
 ```json
 {
-    "body": "Attachment\n\nFixing wrong docstring statement and adding more doctests",
+    "body": "Attachment [PolynomialRingDoc.patch](tarball://root/attachments/some-uuid/ticket3128/PolynomialRingDoc.patch) by SimonKing created at 2009-01-22 06:16:49\n\nFixing wrong docstring statement and adding more doctests",
     "created_at": "2009-01-22T06:16:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3128",
     "type": "issue_comment",
@@ -74,7 +74,7 @@ archive/issue_comments_021672.json:
 }
 ```
 
-Attachment
+Attachment [PolynomialRingDoc.patch](tarball://root/attachments/some-uuid/ticket3128/PolynomialRingDoc.patch) by SimonKing created at 2009-01-22 06:16:49
 
 Fixing wrong docstring statement and adding more doctests
 
@@ -152,7 +152,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_021676.json:
 ```json
 {
-    "body": "Attachment\n\nI rebased the patch and changed the docstring as per malb's suggestion.",
+    "body": "Attachment [trac_3128.patch](tarball://root/attachments/some-uuid/ticket3128/trac_3128.patch) by mhansen created at 2009-10-19 19:12:02\n\nI rebased the patch and changed the docstring as per malb's suggestion.",
     "created_at": "2009-10-19T19:12:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3128",
     "type": "issue_comment",
@@ -161,7 +161,7 @@ archive/issue_comments_021676.json:
 }
 ```
 
-Attachment
+Attachment [trac_3128.patch](tarball://root/attachments/some-uuid/ticket3128/trac_3128.patch) by mhansen created at 2009-10-19 19:12:02
 
 I rebased the patch and changed the docstring as per malb's suggestion.
 

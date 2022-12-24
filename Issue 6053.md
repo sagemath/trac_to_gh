@@ -49,7 +49,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6053
 archive/issue_comments_048216.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-6053-cython-numpy-header.patch](tarball://root/attachments/some-uuid/ticket6053/trac-6053-cython-numpy-header.patch) by jason created at 2009-05-28 07:09:28",
     "created_at": "2009-05-28T07:09:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6053",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_048216.json:
 }
 ```
 
-Attachment
+Attachment [trac-6053-cython-numpy-header.patch](tarball://root/attachments/some-uuid/ticket6053/trac-6053-cython-numpy-header.patch) by jason created at 2009-05-28 07:09:28
 
 
 

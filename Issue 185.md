@@ -117,7 +117,7 @@ I've implemented something like exponential falloff.  Polling slows down gradual
 archive/issue_comments_000844.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [185-smartpoll.patch](tarball://root/attachments/some-uuid/ticket185/185-smartpoll.patch) by boothby created at 2008-03-16 21:23:36",
     "created_at": "2008-03-16T21:23:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/185",
     "type": "issue_comment",
@@ -126,7 +126,7 @@ archive/issue_comments_000844.json:
 }
 ```
 
-Attachment
+Attachment [185-smartpoll.patch](tarball://root/attachments/some-uuid/ticket185/185-smartpoll.patch) by boothby created at 2008-03-16 21:23:36
 
 
 

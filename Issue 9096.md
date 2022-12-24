@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9096
 archive/issue_comments_084511.json:
 ```json
 {
-    "body": "Attachment\n\nReady for review",
+    "body": "Attachment [trac_9096_disj_union_sphinx_fix-fh.patch](tarball://root/attachments/some-uuid/ticket9096/trac_9096_disj_union_sphinx_fix-fh.patch) by hivert created at 2010-05-30 18:54:51\n\nReady for review",
     "created_at": "2010-05-30T18:54:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9096",
     "type": "issue_comment",
@@ -49,7 +49,7 @@ archive/issue_comments_084511.json:
 }
 ```
 
-Attachment
+Attachment [trac_9096_disj_union_sphinx_fix-fh.patch](tarball://root/attachments/some-uuid/ticket9096/trac_9096_disj_union_sphinx_fix-fh.patch) by hivert created at 2010-05-30 18:54:51
 
 Ready for review
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7609
 archive/issue_comments_064986.json:
 ```json
 {
-    "body": "Attachment\n\nfix numerical noise",
+    "body": "Attachment [trac_7609-pynac_numerical_noise.patch](tarball://root/attachments/some-uuid/ticket7609/trac_7609-pynac_numerical_noise.patch) by burcin created at 2009-12-06 00:41:04\n\nfix numerical noise",
     "created_at": "2009-12-06T00:41:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7609",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_064986.json:
 }
 ```
 
-Attachment
+Attachment [trac_7609-pynac_numerical_noise.patch](tarball://root/attachments/some-uuid/ticket7609/trac_7609-pynac_numerical_noise.patch) by burcin created at 2009-12-06 00:41:04
 
 fix numerical noise
 
@@ -135,7 +135,7 @@ apply only this patch
 archive/issue_comments_064991.json:
 ```json
 {
-    "body": "Attachment\n\nHi Karl-Dieter,\n\nattachment:trac_7609-pynac_numerical_noise.take2.patch adds a fix for the error you get as well. It is a good coincidence that you're testing on that box. :)\n\nThanks.",
+    "body": "Attachment [trac_7609-pynac_numerical_noise.take2.patch](tarball://root/attachments/some-uuid/ticket7609/trac_7609-pynac_numerical_noise.take2.patch) by burcin created at 2009-12-06 16:15:51\n\nHi Karl-Dieter,\n\nattachment:trac_7609-pynac_numerical_noise.take2.patch adds a fix for the error you get as well. It is a good coincidence that you're testing on that box. :)\n\nThanks.",
     "created_at": "2009-12-06T16:15:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7609",
     "type": "issue_comment",
@@ -144,7 +144,7 @@ archive/issue_comments_064991.json:
 }
 ```
 
-Attachment
+Attachment [trac_7609-pynac_numerical_noise.take2.patch](tarball://root/attachments/some-uuid/ticket7609/trac_7609-pynac_numerical_noise.take2.patch) by burcin created at 2009-12-06 16:15:51
 
 Hi Karl-Dieter,
 

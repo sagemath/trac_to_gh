@@ -97,7 +97,7 @@ command :-).
 archive/issue_comments_026246.json:
 ```json
 {
-    "body": "Attachment\n\nPatch attached which does what I think was intended.  Based on 3.4, all tests in sage/modules should pass.",
+    "body": "Attachment [trac_3699.patch](tarball://root/attachments/some-uuid/ticket3699/trac_3699.patch) by cremona created at 2009-03-22 18:31:37\n\nPatch attached which does what I think was intended.  Based on 3.4, all tests in sage/modules should pass.",
     "created_at": "2009-03-22T18:31:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3699",
     "type": "issue_comment",
@@ -106,7 +106,7 @@ archive/issue_comments_026246.json:
 }
 ```
 
-Attachment
+Attachment [trac_3699.patch](tarball://root/attachments/some-uuid/ticket3699/trac_3699.patch) by cremona created at 2009-03-22 18:31:37
 
 Patch attached which does what I think was intended.  Based on 3.4, all tests in sage/modules should pass.
 

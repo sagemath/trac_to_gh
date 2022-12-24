@@ -170,7 +170,7 @@ IndexError occurs when the highest power in the Laurent series is less than -2. 
 archive/issue_comments_008188.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ticket_1302.patch](tarball://root/attachments/some-uuid/ticket1302/ticket_1302.patch) by rishi created at 2008-01-04 08:36:00",
     "created_at": "2008-01-04T08:36:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1302",
     "type": "issue_comment",
@@ -179,7 +179,7 @@ archive/issue_comments_008188.json:
 }
 ```
 
-Attachment
+Attachment [ticket_1302.patch](tarball://root/attachments/some-uuid/ticket1302/ticket_1302.patch) by rishi created at 2008-01-04 08:36:00
 
 
 
@@ -246,7 +246,7 @@ Michael
 archive/issue_comments_008192.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-1302-example.patch](tarball://root/attachments/some-uuid/ticket1302/trac-1302-example.patch) by was created at 2008-01-05 02:19:26",
     "created_at": "2008-01-05T02:19:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1302",
     "type": "issue_comment",
@@ -255,7 +255,7 @@ archive/issue_comments_008192.json:
 }
 ```
 
-Attachment
+Attachment [trac-1302-example.patch](tarball://root/attachments/some-uuid/ticket1302/trac-1302-example.patch) by was created at 2008-01-05 02:19:26
 
 
 

@@ -123,7 +123,7 @@ sage: g.blocks_and_cut_vertices()
 archive/issue_comments_064442.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7571.patch](tarball://root/attachments/some-uuid/ticket7571/trac_7571.patch) by ylchapuy created at 2009-12-01 15:47:54",
     "created_at": "2009-12-01T15:47:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7571",
     "type": "issue_comment",
@@ -132,7 +132,7 @@ archive/issue_comments_064442.json:
 }
 ```
 
-Attachment
+Attachment [trac_7571.patch](tarball://root/attachments/some-uuid/ticket7571/trac_7571.patch) by ylchapuy created at 2009-12-01 15:47:54
 
 
 

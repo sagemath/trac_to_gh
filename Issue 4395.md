@@ -173,7 +173,7 @@ Got:
 archive/issue_comments_032347.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review. It fixes the original problem reported, but not as I suspected the issue in \n\n```\ndevel/sage/sage/rings/polynomial/pbori.pyx\n```\n\nThat issue is now #4482.\n\nCheers,\n\nMichael",
+    "body": "Attachment [sage-4395.patch](tarball://root/attachments/some-uuid/ticket4395/sage-4395.patch) by mabshoff created at 2008-11-09 17:39:30\n\nPositive review. It fixes the original problem reported, but not as I suspected the issue in \n\n```\ndevel/sage/sage/rings/polynomial/pbori.pyx\n```\n\nThat issue is now #4482.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-09T17:39:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4395",
     "type": "issue_comment",
@@ -182,7 +182,7 @@ archive/issue_comments_032347.json:
 }
 ```
 
-Attachment
+Attachment [sage-4395.patch](tarball://root/attachments/some-uuid/ticket4395/sage-4395.patch) by mabshoff created at 2008-11-09 17:39:30
 
 Positive review. It fixes the original problem reported, but not as I suspected the issue in 
 

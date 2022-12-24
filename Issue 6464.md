@@ -144,7 +144,7 @@ Unicode in notebook worksheets, the modification was made by mvngu.
 archive/issue_comments_052239.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [12659.patch](tarball://root/attachments/some-uuid/ticket6464/12659.patch) by mora created at 2009-08-08 12:48:43",
     "created_at": "2009-08-08T12:48:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6464",
     "type": "issue_comment",
@@ -153,7 +153,7 @@ archive/issue_comments_052239.json:
 }
 ```
 
-Attachment
+Attachment [12659.patch](tarball://root/attachments/some-uuid/ticket6464/12659.patch) by mora created at 2009-08-08 12:48:43
 
 
 
@@ -180,7 +180,7 @@ apply only this patch
 archive/issue_comments_052241.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch `trac_6464-unicode.patch` gives proper credit to NoSyu, the person who proposed the fix. Only this patch should be applied.",
+    "body": "Attachment [trac_6464-unicode.patch](tarball://root/attachments/some-uuid/ticket6464/trac_6464-unicode.patch) by mvngu created at 2009-08-11 22:23:25\n\nThe patch `trac_6464-unicode.patch` gives proper credit to NoSyu, the person who proposed the fix. Only this patch should be applied.",
     "created_at": "2009-08-11T22:23:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6464",
     "type": "issue_comment",
@@ -189,7 +189,7 @@ archive/issue_comments_052241.json:
 }
 ```
 
-Attachment
+Attachment [trac_6464-unicode.patch](tarball://root/attachments/some-uuid/ticket6464/trac_6464-unicode.patch) by mvngu created at 2009-08-11 22:23:25
 
 The patch `trac_6464-unicode.patch` gives proper credit to NoSyu, the person who proposed the fix. Only this patch should be applied.
 

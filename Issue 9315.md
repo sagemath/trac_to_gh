@@ -110,7 +110,7 @@ finite_field_base.pyx:        return self._factory_data[0].reduce_data(self)
 archive/issue_comments_087766.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9315.patch](tarball://root/attachments/some-uuid/ticket9315/trac_9315.patch) by was created at 2010-06-23 03:04:46",
     "created_at": "2010-06-23T03:04:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9315",
     "type": "issue_comment",
@@ -119,7 +119,7 @@ archive/issue_comments_087766.json:
 }
 ```
 
-Attachment
+Attachment [trac_9315.patch](tarball://root/attachments/some-uuid/ticket9315/trac_9315.patch) by was created at 2010-06-23 03:04:46
 
 
 
@@ -371,7 +371,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_087774.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9315.2.patch](tarball://root/attachments/some-uuid/ticket9315/trac_9315.2.patch) by was created at 2010-08-14 02:04:58",
     "created_at": "2010-08-14T02:04:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9315",
     "type": "issue_comment",
@@ -380,7 +380,7 @@ archive/issue_comments_087774.json:
 }
 ```
 
-Attachment
+Attachment [trac_9315.2.patch](tarball://root/attachments/some-uuid/ticket9315/trac_9315.2.patch) by was created at 2010-08-14 02:04:58
 
 
 

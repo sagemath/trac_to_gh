@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8218
 archive/issue_comments_072482.json:
 ```json
 {
-    "body": "Attachment\n\nJust moves the files",
+    "body": "Attachment [trac_8218_move.patch](tarball://root/attachments/some-uuid/ticket8218/trac_8218_move.patch) by roed created at 2010-02-09 04:06:39\n\nJust moves the files",
     "created_at": "2010-02-09T04:06:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_072482.json:
 }
 ```
 
-Attachment
+Attachment [trac_8218_move.patch](tarball://root/attachments/some-uuid/ticket8218/trac_8218_move.patch) by roed created at 2010-02-09 04:06:39
 
 Just moves the files
 
@@ -166,7 +166,7 @@ Changing status from new to needs_review.
 archive/issue_comments_072488.json:
 ```json
 {
-    "body": "Attachment\n\nI created the bundle with \n\n```\nsage -hg bundle -r 13801 --base 13800 ~/patches-out/trac_8218_move.bundle\n```\n\nI believe this is right, but it's been a while since I used bundles.",
+    "body": "Attachment [trac_8218_move.bundle](tarball://root/attachments/some-uuid/ticket8218/trac_8218_move.bundle) by roed created at 2010-02-09 20:09:08\n\nI created the bundle with \n\n```\nsage -hg bundle -r 13801 --base 13800 ~/patches-out/trac_8218_move.bundle\n```\n\nI believe this is right, but it's been a while since I used bundles.",
     "created_at": "2010-02-09T20:09:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
@@ -175,7 +175,7 @@ archive/issue_comments_072488.json:
 }
 ```
 
-Attachment
+Attachment [trac_8218_move.bundle](tarball://root/attachments/some-uuid/ticket8218/trac_8218_move.bundle) by roed created at 2010-02-09 20:09:08
 
 I created the bundle with 
 
@@ -228,7 +228,7 @@ Oops.  Forgot to fix pickles.  Doing so now...
 archive/issue_comments_072491.json:
 ```json
 {
-    "body": "Attachment\n\nFixes the imports.",
+    "body": "Attachment [trac_8218_fixes.patch](tarball://root/attachments/some-uuid/ticket8218/trac_8218_fixes.patch) by roed created at 2010-02-09 21:37:39\n\nFixes the imports.",
     "created_at": "2010-02-09T21:37:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
@@ -237,7 +237,7 @@ archive/issue_comments_072491.json:
 }
 ```
 
-Attachment
+Attachment [trac_8218_fixes.patch](tarball://root/attachments/some-uuid/ticket8218/trac_8218_fixes.patch) by roed created at 2010-02-09 21:37:39
 
 Fixes the imports.
 
@@ -427,7 +427,7 @@ Rebased against 4.3.3: a bundle including all the moves; should be applied first
 archive/issue_comments_072501.json:
 ```json
 {
-    "body": "Attachment\n\nHow do I apply a bundle?  Can it be done in queues?",
+    "body": "Attachment [trac_8218_move_433.bundle](tarball://root/attachments/some-uuid/ticket8218/trac_8218_move_433.bundle) by cremona created at 2010-03-02 17:26:49\n\nHow do I apply a bundle?  Can it be done in queues?",
     "created_at": "2010-03-02T17:26:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
@@ -436,7 +436,7 @@ archive/issue_comments_072501.json:
 }
 ```
 
-Attachment
+Attachment [trac_8218_move_433.bundle](tarball://root/attachments/some-uuid/ticket8218/trac_8218_move_433.bundle) by cremona created at 2010-03-02 17:26:49
 
 How do I apply a bundle?  Can it be done in queues?
 
@@ -673,7 +673,7 @@ This does illustrate why I'd like to get this reviewed.  :-)
 archive/issue_comments_072509.json:
 ```json
 {
-    "body": "Attachment\n\nRebased against 4.3.3: should be applied after the bundle.",
+    "body": "Attachment [trac_8218_fixes_433.patch](tarball://root/attachments/some-uuid/ticket8218/trac_8218_fixes_433.patch) by roed created at 2010-03-12 01:00:12\n\nRebased against 4.3.3: should be applied after the bundle.",
     "created_at": "2010-03-12T01:00:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
@@ -682,7 +682,7 @@ archive/issue_comments_072509.json:
 }
 ```
 
-Attachment
+Attachment [trac_8218_fixes_433.patch](tarball://root/attachments/some-uuid/ticket8218/trac_8218_fixes_433.patch) by roed created at 2010-03-12 01:00:12
 
 Rebased against 4.3.3: should be applied after the bundle.
 
@@ -802,7 +802,7 @@ Set assignee to davidloeffler.
 archive/issue_comments_072515.json:
 ```json
 {
-    "body": "Attachment\n\napply after bundle (instead of trac_8218_fixes_433.patch)",
+    "body": "Attachment [trac_8218_fixes_434alpha1.patch](tarball://root/attachments/some-uuid/ticket8218/trac_8218_fixes_434alpha1.patch) by davidloeffler created at 2010-03-16 12:40:16\n\napply after bundle (instead of trac_8218_fixes_433.patch)",
     "created_at": "2010-03-16T12:40:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
@@ -811,7 +811,7 @@ archive/issue_comments_072515.json:
 }
 ```
 
-Attachment
+Attachment [trac_8218_fixes_434alpha1.patch](tarball://root/attachments/some-uuid/ticket8218/trac_8218_fixes_434alpha1.patch) by davidloeffler created at 2010-03-16 12:40:16
 
 apply after bundle (instead of trac_8218_fixes_433.patch)
 
@@ -962,7 +962,7 @@ Aargh! 19 hours later, my copy of 4.3.4.alpha1 I was building on T2 for testing 
 archive/issue_comments_072523.json:
 ```json
 {
-    "body": "Attachment\n\napply after bundle + trac_8218_fixes_434alpha1.patch",
+    "body": "Attachment [trac_8218_doc.patch](tarball://root/attachments/some-uuid/ticket8218/trac_8218_doc.patch) by davidloeffler created at 2010-03-18 15:34:53\n\napply after bundle + trac_8218_fixes_434alpha1.patch",
     "created_at": "2010-03-18T15:34:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
@@ -971,7 +971,7 @@ archive/issue_comments_072523.json:
 }
 ```
 
-Attachment
+Attachment [trac_8218_doc.patch](tarball://root/attachments/some-uuid/ticket8218/trac_8218_doc.patch) by davidloeffler created at 2010-03-18 15:34:53
 
 apply after bundle + trac_8218_fixes_434alpha1.patch
 

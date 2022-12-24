@@ -250,7 +250,7 @@ Conclusion: call __index__
 archive/issue_comments_000860.json:
 ```json
 {
-    "body": "Attachment\n\npartial fix for bug",
+    "body": "Attachment [trac190-1.patch](tarball://root/attachments/some-uuid/ticket190/trac190-1.patch) by dmharvey created at 2007-08-18 18:51:42\n\npartial fix for bug",
     "created_at": "2007-08-18T18:51:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/190",
     "type": "issue_comment",
@@ -259,7 +259,7 @@ archive/issue_comments_000860.json:
 }
 ```
 
-Attachment
+Attachment [trac190-1.patch](tarball://root/attachments/some-uuid/ticket190/trac190-1.patch) by dmharvey created at 2007-08-18 18:51:42
 
 partial fix for bug
 

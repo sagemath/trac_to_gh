@@ -51,7 +51,7 @@ updates / fixes / additions
 archive/issue_comments_006263.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [combinatorics_updates.patch](tarball://root/attachments/some-uuid/ticket1022/combinatorics_updates.patch) by cwitty created at 2007-10-28 19:09:36",
     "created_at": "2007-10-28T19:09:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1022",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_006263.json:
 }
 ```
 
-Attachment
+Attachment [combinatorics_updates.patch](tarball://root/attachments/some-uuid/ticket1022/combinatorics_updates.patch) by cwitty created at 2007-10-28 19:09:36
 
 
 

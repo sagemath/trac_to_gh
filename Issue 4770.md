@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4770
 archive/issue_comments_036135.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [maxima_cputime.patch](tarball://root/attachments/some-uuid/ticket4770/maxima_cputime.patch) by malb created at 2008-12-12 16:34:39",
     "created_at": "2008-12-12T16:34:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4770",
     "type": "issue_comment",
@@ -49,7 +49,7 @@ archive/issue_comments_036135.json:
 }
 ```
 
-Attachment
+Attachment [maxima_cputime.patch](tarball://root/attachments/some-uuid/ticket4770/maxima_cputime.patch) by malb created at 2008-12-12 16:34:39
 
 
 

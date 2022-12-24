@@ -320,7 +320,7 @@ William
 archive/issue_comments_026784.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket3765/deps) by was created at 2008-09-22 04:54:43",
     "created_at": "2008-09-22T04:54:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3765",
     "type": "issue_comment",
@@ -329,7 +329,7 @@ archive/issue_comments_026784.json:
 }
 ```
 
-Attachment
+Attachment [deps](tarball://root/attachments/some-uuid/ticket3765/deps) by was created at 2008-09-22 04:54:43
 
 
 
@@ -397,7 +397,7 @@ this is rebased against sage-3.2.alpha0 and uses an environment variable MAKE
 archive/issue_comments_026787.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me. I will fix deps so that the Sage libraru depends on pyprocessing.\n\nCheers,\n\nMichael",
+    "body": "Attachment [sage-3765.patch](tarball://root/attachments/some-uuid/ticket3765/sage-3765.patch) by mabshoff created at 2008-10-26 18:11:52\n\nLooks good to me. I will fix deps so that the Sage libraru depends on pyprocessing.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-26T18:11:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3765",
     "type": "issue_comment",
@@ -406,7 +406,7 @@ archive/issue_comments_026787.json:
 }
 ```
 
-Attachment
+Attachment [sage-3765.patch](tarball://root/attachments/some-uuid/ticket3765/sage-3765.patch) by mabshoff created at 2008-10-26 18:11:52
 
 Looks good to me. I will fix deps so that the Sage libraru depends on pyprocessing.
 

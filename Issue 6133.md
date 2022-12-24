@@ -103,7 +103,7 @@ Errors during apply, please fix and refresh trac-6133.patch
 archive/issue_comments_048990.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-6133.patch](tarball://root/attachments/some-uuid/ticket6133/trac-6133.patch) by craigcitro created at 2009-05-28 08:26:32",
     "created_at": "2009-05-28T08:26:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6133",
     "type": "issue_comment",
@@ -112,7 +112,7 @@ archive/issue_comments_048990.json:
 }
 ```
 
-Attachment
+Attachment [trac-6133.patch](tarball://root/attachments/some-uuid/ticket6133/trac-6133.patch) by craigcitro created at 2009-05-28 08:26:32
 
 
 

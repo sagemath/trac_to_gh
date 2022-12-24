@@ -106,7 +106,7 @@ I think this patch fixes this bug. Turns out that the whole morphism system depe
 archive/issue_comments_001795.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_376.hg](tarball://root/attachments/some-uuid/ticket376/trac_376.hg) by was created at 2007-09-07 02:51:26",
     "created_at": "2007-09-07T02:51:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/376",
     "type": "issue_comment",
@@ -115,7 +115,7 @@ archive/issue_comments_001795.json:
 }
 ```
 
-Attachment
+Attachment [trac_376.hg](tarball://root/attachments/some-uuid/ticket376/trac_376.hg) by was created at 2007-09-07 02:51:26
 
 
 

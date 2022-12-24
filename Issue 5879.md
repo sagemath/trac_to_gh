@@ -306,7 +306,7 @@ unique representation patch and he will try to find a solution to the problem in
 archive/issue_comments_046458.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5879-crystal-E-as.patch](tarball://root/attachments/some-uuid/ticket5879/trac_5879-crystal-E-as.patch) by aschilling created at 2009-05-08 00:57:04",
     "created_at": "2009-05-08T00:57:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5879",
     "type": "issue_comment",
@@ -315,7 +315,7 @@ archive/issue_comments_046458.json:
 }
 ```
 
-Attachment
+Attachment [trac_5879-crystal-E-as.patch](tarball://root/attachments/some-uuid/ticket5879/trac_5879-crystal-E-as.patch) by aschilling created at 2009-05-08 00:57:04
 
 
 

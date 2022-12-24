@@ -74,7 +74,7 @@ Changing keywords from "" to "crystals".
 archive/issue_comments_087059.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9250-crystalbug-as.patch](tarball://root/attachments/some-uuid/ticket9250/trac_9250-crystalbug-as.patch) by aschilling created at 2010-06-16 21:52:09",
     "created_at": "2010-06-16T21:52:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9250",
     "type": "issue_comment",
@@ -83,7 +83,7 @@ archive/issue_comments_087059.json:
 }
 ```
 
-Attachment
+Attachment [trac_9250-crystalbug-as.patch](tarball://root/attachments/some-uuid/ticket9250/trac_9250-crystalbug-as.patch) by aschilling created at 2010-06-16 21:52:09
 
 
 

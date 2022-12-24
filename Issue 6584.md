@@ -53,7 +53,7 @@ patch against 4.1.1.alpha0
 archive/issue_comments_053798.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch still applies to 4.3.1.rc0 (miracle!) and all tests in rings/number_field and libs/pari pass.",
+    "body": "Attachment [trac_6584.patch](tarball://root/attachments/some-uuid/ticket6584/trac_6584.patch) by cremona created at 2010-01-18 20:34:03\n\nThe patch still applies to 4.3.1.rc0 (miracle!) and all tests in rings/number_field and libs/pari pass.",
     "created_at": "2010-01-18T20:34:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6584",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_053798.json:
 }
 ```
 
-Attachment
+Attachment [trac_6584.patch](tarball://root/attachments/some-uuid/ticket6584/trac_6584.patch) by cremona created at 2010-01-18 20:34:03
 
 The patch still applies to 4.3.1.rc0 (miracle!) and all tests in rings/number_field and libs/pari pass.
 

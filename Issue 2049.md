@@ -76,7 +76,7 @@ Changing status from new to assigned.
 archive/issue_comments_013271.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch has already been merged (checked in 2.10.2.rc0).",
+    "body": "Attachment [trac-2049-matrix_symbolic_dense_exp.patch](tarball://root/attachments/some-uuid/ticket2049/trac-2049-matrix_symbolic_dense_exp.patch) by AlexGhitza created at 2008-02-23 01:23:26\n\nThis patch has already been merged (checked in 2.10.2.rc0).",
     "created_at": "2008-02-23T01:23:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2049",
     "type": "issue_comment",
@@ -85,7 +85,7 @@ archive/issue_comments_013271.json:
 }
 ```
 
-Attachment
+Attachment [trac-2049-matrix_symbolic_dense_exp.patch](tarball://root/attachments/some-uuid/ticket2049/trac-2049-matrix_symbolic_dense_exp.patch) by AlexGhitza created at 2008-02-23 01:23:26
 
 This patch has already been merged (checked in 2.10.2.rc0).
 

@@ -47,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9810
 archive/issue_comments_096736.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9810_cone_faces_invalidates_facets.patch](tarball://root/attachments/some-uuid/ticket9810/trac_9810_cone_faces_invalidates_facets.patch) by novoselt created at 2010-08-26 21:31:44",
     "created_at": "2010-08-26T21:31:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9809",
     "type": "issue_comment",
@@ -56,7 +56,7 @@ archive/issue_comments_096736.json:
 }
 ```
 
-Attachment
+Attachment [trac_9810_cone_faces_invalidates_facets.patch](tarball://root/attachments/some-uuid/ticket9810/trac_9810_cone_faces_invalidates_facets.patch) by novoselt created at 2010-08-26 21:31:44
 
 
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4905
 archive/issue_comments_037211.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4905.patch](tarball://root/attachments/some-uuid/ticket4905/trac_4905.patch) by mhansen created at 2009-01-02 02:57:18",
     "created_at": "2009-01-02T02:57:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4905",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_037211.json:
 }
 ```
 
-Attachment
+Attachment [trac_4905.patch](tarball://root/attachments/some-uuid/ticket4905/trac_4905.patch) by mhansen created at 2009-01-02 02:57:18
 
 
 
@@ -230,7 +230,7 @@ What else needs to be done to review this?
 archive/issue_comments_037217.json:
 ```json
 {
-    "body": "Attachment\n\nI've updated the second patch to take care of these.",
+    "body": "Attachment [trac_4905-2.patch](tarball://root/attachments/some-uuid/ticket4905/trac_4905-2.patch) by mhansen created at 2009-01-02 20:16:18\n\nI've updated the second patch to take care of these.",
     "created_at": "2009-01-02T20:16:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4905",
     "type": "issue_comment",
@@ -239,7 +239,7 @@ archive/issue_comments_037217.json:
 }
 ```
 
-Attachment
+Attachment [trac_4905-2.patch](tarball://root/attachments/some-uuid/ticket4905/trac_4905-2.patch) by mhansen created at 2009-01-02 20:16:18
 
 I've updated the second patch to take care of these.
 
@@ -320,7 +320,7 @@ It seems like AUTHOR: doesn't get changed to AUTHOR::.  Also, I'm worried about 
 archive/issue_comments_037220.json:
 ```json
 {
-    "body": "Attachment\n\nThese patches look good to me. \n\nI've forgotten now what exactly is involved in giving this a positive review beyond just looking them over, but this looks like it should go in to me.",
+    "body": "Attachment [trac_4905-2.2.patch](tarball://root/attachments/some-uuid/ticket4905/trac_4905-2.2.patch) by wdj created at 2009-01-09 00:41:11\n\nThese patches look good to me. \n\nI've forgotten now what exactly is involved in giving this a positive review beyond just looking them over, but this looks like it should go in to me.",
     "created_at": "2009-01-09T00:41:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4905",
     "type": "issue_comment",
@@ -329,7 +329,7 @@ archive/issue_comments_037220.json:
 }
 ```
 
-Attachment
+Attachment [trac_4905-2.2.patch](tarball://root/attachments/some-uuid/ticket4905/trac_4905-2.2.patch) by wdj created at 2009-01-09 00:41:11
 
 These patches look good to me. 
 
@@ -342,7 +342,7 @@ I've forgotten now what exactly is involved in giving this a positive review bey
 archive/issue_comments_037221.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage.coding-final.patch](tarball://root/attachments/some-uuid/ticket4905/sage.coding-final.patch) by mhansen created at 2009-02-21 19:15:51",
     "created_at": "2009-02-21T19:15:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4905",
     "type": "issue_comment",
@@ -351,7 +351,7 @@ archive/issue_comments_037221.json:
 }
 ```
 
-Attachment
+Attachment [sage.coding-final.patch](tarball://root/attachments/some-uuid/ticket4905/sage.coding-final.patch) by mhansen created at 2009-02-21 19:15:51
 
 
 

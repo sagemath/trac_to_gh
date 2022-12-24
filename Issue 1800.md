@@ -93,7 +93,7 @@ It looks like coercion from symbolic expressions to intervals is broken (because
 archive/issue_comments_011387.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-1800.patch](tarball://root/attachments/some-uuid/ticket1800/trac-1800.patch) by cwitty created at 2008-01-19 14:53:31",
     "created_at": "2008-01-19T14:53:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1800",
     "type": "issue_comment",
@@ -102,7 +102,7 @@ archive/issue_comments_011387.json:
 }
 ```
 
-Attachment
+Attachment [trac-1800.patch](tarball://root/attachments/some-uuid/ticket1800/trac-1800.patch) by cwitty created at 2008-01-19 14:53:31
 
 
 

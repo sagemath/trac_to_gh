@@ -123,7 +123,7 @@ sage: m.rank()
 archive/issue_comments_038211.json:
 ```json
 {
-    "body": "Attachment\n\nAdd a doctest computing the rank of one of these matrices.",
+    "body": "Attachment [sage-trac_5014.patch](tarball://root/attachments/some-uuid/ticket5014/sage-trac_5014.patch) by mjo created at 2012-01-08 00:07:14\n\nAdd a doctest computing the rank of one of these matrices.",
     "created_at": "2012-01-08T00:07:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5014",
     "type": "issue_comment",
@@ -132,7 +132,7 @@ archive/issue_comments_038211.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac_5014.patch](tarball://root/attachments/some-uuid/ticket5014/sage-trac_5014.patch) by mjo created at 2012-01-08 00:07:14
 
 Add a doctest computing the rank of one of these matrices.
 

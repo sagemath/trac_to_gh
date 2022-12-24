@@ -57,7 +57,7 @@ Changing status from new to needs_review.
 archive/issue_comments_066780.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7754_weyl_group_optimizations-nt.patch](tarball://root/attachments/some-uuid/ticket7754/trac_7754_weyl_group_optimizations-nt.patch) by nthiery created at 2009-12-23 23:15:15",
     "created_at": "2009-12-23T23:15:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7754",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_066780.json:
 }
 ```
 
-Attachment
+Attachment [trac_7754_weyl_group_optimizations-nt.patch](tarball://root/attachments/some-uuid/ticket7754/trac_7754_weyl_group_optimizations-nt.patch) by nthiery created at 2009-12-23 23:15:15
 
 
 

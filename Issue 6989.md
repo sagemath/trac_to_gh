@@ -67,7 +67,7 @@ Changing status from new to needs_review.
 archive/issue_comments_057807.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-6989-copy-list.patch](tarball://root/attachments/some-uuid/ticket6989/trac-6989-copy-list.patch) by jason created at 2010-01-20 10:37:34",
     "created_at": "2010-01-20T10:37:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6989",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_057807.json:
 }
 ```
 
-Attachment
+Attachment [trac-6989-copy-list.patch](tarball://root/attachments/some-uuid/ticket6989/trac-6989-copy-list.patch) by jason created at 2010-01-20 10:37:34
 
 
 

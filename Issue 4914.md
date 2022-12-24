@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4914
 archive/issue_comments_037288.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4914.patch](tarball://root/attachments/some-uuid/ticket4914/trac_4914.patch) by mhansen created at 2009-01-02 02:54:31",
     "created_at": "2009-01-02T02:54:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4914",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_037288.json:
 }
 ```
 
-Attachment
+Attachment [trac_4914.patch](tarball://root/attachments/some-uuid/ticket4914/trac_4914.patch) by mhansen created at 2009-01-02 02:54:31
 
 
 
@@ -116,7 +116,7 @@ For (3), I think all of the linear groups stuff was there before they got moved 
 archive/issue_comments_037291.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4914-2.patch](tarball://root/attachments/some-uuid/ticket4914/trac_4914-2.patch) by mhansen created at 2009-01-02 20:25:47",
     "created_at": "2009-01-02T20:25:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4914",
     "type": "issue_comment",
@@ -125,7 +125,7 @@ archive/issue_comments_037291.json:
 }
 ```
 
-Attachment
+Attachment [trac_4914-2.patch](tarball://root/attachments/some-uuid/ticket4914/trac_4914-2.patch) by mhansen created at 2009-01-02 20:25:47
 
 
 
@@ -222,7 +222,7 @@ It was my fault. I posted the patch following the referee's suggestions but simp
 archive/issue_comments_037296.json:
 ```json
 {
-    "body": "Attachment\n\nlatex-fix-4914.patch is a one-character change that's necessary to allow generation of the PDF docs.  Note that this is not in any way a review of the original patch; I haven't even looked at it.",
+    "body": "Attachment [latex-fix-4914.patch](tarball://root/attachments/some-uuid/ticket4914/latex-fix-4914.patch) by cwitty created at 2009-01-23 08:11:40\n\nlatex-fix-4914.patch is a one-character change that's necessary to allow generation of the PDF docs.  Note that this is not in any way a review of the original patch; I haven't even looked at it.",
     "created_at": "2009-01-23T08:11:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4914",
     "type": "issue_comment",
@@ -231,7 +231,7 @@ archive/issue_comments_037296.json:
 }
 ```
 
-Attachment
+Attachment [latex-fix-4914.patch](tarball://root/attachments/some-uuid/ticket4914/latex-fix-4914.patch) by cwitty created at 2009-01-23 08:11:40
 
 latex-fix-4914.patch is a one-character change that's necessary to allow generation of the PDF docs.  Note that this is not in any way a review of the original patch; I haven't even looked at it.
 
@@ -340,7 +340,7 @@ Looks good to me!
 archive/issue_comments_037302.json:
 ```json
 {
-    "body": "Attachment\n\nMerged in Sage 3.4.alpha0.\n\nCheers,\n\nMichael",
+    "body": "Attachment [sage.groups-final.patch](tarball://root/attachments/some-uuid/ticket4914/sage.groups-final.patch) by mabshoff created at 2009-02-24 18:47:00\n\nMerged in Sage 3.4.alpha0.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-24T18:47:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4914",
     "type": "issue_comment",
@@ -349,7 +349,7 @@ archive/issue_comments_037302.json:
 }
 ```
 
-Attachment
+Attachment [sage.groups-final.patch](tarball://root/attachments/some-uuid/ticket4914/sage.groups-final.patch) by mabshoff created at 2009-02-24 18:47:00
 
 Merged in Sage 3.4.alpha0.
 

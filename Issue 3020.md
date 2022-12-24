@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3020
 archive/issue_comments_020746.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9606.patch](tarball://root/attachments/some-uuid/ticket3020/9606.patch) by cremona created at 2008-04-24 21:40:33",
     "created_at": "2008-04-24T21:40:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3020",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_020746.json:
 }
 ```
 
-Attachment
+Attachment [9606.patch](tarball://root/attachments/some-uuid/ticket3020/9606.patch) by cremona created at 2008-04-24 21:40:33
 
 
 
@@ -150,7 +150,7 @@ I checked for k<1000 and was intending to do the rest (as you say, to be formall
 archive/issue_comments_020751.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9607.patch](tarball://root/attachments/some-uuid/ticket3020/9607.patch) by cremona created at 2008-04-25 08:22:13",
     "created_at": "2008-04-25T08:22:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3020",
     "type": "issue_comment",
@@ -159,7 +159,7 @@ archive/issue_comments_020751.json:
 }
 ```
 
-Attachment
+Attachment [9607.patch](tarball://root/attachments/some-uuid/ticket3020/9607.patch) by cremona created at 2008-04-25 08:22:13
 
 
 
@@ -222,7 +222,7 @@ apply after both the preceding patches
 archive/issue_comments_020755.json:
 ```json
 {
-    "body": "Attachment\n\nTrivial fix to previous, correcting a very stupid Python indentation howler -- which meant that for all n for which the tabulated irreducib;e was a trinomial, it did not return the table poly but searched for one.",
+    "body": "Attachment [9608.patch](tarball://root/attachments/some-uuid/ticket3020/9608.patch) by cremona created at 2008-04-27 16:11:35\n\nTrivial fix to previous, correcting a very stupid Python indentation howler -- which meant that for all n for which the tabulated irreducib;e was a trinomial, it did not return the table poly but searched for one.",
     "created_at": "2008-04-27T16:11:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3020",
     "type": "issue_comment",
@@ -231,7 +231,7 @@ archive/issue_comments_020755.json:
 }
 ```
 
-Attachment
+Attachment [9608.patch](tarball://root/attachments/some-uuid/ticket3020/9608.patch) by cremona created at 2008-04-27 16:11:35
 
 Trivial fix to previous, correcting a very stupid Python indentation howler -- which meant that for all n for which the tabulated irreducib;e was a trinomial, it did not return the table poly but searched for one.
 
@@ -310,7 +310,7 @@ Sorry forgot to change the summary
 archive/issue_comments_020759.json:
 ```json
 {
-    "body": "Attachment\n\nupdated patch which fixes the typo",
+    "body": "Attachment [GF2X_sparse_poly.patch](tarball://root/attachments/some-uuid/ticket3020/GF2X_sparse_poly.patch) by malb created at 2008-05-06 10:16:34\n\nupdated patch which fixes the typo",
     "created_at": "2008-05-06T10:16:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3020",
     "type": "issue_comment",
@@ -319,7 +319,7 @@ archive/issue_comments_020759.json:
 }
 ```
 
-Attachment
+Attachment [GF2X_sparse_poly.patch](tarball://root/attachments/some-uuid/ticket3020/GF2X_sparse_poly.patch) by malb created at 2008-05-06 10:16:34
 
 updated patch which fixes the typo
 

@@ -221,7 +221,7 @@ doesn't leak either.
 archive/issue_comments_002707.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_530.patch](tarball://root/attachments/some-uuid/ticket530/trac_530.patch) by malb created at 2008-04-05 21:23:17",
     "created_at": "2008-04-05T21:23:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/530",
     "type": "issue_comment",
@@ -230,7 +230,7 @@ archive/issue_comments_002707.json:
 }
 ```
 
-Attachment
+Attachment [trac_530.patch](tarball://root/attachments/some-uuid/ticket530/trac_530.patch) by malb created at 2008-04-05 21:23:17
 
 
 

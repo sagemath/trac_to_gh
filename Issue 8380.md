@@ -96,7 +96,7 @@ IGNORE THIS PATCH
 archive/issue_comments_074935.json:
 ```json
 {
-    "body": "Attachment\n\nThis updated patch catches GAP3's syntax error messages.\n\nThe interface seems pretty robust now, so its ready for review. Please try it out.",
+    "body": "Attachment [gap3_interface_v4.3.2.2.patch](tarball://root/attachments/some-uuid/ticket8380/gap3_interface_v4.3.2.2.patch) by saliola created at 2010-03-02 03:00:33\n\nThis updated patch catches GAP3's syntax error messages.\n\nThe interface seems pretty robust now, so its ready for review. Please try it out.",
     "created_at": "2010-03-02T03:00:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8380",
     "type": "issue_comment",
@@ -105,7 +105,7 @@ archive/issue_comments_074935.json:
 }
 ```
 
-Attachment
+Attachment [gap3_interface_v4.3.2.2.patch](tarball://root/attachments/some-uuid/ticket8380/gap3_interface_v4.3.2.2.patch) by saliola created at 2010-03-02 03:00:33
 
 This updated patch catches GAP3's syntax error messages.
 
@@ -118,7 +118,7 @@ The interface seems pretty robust now, so its ready for review. Please try it ou
 archive/issue_comments_074936.json:
 ```json
 {
-    "body": "Attachment\n\nPatch for Sage version 4.3.2 only.",
+    "body": "Attachment [gap3_interface_v4.3.2.patch](tarball://root/attachments/some-uuid/ticket8380/gap3_interface_v4.3.2.patch) by saliola created at 2010-03-02 03:02:27\n\nPatch for Sage version 4.3.2 only.",
     "created_at": "2010-03-02T03:02:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8380",
     "type": "issue_comment",
@@ -127,7 +127,7 @@ archive/issue_comments_074936.json:
 }
 ```
 
-Attachment
+Attachment [gap3_interface_v4.3.2.patch](tarball://root/attachments/some-uuid/ticket8380/gap3_interface_v4.3.2.patch) by saliola created at 2010-03-02 03:02:27
 
 Patch for Sage version 4.3.2 only.
 
@@ -138,7 +138,7 @@ Patch for Sage version 4.3.2 only.
 archive/issue_comments_074937.json:
 ```json
 {
-    "body": "Attachment\n\nPatch for Sage version 4.3.3 only.",
+    "body": "Attachment [gap3_interface_v4.3.3.patch](tarball://root/attachments/some-uuid/ticket8380/gap3_interface_v4.3.3.patch) by saliola created at 2010-03-02 03:02:59\n\nPatch for Sage version 4.3.3 only.",
     "created_at": "2010-03-02T03:02:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8380",
     "type": "issue_comment",
@@ -147,7 +147,7 @@ archive/issue_comments_074937.json:
 }
 ```
 
-Attachment
+Attachment [gap3_interface_v4.3.3.patch](tarball://root/attachments/some-uuid/ticket8380/gap3_interface_v4.3.3.patch) by saliola created at 2010-03-02 03:02:59
 
 Patch for Sage version 4.3.3 only.
 
@@ -158,7 +158,7 @@ Patch for Sage version 4.3.3 only.
 archive/issue_comments_074938.json:
 ```json
 {
-    "body": "Attachment\n\nDocumentation",
+    "body": "Attachment [gap3_interface_doc.pdf](tarball://root/attachments/some-uuid/ticket8380/gap3_interface_doc.pdf) by saliola created at 2010-03-02 03:03:40\n\nDocumentation",
     "created_at": "2010-03-02T03:03:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8380",
     "type": "issue_comment",
@@ -167,7 +167,7 @@ archive/issue_comments_074938.json:
 }
 ```
 
-Attachment
+Attachment [gap3_interface_doc.pdf](tarball://root/attachments/some-uuid/ticket8380/gap3_interface_doc.pdf) by saliola created at 2010-03-02 03:03:40
 
 Documentation
 
@@ -352,7 +352,7 @@ archive/issue_comments_074945.json:
 archive/issue_comments_074946.json:
 ```json
 {
-    "body": "Attachment\n\ndoctest output",
+    "body": "Attachment [trac_8380_test.log](tarball://root/attachments/some-uuid/ticket8380/trac_8380_test.log) by burcin created at 2010-05-04 20:52:22\n\ndoctest output",
     "created_at": "2010-05-04T20:52:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8380",
     "type": "issue_comment",
@@ -361,7 +361,7 @@ archive/issue_comments_074946.json:
 }
 ```
 
-Attachment
+Attachment [trac_8380_test.log](tarball://root/attachments/some-uuid/ticket8380/trac_8380_test.log) by burcin created at 2010-05-04 20:52:22
 
 doctest output
 
@@ -555,7 +555,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_074954.json:
 ```json
 {
-    "body": "Attachment\n\nI've uploaded my changes in a separate patch to ease the review. Apply the patches in this order:\n\n* attachment:gap3_interface_v4.3.3.patch\n* attachment:gap3_interface_patch2.patch\n\n\nReplying to [comment:11 burcin]:\n\n> Here is my review for the patch:\n>  * There is no doctest for the change in `sage/interfaces/expect.py`\n\nThe problem here was that a variable name could be overwritten; before the\npatch:\n\n```\nsage: x = gap(3)\nsage: gap.clear(x.name())\nsage: gap.clear(x.name())\nsage: x = gap(3); x\n3\nsage: y = gap(4); y\n4\nsage: x # this should be 3!\n4\n```\n\nThis is now corrected, and I added the above as a doctest.\n\n>  * The method `load_package()` in `sage/interfaces/gap.py` doesn't have a doctest. I understand that this is copied as is from the old version, but if there is any package that is included by default in the GAP4 distribution (or one which we include in our package), we should add a test.\n\nNeither Sage nor Gap seem to distribute any packages (see the\n`$SAGE_ROOT/local/lib/gap-4.4.12/pkg` directory). I did, however,\nadd a test that at least tests that it raises an appropriate exception.\n\n>  * In `sage/interfaces/gap3.py`\n>   * Is the bug in the pexpect interface mentioned around line 42 reported on trac? Can you mention the ticket number in that comment. Is this specific to the GAP interface?\n\nYes, it is #8471. I added the ticket number to the comment, and\ncross-referenced that ticket to this one.\n\nIt is not specific to the GAP interface. It is an issue with any\n`Expect` instance. See #8471 for details.\n\n>   * does the GAP3 banner depend on the specific package installed?\n\nIt shouldn't since the software is so old. Note that when the banners are\nprinted in the documentation, it is only for illustration purposes. Those\ncommands are not tested because each spawns a console (which would require\nuser input to quit).\n\n>   * There are some doctests that depend on chevie, (`RequirePackage('\"chevie\"')` and `load_package(\"chevie\")`), these should be optional.\n\nI've marked them as `#optional - gap3chevie` instead of just\n`#optional - gap3`.\n\n>   * The docstring for `GAP3Record.__getattr__` ends with \" :: \" then an empty line. There are many places where there is an empty line at the end of the docstring, or right after.\n\nCorrected.\n\n> The optional package for gap3 in comment:9 looks good in general. Maybe the fact that it's binary only can be made more obvious, for example by adding a `bin` to the package name. \n\nThe discussion surrounding spkgs should be moved to #8906, which proposes\na source gap3 spkg instead.\n\n> BTW, it's not possible to install the version of GAP3 downloaded from the main web site (http://www.gap-system.org/Gap3/Download3/download.html) easily. I suggest moving the link to Frank Luebeck's distribution to the first place, and putting this option last.\n\nDone. I listed ticket #8906 as the first option (it should be changed when\nthat ticket is resolved).",
+    "body": "Attachment [gap3_interface_patch2.patch](tarball://root/attachments/some-uuid/ticket8380/gap3_interface_patch2.patch) by saliola created at 2010-05-12 03:12:54\n\nI've uploaded my changes in a separate patch to ease the review. Apply the patches in this order:\n\n* attachment:gap3_interface_v4.3.3.patch\n* attachment:gap3_interface_patch2.patch\n\n\nReplying to [comment:11 burcin]:\n\n> Here is my review for the patch:\n>  * There is no doctest for the change in `sage/interfaces/expect.py`\n\nThe problem here was that a variable name could be overwritten; before the\npatch:\n\n```\nsage: x = gap(3)\nsage: gap.clear(x.name())\nsage: gap.clear(x.name())\nsage: x = gap(3); x\n3\nsage: y = gap(4); y\n4\nsage: x # this should be 3!\n4\n```\n\nThis is now corrected, and I added the above as a doctest.\n\n>  * The method `load_package()` in `sage/interfaces/gap.py` doesn't have a doctest. I understand that this is copied as is from the old version, but if there is any package that is included by default in the GAP4 distribution (or one which we include in our package), we should add a test.\n\nNeither Sage nor Gap seem to distribute any packages (see the\n`$SAGE_ROOT/local/lib/gap-4.4.12/pkg` directory). I did, however,\nadd a test that at least tests that it raises an appropriate exception.\n\n>  * In `sage/interfaces/gap3.py`\n>   * Is the bug in the pexpect interface mentioned around line 42 reported on trac? Can you mention the ticket number in that comment. Is this specific to the GAP interface?\n\nYes, it is #8471. I added the ticket number to the comment, and\ncross-referenced that ticket to this one.\n\nIt is not specific to the GAP interface. It is an issue with any\n`Expect` instance. See #8471 for details.\n\n>   * does the GAP3 banner depend on the specific package installed?\n\nIt shouldn't since the software is so old. Note that when the banners are\nprinted in the documentation, it is only for illustration purposes. Those\ncommands are not tested because each spawns a console (which would require\nuser input to quit).\n\n>   * There are some doctests that depend on chevie, (`RequirePackage('\"chevie\"')` and `load_package(\"chevie\")`), these should be optional.\n\nI've marked them as `#optional - gap3chevie` instead of just\n`#optional - gap3`.\n\n>   * The docstring for `GAP3Record.__getattr__` ends with \" :: \" then an empty line. There are many places where there is an empty line at the end of the docstring, or right after.\n\nCorrected.\n\n> The optional package for gap3 in comment:9 looks good in general. Maybe the fact that it's binary only can be made more obvious, for example by adding a `bin` to the package name. \n\nThe discussion surrounding spkgs should be moved to #8906, which proposes\na source gap3 spkg instead.\n\n> BTW, it's not possible to install the version of GAP3 downloaded from the main web site (http://www.gap-system.org/Gap3/Download3/download.html) easily. I suggest moving the link to Frank Luebeck's distribution to the first place, and putting this option last.\n\nDone. I listed ticket #8906 as the first option (it should be changed when\nthat ticket is resolved).",
     "created_at": "2010-05-12T03:12:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8380",
     "type": "issue_comment",
@@ -564,7 +564,7 @@ archive/issue_comments_074954.json:
 }
 ```
 
-Attachment
+Attachment [gap3_interface_patch2.patch](tarball://root/attachments/some-uuid/ticket8380/gap3_interface_patch2.patch) by saliola created at 2010-05-12 03:12:54
 
 I've uploaded my changes in a separate patch to ease the review. Apply the patches in this order:
 
@@ -667,7 +667,7 @@ Ignore that the patch name says 4.3.3; it should apply cleanly against recent ve
 archive/issue_comments_074956.json:
 ```json
 {
-    "body": "Attachment\n\nFranco's patch2 with a minor change",
+    "body": "Attachment [trac_8380-gap3_interface_patch2.take2.patch](tarball://root/attachments/some-uuid/ticket8380/trac_8380-gap3_interface_patch2.take2.patch) by burcin created at 2010-05-22 09:03:51\n\nFranco's patch2 with a minor change",
     "created_at": "2010-05-22T09:03:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8380",
     "type": "issue_comment",
@@ -676,7 +676,7 @@ archive/issue_comments_074956.json:
 }
 ```
 
-Attachment
+Attachment [trac_8380-gap3_interface_patch2.take2.patch](tarball://root/attachments/some-uuid/ticket8380/trac_8380-gap3_interface_patch2.take2.patch) by burcin created at 2010-05-22 09:03:51
 
 Franco's patch2 with a minor change
 
@@ -823,7 +823,7 @@ sage:
 archive/issue_comments_074962.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8380-revert_changes_to_expect.patch](tarball://root/attachments/some-uuid/ticket8380/trac_8380-revert_changes_to_expect.patch) by saliola created at 2010-06-08 03:22:25",
     "created_at": "2010-06-08T03:22:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8380",
     "type": "issue_comment",
@@ -832,7 +832,7 @@ archive/issue_comments_074962.json:
 }
 ```
 
-Attachment
+Attachment [trac_8380-revert_changes_to_expect.patch](tarball://root/attachments/some-uuid/ticket8380/trac_8380-revert_changes_to_expect.patch) by saliola created at 2010-06-08 03:22:25
 
 
 

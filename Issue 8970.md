@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8970
 archive/issue_comments_082665.json:
 ```json
 {
-    "body": "Attachment\n\npatch against 4.4.1",
+    "body": "Attachment [trac_8970-gap_integer_mod.patch](tarball://root/attachments/some-uuid/ticket8970/trac_8970-gap_integer_mod.patch) by davidloeffler created at 2010-05-15 18:26:49\n\npatch against 4.4.1",
     "created_at": "2010-05-15T18:26:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8970",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_082665.json:
 }
 ```
 
-Attachment
+Attachment [trac_8970-gap_integer_mod.patch](tarball://root/attachments/some-uuid/ticket8970/trac_8970-gap_integer_mod.patch) by davidloeffler created at 2010-05-15 18:26:49
 
 patch against 4.4.1
 

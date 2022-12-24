@@ -55,7 +55,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4140
 archive/issue_comments_030061.json:
 ```json
 {
-    "body": "Attachment\n\nHi David,\n\nit should be one issue per ticket, so I edited this ticket to be limited to the clisp issue. \n\nThe problem with R should be another ticket and fixed:\n\n```\nsage-3.1.2/local/lib/R/library/tcltk/libs/tcltk.so links to non-whitelisted file /sw/lib/libtcl8.4.dylib\nsage-3.1.2/local/lib/R/library/tcltk/libs/tcltk.so links to non-whitelisted file /sw/lib/libtk8.4.dylib\n```\n\nThe db extension with Python\n\n```\nsage-3.1.2/local/lib/python2.5/lib-dynload/_bsddb.so links to non-whitelisted file /sw/lib/libdb-4.4.dylib\n```\n\nis something we will likely not fix since it should not cause any trouble.\n\nYou alsp don't need to add your email address to the CC field since that should happen automatically for any ticket you are involved with. If not check \"settings\" in the upper right corner. \n\nCheers,\n\nMichael",
+    "body": "Attachment [sage-library-whitelist-osx-](tarball://root/attachments/some-uuid/ticket4140/sage-library-whitelist-osx-) by mabshoff created at 2008-09-18 00:25:20\n\nHi David,\n\nit should be one issue per ticket, so I edited this ticket to be limited to the clisp issue. \n\nThe problem with R should be another ticket and fixed:\n\n```\nsage-3.1.2/local/lib/R/library/tcltk/libs/tcltk.so links to non-whitelisted file /sw/lib/libtcl8.4.dylib\nsage-3.1.2/local/lib/R/library/tcltk/libs/tcltk.so links to non-whitelisted file /sw/lib/libtk8.4.dylib\n```\n\nThe db extension with Python\n\n```\nsage-3.1.2/local/lib/python2.5/lib-dynload/_bsddb.so links to non-whitelisted file /sw/lib/libdb-4.4.dylib\n```\n\nis something we will likely not fix since it should not cause any trouble.\n\nYou alsp don't need to add your email address to the CC field since that should happen automatically for any ticket you are involved with. If not check \"settings\" in the upper right corner. \n\nCheers,\n\nMichael",
     "created_at": "2008-09-18T00:25:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4140",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_030061.json:
 }
 ```
 
-Attachment
+Attachment [sage-library-whitelist-osx-](tarball://root/attachments/some-uuid/ticket4140/sage-library-whitelist-osx-) by mabshoff created at 2008-09-18 00:25:20
 
 Hi David,
 

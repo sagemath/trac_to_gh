@@ -94,7 +94,7 @@ revised patch
 archive/issue_comments_014655.json:
 ```json
 {
-    "body": "Attachment\n\nI've replaced the patch with one in which \"trac #2216 has been fixed\" is changed into something more informative for the user (\"an order in a subfield\").",
+    "body": "Attachment [2216-order_bug.patch](tarball://root/attachments/some-uuid/ticket2216/2216-order_bug.patch) by AlexGhitza created at 2008-04-26 13:42:30\n\nI've replaced the patch with one in which \"trac #2216 has been fixed\" is changed into something more informative for the user (\"an order in a subfield\").",
     "created_at": "2008-04-26T13:42:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2216",
     "type": "issue_comment",
@@ -103,7 +103,7 @@ archive/issue_comments_014655.json:
 }
 ```
 
-Attachment
+Attachment [2216-order_bug.patch](tarball://root/attachments/some-uuid/ticket2216/2216-order_bug.patch) by AlexGhitza created at 2008-04-26 13:42:30
 
 I've replaced the patch with one in which "trac #2216 has been fixed" is changed into something more informative for the user ("an order in a subfield").
 

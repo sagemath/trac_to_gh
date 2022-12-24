@@ -47,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1331
 archive/issue_comments_008521.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-2.8.14-fix-complex_double-doctest-failure-on-Sparc.patch](tarball://root/attachments/some-uuid/ticket1331/Sage-2.8.14-fix-complex_double-doctest-failure-on-Sparc.patch) by mabshoff created at 2007-11-28 23:20:18",
     "created_at": "2007-11-28T23:20:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1331",
     "type": "issue_comment",
@@ -56,7 +56,7 @@ archive/issue_comments_008521.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.8.14-fix-complex_double-doctest-failure-on-Sparc.patch](tarball://root/attachments/some-uuid/ticket1331/Sage-2.8.14-fix-complex_double-doctest-failure-on-Sparc.patch) by mabshoff created at 2007-11-28 23:20:18
 
 
 

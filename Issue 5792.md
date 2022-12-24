@@ -122,7 +122,7 @@ I've attached a patch that does the former.
 archive/issue_comments_045358.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-5792.patch](tarball://root/attachments/some-uuid/ticket5792/trac-5792.patch) by craigcitro created at 2009-04-16 01:11:40",
     "created_at": "2009-04-16T01:11:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5792",
     "type": "issue_comment",
@@ -131,7 +131,7 @@ archive/issue_comments_045358.json:
 }
 ```
 
-Attachment
+Attachment [trac-5792.patch](tarball://root/attachments/some-uuid/ticket5792/trac-5792.patch) by craigcitro created at 2009-04-16 01:11:40
 
 
 
@@ -197,7 +197,7 @@ So my vote: we commit this patch, and then open a new ticket to clean up this `z
 archive/issue_comments_045361.json:
 ```json
 {
-    "body": "Attachment\n\nreplaces previous patch, apply over #4357 and #5250",
+    "body": "Attachment [trac_5792_rebase.patch](tarball://root/attachments/some-uuid/ticket5792/trac_5792_rebase.patch) by davidloeffler created at 2009-05-11 08:55:19\n\nreplaces previous patch, apply over #4357 and #5250",
     "created_at": "2009-05-11T08:55:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5792",
     "type": "issue_comment",
@@ -206,7 +206,7 @@ archive/issue_comments_045361.json:
 }
 ```
 
-Attachment
+Attachment [trac_5792_rebase.patch](tarball://root/attachments/some-uuid/ticket5792/trac_5792_rebase.patch) by davidloeffler created at 2009-05-11 08:55:19
 
 replaces previous patch, apply over #4357 and #5250
 

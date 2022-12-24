@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5156
 archive/issue_comments_039490.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5156.patch](tarball://root/attachments/some-uuid/ticket5156/trac_5156.patch) by was created at 2009-02-02 08:35:43",
     "created_at": "2009-02-02T08:35:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5156",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_039490.json:
 }
 ```
 
-Attachment
+Attachment [trac_5156.patch](tarball://root/attachments/some-uuid/ticket5156/trac_5156.patch) by was created at 2009-02-02 08:35:43
 
 
 
@@ -49,7 +49,7 @@ Attachment
 archive/issue_comments_039491.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5156-part2.patch](tarball://root/attachments/some-uuid/ticket5156/trac_5156-part2.patch) by was created at 2009-02-02 09:01:58",
     "created_at": "2009-02-02T09:01:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5156",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_039491.json:
 }
 ```
 
-Attachment
+Attachment [trac_5156-part2.patch](tarball://root/attachments/some-uuid/ticket5156/trac_5156-part2.patch) by was created at 2009-02-02 09:01:58
 
 
 
@@ -372,7 +372,7 @@ Michael
 archive/issue_comments_039504.json:
 ```json
 {
-    "body": "Attachment\n\nFinally the patch is ready to merge. Merge only the latest patch.",
+    "body": "Attachment [trac_5156-rebased_and_flattened.patch](tarball://root/attachments/some-uuid/ticket5156/trac_5156-rebased_and_flattened.patch) by rlm created at 2009-04-08 21:24:20\n\nFinally the patch is ready to merge. Merge only the latest patch.",
     "created_at": "2009-04-08T21:24:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5156",
     "type": "issue_comment",
@@ -381,7 +381,7 @@ archive/issue_comments_039504.json:
 }
 ```
 
-Attachment
+Attachment [trac_5156-rebased_and_flattened.patch](tarball://root/attachments/some-uuid/ticket5156/trac_5156-rebased_and_flattened.patch) by rlm created at 2009-04-08 21:24:20
 
 Finally the patch is ready to merge. Merge only the latest patch.
 

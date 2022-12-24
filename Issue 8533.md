@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8533
 archive/issue_comments_077110.json:
 ```json
 {
-    "body": "Attachment\n\nbased on Sage 4.3.4.alpha1; depends on #8442",
+    "body": "Attachment [trac_8533-browse-doc.patch](tarball://root/attachments/some-uuid/ticket8533/trac_8533-browse-doc.patch) by mvngu created at 2010-03-14 00:03:49\n\nbased on Sage 4.3.4.alpha1; depends on #8442",
     "created_at": "2010-03-14T00:03:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8533",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_077110.json:
 }
 ```
 
-Attachment
+Attachment [trac_8533-browse-doc.patch](tarball://root/attachments/some-uuid/ticket8533/trac_8533-browse-doc.patch) by mvngu created at 2010-03-14 00:03:49
 
 based on Sage 4.3.4.alpha1; depends on #8442
 
@@ -213,7 +213,7 @@ based on Sage 4.3.4.alpha1; depends on #8442
 archive/issue_comments_077118.json:
 ```json
 {
-    "body": "Attachment\n\nThe latest version [trac_8533-browse-doc-take2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8533/trac_8533-browse-doc-take2.patch) now allows you to do these:\n\n* `sage.groups.tutorial()`\n* `sage.combinat.tutorial()`\n* `sage.crypto.tutorial()`\n\nThat is, there is only one tutorial for each Sage top level module.",
+    "body": "Attachment [trac_8533-browse-doc-take2.patch](tarball://root/attachments/some-uuid/ticket8533/trac_8533-browse-doc-take2.patch) by mvngu created at 2010-03-19 01:26:43\n\nThe latest version [trac_8533-browse-doc-take2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8533/trac_8533-browse-doc-take2.patch) now allows you to do these:\n\n* `sage.groups.tutorial()`\n* `sage.combinat.tutorial()`\n* `sage.crypto.tutorial()`\n\nThat is, there is only one tutorial for each Sage top level module.",
     "created_at": "2010-03-19T01:26:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8533",
     "type": "issue_comment",
@@ -222,7 +222,7 @@ archive/issue_comments_077118.json:
 }
 ```
 
-Attachment
+Attachment [trac_8533-browse-doc-take2.patch](tarball://root/attachments/some-uuid/ticket8533/trac_8533-browse-doc-take2.patch) by mvngu created at 2010-03-19 01:26:43
 
 The latest version [trac_8533-browse-doc-take2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8533/trac_8533-browse-doc-take2.patch) now allows you to do these:
 
@@ -357,7 +357,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_077124.json:
 ```json
 {
-    "body": "Attachment\n\nThe new patch [attachment:trac_8533-browse-doc-take3.patch] does the same thing as the previous two. But here are the changes in this new patch:\n\n* Remove dependency on #8442 and #8469.\n* Use John's idea of invoking a document using `lambda`.\n* Allow for browsing the following documents from the command line: FAQ and all the thematic tutorials in the standard documentation so far.\n* Doctesting the `lambda` functions that are used for browsing the FAQ and the thematic tutorials.\n \nJohn's idea of invoking a document using `lambda` is not cheating at all. I implemented that for the FAQ and the extant thematic tutorials, and have provided doctests.\n\n\n\nWith [attachment:trac_8533-browse-doc-take3.patch] offering a completely new implementation, it renders John's previous positive review ineffective. Sorry, but I have to move this ticket to \"needs review\" again.",
+    "body": "Attachment [trac_8533-browse-doc-take3.patch](tarball://root/attachments/some-uuid/ticket8533/trac_8533-browse-doc-take3.patch) by mvngu created at 2010-08-07 07:38:28\n\nThe new patch [attachment:trac_8533-browse-doc-take3.patch] does the same thing as the previous two. But here are the changes in this new patch:\n\n* Remove dependency on #8442 and #8469.\n* Use John's idea of invoking a document using `lambda`.\n* Allow for browsing the following documents from the command line: FAQ and all the thematic tutorials in the standard documentation so far.\n* Doctesting the `lambda` functions that are used for browsing the FAQ and the thematic tutorials.\n \nJohn's idea of invoking a document using `lambda` is not cheating at all. I implemented that for the FAQ and the extant thematic tutorials, and have provided doctests.\n\n\n\nWith [attachment:trac_8533-browse-doc-take3.patch] offering a completely new implementation, it renders John's previous positive review ineffective. Sorry, but I have to move this ticket to \"needs review\" again.",
     "created_at": "2010-08-07T07:38:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8533",
     "type": "issue_comment",
@@ -366,7 +366,7 @@ archive/issue_comments_077124.json:
 }
 ```
 
-Attachment
+Attachment [trac_8533-browse-doc-take3.patch](tarball://root/attachments/some-uuid/ticket8533/trac_8533-browse-doc-take3.patch) by mvngu created at 2010-08-07 07:38:28
 
 The new patch [attachment:trac_8533-browse-doc-take3.patch] does the same thing as the previous two. But here are the changes in this new patch:
 

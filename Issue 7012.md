@@ -263,7 +263,7 @@ What this patch does :
 archive/issue_comments_057982.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7012.patch](tarball://root/attachments/some-uuid/ticket7012/trac_7012.patch) by ncohen created at 2009-09-28 09:35:25",
     "created_at": "2009-09-28T09:35:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7012",
     "type": "issue_comment",
@@ -272,7 +272,7 @@ archive/issue_comments_057982.json:
 }
 ```
 
-Attachment
+Attachment [trac_7012.patch](tarball://root/attachments/some-uuid/ticket7012/trac_7012.patch) by ncohen created at 2009-09-28 09:35:25
 
 
 
@@ -335,7 +335,7 @@ rebased against Sage 4.1.2.rc0
 archive/issue_comments_057986.json:
 ```json
 {
-    "body": "Attachment\n\nApplying the patch `trac_7012.patch` results in a hunk failure:\n\n```\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7012/trac_7012.patch && hg qpush\nadding trac_7012.patch to series file\napplying trac_7012.patch\npatching file sage/numerical/knapsack.py\nHunk #1 FAILED at 640\n1 out of 1 hunks FAILED -- saving rejects to file sage/numerical/knapsack.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nErrors during apply, please fix and refresh trac_7012.patch\n```\n\nThe hunk in question is:\n\n```\n[mvngu@sage sage-main]$ cat sage/numerical/knapsack.py.rej\n--- knapsack.py\n+++ knapsack.py\n@@ -641,16 +641,16 @@\n     if reals:\n         seq=[(x,1) for x in seq]\n \n-    from sage.numerical.mip import MIP\n-    p=MIP(sense=1)\n-    present=p.newvar()\n-    p.setobj(sum([present[i]*seq[i][1] for i in range(len(seq))]))\n-    p.addconstraint(sum([present[i]*seq[i][0] for i in range(len(seq))]),max=max)\n+    from sage.numerical.mip import MixedIntegerLinearProgram\n+    p=MixedIntegerLinearProgram(sense=1)\n+    present=p.new_variable()\n+    p.set_objective(sum([present[i]*seq[i][1] for i in range(len(seq))]))\n+    p.add_constraint(sum([present[i]*seq[i][0] for i in range(len(seq))]),max=max)\n \n     if binary:\n-        p.setbinary(present)\n+        p.set_binary(present)\n     else:\n-        p.setinteger(present)\n+        p.set_integer(present)\n \n     if value_only:\n         return p.solve(objective_only=True)\n```\n\nI have rebased the patch against Sage 4.1.2.rc0; see `trac_7012-rebased.patch`.",
+    "body": "Attachment [trac_7012-rebased.patch](tarball://root/attachments/some-uuid/ticket7012/trac_7012-rebased.patch) by mvngu created at 2009-10-01 11:33:53\n\nApplying the patch `trac_7012.patch` results in a hunk failure:\n\n```\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7012/trac_7012.patch && hg qpush\nadding trac_7012.patch to series file\napplying trac_7012.patch\npatching file sage/numerical/knapsack.py\nHunk #1 FAILED at 640\n1 out of 1 hunks FAILED -- saving rejects to file sage/numerical/knapsack.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nErrors during apply, please fix and refresh trac_7012.patch\n```\n\nThe hunk in question is:\n\n```\n[mvngu@sage sage-main]$ cat sage/numerical/knapsack.py.rej\n--- knapsack.py\n+++ knapsack.py\n@@ -641,16 +641,16 @@\n     if reals:\n         seq=[(x,1) for x in seq]\n \n-    from sage.numerical.mip import MIP\n-    p=MIP(sense=1)\n-    present=p.newvar()\n-    p.setobj(sum([present[i]*seq[i][1] for i in range(len(seq))]))\n-    p.addconstraint(sum([present[i]*seq[i][0] for i in range(len(seq))]),max=max)\n+    from sage.numerical.mip import MixedIntegerLinearProgram\n+    p=MixedIntegerLinearProgram(sense=1)\n+    present=p.new_variable()\n+    p.set_objective(sum([present[i]*seq[i][1] for i in range(len(seq))]))\n+    p.add_constraint(sum([present[i]*seq[i][0] for i in range(len(seq))]),max=max)\n \n     if binary:\n-        p.setbinary(present)\n+        p.set_binary(present)\n     else:\n-        p.setinteger(present)\n+        p.set_integer(present)\n \n     if value_only:\n         return p.solve(objective_only=True)\n```\n\nI have rebased the patch against Sage 4.1.2.rc0; see `trac_7012-rebased.patch`.",
     "created_at": "2009-10-01T11:33:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7012",
     "type": "issue_comment",
@@ -344,7 +344,7 @@ archive/issue_comments_057986.json:
 }
 ```
 
-Attachment
+Attachment [trac_7012-rebased.patch](tarball://root/attachments/some-uuid/ticket7012/trac_7012-rebased.patch) by mvngu created at 2009-10-01 11:33:53
 
 Applying the patch `trac_7012.patch` results in a hunk failure:
 
@@ -401,7 +401,7 @@ I have rebased the patch against Sage 4.1.2.rc0; see `trac_7012-rebased.patch`.
 archive/issue_comments_057987.json:
 ```json
 {
-    "body": "Attachment\n\nreviewer patch; apply on top of previous patch",
+    "body": "Attachment [trac_7012-reviewer.patch](tarball://root/attachments/some-uuid/ticket7012/trac_7012-reviewer.patch) by mvngu created at 2009-10-01 17:37:46\n\nreviewer patch; apply on top of previous patch",
     "created_at": "2009-10-01T17:37:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7012",
     "type": "issue_comment",
@@ -410,7 +410,7 @@ archive/issue_comments_057987.json:
 }
 ```
 
-Attachment
+Attachment [trac_7012-reviewer.patch](tarball://root/attachments/some-uuid/ticket7012/trac_7012-reviewer.patch) by mvngu created at 2009-10-01 17:37:46
 
 reviewer patch; apply on top of previous patch
 
@@ -513,7 +513,7 @@ flattened patch; include rebased patch and reviewer patch
 archive/issue_comments_057992.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7012-details.patch](tarball://root/attachments/some-uuid/ticket7012/trac_7012-details.patch) by ncohen created at 2009-10-04 15:23:55",
     "created_at": "2009-10-04T15:23:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7012",
     "type": "issue_comment",
@@ -522,7 +522,7 @@ archive/issue_comments_057992.json:
 }
 ```
 
-Attachment
+Attachment [trac_7012-details.patch](tarball://root/attachments/some-uuid/ticket7012/trac_7012-details.patch) by ncohen created at 2009-10-04 15:23:55
 
 
 

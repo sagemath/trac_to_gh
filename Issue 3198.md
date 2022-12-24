@@ -53,7 +53,7 @@ Changing status from new to assigned.
 archive/issue_comments_022103.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ecm-6.1.3-spkg-install-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3198/ecm-6.1.3-spkg-install-64bit-osx.patch) by mabshoff created at 2008-05-19 05:28:46",
     "created_at": "2008-05-19T05:28:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3198",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_022103.json:
 }
 ```
 
-Attachment
+Attachment [ecm-6.1.3-spkg-install-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3198/ecm-6.1.3-spkg-install-64bit-osx.patch) by mabshoff created at 2008-05-19 05:28:46
 
 
 

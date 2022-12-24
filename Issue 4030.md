@@ -76,7 +76,7 @@ Changing component from algebra to calculus.
 archive/issue_comments_029073.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch solves all the cases above except the last, which returns\n\n\n```\nsage: g(y=2,x=3)\nTraceback (most recent call last):\n...\nTypeError: __call__() got an unexpected keyword argument 'y'\n```\n\n\nNot sure what the deal is with that.\n\nThis patch should only be applied after #2547.",
+    "body": "Attachment [callable_vectors.patch](tarball://root/attachments/some-uuid/ticket4030/callable_vectors.patch) by jwmerrill created at 2008-09-01 05:23:47\n\nThe attached patch solves all the cases above except the last, which returns\n\n\n```\nsage: g(y=2,x=3)\nTraceback (most recent call last):\n...\nTypeError: __call__() got an unexpected keyword argument 'y'\n```\n\n\nNot sure what the deal is with that.\n\nThis patch should only be applied after #2547.",
     "created_at": "2008-09-01T05:23:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4030",
     "type": "issue_comment",
@@ -85,7 +85,7 @@ archive/issue_comments_029073.json:
 }
 ```
 
-Attachment
+Attachment [callable_vectors.patch](tarball://root/attachments/some-uuid/ticket4030/callable_vectors.patch) by jwmerrill created at 2008-09-01 05:23:47
 
 The attached patch solves all the cases above except the last, which returns
 

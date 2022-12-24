@@ -138,7 +138,7 @@ The patch implements dynamic attributes, but some doctests segfault
 archive/issue_comments_092112.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-9556_dynamic_attributes_symbolics.patch](tarball://root/attachments/some-uuid/ticket9556/trac-9556_dynamic_attributes_symbolics.patch) by SimonKing created at 2010-07-20 12:26:59",
     "created_at": "2010-07-20T12:26:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9556",
     "type": "issue_comment",
@@ -147,7 +147,7 @@ archive/issue_comments_092112.json:
 }
 ```
 
-Attachment
+Attachment [trac-9556_dynamic_attributes_symbolics.patch](tarball://root/attachments/some-uuid/ticket9556/trac-9556_dynamic_attributes_symbolics.patch) by SimonKing created at 2010-07-20 12:26:59
 
 
 
@@ -282,7 +282,7 @@ abs(ex_func(x, x + 1, x + 2))
 archive/issue_comments_092118.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9556-dynamic_class.patch](tarball://root/attachments/some-uuid/ticket9556/trac_9556-dynamic_class.patch) by mhansen created at 2010-07-20 14:22:01",
     "created_at": "2010-07-20T14:22:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9556",
     "type": "issue_comment",
@@ -291,7 +291,7 @@ archive/issue_comments_092118.json:
 }
 ```
 
-Attachment
+Attachment [trac_9556-dynamic_class.patch](tarball://root/attachments/some-uuid/ticket9556/trac_9556-dynamic_class.patch) by mhansen created at 2010-07-20 14:22:01
 
 
 
@@ -515,7 +515,7 @@ Looks good to me
 archive/issue_comments_092129.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9556-dynamic_class_everywhere.patch](tarball://root/attachments/some-uuid/ticket9556/trac_9556-dynamic_class_everywhere.patch) by burcin created at 2013-06-19 22:58:24",
     "created_at": "2013-06-19T22:58:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9556",
     "type": "issue_comment",
@@ -524,7 +524,7 @@ archive/issue_comments_092129.json:
 }
 ```
 
-Attachment
+Attachment [trac_9556-dynamic_class_everywhere.patch](tarball://root/attachments/some-uuid/ticket9556/trac_9556-dynamic_class_everywhere.patch) by burcin created at 2013-06-19 22:58:24
 
 
 
@@ -551,7 +551,7 @@ Resolution: fixed
 archive/issue_comments_092131.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9556-dynamic_class_everywhere.part2.patch](tarball://root/attachments/some-uuid/ticket9556/trac_9556-dynamic_class_everywhere.part2.patch) by burcin created at 2013-06-20 23:29:49",
     "created_at": "2013-06-20T23:29:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9556",
     "type": "issue_comment",
@@ -560,7 +560,7 @@ archive/issue_comments_092131.json:
 }
 ```
 
-Attachment
+Attachment [trac_9556-dynamic_class_everywhere.part2.patch](tarball://root/attachments/some-uuid/ticket9556/trac_9556-dynamic_class_everywhere.part2.patch) by burcin created at 2013-06-20 23:29:49
 
 
 

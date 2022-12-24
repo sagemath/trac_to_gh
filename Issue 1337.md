@@ -264,7 +264,7 @@ Michael
 archive/issue_comments_008550.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1337.diff](tarball://root/attachments/some-uuid/ticket1337/1337.diff) by robertwb created at 2008-01-18 02:41:38",
     "created_at": "2008-01-18T02:41:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1337",
     "type": "issue_comment",
@@ -273,7 +273,7 @@ archive/issue_comments_008550.json:
 }
 ```
 
-Attachment
+Attachment [1337.diff](tarball://root/attachments/some-uuid/ticket1337/1337.diff) by robertwb created at 2008-01-18 02:41:38
 
 
 
@@ -474,7 +474,7 @@ Fixed another tiny error.
 archive/issue_comments_008560.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [integers.pyx.patch](tarball://root/attachments/some-uuid/ticket1337/integers.pyx.patch) by mabshoff created at 2008-02-27 08:22:51",
     "created_at": "2008-02-27T08:22:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1337",
     "type": "issue_comment",
@@ -483,7 +483,7 @@ archive/issue_comments_008560.json:
 }
 ```
 
-Attachment
+Attachment [integers.pyx.patch](tarball://root/attachments/some-uuid/ticket1337/integers.pyx.patch) by mabshoff created at 2008-02-27 08:22:51
 
 
 
@@ -510,7 +510,7 @@ The ZZ constructor breaks in the case of x=NULL because it was relying on broken
 archive/issue_comments_008562.json:
 ```json
 {
-    "body": "Attachment\n\nFixed doctest issues",
+    "body": "Attachment [integer.pyx.patch](tarball://root/attachments/some-uuid/ticket1337/integer.pyx.patch) by gfurnish created at 2008-02-27 10:13:17\n\nFixed doctest issues",
     "created_at": "2008-02-27T10:13:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1337",
     "type": "issue_comment",
@@ -519,7 +519,7 @@ archive/issue_comments_008562.json:
 }
 ```
 
-Attachment
+Attachment [integer.pyx.patch](tarball://root/attachments/some-uuid/ticket1337/integer.pyx.patch) by gfurnish created at 2008-02-27 10:13:17
 
 Fixed doctest issues
 
@@ -645,7 +645,7 @@ Michael
 archive/issue_comments_008568.json:
 ```json
 {
-    "body": "Attachment\n\ndouble free fix (needs test all)",
+    "body": "Attachment [trac_1337.patch](tarball://root/attachments/some-uuid/ticket1337/trac_1337.patch) by gfurnish created at 2008-03-09 01:12:14\n\ndouble free fix (needs test all)",
     "created_at": "2008-03-09T01:12:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1337",
     "type": "issue_comment",
@@ -654,7 +654,7 @@ archive/issue_comments_008568.json:
 }
 ```
 
-Attachment
+Attachment [trac_1337.patch](tarball://root/attachments/some-uuid/ticket1337/trac_1337.patch) by gfurnish created at 2008-03-09 01:12:14
 
 double free fix (needs test all)
 
@@ -665,7 +665,7 @@ double free fix (needs test all)
 archive/issue_comments_008569.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch introduces a workaround - but that causes leaks if the integer pool is exhausted",
+    "body": "Attachment [trac_1337-workaround.patch](tarball://root/attachments/some-uuid/ticket1337/trac_1337-workaround.patch) by mabshoff created at 2008-03-09 05:04:30\n\nThis patch introduces a workaround - but that causes leaks if the integer pool is exhausted",
     "created_at": "2008-03-09T05:04:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1337",
     "type": "issue_comment",
@@ -674,7 +674,7 @@ archive/issue_comments_008569.json:
 }
 ```
 
-Attachment
+Attachment [trac_1337-workaround.patch](tarball://root/attachments/some-uuid/ticket1337/trac_1337-workaround.patch) by mabshoff created at 2008-03-09 05:04:30
 
 This patch introduces a workaround - but that causes leaks if the integer pool is exhausted
 

@@ -90,7 +90,7 @@ Changing assignee from tba to mabshoff.
 archive/issue_comments_005309.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [COPYING.txt](tarball://root/attachments/some-uuid/ticket857/COPYING.txt) by mabshoff created at 2007-12-22 11:37:58",
     "created_at": "2007-12-22T11:37:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/857",
     "type": "issue_comment",
@@ -99,7 +99,7 @@ archive/issue_comments_005309.json:
 }
 ```
 
-Attachment
+Attachment [COPYING.txt](tarball://root/attachments/some-uuid/ticket857/COPYING.txt) by mabshoff created at 2007-12-22 11:37:58
 
 
 

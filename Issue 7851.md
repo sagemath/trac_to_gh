@@ -65,7 +65,7 @@ Changing status from new to needs_review.
 archive/issue_comments_068005.json:
 ```json
 {
-    "body": "Attachment\n\nWith the recent updates to sage-env, this will actually build in 64-bit mode, as that will set CFLAGS appropriately. But there were some other issues with this package, so the following have been addressed. \n\n* Move -I $SAGE_LOCAL/include to CPPFLAGS, not CFLAGS\n  There's no reason it should go there. \n* Removed most of the SAGE64 related stuff. The only bit \n  remaining is to apply a patch on OS X in 64-bit mode. \n* Removed -Wall and -g from CFLAGS - the new sage-eve \n  will add these automatically for gcc. Since they are \n  GNU specific flags, they would break with other compilers. \n* Substituted -fPIC for $FPIC_FLAG as -fPIC is a GNU specfic \n  option and sage-env defines FPIC_FLAG to be -fPIC for \n  gcc, but other things for Sun Studio and other compilers from\n  HP and IBM. \n\nAn updated spkg can be found at \n\nhttp://boxen.math.washington.edu/home/kirkby/portability/zlib-1.2.3.p6/zlib-1.2.3.p6.spkg\n\nother relevant files in http://boxen.math.washington.edu/home/kirkby/portability/zlib-1.2.3.p6/\n\nDave",
+    "body": "Attachment [add-64-bit-support-to-zlib.patch](tarball://root/attachments/some-uuid/ticket7851/add-64-bit-support-to-zlib.patch) by drkirkby created at 2010-01-12 05:53:23\n\nWith the recent updates to sage-env, this will actually build in 64-bit mode, as that will set CFLAGS appropriately. But there were some other issues with this package, so the following have been addressed. \n\n* Move -I $SAGE_LOCAL/include to CPPFLAGS, not CFLAGS\n  There's no reason it should go there. \n* Removed most of the SAGE64 related stuff. The only bit \n  remaining is to apply a patch on OS X in 64-bit mode. \n* Removed -Wall and -g from CFLAGS - the new sage-eve \n  will add these automatically for gcc. Since they are \n  GNU specific flags, they would break with other compilers. \n* Substituted -fPIC for $FPIC_FLAG as -fPIC is a GNU specfic \n  option and sage-env defines FPIC_FLAG to be -fPIC for \n  gcc, but other things for Sun Studio and other compilers from\n  HP and IBM. \n\nAn updated spkg can be found at \n\nhttp://boxen.math.washington.edu/home/kirkby/portability/zlib-1.2.3.p6/zlib-1.2.3.p6.spkg\n\nother relevant files in http://boxen.math.washington.edu/home/kirkby/portability/zlib-1.2.3.p6/\n\nDave",
     "created_at": "2010-01-12T05:53:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7851",
     "type": "issue_comment",
@@ -74,7 +74,7 @@ archive/issue_comments_068005.json:
 }
 ```
 
-Attachment
+Attachment [add-64-bit-support-to-zlib.patch](tarball://root/attachments/some-uuid/ticket7851/add-64-bit-support-to-zlib.patch) by drkirkby created at 2010-01-12 05:53:23
 
 With the recent updates to sage-env, this will actually build in 64-bit mode, as that will set CFLAGS appropriately. But there were some other issues with this package, so the following have been addressed. 
 

@@ -82,7 +82,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6947
 archive/issue_comments_057440.json:
 ```json
 {
-    "body": "Attachment\n\nThis looks great.  The reviewer patch just adds the tests above as doctests.\n\nAs another ticket, complex_plot really needs to convert it's arguments to fast_callable(..., domain=CDF).  See #6985 for timing examples.",
+    "body": "Attachment [trac6947.patch](tarball://root/attachments/some-uuid/ticket6947/trac6947.patch) by jason created at 2009-09-22 14:33:18\n\nThis looks great.  The reviewer patch just adds the tests above as doctests.\n\nAs another ticket, complex_plot really needs to convert it's arguments to fast_callable(..., domain=CDF).  See #6985 for timing examples.",
     "created_at": "2009-09-22T14:33:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6947",
     "type": "issue_comment",
@@ -91,7 +91,7 @@ archive/issue_comments_057440.json:
 }
 ```
 
-Attachment
+Attachment [trac6947.patch](tarball://root/attachments/some-uuid/ticket6947/trac6947.patch) by jason created at 2009-09-22 14:33:18
 
 This looks great.  The reviewer patch just adds the tests above as doctests.
 
@@ -140,7 +140,7 @@ Resolution: fixed
 archive/issue_comments_057443.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-6947-review.patch](tarball://root/attachments/some-uuid/ticket6947/trac-6947-review.patch) by mvngu created at 2009-09-23 07:10:10",
     "created_at": "2009-09-23T07:10:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6947",
     "type": "issue_comment",
@@ -149,7 +149,7 @@ archive/issue_comments_057443.json:
 }
 ```
 
-Attachment
+Attachment [trac-6947-review.patch](tarball://root/attachments/some-uuid/ticket6947/trac-6947-review.patch) by mvngu created at 2009-09-23 07:10:10
 
 
 

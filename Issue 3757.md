@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3757
 archive/issue_comments_026685.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me!  Positive review for part1.patch",
+    "body": "Attachment [trac3757-question-printing-part1.patch](tarball://root/attachments/some-uuid/ticket3757/trac3757-question-printing-part1.patch) by jason created at 2008-08-02 16:19:57\n\nLooks good to me!  Positive review for part1.patch",
     "created_at": "2008-08-02T16:19:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3757",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_026685.json:
 }
 ```
 
-Attachment
+Attachment [trac3757-question-printing-part1.patch](tarball://root/attachments/some-uuid/ticket3757/trac3757-question-printing-part1.patch) by jason created at 2008-08-02 16:19:57
 
 Looks good to me!  Positive review for part1.patch
 
@@ -55,7 +55,7 @@ Looks good to me!  Positive review for part1.patch
 archive/issue_comments_026686.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac3757-question-printing-part2.patch](tarball://root/attachments/some-uuid/ticket3757/trac3757-question-printing-part2.patch) by cwitty created at 2008-08-02 20:35:24",
     "created_at": "2008-08-02T20:35:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3757",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_026686.json:
 }
 ```
 
-Attachment
+Attachment [trac3757-question-printing-part2.patch](tarball://root/attachments/some-uuid/ticket3757/trac3757-question-printing-part2.patch) by cwitty created at 2008-08-02 20:35:24
 
 
 

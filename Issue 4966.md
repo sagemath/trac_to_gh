@@ -81,7 +81,7 @@ Michael
 archive/issue_comments_037792.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4966_doc.patch](tarball://root/attachments/some-uuid/ticket4966/trac_4966_doc.patch) by mabshoff created at 2009-01-18 16:59:05",
     "created_at": "2009-01-18T16:59:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4966",
     "type": "issue_comment",
@@ -90,7 +90,7 @@ archive/issue_comments_037792.json:
 }
 ```
 
-Attachment
+Attachment [trac_4966_doc.patch](tarball://root/attachments/some-uuid/ticket4966/trac_4966_doc.patch) by mabshoff created at 2009-01-18 16:59:05
 
 
 
@@ -99,7 +99,7 @@ Attachment
 archive/issue_comments_037793.json:
 ```json
 {
-    "body": "Attachment\n\nNote that the spkg is larger than the old one due to two things:\n\n* we are shipping a copy of yasm to build MPIR since the one in the system is usually too buggy to work\n* we are shipping Brian Gladman's VS 2008 build files\n\nThe spkg has been tested on\n\n* FC 9 x86\n* FC 9, OpenSUSE 10.3 x86-64\n* RHEL 5.2, SLES 10 Itanium\n* Solaris 10 Sparc and x86\n* OSX 10.4 ppc\n* OSX 10.5 x86 *and* x86-64\n* YDL 6.1 PS3 (a G5 variant)\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_4966_sage.patch](tarball://root/attachments/some-uuid/ticket4966/trac_4966_sage.patch) by mabshoff created at 2009-01-18 17:01:24\n\nNote that the spkg is larger than the old one due to two things:\n\n* we are shipping a copy of yasm to build MPIR since the one in the system is usually too buggy to work\n* we are shipping Brian Gladman's VS 2008 build files\n\nThe spkg has been tested on\n\n* FC 9 x86\n* FC 9, OpenSUSE 10.3 x86-64\n* RHEL 5.2, SLES 10 Itanium\n* Solaris 10 Sparc and x86\n* OSX 10.4 ppc\n* OSX 10.5 x86 *and* x86-64\n* YDL 6.1 PS3 (a G5 variant)\n\nCheers,\n\nMichael",
     "created_at": "2009-01-18T17:01:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4966",
     "type": "issue_comment",
@@ -108,7 +108,7 @@ archive/issue_comments_037793.json:
 }
 ```
 
-Attachment
+Attachment [trac_4966_sage.patch](tarball://root/attachments/some-uuid/ticket4966/trac_4966_sage.patch) by mabshoff created at 2009-01-18 17:01:24
 
 Note that the spkg is larger than the old one due to two things:
 

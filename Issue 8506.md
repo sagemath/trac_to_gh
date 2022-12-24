@@ -67,7 +67,7 @@ Changing status from new to needs_review.
 archive/issue_comments_076807.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8506-homset-hashing.patch](tarball://root/attachments/some-uuid/ticket8506/8506-homset-hashing.patch) by robertwb created at 2010-03-12 02:36:46",
     "created_at": "2010-03-12T02:36:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8506",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_076807.json:
 }
 ```
 
-Attachment
+Attachment [8506-homset-hashing.patch](tarball://root/attachments/some-uuid/ticket8506/8506-homset-hashing.patch) by robertwb created at 2010-03-12 02:36:46
 
 
 
@@ -220,7 +220,7 @@ Looks like this is once again a case where the alpha differs enough from the lat
 archive/issue_comments_076813.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8506-homset-hashing-take2.patch](tarball://root/attachments/some-uuid/ticket8506/8506-homset-hashing-take2.patch) by robertwb created at 2010-03-15 19:47:13",
     "created_at": "2010-03-15T19:47:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8506",
     "type": "issue_comment",
@@ -229,7 +229,7 @@ archive/issue_comments_076813.json:
 }
 ```
 
-Attachment
+Attachment [8506-homset-hashing-take2.patch](tarball://root/attachments/some-uuid/ticket8506/8506-homset-hashing-take2.patch) by robertwb created at 2010-03-15 19:47:13
 
 
 

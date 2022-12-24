@@ -56,7 +56,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9596
 archive/issue_comments_092840.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9596_is_totally_positive.patch](tarball://root/attachments/some-uuid/ticket9596/trac_9596_is_totally_positive.patch) by mstreng created at 2010-07-30 12:14:55",
     "created_at": "2010-07-30T12:14:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9596",
     "type": "issue_comment",
@@ -65,7 +65,7 @@ archive/issue_comments_092840.json:
 }
 ```
 
-Attachment
+Attachment [trac_9596_is_totally_positive.patch](tarball://root/attachments/some-uuid/ticket9596/trac_9596_is_totally_positive.patch) by mstreng created at 2010-07-30 12:14:55
 
 
 

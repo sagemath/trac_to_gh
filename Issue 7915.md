@@ -69,7 +69,7 @@ Changing status from new to needs_review.
 archive/issue_comments_068876.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [macaulay2_improved_tab.patch](tarball://root/attachments/some-uuid/ticket7915/macaulay2_improved_tab.patch) by novoselt created at 2010-01-13 04:25:09",
     "created_at": "2010-01-13T04:25:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7915",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_068876.json:
 }
 ```
 
-Attachment
+Attachment [macaulay2_improved_tab.patch](tarball://root/attachments/some-uuid/ticket7915/macaulay2_improved_tab.patch) by novoselt created at 2010-01-13 04:25:09
 
 
 
@@ -87,7 +87,7 @@ Attachment
 archive/issue_comments_068877.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7915_macaulay2_tab_completion.patch](tarball://root/attachments/some-uuid/ticket7915/trac_7915_macaulay2_tab_completion.patch) by novoselt created at 2010-02-01 04:47:04",
     "created_at": "2010-02-01T04:47:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7915",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_068877.json:
 }
 ```
 
-Attachment
+Attachment [trac_7915_macaulay2_tab_completion.patch](tarball://root/attachments/some-uuid/ticket7915/trac_7915_macaulay2_tab_completion.patch) by novoselt created at 2010-02-01 04:47:04
 
 
 

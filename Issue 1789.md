@@ -116,7 +116,7 @@ fixes the examples and docs in the examples/programming/scripts to avoid a lot o
 archive/issue_comments_011320.json:
 ```json
 {
-    "body": "Attachment\n\nI've posted a patch that gets applied in the SAGE_ROOT/examples directory.",
+    "body": "Attachment [examples-trac-1789.patch](tarball://root/attachments/some-uuid/ticket1789/examples-trac-1789.patch) by was created at 2008-01-19 13:58:30\n\nI've posted a patch that gets applied in the SAGE_ROOT/examples directory.",
     "created_at": "2008-01-19T13:58:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1789",
     "type": "issue_comment",
@@ -125,7 +125,7 @@ archive/issue_comments_011320.json:
 }
 ```
 
-Attachment
+Attachment [examples-trac-1789.patch](tarball://root/attachments/some-uuid/ticket1789/examples-trac-1789.patch) by was created at 2008-01-19 13:58:30
 
 I've posted a patch that gets applied in the SAGE_ROOT/examples directory.
 

@@ -92,7 +92,7 @@ OK, so that's an informed diagnosis but but not yet a cure!
 archive/issue_comments_031204.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4274.patch](tarball://root/attachments/some-uuid/ticket4274/trac_4274.patch) by was created at 2009-01-22 14:19:02",
     "created_at": "2009-01-22T14:19:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4274",
     "type": "issue_comment",
@@ -101,7 +101,7 @@ archive/issue_comments_031204.json:
 }
 ```
 
-Attachment
+Attachment [trac_4274.patch](tarball://root/attachments/some-uuid/ticket4274/trac_4274.patch) by was created at 2009-01-22 14:19:02
 
 
 
@@ -315,7 +315,7 @@ Michael
 archive/issue_comments_031209.json:
 ```json
 {
-    "body": "Attachment\n\nApply after previous",
+    "body": "Attachment [trac_4274-doctest.patch](tarball://root/attachments/some-uuid/ticket4274/trac_4274-doctest.patch) by cremona created at 2009-02-15 15:11:21\n\nApply after previous",
     "created_at": "2009-02-15T15:11:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4274",
     "type": "issue_comment",
@@ -324,7 +324,7 @@ archive/issue_comments_031209.json:
 }
 ```
 
-Attachment
+Attachment [trac_4274-doctest.patch](tarball://root/attachments/some-uuid/ticket4274/trac_4274-doctest.patch) by cremona created at 2009-02-15 15:11:21
 
 Apply after previous
 

@@ -128,7 +128,7 @@ Changing component from combinatorics to graph theory.
 archive/issue_comments_008401.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [planarity.hg](tarball://root/attachments/some-uuid/ticket1320/planarity.hg) by rlm created at 2008-02-28 02:27:22",
     "created_at": "2008-02-28T02:27:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1320",
     "type": "issue_comment",
@@ -137,7 +137,7 @@ archive/issue_comments_008401.json:
 }
 ```
 
-Attachment
+Attachment [planarity.hg](tarball://root/attachments/some-uuid/ticket1320/planarity.hg) by rlm created at 2008-02-28 02:27:22
 
 
 

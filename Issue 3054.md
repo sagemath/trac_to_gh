@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3054
 archive/issue_comments_021085.json:
 ```json
 {
-    "body": "Attachment\n\nWith #3054 and #3055 applied, doctests pass in the graphs/ directory.",
+    "body": "Attachment [trac-3054-graph-copy.patch](tarball://root/attachments/some-uuid/ticket3054/trac-3054-graph-copy.patch) by jason created at 2008-04-29 21:09:03\n\nWith #3054 and #3055 applied, doctests pass in the graphs/ directory.",
     "created_at": "2008-04-29T21:09:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3054",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_021085.json:
 }
 ```
 
-Attachment
+Attachment [trac-3054-graph-copy.patch](tarball://root/attachments/some-uuid/ticket3054/trac-3054-graph-copy.patch) by jason created at 2008-04-29 21:09:03
 
 With #3054 and #3055 applied, doctests pass in the graphs/ directory.
 

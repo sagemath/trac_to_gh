@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5868
 archive/issue_comments_046351.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [libgcrypt-1.4.3.p0.patch](tarball://root/attachments/some-uuid/ticket5868/libgcrypt-1.4.3.p0.patch) by pjeremy created at 2009-04-23 07:01:01",
     "created_at": "2009-04-23T07:01:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5868",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_046351.json:
 }
 ```
 
-Attachment
+Attachment [libgcrypt-1.4.3.p0.patch](tarball://root/attachments/some-uuid/ticket5868/libgcrypt-1.4.3.p0.patch) by pjeremy created at 2009-04-23 07:01:01
 
 
 

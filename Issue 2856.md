@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2856
 archive/issue_comments_019592.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [pylint_polynomial_cleanup.patch](tarball://root/attachments/some-uuid/ticket2856/pylint_polynomial_cleanup.patch) by malb created at 2008-04-08 14:54:13",
     "created_at": "2008-04-08T14:54:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2856",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_019592.json:
 }
 ```
 
-Attachment
+Attachment [pylint_polynomial_cleanup.patch](tarball://root/attachments/some-uuid/ticket2856/pylint_polynomial_cleanup.patch) by malb created at 2008-04-08 14:54:13
 
 
 

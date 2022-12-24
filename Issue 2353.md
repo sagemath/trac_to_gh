@@ -88,7 +88,7 @@ add deprecation notice to MPolynomialRing, change doctests
 archive/issue_comments_015820.json:
 ```json
 {
-    "body": "Attachment\n\ndocumentation changes",
+    "body": "Attachment [2353_deprecate_MPolynomialRing.patch](tarball://root/attachments/some-uuid/ticket2353/2353_deprecate_MPolynomialRing.patch) by burcin created at 2008-05-11 02:03:46\n\ndocumentation changes",
     "created_at": "2008-05-11T02:03:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2353",
     "type": "issue_comment",
@@ -97,7 +97,7 @@ archive/issue_comments_015820.json:
 }
 ```
 
-Attachment
+Attachment [2353_deprecate_MPolynomialRing.patch](tarball://root/attachments/some-uuid/ticket2353/2353_deprecate_MPolynomialRing.patch) by burcin created at 2008-05-11 02:03:46
 
 documentation changes
 
@@ -144,7 +144,7 @@ Changing status from new to assigned.
 archive/issue_comments_015823.json:
 ```json
 {
-    "body": "Attachment\n\nattachment:2353_deprecate_MPolynomialRing.patch adds a deprecation notice to `MPolynomialRing` using Python's `warnings` module. It also prepends the docstring for `PolynomialRing` with the text:\n\n```\n    This function is deprecated and will be removed in a future version of\n    Sage. Please use PolynomialRing instead.\n\n    If you have questions regarding this function and it's replacement,\n    please send your comments to sage-support@googlegroups.com.\n```\n\n\nattachment:2353_deprecate_MPolynomialRing-doc_changes.patch replaces occurences of `MPolynomialRing` in the documentation with `PolynomialRing`. I don't know why the file `commontex/patchlevel.tex` appears in this patch.",
+    "body": "Attachment [2353_deprecate_MPolynomialRing-doc_changes.patch](tarball://root/attachments/some-uuid/ticket2353/2353_deprecate_MPolynomialRing-doc_changes.patch) by burcin created at 2008-05-11 02:17:44\n\nattachment:2353_deprecate_MPolynomialRing.patch adds a deprecation notice to `MPolynomialRing` using Python's `warnings` module. It also prepends the docstring for `PolynomialRing` with the text:\n\n```\n    This function is deprecated and will be removed in a future version of\n    Sage. Please use PolynomialRing instead.\n\n    If you have questions regarding this function and it's replacement,\n    please send your comments to sage-support@googlegroups.com.\n```\n\n\nattachment:2353_deprecate_MPolynomialRing-doc_changes.patch replaces occurences of `MPolynomialRing` in the documentation with `PolynomialRing`. I don't know why the file `commontex/patchlevel.tex` appears in this patch.",
     "created_at": "2008-05-11T02:17:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2353",
     "type": "issue_comment",
@@ -153,7 +153,7 @@ archive/issue_comments_015823.json:
 }
 ```
 
-Attachment
+Attachment [2353_deprecate_MPolynomialRing-doc_changes.patch](tarball://root/attachments/some-uuid/ticket2353/2353_deprecate_MPolynomialRing-doc_changes.patch) by burcin created at 2008-05-11 02:17:44
 
 attachment:2353_deprecate_MPolynomialRing.patch adds a deprecation notice to `MPolynomialRing` using Python's `warnings` module. It also prepends the docstring for `PolynomialRing` with the text:
 

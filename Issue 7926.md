@@ -141,7 +141,7 @@ Changing keywords from "ecc2011" to "ecc2011, rd2".
 archive/issue_comments_068986.json:
 ```json
 {
-    "body": "Attachment\n\nThis is a rebase against 5.0.beta9.",
+    "body": "Attachment [trac_7926_new.patch](tarball://root/attachments/some-uuid/ticket7926/trac_7926_new.patch) by jen created at 2012-03-21 18:44:52\n\nThis is a rebase against 5.0.beta9.",
     "created_at": "2012-03-21T18:44:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7926",
     "type": "issue_comment",
@@ -150,7 +150,7 @@ archive/issue_comments_068986.json:
 }
 ```
 
-Attachment
+Attachment [trac_7926_new.patch](tarball://root/attachments/some-uuid/ticket7926/trac_7926_new.patch) by jen created at 2012-03-21 18:44:52
 
 This is a rebase against 5.0.beta9.
 
@@ -408,7 +408,7 @@ Apply over previous patch
 archive/issue_comments_068999.json:
 ```json
 {
-    "body": "Attachment\n\nHere's a patch which makes the reference manual build without errors, and corrects a few other minor formatting problems which I spotted while I was fixing this.",
+    "body": "Attachment [trac_7926-fix.patch](tarball://root/attachments/some-uuid/ticket7926/trac_7926-fix.patch) by davidloeffler created at 2012-03-28 12:26:08\n\nHere's a patch which makes the reference manual build without errors, and corrects a few other minor formatting problems which I spotted while I was fixing this.",
     "created_at": "2012-03-28T12:26:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7926",
     "type": "issue_comment",
@@ -417,7 +417,7 @@ archive/issue_comments_068999.json:
 }
 ```
 
-Attachment
+Attachment [trac_7926-fix.patch](tarball://root/attachments/some-uuid/ticket7926/trac_7926-fix.patch) by davidloeffler created at 2012-03-28 12:26:08
 
 Here's a patch which makes the reference manual build without errors, and corrects a few other minor formatting problems which I spotted while I was fixing this.
 

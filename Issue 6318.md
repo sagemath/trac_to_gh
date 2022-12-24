@@ -541,7 +541,7 @@ For whitespace errors, see the file /hom
 archive/issue_comments_050426.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6318_fricas_class.patch](tarball://root/attachments/some-uuid/ticket6318/trac_6318_fricas_class.patch) by awebb created at 2009-06-21 13:42:10",
     "created_at": "2009-06-21T13:42:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6318",
     "type": "issue_comment",
@@ -550,7 +550,7 @@ archive/issue_comments_050426.json:
 }
 ```
 
-Attachment
+Attachment [trac_6318_fricas_class.patch](tarball://root/attachments/some-uuid/ticket6318/trac_6318_fricas_class.patch) by awebb created at 2009-06-21 13:42:10
 
 
 
@@ -577,7 +577,7 @@ Adding an __init__ method to the FriCAS class should clear up a few issues.
 archive/issue_comments_050428.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6318_axiom_interface.patch](tarball://root/attachments/some-uuid/ticket6318/trac_6318_axiom_interface.patch) by awebb created at 2009-06-27 11:52:17",
     "created_at": "2009-06-27T11:52:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6318",
     "type": "issue_comment",
@@ -586,7 +586,7 @@ archive/issue_comments_050428.json:
 }
 ```
 
-Attachment
+Attachment [trac_6318_axiom_interface.patch](tarball://root/attachments/some-uuid/ticket6318/trac_6318_axiom_interface.patch) by awebb created at 2009-06-27 11:52:17
 
 
 

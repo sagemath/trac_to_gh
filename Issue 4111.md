@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4111
 archive/issue_comments_029763.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4111-coerce-QQ.patch](tarball://root/attachments/some-uuid/ticket4111/4111-coerce-QQ.patch) by robertwb created at 2008-09-23 19:53:24",
     "created_at": "2008-09-23T19:53:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4111",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_029763.json:
 }
 ```
 
-Attachment
+Attachment [4111-coerce-QQ.patch](tarball://root/attachments/some-uuid/ticket4111/4111-coerce-QQ.patch) by robertwb created at 2008-09-23 19:53:24
 
 
 
@@ -49,7 +49,7 @@ Attachment
 archive/issue_comments_029764.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4111-coerce-RR.patch](tarball://root/attachments/some-uuid/ticket4111/4111-coerce-RR.patch) by robertwb created at 2008-09-23 19:53:48",
     "created_at": "2008-09-23T19:53:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4111",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_029764.json:
 }
 ```
 
-Attachment
+Attachment [4111-coerce-RR.patch](tarball://root/attachments/some-uuid/ticket4111/4111-coerce-RR.patch) by robertwb created at 2008-09-23 19:53:48
 
 
 
@@ -67,7 +67,7 @@ Attachment
 archive/issue_comments_029765.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4111-coerce-simplify.patch](tarball://root/attachments/some-uuid/ticket4111/4111-coerce-simplify.patch) by robertwb created at 2008-09-23 19:54:11",
     "created_at": "2008-09-23T19:54:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4111",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_029765.json:
 }
 ```
 
-Attachment
+Attachment [4111-coerce-simplify.patch](tarball://root/attachments/some-uuid/ticket4111/4111-coerce-simplify.patch) by robertwb created at 2008-09-23 19:54:11
 
 
 
@@ -85,7 +85,7 @@ Attachment
 archive/issue_comments_029766.json:
 ```json
 {
-    "body": "Attachment\n\nPatches rebased against 3.1.2.",
+    "body": "Attachment [4111-coerce-CC.patch](tarball://root/attachments/some-uuid/ticket4111/4111-coerce-CC.patch) by robertwb created at 2008-09-23 19:54:55\n\nPatches rebased against 3.1.2.",
     "created_at": "2008-09-23T19:54:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4111",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_029766.json:
 }
 ```
 
-Attachment
+Attachment [4111-coerce-CC.patch](tarball://root/attachments/some-uuid/ticket4111/4111-coerce-CC.patch) by robertwb created at 2008-09-23 19:54:55
 
 Patches rebased against 3.1.2.
 
@@ -203,7 +203,7 @@ against 3.1.3.alpha1
 archive/issue_comments_029772.json:
 ```json
 {
-    "body": "Attachment\n\nagainst alpha 3.1.3.alpha1",
+    "body": "Attachment [4111-coerce-RR.2.patch](tarball://root/attachments/some-uuid/ticket4111/4111-coerce-RR.2.patch) by robertwb created at 2008-09-24 17:21:38\n\nagainst alpha 3.1.3.alpha1",
     "created_at": "2008-09-24T17:21:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4111",
     "type": "issue_comment",
@@ -212,7 +212,7 @@ archive/issue_comments_029772.json:
 }
 ```
 
-Attachment
+Attachment [4111-coerce-RR.2.patch](tarball://root/attachments/some-uuid/ticket4111/4111-coerce-RR.2.patch) by robertwb created at 2008-09-24 17:21:38
 
 against alpha 3.1.3.alpha1
 

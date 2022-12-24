@@ -52,7 +52,7 @@ Changing status from new to assigned.
 archive/issue_comments_021681.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [novar_singular.changeset](tarball://root/attachments/some-uuid/ticket3129/novar_singular.changeset) by broune created at 2008-05-07 23:03:06",
     "created_at": "2008-05-07T23:03:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3129",
     "type": "issue_comment",
@@ -61,7 +61,7 @@ archive/issue_comments_021681.json:
 }
 ```
 
-Attachment
+Attachment [novar_singular.changeset](tarball://root/attachments/some-uuid/ticket3129/novar_singular.changeset) by broune created at 2008-05-07 23:03:06
 
 
 

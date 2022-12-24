@@ -66,7 +66,7 @@ Changing status from new to needs_review.
 archive/issue_comments_098865.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9928-vector-numpy.patch](tarball://root/attachments/some-uuid/ticket9928/9928-vector-numpy.patch) by jason created at 2010-09-17 02:07:23",
     "created_at": "2010-09-17T02:07:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9927",
     "type": "issue_comment",
@@ -75,7 +75,7 @@ archive/issue_comments_098865.json:
 }
 ```
 
-Attachment
+Attachment [9928-vector-numpy.patch](tarball://root/attachments/some-uuid/ticket9928/9928-vector-numpy.patch) by jason created at 2010-09-17 02:07:23
 
 
 

@@ -54,7 +54,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4512
 archive/issue_comments_033464.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-4512.patch](tarball://root/attachments/some-uuid/ticket4512/trac-4512.patch) by craigcitro created at 2008-11-13 10:59:05",
     "created_at": "2008-11-13T10:59:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4512",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_033464.json:
 }
 ```
 
-Attachment
+Attachment [trac-4512.patch](tarball://root/attachments/some-uuid/ticket4512/trac-4512.patch) by craigcitro created at 2008-11-13 10:59:05
 
 
 
@@ -170,7 +170,7 @@ Michael
 archive/issue_comments_033470.json:
 ```json
 {
-    "body": "Attachment\n\ntrac-4512-pt2.patch addresses all my concerns even though it could be cleaner, i.e. via some special parameter. Craig will do so in a followup ticket, so positive review.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac-4512-pt2.patch](tarball://root/attachments/some-uuid/ticket4512/trac-4512-pt2.patch) by mabshoff created at 2008-11-14 04:56:09\n\ntrac-4512-pt2.patch addresses all my concerns even though it could be cleaner, i.e. via some special parameter. Craig will do so in a followup ticket, so positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-14T04:56:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4512",
     "type": "issue_comment",
@@ -179,7 +179,7 @@ archive/issue_comments_033470.json:
 }
 ```
 
-Attachment
+Attachment [trac-4512-pt2.patch](tarball://root/attachments/some-uuid/ticket4512/trac-4512-pt2.patch) by mabshoff created at 2008-11-14 04:56:09
 
 trac-4512-pt2.patch addresses all my concerns even though it could be cleaner, i.e. via some special parameter. Craig will do so in a followup ticket, so positive review.
 

@@ -133,7 +133,7 @@ David
 archive/issue_comments_090358.json:
 ```json
 {
-    "body": "Attachment\n\nFixes a side effect of log on PARI",
+    "body": "Attachment [trac_9438_IntegerMod_log_vs_PARI.patch](tarball://root/attachments/some-uuid/ticket9438/trac_9438_IntegerMod_log_vs_PARI.patch) by SimonKing created at 2010-07-07 11:48:43\n\nFixes a side effect of log on PARI",
     "created_at": "2010-07-07T11:48:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9438",
     "type": "issue_comment",
@@ -142,7 +142,7 @@ archive/issue_comments_090358.json:
 }
 ```
 
-Attachment
+Attachment [trac_9438_IntegerMod_log_vs_PARI.patch](tarball://root/attachments/some-uuid/ticket9438/trac_9438_IntegerMod_log_vs_PARI.patch) by SimonKing created at 2010-07-07 11:48:43
 
 Fixes a side effect of log on PARI
 

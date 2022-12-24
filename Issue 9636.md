@@ -75,7 +75,7 @@ Changing status from new to needs_review.
 archive/issue_comments_093413.json:
 ```json
 {
-    "body": "Attachment\n\n\n```\ncdef extern: \n    PariOUT defaultOut \n    PariOUT defaultErr \n\n```\n\nshould perhaps migrate to `sage/libs/pari/decl.pxi`, too.\n\n**Positive review** from me though. Robert, anything to complain about?\n\n----\n\nI wonder when Cython will support `const`...",
+    "body": "Attachment [9636.patch](tarball://root/attachments/some-uuid/ticket9636/9636.patch) by leif created at 2010-09-07 11:18:23\n\n\n```\ncdef extern: \n    PariOUT defaultOut \n    PariOUT defaultErr \n\n```\n\nshould perhaps migrate to `sage/libs/pari/decl.pxi`, too.\n\n**Positive review** from me though. Robert, anything to complain about?\n\n----\n\nI wonder when Cython will support `const`...",
     "created_at": "2010-09-07T11:18:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9636",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_093413.json:
 }
 ```
 
-Attachment
+Attachment [9636.patch](tarball://root/attachments/some-uuid/ticket9636/9636.patch) by leif created at 2010-09-07 11:18:23
 
 
 ```

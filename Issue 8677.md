@@ -174,7 +174,7 @@ Changing priority from major to critical.
 archive/issue_comments_078967.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8677.patch](tarball://root/attachments/some-uuid/ticket8677/trac_8677.patch) by was created at 2010-10-02 06:44:32",
     "created_at": "2010-10-02T06:44:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
@@ -183,7 +183,7 @@ archive/issue_comments_078967.json:
 }
 ```
 
-Attachment
+Attachment [trac_8677.patch](tarball://root/attachments/some-uuid/ticket8677/trac_8677.patch) by was created at 2010-10-02 06:44:32
 
 
 
@@ -371,7 +371,7 @@ What if we use William's solution for the first "hunk" and Volker's for the seco
 archive/issue_comments_078975.json:
 ```json
 {
-    "body": "Attachment\n\nAlternate version, fix commit string.  Apply just one patch.",
+    "body": "Attachment [trac_8677.2.patch](tarball://root/attachments/some-uuid/ticket8677/trac_8677.2.patch) by mpatel created at 2010-10-05 05:42:28\n\nAlternate version, fix commit string.  Apply just one patch.",
     "created_at": "2010-10-05T05:42:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
@@ -380,7 +380,7 @@ archive/issue_comments_078975.json:
 }
 ```
 
-Attachment
+Attachment [trac_8677.2.patch](tarball://root/attachments/some-uuid/ticket8677/trac_8677.2.patch) by mpatel created at 2010-10-05 05:42:28
 
 Alternate version, fix commit string.  Apply just one patch.
 
@@ -450,7 +450,7 @@ Yet another alternate version
 archive/issue_comments_078979.json:
 ```json
 {
-    "body": "Attachment\n\nWith a clean, built-from-scratch 4.6.alpha3 on sage.math, I applied v3, did `rm -rf devel/sage/build/` and then `env MAKE=\"make -j20\" ./sage -ba-force`.  The latter fails after a number of \n`python `which cython`` commands:\n\n```python\n[...]\nTraceback (most recent call last):\n  File \"setup.py\", line 799, in <module>\n    execute_list_of_commands(queue)\n  File \"setup.py\", line 319, in execute_list_of_commands\n    execute_list_of_commands_in_parallel(command_list, nthreads)\n  File \"setup.py\", line 252, in execute_list_of_commands_in_parallel\n    process_command_results(p.imap(apply_pair, command_list))\n  File \"setup.py\", line 256, in process_command_results\n    for r in result_values:\n  File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha3-working2/local/lib/python/multiprocessing/pool.py\", line 520, in next\n    raise value\nNameError: global name 'path' is not defined\nsage: There was an error installing modified sage library code.\n```\n\nThis doesn't happen with v1 or v2, but I'm not sure why.  Thoughts?",
+    "body": "Attachment [trac_8677.3.patch](tarball://root/attachments/some-uuid/ticket8677/trac_8677.3.patch) by mpatel created at 2010-10-10 04:43:53\n\nWith a clean, built-from-scratch 4.6.alpha3 on sage.math, I applied v3, did `rm -rf devel/sage/build/` and then `env MAKE=\"make -j20\" ./sage -ba-force`.  The latter fails after a number of \n`python `which cython`` commands:\n\n```python\n[...]\nTraceback (most recent call last):\n  File \"setup.py\", line 799, in <module>\n    execute_list_of_commands(queue)\n  File \"setup.py\", line 319, in execute_list_of_commands\n    execute_list_of_commands_in_parallel(command_list, nthreads)\n  File \"setup.py\", line 252, in execute_list_of_commands_in_parallel\n    process_command_results(p.imap(apply_pair, command_list))\n  File \"setup.py\", line 256, in process_command_results\n    for r in result_values:\n  File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha3-working2/local/lib/python/multiprocessing/pool.py\", line 520, in next\n    raise value\nNameError: global name 'path' is not defined\nsage: There was an error installing modified sage library code.\n```\n\nThis doesn't happen with v1 or v2, but I'm not sure why.  Thoughts?",
     "created_at": "2010-10-10T04:43:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
@@ -459,7 +459,7 @@ archive/issue_comments_078979.json:
 }
 ```
 
-Attachment
+Attachment [trac_8677.3.patch](tarball://root/attachments/some-uuid/ticket8677/trac_8677.3.patch) by mpatel created at 2010-10-10 04:43:53
 
 With a clean, built-from-scratch 4.6.alpha3 on sage.math, I applied v3, did `rm -rf devel/sage/build/` and then `env MAKE="make -j20" ./sage -ba-force`.  The latter fails after a number of 
 `python `which cython`` commands:
@@ -510,7 +510,7 @@ Probably on lines 687-690, "path" should be "dirname"?  I'm attaching a new vers
 archive/issue_comments_078981.json:
 ```json
 {
-    "body": "Attachment\n\nStill another alternate version",
+    "body": "Attachment [trac_8677.4.patch](tarball://root/attachments/some-uuid/ticket8677/trac_8677.4.patch) by jhpalmieri created at 2010-10-11 20:38:14\n\nStill another alternate version",
     "created_at": "2010-10-11T20:38:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
@@ -519,7 +519,7 @@ archive/issue_comments_078981.json:
 }
 ```
 
-Attachment
+Attachment [trac_8677.4.patch](tarball://root/attachments/some-uuid/ticket8677/trac_8677.4.patch) by jhpalmieri created at 2010-10-11 20:38:14
 
 Still another alternate version
 

@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6819
 archive/issue_comments_056226.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [12846.patch](tarball://root/attachments/some-uuid/ticket6819/12846.patch) by rishi created at 2009-08-24 18:32:29",
     "created_at": "2009-08-24T18:32:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6819",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_056226.json:
 }
 ```
 
-Attachment
+Attachment [12846.patch](tarball://root/attachments/some-uuid/ticket6819/12846.patch) by rishi created at 2009-08-24 18:32:29
 
 
 
@@ -71,7 +71,7 @@ By the way, I added some docstrings to the function, so if you think it is ok.. 
 archive/issue_comments_056228.json:
 ```json
 {
-    "body": "Attachment\n\npatch reviewed + some docstrings",
+    "body": "Attachment [multinomial_list.patch](tarball://root/attachments/some-uuid/ticket6819/multinomial_list.patch) by ncohen created at 2009-08-25 07:27:04\n\npatch reviewed + some docstrings",
     "created_at": "2009-08-25T07:27:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6819",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_056228.json:
 }
 ```
 
-Attachment
+Attachment [multinomial_list.patch](tarball://root/attachments/some-uuid/ticket6819/multinomial_list.patch) by ncohen created at 2009-08-25 07:27:04
 
 patch reviewed + some docstrings
 
@@ -114,7 +114,7 @@ Thanks for the docstrings.
 archive/issue_comments_056230.json:
 ```json
 {
-    "body": "Attachment\n\nncohen's reviewer patch",
+    "body": "Attachment [trac_6819-reviewer.patch](tarball://root/attachments/some-uuid/ticket6819/trac_6819-reviewer.patch) by mvngu created at 2009-08-30 07:51:19\n\nncohen's reviewer patch",
     "created_at": "2009-08-30T07:51:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6819",
     "type": "issue_comment",
@@ -123,7 +123,7 @@ archive/issue_comments_056230.json:
 }
 ```
 
-Attachment
+Attachment [trac_6819-reviewer.patch](tarball://root/attachments/some-uuid/ticket6819/trac_6819-reviewer.patch) by mvngu created at 2009-08-30 07:51:19
 
 ncohen's reviewer patch
 

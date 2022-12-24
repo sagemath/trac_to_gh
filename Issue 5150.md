@@ -43,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5150
 archive/issue_comments_039400.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch `trac_5150.patch` can be applied after applying that of #5148.",
+    "body": "Attachment [trac_5150.patch](tarball://root/attachments/some-uuid/ticket5150/trac_5150.patch) by mvngu created at 2009-02-01 12:37:31\n\nThe patch `trac_5150.patch` can be applied after applying that of #5148.",
     "created_at": "2009-02-01T12:37:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5150",
     "type": "issue_comment",
@@ -52,7 +52,7 @@ archive/issue_comments_039400.json:
 }
 ```
 
-Attachment
+Attachment [trac_5150.patch](tarball://root/attachments/some-uuid/ticket5150/trac_5150.patch) by mvngu created at 2009-02-01 12:37:31
 
 The patch `trac_5150.patch` can be applied after applying that of #5148.
 

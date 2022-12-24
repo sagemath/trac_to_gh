@@ -71,7 +71,7 @@ Changing component from Cygwin to calculus.
 archive/issue_comments_016971.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [wronskian.patch](tarball://root/attachments/some-uuid/ticket2505/wronskian.patch) by ddrake created at 2008-03-13 09:24:13",
     "created_at": "2008-03-13T09:24:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2505",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_016971.json:
 }
 ```
 
-Attachment
+Attachment [wronskian.patch](tarball://root/attachments/some-uuid/ticket2505/wronskian.patch) by ddrake created at 2008-03-13 09:24:13
 
 
 

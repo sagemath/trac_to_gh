@@ -53,7 +53,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4350
 archive/issue_comments_031951.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-4350-part2.patch](tarball://root/attachments/some-uuid/ticket4350/sage-4350-part2.patch) by was created at 2008-10-23 20:19:53",
     "created_at": "2008-10-23T20:19:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4350",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_031951.json:
 }
 ```
 
-Attachment
+Attachment [sage-4350-part2.patch](tarball://root/attachments/some-uuid/ticket4350/sage-4350-part2.patch) by was created at 2008-10-23 20:19:53
 
 
 
@@ -91,7 +91,7 @@ Note: the bugs in modular abelian varieties homspaces (trac #4351) are also fixe
 archive/issue_comments_031953.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-4350-part3.patch](tarball://root/attachments/some-uuid/ticket4350/sage-4350-part3.patch) by craigcitro created at 2008-10-23 22:29:47",
     "created_at": "2008-10-23T22:29:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4350",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_031953.json:
 }
 ```
 
-Attachment
+Attachment [sage-4350-part3.patch](tarball://root/attachments/some-uuid/ticket4350/sage-4350-part3.patch) by craigcitro created at 2008-10-23 22:29:47
 
 
 

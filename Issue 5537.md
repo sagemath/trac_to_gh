@@ -49,7 +49,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5537
 archive/issue_comments_043050.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5537.patch](tarball://root/attachments/some-uuid/ticket5537/5537.patch) by jhpalmieri created at 2009-03-16 23:10:51",
     "created_at": "2009-03-16T23:10:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5537",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_043050.json:
 }
 ```
 
-Attachment
+Attachment [5537.patch](tarball://root/attachments/some-uuid/ticket5537/5537.patch) by jhpalmieri created at 2009-03-16 23:10:51
 
 
 
@@ -160,7 +160,7 @@ Michael
 archive/issue_comments_043055.json:
 ```json
 {
-    "body": "Attachment\n\n\n```\nsage: a = SymmetricGroup(20).random_element(); b = SymmetricGroup(10).random_element()\nsage: time v = [a == b for _ in xrange(2000)]\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\nsage: timeit(\"a==b\")\n625 loops, best of 3: 240 ns per loop\n```\n\n\nvs. the old code\n\n\n```\nsage: a = SymmetricGroup(20).random_element(); b = SymmetricGroup(10).random_element()\nsage: timeit(\"a==b\")\n625 loops, best of 3: 3.19 \u00b5s per loop\n```\n",
+    "body": "Attachment [5537-perm-cmp.patch](tarball://root/attachments/some-uuid/ticket5537/5537-perm-cmp.patch) by robertwb created at 2009-03-18 05:23:22\n\n\n```\nsage: a = SymmetricGroup(20).random_element(); b = SymmetricGroup(10).random_element()\nsage: time v = [a == b for _ in xrange(2000)]\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\nsage: timeit(\"a==b\")\n625 loops, best of 3: 240 ns per loop\n```\n\n\nvs. the old code\n\n\n```\nsage: a = SymmetricGroup(20).random_element(); b = SymmetricGroup(10).random_element()\nsage: timeit(\"a==b\")\n625 loops, best of 3: 3.19 \u00b5s per loop\n```\n",
     "created_at": "2009-03-18T05:23:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5537",
     "type": "issue_comment",
@@ -169,7 +169,7 @@ archive/issue_comments_043055.json:
 }
 ```
 
-Attachment
+Attachment [5537-perm-cmp.patch](tarball://root/attachments/some-uuid/ticket5537/5537-perm-cmp.patch) by robertwb created at 2009-03-18 05:23:22
 
 
 ```
@@ -247,7 +247,7 @@ apply 5537-perm-cmp.patch and then this one
 archive/issue_comments_043058.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:5 robertwb]:\n\nHi Robert,\n\nMuch improved.  Correct and faster.  Passed all tests in sage/groups/perm_gps.\n\nDo you think the code for the second loop checking the fixed elements of the longer permutation would be more readable if it mimicked the first loop?  In other words, view the plain i's in the comparison as self.perm[i] and then have everything else match up exactly with the first loop:\n\n\n```\nfor i from self.n <= i < right.n:\n    if i < right.perm[i]:\n        return -swap\n    elif i > right.perm[i]:\n        return swap\n```\n",
+    "body": "Attachment [5537-referee.patch](tarball://root/attachments/some-uuid/ticket5537/5537-referee.patch) by rbeezer created at 2009-03-18 06:41:01\n\nReplying to [comment:5 robertwb]:\n\nHi Robert,\n\nMuch improved.  Correct and faster.  Passed all tests in sage/groups/perm_gps.\n\nDo you think the code for the second loop checking the fixed elements of the longer permutation would be more readable if it mimicked the first loop?  In other words, view the plain i's in the comparison as self.perm[i] and then have everything else match up exactly with the first loop:\n\n\n```\nfor i from self.n <= i < right.n:\n    if i < right.perm[i]:\n        return -swap\n    elif i > right.perm[i]:\n        return swap\n```\n",
     "created_at": "2009-03-18T06:41:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5537",
     "type": "issue_comment",
@@ -256,7 +256,7 @@ archive/issue_comments_043058.json:
 }
 ```
 
-Attachment
+Attachment [5537-referee.patch](tarball://root/attachments/some-uuid/ticket5537/5537-referee.patch) by rbeezer created at 2009-03-18 06:41:01
 
 Replying to [comment:5 robertwb]:
 
@@ -457,7 +457,7 @@ Yes, I'm fine with those changes. As for what I ran timings on, OS X 10.4 intel 
 archive/issue_comments_043066.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:14 robertwb]:\n\nOK, final patch (trac_5537_perm_compare) has Robert's \"perm-cmp\" patch, John's \"referee\" patch, and my code changes listed above all in one.  So this should be the only file Michael Abshoff will have to deal with.\n\nI think the ball is in your court now, John.\n\nRob",
+    "body": "Attachment [trac_5537_perm_compare.patch](tarball://root/attachments/some-uuid/ticket5537/trac_5537_perm_compare.patch) by rbeezer created at 2009-03-19 04:30:31\n\nReplying to [comment:14 robertwb]:\n\nOK, final patch (trac_5537_perm_compare) has Robert's \"perm-cmp\" patch, John's \"referee\" patch, and my code changes listed above all in one.  So this should be the only file Michael Abshoff will have to deal with.\n\nI think the ball is in your court now, John.\n\nRob",
     "created_at": "2009-03-19T04:30:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5537",
     "type": "issue_comment",
@@ -466,7 +466,7 @@ archive/issue_comments_043066.json:
 }
 ```
 
-Attachment
+Attachment [trac_5537_perm_compare.patch](tarball://root/attachments/some-uuid/ticket5537/trac_5537_perm_compare.patch) by rbeezer created at 2009-03-19 04:30:31
 
 Replying to [comment:14 robertwb]:
 

@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9889
 archive/issue_comments_098018.json:
 ```json
 {
-    "body": "Attachment\n\nFirst Version of the class of monomial algebras",
+    "body": "Attachment [monomial_algebra.patch](tarball://root/attachments/some-uuid/ticket9889/monomial_algebra.patch) by quimey created at 2010-09-09 20:43:46\n\nFirst Version of the class of monomial algebras",
     "created_at": "2010-09-09T20:43:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9888",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_098018.json:
 }
 ```
 
-Attachment
+Attachment [monomial_algebra.patch](tarball://root/attachments/some-uuid/ticket9889/monomial_algebra.patch) by quimey created at 2010-09-09 20:43:46
 
 First Version of the class of monomial algebras
 

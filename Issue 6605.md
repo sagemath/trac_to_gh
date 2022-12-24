@@ -111,7 +111,7 @@ Notes for other potential tickets:
 archive/issue_comments_054080.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch is identical, except it uses sys.exit(1) instead of sys.exit(0).",
+    "body": "Attachment [trac_6605-docbuild-check.patch](tarball://root/attachments/some-uuid/ticket6605/trac_6605-docbuild-check.patch) by jhpalmieri created at 2009-07-24 15:18:19\n\nThis patch is identical, except it uses sys.exit(1) instead of sys.exit(0).",
     "created_at": "2009-07-24T15:18:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6605",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_054080.json:
 }
 ```
 
-Attachment
+Attachment [trac_6605-docbuild-check.patch](tarball://root/attachments/some-uuid/ticket6605/trac_6605-docbuild-check.patch) by jhpalmieri created at 2009-07-24 15:18:19
 
 This patch is identical, except it uses sys.exit(1) instead of sys.exit(0).
 

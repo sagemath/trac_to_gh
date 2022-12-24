@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2987
 archive/issue_comments_020564.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [zn_poly-debian.patch](tarball://root/attachments/some-uuid/ticket2987/zn_poly-debian.patch) by tabbott created at 2008-04-21 06:32:24",
     "created_at": "2008-04-21T06:32:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2987",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_020564.json:
 }
 ```
 
-Attachment
+Attachment [zn_poly-debian.patch](tarball://root/attachments/some-uuid/ticket2987/zn_poly-debian.patch) by tabbott created at 2008-04-21 06:32:24
 
 
 

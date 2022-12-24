@@ -54,7 +54,7 @@ chinese translation of the tutorial
 archive/issue_comments_092485.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9577-chinese-tutorial.patch](tarball://root/attachments/some-uuid/ticket9577/9577-chinese-tutorial.patch) by schilly created at 2010-07-22 21:38:29",
     "created_at": "2010-07-22T21:38:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9577",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_092485.json:
 }
 ```
 
-Attachment
+Attachment [9577-chinese-tutorial.patch](tarball://root/attachments/some-uuid/ticket9577/9577-chinese-tutorial.patch) by schilly created at 2010-07-22 21:38:29
 
 
 

@@ -85,7 +85,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_095505.json:
 ```json
 {
-    "body": "Attachment\n\nAdds function gens_two(), rewrites gens_reduced() and fixes doctests",
+    "body": "Attachment [9753.patch](tarball://root/attachments/some-uuid/ticket9753/9753.patch) by jdemeyer created at 2010-09-16 00:43:33\n\nAdds function gens_two(), rewrites gens_reduced() and fixes doctests",
     "created_at": "2010-09-16T00:43:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9753",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_095505.json:
 }
 ```
 
-Attachment
+Attachment [9753.patch](tarball://root/attachments/some-uuid/ticket9753/9753.patch) by jdemeyer created at 2010-09-16 00:43:33
 
 Adds function gens_two(), rewrites gens_reduced() and fixes doctests
 
@@ -213,7 +213,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_095512.json:
 ```json
 {
-    "body": "Attachment\n\nNew version with better commit string",
+    "body": "Attachment [9753-better_commit_string.patch](tarball://root/attachments/some-uuid/ticket9753/9753-better_commit_string.patch) by davidloeffler created at 2010-09-28 09:41:42\n\nNew version with better commit string",
     "created_at": "2010-09-28T09:41:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9753",
     "type": "issue_comment",
@@ -222,7 +222,7 @@ archive/issue_comments_095512.json:
 }
 ```
 
-Attachment
+Attachment [9753-better_commit_string.patch](tarball://root/attachments/some-uuid/ticket9753/9753-better_commit_string.patch) by davidloeffler created at 2010-09-28 09:41:42
 
 New version with better commit string
 

@@ -79,7 +79,7 @@ Changing component from algebra to combinatorics.
 archive/issue_comments_048193.json:
 ```json
 {
-    "body": "Attachment\n\nRevised: CartanType in `type_reducible.py` needed a `dynkin_diagram` method.",
+    "body": "Attachment [trac_6050.patch](tarball://root/attachments/some-uuid/ticket6050/trac_6050.patch) by bump created at 2009-05-17 14:05:54\n\nRevised: CartanType in `type_reducible.py` needed a `dynkin_diagram` method.",
     "created_at": "2009-05-17T14:05:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6050",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_048193.json:
 }
 ```
 
-Attachment
+Attachment [trac_6050.patch](tarball://root/attachments/some-uuid/ticket6050/trac_6050.patch) by bump created at 2009-05-17 14:05:54
 
 Revised: CartanType in `type_reducible.py` needed a `dynkin_diagram` method.
 
@@ -99,7 +99,7 @@ Revised: CartanType in `type_reducible.py` needed a `dynkin_diagram` method.
 archive/issue_comments_048194.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6050-1.patch](tarball://root/attachments/some-uuid/ticket6050/trac_6050-1.patch) by bump created at 2009-05-20 13:40:23",
     "created_at": "2009-05-20T13:40:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6050",
     "type": "issue_comment",
@@ -108,7 +108,7 @@ archive/issue_comments_048194.json:
 }
 ```
 
-Attachment
+Attachment [trac_6050-1.patch](tarball://root/attachments/some-uuid/ticket6050/trac_6050-1.patch) by bump created at 2009-05-20 13:40:23
 
 
 

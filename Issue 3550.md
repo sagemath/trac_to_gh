@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3550
 archive/issue_comments_025105.json:
 ```json
 {
-    "body": "Attachment\n\nfirst patch -- does everything but needs more testing and documentation",
+    "body": "Attachment [sage-3550-part1.patch](tarball://root/attachments/some-uuid/ticket3550/sage-3550-part1.patch) by was created at 2008-07-04 09:02:44\n\nfirst patch -- does everything but needs more testing and documentation",
     "created_at": "2008-07-04T09:02:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3550",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_025105.json:
 }
 ```
 
-Attachment
+Attachment [sage-3550-part1.patch](tarball://root/attachments/some-uuid/ticket3550/sage-3550-part1.patch) by was created at 2008-07-04 09:02:44
 
 first patch -- does everything but needs more testing and documentation
 
@@ -107,7 +107,7 @@ this should do it (modulo doctests)
 archive/issue_comments_025108.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3550-part2.patch](tarball://root/attachments/some-uuid/ticket3550/sage-3550-part2.patch) by was created at 2008-07-04 11:25:54",
     "created_at": "2008-07-04T11:25:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3550",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_025108.json:
 }
 ```
 
-Attachment
+Attachment [sage-3550-part2.patch](tarball://root/attachments/some-uuid/ticket3550/sage-3550-part2.patch) by was created at 2008-07-04 11:25:54
 
 
 
@@ -161,7 +161,7 @@ Changing keywords from "" to "editor_wstein".
 archive/issue_comments_025111.json:
 ```json
 {
-    "body": "Attachment\n\nThis is now fully ready for review.",
+    "body": "Attachment [sage-3550-part3.patch](tarball://root/attachments/some-uuid/ticket3550/sage-3550-part3.patch) by was created at 2008-07-05 17:58:13\n\nThis is now fully ready for review.",
     "created_at": "2008-07-05T17:58:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3550",
     "type": "issue_comment",
@@ -170,7 +170,7 @@ archive/issue_comments_025111.json:
 }
 ```
 
-Attachment
+Attachment [sage-3550-part3.patch](tarball://root/attachments/some-uuid/ticket3550/sage-3550-part3.patch) by was created at 2008-07-05 17:58:13
 
 This is now fully ready for review.
 
@@ -203,7 +203,7 @@ Michael
 archive/issue_comments_025113.json:
 ```json
 {
-    "body": "Attachment\n\nMerged sage-3550-part1.patch to sage-3550-part4.patch in Sage 3.0.4.alpha2\n\nCheers,\n\nMichael",
+    "body": "Attachment [sage-3550-part4.patch](tarball://root/attachments/some-uuid/ticket3550/sage-3550-part4.patch) by mabshoff created at 2008-07-06 17:54:59\n\nMerged sage-3550-part1.patch to sage-3550-part4.patch in Sage 3.0.4.alpha2\n\nCheers,\n\nMichael",
     "created_at": "2008-07-06T17:54:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3550",
     "type": "issue_comment",
@@ -212,7 +212,7 @@ archive/issue_comments_025113.json:
 }
 ```
 
-Attachment
+Attachment [sage-3550-part4.patch](tarball://root/attachments/some-uuid/ticket3550/sage-3550-part4.patch) by mabshoff created at 2008-07-06 17:54:59
 
 Merged sage-3550-part1.patch to sage-3550-part4.patch in Sage 3.0.4.alpha2
 

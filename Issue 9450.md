@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9450
 archive/issue_comments_090568.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9450.patch](tarball://root/attachments/some-uuid/ticket9450/9450.patch) by jdemeyer created at 2010-07-07 21:17:52",
     "created_at": "2010-07-07T21:17:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9450",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_090568.json:
 }
 ```
 
-Attachment
+Attachment [9450.patch](tarball://root/attachments/some-uuid/ticket9450/9450.patch) by jdemeyer created at 2010-07-07 21:17:52
 
 
 
@@ -67,7 +67,7 @@ Changing status from new to needs_review.
 archive/issue_comments_090570.json:
 ```json
 {
-    "body": "Attachment\n\nApply after previous patch",
+    "body": "Attachment [trac_9450-reviewer.patch](tarball://root/attachments/some-uuid/ticket9450/trac_9450-reviewer.patch) by cremona created at 2010-07-08 12:26:37\n\nApply after previous patch",
     "created_at": "2010-07-08T12:26:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9450",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_090570.json:
 }
 ```
 
-Attachment
+Attachment [trac_9450-reviewer.patch](tarball://root/attachments/some-uuid/ticket9450/trac_9450-reviewer.patch) by cremona created at 2010-07-08 12:26:37
 
 Apply after previous patch
 

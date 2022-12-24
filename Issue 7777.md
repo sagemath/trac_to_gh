@@ -89,7 +89,7 @@ Although I haven't tested it yet, I'm in principle very happy with the 'green' p
 archive/issue_comments_067055.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7777_symmetric_functions-inject_shorthands-nt.patch](tarball://root/attachments/some-uuid/ticket7777/trac_7777_symmetric_functions-inject_shorthands-nt.patch) by nthiery created at 2010-01-07 19:48:08",
     "created_at": "2010-01-07T19:48:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7777",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_067055.json:
 }
 ```
 
-Attachment
+Attachment [trac_7777_symmetric_functions-inject_shorthands-nt.patch](tarball://root/attachments/some-uuid/ticket7777/trac_7777_symmetric_functions-inject_shorthands-nt.patch) by nthiery created at 2010-01-07 19:48:08
 
 
 

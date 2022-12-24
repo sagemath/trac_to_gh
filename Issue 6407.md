@@ -51,7 +51,7 @@ Changing status from new to assigned.
 archive/issue_comments_051448.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6407_added_double-and-add_algo_to_EllipticCurveFormalGroup.patch](tarball://root/attachments/some-uuid/ticket6407/trac_6407_added_double-and-add_algo_to_EllipticCurveFormalGroup.patch) by hlaw created at 2009-07-12 19:53:06",
     "created_at": "2009-07-12T19:53:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6407",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_051448.json:
 }
 ```
 
-Attachment
+Attachment [trac_6407_added_double-and-add_algo_to_EllipticCurveFormalGroup.patch](tarball://root/attachments/some-uuid/ticket6407/trac_6407_added_double-and-add_algo_to_EllipticCurveFormalGroup.patch) by hlaw created at 2009-07-12 19:53:06
 
 
 
@@ -69,7 +69,7 @@ Attachment
 archive/issue_comments_051449.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6407_part2.patch](tarball://root/attachments/some-uuid/ticket6407/6407_part2.patch) by boothby created at 2009-07-17 23:22:53",
     "created_at": "2009-07-17T23:22:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6407",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_051449.json:
 }
 ```
 
-Attachment
+Attachment [6407_part2.patch](tarball://root/attachments/some-uuid/ticket6407/6407_part2.patch) by boothby created at 2009-07-17 23:22:53
 
 
 

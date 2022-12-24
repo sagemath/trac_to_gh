@@ -128,7 +128,7 @@ The patch also reformats the warning messages that get printed if tkz-berge.sty 
 archive/issue_comments_075927.json:
 ```json
 {
-    "body": "Attachment\n\nThank's John,\n\nI will test this, but it might take me a few days, as I have a very busy schedule this week. \n\nFortunately this is not a critical patch. \n\nDave",
+    "body": "Attachment [trac_8445-kpsewhich-solaris.patch](tarball://root/attachments/some-uuid/ticket8445/trac_8445-kpsewhich-solaris.patch) by drkirkby created at 2010-03-06 16:12:04\n\nThank's John,\n\nI will test this, but it might take me a few days, as I have a very busy schedule this week. \n\nFortunately this is not a critical patch. \n\nDave",
     "created_at": "2010-03-06T16:12:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8445",
     "type": "issue_comment",
@@ -137,7 +137,7 @@ archive/issue_comments_075927.json:
 }
 ```
 
-Attachment
+Attachment [trac_8445-kpsewhich-solaris.patch](tarball://root/attachments/some-uuid/ticket8445/trac_8445-kpsewhich-solaris.patch) by drkirkby created at 2010-03-06 16:12:04
 
 Thank's John,
 

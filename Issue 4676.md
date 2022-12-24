@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4676
 archive/issue_comments_035228.json:
 ```json
 {
-    "body": "Attachment\n\nbased against 3.2.1-rc1",
+    "body": "Attachment [4676_polyhedra_1.patch](tarball://root/attachments/some-uuid/ticket4676/4676_polyhedra_1.patch) by mhampton created at 2008-12-02 17:18:27\n\nbased against 3.2.1-rc1",
     "created_at": "2008-12-02T17:18:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4676",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_035228.json:
 }
 ```
 
-Attachment
+Attachment [4676_polyhedra_1.patch](tarball://root/attachments/some-uuid/ticket4676/4676_polyhedra_1.patch) by mhampton created at 2008-12-02 17:18:27
 
 based against 3.2.1-rc1
 
@@ -162,7 +162,7 @@ rebased on 3.2.3, supercedes previous patch, addresses review
 archive/issue_comments_035234.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4676_rebase.patch](tarball://root/attachments/some-uuid/ticket4676/4676_rebase.patch) by mhampton created at 2009-01-11 17:02:33",
     "created_at": "2009-01-11T17:02:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4676",
     "type": "issue_comment",
@@ -171,7 +171,7 @@ archive/issue_comments_035234.json:
 }
 ```
 
-Attachment
+Attachment [4676_rebase.patch](tarball://root/attachments/some-uuid/ticket4676/4676_rebase.patch) by mhampton created at 2009-01-11 17:02:33
 
 
 

@@ -78,7 +78,7 @@ Michael
 archive/issue_comments_014148.json:
 ```json
 {
-    "body": "Attachment\n\nIt looks like the problem here was actually infinite loops, but it now checks to make sure it always gets a valid permutation (even if check=False is set).",
+    "body": "Attachment [2154-invalid-perm.patch](tarball://root/attachments/some-uuid/ticket2154/2154-invalid-perm.patch) by robertwb created at 2008-02-21 22:06:24\n\nIt looks like the problem here was actually infinite loops, but it now checks to make sure it always gets a valid permutation (even if check=False is set).",
     "created_at": "2008-02-21T22:06:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2154",
     "type": "issue_comment",
@@ -87,7 +87,7 @@ archive/issue_comments_014148.json:
 }
 ```
 
-Attachment
+Attachment [2154-invalid-perm.patch](tarball://root/attachments/some-uuid/ticket2154/2154-invalid-perm.patch) by robertwb created at 2008-02-21 22:06:24
 
 It looks like the problem here was actually infinite loops, but it now checks to make sure it always gets a valid permutation (even if check=False is set).
 

@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6193
 archive/issue_comments_049460.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [cperiods-2.patch](tarball://root/attachments/some-uuid/ticket6193/cperiods-2.patch) by robertwb created at 2009-06-03 06:59:15",
     "created_at": "2009-06-03T06:59:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6193",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_049460.json:
 }
 ```
 
-Attachment
+Attachment [cperiods-2.patch](tarball://root/attachments/some-uuid/ticket6193/cperiods-2.patch) by robertwb created at 2009-06-03 06:59:15
 
 
 
@@ -199,7 +199,7 @@ Thinking about the agm termination condition, the convergence of agm is quadrati
 archive/issue_comments_049466.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6193-ell-log-referee.patch](tarball://root/attachments/some-uuid/ticket6193/6193-ell-log-referee.patch) by robertwb created at 2009-06-05 11:11:56",
     "created_at": "2009-06-05T11:11:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6193",
     "type": "issue_comment",
@@ -208,7 +208,7 @@ archive/issue_comments_049466.json:
 }
 ```
 
-Attachment
+Attachment [6193-ell-log-referee.patch](tarball://root/attachments/some-uuid/ticket6193/6193-ell-log-referee.patch) by robertwb created at 2009-06-05 11:11:56
 
 
 

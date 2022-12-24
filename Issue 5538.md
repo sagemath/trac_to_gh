@@ -51,7 +51,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5538
 archive/issue_comments_043070.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [family_improve-fh-5538-submitted.patch](tarball://root/attachments/some-uuid/ticket5538/family_improve-fh-5538-submitted.patch) by hivert created at 2009-04-06 21:46:43",
     "created_at": "2009-04-06T21:46:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5538",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_043070.json:
 }
 ```
 
-Attachment
+Attachment [family_improve-fh-5538-submitted.patch](tarball://root/attachments/some-uuid/ticket5538/family_improve-fh-5538-submitted.patch) by hivert created at 2009-04-06 21:46:43
 
 
 
@@ -99,7 +99,7 @@ Florent
 archive/issue_comments_043072.json:
 ```json
 {
-    "body": "Attachment\n\nDoc fix",
+    "body": "Attachment [family_doc_fix-final.patch](tarball://root/attachments/some-uuid/ticket5538/family_doc_fix-final.patch) by hivert created at 2009-04-07 07:56:44\n\nDoc fix",
     "created_at": "2009-04-07T07:56:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5538",
     "type": "issue_comment",
@@ -108,7 +108,7 @@ archive/issue_comments_043072.json:
 }
 ```
 
-Attachment
+Attachment [family_doc_fix-final.patch](tarball://root/attachments/some-uuid/ticket5538/family_doc_fix-final.patch) by hivert created at 2009-04-07 07:56:44
 
 Doc fix
 
@@ -137,7 +137,7 @@ Since the file is moved, the patch is not very useful. I added a diff from the f
 archive/issue_comments_043074.json:
 ```json
 {
-    "body": "Attachment\n\nDifference of family.py before and after the patch.",
+    "body": "Attachment [family.diff](tarball://root/attachments/some-uuid/ticket5538/family.diff) by hivert created at 2009-04-09 20:44:22\n\nDifference of family.py before and after the patch.",
     "created_at": "2009-04-09T20:44:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5538",
     "type": "issue_comment",
@@ -146,7 +146,7 @@ archive/issue_comments_043074.json:
 }
 ```
 
-Attachment
+Attachment [family.diff](tarball://root/attachments/some-uuid/ticket5538/family.diff) by hivert created at 2009-04-09 20:44:22
 
 Difference of family.py before and after the patch.
 
@@ -228,7 +228,7 @@ Just two suggestions in TrivialFamily:
 archive/issue_comments_043077.json:
 ```json
 {
-    "body": "Attachment\n\nCleanup of the interface.",
+    "body": "Attachment [family_interface-cleanup-fh-final.patch](tarball://root/attachments/some-uuid/ticket5538/family_interface-cleanup-fh-final.patch) by hivert created at 2009-04-14 17:01:51\n\nCleanup of the interface.",
     "created_at": "2009-04-14T17:01:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5538",
     "type": "issue_comment",
@@ -237,7 +237,7 @@ archive/issue_comments_043077.json:
 }
 ```
 
-Attachment
+Attachment [family_interface-cleanup-fh-final.patch](tarball://root/attachments/some-uuid/ticket5538/family_interface-cleanup-fh-final.patch) by hivert created at 2009-04-14 17:01:51
 
 Cleanup of the interface.
 
@@ -248,7 +248,7 @@ Cleanup of the interface.
 archive/issue_comments_043078.json:
 ```json
 {
-    "body": "Attachment\n\nAdapted root system with the new interface",
+    "body": "Attachment [family_adapt-fh-final.patch](tarball://root/attachments/some-uuid/ticket5538/family_adapt-fh-final.patch) by hivert created at 2009-04-14 17:02:17\n\nAdapted root system with the new interface",
     "created_at": "2009-04-14T17:02:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5538",
     "type": "issue_comment",
@@ -257,7 +257,7 @@ archive/issue_comments_043078.json:
 }
 ```
 
-Attachment
+Attachment [family_adapt-fh-final.patch](tarball://root/attachments/some-uuid/ticket5538/family_adapt-fh-final.patch) by hivert created at 2009-04-14 17:02:17
 
 Adapted root system with the new interface
 
@@ -301,7 +301,7 @@ Florent
 archive/issue_comments_043080.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review.\n\nFlorent: please update the summary accordingly, after double checking my (trivial) review patch. It needs to be applied last.\n\nMichael: do you mind setting the gard +3_4_1 on the patch server just after the merge?\n(and possibly also for the other recently merged in sage-combinat patches). Thanks!",
+    "body": "Attachment [family_review.patch](tarball://root/attachments/some-uuid/ticket5538/family_review.patch) by nthiery created at 2009-04-14 18:09:51\n\nPositive review.\n\nFlorent: please update the summary accordingly, after double checking my (trivial) review patch. It needs to be applied last.\n\nMichael: do you mind setting the gard +3_4_1 on the patch server just after the merge?\n(and possibly also for the other recently merged in sage-combinat patches). Thanks!",
     "created_at": "2009-04-14T18:09:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5538",
     "type": "issue_comment",
@@ -310,7 +310,7 @@ archive/issue_comments_043080.json:
 }
 ```
 
-Attachment
+Attachment [family_review.patch](tarball://root/attachments/some-uuid/ticket5538/family_review.patch) by nthiery created at 2009-04-14 18:09:51
 
 Positive review.
 
@@ -499,7 +499,7 @@ Fixing the Pickle + Minimal doc header.
 archive/issue_comments_043088.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review for the pickle fix patch. The five patches together make the test suite pass.\n\nCheers,\n\nMichael",
+    "body": "Attachment [family_pickle_fix-fh.patch](tarball://root/attachments/some-uuid/ticket5538/family_pickle_fix-fh.patch) by mabshoff created at 2009-04-15 22:21:51\n\nPositive review for the pickle fix patch. The five patches together make the test suite pass.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-15T22:21:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5538",
     "type": "issue_comment",
@@ -508,7 +508,7 @@ archive/issue_comments_043088.json:
 }
 ```
 
-Attachment
+Attachment [family_pickle_fix-fh.patch](tarball://root/attachments/some-uuid/ticket5538/family_pickle_fix-fh.patch) by mabshoff created at 2009-04-15 22:21:51
 
 Positive review for the pickle fix patch. The five patches together make the test suite pass.
 

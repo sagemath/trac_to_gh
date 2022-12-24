@@ -65,7 +65,7 @@ apply after #4357 and #5736
 archive/issue_comments_047688.json:
 ```json
 {
-    "body": "Attachment\n\nHere's a patch, which adds ` is_cuspidal`, `is_eisenstein`, `is_new` and `is_old`, and corrects a funny glitch whereby elliptic curve newforms consistently claimed not to be cuspidal :-) I wrote the patch and ran tests with this and everything else (including the not-yet-fully-refereed #5968) installed simultaneously, but it should at least apply as long as you have the patches at #4357 and #5736 installed.",
+    "body": "Attachment [trac_5995.patch](tarball://root/attachments/some-uuid/ticket5995/trac_5995.patch) by davidloeffler created at 2009-05-12 08:53:26\n\nHere's a patch, which adds ` is_cuspidal`, `is_eisenstein`, `is_new` and `is_old`, and corrects a funny glitch whereby elliptic curve newforms consistently claimed not to be cuspidal :-) I wrote the patch and ran tests with this and everything else (including the not-yet-fully-refereed #5968) installed simultaneously, but it should at least apply as long as you have the patches at #4357 and #5736 installed.",
     "created_at": "2009-05-12T08:53:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5995",
     "type": "issue_comment",
@@ -74,7 +74,7 @@ archive/issue_comments_047688.json:
 }
 ```
 
-Attachment
+Attachment [trac_5995.patch](tarball://root/attachments/some-uuid/ticket5995/trac_5995.patch) by davidloeffler created at 2009-05-12 08:53:26
 
 Here's a patch, which adds ` is_cuspidal`, `is_eisenstein`, `is_new` and `is_old`, and corrects a funny glitch whereby elliptic curve newforms consistently claimed not to be cuspidal :-) I wrote the patch and ran tests with this and everything else (including the not-yet-fully-refereed #5968) installed simultaneously, but it should at least apply as long as you have the patches at #4357 and #5736 installed.
 

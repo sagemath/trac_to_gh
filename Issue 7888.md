@@ -51,7 +51,7 @@ Changing status from new to needs_review.
 archive/issue_comments_068587.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [do_not_pass_comment_lines_to_Macaulay2.patch](tarball://root/attachments/some-uuid/ticket7888/do_not_pass_comment_lines_to_Macaulay2.patch) by novoselt created at 2010-01-10 01:54:38",
     "created_at": "2010-01-10T01:54:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7888",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_068587.json:
 }
 ```
 
-Attachment
+Attachment [do_not_pass_comment_lines_to_Macaulay2.patch](tarball://root/attachments/some-uuid/ticket7888/do_not_pass_comment_lines_to_Macaulay2.patch) by novoselt created at 2010-01-10 01:54:38
 
 
 

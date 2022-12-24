@@ -90,7 +90,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6448
 archive/issue_comments_051832.json:
 ```json
 {
-    "body": "Attachment\n\nI developed and tested this patch on OS X 10.4, and it worked (I had seen before a slightly different doctest failure than noted in the description, but nevertheless).\nFrom this, and the nature of the changes in the patch, I deduce it should work on any platform except possibly OS X 10.5.\nI can't test on the latter one, though.",
+    "body": "Attachment [trac_6448-darwin_utilities-doctest.patch](tarball://root/attachments/some-uuid/ticket6448/trac_6448-darwin_utilities-doctest.patch) by GeorgSWeber created at 2009-07-02 22:06:56\n\nI developed and tested this patch on OS X 10.4, and it worked (I had seen before a slightly different doctest failure than noted in the description, but nevertheless).\nFrom this, and the nature of the changes in the patch, I deduce it should work on any platform except possibly OS X 10.5.\nI can't test on the latter one, though.",
     "created_at": "2009-07-02T22:06:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6448",
     "type": "issue_comment",
@@ -99,7 +99,7 @@ archive/issue_comments_051832.json:
 }
 ```
 
-Attachment
+Attachment [trac_6448-darwin_utilities-doctest.patch](tarball://root/attachments/some-uuid/ticket6448/trac_6448-darwin_utilities-doctest.patch) by GeorgSWeber created at 2009-07-02 22:06:56
 
 I developed and tested this patch on OS X 10.4, and it worked (I had seen before a slightly different doctest failure than noted in the description, but nevertheless).
 From this, and the nature of the changes in the patch, I deduce it should work on any platform except possibly OS X 10.5.

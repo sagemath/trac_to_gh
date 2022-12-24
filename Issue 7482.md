@@ -162,7 +162,7 @@ NameError: Too many automatic variable names and functions created (limit=10000)
 archive/issue_comments_063160.json:
 ```json
 {
-    "body": "Attachment\n\napply to the sagenb spkg",
+    "body": "Attachment [sagenb_7482.patch](tarball://root/attachments/some-uuid/ticket7482/sagenb_7482.patch) by was created at 2009-11-18 03:29:41\n\napply to the sagenb spkg",
     "created_at": "2009-11-18T03:29:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
@@ -171,7 +171,7 @@ archive/issue_comments_063160.json:
 }
 ```
 
-Attachment
+Attachment [sagenb_7482.patch](tarball://root/attachments/some-uuid/ticket7482/sagenb_7482.patch) by was created at 2009-11-18 03:29:41
 
 apply to the sagenb spkg
 
@@ -182,7 +182,7 @@ apply to the sagenb spkg
 archive/issue_comments_063161.json:
 ```json
 {
-    "body": "Attachment\n\napply to the core sage library",
+    "body": "Attachment [sagelib_7482.patch](tarball://root/attachments/some-uuid/ticket7482/sagelib_7482.patch) by was created at 2009-11-18 03:29:54\n\napply to the core sage library",
     "created_at": "2009-11-18T03:29:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
@@ -191,7 +191,7 @@ archive/issue_comments_063161.json:
 }
 ```
 
-Attachment
+Attachment [sagelib_7482.patch](tarball://root/attachments/some-uuid/ticket7482/sagelib_7482.patch) by was created at 2009-11-18 03:29:54
 
 apply to the core sage library
 
@@ -360,7 +360,7 @@ Fix typo.  Replaces **sagenb** patch.
 archive/issue_comments_063170.json:
 ```json
 {
-    "body": "Attachment\n\nV3 changes\n\n```\n            sage: automatic_names(True)\n```\n\nto\n\n```\n            sage: automatic_names(True)      # not tested\n```\n",
+    "body": "Attachment [sagenb_7482.2.patch](tarball://root/attachments/some-uuid/ticket7482/sagenb_7482.2.patch) by mpatel created at 2009-12-10 06:20:39\n\nV3 changes\n\n```\n            sage: automatic_names(True)\n```\n\nto\n\n```\n            sage: automatic_names(True)      # not tested\n```\n",
     "created_at": "2009-12-10T06:20:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
@@ -369,7 +369,7 @@ archive/issue_comments_063170.json:
 }
 ```
 
-Attachment
+Attachment [sagenb_7482.2.patch](tarball://root/attachments/some-uuid/ticket7482/sagenb_7482.2.patch) by mpatel created at 2009-12-10 06:20:39
 
 V3 changes
 
@@ -391,7 +391,7 @@ to
 archive/issue_comments_063171.json:
 ```json
 {
-    "body": "Attachment\n\nSuppress a doctest (cf. #7650).  Replaces **sagenb** patch.",
+    "body": "Attachment [sagenb_7482.3.patch](tarball://root/attachments/some-uuid/ticket7482/sagenb_7482.3.patch) by mpatel created at 2009-12-10 06:21:38\n\nSuppress a doctest (cf. #7650).  Replaces **sagenb** patch.",
     "created_at": "2009-12-10T06:21:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
@@ -400,7 +400,7 @@ archive/issue_comments_063171.json:
 }
 ```
 
-Attachment
+Attachment [sagenb_7482.3.patch](tarball://root/attachments/some-uuid/ticket7482/sagenb_7482.3.patch) by mpatel created at 2009-12-10 06:21:38
 
 Suppress a doctest (cf. #7650).  Replaces **sagenb** patch.
 
@@ -447,7 +447,7 @@ Rebased vs. #7514's "part3.2".  Replaces **sagenb** patch.
 archive/issue_comments_063174.json:
 ```json
 {
-    "body": "Attachment\n\nI've merged the sagelib patch in 4.3.1.alpha0.",
+    "body": "Attachment [sagenb_7482.4.patch](tarball://root/attachments/some-uuid/ticket7482/sagenb_7482.4.patch) by mhansen created at 2010-01-03 22:08:41\n\nI've merged the sagelib patch in 4.3.1.alpha0.",
     "created_at": "2010-01-03T22:08:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
@@ -456,7 +456,7 @@ archive/issue_comments_063174.json:
 }
 ```
 
-Attachment
+Attachment [sagenb_7482.4.patch](tarball://root/attachments/some-uuid/ticket7482/sagenb_7482.4.patch) by mhansen created at 2010-01-03 22:08:41
 
 I've merged the sagelib patch in 4.3.1.alpha0.
 

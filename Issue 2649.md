@@ -56,7 +56,7 @@ Resolution: duplicate
 archive/issue_comments_018211.json:
 ```json
 {
-    "body": "Attachment\n\nsubsumed by #2651",
+    "body": "Attachment [matrix-empty-dict.patch](tarball://root/attachments/some-uuid/ticket2649/matrix-empty-dict.patch) by rhinton created at 2008-03-23 02:17:49\n\nsubsumed by #2651",
     "created_at": "2008-03-23T02:17:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2649",
     "type": "issue_comment",
@@ -65,6 +65,6 @@ archive/issue_comments_018211.json:
 }
 ```
 
-Attachment
+Attachment [matrix-empty-dict.patch](tarball://root/attachments/some-uuid/ticket2649/matrix-empty-dict.patch) by rhinton created at 2008-03-23 02:17:49
 
 subsumed by #2651

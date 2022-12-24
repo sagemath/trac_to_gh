@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7355
 archive/issue_comments_061603.json:
 ```json
 {
-    "body": "Attachment\n\nAdds `sage-latest-online-package` and changes `sage-spkg` to work without version number.",
+    "body": "Attachment [trac_7355-sage-i-no-version.patch](tarball://root/attachments/some-uuid/ticket7355/trac_7355-sage-i-no-version.patch) by timdumol created at 2009-10-30 08:36:25\n\nAdds `sage-latest-online-package` and changes `sage-spkg` to work without version number.",
     "created_at": "2009-10-30T08:36:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7355",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_061603.json:
 }
 ```
 
-Attachment
+Attachment [trac_7355-sage-i-no-version.patch](tarball://root/attachments/some-uuid/ticket7355/trac_7355-sage-i-no-version.patch) by timdumol created at 2009-10-30 08:36:25
 
 Adds `sage-latest-online-package` and changes `sage-spkg` to work without version number.
 
@@ -137,7 +137,7 @@ Removed ".spkg" suffix from return value of `sage-latest-online-version`
 archive/issue_comments_061608.json:
 ```json
 {
-    "body": "Attachment\n\nThe fix you stated is up. Thanks!",
+    "body": "Attachment [trac_7355-sage-i-no-version.2.patch](tarball://root/attachments/some-uuid/ticket7355/trac_7355-sage-i-no-version.2.patch) by timdumol created at 2009-11-03 21:34:08\n\nThe fix you stated is up. Thanks!",
     "created_at": "2009-11-03T21:34:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7355",
     "type": "issue_comment",
@@ -146,7 +146,7 @@ archive/issue_comments_061608.json:
 }
 ```
 
-Attachment
+Attachment [trac_7355-sage-i-no-version.2.patch](tarball://root/attachments/some-uuid/ticket7355/trac_7355-sage-i-no-version.2.patch) by timdumol created at 2009-11-03 21:34:08
 
 The fix you stated is up. Thanks!
 
@@ -350,7 +350,7 @@ Added Dan Drake's suggestions. Also strips package versions and matches packages
 archive/issue_comments_061617.json:
 ```json
 {
-    "body": "Attachment\n\nHrm, I think attachment:rac_7355-sage-i-no-version.3.patch was supposed to be uploaded to another ticket -- I see a one-line patch to `sagenb/data/sage/html/worksheet/worksheet.html`.",
+    "body": "Attachment [trac_7355-sage-i-no-version.3.patch](tarball://root/attachments/some-uuid/ticket7355/trac_7355-sage-i-no-version.3.patch) by ddrake created at 2009-11-12 02:21:30\n\nHrm, I think attachment:rac_7355-sage-i-no-version.3.patch was supposed to be uploaded to another ticket -- I see a one-line patch to `sagenb/data/sage/html/worksheet/worksheet.html`.",
     "created_at": "2009-11-12T02:21:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7355",
     "type": "issue_comment",
@@ -359,7 +359,7 @@ archive/issue_comments_061617.json:
 }
 ```
 
-Attachment
+Attachment [trac_7355-sage-i-no-version.3.patch](tarball://root/attachments/some-uuid/ticket7355/trac_7355-sage-i-no-version.3.patch) by ddrake created at 2009-11-12 02:21:30
 
 Hrm, I think attachment:rac_7355-sage-i-no-version.3.patch was supposed to be uploaded to another ticket -- I see a one-line patch to `sagenb/data/sage/html/worksheet/worksheet.html`.
 
@@ -409,7 +409,7 @@ Added Dan Drake's suggestions. Also strips package versions and matches packages
 archive/issue_comments_061620.json:
 ```json
 {
-    "body": "Attachment\n\nI have one more suggestion / question, and then I think this will be ready to go: in sage-latest-spkg, you have a couple of bare \"exit()\" statements...do you want sys.exit()? I see that \"exit(1)\" works in Python, but I've always used sys.exit(). I can't find any documentation for the use of exit(), although it seems to work. Any ideas?",
+    "body": "Attachment [trac_7355-sage-i-no-version.4.patch](tarball://root/attachments/some-uuid/ticket7355/trac_7355-sage-i-no-version.4.patch) by ddrake created at 2009-11-13 01:26:42\n\nI have one more suggestion / question, and then I think this will be ready to go: in sage-latest-spkg, you have a couple of bare \"exit()\" statements...do you want sys.exit()? I see that \"exit(1)\" works in Python, but I've always used sys.exit(). I can't find any documentation for the use of exit(), although it seems to work. Any ideas?",
     "created_at": "2009-11-13T01:26:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7355",
     "type": "issue_comment",
@@ -418,7 +418,7 @@ archive/issue_comments_061620.json:
 }
 ```
 
-Attachment
+Attachment [trac_7355-sage-i-no-version.4.patch](tarball://root/attachments/some-uuid/ticket7355/trac_7355-sage-i-no-version.4.patch) by ddrake created at 2009-11-13 01:26:42
 
 I have one more suggestion / question, and then I think this will be ready to go: in sage-latest-spkg, you have a couple of bare "exit()" statements...do you want sys.exit()? I see that "exit(1)" works in Python, but I've always used sys.exit(). I can't find any documentation for the use of exit(), although it seems to work. Any ideas?
 
@@ -447,7 +447,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_061622.json:
 ```json
 {
-    "body": "Attachment\n\nReplaces `exit()` calls with `sys.exit()` calls.",
+    "body": "Attachment [trac_7355-sage-i-no-version.5.patch](tarball://root/attachments/some-uuid/ticket7355/trac_7355-sage-i-no-version.5.patch) by timdumol created at 2009-11-13 19:20:12\n\nReplaces `exit()` calls with `sys.exit()` calls.",
     "created_at": "2009-11-13T19:20:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7355",
     "type": "issue_comment",
@@ -456,7 +456,7 @@ archive/issue_comments_061622.json:
 }
 ```
 
-Attachment
+Attachment [trac_7355-sage-i-no-version.5.patch](tarball://root/attachments/some-uuid/ticket7355/trac_7355-sage-i-no-version.5.patch) by timdumol created at 2009-11-13 19:20:12
 
 Replaces `exit()` calls with `sys.exit()` calls.
 
@@ -569,7 +569,7 @@ License changed.
 archive/issue_comments_061628.json:
 ```json
 {
-    "body": "Attachment\n\nDone.",
+    "body": "Attachment [trac_7355-sage-i-no-version.6.patch](tarball://root/attachments/some-uuid/ticket7355/trac_7355-sage-i-no-version.6.patch) by timdumol created at 2009-11-14 04:06:24\n\nDone.",
     "created_at": "2009-11-14T04:06:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7355",
     "type": "issue_comment",
@@ -578,7 +578,7 @@ archive/issue_comments_061628.json:
 }
 ```
 
-Attachment
+Attachment [trac_7355-sage-i-no-version.6.patch](tarball://root/attachments/some-uuid/ticket7355/trac_7355-sage-i-no-version.6.patch) by timdumol created at 2009-11-14 04:06:24
 
 Done.
 

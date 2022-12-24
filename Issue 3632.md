@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3632
 archive/issue_comments_025691.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac.3632.patch](tarball://root/attachments/some-uuid/ticket3632/trac.3632.patch) by wuthrich created at 2008-07-10 13:11:54",
     "created_at": "2008-07-10T13:11:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3632",
     "type": "issue_comment",
@@ -49,7 +49,7 @@ archive/issue_comments_025691.json:
 }
 ```
 
-Attachment
+Attachment [trac.3632.patch](tarball://root/attachments/some-uuid/ticket3632/trac.3632.patch) by wuthrich created at 2008-07-10 13:11:54
 
 
 
@@ -76,7 +76,7 @@ I hate to do this.... it's obviously a perfectly good patch.... but the document
 archive/issue_comments_025693.json:
 ```json
 {
-    "body": "Attachment\n\nOk. I added an additional patch (applied after the first) with some docstring. I hope that it is enough.",
+    "body": "Attachment [trac.3632.extra1.patch](tarball://root/attachments/some-uuid/ticket3632/trac.3632.extra1.patch) by wuthrich created at 2008-07-11 10:23:22\n\nOk. I added an additional patch (applied after the first) with some docstring. I hope that it is enough.",
     "created_at": "2008-07-11T10:23:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3632",
     "type": "issue_comment",
@@ -85,7 +85,7 @@ archive/issue_comments_025693.json:
 }
 ```
 
-Attachment
+Attachment [trac.3632.extra1.patch](tarball://root/attachments/some-uuid/ticket3632/trac.3632.extra1.patch) by wuthrich created at 2008-07-11 10:23:22
 
 Ok. I added an additional patch (applied after the first) with some docstring. I hope that it is enough.
 
@@ -96,7 +96,7 @@ Ok. I added an additional patch (applied after the first) with some docstring. I
 archive/issue_comments_025694.json:
 ```json
 {
-    "body": "Attachment\n\nhi, I've added yet a third patch, with minor changes to your patch, plus cleaning up some existing nearby doctests which didn't make sense to me. Assuming you are happy with these changes, I think this patch is good to go.\n\n(all three patches should be applied)",
+    "body": "Attachment [trac.3632.extra2.patch](tarball://root/attachments/some-uuid/ticket3632/trac.3632.extra2.patch) by dmharvey created at 2008-07-11 13:10:45\n\nhi, I've added yet a third patch, with minor changes to your patch, plus cleaning up some existing nearby doctests which didn't make sense to me. Assuming you are happy with these changes, I think this patch is good to go.\n\n(all three patches should be applied)",
     "created_at": "2008-07-11T13:10:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3632",
     "type": "issue_comment",
@@ -105,7 +105,7 @@ archive/issue_comments_025694.json:
 }
 ```
 
-Attachment
+Attachment [trac.3632.extra2.patch](tarball://root/attachments/some-uuid/ticket3632/trac.3632.extra2.patch) by dmharvey created at 2008-07-11 13:10:45
 
 hi, I've added yet a third patch, with minor changes to your patch, plus cleaning up some existing nearby doctests which didn't make sense to me. Assuming you are happy with these changes, I think this patch is good to go.
 

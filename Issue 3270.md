@@ -50,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3270
 archive/issue_comments_022636.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.",
+    "body": "Attachment [3270-bc_default.patch](tarball://root/attachments/some-uuid/ticket3270/3270-bc_default.patch) by mhansen created at 2008-05-22 09:16:43\n\nLooks good to me.",
     "created_at": "2008-05-22T09:16:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3270",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_022636.json:
 }
 ```
 
-Attachment
+Attachment [3270-bc_default.patch](tarball://root/attachments/some-uuid/ticket3270/3270-bc_default.patch) by mhansen created at 2008-05-22 09:16:43
 
 Looks good to me.
 

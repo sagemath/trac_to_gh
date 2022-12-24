@@ -101,7 +101,7 @@ Just found the following in notebook.Notebook.html
 archive/issue_comments_033029.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4471.patch](tarball://root/attachments/some-uuid/ticket4471/trac_4471.patch) by was created at 2008-12-06 21:09:49",
     "created_at": "2008-12-06T21:09:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4471",
     "type": "issue_comment",
@@ -110,7 +110,7 @@ archive/issue_comments_033029.json:
 }
 ```
 
-Attachment
+Attachment [trac_4471.patch](tarball://root/attachments/some-uuid/ticket4471/trac_4471.patch) by was created at 2008-12-06 21:09:49
 
 
 

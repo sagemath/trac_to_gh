@@ -53,7 +53,7 @@ Changing priority from minor to critical.
 archive/issue_comments_049982.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch generally improves graph eigenvalues by not altering the adjacency matrix and therefore allowing new routines to take advantage of the adjacency matrix being a matrix of integers.  It also corrects a serious bug for eigenvalues of digraphs.  More specifically\n\n1.  The adjacency matrix is no longer converted to a matrix of reals or complexes.\n\n2.  Eigenspaces are now more abstract (but are exact).  More numerical results come from the new `eigenvectors()` method.\n\n3.  Any complex part of an eigenvalue was previously being stripped, as if a graph could never be a digraph.  This has been corrected and a simple doctest added.\n\n4.  While in the neighborhood, the `characteristic_polynomial()` got some cosmetic changes in its docstring.\n\n5.  Long-term, the `spectrum()` command should return some sort of object, like a `Factorization` object, as discussed on sage-devel.  Then the current `spectrum()` could be renamed as `eigenvalues()`.",
+    "body": "Attachment [trac_6258_graph_eigenvalues.patch](tarball://root/attachments/some-uuid/ticket6258/trac_6258_graph_eigenvalues.patch) by rbeezer created at 2009-06-30 06:07:47\n\nThe patch generally improves graph eigenvalues by not altering the adjacency matrix and therefore allowing new routines to take advantage of the adjacency matrix being a matrix of integers.  It also corrects a serious bug for eigenvalues of digraphs.  More specifically\n\n1.  The adjacency matrix is no longer converted to a matrix of reals or complexes.\n\n2.  Eigenspaces are now more abstract (but are exact).  More numerical results come from the new `eigenvectors()` method.\n\n3.  Any complex part of an eigenvalue was previously being stripped, as if a graph could never be a digraph.  This has been corrected and a simple doctest added.\n\n4.  While in the neighborhood, the `characteristic_polynomial()` got some cosmetic changes in its docstring.\n\n5.  Long-term, the `spectrum()` command should return some sort of object, like a `Factorization` object, as discussed on sage-devel.  Then the current `spectrum()` could be renamed as `eigenvalues()`.",
     "created_at": "2009-06-30T06:07:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6258",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_049982.json:
 }
 ```
 
-Attachment
+Attachment [trac_6258_graph_eigenvalues.patch](tarball://root/attachments/some-uuid/ticket6258/trac_6258_graph_eigenvalues.patch) by rbeezer created at 2009-06-30 06:07:47
 
 The patch generally improves graph eigenvalues by not altering the adjacency matrix and therefore allowing new routines to take advantage of the adjacency matrix being a matrix of integers.  It also corrects a serious bug for eigenvalues of digraphs.  More specifically
 

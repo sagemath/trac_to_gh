@@ -71,7 +71,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6999
 archive/issue_comments_057876.json:
 ```json
 {
-    "body": "Attachment\n\nWorks ok for me on 32 bit. So positive review.\n\nJaap",
+    "body": "Attachment [trac-6999-doctest_failures_on_32_bit.patch](tarball://root/attachments/some-uuid/ticket6999/trac-6999-doctest_failures_on_32_bit.patch) by jsp created at 2009-09-23 20:59:17\n\nWorks ok for me on 32 bit. So positive review.\n\nJaap",
     "created_at": "2009-09-23T20:59:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6999",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_057876.json:
 }
 ```
 
-Attachment
+Attachment [trac-6999-doctest_failures_on_32_bit.patch](tarball://root/attachments/some-uuid/ticket6999/trac-6999-doctest_failures_on_32_bit.patch) by jsp created at 2009-09-23 20:59:17
 
 Works ok for me on 32 bit. So positive review.
 

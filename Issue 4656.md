@@ -61,7 +61,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4656
 archive/issue_comments_035069.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4656.patch](tarball://root/attachments/some-uuid/ticket4656/4656.patch) by roed created at 2009-01-24 11:07:36",
     "created_at": "2009-01-24T11:07:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4656",
     "type": "issue_comment",
@@ -70,7 +70,7 @@ archive/issue_comments_035069.json:
 }
 ```
 
-Attachment
+Attachment [4656.patch](tarball://root/attachments/some-uuid/ticket4656/4656.patch) by roed created at 2009-01-24 11:07:36
 
 
 
@@ -115,7 +115,7 @@ this patch replaces the previous patch. It is the same, but some changes in page
 archive/issue_comments_035072.json:
 ```json
 {
-    "body": "Attachment\n\n4656.second.patch causes the following doctest failure:\n\n```\nsage -t -long \"devel/sage/sage/schemes/elliptic_curves/sha_tate.py\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.alpha0/devel/sage/sage/schemes/elliptic_curves/sha_tate.py\", line 299:\n    sage: EllipticCurve('1483a1').sha().an_padic(5) # rank 2   (long time)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/sage-3.4/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.4/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.4/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_3[11]>\", line 1, in <module>\n        EllipticCurve('1483a1').sha().an_padic(Integer(5)) # rank 2   (long time)###line 299:\n    sage: EllipticCurve('1483a1').sha().an_padic(5) # rank 2   (long time)\n      File \"/scratch/mabshoff/sage-3.4.1.alpha0/local/lib/python/site-packages/sage/schemes/elliptic_curves/sha_tate.py\", line 418, in an_padic\n        raise RuntimeError, \"There must be a bug in the supersingular routines for the p-adic BSD.\"\n    RuntimeError: There must be a bug in the supersingular routines for the p-adic BSD.\n**********************************************************************\n```\n\n\nCheers,\n\nMichael",
+    "body": "Attachment [4656.second.patch](tarball://root/attachments/some-uuid/ticket4656/4656.second.patch) by mabshoff created at 2009-03-20 21:48:11\n\n4656.second.patch causes the following doctest failure:\n\n```\nsage -t -long \"devel/sage/sage/schemes/elliptic_curves/sha_tate.py\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.alpha0/devel/sage/sage/schemes/elliptic_curves/sha_tate.py\", line 299:\n    sage: EllipticCurve('1483a1').sha().an_padic(5) # rank 2   (long time)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/sage-3.4/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.4/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.4/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_3[11]>\", line 1, in <module>\n        EllipticCurve('1483a1').sha().an_padic(Integer(5)) # rank 2   (long time)###line 299:\n    sage: EllipticCurve('1483a1').sha().an_padic(5) # rank 2   (long time)\n      File \"/scratch/mabshoff/sage-3.4.1.alpha0/local/lib/python/site-packages/sage/schemes/elliptic_curves/sha_tate.py\", line 418, in an_padic\n        raise RuntimeError, \"There must be a bug in the supersingular routines for the p-adic BSD.\"\n    RuntimeError: There must be a bug in the supersingular routines for the p-adic BSD.\n**********************************************************************\n```\n\n\nCheers,\n\nMichael",
     "created_at": "2009-03-20T21:48:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4656",
     "type": "issue_comment",
@@ -124,7 +124,7 @@ archive/issue_comments_035072.json:
 }
 ```
 
-Attachment
+Attachment [4656.second.patch](tarball://root/attachments/some-uuid/ticket4656/4656.second.patch) by mabshoff created at 2009-03-20 21:48:11
 
 4656.second.patch causes the following doctest failure:
 
@@ -295,7 +295,7 @@ Finally, I came back to this. I will attach a rebased patch. This patch solves t
 archive/issue_comments_035078.json:
 ```json
 {
-    "body": "Attachment\n\nexported against 4.3.2.alpha1",
+    "body": "Attachment [trac_4656_new.patch](tarball://root/attachments/some-uuid/ticket4656/trac_4656_new.patch) by wuthrich created at 2010-02-05 23:15:27\n\nexported against 4.3.2.alpha1",
     "created_at": "2010-02-05T23:15:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4656",
     "type": "issue_comment",
@@ -304,7 +304,7 @@ archive/issue_comments_035078.json:
 }
 ```
 
-Attachment
+Attachment [trac_4656_new.patch](tarball://root/attachments/some-uuid/ticket4656/trac_4656_new.patch) by wuthrich created at 2010-02-05 23:15:27
 
 exported against 4.3.2.alpha1
 

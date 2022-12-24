@@ -217,7 +217,7 @@ Certainly it's clear that you can replace n/d by n*d, but we already know what t
 archive/issue_comments_034618.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4612-QQ-perfect-power.patch](tarball://root/attachments/some-uuid/ticket4612/4612-QQ-perfect-power.patch) by robertwb created at 2008-12-19 23:11:55",
     "created_at": "2008-12-19T23:11:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4612",
     "type": "issue_comment",
@@ -226,7 +226,7 @@ archive/issue_comments_034618.json:
 }
 ```
 
-Attachment
+Attachment [4612-QQ-perfect-power.patch](tarball://root/attachments/some-uuid/ticket4612/4612-QQ-perfect-power.patch) by robertwb created at 2008-12-19 23:11:55
 
 
 
@@ -480,7 +480,7 @@ Changing status from new to assigned.
 archive/issue_comments_034629.json:
 ```json
 {
-    "body": "Attachment\n\nNote: apply **only** `trac-4612-v2.patch`, i.e. don't apply it on top of Robert's patch.",
+    "body": "Attachment [trac-4612-v2.patch](tarball://root/attachments/some-uuid/ticket4612/trac-4612-v2.patch) by craigcitro created at 2009-01-11 08:30:58\n\nNote: apply **only** `trac-4612-v2.patch`, i.e. don't apply it on top of Robert's patch.",
     "created_at": "2009-01-11T08:30:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4612",
     "type": "issue_comment",
@@ -489,7 +489,7 @@ archive/issue_comments_034629.json:
 }
 ```
 
-Attachment
+Attachment [trac-4612-v2.patch](tarball://root/attachments/some-uuid/ticket4612/trac-4612-v2.patch) by craigcitro created at 2009-01-11 08:30:58
 
 Note: apply **only** `trac-4612-v2.patch`, i.e. don't apply it on top of Robert's patch.
 

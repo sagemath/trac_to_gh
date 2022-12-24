@@ -110,7 +110,7 @@ Changing component from calculus to symbolics.
 archive/issue_comments_099181.json:
 ```json
 {
-    "body": "Attachment\n\nThis was fixed in GiNaC by Richard Kreckel. Here is the relevant patch:\n\nhttp://www.ginac.de/ginac.git?p=ginac.git;a=commitdiff;h=e08cda1854bdb82f6706ec269233577690ae00e4\n\nI applied the patch to pynac, so this will be fixed in the next release.",
+    "body": "Attachment [trac_9947-add_eval.patch](tarball://root/attachments/some-uuid/ticket9947/trac_9947-add_eval.patch) by burcin created at 2010-09-24 11:10:54\n\nThis was fixed in GiNaC by Richard Kreckel. Here is the relevant patch:\n\nhttp://www.ginac.de/ginac.git?p=ginac.git;a=commitdiff;h=e08cda1854bdb82f6706ec269233577690ae00e4\n\nI applied the patch to pynac, so this will be fixed in the next release.",
     "created_at": "2010-09-24T11:10:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9946",
     "type": "issue_comment",
@@ -119,7 +119,7 @@ archive/issue_comments_099181.json:
 }
 ```
 
-Attachment
+Attachment [trac_9947-add_eval.patch](tarball://root/attachments/some-uuid/ticket9947/trac_9947-add_eval.patch) by burcin created at 2010-09-24 11:10:54
 
 This was fixed in GiNaC by Richard Kreckel. Here is the relevant patch:
 

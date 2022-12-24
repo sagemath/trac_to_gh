@@ -61,7 +61,7 @@ The fix for #2898 will fix this.
 archive/issue_comments_019970.json:
 ```json
 {
-    "body": "Attachment\n\nThis makes floor and ceil do what I expect for RIF.  I believe that #2898 does make RDF work.",
+    "body": "Attachment [2899-ncalexan-RIF-floor-ceil-1.patch](tarball://root/attachments/some-uuid/ticket2899/2899-ncalexan-RIF-floor-ceil-1.patch) by ncalexan created at 2008-08-14 00:38:58\n\nThis makes floor and ceil do what I expect for RIF.  I believe that #2898 does make RDF work.",
     "created_at": "2008-08-14T00:38:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2899",
     "type": "issue_comment",
@@ -70,7 +70,7 @@ archive/issue_comments_019970.json:
 }
 ```
 
-Attachment
+Attachment [2899-ncalexan-RIF-floor-ceil-1.patch](tarball://root/attachments/some-uuid/ticket2899/2899-ncalexan-RIF-floor-ceil-1.patch) by ncalexan created at 2008-08-14 00:38:58
 
 This makes floor and ceil do what I expect for RIF.  I believe that #2898 does make RDF work.
 

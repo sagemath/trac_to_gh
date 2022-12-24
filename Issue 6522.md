@@ -161,7 +161,7 @@ Based on 4.2.1
 archive/issue_comments_053185.json:
 ```json
 {
-    "body": "Attachment\n\nHello !!! Could you use the new methods defined in #7515 for the functions you deprecate ? It would ease the work in #7559 :-)",
+    "body": "Attachment [trac_6522.patch](tarball://root/attachments/some-uuid/ticket6522/trac_6522.patch) by ncohen created at 2009-12-08 17:13:08\n\nHello !!! Could you use the new methods defined in #7515 for the functions you deprecate ? It would ease the work in #7559 :-)",
     "created_at": "2009-12-08T17:13:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6522",
     "type": "issue_comment",
@@ -170,7 +170,7 @@ archive/issue_comments_053185.json:
 }
 ```
 
-Attachment
+Attachment [trac_6522.patch](tarball://root/attachments/some-uuid/ticket6522/trac_6522.patch) by ncohen created at 2009-12-08 17:13:08
 
 Hello !!! Could you use the new methods defined in #7515 for the functions you deprecate ? It would ease the work in #7559 :-)
 
@@ -343,7 +343,7 @@ Based on 4.3.alpha1
 archive/issue_comments_053193.json:
 ```json
 {
-    "body": "Attachment\n\nOkay, here is how I dealt with these issues.\n\n1. We can't use the generic deprecation thing from #7515 here, because it would say to use copy instead of copy!  Unfortunately.  On the plus side, that's one less for #7559. \n\n2. I have not deprecated copy() from the generic graph class, only the yang-baxter one.  There is now a __copy__ for generic graphs.  In order to deal with a tricky thing on Dynkin diagrams, I had to define a __copy__ method for them, which however is EXACTLY the same as the generic Python copy from the copy module.\n\nI really, really worked hard to make sure I caught every possible place where this causes problems, and it passes all doctests, but please think hard where it would make a difference.  I also hope I won't have to rebase it again :)",
+    "body": "Attachment [trac_6522-final.patch](tarball://root/attachments/some-uuid/ticket6522/trac_6522-final.patch) by kcrisman created at 2009-12-17 21:54:05\n\nOkay, here is how I dealt with these issues.\n\n1. We can't use the generic deprecation thing from #7515 here, because it would say to use copy instead of copy!  Unfortunately.  On the plus side, that's one less for #7559. \n\n2. I have not deprecated copy() from the generic graph class, only the yang-baxter one.  There is now a __copy__ for generic graphs.  In order to deal with a tricky thing on Dynkin diagrams, I had to define a __copy__ method for them, which however is EXACTLY the same as the generic Python copy from the copy module.\n\nI really, really worked hard to make sure I caught every possible place where this causes problems, and it passes all doctests, but please think hard where it would make a difference.  I also hope I won't have to rebase it again :)",
     "created_at": "2009-12-17T21:54:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6522",
     "type": "issue_comment",
@@ -352,7 +352,7 @@ archive/issue_comments_053193.json:
 }
 ```
 
-Attachment
+Attachment [trac_6522-final.patch](tarball://root/attachments/some-uuid/ticket6522/trac_6522-final.patch) by kcrisman created at 2009-12-17 21:54:05
 
 Okay, here is how I dealt with these issues.
 

@@ -69,7 +69,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/955
 archive/issue_comments_005817.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [log7027](tarball://root/attachments/some-uuid/ticket955/log7027) by cwitty created at 2007-10-21 03:50:36",
     "created_at": "2007-10-21T03:50:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/955",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_005817.json:
 }
 ```
 
-Attachment
+Attachment [log7027](tarball://root/attachments/some-uuid/ticket955/log7027) by cwitty created at 2007-10-21 03:50:36
 
 
 
@@ -87,7 +87,7 @@ Attachment
 archive/issue_comments_005818.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [log7028](tarball://root/attachments/some-uuid/ticket955/log7028) by cwitty created at 2007-10-21 03:50:45",
     "created_at": "2007-10-21T03:50:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/955",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_005818.json:
 }
 ```
 
-Attachment
+Attachment [log7028](tarball://root/attachments/some-uuid/ticket955/log7028) by cwitty created at 2007-10-21 03:50:45
 
 
 
@@ -177,7 +177,7 @@ Release 2.8.8 had a patch for this that fixed most or all of the issues with Sin
 archive/issue_comments_005823.json:
 ```json
 {
-    "body": "Attachment\n\nI've fixed several places that looked slightly dubious, although I could have missed something.\n\nThe attached patch will be in 2.8.10.",
+    "body": "Attachment [7176.patch](tarball://root/attachments/some-uuid/ticket955/7176.patch) by cwitty created at 2007-10-27 18:02:30\n\nI've fixed several places that looked slightly dubious, although I could have missed something.\n\nThe attached patch will be in 2.8.10.",
     "created_at": "2007-10-27T18:02:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/955",
     "type": "issue_comment",
@@ -186,7 +186,7 @@ archive/issue_comments_005823.json:
 }
 ```
 
-Attachment
+Attachment [7176.patch](tarball://root/attachments/some-uuid/ticket955/7176.patch) by cwitty created at 2007-10-27 18:02:30
 
 I've fixed several places that looked slightly dubious, although I could have missed something.
 

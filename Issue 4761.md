@@ -336,7 +336,7 @@ Just a quick note: The docstring formatting should now follow the ReST format.
 archive/issue_comments_036090.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [cputime_global.patch](tarball://root/attachments/some-uuid/ticket4761/cputime_global.patch) by malb created at 2009-06-08 10:49:14",
     "created_at": "2009-06-08T10:49:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4761",
     "type": "issue_comment",
@@ -345,7 +345,7 @@ archive/issue_comments_036090.json:
 }
 ```
 
-Attachment
+Attachment [cputime_global.patch](tarball://root/attachments/some-uuid/ticket4761/cputime_global.patch) by malb created at 2009-06-08 10:49:14
 
 
 

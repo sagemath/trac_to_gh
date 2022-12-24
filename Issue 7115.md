@@ -177,7 +177,7 @@ I think I now know how to make up a cliquer-1.2.p1.spkg which works on "non-Snow
 archive/issue_comments_058965.json:
 ```json
 {
-    "body": "Attachment\n\npatch against cliquer-1.2.p0.spkg (root hg repo)",
+    "body": "Attachment [trac_7115-1st_draft.patch](tarball://root/attachments/some-uuid/ticket7115/trac_7115-1st_draft.patch) by GeorgSWeber created at 2009-10-06 22:20:29\n\npatch against cliquer-1.2.p0.spkg (root hg repo)",
     "created_at": "2009-10-06T22:20:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7115",
     "type": "issue_comment",
@@ -186,7 +186,7 @@ archive/issue_comments_058965.json:
 }
 ```
 
-Attachment
+Attachment [trac_7115-1st_draft.patch](tarball://root/attachments/some-uuid/ticket7115/trac_7115-1st_draft.patch) by GeorgSWeber created at 2009-10-06 22:20:29
 
 patch against cliquer-1.2.p0.spkg (root hg repo)
 
@@ -370,7 +370,7 @@ The reason this never came up before is because only Python, of all the spkgs, d
 archive/issue_comments_058971.json:
 ```json
 {
-    "body": "Attachment\n\nAnd it goes without saying that the change to the end of the file by gsw was still necessary as well.\\",
+    "body": "Attachment [spkg-install](tarball://root/attachments/some-uuid/ticket7115/spkg-install) by kcrisman created at 2009-10-07 15:08:13\n\nAnd it goes without saying that the change to the end of the file by gsw was still necessary as well.\\",
     "created_at": "2009-10-07T15:08:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7115",
     "type": "issue_comment",
@@ -379,7 +379,7 @@ archive/issue_comments_058971.json:
 }
 ```
 
-Attachment
+Attachment [spkg-install](tarball://root/attachments/some-uuid/ticket7115/spkg-install) by kcrisman created at 2009-10-07 15:08:13
 
 And it goes without saying that the change to the end of the file by gsw was still necessary as well.\
 

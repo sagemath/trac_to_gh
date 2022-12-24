@@ -202,7 +202,7 @@ version 2 of patch, with lots of print statements
 archive/issue_comments_065198.json:
 ```json
 {
-    "body": "Attachment\n\nCurrent version should pass doctests if you comment out the print statement in `add_user` in notebook.py (line 509).",
+    "body": "Attachment [trac_7630-with-debugging.patch](tarball://root/attachments/some-uuid/ticket7630/trac_7630-with-debugging.patch) by ddrake created at 2010-02-24 07:59:33\n\nCurrent version should pass doctests if you comment out the print statement in `add_user` in notebook.py (line 509).",
     "created_at": "2010-02-24T07:59:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
@@ -211,7 +211,7 @@ archive/issue_comments_065198.json:
 }
 ```
 
-Attachment
+Attachment [trac_7630-with-debugging.patch](tarball://root/attachments/some-uuid/ticket7630/trac_7630-with-debugging.patch) by ddrake created at 2010-02-24 07:59:33
 
 Current version should pass doctests if you comment out the print statement in `add_user` in notebook.py (line 509).
 
@@ -338,7 +338,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_065204.json:
 ```json
 {
-    "body": "Attachment\n\nversion 3 of patch. Apply only this.",
+    "body": "Attachment [trac_7630.patch](tarball://root/attachments/some-uuid/ticket7630/trac_7630.patch) by ddrake created at 2010-04-26 07:41:26\n\nversion 3 of patch. Apply only this.",
     "created_at": "2010-04-26T07:41:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
@@ -347,7 +347,7 @@ archive/issue_comments_065204.json:
 }
 ```
 
-Attachment
+Attachment [trac_7630.patch](tarball://root/attachments/some-uuid/ticket7630/trac_7630.patch) by ddrake created at 2010-04-26 07:41:26
 
 version 3 of patch. Apply only this.
 

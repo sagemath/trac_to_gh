@@ -95,7 +95,7 @@ the "from the wiki" patch is meant to be applied on top of the "high school" pat
 archive/issue_comments_093221.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9623-interacts-high-school.patch](tarball://root/attachments/some-uuid/ticket9623/9623-interacts-high-school.patch) by schilly created at 2010-07-30 16:29:27",
     "created_at": "2010-07-30T16:29:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
@@ -104,7 +104,7 @@ archive/issue_comments_093221.json:
 }
 ```
 
-Attachment
+Attachment [9623-interacts-high-school.patch](tarball://root/attachments/some-uuid/ticket9623/9623-interacts-high-school.patch) by schilly created at 2010-07-30 16:29:27
 
 
 
@@ -113,7 +113,7 @@ Attachment
 archive/issue_comments_093222.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9623-from-the-wiki.patch](tarball://root/attachments/some-uuid/ticket9623/9623-from-the-wiki.patch) by schilly created at 2010-07-30 16:29:36",
     "created_at": "2010-07-30T16:29:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
@@ -122,7 +122,7 @@ archive/issue_comments_093222.json:
 }
 ```
 
-Attachment
+Attachment [9623-from-the-wiki.patch](tarball://root/attachments/some-uuid/ticket9623/9623-from-the-wiki.patch) by schilly created at 2010-07-30 16:29:36
 
 
 
@@ -167,7 +167,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_093225.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9623-interact-examples.patch](tarball://root/attachments/some-uuid/ticket9623/9623-interact-examples.patch) by schilly created at 2010-07-31 13:21:59",
     "created_at": "2010-07-31T13:21:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
@@ -176,7 +176,7 @@ archive/issue_comments_093225.json:
 }
 ```
 
-Attachment
+Attachment [9623-interact-examples.patch](tarball://root/attachments/some-uuid/ticket9623/9623-interact-examples.patch) by schilly created at 2010-07-31 13:21:59
 
 
 
@@ -307,7 +307,7 @@ apply after 9623-interact-examples.patch
 archive/issue_comments_093231.json:
 ```json
 {
-    "body": "Attachment\n\nBtw: The interact for riemann integral is a part of work which has been supported by the grant 131/2010 of the [FRV\u0160](http://www.frvs.cz/)\n\nKnown problem for trapezoidal and simpson integration: bad rendering of the computation if we integrate negative function: minus sign follows dot or plus sign.",
+    "body": "Attachment [9623-interact-examples2.patch](tarball://root/attachments/some-uuid/ticket9623/9623-interact-examples2.patch) by robert.marik created at 2010-08-17 14:08:04\n\nBtw: The interact for riemann integral is a part of work which has been supported by the grant 131/2010 of the [FRV\u0160](http://www.frvs.cz/)\n\nKnown problem for trapezoidal and simpson integration: bad rendering of the computation if we integrate negative function: minus sign follows dot or plus sign.",
     "created_at": "2010-08-17T14:08:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
@@ -316,7 +316,7 @@ archive/issue_comments_093231.json:
 }
 ```
 
-Attachment
+Attachment [9623-interact-examples2.patch](tarball://root/attachments/some-uuid/ticket9623/9623-interact-examples2.patch) by robert.marik created at 2010-08-17 14:08:04
 
 Btw: The interact for riemann integral is a part of work which has been supported by the grant 131/2010 of the [FRVŠ](http://www.frvs.cz/)
 
@@ -400,7 +400,7 @@ apply on top of previous patches
 archive/issue_comments_093235.json:
 ```json
 {
-    "body": "Attachment\n\nRobert's changes look good.  Can someone comment on points 2 and 3 in my list above?",
+    "body": "Attachment [9623-reviewer2.patch](tarball://root/attachments/some-uuid/ticket9623/9623-reviewer2.patch) by jason created at 2010-09-28 14:53:38\n\nRobert's changes look good.  Can someone comment on points 2 and 3 in my list above?",
     "created_at": "2010-09-28T14:53:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
@@ -409,7 +409,7 @@ archive/issue_comments_093235.json:
 }
 ```
 
-Attachment
+Attachment [9623-reviewer2.patch](tarball://root/attachments/some-uuid/ticket9623/9623-reviewer2.patch) by jason created at 2010-09-28 14:53:38
 
 Robert's changes look good.  Can someone comment on points 2 and 3 in my list above?
 
@@ -438,7 +438,7 @@ Rebases all previous patches against 4.6.1 and makes minor import changes
 archive/issue_comments_093237.json:
 ```json
 {
-    "body": "Attachment\n\nRather than let this bit-rot I would like to see it go in soon.  There are endless tweaks and improvements that can be made to these but it would be nice to have this much included.\n\nI removed the __init__.py and replaced it with an all.py that avoids importing everything in the library.py file, which leaves the autocompletion options of interacts much less cluttered.",
+    "body": "Attachment [trac_9623_rebase_and_import_change.patch](tarball://root/attachments/some-uuid/ticket9623/trac_9623_rebase_and_import_change.patch) by mhampton created at 2011-01-12 23:10:26\n\nRather than let this bit-rot I would like to see it go in soon.  There are endless tweaks and improvements that can be made to these but it would be nice to have this much included.\n\nI removed the __init__.py and replaced it with an all.py that avoids importing everything in the library.py file, which leaves the autocompletion options of interacts much less cluttered.",
     "created_at": "2011-01-12T23:10:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
@@ -447,7 +447,7 @@ archive/issue_comments_093237.json:
 }
 ```
 
-Attachment
+Attachment [trac_9623_rebase_and_import_change.patch](tarball://root/attachments/some-uuid/ticket9623/trac_9623_rebase_and_import_change.patch) by mhampton created at 2011-01-12 23:10:26
 
 Rather than let this bit-rot I would like to see it go in soon.  There are endless tweaks and improvements that can be made to these but it would be nice to have this much included.
 
@@ -518,7 +518,7 @@ Apply only this patch; using Jason's idea from #10622
 archive/issue_comments_093241.json:
 ```json
 {
-    "body": "Attachment\n\nAgreed on the quick reviewing need.  I wish I weren't looking at these things just for five minutes each time, but I haven't had a stretch of time for proper reviewing yet.\n> Also, did we ever get the issue about how these are doctested figured out?\nI can't remember where this was, and searching for it online proves to be a nightmare of unrelated hits.   I'm going to email Jason about this.",
+    "body": "Attachment [trac_9623_rebase_and_import_change_v2.patch](tarball://root/attachments/some-uuid/ticket9623/trac_9623_rebase_and_import_change_v2.patch) by kcrisman created at 2011-01-13 19:12:48\n\nAgreed on the quick reviewing need.  I wish I weren't looking at these things just for five minutes each time, but I haven't had a stretch of time for proper reviewing yet.\n> Also, did we ever get the issue about how these are doctested figured out?\nI can't remember where this was, and searching for it online proves to be a nightmare of unrelated hits.   I'm going to email Jason about this.",
     "created_at": "2011-01-13T19:12:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
@@ -527,7 +527,7 @@ archive/issue_comments_093241.json:
 }
 ```
 
-Attachment
+Attachment [trac_9623_rebase_and_import_change_v2.patch](tarball://root/attachments/some-uuid/ticket9623/trac_9623_rebase_and_import_change_v2.patch) by kcrisman created at 2011-01-13 19:12:48
 
 Agreed on the quick reviewing need.  I wish I weren't looking at these things just for five minutes each time, but I haven't had a stretch of time for proper reviewing yet.
 > Also, did we ever get the issue about how these are doctested figured out?
@@ -810,7 +810,7 @@ Based to 4.6.2.alpha0, should apply ok
 archive/issue_comments_093253.json:
 ```json
 {
-    "body": "Attachment\n\nBuildbot may apply only trac_9623-rebase-v3.patch if it so chooses.",
+    "body": "Attachment [trac_9623-rebase-v3.patch](tarball://root/attachments/some-uuid/ticket9623/trac_9623-rebase-v3.patch) by kcrisman created at 2011-01-16 05:19:38\n\nBuildbot may apply only trac_9623-rebase-v3.patch if it so chooses.",
     "created_at": "2011-01-16T05:19:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
@@ -819,7 +819,7 @@ archive/issue_comments_093253.json:
 }
 ```
 
-Attachment
+Attachment [trac_9623-rebase-v3.patch](tarball://root/attachments/some-uuid/ticket9623/trac_9623-rebase-v3.patch) by kcrisman created at 2011-01-16 05:19:38
 
 Buildbot may apply only trac_9623-rebase-v3.patch if it so chooses.
 
@@ -961,7 +961,7 @@ Additional patch
 archive/issue_comments_093261.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9623_copyright.patch](tarball://root/attachments/some-uuid/ticket9623/9623_copyright.patch) by jdemeyer created at 2011-04-12 08:29:48",
     "created_at": "2011-04-12T08:29:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
@@ -970,7 +970,7 @@ archive/issue_comments_093261.json:
 }
 ```
 
-Attachment
+Attachment [9623_copyright.patch](tarball://root/attachments/some-uuid/ticket9623/9623_copyright.patch) by jdemeyer created at 2011-04-12 08:29:48
 
 
 
@@ -1114,7 +1114,7 @@ Added "partially based on work by Lauri Ruotsalainen"
 archive/issue_comments_093269.json:
 ```json
 {
-    "body": "Attachment\n\nI updated the copyright patch to reflect the contributions of Lauri Ruotsalainen.  I can change it if someone objects.",
+    "body": "Attachment [9623_copyright_v2.patch](tarball://root/attachments/some-uuid/ticket9623/9623_copyright_v2.patch) by mhampton created at 2011-04-26 12:11:15\n\nI updated the copyright patch to reflect the contributions of Lauri Ruotsalainen.  I can change it if someone objects.",
     "created_at": "2011-04-26T12:11:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
@@ -1123,7 +1123,7 @@ archive/issue_comments_093269.json:
 }
 ```
 
-Attachment
+Attachment [9623_copyright_v2.patch](tarball://root/attachments/some-uuid/ticket9623/9623_copyright_v2.patch) by mhampton created at 2011-04-26 12:11:15
 
 I updated the copyright patch to reflect the contributions of Lauri Ruotsalainen.  I can change it if someone objects.
 

@@ -117,7 +117,7 @@ http://trac.sagemath.org/sage_trac/ticket/2293
 archive/issue_comments_015206.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8681.patch](tarball://root/attachments/some-uuid/ticket2292/8681.patch) by wdj created at 2008-02-24 18:38:48",
     "created_at": "2008-02-24T18:38:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2292",
     "type": "issue_comment",
@@ -126,7 +126,7 @@ archive/issue_comments_015206.json:
 }
 ```
 
-Attachment
+Attachment [8681.patch](tarball://root/attachments/some-uuid/ticket2292/8681.patch) by wdj created at 2008-02-24 18:38:48
 
 
 
@@ -135,7 +135,7 @@ Attachment
 archive/issue_comments_015207.json:
 ```json
 {
-    "body": "Attachment\n\nI attached the patch and the bundle, so the reviewer can use either one. Passed the tests and fixes\nhttp://trac.sagemath.org/sage_trac/ticket/2293",
+    "body": "Attachment [abelian_groupl_24-02-2008.hg](tarball://root/attachments/some-uuid/ticket2292/abelian_groupl_24-02-2008.hg) by wdj created at 2008-02-24 18:41:21\n\nI attached the patch and the bundle, so the reviewer can use either one. Passed the tests and fixes\nhttp://trac.sagemath.org/sage_trac/ticket/2293",
     "created_at": "2008-02-24T18:41:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2292",
     "type": "issue_comment",
@@ -144,7 +144,7 @@ archive/issue_comments_015207.json:
 }
 ```
 
-Attachment
+Attachment [abelian_groupl_24-02-2008.hg](tarball://root/attachments/some-uuid/ticket2292/abelian_groupl_24-02-2008.hg) by wdj created at 2008-02-24 18:41:21
 
 I attached the patch and the bundle, so the reviewer can use either one. Passed the tests and fixes
 http://trac.sagemath.org/sage_trac/ticket/2293
@@ -232,7 +232,7 @@ Merged in Sage 2.10.3.rc0
 archive/issue_comments_015212.json:
 ```json
 {
-    "body": "Attachment\n\nMerged 2292-doctest.patch (due to unknown parent via GNU patch), but credited to mhansen via hg commit",
+    "body": "Attachment [2292-doctest.patch](tarball://root/attachments/some-uuid/ticket2292/2292-doctest.patch) by mabshoff created at 2008-02-27 23:14:45\n\nMerged 2292-doctest.patch (due to unknown parent via GNU patch), but credited to mhansen via hg commit",
     "created_at": "2008-02-27T23:14:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2292",
     "type": "issue_comment",
@@ -241,6 +241,6 @@ archive/issue_comments_015212.json:
 }
 ```
 
-Attachment
+Attachment [2292-doctest.patch](tarball://root/attachments/some-uuid/ticket2292/2292-doctest.patch) by mabshoff created at 2008-02-27 23:14:45
 
 Merged 2292-doctest.patch (due to unknown parent via GNU patch), but credited to mhansen via hg commit

@@ -288,7 +288,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_072160.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8187_equality_words-sl.patch](tarball://root/attachments/some-uuid/ticket8187/trac_8187_equality_words-sl.patch) by slabbe created at 2010-02-10 18:22:59",
     "created_at": "2010-02-10T18:22:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8187",
     "type": "issue_comment",
@@ -297,7 +297,7 @@ archive/issue_comments_072160.json:
 }
 ```
 
-Attachment
+Attachment [trac_8187_equality_words-sl.patch](tarball://root/attachments/some-uuid/ticket8187/trac_8187_equality_words-sl.patch) by slabbe created at 2010-02-10 18:22:59
 
 
 
@@ -386,7 +386,7 @@ Doc, formatting and typos changes -- apply on top of the main patch
 archive/issue_comments_072165.json:
 ```json
 {
-    "body": "Attachment\n\nI forgot to mention that equality tests are indeed improved in some cases, and I haven't encountered any worse case, which is good !",
+    "body": "Attachment [trac_8187_review-abm.patch](tarball://root/attachments/some-uuid/ticket8187/trac_8187_review-abm.patch) by abmasse created at 2010-02-24 01:03:23\n\nI forgot to mention that equality tests are indeed improved in some cases, and I haven't encountered any worse case, which is good !",
     "created_at": "2010-02-24T01:03:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8187",
     "type": "issue_comment",
@@ -395,7 +395,7 @@ archive/issue_comments_072165.json:
 }
 ```
 
-Attachment
+Attachment [trac_8187_review-abm.patch](tarball://root/attachments/some-uuid/ticket8187/trac_8187_review-abm.patch) by abmasse created at 2010-02-24 01:03:23
 
 I forgot to mention that equality tests are indeed improved in some cases, and I haven't encountered any worse case, which is good !
 

@@ -133,7 +133,7 @@ Fix first line of `spkg-install`.  Also, use `/usr/bin/env bash`.
 archive/issue_comments_092848.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9597-pari_hash_bang.patch](tarball://root/attachments/some-uuid/ticket9597/trac_9597-pari_hash_bang.patch) by mpatel created at 2010-07-26 07:33:47",
     "created_at": "2010-07-26T07:33:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9597",
     "type": "issue_comment",
@@ -142,7 +142,7 @@ archive/issue_comments_092848.json:
 }
 ```
 
-Attachment
+Attachment [trac_9597-pari_hash_bang.patch](tarball://root/attachments/some-uuid/ticket9597/trac_9597-pari_hash_bang.patch) by mpatel created at 2010-07-26 07:33:47
 
 
 

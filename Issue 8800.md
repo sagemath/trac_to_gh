@@ -2494,7 +2494,7 @@ Ideas to consider merging
 archive/issue_comments_080714.json:
 ```json
 {
-    "body": "Attachment\n\nThe documentation of pushout is not built in the reference manual. I have added pushout.py to categories.rst, but I get warnings and errors in the html and pdf built that I do not know how to solve.",
+    "body": "Attachment [some_ideas.patch](tarball://root/attachments/some-uuid/ticket8800/some_ideas.patch) by lftabera created at 2011-02-18 16:44:13\n\nThe documentation of pushout is not built in the reference manual. I have added pushout.py to categories.rst, but I get warnings and errors in the html and pdf built that I do not know how to solve.",
     "created_at": "2011-02-18T16:44:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8800",
     "type": "issue_comment",
@@ -2503,7 +2503,7 @@ archive/issue_comments_080714.json:
 }
 ```
 
-Attachment
+Attachment [some_ideas.patch](tarball://root/attachments/some-uuid/ticket8800/some_ideas.patch) by lftabera created at 2011-02-18 16:44:13
 
 The documentation of pushout is not built in the reference manual. I have added pushout.py to categories.rst, but I get warnings and errors in the html and pdf built that I do not know how to solve.
 
@@ -2634,7 +2634,7 @@ All long tests pass if one applies the patch to sage-4.6.2.alpha4. The patchbot 
 archive/issue_comments_080721.json:
 ```json
 {
-    "body": "Attachment\n\nI have tested with sage-4.6.1.rc0 the documentation builds and looks good. The bugs have been corrected and the patch introduces some very nice features. Good work. Positive review to Simon's patch.\n\nHowever, I have added a referee patch with some minor changes in the documentation. I have eliminated some latex code that, in my opinion, made the documentation harder to read.\n\nSimon, could you look at my patch? If you feel it is ok, put a positive review.",
+    "body": "Attachment [referee.patch](tarball://root/attachments/some-uuid/ticket8800/referee.patch) by lftabera created at 2011-02-26 11:29:16\n\nI have tested with sage-4.6.1.rc0 the documentation builds and looks good. The bugs have been corrected and the patch introduces some very nice features. Good work. Positive review to Simon's patch.\n\nHowever, I have added a referee patch with some minor changes in the documentation. I have eliminated some latex code that, in my opinion, made the documentation harder to read.\n\nSimon, could you look at my patch? If you feel it is ok, put a positive review.",
     "created_at": "2011-02-26T11:29:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8800",
     "type": "issue_comment",
@@ -2643,7 +2643,7 @@ archive/issue_comments_080721.json:
 }
 ```
 
-Attachment
+Attachment [referee.patch](tarball://root/attachments/some-uuid/ticket8800/referee.patch) by lftabera created at 2011-02-26 11:29:16
 
 I have tested with sage-4.6.1.rc0 the documentation builds and looks good. The bugs have been corrected and the patch introduces some very nice features. Good work. Positive review to Simon's patch.
 
@@ -2757,7 +2757,7 @@ Full doctest coverage for sage.categories.functor and sage.categories.pushout. V
 archive/issue_comments_080727.json:
 ```json
 {
-    "body": "Attachment\n\nDepends on #10677 #2329\n\nApply 8800_functor_pushout_doc_and_fixes.patch referee.patch",
+    "body": "Attachment [8800_functor_pushout_doc_and_fixes.patch](tarball://root/attachments/some-uuid/ticket8800/8800_functor_pushout_doc_and_fixes.patch) by SimonKing created at 2011-03-08 14:20:11\n\nDepends on #10677 #2329\n\nApply 8800_functor_pushout_doc_and_fixes.patch referee.patch",
     "created_at": "2011-03-08T14:20:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8800",
     "type": "issue_comment",
@@ -2766,7 +2766,7 @@ archive/issue_comments_080727.json:
 }
 ```
 
-Attachment
+Attachment [8800_functor_pushout_doc_and_fixes.patch](tarball://root/attachments/some-uuid/ticket8800/8800_functor_pushout_doc_and_fixes.patch) by SimonKing created at 2011-03-08 14:20:11
 
 Depends on #10677 #2329
 

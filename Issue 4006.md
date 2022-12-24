@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4006
 archive/issue_comments_028925.json:
 ```json
 {
-    "body": "Attachment\n\nThis code is totally broken due to the imports at the top.  Plus, it's old, untested, and a bit crufty.",
+    "body": "Attachment [trac_4006.patch](tarball://root/attachments/some-uuid/ticket4006/trac_4006.patch) by mhansen created at 2008-08-30 20:01:45\n\nThis code is totally broken due to the imports at the top.  Plus, it's old, untested, and a bit crufty.",
     "created_at": "2008-08-30T20:01:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4006",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_028925.json:
 }
 ```
 
-Attachment
+Attachment [trac_4006.patch](tarball://root/attachments/some-uuid/ticket4006/trac_4006.patch) by mhansen created at 2008-08-30 20:01:45
 
 This code is totally broken due to the imports at the top.  Plus, it's old, untested, and a bit crufty.
 

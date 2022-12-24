@@ -499,7 +499,7 @@ Dave
 archive/issue_comments_095684.json:
 ```json
 {
-    "body": "Attachment\n\nMercurial patch to add contact information and generally clean up SPKG.txt",
+    "body": "Attachment [9766.patch](tarball://root/attachments/some-uuid/ticket9766/9766.patch) by drkirkby created at 2010-08-28 17:00:59\n\nMercurial patch to add contact information and generally clean up SPKG.txt",
     "created_at": "2010-08-28T17:00:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9765",
     "type": "issue_comment",
@@ -508,7 +508,7 @@ archive/issue_comments_095684.json:
 }
 ```
 
-Attachment
+Attachment [9766.patch](tarball://root/attachments/some-uuid/ticket9766/9766.patch) by drkirkby created at 2010-08-28 17:00:59
 
 Mercurial patch to add contact information and generally clean up SPKG.txt
 
@@ -712,7 +712,7 @@ Dave
 archive/issue_comments_095694.json:
 ```json
 {
-    "body": "Attachment\n\nImprove the historical accuracy of SPKG.txt",
+    "body": "Attachment [9766-improved-SPKG.txt-information.patch](tarball://root/attachments/some-uuid/ticket9766/9766-improved-SPKG.txt-information.patch) by drkirkby created at 2010-08-31 00:19:29\n\nImprove the historical accuracy of SPKG.txt",
     "created_at": "2010-08-31T00:19:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9765",
     "type": "issue_comment",
@@ -721,7 +721,7 @@ archive/issue_comments_095694.json:
 }
 ```
 
-Attachment
+Attachment [9766-improved-SPKG.txt-information.patch](tarball://root/attachments/some-uuid/ticket9766/9766-improved-SPKG.txt-information.patch) by drkirkby created at 2010-08-31 00:19:29
 
 Improve the historical accuracy of SPKG.txt
 

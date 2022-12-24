@@ -288,7 +288,7 @@ These are in trac_5330-4.patch.  Note when these are ready to be merged, I'll pr
 archive/issue_comments_041029.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [fixes.patch](tarball://root/attachments/some-uuid/ticket5330/fixes.patch) by mhansen created at 2009-02-24 18:14:54",
     "created_at": "2009-02-24T18:14:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5330",
     "type": "issue_comment",
@@ -297,7 +297,7 @@ archive/issue_comments_041029.json:
 }
 ```
 
-Attachment
+Attachment [fixes.patch](tarball://root/attachments/some-uuid/ticket5330/fixes.patch) by mhansen created at 2009-02-24 18:14:54
 
 
 

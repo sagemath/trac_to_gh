@@ -81,7 +81,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9358
 archive/issue_comments_088844.json:
 ```json
 {
-    "body": "Attachment\n\nLog file of building on a Sun Blade 1000 SPARC (64-bit build)",
+    "body": "Attachment [zn_poly-0.9.p4.log](tarball://root/attachments/some-uuid/ticket9358/zn_poly-0.9.p4.log) by drkirkby created at 2010-06-28 16:48:41\n\nLog file of building on a Sun Blade 1000 SPARC (64-bit build)",
     "created_at": "2010-06-28T16:48:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9358",
     "type": "issue_comment",
@@ -90,7 +90,7 @@ archive/issue_comments_088844.json:
 }
 ```
 
-Attachment
+Attachment [zn_poly-0.9.p4.log](tarball://root/attachments/some-uuid/ticket9358/zn_poly-0.9.p4.log) by drkirkby created at 2010-06-28 16:48:41
 
 Log file of building on a Sun Blade 1000 SPARC (64-bit build)
 
@@ -190,7 +190,7 @@ Dave
 archive/issue_comments_088849.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9358-zn_poly.patch](tarball://root/attachments/some-uuid/ticket9358/9358-zn_poly.patch) by drkirkby created at 2010-08-07 20:02:51",
     "created_at": "2010-08-07T20:02:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9358",
     "type": "issue_comment",
@@ -199,7 +199,7 @@ archive/issue_comments_088849.json:
 }
 ```
 
-Attachment
+Attachment [9358-zn_poly.patch](tarball://root/attachments/some-uuid/ticket9358/9358-zn_poly.patch) by drkirkby created at 2010-08-07 20:02:51
 
 
 

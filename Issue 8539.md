@@ -69,7 +69,7 @@ Changing assignee from cremona to was.
 archive/issue_comments_077191.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8539.patch](tarball://root/attachments/some-uuid/ticket8539/trac_8539.patch) by rlm created at 2010-03-15 23:42:25",
     "created_at": "2010-03-15T23:42:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8539",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_077191.json:
 }
 ```
 
-Attachment
+Attachment [trac_8539.patch](tarball://root/attachments/some-uuid/ticket8539/trac_8539.patch) by rlm created at 2010-03-15 23:42:25
 
 
 
@@ -199,7 +199,7 @@ this is a referee patch that fixes a doctest (which was wrong).
 archive/issue_comments_077198.json:
 ```json
 {
-    "body": "Attachment\n\nMerged into sage-4.3.5",
+    "body": "Attachment [trac_8539-part2.patch](tarball://root/attachments/some-uuid/ticket8539/trac_8539-part2.patch) by was created at 2010-03-29 22:08:01\n\nMerged into sage-4.3.5",
     "created_at": "2010-03-29T22:08:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8539",
     "type": "issue_comment",
@@ -208,7 +208,7 @@ archive/issue_comments_077198.json:
 }
 ```
 
-Attachment
+Attachment [trac_8539-part2.patch](tarball://root/attachments/some-uuid/ticket8539/trac_8539-part2.patch) by was created at 2010-03-29 22:08:01
 
 Merged into sage-4.3.5
 

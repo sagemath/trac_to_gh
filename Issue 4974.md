@@ -266,7 +266,7 @@ sage: range(20)[5:8:-1]
 archive/issue_comments_037907.json:
 ```json
 {
-    "body": "Attachment\n\napply normalize_size.patch on top of previous patch.  This corrects all errors pointed out above and I believe is faster and simpler as well.",
+    "body": "Attachment [normalize_size.patch](tarball://root/attachments/some-uuid/ticket4974/normalize_size.patch) by jason created at 2009-01-14 20:37:02\n\napply normalize_size.patch on top of previous patch.  This corrects all errors pointed out above and I believe is faster and simpler as well.",
     "created_at": "2009-01-14T20:37:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4974",
     "type": "issue_comment",
@@ -275,7 +275,7 @@ archive/issue_comments_037907.json:
 }
 ```
 
-Attachment
+Attachment [normalize_size.patch](tarball://root/attachments/some-uuid/ticket4974/normalize_size.patch) by jason created at 2009-01-14 20:37:02
 
 apply normalize_size.patch on top of previous patch.  This corrects all errors pointed out above and I believe is faster and simpler as well.
 
@@ -352,7 +352,7 @@ draft for the future patch
 archive/issue_comments_037910.json:
 ```json
 {
-    "body": "Attachment\n\nI have no clean install of sage to do the real patch, but I hope it helps...",
+    "body": "Attachment [normalize_slice.draft](tarball://root/attachments/some-uuid/ticket4974/normalize_slice.draft) by ylchapuy created at 2009-01-15 01:44:07\n\nI have no clean install of sage to do the real patch, but I hope it helps...",
     "created_at": "2009-01-15T01:44:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4974",
     "type": "issue_comment",
@@ -361,7 +361,7 @@ archive/issue_comments_037910.json:
 }
 ```
 
-Attachment
+Attachment [normalize_slice.draft](tarball://root/attachments/some-uuid/ticket4974/normalize_slice.draft) by ylchapuy created at 2009-01-15 01:44:07
 
 I have no clean install of sage to do the real patch, but I hope it helps...
 
@@ -456,7 +456,7 @@ I think we should do this. One question: should we keep all our doctests? It's l
 archive/issue_comments_037915.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-4974.patch](tarball://root/attachments/some-uuid/ticket4974/trac-4974.patch) by craigcitro created at 2009-01-15 05:50:38",
     "created_at": "2009-01-15T05:50:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4974",
     "type": "issue_comment",
@@ -465,7 +465,7 @@ archive/issue_comments_037915.json:
 }
 ```
 
-Attachment
+Attachment [trac-4974.patch](tarball://root/attachments/some-uuid/ticket4974/trac-4974.patch) by craigcitro created at 2009-01-15 05:50:38
 
 
 

@@ -106,7 +106,7 @@ Here is a more general version.
 archive/issue_comments_090587.json:
 ```json
 {
-    "body": "Attachment\n\nDepends on #5945 and #10623",
+    "body": "Attachment [trac_9453_aurifeuillian_factorization.patch](tarball://root/attachments/some-uuid/ticket9453/trac_9453_aurifeuillian_factorization.patch) by aapitzsch created at 2011-01-17 13:41:43\n\nDepends on #5945 and #10623",
     "created_at": "2011-01-17T13:41:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9453",
     "type": "issue_comment",
@@ -115,7 +115,7 @@ archive/issue_comments_090587.json:
 }
 ```
 
-Attachment
+Attachment [trac_9453_aurifeuillian_factorization.patch](tarball://root/attachments/some-uuid/ticket9453/trac_9453_aurifeuillian_factorization.patch) by aapitzsch created at 2011-01-17 13:41:43
 
 Depends on #5945 and #10623
 

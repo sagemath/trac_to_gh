@@ -91,7 +91,7 @@ Changing status from new to assigned.
 archive/issue_comments_024619.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch fixes the charpoly for 0-dimensional matrices, along with a bunch of other little issues in the cyclotomic linear algebra code. This code was written during the L-functions and Modular Forms Workshop in Seattle, mostly while discussing the code with Clement Pernet.",
+    "body": "Attachment [trac-3496.patch](tarball://root/attachments/some-uuid/ticket3496/trac-3496.patch) by craigcitro created at 2008-10-23 18:56:21\n\nThis patch fixes the charpoly for 0-dimensional matrices, along with a bunch of other little issues in the cyclotomic linear algebra code. This code was written during the L-functions and Modular Forms Workshop in Seattle, mostly while discussing the code with Clement Pernet.",
     "created_at": "2008-10-23T18:56:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3496",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_024619.json:
 }
 ```
 
-Attachment
+Attachment [trac-3496.patch](tarball://root/attachments/some-uuid/ticket3496/trac-3496.patch) by craigcitro created at 2008-10-23 18:56:21
 
 This patch fixes the charpoly for 0-dimensional matrices, along with a bunch of other little issues in the cyclotomic linear algebra code. This code was written during the L-functions and Modular Forms Workshop in Seattle, mostly while discussing the code with Clement Pernet.
 
@@ -155,7 +155,7 @@ I'll add a minipatch for this the next time I get a chance (soon), unless Craig 
 archive/issue_comments_024622.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-3496-pt2.patch](tarball://root/attachments/some-uuid/ticket3496/trac-3496-pt2.patch) by craigcitro created at 2008-10-27 05:52:21",
     "created_at": "2008-10-27T05:52:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3496",
     "type": "issue_comment",
@@ -164,7 +164,7 @@ archive/issue_comments_024622.json:
 }
 ```
 
-Attachment
+Attachment [trac-3496-pt2.patch](tarball://root/attachments/some-uuid/ticket3496/trac-3496-pt2.patch) by craigcitro created at 2008-10-27 05:52:21
 
 
 

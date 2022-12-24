@@ -146,7 +146,7 @@ I've put up a new patch which incorporates Yann's ideas as well as gets rid of t
 archive/issue_comments_062345.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7408-rsk.patch](tarball://root/attachments/some-uuid/ticket7408/trac_7408-rsk.patch) by mhansen created at 2009-11-08 07:13:28",
     "created_at": "2009-11-08T07:13:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7408",
     "type": "issue_comment",
@@ -155,7 +155,7 @@ archive/issue_comments_062345.json:
 }
 ```
 
-Attachment
+Attachment [trac_7408-rsk.patch](tarball://root/attachments/some-uuid/ticket7408/trac_7408-rsk.patch) by mhansen created at 2009-11-08 07:13:28
 
 
 
@@ -228,7 +228,7 @@ Florent
 archive/issue_comments_062348.json:
 ```json
 {
-    "body": "Attachment\n\nI give it a positive review.",
+    "body": "Attachment [trac_7408-rsk-review.patch](tarball://root/attachments/some-uuid/ticket7408/trac_7408-rsk-review.patch) by ylchapuy created at 2009-11-08 14:06:10\n\nI give it a positive review.",
     "created_at": "2009-11-08T14:06:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7408",
     "type": "issue_comment",
@@ -237,7 +237,7 @@ archive/issue_comments_062348.json:
 }
 ```
 
-Attachment
+Attachment [trac_7408-rsk-review.patch](tarball://root/attachments/some-uuid/ticket7408/trac_7408-rsk-review.patch) by ylchapuy created at 2009-11-08 14:06:10
 
 I give it a positive review.
 

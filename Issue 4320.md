@@ -57,7 +57,7 @@ based on 3.1.4
 archive/issue_comments_031619.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4320-linear-codes.patch](tarball://root/attachments/some-uuid/ticket4320/trac_4320-linear-codes.patch) by wdj created at 2008-10-18 22:56:04",
     "created_at": "2008-10-18T22:56:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4320",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_031619.json:
 }
 ```
 
-Attachment
+Attachment [trac_4320-linear-codes.patch](tarball://root/attachments/some-uuid/ticket4320/trac_4320-linear-codes.patch) by wdj created at 2008-10-18 22:56:04
 
 
 
@@ -215,7 +215,7 @@ based on 3.2.alpha0 and is a stand-alone patch.
 archive/issue_comments_031625.json:
 ```json
 {
-    "body": "Attachment\n\nI wonder if this is somehow because of the fact that if you run the Leon code command wtdist on the command line directly you get \"smash stack\" and (memory errors resulting in?) traceback messages? This is a known issue (discovered by Robert Miller and Tom Boothby) and I have added a warning line to the docstring.\nI don't understand when this does not arise for sage -t and does for sage -testall though, so easily could be completely wrong.",
+    "body": "Attachment [trac_4320-linear-codes2.patch](tarball://root/attachments/some-uuid/ticket4320/trac_4320-linear-codes2.patch) by wdj created at 2008-10-23 11:02:36\n\nI wonder if this is somehow because of the fact that if you run the Leon code command wtdist on the command line directly you get \"smash stack\" and (memory errors resulting in?) traceback messages? This is a known issue (discovered by Robert Miller and Tom Boothby) and I have added a warning line to the docstring.\nI don't understand when this does not arise for sage -t and does for sage -testall though, so easily could be completely wrong.",
     "created_at": "2008-10-23T11:02:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4320",
     "type": "issue_comment",
@@ -224,7 +224,7 @@ archive/issue_comments_031625.json:
 }
 ```
 
-Attachment
+Attachment [trac_4320-linear-codes2.patch](tarball://root/attachments/some-uuid/ticket4320/trac_4320-linear-codes2.patch) by wdj created at 2008-10-23 11:02:36
 
 I wonder if this is somehow because of the fact that if you run the Leon code command wtdist on the command line directly you get "smash stack" and (memory errors resulting in?) traceback messages? This is a known issue (discovered by Robert Miller and Tom Boothby) and I have added a warning line to the docstring.
 I don't understand when this does not arise for sage -t and does for sage -testall though, so easily could be completely wrong.
@@ -318,7 +318,7 @@ In any case, the attached patch (which is to be applied *after* the patch number
 archive/issue_comments_031629.json:
 ```json
 {
-    "body": "Attachment\n\nalso based on 3.2.alpha0. To be applied after trac_4320-linear-codes2.patch",
+    "body": "Attachment [trac_4320-linear-codes3.patch](tarball://root/attachments/some-uuid/ticket4320/trac_4320-linear-codes3.patch) by wdj created at 2008-10-26 14:30:40\n\nalso based on 3.2.alpha0. To be applied after trac_4320-linear-codes2.patch",
     "created_at": "2008-10-26T14:30:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4320",
     "type": "issue_comment",
@@ -327,7 +327,7 @@ archive/issue_comments_031629.json:
 }
 ```
 
-Attachment
+Attachment [trac_4320-linear-codes3.patch](tarball://root/attachments/some-uuid/ticket4320/trac_4320-linear-codes3.patch) by wdj created at 2008-10-26 14:30:40
 
 also based on 3.2.alpha0. To be applied after trac_4320-linear-codes2.patch
 
@@ -476,7 +476,7 @@ Michael
 archive/issue_comments_031636.json:
 ```json
 {
-    "body": "Attachment\n\nbased on 3.1.4 but applies to 3.2 as well. Goes on top of patches 2 and 3",
+    "body": "Attachment [trac_4320-linear-codes4.patch](tarball://root/attachments/some-uuid/ticket4320/trac_4320-linear-codes4.patch) by wdj created at 2008-11-22 13:12:41\n\nbased on 3.1.4 but applies to 3.2 as well. Goes on top of patches 2 and 3",
     "created_at": "2008-11-22T13:12:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4320",
     "type": "issue_comment",
@@ -485,7 +485,7 @@ archive/issue_comments_031636.json:
 }
 ```
 
-Attachment
+Attachment [trac_4320-linear-codes4.patch](tarball://root/attachments/some-uuid/ticket4320/trac_4320-linear-codes4.patch) by wdj created at 2008-11-22 13:12:41
 
 based on 3.1.4 but applies to 3.2 as well. Goes on top of patches 2 and 3
 
@@ -655,7 +655,7 @@ Michael
 archive/issue_comments_031644.json:
 ```json
 {
-    "body": "Attachment\n\nto be applied on top of patches 2, 3, and 4",
+    "body": "Attachment [trac_4320-linear-codes5.patch](tarball://root/attachments/some-uuid/ticket4320/trac_4320-linear-codes5.patch) by wdj created at 2008-11-26 01:51:30\n\nto be applied on top of patches 2, 3, and 4",
     "created_at": "2008-11-26T01:51:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4320",
     "type": "issue_comment",
@@ -664,7 +664,7 @@ archive/issue_comments_031644.json:
 }
 ```
 
-Attachment
+Attachment [trac_4320-linear-codes5.patch](tarball://root/attachments/some-uuid/ticket4320/trac_4320-linear-codes5.patch) by wdj created at 2008-11-26 01:51:30
 
 to be applied on top of patches 2, 3, and 4
 

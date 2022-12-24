@@ -121,7 +121,7 @@ I moved .sage and restarted the notebook, and the Settings then worked fine.
 archive/issue_comments_065164.json:
 ```json
 {
-    "body": "Attachment\n\nSkip obsolete or improperly annotated notebook settings.  Depends on #7625.  sagenb repo.",
+    "body": "Attachment [trac_7627-nb_settings_page_errors.patch](tarball://root/attachments/some-uuid/ticket7627/trac_7627-nb_settings_page_errors.patch) by mpatel created at 2009-12-08 23:40:44\n\nSkip obsolete or improperly annotated notebook settings.  Depends on #7625.  sagenb repo.",
     "created_at": "2009-12-08T23:40:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7627",
     "type": "issue_comment",
@@ -130,7 +130,7 @@ archive/issue_comments_065164.json:
 }
 ```
 
-Attachment
+Attachment [trac_7627-nb_settings_page_errors.patch](tarball://root/attachments/some-uuid/ticket7627/trac_7627-nb_settings_page_errors.patch) by mpatel created at 2009-12-08 23:40:44
 
 Skip obsolete or improperly annotated notebook settings.  Depends on #7625.  sagenb repo.
 

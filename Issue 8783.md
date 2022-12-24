@@ -676,7 +676,7 @@ Build with `SAGE_CHECK=yes` on Ubuntu 10.04, GCC 4.3.3
 archive/issue_comments_080416.json:
 ```json
 {
-    "body": "Attachment\n\nOoops, should read 4.**4**.3, but the version shouldn't matter much anyway... ;-)\n\n(Attached the build log.)",
+    "body": "Attachment [frobby-0.7.6.p1-redhawk-SAGE_CHECK.log](tarball://root/attachments/some-uuid/ticket8783/frobby-0.7.6.p1-redhawk-SAGE_CHECK.log) by leif created at 2011-09-12 20:12:09\n\nOoops, should read 4.**4**.3, but the version shouldn't matter much anyway... ;-)\n\n(Attached the build log.)",
     "created_at": "2011-09-12T20:12:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8783",
     "type": "issue_comment",
@@ -685,7 +685,7 @@ archive/issue_comments_080416.json:
 }
 ```
 
-Attachment
+Attachment [frobby-0.7.6.p1-redhawk-SAGE_CHECK.log](tarball://root/attachments/some-uuid/ticket8783/frobby-0.7.6.p1-redhawk-SAGE_CHECK.log) by leif created at 2011-09-12 20:12:09
 
 Ooops, should read 4.**4**.3, but the version shouldn't matter much anyway... ;-)
 
@@ -718,7 +718,7 @@ I just ran the build under Sage 4.7.2.alpha1 on skynet/eno using `export SAGE_CH
 archive/issue_comments_080418.json:
 ```json
 {
-    "body": "Attachment\n\nfrobby build log with SAGE_CHECK=yes on skynet/eno",
+    "body": "Attachment [frobby_build_4.7.2.alpha1.eno.log](tarball://root/attachments/some-uuid/ticket8783/frobby_build_4.7.2.alpha1.eno.log) by benjaminfjones created at 2011-09-13 01:39:31\n\nfrobby build log with SAGE_CHECK=yes on skynet/eno",
     "created_at": "2011-09-13T01:39:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8783",
     "type": "issue_comment",
@@ -727,7 +727,7 @@ archive/issue_comments_080418.json:
 }
 ```
 
-Attachment
+Attachment [frobby_build_4.7.2.alpha1.eno.log](tarball://root/attachments/some-uuid/ticket8783/frobby_build_4.7.2.alpha1.eno.log) by benjaminfjones created at 2011-09-13 01:39:31
 
 frobby build log with SAGE_CHECK=yes on skynet/eno
 

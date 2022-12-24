@@ -192,7 +192,7 @@ Does this seem reasonable?
 archive/issue_comments_088751.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9350.patch](tarball://root/attachments/some-uuid/ticket9350/trac_9350.patch) by ncohen created at 2010-07-29 17:00:56",
     "created_at": "2010-07-29T17:00:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9350",
     "type": "issue_comment",
@@ -201,7 +201,7 @@ archive/issue_comments_088751.json:
 }
 ```
 
-Attachment
+Attachment [trac_9350.patch](tarball://root/attachments/some-uuid/ticket9350/trac_9350.patch) by ncohen created at 2010-07-29 17:00:56
 
 
 

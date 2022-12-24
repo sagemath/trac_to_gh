@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3599
 archive/issue_comments_025424.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac3599_extcode_1.patch](tarball://root/attachments/some-uuid/ticket3599/trac3599_extcode_1.patch) by itolkov created at 2008-07-08 00:30:01",
     "created_at": "2008-07-08T00:30:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3599",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_025424.json:
 }
 ```
 
-Attachment
+Attachment [trac3599_extcode_1.patch](tarball://root/attachments/some-uuid/ticket3599/trac3599_extcode_1.patch) by itolkov created at 2008-07-08 00:30:01
 
 
 
@@ -133,7 +133,7 @@ the image of the slider
 archive/issue_comments_025429.json:
 ```json
 {
-    "body": "Attachment\n\nI replaced the png by a proper patch.",
+    "body": "Attachment [trac3599_extcode_2.patch](tarball://root/attachments/some-uuid/ticket3599/trac3599_extcode_2.patch) by was created at 2008-07-29 18:38:37\n\nI replaced the png by a proper patch.",
     "created_at": "2008-07-29T18:38:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3599",
     "type": "issue_comment",
@@ -142,7 +142,7 @@ archive/issue_comments_025429.json:
 }
 ```
 
-Attachment
+Attachment [trac3599_extcode_2.patch](tarball://root/attachments/some-uuid/ticket3599/trac3599_extcode_2.patch) by was created at 2008-07-29 18:38:37
 
 I replaced the png by a proper patch.
 
@@ -193,7 +193,7 @@ Michael
 archive/issue_comments_025432.json:
 ```json
 {
-    "body": "Attachment\n\nHere's the png again.",
+    "body": "Attachment [slider-bg-3.png](tarball://root/attachments/some-uuid/ticket3599/slider-bg-3.png) by itolkov created at 2008-07-31 17:55:17\n\nHere's the png again.",
     "created_at": "2008-07-31T17:55:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3599",
     "type": "issue_comment",
@@ -202,7 +202,7 @@ archive/issue_comments_025432.json:
 }
 ```
 
-Attachment
+Attachment [slider-bg-3.png](tarball://root/attachments/some-uuid/ticket3599/slider-bg-3.png) by itolkov created at 2008-07-31 17:55:17
 
 Here's the png again.
 

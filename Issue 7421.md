@@ -167,7 +167,7 @@ The previous version was missing a patch header.
 archive/issue_comments_062458.json:
 ```json
 {
-    "body": "Attachment\n\nI'm going to move this to 4.3 where it's more relevant.",
+    "body": "Attachment [trac_7421-register_coercion_weaker_assertion.patch](tarball://root/attachments/some-uuid/ticket7421/trac_7421-register_coercion_weaker_assertion.patch) by mhansen created at 2009-11-13 04:48:17\n\nI'm going to move this to 4.3 where it's more relevant.",
     "created_at": "2009-11-13T04:48:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7421",
     "type": "issue_comment",
@@ -176,7 +176,7 @@ archive/issue_comments_062458.json:
 }
 ```
 
-Attachment
+Attachment [trac_7421-register_coercion_weaker_assertion.patch](tarball://root/attachments/some-uuid/ticket7421/trac_7421-register_coercion_weaker_assertion.patch) by mhansen created at 2009-11-13 04:48:17
 
 I'm going to move this to 4.3 where it's more relevant.
 

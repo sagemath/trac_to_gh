@@ -111,7 +111,7 @@ Merged in Sage 3.0.alpha5
 archive/issue_comments_020185.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [linbox-1.1.5-gcc-4.3.patch](tarball://root/attachments/some-uuid/ticket2931/linbox-1.1.5-gcc-4.3.patch) by mabshoff created at 2008-05-27 18:55:03",
     "created_at": "2008-05-27T18:55:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2931",
     "type": "issue_comment",
@@ -120,4 +120,4 @@ archive/issue_comments_020185.json:
 }
 ```
 
-Attachment
+Attachment [linbox-1.1.5-gcc-4.3.patch](tarball://root/attachments/some-uuid/ticket2931/linbox-1.1.5-gcc-4.3.patch) by mabshoff created at 2008-05-27 18:55:03

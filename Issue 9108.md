@@ -72,7 +72,7 @@ Marks the offending lines with `# long time`. Based on 4.4.3.alpha0.
 archive/issue_comments_084713.json:
 ```json
 {
-    "body": "Attachment\n\nSimon, you're too fast... ;-)\n\nI've just uploaded a patch that reduces the module test time on a Pentium 4 (Prescott, 3.2 GHz) from 238.7 seconds to 33.1 seconds.",
+    "body": "Attachment [trac_9108-mark_long_doctests_in_symmetric_ideal.patch](tarball://root/attachments/some-uuid/ticket9108/trac_9108-mark_long_doctests_in_symmetric_ideal.patch) by leif created at 2010-06-01 15:23:32\n\nSimon, you're too fast... ;-)\n\nI've just uploaded a patch that reduces the module test time on a Pentium 4 (Prescott, 3.2 GHz) from 238.7 seconds to 33.1 seconds.",
     "created_at": "2010-06-01T15:23:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9108",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_084713.json:
 }
 ```
 
-Attachment
+Attachment [trac_9108-mark_long_doctests_in_symmetric_ideal.patch](tarball://root/attachments/some-uuid/ticket9108/trac_9108-mark_long_doctests_in_symmetric_ideal.patch) by leif created at 2010-06-01 15:23:32
 
 Simon, you're too fast... ;-)
 

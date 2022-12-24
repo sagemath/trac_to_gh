@@ -98,7 +98,7 @@ apply to singular spkg (tested with Sage 3.3)
 archive/issue_comments_041159.json:
 ```json
 {
-    "body": "Attachment\n\nGeorg,\n\nthis is a know problem when using the system malloc with Singular, i.e. the above problem happens also on OSX in 64 bit mode where we already build Singular with the system malloc per default. There are more problems than four double frees at exit. The problem is that\n\n* the destructor for Rational in Givaro is not called, but the one in Singular\n* the same applies to some mpf_* function\n* What is even worst is that Sage's minpoly is not called, but instead libsingular's without the ring check\n\nDue to the above about 25 doctests will segafault, so this is more than a cosmetic issue. I am clueless why this happens, but I suspect a scope issue in Cython.\n\nRobertWB: thoughts?\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_Singular-double-free.patch](tarball://root/attachments/some-uuid/ticket5344/trac_Singular-double-free.patch) by mabshoff created at 2009-02-22 22:15:59\n\nGeorg,\n\nthis is a know problem when using the system malloc with Singular, i.e. the above problem happens also on OSX in 64 bit mode where we already build Singular with the system malloc per default. There are more problems than four double frees at exit. The problem is that\n\n* the destructor for Rational in Givaro is not called, but the one in Singular\n* the same applies to some mpf_* function\n* What is even worst is that Sage's minpoly is not called, but instead libsingular's without the ring check\n\nDue to the above about 25 doctests will segafault, so this is more than a cosmetic issue. I am clueless why this happens, but I suspect a scope issue in Cython.\n\nRobertWB: thoughts?\n\nCheers,\n\nMichael",
     "created_at": "2009-02-22T22:15:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5344",
     "type": "issue_comment",
@@ -107,7 +107,7 @@ archive/issue_comments_041159.json:
 }
 ```
 
-Attachment
+Attachment [trac_Singular-double-free.patch](tarball://root/attachments/some-uuid/ticket5344/trac_Singular-double-free.patch) by mabshoff created at 2009-02-22 22:15:59
 
 Georg,
 

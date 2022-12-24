@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5050
 archive/issue_comments_038480.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5050.patch](tarball://root/attachments/some-uuid/ticket5050/trac_5050.patch) by mhansen created at 2009-01-22 06:41:54",
     "created_at": "2009-01-22T06:41:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5050",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_038480.json:
 }
 ```
 
-Attachment
+Attachment [trac_5050.patch](tarball://root/attachments/some-uuid/ticket5050/trac_5050.patch) by mhansen created at 2009-01-22 06:41:54
 
 
 
@@ -72,7 +72,7 @@ Notes from Mike looking at this:
 archive/issue_comments_038482.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5050-2.patch](tarball://root/attachments/some-uuid/ticket5050/trac_5050-2.patch) by mhansen created at 2009-01-22 15:40:29",
     "created_at": "2009-01-22T15:40:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5050",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_038482.json:
 }
 ```
 
-Attachment
+Attachment [trac_5050-2.patch](tarball://root/attachments/some-uuid/ticket5050/trac_5050-2.patch) by mhansen created at 2009-01-22 15:40:29
 
 
 

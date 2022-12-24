@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8543
 archive/issue_comments_077242.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8543-empty_set_categories-fh.patch](tarball://root/attachments/some-uuid/ticket8543/trac_8543-empty_set_categories-fh.patch) by hivert created at 2010-03-23 09:48:06",
     "created_at": "2010-03-23T09:48:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8543",
     "type": "issue_comment",
@@ -51,7 +51,7 @@ archive/issue_comments_077242.json:
 }
 ```
 
-Attachment
+Attachment [trac_8543-empty_set_categories-fh.patch](tarball://root/attachments/some-uuid/ticket8543/trac_8543-empty_set_categories-fh.patch) by hivert created at 2010-03-23 09:48:06
 
 
 
@@ -175,7 +175,7 @@ Florent: I made a quick reviewer patch fixing some trivial things. Please double
 archive/issue_comments_077249.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8543-empty_set_categories-review-nt.patch](tarball://root/attachments/some-uuid/ticket8543/trac_8543-empty_set_categories-review-nt.patch) by nthiery created at 2010-04-16 21:15:05",
     "created_at": "2010-04-16T21:15:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8543",
     "type": "issue_comment",
@@ -184,7 +184,7 @@ archive/issue_comments_077249.json:
 }
 ```
 
-Attachment
+Attachment [trac_8543-empty_set_categories-review-nt.patch](tarball://root/attachments/some-uuid/ticket8543/trac_8543-empty_set_categories-review-nt.patch) by nthiery created at 2010-04-16 21:15:05
 
 
 

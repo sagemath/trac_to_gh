@@ -74,7 +74,7 @@ Changing status from new to needs_work.
 archive/issue_comments_073379.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8287_check-sl.patch](tarball://root/attachments/some-uuid/ticket8287/trac_8287_check-sl.patch) by slabbe created at 2010-02-17 00:03:44",
     "created_at": "2010-02-17T00:03:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8287",
     "type": "issue_comment",
@@ -83,7 +83,7 @@ archive/issue_comments_073379.json:
 }
 ```
 
-Attachment
+Attachment [trac_8287_check-sl.patch](tarball://root/attachments/some-uuid/ticket8287/trac_8287_check-sl.patch) by slabbe created at 2010-02-17 00:03:44
 
 
 

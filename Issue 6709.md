@@ -51,7 +51,7 @@ Test failues on sage-4.1.1.rc0 with Maxima 5.19.0
 archive/issue_comments_055087.json:
 ```json
 {
-    "body": "Attachment\n\ntest.log on SPARC after bug fix to ECL 9.8.1",
+    "body": "Attachment [test.log](tarball://root/attachments/some-uuid/ticket6709/test.log) by drkirkby created at 2009-08-11 09:56:53\n\ntest.log on SPARC after bug fix to ECL 9.8.1",
     "created_at": "2009-08-11T09:56:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6709",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_055087.json:
 }
 ```
 
-Attachment
+Attachment [test.log](tarball://root/attachments/some-uuid/ticket6709/test.log) by drkirkby created at 2009-08-11 09:56:53
 
 test.log on SPARC after bug fix to ECL 9.8.1
 

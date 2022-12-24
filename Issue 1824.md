@@ -309,7 +309,7 @@ Michael
 archive/issue_comments_011555.json:
 ```json
 {
-    "body": "Attachment\n\nfixes at least parts of the memleaks",
+    "body": "Attachment [pbori_memleak_1.patch](tarball://root/attachments/some-uuid/ticket1824/pbori_memleak_1.patch) by malb created at 2008-02-05 23:48:26\n\nfixes at least parts of the memleaks",
     "created_at": "2008-02-05T23:48:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1824",
     "type": "issue_comment",
@@ -318,7 +318,7 @@ archive/issue_comments_011555.json:
 }
 ```
 
-Attachment
+Attachment [pbori_memleak_1.patch](tarball://root/attachments/some-uuid/ticket1824/pbori_memleak_1.patch) by malb created at 2008-02-05 23:48:26
 
 fixes at least parts of the memleaks
 

@@ -49,7 +49,7 @@ Ooop, you have written "Mumpy" in constructor.py. Everything else looks good, on
 archive/issue_comments_055135.json:
 ```json
 {
-    "body": "Attachment\n\nbased on Sage 4.1.1.rc2",
+    "body": "Attachment [trac_6718-spell-check-matrix.patch](tarball://root/attachments/some-uuid/ticket6718/trac_6718-spell-check-matrix.patch) by mvngu created at 2009-08-14 10:44:40\n\nbased on Sage 4.1.1.rc2",
     "created_at": "2009-08-14T10:44:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6718",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_055135.json:
 }
 ```
 
-Attachment
+Attachment [trac_6718-spell-check-matrix.patch](tarball://root/attachments/some-uuid/ticket6718/trac_6718-spell-check-matrix.patch) by mvngu created at 2009-08-14 10:44:40
 
 based on Sage 4.1.1.rc2
 

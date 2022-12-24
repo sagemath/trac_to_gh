@@ -65,7 +65,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4561
 archive/issue_comments_034168.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4561-PrimitiveFunction-fastfloat.patch](tarball://root/attachments/some-uuid/ticket4561/4561-PrimitiveFunction-fastfloat.patch) by robertwb created at 2008-11-21 06:48:09",
     "created_at": "2008-11-21T06:48:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4561",
     "type": "issue_comment",
@@ -74,7 +74,7 @@ archive/issue_comments_034168.json:
 }
 ```
 
-Attachment
+Attachment [4561-PrimitiveFunction-fastfloat.patch](tarball://root/attachments/some-uuid/ticket4561/4561-PrimitiveFunction-fastfloat.patch) by robertwb created at 2008-11-21 06:48:09
 
 
 

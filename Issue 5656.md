@@ -56,7 +56,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5656
 archive/issue_comments_044229.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [gb_lift.patch](tarball://root/attachments/some-uuid/ticket5656/gb_lift.patch) by malb created at 2009-05-12 01:55:46",
     "created_at": "2009-05-12T01:55:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5656",
     "type": "issue_comment",
@@ -65,7 +65,7 @@ archive/issue_comments_044229.json:
 }
 ```
 
-Attachment
+Attachment [gb_lift.patch](tarball://root/attachments/some-uuid/ticket5656/gb_lift.patch) by malb created at 2009-05-12 01:55:46
 
 
 
@@ -74,7 +74,7 @@ Attachment
 archive/issue_comments_044230.json:
 ```json
 {
-    "body": "Attachment\n\nrevision of Martin's patch",
+    "body": "Attachment [trac_5656-gb_lift-revised.patch](tarball://root/attachments/some-uuid/ticket5656/trac_5656-gb_lift-revised.patch) by burcin created at 2009-06-04 13:50:50\n\nrevision of Martin's patch",
     "created_at": "2009-06-04T13:50:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5656",
     "type": "issue_comment",
@@ -83,7 +83,7 @@ archive/issue_comments_044230.json:
 }
 ```
 
-Attachment
+Attachment [trac_5656-gb_lift-revised.patch](tarball://root/attachments/some-uuid/ticket5656/trac_5656-gb_lift-revised.patch) by burcin created at 2009-06-04 13:50:50
 
 revision of Martin's patch
 

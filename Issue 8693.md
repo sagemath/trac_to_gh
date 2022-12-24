@@ -58,7 +58,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8693
 archive/issue_comments_079193.json:
 ```json
 {
-    "body": "Attachment\n\nSample code to correct a non-basis from basis_of_short_vectors",
+    "body": "Attachment [fix_basis.sage](tarball://root/attachments/some-uuid/ticket8693/fix_basis.sage) by afiori created at 2010-04-15 18:52:00\n\nSample code to correct a non-basis from basis_of_short_vectors",
     "created_at": "2010-04-15T18:52:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8693",
     "type": "issue_comment",
@@ -67,7 +67,7 @@ archive/issue_comments_079193.json:
 }
 ```
 
-Attachment
+Attachment [fix_basis.sage](tarball://root/attachments/some-uuid/ticket8693/fix_basis.sage) by afiori created at 2010-04-15 18:52:00
 
 Sample code to correct a non-basis from basis_of_short_vectors
 

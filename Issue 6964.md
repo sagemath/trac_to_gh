@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6964
 archive/issue_comments_057616.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6964-part2.patch](tarball://root/attachments/some-uuid/ticket6964/trac_6964-part2.patch) by was created at 2009-09-20 04:59:07",
     "created_at": "2009-09-20T04:59:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6964",
     "type": "issue_comment",
@@ -53,7 +53,7 @@ archive/issue_comments_057616.json:
 }
 ```
 
-Attachment
+Attachment [trac_6964-part2.patch](tarball://root/attachments/some-uuid/ticket6964/trac_6964-part2.patch) by was created at 2009-09-20 04:59:07
 
 
 
@@ -62,7 +62,7 @@ Attachment
 archive/issue_comments_057617.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6964-part3.patch](tarball://root/attachments/some-uuid/ticket6964/trac_6964-part3.patch) by was created at 2009-09-20 05:21:19",
     "created_at": "2009-09-20T05:21:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6964",
     "type": "issue_comment",
@@ -71,7 +71,7 @@ archive/issue_comments_057617.json:
 }
 ```
 
-Attachment
+Attachment [trac_6964-part3.patch](tarball://root/attachments/some-uuid/ticket6964/trac_6964-part3.patch) by was created at 2009-09-20 05:21:19
 
 
 
@@ -80,7 +80,7 @@ Attachment
 archive/issue_comments_057618.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6964-part4.patch](tarball://root/attachments/some-uuid/ticket6964/trac_6964-part4.patch) by syazdani created at 2009-09-20 05:44:47",
     "created_at": "2009-09-20T05:44:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6964",
     "type": "issue_comment",
@@ -89,7 +89,7 @@ archive/issue_comments_057618.json:
 }
 ```
 
-Attachment
+Attachment [trac_6964-part4.patch](tarball://root/attachments/some-uuid/ticket6964/trac_6964-part4.patch) by syazdani created at 2009-09-20 05:44:47
 
 
 
@@ -98,7 +98,7 @@ Attachment
 archive/issue_comments_057619.json:
 ```json
 {
-    "body": "Attachment\n\nfix warning when building reference manual",
+    "body": "Attachment [trac_6964-formatting-fix.patch](tarball://root/attachments/some-uuid/ticket6964/trac_6964-formatting-fix.patch) by mvngu created at 2009-09-24 15:36:11\n\nfix warning when building reference manual",
     "created_at": "2009-09-24T15:36:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6964",
     "type": "issue_comment",
@@ -107,7 +107,7 @@ archive/issue_comments_057619.json:
 }
 ```
 
-Attachment
+Attachment [trac_6964-formatting-fix.patch](tarball://root/attachments/some-uuid/ticket6964/trac_6964-formatting-fix.patch) by mvngu created at 2009-09-24 15:36:11
 
 fix warning when building reference manual
 

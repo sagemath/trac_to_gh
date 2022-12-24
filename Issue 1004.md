@@ -51,7 +51,7 @@ Changing status from new to assigned.
 archive/issue_comments_006114.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Cobweb1.txt](tarball://root/attachments/some-uuid/ticket1004/Cobweb1.txt) by mhampton created at 2007-10-26 16:48:50",
     "created_at": "2007-10-26T16:48:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1004",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_006114.json:
 }
 ```
 
-Attachment
+Attachment [Cobweb1.txt](tarball://root/attachments/some-uuid/ticket1004/Cobweb1.txt) by mhampton created at 2007-10-26 16:48:50
 
 
 
@@ -87,7 +87,7 @@ This is so ancient, feel free to completely rewrite the description.
 archive/issue_comments_006116.json:
 ```json
 {
-    "body": "Attachment\n\nrefreshed as a patch",
+    "body": "Attachment [trac1004_cobweb.patch](tarball://root/attachments/some-uuid/ticket1004/trac1004_cobweb.patch) by chapoton created at 2013-08-21 17:09:22\n\nrefreshed as a patch",
     "created_at": "2013-08-21T17:09:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1004",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_006116.json:
 }
 ```
 
-Attachment
+Attachment [trac1004_cobweb.patch](tarball://root/attachments/some-uuid/ticket1004/trac1004_cobweb.patch) by chapoton created at 2013-08-21 17:09:22
 
 refreshed as a patch
 

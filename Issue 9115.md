@@ -53,7 +53,7 @@ Changing status from new to needs_work.
 archive/issue_comments_084804.json:
 ```json
 {
-    "body": "Attachment\n\nHere is an unfinished rough patch for the feature suggested at #9089.",
+    "body": "Attachment [trac-9115.patch](tarball://root/attachments/some-uuid/ticket9115/trac-9115.patch) by jason created at 2010-06-02 22:25:27\n\nHere is an unfinished rough patch for the feature suggested at #9089.",
     "created_at": "2010-06-02T22:25:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9115",
     "type": "issue_comment",
@@ -62,6 +62,6 @@ archive/issue_comments_084804.json:
 }
 ```
 
-Attachment
+Attachment [trac-9115.patch](tarball://root/attachments/some-uuid/ticket9115/trac-9115.patch) by jason created at 2010-06-02 22:25:27
 
 Here is an unfinished rough patch for the feature suggested at #9089.

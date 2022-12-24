@@ -119,7 +119,7 @@ For the second example, don't you want an EnumeratedSet and not a FiniteEnumerat
 archive/issue_comments_063574.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7510-is_finite_categories.patch](tarball://root/attachments/some-uuid/ticket7510/trac_7510-is_finite_categories.patch) by hivert created at 2009-11-21 22:43:31",
     "created_at": "2009-11-21T22:43:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7510",
     "type": "issue_comment",
@@ -128,7 +128,7 @@ archive/issue_comments_063574.json:
 }
 ```
 
-Attachment
+Attachment [trac_7510-is_finite_categories.patch](tarball://root/attachments/some-uuid/ticket7510/trac_7510-is_finite_categories.patch) by hivert created at 2009-11-21 22:43:31
 
 
 

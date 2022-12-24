@@ -135,7 +135,7 @@ Rename arrow 'width' option to 'thickness'
 archive/issue_comments_059269.json:
 ```json
 {
-    "body": "Attachment\n\nlooking at the arrow3d thickness now.",
+    "body": "Attachment [trac_7154_arrow_thickness.patch](tarball://root/attachments/some-uuid/ticket7154/trac_7154_arrow_thickness.patch) by ryan created at 2010-08-21 14:20:29\n\nlooking at the arrow3d thickness now.",
     "created_at": "2010-08-21T14:20:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7154",
     "type": "issue_comment",
@@ -144,7 +144,7 @@ archive/issue_comments_059269.json:
 }
 ```
 
-Attachment
+Attachment [trac_7154_arrow_thickness.patch](tarball://root/attachments/some-uuid/ticket7154/trac_7154_arrow_thickness.patch) by ryan created at 2010-08-21 14:20:29
 
 looking at the arrow3d thickness now.
 
@@ -155,7 +155,7 @@ looking at the arrow3d thickness now.
 archive/issue_comments_059270.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7154_arrow3d_width.patch](tarball://root/attachments/some-uuid/ticket7154/trac_7154_arrow3d_width.patch) by ryan created at 2010-08-21 22:33:40",
     "created_at": "2010-08-21T22:33:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7154",
     "type": "issue_comment",
@@ -164,7 +164,7 @@ archive/issue_comments_059270.json:
 }
 ```
 
-Attachment
+Attachment [trac_7154_arrow3d_width.patch](tarball://root/attachments/some-uuid/ticket7154/trac_7154_arrow3d_width.patch) by ryan created at 2010-08-21 22:33:40
 
 
 
@@ -303,7 +303,7 @@ updated - added doctests and deprecation warning
 archive/issue_comments_059277.json:
 ```json
 {
-    "body": "Attachment\n\nthe real update :)  added doctest and deprecation warning",
+    "body": "Attachment [trac_7154_arrow_thickness.2.patch](tarball://root/attachments/some-uuid/ticket7154/trac_7154_arrow_thickness.2.patch) by ryan created at 2010-08-28 18:18:18\n\nthe real update :)  added doctest and deprecation warning",
     "created_at": "2010-08-28T18:18:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7154",
     "type": "issue_comment",
@@ -312,7 +312,7 @@ archive/issue_comments_059277.json:
 }
 ```
 
-Attachment
+Attachment [trac_7154_arrow_thickness.2.patch](tarball://root/attachments/some-uuid/ticket7154/trac_7154_arrow_thickness.2.patch) by ryan created at 2010-08-28 18:18:18
 
 the real update :)  added doctest and deprecation warning
 
@@ -416,7 +416,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_059283.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7154_arrow3d_width.3.patch](tarball://root/attachments/some-uuid/ticket7154/trac_7154_arrow3d_width.3.patch) by ryan created at 2010-09-11 05:24:36",
     "created_at": "2010-09-11T05:24:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7154",
     "type": "issue_comment",
@@ -425,7 +425,7 @@ archive/issue_comments_059283.json:
 }
 ```
 
-Attachment
+Attachment [trac_7154_arrow3d_width.3.patch](tarball://root/attachments/some-uuid/ticket7154/trac_7154_arrow3d_width.3.patch) by ryan created at 2010-09-11 05:24:36
 
 
 
@@ -470,7 +470,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_059286.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good.  I updated the version number in trac_7154_arrow3d_width.4.patch; apply only that patch.  \n\nThanks!\n\nThis is Ryan's first contribution, along with #8838 and #9199.",
+    "body": "Attachment [trac_7154_arrow3d_width.4.patch](tarball://root/attachments/some-uuid/ticket7154/trac_7154_arrow3d_width.4.patch) by jason created at 2010-09-11 16:56:33\n\nLooks good.  I updated the version number in trac_7154_arrow3d_width.4.patch; apply only that patch.  \n\nThanks!\n\nThis is Ryan's first contribution, along with #8838 and #9199.",
     "created_at": "2010-09-11T16:56:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7154",
     "type": "issue_comment",
@@ -479,7 +479,7 @@ archive/issue_comments_059286.json:
 }
 ```
 
-Attachment
+Attachment [trac_7154_arrow3d_width.4.patch](tarball://root/attachments/some-uuid/ticket7154/trac_7154_arrow3d_width.4.patch) by jason created at 2010-09-11 16:56:33
 
 Looks good.  I updated the version number in trac_7154_arrow3d_width.4.patch; apply only that patch.  
 

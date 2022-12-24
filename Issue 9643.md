@@ -101,7 +101,7 @@ Mercurial patch which should disable assembly code on Solaris 10 or OpenSolaris 
 archive/issue_comments_093469.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9643.patch](tarball://root/attachments/some-uuid/ticket9643/9643.patch) by drkirkby created at 2010-08-05 00:38:08",
     "created_at": "2010-08-05T00:38:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9643",
     "type": "issue_comment",
@@ -110,7 +110,7 @@ archive/issue_comments_093469.json:
 }
 ```
 
-Attachment
+Attachment [9643.patch](tarball://root/attachments/some-uuid/ticket9643/9643.patch) by drkirkby created at 2010-08-05 00:38:08
 
 
 

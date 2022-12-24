@@ -76,7 +76,7 @@ Changing status from new to assigned.
 archive/issue_comments_031349.json:
 ```json
 {
-    "body": "Attachment\n\nYep, this just wasn't tested at all. Fixed it, added some doctests.",
+    "body": "Attachment [trac-4284.patch](tarball://root/attachments/some-uuid/ticket4284/trac-4284.patch) by craigcitro created at 2008-10-17 09:47:11\n\nYep, this just wasn't tested at all. Fixed it, added some doctests.",
     "created_at": "2008-10-17T09:47:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4284",
     "type": "issue_comment",
@@ -85,7 +85,7 @@ archive/issue_comments_031349.json:
 }
 ```
 
-Attachment
+Attachment [trac-4284.patch](tarball://root/attachments/some-uuid/ticket4284/trac-4284.patch) by craigcitro created at 2008-10-17 09:47:11
 
 Yep, this just wasn't tested at all. Fixed it, added some doctests.
 

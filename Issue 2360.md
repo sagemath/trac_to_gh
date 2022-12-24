@@ -159,7 +159,7 @@ The patch fixes the issue, but I'd rather have the original error about multiply
 archive/issue_comments_015915.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_2360_fix.patch](tarball://root/attachments/some-uuid/ticket2360/trac_2360_fix.patch) by malb created at 2009-01-24 12:42:22",
     "created_at": "2009-01-24T12:42:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2360",
     "type": "issue_comment",
@@ -168,7 +168,7 @@ archive/issue_comments_015915.json:
 }
 ```
 
-Attachment
+Attachment [trac_2360_fix.patch](tarball://root/attachments/some-uuid/ticket2360/trac_2360_fix.patch) by malb created at 2009-01-24 12:42:22
 
 
 

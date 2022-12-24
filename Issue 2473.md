@@ -56,7 +56,7 @@ The problem with this approach is it allows one to construct graphs which are no
 archive/issue_comments_016746.json:
 ```json
 {
-    "body": "Attachment\n\ntry #2",
+    "body": "Attachment [bipartite_graph_input.patch](tarball://root/attachments/some-uuid/ticket2473/bipartite_graph_input.patch) by rhinton created at 2008-03-12 18:57:52\n\ntry #2",
     "created_at": "2008-03-12T18:57:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2473",
     "type": "issue_comment",
@@ -65,7 +65,7 @@ archive/issue_comments_016746.json:
 }
 ```
 
-Attachment
+Attachment [bipartite_graph_input.patch](tarball://root/attachments/some-uuid/ticket2473/bipartite_graph_input.patch) by rhinton created at 2008-03-12 18:57:52
 
 try #2
 
@@ -76,7 +76,7 @@ try #2
 archive/issue_comments_016747.json:
 ```json
 {
-    "body": "Attachment\n\nThe updated patch, I believe, addresses your concerns.  It also fixes several more bugs.",
+    "body": "Attachment [bipartite_graph_input.2.patch](tarball://root/attachments/some-uuid/ticket2473/bipartite_graph_input.2.patch) by rhinton created at 2008-03-12 18:59:27\n\nThe updated patch, I believe, addresses your concerns.  It also fixes several more bugs.",
     "created_at": "2008-03-12T18:59:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2473",
     "type": "issue_comment",
@@ -85,7 +85,7 @@ archive/issue_comments_016747.json:
 }
 ```
 
-Attachment
+Attachment [bipartite_graph_input.2.patch](tarball://root/attachments/some-uuid/ticket2473/bipartite_graph_input.2.patch) by rhinton created at 2008-03-12 18:59:27
 
 The updated patch, I believe, addresses your concerns.  It also fixes several more bugs.
 
@@ -138,7 +138,7 @@ Some notes:
 archive/issue_comments_016750.json:
 ```json
 {
-    "body": "Attachment\n\nApply bipartite_graph_input.2.patch, then this.",
+    "body": "Attachment [2473-ref.patch](tarball://root/attachments/some-uuid/ticket2473/2473-ref.patch) by rlm created at 2008-03-13 02:24:50\n\nApply bipartite_graph_input.2.patch, then this.",
     "created_at": "2008-03-13T02:24:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2473",
     "type": "issue_comment",
@@ -147,7 +147,7 @@ archive/issue_comments_016750.json:
 }
 ```
 
-Attachment
+Attachment [2473-ref.patch](tarball://root/attachments/some-uuid/ticket2473/2473-ref.patch) by rlm created at 2008-03-13 02:24:50
 
 Apply bipartite_graph_input.2.patch, then this.
 

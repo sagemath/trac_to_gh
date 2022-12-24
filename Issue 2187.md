@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2187
 archive/issue_comments_014360.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-2187-hg_doc.patch](tarball://root/attachments/some-uuid/ticket2187/trac-2187-hg_doc.patch) by cwitty created at 2008-02-17 05:37:04",
     "created_at": "2008-02-17T05:37:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2187",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_014360.json:
 }
 ```
 
-Attachment
+Attachment [trac-2187-hg_doc.patch](tarball://root/attachments/some-uuid/ticket2187/trac-2187-hg_doc.patch) by cwitty created at 2008-02-17 05:37:04
 
 
 
@@ -53,7 +53,7 @@ Attachment
 archive/issue_comments_014361.json:
 ```json
 {
-    "body": "Attachment\n\nBoth patches looks good to me, they apply cleanly -> positive review.",
+    "body": "Attachment [trac-2187-hg_sage.patch](tarball://root/attachments/some-uuid/ticket2187/trac-2187-hg_sage.patch) by mabshoff created at 2008-02-17 13:04:43\n\nBoth patches looks good to me, they apply cleanly -> positive review.",
     "created_at": "2008-02-17T13:04:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2187",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_014361.json:
 }
 ```
 
-Attachment
+Attachment [trac-2187-hg_sage.patch](tarball://root/attachments/some-uuid/ticket2187/trac-2187-hg_sage.patch) by mabshoff created at 2008-02-17 13:04:43
 
 Both patches looks good to me, they apply cleanly -> positive review.
 

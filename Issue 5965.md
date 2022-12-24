@@ -113,7 +113,7 @@ Actually, it may make more sense to just check that pseudoterminals and shared m
 archive/issue_comments_047242.json:
 ```json
 {
-    "body": "Attachment\n\nThis simple python script checks availability of pseudoterminals and shared memory.",
+    "body": "Attachment [sage-check.py](tarball://root/attachments/some-uuid/ticket5965/sage-check.py) by tornaria created at 2009-05-05 03:25:35\n\nThis simple python script checks availability of pseudoterminals and shared memory.",
     "created_at": "2009-05-05T03:25:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5965",
     "type": "issue_comment",
@@ -122,7 +122,7 @@ archive/issue_comments_047242.json:
 }
 ```
 
-Attachment
+Attachment [sage-check.py](tarball://root/attachments/some-uuid/ticket5965/sage-check.py) by tornaria created at 2009-05-05 03:25:35
 
 This simple python script checks availability of pseudoterminals and shared memory.
 
@@ -392,7 +392,7 @@ Changing keywords from "" to "GAP PExpect cannot start server pty pseudo ttys sh
 archive/issue_comments_047256.json:
 ```json
 {
-    "body": "Attachment\n\nRaising the priority to \"critical\" since this issue came up multiple times recently, especially in server setups (which usually use a chroot environment or virtualization), and also minimal Linux installations.\n\nPeople are rather unlikely to immediately relate the failure in starting GAP to pseudo ttys or device mounts.\n\nAlternatively, we could catch / check for the pty error in the code that creates PExpect interfaces, e.g. in `sage/interfaces/gap.py` (around line 903), in order to give a more appropriate error message.",
+    "body": "Attachment [sage-check-ptys-semaphore.py](tarball://root/attachments/some-uuid/ticket5965/sage-check-ptys-semaphore.py) by leif created at 2011-08-29 01:31:10\n\nRaising the priority to \"critical\" since this issue came up multiple times recently, especially in server setups (which usually use a chroot environment or virtualization), and also minimal Linux installations.\n\nPeople are rather unlikely to immediately relate the failure in starting GAP to pseudo ttys or device mounts.\n\nAlternatively, we could catch / check for the pty error in the code that creates PExpect interfaces, e.g. in `sage/interfaces/gap.py` (around line 903), in order to give a more appropriate error message.",
     "created_at": "2011-08-29T01:31:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5965",
     "type": "issue_comment",
@@ -401,7 +401,7 @@ archive/issue_comments_047256.json:
 }
 ```
 
-Attachment
+Attachment [sage-check-ptys-semaphore.py](tarball://root/attachments/some-uuid/ticket5965/sage-check-ptys-semaphore.py) by leif created at 2011-08-29 01:31:10
 
 Raising the priority to "critical" since this issue came up multiple times recently, especially in server setups (which usually use a chroot environment or virtualization), and also minimal Linux installations.
 

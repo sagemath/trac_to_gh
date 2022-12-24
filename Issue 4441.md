@@ -203,7 +203,7 @@ apply only this one
 archive/issue_comments_032665.json:
 ```json
 {
-    "body": "Attachment\n\nHi Michael, thanks for your patience.\n\nI'm still the newbie in the learning phase. Obviously, the current sage documentation repo does not miss files, but contains too many. It probably would have been sufficient in the past if only certain tex files would have been in there, like prog.tex.\n\n>Please post a patch removing the two stale files from ref/modabvar.tex \nHere you go.",
+    "body": "Attachment [4441-modabvar.patch](tarball://root/attachments/some-uuid/ticket4441/4441-modabvar.patch) by GeorgSWeber created at 2008-11-05 07:02:14\n\nHi Michael, thanks for your patience.\n\nI'm still the newbie in the learning phase. Obviously, the current sage documentation repo does not miss files, but contains too many. It probably would have been sufficient in the past if only certain tex files would have been in there, like prog.tex.\n\n>Please post a patch removing the two stale files from ref/modabvar.tex \nHere you go.",
     "created_at": "2008-11-05T07:02:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4441",
     "type": "issue_comment",
@@ -212,7 +212,7 @@ archive/issue_comments_032665.json:
 }
 ```
 
-Attachment
+Attachment [4441-modabvar.patch](tarball://root/attachments/some-uuid/ticket4441/4441-modabvar.patch) by GeorgSWeber created at 2008-11-05 07:02:14
 
 Hi Michael, thanks for your patience.
 

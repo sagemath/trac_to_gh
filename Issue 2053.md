@@ -89,7 +89,7 @@ Wall time: 13.32
 archive/issue_comments_013290.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-2053-symbolic_matrices_slow.patch](tarball://root/attachments/some-uuid/ticket2053/trac-2053-symbolic_matrices_slow.patch) by was created at 2008-02-05 14:48:33",
     "created_at": "2008-02-05T14:48:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2053",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_013290.json:
 }
 ```
 
-Attachment
+Attachment [trac-2053-symbolic_matrices_slow.patch](tarball://root/attachments/some-uuid/ticket2053/trac-2053-symbolic_matrices_slow.patch) by was created at 2008-02-05 14:48:33
 
 
 
@@ -125,7 +125,7 @@ I cannot apply this due to a failed hunk with the docstring in set_from_list.
 archive/issue_comments_013292.json:
 ```json
 {
-    "body": "Attachment\n\napply this *INSTEAD*!",
+    "body": "Attachment [trac-2053-fix_symbolic.patch](tarball://root/attachments/some-uuid/ticket2053/trac-2053-fix_symbolic.patch) by was created at 2008-02-06 19:12:45\n\napply this *INSTEAD*!",
     "created_at": "2008-02-06T19:12:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2053",
     "type": "issue_comment",
@@ -134,7 +134,7 @@ archive/issue_comments_013292.json:
 }
 ```
 
-Attachment
+Attachment [trac-2053-fix_symbolic.patch](tarball://root/attachments/some-uuid/ticket2053/trac-2053-fix_symbolic.patch) by was created at 2008-02-06 19:12:45
 
 apply this *INSTEAD*!
 

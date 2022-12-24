@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1032
 archive/issue_comments_006301.json:
 ```json
 {
-    "body": "Attachment\n\nthe patch",
+    "body": "Attachment [latex_names.hg](tarball://root/attachments/some-uuid/ticket1032/latex_names.hg) by jbmohler created at 2007-10-29 20:48:16\n\nthe patch",
     "created_at": "2007-10-29T20:48:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1032",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_006301.json:
 }
 ```
 
-Attachment
+Attachment [latex_names.hg](tarball://root/attachments/some-uuid/ticket1032/latex_names.hg) by jbmohler created at 2007-10-29 20:48:16
 
 the patch
 
@@ -295,7 +295,7 @@ sage: latex(P)
 archive/issue_comments_006312.json:
 ```json
 {
-    "body": "Attachment\n\nthe second patch (needed since hg already says the first patch is in)",
+    "body": "Attachment [latex_names_try2.hg](tarball://root/attachments/some-uuid/ticket1032/latex_names_try2.hg) by jbmohler created at 2007-11-02 18:38:57\n\nthe second patch (needed since hg already says the first patch is in)",
     "created_at": "2007-11-02T18:38:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1032",
     "type": "issue_comment",
@@ -304,7 +304,7 @@ archive/issue_comments_006312.json:
 }
 ```
 
-Attachment
+Attachment [latex_names_try2.hg](tarball://root/attachments/some-uuid/ticket1032/latex_names_try2.hg) by jbmohler created at 2007-11-02 18:38:57
 
 the second patch (needed since hg already says the first patch is in)
 

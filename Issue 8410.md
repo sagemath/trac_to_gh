@@ -119,7 +119,7 @@ Killing any remaining workers...
 archive/issue_comments_075349.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8410.patch](tarball://root/attachments/some-uuid/ticket8410/trac_8410.patch) by was created at 2010-06-24 05:43:53",
     "created_at": "2010-06-24T05:43:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8410",
     "type": "issue_comment",
@@ -128,7 +128,7 @@ archive/issue_comments_075349.json:
 }
 ```
 
-Attachment
+Attachment [trac_8410.patch](tarball://root/attachments/some-uuid/ticket8410/trac_8410.patch) by was created at 2010-06-24 05:43:53
 
 
 

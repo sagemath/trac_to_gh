@@ -51,7 +51,7 @@ Adds the DIR variable
 archive/issue_comments_062561.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch adds the DIR variable.",
+    "body": "Attachment [trac_7435-dir-var.patch](tarball://root/attachments/some-uuid/ticket7435/trac_7435-dir-var.patch) by timdumol created at 2010-01-19 09:47:17\n\nThis patch adds the DIR variable.",
     "created_at": "2010-01-19T09:47:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7435",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_062561.json:
 }
 ```
 
-Attachment
+Attachment [trac_7435-dir-var.patch](tarball://root/attachments/some-uuid/ticket7435/trac_7435-dir-var.patch) by timdumol created at 2010-01-19 09:47:17
 
 This patch adds the DIR variable.
 
@@ -125,7 +125,7 @@ LGTM.
 archive/issue_comments_062565.json:
 ```json
 {
-    "body": "Attachment\n\nRebased for SageNB 0.6 + queue in comment.  Replaces previous.",
+    "body": "Attachment [trac_7435-dir-var.2.patch](tarball://root/attachments/some-uuid/ticket7435/trac_7435-dir-var.2.patch) by mpatel created at 2010-01-25 01:08:26\n\nRebased for SageNB 0.6 + queue in comment.  Replaces previous.",
     "created_at": "2010-01-25T01:08:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7435",
     "type": "issue_comment",
@@ -134,7 +134,7 @@ archive/issue_comments_062565.json:
 }
 ```
 
-Attachment
+Attachment [trac_7435-dir-var.2.patch](tarball://root/attachments/some-uuid/ticket7435/trac_7435-dir-var.2.patch) by mpatel created at 2010-01-25 01:08:26
 
 Rebased for SageNB 0.6 + queue in comment.  Replaces previous.
 
@@ -241,7 +241,7 @@ Changing status from closed to needs_work.
 archive/issue_comments_062570.json:
 ```json
 {
-    "body": "Attachment\n\nV3 adds `DIR        = None` near the top of `twist.py`, to fix failed doctests in `cell.py` and `worksheet.py`.",
+    "body": "Attachment [trac_7435-dir-var.3.patch](tarball://root/attachments/some-uuid/ticket7435/trac_7435-dir-var.3.patch) by mpatel created at 2010-01-25 03:18:50\n\nV3 adds `DIR        = None` near the top of `twist.py`, to fix failed doctests in `cell.py` and `worksheet.py`.",
     "created_at": "2010-01-25T03:18:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7435",
     "type": "issue_comment",
@@ -250,7 +250,7 @@ archive/issue_comments_062570.json:
 }
 ```
 
-Attachment
+Attachment [trac_7435-dir-var.3.patch](tarball://root/attachments/some-uuid/ticket7435/trac_7435-dir-var.3.patch) by mpatel created at 2010-01-25 03:18:50
 
 V3 adds `DIR        = None` near the top of `twist.py`, to fix failed doctests in `cell.py` and `worksheet.py`.
 

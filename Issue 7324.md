@@ -51,7 +51,7 @@ Changing status from new to needs_review.
 archive/issue_comments_061200.json:
 ```json
 {
-    "body": "Attachment\n\nThe provided patch should give no slowdown on small examples, and great speed up for bigger ones.\ne.g.\n\n* BEFORE:\n\n```\nsage: K.<a>=GF(3^108)\nsage: time ord = order_from_multiple(a,3^108-1,operation=\"*\")\nCPU times: user 6.51 s, sys: 0.02 s, total: 6.53 s\nWall time: 6.56 s\n```\n\n\n* AFTER:\n\n```\nsage: K.<a>=GF(3^108)\nsage: time ord = order_from_multiple(a,3^108-1,operation=\"*\")\nCPU times: user 1.98 s, sys: 0.02 s, total: 2.00 s\nWall time: 2.01 s\n```\n\n\n(it's based on 4.1.2, but I hope it applies fine to 4.2)\n\nI also get rid of the power function in generic.py which is exactly the same as the generic_power in sage.structure.element\n\nFinally, with sage 4.1.2, sage -testall reports no failure.",
+    "body": "Attachment [trac_7324_order_from_multiple.patch](tarball://root/attachments/some-uuid/ticket7324/trac_7324_order_from_multiple.patch) by ylchapuy created at 2009-10-27 19:49:04\n\nThe provided patch should give no slowdown on small examples, and great speed up for bigger ones.\ne.g.\n\n* BEFORE:\n\n```\nsage: K.<a>=GF(3^108)\nsage: time ord = order_from_multiple(a,3^108-1,operation=\"*\")\nCPU times: user 6.51 s, sys: 0.02 s, total: 6.53 s\nWall time: 6.56 s\n```\n\n\n* AFTER:\n\n```\nsage: K.<a>=GF(3^108)\nsage: time ord = order_from_multiple(a,3^108-1,operation=\"*\")\nCPU times: user 1.98 s, sys: 0.02 s, total: 2.00 s\nWall time: 2.01 s\n```\n\n\n(it's based on 4.1.2, but I hope it applies fine to 4.2)\n\nI also get rid of the power function in generic.py which is exactly the same as the generic_power in sage.structure.element\n\nFinally, with sage 4.1.2, sage -testall reports no failure.",
     "created_at": "2009-10-27T19:49:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7324",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_061200.json:
 }
 ```
 
-Attachment
+Attachment [trac_7324_order_from_multiple.patch](tarball://root/attachments/some-uuid/ticket7324/trac_7324_order_from_multiple.patch) by ylchapuy created at 2009-10-27 19:49:04
 
 The provided patch should give no slowdown on small examples, and great speed up for bigger ones.
 e.g.
@@ -158,7 +158,7 @@ to use `order_from_multiple`.
 archive/issue_comments_061202.json:
 ```json
 {
-    "body": "Attachment\n\nThe second patch addresses the comments from fwclarke.\nIt also removes the optional arguments 'op' 'inverses' and 'identity' as the were buggy and untested.",
+    "body": "Attachment [trac_7324_order_from_multiple-review.patch](tarball://root/attachments/some-uuid/ticket7324/trac_7324_order_from_multiple-review.patch) by ylchapuy created at 2009-10-29 15:36:21\n\nThe second patch addresses the comments from fwclarke.\nIt also removes the optional arguments 'op' 'inverses' and 'identity' as the were buggy and untested.",
     "created_at": "2009-10-29T15:36:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7324",
     "type": "issue_comment",
@@ -167,7 +167,7 @@ archive/issue_comments_061202.json:
 }
 ```
 
-Attachment
+Attachment [trac_7324_order_from_multiple-review.patch](tarball://root/attachments/some-uuid/ticket7324/trac_7324_order_from_multiple-review.patch) by ylchapuy created at 2009-10-29 15:36:21
 
 The second patch addresses the comments from fwclarke.
 It also removes the optional arguments 'op' 'inverses' and 'identity' as the were buggy and untested.
@@ -221,7 +221,7 @@ One triviality remains: a spelling correction; see the third patch.
 archive/issue_comments_061205.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7324_order_from_multiple-spelling.patch](tarball://root/attachments/some-uuid/ticket7324/trac_7324_order_from_multiple-spelling.patch) by ylchapuy created at 2009-11-06 11:13:32",
     "created_at": "2009-11-06T11:13:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7324",
     "type": "issue_comment",
@@ -230,7 +230,7 @@ archive/issue_comments_061205.json:
 }
 ```
 
-Attachment
+Attachment [trac_7324_order_from_multiple-spelling.patch](tarball://root/attachments/some-uuid/ticket7324/trac_7324_order_from_multiple-spelling.patch) by ylchapuy created at 2009-11-06 11:13:32
 
 
 

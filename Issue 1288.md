@@ -105,7 +105,7 @@ Changing assignee from tba to mhansen.
 archive/issue_comments_008089.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1288-doc.patch](tarball://root/attachments/some-uuid/ticket1288/1288-doc.patch) by mhansen created at 2007-12-08 05:25:22",
     "created_at": "2007-12-08T05:25:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1288",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_008089.json:
 }
 ```
 
-Attachment
+Attachment [1288-doc.patch](tarball://root/attachments/some-uuid/ticket1288/1288-doc.patch) by mhansen created at 2007-12-08 05:25:22
 
 
 

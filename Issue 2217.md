@@ -153,7 +153,7 @@ Add splitting_field() function
 archive/issue_comments_014663.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2217_splitting_field.patch](tarball://root/attachments/some-uuid/ticket2217/2217_splitting_field.patch) by abrochard created at 2012-08-18 17:52:00",
     "created_at": "2012-08-18T17:52:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2217",
     "type": "issue_comment",
@@ -162,7 +162,7 @@ archive/issue_comments_014663.json:
 }
 ```
 
-Attachment
+Attachment [2217_splitting_field.patch](tarball://root/attachments/some-uuid/ticket2217/2217_splitting_field.patch) by abrochard created at 2012-08-18 17:52:00
 
 
 
@@ -336,7 +336,7 @@ Field in b with defining polynomial x^6 - 14*x^4 + 20*x^3 + 49*x^2 -
 archive/issue_comments_014670.json:
 ```json
 {
-    "body": "Attachment\n\nhere is a patch to correct the failing doctest\n\nlet us see if the bot is happy\n\napply 2217_splitting_field.patch\u200b trac_2217_correction.patch\u200b",
+    "body": "Attachment [trac_2217_correction.patch](tarball://root/attachments/some-uuid/ticket2217/trac_2217_correction.patch) by chapoton created at 2013-08-04 19:46:23\n\nhere is a patch to correct the failing doctest\n\nlet us see if the bot is happy\n\napply 2217_splitting_field.patch\u200b trac_2217_correction.patch\u200b",
     "created_at": "2013-08-04T19:46:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2217",
     "type": "issue_comment",
@@ -345,7 +345,7 @@ archive/issue_comments_014670.json:
 }
 ```
 
-Attachment
+Attachment [trac_2217_correction.patch](tarball://root/attachments/some-uuid/ticket2217/trac_2217_correction.patch) by chapoton created at 2013-08-04 19:46:23
 
 here is a patch to correct the failing doctest
 

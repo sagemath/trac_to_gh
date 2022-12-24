@@ -129,7 +129,7 @@ diff -r 69309549b229 notebook/interact.py
 archive/issue_comments_062054.json:
 ```json
 {
-    "body": "Attachment\n\nFOR SAGENB REPOSITORY",
+    "body": "Attachment [trac-7379-interact-table-layout.patch](tarball://root/attachments/some-uuid/ticket7379/trac-7379-interact-table-layout.patch) by jason created at 2010-05-13 07:47:10\n\nFOR SAGENB REPOSITORY",
     "created_at": "2010-05-13T07:47:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7379",
     "type": "issue_comment",
@@ -138,7 +138,7 @@ archive/issue_comments_062054.json:
 }
 ```
 
-Attachment
+Attachment [trac-7379-interact-table-layout.patch](tarball://root/attachments/some-uuid/ticket7379/trac-7379-interact-table-layout.patch) by jason created at 2010-05-13 07:47:10
 
 FOR SAGENB REPOSITORY
 
@@ -149,7 +149,7 @@ FOR SAGENB REPOSITORY
 archive/issue_comments_062055.json:
 ```json
 {
-    "body": "Attachment\n\nFOR SAGE DEVEL REPOSITORY",
+    "body": "Attachment [trac-7379-decorator-defaults.patch](tarball://root/attachments/some-uuid/ticket7379/trac-7379-decorator-defaults.patch) by jason created at 2010-05-13 07:48:51\n\nFOR SAGE DEVEL REPOSITORY",
     "created_at": "2010-05-13T07:48:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7379",
     "type": "issue_comment",
@@ -158,7 +158,7 @@ archive/issue_comments_062055.json:
 }
 ```
 
-Attachment
+Attachment [trac-7379-decorator-defaults.patch](tarball://root/attachments/some-uuid/ticket7379/trac-7379-decorator-defaults.patch) by jason created at 2010-05-13 07:48:51
 
 FOR SAGE DEVEL REPOSITORY
 

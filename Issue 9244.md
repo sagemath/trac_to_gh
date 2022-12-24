@@ -567,7 +567,7 @@ replaces all previous attempts
 archive/issue_comments_086963.json:
 ```json
 {
-    "body": "Attachment\n\nNothing wrong with the code, just my brain, apparently. It should have been\n\n```\nK.<a, b> = NumberField([x^3 - x + 1, x^2 + 26])\n```\n\nwhich has class group `C_6 x C_3`, but I copied and pasted the wrong lines, and the #random flag hid that. I've uploaded a fourth attempt with this correction.\n\nApologies for the complete mess I have been making of this ticket from start to finish.",
+    "body": "Attachment [trac_9244_ver4.patch](tarball://root/attachments/some-uuid/ticket9244/trac_9244_ver4.patch) by davidloeffler created at 2010-06-29 07:52:07\n\nNothing wrong with the code, just my brain, apparently. It should have been\n\n```\nK.<a, b> = NumberField([x^3 - x + 1, x^2 + 26])\n```\n\nwhich has class group `C_6 x C_3`, but I copied and pasted the wrong lines, and the #random flag hid that. I've uploaded a fourth attempt with this correction.\n\nApologies for the complete mess I have been making of this ticket from start to finish.",
     "created_at": "2010-06-29T07:52:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
@@ -576,7 +576,7 @@ archive/issue_comments_086963.json:
 }
 ```
 
-Attachment
+Attachment [trac_9244_ver4.patch](tarball://root/attachments/some-uuid/ticket9244/trac_9244_ver4.patch) by davidloeffler created at 2010-06-29 07:52:07
 
 Nothing wrong with the code, just my brain, apparently. It should have been
 

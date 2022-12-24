@@ -53,7 +53,7 @@ Depends on #6187.
 archive/issue_comments_054609.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6653-no_pdf_links.patch](tarball://root/attachments/some-uuid/ticket6653/trac_6653-no_pdf_links.patch) by mpatel created at 2009-08-11 03:15:28",
     "created_at": "2009-08-11T03:15:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6653",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_054609.json:
 }
 ```
 
-Attachment
+Attachment [trac_6653-no_pdf_links.patch](tarball://root/attachments/some-uuid/ticket6653/trac_6653-no_pdf_links.patch) by mpatel created at 2009-08-11 03:15:28
 
 
 

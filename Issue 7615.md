@@ -98,7 +98,7 @@ Nathann
 archive/issue_comments_065028.json:
 ```json
 {
-    "body": "Attachment\n\nBased on 4.3.alpha1",
+    "body": "Attachment [trac_7615.patch](tarball://root/attachments/some-uuid/ticket7615/trac_7615.patch) by kcrisman created at 2009-12-08 15:46:04\n\nBased on 4.3.alpha1",
     "created_at": "2009-12-08T15:46:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7615",
     "type": "issue_comment",
@@ -107,7 +107,7 @@ archive/issue_comments_065028.json:
 }
 ```
 
-Attachment
+Attachment [trac_7615.patch](tarball://root/attachments/some-uuid/ticket7615/trac_7615.patch) by kcrisman created at 2009-12-08 15:46:04
 
 Based on 4.3.alpha1
 

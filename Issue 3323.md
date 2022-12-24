@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3323
 archive/issue_comments_023036.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3323_extcode.patch](tarball://root/attachments/some-uuid/ticket3323/trac_3323_extcode.patch) by gfurnish created at 2008-05-28 15:49:18",
     "created_at": "2008-05-28T15:49:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3323",
     "type": "issue_comment",
@@ -43,7 +43,7 @@ archive/issue_comments_023036.json:
 }
 ```
 
-Attachment
+Attachment [trac_3323_extcode.patch](tarball://root/attachments/some-uuid/ticket3323/trac_3323_extcode.patch) by gfurnish created at 2008-05-28 15:49:18
 
 
 

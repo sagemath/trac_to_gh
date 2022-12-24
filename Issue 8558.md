@@ -81,7 +81,7 @@ Changing keywords from "gcd, pari, number field" to "gcd, pari, ntl, number fiel
 archive/issue_comments_077425.json:
 ```json
 {
-    "body": "Attachment\n\nThe pari algorithm is not fast enough. I have implemented a modular algorithm using ntl.\n\nThe patch needs doctest and integration in sage (it is, right now, a separate function).\n\nIt adds a new function modular_gcd\n\nTo test it, apply the patch and\n\nfrom sage.rings.polynomial.polynomial_absolute_number_field import modular_gcd\n\nSome timmings: (800 Mhz i386 linux, 1Gb ram)\n\n\n```\nsage: N.<a>=NumberField(x^3 -123)         \nsage: K.<t>=N[]                           \nsage: f=K.random_element(degree=2)        \nsage: g1=K.random_element(degree=15)      \nsage: g2=K.random_element(degree=15)      \nsage: h1=f*g1                             \nsage: h2=f*g2                             \nsage: %time modular_gcd(h1,h2,'pari')     \nCPU times: user 0.30 s, sys: 0.00 s, total: 0.30 s\nWall time: 0.31 s                                 \nt^2 + (-35396/663609*a^2 + 92498/663609*a + 1750733/663609)*t - 1312/663609*a^2 + 3026/221203*a + 66060/221203\nsage: %time modular_gcd(h1,h2)                                                                                \nCPU times: user 0.10 s, sys: 0.00 s, total: 0.10 s                                                            \nWall time: 0.12 s                                                                                             \nt^2 + (-35396/663609*a^2 + 92498/663609*a + 1750733/663609)*t - 1312/663609*a^2 + 3026/221203*a + 66060/221203\nsage: %time modular_gcd(h1,h2,'euclidean')                                                                    \nCPU times: user 11.28 s, sys: 0.05 s, total: 11.33 s                                                          \nWall time: 12.21 s                                                                                            \nt^2 + (-35396/663609*a^2 + 92498/663609*a + 1750733/663609)*t - 1312/663609*a^2 + 3026/221203*a + 66060/221203\n```\n\n\n\n```\nsage: N.<a>=NumberField(x^10 - 123)\nsage: K.<t>=N[]\nsage: f=K.random_element(degree=2)\nsage: g1=K.random_element(degree=15)\nsage: g2=K.random_element(degree=15)\nsage: h1=f*g1\nsage: h2=f*g2\nsage: %time l=modular_gcd(h1,h2,'pari')\nCPU times: user 30.06 s, sys: 0.02 s, total: 30.07 s\nWall time: 32.15 s\nsage: %time l=modular_gcd(h1,h2,'modular')\nCPU times: user 0.43 s, sys: 0.00 s, total: 0.43 s\nWall time: 0.47 s\n```\n",
+    "body": "Attachment [13911.patch](tarball://root/attachments/some-uuid/ticket8558/13911.patch) by lftabera created at 2010-03-27 19:15:04\n\nThe pari algorithm is not fast enough. I have implemented a modular algorithm using ntl.\n\nThe patch needs doctest and integration in sage (it is, right now, a separate function).\n\nIt adds a new function modular_gcd\n\nTo test it, apply the patch and\n\nfrom sage.rings.polynomial.polynomial_absolute_number_field import modular_gcd\n\nSome timmings: (800 Mhz i386 linux, 1Gb ram)\n\n\n```\nsage: N.<a>=NumberField(x^3 -123)         \nsage: K.<t>=N[]                           \nsage: f=K.random_element(degree=2)        \nsage: g1=K.random_element(degree=15)      \nsage: g2=K.random_element(degree=15)      \nsage: h1=f*g1                             \nsage: h2=f*g2                             \nsage: %time modular_gcd(h1,h2,'pari')     \nCPU times: user 0.30 s, sys: 0.00 s, total: 0.30 s\nWall time: 0.31 s                                 \nt^2 + (-35396/663609*a^2 + 92498/663609*a + 1750733/663609)*t - 1312/663609*a^2 + 3026/221203*a + 66060/221203\nsage: %time modular_gcd(h1,h2)                                                                                \nCPU times: user 0.10 s, sys: 0.00 s, total: 0.10 s                                                            \nWall time: 0.12 s                                                                                             \nt^2 + (-35396/663609*a^2 + 92498/663609*a + 1750733/663609)*t - 1312/663609*a^2 + 3026/221203*a + 66060/221203\nsage: %time modular_gcd(h1,h2,'euclidean')                                                                    \nCPU times: user 11.28 s, sys: 0.05 s, total: 11.33 s                                                          \nWall time: 12.21 s                                                                                            \nt^2 + (-35396/663609*a^2 + 92498/663609*a + 1750733/663609)*t - 1312/663609*a^2 + 3026/221203*a + 66060/221203\n```\n\n\n\n```\nsage: N.<a>=NumberField(x^10 - 123)\nsage: K.<t>=N[]\nsage: f=K.random_element(degree=2)\nsage: g1=K.random_element(degree=15)\nsage: g2=K.random_element(degree=15)\nsage: h1=f*g1\nsage: h2=f*g2\nsage: %time l=modular_gcd(h1,h2,'pari')\nCPU times: user 30.06 s, sys: 0.02 s, total: 30.07 s\nWall time: 32.15 s\nsage: %time l=modular_gcd(h1,h2,'modular')\nCPU times: user 0.43 s, sys: 0.00 s, total: 0.43 s\nWall time: 0.47 s\n```\n",
     "created_at": "2010-03-27T19:15:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
@@ -90,7 +90,7 @@ archive/issue_comments_077425.json:
 }
 ```
 
-Attachment
+Attachment [13911.patch](tarball://root/attachments/some-uuid/ticket8558/13911.patch) by lftabera created at 2010-03-27 19:15:04
 
 The pari algorithm is not fast enough. I have implemented a modular algorithm using ntl.
 
@@ -256,7 +256,7 @@ Added the method also for number fields of degree 1 using Flint in this special 
 archive/issue_comments_077430.json:
 ```json
 {
-    "body": "Attachment\n\nNow that #4000 has possitive review, I raise the priority of this one.\n\nUpdated patch to work in 4.5.3\n\nNow, it works also for relative number fields, passing to an absolute representation and performing there the computations. This is not optimal but it is usable.\n\nIf the extension of the field is one, then the gcd of QQ[x] is used wich is faster.",
+    "body": "Attachment [14371.patch](tarball://root/attachments/some-uuid/ticket8558/14371.patch) by lftabera created at 2010-09-14 13:20:27\n\nNow that #4000 has possitive review, I raise the priority of this one.\n\nUpdated patch to work in 4.5.3\n\nNow, it works also for relative number fields, passing to an absolute representation and performing there the computations. This is not optimal but it is usable.\n\nIf the extension of the field is one, then the gcd of QQ[x] is used wich is faster.",
     "created_at": "2010-09-14T13:20:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
@@ -265,7 +265,7 @@ archive/issue_comments_077430.json:
 }
 ```
 
-Attachment
+Attachment [14371.patch](tarball://root/attachments/some-uuid/ticket8558/14371.patch) by lftabera created at 2010-09-14 13:20:27
 
 Now that #4000 has possitive review, I raise the priority of this one.
 
@@ -300,7 +300,7 @@ Changing priority from minor to major.
 archive/issue_comments_077432.json:
 ```json
 {
-    "body": "Attachment\n\nI can confirm that the patch applies fine to 4.6.rc0 and all tests (including long) pass.\n\nThere are some minor problems with the documentation (just punctuation) -- now I am studying the code, since this looks like very useful functionality!",
+    "body": "Attachment [trac-5885.patch](tarball://root/attachments/some-uuid/ticket8558/trac-5885.patch) by cremona created at 2010-10-29 19:37:24\n\nI can confirm that the patch applies fine to 4.6.rc0 and all tests (including long) pass.\n\nThere are some minor problems with the documentation (just punctuation) -- now I am studying the code, since this looks like very useful functionality!",
     "created_at": "2010-10-29T19:37:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
@@ -309,7 +309,7 @@ archive/issue_comments_077432.json:
 }
 ```
 
-Attachment
+Attachment [trac-5885.patch](tarball://root/attachments/some-uuid/ticket8558/trac-5885.patch) by cremona created at 2010-10-29 19:37:24
 
 I can confirm that the patch applies fine to 4.6.rc0 and all tests (including long) pass.
 
@@ -382,7 +382,7 @@ avoid next_prime, better exceptions
 archive/issue_comments_077436.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-8558.patch](tarball://root/attachments/some-uuid/ticket8558/trac-8558.patch) by lftabera created at 2011-03-28 10:46:13",
     "created_at": "2011-03-28T10:46:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
@@ -391,7 +391,7 @@ archive/issue_comments_077436.json:
 }
 ```
 
-Attachment
+Attachment [trac-8558.patch](tarball://root/attachments/some-uuid/ticket8558/trac-8558.patch) by lftabera created at 2011-03-28 10:46:13
 
 
 
@@ -787,7 +787,7 @@ rebase to 5.8.beta2
 archive/issue_comments_077454.json:
 ```json
 {
-    "body": "Attachment\n\nApply: trac-8558.2.patch",
+    "body": "Attachment [trac-8558.2.patch](tarball://root/attachments/some-uuid/ticket8558/trac-8558.2.patch) by lftabera created at 2013-03-03 20:02:49\n\nApply: trac-8558.2.patch",
     "created_at": "2013-03-03T20:02:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
@@ -796,7 +796,7 @@ archive/issue_comments_077454.json:
 }
 ```
 
-Attachment
+Attachment [trac-8558.2.patch](tarball://root/attachments/some-uuid/ticket8558/trac-8558.2.patch) by lftabera created at 2013-03-03 20:02:49
 
 Apply: trac-8558.2.patch
 
@@ -910,7 +910,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_077460.json:
 ```json
 {
-    "body": "Attachment\n\nrebase to 5.13",
+    "body": "Attachment [trac-8558.2.2.patch](tarball://root/attachments/some-uuid/ticket8558/trac-8558.2.2.patch) by lftabera created at 2013-12-20 12:28:14\n\nrebase to 5.13",
     "created_at": "2013-12-20T12:28:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
@@ -919,7 +919,7 @@ archive/issue_comments_077460.json:
 }
 ```
 
-Attachment
+Attachment [trac-8558.2.2.patch](tarball://root/attachments/some-uuid/ticket8558/trac-8558.2.2.patch) by lftabera created at 2013-12-20 12:28:14
 
 rebase to 5.13
 

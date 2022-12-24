@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9920
 archive/issue_comments_098710.json:
 ```json
 {
-    "body": "Attachment\n\nSageNB package. Extracts SageNB to $SAGE_ROOT/devel/ for ease of use.",
+    "body": "Attachment [trac_9920-sagenb-package-extraction.patch](tarball://root/attachments/some-uuid/ticket9920/trac_9920-sagenb-package-extraction.patch) by timdumol created at 2010-09-16 16:57:37\n\nSageNB package. Extracts SageNB to $SAGE_ROOT/devel/ for ease of use.",
     "created_at": "2010-09-16T16:57:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_098710.json:
 }
 ```
 
-Attachment
+Attachment [trac_9920-sagenb-package-extraction.patch](tarball://root/attachments/some-uuid/ticket9920/trac_9920-sagenb-package-extraction.patch) by timdumol created at 2010-09-16 16:57:37
 
 SageNB package. Extracts SageNB to $SAGE_ROOT/devel/ for ease of use.
 
@@ -53,7 +53,7 @@ SageNB package. Extracts SageNB to $SAGE_ROOT/devel/ for ease of use.
 archive/issue_comments_098711.json:
 ```json
 {
-    "body": "Attachment\n\nSage main library. Adds hg_sagenb.",
+    "body": "Attachment [trac_9920-sagelib-hg.patch](tarball://root/attachments/some-uuid/ticket9920/trac_9920-sagelib-hg.patch) by timdumol created at 2010-09-16 16:58:24\n\nSage main library. Adds hg_sagenb.",
     "created_at": "2010-09-16T16:58:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_098711.json:
 }
 ```
 
-Attachment
+Attachment [trac_9920-sagelib-hg.patch](tarball://root/attachments/some-uuid/ticket9920/trac_9920-sagelib-hg.patch) by timdumol created at 2010-09-16 16:58:24
 
 Sage main library. Adds hg_sagenb.
 
@@ -129,7 +129,7 @@ Also, does this set things up so that changes are reflected in the running noteb
 archive/issue_comments_098715.json:
 ```json
 {
-    "body": "Attachment\n\nPuts the \"$SAGE_ROOT/devel/sagenb\" in `develop` mode.",
+    "body": "Attachment [trac_9920-sagenb-package-extraction.2.patch](tarball://root/attachments/some-uuid/ticket9920/trac_9920-sagenb-package-extraction.2.patch) by timdumol created at 2010-09-24 06:57:24\n\nPuts the \"$SAGE_ROOT/devel/sagenb\" in `develop` mode.",
     "created_at": "2010-09-24T06:57:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
@@ -138,7 +138,7 @@ archive/issue_comments_098715.json:
 }
 ```
 
-Attachment
+Attachment [trac_9920-sagenb-package-extraction.2.patch](tarball://root/attachments/some-uuid/ticket9920/trac_9920-sagenb-package-extraction.2.patch) by timdumol created at 2010-09-24 06:57:24
 
 Puts the "$SAGE_ROOT/devel/sagenb" in `develop` mode.
 
@@ -477,7 +477,7 @@ Make `$SAGE_ROOT/devel` on install, if necessary.  Apply on top of package extra
 archive/issue_comments_098732.json:
 ```json
 {
-    "body": "Attachment\n\nI've added a patch that I'm testing now.",
+    "body": "Attachment [trac_9920-devel_dir_fix.patch](tarball://root/attachments/some-uuid/ticket9920/trac_9920-devel_dir_fix.patch) by mpatel created at 2010-10-07 11:38:11\n\nI've added a patch that I'm testing now.",
     "created_at": "2010-10-07T11:38:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
@@ -486,7 +486,7 @@ archive/issue_comments_098732.json:
 }
 ```
 
-Attachment
+Attachment [trac_9920-devel_dir_fix.patch](tarball://root/attachments/some-uuid/ticket9920/trac_9920-devel_dir_fix.patch) by mpatel created at 2010-10-07 11:38:11
 
 I've added a patch that I'm testing now.
 

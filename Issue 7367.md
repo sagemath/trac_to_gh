@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7367
 archive/issue_comments_061737.json:
 ```json
 {
-    "body": "Attachment\n\nAdd SageNB modules to reference manual.  Apply to sage repo.",
+    "body": "Attachment [trac_7367-sagenb_manual.patch](tarball://root/attachments/some-uuid/ticket7367/trac_7367-sagenb_manual.patch) by mpatel created at 2009-11-01 14:01:34\n\nAdd SageNB modules to reference manual.  Apply to sage repo.",
     "created_at": "2009-11-01T14:01:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7367",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_061737.json:
 }
 ```
 
-Attachment
+Attachment [trac_7367-sagenb_manual.patch](tarball://root/attachments/some-uuid/ticket7367/trac_7367-sagenb_manual.patch) by mpatel created at 2009-11-01 14:01:34
 
 Add SageNB modules to reference manual.  Apply to sage repo.
 
@@ -174,7 +174,7 @@ archive/issue_comments_061743.json:
 archive/issue_comments_061744.json:
 ```json
 {
-    "body": "Attachment\n\nLess confusing subheading.  Really skip interface modules.  Apply only this patch to sage repo.",
+    "body": "Attachment [trac_7367-sagenb_manual_v2.patch](tarball://root/attachments/some-uuid/ticket7367/trac_7367-sagenb_manual_v2.patch) by mpatel created at 2009-11-04 04:46:02\n\nLess confusing subheading.  Really skip interface modules.  Apply only this patch to sage repo.",
     "created_at": "2009-11-04T04:46:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7367",
     "type": "issue_comment",
@@ -183,7 +183,7 @@ archive/issue_comments_061744.json:
 }
 ```
 
-Attachment
+Attachment [trac_7367-sagenb_manual_v2.patch](tarball://root/attachments/some-uuid/ticket7367/trac_7367-sagenb_manual_v2.patch) by mpatel created at 2009-11-04 04:46:02
 
 Less confusing subheading.  Really skip interface modules.  Apply only this patch to sage repo.
 

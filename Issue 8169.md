@@ -118,7 +118,7 @@ updated version
 archive/issue_comments_071884.json:
 ```json
 {
-    "body": "Attachment\n\nI fixed the segfaulting regularity check, it works for me now. Updated spkg is here:\n[http://www.stp.dias.ie/~vbraun/Sage/spkg/TOPCOM-0.16.2.p1.spkg](http://www.stp.dias.ie/~vbraun/Sage/spkg/TOPCOM-0.16.2.p1.spkg)\n\nAlso, doctests now all pass in the updated triangulation.py",
+    "body": "Attachment [triangulation.2.py](tarball://root/attachments/some-uuid/ticket8169/triangulation.2.py) by vbraun created at 2010-06-05 20:04:42\n\nI fixed the segfaulting regularity check, it works for me now. Updated spkg is here:\n[http://www.stp.dias.ie/~vbraun/Sage/spkg/TOPCOM-0.16.2.p1.spkg](http://www.stp.dias.ie/~vbraun/Sage/spkg/TOPCOM-0.16.2.p1.spkg)\n\nAlso, doctests now all pass in the updated triangulation.py",
     "created_at": "2010-06-05T20:04:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
@@ -127,7 +127,7 @@ archive/issue_comments_071884.json:
 }
 ```
 
-Attachment
+Attachment [triangulation.2.py](tarball://root/attachments/some-uuid/ticket8169/triangulation.2.py) by vbraun created at 2010-06-05 20:04:42
 
 I fixed the segfaulting regularity check, it works for me now. Updated spkg is here:
 [http://www.stp.dias.ie/~vbraun/Sage/spkg/TOPCOM-0.16.2.p1.spkg](http://www.stp.dias.ie/~vbraun/Sage/spkg/TOPCOM-0.16.2.p1.spkg)
@@ -159,7 +159,7 @@ updated version
 archive/issue_comments_071886.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated patch for timeout issue",
+    "body": "Attachment [triangulation.4.py](tarball://root/attachments/some-uuid/ticket8169/triangulation.4.py) by vbraun created at 2010-08-09 19:38:14\n\nUpdated patch for timeout issue",
     "created_at": "2010-08-09T19:38:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
@@ -168,7 +168,7 @@ archive/issue_comments_071886.json:
 }
 ```
 
-Attachment
+Attachment [triangulation.4.py](tarball://root/attachments/some-uuid/ticket8169/triangulation.4.py) by vbraun created at 2010-08-09 19:38:14
 
 Updated patch for timeout issue
 
@@ -738,7 +738,7 @@ I'll work on it later today.
 archive/issue_comments_071909.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated patch",
+    "body": "Attachment [trac_8169_triangulate_using_TOPCOM.patch](tarball://root/attachments/some-uuid/ticket8169/trac_8169_triangulate_using_TOPCOM.patch) by vbraun created at 2010-09-12 20:30:47\n\nUpdated patch",
     "created_at": "2010-09-12T20:30:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
@@ -747,7 +747,7 @@ archive/issue_comments_071909.json:
 }
 ```
 
-Attachment
+Attachment [trac_8169_triangulate_using_TOPCOM.patch](tarball://root/attachments/some-uuid/ticket8169/trac_8169_triangulate_using_TOPCOM.patch) by vbraun created at 2010-09-12 20:30:47
 
 Updated patch
 
@@ -794,7 +794,7 @@ Changing status from needs_info to needs_work.
 archive/issue_comments_071912.json:
 ```json
 {
-    "body": "Attachment\n\nI've dealt with 3. and 4. in comment 15, and 6. in comment 16. Now generally tuples instead of lists are returned, and a new `class Point` is added which has methods for affine, projective, or reduced (with linearities removed) coordinates. This should also fix Marshall's problems.\n\nNow `PointConfiguration`/`Triangulation` have a Parent/Element relationship. In particular, the `PointConfiguration` is unique and immutable. The `restrict_to_...` interface for restricting the admissible triangulations has been slightly changed, and now returns a **new** `PointConfiguration`. I think that also fits better with the general Sage philosophy.",
+    "body": "Attachment [triangulation.py](tarball://root/attachments/some-uuid/ticket8169/triangulation.py) by vbraun created at 2010-09-12 20:41:48\n\nI've dealt with 3. and 4. in comment 15, and 6. in comment 16. Now generally tuples instead of lists are returned, and a new `class Point` is added which has methods for affine, projective, or reduced (with linearities removed) coordinates. This should also fix Marshall's problems.\n\nNow `PointConfiguration`/`Triangulation` have a Parent/Element relationship. In particular, the `PointConfiguration` is unique and immutable. The `restrict_to_...` interface for restricting the admissible triangulations has been slightly changed, and now returns a **new** `PointConfiguration`. I think that also fits better with the general Sage philosophy.",
     "created_at": "2010-09-12T20:41:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
@@ -803,7 +803,7 @@ archive/issue_comments_071912.json:
 }
 ```
 
-Attachment
+Attachment [triangulation.py](tarball://root/attachments/some-uuid/ticket8169/triangulation.py) by vbraun created at 2010-09-12 20:41:48
 
 I've dealt with 3. and 4. in comment 15, and 6. in comment 16. Now generally tuples instead of lists are returned, and a new `class Point` is added which has methods for affine, projective, or reduced (with linearities removed) coordinates. This should also fix Marshall's problems.
 

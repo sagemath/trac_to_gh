@@ -127,7 +127,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6665
 archive/issue_comments_054703.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6665_zero_plethysm_jb.patch](tarball://root/attachments/some-uuid/ticket6665/trac_6665_zero_plethysm_jb.patch) by jbandlow created at 2010-05-06 15:39:35",
     "created_at": "2010-05-06T15:39:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6665",
     "type": "issue_comment",
@@ -136,7 +136,7 @@ archive/issue_comments_054703.json:
 }
 ```
 
-Attachment
+Attachment [trac_6665_zero_plethysm_jb.patch](tarball://root/attachments/some-uuid/ticket6665/trac_6665_zero_plethysm_jb.patch) by jbandlow created at 2010-05-06 15:39:35
 
 
 

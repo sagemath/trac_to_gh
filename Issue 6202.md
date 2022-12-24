@@ -224,7 +224,7 @@ It looks like it wasn't added that long ago, but I'm actually surprised it has b
 archive/issue_comments_049551.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6202-bitset-testcase.patch](tarball://root/attachments/some-uuid/ticket6202/6202-bitset-testcase.patch) by robertwb created at 2009-06-07 00:08:04",
     "created_at": "2009-06-07T00:08:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6202",
     "type": "issue_comment",
@@ -233,7 +233,7 @@ archive/issue_comments_049551.json:
 }
 ```
 
-Attachment
+Attachment [6202-bitset-testcase.patch](tarball://root/attachments/some-uuid/ticket6202/6202-bitset-testcase.patch) by robertwb created at 2009-06-07 00:08:04
 
 
 
@@ -493,7 +493,7 @@ apply only this patch
 archive/issue_comments_049559.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6202-bitset-testcase-new.patch](tarball://root/attachments/some-uuid/ticket6202/6202-bitset-testcase-new.patch) by robertwb created at 2009-06-10 08:39:59",
     "created_at": "2009-06-10T08:39:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6202",
     "type": "issue_comment",
@@ -502,7 +502,7 @@ archive/issue_comments_049559.json:
 }
 ```
 
-Attachment
+Attachment [6202-bitset-testcase-new.patch](tarball://root/attachments/some-uuid/ticket6202/6202-bitset-testcase-new.patch) by robertwb created at 2009-06-10 08:39:59
 
 
 

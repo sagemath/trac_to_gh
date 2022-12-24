@@ -228,7 +228,7 @@ Keyboard support for Chrome 2 & Safari 4 on Windows and Chromium 3 on Linux.
 archive/issue_comments_029177.json:
 ```json
 {
-    "body": "Attachment\n\nModified keys_capture.html that formats key information for keyboard.py.",
+    "body": "Attachment [keys_capture_v2.html](tarball://root/attachments/some-uuid/ticket4046/keys_capture_v2.html) by mpatel created at 2009-08-14 04:52:32\n\nModified keys_capture.html that formats key information for keyboard.py.",
     "created_at": "2009-08-14T04:52:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4046",
     "type": "issue_comment",
@@ -237,7 +237,7 @@ archive/issue_comments_029177.json:
 }
 ```
 
-Attachment
+Attachment [keys_capture_v2.html](tarball://root/attachments/some-uuid/ticket4046/keys_capture_v2.html) by mpatel created at 2009-08-14 04:52:32
 
 Modified keys_capture.html that formats key information for keyboard.py.
 

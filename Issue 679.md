@@ -104,7 +104,7 @@ This also fixes the segfault hang bug and the keyboard interrupt functionality o
 archive/issue_comments_003521.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_679.patch](tarball://root/attachments/some-uuid/ticket679/trac_679.patch) by gfurnish created at 2008-03-20 23:05:48",
     "created_at": "2008-03-20T23:05:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/679",
     "type": "issue_comment",
@@ -113,7 +113,7 @@ archive/issue_comments_003521.json:
 }
 ```
 
-Attachment
+Attachment [trac_679.patch](tarball://root/attachments/some-uuid/ticket679/trac_679.patch) by gfurnish created at 2008-03-20 23:05:48
 
 
 
@@ -233,7 +233,7 @@ Michael
 archive/issue_comments_003526.json:
 ```json
 {
-    "body": "Attachment\n\nFix for plot.py bug",
+    "body": "Attachment [trac_679n2.patch](tarball://root/attachments/some-uuid/ticket679/trac_679n2.patch) by gfurnish created at 2008-03-21 00:55:11\n\nFix for plot.py bug",
     "created_at": "2008-03-21T00:55:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/679",
     "type": "issue_comment",
@@ -242,7 +242,7 @@ archive/issue_comments_003526.json:
 }
 ```
 
-Attachment
+Attachment [trac_679n2.patch](tarball://root/attachments/some-uuid/ticket679/trac_679n2.patch) by gfurnish created at 2008-03-21 00:55:11
 
 Fix for plot.py bug
 
@@ -348,7 +348,7 @@ The following tests failed:
 archive/issue_comments_003529.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch trac_679-case-3.patch fixes the above issue.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_679-case-3.patch](tarball://root/attachments/some-uuid/ticket679/trac_679-case-3.patch) by mabshoff created at 2008-03-21 12:34:21\n\nThe patch trac_679-case-3.patch fixes the above issue.\n\nCheers,\n\nMichael",
     "created_at": "2008-03-21T12:34:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/679",
     "type": "issue_comment",
@@ -357,7 +357,7 @@ archive/issue_comments_003529.json:
 }
 ```
 
-Attachment
+Attachment [trac_679-case-3.patch](tarball://root/attachments/some-uuid/ticket679/trac_679-case-3.patch) by mabshoff created at 2008-03-21 12:34:21
 
 The patch trac_679-case-3.patch fixes the above issue.
 

@@ -179,7 +179,7 @@ Because the bundle contained many irrelevant patches I tried to provide clean pa
 archive/issue_comments_011352.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_1793_laurent.patch](tarball://root/attachments/some-uuid/ticket1793/trac_1793_laurent.patch) by malb created at 2008-01-20 16:47:19",
     "created_at": "2008-01-20T16:47:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1793",
     "type": "issue_comment",
@@ -188,7 +188,7 @@ archive/issue_comments_011352.json:
 }
 ```
 
-Attachment
+Attachment [trac_1793_laurent.patch](tarball://root/attachments/some-uuid/ticket1793/trac_1793_laurent.patch) by malb created at 2008-01-20 16:47:19
 
 
 
@@ -255,7 +255,7 @@ ncalexan: malb: let's took 1793.
 archive/issue_comments_011355.json:
 ```json
 {
-    "body": "Attachment\n\npatch removes remark about index of regularity",
+    "body": "Attachment [trac_1793_review.patch](tarball://root/attachments/some-uuid/ticket1793/trac_1793_review.patch) by malb created at 2008-02-14 23:27:13\n\npatch removes remark about index of regularity",
     "created_at": "2008-02-14T23:27:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1793",
     "type": "issue_comment",
@@ -264,7 +264,7 @@ archive/issue_comments_011355.json:
 }
 ```
 
-Attachment
+Attachment [trac_1793_review.patch](tarball://root/attachments/some-uuid/ticket1793/trac_1793_review.patch) by malb created at 2008-02-14 23:27:13
 
 patch removes remark about index of regularity
 

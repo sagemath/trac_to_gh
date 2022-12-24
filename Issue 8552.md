@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8552
 archive/issue_comments_077342.json:
 ```json
 {
-    "body": "Attachment\n\nclean up unnecessary whitespace in latex.py",
+    "body": "Attachment [trac_8552_whitespace.patch](tarball://root/attachments/some-uuid/ticket8552/trac_8552_whitespace.patch) by ddrake created at 2010-03-23 13:54:54\n\nclean up unnecessary whitespace in latex.py",
     "created_at": "2010-03-23T13:54:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8552",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_077342.json:
 }
 ```
 
-Attachment
+Attachment [trac_8552_whitespace.patch](tarball://root/attachments/some-uuid/ticket8552/trac_8552_whitespace.patch) by ddrake created at 2010-03-23 13:54:54
 
 clean up unnecessary whitespace in latex.py
 
@@ -89,7 +89,7 @@ Changing status from new to needs_review.
 archive/issue_comments_077345.json:
 ```json
 {
-    "body": "Attachment\n\nThese patches depend on the \"v2\" patch at #8486.\n         \nPlease look this patch over. I think I've tested all the execution paths and have everything working, but I only tested it on one system, so it needs some review and testing.\n\nA design decision that needs to be addressed: it's easiest to just do `subprocess.call()`, which waits for the command to finish; there are a few places where the `os.system` call ended with `&` to put the command in the background. I can reproduce that behavior with the subprocess module, but it's not as convenient, since I have to spawn the process and poll and so on. I can't detect much of a pattern or necessity to those places that possibly put the command in the background; is it okay if we just eliminate that option?\n\nAnother issue: the viewer commands from `misc.viewer` on Linux all return strings with a space in them: `'sage-native-execute xdg-open'`, which does not play nicely with subprocess; when you put that string into its call list, it tries to execute a single command with a space in it, named \"sage-native-execute xdg-open\" and this does not work well. It's easy enough to snag the \"xdg-open\" part, but if we eventually are using subprocess everywhere, we should switch the viewer commands to returning lists of strings.",
+    "body": "Attachment [trac_8552.patch](tarball://root/attachments/some-uuid/ticket8552/trac_8552.patch) by ddrake created at 2010-03-23 14:12:20\n\nThese patches depend on the \"v2\" patch at #8486.\n         \nPlease look this patch over. I think I've tested all the execution paths and have everything working, but I only tested it on one system, so it needs some review and testing.\n\nA design decision that needs to be addressed: it's easiest to just do `subprocess.call()`, which waits for the command to finish; there are a few places where the `os.system` call ended with `&` to put the command in the background. I can reproduce that behavior with the subprocess module, but it's not as convenient, since I have to spawn the process and poll and so on. I can't detect much of a pattern or necessity to those places that possibly put the command in the background; is it okay if we just eliminate that option?\n\nAnother issue: the viewer commands from `misc.viewer` on Linux all return strings with a space in them: `'sage-native-execute xdg-open'`, which does not play nicely with subprocess; when you put that string into its call list, it tries to execute a single command with a space in it, named \"sage-native-execute xdg-open\" and this does not work well. It's easy enough to snag the \"xdg-open\" part, but if we eventually are using subprocess everywhere, we should switch the viewer commands to returning lists of strings.",
     "created_at": "2010-03-23T14:12:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8552",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_077345.json:
 }
 ```
 
-Attachment
+Attachment [trac_8552.patch](tarball://root/attachments/some-uuid/ticket8552/trac_8552.patch) by ddrake created at 2010-03-23 14:12:20
 
 These patches depend on the "v2" patch at #8486.
          
@@ -221,7 +221,7 @@ I'm attaching two new patches here.  One is a referee patch, present for review 
 archive/issue_comments_077350.json:
 ```json
 {
-    "body": "Attachment\n\nfor review only, do not apply (diff between Dan's two patches and the all-in-one patch)",
+    "body": "Attachment [trac_8552-ref.patch](tarball://root/attachments/some-uuid/ticket8552/trac_8552-ref.patch) by jhpalmieri created at 2011-03-25 19:37:45\n\nfor review only, do not apply (diff between Dan's two patches and the all-in-one patch)",
     "created_at": "2011-03-25T19:37:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8552",
     "type": "issue_comment",
@@ -230,7 +230,7 @@ archive/issue_comments_077350.json:
 }
 ```
 
-Attachment
+Attachment [trac_8552-ref.patch](tarball://root/attachments/some-uuid/ticket8552/trac_8552-ref.patch) by jhpalmieri created at 2011-03-25 19:37:45
 
 for review only, do not apply (diff between Dan's two patches and the all-in-one patch)
 
@@ -259,7 +259,7 @@ apply only this patch
 archive/issue_comments_077352.json:
 ```json
 {
-    "body": "Attachment\n\nThanks for finishing this, John. Sorry I left it unfinished. Your changes look good.",
+    "body": "Attachment [trac_8552-all-in-one.patch](tarball://root/attachments/some-uuid/ticket8552/trac_8552-all-in-one.patch) by ddrake created at 2011-03-26 07:55:07\n\nThanks for finishing this, John. Sorry I left it unfinished. Your changes look good.",
     "created_at": "2011-03-26T07:55:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8552",
     "type": "issue_comment",
@@ -268,7 +268,7 @@ archive/issue_comments_077352.json:
 }
 ```
 
-Attachment
+Attachment [trac_8552-all-in-one.patch](tarball://root/attachments/some-uuid/ticket8552/trac_8552-all-in-one.patch) by ddrake created at 2011-03-26 07:55:07
 
 Thanks for finishing this, John. Sorry I left it unfinished. Your changes look good.
 

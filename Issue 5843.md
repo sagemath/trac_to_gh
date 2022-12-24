@@ -116,7 +116,7 @@ Possible correct implementation:
 archive/issue_comments_045943.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5843_CachedMethodCaller.patch](tarball://root/attachments/some-uuid/ticket5843/5843_CachedMethodCaller.patch) by wjp created at 2010-01-18 22:52:38",
     "created_at": "2010-01-18T22:52:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5843",
     "type": "issue_comment",
@@ -125,7 +125,7 @@ archive/issue_comments_045943.json:
 }
 ```
 
-Attachment
+Attachment [5843_CachedMethodCaller.patch](tarball://root/attachments/some-uuid/ticket5843/5843_CachedMethodCaller.patch) by wjp created at 2010-01-18 22:52:38
 
 
 
@@ -242,7 +242,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_045948.json:
 ```json
 {
-    "body": "Attachment\n\nGood point. I replaced the doctest patch with one that adds a more direct test for this ticket.",
+    "body": "Attachment [5843_doctests.patch](tarball://root/attachments/some-uuid/ticket5843/5843_doctests.patch) by wjp created at 2010-01-20 19:06:51\n\nGood point. I replaced the doctest patch with one that adds a more direct test for this ticket.",
     "created_at": "2010-01-20T19:06:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5843",
     "type": "issue_comment",
@@ -251,7 +251,7 @@ archive/issue_comments_045948.json:
 }
 ```
 
-Attachment
+Attachment [5843_doctests.patch](tarball://root/attachments/some-uuid/ticket5843/5843_doctests.patch) by wjp created at 2010-01-20 19:06:51
 
 Good point. I replaced the doctest patch with one that adds a more direct test for this ticket.
 
@@ -298,7 +298,7 @@ Nice. I'm giving this a positive review, but I've attached a little patch that t
 archive/issue_comments_045951.json:
 ```json
 {
-    "body": "Attachment\n\nAdds a little bit more documentation to CachedMethod.",
+    "body": "Attachment [trac_5843-doctests-ref.patch](tarball://root/attachments/some-uuid/ticket5843/trac_5843-doctests-ref.patch) by timdumol created at 2010-01-20 20:18:31\n\nAdds a little bit more documentation to CachedMethod.",
     "created_at": "2010-01-20T20:18:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5843",
     "type": "issue_comment",
@@ -307,7 +307,7 @@ archive/issue_comments_045951.json:
 }
 ```
 
-Attachment
+Attachment [trac_5843-doctests-ref.patch](tarball://root/attachments/some-uuid/ticket5843/trac_5843-doctests-ref.patch) by timdumol created at 2010-01-20 20:18:31
 
 Adds a little bit more documentation to CachedMethod.
 
@@ -318,7 +318,7 @@ Adds a little bit more documentation to CachedMethod.
 archive/issue_comments_045952.json:
 ```json
 {
-    "body": "Attachment\n\nChanges the doctest to use `print` instead of `sleep`",
+    "body": "Attachment [trac_5843-doctests-ref.2.patch](tarball://root/attachments/some-uuid/ticket5843/trac_5843-doctests-ref.2.patch) by timdumol created at 2010-01-20 21:54:07\n\nChanges the doctest to use `print` instead of `sleep`",
     "created_at": "2010-01-20T21:54:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5843",
     "type": "issue_comment",
@@ -327,7 +327,7 @@ archive/issue_comments_045952.json:
 }
 ```
 
-Attachment
+Attachment [trac_5843-doctests-ref.2.patch](tarball://root/attachments/some-uuid/ticket5843/trac_5843-doctests-ref.2.patch) by timdumol created at 2010-01-20 21:54:07
 
 Changes the doctest to use `print` instead of `sleep`
 

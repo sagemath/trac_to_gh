@@ -91,7 +91,7 @@ The above is all present in the default sage-3.4.2.rc0.
 archive/issue_comments_047374.json:
 ```json
 {
-    "body": "Attachment\n\nI ran a fulldoctest cycle with this patch applied and found yet another serious bug in matrix multiplication (not caused by this patch, but uncovered by it).  E.g., in vanilla released 3.4.1, some multiplies of cyclotomic matrices just go boom!\n\n\n```\nwstein@sage:~$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: K.<zeta6>=CyclotomicField(6); matrix(K,1,2) * matrix(K,2,[0, 1, 0, -2*zeta6, 0, 0, 1, -2*zeta6 + 1])\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n| Sage Version 3.4.1, Release Date: 2009-04-21                       |\n| Type notebook() for the GUI, and license() for information.        |\n/scratch/wstein/sage/temp/sage.math.washington.edu/15110/_scratch_wstein_sage_init_sage_0.py in <module>()\n\n/home/wstein/sage/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.Matrix.__mul__ (sage/structure/element.c:11263)()\n\n/home/wstein/sage/local/lib/python2.5/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:5396)()\n\n/home/wstein/sage/local/lib/python2.5/site-packages/sage/matrix/action.so in sage.matrix.action.MatrixMatrixAction._call_ (sage/matrix/action.c:2485)()\n\n/home/wstein/sage/local/lib/python2.5/site-packages/sage/matrix/matrix_cyclo_dense.so in sage.matrix.matrix_cyclo_dense.Matrix_cyclo_dense._matrix_times_matrix_ (sage/matrix/matrix_cyclo_dense.cpp:5674)()\n\n/home/wstein/sage/local/lib/python2.5/site-packages/sage/matrix/matrix_integer_dense.so in sage.matrix.matrix_integer_dense._lift_crt (sage/matrix/matrix_integer_dense.c:32188)()\n\nIndexError: list index out of range\n```\n",
+    "body": "Attachment [trac_5974.patch](tarball://root/attachments/some-uuid/ticket5974/trac_5974.patch) by was created at 2009-05-04 13:52:41\n\nI ran a fulldoctest cycle with this patch applied and found yet another serious bug in matrix multiplication (not caused by this patch, but uncovered by it).  E.g., in vanilla released 3.4.1, some multiplies of cyclotomic matrices just go boom!\n\n\n```\nwstein@sage:~$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: K.<zeta6>=CyclotomicField(6); matrix(K,1,2) * matrix(K,2,[0, 1, 0, -2*zeta6, 0, 0, 1, -2*zeta6 + 1])\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n| Sage Version 3.4.1, Release Date: 2009-04-21                       |\n| Type notebook() for the GUI, and license() for information.        |\n/scratch/wstein/sage/temp/sage.math.washington.edu/15110/_scratch_wstein_sage_init_sage_0.py in <module>()\n\n/home/wstein/sage/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.Matrix.__mul__ (sage/structure/element.c:11263)()\n\n/home/wstein/sage/local/lib/python2.5/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:5396)()\n\n/home/wstein/sage/local/lib/python2.5/site-packages/sage/matrix/action.so in sage.matrix.action.MatrixMatrixAction._call_ (sage/matrix/action.c:2485)()\n\n/home/wstein/sage/local/lib/python2.5/site-packages/sage/matrix/matrix_cyclo_dense.so in sage.matrix.matrix_cyclo_dense.Matrix_cyclo_dense._matrix_times_matrix_ (sage/matrix/matrix_cyclo_dense.cpp:5674)()\n\n/home/wstein/sage/local/lib/python2.5/site-packages/sage/matrix/matrix_integer_dense.so in sage.matrix.matrix_integer_dense._lift_crt (sage/matrix/matrix_integer_dense.c:32188)()\n\nIndexError: list index out of range\n```\n",
     "created_at": "2009-05-04T13:52:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5974",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_047374.json:
 }
 ```
 
-Attachment
+Attachment [trac_5974.patch](tarball://root/attachments/some-uuid/ticket5974/trac_5974.patch) by was created at 2009-05-04 13:52:41
 
 I ran a fulldoctest cycle with this patch applied and found yet another serious bug in matrix multiplication (not caused by this patch, but uncovered by it).  E.g., in vanilla released 3.4.1, some multiplies of cyclotomic matrices just go boom!
 
@@ -137,7 +137,7 @@ IndexError: list index out of range
 archive/issue_comments_047375.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5974-part3.patch](tarball://root/attachments/some-uuid/ticket5974/trac_5974-part3.patch) by was created at 2009-05-04 15:15:22",
     "created_at": "2009-05-04T15:15:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5974",
     "type": "issue_comment",
@@ -146,7 +146,7 @@ archive/issue_comments_047375.json:
 }
 ```
 
-Attachment
+Attachment [trac_5974-part3.patch](tarball://root/attachments/some-uuid/ticket5974/trac_5974-part3.patch) by was created at 2009-05-04 15:15:22
 
 
 
@@ -187,7 +187,7 @@ Otherwise, looks good.  All tests pass on sage.math.
 archive/issue_comments_047377.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5974-part4.patch](tarball://root/attachments/some-uuid/ticket5974/trac_5974-part4.patch) by was created at 2009-05-07 21:18:53",
     "created_at": "2009-05-07T21:18:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5974",
     "type": "issue_comment",
@@ -196,7 +196,7 @@ archive/issue_comments_047377.json:
 }
 ```
 
-Attachment
+Attachment [trac_5974-part4.patch](tarball://root/attachments/some-uuid/ticket5974/trac_5974-part4.patch) by was created at 2009-05-07 21:18:53
 
 
 

@@ -68,7 +68,7 @@ derivative method for FractionFieldElement
 archive/issue_comments_017372.json:
 ```json
 {
-    "body": "Attachment\n\nThis appears to work as advertised.  I have one request: the docstrings for derivative() and _derivative() refer to \"the derivative of this polynomial\", which is bad since these elements are (most of the time) not polynomials.  This should be replaced with \"rational function\" or something similar.",
+    "body": "Attachment [sage_fraction_field_derivative.patch](tarball://root/attachments/some-uuid/ticket2545/sage_fraction_field_derivative.patch) by AlexGhitza created at 2008-03-16 14:34:11\n\nThis appears to work as advertised.  I have one request: the docstrings for derivative() and _derivative() refer to \"the derivative of this polynomial\", which is bad since these elements are (most of the time) not polynomials.  This should be replaced with \"rational function\" or something similar.",
     "created_at": "2008-03-16T14:34:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2545",
     "type": "issue_comment",
@@ -77,7 +77,7 @@ archive/issue_comments_017372.json:
 }
 ```
 
-Attachment
+Attachment [sage_fraction_field_derivative.patch](tarball://root/attachments/some-uuid/ticket2545/sage_fraction_field_derivative.patch) by AlexGhitza created at 2008-03-16 14:34:11
 
 This appears to work as advertised.  I have one request: the docstrings for derivative() and _derivative() refer to "the derivative of this polynomial", which is bad since these elements are (most of the time) not polynomials.  This should be replaced with "rational function" or something similar.
 
@@ -106,7 +106,7 @@ new patch with requested doc changes
 archive/issue_comments_017374.json:
 ```json
 {
-    "body": "Attachment\n\nYou're right, I copied the text from the docstring for polynomials, and forgot to change it. :)\n\nattachment:2545-sage_fraction_field_derivative-1.patch replaces \"polynomial\" with \"rational function\" as suggested.",
+    "body": "Attachment [2545-sage_fraction_field_derivative-1.patch](tarball://root/attachments/some-uuid/ticket2545/2545-sage_fraction_field_derivative-1.patch) by burcin created at 2008-03-16 14:51:03\n\nYou're right, I copied the text from the docstring for polynomials, and forgot to change it. :)\n\nattachment:2545-sage_fraction_field_derivative-1.patch replaces \"polynomial\" with \"rational function\" as suggested.",
     "created_at": "2008-03-16T14:51:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2545",
     "type": "issue_comment",
@@ -115,7 +115,7 @@ archive/issue_comments_017374.json:
 }
 ```
 
-Attachment
+Attachment [2545-sage_fraction_field_derivative-1.patch](tarball://root/attachments/some-uuid/ticket2545/2545-sage_fraction_field_derivative-1.patch) by burcin created at 2008-03-16 14:51:03
 
 You're right, I copied the text from the docstring for polynomials, and forgot to change it. :)
 

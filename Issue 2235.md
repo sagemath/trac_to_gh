@@ -69,7 +69,7 @@ Just need to add a doctest that this works now.
 archive/issue_comments_014802.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2235_long_time.patch](tarball://root/attachments/some-uuid/ticket2235/2235_long_time.patch) by jdemeyer created at 2013-03-13 10:37:56",
     "created_at": "2013-03-13T10:37:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2235",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_014802.json:
 }
 ```
 
-Attachment
+Attachment [2235_long_time.patch](tarball://root/attachments/some-uuid/ticket2235/2235_long_time.patch) by jdemeyer created at 2013-03-13 10:37:56
 
 
 

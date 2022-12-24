@@ -51,7 +51,7 @@ Changing status from new to needs_review.
 archive/issue_comments_076506.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8488.patch](tarball://root/attachments/some-uuid/ticket8488/trac_8488.patch) by was created at 2010-03-10 13:22:48",
     "created_at": "2010-03-10T13:22:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8488",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_076506.json:
 }
 ```
 
-Attachment
+Attachment [trac_8488.patch](tarball://root/attachments/some-uuid/ticket8488/trac_8488.patch) by was created at 2010-03-10 13:22:48
 
 
 
@@ -344,7 +344,7 @@ I'm attaching a new patch which takes care of the namespace issue you mentioned.
 archive/issue_comments_076520.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of previous patch",
+    "body": "Attachment [trac-8488-sage_wrap_decorator.patch](tarball://root/attachments/some-uuid/ticket8488/trac-8488-sage_wrap_decorator.patch) by jason created at 2010-03-11 05:31:43\n\napply on top of previous patch",
     "created_at": "2010-03-11T05:31:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8488",
     "type": "issue_comment",
@@ -353,7 +353,7 @@ archive/issue_comments_076520.json:
 }
 ```
 
-Attachment
+Attachment [trac-8488-sage_wrap_decorator.patch](tarball://root/attachments/some-uuid/ticket8488/trac-8488-sage_wrap_decorator.patch) by jason created at 2010-03-11 05:31:43
 
 apply on top of previous patch
 
@@ -514,7 +514,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_076526.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8488-part3.patch](tarball://root/attachments/some-uuid/ticket8488/trac_8488-part3.patch) by was created at 2010-04-18 00:33:15",
     "created_at": "2010-04-18T00:33:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8488",
     "type": "issue_comment",
@@ -523,7 +523,7 @@ archive/issue_comments_076526.json:
 }
 ```
 
-Attachment
+Attachment [trac_8488-part3.patch](tarball://root/attachments/some-uuid/ticket8488/trac_8488-part3.patch) by was created at 2010-04-18 00:33:15
 
 
 
@@ -673,7 +673,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_076533.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8488-part4.patch](tarball://root/attachments/some-uuid/ticket8488/trac_8488-part4.patch) by jhpalmieri created at 2010-04-19 00:07:17",
     "created_at": "2010-04-19T00:07:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8488",
     "type": "issue_comment",
@@ -682,7 +682,7 @@ archive/issue_comments_076533.json:
 }
 ```
 
-Attachment
+Attachment [trac_8488-part4.patch](tarball://root/attachments/some-uuid/ticket8488/trac_8488-part4.patch) by jhpalmieri created at 2010-04-19 00:07:17
 
 
 

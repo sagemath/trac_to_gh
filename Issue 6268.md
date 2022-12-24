@@ -110,7 +110,7 @@ It's possible to work around it, I think, with a patch like the attached, but I'
 archive/issue_comments_050067.json:
 ```json
 {
-    "body": "Attachment\n\nThe rebased patch for the ticket\n\nhttp://trac.sagemath.org/sage_trac/ticket/5711\n\nwill resolve this issue as an un-intended consequence.",
+    "body": "Attachment [trac_6268.patch](tarball://root/attachments/some-uuid/ticket6268/trac_6268.patch) by gmhossain created at 2009-06-12 22:35:18\n\nThe rebased patch for the ticket\n\nhttp://trac.sagemath.org/sage_trac/ticket/5711\n\nwill resolve this issue as an un-intended consequence.",
     "created_at": "2009-06-12T22:35:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6268",
     "type": "issue_comment",
@@ -119,7 +119,7 @@ archive/issue_comments_050067.json:
 }
 ```
 
-Attachment
+Attachment [trac_6268.patch](tarball://root/attachments/some-uuid/ticket6268/trac_6268.patch) by gmhossain created at 2009-06-12 22:35:18
 
 The rebased patch for the ticket
 
@@ -206,7 +206,7 @@ Changing component from misc to symbolics.
 archive/issue_comments_050072.json:
 ```json
 {
-    "body": "Attachment\n\nattachment:trac_6268-py_print_latex.patch fixes the reported problem. Apply only this patch.",
+    "body": "Attachment [trac_6268-py_print_latex.patch](tarball://root/attachments/some-uuid/ticket6268/trac_6268-py_print_latex.patch) by burcin created at 2009-06-14 22:17:42\n\nattachment:trac_6268-py_print_latex.patch fixes the reported problem. Apply only this patch.",
     "created_at": "2009-06-14T22:17:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6268",
     "type": "issue_comment",
@@ -215,7 +215,7 @@ archive/issue_comments_050072.json:
 }
 ```
 
-Attachment
+Attachment [trac_6268-py_print_latex.patch](tarball://root/attachments/some-uuid/ticket6268/trac_6268-py_print_latex.patch) by burcin created at 2009-06-14 22:17:42
 
 attachment:trac_6268-py_print_latex.patch fixes the reported problem. Apply only this patch.
 

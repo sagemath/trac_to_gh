@@ -56,7 +56,7 @@ This should be an easy fix.
 archive/issue_comments_031393.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4289-ell-curve-constructor.patch](tarball://root/attachments/some-uuid/ticket4289/4289-ell-curve-constructor.patch) by robertwb created at 2008-10-14 21:42:16",
     "created_at": "2008-10-14T21:42:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4289",
     "type": "issue_comment",
@@ -65,7 +65,7 @@ archive/issue_comments_031393.json:
 }
 ```
 
-Attachment
+Attachment [4289-ell-curve-constructor.patch](tarball://root/attachments/some-uuid/ticket4289/4289-ell-curve-constructor.patch) by robertwb created at 2008-10-14 21:42:16
 
 
 

@@ -53,7 +53,7 @@ I think it would just be better to wait until #2770 and #4884 are merged since t
 archive/issue_comments_037144.json:
 ```json
 {
-    "body": "Attachment\n\nUpdate patch is posted.  Start reviewing!",
+    "body": "Attachment [trac_4898.patch](tarball://root/attachments/some-uuid/ticket4898/trac_4898.patch) by abergeron created at 2009-01-24 05:02:25\n\nUpdate patch is posted.  Start reviewing!",
     "created_at": "2009-01-24T05:02:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4898",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_037144.json:
 }
 ```
 
-Attachment
+Attachment [trac_4898.patch](tarball://root/attachments/some-uuid/ticket4898/trac_4898.patch) by abergeron created at 2009-01-24 05:02:25
 
 Update patch is posted.  Start reviewing!
 
@@ -258,7 +258,7 @@ I'm excited for this to get in!
 archive/issue_comments_037153.json:
 ```json
 {
-    "body": "Attachment\n\nBased on 4.1.2.rc1.alpha3",
+    "body": "Attachment [trac_4898-contour-labels-rebase.2.patch](tarball://root/attachments/some-uuid/ticket4898/trac_4898-contour-labels-rebase.2.patch) by kcrisman created at 2009-10-08 02:39:07\n\nBased on 4.1.2.rc1.alpha3",
     "created_at": "2009-10-08T02:39:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4898",
     "type": "issue_comment",
@@ -267,7 +267,7 @@ archive/issue_comments_037153.json:
 }
 ```
 
-Attachment
+Attachment [trac_4898-contour-labels-rebase.2.patch](tarball://root/attachments/some-uuid/ticket4898/trac_4898-contour-labels-rebase.2.patch) by kcrisman created at 2009-10-08 02:39:07
 
 Based on 4.1.2.rc1.alpha3
 
@@ -316,7 +316,7 @@ Anyway, there was a one-character (in fact, one space) thing that prevented it f
 archive/issue_comments_037156.json:
 ```json
 {
-    "body": "Attachment\n\nBased on 4.2 - apply only this!",
+    "body": "Attachment [trac_4898-contour-labels-rebase.patch](tarball://root/attachments/some-uuid/ticket4898/trac_4898-contour-labels-rebase.patch) by kcrisman created at 2009-11-05 19:55:56\n\nBased on 4.2 - apply only this!",
     "created_at": "2009-11-05T19:55:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4898",
     "type": "issue_comment",
@@ -325,7 +325,7 @@ archive/issue_comments_037156.json:
 }
 ```
 
-Attachment
+Attachment [trac_4898-contour-labels-rebase.patch](tarball://root/attachments/some-uuid/ticket4898/trac_4898-contour-labels-rebase.patch) by kcrisman created at 2009-11-05 19:55:56
 
 Based on 4.2 - apply only this!
 
@@ -372,7 +372,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_037159.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of previous patch",
+    "body": "Attachment [trac-4898-reviewer.patch](tarball://root/attachments/some-uuid/ticket4898/trac-4898-reviewer.patch) by jason created at 2009-11-10 17:16:00\n\napply on top of previous patch",
     "created_at": "2009-11-10T17:16:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4898",
     "type": "issue_comment",
@@ -381,7 +381,7 @@ archive/issue_comments_037159.json:
 }
 ```
 
-Attachment
+Attachment [trac-4898-reviewer.patch](tarball://root/attachments/some-uuid/ticket4898/trac-4898-reviewer.patch) by jason created at 2009-11-10 17:16:00
 
 apply on top of previous patch
 

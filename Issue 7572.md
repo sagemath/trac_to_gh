@@ -51,7 +51,7 @@ Changing status from new to needs_review.
 archive/issue_comments_064450.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch is for the GLPK SPKG.",
+    "body": "Attachment [glpk_sage_free.patch](tarball://root/attachments/some-uuid/ticket7572/glpk_sage_free.patch) by malb created at 2009-12-01 15:54:16\n\nThe attached patch is for the GLPK SPKG.",
     "created_at": "2009-12-01T15:54:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7572",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_064450.json:
 }
 ```
 
-Attachment
+Attachment [glpk_sage_free.patch](tarball://root/attachments/some-uuid/ticket7572/glpk_sage_free.patch) by malb created at 2009-12-01 15:54:16
 
 The attached patch is for the GLPK SPKG.
 

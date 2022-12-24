@@ -72,7 +72,7 @@ Instead of `return w`, you need `return Permutation(w)`
 archive/issue_comments_054255.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review! Here are some timings:\n\nFor the permutation [6,7,8,9,4,2,3,1,5], on my machine, the timing went from 70.9 \u00b5s per loop to 24.7 \u00b5s per loop. (This is all \"%timeit p.inverse()\".\n\nFor [19, 5, 13, 8, 7, 15, 9, 10, 16, 3, 12, 6, 2, 20, 18, 11, 14, 4, 17, 1], it went from \n263 \u00b5s per loop to 40 \u00b5s per loop.\n\nFor [14, 17, 1, 24, 16, 34, 19, 9, 20, 18, 36, 5, 22, 2, 27, 40, 37, 15, 3, 35, 10, 25, 21, 8, 13, 26, 12, 32, 23, 38, 11, 4, 6, 39, 31, 28, 29, 7, 30, 33], it went from 923 to 64.8. So it does look like this patch turns quadratic behavior into linear behavior.\n\nThis is Anders' first contribution to Sage, by the way.",
+    "body": "Attachment [new-inverse.patch](tarball://root/attachments/some-uuid/ticket6621/new-inverse.patch) by ddrake created at 2009-07-25 18:17:27\n\nPositive review! Here are some timings:\n\nFor the permutation [6,7,8,9,4,2,3,1,5], on my machine, the timing went from 70.9 \u00b5s per loop to 24.7 \u00b5s per loop. (This is all \"%timeit p.inverse()\".\n\nFor [19, 5, 13, 8, 7, 15, 9, 10, 16, 3, 12, 6, 2, 20, 18, 11, 14, 4, 17, 1], it went from \n263 \u00b5s per loop to 40 \u00b5s per loop.\n\nFor [14, 17, 1, 24, 16, 34, 19, 9, 20, 18, 36, 5, 22, 2, 27, 40, 37, 15, 3, 35, 10, 25, 21, 8, 13, 26, 12, 32, 23, 38, 11, 4, 6, 39, 31, 28, 29, 7, 30, 33], it went from 923 to 64.8. So it does look like this patch turns quadratic behavior into linear behavior.\n\nThis is Anders' first contribution to Sage, by the way.",
     "created_at": "2009-07-25T18:17:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6621",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_054255.json:
 }
 ```
 
-Attachment
+Attachment [new-inverse.patch](tarball://root/attachments/some-uuid/ticket6621/new-inverse.patch) by ddrake created at 2009-07-25 18:17:27
 
 Positive review! Here are some timings:
 

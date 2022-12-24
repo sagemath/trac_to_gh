@@ -538,7 +538,7 @@ Oh, and so I don't forget -- we also seemed to get a consensus that people wante
 archive/issue_comments_049521.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6199-fast-int-mul.patch](tarball://root/attachments/some-uuid/ticket6199/6199-fast-int-mul.patch) by robertwb created at 2010-01-24 08:26:04",
     "created_at": "2010-01-24T08:26:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6199",
     "type": "issue_comment",
@@ -547,7 +547,7 @@ archive/issue_comments_049521.json:
 }
 ```
 
-Attachment
+Attachment [6199-fast-int-mul.patch](tarball://root/attachments/some-uuid/ticket6199/6199-fast-int-mul.patch) by robertwb created at 2010-01-24 08:26:04
 
 
 
@@ -646,7 +646,7 @@ oops, I tested with this fix but forgot to check it in
 archive/issue_comments_049527.json:
 ```json
 {
-    "body": "Attachment\n\nI applied this and got roughly a 15% speedup for mpmath's test suite, with everything seemingly working, so +1 from me.",
+    "body": "Attachment [6199-fast-mul-fix.patch](tarball://root/attachments/some-uuid/ticket6199/6199-fast-mul-fix.patch) by fredrik.johansson created at 2010-02-01 01:37:27\n\nI applied this and got roughly a 15% speedup for mpmath's test suite, with everything seemingly working, so +1 from me.",
     "created_at": "2010-02-01T01:37:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6199",
     "type": "issue_comment",
@@ -655,7 +655,7 @@ archive/issue_comments_049527.json:
 }
 ```
 
-Attachment
+Attachment [6199-fast-mul-fix.patch](tarball://root/attachments/some-uuid/ticket6199/6199-fast-mul-fix.patch) by fredrik.johansson created at 2010-02-01 01:37:27
 
 I applied this and got roughly a 15% speedup for mpmath's test suite, with everything seemingly working, so +1 from me.
 
@@ -684,7 +684,7 @@ apply only this patch
 archive/issue_comments_049529.json:
 ```json
 {
-    "body": "Attachment\n\nAttached a new patch which cleans up subtraction and note about corner case.",
+    "body": "Attachment [6199-fast-int-mul-all.patch](tarball://root/attachments/some-uuid/ticket6199/6199-fast-int-mul-all.patch) by robertwb created at 2010-02-01 21:14:06\n\nAttached a new patch which cleans up subtraction and note about corner case.",
     "created_at": "2010-02-01T21:14:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6199",
     "type": "issue_comment",
@@ -693,7 +693,7 @@ archive/issue_comments_049529.json:
 }
 ```
 
-Attachment
+Attachment [6199-fast-int-mul-all.patch](tarball://root/attachments/some-uuid/ticket6199/6199-fast-int-mul-all.patch) by robertwb created at 2010-02-01 21:14:06
 
 Attached a new patch which cleans up subtraction and note about corner case.
 

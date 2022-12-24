@@ -51,7 +51,7 @@ Patch by Nicolas Thiery, review by Mike Hansen
 archive/issue_comments_036401.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4802.patch](tarball://root/attachments/some-uuid/ticket4802/trac_4802.patch) by mhansen created at 2008-12-15 06:51:09",
     "created_at": "2008-12-15T06:51:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4802",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_036401.json:
 }
 ```
 
-Attachment
+Attachment [trac_4802.patch](tarball://root/attachments/some-uuid/ticket4802/trac_4802.patch) by mhansen created at 2008-12-15 06:51:09
 
 
 

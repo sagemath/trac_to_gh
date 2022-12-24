@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7638
 archive/issue_comments_065279.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [7638-bigmatrix-fix.patch](tarball://root/attachments/some-uuid/ticket7638/7638-bigmatrix-fix.patch) by dagss created at 2009-12-09 14:04:03",
     "created_at": "2009-12-09T14:04:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7638",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_065279.json:
 }
 ```
 
-Attachment
+Attachment [7638-bigmatrix-fix.patch](tarball://root/attachments/some-uuid/ticket7638/7638-bigmatrix-fix.patch) by dagss created at 2009-12-09 14:04:03
 
 
 
@@ -107,7 +107,7 @@ I had to rebase the patch for sage-4.3.alpha1; rebased patch attached.
 archive/issue_comments_065283.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7638-rebase.patch](tarball://root/attachments/some-uuid/ticket7638/trac_7638-rebase.patch) by mhansen created at 2009-12-10 14:24:23",
     "created_at": "2009-12-10T14:24:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7638",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_065283.json:
 }
 ```
 
-Attachment
+Attachment [trac_7638-rebase.patch](tarball://root/attachments/some-uuid/ticket7638/trac_7638-rebase.patch) by mhansen created at 2009-12-10 14:24:23
 
 
 

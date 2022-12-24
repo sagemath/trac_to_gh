@@ -86,7 +86,7 @@ http://sage.math.washington.edu/home/jkantor/patches/inline_fortran_fix.patch
 archive/issue_comments_019234.json:
 ```json
 {
-    "body": "Attachment\n\njkantor's patch",
+    "body": "Attachment [inline_fortran_fix.patch](tarball://root/attachments/some-uuid/ticket2802/inline_fortran_fix.patch) by mabshoff created at 2008-04-08 09:00:05\n\njkantor's patch",
     "created_at": "2008-04-08T09:00:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2802",
     "type": "issue_comment",
@@ -95,7 +95,7 @@ archive/issue_comments_019234.json:
 }
 ```
 
-Attachment
+Attachment [inline_fortran_fix.patch](tarball://root/attachments/some-uuid/ticket2802/inline_fortran_fix.patch) by mabshoff created at 2008-04-08 09:00:05
 
 jkantor's patch
 

@@ -126,7 +126,7 @@ Changing status from new to needs_work.
 archive/issue_comments_093371.json:
 ```json
 {
-    "body": "Attachment\n\nattachment:trac_9634-symbolic_binomial.patch replaces the top level `binomial()` function with the one defined in `sage.functions.other`. This version can handle symbolic input, as opposed to the previous one from `sage.rings.arith`.\n\nThis still needs work, since the files `sage/functions/other.py` and `sage/rings/arith.py` don't pass doctests yet. We need to improve the speed of numerical approximation using the `gamma` trick from `sage.rings.arith.binomial` and change `sage.symbolic.pynac.py_binomial()` to handle large integers.",
+    "body": "Attachment [trac_9634-symbolic_binomial.patch](tarball://root/attachments/some-uuid/ticket9634/trac_9634-symbolic_binomial.patch) by burcin created at 2010-10-11 15:20:12\n\nattachment:trac_9634-symbolic_binomial.patch replaces the top level `binomial()` function with the one defined in `sage.functions.other`. This version can handle symbolic input, as opposed to the previous one from `sage.rings.arith`.\n\nThis still needs work, since the files `sage/functions/other.py` and `sage/rings/arith.py` don't pass doctests yet. We need to improve the speed of numerical approximation using the `gamma` trick from `sage.rings.arith.binomial` and change `sage.symbolic.pynac.py_binomial()` to handle large integers.",
     "created_at": "2010-10-11T15:20:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9634",
     "type": "issue_comment",
@@ -135,7 +135,7 @@ archive/issue_comments_093371.json:
 }
 ```
 
-Attachment
+Attachment [trac_9634-symbolic_binomial.patch](tarball://root/attachments/some-uuid/ticket9634/trac_9634-symbolic_binomial.patch) by burcin created at 2010-10-11 15:20:12
 
 attachment:trac_9634-symbolic_binomial.patch replaces the top level `binomial()` function with the one defined in `sage.functions.other`. This version can handle symbolic input, as opposed to the previous one from `sage.rings.arith`.
 
@@ -193,7 +193,7 @@ This very bug trips up many potential users.  Ping.   Let's fix it!!
 archive/issue_comments_093374.json:
 ```json
 {
-    "body": "Attachment\n\nI uploaded a new patch that fixes doctests as well. This meant reimplementing the `_eval_()` and `_evalf_()` methods to override those defined in pynac.\n\nPatchbot, apply only trac_9634-symbolic_binomial.take2.patch.",
+    "body": "Attachment [trac_9634-symbolic_binomial.take2.patch](tarball://root/attachments/some-uuid/ticket9634/trac_9634-symbolic_binomial.take2.patch) by burcin created at 2013-07-01 06:23:27\n\nI uploaded a new patch that fixes doctests as well. This meant reimplementing the `_eval_()` and `_evalf_()` methods to override those defined in pynac.\n\nPatchbot, apply only trac_9634-symbolic_binomial.take2.patch.",
     "created_at": "2013-07-01T06:23:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9634",
     "type": "issue_comment",
@@ -202,7 +202,7 @@ archive/issue_comments_093374.json:
 }
 ```
 
-Attachment
+Attachment [trac_9634-symbolic_binomial.take2.patch](tarball://root/attachments/some-uuid/ticket9634/trac_9634-symbolic_binomial.take2.patch) by burcin created at 2013-07-01 06:23:27
 
 I uploaded a new patch that fixes doctests as well. This meant reimplementing the `_eval_()` and `_evalf_()` methods to override those defined in pynac.
 

@@ -57,7 +57,7 @@ Mercurial bundle
 archive/issue_comments_002025.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [c_lib_in_tree_and_setup_enhancements.hg](tarball://root/attachments/some-uuid/ticket411/c_lib_in_tree_and_setup_enhancements.hg) by dmharvey created at 2007-08-28 18:49:39",
     "created_at": "2007-08-28T18:49:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/411",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_002025.json:
 }
 ```
 
-Attachment
+Attachment [c_lib_in_tree_and_setup_enhancements.hg](tarball://root/attachments/some-uuid/ticket411/c_lib_in_tree_and_setup_enhancements.hg) by dmharvey created at 2007-08-28 18:49:39
 
 
 
@@ -93,7 +93,7 @@ Conversion to using SCons and integrated c_lib into tree
 archive/issue_comments_002027.json:
 ```json
 {
-    "body": "Attachment\n\nIgnore the attachment c_lib_in_tree_and_setup_enhancements.hg\n\nThe attachment c_lib_into_main.patch lacks some setup_enhancements of the first patch, but it is converted to scons.\n\nThe scons-0.97.spkg from the experimental repository is needed for this patch.",
+    "body": "Attachment [c_lib_into_main.patch](tarball://root/attachments/some-uuid/ticket411/c_lib_into_main.patch) by jbmohler created at 2007-08-28 18:52:46\n\nIgnore the attachment c_lib_in_tree_and_setup_enhancements.hg\n\nThe attachment c_lib_into_main.patch lacks some setup_enhancements of the first patch, but it is converted to scons.\n\nThe scons-0.97.spkg from the experimental repository is needed for this patch.",
     "created_at": "2007-08-28T18:52:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/411",
     "type": "issue_comment",
@@ -102,7 +102,7 @@ archive/issue_comments_002027.json:
 }
 ```
 
-Attachment
+Attachment [c_lib_into_main.patch](tarball://root/attachments/some-uuid/ticket411/c_lib_into_main.patch) by jbmohler created at 2007-08-28 18:52:46
 
 Ignore the attachment c_lib_in_tree_and_setup_enhancements.hg
 
@@ -171,7 +171,7 @@ Resolution: fixed
 archive/issue_comments_002031.json:
 ```json
 {
-    "body": "Attachment\n\nI incorporated this in.  There were some weird issues with mpz_get_pyintlong not being defined, which I fixed\nby adding back some files to ext.  Fix this correctly in the future.",
+    "body": "Attachment [strdup.patch](tarball://root/attachments/some-uuid/ticket411/strdup.patch) by was created at 2007-08-30 00:58:04\n\nI incorporated this in.  There were some weird issues with mpz_get_pyintlong not being defined, which I fixed\nby adding back some files to ext.  Fix this correctly in the future.",
     "created_at": "2007-08-30T00:58:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/411",
     "type": "issue_comment",
@@ -180,7 +180,7 @@ archive/issue_comments_002031.json:
 }
 ```
 
-Attachment
+Attachment [strdup.patch](tarball://root/attachments/some-uuid/ticket411/strdup.patch) by was created at 2007-08-30 00:58:04
 
 I incorporated this in.  There were some weird issues with mpz_get_pyintlong not being defined, which I fixed
 by adding back some files to ext.  Fix this correctly in the future.

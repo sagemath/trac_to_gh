@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6536
 archive/issue_comments_053281.json:
 ```json
 {
-    "body": "Attachment\n\nHere's a two-line fix.",
+    "body": "Attachment [trac_6536-order_wrong_init.patch](tarball://root/attachments/some-uuid/ticket6536/trac_6536-order_wrong_init.patch) by davidloeffler created at 2009-07-15 07:40:25\n\nHere's a two-line fix.",
     "created_at": "2009-07-15T07:40:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6536",
     "type": "issue_comment",
@@ -43,7 +43,7 @@ archive/issue_comments_053281.json:
 }
 ```
 
-Attachment
+Attachment [trac_6536-order_wrong_init.patch](tarball://root/attachments/some-uuid/ticket6536/trac_6536-order_wrong_init.patch) by davidloeffler created at 2009-07-15 07:40:25
 
 Here's a two-line fix.
 

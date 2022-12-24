@@ -199,7 +199,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_049391.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review.  Patch applies, doctests pass.\n\nNote that this ticket has two separate bug reports; the first bug was already fixed (presumably, as nthiery promised, by the category patches).  trac-6186.patch fixes the second.",
+    "body": "Attachment [trac-6186.patch](tarball://root/attachments/some-uuid/ticket6186/trac-6186.patch) by cwitty created at 2010-07-11 00:40:55\n\nPositive review.  Patch applies, doctests pass.\n\nNote that this ticket has two separate bug reports; the first bug was already fixed (presumably, as nthiery promised, by the category patches).  trac-6186.patch fixes the second.",
     "created_at": "2010-07-11T00:40:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6186",
     "type": "issue_comment",
@@ -208,7 +208,7 @@ archive/issue_comments_049391.json:
 }
 ```
 
-Attachment
+Attachment [trac-6186.patch](tarball://root/attachments/some-uuid/ticket6186/trac-6186.patch) by cwitty created at 2010-07-11 00:40:55
 
 Positive review.  Patch applies, doctests pass.
 

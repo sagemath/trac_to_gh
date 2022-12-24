@@ -149,7 +149,7 @@ Changing status from new to assigned.
 archive/issue_comments_007530.json:
 ```json
 {
-    "body": "Attachment\n\nI tried deleting this file, and all indications are good.  Here's a patch that kills it.",
+    "body": "Attachment [nuke_mpl_wrapper.patch](tarball://root/attachments/some-uuid/ticket1213/nuke_mpl_wrapper.patch) by jwmerrill created at 2008-08-31 04:50:34\n\nI tried deleting this file, and all indications are good.  Here's a patch that kills it.",
     "created_at": "2008-08-31T04:50:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1213",
     "type": "issue_comment",
@@ -158,7 +158,7 @@ archive/issue_comments_007530.json:
 }
 ```
 
-Attachment
+Attachment [nuke_mpl_wrapper.patch](tarball://root/attachments/some-uuid/ticket1213/nuke_mpl_wrapper.patch) by jwmerrill created at 2008-08-31 04:50:34
 
 I tried deleting this file, and all indications are good.  Here's a patch that kills it.
 
@@ -191,7 +191,7 @@ Michael
 archive/issue_comments_007532.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [nuke_mpl_cmdline_option.patch](tarball://root/attachments/some-uuid/ticket1213/nuke_mpl_cmdline_option.patch) by jwmerrill created at 2008-08-31 05:09:11",
     "created_at": "2008-08-31T05:09:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1213",
     "type": "issue_comment",
@@ -200,7 +200,7 @@ archive/issue_comments_007532.json:
 }
 ```
 
-Attachment
+Attachment [nuke_mpl_cmdline_option.patch](tarball://root/attachments/some-uuid/ticket1213/nuke_mpl_cmdline_option.patch) by jwmerrill created at 2008-08-31 05:09:11
 
 
 

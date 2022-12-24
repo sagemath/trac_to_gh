@@ -81,7 +81,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9948
 archive/issue_comments_099187.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9948_padic_pari_gp.patch](tarball://root/attachments/some-uuid/ticket9948/9948_padic_pari_gp.patch) by jdemeyer created at 2011-11-11 21:20:50",
     "created_at": "2011-11-11T21:20:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9947",
     "type": "issue_comment",
@@ -90,7 +90,7 @@ archive/issue_comments_099187.json:
 }
 ```
 
-Attachment
+Attachment [9948_padic_pari_gp.patch](tarball://root/attachments/some-uuid/ticket9948/9948_padic_pari_gp.patch) by jdemeyer created at 2011-11-11 21:20:50
 
 
 

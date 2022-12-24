@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5850
 archive/issue_comments_046159.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sagetutfr.patch](tarball://root/attachments/some-uuid/ticket5850/sagetutfr.patch) by mmezzarobba created at 2009-04-27 21:04:26",
     "created_at": "2009-04-27T21:04:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5850",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_046159.json:
 }
 ```
 
-Attachment
+Attachment [sagetutfr.patch](tarball://root/attachments/some-uuid/ticket5850/sagetutfr.patch) by mmezzarobba created at 2009-04-27 21:04:26
 
 
 
@@ -156,7 +156,7 @@ patch rebased against 3.4.2.alpha0; \QQ fixes; doctest fixes
 archive/issue_comments_046165.json:
 ```json
 {
-    "body": "Attachment\n\nOops, I just found that the tutorial doesn't pass doctests...mostly because the doctest framework doesn't speak French, so if you have \"`# n\u00e9cessite le paquet facultatif database_gap`\", it doesn't understand that you mean \"`optional - database_gap`\". :)\n\nYou just need the magic (English) words, so you can still include explanation in French. Things like this work fine:\n\n```\nsome code # sortie plus ou moins al\u00e9atoire (random)\n\nmore code # n\u00e9cessite le paquet facultatif database_gap (optional)\n```\n\n\nI added the necessary English words to the doctests, and also added \"...\" to a Maxima doctest (at the end of tour_algebra.rst) that had random low order bits.",
+    "body": "Attachment [sagetutfr-updated.patch](tarball://root/attachments/some-uuid/ticket5850/sagetutfr-updated.patch) by ddrake created at 2009-04-30 07:42:13\n\nOops, I just found that the tutorial doesn't pass doctests...mostly because the doctest framework doesn't speak French, so if you have \"`# n\u00e9cessite le paquet facultatif database_gap`\", it doesn't understand that you mean \"`optional - database_gap`\". :)\n\nYou just need the magic (English) words, so you can still include explanation in French. Things like this work fine:\n\n```\nsome code # sortie plus ou moins al\u00e9atoire (random)\n\nmore code # n\u00e9cessite le paquet facultatif database_gap (optional)\n```\n\n\nI added the necessary English words to the doctests, and also added \"...\" to a Maxima doctest (at the end of tour_algebra.rst) that had random low order bits.",
     "created_at": "2009-04-30T07:42:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5850",
     "type": "issue_comment",
@@ -165,7 +165,7 @@ archive/issue_comments_046165.json:
 }
 ```
 
-Attachment
+Attachment [sagetutfr-updated.patch](tarball://root/attachments/some-uuid/ticket5850/sagetutfr-updated.patch) by ddrake created at 2009-04-30 07:42:13
 
 Oops, I just found that the tutorial doesn't pass doctests...mostly because the doctest framework doesn't speak French, so if you have "`# nécessite le paquet facultatif database_gap`", it doesn't understand that you mean "`optional - database_gap`". :)
 
@@ -187,7 +187,7 @@ I added the necessary English words to the doctests, and also added "..." to a M
 archive/issue_comments_046166.json:
 ```json
 {
-    "body": "Attachment\n\n(some typo fixes)",
+    "body": "Attachment [sagetutfr-review-nb.patch](tarball://root/attachments/some-uuid/ticket5850/sagetutfr-review-nb.patch) by nborie created at 2009-06-21 23:20:10\n\n(some typo fixes)",
     "created_at": "2009-06-21T23:20:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5850",
     "type": "issue_comment",
@@ -196,7 +196,7 @@ archive/issue_comments_046166.json:
 }
 ```
 
-Attachment
+Attachment [sagetutfr-review-nb.patch](tarball://root/attachments/some-uuid/ticket5850/sagetutfr-review-nb.patch) by nborie created at 2009-06-21 23:20:10
 
 (some typo fixes)
 

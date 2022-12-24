@@ -98,7 +98,7 @@ Good move saliola! I was going to ask what were the objectives before getting th
 archive/issue_comments_035028.json:
 ```json
 {
-    "body": "Attachment\n\npatch against 3.2",
+    "body": "Attachment [sage_words-4653-final.patch](tarball://root/attachments/some-uuid/ticket4653/sage_words-4653-final.patch) by saliola created at 2008-11-29 23:56:09\n\npatch against 3.2",
     "created_at": "2008-11-29T23:56:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4653",
     "type": "issue_comment",
@@ -107,7 +107,7 @@ archive/issue_comments_035028.json:
 }
 ```
 
-Attachment
+Attachment [sage_words-4653-final.patch](tarball://root/attachments/some-uuid/ticket4653/sage_words-4653-final.patch) by saliola created at 2008-11-29 23:56:09
 
 patch against 3.2
 
@@ -595,7 +595,7 @@ slabbe
 archive/issue_comments_035043.json:
 ```json
 {
-    "body": "Attachment\n\nrebased version of the previous patch (so apply only this patch)",
+    "body": "Attachment [trac_4653.patch](tarball://root/attachments/some-uuid/ticket4653/trac_4653.patch) by saliola created at 2008-12-15 22:57:25\n\nrebased version of the previous patch (so apply only this patch)",
     "created_at": "2008-12-15T22:57:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4653",
     "type": "issue_comment",
@@ -604,7 +604,7 @@ archive/issue_comments_035043.json:
 }
 ```
 
-Attachment
+Attachment [trac_4653.patch](tarball://root/attachments/some-uuid/ticket4653/trac_4653.patch) by saliola created at 2008-12-15 22:57:25
 
 rebased version of the previous patch (so apply only this patch)
 
@@ -722,7 +722,7 @@ Michael
 archive/issue_comments_035048.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review on words-import-fix.patch",
+    "body": "Attachment [words-import-fix.patch](tarball://root/attachments/some-uuid/ticket4653/words-import-fix.patch) by mabshoff created at 2008-12-17 16:56:56\n\nPositive review on words-import-fix.patch",
     "created_at": "2008-12-17T16:56:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4653",
     "type": "issue_comment",
@@ -731,7 +731,7 @@ archive/issue_comments_035048.json:
 }
 ```
 
-Attachment
+Attachment [words-import-fix.patch](tarball://root/attachments/some-uuid/ticket4653/words-import-fix.patch) by mabshoff created at 2008-12-17 16:56:56
 
 Positive review on words-import-fix.patch
 

@@ -157,7 +157,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_082826.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8977_rational_diagonal_form_fix.patch](tarball://root/attachments/some-uuid/ticket8977/trac_8977_rational_diagonal_form_fix.patch) by gdrama created at 2011-02-05 15:30:58",
     "created_at": "2011-02-05T15:30:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8977",
     "type": "issue_comment",
@@ -166,7 +166,7 @@ archive/issue_comments_082826.json:
 }
 ```
 
-Attachment
+Attachment [trac_8977_rational_diagonal_form_fix.patch](tarball://root/attachments/some-uuid/ticket8977/trac_8977_rational_diagonal_form_fix.patch) by gdrama created at 2011-02-05 15:30:58
 
 
 
@@ -311,7 +311,7 @@ I already clicked "positive_review", and then noticed that the first line of the
 archive/issue_comments_082832.json:
 ```json
 {
-    "body": "Attachment\n\nadded ticket description to patch",
+    "body": "Attachment [trac_8977_rational_diagonal_form_fix2.patch](tarball://root/attachments/some-uuid/ticket8977/trac_8977_rational_diagonal_form_fix2.patch) by mstreng created at 2011-02-07 20:51:24\n\nadded ticket description to patch",
     "created_at": "2011-02-07T20:51:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8977",
     "type": "issue_comment",
@@ -320,7 +320,7 @@ archive/issue_comments_082832.json:
 }
 ```
 
-Attachment
+Attachment [trac_8977_rational_diagonal_form_fix2.patch](tarball://root/attachments/some-uuid/ticket8977/trac_8977_rational_diagonal_form_fix2.patch) by mstreng created at 2011-02-07 20:51:24
 
 added ticket description to patch
 

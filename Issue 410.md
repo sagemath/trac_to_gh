@@ -85,7 +85,7 @@ Changing component from packages to documentation.
 archive/issue_comments_002021.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [cpp_nuances.patch](tarball://root/attachments/some-uuid/ticket410/cpp_nuances.patch) by mabshoff created at 2007-08-24 12:58:36",
     "created_at": "2007-08-24T12:58:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/410",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_002021.json:
 }
 ```
 
-Attachment
+Attachment [cpp_nuances.patch](tarball://root/attachments/some-uuid/ticket410/cpp_nuances.patch) by mabshoff created at 2007-08-24 12:58:36
 
 
 

@@ -61,7 +61,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4529
 archive/issue_comments_033628.json:
 ```json
 {
-    "body": "Attachment\n\n\"Wrong\" sage plot with log scale",
+    "body": "Attachment [sage0.png](tarball://root/attachments/some-uuid/ticket4529/sage0.png) by ronanpaixao created at 2008-11-15 18:59:49\n\n\"Wrong\" sage plot with log scale",
     "created_at": "2008-11-15T18:59:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
@@ -70,7 +70,7 @@ archive/issue_comments_033628.json:
 }
 ```
 
-Attachment
+Attachment [sage0.png](tarball://root/attachments/some-uuid/ticket4529/sage0.png) by ronanpaixao created at 2008-11-15 18:59:49
 
 "Wrong" sage plot with log scale
 
@@ -381,7 +381,7 @@ plot in logarithmic scale.
 archive/issue_comments_033643.json:
 ```json
 {
-    "body": "Attachment\n\n[attachment:logplots.py] has a new class `LogGraphics` that I implemented and have been using for the past few months. Integrating it with Graphics seemed quite a painful process, so I had to go this direction and make my own class. Currently, it handles many *but not all* of the arguments that the `Graphics` class supports. In addition it uses `matplotlib.plt` to do the log plot; otherwise I ran into all sorts of problems with matplotlib (like the ones mentioned in earlier comments).\n\nIn engineering, we often need logarithmic plots and the logarithmic plots sometimes is of the form that the x-axis *decreases* as we go towards the right (for example if we plot decreasing probabilities on the x-axis). This `LogGraphics` takes this into account and makes sure that if a list of x-axis points with decreasing values along the higher indices of the list, then it plots the graph with a decreasing x-axis.",
+    "body": "Attachment [logplots.py](tarball://root/attachments/some-uuid/ticket4529/logplots.py) by ppurka created at 2012-02-08 12:50:17\n\n[attachment:logplots.py] has a new class `LogGraphics` that I implemented and have been using for the past few months. Integrating it with Graphics seemed quite a painful process, so I had to go this direction and make my own class. Currently, it handles many *but not all* of the arguments that the `Graphics` class supports. In addition it uses `matplotlib.plt` to do the log plot; otherwise I ran into all sorts of problems with matplotlib (like the ones mentioned in earlier comments).\n\nIn engineering, we often need logarithmic plots and the logarithmic plots sometimes is of the form that the x-axis *decreases* as we go towards the right (for example if we plot decreasing probabilities on the x-axis). This `LogGraphics` takes this into account and makes sure that if a list of x-axis points with decreasing values along the higher indices of the list, then it plots the graph with a decreasing x-axis.",
     "created_at": "2012-02-08T12:50:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
@@ -390,7 +390,7 @@ archive/issue_comments_033643.json:
 }
 ```
 
-Attachment
+Attachment [logplots.py](tarball://root/attachments/some-uuid/ticket4529/logplots.py) by ppurka created at 2012-02-08 12:50:17
 
 [attachment:logplots.py] has a new class `LogGraphics` that I implemented and have been using for the past few months. Integrating it with Graphics seemed quite a painful process, so I had to go this direction and make my own class. Currently, it handles many *but not all* of the arguments that the `Graphics` class supports. In addition it uses `matplotlib.plt` to do the log plot; otherwise I ran into all sorts of problems with matplotlib (like the ones mentioned in earlier comments).
 
@@ -680,7 +680,7 @@ Apply to devel/sage
 archive/issue_comments_033657.json:
 ```json
 {
-    "body": "Attachment\n\nApply to devel/sage",
+    "body": "Attachment [trac_4529-add_docs_eg_to_some_user_facing_functions.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-add_docs_eg_to_some_user_facing_functions.patch) by ppurka created at 2012-05-20 17:14:13\n\nApply to devel/sage",
     "created_at": "2012-05-20T17:14:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
@@ -689,7 +689,7 @@ archive/issue_comments_033657.json:
 }
 ```
 
-Attachment
+Attachment [trac_4529-add_docs_eg_to_some_user_facing_functions.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-add_docs_eg_to_some_user_facing_functions.patch) by ppurka created at 2012-05-20 17:14:13
 
 Apply to devel/sage
 
@@ -1239,7 +1239,7 @@ indeed, the replace seems much better. Thanks.
 archive/issue_comments_033678.json:
 ```json
 {
-    "body": "Attachment\n\napply to devel/sage",
+    "body": "Attachment [trac_4529-check_for_single_tick.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-check_for_single_tick.patch) by ppurka created at 2012-05-27 09:12:18\n\napply to devel/sage",
     "created_at": "2012-05-27T09:12:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
@@ -1248,7 +1248,7 @@ archive/issue_comments_033678.json:
 }
 ```
 
-Attachment
+Attachment [trac_4529-check_for_single_tick.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-check_for_single_tick.patch) by ppurka created at 2012-05-27 09:12:18
 
 apply to devel/sage
 
@@ -1286,7 +1286,7 @@ plot(x).show(xmin=1, xmax=-1)
 archive/issue_comments_033680.json:
 ```json
 {
-    "body": "Attachment\n\napply to devel/sage",
+    "body": "Attachment [trac_4529-add_logscale_to_Graphics.2.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-add_logscale_to_Graphics.2.patch) by ppurka created at 2012-05-27 09:39:26\n\napply to devel/sage",
     "created_at": "2012-05-27T09:39:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
@@ -1295,7 +1295,7 @@ archive/issue_comments_033680.json:
 }
 ```
 
-Attachment
+Attachment [trac_4529-add_logscale_to_Graphics.2.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-add_logscale_to_Graphics.2.patch) by ppurka created at 2012-05-27 09:39:26
 
 apply to devel/sage
 
@@ -1582,7 +1582,7 @@ between doctests which were meant to be viewed, because otherwise one will not b
 archive/issue_comments_033686.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4529-add-log-scale.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-add-log-scale.patch) by kcrisman created at 2012-05-29 00:05:05",
     "created_at": "2012-05-29T00:05:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
@@ -1591,7 +1591,7 @@ archive/issue_comments_033686.json:
 }
 ```
 
-Attachment
+Attachment [trac_4529-add-log-scale.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-add-log-scale.patch) by kcrisman created at 2012-05-29 00:05:05
 
 
 
@@ -1600,7 +1600,7 @@ Attachment
 archive/issue_comments_033687.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4529-single-tick.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-single-tick.patch) by kcrisman created at 2012-05-29 00:05:17",
     "created_at": "2012-05-29T00:05:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
@@ -1609,7 +1609,7 @@ archive/issue_comments_033687.json:
 }
 ```
 
-Attachment
+Attachment [trac_4529-single-tick.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-single-tick.patch) by kcrisman created at 2012-05-29 00:05:17
 
 
 
@@ -1618,7 +1618,7 @@ Attachment
 archive/issue_comments_033688.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4529-docs-and-funcs.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-docs-and-funcs.patch) by kcrisman created at 2012-05-29 00:05:29",
     "created_at": "2012-05-29T00:05:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
@@ -1627,7 +1627,7 @@ archive/issue_comments_033688.json:
 }
 ```
 
-Attachment
+Attachment [trac_4529-docs-and-funcs.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-docs-and-funcs.patch) by kcrisman created at 2012-05-29 00:05:29
 
 
 
@@ -1636,7 +1636,7 @@ Attachment
 archive/issue_comments_033689.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4529-more-doc.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-more-doc.patch) by kcrisman created at 2012-05-29 00:06:15",
     "created_at": "2012-05-29T00:06:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
@@ -1645,7 +1645,7 @@ archive/issue_comments_033689.json:
 }
 ```
 
-Attachment
+Attachment [trac_4529-more-doc.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-more-doc.patch) by kcrisman created at 2012-05-29 00:06:15
 
 
 
@@ -1955,7 +1955,7 @@ Unfortunately it's too late now for me to properly test everything again - time 
 archive/issue_comments_033702.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4529-typo_fixes.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-typo_fixes.patch) by ppurka created at 2012-05-29 07:17:00",
     "created_at": "2012-05-29T07:17:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
@@ -1964,7 +1964,7 @@ archive/issue_comments_033702.json:
 }
 ```
 
-Attachment
+Attachment [trac_4529-typo_fixes.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-typo_fixes.patch) by ppurka created at 2012-05-29 07:17:00
 
 
 
@@ -2051,7 +2051,7 @@ Build finished.  The built documents can be found in /home/punarbasu/Installatio
 archive/issue_comments_033704.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4529-final-fixes.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-final-fixes.patch) by kcrisman created at 2012-05-29 17:27:39",
     "created_at": "2012-05-29T17:27:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
@@ -2060,7 +2060,7 @@ archive/issue_comments_033704.json:
 }
 ```
 
-Attachment
+Attachment [trac_4529-final-fixes.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-final-fixes.patch) by kcrisman created at 2012-05-29 17:27:39
 
 
 
@@ -2230,7 +2230,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_033713.json:
 ```json
 {
-    "body": "Attachment\n\nLuckily I only had to rebase one of these, due to some fuzz which the release manager doesn't always like.  Otherwise this is good to go!  Note the long list of dependencies, only so that all patches apply properly on 5.1.beta1.\n\nPositive review!\n\nPatchbot, apply apply trac_4529-add-log-scale.patch trac_4529-single-tick.patch trac_4529-docs-and-funcs.patch trac_4529-more-doc.patch trac_4529-typo_fixes-rebase.patch trac_4529-final-fixes.patch",
+    "body": "Attachment [trac_4529-typo_fixes-rebase.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-typo_fixes-rebase.patch) by kcrisman created at 2012-05-30 04:34:17\n\nLuckily I only had to rebase one of these, due to some fuzz which the release manager doesn't always like.  Otherwise this is good to go!  Note the long list of dependencies, only so that all patches apply properly on 5.1.beta1.\n\nPositive review!\n\nPatchbot, apply apply trac_4529-add-log-scale.patch trac_4529-single-tick.patch trac_4529-docs-and-funcs.patch trac_4529-more-doc.patch trac_4529-typo_fixes-rebase.patch trac_4529-final-fixes.patch",
     "created_at": "2012-05-30T04:34:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
@@ -2239,7 +2239,7 @@ archive/issue_comments_033713.json:
 }
 ```
 
-Attachment
+Attachment [trac_4529-typo_fixes-rebase.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-typo_fixes-rebase.patch) by kcrisman created at 2012-05-30 04:34:17
 
 Luckily I only had to rebase one of these, due to some fuzz which the release manager doesn't always like.  Otherwise this is good to go!  Note the long list of dependencies, only so that all patches apply properly on 5.1.beta1.
 
@@ -2272,7 +2272,7 @@ Patchbot apply: trac_4529-add-log-scale.patch trac_4529-single-tick.patch trac_4
 archive/issue_comments_033715.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4529-docs-and-funcs.2.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-docs-and-funcs.2.patch) by ppurka created at 2012-06-02 02:52:17",
     "created_at": "2012-06-02T02:52:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
@@ -2281,7 +2281,7 @@ archive/issue_comments_033715.json:
 }
 ```
 
-Attachment
+Attachment [trac_4529-docs-and-funcs.2.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-docs-and-funcs.2.patch) by ppurka created at 2012-06-02 02:52:17
 
 
 
@@ -2290,7 +2290,7 @@ Attachment
 archive/issue_comments_033716.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4529-typo_fixes-rebase.2.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-typo_fixes-rebase.2.patch) by ppurka created at 2012-06-02 02:53:32",
     "created_at": "2012-06-02T02:53:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
@@ -2299,7 +2299,7 @@ archive/issue_comments_033716.json:
 }
 ```
 
-Attachment
+Attachment [trac_4529-typo_fixes-rebase.2.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-typo_fixes-rebase.2.patch) by ppurka created at 2012-06-02 02:53:32
 
 
 
@@ -2494,7 +2494,7 @@ Anyway, I just finished, so hold on a sec.  It would be good for someone to look
 archive/issue_comments_033727.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4529-patch2.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-patch2.patch) by kcrisman created at 2012-06-28 19:15:36",
     "created_at": "2012-06-28T19:15:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
@@ -2503,7 +2503,7 @@ archive/issue_comments_033727.json:
 }
 ```
 
-Attachment
+Attachment [trac_4529-patch2.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-patch2.patch) by kcrisman created at 2012-06-28 19:15:36
 
 
 
@@ -2512,7 +2512,7 @@ Attachment
 archive/issue_comments_033728.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4529-patch5.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-patch5.patch) by kcrisman created at 2012-06-28 19:16:23",
     "created_at": "2012-06-28T19:16:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
@@ -2521,7 +2521,7 @@ archive/issue_comments_033728.json:
 }
 ```
 
-Attachment
+Attachment [trac_4529-patch5.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-patch5.patch) by kcrisman created at 2012-06-28 19:16:23
 
 
 
@@ -2530,7 +2530,7 @@ Attachment
 archive/issue_comments_033729.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4529-patch6.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-patch6.patch) by kcrisman created at 2012-06-28 19:16:40",
     "created_at": "2012-06-28T19:16:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
@@ -2539,7 +2539,7 @@ archive/issue_comments_033729.json:
 }
 ```
 
-Attachment
+Attachment [trac_4529-patch6.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-patch6.patch) by kcrisman created at 2012-06-28 19:16:40
 
 
 
@@ -2755,7 +2755,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_033740.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4529-patch4.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-patch4.patch) by kcrisman created at 2012-07-03 13:18:40",
     "created_at": "2012-07-03T13:18:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
@@ -2764,7 +2764,7 @@ archive/issue_comments_033740.json:
 }
 ```
 
-Attachment
+Attachment [trac_4529-patch4.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-patch4.patch) by kcrisman created at 2012-07-03 13:18:40
 
 
 

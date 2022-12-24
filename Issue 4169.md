@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4169
 archive/issue_comments_030258.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [hypellfrob-2.1.1.patch](tarball://root/attachments/some-uuid/ticket4169/hypellfrob-2.1.1.patch) by dmharvey created at 2008-09-22 19:04:06",
     "created_at": "2008-09-22T19:04:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4169",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_030258.json:
 }
 ```
 
-Attachment
+Attachment [hypellfrob-2.1.1.patch](tarball://root/attachments/some-uuid/ticket4169/hypellfrob-2.1.1.patch) by dmharvey created at 2008-09-22 19:04:06
 
 
 

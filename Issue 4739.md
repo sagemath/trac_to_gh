@@ -45,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4739
 archive/issue_comments_035779.json:
 ```json
 {
-    "body": "Attachment\n\nApplies to 3.2.1 after #3810 and #4061 patches.",
+    "body": "Attachment [abgr.patch](tarball://root/attachments/some-uuid/ticket4739/abgr.patch) by cremona created at 2008-12-07 22:41:25\n\nApplies to 3.2.1 after #3810 and #4061 patches.",
     "created_at": "2008-12-07T22:41:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4739",
     "type": "issue_comment",
@@ -54,7 +54,7 @@ archive/issue_comments_035779.json:
 }
 ```
 
-Attachment
+Attachment [abgr.patch](tarball://root/attachments/some-uuid/ticket4739/abgr.patch) by cremona created at 2008-12-07 22:41:25
 
 Applies to 3.2.1 after #3810 and #4061 patches.
 

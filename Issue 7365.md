@@ -133,7 +133,7 @@ Nathann
 archive/issue_comments_061727.json:
 ```json
 {
-    "body": "Attachment\n\nI tried to find another example, but could not find any interesting/funny one (the theorem and its proof by themselves are enough to make me laugh :-) ). If you can think of a good one, just tell me and I'll add it :-)\n\nNathann",
+    "body": "Attachment [trac_7365.patch](tarball://root/attachments/some-uuid/ticket7365/trac_7365.patch) by ncohen created at 2009-12-18 08:54:06\n\nI tried to find another example, but could not find any interesting/funny one (the theorem and its proof by themselves are enough to make me laugh :-) ). If you can think of a good one, just tell me and I'll add it :-)\n\nNathann",
     "created_at": "2009-12-18T08:54:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7365",
     "type": "issue_comment",
@@ -142,7 +142,7 @@ archive/issue_comments_061727.json:
 }
 ```
 
-Attachment
+Attachment [trac_7365.patch](tarball://root/attachments/some-uuid/ticket7365/trac_7365.patch) by ncohen created at 2009-12-18 08:54:06
 
 I tried to find another example, but could not find any interesting/funny one (the theorem and its proof by themselves are enough to make me laugh :-) ). If you can think of a good one, just tell me and I'll add it :-)
 
@@ -155,7 +155,7 @@ Nathann
 archive/issue_comments_061728.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [tmp_4.png](tarball://root/attachments/some-uuid/ticket7365/tmp_4.png) by rlm created at 2009-12-18 19:21:29",
     "created_at": "2009-12-18T19:21:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7365",
     "type": "issue_comment",
@@ -164,7 +164,7 @@ archive/issue_comments_061728.json:
 }
 ```
 
-Attachment
+Attachment [tmp_4.png](tarball://root/attachments/some-uuid/ticket7365/tmp_4.png) by rlm created at 2009-12-18 19:21:29
 
 
 
@@ -191,7 +191,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_061730.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7365-doctest.patch](tarball://root/attachments/some-uuid/ticket7365/trac_7365-doctest.patch) by rlm created at 2009-12-18 19:22:58",
     "created_at": "2009-12-18T19:22:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7365",
     "type": "issue_comment",
@@ -200,7 +200,7 @@ archive/issue_comments_061730.json:
 }
 ```
 
-Attachment
+Attachment [trac_7365-doctest.patch](tarball://root/attachments/some-uuid/ticket7365/trac_7365-doctest.patch) by rlm created at 2009-12-18 19:22:58
 
 
 

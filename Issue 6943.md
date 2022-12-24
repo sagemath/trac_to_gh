@@ -81,7 +81,7 @@ depends on #6927 and #6937
 archive/issue_comments_057411.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6943-parallel-improvements.patch](tarball://root/attachments/some-uuid/ticket6943/6943-parallel-improvements.patch) by mvngu created at 2009-09-28 03:43:56",
     "created_at": "2009-09-28T03:43:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6943",
     "type": "issue_comment",
@@ -90,7 +90,7 @@ archive/issue_comments_057411.json:
 }
 ```
 
-Attachment
+Attachment [6943-parallel-improvements.patch](tarball://root/attachments/some-uuid/ticket6943/6943-parallel-improvements.patch) by mvngu created at 2009-09-28 03:43:56
 
 
 
@@ -99,7 +99,7 @@ Attachment
 archive/issue_comments_057412.json:
 ```json
 {
-    "body": "Attachment\n\nRebased on referee patch of #6927. Depends on #6927. Apply this patch only",
+    "body": "Attachment [6943-parallel-improvements-ref.patch](tarball://root/attachments/some-uuid/ticket6943/6943-parallel-improvements-ref.patch) by timdumol created at 2009-11-30 16:49:08\n\nRebased on referee patch of #6927. Depends on #6927. Apply this patch only",
     "created_at": "2009-11-30T16:49:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6943",
     "type": "issue_comment",
@@ -108,7 +108,7 @@ archive/issue_comments_057412.json:
 }
 ```
 
-Attachment
+Attachment [6943-parallel-improvements-ref.patch](tarball://root/attachments/some-uuid/ticket6943/6943-parallel-improvements-ref.patch) by timdumol created at 2009-11-30 16:49:08
 
 Rebased on referee patch of #6927. Depends on #6927. Apply this patch only
 

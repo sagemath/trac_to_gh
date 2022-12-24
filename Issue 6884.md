@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6884
 archive/issue_comments_056887.json:
 ```json
 {
-    "body": "Attachment\n\ndoctest log on mod.math",
+    "body": "Attachment [doctest-4.1.2.alpha0-mod.log](tarball://root/attachments/some-uuid/ticket6884/doctest-4.1.2.alpha0-mod.log) by mvngu created at 2009-09-04 07:45:59\n\ndoctest log on mod.math",
     "created_at": "2009-09-04T07:45:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6884",
     "type": "issue_comment",
@@ -49,7 +49,7 @@ archive/issue_comments_056887.json:
 }
 ```
 
-Attachment
+Attachment [doctest-4.1.2.alpha0-mod.log](tarball://root/attachments/some-uuid/ticket6884/doctest-4.1.2.alpha0-mod.log) by mvngu created at 2009-09-04 07:45:59
 
 doctest log on mod.math
 
@@ -78,7 +78,7 @@ Update MANIFEST.in to include all Jinja templates.
 archive/issue_comments_056889.json:
 ```json
 {
-    "body": "Attachment\n\nI apologize for missing this.",
+    "body": "Attachment [trac_6684-templates_manifest.patch](tarball://root/attachments/some-uuid/ticket6884/trac_6684-templates_manifest.patch) by mpatel created at 2009-09-05 14:10:59\n\nI apologize for missing this.",
     "created_at": "2009-09-05T14:10:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6884",
     "type": "issue_comment",
@@ -87,7 +87,7 @@ archive/issue_comments_056889.json:
 }
 ```
 
-Attachment
+Attachment [trac_6684-templates_manifest.patch](tarball://root/attachments/some-uuid/ticket6884/trac_6684-templates_manifest.patch) by mpatel created at 2009-09-05 14:10:59
 
 I apologize for missing this.
 
@@ -98,7 +98,7 @@ I apologize for missing this.
 archive/issue_comments_056890.json:
 ```json
 {
-    "body": "Attachment\n\nCorrected ticket number in patch filename. Apply only this patch.",
+    "body": "Attachment [trac_6884-templates_manifest.patch](tarball://root/attachments/some-uuid/ticket6884/trac_6884-templates_manifest.patch) by mpatel created at 2009-09-05 15:17:49\n\nCorrected ticket number in patch filename. Apply only this patch.",
     "created_at": "2009-09-05T15:17:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6884",
     "type": "issue_comment",
@@ -107,7 +107,7 @@ archive/issue_comments_056890.json:
 }
 ```
 
-Attachment
+Attachment [trac_6884-templates_manifest.patch](tarball://root/attachments/some-uuid/ticket6884/trac_6884-templates_manifest.patch) by mpatel created at 2009-09-05 15:17:49
 
 Corrected ticket number in patch filename. Apply only this patch.
 

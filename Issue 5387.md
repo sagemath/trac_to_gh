@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5387
 archive/issue_comments_041488.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [installation.patch](tarball://root/attachments/some-uuid/ticket5387/installation.patch) by jhpalmieri created at 2009-02-26 18:29:49",
     "created_at": "2009-02-26T18:29:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5387",
     "type": "issue_comment",
@@ -41,7 +41,7 @@ archive/issue_comments_041488.json:
 }
 ```
 
-Attachment
+Attachment [installation.patch](tarball://root/attachments/some-uuid/ticket5387/installation.patch) by jhpalmieri created at 2009-02-26 18:29:49
 
 
 
@@ -127,7 +127,7 @@ apply on top of other patch
 archive/issue_comments_041493.json:
 ```json
 {
-    "body": "Attachment\n\nApplies cleanly to sage-3.4.alpha0 using hg_sage.apply (*not* hg_doc). Compiles cleanly and without error.\n\nExcellent job - thanks for making this patch!",
+    "body": "Attachment [installation-part2.patch](tarball://root/attachments/some-uuid/ticket5387/installation-part2.patch) by wdj created at 2009-02-26 22:40:07\n\nApplies cleanly to sage-3.4.alpha0 using hg_sage.apply (*not* hg_doc). Compiles cleanly and without error.\n\nExcellent job - thanks for making this patch!",
     "created_at": "2009-02-26T22:40:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5387",
     "type": "issue_comment",
@@ -136,7 +136,7 @@ archive/issue_comments_041493.json:
 }
 ```
 
-Attachment
+Attachment [installation-part2.patch](tarball://root/attachments/some-uuid/ticket5387/installation-part2.patch) by wdj created at 2009-02-26 22:40:07
 
 Applies cleanly to sage-3.4.alpha0 using hg_sage.apply (*not* hg_doc). Compiles cleanly and without error.
 
@@ -243,7 +243,7 @@ Changing keywords from "" to "installation guide".
 archive/issue_comments_041499.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch **trac_5387_reviewer-fixes.patch** fixes some typos found in the patches by jhpalmieri.",
+    "body": "Attachment [trac_5387_reviewer-fixes.patch](tarball://root/attachments/some-uuid/ticket5387/trac_5387_reviewer-fixes.patch) by mvngu created at 2009-03-01 04:37:40\n\nThe patch **trac_5387_reviewer-fixes.patch** fixes some typos found in the patches by jhpalmieri.",
     "created_at": "2009-03-01T04:37:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5387",
     "type": "issue_comment",
@@ -252,7 +252,7 @@ archive/issue_comments_041499.json:
 }
 ```
 
-Attachment
+Attachment [trac_5387_reviewer-fixes.patch](tarball://root/attachments/some-uuid/ticket5387/trac_5387_reviewer-fixes.patch) by mvngu created at 2009-03-01 04:37:40
 
 The patch **trac_5387_reviewer-fixes.patch** fixes some typos found in the patches by jhpalmieri.
 

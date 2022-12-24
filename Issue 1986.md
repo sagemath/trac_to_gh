@@ -91,7 +91,7 @@ I thought the ... would take care of it. I'd be happy to make a patch, if someon
 archive/issue_comments_012862.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-1986.patch](tarball://root/attachments/some-uuid/ticket1986/trac-1986.patch) by was created at 2008-02-02 08:20:50",
     "created_at": "2008-02-02T08:20:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1986",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_012862.json:
 }
 ```
 
-Attachment
+Attachment [trac-1986.patch](tarball://root/attachments/some-uuid/ticket1986/trac-1986.patch) by was created at 2008-02-02 08:20:50
 
 
 

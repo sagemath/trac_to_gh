@@ -125,7 +125,7 @@ Changing assignee from boothby to jason.
 archive/issue_comments_042113.json:
 ```json
 {
-    "body": "Attachment\n\nFor p0 spkgs.",
+    "body": "Attachment [trac_5447-jquery_upgrade.patch](tarball://root/attachments/some-uuid/ticket5447/trac_5447-jquery_upgrade.patch) by mpatel created at 2009-08-03 03:28:23\n\nFor p0 spkgs.",
     "created_at": "2009-08-03T03:28:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5447",
     "type": "issue_comment",
@@ -134,7 +134,7 @@ archive/issue_comments_042113.json:
 }
 ```
 
-Attachment
+Attachment [trac_5447-jquery_upgrade.patch](tarball://root/attachments/some-uuid/ticket5447/trac_5447-jquery_upgrade.patch) by mpatel created at 2009-08-03 03:28:23
 
 For p0 spkgs.
 
@@ -212,7 +212,7 @@ If necessary, rebase the patch against #6568.
 archive/issue_comments_042117.json:
 ```json
 {
-    "body": "Attachment\n\nFor p1 spkgs. Depends on #6568, #6840.",
+    "body": "Attachment [trac_5447-jquery_upgrade_v2.patch](tarball://root/attachments/some-uuid/ticket5447/trac_5447-jquery_upgrade_v2.patch) by mpatel created at 2009-09-01 08:05:14\n\nFor p1 spkgs. Depends on #6568, #6840.",
     "created_at": "2009-09-01T08:05:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5447",
     "type": "issue_comment",
@@ -221,7 +221,7 @@ archive/issue_comments_042117.json:
 }
 ```
 
-Attachment
+Attachment [trac_5447-jquery_upgrade_v2.patch](tarball://root/attachments/some-uuid/ticket5447/trac_5447-jquery_upgrade_v2.patch) by mpatel created at 2009-09-01 08:05:14
 
 For p1 spkgs. Depends on #6568, #6840.
 
@@ -281,7 +281,7 @@ Updated spkgs with fixed "set -e" problem (cf. [comment:ticket:6586:37 this comm
 archive/issue_comments_042120.json:
 ```json
 {
-    "body": "Attachment\n\napply instead of previous patches",
+    "body": "Attachment [trac_5447-jquery_upgrade_v2-rebased.patch](tarball://root/attachments/some-uuid/ticket5447/trac_5447-jquery_upgrade_v2-rebased.patch) by jason created at 2009-09-15 18:56:38\n\napply instead of previous patches",
     "created_at": "2009-09-15T18:56:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5447",
     "type": "issue_comment",
@@ -290,7 +290,7 @@ archive/issue_comments_042120.json:
 }
 ```
 
-Attachment
+Attachment [trac_5447-jquery_upgrade_v2-rebased.patch](tarball://root/attachments/some-uuid/ticket5447/trac_5447-jquery_upgrade_v2-rebased.patch) by jason created at 2009-09-15 18:56:38
 
 apply instead of previous patches
 
@@ -383,7 +383,7 @@ Apply only this patch.
 archive/issue_comments_042125.json:
 ```json
 {
-    "body": "Attachment\n\nThanks very much for pointing out those places.  [attachment:trac_5447-jquery_upgrade_v3.patch Patch v3] should cover them.  I've also [inquired](http://groups.google.com/group/sage-devel/browse_thread/thread/372c917e59b713f4) on sage-devel about the sliders.",
+    "body": "Attachment [trac_5447-jquery_upgrade_v3.patch](tarball://root/attachments/some-uuid/ticket5447/trac_5447-jquery_upgrade_v3.patch) by mpatel created at 2009-09-18 03:49:24\n\nThanks very much for pointing out those places.  [attachment:trac_5447-jquery_upgrade_v3.patch Patch v3] should cover them.  I've also [inquired](http://groups.google.com/group/sage-devel/browse_thread/thread/372c917e59b713f4) on sage-devel about the sliders.",
     "created_at": "2009-09-18T03:49:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5447",
     "type": "issue_comment",
@@ -392,7 +392,7 @@ archive/issue_comments_042125.json:
 }
 ```
 
-Attachment
+Attachment [trac_5447-jquery_upgrade_v3.patch](tarball://root/attachments/some-uuid/ticket5447/trac_5447-jquery_upgrade_v3.patch) by mpatel created at 2009-09-18 03:49:24
 
 Thanks very much for pointing out those places.  [attachment:trac_5447-jquery_upgrade_v3.patch Patch v3] should cover them.  I've also [inquired](http://groups.google.com/group/sage-devel/browse_thread/thread/372c917e59b713f4) on sage-devel about the sliders.
 

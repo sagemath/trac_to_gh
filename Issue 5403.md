@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5403
 archive/issue_comments_041739.json:
 ```json
 {
-    "body": "Attachment\n\npatch to fix import * issues in quadratic forms",
+    "body": "Attachment [patch.QF.fix_import_star](tarball://root/attachments/some-uuid/ticket5403/patch.QF.fix_import_star) by tornaria created at 2009-02-28 21:31:14\n\npatch to fix import * issues in quadratic forms",
     "created_at": "2009-02-28T21:31:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5403",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_041739.json:
 }
 ```
 
-Attachment
+Attachment [patch.QF.fix_import_star](tarball://root/attachments/some-uuid/ticket5403/patch.QF.fix_import_star) by tornaria created at 2009-02-28 21:31:14
 
 patch to fix import * issues in quadratic forms
 
@@ -107,7 +107,7 @@ Changing assignee from mabshoff to tornaria.
 archive/issue_comments_041743.json:
 ```json
 {
-    "body": "Attachment\n\n2nd version of the patch, stilll some issue with deepcopy",
+    "body": "Attachment [patch.QF.fix_import_star.2nd](tarball://root/attachments/some-uuid/ticket5403/patch.QF.fix_import_star.2nd) by tornaria created at 2009-02-28 22:54:25\n\n2nd version of the patch, stilll some issue with deepcopy",
     "created_at": "2009-02-28T22:54:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5403",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_041743.json:
 }
 ```
 
-Attachment
+Attachment [patch.QF.fix_import_star.2nd](tarball://root/attachments/some-uuid/ticket5403/patch.QF.fix_import_star.2nd) by tornaria created at 2009-02-28 22:54:25
 
 2nd version of the patch, stilll some issue with deepcopy
 
@@ -169,7 +169,7 @@ Michael
 archive/issue_comments_041746.json:
 ```json
 {
-    "body": "Attachment\n\n3rd version of the patch, tests pass now",
+    "body": "Attachment [patch.QF.fix_import_star.3rd](tarball://root/attachments/some-uuid/ticket5403/patch.QF.fix_import_star.3rd) by tornaria created at 2009-03-01 04:15:26\n\n3rd version of the patch, tests pass now",
     "created_at": "2009-03-01T04:15:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5403",
     "type": "issue_comment",
@@ -178,7 +178,7 @@ archive/issue_comments_041746.json:
 }
 ```
 
-Attachment
+Attachment [patch.QF.fix_import_star.3rd](tarball://root/attachments/some-uuid/ticket5403/patch.QF.fix_import_star.3rd) by tornaria created at 2009-03-01 04:15:26
 
 3rd version of the patch, tests pass now
 
@@ -343,7 +343,7 @@ Resolution: fixed
 archive/issue_comments_041755.json:
 ```json
 {
-    "body": "Attachment\n\nThis is a properly named version of Gonzalo's third patch",
+    "body": "Attachment [trac_5403_patch.QF.fix_import_star.3rd.patch](tarball://root/attachments/some-uuid/ticket5403/trac_5403_patch.QF.fix_import_star.3rd.patch) by mabshoff created at 2009-03-02 04:08:57\n\nThis is a properly named version of Gonzalo's third patch",
     "created_at": "2009-03-02T04:08:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5403",
     "type": "issue_comment",
@@ -352,6 +352,6 @@ archive/issue_comments_041755.json:
 }
 ```
 
-Attachment
+Attachment [trac_5403_patch.QF.fix_import_star.3rd.patch](tarball://root/attachments/some-uuid/ticket5403/trac_5403_patch.QF.fix_import_star.3rd.patch) by mabshoff created at 2009-03-02 04:08:57
 
 This is a properly named version of Gonzalo's third patch

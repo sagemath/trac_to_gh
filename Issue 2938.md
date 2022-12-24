@@ -499,7 +499,7 @@ Resolution changed from fixed to
 archive/issue_comments_020244.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-2938-doc.patch](tarball://root/attachments/some-uuid/ticket2938/trac-2938-doc.patch) by craigcitro created at 2008-04-26 23:05:12",
     "created_at": "2008-04-26T23:05:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2938",
     "type": "issue_comment",
@@ -508,7 +508,7 @@ archive/issue_comments_020244.json:
 }
 ```
 
-Attachment
+Attachment [trac-2938-doc.patch](tarball://root/attachments/some-uuid/ticket2938/trac-2938-doc.patch) by craigcitro created at 2008-04-26 23:05:12
 
 
 

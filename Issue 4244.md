@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4244
 archive/issue_comments_030846.json:
 ```json
 {
-    "body": "Attachment\n\nadd .variables() function to sage.symbolic.expression.Expression",
+    "body": "Attachment [variables.patch](tarball://root/attachments/some-uuid/ticket4244/variables.patch) by burcin created at 2008-10-04 20:37:42\n\nadd .variables() function to sage.symbolic.expression.Expression",
     "created_at": "2008-10-04T20:37:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4244",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_030846.json:
 }
 ```
 
-Attachment
+Attachment [variables.patch](tarball://root/attachments/some-uuid/ticket4244/variables.patch) by burcin created at 2008-10-04 20:37:42
 
 add .variables() function to sage.symbolic.expression.Expression
 
@@ -59,7 +59,7 @@ add .variables() function to sage.symbolic.expression.Expression
 archive/issue_comments_030847.json:
 ```json
 {
-    "body": "Attachment\n\nallow sage.symbolic.function.SFunction to use custom python function for evalution, series expansion, derivation, etc.",
+    "body": "Attachment [custom_eval_func.patch](tarball://root/attachments/some-uuid/ticket4244/custom_eval_func.patch) by burcin created at 2008-10-04 20:38:40\n\nallow sage.symbolic.function.SFunction to use custom python function for evalution, series expansion, derivation, etc.",
     "created_at": "2008-10-04T20:38:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4244",
     "type": "issue_comment",
@@ -68,7 +68,7 @@ archive/issue_comments_030847.json:
 }
 ```
 
-Attachment
+Attachment [custom_eval_func.patch](tarball://root/attachments/some-uuid/ticket4244/custom_eval_func.patch) by burcin created at 2008-10-04 20:38:40
 
 allow sage.symbolic.function.SFunction to use custom python function for evalution, series expansion, derivation, etc.
 
@@ -97,7 +97,7 @@ fix some problems with modular coefficients
 archive/issue_comments_030849.json:
 ```json
 {
-    "body": "Attachment\n\nNote that you need the package at #4243 to try these patches.",
+    "body": "Attachment [symbolics_modular.patch](tarball://root/attachments/some-uuid/ticket4244/symbolics_modular.patch) by burcin created at 2008-10-15 09:16:08\n\nNote that you need the package at #4243 to try these patches.",
     "created_at": "2008-10-15T09:16:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4244",
     "type": "issue_comment",
@@ -106,7 +106,7 @@ archive/issue_comments_030849.json:
 }
 ```
 
-Attachment
+Attachment [symbolics_modular.patch](tarball://root/attachments/some-uuid/ticket4244/symbolics_modular.patch) by burcin created at 2008-10-15 09:16:08
 
 Note that you need the package at #4243 to try these patches.
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4907
 archive/issue_comments_037247.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4907.patch](tarball://root/attachments/some-uuid/ticket4907/trac_4907.patch) by mhansen created at 2009-01-02 02:55:57",
     "created_at": "2009-01-02T02:55:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4907",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_037247.json:
 }
 ```
 
-Attachment
+Attachment [trac_4907.patch](tarball://root/attachments/some-uuid/ticket4907/trac_4907.patch) by mhansen created at 2009-01-02 02:55:57
 
 
 
@@ -108,7 +108,7 @@ Good catch.  Just deleting the space should be enough.  ReST works with indentat
 archive/issue_comments_037250.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached a patch which fixes this.",
+    "body": "Attachment [trac_4907-2.patch](tarball://root/attachments/some-uuid/ticket4907/trac_4907-2.patch) by mhansen created at 2009-01-02 20:20:50\n\nI've attached a patch which fixes this.",
     "created_at": "2009-01-02T20:20:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4907",
     "type": "issue_comment",
@@ -117,7 +117,7 @@ archive/issue_comments_037250.json:
 }
 ```
 
-Attachment
+Attachment [trac_4907-2.patch](tarball://root/attachments/some-uuid/ticket4907/trac_4907-2.patch) by mhansen created at 2009-01-02 20:20:50
 
 I've attached a patch which fixes this.
 
@@ -146,7 +146,7 @@ Resolution: fixed
 archive/issue_comments_037252.json:
 ```json
 {
-    "body": "Attachment\n\nMerged in Sage 3.4.alpha0.\n\nCheers,\n\nMichael",
+    "body": "Attachment [sage.crypto-final.patch](tarball://root/attachments/some-uuid/ticket4907/sage.crypto-final.patch) by mabshoff created at 2009-02-24 18:36:09\n\nMerged in Sage 3.4.alpha0.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-24T18:36:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4907",
     "type": "issue_comment",
@@ -155,7 +155,7 @@ archive/issue_comments_037252.json:
 }
 ```
 
-Attachment
+Attachment [sage.crypto-final.patch](tarball://root/attachments/some-uuid/ticket4907/sage.crypto-final.patch) by mabshoff created at 2009-02-24 18:36:09
 
 Merged in Sage 3.4.alpha0.
 

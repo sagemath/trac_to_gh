@@ -137,7 +137,7 @@ Here's a patch which does fix the problem, I think.
 archive/issue_comments_072092.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8180-kpsewhich.patch](tarball://root/attachments/some-uuid/ticket8180/trac_8180-kpsewhich.patch) by was created at 2010-02-04 02:57:57",
     "created_at": "2010-02-04T02:57:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8180",
     "type": "issue_comment",
@@ -146,7 +146,7 @@ archive/issue_comments_072092.json:
 }
 ```
 
-Attachment
+Attachment [trac_8180-kpsewhich.patch](tarball://root/attachments/some-uuid/ticket8180/trac_8180-kpsewhich.patch) by was created at 2010-02-04 02:57:57
 
 
 

@@ -49,7 +49,7 @@ Changing status from new to needs_review.
 archive/issue_comments_081364.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8853-fix_complex_double.patch](tarball://root/attachments/some-uuid/ticket8853/trac_8853-fix_complex_double.patch) by mhansen created at 2010-05-03 13:18:04",
     "created_at": "2010-05-03T13:18:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8853",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_081364.json:
 }
 ```
 
-Attachment
+Attachment [trac_8853-fix_complex_double.patch](tarball://root/attachments/some-uuid/ticket8853/trac_8853-fix_complex_double.patch) by mhansen created at 2010-05-03 13:18:04
 
 
 
@@ -121,7 +121,7 @@ Resolution: fixed
 archive/issue_comments_081368.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8853-referee_version.patch](tarball://root/attachments/some-uuid/ticket8853/trac_8853-referee_version.patch) by was created at 2010-05-25 02:11:25",
     "created_at": "2010-05-25T02:11:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8853",
     "type": "issue_comment",
@@ -130,4 +130,4 @@ archive/issue_comments_081368.json:
 }
 ```
 
-Attachment
+Attachment [trac_8853-referee_version.patch](tarball://root/attachments/some-uuid/ticket8853/trac_8853-referee_version.patch) by was created at 2010-05-25 02:11:25

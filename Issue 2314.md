@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2314
 archive/issue_comments_015390.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [coerce_2_sets.patch](tarball://root/attachments/some-uuid/ticket2314/coerce_2_sets.patch) by roed created at 2008-02-26 11:14:27",
     "created_at": "2008-02-26T11:14:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2314",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_015390.json:
 }
 ```
 
-Attachment
+Attachment [coerce_2_sets.patch](tarball://root/attachments/some-uuid/ticket2314/coerce_2_sets.patch) by roed created at 2008-02-26 11:14:27
 
 
 
@@ -51,7 +51,7 @@ Attachment
 archive/issue_comments_015391.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [coerce_4_schemes.patch](tarball://root/attachments/some-uuid/ticket2314/coerce_4_schemes.patch) by roed created at 2008-02-26 11:15:01",
     "created_at": "2008-02-26T11:15:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2314",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_015391.json:
 }
 ```
 
-Attachment
+Attachment [coerce_4_schemes.patch](tarball://root/attachments/some-uuid/ticket2314/coerce_4_schemes.patch) by roed created at 2008-02-26 11:15:01
 
 
 
@@ -69,7 +69,7 @@ Attachment
 archive/issue_comments_015392.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [coerce_5_generators.patch](tarball://root/attachments/some-uuid/ticket2314/coerce_5_generators.patch) by roed created at 2008-02-26 11:15:15",
     "created_at": "2008-02-26T11:15:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2314",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_015392.json:
 }
 ```
 
-Attachment
+Attachment [coerce_5_generators.patch](tarball://root/attachments/some-uuid/ticket2314/coerce_5_generators.patch) by roed created at 2008-02-26 11:15:15
 
 
 
@@ -87,7 +87,7 @@ Attachment
 archive/issue_comments_015393.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [coerce_7.hg](tarball://root/attachments/some-uuid/ticket2314/coerce_7.hg) by robertwb created at 2008-02-29 13:05:28",
     "created_at": "2008-02-29T13:05:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2314",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_015393.json:
 }
 ```
 
-Attachment
+Attachment [coerce_7.hg](tarball://root/attachments/some-uuid/ticket2314/coerce_7.hg) by robertwb created at 2008-02-29 13:05:28
 
 
 
@@ -123,7 +123,7 @@ The bundle coerce_7 contains patches 1-5 (but not 6 yet), as well as all previou
 archive/issue_comments_015395.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [coerce_8_finite_fields.patch](tarball://root/attachments/some-uuid/ticket2314/coerce_8_finite_fields.patch) by robertwb created at 2008-03-02 10:11:09",
     "created_at": "2008-03-02T10:11:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2314",
     "type": "issue_comment",
@@ -132,7 +132,7 @@ archive/issue_comments_015395.json:
 }
 ```
 
-Attachment
+Attachment [coerce_8_finite_fields.patch](tarball://root/attachments/some-uuid/ticket2314/coerce_8_finite_fields.patch) by robertwb created at 2008-03-02 10:11:09
 
 
 
@@ -141,7 +141,7 @@ Attachment
 archive/issue_comments_015396.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [coerce_9_finite_fields_finish.patch](tarball://root/attachments/some-uuid/ticket2314/coerce_9_finite_fields_finish.patch) by robertwb created at 2008-03-02 10:13:12",
     "created_at": "2008-03-02T10:13:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2314",
     "type": "issue_comment",
@@ -150,7 +150,7 @@ archive/issue_comments_015396.json:
 }
 ```
 
-Attachment
+Attachment [coerce_9_finite_fields_finish.patch](tarball://root/attachments/some-uuid/ticket2314/coerce_9_finite_fields_finish.patch) by robertwb created at 2008-03-02 10:13:12
 
 
 
@@ -159,7 +159,7 @@ Attachment
 archive/issue_comments_015397.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [coerce_10_documentation_and_cleanup.patch](tarball://root/attachments/some-uuid/ticket2314/coerce_10_documentation_and_cleanup.patch) by robertwb created at 2008-03-05 09:50:17",
     "created_at": "2008-03-05T09:50:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2314",
     "type": "issue_comment",
@@ -168,7 +168,7 @@ archive/issue_comments_015397.json:
 }
 ```
 
-Attachment
+Attachment [coerce_10_documentation_and_cleanup.patch](tarball://root/attachments/some-uuid/ticket2314/coerce_10_documentation_and_cleanup.patch) by robertwb created at 2008-03-05 09:50:17
 
 
 
@@ -177,7 +177,7 @@ Attachment
 archive/issue_comments_015398.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [coerce_11_all.hg](tarball://root/attachments/some-uuid/ticket2314/coerce_11_all.hg) by robertwb created at 2008-03-06 01:30:05",
     "created_at": "2008-03-06T01:30:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2314",
     "type": "issue_comment",
@@ -186,7 +186,7 @@ archive/issue_comments_015398.json:
 }
 ```
 
-Attachment
+Attachment [coerce_11_all.hg](tarball://root/attachments/some-uuid/ticket2314/coerce_11_all.hg) by robertwb created at 2008-03-06 01:30:05
 
 
 
@@ -195,7 +195,7 @@ Attachment
 archive/issue_comments_015399.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [coerce_13_all.hg](tarball://root/attachments/some-uuid/ticket2314/coerce_13_all.hg) by robertwb created at 2008-03-16 04:22:46",
     "created_at": "2008-03-16T04:22:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2314",
     "type": "issue_comment",
@@ -204,7 +204,7 @@ archive/issue_comments_015399.json:
 }
 ```
 
-Attachment
+Attachment [coerce_13_all.hg](tarball://root/attachments/some-uuid/ticket2314/coerce_13_all.hg) by robertwb created at 2008-03-16 04:22:46
 
 
 
@@ -213,7 +213,7 @@ Attachment
 archive/issue_comments_015400.json:
 ```json
 {
-    "body": "Attachment\n\nRather than posting bundles and patches, it will be easier to push and pull from http://sagemath.org/coercion/hgwebdir.cgi/sage-coerce/ based on Sage 2.10.1. I can set enable push for anyone who wants it.",
+    "body": "Attachment [coerce_14_all.hg](tarball://root/attachments/some-uuid/ticket2314/coerce_14_all.hg) by robertwb created at 2008-04-15 04:36:05\n\nRather than posting bundles and patches, it will be easier to push and pull from http://sagemath.org/coercion/hgwebdir.cgi/sage-coerce/ based on Sage 2.10.1. I can set enable push for anyone who wants it.",
     "created_at": "2008-04-15T04:36:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2314",
     "type": "issue_comment",
@@ -222,7 +222,7 @@ archive/issue_comments_015400.json:
 }
 ```
 
-Attachment
+Attachment [coerce_14_all.hg](tarball://root/attachments/some-uuid/ticket2314/coerce_14_all.hg) by robertwb created at 2008-04-15 04:36:05
 
 Rather than posting bundles and patches, it will be easier to push and pull from http://sagemath.org/coercion/hgwebdir.cgi/sage-coerce/ based on Sage 2.10.1. I can set enable push for anyone who wants it.
 

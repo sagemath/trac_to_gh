@@ -169,7 +169,7 @@ After 1 hour of chasing through the code, I was not able to find the error. I in
 archive/issue_comments_058701.json:
 ```json
 {
-    "body": "Attachment\n\napplies to 4.1.2. after trac #6886. this is only a provisional patch.",
+    "body": "Attachment [trac_7096.patch](tarball://root/attachments/some-uuid/ticket7096/trac_7096.patch) by wuthrich created at 2009-10-17 23:10:34\n\napplies to 4.1.2. after trac #6886. this is only a provisional patch.",
     "created_at": "2009-10-17T23:10:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7096",
     "type": "issue_comment",
@@ -178,7 +178,7 @@ archive/issue_comments_058701.json:
 }
 ```
 
-Attachment
+Attachment [trac_7096.patch](tarball://root/attachments/some-uuid/ticket7096/trac_7096.patch) by wuthrich created at 2009-10-17 23:10:34
 
 applies to 4.1.2. after trac #6886. this is only a provisional patch.
 
@@ -358,7 +358,7 @@ The problem is that most errors go back to problems for the `EllipticCurveIsogen
 archive/issue_comments_058708.json:
 ```json
 {
-    "body": "Attachment\n\nAnother preliminary version. Replaces the previous patch.",
+    "body": "Attachment [trac_7096_2.patch](tarball://root/attachments/some-uuid/ticket7096/trac_7096_2.patch) by wuthrich created at 2009-10-29 13:37:28\n\nAnother preliminary version. Replaces the previous patch.",
     "created_at": "2009-10-29T13:37:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7096",
     "type": "issue_comment",
@@ -367,7 +367,7 @@ archive/issue_comments_058708.json:
 }
 ```
 
-Attachment
+Attachment [trac_7096_2.patch](tarball://root/attachments/some-uuid/ticket7096/trac_7096_2.patch) by wuthrich created at 2009-10-29 13:37:28
 
 Another preliminary version. Replaces the previous patch.
 
@@ -422,7 +422,7 @@ Note that this ticket also includes the correction asked for in #7307.
 archive/issue_comments_058710.json:
 ```json
 {
-    "body": "Attachment\n\npatch for this ticket exported against 4.2.alpha1. (in particular after #6886). This patch should be reviewed while the previously submitted should be ignored.",
+    "body": "Attachment [trac_7096_3.patch](tarball://root/attachments/some-uuid/ticket7096/trac_7096_3.patch) by wuthrich created at 2009-11-01 14:29:56\n\npatch for this ticket exported against 4.2.alpha1. (in particular after #6886). This patch should be reviewed while the previously submitted should be ignored.",
     "created_at": "2009-11-01T14:29:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7096",
     "type": "issue_comment",
@@ -431,7 +431,7 @@ archive/issue_comments_058710.json:
 }
 ```
 
-Attachment
+Attachment [trac_7096_3.patch](tarball://root/attachments/some-uuid/ticket7096/trac_7096_3.patch) by wuthrich created at 2009-11-01 14:29:56
 
 patch for this ticket exported against 4.2.alpha1. (in particular after #6886). This patch should be reviewed while the previously submitted should be ignored.
 
@@ -550,7 +550,7 @@ After writing the above I went ahead anyway and read the patch -- when ell_wp.py
 archive/issue_comments_058717.json:
 ```json
 {
-    "body": "Attachment\n\nReplaces all previous patches.",
+    "body": "Attachment [trac_7096_4.patch](tarball://root/attachments/some-uuid/ticket7096/trac_7096_4.patch) by wuthrich created at 2009-11-01 15:19:43\n\nReplaces all previous patches.",
     "created_at": "2009-11-01T15:19:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7096",
     "type": "issue_comment",
@@ -559,7 +559,7 @@ archive/issue_comments_058717.json:
 }
 ```
 
-Attachment
+Attachment [trac_7096_4.patch](tarball://root/attachments/some-uuid/ticket7096/trac_7096_4.patch) by wuthrich created at 2009-11-01 15:19:43
 
 Replaces all previous patches.
 

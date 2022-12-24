@@ -312,7 +312,7 @@ UNABLE TO FIND THE MODULE. Even after 3421 checks, I didn't succeed...
 archive/issue_comments_076951.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8519_Range_factory-nb.patch](tarball://root/attachments/some-uuid/ticket8519/trac_8519_Range_factory-nb.patch) by hivert created at 2010-03-15 19:52:48",
     "created_at": "2010-03-15T19:52:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
@@ -321,7 +321,7 @@ archive/issue_comments_076951.json:
 }
 ```
 
-Attachment
+Attachment [trac_8519_Range_factory-nb.patch](tarball://root/attachments/some-uuid/ticket8519/trac_8519_Range_factory-nb.patch) by hivert created at 2010-03-15 19:52:48
 
 
 
@@ -330,7 +330,7 @@ Attachment
 archive/issue_comments_076952.json:
 ```json
 {
-    "body": "Attachment\n\nHi Nicolas,\n\nI added a review patch which\n- Adds a class factory\n- Adds a cardinality method\n- Improves the doc\n- temporarily solve the handling of empty sets\n\nPlease review it,\n\nExcept for those issues your patch is good,\n\nFlorent",
+    "body": "Attachment [trac_8519_Range_factory-review-fh.patch](tarball://root/attachments/some-uuid/ticket8519/trac_8519_Range_factory-review-fh.patch) by hivert created at 2010-03-15 19:55:58\n\nHi Nicolas,\n\nI added a review patch which\n- Adds a class factory\n- Adds a cardinality method\n- Improves the doc\n- temporarily solve the handling of empty sets\n\nPlease review it,\n\nExcept for those issues your patch is good,\n\nFlorent",
     "created_at": "2010-03-15T19:55:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
@@ -339,7 +339,7 @@ archive/issue_comments_076952.json:
 }
 ```
 
-Attachment
+Attachment [trac_8519_Range_factory-review-fh.patch](tarball://root/attachments/some-uuid/ticket8519/trac_8519_Range_factory-review-fh.patch) by hivert created at 2010-03-15 19:55:58
 
 Hi Nicolas,
 
@@ -384,7 +384,7 @@ Florent
 archive/issue_comments_076954.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8519_Range_factory-review-fh.2.patch](tarball://root/attachments/some-uuid/ticket8519/trac_8519_Range_factory-review-fh.2.patch) by nborie created at 2010-03-15 23:37:52",
     "created_at": "2010-03-15T23:37:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
@@ -393,7 +393,7 @@ archive/issue_comments_076954.json:
 }
 ```
 
-Attachment
+Attachment [trac_8519_Range_factory-review-fh.2.patch](tarball://root/attachments/some-uuid/ticket8519/trac_8519_Range_factory-review-fh.2.patch) by nborie created at 2010-03-15 23:37:52
 
 
 
@@ -402,7 +402,7 @@ Attachment
 archive/issue_comments_076955.json:
 ```json
 {
-    "body": "Attachment\n\nHi Florent,\n\nI am very Ok with your changes! To complete this review, please check the 3 hyperlinks I just fixed in positive_integers.py and non_negative_integers.py. That's will be a very easy review I think.\n\nPatchs to be applied :\n\ntrac_8519_Range_factory-nb.patch\ntrac_8519_Range_factory-review-fh.2.patch\ntrac_8519_Range_factory-review2-nb.patch\n\nThanks for all.",
+    "body": "Attachment [trac_8519_Range_factory-review2-nb.patch](tarball://root/attachments/some-uuid/ticket8519/trac_8519_Range_factory-review2-nb.patch) by nborie created at 2010-03-15 23:41:52\n\nHi Florent,\n\nI am very Ok with your changes! To complete this review, please check the 3 hyperlinks I just fixed in positive_integers.py and non_negative_integers.py. That's will be a very easy review I think.\n\nPatchs to be applied :\n\ntrac_8519_Range_factory-nb.patch\ntrac_8519_Range_factory-review-fh.2.patch\ntrac_8519_Range_factory-review2-nb.patch\n\nThanks for all.",
     "created_at": "2010-03-15T23:41:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
@@ -411,7 +411,7 @@ archive/issue_comments_076955.json:
 }
 ```
 
-Attachment
+Attachment [trac_8519_Range_factory-review2-nb.patch](tarball://root/attachments/some-uuid/ticket8519/trac_8519_Range_factory-review2-nb.patch) by nborie created at 2010-03-15 23:41:52
 
 Hi Florent,
 

@@ -255,7 +255,7 @@ Changing assignee from tba to GeorgSWeber.
 archive/issue_comments_032117.json:
 ```json
 {
-    "body": "Attachment\n\napplies independently, but the other two are highly recommended first",
+    "body": "Attachment [4370-sage_scripts.patch](tarball://root/attachments/some-uuid/ticket4370/4370-sage_scripts.patch) by GeorgSWeber created at 2008-11-04 00:19:42\n\napplies independently, but the other two are highly recommended first",
     "created_at": "2008-11-04T00:19:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4370",
     "type": "issue_comment",
@@ -264,7 +264,7 @@ archive/issue_comments_032117.json:
 }
 ```
 
-Attachment
+Attachment [4370-sage_scripts.patch](tarball://root/attachments/some-uuid/ticket4370/4370-sage_scripts.patch) by GeorgSWeber created at 2008-11-04 00:19:42
 
 applies independently, but the other two are highly recommended first
 
@@ -356,7 +356,7 @@ Michael
 archive/issue_comments_032121.json:
 ```json
 {
-    "body": "Attachment\n\nobsoleted, don't use (moved to #4441 upon request of the reviewer)",
+    "body": "Attachment [4370-doc.patch](tarball://root/attachments/some-uuid/ticket4370/4370-doc.patch) by GeorgSWeber created at 2008-11-04 21:20:32\n\nobsoleted, don't use (moved to #4441 upon request of the reviewer)",
     "created_at": "2008-11-04T21:20:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4370",
     "type": "issue_comment",
@@ -365,7 +365,7 @@ archive/issue_comments_032121.json:
 }
 ```
 
-Attachment
+Attachment [4370-doc.patch](tarball://root/attachments/some-uuid/ticket4370/4370-doc.patch) by GeorgSWeber created at 2008-11-04 21:20:32
 
 obsoleted, don't use (moved to #4441 upon request of the reviewer)
 
@@ -394,7 +394,7 @@ obsoleted, don't use (moved to #4442)
 archive/issue_comments_032123.json:
 ```json
 {
-    "body": "Attachment\n\nHi Michael,\nthanks for the review!\n\n> 4370-sage_library.patch should go to its own ticker since it is independent. \nDone, it is now #4441. I also moved the congroup.py patch away to #4442.\n\n>I would also not per default build the Sage documentation on clone\nOK. I will address that in an update.\n\n> - we do not do this for the sage library repo itself. \nYou're wrong here. See lines 68-91 of the \"sage-clone\" script, where explicitly \"sage -b branch\" is called. But let's clone the doc dir without (re-)build, OK.\n\n> I can't see seem to fine the alleged possibility to clone the sage-scripts repo. Either way, I would not recommend that we allow this since there are numerous binaries in the bin directory and switching back and forth between various bin directories can cause subtle bugs at runtime. \nAh, misunderstanding! I meant that the patch-files attached are to applied themselves to these three different repos, not more. I totally agree that cloning \"$SAGE_ROOT/local/bin\" would be a bad idea. But the content of the patch(es) did not and will not allow for that.\n\n>Another thing I would like to wait for is the switch to the ReST documentation before we allow cloing the doc repo. \nWell. It might be helpful for the ReST documentation deployment.\n\n>In the end I don't think this should be merged into 3.2 :(. \nFine, at least for me.",
+    "body": "Attachment [4370-sage_library.patch](tarball://root/attachments/some-uuid/ticket4370/4370-sage_library.patch) by GeorgSWeber created at 2008-11-04 22:00:17\n\nHi Michael,\nthanks for the review!\n\n> 4370-sage_library.patch should go to its own ticker since it is independent. \nDone, it is now #4441. I also moved the congroup.py patch away to #4442.\n\n>I would also not per default build the Sage documentation on clone\nOK. I will address that in an update.\n\n> - we do not do this for the sage library repo itself. \nYou're wrong here. See lines 68-91 of the \"sage-clone\" script, where explicitly \"sage -b branch\" is called. But let's clone the doc dir without (re-)build, OK.\n\n> I can't see seem to fine the alleged possibility to clone the sage-scripts repo. Either way, I would not recommend that we allow this since there are numerous binaries in the bin directory and switching back and forth between various bin directories can cause subtle bugs at runtime. \nAh, misunderstanding! I meant that the patch-files attached are to applied themselves to these three different repos, not more. I totally agree that cloning \"$SAGE_ROOT/local/bin\" would be a bad idea. But the content of the patch(es) did not and will not allow for that.\n\n>Another thing I would like to wait for is the switch to the ReST documentation before we allow cloing the doc repo. \nWell. It might be helpful for the ReST documentation deployment.\n\n>In the end I don't think this should be merged into 3.2 :(. \nFine, at least for me.",
     "created_at": "2008-11-04T22:00:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4370",
     "type": "issue_comment",
@@ -403,7 +403,7 @@ archive/issue_comments_032123.json:
 }
 ```
 
-Attachment
+Attachment [4370-sage_library.patch](tarball://root/attachments/some-uuid/ticket4370/4370-sage_library.patch) by GeorgSWeber created at 2008-11-04 22:00:17
 
 Hi Michael,
 thanks for the review!

@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7077
 archive/issue_comments_058521.json:
 ```json
 {
-    "body": "Attachment\n\nThere are a number of methods called `variables()` in the Sage library.  The attached patch makes sure that all of them return tuples.  (This is what univariate polynomials, and symbolics return.)",
+    "body": "Attachment [trac_7077.patch](tarball://root/attachments/some-uuid/ticket7077/trac_7077.patch) by AlexGhitza created at 2009-10-19 23:38:29\n\nThere are a number of methods called `variables()` in the Sage library.  The attached patch makes sure that all of them return tuples.  (This is what univariate polynomials, and symbolics return.)",
     "created_at": "2009-10-19T23:38:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7077",
     "type": "issue_comment",
@@ -53,7 +53,7 @@ archive/issue_comments_058521.json:
 }
 ```
 
-Attachment
+Attachment [trac_7077.patch](tarball://root/attachments/some-uuid/ticket7077/trac_7077.patch) by AlexGhitza created at 2009-10-19 23:38:29
 
 There are a number of methods called `variables()` in the Sage library.  The attached patch makes sure that all of them return tuples.  (This is what univariate polynomials, and symbolics return.)
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2765
 archive/issue_comments_018990.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2765-graph_isom_bug_and_HS.patch](tarball://root/attachments/some-uuid/ticket2765/2765-graph_isom_bug_and_HS.patch) by rlm created at 2008-04-02 07:06:06",
     "created_at": "2008-04-02T07:06:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2765",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_018990.json:
 }
 ```
 
-Attachment
+Attachment [2765-graph_isom_bug_and_HS.patch](tarball://root/attachments/some-uuid/ticket2765/2765-graph_isom_bug_and_HS.patch) by rlm created at 2008-04-02 07:06:06
 
 
 

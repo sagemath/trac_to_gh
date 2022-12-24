@@ -49,7 +49,7 @@ Original patch from David Fu
 archive/issue_comments_030803.json:
 ```json
 {
-    "body": "Attachment\n\nget doctests passing",
+    "body": "Attachment [local_so_doctests.patch](tarball://root/attachments/some-uuid/ticket4238/local_so_doctests.patch) by robertwb created at 2008-10-02 19:39:38\n\nget doctests passing",
     "created_at": "2008-10-02T19:39:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4238",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_030803.json:
 }
 ```
 
-Attachment
+Attachment [local_so_doctests.patch](tarball://root/attachments/some-uuid/ticket4238/local_so_doctests.patch) by robertwb created at 2008-10-02 19:39:38
 
 get doctests passing
 

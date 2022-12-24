@@ -192,7 +192,7 @@ But the parent quotient ring has no method _print_element.
 archive/issue_comments_019918.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2895-2.patch](tarball://root/attachments/some-uuid/ticket2895/2895-2.patch) by mhansen created at 2008-04-18 05:38:22",
     "created_at": "2008-04-18T05:38:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2895",
     "type": "issue_comment",
@@ -201,7 +201,7 @@ archive/issue_comments_019918.json:
 }
 ```
 
-Attachment
+Attachment [2895-2.patch](tarball://root/attachments/some-uuid/ticket2895/2895-2.patch) by mhansen created at 2008-04-18 05:38:22
 
 
 
@@ -280,7 +280,7 @@ I recommend acceptance.
 archive/issue_comments_019922.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2895-subs.patch](tarball://root/attachments/some-uuid/ticket2895/2895-subs.patch) by mhansen created at 2008-04-18 18:55:05",
     "created_at": "2008-04-18T18:55:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2895",
     "type": "issue_comment",
@@ -289,7 +289,7 @@ archive/issue_comments_019922.json:
 }
 ```
 
-Attachment
+Attachment [2895-subs.patch](tarball://root/attachments/some-uuid/ticket2895/2895-subs.patch) by mhansen created at 2008-04-18 18:55:05
 
 
 

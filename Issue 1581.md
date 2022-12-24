@@ -110,7 +110,7 @@ This patch fixes the problem, plus does a *lot* of other work.  This is a snapsh
 archive/issue_comments_010077.json:
 ```json
 {
-    "body": "Attachment\n\nThis has already been resolved included in Sage.",
+    "body": "Attachment [3d.hg](tarball://root/attachments/some-uuid/ticket1581/3d.hg) by robertwb created at 2008-01-15 06:14:01\n\nThis has already been resolved included in Sage.",
     "created_at": "2008-01-15T06:14:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1581",
     "type": "issue_comment",
@@ -119,7 +119,7 @@ archive/issue_comments_010077.json:
 }
 ```
 
-Attachment
+Attachment [3d.hg](tarball://root/attachments/some-uuid/ticket1581/3d.hg) by robertwb created at 2008-01-15 06:14:01
 
 This has already been resolved included in Sage.
 

@@ -232,7 +232,7 @@ Resolution: fixed
 archive/issue_comments_016002.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [doc-2371.patch](tarball://root/attachments/some-uuid/ticket2371/doc-2371.patch) by was created at 2008-03-11 02:33:34",
     "created_at": "2008-03-11T02:33:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2371",
     "type": "issue_comment",
@@ -241,7 +241,7 @@ archive/issue_comments_016002.json:
 }
 ```
 
-Attachment
+Attachment [doc-2371.patch](tarball://root/attachments/some-uuid/ticket2371/doc-2371.patch) by was created at 2008-03-11 02:33:34
 
 
 

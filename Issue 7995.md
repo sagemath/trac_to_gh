@@ -71,7 +71,7 @@ In the future we may want to merge the sage-ptest and sage-test scripts entirely
 archive/issue_comments_069830.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [scripts_7995_sage-test_error_handling.patch](tarball://root/attachments/some-uuid/ticket7995/scripts_7995_sage-test_error_handling.patch) by wjp created at 2010-01-20 05:16:15",
     "created_at": "2010-01-20T05:16:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7995",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_069830.json:
 }
 ```
 
-Attachment
+Attachment [scripts_7995_sage-test_error_handling.patch](tarball://root/attachments/some-uuid/ticket7995/scripts_7995_sage-test_error_handling.patch) by wjp created at 2010-01-20 05:16:15
 
 
 

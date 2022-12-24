@@ -88,7 +88,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2455
 archive/issue_comments_016618.json:
 ```json
 {
-    "body": "Attachment\n\napply against code repository",
+    "body": "Attachment [mpoly-ideal-docday.patch](tarball://root/attachments/some-uuid/ticket2455/mpoly-ideal-docday.patch) by malb created at 2008-03-10 12:08:11\n\napply against code repository",
     "created_at": "2008-03-10T12:08:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2455",
     "type": "issue_comment",
@@ -97,7 +97,7 @@ archive/issue_comments_016618.json:
 }
 ```
 
-Attachment
+Attachment [mpoly-ideal-docday.patch](tarball://root/attachments/some-uuid/ticket2455/mpoly-ideal-docday.patch) by malb created at 2008-03-10 12:08:11
 
 apply against code repository
 
@@ -162,7 +162,7 @@ Changing status from new to assigned.
 archive/issue_comments_016622.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [mpoly-ideal-gfan.patch](tarball://root/attachments/some-uuid/ticket2455/mpoly-ideal-gfan.patch) by malb created at 2008-03-12 16:53:03",
     "created_at": "2008-03-12T16:53:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2455",
     "type": "issue_comment",
@@ -171,7 +171,7 @@ archive/issue_comments_016622.json:
 }
 ```
 
-Attachment
+Attachment [mpoly-ideal-gfan.patch](tarball://root/attachments/some-uuid/ticket2455/mpoly-ideal-gfan.patch) by malb created at 2008-03-12 16:53:03
 
 
 
@@ -257,7 +257,7 @@ this is the UTF-8 free version of the earlier patch
 archive/issue_comments_016627.json:
 ```json
 {
-    "body": "Attachment\n\nI've uploaded an UTF-8 free version of the patch. Unfortunately, the time doesn't seem right for Umlauts in Python yet. \"Umlauts \u00fcber alles\" postponed, I reckon.",
+    "body": "Attachment [mpoly-ideal-docday-wo-utf8.patch](tarball://root/attachments/some-uuid/ticket2455/mpoly-ideal-docday-wo-utf8.patch) by malb created at 2008-03-12 18:42:36\n\nI've uploaded an UTF-8 free version of the patch. Unfortunately, the time doesn't seem right for Umlauts in Python yet. \"Umlauts \u00fcber alles\" postponed, I reckon.",
     "created_at": "2008-03-12T18:42:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2455",
     "type": "issue_comment",
@@ -266,7 +266,7 @@ archive/issue_comments_016627.json:
 }
 ```
 
-Attachment
+Attachment [mpoly-ideal-docday-wo-utf8.patch](tarball://root/attachments/some-uuid/ticket2455/mpoly-ideal-docday-wo-utf8.patch) by malb created at 2008-03-12 18:42:36
 
 I've uploaded an UTF-8 free version of the patch. Unfortunately, the time doesn't seem right for Umlauts in Python yet. "Umlauts über alles" postponed, I reckon.
 

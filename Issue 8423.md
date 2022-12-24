@@ -51,7 +51,7 @@ adds a "fractals" module to sage...
 archive/issue_comments_075495.json:
 ```json
 {
-    "body": "Attachment\n\nCarl Witty and I wrote a function for integral curvature Apollonian gaskets:\nhttp://neutraldrifts.blogspot.com/2009/01/integral-apollonian-packings-with-sage.html\nI have a Koch curve generator I can dig out as well.",
+    "body": "Attachment [trac-8423_part1.patch](tarball://root/attachments/some-uuid/ticket8423/trac-8423_part1.patch) by mhampton created at 2010-03-02 19:54:46\n\nCarl Witty and I wrote a function for integral curvature Apollonian gaskets:\nhttp://neutraldrifts.blogspot.com/2009/01/integral-apollonian-packings-with-sage.html\nI have a Koch curve generator I can dig out as well.",
     "created_at": "2010-03-02T19:54:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8423",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_075495.json:
 }
 ```
 
-Attachment
+Attachment [trac-8423_part1.patch](tarball://root/attachments/some-uuid/ticket8423/trac-8423_part1.patch) by mhampton created at 2010-03-02 19:54:46
 
 Carl Witty and I wrote a function for integral curvature Apollonian gaskets:
 http://neutraldrifts.blogspot.com/2009/01/integral-apollonian-packings-with-sage.html

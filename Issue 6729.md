@@ -216,7 +216,7 @@ What do you all think?
 archive/issue_comments_055178.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6729_incomplete.patch](tarball://root/attachments/some-uuid/ticket6729/trac_6729_incomplete.patch) by acleone created at 2010-01-19 11:40:44",
     "created_at": "2010-01-19T11:40:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6729",
     "type": "issue_comment",
@@ -225,7 +225,7 @@ archive/issue_comments_055178.json:
 }
 ```
 
-Attachment
+Attachment [trac_6729_incomplete.patch](tarball://root/attachments/some-uuid/ticket6729/trac_6729_incomplete.patch) by acleone created at 2010-01-19 11:40:44
 
 
 
@@ -252,7 +252,7 @@ Strips uniform leading spaces before evaluating sage cells
 archive/issue_comments_055180.json:
 ```json
 {
-    "body": "Attachment\n\nOk, trac_6729-leading_space.patch adds the expected behavior.\n\n```\nCELL 1:\n    u = 2\n    u = 3\nCELL 2:\nprint u  # = 3\n```\n\n\nHowever, this fails silently (regardless of the patch):\n\n```\nCELL 1:\n u = 2\n  u = 3\nCELL 2:\nprint u  # = 2\n```\n\n\nWith `%python`, it correctly throws an indentation error:\n\n```\nCELL 1:\n%python\n u = 2\n  u = 3\n# Identation error\n```\n\n\nSo this is a bug in the `%sage` compile system.",
+    "body": "Attachment [trac_6729-leading_space.patch](tarball://root/attachments/some-uuid/ticket6729/trac_6729-leading_space.patch) by acleone created at 2010-01-20 01:47:53\n\nOk, trac_6729-leading_space.patch adds the expected behavior.\n\n```\nCELL 1:\n    u = 2\n    u = 3\nCELL 2:\nprint u  # = 3\n```\n\n\nHowever, this fails silently (regardless of the patch):\n\n```\nCELL 1:\n u = 2\n  u = 3\nCELL 2:\nprint u  # = 2\n```\n\n\nWith `%python`, it correctly throws an indentation error:\n\n```\nCELL 1:\n%python\n u = 2\n  u = 3\n# Identation error\n```\n\n\nSo this is a bug in the `%sage` compile system.",
     "created_at": "2010-01-20T01:47:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6729",
     "type": "issue_comment",
@@ -261,7 +261,7 @@ archive/issue_comments_055180.json:
 }
 ```
 
-Attachment
+Attachment [trac_6729-leading_space.patch](tarball://root/attachments/some-uuid/ticket6729/trac_6729-leading_space.patch) by acleone created at 2010-01-20 01:47:53
 
 Ok, trac_6729-leading_space.patch adds the expected behavior.
 

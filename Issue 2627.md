@@ -72,7 +72,7 @@ The right fix would probably be to add a .gamma() method to the integers, and th
 archive/issue_comments_018052.json:
 ```json
 {
-    "body": "Attachment\n\n\n```\nsage: sage: [ Integer(abs(gamma(n+1))) - factorial(n) for n in range(20, 30) ]\n[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]\nsage: gamma(1/2)\nsqrt(pi)\nsage: gamma(-101/2)\n-2251799813685248*sqrt(pi)/275264606114823679801052037785492781962370429385126144787167211167753726318359375\n```\n",
+    "body": "Attachment [2627-exact-gamma.patch](tarball://root/attachments/some-uuid/ticket2627/2627-exact-gamma.patch) by robertwb created at 2008-03-26 11:17:51\n\n\n```\nsage: sage: [ Integer(abs(gamma(n+1))) - factorial(n) for n in range(20, 30) ]\n[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]\nsage: gamma(1/2)\nsqrt(pi)\nsage: gamma(-101/2)\n-2251799813685248*sqrt(pi)/275264606114823679801052037785492781962370429385126144787167211167753726318359375\n```\n",
     "created_at": "2008-03-26T11:17:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2627",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_018052.json:
 }
 ```
 
-Attachment
+Attachment [2627-exact-gamma.patch](tarball://root/attachments/some-uuid/ticket2627/2627-exact-gamma.patch) by robertwb created at 2008-03-26 11:17:51
 
 
 ```
@@ -215,7 +215,7 @@ Michael
 archive/issue_comments_018058.json:
 ```json
 {
-    "body": "Attachment\n\nMerged trac_2627_doctest-fix.patch in Sage 2.11.alpha2",
+    "body": "Attachment [trac_2627_doctest-fix.patch](tarball://root/attachments/some-uuid/ticket2627/trac_2627_doctest-fix.patch) by mabshoff created at 2008-03-27 09:35:49\n\nMerged trac_2627_doctest-fix.patch in Sage 2.11.alpha2",
     "created_at": "2008-03-27T09:35:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2627",
     "type": "issue_comment",
@@ -224,6 +224,6 @@ archive/issue_comments_018058.json:
 }
 ```
 
-Attachment
+Attachment [trac_2627_doctest-fix.patch](tarball://root/attachments/some-uuid/ticket2627/trac_2627_doctest-fix.patch) by mabshoff created at 2008-03-27 09:35:49
 
 Merged trac_2627_doctest-fix.patch in Sage 2.11.alpha2

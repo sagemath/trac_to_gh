@@ -47,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8240
 archive/issue_comments_072807.json:
 ```json
 {
-    "body": "Attachment\n\npadic base coercion",
+    "body": "Attachment [8240.patch](tarball://root/attachments/some-uuid/ticket8240/8240.patch) by roed created at 2012-02-21 01:37:03\n\npadic base coercion",
     "created_at": "2012-02-21T01:37:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8240",
     "type": "issue_comment",
@@ -56,7 +56,7 @@ archive/issue_comments_072807.json:
 }
 ```
 
-Attachment
+Attachment [8240.patch](tarball://root/attachments/some-uuid/ticket8240/8240.patch) by roed created at 2012-02-21 01:37:03
 
 padic base coercion
 
@@ -67,7 +67,7 @@ padic base coercion
 archive/issue_comments_072808.json:
 ```json
 {
-    "body": "Attachment\n\ncoercion for extensions, part 1",
+    "body": "Attachment [8240_ext1.patch](tarball://root/attachments/some-uuid/ticket8240/8240_ext1.patch) by roed created at 2012-02-21 01:40:45\n\ncoercion for extensions, part 1",
     "created_at": "2012-02-21T01:40:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8240",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_072808.json:
 }
 ```
 
-Attachment
+Attachment [8240_ext1.patch](tarball://root/attachments/some-uuid/ticket8240/8240_ext1.patch) by roed created at 2012-02-21 01:40:45
 
 coercion for extensions, part 1
 
@@ -87,7 +87,7 @@ coercion for extensions, part 1
 archive/issue_comments_072809.json:
 ```json
 {
-    "body": "Attachment\n\ncoercion for extensions, part 2",
+    "body": "Attachment [8240_ext2.patch](tarball://root/attachments/some-uuid/ticket8240/8240_ext2.patch) by roed created at 2012-02-21 01:41:26\n\ncoercion for extensions, part 2",
     "created_at": "2012-02-21T01:41:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8240",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_072809.json:
 }
 ```
 
-Attachment
+Attachment [8240_ext2.patch](tarball://root/attachments/some-uuid/ticket8240/8240_ext2.patch) by roed created at 2012-02-21 01:41:26
 
 coercion for extensions, part 2
 
@@ -548,7 +548,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_072831.json:
 ```json
 {
-    "body": "Attachment\n\nDiff against #14825 for ease of review",
+    "body": "Attachment [8240_vs_14825.diff](tarball://root/attachments/some-uuid/ticket8240/8240_vs_14825.diff) by roed created at 2017-09-20 21:59:53\n\nDiff against #14825 for ease of review",
     "created_at": "2017-09-20T21:59:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8240",
     "type": "issue_comment",
@@ -557,7 +557,7 @@ archive/issue_comments_072831.json:
 }
 ```
 
-Attachment
+Attachment [8240_vs_14825.diff](tarball://root/attachments/some-uuid/ticket8240/8240_vs_14825.diff) by roed created at 2017-09-20 21:59:53
 
 Diff against #14825 for ease of review
 

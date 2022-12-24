@@ -139,7 +139,7 @@ Changing status from new to assigned.
 archive/issue_comments_010741.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_1691.patch](tarball://root/attachments/some-uuid/ticket1691/trac_1691.patch) by craigcitro created at 2008-01-05 09:00:40",
     "created_at": "2008-01-05T09:00:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1691",
     "type": "issue_comment",
@@ -148,7 +148,7 @@ archive/issue_comments_010741.json:
 }
 ```
 
-Attachment
+Attachment [trac_1691.patch](tarball://root/attachments/some-uuid/ticket1691/trac_1691.patch) by craigcitro created at 2008-01-05 09:00:40
 
 
 
@@ -218,7 +218,7 @@ I am running a -testall overnight, so I can't guarantee there are no doctest fai
 archive/issue_comments_010744.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1691v2.patch](tarball://root/attachments/some-uuid/ticket1691/1691v2.patch) by craigcitro created at 2008-01-14 12:47:46",
     "created_at": "2008-01-14T12:47:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1691",
     "type": "issue_comment",
@@ -227,7 +227,7 @@ archive/issue_comments_010744.json:
 }
 ```
 
-Attachment
+Attachment [1691v2.patch](tarball://root/attachments/some-uuid/ticket1691/1691v2.patch) by craigcitro created at 2008-01-14 12:47:46
 
 
 

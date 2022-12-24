@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2281
 archive/issue_comments_015135.json:
 ```json
 {
-    "body": "Attachment\n\nPatch 8681.patch fixes this.  Most of the changes are dealing with the double/single underscore problem.  In addition, less use is made of pari/gp scripts for prime fields since the native code here handles more cases (larger primes), as in a new doctest which shows that we are closer to reasonable behaviour in cases such as in #351.  [The example in the doctest is a little smaller, but the example from #351 works fine in <5s).\n\nThe referee is welcome to ask for more detailed info.",
+    "body": "Attachment [8681.patch](tarball://root/attachments/some-uuid/ticket2281/8681.patch) by cremona created at 2008-02-23 22:02:05\n\nPatch 8681.patch fixes this.  Most of the changes are dealing with the double/single underscore problem.  In addition, less use is made of pari/gp scripts for prime fields since the native code here handles more cases (larger primes), as in a new doctest which shows that we are closer to reasonable behaviour in cases such as in #351.  [The example in the doctest is a little smaller, but the example from #351 works fine in <5s).\n\nThe referee is welcome to ask for more detailed info.",
     "created_at": "2008-02-23T22:02:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2281",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_015135.json:
 }
 ```
 
-Attachment
+Attachment [8681.patch](tarball://root/attachments/some-uuid/ticket2281/8681.patch) by cremona created at 2008-02-23 22:02:05
 
 Patch 8681.patch fixes this.  Most of the changes are dealing with the double/single underscore problem.  In addition, less use is made of pari/gp scripts for prime fields since the native code here handles more cases (larger primes), as in a new doctest which shows that we are closer to reasonable behaviour in cases such as in #351.  [The example in the doctest is a little smaller, but the example from #351 works fine in <5s).
 

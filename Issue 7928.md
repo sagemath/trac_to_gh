@@ -49,7 +49,7 @@ Changing status from new to needs_review.
 archive/issue_comments_069029.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7928-inject_variable-followup-nt.patch](tarball://root/attachments/some-uuid/ticket7928/trac_7928-inject_variable-followup-nt.patch) by nthiery created at 2010-01-14 09:09:28",
     "created_at": "2010-01-14T09:09:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7928",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_069029.json:
 }
 ```
 
-Attachment
+Attachment [trac_7928-inject_variable-followup-nt.patch](tarball://root/attachments/some-uuid/ticket7928/trac_7928-inject_variable-followup-nt.patch) by nthiery created at 2010-01-14 09:09:28
 
 
 

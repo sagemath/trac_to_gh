@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3036
 archive/issue_comments_020896.json:
 ```json
 {
-    "body": "Attachment\n\nOops, brown paper bag time :( - Let me check out the patch.\n\nCheers,\n\nMichael",
+    "body": "Attachment [sage-testdir-fix.patch](tarball://root/attachments/some-uuid/ticket3036/sage-testdir-fix.patch) by mabshoff created at 2008-04-27 00:43:06\n\nOops, brown paper bag time :( - Let me check out the patch.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-27T00:43:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3036",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_020896.json:
 }
 ```
 
-Attachment
+Attachment [sage-testdir-fix.patch](tarball://root/attachments/some-uuid/ticket3036/sage-testdir-fix.patch) by mabshoff created at 2008-04-27 00:43:06
 
 Oops, brown paper bag time :( - Let me check out the patch.
 

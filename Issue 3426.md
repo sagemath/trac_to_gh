@@ -77,7 +77,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3426
 archive/issue_comments_024107.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [kbessel_fixes.patch](tarball://root/attachments/some-uuid/ticket3426/kbessel_fixes.patch) by bober created at 2008-06-14 22:10:30",
     "created_at": "2008-06-14T22:10:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_024107.json:
 }
 ```
 
-Attachment
+Attachment [kbessel_fixes.patch](tarball://root/attachments/some-uuid/ticket3426/kbessel_fixes.patch) by bober created at 2008-06-14 22:10:30
 
 
 
@@ -708,7 +708,7 @@ apply instead of the previous patch
 archive/issue_comments_024135.json:
 ```json
 {
-    "body": "Attachment\n\nOK, I've replaced my patch with one that fixes the issue reported by Dan.",
+    "body": "Attachment [trac3426-fix-bessel-fns.patch](tarball://root/attachments/some-uuid/ticket3426/trac3426-fix-bessel-fns.patch) by AlexGhitza created at 2008-10-10 12:28:54\n\nOK, I've replaced my patch with one that fixes the issue reported by Dan.",
     "created_at": "2008-10-10T12:28:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
@@ -717,7 +717,7 @@ archive/issue_comments_024135.json:
 }
 ```
 
-Attachment
+Attachment [trac3426-fix-bessel-fns.patch](tarball://root/attachments/some-uuid/ticket3426/trac3426-fix-bessel-fns.patch) by AlexGhitza created at 2008-10-10 12:28:54
 
 OK, I've replaced my patch with one that fixes the issue reported by Dan.
 

@@ -60,7 +60,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1499
 archive/issue_comments_009617.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch passes a `sage -ba` and a `testall` on OSX 10.5\n\nCheers,\n\nMichael",
+    "body": "Attachment [Sage-2.9.alpha7-fix-ATLAS-linking.patch](tarball://root/attachments/some-uuid/ticket1499/Sage-2.9.alpha7-fix-ATLAS-linking.patch) by mabshoff created at 2007-12-14 00:52:31\n\nThe patch passes a `sage -ba` and a `testall` on OSX 10.5\n\nCheers,\n\nMichael",
     "created_at": "2007-12-14T00:52:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1499",
     "type": "issue_comment",
@@ -69,7 +69,7 @@ archive/issue_comments_009617.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.9.alpha7-fix-ATLAS-linking.patch](tarball://root/attachments/some-uuid/ticket1499/Sage-2.9.alpha7-fix-ATLAS-linking.patch) by mabshoff created at 2007-12-14 00:52:31
 
 The patch passes a `sage -ba` and a `testall` on OSX 10.5
 

@@ -1252,7 +1252,7 @@ Thanks very much. That clarifies the errors I should focus on. I'll work on the 
 archive/issue_comments_023158.json:
 ```json
 {
-    "body": "Attachment\n\nto be applied to 3.3.alpha6",
+    "body": "Attachment [trac_3337-gap-docstrings.patch](tarball://root/attachments/some-uuid/ticket3337/trac_3337-gap-docstrings.patch) by wdj created at 2009-02-09 03:36:19\n\nto be applied to 3.3.alpha6",
     "created_at": "2009-02-09T03:36:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
@@ -1261,7 +1261,7 @@ archive/issue_comments_023158.json:
 }
 ```
 
-Attachment
+Attachment [trac_3337-gap-docstrings.patch](tarball://root/attachments/some-uuid/ticket3337/trac_3337-gap-docstrings.patch) by wdj created at 2009-02-09 03:36:19
 
 to be applied to 3.3.alpha6
 
@@ -1381,7 +1381,7 @@ to be applied to 3.3.alpha6 with others (in order)
 archive/issue_comments_023163.json:
 ```json
 {
-    "body": "Attachment\n\nto be applied to 3.3.alpha6 with others (in order)",
+    "body": "Attachment [trac_3337-gap-docstrings2.patch](tarball://root/attachments/some-uuid/ticket3337/trac_3337-gap-docstrings2.patch) by wdj created at 2009-02-10 00:28:41\n\nto be applied to 3.3.alpha6 with others (in order)",
     "created_at": "2009-02-10T00:28:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
@@ -1390,7 +1390,7 @@ archive/issue_comments_023163.json:
 }
 ```
 
-Attachment
+Attachment [trac_3337-gap-docstrings2.patch](tarball://root/attachments/some-uuid/ticket3337/trac_3337-gap-docstrings2.patch) by wdj created at 2009-02-10 00:28:41
 
 to be applied to 3.3.alpha6 with others (in order)
 
@@ -1401,7 +1401,7 @@ to be applied to 3.3.alpha6 with others (in order)
 archive/issue_comments_023164.json:
 ```json
 {
-    "body": "Attachment\n\nto be applied to 3.3.alpha6 with others (in order)",
+    "body": "Attachment [trac_3337-gap-docstrings4.patch](tarball://root/attachments/some-uuid/ticket3337/trac_3337-gap-docstrings4.patch) by wdj created at 2009-02-10 00:29:07\n\nto be applied to 3.3.alpha6 with others (in order)",
     "created_at": "2009-02-10T00:29:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
@@ -1410,7 +1410,7 @@ archive/issue_comments_023164.json:
 }
 ```
 
-Attachment
+Attachment [trac_3337-gap-docstrings4.patch](tarball://root/attachments/some-uuid/ticket3337/trac_3337-gap-docstrings4.patch) by wdj created at 2009-02-10 00:29:07
 
 to be applied to 3.3.alpha6 with others (in order)
 
@@ -2028,7 +2028,7 @@ this does not apply for me, but was meant to work for 3.3.alpha6.
 archive/issue_comments_023179.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:50 wdj]:\n> Yes, someone changed the printing for the documentation failures in sage -testall. It used to work but maybe that was long ago.\n\nYes, it must have been broken for a long, long time. In 3.4 the documentation will be inside the devel tree, so the issue will be moot. \n\n> \n> I'm attaching a patch which makes the change to const.tex \n> you told me to make. I cannot get it to apply though and \n> don't know what I did wrong.\n\nCheck the repo, -sdist changes the version number. \n> This is again incorrect but you have now told me directly twice \n> to do this, so I will do as you say. The 5th patch does \n> exactly as you instructed. Because this does not work (as I \n> also said at least twice now), I get more failures.\n\nOk, this is what works:\n\n```\nsage: abs(Integer(M.determinant()))\n712483534798848\n```\n\nI tested with a different matrix type where it worked out of the box without the Integer constructor.\n\n<SNIP>\n\n> I did not apply the 5204 patch as I wasn't sure how that \n> should be applied not that supposedly a clone (or is it?) \n> was already seemingly created.\n \nIf you apply the patch via Sage's interface it will be applied to the current clone only. You can always do an \"hg import foo.patch\" inside devel/sage-something.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_3337-const-tex.patch](tarball://root/attachments/some-uuid/ticket3337/trac_3337-const-tex.patch) by mabshoff created at 2009-02-10 16:08:38\n\nReplying to [comment:50 wdj]:\n> Yes, someone changed the printing for the documentation failures in sage -testall. It used to work but maybe that was long ago.\n\nYes, it must have been broken for a long, long time. In 3.4 the documentation will be inside the devel tree, so the issue will be moot. \n\n> \n> I'm attaching a patch which makes the change to const.tex \n> you told me to make. I cannot get it to apply though and \n> don't know what I did wrong.\n\nCheck the repo, -sdist changes the version number. \n> This is again incorrect but you have now told me directly twice \n> to do this, so I will do as you say. The 5th patch does \n> exactly as you instructed. Because this does not work (as I \n> also said at least twice now), I get more failures.\n\nOk, this is what works:\n\n```\nsage: abs(Integer(M.determinant()))\n712483534798848\n```\n\nI tested with a different matrix type where it worked out of the box without the Integer constructor.\n\n<SNIP>\n\n> I did not apply the 5204 patch as I wasn't sure how that \n> should be applied not that supposedly a clone (or is it?) \n> was already seemingly created.\n \nIf you apply the patch via Sage's interface it will be applied to the current clone only. You can always do an \"hg import foo.patch\" inside devel/sage-something.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-10T16:08:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
@@ -2037,7 +2037,7 @@ archive/issue_comments_023179.json:
 }
 ```
 
-Attachment
+Attachment [trac_3337-const-tex.patch](tarball://root/attachments/some-uuid/ticket3337/trac_3337-const-tex.patch) by mabshoff created at 2009-02-10 16:08:38
 
 Replying to [comment:50 wdj]:
 > Yes, someone changed the printing for the documentation failures in sage -testall. It used to work but maybe that was long ago.
@@ -2110,7 +2110,7 @@ archive/issue_comments_023180.json:
 archive/issue_comments_023181.json:
 ```json
 {
-    "body": "Attachment\n\nfix \"this shouldn't happen\" issue",
+    "body": "Attachment [trac_3337-gap_subprocesses.patch](tarball://root/attachments/some-uuid/ticket3337/trac_3337-gap_subprocesses.patch) by was created at 2009-02-14 00:34:22\n\nfix \"this shouldn't happen\" issue",
     "created_at": "2009-02-14T00:34:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
@@ -2119,7 +2119,7 @@ archive/issue_comments_023181.json:
 }
 ```
 
-Attachment
+Attachment [trac_3337-gap_subprocesses.patch](tarball://root/attachments/some-uuid/ticket3337/trac_3337-gap_subprocesses.patch) by was created at 2009-02-14 00:34:22
 
 fix "this shouldn't happen" issue
 
@@ -2154,7 +2154,7 @@ Michael
 archive/issue_comments_023183.json:
 ```json
 {
-    "body": "Attachment\n\nUpdate version of wdj's patch that works :)",
+    "body": "Attachment [trac_3337-gap-docstrings5.patch](tarball://root/attachments/some-uuid/ticket3337/trac_3337-gap-docstrings5.patch) by mabshoff created at 2009-02-14 01:42:02\n\nUpdate version of wdj's patch that works :)",
     "created_at": "2009-02-14T01:42:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
@@ -2163,7 +2163,7 @@ archive/issue_comments_023183.json:
 }
 ```
 
-Attachment
+Attachment [trac_3337-gap-docstrings5.patch](tarball://root/attachments/some-uuid/ticket3337/trac_3337-gap-docstrings5.patch) by mabshoff created at 2009-02-14 01:42:02
 
 Update version of wdj's patch that works :)
 

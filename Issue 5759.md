@@ -70,7 +70,7 @@ Changing priority from minor to major.
 archive/issue_comments_045008.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [divides.patch](tarball://root/attachments/some-uuid/ticket5759/divides.patch) by kkilger created at 2009-04-11 22:10:28",
     "created_at": "2009-04-11T22:10:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5759",
     "type": "issue_comment",
@@ -79,7 +79,7 @@ archive/issue_comments_045008.json:
 }
 ```
 
-Attachment
+Attachment [divides.patch](tarball://root/attachments/some-uuid/ticket5759/divides.patch) by kkilger created at 2009-04-11 22:10:28
 
 
 
@@ -106,7 +106,7 @@ Changing assignee from somebody to was.
 archive/issue_comments_045010.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5759-doctests.patch](tarball://root/attachments/some-uuid/ticket5759/5759-doctests.patch) by kkilger created at 2009-04-11 22:44:38",
     "created_at": "2009-04-11T22:44:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5759",
     "type": "issue_comment",
@@ -115,7 +115,7 @@ archive/issue_comments_045010.json:
 }
 ```
 
-Attachment
+Attachment [5759-doctests.patch](tarball://root/attachments/some-uuid/ticket5759/5759-doctests.patch) by kkilger created at 2009-04-11 22:44:38
 
 
 
@@ -335,7 +335,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_045018.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-5759.patch](tarball://root/attachments/some-uuid/ticket5759/trac-5759.patch) by lftabera created at 2010-09-14 09:03:01",
     "created_at": "2010-09-14T09:03:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5759",
     "type": "issue_comment",
@@ -344,7 +344,7 @@ archive/issue_comments_045018.json:
 }
 ```
 
-Attachment
+Attachment [trac-5759.patch](tarball://root/attachments/some-uuid/ticket5759/trac-5759.patch) by lftabera created at 2010-09-14 09:03:01
 
 
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8716
 archive/issue_comments_079548.json:
 ```json
 {
-    "body": "Attachment\n\npatch against 4.4.alpha0",
+    "body": "Attachment [trac_8716-gamma_h_modforms.patch](tarball://root/attachments/some-uuid/ticket8716/trac_8716-gamma_h_modforms.patch) by davidloeffler created at 2010-04-19 16:56:23\n\npatch against 4.4.alpha0",
     "created_at": "2010-04-19T16:56:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8716",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_079548.json:
 }
 ```
 
-Attachment
+Attachment [trac_8716-gamma_h_modforms.patch](tarball://root/attachments/some-uuid/ticket8716/trac_8716-gamma_h_modforms.patch) by davidloeffler created at 2010-04-19 16:56:23
 
 patch against 4.4.alpha0
 
@@ -141,7 +141,7 @@ apply over previous patch
 archive/issue_comments_079554.json:
 ```json
 {
-    "body": "Attachment\n\nOops, my bad: this patch causes an error when building the documentation, due to a silly latex mistake in one of the docstrings. Here's a tiny patch which fixes that. Robert, would you mind taking a quick look to OK it?",
+    "body": "Attachment [trac_8716-docfix.patch](tarball://root/attachments/some-uuid/ticket8716/trac_8716-docfix.patch) by davidloeffler created at 2010-12-12 14:36:00\n\nOops, my bad: this patch causes an error when building the documentation, due to a silly latex mistake in one of the docstrings. Here's a tiny patch which fixes that. Robert, would you mind taking a quick look to OK it?",
     "created_at": "2010-12-12T14:36:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8716",
     "type": "issue_comment",
@@ -150,7 +150,7 @@ archive/issue_comments_079554.json:
 }
 ```
 
-Attachment
+Attachment [trac_8716-docfix.patch](tarball://root/attachments/some-uuid/ticket8716/trac_8716-docfix.patch) by davidloeffler created at 2010-12-12 14:36:00
 
 Oops, my bad: this patch causes an error when building the documentation, due to a silly latex mistake in one of the docstrings. Here's a tiny patch which fixes that. Robert, would you mind taking a quick look to OK it?
 

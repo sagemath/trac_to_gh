@@ -51,7 +51,7 @@ Changing assignee from cwitty to nthiery.
 archive/issue_comments_045269.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [lazy_attributes-fixes-5783-final.patch](tarball://root/attachments/some-uuid/ticket5783/lazy_attributes-fixes-5783-final.patch) by nthiery created at 2009-05-19 06:19:22",
     "created_at": "2009-05-19T06:19:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5783",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_045269.json:
 }
 ```
 
-Attachment
+Attachment [lazy_attributes-fixes-5783-final.patch](tarball://root/attachments/some-uuid/ticket5783/lazy_attributes-fixes-5783-final.patch) by nthiery created at 2009-05-19 06:19:22
 
 
 

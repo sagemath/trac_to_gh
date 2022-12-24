@@ -59,7 +59,7 @@ this is against sage-3.3.alpha0
 archive/issue_comments_038334.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch is just a textual substitution of \"threads\" for \"cpus\".",
+    "body": "Attachment [trac_5034.patch](tarball://root/attachments/some-uuid/ticket5034/trac_5034.patch) by was created at 2009-01-20 06:39:25\n\nThe attached patch is just a textual substitution of \"threads\" for \"cpus\".",
     "created_at": "2009-01-20T06:39:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5034",
     "type": "issue_comment",
@@ -68,7 +68,7 @@ archive/issue_comments_038334.json:
 }
 ```
 
-Attachment
+Attachment [trac_5034.patch](tarball://root/attachments/some-uuid/ticket5034/trac_5034.patch) by was created at 2009-01-20 06:39:25
 
 The attached patch is just a textual substitution of "threads" for "cpus".
 

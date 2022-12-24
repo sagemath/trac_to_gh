@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1131
 archive/issue_comments_006857.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ell_order.patch](tarball://root/attachments/some-uuid/ticket1131/ell_order.patch) by mabshoff created at 2007-11-16 11:57:00",
     "created_at": "2007-11-16T11:57:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1131",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_006857.json:
 }
 ```
 
-Attachment
+Attachment [ell_order.patch](tarball://root/attachments/some-uuid/ticket1131/ell_order.patch) by mabshoff created at 2007-11-16 11:57:00
 
 
 
@@ -49,7 +49,7 @@ Attachment
 archive/issue_comments_006858.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1131-alt.patch](tarball://root/attachments/some-uuid/ticket1131/1131-alt.patch) by robertwb created at 2007-11-18 08:59:27",
     "created_at": "2007-11-18T08:59:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1131",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_006858.json:
 }
 ```
 
-Attachment
+Attachment [1131-alt.patch](tarball://root/attachments/some-uuid/ticket1131/1131-alt.patch) by robertwb created at 2007-11-18 08:59:27
 
 
 

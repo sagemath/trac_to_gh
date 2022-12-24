@@ -235,7 +235,7 @@ sage: [J.is_principal() for J in rel_ideals]
 archive/issue_comments_008771.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-1367.patch](tarball://root/attachments/some-uuid/ticket1367/sage-1367.patch) by fwclarke created at 2008-07-18 17:57:53",
     "created_at": "2008-07-18T17:57:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1367",
     "type": "issue_comment",
@@ -244,7 +244,7 @@ archive/issue_comments_008771.json:
 }
 ```
 
-Attachment
+Attachment [sage-1367.patch](tarball://root/attachments/some-uuid/ticket1367/sage-1367.patch) by fwclarke created at 2008-07-18 17:57:53
 
 
 
@@ -481,7 +481,7 @@ Don't forget to close #4869 and #4727 after this is merged.
 archive/issue_comments_008780.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_1367.patch](tarball://root/attachments/some-uuid/ticket1367/trac_1367.patch) by ncalexan created at 2009-01-24 09:58:04",
     "created_at": "2009-01-24T09:58:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1367",
     "type": "issue_comment",
@@ -490,7 +490,7 @@ archive/issue_comments_008780.json:
 }
 ```
 
-Attachment
+Attachment [trac_1367.patch](tarball://root/attachments/some-uuid/ticket1367/trac_1367.patch) by ncalexan created at 2009-01-24 09:58:04
 
 
 
@@ -782,7 +782,7 @@ This is Nick's patch with cannonical -> canonical fixed
 archive/issue_comments_008790.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch is required due to #5069 to make Nick's patch apply",
+    "body": "Attachment [trac_1367.2.patch](tarball://root/attachments/some-uuid/ticket1367/trac_1367.2.patch) by mabshoff created at 2009-01-29 05:42:10\n\nThis patch is required due to #5069 to make Nick's patch apply",
     "created_at": "2009-01-29T05:42:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1367",
     "type": "issue_comment",
@@ -791,7 +791,7 @@ archive/issue_comments_008790.json:
 }
 ```
 
-Attachment
+Attachment [trac_1367.2.patch](tarball://root/attachments/some-uuid/ticket1367/trac_1367.2.patch) by mabshoff created at 2009-01-29 05:42:10
 
 This patch is required due to #5069 to make Nick's patch apply
 
@@ -802,7 +802,7 @@ This patch is required due to #5069 to make Nick's patch apply
 archive/issue_comments_008791.json:
 ```json
 {
-    "body": "Attachment\n\nMerged trac_1367-prebase.patch and trac_1367.2.patch in Sage 3.3.alpha3.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_1367-prebase.patch](tarball://root/attachments/some-uuid/ticket1367/trac_1367-prebase.patch) by mabshoff created at 2009-01-29 05:42:49\n\nMerged trac_1367-prebase.patch and trac_1367.2.patch in Sage 3.3.alpha3.\n\nCheers,\n\nMichael",
     "created_at": "2009-01-29T05:42:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1367",
     "type": "issue_comment",
@@ -811,7 +811,7 @@ archive/issue_comments_008791.json:
 }
 ```
 
-Attachment
+Attachment [trac_1367-prebase.patch](tarball://root/attachments/some-uuid/ticket1367/trac_1367-prebase.patch) by mabshoff created at 2009-01-29 05:42:49
 
 Merged trac_1367-prebase.patch and trac_1367.2.patch in Sage 3.3.alpha3.
 

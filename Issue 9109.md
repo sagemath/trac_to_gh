@@ -89,7 +89,7 @@ Changing assignee from sage-combinat to hivert.
 archive/issue_comments_084729.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9109-finite_set_maps-fh.2.patch](tarball://root/attachments/some-uuid/ticket9109/trac_9109-finite_set_maps-fh.2.patch) by hivert created at 2010-10-24 09:48:33",
     "created_at": "2010-10-24T09:48:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9109",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_084729.json:
 }
 ```
 
-Attachment
+Attachment [trac_9109-finite_set_maps-fh.2.patch](tarball://root/attachments/some-uuid/ticket9109/trac_9109-finite_set_maps-fh.2.patch) by hivert created at 2010-10-24 09:48:33
 
 
 
@@ -262,7 +262,7 @@ job to set the positive review :-)
 archive/issue_comments_084737.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9109-finite_set_maps-fh.patch](tarball://root/attachments/some-uuid/ticket9109/trac_9109-finite_set_maps-fh.patch) by nthiery created at 2011-04-05 21:38:53",
     "created_at": "2011-04-05T21:38:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9109",
     "type": "issue_comment",
@@ -271,7 +271,7 @@ archive/issue_comments_084737.json:
 }
 ```
 
-Attachment
+Attachment [trac_9109-finite_set_maps-fh.patch](tarball://root/attachments/some-uuid/ticket9109/trac_9109-finite_set_maps-fh.patch) by nthiery created at 2011-04-05 21:38:53
 
 
 

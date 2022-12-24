@@ -613,7 +613,7 @@ Error while running the Givaro testsuite ... exiting
 archive/issue_comments_091414.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9511_givaro_3_7_x.patch](tarball://root/attachments/some-uuid/ticket9511/trac_9511_givaro_3_7_x.patch) by malb created at 2012-06-24 15:00:51",
     "created_at": "2012-06-24T15:00:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9511",
     "type": "issue_comment",
@@ -622,7 +622,7 @@ archive/issue_comments_091414.json:
 }
 ```
 
-Attachment
+Attachment [trac_9511_givaro_3_7_x.patch](tarball://root/attachments/some-uuid/ticket9511/trac_9511_givaro_3_7_x.patch) by malb created at 2012-06-24 15:00:51
 
 
 
@@ -1140,7 +1140,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_091437.json:
 ```json
 {
-    "body": "Attachment\n\nYou should keep the\n\n```\necho >&2 Error\n```\n\ninstead of \n\n```\necho Error\n```\n\nand also the Cygwin patch and the `$SAGE_LOCAL` quoting (i.e. don't undo something from givaro-3.2.13 unless you have a reason too).",
+    "body": "Attachment [givaro-3.2.13-3.7.0.diff](tarball://root/attachments/some-uuid/ticket9511/givaro-3.2.13-3.7.0.diff) by jdemeyer created at 2012-06-27 20:41:41\n\nYou should keep the\n\n```\necho >&2 Error\n```\n\ninstead of \n\n```\necho Error\n```\n\nand also the Cygwin patch and the `$SAGE_LOCAL` quoting (i.e. don't undo something from givaro-3.2.13 unless you have a reason too).",
     "created_at": "2012-06-27T20:41:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9511",
     "type": "issue_comment",
@@ -1149,7 +1149,7 @@ archive/issue_comments_091437.json:
 }
 ```
 
-Attachment
+Attachment [givaro-3.2.13-3.7.0.diff](tarball://root/attachments/some-uuid/ticket9511/givaro-3.2.13-3.7.0.diff) by jdemeyer created at 2012-06-27 20:41:41
 
 You should keep the
 
@@ -1304,7 +1304,7 @@ Rebased patch
 archive/issue_comments_091445.json:
 ```json
 {
-    "body": "Attachment\n\nRebased patch for sage-5.3.beta1. Just a trivial rebase in `module_list.py`.",
+    "body": "Attachment [trac_9511_givaro_3_7_x.2.patch](tarball://root/attachments/some-uuid/ticket9511/trac_9511_givaro_3_7_x.2.patch) by vbraun created at 2012-08-14 02:33:39\n\nRebased patch for sage-5.3.beta1. Just a trivial rebase in `module_list.py`.",
     "created_at": "2012-08-14T02:33:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9511",
     "type": "issue_comment",
@@ -1313,7 +1313,7 @@ archive/issue_comments_091445.json:
 }
 ```
 
-Attachment
+Attachment [trac_9511_givaro_3_7_x.2.patch](tarball://root/attachments/some-uuid/ticket9511/trac_9511_givaro_3_7_x.2.patch) by vbraun created at 2012-08-14 02:33:39
 
 Rebased patch for sage-5.3.beta1. Just a trivial rebase in `module_list.py`.
 

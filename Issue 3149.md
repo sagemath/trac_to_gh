@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3149
 archive/issue_comments_021842.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [real-roots-offbyone.patch](tarball://root/attachments/some-uuid/ticket3149/real-roots-offbyone.patch) by malb created at 2008-06-03 16:29:16",
     "created_at": "2008-06-03T16:29:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3149",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_021842.json:
 }
 ```
 
-Attachment
+Attachment [real-roots-offbyone.patch](tarball://root/attachments/some-uuid/ticket3149/real-roots-offbyone.patch) by malb created at 2008-06-03 16:29:16
 
 
 

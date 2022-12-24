@@ -115,7 +115,7 @@ Changing status from new to needs_review.
 archive/issue_comments_078949.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8675_remove_ambient_space_constructor.patch](tarball://root/attachments/some-uuid/ticket8675/trac_8675_remove_ambient_space_constructor.patch) by novoselt created at 2010-04-11 23:36:55",
     "created_at": "2010-04-11T23:36:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8675",
     "type": "issue_comment",
@@ -124,7 +124,7 @@ archive/issue_comments_078949.json:
 }
 ```
 
-Attachment
+Attachment [trac_8675_remove_ambient_space_constructor.patch](tarball://root/attachments/some-uuid/ticket8675/trac_8675_remove_ambient_space_constructor.patch) by novoselt created at 2010-04-11 23:36:55
 
 
 

@@ -94,7 +94,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2575
 archive/issue_comments_017590.json:
 ```json
 {
-    "body": "Attachment\n\nconfig.log produced by the configure process, for debugging, see BASECC variable",
+    "body": "Attachment [config.log](tarball://root/attachments/some-uuid/ticket2575/config.log) by schilly created at 2008-03-17 18:29:10\n\nconfig.log produced by the configure process, for debugging, see BASECC variable",
     "created_at": "2008-03-17T18:29:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2575",
     "type": "issue_comment",
@@ -103,7 +103,7 @@ archive/issue_comments_017590.json:
 }
 ```
 
-Attachment
+Attachment [config.log](tarball://root/attachments/some-uuid/ticket2575/config.log) by schilly created at 2008-03-17 18:29:10
 
 config.log produced by the configure process, for debugging, see BASECC variable
 

@@ -63,7 +63,7 @@ Changing status from new to needs_review.
 archive/issue_comments_073546.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Cell_complexes.patch](tarball://root/attachments/some-uuid/ticket8302/Cell_complexes.patch) by jhpalmieri created at 2010-02-22 18:02:59",
     "created_at": "2010-02-22T18:02:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8302",
     "type": "issue_comment",
@@ -72,7 +72,7 @@ archive/issue_comments_073546.json:
 }
 ```
 
-Attachment
+Attachment [Cell_complexes.patch](tarball://root/attachments/some-uuid/ticket8302/Cell_complexes.patch) by jhpalmieri created at 2010-02-22 18:02:59
 
 
 
@@ -340,7 +340,7 @@ diff -r 0fa662e0a843 sage/interfaces/chomp.py
 archive/issue_comments_073556.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of previous patch",
+    "body": "Attachment [trac_8302-reviewer.patch](tarball://root/attachments/some-uuid/ticket8302/trac_8302-reviewer.patch) by mvngu created at 2010-03-02 13:00:18\n\napply on top of previous patch",
     "created_at": "2010-03-02T13:00:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8302",
     "type": "issue_comment",
@@ -349,7 +349,7 @@ archive/issue_comments_073556.json:
 }
 ```
 
-Attachment
+Attachment [trac_8302-reviewer.patch](tarball://root/attachments/some-uuid/ticket8302/trac_8302-reviewer.patch) by mvngu created at 2010-03-02 13:00:18
 
 apply on top of previous patch
 
@@ -482,7 +482,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_073563.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of other patches",
+    "body": "Attachment [trac_8302-pickle.patch](tarball://root/attachments/some-uuid/ticket8302/trac_8302-pickle.patch) by jhpalmieri created at 2010-03-02 19:36:06\n\napply on top of other patches",
     "created_at": "2010-03-02T19:36:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8302",
     "type": "issue_comment",
@@ -491,7 +491,7 @@ archive/issue_comments_073563.json:
 }
 ```
 
-Attachment
+Attachment [trac_8302-pickle.patch](tarball://root/attachments/some-uuid/ticket8302/trac_8302-pickle.patch) by jhpalmieri created at 2010-03-02 19:36:06
 
 apply on top of other patches
 

@@ -68,7 +68,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2074
 archive/issue_comments_013416.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2074-permgroup_element_fix.patch](tarball://root/attachments/some-uuid/ticket2074/2074-permgroup_element_fix.patch) by boothby created at 2008-02-06 10:31:26",
     "created_at": "2008-02-06T10:31:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2074",
     "type": "issue_comment",
@@ -77,7 +77,7 @@ archive/issue_comments_013416.json:
 }
 ```
 
-Attachment
+Attachment [2074-permgroup_element_fix.patch](tarball://root/attachments/some-uuid/ticket2074/2074-permgroup_element_fix.patch) by boothby created at 2008-02-06 10:31:26
 
 
 
@@ -86,7 +86,7 @@ Attachment
 archive/issue_comments_013417.json:
 ```json
 {
-    "body": "Attachment\n\nApply the second patch -- positive review.",
+    "body": "Attachment [2074.patch](tarball://root/attachments/some-uuid/ticket2074/2074.patch) by mhansen created at 2008-02-07 08:26:01\n\nApply the second patch -- positive review.",
     "created_at": "2008-02-07T08:26:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2074",
     "type": "issue_comment",
@@ -95,7 +95,7 @@ archive/issue_comments_013417.json:
 }
 ```
 
-Attachment
+Attachment [2074.patch](tarball://root/attachments/some-uuid/ticket2074/2074.patch) by mhansen created at 2008-02-07 08:26:01
 
 Apply the second patch -- positive review.
 

@@ -263,7 +263,7 @@ Total time for all tests: 53.1 seconds
 archive/issue_comments_073420.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8289_wordmorphism_call-sl.patch](tarball://root/attachments/some-uuid/ticket8289/trac_8289_wordmorphism_call-sl.patch) by slabbe created at 2010-02-26 23:57:38",
     "created_at": "2010-02-26T23:57:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8289",
     "type": "issue_comment",
@@ -272,7 +272,7 @@ archive/issue_comments_073420.json:
 }
 ```
 
-Attachment
+Attachment [trac_8289_wordmorphism_call-sl.patch](tarball://root/attachments/some-uuid/ticket8289/trac_8289_wordmorphism_call-sl.patch) by slabbe created at 2010-02-26 23:57:38
 
 
 
@@ -408,7 +408,7 @@ Uploading the review patch in a few seconds.
 archive/issue_comments_073426.json:
 ```json
 {
-    "body": "Attachment\n\nReview - doc changes and empty word case -- apply on top of the first patch",
+    "body": "Attachment [trac_8289_review-abm.patch](tarball://root/attachments/some-uuid/ticket8289/trac_8289_review-abm.patch) by abmasse created at 2010-02-28 23:40:47\n\nReview - doc changes and empty word case -- apply on top of the first patch",
     "created_at": "2010-02-28T23:40:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8289",
     "type": "issue_comment",
@@ -417,7 +417,7 @@ archive/issue_comments_073426.json:
 }
 ```
 
-Attachment
+Attachment [trac_8289_review-abm.patch](tarball://root/attachments/some-uuid/ticket8289/trac_8289_review-abm.patch) by abmasse created at 2010-02-28 23:40:47
 
 Review - doc changes and empty word case -- apply on top of the first patch
 

@@ -49,7 +49,7 @@ Some concerns about this were raised on IRC.  It seems that the real problem is 
 archive/issue_comments_018320.json:
 ```json
 {
-    "body": "Attachment\n\nlooks good to me.",
+    "body": "Attachment [2661.patch](tarball://root/attachments/some-uuid/ticket2661/2661.patch) by jason created at 2008-03-24 21:26:49\n\nlooks good to me.",
     "created_at": "2008-03-24T21:26:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2661",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_018320.json:
 }
 ```
 
-Attachment
+Attachment [2661.patch](tarball://root/attachments/some-uuid/ticket2661/2661.patch) by jason created at 2008-03-24 21:26:49
 
 looks good to me.
 

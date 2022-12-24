@@ -36,7 +36,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1763
 archive/issue_comments_011133.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch adds the most common norm used for matrices: 1,2,\\inf and Frobenius (and \"entry-wise norm\"). 2 points:\n* I don't believe there's a general formula for the p-norm, although I hear estimations can be computed. I could be wrong though.\n* I stuck this in matrix2.pyx and arbitrarily chose to use convert anything to RDF matrices since RDF matrices actually have a SVD method (which is needed for the 2-norm). I'd like to hear people comments on that.",
+    "body": "Attachment [trac_1763via2512.patch](tarball://root/attachments/some-uuid/ticket1763/trac_1763via2512.patch) by dfdeshom created at 2008-03-28 22:12:12\n\nThis patch adds the most common norm used for matrices: 1,2,\\inf and Frobenius (and \"entry-wise norm\"). 2 points:\n* I don't believe there's a general formula for the p-norm, although I hear estimations can be computed. I could be wrong though.\n* I stuck this in matrix2.pyx and arbitrarily chose to use convert anything to RDF matrices since RDF matrices actually have a SVD method (which is needed for the 2-norm). I'd like to hear people comments on that.",
     "created_at": "2008-03-28T22:12:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1763",
     "type": "issue_comment",
@@ -45,7 +45,7 @@ archive/issue_comments_011133.json:
 }
 ```
 
-Attachment
+Attachment [trac_1763via2512.patch](tarball://root/attachments/some-uuid/ticket1763/trac_1763via2512.patch) by dfdeshom created at 2008-03-28 22:12:12
 
 This patch adds the most common norm used for matrices: 1,2,\inf and Frobenius (and "entry-wise norm"). 2 points:
 * I don't believe there's a general formula for the p-norm, although I hear estimations can be computed. I could be wrong though.
@@ -58,7 +58,7 @@ This patch adds the most common norm used for matrices: 1,2,\inf and Frobenius (
 archive/issue_comments_011134.json:
 ```json
 {
-    "body": "Attachment\n\napply after the above patch",
+    "body": "Attachment [1763-2.patch](tarball://root/attachments/some-uuid/ticket1763/1763-2.patch) by AlexGhitza created at 2008-04-01 04:45:02\n\napply after the above patch",
     "created_at": "2008-04-01T04:45:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1763",
     "type": "issue_comment",
@@ -67,7 +67,7 @@ archive/issue_comments_011134.json:
 }
 ```
 
-Attachment
+Attachment [1763-2.patch](tarball://root/attachments/some-uuid/ticket1763/1763-2.patch) by AlexGhitza created at 2008-04-01 04:45:02
 
 apply after the above patch
 
@@ -146,7 +146,7 @@ apply instead of the other patches
 archive/issue_comments_011138.json:
 ```json
 {
-    "body": "Attachment\n\nI modified the previous patches so that norm() works correctly on matrices with negative and/or complex entries.  I also added a conjugate() function for conjugating a complex matrix.\n\n1763-replacement.patch should be applied instead of the previous patches.",
+    "body": "Attachment [1763-replacement.patch](tarball://root/attachments/some-uuid/ticket1763/1763-replacement.patch) by AlexGhitza created at 2008-04-09 13:51:35\n\nI modified the previous patches so that norm() works correctly on matrices with negative and/or complex entries.  I also added a conjugate() function for conjugating a complex matrix.\n\n1763-replacement.patch should be applied instead of the previous patches.",
     "created_at": "2008-04-09T13:51:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1763",
     "type": "issue_comment",
@@ -155,7 +155,7 @@ archive/issue_comments_011138.json:
 }
 ```
 
-Attachment
+Attachment [1763-replacement.patch](tarball://root/attachments/some-uuid/ticket1763/1763-replacement.patch) by AlexGhitza created at 2008-04-09 13:51:35
 
 I modified the previous patches so that norm() works correctly on matrices with negative and/or complex entries.  I also added a conjugate() function for conjugating a complex matrix.
 

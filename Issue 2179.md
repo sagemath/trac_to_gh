@@ -58,7 +58,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2179
 archive/issue_comments_014301.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [mpoly-factor.patch](tarball://root/attachments/some-uuid/ticket2179/mpoly-factor.patch) by jbmohler created at 2008-02-16 20:46:15",
     "created_at": "2008-02-16T20:46:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2179",
     "type": "issue_comment",
@@ -67,7 +67,7 @@ archive/issue_comments_014301.json:
 }
 ```
 
-Attachment
+Attachment [mpoly-factor.patch](tarball://root/attachments/some-uuid/ticket2179/mpoly-factor.patch) by jbmohler created at 2008-02-16 20:46:15
 
 
 

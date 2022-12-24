@@ -46,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2813
 archive/issue_comments_019307.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2813-splitcell.patch](tarball://root/attachments/some-uuid/ticket2813/2813-splitcell.patch) by boothby created at 2008-04-05 19:33:18",
     "created_at": "2008-04-05T19:33:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2813",
     "type": "issue_comment",
@@ -55,7 +55,7 @@ archive/issue_comments_019307.json:
 }
 ```
 
-Attachment
+Attachment [2813-splitcell.patch](tarball://root/attachments/some-uuid/ticket2813/2813-splitcell.patch) by boothby created at 2008-04-05 19:33:18
 
 
 
@@ -125,7 +125,7 @@ That has to be fixed before this patch gets accepted.  Even javascript functions
 archive/issue_comments_019311.json:
 ```json
 {
-    "body": "Attachment\n\nthis should be applied after tom's first patch",
+    "body": "Attachment [sage-2813.patch](tarball://root/attachments/some-uuid/ticket2813/sage-2813.patch) by was created at 2008-04-06 02:29:09\n\nthis should be applied after tom's first patch",
     "created_at": "2008-04-06T02:29:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2813",
     "type": "issue_comment",
@@ -134,7 +134,7 @@ archive/issue_comments_019311.json:
 }
 ```
 
-Attachment
+Attachment [sage-2813.patch](tarball://root/attachments/some-uuid/ticket2813/sage-2813.patch) by was created at 2008-04-06 02:29:09
 
 this should be applied after tom's first patch
 
@@ -145,7 +145,7 @@ this should be applied after tom's first patch
 archive/issue_comments_019312.json:
 ```json
 {
-    "body": "Attachment\n\nthis adds opera support, at least under os x.",
+    "body": "Attachment [sage-2813_part3.patch](tarball://root/attachments/some-uuid/ticket2813/sage-2813_part3.patch) by was created at 2008-04-06 03:58:23\n\nthis adds opera support, at least under os x.",
     "created_at": "2008-04-06T03:58:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2813",
     "type": "issue_comment",
@@ -154,7 +154,7 @@ archive/issue_comments_019312.json:
 }
 ```
 
-Attachment
+Attachment [sage-2813_part3.patch](tarball://root/attachments/some-uuid/ticket2813/sage-2813_part3.patch) by was created at 2008-04-06 03:58:23
 
 this adds opera support, at least under os x.
 
@@ -165,7 +165,7 @@ this adds opera support, at least under os x.
 archive/issue_comments_019313.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2813_4.patch](tarball://root/attachments/some-uuid/ticket2813/2813_4.patch) by boothby created at 2008-04-06 05:31:23",
     "created_at": "2008-04-06T05:31:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2813",
     "type": "issue_comment",
@@ -174,7 +174,7 @@ archive/issue_comments_019313.json:
 }
 ```
 
-Attachment
+Attachment [2813_4.patch](tarball://root/attachments/some-uuid/ticket2813/2813_4.patch) by boothby created at 2008-04-06 05:31:23
 
 
 

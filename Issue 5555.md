@@ -316,7 +316,7 @@ and it will be typeset correctly.
 archive/issue_comments_043215.json:
 ```json
 {
-    "body": "Attachment\n\n(don't use, obsolete)",
+    "body": "Attachment [doc-tex-macros.patch](tarball://root/attachments/some-uuid/ticket5555/doc-tex-macros.patch) by jhpalmieri created at 2009-03-24 20:20:18\n\n(don't use, obsolete)",
     "created_at": "2009-03-24T20:20:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5555",
     "type": "issue_comment",
@@ -325,7 +325,7 @@ archive/issue_comments_043215.json:
 }
 ```
 
-Attachment
+Attachment [doc-tex-macros.patch](tarball://root/attachments/some-uuid/ticket5555/doc-tex-macros.patch) by jhpalmieri created at 2009-03-24 20:20:18
 
 (don't use, obsolete)
 
@@ -336,7 +336,7 @@ Attachment
 archive/issue_comments_043216.json:
 ```json
 {
-    "body": "Attachment\n\n(don't use, obsolete)",
+    "body": "Attachment [new-macros.2.patch](tarball://root/attachments/some-uuid/ticket5555/new-macros.2.patch) by jhpalmieri created at 2009-03-24 20:20:51\n\n(don't use, obsolete)",
     "created_at": "2009-03-24T20:20:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5555",
     "type": "issue_comment",
@@ -345,7 +345,7 @@ archive/issue_comments_043216.json:
 }
 ```
 
-Attachment
+Attachment [new-macros.2.patch](tarball://root/attachments/some-uuid/ticket5555/new-macros.2.patch) by jhpalmieri created at 2009-03-24 20:20:51
 
 (don't use, obsolete)
 
@@ -356,7 +356,7 @@ Attachment
 archive/issue_comments_043217.json:
 ```json
 {
-    "body": "Attachment\n\n(don't use, obsolete)",
+    "body": "Attachment [new-macros.patch](tarball://root/attachments/some-uuid/ticket5555/new-macros.patch) by jhpalmieri created at 2009-03-24 20:21:14\n\n(don't use, obsolete)",
     "created_at": "2009-03-24T20:21:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5555",
     "type": "issue_comment",
@@ -365,7 +365,7 @@ archive/issue_comments_043217.json:
 }
 ```
 
-Attachment
+Attachment [new-macros.patch](tarball://root/attachments/some-uuid/ticket5555/new-macros.patch) by jhpalmieri created at 2009-03-24 20:21:14
 
 (don't use, obsolete)
 
@@ -394,7 +394,7 @@ apply this one first
 archive/issue_comments_043219.json:
 ```json
 {
-    "body": "Attachment\n\n(Is there a way to delete attachments?)",
+    "body": "Attachment [new-macros-with-jsmath.patch](tarball://root/attachments/some-uuid/ticket5555/new-macros-with-jsmath.patch) by jhpalmieri created at 2009-03-24 20:22:38\n\n(Is there a way to delete attachments?)",
     "created_at": "2009-03-24T20:22:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5555",
     "type": "issue_comment",
@@ -403,7 +403,7 @@ archive/issue_comments_043219.json:
 }
 ```
 
-Attachment
+Attachment [new-macros-with-jsmath.patch](tarball://root/attachments/some-uuid/ticket5555/new-macros-with-jsmath.patch) by jhpalmieri created at 2009-03-24 20:22:38
 
 (Is there a way to delete attachments?)
 
@@ -650,7 +650,7 @@ apply this one second
 archive/issue_comments_043228.json:
 ```json
 {
-    "body": "Attachment\n\nOkay, here's a new patch with revised doctests.",
+    "body": "Attachment [5555-second.patch](tarball://root/attachments/some-uuid/ticket5555/5555-second.patch) by jhpalmieri created at 2009-04-10 22:56:17\n\nOkay, here's a new patch with revised doctests.",
     "created_at": "2009-04-10T22:56:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5555",
     "type": "issue_comment",
@@ -659,7 +659,7 @@ archive/issue_comments_043228.json:
 }
 ```
 
-Attachment
+Attachment [5555-second.patch](tarball://root/attachments/some-uuid/ticket5555/5555-second.patch) by jhpalmieri created at 2009-04-10 22:56:17
 
 Okay, here's a new patch with revised doctests.
 

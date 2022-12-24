@@ -73,7 +73,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3869
 archive/issue_comments_027578.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch fixes this by defining a new cmp function for curve codes which gets it right.\n\nThis should apply to 3.1.\n\nI have doctested the new functions, and also checked that ell_rational_field doctests ok.",
+    "body": "Attachment [sage-trac3869.patch](tarball://root/attachments/some-uuid/ticket3869/sage-trac3869.patch) by cremona created at 2008-08-15 10:29:33\n\nThe attached patch fixes this by defining a new cmp function for curve codes which gets it right.\n\nThis should apply to 3.1.\n\nI have doctested the new functions, and also checked that ell_rational_field doctests ok.",
     "created_at": "2008-08-15T10:29:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3869",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_027578.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac3869.patch](tarball://root/attachments/some-uuid/ticket3869/sage-trac3869.patch) by cremona created at 2008-08-15 10:29:33
 
 The attached patch fixes this by defining a new cmp function for curve codes which gets it right.
 
@@ -119,7 +119,7 @@ Michael
 archive/issue_comments_027580.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.\n\nI added one more doctest; both patches should be applied.",
+    "body": "Attachment [trac3869-extra-doctest.patch](tarball://root/attachments/some-uuid/ticket3869/trac3869-extra-doctest.patch) by cwitty created at 2008-08-23 21:35:34\n\nLooks good to me.\n\nI added one more doctest; both patches should be applied.",
     "created_at": "2008-08-23T21:35:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3869",
     "type": "issue_comment",
@@ -128,7 +128,7 @@ archive/issue_comments_027580.json:
 }
 ```
 
-Attachment
+Attachment [trac3869-extra-doctest.patch](tarball://root/attachments/some-uuid/ticket3869/trac3869-extra-doctest.patch) by cwitty created at 2008-08-23 21:35:34
 
 Looks good to me.
 

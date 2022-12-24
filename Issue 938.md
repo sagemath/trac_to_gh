@@ -158,7 +158,7 @@ The problem is in the else block, where query is something. The problem is, this
 archive/issue_comments_005738.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [7087.patch](tarball://root/attachments/some-uuid/ticket938/7087.patch) by rlm created at 2007-10-24 01:58:42",
     "created_at": "2007-10-24T01:58:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/938",
     "type": "issue_comment",
@@ -167,7 +167,7 @@ archive/issue_comments_005738.json:
 }
 ```
 
-Attachment
+Attachment [7087.patch](tarball://root/attachments/some-uuid/ticket938/7087.patch) by rlm created at 2007-10-24 01:58:42
 
 
 

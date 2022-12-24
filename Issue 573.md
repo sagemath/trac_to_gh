@@ -73,7 +73,7 @@ Resolution: fixed
 archive/issue_comments_002977.json:
 ```json
 {
-    "body": "Attachment\n\nThis was due to superflip being viewed as an element of Z (with one generator). Obviously the solution was trivial. \n\nI've updated it so it now casts the element into the parent of words.",
+    "body": "Attachment [permgroup-fix.hg](tarball://root/attachments/some-uuid/ticket573/permgroup-fix.hg) by robertwb created at 2007-09-06 20:18:08\n\nThis was due to superflip being viewed as an element of Z (with one generator). Obviously the solution was trivial. \n\nI've updated it so it now casts the element into the parent of words.",
     "created_at": "2007-09-06T20:18:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/573",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_002977.json:
 }
 ```
 
-Attachment
+Attachment [permgroup-fix.hg](tarball://root/attachments/some-uuid/ticket573/permgroup-fix.hg) by robertwb created at 2007-09-06 20:18:08
 
 This was due to superflip being viewed as an element of Z (with one generator). Obviously the solution was trivial. 
 

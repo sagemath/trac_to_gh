@@ -207,7 +207,7 @@ gdb says:
 archive/issue_comments_026302.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3706.patch](tarball://root/attachments/some-uuid/ticket3706/sage-3706.patch) by was created at 2008-07-25 19:44:43",
     "created_at": "2008-07-25T19:44:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3706",
     "type": "issue_comment",
@@ -216,7 +216,7 @@ archive/issue_comments_026302.json:
 }
 ```
 
-Attachment
+Attachment [sage-3706.patch](tarball://root/attachments/some-uuid/ticket3706/sage-3706.patch) by was created at 2008-07-25 19:44:43
 
 
 

@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9140
 archive/issue_comments_085328.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-9140-normalized_laplacian.patch](tarball://root/attachments/some-uuid/ticket9140/trac-9140-normalized_laplacian.patch) by jason created at 2010-06-04 20:20:21",
     "created_at": "2010-06-04T20:20:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9140",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_085328.json:
 }
 ```
 
-Attachment
+Attachment [trac-9140-normalized_laplacian.patch](tarball://root/attachments/some-uuid/ticket9140/trac-9140-normalized_laplacian.patch) by jason created at 2010-06-04 20:20:21
 
 
 

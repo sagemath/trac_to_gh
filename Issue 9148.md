@@ -124,7 +124,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_085419.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sagenb-0.8-fix-deprecated-sha-module.patch](tarball://root/attachments/some-uuid/ticket9148/sagenb-0.8-fix-deprecated-sha-module.patch) by cschwan created at 2010-09-30 10:37:19",
     "created_at": "2010-09-30T10:37:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9148",
     "type": "issue_comment",
@@ -133,7 +133,7 @@ archive/issue_comments_085419.json:
 }
 ```
 
-Attachment
+Attachment [sagenb-0.8-fix-deprecated-sha-module.patch](tarball://root/attachments/some-uuid/ticket9148/sagenb-0.8-fix-deprecated-sha-module.patch) by cschwan created at 2010-09-30 10:37:19
 
 
 
@@ -196,7 +196,7 @@ Rebase to fix failed "hunk".  Apply only this patch.
 archive/issue_comments_085423.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached a rebased patch that fixes a failed \"hunk.\"",
+    "body": "Attachment [sagenb-0.8-fix-deprecated-sha-module.2.patch](tarball://root/attachments/some-uuid/ticket9148/sagenb-0.8-fix-deprecated-sha-module.2.patch) by mpatel created at 2010-10-03 10:12:06\n\nI've attached a rebased patch that fixes a failed \"hunk.\"",
     "created_at": "2010-10-03T10:12:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9148",
     "type": "issue_comment",
@@ -205,7 +205,7 @@ archive/issue_comments_085423.json:
 }
 ```
 
-Attachment
+Attachment [sagenb-0.8-fix-deprecated-sha-module.2.patch](tarball://root/attachments/some-uuid/ticket9148/sagenb-0.8-fix-deprecated-sha-module.2.patch) by mpatel created at 2010-10-03 10:12:06
 
 I've attached a rebased patch that fixes a failed "hunk."
 

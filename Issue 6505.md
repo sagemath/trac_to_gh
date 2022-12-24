@@ -202,7 +202,7 @@ Here is a new version of the patch which doesn't give me this error message.
 archive/issue_comments_052999.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6505_prerelease.patch](tarball://root/attachments/some-uuid/ticket6505/trac_6505_prerelease.patch) by jhpalmieri created at 2009-07-19 17:43:20",
     "created_at": "2009-07-19T17:43:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6505",
     "type": "issue_comment",
@@ -211,7 +211,7 @@ archive/issue_comments_052999.json:
 }
 ```
 
-Attachment
+Attachment [trac_6505_prerelease.patch](tarball://root/attachments/some-uuid/ticket6505/trac_6505_prerelease.patch) by jhpalmieri created at 2009-07-19 17:43:20
 
 
 

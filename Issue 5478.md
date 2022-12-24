@@ -269,7 +269,7 @@ deprecate RestrictedPartitions and fix up some documentation
 archive/issue_comments_042494.json:
 ```json
 {
-    "body": "Attachment\n\nimplement new Partitions class with parts_in keyword",
+    "body": "Attachment [trac_5478-1.patch](tarball://root/attachments/some-uuid/ticket5478/trac_5478-1.patch) by ddrake created at 2009-04-09 02:24:31\n\nimplement new Partitions class with parts_in keyword",
     "created_at": "2009-04-09T02:24:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5478",
     "type": "issue_comment",
@@ -278,7 +278,7 @@ archive/issue_comments_042494.json:
 }
 ```
 
-Attachment
+Attachment [trac_5478-1.patch](tarball://root/attachments/some-uuid/ticket5478/trac_5478-1.patch) by ddrake created at 2009-04-09 02:24:31
 
 implement new Partitions class with parts_in keyword
 
@@ -289,7 +289,7 @@ implement new Partitions class with parts_in keyword
 archive/issue_comments_042495.json:
 ```json
 {
-    "body": "Attachment\n\nI've updated the patches to apply on top of 3.4.1.rc1.",
+    "body": "Attachment [trac_5478-2.patch](tarball://root/attachments/some-uuid/ticket5478/trac_5478-2.patch) by ddrake created at 2009-04-09 02:25:27\n\nI've updated the patches to apply on top of 3.4.1.rc1.",
     "created_at": "2009-04-09T02:25:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5478",
     "type": "issue_comment",
@@ -298,7 +298,7 @@ archive/issue_comments_042495.json:
 }
 ```
 
-Attachment
+Attachment [trac_5478-2.patch](tarball://root/attachments/some-uuid/ticket5478/trac_5478-2.patch) by ddrake created at 2009-04-09 02:25:27
 
 I've updated the patches to apply on top of 3.4.1.rc1.
 
@@ -419,7 +419,7 @@ Improved doctests for deprecation warnings.
 archive/issue_comments_042500.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch looks good. The doctests passed except that depending on the base the doctests numbers may differ. So I added a review patch which replace the explicit doctest numbers with `...`. This should solve this problem. \n\nI'm giving a positive review... Though maybe someone should reread my trivial review patch. \n\nConcerning the script it is quite redundant with the .check() method we'll have with categories.   \n\nFlorent",
+    "body": "Attachment [trac_5478-review.patch](tarball://root/attachments/some-uuid/ticket5478/trac_5478-review.patch) by hivert created at 2009-04-12 16:08:06\n\nThe patch looks good. The doctests passed except that depending on the base the doctests numbers may differ. So I added a review patch which replace the explicit doctest numbers with `...`. This should solve this problem. \n\nI'm giving a positive review... Though maybe someone should reread my trivial review patch. \n\nConcerning the script it is quite redundant with the .check() method we'll have with categories.   \n\nFlorent",
     "created_at": "2009-04-12T16:08:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5478",
     "type": "issue_comment",
@@ -428,7 +428,7 @@ archive/issue_comments_042500.json:
 }
 ```
 
-Attachment
+Attachment [trac_5478-review.patch](tarball://root/attachments/some-uuid/ticket5478/trac_5478-review.patch) by hivert created at 2009-04-12 16:08:06
 
 The patch looks good. The doctests passed except that depending on the base the doctests numbers may differ. So I added a review patch which replace the explicit doctest numbers with `...`. This should solve this problem. 
 

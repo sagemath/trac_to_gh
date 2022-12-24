@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5848
 archive/issue_comments_046144.json:
 ```json
 {
-    "body": "Attachment\n\nPatch choked twice on `modular/dirichlet.py`, which seems odd, given how fresh it is, and I can't really tell why.  I was applying it to an upgraded 3.4.1.rc4   Maybe it will patch better under mabshoff's firm guidance.\n\nBuilds just fine.  Passes `sage -testall`, except some unpickling errors in `structure/sage_object.pyx` and `algebras/quaternion_algebra_element.py` concerning `QuaternionAlgebraElements`, but the changes to these files don't appear implicated in these errors,\n\nDocumentation builds fine as well (PDF of reference manual) with no TeX errors.\n\nPositive review, subject to the business above about patching `modular/dirichlet.py`.",
+    "body": "Attachment [untabify.patch](tarball://root/attachments/some-uuid/ticket5848/untabify.patch) by rbeezer created at 2009-04-22 04:45:07\n\nPatch choked twice on `modular/dirichlet.py`, which seems odd, given how fresh it is, and I can't really tell why.  I was applying it to an upgraded 3.4.1.rc4   Maybe it will patch better under mabshoff's firm guidance.\n\nBuilds just fine.  Passes `sage -testall`, except some unpickling errors in `structure/sage_object.pyx` and `algebras/quaternion_algebra_element.py` concerning `QuaternionAlgebraElements`, but the changes to these files don't appear implicated in these errors,\n\nDocumentation builds fine as well (PDF of reference manual) with no TeX errors.\n\nPositive review, subject to the business above about patching `modular/dirichlet.py`.",
     "created_at": "2009-04-22T04:45:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5848",
     "type": "issue_comment",
@@ -43,7 +43,7 @@ archive/issue_comments_046144.json:
 }
 ```
 
-Attachment
+Attachment [untabify.patch](tarball://root/attachments/some-uuid/ticket5848/untabify.patch) by rbeezer created at 2009-04-22 04:45:07
 
 Patch choked twice on `modular/dirichlet.py`, which seems odd, given how fresh it is, and I can't really tell why.  I was applying it to an upgraded 3.4.1.rc4   Maybe it will patch better under mabshoff's firm guidance.
 
@@ -151,7 +151,7 @@ John's patch with the changes for three no longer existing files removed.
 archive/issue_comments_046149.json:
 ```json
 {
-    "body": "Attachment\n\nMerged trac_5848_untabify.patch in Sage 3.4.2.alpha0.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_5848_untabify.patch](tarball://root/attachments/some-uuid/ticket5848/trac_5848_untabify.patch) by mabshoff created at 2009-04-24 09:27:49\n\nMerged trac_5848_untabify.patch in Sage 3.4.2.alpha0.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-24T09:27:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5848",
     "type": "issue_comment",
@@ -160,7 +160,7 @@ archive/issue_comments_046149.json:
 }
 ```
 
-Attachment
+Attachment [trac_5848_untabify.patch](tarball://root/attachments/some-uuid/ticket5848/trac_5848_untabify.patch) by mabshoff created at 2009-04-24 09:27:49
 
 Merged trac_5848_untabify.patch in Sage 3.4.2.alpha0.
 

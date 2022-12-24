@@ -92,7 +92,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_093574.json:
 ```json
 {
-    "body": "Attachment\n\nThis is obviously code that went in before the referee process :).",
+    "body": "Attachment [9649.patch](tarball://root/attachments/some-uuid/ticket9649/9649.patch) by robertwb created at 2010-07-31 19:00:35\n\nThis is obviously code that went in before the referee process :).",
     "created_at": "2010-07-31T19:00:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9649",
     "type": "issue_comment",
@@ -101,7 +101,7 @@ archive/issue_comments_093574.json:
 }
 ```
 
-Attachment
+Attachment [9649.patch](tarball://root/attachments/some-uuid/ticket9649/9649.patch) by robertwb created at 2010-07-31 19:00:35
 
 This is obviously code that went in before the referee process :).
 

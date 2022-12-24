@@ -49,7 +49,7 @@ The attached patch 'fixes' that by raising an exception instead. This way hopefu
 archive/issue_comments_003741.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6405.patch](tarball://root/attachments/some-uuid/ticket714/6405.patch) by malb created at 2007-09-20 19:01:47",
     "created_at": "2007-09-20T19:01:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/714",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_003741.json:
 }
 ```
 
-Attachment
+Attachment [6405.patch](tarball://root/attachments/some-uuid/ticket714/6405.patch) by malb created at 2007-09-20 19:01:47
 
 
 

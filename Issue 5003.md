@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5003
 archive/issue_comments_038162.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-5003_weighted_eq_graphs.patch](tarball://root/attachments/some-uuid/ticket5003/trac-5003_weighted_eq_graphs.patch) by rlm created at 2009-01-17 19:53:35",
     "created_at": "2009-01-17T19:53:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5003",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_038162.json:
 }
 ```
 
-Attachment
+Attachment [trac-5003_weighted_eq_graphs.patch](tarball://root/attachments/some-uuid/ticket5003/trac-5003_weighted_eq_graphs.patch) by rlm created at 2009-01-17 19:53:35
 
 
 
@@ -166,7 +166,7 @@ Apply this patch second.
 archive/issue_comments_038166.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.",
+    "body": "Attachment [trac-5003-followup.patch](tarball://root/attachments/some-uuid/ticket5003/trac-5003-followup.patch) by mhansen created at 2009-01-24 15:25:26\n\nLooks good to me.",
     "created_at": "2009-01-24T15:25:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5003",
     "type": "issue_comment",
@@ -175,7 +175,7 @@ archive/issue_comments_038166.json:
 }
 ```
 
-Attachment
+Attachment [trac-5003-followup.patch](tarball://root/attachments/some-uuid/ticket5003/trac-5003-followup.patch) by mhansen created at 2009-01-24 15:25:26
 
 Looks good to me.
 

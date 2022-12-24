@@ -463,7 +463,7 @@ apply only this patch; rebased to 4.6.alpha1+some patches
 archive/issue_comments_098537.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:17 jason]:\n> Can I delete the .2.patch file, then?\nSure; I just don't have the privileges to do that myself.",
+    "body": "Attachment [trac_9907_move_decorators.patch](tarball://root/attachments/some-uuid/ticket9907/trac_9907_move_decorators.patch) by jsrn created at 2010-10-05 09:39:11\n\nReplying to [comment:17 jason]:\n> Can I delete the .2.patch file, then?\nSure; I just don't have the privileges to do that myself.",
     "created_at": "2010-10-05T09:39:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9906",
     "type": "issue_comment",
@@ -472,7 +472,7 @@ archive/issue_comments_098537.json:
 }
 ```
 
-Attachment
+Attachment [trac_9907_move_decorators.patch](tarball://root/attachments/some-uuid/ticket9907/trac_9907_move_decorators.patch) by jsrn created at 2010-10-05 09:39:11
 
 Replying to [comment:17 jason]:
 > Can I delete the .2.patch file, then?
@@ -503,7 +503,7 @@ This needs to be coordinated with #10107.
 archive/issue_comments_098539.json:
 ```json
 {
-    "body": "Attachment\n\nRebased to 4.6. Still requires first applying patch for Trac #9919",
+    "body": "Attachment [trac_9907_move_decorators.2.patch](tarball://root/attachments/some-uuid/ticket9907/trac_9907_move_decorators.2.patch) by jsrn created at 2010-11-02 13:58:34\n\nRebased to 4.6. Still requires first applying patch for Trac #9919",
     "created_at": "2010-11-02T13:58:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9906",
     "type": "issue_comment",
@@ -512,7 +512,7 @@ archive/issue_comments_098539.json:
 }
 ```
 
-Attachment
+Attachment [trac_9907_move_decorators.2.patch](tarball://root/attachments/some-uuid/ticket9907/trac_9907_move_decorators.2.patch) by jsrn created at 2010-11-02 13:58:34
 
 Rebased to 4.6. Still requires first applying patch for Trac #9919
 

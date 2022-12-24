@@ -109,7 +109,7 @@ In the meantime, the patch is working already and some people use it.
 archive/issue_comments_054314.json:
 ```json
 {
-    "body": "Attachment\n\nJust attached the last version of the patch to apply on Sage 5.9",
+    "body": "Attachment [trac_6629-multivariate-polynomials-on-several-bases-vp.patch](tarball://root/attachments/some-uuid/ticket6629/trac_6629-multivariate-polynomials-on-several-bases-vp.patch) by VivianePons created at 2013-05-30 07:48:53\n\nJust attached the last version of the patch to apply on Sage 5.9",
     "created_at": "2013-05-30T07:48:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6629",
     "type": "issue_comment",
@@ -118,7 +118,7 @@ archive/issue_comments_054314.json:
 }
 ```
 
-Attachment
+Attachment [trac_6629-multivariate-polynomials-on-several-bases-vp.patch](tarball://root/attachments/some-uuid/ticket6629/trac_6629-multivariate-polynomials-on-several-bases-vp.patch) by VivianePons created at 2013-05-30 07:48:53
 
 Just attached the last version of the patch to apply on Sage 5.9
 

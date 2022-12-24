@@ -66,7 +66,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1381
 archive/issue_comments_008858.json:
 ```json
 {
-    "body": "Attachment\n\nfast_subst prototype",
+    "body": "Attachment [fast_subst.py](tarball://root/attachments/some-uuid/ticket1381/fast_subst.py) by jbmohler created at 2007-12-03 10:12:51\n\nfast_subst prototype",
     "created_at": "2007-12-03T10:12:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1381",
     "type": "issue_comment",
@@ -75,6 +75,6 @@ archive/issue_comments_008858.json:
 }
 ```
 
-Attachment
+Attachment [fast_subst.py](tarball://root/attachments/some-uuid/ticket1381/fast_subst.py) by jbmohler created at 2007-12-03 10:12:51
 
 fast_subst prototype

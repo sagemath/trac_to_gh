@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2477
 archive/issue_comments_016773.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2477.patch](tarball://root/attachments/some-uuid/ticket2477/2477.patch) by rlm created at 2008-03-14 14:53:02",
     "created_at": "2008-03-14T14:53:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2477",
     "type": "issue_comment",
@@ -49,7 +49,7 @@ archive/issue_comments_016773.json:
 }
 ```
 
-Attachment
+Attachment [2477.patch](tarball://root/attachments/some-uuid/ticket2477/2477.patch) by rlm created at 2008-03-14 14:53:02
 
 
 
@@ -301,7 +301,7 @@ apply instead of the previous patch.
 archive/issue_comments_016785.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch at 2729 fixes the vertices so they don't look like tinker toys.  The second patch above should be reviewed (it's a simplifications of the first patch).  Apply second patch only (and give rlm credit for the initial version of the patch).",
+    "body": "Attachment [trac-2477-aspect-ratio.patch](tarball://root/attachments/some-uuid/ticket2477/trac-2477-aspect-ratio.patch) by jason created at 2008-03-30 00:44:27\n\nThe patch at 2729 fixes the vertices so they don't look like tinker toys.  The second patch above should be reviewed (it's a simplifications of the first patch).  Apply second patch only (and give rlm credit for the initial version of the patch).",
     "created_at": "2008-03-30T00:44:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2477",
     "type": "issue_comment",
@@ -310,7 +310,7 @@ archive/issue_comments_016785.json:
 }
 ```
 
-Attachment
+Attachment [trac-2477-aspect-ratio.patch](tarball://root/attachments/some-uuid/ticket2477/trac-2477-aspect-ratio.patch) by jason created at 2008-03-30 00:44:27
 
 The patch at 2729 fixes the vertices so they don't look like tinker toys.  The second patch above should be reviewed (it's a simplifications of the first patch).  Apply second patch only (and give rlm credit for the initial version of the patch).
 

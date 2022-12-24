@@ -108,7 +108,7 @@ Changing assignee from failure to mabshoff.
 archive/issue_comments_019167.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_2790-separation-character.patch](tarball://root/attachments/some-uuid/ticket2790/trac_2790-separation-character.patch) by mabshoff created at 2008-04-03 15:09:20",
     "created_at": "2008-04-03T15:09:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2790",
     "type": "issue_comment",
@@ -117,7 +117,7 @@ archive/issue_comments_019167.json:
 }
 ```
 
-Attachment
+Attachment [trac_2790-separation-character.patch](tarball://root/attachments/some-uuid/ticket2790/trac_2790-separation-character.patch) by mabshoff created at 2008-04-03 15:09:20
 
 
 

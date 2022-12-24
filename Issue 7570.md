@@ -89,7 +89,7 @@ Changing keywords from "list_plot" to "list_plot, beginner".
 archive/issue_comments_064409.json:
 ```json
 {
-    "body": "Attachment\n\nmake list_plot() and point() accept empty lists and return empty Graphics() object",
+    "body": "Attachment [trac_7570_empty_lists.patch](tarball://root/attachments/some-uuid/ticket7570/trac_7570_empty_lists.patch) by ryan created at 2010-08-21 13:40:29\n\nmake list_plot() and point() accept empty lists and return empty Graphics() object",
     "created_at": "2010-08-21T13:40:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_064409.json:
 }
 ```
 
-Attachment
+Attachment [trac_7570_empty_lists.patch](tarball://root/attachments/some-uuid/ticket7570/trac_7570_empty_lists.patch) by ryan created at 2010-08-21 13:40:29
 
 make list_plot() and point() accept empty lists and return empty Graphics() object
 
@@ -446,7 +446,7 @@ added documentation
 archive/issue_comments_064422.json:
 ```json
 {
-    "body": "Attachment\n\nThe only test that didn't pass was ./sage -t devel/sage/sage/plot/arrow.py and I think it's only because you have line 412 in:\n\n```\nsage: arrow2d(headpoint=None, tailpoint) \n```\n\n\n\nIf you delete that line, the tests pass and everything looks good.",
+    "body": "Attachment [trac_7570_empty_graphics.patch](tarball://root/attachments/some-uuid/ticket7570/trac_7570_empty_graphics.patch) by aly.deines created at 2011-01-09 20:19:59\n\nThe only test that didn't pass was ./sage -t devel/sage/sage/plot/arrow.py and I think it's only because you have line 412 in:\n\n```\nsage: arrow2d(headpoint=None, tailpoint) \n```\n\n\n\nIf you delete that line, the tests pass and everything looks good.",
     "created_at": "2011-01-09T20:19:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
@@ -455,7 +455,7 @@ archive/issue_comments_064422.json:
 }
 ```
 
-Attachment
+Attachment [trac_7570_empty_graphics.patch](tarball://root/attachments/some-uuid/ticket7570/trac_7570_empty_graphics.patch) by aly.deines created at 2011-01-09 20:19:59
 
 The only test that didn't pass was ./sage -t devel/sage/sage/plot/arrow.py and I think it's only because you have line 412 in:
 
@@ -492,7 +492,7 @@ This fixes the doctest.
 archive/issue_comments_064424.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7570_empty_graphics.2.patch](tarball://root/attachments/some-uuid/ticket7570/trac_7570_empty_graphics.2.patch) by gagansekhon created at 2011-01-10 04:47:09",
     "created_at": "2011-01-10T04:47:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
@@ -501,7 +501,7 @@ archive/issue_comments_064424.json:
 }
 ```
 
-Attachment
+Attachment [trac_7570_empty_graphics.2.patch](tarball://root/attachments/some-uuid/ticket7570/trac_7570_empty_graphics.2.patch) by gagansekhon created at 2011-01-10 04:47:09
 
 
 
@@ -695,7 +695,7 @@ Can somebody please fix the trivial issues with this ticket?
 archive/issue_comments_064435.json:
 ```json
 {
-    "body": "Attachment\n\nUse this patch only",
+    "body": "Attachment [trac_7570_empty_graphics.2.2.patch](tarball://root/attachments/some-uuid/ticket7570/trac_7570_empty_graphics.2.2.patch) by kcrisman created at 2011-02-07 15:53:22\n\nUse this patch only",
     "created_at": "2011-02-07T15:53:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
@@ -704,7 +704,7 @@ archive/issue_comments_064435.json:
 }
 ```
 
-Attachment
+Attachment [trac_7570_empty_graphics.2.2.patch](tarball://root/attachments/some-uuid/ticket7570/trac_7570_empty_graphics.2.2.patch) by kcrisman created at 2011-02-07 15:53:22
 
 Use this patch only
 

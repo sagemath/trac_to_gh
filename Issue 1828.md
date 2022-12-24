@@ -67,7 +67,7 @@ Changing status from new to assigned.
 archive/issue_comments_011578.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-trac-1828.patch](tarball://root/attachments/some-uuid/ticket1828/sage-trac-1828.patch) by was created at 2008-01-18 07:36:09",
     "created_at": "2008-01-18T07:36:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1828",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_011578.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac-1828.patch](tarball://root/attachments/some-uuid/ticket1828/sage-trac-1828.patch) by was created at 2008-01-18 07:36:09
 
 
 
@@ -85,7 +85,7 @@ Attachment
 archive/issue_comments_011579.json:
 ```json
 {
-    "body": "Attachment\n\nYou must first apply #1825 before applying the doc part of this patch.  You should also apply *both* of the patches attached to this ticket.",
+    "body": "Attachment [doc-trac-1828.patch](tarball://root/attachments/some-uuid/ticket1828/doc-trac-1828.patch) by was created at 2008-01-18 07:37:40\n\nYou must first apply #1825 before applying the doc part of this patch.  You should also apply *both* of the patches attached to this ticket.",
     "created_at": "2008-01-18T07:37:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1828",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_011579.json:
 }
 ```
 
-Attachment
+Attachment [doc-trac-1828.patch](tarball://root/attachments/some-uuid/ticket1828/doc-trac-1828.patch) by was created at 2008-01-18 07:37:40
 
 You must first apply #1825 before applying the doc part of this patch.  You should also apply *both* of the patches attached to this ticket.
 

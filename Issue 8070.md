@@ -78,7 +78,7 @@ Changing status from new to needs_review.
 archive/issue_comments_070722.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [pycrypto-2.0.1.p5.patch](tarball://root/attachments/some-uuid/ticket8070/pycrypto-2.0.1.p5.patch) by jsp created at 2010-01-26 19:00:17",
     "created_at": "2010-01-26T19:00:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8070",
     "type": "issue_comment",
@@ -87,7 +87,7 @@ archive/issue_comments_070722.json:
 }
 ```
 
-Attachment
+Attachment [pycrypto-2.0.1.p5.patch](tarball://root/attachments/some-uuid/ticket8070/pycrypto-2.0.1.p5.patch) by jsp created at 2010-01-26 19:00:17
 
 
 
@@ -150,7 +150,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_070726.json:
 ```json
 {
-    "body": "Attachment\n\nDone.\n\nJaap",
+    "body": "Attachment [pycrypto-2.0.1.p5+.patch](tarball://root/attachments/some-uuid/ticket8070/pycrypto-2.0.1.p5+.patch) by jsp created at 2010-01-27 14:07:55\n\nDone.\n\nJaap",
     "created_at": "2010-01-27T14:07:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8070",
     "type": "issue_comment",
@@ -159,7 +159,7 @@ archive/issue_comments_070726.json:
 }
 ```
 
-Attachment
+Attachment [pycrypto-2.0.1.p5+.patch](tarball://root/attachments/some-uuid/ticket8070/pycrypto-2.0.1.p5+.patch) by jsp created at 2010-01-27 14:07:55
 
 Done.
 

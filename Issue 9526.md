@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9526
 archive/issue_comments_091648.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9526-modabvar.patch](tarball://root/attachments/some-uuid/ticket9526/trac_9526-modabvar.patch) by was created at 2011-03-21 21:23:08",
     "created_at": "2011-03-21T21:23:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9526",
     "type": "issue_comment",
@@ -40,4 +40,4 @@ archive/issue_comments_091648.json:
 }
 ```
 
-Attachment
+Attachment [trac_9526-modabvar.patch](tarball://root/attachments/some-uuid/ticket9526/trac_9526-modabvar.patch) by was created at 2011-03-21 21:23:08

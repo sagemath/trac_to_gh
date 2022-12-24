@@ -52,7 +52,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3070
 archive/issue_comments_021191.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac3070-cayley_graph_constructor.patch](tarball://root/attachments/some-uuid/ticket3070/trac3070-cayley_graph_constructor.patch) by rlm created at 2008-05-01 18:11:13",
     "created_at": "2008-05-01T18:11:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3070",
     "type": "issue_comment",
@@ -61,7 +61,7 @@ archive/issue_comments_021191.json:
 }
 ```
 
-Attachment
+Attachment [trac3070-cayley_graph_constructor.patch](tarball://root/attachments/some-uuid/ticket3070/trac3070-cayley_graph_constructor.patch) by rlm created at 2008-05-01 18:11:13
 
 
 

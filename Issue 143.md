@@ -52,7 +52,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/143
 archive/issue_comments_000658.json:
 ```json
 {
-    "body": "Attachment\n\nBuild log for gnuplot",
+    "body": "Attachment [Gnuplot.errlog](tarball://root/attachments/some-uuid/ticket143/Gnuplot.errlog) by justin created at 2006-10-21 20:42:52\n\nBuild log for gnuplot",
     "created_at": "2006-10-21T20:42:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/143",
     "type": "issue_comment",
@@ -61,7 +61,7 @@ archive/issue_comments_000658.json:
 }
 ```
 
-Attachment
+Attachment [Gnuplot.errlog](tarball://root/attachments/some-uuid/ticket143/Gnuplot.errlog) by justin created at 2006-10-21 20:42:52
 
 Build log for gnuplot
 

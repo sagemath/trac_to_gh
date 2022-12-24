@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3888
 archive/issue_comments_027747.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trivial_indentation.patch](tarball://root/attachments/some-uuid/ticket3888/trivial_indentation.patch) by malb created at 2008-08-18 11:39:04",
     "created_at": "2008-08-18T11:39:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3888",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_027747.json:
 }
 ```
 
-Attachment
+Attachment [trivial_indentation.patch](tarball://root/attachments/some-uuid/ticket3888/trivial_indentation.patch) by malb created at 2008-08-18 11:39:04
 
 
 

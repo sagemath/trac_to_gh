@@ -1262,7 +1262,7 @@ Removing assert statements
 archive/issue_comments_087252.json:
 ```json
 {
-    "body": "Attachment\n\n...talk written, patch patched.",
+    "body": "Attachment [trac_9265_tableaux_categories_am.patch](tarball://root/attachments/some-uuid/ticket9265/trac_9265_tableaux_categories_am.patch) by andrew.mathas created at 2012-09-24 20:03:09\n\n...talk written, patch patched.",
     "created_at": "2012-09-24T20:03:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9265",
     "type": "issue_comment",
@@ -1271,7 +1271,7 @@ archive/issue_comments_087252.json:
 }
 ```
 
-Attachment
+Attachment [trac_9265_tableaux_categories_am.patch](tarball://root/attachments/some-uuid/ticket9265/trac_9265_tableaux_categories_am.patch) by andrew.mathas created at 2012-09-24 20:03:09
 
 ...talk written, patch patched.
 
@@ -1523,7 +1523,7 @@ Changing status from new to needs_review.
 archive/issue_comments_087265.json:
 ```json
 {
-    "body": "Attachment\n\nFixing a typo in a comment",
+    "body": "Attachment [trac_9265--tableaux_categories_pickles-am.patch](tarball://root/attachments/some-uuid/ticket9265/trac_9265--tableaux_categories_pickles-am.patch) by andrew.mathas created at 2012-10-17 12:37:41\n\nFixing a typo in a comment",
     "created_at": "2012-10-17T12:37:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9265",
     "type": "issue_comment",
@@ -1532,7 +1532,7 @@ archive/issue_comments_087265.json:
 }
 ```
 
-Attachment
+Attachment [trac_9265--tableaux_categories_pickles-am.patch](tarball://root/attachments/some-uuid/ticket9265/trac_9265--tableaux_categories_pickles-am.patch) by andrew.mathas created at 2012-10-17 12:37:41
 
 Fixing a typo in a comment
 

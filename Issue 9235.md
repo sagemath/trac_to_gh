@@ -199,7 +199,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_086691.json:
 ```json
 {
-    "body": "Attachment\n\nYou're right -- this shouldn't have to wait so long!  I've looked through all the changes, and they look good!  All tests pass, and the documentation builds cleanly, without warnings.  \n\nI used `search_src` to look for other places in Sage where `get_action_c` and `coerce_map_from_c` are used.  The only places they appear are in `structure/parent_old`, so I think these in Homset should be deprecated and (later) removed.  I've added a reviewer patch which adds deprecation warnings and corresponding tests, raising the coverage to 100%.\n\nThe only issue I have with `9235_doctest_homset.patch` is the following block:\n\n\n```\n    if category is None:\n        if cat_X.is_subcategory(cat_Y):\n            category = cat_Y\n        elif cat_Y.is_subcategory(cat_X):\n            # NT: this \"category is None\" test is useless and could be removed\n            # SK: Indeed! For that reason, the ValueError would never be raised\n            # NT: why is there an assymmetry between X and Y?\n            # SK: I see no reason. In particular, I don't see why an error should\n            #     be raised if cat_X is not cat_Y. So, I uncomment the following\n            #     two lines.\n##             if not (category is None) and not (cat_X is cat_Y):\n##                 raise ValueError, \"No unambiguous category found for Hom from %s to %s.\"%(X,Y)\n            category = cat_X\n        else:\n            # Search for the lowest common super category\n            subcats_X = cat_X.all_super_categories(proper = True)\n            subcats_Y = set(cat_Y.all_super_categories(proper = True))\n            category = None\n            for c in subcats_X:\n                if c in subcats_Y:\n                    category = c\n                    break\n\n            if category is None:\n                raise TypeError, \"No suitable category found for Hom from %s to %s.\"%(X,Y)\n```\n\n\nIf there's no reason to include the second \"`category is None`\" test, then it and the previous comments should simply be deleted.  And there is a third \"`category is None`\" test in this block which also looks redundant.",
+    "body": "Attachment [9235-reviewer.patch](tarball://root/attachments/some-uuid/ticket9235/9235-reviewer.patch) by niles created at 2011-05-29 06:59:58\n\nYou're right -- this shouldn't have to wait so long!  I've looked through all the changes, and they look good!  All tests pass, and the documentation builds cleanly, without warnings.  \n\nI used `search_src` to look for other places in Sage where `get_action_c` and `coerce_map_from_c` are used.  The only places they appear are in `structure/parent_old`, so I think these in Homset should be deprecated and (later) removed.  I've added a reviewer patch which adds deprecation warnings and corresponding tests, raising the coverage to 100%.\n\nThe only issue I have with `9235_doctest_homset.patch` is the following block:\n\n\n```\n    if category is None:\n        if cat_X.is_subcategory(cat_Y):\n            category = cat_Y\n        elif cat_Y.is_subcategory(cat_X):\n            # NT: this \"category is None\" test is useless and could be removed\n            # SK: Indeed! For that reason, the ValueError would never be raised\n            # NT: why is there an assymmetry between X and Y?\n            # SK: I see no reason. In particular, I don't see why an error should\n            #     be raised if cat_X is not cat_Y. So, I uncomment the following\n            #     two lines.\n##             if not (category is None) and not (cat_X is cat_Y):\n##                 raise ValueError, \"No unambiguous category found for Hom from %s to %s.\"%(X,Y)\n            category = cat_X\n        else:\n            # Search for the lowest common super category\n            subcats_X = cat_X.all_super_categories(proper = True)\n            subcats_Y = set(cat_Y.all_super_categories(proper = True))\n            category = None\n            for c in subcats_X:\n                if c in subcats_Y:\n                    category = c\n                    break\n\n            if category is None:\n                raise TypeError, \"No suitable category found for Hom from %s to %s.\"%(X,Y)\n```\n\n\nIf there's no reason to include the second \"`category is None`\" test, then it and the previous comments should simply be deleted.  And there is a third \"`category is None`\" test in this block which also looks redundant.",
     "created_at": "2011-05-29T06:59:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9235",
     "type": "issue_comment",
@@ -208,7 +208,7 @@ archive/issue_comments_086691.json:
 }
 ```
 
-Attachment
+Attachment [9235-reviewer.patch](tarball://root/attachments/some-uuid/ticket9235/9235-reviewer.patch) by niles created at 2011-05-29 06:59:58
 
 You're right -- this shouldn't have to wait so long!  I've looked through all the changes, and they look good!  All tests pass, and the documentation builds cleanly, without warnings.  
 
@@ -371,7 +371,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_086697.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch is updated. I think that introducing a deprecation warning for the two survivors of the old coercion model should be the subject of a new ticket. This here should be \"doctests only\".\n\nTherefore:\n\nApply 9235_doctest_homset.patch",
+    "body": "Attachment [9235_doctest_homset.patch](tarball://root/attachments/some-uuid/ticket9235/9235_doctest_homset.patch) by SimonKing created at 2013-02-14 08:06:44\n\nThe patch is updated. I think that introducing a deprecation warning for the two survivors of the old coercion model should be the subject of a new ticket. This here should be \"doctests only\".\n\nTherefore:\n\nApply 9235_doctest_homset.patch",
     "created_at": "2013-02-14T08:06:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9235",
     "type": "issue_comment",
@@ -380,7 +380,7 @@ archive/issue_comments_086697.json:
 }
 ```
 
-Attachment
+Attachment [9235_doctest_homset.patch](tarball://root/attachments/some-uuid/ticket9235/9235_doctest_homset.patch) by SimonKing created at 2013-02-14 08:06:44
 
 The patch is updated. I think that introducing a deprecation warning for the two survivors of the old coercion model should be the subject of a new ticket. This here should be "doctests only".
 
@@ -459,7 +459,7 @@ What shall we do? Shall I fix the misformattings in my patch? Or shall you fix i
 archive/issue_comments_086701.json:
 ```json
 {
-    "body": "Attachment\n\nFixed formatting",
+    "body": "Attachment [trac_9235-doctest_homset-review-ts.patch](tarball://root/attachments/some-uuid/ticket9235/trac_9235-doctest_homset-review-ts.patch) by tscrim created at 2013-02-16 14:24:36\n\nFixed formatting",
     "created_at": "2013-02-16T14:24:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9235",
     "type": "issue_comment",
@@ -468,7 +468,7 @@ archive/issue_comments_086701.json:
 }
 ```
 
-Attachment
+Attachment [trac_9235-doctest_homset-review-ts.patch](tarball://root/attachments/some-uuid/ticket9235/trac_9235-doctest_homset-review-ts.patch) by tscrim created at 2013-02-16 14:24:36
 
 Fixed formatting
 

@@ -109,7 +109,7 @@ I merged his changes to pynac, so it will be available in the next release.
 archive/issue_comments_098031.json:
 ```json
 {
-    "body": "Attachment\n\nadd doctest",
+    "body": "Attachment [trac_9891-substitute.patch](tarball://root/attachments/some-uuid/ticket9891/trac_9891-substitute.patch) by burcin created at 2010-09-19 23:07:06\n\nadd doctest",
     "created_at": "2010-09-19T23:07:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9890",
     "type": "issue_comment",
@@ -118,7 +118,7 @@ archive/issue_comments_098031.json:
 }
 ```
 
-Attachment
+Attachment [trac_9891-substitute.patch](tarball://root/attachments/some-uuid/ticket9891/trac_9891-substitute.patch) by burcin created at 2010-09-19 23:07:06
 
 add doctest
 

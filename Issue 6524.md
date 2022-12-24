@@ -54,7 +54,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6524
 archive/issue_comments_053205.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6524-fderivative_compare.patch](tarball://root/attachments/some-uuid/ticket6524/trac_6524-fderivative_compare.patch) by burcin created at 2009-09-19 15:15:46",
     "created_at": "2009-09-19T15:15:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6524",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_053205.json:
 }
 ```
 
-Attachment
+Attachment [trac_6524-fderivative_compare.patch](tarball://root/attachments/some-uuid/ticket6524/trac_6524-fderivative_compare.patch) by burcin created at 2009-09-19 15:15:46
 
 
 

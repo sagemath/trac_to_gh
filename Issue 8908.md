@@ -497,7 +497,7 @@ Apply only [attachment:trac_8908_young_subgroup_folded-2.patch]
 archive/issue_comments_082059.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8908_young_subgroup_folded-2.patch](tarball://root/attachments/some-uuid/ticket8908/trac_8908_young_subgroup_folded-2.patch) by chapoton created at 2012-08-28 08:47:23",
     "created_at": "2012-08-28T08:47:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8908",
     "type": "issue_comment",
@@ -506,7 +506,7 @@ archive/issue_comments_082059.json:
 }
 ```
 
-Attachment
+Attachment [trac_8908_young_subgroup_folded-2.patch](tarball://root/attachments/some-uuid/ticket8908/trac_8908_young_subgroup_folded-2.patch) by chapoton created at 2012-08-28 08:47:23
 
 
 

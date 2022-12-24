@@ -66,7 +66,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2659
 archive/issue_comments_018304.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9029.patch](tarball://root/attachments/some-uuid/ticket2659/9029.patch) by cremona created at 2008-03-24 12:02:05",
     "created_at": "2008-03-24T12:02:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2659",
     "type": "issue_comment",
@@ -75,7 +75,7 @@ archive/issue_comments_018304.json:
 }
 ```
 
-Attachment
+Attachment [9029.patch](tarball://root/attachments/some-uuid/ticket2659/9029.patch) by cremona created at 2008-03-24 12:02:05
 
 
 
@@ -84,7 +84,7 @@ Attachment
 archive/issue_comments_018305.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2659-ec-cardinality.patch](tarball://root/attachments/some-uuid/ticket2659/2659-ec-cardinality.patch) by robertwb created at 2008-03-26 11:37:59",
     "created_at": "2008-03-26T11:37:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2659",
     "type": "issue_comment",
@@ -93,7 +93,7 @@ archive/issue_comments_018305.json:
 }
 ```
 
-Attachment
+Attachment [2659-ec-cardinality.patch](tarball://root/attachments/some-uuid/ticket2659/2659-ec-cardinality.patch) by robertwb created at 2008-03-26 11:37:59
 
 
 
@@ -144,7 +144,7 @@ I also have waiting: a patch for abelian_group() which sppeds up the place where
 archive/issue_comments_018308.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9122.patch](tarball://root/attachments/some-uuid/ticket2659/9122.patch) by cremona created at 2008-04-03 21:56:47",
     "created_at": "2008-04-03T21:56:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2659",
     "type": "issue_comment",
@@ -153,7 +153,7 @@ archive/issue_comments_018308.json:
 }
 ```
 
-Attachment
+Attachment [9122.patch](tarball://root/attachments/some-uuid/ticket2659/9122.patch) by cremona created at 2008-04-03 21:56:47
 
 
 
@@ -162,7 +162,7 @@ Attachment
 archive/issue_comments_018309.json:
 ```json
 {
-    "body": "Attachment\n\nDespite the patch at #2653 making sure that the trace of Frobenius is always Integer and not Rational, the trace (and hence the cardinality) still sometimes ended up as Rational.\n\n9122.patch followed by 9123.patch sorts this out, and also tidies up the handling of the exceptional cases where Frobenius is actually an Integer and the Frobenius Order is Z.  With added doctests.\nThe first two patches on this ticket can now be ignored; the latter two are based on 2.11.\n\nNB The handling of cardinality in case j=0 and j=1728 is still incomplete but will be patched separately.",
+    "body": "Attachment [9123.patch](tarball://root/attachments/some-uuid/ticket2659/9123.patch) by cremona created at 2008-04-03 21:58:39\n\nDespite the patch at #2653 making sure that the trace of Frobenius is always Integer and not Rational, the trace (and hence the cardinality) still sometimes ended up as Rational.\n\n9122.patch followed by 9123.patch sorts this out, and also tidies up the handling of the exceptional cases where Frobenius is actually an Integer and the Frobenius Order is Z.  With added doctests.\nThe first two patches on this ticket can now be ignored; the latter two are based on 2.11.\n\nNB The handling of cardinality in case j=0 and j=1728 is still incomplete but will be patched separately.",
     "created_at": "2008-04-03T21:58:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2659",
     "type": "issue_comment",
@@ -171,7 +171,7 @@ archive/issue_comments_018309.json:
 }
 ```
 
-Attachment
+Attachment [9123.patch](tarball://root/attachments/some-uuid/ticket2659/9123.patch) by cremona created at 2008-04-03 21:58:39
 
 Despite the patch at #2653 making sure that the trace of Frobenius is always Integer and not Rational, the trace (and hence the cardinality) still sometimes ended up as Rational.
 

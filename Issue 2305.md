@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2305
 archive/issue_comments_015337.json:
 ```json
 {
-    "body": "Attachment\n\nRemaining docstrings and doctetst for rings/ideal.py",
+    "body": "Attachment [ring.ideal.patch](tarball://root/attachments/some-uuid/ticket2305/ring.ideal.patch) by cswiercz created at 2008-02-27 23:39:15\n\nRemaining docstrings and doctetst for rings/ideal.py",
     "created_at": "2008-02-27T23:39:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2305",
     "type": "issue_comment",
@@ -51,7 +51,7 @@ archive/issue_comments_015337.json:
 }
 ```
 
-Attachment
+Attachment [ring.ideal.patch](tarball://root/attachments/some-uuid/ticket2305/ring.ideal.patch) by cswiercz created at 2008-02-27 23:39:15
 
 Remaining docstrings and doctetst for rings/ideal.py
 
@@ -129,7 +129,7 @@ Also, there are *tons* of typos.  'th' instead of 'the', incorrectly spelled wor
 archive/issue_comments_015340.json:
 ```json
 {
-    "body": "Attachment\n\nCorrected docstring and doctest patch for rings/ideal.py",
+    "body": "Attachment [rings.ideal.patch](tarball://root/attachments/some-uuid/ticket2305/rings.ideal.patch) by cswiercz created at 2008-02-28 23:18:24\n\nCorrected docstring and doctest patch for rings/ideal.py",
     "created_at": "2008-02-28T23:18:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2305",
     "type": "issue_comment",
@@ -138,7 +138,7 @@ archive/issue_comments_015340.json:
 }
 ```
 
-Attachment
+Attachment [rings.ideal.patch](tarball://root/attachments/some-uuid/ticket2305/rings.ideal.patch) by cswiercz created at 2008-02-28 23:18:24
 
 Corrected docstring and doctest patch for rings/ideal.py
 

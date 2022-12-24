@@ -90,7 +90,7 @@ Michael
 archive/issue_comments_048028.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [install-boost-cropped.patch](tarball://root/attachments/some-uuid/ticket6032/install-boost-cropped.patch) by mabshoff created at 2009-05-15 12:42:53",
     "created_at": "2009-05-15T12:42:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6032",
     "type": "issue_comment",
@@ -99,7 +99,7 @@ archive/issue_comments_048028.json:
 }
 ```
 
-Attachment
+Attachment [install-boost-cropped.patch](tarball://root/attachments/some-uuid/ticket6032/install-boost-cropped.patch) by mabshoff created at 2009-05-15 12:42:53
 
 
 
@@ -108,7 +108,7 @@ Attachment
 archive/issue_comments_048029.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [deps-boost-cropped.patch](tarball://root/attachments/some-uuid/ticket6032/deps-boost-cropped.patch) by mabshoff created at 2009-05-15 12:42:59",
     "created_at": "2009-05-15T12:42:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6032",
     "type": "issue_comment",
@@ -117,7 +117,7 @@ archive/issue_comments_048029.json:
 }
 ```
 
-Attachment
+Attachment [deps-boost-cropped.patch](tarball://root/attachments/some-uuid/ticket6032/deps-boost-cropped.patch) by mabshoff created at 2009-05-15 12:42:59
 
 
 

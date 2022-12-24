@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9763
 archive/issue_comments_095643.json:
 ```json
 {
-    "body": "Attachment\n\nCreates the metrology.py file, but doesn't edit the corresponding all.py",
+    "body": "Attachment [trac_9763_add_metrology.patch](tarball://root/attachments/some-uuid/ticket9763/trac_9763_add_metrology.patch) by cousteau created at 2010-08-18 18:58:49\n\nCreates the metrology.py file, but doesn't edit the corresponding all.py",
     "created_at": "2010-08-18T18:58:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9762",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_095643.json:
 }
 ```
 
-Attachment
+Attachment [trac_9763_add_metrology.patch](tarball://root/attachments/some-uuid/ticket9763/trac_9763_add_metrology.patch) by cousteau created at 2010-08-18 18:58:49
 
 Creates the metrology.py file, but doesn't edit the corresponding all.py
 
@@ -77,7 +77,7 @@ The metrology.py file itself, in case it's preferred
 archive/issue_comments_095645.json:
 ```json
 {
-    "body": "Attachment\n\nExample of usage, Pi theorem",
+    "body": "Attachment [metrology.py](tarball://root/attachments/some-uuid/ticket9763/metrology.py) by cousteau created at 2010-08-18 19:00:41\n\nExample of usage, Pi theorem",
     "created_at": "2010-08-18T19:00:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9762",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_095645.json:
 }
 ```
 
-Attachment
+Attachment [metrology.py](tarball://root/attachments/some-uuid/ticket9763/metrology.py) by cousteau created at 2010-08-18 19:00:41
 
 Example of usage, Pi theorem
 
@@ -115,7 +115,7 @@ Changing status from new to needs_review.
 archive/issue_comments_095647.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [example_metrology.sage](tarball://root/attachments/some-uuid/ticket9763/example_metrology.sage) by cousteau created at 2010-08-18 19:02:29",
     "created_at": "2010-08-18T19:02:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9762",
     "type": "issue_comment",
@@ -124,7 +124,7 @@ archive/issue_comments_095647.json:
 }
 ```
 
-Attachment
+Attachment [example_metrology.sage](tarball://root/attachments/some-uuid/ticket9763/example_metrology.sage) by cousteau created at 2010-08-18 19:02:29
 
 
 

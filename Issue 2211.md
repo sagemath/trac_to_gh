@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2211
 archive/issue_comments_014603.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2211-segfault-graph_isom-2.patch](tarball://root/attachments/some-uuid/ticket2211/2211-segfault-graph_isom-2.patch) by rlm created at 2008-02-19 19:44:41",
     "created_at": "2008-02-19T19:44:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2211",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_014603.json:
 }
 ```
 
-Attachment
+Attachment [2211-segfault-graph_isom-2.patch](tarball://root/attachments/some-uuid/ticket2211/2211-segfault-graph_isom-2.patch) by rlm created at 2008-02-19 19:44:41
 
 
 
@@ -49,7 +49,7 @@ Attachment
 archive/issue_comments_014604.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2211-binary_codes.patch](tarball://root/attachments/some-uuid/ticket2211/2211-binary_codes.patch) by rlm created at 2008-02-19 20:31:49",
     "created_at": "2008-02-19T20:31:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2211",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_014604.json:
 }
 ```
 
-Attachment
+Attachment [2211-binary_codes.patch](tarball://root/attachments/some-uuid/ticket2211/2211-binary_codes.patch) by rlm created at 2008-02-19 20:31:49
 
 
 

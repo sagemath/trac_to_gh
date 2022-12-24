@@ -67,7 +67,7 @@ Tweak `browse_sage_doc` doctests.  sage repo.
 archive/issue_comments_067953.json:
 ```json
 {
-    "body": "Attachment\n\nFeel free to tweak further!",
+    "body": "Attachment [trac_7845-browse_sage_doctest.patch](tarball://root/attachments/some-uuid/ticket7845/trac_7845-browse_sage_doctest.patch) by mpatel created at 2010-01-05 02:58:26\n\nFeel free to tweak further!",
     "created_at": "2010-01-05T02:58:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7845",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_067953.json:
 }
 ```
 
-Attachment
+Attachment [trac_7845-browse_sage_doctest.patch](tarball://root/attachments/some-uuid/ticket7845/trac_7845-browse_sage_doctest.patch) by mpatel created at 2010-01-05 02:58:26
 
 Feel free to tweak further!
 

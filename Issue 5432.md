@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5432
 archive/issue_comments_042028.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-combinat-fixes.patch](tarball://root/attachments/some-uuid/ticket5432/sage-combinat-fixes.patch) by nthiery created at 2009-03-03 23:29:19",
     "created_at": "2009-03-03T23:29:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5432",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_042028.json:
 }
 ```
 
-Attachment
+Attachment [sage-combinat-fixes.patch](tarball://root/attachments/some-uuid/ticket5432/sage-combinat-fixes.patch) by nthiery created at 2009-03-03 23:29:19
 
 
 

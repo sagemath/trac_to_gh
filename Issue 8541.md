@@ -240,7 +240,7 @@ apply after #8666
 archive/issue_comments_077219.json:
 ```json
 {
-    "body": "Attachment\n\nAs promised, here's a doctest.",
+    "body": "Attachment [trac_8541.patch](tarball://root/attachments/some-uuid/ticket8541/trac_8541.patch) by davidloeffler created at 2010-04-12 13:57:32\n\nAs promised, here's a doctest.",
     "created_at": "2010-04-12T13:57:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8541",
     "type": "issue_comment",
@@ -249,7 +249,7 @@ archive/issue_comments_077219.json:
 }
 ```
 
-Attachment
+Attachment [trac_8541.patch](tarball://root/attachments/some-uuid/ticket8541/trac_8541.patch) by davidloeffler created at 2010-04-12 13:57:32
 
 As promised, here's a doctest.
 

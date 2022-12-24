@@ -101,7 +101,7 @@ The current problems:
 archive/issue_comments_026163.json:
 ```json
 {
-    "body": "Attachment\n\nI have an updated spkg at http://sage.math.washington.edu/home/mhansen/moin-1.7.1.spkg along with a new patch.\n\nIt takes care of all the issues listed above except the weird permissions errors on OS X.  The second patch is just a fairly quick version I did, and it would be good if someone else sat down and looked at it.  I tested the migration bit on a simple wiki and it worked correctly with jsMath, the textchas, etc.",
+    "body": "Attachment [sage-3693-part1.patch](tarball://root/attachments/some-uuid/ticket3693/sage-3693-part1.patch) by mhansen created at 2008-07-22 08:55:39\n\nI have an updated spkg at http://sage.math.washington.edu/home/mhansen/moin-1.7.1.spkg along with a new patch.\n\nIt takes care of all the issues listed above except the weird permissions errors on OS X.  The second patch is just a fairly quick version I did, and it would be good if someone else sat down and looked at it.  I tested the migration bit on a simple wiki and it worked correctly with jsMath, the textchas, etc.",
     "created_at": "2008-07-22T08:55:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
@@ -110,7 +110,7 @@ archive/issue_comments_026163.json:
 }
 ```
 
-Attachment
+Attachment [sage-3693-part1.patch](tarball://root/attachments/some-uuid/ticket3693/sage-3693-part1.patch) by mhansen created at 2008-07-22 08:55:39
 
 I have an updated spkg at http://sage.math.washington.edu/home/mhansen/moin-1.7.1.spkg along with a new patch.
 
@@ -123,7 +123,7 @@ It takes care of all the issues listed above except the weird permissions errors
 archive/issue_comments_026164.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3693-part2.patch](tarball://root/attachments/some-uuid/ticket3693/trac_3693-part2.patch) by mhansen created at 2008-07-22 08:57:40",
     "created_at": "2008-07-22T08:57:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
@@ -132,7 +132,7 @@ archive/issue_comments_026164.json:
 }
 ```
 
-Attachment
+Attachment [trac_3693-part2.patch](tarball://root/attachments/some-uuid/ticket3693/trac_3693-part2.patch) by mhansen created at 2008-07-22 08:57:40
 
 
 
@@ -203,7 +203,7 @@ Also, it currently does write a backup before upgrading.
 archive/issue_comments_026168.json:
 ```json
 {
-    "body": "Attachment\n\nI posted an spkg for MoinMoin 1.7.2 here:\n\nhttp://sage.math.washington.edu/home/mhansen/moin-1.7.2.spkg",
+    "body": "Attachment [trac_3693-part3.patch](tarball://root/attachments/some-uuid/ticket3693/trac_3693-part3.patch) by mhansen created at 2008-10-02 08:13:57\n\nI posted an spkg for MoinMoin 1.7.2 here:\n\nhttp://sage.math.washington.edu/home/mhansen/moin-1.7.2.spkg",
     "created_at": "2008-10-02T08:13:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
@@ -212,7 +212,7 @@ archive/issue_comments_026168.json:
 }
 ```
 
-Attachment
+Attachment [trac_3693-part3.patch](tarball://root/attachments/some-uuid/ticket3693/trac_3693-part3.patch) by mhansen created at 2008-10-02 08:13:57
 
 I posted an spkg for MoinMoin 1.7.2 here:
 
@@ -291,7 +291,7 @@ archive/issue_comments_026171.json:
 archive/issue_comments_026172.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3693-combined.patch](tarball://root/attachments/some-uuid/ticket3693/trac_3693-combined.patch) by mhansen created at 2008-12-09 03:54:38",
     "created_at": "2008-12-09T03:54:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
@@ -300,7 +300,7 @@ archive/issue_comments_026172.json:
 }
 ```
 
-Attachment
+Attachment [trac_3693-combined.patch](tarball://root/attachments/some-uuid/ticket3693/trac_3693-combined.patch) by mhansen created at 2008-12-09 03:54:38
 
 
 
@@ -704,7 +704,7 @@ Patch for moin-1.9.p0.spkg. Apply this patch alone to sage repo.
 archive/issue_comments_026191.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3683-moinmoin-1.9.patch](tarball://root/attachments/some-uuid/ticket3693/trac_3683-moinmoin-1.9.patch) by timdumol created at 2009-12-20 12:11:58",
     "created_at": "2009-12-20T12:11:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
@@ -713,7 +713,7 @@ archive/issue_comments_026191.json:
 }
 ```
 
-Attachment
+Attachment [trac_3683-moinmoin-1.9.patch](tarball://root/attachments/some-uuid/ticket3693/trac_3683-moinmoin-1.9.patch) by timdumol created at 2009-12-20 12:11:58
 
 
 
@@ -813,7 +813,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_026195.json:
 ```json
 {
-    "body": "Attachment\n\nAdds a `fork` argument.",
+    "body": "Attachment [trac_3683-moinmoin-1.9.2.patch](tarball://root/attachments/some-uuid/ticket3693/trac_3683-moinmoin-1.9.2.patch) by timdumol created at 2009-12-22 04:50:18\n\nAdds a `fork` argument.",
     "created_at": "2009-12-22T04:50:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
@@ -822,7 +822,7 @@ archive/issue_comments_026195.json:
 }
 ```
 
-Attachment
+Attachment [trac_3683-moinmoin-1.9.2.patch](tarball://root/attachments/some-uuid/ticket3693/trac_3683-moinmoin-1.9.2.patch) by timdumol created at 2009-12-22 04:50:18
 
 Adds a `fork` argument.
 
@@ -977,7 +977,7 @@ Minor formatting, docstring changes.  Replaces previous.  sage repo.
 archive/issue_comments_026204.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3683-upgrade_moinmoin.patch](tarball://root/attachments/some-uuid/ticket3693/trac_3683-upgrade_moinmoin.patch) by mpatel created at 2010-01-21 10:03:23",
     "created_at": "2010-01-21T10:03:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
@@ -986,7 +986,7 @@ archive/issue_comments_026204.json:
 }
 ```
 
-Attachment
+Attachment [trac_3683-upgrade_moinmoin.patch](tarball://root/attachments/some-uuid/ticket3693/trac_3683-upgrade_moinmoin.patch) by mpatel created at 2010-01-21 10:03:23
 
 
 

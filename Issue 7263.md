@@ -195,7 +195,7 @@ Fix paths for command-line 3d viewers.  Apply to sage repository.
 archive/issue_comments_060336.json:
 ```json
 {
-    "body": "Attachment\n\nUpdate command-line 3d viewer scripts.  Apply to sagenb repository.",
+    "body": "Attachment [trac_7263-sage_cli_3d_viewers.patch](tarball://root/attachments/some-uuid/ticket7263/trac_7263-sage_cli_3d_viewers.patch) by mpatel created at 2009-10-22 05:28:45\n\nUpdate command-line 3d viewer scripts.  Apply to sagenb repository.",
     "created_at": "2009-10-22T05:28:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7263",
     "type": "issue_comment",
@@ -204,7 +204,7 @@ archive/issue_comments_060336.json:
 }
 ```
 
-Attachment
+Attachment [trac_7263-sage_cli_3d_viewers.patch](tarball://root/attachments/some-uuid/ticket7263/trac_7263-sage_cli_3d_viewers.patch) by mpatel created at 2009-10-22 05:28:45
 
 Update command-line 3d viewer scripts.  Apply to sagenb repository.
 
@@ -215,7 +215,7 @@ Update command-line 3d viewer scripts.  Apply to sagenb repository.
 archive/issue_comments_060337.json:
 ```json
 {
-    "body": "Attachment\n\nThe patches depend on #7196.",
+    "body": "Attachment [trac_7263-sagenb_cli_3d_viewers.patch](tarball://root/attachments/some-uuid/ticket7263/trac_7263-sagenb_cli_3d_viewers.patch) by mpatel created at 2009-10-22 20:38:54\n\nThe patches depend on #7196.",
     "created_at": "2009-10-22T20:38:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7263",
     "type": "issue_comment",
@@ -224,7 +224,7 @@ archive/issue_comments_060337.json:
 }
 ```
 
-Attachment
+Attachment [trac_7263-sagenb_cli_3d_viewers.patch](tarball://root/attachments/some-uuid/ticket7263/trac_7263-sagenb_cli_3d_viewers.patch) by mpatel created at 2009-10-22 20:38:54
 
 The patches depend on #7196.
 

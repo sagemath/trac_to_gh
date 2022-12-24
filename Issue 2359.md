@@ -167,7 +167,7 @@ Removed polynomial garbage
 archive/issue_comments_015907.json:
 ```json
 {
-    "body": "Attachment\n\nworks for me -- I uploaded a cleaned up patch.",
+    "body": "Attachment [sage-2359.patch](tarball://root/attachments/some-uuid/ticket2359/sage-2359.patch) by boothby created at 2008-05-12 05:41:35\n\nworks for me -- I uploaded a cleaned up patch.",
     "created_at": "2008-05-12T05:41:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2359",
     "type": "issue_comment",
@@ -176,7 +176,7 @@ archive/issue_comments_015907.json:
 }
 ```
 
-Attachment
+Attachment [sage-2359.patch](tarball://root/attachments/some-uuid/ticket2359/sage-2359.patch) by boothby created at 2008-05-12 05:41:35
 
 works for me -- I uploaded a cleaned up patch.
 

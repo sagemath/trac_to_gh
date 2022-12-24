@@ -100,7 +100,7 @@ archive/issue_comments_039049.json:
 archive/issue_comments_039050.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5111.patch](tarball://root/attachments/some-uuid/ticket5111/trac_5111.patch) by mhansen created at 2009-02-19 17:39:40",
     "created_at": "2009-02-19T17:39:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5111",
     "type": "issue_comment",
@@ -109,7 +109,7 @@ archive/issue_comments_039050.json:
 }
 ```
 
-Attachment
+Attachment [trac_5111.patch](tarball://root/attachments/some-uuid/ticket5111/trac_5111.patch) by mhansen created at 2009-02-19 17:39:40
 
 
 
@@ -385,7 +385,7 @@ I don't know -- I don't really use this software.  It should be pretty trivial t
 archive/issue_comments_039060.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5111b.patch](tarball://root/attachments/some-uuid/ticket5111/trac_5111b.patch) by bpage created at 2009-02-26 00:06:40",
     "created_at": "2009-02-26T00:06:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5111",
     "type": "issue_comment",
@@ -394,7 +394,7 @@ archive/issue_comments_039060.json:
 }
 ```
 
-Attachment
+Attachment [trac_5111b.patch](tarball://root/attachments/some-uuid/ticket5111/trac_5111b.patch) by bpage created at 2009-02-26 00:06:40
 
 
 

@@ -153,7 +153,7 @@ Any thoughts on which option is better?
 archive/issue_comments_011040.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac1748-wthread.patch](tarball://root/attachments/some-uuid/ticket1748/trac1748-wthread.patch) by cwitty created at 2008-03-01 20:00:56",
     "created_at": "2008-03-01T20:00:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1748",
     "type": "issue_comment",
@@ -162,7 +162,7 @@ archive/issue_comments_011040.json:
 }
 ```
 
-Attachment
+Attachment [trac1748-wthread.patch](tarball://root/attachments/some-uuid/ticket1748/trac1748-wthread.patch) by cwitty created at 2008-03-01 20:00:56
 
 
 

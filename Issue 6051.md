@@ -50,7 +50,7 @@ almost works
 archive/issue_comments_048198.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch enables the Singular coefficient rings natively. It passes doctests except: \n\n```\nThe following tests failed:\n\n        sage -t  devel/sage/sage/rings/polynomial/toy_d_basis.py # 1 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 1049.8 seconds\n```\n\nwhich I reported upstream at \n\n  http://www.singular.uni-kl.de:8002/trac/ticket/137",
+    "body": "Attachment [singular_3_1_0-rings.patch](tarball://root/attachments/some-uuid/ticket6051/singular_3_1_0-rings.patch) by malb created at 2009-05-17 05:00:27\n\nThe attached patch enables the Singular coefficient rings natively. It passes doctests except: \n\n```\nThe following tests failed:\n\n        sage -t  devel/sage/sage/rings/polynomial/toy_d_basis.py # 1 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 1049.8 seconds\n```\n\nwhich I reported upstream at \n\n  http://www.singular.uni-kl.de:8002/trac/ticket/137",
     "created_at": "2009-05-17T05:00:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6051",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_048198.json:
 }
 ```
 
-Attachment
+Attachment [singular_3_1_0-rings.patch](tarball://root/attachments/some-uuid/ticket6051/singular_3_1_0-rings.patch) by malb created at 2009-05-17 05:00:27
 
 The attached patch enables the Singular coefficient rings natively. It passes doctests except: 
 
@@ -224,7 +224,7 @@ Nick, you don't have to update the SPKG just because you are release manager. In
 archive/issue_comments_048205.json:
 ```json
 {
-    "body": "Attachment\n\nI rebased the patch against 4.0.1 (really what will be 4.0.2.alpha0) and it works up to that one failing doctest.  I'd really like to merge this and #6034 for 4.0.2 so if the spkg itself isn't updated to the even newer singular, let's remove the failing doctest.",
+    "body": "Attachment [trac_6051-rings-against-4.0.1.patch](tarball://root/attachments/some-uuid/ticket6051/trac_6051-rings-against-4.0.1.patch) by ncalexan created at 2009-06-11 04:51:40\n\nI rebased the patch against 4.0.1 (really what will be 4.0.2.alpha0) and it works up to that one failing doctest.  I'd really like to merge this and #6034 for 4.0.2 so if the spkg itself isn't updated to the even newer singular, let's remove the failing doctest.",
     "created_at": "2009-06-11T04:51:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6051",
     "type": "issue_comment",
@@ -233,7 +233,7 @@ archive/issue_comments_048205.json:
 }
 ```
 
-Attachment
+Attachment [trac_6051-rings-against-4.0.1.patch](tarball://root/attachments/some-uuid/ticket6051/trac_6051-rings-against-4.0.1.patch) by ncalexan created at 2009-06-11 04:51:40
 
 I rebased the patch against 4.0.1 (really what will be 4.0.2.alpha0) and it works up to that one failing doctest.  I'd really like to merge this and #6034 for 4.0.2 so if the spkg itself isn't updated to the even newer singular, let's remove the failing doctest.
 
@@ -368,7 +368,7 @@ I will provide a workaround and attach it to this ticket.
 archive/issue_comments_048212.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch fixes the issue on sage.math for me.",
+    "body": "Attachment [singular_exp_overflow.patch](tarball://root/attachments/some-uuid/ticket6051/singular_exp_overflow.patch) by malb created at 2009-06-15 10:49:30\n\nThe attached patch fixes the issue on sage.math for me.",
     "created_at": "2009-06-15T10:49:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6051",
     "type": "issue_comment",
@@ -377,6 +377,6 @@ archive/issue_comments_048212.json:
 }
 ```
 
-Attachment
+Attachment [singular_exp_overflow.patch](tarball://root/attachments/some-uuid/ticket6051/singular_exp_overflow.patch) by malb created at 2009-06-15 10:49:30
 
 The attached patch fixes the issue on sage.math for me.

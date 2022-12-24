@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3844
 archive/issue_comments_027345.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3844.patch](tarball://root/attachments/some-uuid/ticket3844/sage-3844.patch) by was created at 2008-08-14 03:07:50",
     "created_at": "2008-08-14T03:07:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3844",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_027345.json:
 }
 ```
 
-Attachment
+Attachment [sage-3844.patch](tarball://root/attachments/some-uuid/ticket3844/sage-3844.patch) by was created at 2008-08-14 03:07:50
 
 
 
@@ -112,7 +112,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_027349.json:
 ```json
 {
-    "body": "Attachment\n\napply only this -- ignore the old sage-3844.patch",
+    "body": "Attachment [sagenb_3844.patch](tarball://root/attachments/some-uuid/ticket3844/sagenb_3844.patch) by was created at 2009-11-19 23:51:07\n\napply only this -- ignore the old sage-3844.patch",
     "created_at": "2009-11-19T23:51:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3844",
     "type": "issue_comment",
@@ -121,7 +121,7 @@ archive/issue_comments_027349.json:
 }
 ```
 
-Attachment
+Attachment [sagenb_3844.patch](tarball://root/attachments/some-uuid/ticket3844/sagenb_3844.patch) by was created at 2009-11-19 23:51:07
 
 apply only this -- ignore the old sage-3844.patch
 
@@ -168,7 +168,7 @@ I've come across the same problem as TimothyClemans -- importing it after attach
 archive/issue_comments_027352.json:
 ```json
 {
-    "body": "Attachment\n\nUpdates `tutorial.py`. Replaces previous.",
+    "body": "Attachment [trac_3844-DATA_in_sys_path.2.patch](tarball://root/attachments/some-uuid/ticket3844/trac_3844-DATA_in_sys_path.2.patch) by mpatel created at 2010-01-22 03:57:41\n\nUpdates `tutorial.py`. Replaces previous.",
     "created_at": "2010-01-22T03:57:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3844",
     "type": "issue_comment",
@@ -177,7 +177,7 @@ archive/issue_comments_027352.json:
 }
 ```
 
-Attachment
+Attachment [trac_3844-DATA_in_sys_path.2.patch](tarball://root/attachments/some-uuid/ticket3844/trac_3844-DATA_in_sys_path.2.patch) by mpatel created at 2010-01-22 03:57:41
 
 Updates `tutorial.py`. Replaces previous.
 
@@ -248,7 +248,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_027356.json:
 ```json
 {
-    "body": "Attachment\n\nRebased for SageNB 0.6 + queue in comment.  Replaces previous.",
+    "body": "Attachment [trac_3844-DATA_in_sys_path.3.patch](tarball://root/attachments/some-uuid/ticket3844/trac_3844-DATA_in_sys_path.3.patch) by mpatel created at 2010-01-25 01:14:37\n\nRebased for SageNB 0.6 + queue in comment.  Replaces previous.",
     "created_at": "2010-01-25T01:14:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3844",
     "type": "issue_comment",
@@ -257,7 +257,7 @@ archive/issue_comments_027356.json:
 }
 ```
 
-Attachment
+Attachment [trac_3844-DATA_in_sys_path.3.patch](tarball://root/attachments/some-uuid/ticket3844/trac_3844-DATA_in_sys_path.3.patch) by mpatel created at 2010-01-25 01:14:37
 
 Rebased for SageNB 0.6 + queue in comment.  Replaces previous.
 

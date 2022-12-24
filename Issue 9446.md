@@ -473,7 +473,7 @@ I get 13 failures on sage.math, at least some of which I may have induced with a
 archive/issue_comments_090523.json:
 ```json
 {
-    "body": "Attachment\n\nIncrease pexpect timeout for test",
+    "body": "Attachment [trac_9446-trace_doctest_timeout.patch](tarball://root/attachments/some-uuid/ticket9446/trac_9446-trace_doctest_timeout.patch) by mpatel created at 2010-10-10 03:31:44\n\nIncrease pexpect timeout for test",
     "created_at": "2010-10-10T03:31:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9446",
     "type": "issue_comment",
@@ -482,7 +482,7 @@ archive/issue_comments_090523.json:
 }
 ```
 
-Attachment
+Attachment [trac_9446-trace_doctest_timeout.patch](tarball://root/attachments/some-uuid/ticket9446/trac_9446-trace_doctest_timeout.patch) by mpatel created at 2010-10-10 03:31:44
 
 Increase pexpect timeout for test
 

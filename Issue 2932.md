@@ -188,7 +188,7 @@ Changing status from new to assigned.
 archive/issue_comments_020191.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [approx_doc.changeset](tarball://root/attachments/some-uuid/ticket2932/approx_doc.changeset) by broune created at 2008-05-10 21:05:58",
     "created_at": "2008-05-10T21:05:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2932",
     "type": "issue_comment",
@@ -197,7 +197,7 @@ archive/issue_comments_020191.json:
 }
 ```
 
-Attachment
+Attachment [approx_doc.changeset](tarball://root/attachments/some-uuid/ticket2932/approx_doc.changeset) by broune created at 2008-05-10 21:05:58
 
 
 

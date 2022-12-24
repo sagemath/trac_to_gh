@@ -127,7 +127,7 @@ Changing status from new to assigned.
 archive/issue_comments_011410.json:
 ```json
 {
-    "body": "Attachment\n\nThis is a preliminary patch.  I'm now doctesting all of sage-2.10 with this patch applied to see what else is broke.  I'll post another patch that fixes the problems later.",
+    "body": "Attachment [trac-1805.patch](tarball://root/attachments/some-uuid/ticket1805/trac-1805.patch) by was created at 2008-01-17 20:03:24\n\nThis is a preliminary patch.  I'm now doctesting all of sage-2.10 with this patch applied to see what else is broke.  I'll post another patch that fixes the problems later.",
     "created_at": "2008-01-17T20:03:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1805",
     "type": "issue_comment",
@@ -136,7 +136,7 @@ archive/issue_comments_011410.json:
 }
 ```
 
-Attachment
+Attachment [trac-1805.patch](tarball://root/attachments/some-uuid/ticket1805/trac-1805.patch) by was created at 2008-01-17 20:03:24
 
 This is a preliminary patch.  I'm now doctesting all of sage-2.10 with this patch applied to see what else is broke.  I'll post another patch that fixes the problems later.
 
@@ -147,7 +147,7 @@ This is a preliminary patch.  I'm now doctesting all of sage-2.10 with this patc
 archive/issue_comments_011411.json:
 ```json
 {
-    "body": "Attachment\n\nthis part 2 fixes some additional issues, typos, etc., I saw when proofreading my patch.",
+    "body": "Attachment [trac-1805-part2.patch](tarball://root/attachments/some-uuid/ticket1805/trac-1805-part2.patch) by was created at 2008-01-17 21:47:11\n\nthis part 2 fixes some additional issues, typos, etc., I saw when proofreading my patch.",
     "created_at": "2008-01-17T21:47:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1805",
     "type": "issue_comment",
@@ -156,7 +156,7 @@ archive/issue_comments_011411.json:
 }
 ```
 
-Attachment
+Attachment [trac-1805-part2.patch](tarball://root/attachments/some-uuid/ticket1805/trac-1805-part2.patch) by was created at 2008-01-17 21:47:11
 
 this part 2 fixes some additional issues, typos, etc., I saw when proofreading my patch.
 
@@ -317,7 +317,7 @@ new rebased version
 archive/issue_comments_011420.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-1805-part2-rebased.patch](tarball://root/attachments/some-uuid/ticket1805/sage-1805-part2-rebased.patch) by was created at 2008-03-02 02:49:13",
     "created_at": "2008-03-02T02:49:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1805",
     "type": "issue_comment",
@@ -326,7 +326,7 @@ archive/issue_comments_011420.json:
 }
 ```
 
-Attachment
+Attachment [sage-1805-part2-rebased.patch](tarball://root/attachments/some-uuid/ticket1805/sage-1805-part2-rebased.patch) by was created at 2008-03-02 02:49:13
 
 
 
@@ -335,7 +335,7 @@ Attachment
 archive/issue_comments_011421.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-1805-rebase_part3.patch](tarball://root/attachments/some-uuid/ticket1805/sage-1805-rebase_part3.patch) by was created at 2008-03-02 02:52:59",
     "created_at": "2008-03-02T02:52:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1805",
     "type": "issue_comment",
@@ -344,7 +344,7 @@ archive/issue_comments_011421.json:
 }
 ```
 
-Attachment
+Attachment [sage-1805-rebase_part3.patch](tarball://root/attachments/some-uuid/ticket1805/sage-1805-rebase_part3.patch) by was created at 2008-03-02 02:52:59
 
 
 
@@ -485,7 +485,7 @@ this should be the final of four patches; it fixes one problem found by the refe
 archive/issue_comments_011427.json:
 ```json
 {
-    "body": "Attachment\n\nI attached the one small change requested.",
+    "body": "Attachment [sage-1805-part4-make_ref_happy.patch](tarball://root/attachments/some-uuid/ticket1805/sage-1805-part4-make_ref_happy.patch) by was created at 2008-03-02 08:09:24\n\nI attached the one small change requested.",
     "created_at": "2008-03-02T08:09:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1805",
     "type": "issue_comment",
@@ -494,7 +494,7 @@ archive/issue_comments_011427.json:
 }
 ```
 
-Attachment
+Attachment [sage-1805-part4-make_ref_happy.patch](tarball://root/attachments/some-uuid/ticket1805/sage-1805-part4-make_ref_happy.patch) by was created at 2008-03-02 08:09:24
 
 I attached the one small change requested.
 

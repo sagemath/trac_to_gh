@@ -226,7 +226,7 @@ I've been doing some more testing of CHomP-related doctests and have found a few
 archive/issue_comments_098997.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good and all tests pass on OS X 10.5, 10.6, and linux (64-bit Ubuntu 10.04, intel i7 860).  So I think I can give this a positive review.",
+    "body": "Attachment [trac_9942-chomp.patch](tarball://root/attachments/some-uuid/ticket9942/trac_9942-chomp.patch) by mhampton created at 2011-01-11 00:24:38\n\nLooks good and all tests pass on OS X 10.5, 10.6, and linux (64-bit Ubuntu 10.04, intel i7 860).  So I think I can give this a positive review.",
     "created_at": "2011-01-11T00:24:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9941",
     "type": "issue_comment",
@@ -235,7 +235,7 @@ archive/issue_comments_098997.json:
 }
 ```
 
-Attachment
+Attachment [trac_9942-chomp.patch](tarball://root/attachments/some-uuid/ticket9942/trac_9942-chomp.patch) by mhampton created at 2011-01-11 00:24:38
 
 Looks good and all tests pass on OS X 10.5, 10.6, and linux (64-bit Ubuntu 10.04, intel i7 860).  So I think I can give this a positive review.
 

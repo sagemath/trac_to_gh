@@ -357,7 +357,7 @@ All it needs now is that spelling error fixed and a doctest to illustrate the re
 archive/issue_comments_005241.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [847.patch](tarball://root/attachments/some-uuid/ticket847/847.patch) by mhansen created at 2007-11-30 22:34:56",
     "created_at": "2007-11-30T22:34:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/847",
     "type": "issue_comment",
@@ -366,7 +366,7 @@ archive/issue_comments_005241.json:
 }
 ```
 
-Attachment
+Attachment [847.patch](tarball://root/attachments/some-uuid/ticket847/847.patch) by mhansen created at 2007-11-30 22:34:56
 
 
 

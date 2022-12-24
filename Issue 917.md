@@ -61,7 +61,7 @@ Resolution: fixed
 archive/issue_comments_005630.json:
 ```json
 {
-    "body": "Attachment\n\nThis should definitely go in.",
+    "body": "Attachment [minors.patch](tarball://root/attachments/some-uuid/ticket917/minors.patch) by was created at 2007-10-21 01:15:32\n\nThis should definitely go in.",
     "created_at": "2007-10-21T01:15:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/917",
     "type": "issue_comment",
@@ -70,6 +70,6 @@ archive/issue_comments_005630.json:
 }
 ```
 
-Attachment
+Attachment [minors.patch](tarball://root/attachments/some-uuid/ticket917/minors.patch) by was created at 2007-10-21 01:15:32
 
 This should definitely go in.

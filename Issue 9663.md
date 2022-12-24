@@ -159,7 +159,7 @@ fast implementation of stirling_number2 -- updated patch
 archive/issue_comments_093789.json:
 ```json
 {
-    "body": "Attachment\n\nPlease see the new version of the patch.",
+    "body": "Attachment [stirling2.patch](tarball://root/attachments/some-uuid/ticket9663/stirling2.patch) by fredrik.johansson created at 2010-08-05 22:40:40\n\nPlease see the new version of the patch.",
     "created_at": "2010-08-05T22:40:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9663",
     "type": "issue_comment",
@@ -168,7 +168,7 @@ archive/issue_comments_093789.json:
 }
 ```
 
-Attachment
+Attachment [stirling2.patch](tarball://root/attachments/some-uuid/ticket9663/stirling2.patch) by fredrik.johansson created at 2010-08-05 22:40:40
 
 Please see the new version of the patch.
 
@@ -205,7 +205,7 @@ Nathann
 archive/issue_comments_093791.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9663 - additional test.patch](tarball://root/attachments/some-uuid/ticket9663/trac_9663 - additional test.patch) by ncohen created at 2010-09-05 15:20:23",
     "created_at": "2010-09-05T15:20:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9663",
     "type": "issue_comment",
@@ -214,7 +214,7 @@ archive/issue_comments_093791.json:
 }
 ```
 
-Attachment
+Attachment [trac_9663 - additional test.patch](tarball://root/attachments/some-uuid/ticket9663/trac_9663 - additional test.patch) by ncohen created at 2010-09-05 15:20:23
 
 
 
@@ -509,7 +509,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_093806.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9663-additional_tests.patch](tarball://root/attachments/some-uuid/ticket9663/trac_9663-additional_tests.patch) by ncohen created at 2010-10-26 11:58:37",
     "created_at": "2010-10-26T11:58:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9663",
     "type": "issue_comment",
@@ -518,7 +518,7 @@ archive/issue_comments_093806.json:
 }
 ```
 
-Attachment
+Attachment [trac_9663-additional_tests.patch](tarball://root/attachments/some-uuid/ticket9663/trac_9663-additional_tests.patch) by ncohen created at 2010-10-26 11:58:37
 
 
 

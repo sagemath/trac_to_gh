@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7196
 archive/issue_comments_059685.json:
 ```json
 {
-    "body": "Attachment\n\nSageNB data/ reorg part A: Shuffle files and directories.  Apply this patch first.",
+    "body": "Attachment [trac_7196-sagenb_data_reorg_part_A.patch](tarball://root/attachments/some-uuid/ticket7196/trac_7196-sagenb_data_reorg_part_A.patch) by mpatel created at 2009-10-12 17:38:06\n\nSageNB data/ reorg part A: Shuffle files and directories.  Apply this patch first.",
     "created_at": "2009-10-12T17:38:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7196",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_059685.json:
 }
 ```
 
-Attachment
+Attachment [trac_7196-sagenb_data_reorg_part_A.patch](tarball://root/attachments/some-uuid/ticket7196/trac_7196-sagenb_data_reorg_part_A.patch) by mpatel created at 2009-10-12 17:38:06
 
 SageNB data/ reorg part A: Shuffle files and directories.  Apply this patch first.
 
@@ -89,7 +89,7 @@ Changing status from new to needs_review.
 archive/issue_comments_059688.json:
 ```json
 {
-    "body": "Attachment\n\nI made the change in two parts, since the shuffle slowed Mercurial significantly.",
+    "body": "Attachment [trac_7196-sagenb_data_reorg_part_B.patch](tarball://root/attachments/some-uuid/ticket7196/trac_7196-sagenb_data_reorg_part_B.patch) by mpatel created at 2009-10-12 17:40:49\n\nI made the change in two parts, since the shuffle slowed Mercurial significantly.",
     "created_at": "2009-10-12T17:40:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7196",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_059688.json:
 }
 ```
 
-Attachment
+Attachment [trac_7196-sagenb_data_reorg_part_B.patch](tarball://root/attachments/some-uuid/ticket7196/trac_7196-sagenb_data_reorg_part_B.patch) by mpatel created at 2009-10-12 17:40:49
 
 I made the change in two parts, since the shuffle slowed Mercurial significantly.
 
@@ -165,7 +165,7 @@ Resolution: fixed
 archive/issue_comments_059692.json:
 ```json
 {
-    "body": "Attachment\n\nUpdate MANIFEST.in.",
+    "body": "Attachment [trac_7196-manifest.patch](tarball://root/attachments/some-uuid/ticket7196/trac_7196-manifest.patch) by mpatel created at 2009-10-19 14:52:03\n\nUpdate MANIFEST.in.",
     "created_at": "2009-10-19T14:52:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7196",
     "type": "issue_comment",
@@ -174,6 +174,6 @@ archive/issue_comments_059692.json:
 }
 ```
 
-Attachment
+Attachment [trac_7196-manifest.patch](tarball://root/attachments/some-uuid/ticket7196/trac_7196-manifest.patch) by mpatel created at 2009-10-19 14:52:03
 
 Update MANIFEST.in.

@@ -491,7 +491,7 @@ Changes the FPU to double-precession IEEE-754 from Intel's expended precisiion.
 archive/issue_comments_094373.json:
 ```json
 {
-    "body": "Attachment\n\nIf #9722 is ready to merge soon and this ticket is also positively reviewed, I'll consider including this in a 4.5.3.alpha2.",
+    "body": "Attachment [9703-SYMPOW-fix-for-Solaris.patch](tarball://root/attachments/some-uuid/ticket9703/9703-SYMPOW-fix-for-Solaris.patch) by mpatel created at 2010-08-23 13:23:47\n\nIf #9722 is ready to merge soon and this ticket is also positively reviewed, I'll consider including this in a 4.5.3.alpha2.",
     "created_at": "2010-08-23T13:23:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9703",
     "type": "issue_comment",
@@ -500,7 +500,7 @@ archive/issue_comments_094373.json:
 }
 ```
 
-Attachment
+Attachment [9703-SYMPOW-fix-for-Solaris.patch](tarball://root/attachments/some-uuid/ticket9703/9703-SYMPOW-fix-for-Solaris.patch) by mpatel created at 2010-08-23 13:23:47
 
 If #9722 is ready to merge soon and this ticket is also positively reviewed, I'll consider including this in a 4.5.3.alpha2.
 
@@ -557,7 +557,7 @@ I just need someone to change it to positive. I think I've provided quite a bit 
 archive/issue_comments_094376.json:
 ```json
 {
-    "body": "Attachment\n\nTest whether FPU is 53-bit or more",
+    "body": "Attachment [testfpu.c](tarball://root/attachments/some-uuid/ticket9703/testfpu.c) by jdemeyer created at 2010-08-23 13:53:57\n\nTest whether FPU is 53-bit or more",
     "created_at": "2010-08-23T13:53:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9703",
     "type": "issue_comment",
@@ -566,7 +566,7 @@ archive/issue_comments_094376.json:
 }
 ```
 
-Attachment
+Attachment [testfpu.c](tarball://root/attachments/some-uuid/ticket9703/testfpu.c) by jdemeyer created at 2010-08-23 13:53:57
 
 Test whether FPU is 53-bit or more
 

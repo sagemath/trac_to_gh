@@ -50,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5102
 archive/issue_comments_038965.json:
 ```json
 {
-    "body": "Attachment\n\nCredit to Craig Citro and Alex Ghitza.",
+    "body": "Attachment [trac_5102.patch](tarball://root/attachments/some-uuid/ticket5102/trac_5102.patch) by AlexGhitza created at 2009-01-26 04:55:21\n\nCredit to Craig Citro and Alex Ghitza.",
     "created_at": "2009-01-26T04:55:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5102",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_038965.json:
 }
 ```
 
-Attachment
+Attachment [trac_5102.patch](tarball://root/attachments/some-uuid/ticket5102/trac_5102.patch) by AlexGhitza created at 2009-01-26 04:55:21
 
 Credit to Craig Citro and Alex Ghitza.
 

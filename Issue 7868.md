@@ -92,7 +92,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7868
 archive/issue_comments_068238.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac7868_20100107.patch](tarball://root/attachments/some-uuid/ticket7868/trac7868_20100107.patch) by spancratz created at 2010-01-07 17:14:49",
     "created_at": "2010-01-07T17:14:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7868",
     "type": "issue_comment",
@@ -101,7 +101,7 @@ archive/issue_comments_068238.json:
 }
 ```
 
-Attachment
+Attachment [trac7868_20100107.patch](tarball://root/attachments/some-uuid/ticket7868/trac7868_20100107.patch) by spancratz created at 2010-01-07 17:14:49
 
 
 
@@ -330,7 +330,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_068251.json:
 ```json
 {
-    "body": "Attachment\n\nreplaces previous",
+    "body": "Attachment [7868-fix.patch](tarball://root/attachments/some-uuid/ticket7868/7868-fix.patch) by robertwb created at 2010-01-07 21:38:27\n\nreplaces previous",
     "created_at": "2010-01-07T21:38:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7868",
     "type": "issue_comment",
@@ -339,7 +339,7 @@ archive/issue_comments_068251.json:
 }
 ```
 
-Attachment
+Attachment [7868-fix.patch](tarball://root/attachments/some-uuid/ticket7868/7868-fix.patch) by robertwb created at 2010-01-07 21:38:27
 
 replaces previous
 
@@ -386,7 +386,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_068254.json:
 ```json
 {
-    "body": "Attachment\n\nreplaces previous",
+    "body": "Attachment [7868-fix.2.patch](tarball://root/attachments/some-uuid/ticket7868/7868-fix.2.patch) by cremona created at 2010-01-07 22:00:52\n\nreplaces previous",
     "created_at": "2010-01-07T22:00:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7868",
     "type": "issue_comment",
@@ -395,7 +395,7 @@ archive/issue_comments_068254.json:
 }
 ```
 
-Attachment
+Attachment [7868-fix.2.patch](tarball://root/attachments/some-uuid/ticket7868/7868-fix.2.patch) by cremona created at 2010-01-07 22:00:52
 
 replaces previous
 
@@ -547,7 +547,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_068262.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac7868_rb.patch](tarball://root/attachments/some-uuid/ticket7868/trac7868_rb.patch) by rlm created at 2010-01-19 20:04:27",
     "created_at": "2010-01-19T20:04:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7868",
     "type": "issue_comment",
@@ -556,7 +556,7 @@ archive/issue_comments_068262.json:
 }
 ```
 
-Attachment
+Attachment [trac7868_rb.patch](tarball://root/attachments/some-uuid/ticket7868/trac7868_rb.patch) by rlm created at 2010-01-19 20:04:27
 
 
 

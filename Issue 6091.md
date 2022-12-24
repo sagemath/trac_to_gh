@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6091
 archive/issue_comments_048536.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review. Patch applies fine to 4.0.rc1, all tests in sage/rings/number_field and doc/en/bordeaux_2008 pass; and the new syntax is a very useful thing to have.\n\nDavid",
+    "body": "Attachment [trac_6091.patch](tarball://root/attachments/some-uuid/ticket6091/trac_6091.patch) by davidloeffler created at 2009-05-29 10:46:30\n\nPositive review. Patch applies fine to 4.0.rc1, all tests in sage/rings/number_field and doc/en/bordeaux_2008 pass; and the new syntax is a very useful thing to have.\n\nDavid",
     "created_at": "2009-05-29T10:46:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6091",
     "type": "issue_comment",
@@ -49,7 +49,7 @@ archive/issue_comments_048536.json:
 }
 ```
 
-Attachment
+Attachment [trac_6091.patch](tarball://root/attachments/some-uuid/ticket6091/trac_6091.patch) by davidloeffler created at 2009-05-29 10:46:30
 
 Positive review. Patch applies fine to 4.0.rc1, all tests in sage/rings/number_field and doc/en/bordeaux_2008 pass; and the new syntax is a very useful thing to have.
 
@@ -142,7 +142,7 @@ I think in this case there's a simpler solution,  already used in the `NumberFie
 archive/issue_comments_048541.json:
 ```json
 {
-    "body": "Attachment\n\nreplaces previous",
+    "body": "Attachment [trac_6091_revised.patch](tarball://root/attachments/some-uuid/ticket6091/trac_6091_revised.patch) by fwclarke created at 2009-06-01 21:41:17\n\nreplaces previous",
     "created_at": "2009-06-01T21:41:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6091",
     "type": "issue_comment",
@@ -151,7 +151,7 @@ archive/issue_comments_048541.json:
 }
 ```
 
-Attachment
+Attachment [trac_6091_revised.patch](tarball://root/attachments/some-uuid/ticket6091/trac_6091_revised.patch) by fwclarke created at 2009-06-01 21:41:17
 
 replaces previous
 

@@ -85,7 +85,7 @@ Changing status from closed to reopened.
 archive/issue_comments_022900.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3311_sage.patch](tarball://root/attachments/some-uuid/ticket3311/trac_3311_sage.patch) by mabshoff created at 2008-05-27 03:18:49",
     "created_at": "2008-05-27T03:18:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3311",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_022900.json:
 }
 ```
 
-Attachment
+Attachment [trac_3311_sage.patch](tarball://root/attachments/some-uuid/ticket3311/trac_3311_sage.patch) by mabshoff created at 2008-05-27 03:18:49
 
 
 
@@ -103,7 +103,7 @@ Attachment
 archive/issue_comments_022901.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3311_scripts_hgignore.patch](tarball://root/attachments/some-uuid/ticket3311/trac_3311_scripts_hgignore.patch) by mabshoff created at 2008-05-27 03:19:33",
     "created_at": "2008-05-27T03:19:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3311",
     "type": "issue_comment",
@@ -112,7 +112,7 @@ archive/issue_comments_022901.json:
 }
 ```
 
-Attachment
+Attachment [trac_3311_scripts_hgignore.patch](tarball://root/attachments/some-uuid/ticket3311/trac_3311_scripts_hgignore.patch) by mabshoff created at 2008-05-27 03:19:33
 
 
 
@@ -121,7 +121,7 @@ Attachment
 archive/issue_comments_022902.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3311_scripts_remove_dsage.patch](tarball://root/attachments/some-uuid/ticket3311/trac_3311_scripts_remove_dsage.patch) by was created at 2008-05-27 04:07:42",
     "created_at": "2008-05-27T04:07:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3311",
     "type": "issue_comment",
@@ -130,7 +130,7 @@ archive/issue_comments_022902.json:
 }
 ```
 
-Attachment
+Attachment [trac_3311_scripts_remove_dsage.patch](tarball://root/attachments/some-uuid/ticket3311/trac_3311_scripts_remove_dsage.patch) by was created at 2008-05-27 04:07:42
 
 
 
@@ -139,7 +139,7 @@ Attachment
 archive/issue_comments_022903.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3311_extcode.patch](tarball://root/attachments/some-uuid/ticket3311/trac_3311_extcode.patch) by gfurnish created at 2008-05-27 05:20:49",
     "created_at": "2008-05-27T05:20:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3311",
     "type": "issue_comment",
@@ -148,7 +148,7 @@ archive/issue_comments_022903.json:
 }
 ```
 
-Attachment
+Attachment [trac_3311_extcode.patch](tarball://root/attachments/some-uuid/ticket3311/trac_3311_extcode.patch) by gfurnish created at 2008-05-27 05:20:49
 
 
 
@@ -193,7 +193,7 @@ Resolution: fixed
 archive/issue_comments_022906.json:
 ```json
 {
-    "body": "Attachment\n\nMerged trac_3311* in Sage 3.0.3.alpha0",
+    "body": "Attachment [3311_dsage_setup.patch](tarball://root/attachments/some-uuid/ticket3311/3311_dsage_setup.patch) by mabshoff created at 2008-05-27 05:42:43\n\nMerged trac_3311* in Sage 3.0.3.alpha0",
     "created_at": "2008-05-27T05:42:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3311",
     "type": "issue_comment",
@@ -202,6 +202,6 @@ archive/issue_comments_022906.json:
 }
 ```
 
-Attachment
+Attachment [3311_dsage_setup.patch](tarball://root/attachments/some-uuid/ticket3311/3311_dsage_setup.patch) by mabshoff created at 2008-05-27 05:42:43
 
 Merged trac_3311* in Sage 3.0.3.alpha0

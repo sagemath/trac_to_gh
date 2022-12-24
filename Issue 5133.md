@@ -117,7 +117,7 @@ Changing status from new to assigned.
 archive/issue_comments_039247.json:
 ```json
 {
-    "body": "Attachment\n\nattachment:trac_5133-multi_modular_tests.patch adds doctests and fixes some possible segfaults by reorganizing the memory allocations in `sage.ext.multi_modular`. Changes introduced by the patch are:\n\n* 100% coverage\n* refactor memory management\n* use random primes\n* set upper/lower bounds for moduli on initialization",
+    "body": "Attachment [trac_5133-multi_modular_tests.patch](tarball://root/attachments/some-uuid/ticket5133/trac_5133-multi_modular_tests.patch) by burcin created at 2009-06-27 14:37:21\n\nattachment:trac_5133-multi_modular_tests.patch adds doctests and fixes some possible segfaults by reorganizing the memory allocations in `sage.ext.multi_modular`. Changes introduced by the patch are:\n\n* 100% coverage\n* refactor memory management\n* use random primes\n* set upper/lower bounds for moduli on initialization",
     "created_at": "2009-06-27T14:37:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5133",
     "type": "issue_comment",
@@ -126,7 +126,7 @@ archive/issue_comments_039247.json:
 }
 ```
 
-Attachment
+Attachment [trac_5133-multi_modular_tests.patch](tarball://root/attachments/some-uuid/ticket5133/trac_5133-multi_modular_tests.patch) by burcin created at 2009-06-27 14:37:21
 
 attachment:trac_5133-multi_modular_tests.patch adds doctests and fixes some possible segfaults by reorganizing the memory allocations in `sage.ext.multi_modular`. Changes introduced by the patch are:
 
@@ -250,7 +250,7 @@ Doh! I only doctested the `sage/matrix` directory. Apparently the only user of `
 archive/issue_comments_039250.json:
 ```json
 {
-    "body": "Attachment\n\nsecond try, apply only this one",
+    "body": "Attachment [trac_5133-multi_modular_tests-take2.patch](tarball://root/attachments/some-uuid/ticket5133/trac_5133-multi_modular_tests-take2.patch) by burcin created at 2009-07-18 15:49:24\n\nsecond try, apply only this one",
     "created_at": "2009-07-18T15:49:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5133",
     "type": "issue_comment",
@@ -259,7 +259,7 @@ archive/issue_comments_039250.json:
 }
 ```
 
-Attachment
+Attachment [trac_5133-multi_modular_tests-take2.patch](tarball://root/attachments/some-uuid/ticket5133/trac_5133-multi_modular_tests-take2.patch) by burcin created at 2009-07-18 15:49:24
 
 second try, apply only this one
 
@@ -306,7 +306,7 @@ rebased to depend on #6529
 archive/issue_comments_039253.json:
 ```json
 {
-    "body": "Attachment\n\nI got a hunk failure when applying `trac_5133-multi_modular_tests-take2.patch`:\n\n```\n[mvngu@sage sage-exp]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/5133/trac_5133-multi_modular_tests-take2.patch\nadding trac_5133-multi_modular_tests-take2.patch to series file\n[mvngu@sage sage-exp]$ hg qpush -a\napplying trac_5133-multi_modular_tests-take2.patch\npatching file sage/rings/arith.py\nHunk #2 FAILED at 914\n1 out of 4 hunks FAILED -- saving rejects to file sage/rings/arith.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nErrors during apply, please fix and refresh trac_5133-multi_modular_tests-take2.patch\n```\n\nHere's the hunk that failed:\n\n```\n--- arith.py                                                                    \n+++ arith.py                                                                    \n@@ -915,6 +915,9 @@\n        the function uses a pseudo-primality test, which is much faster for     \n        really big numbers but does not provide a proof of primality. If        \n        None, uses the global default (see sage.structure.proof)                \n+                                                                               \n+    - ``lbound`` - an integer >= 2                                             \n+      lower bound for the chosen primes                                        \n                                                                                \n                                                                                \n     EXAMPLES::\n```\n\nThis is because I previously applied the patches at #6529. The failure has been manually resolved so the docstring of `random_prime` in `sage/rings/arith.py` now reads:\n\n```\n    Returns a random prime p between `lbound` and n (i.e. `lbound <= p <= n`).  \n    The returned prime is chosen uniformly at random from the set of prime      \n    numbers less than or equal to n.                                            \n                                                                                \n    INPUT:                                                                      \n                                                                                \n                                                                                \n    -  ``n`` - an integer >= 2.                                                 \n                                                                                \n    -  ``proof`` - bool or None (default: None) If False, the function uses a   \n       pseudo-primality test, which is much faster for really big numbers but   \n       does not provide a proof of primality. If None, uses the global default  \n       (see :mod:`sage.structure.proof.proof`)                                  \n                                                                                \n    - ``lbound`` - an integer >= 2                                              \n      lower bound for the chosen primes\n```\n\nThe patch `trac_5133-take2-rebased.patch` is a rebase of `trac_5133-multi_modular_tests-take2.patch` that depends on first applying the patches at #6529.",
+    "body": "Attachment [trac_5133-take2-rebased.patch](tarball://root/attachments/some-uuid/ticket5133/trac_5133-take2-rebased.patch) by mvngu created at 2009-07-20 14:23:56\n\nI got a hunk failure when applying `trac_5133-multi_modular_tests-take2.patch`:\n\n```\n[mvngu@sage sage-exp]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/5133/trac_5133-multi_modular_tests-take2.patch\nadding trac_5133-multi_modular_tests-take2.patch to series file\n[mvngu@sage sage-exp]$ hg qpush -a\napplying trac_5133-multi_modular_tests-take2.patch\npatching file sage/rings/arith.py\nHunk #2 FAILED at 914\n1 out of 4 hunks FAILED -- saving rejects to file sage/rings/arith.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nErrors during apply, please fix and refresh trac_5133-multi_modular_tests-take2.patch\n```\n\nHere's the hunk that failed:\n\n```\n--- arith.py                                                                    \n+++ arith.py                                                                    \n@@ -915,6 +915,9 @@\n        the function uses a pseudo-primality test, which is much faster for     \n        really big numbers but does not provide a proof of primality. If        \n        None, uses the global default (see sage.structure.proof)                \n+                                                                               \n+    - ``lbound`` - an integer >= 2                                             \n+      lower bound for the chosen primes                                        \n                                                                                \n                                                                                \n     EXAMPLES::\n```\n\nThis is because I previously applied the patches at #6529. The failure has been manually resolved so the docstring of `random_prime` in `sage/rings/arith.py` now reads:\n\n```\n    Returns a random prime p between `lbound` and n (i.e. `lbound <= p <= n`).  \n    The returned prime is chosen uniformly at random from the set of prime      \n    numbers less than or equal to n.                                            \n                                                                                \n    INPUT:                                                                      \n                                                                                \n                                                                                \n    -  ``n`` - an integer >= 2.                                                 \n                                                                                \n    -  ``proof`` - bool or None (default: None) If False, the function uses a   \n       pseudo-primality test, which is much faster for really big numbers but   \n       does not provide a proof of primality. If None, uses the global default  \n       (see :mod:`sage.structure.proof.proof`)                                  \n                                                                                \n    - ``lbound`` - an integer >= 2                                              \n      lower bound for the chosen primes\n```\n\nThe patch `trac_5133-take2-rebased.patch` is a rebase of `trac_5133-multi_modular_tests-take2.patch` that depends on first applying the patches at #6529.",
     "created_at": "2009-07-20T14:23:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5133",
     "type": "issue_comment",
@@ -315,7 +315,7 @@ archive/issue_comments_039253.json:
 }
 ```
 
-Attachment
+Attachment [trac_5133-take2-rebased.patch](tarball://root/attachments/some-uuid/ticket5133/trac_5133-take2-rebased.patch) by mvngu created at 2009-07-20 14:23:56
 
 I got a hunk failure when applying `trac_5133-multi_modular_tests-take2.patch`:
 
@@ -415,7 +415,7 @@ changed error message in rebased patch
 archive/issue_comments_039256.json:
 ```json
 {
-    "body": "Attachment\n\nI changed the error message `random_prime()` gives when `lower_bound` is `< n`.\n\nPositive review for the rebased patch.",
+    "body": "Attachment [trac_5133-take2-rebased2.patch](tarball://root/attachments/some-uuid/ticket5133/trac_5133-take2-rebased2.patch) by burcin created at 2009-07-20 16:41:22\n\nI changed the error message `random_prime()` gives when `lower_bound` is `< n`.\n\nPositive review for the rebased patch.",
     "created_at": "2009-07-20T16:41:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5133",
     "type": "issue_comment",
@@ -424,7 +424,7 @@ archive/issue_comments_039256.json:
 }
 ```
 
-Attachment
+Attachment [trac_5133-take2-rebased2.patch](tarball://root/attachments/some-uuid/ticket5133/trac_5133-take2-rebased2.patch) by burcin created at 2009-07-20 16:41:22
 
 I changed the error message `random_prime()` gives when `lower_bound` is `< n`.
 

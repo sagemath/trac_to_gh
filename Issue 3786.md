@@ -210,7 +210,7 @@ Resolution: fixed
 archive/issue_comments_026926.json:
 ```json
 {
-    "body": "Attachment\n\nMerged in Sage 3.1.alpha2",
+    "body": "Attachment [trac_3786-linear_binary_codes.patch](tarball://root/attachments/some-uuid/ticket3786/trac_3786-linear_binary_codes.patch) by mabshoff created at 2008-08-12 06:01:05\n\nMerged in Sage 3.1.alpha2",
     "created_at": "2008-08-12T06:01:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3786",
     "type": "issue_comment",
@@ -219,6 +219,6 @@ archive/issue_comments_026926.json:
 }
 ```
 
-Attachment
+Attachment [trac_3786-linear_binary_codes.patch](tarball://root/attachments/some-uuid/ticket3786/trac_3786-linear_binary_codes.patch) by mabshoff created at 2008-08-12 06:01:05
 
 Merged in Sage 3.1.alpha2

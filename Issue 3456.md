@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3456
 archive/issue_comments_024364.json:
 ```json
 {
-    "body": "Attachment\n\nvery very pre-pre-alpha!",
+    "body": "Attachment [3456-prelim.patch](tarball://root/attachments/some-uuid/ticket3456/3456-prelim.patch) by boothby created at 2008-07-04 07:28:12\n\nvery very pre-pre-alpha!",
     "created_at": "2008-07-04T07:28:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3456",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_024364.json:
 }
 ```
 
-Attachment
+Attachment [3456-prelim.patch](tarball://root/attachments/some-uuid/ticket3456/3456-prelim.patch) by boothby created at 2008-07-04 07:28:12
 
 very very pre-pre-alpha!
 

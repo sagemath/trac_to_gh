@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4058
 archive/issue_comments_029251.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4058-integer-coerce.patch](tarball://root/attachments/some-uuid/ticket4058/4058-integer-coerce.patch) by robertwb created at 2008-09-04 04:28:33",
     "created_at": "2008-09-04T04:28:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4058",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_029251.json:
 }
 ```
 
-Attachment
+Attachment [4058-integer-coerce.patch](tarball://root/attachments/some-uuid/ticket4058/4058-integer-coerce.patch) by robertwb created at 2008-09-04 04:28:33
 
 
 
@@ -97,7 +97,7 @@ I'll rebase this as soon as I get 3.1.2.
 archive/issue_comments_029254.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4058-integer-coerce.2.patch](tarball://root/attachments/some-uuid/ticket4058/4058-integer-coerce.2.patch) by robertwb created at 2008-09-23 19:00:07",
     "created_at": "2008-09-23T19:00:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4058",
     "type": "issue_comment",
@@ -106,7 +106,7 @@ archive/issue_comments_029254.json:
 }
 ```
 
-Attachment
+Attachment [4058-integer-coerce.2.patch](tarball://root/attachments/some-uuid/ticket4058/4058-integer-coerce.2.patch) by robertwb created at 2008-09-23 19:00:07
 
 
 

@@ -82,7 +82,7 @@ The second issue is because the roots of x^2+1 are "sorted" as complex numbers, 
 archive/issue_comments_049457.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6192.patch](tarball://root/attachments/some-uuid/ticket6192/trac_6192.patch) by was created at 2009-06-02 22:04:42",
     "created_at": "2009-06-02T22:04:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6192",
     "type": "issue_comment",
@@ -91,7 +91,7 @@ archive/issue_comments_049457.json:
 }
 ```
 
-Attachment
+Attachment [trac_6192.patch](tarball://root/attachments/some-uuid/ticket6192/trac_6192.patch) by was created at 2009-06-02 22:04:42
 
 
 

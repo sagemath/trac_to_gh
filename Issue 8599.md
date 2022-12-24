@@ -86,7 +86,7 @@ Changing status from new to needs_review.
 archive/issue_comments_077872.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8599_pointsize-sl.patch](tarball://root/attachments/some-uuid/ticket8599/trac_8599_pointsize-sl.patch) by slabbe created at 2010-03-25 13:38:02",
     "created_at": "2010-03-25T13:38:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8599",
     "type": "issue_comment",
@@ -95,7 +95,7 @@ archive/issue_comments_077872.json:
 }
 ```
 
-Attachment
+Attachment [trac_8599_pointsize-sl.patch](tarball://root/attachments/some-uuid/ticket8599/trac_8599_pointsize-sl.patch) by slabbe created at 2010-03-25 13:38:02
 
 
 
@@ -160,7 +160,7 @@ apply on top of previous patch
 archive/issue_comments_077876.json:
 ```json
 {
-    "body": "Attachment\n\nOkay, I moved the deprecation code over to #8607, since William requested that we don't deprecate the pointsize option (for mma compatibility).  I've instead posted a new patch which just contains a few documentation enhancements and fixes.  Sebastien, can you review my patch?  If it's a positive review, then set this to positive review.",
+    "body": "Attachment [trac-8599-fix-docs.patch](tarball://root/attachments/some-uuid/ticket8599/trac-8599-fix-docs.patch) by jason created at 2010-03-25 19:10:39\n\nOkay, I moved the deprecation code over to #8607, since William requested that we don't deprecate the pointsize option (for mma compatibility).  I've instead posted a new patch which just contains a few documentation enhancements and fixes.  Sebastien, can you review my patch?  If it's a positive review, then set this to positive review.",
     "created_at": "2010-03-25T19:10:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8599",
     "type": "issue_comment",
@@ -169,7 +169,7 @@ archive/issue_comments_077876.json:
 }
 ```
 
-Attachment
+Attachment [trac-8599-fix-docs.patch](tarball://root/attachments/some-uuid/ticket8599/trac-8599-fix-docs.patch) by jason created at 2010-03-25 19:10:39
 
 Okay, I moved the deprecation code over to #8607, since William requested that we don't deprecate the pointsize option (for mma compatibility).  I've instead posted a new patch which just contains a few documentation enhancements and fixes.  Sebastien, can you review my patch?  If it's a positive review, then set this to positive review.
 

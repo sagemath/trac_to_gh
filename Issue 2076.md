@@ -179,7 +179,7 @@ Changing status from new to assigned.
 archive/issue_comments_013437.json:
 ```json
 {
-    "body": "Attachment\n\nThis is actually a bug on our part according to the matplotlib 0.98 documentation for scatter.",
+    "body": "Attachment [trac_2076.patch](tarball://root/attachments/some-uuid/ticket2076/trac_2076.patch) by mhansen created at 2008-09-04 03:43:45\n\nThis is actually a bug on our part according to the matplotlib 0.98 documentation for scatter.",
     "created_at": "2008-09-04T03:43:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2076",
     "type": "issue_comment",
@@ -188,7 +188,7 @@ archive/issue_comments_013437.json:
 }
 ```
 
-Attachment
+Attachment [trac_2076.patch](tarball://root/attachments/some-uuid/ticket2076/trac_2076.patch) by mhansen created at 2008-09-04 03:43:45
 
 This is actually a bug on our part according to the matplotlib 0.98 documentation for scatter.
 

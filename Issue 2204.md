@@ -84,7 +84,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2204
 archive/issue_comments_014537.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch needs to be applied to the pari.spkg",
+    "body": "Attachment [hnf.patch](tarball://root/attachments/some-uuid/ticket2204/hnf.patch) by mabshoff created at 2008-02-18 18:12:14\n\nThis patch needs to be applied to the pari.spkg",
     "created_at": "2008-02-18T18:12:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2204",
     "type": "issue_comment",
@@ -93,7 +93,7 @@ archive/issue_comments_014537.json:
 }
 ```
 
-Attachment
+Attachment [hnf.patch](tarball://root/attachments/some-uuid/ticket2204/hnf.patch) by mabshoff created at 2008-02-18 18:12:14
 
 This patch needs to be applied to the pari.spkg
 
@@ -166,7 +166,7 @@ apply this patch to the sage hg repo; it adds a test to matrix/tests.py to ensur
 archive/issue_comments_014541.json:
 ```json
 {
-    "body": "Attachment\n\ntrac-2204.patch looks good to me. With it applied and the new pari.spkg doctests in `sage/matrix/tests.py` pass, so positive review (also from was for the spkg).\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac-2204.patch](tarball://root/attachments/some-uuid/ticket2204/trac-2204.patch) by mabshoff created at 2008-02-18 19:03:05\n\ntrac-2204.patch looks good to me. With it applied and the new pari.spkg doctests in `sage/matrix/tests.py` pass, so positive review (also from was for the spkg).\n\nCheers,\n\nMichael",
     "created_at": "2008-02-18T19:03:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2204",
     "type": "issue_comment",
@@ -175,7 +175,7 @@ archive/issue_comments_014541.json:
 }
 ```
 
-Attachment
+Attachment [trac-2204.patch](tarball://root/attachments/some-uuid/ticket2204/trac-2204.patch) by mabshoff created at 2008-02-18 19:03:05
 
 trac-2204.patch looks good to me. With it applied and the new pari.spkg doctests in `sage/matrix/tests.py` pass, so positive review (also from was for the spkg).
 

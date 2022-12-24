@@ -159,7 +159,7 @@ Bill
 archive/issue_comments_015600.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2332-evaluate-button.patch](tarball://root/attachments/some-uuid/ticket2332/2332-evaluate-button.patch) by boothby created at 2008-03-14 00:06:38",
     "created_at": "2008-03-14T00:06:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2332",
     "type": "issue_comment",
@@ -168,7 +168,7 @@ archive/issue_comments_015600.json:
 }
 ```
 
-Attachment
+Attachment [2332-evaluate-button.patch](tarball://root/attachments/some-uuid/ticket2332/2332-evaluate-button.patch) by boothby created at 2008-03-14 00:06:38
 
 
 

@@ -605,7 +605,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_068183.json:
 ```json
 {
-    "body": "Attachment\n\nFailed libtool command, on a Sun Ultra 27, OpenSolaris 06/2009.",
+    "body": "Attachment [libtool-failure.log](tarball://root/attachments/some-uuid/ticket7864/libtool-failure.log) by drkirkby created at 2010-07-06 00:06:44\n\nFailed libtool command, on a Sun Ultra 27, OpenSolaris 06/2009.",
     "created_at": "2010-07-06T00:06:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7864",
     "type": "issue_comment",
@@ -614,7 +614,7 @@ archive/issue_comments_068183.json:
 }
 ```
 
-Attachment
+Attachment [libtool-failure.log](tarball://root/attachments/some-uuid/ticket7864/libtool-failure.log) by drkirkby created at 2010-07-06 00:06:44
 
 Failed libtool command, on a Sun Ultra 27, OpenSolaris 06/2009.
 
@@ -1057,7 +1057,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_068195.json:
 ```json
 {
-    "body": "Attachment\n\nReplaces earlier patch - work in a different way.",
+    "body": "Attachment [7864-redefined-CC-and-CXX.patch](tarball://root/attachments/some-uuid/ticket7864/7864-redefined-CC-and-CXX.patch) by drkirkby created at 2010-07-14 15:48:46\n\nReplaces earlier patch - work in a different way.",
     "created_at": "2010-07-14T15:48:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7864",
     "type": "issue_comment",
@@ -1066,7 +1066,7 @@ archive/issue_comments_068195.json:
 }
 ```
 
-Attachment
+Attachment [7864-redefined-CC-and-CXX.patch](tarball://root/attachments/some-uuid/ticket7864/7864-redefined-CC-and-CXX.patch) by drkirkby created at 2010-07-14 15:48:46
 
 Replaces earlier patch - work in a different way.
 

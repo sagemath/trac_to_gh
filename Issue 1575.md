@@ -136,7 +136,7 @@ Changing assignee from jason grout to jason.
 archive/issue_comments_010019.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [vector-plot.patch](tarball://root/attachments/some-uuid/ticket1575/vector-plot.patch) by jason created at 2007-12-21 09:02:36",
     "created_at": "2007-12-21T09:02:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1575",
     "type": "issue_comment",
@@ -145,7 +145,7 @@ archive/issue_comments_010019.json:
 }
 ```
 
-Attachment
+Attachment [vector-plot.patch](tarball://root/attachments/some-uuid/ticket1575/vector-plot.patch) by jason created at 2007-12-21 09:02:36
 
 
 
@@ -196,7 +196,7 @@ I just discovered that Arrow has been changed to arrow3d in sage 2.9.3.  The pat
 archive/issue_comments_010022.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [vector-plot-updated.patch](tarball://root/attachments/some-uuid/ticket1575/vector-plot-updated.patch) by jason created at 2008-01-15 23:23:03",
     "created_at": "2008-01-15T23:23:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1575",
     "type": "issue_comment",
@@ -205,7 +205,7 @@ archive/issue_comments_010022.json:
 }
 ```
 
-Attachment
+Attachment [vector-plot-updated.patch](tarball://root/attachments/some-uuid/ticket1575/vector-plot-updated.patch) by jason created at 2008-01-15 23:23:03
 
 
 

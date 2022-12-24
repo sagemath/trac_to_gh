@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3851
 archive/issue_comments_027392.json:
 ```json
 {
-    "body": "Attachment\n\nPatch looks good to me and fixes the doctest issue for me.\n\nCheers,\n\nMichael",
+    "body": "Attachment [steenrod-small.patch](tarball://root/attachments/some-uuid/ticket3851/steenrod-small.patch) by mabshoff created at 2008-08-15 00:37:15\n\nPatch looks good to me and fixes the doctest issue for me.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-15T00:37:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3851",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_027392.json:
 }
 ```
 
-Attachment
+Attachment [steenrod-small.patch](tarball://root/attachments/some-uuid/ticket3851/steenrod-small.patch) by mabshoff created at 2008-08-15 00:37:15
 
 Patch looks good to me and fixes the doctest issue for me.
 

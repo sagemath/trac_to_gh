@@ -67,7 +67,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_082328.json:
 ```json
 {
-    "body": "Attachment\n\nUseful additions!",
+    "body": "Attachment [trac_8941_latex_and_origin_for_lattice_polytopes.patch](tarball://root/attachments/some-uuid/ticket8941/trac_8941_latex_and_origin_for_lattice_polytopes.patch) by vbraun created at 2010-05-10 09:49:50\n\nUseful additions!",
     "created_at": "2010-05-10T09:49:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8941",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_082328.json:
 }
 ```
 
-Attachment
+Attachment [trac_8941_latex_and_origin_for_lattice_polytopes.patch](tarball://root/attachments/some-uuid/ticket8941/trac_8941_latex_and_origin_for_lattice_polytopes.patch) by vbraun created at 2010-05-10 09:49:50
 
 Useful additions!
 

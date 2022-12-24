@@ -178,7 +178,7 @@ I just want to say that sage -testall passed on a 10.6.2 mac, so i have no bug r
 archive/issue_comments_074844.json:
 ```json
 {
-    "body": "Attachment\n\nbased on Sage 4.3.3",
+    "body": "Attachment [trac_8372-incidence-matrix.patch](tarball://root/attachments/some-uuid/ticket8372/trac_8372-incidence-matrix.patch) by mvngu created at 2010-02-28 19:46:12\n\nbased on Sage 4.3.3",
     "created_at": "2010-02-28T19:46:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8372",
     "type": "issue_comment",
@@ -187,7 +187,7 @@ archive/issue_comments_074844.json:
 }
 ```
 
-Attachment
+Attachment [trac_8372-incidence-matrix.patch](tarball://root/attachments/some-uuid/ticket8372/trac_8372-incidence-matrix.patch) by mvngu created at 2010-02-28 19:46:12
 
 based on Sage 4.3.3
 

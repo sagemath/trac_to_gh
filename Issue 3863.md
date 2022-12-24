@@ -333,7 +333,7 @@ Replying to [comment:6 kcrisman]:
 archive/issue_comments_027531.json:
 ```json
 {
-    "body": "Attachment\n\ntrivial doctest",
+    "body": "Attachment [trac_3863-doctest.patch](tarball://root/attachments/some-uuid/ticket3863/trac_3863-doctest.patch) by burcin created at 2010-04-05 13:02:56\n\ntrivial doctest",
     "created_at": "2010-04-05T13:02:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
@@ -342,7 +342,7 @@ archive/issue_comments_027531.json:
 }
 ```
 
-Attachment
+Attachment [trac_3863-doctest.patch](tarball://root/attachments/some-uuid/ticket3863/trac_3863-doctest.patch) by burcin created at 2010-04-05 13:02:56
 
 trivial doctest
 

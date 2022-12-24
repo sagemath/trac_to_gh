@@ -49,7 +49,7 @@ This is the ONLY patch---ignore all others.
 archive/issue_comments_018997.json:
 ```json
 {
-    "body": "Attachment\n\nIgnore the .2.patch file---it contains unrelated changes by accident.",
+    "body": "Attachment [trac-2766-graph-am-dense.patch](tarball://root/attachments/some-uuid/ticket2766/trac-2766-graph-am-dense.patch) by jason created at 2008-04-02 03:14:47\n\nIgnore the .2.patch file---it contains unrelated changes by accident.",
     "created_at": "2008-04-02T03:14:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2766",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_018997.json:
 }
 ```
 
-Attachment
+Attachment [trac-2766-graph-am-dense.patch](tarball://root/attachments/some-uuid/ticket2766/trac-2766-graph-am-dense.patch) by jason created at 2008-04-02 03:14:47
 
 Ignore the .2.patch file---it contains unrelated changes by accident.
 
@@ -209,7 +209,7 @@ Reviewer asleep? :)
 archive/issue_comments_019003.json:
 ```json
 {
-    "body": "Attachment\n\nMerged trac_2766-fix-doctests.patch in Sage 3.0.alpha1",
+    "body": "Attachment [trac_2766-fix-doctests.patch](tarball://root/attachments/some-uuid/ticket2766/trac_2766-fix-doctests.patch) by mabshoff created at 2008-04-02 20:52:33\n\nMerged trac_2766-fix-doctests.patch in Sage 3.0.alpha1",
     "created_at": "2008-04-02T20:52:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2766",
     "type": "issue_comment",
@@ -218,6 +218,6 @@ archive/issue_comments_019003.json:
 }
 ```
 
-Attachment
+Attachment [trac_2766-fix-doctests.patch](tarball://root/attachments/some-uuid/ticket2766/trac_2766-fix-doctests.patch) by mabshoff created at 2008-04-02 20:52:33
 
 Merged trac_2766-fix-doctests.patch in Sage 3.0.alpha1

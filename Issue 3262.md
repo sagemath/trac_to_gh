@@ -59,7 +59,7 @@ only truncates if `@`interact is not input
 archive/issue_comments_022563.json:
 ```json
 {
-    "body": "Attachment\n\nThis might be considered a hack: output is only truncated if \"`@`interact\" is not in a cell's input, which prevents mangling of long html/javascript output.",
+    "body": "Attachment [trac_3262_try1.patch](tarball://root/attachments/some-uuid/ticket3262/trac_3262_try1.patch) by mhampton created at 2008-05-20 23:39:29\n\nThis might be considered a hack: output is only truncated if \"`@`interact\" is not in a cell's input, which prevents mangling of long html/javascript output.",
     "created_at": "2008-05-20T23:39:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3262",
     "type": "issue_comment",
@@ -68,7 +68,7 @@ archive/issue_comments_022563.json:
 }
 ```
 
-Attachment
+Attachment [trac_3262_try1.patch](tarball://root/attachments/some-uuid/ticket3262/trac_3262_try1.patch) by mhampton created at 2008-05-20 23:39:29
 
 This might be considered a hack: output is only truncated if "`@`interact" is not in a cell's input, which prevents mangling of long html/javascript output.
 
@@ -144,7 +144,7 @@ addressed review comments
 archive/issue_comments_022566.json:
 ```json
 {
-    "body": "Attachment\n\nThe new patch uses self.is_interactive_cell().  Someone just needs to double-check that this works and it can be merged.",
+    "body": "Attachment [trac_3262_try2.patch](tarball://root/attachments/some-uuid/ticket3262/trac_3262_try2.patch) by mhampton created at 2008-05-21 17:07:52\n\nThe new patch uses self.is_interactive_cell().  Someone just needs to double-check that this works and it can be merged.",
     "created_at": "2008-05-21T17:07:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3262",
     "type": "issue_comment",
@@ -153,7 +153,7 @@ archive/issue_comments_022566.json:
 }
 ```
 
-Attachment
+Attachment [trac_3262_try2.patch](tarball://root/attachments/some-uuid/ticket3262/trac_3262_try2.patch) by mhampton created at 2008-05-21 17:07:52
 
 The new patch uses self.is_interactive_cell().  Someone just needs to double-check that this works and it can be merged.
 
@@ -200,7 +200,7 @@ apply *only* this patch
 archive/issue_comments_022569.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3262-final.patch](tarball://root/attachments/some-uuid/ticket3262/sage-3262-final.patch) by was created at 2008-06-15 23:09:39",
     "created_at": "2008-06-15T23:09:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3262",
     "type": "issue_comment",
@@ -209,7 +209,7 @@ archive/issue_comments_022569.json:
 }
 ```
 
-Attachment
+Attachment [sage-3262-final.patch](tarball://root/attachments/some-uuid/ticket3262/sage-3262-final.patch) by was created at 2008-06-15 23:09:39
 
 
 
@@ -312,7 +312,7 @@ Changing status from closed to reopened.
 archive/issue_comments_022575.json:
 ```json
 {
-    "body": "Attachment\n\nSo, for the record: which patch(es) should be applied in which order?\n\nCheers,\n\nMichael",
+    "body": "Attachment [sage-3262-undo.patch](tarball://root/attachments/some-uuid/ticket3262/sage-3262-undo.patch) by mabshoff created at 2008-07-11 04:12:34\n\nSo, for the record: which patch(es) should be applied in which order?\n\nCheers,\n\nMichael",
     "created_at": "2008-07-11T04:12:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3262",
     "type": "issue_comment",
@@ -321,7 +321,7 @@ archive/issue_comments_022575.json:
 }
 ```
 
-Attachment
+Attachment [sage-3262-undo.patch](tarball://root/attachments/some-uuid/ticket3262/sage-3262-undo.patch) by mabshoff created at 2008-07-11 04:12:34
 
 So, for the record: which patch(es) should be applied in which order?
 

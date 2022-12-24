@@ -71,7 +71,7 @@ Changing status from new to needs_review.
 archive/issue_comments_098657.json:
 ```json
 {
-    "body": "Attachment\n\nPatch is up.",
+    "body": "Attachment [trac_9916-fix_Shafarevich-Tate_in_BSD.py.patch](tarball://root/attachments/some-uuid/ticket9916/trac_9916-fix_Shafarevich-Tate_in_BSD.py.patch) by leif created at 2010-09-16 09:46:49\n\nPatch is up.",
     "created_at": "2010-09-16T09:46:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9915",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_098657.json:
 }
 ```
 
-Attachment
+Attachment [trac_9916-fix_Shafarevich-Tate_in_BSD.py.patch](tarball://root/attachments/some-uuid/ticket9916/trac_9916-fix_Shafarevich-Tate_in_BSD.py.patch) by leif created at 2010-09-16 09:46:49
 
 Patch is up.
 
@@ -248,7 +248,7 @@ So I'll upload a second patch in a few seconds.
 archive/issue_comments_098665.json:
 ```json
 {
-    "body": "Attachment\n\nApply to Sage library. Based on (not yet released) Sage 4.6.alpha1.",
+    "body": "Attachment [trac_9916-fix_Shafarevich-Tate_in_ell_rat_field_and_padic_lseries_too.patch](tarball://root/attachments/some-uuid/ticket9916/trac_9916-fix_Shafarevich-Tate_in_ell_rat_field_and_padic_lseries_too.patch) by leif created at 2010-09-17 01:06:57\n\nApply to Sage library. Based on (not yet released) Sage 4.6.alpha1.",
     "created_at": "2010-09-17T01:06:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9915",
     "type": "issue_comment",
@@ -257,7 +257,7 @@ archive/issue_comments_098665.json:
 }
 ```
 
-Attachment
+Attachment [trac_9916-fix_Shafarevich-Tate_in_ell_rat_field_and_padic_lseries_too.patch](tarball://root/attachments/some-uuid/ticket9916/trac_9916-fix_Shafarevich-Tate_in_ell_rat_field_and_padic_lseries_too.patch) by leif created at 2010-09-17 01:06:57
 
 Apply to Sage library. Based on (not yet released) Sage 4.6.alpha1.
 

@@ -594,7 +594,7 @@ Dave
 archive/issue_comments_058206.json:
 ```json
 {
-    "body": "Attachment\n\nfor review purposes",
+    "body": "Attachment [f2c-20070816.p3.patch](tarball://root/attachments/some-uuid/ticket7027/f2c-20070816.p3.patch) by ohanar created at 2012-02-12 22:31:18\n\nfor review purposes",
     "created_at": "2012-02-12T22:31:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7027",
     "type": "issue_comment",
@@ -603,7 +603,7 @@ archive/issue_comments_058206.json:
 }
 ```
 
-Attachment
+Attachment [f2c-20070816.p3.patch](tarball://root/attachments/some-uuid/ticket7027/f2c-20070816.p3.patch) by ohanar created at 2012-02-12 22:31:18
 
 for review purposes
 

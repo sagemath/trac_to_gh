@@ -53,7 +53,7 @@ Changing status from new to assigned.
 archive/issue_comments_008945.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-2.8.15.rc1-fix-FC8-qbar-doctest.patch](tarball://root/attachments/some-uuid/ticket1390/Sage-2.8.15.rc1-fix-FC8-qbar-doctest.patch) by mabshoff created at 2007-12-04 01:31:43",
     "created_at": "2007-12-04T01:31:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1390",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_008945.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.8.15.rc1-fix-FC8-qbar-doctest.patch](tarball://root/attachments/some-uuid/ticket1390/Sage-2.8.15.rc1-fix-FC8-qbar-doctest.patch) by mabshoff created at 2007-12-04 01:31:43
 
 
 

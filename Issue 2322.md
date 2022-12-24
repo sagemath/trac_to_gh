@@ -132,7 +132,7 @@ high level changelog
 archive/issue_comments_015447.json:
 ```json
 {
-    "body": "Attachment\n\nFrom the changelog it looks like we depend on SQLAlchemy, i.e. #2205. Is that correct?\n\nCheers,\n\nMichael",
+    "body": "Attachment [dsage changelog.txt](tarball://root/attachments/some-uuid/ticket2322/dsage changelog.txt) by mabshoff created at 2008-02-26 21:19:50\n\nFrom the changelog it looks like we depend on SQLAlchemy, i.e. #2205. Is that correct?\n\nCheers,\n\nMichael",
     "created_at": "2008-02-26T21:19:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2322",
     "type": "issue_comment",
@@ -141,7 +141,7 @@ archive/issue_comments_015447.json:
 }
 ```
 
-Attachment
+Attachment [dsage changelog.txt](tarball://root/attachments/some-uuid/ticket2322/dsage changelog.txt) by mabshoff created at 2008-02-26 21:19:50
 
 From the changelog it looks like we depend on SQLAlchemy, i.e. #2205. Is that correct?
 

@@ -85,7 +85,7 @@ Changing keywords from "" to "Documentation Monoids".
 archive/issue_comments_081706.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8887-typo_monoid_prod-fh.patch](tarball://root/attachments/some-uuid/ticket8887/trac_8887-typo_monoid_prod-fh.patch) by hivert created at 2010-05-11 17:04:49",
     "created_at": "2010-05-11T17:04:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8887",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_081706.json:
 }
 ```
 
-Attachment
+Attachment [trac_8887-typo_monoid_prod-fh.patch](tarball://root/attachments/some-uuid/ticket8887/trac_8887-typo_monoid_prod-fh.patch) by hivert created at 2010-05-11 17:04:49
 
 
 

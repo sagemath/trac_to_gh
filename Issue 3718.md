@@ -167,7 +167,7 @@ Here is the patch.
 archive/issue_comments_026383.json:
 ```json
 {
-    "body": "Attachment\n\nBased on 4.1.2.alpha4",
+    "body": "Attachment [trac_3718-floor-limit.patch](tarball://root/attachments/some-uuid/ticket3718/trac_3718-floor-limit.patch) by kcrisman created at 2009-09-29 14:43:45\n\nBased on 4.1.2.alpha4",
     "created_at": "2009-09-29T14:43:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3718",
     "type": "issue_comment",
@@ -176,7 +176,7 @@ archive/issue_comments_026383.json:
 }
 ```
 
-Attachment
+Attachment [trac_3718-floor-limit.patch](tarball://root/attachments/some-uuid/ticket3718/trac_3718-floor-limit.patch) by kcrisman created at 2009-09-29 14:43:45
 
 Based on 4.1.2.alpha4
 

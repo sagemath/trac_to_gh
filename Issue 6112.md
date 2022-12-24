@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6112
 archive/issue_comments_048832.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6112.patch](tarball://root/attachments/some-uuid/ticket6112/trac_6112.patch) by ddrake created at 2009-06-16 02:23:37",
     "created_at": "2009-06-16T02:23:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6112",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_048832.json:
 }
 ```
 
-Attachment
+Attachment [trac_6112.patch](tarball://root/attachments/some-uuid/ticket6112/trac_6112.patch) by ddrake created at 2009-06-16 02:23:37
 
 
 
@@ -139,7 +139,7 @@ I'll take care of this -- I'm currently in the middle of overhauling graphs, and
 archive/issue_comments_048838.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6112-module_list.py](tarball://root/attachments/some-uuid/ticket6112/trac_6112-module_list.py) by rlm created at 2009-06-21 22:05:27",
     "created_at": "2009-06-21T22:05:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6112",
     "type": "issue_comment",
@@ -148,7 +148,7 @@ archive/issue_comments_048838.json:
 }
 ```
 
-Attachment
+Attachment [trac_6112-module_list.py](tarball://root/attachments/some-uuid/ticket6112/trac_6112-module_list.py) by rlm created at 2009-06-21 22:05:27
 
 
 

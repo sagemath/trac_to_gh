@@ -67,7 +67,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5176
 archive/issue_comments_039648.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5176.patch](tarball://root/attachments/some-uuid/ticket5176/trac_5176.patch) by malb created at 2009-02-05 17:46:33",
     "created_at": "2009-02-05T17:46:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5176",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_039648.json:
 }
 ```
 
-Attachment
+Attachment [trac_5176.patch](tarball://root/attachments/some-uuid/ticket5176/trac_5176.patch) by malb created at 2009-02-05 17:46:33
 
 
 
@@ -85,7 +85,7 @@ Attachment
 archive/issue_comments_039649.json:
 ```json
 {
-    "body": "Attachment\n\npatch looks good, fixes the crashing for me, and is doctested.  Positive review.",
+    "body": "Attachment [trac_5176.2.patch](tarball://root/attachments/some-uuid/ticket5176/trac_5176.2.patch) by jason created at 2009-02-05 19:17:40\n\npatch looks good, fixes the crashing for me, and is doctested.  Positive review.",
     "created_at": "2009-02-05T19:17:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5176",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_039649.json:
 }
 ```
 
-Attachment
+Attachment [trac_5176.2.patch](tarball://root/attachments/some-uuid/ticket5176/trac_5176.2.patch) by jason created at 2009-02-05 19:17:40
 
 patch looks good, fixes the crashing for me, and is doctested.  Positive review.
 

@@ -140,7 +140,7 @@ Michael
 archive/issue_comments_040831.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5307.patch](tarball://root/attachments/some-uuid/ticket5307/trac_5307.patch) by cremona created at 2009-06-15 19:30:44",
     "created_at": "2009-06-15T19:30:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5307",
     "type": "issue_comment",
@@ -149,7 +149,7 @@ archive/issue_comments_040831.json:
 }
 ```
 
-Attachment
+Attachment [trac_5307.patch](tarball://root/attachments/some-uuid/ticket5307/trac_5307.patch) by cremona created at 2009-06-15 19:30:44
 
 
 

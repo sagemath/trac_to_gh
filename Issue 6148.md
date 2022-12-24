@@ -141,7 +141,7 @@ Set assignee to mhansen.
 archive/issue_comments_049074.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6148.patch](tarball://root/attachments/some-uuid/ticket6148/trac_6148.patch) by mhansen created at 2009-05-28 18:27:03",
     "created_at": "2009-05-28T18:27:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6148",
     "type": "issue_comment",
@@ -150,7 +150,7 @@ archive/issue_comments_049074.json:
 }
 ```
 
-Attachment
+Attachment [trac_6148.patch](tarball://root/attachments/some-uuid/ticket6148/trac_6148.patch) by mhansen created at 2009-05-28 18:27:03
 
 
 

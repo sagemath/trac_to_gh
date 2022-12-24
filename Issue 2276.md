@@ -118,7 +118,7 @@ Michael
 archive/issue_comments_015104.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch implements `__mod__` which fixes the issue. Note, that type checking is performed in `quo_rem` and thus is not needed in `__mod__`.",
+    "body": "Attachment [trac_2276.patch](tarball://root/attachments/some-uuid/ticket2276/trac_2276.patch) by malb created at 2008-03-28 12:00:36\n\nThe attached patch implements `__mod__` which fixes the issue. Note, that type checking is performed in `quo_rem` and thus is not needed in `__mod__`.",
     "created_at": "2008-03-28T12:00:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2276",
     "type": "issue_comment",
@@ -127,7 +127,7 @@ archive/issue_comments_015104.json:
 }
 ```
 
-Attachment
+Attachment [trac_2276.patch](tarball://root/attachments/some-uuid/ticket2276/trac_2276.patch) by malb created at 2008-03-28 12:00:36
 
 The attached patch implements `__mod__` which fixes the issue. Note, that type checking is performed in `quo_rem` and thus is not needed in `__mod__`.
 

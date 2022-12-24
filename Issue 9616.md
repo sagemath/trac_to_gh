@@ -230,7 +230,7 @@ If we backout the whole patch, I have more confidence that the doctests will get
 archive/issue_comments_093135.json:
 ```json
 {
-    "body": "Attachment\n\nBackout #9501",
+    "body": "Attachment [trac_9616-backout_9501_fork_deco.patch](tarball://root/attachments/some-uuid/ticket9616/trac_9616-backout_9501_fork_deco.patch) by mpatel created at 2010-07-28 22:32:06\n\nBackout #9501",
     "created_at": "2010-07-28T22:32:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9616",
     "type": "issue_comment",
@@ -239,7 +239,7 @@ archive/issue_comments_093135.json:
 }
 ```
 
-Attachment
+Attachment [trac_9616-backout_9501_fork_deco.patch](tarball://root/attachments/some-uuid/ticket9616/trac_9616-backout_9501_fork_deco.patch) by mpatel created at 2010-07-28 22:32:06
 
 Backout #9501
 
@@ -312,7 +312,7 @@ But I can live with that. (And I'm currently too (laz|bus)y to sort out the desi
 archive/issue_comments_093139.json:
 ```json
 {
-    "body": "Attachment\n\nBackouts only ticket-relevant parts of #9501 (subset of Mitesh's patch)",
+    "body": "Attachment [trac_9616-backout_only_some_of_9501.patch](tarball://root/attachments/some-uuid/ticket9616/trac_9616-backout_only_some_of_9501.patch) by leif created at 2010-07-28 23:44:14\n\nBackouts only ticket-relevant parts of #9501 (subset of Mitesh's patch)",
     "created_at": "2010-07-28T23:44:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9616",
     "type": "issue_comment",
@@ -321,7 +321,7 @@ archive/issue_comments_093139.json:
 }
 ```
 
-Attachment
+Attachment [trac_9616-backout_only_some_of_9501.patch](tarball://root/attachments/some-uuid/ticket9616/trac_9616-backout_only_some_of_9501.patch) by leif created at 2010-07-28 23:44:14
 
 Backouts only ticket-relevant parts of #9501 (subset of Mitesh's patch)
 

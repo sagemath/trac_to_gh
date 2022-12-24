@@ -209,7 +209,7 @@ Based on 4.1.2.alpha4
 archive/issue_comments_015679.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch should fix the issue - long overdue!  The fix is to do exactly as the OP suggests, but only in the free module elements - which is precisely what is already done for matrices as well.",
+    "body": "Attachment [trac_2341-vector-subs.patch](tarball://root/attachments/some-uuid/ticket2341/trac_2341-vector-subs.patch) by kcrisman created at 2009-09-29 17:30:46\n\nThis patch should fix the issue - long overdue!  The fix is to do exactly as the OP suggests, but only in the free module elements - which is precisely what is already done for matrices as well.",
     "created_at": "2009-09-29T17:30:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2341",
     "type": "issue_comment",
@@ -218,7 +218,7 @@ archive/issue_comments_015679.json:
 }
 ```
 
-Attachment
+Attachment [trac_2341-vector-subs.patch](tarball://root/attachments/some-uuid/ticket2341/trac_2341-vector-subs.patch) by kcrisman created at 2009-09-29 17:30:46
 
 This patch should fix the issue - long overdue!  The fix is to do exactly as the OP suggests, but only in the free module elements - which is precisely what is already done for matrices as well.
 

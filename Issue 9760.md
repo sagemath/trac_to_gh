@@ -491,7 +491,7 @@ New spkg/standard/deps, which resolves this ticket and two minor issues
 archive/issue_comments_095626.json:
 ```json
 {
-    "body": "Attachment\n\nDifferences between the new 'deps' file and that in sage-4.5.3.alpha1",
+    "body": "Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket9761/deps.diff) by drkirkby created at 2010-08-18 23:10:31\n\nDifferences between the new 'deps' file and that in sage-4.5.3.alpha1",
     "created_at": "2010-08-18T23:10:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9760",
     "type": "issue_comment",
@@ -500,7 +500,7 @@ archive/issue_comments_095626.json:
 }
 ```
 
-Attachment
+Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket9761/deps.diff) by drkirkby created at 2010-08-18 23:10:31
 
 Differences between the new 'deps' file and that in sage-4.5.3.alpha1
 

@@ -54,7 +54,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3689
 archive/issue_comments_026150.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage_scripts-shebang.patch](tarball://root/attachments/some-uuid/ticket3689/sage_scripts-shebang.patch) by tabbott created at 2009-04-26 05:20:33",
     "created_at": "2009-04-26T05:20:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3689",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_026150.json:
 }
 ```
 
-Attachment
+Attachment [sage_scripts-shebang.patch](tarball://root/attachments/some-uuid/ticket3689/sage_scripts-shebang.patch) by tabbott created at 2009-04-26 05:20:33
 
 
 

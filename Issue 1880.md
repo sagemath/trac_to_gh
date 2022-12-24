@@ -46,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1880
 archive/issue_comments_011896.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-2.10.1.alpha0-fix-doctest-1880.patch](tarball://root/attachments/some-uuid/ticket1880/Sage-2.10.1.alpha0-fix-doctest-1880.patch) by mabshoff created at 2008-01-21 22:44:41",
     "created_at": "2008-01-21T22:44:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1880",
     "type": "issue_comment",
@@ -55,7 +55,7 @@ archive/issue_comments_011896.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.10.1.alpha0-fix-doctest-1880.patch](tarball://root/attachments/some-uuid/ticket1880/Sage-2.10.1.alpha0-fix-doctest-1880.patch) by mabshoff created at 2008-01-21 22:44:41
 
 
 

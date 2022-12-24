@@ -98,7 +98,7 @@ Applies to 4.4
 archive/issue_comments_080594.json:
 ```json
 {
-    "body": "Attachment\n\nI am flagging this as \"needs review\", while still testing.  Not expecting any surprises since the patch is almost entirely in docstrings.  (I did also test the building of the docs).",
+    "body": "Attachment [trac_8799-mwrank-doctest.patch](tarball://root/attachments/some-uuid/ticket8799/trac_8799-mwrank-doctest.patch) by cremona created at 2010-05-02 20:01:50\n\nI am flagging this as \"needs review\", while still testing.  Not expecting any surprises since the patch is almost entirely in docstrings.  (I did also test the building of the docs).",
     "created_at": "2010-05-02T20:01:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
@@ -107,7 +107,7 @@ archive/issue_comments_080594.json:
 }
 ```
 
-Attachment
+Attachment [trac_8799-mwrank-doctest.patch](tarball://root/attachments/some-uuid/ticket8799/trac_8799-mwrank-doctest.patch) by cremona created at 2010-05-02 20:01:50
 
 I am flagging this as "needs review", while still testing.  Not expecting any surprises since the patch is almost entirely in docstrings.  (I did also test the building of the docs).
 
@@ -157,7 +157,7 @@ Just in case anyone reading the above thinks that this is not ready for testing 
 archive/issue_comments_080597.json:
 ```json
 {
-    "body": "Attachment\n\nbased on Sage 4.4.2.alpha0",
+    "body": "Attachment [trac_8799-reviewer.patch](tarball://root/attachments/some-uuid/ticket8799/trac_8799-reviewer.patch) by mvngu created at 2010-05-10 11:36:43\n\nbased on Sage 4.4.2.alpha0",
     "created_at": "2010-05-10T11:36:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
@@ -166,7 +166,7 @@ archive/issue_comments_080597.json:
 }
 ```
 
-Attachment
+Attachment [trac_8799-reviewer.patch](tarball://root/attachments/some-uuid/ticket8799/trac_8799-reviewer.patch) by mvngu created at 2010-05-10 11:36:43
 
 based on Sage 4.4.2.alpha0
 
@@ -399,7 +399,7 @@ Feel free to add a second reviewer's patch!
 archive/issue_comments_080606.json:
 ```json
 {
-    "body": "Attachment\n\nA (rough) second reviewer patch based on Minh's.",
+    "body": "Attachment [trac_8799-reviewer_too.patch](tarball://root/attachments/some-uuid/ticket8799/trac_8799-reviewer_too.patch) by leif created at 2010-05-10 23:08:32\n\nA (rough) second reviewer patch based on Minh's.",
     "created_at": "2010-05-10T23:08:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
@@ -408,7 +408,7 @@ archive/issue_comments_080606.json:
 }
 ```
 
-Attachment
+Attachment [trac_8799-reviewer_too.patch](tarball://root/attachments/some-uuid/ticket8799/trac_8799-reviewer_too.patch) by leif created at 2010-05-10 23:08:32
 
 A (rough) second reviewer patch based on Minh's.
 
@@ -461,7 +461,7 @@ P.P.S.: John, I've also added some `TODO`s. Btw, do we initialise or initialize?
 archive/issue_comments_080609.json:
 ```json
 {
-    "body": "Attachment\n\nI have made some more changes to the docstring of `interface.py` and `mwrank.pyx`. My second reviewer patch [trac_8799-reviewer-part3.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8799/trac_8799-reviewer-part3.patch) includes changes in addition to the original reviewer patch and leif's patch. With many patches to apply, it can be confusing to see what changes the reviewers propose. So I have folded the reviewers' patches into one mega patch called [trac_8799-reviewer-total.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8799/trac_8799-reviewer-total.patch).\n\n\n\nAlso notice that I move documentation for constructor methods, i.e. `__init__`, into the docstring of a class. The main reason is that, currently the docstring of `__init__` don't show up on the reference manual once you built it. \n\n\n\nTo rebuild the whole reference manual, you could do the following from `SAGE_ROOT`, assuming you applied the patches to the branch main:\n\n\n```sh\n./sage -b main\n./sage -docbuild reference html\n```\n\n\nIf you want to be thorough and want to check that the new documentation build OK, do:\n\n\n```sh\nrm -rf devel/sage-main/doc/output/\n./sage -b main\n./sage -docbuild reference html\n```\n",
+    "body": "Attachment [trac_8799-reviewer-part3.patch](tarball://root/attachments/some-uuid/ticket8799/trac_8799-reviewer-part3.patch) by mvngu created at 2010-05-11 01:00:35\n\nI have made some more changes to the docstring of `interface.py` and `mwrank.pyx`. My second reviewer patch [trac_8799-reviewer-part3.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8799/trac_8799-reviewer-part3.patch) includes changes in addition to the original reviewer patch and leif's patch. With many patches to apply, it can be confusing to see what changes the reviewers propose. So I have folded the reviewers' patches into one mega patch called [trac_8799-reviewer-total.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8799/trac_8799-reviewer-total.patch).\n\n\n\nAlso notice that I move documentation for constructor methods, i.e. `__init__`, into the docstring of a class. The main reason is that, currently the docstring of `__init__` don't show up on the reference manual once you built it. \n\n\n\nTo rebuild the whole reference manual, you could do the following from `SAGE_ROOT`, assuming you applied the patches to the branch main:\n\n\n```sh\n./sage -b main\n./sage -docbuild reference html\n```\n\n\nIf you want to be thorough and want to check that the new documentation build OK, do:\n\n\n```sh\nrm -rf devel/sage-main/doc/output/\n./sage -b main\n./sage -docbuild reference html\n```\n",
     "created_at": "2010-05-11T01:00:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
@@ -470,7 +470,7 @@ archive/issue_comments_080609.json:
 }
 ```
 
-Attachment
+Attachment [trac_8799-reviewer-part3.patch](tarball://root/attachments/some-uuid/ticket8799/trac_8799-reviewer-part3.patch) by mvngu created at 2010-05-11 01:00:35
 
 I have made some more changes to the docstring of `interface.py` and `mwrank.pyx`. My second reviewer patch [trac_8799-reviewer-part3.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8799/trac_8799-reviewer-part3.patch) includes changes in addition to the original reviewer patch and leif's patch. With many patches to apply, it can be confusing to see what changes the reviewers propose. So I have folded the reviewers' patches into one mega patch called [trac_8799-reviewer-total.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8799/trac_8799-reviewer-total.patch).
 
@@ -524,7 +524,7 @@ archive/issue_comments_080610.json:
 archive/issue_comments_080611.json:
 ```json
 {
-    "body": "Attachment\n\nSorry, yet another patch. (It also fixes a doctest failure **introduced by me**. 8/ )\n\nMinh, you vote in favour of math-typeset numbers? (I don't like e.g. ``L`-functions` either...)\n\nShouldn't we replace\n\n```\n - foo (bool) -- ...\n - bar (int, default 12) -- ...\n```\n\nby\n\n```\n - foo (:class:`bool`) -- ...\n - bar (:class:`int`, default 12) -- ...\n```\n\ntoo?\n\n-Leif\n\nP.S.: Note that despite the ticket title, my patches also change the code.",
+    "body": "Attachment [trac_8799-reviewer-part4.patch](tarball://root/attachments/some-uuid/ticket8799/trac_8799-reviewer-part4.patch) by leif created at 2010-05-11 02:41:42\n\nSorry, yet another patch. (It also fixes a doctest failure **introduced by me**. 8/ )\n\nMinh, you vote in favour of math-typeset numbers? (I don't like e.g. ``L`-functions` either...)\n\nShouldn't we replace\n\n```\n - foo (bool) -- ...\n - bar (int, default 12) -- ...\n```\n\nby\n\n```\n - foo (:class:`bool`) -- ...\n - bar (:class:`int`, default 12) -- ...\n```\n\ntoo?\n\n-Leif\n\nP.S.: Note that despite the ticket title, my patches also change the code.",
     "created_at": "2010-05-11T02:41:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
@@ -533,7 +533,7 @@ archive/issue_comments_080611.json:
 }
 ```
 
-Attachment
+Attachment [trac_8799-reviewer-part4.patch](tarball://root/attachments/some-uuid/ticket8799/trac_8799-reviewer-part4.patch) by leif created at 2010-05-11 02:41:42
 
 Sorry, yet another patch. (It also fixes a doctest failure **introduced by me**. 8/ )
 
@@ -584,7 +584,7 @@ cumulative of all reviewers' patches
 archive/issue_comments_080613.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:16 leif]:\n> Minh, you vote in favour of math-typeset numbers? (I don't like e.g. ``L`-functions` either...)\n\nI'm not particularly picky about this issue. What you proposed in your patches are OK by me. I have folded all our reviewer patches into one cumulative patch. Even your second reviewer patch has been folded into [trac_8799-reviewer-total.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8799/trac_8799-reviewer-total.patch).\n\n\n\n\n> Shouldn't we replace\n\n```\n- foo (bool) -- ...\n- bar (int, default 12) -- ...\n```\n\n> by\n\n```\n- foo (:class:`bool`) -- ...\n- bar (:class:`int`, default 12) -- ...\n```\n\n> too?\n\nThat is OK by me. But I would prefer something like \"boolean\", \"integer\", \"real number\", etc. Something as \"meaningful\" as possible, without recourse to type information. We now need someone to review the technical (mathematical) aspect of John's patch, and a sign off on my review patch. I'm OK with your patches. That is, someone other than myself need to look over the cumulative reviewer patch.",
+    "body": "Attachment [trac_8799-reviewer-total.patch](tarball://root/attachments/some-uuid/ticket8799/trac_8799-reviewer-total.patch) by mvngu created at 2010-05-11 03:55:08\n\nReplying to [comment:16 leif]:\n> Minh, you vote in favour of math-typeset numbers? (I don't like e.g. ``L`-functions` either...)\n\nI'm not particularly picky about this issue. What you proposed in your patches are OK by me. I have folded all our reviewer patches into one cumulative patch. Even your second reviewer patch has been folded into [trac_8799-reviewer-total.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8799/trac_8799-reviewer-total.patch).\n\n\n\n\n> Shouldn't we replace\n\n```\n- foo (bool) -- ...\n- bar (int, default 12) -- ...\n```\n\n> by\n\n```\n- foo (:class:`bool`) -- ...\n- bar (:class:`int`, default 12) -- ...\n```\n\n> too?\n\nThat is OK by me. But I would prefer something like \"boolean\", \"integer\", \"real number\", etc. Something as \"meaningful\" as possible, without recourse to type information. We now need someone to review the technical (mathematical) aspect of John's patch, and a sign off on my review patch. I'm OK with your patches. That is, someone other than myself need to look over the cumulative reviewer patch.",
     "created_at": "2010-05-11T03:55:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
@@ -593,7 +593,7 @@ archive/issue_comments_080613.json:
 }
 ```
 
-Attachment
+Attachment [trac_8799-reviewer-total.patch](tarball://root/attachments/some-uuid/ticket8799/trac_8799-reviewer-total.patch) by mvngu created at 2010-05-11 03:55:08
 
 Replying to [comment:16 leif]:
 > Minh, you vote in favour of math-typeset numbers? (I don't like e.g. ``L`-functions` either...)
@@ -880,7 +880,7 @@ I know (and with that in mind I asked a couple of people of they would step in) 
 archive/issue_comments_080623.json:
 ```json
 {
-    "body": "Attachment\n\nAdditional small fixes",
+    "body": "Attachment [trac_8799-extra.patch](tarball://root/attachments/some-uuid/ticket8799/trac_8799-extra.patch) by cremona created at 2010-05-15 19:49:15\n\nAdditional small fixes",
     "created_at": "2010-05-15T19:49:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
@@ -889,7 +889,7 @@ archive/issue_comments_080623.json:
 }
 ```
 
-Attachment
+Attachment [trac_8799-extra.patch](tarball://root/attachments/some-uuid/ticket8799/trac_8799-extra.patch) by cremona created at 2010-05-15 19:49:15
 
 Additional small fixes
 

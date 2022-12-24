@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3443
 archive/issue_comments_024297.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3443.patch](tarball://root/attachments/some-uuid/ticket3443/3443.patch) by TimothyClemans created at 2008-06-16 23:38:29",
     "created_at": "2008-06-16T23:38:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3443",
     "type": "issue_comment",
@@ -49,7 +49,7 @@ archive/issue_comments_024297.json:
 }
 ```
 
-Attachment
+Attachment [3443.patch](tarball://root/attachments/some-uuid/ticket3443/3443.patch) by TimothyClemans created at 2008-06-16 23:38:29
 
 
 
@@ -58,7 +58,7 @@ Attachment
 archive/issue_comments_024298.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3443_2.patch](tarball://root/attachments/some-uuid/ticket3443/3443_2.patch) by TimothyClemans created at 2008-06-16 23:39:02",
     "created_at": "2008-06-16T23:39:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3443",
     "type": "issue_comment",
@@ -67,7 +67,7 @@ archive/issue_comments_024298.json:
 }
 ```
 
-Attachment
+Attachment [3443_2.patch](tarball://root/attachments/some-uuid/ticket3443/3443_2.patch) by TimothyClemans created at 2008-06-16 23:39:02
 
 
 

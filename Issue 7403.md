@@ -73,7 +73,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_062291.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7403-finite-enumeratedsets-fh.2.patch](tarball://root/attachments/some-uuid/ticket7403/trac_7403-finite-enumeratedsets-fh.2.patch) by nthiery created at 2009-11-06 16:17:53",
     "created_at": "2009-11-06T16:17:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7403",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_062291.json:
 }
 ```
 
-Attachment
+Attachment [trac_7403-finite-enumeratedsets-fh.2.patch](tarball://root/attachments/some-uuid/ticket7403/trac_7403-finite-enumeratedsets-fh.2.patch) by nthiery created at 2009-11-06 16:17:53
 
 
 
@@ -91,7 +91,7 @@ Attachment
 archive/issue_comments_062292.json:
 ```json
 {
-    "body": "Attachment\n\nApply only this one (ignore the next one)",
+    "body": "Attachment [trac_7403-finite-enumeratedsets-fh.patch](tarball://root/attachments/some-uuid/ticket7403/trac_7403-finite-enumeratedsets-fh.patch) by nthiery created at 2009-11-06 16:18:51\n\nApply only this one (ignore the next one)",
     "created_at": "2009-11-06T16:18:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7403",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_062292.json:
 }
 ```
 
-Attachment
+Attachment [trac_7403-finite-enumeratedsets-fh.patch](tarball://root/attachments/some-uuid/ticket7403/trac_7403-finite-enumeratedsets-fh.patch) by nthiery created at 2009-11-06 16:18:51
 
 Apply only this one (ignore the next one)
 
@@ -178,7 +178,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_062295.json:
 ```json
 {
-    "body": "Attachment\n\nPlease Nicolas (or anyone else re-view the small change. \n\nOnly trac_7403-finite-enumeratedsets-fh.3.patch should be applied on top of #5891\n\nCheers,\n\nFlorent",
+    "body": "Attachment [trac_7403-finite-enumeratedsets-fh.3.patch](tarball://root/attachments/some-uuid/ticket7403/trac_7403-finite-enumeratedsets-fh.3.patch) by hivert created at 2009-11-09 07:55:54\n\nPlease Nicolas (or anyone else re-view the small change. \n\nOnly trac_7403-finite-enumeratedsets-fh.3.patch should be applied on top of #5891\n\nCheers,\n\nFlorent",
     "created_at": "2009-11-09T07:55:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7403",
     "type": "issue_comment",
@@ -187,7 +187,7 @@ archive/issue_comments_062295.json:
 }
 ```
 
-Attachment
+Attachment [trac_7403-finite-enumeratedsets-fh.3.patch](tarball://root/attachments/some-uuid/ticket7403/trac_7403-finite-enumeratedsets-fh.3.patch) by hivert created at 2009-11-09 07:55:54
 
 Please Nicolas (or anyone else re-view the small change. 
 

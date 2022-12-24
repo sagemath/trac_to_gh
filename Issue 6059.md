@@ -66,7 +66,7 @@ Since this fixes a speed regression, and the patch is really simple, I think it'
 archive/issue_comments_048241.json:
 ```json
 {
-    "body": "Attachment\n\nFix speed regression in hilbert_symbol (revised)",
+    "body": "Attachment [trac_6059.patch](tarball://root/attachments/some-uuid/ticket6059/trac_6059.patch) by tornaria created at 2009-05-18 03:15:14\n\nFix speed regression in hilbert_symbol (revised)",
     "created_at": "2009-05-18T03:15:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6059",
     "type": "issue_comment",
@@ -75,7 +75,7 @@ archive/issue_comments_048241.json:
 }
 ```
 
-Attachment
+Attachment [trac_6059.patch](tarball://root/attachments/some-uuid/ticket6059/trac_6059.patch) by tornaria created at 2009-05-18 03:15:14
 
 Fix speed regression in hilbert_symbol (revised)
 

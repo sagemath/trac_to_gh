@@ -59,7 +59,7 @@ patch file to replace $RM with 'rm' and similar
 archive/issue_comments_068387.json:
 ```json
 {
-    "body": "Attachment\n\nAt a new spkg, which fixes these can found at \n\nhttp://boxen.math.washington.edu/home/kirkby/portability/gap-4.4.10.p13/gap-4.4.10.p13.spkg\n\n\nDave",
+    "body": "Attachment [gap-#7873.patch](tarball://root/attachments/some-uuid/ticket7873/gap-#7873.patch) by drkirkby created at 2010-01-08 20:22:42\n\nAt a new spkg, which fixes these can found at \n\nhttp://boxen.math.washington.edu/home/kirkby/portability/gap-4.4.10.p13/gap-4.4.10.p13.spkg\n\n\nDave",
     "created_at": "2010-01-08T20:22:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7873",
     "type": "issue_comment",
@@ -68,7 +68,7 @@ archive/issue_comments_068387.json:
 }
 ```
 
-Attachment
+Attachment [gap-#7873.patch](tarball://root/attachments/some-uuid/ticket7873/gap-#7873.patch) by drkirkby created at 2010-01-08 20:22:42
 
 At a new spkg, which fixes these can found at 
 

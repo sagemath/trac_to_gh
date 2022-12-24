@@ -58,7 +58,7 @@ Replaced sage -clisp with sage -ecl and pointed sage -lisp at ecl.
 archive/issue_comments_050198.json:
 ```json
 {
-    "body": "Attachment\n\noops, forgot to change clisp to ecl in one line.  ~ Adam",
+    "body": "Attachment [trac_6287_run_ecl.patch](tarball://root/attachments/some-uuid/ticket6287/trac_6287_run_ecl.patch) by awebb created at 2009-08-17 10:10:14\n\noops, forgot to change clisp to ecl in one line.  ~ Adam",
     "created_at": "2009-08-17T10:10:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6287",
     "type": "issue_comment",
@@ -67,7 +67,7 @@ archive/issue_comments_050198.json:
 }
 ```
 
-Attachment
+Attachment [trac_6287_run_ecl.patch](tarball://root/attachments/some-uuid/ticket6287/trac_6287_run_ecl.patch) by awebb created at 2009-08-17 10:10:14
 
 oops, forgot to change clisp to ecl in one line.  ~ Adam
 

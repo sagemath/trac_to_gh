@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9728
 archive/issue_comments_095082.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [linear_transformation_interact.patch](tarball://root/attachments/some-uuid/ticket9728/linear_transformation_interact.patch) by punchagan created at 2010-08-11 21:34:21",
     "created_at": "2010-08-11T21:34:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9728",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_095082.json:
 }
 ```
 
-Attachment
+Attachment [linear_transformation_interact.patch](tarball://root/attachments/some-uuid/ticket9728/linear_transformation_interact.patch) by punchagan created at 2010-08-11 21:34:21
 
 
 
@@ -105,7 +105,7 @@ So far as I can tell, this doesn't conflict with 9623. At very least, they don't
 archive/issue_comments_095086.json:
 ```json
 {
-    "body": "Attachment\n\nadds capability for user to set the matrix defining the transformation",
+    "body": "Attachment [trac_9728_add_user_definable_matrix.patch](tarball://root/attachments/some-uuid/ticket9728/trac_9728_add_user_definable_matrix.patch) by samhop created at 2010-11-07 07:17:05\n\nadds capability for user to set the matrix defining the transformation",
     "created_at": "2010-11-07T07:17:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9728",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_095086.json:
 }
 ```
 
-Attachment
+Attachment [trac_9728_add_user_definable_matrix.patch](tarball://root/attachments/some-uuid/ticket9728/trac_9728_add_user_definable_matrix.patch) by samhop created at 2010-11-07 07:17:05
 
 adds capability for user to set the matrix defining the transformation
 
@@ -175,7 +175,7 @@ def linear_transformation(
 archive/issue_comments_095088.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [linear_transformation.png](tarball://root/attachments/some-uuid/ticket9728/linear_transformation.png) by mhampton created at 2011-01-12 23:13:11",
     "created_at": "2011-01-12T23:13:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9728",
     "type": "issue_comment",
@@ -184,7 +184,7 @@ archive/issue_comments_095088.json:
 }
 ```
 
-Attachment
+Attachment [linear_transformation.png](tarball://root/attachments/some-uuid/ticket9728/linear_transformation.png) by mhampton created at 2011-01-12 23:13:11
 
 
 

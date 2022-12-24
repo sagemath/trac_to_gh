@@ -779,7 +779,7 @@ Package available at http://perso.telecom-paristech.fr/~flori/sage/valgrind-3.7.
 archive/issue_comments_066949.json:
 ```json
 {
-    "body": "Attachment\n\nspkg diff, for review only",
+    "body": "Attachment [trac_7666_spkg.patch](tarball://root/attachments/some-uuid/ticket7766/trac_7666_spkg.patch) by jpflori created at 2012-02-25 18:31:49\n\nspkg diff, for review only",
     "created_at": "2012-02-25T18:31:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7766",
     "type": "issue_comment",
@@ -788,7 +788,7 @@ archive/issue_comments_066949.json:
 }
 ```
 
-Attachment
+Attachment [trac_7666_spkg.patch](tarball://root/attachments/some-uuid/ticket7766/trac_7666_spkg.patch) by jpflori created at 2012-02-25 18:31:49
 
 spkg diff, for review only
 

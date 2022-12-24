@@ -36,7 +36,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9382
 archive/issue_comments_089173.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [atlas-i686-FAT.patch](tarball://root/attachments/some-uuid/ticket9382/atlas-i686-FAT.patch) by mariah created at 2010-06-29 20:18:46",
     "created_at": "2010-06-29T20:18:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9382",
     "type": "issue_comment",
@@ -45,7 +45,7 @@ archive/issue_comments_089173.json:
 }
 ```
 
-Attachment
+Attachment [atlas-i686-FAT.patch](tarball://root/attachments/some-uuid/ticket9382/atlas-i686-FAT.patch) by mariah created at 2010-06-29 20:18:46
 
 
 
@@ -423,7 +423,7 @@ updated version of previous patches
 archive/issue_comments_089190.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:6 mariah]:\n> Apologies for my silly error.  Here is a revised patch [9382.patch](http://boxen.math.washington.edu/home/mariah/spkgs/9382.patch)\n\nThat patch has another tiny error: it has \"`uname-p`\" (no space between \"uname\" and \"-p\"). I just uploaded a patch to this ticket in which I fixed that problem. However, there are other problems: on Ubuntu, it seems that `uname -p` returns \"unknown\" and `uname -m` returns the architecture name that we want. I've tried this on several 32-bit and 64-bit (i.e., i686 and x86_64) computers, on Ubuntu 8.04, 10.04, and 10.10 and they all behave the same. So we will need to use \"-m\" to correctly detect this on Ubuntu.",
+    "body": "Attachment [9382.patch](tarball://root/attachments/some-uuid/ticket9382/9382.patch) by ddrake created at 2011-01-11 02:16:57\n\nReplying to [comment:6 mariah]:\n> Apologies for my silly error.  Here is a revised patch [9382.patch](http://boxen.math.washington.edu/home/mariah/spkgs/9382.patch)\n\nThat patch has another tiny error: it has \"`uname-p`\" (no space between \"uname\" and \"-p\"). I just uploaded a patch to this ticket in which I fixed that problem. However, there are other problems: on Ubuntu, it seems that `uname -p` returns \"unknown\" and `uname -m` returns the architecture name that we want. I've tried this on several 32-bit and 64-bit (i.e., i686 and x86_64) computers, on Ubuntu 8.04, 10.04, and 10.10 and they all behave the same. So we will need to use \"-m\" to correctly detect this on Ubuntu.",
     "created_at": "2011-01-11T02:16:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9382",
     "type": "issue_comment",
@@ -432,7 +432,7 @@ archive/issue_comments_089190.json:
 }
 ```
 
-Attachment
+Attachment [9382.patch](tarball://root/attachments/some-uuid/ticket9382/9382.patch) by ddrake created at 2011-01-11 02:16:57
 
 Replying to [comment:6 mariah]:
 > Apologies for my silly error.  Here is a revised patch [9382.patch](http://boxen.math.washington.edu/home/mariah/spkgs/9382.patch)

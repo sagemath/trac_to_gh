@@ -63,7 +63,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9986
 archive/issue_comments_100333.json:
 ```json
 {
-    "body": "Attachment\n\nBuild failure observed on an RS/6000 running AIX 5.3",
+    "body": "Attachment [mpfi-1.3.4-cvs20071125.p8.log](tarball://root/attachments/some-uuid/ticket9986/mpfi-1.3.4-cvs20071125.p8.log) by drkirkby created at 2010-09-23 21:01:25\n\nBuild failure observed on an RS/6000 running AIX 5.3",
     "created_at": "2010-09-23T21:01:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9985",
     "type": "issue_comment",
@@ -72,7 +72,7 @@ archive/issue_comments_100333.json:
 }
 ```
 
-Attachment
+Attachment [mpfi-1.3.4-cvs20071125.p8.log](tarball://root/attachments/some-uuid/ticket9986/mpfi-1.3.4-cvs20071125.p8.log) by drkirkby created at 2010-09-23 21:01:25
 
 Build failure observed on an RS/6000 running AIX 5.3
 

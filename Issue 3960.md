@@ -143,7 +143,7 @@ Changing assignee from boothby to mhansen.
 archive/issue_comments_028447.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3960.patch](tarball://root/attachments/some-uuid/ticket3960/trac_3960.patch) by mhansen created at 2008-09-04 01:35:54",
     "created_at": "2008-09-04T01:35:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3960",
     "type": "issue_comment",
@@ -152,7 +152,7 @@ archive/issue_comments_028447.json:
 }
 ```
 
-Attachment
+Attachment [trac_3960.patch](tarball://root/attachments/some-uuid/ticket3960/trac_3960.patch) by mhansen created at 2008-09-04 01:35:54
 
 
 

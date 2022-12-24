@@ -1057,7 +1057,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_094932.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [log_with_fltk-devel](tarball://root/attachments/some-uuid/ticket9722/log_with_fltk-devel) by ggrafendorfer created at 2010-08-19 14:24:10",
     "created_at": "2010-08-19T14:24:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
@@ -1066,7 +1066,7 @@ archive/issue_comments_094932.json:
 }
 ```
 
-Attachment
+Attachment [log_with_fltk-devel](tarball://root/attachments/some-uuid/ticket9722/log_with_fltk-devel) by ggrafendorfer created at 2010-08-19 14:24:10
 
 
 
@@ -1075,7 +1075,7 @@ Attachment
 archive/issue_comments_094933.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [log_without_fltk-devel](tarball://root/attachments/some-uuid/ticket9722/log_without_fltk-devel) by ggrafendorfer created at 2010-08-19 14:24:24",
     "created_at": "2010-08-19T14:24:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
@@ -1084,7 +1084,7 @@ archive/issue_comments_094933.json:
 }
 ```
 
-Attachment
+Attachment [log_without_fltk-devel](tarball://root/attachments/some-uuid/ticket9722/log_without_fltk-devel) by ggrafendorfer created at 2010-08-19 14:24:24
 
 
 
@@ -1207,7 +1207,7 @@ Georg
 archive/issue_comments_094938.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:28 ggrafendorfer]:\n> Replying to [comment:27 leif]:\n> > Thanks, does the same happen if you run `./Configure --graphic=none`?\n> \n> yes, I'll attach the log file,\n\nLOL, that's because you *don't* have *X11* development packages installed! :)\n\n`config/get_fltk`:\n\n```sh\nif test -z \"$with_fltk\"; then\n  case \"$which_graphic_lib\" in\n    fltk) with_fltk=yes;;\n  esac\n  if test -z \"$X11\"; then with_fltk=yes; fi\nfi\n...\n```\n\n\nPARI is really funny. I'll fix *all three* issues and upload a second patch here later...",
+    "body": "Attachment [log_with_fltk-devel_--graphic=none](tarball://root/attachments/some-uuid/ticket9722/log_with_fltk-devel_--graphic=none) by leif created at 2010-08-19 16:54:03\n\nReplying to [comment:28 ggrafendorfer]:\n> Replying to [comment:27 leif]:\n> > Thanks, does the same happen if you run `./Configure --graphic=none`?\n> \n> yes, I'll attach the log file,\n\nLOL, that's because you *don't* have *X11* development packages installed! :)\n\n`config/get_fltk`:\n\n```sh\nif test -z \"$with_fltk\"; then\n  case \"$which_graphic_lib\" in\n    fltk) with_fltk=yes;;\n  esac\n  if test -z \"$X11\"; then with_fltk=yes; fi\nfi\n...\n```\n\n\nPARI is really funny. I'll fix *all three* issues and upload a second patch here later...",
     "created_at": "2010-08-19T16:54:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
@@ -1216,7 +1216,7 @@ archive/issue_comments_094938.json:
 }
 ```
 
-Attachment
+Attachment [log_with_fltk-devel_--graphic=none](tarball://root/attachments/some-uuid/ticket9722/log_with_fltk-devel_--graphic=none) by leif created at 2010-08-19 16:54:03
 
 Replying to [comment:28 ggrafendorfer]:
 > Replying to [comment:27 leif]:
@@ -1420,7 +1420,7 @@ SPKG patch, apply to PARI 2.3.5.p2. Fixes Fedora 13 link error when FLTK is used
 archive/issue_comments_094947.json:
 ```json
 {
-    "body": "Attachment\n\n**New PARI spkg (p3)**, with the attached patch applied:\n\nhttp://spkg-upload.googlecode.com/files/pari-2.3.5.p3.spkg\n\nThis **only fixes the linker error** on Fedora 13 (that occurred when `fltk-devel` was installed).\n\nIf you run into the *compiler* error, convince your system administrator to\n* *either* install `fltk-devel`\n* *or* remove an (invalid) *unversioned* link to the FLTK library installed. (I.e., if only `fltk` is installed, there should be no `libfltk.so`, but just versioned filenames like e.g. `libfltk.so.1.1`, perhaps including *versioned* symbolic links to the actual libraries.)\n\nI'll perhaps later upload an improved (p4) spkg that also makes the FLTK-devel detection more robust, s.t. the compiler error shouldn't occur either, even with such unexpected links present.",
+    "body": "Attachment [trac_9722-pari-2.3.5.p2-p3.patch](tarball://root/attachments/some-uuid/ticket9722/trac_9722-pari-2.3.5.p2-p3.patch) by leif created at 2010-08-22 21:04:31\n\n**New PARI spkg (p3)**, with the attached patch applied:\n\nhttp://spkg-upload.googlecode.com/files/pari-2.3.5.p3.spkg\n\nThis **only fixes the linker error** on Fedora 13 (that occurred when `fltk-devel` was installed).\n\nIf you run into the *compiler* error, convince your system administrator to\n* *either* install `fltk-devel`\n* *or* remove an (invalid) *unversioned* link to the FLTK library installed. (I.e., if only `fltk` is installed, there should be no `libfltk.so`, but just versioned filenames like e.g. `libfltk.so.1.1`, perhaps including *versioned* symbolic links to the actual libraries.)\n\nI'll perhaps later upload an improved (p4) spkg that also makes the FLTK-devel detection more robust, s.t. the compiler error shouldn't occur either, even with such unexpected links present.",
     "created_at": "2010-08-22T21:04:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
@@ -1429,7 +1429,7 @@ archive/issue_comments_094947.json:
 }
 ```
 
-Attachment
+Attachment [trac_9722-pari-2.3.5.p2-p3.patch](tarball://root/attachments/some-uuid/ticket9722/trac_9722-pari-2.3.5.p2-p3.patch) by leif created at 2010-08-22 21:04:31
 
 **New PARI spkg (p3)**, with the attached patch applied:
 
@@ -1674,7 +1674,7 @@ Just to ease seeing some of the changes I made... (Do not apply, it's in the pat
 archive/issue_comments_094957.json:
 ```json
 {
-    "body": "Attachment\n\nJust to ease seeing some of the changes I made... (Do not apply, it's in the patch, too.)",
+    "body": "Attachment [get_X11-against-upstream.diff](tarball://root/attachments/some-uuid/ticket9722/get_X11-against-upstream.diff) by leif created at 2010-08-23 08:31:40\n\nJust to ease seeing some of the changes I made... (Do not apply, it's in the patch, too.)",
     "created_at": "2010-08-23T08:31:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
@@ -1683,7 +1683,7 @@ archive/issue_comments_094957.json:
 }
 ```
 
-Attachment
+Attachment [get_X11-against-upstream.diff](tarball://root/attachments/some-uuid/ticket9722/get_X11-against-upstream.diff) by leif created at 2010-08-23 08:31:40
 
 Just to ease seeing some of the changes I made... (Do not apply, it's in the patch, too.)
 
@@ -1745,7 +1745,7 @@ SPKG patch, now a proper Mercurial changeset. Apply to pari-2.3.5.p3.spkg. (Furt
 archive/issue_comments_094960.json:
 ```json
 {
-    "body": "Attachment\n\nAfter testing various combinations of installed (graphics) packages and PARI configure options (`$PARI_EXTRA_OPTS`) on 64-bit Fedora 13, 32-bit and 64-bit Ubuntu 9.04, I'm now quite confident with it and will \"release\" PARI 2.3.5.p4.\n\nI've replaced the p4-preview diff by a Mercurial patch, and will shortly provide a link to the \"final\" spkg, with all changes committed.\n\n*\"Please build, test, and report!  We'd love to hear about your experiences with this new package.\"*<sup>TM</sup>\n\n(I've so far only tested the spkg on top of Sage 4.5.3.alpha0 and 4.5.3.alpha1.)",
+    "body": "Attachment [trac_9722-pari-2.3.5.p3-p4.patch](tarball://root/attachments/some-uuid/ticket9722/trac_9722-pari-2.3.5.p3-p4.patch) by leif created at 2010-08-23 10:28:42\n\nAfter testing various combinations of installed (graphics) packages and PARI configure options (`$PARI_EXTRA_OPTS`) on 64-bit Fedora 13, 32-bit and 64-bit Ubuntu 9.04, I'm now quite confident with it and will \"release\" PARI 2.3.5.p4.\n\nI've replaced the p4-preview diff by a Mercurial patch, and will shortly provide a link to the \"final\" spkg, with all changes committed.\n\n*\"Please build, test, and report!  We'd love to hear about your experiences with this new package.\"*<sup>TM</sup>\n\n(I've so far only tested the spkg on top of Sage 4.5.3.alpha0 and 4.5.3.alpha1.)",
     "created_at": "2010-08-23T10:28:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
@@ -1754,7 +1754,7 @@ archive/issue_comments_094960.json:
 }
 ```
 
-Attachment
+Attachment [trac_9722-pari-2.3.5.p3-p4.patch](tarball://root/attachments/some-uuid/ticket9722/trac_9722-pari-2.3.5.p3-p4.patch) by leif created at 2010-08-23 10:28:42
 
 After testing various combinations of installed (graphics) packages and PARI configure options (`$PARI_EXTRA_OPTS`) on 64-bit Fedora 13, 32-bit and 64-bit Ubuntu 9.04, I'm now quite confident with it and will "release" PARI 2.3.5.p4.
 
@@ -2098,7 +2098,7 @@ Combined p2-p4 SPKG patch
 archive/issue_comments_094973.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:45 leif]:\n> Replying to [comment:44 leif]:\n> > (I've so far only tested the spkg on top of Sage 4.5.3.alpha0 and 4.5.3.alpha1.)\n> \n> Also installed without problems on Sage 4.5.2, now running `ptest`.\n\n* Passed `make ptest` with Sage 4.5.2, Ubuntu 9.04 x86 (P4 Prescott, gcc 4.3.3).\n* Passed `make test` with Sage 4.5.3.alpha1, Ubuntu 9.04 x86_64 (Core2, gcc 4.3.3).\n* Passed `make ptestlong` with Sage 4.5.3.alpha1, Fedora 13 x86_64 (Core2, gcc 4.4.4).",
+    "body": "Attachment [trac_9722-combined.patch](tarball://root/attachments/some-uuid/ticket9722/trac_9722-combined.patch) by leif created at 2010-08-23 15:07:33\n\nReplying to [comment:45 leif]:\n> Replying to [comment:44 leif]:\n> > (I've so far only tested the spkg on top of Sage 4.5.3.alpha0 and 4.5.3.alpha1.)\n> \n> Also installed without problems on Sage 4.5.2, now running `ptest`.\n\n* Passed `make ptest` with Sage 4.5.2, Ubuntu 9.04 x86 (P4 Prescott, gcc 4.3.3).\n* Passed `make test` with Sage 4.5.3.alpha1, Ubuntu 9.04 x86_64 (Core2, gcc 4.3.3).\n* Passed `make ptestlong` with Sage 4.5.3.alpha1, Fedora 13 x86_64 (Core2, gcc 4.4.4).",
     "created_at": "2010-08-23T15:07:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
@@ -2107,7 +2107,7 @@ archive/issue_comments_094973.json:
 }
 ```
 
-Attachment
+Attachment [trac_9722-combined.patch](tarball://root/attachments/some-uuid/ticket9722/trac_9722-combined.patch) by leif created at 2010-08-23 15:07:33
 
 Replying to [comment:45 leif]:
 > Replying to [comment:44 leif]:

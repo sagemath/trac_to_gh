@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4282
 archive/issue_comments_031327.json:
 ```json
 {
-    "body": "Attachment\n\nIt's still not super fast, but it's a lot better. Perhaps working with resultants directly could be faster (or improving QQbar's implementation, though I'm not sure how much is overhead vs. being a hard computational problem).",
+    "body": "Attachment [4282-symbolic-minpoly.patch](tarball://root/attachments/some-uuid/ticket4282/4282-symbolic-minpoly.patch) by robertwb created at 2008-10-14 14:21:04\n\nIt's still not super fast, but it's a lot better. Perhaps working with resultants directly could be faster (or improving QQbar's implementation, though I'm not sure how much is overhead vs. being a hard computational problem).",
     "created_at": "2008-10-14T14:21:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4282",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_031327.json:
 }
 ```
 
-Attachment
+Attachment [4282-symbolic-minpoly.patch](tarball://root/attachments/some-uuid/ticket4282/4282-symbolic-minpoly.patch) by robertwb created at 2008-10-14 14:21:04
 
 It's still not super fast, but it's a lot better. Perhaps working with resultants directly could be faster (or improving QQbar's implementation, though I'm not sure how much is overhead vs. being a hard computational problem).
 
@@ -123,7 +123,7 @@ Ah. That should be an easy fix... (must have fixed it in my branch elsewhere, pe
 archive/issue_comments_031330.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4282-sqrt-fix.patch](tarball://root/attachments/some-uuid/ticket4282/4282-sqrt-fix.patch) by robertwb created at 2008-11-13 23:12:22",
     "created_at": "2008-11-13T23:12:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4282",
     "type": "issue_comment",
@@ -132,7 +132,7 @@ archive/issue_comments_031330.json:
 }
 ```
 
-Attachment
+Attachment [4282-sqrt-fix.patch](tarball://root/attachments/some-uuid/ticket4282/4282-sqrt-fix.patch) by robertwb created at 2008-11-13 23:12:22
 
 
 
@@ -339,7 +339,7 @@ There are several mistakes in English in the new documentation that you added:
 archive/issue_comments_031338.json:
 ```json
 {
-    "body": "Attachment\n\nI made these changes and refreshed the patch. On your first (= last) point, I prefer the word \"that\" as there is no question of whether or not the result is correct, it just may not be obvious without the right simplification.",
+    "body": "Attachment [4282-symbolic-minpoly-referee-fixes.patch](tarball://root/attachments/some-uuid/ticket4282/4282-symbolic-minpoly-referee-fixes.patch) by robertwb created at 2008-12-08 19:21:20\n\nI made these changes and refreshed the patch. On your first (= last) point, I prefer the word \"that\" as there is no question of whether or not the result is correct, it just may not be obvious without the right simplification.",
     "created_at": "2008-12-08T19:21:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4282",
     "type": "issue_comment",
@@ -348,7 +348,7 @@ archive/issue_comments_031338.json:
 }
 ```
 
-Attachment
+Attachment [4282-symbolic-minpoly-referee-fixes.patch](tarball://root/attachments/some-uuid/ticket4282/4282-symbolic-minpoly-referee-fixes.patch) by robertwb created at 2008-12-08 19:21:20
 
 I made these changes and refreshed the patch. On your first (= last) point, I prefer the word "that" as there is no question of whether or not the result is correct, it just may not be obvious without the right simplification.
 
@@ -429,7 +429,7 @@ sage: %timeit sqrt(sqrt(5) + sqrt(2)).minpoly()
 archive/issue_comments_031340.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4282-symbolic-minpoly-referee-fixes-2.patch](tarball://root/attachments/some-uuid/ticket4282/4282-symbolic-minpoly-referee-fixes-2.patch) by ncalexan created at 2008-12-09 19:48:18",
     "created_at": "2008-12-09T19:48:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4282",
     "type": "issue_comment",
@@ -438,7 +438,7 @@ archive/issue_comments_031340.json:
 }
 ```
 
-Attachment
+Attachment [4282-symbolic-minpoly-referee-fixes-2.patch](tarball://root/attachments/some-uuid/ticket4282/4282-symbolic-minpoly-referee-fixes-2.patch) by ncalexan created at 2008-12-09 19:48:18
 
 
 

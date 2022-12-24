@@ -238,7 +238,7 @@ I'll probably return to reviewing this patch later this week; if somebody else s
 archive/issue_comments_037372.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached a patch that fixes the problems I found in the remaining 78% of the file (my patch does not fix problems that I reported in the above comment).\n\nI now suspect that you removed email addresses from AUTHOR blocks (in polynomial/multi_polynomial_ideal.py and real_mpfr.pyx) deliberately.  If so, \n\n1) I would have preferred that this be a separate change; having substantive changes mixed in with the huge LaTeX->ReST patch makes it more difficult to review; and\n\n2) you missed some (for example, pbori.pyx still has email addresses).\n\nOnce the issues from the above comment are fixed, and we decide what to do about the email addresses, this will be a positive review for the original patch.  Probably somebody should review my reviewer patch, though, since it's so big.",
+    "body": "Attachment [reviewer-patch-4925.patch](tarball://root/attachments/some-uuid/ticket4925/reviewer-patch-4925.patch) by cwitty created at 2009-01-23 07:49:06\n\nI've attached a patch that fixes the problems I found in the remaining 78% of the file (my patch does not fix problems that I reported in the above comment).\n\nI now suspect that you removed email addresses from AUTHOR blocks (in polynomial/multi_polynomial_ideal.py and real_mpfr.pyx) deliberately.  If so, \n\n1) I would have preferred that this be a separate change; having substantive changes mixed in with the huge LaTeX->ReST patch makes it more difficult to review; and\n\n2) you missed some (for example, pbori.pyx still has email addresses).\n\nOnce the issues from the above comment are fixed, and we decide what to do about the email addresses, this will be a positive review for the original patch.  Probably somebody should review my reviewer patch, though, since it's so big.",
     "created_at": "2009-01-23T07:49:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4925",
     "type": "issue_comment",
@@ -247,7 +247,7 @@ archive/issue_comments_037372.json:
 }
 ```
 
-Attachment
+Attachment [reviewer-patch-4925.patch](tarball://root/attachments/some-uuid/ticket4925/reviewer-patch-4925.patch) by cwitty created at 2009-01-23 07:49:06
 
 I've attached a patch that fixes the problems I found in the remaining 78% of the file (my patch does not fix problems that I reported in the above comment).
 
@@ -284,7 +284,7 @@ Resolution: fixed
 archive/issue_comments_037374.json:
 ```json
 {
-    "body": "Attachment\n\nMerged in Sage 3.4.alpha0.\n\nCheers,\n\nMichael",
+    "body": "Attachment [sage.rings-final.patch](tarball://root/attachments/some-uuid/ticket4925/sage.rings-final.patch) by mabshoff created at 2009-02-24 18:19:42\n\nMerged in Sage 3.4.alpha0.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-24T18:19:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4925",
     "type": "issue_comment",
@@ -293,7 +293,7 @@ archive/issue_comments_037374.json:
 }
 ```
 
-Attachment
+Attachment [sage.rings-final.patch](tarball://root/attachments/some-uuid/ticket4925/sage.rings-final.patch) by mabshoff created at 2009-02-24 18:19:42
 
 Merged in Sage 3.4.alpha0.
 

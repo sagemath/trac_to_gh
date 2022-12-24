@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7631
 archive/issue_comments_065211.json:
 ```json
 {
-    "body": "Attachment\n\nChanges worksheet name on republish",
+    "body": "Attachment [trac_7631-republish-name.patch](tarball://root/attachments/some-uuid/ticket7631/trac_7631-republish-name.patch) by timdumol created at 2010-01-19 10:14:33\n\nChanges worksheet name on republish",
     "created_at": "2010-01-19T10:14:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7631",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_065211.json:
 }
 ```
 
-Attachment
+Attachment [trac_7631-republish-name.patch](tarball://root/attachments/some-uuid/ticket7631/trac_7631-republish-name.patch) by timdumol created at 2010-01-19 10:14:33
 
 Changes worksheet name on republish
 

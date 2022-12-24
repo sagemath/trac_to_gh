@@ -77,7 +77,7 @@ This is a first try at a patch improving documentation and removing the problem.
 archive/issue_comments_022222.json:
 ```json
 {
-    "body": "Attachment\n\nI should point out that the above patch does not yet work.  It DOES remove the TypeError problem, but doesn't actually give the correct new matrix.",
+    "body": "Attachment [8867.patch](tarball://root/attachments/some-uuid/ticket3212/8867.patch) by kcrisman created at 2008-05-16 05:23:22\n\nI should point out that the above patch does not yet work.  It DOES remove the TypeError problem, but doesn't actually give the correct new matrix.",
     "created_at": "2008-05-16T05:23:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3212",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_022222.json:
 }
 ```
 
-Attachment
+Attachment [8867.patch](tarball://root/attachments/some-uuid/ticket3212/8867.patch) by kcrisman created at 2008-05-16 05:23:22
 
 I should point out that the above patch does not yet work.  It DOES remove the TypeError problem, but doesn't actually give the correct new matrix.
 
@@ -133,7 +133,7 @@ Changing assignee from was to kcrisman.
 archive/issue_comments_022225.json:
 ```json
 {
-    "body": "Attachment\n\nPatch for allowing row mult by non-ring elements",
+    "body": "Attachment [8869.patch](tarball://root/attachments/some-uuid/ticket3212/8869.patch) by kcrisman created at 2008-05-18 03:33:08\n\nPatch for allowing row mult by non-ring elements",
     "created_at": "2008-05-18T03:33:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3212",
     "type": "issue_comment",
@@ -142,7 +142,7 @@ archive/issue_comments_022225.json:
 }
 ```
 
-Attachment
+Attachment [8869.patch](tarball://root/attachments/some-uuid/ticket3212/8869.patch) by kcrisman created at 2008-05-18 03:33:08
 
 Patch for allowing row mult by non-ring elements
 
@@ -229,7 +229,7 @@ Improves documentation and error messages and adds alternate methods for rescali
 archive/issue_comments_022230.json:
 ```json
 {
-    "body": "Attachment\n\nUse only rescaling.patch.",
+    "body": "Attachment [rescaling.patch](tarball://root/attachments/some-uuid/ticket3212/rescaling.patch) by kcrisman created at 2008-06-06 03:12:13\n\nUse only rescaling.patch.",
     "created_at": "2008-06-06T03:12:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3212",
     "type": "issue_comment",
@@ -238,7 +238,7 @@ archive/issue_comments_022230.json:
 }
 ```
 
-Attachment
+Attachment [rescaling.patch](tarball://root/attachments/some-uuid/ticket3212/rescaling.patch) by kcrisman created at 2008-06-06 03:12:13
 
 Use only rescaling.patch.
 
@@ -271,7 +271,7 @@ Works well for me. The only comments I have are
 archive/issue_comments_022232.json:
 ```json
 {
-    "body": "Attachment\n\nUse only rescale.patch.  This is hopefully the final version.",
+    "body": "Attachment [rescale.patch](tarball://root/attachments/some-uuid/ticket3212/rescale.patch) by kcrisman created at 2008-06-06 21:04:18\n\nUse only rescale.patch.  This is hopefully the final version.",
     "created_at": "2008-06-06T21:04:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3212",
     "type": "issue_comment",
@@ -280,7 +280,7 @@ archive/issue_comments_022232.json:
 }
 ```
 
-Attachment
+Attachment [rescale.patch](tarball://root/attachments/some-uuid/ticket3212/rescale.patch) by kcrisman created at 2008-06-06 21:04:18
 
 Use only rescale.patch.  This is hopefully the final version.
 

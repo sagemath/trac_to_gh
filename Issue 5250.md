@@ -126,7 +126,7 @@ Oops, just realised that this breaks one or two doctests (because various functi
 archive/issue_comments_040272.json:
 ```json
 {
-    "body": "Attachment\n\npatch against 3.4.2.final",
+    "body": "Attachment [trac_5250.patch](tarball://root/attachments/some-uuid/ticket5250/trac_5250.patch) by davidloeffler created at 2009-05-07 15:48:46\n\npatch against 3.4.2.final",
     "created_at": "2009-05-07T15:48:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5250",
     "type": "issue_comment",
@@ -135,7 +135,7 @@ archive/issue_comments_040272.json:
 }
 ```
 
-Attachment
+Attachment [trac_5250.patch](tarball://root/attachments/some-uuid/ticket5250/trac_5250.patch) by davidloeffler created at 2009-05-07 15:48:46
 
 patch against 3.4.2.final
 
@@ -222,7 +222,7 @@ Michael: don't merge this one quite yet -- it breaks one of the new doctests I a
 archive/issue_comments_040277.json:
 ```json
 {
-    "body": "Attachment\n\nfix doctest from #4357 which this breaks",
+    "body": "Attachment [trac_5250_doctest_fix.patch](tarball://root/attachments/some-uuid/ticket5250/trac_5250_doctest_fix.patch) by davidloeffler created at 2009-05-10 21:40:02\n\nfix doctest from #4357 which this breaks",
     "created_at": "2009-05-10T21:40:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5250",
     "type": "issue_comment",
@@ -231,7 +231,7 @@ archive/issue_comments_040277.json:
 }
 ```
 
-Attachment
+Attachment [trac_5250_doctest_fix.patch](tarball://root/attachments/some-uuid/ticket5250/trac_5250_doctest_fix.patch) by davidloeffler created at 2009-05-10 21:40:02
 
 fix doctest from #4357 which this breaks
 
@@ -319,7 +319,7 @@ Ah, I didn't do the long doctests. It is harmless. Patch coming in a couple of s
 archive/issue_comments_040281.json:
 ```json
 {
-    "body": "Attachment\n\nfix borken -long doctest in modsym/ambient.py",
+    "body": "Attachment [trac_5250_doctest_fix_2.patch](tarball://root/attachments/some-uuid/ticket5250/trac_5250_doctest_fix_2.patch) by davidloeffler created at 2009-05-11 09:23:05\n\nfix borken -long doctest in modsym/ambient.py",
     "created_at": "2009-05-11T09:23:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5250",
     "type": "issue_comment",
@@ -328,7 +328,7 @@ archive/issue_comments_040281.json:
 }
 ```
 
-Attachment
+Attachment [trac_5250_doctest_fix_2.patch](tarball://root/attachments/some-uuid/ticket5250/trac_5250_doctest_fix_2.patch) by davidloeffler created at 2009-05-11 09:23:05
 
 fix borken -long doctest in modsym/ambient.py
 

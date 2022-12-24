@@ -275,7 +275,7 @@ Speaking personally I would be happy to close this though!
 archive/issue_comments_000585.json:
 ```json
 {
-    "body": "Attachment\n\nApplies to 4.3.rc0",
+    "body": "Attachment [trac_128-ec-constructor.patch](tarball://root/attachments/some-uuid/ticket128/trac_128-ec-constructor.patch) by cremona created at 2009-12-13 22:59:11\n\nApplies to 4.3.rc0",
     "created_at": "2009-12-13T22:59:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/128",
     "type": "issue_comment",
@@ -284,7 +284,7 @@ archive/issue_comments_000585.json:
 }
 ```
 
-Attachment
+Attachment [trac_128-ec-constructor.patch](tarball://root/attachments/some-uuid/ticket128/trac_128-ec-constructor.patch) by cremona created at 2009-12-13 22:59:11
 
 Applies to 4.3.rc0
 

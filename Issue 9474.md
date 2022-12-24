@@ -53,7 +53,7 @@ Reverts ECL back to an older version, while preseving a couple of important Sola
 archive/issue_comments_090868.json:
 ```json
 {
-    "body": "Attachment\n\nI think `SunOs` should be `SunOS` in `spkg-install`, right?",
+    "body": "Attachment [9474.patch](tarball://root/attachments/some-uuid/ticket9474/9474.patch) by leif created at 2010-07-11 12:08:21\n\nI think `SunOs` should be `SunOS` in `spkg-install`, right?",
     "created_at": "2010-07-11T12:08:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9474",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_090868.json:
 }
 ```
 
-Attachment
+Attachment [9474.patch](tarball://root/attachments/some-uuid/ticket9474/9474.patch) by leif created at 2010-07-11 12:08:21
 
 I think `SunOs` should be `SunOS` in `spkg-install`, right?
 
@@ -93,7 +93,7 @@ Yes, give me a few minutes and I'll update it.
 archive/issue_comments_090870.json:
 ```json
 {
-    "body": "Attachment\n\nCorrection SunOs -> SunOS",
+    "body": "Attachment [9474.2.patch](tarball://root/attachments/some-uuid/ticket9474/9474.2.patch) by drkirkby created at 2010-07-11 12:16:04\n\nCorrection SunOs -> SunOS",
     "created_at": "2010-07-11T12:16:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9474",
     "type": "issue_comment",
@@ -102,7 +102,7 @@ archive/issue_comments_090870.json:
 }
 ```
 
-Attachment
+Attachment [9474.2.patch](tarball://root/attachments/some-uuid/ticket9474/9474.2.patch) by drkirkby created at 2010-07-11 12:16:04
 
 Correction SunOs -> SunOS
 

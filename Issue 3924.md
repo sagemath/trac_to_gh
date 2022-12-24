@@ -443,7 +443,7 @@ I suck.  ` python.spkg/spkg-install `
 archive/issue_comments_028090.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_sage_3924.patch](tarball://root/attachments/some-uuid/ticket3924/trac_sage_3924.patch) by dphilp created at 2008-08-27 03:52:43",
     "created_at": "2008-08-27T03:52:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3924",
     "type": "issue_comment",
@@ -452,7 +452,7 @@ archive/issue_comments_028090.json:
 }
 ```
 
-Attachment
+Attachment [trac_sage_3924.patch](tarball://root/attachments/some-uuid/ticket3924/trac_sage_3924.patch) by dphilp created at 2008-08-27 03:52:43
 
 
 
@@ -461,7 +461,7 @@ Attachment
 archive/issue_comments_028091.json:
 ```json
 {
-    "body": "Attachment\n\nThis was the original mess of a ticket description:\n\nI'm trying to build sage on mac with a shareable python library.  The current version, being built without the --enable-framework option, cannot be linked to other libraries because of the environ variable.  I think getting this working would be useful, and I would like eventually to see it the default build on OS X.\n\nThe following recipe works, though it is clearly a defective approach:\n\n1. build vanilla sage from source \n\n2. edit the spkg/standard/python-2.5....spkg/spkg-install file to include the --enable-framework=SAGE_ROOT/local/Frameworks\n\n3. rebuild sage.  This creates SAGE_ROOT/Frameworks/Python.framework\n\n4. all doctests pass, and I can link to libpython from boost python\n\nIdeally, the following steps would work:\n\n1. edit the spkg/standard/python-2.5....spkg/spkg-install file to include the --enable-framework= SAGE_ROOT/local/Frameworks\n\n2. build sage.\n\nIt doesn't work so simply.  I've managed to help it along a few steps, but am stuck with cvxopt\n\n1. The build of mercurial crashes.  When it crashes, create two symlinks:\n\n2a. local/lib/python2.5 \n---> local/Frameworks/Python.framework/Versions/Current/lib/python2.5/\n\n1b. local/include/python2.5 \n---> local/Frameworks/Python.framework/Versions/Current/include/python2.5/\n\n1c. Restart make\n\n2. The build of the sage package crashes, with a similar error.  \n\n2a. Delete the busted symlink at \nlocal/Frameworks/Python.framework/Versions/Current/lib/python2.5/site-packages/sage\n\n2b. Create a symlink:\nlocal/Frameworks/Python.framework/Versions/Current/lib/python2.5/site-packages/sage\n--->devel/sage/build/sage\n\n2c. Delete half-built files, restart make.\n\n3. The build of cvxopt crashes, with a duplicate symbol error.  I'm not in a position to debug this one.\n\nAny attention appreciated!  For my part, I can muddle along with the duplicate builds but I would like to get this working.\n\nD",
+    "body": "Attachment [trac_python_3924.patch](tarball://root/attachments/some-uuid/ticket3924/trac_python_3924.patch) by was created at 2009-07-09 20:25:10\n\nThis was the original mess of a ticket description:\n\nI'm trying to build sage on mac with a shareable python library.  The current version, being built without the --enable-framework option, cannot be linked to other libraries because of the environ variable.  I think getting this working would be useful, and I would like eventually to see it the default build on OS X.\n\nThe following recipe works, though it is clearly a defective approach:\n\n1. build vanilla sage from source \n\n2. edit the spkg/standard/python-2.5....spkg/spkg-install file to include the --enable-framework=SAGE_ROOT/local/Frameworks\n\n3. rebuild sage.  This creates SAGE_ROOT/Frameworks/Python.framework\n\n4. all doctests pass, and I can link to libpython from boost python\n\nIdeally, the following steps would work:\n\n1. edit the spkg/standard/python-2.5....spkg/spkg-install file to include the --enable-framework= SAGE_ROOT/local/Frameworks\n\n2. build sage.\n\nIt doesn't work so simply.  I've managed to help it along a few steps, but am stuck with cvxopt\n\n1. The build of mercurial crashes.  When it crashes, create two symlinks:\n\n2a. local/lib/python2.5 \n---> local/Frameworks/Python.framework/Versions/Current/lib/python2.5/\n\n1b. local/include/python2.5 \n---> local/Frameworks/Python.framework/Versions/Current/include/python2.5/\n\n1c. Restart make\n\n2. The build of the sage package crashes, with a similar error.  \n\n2a. Delete the busted symlink at \nlocal/Frameworks/Python.framework/Versions/Current/lib/python2.5/site-packages/sage\n\n2b. Create a symlink:\nlocal/Frameworks/Python.framework/Versions/Current/lib/python2.5/site-packages/sage\n--->devel/sage/build/sage\n\n2c. Delete half-built files, restart make.\n\n3. The build of cvxopt crashes, with a duplicate symbol error.  I'm not in a position to debug this one.\n\nAny attention appreciated!  For my part, I can muddle along with the duplicate builds but I would like to get this working.\n\nD",
     "created_at": "2009-07-09T20:25:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3924",
     "type": "issue_comment",
@@ -470,7 +470,7 @@ archive/issue_comments_028091.json:
 }
 ```
 
-Attachment
+Attachment [trac_python_3924.patch](tarball://root/attachments/some-uuid/ticket3924/trac_python_3924.patch) by was created at 2009-07-09 20:25:10
 
 This was the original mess of a ticket description:
 

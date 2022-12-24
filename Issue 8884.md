@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8884
 archive/issue_comments_081655.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8884_isogeny_class.patch](tarball://root/attachments/some-uuid/ticket8884/trac_8884_isogeny_class.patch) by kimi created at 2010-05-05 09:49:22",
     "created_at": "2010-05-05T09:49:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8884",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_081655.json:
 }
 ```
 
-Attachment
+Attachment [trac_8884_isogeny_class.patch](tarball://root/attachments/some-uuid/ticket8884/trac_8884_isogeny_class.patch) by kimi created at 2010-05-05 09:49:22
 
 
 
@@ -69,7 +69,7 @@ Replaces previous patch; applies to 4.4.1
 archive/issue_comments_081657.json:
 ```json
 {
-    "body": "Attachment\n\nThe second version of the patch just adds a useful comment and fixes some docstrings.",
+    "body": "Attachment [trac_8884_isogeny_class.2.patch](tarball://root/attachments/some-uuid/ticket8884/trac_8884_isogeny_class.2.patch) by cremona created at 2010-05-11 10:38:25\n\nThe second version of the patch just adds a useful comment and fixes some docstrings.",
     "created_at": "2010-05-11T10:38:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8884",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_081657.json:
 }
 ```
 
-Attachment
+Attachment [trac_8884_isogeny_class.2.patch](tarball://root/attachments/some-uuid/ticket8884/trac_8884_isogeny_class.2.patch) by cremona created at 2010-05-11 10:38:25
 
 The second version of the patch just adds a useful comment and fixes some docstrings.
 

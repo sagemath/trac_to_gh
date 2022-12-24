@@ -114,7 +114,7 @@ Thanks, Nicolas, I'll test tonight with #7880.
 archive/issue_comments_077702.json:
 ```json
 {
-    "body": "Attachment\n\nThis updated patch fixes the copyright headers",
+    "body": "Attachment [trac_8579-category-magmas-nt.patch](tarball://root/attachments/some-uuid/ticket8579/trac_8579-category-magmas-nt.patch) by nthiery created at 2010-03-24 08:52:43\n\nThis updated patch fixes the copyright headers",
     "created_at": "2010-03-24T08:52:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8579",
     "type": "issue_comment",
@@ -123,7 +123,7 @@ archive/issue_comments_077702.json:
 }
 ```
 
-Attachment
+Attachment [trac_8579-category-magmas-nt.patch](tarball://root/attachments/some-uuid/ticket8579/trac_8579-category-magmas-nt.patch) by nthiery created at 2010-03-24 08:52:43
 
 This updated patch fixes the copyright headers
 

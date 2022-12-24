@@ -58,7 +58,7 @@ Applies to 3.4.1.rc4
 archive/issue_comments_045975.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5845.patch](tarball://root/attachments/some-uuid/ticket5845/trac_5845.patch) by cremona created at 2009-04-21 10:47:00",
     "created_at": "2009-04-21T10:47:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5845",
     "type": "issue_comment",
@@ -67,7 +67,7 @@ archive/issue_comments_045975.json:
 }
 ```
 
-Attachment
+Attachment [trac_5845.patch](tarball://root/attachments/some-uuid/ticket5845/trac_5845.patch) by cremona created at 2009-04-21 10:47:00
 
 
 
@@ -152,7 +152,7 @@ Will do -- John
 archive/issue_comments_045980.json:
 ```json
 {
-    "body": "Attachment\n\nRebased to 4.0 (replace previous)",
+    "body": "Attachment [trac_5845_rebase.patch](tarball://root/attachments/some-uuid/ticket5845/trac_5845_rebase.patch) by cremona created at 2009-06-01 08:20:38\n\nRebased to 4.0 (replace previous)",
     "created_at": "2009-06-01T08:20:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5845",
     "type": "issue_comment",
@@ -161,7 +161,7 @@ archive/issue_comments_045980.json:
 }
 ```
 
-Attachment
+Attachment [trac_5845_rebase.patch](tarball://root/attachments/some-uuid/ticket5845/trac_5845_rebase.patch) by cremona created at 2009-06-01 08:20:38
 
 Rebased to 4.0 (replace previous)
 

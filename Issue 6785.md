@@ -132,7 +132,7 @@ Changing keywords from "" to "maxima".
 archive/issue_comments_055924.json:
 ```json
 {
-    "body": "Attachment\n\napply after the spkg's at #6564 and #6699",
+    "body": "Attachment [trac_6785.patch](tarball://root/attachments/some-uuid/ticket6785/trac_6785.patch) by AlexGhitza created at 2009-08-20 23:41:11\n\napply after the spkg's at #6564 and #6699",
     "created_at": "2009-08-20T23:41:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6785",
     "type": "issue_comment",
@@ -141,7 +141,7 @@ archive/issue_comments_055924.json:
 }
 ```
 
-Attachment
+Attachment [trac_6785.patch](tarball://root/attachments/some-uuid/ticket6785/trac_6785.patch) by AlexGhitza created at 2009-08-20 23:41:11
 
 apply after the spkg's at #6564 and #6699
 

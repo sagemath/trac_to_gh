@@ -77,7 +77,7 @@ Patch attached. The fix was what I described above, but apparently I was pessimi
 archive/issue_comments_018430.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.",
+    "body": "Attachment [trac-2680.patch](tarball://root/attachments/some-uuid/ticket2680/trac-2680.patch) by robertwb created at 2008-04-06 06:56:37\n\nLooks good to me.",
     "created_at": "2008-04-06T06:56:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2680",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_018430.json:
 }
 ```
 
-Attachment
+Attachment [trac-2680.patch](tarball://root/attachments/some-uuid/ticket2680/trac-2680.patch) by robertwb created at 2008-04-06 06:56:37
 
 Looks good to me.
 

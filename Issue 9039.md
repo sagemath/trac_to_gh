@@ -237,7 +237,7 @@ Chris.
 archive/issue_comments_083680.json:
 ```json
 {
-    "body": "Attachment\n\nChris,\n\nTake a look at the newest patch. This should provide a correct version of `bound_kato`.",
+    "body": "Attachment [trac_9039.patch](tarball://root/attachments/some-uuid/ticket9039/trac_9039.patch) by rlm created at 2010-05-27 22:32:57\n\nChris,\n\nTake a look at the newest patch. This should provide a correct version of `bound_kato`.",
     "created_at": "2010-05-27T22:32:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9039",
     "type": "issue_comment",
@@ -246,7 +246,7 @@ archive/issue_comments_083680.json:
 }
 ```
 
-Attachment
+Attachment [trac_9039.patch](tarball://root/attachments/some-uuid/ticket9039/trac_9039.patch) by rlm created at 2010-05-27 22:32:57
 
 Chris,
 

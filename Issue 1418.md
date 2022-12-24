@@ -49,7 +49,7 @@ Oops, this should go on hold.  I screwed it up in various ways with the doc-test
 archive/issue_comments_009150.json:
 ```json
 {
-    "body": "Attachment\n\na fixed patch which should work",
+    "body": "Attachment [magma_floordiv.patch](tarball://root/attachments/some-uuid/ticket1418/magma_floordiv.patch) by jbmohler created at 2007-12-19 01:45:33\n\na fixed patch which should work",
     "created_at": "2007-12-19T01:45:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1418",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_009150.json:
 }
 ```
 
-Attachment
+Attachment [magma_floordiv.patch](tarball://root/attachments/some-uuid/ticket1418/magma_floordiv.patch) by jbmohler created at 2007-12-19 01:45:33
 
 a fixed patch which should work
 

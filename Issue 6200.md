@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6200
 archive/issue_comments_049535.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [constants.patch](tarball://root/attachments/some-uuid/ticket6200/constants.patch) by fredrik.johansson created at 2009-06-19 17:30:38",
     "created_at": "2009-06-19T17:30:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6200",
     "type": "issue_comment",
@@ -50,7 +50,7 @@ archive/issue_comments_049535.json:
 }
 ```
 
-Attachment
+Attachment [constants.patch](tarball://root/attachments/some-uuid/ticket6200/constants.patch) by fredrik.johansson created at 2009-06-19 17:30:38
 
 
 
@@ -59,7 +59,7 @@ Attachment
 archive/issue_comments_049536.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6200-review.patch](tarball://root/attachments/some-uuid/ticket6200/trac_6200-review.patch) by mhansen created at 2009-06-19 23:06:59",
     "created_at": "2009-06-19T23:06:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6200",
     "type": "issue_comment",
@@ -68,7 +68,7 @@ archive/issue_comments_049536.json:
 }
 ```
 
-Attachment
+Attachment [trac_6200-review.patch](tarball://root/attachments/some-uuid/ticket6200/trac_6200-review.patch) by mhansen created at 2009-06-19 23:06:59
 
 
 

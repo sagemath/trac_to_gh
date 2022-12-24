@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2953
 archive/issue_comments_020364.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [givaro-3.2.10.rc3-gmp++.h-gcc-4.3-Itanium.patch](tarball://root/attachments/some-uuid/ticket2953/givaro-3.2.10.rc3-gmp++.h-gcc-4.3-Itanium.patch) by mabshoff created at 2008-04-19 02:20:58",
     "created_at": "2008-04-19T02:20:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2953",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_020364.json:
 }
 ```
 
-Attachment
+Attachment [givaro-3.2.10.rc3-gmp++.h-gcc-4.3-Itanium.patch](tarball://root/attachments/some-uuid/ticket2953/givaro-3.2.10.rc3-gmp++.h-gcc-4.3-Itanium.patch) by mabshoff created at 2008-04-19 02:20:58
 
 
 

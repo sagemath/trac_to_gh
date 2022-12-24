@@ -53,7 +53,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8268
 archive/issue_comments_073185.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8268_speed_up_Christoffel-sl.patch](tarball://root/attachments/some-uuid/ticket8268/trac_8268_speed_up_Christoffel-sl.patch) by slabbe created at 2010-02-15 00:21:53",
     "created_at": "2010-02-15T00:21:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8268",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_073185.json:
 }
 ```
 
-Attachment
+Attachment [trac_8268_speed_up_Christoffel-sl.patch](tarball://root/attachments/some-uuid/ticket8268/trac_8268_speed_up_Christoffel-sl.patch) by slabbe created at 2010-02-15 00:21:53
 
 
 
@@ -235,7 +235,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_073195.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8268_review-abm.patch](tarball://root/attachments/some-uuid/ticket8268/trac_8268_review-abm.patch) by abmasse created at 2010-02-24 02:09:36",
     "created_at": "2010-02-24T02:09:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8268",
     "type": "issue_comment",
@@ -244,7 +244,7 @@ archive/issue_comments_073195.json:
 }
 ```
 
-Attachment
+Attachment [trac_8268_review-abm.patch](tarball://root/attachments/some-uuid/ticket8268/trac_8268_review-abm.patch) by abmasse created at 2010-02-24 02:09:36
 
 
 

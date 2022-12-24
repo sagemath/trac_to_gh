@@ -53,7 +53,7 @@ The patch **trac_5619-doctests.patch** adds two doctests to `groebner_fan.py`. T
 archive/issue_comments_043882.json:
 ```json
 {
-    "body": "Attachment\n\nThese make sense, and appear to work.  Positive review.",
+    "body": "Attachment [trac_5619-doctests.patch](tarball://root/attachments/some-uuid/ticket5619/trac_5619-doctests.patch) by mhampton created at 2009-05-20 23:51:52\n\nThese make sense, and appear to work.  Positive review.",
     "created_at": "2009-05-20T23:51:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5619",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_043882.json:
 }
 ```
 
-Attachment
+Attachment [trac_5619-doctests.patch](tarball://root/attachments/some-uuid/ticket5619/trac_5619-doctests.patch) by mhampton created at 2009-05-20 23:51:52
 
 These make sense, and appear to work.  Positive review.
 

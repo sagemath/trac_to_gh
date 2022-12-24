@@ -57,7 +57,7 @@ Changing status from new to needs_review.
 archive/issue_comments_062196.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7397_prime_enumset-fh.patch](tarball://root/attachments/some-uuid/ticket7397/trac_7397_prime_enumset-fh.patch) by hivert created at 2009-11-06 13:41:50",
     "created_at": "2009-11-06T13:41:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7397",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_062196.json:
 }
 ```
 
-Attachment
+Attachment [trac_7397_prime_enumset-fh.patch](tarball://root/attachments/some-uuid/ticket7397/trac_7397_prime_enumset-fh.patch) by hivert created at 2009-11-06 13:41:50
 
 
 

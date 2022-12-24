@@ -67,7 +67,7 @@ Changing status from new to assigned.
 archive/issue_comments_047783.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch also actually implements the height option for the plot3d method of the Point class that the old doctest was actually using through a 3D graphics object.",
+    "body": "Attachment [trac_6006.patch](tarball://root/attachments/some-uuid/ticket6006/trac_6006.patch) by kcrisman created at 2009-05-08 05:13:20\n\nThis patch also actually implements the height option for the plot3d method of the Point class that the old doctest was actually using through a 3D graphics object.",
     "created_at": "2009-05-08T05:13:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6006",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_047783.json:
 }
 ```
 
-Attachment
+Attachment [trac_6006.patch](tarball://root/attachments/some-uuid/ticket6006/trac_6006.patch) by kcrisman created at 2009-05-08 05:13:20
 
 This patch also actually implements the height option for the plot3d method of the Point class that the old doctest was actually using through a 3D graphics object.
 
@@ -191,7 +191,7 @@ Michael
 archive/issue_comments_047789.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6006-fix.patch](tarball://root/attachments/some-uuid/ticket6006/trac_6006-fix.patch) by kcrisman created at 2009-05-14 16:14:45",
     "created_at": "2009-05-14T16:14:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6006",
     "type": "issue_comment",
@@ -200,7 +200,7 @@ archive/issue_comments_047789.json:
 }
 ```
 
-Attachment
+Attachment [trac_6006-fix.patch](tarball://root/attachments/some-uuid/ticket6006/trac_6006-fix.patch) by kcrisman created at 2009-05-14 16:14:45
 
 
 
@@ -227,7 +227,7 @@ reviewer patch
 archive/issue_comments_047791.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review! Apply patches in the following order:\n1. `trac_6006.patch`\n2. `trac_6006-fix.patch`\n3. `trac_6006-reviewer.patch` -- this fixes two trivial typos introduced in `trac_6006.patch`",
+    "body": "Attachment [trac_6006-reviewer.patch](tarball://root/attachments/some-uuid/ticket6006/trac_6006-reviewer.patch) by mvngu created at 2009-05-15 07:22:16\n\nPositive review! Apply patches in the following order:\n1. `trac_6006.patch`\n2. `trac_6006-fix.patch`\n3. `trac_6006-reviewer.patch` -- this fixes two trivial typos introduced in `trac_6006.patch`",
     "created_at": "2009-05-15T07:22:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6006",
     "type": "issue_comment",
@@ -236,7 +236,7 @@ archive/issue_comments_047791.json:
 }
 ```
 
-Attachment
+Attachment [trac_6006-reviewer.patch](tarball://root/attachments/some-uuid/ticket6006/trac_6006-reviewer.patch) by mvngu created at 2009-05-15 07:22:16
 
 Positive review! Apply patches in the following order:
 1. `trac_6006.patch`

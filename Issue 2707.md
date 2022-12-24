@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2707
 archive/issue_comments_018671.json:
 ```json
 {
-    "body": "Attachment\n\nThis looks good, but I would like to see three things changed:\n\n* There's an extra 's' in the documentation for `is_totally_real` -- specifically on line 900. \n\n* Personally, I'd like to see some newlines between `is_totally_imaginary`, `is_totally_complex`, and `complex_embeddings`.\n\n* I think that `is_totally_complex` should be given a full function definition, not just declared as `is_totaly_complex = is_totally_imaginary`. Here's the reason: as I understand it, if you inherit from `NumberField_generic`, and override `is_totally_imaginary`, this will **not** change `is_totally_complex` in the subclass. While this might not be deeply relevant in this case (since it's such a trivial function), I think this means it's a bad habit to be in in general, so we should avoid doing it. I know this means writing an extra docstring, which seems silly, but I think it's worth it.",
+    "body": "Attachment [2707-ncalexan-nf-totally-imaginary-1.patch](tarball://root/attachments/some-uuid/ticket2707/2707-ncalexan-nf-totally-imaginary-1.patch) by craigcitro created at 2008-03-28 20:36:49\n\nThis looks good, but I would like to see three things changed:\n\n* There's an extra 's' in the documentation for `is_totally_real` -- specifically on line 900. \n\n* Personally, I'd like to see some newlines between `is_totally_imaginary`, `is_totally_complex`, and `complex_embeddings`.\n\n* I think that `is_totally_complex` should be given a full function definition, not just declared as `is_totaly_complex = is_totally_imaginary`. Here's the reason: as I understand it, if you inherit from `NumberField_generic`, and override `is_totally_imaginary`, this will **not** change `is_totally_complex` in the subclass. While this might not be deeply relevant in this case (since it's such a trivial function), I think this means it's a bad habit to be in in general, so we should avoid doing it. I know this means writing an extra docstring, which seems silly, but I think it's worth it.",
     "created_at": "2008-03-28T20:36:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2707",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_018671.json:
 }
 ```
 
-Attachment
+Attachment [2707-ncalexan-nf-totally-imaginary-1.patch](tarball://root/attachments/some-uuid/ticket2707/2707-ncalexan-nf-totally-imaginary-1.patch) by craigcitro created at 2008-03-28 20:36:49
 
 This looks good, but I would like to see three things changed:
 
@@ -61,7 +61,7 @@ This looks good, but I would like to see three things changed:
 archive/issue_comments_018672.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2707-ncalexan-nf-totally-imaginary-2.patch](tarball://root/attachments/some-uuid/ticket2707/2707-ncalexan-nf-totally-imaginary-2.patch) by ncalexan created at 2008-03-28 20:42:38",
     "created_at": "2008-03-28T20:42:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2707",
     "type": "issue_comment",
@@ -70,7 +70,7 @@ archive/issue_comments_018672.json:
 }
 ```
 
-Attachment
+Attachment [2707-ncalexan-nf-totally-imaginary-2.patch](tarball://root/attachments/some-uuid/ticket2707/2707-ncalexan-nf-totally-imaginary-2.patch) by ncalexan created at 2008-03-28 20:42:38
 
 
 

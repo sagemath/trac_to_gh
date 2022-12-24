@@ -145,7 +145,7 @@ I don't know how to export a doc bundle (and I've tried many different ways). I'
 archive/issue_comments_015084.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8672.patch](tarball://root/attachments/some-uuid/ticket2274/8672.patch) by wdj created at 2008-02-23 15:12:06",
     "created_at": "2008-02-23T15:12:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2274",
     "type": "issue_comment",
@@ -154,7 +154,7 @@ archive/issue_comments_015084.json:
 }
 ```
 
-Attachment
+Attachment [8672.patch](tarball://root/attachments/some-uuid/ticket2274/8672.patch) by wdj created at 2008-02-23 15:12:06
 
 
 
@@ -183,7 +183,7 @@ Can you tell me if these are acceptable or if they need to be redone?
 archive/issue_comments_015086.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [435.patch](tarball://root/attachments/some-uuid/ticket2274/435.patch) by wdj created at 2008-02-23 15:18:48",
     "created_at": "2008-02-23T15:18:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2274",
     "type": "issue_comment",
@@ -192,7 +192,7 @@ archive/issue_comments_015086.json:
 }
 ```
 
-Attachment
+Attachment [435.patch](tarball://root/attachments/some-uuid/ticket2274/435.patch) by wdj created at 2008-02-23 15:18:48
 
 
 

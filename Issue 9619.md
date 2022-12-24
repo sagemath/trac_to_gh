@@ -352,7 +352,7 @@ ticket 9619: function for the b-chromatic number of a graph (with corrections)
 archive/issue_comments_093182.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated !",
+    "body": "Attachment [trac_9619.patch](tarball://root/attachments/some-uuid/ticket9619/trac_9619.patch) by lsampaio created at 2010-09-28 13:46:01\n\nUpdated !",
     "created_at": "2010-09-28T13:46:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9619",
     "type": "issue_comment",
@@ -361,7 +361,7 @@ archive/issue_comments_093182.json:
 }
 ```
 
-Attachment
+Attachment [trac_9619.patch](tarball://root/attachments/some-uuid/ticket9619/trac_9619.patch) by lsampaio created at 2010-09-28 13:46:01
 
 Updated !
 

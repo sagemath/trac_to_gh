@@ -51,7 +51,7 @@ Changing status from new to needs_review.
 archive/issue_comments_067559.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-7809-simplify-equify.patch](tarball://root/attachments/some-uuid/ticket7809/trac-7809-simplify-equify.patch) by jason created at 2010-01-01 18:55:44",
     "created_at": "2010-01-01T18:55:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7809",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_067559.json:
 }
 ```
 
-Attachment
+Attachment [trac-7809-simplify-equify.patch](tarball://root/attachments/some-uuid/ticket7809/trac-7809-simplify-equify.patch) by jason created at 2010-01-01 18:55:44
 
 
 
@@ -262,7 +262,7 @@ Right, and in the second plot the first variable is on the horizontal axis - see
 archive/issue_comments_067568.json:
 ```json
 {
-    "body": "Attachment\n\nOh, you're right.  It is correct.\n\nWell, I just rewrote the mangle_neg part anyway.  I'll attach a patch in a second.",
+    "body": "Attachment [plot.png](tarball://root/attachments/some-uuid/ticket7809/plot.png) by jason created at 2010-01-04 17:31:38\n\nOh, you're right.  It is correct.\n\nWell, I just rewrote the mangle_neg part anyway.  I'll attach a patch in a second.",
     "created_at": "2010-01-04T17:31:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7809",
     "type": "issue_comment",
@@ -271,7 +271,7 @@ archive/issue_comments_067568.json:
 }
 ```
 
-Attachment
+Attachment [plot.png](tarball://root/attachments/some-uuid/ticket7809/plot.png) by jason created at 2010-01-04 17:31:38
 
 Oh, you're right.  It is correct.
 
@@ -344,7 +344,7 @@ apply on top of previous patch
 archive/issue_comments_067571.json:
 ```json
 {
-    "body": "Attachment\n\nToo bad about mangle_neg, but it was almost more confusing that way than in the code, I think you are right.  \n\nBe sure to include some test where the order of coordinates is switched.  Incidentally, you should also remove the #long time flag from that one test; it only takes one second on my machine, which I don't think counts as a long time any more.  The file takes nearly a half minute to test for me, though!\n\nOther than that, positive review.",
+    "body": "Attachment [trac-7809-simplify-negative-code.patch](tarball://root/attachments/some-uuid/ticket7809/trac-7809-simplify-negative-code.patch) by kcrisman created at 2010-01-04 18:52:04\n\nToo bad about mangle_neg, but it was almost more confusing that way than in the code, I think you are right.  \n\nBe sure to include some test where the order of coordinates is switched.  Incidentally, you should also remove the #long time flag from that one test; it only takes one second on my machine, which I don't think counts as a long time any more.  The file takes nearly a half minute to test for me, though!\n\nOther than that, positive review.",
     "created_at": "2010-01-04T18:52:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7809",
     "type": "issue_comment",
@@ -353,7 +353,7 @@ archive/issue_comments_067571.json:
 }
 ```
 
-Attachment
+Attachment [trac-7809-simplify-negative-code.patch](tarball://root/attachments/some-uuid/ticket7809/trac-7809-simplify-negative-code.patch) by kcrisman created at 2010-01-04 18:52:04
 
 Too bad about mangle_neg, but it was almost more confusing that way than in the code, I think you are right.  
 
@@ -392,7 +392,7 @@ Jason
 archive/issue_comments_067573.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of previous patch",
+    "body": "Attachment [trac-7809-variable-order.patch](tarball://root/attachments/some-uuid/ticket7809/trac-7809-variable-order.patch) by jason created at 2010-01-04 19:19:05\n\napply on top of previous patch",
     "created_at": "2010-01-04T19:19:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7809",
     "type": "issue_comment",
@@ -401,7 +401,7 @@ archive/issue_comments_067573.json:
 }
 ```
 
-Attachment
+Attachment [trac-7809-variable-order.patch](tarball://root/attachments/some-uuid/ticket7809/trac-7809-variable-order.patch) by jason created at 2010-01-04 19:19:05
 
 apply on top of previous patch
 

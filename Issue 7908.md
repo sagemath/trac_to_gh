@@ -196,7 +196,7 @@ In particular, we may need to adjust the timing or make it an option.  A `div`'s
 archive/issue_comments_068762.json:
 ```json
 {
-    "body": "Attachment\n\nRebase on a new patch set.",
+    "body": "Attachment [trac_7908-pub_interact_c11.patch](tarball://root/attachments/some-uuid/ticket7908/trac_7908-pub_interact_c11.patch) by timdumol created at 2010-01-17 23:40:20\n\nRebase on a new patch set.",
     "created_at": "2010-01-17T23:40:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7908",
     "type": "issue_comment",
@@ -205,7 +205,7 @@ archive/issue_comments_068762.json:
 }
 ```
 
-Attachment
+Attachment [trac_7908-pub_interact_c11.patch](tarball://root/attachments/some-uuid/ticket7908/trac_7908-pub_interact_c11.patch) by timdumol created at 2010-01-17 23:40:20
 
 Rebase on a new patch set.
 
@@ -341,7 +341,7 @@ To clarify: I mean that, e.g., the spkg worked for me with 4.3.1.alpha2.  Of cou
 archive/issue_comments_068768.json:
 ```json
 {
-    "body": "Attachment\n\nLatest rebase.",
+    "body": "Attachment [trac_7908-pub_interact_c11(3).patch](tarball://root/attachments/some-uuid/ticket7908/trac_7908-pub_interact_c11(3).patch) by timdumol created at 2010-01-20 00:03:33\n\nLatest rebase.",
     "created_at": "2010-01-20T00:03:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7908",
     "type": "issue_comment",
@@ -350,7 +350,7 @@ archive/issue_comments_068768.json:
 }
 ```
 
-Attachment
+Attachment [trac_7908-pub_interact_c11(3).patch](tarball://root/attachments/some-uuid/ticket7908/trac_7908-pub_interact_c11(3).patch) by timdumol created at 2010-01-20 00:03:33
 
 Latest rebase.
 
@@ -397,7 +397,7 @@ No worries.  I'll definitely take care of it after the next version of SageNB is
 archive/issue_comments_068771.json:
 ```json
 {
-    "body": "Attachment\n\nRebase of patch to patch set given in comment.",
+    "body": "Attachment [trac_7908-pub_interact_c11-rebase.patch](tarball://root/attachments/some-uuid/ticket7908/trac_7908-pub_interact_c11-rebase.patch) by timdumol created at 2010-04-09 12:28:32\n\nRebase of patch to patch set given in comment.",
     "created_at": "2010-04-09T12:28:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7908",
     "type": "issue_comment",
@@ -406,7 +406,7 @@ archive/issue_comments_068771.json:
 }
 ```
 
-Attachment
+Attachment [trac_7908-pub_interact_c11-rebase.patch](tarball://root/attachments/some-uuid/ticket7908/trac_7908-pub_interact_c11-rebase.patch) by timdumol created at 2010-04-09 12:28:32
 
 Rebase of patch to patch set given in comment.
 

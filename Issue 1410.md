@@ -119,7 +119,7 @@ Resolution: fixed
 archive/issue_comments_009100.json:
 ```json
 {
-    "body": "Attachment\n\nMerged in 2.9.alpha1. Doctests and builds fine in Linux and OSX.",
+    "body": "Attachment [cremona-link-binaries-dynamically.patch](tarball://root/attachments/some-uuid/ticket1410/cremona-link-binaries-dynamically.patch) by mabshoff created at 2007-12-06 17:46:59\n\nMerged in 2.9.alpha1. Doctests and builds fine in Linux and OSX.",
     "created_at": "2007-12-06T17:46:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1410",
     "type": "issue_comment",
@@ -128,6 +128,6 @@ archive/issue_comments_009100.json:
 }
 ```
 
-Attachment
+Attachment [cremona-link-binaries-dynamically.patch](tarball://root/attachments/some-uuid/ticket1410/cremona-link-binaries-dynamically.patch) by mabshoff created at 2007-12-06 17:46:59
 
 Merged in 2.9.alpha1. Doctests and builds fine in Linux and OSX.

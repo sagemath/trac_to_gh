@@ -53,7 +53,7 @@ Changing status from new to assigned.
 archive/issue_comments_034202.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-3.1.4-release-notes-draft1.txt](tarball://root/attachments/some-uuid/ticket4567/Sage-3.1.4-release-notes-draft1.txt) by mabshoff created at 2008-11-26 00:33:00",
     "created_at": "2008-11-26T00:33:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4567",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_034202.json:
 }
 ```
 
-Attachment
+Attachment [Sage-3.1.4-release-notes-draft1.txt](tarball://root/attachments/some-uuid/ticket4567/Sage-3.1.4-release-notes-draft1.txt) by mabshoff created at 2008-11-26 00:33:00
 
 
 
@@ -71,7 +71,7 @@ Attachment
 archive/issue_comments_034203.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-3.2-release-notes-draft1.txt](tarball://root/attachments/some-uuid/ticket4567/Sage-3.2-release-notes-draft1.txt) by mabshoff created at 2008-11-26 00:33:51",
     "created_at": "2008-11-26T00:33:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4567",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_034203.json:
 }
 ```
 
-Attachment
+Attachment [Sage-3.2-release-notes-draft1.txt](tarball://root/attachments/some-uuid/ticket4567/Sage-3.2-release-notes-draft1.txt) by mabshoff created at 2008-11-26 00:33:51
 
 
 
@@ -89,7 +89,7 @@ Attachment
 archive/issue_comments_034204.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-3.1.3-release-notes-draft1.txt](tarball://root/attachments/some-uuid/ticket4567/Sage-3.1.3-release-notes-draft1.txt) by mabshoff created at 2008-11-26 02:26:35",
     "created_at": "2008-11-26T02:26:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4567",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_034204.json:
 }
 ```
 
-Attachment
+Attachment [Sage-3.1.3-release-notes-draft1.txt](tarball://root/attachments/some-uuid/ticket4567/Sage-3.1.3-release-notes-draft1.txt) by mabshoff created at 2008-11-26 02:26:35
 
 
 
@@ -107,7 +107,7 @@ Attachment
 archive/issue_comments_034205.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-3.1.4-release-notes-draft2.txt](tarball://root/attachments/some-uuid/ticket4567/Sage-3.1.4-release-notes-draft2.txt) by mabshoff created at 2008-11-26 02:26:50",
     "created_at": "2008-11-26T02:26:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4567",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_034205.json:
 }
 ```
 
-Attachment
+Attachment [Sage-3.1.4-release-notes-draft2.txt](tarball://root/attachments/some-uuid/ticket4567/Sage-3.1.4-release-notes-draft2.txt) by mabshoff created at 2008-11-26 02:26:50
 
 
 
@@ -125,7 +125,7 @@ Attachment
 archive/issue_comments_034206.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-3.1.3-release-notes-draft2.txt](tarball://root/attachments/some-uuid/ticket4567/Sage-3.1.3-release-notes-draft2.txt) by mabshoff created at 2008-11-26 02:27:33",
     "created_at": "2008-11-26T02:27:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4567",
     "type": "issue_comment",
@@ -134,7 +134,7 @@ archive/issue_comments_034206.json:
 }
 ```
 
-Attachment
+Attachment [Sage-3.1.3-release-notes-draft2.txt](tarball://root/attachments/some-uuid/ticket4567/Sage-3.1.3-release-notes-draft2.txt) by mabshoff created at 2008-11-26 02:27:33
 
 
 
@@ -143,7 +143,7 @@ Attachment
 archive/issue_comments_034207.json:
 ```json
 {
-    "body": "Attachment\n\ntrivial typos and consistency issues",
+    "body": "Attachment [Sage-3.2-release-notes-draft2.patch](tarball://root/attachments/some-uuid/ticket4567/Sage-3.2-release-notes-draft2.patch) by mvngu created at 2008-11-29 09:06:27\n\ntrivial typos and consistency issues",
     "created_at": "2008-11-29T09:06:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4567",
     "type": "issue_comment",
@@ -152,7 +152,7 @@ archive/issue_comments_034207.json:
 }
 ```
 
-Attachment
+Attachment [Sage-3.2-release-notes-draft2.patch](tarball://root/attachments/some-uuid/ticket4567/Sage-3.2-release-notes-draft2.patch) by mvngu created at 2008-11-29 09:06:27
 
 trivial typos and consistency issues
 
@@ -217,7 +217,7 @@ fixed trivial typos and consistency issues
 archive/issue_comments_034211.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch **Sage-3.1.4-release-notes-draft2.patch** fixes some trivial typos and consistency issues in the file **Sage-3.1.4-release-notes-draft2.txt**.",
+    "body": "Attachment [Sage-3.1.4-release-notes-draft2.patch](tarball://root/attachments/some-uuid/ticket4567/Sage-3.1.4-release-notes-draft2.patch) by mvngu created at 2008-11-29 10:18:03\n\nThe patch **Sage-3.1.4-release-notes-draft2.patch** fixes some trivial typos and consistency issues in the file **Sage-3.1.4-release-notes-draft2.txt**.",
     "created_at": "2008-11-29T10:18:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4567",
     "type": "issue_comment",
@@ -226,7 +226,7 @@ archive/issue_comments_034211.json:
 }
 ```
 
-Attachment
+Attachment [Sage-3.1.4-release-notes-draft2.patch](tarball://root/attachments/some-uuid/ticket4567/Sage-3.1.4-release-notes-draft2.patch) by mvngu created at 2008-11-29 10:18:03
 
 The patch **Sage-3.1.4-release-notes-draft2.patch** fixes some trivial typos and consistency issues in the file **Sage-3.1.4-release-notes-draft2.txt**.
 
@@ -283,7 +283,7 @@ trivial typos and consistency issues
 archive/issue_comments_034214.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch **Sage-3.1.3-release-notes-draft2.patch** fixes some trivial typos and consistency issues in the release note **Sage-3.1.3-release-notes-draft2.txt**.",
+    "body": "Attachment [Sage-3.1.3-release-notes-draft2.patch](tarball://root/attachments/some-uuid/ticket4567/Sage-3.1.3-release-notes-draft2.patch) by mvngu created at 2008-11-29 10:34:05\n\nThe patch **Sage-3.1.3-release-notes-draft2.patch** fixes some trivial typos and consistency issues in the release note **Sage-3.1.3-release-notes-draft2.txt**.",
     "created_at": "2008-11-29T10:34:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4567",
     "type": "issue_comment",
@@ -292,7 +292,7 @@ archive/issue_comments_034214.json:
 }
 ```
 
-Attachment
+Attachment [Sage-3.1.3-release-notes-draft2.patch](tarball://root/attachments/some-uuid/ticket4567/Sage-3.1.3-release-notes-draft2.patch) by mvngu created at 2008-11-29 10:34:05
 
 The patch **Sage-3.1.3-release-notes-draft2.patch** fixes some trivial typos and consistency issues in the release note **Sage-3.1.3-release-notes-draft2.txt**.
 
@@ -345,7 +345,7 @@ Final Sage 3.2 release notes
 archive/issue_comments_034217.json:
 ```json
 {
-    "body": "Attachment\n\nFinal Sage 3.1.4 release notes",
+    "body": "Attachment [sage-3.1.4.txt](tarball://root/attachments/some-uuid/ticket4567/sage-3.1.4.txt) by mabshoff created at 2008-11-30 05:58:31\n\nFinal Sage 3.1.4 release notes",
     "created_at": "2008-11-30T05:58:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4567",
     "type": "issue_comment",
@@ -354,7 +354,7 @@ archive/issue_comments_034217.json:
 }
 ```
 
-Attachment
+Attachment [sage-3.1.4.txt](tarball://root/attachments/some-uuid/ticket4567/sage-3.1.4.txt) by mabshoff created at 2008-11-30 05:58:31
 
 Final Sage 3.1.4 release notes
 
@@ -365,7 +365,7 @@ Final Sage 3.1.4 release notes
 archive/issue_comments_034218.json:
 ```json
 {
-    "body": "Attachment\n\nFinal Sage 3.1.3 release notes",
+    "body": "Attachment [sage-3.1.3.txt](tarball://root/attachments/some-uuid/ticket4567/sage-3.1.3.txt) by mabshoff created at 2008-11-30 05:59:07\n\nFinal Sage 3.1.3 release notes",
     "created_at": "2008-11-30T05:59:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4567",
     "type": "issue_comment",
@@ -374,7 +374,7 @@ archive/issue_comments_034218.json:
 }
 ```
 
-Attachment
+Attachment [sage-3.1.3.txt](tarball://root/attachments/some-uuid/ticket4567/sage-3.1.3.txt) by mabshoff created at 2008-11-30 05:59:07
 
 Final Sage 3.1.3 release notes
 

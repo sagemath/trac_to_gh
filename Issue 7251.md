@@ -227,7 +227,7 @@ It's all a bit messy, and I've been wanting to redo it for a while (extending it
 archive/issue_comments_060239.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:8 robertwb]:\n> I should explain this a bit more--typically there shouldn't be any issues doing this with Cython classes. With Integers what we do is hijack the allocation/deallocation function slots with our own custom functions that stick already allocated Integers (with initialized parent and mpz_t fields) into a pool on \"deallocation\" and then pull them out whenever a new one is needed. Because Integers are so common, this is actually a significant savings, but does cause issues with subclassing from Python. \n> \n> IntegerWrapper is OK because it statically sets its alloc/dealloc methods to the *original* Integer alloc/dealloc methods (before we manually swap them out for ours). \n\nThanks for the explanations! I have added them to the documentation of IntegerWrapper.\n\nThe latest patch also just modifies IntegerWrapper, without touching Integer.",
+    "body": "Attachment [trac_7251-integer_parent-nt.patch](tarball://root/attachments/some-uuid/ticket7251/trac_7251-integer_parent-nt.patch) by nthiery created at 2009-10-20 21:20:13\n\nReplying to [comment:8 robertwb]:\n> I should explain this a bit more--typically there shouldn't be any issues doing this with Cython classes. With Integers what we do is hijack the allocation/deallocation function slots with our own custom functions that stick already allocated Integers (with initialized parent and mpz_t fields) into a pool on \"deallocation\" and then pull them out whenever a new one is needed. Because Integers are so common, this is actually a significant savings, but does cause issues with subclassing from Python. \n> \n> IntegerWrapper is OK because it statically sets its alloc/dealloc methods to the *original* Integer alloc/dealloc methods (before we manually swap them out for ours). \n\nThanks for the explanations! I have added them to the documentation of IntegerWrapper.\n\nThe latest patch also just modifies IntegerWrapper, without touching Integer.",
     "created_at": "2009-10-20T21:20:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7251",
     "type": "issue_comment",
@@ -236,7 +236,7 @@ archive/issue_comments_060239.json:
 }
 ```
 
-Attachment
+Attachment [trac_7251-integer_parent-nt.patch](tarball://root/attachments/some-uuid/ticket7251/trac_7251-integer_parent-nt.patch) by nthiery created at 2009-10-20 21:20:13
 
 Replying to [comment:8 robertwb]:
 > I should explain this a bit more--typically there shouldn't be any issues doing this with Cython classes. With Integers what we do is hijack the allocation/deallocation function slots with our own custom functions that stick already allocated Integers (with initialized parent and mpz_t fields) into a pool on "deallocation" and then pull them out whenever a new one is needed. Because Integers are so common, this is actually a significant savings, but does cause issues with subclassing from Python. 

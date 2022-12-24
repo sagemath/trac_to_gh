@@ -86,7 +86,7 @@ Applies to 4.0.2.rc0
 archive/issue_comments_050287.json:
 ```json
 {
-    "body": "Attachment\n\nAs I said on sage-devel, this patch does two things: (1) fix the doctest so it does not depend on the ordering of primes_above() output; (2) fix primes_above to it (partially) orders its output as its docstring describes.",
+    "body": "Attachment [trac_6303.patch](tarball://root/attachments/some-uuid/ticket6303/trac_6303.patch) by cremona created at 2009-06-15 19:04:09\n\nAs I said on sage-devel, this patch does two things: (1) fix the doctest so it does not depend on the ordering of primes_above() output; (2) fix primes_above to it (partially) orders its output as its docstring describes.",
     "created_at": "2009-06-15T19:04:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6303",
     "type": "issue_comment",
@@ -95,7 +95,7 @@ archive/issue_comments_050287.json:
 }
 ```
 
-Attachment
+Attachment [trac_6303.patch](tarball://root/attachments/some-uuid/ticket6303/trac_6303.patch) by cremona created at 2009-06-15 19:04:09
 
 As I said on sage-devel, this patch does two things: (1) fix the doctest so it does not depend on the ordering of primes_above() output; (2) fix primes_above to it (partially) orders its output as its docstring describes.
 
@@ -340,7 +340,7 @@ Apologies sine it was my "trivial" patch which caused the problems.  The whole p
 archive/issue_comments_050300.json:
 ```json
 {
-    "body": "Attachment\n\nActually, I just tried this again on two different machines (32 bit OSX and sage.math), and it seems to work fine with the second patch. (Nick tried this on 32 bit OSX and had trouble, but I can't reproduce that.) If someone gets this to fail, let me know what arch/OS.",
+    "body": "Attachment [trac_6303_pt2.patch](tarball://root/attachments/some-uuid/ticket6303/trac_6303_pt2.patch) by craigcitro created at 2009-06-16 08:50:07\n\nActually, I just tried this again on two different machines (32 bit OSX and sage.math), and it seems to work fine with the second patch. (Nick tried this on 32 bit OSX and had trouble, but I can't reproduce that.) If someone gets this to fail, let me know what arch/OS.",
     "created_at": "2009-06-16T08:50:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6303",
     "type": "issue_comment",
@@ -349,7 +349,7 @@ archive/issue_comments_050300.json:
 }
 ```
 
-Attachment
+Attachment [trac_6303_pt2.patch](tarball://root/attachments/some-uuid/ticket6303/trac_6303_pt2.patch) by craigcitro created at 2009-06-16 08:50:07
 
 Actually, I just tried this again on two different machines (32 bit OSX and sage.math), and it seems to work fine with the second patch. (Nick tried this on 32 bit OSX and had trouble, but I can't reproduce that.) If someone gets this to fail, let me know what arch/OS.
 

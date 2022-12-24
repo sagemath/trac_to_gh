@@ -57,7 +57,7 @@ Michael
 archive/issue_comments_007301.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-1183-supportforquo-step1and2.patch](tarball://root/attachments/some-uuid/ticket1183/trac-1183-supportforquo-step1and2.patch) by was created at 2007-12-02 09:48:36",
     "created_at": "2007-12-02T09:48:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1183",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_007301.json:
 }
 ```
 
-Attachment
+Attachment [trac-1183-supportforquo-step1and2.patch](tarball://root/attachments/some-uuid/ticket1183/trac-1183-supportforquo-step1and2.patch) by was created at 2007-12-02 09:48:36
 
 
 
@@ -75,7 +75,7 @@ Attachment
 archive/issue_comments_007302.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-1183-through_step_3.patch](tarball://root/attachments/some-uuid/ticket1183/trac-1183-through_step_3.patch) by was created at 2007-12-02 10:40:03",
     "created_at": "2007-12-02T10:40:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1183",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_007302.json:
 }
 ```
 
-Attachment
+Attachment [trac-1183-through_step_3.patch](tarball://root/attachments/some-uuid/ticket1183/trac-1183-through_step_3.patch) by was created at 2007-12-02 10:40:03
 
 
 
@@ -111,7 +111,7 @@ further work, but still some issues....
 archive/issue_comments_007304.json:
 ```json
 {
-    "body": "Attachment\n\nNOT ready to be released yet.",
+    "body": "Attachment [trac-1138-throughstep4.patch](tarball://root/attachments/some-uuid/ticket1183/trac-1138-throughstep4.patch) by was created at 2007-12-02 13:15:59\n\nNOT ready to be released yet.",
     "created_at": "2007-12-02T13:15:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1183",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_007304.json:
 }
 ```
 
-Attachment
+Attachment [trac-1138-throughstep4.patch](tarball://root/attachments/some-uuid/ticket1183/trac-1138-throughstep4.patch) by was created at 2007-12-02 13:15:59
 
 NOT ready to be released yet.
 
@@ -151,7 +151,7 @@ http://trac.sagemath.org/sage_trac/ticket/1494
 archive/issue_comments_007306.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-1183-step5.patch](tarball://root/attachments/some-uuid/ticket1183/trac-1183-step5.patch) by was created at 2007-12-14 11:43:14",
     "created_at": "2007-12-14T11:43:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1183",
     "type": "issue_comment",
@@ -160,7 +160,7 @@ archive/issue_comments_007306.json:
 }
 ```
 
-Attachment
+Attachment [trac-1183-step5.patch](tarball://root/attachments/some-uuid/ticket1183/trac-1183-step5.patch) by was created at 2007-12-14 11:43:14
 
 
 
@@ -169,7 +169,7 @@ Attachment
 archive/issue_comments_007307.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-1183-step6.patch](tarball://root/attachments/some-uuid/ticket1183/trac-1183-step6.patch) by craigcitro created at 2007-12-15 13:01:48",
     "created_at": "2007-12-15T13:01:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1183",
     "type": "issue_comment",
@@ -178,7 +178,7 @@ archive/issue_comments_007307.json:
 }
 ```
 
-Attachment
+Attachment [trac-1183-step6.patch](tarball://root/attachments/some-uuid/ticket1183/trac-1183-step6.patch) by craigcitro created at 2007-12-15 13:01:48
 
 
 

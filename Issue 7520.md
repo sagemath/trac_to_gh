@@ -281,7 +281,7 @@ Forget about this patch.
 archive/issue_comments_063712.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7520_my_own_review-sl.patch](tarball://root/attachments/some-uuid/ticket7520/trac_7520_my_own_review-sl.patch) by slabbe created at 2010-01-14 14:05:05",
     "created_at": "2010-01-14T14:05:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7520",
     "type": "issue_comment",
@@ -290,7 +290,7 @@ archive/issue_comments_063712.json:
 }
 ```
 
-Attachment
+Attachment [trac_7520_my_own_review-sl.patch](tarball://root/attachments/some-uuid/ticket7520/trac_7520_my_own_review-sl.patch) by slabbe created at 2010-01-14 14:05:05
 
 
 
@@ -355,7 +355,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_063715.json:
 ```json
 {
-    "body": "Attachment\n\nApply only this one.",
+    "body": "Attachment [trac_7520_words_construction_improvements-sl.patch](tarball://root/attachments/some-uuid/ticket7520/trac_7520_words_construction_improvements-sl.patch) by slabbe created at 2010-02-16 22:07:01\n\nApply only this one.",
     "created_at": "2010-02-16T22:07:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7520",
     "type": "issue_comment",
@@ -364,7 +364,7 @@ archive/issue_comments_063715.json:
 }
 ```
 
-Attachment
+Attachment [trac_7520_words_construction_improvements-sl.patch](tarball://root/attachments/some-uuid/ticket7520/trac_7520_words_construction_improvements-sl.patch) by slabbe created at 2010-02-16 22:07:01
 
 Apply only this one.
 

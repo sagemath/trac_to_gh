@@ -56,7 +56,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8576
 archive/issue_comments_077680.json:
 ```json
 {
-    "body": "Attachment\n\nAll test passed for me.",
+    "body": "Attachment [trac_8576-category-QQ-RR-CC-nt.patch](tarball://root/attachments/some-uuid/ticket8576/trac_8576-category-QQ-RR-CC-nt.patch) by nthiery created at 2010-03-22 22:25:55\n\nAll test passed for me.",
     "created_at": "2010-03-22T22:25:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8576",
     "type": "issue_comment",
@@ -65,7 +65,7 @@ archive/issue_comments_077680.json:
 }
 ```
 
-Attachment
+Attachment [trac_8576-category-QQ-RR-CC-nt.patch](tarball://root/attachments/some-uuid/ticket8576/trac_8576-category-QQ-RR-CC-nt.patch) by nthiery created at 2010-03-22 22:25:55
 
 All test passed for me.
 

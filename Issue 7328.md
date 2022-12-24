@@ -43,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7328
 archive/issue_comments_061288.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-7328-latex-float.patch](tarball://root/attachments/some-uuid/ticket7328/trac-7328-latex-float.patch) by jason created at 2009-10-28 00:53:54",
     "created_at": "2009-10-28T00:53:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7328",
     "type": "issue_comment",
@@ -52,7 +52,7 @@ archive/issue_comments_061288.json:
 }
 ```
 
-Attachment
+Attachment [trac-7328-latex-float.patch](tarball://root/attachments/some-uuid/ticket7328/trac-7328-latex-float.patch) by jason created at 2009-10-28 00:53:54
 
 
 

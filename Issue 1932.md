@@ -368,7 +368,7 @@ apply later
 archive/issue_comments_012266.json:
 ```json
 {
-    "body": "Attachment\n\napply now (ignore the other patch with same name)",
+    "body": "Attachment [trac-1932-pt2.patch](tarball://root/attachments/some-uuid/ticket1932/trac-1932-pt2.patch) by AlexGhitza created at 2008-09-23 06:34:05\n\napply now (ignore the other patch with same name)",
     "created_at": "2008-09-23T06:34:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1932",
     "type": "issue_comment",
@@ -377,7 +377,7 @@ archive/issue_comments_012266.json:
 }
 ```
 
-Attachment
+Attachment [trac-1932-pt2.patch](tarball://root/attachments/some-uuid/ticket1932/trac-1932-pt2.patch) by AlexGhitza created at 2008-09-23 06:34:05
 
 apply now (ignore the other patch with same name)
 
@@ -388,7 +388,7 @@ apply now (ignore the other patch with same name)
 archive/issue_comments_012267.json:
 ```json
 {
-    "body": "Attachment\n\npositive review.  i had to tweak craig's first patch a bit (after checking with him) and i tried to just replace it but trac didn't like that.\n\ni checked both the deprecation warning with the first patch, and the fact that the issue is completely resolved with the second patch (yay i can use hg in schemes/elliptic_curves/ again!)\n\nso: apply trac-1932-pt1.2.patch now, and apply trac-1932-pt2.patch when the deprecation period is over.",
+    "body": "Attachment [trac-1932-pt1.2.patch](tarball://root/attachments/some-uuid/ticket1932/trac-1932-pt1.2.patch) by AlexGhitza created at 2008-09-23 06:39:57\n\npositive review.  i had to tweak craig's first patch a bit (after checking with him) and i tried to just replace it but trac didn't like that.\n\ni checked both the deprecation warning with the first patch, and the fact that the issue is completely resolved with the second patch (yay i can use hg in schemes/elliptic_curves/ again!)\n\nso: apply trac-1932-pt1.2.patch now, and apply trac-1932-pt2.patch when the deprecation period is over.",
     "created_at": "2008-09-23T06:39:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1932",
     "type": "issue_comment",
@@ -397,7 +397,7 @@ archive/issue_comments_012267.json:
 }
 ```
 
-Attachment
+Attachment [trac-1932-pt1.2.patch](tarball://root/attachments/some-uuid/ticket1932/trac-1932-pt1.2.patch) by AlexGhitza created at 2008-09-23 06:39:57
 
 positive review.  i had to tweak craig's first patch a bit (after checking with him) and i tried to just replace it but trac didn't like that.
 

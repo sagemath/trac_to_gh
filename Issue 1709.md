@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1709
 archive/issue_comments_010836.json:
 ```json
 {
-    "body": "Attachment\n\nYep, I've been using this and it works great.",
+    "body": "Attachment [jmol_graphs.patch](tarball://root/attachments/some-uuid/ticket1709/jmol_graphs.patch) by robertwb created at 2008-01-08 23:05:26\n\nYep, I've been using this and it works great.",
     "created_at": "2008-01-08T23:05:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1709",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_010836.json:
 }
 ```
 
-Attachment
+Attachment [jmol_graphs.patch](tarball://root/attachments/some-uuid/ticket1709/jmol_graphs.patch) by robertwb created at 2008-01-08 23:05:26
 
 Yep, I've been using this and it works great.
 

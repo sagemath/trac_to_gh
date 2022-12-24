@@ -36,7 +36,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9712
 archive/issue_comments_094656.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated `spkg/standard/deps`.  Based on 4.5.2 + #8316.",
+    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket9712/deps) by mpatel created at 2010-08-09 23:12:38\n\nUpdated `spkg/standard/deps`.  Based on 4.5.2 + #8316.",
     "created_at": "2010-08-09T23:12:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9712",
     "type": "issue_comment",
@@ -45,7 +45,7 @@ archive/issue_comments_094656.json:
 }
 ```
 
-Attachment
+Attachment [deps](tarball://root/attachments/some-uuid/ticket9712/deps) by mpatel created at 2010-08-09 23:12:38
 
 Updated `spkg/standard/deps`.  Based on 4.5.2 + #8316.
 
@@ -56,7 +56,7 @@ Updated `spkg/standard/deps`.  Based on 4.5.2 + #8316.
 archive/issue_comments_094657.json:
 ```json
 {
-    "body": "Attachment\n\nDiff of `spkg/standard/deps` vs. 4.5.2 + #8316.",
+    "body": "Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket9712/deps.diff) by mpatel created at 2010-08-09 23:13:26\n\nDiff of `spkg/standard/deps` vs. 4.5.2 + #8316.",
     "created_at": "2010-08-09T23:13:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9712",
     "type": "issue_comment",
@@ -65,7 +65,7 @@ archive/issue_comments_094657.json:
 }
 ```
 
-Attachment
+Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket9712/deps.diff) by mpatel created at 2010-08-09 23:13:26
 
 Diff of `spkg/standard/deps` vs. 4.5.2 + #8316.
 

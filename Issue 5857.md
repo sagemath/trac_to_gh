@@ -91,7 +91,7 @@ Changing component from number theory to elliptic curves.
 archive/issue_comments_046280.json:
 ```json
 {
-    "body": "Attachment\n\nApplies to 4.1.1",
+    "body": "Attachment [trac_5857-elliptic_curve_iterator.patch](tarball://root/attachments/some-uuid/ticket5857/trac_5857-elliptic_curve_iterator.patch) by cremona created at 2009-08-18 20:52:02\n\nApplies to 4.1.1",
     "created_at": "2009-08-18T20:52:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5857",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_046280.json:
 }
 ```
 
-Attachment
+Attachment [trac_5857-elliptic_curve_iterator.patch](tarball://root/attachments/some-uuid/ticket5857/trac_5857-elliptic_curve_iterator.patch) by cremona created at 2009-08-18 20:52:02
 
 Applies to 4.1.1
 
@@ -183,7 +183,7 @@ Resolution: fixed
 archive/issue_comments_046285.json:
 ```json
 {
-    "body": "Attachment\n\nThe reviewer patch `trac_5857-reviewer.patch` fixes a trivial typo in ReST formatting. Merged patches in this order:\n\n1. `trac_5857-elliptic_curve_iterator.patch`\n2. `trac_5857-reviewer.patch`",
+    "body": "Attachment [trac_5857-reviewer.patch](tarball://root/attachments/some-uuid/ticket5857/trac_5857-reviewer.patch) by mvngu created at 2009-08-23 02:11:00\n\nThe reviewer patch `trac_5857-reviewer.patch` fixes a trivial typo in ReST formatting. Merged patches in this order:\n\n1. `trac_5857-elliptic_curve_iterator.patch`\n2. `trac_5857-reviewer.patch`",
     "created_at": "2009-08-23T02:11:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5857",
     "type": "issue_comment",
@@ -192,7 +192,7 @@ archive/issue_comments_046285.json:
 }
 ```
 
-Attachment
+Attachment [trac_5857-reviewer.patch](tarball://root/attachments/some-uuid/ticket5857/trac_5857-reviewer.patch) by mvngu created at 2009-08-23 02:11:00
 
 The reviewer patch `trac_5857-reviewer.patch` fixes a trivial typo in ReST formatting. Merged patches in this order:
 

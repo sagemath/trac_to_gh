@@ -29,7 +29,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6142
 archive/issue_comments_049040.json:
 ```json
 {
-    "body": "Attachment\n\nThe fix converts underlying data structure (back) to a list.",
+    "body": "Attachment [trac_6142.patch](tarball://root/attachments/some-uuid/ticket6142/trac_6142.patch) by mhansen created at 2009-05-28 04:49:22\n\nThe fix converts underlying data structure (back) to a list.",
     "created_at": "2009-05-28T04:49:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6142",
     "type": "issue_comment",
@@ -38,7 +38,7 @@ archive/issue_comments_049040.json:
 }
 ```
 
-Attachment
+Attachment [trac_6142.patch](tarball://root/attachments/some-uuid/ticket6142/trac_6142.patch) by mhansen created at 2009-05-28 04:49:22
 
 The fix converts underlying data structure (back) to a list.
 

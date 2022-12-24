@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1675
 archive/issue_comments_010628.json:
 ```json
 {
-    "body": "Attachment\n\nWith this and the patch from 1676 applied I get:\nBefore:\n\n```\n==6600== LEAK SUMMARY:\n==6600==    definitely lost: 264 bytes in 24 blocks.\n==6600==      possibly lost: 261,881 bytes in 713 blocks.\n==6600==    still reachable: 39,070,317 bytes in 19,102 blocks.\n==6600==         suppressed: 0 bytes in 0 blocks.\n```\n\nAfter:\n\n```\n==6600== LEAK SUMMARY:\n==6600==    definitely lost: 264 bytes in 24 blocks.\n==6600==      possibly lost: 261,881 bytes in 713 blocks.\n==6600==    still reachable: 39,070,317 bytes in 19,102 blocks.\n==6600==         suppressed: 0 bytes in 0 blocks.\n```\n\nPatch applied to Sage 2.9.2.rc0.\n\nCheers,\n\nMichael",
+    "body": "Attachment [7916.patch](tarball://root/attachments/some-uuid/ticket1675/7916.patch) by mabshoff created at 2008-01-03 22:20:51\n\nWith this and the patch from 1676 applied I get:\nBefore:\n\n```\n==6600== LEAK SUMMARY:\n==6600==    definitely lost: 264 bytes in 24 blocks.\n==6600==      possibly lost: 261,881 bytes in 713 blocks.\n==6600==    still reachable: 39,070,317 bytes in 19,102 blocks.\n==6600==         suppressed: 0 bytes in 0 blocks.\n```\n\nAfter:\n\n```\n==6600== LEAK SUMMARY:\n==6600==    definitely lost: 264 bytes in 24 blocks.\n==6600==      possibly lost: 261,881 bytes in 713 blocks.\n==6600==    still reachable: 39,070,317 bytes in 19,102 blocks.\n==6600==         suppressed: 0 bytes in 0 blocks.\n```\n\nPatch applied to Sage 2.9.2.rc0.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-03T22:20:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1675",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_010628.json:
 }
 ```
 
-Attachment
+Attachment [7916.patch](tarball://root/attachments/some-uuid/ticket1675/7916.patch) by mabshoff created at 2008-01-03 22:20:51
 
 With this and the patch from 1676 applied I get:
 Before:

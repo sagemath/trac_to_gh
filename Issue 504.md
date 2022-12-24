@@ -89,7 +89,7 @@ Changing assignee from was to mhansen.
 archive/issue_comments_002526.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [lie.py](tarball://root/attachments/some-uuid/ticket504/lie.py) by mhansen created at 2007-08-28 23:58:42",
     "created_at": "2007-08-28T23:58:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/504",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_002526.json:
 }
 ```
 
-Attachment
+Attachment [lie.py](tarball://root/attachments/some-uuid/ticket504/lie.py) by mhansen created at 2007-08-28 23:58:42
 
 
 

@@ -52,7 +52,7 @@ Changing status from new to needs_review.
 archive/issue_comments_077412.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8557_is_singular.patch](tarball://root/attachments/some-uuid/ticket8557/trac_8557_is_singular.patch) by cturner created at 2010-03-20 10:17:26",
     "created_at": "2010-03-20T10:17:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8557",
     "type": "issue_comment",
@@ -61,7 +61,7 @@ archive/issue_comments_077412.json:
 }
 ```
 
-Attachment
+Attachment [trac_8557_is_singular.patch](tarball://root/attachments/some-uuid/ticket8557/trac_8557_is_singular.patch) by cturner created at 2010-03-20 10:17:26
 
 
 
@@ -198,7 +198,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_077420.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8557_rebased.patch](tarball://root/attachments/some-uuid/ticket8557/trac_8557_rebased.patch) by jhpalmieri created at 2010-04-18 05:31:00",
     "created_at": "2010-04-18T05:31:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8557",
     "type": "issue_comment",
@@ -207,7 +207,7 @@ archive/issue_comments_077420.json:
 }
 ```
 
-Attachment
+Attachment [trac_8557_rebased.patch](tarball://root/attachments/some-uuid/ticket8557/trac_8557_rebased.patch) by jhpalmieri created at 2010-04-18 05:31:00
 
 
 

@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2709
 archive/issue_comments_018682.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2709-ncalexan-nf-prime-above-1.patch](tarball://root/attachments/some-uuid/ticket2709/2709-ncalexan-nf-prime-above-1.patch) by ncalexan created at 2008-03-28 21:27:00",
     "created_at": "2008-03-28T21:27:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2709",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_018682.json:
 }
 ```
 
-Attachment
+Attachment [2709-ncalexan-nf-prime-above-1.patch](tarball://root/attachments/some-uuid/ticket2709/2709-ncalexan-nf-prime-above-1.patch) by ncalexan created at 2008-03-28 21:27:00
 
 
 
@@ -92,7 +92,7 @@ This was posted to the wrong ticket.
 archive/issue_comments_018685.json:
 ```json
 {
-    "body": "Attachment\n\nAfter discussion on IRC, generalized to lists and made to raise an error on individual failure.  Apply both patches -- sorry for the inconvenience, I couldn't figure out how to cut one patch encompassing both changesets.",
+    "body": "Attachment [2709-ncalexan-nf-prime-above-2.patch](tarball://root/attachments/some-uuid/ticket2709/2709-ncalexan-nf-prime-above-2.patch) by ncalexan created at 2008-03-28 22:15:26\n\nAfter discussion on IRC, generalized to lists and made to raise an error on individual failure.  Apply both patches -- sorry for the inconvenience, I couldn't figure out how to cut one patch encompassing both changesets.",
     "created_at": "2008-03-28T22:15:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2709",
     "type": "issue_comment",
@@ -101,7 +101,7 @@ archive/issue_comments_018685.json:
 }
 ```
 
-Attachment
+Attachment [2709-ncalexan-nf-prime-above-2.patch](tarball://root/attachments/some-uuid/ticket2709/2709-ncalexan-nf-prime-above-2.patch) by ncalexan created at 2008-03-28 22:15:26
 
 After discussion on IRC, generalized to lists and made to raise an error on individual failure.  Apply both patches -- sorry for the inconvenience, I couldn't figure out how to cut one patch encompassing both changesets.
 

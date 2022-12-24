@@ -381,7 +381,7 @@ It should be `.. math::` instead of `.. MATH::`.  Also, it would be good to foll
 archive/issue_comments_064752.json:
 ```json
 {
-    "body": "Attachment\n\nI just updated the path to replace MATH by math :-)",
+    "body": "Attachment [trac_7593.patch](tarball://root/attachments/some-uuid/ticket7593/trac_7593.patch) by ncohen created at 2009-12-15 16:12:01\n\nI just updated the path to replace MATH by math :-)",
     "created_at": "2009-12-15T16:12:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7593",
     "type": "issue_comment",
@@ -390,7 +390,7 @@ archive/issue_comments_064752.json:
 }
 ```
 
-Attachment
+Attachment [trac_7593.patch](tarball://root/attachments/some-uuid/ticket7593/trac_7593.patch) by ncohen created at 2009-12-15 16:12:01
 
 I just updated the path to replace MATH by math :-)
 

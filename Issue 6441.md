@@ -112,7 +112,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6441
 archive/issue_comments_051697.json:
 ```json
 {
-    "body": "Attachment\n\nCode for division-free matrix computations",
+    "body": "Attachment [dfmatrix.patch](tarball://root/attachments/some-uuid/ticket6441/dfmatrix.patch) by spancratz created at 2009-06-28 17:51:57\n\nCode for division-free matrix computations",
     "created_at": "2009-06-28T17:51:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
@@ -121,7 +121,7 @@ archive/issue_comments_051697.json:
 }
 ```
 
-Attachment
+Attachment [dfmatrix.patch](tarball://root/attachments/some-uuid/ticket6441/dfmatrix.patch) by spancratz created at 2009-06-28 17:51:57
 
 Code for division-free matrix computations
 
@@ -408,7 +408,7 @@ Updated patch (20090707)
 archive/issue_comments_051707.json:
 ```json
 {
-    "body": "Attachment\n\nHi Sebastian,\n\n1.  I understand [Se02] a lot better now - well enough to have caught the typo in Algorithm 3.1 (missing minus sign before last term in penultimate line).  That might be a good thing to mention in the docstring near the citation.\n\n2.  So I should be OK with `_charpoly_df()` now.  One question, why did you choose to accumulate for sums using a construction like the following?\n\n\n```\nfor k in xrange(p): \n    F.set_unsafe(p, t, F.get_unsafe(p, t) - A.get_unsafe(k, t) * F.get_unsafe(p-k-1, t))\n```\n\n\nA few lines above you used a temporary variable `s`, which is what I would have expected later.  Just wondering about the rationale?\n\n3.  I'm not sure `_is_certainly_field()` (and its integral domain companion) are the best way around the \"not-implemented\" problem.  I see the problem, and understand the fix, but I'd rather see fewer global functions in Sage and more object methods.  And I am familiar with the linear algebra routines, but less familiar with design decisions for rings.  Would you mind presenting the problem (and perhaps your solution) on sage-devel and see if there is a cleaner way to solve it or some kind of explanation?  Or perhaps your solution is the best idea.  Me, I'd probably just try to handle the exception where it happens rather than make a function that looks so much like `is_field()`, but isn't really the same at all.\n\n\n4.  You've included lots of formatting fixes - which is fantastic.  But Sage likes to have small patches that address one thing.  How hard would it be for you to separate the documentation clean-up from the division-free stuff?  For example, right now, it is hard to notice where your changes to the determinant have affected doctests in unrelated modules, since they are mixed in with lots of other small changes.  You could put the formatting fixes in a new ticket (e.g. \"docstring clean-up for matrices\"), and I could review that patch very quickly.  Then when somebody comes back to look at the df stuff, they can see exactly what changed, while nobody will probably ever look at the dosctring clean-up patch again.  and you'll get credit for two patches.  ;-)\n\n\nAs I've said, this is a great addition to Sage and very carefully done, which is really appreciated.  None of the above will keep me from looking at this some more in the next couple of days, so at your leisure.\n\nRob",
+    "body": "Attachment [dfmatrix20090707.patch](tarball://root/attachments/some-uuid/ticket6441/dfmatrix20090707.patch) by rbeezer created at 2009-08-05 06:47:55\n\nHi Sebastian,\n\n1.  I understand [Se02] a lot better now - well enough to have caught the typo in Algorithm 3.1 (missing minus sign before last term in penultimate line).  That might be a good thing to mention in the docstring near the citation.\n\n2.  So I should be OK with `_charpoly_df()` now.  One question, why did you choose to accumulate for sums using a construction like the following?\n\n\n```\nfor k in xrange(p): \n    F.set_unsafe(p, t, F.get_unsafe(p, t) - A.get_unsafe(k, t) * F.get_unsafe(p-k-1, t))\n```\n\n\nA few lines above you used a temporary variable `s`, which is what I would have expected later.  Just wondering about the rationale?\n\n3.  I'm not sure `_is_certainly_field()` (and its integral domain companion) are the best way around the \"not-implemented\" problem.  I see the problem, and understand the fix, but I'd rather see fewer global functions in Sage and more object methods.  And I am familiar with the linear algebra routines, but less familiar with design decisions for rings.  Would you mind presenting the problem (and perhaps your solution) on sage-devel and see if there is a cleaner way to solve it or some kind of explanation?  Or perhaps your solution is the best idea.  Me, I'd probably just try to handle the exception where it happens rather than make a function that looks so much like `is_field()`, but isn't really the same at all.\n\n\n4.  You've included lots of formatting fixes - which is fantastic.  But Sage likes to have small patches that address one thing.  How hard would it be for you to separate the documentation clean-up from the division-free stuff?  For example, right now, it is hard to notice where your changes to the determinant have affected doctests in unrelated modules, since they are mixed in with lots of other small changes.  You could put the formatting fixes in a new ticket (e.g. \"docstring clean-up for matrices\"), and I could review that patch very quickly.  Then when somebody comes back to look at the df stuff, they can see exactly what changed, while nobody will probably ever look at the dosctring clean-up patch again.  and you'll get credit for two patches.  ;-)\n\n\nAs I've said, this is a great addition to Sage and very carefully done, which is really appreciated.  None of the above will keep me from looking at this some more in the next couple of days, so at your leisure.\n\nRob",
     "created_at": "2009-08-05T06:47:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
@@ -417,7 +417,7 @@ archive/issue_comments_051707.json:
 }
 ```
 
-Attachment
+Attachment [dfmatrix20090707.patch](tarball://root/attachments/some-uuid/ticket6441/dfmatrix20090707.patch) by rbeezer created at 2009-08-05 06:47:55
 
 Hi Sebastian,
 
@@ -646,7 +646,7 @@ Division-free matrix computations (20090821)
 archive/issue_comments_051715.json:
 ```json
 {
-    "body": "Attachment\n\nHi Sebastian,\n\nI've been using this routine to explore some characteristic polynomials with symbolic coefficients that Chris Godsil is interested in for graph theory.  Its great to have this efficient routine available.  It also seems that this latest version is about twice as fast as the first one, so the revisions here are providing a real speed-up.\n\n1.  Documentation warnings:  I only got two warnings from matrix2.pyx.  In the docstring for `adjoint()` the description of `N` as input has its second line aligned relative to the second dash, where it is the text off the first dash that sets the indent location.   In the docstring for `charpoly()` the line that begins `If an algorithm is specified explicitly,...` needs to be pulled left to align properly.\n\nThe warnings you get when you build the documentation tell you the file and the method where it happens, then there is a line number, which is relative to the start of that particular docstring and give the location (roughly - plus/minus a line?).  If you still have a third warning, maybe you can locate it this way to help figure out the problem (or post the location here).\n\n2.  Patch failures:  I had two parts of the patch which failed.  One was the spelling of \"determinant\" in `matrix_space.py` which is no big deal, the other was the first portion of the `determinant()` definition, which is important, and I made that change by hand so I could test the patch.  Is this patch relative to 4.1.1 now?  If not, it should be \"rebased\" to 4.1.1 which I can explain how to do if you are not sure how (or what that is).\n\n3.  Doctest failure:  I'm getting one doctest failure.  In `matrix_space.py` the test `tinv(QQ, sparse=False)` seems to be throwing an `ArithmeticError` rather than a `ValueError` for a non-square matrix.  Presumably this should be easy for you to fix, since there are several other fixes like this already.\n\n4.  Patch name:  the file for the patch should eventually be named  `trac_6441_description.patch` where \"description\" is something really simple like \"df_charpoly\"\n\n5.  Ring and Field checks:  Yes, lets go through the exercise of seeing what sage-devel says about the `is_certainly_xx` methods and go with the consensus there.\n\n6.  Overconvergent Modular Forms:  I know nothing about these, or the need to use the \"hessenberg\" algorithm, so we can defer to David Loeffler's judgment on this one?\n\nAlmost there!\n\nRob",
+    "body": "Attachment [20090821_Charpoly.patch](tarball://root/attachments/some-uuid/ticket6441/20090821_Charpoly.patch) by rbeezer created at 2009-08-22 05:11:51\n\nHi Sebastian,\n\nI've been using this routine to explore some characteristic polynomials with symbolic coefficients that Chris Godsil is interested in for graph theory.  Its great to have this efficient routine available.  It also seems that this latest version is about twice as fast as the first one, so the revisions here are providing a real speed-up.\n\n1.  Documentation warnings:  I only got two warnings from matrix2.pyx.  In the docstring for `adjoint()` the description of `N` as input has its second line aligned relative to the second dash, where it is the text off the first dash that sets the indent location.   In the docstring for `charpoly()` the line that begins `If an algorithm is specified explicitly,...` needs to be pulled left to align properly.\n\nThe warnings you get when you build the documentation tell you the file and the method where it happens, then there is a line number, which is relative to the start of that particular docstring and give the location (roughly - plus/minus a line?).  If you still have a third warning, maybe you can locate it this way to help figure out the problem (or post the location here).\n\n2.  Patch failures:  I had two parts of the patch which failed.  One was the spelling of \"determinant\" in `matrix_space.py` which is no big deal, the other was the first portion of the `determinant()` definition, which is important, and I made that change by hand so I could test the patch.  Is this patch relative to 4.1.1 now?  If not, it should be \"rebased\" to 4.1.1 which I can explain how to do if you are not sure how (or what that is).\n\n3.  Doctest failure:  I'm getting one doctest failure.  In `matrix_space.py` the test `tinv(QQ, sparse=False)` seems to be throwing an `ArithmeticError` rather than a `ValueError` for a non-square matrix.  Presumably this should be easy for you to fix, since there are several other fixes like this already.\n\n4.  Patch name:  the file for the patch should eventually be named  `trac_6441_description.patch` where \"description\" is something really simple like \"df_charpoly\"\n\n5.  Ring and Field checks:  Yes, lets go through the exercise of seeing what sage-devel says about the `is_certainly_xx` methods and go with the consensus there.\n\n6.  Overconvergent Modular Forms:  I know nothing about these, or the need to use the \"hessenberg\" algorithm, so we can defer to David Loeffler's judgment on this one?\n\nAlmost there!\n\nRob",
     "created_at": "2009-08-22T05:11:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
@@ -655,7 +655,7 @@ archive/issue_comments_051715.json:
 }
 ```
 
-Attachment
+Attachment [20090821_Charpoly.patch](tarball://root/attachments/some-uuid/ticket6441/20090821_Charpoly.patch) by rbeezer created at 2009-08-22 05:11:51
 
 Hi Sebastian,
 
@@ -861,7 +861,7 @@ archive/issue_comments_051722.json:
 archive/issue_comments_051723.json:
 ```json
 {
-    "body": "Attachment\n\n20090825 - Including divison-free adjoint, charpoly and det",
+    "body": "Attachment [trac_6441_a_rings.patch](tarball://root/attachments/some-uuid/ticket6441/trac_6441_a_rings.patch) by spancratz created at 2009-08-25 10:18:13\n\n20090825 - Including divison-free adjoint, charpoly and det",
     "created_at": "2009-08-25T10:18:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
@@ -870,7 +870,7 @@ archive/issue_comments_051723.json:
 }
 ```
 
-Attachment
+Attachment [trac_6441_a_rings.patch](tarball://root/attachments/some-uuid/ticket6441/trac_6441_a_rings.patch) by spancratz created at 2009-08-25 10:18:13
 
 20090825 - Including divison-free adjoint, charpoly and det
 
@@ -881,7 +881,7 @@ Attachment
 archive/issue_comments_051724.json:
 ```json
 {
-    "body": "Attachment\n\nHi Sebastian,\n\nWorking in batches - this is just about `is_field()` and friends.\n\n1.  In `sage/algebras/group_algebra.py` you have `self.base_ring.is_integral()` which needs to be completed to `.is_integral_domain()`.\n\n2.  Patch attached - it has a doctest for `is_field` in `sage/rings/ring.pyx` to illustrate the `proof` parameter in action (which I think should be illustrated at least once).  You'll recognize it from your sage-devel post.  Do you have something similar that would work well for `is_integral_domain()`?\n\n3.  When I applied the patch a colon was missing in `sage/rings/quotient_ring.py` after a `try`.  No idea why - since the colon is in your patch.  But I fixed it by hand, and so its in my attached patch, along with the fix for (1) above.  So you might just cut out the doctest by hand to build it in rather than applying the patch.\n\nI'll look at part (b) in the next couple of days.\n\nRob",
+    "body": "Attachment [trac_6441_b_df_charpoly.patch](tarball://root/attachments/some-uuid/ticket6441/trac_6441_b_df_charpoly.patch) by rbeezer created at 2009-08-26 05:55:19\n\nHi Sebastian,\n\nWorking in batches - this is just about `is_field()` and friends.\n\n1.  In `sage/algebras/group_algebra.py` you have `self.base_ring.is_integral()` which needs to be completed to `.is_integral_domain()`.\n\n2.  Patch attached - it has a doctest for `is_field` in `sage/rings/ring.pyx` to illustrate the `proof` parameter in action (which I think should be illustrated at least once).  You'll recognize it from your sage-devel post.  Do you have something similar that would work well for `is_integral_domain()`?\n\n3.  When I applied the patch a colon was missing in `sage/rings/quotient_ring.py` after a `try`.  No idea why - since the colon is in your patch.  But I fixed it by hand, and so its in my attached patch, along with the fix for (1) above.  So you might just cut out the doctest by hand to build it in rather than applying the patch.\n\nI'll look at part (b) in the next couple of days.\n\nRob",
     "created_at": "2009-08-26T05:55:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
@@ -890,7 +890,7 @@ archive/issue_comments_051724.json:
 }
 ```
 
-Attachment
+Attachment [trac_6441_b_df_charpoly.patch](tarball://root/attachments/some-uuid/ticket6441/trac_6441_b_df_charpoly.patch) by rbeezer created at 2009-08-26 05:55:19
 
 Hi Sebastian,
 
@@ -913,7 +913,7 @@ Rob
 archive/issue_comments_051725.json:
 ```json
 {
-    "body": "Attachment\n\nSebastian,\n\nLooks to me like maybe  `trac_6441_b_df_charpoly.patch`  is the wrong file?  It has 3-D arrays in the main routine and lots of minor (unrelated) documentation fixes, though it does fix the integral domain problem from the \"a\" patch.  I liked the looks of `20090821_Charpoly.patch` better, which incorporates Yann's suggestions.  Am I mis-understanding something?\n\nRob",
+    "body": "Attachment [trac_6441_a_reviewer.patch](tarball://root/attachments/some-uuid/ticket6441/trac_6441_a_reviewer.patch) by rbeezer created at 2009-08-27 04:59:43\n\nSebastian,\n\nLooks to me like maybe  `trac_6441_b_df_charpoly.patch`  is the wrong file?  It has 3-D arrays in the main routine and lots of minor (unrelated) documentation fixes, though it does fix the integral domain problem from the \"a\" patch.  I liked the looks of `20090821_Charpoly.patch` better, which incorporates Yann's suggestions.  Am I mis-understanding something?\n\nRob",
     "created_at": "2009-08-27T04:59:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
@@ -922,7 +922,7 @@ archive/issue_comments_051725.json:
 }
 ```
 
-Attachment
+Attachment [trac_6441_a_reviewer.patch](tarball://root/attachments/some-uuid/ticket6441/trac_6441_a_reviewer.patch) by rbeezer created at 2009-08-27 04:59:43
 
 Sebastian,
 
@@ -1020,7 +1020,7 @@ archive/issue_comments_051729.json:
 archive/issue_comments_051730.json:
 ```json
 {
-    "body": "Attachment\n\n20090827 - Including divison-free adjoint, charpoly and det",
+    "body": "Attachment [trac_6441_b_df_charpoly.2.patch](tarball://root/attachments/some-uuid/ticket6441/trac_6441_b_df_charpoly.2.patch) by spancratz created at 2009-08-27 23:36:38\n\n20090827 - Including divison-free adjoint, charpoly and det",
     "created_at": "2009-08-27T23:36:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
@@ -1029,7 +1029,7 @@ archive/issue_comments_051730.json:
 }
 ```
 
-Attachment
+Attachment [trac_6441_b_df_charpoly.2.patch](tarball://root/attachments/some-uuid/ticket6441/trac_6441_b_df_charpoly.2.patch) by spancratz created at 2009-08-27 23:36:38
 
 20090827 - Including divison-free adjoint, charpoly and det
 
@@ -1142,7 +1142,7 @@ archive/issue_comments_051733.json:
 archive/issue_comments_051734.json:
 ```json
 {
-    "body": "Attachment\n\n20090828 - Including divison-free adjoint, charpoly and det",
+    "body": "Attachment [trac_6441_a_rings.3.patch](tarball://root/attachments/some-uuid/ticket6441/trac_6441_a_rings.3.patch) by spancratz created at 2009-08-28 14:13:05\n\n20090828 - Including divison-free adjoint, charpoly and det",
     "created_at": "2009-08-28T14:13:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
@@ -1151,7 +1151,7 @@ archive/issue_comments_051734.json:
 }
 ```
 
-Attachment
+Attachment [trac_6441_a_rings.3.patch](tarball://root/attachments/some-uuid/ticket6441/trac_6441_a_rings.3.patch) by spancratz created at 2009-08-28 14:13:05
 
 20090828 - Including divison-free adjoint, charpoly and det
 
@@ -1162,7 +1162,7 @@ Attachment
 archive/issue_comments_051735.json:
 ```json
 {
-    "body": "Attachment\n\nSebstian,\n\nVery good!  Builds cleanly and passes all tests.  I got two warnings building the documentation, I think these were leftovers from the discussion above.  I've attached a patch that fixes both.\n\nSo this is a positive review, though you need to accept my changes in the documentation patch.  If the changes look OK, then change the subject line to `[with patch, positive review]` and then it'll get merged into the next release.\n\nThis will be a great addition to Sage.  Thanks for your patience with all the details.  Your next patch should be a whole lot easier.\n\nRelease manager:  Apply the two patches from 2009/08/28 (version 3), first the \"a_rings\" and then the \"b_df_charpoly\", then the reviewer patch.\n\nRob",
+    "body": "Attachment [trac_6441_b_df_charpoly.3.patch](tarball://root/attachments/some-uuid/ticket6441/trac_6441_b_df_charpoly.3.patch) by rbeezer created at 2009-08-30 05:26:44\n\nSebstian,\n\nVery good!  Builds cleanly and passes all tests.  I got two warnings building the documentation, I think these were leftovers from the discussion above.  I've attached a patch that fixes both.\n\nSo this is a positive review, though you need to accept my changes in the documentation patch.  If the changes look OK, then change the subject line to `[with patch, positive review]` and then it'll get merged into the next release.\n\nThis will be a great addition to Sage.  Thanks for your patience with all the details.  Your next patch should be a whole lot easier.\n\nRelease manager:  Apply the two patches from 2009/08/28 (version 3), first the \"a_rings\" and then the \"b_df_charpoly\", then the reviewer patch.\n\nRob",
     "created_at": "2009-08-30T05:26:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
@@ -1171,7 +1171,7 @@ archive/issue_comments_051735.json:
 }
 ```
 
-Attachment
+Attachment [trac_6441_b_df_charpoly.3.patch](tarball://root/attachments/some-uuid/ticket6441/trac_6441_b_df_charpoly.3.patch) by rbeezer created at 2009-08-30 05:26:44
 
 Sebstian,
 
@@ -1192,7 +1192,7 @@ Rob
 archive/issue_comments_051736.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6441_reviewer_doctests.patch](tarball://root/attachments/some-uuid/ticket6441/trac_6441_reviewer_doctests.patch) by rbeezer created at 2009-08-30 05:27:30",
     "created_at": "2009-08-30T05:27:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
@@ -1201,7 +1201,7 @@ archive/issue_comments_051736.json:
 }
 ```
 
-Attachment
+Attachment [trac_6441_reviewer_doctests.patch](tarball://root/attachments/some-uuid/ticket6441/trac_6441_reviewer_doctests.patch) by rbeezer created at 2009-08-30 05:27:30
 
 
 
@@ -1336,7 +1336,7 @@ Sebastian
 archive/issue_comments_051742.json:
 ```json
 {
-    "body": "Attachment\n\n20090902 - Including \"is_field\" etc for rings, to facilitate the division-free matrix operations",
+    "body": "Attachment [trac_6441_a_rings_rebase.patch](tarball://root/attachments/some-uuid/ticket6441/trac_6441_a_rings_rebase.patch) by spancratz created at 2009-09-02 17:22:37\n\n20090902 - Including \"is_field\" etc for rings, to facilitate the division-free matrix operations",
     "created_at": "2009-09-02T17:22:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
@@ -1345,7 +1345,7 @@ archive/issue_comments_051742.json:
 }
 ```
 
-Attachment
+Attachment [trac_6441_a_rings_rebase.patch](tarball://root/attachments/some-uuid/ticket6441/trac_6441_a_rings_rebase.patch) by spancratz created at 2009-09-02 17:22:37
 
 20090902 - Including "is_field" etc for rings, to facilitate the division-free matrix operations
 
@@ -1374,7 +1374,7 @@ archive/issue_comments_051743.json:
 archive/issue_comments_051744.json:
 ```json
 {
-    "body": "Attachment\n\nApplying the patches `trac_6441_a_rings_rebase.patch` and `trac_6441_b_df_charpoly_rebase.patch` results in some doctest failures:\n\n```\nsage -t -long devel/sage-main/sage/schemes/elliptic_curves/sha_tate.py\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1/devel/sage-main/sage/schemes/elliptic_curves/sha_tate.py\", line 122:\n    sage: EllipticCurve([0, 0, 1, -79, 342]).sha().an_numerical(prec=10, proof=False) # long time -- about 30 seconds.\nExpected:\n    1.0\nGot:\n    0.95\n**********************************************************************\n1 items had failures:\n   1 of  11 in __main__.example_2\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1/tmp/.doctest_sha_tate.py\n\t [189.8 s]\n\n<SNIP>\n\nsage -t -long devel/sage-main/sage/schemes/elliptic_curves/ell_rational_field.py\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1/devel/sage-main/sage/schemes/elliptic_curves/ell_rational_field.py\", line 2008:\n    sage: EllipticCurve([1, -1, 0, -79, 289]).regulator()  # long time (seconds)\nExpected:\n    1.50434488827528\nGot:\n    1.50434488827530\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1/devel/sage-main/sage/schemes/elliptic_curves/ell_rational_field.py\", line 2010:\n    sage: EllipticCurve([0, 0, 1, -79, 342]).regulator(proof=False)  # long time (seconds)\nExpected:\n    14.790527570131...\nGot:\n    14.7905275701307\n**********************************************************************\n1 items had failures:\n   2 of  10 in __main__.example_36\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1/tmp/.doctest_ell_rational_field.py\n\t [200.7 s]\n```\n\nThis is a known failure:\n\n```\nsage -t -long devel/sage-main/sage/server/simple/twist.py\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1/devel/sage-main/sage/server/simple/twist.py\", line 51:\n    sage: print get_url('http://localhost:%s/simple/compute?session=%s&code=2*2' % (port, session))\nExpected:\n    {\n    \"status\": \"done\",\n    \"files\": [],\n    \"cell_id\": 1\n    }\n    ___S_A_G_E___\n    4\nGot:\n    {\n    \"status\": \"computing\",\n    \"files\": [],\n    \"cell_id\": 1\n    }\n    ___S_A_G_E___\n    <BLANKLINE>\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1/devel/sage-main/sage/server/simple/twist.py\", line 95:\n    sage: print get_url('http://localhost:%s/simple/compute?session=%s&code=%s' % (port, session, urllib.quote(code)))\nExpected:\n    {\n    \"status\": \"done\",\n    \"files\": [\"a.txt\"],\n    \"cell_id\": 3\n    }\n    ___S_A_G_E___\nGot:\n    {\n    \"status\": \"done\",\n    \"files\": [],\n    \"cell_id\": 3\n    }\n    ___S_A_G_E___\n    <BLANKLINE>\n    Traceback (most recent call last):    h = open('a.txt', 'w'); h.write('test'); h.close()\n    NameError: name 'os' is not defined\n    THERE WAS AN ERROR LOADING THE SAGE LIBRARIES.  Try starting Sage from the command line to see what the error is.\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1/devel/sage-main/sage/server/simple/twist.py\", line 103:\n    sage: print get_url('http://localhost:%s/simple/file?session=%s&cell=3&file=a.txt' % (port, session))\nExpected:\n    test\nGot:\n    No such file a.txt in cell 3.\n**********************************************************************\n1 items had failures:\n   3 of  24 in __main__.example_0\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1/tmp/.doctest_twist.py\n\t [30.6 s]\n```\n",
+    "body": "Attachment [trac_6441_b_df_charpoly_rebase.patch](tarball://root/attachments/some-uuid/ticket6441/trac_6441_b_df_charpoly_rebase.patch) by mvngu created at 2009-09-03 22:27:50\n\nApplying the patches `trac_6441_a_rings_rebase.patch` and `trac_6441_b_df_charpoly_rebase.patch` results in some doctest failures:\n\n```\nsage -t -long devel/sage-main/sage/schemes/elliptic_curves/sha_tate.py\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1/devel/sage-main/sage/schemes/elliptic_curves/sha_tate.py\", line 122:\n    sage: EllipticCurve([0, 0, 1, -79, 342]).sha().an_numerical(prec=10, proof=False) # long time -- about 30 seconds.\nExpected:\n    1.0\nGot:\n    0.95\n**********************************************************************\n1 items had failures:\n   1 of  11 in __main__.example_2\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1/tmp/.doctest_sha_tate.py\n\t [189.8 s]\n\n<SNIP>\n\nsage -t -long devel/sage-main/sage/schemes/elliptic_curves/ell_rational_field.py\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1/devel/sage-main/sage/schemes/elliptic_curves/ell_rational_field.py\", line 2008:\n    sage: EllipticCurve([1, -1, 0, -79, 289]).regulator()  # long time (seconds)\nExpected:\n    1.50434488827528\nGot:\n    1.50434488827530\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1/devel/sage-main/sage/schemes/elliptic_curves/ell_rational_field.py\", line 2010:\n    sage: EllipticCurve([0, 0, 1, -79, 342]).regulator(proof=False)  # long time (seconds)\nExpected:\n    14.790527570131...\nGot:\n    14.7905275701307\n**********************************************************************\n1 items had failures:\n   2 of  10 in __main__.example_36\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1/tmp/.doctest_ell_rational_field.py\n\t [200.7 s]\n```\n\nThis is a known failure:\n\n```\nsage -t -long devel/sage-main/sage/server/simple/twist.py\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1/devel/sage-main/sage/server/simple/twist.py\", line 51:\n    sage: print get_url('http://localhost:%s/simple/compute?session=%s&code=2*2' % (port, session))\nExpected:\n    {\n    \"status\": \"done\",\n    \"files\": [],\n    \"cell_id\": 1\n    }\n    ___S_A_G_E___\n    4\nGot:\n    {\n    \"status\": \"computing\",\n    \"files\": [],\n    \"cell_id\": 1\n    }\n    ___S_A_G_E___\n    <BLANKLINE>\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1/devel/sage-main/sage/server/simple/twist.py\", line 95:\n    sage: print get_url('http://localhost:%s/simple/compute?session=%s&code=%s' % (port, session, urllib.quote(code)))\nExpected:\n    {\n    \"status\": \"done\",\n    \"files\": [\"a.txt\"],\n    \"cell_id\": 3\n    }\n    ___S_A_G_E___\nGot:\n    {\n    \"status\": \"done\",\n    \"files\": [],\n    \"cell_id\": 3\n    }\n    ___S_A_G_E___\n    <BLANKLINE>\n    Traceback (most recent call last):    h = open('a.txt', 'w'); h.write('test'); h.close()\n    NameError: name 'os' is not defined\n    THERE WAS AN ERROR LOADING THE SAGE LIBRARIES.  Try starting Sage from the command line to see what the error is.\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1/devel/sage-main/sage/server/simple/twist.py\", line 103:\n    sage: print get_url('http://localhost:%s/simple/file?session=%s&cell=3&file=a.txt' % (port, session))\nExpected:\n    test\nGot:\n    No such file a.txt in cell 3.\n**********************************************************************\n1 items had failures:\n   3 of  24 in __main__.example_0\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1/tmp/.doctest_twist.py\n\t [30.6 s]\n```\n",
     "created_at": "2009-09-03T22:27:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
@@ -1383,7 +1383,7 @@ archive/issue_comments_051744.json:
 }
 ```
 
-Attachment
+Attachment [trac_6441_b_df_charpoly_rebase.patch](tarball://root/attachments/some-uuid/ticket6441/trac_6441_b_df_charpoly_rebase.patch) by mvngu created at 2009-09-03 22:27:50
 
 Applying the patches `trac_6441_a_rings_rebase.patch` and `trac_6441_b_df_charpoly_rebase.patch` results in some doctest failures:
 
@@ -1612,7 +1612,7 @@ archive/issue_comments_051749.json:
 archive/issue_comments_051750.json:
 ```json
 {
-    "body": "Attachment\n\n20090906 - Including divison-free adjoint, charpoly and det",
+    "body": "Attachment [trac_6441_b_df_charpoly_412rebase.patch](tarball://root/attachments/some-uuid/ticket6441/trac_6441_b_df_charpoly_412rebase.patch) by spancratz created at 2009-09-06 21:37:19\n\n20090906 - Including divison-free adjoint, charpoly and det",
     "created_at": "2009-09-06T21:37:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
@@ -1621,7 +1621,7 @@ archive/issue_comments_051750.json:
 }
 ```
 
-Attachment
+Attachment [trac_6441_b_df_charpoly_412rebase.patch](tarball://root/attachments/some-uuid/ticket6441/trac_6441_b_df_charpoly_412rebase.patch) by spancratz created at 2009-09-06 21:37:19
 
 20090906 - Including divison-free adjoint, charpoly and det
 

@@ -327,7 +327,7 @@ prototype patch
 archive/issue_comments_065529.json:
 ```json
 {
-    "body": "Attachment\n\nattachment:trac_7660-inequality_arithmetic.patch comments out a few lines in `_add_`, `_mul_`, etc., methods of symbolic expressions to pass the arithmetic on to GiNaC directly. I don't have time to test this and verify that it returns sensible answers, however we decide to define \"sensible\". Please test, see what doctests fail and try to produce horrific wrong results.\n\nQuite a few doctests and some documentation will have to change to match this new design decision. I'd like to make sure we agree on the behavior before trying to produce a clean patch. Of course, I'd appreciate help with the documentation in any case.",
+    "body": "Attachment [trac_7660-inequality_arithmetic.patch](tarball://root/attachments/some-uuid/ticket7660/trac_7660-inequality_arithmetic.patch) by burcin created at 2013-01-09 11:09:14\n\nattachment:trac_7660-inequality_arithmetic.patch comments out a few lines in `_add_`, `_mul_`, etc., methods of symbolic expressions to pass the arithmetic on to GiNaC directly. I don't have time to test this and verify that it returns sensible answers, however we decide to define \"sensible\". Please test, see what doctests fail and try to produce horrific wrong results.\n\nQuite a few doctests and some documentation will have to change to match this new design decision. I'd like to make sure we agree on the behavior before trying to produce a clean patch. Of course, I'd appreciate help with the documentation in any case.",
     "created_at": "2013-01-09T11:09:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
@@ -336,7 +336,7 @@ archive/issue_comments_065529.json:
 }
 ```
 
-Attachment
+Attachment [trac_7660-inequality_arithmetic.patch](tarball://root/attachments/some-uuid/ticket7660/trac_7660-inequality_arithmetic.patch) by burcin created at 2013-01-09 11:09:14
 
 attachment:trac_7660-inequality_arithmetic.patch comments out a few lines in `_add_`, `_mul_`, etc., methods of symbolic expressions to pass the arithmetic on to GiNaC directly. I don't have time to test this and verify that it returns sensible answers, however we decide to define "sensible". Please test, see what doctests fail and try to produce horrific wrong results.
 

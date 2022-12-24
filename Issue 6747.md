@@ -51,7 +51,7 @@ old plot
 archive/issue_comments_055505.json:
 ```json
 {
-    "body": "Attachment\n\ndesired output",
+    "body": "Attachment [tree.png](tarball://root/attachments/some-uuid/ticket6747/tree.png) by boothby created at 2009-08-14 18:02:51\n\ndesired output",
     "created_at": "2009-08-14T18:02:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6747",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_055505.json:
 }
 ```
 
-Attachment
+Attachment [tree.png](tarball://root/attachments/some-uuid/ticket6747/tree.png) by boothby created at 2009-08-14 18:02:51
 
 desired output
 
@@ -89,7 +89,7 @@ You code looks like it first chooses the center vertex in the graph, then conver
 archive/issue_comments_055507.json:
 ```json
 {
-    "body": "Attachment\n\nUhm... my code does nothing like what you said.  And I didn't post the patch because I hadn't cleaned it up / incorporated it into the GraphPlot class / documented it.  But now I have!",
+    "body": "Attachment [6747_tree_layout.patch](tarball://root/attachments/some-uuid/ticket6747/6747_tree_layout.patch) by boothby created at 2009-08-14 23:24:48\n\nUhm... my code does nothing like what you said.  And I didn't post the patch because I hadn't cleaned it up / incorporated it into the GraphPlot class / documented it.  But now I have!",
     "created_at": "2009-08-14T23:24:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6747",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_055507.json:
 }
 ```
 
-Attachment
+Attachment [6747_tree_layout.patch](tarball://root/attachments/some-uuid/ticket6747/6747_tree_layout.patch) by boothby created at 2009-08-14 23:24:48
 
 Uhm... my code does nothing like what you said.  And I didn't post the patch because I hadn't cleaned it up / incorporated it into the GraphPlot class / documented it.  But now I have!
 
@@ -179,7 +179,7 @@ Nathann
 archive/issue_comments_055511.json:
 ```json
 {
-    "body": "Attachment\n\nThanks much for improving the layout of trees!\n\nPlease have a look at #7004, which also started splitting the layout algorithms in different methods. So we need to decide on a naming convention. \n\nThen I guess this patch can get in, and #7400 be rebased on it.",
+    "body": "Attachment [trac_6747-reviewer.patch](tarball://root/attachments/some-uuid/ticket6747/trac_6747-reviewer.patch) by nthiery created at 2009-10-14 10:53:50\n\nThanks much for improving the layout of trees!\n\nPlease have a look at #7004, which also started splitting the layout algorithms in different methods. So we need to decide on a naming convention. \n\nThen I guess this patch can get in, and #7400 be rebased on it.",
     "created_at": "2009-10-14T10:53:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6747",
     "type": "issue_comment",
@@ -188,7 +188,7 @@ archive/issue_comments_055511.json:
 }
 ```
 
-Attachment
+Attachment [trac_6747-reviewer.patch](tarball://root/attachments/some-uuid/ticket6747/trac_6747-reviewer.patch) by nthiery created at 2009-10-14 10:53:50
 
 Thanks much for improving the layout of trees!
 

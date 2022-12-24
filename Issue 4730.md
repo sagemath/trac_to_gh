@@ -119,7 +119,7 @@ See also the "referee patch" from #4701, which could go somehow with this ticket
 archive/issue_comments_035705.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4730_sage.patch](tarball://root/attachments/some-uuid/ticket4730/trac_4730_sage.patch) by was created at 2008-12-11 04:32:52",
     "created_at": "2008-12-11T04:32:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4730",
     "type": "issue_comment",
@@ -128,7 +128,7 @@ archive/issue_comments_035705.json:
 }
 ```
 
-Attachment
+Attachment [trac_4730_sage.patch](tarball://root/attachments/some-uuid/ticket4730/trac_4730_sage.patch) by was created at 2008-12-11 04:32:52
 
 
 
@@ -155,7 +155,7 @@ This didn't work because in Magma 2.13 one must do Polynomial(Eltseq(a)) rather 
 archive/issue_comments_035707.json:
 ```json
 {
-    "body": "Attachment\n\nPatch looks good to me and doctests pass. trac_4730-doc.patch fixes a slight problem with a Magma doctest in the documentation, so I am CCing Mike Hansen.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_4730-doc.patch](tarball://root/attachments/some-uuid/ticket4730/trac_4730-doc.patch) by mabshoff created at 2008-12-13 11:26:34\n\nPatch looks good to me and doctests pass. trac_4730-doc.patch fixes a slight problem with a Magma doctest in the documentation, so I am CCing Mike Hansen.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-13T11:26:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4730",
     "type": "issue_comment",
@@ -164,7 +164,7 @@ archive/issue_comments_035707.json:
 }
 ```
 
-Attachment
+Attachment [trac_4730-doc.patch](tarball://root/attachments/some-uuid/ticket4730/trac_4730-doc.patch) by mabshoff created at 2008-12-13 11:26:34
 
 Patch looks good to me and doctests pass. trac_4730-doc.patch fixes a slight problem with a Magma doctest in the documentation, so I am CCing Mike Hansen.
 

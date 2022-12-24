@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/840
 archive/issue_comments_005202.json:
 ```json
 {
-    "body": "Attachment\n\nreal root isolation algorithm",
+    "body": "Attachment [real_roots.hg](tarball://root/attachments/some-uuid/ticket840/real_roots.hg) by cwitty created at 2007-10-07 19:44:03\n\nreal root isolation algorithm",
     "created_at": "2007-10-07T19:44:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/840",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_005202.json:
 }
 ```
 
-Attachment
+Attachment [real_roots.hg](tarball://root/attachments/some-uuid/ticket840/real_roots.hg) by cwitty created at 2007-10-07 19:44:03
 
 real root isolation algorithm
 
@@ -51,7 +51,7 @@ real root isolation algorithm
 archive/issue_comments_005203.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [real_roots_v2.hg](tarball://root/attachments/some-uuid/ticket840/real_roots_v2.hg) by cwitty created at 2007-10-10 06:52:08",
     "created_at": "2007-10-10T06:52:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/840",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_005203.json:
 }
 ```
 
-Attachment
+Attachment [real_roots_v2.hg](tarball://root/attachments/some-uuid/ticket840/real_roots_v2.hg) by cwitty created at 2007-10-10 06:52:08
 
 
 

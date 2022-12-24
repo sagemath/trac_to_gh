@@ -36,7 +36,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9006
 archive/issue_comments_083309.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9006_polynomial_eval.patch](tarball://root/attachments/some-uuid/ticket9006/trac_9006_polynomial_eval.patch) by johanbosman created at 2010-05-24 15:58:02",
     "created_at": "2010-05-24T15:58:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9006",
     "type": "issue_comment",
@@ -45,7 +45,7 @@ archive/issue_comments_083309.json:
 }
 ```
 
-Attachment
+Attachment [trac_9006_polynomial_eval.patch](tarball://root/attachments/some-uuid/ticket9006/trac_9006_polynomial_eval.patch) by johanbosman created at 2010-05-24 15:58:02
 
 
 

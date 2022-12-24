@@ -49,7 +49,7 @@ Resolution: fixed
 archive/issue_comments_034468.json:
 ```json
 {
-    "body": "Attachment\n\nMerged in Sage 3.2.1.alpha0",
+    "body": "Attachment [trac-4596.patch](tarball://root/attachments/some-uuid/ticket4596/trac-4596.patch) by mabshoff created at 2008-11-23 08:03:18\n\nMerged in Sage 3.2.1.alpha0",
     "created_at": "2008-11-23T08:03:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4596",
     "type": "issue_comment",
@@ -58,6 +58,6 @@ archive/issue_comments_034468.json:
 }
 ```
 
-Attachment
+Attachment [trac-4596.patch](tarball://root/attachments/some-uuid/ticket4596/trac-4596.patch) by mabshoff created at 2008-11-23 08:03:18
 
 Merged in Sage 3.2.1.alpha0

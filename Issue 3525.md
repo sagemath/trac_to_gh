@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3525
 archive/issue_comments_024850.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [extcode-3525.patch](tarball://root/attachments/some-uuid/ticket3525/extcode-3525.patch) by TimothyClemans created at 2008-06-28 08:06:35",
     "created_at": "2008-06-28T08:06:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3525",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_024850.json:
 }
 ```
 
-Attachment
+Attachment [extcode-3525.patch](tarball://root/attachments/some-uuid/ticket3525/extcode-3525.patch) by TimothyClemans created at 2008-06-28 08:06:35
 
 
 
@@ -103,7 +103,7 @@ Changing status from new to assigned.
 archive/issue_comments_024854.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3525.patch](tarball://root/attachments/some-uuid/ticket3525/sage-3525.patch) by TimothyClemans created at 2008-06-28 08:07:56",
     "created_at": "2008-06-28T08:07:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3525",
     "type": "issue_comment",
@@ -112,7 +112,7 @@ archive/issue_comments_024854.json:
 }
 ```
 
-Attachment
+Attachment [sage-3525.patch](tarball://root/attachments/some-uuid/ticket3525/sage-3525.patch) by TimothyClemans created at 2008-06-28 08:07:56
 
 
 
@@ -224,7 +224,7 @@ used Tidy to deal with point 5 of Harald's criticism
 archive/issue_comments_024858.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [extcode-3525_2.patch](tarball://root/attachments/some-uuid/ticket3525/extcode-3525_2.patch) by was created at 2008-06-28 12:30:57",
     "created_at": "2008-06-28T12:30:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3525",
     "type": "issue_comment",
@@ -233,7 +233,7 @@ archive/issue_comments_024858.json:
 }
 ```
 
-Attachment
+Attachment [extcode-3525_2.patch](tarball://root/attachments/some-uuid/ticket3525/extcode-3525_2.patch) by was created at 2008-06-28 12:30:57
 
 
 
@@ -290,7 +290,7 @@ For a positive review it is enough to do 1, 5, 6.
 archive/issue_comments_024861.json:
 ```json
 {
-    "body": "Attachment\n\nmargins increased blue line under interactive computer programming changed to reflect new margins\n\nBorder for \"Sign up\" and \"Published worksheets\" is now 1px.",
+    "body": "Attachment [extcode-3525_3.patch](tarball://root/attachments/some-uuid/ticket3525/extcode-3525_3.patch) by TimothyClemans created at 2008-06-28 14:52:42\n\nmargins increased blue line under interactive computer programming changed to reflect new margins\n\nBorder for \"Sign up\" and \"Published worksheets\" is now 1px.",
     "created_at": "2008-06-28T14:52:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3525",
     "type": "issue_comment",
@@ -299,7 +299,7 @@ archive/issue_comments_024861.json:
 }
 ```
 
-Attachment
+Attachment [extcode-3525_3.patch](tarball://root/attachments/some-uuid/ticket3525/extcode-3525_3.patch) by TimothyClemans created at 2008-06-28 14:52:42
 
 margins increased blue line under interactive computer programming changed to reflect new margins
 
@@ -312,7 +312,7 @@ Border for "Sign up" and "Published worksheets" is now 1px.
 archive/issue_comments_024862.json:
 ```json
 {
-    "body": "Attachment\n\nforgot to change which images are preloaded (the ones for signup and published worksheets)",
+    "body": "Attachment [extcode-3525_4.patch](tarball://root/attachments/some-uuid/ticket3525/extcode-3525_4.patch) by TimothyClemans created at 2008-06-28 14:58:59\n\nforgot to change which images are preloaded (the ones for signup and published worksheets)",
     "created_at": "2008-06-28T14:58:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3525",
     "type": "issue_comment",
@@ -321,7 +321,7 @@ archive/issue_comments_024862.json:
 }
 ```
 
-Attachment
+Attachment [extcode-3525_4.patch](tarball://root/attachments/some-uuid/ticket3525/extcode-3525_4.patch) by TimothyClemans created at 2008-06-28 14:58:59
 
 forgot to change which images are preloaded (the ones for signup and published worksheets)
 
@@ -377,7 +377,7 @@ extcode_combined.patch is a git style patch that should contained the required i
 archive/issue_comments_024865.json:
 ```json
 {
-    "body": "Attachment\n\nThe combined extcode patch is mess. Various fixes aren't in the patch ...",
+    "body": "Attachment [extcode_combined.patch](tarball://root/attachments/some-uuid/ticket3525/extcode_combined.patch) by TimothyClemans created at 2008-07-07 22:45:15\n\nThe combined extcode patch is mess. Various fixes aren't in the patch ...",
     "created_at": "2008-07-07T22:45:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3525",
     "type": "issue_comment",
@@ -386,7 +386,7 @@ archive/issue_comments_024865.json:
 }
 ```
 
-Attachment
+Attachment [extcode_combined.patch](tarball://root/attachments/some-uuid/ticket3525/extcode_combined.patch) by TimothyClemans created at 2008-07-07 22:45:15
 
 The combined extcode patch is mess. Various fixes aren't in the patch ...
 

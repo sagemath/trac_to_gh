@@ -102,7 +102,7 @@ David, I like your analysis of the situation a lot.  I'm going to do what you su
 archive/issue_comments_047880.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6018.patch](tarball://root/attachments/some-uuid/ticket6018/trac_6018.patch) by was created at 2010-01-19 03:56:40",
     "created_at": "2010-01-19T03:56:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
@@ -111,7 +111,7 @@ archive/issue_comments_047880.json:
 }
 ```
 
-Attachment
+Attachment [trac_6018.patch](tarball://root/attachments/some-uuid/ticket6018/trac_6018.patch) by was created at 2010-01-19 03:56:40
 
 
 
@@ -187,7 +187,7 @@ I suggest a further modification which makes the constructor raise a more intell
 archive/issue_comments_047884.json:
 ```json
 {
-    "body": "Attachment\n\napply over previous patch",
+    "body": "Attachment [trac_6018-2.patch](tarball://root/attachments/some-uuid/ticket6018/trac_6018-2.patch) by davidloeffler created at 2010-01-20 19:21:15\n\napply over previous patch",
     "created_at": "2010-01-20T19:21:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
@@ -196,7 +196,7 @@ archive/issue_comments_047884.json:
 }
 ```
 
-Attachment
+Attachment [trac_6018-2.patch](tarball://root/attachments/some-uuid/ticket6018/trac_6018-2.patch) by davidloeffler created at 2010-01-20 19:21:15
 
 apply over previous patch
 
@@ -289,7 +289,7 @@ I'm a big fan of just removing the `zeta_order` argument -- looking at the code,
 archive/issue_comments_047889.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6018-3.patch](tarball://root/attachments/some-uuid/ticket6018/trac_6018-3.patch) by davidloeffler created at 2010-01-20 22:22:43",
     "created_at": "2010-01-20T22:22:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
@@ -298,7 +298,7 @@ archive/issue_comments_047889.json:
 }
 ```
 
-Attachment
+Attachment [trac_6018-3.patch](tarball://root/attachments/some-uuid/ticket6018/trac_6018-3.patch) by davidloeffler created at 2010-01-20 22:22:43
 
 
 
@@ -379,7 +379,7 @@ apply only this patch
 archive/issue_comments_047894.json:
 ```json
 {
-    "body": "Attachment\n\nHey, why, wait, what happens if you create a zeta such that zeta.multiplicative_order() doesn't work?!\n\n```\nsage: a = CDF(CyclotomicField(5).0)\nsage: G = DirichletGroup(11, base_ring=a.parent(), zeta=a, zeta_order=5)\nsage: G\nGroup of Dirichlet characters of modulus 11 over Complex Double Field\nsage: G.0\n[0.309016994375 + 0.951056516295*I]\nsage: G.0(2)\n0.309016994375 + 0.951056516295*I\n```\n\n\nPlease revert getting rid of zeta_order and make that part of another ticket, keeping in mind that you can't exactly do that, since it is important.  The above doctest should be put in that ticket since this problem wouldn't have happened if I had included the above test.",
+    "body": "Attachment [trac_6018_folded.patch](tarball://root/attachments/some-uuid/ticket6018/trac_6018_folded.patch) by was created at 2010-01-20 23:57:21\n\nHey, why, wait, what happens if you create a zeta such that zeta.multiplicative_order() doesn't work?!\n\n```\nsage: a = CDF(CyclotomicField(5).0)\nsage: G = DirichletGroup(11, base_ring=a.parent(), zeta=a, zeta_order=5)\nsage: G\nGroup of Dirichlet characters of modulus 11 over Complex Double Field\nsage: G.0\n[0.309016994375 + 0.951056516295*I]\nsage: G.0(2)\n0.309016994375 + 0.951056516295*I\n```\n\n\nPlease revert getting rid of zeta_order and make that part of another ticket, keeping in mind that you can't exactly do that, since it is important.  The above doctest should be put in that ticket since this problem wouldn't have happened if I had included the above test.",
     "created_at": "2010-01-20T23:57:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
@@ -388,7 +388,7 @@ archive/issue_comments_047894.json:
 }
 ```
 
-Attachment
+Attachment [trac_6018_folded.patch](tarball://root/attachments/some-uuid/ticket6018/trac_6018_folded.patch) by was created at 2010-01-20 23:57:21
 
 Hey, why, wait, what happens if you create a zeta such that zeta.multiplicative_order() doesn't work?!
 

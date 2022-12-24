@@ -247,7 +247,7 @@ archive/issue_comments_009551.json:
 archive/issue_comments_009552.json:
 ```json
 {
-    "body": "Attachment\n\nmodified the previous posted code so it actually works in the notebook and fixed some bugs",
+    "body": "Attachment [trac_1483_animate.patch](tarball://root/attachments/some-uuid/ticket1483/trac_1483_animate.patch) by was created at 2009-06-30 14:35:29\n\nmodified the previous posted code so it actually works in the notebook and fixed some bugs",
     "created_at": "2009-06-30T14:35:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1483",
     "type": "issue_comment",
@@ -256,7 +256,7 @@ archive/issue_comments_009552.json:
 }
 ```
 
-Attachment
+Attachment [trac_1483_animate.patch](tarball://root/attachments/some-uuid/ticket1483/trac_1483_animate.patch) by was created at 2009-06-30 14:35:29
 
 modified the previous posted code so it actually works in the notebook and fixed some bugs
 
@@ -267,7 +267,7 @@ modified the previous posted code so it actually works in the notebook and fixed
 archive/issue_comments_009553.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_1483-part2.patch](tarball://root/attachments/some-uuid/ticket1483/trac_1483-part2.patch) by was created at 2009-06-30 14:36:14",
     "created_at": "2009-06-30T14:36:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1483",
     "type": "issue_comment",
@@ -276,7 +276,7 @@ archive/issue_comments_009553.json:
 }
 ```
 
-Attachment
+Attachment [trac_1483-part2.patch](tarball://root/attachments/some-uuid/ticket1483/trac_1483-part2.patch) by was created at 2009-06-30 14:36:14
 
 
 

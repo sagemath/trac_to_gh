@@ -62,7 +62,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3359
 archive/issue_comments_023387.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch fixes this issue.",
+    "body": "Attachment [trac_3359.patch](tarball://root/attachments/some-uuid/ticket3359/trac_3359.patch) by malb created at 2008-08-18 13:54:46\n\nThe attached patch fixes this issue.",
     "created_at": "2008-08-18T13:54:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3359",
     "type": "issue_comment",
@@ -71,7 +71,7 @@ archive/issue_comments_023387.json:
 }
 ```
 
-Attachment
+Attachment [trac_3359.patch](tarball://root/attachments/some-uuid/ticket3359/trac_3359.patch) by malb created at 2008-08-18 13:54:46
 
 The attached patch fixes this issue.
 
@@ -100,7 +100,7 @@ was, can I ask you to review the patch since you reported the issue?
 archive/issue_comments_023389.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.  Apply both patches.",
+    "body": "Attachment [trac_3359-2.patch](tarball://root/attachments/some-uuid/ticket3359/trac_3359-2.patch) by mhansen created at 2008-08-26 22:20:44\n\nLooks good to me.  Apply both patches.",
     "created_at": "2008-08-26T22:20:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3359",
     "type": "issue_comment",
@@ -109,7 +109,7 @@ archive/issue_comments_023389.json:
 }
 ```
 
-Attachment
+Attachment [trac_3359-2.patch](tarball://root/attachments/some-uuid/ticket3359/trac_3359-2.patch) by mhansen created at 2008-08-26 22:20:44
 
 Looks good to me.  Apply both patches.
 

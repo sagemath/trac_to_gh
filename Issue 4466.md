@@ -104,7 +104,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4466
 archive/issue_comments_032978.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-4466.patch](tarball://root/attachments/some-uuid/ticket4466/sage-4466.patch) by robertwb created at 2008-11-13 22:53:27",
     "created_at": "2008-11-13T22:53:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4466",
     "type": "issue_comment",
@@ -113,7 +113,7 @@ archive/issue_comments_032978.json:
 }
 ```
 
-Attachment
+Attachment [sage-4466.patch](tarball://root/attachments/some-uuid/ticket4466/sage-4466.patch) by robertwb created at 2008-11-13 22:53:27
 
 
 

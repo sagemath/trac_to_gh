@@ -273,7 +273,7 @@ fixes the problem, but needs an additional patch from Robert.
 archive/issue_comments_013459.json:
 ```json
 {
-    "body": "Attachment\n\nI figured out what the issue is. I will post a fix tonight (after making sure it breaks nothing else, and adding more doctests/consistency checks.)",
+    "body": "Attachment [sage-2079.patch](tarball://root/attachments/some-uuid/ticket2079/sage-2079.patch) by robertwb created at 2008-02-19 04:09:48\n\nI figured out what the issue is. I will post a fix tonight (after making sure it breaks nothing else, and adding more doctests/consistency checks.)",
     "created_at": "2008-02-19T04:09:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2079",
     "type": "issue_comment",
@@ -282,7 +282,7 @@ archive/issue_comments_013459.json:
 }
 ```
 
-Attachment
+Attachment [sage-2079.patch](tarball://root/attachments/some-uuid/ticket2079/sage-2079.patch) by robertwb created at 2008-02-19 04:09:48
 
 I figured out what the issue is. I will post a fix tonight (after making sure it breaks nothing else, and adding more doctests/consistency checks.)
 
@@ -337,7 +337,7 @@ f = (x^2+1) * Mod(1,5)
 archive/issue_comments_013461.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2079-coerce.patch](tarball://root/attachments/some-uuid/ticket2079/2079-coerce.patch) by robertwb created at 2008-02-19 10:26:36",
     "created_at": "2008-02-19T10:26:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2079",
     "type": "issue_comment",
@@ -346,7 +346,7 @@ archive/issue_comments_013461.json:
 }
 ```
 
-Attachment
+Attachment [2079-coerce.patch](tarball://root/attachments/some-uuid/ticket2079/2079-coerce.patch) by robertwb created at 2008-02-19 10:26:36
 
 
 
@@ -355,7 +355,7 @@ Attachment
 archive/issue_comments_013462.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2079-coerce3.patch](tarball://root/attachments/some-uuid/ticket2079/2079-coerce3.patch) by robertwb created at 2008-02-19 10:28:14",
     "created_at": "2008-02-19T10:28:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2079",
     "type": "issue_comment",
@@ -364,7 +364,7 @@ archive/issue_comments_013462.json:
 }
 ```
 
-Attachment
+Attachment [2079-coerce3.patch](tarball://root/attachments/some-uuid/ticket2079/2079-coerce3.patch) by robertwb created at 2008-02-19 10:28:14
 
 
 

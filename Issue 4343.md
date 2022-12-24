@@ -63,7 +63,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4343
 archive/issue_comments_031914.json:
 ```json
 {
-    "body": "Attachment\n\nDoctests in calculus.py pass.",
+    "body": "Attachment [gradient.patch](tarball://root/attachments/some-uuid/ticket4343/gradient.patch) by jason created at 2008-10-23 00:32:44\n\nDoctests in calculus.py pass.",
     "created_at": "2008-10-23T00:32:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4343",
     "type": "issue_comment",
@@ -72,7 +72,7 @@ archive/issue_comments_031914.json:
 }
 ```
 
-Attachment
+Attachment [gradient.patch](tarball://root/attachments/some-uuid/ticket4343/gradient.patch) by jason created at 2008-10-23 00:32:44
 
 Doctests in calculus.py pass.
 

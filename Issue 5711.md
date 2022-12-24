@@ -87,7 +87,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5711
 archive/issue_comments_044610.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [enhanced-typesetting-of-symbolic-functions.patch](tarball://root/attachments/some-uuid/ticket5711/enhanced-typesetting-of-symbolic-functions.patch) by gmhossain created at 2009-04-08 11:55:50",
     "created_at": "2009-04-08T11:55:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5711",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_044610.json:
 }
 ```
 
-Attachment
+Attachment [enhanced-typesetting-of-symbolic-functions.patch](tarball://root/attachments/some-uuid/ticket5711/enhanced-typesetting-of-symbolic-functions.patch) by gmhossain created at 2009-04-08 11:55:50
 
 
 
@@ -234,7 +234,7 @@ Should be easy enough to fix.
 archive/issue_comments_044616.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [enhanced-symbolic-typesetting-rebased_to_4.0.1.patch](tarball://root/attachments/some-uuid/ticket5711/enhanced-symbolic-typesetting-rebased_to_4.0.1.patch) by gmhossain created at 2009-06-13 00:14:49",
     "created_at": "2009-06-13T00:14:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5711",
     "type": "issue_comment",
@@ -243,7 +243,7 @@ archive/issue_comments_044616.json:
 }
 ```
 
-Attachment
+Attachment [enhanced-symbolic-typesetting-rebased_to_4.0.1.patch](tarball://root/attachments/some-uuid/ticket5711/enhanced-symbolic-typesetting-rebased_to_4.0.1.patch) by gmhossain created at 2009-06-13 00:14:49
 
 
 
@@ -553,7 +553,7 @@ I will remove latex_function_name() and use latex_variable_name() instead.
 archive/issue_comments_044622.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5711-enhanced-symbolic-typesetting-rebased_to_4.0.2.patch](tarball://root/attachments/some-uuid/ticket5711/trac_5711-enhanced-symbolic-typesetting-rebased_to_4.0.2.patch) by gmhossain created at 2009-06-23 11:33:05",
     "created_at": "2009-06-23T11:33:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5711",
     "type": "issue_comment",
@@ -562,7 +562,7 @@ archive/issue_comments_044622.json:
 }
 ```
 
-Attachment
+Attachment [trac_5711-enhanced-symbolic-typesetting-rebased_to_4.0.2.patch](tarball://root/attachments/some-uuid/ticket5711/trac_5711-enhanced-symbolic-typesetting-rebased_to_4.0.2.patch) by gmhossain created at 2009-06-23 11:33:05
 
 
 
@@ -589,7 +589,7 @@ Burcin: I have updated the patch as you suggested. List of changes is given in t
 archive/issue_comments_044624.json:
 ```json
 {
-    "body": "Attachment\n\ndoctest fixes",
+    "body": "Attachment [trac_5711-doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket5711/trac_5711-doctest_fixes.patch) by burcin created at 2009-06-23 13:28:06\n\ndoctest fixes",
     "created_at": "2009-06-23T13:28:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5711",
     "type": "issue_comment",
@@ -598,7 +598,7 @@ archive/issue_comments_044624.json:
 }
 ```
 
-Attachment
+Attachment [trac_5711-doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket5711/trac_5711-doctest_fixes.patch) by burcin created at 2009-06-23 13:28:06
 
 doctest fixes
 

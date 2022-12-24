@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3093
 archive/issue_comments_021353.json:
 ```json
 {
-    "body": "Attachment\n\nPatch is correct, hence positive review. Slipped into lcalc-20080205.p0.spkg without bumping the release number.\n\nCheers,\n\nMichael",
+    "body": "Attachment [lcal-pari.patch](tarball://root/attachments/some-uuid/ticket3093/lcal-pari.patch) by mabshoff created at 2008-05-03 14:29:13\n\nPatch is correct, hence positive review. Slipped into lcalc-20080205.p0.spkg without bumping the release number.\n\nCheers,\n\nMichael",
     "created_at": "2008-05-03T14:29:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3093",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_021353.json:
 }
 ```
 
-Attachment
+Attachment [lcal-pari.patch](tarball://root/attachments/some-uuid/ticket3093/lcal-pari.patch) by mabshoff created at 2008-05-03 14:29:13
 
 Patch is correct, hence positive review. Slipped into lcalc-20080205.p0.spkg without bumping the release number.
 

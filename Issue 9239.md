@@ -49,7 +49,7 @@ Changing status from new to needs_review.
 archive/issue_comments_086891.json:
 ```json
 {
-    "body": "Attachment\n\nNote: the doctest where duplicated from the `.copy()` method so I didn't kept them.\n\nPlease review",
+    "body": "Attachment [trac_9239-matrix_copy_remove-fh.patch](tarball://root/attachments/some-uuid/ticket9239/trac_9239-matrix_copy_remove-fh.patch) by hivert created at 2010-06-15 00:15:12\n\nNote: the doctest where duplicated from the `.copy()` method so I didn't kept them.\n\nPlease review",
     "created_at": "2010-06-15T00:15:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9239",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_086891.json:
 }
 ```
 
-Attachment
+Attachment [trac_9239-matrix_copy_remove-fh.patch](tarball://root/attachments/some-uuid/ticket9239/trac_9239-matrix_copy_remove-fh.patch) by hivert created at 2010-06-15 00:15:12
 
 Note: the doctest where duplicated from the `.copy()` method so I didn't kept them.
 

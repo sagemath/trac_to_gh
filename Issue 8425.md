@@ -94,7 +94,7 @@ Their functionality is more-or-less mutually exclusive, but they all add functio
 archive/issue_comments_075529.json:
 ```json
 {
-    "body": "Attachment\n\napply after #8331, #8329, and #8421",
+    "body": "Attachment [trac_8425-bipartite-add-edge.patch](tarball://root/attachments/some-uuid/ticket8425/trac_8425-bipartite-add-edge.patch) by rhinton created at 2010-03-05 02:04:36\n\napply after #8331, #8329, and #8421",
     "created_at": "2010-03-05T02:04:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8425",
     "type": "issue_comment",
@@ -103,7 +103,7 @@ archive/issue_comments_075529.json:
 }
 ```
 
-Attachment
+Attachment [trac_8425-bipartite-add-edge.patch](tarball://root/attachments/some-uuid/ticket8425/trac_8425-bipartite-add-edge.patch) by rhinton created at 2010-03-05 02:04:36
 
 apply after #8331, #8329, and #8421
 

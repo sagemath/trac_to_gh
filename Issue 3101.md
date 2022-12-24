@@ -78,7 +78,7 @@ Changing status from new to assigned.
 archive/issue_comments_021417.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_extcode_3101.patch](tarball://root/attachments/some-uuid/ticket3101/trac_extcode_3101.patch) by gfurnish created at 2008-05-04 07:45:51",
     "created_at": "2008-05-04T07:45:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3101",
     "type": "issue_comment",
@@ -87,7 +87,7 @@ archive/issue_comments_021417.json:
 }
 ```
 
-Attachment
+Attachment [trac_extcode_3101.patch](tarball://root/attachments/some-uuid/ticket3101/trac_extcode_3101.patch) by gfurnish created at 2008-05-04 07:45:51
 
 
 

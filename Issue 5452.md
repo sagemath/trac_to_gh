@@ -88,7 +88,7 @@ Changing status from new to assigned.
 archive/issue_comments_042219.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5452.patch](tarball://root/attachments/some-uuid/ticket5452/trac_5452.patch) by slabbe created at 2009-03-07 17:18:36",
     "created_at": "2009-03-07T17:18:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5452",
     "type": "issue_comment",
@@ -97,7 +97,7 @@ archive/issue_comments_042219.json:
 }
 ```
 
-Attachment
+Attachment [trac_5452.patch](tarball://root/attachments/some-uuid/ticket5452/trac_5452.patch) by slabbe created at 2009-03-07 17:18:36
 
 
 
@@ -124,7 +124,7 @@ Must apply trac_5452.patch first.
 archive/issue_comments_042221.json:
 ```json
 {
-    "body": "Attachment\n\nHaven't tried testing since I'm about to get on a plane, but this patch looks straightforward enough to me.\n\n+1",
+    "body": "Attachment [trac_5452_space_fix.patch](tarball://root/attachments/some-uuid/ticket5452/trac_5452_space_fix.patch) by rlm created at 2009-03-16 13:55:43\n\nHaven't tried testing since I'm about to get on a plane, but this patch looks straightforward enough to me.\n\n+1",
     "created_at": "2009-03-16T13:55:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5452",
     "type": "issue_comment",
@@ -133,7 +133,7 @@ archive/issue_comments_042221.json:
 }
 ```
 
-Attachment
+Attachment [trac_5452_space_fix.patch](tarball://root/attachments/some-uuid/ticket5452/trac_5452_space_fix.patch) by rlm created at 2009-03-16 13:55:43
 
 Haven't tried testing since I'm about to get on a plane, but this patch looks straightforward enough to me.
 

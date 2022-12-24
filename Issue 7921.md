@@ -144,7 +144,7 @@ Robert: please let me know if I should open a separate ticket for the second pat
 archive/issue_comments_068917.json:
 ```json
 {
-    "body": "Attachment\n\nPatch 2: stronger category tests",
+    "body": "Attachment [categories_testsuite-nt.patch](tarball://root/attachments/some-uuid/ticket7921/categories_testsuite-nt.patch) by nthiery created at 2010-01-17 20:59:52\n\nPatch 2: stronger category tests",
     "created_at": "2010-01-17T20:59:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7921",
     "type": "issue_comment",
@@ -153,7 +153,7 @@ archive/issue_comments_068917.json:
 }
 ```
 
-Attachment
+Attachment [categories_testsuite-nt.patch](tarball://root/attachments/some-uuid/ticket7921/categories_testsuite-nt.patch) by nthiery created at 2010-01-17 20:59:52
 
 Patch 2: stronger category tests
 
@@ -457,7 +457,7 @@ Resolution: fixed
 archive/issue_comments_068930.json:
 ```json
 {
-    "body": "Attachment\n\nMerged [trac_7921-categories_for_extension_types-nt.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7921/trac_7921-categories_for_extension_types-nt.patch).",
+    "body": "Attachment [trac_7921-categories_for_extension_types-nt.patch](tarball://root/attachments/some-uuid/ticket7921/trac_7921-categories_for_extension_types-nt.patch) by mvngu created at 2010-01-22 22:57:33\n\nMerged [trac_7921-categories_for_extension_types-nt.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7921/trac_7921-categories_for_extension_types-nt.patch).",
     "created_at": "2010-01-22T22:57:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7921",
     "type": "issue_comment",
@@ -466,7 +466,7 @@ archive/issue_comments_068930.json:
 }
 ```
 
-Attachment
+Attachment [trac_7921-categories_for_extension_types-nt.patch](tarball://root/attachments/some-uuid/ticket7921/trac_7921-categories_for_extension_types-nt.patch) by mvngu created at 2010-01-22 22:57:33
 
 Merged [trac_7921-categories_for_extension_types-nt.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7921/trac_7921-categories_for_extension_types-nt.patch).
 

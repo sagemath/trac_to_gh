@@ -312,7 +312,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_085552.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9163_expect_expr.patch](tarball://root/attachments/some-uuid/ticket9163/9163_expect_expr.patch) by jdemeyer created at 2010-12-16 20:37:07",
     "created_at": "2010-12-16T20:37:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9163",
     "type": "issue_comment",
@@ -321,7 +321,7 @@ archive/issue_comments_085552.json:
 }
 ```
 
-Attachment
+Attachment [9163_expect_expr.patch](tarball://root/attachments/some-uuid/ticket9163/9163_expect_expr.patch) by jdemeyer created at 2010-12-16 20:37:07
 
 
 

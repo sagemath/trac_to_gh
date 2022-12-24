@@ -79,7 +79,7 @@ Michael
 archive/issue_comments_044532.json:
 ```json
 {
-    "body": "Attachment\n\nApply this patch first",
+    "body": "Attachment [trac_5697-functional.patch](tarball://root/attachments/some-uuid/ticket5697/trac_5697-functional.patch) by mabshoff created at 2009-04-19 03:50:35\n\nApply this patch first",
     "created_at": "2009-04-19T03:50:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5697",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_044532.json:
 }
 ```
 
-Attachment
+Attachment [trac_5697-functional.patch](tarball://root/attachments/some-uuid/ticket5697/trac_5697-functional.patch) by mabshoff created at 2009-04-19 03:50:35
 
 Apply this patch first
 

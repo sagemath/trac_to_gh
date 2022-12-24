@@ -65,7 +65,7 @@ another duplicate of part of #1941.
 archive/issue_comments_074188.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch trac_8331-... fixes the bug, adds a doctest, and slightly improves the ReST markup for the constructor.  (I am certainly not an expert.)",
+    "body": "Attachment [trac_8331-bipartite-dict-initializer.patch](tarball://root/attachments/some-uuid/ticket8331/trac_8331-bipartite-dict-initializer.patch) by rhinton created at 2010-02-23 01:29:33\n\nThe patch trac_8331-... fixes the bug, adds a doctest, and slightly improves the ReST markup for the constructor.  (I am certainly not an expert.)",
     "created_at": "2010-02-23T01:29:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8331",
     "type": "issue_comment",
@@ -74,7 +74,7 @@ archive/issue_comments_074188.json:
 }
 ```
 
-Attachment
+Attachment [trac_8331-bipartite-dict-initializer.patch](tarball://root/attachments/some-uuid/ticket8331/trac_8331-bipartite-dict-initializer.patch) by rhinton created at 2010-02-23 01:29:33
 
 The patch trac_8331-... fixes the bug, adds a doctest, and slightly improves the ReST markup for the constructor.  (I am certainly not an expert.)
 

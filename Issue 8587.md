@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8587
 archive/issue_comments_077767.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [vdim_warning.patch](tarball://root/attachments/some-uuid/ticket8587/vdim_warning.patch) by malb created at 2010-03-23 13:47:28",
     "created_at": "2010-03-23T13:47:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8587",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_077767.json:
 }
 ```
 
-Attachment
+Attachment [vdim_warning.patch](tarball://root/attachments/some-uuid/ticket8587/vdim_warning.patch) by malb created at 2010-03-23 13:47:28
 
 
 
@@ -125,7 +125,7 @@ apply only this patch
 archive/issue_comments_077772.json:
 ```json
 {
-    "body": "Attachment\n\nattachment:trac_8587-vdim_warning.patch adds the ticket number in the log message.",
+    "body": "Attachment [trac_8587-vdim_warning.patch](tarball://root/attachments/some-uuid/ticket8587/trac_8587-vdim_warning.patch) by burcin created at 2010-05-04 21:33:26\n\nattachment:trac_8587-vdim_warning.patch adds the ticket number in the log message.",
     "created_at": "2010-05-04T21:33:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8587",
     "type": "issue_comment",
@@ -134,7 +134,7 @@ archive/issue_comments_077772.json:
 }
 ```
 
-Attachment
+Attachment [trac_8587-vdim_warning.patch](tarball://root/attachments/some-uuid/ticket8587/trac_8587-vdim_warning.patch) by burcin created at 2010-05-04 21:33:26
 
 attachment:trac_8587-vdim_warning.patch adds the ticket number in the log message.
 

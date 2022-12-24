@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5489
 archive/issue_comments_042616.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4ti2.sage](tarball://root/attachments/some-uuid/ticket5489/4ti2.sage) by mhansen created at 2009-03-11 18:05:25",
     "created_at": "2009-03-11T18:05:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5489",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_042616.json:
 }
 ```
 
-Attachment
+Attachment [4ti2.sage](tarball://root/attachments/some-uuid/ticket5489/4ti2.sage) by mhansen created at 2009-03-11 18:05:25
 
 
 
@@ -49,7 +49,7 @@ Attachment
 archive/issue_comments_042617.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4ti2_interface.patch](tarball://root/attachments/some-uuid/ticket5489/4ti2_interface.patch) by broune created at 2009-06-26 16:42:10",
     "created_at": "2009-06-26T16:42:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5489",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_042617.json:
 }
 ```
 
-Attachment
+Attachment [4ti2_interface.patch](tarball://root/attachments/some-uuid/ticket5489/4ti2_interface.patch) by broune created at 2009-06-26 16:42:10
 
 
 
@@ -208,7 +208,7 @@ Although it does not have a positive review (please someone take a look!) please
 archive/issue_comments_042624.json:
 ```json
 {
-    "body": "Attachment\n\nCumulative patch",
+    "body": "Attachment [trac_5489_4ti2_interface.patch](tarball://root/attachments/some-uuid/ticket5489/trac_5489_4ti2_interface.patch) by mhampton created at 2011-03-29 03:24:58\n\nCumulative patch",
     "created_at": "2011-03-29T03:24:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5489",
     "type": "issue_comment",
@@ -217,7 +217,7 @@ archive/issue_comments_042624.json:
 }
 ```
 
-Attachment
+Attachment [trac_5489_4ti2_interface.patch](tarball://root/attachments/some-uuid/ticket5489/trac_5489_4ti2_interface.patch) by mhampton created at 2011-03-29 03:24:58
 
 Cumulative patch
 
@@ -311,7 +311,7 @@ Please fill in your real name as Author.
 archive/issue_comments_042628.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5489_4ti2_interface-reviewer.patch](tarball://root/attachments/some-uuid/ticket5489/trac_5489_4ti2_interface-reviewer.patch) by chapoton created at 2012-08-26 19:23:34",
     "created_at": "2012-08-26T19:23:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5489",
     "type": "issue_comment",
@@ -320,7 +320,7 @@ archive/issue_comments_042628.json:
 }
 ```
 
-Attachment
+Attachment [trac_5489_4ti2_interface-reviewer.patch](tarball://root/attachments/some-uuid/ticket5489/trac_5489_4ti2_interface-reviewer.patch) by chapoton created at 2012-08-26 19:23:34
 
 
 

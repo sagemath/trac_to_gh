@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6489
 archive/issue_comments_052468.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [R_bridge.c](tarball://root/attachments/some-uuid/ticket6489/R_bridge.c) by sjanke created at 2009-07-08 20:28:27",
     "created_at": "2009-07-08T20:28:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6489",
     "type": "issue_comment",
@@ -50,7 +50,7 @@ archive/issue_comments_052468.json:
 }
 ```
 
-Attachment
+Attachment [R_bridge.c](tarball://root/attachments/some-uuid/ticket6489/R_bridge.c) by sjanke created at 2009-07-08 20:28:27
 
 
 
@@ -59,7 +59,7 @@ Attachment
 archive/issue_comments_052469.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [statistics.py](tarball://root/attachments/some-uuid/ticket6489/statistics.py) by sjanke created at 2009-07-08 20:33:33",
     "created_at": "2009-07-08T20:33:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6489",
     "type": "issue_comment",
@@ -68,7 +68,7 @@ archive/issue_comments_052469.json:
 }
 ```
 
-Attachment
+Attachment [statistics.py](tarball://root/attachments/some-uuid/ticket6489/statistics.py) by sjanke created at 2009-07-08 20:33:33
 
 
 
@@ -77,7 +77,7 @@ Attachment
 archive/issue_comments_052470.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [callTypedArgs_spec](tarball://root/attachments/some-uuid/ticket6489/callTypedArgs_spec) by sjanke created at 2009-07-08 20:36:00",
     "created_at": "2009-07-08T20:36:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6489",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_052470.json:
 }
 ```
 
-Attachment
+Attachment [callTypedArgs_spec](tarball://root/attachments/some-uuid/ticket6489/callTypedArgs_spec) by sjanke created at 2009-07-08 20:36:00
 
 
 

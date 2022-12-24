@@ -99,7 +99,7 @@ The attached patch fixes this (probably in a too naive way).
 archive/issue_comments_006763.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ell_gf2_random.patch](tarball://root/attachments/some-uuid/ticket1119/ell_gf2_random.patch) by mabshoff created at 2007-11-11 23:39:20",
     "created_at": "2007-11-11T23:39:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1119",
     "type": "issue_comment",
@@ -108,7 +108,7 @@ archive/issue_comments_006763.json:
 }
 ```
 
-Attachment
+Attachment [ell_gf2_random.patch](tarball://root/attachments/some-uuid/ticket1119/ell_gf2_random.patch) by mabshoff created at 2007-11-11 23:39:20
 
 
 
@@ -117,7 +117,7 @@ Attachment
 archive/issue_comments_006764.json:
 ```json
 {
-    "body": "Attachment\n\nGiven E defined by f(x,y) = 0, the patch assumed that there were always exactly zero or two values of y for every x, which is not true. I've attached a patch fixing this issue. \n\nAlso, in the characteristic > 2 case, it never considered the 'negative' square-root. I changed this too. \n\nOtherwise, the patch looks good.",
+    "body": "Attachment [ell_gf2_random2.patch](tarball://root/attachments/some-uuid/ticket1119/ell_gf2_random2.patch) by robertwb created at 2007-11-29 22:03:37\n\nGiven E defined by f(x,y) = 0, the patch assumed that there were always exactly zero or two values of y for every x, which is not true. I've attached a patch fixing this issue. \n\nAlso, in the characteristic > 2 case, it never considered the 'negative' square-root. I changed this too. \n\nOtherwise, the patch looks good.",
     "created_at": "2007-11-29T22:03:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1119",
     "type": "issue_comment",
@@ -126,7 +126,7 @@ archive/issue_comments_006764.json:
 }
 ```
 
-Attachment
+Attachment [ell_gf2_random2.patch](tarball://root/attachments/some-uuid/ticket1119/ell_gf2_random2.patch) by robertwb created at 2007-11-29 22:03:37
 
 Given E defined by f(x,y) = 0, the patch assumed that there were always exactly zero or two values of y for every x, which is not true. I've attached a patch fixing this issue. 
 

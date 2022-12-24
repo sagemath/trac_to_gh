@@ -115,7 +115,7 @@ rebased for sage-3.4.1.rc3
 archive/issue_comments_043382.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [region_plot.patch](tarball://root/attachments/some-uuid/ticket5567/region_plot.patch) by whuss created at 2009-04-17 14:55:20",
     "created_at": "2009-04-17T14:55:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5567",
     "type": "issue_comment",
@@ -124,7 +124,7 @@ archive/issue_comments_043382.json:
 }
 ```
 
-Attachment
+Attachment [region_plot.patch](tarball://root/attachments/some-uuid/ticket5567/region_plot.patch) by whuss created at 2009-04-17 14:55:20
 
 
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1180
 archive/issue_comments_007284.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [7335.patch](tarball://root/attachments/some-uuid/ticket1180/7335.patch) by zimmerma created at 2007-11-15 20:17:57",
     "created_at": "2007-11-15T20:17:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1180",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_007284.json:
 }
 ```
 
-Attachment
+Attachment [7335.patch](tarball://root/attachments/some-uuid/ticket1180/7335.patch) by zimmerma created at 2007-11-15 20:17:57
 
 
 
@@ -49,7 +49,7 @@ Attachment
 archive/issue_comments_007285.json:
 ```json
 {
-    "body": "Attachment\n\n2nd typo (7335.2 should be ignored)",
+    "body": "Attachment [7335.2.patch](tarball://root/attachments/some-uuid/ticket1180/7335.2.patch) by zimmerma created at 2007-11-15 20:23:17\n\n2nd typo (7335.2 should be ignored)",
     "created_at": "2007-11-15T20:23:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1180",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_007285.json:
 }
 ```
 
-Attachment
+Attachment [7335.2.patch](tarball://root/attachments/some-uuid/ticket1180/7335.2.patch) by zimmerma created at 2007-11-15 20:23:17
 
 2nd typo (7335.2 should be ignored)
 
@@ -69,7 +69,7 @@ Attachment
 archive/issue_comments_007286.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.\n\nCheers,\n\nMichael",
+    "body": "Attachment [7336.patch](tarball://root/attachments/some-uuid/ticket1180/7336.patch) by mabshoff created at 2007-11-18 06:00:15\n\nLooks good to me.\n\nCheers,\n\nMichael",
     "created_at": "2007-11-18T06:00:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1180",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_007286.json:
 }
 ```
 
-Attachment
+Attachment [7336.patch](tarball://root/attachments/some-uuid/ticket1180/7336.patch) by mabshoff created at 2007-11-18 06:00:15
 
 Looks good to me.
 

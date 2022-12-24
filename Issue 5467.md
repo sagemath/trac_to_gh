@@ -101,7 +101,7 @@ Must be applied after the first patch.
 archive/issue_comments_042437.json:
 ```json
 {
-    "body": "Attachment\n\nI managed to make a trivial mistake in this trivial fix - one of the test lines was not marked with #optional. Now it is.",
+    "body": "Attachment [5467_long_input_to_Macaulay2_second_part.patch](tarball://root/attachments/some-uuid/ticket5467/5467_long_input_to_Macaulay2_second_part.patch) by novoselt created at 2010-01-09 20:42:36\n\nI managed to make a trivial mistake in this trivial fix - one of the test lines was not marked with #optional. Now it is.",
     "created_at": "2010-01-09T20:42:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5467",
     "type": "issue_comment",
@@ -110,7 +110,7 @@ archive/issue_comments_042437.json:
 }
 ```
 
-Attachment
+Attachment [5467_long_input_to_Macaulay2_second_part.patch](tarball://root/attachments/some-uuid/ticket5467/5467_long_input_to_Macaulay2_second_part.patch) by novoselt created at 2010-01-09 20:42:36
 
 I managed to make a trivial mistake in this trivial fix - one of the test lines was not marked with #optional. Now it is.
 
@@ -157,7 +157,7 @@ Only this patch should be applied.
 archive/issue_comments_042440.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5467_long_input_to_Macaulay2.patch](tarball://root/attachments/some-uuid/ticket5467/5467_long_input_to_Macaulay2.patch) by novoselt created at 2010-02-07 17:02:33",
     "created_at": "2010-02-07T17:02:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5467",
     "type": "issue_comment",
@@ -166,7 +166,7 @@ archive/issue_comments_042440.json:
 }
 ```
 
-Attachment
+Attachment [5467_long_input_to_Macaulay2.patch](tarball://root/attachments/some-uuid/ticket5467/5467_long_input_to_Macaulay2.patch) by novoselt created at 2010-02-07 17:02:33
 
 
 

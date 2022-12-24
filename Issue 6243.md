@@ -138,7 +138,7 @@ doctests for the fix
 archive/issue_comments_049856.json:
 ```json
 {
-    "body": "Attachment\n\nI have a fix for this in my local pynac tree. I took a shortcut and changed the fderivative hashes to include the parameters.\n\nI'll make a new pynac package with fixes for some other bugs available soon.",
+    "body": "Attachment [trac_6243-fderivative_hash.patch](tarball://root/attachments/some-uuid/ticket6243/trac_6243-fderivative_hash.patch) by burcin created at 2009-07-31 21:25:17\n\nI have a fix for this in my local pynac tree. I took a shortcut and changed the fderivative hashes to include the parameters.\n\nI'll make a new pynac package with fixes for some other bugs available soon.",
     "created_at": "2009-07-31T21:25:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6243",
     "type": "issue_comment",
@@ -147,7 +147,7 @@ archive/issue_comments_049856.json:
 }
 ```
 
-Attachment
+Attachment [trac_6243-fderivative_hash.patch](tarball://root/attachments/some-uuid/ticket6243/trac_6243-fderivative_hash.patch) by burcin created at 2009-07-31 21:25:17
 
 I have a fix for this in my local pynac tree. I took a shortcut and changed the fderivative hashes to include the parameters.
 

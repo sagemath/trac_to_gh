@@ -239,7 +239,7 @@ Cheers,
 archive/issue_comments_031802.json:
 ```json
 {
-    "body": "Attachment\n\nFixes a bug that occurs when an attached .pyx file is changed",
+    "body": "Attachment [attach_bugfix.patch](tarball://root/attachments/some-uuid/ticket4336/attach_bugfix.patch) by SimonKing created at 2008-10-22 19:27:02\n\nFixes a bug that occurs when an attached .pyx file is changed",
     "created_at": "2008-10-22T19:27:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4336",
     "type": "issue_comment",
@@ -248,7 +248,7 @@ archive/issue_comments_031802.json:
 }
 ```
 
-Attachment
+Attachment [attach_bugfix.patch](tarball://root/attachments/some-uuid/ticket4336/attach_bugfix.patch) by SimonKing created at 2008-10-22 19:27:02
 
 Fixes a bug that occurs when an attached .pyx file is changed
 

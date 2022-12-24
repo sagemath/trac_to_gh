@@ -98,7 +98,7 @@ teragon-2:notebook was$ sage -startuptime |grep notebook
 archive/issue_comments_025207.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3568.patch](tarball://root/attachments/some-uuid/ticket3568/sage-3568.patch) by was created at 2008-07-06 20:08:58",
     "created_at": "2008-07-06T20:08:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3568",
     "type": "issue_comment",
@@ -107,7 +107,7 @@ archive/issue_comments_025207.json:
 }
 ```
 
-Attachment
+Attachment [sage-3568.patch](tarball://root/attachments/some-uuid/ticket3568/sage-3568.patch) by was created at 2008-07-06 20:08:58
 
 
 
@@ -156,7 +156,7 @@ makes a sample notebook; this will be even cleaner actually. I'll attach this so
 archive/issue_comments_025210.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3568-part2.patch](tarball://root/attachments/some-uuid/ticket3568/sage-3568-part2.patch) by was created at 2008-07-06 23:24:28",
     "created_at": "2008-07-06T23:24:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3568",
     "type": "issue_comment",
@@ -165,7 +165,7 @@ archive/issue_comments_025210.json:
 }
 ```
 
-Attachment
+Attachment [sage-3568-part2.patch](tarball://root/attachments/some-uuid/ticket3568/sage-3568-part2.patch) by was created at 2008-07-06 23:24:28
 
 
 
@@ -174,7 +174,7 @@ Attachment
 archive/issue_comments_025211.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3568-was-notebook-startup-and-test-object.patch](tarball://root/attachments/some-uuid/ticket3568/3568-was-notebook-startup-and-test-object.patch) by ncalexan created at 2008-08-10 21:32:49",
     "created_at": "2008-08-10T21:32:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3568",
     "type": "issue_comment",
@@ -183,7 +183,7 @@ archive/issue_comments_025211.json:
 }
 ```
 
-Attachment
+Attachment [3568-was-notebook-startup-and-test-object.patch](tarball://root/attachments/some-uuid/ticket3568/3568-was-notebook-startup-and-test-object.patch) by ncalexan created at 2008-08-10 21:32:49
 
 
 

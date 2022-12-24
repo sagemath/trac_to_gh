@@ -301,7 +301,7 @@ The attached patch fixes the output format for version to be more consistent wit
 archive/issue_comments_047639.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:6 was]:\n> It also programs around the issue with help files, which is *not* fixed in Singular-3-1-0... and I'm not at all clear *why* it is considered a bug in Singular by the people in the thread above.  \n\nNote that I originally thought that the issue with help files is a problem of Singular, and clearly a bug: I mean, you ask for the version number and get an error; you ask again, and it works! It had reported it upstream.\n\nBut then the impression came across (see my last post) that it only occurs in Singular if it is built by Sage. In this case, it could be a problem with the patched version in Sage, which might be worth another ticket.\n\nCheers,\nSimon",
+    "body": "Attachment [trac_5994.patch](tarball://root/attachments/some-uuid/ticket5994/trac_5994.patch) by SimonKing created at 2010-01-18 13:15:46\n\nReplying to [comment:6 was]:\n> It also programs around the issue with help files, which is *not* fixed in Singular-3-1-0... and I'm not at all clear *why* it is considered a bug in Singular by the people in the thread above.  \n\nNote that I originally thought that the issue with help files is a problem of Singular, and clearly a bug: I mean, you ask for the version number and get an error; you ask again, and it works! It had reported it upstream.\n\nBut then the impression came across (see my last post) that it only occurs in Singular if it is built by Sage. In this case, it could be a problem with the patched version in Sage, which might be worth another ticket.\n\nCheers,\nSimon",
     "created_at": "2010-01-18T13:15:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
@@ -310,7 +310,7 @@ archive/issue_comments_047639.json:
 }
 ```
 
-Attachment
+Attachment [trac_5994.patch](tarball://root/attachments/some-uuid/ticket5994/trac_5994.patch) by SimonKing created at 2010-01-18 13:15:46
 
 Replying to [comment:6 was]:
 > It also programs around the issue with help files, which is *not* fixed in Singular-3-1-0... and I'm not at all clear *why* it is considered a bug in Singular by the people in the thread above.  

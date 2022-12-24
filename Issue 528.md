@@ -49,7 +49,7 @@ related: #331
 archive/issue_comments_002688.json:
 ```json
 {
-    "body": "Attachment\n\nmoves Polynomial_integer_dense to cython",
+    "body": "Attachment [poly-int-dense1.hg](tarball://root/attachments/some-uuid/ticket528/poly-int-dense1.hg) by dmharvey created at 2007-09-11 15:01:23\n\nmoves Polynomial_integer_dense to cython",
     "created_at": "2007-09-11T15:01:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/528",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_002688.json:
 }
 ```
 
-Attachment
+Attachment [poly-int-dense1.hg](tarball://root/attachments/some-uuid/ticket528/poly-int-dense1.hg) by dmharvey created at 2007-09-11 15:01:23
 
 moves Polynomial_integer_dense to cython
 
@@ -229,7 +229,7 @@ hmmm that last patch is currently in conflict. Please ignore it for now; I'm goi
 archive/issue_comments_002696.json:
 ```json
 {
-    "body": "Attachment\n\nhopefully better now",
+    "body": "Attachment [patch-528.hg](tarball://root/attachments/some-uuid/ticket528/patch-528.hg) by dmharvey created at 2007-10-01 01:55:25\n\nhopefully better now",
     "created_at": "2007-10-01T01:55:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/528",
     "type": "issue_comment",
@@ -238,7 +238,7 @@ archive/issue_comments_002696.json:
 }
 ```
 
-Attachment
+Attachment [patch-528.hg](tarball://root/attachments/some-uuid/ticket528/patch-528.hg) by dmharvey created at 2007-10-01 01:55:25
 
 hopefully better now
 

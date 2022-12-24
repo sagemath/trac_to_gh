@@ -166,7 +166,7 @@ Here's a patch.  This doesn't actually change `nonzero_positions` (except for ad
 archive/issue_comments_039755.json:
 ```json
 {
-    "body": "Attachment\n\nInstead of tests like `if a != 0:`, it should use `if a:`.   The code is a little uglier and harder to understand, but it's much faster; these are approximations of the sorts of timing differences you would see:\n\n```\nsage: foo = QQbar(3)\nsage: timeit('bool(foo)')\n625 loops, best of 3: 1.24 \u00b5s per loop\nsage: timeit('foo != 0r')\n625 loops, best of 3: 100 \u00b5s per loop\nsage: foo = 3\nsage: timeit('bool(foo)')\n625 loops, best of 3: 286 ns per loop\nsage: timeit('foo != 0r')\n625 loops, best of 3: 4.2 \u00b5s per loop\n```\n\n\n(Also, in the places where you deleted \"A dense a sparse\", is it worth adding a note that says something like \"(This is true even if one is sparse and the other is dense.)\"?)",
+    "body": "Attachment [5184.patch](tarball://root/attachments/some-uuid/ticket5184/5184.patch) by cwitty created at 2009-02-20 02:47:24\n\nInstead of tests like `if a != 0:`, it should use `if a:`.   The code is a little uglier and harder to understand, but it's much faster; these are approximations of the sorts of timing differences you would see:\n\n```\nsage: foo = QQbar(3)\nsage: timeit('bool(foo)')\n625 loops, best of 3: 1.24 \u00b5s per loop\nsage: timeit('foo != 0r')\n625 loops, best of 3: 100 \u00b5s per loop\nsage: foo = 3\nsage: timeit('bool(foo)')\n625 loops, best of 3: 286 ns per loop\nsage: timeit('foo != 0r')\n625 loops, best of 3: 4.2 \u00b5s per loop\n```\n\n\n(Also, in the places where you deleted \"A dense a sparse\", is it worth adding a note that says something like \"(This is true even if one is sparse and the other is dense.)\"?)",
     "created_at": "2009-02-20T02:47:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5184",
     "type": "issue_comment",
@@ -175,7 +175,7 @@ archive/issue_comments_039755.json:
 }
 ```
 
-Attachment
+Attachment [5184.patch](tarball://root/attachments/some-uuid/ticket5184/5184.patch) by cwitty created at 2009-02-20 02:47:24
 
 Instead of tests like `if a != 0:`, it should use `if a:`.   The code is a little uglier and harder to understand, but it's much faster; these are approximations of the sorts of timing differences you would see:
 
@@ -220,7 +220,7 @@ only apply this one
 archive/issue_comments_039757.json:
 ```json
 {
-    "body": "Attachment\n\nI changed the tests from `a != 0` to `a`, and I put in a comment about sparse vs. dense -- actually, I put it in twice.  I had to rebase the patch, also (and it will probably have to be rebased after the ReST changes, too...).",
+    "body": "Attachment [5184-new.patch](tarball://root/attachments/some-uuid/ticket5184/5184-new.patch) by jhpalmieri created at 2009-02-21 17:26:21\n\nI changed the tests from `a != 0` to `a`, and I put in a comment about sparse vs. dense -- actually, I put it in twice.  I had to rebase the patch, also (and it will probably have to be rebased after the ReST changes, too...).",
     "created_at": "2009-02-21T17:26:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5184",
     "type": "issue_comment",
@@ -229,7 +229,7 @@ archive/issue_comments_039757.json:
 }
 ```
 
-Attachment
+Attachment [5184-new.patch](tarball://root/attachments/some-uuid/ticket5184/5184-new.patch) by jhpalmieri created at 2009-02-21 17:26:21
 
 I changed the tests from `a != 0` to `a`, and I put in a comment about sparse vs. dense -- actually, I put it in twice.  I had to rebase the patch, also (and it will probably have to be rebased after the ReST changes, too...).
 
@@ -258,7 +258,7 @@ rebased against 3.4.alpha0; apply only this patch
 archive/issue_comments_039759.json:
 ```json
 {
-    "body": "Attachment\n\nHere's a new patch, rebased against 3.4.alpha0.",
+    "body": "Attachment [5184-rebased.patch](tarball://root/attachments/some-uuid/ticket5184/5184-rebased.patch) by jhpalmieri created at 2009-02-25 23:58:29\n\nHere's a new patch, rebased against 3.4.alpha0.",
     "created_at": "2009-02-25T23:58:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5184",
     "type": "issue_comment",
@@ -267,7 +267,7 @@ archive/issue_comments_039759.json:
 }
 ```
 
-Attachment
+Attachment [5184-rebased.patch](tarball://root/attachments/some-uuid/ticket5184/5184-rebased.patch) by jhpalmieri created at 2009-02-25 23:58:29
 
 Here's a new patch, rebased against 3.4.alpha0.
 

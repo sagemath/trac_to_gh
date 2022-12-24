@@ -64,7 +64,7 @@ the fix
 archive/issue_comments_006295.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [singclap_factorise_immut.hg](tarball://root/attachments/some-uuid/ticket1030/singclap_factorise_immut.hg) by mabshoff created at 2007-10-29 20:36:04",
     "created_at": "2007-10-29T20:36:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1030",
     "type": "issue_comment",
@@ -73,7 +73,7 @@ archive/issue_comments_006295.json:
 }
 ```
 
-Attachment
+Attachment [singclap_factorise_immut.hg](tarball://root/attachments/some-uuid/ticket1030/singclap_factorise_immut.hg) by mabshoff created at 2007-10-29 20:36:04
 
 
 

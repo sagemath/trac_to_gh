@@ -53,7 +53,7 @@ Changing status from new to assigned.
 archive/issue_comments_006282.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-2.10.1.alpha2-fix-omega-tool-for-valgrind-3.3.0.patch](tarball://root/attachments/some-uuid/ticket1028/Sage-2.10.1.alpha2-fix-omega-tool-for-valgrind-3.3.0.patch) by mabshoff created at 2008-01-25 20:51:55",
     "created_at": "2008-01-25T20:51:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1028",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_006282.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.10.1.alpha2-fix-omega-tool-for-valgrind-3.3.0.patch](tarball://root/attachments/some-uuid/ticket1028/Sage-2.10.1.alpha2-fix-omega-tool-for-valgrind-3.3.0.patch) by mabshoff created at 2008-01-25 20:51:55
 
 
 

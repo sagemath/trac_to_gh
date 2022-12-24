@@ -63,7 +63,7 @@ This is fine. I am working hard to fix this in ticket #3600.
 archive/issue_comments_025756.json:
 ```json
 {
-    "body": "Attachment\n\nThis seems to work correctly with #4745 applied, so after discussion with mabshoff perhaps we should reenable the doctest after #4745 to see if we can get it to fail again.",
+    "body": "Attachment [trac_3643.patch](tarball://root/attachments/some-uuid/ticket3643/trac_3643.patch) by gfurnish created at 2008-12-09 18:43:35\n\nThis seems to work correctly with #4745 applied, so after discussion with mabshoff perhaps we should reenable the doctest after #4745 to see if we can get it to fail again.",
     "created_at": "2008-12-09T18:43:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3643",
     "type": "issue_comment",
@@ -72,7 +72,7 @@ archive/issue_comments_025756.json:
 }
 ```
 
-Attachment
+Attachment [trac_3643.patch](tarball://root/attachments/some-uuid/ticket3643/trac_3643.patch) by gfurnish created at 2008-12-09 18:43:35
 
 This seems to work correctly with #4745 applied, so after discussion with mabshoff perhaps we should reenable the doctest after #4745 to see if we can get it to fail again.
 

@@ -55,7 +55,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/567
 archive/issue_comments_002942.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ode_solver_jacobian.patch](tarball://root/attachments/some-uuid/ticket567/ode_solver_jacobian.patch) by was created at 2007-09-05 05:02:08",
     "created_at": "2007-09-05T05:02:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/567",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_002942.json:
 }
 ```
 
-Attachment
+Attachment [ode_solver_jacobian.patch](tarball://root/attachments/some-uuid/ticket567/ode_solver_jacobian.patch) by was created at 2007-09-05 05:02:08
 
 
 

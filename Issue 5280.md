@@ -53,7 +53,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5280
 archive/issue_comments_040523.json:
 ```json
 {
-    "body": "Attachment\n\nI implemented `__cmp__` for poset elements, which deals with these problems.\n\nThe patch depends on #5918.",
+    "body": "Attachment [trac_5280.patch](tarball://root/attachments/some-uuid/ticket5280/trac_5280.patch) by saliola created at 2009-04-30 09:19:23\n\nI implemented `__cmp__` for poset elements, which deals with these problems.\n\nThe patch depends on #5918.",
     "created_at": "2009-04-30T09:19:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5280",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_040523.json:
 }
 ```
 
-Attachment
+Attachment [trac_5280.patch](tarball://root/attachments/some-uuid/ticket5280/trac_5280.patch) by saliola created at 2009-04-30 09:19:23
 
 I implemented `__cmp__` for poset elements, which deals with these problems.
 
@@ -111,7 +111,7 @@ I'd also give this a positive review, but I have to ask: why is `__cmp__` return
 archive/issue_comments_040526.json:
 ```json
 {
-    "body": "Attachment\n\nI've added a patch which fixes some doc formatting.",
+    "body": "Attachment [trac_5280-review.patch](tarball://root/attachments/some-uuid/ticket5280/trac_5280-review.patch) by mhansen created at 2009-06-20 01:16:54\n\nI've added a patch which fixes some doc formatting.",
     "created_at": "2009-06-20T01:16:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5280",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_040526.json:
 }
 ```
 
-Attachment
+Attachment [trac_5280-review.patch](tarball://root/attachments/some-uuid/ticket5280/trac_5280-review.patch) by mhansen created at 2009-06-20 01:16:54
 
 I've added a patch which fixes some doc formatting.
 
@@ -332,7 +332,7 @@ Python `__ne__` does not default to `!__eq__`.)
 archive/issue_comments_040531.json:
 ```json
 {
-    "body": "Attachment\n\nApply on top of the previous two.",
+    "body": "Attachment [trac_5280-ne-docfixes.patch](tarball://root/attachments/some-uuid/ticket5280/trac_5280-ne-docfixes.patch) by saliola created at 2009-06-21 18:43:54\n\nApply on top of the previous two.",
     "created_at": "2009-06-21T18:43:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5280",
     "type": "issue_comment",
@@ -341,7 +341,7 @@ archive/issue_comments_040531.json:
 }
 ```
 
-Attachment
+Attachment [trac_5280-ne-docfixes.patch](tarball://root/attachments/some-uuid/ticket5280/trac_5280-ne-docfixes.patch) by saliola created at 2009-06-21 18:43:54
 
 Apply on top of the previous two.
 
@@ -424,7 +424,7 @@ http://groups.google.com/group/sage-devel/browse_thread/thread/44dbe252426c3831
 archive/issue_comments_040535.json:
 ```json
 {
-    "body": "Attachment\n\nApply on top of the previous three",
+    "body": "Attachment [trac_5280-switch-to-zero.patch](tarball://root/attachments/some-uuid/ticket5280/trac_5280-switch-to-zero.patch) by saliola created at 2009-06-22 10:37:28\n\nApply on top of the previous three",
     "created_at": "2009-06-22T10:37:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5280",
     "type": "issue_comment",
@@ -433,7 +433,7 @@ archive/issue_comments_040535.json:
 }
 ```
 
-Attachment
+Attachment [trac_5280-switch-to-zero.patch](tarball://root/attachments/some-uuid/ticket5280/trac_5280-switch-to-zero.patch) by saliola created at 2009-06-22 10:37:28
 
 Apply on top of the previous three
 

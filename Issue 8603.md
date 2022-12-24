@@ -188,7 +188,7 @@ Changing status from new to needs_review.
 archive/issue_comments_077916.json:
 ```json
 {
-    "body": "Attachment\n\nThis fixes the documentation of fourier_series_partial_sum, replacing\n\n```\n f(x) \\sim \\frac{a_0}{2} + \\sum_{n=1}^N [a_n\\cos(\\frac{n\\pi x}{L}) +\nb_n\\sin(\\frac{n\\pi x}{L})],\n```\n\nby\n\n```\n f(x) \\sim \\frac{a_0}{2} + \\sum_{n=1}^{N-1} [a_n\\cos(\\frac{n\\pi x}{L})\n+ b_n\\sin(\\frac{n\\pi x}{L})],\n```\n",
+    "body": "Attachment [trac_8603-fourier-sum-docstring.patch](tarball://root/attachments/some-uuid/ticket8603/trac_8603-fourier-sum-docstring.patch) by wdj created at 2011-06-18 10:46:16\n\nThis fixes the documentation of fourier_series_partial_sum, replacing\n\n```\n f(x) \\sim \\frac{a_0}{2} + \\sum_{n=1}^N [a_n\\cos(\\frac{n\\pi x}{L}) +\nb_n\\sin(\\frac{n\\pi x}{L})],\n```\n\nby\n\n```\n f(x) \\sim \\frac{a_0}{2} + \\sum_{n=1}^{N-1} [a_n\\cos(\\frac{n\\pi x}{L})\n+ b_n\\sin(\\frac{n\\pi x}{L})],\n```\n",
     "created_at": "2011-06-18T10:46:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8603",
     "type": "issue_comment",
@@ -197,7 +197,7 @@ archive/issue_comments_077916.json:
 }
 ```
 
-Attachment
+Attachment [trac_8603-fourier-sum-docstring.patch](tarball://root/attachments/some-uuid/ticket8603/trac_8603-fourier-sum-docstring.patch) by wdj created at 2011-06-18 10:46:16
 
 This fixes the documentation of fourier_series_partial_sum, replacing
 

@@ -169,7 +169,7 @@ Based on 4.3.alpha1
 archive/issue_comments_030079.json:
 ```json
 {
-    "body": "Attachment\n\nThe spkg and patch at #7745 fix this problem, and the doctest passes. Positive review; this can be merged as soon as #7745 is in.",
+    "body": "Attachment [trac_4142-limit-sqrt.patch](tarball://root/attachments/some-uuid/ticket4142/trac_4142-limit-sqrt.patch) by ddrake created at 2009-12-23 08:12:20\n\nThe spkg and patch at #7745 fix this problem, and the doctest passes. Positive review; this can be merged as soon as #7745 is in.",
     "created_at": "2009-12-23T08:12:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4142",
     "type": "issue_comment",
@@ -178,7 +178,7 @@ archive/issue_comments_030079.json:
 }
 ```
 
-Attachment
+Attachment [trac_4142-limit-sqrt.patch](tarball://root/attachments/some-uuid/ticket4142/trac_4142-limit-sqrt.patch) by ddrake created at 2009-12-23 08:12:20
 
 The spkg and patch at #7745 fix this problem, and the doctest passes. Positive review; this can be merged as soon as #7745 is in.
 

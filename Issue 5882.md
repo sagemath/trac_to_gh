@@ -263,7 +263,7 @@ I like what I see in this patch. Especially the ability to lift an element of a 
 archive/issue_comments_046486.json:
 ```json
 {
-    "body": "Attachment\n\nthis one patch is based against 4.0.2.rc3.  it replaces the 8 patches from before.",
+    "body": "Attachment [trac_5882.patch](tarball://root/attachments/some-uuid/ticket5882/trac_5882.patch) by was created at 2009-06-18 23:06:09\n\nthis one patch is based against 4.0.2.rc3.  it replaces the 8 patches from before.",
     "created_at": "2009-06-18T23:06:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
@@ -272,7 +272,7 @@ archive/issue_comments_046486.json:
 }
 ```
 
-Attachment
+Attachment [trac_5882.patch](tarball://root/attachments/some-uuid/ticket5882/trac_5882.patch) by was created at 2009-06-18 23:06:09
 
 this one patch is based against 4.0.2.rc3.  it replaces the 8 patches from before.
 
@@ -451,7 +451,7 @@ Random comments while various people (like rlm (I hope) and me) work on more tho
 archive/issue_comments_046495.json:
 ```json
 {
-    "body": "Attachment\n\nreferee's patch -- reST fixes",
+    "body": "Attachment [ref_5882.patch](tarball://root/attachments/some-uuid/ticket5882/ref_5882.patch) by jhpalmieri created at 2009-06-20 03:11:12\n\nreferee's patch -- reST fixes",
     "created_at": "2009-06-20T03:11:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
@@ -460,7 +460,7 @@ archive/issue_comments_046495.json:
 }
 ```
 
-Attachment
+Attachment [ref_5882.patch](tarball://root/attachments/some-uuid/ticket5882/ref_5882.patch) by jhpalmieri created at 2009-06-20 03:11:12
 
 referee's patch -- reST fixes
 
@@ -530,7 +530,7 @@ I don't like that more, because they are modules.  In mathematics, modules are u
 archive/issue_comments_046498.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5882-final_referee_followup.patch](tarball://root/attachments/some-uuid/ticket5882/trac_5882-final_referee_followup.patch) by was created at 2009-06-20 16:09:02",
     "created_at": "2009-06-20T16:09:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
@@ -539,7 +539,7 @@ archive/issue_comments_046498.json:
 }
 ```
 
-Attachment
+Attachment [trac_5882-final_referee_followup.patch](tarball://root/attachments/some-uuid/ticket5882/trac_5882-final_referee_followup.patch) by was created at 2009-06-20 16:09:02
 
 
 
@@ -996,7 +996,7 @@ Great, that all makes sense.  For annihilator, then, you could the docstring fro
 archive/issue_comments_046512.json:
 ```json
 {
-    "body": "Attachment\n\nI've uploaded a new patch taking into account John's suggestions.",
+    "body": "Attachment [trac_5882-additions.patch](tarball://root/attachments/some-uuid/ticket5882/trac_5882-additions.patch) by davidloeffler created at 2009-07-02 12:49:09\n\nI've uploaded a new patch taking into account John's suggestions.",
     "created_at": "2009-07-02T12:49:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
@@ -1005,7 +1005,7 @@ archive/issue_comments_046512.json:
 }
 ```
 
-Attachment
+Attachment [trac_5882-additions.patch](tarball://root/attachments/some-uuid/ticket5882/trac_5882-additions.patch) by davidloeffler created at 2009-07-02 12:49:09
 
 I've uploaded a new patch taking into account John's suggestions.
 
@@ -1328,7 +1328,7 @@ So we should make annihilator return an ideal.
 archive/issue_comments_046514.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5882-full_ref_report-comments_addressed.patch](tarball://root/attachments/some-uuid/ticket5882/trac_5882-full_ref_report-comments_addressed.patch) by was created at 2009-07-02 16:53:00",
     "created_at": "2009-07-02T16:53:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
@@ -1337,7 +1337,7 @@ archive/issue_comments_046514.json:
 }
 ```
 
-Attachment
+Attachment [trac_5882-full_ref_report-comments_addressed.patch](tarball://root/attachments/some-uuid/ticket5882/trac_5882-full_ref_report-comments_addressed.patch) by was created at 2009-07-02 16:53:00
 
 
 
@@ -1370,7 +1370,7 @@ Apply only "trac_5882-all-in-one.patch".
 archive/issue_comments_046516.json:
 ```json
 {
-    "body": "Attachment\n\nfor reference only",
+    "body": "Attachment [trac_5882-delta.patch](tarball://root/attachments/some-uuid/ticket5882/trac_5882-delta.patch) by jhpalmieri created at 2009-07-02 22:00:44\n\nfor reference only",
     "created_at": "2009-07-02T22:00:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
@@ -1379,7 +1379,7 @@ archive/issue_comments_046516.json:
 }
 ```
 
-Attachment
+Attachment [trac_5882-delta.patch](tarball://root/attachments/some-uuid/ticket5882/trac_5882-delta.patch) by jhpalmieri created at 2009-07-02 22:00:44
 
 for reference only
 
@@ -1408,7 +1408,7 @@ apply only this patch!
 archive/issue_comments_046518.json:
 ```json
 {
-    "body": "Attachment\n\nThere is one doctest failure:\n\n```\nsage -t  sage/modules/fg_pid/fgp_module.py\n**********************************************************************\nFile \"/space/rlm/sage-4.1.alpha3/devel/sage-main/sage/modules/fg_pid/fgp_module.py\", line 1453:\n    sage: hash(A)\nExpected nothing\nGot:\n    -7071641102956720018\n**********************************************************************\n```\n",
+    "body": "Attachment [trac_5882-all-in-one.patch](tarball://root/attachments/some-uuid/ticket5882/trac_5882-all-in-one.patch) by rlm created at 2009-07-02 22:15:52\n\nThere is one doctest failure:\n\n```\nsage -t  sage/modules/fg_pid/fgp_module.py\n**********************************************************************\nFile \"/space/rlm/sage-4.1.alpha3/devel/sage-main/sage/modules/fg_pid/fgp_module.py\", line 1453:\n    sage: hash(A)\nExpected nothing\nGot:\n    -7071641102956720018\n**********************************************************************\n```\n",
     "created_at": "2009-07-02T22:15:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
@@ -1417,7 +1417,7 @@ archive/issue_comments_046518.json:
 }
 ```
 
-Attachment
+Attachment [trac_5882-all-in-one.patch](tarball://root/attachments/some-uuid/ticket5882/trac_5882-all-in-one.patch) by rlm created at 2009-07-02 22:15:52
 
 There is one doctest failure:
 
@@ -1458,7 +1458,7 @@ Sorry, that's what I get for only doctesting on a 32-bit machine.  Here's a patc
 archive/issue_comments_046520.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5882_hash.patch](tarball://root/attachments/some-uuid/ticket5882/trac_5882_hash.patch) by jhpalmieri created at 2009-07-02 22:38:14",
     "created_at": "2009-07-02T22:38:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
@@ -1467,7 +1467,7 @@ archive/issue_comments_046520.json:
 }
 ```
 
-Attachment
+Attachment [trac_5882_hash.patch](tarball://root/attachments/some-uuid/ticket5882/trac_5882_hash.patch) by jhpalmieri created at 2009-07-02 22:38:14
 
 
 

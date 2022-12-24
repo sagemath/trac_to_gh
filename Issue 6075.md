@@ -89,7 +89,7 @@ I've added a patch that makes things continue to work if dsage is not there.  Ho
 archive/issue_comments_048359.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6075.patch](tarball://root/attachments/some-uuid/ticket6075/trac_6075.patch) by mhansen created at 2009-05-28 02:44:46",
     "created_at": "2009-05-28T02:44:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6075",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_048359.json:
 }
 ```
 
-Attachment
+Attachment [trac_6075.patch](tarball://root/attachments/some-uuid/ticket6075/trac_6075.patch) by mhansen created at 2009-05-28 02:44:46
 
 
 

@@ -49,7 +49,7 @@ remove extra print statement from sage-doctest
 archive/issue_comments_034055.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_4546.patch](tarball://root/attachments/some-uuid/ticket4546/trac_4546.patch) by mabshoff created at 2008-11-18 21:01:24\n\nPositive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-18T21:01:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4546",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_034055.json:
 }
 ```
 
-Attachment
+Attachment [trac_4546.patch](tarball://root/attachments/some-uuid/ticket4546/trac_4546.patch) by mabshoff created at 2008-11-18 21:01:24
 
 Positive review.
 

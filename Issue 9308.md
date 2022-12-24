@@ -118,7 +118,7 @@ Mercurial patch to add an spkg-check to enable self-tests
 archive/issue_comments_087658.json:
 ```json
 {
-    "body": "Attachment\n\nAgain, cc'ing a few people who seem keen to improve the quality of Sage. \n\nDave",
+    "body": "Attachment [9308.patch](tarball://root/attachments/some-uuid/ticket9308/9308.patch) by drkirkby created at 2010-07-16 15:11:17\n\nAgain, cc'ing a few people who seem keen to improve the quality of Sage. \n\nDave",
     "created_at": "2010-07-16T15:11:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9308",
     "type": "issue_comment",
@@ -127,7 +127,7 @@ archive/issue_comments_087658.json:
 }
 ```
 
-Attachment
+Attachment [9308.patch](tarball://root/attachments/some-uuid/ticket9308/9308.patch) by drkirkby created at 2010-07-16 15:11:17
 
 Again, cc'ing a few people who seem keen to improve the quality of Sage. 
 

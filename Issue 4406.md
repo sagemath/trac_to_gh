@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4406
 archive/issue_comments_032397.json:
 ```json
 {
-    "body": "Attachment\n\nThis wasn't as invasive as I had expected. Apply on top of fix at #2462.",
+    "body": "Attachment [4406-cpdef-truncate.patch](tarball://root/attachments/some-uuid/ticket4406/4406-cpdef-truncate.patch) by robertwb created at 2008-10-30 21:21:40\n\nThis wasn't as invasive as I had expected. Apply on top of fix at #2462.",
     "created_at": "2008-10-30T21:21:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4406",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_032397.json:
 }
 ```
 
-Attachment
+Attachment [4406-cpdef-truncate.patch](tarball://root/attachments/some-uuid/ticket4406/4406-cpdef-truncate.patch) by robertwb created at 2008-10-30 21:21:40
 
 This wasn't as invasive as I had expected. Apply on top of fix at #2462.
 
@@ -212,7 +212,7 @@ and I can't figure out how test my changes. However, I'm pretty sure the error i
 archive/issue_comments_032404.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4406-truncate-fix.patch](tarball://root/attachments/some-uuid/ticket4406/4406-truncate-fix.patch) by robertwb created at 2008-11-01 23:14:37",
     "created_at": "2008-11-01T23:14:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4406",
     "type": "issue_comment",
@@ -221,7 +221,7 @@ archive/issue_comments_032404.json:
 }
 ```
 
-Attachment
+Attachment [4406-truncate-fix.patch](tarball://root/attachments/some-uuid/ticket4406/4406-truncate-fix.patch) by robertwb created at 2008-11-01 23:14:37
 
 
 

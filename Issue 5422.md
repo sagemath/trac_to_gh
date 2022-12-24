@@ -51,7 +51,7 @@ polynomial of a quadratic form patch
 archive/issue_comments_041951.json:
 ```json
 {
-    "body": "Attachment\n\nREFEREE REPORT:\n\n\n* change it to \n\n```\n  EXAMPLES::\n  \n      sage: stuff\n```\n\nfor the new ReST format.\n\n* Don't hardcode only x, i.e., change this:\n\n```\npolynomial(self):\n```\n\nto \n\n```\npolynomial(self, names='x'):\n```\n\n\nYes, \"names\" sounds funny, but is traditional in sage for this.\n\n* Change \"Input:\" and \"Output:\" to be all caps and on their own line, like in the rest of sage. \n\n* This is silly code `[R.gens()[i] for i in range(n)]` because `R.gens()` is almost the same thing.  If you really need a list do `list(R.gens())`.\n\n* This worries me: `(M*V).dot_product(V) `.  Should it be `(V*M).dot_product(V)`?",
+    "body": "Attachment [11731.patch](tarball://root/attachments/some-uuid/ticket5422/11731.patch) by was created at 2009-03-16 00:24:02\n\nREFEREE REPORT:\n\n\n* change it to \n\n```\n  EXAMPLES::\n  \n      sage: stuff\n```\n\nfor the new ReST format.\n\n* Don't hardcode only x, i.e., change this:\n\n```\npolynomial(self):\n```\n\nto \n\n```\npolynomial(self, names='x'):\n```\n\n\nYes, \"names\" sounds funny, but is traditional in sage for this.\n\n* Change \"Input:\" and \"Output:\" to be all caps and on their own line, like in the rest of sage. \n\n* This is silly code `[R.gens()[i] for i in range(n)]` because `R.gens()` is almost the same thing.  If you really need a list do `list(R.gens())`.\n\n* This worries me: `(M*V).dot_product(V) `.  Should it be `(V*M).dot_product(V)`?",
     "created_at": "2009-03-16T00:24:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5422",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_041951.json:
 }
 ```
 
-Attachment
+Attachment [11731.patch](tarball://root/attachments/some-uuid/ticket5422/11731.patch) by was created at 2009-03-16 00:24:02
 
 REFEREE REPORT:
 
@@ -179,7 +179,7 @@ Replaces previous patch.
 archive/issue_comments_041956.json:
 ```json
 {
-    "body": "Attachment\n\nDone the docstring updating. A review and we should be good to go.",
+    "body": "Attachment [trac_5422_quad_form_poly_reviewer.patch](tarball://root/attachments/some-uuid/ticket5422/trac_5422_quad_form_poly_reviewer.patch) by spice created at 2010-11-05 16:42:46\n\nDone the docstring updating. A review and we should be good to go.",
     "created_at": "2010-11-05T16:42:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5422",
     "type": "issue_comment",
@@ -188,7 +188,7 @@ archive/issue_comments_041956.json:
 }
 ```
 
-Attachment
+Attachment [trac_5422_quad_form_poly_reviewer.patch](tarball://root/attachments/some-uuid/ticket5422/trac_5422_quad_form_poly_reviewer.patch) by spice created at 2010-11-05 16:42:46
 
 Done the docstring updating. A review and we should be good to go.
 
@@ -325,7 +325,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_041964.json:
 ```json
 {
-    "body": "Attachment\n\nReplaces previous patch.",
+    "body": "Attachment [trac_5422_quad_form_poly.patch](tarball://root/attachments/some-uuid/ticket5422/trac_5422_quad_form_poly.patch) by aly.deines created at 2010-11-10 17:56:58\n\nReplaces previous patch.",
     "created_at": "2010-11-10T17:56:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5422",
     "type": "issue_comment",
@@ -334,7 +334,7 @@ archive/issue_comments_041964.json:
 }
 ```
 
-Attachment
+Attachment [trac_5422_quad_form_poly.patch](tarball://root/attachments/some-uuid/ticket5422/trac_5422_quad_form_poly.patch) by aly.deines created at 2010-11-10 17:56:58
 
 Replaces previous patch.
 

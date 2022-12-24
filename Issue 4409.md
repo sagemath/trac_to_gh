@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4409
 archive/issue_comments_032418.json:
 ```json
 {
-    "body": "Attachment\n\nThis looks great.",
+    "body": "Attachment [4409-ellipsis-speed.patch](tarball://root/attachments/some-uuid/ticket4409/4409-ellipsis-speed.patch) by craigcitro created at 2008-10-31 06:54:29\n\nThis looks great.",
     "created_at": "2008-10-31T06:54:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4409",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_032418.json:
 }
 ```
 
-Attachment
+Attachment [4409-ellipsis-speed.patch](tarball://root/attachments/some-uuid/ticket4409/4409-ellipsis-speed.patch) by craigcitro created at 2008-10-31 06:54:29
 
 This looks great.
 

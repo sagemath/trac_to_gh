@@ -90,7 +90,7 @@ Changing component from documentation to doctest.
 archive/issue_comments_010420.json:
 ```json
 {
-    "body": "Attachment\n\nadds docstring and examples",
+    "body": "Attachment [8316.patch](tarball://root/attachments/some-uuid/ticket1639/8316.patch) by cremona created at 2008-02-17 22:43:40\n\nadds docstring and examples",
     "created_at": "2008-02-17T22:43:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1639",
     "type": "issue_comment",
@@ -99,7 +99,7 @@ archive/issue_comments_010420.json:
 }
 ```
 
-Attachment
+Attachment [8316.patch](tarball://root/attachments/some-uuid/ticket1639/8316.patch) by cremona created at 2008-02-17 22:43:40
 
 adds docstring and examples
 

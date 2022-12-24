@@ -51,7 +51,7 @@ depends on #6596
 archive/issue_comments_056741.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6872-fix-typo.patch](tarball://root/attachments/some-uuid/ticket6872/trac_6872-fix-typo.patch) by mvngu created at 2009-09-03 05:32:02",
     "created_at": "2009-09-03T05:32:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6872",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_056741.json:
 }
 ```
 
-Attachment
+Attachment [trac_6872-fix-typo.patch](tarball://root/attachments/some-uuid/ticket6872/trac_6872-fix-typo.patch) by mvngu created at 2009-09-03 05:32:02
 
 
 
@@ -87,7 +87,7 @@ I don't understand the reason for the change (because I didn't look at the produ
 archive/issue_comments_056743.json:
 ```json
 {
-    "body": "Attachment\n\nwithout the patch",
+    "body": "Attachment [trac_6872-without-patch.png](tarball://root/attachments/some-uuid/ticket6872/trac_6872-without-patch.png) by mvngu created at 2009-09-03 09:08:19\n\nwithout the patch",
     "created_at": "2009-09-03T09:08:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6872",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_056743.json:
 }
 ```
 
-Attachment
+Attachment [trac_6872-without-patch.png](tarball://root/attachments/some-uuid/ticket6872/trac_6872-without-patch.png) by mvngu created at 2009-09-03 09:08:19
 
 without the patch
 

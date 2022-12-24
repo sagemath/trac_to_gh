@@ -150,7 +150,7 @@ Simply due to new Maxima de-uglifying its output.  See attached patch.
 archive/issue_comments_055917.json:
 ```json
 {
-    "body": "Attachment\n\napply after spkg's at #6564 and #6699",
+    "body": "Attachment [trac_6784.patch](tarball://root/attachments/some-uuid/ticket6784/trac_6784.patch) by AlexGhitza created at 2009-08-20 23:35:21\n\napply after spkg's at #6564 and #6699",
     "created_at": "2009-08-20T23:35:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6784",
     "type": "issue_comment",
@@ -159,7 +159,7 @@ archive/issue_comments_055917.json:
 }
 ```
 
-Attachment
+Attachment [trac_6784.patch](tarball://root/attachments/some-uuid/ticket6784/trac_6784.patch) by AlexGhitza created at 2009-08-20 23:35:21
 
 apply after spkg's at #6564 and #6699
 

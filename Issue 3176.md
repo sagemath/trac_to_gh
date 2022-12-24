@@ -53,7 +53,7 @@ Changing status from new to assigned.
 archive/issue_comments_021998.json:
 ```json
 {
-    "body": "Attachment\n\nThe spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.2/alpha1/sqlite-3.5.3.p3.spkg\n\nCheers,\n\nMichael",
+    "body": "Attachment [sqlite-3.5.3.p1-spkg-install-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3176/sqlite-3.5.3.p1-spkg-install-64bit-osx.patch) by mabshoff created at 2008-05-19 02:54:09\n\nThe spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.2/alpha1/sqlite-3.5.3.p3.spkg\n\nCheers,\n\nMichael",
     "created_at": "2008-05-19T02:54:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3176",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_021998.json:
 }
 ```
 
-Attachment
+Attachment [sqlite-3.5.3.p1-spkg-install-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3176/sqlite-3.5.3.p1-spkg-install-64bit-osx.patch) by mabshoff created at 2008-05-19 02:54:09
 
 The spkg is at
 

@@ -95,7 +95,7 @@ based on Sage 4.1.1
 archive/issue_comments_056037.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6806-typo-in-patch-of-6396.patch](tarball://root/attachments/some-uuid/ticket6806/trac_6806-typo-in-patch-of-6396.patch) by mvngu created at 2009-08-22 21:54:54",
     "created_at": "2009-08-22T21:54:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6806",
     "type": "issue_comment",
@@ -104,7 +104,7 @@ archive/issue_comments_056037.json:
 }
 ```
 
-Attachment
+Attachment [trac_6806-typo-in-patch-of-6396.patch](tarball://root/attachments/some-uuid/ticket6806/trac_6806-typo-in-patch-of-6396.patch) by mvngu created at 2009-08-22 21:54:54
 
 
 

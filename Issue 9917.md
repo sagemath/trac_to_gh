@@ -222,7 +222,7 @@ I'm afraid a Sphinx warning is sufficient reason for needs_work...
 archive/issue_comments_098696.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated patch",
+    "body": "Attachment [trac_9918_triangulate_point_configurations.patch](tarball://root/attachments/some-uuid/ticket9918/trac_9918_triangulate_point_configurations.patch) by vbraun created at 2011-01-26 22:44:17\n\nUpdated patch",
     "created_at": "2011-01-26T22:44:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9917",
     "type": "issue_comment",
@@ -231,7 +231,7 @@ archive/issue_comments_098696.json:
 }
 ```
 
-Attachment
+Attachment [trac_9918_triangulate_point_configurations.patch](tarball://root/attachments/some-uuid/ticket9918/trac_9918_triangulate_point_configurations.patch) by vbraun created at 2011-01-26 22:44:17
 
 Updated patch
 

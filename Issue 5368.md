@@ -71,7 +71,7 @@ Exception exceptions.KeyboardInterrupt: KeyboardInterrupt() in  ignored
 archive/issue_comments_041350.json:
 ```json
 {
-    "body": "Attachment\n\nWilliam's assessment was correct; the function was not being converted into a fast_float form because parametric_plot3d.adapt_to_callable was being invoked incorrectly. I tried to update the documentation of this function according to what I figured out about its workings, so that this mistake might be avoided in the future.",
+    "body": "Attachment [trac_5368.patch](tarball://root/attachments/some-uuid/ticket5368/trac_5368.patch) by wcauchois created at 2009-02-26 00:30:45\n\nWilliam's assessment was correct; the function was not being converted into a fast_float form because parametric_plot3d.adapt_to_callable was being invoked incorrectly. I tried to update the documentation of this function according to what I figured out about its workings, so that this mistake might be avoided in the future.",
     "created_at": "2009-02-26T00:30:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5368",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_041350.json:
 }
 ```
 
-Attachment
+Attachment [trac_5368.patch](tarball://root/attachments/some-uuid/ticket5368/trac_5368.patch) by wcauchois created at 2009-02-26 00:30:45
 
 William's assessment was correct; the function was not being converted into a fast_float form because parametric_plot3d.adapt_to_callable was being invoked incorrectly. I tried to update the documentation of this function according to what I figured out about its workings, so that this mistake might be avoided in the future.
 
@@ -113,7 +113,7 @@ Michael
 archive/issue_comments_041352.json:
 ```json
 {
-    "body": "Attachment\n\nMerged  trac_5368-rebased.patch in Sage 3.4.rc1.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_5368-rebased.patch](tarball://root/attachments/some-uuid/ticket5368/trac_5368-rebased.patch) by mabshoff created at 2009-03-05 00:45:59\n\nMerged  trac_5368-rebased.patch in Sage 3.4.rc1.\n\nCheers,\n\nMichael",
     "created_at": "2009-03-05T00:45:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5368",
     "type": "issue_comment",
@@ -122,7 +122,7 @@ archive/issue_comments_041352.json:
 }
 ```
 
-Attachment
+Attachment [trac_5368-rebased.patch](tarball://root/attachments/some-uuid/ticket5368/trac_5368-rebased.patch) by mabshoff created at 2009-03-05 00:45:59
 
 Merged  trac_5368-rebased.patch in Sage 3.4.rc1.
 

@@ -186,7 +186,7 @@ archive/issue_comments_021159.json:
 archive/issue_comments_021160.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3065.patch](tarball://root/attachments/some-uuid/ticket3065/3065.patch) by dfdeshom created at 2008-05-02 17:41:42",
     "created_at": "2008-05-02T17:41:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3065",
     "type": "issue_comment",
@@ -195,7 +195,7 @@ archive/issue_comments_021160.json:
 }
 ```
 
-Attachment
+Attachment [3065.patch](tarball://root/attachments/some-uuid/ticket3065/3065.patch) by dfdeshom created at 2008-05-02 17:41:42
 
 
 

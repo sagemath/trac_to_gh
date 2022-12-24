@@ -71,7 +71,7 @@ Changing assignee from was to rlm.
 archive/issue_comments_004222.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [7087.patch](tarball://root/attachments/some-uuid/ticket724/7087.patch) by rlm created at 2007-10-24 07:50:00",
     "created_at": "2007-10-24T07:50:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/724",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_004222.json:
 }
 ```
 
-Attachment
+Attachment [7087.patch](tarball://root/attachments/some-uuid/ticket724/7087.patch) by rlm created at 2007-10-24 07:50:00
 
 
 
@@ -127,7 +127,7 @@ Thanks!
 archive/issue_comments_004225.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [7148.patch](tarball://root/attachments/some-uuid/ticket724/7148.patch) by cwitty created at 2007-10-27 04:53:30",
     "created_at": "2007-10-27T04:53:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/724",
     "type": "issue_comment",
@@ -136,7 +136,7 @@ archive/issue_comments_004225.json:
 }
 ```
 
-Attachment
+Attachment [7148.patch](tarball://root/attachments/some-uuid/ticket724/7148.patch) by cwitty created at 2007-10-27 04:53:30
 
 
 

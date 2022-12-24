@@ -73,7 +73,7 @@ Changing status from new to assigned.
 archive/issue_comments_045833.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [reducible.patch](tarball://root/attachments/some-uuid/ticket5831/reducible.patch) by bump created at 2009-04-20 05:18:01",
     "created_at": "2009-04-20T05:18:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5831",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_045833.json:
 }
 ```
 
-Attachment
+Attachment [reducible.patch](tarball://root/attachments/some-uuid/ticket5831/reducible.patch) by bump created at 2009-04-20 05:18:01
 
 
 
@@ -162,7 +162,7 @@ Thanks!
 archive/issue_comments_045837.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5831.patch](tarball://root/attachments/some-uuid/ticket5831/trac_5831.patch) by bump created at 2009-04-23 01:24:09",
     "created_at": "2009-04-23T01:24:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5831",
     "type": "issue_comment",
@@ -171,7 +171,7 @@ archive/issue_comments_045837.json:
 }
 ```
 
-Attachment
+Attachment [trac_5831.patch](tarball://root/attachments/some-uuid/ticket5831/trac_5831.patch) by bump created at 2009-04-23 01:24:09
 
 
 

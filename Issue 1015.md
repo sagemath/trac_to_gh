@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1015
 archive/issue_comments_006233.json:
 ```json
 {
-    "body": "Attachment\n\nthe bundle",
+    "body": "Attachment [free_algebra.hg](tarball://root/attachments/some-uuid/ticket1015/free_algebra.hg) by jbmohler created at 2007-10-27 23:49:35\n\nthe bundle",
     "created_at": "2007-10-27T23:49:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1015",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_006233.json:
 }
 ```
 
-Attachment
+Attachment [free_algebra.hg](tarball://root/attachments/some-uuid/ticket1015/free_algebra.hg) by jbmohler created at 2007-10-27 23:49:35
 
 the bundle
 

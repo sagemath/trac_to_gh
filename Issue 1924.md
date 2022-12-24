@@ -55,7 +55,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1924
 archive/issue_comments_012202.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1924-matrix-mul-loop-order.patch](tarball://root/attachments/some-uuid/ticket1924/1924-matrix-mul-loop-order.patch) by robertwb created at 2008-01-25 10:46:06",
     "created_at": "2008-01-25T10:46:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1924",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_012202.json:
 }
 ```
 
-Attachment
+Attachment [1924-matrix-mul-loop-order.patch](tarball://root/attachments/some-uuid/ticket1924/1924-matrix-mul-loop-order.patch) by robertwb created at 2008-01-25 10:46:06
 
 
 
@@ -180,7 +180,7 @@ I just applied the patch (which works fine for me), then exported it again.  May
 archive/issue_comments_012208.json:
 ```json
 {
-    "body": "Attachment\n\nI just applied the patch without any funny business to 2.10:\n\n```\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/1924/1924-matrix-mul-loop-order.patch?format=raw')\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/attachment/ticket/1924/1924-matrix-mul-loop-order.patch?format=raw\nLoading: [..]\ncd \"/Users/was/s/devel/sage\" && hg status\ncd \"/Users/was/s/devel/sage\" && hg status\ncd \"/Users/was/s/devel/sage\" && hg import   \"/Users/was/.sage/temp/teragon.local/47537/tmp_1.patch\"\napplying /Users/was/.sage/temp/teragon.local/47537/tmp_1.patch\n```\n\n\nAfter applying the patch I do *not* have a line like this:\n\n```\n def mod_int A_row_k,\n```\n\nThis is because the first part of the diff adds that line, but the\nsecond part removes it.  \n\nBy the way, on my laptop before and after applying this patch:\n\nBEFORE:\n\n```\nsage: sage: a = random_matrix(GF(101),500); b = random_matrix(GF(101),500)\nsage: sage: time c=a*b\nCPU times: user 0.38 s, sys: 0.02 s, total: 0.40 s\nWall time: 0.42\nsage: sage: a = random_matrix(GF(101),1000); b = random_matrix(GF(101),1000)\nsage: sage: time c=a*b\nCPU times: user 2.63 s, sys: 0.13 s, total: 2.76 s\nWall time: 2.78\n```\n\n\nAFTER:\n\n```\nsage: a = random_matrix(GF(101),500); b = random_matrix(GF(101),500)\nsage: time c=a*b\nCPU times: user 0.23 s, sys: 0.02 s, total: 0.25 s\nWall time: 0.25\nsage: a = random_matrix(GF(101),1000); b = random_matrix(GF(101),1000)\nsage: time c=a*b\nCPU times: user 1.60 s, sys: 0.13 s, total: 1.73 s\nWall time: 1.73\n```\n\n\nNot bad for basically swapping the order of two for loops!",
+    "body": "Attachment [trac-1924-fixed_I_think.patch](tarball://root/attachments/some-uuid/ticket1924/trac-1924-fixed_I_think.patch) by was created at 2008-01-25 13:24:29\n\nI just applied the patch without any funny business to 2.10:\n\n```\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/1924/1924-matrix-mul-loop-order.patch?format=raw')\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/attachment/ticket/1924/1924-matrix-mul-loop-order.patch?format=raw\nLoading: [..]\ncd \"/Users/was/s/devel/sage\" && hg status\ncd \"/Users/was/s/devel/sage\" && hg status\ncd \"/Users/was/s/devel/sage\" && hg import   \"/Users/was/.sage/temp/teragon.local/47537/tmp_1.patch\"\napplying /Users/was/.sage/temp/teragon.local/47537/tmp_1.patch\n```\n\n\nAfter applying the patch I do *not* have a line like this:\n\n```\n def mod_int A_row_k,\n```\n\nThis is because the first part of the diff adds that line, but the\nsecond part removes it.  \n\nBy the way, on my laptop before and after applying this patch:\n\nBEFORE:\n\n```\nsage: sage: a = random_matrix(GF(101),500); b = random_matrix(GF(101),500)\nsage: sage: time c=a*b\nCPU times: user 0.38 s, sys: 0.02 s, total: 0.40 s\nWall time: 0.42\nsage: sage: a = random_matrix(GF(101),1000); b = random_matrix(GF(101),1000)\nsage: sage: time c=a*b\nCPU times: user 2.63 s, sys: 0.13 s, total: 2.76 s\nWall time: 2.78\n```\n\n\nAFTER:\n\n```\nsage: a = random_matrix(GF(101),500); b = random_matrix(GF(101),500)\nsage: time c=a*b\nCPU times: user 0.23 s, sys: 0.02 s, total: 0.25 s\nWall time: 0.25\nsage: a = random_matrix(GF(101),1000); b = random_matrix(GF(101),1000)\nsage: time c=a*b\nCPU times: user 1.60 s, sys: 0.13 s, total: 1.73 s\nWall time: 1.73\n```\n\n\nNot bad for basically swapping the order of two for loops!",
     "created_at": "2008-01-25T13:24:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1924",
     "type": "issue_comment",
@@ -189,7 +189,7 @@ archive/issue_comments_012208.json:
 }
 ```
 
-Attachment
+Attachment [trac-1924-fixed_I_think.patch](tarball://root/attachments/some-uuid/ticket1924/trac-1924-fixed_I_think.patch) by was created at 2008-01-25 13:24:29
 
 I just applied the patch without any funny business to 2.10:
 

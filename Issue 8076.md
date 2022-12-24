@@ -111,7 +111,7 @@ Changing status from new to needs_review.
 archive/issue_comments_070761.json:
 ```json
 {
-    "body": "Attachment\n\nchanging GAP version to 4.4.12",
+    "body": "Attachment [13702.patch](tarball://root/attachments/some-uuid/ticket8076/13702.patch) by dimpase created at 2010-01-27 03:32:51\n\nchanging GAP version to 4.4.12",
     "created_at": "2010-01-27T03:32:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8076",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_070761.json:
 }
 ```
 
-Attachment
+Attachment [13702.patch](tarball://root/attachments/some-uuid/ticket8076/13702.patch) by dimpase created at 2010-01-27 03:32:51
 
 changing GAP version to 4.4.12
 

@@ -89,7 +89,7 @@ At the same time the opportunity has been taken to tidy up a few things.  In par
 archive/issue_comments_050550.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6332.patch](tarball://root/attachments/some-uuid/ticket6332/trac_6332.patch) by fwclarke created at 2009-06-18 22:14:08",
     "created_at": "2009-06-18T22:14:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6332",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_050550.json:
 }
 ```
 
-Attachment
+Attachment [trac_6332.patch](tarball://root/attachments/some-uuid/ticket6332/trac_6332.patch) by fwclarke created at 2009-06-18 22:14:08
 
 
 
@@ -107,7 +107,7 @@ Attachment
 archive/issue_comments_050551.json:
 ```json
 {
-    "body": "Attachment\n\napply after the first patch",
+    "body": "Attachment [trac_6332-ref.patch](tarball://root/attachments/some-uuid/ticket6332/trac_6332-ref.patch) by AlexGhitza created at 2009-07-17 11:09:30\n\napply after the first patch",
     "created_at": "2009-07-17T11:09:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6332",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_050551.json:
 }
 ```
 
-Attachment
+Attachment [trac_6332-ref.patch](tarball://root/attachments/some-uuid/ticket6332/trac_6332-ref.patch) by AlexGhitza created at 2009-07-17 11:09:30
 
 apply after the first patch
 

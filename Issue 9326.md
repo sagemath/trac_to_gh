@@ -308,7 +308,7 @@ Test patch, breaks coercion for many rings for some reason.
 archive/issue_comments_087957.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch is actually related to #9429, so I am moving there.",
+    "body": "Attachment [first_attempt.patch](tarball://root/attachments/some-uuid/ticket9326/first_attempt.patch) by novoselt created at 2010-07-06 15:56:34\n\nThis patch is actually related to #9429, so I am moving there.",
     "created_at": "2010-07-06T15:56:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_comment",
@@ -317,7 +317,7 @@ archive/issue_comments_087957.json:
 }
 ```
 
-Attachment
+Attachment [first_attempt.patch](tarball://root/attachments/some-uuid/ticket9326/first_attempt.patch) by novoselt created at 2010-07-06 15:56:34
 
 This patch is actually related to #9429, so I am moving there.
 
@@ -569,7 +569,7 @@ Move cohomology_class() method from ToricVariety_field to Cone_of_toric_variety.
 archive/issue_comments_087968.json:
 ```json
 {
-    "body": "Attachment\n\nRebase against 4.5.alpha0",
+    "body": "Attachment [trac_9326_QuotientRing_fix_derived_classes.2.patch](tarball://root/attachments/some-uuid/ticket9326/trac_9326_QuotientRing_fix_derived_classes.2.patch) by novoselt created at 2010-07-27 06:36:20\n\nRebase against 4.5.alpha0",
     "created_at": "2010-07-27T06:36:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_comment",
@@ -578,7 +578,7 @@ archive/issue_comments_087968.json:
 }
 ```
 
-Attachment
+Attachment [trac_9326_QuotientRing_fix_derived_classes.2.patch](tarball://root/attachments/some-uuid/ticket9326/trac_9326_QuotientRing_fix_derived_classes.2.patch) by novoselt created at 2010-07-27 06:36:20
 
 Rebase against 4.5.alpha0
 
@@ -625,7 +625,7 @@ fix coverage warnings
 archive/issue_comments_087971.json:
 ```json
 {
-    "body": "Attachment\n\nAwesome! I have a few little changes and typo fixes which I will post later today and if you agree with them it goes to positive review!",
+    "body": "Attachment [trac_9326_toric_variety_cohomology.patch](tarball://root/attachments/some-uuid/ticket9326/trac_9326_toric_variety_cohomology.patch) by novoselt created at 2010-07-27 17:19:49\n\nAwesome! I have a few little changes and typo fixes which I will post later today and if you agree with them it goes to positive review!",
     "created_at": "2010-07-27T17:19:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_comment",
@@ -634,7 +634,7 @@ archive/issue_comments_087971.json:
 }
 ```
 
-Attachment
+Attachment [trac_9326_toric_variety_cohomology.patch](tarball://root/attachments/some-uuid/ticket9326/trac_9326_toric_variety_cohomology.patch) by novoselt created at 2010-07-27 17:19:49
 
 Awesome! I have a few little changes and typo fixes which I will post later today and if you agree with them it goes to positive review!
 
@@ -645,7 +645,7 @@ Awesome! I have a few little changes and typo fixes which I will post later toda
 archive/issue_comments_087972.json:
 ```json
 {
-    "body": "Attachment\n\nOK, here is the patch, let me know if you approve it. I have\n* changed `_latex_` to give LaTeX representation of the lift-polynomial, I think it is better than using text representation;\n* made `cohomology_basis` return tuple of tuples so that it does not get changed accidentally, I also rewrote its computation using list comprehension instead of functional style since I got a little confused. Of course, this is just me, so I am ready to change it back if you want. I actually though that calling `map` and filter should be faster, but\n {{{\nsage: L = [1..1000]\nsage: timeit(\"[e for e in L]\", number=10000)\n10000 loops, best of 3: 114 \u00b5s per loop\nsage: timeit(\"map(lambda x: x, L)\", number=10000)\n10000 loops, best of 3: 263 \u00b5s per loop\nsage: timeit(\"[e for e in L if e > 50]\", number=10000)\n10000 loops, best of 3: 637 \u00b5s per loop\nsage: timeit(\"filter(lambda x: x > 50, L)\", number=10000)\n10000 loops, best of 3: 775 \u00b5s per loop\n}}}\n so it seems that actually list comprehension is a little more efficient. My variant also does the degree splitting in a single pass through the full basis;\n* made changes in a couple of places to check for existence of cached value before checking for errors (my sneaky plan is to allow myself to circumvent you characteristic zero defense system by setting `_cohomology_ring` directly if I wish so, but for sane users everything will work exactly as you have written it originally ;-));\n* some little changes to the documentation, see the patch.\n\nI'll now run complete tests including this patch, to make sure there are no surprises in unrelated places, but if you are happy with modifications I am ready to switch it to positive review.",
+    "body": "Attachment [trac_9326_toric_cohomology_reviewer.patch](tarball://root/attachments/some-uuid/ticket9326/trac_9326_toric_cohomology_reviewer.patch) by novoselt created at 2010-07-28 04:54:46\n\nOK, here is the patch, let me know if you approve it. I have\n* changed `_latex_` to give LaTeX representation of the lift-polynomial, I think it is better than using text representation;\n* made `cohomology_basis` return tuple of tuples so that it does not get changed accidentally, I also rewrote its computation using list comprehension instead of functional style since I got a little confused. Of course, this is just me, so I am ready to change it back if you want. I actually though that calling `map` and filter should be faster, but\n {{{\nsage: L = [1..1000]\nsage: timeit(\"[e for e in L]\", number=10000)\n10000 loops, best of 3: 114 \u00b5s per loop\nsage: timeit(\"map(lambda x: x, L)\", number=10000)\n10000 loops, best of 3: 263 \u00b5s per loop\nsage: timeit(\"[e for e in L if e > 50]\", number=10000)\n10000 loops, best of 3: 637 \u00b5s per loop\nsage: timeit(\"filter(lambda x: x > 50, L)\", number=10000)\n10000 loops, best of 3: 775 \u00b5s per loop\n}}}\n so it seems that actually list comprehension is a little more efficient. My variant also does the degree splitting in a single pass through the full basis;\n* made changes in a couple of places to check for existence of cached value before checking for errors (my sneaky plan is to allow myself to circumvent you characteristic zero defense system by setting `_cohomology_ring` directly if I wish so, but for sane users everything will work exactly as you have written it originally ;-));\n* some little changes to the documentation, see the patch.\n\nI'll now run complete tests including this patch, to make sure there are no surprises in unrelated places, but if you are happy with modifications I am ready to switch it to positive review.",
     "created_at": "2010-07-28T04:54:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_comment",
@@ -654,7 +654,7 @@ archive/issue_comments_087972.json:
 }
 ```
 
-Attachment
+Attachment [trac_9326_toric_cohomology_reviewer.patch](tarball://root/attachments/some-uuid/ticket9326/trac_9326_toric_cohomology_reviewer.patch) by novoselt created at 2010-07-28 04:54:46
 
 OK, here is the patch, let me know if you approve it. I have
 * changed `_latex_` to give LaTeX representation of the lift-polynomial, I think it is better than using text representation;
@@ -759,7 +759,7 @@ Thank you ;-) For the release manager: please merge patches in the following ord
 archive/issue_comments_087977.json:
 ```json
 {
-    "body": "Attachment\n\nRefreshed patch for sage-4.5.2",
+    "body": "Attachment [trac_9326_QuotientRing_fix_derived_classes.patch](tarball://root/attachments/some-uuid/ticket9326/trac_9326_QuotientRing_fix_derived_classes.patch) by vbraun created at 2010-08-08 16:05:02\n\nRefreshed patch for sage-4.5.2",
     "created_at": "2010-08-08T16:05:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_comment",
@@ -768,7 +768,7 @@ archive/issue_comments_087977.json:
 }
 ```
 
-Attachment
+Attachment [trac_9326_QuotientRing_fix_derived_classes.patch](tarball://root/attachments/some-uuid/ticket9326/trac_9326_QuotientRing_fix_derived_classes.patch) by vbraun created at 2010-08-08 16:05:02
 
 Refreshed patch for sage-4.5.2
 

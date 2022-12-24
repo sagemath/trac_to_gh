@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/966
 archive/issue_comments_005896.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6991.patch](tarball://root/attachments/some-uuid/ticket966/6991.patch) by malb created at 2007-10-21 21:19:19",
     "created_at": "2007-10-21T21:19:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/966",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_005896.json:
 }
 ```
 
-Attachment
+Attachment [6991.patch](tarball://root/attachments/some-uuid/ticket966/6991.patch) by malb created at 2007-10-21 21:19:19
 
 
 
@@ -51,7 +51,7 @@ Attachment
 archive/issue_comments_005897.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [7113.patch](tarball://root/attachments/some-uuid/ticket966/7113.patch) by malb created at 2007-10-21 21:19:42",
     "created_at": "2007-10-21T21:19:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/966",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_005897.json:
 }
 ```
 
-Attachment
+Attachment [7113.patch](tarball://root/attachments/some-uuid/ticket966/7113.patch) by malb created at 2007-10-21 21:19:42
 
 
 
@@ -69,7 +69,7 @@ Attachment
 archive/issue_comments_005898.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [7114.patch](tarball://root/attachments/some-uuid/ticket966/7114.patch) by malb created at 2007-10-21 21:19:54",
     "created_at": "2007-10-21T21:19:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/966",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_005898.json:
 }
 ```
 
-Attachment
+Attachment [7114.patch](tarball://root/attachments/some-uuid/ticket966/7114.patch) by malb created at 2007-10-21 21:19:54
 
 
 

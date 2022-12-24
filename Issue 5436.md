@@ -49,7 +49,7 @@ fixed typos in response to ticket #5416
 archive/issue_comments_042051.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch fixes a number of typos I noticed while reviewing ticket #5416. It depends, of course, on applying #5416 first, and is based on Sage 3.4.rc0.",
+    "body": "Attachment [trac_5436_typos.patch](tarball://root/attachments/some-uuid/ticket5436/trac_5436_typos.patch) by mvngu created at 2009-03-04 05:50:29\n\nThe patch fixes a number of typos I noticed while reviewing ticket #5416. It depends, of course, on applying #5416 first, and is based on Sage 3.4.rc0.",
     "created_at": "2009-03-04T05:50:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5436",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_042051.json:
 }
 ```
 
-Attachment
+Attachment [trac_5436_typos.patch](tarball://root/attachments/some-uuid/ticket5436/trac_5436_typos.patch) by mvngu created at 2009-03-04 05:50:29
 
 The patch fixes a number of typos I noticed while reviewing ticket #5416. It depends, of course, on applying #5416 first, and is based on Sage 3.4.rc0.
 

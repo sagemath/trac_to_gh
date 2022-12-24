@@ -116,7 +116,7 @@ This is due to changes in Maxima's formatting of the output for eigenvectors.  S
 archive/issue_comments_055908.json:
 ```json
 {
-    "body": "Attachment\n\napply after the spkg's at #6564 and #6699",
+    "body": "Attachment [trac_6783.patch](tarball://root/attachments/some-uuid/ticket6783/trac_6783.patch) by AlexGhitza created at 2009-08-20 23:28:28\n\napply after the spkg's at #6564 and #6699",
     "created_at": "2009-08-20T23:28:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6783",
     "type": "issue_comment",
@@ -125,7 +125,7 @@ archive/issue_comments_055908.json:
 }
 ```
 
-Attachment
+Attachment [trac_6783.patch](tarball://root/attachments/some-uuid/ticket6783/trac_6783.patch) by AlexGhitza created at 2009-08-20 23:28:28
 
 apply after the spkg's at #6564 and #6699
 

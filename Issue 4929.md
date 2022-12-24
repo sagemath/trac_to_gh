@@ -71,7 +71,7 @@ Changing assignee from tba to mabshoff.
 archive/issue_comments_037398.json:
 ```json
 {
-    "body": "Attachment\n\nPerfunctory positive review.",
+    "body": "Attachment [trac_4929.patch](tarball://root/attachments/some-uuid/ticket4929/trac_4929.patch) by kedlaya created at 2009-01-03 03:39:14\n\nPerfunctory positive review.",
     "created_at": "2009-01-03T03:39:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4929",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_037398.json:
 }
 ```
 
-Attachment
+Attachment [trac_4929.patch](tarball://root/attachments/some-uuid/ticket4929/trac_4929.patch) by kedlaya created at 2009-01-03 03:39:14
 
 Perfunctory positive review.
 

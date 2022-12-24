@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5706
 archive/issue_comments_044589.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5706.patch](tarball://root/attachments/some-uuid/ticket5706/trac_5706.patch) by was created at 2009-04-09 06:11:45",
     "created_at": "2009-04-09T06:11:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5706",
     "type": "issue_comment",
@@ -51,7 +51,7 @@ archive/issue_comments_044589.json:
 }
 ```
 
-Attachment
+Attachment [trac_5706.patch](tarball://root/attachments/some-uuid/ticket5706/trac_5706.patch) by was created at 2009-04-09 06:11:45
 
 
 
@@ -97,7 +97,7 @@ Michael
 archive/issue_comments_044591.json:
 ```json
 {
-    "body": "Attachment\n\nSlightly fixed up version of William's patch due to deprecation of substitution (see #5413)",
+    "body": "Attachment [trac_5706.2.patch](tarball://root/attachments/some-uuid/ticket5706/trac_5706.2.patch) by mabshoff created at 2009-04-09 06:40:29\n\nSlightly fixed up version of William's patch due to deprecation of substitution (see #5413)",
     "created_at": "2009-04-09T06:40:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5706",
     "type": "issue_comment",
@@ -106,7 +106,7 @@ archive/issue_comments_044591.json:
 }
 ```
 
-Attachment
+Attachment [trac_5706.2.patch](tarball://root/attachments/some-uuid/ticket5706/trac_5706.2.patch) by mabshoff created at 2009-04-09 06:40:29
 
 Slightly fixed up version of William's patch due to deprecation of substitution (see #5413)
 

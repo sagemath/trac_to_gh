@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3327
 archive/issue_comments_023074.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [field_element_divides.patch](tarball://root/attachments/some-uuid/ticket3327/field_element_divides.patch) by cwitty created at 2008-05-29 03:20:22",
     "created_at": "2008-05-29T03:20:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3327",
     "type": "issue_comment",
@@ -50,7 +50,7 @@ archive/issue_comments_023074.json:
 }
 ```
 
-Attachment
+Attachment [field_element_divides.patch](tarball://root/attachments/some-uuid/ticket3327/field_element_divides.patch) by cwitty created at 2008-05-29 03:20:22
 
 
 

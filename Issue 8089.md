@@ -150,7 +150,7 @@ Successfully installed ecl-10.2.1.p0
 archive/issue_comments_070890.json:
 ```json
 {
-    "body": "Attachment\n\nMercurial patch to disable assembly code on OpenSolaris x64",
+    "body": "Attachment [disable-assembly-code-on-OpenSolaris.patch](tarball://root/attachments/some-uuid/ticket8089/disable-assembly-code-on-OpenSolaris.patch) by drkirkby created at 2010-05-31 00:35:57\n\nMercurial patch to disable assembly code on OpenSolaris x64",
     "created_at": "2010-05-31T00:35:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8089",
     "type": "issue_comment",
@@ -159,7 +159,7 @@ archive/issue_comments_070890.json:
 }
 ```
 
-Attachment
+Attachment [disable-assembly-code-on-OpenSolaris.patch](tarball://root/attachments/some-uuid/ticket8089/disable-assembly-code-on-OpenSolaris.patch) by drkirkby created at 2010-05-31 00:35:57
 
 Mercurial patch to disable assembly code on OpenSolaris x64
 

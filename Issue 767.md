@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/767
 archive/issue_comments_004534.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [767.patch](tarball://root/attachments/some-uuid/ticket767/767.patch) by jhpalmieri created at 2008-09-30 16:58:56",
     "created_at": "2008-09-30T16:58:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/767",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_004534.json:
 }
 ```
 
-Attachment
+Attachment [767.patch](tarball://root/attachments/some-uuid/ticket767/767.patch) by jhpalmieri created at 2008-09-30 16:58:56
 
 
 
@@ -210,7 +210,7 @@ Also, in my experience, running `animate(...)` doesn't require convert, *showing
 archive/issue_comments_004541.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_767_doctest_fix.patch](tarball://root/attachments/some-uuid/ticket767/trac_767_doctest_fix.patch) by mabshoff created at 2008-09-30 18:16:46",
     "created_at": "2008-09-30T18:16:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/767",
     "type": "issue_comment",
@@ -219,7 +219,7 @@ archive/issue_comments_004541.json:
 }
 ```
 
-Attachment
+Attachment [trac_767_doctest_fix.patch](tarball://root/attachments/some-uuid/ticket767/trac_767_doctest_fix.patch) by mabshoff created at 2008-09-30 18:16:46
 
 
 

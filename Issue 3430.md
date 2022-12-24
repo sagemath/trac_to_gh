@@ -79,7 +79,7 @@ Changing assignee from failure to mabshoff.
 archive/issue_comments_024181.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3430-doctest-update.patch](tarball://root/attachments/some-uuid/ticket3430/3430-doctest-update.patch) by boothby created at 2008-06-16 03:50:27",
     "created_at": "2008-06-16T03:50:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3430",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_024181.json:
 }
 ```
 
-Attachment
+Attachment [3430-doctest-update.patch](tarball://root/attachments/some-uuid/ticket3430/3430-doctest-update.patch) by boothby created at 2008-06-16 03:50:27
 
 
 

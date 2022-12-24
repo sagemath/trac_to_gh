@@ -132,7 +132,7 @@ Changing status from new to assigned.
 archive/issue_comments_005347.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-2.8.6-fix-memleak-in-multi_modular.patch](tarball://root/attachments/some-uuid/ticket865/Sage-2.8.6-fix-memleak-in-multi_modular.patch) by mabshoff created at 2007-10-12 19:50:46",
     "created_at": "2007-10-12T19:50:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/865",
     "type": "issue_comment",
@@ -141,7 +141,7 @@ archive/issue_comments_005347.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.8.6-fix-memleak-in-multi_modular.patch](tarball://root/attachments/some-uuid/ticket865/Sage-2.8.6-fix-memleak-in-multi_modular.patch) by mabshoff created at 2007-10-12 19:50:46
 
 
 
@@ -150,7 +150,7 @@ Attachment
 archive/issue_comments_005348.json:
 ```json
 {
-    "body": "Attachment\n\nOops, sorry for patch #2, it is identical to the previous one. I did a reload on a tab I wanted to close.\n\nCheers,\n\nMichael",
+    "body": "Attachment [Sage-2.8.6-fix-memleak-in-multi_modular.2.patch](tarball://root/attachments/some-uuid/ticket865/Sage-2.8.6-fix-memleak-in-multi_modular.2.patch) by mabshoff created at 2007-10-12 21:20:41\n\nOops, sorry for patch #2, it is identical to the previous one. I did a reload on a tab I wanted to close.\n\nCheers,\n\nMichael",
     "created_at": "2007-10-12T21:20:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/865",
     "type": "issue_comment",
@@ -159,7 +159,7 @@ archive/issue_comments_005348.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.8.6-fix-memleak-in-multi_modular.2.patch](tarball://root/attachments/some-uuid/ticket865/Sage-2.8.6-fix-memleak-in-multi_modular.2.patch) by mabshoff created at 2007-10-12 21:20:41
 
 Oops, sorry for patch #2, it is identical to the previous one. I did a reload on a tab I wanted to close.
 

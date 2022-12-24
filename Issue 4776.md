@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4776
 archive/issue_comments_036196.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [mpoly_random_element.patch](tarball://root/attachments/some-uuid/ticket4776/mpoly_random_element.patch) by malb created at 2008-12-13 15:31:30",
     "created_at": "2008-12-13T15:31:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4776",
     "type": "issue_comment",
@@ -53,7 +53,7 @@ archive/issue_comments_036196.json:
 }
 ```
 
-Attachment
+Attachment [mpoly_random_element.patch](tarball://root/attachments/some-uuid/ticket4776/mpoly_random_element.patch) by malb created at 2008-12-13 15:31:30
 
 
 

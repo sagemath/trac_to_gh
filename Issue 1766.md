@@ -54,7 +54,7 @@ archive/issue_comments_011152.json:
 archive/issue_comments_011153.json:
 ```json
 {
-    "body": "Attachment\n\nignore the .hg, it is outdated and i cannot upload the current one because of it's size\n\n\n\n** use the link above to the zip file! **",
+    "body": "Attachment [latex_embedding.hg](tarball://root/attachments/some-uuid/ticket1766/latex_embedding.hg) by schilly created at 2008-01-16 21:57:26\n\nignore the .hg, it is outdated and i cannot upload the current one because of it's size\n\n\n\n** use the link above to the zip file! **",
     "created_at": "2008-01-16T21:57:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_011153.json:
 }
 ```
 
-Attachment
+Attachment [latex_embedding.hg](tarball://root/attachments/some-uuid/ticket1766/latex_embedding.hg) by schilly created at 2008-01-16 21:57:26
 
 ignore the .hg, it is outdated and i cannot upload the current one because of it's size
 
@@ -199,7 +199,7 @@ This is now #1925
 archive/issue_comments_011160.json:
 ```json
 {
-    "body": "Attachment\n\npatch to current version of sagetex.{sty,py}",
+    "body": "Attachment [latex_embed_updates.hg](tarball://root/attachments/some-uuid/ticket1766/latex_embed_updates.hg) by ddrake created at 2008-02-25 05:55:13\n\npatch to current version of sagetex.{sty,py}",
     "created_at": "2008-02-25T05:55:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
@@ -208,7 +208,7 @@ archive/issue_comments_011160.json:
 }
 ```
 
-Attachment
+Attachment [latex_embed_updates.hg](tarball://root/attachments/some-uuid/ticket1766/latex_embed_updates.hg) by ddrake created at 2008-02-25 05:55:13
 
 patch to current version of sagetex.{sty,py}
 
@@ -237,7 +237,7 @@ patch to current version of sagetex.{sty,py}
 archive/issue_comments_011162.json:
 ```json
 {
-    "body": "Attachment\n\nPlease ignore the bundles! I'm still new to Mercurial.\n\nThe patch updates sagetex.{sty,py}, but there's more to be done. The biggest issue is that when running Sage on the produced .sage file, it pops up windows with all the plots. (In Ubuntu gutsy, at least.) We need to find a way to keep Sage from doing this while processing the script.",
+    "body": "Attachment [latex_embed_updates.2.hg](tarball://root/attachments/some-uuid/ticket1766/latex_embed_updates.2.hg) by ddrake created at 2008-02-25 07:03:21\n\nPlease ignore the bundles! I'm still new to Mercurial.\n\nThe patch updates sagetex.{sty,py}, but there's more to be done. The biggest issue is that when running Sage on the produced .sage file, it pops up windows with all the plots. (In Ubuntu gutsy, at least.) We need to find a way to keep Sage from doing this while processing the script.",
     "created_at": "2008-02-25T07:03:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
@@ -246,7 +246,7 @@ archive/issue_comments_011162.json:
 }
 ```
 
-Attachment
+Attachment [latex_embed_updates.2.hg](tarball://root/attachments/some-uuid/ticket1766/latex_embed_updates.2.hg) by ddrake created at 2008-02-25 07:03:21
 
 Please ignore the bundles! I'm still new to Mercurial.
 
@@ -564,7 +564,7 @@ The current version of the patch fixes a misplaced brace, and adds the imagemagi
 archive/issue_comments_011175.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sagetex.patch](tarball://root/attachments/some-uuid/ticket1766/sagetex.patch) by was created at 2008-03-12 04:49:24",
     "created_at": "2008-03-12T04:49:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
@@ -573,7 +573,7 @@ archive/issue_comments_011175.json:
 }
 ```
 
-Attachment
+Attachment [sagetex.patch](tarball://root/attachments/some-uuid/ticket1766/sagetex.patch) by was created at 2008-03-12 04:49:24
 
 
 

@@ -95,7 +95,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5140
 archive/issue_comments_039302.json:
 ```json
 {
-    "body": "Attachment\n\nThe mentioned modification.",
+    "body": "Attachment [irred_bug_fix.bundle.hg](tarball://root/attachments/some-uuid/ticket5140/irred_bug_fix.bundle.hg) by lars.fischer created at 2009-01-30 21:16:31\n\nThe mentioned modification.",
     "created_at": "2009-01-30T21:16:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5140",
     "type": "issue_comment",
@@ -104,7 +104,7 @@ archive/issue_comments_039302.json:
 }
 ```
 
-Attachment
+Attachment [irred_bug_fix.bundle.hg](tarball://root/attachments/some-uuid/ticket5140/irred_bug_fix.bundle.hg) by lars.fischer created at 2009-01-30 21:16:31
 
 The mentioned modification.
 
@@ -139,7 +139,7 @@ Michael
 archive/issue_comments_039304.json:
 ```json
 {
-    "body": "Attachment\n\nThe same patch via hg_sage.export().",
+    "body": "Attachment [irred_bug_fix.export.patch](tarball://root/attachments/some-uuid/ticket5140/irred_bug_fix.export.patch) by lars.fischer created at 2009-01-31 13:11:13\n\nThe same patch via hg_sage.export().",
     "created_at": "2009-01-31T13:11:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5140",
     "type": "issue_comment",
@@ -148,7 +148,7 @@ archive/issue_comments_039304.json:
 }
 ```
 
-Attachment
+Attachment [irred_bug_fix.export.patch](tarball://root/attachments/some-uuid/ticket5140/irred_bug_fix.export.patch) by lars.fischer created at 2009-01-31 13:11:13
 
 The same patch via hg_sage.export().
 
@@ -235,7 +235,7 @@ Changing priority from trivial to minor.
 archive/issue_comments_039308.json:
 ```json
 {
-    "body": "Attachment\n\nReplaces earlier patches; based on 3.3.alpha3",
+    "body": "Attachment [trac_5140.patch](tarball://root/attachments/some-uuid/ticket5140/trac_5140.patch) by cremona created at 2009-02-01 16:12:58\n\nReplaces earlier patches; based on 3.3.alpha3",
     "created_at": "2009-02-01T16:12:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5140",
     "type": "issue_comment",
@@ -244,7 +244,7 @@ archive/issue_comments_039308.json:
 }
 ```
 
-Attachment
+Attachment [trac_5140.patch](tarball://root/attachments/some-uuid/ticket5140/trac_5140.patch) by cremona created at 2009-02-01 16:12:58
 
 Replaces earlier patches; based on 3.3.alpha3
 
@@ -255,7 +255,7 @@ Replaces earlier patches; based on 3.3.alpha3
 archive/issue_comments_039309.json:
 ```json
 {
-    "body": "Attachment\n\nReplaces all previous; based on 3.4",
+    "body": "Attachment [trac_5140_rebase.patch](tarball://root/attachments/some-uuid/ticket5140/trac_5140_rebase.patch) by cremona created at 2009-03-18 17:33:39\n\nReplaces all previous; based on 3.4",
     "created_at": "2009-03-18T17:33:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5140",
     "type": "issue_comment",
@@ -264,7 +264,7 @@ archive/issue_comments_039309.json:
 }
 ```
 
-Attachment
+Attachment [trac_5140_rebase.patch](tarball://root/attachments/some-uuid/ticket5140/trac_5140_rebase.patch) by cremona created at 2009-03-18 17:33:39
 
 Replaces all previous; based on 3.4
 

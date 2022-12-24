@@ -107,7 +107,7 @@ Rob
 archive/issue_comments_078261.json:
 ```json
 {
-    "body": "Attachment\n\npatch for sagenb - depends on #8222",
+    "body": "Attachment [8631.sagenb.patch](tarball://root/attachments/some-uuid/ticket8631/8631.sagenb.patch) by rkirov created at 2010-04-29 02:20:36\n\npatch for sagenb - depends on #8222",
     "created_at": "2010-04-29T02:20:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8631",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_078261.json:
 }
 ```
 
-Attachment
+Attachment [8631.sagenb.patch](tarball://root/attachments/some-uuid/ticket8631/8631.sagenb.patch) by rkirov created at 2010-04-29 02:20:36
 
 patch for sagenb - depends on #8222
 
@@ -127,7 +127,7 @@ patch for sagenb - depends on #8222
 archive/issue_comments_078262.json:
 ```json
 {
-    "body": "Attachment\n\ntiny sage patch to avoid a circular import",
+    "body": "Attachment [8631.sage.patch](tarball://root/attachments/some-uuid/ticket8631/8631.sage.patch) by rkirov created at 2010-04-29 02:30:57\n\ntiny sage patch to avoid a circular import",
     "created_at": "2010-04-29T02:30:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8631",
     "type": "issue_comment",
@@ -136,7 +136,7 @@ archive/issue_comments_078262.json:
 }
 ```
 
-Attachment
+Attachment [8631.sage.patch](tarball://root/attachments/some-uuid/ticket8631/8631.sage.patch) by rkirov created at 2010-04-29 02:30:57
 
 tiny sage patch to avoid a circular import
 
@@ -235,7 +235,7 @@ Screenshot of graph editor interact control
 archive/issue_comments_078267.json:
 ```json
 {
-    "body": "Attachment\n\nNice!\n\nIt looks like in the patch that there is a huge section of code that is commented out that should be just deleted.",
+    "body": "Attachment [graph-interact.png](tarball://root/attachments/some-uuid/ticket8631/graph-interact.png) by jason created at 2010-04-30 01:09:36\n\nNice!\n\nIt looks like in the patch that there is a huge section of code that is commented out that should be just deleted.",
     "created_at": "2010-04-30T01:09:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8631",
     "type": "issue_comment",
@@ -244,7 +244,7 @@ archive/issue_comments_078267.json:
 }
 ```
 
-Attachment
+Attachment [graph-interact.png](tarball://root/attachments/some-uuid/ticket8631/graph-interact.png) by jason created at 2010-04-30 01:09:36
 
 Nice!
 

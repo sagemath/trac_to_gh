@@ -124,7 +124,7 @@ Updated `spkg/install/deps` based on 4.5.alpha1.
 archive/issue_comments_087347.json:
 ```json
 {
-    "body": "Attachment\n\nDiff of `spkg/install/deps` vs. 4.5.alpha1.",
+    "body": "Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket9274/deps.diff) by mpatel created at 2010-06-30 02:43:53\n\nDiff of `spkg/install/deps` vs. 4.5.alpha1.",
     "created_at": "2010-06-30T02:43:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9274",
     "type": "issue_comment",
@@ -133,7 +133,7 @@ archive/issue_comments_087347.json:
 }
 ```
 
-Attachment
+Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket9274/deps.diff) by mpatel created at 2010-06-30 02:43:53
 
 Diff of `spkg/install/deps` vs. 4.5.alpha1.
 
@@ -368,7 +368,7 @@ rebased against 4.5.alpha3
 archive/issue_comments_087358.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [deps-new.diff](tarball://root/attachments/some-uuid/ticket9274/deps-new.diff) by jhpalmieri created at 2010-07-06 03:44:10",
     "created_at": "2010-07-06T03:44:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9274",
     "type": "issue_comment",
@@ -377,7 +377,7 @@ archive/issue_comments_087358.json:
 }
 ```
 
-Attachment
+Attachment [deps-new.diff](tarball://root/attachments/some-uuid/ticket9274/deps-new.diff) by jhpalmieri created at 2010-07-06 03:44:10
 
 
 

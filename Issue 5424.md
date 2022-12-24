@@ -49,7 +49,7 @@ Plus got coverage from 9% to 100%
 archive/issue_comments_041978.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5424-coerce-infinity.patch](tarball://root/attachments/some-uuid/ticket5424/5424-coerce-infinity.patch) by mhansen created at 2009-03-07 22:02:21",
     "created_at": "2009-03-07T22:02:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5424",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_041978.json:
 }
 ```
 
-Attachment
+Attachment [5424-coerce-infinity.patch](tarball://root/attachments/some-uuid/ticket5424/5424-coerce-infinity.patch) by mhansen created at 2009-03-07 22:02:21
 
 
 
@@ -67,7 +67,7 @@ Attachment
 archive/issue_comments_041979.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached trac_5424.patch which is the original patch rebased against 3.4.rc1 (and converted  use Sphinx syntax).",
+    "body": "Attachment [trac_5424.patch](tarball://root/attachments/some-uuid/ticket5424/trac_5424.patch) by mhansen created at 2009-03-07 22:02:57\n\nI've attached trac_5424.patch which is the original patch rebased against 3.4.rc1 (and converted  use Sphinx syntax).",
     "created_at": "2009-03-07T22:02:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5424",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_041979.json:
 }
 ```
 
-Attachment
+Attachment [trac_5424.patch](tarball://root/attachments/some-uuid/ticket5424/trac_5424.patch) by mhansen created at 2009-03-07 22:02:57
 
 I've attached trac_5424.patch which is the original patch rebased against 3.4.rc1 (and converted  use Sphinx syntax).
 

@@ -88,7 +88,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9019
 archive/issue_comments_083456.json:
 ```json
 {
-    "body": "Attachment\n\nis_injective/is_surjective for MatrixMorphism, cmp for FormalCompositeMap, more efficient composition of ring homomorphisms, full doctest coverage for sage.categories.map",
+    "body": "Attachment [9019_map_doctests.patch](tarball://root/attachments/some-uuid/ticket9019/9019_map_doctests.patch) by SimonKing created at 2010-05-22 17:37:07\n\nis_injective/is_surjective for MatrixMorphism, cmp for FormalCompositeMap, more efficient composition of ring homomorphisms, full doctest coverage for sage.categories.map",
     "created_at": "2010-05-22T17:37:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9019",
     "type": "issue_comment",
@@ -97,7 +97,7 @@ archive/issue_comments_083456.json:
 }
 ```
 
-Attachment
+Attachment [9019_map_doctests.patch](tarball://root/attachments/some-uuid/ticket9019/9019_map_doctests.patch) by SimonKing created at 2010-05-22 17:37:07
 
 is_injective/is_surjective for MatrixMorphism, cmp for FormalCompositeMap, more efficient composition of ring homomorphisms, full doctest coverage for sage.categories.map
 
@@ -126,7 +126,7 @@ Changing status from new to needs_review.
 archive/issue_comments_083458.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good, positive review, modulo approval of my tiny referee patch that adds an actual example for Map.section()",
+    "body": "Attachment [9019-map-doctest-referee.patch](tarball://root/attachments/some-uuid/ticket9019/9019-map-doctest-referee.patch) by robertwb created at 2010-05-25 01:15:10\n\nLooks good, positive review, modulo approval of my tiny referee patch that adds an actual example for Map.section()",
     "created_at": "2010-05-25T01:15:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9019",
     "type": "issue_comment",
@@ -135,7 +135,7 @@ archive/issue_comments_083458.json:
 }
 ```
 
-Attachment
+Attachment [9019-map-doctest-referee.patch](tarball://root/attachments/some-uuid/ticket9019/9019-map-doctest-referee.patch) by robertwb created at 2010-05-25 01:15:10
 
 Looks good, positive review, modulo approval of my tiny referee patch that adds an actual example for Map.section()
 

@@ -92,7 +92,7 @@ the actual patch
 archive/issue_comments_008751.json:
 ```json
 {
-    "body": "Attachment\n\nnote - there are lots of bugs with the current version. I will work on fixing them on 12/3, but probably not before.\n-Bobby",
+    "body": "Attachment [deps.patch](tarball://root/attachments/some-uuid/ticket1366/deps.patch) by moretti created at 2007-12-03 07:05:23\n\nnote - there are lots of bugs with the current version. I will work on fixing them on 12/3, but probably not before.\n-Bobby",
     "created_at": "2007-12-03T07:05:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1366",
     "type": "issue_comment",
@@ -101,7 +101,7 @@ archive/issue_comments_008751.json:
 }
 ```
 
-Attachment
+Attachment [deps.patch](tarball://root/attachments/some-uuid/ticket1366/deps.patch) by moretti created at 2007-12-03 07:05:23
 
 note - there are lots of bugs with the current version. I will work on fixing them on 12/3, but probably not before.
 -Bobby
@@ -113,7 +113,7 @@ note - there are lots of bugs with the current version. I will work on fixing th
 archive/issue_comments_008752.json:
 ```json
 {
-    "body": "Attachment\n\nIgnore the deps* stuff that bobby posted above, and just use this patch (or later ones?)",
+    "body": "Attachment [deps.hg](tarball://root/attachments/some-uuid/ticket1366/deps.hg) by was created at 2007-12-06 14:27:36\n\nIgnore the deps* stuff that bobby posted above, and just use this patch (or later ones?)",
     "created_at": "2007-12-06T14:27:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1366",
     "type": "issue_comment",
@@ -122,7 +122,7 @@ archive/issue_comments_008752.json:
 }
 ```
 
-Attachment
+Attachment [deps.hg](tarball://root/attachments/some-uuid/ticket1366/deps.hg) by was created at 2007-12-06 14:27:36
 
 Ignore the deps* stuff that bobby posted above, and just use this patch (or later ones?)
 
@@ -133,7 +133,7 @@ Ignore the deps* stuff that bobby posted above, and just use this patch (or late
 archive/issue_comments_008753.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac1366.patch](tarball://root/attachments/some-uuid/ticket1366/trac1366.patch) by was created at 2007-12-06 14:40:21",
     "created_at": "2007-12-06T14:40:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1366",
     "type": "issue_comment",
@@ -142,7 +142,7 @@ archive/issue_comments_008753.json:
 }
 ```
 
-Attachment
+Attachment [trac1366.patch](tarball://root/attachments/some-uuid/ticket1366/trac1366.patch) by was created at 2007-12-06 14:40:21
 
 
 
@@ -372,7 +372,7 @@ removed debug statements :)
 archive/issue_comments_008764.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [deps2.hg](tarball://root/attachments/some-uuid/ticket1366/deps2.hg) by moretti created at 2008-02-08 05:50:38",
     "created_at": "2008-02-08T05:50:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1366",
     "type": "issue_comment",
@@ -381,7 +381,7 @@ archive/issue_comments_008764.json:
 }
 ```
 
-Attachment
+Attachment [deps2.hg](tarball://root/attachments/some-uuid/ticket1366/deps2.hg) by moretti created at 2008-02-08 05:50:38
 
 
 

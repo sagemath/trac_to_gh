@@ -182,7 +182,7 @@ This test checks that it works.  Passes relevant test, plot looks good.
 archive/issue_comments_063780.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7524-options-save.patch](tarball://root/attachments/some-uuid/ticket7524/trac_7524-options-save.patch) by kcrisman created at 2011-01-17 21:18:35",
     "created_at": "2011-01-17T21:18:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7524",
     "type": "issue_comment",
@@ -191,7 +191,7 @@ archive/issue_comments_063780.json:
 }
 ```
 
-Attachment
+Attachment [trac_7524-options-save.patch](tarball://root/attachments/some-uuid/ticket7524/trac_7524-options-save.patch) by kcrisman created at 2011-01-17 21:18:35
 
 
 

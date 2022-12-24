@@ -66,7 +66,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1080
 archive/issue_comments_006535.json:
 ```json
 {
-    "body": "Attachment\n\nFound it.  Gap sends garbage collection information that starts with an '`@`', followed by one of these characters '123456!\"#$%&', and then terminated by a plus sign.  The code was sometimes grabbing too much data, including part of the real Gap output.",
+    "body": "Attachment [1080.patch](tarball://root/attachments/some-uuid/ticket1080/1080.patch) by cwitty created at 2007-11-03 18:42:05\n\nFound it.  Gap sends garbage collection information that starts with an '`@`', followed by one of these characters '123456!\"#$%&', and then terminated by a plus sign.  The code was sometimes grabbing too much data, including part of the real Gap output.",
     "created_at": "2007-11-03T18:42:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1080",
     "type": "issue_comment",
@@ -75,7 +75,7 @@ archive/issue_comments_006535.json:
 }
 ```
 
-Attachment
+Attachment [1080.patch](tarball://root/attachments/some-uuid/ticket1080/1080.patch) by cwitty created at 2007-11-03 18:42:05
 
 Found it.  Gap sends garbage collection information that starts with an '`@`', followed by one of these characters '123456!"#$%&', and then terminated by a plus sign.  The code was sometimes grabbing too much data, including part of the real Gap output.
 

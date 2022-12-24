@@ -164,7 +164,7 @@ I've cleaned up some trailing whitespace, so that there isn't nothing to do here
 archive/issue_comments_081590.json:
 ```json
 {
-    "body": "Attachment\n\nRemove trailing whitespace.",
+    "body": "Attachment [sage-trac_8879.patch](tarball://root/attachments/some-uuid/ticket8879/sage-trac_8879.patch) by mjo created at 2012-01-16 03:46:19\n\nRemove trailing whitespace.",
     "created_at": "2012-01-16T03:46:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8879",
     "type": "issue_comment",
@@ -173,7 +173,7 @@ archive/issue_comments_081590.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac_8879.patch](tarball://root/attachments/some-uuid/ticket8879/sage-trac_8879.patch) by mjo created at 2012-01-16 03:46:19
 
 Remove trailing whitespace.
 

@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6925
 archive/issue_comments_057181.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch touches abvar.py and cuspidal_subgroup.py",
+    "body": "Attachment [12846.patch](tarball://root/attachments/some-uuid/ticket6925/12846.patch) by syazdani created at 2009-09-11 23:50:12\n\nThis patch touches abvar.py and cuspidal_subgroup.py",
     "created_at": "2009-09-11T23:50:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
@@ -49,7 +49,7 @@ archive/issue_comments_057181.json:
 }
 ```
 
-Attachment
+Attachment [12846.patch](tarball://root/attachments/some-uuid/ticket6925/12846.patch) by syazdani created at 2009-09-11 23:50:12
 
 This patch touches abvar.py and cuspidal_subgroup.py
 
@@ -60,7 +60,7 @@ This patch touches abvar.py and cuspidal_subgroup.py
 archive/issue_comments_057182.json:
 ```json
 {
-    "body": "Attachment\n\nrebased against 5969",
+    "body": "Attachment [6925-rationalcuspidal.patch](tarball://root/attachments/some-uuid/ticket6925/6925-rationalcuspidal.patch) by syazdani created at 2009-09-17 20:14:09\n\nrebased against 5969",
     "created_at": "2009-09-17T20:14:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
@@ -69,7 +69,7 @@ archive/issue_comments_057182.json:
 }
 ```
 
-Attachment
+Attachment [6925-rationalcuspidal.patch](tarball://root/attachments/some-uuid/ticket6925/6925-rationalcuspidal.patch) by syazdani created at 2009-09-17 20:14:09
 
 rebased against 5969
 
@@ -566,7 +566,7 @@ changed the name to rational_cuspidal_subgroup_ligozat, and few other changes.
 archive/issue_comments_057198.json:
 ```json
 {
-    "body": "Attachment\n\nChapoton's fix was correct. The initial doctest was incorrect.\n\nAlso, that is the correct Ligozat reference. I added the reference to my paper as well, which is what the algorithm is based upon.\n\nI changed the name of rational_direct_cuspidal_subgroup to rational_cuspidal_subgroup_ligozat, as it was suggested, and replaced cmp function with eq and ne functions instead.\n\nFinally, sorry for being MIA on this ticket for so long. I think I had an incorrect filter archiving these emails automatically.",
+    "body": "Attachment [trac_6925_addon2.patch](tarball://root/attachments/some-uuid/ticket6925/trac_6925_addon2.patch) by syazdani created at 2013-10-07 05:55:00\n\nChapoton's fix was correct. The initial doctest was incorrect.\n\nAlso, that is the correct Ligozat reference. I added the reference to my paper as well, which is what the algorithm is based upon.\n\nI changed the name of rational_direct_cuspidal_subgroup to rational_cuspidal_subgroup_ligozat, as it was suggested, and replaced cmp function with eq and ne functions instead.\n\nFinally, sorry for being MIA on this ticket for so long. I think I had an incorrect filter archiving these emails automatically.",
     "created_at": "2013-10-07T05:55:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
@@ -575,7 +575,7 @@ archive/issue_comments_057198.json:
 }
 ```
 
-Attachment
+Attachment [trac_6925_addon2.patch](tarball://root/attachments/some-uuid/ticket6925/trac_6925_addon2.patch) by syazdani created at 2013-10-07 05:55:00
 
 Chapoton's fix was correct. The initial doctest was incorrect.
 
@@ -650,7 +650,7 @@ apply 6925-rationalcuspidal.patch trac_6925_addon1.patch
 archive/issue_comments_057202.json:
 ```json
 {
-    "body": "Attachment\n\nnew patch, minor details changed, should now pass the tests",
+    "body": "Attachment [trac_6925_addon1.patch](tarball://root/attachments/some-uuid/ticket6925/trac_6925_addon1.patch) by chapoton created at 2013-10-23 19:13:31\n\nnew patch, minor details changed, should now pass the tests",
     "created_at": "2013-10-23T19:13:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
@@ -659,7 +659,7 @@ archive/issue_comments_057202.json:
 }
 ```
 
-Attachment
+Attachment [trac_6925_addon1.patch](tarball://root/attachments/some-uuid/ticket6925/trac_6925_addon1.patch) by chapoton created at 2013-10-23 19:13:31
 
 new patch, minor details changed, should now pass the tests
 
@@ -670,7 +670,7 @@ new patch, minor details changed, should now pass the tests
 archive/issue_comments_057203.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-6925-rationalcuspidal-rebased-v1.patch](tarball://root/attachments/some-uuid/ticket6925/trac-6925-rationalcuspidal-rebased-v1.patch) by chapoton created at 2013-10-25 18:00:00",
     "created_at": "2013-10-25T18:00:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
@@ -679,7 +679,7 @@ archive/issue_comments_057203.json:
 }
 ```
 
-Attachment
+Attachment [trac-6925-rationalcuspidal-rebased-v1.patch](tarball://root/attachments/some-uuid/ticket6925/trac-6925-rationalcuspidal-rebased-v1.patch) by chapoton created at 2013-10-25 18:00:00
 
 
 

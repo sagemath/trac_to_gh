@@ -147,7 +147,7 @@ I'll replace the patch right-away with the better version.
 archive/issue_comments_046432.json:
 ```json
 {
-    "body": "Attachment\n\nOK, can I just clarify that the problem with the original code is that the GAP Representative function doesn't return a canonical representative? i.e. if you start with two different group elements in the same class, convert them to classes and then ask for their Representative, you might get different answers?",
+    "body": "Attachment [trac_5877.patch](tarball://root/attachments/some-uuid/ticket5877/trac_5877.patch) by dmharvey created at 2009-04-25 12:24:11\n\nOK, can I just clarify that the problem with the original code is that the GAP Representative function doesn't return a canonical representative? i.e. if you start with two different group elements in the same class, convert them to classes and then ask for their Representative, you might get different answers?",
     "created_at": "2009-04-25T12:24:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5877",
     "type": "issue_comment",
@@ -156,7 +156,7 @@ archive/issue_comments_046432.json:
 }
 ```
 
-Attachment
+Attachment [trac_5877.patch](tarball://root/attachments/some-uuid/ticket5877/trac_5877.patch) by dmharvey created at 2009-04-25 12:24:11
 
 OK, can I just clarify that the problem with the original code is that the GAP Representative function doesn't return a canonical representative? i.e. if you start with two different group elements in the same class, convert them to classes and then ask for their Representative, you might get different answers?
 

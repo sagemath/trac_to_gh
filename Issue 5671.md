@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5671
 archive/issue_comments_044358.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5671-part1.patch](tarball://root/attachments/some-uuid/ticket5671/trac_5671-part1.patch) by boothby created at 2009-04-02 22:28:11",
     "created_at": "2009-04-02T22:28:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5671",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_044358.json:
 }
 ```
 
-Attachment
+Attachment [trac_5671-part1.patch](tarball://root/attachments/some-uuid/ticket5671/trac_5671-part1.patch) by boothby created at 2009-04-02 22:28:11
 
 
 
@@ -78,7 +78,7 @@ Michael
 archive/issue_comments_044360.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5671-part2.patch](tarball://root/attachments/some-uuid/ticket5671/trac_5671-part2.patch) by boothby created at 2009-04-02 22:55:32",
     "created_at": "2009-04-02T22:55:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5671",
     "type": "issue_comment",
@@ -87,7 +87,7 @@ archive/issue_comments_044360.json:
 }
 ```
 
-Attachment
+Attachment [trac_5671-part2.patch](tarball://root/attachments/some-uuid/ticket5671/trac_5671-part2.patch) by boothby created at 2009-04-02 22:55:32
 
 
 
@@ -96,7 +96,7 @@ Attachment
 archive/issue_comments_044361.json:
 ```json
 {
-    "body": "Attachment\n\nWith just the posted code to this point:\n\n```\nsage: S = minisat.Solver(verbosity=2)\nsage: S.new_var()\n0\nsage: S.new_var()\n1\nsage: S.new_var()\n2\nsage: S.new_var()\n3\nsage: S.add_clause([1])\npushing lit.p =  Literal 1\nsage: S.add_clause([2])\npushing lit.p =  Literal 2\nsage: S.solve()\n============================[ Search Statistics ]==============================\n===============================================================================\n===============================================================================\nVerified 0 original clauses.\nTrue\n```\n",
+    "body": "Attachment [trac_5671-part3.patch](tarball://root/attachments/some-uuid/ticket5671/trac_5671-part3.patch) by was created at 2009-04-02 23:11:34\n\nWith just the posted code to this point:\n\n```\nsage: S = minisat.Solver(verbosity=2)\nsage: S.new_var()\n0\nsage: S.new_var()\n1\nsage: S.new_var()\n2\nsage: S.new_var()\n3\nsage: S.add_clause([1])\npushing lit.p =  Literal 1\nsage: S.add_clause([2])\npushing lit.p =  Literal 2\nsage: S.solve()\n============================[ Search Statistics ]==============================\n===============================================================================\n===============================================================================\nVerified 0 original clauses.\nTrue\n```\n",
     "created_at": "2009-04-02T23:11:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5671",
     "type": "issue_comment",
@@ -105,7 +105,7 @@ archive/issue_comments_044361.json:
 }
 ```
 
-Attachment
+Attachment [trac_5671-part3.patch](tarball://root/attachments/some-uuid/ticket5671/trac_5671-part3.patch) by was created at 2009-04-02 23:11:34
 
 With just the posted code to this point:
 

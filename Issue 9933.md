@@ -79,7 +79,7 @@ Changing status from new to needs_review.
 archive/issue_comments_098908.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9934_class_group_fixes.patch](tarball://root/attachments/some-uuid/ticket9934/trac_9934_class_group_fixes.patch) by vbraun created at 2010-09-17 14:03:39",
     "created_at": "2010-09-17T14:03:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9933",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_098908.json:
 }
 ```
 
-Attachment
+Attachment [trac_9934_class_group_fixes.patch](tarball://root/attachments/some-uuid/ticket9934/trac_9934_class_group_fixes.patch) by vbraun created at 2010-09-17 14:03:39
 
 
 

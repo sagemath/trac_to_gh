@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2706
 archive/issue_comments_018663.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [bitsets.patch](tarball://root/attachments/some-uuid/ticket2706/bitsets.patch) by robertwb created at 2008-03-28 20:00:10",
     "created_at": "2008-03-28T20:00:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2706",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_018663.json:
 }
 ```
 
-Attachment
+Attachment [bitsets.patch](tarball://root/attachments/some-uuid/ticket2706/bitsets.patch) by robertwb created at 2008-03-28 20:00:10
 
 
 
@@ -53,7 +53,7 @@ Attachment
 archive/issue_comments_018664.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [bitsets2.patch](tarball://root/attachments/some-uuid/ticket2706/bitsets2.patch) by robertwb created at 2008-03-28 20:52:49",
     "created_at": "2008-03-28T20:52:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2706",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_018664.json:
 }
 ```
 
-Attachment
+Attachment [bitsets2.patch](tarball://root/attachments/some-uuid/ticket2706/bitsets2.patch) by robertwb created at 2008-03-28 20:52:49
 
 
 
@@ -125,7 +125,7 @@ Merged in Sage 2.11.alpha2
 archive/issue_comments_018668.json:
 ```json
 {
-    "body": "Attachment\n\nFixed minor bug, added more doctests. \n\nAll tests pass on 32-bit intel OS X and on sage.math (modulo limbs count)",
+    "body": "Attachment [bitsets3.patch](tarball://root/attachments/some-uuid/ticket2706/bitsets3.patch) by robertwb created at 2008-03-29 01:45:46\n\nFixed minor bug, added more doctests. \n\nAll tests pass on 32-bit intel OS X and on sage.math (modulo limbs count)",
     "created_at": "2008-03-29T01:45:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2706",
     "type": "issue_comment",
@@ -134,7 +134,7 @@ archive/issue_comments_018668.json:
 }
 ```
 
-Attachment
+Attachment [bitsets3.patch](tarball://root/attachments/some-uuid/ticket2706/bitsets3.patch) by robertwb created at 2008-03-29 01:45:46
 
 Fixed minor bug, added more doctests. 
 
@@ -165,7 +165,7 @@ this patch should fix the limb size doctest issue on 32 vs. 64 bit
 archive/issue_comments_018670.json:
 ```json
 {
-    "body": "Attachment\n\nMerged all four patches in Sage 2.11.alpha2",
+    "body": "Attachment [trac_2706_bitsets4.patch](tarball://root/attachments/some-uuid/ticket2706/trac_2706_bitsets4.patch) by mabshoff created at 2008-03-29 02:02:13\n\nMerged all four patches in Sage 2.11.alpha2",
     "created_at": "2008-03-29T02:02:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2706",
     "type": "issue_comment",
@@ -174,6 +174,6 @@ archive/issue_comments_018670.json:
 }
 ```
 
-Attachment
+Attachment [trac_2706_bitsets4.patch](tarball://root/attachments/some-uuid/ticket2706/trac_2706_bitsets4.patch) by mabshoff created at 2008-03-29 02:02:13
 
 Merged all four patches in Sage 2.11.alpha2

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1459
 archive/issue_comments_009401.json:
 ```json
 {
-    "body": "Attachment\n\nThis fixes doctest formatting.",
+    "body": "Attachment [1267-2.patch](tarball://root/attachments/some-uuid/ticket1459/1267-2.patch) by rlm created at 2007-12-21 01:11:16\n\nThis fixes doctest formatting.",
     "created_at": "2007-12-21T01:11:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1459",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_009401.json:
 }
 ```
 
-Attachment
+Attachment [1267-2.patch](tarball://root/attachments/some-uuid/ticket1459/1267-2.patch) by rlm created at 2007-12-21 01:11:16
 
 This fixes doctest formatting.
 
@@ -51,7 +51,7 @@ This fixes doctest formatting.
 archive/issue_comments_009402.json:
 ```json
 {
-    "body": "Attachment\n\nYou should make sure to run doctests (no pun intended):\n\n```\n**********************************************************************\nFile \"sageinspect.py\", line 404:\n    sage: sage_getdoc(None)\nExpected:\n    ''\nGot:\n    'x.__init__(...) initializes x; see x.__class__.__doc__ for signature'\n**********************************************************************\n```\n",
+    "body": "Attachment [1459-doc.patch](tarball://root/attachments/some-uuid/ticket1459/1459-doc.patch) by rlm created at 2007-12-21 01:13:35\n\nYou should make sure to run doctests (no pun intended):\n\n```\n**********************************************************************\nFile \"sageinspect.py\", line 404:\n    sage: sage_getdoc(None)\nExpected:\n    ''\nGot:\n    'x.__init__(...) initializes x; see x.__class__.__doc__ for signature'\n**********************************************************************\n```\n",
     "created_at": "2007-12-21T01:13:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1459",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_009402.json:
 }
 ```
 
-Attachment
+Attachment [1459-doc.patch](tarball://root/attachments/some-uuid/ticket1459/1459-doc.patch) by rlm created at 2007-12-21 01:13:35
 
 You should make sure to run doctests (no pun intended):
 

@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9344
 archive/issue_comments_088695.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [matrices.patch](tarball://root/attachments/some-uuid/ticket9344/matrices.patch) by lftabera created at 2010-06-26 10:14:08",
     "created_at": "2010-06-26T10:14:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9344",
     "type": "issue_comment",
@@ -51,7 +51,7 @@ archive/issue_comments_088695.json:
 }
 ```
 
-Attachment
+Attachment [matrices.patch](tarball://root/attachments/some-uuid/ticket9344/matrices.patch) by lftabera created at 2010-06-26 10:14:08
 
 
 
@@ -114,7 +114,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_088699.json:
 ```json
 {
-    "body": "Attachment\n\napply this patch -- identical code but with more informative hg header information",
+    "body": "Attachment [trac_9344-matrix_constructor_bug.patch](tarball://root/attachments/some-uuid/ticket9344/trac_9344-matrix_constructor_bug.patch) by davidloeffler created at 2010-06-30 08:56:04\n\napply this patch -- identical code but with more informative hg header information",
     "created_at": "2010-06-30T08:56:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9344",
     "type": "issue_comment",
@@ -123,7 +123,7 @@ archive/issue_comments_088699.json:
 }
 ```
 
-Attachment
+Attachment [trac_9344-matrix_constructor_bug.patch](tarball://root/attachments/some-uuid/ticket9344/trac_9344-matrix_constructor_bug.patch) by davidloeffler created at 2010-06-30 08:56:04
 
 apply this patch -- identical code but with more informative hg header information
 

@@ -310,7 +310,7 @@ Out[12]= z
 archive/issue_comments_091317.json:
 ```json
 {
-    "body": "Attachment\n\nattached is a temporary fix that calls coeff in turn for each term `x^n` in `s`.\nIn addition it checks the extra argument `n` is only used for a single symbol.\n\nPaul",
+    "body": "Attachment [trac_9505.patch](tarball://root/attachments/some-uuid/ticket9505/trac_9505.patch) by zimmerma created at 2013-08-23 13:00:11\n\nattached is a temporary fix that calls coeff in turn for each term `x^n` in `s`.\nIn addition it checks the extra argument `n` is only used for a single symbol.\n\nPaul",
     "created_at": "2013-08-23T13:00:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9505",
     "type": "issue_comment",
@@ -319,7 +319,7 @@ archive/issue_comments_091317.json:
 }
 ```
 
-Attachment
+Attachment [trac_9505.patch](tarball://root/attachments/some-uuid/ticket9505/trac_9505.patch) by zimmerma created at 2013-08-23 13:00:11
 
 attached is a temporary fix that calls coeff in turn for each term `x^n` in `s`.
 In addition it checks the extra argument `n` is only used for a single symbol.

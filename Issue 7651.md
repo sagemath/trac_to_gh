@@ -105,7 +105,7 @@ Yes! Good catch!
 archive/issue_comments_065435.json:
 ```json
 {
-    "body": "Attachment\n\napply to sage-4.3.rc0 + #7640 + #7674 + #7673",
+    "body": "Attachment [trac_7651.patch](tarball://root/attachments/some-uuid/ticket7651/trac_7651.patch) by rlm created at 2009-12-15 01:02:26\n\napply to sage-4.3.rc0 + #7640 + #7674 + #7673",
     "created_at": "2009-12-15T01:02:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7651",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_065435.json:
 }
 ```
 
-Attachment
+Attachment [trac_7651.patch](tarball://root/attachments/some-uuid/ticket7651/trac_7651.patch) by rlm created at 2009-12-15 01:02:26
 
 apply to sage-4.3.rc0 + #7640 + #7674 + #7673
 

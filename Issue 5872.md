@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5872
 archive/issue_comments_046373.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.\n\nThe spkg incorporating this patch can be found at http://sage.math.washington.edu/home/mhansen/ntl-5.4.2.p8.spkg",
+    "body": "Attachment [ntl-5.4.2.p6.patch](tarball://root/attachments/some-uuid/ticket5872/ntl-5.4.2.p6.patch) by mhansen created at 2009-06-20 07:13:30\n\nLooks good to me.\n\nThe spkg incorporating this patch can be found at http://sage.math.washington.edu/home/mhansen/ntl-5.4.2.p8.spkg",
     "created_at": "2009-06-20T07:13:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5872",
     "type": "issue_comment",
@@ -43,7 +43,7 @@ archive/issue_comments_046373.json:
 }
 ```
 
-Attachment
+Attachment [ntl-5.4.2.p6.patch](tarball://root/attachments/some-uuid/ticket5872/ntl-5.4.2.p6.patch) by mhansen created at 2009-06-20 07:13:30
 
 Looks good to me.
 

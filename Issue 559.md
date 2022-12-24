@@ -78,7 +78,7 @@ Changing status from new to assigned.
 archive/issue_comments_002893.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [multi_modular_memleak.patch](tarball://root/attachments/some-uuid/ticket559/multi_modular_memleak.patch) by burcin created at 2007-09-21 01:07:08",
     "created_at": "2007-09-21T01:07:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/559",
     "type": "issue_comment",
@@ -87,7 +87,7 @@ archive/issue_comments_002893.json:
 }
 ```
 
-Attachment
+Attachment [multi_modular_memleak.patch](tarball://root/attachments/some-uuid/ticket559/multi_modular_memleak.patch) by burcin created at 2007-09-21 01:07:08
 
 
 

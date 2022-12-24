@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2645
 archive/issue_comments_018183.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [arrow3d-short.patch](tarball://root/attachments/some-uuid/ticket2645/arrow3d-short.patch) by jason created at 2008-03-22 15:41:45",
     "created_at": "2008-03-22T15:41:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2645",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_018183.json:
 }
 ```
 
-Attachment
+Attachment [arrow3d-short.patch](tarball://root/attachments/some-uuid/ticket2645/arrow3d-short.patch) by jason created at 2008-03-22 15:41:45
 
 
 

@@ -317,7 +317,7 @@ Nathann
 archive/issue_comments_073359.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good.",
+    "body": "Attachment [trac_8284.patch](tarball://root/attachments/some-uuid/ticket8284/trac_8284.patch) by rlm created at 2010-06-08 17:31:42\n\nLooks good.",
     "created_at": "2010-06-08T17:31:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8284",
     "type": "issue_comment",
@@ -326,7 +326,7 @@ archive/issue_comments_073359.json:
 }
 ```
 
-Attachment
+Attachment [trac_8284.patch](tarball://root/attachments/some-uuid/ticket8284/trac_8284.patch) by rlm created at 2010-06-08 17:31:42
 
 Looks good.
 

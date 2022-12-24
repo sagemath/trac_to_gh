@@ -553,7 +553,7 @@ I do have top on my Cygwin install and its output is very much Linux-like. So I 
 archive/issue_comments_085764.json:
 ```json
 {
-    "body": "Attachment\n\nenabling it on Cygwin",
+    "body": "Attachment [trac_9170.patch](tarball://root/attachments/some-uuid/ticket9170/trac_9170.patch) by dimpase created at 2013-01-27 09:10:42\n\nenabling it on Cygwin",
     "created_at": "2013-01-27T09:10:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9170",
     "type": "issue_comment",
@@ -562,7 +562,7 @@ archive/issue_comments_085764.json:
 }
 ```
 
-Attachment
+Attachment [trac_9170.patch](tarball://root/attachments/some-uuid/ticket9170/trac_9170.patch) by dimpase created at 2013-01-27 09:10:42
 
 enabling it on Cygwin
 

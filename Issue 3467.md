@@ -79,7 +79,7 @@ Changing component from algebra to dsage.
 archive/issue_comments_024445.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [dsage_interface.2.patch](tarball://root/attachments/some-uuid/ticket3467/dsage_interface.2.patch) by yi created at 2008-06-19 02:41:31",
     "created_at": "2008-06-19T02:41:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3467",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_024445.json:
 }
 ```
 
-Attachment
+Attachment [dsage_interface.2.patch](tarball://root/attachments/some-uuid/ticket3467/dsage_interface.2.patch) by yi created at 2008-06-19 02:41:31
 
 
 
@@ -97,7 +97,7 @@ Attachment
 archive/issue_comments_024446.json:
 ```json
 {
-    "body": "Attachment\n\nnew patch with doctests.",
+    "body": "Attachment [dsage_interface.patch](tarball://root/attachments/some-uuid/ticket3467/dsage_interface.patch) by yi created at 2008-06-19 04:04:33\n\nnew patch with doctests.",
     "created_at": "2008-06-19T04:04:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3467",
     "type": "issue_comment",
@@ -106,7 +106,7 @@ archive/issue_comments_024446.json:
 }
 ```
 
-Attachment
+Attachment [dsage_interface.patch](tarball://root/attachments/some-uuid/ticket3467/dsage_interface.patch) by yi created at 2008-06-19 04:04:33
 
 new patch with doctests.
 
@@ -117,7 +117,7 @@ new patch with doctests.
 archive/issue_comments_024447.json:
 ```json
 {
-    "body": "Attachment\n\nOk, doctests are added.",
+    "body": "Attachment [dsage_interface.3.patch](tarball://root/attachments/some-uuid/ticket3467/dsage_interface.3.patch) by yi created at 2008-06-19 04:04:58\n\nOk, doctests are added.",
     "created_at": "2008-06-19T04:04:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3467",
     "type": "issue_comment",
@@ -126,7 +126,7 @@ archive/issue_comments_024447.json:
 }
 ```
 
-Attachment
+Attachment [dsage_interface.3.patch](tarball://root/attachments/some-uuid/ticket3467/dsage_interface.3.patch) by yi created at 2008-06-19 04:04:58
 
 Ok, doctests are added.
 
@@ -175,7 +175,7 @@ All tests pass AFTER removing nodoctest.py from sage/dsage/interface .  Also, yo
 archive/issue_comments_024450.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [dsage_interface.4.patch](tarball://root/attachments/some-uuid/ticket3467/dsage_interface.4.patch) by yi created at 2008-06-19 21:27:50",
     "created_at": "2008-06-19T21:27:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3467",
     "type": "issue_comment",
@@ -184,7 +184,7 @@ archive/issue_comments_024450.json:
 }
 ```
 
-Attachment
+Attachment [dsage_interface.4.patch](tarball://root/attachments/some-uuid/ticket3467/dsage_interface.4.patch) by yi created at 2008-06-19 21:27:50
 
 
 

@@ -117,7 +117,7 @@ Incidentally, note that #5755 probably will be fixed by this ticket, one way or 
 archive/issue_comments_057947.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7007.patch](tarball://root/attachments/some-uuid/ticket7007/trac_7007.patch) by mhansen created at 2009-09-29 19:41:45",
     "created_at": "2009-09-29T19:41:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7007",
     "type": "issue_comment",
@@ -126,7 +126,7 @@ archive/issue_comments_057947.json:
 }
 ```
 
-Attachment
+Attachment [trac_7007.patch](tarball://root/attachments/some-uuid/ticket7007/trac_7007.patch) by mhansen created at 2009-09-29 19:41:45
 
 
 

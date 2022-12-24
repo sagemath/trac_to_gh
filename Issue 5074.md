@@ -72,7 +72,7 @@ for i in range(5000):
 archive/issue_comments_038636.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5074.patch](tarball://root/attachments/some-uuid/ticket5074/trac_5074.patch) by malb created at 2010-07-12 15:11:14",
     "created_at": "2010-07-12T15:11:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5074",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_038636.json:
 }
 ```
 
-Attachment
+Attachment [trac_5074.patch](tarball://root/attachments/some-uuid/ticket5074/trac_5074.patch) by malb created at 2010-07-12 15:11:14
 
 
 
@@ -229,7 +229,7 @@ sage: for i in range(10): h.factor(proof=False)
 archive/issue_comments_038642.json:
 ```json
 {
-    "body": "Attachment\n\ntest quality of factorisation for many random examples",
+    "body": "Attachment [review_5313.sage](tarball://root/attachments/some-uuid/ticket5074/review_5313.sage) by malb created at 2010-11-03 13:17:51\n\ntest quality of factorisation for many random examples",
     "created_at": "2010-11-03T13:17:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5074",
     "type": "issue_comment",
@@ -238,7 +238,7 @@ archive/issue_comments_038642.json:
 }
 ```
 
-Attachment
+Attachment [review_5313.sage](tarball://root/attachments/some-uuid/ticket5074/review_5313.sage) by malb created at 2010-11-03 13:17:51
 
 test quality of factorisation for many random examples
 

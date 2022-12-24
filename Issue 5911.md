@@ -182,7 +182,7 @@ Here is the patch you requested.. Where do you think we should store these docte
 archive/issue_comments_046715.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [doc_graph.patch](tarball://root/attachments/some-uuid/ticket5911/doc_graph.patch) by ncohen created at 2009-08-17 15:08:24",
     "created_at": "2009-08-17T15:08:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5911",
     "type": "issue_comment",
@@ -191,7 +191,7 @@ archive/issue_comments_046715.json:
 }
 ```
 
-Attachment
+Attachment [doc_graph.patch](tarball://root/attachments/some-uuid/ticket5911/doc_graph.patch) by ncohen created at 2009-08-17 15:08:24
 
 
 
@@ -236,7 +236,7 @@ apply on top of doc_graph.patch
 archive/issue_comments_046718.json:
 ```json
 {
-    "body": "Attachment\n\nWhat about a good old  : \"cf. Graph\" (or a plain copy of Graph?), as it is exactly the same ? ^^;\n\nWe could just write a list of the functions of DiGraph that are unaavailable in Graph, couldn't we ?",
+    "body": "Attachment [trac_5911-editing.patch](tarball://root/attachments/some-uuid/ticket5911/trac_5911-editing.patch) by ncohen created at 2009-08-26 19:40:54\n\nWhat about a good old  : \"cf. Graph\" (or a plain copy of Graph?), as it is exactly the same ? ^^;\n\nWe could just write a list of the functions of DiGraph that are unaavailable in Graph, couldn't we ?",
     "created_at": "2009-08-26T19:40:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5911",
     "type": "issue_comment",
@@ -245,7 +245,7 @@ archive/issue_comments_046718.json:
 }
 ```
 
-Attachment
+Attachment [trac_5911-editing.patch](tarball://root/attachments/some-uuid/ticket5911/trac_5911-editing.patch) by ncohen created at 2009-08-26 19:40:54
 
 What about a good old  : "cf. Graph" (or a plain copy of Graph?), as it is exactly the same ? ^^;
 
@@ -384,7 +384,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_046725.json:
 ```json
 {
-    "body": "Attachment\n\nHmmm.. This -- should -- have been a flattened version of all the patches, though it is not and I wonder why. This patch needs doc_graph.patch to be applied first, and contains trac_5911-editing.patch. So only doc_graph.patch and this patch should be applied.\n\nI tried to build a real flattened version, but for some reason I can not O_o\n\nNathann",
+    "body": "Attachment [trac_5911.patch](tarball://root/attachments/some-uuid/ticket5911/trac_5911.patch) by ncohen created at 2009-10-13 08:22:07\n\nHmmm.. This -- should -- have been a flattened version of all the patches, though it is not and I wonder why. This patch needs doc_graph.patch to be applied first, and contains trac_5911-editing.patch. So only doc_graph.patch and this patch should be applied.\n\nI tried to build a real flattened version, but for some reason I can not O_o\n\nNathann",
     "created_at": "2009-10-13T08:22:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5911",
     "type": "issue_comment",
@@ -393,7 +393,7 @@ archive/issue_comments_046725.json:
 }
 ```
 
-Attachment
+Attachment [trac_5911.patch](tarball://root/attachments/some-uuid/ticket5911/trac_5911.patch) by ncohen created at 2009-10-13 08:22:07
 
 Hmmm.. This -- should -- have been a flattened version of all the patches, though it is not and I wonder why. This patch needs doc_graph.patch to be applied first, and contains trac_5911-editing.patch. So only doc_graph.patch and this patch should be applied.
 
@@ -408,7 +408,7 @@ Nathann
 archive/issue_comments_046726.json:
 ```json
 {
-    "body": "Attachment\n\nreviewer patch",
+    "body": "Attachment [trac_5911-reviewer.patch](tarball://root/attachments/some-uuid/ticket5911/trac_5911-reviewer.patch) by mvngu created at 2009-10-28 14:59:49\n\nreviewer patch",
     "created_at": "2009-10-28T14:59:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5911",
     "type": "issue_comment",
@@ -417,7 +417,7 @@ archive/issue_comments_046726.json:
 }
 ```
 
-Attachment
+Attachment [trac_5911-reviewer.patch](tarball://root/attachments/some-uuid/ticket5911/trac_5911-reviewer.patch) by mvngu created at 2009-10-28 14:59:49
 
 reviewer patch
 

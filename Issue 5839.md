@@ -54,7 +54,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5839
 archive/issue_comments_045904.json:
 ```json
 {
-    "body": "Attachment\n\nDoctests pass, patch reads good.",
+    "body": "Attachment [fix-mp-libsingular-dealloc.patch](tarball://root/attachments/some-uuid/ticket5839/fix-mp-libsingular-dealloc.patch) by malb created at 2009-04-21 09:13:14\n\nDoctests pass, patch reads good.",
     "created_at": "2009-04-21T09:13:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5839",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_045904.json:
 }
 ```
 
-Attachment
+Attachment [fix-mp-libsingular-dealloc.patch](tarball://root/attachments/some-uuid/ticket5839/fix-mp-libsingular-dealloc.patch) by malb created at 2009-04-21 09:13:14
 
 Doctests pass, patch reads good.
 

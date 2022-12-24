@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7989
 archive/issue_comments_069774.json:
 ```json
 {
-    "body": "Attachment\n\nHere are the bugs (doctests that fail) this patch exposes:\n\n\n```\n\tsage -t  \"4.3.1.rc0/devel/sage-main/sage/matrix/matrix1.pyx\"\n\tsage -t  \"4.3.1.rc0/devel/sage-main/sage/matrix/matrix_dense.pyx\"\n\tsage -t  \"4.3.1.rc0/devel/sage-main/sage/matrix/matrix_generic_dense.pyx\"\n\tsage -t  \"4.3.1.rc0/devel/sage-main/sage/matrix/matrix_integer_2x2.pyx\"\n```\n",
+    "body": "Attachment [trac-7989-minpoly-test.patch](tarball://root/attachments/some-uuid/ticket7989/trac-7989-minpoly-test.patch) by jason created at 2010-01-19 02:50:48\n\nHere are the bugs (doctests that fail) this patch exposes:\n\n\n```\n\tsage -t  \"4.3.1.rc0/devel/sage-main/sage/matrix/matrix1.pyx\"\n\tsage -t  \"4.3.1.rc0/devel/sage-main/sage/matrix/matrix_dense.pyx\"\n\tsage -t  \"4.3.1.rc0/devel/sage-main/sage/matrix/matrix_generic_dense.pyx\"\n\tsage -t  \"4.3.1.rc0/devel/sage-main/sage/matrix/matrix_integer_2x2.pyx\"\n```\n",
     "created_at": "2010-01-19T02:50:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7989",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_069774.json:
 }
 ```
 
-Attachment
+Attachment [trac-7989-minpoly-test.patch](tarball://root/attachments/some-uuid/ticket7989/trac-7989-minpoly-test.patch) by jason created at 2010-01-19 02:50:48
 
 Here are the bugs (doctests that fail) this patch exposes:
 

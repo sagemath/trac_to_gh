@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5454
 archive/issue_comments_042261.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5454.patch](tarball://root/attachments/some-uuid/ticket5454/trac_5454.patch) by mhansen created at 2009-03-07 19:20:04",
     "created_at": "2009-03-07T19:20:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5454",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_042261.json:
 }
 ```
 
-Attachment
+Attachment [trac_5454.patch](tarball://root/attachments/some-uuid/ticket5454/trac_5454.patch) by mhansen created at 2009-03-07 19:20:04
 
 
 
@@ -199,7 +199,7 @@ rebased to 4.0.1
 archive/issue_comments_042270.json:
 ```json
 {
-    "body": "Attachment\n\nIt looks like the proposed renaming of _l_action_ etc hasn't yet happened, and we *seriously need* some documentation for the coercion model -- I've written or contributed to dozens of sage parent/element classes and I never knew half of this stuff, I learnt loads just from a five-minute skim-read of the new docs. We must get this into a release ASAP.\n\nIt's a great shame that this patch has been in limbo for three months just because our hackish use of text search for \"positive review\" in the summary field missed it due to a typo.",
+    "body": "Attachment [trac_5454_rebase.patch](tarball://root/attachments/some-uuid/ticket5454/trac_5454_rebase.patch) by davidloeffler created at 2009-06-10 10:31:20\n\nIt looks like the proposed renaming of _l_action_ etc hasn't yet happened, and we *seriously need* some documentation for the coercion model -- I've written or contributed to dozens of sage parent/element classes and I never knew half of this stuff, I learnt loads just from a five-minute skim-read of the new docs. We must get this into a release ASAP.\n\nIt's a great shame that this patch has been in limbo for three months just because our hackish use of text search for \"positive review\" in the summary field missed it due to a typo.",
     "created_at": "2009-06-10T10:31:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5454",
     "type": "issue_comment",
@@ -208,7 +208,7 @@ archive/issue_comments_042270.json:
 }
 ```
 
-Attachment
+Attachment [trac_5454_rebase.patch](tarball://root/attachments/some-uuid/ticket5454/trac_5454_rebase.patch) by davidloeffler created at 2009-06-10 10:31:20
 
 It looks like the proposed renaming of _l_action_ etc hasn't yet happened, and we *seriously need* some documentation for the coercion model -- I've written or contributed to dozens of sage parent/element classes and I never knew half of this stuff, I learnt loads just from a five-minute skim-read of the new docs. We must get this into a release ASAP.
 
@@ -357,7 +357,7 @@ apply over trac_5454_rebase.patch
 archive/issue_comments_042274.json:
 ```json
 {
-    "body": "Attachment\n\nI've fixed the above problems, which were all due to trivial typos/thinkos in the doctests. Silly of me not to have run the tests when I was reviewing. Can I just reinstate the positive review, or do we need a second opinion?",
+    "body": "Attachment [trac_5454_fix.patch](tarball://root/attachments/some-uuid/ticket5454/trac_5454_fix.patch) by davidloeffler created at 2009-06-14 10:47:47\n\nI've fixed the above problems, which were all due to trivial typos/thinkos in the doctests. Silly of me not to have run the tests when I was reviewing. Can I just reinstate the positive review, or do we need a second opinion?",
     "created_at": "2009-06-14T10:47:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5454",
     "type": "issue_comment",
@@ -366,7 +366,7 @@ archive/issue_comments_042274.json:
 }
 ```
 
-Attachment
+Attachment [trac_5454_fix.patch](tarball://root/attachments/some-uuid/ticket5454/trac_5454_fix.patch) by davidloeffler created at 2009-06-14 10:47:47
 
 I've fixed the above problems, which were all due to trivial typos/thinkos in the doctests. Silly of me not to have run the tests when I was reviewing. Can I just reinstate the positive review, or do we need a second opinion?
 

@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4301
 archive/issue_comments_031449.json:
 ```json
 {
-    "body": "Attachment\n\nSo this patch looks good -- I believe that the code does what it claims to. \n\nHowever, there are no doctests. \n\nSo if you say \"there are no categories that implement anything like this yet,\" I believe you -- but let's add one, and put it in the docstring, so that we can use this as an example.",
+    "body": "Attachment [4301-cat-lookup.patch](tarball://root/attachments/some-uuid/ticket4301/4301-cat-lookup.patch) by craigcitro created at 2008-11-27 08:16:48\n\nSo this patch looks good -- I believe that the code does what it claims to. \n\nHowever, there are no doctests. \n\nSo if you say \"there are no categories that implement anything like this yet,\" I believe you -- but let's add one, and put it in the docstring, so that we can use this as an example.",
     "created_at": "2008-11-27T08:16:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4301",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_031449.json:
 }
 ```
 
-Attachment
+Attachment [4301-cat-lookup.patch](tarball://root/attachments/some-uuid/ticket4301/4301-cat-lookup.patch) by craigcitro created at 2008-11-27 08:16:48
 
 So this patch looks good -- I believe that the code does what it claims to. 
 

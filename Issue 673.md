@@ -109,7 +109,7 @@ Michael
 archive/issue_comments_003487.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_673.patch](tarball://root/attachments/some-uuid/ticket673/trac_673.patch) by was created at 2009-04-09 05:29:10",
     "created_at": "2009-04-09T05:29:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/673",
     "type": "issue_comment",
@@ -118,7 +118,7 @@ archive/issue_comments_003487.json:
 }
 ```
 
-Attachment
+Attachment [trac_673.patch](tarball://root/attachments/some-uuid/ticket673/trac_673.patch) by was created at 2009-04-09 05:29:10
 
 
 
@@ -127,7 +127,7 @@ Attachment
 archive/issue_comments_003488.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review for both patches. This also makes the printing of NaN and Infinity consistent with CC. At the same time it fixes three more doctesting issues on Solaris where the libc caused different printouts.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_673_part2.patch](tarball://root/attachments/some-uuid/ticket673/trac_673_part2.patch) by mabshoff created at 2009-04-09 07:09:14\n\nPositive review for both patches. This also makes the printing of NaN and Infinity consistent with CC. At the same time it fixes three more doctesting issues on Solaris where the libc caused different printouts.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-09T07:09:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/673",
     "type": "issue_comment",
@@ -136,7 +136,7 @@ archive/issue_comments_003488.json:
 }
 ```
 
-Attachment
+Attachment [trac_673_part2.patch](tarball://root/attachments/some-uuid/ticket673/trac_673_part2.patch) by mabshoff created at 2009-04-09 07:09:14
 
 Positive review for both patches. This also makes the printing of NaN and Infinity consistent with CC. At the same time it fixes three more doctesting issues on Solaris where the libc caused different printouts.
 

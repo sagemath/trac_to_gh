@@ -51,7 +51,7 @@ Minor, but I just fixed two of these elsewhere: it's spelled "consistent"
 archive/issue_comments_048975.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6132-nf-elt-cmp.patch](tarball://root/attachments/some-uuid/ticket6132/6132-nf-elt-cmp.patch) by robertwb created at 2009-05-26 19:16:36",
     "created_at": "2009-05-26T19:16:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6132",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_048975.json:
 }
 ```
 
-Attachment
+Attachment [6132-nf-elt-cmp.patch](tarball://root/attachments/some-uuid/ticket6132/6132-nf-elt-cmp.patch) by robertwb created at 2009-05-26 19:16:36
 
 
 

@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8544
 archive/issue_comments_077255.json:
 ```json
 {
-    "body": "Attachment\n\nApplies to 4.4.2",
+    "body": "Attachment [trac_8544-polyfactor.patch](tarball://root/attachments/some-uuid/ticket8544/trac_8544-polyfactor.patch) by cremona created at 2010-05-26 20:01:14\n\nApplies to 4.4.2",
     "created_at": "2010-05-26T20:01:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8544",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_077255.json:
 }
 ```
 
-Attachment
+Attachment [trac_8544-polyfactor.patch](tarball://root/attachments/some-uuid/ticket8544/trac_8544-polyfactor.patch) by cremona created at 2010-05-26 20:01:14
 
 Applies to 4.4.2
 

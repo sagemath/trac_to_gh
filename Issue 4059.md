@@ -160,7 +160,7 @@ Changing priority from critical to major.
 archive/issue_comments_029267.json:
 ```json
 {
-    "body": "Attachment\n\nPatch against libm4ri-20080903 to enable cache detection on OS X 10.5",
+    "body": "Attachment [trac_4059_v2.patch](tarball://root/attachments/some-uuid/ticket4059/trac_4059_v2.patch) by anakha created at 2008-09-04 07:30:04\n\nPatch against libm4ri-20080903 to enable cache detection on OS X 10.5",
     "created_at": "2008-09-04T07:30:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4059",
     "type": "issue_comment",
@@ -169,7 +169,7 @@ archive/issue_comments_029267.json:
 }
 ```
 
-Attachment
+Attachment [trac_4059_v2.patch](tarball://root/attachments/some-uuid/ticket4059/trac_4059_v2.patch) by anakha created at 2008-09-04 07:30:04
 
 Patch against libm4ri-20080903 to enable cache detection on OS X 10.5
 
@@ -396,7 +396,7 @@ $ echo $?
 archive/issue_comments_029276.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:10 mabshoff]:\n> On bsd the new m4ri reports:\n...\n> checking the L1 cache size... 0 Bytes\n> checking the L2 cache size... 4194304 Bytes\n\nThat's fine. Eventually, I should fix the L1 detection code though. IMHO, the whole cache detection needs to be refactored, but I don't want to do it just before a release.",
+    "body": "Attachment [trac_4059_v3.patch](tarball://root/attachments/some-uuid/ticket4059/trac_4059_v3.patch) by malb created at 2008-09-05 10:00:50\n\nReplying to [comment:10 mabshoff]:\n> On bsd the new m4ri reports:\n...\n> checking the L1 cache size... 0 Bytes\n> checking the L2 cache size... 4194304 Bytes\n\nThat's fine. Eventually, I should fix the L1 detection code though. IMHO, the whole cache detection needs to be refactored, but I don't want to do it just before a release.",
     "created_at": "2008-09-05T10:00:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4059",
     "type": "issue_comment",
@@ -405,7 +405,7 @@ archive/issue_comments_029276.json:
 }
 ```
 
-Attachment
+Attachment [trac_4059_v3.patch](tarball://root/attachments/some-uuid/ticket4059/trac_4059_v3.patch) by malb created at 2008-09-05 10:00:50
 
 Replying to [comment:10 mabshoff]:
 > On bsd the new m4ri reports:
@@ -497,7 +497,7 @@ I hope trac_4059_v4.patch can fix this.
 archive/issue_comments_029280.json:
 ```json
 {
-    "body": "Attachment\n\nI updated the SPKG again and tested in on OSX 10.4 on x86 (for this I disabled the CPUID technique so that this code is actually run) and it works. Good work!",
+    "body": "Attachment [trac_4059_v4.patch](tarball://root/attachments/some-uuid/ticket4059/trac_4059_v4.patch) by malb created at 2008-09-05 17:42:52\n\nI updated the SPKG again and tested in on OSX 10.4 on x86 (for this I disabled the CPUID technique so that this code is actually run) and it works. Good work!",
     "created_at": "2008-09-05T17:42:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4059",
     "type": "issue_comment",
@@ -506,7 +506,7 @@ archive/issue_comments_029280.json:
 }
 ```
 
-Attachment
+Attachment [trac_4059_v4.patch](tarball://root/attachments/some-uuid/ticket4059/trac_4059_v4.patch) by malb created at 2008-09-05 17:42:52
 
 I updated the SPKG again and tested in on OSX 10.4 on x86 (for this I disabled the CPUID technique so that this code is actually run) and it works. Good work!
 

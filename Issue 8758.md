@@ -55,7 +55,7 @@ Adds the two static.File(DATA) calls to twist.py
 archive/issue_comments_080135.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8758-data-toplevel-with-static-file.patch](tarball://root/attachments/some-uuid/ticket8758/trac_8758-data-toplevel-with-static-file.patch) by acleone created at 2010-04-24 23:02:01",
     "created_at": "2010-04-24T23:02:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8758",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_080135.json:
 }
 ```
 
-Attachment
+Attachment [trac_8758-data-toplevel-with-static-file.patch](tarball://root/attachments/some-uuid/ticket8758/trac_8758-data-toplevel-with-static-file.patch) by acleone created at 2010-04-24 23:02:01
 
 
 
@@ -145,7 +145,7 @@ Changes the url to /static/.  Replaces previous.
 archive/issue_comments_080140.json:
 ```json
 {
-    "body": "Attachment\n\nThe latest patch changes the url to /static/.\n\nI think we should also rename the \"data\" directory in the sagenb source to \"static\", and rename the global DATA to STATIC.\n\nDATA is slightly confusing because uploading files to a worksheet also uses a DATA global, eg DATA+'mydatafile.txt'.",
+    "body": "Attachment [trac_8758-toplevel-static-url.patch](tarball://root/attachments/some-uuid/ticket8758/trac_8758-toplevel-static-url.patch) by acleone created at 2010-05-29 22:43:37\n\nThe latest patch changes the url to /static/.\n\nI think we should also rename the \"data\" directory in the sagenb source to \"static\", and rename the global DATA to STATIC.\n\nDATA is slightly confusing because uploading files to a worksheet also uses a DATA global, eg DATA+'mydatafile.txt'.",
     "created_at": "2010-05-29T22:43:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8758",
     "type": "issue_comment",
@@ -154,7 +154,7 @@ archive/issue_comments_080140.json:
 }
 ```
 
-Attachment
+Attachment [trac_8758-toplevel-static-url.patch](tarball://root/attachments/some-uuid/ticket8758/trac_8758-toplevel-static-url.patch) by acleone created at 2010-05-29 22:43:37
 
 The latest patch changes the url to /static/.
 

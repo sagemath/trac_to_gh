@@ -52,7 +52,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4462
 archive/issue_comments_032944.json:
 ```json
 {
-    "body": "Attachment\n\nresult of implicit_plot in sage 3.1.1",
+    "body": "Attachment [circle_sage3.1.1.png](tarball://root/attachments/some-uuid/ticket4462/circle_sage3.1.1.png) by john_perry created at 2008-11-07 16:49:03\n\nresult of implicit_plot in sage 3.1.1",
     "created_at": "2008-11-07T16:49:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4462",
     "type": "issue_comment",
@@ -61,7 +61,7 @@ archive/issue_comments_032944.json:
 }
 ```
 
-Attachment
+Attachment [circle_sage3.1.1.png](tarball://root/attachments/some-uuid/ticket4462/circle_sage3.1.1.png) by john_perry created at 2008-11-07 16:49:03
 
 result of implicit_plot in sage 3.1.1
 
@@ -90,7 +90,7 @@ result of implicit_plot in sage 3.1.4
 archive/issue_comments_032946.json:
 ```json
 {
-    "body": "Attachment\n\nThe fix is easy: change line 2926 of site-packages/sage/plot/plot.py, which currently reads\n\n```\n@options(contours=(0,0))\n```\n\nto\n\n```\n@options(contours=(0,0),fill=False)\n```\n",
+    "body": "Attachment [circle_sage3.1.4.png](tarball://root/attachments/some-uuid/ticket4462/circle_sage3.1.4.png) by john_perry created at 2008-11-07 16:57:19\n\nThe fix is easy: change line 2926 of site-packages/sage/plot/plot.py, which currently reads\n\n```\n@options(contours=(0,0))\n```\n\nto\n\n```\n@options(contours=(0,0),fill=False)\n```\n",
     "created_at": "2008-11-07T16:57:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4462",
     "type": "issue_comment",
@@ -99,7 +99,7 @@ archive/issue_comments_032946.json:
 }
 ```
 
-Attachment
+Attachment [circle_sage3.1.4.png](tarball://root/attachments/some-uuid/ticket4462/circle_sage3.1.4.png) by john_perry created at 2008-11-07 16:57:19
 
 The fix is easy: change line 2926 of site-packages/sage/plot/plot.py, which currently reads
 
@@ -141,7 +141,7 @@ I refereed that patch; my bad.
 archive/issue_comments_032948.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [implicit-plot-no-fill.patch](tarball://root/attachments/some-uuid/ticket4462/implicit-plot-no-fill.patch) by jason created at 2008-11-07 17:33:24",
     "created_at": "2008-11-07T17:33:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4462",
     "type": "issue_comment",
@@ -150,7 +150,7 @@ archive/issue_comments_032948.json:
 }
 ```
 
-Attachment
+Attachment [implicit-plot-no-fill.patch](tarball://root/attachments/some-uuid/ticket4462/implicit-plot-no-fill.patch) by jason created at 2008-11-07 17:33:24
 
 
 

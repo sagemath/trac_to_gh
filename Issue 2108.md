@@ -65,7 +65,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2108
 archive/issue_comments_013745.json:
 ```json
 {
-    "body": "Attachment\n\natlas tuning info for intel prescott",
+    "body": "Attachment [UNKNOWNx8632SSE3.tgz](tarball://root/attachments/some-uuid/ticket2108/UNKNOWNx8632SSE3.tgz) by burcin created at 2008-02-08 10:37:16\n\natlas tuning info for intel prescott",
     "created_at": "2008-02-08T10:37:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2108",
     "type": "issue_comment",
@@ -74,7 +74,7 @@ archive/issue_comments_013745.json:
 }
 ```
 
-Attachment
+Attachment [UNKNOWNx8632SSE3.tgz](tarball://root/attachments/some-uuid/ticket2108/UNKNOWNx8632SSE3.tgz) by burcin created at 2008-02-08 10:37:16
 
 atlas tuning info for intel prescott
 
@@ -143,7 +143,7 @@ tuning info after patching atlas to recognize new arch
 archive/issue_comments_013749.json:
 ```json
 {
-    "body": "Attachment\n\nmake atlas detect p4d arch",
+    "body": "Attachment [P4D32SSE3.tgz](tarball://root/attachments/some-uuid/ticket2108/P4D32SSE3.tgz) by burcin created at 2008-03-16 13:41:25\n\nmake atlas detect p4d arch",
     "created_at": "2008-03-16T13:41:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2108",
     "type": "issue_comment",
@@ -152,7 +152,7 @@ archive/issue_comments_013749.json:
 }
 ```
 
-Attachment
+Attachment [P4D32SSE3.tgz](tarball://root/attachments/some-uuid/ticket2108/P4D32SSE3.tgz) by burcin created at 2008-03-16 13:41:25
 
 make atlas detect p4d arch
 
@@ -163,7 +163,7 @@ make atlas detect p4d arch
 archive/issue_comments_013750.json:
 ```json
 {
-    "body": "Attachment\n\nattachment:atlas_arch_p4d.patch provides the detection, and attachment:P4D32SSE3.tgz is the new tuning info. \n\nLooking forward to a new atlas package. :)",
+    "body": "Attachment [atlas_arch_p4d.patch](tarball://root/attachments/some-uuid/ticket2108/atlas_arch_p4d.patch) by burcin created at 2008-03-16 13:45:39\n\nattachment:atlas_arch_p4d.patch provides the detection, and attachment:P4D32SSE3.tgz is the new tuning info. \n\nLooking forward to a new atlas package. :)",
     "created_at": "2008-03-16T13:45:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2108",
     "type": "issue_comment",
@@ -172,7 +172,7 @@ archive/issue_comments_013750.json:
 }
 ```
 
-Attachment
+Attachment [atlas_arch_p4d.patch](tarball://root/attachments/some-uuid/ticket2108/atlas_arch_p4d.patch) by burcin created at 2008-03-16 13:45:39
 
 attachment:atlas_arch_p4d.patch provides the detection, and attachment:P4D32SSE3.tgz is the new tuning info. 
 

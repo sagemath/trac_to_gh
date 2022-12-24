@@ -89,7 +89,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6539
 archive/issue_comments_053314.json:
 ```json
 {
-    "body": "Attachment\n\nThe output shown while building mpir.",
+    "body": "Attachment [install-mpir.log](tarball://root/attachments/some-uuid/ticket6539/install-mpir.log) by drkirkby created at 2009-07-16 00:28:31\n\nThe output shown while building mpir.",
     "created_at": "2009-07-16T00:28:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6539",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_053314.json:
 }
 ```
 
-Attachment
+Attachment [install-mpir.log](tarball://root/attachments/some-uuid/ticket6539/install-mpir.log) by drkirkby created at 2009-07-16 00:28:31
 
 The output shown while building mpir.
 

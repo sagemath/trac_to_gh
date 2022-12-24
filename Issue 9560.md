@@ -101,7 +101,7 @@ See
 archive/issue_comments_092159.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9560-symbolic_bool_arith.patch](tarball://root/attachments/some-uuid/ticket9560/trac_9560-symbolic_bool_arith.patch) by burcin created at 2010-09-25 20:30:34",
     "created_at": "2010-09-25T20:30:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9560",
     "type": "issue_comment",
@@ -110,7 +110,7 @@ archive/issue_comments_092159.json:
 }
 ```
 
-Attachment
+Attachment [trac_9560-symbolic_bool_arith.patch](tarball://root/attachments/some-uuid/ticket9560/trac_9560-symbolic_bool_arith.patch) by burcin created at 2010-09-25 20:30:34
 
 
 

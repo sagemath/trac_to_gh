@@ -78,7 +78,7 @@ Done in the attached patch.  I even threw in imag_part() for free.
 archive/issue_comments_049133.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6159.patch](tarball://root/attachments/some-uuid/ticket6159/trac_6159.patch) by AlexGhitza created at 2009-07-13 14:03:15",
     "created_at": "2009-07-13T14:03:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6159",
     "type": "issue_comment",
@@ -87,7 +87,7 @@ archive/issue_comments_049133.json:
 }
 ```
 
-Attachment
+Attachment [trac_6159.patch](tarball://root/attachments/some-uuid/ticket6159/trac_6159.patch) by AlexGhitza created at 2009-07-13 14:03:15
 
 
 

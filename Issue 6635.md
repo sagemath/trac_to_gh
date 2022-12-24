@@ -51,7 +51,7 @@ part 1
 archive/issue_comments_054366.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6635.patch](tarball://root/attachments/some-uuid/ticket6635/trac_6635.patch) by was created at 2009-07-29 18:18:28",
     "created_at": "2009-07-29T18:18:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6635",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_054366.json:
 }
 ```
 
-Attachment
+Attachment [trac_6635.patch](tarball://root/attachments/some-uuid/ticket6635/trac_6635.patch) by was created at 2009-07-29 18:18:28
 
 
 
@@ -69,7 +69,7 @@ Attachment
 archive/issue_comments_054367.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6635-part2.patch](tarball://root/attachments/some-uuid/ticket6635/trac_6635-part2.patch) by was created at 2009-07-29 18:19:58",
     "created_at": "2009-07-29T18:19:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6635",
     "type": "issue_comment",
@@ -78,4 +78,4 @@ archive/issue_comments_054367.json:
 }
 ```
 
-Attachment
+Attachment [trac_6635-part2.patch](tarball://root/attachments/some-uuid/ticket6635/trac_6635-part2.patch) by was created at 2009-07-29 18:19:58

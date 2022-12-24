@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2854
 archive/issue_comments_019589.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [crystal_weights.patch](tarball://root/attachments/some-uuid/ticket2854/crystal_weights.patch) by mhansen created at 2008-04-08 06:10:44",
     "created_at": "2008-04-08T06:10:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2854",
     "type": "issue_comment",
@@ -51,7 +51,7 @@ archive/issue_comments_019589.json:
 }
 ```
 
-Attachment
+Attachment [crystal_weights.patch](tarball://root/attachments/some-uuid/ticket2854/crystal_weights.patch) by mhansen created at 2008-04-08 06:10:44
 
 
 

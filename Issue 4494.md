@@ -179,7 +179,7 @@ I'm attaching a patch that implements trivial conjugate() methods for ZZ, QQ, an
 archive/issue_comments_033236.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4494.patch](tarball://root/attachments/some-uuid/ticket4494/trac_4494.patch) by AlexGhitza created at 2008-12-20 15:51:34",
     "created_at": "2008-12-20T15:51:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4494",
     "type": "issue_comment",
@@ -188,7 +188,7 @@ archive/issue_comments_033236.json:
 }
 ```
 
-Attachment
+Attachment [trac_4494.patch](tarball://root/attachments/some-uuid/ticket4494/trac_4494.patch) by AlexGhitza created at 2008-12-20 15:51:34
 
 
 

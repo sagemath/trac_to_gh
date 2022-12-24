@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/827
 archive/issue_comments_005124.json:
 ```json
 {
-    "body": "Attachment\n\nIt appears that nfrootsof1 is available, i.e. via K.pari_nf().nfrootsof1.  This just uses it, and fixes (what I think is) a small bug in CyclotomicField(7).zeta(14).",
+    "body": "Attachment [ncalexan-827.patch](tarball://root/attachments/some-uuid/ticket827/ncalexan-827.patch) by ncalexan created at 2008-01-19 20:56:32\n\nIt appears that nfrootsof1 is available, i.e. via K.pari_nf().nfrootsof1.  This just uses it, and fixes (what I think is) a small bug in CyclotomicField(7).zeta(14).",
     "created_at": "2008-01-19T20:56:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/827",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_005124.json:
 }
 ```
 
-Attachment
+Attachment [ncalexan-827.patch](tarball://root/attachments/some-uuid/ticket827/ncalexan-827.patch) by ncalexan created at 2008-01-19 20:56:32
 
 It appears that nfrootsof1 is available, i.e. via K.pari_nf().nfrootsof1.  This just uses it, and fixes (what I think is) a small bug in CyclotomicField(7).zeta(14).
 
@@ -51,7 +51,7 @@ It appears that nfrootsof1 is available, i.e. via K.pari_nf().nfrootsof1.  This 
 archive/issue_comments_005125.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ncalexan-827-updated.patch](tarball://root/attachments/some-uuid/ticket827/ncalexan-827-updated.patch) by ncalexan created at 2008-01-19 23:56:17",
     "created_at": "2008-01-19T23:56:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/827",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_005125.json:
 }
 ```
 
-Attachment
+Attachment [ncalexan-827-updated.patch](tarball://root/attachments/some-uuid/ticket827/ncalexan-827-updated.patch) by ncalexan created at 2008-01-19 23:56:17
 
 
 

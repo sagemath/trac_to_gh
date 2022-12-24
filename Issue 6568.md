@@ -340,7 +340,7 @@ Migrated notebook.py from HTML to Jinja. Base: r12658 (Sage 4.4.1)
 archive/issue_comments_053591.json:
 ```json
 {
-    "body": "Attachment\n\nMigrated worksheet.py to Jinja. Added doctests. Removed html_slide_controls. Incremental patch from the first patch.",
+    "body": "Attachment [sage-trac-6568.1.patch](tarball://root/attachments/some-uuid/ticket6568/sage-trac-6568.1.patch) by timdumol created at 2009-08-05 01:39:37\n\nMigrated worksheet.py to Jinja. Added doctests. Removed html_slide_controls. Incremental patch from the first patch.",
     "created_at": "2009-08-05T01:39:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
@@ -349,7 +349,7 @@ archive/issue_comments_053591.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac-6568.1.patch](tarball://root/attachments/some-uuid/ticket6568/sage-trac-6568.1.patch) by timdumol created at 2009-08-05 01:39:37
 
 Migrated worksheet.py to Jinja. Added doctests. Removed html_slide_controls. Incremental patch from the first patch.
 
@@ -360,7 +360,7 @@ Migrated worksheet.py to Jinja. Added doctests. Removed html_slide_controls. Inc
 archive/issue_comments_053592.json:
 ```json
 {
-    "body": "Attachment\n\nOBSOLETE.",
+    "body": "Attachment [12659.patch](tarball://root/attachments/some-uuid/ticket6568/12659.patch) by timdumol created at 2009-08-05 01:40:54\n\nOBSOLETE.",
     "created_at": "2009-08-05T01:40:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
@@ -369,7 +369,7 @@ archive/issue_comments_053592.json:
 }
 ```
 
-Attachment
+Attachment [12659.patch](tarball://root/attachments/some-uuid/ticket6568/12659.patch) by timdumol created at 2009-08-05 01:40:54
 
 OBSOLETE.
 
@@ -398,7 +398,7 @@ OBSOLETE.
 archive/issue_comments_053594.json:
 ```json
 {
-    "body": "Attachment\n\nOBSOLETE.",
+    "body": "Attachment [12660.patch](tarball://root/attachments/some-uuid/ticket6568/12660.patch) by timdumol created at 2009-08-05 01:41:23\n\nOBSOLETE.",
     "created_at": "2009-08-05T01:41:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
@@ -407,7 +407,7 @@ archive/issue_comments_053594.json:
 }
 ```
 
-Attachment
+Attachment [12660.patch](tarball://root/attachments/some-uuid/ticket6568/12660.patch) by timdumol created at 2009-08-05 01:41:23
 
 OBSOLETE.
 
@@ -418,7 +418,7 @@ OBSOLETE.
 archive/issue_comments_053595.json:
 ```json
 {
-    "body": "Attachment\n\nOBSOLETE.",
+    "body": "Attachment [12662.patch](tarball://root/attachments/some-uuid/ticket6568/12662.patch) by timdumol created at 2009-08-05 01:41:35\n\nOBSOLETE.",
     "created_at": "2009-08-05T01:41:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
@@ -427,7 +427,7 @@ archive/issue_comments_053595.json:
 }
 ```
 
-Attachment
+Attachment [12662.patch](tarball://root/attachments/some-uuid/ticket6568/12662.patch) by timdumol created at 2009-08-05 01:41:35
 
 OBSOLETE.
 
@@ -456,7 +456,7 @@ OBSOLETE.
 archive/issue_comments_053597.json:
 ```json
 {
-    "body": "Attachment\n\nOBSOLETE.",
+    "body": "Attachment [12664.patch](tarball://root/attachments/some-uuid/ticket6568/12664.patch) by timdumol created at 2009-08-05 01:42:00\n\nOBSOLETE.",
     "created_at": "2009-08-05T01:42:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
@@ -465,7 +465,7 @@ archive/issue_comments_053597.json:
 }
 ```
 
-Attachment
+Attachment [12664.patch](tarball://root/attachments/some-uuid/ticket6568/12664.patch) by timdumol created at 2009-08-05 01:42:00
 
 OBSOLETE.
 
@@ -476,7 +476,7 @@ OBSOLETE.
 archive/issue_comments_053598.json:
 ```json
 {
-    "body": "Attachment\n\nOBSOLETE.",
+    "body": "Attachment [12665.patch](tarball://root/attachments/some-uuid/ticket6568/12665.patch) by timdumol created at 2009-08-05 01:42:12\n\nOBSOLETE.",
     "created_at": "2009-08-05T01:42:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
@@ -485,7 +485,7 @@ archive/issue_comments_053598.json:
 }
 ```
 
-Attachment
+Attachment [12665.patch](tarball://root/attachments/some-uuid/ticket6568/12665.patch) by timdumol created at 2009-08-05 01:42:12
 
 OBSOLETE.
 
@@ -514,7 +514,7 @@ OBSOLETE.
 archive/issue_comments_053600.json:
 ```json
 {
-    "body": "Attachment\n\nOBSOLETE.",
+    "body": "Attachment [12667.patch](tarball://root/attachments/some-uuid/ticket6568/12667.patch) by timdumol created at 2009-08-05 01:42:41\n\nOBSOLETE.",
     "created_at": "2009-08-05T01:42:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
@@ -523,7 +523,7 @@ archive/issue_comments_053600.json:
 }
 ```
 
-Attachment
+Attachment [12667.patch](tarball://root/attachments/some-uuid/ticket6568/12667.patch) by timdumol created at 2009-08-05 01:42:41
 
 OBSOLETE.
 
@@ -552,7 +552,7 @@ OBSOLETE.
 archive/issue_comments_053602.json:
 ```json
 {
-    "body": "Attachment\n\nOBSOLETE.",
+    "body": "Attachment [_12659.patch](tarball://root/attachments/some-uuid/ticket6568/_12659.patch) by timdumol created at 2009-08-05 01:43:09\n\nOBSOLETE.",
     "created_at": "2009-08-05T01:43:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
@@ -561,7 +561,7 @@ archive/issue_comments_053602.json:
 }
 ```
 
-Attachment
+Attachment [_12659.patch](tarball://root/attachments/some-uuid/ticket6568/_12659.patch) by timdumol created at 2009-08-05 01:43:09
 
 OBSOLETE.
 
@@ -572,7 +572,7 @@ OBSOLETE.
 archive/issue_comments_053603.json:
 ```json
 {
-    "body": "Attachment\n\n#4808 appears to be a duplicate of this ticket.  When one is merged, please consider closing the other.",
+    "body": "Attachment [_12660.patch](tarball://root/attachments/some-uuid/ticket6568/_12660.patch) by mpatel created at 2009-08-10 09:27:17\n\n#4808 appears to be a duplicate of this ticket.  When one is merged, please consider closing the other.",
     "created_at": "2009-08-10T09:27:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
@@ -581,7 +581,7 @@ archive/issue_comments_053603.json:
 }
 ```
 
-Attachment
+Attachment [_12660.patch](tarball://root/attachments/some-uuid/ticket6568/_12660.patch) by mpatel created at 2009-08-10 09:27:17
 
 #4808 appears to be a duplicate of this ticket.  When one is merged, please consider closing the other.
 
@@ -732,7 +732,7 @@ Fixed several bugs. Incremental patch from sage-trac-6568.2.patch
 archive/issue_comments_053609.json:
 ```json
 {
-    "body": "Attachment\n\nFixed bug in styling of documentation pages.",
+    "body": "Attachment [sage-trac-6568.4.patch](tarball://root/attachments/some-uuid/ticket6568/sage-trac-6568.4.patch) by timdumol created at 2009-08-13 13:51:08\n\nFixed bug in styling of documentation pages.",
     "created_at": "2009-08-13T13:51:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
@@ -741,7 +741,7 @@ archive/issue_comments_053609.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac-6568.4.patch](tarball://root/attachments/some-uuid/ticket6568/sage-trac-6568.4.patch) by timdumol created at 2009-08-13 13:51:08
 
 Fixed bug in styling of documentation pages.
 
@@ -894,7 +894,7 @@ Actually, I meant "I don't know." as in I don't know about the possibility of fi
 archive/issue_comments_053617.json:
 ```json
 {
-    "body": "Attachment\n\nFixed a few bugs in templating.",
+    "body": "Attachment [sage-trac-6568.5.patch](tarball://root/attachments/some-uuid/ticket6568/sage-trac-6568.5.patch) by timdumol created at 2009-08-14 09:43:24\n\nFixed a few bugs in templating.",
     "created_at": "2009-08-14T09:43:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
@@ -903,7 +903,7 @@ archive/issue_comments_053617.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac-6568.5.patch](tarball://root/attachments/some-uuid/ticket6568/sage-trac-6568.5.patch) by timdumol created at 2009-08-14 09:43:24
 
 Fixed a few bugs in templating.
 
@@ -914,7 +914,7 @@ Fixed a few bugs in templating.
 archive/issue_comments_053618.json:
 ```json
 {
-    "body": "Attachment\n\nRemoved hack in twist.py for documentation page creation. Removed unused files.",
+    "body": "Attachment [sage-trac-6568.6.patch](tarball://root/attachments/some-uuid/ticket6568/sage-trac-6568.6.patch) by timdumol created at 2009-08-14 09:52:32\n\nRemoved hack in twist.py for documentation page creation. Removed unused files.",
     "created_at": "2009-08-14T09:52:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
@@ -923,7 +923,7 @@ archive/issue_comments_053618.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac-6568.6.patch](tarball://root/attachments/some-uuid/ticket6568/sage-trac-6568.6.patch) by timdumol created at 2009-08-14 09:52:32
 
 Removed hack in twist.py for documentation page creation. Removed unused files.
 
@@ -934,7 +934,7 @@ Removed hack in twist.py for documentation page creation. Removed unused files.
 archive/issue_comments_053619.json:
 ```json
 {
-    "body": "Attachment\n\nCumulative patches from sage-trac-6568.2.patch to sage-trac-6568.6.patch. Incremental patch from sage-trac-6568.1.patch.",
+    "body": "Attachment [sage-trac-6568.6.cumulative.patch](tarball://root/attachments/some-uuid/ticket6568/sage-trac-6568.6.cumulative.patch) by timdumol created at 2009-08-14 09:57:19\n\nCumulative patches from sage-trac-6568.2.patch to sage-trac-6568.6.patch. Incremental patch from sage-trac-6568.1.patch.",
     "created_at": "2009-08-14T09:57:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
@@ -943,7 +943,7 @@ archive/issue_comments_053619.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac-6568.6.cumulative.patch](tarball://root/attachments/some-uuid/ticket6568/sage-trac-6568.6.cumulative.patch) by timdumol created at 2009-08-14 09:57:19
 
 Cumulative patches from sage-trac-6568.2.patch to sage-trac-6568.6.patch. Incremental patch from sage-trac-6568.1.patch.
 
@@ -990,7 +990,7 @@ All-in-one.  Apply only this patch.
 archive/issue_comments_053622.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached a solo patch comprised of Tim Dumol's six recent patches.  (I did not use the cumulative patch.)  I've ignored a few small rejected hunks from the sixth patch --- in `notebook.py`, `twist.py`, and `base.html` --- since it appears that the rejected changes are applied by an earlier patch.  Of course, all credit for the hard work of migrating the notebook to Jinja should go to Tim.\n\nI haven't tested the latest changes extensively, but I've noticed no unwelcome surprises.",
+    "body": "Attachment [trac_6568-jinja_migration.patch](tarball://root/attachments/some-uuid/ticket6568/trac_6568-jinja_migration.patch) by mpatel created at 2009-08-15 03:30:41\n\nI've attached a solo patch comprised of Tim Dumol's six recent patches.  (I did not use the cumulative patch.)  I've ignored a few small rejected hunks from the sixth patch --- in `notebook.py`, `twist.py`, and `base.html` --- since it appears that the rejected changes are applied by an earlier patch.  Of course, all credit for the hard work of migrating the notebook to Jinja should go to Tim.\n\nI haven't tested the latest changes extensively, but I've noticed no unwelcome surprises.",
     "created_at": "2009-08-15T03:30:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
@@ -999,7 +999,7 @@ archive/issue_comments_053622.json:
 }
 ```
 
-Attachment
+Attachment [trac_6568-jinja_migration.patch](tarball://root/attachments/some-uuid/ticket6568/trac_6568-jinja_migration.patch) by mpatel created at 2009-08-15 03:30:41
 
 I've attached a solo patch comprised of Tim Dumol's six recent patches.  (I did not use the cumulative patch.)  I've ignored a few small rejected hunks from the sixth patch --- in `notebook.py`, `twist.py`, and `base.html` --- since it appears that the rejected changes are applied by an earlier patch.  Of course, all credit for the hard work of migrating the notebook to Jinja should go to Tim.
 
@@ -1030,7 +1030,7 @@ Fixed introspection, minor clean-ups.  Apply only this patch.
 archive/issue_comments_053624.json:
 ```json
 {
-    "body": "Attachment\n\nVersion 2 (of the uber-patch) should fix introspection.  It also\n* Simplifies `Notebook.plain_text_worksheet_html()`.\n* Indents `Notebook.html_debug_window()`'s docstring.\n\nThere's still some HTML generation in\n* `Notebook.object_list_html()`, `Notebook.list_window_javascript()`, `Notebook.html_settings()`.\n* `Worksheet.html_ratings_into()`\nbut these methods are unused or minor.  Of course, there's markup in `interact.py`, etc.\n\nShould we make a separate ticket for moving `css.py`'s stylesheets to `templates/`?  Rebasing other tickets against this one may be easier than the opposite.\n\nMy review is positive, though someone else should check the most recent changes.  It would be useful to get feedback from other testers.",
+    "body": "Attachment [trac_6568-jinja_migration_v2.patch](tarball://root/attachments/some-uuid/ticket6568/trac_6568-jinja_migration_v2.patch) by mpatel created at 2009-08-16 14:08:08\n\nVersion 2 (of the uber-patch) should fix introspection.  It also\n* Simplifies `Notebook.plain_text_worksheet_html()`.\n* Indents `Notebook.html_debug_window()`'s docstring.\n\nThere's still some HTML generation in\n* `Notebook.object_list_html()`, `Notebook.list_window_javascript()`, `Notebook.html_settings()`.\n* `Worksheet.html_ratings_into()`\nbut these methods are unused or minor.  Of course, there's markup in `interact.py`, etc.\n\nShould we make a separate ticket for moving `css.py`'s stylesheets to `templates/`?  Rebasing other tickets against this one may be easier than the opposite.\n\nMy review is positive, though someone else should check the most recent changes.  It would be useful to get feedback from other testers.",
     "created_at": "2009-08-16T14:08:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
@@ -1039,7 +1039,7 @@ archive/issue_comments_053624.json:
 }
 ```
 
-Attachment
+Attachment [trac_6568-jinja_migration_v2.patch](tarball://root/attachments/some-uuid/ticket6568/trac_6568-jinja_migration_v2.patch) by mpatel created at 2009-08-16 14:08:08
 
 Version 2 (of the uber-patch) should fix introspection.  It also
 * Simplifies `Notebook.plain_text_worksheet_html()`.
@@ -1268,7 +1268,7 @@ I think #6840 will take care of these.
 archive/issue_comments_053633.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch `trac_6568-manifest.patch` prevents repository corruption. A repository corruption can happen because `trac_6568-jinja_migration_v2.patch` adds two new directories:\n\n1. `sage/server/notebook/templates/notebook/`\n2. `sage/server/notebook/templates/worksheet/`\n\nIf the file `SAGE_ROOT/devel/sage-main/MANIFEST.in` is not patched to handle files under these new directories, those files won't be picked up when making a source release with `sage -sdist`.",
+    "body": "Attachment [trac_6568-manifest.patch](tarball://root/attachments/some-uuid/ticket6568/trac_6568-manifest.patch) by mvngu created at 2009-09-07 11:01:28\n\nThe patch `trac_6568-manifest.patch` prevents repository corruption. A repository corruption can happen because `trac_6568-jinja_migration_v2.patch` adds two new directories:\n\n1. `sage/server/notebook/templates/notebook/`\n2. `sage/server/notebook/templates/worksheet/`\n\nIf the file `SAGE_ROOT/devel/sage-main/MANIFEST.in` is not patched to handle files under these new directories, those files won't be picked up when making a source release with `sage -sdist`.",
     "created_at": "2009-09-07T11:01:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
@@ -1277,7 +1277,7 @@ archive/issue_comments_053633.json:
 }
 ```
 
-Attachment
+Attachment [trac_6568-manifest.patch](tarball://root/attachments/some-uuid/ticket6568/trac_6568-manifest.patch) by mvngu created at 2009-09-07 11:01:28
 
 The patch `trac_6568-manifest.patch` prevents repository corruption. A repository corruption can happen because `trac_6568-jinja_migration_v2.patch` adds two new directories:
 

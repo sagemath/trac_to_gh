@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9879
 archive/issue_comments_097796.json:
 ```json
 {
-    "body": "Attachment\n\nWith attachment:trac_9879-hold.patch and the new pynac package at #9201, one can do:\n\n\n```\nsage: x.add(x,(x+1), hold=True)\nx + x + (x + 1)\nsage: sin(pi, hold=True)\nsin(pi)\n```\n\n\nThe pynac package includes patches for #9394, #9834, #9878, #9881, #9900 as well as this ticket. See the ticket description of #9901 for the list (and order) of patches associated to the new version.",
+    "body": "Attachment [trac_9879-hold.patch](tarball://root/attachments/some-uuid/ticket9879/trac_9879-hold.patch) by burcin created at 2010-09-12 12:17:49\n\nWith attachment:trac_9879-hold.patch and the new pynac package at #9201, one can do:\n\n\n```\nsage: x.add(x,(x+1), hold=True)\nx + x + (x + 1)\nsage: sin(pi, hold=True)\nsin(pi)\n```\n\n\nThe pynac package includes patches for #9394, #9834, #9878, #9881, #9900 as well as this ticket. See the ticket description of #9901 for the list (and order) of patches associated to the new version.",
     "created_at": "2010-09-12T12:17:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9878",
     "type": "issue_comment",
@@ -53,7 +53,7 @@ archive/issue_comments_097796.json:
 }
 ```
 
-Attachment
+Attachment [trac_9879-hold.patch](tarball://root/attachments/some-uuid/ticket9879/trac_9879-hold.patch) by burcin created at 2010-09-12 12:17:49
 
 With attachment:trac_9879-hold.patch and the new pynac package at #9201, one can do:
 
@@ -167,7 +167,7 @@ Making a context for holding is now #10035.
 archive/issue_comments_097801.json:
 ```json
 {
-    "body": "Attachment\n\nApply after initial patch",
+    "body": "Attachment [trac_9879-hold-review.patch](tarball://root/attachments/some-uuid/ticket9879/trac_9879-hold-review.patch) by kcrisman created at 2010-10-04 15:01:55\n\nApply after initial patch",
     "created_at": "2010-10-04T15:01:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9878",
     "type": "issue_comment",
@@ -176,7 +176,7 @@ archive/issue_comments_097801.json:
 }
 ```
 
-Attachment
+Attachment [trac_9879-hold-review.patch](tarball://root/attachments/some-uuid/ticket9879/trac_9879-hold-review.patch) by kcrisman created at 2010-10-04 15:01:55
 
 Apply after initial patch
 

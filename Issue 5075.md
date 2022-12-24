@@ -81,7 +81,7 @@ A closely related issue is #3979.
 archive/issue_comments_038650.json:
 ```json
 {
-    "body": "Attachment\n\nIn progress.  I think it fixes the problem, but I'm working on a larger project for p-adic polynomials that this is part of.",
+    "body": "Attachment [trac_5075.patch](tarball://root/attachments/some-uuid/ticket5075/trac_5075.patch) by roed created at 2009-04-26 19:42:28\n\nIn progress.  I think it fixes the problem, but I'm working on a larger project for p-adic polynomials that this is part of.",
     "created_at": "2009-04-26T19:42:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5075",
     "type": "issue_comment",
@@ -90,7 +90,7 @@ archive/issue_comments_038650.json:
 }
 ```
 
-Attachment
+Attachment [trac_5075.patch](tarball://root/attachments/some-uuid/ticket5075/trac_5075.patch) by roed created at 2009-04-26 19:42:28
 
 In progress.  I think it fixes the problem, but I'm working on a larger project for p-adic polynomials that this is part of.
 
@@ -101,7 +101,7 @@ In progress.  I think it fixes the problem, but I'm working on a larger project 
 archive/issue_comments_038651.json:
 ```json
 {
-    "body": "Attachment\n\nrebased against 4.0",
+    "body": "Attachment [trac_5075.2.patch](tarball://root/attachments/some-uuid/ticket5075/trac_5075.2.patch) by roed created at 2009-06-11 21:04:01\n\nrebased against 4.0",
     "created_at": "2009-06-11T21:04:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5075",
     "type": "issue_comment",
@@ -110,7 +110,7 @@ archive/issue_comments_038651.json:
 }
 ```
 
-Attachment
+Attachment [trac_5075.2.patch](tarball://root/attachments/some-uuid/ticket5075/trac_5075.2.patch) by roed created at 2009-06-11 21:04:01
 
 rebased against 4.0
 

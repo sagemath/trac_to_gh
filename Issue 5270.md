@@ -316,7 +316,7 @@ abort: patch failed to apply
 archive/issue_comments_040461.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5270.patch](tarball://root/attachments/some-uuid/ticket5270/trac_5270.patch) by AlexGhitza created at 2009-03-16 02:52:26",
     "created_at": "2009-03-16T02:52:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5270",
     "type": "issue_comment",
@@ -325,7 +325,7 @@ archive/issue_comments_040461.json:
 }
 ```
 
-Attachment
+Attachment [trac_5270.patch](tarball://root/attachments/some-uuid/ticket5270/trac_5270.patch) by AlexGhitza created at 2009-03-16 02:52:26
 
 
 

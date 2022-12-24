@@ -70,7 +70,7 @@ Implementation of tate's algorithm in MAGMA
 archive/issue_comments_001755.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [tate.m](tarball://root/attachments/some-uuid/ticket361/tate.m) by mabshoff created at 2007-09-10 02:21:03",
     "created_at": "2007-09-10T02:21:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/361",
     "type": "issue_comment",
@@ -79,7 +79,7 @@ archive/issue_comments_001755.json:
 }
 ```
 
-Attachment
+Attachment [tate.m](tarball://root/attachments/some-uuid/ticket361/tate.m) by mabshoff created at 2007-09-10 02:21:03
 
 
 

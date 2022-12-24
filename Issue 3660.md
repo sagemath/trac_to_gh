@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3660
 archive/issue_comments_025869.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [doc_3660.patch](tarball://root/attachments/some-uuid/ticket3660/doc_3660.patch) by mhansen created at 2008-07-16 02:55:12",
     "created_at": "2008-07-16T02:55:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3660",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_025869.json:
 }
 ```
 
-Attachment
+Attachment [doc_3660.patch](tarball://root/attachments/some-uuid/ticket3660/doc_3660.patch) by mhansen created at 2008-07-16 02:55:12
 
 
 
@@ -51,7 +51,7 @@ Attachment
 archive/issue_comments_025870.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3660.patch](tarball://root/attachments/some-uuid/ticket3660/trac_3660.patch) by mhansen created at 2008-07-16 20:22:37",
     "created_at": "2008-07-16T20:22:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3660",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_025870.json:
 }
 ```
 
-Attachment
+Attachment [trac_3660.patch](tarball://root/attachments/some-uuid/ticket3660/trac_3660.patch) by mhansen created at 2008-07-16 20:22:37
 
 
 
@@ -69,7 +69,7 @@ Attachment
 archive/issue_comments_025871.json:
 ```json
 {
-    "body": "Attachment\n\nApply all three patches:\ndoc_3660.patch in doc-main\ntrac_3660.patch then trac_3660-2.patch in sage-main\n\nCredit goes to Mike Hansen and Anne Schilling",
+    "body": "Attachment [trac_3660-2.patch](tarball://root/attachments/some-uuid/ticket3660/trac_3660-2.patch) by mhansen created at 2008-07-16 20:24:05\n\nApply all three patches:\ndoc_3660.patch in doc-main\ntrac_3660.patch then trac_3660-2.patch in sage-main\n\nCredit goes to Mike Hansen and Anne Schilling",
     "created_at": "2008-07-16T20:24:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3660",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_025871.json:
 }
 ```
 
-Attachment
+Attachment [trac_3660-2.patch](tarball://root/attachments/some-uuid/ticket3660/trac_3660-2.patch) by mhansen created at 2008-07-16 20:24:05
 
 Apply all three patches:
 doc_3660.patch in doc-main

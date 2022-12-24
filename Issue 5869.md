@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5869
 archive/issue_comments_046357.json:
 ```json
 {
-    "body": "Attachment\n\nI will work on integrating this tomorrow.\n\nCheers,\n\nMichael",
+    "body": "Attachment [libgpg_error-1.6.p0.patch](tarball://root/attachments/some-uuid/ticket5869/libgpg_error-1.6.p0.patch) by mabshoff created at 2009-04-23 07:31:38\n\nI will work on integrating this tomorrow.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-23T07:31:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5869",
     "type": "issue_comment",
@@ -41,7 +41,7 @@ archive/issue_comments_046357.json:
 }
 ```
 
-Attachment
+Attachment [libgpg_error-1.6.p0.patch](tarball://root/attachments/some-uuid/ticket5869/libgpg_error-1.6.p0.patch) by mabshoff created at 2009-04-23 07:31:38
 
 I will work on integrating this tomorrow.
 

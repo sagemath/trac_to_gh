@@ -224,7 +224,7 @@ Michael
 archive/issue_comments_023358.json:
 ```json
 {
-    "body": "Attachment\n\nnew patch",
+    "body": "Attachment [trac_3357.patch](tarball://root/attachments/some-uuid/ticket3357/trac_3357.patch) by gfurnish created at 2008-06-05 19:40:13\n\nnew patch",
     "created_at": "2008-06-05T19:40:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3357",
     "type": "issue_comment",
@@ -233,7 +233,7 @@ archive/issue_comments_023358.json:
 }
 ```
 
-Attachment
+Attachment [trac_3357.patch](tarball://root/attachments/some-uuid/ticket3357/trac_3357.patch) by gfurnish created at 2008-06-05 19:40:13
 
 new patch
 

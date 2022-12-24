@@ -79,7 +79,7 @@ Changing status from new to needs_review.
 archive/issue_comments_067483.json:
 ```json
 {
-    "body": "Attachment\n\npatch for main Sage repository",
+    "body": "Attachment [trac_7799-install-scripts.patch](tarball://root/attachments/some-uuid/ticket7799/trac_7799-install-scripts.patch) by jhpalmieri created at 2009-12-31 07:07:44\n\npatch for main Sage repository",
     "created_at": "2009-12-31T07:07:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7799",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_067483.json:
 }
 ```
 
-Attachment
+Attachment [trac_7799-install-scripts.patch](tarball://root/attachments/some-uuid/ticket7799/trac_7799-install-scripts.patch) by jhpalmieri created at 2009-12-31 07:07:44
 
 patch for main Sage repository
 

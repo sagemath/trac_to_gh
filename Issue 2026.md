@@ -62,7 +62,7 @@ Changing status from new to assigned.
 archive/issue_comments_013106.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-2026.patch](tarball://root/attachments/some-uuid/ticket2026/trac-2026.patch) by was created at 2008-02-01 23:11:04",
     "created_at": "2008-02-01T23:11:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2026",
     "type": "issue_comment",
@@ -71,7 +71,7 @@ archive/issue_comments_013106.json:
 }
 ```
 
-Attachment
+Attachment [trac-2026.patch](tarball://root/attachments/some-uuid/ticket2026/trac-2026.patch) by was created at 2008-02-01 23:11:04
 
 
 
@@ -98,7 +98,7 @@ apply on top of first patch.
 archive/issue_comments_013108.json:
 ```json
 {
-    "body": "Attachment\n\nApply instead of first patch (this includes the first patch)",
+    "body": "Attachment [eigenspace-docs.2.patch](tarball://root/attachments/some-uuid/ticket2026/eigenspace-docs.2.patch) by jason created at 2008-02-01 23:39:21\n\nApply instead of first patch (this includes the first patch)",
     "created_at": "2008-02-01T23:39:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2026",
     "type": "issue_comment",
@@ -107,7 +107,7 @@ archive/issue_comments_013108.json:
 }
 ```
 
-Attachment
+Attachment [eigenspace-docs.2.patch](tarball://root/attachments/some-uuid/ticket2026/eigenspace-docs.2.patch) by jason created at 2008-02-01 23:39:21
 
 Apply instead of first patch (this includes the first patch)
 

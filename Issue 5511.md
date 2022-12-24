@@ -248,7 +248,7 @@ Changing assignee from was to jason.
 archive/issue_comments_042801.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Arbitrary_Mesh_Functions.sws](tarball://root/attachments/some-uuid/ticket5511/Arbitrary_Mesh_Functions.sws) by jason created at 2009-03-13 16:44:03",
     "created_at": "2009-03-13T16:44:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5511",
     "type": "issue_comment",
@@ -257,7 +257,7 @@ archive/issue_comments_042801.json:
 }
 ```
 
-Attachment
+Attachment [Arbitrary_Mesh_Functions.sws](tarball://root/attachments/some-uuid/ticket5511/Arbitrary_Mesh_Functions.sws) by jason created at 2009-03-13 16:44:03
 
 
 
@@ -340,7 +340,7 @@ Yes, it should be generic enough for any IndexFaceSet.  See http://reference.wol
 archive/issue_comments_042806.json:
 ```json
 {
-    "body": "Attachment\n\nAn example of an arbitrary mesh",
+    "body": "Attachment [mesh_function.jpeg](tarball://root/attachments/some-uuid/ticket5511/mesh_function.jpeg) by jason created at 2009-09-25 16:23:50\n\nAn example of an arbitrary mesh",
     "created_at": "2009-09-25T16:23:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5511",
     "type": "issue_comment",
@@ -349,7 +349,7 @@ archive/issue_comments_042806.json:
 }
 ```
 
-Attachment
+Attachment [mesh_function.jpeg](tarball://root/attachments/some-uuid/ticket5511/mesh_function.jpeg) by jason created at 2009-09-25 16:23:50
 
 An example of an arbitrary mesh
 

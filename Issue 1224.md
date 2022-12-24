@@ -101,7 +101,7 @@ next attempt, patch updated
 archive/issue_comments_007624.json:
 ```json
 {
-    "body": "Attachment\n\nMerged in 2.8.13.rc2.",
+    "body": "Attachment [trac1224_endianess.patch](tarball://root/attachments/some-uuid/ticket1224/trac1224_endianess.patch) by mabshoff created at 2007-11-21 15:26:08\n\nMerged in 2.8.13.rc2.",
     "created_at": "2007-11-21T15:26:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1224",
     "type": "issue_comment",
@@ -110,7 +110,7 @@ archive/issue_comments_007624.json:
 }
 ```
 
-Attachment
+Attachment [trac1224_endianess.patch](tarball://root/attachments/some-uuid/ticket1224/trac1224_endianess.patch) by mabshoff created at 2007-11-21 15:26:08
 
 Merged in 2.8.13.rc2.
 

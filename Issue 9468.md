@@ -156,7 +156,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_090821.json:
 ```json
 {
-    "body": "Attachment\n\nChecked, folded, posted. Thanks!",
+    "body": "Attachment [trac_9468-classcallmetaclass-classcontains-nt.patch](tarball://root/attachments/some-uuid/ticket9468/trac_9468-classcallmetaclass-classcontains-nt.patch) by nthiery created at 2011-04-23 01:47:27\n\nChecked, folded, posted. Thanks!",
     "created_at": "2011-04-23T01:47:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9468",
     "type": "issue_comment",
@@ -165,7 +165,7 @@ archive/issue_comments_090821.json:
 }
 ```
 
-Attachment
+Attachment [trac_9468-classcallmetaclass-classcontains-nt.patch](tarball://root/attachments/some-uuid/ticket9468/trac_9468-classcallmetaclass-classcontains-nt.patch) by nthiery created at 2011-04-23 01:47:27
 
 Checked, folded, posted. Thanks!
 

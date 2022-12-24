@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2295
 archive/issue_comments_015223.json:
 ```json
 {
-    "body": "Attachment\n\nfix build cache problem when sage_root has symlinks",
+    "body": "Attachment [build_cache_symlink.patch](tarball://root/attachments/some-uuid/ticket2295/build_cache_symlink.patch) by burcin created at 2008-02-24 20:02:06\n\nfix build cache problem when sage_root has symlinks",
     "created_at": "2008-02-24T20:02:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2295",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_015223.json:
 }
 ```
 
-Attachment
+Attachment [build_cache_symlink.patch](tarball://root/attachments/some-uuid/ticket2295/build_cache_symlink.patch) by burcin created at 2008-02-24 20:02:06
 
 fix build cache problem when sage_root has symlinks
 

@@ -81,7 +81,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6054
 archive/issue_comments_048219.json:
 ```json
 {
-    "body": "Attachment\n\nThanks. Great patch. But the semicolon removal in the patch\n\n```\n--- a/sage/interfaces/maxima.py Fri May 15 18:39:25 2009 -0700\n+++ b/sage/interfaces/maxima.py Sat May 16 23:30:51 2009 -0700\n@@ -755,7 +755,7 @@\n         if self._expect is None: return\n         r = randrange(2147483647)\n         s = marker + str(r+1)\n-        cmd = ''';sconcat(\"%s\",(%s+1));\\n'''%(marker,r)\n+        cmd = '''sconcat(\"%s\",(%s+1));\\n'''%(marker,r)\n         self._sendstr(cmd)\n         try:\n             self._expect_expr(timeout=0.5)\n```\n\ncauses sync issues on sage.math, so I am taking it out.\n\nCheers,\n\nMichael",
+    "body": "Attachment [maxima_display2d.patch](tarball://root/attachments/some-uuid/ticket6054/maxima_display2d.patch) by mabshoff created at 2009-05-18 12:44:08\n\nThanks. Great patch. But the semicolon removal in the patch\n\n```\n--- a/sage/interfaces/maxima.py Fri May 15 18:39:25 2009 -0700\n+++ b/sage/interfaces/maxima.py Sat May 16 23:30:51 2009 -0700\n@@ -755,7 +755,7 @@\n         if self._expect is None: return\n         r = randrange(2147483647)\n         s = marker + str(r+1)\n-        cmd = ''';sconcat(\"%s\",(%s+1));\\n'''%(marker,r)\n+        cmd = '''sconcat(\"%s\",(%s+1));\\n'''%(marker,r)\n         self._sendstr(cmd)\n         try:\n             self._expect_expr(timeout=0.5)\n```\n\ncauses sync issues on sage.math, so I am taking it out.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-18T12:44:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6054",
     "type": "issue_comment",
@@ -90,7 +90,7 @@ archive/issue_comments_048219.json:
 }
 ```
 
-Attachment
+Attachment [maxima_display2d.patch](tarball://root/attachments/some-uuid/ticket6054/maxima_display2d.patch) by mabshoff created at 2009-05-18 12:44:08
 
 Thanks. Great patch. But the semicolon removal in the patch
 
@@ -121,7 +121,7 @@ Michael
 archive/issue_comments_048220.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch I just posted replaces Mike's patch and also fixes the failure in \n\n```\ndevel/sage/doc/en/constructions/calculus.rst\n```\n\nthat Mike did point out he forgot to change when he cut the patch. I committed in Mike's name obviously ;)\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_6054_maxima_display2d.patch](tarball://root/attachments/some-uuid/ticket6054/trac_6054_maxima_display2d.patch) by mabshoff created at 2009-05-18 13:16:54\n\nThe patch I just posted replaces Mike's patch and also fixes the failure in \n\n```\ndevel/sage/doc/en/constructions/calculus.rst\n```\n\nthat Mike did point out he forgot to change when he cut the patch. I committed in Mike's name obviously ;)\n\nCheers,\n\nMichael",
     "created_at": "2009-05-18T13:16:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6054",
     "type": "issue_comment",
@@ -130,7 +130,7 @@ archive/issue_comments_048220.json:
 }
 ```
 
-Attachment
+Attachment [trac_6054_maxima_display2d.patch](tarball://root/attachments/some-uuid/ticket6054/trac_6054_maxima_display2d.patch) by mabshoff created at 2009-05-18 13:16:54
 
 The patch I just posted replaces Mike's patch and also fixes the failure in 
 

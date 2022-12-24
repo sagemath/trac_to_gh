@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7633
 archive/issue_comments_065218.json:
 ```json
 {
-    "body": "Attachment\n\nCopy Save, Cancel to top of notebook settings page.  sagenb repo.",
+    "body": "Attachment [trac_7633-nb_settings_buttons.patch](tarball://root/attachments/some-uuid/ticket7633/trac_7633-nb_settings_buttons.patch) by mpatel created at 2010-01-25 16:25:55\n\nCopy Save, Cancel to top of notebook settings page.  sagenb repo.",
     "created_at": "2010-01-25T16:25:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7633",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_065218.json:
 }
 ```
 
-Attachment
+Attachment [trac_7633-nb_settings_buttons.patch](tarball://root/attachments/some-uuid/ticket7633/trac_7633-nb_settings_buttons.patch) by mpatel created at 2010-01-25 16:25:55
 
 Copy Save, Cancel to top of notebook settings page.  sagenb repo.
 
@@ -87,7 +87,7 @@ Changing status from new to needs_review.
 archive/issue_comments_065221.json:
 ```json
 {
-    "body": "Attachment\n\nReviewer patch. Apply on top of previous. Does the same for Account Settings, and changes the elements from <input>s to <button>s.",
+    "body": "Attachment [trac_7633-nb_settings_buttons-reviewer.patch](tarball://root/attachments/some-uuid/ticket7633/trac_7633-nb_settings_buttons-reviewer.patch) by timdumol created at 2010-04-03 16:23:56\n\nReviewer patch. Apply on top of previous. Does the same for Account Settings, and changes the elements from <input>s to <button>s.",
     "created_at": "2010-04-03T16:23:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7633",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_065221.json:
 }
 ```
 
-Attachment
+Attachment [trac_7633-nb_settings_buttons-reviewer.patch](tarball://root/attachments/some-uuid/ticket7633/trac_7633-nb_settings_buttons-reviewer.patch) by timdumol created at 2010-04-03 16:23:56
 
 Reviewer patch. Apply on top of previous. Does the same for Account Settings, and changes the elements from <input>s to <button>s.
 

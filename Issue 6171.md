@@ -93,7 +93,7 @@ Yes, sorry about that.  I was just sitting down to produce a new patch when I sa
 archive/issue_comments_049225.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sqrt.patch](tarball://root/attachments/some-uuid/ticket6171/sqrt.patch) by jhpalmieri created at 2009-05-31 22:42:31",
     "created_at": "2009-05-31T22:42:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6171",
     "type": "issue_comment",
@@ -102,7 +102,7 @@ archive/issue_comments_049225.json:
 }
 ```
 
-Attachment
+Attachment [sqrt.patch](tarball://root/attachments/some-uuid/ticket6171/sqrt.patch) by jhpalmieri created at 2009-05-31 22:42:31
 
 
 

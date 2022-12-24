@@ -51,7 +51,7 @@ Changing status from new to needs_review.
 archive/issue_comments_074816.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8370_tour_functions_french.patch](tarball://root/attachments/some-uuid/ticket8370/trac_8370_tour_functions_french.patch) by mmezzarobba created at 2010-02-27 09:20:38",
     "created_at": "2010-02-27T09:20:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8370",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_074816.json:
 }
 ```
 
-Attachment
+Attachment [trac_8370_tour_functions_french.patch](tarball://root/attachments/some-uuid/ticket8370/trac_8370_tour_functions_french.patch) by mmezzarobba created at 2010-02-27 09:20:38
 
 
 
@@ -153,7 +153,7 @@ Minor rephrasing and doc syntax fixes -- apply on top of the other patch
 archive/issue_comments_074821.json:
 ```json
 {
-    "body": "Attachment\n\nHello again Marc !\nI reviewed your patch. Everything is ok, I made a few changes which are not errors, but mainly suggestions, so if you don't agree with any of it, feel very free to remove them or tell me to remove them. To summarize, I did the following modifications.\n\n1. Since the tabbing is four spaces for Python code in general (not mandatory, but encouraged), I reformatted your examples so that they all start at distance four from the beginning of the lines.\n\n2. For the sage blocks illustrating your examples, you always put `::` alone on a line, while you could put it at the end of the preceding text explaining the example. The effect is that the sentence ends with `:` and the block example follows. This is not a mistake, but this is what I've seen in other patches.\n\n3. I did some rephrasing. These are only suggestions, if you don't agree with all or some of it, let me know.\n\n4. You forgot to put the word \"plot\" between backticks in one place. I corrected that.\n\nThat's pretty much it. As soon as you confirm my changes, I'll be ready to set this ticket to positive review.",
+    "body": "Attachment [trac_8370_review-abm.patch](tarball://root/attachments/some-uuid/ticket8370/trac_8370_review-abm.patch) by abmasse created at 2010-03-06 12:24:08\n\nHello again Marc !\nI reviewed your patch. Everything is ok, I made a few changes which are not errors, but mainly suggestions, so if you don't agree with any of it, feel very free to remove them or tell me to remove them. To summarize, I did the following modifications.\n\n1. Since the tabbing is four spaces for Python code in general (not mandatory, but encouraged), I reformatted your examples so that they all start at distance four from the beginning of the lines.\n\n2. For the sage blocks illustrating your examples, you always put `::` alone on a line, while you could put it at the end of the preceding text explaining the example. The effect is that the sentence ends with `:` and the block example follows. This is not a mistake, but this is what I've seen in other patches.\n\n3. I did some rephrasing. These are only suggestions, if you don't agree with all or some of it, let me know.\n\n4. You forgot to put the word \"plot\" between backticks in one place. I corrected that.\n\nThat's pretty much it. As soon as you confirm my changes, I'll be ready to set this ticket to positive review.",
     "created_at": "2010-03-06T12:24:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8370",
     "type": "issue_comment",
@@ -162,7 +162,7 @@ archive/issue_comments_074821.json:
 }
 ```
 
-Attachment
+Attachment [trac_8370_review-abm.patch](tarball://root/attachments/some-uuid/ticket8370/trac_8370_review-abm.patch) by abmasse created at 2010-03-06 12:24:08
 
 Hello again Marc !
 I reviewed your patch. Everything is ok, I made a few changes which are not errors, but mainly suggestions, so if you don't agree with any of it, feel very free to remove them or tell me to remove them. To summarize, I did the following modifications.
@@ -248,7 +248,7 @@ Nathann
 archive/issue_comments_074824.json:
 ```json
 {
-    "body": "Attachment\n\nHello, Marc and Nathann ! Sorry for the delay...\n\nNathann, I can't see what changes you made with the merged patch. Could you please add a patch that contains only your changes and that applies on top of the two patches Marc and I have attached so far ? This way, it'll be easier to review.\n\nThank you !",
+    "body": "Attachment [trac_8370_merged+doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket8370/trac_8370_merged+doctest_fixes.patch) by abmasse created at 2010-04-06 19:10:21\n\nHello, Marc and Nathann ! Sorry for the delay...\n\nNathann, I can't see what changes you made with the merged patch. Could you please add a patch that contains only your changes and that applies on top of the two patches Marc and I have attached so far ? This way, it'll be easier to review.\n\nThank you !",
     "created_at": "2010-04-06T19:10:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8370",
     "type": "issue_comment",
@@ -257,7 +257,7 @@ archive/issue_comments_074824.json:
 }
 ```
 
-Attachment
+Attachment [trac_8370_merged+doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket8370/trac_8370_merged+doctest_fixes.patch) by abmasse created at 2010-04-06 19:10:21
 
 Hello, Marc and Nathann ! Sorry for the delay...
 
@@ -292,7 +292,7 @@ Nathann
 archive/issue_comments_074826.json:
 ```json
 {
-    "body": "Attachment\n\nHello, everyone !\n\nI'm very sorry for the delay... I just moved back to Montreal and haven't had much time lately to work on Sage patches. I looked once again at the three patches, applied them, checked the documentation generated by Sage and run `sage -t` on the `tour_functions.rst` file. Everything looked fine and all tests passed. Therefore, I give this patch a positive review.\n\nFor the release manager, please apply the patches in the following order\n\n\n```\ntrac_8370_tour_functions_french.patch\ntrac_8370_review-abm.patch\ntrac_8370_fixes.patch\n```\n\n\nand disregard `trac_8370_merged+doctest_fixes.patch`.\n\nThank you for your patience!",
+    "body": "Attachment [trac_8370_fixes.patch](tarball://root/attachments/some-uuid/ticket8370/trac_8370_fixes.patch) by abmasse created at 2010-04-15 20:38:22\n\nHello, everyone !\n\nI'm very sorry for the delay... I just moved back to Montreal and haven't had much time lately to work on Sage patches. I looked once again at the three patches, applied them, checked the documentation generated by Sage and run `sage -t` on the `tour_functions.rst` file. Everything looked fine and all tests passed. Therefore, I give this patch a positive review.\n\nFor the release manager, please apply the patches in the following order\n\n\n```\ntrac_8370_tour_functions_french.patch\ntrac_8370_review-abm.patch\ntrac_8370_fixes.patch\n```\n\n\nand disregard `trac_8370_merged+doctest_fixes.patch`.\n\nThank you for your patience!",
     "created_at": "2010-04-15T20:38:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8370",
     "type": "issue_comment",
@@ -301,7 +301,7 @@ archive/issue_comments_074826.json:
 }
 ```
 
-Attachment
+Attachment [trac_8370_fixes.patch](tarball://root/attachments/some-uuid/ticket8370/trac_8370_fixes.patch) by abmasse created at 2010-04-15 20:38:22
 
 Hello, everyone !
 

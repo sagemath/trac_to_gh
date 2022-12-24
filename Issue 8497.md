@@ -293,7 +293,7 @@ Okay.  So whoever does this ticket will do that :)
 archive/issue_comments_076694.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8497.patch](tarball://root/attachments/some-uuid/ticket8497/trac_8497.patch) by zimmerma created at 2011-09-25 21:04:40",
     "created_at": "2011-09-25T21:04:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8497",
     "type": "issue_comment",
@@ -302,7 +302,7 @@ archive/issue_comments_076694.json:
 }
 ```
 
-Attachment
+Attachment [trac_8497.patch](tarball://root/attachments/some-uuid/ticket8497/trac_8497.patch) by zimmerma created at 2011-09-25 21:04:40
 
 
 
@@ -457,7 +457,7 @@ Fixed doc formatting, apply only this
 archive/issue_comments_076703.json:
 ```json
 {
-    "body": "Attachment\n\nI feel that we should at least ask on the Maxima list about whether this is truly \"not canonical\".  My understanding is that Fateman would say it is canonical as an *expression*, not as a *function*.   If I'm the only one who feels this way, I'll let it slide.   But I figure we would want him to give us benefit of the doubt in our areas of expertise.",
+    "body": "Attachment [8497_fix_doc.patch](tarball://root/attachments/some-uuid/ticket8497/8497_fix_doc.patch) by kcrisman created at 2011-10-07 16:52:47\n\nI feel that we should at least ask on the Maxima list about whether this is truly \"not canonical\".  My understanding is that Fateman would say it is canonical as an *expression*, not as a *function*.   If I'm the only one who feels this way, I'll let it slide.   But I figure we would want him to give us benefit of the doubt in our areas of expertise.",
     "created_at": "2011-10-07T16:52:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8497",
     "type": "issue_comment",
@@ -466,7 +466,7 @@ archive/issue_comments_076703.json:
 }
 ```
 
-Attachment
+Attachment [8497_fix_doc.patch](tarball://root/attachments/some-uuid/ticket8497/8497_fix_doc.patch) by kcrisman created at 2011-10-07 16:52:47
 
 I feel that we should at least ask on the Maxima list about whether this is truly "not canonical".  My understanding is that Fateman would say it is canonical as an *expression*, not as a *function*.   If I'm the only one who feels this way, I'll let it slide.   But I figure we would want him to give us benefit of the doubt in our areas of expertise.
 

@@ -69,7 +69,7 @@ Changing status from new to needs_review.
 archive/issue_comments_063601.json:
 ```json
 {
-    "body": "Attachment\n\nSPKG reviewer patch, based on Jeroen's changes.",
+    "body": "Attachment [trac_7513-clean_up_spkg-install_SPKG.txt-reviewer.patch](tarball://root/attachments/some-uuid/ticket7513/trac_7513-clean_up_spkg-install_SPKG.txt-reviewer.patch) by leif created at 2010-11-02 06:37:29\n\nSPKG reviewer patch, based on Jeroen's changes.",
     "created_at": "2010-11-02T06:37:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7513",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_063601.json:
 }
 ```
 
-Attachment
+Attachment [trac_7513-clean_up_spkg-install_SPKG.txt-reviewer.patch](tarball://root/attachments/some-uuid/ticket7513/trac_7513-clean_up_spkg-install_SPKG.txt-reviewer.patch) by leif created at 2010-11-02 06:37:29
 
 SPKG reviewer patch, based on Jeroen's changes.
 
@@ -177,7 +177,7 @@ Apply on top of leif's patch
 archive/issue_comments_063606.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:7 jdemeyer]:\n> Since the patch still applies perfectly fine, I don't think it is a problem that the line numbers don't match (note that I created `patches/posix.py` from `patches/posix.py.patch`, not the other way around).\n\nObviously. Florent recently complained about a patch of mine that wasn't based on vanilla and so (just) the line numbers changed s.t. Mercurial operated more verbosely than usual. ;-)\n\nIn general it's better to also touch the diffs, or keep them in full sync with the patched files; I've come across spkgs where apparently obsolete files were copied over; and it's confusing when there are dead old patches that do not reflect the current differences.\n \n> Thanks for looking more carefully at this, I just wanted a new spkg quickly :-)\n\nWell, the ticket's first (opening) anniversary is close...",
+    "body": "Attachment [7513_review_review.patch](tarball://root/attachments/some-uuid/ticket7513/7513_review_review.patch) by leif created at 2010-11-02 10:49:09\n\nReplying to [comment:7 jdemeyer]:\n> Since the patch still applies perfectly fine, I don't think it is a problem that the line numbers don't match (note that I created `patches/posix.py` from `patches/posix.py.patch`, not the other way around).\n\nObviously. Florent recently complained about a patch of mine that wasn't based on vanilla and so (just) the line numbers changed s.t. Mercurial operated more verbosely than usual. ;-)\n\nIn general it's better to also touch the diffs, or keep them in full sync with the patched files; I've come across spkgs where apparently obsolete files were copied over; and it's confusing when there are dead old patches that do not reflect the current differences.\n \n> Thanks for looking more carefully at this, I just wanted a new spkg quickly :-)\n\nWell, the ticket's first (opening) anniversary is close...",
     "created_at": "2010-11-02T10:49:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7513",
     "type": "issue_comment",
@@ -186,7 +186,7 @@ archive/issue_comments_063606.json:
 }
 ```
 
-Attachment
+Attachment [7513_review_review.patch](tarball://root/attachments/some-uuid/ticket7513/7513_review_review.patch) by leif created at 2010-11-02 10:49:09
 
 Replying to [comment:7 jdemeyer]:
 > Since the patch still applies perfectly fine, I don't think it is a problem that the line numbers don't match (note that I created `patches/posix.py` from `patches/posix.py.patch`, not the other way around).

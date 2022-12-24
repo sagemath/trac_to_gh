@@ -171,7 +171,7 @@ all tests pass
 archive/issue_comments_037501.json:
 ```json
 {
-    "body": "Attachment\n\nfor polynomials, slicing for generic polynomials returns a polynomial, whereas with pari it returns a vector. I think we should change this behavior.",
+    "body": "Attachment [trac-4941.patch](tarball://root/attachments/some-uuid/ticket4941/trac-4941.patch) by ylchapuy created at 2009-01-21 12:54:33\n\nfor polynomials, slicing for generic polynomials returns a polynomial, whereas with pari it returns a vector. I think we should change this behavior.",
     "created_at": "2009-01-21T12:54:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4941",
     "type": "issue_comment",
@@ -180,7 +180,7 @@ archive/issue_comments_037501.json:
 }
 ```
 
-Attachment
+Attachment [trac-4941.patch](tarball://root/attachments/some-uuid/ticket4941/trac-4941.patch) by ylchapuy created at 2009-01-21 12:54:33
 
 for polynomials, slicing for generic polynomials returns a polynomial, whereas with pari it returns a vector. I think we should change this behavior.
 

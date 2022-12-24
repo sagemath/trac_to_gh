@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3940
 archive/issue_comments_028242.json:
 ```json
 {
-    "body": "Attachment\n\nJason,\n\nnow that #3873 has been merged can you check how much of this patch is still useful/applies?\n\nCheers,\n\nMichael",
+    "body": "Attachment [warnings.patch](tarball://root/attachments/some-uuid/ticket3940/warnings.patch) by mabshoff created at 2008-08-25 01:15:17\n\nJason,\n\nnow that #3873 has been merged can you check how much of this patch is still useful/applies?\n\nCheers,\n\nMichael",
     "created_at": "2008-08-25T01:15:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3940",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_028242.json:
 }
 ```
 
-Attachment
+Attachment [warnings.patch](tarball://root/attachments/some-uuid/ticket3940/warnings.patch) by mabshoff created at 2008-08-25 01:15:17
 
 Jason,
 
@@ -187,7 +187,7 @@ If warnings become a more important part of Sage, then later we can break things
 archive/issue_comments_028249.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sagewarnings.py](tarball://root/attachments/some-uuid/ticket3940/sagewarnings.py) by mraum created at 2010-01-18 21:54:03",
     "created_at": "2010-01-18T21:54:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3940",
     "type": "issue_comment",
@@ -196,7 +196,7 @@ archive/issue_comments_028249.json:
 }
 ```
 
-Attachment
+Attachment [sagewarnings.py](tarball://root/attachments/some-uuid/ticket3940/sagewarnings.py) by mraum created at 2010-01-18 21:54:03
 
 
 

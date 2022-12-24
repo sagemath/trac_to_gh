@@ -173,7 +173,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_086920.json:
 ```json
 {
-    "body": "Attachment\n\nIt's harmess (if you look, the exception stack is actually identical, just with slightly different string representation for some of the classes). I've uploaded a new patch.",
+    "body": "Attachment [trac_9242-ideal_monoid_docs.patch](tarball://root/attachments/some-uuid/ticket9242/trac_9242-ideal_monoid_docs.patch) by davidloeffler created at 2010-06-15 10:44:10\n\nIt's harmess (if you look, the exception stack is actually identical, just with slightly different string representation for some of the classes). I've uploaded a new patch.",
     "created_at": "2010-06-15T10:44:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9242",
     "type": "issue_comment",
@@ -182,7 +182,7 @@ archive/issue_comments_086920.json:
 }
 ```
 
-Attachment
+Attachment [trac_9242-ideal_monoid_docs.patch](tarball://root/attachments/some-uuid/ticket9242/trac_9242-ideal_monoid_docs.patch) by davidloeffler created at 2010-06-15 10:44:10
 
 It's harmess (if you look, the exception stack is actually identical, just with slightly different string representation for some of the classes). I've uploaded a new patch.
 

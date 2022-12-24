@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8443
 archive/issue_comments_075901.json:
 ```json
 {
-    "body": "Attachment\n\nAvoid possible duplicate cell IDs during an `edit_save` operation.  sagenb repo.",
+    "body": "Attachment [trac_8443-cell_focus_jump.patch](tarball://root/attachments/some-uuid/ticket8443/trac_8443-cell_focus_jump.patch) by mpatel created at 2010-03-05 12:06:51\n\nAvoid possible duplicate cell IDs during an `edit_save` operation.  sagenb repo.",
     "created_at": "2010-03-05T12:06:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8443",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_075901.json:
 }
 ```
 
-Attachment
+Attachment [trac_8443-cell_focus_jump.patch](tarball://root/attachments/some-uuid/ticket8443/trac_8443-cell_focus_jump.patch) by mpatel created at 2010-03-05 12:06:51
 
 Avoid possible duplicate cell IDs during an `edit_save` operation.  sagenb repo.
 
@@ -198,7 +198,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_075908.json:
 ```json
 {
-    "body": "Attachment\n\nAdded doctest.  Apply only this patch.",
+    "body": "Attachment [trac_8443-cell_focus_jump.2.patch](tarball://root/attachments/some-uuid/ticket8443/trac_8443-cell_focus_jump.2.patch) by mpatel created at 2010-03-06 13:37:51\n\nAdded doctest.  Apply only this patch.",
     "created_at": "2010-03-06T13:37:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8443",
     "type": "issue_comment",
@@ -207,7 +207,7 @@ archive/issue_comments_075908.json:
 }
 ```
 
-Attachment
+Attachment [trac_8443-cell_focus_jump.2.patch](tarball://root/attachments/some-uuid/ticket8443/trac_8443-cell_focus_jump.2.patch) by mpatel created at 2010-03-06 13:37:51
 
 Added doctest.  Apply only this patch.
 

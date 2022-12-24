@@ -67,7 +67,7 @@ Changing status from new to assigned.
 archive/issue_comments_002487.json:
 ```json
 {
-    "body": "Attachment\n\nHere is an updated version of my patch. It also adds a default variable name 'x' to charpoly.",
+    "body": "Attachment [minpoly_FiniteFieldElement.patch](tarball://root/attachments/some-uuid/ticket497/minpoly_FiniteFieldElement.patch) by pdenapo created at 2007-09-01 21:08:37\n\nHere is an updated version of my patch. It also adds a default variable name 'x' to charpoly.",
     "created_at": "2007-09-01T21:08:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/497",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_002487.json:
 }
 ```
 
-Attachment
+Attachment [minpoly_FiniteFieldElement.patch](tarball://root/attachments/some-uuid/ticket497/minpoly_FiniteFieldElement.patch) by pdenapo created at 2007-09-01 21:08:37
 
 Here is an updated version of my patch. It also adds a default variable name 'x' to charpoly.
 

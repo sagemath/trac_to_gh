@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2751
 archive/issue_comments_018888.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [mpoly_is_homogenous.patch](tarball://root/attachments/some-uuid/ticket2751/mpoly_is_homogenous.patch) by malb created at 2008-04-01 13:19:05",
     "created_at": "2008-04-01T13:19:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2751",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_018888.json:
 }
 ```
 
-Attachment
+Attachment [mpoly_is_homogenous.patch](tarball://root/attachments/some-uuid/ticket2751/mpoly_is_homogenous.patch) by malb created at 2008-04-01 13:19:05
 
 
 
@@ -104,7 +104,7 @@ That means that I forgot to submit the degree method, sorry bout that. I think b
 archive/issue_comments_018891.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [mpoly_is_homogenous_addon.patch](tarball://root/attachments/some-uuid/ticket2751/mpoly_is_homogenous_addon.patch) by malb created at 2008-04-04 11:35:05",
     "created_at": "2008-04-04T11:35:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2751",
     "type": "issue_comment",
@@ -113,7 +113,7 @@ archive/issue_comments_018891.json:
 }
 ```
 
-Attachment
+Attachment [mpoly_is_homogenous_addon.patch](tarball://root/attachments/some-uuid/ticket2751/mpoly_is_homogenous_addon.patch) by malb created at 2008-04-04 11:35:05
 
 
 
@@ -233,7 +233,7 @@ Yes, passing doc-tests are sufficient (I was using 2.11) (I wasn't aware that 3.
 archive/issue_comments_018897.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2751-2.patch](tarball://root/attachments/some-uuid/ticket2751/2751-2.patch) by mhansen created at 2008-04-04 20:56:19",
     "created_at": "2008-04-04T20:56:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2751",
     "type": "issue_comment",
@@ -242,7 +242,7 @@ archive/issue_comments_018897.json:
 }
 ```
 
-Attachment
+Attachment [2751-2.patch](tarball://root/attachments/some-uuid/ticket2751/2751-2.patch) by mhansen created at 2008-04-04 20:56:19
 
 
 

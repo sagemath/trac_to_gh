@@ -60,7 +60,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5628
 archive/issue_comments_043948.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5628-scripts.patch](tarball://root/attachments/some-uuid/ticket5628/trac_5628-scripts.patch) by was created at 2009-03-29 03:32:24",
     "created_at": "2009-03-29T03:32:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5628",
     "type": "issue_comment",
@@ -69,7 +69,7 @@ archive/issue_comments_043948.json:
 }
 ```
 
-Attachment
+Attachment [trac_5628-scripts.patch](tarball://root/attachments/some-uuid/ticket5628/trac_5628-scripts.patch) by was created at 2009-03-29 03:32:24
 
 
 
@@ -198,7 +198,7 @@ Michael
 archive/issue_comments_043954.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review for trac_5628.patch. \n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_5628.patch](tarball://root/attachments/some-uuid/ticket5628/trac_5628.patch) by mabshoff created at 2009-04-11 01:48:51\n\nPositive review for trac_5628.patch. \n\nCheers,\n\nMichael",
     "created_at": "2009-04-11T01:48:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5628",
     "type": "issue_comment",
@@ -207,7 +207,7 @@ archive/issue_comments_043954.json:
 }
 ```
 
-Attachment
+Attachment [trac_5628.patch](tarball://root/attachments/some-uuid/ticket5628/trac_5628.patch) by mabshoff created at 2009-04-11 01:48:51
 
 Positive review for trac_5628.patch. 
 

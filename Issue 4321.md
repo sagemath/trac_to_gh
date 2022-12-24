@@ -98,7 +98,7 @@ Changing priority from major to blocker.
 archive/issue_comments_031652.json:
 ```json
 {
-    "body": "Attachment\n\nFix man-page permissions for PolyBoRi's install target",
+    "body": "Attachment [man_perms.patch](tarball://root/attachments/some-uuid/ticket4321/man_perms.patch) by PolyBoRi created at 2008-11-29 22:07:48\n\nFix man-page permissions for PolyBoRi's install target",
     "created_at": "2008-11-29T22:07:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4321",
     "type": "issue_comment",
@@ -107,7 +107,7 @@ archive/issue_comments_031652.json:
 }
 ```
 
-Attachment
+Attachment [man_perms.patch](tarball://root/attachments/some-uuid/ticket4321/man_perms.patch) by PolyBoRi created at 2008-11-29 22:07:48
 
 Fix man-page permissions for PolyBoRi's install target
 

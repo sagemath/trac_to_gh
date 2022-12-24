@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7396
 archive/issue_comments_062190.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7396_enumset_unions-fh.patch](tarball://root/attachments/some-uuid/ticket7396/trac_7396_enumset_unions-fh.patch) by hivert created at 2009-11-05 16:02:21",
     "created_at": "2009-11-05T16:02:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7396",
     "type": "issue_comment",
@@ -53,7 +53,7 @@ archive/issue_comments_062190.json:
 }
 ```
 
-Attachment
+Attachment [trac_7396_enumset_unions-fh.patch](tarball://root/attachments/some-uuid/ticket7396/trac_7396_enumset_unions-fh.patch) by hivert created at 2009-11-05 16:02:21
 
 
 

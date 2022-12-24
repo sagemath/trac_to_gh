@@ -74,7 +74,7 @@ Changing status from new to assigned.
 archive/issue_comments_009329.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1448.patch](tarball://root/attachments/some-uuid/ticket1448/1448.patch) by mhansen created at 2007-12-14 07:10:41",
     "created_at": "2007-12-14T07:10:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1448",
     "type": "issue_comment",
@@ -83,7 +83,7 @@ archive/issue_comments_009329.json:
 }
 ```
 
-Attachment
+Attachment [1448.patch](tarball://root/attachments/some-uuid/ticket1448/1448.patch) by mhansen created at 2007-12-14 07:10:41
 
 
 
@@ -92,7 +92,7 @@ Attachment
 archive/issue_comments_009330.json:
 ```json
 {
-    "body": "Attachment\n\nI've been reviewing this patch. Generally pretty good (I like the implementation for infinite base rings, very neat)... a few minor issues to address:\n\n* I'd like to see more (i.e. nonzero) documentation in the docstring, in particular giving the definition of what ordering is being produced, and explaining what's going on in the case of an infinite base ring\n\n* The doctests should show more than that just the number of generated matrices is correct; currently they only give the number of matrices and the first matrix (which is all zero)\n\n* I'm a bit puzzled by the order of iteration. It starts by incrementing in the bottom right and then moves upwards. To me the other direction seems more natural. Maybe I'm \"wrong\" about this though.\n\n* There are some corner cases to address:\n\n\n```\nsage: MS = MatrixSpace(ZZ, 2, 0)\nsage: i = iter(MS)\nsage: i.next()\n[]\nsage: i.next()\n(boom)\n```\n\n\n* The doctests should include examples for 0xN, Nx0, 0x0 matrices.",
+    "body": "Attachment [1448-2.patch](tarball://root/attachments/some-uuid/ticket1448/1448-2.patch) by dmharvey created at 2007-12-21 17:57:54\n\nI've been reviewing this patch. Generally pretty good (I like the implementation for infinite base rings, very neat)... a few minor issues to address:\n\n* I'd like to see more (i.e. nonzero) documentation in the docstring, in particular giving the definition of what ordering is being produced, and explaining what's going on in the case of an infinite base ring\n\n* The doctests should show more than that just the number of generated matrices is correct; currently they only give the number of matrices and the first matrix (which is all zero)\n\n* I'm a bit puzzled by the order of iteration. It starts by incrementing in the bottom right and then moves upwards. To me the other direction seems more natural. Maybe I'm \"wrong\" about this though.\n\n* There are some corner cases to address:\n\n\n```\nsage: MS = MatrixSpace(ZZ, 2, 0)\nsage: i = iter(MS)\nsage: i.next()\n[]\nsage: i.next()\n(boom)\n```\n\n\n* The doctests should include examples for 0xN, Nx0, 0x0 matrices.",
     "created_at": "2007-12-21T17:57:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1448",
     "type": "issue_comment",
@@ -101,7 +101,7 @@ archive/issue_comments_009330.json:
 }
 ```
 
-Attachment
+Attachment [1448-2.patch](tarball://root/attachments/some-uuid/ticket1448/1448-2.patch) by dmharvey created at 2007-12-21 17:57:54
 
 I've been reviewing this patch. Generally pretty good (I like the implementation for infinite base rings, very neat)... a few minor issues to address:
 
@@ -133,7 +133,7 @@ sage: i.next()
 archive/issue_comments_009331.json:
 ```json
 {
-    "body": "Attachment\n\nok, I'm happy with this now.",
+    "body": "Attachment [1448-3.patch](tarball://root/attachments/some-uuid/ticket1448/1448-3.patch) by dmharvey created at 2007-12-22 16:14:30\n\nok, I'm happy with this now.",
     "created_at": "2007-12-22T16:14:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1448",
     "type": "issue_comment",
@@ -142,7 +142,7 @@ archive/issue_comments_009331.json:
 }
 ```
 
-Attachment
+Attachment [1448-3.patch](tarball://root/attachments/some-uuid/ticket1448/1448-3.patch) by dmharvey created at 2007-12-22 16:14:30
 
 ok, I'm happy with this now.
 

@@ -76,7 +76,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8823
 archive/issue_comments_081027.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8823_cayley_table_doctest.patch](tarball://root/attachments/some-uuid/ticket8823/trac_8823_cayley_table_doctest.patch) by rbeezer created at 2010-05-01 05:36:01",
     "created_at": "2010-05-01T05:36:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8823",
     "type": "issue_comment",
@@ -85,7 +85,7 @@ archive/issue_comments_081027.json:
 }
 ```
 
-Attachment
+Attachment [trac_8823_cayley_table_doctest.patch](tarball://root/attachments/some-uuid/ticket8823/trac_8823_cayley_table_doctest.patch) by rbeezer created at 2010-05-01 05:36:01
 
 
 

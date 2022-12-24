@@ -254,7 +254,7 @@ sage: find_root(1/t-x,0,2)
 archive/issue_comments_028630.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3980.patch](tarball://root/attachments/some-uuid/ticket3980/3980.patch) by jwmerrill created at 2008-09-29 23:26:41",
     "created_at": "2008-09-29T23:26:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3980",
     "type": "issue_comment",
@@ -263,7 +263,7 @@ archive/issue_comments_028630.json:
 }
 ```
 
-Attachment
+Attachment [3980.patch](tarball://root/attachments/some-uuid/ticket3980/3980.patch) by jwmerrill created at 2008-09-29 23:26:41
 
 
 

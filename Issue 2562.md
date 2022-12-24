@@ -137,7 +137,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2562
 archive/issue_comments_017460.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8866.patch](tarball://root/attachments/some-uuid/ticket2562/8866.patch) by zimmerma created at 2008-03-16 22:40:47",
     "created_at": "2008-03-16T22:40:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2562",
     "type": "issue_comment",
@@ -146,7 +146,7 @@ archive/issue_comments_017460.json:
 }
 ```
 
-Attachment
+Attachment [8866.patch](tarball://root/attachments/some-uuid/ticket2562/8866.patch) by zimmerma created at 2008-03-16 22:40:47
 
 
 
@@ -303,7 +303,7 @@ Perhaps tickets could be opened for general improvement of exact/inexactness and
 archive/issue_comments_017465.json:
 ```json
 {
-    "body": "Attachment\n\nI am confused with this exactness issue. Please excuse my ignorance of floating point representation issues. \n\nI don't understand what it means for an element of `RR` to be an *exact rational*. As far as I understand, the `.exact_rational()` function returns the value stored in floating point representation as a rational number (i.e., `mantissa*2^exp` ).\n\n\n```\nsage: RR(1/3).exact_rational()\n6004799503160661/18014398509481984\nsage: (1.9393).exact_rational()\n8733830757359603/4503599627370496\n```\n\n\nHowever, these rationals don't represent the given value exactly.\n\n\n```\nsage: 1/3 - RR(1/3).exact_rational()\n1/54043195528445952\nsage: 19393/10000 - RR(1.9393).exact_rational()\n-67/2814749767106560000\n```\n\n\nAs opposed to:\n\n\n```\nsage: 37/16 - RR(37/16).exact_rational()\n0\n```\n\n\nSo in this case, can `1.9393` be called inexact?\n\nI'd appreciate any reference where these issues are explained as well.",
+    "body": "Attachment [trac_2562-minor-symb-docs.patch](tarball://root/attachments/some-uuid/ticket2562/trac_2562-minor-symb-docs.patch) by burcin created at 2009-09-12 18:18:50\n\nI am confused with this exactness issue. Please excuse my ignorance of floating point representation issues. \n\nI don't understand what it means for an element of `RR` to be an *exact rational*. As far as I understand, the `.exact_rational()` function returns the value stored in floating point representation as a rational number (i.e., `mantissa*2^exp` ).\n\n\n```\nsage: RR(1/3).exact_rational()\n6004799503160661/18014398509481984\nsage: (1.9393).exact_rational()\n8733830757359603/4503599627370496\n```\n\n\nHowever, these rationals don't represent the given value exactly.\n\n\n```\nsage: 1/3 - RR(1/3).exact_rational()\n1/54043195528445952\nsage: 19393/10000 - RR(1.9393).exact_rational()\n-67/2814749767106560000\n```\n\n\nAs opposed to:\n\n\n```\nsage: 37/16 - RR(37/16).exact_rational()\n0\n```\n\n\nSo in this case, can `1.9393` be called inexact?\n\nI'd appreciate any reference where these issues are explained as well.",
     "created_at": "2009-09-12T18:18:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2562",
     "type": "issue_comment",
@@ -312,7 +312,7 @@ archive/issue_comments_017465.json:
 }
 ```
 
-Attachment
+Attachment [trac_2562-minor-symb-docs.patch](tarball://root/attachments/some-uuid/ticket2562/trac_2562-minor-symb-docs.patch) by burcin created at 2009-09-12 18:18:50
 
 I am confused with this exactness issue. Please excuse my ignorance of floating point representation issues. 
 

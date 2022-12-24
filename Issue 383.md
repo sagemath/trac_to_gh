@@ -90,7 +90,7 @@ Typo:  arithmatic  --> arithmetic
 archive/issue_comments_001865.json:
 ```json
 {
-    "body": "Attachment\n\nOops. Thanks, fixed.",
+    "body": "Attachment [383-binop-decorator.patch](tarball://root/attachments/some-uuid/ticket383/383-binop-decorator.patch) by robertwb created at 2010-01-17 10:24:52\n\nOops. Thanks, fixed.",
     "created_at": "2010-01-17T10:24:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/383",
     "type": "issue_comment",
@@ -99,7 +99,7 @@ archive/issue_comments_001865.json:
 }
 ```
 
-Attachment
+Attachment [383-binop-decorator.patch](tarball://root/attachments/some-uuid/ticket383/383-binop-decorator.patch) by robertwb created at 2010-01-17 10:24:52
 
 Oops. Thanks, fixed.
 
@@ -161,7 +161,7 @@ wstein@boxen:~/build/sage-4.3.1.rc0$
 archive/issue_comments_001867.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [383-fixes.patch](tarball://root/attachments/some-uuid/ticket383/383-fixes.patch) by robertwb created at 2010-01-17 11:40:45",
     "created_at": "2010-01-17T11:40:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/383",
     "type": "issue_comment",
@@ -170,7 +170,7 @@ archive/issue_comments_001867.json:
 }
 ```
 
-Attachment
+Attachment [383-fixes.patch](tarball://root/attachments/some-uuid/ticket383/383-fixes.patch) by robertwb created at 2010-01-17 11:40:45
 
 
 
@@ -252,7 +252,7 @@ wstein@boxen:~/build/sage-4.3.1.rc0-boxen-x86_64-Linux$
 archive/issue_comments_001871.json:
 ```json
 {
-    "body": "Attachment\n\nOK, I've doctested the entire sage library this time.",
+    "body": "Attachment [383-more-fixes.patch](tarball://root/attachments/some-uuid/ticket383/383-more-fixes.patch) by robertwb created at 2010-01-19 12:16:57\n\nOK, I've doctested the entire sage library this time.",
     "created_at": "2010-01-19T12:16:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/383",
     "type": "issue_comment",
@@ -261,7 +261,7 @@ archive/issue_comments_001871.json:
 }
 ```
 
-Attachment
+Attachment [383-more-fixes.patch](tarball://root/attachments/some-uuid/ticket383/383-more-fixes.patch) by robertwb created at 2010-01-19 12:16:57
 
 OK, I've doctested the entire sage library this time.
 

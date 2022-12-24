@@ -69,7 +69,7 @@ doc patch, apply second
 archive/issue_comments_009877.json:
 ```json
 {
-    "body": "Attachment\n\nI am attaching two patches.  The first changes the _repr_ of Galois groups from the current clunky\n\n\n```\nGalois group PARI group [8, 1, 3, \"E(8)=2[x]2[x]2\"] of degree 8 of the number field Number Field in a with defining polynomial x^2 + 1 over its base field\n```\n\n\nto\n\n\n```\nGalois group PARI group [8, 1, 3, \"E(8)=2[x]2[x]2\"] of degree 8 of the Number Field in a with defining polynomial x^2 + 1 over its base field\n```\n\n\nThe second patch is a documentation patch and fixes the optional doctest failures in tut.tex (and removes the #optional tag from one of them, since now by default GaloisGroup uses PARI instead of optional GAP packages).",
+    "body": "Attachment [1549-tut_optional.patch](tarball://root/attachments/some-uuid/ticket1549/1549-tut_optional.patch) by AlexGhitza created at 2008-04-25 00:11:28\n\nI am attaching two patches.  The first changes the _repr_ of Galois groups from the current clunky\n\n\n```\nGalois group PARI group [8, 1, 3, \"E(8)=2[x]2[x]2\"] of degree 8 of the number field Number Field in a with defining polynomial x^2 + 1 over its base field\n```\n\n\nto\n\n\n```\nGalois group PARI group [8, 1, 3, \"E(8)=2[x]2[x]2\"] of degree 8 of the Number Field in a with defining polynomial x^2 + 1 over its base field\n```\n\n\nThe second patch is a documentation patch and fixes the optional doctest failures in tut.tex (and removes the #optional tag from one of them, since now by default GaloisGroup uses PARI instead of optional GAP packages).",
     "created_at": "2008-04-25T00:11:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1549",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_009877.json:
 }
 ```
 
-Attachment
+Attachment [1549-tut_optional.patch](tarball://root/attachments/some-uuid/ticket1549/1549-tut_optional.patch) by AlexGhitza created at 2008-04-25 00:11:28
 
 I am attaching two patches.  The first changes the _repr_ of Galois groups from the current clunky
 
@@ -123,7 +123,7 @@ Looks good to me.  There's a tiny typo in the first patch ("isreducible" needs a
 archive/issue_comments_009879.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1549-galois_gp.patch](tarball://root/attachments/some-uuid/ticket1549/1549-galois_gp.patch) by AlexGhitza created at 2008-04-27 17:52:22",
     "created_at": "2008-04-27T17:52:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1549",
     "type": "issue_comment",
@@ -132,7 +132,7 @@ archive/issue_comments_009879.json:
 }
 ```
 
-Attachment
+Attachment [1549-galois_gp.patch](tarball://root/attachments/some-uuid/ticket1549/1549-galois_gp.patch) by AlexGhitza created at 2008-04-27 17:52:22
 
 
 

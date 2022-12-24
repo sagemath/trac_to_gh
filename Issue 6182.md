@@ -69,7 +69,7 @@ Escapes worksheet names passed to javascript
 archive/issue_comments_049355.json:
 ```json
 {
-    "body": "Attachment\n\nI take that back. It doesn't fail immediately, but it does fail.",
+    "body": "Attachment [trac_6182-double-quotes-ws.patch](tarball://root/attachments/some-uuid/ticket6182/trac_6182-double-quotes-ws.patch) by timdumol created at 2010-01-18 19:12:41\n\nI take that back. It doesn't fail immediately, but it does fail.",
     "created_at": "2010-01-18T19:12:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6182",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_049355.json:
 }
 ```
 
-Attachment
+Attachment [trac_6182-double-quotes-ws.patch](tarball://root/attachments/some-uuid/ticket6182/trac_6182-double-quotes-ws.patch) by timdumol created at 2010-01-18 19:12:41
 
 I take that back. It doesn't fail immediately, but it does fail.
 
@@ -161,7 +161,7 @@ V2 is rebased to drop changes to `template.py` (earlier patch).
 archive/issue_comments_049360.json:
 ```json
 {
-    "body": "Attachment\n\nRebased version without changes to `template.py`. Replaces previous.",
+    "body": "Attachment [trac_6182-double-quotes-ws.2.patch](tarball://root/attachments/some-uuid/ticket6182/trac_6182-double-quotes-ws.2.patch) by mpatel created at 2010-01-20 02:04:13\n\nRebased version without changes to `template.py`. Replaces previous.",
     "created_at": "2010-01-20T02:04:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6182",
     "type": "issue_comment",
@@ -170,7 +170,7 @@ archive/issue_comments_049360.json:
 }
 ```
 
-Attachment
+Attachment [trac_6182-double-quotes-ws.2.patch](tarball://root/attachments/some-uuid/ticket6182/trac_6182-double-quotes-ws.2.patch) by mpatel created at 2010-01-20 02:04:13
 
 Rebased version without changes to `template.py`. Replaces previous.
 

@@ -87,7 +87,7 @@ Changing component from algebra to linear algebra.
 archive/issue_comments_083845.json:
 ```json
 {
-    "body": "Attachment\n\nThe bug was a single line in _echelon_form_PID which returned the wrong pivot element for matrices of one row. The attached patch should fix that.\n\nWhile doctesting all of Sage I received two errors (that seem unrelated?):\n\n```\nThe following tests failed:\n\n        sage -t  -long -force_lib devel/sage/sage/schemes/elliptic_curves/gal_reps.py # Time out\n        sage -t  -long -force_lib devel/sage/sage/interfaces/sage0.py # 2 doctests failed\n```\n\n\nThe first apparently also came up during discussions on [#9390](http://trac.sagemath.org/sage_trac/ticket/9390). The doctest failure in sage0.py \"randomly\" appeared or not when I reran the test mutiple times. I'm not quite sure what to make of this...",
+    "body": "Attachment [trac_9053_fixes_pivots.patch](tarball://root/attachments/some-uuid/ticket9053/trac_9053_fixes_pivots.patch) by minz created at 2011-03-18 10:47:06\n\nThe bug was a single line in _echelon_form_PID which returned the wrong pivot element for matrices of one row. The attached patch should fix that.\n\nWhile doctesting all of Sage I received two errors (that seem unrelated?):\n\n```\nThe following tests failed:\n\n        sage -t  -long -force_lib devel/sage/sage/schemes/elliptic_curves/gal_reps.py # Time out\n        sage -t  -long -force_lib devel/sage/sage/interfaces/sage0.py # 2 doctests failed\n```\n\n\nThe first apparently also came up during discussions on [#9390](http://trac.sagemath.org/sage_trac/ticket/9390). The doctest failure in sage0.py \"randomly\" appeared or not when I reran the test mutiple times. I'm not quite sure what to make of this...",
     "created_at": "2011-03-18T10:47:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9053",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_083845.json:
 }
 ```
 
-Attachment
+Attachment [trac_9053_fixes_pivots.patch](tarball://root/attachments/some-uuid/ticket9053/trac_9053_fixes_pivots.patch) by minz created at 2011-03-18 10:47:06
 
 The bug was a single line in _echelon_form_PID which returned the wrong pivot element for matrices of one row. The attached patch should fix that.
 
@@ -173,7 +173,7 @@ line wrapping
 archive/issue_comments_083849.json:
 ```json
 {
-    "body": "Attachment\n\nI can't replicate your doctest failures. Everything passes on sage.math, except the ever-troublesome devel/sage/sage/tests/startup.py , which I tried again individually with no problems. The fix itself looks good. Reference builds, though how that could be affected I don't know. IIRC all code should be within 79 columns, so I split some lines in this function for you while you're at it. Feel free to rewrite it if it looks ugly, haha.",
+    "body": "Attachment [trac_9053_fixes_pivots.v2.patch](tarball://root/attachments/some-uuid/ticket9053/trac_9053_fixes_pivots.v2.patch) by kini created at 2011-03-22 00:06:10\n\nI can't replicate your doctest failures. Everything passes on sage.math, except the ever-troublesome devel/sage/sage/tests/startup.py , which I tried again individually with no problems. The fix itself looks good. Reference builds, though how that could be affected I don't know. IIRC all code should be within 79 columns, so I split some lines in this function for you while you're at it. Feel free to rewrite it if it looks ugly, haha.",
     "created_at": "2011-03-22T00:06:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9053",
     "type": "issue_comment",
@@ -182,7 +182,7 @@ archive/issue_comments_083849.json:
 }
 ```
 
-Attachment
+Attachment [trac_9053_fixes_pivots.v2.patch](tarball://root/attachments/some-uuid/ticket9053/trac_9053_fixes_pivots.v2.patch) by kini created at 2011-03-22 00:06:10
 
 I can't replicate your doctest failures. Everything passes on sage.math, except the ever-troublesome devel/sage/sage/tests/startup.py , which I tried again individually with no problems. The fix itself looks good. Reference builds, though how that could be affected I don't know. IIRC all code should be within 79 columns, so I split some lines in this function for you while you're at it. Feel free to rewrite it if it looks ugly, haha.
 

@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8921
 archive/issue_comments_082181.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8921_7d_cross_product.patch](tarball://root/attachments/some-uuid/ticket8921/trac_8921_7d_cross_product.patch) by bwonderly created at 2010-05-07 18:45:38",
     "created_at": "2010-05-07T18:45:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8921",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_082181.json:
 }
 ```
 
-Attachment
+Attachment [trac_8921_7d_cross_product.patch](tarball://root/attachments/some-uuid/ticket8921/trac_8921_7d_cross_product.patch) by bwonderly created at 2010-05-07 18:45:38
 
 
 

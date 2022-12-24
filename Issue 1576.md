@@ -177,7 +177,7 @@ This is not yet on by default.
 archive/issue_comments_010030.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1576-implicit_mul.diff](tarball://root/attachments/some-uuid/ticket1576/1576-implicit_mul.diff) by robertwb created at 2008-01-04 12:57:48",
     "created_at": "2008-01-04T12:57:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1576",
     "type": "issue_comment",
@@ -186,7 +186,7 @@ archive/issue_comments_010030.json:
 }
 ```
 
-Attachment
+Attachment [1576-implicit_mul.diff](tarball://root/attachments/some-uuid/ticket1576/1576-implicit_mul.diff) by robertwb created at 2008-01-04 12:57:48
 
 
 

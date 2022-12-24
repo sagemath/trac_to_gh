@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4156
 archive/issue_comments_030179.json:
 ```json
 {
-    "body": "Attachment\n\nD'oh. Positive review.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_4156-memleak-graph_isom.patch](tarball://root/attachments/some-uuid/ticket4156/trac_4156-memleak-graph_isom.patch) by mabshoff created at 2008-09-20 10:20:40\n\nD'oh. Positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-20T10:20:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4156",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_030179.json:
 }
 ```
 
-Attachment
+Attachment [trac_4156-memleak-graph_isom.patch](tarball://root/attachments/some-uuid/ticket4156/trac_4156-memleak-graph_isom.patch) by mabshoff created at 2008-09-20 10:20:40
 
 D'oh. Positive review.
 

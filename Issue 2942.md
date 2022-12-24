@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2942
 archive/issue_comments_020265.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [scripts-2942.patch](tarball://root/attachments/some-uuid/ticket2942/scripts-2942.patch) by TimothyClemans created at 2009-01-21 06:46:14",
     "created_at": "2009-01-21T06:46:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2942",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_020265.json:
 }
 ```
 
-Attachment
+Attachment [scripts-2942.patch](tarball://root/attachments/some-uuid/ticket2942/scripts-2942.patch) by TimothyClemans created at 2009-01-21 06:46:14
 
 
 
@@ -111,7 +111,7 @@ Added commands -n and -bn
 archive/issue_comments_020269.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch should do the job.",
+    "body": "Attachment [trac_2942-n-and-nb-commandline-opts.patch](tarball://root/attachments/some-uuid/ticket2942/trac_2942-n-and-nb-commandline-opts.patch) by timdumol created at 2009-11-30 06:00:19\n\nThis patch should do the job.",
     "created_at": "2009-11-30T06:00:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2942",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_020269.json:
 }
 ```
 
-Attachment
+Attachment [trac_2942-n-and-nb-commandline-opts.patch](tarball://root/attachments/some-uuid/ticket2942/trac_2942-n-and-nb-commandline-opts.patch) by timdumol created at 2009-11-30 06:00:19
 
 This patch should do the job.
 

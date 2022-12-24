@@ -60,7 +60,7 @@ Michael
 archive/issue_comments_038880.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5097.patch](tarball://root/attachments/some-uuid/ticket5097/trac_5097.patch) by AlexGhitza created at 2009-01-25 16:53:18",
     "created_at": "2009-01-25T16:53:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5097",
     "type": "issue_comment",
@@ -69,7 +69,7 @@ archive/issue_comments_038880.json:
 }
 ```
 
-Attachment
+Attachment [trac_5097.patch](tarball://root/attachments/some-uuid/ticket5097/trac_5097.patch) by AlexGhitza created at 2009-01-25 16:53:18
 
 
 

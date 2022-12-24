@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8221
 archive/issue_comments_072559.json:
 ```json
 {
-    "body": "Attachment\n\nBig blank space at bottom of live worksheets.  sagenb repo.",
+    "body": "Attachment [trac_8221-ws_blank_space.patch](tarball://root/attachments/some-uuid/ticket8221/trac_8221-ws_blank_space.patch) by mpatel created at 2010-02-14 03:35:35\n\nBig blank space at bottom of live worksheets.  sagenb repo.",
     "created_at": "2010-02-14T03:35:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8221",
     "type": "issue_comment",
@@ -41,7 +41,7 @@ archive/issue_comments_072559.json:
 }
 ```
 
-Attachment
+Attachment [trac_8221-ws_blank_space.patch](tarball://root/attachments/some-uuid/ticket8221/trac_8221-ws_blank_space.patch) by mpatel created at 2010-02-14 03:35:35
 
 Big blank space at bottom of live worksheets.  sagenb repo.
 

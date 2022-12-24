@@ -43,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5863
 archive/issue_comments_046322.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [nuke_algebras.patch](tarball://root/attachments/some-uuid/ticket5863/nuke_algebras.patch) by jhpalmieri created at 2009-04-23 06:07:20",
     "created_at": "2009-04-23T06:07:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5863",
     "type": "issue_comment",
@@ -52,7 +52,7 @@ archive/issue_comments_046322.json:
 }
 ```
 
-Attachment
+Attachment [nuke_algebras.patch](tarball://root/attachments/some-uuid/ticket5863/nuke_algebras.patch) by jhpalmieri created at 2009-04-23 06:07:20
 
 
 

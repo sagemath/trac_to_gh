@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2883
 archive/issue_comments_019830.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2883-resize-flood.patch](tarball://root/attachments/some-uuid/ticket2883/2883-resize-flood.patch) by boothby created at 2008-04-11 23:55:15",
     "created_at": "2008-04-11T23:55:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2883",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_019830.json:
 }
 ```
 
-Attachment
+Attachment [2883-resize-flood.patch](tarball://root/attachments/some-uuid/ticket2883/2883-resize-flood.patch) by boothby created at 2008-04-11 23:55:15
 
 
 

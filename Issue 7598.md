@@ -71,7 +71,7 @@ Note that NumPy is not used for the second example.
 archive/issue_comments_064809.json:
 ```json
 {
-    "body": "Attachment\n\ntrac_7598-more_serious_version.patch  -- this deals with the problems more at the root.  Unfortunately, there are doctests in this file that fail:\n\n```\n\tsage -t  devel/sage-main/sage/modular/dirichlet.py # 4 doctests failed\n```\n\nand I haven't had time to figure out what is wrong.  It probably has to do with a complex embedding not being defined automatically, whereas before it was...\n\nThe design of embeddings was really bad before and relied on numerical errors to mess up the order of roots in case of 53 bit precision.  This was potentially *very* buggy and was I think the result of some absolutely terrible design decisions.    This absolutely must be fixed before releasing sage-4.3.  This patch basically fixes it, modulo some small remaining issue.\n\nHere is an example from sage-4.2.1 that illustrates just how horrendously bad the previous design was (with using CDF when prec=53 but ComplexField(prec) otherwise):\n\n```\nsage: K.<i> = QuadraticField(-1)\nsage: i.complex_em\ni.complex_embedding   i.complex_embeddings  \nsage: i.complex_embedding()\n1.0*I\nsage: i.complex_embedding(100)\n-1.0000000000000000000000000000*I\n```\n",
+    "body": "Attachment [trac_7598-more_serious_version.patch](tarball://root/attachments/some-uuid/ticket7598/trac_7598-more_serious_version.patch) by was created at 2009-12-14 10:33:39\n\ntrac_7598-more_serious_version.patch  -- this deals with the problems more at the root.  Unfortunately, there are doctests in this file that fail:\n\n```\n\tsage -t  devel/sage-main/sage/modular/dirichlet.py # 4 doctests failed\n```\n\nand I haven't had time to figure out what is wrong.  It probably has to do with a complex embedding not being defined automatically, whereas before it was...\n\nThe design of embeddings was really bad before and relied on numerical errors to mess up the order of roots in case of 53 bit precision.  This was potentially *very* buggy and was I think the result of some absolutely terrible design decisions.    This absolutely must be fixed before releasing sage-4.3.  This patch basically fixes it, modulo some small remaining issue.\n\nHere is an example from sage-4.2.1 that illustrates just how horrendously bad the previous design was (with using CDF when prec=53 but ComplexField(prec) otherwise):\n\n```\nsage: K.<i> = QuadraticField(-1)\nsage: i.complex_em\ni.complex_embedding   i.complex_embeddings  \nsage: i.complex_embedding()\n1.0*I\nsage: i.complex_embedding(100)\n-1.0000000000000000000000000000*I\n```\n",
     "created_at": "2009-12-14T10:33:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7598",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_064809.json:
 }
 ```
 
-Attachment
+Attachment [trac_7598-more_serious_version.patch](tarball://root/attachments/some-uuid/ticket7598/trac_7598-more_serious_version.patch) by was created at 2009-12-14 10:33:39
 
 trac_7598-more_serious_version.patch  -- this deals with the problems more at the root.  Unfortunately, there are doctests in this file that fail:
 
@@ -145,7 +145,7 @@ It'd be nice if the {{{__pow__}} methods were standardized.
 archive/issue_comments_064811.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7598-dirichlet.patch](tarball://root/attachments/some-uuid/ticket7598/trac_7598-dirichlet.patch) by mhansen created at 2009-12-15 03:16:42",
     "created_at": "2009-12-15T03:16:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7598",
     "type": "issue_comment",
@@ -154,7 +154,7 @@ archive/issue_comments_064811.json:
 }
 ```
 
-Attachment
+Attachment [trac_7598-dirichlet.patch](tarball://root/attachments/some-uuid/ticket7598/trac_7598-dirichlet.patch) by mhansen created at 2009-12-15 03:16:42
 
 
 
@@ -341,7 +341,7 @@ OK, I've added a trivial patch that fixes the last doctest failure.
 archive/issue_comments_064819.json:
 ```json
 {
-    "body": "Attachment\n\napply after the previous two patches",
+    "body": "Attachment [trac_7598-nf_galois_groups.patch](tarball://root/attachments/some-uuid/ticket7598/trac_7598-nf_galois_groups.patch) by AlexGhitza created at 2009-12-15 11:43:01\n\napply after the previous two patches",
     "created_at": "2009-12-15T11:43:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7598",
     "type": "issue_comment",
@@ -350,7 +350,7 @@ archive/issue_comments_064819.json:
 }
 ```
 
-Attachment
+Attachment [trac_7598-nf_galois_groups.patch](tarball://root/attachments/some-uuid/ticket7598/trac_7598-nf_galois_groups.patch) by AlexGhitza created at 2009-12-15 11:43:01
 
 apply after the previous two patches
 

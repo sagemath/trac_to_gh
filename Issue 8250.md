@@ -221,7 +221,7 @@ please see `trac_8250-classcall-classget-review-fh.patch` in combinat's queue. I
 archive/issue_comments_072981.json:
 ```json
 {
-    "body": "Attachment\n\nDocumentation improvements after phone discussion with Florent",
+    "body": "Attachment [trac_8250-classcall-classget.patch](tarball://root/attachments/some-uuid/ticket8250/trac_8250-classcall-classget.patch) by nthiery created at 2010-02-13 12:34:31\n\nDocumentation improvements after phone discussion with Florent",
     "created_at": "2010-02-13T12:34:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8250",
     "type": "issue_comment",
@@ -230,7 +230,7 @@ archive/issue_comments_072981.json:
 }
 ```
 
-Attachment
+Attachment [trac_8250-classcall-classget.patch](tarball://root/attachments/some-uuid/ticket8250/trac_8250-classcall-classget.patch) by nthiery created at 2010-02-13 12:34:31
 
 Documentation improvements after phone discussion with Florent
 
@@ -283,7 +283,7 @@ I uploaded a review patch. Please review :-)
 archive/issue_comments_072984.json:
 ```json
 {
-    "body": "Attachment\n\nAs we spoke on the phone I added a comment and corrected a typo.\nReady for review. I'm ok with your patch and if you are ok with mine you can put positive review.",
+    "body": "Attachment [trac_8250-classcall-classget-review-2.patch](tarball://root/attachments/some-uuid/ticket8250/trac_8250-classcall-classget-review-2.patch) by hivert created at 2010-02-13 15:39:18\n\nAs we spoke on the phone I added a comment and corrected a typo.\nReady for review. I'm ok with your patch and if you are ok with mine you can put positive review.",
     "created_at": "2010-02-13T15:39:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8250",
     "type": "issue_comment",
@@ -292,7 +292,7 @@ archive/issue_comments_072984.json:
 }
 ```
 
-Attachment
+Attachment [trac_8250-classcall-classget-review-2.patch](tarball://root/attachments/some-uuid/ticket8250/trac_8250-classcall-classget-review-2.patch) by hivert created at 2010-02-13 15:39:18
 
 As we spoke on the phone I added a comment and corrected a typo.
 Ready for review. I'm ok with your patch and if you are ok with mine you can put positive review.

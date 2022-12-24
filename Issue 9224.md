@@ -155,7 +155,7 @@ I've opened #9225 for possible new [optional] doctesting features.  Feel free to
 archive/issue_comments_086536.json:
 ```json
 {
-    "body": "Attachment\n\n`Doctester` class pseudo-interface.  Not a patch.",
+    "body": "Attachment [doctest.py](tarball://root/attachments/some-uuid/ticket9224/doctest.py) by mpatel created at 2010-07-15 01:49:12\n\n`Doctester` class pseudo-interface.  Not a patch.",
     "created_at": "2010-07-15T01:49:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9224",
     "type": "issue_comment",
@@ -164,7 +164,7 @@ archive/issue_comments_086536.json:
 }
 ```
 
-Attachment
+Attachment [doctest.py](tarball://root/attachments/some-uuid/ticket9224/doctest.py) by mpatel created at 2010-07-15 01:49:12
 
 `Doctester` class pseudo-interface.  Not a patch.
 

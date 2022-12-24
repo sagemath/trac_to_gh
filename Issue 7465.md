@@ -77,7 +77,7 @@ archive/issue_comments_062873.json:
 archive/issue_comments_062874.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-8010_numpy.patch](tarball://root/attachments/some-uuid/ticket7465/trac-8010_numpy.patch) by mvngu created at 2010-11-04 11:55:08",
     "created_at": "2010-11-04T11:55:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7465",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_062874.json:
 }
 ```
 
-Attachment
+Attachment [trac-8010_numpy.patch](tarball://root/attachments/some-uuid/ticket7465/trac-8010_numpy.patch) by mvngu created at 2010-11-04 11:55:08
 
 
 

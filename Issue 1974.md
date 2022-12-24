@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1974
 archive/issue_comments_012791.json:
 ```json
 {
-    "body": "Attachment\n\n... and Ed Sullivan died in 1974.",
+    "body": "Attachment [1974-windowtitle.patch](tarball://root/attachments/some-uuid/ticket1974/1974-windowtitle.patch) by boothby created at 2008-03-16 19:55:20\n\n... and Ed Sullivan died in 1974.",
     "created_at": "2008-03-16T19:55:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1974",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_012791.json:
 }
 ```
 
-Attachment
+Attachment [1974-windowtitle.patch](tarball://root/attachments/some-uuid/ticket1974/1974-windowtitle.patch) by boothby created at 2008-03-16 19:55:20
 
 ... and Ed Sullivan died in 1974.
 

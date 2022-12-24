@@ -102,7 +102,7 @@ Depends on Ticket #9835
 archive/issue_comments_096877.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated the patch - removed plotting picture from testing, since Sage complains \n\n```\nverbose 0 (3495: plot.py, generate_plot_points) WARNING: When plotting, failed to evaluate function at 200 points.\n```\n\non one of my computers (Debian, AMD 64 bit).",
+    "body": "Attachment [trac_9823.patch](tarball://root/attachments/some-uuid/ticket9823/trac_9823.patch) by robert.marik created at 2010-08-30 06:31:40\n\nUpdated the patch - removed plotting picture from testing, since Sage complains \n\n```\nverbose 0 (3495: plot.py, generate_plot_points) WARNING: When plotting, failed to evaluate function at 200 points.\n```\n\non one of my computers (Debian, AMD 64 bit).",
     "created_at": "2010-08-30T06:31:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9822",
     "type": "issue_comment",
@@ -111,7 +111,7 @@ archive/issue_comments_096877.json:
 }
 ```
 
-Attachment
+Attachment [trac_9823.patch](tarball://root/attachments/some-uuid/ticket9823/trac_9823.patch) by robert.marik created at 2010-08-30 06:31:40
 
 Updated the patch - removed plotting picture from testing, since Sage complains 
 

@@ -48,7 +48,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2774
 archive/issue_comments_019059.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.",
+    "body": "Attachment [polybori_to_singular.patch](tarball://root/attachments/some-uuid/ticket2774/polybori_to_singular.patch) by mhansen created at 2008-04-04 21:32:54\n\nLooks good to me.",
     "created_at": "2008-04-04T21:32:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2774",
     "type": "issue_comment",
@@ -57,7 +57,7 @@ archive/issue_comments_019059.json:
 }
 ```
 
-Attachment
+Attachment [polybori_to_singular.patch](tarball://root/attachments/some-uuid/ticket2774/polybori_to_singular.patch) by mhansen created at 2008-04-04 21:32:54
 
 Looks good to me.
 

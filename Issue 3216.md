@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3216
 archive/issue_comments_022268.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3216.patch](tarball://root/attachments/some-uuid/ticket3216/3216.patch) by TimothyClemans created at 2008-05-16 05:38:02",
     "created_at": "2008-05-16T05:38:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3216",
     "type": "issue_comment",
@@ -41,7 +41,7 @@ archive/issue_comments_022268.json:
 }
 ```
 
-Attachment
+Attachment [3216.patch](tarball://root/attachments/some-uuid/ticket3216/3216.patch) by TimothyClemans created at 2008-05-16 05:38:02
 
 
 
@@ -163,7 +163,7 @@ teragon-2:notebook was$
 archive/issue_comments_022270.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3216_2.patch](tarball://root/attachments/some-uuid/ticket3216/3216_2.patch) by TimothyClemans created at 2008-05-19 18:58:51",
     "created_at": "2008-05-19T18:58:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3216",
     "type": "issue_comment",
@@ -172,7 +172,7 @@ archive/issue_comments_022270.json:
 }
 ```
 
-Attachment
+Attachment [3216_2.patch](tarball://root/attachments/some-uuid/ticket3216/3216_2.patch) by TimothyClemans created at 2008-05-19 18:58:51
 
 
 
@@ -217,7 +217,7 @@ apply all three patches including this one, which makes things professional inst
 archive/issue_comments_022273.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3216-prof.patch](tarball://root/attachments/some-uuid/ticket3216/sage-3216-prof.patch) by was created at 2008-06-16 04:45:44",
     "created_at": "2008-06-16T04:45:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3216",
     "type": "issue_comment",
@@ -226,7 +226,7 @@ archive/issue_comments_022273.json:
 }
 ```
 
-Attachment
+Attachment [sage-3216-prof.patch](tarball://root/attachments/some-uuid/ticket3216/sage-3216-prof.patch) by was created at 2008-06-16 04:45:44
 
 
 

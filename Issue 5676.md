@@ -80,7 +80,7 @@ I have a fix for this, I'll post a patch in 1 hour.
 archive/issue_comments_044407.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-5676.patch](tarball://root/attachments/some-uuid/ticket5676/sage-5676.patch) by boothby created at 2009-04-15 18:39:53",
     "created_at": "2009-04-15T18:39:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5676",
     "type": "issue_comment",
@@ -89,7 +89,7 @@ archive/issue_comments_044407.json:
 }
 ```
 
-Attachment
+Attachment [sage-5676.patch](tarball://root/attachments/some-uuid/ticket5676/sage-5676.patch) by boothby created at 2009-04-15 18:39:53
 
 
 

@@ -142,7 +142,7 @@ So efficiency gain of up to 50%. Positive review.
 archive/issue_comments_049714.json:
 ```json
 {
-    "body": "Attachment\n\nbased on Sage 4.0.1.rc2",
+    "body": "Attachment [trac_6229.patch](tarball://root/attachments/some-uuid/ticket6229/trac_6229.patch) by mvngu created at 2009-06-06 00:33:32\n\nbased on Sage 4.0.1.rc2",
     "created_at": "2009-06-06T00:33:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6229",
     "type": "issue_comment",
@@ -151,7 +151,7 @@ archive/issue_comments_049714.json:
 }
 ```
 
-Attachment
+Attachment [trac_6229.patch](tarball://root/attachments/some-uuid/ticket6229/trac_6229.patch) by mvngu created at 2009-06-06 00:33:32
 
 based on Sage 4.0.1.rc2
 

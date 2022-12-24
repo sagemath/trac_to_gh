@@ -691,7 +691,7 @@ So, I agree that IsSubgroup is the way to go.
 archive/issue_comments_044311.json:
 ```json
 {
-    "body": "Attachment\n\nBug fixes and doc tests for `PermutationGroup_generic.__cmp__` and `PermutationGroup_subgroup.__cmp__`",
+    "body": "Attachment [PermutationGroup__cmp__.patch](tarball://root/attachments/some-uuid/ticket5664/PermutationGroup__cmp__.patch) by SimonKing created at 2009-04-21 07:44:14\n\nBug fixes and doc tests for `PermutationGroup_generic.__cmp__` and `PermutationGroup_subgroup.__cmp__`",
     "created_at": "2009-04-21T07:44:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5664",
     "type": "issue_comment",
@@ -700,7 +700,7 @@ archive/issue_comments_044311.json:
 }
 ```
 
-Attachment
+Attachment [PermutationGroup__cmp__.patch](tarball://root/attachments/some-uuid/ticket5664/PermutationGroup__cmp__.patch) by SimonKing created at 2009-04-21 07:44:14
 
 Bug fixes and doc tests for `PermutationGroup_generic.__cmp__` and `PermutationGroup_subgroup.__cmp__`
 

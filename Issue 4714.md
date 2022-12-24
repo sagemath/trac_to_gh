@@ -245,7 +245,7 @@ Minimal approach for docs.  Depends on #6614.
 archive/issue_comments_035545.json:
 ```json
 {
-    "body": "Attachment\n\nThis [attachment:trac_4714-minimal_doc.patch p(r)oof of concept], which depends on a [attachment:ticket:6614:trac_6614-jsmath_repo_v2.patch patch] at #6614,\n\n* Adds `doc/common/static/jsmath_sage.js`.\n* Sets `jsmath_path=jsmath_sage.js` in `doc/common/conf.py`.\n\nThe new static file is jsMath's \"stock\" `easy/load.js` plus all Sage-related customizations I could find, including extensions, macros, and a few other bits from `notebook.py`.  I've also made changes below `DO NOT MAKE CHANGES BELOW THIS` (gasp!) to help the loader find jsMath from its new [relative] location.\n\nI think this means we don't need to patch the spkg.  Later, we may be able to use Sphinx 0.6.2's static templates to insert an updated macro list at build time (cf. #6586).\n\nPerhaps we can do something similar for the notebook, e.g., in `sage/server/notebook/templates`.",
+    "body": "Attachment [trac_4714-minimal_doc.patch](tarball://root/attachments/some-uuid/ticket4714/trac_4714-minimal_doc.patch) by mpatel created at 2009-08-04 04:41:59\n\nThis [attachment:trac_4714-minimal_doc.patch p(r)oof of concept], which depends on a [attachment:ticket:6614:trac_6614-jsmath_repo_v2.patch patch] at #6614,\n\n* Adds `doc/common/static/jsmath_sage.js`.\n* Sets `jsmath_path=jsmath_sage.js` in `doc/common/conf.py`.\n\nThe new static file is jsMath's \"stock\" `easy/load.js` plus all Sage-related customizations I could find, including extensions, macros, and a few other bits from `notebook.py`.  I've also made changes below `DO NOT MAKE CHANGES BELOW THIS` (gasp!) to help the loader find jsMath from its new [relative] location.\n\nI think this means we don't need to patch the spkg.  Later, we may be able to use Sphinx 0.6.2's static templates to insert an updated macro list at build time (cf. #6586).\n\nPerhaps we can do something similar for the notebook, e.g., in `sage/server/notebook/templates`.",
     "created_at": "2009-08-04T04:41:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4714",
     "type": "issue_comment",
@@ -254,7 +254,7 @@ archive/issue_comments_035545.json:
 }
 ```
 
-Attachment
+Attachment [trac_4714-minimal_doc.patch](tarball://root/attachments/some-uuid/ticket4714/trac_4714-minimal_doc.patch) by mpatel created at 2009-08-04 04:41:59
 
 This [attachment:trac_4714-minimal_doc.patch p(r)oof of concept], which depends on a [attachment:ticket:6614:trac_6614-jsmath_repo_v2.patch patch] at #6614,
 
@@ -400,7 +400,7 @@ Changing status from new to needs_review.
 archive/issue_comments_035553.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch [attachment:trac_4714-sagenb_jsmath_init.patch] consolidates jsMath setup in `/javascript/jsmath.js`.  It depends on #6673.\n\nThe patch still hard-codes the `sage.misc.latex_macros`'s macros.  Still to do: Generate the macros from server/user settings and `latex_macros`'s helper functions.",
+    "body": "Attachment [trac_4714-sagenb_jsmath_init.patch](tarball://root/attachments/some-uuid/ticket4714/trac_4714-sagenb_jsmath_init.patch) by mpatel created at 2009-10-23 07:10:01\n\nThe patch [attachment:trac_4714-sagenb_jsmath_init.patch] consolidates jsMath setup in `/javascript/jsmath.js`.  It depends on #6673.\n\nThe patch still hard-codes the `sage.misc.latex_macros`'s macros.  Still to do: Generate the macros from server/user settings and `latex_macros`'s helper functions.",
     "created_at": "2009-10-23T07:10:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4714",
     "type": "issue_comment",
@@ -409,7 +409,7 @@ archive/issue_comments_035553.json:
 }
 ```
 
-Attachment
+Attachment [trac_4714-sagenb_jsmath_init.patch](tarball://root/attachments/some-uuid/ticket4714/trac_4714-sagenb_jsmath_init.patch) by mpatel created at 2009-10-23 07:10:01
 
 The patch [attachment:trac_4714-sagenb_jsmath_init.patch] consolidates jsMath setup in `/javascript/jsmath.js`.  It depends on #6673.
 
@@ -440,7 +440,7 @@ Hard-code jsMath macros.  Apply to sagenb repository.
 archive/issue_comments_035555.json:
 ```json
 {
-    "body": "Attachment\n\nI've reattached [attachment:trac_4714-sagenb_hard_code_macros.patch], since my first try didn't work (server problems?).",
+    "body": "Attachment [trac_4714-sagenb_hard_code_macros.patch](tarball://root/attachments/some-uuid/ticket4714/trac_4714-sagenb_hard_code_macros.patch) by mpatel created at 2009-10-24 18:51:10\n\nI've reattached [attachment:trac_4714-sagenb_hard_code_macros.patch], since my first try didn't work (server problems?).",
     "created_at": "2009-10-24T18:51:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4714",
     "type": "issue_comment",
@@ -449,7 +449,7 @@ archive/issue_comments_035555.json:
 }
 ```
 
-Attachment
+Attachment [trac_4714-sagenb_hard_code_macros.patch](tarball://root/attachments/some-uuid/ticket4714/trac_4714-sagenb_hard_code_macros.patch) by mpatel created at 2009-10-24 18:51:10
 
 I've reattached [attachment:trac_4714-sagenb_hard_code_macros.patch], since my first try didn't work (server problems?).
 
@@ -576,7 +576,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_035562.json:
 ```json
 {
-    "body": "Attachment\n\nRebased against this sequence:\n\n```\ntrac_7390-sagenb_test_report_A.patch\ntrac_7390-sagenb_test_report_B_v2.patch\ntrac_7390-sagenb_test_report_referee.patch\ntrac_7402-pkg_resources.patch\ntrac_7428-publish_last_edited_v2.patch\ntrac_7444-search_after_publish.patch\ntrac_7376-search_by_username_v2.patch\ntrac_1321-sagenb_graphed.patch\nsagenb_7483.patch\nsagenb_7482.patch\nsagenb-7495.patch\nsagenb_3849.patch\ntrac_4714-sagenb_jsmath_init_v2.patch\n```\n",
+    "body": "Attachment [trac_4714-sagenb_jsmath_init_v2.patch](tarball://root/attachments/some-uuid/ticket4714/trac_4714-sagenb_jsmath_init_v2.patch) by mpatel created at 2009-11-26 06:33:37\n\nRebased against this sequence:\n\n```\ntrac_7390-sagenb_test_report_A.patch\ntrac_7390-sagenb_test_report_B_v2.patch\ntrac_7390-sagenb_test_report_referee.patch\ntrac_7402-pkg_resources.patch\ntrac_7428-publish_last_edited_v2.patch\ntrac_7444-search_after_publish.patch\ntrac_7376-search_by_username_v2.patch\ntrac_1321-sagenb_graphed.patch\nsagenb_7483.patch\nsagenb_7482.patch\nsagenb-7495.patch\nsagenb_3849.patch\ntrac_4714-sagenb_jsmath_init_v2.patch\n```\n",
     "created_at": "2009-11-26T06:33:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4714",
     "type": "issue_comment",
@@ -585,7 +585,7 @@ archive/issue_comments_035562.json:
 }
 ```
 
-Attachment
+Attachment [trac_4714-sagenb_jsmath_init_v2.patch](tarball://root/attachments/some-uuid/ticket4714/trac_4714-sagenb_jsmath_init_v2.patch) by mpatel created at 2009-11-26 06:33:37
 
 Rebased against this sequence:
 
@@ -631,7 +631,7 @@ Changing priority from major to minor.
 archive/issue_comments_035564.json:
 ```json
 {
-    "body": "Attachment\n\nForce jsMath to load always.  This patch only.  sagenb repo.",
+    "body": "Attachment [trac_4714-sagenb_jsmath_init_v3.patch](tarball://root/attachments/some-uuid/ticket4714/trac_4714-sagenb_jsmath_init_v3.patch) by mpatel created at 2009-12-02 23:35:14\n\nForce jsMath to load always.  This patch only.  sagenb repo.",
     "created_at": "2009-12-02T23:35:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4714",
     "type": "issue_comment",
@@ -640,7 +640,7 @@ archive/issue_comments_035564.json:
 }
 ```
 
-Attachment
+Attachment [trac_4714-sagenb_jsmath_init_v3.patch](tarball://root/attachments/some-uuid/ticket4714/trac_4714-sagenb_jsmath_init_v3.patch) by mpatel created at 2009-12-02 23:35:14
 
 Force jsMath to load always.  This patch only.  sagenb repo.
 

@@ -65,7 +65,7 @@ Changing status from new to needs_review.
 archive/issue_comments_090635.json:
 ```json
 {
-    "body": "Attachment\n\nchange list to padded_list in _richcmp_c_impl",
+    "body": "Attachment [trac_9457_power_series_eq.patch](tarball://root/attachments/some-uuid/ticket9457/trac_9457_power_series_eq.patch) by niles created at 2010-07-08 19:20:15\n\nchange list to padded_list in _richcmp_c_impl",
     "created_at": "2010-07-08T19:20:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
@@ -74,7 +74,7 @@ archive/issue_comments_090635.json:
 }
 ```
 
-Attachment
+Attachment [trac_9457_power_series_eq.patch](tarball://root/attachments/some-uuid/ticket9457/trac_9457_power_series_eq.patch) by niles created at 2010-07-08 19:20:15
 
 change list to padded_list in _richcmp_c_impl
 
@@ -202,7 +202,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_090640.json:
 ```json
 {
-    "body": "Attachment\n\nHi!\n\nThe patches cleanly apply, and `sage -b` works.\n\nThe original problem is fixed:\n\n```\nsage: A.<t> = PowerSeriesRing(ZZ)\nsage: g = t + t^3 + t^5 + O(t^6); g\nt + t^3 + t^5 + O(t^6)\nsage:\nsage: [g == g.add_bigoh(i) for i in range(7)]\n[True, True, True, True, True, True, True]\n```\n\n\nThe code looks good to me. I am now running doctests.\n\nOne minor problem: Please mention the ticket number in the commit messages. So, please add something like \"#9457: \" to the commit messages of both patches",
+    "body": "Attachment [trac_9457_power_series_eq_doctests.patch](tarball://root/attachments/some-uuid/ticket9457/trac_9457_power_series_eq_doctests.patch) by SimonKing created at 2010-07-30 16:59:31\n\nHi!\n\nThe patches cleanly apply, and `sage -b` works.\n\nThe original problem is fixed:\n\n```\nsage: A.<t> = PowerSeriesRing(ZZ)\nsage: g = t + t^3 + t^5 + O(t^6); g\nt + t^3 + t^5 + O(t^6)\nsage:\nsage: [g == g.add_bigoh(i) for i in range(7)]\n[True, True, True, True, True, True, True]\n```\n\n\nThe code looks good to me. I am now running doctests.\n\nOne minor problem: Please mention the ticket number in the commit messages. So, please add something like \"#9457: \" to the commit messages of both patches",
     "created_at": "2010-07-30T16:59:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
@@ -211,7 +211,7 @@ archive/issue_comments_090640.json:
 }
 ```
 
-Attachment
+Attachment [trac_9457_power_series_eq_doctests.patch](tarball://root/attachments/some-uuid/ticket9457/trac_9457_power_series_eq_doctests.patch) by SimonKing created at 2010-07-30 16:59:31
 
 Hi!
 
@@ -702,7 +702,7 @@ A bug in p-adic vectors related to the problems here was noticed and filed at #8
 archive/issue_comments_090649.json:
 ```json
 {
-    "body": "Attachment\n\nrebased to 5.0.rc0",
+    "body": "Attachment [trac_9457_power_series_eq_rebase.patch](tarball://root/attachments/some-uuid/ticket9457/trac_9457_power_series_eq_rebase.patch) by niles created at 2012-05-03 14:52:51\n\nrebased to 5.0.rc0",
     "created_at": "2012-05-03T14:52:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
@@ -711,7 +711,7 @@ archive/issue_comments_090649.json:
 }
 ```
 
-Attachment
+Attachment [trac_9457_power_series_eq_rebase.patch](tarball://root/attachments/some-uuid/ticket9457/trac_9457_power_series_eq_rebase.patch) by niles created at 2012-05-03 14:52:51
 
 rebased to 5.0.rc0
 

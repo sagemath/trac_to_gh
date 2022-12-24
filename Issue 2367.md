@@ -208,7 +208,7 @@ First apply the patches from #2348, then apply this patch. It extends the method
 archive/issue_comments_015971.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:2 wdj]:\n> The patches (first 2348 then this one) applied cleanly and the above code ran. \n\nNow i changed the patches of #2348 and of this ticket. So, a re-check is needed.\n\n> However, sage -testall failed. Here is one failure:\n>  ...\n> ----------------------------------------------------------------------\n> The following tests failed:\n> ...\n>         sage -t  devel/sage-matgp3/sage/rings/polynomial/groebner_fan.py\n>         sage -t  devel/sage-matgp3/sage/rings/number_field/totallyreal.py\n>         sage -t  devel/sage-matgp3/sage/plot/plot.py\n\nThese three tests fail on my system as well - with and without the patches. So, it doesn't seem to be related.\n\nBut with the patches (that partially add further doc tests), the following clearly related tests pass:\n* matrix_group.py\n* matrix_group_element.py\n* number_field.py\n* number_field_element.pyx\n* matrix1.pyx",
+    "body": "Attachment [invariant_generators.patch](tarball://root/attachments/some-uuid/ticket2367/invariant_generators.patch) by SimonKing created at 2008-03-02 22:58:02\n\nReplying to [comment:2 wdj]:\n> The patches (first 2348 then this one) applied cleanly and the above code ran. \n\nNow i changed the patches of #2348 and of this ticket. So, a re-check is needed.\n\n> However, sage -testall failed. Here is one failure:\n>  ...\n> ----------------------------------------------------------------------\n> The following tests failed:\n> ...\n>         sage -t  devel/sage-matgp3/sage/rings/polynomial/groebner_fan.py\n>         sage -t  devel/sage-matgp3/sage/rings/number_field/totallyreal.py\n>         sage -t  devel/sage-matgp3/sage/plot/plot.py\n\nThese three tests fail on my system as well - with and without the patches. So, it doesn't seem to be related.\n\nBut with the patches (that partially add further doc tests), the following clearly related tests pass:\n* matrix_group.py\n* matrix_group_element.py\n* number_field.py\n* number_field_element.pyx\n* matrix1.pyx",
     "created_at": "2008-03-02T22:58:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2367",
     "type": "issue_comment",
@@ -217,7 +217,7 @@ archive/issue_comments_015971.json:
 }
 ```
 
-Attachment
+Attachment [invariant_generators.patch](tarball://root/attachments/some-uuid/ticket2367/invariant_generators.patch) by SimonKing created at 2008-03-02 22:58:02
 
 Replying to [comment:2 wdj]:
 > The patches (first 2348 then this one) applied cleanly and the above code ran. 

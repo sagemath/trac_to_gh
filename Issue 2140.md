@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2140
 archive/issue_comments_014030.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2140-ncalexan-search-src-def-1.patch](tarball://root/attachments/some-uuid/ticket2140/2140-ncalexan-search-src-def-1.patch) by ncalexan created at 2008-02-11 07:31:19",
     "created_at": "2008-02-11T07:31:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2140",
     "type": "issue_comment",
@@ -50,7 +50,7 @@ archive/issue_comments_014030.json:
 }
 ```
 
-Attachment
+Attachment [2140-ncalexan-search-src-def-1.patch](tarball://root/attachments/some-uuid/ticket2140/2140-ncalexan-search-src-def-1.patch) by ncalexan created at 2008-02-11 07:31:19
 
 
 
@@ -95,7 +95,7 @@ I definitely like the patch. Apparently Nick was channeling Tony the Tiger, thou
 archive/issue_comments_014033.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2140-typo.patch](tarball://root/attachments/some-uuid/ticket2140/2140-typo.patch) by craigcitro created at 2008-02-11 07:57:23",
     "created_at": "2008-02-11T07:57:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2140",
     "type": "issue_comment",
@@ -104,7 +104,7 @@ archive/issue_comments_014033.json:
 }
 ```
 
-Attachment
+Attachment [2140-typo.patch](tarball://root/attachments/some-uuid/ticket2140/2140-typo.patch) by craigcitro created at 2008-02-11 07:57:23
 
 
 

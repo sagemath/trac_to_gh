@@ -93,7 +93,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2719
 archive/issue_comments_018746.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2719-bitsets.patch](tarball://root/attachments/some-uuid/ticket2719/2719-bitsets.patch) by robertwb created at 2008-03-29 18:18:54",
     "created_at": "2008-03-29T18:18:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2719",
     "type": "issue_comment",
@@ -102,7 +102,7 @@ archive/issue_comments_018746.json:
 }
 ```
 
-Attachment
+Attachment [2719-bitsets.patch](tarball://root/attachments/some-uuid/ticket2719/2719-bitsets.patch) by robertwb created at 2008-03-29 18:18:54
 
 
 

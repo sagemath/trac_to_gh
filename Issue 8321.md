@@ -303,7 +303,7 @@ Changing status from new to needs_review.
 archive/issue_comments_073813.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8321_numeric_int_mpmath.patch](tarball://root/attachments/some-uuid/ticket8321/trac_8321_numeric_int_mpmath.patch) by maldun created at 2010-08-25 15:43:57",
     "created_at": "2010-08-25T15:43:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
@@ -312,7 +312,7 @@ archive/issue_comments_073813.json:
 }
 ```
 
-Attachment
+Attachment [trac_8321_numeric_int_mpmath.patch](tarball://root/attachments/some-uuid/ticket8321/trac_8321_numeric_int_mpmath.patch) by maldun created at 2010-08-25 15:43:57
 
 
 
@@ -1032,7 +1032,7 @@ rebase of previous patch to 4.7.1
 archive/issue_comments_073836.json:
 ```json
 {
-    "body": "Attachment\n\nI'm working on adding numerical integration examples, in the meantime I've posted a rebase of the previously uploaded patch to sage-4.7.1.",
+    "body": "Attachment [trac_8321_rebase.patch](tarball://root/attachments/some-uuid/ticket8321/trac_8321_rebase.patch) by benjaminfjones created at 2011-08-23 03:52:05\n\nI'm working on adding numerical integration examples, in the meantime I've posted a rebase of the previously uploaded patch to sage-4.7.1.",
     "created_at": "2011-08-23T03:52:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
@@ -1041,7 +1041,7 @@ archive/issue_comments_073836.json:
 }
 ```
 
-Attachment
+Attachment [trac_8321_rebase.patch](tarball://root/attachments/some-uuid/ticket8321/trac_8321_rebase.patch) by benjaminfjones created at 2011-08-23 03:52:05
 
 I'm working on adding numerical integration examples, in the meantime I've posted a rebase of the previously uploaded patch to sage-4.7.1.
 

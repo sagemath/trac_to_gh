@@ -51,7 +51,7 @@ Changing priority from major to blocker.
 archive/issue_comments_021206.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3072_urllib_error_handler.patch](tarball://root/attachments/some-uuid/ticket3072/3072_urllib_error_handler.patch) by wjp created at 2008-05-01 15:14:03",
     "created_at": "2008-05-01T15:14:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3072",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_021206.json:
 }
 ```
 
-Attachment
+Attachment [3072_urllib_error_handler.patch](tarball://root/attachments/some-uuid/ticket3072/3072_urllib_error_handler.patch) by wjp created at 2008-05-01 15:14:03
 
 
 

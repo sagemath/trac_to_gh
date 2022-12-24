@@ -63,7 +63,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3652
 archive/issue_comments_025827.json:
 ```json
 {
-    "body": "Attachment\n\nApplies nicely and does speed up the operation on my system.",
+    "body": "Attachment [trac3652-free-module-random-speedup.patch](tarball://root/attachments/some-uuid/ticket3652/trac3652-free-module-random-speedup.patch) by ncalexan created at 2008-08-10 20:14:46\n\nApplies nicely and does speed up the operation on my system.",
     "created_at": "2008-08-10T20:14:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3652",
     "type": "issue_comment",
@@ -72,7 +72,7 @@ archive/issue_comments_025827.json:
 }
 ```
 
-Attachment
+Attachment [trac3652-free-module-random-speedup.patch](tarball://root/attachments/some-uuid/ticket3652/trac3652-free-module-random-speedup.patch) by ncalexan created at 2008-08-10 20:14:46
 
 Applies nicely and does speed up the operation on my system.
 

@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8102
 archive/issue_comments_071086.json:
 ```json
 {
-    "body": "Attachment\n\nSimplify `sphinxify.py`.  Some pep8 tweaks.  sagenb repo.",
+    "body": "Attachment [trac_8102-simplify_sphinxify.patch](tarball://root/attachments/some-uuid/ticket8102/trac_8102-simplify_sphinxify.patch) by mpatel created at 2010-01-28 02:33:56\n\nSimplify `sphinxify.py`.  Some pep8 tweaks.  sagenb repo.",
     "created_at": "2010-01-28T02:33:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8102",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_071086.json:
 }
 ```
 
-Attachment
+Attachment [trac_8102-simplify_sphinxify.patch](tarball://root/attachments/some-uuid/ticket8102/trac_8102-simplify_sphinxify.patch) by mpatel created at 2010-01-28 02:33:56
 
 Simplify `sphinxify.py`.  Some pep8 tweaks.  sagenb repo.
 
@@ -147,7 +147,7 @@ Otherwise it looks good.
 archive/issue_comments_071091.json:
 ```json
 {
-    "body": "Attachment\n\nReplace `SAGE_DOC = None` with `SAGE_DOC = ''`.  Replaces previous.",
+    "body": "Attachment [trac_8102-simplify_sphinxify.2.patch](tarball://root/attachments/some-uuid/ticket8102/trac_8102-simplify_sphinxify.2.patch) by mpatel created at 2010-02-03 05:56:04\n\nReplace `SAGE_DOC = None` with `SAGE_DOC = ''`.  Replaces previous.",
     "created_at": "2010-02-03T05:56:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8102",
     "type": "issue_comment",
@@ -156,7 +156,7 @@ archive/issue_comments_071091.json:
 }
 ```
 
-Attachment
+Attachment [trac_8102-simplify_sphinxify.2.patch](tarball://root/attachments/some-uuid/ticket8102/trac_8102-simplify_sphinxify.2.patch) by mpatel created at 2010-02-03 05:56:04
 
 Replace `SAGE_DOC = None` with `SAGE_DOC = ''`.  Replaces previous.
 

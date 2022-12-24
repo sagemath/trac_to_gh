@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3055
 archive/issue_comments_021090.json:
 ```json
 {
-    "body": "Attachment\n\nWith #3054 and #3055 applied, doctests pass in the graphs/ directory.",
+    "body": "Attachment [trac-3055-subgraph-del-pos.patch](tarball://root/attachments/some-uuid/ticket3055/trac-3055-subgraph-del-pos.patch) by jason created at 2008-04-29 21:09:18\n\nWith #3054 and #3055 applied, doctests pass in the graphs/ directory.",
     "created_at": "2008-04-29T21:09:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3055",
     "type": "issue_comment",
@@ -41,7 +41,7 @@ archive/issue_comments_021090.json:
 }
 ```
 
-Attachment
+Attachment [trac-3055-subgraph-del-pos.patch](tarball://root/attachments/some-uuid/ticket3055/trac-3055-subgraph-del-pos.patch) by jason created at 2008-04-29 21:09:18
 
 With #3054 and #3055 applied, doctests pass in the graphs/ directory.
 

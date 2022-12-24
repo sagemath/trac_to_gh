@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3141
 archive/issue_comments_021803.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [mpolynomiasystem_fixes.patch](tarball://root/attachments/some-uuid/ticket3141/mpolynomiasystem_fixes.patch) by malb created at 2008-05-09 10:42:54",
     "created_at": "2008-05-09T10:42:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3141",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_021803.json:
 }
 ```
 
-Attachment
+Attachment [mpolynomiasystem_fixes.patch](tarball://root/attachments/some-uuid/ticket3141/mpolynomiasystem_fixes.patch) by malb created at 2008-05-09 10:42:54
 
 
 

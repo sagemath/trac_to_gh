@@ -474,7 +474,7 @@ Changing status from closed to needs_work.
 archive/issue_comments_044048.json:
 ```json
 {
-    "body": "Attachment\n\nI've posted a new patch which takes care of these issues.",
+    "body": "Attachment [trac_5639.patch](tarball://root/attachments/some-uuid/ticket5639/trac_5639.patch) by mhansen created at 2009-11-03 10:14:48\n\nI've posted a new patch which takes care of these issues.",
     "created_at": "2009-11-03T10:14:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5639",
     "type": "issue_comment",
@@ -483,7 +483,7 @@ archive/issue_comments_044048.json:
 }
 ```
 
-Attachment
+Attachment [trac_5639.patch](tarball://root/attachments/some-uuid/ticket5639/trac_5639.patch) by mhansen created at 2009-11-03 10:14:48
 
 I've posted a new patch which takes care of these issues.
 
@@ -568,7 +568,7 @@ apply on top of previous patch
 archive/issue_comments_044053.json:
 ```json
 {
-    "body": "Attachment\n\nLooks okay, doctests pass on affected files.  I posted a patch with a doctest as well, as a reviewer patch.  Positive review.",
+    "body": "Attachment [trac-5639-doctest.patch](tarball://root/attachments/some-uuid/ticket5639/trac-5639-doctest.patch) by jason created at 2009-11-10 04:37:32\n\nLooks okay, doctests pass on affected files.  I posted a patch with a doctest as well, as a reviewer patch.  Positive review.",
     "created_at": "2009-11-10T04:37:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5639",
     "type": "issue_comment",
@@ -577,7 +577,7 @@ archive/issue_comments_044053.json:
 }
 ```
 
-Attachment
+Attachment [trac-5639-doctest.patch](tarball://root/attachments/some-uuid/ticket5639/trac-5639-doctest.patch) by jason created at 2009-11-10 04:37:32
 
 Looks okay, doctests pass on affected files.  I posted a patch with a doctest as well, as a reviewer patch.  Positive review.
 

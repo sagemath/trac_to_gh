@@ -161,7 +161,7 @@ scripts repo
 archive/issue_comments_078883.json:
 ```json
 {
-    "body": "Attachment\n\nscripts repo",
+    "body": "Attachment [trac_8669-download.2.patch](tarball://root/attachments/some-uuid/ticket8669/trac_8669-download.2.patch) by jhpalmieri created at 2010-04-10 23:46:55\n\nscripts repo",
     "created_at": "2010-04-10T23:46:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8669",
     "type": "issue_comment",
@@ -170,7 +170,7 @@ archive/issue_comments_078883.json:
 }
 ```
 
-Attachment
+Attachment [trac_8669-download.2.patch](tarball://root/attachments/some-uuid/ticket8669/trac_8669-download.2.patch) by jhpalmieri created at 2010-04-10 23:46:55
 
 scripts repo
 
@@ -181,7 +181,7 @@ scripts repo
 archive/issue_comments_078884.json:
 ```json
 {
-    "body": "Attachment\n\nscripts repo (same as other patch)",
+    "body": "Attachment [trac_8669-download.patch](tarball://root/attachments/some-uuid/ticket8669/trac_8669-download.patch) by jhpalmieri created at 2010-04-10 23:47:11\n\nscripts repo (same as other patch)",
     "created_at": "2010-04-10T23:47:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8669",
     "type": "issue_comment",
@@ -190,7 +190,7 @@ archive/issue_comments_078884.json:
 }
 ```
 
-Attachment
+Attachment [trac_8669-download.patch](tarball://root/attachments/some-uuid/ticket8669/trac_8669-download.patch) by jhpalmieri created at 2010-04-10 23:47:11
 
 scripts repo (same as other patch)
 
@@ -201,7 +201,7 @@ scripts repo (same as other patch)
 archive/issue_comments_078885.json:
 ```json
 {
-    "body": "Attachment\n\nTo the release manager: please delete all but \"trac_8669-download.patch\".",
+    "body": "Attachment [trac_8669-download.3.patch](tarball://root/attachments/some-uuid/ticket8669/trac_8669-download.3.patch) by jhpalmieri created at 2010-04-10 23:47:47\n\nTo the release manager: please delete all but \"trac_8669-download.patch\".",
     "created_at": "2010-04-10T23:47:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8669",
     "type": "issue_comment",
@@ -210,7 +210,7 @@ archive/issue_comments_078885.json:
 }
 ```
 
-Attachment
+Attachment [trac_8669-download.3.patch](tarball://root/attachments/some-uuid/ticket8669/trac_8669-download.3.patch) by jhpalmieri created at 2010-04-10 23:47:47
 
 To the release manager: please delete all but "trac_8669-download.patch".
 

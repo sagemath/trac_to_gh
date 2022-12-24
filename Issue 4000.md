@@ -2552,7 +2552,7 @@ Main patch
 archive/issue_comments_028819.json:
 ```json
 {
-    "body": "Attachment\n\nfmpq_poly.c and header",
+    "body": "Attachment [trac4000_fmpq_poly_c.patch](tarball://root/attachments/some-uuid/ticket4000/trac4000_fmpq_poly_c.patch) by spancratz created at 2010-07-31 23:03:09\n\nfmpq_poly.c and header",
     "created_at": "2010-07-31T23:03:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
@@ -2561,7 +2561,7 @@ archive/issue_comments_028819.json:
 }
 ```
 
-Attachment
+Attachment [trac4000_fmpq_poly_c.patch](tarball://root/attachments/some-uuid/ticket4000/trac4000_fmpq_poly_c.patch) by spancratz created at 2010-07-31 23:03:09
 
 fmpq_poly.c and header
 
@@ -2572,7 +2572,7 @@ fmpq_poly.c and header
 archive/issue_comments_028820.json:
 ```json
 {
-    "body": "Attachment\n\nfmpq_poly.pxd",
+    "body": "Attachment [trac4000_fmpq_poly_pxd.patch](tarball://root/attachments/some-uuid/ticket4000/trac4000_fmpq_poly_pxd.patch) by spancratz created at 2010-07-31 23:03:18\n\nfmpq_poly.pxd",
     "created_at": "2010-07-31T23:03:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
@@ -2581,7 +2581,7 @@ archive/issue_comments_028820.json:
 }
 ```
 
-Attachment
+Attachment [trac4000_fmpq_poly_pxd.patch](tarball://root/attachments/some-uuid/ticket4000/trac4000_fmpq_poly_pxd.patch) by spancratz created at 2010-07-31 23:03:18
 
 fmpq_poly.pxd
 
@@ -2821,7 +2821,7 @@ fix the 32/64-bit doctest that Robert found... thus hopefully meaning this is re
 archive/issue_comments_028828.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:80 rlm]:\n> Nice work! I think that once the 32/64 bit issue is fixed, this should be ready to go, and unless anyone else objects, I'll move it to positive review once that's finished.\n\nI posted a patch that finishes the 32/64 bit issue.",
+    "body": "Attachment [trac4000_64bit.patch](tarball://root/attachments/some-uuid/ticket4000/trac4000_64bit.patch) by was created at 2010-08-11 18:22:36\n\nReplying to [comment:80 rlm]:\n> Nice work! I think that once the 32/64 bit issue is fixed, this should be ready to go, and unless anyone else objects, I'll move it to positive review once that's finished.\n\nI posted a patch that finishes the 32/64 bit issue.",
     "created_at": "2010-08-11T18:22:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
@@ -2830,7 +2830,7 @@ archive/issue_comments_028828.json:
 }
 ```
 
-Attachment
+Attachment [trac4000_64bit.patch](tarball://root/attachments/some-uuid/ticket4000/trac4000_64bit.patch) by was created at 2010-08-11 18:22:36
 
 Replying to [comment:80 rlm]:
 > Nice work! I think that once the 32/64 bit issue is fixed, this should be ready to go, and unless anyone else objects, I'll move it to positive review once that's finished.
@@ -2844,7 +2844,7 @@ I posted a patch that finishes the 32/64 bit issue.
 archive/issue_comments_028829.json:
 ```json
 {
-    "body": "Attachment\n\nthere was another issue with an \"is\" in a doctest...",
+    "body": "Attachment [trac4000_is.patch](tarball://root/attachments/some-uuid/ticket4000/trac4000_is.patch) by was created at 2010-08-11 18:54:51\n\nthere was another issue with an \"is\" in a doctest...",
     "created_at": "2010-08-11T18:54:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
@@ -2853,7 +2853,7 @@ archive/issue_comments_028829.json:
 }
 ```
 
-Attachment
+Attachment [trac4000_is.patch](tarball://root/attachments/some-uuid/ticket4000/trac4000_is.patch) by was created at 2010-08-11 18:54:51
 
 there was another issue with an "is" in a doctest...
 
@@ -3425,7 +3425,7 @@ Probably someone more knowledgeable could fix this in a better way.
 archive/issue_comments_028850.json:
 ```json
 {
-    "body": "Attachment\n\nFixes issue with hensel_lift()",
+    "body": "Attachment [4000_fix_hensel_lift.patch](tarball://root/attachments/some-uuid/ticket4000/4000_fix_hensel_lift.patch) by jdemeyer created at 2010-09-18 19:58:44\n\nFixes issue with hensel_lift()",
     "created_at": "2010-09-18T19:58:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
@@ -3434,7 +3434,7 @@ archive/issue_comments_028850.json:
 }
 ```
 
-Attachment
+Attachment [4000_fix_hensel_lift.patch](tarball://root/attachments/some-uuid/ticket4000/4000_fix_hensel_lift.patch) by jdemeyer created at 2010-09-18 19:58:44
 
 Fixes issue with hensel_lift()
 
@@ -3920,7 +3920,7 @@ Fixes doctest for graph vertex sorting, see #9741
 archive/issue_comments_028869.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:102 mpatel]:\n> The failures in `generic_graph.py` stem from the newly merged #9741.  I've added a comment there.\n\n#9741 has a doctest that uses vertices that are polynomials.  With module name changes here at #4000, one of the doctests needs to change.  I've added a bit of documentation (and expanded the test slightly) to make it clear why the fully-qualified name is being used - more discussion is on #9741.\n\nI built this patch after applying everything up through the \"hensel_lift\" patch, but it should just depend on the renaming of the modules.  Tests now pass on `sage/graphs/generic_graph.py` and the documentation for this module looks fine.",
+    "body": "Attachment [trac_4000-graph-vertex-sort-fix.patch](tarball://root/attachments/some-uuid/ticket4000/trac_4000-graph-vertex-sort-fix.patch) by rbeezer created at 2010-09-20 18:16:05\n\nReplying to [comment:102 mpatel]:\n> The failures in `generic_graph.py` stem from the newly merged #9741.  I've added a comment there.\n\n#9741 has a doctest that uses vertices that are polynomials.  With module name changes here at #4000, one of the doctests needs to change.  I've added a bit of documentation (and expanded the test slightly) to make it clear why the fully-qualified name is being used - more discussion is on #9741.\n\nI built this patch after applying everything up through the \"hensel_lift\" patch, but it should just depend on the renaming of the modules.  Tests now pass on `sage/graphs/generic_graph.py` and the documentation for this module looks fine.",
     "created_at": "2010-09-20T18:16:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
@@ -3929,7 +3929,7 @@ archive/issue_comments_028869.json:
 }
 ```
 
-Attachment
+Attachment [trac_4000-graph-vertex-sort-fix.patch](tarball://root/attachments/some-uuid/ticket4000/trac_4000-graph-vertex-sort-fix.patch) by rbeezer created at 2010-09-20 18:16:05
 
 Replying to [comment:102 mpatel]:
 > The failures in `generic_graph.py` stem from the newly merged #9741.  I've added a comment there.
@@ -4166,7 +4166,7 @@ Main patch rebased against 4.6.alpha3
 archive/issue_comments_028877.json:
 ```json
 {
-    "body": "Attachment\n\nSolaris work around",
+    "body": "Attachment [trac_4000-sunos_workaround.patch](tarball://root/attachments/some-uuid/ticket4000/trac_4000-sunos_workaround.patch) by mpatel created at 2010-10-08 08:51:32\n\nSolaris work around",
     "created_at": "2010-10-08T08:51:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
@@ -4175,7 +4175,7 @@ archive/issue_comments_028877.json:
 }
 ```
 
-Attachment
+Attachment [trac_4000-sunos_workaround.patch](tarball://root/attachments/some-uuid/ticket4000/trac_4000-sunos_workaround.patch) by mpatel created at 2010-10-08 08:51:32
 
 Solaris work around
 
@@ -4294,7 +4294,7 @@ Combined patch that replaces all of the others
 archive/issue_comments_028882.json:
 ```json
 {
-    "body": "Attachment\n\nI've also attached a combined patch that replaces all of the others.",
+    "body": "Attachment [trac_4000-combined.patch](tarball://root/attachments/some-uuid/ticket4000/trac_4000-combined.patch) by mpatel created at 2010-10-08 09:28:12\n\nI've also attached a combined patch that replaces all of the others.",
     "created_at": "2010-10-08T09:28:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
@@ -4303,7 +4303,7 @@ archive/issue_comments_028882.json:
 }
 ```
 
-Attachment
+Attachment [trac_4000-combined.patch](tarball://root/attachments/some-uuid/ticket4000/trac_4000-combined.patch) by mpatel created at 2010-10-08 09:28:12
 
 I've also attached a combined patch that replaces all of the others.
 
@@ -4471,7 +4471,7 @@ Fix 32/64-bit number_field_ideal doctest.  Apply only this patch.
 archive/issue_comments_028888.json:
 ```json
 {
-    "body": "Attachment\n\nI made this ticket a 4.6 blocker three weeks ago.  The most recent doctest error appeared because of a recent change, probably in 4.6.alpha2.  Yes, I meant to say that I'd make the new ticket a 4.6 blocker.  4.6.alpha3 is not out yet and we are not yet in feature freeze.\n\nI've added V2 of the combined patch, which adjusts the `number_field_ideal.py` example as I suggest above.\n\nThis ticket still needs a final review, and if it's positively reviewed by the time #10097 is merged, I'll merge it into 4.6.alpha3.",
+    "body": "Attachment [trac_4000-combined.2.patch](tarball://root/attachments/some-uuid/ticket4000/trac_4000-combined.2.patch) by mpatel created at 2010-10-08 10:29:52\n\nI made this ticket a 4.6 blocker three weeks ago.  The most recent doctest error appeared because of a recent change, probably in 4.6.alpha2.  Yes, I meant to say that I'd make the new ticket a 4.6 blocker.  4.6.alpha3 is not out yet and we are not yet in feature freeze.\n\nI've added V2 of the combined patch, which adjusts the `number_field_ideal.py` example as I suggest above.\n\nThis ticket still needs a final review, and if it's positively reviewed by the time #10097 is merged, I'll merge it into 4.6.alpha3.",
     "created_at": "2010-10-08T10:29:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
@@ -4480,7 +4480,7 @@ archive/issue_comments_028888.json:
 }
 ```
 
-Attachment
+Attachment [trac_4000-combined.2.patch](tarball://root/attachments/some-uuid/ticket4000/trac_4000-combined.2.patch) by mpatel created at 2010-10-08 10:29:52
 
 I made this ticket a 4.6 blocker three weeks ago.  The most recent doctest error appeared because of a recent change, probably in 4.6.alpha2.  Yes, I meant to say that I'd make the new ticket a 4.6 blocker.  4.6.alpha3 is not out yet and we are not yet in feature freeze.
 

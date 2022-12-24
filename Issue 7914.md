@@ -51,7 +51,7 @@ Changing status from new to needs_review.
 archive/issue_comments_068856.json:
 ```json
 {
-    "body": "Attachment\n\nDepends on #7729.",
+    "body": "Attachment [trac_7914_triangular-morphisms-jb.patch](tarball://root/attachments/some-uuid/ticket7914/trac_7914_triangular-morphisms-jb.patch) by jbandlow created at 2010-01-12 20:53:54\n\nDepends on #7729.",
     "created_at": "2010-01-12T20:53:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7914",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_068856.json:
 }
 ```
 
-Attachment
+Attachment [trac_7914_triangular-morphisms-jb.patch](tarball://root/attachments/some-uuid/ticket7914/trac_7914_triangular-morphisms-jb.patch) by jbandlow created at 2010-01-12 20:53:54
 
 Depends on #7729.
 
@@ -110,7 +110,7 @@ Actually, it doesn't: what's a triangular morphism?  A definition (or at the ver
 archive/issue_comments_068859.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7914_triangular_morphisms-jb.patch](tarball://root/attachments/some-uuid/ticket7914/trac_7914_triangular_morphisms-jb.patch) by jbandlow created at 2010-02-19 19:49:25",
     "created_at": "2010-02-19T19:49:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7914",
     "type": "issue_comment",
@@ -119,7 +119,7 @@ archive/issue_comments_068859.json:
 }
 ```
 
-Attachment
+Attachment [trac_7914_triangular_morphisms-jb.patch](tarball://root/attachments/some-uuid/ticket7914/trac_7914_triangular_morphisms-jb.patch) by jbandlow created at 2010-02-19 19:49:25
 
 
 
@@ -128,7 +128,7 @@ Attachment
 archive/issue_comments_068860.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7914_triangular_morphisms-doc-jb.patch](tarball://root/attachments/some-uuid/ticket7914/trac_7914_triangular_morphisms-doc-jb.patch) by jbandlow created at 2010-02-19 19:51:04",
     "created_at": "2010-02-19T19:51:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7914",
     "type": "issue_comment",
@@ -137,7 +137,7 @@ archive/issue_comments_068860.json:
 }
 ```
 
-Attachment
+Attachment [trac_7914_triangular_morphisms-doc-jb.patch](tarball://root/attachments/some-uuid/ticket7914/trac_7914_triangular_morphisms-doc-jb.patch) by jbandlow created at 2010-02-19 19:51:04
 
 
 
@@ -146,7 +146,7 @@ Attachment
 archive/issue_comments_068861.json:
 ```json
 {
-    "body": "Attachment\n\nNicolas,  I added the patch trac_7914_triangular_morphisms-doc-jb.patch on top of your reviewer patch to fix some documentation issues (replacing 'maximal' with 'minimal' and that sort of thing).  Since the patches got out of order on the ticket, I created trac_7914_folded.patch.  This is all that needs to be applied.  It applies cleanly to sage 4.3.2. and passes tests.  I approve of Nicolas' reviewer changes (which are part of the folded patch), and believe this is ready for merging.  Note: John Palmieri's comments were useful, and have been addressed in the documentation.",
+    "body": "Attachment [trac_7914_folded.patch](tarball://root/attachments/some-uuid/ticket7914/trac_7914_folded.patch) by jbandlow created at 2010-02-19 20:11:30\n\nNicolas,  I added the patch trac_7914_triangular_morphisms-doc-jb.patch on top of your reviewer patch to fix some documentation issues (replacing 'maximal' with 'minimal' and that sort of thing).  Since the patches got out of order on the ticket, I created trac_7914_folded.patch.  This is all that needs to be applied.  It applies cleanly to sage 4.3.2. and passes tests.  I approve of Nicolas' reviewer changes (which are part of the folded patch), and believe this is ready for merging.  Note: John Palmieri's comments were useful, and have been addressed in the documentation.",
     "created_at": "2010-02-19T20:11:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7914",
     "type": "issue_comment",
@@ -155,7 +155,7 @@ archive/issue_comments_068861.json:
 }
 ```
 
-Attachment
+Attachment [trac_7914_folded.patch](tarball://root/attachments/some-uuid/ticket7914/trac_7914_folded.patch) by jbandlow created at 2010-02-19 20:11:30
 
 Nicolas,  I added the patch trac_7914_triangular_morphisms-doc-jb.patch on top of your reviewer patch to fix some documentation issues (replacing 'maximal' with 'minimal' and that sort of thing).  Since the patches got out of order on the ticket, I created trac_7914_folded.patch.  This is all that needs to be applied.  It applies cleanly to sage 4.3.2. and passes tests.  I approve of Nicolas' reviewer changes (which are part of the folded patch), and believe this is ready for merging.  Note: John Palmieri's comments were useful, and have been addressed in the documentation.
 
@@ -243,7 +243,7 @@ Apply only this one (includes the rebasing by Florent)
 archive/issue_comments_068866.json:
 ```json
 {
-    "body": "Attachment\n\nI found a small but critical bug when actually trying to use this.  The __invert__ method incorrectly defines 'domain' and 'codomain'.  Fix coming shortly.",
+    "body": "Attachment [trac_7914_folded_rebased.patch](tarball://root/attachments/some-uuid/ticket7914/trac_7914_folded_rebased.patch) by jbandlow created at 2010-04-03 00:01:29\n\nI found a small but critical bug when actually trying to use this.  The __invert__ method incorrectly defines 'domain' and 'codomain'.  Fix coming shortly.",
     "created_at": "2010-04-03T00:01:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7914",
     "type": "issue_comment",
@@ -252,7 +252,7 @@ archive/issue_comments_068866.json:
 }
 ```
 
-Attachment
+Attachment [trac_7914_folded_rebased.patch](tarball://root/attachments/some-uuid/ticket7914/trac_7914_folded_rebased.patch) by jbandlow created at 2010-04-03 00:01:29
 
 I found a small but critical bug when actually trying to use this.  The __invert__ method incorrectly defines 'domain' and 'codomain'.  Fix coming shortly.
 
@@ -281,7 +281,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_068868.json:
 ```json
 {
-    "body": "Attachment\n\nApply only this patch.",
+    "body": "Attachment [trac_7914_rebased_fixed.patch](tarball://root/attachments/some-uuid/ticket7914/trac_7914_rebased_fixed.patch) by jbandlow created at 2010-04-03 00:04:46\n\nApply only this patch.",
     "created_at": "2010-04-03T00:04:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7914",
     "type": "issue_comment",
@@ -290,7 +290,7 @@ archive/issue_comments_068868.json:
 }
 ```
 
-Attachment
+Attachment [trac_7914_rebased_fixed.patch](tarball://root/attachments/some-uuid/ticket7914/trac_7914_rebased_fixed.patch) by jbandlow created at 2010-04-03 00:04:46
 
 Apply only this patch.
 

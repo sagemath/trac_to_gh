@@ -109,7 +109,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_095757.json:
 ```json
 {
-    "body": "Attachment\n\nfirst version",
+    "body": "Attachment [trac_9771_update_instructions_for_reviewers.patch](tarball://root/attachments/some-uuid/ticket9771/trac_9771_update_instructions_for_reviewers.patch) by niles created at 2010-09-07 19:55:29\n\nfirst version",
     "created_at": "2010-09-07T19:55:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9770",
     "type": "issue_comment",
@@ -118,7 +118,7 @@ archive/issue_comments_095757.json:
 }
 ```
 
-Attachment
+Attachment [trac_9771_update_instructions_for_reviewers.patch](tarball://root/attachments/some-uuid/ticket9771/trac_9771_update_instructions_for_reviewers.patch) by niles created at 2010-09-07 19:55:29
 
 first version
 

@@ -349,7 +349,7 @@ Michael
 archive/issue_comments_046892.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [symbolics_final2.patch](tarball://root/attachments/some-uuid/ticket5930/symbolics_final2.patch) by mhansen created at 2009-05-19 23:02:16",
     "created_at": "2009-05-19T23:02:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5930",
     "type": "issue_comment",
@@ -358,7 +358,7 @@ archive/issue_comments_046892.json:
 }
 ```
 
-Attachment
+Attachment [symbolics_final2.patch](tarball://root/attachments/some-uuid/ticket5930/symbolics_final2.patch) by mhansen created at 2009-05-19 23:02:16
 
 
 

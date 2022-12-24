@@ -163,7 +163,7 @@ Changing status from new to needs_review.
 archive/issue_comments_001804.json:
 ```json
 {
-    "body": "Attachment\n\nFeel free to improve the patch!",
+    "body": "Attachment [trac_378-load_attach_path.patch](tarball://root/attachments/some-uuid/ticket378/trac_378-load_attach_path.patch) by mpatel created at 2010-02-16 00:22:23\n\nFeel free to improve the patch!",
     "created_at": "2010-02-16T00:22:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/378",
     "type": "issue_comment",
@@ -172,7 +172,7 @@ archive/issue_comments_001804.json:
 }
 ```
 
-Attachment
+Attachment [trac_378-load_attach_path.patch](tarball://root/attachments/some-uuid/ticket378/trac_378-load_attach_path.patch) by mpatel created at 2010-02-16 00:22:23
 
 Feel free to improve the patch!
 
@@ -255,7 +255,7 @@ Should we add an option (`recurse=False`?) that makes `load` and `attach` search
 archive/issue_comments_001809.json:
 ```json
 {
-    "body": "Attachment\n\nMore examples.  Handle absolute paths.  Replaces previous.",
+    "body": "Attachment [trac_378-load_attach_path.2.patch](tarball://root/attachments/some-uuid/ticket378/trac_378-load_attach_path.2.patch) by mpatel created at 2010-02-20 23:49:33\n\nMore examples.  Handle absolute paths.  Replaces previous.",
     "created_at": "2010-02-20T23:49:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/378",
     "type": "issue_comment",
@@ -264,7 +264,7 @@ archive/issue_comments_001809.json:
 }
 ```
 
-Attachment
+Attachment [trac_378-load_attach_path.2.patch](tarball://root/attachments/some-uuid/ticket378/trac_378-load_attach_path.2.patch) by mpatel created at 2010-02-20 23:49:33
 
 More examples.  Handle absolute paths.  Replaces previous.
 
@@ -496,7 +496,7 @@ Thoughts?
 archive/issue_comments_001820.json:
 ```json
 {
-    "body": "Attachment\n\nuse os.path.userexpand on load, separate reset function, also use paths for detach. replaces previous.",
+    "body": "Attachment [trac_378-load_attach_path.2.1.patch](tarball://root/attachments/some-uuid/ticket378/trac_378-load_attach_path.2.1.patch) by flawrence created at 2010-11-04 06:14:08\n\nuse os.path.userexpand on load, separate reset function, also use paths for detach. replaces previous.",
     "created_at": "2010-11-04T06:14:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/378",
     "type": "issue_comment",
@@ -505,7 +505,7 @@ archive/issue_comments_001820.json:
 }
 ```
 
-Attachment
+Attachment [trac_378-load_attach_path.2.1.patch](tarball://root/attachments/some-uuid/ticket378/trac_378-load_attach_path.2.1.patch) by flawrence created at 2010-11-04 06:14:08
 
 use os.path.userexpand on load, separate reset function, also use paths for detach. replaces previous.
 
@@ -599,7 +599,7 @@ errors during apply, please fix and refresh trac_378-load_attach_path.2.1.patch
 archive/issue_comments_001824.json:
 ```json
 {
-    "body": "Attachment\n\nuse os.path.userexpand on load, separate reset function, also use paths for detach. actually replaces previous this time..",
+    "body": "Attachment [trac_387-load_attach_path.2.1.patch](tarball://root/attachments/some-uuid/ticket378/trac_387-load_attach_path.2.1.patch) by flawrence created at 2010-11-05 02:46:38\n\nuse os.path.userexpand on load, separate reset function, also use paths for detach. actually replaces previous this time..",
     "created_at": "2010-11-05T02:46:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/378",
     "type": "issue_comment",
@@ -608,7 +608,7 @@ archive/issue_comments_001824.json:
 }
 ```
 
-Attachment
+Attachment [trac_387-load_attach_path.2.1.patch](tarball://root/attachments/some-uuid/ticket378/trac_387-load_attach_path.2.1.patch) by flawrence created at 2010-11-05 02:46:38
 
 use os.path.userexpand on load, separate reset function, also use paths for detach. actually replaces previous this time..
 

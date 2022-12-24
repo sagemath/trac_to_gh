@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8453
 archive/issue_comments_076057.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8453.patch](tarball://root/attachments/some-uuid/ticket8453/trac_8453.patch) by mhansen created at 2010-03-06 06:22:54",
     "created_at": "2010-03-06T06:22:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8453",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_076057.json:
 }
 ```
 
-Attachment
+Attachment [trac_8453.patch](tarball://root/attachments/some-uuid/ticket8453/trac_8453.patch) by mhansen created at 2010-03-06 06:22:54
 
 
 
@@ -172,7 +172,7 @@ Got:
 archive/issue_comments_076062.json:
 ```json
 {
-    "body": "Attachment\n\napply over previous patch",
+    "body": "Attachment [trac_8453-reviewer.patch](tarball://root/attachments/some-uuid/ticket8453/trac_8453-reviewer.patch) by davidloeffler created at 2010-03-11 19:47:20\n\napply over previous patch",
     "created_at": "2010-03-11T19:47:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8453",
     "type": "issue_comment",
@@ -181,7 +181,7 @@ archive/issue_comments_076062.json:
 }
 ```
 
-Attachment
+Attachment [trac_8453-reviewer.patch](tarball://root/attachments/some-uuid/ticket8453/trac_8453-reviewer.patch) by davidloeffler created at 2010-03-11 19:47:20
 
 apply over previous patch
 

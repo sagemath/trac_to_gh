@@ -209,7 +209,7 @@ Changing status from new to needs_work.
 archive/issue_comments_077897.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch should be ready for review.  Doctests pass in the modules/*.pyx files.",
+    "body": "Attachment [trac-8601-vector-mod2-negative.patch](tarball://root/attachments/some-uuid/ticket8601/trac-8601-vector-mod2-negative.patch) by jason created at 2010-05-01 19:33:04\n\nThis patch should be ready for review.  Doctests pass in the modules/*.pyx files.",
     "created_at": "2010-05-01T19:33:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8601",
     "type": "issue_comment",
@@ -218,7 +218,7 @@ archive/issue_comments_077897.json:
 }
 ```
 
-Attachment
+Attachment [trac-8601-vector-mod2-negative.patch](tarball://root/attachments/some-uuid/ticket8601/trac-8601-vector-mod2-negative.patch) by jason created at 2010-05-01 19:33:04
 
 This patch should be ready for review.  Doctests pass in the modules/*.pyx files.
 
@@ -247,7 +247,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_077899.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch [trac-8601-vector-mod2-negative.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8601/trac-8601-vector-mod2-negative.patch) is OK by me. But I would prefer referencing the ticket number in a doctest. My reviewer patch does that and it also fixes a typo. Anyone but myself is welcome to give a final sign off on this ticket.",
+    "body": "Attachment [trac_8601-reviewer.patch](tarball://root/attachments/some-uuid/ticket8601/trac_8601-reviewer.patch) by mvngu created at 2010-05-11 05:20:11\n\nThe patch [trac-8601-vector-mod2-negative.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8601/trac-8601-vector-mod2-negative.patch) is OK by me. But I would prefer referencing the ticket number in a doctest. My reviewer patch does that and it also fixes a typo. Anyone but myself is welcome to give a final sign off on this ticket.",
     "created_at": "2010-05-11T05:20:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8601",
     "type": "issue_comment",
@@ -256,7 +256,7 @@ archive/issue_comments_077899.json:
 }
 ```
 
-Attachment
+Attachment [trac_8601-reviewer.patch](tarball://root/attachments/some-uuid/ticket8601/trac_8601-reviewer.patch) by mvngu created at 2010-05-11 05:20:11
 
 The patch [trac-8601-vector-mod2-negative.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8601/trac-8601-vector-mod2-negative.patch) is OK by me. But I would prefer referencing the ticket number in a doctest. My reviewer patch does that and it also fixes a typo. Anyone but myself is welcome to give a final sign off on this ticket.
 

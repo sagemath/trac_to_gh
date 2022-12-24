@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8798
 archive/issue_comments_080583.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8798.patch](tarball://root/attachments/some-uuid/ticket8798/trac_8798.patch) by ncohen created at 2010-04-28 08:12:59",
     "created_at": "2010-04-28T08:12:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8798",
     "type": "issue_comment",
@@ -53,7 +53,7 @@ archive/issue_comments_080583.json:
 }
 ```
 
-Attachment
+Attachment [trac_8798.patch](tarball://root/attachments/some-uuid/ticket8798/trac_8798.patch) by ncohen created at 2010-04-28 08:12:59
 
 
 
@@ -100,7 +100,7 @@ Changing status from new to needs_review.
 archive/issue_comments_080586.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch [trac_8798.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8798/trac_8798.patch) is OK by me. However, it would likely conflict with #8786. So [trac_8798-rebased.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8798/trac_8798-rebased.patch) is a rebase of [trac_8798.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8798/trac_8798.patch) on top of #8786. Someone other than myself needs to check the rebased patch. If it's OK, then the whole ticket is good to go.",
+    "body": "Attachment [trac_8798-rebased.patch](tarball://root/attachments/some-uuid/ticket8798/trac_8798-rebased.patch) by mvngu created at 2010-04-28 14:20:31\n\nThe patch [trac_8798.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8798/trac_8798.patch) is OK by me. However, it would likely conflict with #8786. So [trac_8798-rebased.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8798/trac_8798-rebased.patch) is a rebase of [trac_8798.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8798/trac_8798.patch) on top of #8786. Someone other than myself needs to check the rebased patch. If it's OK, then the whole ticket is good to go.",
     "created_at": "2010-04-28T14:20:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8798",
     "type": "issue_comment",
@@ -109,7 +109,7 @@ archive/issue_comments_080586.json:
 }
 ```
 
-Attachment
+Attachment [trac_8798-rebased.patch](tarball://root/attachments/some-uuid/ticket8798/trac_8798-rebased.patch) by mvngu created at 2010-04-28 14:20:31
 
 The patch [trac_8798.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8798/trac_8798.patch) is OK by me. However, it would likely conflict with #8786. So [trac_8798-rebased.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8798/trac_8798-rebased.patch) is a rebase of [trac_8798.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8798/trac_8798.patch) on top of #8786. Someone other than myself needs to check the rebased patch. If it's OK, then the whole ticket is good to go.
 

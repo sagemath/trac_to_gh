@@ -64,7 +64,7 @@ Michael
 archive/issue_comments_042881.json:
 ```json
 {
-    "body": "Attachment\n\npatch for cvxopt-0.9.p7.spkg: replace spkg-install perl script by a bash script, eliminating the dependency on perl",
+    "body": "Attachment [trac_5517.cvxopt.patch](tarball://root/attachments/some-uuid/ticket5517/trac_5517.cvxopt.patch) by tornaria created at 2009-05-01 21:03:31\n\npatch for cvxopt-0.9.p7.spkg: replace spkg-install perl script by a bash script, eliminating the dependency on perl",
     "created_at": "2009-05-01T21:03:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5517",
     "type": "issue_comment",
@@ -73,7 +73,7 @@ archive/issue_comments_042881.json:
 }
 ```
 
-Attachment
+Attachment [trac_5517.cvxopt.patch](tarball://root/attachments/some-uuid/ticket5517/trac_5517.cvxopt.patch) by tornaria created at 2009-05-01 21:03:31
 
 patch for cvxopt-0.9.p7.spkg: replace spkg-install perl script by a bash script, eliminating the dependency on perl
 

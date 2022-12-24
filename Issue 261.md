@@ -147,7 +147,7 @@ Changing status from new to needs_review.
 archive/issue_comments_001237.json:
 ```json
 {
-    "body": "Attachment\n\nOn my system seems to be working fine. A light cosmetic suggestion for the patch - I would use 'import numpy' only once, at the very beginning. \n\nA desirable thing is to adjust 'vector' correspondingly - both vorking as 'vector(3,f)' and 'vector(v)' for a 1-dimensional numpy array v with dtype=int, dtype=object or any other dtype, which possible currently to do as 'vector(list(v))'. I'll try to add this as a ticket later (when I'll have more time) if it won't be created earlier.\n\nAlec Mihailovs",
+    "body": "Attachment [trac_261.patch](tarball://root/attachments/some-uuid/ticket261/trac_261.patch) by AlecMihailovs created at 2010-03-20 20:47:35\n\nOn my system seems to be working fine. A light cosmetic suggestion for the patch - I would use 'import numpy' only once, at the very beginning. \n\nA desirable thing is to adjust 'vector' correspondingly - both vorking as 'vector(3,f)' and 'vector(v)' for a 1-dimensional numpy array v with dtype=int, dtype=object or any other dtype, which possible currently to do as 'vector(list(v))'. I'll try to add this as a ticket later (when I'll have more time) if it won't be created earlier.\n\nAlec Mihailovs",
     "created_at": "2010-03-20T20:47:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/261",
     "type": "issue_comment",
@@ -156,7 +156,7 @@ archive/issue_comments_001237.json:
 }
 ```
 
-Attachment
+Attachment [trac_261.patch](tarball://root/attachments/some-uuid/ticket261/trac_261.patch) by AlecMihailovs created at 2010-03-20 20:47:35
 
 On my system seems to be working fine. A light cosmetic suggestion for the patch - I would use 'import numpy' only once, at the very beginning. 
 
@@ -263,7 +263,7 @@ Resolution: fixed
 archive/issue_comments_001243.json:
 ```json
 {
-    "body": "Attachment\n\nMerged both patches in 4.4.alpha0.",
+    "body": "Attachment [trac_261-trivial.patch](tarball://root/attachments/some-uuid/ticket261/trac_261-trivial.patch) by jhpalmieri created at 2010-04-15 05:18:48\n\nMerged both patches in 4.4.alpha0.",
     "created_at": "2010-04-15T05:18:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/261",
     "type": "issue_comment",
@@ -272,6 +272,6 @@ archive/issue_comments_001243.json:
 }
 ```
 
-Attachment
+Attachment [trac_261-trivial.patch](tarball://root/attachments/some-uuid/ticket261/trac_261-trivial.patch) by jhpalmieri created at 2010-04-15 05:18:48
 
 Merged both patches in 4.4.alpha0.

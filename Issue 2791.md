@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2791
 archive/issue_comments_019171.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [symmetrica-amd64.patch](tarball://root/attachments/some-uuid/ticket2791/symmetrica-amd64.patch) by tabbott created at 2008-04-03 06:15:45",
     "created_at": "2008-04-03T06:15:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2791",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_019171.json:
 }
 ```
 
-Attachment
+Attachment [symmetrica-amd64.patch](tarball://root/attachments/some-uuid/ticket2791/symmetrica-amd64.patch) by tabbott created at 2008-04-03 06:15:45
 
 
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4510
 archive/issue_comments_033451.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [planarity-reference.patch](tarball://root/attachments/some-uuid/ticket4510/planarity-reference.patch) by jason created at 2008-11-13 06:58:04",
     "created_at": "2008-11-13T06:58:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4510",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_033451.json:
 }
 ```
 
-Attachment
+Attachment [planarity-reference.patch](tarball://root/attachments/some-uuid/ticket4510/planarity-reference.patch) by jason created at 2008-11-13 06:58:04
 
 
 

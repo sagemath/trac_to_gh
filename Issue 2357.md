@@ -85,7 +85,7 @@ change ZZ[x] backend to FLINT
 archive/issue_comments_015877.json:
 ```json
 {
-    "body": "Attachment\n\nattachment:trac2357_make_flint_default_for_ZZx.patch replaces `sage/rings/polynomial/polynomial_integer_dense_ntl.*` in the tree with `sage/rings/polynomial/polynomial_integer_dense_flint.*` and makes FLINT the default backend for ZZ[x] arithmetic.\n\nFLINT 1.0.10 is required for the patch, you can get the spkg here:\n\nhttp://sage.math.washington.edu/home/burcin/spkg/flint-1.0.10.spkg",
+    "body": "Attachment [trac2357_make_flint_default_for_ZZx.patch](tarball://root/attachments/some-uuid/ticket2357/trac2357_make_flint_default_for_ZZx.patch) by burcin created at 2008-06-17 19:37:29\n\nattachment:trac2357_make_flint_default_for_ZZx.patch replaces `sage/rings/polynomial/polynomial_integer_dense_ntl.*` in the tree with `sage/rings/polynomial/polynomial_integer_dense_flint.*` and makes FLINT the default backend for ZZ[x] arithmetic.\n\nFLINT 1.0.10 is required for the patch, you can get the spkg here:\n\nhttp://sage.math.washington.edu/home/burcin/spkg/flint-1.0.10.spkg",
     "created_at": "2008-06-17T19:37:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2357",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_015877.json:
 }
 ```
 
-Attachment
+Attachment [trac2357_make_flint_default_for_ZZx.patch](tarball://root/attachments/some-uuid/ticket2357/trac2357_make_flint_default_for_ZZx.patch) by burcin created at 2008-06-17 19:37:29
 
 attachment:trac2357_make_flint_default_for_ZZx.patch replaces `sage/rings/polynomial/polynomial_integer_dense_ntl.*` in the tree with `sage/rings/polynomial/polynomial_integer_dense_flint.*` and makes FLINT the default backend for ZZ[x] arithmetic.
 
@@ -327,7 +327,7 @@ This needs someone (I'm going to do it soon, unless someone does it before me) t
 archive/issue_comments_015889.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac2357-poly-ring-implementation.patch](tarball://root/attachments/some-uuid/ticket2357/trac2357-poly-ring-implementation.patch) by cwitty created at 2008-06-28 16:32:53",
     "created_at": "2008-06-28T16:32:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2357",
     "type": "issue_comment",
@@ -336,7 +336,7 @@ archive/issue_comments_015889.json:
 }
 ```
 
-Attachment
+Attachment [trac2357-poly-ring-implementation.patch](tarball://root/attachments/some-uuid/ticket2357/trac2357-poly-ring-implementation.patch) by cwitty created at 2008-06-28 16:32:53
 
 
 
@@ -411,7 +411,7 @@ revised patch adding FLINT wrappers for ZZ[x]
 archive/issue_comments_015893.json:
 ```json
 {
-    "body": "Attachment\n\nattachment:trac2357_make_flint_default_for_ZZx-v2.patch fixes some problems with my previous patch. This version supersedes the older files.\n\nChanges:\n- Add signal wrapper macros in various places to allow the user to interrupt the computation.\n- Handle division by zero in `__floordiv__`, which led to a crash with the previous patch.",
+    "body": "Attachment [trac2357_make_flint_default_for_ZZx-v2.patch](tarball://root/attachments/some-uuid/ticket2357/trac2357_make_flint_default_for_ZZx-v2.patch) by burcin created at 2008-06-30 10:05:35\n\nattachment:trac2357_make_flint_default_for_ZZx-v2.patch fixes some problems with my previous patch. This version supersedes the older files.\n\nChanges:\n- Add signal wrapper macros in various places to allow the user to interrupt the computation.\n- Handle division by zero in `__floordiv__`, which led to a crash with the previous patch.",
     "created_at": "2008-06-30T10:05:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2357",
     "type": "issue_comment",
@@ -420,7 +420,7 @@ archive/issue_comments_015893.json:
 }
 ```
 
-Attachment
+Attachment [trac2357_make_flint_default_for_ZZx-v2.patch](tarball://root/attachments/some-uuid/ticket2357/trac2357_make_flint_default_for_ZZx-v2.patch) by burcin created at 2008-06-30 10:05:35
 
 attachment:trac2357_make_flint_default_for_ZZx-v2.patch fixes some problems with my previous patch. This version supersedes the older files.
 
@@ -435,7 +435,7 @@ Changes:
 archive/issue_comments_015894.json:
 ```json
 {
-    "body": "Attachment\n\napply after burcin's v2 patch and carl's patch",
+    "body": "Attachment [trac-2357-pt3.patch](tarball://root/attachments/some-uuid/ticket2357/trac-2357-pt3.patch) by craigcitro created at 2008-07-01 22:51:05\n\napply after burcin's v2 patch and carl's patch",
     "created_at": "2008-07-01T22:51:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2357",
     "type": "issue_comment",
@@ -444,7 +444,7 @@ archive/issue_comments_015894.json:
 }
 ```
 
-Attachment
+Attachment [trac-2357-pt3.patch](tarball://root/attachments/some-uuid/ticket2357/trac-2357-pt3.patch) by craigcitro created at 2008-07-01 22:51:05
 
 apply after burcin's v2 patch and carl's patch
 
@@ -455,7 +455,7 @@ apply after burcin's v2 patch and carl's patch
 archive/issue_comments_015895.json:
 ```json
 {
-    "body": "Attachment\n\nsingle bundle with all three relevant patches",
+    "body": "Attachment [default-flint-polys.hg](tarball://root/attachments/some-uuid/ticket2357/default-flint-polys.hg) by craigcitro created at 2008-07-01 22:51:24\n\nsingle bundle with all three relevant patches",
     "created_at": "2008-07-01T22:51:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2357",
     "type": "issue_comment",
@@ -464,7 +464,7 @@ archive/issue_comments_015895.json:
 }
 ```
 
-Attachment
+Attachment [default-flint-polys.hg](tarball://root/attachments/some-uuid/ticket2357/default-flint-polys.hg) by craigcitro created at 2008-07-01 22:51:24
 
 single bundle with all three relevant patches
 

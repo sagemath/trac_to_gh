@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2125
 archive/issue_comments_013939.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good.  I assume Jonathan knows how to spell his own name... :)",
+    "body": "Attachment [spelling_fix.patch](tarball://root/attachments/some-uuid/ticket2125/spelling_fix.patch) by cwitty created at 2008-02-09 20:55:38\n\nLooks good.  I assume Jonathan knows how to spell his own name... :)",
     "created_at": "2008-02-09T20:55:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2125",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_013939.json:
 }
 ```
 
-Attachment
+Attachment [spelling_fix.patch](tarball://root/attachments/some-uuid/ticket2125/spelling_fix.patch) by cwitty created at 2008-02-09 20:55:38
 
 Looks good.  I assume Jonathan knows how to spell his own name... :)
 

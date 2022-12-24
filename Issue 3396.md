@@ -55,7 +55,7 @@ new function, print_or_typeset
 archive/issue_comments_023782.json:
 ```json
 {
-    "body": "Attachment\n\napply this after the other patch",
+    "body": "Attachment [sage-3396-doctests.patch](tarball://root/attachments/some-uuid/ticket3396/sage-3396-doctests.patch) by was created at 2008-06-11 15:05:15\n\napply this after the other patch",
     "created_at": "2008-06-11T15:05:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3396",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_023782.json:
 }
 ```
 
-Attachment
+Attachment [sage-3396-doctests.patch](tarball://root/attachments/some-uuid/ticket3396/sage-3396-doctests.patch) by was created at 2008-06-11 15:05:15
 
 apply this after the other patch
 

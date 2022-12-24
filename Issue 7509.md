@@ -255,7 +255,7 @@ Changing status from new to needs_review.
 archive/issue_comments_063535.json:
 ```json
 {
-    "body": "Attachment\n\nready to go",
+    "body": "Attachment [trac_7509.patch](tarball://root/attachments/some-uuid/ticket7509/trac_7509.patch) by was created at 2012-01-30 03:25:16\n\nready to go",
     "created_at": "2012-01-30T03:25:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7509",
     "type": "issue_comment",
@@ -264,7 +264,7 @@ archive/issue_comments_063535.json:
 }
 ```
 
-Attachment
+Attachment [trac_7509.patch](tarball://root/attachments/some-uuid/ticket7509/trac_7509.patch) by was created at 2012-01-30 03:25:16
 
 ready to go
 
@@ -347,7 +347,7 @@ Ah, now I see what you mean. The stupid source code display needs to have some H
 archive/issue_comments_063538.json:
 ```json
 {
-    "body": "Attachment\n\nnew version addressing the bug that was found ppurka -- apply only this",
+    "body": "Attachment [trac_7509.2.patch](tarball://root/attachments/some-uuid/ticket7509/trac_7509.2.patch) by was created at 2012-01-30 20:01:38\n\nnew version addressing the bug that was found ppurka -- apply only this",
     "created_at": "2012-01-30T20:01:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7509",
     "type": "issue_comment",
@@ -356,7 +356,7 @@ archive/issue_comments_063538.json:
 }
 ```
 
-Attachment
+Attachment [trac_7509.2.patch](tarball://root/attachments/some-uuid/ticket7509/trac_7509.2.patch) by was created at 2012-01-30 20:01:38
 
 new version addressing the bug that was found ppurka -- apply only this
 
@@ -424,7 +424,7 @@ address bug introduced by bugfix.  apply only this.
 archive/issue_comments_063542.json:
 ```json
 {
-    "body": "Attachment\n\nDoh -- fixed now.",
+    "body": "Attachment [trac_7509.3.patch](tarball://root/attachments/some-uuid/ticket7509/trac_7509.3.patch) by was created at 2012-01-30 20:32:04\n\nDoh -- fixed now.",
     "created_at": "2012-01-30T20:32:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7509",
     "type": "issue_comment",
@@ -433,7 +433,7 @@ archive/issue_comments_063542.json:
 }
 ```
 
-Attachment
+Attachment [trac_7509.3.patch](tarball://root/attachments/some-uuid/ticket7509/trac_7509.3.patch) by was created at 2012-01-30 20:32:04
 
 Doh -- fixed now.
 
@@ -462,7 +462,7 @@ adds syntax highlighting
 archive/issue_comments_063544.json:
 ```json
 {
-    "body": "Attachment\n\nThis is very nice und useful.\n\nThe patch [trac_7509_syntax_highlight.patch] adds syntax highlighting to the stack frame,\nand removes the first few frames, since they don't show anything interesting.\n\nThe <hr>> things are also fixed. Apply after the first patch [trac_7509.patch].",
+    "body": "Attachment [trac_7509_syntax_highlight.patch](tarball://root/attachments/some-uuid/ticket7509/trac_7509_syntax_highlight.patch) by whuss created at 2012-01-30 20:50:28\n\nThis is very nice und useful.\n\nThe patch [trac_7509_syntax_highlight.patch] adds syntax highlighting to the stack frame,\nand removes the first few frames, since they don't show anything interesting.\n\nThe <hr>> things are also fixed. Apply after the first patch [trac_7509.patch].",
     "created_at": "2012-01-30T20:50:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7509",
     "type": "issue_comment",
@@ -471,7 +471,7 @@ archive/issue_comments_063544.json:
 }
 ```
 
-Attachment
+Attachment [trac_7509_syntax_highlight.patch](tarball://root/attachments/some-uuid/ticket7509/trac_7509_syntax_highlight.patch) by whuss created at 2012-01-30 20:50:28
 
 This is very nice und useful.
 
@@ -543,7 +543,7 @@ apply only this -- includes shrinking the stack; also prints a message if source
 archive/issue_comments_063548.json:
 ```json
 {
-    "body": "Attachment\n\nI made a new patch:\n\n* has the shrunk stack\n* prints something when source code not available (yet) \n* adds whuff as co-author.",
+    "body": "Attachment [trac_7509.4.patch](tarball://root/attachments/some-uuid/ticket7509/trac_7509.4.patch) by was created at 2012-01-31 06:52:38\n\nI made a new patch:\n\n* has the shrunk stack\n* prints something when source code not available (yet) \n* adds whuff as co-author.",
     "created_at": "2012-01-31T06:52:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7509",
     "type": "issue_comment",
@@ -552,7 +552,7 @@ archive/issue_comments_063548.json:
 }
 ```
 
-Attachment
+Attachment [trac_7509.4.patch](tarball://root/attachments/some-uuid/ticket7509/trac_7509.4.patch) by was created at 2012-01-31 06:52:38
 
 I made a new patch:
 
@@ -647,7 +647,7 @@ I'll fix + improve the doctests and post a new patch.
 archive/issue_comments_063552.json:
 ```json
 {
-    "body": "Attachment\n\napply only this; addresses referee remarks.",
+    "body": "Attachment [trac_7509.5.patch](tarball://root/attachments/some-uuid/ticket7509/trac_7509.5.patch) by was created at 2012-02-01 07:12:01\n\napply only this; addresses referee remarks.",
     "created_at": "2012-02-01T07:12:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7509",
     "type": "issue_comment",
@@ -656,7 +656,7 @@ archive/issue_comments_063552.json:
 }
 ```
 
-Attachment
+Attachment [trac_7509.5.patch](tarball://root/attachments/some-uuid/ticket7509/trac_7509.5.patch) by was created at 2012-02-01 07:12:01
 
 apply only this; addresses referee remarks.
 

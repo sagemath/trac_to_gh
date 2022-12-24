@@ -69,7 +69,7 @@ I think a solution like that would be pretty easy in sage.  For example, this mi
 archive/issue_comments_009662.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:1 mrtrumbe]:\n> Regarding text rotation, can we just pass through the rotation option?  \n> This option is already available on the underlying matplotlib text objects, \n> so it seems like a layup.  I've attached a patch which accomplishes just that \n> (it is a very minor change).  This seems to work quite well here.\n\n\nI tried to download it and got a strange method. I guess it is not an hg patch but a diff?\n\nAlso, did you include an example in the docstring to illustrate your new feature?",
+    "body": "Attachment [text.py.patch](tarball://root/attachments/some-uuid/ticket1509/text.py.patch) by wdj created at 2009-08-17 19:36:50\n\nReplying to [comment:1 mrtrumbe]:\n> Regarding text rotation, can we just pass through the rotation option?  \n> This option is already available on the underlying matplotlib text objects, \n> so it seems like a layup.  I've attached a patch which accomplishes just that \n> (it is a very minor change).  This seems to work quite well here.\n\n\nI tried to download it and got a strange method. I guess it is not an hg patch but a diff?\n\nAlso, did you include an example in the docstring to illustrate your new feature?",
     "created_at": "2009-08-17T19:36:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1509",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_009662.json:
 }
 ```
 
-Attachment
+Attachment [text.py.patch](tarball://root/attachments/some-uuid/ticket1509/text.py.patch) by wdj created at 2009-08-17 19:36:50
 
 Replying to [comment:1 mrtrumbe]:
 > Regarding text rotation, can we just pass through the rotation option?  
@@ -176,7 +176,7 @@ Patch was premature.  Accidental revert of other changes.  Will fix shortly.
 archive/issue_comments_009666.json:
 ```json
 {
-    "body": "Attachment\n\nUgh.  Can't seem to delete patch files.  Sorry for the clutter.",
+    "body": "Attachment [12846.2.patch](tarball://root/attachments/some-uuid/ticket1509/12846.2.patch) by mrtrumbe created at 2009-08-19 18:53:08\n\nUgh.  Can't seem to delete patch files.  Sorry for the clutter.",
     "created_at": "2009-08-19T18:53:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1509",
     "type": "issue_comment",
@@ -185,7 +185,7 @@ archive/issue_comments_009666.json:
 }
 ```
 
-Attachment
+Attachment [12846.2.patch](tarball://root/attachments/some-uuid/ticket1509/12846.2.patch) by mrtrumbe created at 2009-08-19 18:53:08
 
 Ugh.  Can't seem to delete patch files.  Sorry for the clutter.
 
@@ -214,7 +214,7 @@ This is a proper hg patch.  Code is docstring tested.
 archive/issue_comments_009668.json:
 ```json
 {
-    "body": "Attachment\n\nThis is really neat, as the graphic says! It makes good sense to get more of the mpl functionality exposed, even if axes_labels now works again.  Positive review.  Apply only most recent patch.",
+    "body": "Attachment [12846.patch](tarball://root/attachments/some-uuid/ticket1509/12846.patch) by kcrisman created at 2009-10-05 18:24:07\n\nThis is really neat, as the graphic says! It makes good sense to get more of the mpl functionality exposed, even if axes_labels now works again.  Positive review.  Apply only most recent patch.",
     "created_at": "2009-10-05T18:24:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1509",
     "type": "issue_comment",
@@ -223,7 +223,7 @@ archive/issue_comments_009668.json:
 }
 ```
 
-Attachment
+Attachment [12846.patch](tarball://root/attachments/some-uuid/ticket1509/12846.patch) by kcrisman created at 2009-10-05 18:24:07
 
 This is really neat, as the graphic says! It makes good sense to get more of the mpl functionality exposed, even if axes_labels now works again.  Positive review.  Apply only most recent patch.
 

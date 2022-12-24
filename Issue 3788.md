@@ -70,7 +70,7 @@ Shouldn't int(-2) go to 5 instead of either 2 or 0?
 archive/issue_comments_026937.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3788-matrix-modn.patch](tarball://root/attachments/some-uuid/ticket3788/3788-matrix-modn.patch) by robertwb created at 2008-08-07 17:01:40",
     "created_at": "2008-08-07T17:01:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3788",
     "type": "issue_comment",
@@ -79,7 +79,7 @@ archive/issue_comments_026937.json:
 }
 ```
 
-Attachment
+Attachment [3788-matrix-modn.patch](tarball://root/attachments/some-uuid/ticket3788/3788-matrix-modn.patch) by robertwb created at 2008-08-07 17:01:40
 
 
 
@@ -172,7 +172,7 @@ Me too--no idea why that just changed, it used to work and I thought I only touc
 archive/issue_comments_026941.json:
 ```json
 {
-    "body": "Attachment\n\nThere was certainly a bug, but not in the code I touched so I don't know why it suddenly showed up now. I've fixed it, it should be working find again.",
+    "body": "Attachment [3788-matrix-modn.2.patch](tarball://root/attachments/some-uuid/ticket3788/3788-matrix-modn.2.patch) by robertwb created at 2008-08-08 02:44:40\n\nThere was certainly a bug, but not in the code I touched so I don't know why it suddenly showed up now. I've fixed it, it should be working find again.",
     "created_at": "2008-08-08T02:44:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3788",
     "type": "issue_comment",
@@ -181,7 +181,7 @@ archive/issue_comments_026941.json:
 }
 ```
 
-Attachment
+Attachment [3788-matrix-modn.2.patch](tarball://root/attachments/some-uuid/ticket3788/3788-matrix-modn.2.patch) by robertwb created at 2008-08-08 02:44:40
 
 There was certainly a bug, but not in the code I touched so I don't know why it suddenly showed up now. I've fixed it, it should be working find again.
 
@@ -192,7 +192,7 @@ There was certainly a bug, but not in the code I touched so I don't know why it 
 archive/issue_comments_026942.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3788.patch](tarball://root/attachments/some-uuid/ticket3788/3788.patch) by mhansen created at 2008-08-08 06:23:54",
     "created_at": "2008-08-08T06:23:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3788",
     "type": "issue_comment",
@@ -201,7 +201,7 @@ archive/issue_comments_026942.json:
 }
 ```
 
-Attachment
+Attachment [3788.patch](tarball://root/attachments/some-uuid/ticket3788/3788.patch) by mhansen created at 2008-08-08 06:23:54
 
 
 

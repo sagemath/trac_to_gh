@@ -61,7 +61,7 @@ Changing assignee from somebody to roed.
 archive/issue_comments_006820.json:
 ```json
 {
-    "body": "Attachment\n\nAdds algebraic completion functor",
+    "body": "Attachment [trac1128.patch](tarball://root/attachments/some-uuid/ticket1128/trac1128.patch) by roed created at 2007-12-02 06:14:11\n\nAdds algebraic completion functor",
     "created_at": "2007-12-02T06:14:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1128",
     "type": "issue_comment",
@@ -70,7 +70,7 @@ archive/issue_comments_006820.json:
 }
 ```
 
-Attachment
+Attachment [trac1128.patch](tarball://root/attachments/some-uuid/ticket1128/trac1128.patch) by roed created at 2007-12-02 06:14:11
 
 Adds algebraic completion functor
 
@@ -99,7 +99,7 @@ cleaner patch
 archive/issue_comments_006822.json:
 ```json
 {
-    "body": "Attachment\n\nYep, works great.",
+    "body": "Attachment [trac1128.2.patch](tarball://root/attachments/some-uuid/ticket1128/trac1128.2.patch) by robertwb created at 2007-12-02 07:31:01\n\nYep, works great.",
     "created_at": "2007-12-02T07:31:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1128",
     "type": "issue_comment",
@@ -108,7 +108,7 @@ archive/issue_comments_006822.json:
 }
 ```
 
-Attachment
+Attachment [trac1128.2.patch](tarball://root/attachments/some-uuid/ticket1128/trac1128.2.patch) by robertwb created at 2007-12-02 07:31:01
 
 Yep, works great.
 

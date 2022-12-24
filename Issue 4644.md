@@ -228,7 +228,7 @@ I'll upload the patch from that thread in a moment.
 archive/issue_comments_034961.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4644.patch](tarball://root/attachments/some-uuid/ticket4644/trac_4644.patch) by ddrake created at 2009-09-28 23:15:38",
     "created_at": "2009-09-28T23:15:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4644",
     "type": "issue_comment",
@@ -237,7 +237,7 @@ archive/issue_comments_034961.json:
 }
 ```
 
-Attachment
+Attachment [trac_4644.patch](tarball://root/attachments/some-uuid/ticket4644/trac_4644.patch) by ddrake created at 2009-09-28 23:15:38
 
 
 

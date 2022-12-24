@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8699
 archive/issue_comments_079253.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8699-documentation.patch](tarball://root/attachments/some-uuid/ticket8699/trac_8699-documentation.patch) by mvngu created at 2010-04-17 10:06:06",
     "created_at": "2010-04-17T10:06:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8699",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_079253.json:
 }
 ```
 
-Attachment
+Attachment [trac_8699-documentation.patch](tarball://root/attachments/some-uuid/ticket8699/trac_8699-documentation.patch) by mvngu created at 2010-04-17 10:06:06
 
 
 
@@ -69,7 +69,7 @@ Changing status from new to needs_review.
 archive/issue_comments_079255.json:
 ```json
 {
-    "body": "Attachment\n\nThe two patches on this ticket provide documentation for the doctest coverage script, in addition to allowing that script to handle docstrings that are delimited by triple single quotes. Incidentally, using those patches I found that throughout the whole Sage library, only one method uses triple single quotes. The method in question is `BubbleSortGraph()` of the module `sage.graphs.graph_generators.py`. This means that for the 90% doctest coverage goal of Sage 5.0, we have one less method to document because it's already documented. See the following command line transcript:\n\n\n```sh\n[mvngu@sage sage-4.4.alpha0-8699-quotes]$ ./sage -coverageall > coverage-before.log\n[mvngu@sage sage-4.4.alpha0-8699-quotes]$ cd local/bin/\n[mvngu@sage bin]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8699/trac_8699-documentation.patch && hg qpush \nadding trac_8699-documentation.patch to series file\napplying trac_8699-documentation.patch\nnow at: trac_8699-documentation.patch\n[mvngu@sage bin]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8699/trac_8699-single-quotes.patch && hg qpush \nadding trac_8699-single-quotes.patch to series file\napplying trac_8699-single-quotes.patch\nnow at: trac_8699-single-quotes.patch\n[mvngu@sage bin]$ cd ../..\n[mvngu@sage sage-4.4.alpha0-8699-quotes]$ ./sage -coverageall > coverage-after.log\n[mvngu@sage sage-4.4.alpha0-8699-quotes]$ diff -Naur coverage-before.log coverage-after.log \n--- coverage-before.log\t2010-04-17 03:37:50.663727239 -0700\n+++ coverage-after.log\t2010-04-17 03:38:45.181442502 -0700\n@@ -381,7 +381,7 @@\n geometry/polytope.py: 27% (6 of 22)\n geometry/polyhedra.py: 100% (186 of 186)\n graphs/graph_bundle.py: 100% (5 of 5)\n-graphs/graph_generators.py: 98% (73 of 74)\n+graphs/graph_generators.py: 100% (74 of 74)\n graphs/planarity.pyx: 100% (1 of 1)\n graphs/graph_latex.py: 100% (10 of 10)\n graphs/schnyder.py: 100% (8 of 8)\n@@ -1185,6 +1185,6 @@\n \n Overall weighted coverage score:  81.6%\n Total number of functions:  25377\n-We need  852 more function to get to 85% coverage.\n-We need 2121 more function to get to 90% coverage.\n-We need 3390 more function to get to 95% coverage.\n+We need  851 more function to get to 85% coverage.\n+We need 2120 more function to get to 90% coverage.\n+We need 3388 more function to get to 95% coverage.\n```\n",
+    "body": "Attachment [trac_8699-single-quotes.patch](tarball://root/attachments/some-uuid/ticket8699/trac_8699-single-quotes.patch) by mvngu created at 2010-04-17 10:53:17\n\nThe two patches on this ticket provide documentation for the doctest coverage script, in addition to allowing that script to handle docstrings that are delimited by triple single quotes. Incidentally, using those patches I found that throughout the whole Sage library, only one method uses triple single quotes. The method in question is `BubbleSortGraph()` of the module `sage.graphs.graph_generators.py`. This means that for the 90% doctest coverage goal of Sage 5.0, we have one less method to document because it's already documented. See the following command line transcript:\n\n\n```sh\n[mvngu@sage sage-4.4.alpha0-8699-quotes]$ ./sage -coverageall > coverage-before.log\n[mvngu@sage sage-4.4.alpha0-8699-quotes]$ cd local/bin/\n[mvngu@sage bin]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8699/trac_8699-documentation.patch && hg qpush \nadding trac_8699-documentation.patch to series file\napplying trac_8699-documentation.patch\nnow at: trac_8699-documentation.patch\n[mvngu@sage bin]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8699/trac_8699-single-quotes.patch && hg qpush \nadding trac_8699-single-quotes.patch to series file\napplying trac_8699-single-quotes.patch\nnow at: trac_8699-single-quotes.patch\n[mvngu@sage bin]$ cd ../..\n[mvngu@sage sage-4.4.alpha0-8699-quotes]$ ./sage -coverageall > coverage-after.log\n[mvngu@sage sage-4.4.alpha0-8699-quotes]$ diff -Naur coverage-before.log coverage-after.log \n--- coverage-before.log\t2010-04-17 03:37:50.663727239 -0700\n+++ coverage-after.log\t2010-04-17 03:38:45.181442502 -0700\n@@ -381,7 +381,7 @@\n geometry/polytope.py: 27% (6 of 22)\n geometry/polyhedra.py: 100% (186 of 186)\n graphs/graph_bundle.py: 100% (5 of 5)\n-graphs/graph_generators.py: 98% (73 of 74)\n+graphs/graph_generators.py: 100% (74 of 74)\n graphs/planarity.pyx: 100% (1 of 1)\n graphs/graph_latex.py: 100% (10 of 10)\n graphs/schnyder.py: 100% (8 of 8)\n@@ -1185,6 +1185,6 @@\n \n Overall weighted coverage score:  81.6%\n Total number of functions:  25377\n-We need  852 more function to get to 85% coverage.\n-We need 2121 more function to get to 90% coverage.\n-We need 3390 more function to get to 95% coverage.\n+We need  851 more function to get to 85% coverage.\n+We need 2120 more function to get to 90% coverage.\n+We need 3388 more function to get to 95% coverage.\n```\n",
     "created_at": "2010-04-17T10:53:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8699",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_079255.json:
 }
 ```
 
-Attachment
+Attachment [trac_8699-single-quotes.patch](tarball://root/attachments/some-uuid/ticket8699/trac_8699-single-quotes.patch) by mvngu created at 2010-04-17 10:53:17
 
 The two patches on this ticket provide documentation for the doctest coverage script, in addition to allowing that script to handle docstrings that are delimited by triple single quotes. Incidentally, using those patches I found that throughout the whole Sage library, only one method uses triple single quotes. The method in question is `BubbleSortGraph()` of the module `sage.graphs.graph_generators.py`. This means that for the 90% doctest coverage goal of Sage 5.0, we have one less method to document because it's already documented. See the following command line transcript:
 
@@ -305,7 +305,7 @@ Also, isn't there an issue if qd1 and qs1 are both != -1, but qd1 comes before q
 archive/issue_comments_079261.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8699.patch](tarball://root/attachments/some-uuid/ticket8699/trac_8699.patch) by mhansen created at 2012-04-11 05:02:10",
     "created_at": "2012-04-11T05:02:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8699",
     "type": "issue_comment",
@@ -314,7 +314,7 @@ archive/issue_comments_079261.json:
 }
 ```
 
-Attachment
+Attachment [trac_8699.patch](tarball://root/attachments/some-uuid/ticket8699/trac_8699.patch) by mhansen created at 2012-04-11 05:02:10
 
 
 

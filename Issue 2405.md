@@ -176,7 +176,7 @@ Preliminary ETuple Rewrite using a sparse C array (with-out doc-test fixes)
 archive/issue_comments_016241.json:
 ```json
 {
-    "body": "Attachment\n\nThe last patch update fixes the fact that my hash code was really really screwed up.  Now, I'm getting a consistent 10x speed up compared to the unpatched arithmetic.\n\nThis means that we are approximately 3-6 times slower than singular over QQ.  It almost appears as though we are beating them asymptotically -- we're easily with-in a factor of 3 for squaring a poly with 6000 monomials.  However, with this size, both of our times are in the 1-2 minute range so I'm not patient enough to see where the cross-over occurs.",
+    "body": "Attachment [etuple-rewrite.patch](tarball://root/attachments/some-uuid/ticket2405/etuple-rewrite.patch) by jbmohler created at 2008-03-16 00:22:23\n\nThe last patch update fixes the fact that my hash code was really really screwed up.  Now, I'm getting a consistent 10x speed up compared to the unpatched arithmetic.\n\nThis means that we are approximately 3-6 times slower than singular over QQ.  It almost appears as though we are beating them asymptotically -- we're easily with-in a factor of 3 for squaring a poly with 6000 monomials.  However, with this size, both of our times are in the 1-2 minute range so I'm not patient enough to see where the cross-over occurs.",
     "created_at": "2008-03-16T00:22:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2405",
     "type": "issue_comment",
@@ -185,7 +185,7 @@ archive/issue_comments_016241.json:
 }
 ```
 
-Attachment
+Attachment [etuple-rewrite.patch](tarball://root/attachments/some-uuid/ticket2405/etuple-rewrite.patch) by jbmohler created at 2008-03-16 00:22:23
 
 The last patch update fixes the fact that my hash code was really really screwed up.  Now, I'm getting a consistent 10x speed up compared to the unpatched arithmetic.
 
@@ -447,7 +447,7 @@ We've still got a long way to go to compete with singular.  Moving the MPolynomi
 archive/issue_comments_016245.json:
 ```json
 {
-    "body": "Attachment\n\nproduction ready patch",
+    "body": "Attachment [etuple-rewrite.2.patch](tarball://root/attachments/some-uuid/ticket2405/etuple-rewrite.2.patch) by jbmohler created at 2008-03-18 14:12:56\n\nproduction ready patch",
     "created_at": "2008-03-18T14:12:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2405",
     "type": "issue_comment",
@@ -456,7 +456,7 @@ archive/issue_comments_016245.json:
 }
 ```
 
-Attachment
+Attachment [etuple-rewrite.2.patch](tarball://root/attachments/some-uuid/ticket2405/etuple-rewrite.2.patch) by jbmohler created at 2008-03-18 14:12:56
 
 production ready patch
 

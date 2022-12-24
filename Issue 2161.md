@@ -51,7 +51,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2161
 archive/issue_comments_014191.json:
 ```json
 {
-    "body": "Attachment\n\nscalar mult optimizations",
+    "body": "Attachment [mpoly-scalar.patch](tarball://root/attachments/some-uuid/ticket2161/mpoly-scalar.patch) by jbmohler created at 2008-02-14 19:19:35\n\nscalar mult optimizations",
     "created_at": "2008-02-14T19:19:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2161",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_014191.json:
 }
 ```
 
-Attachment
+Attachment [mpoly-scalar.patch](tarball://root/attachments/some-uuid/ticket2161/mpoly-scalar.patch) by jbmohler created at 2008-02-14 19:19:35
 
 scalar mult optimizations
 

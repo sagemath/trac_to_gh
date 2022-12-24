@@ -105,7 +105,7 @@ Changing status from new to needs_review.
 archive/issue_comments_062372.json:
 ```json
 {
-    "body": "Attachment\n\nHi Florent,\n\nHere is the patch. Sorry for the CC, next time I'll follow your advice.\n\nRegards,\n Yann",
+    "body": "Attachment [trac_7412-lehmer.patch](tarball://root/attachments/some-uuid/ticket7412/trac_7412-lehmer.patch) by ylchapuy created at 2009-11-08 17:47:26\n\nHi Florent,\n\nHere is the patch. Sorry for the CC, next time I'll follow your advice.\n\nRegards,\n Yann",
     "created_at": "2009-11-08T17:47:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7412",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_062372.json:
 }
 ```
 
-Attachment
+Attachment [trac_7412-lehmer.patch](tarball://root/attachments/some-uuid/ticket7412/trac_7412-lehmer.patch) by ylchapuy created at 2009-11-08 17:47:26
 
 Hi Florent,
 

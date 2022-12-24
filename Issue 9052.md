@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9052
 archive/issue_comments_083832.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9052.patch](tarball://root/attachments/some-uuid/ticket9052/trac_9052.patch) by voloch created at 2010-05-26 01:54:21",
     "created_at": "2010-05-26T01:54:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9052",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_083832.json:
 }
 ```
 
-Attachment
+Attachment [trac_9052.patch](tarball://root/attachments/some-uuid/ticket9052/trac_9052.patch) by voloch created at 2010-05-26 01:54:21
 
 
 
@@ -87,7 +87,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_083835.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.",
+    "body": "Attachment [trac_9052_part2.patch](tarball://root/attachments/some-uuid/ticket9052/trac_9052_part2.patch) by was created at 2010-05-26 02:14:17\n\nLooks good to me.",
     "created_at": "2010-05-26T02:14:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9052",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_083835.json:
 }
 ```
 
-Attachment
+Attachment [trac_9052_part2.patch](tarball://root/attachments/some-uuid/ticket9052/trac_9052_part2.patch) by was created at 2010-05-26 02:14:17
 
 Looks good to me.
 
@@ -147,7 +147,7 @@ Apply after both previous patches
 archive/issue_comments_083838.json:
 ```json
 {
-    "body": "Attachment\n\nThe first two patches apply fine and tests pass.  I added a review patch which beefs up the docstring a little, adds some more examples (including one over a non-prime field), and also added one-liners for characteristics 5 and 7.\n\nStrictly this should be looked at again (William?), but I don't seem to have the option of marking it as \"needs review\" again.  In case you are wondering about the char. 5,7 cases, as well as doing the math I also systematically checked that this gives the same as the general method for *all* curves over GF(5) and GF(7)!",
+    "body": "Attachment [trac_9053-reviewer.patch](tarball://root/attachments/some-uuid/ticket9052/trac_9053-reviewer.patch) by cremona created at 2010-05-27 12:37:59\n\nThe first two patches apply fine and tests pass.  I added a review patch which beefs up the docstring a little, adds some more examples (including one over a non-prime field), and also added one-liners for characteristics 5 and 7.\n\nStrictly this should be looked at again (William?), but I don't seem to have the option of marking it as \"needs review\" again.  In case you are wondering about the char. 5,7 cases, as well as doing the math I also systematically checked that this gives the same as the general method for *all* curves over GF(5) and GF(7)!",
     "created_at": "2010-05-27T12:37:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9052",
     "type": "issue_comment",
@@ -156,7 +156,7 @@ archive/issue_comments_083838.json:
 }
 ```
 
-Attachment
+Attachment [trac_9053-reviewer.patch](tarball://root/attachments/some-uuid/ticket9052/trac_9053-reviewer.patch) by cremona created at 2010-05-27 12:37:59
 
 The first two patches apply fine and tests pass.  I added a review patch which beefs up the docstring a little, adds some more examples (including one over a non-prime field), and also added one-liners for characteristics 5 and 7.
 

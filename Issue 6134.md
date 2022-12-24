@@ -29,7 +29,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6134
 archive/issue_comments_048994.json:
 ```json
 {
-    "body": "Attachment\n\nThis applied to my 32-bit rc0 build and fixed the issue for me.  Positive review.",
+    "body": "Attachment [trac_6134.patch](tarball://root/attachments/some-uuid/ticket6134/trac_6134.patch) by jason created at 2009-05-26 20:11:05\n\nThis applied to my 32-bit rc0 build and fixed the issue for me.  Positive review.",
     "created_at": "2009-05-26T20:11:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6134",
     "type": "issue_comment",
@@ -38,7 +38,7 @@ archive/issue_comments_048994.json:
 }
 ```
 
-Attachment
+Attachment [trac_6134.patch](tarball://root/attachments/some-uuid/ticket6134/trac_6134.patch) by jason created at 2009-05-26 20:11:05
 
 This applied to my 32-bit rc0 build and fixed the issue for me.  Positive review.
 

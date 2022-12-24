@@ -60,7 +60,7 @@ archive/issue_comments_067945.json:
 archive/issue_comments_067946.json:
 ```json
 {
-    "body": "Attachment\n\nHave I found them all?",
+    "body": "Attachment [trac_7844-notebook_address.patch](tarball://root/attachments/some-uuid/ticket7844/trac_7844-notebook_address.patch) by mpatel created at 2010-01-05 02:29:11\n\nHave I found them all?",
     "created_at": "2010-01-05T02:29:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7844",
     "type": "issue_comment",
@@ -69,7 +69,7 @@ archive/issue_comments_067946.json:
 }
 ```
 
-Attachment
+Attachment [trac_7844-notebook_address.patch](tarball://root/attachments/some-uuid/ticket7844/trac_7844-notebook_address.patch) by mpatel created at 2010-01-05 02:29:11
 
 Have I found them all?
 

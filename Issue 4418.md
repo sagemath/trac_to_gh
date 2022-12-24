@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4418
 archive/issue_comments_032491.json:
 ```json
 {
-    "body": "Attachment\n\nfixes typos in files under crypto/mq",
+    "body": "Attachment [4418-crypto.patch](tarball://root/attachments/some-uuid/ticket4418/4418-crypto.patch) by mvngu created at 2008-11-01 09:47:34\n\nfixes typos in files under crypto/mq",
     "created_at": "2008-11-01T09:47:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4418",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_032491.json:
 }
 ```
 
-Attachment
+Attachment [4418-crypto.patch](tarball://root/attachments/some-uuid/ticket4418/4418-crypto.patch) by mvngu created at 2008-11-01 09:47:34
 
 fixes typos in files under crypto/mq
 

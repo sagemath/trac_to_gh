@@ -133,7 +133,7 @@ William
 archive/issue_comments_001996.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-406.patch](tarball://root/attachments/some-uuid/ticket406/sage-406.patch) by was created at 2008-05-10 22:13:07",
     "created_at": "2008-05-10T22:13:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/406",
     "type": "issue_comment",
@@ -142,7 +142,7 @@ archive/issue_comments_001996.json:
 }
 ```
 
-Attachment
+Attachment [sage-406.patch](tarball://root/attachments/some-uuid/ticket406/sage-406.patch) by was created at 2008-05-10 22:13:07
 
 
 

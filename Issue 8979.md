@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8979
 archive/issue_comments_082842.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8979.diff](tarball://root/attachments/some-uuid/ticket8979/trac_8979.diff) by Moredread created at 2010-05-16 16:58:39",
     "created_at": "2010-05-16T16:58:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8979",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_082842.json:
 }
 ```
 
-Attachment
+Attachment [trac_8979.diff](tarball://root/attachments/some-uuid/ticket8979/trac_8979.diff) by Moredread created at 2010-05-16 16:58:39
 
 
 
@@ -163,7 +163,7 @@ Changing priority from major to trivial.
 archive/issue_comments_082849.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8979_2.patch](tarball://root/attachments/some-uuid/ticket8979/trac_8979_2.patch) by Moredread created at 2010-05-18 18:59:49",
     "created_at": "2010-05-18T18:59:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8979",
     "type": "issue_comment",
@@ -172,7 +172,7 @@ archive/issue_comments_082849.json:
 }
 ```
 
-Attachment
+Attachment [trac_8979_2.patch](tarball://root/attachments/some-uuid/ticket8979/trac_8979_2.patch) by Moredread created at 2010-05-18 18:59:49
 
 
 

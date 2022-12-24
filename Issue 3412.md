@@ -62,7 +62,7 @@ Michael
 archive/issue_comments_023932.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3412.patch](tarball://root/attachments/some-uuid/ticket3412/sage-3412.patch) by was created at 2008-06-16 04:15:57",
     "created_at": "2008-06-16T04:15:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3412",
     "type": "issue_comment",
@@ -71,7 +71,7 @@ archive/issue_comments_023932.json:
 }
 ```
 
-Attachment
+Attachment [sage-3412.patch](tarball://root/attachments/some-uuid/ticket3412/sage-3412.patch) by was created at 2008-06-16 04:15:57
 
 
 

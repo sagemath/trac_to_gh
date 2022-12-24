@@ -529,7 +529,7 @@ apply after the ecl and maxima spkg's
 archive/issue_comments_055038.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:6 AlexGhitza]:\n\n> {{{\n sage -t  \"expression.pyx\"                                   \n**********************************************************************\n File \"/opt/sage-4.1.1/devel/sage-main/sage/symbolic/expression.pyx\", line 5541:\n     sage: solve(Q*sqrt(Q^2 + 2) - 1,Q)\n Expected:\n     [Q == 1/sqrt(-sqrt(2) + 1), Q == 1/sqrt(sqrt(2) + 1)]\n Got:\n     [Q == 1/sqrt(sqrt(2) + 1)]\n **********************************************************************\n }}}\n> \n> I think this is due to the fact that Maxima now only returns the real solution, and ignores the complex solution.  I'm not sure what we should do about this.\n\nI think you are right. Maxima treats variables to be real by default. To see that in maxima\n\n```\nsage: !maxima\nMaxima 5.16.3 http://maxima.sourceforge.net\nUsing Lisp ECL 9.4.1\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\n(%i1) conjugate(Q);\n(%o1)                                  Q\n```\n\n\nSo, if maxima is throwing away complex solution then its consistent with its own assumptions. \nUnless someone else has different opinion then we should simply accept what maxima is returning\nnow.",
+    "body": "Attachment [maxima_doctests.patch](tarball://root/attachments/some-uuid/ticket6699/maxima_doctests.patch) by gmhossain created at 2009-08-21 13:30:25\n\nReplying to [comment:6 AlexGhitza]:\n\n> {{{\n sage -t  \"expression.pyx\"                                   \n**********************************************************************\n File \"/opt/sage-4.1.1/devel/sage-main/sage/symbolic/expression.pyx\", line 5541:\n     sage: solve(Q*sqrt(Q^2 + 2) - 1,Q)\n Expected:\n     [Q == 1/sqrt(-sqrt(2) + 1), Q == 1/sqrt(sqrt(2) + 1)]\n Got:\n     [Q == 1/sqrt(sqrt(2) + 1)]\n **********************************************************************\n }}}\n> \n> I think this is due to the fact that Maxima now only returns the real solution, and ignores the complex solution.  I'm not sure what we should do about this.\n\nI think you are right. Maxima treats variables to be real by default. To see that in maxima\n\n```\nsage: !maxima\nMaxima 5.16.3 http://maxima.sourceforge.net\nUsing Lisp ECL 9.4.1\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\n(%i1) conjugate(Q);\n(%o1)                                  Q\n```\n\n\nSo, if maxima is throwing away complex solution then its consistent with its own assumptions. \nUnless someone else has different opinion then we should simply accept what maxima is returning\nnow.",
     "created_at": "2009-08-21T13:30:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6699",
     "type": "issue_comment",
@@ -538,7 +538,7 @@ archive/issue_comments_055038.json:
 }
 ```
 
-Attachment
+Attachment [maxima_doctests.patch](tarball://root/attachments/some-uuid/ticket6699/maxima_doctests.patch) by gmhossain created at 2009-08-21 13:30:25
 
 Replying to [comment:6 AlexGhitza]:
 

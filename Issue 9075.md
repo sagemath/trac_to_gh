@@ -188,7 +188,7 @@ Changing status from closed to needs_work.
 archive/issue_comments_084233.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9075_unpickle_all_testsuite-nt.patch](tarball://root/attachments/some-uuid/ticket9075/trac_9075_unpickle_all_testsuite-nt.patch) by nthiery created at 2010-10-13 20:08:32",
     "created_at": "2010-10-13T20:08:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9075",
     "type": "issue_comment",
@@ -197,7 +197,7 @@ archive/issue_comments_084233.json:
 }
 ```
 
-Attachment
+Attachment [trac_9075_unpickle_all_testsuite-nt.patch](tarball://root/attachments/some-uuid/ticket9075/trac_9075_unpickle_all_testsuite-nt.patch) by nthiery created at 2010-10-13 20:08:32
 
 
 

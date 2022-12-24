@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9967
 archive/issue_comments_099820.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9967-concurrent-sagelib.patch](tarball://root/attachments/some-uuid/ticket9967/9967-concurrent-sagelib.patch) by robertwb created at 2010-09-22 05:21:10",
     "created_at": "2010-09-22T05:21:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_099820.json:
 }
 ```
 
-Attachment
+Attachment [9967-concurrent-sagelib.patch](tarball://root/attachments/some-uuid/ticket9967/9967-concurrent-sagelib.patch) by robertwb created at 2010-09-22 05:21:10
 
 
 
@@ -69,7 +69,7 @@ Changing status from new to needs_review.
 archive/issue_comments_099822.json:
 ```json
 {
-    "body": "Attachment\n\nI'm looking at this because of the discussion on sage-devel (https://groups.google.com/group/sage-devel/browse_thread/thread/9dfadbdaf74a2eec)...and I don't understand this at all. How does it work? In what sense would you have concurrent branches? How does this help with automated testing? I'd like to help review this, but it's not at all clear what is going on here.",
+    "body": "Attachment [9967-concurrent-sagescripts.patch](tarball://root/attachments/some-uuid/ticket9967/9967-concurrent-sagescripts.patch) by ddrake created at 2010-10-21 06:33:18\n\nI'm looking at this because of the discussion on sage-devel (https://groups.google.com/group/sage-devel/browse_thread/thread/9dfadbdaf74a2eec)...and I don't understand this at all. How does it work? In what sense would you have concurrent branches? How does this help with automated testing? I'd like to help review this, but it's not at all clear what is going on here.",
     "created_at": "2010-10-21T06:33:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_099822.json:
 }
 ```
 
-Attachment
+Attachment [9967-concurrent-sagescripts.patch](tarball://root/attachments/some-uuid/ticket9967/9967-concurrent-sagescripts.patch) by ddrake created at 2010-10-21 06:33:18
 
 I'm looking at this because of the discussion on sage-devel (https://groups.google.com/group/sage-devel/browse_thread/thread/9dfadbdaf74a2eec)...and I don't understand this at all. How does it work? In what sense would you have concurrent branches? How does this help with automated testing? I'd like to help review this, but it's not at all clear what is going on here.
 
@@ -297,7 +297,7 @@ Thanks for taking a look. I didn't do much testing with the -main branch, I'll l
 archive/issue_comments_099830.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9967-concurrent-sagelib.2.patch](tarball://root/attachments/some-uuid/ticket9967/9967-concurrent-sagelib.2.patch) by robertwb created at 2010-10-22 04:56:36",
     "created_at": "2010-10-22T04:56:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
@@ -306,7 +306,7 @@ archive/issue_comments_099830.json:
 }
 ```
 
-Attachment
+Attachment [9967-concurrent-sagelib.2.patch](tarball://root/attachments/some-uuid/ticket9967/9967-concurrent-sagelib.2.patch) by robertwb created at 2010-10-22 04:56:36
 
 
 
@@ -525,7 +525,7 @@ Those doctests just need to be changed to '.../devel/sage-.../doc/output/html/en
 archive/issue_comments_099840.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9967-doc-doctests.patch](tarball://root/attachments/some-uuid/ticket9967/9967-doc-doctests.patch) by robertwb created at 2010-10-24 03:25:00",
     "created_at": "2010-10-24T03:25:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
@@ -534,7 +534,7 @@ archive/issue_comments_099840.json:
 }
 ```
 
-Attachment
+Attachment [9967-doc-doctests.patch](tarball://root/attachments/some-uuid/ticket9967/9967-doc-doctests.patch) by robertwb created at 2010-10-24 03:25:00
 
 
 
@@ -763,7 +763,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_099848.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9967-sage-maketest.patch](tarball://root/attachments/some-uuid/ticket9967/9967-sage-maketest.patch) by robertwb created at 2010-10-26 03:52:42",
     "created_at": "2010-10-26T03:52:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
@@ -772,7 +772,7 @@ archive/issue_comments_099848.json:
 }
 ```
 
-Attachment
+Attachment [9967-sage-maketest.patch](tarball://root/attachments/some-uuid/ticket9967/9967-sage-maketest.patch) by robertwb created at 2010-10-26 03:52:42
 
 
 
@@ -1031,7 +1031,7 @@ I'll try to get a patch that incorporates my changes and upload that soon.
 archive/issue_comments_099857.json:
 ```json
 {
-    "body": "Attachment\n\napply to scripts repo",
+    "body": "Attachment [9967-fix-sage-doctest.patch](tarball://root/attachments/some-uuid/ticket9967/9967-fix-sage-doctest.patch) by ddrake created at 2010-11-02 08:18:35\n\napply to scripts repo",
     "created_at": "2010-11-02T08:18:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
@@ -1040,7 +1040,7 @@ archive/issue_comments_099857.json:
 }
 ```
 
-Attachment
+Attachment [9967-fix-sage-doctest.patch](tarball://root/attachments/some-uuid/ticket9967/9967-fix-sage-doctest.patch) by ddrake created at 2010-11-02 08:18:35
 
 apply to scripts repo
 
@@ -1100,7 +1100,7 @@ and the rest go into the main library repo.
 archive/issue_comments_099860.json:
 ```json
 {
-    "body": "Attachment\n\nCombined sagelib patch",
+    "body": "Attachment [9967_sagelib_combined.patch](tarball://root/attachments/some-uuid/ticket9967/9967_sagelib_combined.patch) by jdemeyer created at 2010-11-02 15:19:31\n\nCombined sagelib patch",
     "created_at": "2010-11-02T15:19:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
@@ -1109,7 +1109,7 @@ archive/issue_comments_099860.json:
 }
 ```
 
-Attachment
+Attachment [9967_sagelib_combined.patch](tarball://root/attachments/some-uuid/ticket9967/9967_sagelib_combined.patch) by jdemeyer created at 2010-11-02 15:19:31
 
 Combined sagelib patch
 
@@ -1120,7 +1120,7 @@ Combined sagelib patch
 archive/issue_comments_099861.json:
 ```json
 {
-    "body": "Attachment\n\nCombined scripts patch",
+    "body": "Attachment [9967_scripts_combined.patch](tarball://root/attachments/some-uuid/ticket9967/9967_scripts_combined.patch) by jdemeyer created at 2010-11-02 15:19:47\n\nCombined scripts patch",
     "created_at": "2010-11-02T15:19:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
@@ -1129,7 +1129,7 @@ archive/issue_comments_099861.json:
 }
 ```
 
-Attachment
+Attachment [9967_scripts_combined.patch](tarball://root/attachments/some-uuid/ticket9967/9967_scripts_combined.patch) by jdemeyer created at 2010-11-02 15:19:47
 
 Combined scripts patch
 
@@ -1194,7 +1194,7 @@ apply to Sage library
 archive/issue_comments_099865.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch I just uploaded still has some debugging statements but represents some progress.\n\nThere is still something in the doctesting framework that is using the symlink to the default branch and not using SAGE_BRANCH: if I doctest in the -main branch while -foo is the default, and delete the -foo branch, I get:\n\n\n```\nsage -t  devel/sage-main/sage/combinat/generator.py\nTraceback (most recent call last):\n  File \"/home/drake/.sage//tmp/generator.py\", line 2, in <module>\n    from sage.all_cmdline import *;\n  File \"/home/drake/s/sage-4.6.alpha3/devel/sage-main/build/sage/all_cmdline.py\", line 14, in <module>\n    from sage.all import *\n  File \"/home/drake/s/sage-4.6.alpha3/devel/sage-main/build/sage/all.py\", line 56, in <module>\n    from sage.rings.memory import pmem_malloc\nImportError: libcsage.so: cannot open shared object file: No such file or directory\n\n         [0.3 s]\n```\n\n\nThe ImportError occurs because whatever Python process is running that last line hasn't inherited our custom PYTHONPATH. (I think.)",
+    "body": "Attachment [9967-no-site-packages-symlink.patch](tarball://root/attachments/some-uuid/ticket9967/9967-no-site-packages-symlink.patch) by ddrake created at 2010-11-04 03:05:00\n\nThe patch I just uploaded still has some debugging statements but represents some progress.\n\nThere is still something in the doctesting framework that is using the symlink to the default branch and not using SAGE_BRANCH: if I doctest in the -main branch while -foo is the default, and delete the -foo branch, I get:\n\n\n```\nsage -t  devel/sage-main/sage/combinat/generator.py\nTraceback (most recent call last):\n  File \"/home/drake/.sage//tmp/generator.py\", line 2, in <module>\n    from sage.all_cmdline import *;\n  File \"/home/drake/s/sage-4.6.alpha3/devel/sage-main/build/sage/all_cmdline.py\", line 14, in <module>\n    from sage.all import *\n  File \"/home/drake/s/sage-4.6.alpha3/devel/sage-main/build/sage/all.py\", line 56, in <module>\n    from sage.rings.memory import pmem_malloc\nImportError: libcsage.so: cannot open shared object file: No such file or directory\n\n         [0.3 s]\n```\n\n\nThe ImportError occurs because whatever Python process is running that last line hasn't inherited our custom PYTHONPATH. (I think.)",
     "created_at": "2010-11-04T03:05:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
@@ -1203,7 +1203,7 @@ archive/issue_comments_099865.json:
 }
 ```
 
-Attachment
+Attachment [9967-no-site-packages-symlink.patch](tarball://root/attachments/some-uuid/ticket9967/9967-no-site-packages-symlink.patch) by ddrake created at 2010-11-04 03:05:00
 
 The patch I just uploaded still has some debugging statements but represents some progress.
 

@@ -114,7 +114,7 @@ Fixed -- see attached patch.
 archive/issue_comments_003131.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6197.patch](tarball://root/attachments/some-uuid/ticket608/6197.patch) by was created at 2007-09-07 01:37:59",
     "created_at": "2007-09-07T01:37:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/608",
     "type": "issue_comment",
@@ -123,7 +123,7 @@ archive/issue_comments_003131.json:
 }
 ```
 
-Attachment
+Attachment [6197.patch](tarball://root/attachments/some-uuid/ticket608/6197.patch) by was created at 2007-09-07 01:37:59
 
 
 

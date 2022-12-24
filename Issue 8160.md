@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8160
 archive/issue_comments_071773.json:
 ```json
 {
-    "body": "Attachment\n\napply to sagenb repo",
+    "body": "Attachment [trac_8160-sphinxify.patch](tarball://root/attachments/some-uuid/ticket8160/trac_8160-sphinxify.patch) by jhpalmieri created at 2010-02-03 02:30:58\n\napply to sagenb repo",
     "created_at": "2010-02-03T02:30:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8160",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_071773.json:
 }
 ```
 
-Attachment
+Attachment [trac_8160-sphinxify.patch](tarball://root/attachments/some-uuid/ticket8160/trac_8160-sphinxify.patch) by jhpalmieri created at 2010-02-03 02:30:58
 
 apply to sagenb repo
 
@@ -71,7 +71,7 @@ Changing status from new to needs_review.
 archive/issue_comments_071775.json:
 ```json
 {
-    "body": "Attachment\n\nRebased vs. #8102.  Apply only this patch.  sagenb repo.",
+    "body": "Attachment [trac_8160-sphinxify_text.patch](tarball://root/attachments/some-uuid/ticket8160/trac_8160-sphinxify_text.patch) by mpatel created at 2010-02-03 04:47:41\n\nRebased vs. #8102.  Apply only this patch.  sagenb repo.",
     "created_at": "2010-02-03T04:47:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8160",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_071775.json:
 }
 ```
 
-Attachment
+Attachment [trac_8160-sphinxify_text.patch](tarball://root/attachments/some-uuid/ticket8160/trac_8160-sphinxify_text.patch) by mpatel created at 2010-02-03 04:47:41
 
 Rebased vs. #8102.  Apply only this patch.  sagenb repo.
 

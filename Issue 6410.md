@@ -73,7 +73,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6410
 archive/issue_comments_051472.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [diagonal_matrix.patch](tarball://root/attachments/some-uuid/ticket6410/diagonal_matrix.patch) by was created at 2009-06-25 16:13:32",
     "created_at": "2009-06-25T16:13:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6410",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_051472.json:
 }
 ```
 
-Attachment
+Attachment [diagonal_matrix.patch](tarball://root/attachments/some-uuid/ticket6410/diagonal_matrix.patch) by was created at 2009-06-25 16:13:32
 
 
 
@@ -197,7 +197,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_051478.json:
 ```json
 {
-    "body": "Attachment\n\nIt appears to me the slowdown results when a dense matrix has many entries that need to be coerced.  So for a diagonal matrix built as a dense matrix, this means all of the off-diagonal entries need to be coerced.  But the behavior is caused more generally by `matrix()`.  Consider the following session:\n\n\n```\nsage: K=GF(3)\nsage: KP.<x>=PolynomialRing(K)\nsage: G={}; H={}\nsage: for i in range(200):\n....:     for j in range(200):\n....:         H[(i,j)]=KP(1)\n....:         G[(i,j)]=1\n....:\nsage: timeit('matrix(KP,200,H,sparse=False)')\n5 loops, best of 3: 136 ms per loop\nsage: timeit('matrix(KP,200,G,sparse=False)')\n5 loops, best of 3: 1.09 s per loop\n```\n\n\nThis is with the patch applied.  The only difference is the dictionary H has the elements coerced, while the dictionary G does not.  The timings are nearly identical to pre-patch behavior.\n\nIt seems to me that in the patch, the line `A = self(0)` still causes `n^2` coercions of the zero element in `__call__` (of which it is a part)?  I could very well be mistaken, but I can't see a method one can use to semi-automatically coerce 0 once (and only once) and then fill a dense matrix with that single coerced zero.  Should the behavior of `zero_matrix()` be changed, so it does not just use `__call__`?\n\nIna any event, this review is not for nought.  The doctest has `sage;` (w/ a semi-colon) and not a `sage:` (w/ a colon) so it seems to not even be coming through in the documentation, and likely the test is not run?",
+    "body": "Attachment [trac_6410.patch](tarball://root/attachments/some-uuid/ticket6410/trac_6410.patch) by rbeezer created at 2009-10-27 04:12:30\n\nIt appears to me the slowdown results when a dense matrix has many entries that need to be coerced.  So for a diagonal matrix built as a dense matrix, this means all of the off-diagonal entries need to be coerced.  But the behavior is caused more generally by `matrix()`.  Consider the following session:\n\n\n```\nsage: K=GF(3)\nsage: KP.<x>=PolynomialRing(K)\nsage: G={}; H={}\nsage: for i in range(200):\n....:     for j in range(200):\n....:         H[(i,j)]=KP(1)\n....:         G[(i,j)]=1\n....:\nsage: timeit('matrix(KP,200,H,sparse=False)')\n5 loops, best of 3: 136 ms per loop\nsage: timeit('matrix(KP,200,G,sparse=False)')\n5 loops, best of 3: 1.09 s per loop\n```\n\n\nThis is with the patch applied.  The only difference is the dictionary H has the elements coerced, while the dictionary G does not.  The timings are nearly identical to pre-patch behavior.\n\nIt seems to me that in the patch, the line `A = self(0)` still causes `n^2` coercions of the zero element in `__call__` (of which it is a part)?  I could very well be mistaken, but I can't see a method one can use to semi-automatically coerce 0 once (and only once) and then fill a dense matrix with that single coerced zero.  Should the behavior of `zero_matrix()` be changed, so it does not just use `__call__`?\n\nIna any event, this review is not for nought.  The doctest has `sage;` (w/ a semi-colon) and not a `sage:` (w/ a colon) so it seems to not even be coming through in the documentation, and likely the test is not run?",
     "created_at": "2009-10-27T04:12:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6410",
     "type": "issue_comment",
@@ -206,7 +206,7 @@ archive/issue_comments_051478.json:
 }
 ```
 
-Attachment
+Attachment [trac_6410.patch](tarball://root/attachments/some-uuid/ticket6410/trac_6410.patch) by rbeezer created at 2009-10-27 04:12:30
 
 It appears to me the slowdown results when a dense matrix has many entries that need to be coerced.  So for a diagonal matrix built as a dense matrix, this means all of the off-diagonal entries need to be coerced.  But the behavior is caused more generally by `matrix()`.  Consider the following session:
 

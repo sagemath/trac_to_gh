@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9854
 archive/issue_comments_097249.json:
 ```json
 {
-    "body": "Attachment\n\nchanges",
+    "body": "Attachment [convert.py.diff](tarball://root/attachments/some-uuid/ticket9854/convert.py.diff) by maldun created at 2010-09-04 00:17:16\n\nchanges",
     "created_at": "2010-09-04T00:17:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9853",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_097249.json:
 }
 ```
 
-Attachment
+Attachment [convert.py.diff](tarball://root/attachments/some-uuid/ticket9854/convert.py.diff) by maldun created at 2010-09-04 00:17:16
 
 changes
 
@@ -69,7 +69,7 @@ Changing status from new to needs_review.
 archive/issue_comments_097251.json:
 ```json
 {
-    "body": "Attachment\n\nDownward compatibel patch",
+    "body": "Attachment [convert.py.2.diff](tarball://root/attachments/some-uuid/ticket9854/convert.py.2.diff) by maldun created at 2010-09-04 01:29:06\n\nDownward compatibel patch",
     "created_at": "2010-09-04T01:29:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9853",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_097251.json:
 }
 ```
 
-Attachment
+Attachment [convert.py.2.diff](tarball://root/attachments/some-uuid/ticket9854/convert.py.2.diff) by maldun created at 2010-09-04 01:29:06
 
 Downward compatibel patch
 
@@ -107,7 +107,7 @@ modified version for networkx to make numpy-1.4.1 compatible
 archive/issue_comments_097253.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [networkx-1.0.1.p0.spkg](tarball://root/attachments/some-uuid/ticket9854/networkx-1.0.1.p0.spkg) by maldun created at 2010-09-04 01:36:32",
     "created_at": "2010-09-04T01:36:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9853",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_097253.json:
 }
 ```
 
-Attachment
+Attachment [networkx-1.0.1.p0.spkg](tarball://root/attachments/some-uuid/ticket9854/networkx-1.0.1.p0.spkg) by maldun created at 2010-09-04 01:36:32
 
 
 

@@ -119,7 +119,7 @@ When n is composite in the sense that it has more than one prime factor, I agree
 archive/issue_comments_016934.json:
 ```json
 {
-    "body": "Attachment\n\nYes, it should be possible to do something smart here.  For now, I'm just making factor() and is_irreducible() throw NotImplementedError so we don't get wrong answers.\n\nSee the attached patch.",
+    "body": "Attachment [2498_factor_pari.patch](tarball://root/attachments/some-uuid/ticket2498/2498_factor_pari.patch) by AlexGhitza created at 2008-03-22 19:54:47\n\nYes, it should be possible to do something smart here.  For now, I'm just making factor() and is_irreducible() throw NotImplementedError so we don't get wrong answers.\n\nSee the attached patch.",
     "created_at": "2008-03-22T19:54:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2498",
     "type": "issue_comment",
@@ -128,7 +128,7 @@ archive/issue_comments_016934.json:
 }
 ```
 
-Attachment
+Attachment [2498_factor_pari.patch](tarball://root/attachments/some-uuid/ticket2498/2498_factor_pari.patch) by AlexGhitza created at 2008-03-22 19:54:47
 
 Yes, it should be possible to do something smart here.  For now, I'm just making factor() and is_irreducible() throw NotImplementedError so we don't get wrong answers.
 

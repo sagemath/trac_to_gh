@@ -95,7 +95,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_084163.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9069.patch](tarball://root/attachments/some-uuid/ticket9069/trac_9069.patch) by cjh created at 2010-06-07 10:11:50",
     "created_at": "2010-06-07T10:11:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9069",
     "type": "issue_comment",
@@ -104,7 +104,7 @@ archive/issue_comments_084163.json:
 }
 ```
 
-Attachment
+Attachment [trac_9069.patch](tarball://root/attachments/some-uuid/ticket9069/trac_9069.patch) by cjh created at 2010-06-07 10:11:50
 
 
 

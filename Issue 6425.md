@@ -149,7 +149,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_051596.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good -- applies to 4.3 and tests (as above) pass.",
+    "body": "Attachment [trac_6425.patch](tarball://root/attachments/some-uuid/ticket6425/trac_6425.patch) by cremona created at 2010-01-03 15:03:26\n\nLooks good -- applies to 4.3 and tests (as above) pass.",
     "created_at": "2010-01-03T15:03:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6425",
     "type": "issue_comment",
@@ -158,7 +158,7 @@ archive/issue_comments_051596.json:
 }
 ```
 
-Attachment
+Attachment [trac_6425.patch](tarball://root/attachments/some-uuid/ticket6425/trac_6425.patch) by cremona created at 2010-01-03 15:03:26
 
 Looks good -- applies to 4.3 and tests (as above) pass.
 

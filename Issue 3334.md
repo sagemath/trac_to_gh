@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3334
 archive/issue_comments_023114.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [m4ri_mul_sigsegv.patch](tarball://root/attachments/some-uuid/ticket3334/m4ri_mul_sigsegv.patch) by malb created at 2008-05-29 22:44:52",
     "created_at": "2008-05-29T22:44:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3334",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_023114.json:
 }
 ```
 
-Attachment
+Attachment [m4ri_mul_sigsegv.patch](tarball://root/attachments/some-uuid/ticket3334/m4ri_mul_sigsegv.patch) by malb created at 2008-05-29 22:44:52
 
 
 

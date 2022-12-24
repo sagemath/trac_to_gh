@@ -260,7 +260,7 @@ this is rebased against 3.4.alpha0 *and* it implements sqrt for long and long lo
 archive/issue_comments_039219.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5130-final.patch](tarball://root/attachments/some-uuid/ticket5130/trac_5130-final.patch) by was created at 2009-03-03 23:10:26",
     "created_at": "2009-03-03T23:10:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5130",
     "type": "issue_comment",
@@ -269,7 +269,7 @@ archive/issue_comments_039219.json:
 }
 ```
 
-Attachment
+Attachment [trac_5130-final.patch](tarball://root/attachments/some-uuid/ticket5130/trac_5130-final.patch) by was created at 2009-03-03 23:10:26
 
 
 
@@ -341,7 +341,7 @@ this is rebased against 3.4 and should now be deterministic
 archive/issue_comments_039222.json:
 ```json
 {
-    "body": "Attachment\n\nrebased against 3.4.1.rc2",
+    "body": "Attachment [trac_5130-final.2.patch](tarball://root/attachments/some-uuid/ticket5130/trac_5130-final.2.patch) by was created at 2009-04-14 22:43:03\n\nrebased against 3.4.1.rc2",
     "created_at": "2009-04-14T22:43:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5130",
     "type": "issue_comment",
@@ -350,7 +350,7 @@ archive/issue_comments_039222.json:
 }
 ```
 
-Attachment
+Attachment [trac_5130-final.2.patch](tarball://root/attachments/some-uuid/ticket5130/trac_5130-final.2.patch) by was created at 2009-04-14 22:43:03
 
 rebased against 3.4.1.rc2
 
@@ -361,7 +361,7 @@ rebased against 3.4.1.rc2
 archive/issue_comments_039223.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5130-rebased.patch](tarball://root/attachments/some-uuid/ticket5130/trac_5130-rebased.patch) by was created at 2009-04-14 22:43:18",
     "created_at": "2009-04-14T22:43:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5130",
     "type": "issue_comment",
@@ -370,7 +370,7 @@ archive/issue_comments_039223.json:
 }
 ```
 
-Attachment
+Attachment [trac_5130-rebased.patch](tarball://root/attachments/some-uuid/ticket5130/trac_5130-rebased.patch) by was created at 2009-04-14 22:43:18
 
 
 
@@ -430,7 +430,7 @@ rebased against 3.4.1.rc2 and fixes the issues raised by cwitty
 archive/issue_comments_039226.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5130-rebased.2.patch](tarball://root/attachments/some-uuid/ticket5130/trac_5130-rebased.2.patch) by ohanar created at 2009-04-15 10:14:50",
     "created_at": "2009-04-15T10:14:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5130",
     "type": "issue_comment",
@@ -439,7 +439,7 @@ archive/issue_comments_039226.json:
 }
 ```
 
-Attachment
+Attachment [trac_5130-rebased.2.patch](tarball://root/attachments/some-uuid/ticket5130/trac_5130-rebased.2.patch) by ohanar created at 2009-04-15 10:14:50
 
 
 

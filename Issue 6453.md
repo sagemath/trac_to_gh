@@ -344,7 +344,7 @@ Changing status from new to assigned.
 archive/issue_comments_051948.json:
 ```json
 {
-    "body": "Attachment\n\nconfig.log showing no optimisation on the command line. Still 20 tests fail",
+    "body": "Attachment [config.log](tarball://root/attachments/some-uuid/ticket6453/config.log) by drkirkby created at 2009-07-01 04:17:21\n\nconfig.log showing no optimisation on the command line. Still 20 tests fail",
     "created_at": "2009-07-01T04:17:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6453",
     "type": "issue_comment",
@@ -353,7 +353,7 @@ archive/issue_comments_051948.json:
 }
 ```
 
-Attachment
+Attachment [config.log](tarball://root/attachments/some-uuid/ticket6453/config.log) by drkirkby created at 2009-07-01 04:17:21
 
 config.log showing no optimisation on the command line. Still 20 tests fail
 

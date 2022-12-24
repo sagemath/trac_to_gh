@@ -46,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7389
 archive/issue_comments_062138.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7389-morphism_TypeError.patch](tarball://root/attachments/some-uuid/ticket7389/trac_7389-morphism_TypeError.patch) by wjp created at 2009-11-04 19:47:37",
     "created_at": "2009-11-04T19:47:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7389",
     "type": "issue_comment",
@@ -55,7 +55,7 @@ archive/issue_comments_062138.json:
 }
 ```
 
-Attachment
+Attachment [trac_7389-morphism_TypeError.patch](tarball://root/attachments/some-uuid/ticket7389/trac_7389-morphism_TypeError.patch) by wjp created at 2009-11-04 19:47:37
 
 
 
@@ -154,7 +154,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_062144.json:
 ```json
 {
-    "body": "Attachment\n\nOK, I've put up a patch with the doctest given in the description of this ticket.\n\nI'm happy with Willem's patch, now if someone can look at mine we're set.",
+    "body": "Attachment [trac_7389-doctest.patch](tarball://root/attachments/some-uuid/ticket7389/trac_7389-doctest.patch) by AlexGhitza created at 2010-01-01 23:36:42\n\nOK, I've put up a patch with the doctest given in the description of this ticket.\n\nI'm happy with Willem's patch, now if someone can look at mine we're set.",
     "created_at": "2010-01-01T23:36:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7389",
     "type": "issue_comment",
@@ -163,7 +163,7 @@ archive/issue_comments_062144.json:
 }
 ```
 
-Attachment
+Attachment [trac_7389-doctest.patch](tarball://root/attachments/some-uuid/ticket7389/trac_7389-doctest.patch) by AlexGhitza created at 2010-01-01 23:36:42
 
 OK, I've put up a patch with the doctest given in the description of this ticket.
 

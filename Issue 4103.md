@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4103
 archive/issue_comments_029713.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [plot_vector_field_cmap.patch](tarball://root/attachments/some-uuid/ticket4103/plot_vector_field_cmap.patch) by jason created at 2008-09-12 04:14:00",
     "created_at": "2008-09-12T04:14:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4103",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_029713.json:
 }
 ```
 
-Attachment
+Attachment [plot_vector_field_cmap.patch](tarball://root/attachments/some-uuid/ticket4103/plot_vector_field_cmap.patch) by jason created at 2008-09-12 04:14:00
 
 
 

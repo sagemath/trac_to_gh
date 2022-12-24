@@ -53,7 +53,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3956
 archive/issue_comments_028410.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch speeds up hashing a bit. However, GF(2) speed is not achievable for e.g. GF(3) since the matrices are not packed. I didn't improve `randomize` since that one could be slightly more tricky.",
+    "body": "Attachment [matrix_modn_dense_hash.patch](tarball://root/attachments/some-uuid/ticket3956/matrix_modn_dense_hash.patch) by malb created at 2008-08-26 14:53:18\n\nThe attached patch speeds up hashing a bit. However, GF(2) speed is not achievable for e.g. GF(3) since the matrices are not packed. I didn't improve `randomize` since that one could be slightly more tricky.",
     "created_at": "2008-08-26T14:53:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3956",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_028410.json:
 }
 ```
 
-Attachment
+Attachment [matrix_modn_dense_hash.patch](tarball://root/attachments/some-uuid/ticket3956/matrix_modn_dense_hash.patch) by malb created at 2008-08-26 14:53:18
 
 The attached patch speeds up hashing a bit. However, GF(2) speed is not achievable for e.g. GF(3) since the matrices are not packed. I didn't improve `randomize` since that one could be slightly more tricky.
 
@@ -304,7 +304,7 @@ I didn't know about that. The updated patch plays nice.
 archive/issue_comments_028419.json:
 ```json
 {
-    "body": "Attachment\n\nThat is consistant, but I believe it may fail if rows get swapped (the old version too). Disclaimer: I wrote code to do that at http://hg.sagemath.org/sage-main/rev/b39c832e2eca , though it could potentially be sped up by caching `self._matrix[i]`\n\nThis has sparked an interesting discussion on sage-devel :)",
+    "body": "Attachment [matrix_modn_dense_hash.2.patch](tarball://root/attachments/some-uuid/ticket3956/matrix_modn_dense_hash.2.patch) by robertwb created at 2008-08-27 20:32:50\n\nThat is consistant, but I believe it may fail if rows get swapped (the old version too). Disclaimer: I wrote code to do that at http://hg.sagemath.org/sage-main/rev/b39c832e2eca , though it could potentially be sped up by caching `self._matrix[i]`\n\nThis has sparked an interesting discussion on sage-devel :)",
     "created_at": "2008-08-27T20:32:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3956",
     "type": "issue_comment",
@@ -313,7 +313,7 @@ archive/issue_comments_028419.json:
 }
 ```
 
-Attachment
+Attachment [matrix_modn_dense_hash.2.patch](tarball://root/attachments/some-uuid/ticket3956/matrix_modn_dense_hash.2.patch) by robertwb created at 2008-08-27 20:32:50
 
 That is consistant, but I believe it may fail if rows get swapped (the old version too). Disclaimer: I wrote code to do that at http://hg.sagemath.org/sage-main/rev/b39c832e2eca , though it could potentially be sped up by caching `self._matrix[i]`
 
@@ -326,7 +326,7 @@ This has sparked an interesting discussion on sage-devel :)
 archive/issue_comments_028420.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [matrix_modn_dense_hash.3.patch](tarball://root/attachments/some-uuid/ticket3956/matrix_modn_dense_hash.3.patch) by malb created at 2008-08-27 20:54:35",
     "created_at": "2008-08-27T20:54:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3956",
     "type": "issue_comment",
@@ -335,7 +335,7 @@ archive/issue_comments_028420.json:
 }
 ```
 
-Attachment
+Attachment [matrix_modn_dense_hash.3.patch](tarball://root/attachments/some-uuid/ticket3956/matrix_modn_dense_hash.3.patch) by malb created at 2008-08-27 20:54:35
 
 
 

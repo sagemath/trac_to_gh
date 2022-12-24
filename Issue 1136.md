@@ -76,7 +76,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1136
 archive/issue_comments_006893.json:
 ```json
 {
-    "body": "Attachment\n\npatch for weierstrass normal form transform code",
+    "body": "Attachment [weirstrass.hg](tarball://root/attachments/some-uuid/ticket1136/weirstrass.hg) by moretti created at 2007-11-09 23:44:47\n\npatch for weierstrass normal form transform code",
     "created_at": "2007-11-09T23:44:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1136",
     "type": "issue_comment",
@@ -85,7 +85,7 @@ archive/issue_comments_006893.json:
 }
 ```
 
-Attachment
+Attachment [weirstrass.hg](tarball://root/attachments/some-uuid/ticket1136/weirstrass.hg) by moretti created at 2007-11-09 23:44:47
 
 patch for weierstrass normal form transform code
 
@@ -138,7 +138,7 @@ Michael
 archive/issue_comments_006895.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [libsingular-singsegv.patch](tarball://root/attachments/some-uuid/ticket1136/libsingular-singsegv.patch) by malb created at 2007-11-11 20:59:08",
     "created_at": "2007-11-11T20:59:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1136",
     "type": "issue_comment",
@@ -147,7 +147,7 @@ archive/issue_comments_006895.json:
 }
 ```
 
-Attachment
+Attachment [libsingular-singsegv.patch](tarball://root/attachments/some-uuid/ticket1136/libsingular-singsegv.patch) by malb created at 2007-11-11 20:59:08
 
 
 

@@ -349,7 +349,7 @@ Note: I fixed the missing 's' in 'Non category objects'.
 archive/issue_comments_090838.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9469-category-membership_without_arguments-nt.patch](tarball://root/attachments/some-uuid/ticket9469/trac_9469-category-membership_without_arguments-nt.patch) by nthiery created at 2012-02-21 07:42:42",
     "created_at": "2012-02-21T07:42:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9469",
     "type": "issue_comment",
@@ -358,7 +358,7 @@ archive/issue_comments_090838.json:
 }
 ```
 
-Attachment
+Attachment [trac_9469-category-membership_without_arguments-nt.patch](tarball://root/attachments/some-uuid/ticket9469/trac_9469-category-membership_without_arguments-nt.patch) by nthiery created at 2012-02-21 07:42:42
 
 
 

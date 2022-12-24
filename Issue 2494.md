@@ -156,7 +156,7 @@ BUG 2 is still there.
 archive/issue_comments_016900.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_2494.patch](tarball://root/attachments/some-uuid/ticket2494/trac_2494.patch) by mhansen created at 2010-01-17 06:08:48",
     "created_at": "2010-01-17T06:08:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2494",
     "type": "issue_comment",
@@ -165,7 +165,7 @@ archive/issue_comments_016900.json:
 }
 ```
 
-Attachment
+Attachment [trac_2494.patch](tarball://root/attachments/some-uuid/ticket2494/trac_2494.patch) by mhansen created at 2010-01-17 06:08:48
 
 
 

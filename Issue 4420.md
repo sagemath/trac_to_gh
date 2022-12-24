@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4420
 archive/issue_comments_032503.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sort_gb.patch](tarball://root/attachments/some-uuid/ticket4420/sort_gb.patch) by malb created at 2008-11-02 01:42:15",
     "created_at": "2008-11-02T01:42:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4420",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_032503.json:
 }
 ```
 
-Attachment
+Attachment [sort_gb.patch](tarball://root/attachments/some-uuid/ticket4420/sort_gb.patch) by malb created at 2008-11-02 01:42:15
 
 
 
@@ -278,7 +278,7 @@ Michael
 archive/issue_comments_032510.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch fixes the doctest failures in `tut.tex` and `const.tex`",
+    "body": "Attachment [sort_gb_doc.patch](tarball://root/attachments/some-uuid/ticket4420/sort_gb_doc.patch) by malb created at 2008-11-02 14:37:29\n\nThe attached patch fixes the doctest failures in `tut.tex` and `const.tex`",
     "created_at": "2008-11-02T14:37:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4420",
     "type": "issue_comment",
@@ -287,7 +287,7 @@ archive/issue_comments_032510.json:
 }
 ```
 
-Attachment
+Attachment [sort_gb_doc.patch](tarball://root/attachments/some-uuid/ticket4420/sort_gb_doc.patch) by malb created at 2008-11-02 14:37:29
 
 The attached patch fixes the doctest failures in `tut.tex` and `const.tex`
 

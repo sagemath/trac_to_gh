@@ -353,7 +353,7 @@ Yep.  Plus the advantage of being able to watch the output as it appears is *hug
 archive/issue_comments_060590.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sagelib_7279.patch](tarball://root/attachments/some-uuid/ticket7279/sagelib_7279.patch) by was created at 2009-12-11 13:29:07",
     "created_at": "2009-12-11T13:29:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
@@ -362,7 +362,7 @@ archive/issue_comments_060590.json:
 }
 ```
 
-Attachment
+Attachment [sagelib_7279.patch](tarball://root/attachments/some-uuid/ticket7279/sagelib_7279.patch) by was created at 2009-12-11 13:29:07
 
 
 
@@ -389,7 +389,7 @@ apply both to the core sage library
 archive/issue_comments_060592.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:10 jason]:\n> Or maybe just combine the last two paragraphs so that it is obvious that the directory is only the temporary directory when executing from the worksheet.\n\nI've done this.",
+    "body": "Attachment [sagelib_7279-part2.patch](tarball://root/attachments/some-uuid/ticket7279/sagelib_7279-part2.patch) by was created at 2009-12-11 13:30:08\n\nReplying to [comment:10 jason]:\n> Or maybe just combine the last two paragraphs so that it is obvious that the directory is only the temporary directory when executing from the worksheet.\n\nI've done this.",
     "created_at": "2009-12-11T13:30:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
@@ -398,7 +398,7 @@ archive/issue_comments_060592.json:
 }
 ```
 
-Attachment
+Attachment [sagelib_7279-part2.patch](tarball://root/attachments/some-uuid/ticket7279/sagelib_7279-part2.patch) by was created at 2009-12-11 13:30:08
 
 Replying to [comment:10 jason]:
 > Or maybe just combine the last two paragraphs so that it is obvious that the directory is only the temporary directory when executing from the worksheet.

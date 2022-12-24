@@ -48,7 +48,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8950
 archive/issue_comments_082400.json:
 ```json
 {
-    "body": "Attachment\n\nIs this ready for review?",
+    "body": "Attachment [desolve_numerical.py](tarball://root/attachments/some-uuid/ticket8950/desolve_numerical.py) by mvngu created at 2010-05-11 22:30:36\n\nIs this ready for review?",
     "created_at": "2010-05-11T22:30:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8950",
     "type": "issue_comment",
@@ -57,7 +57,7 @@ archive/issue_comments_082400.json:
 }
 ```
 
-Attachment
+Attachment [desolve_numerical.py](tarball://root/attachments/some-uuid/ticket8950/desolve_numerical.py) by mvngu created at 2010-05-11 22:30:36
 
 Is this ready for review?
 
@@ -162,7 +162,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_082406.json:
 ```json
 {
-    "body": "Attachment\n\nOk, I added information of the optional parameters and an example using non default ones.\n\nReplying to [comment:4 wdj]:\n\n> Just as a point of convention, typically new sage methods should have docstrings which illustrate all the options avaialble. So if there are optional arguments x, y, z, then there should be docstring examples illustrating these with non-default arguments. This method is great in the sense that it has a huge number of optional arguments. However, only a few of them are used in the examples. Could you please expand the examples to illustrate more of the optional variables?",
+    "body": "Attachment [trac_8950_desolve_numerical.patch](tarball://root/attachments/some-uuid/ticket8950/trac_8950_desolve_numerical.patch) by uri created at 2010-05-16 19:33:11\n\nOk, I added information of the optional parameters and an example using non default ones.\n\nReplying to [comment:4 wdj]:\n\n> Just as a point of convention, typically new sage methods should have docstrings which illustrate all the options avaialble. So if there are optional arguments x, y, z, then there should be docstring examples illustrating these with non-default arguments. This method is great in the sense that it has a huge number of optional arguments. However, only a few of them are used in the examples. Could you please expand the examples to illustrate more of the optional variables?",
     "created_at": "2010-05-16T19:33:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8950",
     "type": "issue_comment",
@@ -171,7 +171,7 @@ archive/issue_comments_082406.json:
 }
 ```
 
-Attachment
+Attachment [trac_8950_desolve_numerical.patch](tarball://root/attachments/some-uuid/ticket8950/trac_8950_desolve_numerical.patch) by uri created at 2010-05-16 19:33:11
 
 Ok, I added information of the optional parameters and an example using non default ones.
 
@@ -235,7 +235,7 @@ Someone who uses this functionality more often should comment on the content and
 archive/issue_comments_082409.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8950_desolve_numerical.2.patch](tarball://root/attachments/some-uuid/ticket8950/trac_8950_desolve_numerical.2.patch) by uri created at 2010-06-30 08:49:39",
     "created_at": "2010-06-30T08:49:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8950",
     "type": "issue_comment",
@@ -244,7 +244,7 @@ archive/issue_comments_082409.json:
 }
 ```
 
-Attachment
+Attachment [trac_8950_desolve_numerical.2.patch](tarball://root/attachments/some-uuid/ticket8950/trac_8950_desolve_numerical.2.patch) by uri created at 2010-06-30 08:49:39
 
 
 
@@ -381,7 +381,7 @@ but the file desolvers.py has now more lines, and sol.extend is now on line 1220
 archive/issue_comments_082415.json:
 ```json
 {
-    "body": "Attachment\n\nYou were right, I had an old version of Sage. Now I've created the patch in the last version (4.5), so I think it should work. Please, let me know if everything is allright this time.\n\nThanks for your time!",
+    "body": "Attachment [trac_8950_desolve_odeint.patch](tarball://root/attachments/some-uuid/ticket8950/trac_8950_desolve_odeint.patch) by uri created at 2010-07-26 11:55:03\n\nYou were right, I had an old version of Sage. Now I've created the patch in the last version (4.5), so I think it should work. Please, let me know if everything is allright this time.\n\nThanks for your time!",
     "created_at": "2010-07-26T11:55:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8950",
     "type": "issue_comment",
@@ -390,7 +390,7 @@ archive/issue_comments_082415.json:
 }
 ```
 
-Attachment
+Attachment [trac_8950_desolve_odeint.patch](tarball://root/attachments/some-uuid/ticket8950/trac_8950_desolve_odeint.patch) by uri created at 2010-07-26 11:55:03
 
 You were right, I had an old version of Sage. Now I've created the patch in the last version (4.5), so I think it should work. Please, let me know if everything is allright this time.
 
@@ -501,7 +501,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_082418.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8950_desolve_odeint_2.patch](tarball://root/attachments/some-uuid/ticket8950/trac_8950_desolve_odeint_2.patch) by pang created at 2010-07-28 19:48:38",
     "created_at": "2010-07-28T19:48:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8950",
     "type": "issue_comment",
@@ -510,7 +510,7 @@ archive/issue_comments_082418.json:
 }
 ```
 
-Attachment
+Attachment [trac_8950_desolve_odeint_2.patch](tarball://root/attachments/some-uuid/ticket8950/trac_8950_desolve_odeint_2.patch) by pang created at 2010-07-28 19:48:38
 
 
 
@@ -519,7 +519,7 @@ Attachment
 archive/issue_comments_082419.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [desolvers.py](tarball://root/attachments/some-uuid/ticket8950/desolvers.py) by pang created at 2010-07-28 19:50:47",
     "created_at": "2010-07-28T19:50:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8950",
     "type": "issue_comment",
@@ -528,7 +528,7 @@ archive/issue_comments_082419.json:
 }
 ```
 
-Attachment
+Attachment [desolvers.py](tarball://root/attachments/some-uuid/ticket8950/desolvers.py) by pang created at 2010-07-28 19:50:47
 
 
 
@@ -537,7 +537,7 @@ Attachment
 archive/issue_comments_082420.json:
 ```json
 {
-    "body": "Attachment\n\nI just made a mistake you might find funny: I exported the patch to a file without deleting the file first, and then the changes were appended to the existing file. The resulting patch: ``trac_8950_desolve_odeint_2.patch`` contains duplicated information.\n\nThe patch ``trac_8950_desolve_odeint_3.patch`` is correct.",
+    "body": "Attachment [trac_8950_desolve_odeint_3.patch](tarball://root/attachments/some-uuid/ticket8950/trac_8950_desolve_odeint_3.patch) by pang created at 2010-07-28 19:54:08\n\nI just made a mistake you might find funny: I exported the patch to a file without deleting the file first, and then the changes were appended to the existing file. The resulting patch: ``trac_8950_desolve_odeint_2.patch`` contains duplicated information.\n\nThe patch ``trac_8950_desolve_odeint_3.patch`` is correct.",
     "created_at": "2010-07-28T19:54:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8950",
     "type": "issue_comment",
@@ -546,7 +546,7 @@ archive/issue_comments_082420.json:
 }
 ```
 
-Attachment
+Attachment [trac_8950_desolve_odeint_3.patch](tarball://root/attachments/some-uuid/ticket8950/trac_8950_desolve_odeint_3.patch) by pang created at 2010-07-28 19:54:08
 
 I just made a mistake you might find funny: I exported the patch to a file without deleting the file first, and then the changes were appended to the existing file. The resulting patch: ``trac_8950_desolve_odeint_2.patch`` contains duplicated information.
 
@@ -659,7 +659,7 @@ Please, let me know your opinion. And thanks again for your work!
 archive/issue_comments_082422.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8950_desolve_odeint_4.patch](tarball://root/attachments/some-uuid/ticket8950/trac_8950_desolve_odeint_4.patch) by uri created at 2010-08-03 16:23:26",
     "created_at": "2010-08-03T16:23:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8950",
     "type": "issue_comment",
@@ -668,7 +668,7 @@ archive/issue_comments_082422.json:
 }
 ```
 
-Attachment
+Attachment [trac_8950_desolve_odeint_4.patch](tarball://root/attachments/some-uuid/ticket8950/trac_8950_desolve_odeint_4.patch) by uri created at 2010-08-03 16:23:26
 
 
 
@@ -941,7 +941,7 @@ Great!  Could you fix the commit string so that the first line contains the tick
 archive/issue_comments_082436.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:24 mpatel]:\n> Great!  Could you fix the commit string so that the first line contains the ticket number and a brief (< 80 characters) summary of the changes?  We need to do this to keep `hg log` output informative.  Of course, additional explanatory lines are definitely allowed in the commit string; they'll be displayed by `hg log -p`.\n\nI'm not sure I did what you asked for: I created the patch again but edited the commit string using the \"-e\" command. Is that correct?",
+    "body": "Attachment [trac_8950_desolve_odeint_unified_4.patch](tarball://root/attachments/some-uuid/ticket8950/trac_8950_desolve_odeint_unified_4.patch) by uri created at 2010-09-07 15:43:13\n\nReplying to [comment:24 mpatel]:\n> Great!  Could you fix the commit string so that the first line contains the ticket number and a brief (< 80 characters) summary of the changes?  We need to do this to keep `hg log` output informative.  Of course, additional explanatory lines are definitely allowed in the commit string; they'll be displayed by `hg log -p`.\n\nI'm not sure I did what you asked for: I created the patch again but edited the commit string using the \"-e\" command. Is that correct?",
     "created_at": "2010-09-07T15:43:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8950",
     "type": "issue_comment",
@@ -950,7 +950,7 @@ archive/issue_comments_082436.json:
 }
 ```
 
-Attachment
+Attachment [trac_8950_desolve_odeint_unified_4.patch](tarball://root/attachments/some-uuid/ticket8950/trac_8950_desolve_odeint_unified_4.patch) by uri created at 2010-09-07 15:43:13
 
 Replying to [comment:24 mpatel]:
 > Great!  Could you fix the commit string so that the first line contains the ticket number and a brief (< 80 characters) summary of the changes?  We need to do this to keep `hg log` output informative.  Of course, additional explanatory lines are definitely allowed in the commit string; they'll be displayed by `hg log -p`.

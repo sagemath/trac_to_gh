@@ -342,7 +342,7 @@ On IRC:
 archive/issue_comments_054302.json:
 ```json
 {
-    "body": "Attachment\n\nfixing docstring issue",
+    "body": "Attachment [libsingular_functions.patch](tarball://root/attachments/some-uuid/ticket6628/libsingular_functions.patch) by malb created at 2009-08-19 11:56:08\n\nfixing docstring issue",
     "created_at": "2009-08-19T11:56:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6628",
     "type": "issue_comment",
@@ -351,7 +351,7 @@ archive/issue_comments_054302.json:
 }
 ```
 
-Attachment
+Attachment [libsingular_functions.patch](tarball://root/attachments/some-uuid/ticket6628/libsingular_functions.patch) by malb created at 2009-08-19 11:56:08
 
 fixing docstring issue
 
@@ -362,7 +362,7 @@ fixing docstring issue
 archive/issue_comments_054303.json:
 ```json
 {
-    "body": "Attachment\n\napply after the previous patch",
+    "body": "Attachment [trac_6628-referee.patch](tarball://root/attachments/some-uuid/ticket6628/trac_6628-referee.patch) by AlexGhitza created at 2009-08-20 11:05:08\n\napply after the previous patch",
     "created_at": "2009-08-20T11:05:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6628",
     "type": "issue_comment",
@@ -371,7 +371,7 @@ archive/issue_comments_054303.json:
 }
 ```
 
-Attachment
+Attachment [trac_6628-referee.patch](tarball://root/attachments/some-uuid/ticket6628/trac_6628-referee.patch) by AlexGhitza created at 2009-08-20 11:05:08
 
 apply after the previous patch
 

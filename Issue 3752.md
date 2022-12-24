@@ -107,7 +107,7 @@ test();
 archive/issue_comments_026661.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3752.patch](tarball://root/attachments/some-uuid/ticket3752/trac_3752.patch) by mhansen created at 2009-01-23 10:31:30",
     "created_at": "2009-01-23T10:31:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3752",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_026661.json:
 }
 ```
 
-Attachment
+Attachment [trac_3752.patch](tarball://root/attachments/some-uuid/ticket3752/trac_3752.patch) by mhansen created at 2009-01-23 10:31:30
 
 
 

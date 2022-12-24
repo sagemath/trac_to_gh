@@ -45,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6861
 archive/issue_comments_056589.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6861-sage-test-in-dotsage.patch](tarball://root/attachments/some-uuid/ticket6861/trac_6861-sage-test-in-dotsage.patch) by jason created at 2009-09-02 21:16:42",
     "created_at": "2009-09-02T21:16:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6861",
     "type": "issue_comment",
@@ -54,7 +54,7 @@ archive/issue_comments_056589.json:
 }
 ```
 
-Attachment
+Attachment [trac_6861-sage-test-in-dotsage.patch](tarball://root/attachments/some-uuid/ticket6861/trac_6861-sage-test-in-dotsage.patch) by jason created at 2009-09-02 21:16:42
 
 
 
@@ -63,7 +63,7 @@ Attachment
 archive/issue_comments_056590.json:
 ```json
 {
-    "body": "Attachment\n\nThe two files above are identical.  One can be deleted.",
+    "body": "Attachment [trac_6861-sage-test-in-dotsage.2.patch](tarball://root/attachments/some-uuid/ticket6861/trac_6861-sage-test-in-dotsage.2.patch) by jason created at 2009-09-02 21:17:18\n\nThe two files above are identical.  One can be deleted.",
     "created_at": "2009-09-02T21:17:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6861",
     "type": "issue_comment",
@@ -72,7 +72,7 @@ archive/issue_comments_056590.json:
 }
 ```
 
-Attachment
+Attachment [trac_6861-sage-test-in-dotsage.2.patch](tarball://root/attachments/some-uuid/ticket6861/trac_6861-sage-test-in-dotsage.2.patch) by jason created at 2009-09-02 21:17:18
 
 The two files above are identical.  One can be deleted.
 
@@ -210,7 +210,7 @@ replaces earlier patches
 archive/issue_comments_056597.json:
 ```json
 {
-    "body": "Attachment\n\nI have added an extra patch (to be applied after trac_6861_new.patch) which deals with a problem in testing files specified by their full path name, as [discussed](http://groups.google.com/group/sage-devel/browse_thread/thread/6295a62c30f5edca) in sage-devel.",
+    "body": "Attachment [trac_6861_new.patch](tarball://root/attachments/some-uuid/ticket6861/trac_6861_new.patch) by fwclarke created at 2009-09-10 19:11:06\n\nI have added an extra patch (to be applied after trac_6861_new.patch) which deals with a problem in testing files specified by their full path name, as [discussed](http://groups.google.com/group/sage-devel/browse_thread/thread/6295a62c30f5edca) in sage-devel.",
     "created_at": "2009-09-10T19:11:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6861",
     "type": "issue_comment",
@@ -219,7 +219,7 @@ archive/issue_comments_056597.json:
 }
 ```
 
-Attachment
+Attachment [trac_6861_new.patch](tarball://root/attachments/some-uuid/ticket6861/trac_6861_new.patch) by fwclarke created at 2009-09-10 19:11:06
 
 I have added an extra patch (to be applied after trac_6861_new.patch) which deals with a problem in testing files specified by their full path name, as [discussed](http://groups.google.com/group/sage-devel/browse_thread/thread/6295a62c30f5edca) in sage-devel.
 
@@ -230,7 +230,7 @@ I have added an extra patch (to be applied after trac_6861_new.patch) which deal
 archive/issue_comments_056598.json:
 ```json
 {
-    "body": "Attachment\n\napply after trac_6861_new.patch",
+    "body": "Attachment [trac_6861_extra.patch](tarball://root/attachments/some-uuid/ticket6861/trac_6861_extra.patch) by fwclarke created at 2009-09-10 19:12:13\n\napply after trac_6861_new.patch",
     "created_at": "2009-09-10T19:12:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6861",
     "type": "issue_comment",
@@ -239,7 +239,7 @@ archive/issue_comments_056598.json:
 }
 ```
 
-Attachment
+Attachment [trac_6861_extra.patch](tarball://root/attachments/some-uuid/ticket6861/trac_6861_extra.patch) by fwclarke created at 2009-09-10 19:12:13
 
 apply after trac_6861_new.patch
 

@@ -60,7 +60,7 @@ Michael
 archive/issue_comments_047693.json:
 ```json
 {
-    "body": "Attachment\n\nThe wigner.py file has just been updated so that it passes all tests in sage-4.0 since the new symbolic manipulations return slightly different resutls.\n\nCould someone turn this into a patch and review this please?",
+    "body": "Attachment [wigner.py](tarball://root/attachments/some-uuid/ticket5996/wigner.py) by jrasch created at 2009-05-31 19:15:33\n\nThe wigner.py file has just been updated so that it passes all tests in sage-4.0 since the new symbolic manipulations return slightly different resutls.\n\nCould someone turn this into a patch and review this please?",
     "created_at": "2009-05-31T19:15:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5996",
     "type": "issue_comment",
@@ -69,7 +69,7 @@ archive/issue_comments_047693.json:
 }
 ```
 
-Attachment
+Attachment [wigner.py](tarball://root/attachments/some-uuid/ticket5996/wigner.py) by jrasch created at 2009-05-31 19:15:33
 
 The wigner.py file has just been updated so that it passes all tests in sage-4.0 since the new symbolic manipulations return slightly different resutls.
 
@@ -102,7 +102,7 @@ So I'm leaving this as "needs work".
 archive/issue_comments_047695.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5996.patch](tarball://root/attachments/some-uuid/ticket5996/trac_5996.patch) by AlexGhitza created at 2009-06-01 10:58:14",
     "created_at": "2009-06-01T10:58:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5996",
     "type": "issue_comment",
@@ -111,7 +111,7 @@ archive/issue_comments_047695.json:
 }
 ```
 
-Attachment
+Attachment [trac_5996.patch](tarball://root/attachments/some-uuid/ticket5996/trac_5996.patch) by AlexGhitza created at 2009-06-01 10:58:14
 
 
 
@@ -143,7 +143,7 @@ Concerning (b), (c), I would be happy to help, but I do not know sage well enoug
 archive/issue_comments_047697.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [12428.patch](tarball://root/attachments/some-uuid/ticket5996/12428.patch) by jrasch created at 2009-06-14 11:17:42",
     "created_at": "2009-06-14T11:17:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5996",
     "type": "issue_comment",
@@ -152,7 +152,7 @@ archive/issue_comments_047697.json:
 }
 ```
 
-Attachment
+Attachment [12428.patch](tarball://root/attachments/some-uuid/ticket5996/12428.patch) by jrasch created at 2009-06-14 11:17:42
 
 
 
@@ -216,7 +216,7 @@ Added path to remove all Latex formulas and replace them with text formulas in a
 archive/issue_comments_047701.json:
 ```json
 {
-    "body": "Attachment\n\nOK, I finally managed to get around to looking at this.  There were still some ReST issues, which I fixed in the latest patch `trac_5996_doc.patch`.  I also added the documentation to the reference manual.\n\nIf someone can double-check my patch, we're good to go.\n\nThe patches need to be applied in the order they appear on the ticket.",
+    "body": "Attachment [12429.patch](tarball://root/attachments/some-uuid/ticket5996/12429.patch) by AlexGhitza created at 2009-07-11 08:56:32\n\nOK, I finally managed to get around to looking at this.  There were still some ReST issues, which I fixed in the latest patch `trac_5996_doc.patch`.  I also added the documentation to the reference manual.\n\nIf someone can double-check my patch, we're good to go.\n\nThe patches need to be applied in the order they appear on the ticket.",
     "created_at": "2009-07-11T08:56:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5996",
     "type": "issue_comment",
@@ -225,7 +225,7 @@ archive/issue_comments_047701.json:
 }
 ```
 
-Attachment
+Attachment [12429.patch](tarball://root/attachments/some-uuid/ticket5996/12429.patch) by AlexGhitza created at 2009-07-11 08:56:32
 
 OK, I finally managed to get around to looking at this.  There were still some ReST issues, which I fixed in the latest patch `trac_5996_doc.patch`.  I also added the documentation to the reference manual.
 
@@ -351,7 +351,7 @@ I didn't check all the issues raised by Minh, since there are quite a few patche
 archive/issue_comments_047706.json:
 ```json
 {
-    "body": "Attachment\n\nOK, I think I fixed all the issues that Minh pointed out, and replaced my latest patch.\n\nIn reply to Jens' comment about latex: I have fixed things so that the docstrings do have the nice latex expressions in them, which means that the pdf and html versions of the reference manual will have nicely typeset formulae.",
+    "body": "Attachment [trac_5996_doc.patch](tarball://root/attachments/some-uuid/ticket5996/trac_5996_doc.patch) by AlexGhitza created at 2009-07-13 12:32:44\n\nOK, I think I fixed all the issues that Minh pointed out, and replaced my latest patch.\n\nIn reply to Jens' comment about latex: I have fixed things so that the docstrings do have the nice latex expressions in them, which means that the pdf and html versions of the reference manual will have nicely typeset formulae.",
     "created_at": "2009-07-13T12:32:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5996",
     "type": "issue_comment",
@@ -360,7 +360,7 @@ archive/issue_comments_047706.json:
 }
 ```
 
-Attachment
+Attachment [trac_5996_doc.patch](tarball://root/attachments/some-uuid/ticket5996/trac_5996_doc.patch) by AlexGhitza created at 2009-07-13 12:32:44
 
 OK, I think I fixed all the issues that Minh pointed out, and replaced my latest patch.
 
@@ -398,7 +398,7 @@ Note that with Sage 4.1, the HTML version of the reference manual is a bit broke
 archive/issue_comments_047708.json:
 ```json
 {
-    "body": "Attachment\n\nreviewer patch",
+    "body": "Attachment [trac_5996-reviewer.patch](tarball://root/attachments/some-uuid/ticket5996/trac_5996-reviewer.patch) by mvngu created at 2009-07-15 20:25:45\n\nreviewer patch",
     "created_at": "2009-07-15T20:25:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5996",
     "type": "issue_comment",
@@ -407,7 +407,7 @@ archive/issue_comments_047708.json:
 }
 ```
 
-Attachment
+Attachment [trac_5996-reviewer.patch](tarball://root/attachments/some-uuid/ticket5996/trac_5996-reviewer.patch) by mvngu created at 2009-07-15 20:25:45
 
 reviewer patch
 

@@ -54,7 +54,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2648
 archive/issue_comments_018205.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-2648-octave.patch](tarball://root/attachments/some-uuid/ticket2648/sage-2648-octave.patch) by was created at 2008-03-22 18:12:52",
     "created_at": "2008-03-22T18:12:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2648",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_018205.json:
 }
 ```
 
-Attachment
+Attachment [sage-2648-octave.patch](tarball://root/attachments/some-uuid/ticket2648/sage-2648-octave.patch) by was created at 2008-03-22 18:12:52
 
 
 

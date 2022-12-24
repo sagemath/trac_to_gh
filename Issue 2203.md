@@ -560,7 +560,7 @@ Nathann
 archive/issue_comments_014523.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_2203.patch](tarball://root/attachments/some-uuid/ticket2203/trac_2203.patch) by ncohen created at 2010-02-09 11:06:10",
     "created_at": "2010-02-09T11:06:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2203",
     "type": "issue_comment",
@@ -569,7 +569,7 @@ archive/issue_comments_014523.json:
 }
 ```
 
-Attachment
+Attachment [trac_2203.patch](tarball://root/attachments/some-uuid/ticket2203/trac_2203.patch) by ncohen created at 2010-02-09 11:06:10
 
 
 
@@ -678,7 +678,7 @@ I retested this on 4.4.2.a0. Looks good to me.
 archive/issue_comments_014529.json:
 ```json
 {
-    "body": "Attachment\n\nrebase of previous patch",
+    "body": "Attachment [trac_2203-rebase.patch](tarball://root/attachments/some-uuid/ticket2203/trac_2203-rebase.patch) by mvngu created at 2010-05-22 10:23:20\n\nrebase of previous patch",
     "created_at": "2010-05-22T10:23:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2203",
     "type": "issue_comment",
@@ -687,7 +687,7 @@ archive/issue_comments_014529.json:
 }
 ```
 
-Attachment
+Attachment [trac_2203-rebase.patch](tarball://root/attachments/some-uuid/ticket2203/trac_2203-rebase.patch) by mvngu created at 2010-05-22 10:23:20
 
 rebase of previous patch
 

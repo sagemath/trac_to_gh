@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7221
 archive/issue_comments_059896.json:
 ```json
 {
-    "body": "Attachment\n\nturned the index.rst into a patch, added conf.py",
+    "body": "Attachment [trac_7221.patch](tarball://root/attachments/some-uuid/ticket7221/trac_7221.patch) by saraedum created at 2011-09-22 12:20:41\n\nturned the index.rst into a patch, added conf.py",
     "created_at": "2011-09-22T12:20:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7221",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_059896.json:
 }
 ```
 
-Attachment
+Attachment [trac_7221.patch](tarball://root/attachments/some-uuid/ticket7221/trac_7221.patch) by saraedum created at 2011-09-22 12:20:41
 
 turned the index.rst into a patch, added conf.py
 

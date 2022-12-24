@@ -151,7 +151,7 @@ Changing component from commutative algebra to algebra.
 archive/issue_comments_038558.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5061-steenrod-ao.patch](tarball://root/attachments/some-uuid/ticket5061/5061-steenrod-ao.patch) by boothby created at 2009-01-23 09:45:33",
     "created_at": "2009-01-23T09:45:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5061",
     "type": "issue_comment",
@@ -160,7 +160,7 @@ archive/issue_comments_038558.json:
 }
 ```
 
-Attachment
+Attachment [5061-steenrod-ao.patch](tarball://root/attachments/some-uuid/ticket5061/5061-steenrod-ao.patch) by boothby created at 2009-01-23 09:45:33
 
 
 
@@ -187,7 +187,7 @@ Looks good. The documentation should probably be fixed as well though, and you n
 archive/issue_comments_038560.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of other patch",
+    "body": "Attachment [5061-doc.patch](tarball://root/attachments/some-uuid/ticket5061/5061-doc.patch) by jhpalmieri created at 2009-02-26 18:49:30\n\napply on top of other patch",
     "created_at": "2009-02-26T18:49:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5061",
     "type": "issue_comment",
@@ -196,7 +196,7 @@ archive/issue_comments_038560.json:
 }
 ```
 
-Attachment
+Attachment [5061-doc.patch](tarball://root/attachments/some-uuid/ticket5061/5061-doc.patch) by jhpalmieri created at 2009-02-26 18:49:30
 
 apply on top of other patch
 

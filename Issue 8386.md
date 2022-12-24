@@ -45,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8386
 archive/issue_comments_075008.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8386_iet_alphabet_bug.patch](tarball://root/attachments/some-uuid/ticket8386/trac_8386_iet_alphabet_bug.patch) by vdelecroix created at 2010-02-27 13:09:22",
     "created_at": "2010-02-27T13:09:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8386",
     "type": "issue_comment",
@@ -54,7 +54,7 @@ archive/issue_comments_075008.json:
 }
 ```
 
-Attachment
+Attachment [trac_8386_iet_alphabet_bug.patch](tarball://root/attachments/some-uuid/ticket8386/trac_8386_iet_alphabet_bug.patch) by vdelecroix created at 2010-02-27 13:09:22
 
 
 
@@ -300,7 +300,7 @@ Exception raised:
 archive/issue_comments_075020.json:
 ```json
 {
-    "body": "Attachment\n\napply only this one",
+    "body": "Attachment [trac_8386-enhanced_iet.patch](tarball://root/attachments/some-uuid/ticket8386/trac_8386-enhanced_iet.patch) by vdelecroix created at 2012-04-29 19:28:35\n\napply only this one",
     "created_at": "2012-04-29T19:28:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8386",
     "type": "issue_comment",
@@ -309,7 +309,7 @@ archive/issue_comments_075020.json:
 }
 ```
 
-Attachment
+Attachment [trac_8386-enhanced_iet.patch](tarball://root/attachments/some-uuid/ticket8386/trac_8386-enhanced_iet.patch) by vdelecroix created at 2012-04-29 19:28:35
 
 apply only this one
 
@@ -472,7 +472,7 @@ Here is a tentative of lazy_import. Let us see what the bot think of that one.
 archive/issue_comments_075029.json:
 ```json
 {
-    "body": "Attachment\n\nApply only trac_8386-enhanced_iet.v2.patch\n\nanother try, even more lazy !",
+    "body": "Attachment [trac_8386-enhanced_iet.v2.patch](tarball://root/attachments/some-uuid/ticket8386/trac_8386-enhanced_iet.v2.patch) by chapoton created at 2012-11-15 20:13:25\n\nApply only trac_8386-enhanced_iet.v2.patch\n\nanother try, even more lazy !",
     "created_at": "2012-11-15T20:13:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8386",
     "type": "issue_comment",
@@ -481,7 +481,7 @@ archive/issue_comments_075029.json:
 }
 ```
 
-Attachment
+Attachment [trac_8386-enhanced_iet.v2.patch](tarball://root/attachments/some-uuid/ticket8386/trac_8386-enhanced_iet.v2.patch) by chapoton created at 2012-11-15 20:13:25
 
 Apply only trac_8386-enhanced_iet.v2.patch
 
@@ -494,7 +494,7 @@ another try, even more lazy !
 archive/issue_comments_075030.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8386-enhanced_iet.v3.patch](tarball://root/attachments/some-uuid/ticket8386/trac_8386-enhanced_iet.v3.patch) by chapoton created at 2012-12-11 20:15:51",
     "created_at": "2012-12-11T20:15:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8386",
     "type": "issue_comment",
@@ -503,7 +503,7 @@ archive/issue_comments_075030.json:
 }
 ```
 
-Attachment
+Attachment [trac_8386-enhanced_iet.v3.patch](tarball://root/attachments/some-uuid/ticket8386/trac_8386-enhanced_iet.v3.patch) by chapoton created at 2012-12-11 20:15:51
 
 
 
@@ -699,7 +699,7 @@ I will have a closer look **right now** at your patch. Nevertheless patchbot com
 archive/issue_comments_075039.json:
 ```json
 {
-    "body": "Attachment\n\nfor the bot: apply trac_8386_just_moving-fc.patch\n\nhere is a patch that should correct the `....:` point\n\nlet us see what the patchbot says",
+    "body": "Attachment [trac_8386_just_moving-fc.patch](tarball://root/attachments/some-uuid/ticket8386/trac_8386_just_moving-fc.patch) by chapoton created at 2013-05-19 17:57:08\n\nfor the bot: apply trac_8386_just_moving-fc.patch\n\nhere is a patch that should correct the `....:` point\n\nlet us see what the patchbot says",
     "created_at": "2013-05-19T17:57:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8386",
     "type": "issue_comment",
@@ -708,7 +708,7 @@ archive/issue_comments_075039.json:
 }
 ```
 
-Attachment
+Attachment [trac_8386_just_moving-fc.patch](tarball://root/attachments/some-uuid/ticket8386/trac_8386_just_moving-fc.patch) by chapoton created at 2013-05-19 17:57:08
 
 for the bot: apply trac_8386_just_moving-fc.patch
 
@@ -803,7 +803,7 @@ which allows one to mark the move after it has happened. But it doesn't work wel
 archive/issue_comments_075043.json:
 ```json
 {
-    "body": "Attachment\n\nok, here it is. It seems that my doc framework is now completely broken (I have by mistake removed the output directory and now docbuild complains a lot about intersphinx and missing files), so I do not know if the doc is ok.\n\nfor the bot:\n\napply trac_8386_really_just_moving-fc.patch trac_8386_big_clean_fc.patch",
+    "body": "Attachment [trac_8386_really_just_moving-fc.patch](tarball://root/attachments/some-uuid/ticket8386/trac_8386_really_just_moving-fc.patch) by chapoton created at 2013-05-19 20:01:31\n\nok, here it is. It seems that my doc framework is now completely broken (I have by mistake removed the output directory and now docbuild complains a lot about intersphinx and missing files), so I do not know if the doc is ok.\n\nfor the bot:\n\napply trac_8386_really_just_moving-fc.patch trac_8386_big_clean_fc.patch",
     "created_at": "2013-05-19T20:01:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8386",
     "type": "issue_comment",
@@ -812,7 +812,7 @@ archive/issue_comments_075043.json:
 }
 ```
 
-Attachment
+Attachment [trac_8386_really_just_moving-fc.patch](tarball://root/attachments/some-uuid/ticket8386/trac_8386_really_just_moving-fc.patch) by chapoton created at 2013-05-19 20:01:31
 
 ok, here it is. It seems that my doc framework is now completely broken (I have by mistake removed the output directory and now docbuild complains a lot about intersphinx and missing files), so I do not know if the doc is ok.
 
@@ -942,7 +942,7 @@ Needs to be rebased to #14669.
 archive/issue_comments_075050.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8386_big_clean_fc.patch](tarball://root/attachments/some-uuid/ticket8386/trac_8386_big_clean_fc.patch) by chapoton created at 2013-06-13 18:11:11",
     "created_at": "2013-06-13T18:11:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8386",
     "type": "issue_comment",
@@ -951,7 +951,7 @@ archive/issue_comments_075050.json:
 }
 ```
 
-Attachment
+Attachment [trac_8386_big_clean_fc.patch](tarball://root/attachments/some-uuid/ticket8386/trac_8386_big_clean_fc.patch) by chapoton created at 2013-06-13 18:11:11
 
 
 
@@ -1093,7 +1093,7 @@ AssertionError:
 archive/issue_comments_075057.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8386_assert_removal.patch](tarball://root/attachments/some-uuid/ticket8386/trac_8386_assert_removal.patch) by chapoton created at 2013-06-18 19:49:31",
     "created_at": "2013-06-18T19:49:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8386",
     "type": "issue_comment",
@@ -1102,7 +1102,7 @@ archive/issue_comments_075057.json:
 }
 ```
 
-Attachment
+Attachment [trac_8386_assert_removal.patch](tarball://root/attachments/some-uuid/ticket8386/trac_8386_assert_removal.patch) by chapoton created at 2013-06-18 19:49:31
 
 
 

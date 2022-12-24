@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8504
 archive/issue_comments_076780.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8504-ab_gp-exponent.patch](tarball://root/attachments/some-uuid/ticket8504/8504-ab_gp-exponent.patch) by robertwb created at 2010-03-11 23:45:40",
     "created_at": "2010-03-11T23:45:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8504",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_076780.json:
 }
 ```
 
-Attachment
+Attachment [8504-ab_gp-exponent.patch](tarball://root/attachments/some-uuid/ticket8504/8504-ab_gp-exponent.patch) by robertwb created at 2010-03-11 23:45:40
 
 
 

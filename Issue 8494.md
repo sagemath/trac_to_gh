@@ -72,7 +72,7 @@ Changing status from new to needs_review.
 archive/issue_comments_076612.json:
 ```json
 {
-    "body": "Attachment\n\nAdded a bit about `balanced_sum`; note that Sphinx won't do the hyperlink properly until we add `sage.misc.misc_c` to the reference manual.",
+    "body": "Attachment [trac_8489.patch](tarball://root/attachments/some-uuid/ticket8494/trac_8489.patch) by ddrake created at 2010-03-12 02:39:17\n\nAdded a bit about `balanced_sum`; note that Sphinx won't do the hyperlink properly until we add `sage.misc.misc_c` to the reference manual.",
     "created_at": "2010-03-12T02:39:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8494",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_076612.json:
 }
 ```
 
-Attachment
+Attachment [trac_8489.patch](tarball://root/attachments/some-uuid/ticket8494/trac_8489.patch) by ddrake created at 2010-03-12 02:39:17
 
 Added a bit about `balanced_sum`; note that Sphinx won't do the hyperlink properly until we add `sage.misc.misc_c` to the reference manual.
 

@@ -224,7 +224,7 @@ Depends on #6903.
 archive/issue_comments_038355.json:
 ```json
 {
-    "body": "Attachment\n\nNew patch uploaded. Doctest coverage of paths.py : 100%. Added paths.py to the documentation.",
+    "body": "Attachment [trac_5038_paths-sl.patch](tarball://root/attachments/some-uuid/ticket5038/trac_5038_paths-sl.patch) by slabbe created at 2009-09-18 21:31:38\n\nNew patch uploaded. Doctest coverage of paths.py : 100%. Added paths.py to the documentation.",
     "created_at": "2009-09-18T21:31:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
@@ -233,7 +233,7 @@ archive/issue_comments_038355.json:
 }
 ```
 
-Attachment
+Attachment [trac_5038_paths-sl.patch](tarball://root/attachments/some-uuid/ticket5038/trac_5038_paths-sl.patch) by slabbe created at 2009-09-18 21:31:38
 
 New patch uploaded. Doctest coverage of paths.py : 100%. Added paths.py to the documentation.
 
@@ -280,7 +280,7 @@ Looks good to me.  I attached a patch to remove the import of GridLines since it
 archive/issue_comments_038358.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5038-remove-gridlines.patch](tarball://root/attachments/some-uuid/ticket5038/trac_5038-remove-gridlines.patch) by mhansen created at 2009-09-26 03:33:53",
     "created_at": "2009-09-26T03:33:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
@@ -289,7 +289,7 @@ archive/issue_comments_038358.json:
 }
 ```
 
-Attachment
+Attachment [trac_5038-remove-gridlines.patch](tarball://root/attachments/some-uuid/ticket5038/trac_5038-remove-gridlines.patch) by mhansen created at 2009-09-26 03:33:53
 
 
 
@@ -364,7 +364,7 @@ Applies over the precedent 2 patches.
 archive/issue_comments_038361.json:
 ```json
 {
-    "body": "Attachment\n\nThe above failure is now fixed by the patch I just uploaded. Needs review.",
+    "body": "Attachment [trac_5038_pickle_jar_fix-sl.patch](tarball://root/attachments/some-uuid/ticket5038/trac_5038_pickle_jar_fix-sl.patch) by slabbe created at 2009-09-29 12:24:44\n\nThe above failure is now fixed by the patch I just uploaded. Needs review.",
     "created_at": "2009-09-29T12:24:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
@@ -373,7 +373,7 @@ archive/issue_comments_038361.json:
 }
 ```
 
-Attachment
+Attachment [trac_5038_pickle_jar_fix-sl.patch](tarball://root/attachments/some-uuid/ticket5038/trac_5038_pickle_jar_fix-sl.patch) by slabbe created at 2009-09-29 12:24:44
 
 The above failure is now fixed by the patch I just uploaded. Needs review.
 
@@ -515,7 +515,7 @@ Hope this helps.
 archive/issue_comments_038365.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5038_improved_doc-sl.patch](tarball://root/attachments/some-uuid/ticket5038/trac_5038_improved_doc-sl.patch) by slabbe created at 2009-10-20 11:24:14",
     "created_at": "2009-10-20T11:24:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
@@ -524,7 +524,7 @@ archive/issue_comments_038365.json:
 }
 ```
 
-Attachment
+Attachment [trac_5038_improved_doc-sl.patch](tarball://root/attachments/some-uuid/ticket5038/trac_5038_improved_doc-sl.patch) by slabbe created at 2009-10-20 11:24:14
 
 
 
@@ -581,7 +581,7 @@ Needs review!
 archive/issue_comments_038368.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of the others",
+    "body": "Attachment [trac_5038_doc_fixes-fs.patch](tarball://root/attachments/some-uuid/ticket5038/trac_5038_doc_fixes-fs.patch) by saliola created at 2009-10-20 16:52:41\n\napply on top of the others",
     "created_at": "2009-10-20T16:52:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
@@ -590,7 +590,7 @@ archive/issue_comments_038368.json:
 }
 ```
 
-Attachment
+Attachment [trac_5038_doc_fixes-fs.patch](tarball://root/attachments/some-uuid/ticket5038/trac_5038_doc_fixes-fs.patch) by saliola created at 2009-10-20 16:52:41
 
 apply on top of the others
 

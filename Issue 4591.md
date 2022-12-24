@@ -63,7 +63,7 @@ this totally fixes the problem, and is much simpler and better doctested code.  
 archive/issue_comments_034432.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-4591.patch](tarball://root/attachments/some-uuid/ticket4591/sage-4591.patch) by was created at 2008-11-23 07:34:38",
     "created_at": "2008-11-23T07:34:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4591",
     "type": "issue_comment",
@@ -72,7 +72,7 @@ archive/issue_comments_034432.json:
 }
 ```
 
-Attachment
+Attachment [sage-4591.patch](tarball://root/attachments/some-uuid/ticket4591/sage-4591.patch) by was created at 2008-11-23 07:34:38
 
 
 
@@ -99,7 +99,7 @@ it is very important to delete the whole directory data/extcode/magma/stoll, eve
 archive/issue_comments_034434.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review. wstein explained the reasons behind the switch to Magma code in detail, so I am happy.\n\nCheers,\n\nMichael",
+    "body": "Attachment [extcode-4591.patch](tarball://root/attachments/some-uuid/ticket4591/extcode-4591.patch) by mabshoff created at 2008-11-23 07:55:24\n\nPositive review. wstein explained the reasons behind the switch to Magma code in detail, so I am happy.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-23T07:55:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4591",
     "type": "issue_comment",
@@ -108,7 +108,7 @@ archive/issue_comments_034434.json:
 }
 ```
 
-Attachment
+Attachment [extcode-4591.patch](tarball://root/attachments/some-uuid/ticket4591/extcode-4591.patch) by mabshoff created at 2008-11-23 07:55:24
 
 Positive review. wstein explained the reasons behind the switch to Magma code in detail, so I am happy.
 
@@ -155,7 +155,7 @@ Michael
 archive/issue_comments_034436.json:
 ```json
 {
-    "body": "Attachment\n\nrebased version.",
+    "body": "Attachment [sage-4591.2.patch](tarball://root/attachments/some-uuid/ticket4591/sage-4591.2.patch) by was created at 2008-11-23 08:16:06\n\nrebased version.",
     "created_at": "2008-11-23T08:16:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4591",
     "type": "issue_comment",
@@ -164,7 +164,7 @@ archive/issue_comments_034436.json:
 }
 ```
 
-Attachment
+Attachment [sage-4591.2.patch](tarball://root/attachments/some-uuid/ticket4591/sage-4591.2.patch) by was created at 2008-11-23 08:16:06
 
 rebased version.
 

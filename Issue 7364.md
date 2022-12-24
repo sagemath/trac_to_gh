@@ -302,7 +302,7 @@ Done ! :-)
 archive/issue_comments_061718.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7364.patch](tarball://root/attachments/some-uuid/ticket7364/trac_7364.patch) by ncohen created at 2009-11-23 15:35:38",
     "created_at": "2009-11-23T15:35:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7364",
     "type": "issue_comment",
@@ -311,7 +311,7 @@ archive/issue_comments_061718.json:
 }
 ```
 
-Attachment
+Attachment [trac_7364.patch](tarball://root/attachments/some-uuid/ticket7364/trac_7364.patch) by ncohen created at 2009-11-23 15:35:38
 
 
 

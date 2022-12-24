@@ -49,7 +49,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8367
 archive/issue_comments_074792.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8367_subsets_element_class_fix-sg.patch](tarball://root/attachments/some-uuid/ticket8367/trac_8367_subsets_element_class_fix-sg.patch) by giraudo created at 2010-02-25 18:21:55",
     "created_at": "2010-02-25T18:21:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8367",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_074792.json:
 }
 ```
 
-Attachment
+Attachment [trac_8367_subsets_element_class_fix-sg.patch](tarball://root/attachments/some-uuid/ticket8367/trac_8367_subsets_element_class_fix-sg.patch) by giraudo created at 2010-02-25 18:21:55
 
 
 

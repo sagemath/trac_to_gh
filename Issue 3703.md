@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3703
 archive/issue_comments_026262.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review.  Good catch!\n\nPasses doctests in graphs/*.py, graphs/*.pyx, and graphs/base/*.pyx",
+    "body": "Attachment [trac3703-set_edge_label.patch](tarball://root/attachments/some-uuid/ticket3703/trac3703-set_edge_label.patch) by jason created at 2008-07-22 14:49:19\n\nPositive review.  Good catch!\n\nPasses doctests in graphs/*.py, graphs/*.pyx, and graphs/base/*.pyx",
     "created_at": "2008-07-22T14:49:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3703",
     "type": "issue_comment",
@@ -49,7 +49,7 @@ archive/issue_comments_026262.json:
 }
 ```
 
-Attachment
+Attachment [trac3703-set_edge_label.patch](tarball://root/attachments/some-uuid/ticket3703/trac3703-set_edge_label.patch) by jason created at 2008-07-22 14:49:19
 
 Positive review.  Good catch!
 

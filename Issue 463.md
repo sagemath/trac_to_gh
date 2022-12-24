@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/463
 archive/issue_comments_002295.json:
 ```json
 {
-    "body": "Attachment\n\nsomewhat orthogonal -- changes to use \"sage -br\" instead of \"sage -ba\" on upgrade.  apply to sage repo.",
+    "body": "Attachment [sage-463.patch](tarball://root/attachments/some-uuid/ticket463/sage-463.patch) by was created at 2008-11-27 01:24:31\n\nsomewhat orthogonal -- changes to use \"sage -br\" instead of \"sage -ba\" on upgrade.  apply to sage repo.",
     "created_at": "2008-11-27T01:24:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/463",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_002295.json:
 }
 ```
 
-Attachment
+Attachment [sage-463.patch](tarball://root/attachments/some-uuid/ticket463/sage-463.patch) by was created at 2008-11-27 01:24:31
 
 somewhat orthogonal -- changes to use "sage -br" instead of "sage -ba" on upgrade.  apply to sage repo.
 
@@ -59,7 +59,7 @@ somewhat orthogonal -- changes to use "sage -br" instead of "sage -ba" on upgrad
 archive/issue_comments_002296.json:
 ```json
 {
-    "body": "Attachment\n\napply to the scripts repo.",
+    "body": "Attachment [scripts-463.patch](tarball://root/attachments/some-uuid/ticket463/scripts-463.patch) by was created at 2008-11-27 01:25:47\n\napply to the scripts repo.",
     "created_at": "2008-11-27T01:25:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/463",
     "type": "issue_comment",
@@ -68,7 +68,7 @@ archive/issue_comments_002296.json:
 }
 ```
 
-Attachment
+Attachment [scripts-463.patch](tarball://root/attachments/some-uuid/ticket463/scripts-463.patch) by was created at 2008-11-27 01:25:47
 
 apply to the scripts repo.
 
@@ -112,7 +112,7 @@ to upgrade to the latest devel version.
 archive/issue_comments_002298.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [scripts-463-rebase-3.1.alpha1.patch](tarball://root/attachments/some-uuid/ticket463/scripts-463-rebase-3.1.alpha1.patch) by was created at 2008-11-27 01:45:43",
     "created_at": "2008-11-27T01:45:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/463",
     "type": "issue_comment",
@@ -121,7 +121,7 @@ archive/issue_comments_002298.json:
 }
 ```
 
-Attachment
+Attachment [scripts-463-rebase-3.1.alpha1.patch](tarball://root/attachments/some-uuid/ticket463/scripts-463-rebase-3.1.alpha1.patch) by was created at 2008-11-27 01:45:43
 
 
 
@@ -130,7 +130,7 @@ Attachment
 archive/issue_comments_002299.json:
 ```json
 {
-    "body": "Attachment\n\nApply these to 3.2.1.alpha1:\n\n```\nsage-463.patch \nscripts-463-rebase-3.1.alpha1.patch \nscripts-463-rebase-3.2.1.alpha1-part2.patch \n```\n",
+    "body": "Attachment [scripts-463-rebase-3.2.1.alpha1-part2.patch](tarball://root/attachments/some-uuid/ticket463/scripts-463-rebase-3.2.1.alpha1-part2.patch) by was created at 2008-11-27 02:02:26\n\nApply these to 3.2.1.alpha1:\n\n```\nsage-463.patch \nscripts-463-rebase-3.1.alpha1.patch \nscripts-463-rebase-3.2.1.alpha1-part2.patch \n```\n",
     "created_at": "2008-11-27T02:02:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/463",
     "type": "issue_comment",
@@ -139,7 +139,7 @@ archive/issue_comments_002299.json:
 }
 ```
 
-Attachment
+Attachment [scripts-463-rebase-3.2.1.alpha1-part2.patch](tarball://root/attachments/some-uuid/ticket463/scripts-463-rebase-3.2.1.alpha1-part2.patch) by was created at 2008-11-27 02:02:26
 
 Apply these to 3.2.1.alpha1:
 
@@ -217,7 +217,7 @@ Resolution: fixed
 archive/issue_comments_002303.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [scripts-463-part3.patch](tarball://root/attachments/some-uuid/ticket463/scripts-463-part3.patch) by was created at 2008-11-27 05:14:06",
     "created_at": "2008-11-27T05:14:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/463",
     "type": "issue_comment",
@@ -226,7 +226,7 @@ archive/issue_comments_002303.json:
 }
 ```
 
-Attachment
+Attachment [scripts-463-part3.patch](tarball://root/attachments/some-uuid/ticket463/scripts-463-part3.patch) by was created at 2008-11-27 05:14:06
 
 
 
@@ -235,7 +235,7 @@ Attachment
 archive/issue_comments_002304.json:
 ```json
 {
-    "body": "Attachment\n\nMerged scripts-463-part3.patch and sage-463-part2.patch in Sage 3.2.1.alpah2",
+    "body": "Attachment [sage-463-part2.patch](tarball://root/attachments/some-uuid/ticket463/sage-463-part2.patch) by mabshoff created at 2008-11-27 05:28:16\n\nMerged scripts-463-part3.patch and sage-463-part2.patch in Sage 3.2.1.alpah2",
     "created_at": "2008-11-27T05:28:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/463",
     "type": "issue_comment",
@@ -244,7 +244,7 @@ archive/issue_comments_002304.json:
 }
 ```
 
-Attachment
+Attachment [sage-463-part2.patch](tarball://root/attachments/some-uuid/ticket463/sage-463-part2.patch) by mabshoff created at 2008-11-27 05:28:16
 
 Merged scripts-463-part3.patch and sage-463-part2.patch in Sage 3.2.1.alpah2
 

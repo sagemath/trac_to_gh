@@ -68,7 +68,7 @@ this is the output of running the test suite, showing the actual failures.
 archive/issue_comments_068272.json:
 ```json
 {
-    "body": "Attachment\n\nI tested again using the new magma V2.16-7 with sage-4.3.5. \n\n```\n[wstein@eno sage-4.3.5]$ magma\nMagma V2.16-7     Tue Apr  6 2010 11:14:18 on eno      [Seed = 3125460604]\nType ? for help.  Type <Ctrl>-D to quit.\n```\n\nThere are now even more failures.  I've attached a new test log created using the following on eno:\n\n```\n./sage -tp 10 -only_optional=magma devel/sage/sage\n```\n",
+    "body": "Attachment [magma.out](tarball://root/attachments/some-uuid/ticket7870/magma.out) by was created at 2010-04-06 15:15:56\n\nI tested again using the new magma V2.16-7 with sage-4.3.5. \n\n```\n[wstein@eno sage-4.3.5]$ magma\nMagma V2.16-7     Tue Apr  6 2010 11:14:18 on eno      [Seed = 3125460604]\nType ? for help.  Type <Ctrl>-D to quit.\n```\n\nThere are now even more failures.  I've attached a new test log created using the following on eno:\n\n```\n./sage -tp 10 -only_optional=magma devel/sage/sage\n```\n",
     "created_at": "2010-04-06T15:15:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
@@ -77,7 +77,7 @@ archive/issue_comments_068272.json:
 }
 ```
 
-Attachment
+Attachment [magma.out](tarball://root/attachments/some-uuid/ticket7870/magma.out) by was created at 2010-04-06 15:15:56
 
 I tested again using the new magma V2.16-7 with sage-4.3.5. 
 
@@ -119,7 +119,7 @@ it got much worse!
 archive/issue_comments_068274.json:
 ```json
 {
-    "body": "Attachment\n\nThis fixes all the doctest issues on eno with magma V2.16-7",
+    "body": "Attachment [trac_7870.patch](tarball://root/attachments/some-uuid/ticket7870/trac_7870.patch) by was created at 2010-04-06 16:20:57\n\nThis fixes all the doctest issues on eno with magma V2.16-7",
     "created_at": "2010-04-06T16:20:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
@@ -128,7 +128,7 @@ archive/issue_comments_068274.json:
 }
 ```
 
-Attachment
+Attachment [trac_7870.patch](tarball://root/attachments/some-uuid/ticket7870/trac_7870.patch) by was created at 2010-04-06 16:20:57
 
 This fixes all the doctest issues on eno with magma V2.16-7
 
@@ -646,7 +646,7 @@ Based on this, I'm changing this to needs_work. Not volunteering to review, just
 archive/issue_comments_068294.json:
 ```json
 {
-    "body": "Attachment\n\nReplaces all previous patches;  applies to 4.6.1 and Magma 2.17-4",
+    "body": "Attachment [trac_7870-magma-doctest.patch](tarball://root/attachments/some-uuid/ticket7870/trac_7870-magma-doctest.patch) by cremona created at 2011-02-18 23:04:50\n\nReplaces all previous patches;  applies to 4.6.1 and Magma 2.17-4",
     "created_at": "2011-02-18T23:04:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
@@ -655,7 +655,7 @@ archive/issue_comments_068294.json:
 }
 ```
 
-Attachment
+Attachment [trac_7870-magma-doctest.patch](tarball://root/attachments/some-uuid/ticket7870/trac_7870-magma-doctest.patch) by cremona created at 2011-02-18 23:04:50
 
 Replaces all previous patches;  applies to 4.6.1 and Magma 2.17-4
 
@@ -743,7 +743,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_068299.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-7870-magma-doctest-review.patch](tarball://root/attachments/some-uuid/ticket7870/trac-7870-magma-doctest-review.patch) by mraum created at 2011-03-02 09:58:18",
     "created_at": "2011-03-02T09:58:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
@@ -752,7 +752,7 @@ archive/issue_comments_068299.json:
 }
 ```
 
-Attachment
+Attachment [trac-7870-magma-doctest-review.patch](tarball://root/attachments/some-uuid/ticket7870/trac-7870-magma-doctest-review.patch) by mraum created at 2011-03-02 09:58:18
 
 
 
@@ -917,7 +917,7 @@ Apologies, this refers to the new function I put in (_magma_polynomial_) where I
 archive/issue_comments_068307.json:
 ```json
 {
-    "body": "Attachment\n\nAnd it's my fault as well. I'm terribly sorry!\nJohn, do you have a maschine without magma to run tests for the above fix on? It was only one function that was missed.\n\nMartin",
+    "body": "Attachment [trac-7870-magma-doctest-review2.patch](tarball://root/attachments/some-uuid/ticket7870/trac-7870-magma-doctest-review2.patch) by mraum created at 2011-03-08 17:42:55\n\nAnd it's my fault as well. I'm terribly sorry!\nJohn, do you have a maschine without magma to run tests for the above fix on? It was only one function that was missed.\n\nMartin",
     "created_at": "2011-03-08T17:42:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
@@ -926,7 +926,7 @@ archive/issue_comments_068307.json:
 }
 ```
 
-Attachment
+Attachment [trac-7870-magma-doctest-review2.patch](tarball://root/attachments/some-uuid/ticket7870/trac-7870-magma-doctest-review2.patch) by mraum created at 2011-03-08 17:42:55
 
 And it's my fault as well. I'm terribly sorry!
 John, do you have a maschine without magma to run tests for the above fix on? It was only one function that was missed.
@@ -1067,7 +1067,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_068314.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-7870-magma-doctest-review3.patch](tarball://root/attachments/some-uuid/ticket7870/trac-7870-magma-doctest-review3.patch) by mraum created at 2011-03-12 20:55:17",
     "created_at": "2011-03-12T20:55:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
@@ -1076,7 +1076,7 @@ archive/issue_comments_068314.json:
 }
 ```
 
-Attachment
+Attachment [trac-7870-magma-doctest-review3.patch](tarball://root/attachments/some-uuid/ticket7870/trac-7870-magma-doctest-review3.patch) by mraum created at 2011-03-12 20:55:17
 
 
 
@@ -1259,7 +1259,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_068324.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-7870-magma-doctest-review4.patch](tarball://root/attachments/some-uuid/ticket7870/trac-7870-magma-doctest-review4.patch) by mraum created at 2011-03-17 16:30:17",
     "created_at": "2011-03-17T16:30:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
@@ -1268,7 +1268,7 @@ archive/issue_comments_068324.json:
 }
 ```
 
-Attachment
+Attachment [trac-7870-magma-doctest-review4.patch](tarball://root/attachments/some-uuid/ticket7870/trac-7870-magma-doctest-review4.patch) by mraum created at 2011-03-17 16:30:17
 
 
 

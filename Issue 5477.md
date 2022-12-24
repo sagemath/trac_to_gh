@@ -106,7 +106,7 @@ See attached patch for a fix.
 archive/issue_comments_042483.json:
 ```json
 {
-    "body": "Attachment\n\nFixes by taking gcd with itself when only one generator is given, thus assuring a normalized generator.",
+    "body": "Attachment [trac_5477.patch](tarball://root/attachments/some-uuid/ticket5477/trac_5477.patch) by rishi created at 2010-01-21 15:22:33\n\nFixes by taking gcd with itself when only one generator is given, thus assuring a normalized generator.",
     "created_at": "2010-01-21T15:22:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5477",
     "type": "issue_comment",
@@ -115,7 +115,7 @@ archive/issue_comments_042483.json:
 }
 ```
 
-Attachment
+Attachment [trac_5477.patch](tarball://root/attachments/some-uuid/ticket5477/trac_5477.patch) by rishi created at 2010-01-21 15:22:33
 
 Fixes by taking gcd with itself when only one generator is given, thus assuring a normalized generator.
 

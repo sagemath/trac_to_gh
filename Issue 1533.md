@@ -85,7 +85,7 @@ New spkg up at http://sage.math.washington.edu/home/robertwb/spkgs/
 archive/issue_comments_009788.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [java3d-1533.diff](tarball://root/attachments/some-uuid/ticket1533/java3d-1533.diff) by robertwb created at 2007-12-16 08:02:27",
     "created_at": "2007-12-16T08:02:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1533",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_009788.json:
 }
 ```
 
-Attachment
+Attachment [java3d-1533.diff](tarball://root/attachments/some-uuid/ticket1533/java3d-1533.diff) by robertwb created at 2007-12-16 08:02:27
 
 
 

@@ -146,7 +146,7 @@ The following patch should fix all of the issues on this ticket - Maxima has qui
 archive/issue_comments_054370.json:
 ```json
 {
-    "body": "Attachment\n\nNeeds #6197",
+    "body": "Attachment [trac_6636-factorial-simplify.patch](tarball://root/attachments/some-uuid/ticket6636/trac_6636-factorial-simplify.patch) by kcrisman created at 2009-09-08 13:54:50\n\nNeeds #6197",
     "created_at": "2009-09-08T13:54:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6636",
     "type": "issue_comment",
@@ -155,7 +155,7 @@ archive/issue_comments_054370.json:
 }
 ```
 
-Attachment
+Attachment [trac_6636-factorial-simplify.patch](tarball://root/attachments/some-uuid/ticket6636/trac_6636-factorial-simplify.patch) by kcrisman created at 2009-09-08 13:54:50
 
 Needs #6197
 

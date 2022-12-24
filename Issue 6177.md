@@ -351,7 +351,7 @@ plot.py patch for jinja, to be contained in a 0.6.2 release (hopefully soon)
 archive/issue_comments_049254.json:
 ```json
 {
-    "body": "Attachment\n\nCCing Robert Miller since he is the resident graph expert and is sitting like two seats next to me. Robert, the last two comments are about printing the decision diagrams used by PolyBoRi to represent polynomials, cf. http://polybori.sourceforge.net/zdd.html",
+    "body": "Attachment [jinja.patch](tarball://root/attachments/some-uuid/ticket6177/jinja.patch) by malb created at 2009-06-23 10:06:49\n\nCCing Robert Miller since he is the resident graph expert and is sitting like two seats next to me. Robert, the last two comments are about printing the decision diagrams used by PolyBoRi to represent polynomials, cf. http://polybori.sourceforge.net/zdd.html",
     "created_at": "2009-06-23T10:06:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
@@ -360,7 +360,7 @@ archive/issue_comments_049254.json:
 }
 ```
 
-Attachment
+Attachment [jinja.patch](tarball://root/attachments/some-uuid/ticket6177/jinja.patch) by malb created at 2009-06-23 10:06:49
 
 CCing Robert Miller since he is the resident graph expert and is sitting like two seats next to me. Robert, the last two comments are about printing the decision diagrams used by PolyBoRi to represent polynomials, cf. http://polybori.sourceforge.net/zdd.html
 
@@ -389,7 +389,7 @@ Burcin, I just uploaded my current PolyBoRi SPKG to /home/malb/spkgs so all you 
 archive/issue_comments_049256.json:
 ```json
 {
-    "body": "Attachment\n\nmost recent version of the patch",
+    "body": "Attachment [polybori_0_6_1.patch](tarball://root/attachments/some-uuid/ticket6177/polybori_0_6_1.patch) by malb created at 2009-06-23 10:12:05\n\nmost recent version of the patch",
     "created_at": "2009-06-23T10:12:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
@@ -398,7 +398,7 @@ archive/issue_comments_049256.json:
 }
 ```
 
-Attachment
+Attachment [polybori_0_6_1.patch](tarball://root/attachments/some-uuid/ticket6177/polybori_0_6_1.patch) by malb created at 2009-06-23 10:12:05
 
 most recent version of the patch
 
@@ -535,7 +535,7 @@ fixes the issue
 archive/issue_comments_049263.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch fixes the wrong GB issue.",
+    "body": "Attachment [polybori-0-6-3.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0-6-3.patch) by malb created at 2009-08-05 13:35:58\n\nThe attached patch fixes the wrong GB issue.",
     "created_at": "2009-08-05T13:35:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
@@ -544,7 +544,7 @@ archive/issue_comments_049263.json:
 }
 ```
 
-Attachment
+Attachment [polybori-0-6-3.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0-6-3.patch) by malb created at 2009-08-05 13:35:58
 
 The attached patch fixes the wrong GB issue.
 
@@ -720,7 +720,7 @@ under Michael's name.
 archive/issue_comments_049271.json:
 ```json
 {
-    "body": "Attachment\n\nThe latest patch links in gd",
+    "body": "Attachment [polybori-0-6-3.2.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0-6-3.2.patch) by malb created at 2009-08-07 08:32:06\n\nThe latest patch links in gd",
     "created_at": "2009-08-07T08:32:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
@@ -729,7 +729,7 @@ archive/issue_comments_049271.json:
 }
 ```
 
-Attachment
+Attachment [polybori-0-6-3.2.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0-6-3.2.patch) by malb created at 2009-08-07 08:32:06
 
 The latest patch links in gd
 
@@ -775,7 +775,7 @@ But I think, that I have a good solution.
 archive/issue_comments_049273.json:
 ```json
 {
-    "body": "Attachment\n\nadds the requested functions",
+    "body": "Attachment [polybori-0-6-3.3.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0-6-3.3.patch) by malb created at 2009-08-10 17:16:03\n\nadds the requested functions",
     "created_at": "2009-08-10T17:16:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
@@ -784,7 +784,7 @@ archive/issue_comments_049273.json:
 }
 ```
 
-Attachment
+Attachment [polybori-0-6-3.3.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0-6-3.3.patch) by malb created at 2009-08-10 17:16:03
 
 adds the requested functions
 
@@ -835,7 +835,7 @@ the latest patch swallowed the 'gd' in modules_list.py, this one adds it back
 archive/issue_comments_049276.json:
 ```json
 {
-    "body": "Attachment\n\nspeeds up comparison with zero and fixes a doctest failure",
+    "body": "Attachment [polybori-0-6-3.5.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0-6-3.5.patch) by malb created at 2009-08-11 15:40:49\n\nspeeds up comparison with zero and fixes a doctest failure",
     "created_at": "2009-08-11T15:40:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
@@ -844,7 +844,7 @@ archive/issue_comments_049276.json:
 }
 ```
 
-Attachment
+Attachment [polybori-0-6-3.5.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0-6-3.5.patch) by malb created at 2009-08-11 15:40:49
 
 speeds up comparison with zero and fixes a doctest failure
 
@@ -1139,7 +1139,7 @@ example for segfault
 archive/issue_comments_049284.json:
 ```json
 {
-    "body": "Attachment\n\nadds n_variables and fixes segfault",
+    "body": "Attachment [cook.py](tarball://root/attachments/some-uuid/ticket6177/cook.py) by malb created at 2009-08-18 11:15:27\n\nadds n_variables and fixes segfault",
     "created_at": "2009-08-18T11:15:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
@@ -1148,7 +1148,7 @@ archive/issue_comments_049284.json:
 }
 ```
 
-Attachment
+Attachment [cook.py](tarball://root/attachments/some-uuid/ticket6177/cook.py) by malb created at 2009-08-18 11:15:27
 
 adds n_variables and fixes segfault
 
@@ -1159,7 +1159,7 @@ adds n_variables and fixes segfault
 archive/issue_comments_049285.json:
 ```json
 {
-    "body": "Attachment\n\nThe newest version of the patch fixes the segfault and adds `n_variables`. Note that both Michael and myself are using this patch for more than two weeks now in our research (see above for issues discovered and fixed this way), so it should be (almost) good to go. It mainly needs a review from the Sage side.",
+    "body": "Attachment [polybori-0-6-3.6.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0-6-3.6.patch) by malb created at 2009-08-18 11:17:11\n\nThe newest version of the patch fixes the segfault and adds `n_variables`. Note that both Michael and myself are using this patch for more than two weeks now in our research (see above for issues discovered and fixed this way), so it should be (almost) good to go. It mainly needs a review from the Sage side.",
     "created_at": "2009-08-18T11:17:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
@@ -1168,7 +1168,7 @@ archive/issue_comments_049285.json:
 }
 ```
 
-Attachment
+Attachment [polybori-0-6-3.6.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0-6-3.6.patch) by malb created at 2009-08-18 11:17:11
 
 The newest version of the patch fixes the segfault and adds `n_variables`. Note that both Michael and myself are using this patch for more than two weeks now in our research (see above for issues discovered and fixed this way), so it should be (almost) good to go. It mainly needs a review from the Sage side.
 
@@ -1285,7 +1285,7 @@ changes len(m) to be constant 1 if m is a monomial
 archive/issue_comments_049289.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch fixes the issue (`len(m) == 1` if `m` is a monomial). I don't see how it breaks anf2cnf but I'll check now (this is orthogonal to accepting this patch anyway)",
+    "body": "Attachment [polybori-0-6-3.7.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0-6-3.7.patch) by malb created at 2009-08-18 13:16:54\n\nThe attached patch fixes the issue (`len(m) == 1` if `m` is a monomial). I don't see how it breaks anf2cnf but I'll check now (this is orthogonal to accepting this patch anyway)",
     "created_at": "2009-08-18T13:16:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
@@ -1294,7 +1294,7 @@ archive/issue_comments_049289.json:
 }
 ```
 
-Attachment
+Attachment [polybori-0-6-3.7.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0-6-3.7.patch) by malb created at 2009-08-18 13:16:54
 
 The attached patch fixes the issue (`len(m) == 1` if `m` is a monomial). I don't see how it breaks anf2cnf but I'll check now (this is orthogonal to accepting this patch anyway)
 
@@ -1368,7 +1368,7 @@ This is implemented in PyPolyBoRi.py
 archive/issue_comments_049292.json:
 ```json
 {
-    "body": "Attachment\n\nrebased and bugfix",
+    "body": "Attachment [polybori-0.6.3.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0.6.3.patch) by malb created at 2009-08-20 13:45:47\n\nrebased and bugfix",
     "created_at": "2009-08-20T13:45:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
@@ -1377,7 +1377,7 @@ archive/issue_comments_049292.json:
 }
 ```
 
-Attachment
+Attachment [polybori-0.6.3.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0.6.3.patch) by malb created at 2009-08-20 13:45:47
 
 rebased and bugfix
 
@@ -1572,7 +1572,7 @@ faster Variable(i)
 archive/issue_comments_049301.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch fixes the bottleneck by avoiding the dummy constructor. Note, that we still need to take care of that Solaris issue Dave reported where scons would pick up the Sun compiler instead of gcc.",
+    "body": "Attachment [polybori-0.6.3.2.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0.6.3.2.patch) by malb created at 2009-08-20 14:43:51\n\nThe attached patch fixes the bottleneck by avoiding the dummy constructor. Note, that we still need to take care of that Solaris issue Dave reported where scons would pick up the Sun compiler instead of gcc.",
     "created_at": "2009-08-20T14:43:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
@@ -1581,7 +1581,7 @@ archive/issue_comments_049301.json:
 }
 ```
 
-Attachment
+Attachment [polybori-0.6.3.2.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0.6.3.2.patch) by malb created at 2009-08-20 14:43:51
 
 The attached patch fixes the bottleneck by avoiding the dummy constructor. Note, that we still need to take care of that Solaris issue Dave reported where scons would pick up the Sun compiler instead of gcc.
 
@@ -1592,7 +1592,7 @@ The attached patch fixes the bottleneck by avoiding the dummy constructor. Note,
 archive/issue_comments_049302.json:
 ```json
 {
-    "body": "Attachment\n\nSolaris fix for patches/custom.py",
+    "body": "Attachment [custom.py](tarball://root/attachments/some-uuid/ticket6177/custom.py) by PolyBoRi created at 2009-08-21 07:06:45\n\nSolaris fix for patches/custom.py",
     "created_at": "2009-08-21T07:06:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
@@ -1601,7 +1601,7 @@ archive/issue_comments_049302.json:
 }
 ```
 
-Attachment
+Attachment [custom.py](tarball://root/attachments/some-uuid/ticket6177/custom.py) by PolyBoRi created at 2009-08-21 07:06:45
 
 Solaris fix for patches/custom.py
 
@@ -1773,7 +1773,7 @@ Patched the (patched) patch/SConstruct to fix the "flags.conf" issue
 archive/issue_comments_049308.json:
 ```json
 {
-    "body": "Attachment\n\nIndeed, this is not a Solaris issue, but it will occur always, in the case, that PolyBoRi wasn't installed in the corresponding Sage before. Some patch from Sage adds the generation of `flags.conf`, but that goes wrong, if the installation directory does not exist before.  The flags-conf.patch above should fix the problem.\n\nRegards,\n  Alexander",
+    "body": "Attachment [flags-conf.patch](tarball://root/attachments/some-uuid/ticket6177/flags-conf.patch) by PolyBoRi created at 2009-08-27 09:32:20\n\nIndeed, this is not a Solaris issue, but it will occur always, in the case, that PolyBoRi wasn't installed in the corresponding Sage before. Some patch from Sage adds the generation of `flags.conf`, but that goes wrong, if the installation directory does not exist before.  The flags-conf.patch above should fix the problem.\n\nRegards,\n  Alexander",
     "created_at": "2009-08-27T09:32:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
@@ -1782,7 +1782,7 @@ archive/issue_comments_049308.json:
 }
 ```
 
-Attachment
+Attachment [flags-conf.patch](tarball://root/attachments/some-uuid/ticket6177/flags-conf.patch) by PolyBoRi created at 2009-08-27 09:32:20
 
 Indeed, this is not a Solaris issue, but it will occur always, in the case, that PolyBoRi wasn't installed in the corresponding Sage before. Some patch from Sage adds the generation of `flags.conf`, but that goes wrong, if the installation directory does not exist before.  The flags-conf.patch above should fix the problem.
 
@@ -1838,7 +1838,7 @@ I will postpone the fPIC issue for now and will concentrate on the pickling issu
 archive/issue_comments_049311.json:
 ```json
 {
-    "body": "Attachment\n\nfixes the pickling issue",
+    "body": "Attachment [polybori-0.6.3.3.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0.6.3.3.patch) by malb created at 2009-08-27 10:35:12\n\nfixes the pickling issue",
     "created_at": "2009-08-27T10:35:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
@@ -1847,7 +1847,7 @@ archive/issue_comments_049311.json:
 }
 ```
 
-Attachment
+Attachment [polybori-0.6.3.3.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0.6.3.3.patch) by malb created at 2009-08-27 10:35:12
 
 fixes the pickling issue
 
@@ -1876,7 +1876,7 @@ The attached patch fixes the pickling issue and now all doctests pass on sage.ma
 archive/issue_comments_049313.json:
 ```json
 {
-    "body": "Attachment\n\nminor fixes",
+    "body": "Attachment [trac_6177_reviewer_patch](tarball://root/attachments/some-uuid/ticket6177/trac_6177_reviewer_patch) by burcin created at 2009-09-10 09:38:04\n\nminor fixes",
     "created_at": "2009-09-10T09:38:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
@@ -1885,7 +1885,7 @@ archive/issue_comments_049313.json:
 }
 ```
 
-Attachment
+Attachment [trac_6177_reviewer_patch](tarball://root/attachments/some-uuid/ticket6177/trac_6177_reviewer_patch) by burcin created at 2009-09-10 09:38:04
 
 minor fixes
 
@@ -1984,7 +1984,7 @@ Resolution: fixed
 archive/issue_comments_049318.json:
 ```json
 {
-    "body": "Attachment\n\nrepo corrupt-free version",
+    "body": "Attachment [trac_6177-polybori-0.6.3.3.patch](tarball://root/attachments/some-uuid/ticket6177/trac_6177-polybori-0.6.3.3.patch) by mvngu created at 2009-09-21 03:42:38\n\nrepo corrupt-free version",
     "created_at": "2009-09-21T03:42:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
@@ -1993,7 +1993,7 @@ archive/issue_comments_049318.json:
 }
 ```
 
-Attachment
+Attachment [trac_6177-polybori-0.6.3.3.patch](tarball://root/attachments/some-uuid/ticket6177/trac_6177-polybori-0.6.3.3.patch) by mvngu created at 2009-09-21 03:42:38
 
 repo corrupt-free version
 
@@ -2022,7 +2022,7 @@ with the ".patch" file extension
 archive/issue_comments_049320.json:
 ```json
 {
-    "body": "Attachment\n\nI have attached two new patches\n\n1. `trac_6177-polybori-0.6.3.3.patch` --- This is the same as `polybori-0.6.3.3.patch`. The only change is inserting the comment \n {{{\n# Insert a comment here to prevent repo corruption.\n }}}\n into the empty file `sage/libs/polybori/__init__.py` in order to prevent repository corruption as was reported on IRC by William Stein:\n {{{\n20:14 < williamstein> mvngu -- possible problem with alpha2\n20:14 < williamstein> i get /scratch/wstein/build/sage-4.1.2.alpha3/devel/sage-main/sage/rings/polynomial/pbori.pxd:10:0: 'sage.libs.polybori.decl.pxd' not found\n20:15 < williamstein> \"repo corruption\"?\n20:15 < williamstein> yep\n20:15 < williamstein> wstein`@`sage:~/build/sage-4.1.2.alpha3/devel/sage$ hg status\n20:15 < williamstein> ! sage/libs/polybori/__init__.py\n20:15 < williamstein> I fix it with:\n20:15 < williamstein> wstein`@`sage:~/build/sage-4.1.2.alpha3/devel/sage$ hg revert --all\n20:15 < williamstein> reverting sage/libs/polybori/__init__.py\n20:16 < mvngu> williamstein: yeah, I just do \"make\" again.\n20:16 < williamstein> mvngu -- that always bites you for some reason.\n20:17 < mvngu> I have been experiencing that problem on every machine I'm building on.\n20:17 < mvngu> It's always about polybori.\n }}}\n1. `trac_6177_reviewer.patch` --- This is the same as `trac_6177_reviewer_patch`. I put in the file extension \".patch\" so that the patch would be displayed with colour on trac.",
+    "body": "Attachment [trac_6177_reviewer.patch](tarball://root/attachments/some-uuid/ticket6177/trac_6177_reviewer.patch) by mvngu created at 2009-09-21 04:07:06\n\nI have attached two new patches\n\n1. `trac_6177-polybori-0.6.3.3.patch` --- This is the same as `polybori-0.6.3.3.patch`. The only change is inserting the comment \n {{{\n# Insert a comment here to prevent repo corruption.\n }}}\n into the empty file `sage/libs/polybori/__init__.py` in order to prevent repository corruption as was reported on IRC by William Stein:\n {{{\n20:14 < williamstein> mvngu -- possible problem with alpha2\n20:14 < williamstein> i get /scratch/wstein/build/sage-4.1.2.alpha3/devel/sage-main/sage/rings/polynomial/pbori.pxd:10:0: 'sage.libs.polybori.decl.pxd' not found\n20:15 < williamstein> \"repo corruption\"?\n20:15 < williamstein> yep\n20:15 < williamstein> wstein`@`sage:~/build/sage-4.1.2.alpha3/devel/sage$ hg status\n20:15 < williamstein> ! sage/libs/polybori/__init__.py\n20:15 < williamstein> I fix it with:\n20:15 < williamstein> wstein`@`sage:~/build/sage-4.1.2.alpha3/devel/sage$ hg revert --all\n20:15 < williamstein> reverting sage/libs/polybori/__init__.py\n20:16 < mvngu> williamstein: yeah, I just do \"make\" again.\n20:16 < williamstein> mvngu -- that always bites you for some reason.\n20:17 < mvngu> I have been experiencing that problem on every machine I'm building on.\n20:17 < mvngu> It's always about polybori.\n }}}\n1. `trac_6177_reviewer.patch` --- This is the same as `trac_6177_reviewer_patch`. I put in the file extension \".patch\" so that the patch would be displayed with colour on trac.",
     "created_at": "2009-09-21T04:07:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
@@ -2031,7 +2031,7 @@ archive/issue_comments_049320.json:
 }
 ```
 
-Attachment
+Attachment [trac_6177_reviewer.patch](tarball://root/attachments/some-uuid/ticket6177/trac_6177_reviewer.patch) by mvngu created at 2009-09-21 04:07:06
 
 I have attached two new patches
 
@@ -2103,7 +2103,7 @@ add files to MANIFEST.in
 archive/issue_comments_049323.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch `trac_6177-manifest.patch` adds the following files to MANIFEST.in:\n\n* `sage/libs/polybori/__init__.py`\n* `sage/libs/polybori/decl.pxd`\n\nThis way, the files would be picked up when making a source release. By now, patches should be **merged in this order**:\n\n1. `trac_6177-polybori-0.6.3.3.patch`\n2. `trac_6177_reviewer.patch`\n3. `trac_6177-manifest.patch`",
+    "body": "Attachment [trac_6177-manifest.patch](tarball://root/attachments/some-uuid/ticket6177/trac_6177-manifest.patch) by mvngu created at 2009-09-21 16:59:53\n\nThe patch `trac_6177-manifest.patch` adds the following files to MANIFEST.in:\n\n* `sage/libs/polybori/__init__.py`\n* `sage/libs/polybori/decl.pxd`\n\nThis way, the files would be picked up when making a source release. By now, patches should be **merged in this order**:\n\n1. `trac_6177-polybori-0.6.3.3.patch`\n2. `trac_6177_reviewer.patch`\n3. `trac_6177-manifest.patch`",
     "created_at": "2009-09-21T16:59:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
@@ -2112,7 +2112,7 @@ archive/issue_comments_049323.json:
 }
 ```
 
-Attachment
+Attachment [trac_6177-manifest.patch](tarball://root/attachments/some-uuid/ticket6177/trac_6177-manifest.patch) by mvngu created at 2009-09-21 16:59:53
 
 The patch `trac_6177-manifest.patch` adds the following files to MANIFEST.in:
 

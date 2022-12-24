@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6005
 archive/issue_comments_047773.json:
 ```json
 {
-    "body": "Attachment\n\n\n```\nsage: K.<i> = QuadraticField(-1) \nsage: i.imag()\n1\n```\n\n\nThe above is hundreds of times slower than i.real().  That needs to be fixed.\n\nit's because of this line\n\n```",
+    "body": "Attachment [6005-qnf-real-imag.patch](tarball://root/attachments/some-uuid/ticket6005/6005-qnf-real-imag.patch) by was created at 2009-05-07 23:33:25\n\n\n```\nsage: K.<i> = QuadraticField(-1) \nsage: i.imag()\n1\n```\n\n\nThe above is hundreds of times slower than i.real().  That needs to be fixed.\n\nit's because of this line\n\n```",
     "created_at": "2009-05-07T23:33:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6005",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_047773.json:
 }
 ```
 
-Attachment
+Attachment [6005-qnf-real-imag.patch](tarball://root/attachments/some-uuid/ticket6005/6005-qnf-real-imag.patch) by was created at 2009-05-07 23:33:25
 
 
 ```
@@ -63,7 +63,7 @@ it's because of this line
 archive/issue_comments_047774.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6005-qnf-real-imag-fix.patch](tarball://root/attachments/some-uuid/ticket6005/6005-qnf-real-imag-fix.patch) by robertwb created at 2009-05-07 23:55:01",
     "created_at": "2009-05-07T23:55:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6005",
     "type": "issue_comment",
@@ -72,7 +72,7 @@ archive/issue_comments_047774.json:
 }
 ```
 
-Attachment
+Attachment [6005-qnf-real-imag-fix.patch](tarball://root/attachments/some-uuid/ticket6005/6005-qnf-real-imag-fix.patch) by robertwb created at 2009-05-07 23:55:01
 
 
 

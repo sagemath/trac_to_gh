@@ -170,7 +170,7 @@ foo.png is attached.
 archive/issue_comments_019988.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [foo.png](tarball://root/attachments/some-uuid/ticket2900/foo.png) by kcrisman created at 2009-09-15 17:31:10",
     "created_at": "2009-09-15T17:31:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2900",
     "type": "issue_comment",
@@ -179,7 +179,7 @@ archive/issue_comments_019988.json:
 }
 ```
 
-Attachment
+Attachment [foo.png](tarball://root/attachments/some-uuid/ticket2900/foo.png) by kcrisman created at 2009-09-15 17:31:10
 
 
 
@@ -206,7 +206,7 @@ Depends on #7059
 archive/issue_comments_019990.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch verifies this is fixed, and uses the new (better) syntax from #7059.",
+    "body": "Attachment [trac_2900-imshow-save.patch](tarball://root/attachments/some-uuid/ticket2900/trac_2900-imshow-save.patch) by kcrisman created at 2009-09-29 14:41:48\n\nThe patch verifies this is fixed, and uses the new (better) syntax from #7059.",
     "created_at": "2009-09-29T14:41:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2900",
     "type": "issue_comment",
@@ -215,7 +215,7 @@ archive/issue_comments_019990.json:
 }
 ```
 
-Attachment
+Attachment [trac_2900-imshow-save.patch](tarball://root/attachments/some-uuid/ticket2900/trac_2900-imshow-save.patch) by kcrisman created at 2009-09-29 14:41:48
 
 The patch verifies this is fixed, and uses the new (better) syntax from #7059.
 

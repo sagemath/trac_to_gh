@@ -54,7 +54,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5028
 archive/issue_comments_038301.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [point2d_doc_5028.patch](tarball://root/attachments/some-uuid/ticket5028/point2d_doc_5028.patch) by slabbe created at 2009-01-19 16:57:00",
     "created_at": "2009-01-19T16:57:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5028",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_038301.json:
 }
 ```
 
-Attachment
+Attachment [point2d_doc_5028.patch](tarball://root/attachments/some-uuid/ticket5028/point2d_doc_5028.patch) by slabbe created at 2009-01-19 16:57:00
 
 
 

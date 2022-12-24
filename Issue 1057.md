@@ -60,7 +60,7 @@ Changing assignee from was to robertwb.
 archive/issue_comments_006425.json:
 ```json
 {
-    "body": "Attachment\n\nOrders now have correct baserings. \n\nWhoever implemented the _base attribute might want to look at how it overrides the (cdef) ParentBase._base attribute, and the implications that might have. \n\nThis patch makes patch #1044 obsolete.",
+    "body": "Attachment [1057-fix-order-basering.hg](tarball://root/attachments/some-uuid/ticket1057/1057-fix-order-basering.hg) by robertwb created at 2007-11-01 23:48:48\n\nOrders now have correct baserings. \n\nWhoever implemented the _base attribute might want to look at how it overrides the (cdef) ParentBase._base attribute, and the implications that might have. \n\nThis patch makes patch #1044 obsolete.",
     "created_at": "2007-11-01T23:48:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1057",
     "type": "issue_comment",
@@ -69,7 +69,7 @@ archive/issue_comments_006425.json:
 }
 ```
 
-Attachment
+Attachment [1057-fix-order-basering.hg](tarball://root/attachments/some-uuid/ticket1057/1057-fix-order-basering.hg) by robertwb created at 2007-11-01 23:48:48
 
 Orders now have correct baserings. 
 

@@ -118,7 +118,7 @@ Non-concurrent first version.  sagenb repo.
 archive/issue_comments_056530.json:
 ```json
 {
-    "body": "Attachment\n\nThe [attachment:trac_6855-published_interacts.patch patch] enables interacts in published worksheets.  Still to do:\n\n* Gracefully handle simultaneous access by multiple clients.\n* Find an alternative to `twist.prep_interact` for rendering the interacts upon load.",
+    "body": "Attachment [trac_6855-published_interacts.patch](tarball://root/attachments/some-uuid/ticket6855/trac_6855-published_interacts.patch) by mpatel created at 2009-11-26 02:36:57\n\nThe [attachment:trac_6855-published_interacts.patch patch] enables interacts in published worksheets.  Still to do:\n\n* Gracefully handle simultaneous access by multiple clients.\n* Find an alternative to `twist.prep_interact` for rendering the interacts upon load.",
     "created_at": "2009-11-26T02:36:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6855",
     "type": "issue_comment",
@@ -127,7 +127,7 @@ archive/issue_comments_056530.json:
 }
 ```
 
-Attachment
+Attachment [trac_6855-published_interacts.patch](tarball://root/attachments/some-uuid/ticket6855/trac_6855-published_interacts.patch) by mpatel created at 2009-11-26 02:36:57
 
 The [attachment:trac_6855-published_interacts.patch patch] enables interacts in published worksheets.  Still to do:
 
@@ -224,7 +224,7 @@ Save and serve the rendered HTML.
 archive/issue_comments_056534.json:
 ```json
 {
-    "body": "Attachment\n\nRebased vs. rebased #4714.  Updated commit message.  Only this one.  sagenb repo.",
+    "body": "Attachment [trac_6855-published_interacts_v2.patch](tarball://root/attachments/some-uuid/ticket6855/trac_6855-published_interacts_v2.patch) by mpatel created at 2009-11-26 07:00:16\n\nRebased vs. rebased #4714.  Updated commit message.  Only this one.  sagenb repo.",
     "created_at": "2009-11-26T07:00:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6855",
     "type": "issue_comment",
@@ -233,7 +233,7 @@ archive/issue_comments_056534.json:
 }
 ```
 
-Attachment
+Attachment [trac_6855-published_interacts_v2.patch](tarball://root/attachments/some-uuid/ticket6855/trac_6855-published_interacts_v2.patch) by mpatel created at 2009-11-26 07:00:16
 
 Rebased vs. rebased #4714.  Updated commit message.  Only this one.  sagenb repo.
 

@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1704
 archive/issue_comments_010794.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [multiply_point.hg](tarball://root/attachments/some-uuid/ticket1704/multiply_point.hg) by dmharvey created at 2008-01-06 23:20:24",
     "created_at": "2008-01-06T23:20:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1704",
     "type": "issue_comment",
@@ -41,7 +41,7 @@ archive/issue_comments_010794.json:
 }
 ```
 
-Attachment
+Attachment [multiply_point.hg](tarball://root/attachments/some-uuid/ticket1704/multiply_point.hg) by dmharvey created at 2008-01-06 23:20:24
 
 
 

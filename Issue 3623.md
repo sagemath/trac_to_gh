@@ -104,7 +104,7 @@ Thanks. I'll rebase this as soon as 3.1.2 comes out (as I doubt this ticket will
 archive/issue_comments_025618.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3623-factory-1.patch](tarball://root/attachments/some-uuid/ticket3623/3623-factory-1.patch) by robertwb created at 2008-09-23 23:11:01",
     "created_at": "2008-09-23T23:11:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3623",
     "type": "issue_comment",
@@ -113,7 +113,7 @@ archive/issue_comments_025618.json:
 }
 ```
 
-Attachment
+Attachment [3623-factory-1.patch](tarball://root/attachments/some-uuid/ticket3623/3623-factory-1.patch) by robertwb created at 2008-09-23 23:11:01
 
 
 
@@ -122,7 +122,7 @@ Attachment
 archive/issue_comments_025619.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3623-factory-3.patch](tarball://root/attachments/some-uuid/ticket3623/3623-factory-3.patch) by robertwb created at 2008-09-23 23:11:26",
     "created_at": "2008-09-23T23:11:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3623",
     "type": "issue_comment",
@@ -131,7 +131,7 @@ archive/issue_comments_025619.json:
 }
 ```
 
-Attachment
+Attachment [3623-factory-3.patch](tarball://root/attachments/some-uuid/ticket3623/3623-factory-3.patch) by robertwb created at 2008-09-23 23:11:26
 
 
 
@@ -140,7 +140,7 @@ Attachment
 archive/issue_comments_025620.json:
 ```json
 {
-    "body": "Attachment\n\nAll four patches rebased.",
+    "body": "Attachment [3623-factory-4.patch](tarball://root/attachments/some-uuid/ticket3623/3623-factory-4.patch) by robertwb created at 2008-09-23 23:12:25\n\nAll four patches rebased.",
     "created_at": "2008-09-23T23:12:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3623",
     "type": "issue_comment",
@@ -149,7 +149,7 @@ archive/issue_comments_025620.json:
 }
 ```
 
-Attachment
+Attachment [3623-factory-4.patch](tarball://root/attachments/some-uuid/ticket3623/3623-factory-4.patch) by robertwb created at 2008-09-23 23:12:25
 
 All four patches rebased.
 
@@ -160,7 +160,7 @@ All four patches rebased.
 archive/issue_comments_025621.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3623-factory-5.patch](tarball://root/attachments/some-uuid/ticket3623/3623-factory-5.patch) by robertwb created at 2008-09-24 05:29:50",
     "created_at": "2008-09-24T05:29:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3623",
     "type": "issue_comment",
@@ -169,7 +169,7 @@ archive/issue_comments_025621.json:
 }
 ```
 
-Attachment
+Attachment [3623-factory-5.patch](tarball://root/attachments/some-uuid/ticket3623/3623-factory-5.patch) by robertwb created at 2008-09-24 05:29:50
 
 
 
@@ -238,7 +238,7 @@ patches 1-5 folded and rebased onto 3.2.1
 archive/issue_comments_025624.json:
 ```json
 {
-    "body": "Attachment\n\nOK, this is once again rebased.",
+    "body": "Attachment [3623-all-3.2.1.patch](tarball://root/attachments/some-uuid/ticket3623/3623-all-3.2.1.patch) by robertwb created at 2008-12-02 12:42:03\n\nOK, this is once again rebased.",
     "created_at": "2008-12-02T12:42:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3623",
     "type": "issue_comment",
@@ -247,7 +247,7 @@ archive/issue_comments_025624.json:
 }
 ```
 
-Attachment
+Attachment [3623-all-3.2.1.patch](tarball://root/attachments/some-uuid/ticket3623/3623-all-3.2.1.patch) by robertwb created at 2008-12-02 12:42:03
 
 OK, this is once again rebased.
 
@@ -357,7 +357,7 @@ Michael
 archive/issue_comments_025626.json:
 ```json
 {
-    "body": "Attachment\n\napply after 3623-3.2.1-all.patch",
+    "body": "Attachment [3623-fix.patch](tarball://root/attachments/some-uuid/ticket3623/3623-fix.patch) by robertwb created at 2008-12-02 20:18:39\n\napply after 3623-3.2.1-all.patch",
     "created_at": "2008-12-02T20:18:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3623",
     "type": "issue_comment",
@@ -366,7 +366,7 @@ archive/issue_comments_025626.json:
 }
 ```
 
-Attachment
+Attachment [3623-fix.patch](tarball://root/attachments/some-uuid/ticket3623/3623-fix.patch) by robertwb created at 2008-12-02 20:18:39
 
 apply after 3623-3.2.1-all.patch
 

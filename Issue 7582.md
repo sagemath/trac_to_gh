@@ -244,7 +244,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_064642.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good.",
+    "body": "Attachment [trac_7582-libsingular_segfault.patch](tarball://root/attachments/some-uuid/ticket7582/trac_7582-libsingular_segfault.patch) by wjp created at 2010-01-17 17:30:48\n\nLooks good.",
     "created_at": "2010-01-17T17:30:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7582",
     "type": "issue_comment",
@@ -253,7 +253,7 @@ archive/issue_comments_064642.json:
 }
 ```
 
-Attachment
+Attachment [trac_7582-libsingular_segfault.patch](tarball://root/attachments/some-uuid/ticket7582/trac_7582-libsingular_segfault.patch) by wjp created at 2010-01-17 17:30:48
 
 Looks good.
 

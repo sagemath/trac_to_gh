@@ -51,7 +51,7 @@ The bundle
 archive/issue_comments_004532.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Trac766.hg](tarball://root/attachments/some-uuid/ticket766/Trac766.hg) by was created at 2007-11-03 15:28:03",
     "created_at": "2007-11-03T15:28:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/766",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_004532.json:
 }
 ```
 
-Attachment
+Attachment [Trac766.hg](tarball://root/attachments/some-uuid/ticket766/Trac766.hg) by was created at 2007-11-03 15:28:03
 
 
 

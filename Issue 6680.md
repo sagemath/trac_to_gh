@@ -114,7 +114,7 @@ New version attached !! Will put some energy into Sage's graph library ! ;-)
 archive/issue_comments_054913.json:
 ```json
 {
-    "body": "Attachment\n\nI am splitting this ticket into smallers ones",
+    "body": "Attachment [graphfunctions-1.patch](tarball://root/attachments/some-uuid/ticket6680/graphfunctions-1.patch) by ncohen created at 2009-12-03 14:32:42\n\nI am splitting this ticket into smallers ones",
     "created_at": "2009-12-03T14:32:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6680",
     "type": "issue_comment",
@@ -123,7 +123,7 @@ archive/issue_comments_054913.json:
 }
 ```
 
-Attachment
+Attachment [graphfunctions-1.patch](tarball://root/attachments/some-uuid/ticket6680/graphfunctions-1.patch) by ncohen created at 2009-12-03 14:32:42
 
 I am splitting this ticket into smallers ones
 

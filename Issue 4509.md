@@ -46,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4509
 archive/issue_comments_033428.json:
 ```json
 {
-    "body": "Attachment\n\nI think this might depend on one or more of #4505 or #4506.",
+    "body": "Attachment [long-doctest-segfault.patch](tarball://root/attachments/some-uuid/ticket4509/long-doctest-segfault.patch) by jason created at 2008-11-13 06:01:22\n\nI think this might depend on one or more of #4505 or #4506.",
     "created_at": "2008-11-13T06:01:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4509",
     "type": "issue_comment",
@@ -55,7 +55,7 @@ archive/issue_comments_033428.json:
 }
 ```
 
-Attachment
+Attachment [long-doctest-segfault.patch](tarball://root/attachments/some-uuid/ticket4509/long-doctest-segfault.patch) by jason created at 2008-11-13 06:01:22
 
 I think this might depend on one or more of #4505 or #4506.
 
@@ -305,7 +305,7 @@ Michael
 archive/issue_comments_033430.json:
 ```json
 {
-    "body": "Attachment\n\nplanarity-segfault-trip-gdb.patch is a patch which supplies a poor man's assert: we see the problem when Jfirst is -1 *and* when the random memory location happens to be 2.  The patch causes a segfault whenever Jfirst is -1.",
+    "body": "Attachment [planarity-segfault-trip-gdb.patch](tarball://root/attachments/some-uuid/ticket4509/planarity-segfault-trip-gdb.patch) by jason created at 2008-11-13 06:15:51\n\nplanarity-segfault-trip-gdb.patch is a patch which supplies a poor man's assert: we see the problem when Jfirst is -1 *and* when the random memory location happens to be 2.  The patch causes a segfault whenever Jfirst is -1.",
     "created_at": "2008-11-13T06:15:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4509",
     "type": "issue_comment",
@@ -314,7 +314,7 @@ archive/issue_comments_033430.json:
 }
 ```
 
-Attachment
+Attachment [planarity-segfault-trip-gdb.patch](tarball://root/attachments/some-uuid/ticket4509/planarity-segfault-trip-gdb.patch) by jason created at 2008-11-13 06:15:51
 
 planarity-segfault-trip-gdb.patch is a patch which supplies a poor man's assert: we see the problem when Jfirst is -1 *and* when the random memory location happens to be 2.  The patch causes a segfault whenever Jfirst is -1.
 
@@ -775,7 +775,7 @@ rebased vs. Sage 4.3.4.alpha1; apply on this
 archive/issue_comments_033447.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good and applies cleanly to 4.3.5.  Let's put it out of its misery.",
+    "body": "Attachment [trac_4509-doctest-rebase.patch](tarball://root/attachments/some-uuid/ticket4509/trac_4509-doctest-rebase.patch) by AlexGhitza created at 2010-04-03 06:09:36\n\nLooks good and applies cleanly to 4.3.5.  Let's put it out of its misery.",
     "created_at": "2010-04-03T06:09:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4509",
     "type": "issue_comment",
@@ -784,7 +784,7 @@ archive/issue_comments_033447.json:
 }
 ```
 
-Attachment
+Attachment [trac_4509-doctest-rebase.patch](tarball://root/attachments/some-uuid/ticket4509/trac_4509-doctest-rebase.patch) by AlexGhitza created at 2010-04-03 06:09:36
 
 Looks good and applies cleanly to 4.3.5.  Let's put it out of its misery.
 

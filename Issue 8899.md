@@ -249,7 +249,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_081863.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_11929_8899-ncsf-qsym-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-ncsf-qsym-fs.patch) by saliola created at 2012-07-28 12:18:01",
     "created_at": "2012-07-28T12:18:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
@@ -258,7 +258,7 @@ archive/issue_comments_081863.json:
 }
 ```
 
-Attachment
+Attachment [trac_11929_8899-ncsf-qsym-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-ncsf-qsym-fs.patch) by saliola created at 2012-07-28 12:18:01
 
 
 
@@ -305,7 +305,7 @@ i.e. a double dash after the variable to be explained [and a space after the ini
 archive/issue_comments_081865.json:
 ```json
 {
-    "body": "Attachment\n\nTwo new small patches.\n\n1. `trac_11929_8899-fix_skewby-fs.patch:` Fixes things so that the following raises an error:\n\n```\nF([2,1]).skew_by([1])\n```\n\n\n2. `trac_11929_8899-add_degree_to_elementmethods-fs.patch:` addes `ElementMethods.degree` and `ElementMethods.is_homogeneous` to `GradedAlgebrasWithBasis` (I extracted these from a separate patch on the sage-combinat queue).\n\n**Outstanding question about the degree of an element:** what do we want as the default behaviour? Should it:\na. raise an error if the element is not homogeneous; or\nb. return the maximum of the degrees of the homogeneous summands?",
+    "body": "Attachment [trac_11929_8899-fix_skewby-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-fix_skewby-fs.patch) by saliola created at 2012-08-13 20:46:41\n\nTwo new small patches.\n\n1. `trac_11929_8899-fix_skewby-fs.patch:` Fixes things so that the following raises an error:\n\n```\nF([2,1]).skew_by([1])\n```\n\n\n2. `trac_11929_8899-add_degree_to_elementmethods-fs.patch:` addes `ElementMethods.degree` and `ElementMethods.is_homogeneous` to `GradedAlgebrasWithBasis` (I extracted these from a separate patch on the sage-combinat queue).\n\n**Outstanding question about the degree of an element:** what do we want as the default behaviour? Should it:\na. raise an error if the element is not homogeneous; or\nb. return the maximum of the degrees of the homogeneous summands?",
     "created_at": "2012-08-13T20:46:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
@@ -314,7 +314,7 @@ archive/issue_comments_081865.json:
 }
 ```
 
-Attachment
+Attachment [trac_11929_8899-fix_skewby-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-fix_skewby-fs.patch) by saliola created at 2012-08-13 20:46:41
 
 Two new small patches.
 
@@ -338,7 +338,7 @@ b. return the maximum of the degrees of the homogeneous summands?
 archive/issue_comments_081866.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_11929_8899-add_degree_to_elementmethods-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-add_degree_to_elementmethods-fs.patch) by saliola created at 2012-08-14 14:18:26",
     "created_at": "2012-08-14T14:18:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
@@ -347,7 +347,7 @@ archive/issue_comments_081866.json:
 }
 ```
 
-Attachment
+Attachment [trac_11929_8899-add_degree_to_elementmethods-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-add_degree_to_elementmethods-fs.patch) by saliola created at 2012-08-14 14:18:26
 
 
 
@@ -430,7 +430,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_081870.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_11929_8899-include_doc_in_reference_manual-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-include_doc_in_reference_manual-fs.patch) by saliola created at 2012-08-14 16:02:43",
     "created_at": "2012-08-14T16:02:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
@@ -439,7 +439,7 @@ archive/issue_comments_081870.json:
 }
 ```
 
-Attachment
+Attachment [trac_11929_8899-include_doc_in_reference_manual-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-include_doc_in_reference_manual-fs.patch) by saliola created at 2012-08-14 16:02:43
 
 
 
@@ -448,7 +448,7 @@ Attachment
 archive/issue_comments_081871.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch [attachment: trac_11929_8899-modify_duality_method_names-fs.patch] modifies the duality method names to conform to #13372. Namely:\n\n- `object.dual` returns the dual object:\n\n```\nsage: N.dual()\nQuasisymmetric functions over the Rational Field\nsage: S.dual()\nQuasisymmetric functions over the Rational Field on the Monomial basis\nsage: R.dual()\nQuasisymmetric functions over the Rational Field on the Fundamental basis\n```\n\n\n- `dual_pairing` became `duality_pairing`",
+    "body": "Attachment [trac_11929_8899-modify_duality_method_names-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-modify_duality_method_names-fs.patch) by saliola created at 2012-08-15 15:35:25\n\nThe patch [attachment: trac_11929_8899-modify_duality_method_names-fs.patch] modifies the duality method names to conform to #13372. Namely:\n\n- `object.dual` returns the dual object:\n\n```\nsage: N.dual()\nQuasisymmetric functions over the Rational Field\nsage: S.dual()\nQuasisymmetric functions over the Rational Field on the Monomial basis\nsage: R.dual()\nQuasisymmetric functions over the Rational Field on the Fundamental basis\n```\n\n\n- `dual_pairing` became `duality_pairing`",
     "created_at": "2012-08-15T15:35:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
@@ -457,7 +457,7 @@ archive/issue_comments_081871.json:
 }
 ```
 
-Attachment
+Attachment [trac_11929_8899-modify_duality_method_names-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-modify_duality_method_names-fs.patch) by saliola created at 2012-08-15 15:35:25
 
 The patch [attachment: trac_11929_8899-modify_duality_method_names-fs.patch] modifies the duality method names to conform to #13372. Namely:
 
@@ -482,7 +482,7 @@ Quasisymmetric functions over the Rational Field on the Fundamental basis
 archive/issue_comments_081872.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_11929_8899-is_symmetric-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-is_symmetric-fs.patch) by saliola created at 2012-08-16 21:08:47",
     "created_at": "2012-08-16T21:08:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
@@ -491,7 +491,7 @@ archive/issue_comments_081872.json:
 }
 ```
 
-Attachment
+Attachment [trac_11929_8899-is_symmetric-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-is_symmetric-fs.patch) by saliola created at 2012-08-16 21:08:47
 
 
 
@@ -518,7 +518,7 @@ archive/issue_comments_081873.json:
 archive/issue_comments_081874.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_11929_8899-internal_product_fix-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-internal_product_fix-fs.patch) by saliola created at 2012-08-16 21:27:00",
     "created_at": "2012-08-16T21:27:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
@@ -527,7 +527,7 @@ archive/issue_comments_081874.json:
 }
 ```
 
-Attachment
+Attachment [trac_11929_8899-internal_product_fix-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-internal_product_fix-fs.patch) by saliola created at 2012-08-16 21:27:00
 
 
 
@@ -572,7 +572,7 @@ minor doc fixes and a quasi-symmetric function tutorial
 archive/issue_comments_081877.json:
 ```json
 {
-    "body": "Attachment\n\nMinor changes to documentation plus the addition of a tutorial for quasi-symmetric function and additional doc tests and examples.  The doc tests added use functionality that is in sage-5.3.beta2.",
+    "body": "Attachment [trac_11929_8899-additional_documentation-mz.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-additional_documentation-mz.patch) by zabrocki created at 2012-08-17 20:44:25\n\nMinor changes to documentation plus the addition of a tutorial for quasi-symmetric function and additional doc tests and examples.  The doc tests added use functionality that is in sage-5.3.beta2.",
     "created_at": "2012-08-17T20:44:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
@@ -581,7 +581,7 @@ archive/issue_comments_081877.json:
 }
 ```
 
-Attachment
+Attachment [trac_11929_8899-additional_documentation-mz.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-additional_documentation-mz.patch) by zabrocki created at 2012-08-17 20:44:25
 
 Minor changes to documentation plus the addition of a tutorial for quasi-symmetric function and additional doc tests and examples.  The doc tests added use functionality that is in sage-5.3.beta2.
 
@@ -592,7 +592,7 @@ Minor changes to documentation plus the addition of a tutorial for quasi-symmetr
 archive/issue_comments_081878.json:
 ```json
 {
-    "body": "Attachment\n\nrebased to 5.3.beta2",
+    "body": "Attachment [trac_11929_8899-antipode_by_coercion_in_category-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-antipode_by_coercion_in_category-fs.patch) by saliola created at 2012-08-18 02:05:55\n\nrebased to 5.3.beta2",
     "created_at": "2012-08-18T02:05:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
@@ -601,7 +601,7 @@ archive/issue_comments_081878.json:
 }
 ```
 
-Attachment
+Attachment [trac_11929_8899-antipode_by_coercion_in_category-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-antipode_by_coercion_in_category-fs.patch) by saliola created at 2012-08-18 02:05:55
 
 rebased to 5.3.beta2
 
@@ -612,7 +612,7 @@ rebased to 5.3.beta2
 archive/issue_comments_081879.json:
 ```json
 {
-    "body": "Attachment\n\nextra doctests for coproduct and counit",
+    "body": "Attachment [coproduct_with_realizations-fs.patch](tarball://root/attachments/some-uuid/ticket8899/coproduct_with_realizations-fs.patch) by saliola created at 2012-08-18 02:21:19\n\nextra doctests for coproduct and counit",
     "created_at": "2012-08-18T02:21:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
@@ -621,7 +621,7 @@ archive/issue_comments_081879.json:
 }
 ```
 
-Attachment
+Attachment [coproduct_with_realizations-fs.patch](tarball://root/attachments/some-uuid/ticket8899/coproduct_with_realizations-fs.patch) by saliola created at 2012-08-18 02:21:19
 
 extra doctests for coproduct and counit
 
@@ -652,7 +652,7 @@ Apply: trac_11929_8899-ncsf-qsym-folded-fs.patch, trac_11929_8899-additional_doc
 archive/issue_comments_081881.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_11929_8899-additional_documentation-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-additional_documentation-fs.patch) by saliola created at 2012-08-18 04:50:12",
     "created_at": "2012-08-18T04:50:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
@@ -661,7 +661,7 @@ archive/issue_comments_081881.json:
 }
 ```
 
-Attachment
+Attachment [trac_11929_8899-additional_documentation-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-additional_documentation-fs.patch) by saliola created at 2012-08-18 04:50:12
 
 
 
@@ -706,7 +706,7 @@ Here is a summary of the changes:
 archive/issue_comments_081883.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [additional-addional-documentation-mz.patch](tarball://root/attachments/some-uuid/ticket8899/additional-addional-documentation-mz.patch) by saliola created at 2012-08-22 18:02:43",
     "created_at": "2012-08-22T18:02:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
@@ -715,7 +715,7 @@ archive/issue_comments_081883.json:
 }
 ```
 
-Attachment
+Attachment [additional-addional-documentation-mz.patch](tarball://root/attachments/some-uuid/ticket8899/additional-addional-documentation-mz.patch) by saliola created at 2012-08-22 18:02:43
 
 
 
@@ -724,7 +724,7 @@ Attachment
 archive/issue_comments_081884.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_11929_8899-from_polynomial-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-from_polynomial-fs.patch) by saliola created at 2012-08-22 18:28:33",
     "created_at": "2012-08-22T18:28:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
@@ -733,7 +733,7 @@ archive/issue_comments_081884.json:
 }
 ```
 
-Attachment
+Attachment [trac_11929_8899-from_polynomial-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-from_polynomial-fs.patch) by saliola created at 2012-08-22 18:28:33
 
 
 
@@ -894,7 +894,7 @@ Thanks Mike! I just tested and confirm that when I apply the patch that is attac
 archive/issue_comments_081893.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_11929_8899_minor_docfix-mz.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899_minor_docfix-mz.patch) by zabrocki created at 2012-08-22 22:33:06",
     "created_at": "2012-08-22T22:33:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
@@ -903,7 +903,7 @@ archive/issue_comments_081893.json:
 }
 ```
 
-Attachment
+Attachment [trac_11929_8899_minor_docfix-mz.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899_minor_docfix-mz.patch) by zabrocki created at 2012-08-22 22:33:06
 
 
 
@@ -1013,7 +1013,7 @@ APPLY ONLY THIS PATCH!
 archive/issue_comments_081899.json:
 ```json
 {
-    "body": "Attachment\n\nI folded these three patches together and cleaned up the commit message (so that that patchbot doesn't complain):\n* [attachment:trac_11929_8899-ncsf-qsym-folded-fs.patch]\n* [attachment:trac_11929_8899-from_polynomial-fs.patch]\n* [attachment:trac_11929_8899_minor_docfix-mz.patch]\n\nApply: [attachment:trac_11929_8899-ncsf-qsym-final.patch]",
+    "body": "Attachment [trac_11929_8899-ncsf-qsym-final.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-ncsf-qsym-final.patch) by saliola created at 2012-08-23 14:06:26\n\nI folded these three patches together and cleaned up the commit message (so that that patchbot doesn't complain):\n* [attachment:trac_11929_8899-ncsf-qsym-folded-fs.patch]\n* [attachment:trac_11929_8899-from_polynomial-fs.patch]\n* [attachment:trac_11929_8899_minor_docfix-mz.patch]\n\nApply: [attachment:trac_11929_8899-ncsf-qsym-final.patch]",
     "created_at": "2012-08-23T14:06:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
@@ -1022,7 +1022,7 @@ archive/issue_comments_081899.json:
 }
 ```
 
-Attachment
+Attachment [trac_11929_8899-ncsf-qsym-final.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-ncsf-qsym-final.patch) by saliola created at 2012-08-23 14:06:26
 
 I folded these three patches together and cleaned up the commit message (so that that patchbot doesn't complain):
 * [attachment:trac_11929_8899-ncsf-qsym-folded-fs.patch]
@@ -1100,7 +1100,7 @@ Changing status from positive_review to needs_info.
 archive/issue_comments_081903.json:
 ```json
 {
-    "body": "Attachment\n\n[attachment:trac_11929_8899-ncsf-qsym-repr-fix-fs.patch] modifies `_repr_` to conform to the standards set out in #13404.\n\nNote: this patch does *not* depend on #13404.\n\nApply: trac_11929_8899-ncsf-qsym-final.patch, trac_11929_8899-ncsf-qsym-repr-fix-fs.patch",
+    "body": "Attachment [trac_11929_8899-ncsf-qsym-repr-fix-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-ncsf-qsym-repr-fix-fs.patch) by saliola created at 2012-09-02 15:04:45\n\n[attachment:trac_11929_8899-ncsf-qsym-repr-fix-fs.patch] modifies `_repr_` to conform to the standards set out in #13404.\n\nNote: this patch does *not* depend on #13404.\n\nApply: trac_11929_8899-ncsf-qsym-final.patch, trac_11929_8899-ncsf-qsym-repr-fix-fs.patch",
     "created_at": "2012-09-02T15:04:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
@@ -1109,7 +1109,7 @@ archive/issue_comments_081903.json:
 }
 ```
 
-Attachment
+Attachment [trac_11929_8899-ncsf-qsym-repr-fix-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-ncsf-qsym-repr-fix-fs.patch) by saliola created at 2012-09-02 15:04:45
 
 [attachment:trac_11929_8899-ncsf-qsym-repr-fix-fs.patch] modifies `_repr_` to conform to the standards set out in #13404.
 

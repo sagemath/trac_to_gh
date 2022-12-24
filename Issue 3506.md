@@ -76,7 +76,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3506
 archive/issue_comments_024715.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3506.patch](tarball://root/attachments/some-uuid/ticket3506/sage-3506.patch) by was created at 2008-06-25 01:40:02",
     "created_at": "2008-06-25T01:40:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3506",
     "type": "issue_comment",
@@ -85,7 +85,7 @@ archive/issue_comments_024715.json:
 }
 ```
 
-Attachment
+Attachment [sage-3506.patch](tarball://root/attachments/some-uuid/ticket3506/sage-3506.patch) by was created at 2008-06-25 01:40:02
 
 
 

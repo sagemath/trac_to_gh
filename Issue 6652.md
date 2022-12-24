@@ -77,7 +77,7 @@ Changing status from new to assigned.
 archive/issue_comments_054604.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6652_stream_without_algebra_knowledge_rhx.patch](tarball://root/attachments/some-uuid/ticket6652/trac_6652_stream_without_algebra_knowledge_rhx.patch) by hemmecke created at 2009-07-29 11:59:12",
     "created_at": "2009-07-29T11:59:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6652",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_054604.json:
 }
 ```
 
-Attachment
+Attachment [trac_6652_stream_without_algebra_knowledge_rhx.patch](tarball://root/attachments/some-uuid/ticket6652/trac_6652_stream_without_algebra_knowledge_rhx.patch) by hemmecke created at 2009-07-29 11:59:12
 
 
 

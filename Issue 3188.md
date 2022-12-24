@@ -53,7 +53,7 @@ Changing status from new to assigned.
 archive/issue_comments_022055.json:
 ```json
 {
-    "body": "Attachment\n\nAn updated spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.2/alpha1/mpfi-1.3.4-cvs20071125.p7.spkg\n\nCheers,\n\nMichael",
+    "body": "Attachment [mpfi-1.3.4-cvs20071125.p5-spkg-install.patch](tarball://root/attachments/some-uuid/ticket3188/mpfi-1.3.4-cvs20071125.p5-spkg-install.patch) by mabshoff created at 2008-05-19 04:08:22\n\nAn updated spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.2/alpha1/mpfi-1.3.4-cvs20071125.p7.spkg\n\nCheers,\n\nMichael",
     "created_at": "2008-05-19T04:08:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3188",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_022055.json:
 }
 ```
 
-Attachment
+Attachment [mpfi-1.3.4-cvs20071125.p5-spkg-install.patch](tarball://root/attachments/some-uuid/ticket3188/mpfi-1.3.4-cvs20071125.p5-spkg-install.patch) by mabshoff created at 2008-05-19 04:08:22
 
 An updated spkg is at
 

@@ -64,7 +64,7 @@ Just creating a ticket.
 archive/issue_comments_063246.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sageogebra.py](tarball://root/attachments/some-uuid/ticket7489/sageogebra.py) by mmarco created at 2011-03-04 18:54:46",
     "created_at": "2011-03-04T18:54:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7489",
     "type": "issue_comment",
@@ -73,7 +73,7 @@ archive/issue_comments_063246.json:
 }
 ```
 
-Attachment
+Attachment [sageogebra.py](tarball://root/attachments/some-uuid/ticket7489/sageogebra.py) by mmarco created at 2011-03-04 18:54:46
 
 
 
@@ -109,7 +109,7 @@ A.eval_command('P = (1,1)')
 archive/issue_comments_063248.json:
 ```json
 {
-    "body": "Attachment\n\nNow supports multiple applets on a single worksheet",
+    "body": "Attachment [sageogebra.2.py](tarball://root/attachments/some-uuid/ticket7489/sageogebra.2.py) by jhicks created at 2011-03-05 16:39:53\n\nNow supports multiple applets on a single worksheet",
     "created_at": "2011-03-05T16:39:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7489",
     "type": "issue_comment",
@@ -118,7 +118,7 @@ archive/issue_comments_063248.json:
 }
 ```
 
-Attachment
+Attachment [sageogebra.2.py](tarball://root/attachments/some-uuid/ticket7489/sageogebra.2.py) by jhicks created at 2011-03-05 16:39:53
 
 Now supports multiple applets on a single worksheet
 

@@ -125,7 +125,7 @@ not offset as blue. (Eg, the next link at the bottom of the page does not appear
 archive/issue_comments_037199.json:
 ```json
 {
-    "body": "Attachment\n\nI attached a patch which fixes the problem with the nested quotes.\n\nI'm not seeing the problem that you are in Firefox 3.0.",
+    "body": "Attachment [trac_4903-2.patch](tarball://root/attachments/some-uuid/ticket4903/trac_4903-2.patch) by mhansen created at 2009-01-02 20:32:51\n\nI attached a patch which fixes the problem with the nested quotes.\n\nI'm not seeing the problem that you are in Firefox 3.0.",
     "created_at": "2009-01-02T20:32:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4903",
     "type": "issue_comment",
@@ -134,7 +134,7 @@ archive/issue_comments_037199.json:
 }
 ```
 
-Attachment
+Attachment [trac_4903-2.patch](tarball://root/attachments/some-uuid/ticket4903/trac_4903-2.patch) by mhansen created at 2009-01-02 20:32:51
 
 I attached a patch which fixes the problem with the nested quotes.
 
@@ -147,7 +147,7 @@ I'm not seeing the problem that you are in Firefox 3.0.
 archive/issue_comments_037200.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage.calculus-final.patch](tarball://root/attachments/some-uuid/ticket4903/sage.calculus-final.patch) by cwitty created at 2009-02-22 03:39:58",
     "created_at": "2009-02-22T03:39:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4903",
     "type": "issue_comment",
@@ -156,7 +156,7 @@ archive/issue_comments_037200.json:
 }
 ```
 
-Attachment
+Attachment [sage.calculus-final.patch](tarball://root/attachments/some-uuid/ticket4903/sage.calculus-final.patch) by cwitty created at 2009-02-22 03:39:58
 
 
 
@@ -165,7 +165,7 @@ Attachment
 archive/issue_comments_037201.json:
 ```json
 {
-    "body": "Attachment\n\nI've posted a tiny fix to make doctests pass in sage.calculus.* after sphinxification.",
+    "body": "Attachment [trac4903-tiny-fix.patch](tarball://root/attachments/some-uuid/ticket4903/trac4903-tiny-fix.patch) by cwitty created at 2009-02-22 03:40:34\n\nI've posted a tiny fix to make doctests pass in sage.calculus.* after sphinxification.",
     "created_at": "2009-02-22T03:40:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4903",
     "type": "issue_comment",
@@ -174,7 +174,7 @@ archive/issue_comments_037201.json:
 }
 ```
 
-Attachment
+Attachment [trac4903-tiny-fix.patch](tarball://root/attachments/some-uuid/ticket4903/trac4903-tiny-fix.patch) by cwitty created at 2009-02-22 03:40:34
 
 I've posted a tiny fix to make doctests pass in sage.calculus.* after sphinxification.
 

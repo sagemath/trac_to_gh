@@ -69,7 +69,7 @@ Changing assignee from somebody to robertwb.
 archive/issue_comments_012290.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached bundle builds on and includes #1828 and #1862.",
+    "body": "Attachment [1938-fast-float-eval.hg](tarball://root/attachments/some-uuid/ticket1938/1938-fast-float-eval.hg) by robertwb created at 2008-01-26 12:15:07\n\nThe attached bundle builds on and includes #1828 and #1862.",
     "created_at": "2008-01-26T12:15:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1938",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_012290.json:
 }
 ```
 
-Attachment
+Attachment [1938-fast-float-eval.hg](tarball://root/attachments/some-uuid/ticket1938/1938-fast-float-eval.hg) by robertwb created at 2008-01-26 12:15:07
 
 The attached bundle builds on and includes #1828 and #1862.
 
@@ -203,7 +203,7 @@ Wall time: 0.04
 archive/issue_comments_012295.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [fast-float-merged.hg](tarball://root/attachments/some-uuid/ticket1938/fast-float-merged.hg) by robertwb created at 2008-01-27 10:57:20",
     "created_at": "2008-01-27T10:57:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1938",
     "type": "issue_comment",
@@ -212,7 +212,7 @@ archive/issue_comments_012295.json:
 }
 ```
 
-Attachment
+Attachment [fast-float-merged.hg](tarball://root/attachments/some-uuid/ticket1938/fast-float-merged.hg) by robertwb created at 2008-01-27 10:57:20
 
 
 
@@ -330,7 +330,7 @@ The most recently attached bundle contains everything.
 archive/issue_comments_012299.json:
 ```json
 {
-    "body": "Attachment\n\nThere are still doctest failures in fast_eval.pyx.  Otherwise this patch is good.\nI've posted a .patch that fixes most of those failures, plus a bunch of roughness in the paragraphs at the top.  But there are three failing doctests left.  Please fix and then this patch will be ready to go.\n\n -- William",
+    "body": "Attachment [1938-fast-float-fixes.hg](tarball://root/attachments/some-uuid/ticket1938/1938-fast-float-fixes.hg) by was created at 2008-01-29 13:06:30\n\nThere are still doctest failures in fast_eval.pyx.  Otherwise this patch is good.\nI've posted a .patch that fixes most of those failures, plus a bunch of roughness in the paragraphs at the top.  But there are three failing doctests left.  Please fix and then this patch will be ready to go.\n\n -- William",
     "created_at": "2008-01-29T13:06:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1938",
     "type": "issue_comment",
@@ -339,7 +339,7 @@ archive/issue_comments_012299.json:
 }
 ```
 
-Attachment
+Attachment [1938-fast-float-fixes.hg](tarball://root/attachments/some-uuid/ticket1938/1938-fast-float-fixes.hg) by was created at 2008-01-29 13:06:30
 
 There are still doctest failures in fast_eval.pyx.  Otherwise this patch is good.
 I've posted a .patch that fixes most of those failures, plus a bunch of roughness in the paragraphs at the top.  But there are three failing doctests left.  Please fix and then this patch will be ready to go.
@@ -408,7 +408,7 @@ do apply this
 archive/issue_comments_012302.json:
 ```json
 {
-    "body": "Attachment\n\nYou're right -- I didn't \"sage -br\" after the merge.  I redid the last patch, with a few fixes to typos and the writing in the paragraph, but without changing any doctests.",
+    "body": "Attachment [trac-1938-fix_some_docstrings.patch](tarball://root/attachments/some-uuid/ticket1938/trac-1938-fix_some_docstrings.patch) by was created at 2008-01-30 03:05:00\n\nYou're right -- I didn't \"sage -br\" after the merge.  I redid the last patch, with a few fixes to typos and the writing in the paragraph, but without changing any doctests.",
     "created_at": "2008-01-30T03:05:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1938",
     "type": "issue_comment",
@@ -417,7 +417,7 @@ archive/issue_comments_012302.json:
 }
 ```
 
-Attachment
+Attachment [trac-1938-fix_some_docstrings.patch](tarball://root/attachments/some-uuid/ticket1938/trac-1938-fix_some_docstrings.patch) by was created at 2008-01-30 03:05:00
 
 You're right -- I didn't "sage -br" after the merge.  I redid the last patch, with a few fixes to typos and the writing in the paragraph, but without changing any doctests.
 

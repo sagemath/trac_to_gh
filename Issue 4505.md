@@ -55,7 +55,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4505
 archive/issue_comments_033405.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trivial-case-segfault.patch](tarball://root/attachments/some-uuid/ticket4505/trivial-case-segfault.patch) by jason created at 2008-11-13 01:19:27",
     "created_at": "2008-11-13T01:19:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4505",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_033405.json:
 }
 ```
 
-Attachment
+Attachment [trivial-case-segfault.patch](tarball://root/attachments/some-uuid/ticket4505/trivial-case-segfault.patch) by jason created at 2008-11-13 01:19:27
 
 
 

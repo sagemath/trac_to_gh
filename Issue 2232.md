@@ -179,7 +179,7 @@ Given my opinion that this bug is invalid, I would also want to change ndigits. 
 archive/issue_comments_014787.json:
 ```json
 {
-    "body": "Attachment\n\nThe patches fixes the issue and adds a padto-parameter,\n\nsee discussion [http://groups.google.com/group/sage-devel/browse_thread/thread/f9d7b5016e237b22](http://groups.google.com/group/sage-devel/browse_thread/thread/f9d7b5016e237b22)",
+    "body": "Attachment [digits__bugfix_and_adds_padto.patch](tarball://root/attachments/some-uuid/ticket2232/digits__bugfix_and_adds_padto.patch) by vgermrk created at 2008-04-04 08:58:05\n\nThe patches fixes the issue and adds a padto-parameter,\n\nsee discussion [http://groups.google.com/group/sage-devel/browse_thread/thread/f9d7b5016e237b22](http://groups.google.com/group/sage-devel/browse_thread/thread/f9d7b5016e237b22)",
     "created_at": "2008-04-04T08:58:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2232",
     "type": "issue_comment",
@@ -188,7 +188,7 @@ archive/issue_comments_014787.json:
 }
 ```
 
-Attachment
+Attachment [digits__bugfix_and_adds_padto.patch](tarball://root/attachments/some-uuid/ticket2232/digits__bugfix_and_adds_padto.patch) by vgermrk created at 2008-04-04 08:58:05
 
 The patches fixes the issue and adds a padto-parameter,
 
@@ -236,7 +236,7 @@ Thanks for coding this patch up!
 archive/issue_comments_014789.json:
 ```json
 {
-    "body": "Attachment\n\nthe second (additional) patch takes care of jbmohler's remarks.",
+    "body": "Attachment [fix_for_digits_patch_and_bugfix_for_ndigits.patch](tarball://root/attachments/some-uuid/ticket2232/fix_for_digits_patch_and_bugfix_for_ndigits.patch) by vgermrk created at 2008-04-04 11:38:04\n\nthe second (additional) patch takes care of jbmohler's remarks.",
     "created_at": "2008-04-04T11:38:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2232",
     "type": "issue_comment",
@@ -245,7 +245,7 @@ archive/issue_comments_014789.json:
 }
 ```
 
-Attachment
+Attachment [fix_for_digits_patch_and_bugfix_for_ndigits.patch](tarball://root/attachments/some-uuid/ticket2232/fix_for_digits_patch_and_bugfix_for_ndigits.patch) by vgermrk created at 2008-04-04 11:38:04
 
 the second (additional) patch takes care of jbmohler's remarks.
 

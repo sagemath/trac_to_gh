@@ -69,7 +69,7 @@ Changing status from new to needs_review.
 archive/issue_comments_078115.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8620-diamond_operator_bug.patch](tarball://root/attachments/some-uuid/ticket8620/trac_8620-diamond_operator_bug.patch) by davidloeffler created at 2010-03-28 22:02:20",
     "created_at": "2010-03-28T22:02:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8620",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_078115.json:
 }
 ```
 
-Attachment
+Attachment [trac_8620-diamond_operator_bug.patch](tarball://root/attachments/some-uuid/ticket8620/trac_8620-diamond_operator_bug.patch) by davidloeffler created at 2010-03-28 22:02:20
 
 
 

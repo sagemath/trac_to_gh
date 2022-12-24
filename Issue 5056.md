@@ -51,7 +51,7 @@ archive/issue_comments_038519.json:
 archive/issue_comments_038520.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [interreduced_basis_path](tarball://root/attachments/some-uuid/ticket5056/interreduced_basis_path) by malb created at 2009-01-23 02:45:22",
     "created_at": "2009-01-23T02:45:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5056",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_038520.json:
 }
 ```
 
-Attachment
+Attachment [interreduced_basis_path](tarball://root/attachments/some-uuid/ticket5056/interreduced_basis_path) by malb created at 2009-01-23 02:45:22
 
 
 

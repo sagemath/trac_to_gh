@@ -59,7 +59,7 @@ hack to create an MPolynomialRing as a parent for letterplace polynomials
 archive/issue_comments_067335.json:
 ```json
 {
-    "body": "Attachment\n\nbasic interface to compute groebner bases with letterplace",
+    "body": "Attachment [trac_7797-letterplace_ring_hack.patch](tarball://root/attachments/some-uuid/ticket7797/trac_7797-letterplace_ring_hack.patch) by burcin created at 2009-12-30 21:47:33\n\nbasic interface to compute groebner bases with letterplace",
     "created_at": "2009-12-30T21:47:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -68,7 +68,7 @@ archive/issue_comments_067335.json:
 }
 ```
 
-Attachment
+Attachment [trac_7797-letterplace_ring_hack.patch](tarball://root/attachments/some-uuid/ticket7797/trac_7797-letterplace_ring_hack.patch) by burcin created at 2009-12-30 21:47:33
 
 basic interface to compute groebner bases with letterplace
 
@@ -79,7 +79,7 @@ basic interface to compute groebner bases with letterplace
 archive/issue_comments_067336.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7797-letterplace.patch](tarball://root/attachments/some-uuid/ticket7797/trac_7797-letterplace.patch) by burcin created at 2009-12-30 21:47:50",
     "created_at": "2009-12-30T21:47:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_067336.json:
 }
 ```
 
-Attachment
+Attachment [trac_7797-letterplace.patch](tarball://root/attachments/some-uuid/ticket7797/trac_7797-letterplace.patch) by burcin created at 2009-12-30 21:47:50
 
 
 
@@ -222,7 +222,7 @@ letter place singular interface
 archive/issue_comments_067342.json:
 ```json
 {
-    "body": "Attachment\n\nHi!\n\nI have corrected that using the new context interface.\n\nCheers,\nMichael",
+    "body": "Attachment [trac_7797-letterplace.2.patch](tarball://root/attachments/some-uuid/ticket7797/trac_7797-letterplace.2.patch) by PolyBoRi created at 2010-06-30 09:07:40\n\nHi!\n\nI have corrected that using the new context interface.\n\nCheers,\nMichael",
     "created_at": "2010-06-30T09:07:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -231,7 +231,7 @@ archive/issue_comments_067342.json:
 }
 ```
 
-Attachment
+Attachment [trac_7797-letterplace.2.patch](tarball://root/attachments/some-uuid/ticket7797/trac_7797-letterplace.2.patch) by PolyBoRi created at 2010-06-30 09:07:40
 
 Hi!
 
@@ -265,7 +265,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_067344.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7797-letterplace.3.patch](tarball://root/attachments/some-uuid/ticket7797/trac_7797-letterplace.3.patch) by PolyBoRi created at 2010-06-30 09:10:23",
     "created_at": "2010-06-30T09:10:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -274,7 +274,7 @@ archive/issue_comments_067344.json:
 }
 ```
 
-Attachment
+Attachment [trac_7797-letterplace.3.patch](tarball://root/attachments/some-uuid/ticket7797/trac_7797-letterplace.3.patch) by PolyBoRi created at 2010-06-30 09:10:23
 
 
 
@@ -396,7 +396,7 @@ What Ideal class is used for free algebras?
 archive/issue_comments_067350.json:
 ```json
 {
-    "body": "Attachment\n\nsome improvements to plural interface, still not much working",
+    "body": "Attachment [plural_functions.patch](tarball://root/attachments/some-uuid/ticket7797/plural_functions.patch) by PolyBoRi created at 2010-07-15 13:21:24\n\nsome improvements to plural interface, still not much working",
     "created_at": "2010-07-15T13:21:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -405,7 +405,7 @@ archive/issue_comments_067350.json:
 }
 ```
 
-Attachment
+Attachment [plural_functions.patch](tarball://root/attachments/some-uuid/ticket7797/plural_functions.patch) by PolyBoRi created at 2010-07-15 13:21:24
 
 some improvements to plural interface, still not much working
 
@@ -1172,7 +1172,7 @@ Depends on #10961
 archive/issue_comments_067374.json:
 ```json
 {
-    "body": "Attachment\n\nA full wrapper for Singular's letterplace functionality, plus non-commutative ideals and ring quotients; rebased on top of 10961",
+    "body": "Attachment [trac7797-full_letterplace_wrapper.patch](tarball://root/attachments/some-uuid/ticket7797/trac7797-full_letterplace_wrapper.patch) by SimonKing created at 2011-03-27 13:47:59\n\nA full wrapper for Singular's letterplace functionality, plus non-commutative ideals and ring quotients; rebased on top of 10961",
     "created_at": "2011-03-27T13:47:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -1181,7 +1181,7 @@ archive/issue_comments_067374.json:
 }
 ```
 
-Attachment
+Attachment [trac7797-full_letterplace_wrapper.patch](tarball://root/attachments/some-uuid/ticket7797/trac7797-full_letterplace_wrapper.patch) by SimonKing created at 2011-03-27 13:47:59
 
 A full wrapper for Singular's letterplace functionality, plus non-commutative ideals and ring quotients; rebased on top of 10961
 
@@ -1512,7 +1512,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_067388.json:
 ```json
 {
-    "body": "Attachment\n\nPositive integral degree weights for letterplace. UniqueFactory for free algebras.",
+    "body": "Attachment [trac7797-letterplace_degree_weights.patch](tarball://root/attachments/some-uuid/ticket7797/trac7797-letterplace_degree_weights.patch) by SimonKing created at 2011-05-26 09:12:05\n\nPositive integral degree weights for letterplace. UniqueFactory for free algebras.",
     "created_at": "2011-05-26T09:12:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -1521,7 +1521,7 @@ archive/issue_comments_067388.json:
 }
 ```
 
-Attachment
+Attachment [trac7797-letterplace_degree_weights.patch](tarball://root/attachments/some-uuid/ticket7797/trac7797-letterplace_degree_weights.patch) by SimonKing created at 2011-05-26 09:12:05
 
 Positive integral degree weights for letterplace. UniqueFactory for free algebras.
 
@@ -1768,7 +1768,7 @@ Apply trac7797-full_letterplace_wrapper_rel11068.patch trac7797-letterplace_degr
 archive/issue_comments_067397.json:
 ```json
 {
-    "body": "Attachment\n\nA full wrapper for Singular's letterplace functionality, plus complete Groebner bases; based on top of 11068",
+    "body": "Attachment [trac7797-full_letterplace_wrapper_rel11068.patch](tarball://root/attachments/some-uuid/ticket7797/trac7797-full_letterplace_wrapper_rel11068.patch) by SimonKing created at 2011-08-01 16:37:37\n\nA full wrapper for Singular's letterplace functionality, plus complete Groebner bases; based on top of 11068",
     "created_at": "2011-08-01T16:37:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -1777,7 +1777,7 @@ archive/issue_comments_067397.json:
 }
 ```
 
-Attachment
+Attachment [trac7797-full_letterplace_wrapper_rel11068.patch](tarball://root/attachments/some-uuid/ticket7797/trac7797-full_letterplace_wrapper_rel11068.patch) by SimonKing created at 2011-08-01 16:37:37
 
 A full wrapper for Singular's letterplace functionality, plus complete Groebner bases; based on top of 11068
 
@@ -1788,7 +1788,7 @@ A full wrapper for Singular's letterplace functionality, plus complete Groebner 
 archive/issue_comments_067398.json:
 ```json
 {
-    "body": "Attachment\n\nImplement latex for letterplace polynomials and letterplace algebras",
+    "body": "Attachment [trac7797-latex_letterplace.patch](tarball://root/attachments/some-uuid/ticket7797/trac7797-latex_letterplace.patch) by SimonKing created at 2011-08-01 16:45:29\n\nImplement latex for letterplace polynomials and letterplace algebras",
     "created_at": "2011-08-01T16:45:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -1797,7 +1797,7 @@ archive/issue_comments_067398.json:
 }
 ```
 
-Attachment
+Attachment [trac7797-latex_letterplace.patch](tarball://root/attachments/some-uuid/ticket7797/trac7797-latex_letterplace.patch) by SimonKing created at 2011-08-01 16:45:29
 
 Implement latex for letterplace polynomials and letterplace algebras
 
@@ -1826,7 +1826,7 @@ Implementing coercion for letterplace algebras
 archive/issue_comments_067400.json:
 ```json
 {
-    "body": "Attachment\n\nI had to rebase three of the four patches. Still needing review...\n\nApply trac7797-full_letterplace_wrapper_rel11068.patch trac7797-letterplace_degree_weights.patch trac7797-latex_letterplace.patch trac7797-letterplace_coercion.patch",
+    "body": "Attachment [trac7797-letterplace_coercion.patch](tarball://root/attachments/some-uuid/ticket7797/trac7797-letterplace_coercion.patch) by SimonKing created at 2011-08-01 16:48:22\n\nI had to rebase three of the four patches. Still needing review...\n\nApply trac7797-full_letterplace_wrapper_rel11068.patch trac7797-letterplace_degree_weights.patch trac7797-latex_letterplace.patch trac7797-letterplace_coercion.patch",
     "created_at": "2011-08-01T16:48:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -1835,7 +1835,7 @@ archive/issue_comments_067400.json:
 }
 ```
 
-Attachment
+Attachment [trac7797-letterplace_coercion.patch](tarball://root/attachments/some-uuid/ticket7797/trac7797-letterplace_coercion.patch) by SimonKing created at 2011-08-01 16:48:22
 
 I had to rebase three of the four patches. Still needing review...
 
@@ -3096,7 +3096,7 @@ I guess the plan was to add a doc test, then I changed my mind and deleted the d
 archive/issue_comments_067457.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7797-ref.patch](tarball://root/attachments/some-uuid/ticket7797/trac_7797-ref.patch) by jhpalmieri created at 2012-09-07 21:24:58",
     "created_at": "2012-09-07T21:24:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -3105,7 +3105,7 @@ archive/issue_comments_067457.json:
 }
 ```
 
-Attachment
+Attachment [trac_7797-ref.patch](tarball://root/attachments/some-uuid/ticket7797/trac_7797-ref.patch) by jhpalmieri created at 2012-09-07 21:24:58
 
 
 
@@ -3273,7 +3273,7 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_067466.json:
 ```json
 {
-    "body": "Attachment\n\nI am sorry that I took so long to fix it.\n\nI have changed the \"big\" patch. The diff of the two patch versions is:\n\n```diff\n--- trac7797-full_letterplace_wrapper_combined.patch    2012-11-09 11:15:19.355793326 +0100\n+++ trac7797-full_letterplace_wrapper_combined.patch        2012-09-02 09:00:20.000000000 +0200\n@@ -2176,7 +2176,7 @@\n +            sage: p.reduce(I)\n +            y*y*y - y*y*z + y*z*y - y*z*z\n +            sage: G = F._reductor_(I.gens(),3); G\n-+            Ideal (x*y_1 + y*z_1, x_1*y_2 + y_1*z_2, x*x_1 + x*y_1 - y*x_1 - y*y_1, x_1*x_2 + x_1*y_2 - y_1*x_2 - y_1*y_2) of Multivariate Polynomial Ring in x, y, z, x_1, y_1, z_1, x_2, y_2, z_2... over Rational Field\n++            Ideal (x*y_1 + y*z_1, x_1*y_2 + y_1*z_2, x*x_1 + x*y_1 - y*x_1 - y*y_1, x_1*x_2 + x_1*y_2 - y_1*x_2 - y_1*y_2) of Multivariate Polynomial Ring in x, y, z, x_1, y_1, z_1, x_2, y_2, z_2, x_3, y_3, z_3... over Rational Field\n +\n +        We do not use the usual reduction method for polynomials in\n +        Sage, since it does the reductions in a different order\n```\n\n\nI hope it is ok to restore the positive review, since I assume doctests will be run anyway before releasing.\n\nApply trac7797-full_letterplace_wrapper_combined.patch trac_7797-ref.patch",
+    "body": "Attachment [trac7797-full_letterplace_wrapper_combined.patch](tarball://root/attachments/some-uuid/ticket7797/trac7797-full_letterplace_wrapper_combined.patch) by SimonKing created at 2012-11-09 10:20:36\n\nI am sorry that I took so long to fix it.\n\nI have changed the \"big\" patch. The diff of the two patch versions is:\n\n```diff\n--- trac7797-full_letterplace_wrapper_combined.patch    2012-11-09 11:15:19.355793326 +0100\n+++ trac7797-full_letterplace_wrapper_combined.patch        2012-09-02 09:00:20.000000000 +0200\n@@ -2176,7 +2176,7 @@\n +            sage: p.reduce(I)\n +            y*y*y - y*y*z + y*z*y - y*z*z\n +            sage: G = F._reductor_(I.gens(),3); G\n-+            Ideal (x*y_1 + y*z_1, x_1*y_2 + y_1*z_2, x*x_1 + x*y_1 - y*x_1 - y*y_1, x_1*x_2 + x_1*y_2 - y_1*x_2 - y_1*y_2) of Multivariate Polynomial Ring in x, y, z, x_1, y_1, z_1, x_2, y_2, z_2... over Rational Field\n++            Ideal (x*y_1 + y*z_1, x_1*y_2 + y_1*z_2, x*x_1 + x*y_1 - y*x_1 - y*y_1, x_1*x_2 + x_1*y_2 - y_1*x_2 - y_1*y_2) of Multivariate Polynomial Ring in x, y, z, x_1, y_1, z_1, x_2, y_2, z_2, x_3, y_3, z_3... over Rational Field\n +\n +        We do not use the usual reduction method for polynomials in\n +        Sage, since it does the reductions in a different order\n```\n\n\nI hope it is ok to restore the positive review, since I assume doctests will be run anyway before releasing.\n\nApply trac7797-full_letterplace_wrapper_combined.patch trac_7797-ref.patch",
     "created_at": "2012-11-09T10:20:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -3282,7 +3282,7 @@ archive/issue_comments_067466.json:
 }
 ```
 
-Attachment
+Attachment [trac7797-full_letterplace_wrapper_combined.patch](tarball://root/attachments/some-uuid/ticket7797/trac7797-full_letterplace_wrapper_combined.patch) by SimonKing created at 2012-11-09 10:20:36
 
 I am sorry that I took so long to fix it.
 

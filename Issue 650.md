@@ -117,7 +117,7 @@ Actually, I discovered a second place where this needed to be turned into a NotI
 archive/issue_comments_003383.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_650_bandaid.hg](tarball://root/attachments/some-uuid/ticket650/trac_650_bandaid.hg) by craigcitro created at 2007-10-12 21:59:03",
     "created_at": "2007-10-12T21:59:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/650",
     "type": "issue_comment",
@@ -126,7 +126,7 @@ archive/issue_comments_003383.json:
 }
 ```
 
-Attachment
+Attachment [trac_650_bandaid.hg](tarball://root/attachments/some-uuid/ticket650/trac_650_bandaid.hg) by craigcitro created at 2007-10-12 21:59:03
 
 
 
@@ -200,7 +200,7 @@ Resolution: fixed
 archive/issue_comments_003387.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_650_bandaid.2.hg](tarball://root/attachments/some-uuid/ticket650/trac_650_bandaid.2.hg) by was created at 2007-10-19 01:48:40",
     "created_at": "2007-10-19T01:48:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/650",
     "type": "issue_comment",
@@ -209,4 +209,4 @@ archive/issue_comments_003387.json:
 }
 ```
 
-Attachment
+Attachment [trac_650_bandaid.2.hg](tarball://root/attachments/some-uuid/ticket650/trac_650_bandaid.2.hg) by was created at 2007-10-19 01:48:40

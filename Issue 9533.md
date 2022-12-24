@@ -134,7 +134,7 @@ Dave
 archive/issue_comments_091771.json:
 ```json
 {
-    "body": "Attachment\n\nMain patch, which makes many changes to clean up the spkg-check and spkg-install.",
+    "body": "Attachment [9533.patch](tarball://root/attachments/some-uuid/ticket9533/9533.patch) by drkirkby created at 2010-07-18 00:22:19\n\nMain patch, which makes many changes to clean up the spkg-check and spkg-install.",
     "created_at": "2010-07-18T00:22:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9533",
     "type": "issue_comment",
@@ -143,7 +143,7 @@ archive/issue_comments_091771.json:
 }
 ```
 
-Attachment
+Attachment [9533.patch](tarball://root/attachments/some-uuid/ticket9533/9533.patch) by drkirkby created at 2010-07-18 00:22:19
 
 Main patch, which makes many changes to clean up the spkg-check and spkg-install.
 
@@ -154,7 +154,7 @@ Main patch, which makes many changes to clean up the spkg-check and spkg-install
 archive/issue_comments_091772.json:
 ```json
 {
-    "body": "Attachment\n\nChanges 'make' to '$MAKE' to allow faster parallel builds. This has been extensively tested",
+    "body": "Attachment [9533.use-Dollar-MAKE.patch](tarball://root/attachments/some-uuid/ticket9533/9533.use-Dollar-MAKE.patch) by drkirkby created at 2010-07-18 00:23:01\n\nChanges 'make' to '$MAKE' to allow faster parallel builds. This has been extensively tested",
     "created_at": "2010-07-18T00:23:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9533",
     "type": "issue_comment",
@@ -163,7 +163,7 @@ archive/issue_comments_091772.json:
 }
 ```
 
-Attachment
+Attachment [9533.use-Dollar-MAKE.patch](tarball://root/attachments/some-uuid/ticket9533/9533.use-Dollar-MAKE.patch) by drkirkby created at 2010-07-18 00:23:01
 
 Changes 'make' to '$MAKE' to allow faster parallel builds. This has been extensively tested
 
@@ -210,7 +210,7 @@ Changing status from new to needs_review.
 archive/issue_comments_091775.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9533.print-passed-message.patch](tarball://root/attachments/some-uuid/ticket9533/9533.print-passed-message.patch) by drkirkby created at 2010-07-18 00:23:49",
     "created_at": "2010-07-18T00:23:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9533",
     "type": "issue_comment",
@@ -219,7 +219,7 @@ archive/issue_comments_091775.json:
 }
 ```
 
-Attachment
+Attachment [9533.print-passed-message.patch](tarball://root/attachments/some-uuid/ticket9533/9533.print-passed-message.patch) by drkirkby created at 2010-07-18 00:23:49
 
 
 
@@ -401,7 +401,7 @@ Patch taking into account comments by reviewer, and a bit of a tidyup.
 archive/issue_comments_091783.json:
 ```json
 {
-    "body": "Attachment\n\nLeif,\nI've taken your comments into account. I realised that despite what src/INSTALL says, -g -O2 were not added. So I've added them back, as they were before. I also noticed the web site I gave for the solution to the libtool problem (export RM=\"rm -f\") was not the correct one. So I updated the web link in the description of this, and also in SPKG.txt\n\nI also reformatted SPKG.txt so no lines are wider than 80 characters. \n\nI've replaced the package, so it can still be found at http://boxen.math.washington.edu/home/kirkby/patches/gsl-1.14.spkg\n\nDave",
+    "body": "Attachment [9533-tidyup-and-resolve-flag-issues.patch](tarball://root/attachments/some-uuid/ticket9533/9533-tidyup-and-resolve-flag-issues.patch) by drkirkby created at 2010-07-18 08:43:45\n\nLeif,\nI've taken your comments into account. I realised that despite what src/INSTALL says, -g -O2 were not added. So I've added them back, as they were before. I also noticed the web site I gave for the solution to the libtool problem (export RM=\"rm -f\") was not the correct one. So I updated the web link in the description of this, and also in SPKG.txt\n\nI also reformatted SPKG.txt so no lines are wider than 80 characters. \n\nI've replaced the package, so it can still be found at http://boxen.math.washington.edu/home/kirkby/patches/gsl-1.14.spkg\n\nDave",
     "created_at": "2010-07-18T08:43:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9533",
     "type": "issue_comment",
@@ -410,7 +410,7 @@ archive/issue_comments_091783.json:
 }
 ```
 
-Attachment
+Attachment [9533-tidyup-and-resolve-flag-issues.patch](tarball://root/attachments/some-uuid/ticket9533/9533-tidyup-and-resolve-flag-issues.patch) by drkirkby created at 2010-07-18 08:43:45
 
 Leif,
 I've taken your comments into account. I realised that despite what src/INSTALL says, -g -O2 were not added. So I've added them back, as they were before. I also noticed the web site I gave for the solution to the libtool problem (export RM="rm -f") was not the correct one. So I updated the web link in the description of this, and also in SPKG.txt
@@ -446,7 +446,7 @@ Slightlly simpler spkg-check
 archive/issue_comments_091785.json:
 ```json
 {
-    "body": "Attachment\n\nA few (more general) questions:\n* Should we make sure that `$SAGE_LOCAL` is set? (in both `spkg-install` and `spkg-check`)\n* Should optimization be disabled (`-O0`) if `SAGE_DEBUG` is `yes` as some other packages do?\n* Anything to add if `SAGE_FAT_BINARY` is `yes`?\n* I think `CFLAGS` et al. should be set in `spkg-check` as well, as `make check` usually involves compilation, too.\n* Also modifying `LDFLAGS`, e.g. if `SAGE64=yes`, even if currently not directly used by upstream, should be safe.\n\nP.S.: My intention regarding the `else ... exit 0` part was rather avoiding other people adding \"dead code\" below it. Looking at the (fairly small) file in whole this seems less a danger... :)",
+    "body": "Attachment [9533-improve-spkg-check.patch](tarball://root/attachments/some-uuid/ticket9533/9533-improve-spkg-check.patch) by leif created at 2010-07-18 18:43:34\n\nA few (more general) questions:\n* Should we make sure that `$SAGE_LOCAL` is set? (in both `spkg-install` and `spkg-check`)\n* Should optimization be disabled (`-O0`) if `SAGE_DEBUG` is `yes` as some other packages do?\n* Anything to add if `SAGE_FAT_BINARY` is `yes`?\n* I think `CFLAGS` et al. should be set in `spkg-check` as well, as `make check` usually involves compilation, too.\n* Also modifying `LDFLAGS`, e.g. if `SAGE64=yes`, even if currently not directly used by upstream, should be safe.\n\nP.S.: My intention regarding the `else ... exit 0` part was rather avoiding other people adding \"dead code\" below it. Looking at the (fairly small) file in whole this seems less a danger... :)",
     "created_at": "2010-07-18T18:43:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9533",
     "type": "issue_comment",
@@ -455,7 +455,7 @@ archive/issue_comments_091785.json:
 }
 ```
 
-Attachment
+Attachment [9533-improve-spkg-check.patch](tarball://root/attachments/some-uuid/ticket9533/9533-improve-spkg-check.patch) by leif created at 2010-07-18 18:43:34
 
 A few (more general) questions:
 * Should we make sure that `$SAGE_LOCAL` is set? (in both `spkg-install` and `spkg-check`)
@@ -538,7 +538,7 @@ Dave
 archive/issue_comments_091788.json:
 ```json
 {
-    "body": "Attachment\n\nAdds support for SAGE_DEBUG, CFLAG64, checks SAGE_ROOT and exports LDFLAGS on 64-bit builds",
+    "body": "Attachment [9533-add-SAGE_DEBUG-and_CFLAG64.patch](tarball://root/attachments/some-uuid/ticket9533/9533-add-SAGE_DEBUG-and_CFLAG64.patch) by drkirkby created at 2010-07-18 21:52:50\n\nAdds support for SAGE_DEBUG, CFLAG64, checks SAGE_ROOT and exports LDFLAGS on 64-bit builds",
     "created_at": "2010-07-18T21:52:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9533",
     "type": "issue_comment",
@@ -547,7 +547,7 @@ archive/issue_comments_091788.json:
 }
 ```
 
-Attachment
+Attachment [9533-add-SAGE_DEBUG-and_CFLAG64.patch](tarball://root/attachments/some-uuid/ticket9533/9533-add-SAGE_DEBUG-and_CFLAG64.patch) by drkirkby created at 2010-07-18 21:52:50
 
 Adds support for SAGE_DEBUG, CFLAG64, checks SAGE_ROOT and exports LDFLAGS on 64-bit builds
 
@@ -858,7 +858,7 @@ Currently building Sage 4.5.1 with GSL 1.14 from scratch...
 archive/issue_comments_091800.json:
 ```json
 {
-    "body": "Attachment\n\nChanges only to SPKG.txt (nothing to actual code). Reflects reviewer comments, and some extra information I thought was informative.",
+    "body": "Attachment [9533-improved-SPKG.text_file.patch](tarball://root/attachments/some-uuid/ticket9533/9533-improved-SPKG.text_file.patch) by drkirkby created at 2010-07-20 17:07:48\n\nChanges only to SPKG.txt (nothing to actual code). Reflects reviewer comments, and some extra information I thought was informative.",
     "created_at": "2010-07-20T17:07:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9533",
     "type": "issue_comment",
@@ -867,7 +867,7 @@ archive/issue_comments_091800.json:
 }
 ```
 
-Attachment
+Attachment [9533-improved-SPKG.text_file.patch](tarball://root/attachments/some-uuid/ticket9533/9533-improved-SPKG.text_file.patch) by drkirkby created at 2010-07-20 17:07:48
 
 Changes only to SPKG.txt (nothing to actual code). Reflects reviewer comments, and some extra information I thought was informative.
 
@@ -896,7 +896,7 @@ Fix a silly typo
 archive/issue_comments_091802.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:26 leif]:\n> As a final change, could we clarify the ATLAS/CBLAS issue in `SPKG.txt`, i.e.\n>  * Dependencies: **None** - GSL does currently **not** depend on any other Sage package (though ATLAS is currently listed in `spkg/standard/deps`\n>  * Add a *\"Special Update/Build Instructions\"* section that mentions that GSL could **in principle** use ATLAS's CBLAS implementation rather than the one shipped with GSL (but so far never did in Sage).\n> \n\nSure. I made a few other changes to that file too - hopefully to your approval. No code was changed. \n\n> Currently building Sage 4.5.1 with GSL 1.14 from scratch...\n\nGood. \n \n> (I've already tested the spkg with 4.5 \"final\" on two machines, but only by forcing installation of the new package. This btw discovered even more flaws in the doctesting \"frame\"work regarding parallel testing and timeouts on the slower machine...)\n\nYou do not surprise me with regard to the doctesting framework. However, before wasting any time on them, do check to see if there are any patches recently added to trac for this, as I know there were several such patches. I'm not the release manager, but if I were, I'd get those patches in on the alpha0. If you can't rely on the test code, what can you rely on? \n\nDave",
+    "body": "Attachment [9533-typo.patch](tarball://root/attachments/some-uuid/ticket9533/9533-typo.patch) by drkirkby created at 2010-07-20 17:15:27\n\nReplying to [comment:26 leif]:\n> As a final change, could we clarify the ATLAS/CBLAS issue in `SPKG.txt`, i.e.\n>  * Dependencies: **None** - GSL does currently **not** depend on any other Sage package (though ATLAS is currently listed in `spkg/standard/deps`\n>  * Add a *\"Special Update/Build Instructions\"* section that mentions that GSL could **in principle** use ATLAS's CBLAS implementation rather than the one shipped with GSL (but so far never did in Sage).\n> \n\nSure. I made a few other changes to that file too - hopefully to your approval. No code was changed. \n\n> Currently building Sage 4.5.1 with GSL 1.14 from scratch...\n\nGood. \n \n> (I've already tested the spkg with 4.5 \"final\" on two machines, but only by forcing installation of the new package. This btw discovered even more flaws in the doctesting \"frame\"work regarding parallel testing and timeouts on the slower machine...)\n\nYou do not surprise me with regard to the doctesting framework. However, before wasting any time on them, do check to see if there are any patches recently added to trac for this, as I know there were several such patches. I'm not the release manager, but if I were, I'd get those patches in on the alpha0. If you can't rely on the test code, what can you rely on? \n\nDave",
     "created_at": "2010-07-20T17:15:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9533",
     "type": "issue_comment",
@@ -905,7 +905,7 @@ archive/issue_comments_091802.json:
 }
 ```
 
-Attachment
+Attachment [9533-typo.patch](tarball://root/attachments/some-uuid/ticket9533/9533-typo.patch) by drkirkby created at 2010-07-20 17:15:27
 
 Replying to [comment:26 leif]:
 > As a final change, could we clarify the ATLAS/CBLAS issue in `SPKG.txt`, i.e.
@@ -957,7 +957,7 @@ Leif
 archive/issue_comments_091804.json:
 ```json
 {
-    "body": "Attachment\n\nClarify what are 64-bit builds",
+    "body": "Attachment [64-bit-build-clarification.patch](tarball://root/attachments/some-uuid/ticket9533/64-bit-build-clarification.patch) by drkirkby created at 2010-07-20 18:10:13\n\nClarify what are 64-bit builds",
     "created_at": "2010-07-20T18:10:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9533",
     "type": "issue_comment",
@@ -966,7 +966,7 @@ archive/issue_comments_091804.json:
 }
 ```
 
-Attachment
+Attachment [64-bit-build-clarification.patch](tarball://root/attachments/some-uuid/ticket9533/64-bit-build-clarification.patch) by drkirkby created at 2010-07-20 18:10:13
 
 Clarify what are 64-bit builds
 
@@ -1297,7 +1297,7 @@ Dave
 archive/issue_comments_091816.json:
 ```json
 {
-    "body": "Attachment\n\nPut quotes around CFLAG64 and SPKG_ROOT and update SPKG.txt to reflect discoveries about ATLAS",
+    "body": "Attachment [9533-resolve-CFLAG64-and-SAGE_ROOT-issues.patch](tarball://root/attachments/some-uuid/ticket9533/9533-resolve-CFLAG64-and-SAGE_ROOT-issues.patch) by drkirkby created at 2010-07-21 11:19:56\n\nPut quotes around CFLAG64 and SPKG_ROOT and update SPKG.txt to reflect discoveries about ATLAS",
     "created_at": "2010-07-21T11:19:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9533",
     "type": "issue_comment",
@@ -1306,7 +1306,7 @@ archive/issue_comments_091816.json:
 }
 ```
 
-Attachment
+Attachment [9533-resolve-CFLAG64-and-SAGE_ROOT-issues.patch](tarball://root/attachments/some-uuid/ticket9533/9533-resolve-CFLAG64-and-SAGE_ROOT-issues.patch) by drkirkby created at 2010-07-21 11:19:56
 
 Put quotes around CFLAG64 and SPKG_ROOT and update SPKG.txt to reflect discoveries about ATLAS
 
@@ -1426,7 +1426,7 @@ Dave
 archive/issue_comments_091821.json:
 ```json
 {
-    "body": "Attachment\n\nRemove a minor erro in the coments.",
+    "body": "Attachment [remove-unnecessary-comment.patch](tarball://root/attachments/some-uuid/ticket9533/remove-unnecessary-comment.patch) by drkirkby created at 2010-07-21 13:17:12\n\nRemove a minor erro in the coments.",
     "created_at": "2010-07-21T13:17:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9533",
     "type": "issue_comment",
@@ -1435,7 +1435,7 @@ archive/issue_comments_091821.json:
 }
 ```
 
-Attachment
+Attachment [remove-unnecessary-comment.patch](tarball://root/attachments/some-uuid/ticket9533/remove-unnecessary-comment.patch) by drkirkby created at 2010-07-21 13:17:12
 
 Remove a minor erro in the coments.
 

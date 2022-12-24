@@ -208,7 +208,7 @@ and you get a directory in the `/tmp` directory. If you don't begin the path wit
 archive/issue_comments_017490.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [log.patch.1](tarball://root/attachments/some-uuid/ticket2565/log.patch.1) by ddrake created at 2008-03-27 06:40:37",
     "created_at": "2008-03-27T06:40:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2565",
     "type": "issue_comment",
@@ -217,7 +217,7 @@ archive/issue_comments_017490.json:
 }
 ```
 
-Attachment
+Attachment [log.patch.1](tarball://root/attachments/some-uuid/ticket2565/log.patch.1) by ddrake created at 2008-03-27 06:40:37
 
 
 

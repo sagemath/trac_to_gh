@@ -124,7 +124,7 @@ Replaces earlier patch, based on 3.4.2.alpha0
 archive/issue_comments_045851.json:
 ```json
 {
-    "body": "Attachment\n\ntrac_5834-rebase.patch is rebased to 3.4.2.alpha0.  (Totally trivial, only a couple of whitespace changes).",
+    "body": "Attachment [trac_5834-rebase.patch](tarball://root/attachments/some-uuid/ticket5834/trac_5834-rebase.patch) by cremona created at 2009-04-27 09:28:58\n\ntrac_5834-rebase.patch is rebased to 3.4.2.alpha0.  (Totally trivial, only a couple of whitespace changes).",
     "created_at": "2009-04-27T09:28:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5834",
     "type": "issue_comment",
@@ -133,7 +133,7 @@ archive/issue_comments_045851.json:
 }
 ```
 
-Attachment
+Attachment [trac_5834-rebase.patch](tarball://root/attachments/some-uuid/ticket5834/trac_5834-rebase.patch) by cremona created at 2009-04-27 09:28:58
 
 trac_5834-rebase.patch is rebased to 3.4.2.alpha0.  (Totally trivial, only a couple of whitespace changes).
 
@@ -186,7 +186,7 @@ Very minor changed to the rebase patch above
 archive/issue_comments_045854.json:
 ```json
 {
-    "body": "Attachment\n\nThanks, Jon.  Your small extra patch looks ok to me but I did not try applying it.\n\nI had not noticed the other quadratic_nonresidue() routine in integer_mod_ring.py!\n\nOn your other question, it seems rather random.  I'm not sure what we can do about that.  In some other languages, if there was a function which applied to rationals and you give it an integer, the compiler would insert the necessary coercion.  But cannot do that (it would involve making integer a subclass of rational, which does not seem a good idea!)",
+    "body": "Attachment [trac_5834-rebase_changes.patch](tarball://root/attachments/some-uuid/ticket5834/trac_5834-rebase_changes.patch) by cremona created at 2009-05-02 08:41:44\n\nThanks, Jon.  Your small extra patch looks ok to me but I did not try applying it.\n\nI had not noticed the other quadratic_nonresidue() routine in integer_mod_ring.py!\n\nOn your other question, it seems rather random.  I'm not sure what we can do about that.  In some other languages, if there was a function which applied to rationals and you give it an integer, the compiler would insert the necessary coercion.  But cannot do that (it would involve making integer a subclass of rational, which does not seem a good idea!)",
     "created_at": "2009-05-02T08:41:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5834",
     "type": "issue_comment",
@@ -195,7 +195,7 @@ archive/issue_comments_045854.json:
 }
 ```
 
-Attachment
+Attachment [trac_5834-rebase_changes.patch](tarball://root/attachments/some-uuid/ticket5834/trac_5834-rebase_changes.patch) by cremona created at 2009-05-02 08:41:44
 
 Thanks, Jon.  Your small extra patch looks ok to me but I did not try applying it.
 

@@ -60,7 +60,7 @@ There are also some stylistic errors that I'll take care of.
 archive/issue_comments_057492.json:
 ```json
 {
-    "body": "Attachment\n\ndepends on #6774",
+    "body": "Attachment [trac_6952-typo-fixes.patch](tarball://root/attachments/some-uuid/ticket6952/trac_6952-typo-fixes.patch) by mvngu created at 2009-09-17 23:57:21\n\ndepends on #6774",
     "created_at": "2009-09-17T23:57:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6952",
     "type": "issue_comment",
@@ -69,7 +69,7 @@ archive/issue_comments_057492.json:
 }
 ```
 
-Attachment
+Attachment [trac_6952-typo-fixes.patch](tarball://root/attachments/some-uuid/ticket6952/trac_6952-typo-fixes.patch) by mvngu created at 2009-09-17 23:57:21
 
 depends on #6774
 

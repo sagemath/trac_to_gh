@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9592
 archive/issue_comments_092778.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [lcalc-newpari.patch](tarball://root/attachments/some-uuid/ticket9592/lcalc-newpari.patch) by jdemeyer created at 2010-07-24 13:07:50",
     "created_at": "2010-07-24T13:07:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_092778.json:
 }
 ```
 
-Attachment
+Attachment [lcalc-newpari.patch](tarball://root/attachments/some-uuid/ticket9592/lcalc-newpari.patch) by jdemeyer created at 2010-07-24 13:07:50
 
 
 
@@ -488,7 +488,7 @@ I copied your spkg to [http://cage.ugent.be/~jdemeyer/sage/lcalc-20100428-1.23.p
 archive/issue_comments_092799.json:
 ```json
 {
-    "body": "Attachment\n\nI am not sure what you want to be done. Can you make the changes and attach it here.\n\nReplying to [comment:21 leif]:\n> Replying to [comment:19 rishi]:\n> > I can see that this spkg does not depend on the upgrade to the new pari. This can be included before the latest version of pari is accepted. In couple of month, I will try to get Mike to use autotools for building. This will eliminate a lot of problems with spkg as of now. I am changing the status to needs review if it is ok with you.\n> \n> Perhaps do some of the clean-up I [suggested above](http://trac.sagemath.org/sage_trac/ticket/9592#comment:8)?\n> \n> There are further minor things (like the date/version at the top of `spkg-install`; `SAGE_DEBUG=yes` usually disables optimization, unquoted environment variables, etc.).\n> \n> I wonder if we should add (a) further patch(es) to get rid of some of the annoying warnings (cf. http://trac.sagemath.org/sage_trac/ticket/9343#comment:191 ff.), but we probably shouldn't do too much at this ticket.\n> \n> I'm not sure if Cygwin support is required yet... ;-)",
+    "body": "Attachment [spkg-install.diff](tarball://root/attachments/some-uuid/ticket9592/spkg-install.diff) by rishi created at 2010-08-14 13:15:56\n\nI am not sure what you want to be done. Can you make the changes and attach it here.\n\nReplying to [comment:21 leif]:\n> Replying to [comment:19 rishi]:\n> > I can see that this spkg does not depend on the upgrade to the new pari. This can be included before the latest version of pari is accepted. In couple of month, I will try to get Mike to use autotools for building. This will eliminate a lot of problems with spkg as of now. I am changing the status to needs review if it is ok with you.\n> \n> Perhaps do some of the clean-up I [suggested above](http://trac.sagemath.org/sage_trac/ticket/9592#comment:8)?\n> \n> There are further minor things (like the date/version at the top of `spkg-install`; `SAGE_DEBUG=yes` usually disables optimization, unquoted environment variables, etc.).\n> \n> I wonder if we should add (a) further patch(es) to get rid of some of the annoying warnings (cf. http://trac.sagemath.org/sage_trac/ticket/9343#comment:191 ff.), but we probably shouldn't do too much at this ticket.\n> \n> I'm not sure if Cygwin support is required yet... ;-)",
     "created_at": "2010-08-14T13:15:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
@@ -497,7 +497,7 @@ archive/issue_comments_092799.json:
 }
 ```
 
-Attachment
+Attachment [spkg-install.diff](tarball://root/attachments/some-uuid/ticket9592/spkg-install.diff) by rishi created at 2010-08-14 13:15:56
 
 I am not sure what you want to be done. Can you make the changes and attach it here.
 
@@ -538,7 +538,7 @@ Changing priority from major to blocker.
 archive/issue_comments_092801.json:
 ```json
 {
-    "body": "Attachment\n\nComplete spkg patch (for reference)",
+    "body": "Attachment [lcalc-spkg.patch](tarball://root/attachments/some-uuid/ticket9592/lcalc-spkg.patch) by jdemeyer created at 2010-08-21 12:44:27\n\nComplete spkg patch (for reference)",
     "created_at": "2010-08-21T12:44:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
@@ -547,7 +547,7 @@ archive/issue_comments_092801.json:
 }
 ```
 
-Attachment
+Attachment [lcalc-spkg.patch](tarball://root/attachments/some-uuid/ticket9592/lcalc-spkg.patch) by jdemeyer created at 2010-08-21 12:44:27
 
 Complete spkg patch (for reference)
 

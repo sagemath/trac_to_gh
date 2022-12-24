@@ -62,7 +62,7 @@ Fix fast_float evaluation of constant polynomials
 archive/issue_comments_046690.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5907.patch](tarball://root/attachments/some-uuid/ticket5907/trac_5907.patch) by cwitty created at 2009-04-27 16:45:15",
     "created_at": "2009-04-27T16:45:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5907",
     "type": "issue_comment",
@@ -71,7 +71,7 @@ archive/issue_comments_046690.json:
 }
 ```
 
-Attachment
+Attachment [trac_5907.patch](tarball://root/attachments/some-uuid/ticket5907/trac_5907.patch) by cwitty created at 2009-04-27 16:45:15
 
 
 
@@ -80,7 +80,7 @@ Attachment
 archive/issue_comments_046691.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review for the original patch (code looks good, doctests pass).  Unfortunately _fast_callable_ copied the buggy code; seems like we might as well fix both bugs on the same ticket, so I've added a second patch to fix the _fast_callable_ bug.  (So this second patch needs review.)",
+    "body": "Attachment [trac5907-part2-fast-callable.patch](tarball://root/attachments/some-uuid/ticket5907/trac5907-part2-fast-callable.patch) by cwitty created at 2009-04-27 16:47:29\n\nPositive review for the original patch (code looks good, doctests pass).  Unfortunately _fast_callable_ copied the buggy code; seems like we might as well fix both bugs on the same ticket, so I've added a second patch to fix the _fast_callable_ bug.  (So this second patch needs review.)",
     "created_at": "2009-04-27T16:47:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5907",
     "type": "issue_comment",
@@ -89,7 +89,7 @@ archive/issue_comments_046691.json:
 }
 ```
 
-Attachment
+Attachment [trac5907-part2-fast-callable.patch](tarball://root/attachments/some-uuid/ticket5907/trac5907-part2-fast-callable.patch) by cwitty created at 2009-04-27 16:47:29
 
 Positive review for the original patch (code looks good, doctests pass).  Unfortunately _fast_callable_ copied the buggy code; seems like we might as well fix both bugs on the same ticket, so I've added a second patch to fix the _fast_callable_ bug.  (So this second patch needs review.)
 

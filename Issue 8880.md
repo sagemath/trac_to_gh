@@ -398,7 +398,7 @@ Nathan
 archive/issue_comments_081612.json:
 ```json
 {
-    "body": "Attachment\n\nThis is 5 weeks stale by now. Jason-- do you have any further objections to the patch?",
+    "body": "Attachment [trac_8880.patch](tarball://root/attachments/some-uuid/ticket8880/trac_8880.patch) by rlm created at 2010-06-17 21:38:40\n\nThis is 5 weeks stale by now. Jason-- do you have any further objections to the patch?",
     "created_at": "2010-06-17T21:38:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8880",
     "type": "issue_comment",
@@ -407,7 +407,7 @@ archive/issue_comments_081612.json:
 }
 ```
 
-Attachment
+Attachment [trac_8880.patch](tarball://root/attachments/some-uuid/ticket8880/trac_8880.patch) by rlm created at 2010-06-17 21:38:40
 
 This is 5 weeks stale by now. Jason-- do you have any further objections to the patch?
 

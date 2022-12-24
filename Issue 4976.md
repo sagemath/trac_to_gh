@@ -59,7 +59,7 @@ some examples
 archive/issue_comments_037938.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [fill_examples.sage](tarball://root/attachments/some-uuid/ticket4976/fill_examples.sage) by whuss created at 2009-01-14 17:20:54",
     "created_at": "2009-01-14T17:20:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4976",
     "type": "issue_comment",
@@ -68,7 +68,7 @@ archive/issue_comments_037938.json:
 }
 ```
 
-Attachment
+Attachment [fill_examples.sage](tarball://root/attachments/some-uuid/ticket4976/fill_examples.sage) by whuss created at 2009-01-14 17:20:54
 
 
 
@@ -77,7 +77,7 @@ Attachment
 archive/issue_comments_037939.json:
 ```json
 {
-    "body": "Attachment\n\nI think that someone who does heavier-duty plotting (and who has a machine new enough that plot.py doesn't time out while testing) should give a final review, but it very nicely solves a lot of problems, and didn't break any of the examples I thought it might when I tried it.  After some thought, probably putting generate_plot_points separately (and with very nice documentation) is a wise idea as well, and hopefully someone who originated that code will agree.\n\nMy only functional caveat is that you may want to put in a catch for fill=min and fill=max (as opposed to fill='min' and fill='max') because it parses these as functions, which they are, but it should probably raise an error (in both cases seems to have net effect of fill='axis'), since max and min are not really functions of one variable.\n\nThere should probably also be more explicit documentation of how the fillcolor option works, as opposed to seeing fillcolor='#ccc' in the tests - all legal input categories should be listed, perhaps there are others.\n\nBut that's all quibbles and my own ignorance; this is a beautiful addition, and someone else should review it very soon to avoid bitrot.",
+    "body": "Attachment [fill1.png](tarball://root/attachments/some-uuid/ticket4976/fill1.png) by kcrisman created at 2009-01-29 04:05:31\n\nI think that someone who does heavier-duty plotting (and who has a machine new enough that plot.py doesn't time out while testing) should give a final review, but it very nicely solves a lot of problems, and didn't break any of the examples I thought it might when I tried it.  After some thought, probably putting generate_plot_points separately (and with very nice documentation) is a wise idea as well, and hopefully someone who originated that code will agree.\n\nMy only functional caveat is that you may want to put in a catch for fill=min and fill=max (as opposed to fill='min' and fill='max') because it parses these as functions, which they are, but it should probably raise an error (in both cases seems to have net effect of fill='axis'), since max and min are not really functions of one variable.\n\nThere should probably also be more explicit documentation of how the fillcolor option works, as opposed to seeing fillcolor='#ccc' in the tests - all legal input categories should be listed, perhaps there are others.\n\nBut that's all quibbles and my own ignorance; this is a beautiful addition, and someone else should review it very soon to avoid bitrot.",
     "created_at": "2009-01-29T04:05:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4976",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_037939.json:
 }
 ```
 
-Attachment
+Attachment [fill1.png](tarball://root/attachments/some-uuid/ticket4976/fill1.png) by kcrisman created at 2009-01-29 04:05:31
 
 I think that someone who does heavier-duty plotting (and who has a machine new enough that plot.py doesn't time out while testing) should give a final review, but it very nicely solves a lot of problems, and didn't break any of the examples I thought it might when I tried it.  After some thought, probably putting generate_plot_points separately (and with very nice documentation) is a wise idea as well, and hopefully someone who originated that code will agree.
 
@@ -163,7 +163,7 @@ sage: timeit('numpy.max(ndata[:,1])')
 archive/issue_comments_037942.json:
 ```json
 {
-    "body": "Attachment\n\nrebased for sage-3.3.alpha2",
+    "body": "Attachment [fill_plot.patch](tarball://root/attachments/some-uuid/ticket4976/fill_plot.patch) by whuss created at 2009-02-02 14:51:47\n\nrebased for sage-3.3.alpha2",
     "created_at": "2009-02-02T14:51:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4976",
     "type": "issue_comment",
@@ -172,7 +172,7 @@ archive/issue_comments_037942.json:
 }
 ```
 
-Attachment
+Attachment [fill_plot.patch](tarball://root/attachments/some-uuid/ticket4976/fill_plot.patch) by whuss created at 2009-02-02 14:51:47
 
 rebased for sage-3.3.alpha2
 
@@ -209,7 +209,7 @@ I changed it to use generator comprehensions.
 archive/issue_comments_037944.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4976-reviewer.patch](tarball://root/attachments/some-uuid/ticket4976/4976-reviewer.patch) by kcrisman created at 2009-02-04 03:51:23",
     "created_at": "2009-02-04T03:51:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4976",
     "type": "issue_comment",
@@ -218,7 +218,7 @@ archive/issue_comments_037944.json:
 }
 ```
 
-Attachment
+Attachment [4976-reviewer.patch](tarball://root/attachments/some-uuid/ticket4976/4976-reviewer.patch) by kcrisman created at 2009-02-04 03:51:23
 
 
 
@@ -269,7 +269,7 @@ Resolution: fixed
 archive/issue_comments_037947.json:
 ```json
 {
-    "body": "Attachment\n\nMerged all three patches in Sage 3.3.alpha6.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_4976_numerical_noise.patch](tarball://root/attachments/some-uuid/ticket4976/trac_4976_numerical_noise.patch) by mabshoff created at 2009-02-05 13:02:10\n\nMerged all three patches in Sage 3.3.alpha6.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-05T13:02:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4976",
     "type": "issue_comment",
@@ -278,7 +278,7 @@ archive/issue_comments_037947.json:
 }
 ```
 
-Attachment
+Attachment [trac_4976_numerical_noise.patch](tarball://root/attachments/some-uuid/ticket4976/trac_4976_numerical_noise.patch) by mabshoff created at 2009-02-05 13:02:10
 
 Merged all three patches in Sage 3.3.alpha6.
 

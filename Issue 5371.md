@@ -62,7 +62,7 @@ I like Marshall's suggestion of 5 minutes for autosave and a history of length s
 archive/issue_comments_041365.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:1 was]:\nSince I was working through this in my own setup, I've added a patch increasing default save time to 1 hour (William Stein's latest suggestion on sage-support) and taking history length down to 100.\n\nI've added documentation on how to change these values for an existing notebook.\n\nSee related #5291 and #5300",
+    "body": "Attachment [trac_5371_worsheet_save_time.patch](tarball://root/attachments/some-uuid/ticket5371/trac_5371_worsheet_save_time.patch) by rbeezer created at 2009-03-07 20:01:10\n\nReplying to [comment:1 was]:\nSince I was working through this in my own setup, I've added a patch increasing default save time to 1 hour (William Stein's latest suggestion on sage-support) and taking history length down to 100.\n\nI've added documentation on how to change these values for an existing notebook.\n\nSee related #5291 and #5300",
     "created_at": "2009-03-07T20:01:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5371",
     "type": "issue_comment",
@@ -71,7 +71,7 @@ archive/issue_comments_041365.json:
 }
 ```
 
-Attachment
+Attachment [trac_5371_worsheet_save_time.patch](tarball://root/attachments/some-uuid/ticket5371/trac_5371_worsheet_save_time.patch) by rbeezer created at 2009-03-07 20:01:10
 
 Replying to [comment:1 was]:
 Since I was working through this in my own setup, I've added a patch increasing default save time to 1 hour (William Stein's latest suggestion on sage-support) and taking history length down to 100.
@@ -248,7 +248,7 @@ Fix doctests
 archive/issue_comments_041369.json:
 ```json
 {
-    "body": "Attachment\n\nAdd a doctest, slightly rewrite the example",
+    "body": "Attachment [trac_5371_reviewer-2.patch](tarball://root/attachments/some-uuid/ticket5371/trac_5371_reviewer-2.patch) by mabshoff created at 2009-04-13 04:56:46\n\nAdd a doctest, slightly rewrite the example",
     "created_at": "2009-04-13T04:56:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5371",
     "type": "issue_comment",
@@ -257,7 +257,7 @@ archive/issue_comments_041369.json:
 }
 ```
 
-Attachment
+Attachment [trac_5371_reviewer-2.patch](tarball://root/attachments/some-uuid/ticket5371/trac_5371_reviewer-2.patch) by mabshoff created at 2009-04-13 04:56:46
 
 Add a doctest, slightly rewrite the example
 
@@ -426,7 +426,7 @@ Replaces very first patch
 archive/issue_comments_041377.json:
 ```json
 {
-    "body": "Attachment\n\nFourth patch is identical to first, but with docstring removed, so it only changes default values for a newly created notebook.\n\nPresumably this will all get sorted out with a notebook overhaul.  If not, the content of that docstring should probably go somewhere (the wiki?) where folks can find it, since it gives instructions for a fix that cannot be enacted to existing servers through a patch.",
+    "body": "Attachment [trac_5371_worksheet_save_time_version2.patch](tarball://root/attachments/some-uuid/ticket5371/trac_5371_worksheet_save_time_version2.patch) by rbeezer created at 2009-06-05 04:10:17\n\nFourth patch is identical to first, but with docstring removed, so it only changes default values for a newly created notebook.\n\nPresumably this will all get sorted out with a notebook overhaul.  If not, the content of that docstring should probably go somewhere (the wiki?) where folks can find it, since it gives instructions for a fix that cannot be enacted to existing servers through a patch.",
     "created_at": "2009-06-05T04:10:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5371",
     "type": "issue_comment",
@@ -435,7 +435,7 @@ archive/issue_comments_041377.json:
 }
 ```
 
-Attachment
+Attachment [trac_5371_worksheet_save_time_version2.patch](tarball://root/attachments/some-uuid/ticket5371/trac_5371_worksheet_save_time_version2.patch) by rbeezer created at 2009-06-05 04:10:17
 
 Fourth patch is identical to first, but with docstring removed, so it only changes default values for a newly created notebook.
 

@@ -94,7 +94,7 @@ import sage.libs.gap.gap
 archive/issue_comments_051193.json:
 ```json
 {
-    "body": "Attachment\n\nMake sure to use the latest spkg, which I'll keep in the ticket description.",
+    "body": "Attachment [trac_6391-part2.patch](tarball://root/attachments/some-uuid/ticket6391/trac_6391-part2.patch) by was created at 2009-06-25 00:52:11\n\nMake sure to use the latest spkg, which I'll keep in the ticket description.",
     "created_at": "2009-06-25T00:52:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -103,7 +103,7 @@ archive/issue_comments_051193.json:
 }
 ```
 
-Attachment
+Attachment [trac_6391-part2.patch](tarball://root/attachments/some-uuid/ticket6391/trac_6391-part2.patch) by was created at 2009-06-25 00:52:11
 
 Make sure to use the latest spkg, which I'll keep in the ticket description.
 
@@ -114,7 +114,7 @@ Make sure to use the latest spkg, which I'll keep in the ticket description.
 archive/issue_comments_051194.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6391-part3-error_handling.patch](tarball://root/attachments/some-uuid/ticket6391/trac_6391-part3-error_handling.patch) by was created at 2009-06-25 18:24:11",
     "created_at": "2009-06-25T18:24:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -123,7 +123,7 @@ archive/issue_comments_051194.json:
 }
 ```
 
-Attachment
+Attachment [trac_6391-part3-error_handling.patch](tarball://root/attachments/some-uuid/ticket6391/trac_6391-part3-error_handling.patch) by was created at 2009-06-25 18:24:11
 
 
 
@@ -150,7 +150,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_051196.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6391-part4.patch](tarball://root/attachments/some-uuid/ticket6391/trac_6391-part4.patch) by was created at 2009-06-27 03:49:38",
     "created_at": "2009-06-27T03:49:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -159,7 +159,7 @@ archive/issue_comments_051196.json:
 }
 ```
 
-Attachment
+Attachment [trac_6391-part4.patch](tarball://root/attachments/some-uuid/ticket6391/trac_6391-part4.patch) by was created at 2009-06-27 03:49:38
 
 
 
@@ -168,7 +168,7 @@ Attachment
 archive/issue_comments_051197.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6391-part1.patch](tarball://root/attachments/some-uuid/ticket6391/trac_6391-part1.patch) by was created at 2009-09-28 21:07:27",
     "created_at": "2009-09-28T21:07:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -177,7 +177,7 @@ archive/issue_comments_051197.json:
 }
 ```
 
-Attachment
+Attachment [trac_6391-part1.patch](tarball://root/attachments/some-uuid/ticket6391/trac_6391-part1.patch) by was created at 2009-09-28 21:07:27
 
 
 
@@ -429,7 +429,7 @@ moreover, I get the same problem (and solition(?)) on Linux (on boxen). So this 
 archive/issue_comments_051203.json:
 ```json
 {
-    "body": "Attachment\n\ncumulative patch for sage 4.6.1",
+    "body": "Attachment [6391.6.patch](tarball://root/attachments/some-uuid/ticket6391/6391.6.patch) by dimpase created at 2011-01-17 14:10:42\n\ncumulative patch for sage 4.6.1",
     "created_at": "2011-01-17T14:10:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -438,7 +438,7 @@ archive/issue_comments_051203.json:
 }
 ```
 
-Attachment
+Attachment [6391.6.patch](tarball://root/attachments/some-uuid/ticket6391/6391.6.patch) by dimpase created at 2011-01-17 14:10:42
 
 cumulative patch for sage 4.6.1
 
@@ -819,7 +819,7 @@ Updated patch
 archive/issue_comments_051216.json:
 ```json
 {
-    "body": "Attachment\n\nChanges to the newest spkg:\n* removed dist directory\n* removed unsetting CC/CXX since \"sage -sh\" sets these to sane values\n* converted all copied files from patches/ into patches\n* using libtool to build libGAP\n* Code cleanups\n\nBasic functionality now works including trapping errors:\n\n```\nsage: import sage.libs.gap.gap as g\nsage: g.libgap('1/0')\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1312, 0))\n\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/vbraun/opt/sage-4.7.alpha1/devel/sage-main/sage/libs/gap/<ipython console> in <module>()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6816)()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3254)()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3157)()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/libs/gap/gap.so in sage.libs.gap.gap.Gap._element_constructor_ (sage/libs/gap/gap.c:4963)()\n    684         \"\"\"\n    685         initialize_libgap()\n--> 686         return self.element_class(self, x)\n    687 \n    688 \n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/libs/gap/gap.so in sage.libs.gap.gap.GapElement.__init__ (sage/libs/gap/gap.c:3047)()\n    366         except RuntimeError, msg:\n    367             ClearError()\n--> 368             raise ValueError, 'Gap: '+str(msg)\n    369 \n    370         assert Symbol == S_SEMICOLON, 'Did not end with semicolon?'\n\nValueError: Gap: Rational operations: <divisor> must not be zero\n```\n",
+    "body": "Attachment [trac_6391_libGAP.2.patch](tarball://root/attachments/some-uuid/ticket6391/trac_6391_libGAP.2.patch) by vbraun created at 2011-03-23 01:37:52\n\nChanges to the newest spkg:\n* removed dist directory\n* removed unsetting CC/CXX since \"sage -sh\" sets these to sane values\n* converted all copied files from patches/ into patches\n* using libtool to build libGAP\n* Code cleanups\n\nBasic functionality now works including trapping errors:\n\n```\nsage: import sage.libs.gap.gap as g\nsage: g.libgap('1/0')\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1312, 0))\n\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/vbraun/opt/sage-4.7.alpha1/devel/sage-main/sage/libs/gap/<ipython console> in <module>()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6816)()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3254)()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3157)()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/libs/gap/gap.so in sage.libs.gap.gap.Gap._element_constructor_ (sage/libs/gap/gap.c:4963)()\n    684         \"\"\"\n    685         initialize_libgap()\n--> 686         return self.element_class(self, x)\n    687 \n    688 \n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/libs/gap/gap.so in sage.libs.gap.gap.GapElement.__init__ (sage/libs/gap/gap.c:3047)()\n    366         except RuntimeError, msg:\n    367             ClearError()\n--> 368             raise ValueError, 'Gap: '+str(msg)\n    369 \n    370         assert Symbol == S_SEMICOLON, 'Did not end with semicolon?'\n\nValueError: Gap: Rational operations: <divisor> must not be zero\n```\n",
     "created_at": "2011-03-23T01:37:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -828,7 +828,7 @@ archive/issue_comments_051216.json:
 }
 ```
 
-Attachment
+Attachment [trac_6391_libGAP.2.patch](tarball://root/attachments/some-uuid/ticket6391/trac_6391_libGAP.2.patch) by vbraun created at 2011-03-23 01:37:52
 
 Changes to the newest spkg:
 * removed dist directory
@@ -1667,7 +1667,7 @@ Sounds like you are all well on the way to solving this - another nice addition!
 archive/issue_comments_051240.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated patch",
+    "body": "Attachment [trac_6391_libGAP.3.patch](tarball://root/attachments/some-uuid/ticket6391/trac_6391_libGAP.3.patch) by vbraun created at 2011-03-26 10:31:18\n\nUpdated patch",
     "created_at": "2011-03-26T10:31:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -1676,7 +1676,7 @@ archive/issue_comments_051240.json:
 }
 ```
 
-Attachment
+Attachment [trac_6391_libGAP.3.patch](tarball://root/attachments/some-uuid/ticket6391/trac_6391_libGAP.3.patch) by vbraun created at 2011-03-26 10:31:18
 
 Updated patch
 
@@ -1743,7 +1743,7 @@ libgap interface header (for review purposes only)
 archive/issue_comments_051244.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:59 vbraun]:\n> The updated gap-4.4.12.p8 now contains a separate `libgap/` directory with a copy of the gap kernel sources and new autoconf scripts that can actually build a shared library on Solaris. \n> \n> While this layout is probably not the final word in how to build libgap, I think its good enough to test it on a wider audience. Once we are confident that it works well we should contact upstream and find out in how far they are willing to add shared library support. Ready for review!\n\nHi Volker, you mentioned adding doctests etc.\nDo you mean for the low-level stuff in gap.pyx ? \n\nDid you try completely replacing gap interface with libgap interface?\nIMHO it's about time to start doing this --- this would uncover more  things to do, I imagine.\n\nIt would be great is libgap/ contained at least one C example on building a C application that links against libGAP and does something, like computing the order of a permutation group. Would be good for stress-testing, and just understanding the\ninterface better.\nAnyone out there who has time for this now? (not me :-( ) I imagine it's more work on a makefile than on the C side.\n\nRegarding Sage-libGAP  interface, I would like to understand what happens in a scenario when a Python object P holds\na reference to a GAP object G, and then P gets GC'ed. This should result in G getting freed (eventually) by GAP's GC.\nIt would be good to see an evidence that this actually does happen.\n\nDid you check that things work with GAP workspaces (Saving/Loading workspaces, that is)?",
+    "body": "Attachment [libgap.h](tarball://root/attachments/some-uuid/ticket6391/libgap.h) by dimpase created at 2011-03-27 09:01:59\n\nReplying to [comment:59 vbraun]:\n> The updated gap-4.4.12.p8 now contains a separate `libgap/` directory with a copy of the gap kernel sources and new autoconf scripts that can actually build a shared library on Solaris. \n> \n> While this layout is probably not the final word in how to build libgap, I think its good enough to test it on a wider audience. Once we are confident that it works well we should contact upstream and find out in how far they are willing to add shared library support. Ready for review!\n\nHi Volker, you mentioned adding doctests etc.\nDo you mean for the low-level stuff in gap.pyx ? \n\nDid you try completely replacing gap interface with libgap interface?\nIMHO it's about time to start doing this --- this would uncover more  things to do, I imagine.\n\nIt would be great is libgap/ contained at least one C example on building a C application that links against libGAP and does something, like computing the order of a permutation group. Would be good for stress-testing, and just understanding the\ninterface better.\nAnyone out there who has time for this now? (not me :-( ) I imagine it's more work on a makefile than on the C side.\n\nRegarding Sage-libGAP  interface, I would like to understand what happens in a scenario when a Python object P holds\na reference to a GAP object G, and then P gets GC'ed. This should result in G getting freed (eventually) by GAP's GC.\nIt would be good to see an evidence that this actually does happen.\n\nDid you check that things work with GAP workspaces (Saving/Loading workspaces, that is)?",
     "created_at": "2011-03-27T09:01:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -1752,7 +1752,7 @@ archive/issue_comments_051244.json:
 }
 ```
 
-Attachment
+Attachment [libgap.h](tarball://root/attachments/some-uuid/ticket6391/libgap.h) by dimpase created at 2011-03-27 09:01:59
 
 Replying to [comment:59 vbraun]:
 > The updated gap-4.4.12.p8 now contains a separate `libgap/` directory with a copy of the gap kernel sources and new autoconf scripts that can actually build a shared library on Solaris. 
@@ -2128,7 +2128,7 @@ ValueError: Gap: Aborted
 archive/issue_comments_051254.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated patch",
+    "body": "Attachment [trac_6391_libGAP.4.patch](tarball://root/attachments/some-uuid/ticket6391/trac_6391_libGAP.4.patch) by vbraun created at 2012-08-30 11:10:57\n\nUpdated patch",
     "created_at": "2012-08-30T11:10:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -2137,7 +2137,7 @@ archive/issue_comments_051254.json:
 }
 ```
 
-Attachment
+Attachment [trac_6391_libGAP.4.patch](tarball://root/attachments/some-uuid/ticket6391/trac_6391_libGAP.4.patch) by vbraun created at 2012-08-30 11:10:57
 
 Updated patch
 
@@ -3415,7 +3415,7 @@ reviewer's patch
 archive/issue_comments_051298.json:
 ```json
 {
-    "body": "Attachment\n\nI don't think there is any reason for statically linking gmp other than their build system predating much of autotools...\n\nThe implicit declaration and pointer cast warnings are normal, GAP just predates ansi C :-)",
+    "body": "Attachment [libgaptest.patch](tarball://root/attachments/some-uuid/ticket6391/libgaptest.patch) by vbraun created at 2012-09-23 15:32:11\n\nI don't think there is any reason for statically linking gmp other than their build system predating much of autotools...\n\nThe implicit declaration and pointer cast warnings are normal, GAP just predates ansi C :-)",
     "created_at": "2012-09-23T15:32:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -3424,7 +3424,7 @@ archive/issue_comments_051298.json:
 }
 ```
 
-Attachment
+Attachment [libgaptest.patch](tarball://root/attachments/some-uuid/ticket6391/libgaptest.patch) by vbraun created at 2012-09-23 15:32:11
 
 I don't think there is any reason for statically linking gmp other than their build system predating much of autotools...
 
@@ -3817,7 +3817,7 @@ Updated patch
 archive/issue_comments_051312.json:
 ```json
 {
-    "body": "Attachment\n\n`sage.interfaces.interface.Interface` doesn't look like the most useful parent, its non-unique and operates on the assumption that one is dealing with a separate process. Here we have a shared library that is full of global variables. I think libGAP should aim at directly translating Sage<->GAP objects, so that the libGAP user does not have to input gap commands as strings at all.\n\nIt wouldn't take much to also build a libtoolized standalone interpreter, or even a GAP interpreter that communicates over zeromq. The problem is that 3rd party packages often expect a stand-alone gap tree with upstream's hacked up semi-autotools to install themselves in. From talking with people in St. Andrews I understand that upstream probably would have switched their build system already if it were not for this legacy problem.\n\nI got rid of the assert abuse and added some more tests.",
+    "body": "Attachment [trac_6391_libGAP.patch](tarball://root/attachments/some-uuid/ticket6391/trac_6391_libGAP.patch) by vbraun created at 2012-09-24 08:47:57\n\n`sage.interfaces.interface.Interface` doesn't look like the most useful parent, its non-unique and operates on the assumption that one is dealing with a separate process. Here we have a shared library that is full of global variables. I think libGAP should aim at directly translating Sage<->GAP objects, so that the libGAP user does not have to input gap commands as strings at all.\n\nIt wouldn't take much to also build a libtoolized standalone interpreter, or even a GAP interpreter that communicates over zeromq. The problem is that 3rd party packages often expect a stand-alone gap tree with upstream's hacked up semi-autotools to install themselves in. From talking with people in St. Andrews I understand that upstream probably would have switched their build system already if it were not for this legacy problem.\n\nI got rid of the assert abuse and added some more tests.",
     "created_at": "2012-09-24T08:47:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -3826,7 +3826,7 @@ archive/issue_comments_051312.json:
 }
 ```
 
-Attachment
+Attachment [trac_6391_libGAP.patch](tarball://root/attachments/some-uuid/ticket6391/trac_6391_libGAP.patch) by vbraun created at 2012-09-24 08:47:57
 
 `sage.interfaces.interface.Interface` doesn't look like the most useful parent, its non-unique and operates on the assumption that one is dealing with a separate process. Here we have a shared library that is full of global variables. I think libGAP should aim at directly translating Sage<->GAP objects, so that the libGAP user does not have to input gap commands as strings at all.
 
@@ -4172,7 +4172,7 @@ rebased patch
 archive/issue_comments_051325.json:
 ```json
 {
-    "body": "Attachment\n\nI've rebased the root patch just now, and removed the assert that offended Jeroen a while ago.\n\nThe startup error handling will be dealt with at #13588, this ticket is already way too long.\n\nThis ticket should be easy to review since it contains only minor changes from the previously-reviewed state.",
+    "body": "Attachment [trac_6391_libGAP_root.patch](tarball://root/attachments/some-uuid/ticket6391/trac_6391_libGAP_root.patch) by vbraun created at 2012-10-08 21:08:16\n\nI've rebased the root patch just now, and removed the assert that offended Jeroen a while ago.\n\nThe startup error handling will be dealt with at #13588, this ticket is already way too long.\n\nThis ticket should be easy to review since it contains only minor changes from the previously-reviewed state.",
     "created_at": "2012-10-08T21:08:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -4181,7 +4181,7 @@ archive/issue_comments_051325.json:
 }
 ```
 
-Attachment
+Attachment [trac_6391_libGAP_root.patch](tarball://root/attachments/some-uuid/ticket6391/trac_6391_libGAP_root.patch) by vbraun created at 2012-10-08 21:08:16
 
 I've rebased the root patch just now, and removed the assert that offended Jeroen a while ago.
 

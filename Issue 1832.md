@@ -105,7 +105,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1832
 archive/issue_comments_011595.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1832.patch](tarball://root/attachments/some-uuid/ticket1832/1832.patch) by mhansen created at 2008-01-18 23:05:16",
     "created_at": "2008-01-18T23:05:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1832",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_011595.json:
 }
 ```
 
-Attachment
+Attachment [1832.patch](tarball://root/attachments/some-uuid/ticket1832/1832.patch) by mhansen created at 2008-01-18 23:05:16
 
 
 

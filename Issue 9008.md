@@ -237,7 +237,7 @@ Dave
 archive/issue_comments_083322.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [zlib-cygwin-Makefile](tarball://root/attachments/some-uuid/ticket9008/zlib-cygwin-Makefile) by mhansen created at 2010-06-02 21:01:16",
     "created_at": "2010-06-02T21:01:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9008",
     "type": "issue_comment",
@@ -246,7 +246,7 @@ archive/issue_comments_083322.json:
 }
 ```
 
-Attachment
+Attachment [zlib-cygwin-Makefile](tarball://root/attachments/some-uuid/ticket9008/zlib-cygwin-Makefile) by mhansen created at 2010-06-02 21:01:16
 
 
 

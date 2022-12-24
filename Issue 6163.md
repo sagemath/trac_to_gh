@@ -217,7 +217,7 @@ We should probably special-case single-variable expression hashing and equality 
 archive/issue_comments_049166.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6163-symbol_hash.patch](tarball://root/attachments/some-uuid/ticket6163/trac_6163-symbol_hash.patch) by burcin created at 2009-06-04 09:49:17",
     "created_at": "2009-06-04T09:49:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6163",
     "type": "issue_comment",
@@ -226,7 +226,7 @@ archive/issue_comments_049166.json:
 }
 ```
 
-Attachment
+Attachment [trac_6163-symbol_hash.patch](tarball://root/attachments/some-uuid/ticket6163/trac_6163-symbol_hash.patch) by burcin created at 2009-06-04 09:49:17
 
 
 

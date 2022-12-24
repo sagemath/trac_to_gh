@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3866
 archive/issue_comments_027557.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [locator.patch](tarball://root/attachments/some-uuid/ticket3866/locator.patch) by jason created at 2008-08-15 03:48:16",
     "created_at": "2008-08-15T03:48:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3866",
     "type": "issue_comment",
@@ -51,7 +51,7 @@ archive/issue_comments_027557.json:
 }
 ```
 
-Attachment
+Attachment [locator.patch](tarball://root/attachments/some-uuid/ticket3866/locator.patch) by jason created at 2008-08-15 03:48:16
 
 
 
@@ -123,7 +123,7 @@ Marshall Hampton
 archive/issue_comments_027561.json:
 ```json
 {
-    "body": "Attachment\n\nrebase against 4.0.1, along with some very minor cleanup",
+    "body": "Attachment [trac_3866_4.0.1_rebase.patch](tarball://root/attachments/some-uuid/ticket3866/trac_3866_4.0.1_rebase.patch) by mhampton created at 2009-06-11 23:01:08\n\nrebase against 4.0.1, along with some very minor cleanup",
     "created_at": "2009-06-11T23:01:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3866",
     "type": "issue_comment",
@@ -132,7 +132,7 @@ archive/issue_comments_027561.json:
 }
 ```
 
-Attachment
+Attachment [trac_3866_4.0.1_rebase.patch](tarball://root/attachments/some-uuid/ticket3866/trac_3866_4.0.1_rebase.patch) by mhampton created at 2009-06-11 23:01:08
 
 rebase against 4.0.1, along with some very minor cleanup
 

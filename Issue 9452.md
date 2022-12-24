@@ -52,7 +52,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9452
 archive/issue_comments_090577.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-9452-strip_automount_prefix.patch](tarball://root/attachments/some-uuid/ticket9452/trac-9452-strip_automount_prefix.patch) by jason created at 2011-02-23 23:28:03",
     "created_at": "2011-02-23T23:28:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9452",
     "type": "issue_comment",
@@ -61,7 +61,7 @@ archive/issue_comments_090577.json:
 }
 ```
 
-Attachment
+Attachment [trac-9452-strip_automount_prefix.patch](tarball://root/attachments/some-uuid/ticket9452/trac-9452-strip_automount_prefix.patch) by jason created at 2011-02-23 23:28:03
 
 
 

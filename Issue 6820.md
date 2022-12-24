@@ -320,7 +320,7 @@ depends on #6586
 archive/issue_comments_056242.json:
 ```json
 {
-    "body": "Attachment\n\n(I re-attached the same patch so I could add the comment about it depending on #6586.)",
+    "body": "Attachment [trac_6820-browsedocs.patch](tarball://root/attachments/some-uuid/ticket6820/trac_6820-browsedocs.patch) by jhpalmieri created at 2009-09-06 19:36:54\n\n(I re-attached the same patch so I could add the comment about it depending on #6586.)",
     "created_at": "2009-09-06T19:36:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6820",
     "type": "issue_comment",
@@ -329,7 +329,7 @@ archive/issue_comments_056242.json:
 }
 ```
 
-Attachment
+Attachment [trac_6820-browsedocs.patch](tarball://root/attachments/some-uuid/ticket6820/trac_6820-browsedocs.patch) by jhpalmieri created at 2009-09-06 19:36:54
 
 (I re-attached the same patch so I could add the comment about it depending on #6586.)
 
@@ -431,7 +431,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_056247.json:
 ```json
 {
-    "body": "Attachment\n\napply only this patch",
+    "body": "Attachment [trac_6820-browsedocs-v2.patch](tarball://root/attachments/some-uuid/ticket6820/trac_6820-browsedocs-v2.patch) by jhpalmieri created at 2009-10-27 01:24:41\n\napply only this patch",
     "created_at": "2009-10-27T01:24:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6820",
     "type": "issue_comment",
@@ -440,7 +440,7 @@ archive/issue_comments_056247.json:
 }
 ```
 
-Attachment
+Attachment [trac_6820-browsedocs-v2.patch](tarball://root/attachments/some-uuid/ticket6820/trac_6820-browsedocs-v2.patch) by jhpalmieri created at 2009-10-27 01:24:41
 
 apply only this patch
 
@@ -451,7 +451,7 @@ apply only this patch
 archive/issue_comments_056248.json:
 ```json
 {
-    "body": "Attachment\n\nUse Sphinx stylesheets and jsMath for docstrings.  Apply only this patch.",
+    "body": "Attachment [trac_6820-browsedocs-v3.patch](tarball://root/attachments/some-uuid/ticket6820/trac_6820-browsedocs-v3.patch) by mpatel created at 2009-10-27 09:38:42\n\nUse Sphinx stylesheets and jsMath for docstrings.  Apply only this patch.",
     "created_at": "2009-10-27T09:38:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6820",
     "type": "issue_comment",
@@ -460,7 +460,7 @@ archive/issue_comments_056248.json:
 }
 ```
 
-Attachment
+Attachment [trac_6820-browsedocs-v3.patch](tarball://root/attachments/some-uuid/ticket6820/trac_6820-browsedocs-v3.patch) by mpatel created at 2009-10-27 09:38:42
 
 Use Sphinx stylesheets and jsMath for docstrings.  Apply only this patch.
 
@@ -516,7 +516,7 @@ Okay, this patch doesn't accidentally strip the backslashes anymore.  This depen
 archive/issue_comments_056251.json:
 ```json
 {
-    "body": "Attachment\n\ndepends on #6673.  apply only this patch.",
+    "body": "Attachment [trac_6820-browsedocs-v4.patch](tarball://root/attachments/some-uuid/ticket6820/trac_6820-browsedocs-v4.patch) by jhpalmieri created at 2009-10-27 22:46:59\n\ndepends on #6673.  apply only this patch.",
     "created_at": "2009-10-27T22:46:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6820",
     "type": "issue_comment",
@@ -525,7 +525,7 @@ archive/issue_comments_056251.json:
 }
 ```
 
-Attachment
+Attachment [trac_6820-browsedocs-v4.patch](tarball://root/attachments/some-uuid/ticket6820/trac_6820-browsedocs-v4.patch) by jhpalmieri created at 2009-10-27 22:46:59
 
 depends on #6673.  apply only this patch.
 

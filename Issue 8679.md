@@ -81,7 +81,7 @@ sage repo (documentation)
 archive/issue_comments_079058.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8679-sage.patch](tarball://root/attachments/some-uuid/ticket8679/trac_8679-sage.patch) by jhpalmieri created at 2010-04-12 21:59:06",
     "created_at": "2010-04-12T21:59:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8679",
     "type": "issue_comment",
@@ -90,7 +90,7 @@ archive/issue_comments_079058.json:
 }
 ```
 
-Attachment
+Attachment [trac_8679-sage.patch](tarball://root/attachments/some-uuid/ticket8679/trac_8679-sage.patch) by jhpalmieri created at 2010-04-12 21:59:06
 
 
 
@@ -250,7 +250,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_079065.json:
 ```json
 {
-    "body": "Attachment\n\nscripts repo",
+    "body": "Attachment [trac_8679-scripts.patch](tarball://root/attachments/some-uuid/ticket8679/trac_8679-scripts.patch) by jhpalmieri created at 2010-04-13 18:20:20\n\nscripts repo",
     "created_at": "2010-04-13T18:20:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8679",
     "type": "issue_comment",
@@ -259,7 +259,7 @@ archive/issue_comments_079065.json:
 }
 ```
 
-Attachment
+Attachment [trac_8679-scripts.patch](tarball://root/attachments/some-uuid/ticket8679/trac_8679-scripts.patch) by jhpalmieri created at 2010-04-13 18:20:20
 
 scripts repo
 

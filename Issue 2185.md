@@ -69,7 +69,7 @@ Changing assignee from was to rlm.
 archive/issue_comments_014351.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ratio-graphs-heights.patch](tarball://root/attachments/some-uuid/ticket2185/ratio-graphs-heights.patch) by rlm created at 2008-02-17 01:16:36",
     "created_at": "2008-02-17T01:16:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2185",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_014351.json:
 }
 ```
 
-Attachment
+Attachment [ratio-graphs-heights.patch](tarball://root/attachments/some-uuid/ticket2185/ratio-graphs-heights.patch) by rlm created at 2008-02-17 01:16:36
 
 
 

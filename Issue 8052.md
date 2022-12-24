@@ -260,7 +260,7 @@ patch against configure.ac in prereq-0.6
 archive/issue_comments_070440.json:
 ```json
 {
-    "body": "Attachment\n\npatch against prereq-install of prereq-0.6",
+    "body": "Attachment [prereq-install.patch](tarball://root/attachments/some-uuid/ticket8052/prereq-install.patch) by mvngu created at 2010-01-26 11:34:53\n\npatch against prereq-install of prereq-0.6",
     "created_at": "2010-01-26T11:34:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8052",
     "type": "issue_comment",
@@ -269,7 +269,7 @@ archive/issue_comments_070440.json:
 }
 ```
 
-Attachment
+Attachment [prereq-install.patch](tarball://root/attachments/some-uuid/ticket8052/prereq-install.patch) by mvngu created at 2010-01-26 11:34:53
 
 patch against prereq-install of prereq-0.6
 

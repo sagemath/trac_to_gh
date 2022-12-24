@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8828
 archive/issue_comments_081062.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8828-min-height-working.patch](tarball://root/attachments/some-uuid/ticket8828/8828-min-height-working.patch) by robertwb created at 2010-04-30 06:45:23",
     "created_at": "2010-04-30T06:45:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8828",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_081062.json:
 }
 ```
 
-Attachment
+Attachment [8828-min-height-working.patch](tarball://root/attachments/some-uuid/ticket8828/8828-min-height-working.patch) by robertwb created at 2010-04-30 06:45:23
 
 
 

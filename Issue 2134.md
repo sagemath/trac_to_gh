@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2134
 archive/issue_comments_013992.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [arrows.patch](tarball://root/attachments/some-uuid/ticket2134/arrows.patch) by rlm created at 2008-02-10 00:26:13",
     "created_at": "2008-02-10T00:26:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2134",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_013992.json:
 }
 ```
 
-Attachment
+Attachment [arrows.patch](tarball://root/attachments/some-uuid/ticket2134/arrows.patch) by rlm created at 2008-02-10 00:26:13
 
 
 
@@ -69,7 +69,7 @@ Note -- the author rlm of the patch was days without sleep at time of writing...
 archive/issue_comments_013994.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [arrows-2.patch](tarball://root/attachments/some-uuid/ticket2134/arrows-2.patch) by rlm created at 2008-02-11 21:02:55",
     "created_at": "2008-02-11T21:02:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2134",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_013994.json:
 }
 ```
 
-Attachment
+Attachment [arrows-2.patch](tarball://root/attachments/some-uuid/ticket2134/arrows-2.patch) by rlm created at 2008-02-11 21:02:55
 
 
 
@@ -210,7 +210,7 @@ Apply this instead of the others.
 archive/issue_comments_014001.json:
 ```json
 {
-    "body": "Attachment\n\nRebased- in doing so, I uncovered two bugs:\n1 Graphics import depended magically on it happening on another level\n2 Arrow plotting would have crashed on plotting loops\n\nShould now be ready to include.",
+    "body": "Attachment [arrows-new.patch](tarball://root/attachments/some-uuid/ticket2134/arrows-new.patch) by rlm created at 2008-02-15 00:45:06\n\nRebased- in doing so, I uncovered two bugs:\n1 Graphics import depended magically on it happening on another level\n2 Arrow plotting would have crashed on plotting loops\n\nShould now be ready to include.",
     "created_at": "2008-02-15T00:45:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2134",
     "type": "issue_comment",
@@ -219,7 +219,7 @@ archive/issue_comments_014001.json:
 }
 ```
 
-Attachment
+Attachment [arrows-new.patch](tarball://root/attachments/some-uuid/ticket2134/arrows-new.patch) by rlm created at 2008-02-15 00:45:06
 
 Rebased- in doing so, I uncovered two bugs:
 1 Graphics import depended magically on it happening on another level

@@ -156,7 +156,7 @@ Changing status from new to needs_review.
 archive/issue_comments_070170.json:
 ```json
 {
-    "body": "Attachment\n\nAdded a small file README.txt that has a summary of how the graph_editor works. Comments are welcome.",
+    "body": "Attachment [8033.patch](tarball://root/attachments/some-uuid/ticket8033/8033.patch) by rkirov created at 2010-01-22 08:01:05\n\nAdded a small file README.txt that has a summary of how the graph_editor works. Comments are welcome.",
     "created_at": "2010-01-22T08:01:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8033",
     "type": "issue_comment",
@@ -165,7 +165,7 @@ archive/issue_comments_070170.json:
 }
 ```
 
-Attachment
+Attachment [8033.patch](tarball://root/attachments/some-uuid/ticket8033/8033.patch) by rkirov created at 2010-01-22 08:01:05
 
 Added a small file README.txt that has a summary of how the graph_editor works. Comments are welcome.
 
@@ -194,7 +194,7 @@ Various changes.  Replaces previous.  sagenb repo.
 archive/issue_comments_070172.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached an update with some changes.  Feel free to make further changes!",
+    "body": "Attachment [trac_8033-graph_editor_readme.patch](tarball://root/attachments/some-uuid/ticket8033/trac_8033-graph_editor_readme.patch) by mpatel created at 2010-01-24 21:55:26\n\nI've attached an update with some changes.  Feel free to make further changes!",
     "created_at": "2010-01-24T21:55:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8033",
     "type": "issue_comment",
@@ -203,7 +203,7 @@ archive/issue_comments_070172.json:
 }
 ```
 
-Attachment
+Attachment [trac_8033-graph_editor_readme.patch](tarball://root/attachments/some-uuid/ticket8033/trac_8033-graph_editor_readme.patch) by mpatel created at 2010-01-24 21:55:26
 
 I've attached an update with some changes.  Feel free to make further changes!
 

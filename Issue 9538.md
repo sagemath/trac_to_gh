@@ -197,7 +197,7 @@ Paul
 archive/issue_comments_091903.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9538-maxima_kill.patch](tarball://root/attachments/some-uuid/ticket9538/trac_9538-maxima_kill.patch) by burcin created at 2010-09-26 15:58:09",
     "created_at": "2010-09-26T15:58:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9538",
     "type": "issue_comment",
@@ -206,7 +206,7 @@ archive/issue_comments_091903.json:
 }
 ```
 
-Attachment
+Attachment [trac_9538-maxima_kill.patch](tarball://root/attachments/some-uuid/ticket9538/trac_9538-maxima_kill.patch) by burcin created at 2010-09-26 15:58:09
 
 
 
@@ -345,7 +345,7 @@ patch for maxima spkg
 archive/issue_comments_091909.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:7 zimmerma]:\n> Did I something wrong? How to install the patched spkg?\n\nI don't have any experience with the maxima spkg. I just applied the patch in attachment:maxima_package.patch. It works here, but just complains about not being able to build `maxima.fasb`:\n\n\n```\ncp: cannot stat `maxima.fasb': No such file or directory\n```\n\n\nPerhaps someone more knowledgeable can help out. Building maxima as a library is #8645.",
+    "body": "Attachment [maxima_package.patch](tarball://root/attachments/some-uuid/ticket9538/maxima_package.patch) by burcin created at 2010-09-26 20:25:38\n\nReplying to [comment:7 zimmerma]:\n> Did I something wrong? How to install the patched spkg?\n\nI don't have any experience with the maxima spkg. I just applied the patch in attachment:maxima_package.patch. It works here, but just complains about not being able to build `maxima.fasb`:\n\n\n```\ncp: cannot stat `maxima.fasb': No such file or directory\n```\n\n\nPerhaps someone more knowledgeable can help out. Building maxima as a library is #8645.",
     "created_at": "2010-09-26T20:25:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9538",
     "type": "issue_comment",
@@ -354,7 +354,7 @@ archive/issue_comments_091909.json:
 }
 ```
 
-Attachment
+Attachment [maxima_package.patch](tarball://root/attachments/some-uuid/ticket9538/maxima_package.patch) by burcin created at 2010-09-26 20:25:38
 
 Replying to [comment:7 zimmerma]:
 > Did I something wrong? How to install the patched spkg?
@@ -600,7 +600,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_091920.json:
 ```json
 {
-    "body": "Attachment\n\nI uploaded an alternate patch, attachment:trac_9538-maxima_kill.take2.patch. This issues the `kill` command Robert Dodier recommended when initializing maxima. There is no need for any changes to the maxima package.",
+    "body": "Attachment [trac_9538-maxima_kill.take2.patch](tarball://root/attachments/some-uuid/ticket9538/trac_9538-maxima_kill.take2.patch) by burcin created at 2010-10-01 16:04:37\n\nI uploaded an alternate patch, attachment:trac_9538-maxima_kill.take2.patch. This issues the `kill` command Robert Dodier recommended when initializing maxima. There is no need for any changes to the maxima package.",
     "created_at": "2010-10-01T16:04:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9538",
     "type": "issue_comment",
@@ -609,7 +609,7 @@ archive/issue_comments_091920.json:
 }
 ```
 
-Attachment
+Attachment [trac_9538-maxima_kill.take2.patch](tarball://root/attachments/some-uuid/ticket9538/trac_9538-maxima_kill.take2.patch) by burcin created at 2010-10-01 16:04:37
 
 I uploaded an alternate patch, attachment:trac_9538-maxima_kill.take2.patch. This issues the `kill` command Robert Dodier recommended when initializing maxima. There is no need for any changes to the maxima package.
 

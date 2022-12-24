@@ -92,7 +92,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4805
 archive/issue_comments_036423.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4805.patch](tarball://root/attachments/some-uuid/ticket4805/trac_4805.patch) by cremona created at 2009-01-18 17:28:58",
     "created_at": "2009-01-18T17:28:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4805",
     "type": "issue_comment",
@@ -101,7 +101,7 @@ archive/issue_comments_036423.json:
 }
 ```
 
-Attachment
+Attachment [trac_4805.patch](tarball://root/attachments/some-uuid/ticket4805/trac_4805.patch) by cremona created at 2009-01-18 17:28:58
 
 
 
@@ -268,7 +268,7 @@ OK, I'll do that as soon as I can.  Then we might want to ping one of our p-adic
 archive/issue_comments_036430.json:
 ```json
 {
-    "body": "Attachment\n\nApply after previous",
+    "body": "Attachment [trac_4805a.patch](tarball://root/attachments/some-uuid/ticket4805/trac_4805a.patch) by cremona created at 2009-02-02 21:15:22\n\nApply after previous",
     "created_at": "2009-02-02T21:15:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4805",
     "type": "issue_comment",
@@ -277,7 +277,7 @@ archive/issue_comments_036430.json:
 }
 ```
 
-Attachment
+Attachment [trac_4805a.patch](tarball://root/attachments/some-uuid/ticket4805/trac_4805a.patch) by cremona created at 2009-02-02 21:15:22
 
 Apply after previous
 

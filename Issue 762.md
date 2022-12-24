@@ -101,7 +101,7 @@ this fixes the bug.
 archive/issue_comments_004516.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac762.patch](tarball://root/attachments/some-uuid/ticket762/trac762.patch) by was created at 2007-10-28 23:58:57",
     "created_at": "2007-10-28T23:58:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/762",
     "type": "issue_comment",
@@ -110,7 +110,7 @@ archive/issue_comments_004516.json:
 }
 ```
 
-Attachment
+Attachment [trac762.patch](tarball://root/attachments/some-uuid/ticket762/trac762.patch) by was created at 2007-10-28 23:58:57
 
 
 

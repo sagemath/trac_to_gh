@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9915
 archive/issue_comments_098647.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac9915_nzmath-mpmath-fixes.patch](tarball://root/attachments/some-uuid/ticket9915/trac9915_nzmath-mpmath-fixes.patch) by cwitty created at 2010-09-16 08:51:45",
     "created_at": "2010-09-16T08:51:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9914",
     "type": "issue_comment",
@@ -43,7 +43,7 @@ archive/issue_comments_098647.json:
 }
 ```
 
-Attachment
+Attachment [trac9915_nzmath-mpmath-fixes.patch](tarball://root/attachments/some-uuid/ticket9915/trac9915_nzmath-mpmath-fixes.patch) by cwitty created at 2010-09-16 08:51:45
 
 
 

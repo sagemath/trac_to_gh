@@ -82,7 +82,7 @@ quick'n
 archive/issue_comments_019079.json:
 ```json
 {
-    "body": "Attachment\n\nadded quick'n'dirty patch...\n\nthe case with notebook?? can be also seen with all class instances, I made quick patch that make sage.misc.sageinspect.sage_get* functions work with class instances by returning data of class coresponding to given instance... also made notebook version of ?? check for _sage_src_ like was already done in console version.\n\nI don't know if this covers all cases, but works for reported notebook (and also for R functions and probably more)",
+    "body": "Attachment [2777-1.diff](tarball://root/attachments/some-uuid/ticket2777/2777-1.diff) by aginiewicz created at 2008-09-21 22:22:37\n\nadded quick'n'dirty patch...\n\nthe case with notebook?? can be also seen with all class instances, I made quick patch that make sage.misc.sageinspect.sage_get* functions work with class instances by returning data of class coresponding to given instance... also made notebook version of ?? check for _sage_src_ like was already done in console version.\n\nI don't know if this covers all cases, but works for reported notebook (and also for R functions and probably more)",
     "created_at": "2008-09-21T22:22:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2777",
     "type": "issue_comment",
@@ -91,7 +91,7 @@ archive/issue_comments_019079.json:
 }
 ```
 
-Attachment
+Attachment [2777-1.diff](tarball://root/attachments/some-uuid/ticket2777/2777-1.diff) by aginiewicz created at 2008-09-21 22:22:37
 
 added quick'n'dirty patch...
 

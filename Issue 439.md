@@ -51,7 +51,7 @@ Changing status from new to assigned.
 archive/issue_comments_002197.json:
 ```json
 {
-    "body": "Attachment\n\nJust posted a patch. Issues that still need to be resolved:\n* could do better when converting with _sage_() remote objects\n* the _remote_tmpfile is defaulted to \"/tmp\", I am not sure that's a good idea, and if we shouldn't just return an error if (server_tmpdir is None) and not (server is None)",
+    "body": "Attachment [5771.patch](tarball://root/attachments/some-uuid/ticket439/5771.patch) by pdehaye created at 2007-08-19 23:11:30\n\nJust posted a patch. Issues that still need to be resolved:\n* could do better when converting with _sage_() remote objects\n* the _remote_tmpfile is defaulted to \"/tmp\", I am not sure that's a good idea, and if we shouldn't just return an error if (server_tmpdir is None) and not (server is None)",
     "created_at": "2007-08-19T23:11:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/439",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_002197.json:
 }
 ```
 
-Attachment
+Attachment [5771.patch](tarball://root/attachments/some-uuid/ticket439/5771.patch) by pdehaye created at 2007-08-19 23:11:30
 
 Just posted a patch. Issues that still need to be resolved:
 * could do better when converting with _sage_() remote objects

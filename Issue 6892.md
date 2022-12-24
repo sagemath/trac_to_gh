@@ -55,7 +55,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6892
 archive/issue_comments_056941.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6892-dollars.patch](tarball://root/attachments/some-uuid/ticket6892/trac_6892-dollars.patch) by jhpalmieri created at 2009-09-04 21:26:48",
     "created_at": "2009-09-04T21:26:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6892",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_056941.json:
 }
 ```
 
-Attachment
+Attachment [trac_6892-dollars.patch](tarball://root/attachments/some-uuid/ticket6892/trac_6892-dollars.patch) by jhpalmieri created at 2009-09-04 21:26:48
 
 
 
@@ -91,7 +91,7 @@ minor rebase for 4.1.2.alpha1; tiny changes to conf.py and ambient_g0.py
 archive/issue_comments_056943.json:
 ```json
 {
-    "body": "Attachment\n\nrebased against 4.1.2.alpha2, plus a little documentation",
+    "body": "Attachment [trac_6892-dollars-rebased.patch](tarball://root/attachments/some-uuid/ticket6892/trac_6892-dollars-rebased.patch) by jhpalmieri created at 2009-09-22 03:01:13\n\nrebased against 4.1.2.alpha2, plus a little documentation",
     "created_at": "2009-09-22T03:01:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6892",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_056943.json:
 }
 ```
 
-Attachment
+Attachment [trac_6892-dollars-rebased.patch](tarball://root/attachments/some-uuid/ticket6892/trac_6892-dollars-rebased.patch) by jhpalmieri created at 2009-09-22 03:01:13
 
 rebased against 4.1.2.alpha2, plus a little documentation
 

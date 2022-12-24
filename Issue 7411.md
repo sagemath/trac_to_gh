@@ -53,7 +53,7 @@ needs #7408
 archive/issue_comments_062364.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7411-inverse_rsk.patch](tarball://root/attachments/some-uuid/ticket7411/trac_7411-inverse_rsk.patch) by ylchapuy created at 2009-11-08 14:04:55",
     "created_at": "2009-11-08T14:04:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7411",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_062364.json:
 }
 ```
 
-Attachment
+Attachment [trac_7411-inverse_rsk.patch](tarball://root/attachments/some-uuid/ticket7411/trac_7411-inverse_rsk.patch) by ylchapuy created at 2009-11-08 14:04:55
 
 
 

@@ -53,7 +53,7 @@ patch against 3.4.1.rc1
 archive/issue_comments_044751.json:
 ```json
 {
-    "body": "Attachment\n\nLet's change the status so the right reports pick up this ticket :)\n\nCheers,\n\nMichael",
+    "body": "Attachment [modular_docs.patch](tarball://root/attachments/some-uuid/ticket5727/modular_docs.patch) by mabshoff created at 2009-04-09 18:36:10\n\nLet's change the status so the right reports pick up this ticket :)\n\nCheers,\n\nMichael",
     "created_at": "2009-04-09T18:36:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5727",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_044751.json:
 }
 ```
 
-Attachment
+Attachment [modular_docs.patch](tarball://root/attachments/some-uuid/ticket5727/modular_docs.patch) by mabshoff created at 2009-04-09 18:36:10
 
 Let's change the status so the right reports pick up this ticket :)
 
@@ -124,7 +124,7 @@ These are trivial changes, so I've posted a tiny patch that adds them and given 
 archive/issue_comments_044753.json:
 ```json
 {
-    "body": "Attachment\n\napply this after applying the above patch",
+    "body": "Attachment [trac_5727_referee.patch](tarball://root/attachments/some-uuid/ticket5727/trac_5727_referee.patch) by was created at 2009-04-10 00:51:29\n\napply this after applying the above patch",
     "created_at": "2009-04-10T00:51:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5727",
     "type": "issue_comment",
@@ -133,7 +133,7 @@ archive/issue_comments_044753.json:
 }
 ```
 
-Attachment
+Attachment [trac_5727_referee.patch](tarball://root/attachments/some-uuid/ticket5727/trac_5727_referee.patch) by was created at 2009-04-10 00:51:29
 
 apply this after applying the above patch
 

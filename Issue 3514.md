@@ -62,7 +62,7 @@ free_modules.patch
 archive/issue_comments_024754.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [free-modules.patch](tarball://root/attachments/some-uuid/ticket3514/free-modules.patch) by mabshoff created at 2008-06-26 19:02:09",
     "created_at": "2008-06-26T19:02:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3514",
     "type": "issue_comment",
@@ -71,7 +71,7 @@ archive/issue_comments_024754.json:
 }
 ```
 
-Attachment
+Attachment [free-modules.patch](tarball://root/attachments/some-uuid/ticket3514/free-modules.patch) by mabshoff created at 2008-06-26 19:02:09
 
 
 
@@ -288,7 +288,7 @@ Changing keywords from "free modules" to "free modules editor_mhansen".
 archive/issue_comments_024762.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached trac_3514.2.patch which applies cleanly against 3.0.4.rc0.",
+    "body": "Attachment [trac_3514.2.patch](tarball://root/attachments/some-uuid/ticket3514/trac_3514.2.patch) by mhansen created at 2008-07-09 00:29:23\n\nI've attached trac_3514.2.patch which applies cleanly against 3.0.4.rc0.",
     "created_at": "2008-07-09T00:29:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3514",
     "type": "issue_comment",
@@ -297,7 +297,7 @@ archive/issue_comments_024762.json:
 }
 ```
 
-Attachment
+Attachment [trac_3514.2.patch](tarball://root/attachments/some-uuid/ticket3514/trac_3514.2.patch) by mhansen created at 2008-07-09 00:29:23
 
 I've attached trac_3514.2.patch which applies cleanly against 3.0.4.rc0.
 
@@ -360,7 +360,7 @@ I deviated a bit from my own review comments in a few places.
 archive/issue_comments_024765.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3514-review.patch](tarball://root/attachments/some-uuid/ticket3514/trac_3514-review.patch) by mhansen created at 2008-08-07 01:26:20",
     "created_at": "2008-08-07T01:26:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3514",
     "type": "issue_comment",
@@ -369,7 +369,7 @@ archive/issue_comments_024765.json:
 }
 ```
 
-Attachment
+Attachment [trac_3514-review.patch](tarball://root/attachments/some-uuid/ticket3514/trac_3514-review.patch) by mhansen created at 2008-08-07 01:26:20
 
 
 
@@ -518,7 +518,7 @@ I agree! See patch.
 archive/issue_comments_024773.json:
 ```json
 {
-    "body": "Attachment\n\nMerged sage-3514_span.patch in Sage 3.1.alpha1",
+    "body": "Attachment [sage-3514_span.patch](tarball://root/attachments/some-uuid/ticket3514/sage-3514_span.patch) by mabshoff created at 2008-08-11 06:46:06\n\nMerged sage-3514_span.patch in Sage 3.1.alpha1",
     "created_at": "2008-08-11T06:46:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3514",
     "type": "issue_comment",
@@ -527,6 +527,6 @@ archive/issue_comments_024773.json:
 }
 ```
 
-Attachment
+Attachment [sage-3514_span.patch](tarball://root/attachments/some-uuid/ticket3514/sage-3514_span.patch) by mabshoff created at 2008-08-11 06:46:06
 
 Merged sage-3514_span.patch in Sage 3.1.alpha1

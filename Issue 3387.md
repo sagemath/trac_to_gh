@@ -60,7 +60,7 @@ Changing assignee from tbd to was.
 archive/issue_comments_023710.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3387.patch](tarball://root/attachments/some-uuid/ticket3387/sage-3387.patch) by was created at 2008-06-09 22:48:56",
     "created_at": "2008-06-09T22:48:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3387",
     "type": "issue_comment",
@@ -69,7 +69,7 @@ archive/issue_comments_023710.json:
 }
 ```
 
-Attachment
+Attachment [sage-3387.patch](tarball://root/attachments/some-uuid/ticket3387/sage-3387.patch) by was created at 2008-06-09 22:48:56
 
 
 

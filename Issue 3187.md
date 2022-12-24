@@ -53,7 +53,7 @@ Changing status from new to assigned.
 archive/issue_comments_022050.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch is reverse :(\n\nCheers,\n\nMichael",
+    "body": "Attachment [matplotlib-0.91.1.p4-spkg-install-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3187/matplotlib-0.91.1.p4-spkg-install-64bit-osx.patch) by mabshoff created at 2008-05-19 04:35:56\n\nThe patch is reverse :(\n\nCheers,\n\nMichael",
     "created_at": "2008-05-19T04:35:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3187",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_022050.json:
 }
 ```
 
-Attachment
+Attachment [matplotlib-0.91.1.p4-spkg-install-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3187/matplotlib-0.91.1.p4-spkg-install-64bit-osx.patch) by mabshoff created at 2008-05-19 04:35:56
 
 The patch is reverse :(
 

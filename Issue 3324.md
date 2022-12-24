@@ -294,7 +294,7 @@ new patch addresses review
 archive/issue_comments_023049.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch addresses this issue.",
+    "body": "Attachment [m4ri_png.patch](tarball://root/attachments/some-uuid/ticket3324/m4ri_png.patch) by malb created at 2008-06-20 03:45:15\n\nThe attached patch addresses this issue.",
     "created_at": "2008-06-20T03:45:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3324",
     "type": "issue_comment",
@@ -303,7 +303,7 @@ archive/issue_comments_023049.json:
 }
 ```
 
-Attachment
+Attachment [m4ri_png.patch](tarball://root/attachments/some-uuid/ticket3324/m4ri_png.patch) by malb created at 2008-06-20 03:45:15
 
 The attached patch addresses this issue.
 

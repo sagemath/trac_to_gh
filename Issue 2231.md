@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2231
 archive/issue_comments_014776.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2231.patch](tarball://root/attachments/some-uuid/ticket2231/2231.patch) by mhansen created at 2008-02-20 09:18:12",
     "created_at": "2008-02-20T09:18:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2231",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_014776.json:
 }
 ```
 
-Attachment
+Attachment [2231.patch](tarball://root/attachments/some-uuid/ticket2231/2231.patch) by mhansen created at 2008-02-20 09:18:12
 
 
 
@@ -69,7 +69,7 @@ Changing status from new to assigned.
 archive/issue_comments_014778.json:
 ```json
 {
-    "body": "Attachment\n\napply this after 2231.patch",
+    "body": "Attachment [sage-2231-followup.patch](tarball://root/attachments/some-uuid/ticket2231/sage-2231-followup.patch) by was created at 2008-02-20 15:57:14\n\napply this after 2231.patch",
     "created_at": "2008-02-20T15:57:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2231",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_014778.json:
 }
 ```
 
-Attachment
+Attachment [sage-2231-followup.patch](tarball://root/attachments/some-uuid/ticket2231/sage-2231-followup.patch) by was created at 2008-02-20 15:57:14
 
 apply this after 2231.patch
 

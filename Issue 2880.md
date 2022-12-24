@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2880
 archive/issue_comments_019811.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9384.patch](tarball://root/attachments/some-uuid/ticket2880/9384.patch) by cremona created at 2008-04-11 20:07:37",
     "created_at": "2008-04-11T20:07:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2880",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_019811.json:
 }
 ```
 
-Attachment
+Attachment [9384.patch](tarball://root/attachments/some-uuid/ticket2880/9384.patch) by cremona created at 2008-04-11 20:07:37
 
 
 
@@ -71,7 +71,7 @@ Changing keywords from "" to "elliptic curves".
 archive/issue_comments_019813.json:
 ```json
 {
-    "body": "Attachment\n\nreplaces previous patch; applies to 3.0.alpha3",
+    "body": "Attachment [9467.patch](tarball://root/attachments/some-uuid/ticket2880/9467.patch) by cremona created at 2008-04-11 21:17:53\n\nreplaces previous patch; applies to 3.0.alpha3",
     "created_at": "2008-04-11T21:17:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2880",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_019813.json:
 }
 ```
 
-Attachment
+Attachment [9467.patch](tarball://root/attachments/some-uuid/ticket2880/9467.patch) by cremona created at 2008-04-11 21:17:53
 
 replaces previous patch; applies to 3.0.alpha3
 
@@ -109,7 +109,7 @@ The original patch was based on 3.0.alpha1 and did not apply to alpha3.  The new
 archive/issue_comments_019815.json:
 ```json
 {
-    "body": "Attachment\n\nApply after preceding main patch",
+    "body": "Attachment [9468.patch](tarball://root/attachments/some-uuid/ticket2880/9468.patch) by cremona created at 2008-04-12 19:12:07\n\nApply after preceding main patch",
     "created_at": "2008-04-12T19:12:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2880",
     "type": "issue_comment",
@@ -118,7 +118,7 @@ archive/issue_comments_019815.json:
 }
 ```
 
-Attachment
+Attachment [9468.patch](tarball://root/attachments/some-uuid/ticket2880/9468.patch) by cremona created at 2008-04-12 19:12:07
 
 Apply after preceding main patch
 

@@ -71,7 +71,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3809
 archive/issue_comments_027063.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3809-ncalexan-number-field-checking.patch](tarball://root/attachments/some-uuid/ticket3809/3809-ncalexan-number-field-checking.patch) by ncalexan created at 2008-08-12 04:49:10",
     "created_at": "2008-08-12T04:49:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3809",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_027063.json:
 }
 ```
 
-Attachment
+Attachment [3809-ncalexan-number-field-checking.patch](tarball://root/attachments/some-uuid/ticket3809/3809-ncalexan-number-field-checking.patch) by ncalexan created at 2008-08-12 04:49:10
 
 
 
@@ -89,7 +89,7 @@ Attachment
 archive/issue_comments_027064.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3809-referee.patch](tarball://root/attachments/some-uuid/ticket3809/sage-3809-referee.patch) by was created at 2008-08-13 02:31:52",
     "created_at": "2008-08-13T02:31:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3809",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_027064.json:
 }
 ```
 
-Attachment
+Attachment [sage-3809-referee.patch](tarball://root/attachments/some-uuid/ticket3809/sage-3809-referee.patch) by was created at 2008-08-13 02:31:52
 
 
 

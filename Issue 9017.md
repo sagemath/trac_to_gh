@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9017
 archive/issue_comments_083436.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9017-latex-sqrt-neg1.patch](tarball://root/attachments/some-uuid/ticket9017/9017-latex-sqrt-neg1.patch) by robertwb created at 2010-05-22 15:47:50",
     "created_at": "2010-05-22T15:47:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9017",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_083436.json:
 }
 ```
 
-Attachment
+Attachment [9017-latex-sqrt-neg1.patch](tarball://root/attachments/some-uuid/ticket9017/9017-latex-sqrt-neg1.patch) by robertwb created at 2010-05-22 15:47:50
 
 
 
@@ -123,7 +123,7 @@ Here's one fix.
 archive/issue_comments_083441.json:
 ```json
 {
-    "body": "Attachment\n\nSee also #9018.",
+    "body": "Attachment [9017-fixes.patch](tarball://root/attachments/some-uuid/ticket9017/9017-fixes.patch) by robertwb created at 2010-05-22 16:34:42\n\nSee also #9018.",
     "created_at": "2010-05-22T16:34:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9017",
     "type": "issue_comment",
@@ -132,7 +132,7 @@ archive/issue_comments_083441.json:
 }
 ```
 
-Attachment
+Attachment [9017-fixes.patch](tarball://root/attachments/some-uuid/ticket9017/9017-fixes.patch) by robertwb created at 2010-05-22 16:34:42
 
 See also #9018.
 
@@ -161,7 +161,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_083443.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9017-doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket9017/trac_9017-doctest_fixes.patch) by burcin created at 2010-05-22 17:53:26",
     "created_at": "2010-05-22T17:53:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9017",
     "type": "issue_comment",
@@ -170,7 +170,7 @@ archive/issue_comments_083443.json:
 }
 ```
 
-Attachment
+Attachment [trac_9017-doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket9017/trac_9017-doctest_fixes.patch) by burcin created at 2010-05-22 17:53:26
 
 
 

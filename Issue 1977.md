@@ -75,7 +75,7 @@ Changing status from new to assigned.
 archive/issue_comments_012818.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.",
+    "body": "Attachment [Sage-2.10.1.rc5-fix-valgrind-log-pids_trac_1977.patch](tarball://root/attachments/some-uuid/ticket1977/Sage-2.10.1.rc5-fix-valgrind-log-pids_trac_1977.patch) by was created at 2008-02-02 06:29:51\n\nLooks good to me.",
     "created_at": "2008-02-02T06:29:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1977",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_012818.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.10.1.rc5-fix-valgrind-log-pids_trac_1977.patch](tarball://root/attachments/some-uuid/ticket1977/Sage-2.10.1.rc5-fix-valgrind-log-pids_trac_1977.patch) by was created at 2008-02-02 06:29:51
 
 Looks good to me.
 

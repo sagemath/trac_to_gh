@@ -120,7 +120,7 @@ Changing assignee from boothby to mhansen.
 archive/issue_comments_030643.json:
 ```json
 {
-    "body": "Attachment\n\nRemoves Cell.__is_html and instead depends on the Cell.system() call for html cell detection",
+    "body": "Attachment [trac_4217-html-system-formatting.patch](tarball://root/attachments/some-uuid/ticket4217/trac_4217-html-system-formatting.patch) by timdumol created at 2010-01-17 01:22:36\n\nRemoves Cell.__is_html and instead depends on the Cell.system() call for html cell detection",
     "created_at": "2010-01-17T01:22:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4217",
     "type": "issue_comment",
@@ -129,7 +129,7 @@ archive/issue_comments_030643.json:
 }
 ```
 
-Attachment
+Attachment [trac_4217-html-system-formatting.patch](tarball://root/attachments/some-uuid/ticket4217/trac_4217-html-system-formatting.patch) by timdumol created at 2010-01-17 01:22:36
 
 Removes Cell.__is_html and instead depends on the Cell.system() call for html cell detection
 
@@ -176,7 +176,7 @@ The line breaks should not have been visible in the output in the first place as
 archive/issue_comments_030646.json:
 ```json
 {
-    "body": "Attachment\n\nRebase on new",
+    "body": "Attachment [trac_4217-html-system-formatting.2.patch](tarball://root/attachments/some-uuid/ticket4217/trac_4217-html-system-formatting.2.patch) by timdumol created at 2010-01-17 21:57:15\n\nRebase on new",
     "created_at": "2010-01-17T21:57:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4217",
     "type": "issue_comment",
@@ -185,7 +185,7 @@ archive/issue_comments_030646.json:
 }
 ```
 
-Attachment
+Attachment [trac_4217-html-system-formatting.2.patch](tarball://root/attachments/some-uuid/ticket4217/trac_4217-html-system-formatting.2.patch) by timdumol created at 2010-01-17 21:57:15
 
 Rebase on new
 
@@ -294,7 +294,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_030651.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached V3, which just uses `cell.html`'s `input_cls`.\n\nSometimes, evaluating a cell with `%hide` at its top doesn't hide it.  This is a separate problem, apparently\n\nPositive review on this ticket.  Feel free to ignore V3.",
+    "body": "Attachment [trac_4217-html-system-formatting.3.patch](tarball://root/attachments/some-uuid/ticket4217/trac_4217-html-system-formatting.3.patch) by mpatel created at 2010-01-19 13:18:01\n\nI've attached V3, which just uses `cell.html`'s `input_cls`.\n\nSometimes, evaluating a cell with `%hide` at its top doesn't hide it.  This is a separate problem, apparently\n\nPositive review on this ticket.  Feel free to ignore V3.",
     "created_at": "2010-01-19T13:18:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4217",
     "type": "issue_comment",
@@ -303,7 +303,7 @@ archive/issue_comments_030651.json:
 }
 ```
 
-Attachment
+Attachment [trac_4217-html-system-formatting.3.patch](tarball://root/attachments/some-uuid/ticket4217/trac_4217-html-system-formatting.3.patch) by mpatel created at 2010-01-19 13:18:01
 
 I've attached V3, which just uses `cell.html`'s `input_cls`.
 

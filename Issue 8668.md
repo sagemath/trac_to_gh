@@ -102,7 +102,7 @@ http://www.sagemath.org/library-press.html
 archive/issue_comments_078863.json:
 ```json
 {
-    "body": "Attachment\n\nsketch v3",
+    "body": "Attachment [sage-5.0-press-release-v3.txt](tarball://root/attachments/some-uuid/ticket8668/sage-5.0-press-release-v3.txt) by mvngu created at 2010-04-12 01:37:03\n\nsketch v3",
     "created_at": "2010-04-12T01:37:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8668",
     "type": "issue_comment",
@@ -111,7 +111,7 @@ archive/issue_comments_078863.json:
 }
 ```
 
-Attachment
+Attachment [sage-5.0-press-release-v3.txt](tarball://root/attachments/some-uuid/ticket8668/sage-5.0-press-release-v3.txt) by mvngu created at 2010-04-12 01:37:03
 
 sketch v3
 

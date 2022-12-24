@@ -54,7 +54,7 @@ Changing status from new to needs_review.
 archive/issue_comments_080938.json:
 ```json
 {
-    "body": "Attachment\n\nLooks like it was a typo in that function, easy fix.",
+    "body": "Attachment [8818-ZZ-range.patch](tarball://root/attachments/some-uuid/ticket8818/8818-ZZ-range.patch) by robertwb created at 2010-04-29 07:09:35\n\nLooks like it was a typo in that function, easy fix.",
     "created_at": "2010-04-29T07:09:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8818",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_080938.json:
 }
 ```
 
-Attachment
+Attachment [8818-ZZ-range.patch](tarball://root/attachments/some-uuid/ticket8818/8818-ZZ-range.patch) by robertwb created at 2010-04-29 07:09:35
 
 Looks like it was a typo in that function, easy fix.
 

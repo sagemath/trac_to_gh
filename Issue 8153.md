@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8153
 archive/issue_comments_071680.json:
 ```json
 {
-    "body": "Attachment\n\nIs this up for review?",
+    "body": "Attachment [13535.patch](tarball://root/attachments/some-uuid/ticket8153/13535.patch) by mvngu created at 2010-02-02 16:18:06\n\nIs this up for review?",
     "created_at": "2010-02-02T16:18:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8153",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_071680.json:
 }
 ```
 
-Attachment
+Attachment [13535.patch](tarball://root/attachments/some-uuid/ticket8153/13535.patch) by mvngu created at 2010-02-02 16:18:06
 
 Is this up for review?
 
@@ -107,7 +107,7 @@ before applying 13535.patch
 archive/issue_comments_071684.json:
 ```json
 {
-    "body": "Attachment\n\nafter applying 13535.patch",
+    "body": "Attachment [before.png](tarball://root/attachments/some-uuid/ticket8153/before.png) by mvngu created at 2010-02-02 21:20:26\n\nafter applying 13535.patch",
     "created_at": "2010-02-02T21:20:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8153",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_071684.json:
 }
 ```
 
-Attachment
+Attachment [before.png](tarball://root/attachments/some-uuid/ticket8153/before.png) by mvngu created at 2010-02-02 21:20:26
 
 after applying 13535.patch
 
@@ -127,7 +127,7 @@ after applying 13535.patch
 archive/issue_comments_071685.json:
 ```json
 {
-    "body": "Attachment\n\nbased on Sage 4.3.2.alpha1",
+    "body": "Attachment [after.png](tarball://root/attachments/some-uuid/ticket8153/after.png) by mvngu created at 2010-02-02 21:25:48\n\nbased on Sage 4.3.2.alpha1",
     "created_at": "2010-02-02T21:25:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8153",
     "type": "issue_comment",
@@ -136,7 +136,7 @@ archive/issue_comments_071685.json:
 }
 ```
 
-Attachment
+Attachment [after.png](tarball://root/attachments/some-uuid/ticket8153/after.png) by mvngu created at 2010-02-02 21:25:48
 
 based on Sage 4.3.2.alpha1
 
@@ -147,7 +147,7 @@ based on Sage 4.3.2.alpha1
 archive/issue_comments_071686.json:
 ```json
 {
-    "body": "Attachment\n\nafter applying trac_8153-plot-doc.patch",
+    "body": "Attachment [after2.png](tarball://root/attachments/some-uuid/ticket8153/after2.png) by mvngu created at 2010-02-02 21:26:16\n\nafter applying trac_8153-plot-doc.patch",
     "created_at": "2010-02-02T21:26:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8153",
     "type": "issue_comment",
@@ -156,7 +156,7 @@ archive/issue_comments_071686.json:
 }
 ```
 
-Attachment
+Attachment [after2.png](tarball://root/attachments/some-uuid/ticket8153/after2.png) by mvngu created at 2010-02-02 21:26:16
 
 after applying trac_8153-plot-doc.patch
 

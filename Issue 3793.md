@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3793
 archive/issue_comments_026969.json:
 ```json
 {
-    "body": "Attachment\n\nTo test this you should really test the doctests in ell_rational_field.py both before and after installing the database.",
+    "body": "Attachment [10109.patch](tarball://root/attachments/some-uuid/ticket3793/10109.patch) by cremona created at 2008-08-09 12:54:54\n\nTo test this you should really test the doctests in ell_rational_field.py both before and after installing the database.",
     "created_at": "2008-08-09T12:54:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3793",
     "type": "issue_comment",
@@ -41,7 +41,7 @@ archive/issue_comments_026969.json:
 }
 ```
 
-Attachment
+Attachment [10109.patch](tarball://root/attachments/some-uuid/ticket3793/10109.patch) by cremona created at 2008-08-09 12:54:54
 
 To test this you should really test the doctests in ell_rational_field.py both before and after installing the database.
 

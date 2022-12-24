@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7158
 archive/issue_comments_059309.json:
 ```json
 {
-    "body": "Attachment\n\nAdd challenge-response to notebook registration page. Depends on #7110.",
+    "body": "Attachment [trac_7158-captcha.patch](tarball://root/attachments/some-uuid/ticket7158/trac_7158-captcha.patch) by mpatel created at 2009-10-08 17:16:28\n\nAdd challenge-response to notebook registration page. Depends on #7110.",
     "created_at": "2009-10-08T17:16:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7158",
     "type": "issue_comment",
@@ -49,7 +49,7 @@ archive/issue_comments_059309.json:
 }
 ```
 
-Attachment
+Attachment [trac_7158-captcha.patch](tarball://root/attachments/some-uuid/ticket7158/trac_7158-captcha.patch) by mpatel created at 2009-10-08 17:16:28
 
 Add challenge-response to notebook registration page. Depends on #7110.
 
@@ -187,7 +187,7 @@ Rebased for #7196.  Added regexp test for simple challenge.  Apply only this pat
 archive/issue_comments_059315.json:
 ```json
 {
-    "body": "Attachment\n\nPatch v2:\n\n* Uses regular expressions to verify \"simple\" challenge responses.\n* Rebased against #7196.\n\nAs before, please edit `sagenb.notebook.server_conf.py` to set up and enable the new feature.",
+    "body": "Attachment [trac_7158-captcha_v2.patch](tarball://root/attachments/some-uuid/ticket7158/trac_7158-captcha_v2.patch) by mpatel created at 2009-10-14 08:49:42\n\nPatch v2:\n\n* Uses regular expressions to verify \"simple\" challenge responses.\n* Rebased against #7196.\n\nAs before, please edit `sagenb.notebook.server_conf.py` to set up and enable the new feature.",
     "created_at": "2009-10-14T08:49:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7158",
     "type": "issue_comment",
@@ -196,7 +196,7 @@ archive/issue_comments_059315.json:
 }
 ```
 
-Attachment
+Attachment [trac_7158-captcha_v2.patch](tarball://root/attachments/some-uuid/ticket7158/trac_7158-captcha_v2.patch) by mpatel created at 2009-10-14 08:49:42
 
 Patch v2:
 
@@ -238,7 +238,7 @@ broken by the new `.sagenb` directory name requirement(?).
 archive/issue_comments_059317.json:
 ```json
 {
-    "body": "Attachment\n\napply this *after* applying trac_7158-captcha_v2.patch; it just makes a few minor changes I made during refereeing",
+    "body": "Attachment [trac_7158-captcha_v2-REFEREE.patch](tarball://root/attachments/some-uuid/ticket7158/trac_7158-captcha_v2-REFEREE.patch) by was created at 2009-10-17 05:57:43\n\napply this *after* applying trac_7158-captcha_v2.patch; it just makes a few minor changes I made during refereeing",
     "created_at": "2009-10-17T05:57:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7158",
     "type": "issue_comment",
@@ -247,7 +247,7 @@ archive/issue_comments_059317.json:
 }
 ```
 
-Attachment
+Attachment [trac_7158-captcha_v2-REFEREE.patch](tarball://root/attachments/some-uuid/ticket7158/trac_7158-captcha_v2-REFEREE.patch) by was created at 2009-10-17 05:57:43
 
 apply this *after* applying trac_7158-captcha_v2.patch; it just makes a few minor changes I made during refereeing
 

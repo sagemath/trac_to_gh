@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8493
 archive/issue_comments_076596.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8493-complex_conjugation.patch](tarball://root/attachments/some-uuid/ticket8493/trac_8493-complex_conjugation.patch) by davidloeffler created at 2010-03-10 21:22:31",
     "created_at": "2010-03-10T21:22:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8493",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_076596.json:
 }
 ```
 
-Attachment
+Attachment [trac_8493-complex_conjugation.patch](tarball://root/attachments/some-uuid/ticket8493/trac_8493-complex_conjugation.patch) by davidloeffler created at 2010-03-10 21:22:31
 
 
 
@@ -145,7 +145,7 @@ This doesn't apply cleanly; it apparently conflicts with a patch merged into Sag
 archive/issue_comments_076602.json:
 ```json
 {
-    "body": "Attachment\n\nnow rebased against 4.4.alpha0",
+    "body": "Attachment [trac_8493-complex_conjugation.2.patch](tarball://root/attachments/some-uuid/ticket8493/trac_8493-complex_conjugation.2.patch) by davidloeffler created at 2010-04-17 09:55:07\n\nnow rebased against 4.4.alpha0",
     "created_at": "2010-04-17T09:55:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8493",
     "type": "issue_comment",
@@ -154,7 +154,7 @@ archive/issue_comments_076602.json:
 }
 ```
 
-Attachment
+Attachment [trac_8493-complex_conjugation.2.patch](tarball://root/attachments/some-uuid/ticket8493/trac_8493-complex_conjugation.2.patch) by davidloeffler created at 2010-04-17 09:55:07
 
 now rebased against 4.4.alpha0
 

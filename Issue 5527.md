@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5527
 archive/issue_comments_042994.json:
 ```json
 {
-    "body": "Attachment\n\nMake sr.py a little prettier",
+    "body": "Attachment [trac_5527_sr-sphinx.patch](tarball://root/attachments/some-uuid/ticket5527/trac_5527_sr-sphinx.patch) by mvngu created at 2009-03-16 08:23:18\n\nMake sr.py a little prettier",
     "created_at": "2009-03-16T08:23:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5527",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_042994.json:
 }
 ```
 
-Attachment
+Attachment [trac_5527_sr-sphinx.patch](tarball://root/attachments/some-uuid/ticket5527/trac_5527_sr-sphinx.patch) by mvngu created at 2009-03-16 08:23:18
 
 Make sr.py a little prettier
 

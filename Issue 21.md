@@ -258,7 +258,7 @@ the file SAGE_ROOT/makefile
 archive/issue_comments_000092.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [makefile](tarball://root/attachments/some-uuid/ticket21/makefile) by jhpalmieri created at 2010-03-19 15:41:55",
     "created_at": "2010-03-19T15:41:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
@@ -267,7 +267,7 @@ archive/issue_comments_000092.json:
 }
 ```
 
-Attachment
+Attachment [makefile](tarball://root/attachments/some-uuid/ticket21/makefile) by jhpalmieri created at 2010-03-19 15:41:55
 
 
 
@@ -276,7 +276,7 @@ Attachment
 archive/issue_comments_000093.json:
 ```json
 {
-    "body": "Attachment\n\nextcode repo",
+    "body": "Attachment [makefile.diff](tarball://root/attachments/some-uuid/ticket21/makefile.diff) by jhpalmieri created at 2010-03-19 15:42:11\n\nextcode repo",
     "created_at": "2010-03-19T15:42:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
@@ -285,7 +285,7 @@ archive/issue_comments_000093.json:
 }
 ```
 
-Attachment
+Attachment [makefile.diff](tarball://root/attachments/some-uuid/ticket21/makefile.diff) by jhpalmieri created at 2010-03-19 15:42:11
 
 extcode repo
 
@@ -296,7 +296,7 @@ extcode repo
 archive/issue_comments_000094.json:
 ```json
 {
-    "body": "Attachment\n\nsagenb repo",
+    "body": "Attachment [trac_21-extcode.patch](tarball://root/attachments/some-uuid/ticket21/trac_21-extcode.patch) by jhpalmieri created at 2010-03-19 15:42:32\n\nsagenb repo",
     "created_at": "2010-03-19T15:42:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
@@ -305,7 +305,7 @@ archive/issue_comments_000094.json:
 }
 ```
 
-Attachment
+Attachment [trac_21-extcode.patch](tarball://root/attachments/some-uuid/ticket21/trac_21-extcode.patch) by jhpalmieri created at 2010-03-19 15:42:32
 
 sagenb repo
 
@@ -316,7 +316,7 @@ sagenb repo
 archive/issue_comments_000095.json:
 ```json
 {
-    "body": "Attachment\n\nHere are patches.  After applying \"trac_21-scripts.patch\", you may need to make \"SAGE_ROOT/local/bin/sage-sage.py\" executable.  The build process works for me with these patches.  For the standard packages, the third line in\n\n```\nif [ \"$SAGE_LOCAL\" = \"\" ]; then\n   echo \"SAGE_LOCAL undefined ... exiting\";\n   echo \"Maybe run 'sage -sh'?\"\n   exit 1\nfi\n```\n\nshould be changed to \"Maybe run 'sage --sh'?\", but this doesn't affect the functioning of the packages, and otherwise, they don't need changing.  I haven't looked at optional packages.\n\nThis approaches uses Python's optparse to parse command-line options.  If someone wants to write a version using [shflags](http://code.google.com/p/shflags/) or some other package, go ahead.\n\nI propose the following approach, whether using these patches or other ones:\n\n- first, we include new command-line options but don't turn them on  by default, instead printing a message like this one when you type \"sage [...]\" with a nonempty argument: \n\n```\n    Note: Using old-style Sage command-line options. \n\n    To try out Sage's experimental GNU/Posix-style command-line options \n    (for example, 'sage --notebook' instead of 'sage -notebook'), set the \n    environment variable $SAGE_NEW_OPTIONS to something nonempty. \n    To bypass this message, set the environment variable \n    $SAGE_SKIP_OPTIONS_MESSAGE to something nonempty. \n```\n\n Running \"sage\" (with no arguments) would not trigger this message.  (Perhaps we could only turn this on in prerelease (alpha and rc) versions?  Alternatively, a change like this could go with the version 5.0 release.) \n\n- after a while, we switch this to \n\n```\n    Warning: Using old-style Sage command-line options. \n\n    Sage is changing to use conventional GNU/Posix-style command-line options \n    (for example, 'sage --notebook instead of 'sage -notebook).  This change will \n    become the default soon.  Meanwhile, to use this new style (and therefore \n    to avoid seeing this message), set the environment variable \n    $SAGE_NEW_OPTIONS to something nonempty. \n```\n\n perhaps with no easy way of disabling this message while using old-style options. \n\n- finally, we turn on the new options, perhaps with an environment variable $SAGE_OLD_OPTIONS to use the old ones, with the understanding that any changes in command-line options may not be maintained for the old version. \n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/de30143ec073f31?tvc=2) for some discussion.",
+    "body": "Attachment [trac_21-sagenb.patch](tarball://root/attachments/some-uuid/ticket21/trac_21-sagenb.patch) by jhpalmieri created at 2010-03-19 15:50:37\n\nHere are patches.  After applying \"trac_21-scripts.patch\", you may need to make \"SAGE_ROOT/local/bin/sage-sage.py\" executable.  The build process works for me with these patches.  For the standard packages, the third line in\n\n```\nif [ \"$SAGE_LOCAL\" = \"\" ]; then\n   echo \"SAGE_LOCAL undefined ... exiting\";\n   echo \"Maybe run 'sage -sh'?\"\n   exit 1\nfi\n```\n\nshould be changed to \"Maybe run 'sage --sh'?\", but this doesn't affect the functioning of the packages, and otherwise, they don't need changing.  I haven't looked at optional packages.\n\nThis approaches uses Python's optparse to parse command-line options.  If someone wants to write a version using [shflags](http://code.google.com/p/shflags/) or some other package, go ahead.\n\nI propose the following approach, whether using these patches or other ones:\n\n- first, we include new command-line options but don't turn them on  by default, instead printing a message like this one when you type \"sage [...]\" with a nonempty argument: \n\n```\n    Note: Using old-style Sage command-line options. \n\n    To try out Sage's experimental GNU/Posix-style command-line options \n    (for example, 'sage --notebook' instead of 'sage -notebook'), set the \n    environment variable $SAGE_NEW_OPTIONS to something nonempty. \n    To bypass this message, set the environment variable \n    $SAGE_SKIP_OPTIONS_MESSAGE to something nonempty. \n```\n\n Running \"sage\" (with no arguments) would not trigger this message.  (Perhaps we could only turn this on in prerelease (alpha and rc) versions?  Alternatively, a change like this could go with the version 5.0 release.) \n\n- after a while, we switch this to \n\n```\n    Warning: Using old-style Sage command-line options. \n\n    Sage is changing to use conventional GNU/Posix-style command-line options \n    (for example, 'sage --notebook instead of 'sage -notebook).  This change will \n    become the default soon.  Meanwhile, to use this new style (and therefore \n    to avoid seeing this message), set the environment variable \n    $SAGE_NEW_OPTIONS to something nonempty. \n```\n\n perhaps with no easy way of disabling this message while using old-style options. \n\n- finally, we turn on the new options, perhaps with an environment variable $SAGE_OLD_OPTIONS to use the old ones, with the understanding that any changes in command-line options may not be maintained for the old version. \n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/de30143ec073f31?tvc=2) for some discussion.",
     "created_at": "2010-03-19T15:50:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
@@ -325,7 +325,7 @@ archive/issue_comments_000095.json:
 }
 ```
 
-Attachment
+Attachment [trac_21-sagenb.patch](tarball://root/attachments/some-uuid/ticket21/trac_21-sagenb.patch) by jhpalmieri created at 2010-03-19 15:50:37
 
 Here are patches.  After applying "trac_21-scripts.patch", you may need to make "SAGE_ROOT/local/bin/sage-sage.py" executable.  The build process works for me with these patches.  For the standard packages, the third line in
 
@@ -445,7 +445,7 @@ This is to speed up access to these programs: do a check like this in a shell sc
 archive/issue_comments_000099.json:
 ```json
 {
-    "body": "Attachment\n\nthe file SAGE_ROOT/sage",
+    "body": "Attachment [sage](tarball://root/attachments/some-uuid/ticket21/sage) by jhpalmieri created at 2010-03-19 21:15:39\n\nthe file SAGE_ROOT/sage",
     "created_at": "2010-03-19T21:15:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
@@ -454,7 +454,7 @@ archive/issue_comments_000099.json:
 }
 ```
 
-Attachment
+Attachment [sage](tarball://root/attachments/some-uuid/ticket21/sage) by jhpalmieri created at 2010-03-19 21:15:39
 
 the file SAGE_ROOT/sage
 
@@ -465,7 +465,7 @@ the file SAGE_ROOT/sage
 archive/issue_comments_000100.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:10 jhpalmieri]:\n> I've marked this as \"needs review\", but it might need work.  In the previously cited thread from sage-devel, there was the following suggestion:\n\n```\nAnother possibility might be to first check for \"--gp\", \"--gap\", etc., \nand do those before doing the general option parsing.   I.e., just do \nwhat you already planned, but with one optimization to deal with this \nuse case. \n```\n\n\nOkay, here's a new version which does this: it adds a file sage-sage-quickstart which gets run first, implementing the above idea.  Then if SAGE_NEW_OPTIONS is nonempty, it calls sage-sage.py, the Python/optparse version with GNU/Posix standard command-line options.  Otherwise, it calls the old parser sage-sage.\n\nFor the record, the commands in sage-sage-quickstart are: axiom, ecl/lisp, gap, gp, hg, ipython, maxima, mwrank, python, R, singular.  Are any others particularly sensitive to startup times?  (Using python adds something less than .1 second on my two-year old iMac, so we're not talking about a lot of time, in any case.)",
+    "body": "Attachment [sage.diff](tarball://root/attachments/some-uuid/ticket21/sage.diff) by jhpalmieri created at 2010-03-19 21:22:45\n\nReplying to [comment:10 jhpalmieri]:\n> I've marked this as \"needs review\", but it might need work.  In the previously cited thread from sage-devel, there was the following suggestion:\n\n```\nAnother possibility might be to first check for \"--gp\", \"--gap\", etc., \nand do those before doing the general option parsing.   I.e., just do \nwhat you already planned, but with one optimization to deal with this \nuse case. \n```\n\n\nOkay, here's a new version which does this: it adds a file sage-sage-quickstart which gets run first, implementing the above idea.  Then if SAGE_NEW_OPTIONS is nonempty, it calls sage-sage.py, the Python/optparse version with GNU/Posix standard command-line options.  Otherwise, it calls the old parser sage-sage.\n\nFor the record, the commands in sage-sage-quickstart are: axiom, ecl/lisp, gap, gp, hg, ipython, maxima, mwrank, python, R, singular.  Are any others particularly sensitive to startup times?  (Using python adds something less than .1 second on my two-year old iMac, so we're not talking about a lot of time, in any case.)",
     "created_at": "2010-03-19T21:22:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
@@ -474,7 +474,7 @@ archive/issue_comments_000100.json:
 }
 ```
 
-Attachment
+Attachment [sage.diff](tarball://root/attachments/some-uuid/ticket21/sage.diff) by jhpalmieri created at 2010-03-19 21:22:45
 
 Replying to [comment:10 jhpalmieri]:
 > I've marked this as "needs review", but it might need work.  In the previously cited thread from sage-devel, there was the following suggestion:
@@ -658,7 +658,7 @@ scripts repo
 archive/issue_comments_000108.json:
 ```json
 {
-    "body": "Attachment\n\nsage repo",
+    "body": "Attachment [trac_21-scripts.patch](tarball://root/attachments/some-uuid/ticket21/trac_21-scripts.patch) by jhpalmieri created at 2010-06-03 06:02:54\n\nsage repo",
     "created_at": "2010-06-03T06:02:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
@@ -667,7 +667,7 @@ archive/issue_comments_000108.json:
 }
 ```
 
-Attachment
+Attachment [trac_21-scripts.patch](tarball://root/attachments/some-uuid/ticket21/trac_21-scripts.patch) by jhpalmieri created at 2010-06-03 06:02:54
 
 sage repo
 
@@ -678,7 +678,7 @@ sage repo
 archive/issue_comments_000109.json:
 ```json
 {
-    "body": "Attachment\n\n> John, can you please post clear directions about how to use the patches attached to this ticket?\n\nSorry, some parts needed rebasing.  I think it's okay now.  I've modified the summary with instructions for how to apply the patches.",
+    "body": "Attachment [trac_21-sage.patch](tarball://root/attachments/some-uuid/ticket21/trac_21-sage.patch) by jhpalmieri created at 2010-06-03 06:04:06\n\n> John, can you please post clear directions about how to use the patches attached to this ticket?\n\nSorry, some parts needed rebasing.  I think it's okay now.  I've modified the summary with instructions for how to apply the patches.",
     "created_at": "2010-06-03T06:04:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
@@ -687,7 +687,7 @@ archive/issue_comments_000109.json:
 }
 ```
 
-Attachment
+Attachment [trac_21-sage.patch](tarball://root/attachments/some-uuid/ticket21/trac_21-sage.patch) by jhpalmieri created at 2010-06-03 06:04:06
 
 > John, can you please post clear directions about how to use the patches attached to this ticket?
 
@@ -756,7 +756,7 @@ I don't have the time to rebase it right now, so if anyone else wants to work it
 archive/issue_comments_000113.json:
 ```json
 {
-    "body": "Attachment\n\nscripts repo, rebased on 4.6.1.alpha1",
+    "body": "Attachment [21-scripts-4.6.1.alpha1.patch](tarball://root/attachments/some-uuid/ticket21/21-scripts-4.6.1.alpha1.patch) by ohanar created at 2010-11-12 10:48:35\n\nscripts repo, rebased on 4.6.1.alpha1",
     "created_at": "2010-11-12T10:48:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
@@ -765,7 +765,7 @@ archive/issue_comments_000113.json:
 }
 ```
 
-Attachment
+Attachment [21-scripts-4.6.1.alpha1.patch](tarball://root/attachments/some-uuid/ticket21/21-scripts-4.6.1.alpha1.patch) by ohanar created at 2010-11-12 10:48:35
 
 scripts repo, rebased on 4.6.1.alpha1
 

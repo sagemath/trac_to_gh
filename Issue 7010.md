@@ -51,7 +51,7 @@ clean up sage/crypto/classical.py so it conforms to coding conventions
 archive/issue_comments_057963.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch `trac_7010-code-clean-up.patch` mainly cleans up the file `sage/crypto/classical.py` so it conforms to coding conventions. The clean up also removes the deprecated way of raising exceptions, and instead uses the way that is more compatible with Python 3.x.",
+    "body": "Attachment [trac_7010-code-clean-up.patch](tarball://root/attachments/some-uuid/ticket7010/trac_7010-code-clean-up.patch) by mvngu created at 2009-10-04 16:03:13\n\nThe patch `trac_7010-code-clean-up.patch` mainly cleans up the file `sage/crypto/classical.py` so it conforms to coding conventions. The clean up also removes the deprecated way of raising exceptions, and instead uses the way that is more compatible with Python 3.x.",
     "created_at": "2009-10-04T16:03:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7010",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_057963.json:
 }
 ```
 
-Attachment
+Attachment [trac_7010-code-clean-up.patch](tarball://root/attachments/some-uuid/ticket7010/trac_7010-code-clean-up.patch) by mvngu created at 2009-10-04 16:03:13
 
 The patch `trac_7010-code-clean-up.patch` mainly cleans up the file `sage/crypto/classical.py` so it conforms to coding conventions. The clean up also removes the deprecated way of raising exceptions, and instead uses the way that is more compatible with Python 3.x.
 
@@ -71,7 +71,7 @@ The patch `trac_7010-code-clean-up.patch` mainly cleans up the file `sage/crypto
 archive/issue_comments_057964.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of previous patch",
+    "body": "Attachment [trac_7010-key-check.patch](tarball://root/attachments/some-uuid/ticket7010/trac_7010-key-check.patch) by mvngu created at 2009-10-04 16:50:00\n\napply on top of previous patch",
     "created_at": "2009-10-04T16:50:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7010",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_057964.json:
 }
 ```
 
-Attachment
+Attachment [trac_7010-key-check.patch](tarball://root/attachments/some-uuid/ticket7010/trac_7010-key-check.patch) by mvngu created at 2009-10-04 16:50:00
 
 apply on top of previous patch
 

@@ -89,7 +89,7 @@ Changing priority from major to minor.
 archive/issue_comments_089099.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac#9377.patch](tarball://root/attachments/some-uuid/ticket9377/trac#9377.patch) by klee created at 2010-07-10 03:28:00",
     "created_at": "2010-07-10T03:28:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9377",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_089099.json:
 }
 ```
 
-Attachment
+Attachment [trac#9377.patch](tarball://root/attachments/some-uuid/ticket9377/trac#9377.patch) by klee created at 2010-07-10 03:28:00
 
 
 
@@ -219,7 +219,7 @@ sage:
 archive/issue_comments_089104.json:
 ```json
 {
-    "body": "Attachment\n\ncontains the previous patch and more",
+    "body": "Attachment [trac#9377_revised.patch](tarball://root/attachments/some-uuid/ticket9377/trac#9377_revised.patch) by klee created at 2010-07-13 01:57:22\n\ncontains the previous patch and more",
     "created_at": "2010-07-13T01:57:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9377",
     "type": "issue_comment",
@@ -228,7 +228,7 @@ archive/issue_comments_089104.json:
 }
 ```
 
-Attachment
+Attachment [trac#9377_revised.patch](tarball://root/attachments/some-uuid/ticket9377/trac#9377_revised.patch) by klee created at 2010-07-13 01:57:22
 
 contains the previous patch and more
 

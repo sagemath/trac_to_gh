@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1761
 archive/issue_comments_011111.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [graphviz.hg](tarball://root/attachments/some-uuid/ticket1761/graphviz.hg) by mhansen created at 2008-01-13 13:31:51",
     "created_at": "2008-01-13T13:31:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1761",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_011111.json:
 }
 ```
 
-Attachment
+Attachment [graphviz.hg](tarball://root/attachments/some-uuid/ticket1761/graphviz.hg) by mhansen created at 2008-01-13 13:31:51
 
 
 
@@ -129,7 +129,7 @@ It also removes references to the actual graphviz/dot application.  I don't see 
 archive/issue_comments_011116.json:
 ```json
 {
-    "body": "Attachment\n\nThe original bundle is not needed; apply only the patch.",
+    "body": "Attachment [1761-ncalexan-graphviz-1.patch](tarball://root/attachments/some-uuid/ticket1761/1761-ncalexan-graphviz-1.patch) by ncalexan created at 2008-04-06 19:37:11\n\nThe original bundle is not needed; apply only the patch.",
     "created_at": "2008-04-06T19:37:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1761",
     "type": "issue_comment",
@@ -138,7 +138,7 @@ archive/issue_comments_011116.json:
 }
 ```
 
-Attachment
+Attachment [1761-ncalexan-graphviz-1.patch](tarball://root/attachments/some-uuid/ticket1761/1761-ncalexan-graphviz-1.patch) by ncalexan created at 2008-04-06 19:37:11
 
 The original bundle is not needed; apply only the patch.
 
@@ -221,7 +221,7 @@ doctest fix due to bitrot
 archive/issue_comments_011121.json:
 ```json
 {
-    "body": "Attachment\n\ncreate doctest files in SAGE_TESTDIR",
+    "body": "Attachment [trac_1761-tmp-file-dir-fix.patch](tarball://root/attachments/some-uuid/ticket1761/trac_1761-tmp-file-dir-fix.patch) by mabshoff created at 2008-04-08 17:50:53\n\ncreate doctest files in SAGE_TESTDIR",
     "created_at": "2008-04-08T17:50:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1761",
     "type": "issue_comment",
@@ -230,6 +230,6 @@ archive/issue_comments_011121.json:
 }
 ```
 
-Attachment
+Attachment [trac_1761-tmp-file-dir-fix.patch](tarball://root/attachments/some-uuid/ticket1761/trac_1761-tmp-file-dir-fix.patch) by mabshoff created at 2008-04-08 17:50:53
 
 create doctest files in SAGE_TESTDIR

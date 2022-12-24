@@ -47,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7316
 archive/issue_comments_061133.json:
 ```json
 {
-    "body": "Attachment\n\nFix Cython docstring \"Definition\". Rebase of sageinspect part of #6848. Apply to sagenb repository.",
+    "body": "Attachment [trac_7316-sageinspect_defn.patch](tarball://root/attachments/some-uuid/ticket7316/trac_7316-sageinspect_defn.patch) by mpatel created at 2009-10-27 02:48:40\n\nFix Cython docstring \"Definition\". Rebase of sageinspect part of #6848. Apply to sagenb repository.",
     "created_at": "2009-10-27T02:48:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7316",
     "type": "issue_comment",
@@ -56,7 +56,7 @@ archive/issue_comments_061133.json:
 }
 ```
 
-Attachment
+Attachment [trac_7316-sageinspect_defn.patch](tarball://root/attachments/some-uuid/ticket7316/trac_7316-sageinspect_defn.patch) by mpatel created at 2009-10-27 02:48:40
 
 Fix Cython docstring "Definition". Rebase of sageinspect part of #6848. Apply to sagenb repository.
 

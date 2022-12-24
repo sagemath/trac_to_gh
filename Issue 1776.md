@@ -78,7 +78,7 @@ slightly better fix (there is only one post-equals symbol, namely =).  This also
 archive/issue_comments_011246.json:
 ```json
 {
-    "body": "Attachment\n\n\n```\nWorks for me!\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.10.alpha2, Release Date: 2008-01-11                 |\n| Type notebook() for the GUI, and license() for information.        |\n\nsage: f(x)=-x\n\nsage: f(2)\n -2\n\n\nJaap\n\n```\n",
+    "body": "Attachment [trac1776.patch](tarball://root/attachments/some-uuid/ticket1776/trac1776.patch) by jsp created at 2008-01-14 15:27:33\n\n\n```\nWorks for me!\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.10.alpha2, Release Date: 2008-01-11                 |\n| Type notebook() for the GUI, and license() for information.        |\n\nsage: f(x)=-x\n\nsage: f(2)\n -2\n\n\nJaap\n\n```\n",
     "created_at": "2008-01-14T15:27:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1776",
     "type": "issue_comment",
@@ -87,7 +87,7 @@ archive/issue_comments_011246.json:
 }
 ```
 
-Attachment
+Attachment [trac1776.patch](tarball://root/attachments/some-uuid/ticket1776/trac1776.patch) by jsp created at 2008-01-14 15:27:33
 
 
 ```

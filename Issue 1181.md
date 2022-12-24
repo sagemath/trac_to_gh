@@ -139,7 +139,7 @@ the patch
 archive/issue_comments_007291.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [hash-patch-2_8_12.hg](tarball://root/attachments/some-uuid/ticket1181/hash-patch-2_8_12.hg) by jbmohler created at 2007-11-16 12:45:00",
     "created_at": "2007-11-16T12:45:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1181",
     "type": "issue_comment",
@@ -148,7 +148,7 @@ archive/issue_comments_007291.json:
 }
 ```
 
-Attachment
+Attachment [hash-patch-2_8_12.hg](tarball://root/attachments/some-uuid/ticket1181/hash-patch-2_8_12.hg) by jbmohler created at 2007-11-16 12:45:00
 
 
 

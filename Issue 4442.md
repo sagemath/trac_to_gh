@@ -69,7 +69,7 @@ taken over from #4370 and just renamed
 archive/issue_comments_032672.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review.\n\nPlease make sure not to add *spaces* to the end of patch file names!\n\nCheers,\n\nMichael",
+    "body": "Attachment [4442-4370-sage_library.patch ](tarball://root/attachments/some-uuid/ticket4442/4442-4370-sage_library.patch ) by mabshoff created at 2008-11-05 20:22:33\n\nPositive review.\n\nPlease make sure not to add *spaces* to the end of patch file names!\n\nCheers,\n\nMichael",
     "created_at": "2008-11-05T20:22:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4442",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_032672.json:
 }
 ```
 
-Attachment
+Attachment [4442-4370-sage_library.patch ](tarball://root/attachments/some-uuid/ticket4442/4442-4370-sage_library.patch ) by mabshoff created at 2008-11-05 20:22:33
 
 Positive review.
 

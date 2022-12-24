@@ -73,7 +73,7 @@ Changing status from new to needs_review.
 archive/issue_comments_070479.json:
 ```json
 {
-    "body": "Attachment\n\nNote: This depends on the SageNB 0.7 spkg at #8051.\n\nThe patch puts an auto-scrolling image carousel on the login page.  I've used several images from sagemath.org as an example.  [Here's a mockup.](http://boxen.math.washington.edu/home/mpatel/trac/8055/login_showcase.html)  But we could\n\n* Add screenshots.\n* Include links to more documentation, published worksheets, etc.\n* Make it customizable.\n* Get the server to generate images, etc.\n* Insert any HTML that fits in the space.",
+    "body": "Attachment [trac_8055-carousel_showcase.patch](tarball://root/attachments/some-uuid/ticket8055/trac_8055-carousel_showcase.patch) by mpatel created at 2010-01-25 14:21:44\n\nNote: This depends on the SageNB 0.7 spkg at #8051.\n\nThe patch puts an auto-scrolling image carousel on the login page.  I've used several images from sagemath.org as an example.  [Here's a mockup.](http://boxen.math.washington.edu/home/mpatel/trac/8055/login_showcase.html)  But we could\n\n* Add screenshots.\n* Include links to more documentation, published worksheets, etc.\n* Make it customizable.\n* Get the server to generate images, etc.\n* Insert any HTML that fits in the space.",
     "created_at": "2010-01-25T14:21:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8055",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_070479.json:
 }
 ```
 
-Attachment
+Attachment [trac_8055-carousel_showcase.patch](tarball://root/attachments/some-uuid/ticket8055/trac_8055-carousel_showcase.patch) by mpatel created at 2010-01-25 14:21:44
 
 Note: This depends on the SageNB 0.7 spkg at #8051.
 

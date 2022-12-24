@@ -601,7 +601,7 @@ Nathann
 archive/issue_comments_061086.json:
 ```json
 {
-    "body": "Attachment\n\nMinor doc and code formatting fixes -- apply on top of Nathann's patch",
+    "body": "Attachment [trac_7311.patch](tarball://root/attachments/some-uuid/ticket7311/trac_7311.patch) by abmasse created at 2010-03-04 13:43:28\n\nMinor doc and code formatting fixes -- apply on top of Nathann's patch",
     "created_at": "2010-03-04T13:43:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7311",
     "type": "issue_comment",
@@ -610,7 +610,7 @@ archive/issue_comments_061086.json:
 }
 ```
 
-Attachment
+Attachment [trac_7311.patch](tarball://root/attachments/some-uuid/ticket7311/trac_7311.patch) by abmasse created at 2010-03-04 13:43:28
 
 Minor doc and code formatting fixes -- apply on top of Nathann's patch
 
@@ -621,7 +621,7 @@ Minor doc and code formatting fixes -- apply on top of Nathann's patch
 archive/issue_comments_061087.json:
 ```json
 {
-    "body": "Attachment\n\nI tested Nathann's patch on sage-4.3.3. All tests passed and the documentation builds fine, except for the signature of many functions since the main involved file is a Cython file (this issue seems to have been solved in #8244).\n\nNote that all non optional tests passed with neither GLPK nor CBC installed, and all tests including optional ones pass when I installed both GLPK and CBC.\n\nI made some minor changes on code formatting and documentation. If Nathann agrees with my changes, I allow him to set this ticket to a positive review.",
+    "body": "Attachment [trac_7311_review-abm.patch](tarball://root/attachments/some-uuid/ticket7311/trac_7311_review-abm.patch) by abmasse created at 2010-03-04 13:51:35\n\nI tested Nathann's patch on sage-4.3.3. All tests passed and the documentation builds fine, except for the signature of many functions since the main involved file is a Cython file (this issue seems to have been solved in #8244).\n\nNote that all non optional tests passed with neither GLPK nor CBC installed, and all tests including optional ones pass when I installed both GLPK and CBC.\n\nI made some minor changes on code formatting and documentation. If Nathann agrees with my changes, I allow him to set this ticket to a positive review.",
     "created_at": "2010-03-04T13:51:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7311",
     "type": "issue_comment",
@@ -630,7 +630,7 @@ archive/issue_comments_061087.json:
 }
 ```
 
-Attachment
+Attachment [trac_7311_review-abm.patch](tarball://root/attachments/some-uuid/ticket7311/trac_7311_review-abm.patch) by abmasse created at 2010-03-04 13:51:35
 
 I tested Nathann's patch on sage-4.3.3. All tests passed and the documentation builds fine, except for the signature of many functions since the main involved file is a Cython file (this issue seems to have been solved in #8244).
 

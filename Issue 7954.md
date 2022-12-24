@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7954
 archive/issue_comments_069404.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [7954_curve_constructor.patch](tarball://root/attachments/some-uuid/ticket7954/7954_curve_constructor.patch) by wjp created at 2010-01-17 03:52:22",
     "created_at": "2010-01-17T03:52:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7954",
     "type": "issue_comment",
@@ -51,7 +51,7 @@ archive/issue_comments_069404.json:
 }
 ```
 
-Attachment
+Attachment [7954_curve_constructor.patch](tarball://root/attachments/some-uuid/ticket7954/7954_curve_constructor.patch) by wjp created at 2010-01-17 03:52:22
 
 
 
@@ -96,7 +96,7 @@ Changing status from new to needs_review.
 archive/issue_comments_069407.json:
 ```json
 {
-    "body": "Attachment\n\nthe previous patch was part 1.  apply this after that one.",
+    "body": "Attachment [trac_7954-part2.patch](tarball://root/attachments/some-uuid/ticket7954/trac_7954-part2.patch) by was created at 2010-01-17 09:38:23\n\nthe previous patch was part 1.  apply this after that one.",
     "created_at": "2010-01-17T09:38:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7954",
     "type": "issue_comment",
@@ -105,7 +105,7 @@ archive/issue_comments_069407.json:
 }
 ```
 
-Attachment
+Attachment [trac_7954-part2.patch](tarball://root/attachments/some-uuid/ticket7954/trac_7954-part2.patch) by was created at 2010-01-17 09:38:23
 
 the previous patch was part 1.  apply this after that one.
 

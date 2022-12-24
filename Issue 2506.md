@@ -125,7 +125,7 @@ http://www.voidspace.org.uk/python/articles/comparison.shtml
 archive/issue_comments_016979.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2506-fix.patch](tarball://root/attachments/some-uuid/ticket2506/2506-fix.patch) by rlm created at 2008-03-14 13:46:44",
     "created_at": "2008-03-14T13:46:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2506",
     "type": "issue_comment",
@@ -134,7 +134,7 @@ archive/issue_comments_016979.json:
 }
 ```
 
-Attachment
+Attachment [2506-fix.patch](tarball://root/attachments/some-uuid/ticket2506/2506-fix.patch) by rlm created at 2008-03-14 13:46:44
 
 
 

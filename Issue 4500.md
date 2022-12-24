@@ -133,7 +133,7 @@ First patch doesn't work of course (I forgot one subdirectory level)
 archive/issue_comments_033315.json:
 ```json
 {
-    "body": "Attachment\n\nnow tested",
+    "body": "Attachment [4500_sage-build.patch](tarball://root/attachments/some-uuid/ticket4500/4500_sage-build.patch) by GeorgSWeber created at 2008-11-12 22:55:13\n\nnow tested",
     "created_at": "2008-11-12T22:55:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4500",
     "type": "issue_comment",
@@ -142,7 +142,7 @@ archive/issue_comments_033315.json:
 }
 ```
 
-Attachment
+Attachment [4500_sage-build.patch](tarball://root/attachments/some-uuid/ticket4500/4500_sage-build.patch) by GeorgSWeber created at 2008-11-12 22:55:13
 
 now tested
 
@@ -277,7 +277,7 @@ apply after the first one
 archive/issue_comments_033322.json:
 ```json
 {
-    "body": "Attachment\n\nYeah, the patch2 for the patch is coyote ugly, but does the job.\n\nAnd probably we don't need anymore to \"touch all Cython files\" in the next lines after the added ones, but for the time being I let that stand as it is.\n\nThis ticket (both patches are needed) is for review now (again).",
+    "body": "Attachment [4500_sage-build-patch2.patch](tarball://root/attachments/some-uuid/ticket4500/4500_sage-build-patch2.patch) by GeorgSWeber created at 2008-11-13 00:34:20\n\nYeah, the patch2 for the patch is coyote ugly, but does the job.\n\nAnd probably we don't need anymore to \"touch all Cython files\" in the next lines after the added ones, but for the time being I let that stand as it is.\n\nThis ticket (both patches are needed) is for review now (again).",
     "created_at": "2008-11-13T00:34:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4500",
     "type": "issue_comment",
@@ -286,7 +286,7 @@ archive/issue_comments_033322.json:
 }
 ```
 
-Attachment
+Attachment [4500_sage-build-patch2.patch](tarball://root/attachments/some-uuid/ticket4500/4500_sage-build-patch2.patch) by GeorgSWeber created at 2008-11-13 00:34:20
 
 Yeah, the patch2 for the patch is coyote ugly, but does the job.
 
@@ -319,7 +319,7 @@ Changing assignee from GeorgSWeber to craigcitro.
 archive/issue_comments_033324.json:
 ```json
 {
-    "body": "Attachment\n\nCraigs approach is way more elegant than mine. I hope his patch passes the necessary (and timeconsuming) tests. I never imagined I could ever write code this ugly as I did, and would be happy if it wasn't necessary to include it into Sage ;-)\n\nCheers, gsw",
+    "body": "Attachment [trac-4500.patch](tarball://root/attachments/some-uuid/ticket4500/trac-4500.patch) by GeorgSWeber created at 2008-11-13 13:35:28\n\nCraigs approach is way more elegant than mine. I hope his patch passes the necessary (and timeconsuming) tests. I never imagined I could ever write code this ugly as I did, and would be happy if it wasn't necessary to include it into Sage ;-)\n\nCheers, gsw",
     "created_at": "2008-11-13T13:35:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4500",
     "type": "issue_comment",
@@ -328,7 +328,7 @@ archive/issue_comments_033324.json:
 }
 ```
 
-Attachment
+Attachment [trac-4500.patch](tarball://root/attachments/some-uuid/ticket4500/trac-4500.patch) by GeorgSWeber created at 2008-11-13 13:35:28
 
 Craigs approach is way more elegant than mine. I hope his patch passes the necessary (and timeconsuming) tests. I never imagined I could ever write code this ugly as I did, and would be happy if it wasn't necessary to include it into Sage ;-)
 

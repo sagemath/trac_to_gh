@@ -115,7 +115,7 @@ Michael
 archive/issue_comments_015994.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:2 mabshoff]:\n> The patch looks correct, but integer.pyx could certainly use some doctests.  \n\nDone.",
+    "body": "Attachment [2370.patch](tarball://root/attachments/some-uuid/ticket2370/2370.patch) by dfdeshom created at 2008-03-05 06:19:17\n\nReplying to [comment:2 mabshoff]:\n> The patch looks correct, but integer.pyx could certainly use some doctests.  \n\nDone.",
     "created_at": "2008-03-05T06:19:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2370",
     "type": "issue_comment",
@@ -124,7 +124,7 @@ archive/issue_comments_015994.json:
 }
 ```
 
-Attachment
+Attachment [2370.patch](tarball://root/attachments/some-uuid/ticket2370/2370.patch) by dfdeshom created at 2008-03-05 06:19:17
 
 Replying to [comment:2 mabshoff]:
 > The patch looks correct, but integer.pyx could certainly use some doctests.  

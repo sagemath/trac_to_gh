@@ -247,7 +247,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_069509.json:
 ```json
 {
-    "body": "Attachment\n\nwith the new patch `c_graph.pyx` works again:\n\n```\n[zimmerma@coing sage]$ sage -t  graphs/base/c_graph.pyx\nsage -t  \"devel/sage-7966/sage/graphs/base/c_graph.pyx\"     \n         [2.5 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 2.5 seconds\n```\n\nThus a positive review.\n\nPaul",
+    "body": "Attachment [trac_7966.patch](tarball://root/attachments/some-uuid/ticket7966/trac_7966.patch) by zimmerma created at 2010-02-26 11:02:06\n\nwith the new patch `c_graph.pyx` works again:\n\n```\n[zimmerma@coing sage]$ sage -t  graphs/base/c_graph.pyx\nsage -t  \"devel/sage-7966/sage/graphs/base/c_graph.pyx\"     \n         [2.5 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 2.5 seconds\n```\n\nThus a positive review.\n\nPaul",
     "created_at": "2010-02-26T11:02:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7966",
     "type": "issue_comment",
@@ -256,7 +256,7 @@ archive/issue_comments_069509.json:
 }
 ```
 
-Attachment
+Attachment [trac_7966.patch](tarball://root/attachments/some-uuid/ticket7966/trac_7966.patch) by zimmerma created at 2010-02-26 11:02:06
 
 with the new patch `c_graph.pyx` works again:
 

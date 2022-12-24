@@ -123,7 +123,7 @@ I finally got around to fixing this.  The attached patch fixes the issues report
 archive/issue_comments_028475.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3964.patch](tarball://root/attachments/some-uuid/ticket3964/trac_3964.patch) by AlexGhitza created at 2008-12-21 10:27:59",
     "created_at": "2008-12-21T10:27:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3964",
     "type": "issue_comment",
@@ -132,7 +132,7 @@ archive/issue_comments_028475.json:
 }
 ```
 
-Attachment
+Attachment [trac_3964.patch](tarball://root/attachments/some-uuid/ticket3964/trac_3964.patch) by AlexGhitza created at 2008-12-21 10:27:59
 
 
 
@@ -231,7 +231,7 @@ apply this (not the previous one).
 archive/issue_comments_028481.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3964-rebased_and_extended.patch](tarball://root/attachments/some-uuid/ticket3964/trac_3964-rebased_and_extended.patch) by was created at 2010-01-17 08:59:26",
     "created_at": "2010-01-17T08:59:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3964",
     "type": "issue_comment",
@@ -240,7 +240,7 @@ archive/issue_comments_028481.json:
 }
 ```
 
-Attachment
+Attachment [trac_3964-rebased_and_extended.patch](tarball://root/attachments/some-uuid/ticket3964/trac_3964-rebased_and_extended.patch) by was created at 2010-01-17 08:59:26
 
 
 

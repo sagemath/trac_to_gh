@@ -43,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7522
 archive/issue_comments_063735.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [7522-perp.patch](tarball://root/attachments/some-uuid/ticket7522/7522-perp.patch) by jason created at 2010-09-22 03:02:04",
     "created_at": "2010-09-22T03:02:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7522",
     "type": "issue_comment",
@@ -52,7 +52,7 @@ archive/issue_comments_063735.json:
 }
 ```
 
-Attachment
+Attachment [7522-perp.patch](tarball://root/attachments/some-uuid/ticket7522/7522-perp.patch) by jason created at 2010-09-22 03:02:04
 
 
 
@@ -137,7 +137,7 @@ apply on top of previous patches
 archive/issue_comments_063740.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:2 kcrisman]:\n\n\n> The documentation should make it clear what the ambient space is by default, perhaps by adding an example where things fail?  Or at least commenting that the first example just shows itself as the ambient space.  What would happen if one took a double subspace - what would it consider to be the ambient subspace?  \n\nReview patch attached.  Better now?",
+    "body": "Attachment [7522-review.patch](tarball://root/attachments/some-uuid/ticket7522/7522-review.patch) by jason created at 2010-09-23 23:28:31\n\nReplying to [comment:2 kcrisman]:\n\n\n> The documentation should make it clear what the ambient space is by default, perhaps by adding an example where things fail?  Or at least commenting that the first example just shows itself as the ambient space.  What would happen if one took a double subspace - what would it consider to be the ambient subspace?  \n\nReview patch attached.  Better now?",
     "created_at": "2010-09-23T23:28:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7522",
     "type": "issue_comment",
@@ -146,7 +146,7 @@ archive/issue_comments_063740.json:
 }
 ```
 
-Attachment
+Attachment [7522-review.patch](tarball://root/attachments/some-uuid/ticket7522/7522-review.patch) by jason created at 2010-09-23 23:28:31
 
 Replying to [comment:2 kcrisman]:
 
@@ -550,7 +550,7 @@ Rather than testing if the base ring is a field, shouldn't you place the method 
 archive/issue_comments_063757.json:
 ```json
 {
-    "body": "Attachment\n\nHere I was looking for something called `VectorSpace`... Done. Now just waiting on a response from Rob or Jason.",
+    "body": "Attachment [trac_7522-perp-ts.patch](tarball://root/attachments/some-uuid/ticket7522/trac_7522-perp-ts.patch) by tscrim created at 2013-04-05 18:46:26\n\nHere I was looking for something called `VectorSpace`... Done. Now just waiting on a response from Rob or Jason.",
     "created_at": "2013-04-05T18:46:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7522",
     "type": "issue_comment",
@@ -559,7 +559,7 @@ archive/issue_comments_063757.json:
 }
 ```
 
-Attachment
+Attachment [trac_7522-perp-ts.patch](tarball://root/attachments/some-uuid/ticket7522/trac_7522-perp-ts.patch) by tscrim created at 2013-04-05 18:46:26
 
 Here I was looking for something called `VectorSpace`... Done. Now just waiting on a response from Rob or Jason.
 
@@ -672,7 +672,7 @@ Travis
 archive/issue_comments_063763.json:
 ```json
 {
-    "body": "Attachment\n\nThanks, fixed.\n\nPatchbot, apply trac_7522-perp-ts.patch and trac_7522-finite.patch",
+    "body": "Attachment [trac_7522-finite.patch](tarball://root/attachments/some-uuid/ticket7522/trac_7522-finite.patch) by kcrisman created at 2013-06-18 23:59:32\n\nThanks, fixed.\n\nPatchbot, apply trac_7522-perp-ts.patch and trac_7522-finite.patch",
     "created_at": "2013-06-18T23:59:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7522",
     "type": "issue_comment",
@@ -681,7 +681,7 @@ archive/issue_comments_063763.json:
 }
 ```
 
-Attachment
+Attachment [trac_7522-finite.patch](tarball://root/attachments/some-uuid/ticket7522/trac_7522-finite.patch) by kcrisman created at 2013-06-18 23:59:32
 
 Thanks, fixed.
 

@@ -139,7 +139,7 @@ Michael
 archive/issue_comments_030031.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [tail_reduce.patch](tarball://root/attachments/some-uuid/ticket4136/tail_reduce.patch) by malb created at 2008-10-20 13:20:34",
     "created_at": "2008-10-20T13:20:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4136",
     "type": "issue_comment",
@@ -148,7 +148,7 @@ archive/issue_comments_030031.json:
 }
 ```
 
-Attachment
+Attachment [tail_reduce.patch](tarball://root/attachments/some-uuid/ticket4136/tail_reduce.patch) by malb created at 2008-10-20 13:20:34
 
 
 

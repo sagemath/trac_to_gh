@@ -73,7 +73,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3137
 archive/issue_comments_021785.json:
 ```json
 {
-    "body": "Attachment\n\npatch to use dvi_viewer() from misc/viewer.py",
+    "body": "Attachment [view_trac_3137.patch](tarball://root/attachments/some-uuid/ticket3137/view_trac_3137.patch) by yi created at 2008-05-09 16:21:24\n\npatch to use dvi_viewer() from misc/viewer.py",
     "created_at": "2008-05-09T16:21:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3137",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_021785.json:
 }
 ```
 
-Attachment
+Attachment [view_trac_3137.patch](tarball://root/attachments/some-uuid/ticket3137/view_trac_3137.patch) by yi created at 2008-05-09 16:21:24
 
 patch to use dvi_viewer() from misc/viewer.py
 

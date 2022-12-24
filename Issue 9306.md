@@ -54,7 +54,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9306
 archive/issue_comments_087645.json:
 ```json
 {
-    "body": "Attachment\n\nChanges the round() command to defer to an element's .round() method if no precision is specified.",
+    "body": "Attachment [trac_9306_round_on_rationals.patch](tarball://root/attachments/some-uuid/ticket9306/trac_9306_round_on_rationals.patch) by spice created at 2011-03-22 21:14:52\n\nChanges the round() command to defer to an element's .round() method if no precision is specified.",
     "created_at": "2011-03-22T21:14:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9306",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_087645.json:
 }
 ```
 
-Attachment
+Attachment [trac_9306_round_on_rationals.patch](tarball://root/attachments/some-uuid/ticket9306/trac_9306_round_on_rationals.patch) by spice created at 2011-03-22 21:14:52
 
 Changes the round() command to defer to an element's .round() method if no precision is specified.
 

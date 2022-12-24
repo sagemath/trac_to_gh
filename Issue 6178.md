@@ -89,7 +89,7 @@ Changing status from new to assigned.
 archive/issue_comments_049327.json:
 ```json
 {
-    "body": "Attachment\n\nHere's a patch, which adds echelon form (= Hermite normal form) over PID's. I've also added a simple routine for kernel finding over PID's using Smith form (since the algorithm we had before silently assumed that the base ring was a field).\n\nWith this installed, I've done some playing around with free modules over the ring of integers of Q(sqrt(-7)), and it seems to be quite usable. There are unresolved uniqueness issues, because I don't know how to pick a canonical generator for an ideal or a canonical representative for an element modulo an ideal (even in the particular case of number field orders), but I haven't yet found an example where this is a problem :-)\n\nWilliam: I'm CCing you on this, because you seemed interested in the Smith form stuff. In conjunction with your work at #5882 this will mean we can handle all sorts of new kinds of modules.",
+    "body": "Attachment [trac_6178.patch](tarball://root/attachments/some-uuid/ticket6178/trac_6178.patch) by davidloeffler created at 2009-06-02 21:50:15\n\nHere's a patch, which adds echelon form (= Hermite normal form) over PID's. I've also added a simple routine for kernel finding over PID's using Smith form (since the algorithm we had before silently assumed that the base ring was a field).\n\nWith this installed, I've done some playing around with free modules over the ring of integers of Q(sqrt(-7)), and it seems to be quite usable. There are unresolved uniqueness issues, because I don't know how to pick a canonical generator for an ideal or a canonical representative for an element modulo an ideal (even in the particular case of number field orders), but I haven't yet found an example where this is a problem :-)\n\nWilliam: I'm CCing you on this, because you seemed interested in the Smith form stuff. In conjunction with your work at #5882 this will mean we can handle all sorts of new kinds of modules.",
     "created_at": "2009-06-02T21:50:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6178",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_049327.json:
 }
 ```
 
-Attachment
+Attachment [trac_6178.patch](tarball://root/attachments/some-uuid/ticket6178/trac_6178.patch) by davidloeffler created at 2009-06-02 21:50:15
 
 Here's a patch, which adds echelon form (= Hermite normal form) over PID's. I've also added a simple routine for kernel finding over PID's using Smith form (since the algorithm we had before silently assumed that the base ring was a field).
 

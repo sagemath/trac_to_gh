@@ -67,7 +67,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_018521.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2691-digraphs.patch](tarball://root/attachments/some-uuid/ticket2691/2691-digraphs.patch) by rlm created at 2008-03-28 14:55:02",
     "created_at": "2008-03-28T14:55:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2691",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_018521.json:
 }
 ```
 
-Attachment
+Attachment [2691-digraphs.patch](tarball://root/attachments/some-uuid/ticket2691/2691-digraphs.patch) by rlm created at 2008-03-28 14:55:02
 
 
 

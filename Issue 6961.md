@@ -76,7 +76,7 @@ but "psi" is unknown to Sage...
 archive/issue_comments_057576.json:
 ```json
 {
-    "body": "Attachment\n\nwrappers for psi function from pynac",
+    "body": "Attachment [trac_6961-psi.patch](tarball://root/attachments/some-uuid/ticket6961/trac_6961-psi.patch) by burcin created at 2010-01-17 05:00:00\n\nwrappers for psi function from pynac",
     "created_at": "2010-01-17T05:00:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6961",
     "type": "issue_comment",
@@ -85,7 +85,7 @@ archive/issue_comments_057576.json:
 }
 ```
 
-Attachment
+Attachment [trac_6961-psi.patch](tarball://root/attachments/some-uuid/ticket6961/trac_6961-psi.patch) by burcin created at 2010-01-17 05:00:00
 
 wrappers for psi function from pynac
 
@@ -236,7 +236,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_057583.json:
 ```json
 {
-    "body": "Attachment\n\nrebased",
+    "body": "Attachment [trac_6961-psi.rebased.patch](tarball://root/attachments/some-uuid/ticket6961/trac_6961-psi.rebased.patch) by burcin created at 2010-01-25 20:23:22\n\nrebased",
     "created_at": "2010-01-25T20:23:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6961",
     "type": "issue_comment",
@@ -245,7 +245,7 @@ archive/issue_comments_057583.json:
 }
 ```
 
-Attachment
+Attachment [trac_6961-psi.rebased.patch](tarball://root/attachments/some-uuid/ticket6961/trac_6961-psi.rebased.patch) by burcin created at 2010-01-25 20:23:22
 
 rebased
 
@@ -404,7 +404,7 @@ sage: N(psi(0, .5))
 archive/issue_comments_057590.json:
 ```json
 {
-    "body": "Attachment\n\nfix doctest failure",
+    "body": "Attachment [trac_6961-doctest.patch](tarball://root/attachments/some-uuid/ticket6961/trac_6961-doctest.patch) by mvngu created at 2010-02-18 04:00:05\n\nfix doctest failure",
     "created_at": "2010-02-18T04:00:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6961",
     "type": "issue_comment",
@@ -413,7 +413,7 @@ archive/issue_comments_057590.json:
 }
 ```
 
-Attachment
+Attachment [trac_6961-doctest.patch](tarball://root/attachments/some-uuid/ticket6961/trac_6961-doctest.patch) by mvngu created at 2010-02-18 04:00:05
 
 fix doctest failure
 

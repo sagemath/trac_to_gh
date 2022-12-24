@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6774
 archive/issue_comments_055772.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [graph_tour.patch](tarball://root/attachments/some-uuid/ticket6774/graph_tour.patch) by ncohen created at 2009-08-18 17:09:01",
     "created_at": "2009-08-18T17:09:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_055772.json:
 }
 ```
 
-Attachment
+Attachment [graph_tour.patch](tarball://root/attachments/some-uuid/ticket6774/graph_tour.patch) by ncohen created at 2009-08-18 17:09:01
 
 
 
@@ -55,7 +55,7 @@ Attachment
 archive/issue_comments_055773.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of previous patch",
+    "body": "Attachment [trac-6774-graph-tour-review.patch](tarball://root/attachments/some-uuid/ticket6774/trac-6774-graph-tour-review.patch) by jason created at 2009-09-17 09:31:37\n\napply on top of previous patch",
     "created_at": "2009-09-17T09:31:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_055773.json:
 }
 ```
 
-Attachment
+Attachment [trac-6774-graph-tour-review.patch](tarball://root/attachments/some-uuid/ticket6774/trac-6774-graph-tour-review.patch) by jason created at 2009-09-17 09:31:37
 
 apply on top of previous patch
 

@@ -463,7 +463,7 @@ These three patches apply cleanly to 3.0.1 and pass sage -testall. I think this 
 archive/issue_comments_021541.json:
 ```json
 {
-    "body": "Attachment\n\nThis is a flat version of the previous three.",
+    "body": "Attachment [trac-3112-socodes.patch](tarball://root/attachments/some-uuid/ticket3112/trac-3112-socodes.patch) by rlm created at 2008-05-19 18:26:54\n\nThis is a flat version of the previous three.",
     "created_at": "2008-05-19T18:26:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3112",
     "type": "issue_comment",
@@ -472,7 +472,7 @@ archive/issue_comments_021541.json:
 }
 ```
 
-Attachment
+Attachment [trac-3112-socodes.patch](tarball://root/attachments/some-uuid/ticket3112/trac-3112-socodes.patch) by rlm created at 2008-05-19 18:26:54
 
 This is a flat version of the previous three.
 
@@ -507,7 +507,7 @@ Michael
 archive/issue_comments_021543.json:
 ```json
 {
-    "body": "Attachment\n\nThat should do it.",
+    "body": "Attachment [trac-3112-doc.patch](tarball://root/attachments/some-uuid/ticket3112/trac-3112-doc.patch) by rlm created at 2008-05-22 05:02:31\n\nThat should do it.",
     "created_at": "2008-05-22T05:02:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3112",
     "type": "issue_comment",
@@ -516,7 +516,7 @@ archive/issue_comments_021543.json:
 }
 ```
 
-Attachment
+Attachment [trac-3112-doc.patch](tarball://root/attachments/some-uuid/ticket3112/trac-3112-doc.patch) by rlm created at 2008-05-22 05:02:31
 
 That should do it.
 
@@ -625,7 +625,7 @@ This should replace the previous two.
 archive/issue_comments_021546.json:
 ```json
 {
-    "body": "Attachment\n\nThe new patch applies cleanly. In the process of rebasing rlm also found an issue in #3269's docstring.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac-3112-rebased.patch](tarball://root/attachments/some-uuid/ticket3112/trac-3112-rebased.patch) by mabshoff created at 2008-05-22 22:59:03\n\nThe new patch applies cleanly. In the process of rebasing rlm also found an issue in #3269's docstring.\n\nCheers,\n\nMichael",
     "created_at": "2008-05-22T22:59:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3112",
     "type": "issue_comment",
@@ -634,7 +634,7 @@ archive/issue_comments_021546.json:
 }
 ```
 
-Attachment
+Attachment [trac-3112-rebased.patch](tarball://root/attachments/some-uuid/ticket3112/trac-3112-rebased.patch) by mabshoff created at 2008-05-22 22:59:03
 
 The new patch applies cleanly. In the process of rebasing rlm also found an issue in #3269's docstring.
 

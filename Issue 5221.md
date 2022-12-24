@@ -109,7 +109,7 @@ Based on 4.1.1 and #5448 and #5145
 archive/issue_comments_040019.json:
 ```json
 {
-    "body": "Attachment\n\nTry this.",
+    "body": "Attachment [trac_5221-contour-plot-default-cmap.patch](tarball://root/attachments/some-uuid/ticket5221/trac_5221-contour-plot-default-cmap.patch) by kcrisman created at 2009-09-10 15:47:11\n\nTry this.",
     "created_at": "2009-09-10T15:47:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5221",
     "type": "issue_comment",
@@ -118,7 +118,7 @@ archive/issue_comments_040019.json:
 }
 ```
 
-Attachment
+Attachment [trac_5221-contour-plot-default-cmap.patch](tarball://root/attachments/some-uuid/ticket5221/trac_5221-contour-plot-default-cmap.patch) by kcrisman created at 2009-09-10 15:47:11
 
 Try this.
 

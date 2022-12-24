@@ -53,7 +53,7 @@ Patch for doc/tut/tut.tex
 archive/issue_comments_024515.json:
 ```json
 {
-    "body": "Attachment\n\nYi, does your patch apply with #3347 applied?",
+    "body": "Attachment [3479_dsage_tut.patch](tarball://root/attachments/some-uuid/ticket3479/3479_dsage_tut.patch) by mhansen created at 2008-06-19 22:31:35\n\nYi, does your patch apply with #3347 applied?",
     "created_at": "2008-06-19T22:31:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3479",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_024515.json:
 }
 ```
 
-Attachment
+Attachment [3479_dsage_tut.patch](tarball://root/attachments/some-uuid/ticket3479/3479_dsage_tut.patch) by mhansen created at 2008-06-19 22:31:35
 
 Yi, does your patch apply with #3347 applied?
 

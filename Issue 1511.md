@@ -127,7 +127,7 @@ Then, after downloading jmol, do
 archive/issue_comments_009689.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [jmol-export.hg](tarball://root/attachments/some-uuid/ticket1511/jmol-export.hg) by robertwb created at 2007-12-15 01:15:55",
     "created_at": "2007-12-15T01:15:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1511",
     "type": "issue_comment",
@@ -136,7 +136,7 @@ archive/issue_comments_009689.json:
 }
 ```
 
-Attachment
+Attachment [jmol-export.hg](tarball://root/attachments/some-uuid/ticket1511/jmol-export.hg) by robertwb created at 2007-12-15 01:15:55
 
 
 
@@ -234,7 +234,7 @@ Resolution: fixed
 archive/issue_comments_009694.json:
 ```json
 {
-    "body": "Attachment\n\nMerged in 2.9.rc2.",
+    "body": "Attachment [trac-1511-update.patch](tarball://root/attachments/some-uuid/ticket1511/trac-1511-update.patch) by mabshoff created at 2007-12-16 00:56:33\n\nMerged in 2.9.rc2.",
     "created_at": "2007-12-16T00:56:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1511",
     "type": "issue_comment",
@@ -243,6 +243,6 @@ archive/issue_comments_009694.json:
 }
 ```
 
-Attachment
+Attachment [trac-1511-update.patch](tarball://root/attachments/some-uuid/ticket1511/trac-1511-update.patch) by mabshoff created at 2007-12-16 00:56:33
 
 Merged in 2.9.rc2.

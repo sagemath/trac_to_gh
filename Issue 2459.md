@@ -57,7 +57,7 @@ Changing component from Cygwin to build.
 archive/issue_comments_016651.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2459.hg](tarball://root/attachments/some-uuid/ticket2459/2459.hg) by dfdeshom created at 2008-03-14 05:42:31",
     "created_at": "2008-03-14T05:42:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2459",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_016651.json:
 }
 ```
 
-Attachment
+Attachment [2459.hg](tarball://root/attachments/some-uuid/ticket2459/2459.hg) by dfdeshom created at 2008-03-14 05:42:31
 
 
 

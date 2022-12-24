@@ -64,7 +64,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1640
 archive/issue_comments_010425.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1640.patch](tarball://root/attachments/some-uuid/ticket1640/1640.patch) by AlexGhitza created at 2008-01-08 11:28:10",
     "created_at": "2008-01-08T11:28:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1640",
     "type": "issue_comment",
@@ -73,7 +73,7 @@ archive/issue_comments_010425.json:
 }
 ```
 
-Attachment
+Attachment [1640.patch](tarball://root/attachments/some-uuid/ticket1640/1640.patch) by AlexGhitza created at 2008-01-08 11:28:10
 
 
 

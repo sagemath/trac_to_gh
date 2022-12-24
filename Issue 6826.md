@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6826
 archive/issue_comments_056304.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6826-magma_free.patch](tarball://root/attachments/some-uuid/ticket6826/trac_6826-magma_free.patch) by ncalexan created at 2009-08-26 01:17:41",
     "created_at": "2009-08-26T01:17:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6826",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_056304.json:
 }
 ```
 
-Attachment
+Attachment [trac_6826-magma_free.patch](tarball://root/attachments/some-uuid/ticket6826/trac_6826-magma_free.patch) by ncalexan created at 2009-08-26 01:17:41
 
 
 

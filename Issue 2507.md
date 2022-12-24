@@ -69,7 +69,7 @@ doctests and docstrings [SCORE quotient_ring_element.py: 37% (10 of 27)]
 archive/issue_comments_016985.json:
 ```json
 {
-    "body": "Attachment\n\nChris,\n\nplease make sure that you properly mark tickets with doctests added. Otherwise we cannot find them since attaching patches does not trigger an email to sage-trac.\n\nCheers,\n\nMichael",
+    "body": "Attachment [rings.quotient_ring_element.patch](tarball://root/attachments/some-uuid/ticket2507/rings.quotient_ring_element.patch) by mabshoff created at 2008-04-07 22:54:34\n\nChris,\n\nplease make sure that you properly mark tickets with doctests added. Otherwise we cannot find them since attaching patches does not trigger an email to sage-trac.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-07T22:54:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2507",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_016985.json:
 }
 ```
 
-Attachment
+Attachment [rings.quotient_ring_element.patch](tarball://root/attachments/some-uuid/ticket2507/rings.quotient_ring_element.patch) by mabshoff created at 2008-04-07 22:54:34
 
 Chris,
 
@@ -95,7 +95,7 @@ Michael
 archive/issue_comments_016986.json:
 ```json
 {
-    "body": "Attachment\n\n2507.patch applies against 3.0.alpha2 and passes tests.",
+    "body": "Attachment [2507.patch](tarball://root/attachments/some-uuid/ticket2507/2507.patch) by mhansen created at 2008-04-07 23:01:13\n\n2507.patch applies against 3.0.alpha2 and passes tests.",
     "created_at": "2008-04-07T23:01:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2507",
     "type": "issue_comment",
@@ -104,7 +104,7 @@ archive/issue_comments_016986.json:
 }
 ```
 
-Attachment
+Attachment [2507.patch](tarball://root/attachments/some-uuid/ticket2507/2507.patch) by mhansen created at 2008-04-07 23:01:13
 
 2507.patch applies against 3.0.alpha2 and passes tests.
 
@@ -223,7 +223,7 @@ Changing status from new to assigned.
 archive/issue_comments_016991.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2507_additional.patch](tarball://root/attachments/some-uuid/ticket2507/2507_additional.patch) by cswiercz created at 2008-04-17 23:53:47",
     "created_at": "2008-04-17T23:53:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2507",
     "type": "issue_comment",
@@ -232,7 +232,7 @@ archive/issue_comments_016991.json:
 }
 ```
 
-Attachment
+Attachment [2507_additional.patch](tarball://root/attachments/some-uuid/ticket2507/2507_additional.patch) by cswiercz created at 2008-04-17 23:53:47
 
 
 
@@ -411,7 +411,7 @@ apply only this patch
 archive/issue_comments_017000.json:
 ```json
 {
-    "body": "Attachment\n\nAll my concerns have been addressed in the patch `trac_2507.patch`. Doctest coverage for `sage/rings/quotient_ring_element.py` is now 100%. Positive review.",
+    "body": "Attachment [trac_2507.patch](tarball://root/attachments/some-uuid/ticket2507/trac_2507.patch) by mvngu created at 2009-05-12 23:31:41\n\nAll my concerns have been addressed in the patch `trac_2507.patch`. Doctest coverage for `sage/rings/quotient_ring_element.py` is now 100%. Positive review.",
     "created_at": "2009-05-12T23:31:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2507",
     "type": "issue_comment",
@@ -420,7 +420,7 @@ archive/issue_comments_017000.json:
 }
 ```
 
-Attachment
+Attachment [trac_2507.patch](tarball://root/attachments/some-uuid/ticket2507/trac_2507.patch) by mvngu created at 2009-05-12 23:31:41
 
 All my concerns have been addressed in the patch `trac_2507.patch`. Doctest coverage for `sage/rings/quotient_ring_element.py` is now 100%. Positive review.
 

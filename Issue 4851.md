@@ -85,7 +85,7 @@ Changing status from new to assigned.
 archive/issue_comments_036782.json:
 ```json
 {
-    "body": "Attachment\n\nThe code looks good, and the reported problem is fixed. I give this a positive review provided that a doctest gets added, or a test in the Selenium test suite is added.",
+    "body": "Attachment [trac_4851.patch](tarball://root/attachments/some-uuid/ticket4851/trac_4851.patch) by ddrake created at 2009-01-19 08:34:25\n\nThe code looks good, and the reported problem is fixed. I give this a positive review provided that a doctest gets added, or a test in the Selenium test suite is added.",
     "created_at": "2009-01-19T08:34:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4851",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_036782.json:
 }
 ```
 
-Attachment
+Attachment [trac_4851.patch](tarball://root/attachments/some-uuid/ticket4851/trac_4851.patch) by ddrake created at 2009-01-19 08:34:25
 
 The code looks good, and the reported problem is fixed. I give this a positive review provided that a doctest gets added, or a test in the Selenium test suite is added.
 

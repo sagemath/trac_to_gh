@@ -89,7 +89,7 @@ Deleted the function __selberg_zograf_bound.  Patch attached.  JV
 archive/issue_comments_015115.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8682.patch](tarball://root/attachments/some-uuid/ticket2279/8682.patch) by was created at 2008-02-28 06:28:20",
     "created_at": "2008-02-28T06:28:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2279",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_015115.json:
 }
 ```
 
-Attachment
+Attachment [8682.patch](tarball://root/attachments/some-uuid/ticket2279/8682.patch) by was created at 2008-02-28 06:28:20
 
 
 
@@ -107,7 +107,7 @@ Attachment
 archive/issue_comments_015116.json:
 ```json
 {
-    "body": "Attachment\n\nSame patch as the above, but it's a patch against 2.10.2, as opposed to the current working version of the code John and I are using (which is what the other patch above is against. ;) )",
+    "body": "Attachment [trac-2279.patch](tarball://root/attachments/some-uuid/ticket2279/trac-2279.patch) by craigcitro created at 2008-02-28 06:53:08\n\nSame patch as the above, but it's a patch against 2.10.2, as opposed to the current working version of the code John and I are using (which is what the other patch above is against. ;) )",
     "created_at": "2008-02-28T06:53:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2279",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_015116.json:
 }
 ```
 
-Attachment
+Attachment [trac-2279.patch](tarball://root/attachments/some-uuid/ticket2279/trac-2279.patch) by craigcitro created at 2008-02-28 06:53:08
 
 Same patch as the above, but it's a patch against 2.10.2, as opposed to the current working version of the code John and I are using (which is what the other patch above is against. ;) )
 
@@ -262,7 +262,7 @@ Yep, I'm still waiting for my copy of rc0 to finish its `sage -clone` on sage.ma
 archive/issue_comments_015124.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-2279.pt2.patch](tarball://root/attachments/some-uuid/ticket2279/trac-2279.pt2.patch) by craigcitro created at 2008-02-28 23:05:12",
     "created_at": "2008-02-28T23:05:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2279",
     "type": "issue_comment",
@@ -271,7 +271,7 @@ archive/issue_comments_015124.json:
 }
 ```
 
-Attachment
+Attachment [trac-2279.pt2.patch](tarball://root/attachments/some-uuid/ticket2279/trac-2279.pt2.patch) by craigcitro created at 2008-02-28 23:05:12
 
 
 

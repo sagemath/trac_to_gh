@@ -291,7 +291,7 @@ fix some circular imports in sage.rings.real_mpfr
 archive/issue_comments_002572.json:
 ```json
 {
-    "body": "Attachment\n\nattachment:510_real_mpfr_imports.patch fixes the problem reported in the original report. With this patch, \n\n```\nimport sage.rings.complex_field\n```\n\nstill fails because of similar errors. I'll write a script which imports each file in the tree individually and see if I can fix the errors.",
+    "body": "Attachment [510_real_mpfr_imports.patch](tarball://root/attachments/some-uuid/ticket510/510_real_mpfr_imports.patch) by burcin created at 2008-05-10 19:25:19\n\nattachment:510_real_mpfr_imports.patch fixes the problem reported in the original report. With this patch, \n\n```\nimport sage.rings.complex_field\n```\n\nstill fails because of similar errors. I'll write a script which imports each file in the tree individually and see if I can fix the errors.",
     "created_at": "2008-05-10T19:25:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/510",
     "type": "issue_comment",
@@ -300,7 +300,7 @@ archive/issue_comments_002572.json:
 }
 ```
 
-Attachment
+Attachment [510_real_mpfr_imports.patch](tarball://root/attachments/some-uuid/ticket510/510_real_mpfr_imports.patch) by burcin created at 2008-05-10 19:25:19
 
 attachment:510_real_mpfr_imports.patch fixes the problem reported in the original report. With this patch, 
 
@@ -377,7 +377,7 @@ I did not try to compile, but I consider this encouraging.
 archive/issue_comments_002575.json:
 ```json
 {
-    "body": "Attachment\n\nscript to test if importing a random module from the sage library returns an error",
+    "body": "Attachment [sage-test-import](tarball://root/attachments/some-uuid/ticket510/sage-test-import) by burcin created at 2008-10-15 16:44:30\n\nscript to test if importing a random module from the sage library returns an error",
     "created_at": "2008-10-15T16:44:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/510",
     "type": "issue_comment",
@@ -386,7 +386,7 @@ archive/issue_comments_002575.json:
 }
 ```
 
-Attachment
+Attachment [sage-test-import](tarball://root/attachments/some-uuid/ticket510/sage-test-import) by burcin created at 2008-10-15 16:44:30
 
 script to test if importing a random module from the sage library returns an error
 

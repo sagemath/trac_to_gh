@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4311
 archive/issue_comments_031564.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [tensor-product-doc-trac.patch](tarball://root/attachments/some-uuid/ticket4311/tensor-product-doc-trac.patch) by mabshoff created at 2008-10-18 19:21:50",
     "created_at": "2008-10-18T19:21:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4311",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_031564.json:
 }
 ```
 
-Attachment
+Attachment [tensor-product-doc-trac.patch](tarball://root/attachments/some-uuid/ticket4311/tensor-product-doc-trac.patch) by mabshoff created at 2008-10-18 19:21:50
 
 
 

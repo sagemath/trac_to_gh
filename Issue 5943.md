@@ -282,7 +282,7 @@ Patch doctesting the correct behaviour
 archive/issue_comments_046977.json:
 ```json
 {
-    "body": "Attachment\n\nI think the current behavior is desirable given the alternatives.\nThe slower algorithm falls on its face just as hard if you choose an upper bound that will cause out-of-memory, so there's no sense in falling back to that after we catch the exception.",
+    "body": "Attachment [sage-trac_5943-doctest.patch](tarball://root/attachments/some-uuid/ticket5943/sage-trac_5943-doctest.patch) by mjo created at 2011-12-12 02:18:51\n\nI think the current behavior is desirable given the alternatives.\nThe slower algorithm falls on its face just as hard if you choose an upper bound that will cause out-of-memory, so there's no sense in falling back to that after we catch the exception.",
     "created_at": "2011-12-12T02:18:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5943",
     "type": "issue_comment",
@@ -291,7 +291,7 @@ archive/issue_comments_046977.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac_5943-doctest.patch](tarball://root/attachments/some-uuid/ticket5943/sage-trac_5943-doctest.patch) by mjo created at 2011-12-12 02:18:51
 
 I think the current behavior is desirable given the alternatives.
 The slower algorithm falls on its face just as hard if you choose an upper bound that will cause out-of-memory, so there's no sense in falling back to that after we catch the exception.

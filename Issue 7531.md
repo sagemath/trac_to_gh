@@ -126,7 +126,7 @@ maybe just add `lqup(A)==lqup(A,algorithm="naive")` and `lqup(A)==lqup(A,algorit
 archive/issue_comments_063843.json:
 ```json
 {
-    "body": "Attachment\n\nThanks, fixed.",
+    "body": "Attachment [m4ri_lqup.patch](tarball://root/attachments/some-uuid/ticket7531/m4ri_lqup.patch) by malb created at 2009-11-26 14:56:05\n\nThanks, fixed.",
     "created_at": "2009-11-26T14:56:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7531",
     "type": "issue_comment",
@@ -135,7 +135,7 @@ archive/issue_comments_063843.json:
 }
 ```
 
-Attachment
+Attachment [m4ri_lqup.patch](tarball://root/attachments/some-uuid/ticket7531/m4ri_lqup.patch) by malb created at 2009-11-26 14:56:05
 
 Thanks, fixed.
 

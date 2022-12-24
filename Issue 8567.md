@@ -1044,7 +1044,7 @@ Changing status from new to needs_review.
 archive/issue_comments_077588.json:
 ```json
 {
-    "body": "Attachment\n\nI've not tested this extensively, but it builds on Solaris and hopefully does not on Linux. I don't have time to do much testing, so others can. \n\nI don't have a Cygwin system set up.",
+    "body": "Attachment [iconv.patch](tarball://root/attachments/some-uuid/ticket8567/iconv.patch) by drkirkby created at 2010-03-21 19:47:32\n\nI've not tested this extensively, but it builds on Solaris and hopefully does not on Linux. I don't have time to do much testing, so others can. \n\nI don't have a Cygwin system set up.",
     "created_at": "2010-03-21T19:47:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8567",
     "type": "issue_comment",
@@ -1053,7 +1053,7 @@ archive/issue_comments_077588.json:
 }
 ```
 
-Attachment
+Attachment [iconv.patch](tarball://root/attachments/some-uuid/ticket8567/iconv.patch) by drkirkby created at 2010-03-21 19:47:32
 
 I've not tested this extensively, but it builds on Solaris and hopefully does not on Linux. I don't have time to do much testing, so others can. 
 

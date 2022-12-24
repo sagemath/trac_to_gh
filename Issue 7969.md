@@ -81,7 +81,7 @@ Changing assignee from was to timdumol.
 archive/issue_comments_069523.json:
 ```json
 {
-    "body": "Attachment\n\nPrevents end-of-line backslashse from being replaced in sage and python systems.",
+    "body": "Attachment [trac_7969-escaped-backslash.patch](tarball://root/attachments/some-uuid/ticket7969/trac_7969-escaped-backslash.patch) by timdumol created at 2010-01-17 21:23:49\n\nPrevents end-of-line backslashse from being replaced in sage and python systems.",
     "created_at": "2010-01-17T21:23:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7969",
     "type": "issue_comment",
@@ -90,7 +90,7 @@ archive/issue_comments_069523.json:
 }
 ```
 
-Attachment
+Attachment [trac_7969-escaped-backslash.patch](tarball://root/attachments/some-uuid/ticket7969/trac_7969-escaped-backslash.patch) by timdumol created at 2010-01-17 21:23:49
 
 Prevents end-of-line backslashse from being replaced in sage and python systems.
 

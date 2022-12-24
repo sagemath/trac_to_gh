@@ -148,7 +148,7 @@ Michael
 archive/issue_comments_010801.json:
 ```json
 {
-    "body": "Attachment\n\nMerged trac_1705.patch. We are closing this ticket and will open a new one once the issue is fixed upstream.",
+    "body": "Attachment [trac_1705.patch](tarball://root/attachments/some-uuid/ticket1705/trac_1705.patch) by mabshoff created at 2008-01-18 01:48:17\n\nMerged trac_1705.patch. We are closing this ticket and will open a new one once the issue is fixed upstream.",
     "created_at": "2008-01-18T01:48:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1705",
     "type": "issue_comment",
@@ -157,7 +157,7 @@ archive/issue_comments_010801.json:
 }
 ```
 
-Attachment
+Attachment [trac_1705.patch](tarball://root/attachments/some-uuid/ticket1705/trac_1705.patch) by mabshoff created at 2008-01-18 01:48:17
 
 Merged trac_1705.patch. We are closing this ticket and will open a new one once the issue is fixed upstream.
 

@@ -76,7 +76,7 @@ Changing status from new to needs_review.
 archive/issue_comments_070792.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [python_gnutls-1.1.4.p7.patch](tarball://root/attachments/some-uuid/ticket8077/python_gnutls-1.1.4.p7.patch) by jsp created at 2010-01-26 18:37:38",
     "created_at": "2010-01-26T18:37:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8077",
     "type": "issue_comment",
@@ -85,7 +85,7 @@ archive/issue_comments_070792.json:
 }
 ```
 
-Attachment
+Attachment [python_gnutls-1.1.4.p7.patch](tarball://root/attachments/some-uuid/ticket8077/python_gnutls-1.1.4.p7.patch) by jsp created at 2010-01-26 18:37:38
 
 
 

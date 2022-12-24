@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5433
 archive/issue_comments_042035.json:
 ```json
 {
-    "body": "Attachment\n\nOh, right, it also does something else: it changes the `_latex_file_` function in sage/misc/latex.py: I changed the default arguments, added documentation, and removed the \"brk\" argument since I really couldn't see the point: setting brk equal to 2 would change `\\begin{document} blah` to `\\b eg in {d oc um en t} bl ah`.  Why?\n\nAs far as changing the default values, we made many of the same changes in the `view` function a while ago: see #3145.\n\nI made corresponding changes to the png function in that file.",
+    "body": "Attachment [latex.patch](tarball://root/attachments/some-uuid/ticket5433/latex.patch) by jhpalmieri created at 2009-03-04 02:21:42\n\nOh, right, it also does something else: it changes the `_latex_file_` function in sage/misc/latex.py: I changed the default arguments, added documentation, and removed the \"brk\" argument since I really couldn't see the point: setting brk equal to 2 would change `\\begin{document} blah` to `\\b eg in {d oc um en t} bl ah`.  Why?\n\nAs far as changing the default values, we made many of the same changes in the `view` function a while ago: see #3145.\n\nI made corresponding changes to the png function in that file.",
     "created_at": "2009-03-04T02:21:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5433",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_042035.json:
 }
 ```
 
-Attachment
+Attachment [latex.patch](tarball://root/attachments/some-uuid/ticket5433/latex.patch) by jhpalmieri created at 2009-03-04 02:21:42
 
 Oh, right, it also does something else: it changes the `_latex_file_` function in sage/misc/latex.py: I changed the default arguments, added documentation, and removed the "brk" argument since I really couldn't see the point: setting brk equal to 2 would change `\begin{document} blah` to `\b eg in {d oc um en t} bl ah`.  Why?
 
@@ -136,7 +136,7 @@ Finally, `view` and `_latex_file` had options to pass on to xdvi: 'expert' and '
 archive/issue_comments_042038.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of other patch",
+    "body": "Attachment [latex-delta.2.patch](tarball://root/attachments/some-uuid/ticket5433/latex-delta.2.patch) by jhpalmieri created at 2009-03-16 17:29:38\n\napply on top of other patch",
     "created_at": "2009-03-16T17:29:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5433",
     "type": "issue_comment",
@@ -145,7 +145,7 @@ archive/issue_comments_042038.json:
 }
 ```
 
-Attachment
+Attachment [latex-delta.2.patch](tarball://root/attachments/some-uuid/ticket5433/latex-delta.2.patch) by jhpalmieri created at 2009-03-16 17:29:38
 
 apply on top of other patch
 

@@ -87,7 +87,7 @@ Changing status from new to needs_work.
 archive/issue_comments_049684.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6223_ext_python_part1.patch](tarball://root/attachments/some-uuid/ticket6223/6223_ext_python_part1.patch) by jdemeyer created at 2013-04-12 21:52:24",
     "created_at": "2013-04-12T21:52:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6223",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_049684.json:
 }
 ```
 
-Attachment
+Attachment [6223_ext_python_part1.patch](tarball://root/attachments/some-uuid/ticket6223/6223_ext_python_part1.patch) by jdemeyer created at 2013-04-12 21:52:24
 
 
 
@@ -105,7 +105,7 @@ Attachment
 archive/issue_comments_049685.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6223_remove_pxi.patch](tarball://root/attachments/some-uuid/ticket6223/6223_remove_pxi.patch) by jdemeyer created at 2013-04-13 15:47:35",
     "created_at": "2013-04-13T15:47:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6223",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_049685.json:
 }
 ```
 
-Attachment
+Attachment [6223_remove_pxi.patch](tarball://root/attachments/some-uuid/ticket6223/6223_remove_pxi.patch) by jdemeyer created at 2013-04-13 15:47:35
 
 
 
@@ -141,7 +141,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_049687.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6223_ext_python_manual.patch](tarball://root/attachments/some-uuid/ticket6223/6223_ext_python_manual.patch) by jdemeyer created at 2013-04-15 11:48:13",
     "created_at": "2013-04-15T11:48:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6223",
     "type": "issue_comment",
@@ -150,7 +150,7 @@ archive/issue_comments_049687.json:
 }
 ```
 
-Attachment
+Attachment [6223_ext_python_manual.patch](tarball://root/attachments/some-uuid/ticket6223/6223_ext_python_manual.patch) by jdemeyer created at 2013-04-15 11:48:13
 
 
 

@@ -52,7 +52,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5017
 archive/issue_comments_038225.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5017-graph_aut_gp_trans.patch](tarball://root/attachments/some-uuid/ticket5017/trac_5017-graph_aut_gp_trans.patch) by rlm created at 2009-01-18 20:36:18",
     "created_at": "2009-01-18T20:36:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5017",
     "type": "issue_comment",
@@ -61,7 +61,7 @@ archive/issue_comments_038225.json:
 }
 ```
 
-Attachment
+Attachment [trac_5017-graph_aut_gp_trans.patch](tarball://root/attachments/some-uuid/ticket5017/trac_5017-graph_aut_gp_trans.patch) by rlm created at 2009-01-18 20:36:18
 
 
 

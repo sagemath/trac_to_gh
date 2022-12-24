@@ -151,7 +151,7 @@ Changing assignee from mhansen to was.
 archive/issue_comments_033753.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-4531.patch](tarball://root/attachments/some-uuid/ticket4531/sage-4531.patch) by was created at 2008-11-18 16:56:50",
     "created_at": "2008-11-18T16:56:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4531",
     "type": "issue_comment",
@@ -160,7 +160,7 @@ archive/issue_comments_033753.json:
 }
 ```
 
-Attachment
+Attachment [sage-4531.patch](tarball://root/attachments/some-uuid/ticket4531/sage-4531.patch) by was created at 2008-11-18 16:56:50
 
 
 
@@ -169,7 +169,7 @@ Attachment
 archive/issue_comments_033754.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [doc-4531.patch](tarball://root/attachments/some-uuid/ticket4531/doc-4531.patch) by was created at 2008-11-18 16:56:58",
     "created_at": "2008-11-18T16:56:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4531",
     "type": "issue_comment",
@@ -178,7 +178,7 @@ archive/issue_comments_033754.json:
 }
 ```
 
-Attachment
+Attachment [doc-4531.patch](tarball://root/attachments/some-uuid/ticket4531/doc-4531.patch) by was created at 2008-11-18 16:56:58
 
 
 
@@ -187,7 +187,7 @@ Attachment
 archive/issue_comments_033755.json:
 ```json
 {
-    "body": "Attachment\n\ntrivial followup",
+    "body": "Attachment [sage-4531-part2.patch](tarball://root/attachments/some-uuid/ticket4531/sage-4531-part2.patch) by was created at 2008-11-18 17:01:06\n\ntrivial followup",
     "created_at": "2008-11-18T17:01:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4531",
     "type": "issue_comment",
@@ -196,7 +196,7 @@ archive/issue_comments_033755.json:
 }
 ```
 
-Attachment
+Attachment [sage-4531-part2.patch](tarball://root/attachments/some-uuid/ticket4531/sage-4531-part2.patch) by was created at 2008-11-18 17:01:06
 
 trivial followup
 

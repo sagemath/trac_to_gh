@@ -109,7 +109,7 @@ Changing assignee from vdelecroix to tjolivet.
 archive/issue_comments_075597.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8431_E1Star.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431_E1Star.patch) by tjolivet created at 2010-09-17 11:11:48",
     "created_at": "2010-09-17T11:11:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
@@ -118,7 +118,7 @@ archive/issue_comments_075597.json:
 }
 ```
 
-Attachment
+Attachment [trac_8431_E1Star.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431_E1Star.patch) by tjolivet created at 2010-09-17 11:11:48
 
 
 
@@ -466,7 +466,7 @@ The macro `\RR`, as well as `\ZZ` and `\QQ` is defined to get the doc more reada
 archive/issue_comments_075608.json:
 ```json
 {
-    "body": "Attachment\n\nOkay, thanks again for the useful comments!\n\nI've updated the patch.",
+    "body": "Attachment [trac_8431_e_one_star.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431_e_one_star.patch) by tjolivet created at 2010-09-23 20:05:29\n\nOkay, thanks again for the useful comments!\n\nI've updated the patch.",
     "created_at": "2010-09-23T20:05:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
@@ -475,7 +475,7 @@ archive/issue_comments_075608.json:
 }
 ```
 
-Attachment
+Attachment [trac_8431_e_one_star.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431_e_one_star.patch) by tjolivet created at 2010-09-23 20:05:29
 
 Okay, thanks again for the useful comments!
 
@@ -535,7 +535,7 @@ Timo, now that I uploaded a new patch, you will have to create a new separate pa
 archive/issue_comments_075611.json:
 ```json
 {
-    "body": "Attachment\n\nApplies over the trac_8431_e_one_star.patch",
+    "body": "Attachment [trac_8431_review-sl.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431_review-sl.patch) by slabbe created at 2010-09-24 19:51:51\n\nApplies over the trac_8431_e_one_star.patch",
     "created_at": "2010-09-24T19:51:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
@@ -544,7 +544,7 @@ archive/issue_comments_075611.json:
 }
 ```
 
-Attachment
+Attachment [trac_8431_review-sl.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431_review-sl.patch) by slabbe created at 2010-09-24 19:51:51
 
 Applies over the trac_8431_e_one_star.patch
 
@@ -902,7 +902,7 @@ Cheers!
 archive/issue_comments_075620.json:
 ```json
 {
-    "body": "Attachment\n\nHi S\u00e9bastien and the others,\n\n*[We had a long discussion on skype with S\u00e9bastien regarding his last reply.]*\n\nI just uploaded a new version of the last patch. The face types are now integers, and only integers (from 1 to d), and the [WordMorphism](http://trac.sagemath.org/sage_trac/search/opensearch?q=wiki%3AWordMorphism) associated with an E1Star object is also defined on integers.\n\nSome other things I changed:\n\n* I removed the `coloring` option in `apply_substitution`. Why? Because we can use `repaint`, and it is better that all the \"color business\" is taken care of by `repaint`. The colors of a face in an image by a substitution is automatically the color of its preimage (which enables to get the interesting coloring given by the substitution). If we want to change the color of a patch obtained by iteration, `repaint`!\n\n* I took care of the above remarks concerning `color_from_preimage`, and used the clever solution suggested by S\u00e9bastien: dictionaries `{types:colors}`.\n\n* Some small fixes.\n\n**Now, a last and important remark**. Writing\n\n\n```\nsigma = WordMorphism('1->12,2->13,3->1')\n```\n\nis less painful than writing\n\n\n```\nsigma = WordMorphism({1:[1,2], 2:[1,3], 3:[1]})\n```\n\nSince all the face types are integers and the [WordMorphism](http://trac.sagemath.org/sage_trac/search/opensearch?q=wiki%3AWordMorphism) defining an `E1Star` must be on integers, we are supposed to use the latter way to define `sigma`. However, I find it very inconvenient, so we allow the user to give a `sigma` defined on an **arbitrary** alphabet. When `E1Star` is defined, it is converted and stored as a substitution on the alphabet `[1, ..., d]` (so that there is a correspondence between the types of the faces and the alphabet of the substitutions). It really makes the definitions much more convenient and I don't think that it harms `sage` so much.\n\nAlso, I don't think that it would be useful to allow the user to specify an arbitrary alphabet for the faces, since they are not used as the letters of a word, but as three-dimensional objects, which we *call* of type `1`, `2` or `3`. (This is why all the types are represented by integers.) It corresponds to the mathematical definition of the object.\n\nI strongly insist on this last remark!",
+    "body": "Attachment [trac_8431_might_be_final_tj.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431_might_be_final_tj.patch) by tjolivet created at 2010-09-30 15:26:54\n\nHi S\u00e9bastien and the others,\n\n*[We had a long discussion on skype with S\u00e9bastien regarding his last reply.]*\n\nI just uploaded a new version of the last patch. The face types are now integers, and only integers (from 1 to d), and the [WordMorphism](http://trac.sagemath.org/sage_trac/search/opensearch?q=wiki%3AWordMorphism) associated with an E1Star object is also defined on integers.\n\nSome other things I changed:\n\n* I removed the `coloring` option in `apply_substitution`. Why? Because we can use `repaint`, and it is better that all the \"color business\" is taken care of by `repaint`. The colors of a face in an image by a substitution is automatically the color of its preimage (which enables to get the interesting coloring given by the substitution). If we want to change the color of a patch obtained by iteration, `repaint`!\n\n* I took care of the above remarks concerning `color_from_preimage`, and used the clever solution suggested by S\u00e9bastien: dictionaries `{types:colors}`.\n\n* Some small fixes.\n\n**Now, a last and important remark**. Writing\n\n\n```\nsigma = WordMorphism('1->12,2->13,3->1')\n```\n\nis less painful than writing\n\n\n```\nsigma = WordMorphism({1:[1,2], 2:[1,3], 3:[1]})\n```\n\nSince all the face types are integers and the [WordMorphism](http://trac.sagemath.org/sage_trac/search/opensearch?q=wiki%3AWordMorphism) defining an `E1Star` must be on integers, we are supposed to use the latter way to define `sigma`. However, I find it very inconvenient, so we allow the user to give a `sigma` defined on an **arbitrary** alphabet. When `E1Star` is defined, it is converted and stored as a substitution on the alphabet `[1, ..., d]` (so that there is a correspondence between the types of the faces and the alphabet of the substitutions). It really makes the definitions much more convenient and I don't think that it harms `sage` so much.\n\nAlso, I don't think that it would be useful to allow the user to specify an arbitrary alphabet for the faces, since they are not used as the letters of a word, but as three-dimensional objects, which we *call* of type `1`, `2` or `3`. (This is why all the types are represented by integers.) It corresponds to the mathematical definition of the object.\n\nI strongly insist on this last remark!",
     "created_at": "2010-09-30T15:26:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
@@ -911,7 +911,7 @@ archive/issue_comments_075620.json:
 }
 ```
 
-Attachment
+Attachment [trac_8431_might_be_final_tj.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431_might_be_final_tj.patch) by tjolivet created at 2010-09-30 15:26:54
 
 Hi Sébastien and the others,
 
@@ -1161,7 +1161,7 @@ Forget about that, I was wrong. I like the way it is.
 archive/issue_comments_075625.json:
 ```json
 {
-    "body": "Attachment\n\nApplies over the precedent 3 patches",
+    "body": "Attachment [trac_8431_colors_tikz-sl.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431_colors_tikz-sl.patch) by slabbe created at 2010-10-01 23:30:26\n\nApplies over the precedent 3 patches",
     "created_at": "2010-10-01T23:30:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
@@ -1170,7 +1170,7 @@ archive/issue_comments_075625.json:
 }
 ```
 
-Attachment
+Attachment [trac_8431_colors_tikz-sl.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431_colors_tikz-sl.patch) by slabbe created at 2010-10-01 23:30:26
 
 Applies over the precedent 3 patches
 
@@ -1259,7 +1259,7 @@ sigma type fix
 archive/issue_comments_075629.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8431_sigma_type_fix.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431_sigma_type_fix.patch) by tmonteil created at 2010-10-02 23:09:11",
     "created_at": "2010-10-02T23:09:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
@@ -1268,7 +1268,7 @@ archive/issue_comments_075629.json:
 }
 ```
 
-Attachment
+Attachment [trac_8431_sigma_type_fix.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431_sigma_type_fix.patch) by tmonteil created at 2010-10-02 23:09:11
 
 
 
@@ -1330,7 +1330,7 @@ Applies over the precedent 5 patches
 archive/issue_comments_075632.json:
 ```json
 {
-    "body": "Attachment\n\nJust added a new patch that adds two methods that might be useful : `E1Star.__mul__` and `WordMorphism.dual_map`.\n\nPatches need to be applied in this order:\n\n1. trac_8431_e_one_star.patch\n2. trac_8431_review-sl.patch\n3. trac_8431_might_be_final_tj.patch\n4. trac_8431_colors_tikz-sl.patch\n5. trac_8431_sigma_type_fix.patch \n6. trac_8431-wordmorphism-sl.patch",
+    "body": "Attachment [trac_8431-wordmorphism-sl.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431-wordmorphism-sl.patch) by slabbe created at 2010-10-05 00:39:40\n\nJust added a new patch that adds two methods that might be useful : `E1Star.__mul__` and `WordMorphism.dual_map`.\n\nPatches need to be applied in this order:\n\n1. trac_8431_e_one_star.patch\n2. trac_8431_review-sl.patch\n3. trac_8431_might_be_final_tj.patch\n4. trac_8431_colors_tikz-sl.patch\n5. trac_8431_sigma_type_fix.patch \n6. trac_8431-wordmorphism-sl.patch",
     "created_at": "2010-10-05T00:39:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
@@ -1339,7 +1339,7 @@ archive/issue_comments_075632.json:
 }
 ```
 
-Attachment
+Attachment [trac_8431-wordmorphism-sl.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431-wordmorphism-sl.patch) by slabbe created at 2010-10-05 00:39:40
 
 Just added a new patch that adds two methods that might be useful : `E1Star.__mul__` and `WordMorphism.dual_map`.
 
@@ -1395,7 +1395,7 @@ small fixes
 archive/issue_comments_075635.json:
 ```json
 {
-    "body": "Attachment\n\nHi,\n\nThis patch (trac_8431-smallfixes-tj.patch) corrects three bugs and adds three minor features:\n\n* in `.plot_tikz`, the option `edgecolor='facecolor'` didnt't work\n* in `.plot_tikz`, the option `print_tikz_env=False` caused an error message\n* in `.plot3d`, the plot was rotated uselessly (it was confusing)\n* patches can now be added (which gives their union)\n* `E1Star` morphisms can now be multiplied (according to the rule *E1Star(s*t) = E1Star(t)*E1Star(s)*)\n\nPatches need to be applied in this order:\n\n1. trac_8431_e_one_star.patch\n2. trac_8431_review-sl.patch\n3. trac_8431_might_be_final_tj.patch\n4. trac_8431_colors_tikz-sl.patch\n5. trac_8431_sigma_type_fix.patch\n6. trac_8431-wordmorphism-sl.patch\n7. trac_8431-smallfixes-tj.patch",
+    "body": "Attachment [trac_8431-smallfixes-tj.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431-smallfixes-tj.patch) by tjolivet created at 2010-11-04 16:56:49\n\nHi,\n\nThis patch (trac_8431-smallfixes-tj.patch) corrects three bugs and adds three minor features:\n\n* in `.plot_tikz`, the option `edgecolor='facecolor'` didnt't work\n* in `.plot_tikz`, the option `print_tikz_env=False` caused an error message\n* in `.plot3d`, the plot was rotated uselessly (it was confusing)\n* patches can now be added (which gives their union)\n* `E1Star` morphisms can now be multiplied (according to the rule *E1Star(s*t) = E1Star(t)*E1Star(s)*)\n\nPatches need to be applied in this order:\n\n1. trac_8431_e_one_star.patch\n2. trac_8431_review-sl.patch\n3. trac_8431_might_be_final_tj.patch\n4. trac_8431_colors_tikz-sl.patch\n5. trac_8431_sigma_type_fix.patch\n6. trac_8431-wordmorphism-sl.patch\n7. trac_8431-smallfixes-tj.patch",
     "created_at": "2010-11-04T16:56:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
@@ -1404,7 +1404,7 @@ archive/issue_comments_075635.json:
 }
 ```
 
-Attachment
+Attachment [trac_8431-smallfixes-tj.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431-smallfixes-tj.patch) by tjolivet created at 2010-11-04 16:56:49
 
 Hi,
 
@@ -1462,7 +1462,7 @@ The second line was initally written to "turn" the patch so that it faces the vi
 archive/issue_comments_075637.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8431-alphaset-tj.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431-alphaset-tj.patch) by tjolivet created at 2010-11-10 15:22:40",
     "created_at": "2010-11-10T15:22:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
@@ -1471,7 +1471,7 @@ archive/issue_comments_075637.json:
 }
 ```
 
-Attachment
+Attachment [trac_8431-alphaset-tj.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431-alphaset-tj.patch) by tjolivet created at 2010-11-10 15:22:40
 
 
 
@@ -1673,7 +1673,7 @@ To recap, the order is:
 archive/issue_comments_075641.json:
 ```json
 {
-    "body": "Attachment\n\nHi. Sorry, this error message was because of a manipulation error from my part. (I misapplied the wordmorphism-sl patch, and my two last patches were based on this misapplying.)\n\nI made a new patch that applies correctly over wordmorphism-sl, and that takes into account my two last patches (which should now be ignored; it's a shame that we can't delete patches from the ticket!).\n\nPatches should be applied in this order:\n\n1. trac_8431_e_one_star.patch\n2. trac_8431_review-sl.patch\n3. trac_8431_might_be_final_tj.patch\n4. trac_8431_colors_tikz-sl.patch\n5. trac_8431_sigma_type_fix.patch\n6. trac_8431-wordmorphism-sl.patch\n7. trac_new-fixes-final-tj.patch\n\n(Sorry for misnaming the last patch, I forgot \"8431\"... And sorry if this made you lose some time!)",
+    "body": "Attachment [trac_new-fixes-final-tj.patch](tarball://root/attachments/some-uuid/ticket8431/trac_new-fixes-final-tj.patch) by tjolivet created at 2010-11-13 11:45:04\n\nHi. Sorry, this error message was because of a manipulation error from my part. (I misapplied the wordmorphism-sl patch, and my two last patches were based on this misapplying.)\n\nI made a new patch that applies correctly over wordmorphism-sl, and that takes into account my two last patches (which should now be ignored; it's a shame that we can't delete patches from the ticket!).\n\nPatches should be applied in this order:\n\n1. trac_8431_e_one_star.patch\n2. trac_8431_review-sl.patch\n3. trac_8431_might_be_final_tj.patch\n4. trac_8431_colors_tikz-sl.patch\n5. trac_8431_sigma_type_fix.patch\n6. trac_8431-wordmorphism-sl.patch\n7. trac_new-fixes-final-tj.patch\n\n(Sorry for misnaming the last patch, I forgot \"8431\"... And sorry if this made you lose some time!)",
     "created_at": "2010-11-13T11:45:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
@@ -1682,7 +1682,7 @@ archive/issue_comments_075641.json:
 }
 ```
 
-Attachment
+Attachment [trac_new-fixes-final-tj.patch](tarball://root/attachments/some-uuid/ticket8431/trac_new-fixes-final-tj.patch) by tjolivet created at 2010-11-13 11:45:04
 
 Hi. Sorry, this error message was because of a manipulation error from my part. (I misapplied the wordmorphism-sl patch, and my two last patches were based on this misapplying.)
 
@@ -1707,7 +1707,7 @@ Patches should be applied in this order:
 archive/issue_comments_075642.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8431_typos-docfix-tj.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431_typos-docfix-tj.patch) by tjolivet created at 2010-11-13 16:45:30",
     "created_at": "2010-11-13T16:45:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
@@ -1716,7 +1716,7 @@ archive/issue_comments_075642.json:
 }
 ```
 
-Attachment
+Attachment [trac_8431_typos-docfix-tj.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431_typos-docfix-tj.patch) by tjolivet created at 2010-11-13 16:45:30
 
 
 
@@ -1770,7 +1770,7 @@ Apply on top of preceding patches
 archive/issue_comments_075645.json:
 ```json
 {
-    "body": "Attachment\n\nHi Timo and S\u00e9bastien !\n\nI just uploaded a (I hope last) patch that fixes a minor doctest failure (decimal number, on my computer but not Timo's).\n\nI tested all of it on sage-4.6. I'm satisfied with the code and the documentation looks good (no warning neither).\n\nBefore setting this ticket to \"positive review\", I want to know if S\u00e9bastien is ok with it, since he reviewed big parts, and if Timo agrees with my last patch (Timo, just make sure it still passes on your machine).",
+    "body": "Attachment [trac_8431_doctest_fix-abm.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431_doctest_fix-abm.patch) by abmasse created at 2010-11-13 17:24:36\n\nHi Timo and S\u00e9bastien !\n\nI just uploaded a (I hope last) patch that fixes a minor doctest failure (decimal number, on my computer but not Timo's).\n\nI tested all of it on sage-4.6. I'm satisfied with the code and the documentation looks good (no warning neither).\n\nBefore setting this ticket to \"positive review\", I want to know if S\u00e9bastien is ok with it, since he reviewed big parts, and if Timo agrees with my last patch (Timo, just make sure it still passes on your machine).",
     "created_at": "2010-11-13T17:24:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
@@ -1779,7 +1779,7 @@ archive/issue_comments_075645.json:
 }
 ```
 
-Attachment
+Attachment [trac_8431_doctest_fix-abm.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431_doctest_fix-abm.patch) by abmasse created at 2010-11-13 17:24:36
 
 Hi Timo and Sébastien !
 
@@ -1933,7 +1933,7 @@ Folded all the 9 appropriate patches.
 archive/issue_comments_075652.json:
 ```json
 {
-    "body": "Attachment\n\nI just re-uploaded the folded patch.\n\n> 1) Please update the commit message of the folded patch (use `hg qrefresh -e` for that).\n\nDone.\n\n> 2) The copyright message in the files MUST be changed to state\n\nDone. I did not know the copyright message changed.\n\nNeeds review.",
+    "body": "Attachment [trac_8431_folded.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431_folded.patch) by slabbe created at 2010-11-15 14:15:31\n\nI just re-uploaded the folded patch.\n\n> 1) Please update the commit message of the folded patch (use `hg qrefresh -e` for that).\n\nDone.\n\n> 2) The copyright message in the files MUST be changed to state\n\nDone. I did not know the copyright message changed.\n\nNeeds review.",
     "created_at": "2010-11-15T14:15:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
@@ -1942,7 +1942,7 @@ archive/issue_comments_075652.json:
 }
 ```
 
-Attachment
+Attachment [trac_8431_folded.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431_folded.patch) by slabbe created at 2010-11-15 14:15:31
 
 I just re-uploaded the folded patch.
 

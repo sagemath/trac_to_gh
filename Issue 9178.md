@@ -51,7 +51,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9178
 archive/issue_comments_085871.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9178-attrcall_hash_fix-nt.patch](tarball://root/attachments/some-uuid/ticket9178/trac_9178-attrcall_hash_fix-nt.patch) by nthiery created at 2010-06-07 15:25:44",
     "created_at": "2010-06-07T15:25:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9178",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_085871.json:
 }
 ```
 
-Attachment
+Attachment [trac_9178-attrcall_hash_fix-nt.patch](tarball://root/attachments/some-uuid/ticket9178/trac_9178-attrcall_hash_fix-nt.patch) by nthiery created at 2010-06-07 15:25:44
 
 
 

@@ -223,7 +223,7 @@ Heres a patch. Will post a new package after dinner - wife calling!
 archive/issue_comments_087704.json:
 ```json
 {
-    "body": "Attachment\n\nMercurial patch which fixes the SAGE64 issue and tons more beside",
+    "body": "Attachment [9312.patch](tarball://root/attachments/some-uuid/ticket9312/9312.patch) by drkirkby created at 2010-06-23 19:24:00\n\nMercurial patch which fixes the SAGE64 issue and tons more beside",
     "created_at": "2010-06-23T19:24:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9312",
     "type": "issue_comment",
@@ -232,7 +232,7 @@ archive/issue_comments_087704.json:
 }
 ```
 
-Attachment
+Attachment [9312.patch](tarball://root/attachments/some-uuid/ticket9312/9312.patch) by drkirkby created at 2010-06-23 19:24:00
 
 Mercurial patch which fixes the SAGE64 issue and tons more beside
 
@@ -609,7 +609,7 @@ Dave
 archive/issue_comments_087713.json:
 ```json
 {
-    "body": "Attachment\n\nUntested $SAGE_ROOT/spkg/install file, which adds GLPK",
+    "body": "Attachment [install](tarball://root/attachments/some-uuid/ticket9312/install) by drkirkby created at 2010-07-04 14:54:11\n\nUntested $SAGE_ROOT/spkg/install file, which adds GLPK",
     "created_at": "2010-07-04T14:54:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9312",
     "type": "issue_comment",
@@ -618,7 +618,7 @@ archive/issue_comments_087713.json:
 }
 ```
 
-Attachment
+Attachment [install](tarball://root/attachments/some-uuid/ticket9312/install) by drkirkby created at 2010-07-04 14:54:11
 
 Untested $SAGE_ROOT/spkg/install file, which adds GLPK
 
@@ -629,7 +629,7 @@ Untested $SAGE_ROOT/spkg/install file, which adds GLPK
 archive/issue_comments_087714.json:
 ```json
 {
-    "body": "Attachment\n\nUntested $SAGE_ROOT/spkg/install file diff file. Relative to to 'install' in sage-4.5.alpha1",
+    "body": "Attachment [install.diff](tarball://root/attachments/some-uuid/ticket9312/install.diff) by drkirkby created at 2010-07-04 14:58:31\n\nUntested $SAGE_ROOT/spkg/install file diff file. Relative to to 'install' in sage-4.5.alpha1",
     "created_at": "2010-07-04T14:58:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9312",
     "type": "issue_comment",
@@ -638,7 +638,7 @@ archive/issue_comments_087714.json:
 }
 ```
 
-Attachment
+Attachment [install.diff](tarball://root/attachments/some-uuid/ticket9312/install.diff) by drkirkby created at 2010-07-04 14:58:31
 
 Untested $SAGE_ROOT/spkg/install file diff file. Relative to to 'install' in sage-4.5.alpha1
 
@@ -679,7 +679,7 @@ drkirkby@hawk:~$ digest -a md5 deps deps.diff
 archive/issue_comments_087716.json:
 ```json
 {
-    "body": "Attachment\n\n$SAGE_ROOT/spkg/standard/deps",
+    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket9312/deps) by drkirkby created at 2010-07-05 17:23:08\n\n$SAGE_ROOT/spkg/standard/deps",
     "created_at": "2010-07-05T17:23:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9312",
     "type": "issue_comment",
@@ -688,7 +688,7 @@ archive/issue_comments_087716.json:
 }
 ```
 
-Attachment
+Attachment [deps](tarball://root/attachments/some-uuid/ticket9312/deps) by drkirkby created at 2010-07-05 17:23:08
 
 $SAGE_ROOT/spkg/standard/deps
 
@@ -699,7 +699,7 @@ $SAGE_ROOT/spkg/standard/deps
 archive/issue_comments_087717.json:
 ```json
 {
-    "body": "Attachment\n\nDiff file for $SAGE_ROOT/spkg/standard/deps",
+    "body": "Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket9312/deps.diff) by drkirkby created at 2010-07-05 17:24:06\n\nDiff file for $SAGE_ROOT/spkg/standard/deps",
     "created_at": "2010-07-05T17:24:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9312",
     "type": "issue_comment",
@@ -708,7 +708,7 @@ archive/issue_comments_087717.json:
 }
 ```
 
-Attachment
+Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket9312/deps.diff) by drkirkby created at 2010-07-05 17:24:06
 
 Diff file for $SAGE_ROOT/spkg/standard/deps
 
@@ -817,7 +817,7 @@ A better version of deps, which ensures things depend on the 4 base packages - b
 archive/issue_comments_087723.json:
 ```json
 {
-    "body": "Attachment\n\nChanges between the deps file here, and what I think is a better version - more relieable",
+    "body": "Attachment [deps.better](tarball://root/attachments/some-uuid/ticket9312/deps.better) by drkirkby created at 2010-07-05 20:54:11\n\nChanges between the deps file here, and what I think is a better version - more relieable",
     "created_at": "2010-07-05T20:54:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9312",
     "type": "issue_comment",
@@ -826,7 +826,7 @@ archive/issue_comments_087723.json:
 }
 ```
 
-Attachment
+Attachment [deps.better](tarball://root/attachments/some-uuid/ticket9312/deps.better) by drkirkby created at 2010-07-05 20:54:11
 
 Changes between the deps file here, and what I think is a better version - more relieable
 
@@ -837,7 +837,7 @@ Changes between the deps file here, and what I think is a better version - more 
 archive/issue_comments_087724.json:
 ```json
 {
-    "body": "Attachment\n\nsame file, but with a .txt extension, as I could not see it in my browser. Hopefully .txt should be easy for comparision of the two files",
+    "body": "Attachment [deps.better.diff](tarball://root/attachments/some-uuid/ticket9312/deps.better.diff) by drkirkby created at 2010-07-05 21:12:30\n\nsame file, but with a .txt extension, as I could not see it in my browser. Hopefully .txt should be easy for comparision of the two files",
     "created_at": "2010-07-05T21:12:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9312",
     "type": "issue_comment",
@@ -846,7 +846,7 @@ archive/issue_comments_087724.json:
 }
 ```
 
-Attachment
+Attachment [deps.better.diff](tarball://root/attachments/some-uuid/ticket9312/deps.better.diff) by drkirkby created at 2010-07-05 21:12:30
 
 same file, but with a .txt extension, as I could not see it in my browser. Hopefully .txt should be easy for comparision of the two files
 
@@ -857,7 +857,7 @@ same file, but with a .txt extension, as I could not see it in my browser. Hopef
 archive/issue_comments_087725.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [deps.better.diff.txt](tarball://root/attachments/some-uuid/ticket9312/deps.better.diff.txt) by drkirkby created at 2010-07-05 21:13:55",
     "created_at": "2010-07-05T21:13:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9312",
     "type": "issue_comment",
@@ -866,7 +866,7 @@ archive/issue_comments_087725.json:
 }
 ```
 
-Attachment
+Attachment [deps.better.diff.txt](tarball://root/attachments/some-uuid/ticket9312/deps.better.diff.txt) by drkirkby created at 2010-07-05 21:13:55
 
 
 
@@ -914,7 +914,7 @@ Nope. This is part of #9274, and belongs there.
 archive/issue_comments_087728.json:
 ```json
 {
-    "body": "Attachment\n\nA new patch to remove the #optional GLPK from Sage's code.\n\nI know 2 or 3 are still missing in other files, which I will remove later in another patch to simplify - now useless - code. I leave them here for the moment as touching it would conflict with other patches already written.\n\nNathann",
+    "body": "Attachment [trac_9312-optional.patch](tarball://root/attachments/some-uuid/ticket9312/trac_9312-optional.patch) by ncohen created at 2010-07-05 22:01:56\n\nA new patch to remove the #optional GLPK from Sage's code.\n\nI know 2 or 3 are still missing in other files, which I will remove later in another patch to simplify - now useless - code. I leave them here for the moment as touching it would conflict with other patches already written.\n\nNathann",
     "created_at": "2010-07-05T22:01:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9312",
     "type": "issue_comment",
@@ -923,7 +923,7 @@ archive/issue_comments_087728.json:
 }
 ```
 
-Attachment
+Attachment [trac_9312-optional.patch](tarball://root/attachments/some-uuid/ticket9312/trac_9312-optional.patch) by ncohen created at 2010-07-05 22:01:56
 
 A new patch to remove the #optional GLPK from Sage's code.
 

@@ -183,7 +183,7 @@ Resolution: fixed
 archive/issue_comments_016478.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2435-integer-fix.patch](tarball://root/attachments/some-uuid/ticket2435/2435-integer-fix.patch) by was created at 2008-03-11 15:41:39",
     "created_at": "2008-03-11T15:41:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2435",
     "type": "issue_comment",
@@ -192,7 +192,7 @@ archive/issue_comments_016478.json:
 }
 ```
 
-Attachment
+Attachment [2435-integer-fix.patch](tarball://root/attachments/some-uuid/ticket2435/2435-integer-fix.patch) by was created at 2008-03-11 15:41:39
 
 
 

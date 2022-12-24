@@ -106,7 +106,7 @@ This also fixes #5468.
 archive/issue_comments_025528.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3617.patch](tarball://root/attachments/some-uuid/ticket3617/trac_3617.patch) by mhansen created at 2010-01-20 05:51:43",
     "created_at": "2010-01-20T05:51:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3617",
     "type": "issue_comment",
@@ -115,7 +115,7 @@ archive/issue_comments_025528.json:
 }
 ```
 
-Attachment
+Attachment [trac_3617.patch](tarball://root/attachments/some-uuid/ticket3617/trac_3617.patch) by mhansen created at 2010-01-20 05:51:43
 
 
 

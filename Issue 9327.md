@@ -84,7 +84,7 @@ For my purposes the simple API seems to work after applying my fixes (this is lo
 archive/issue_comments_087982.json:
 ```json
 {
-    "body": "Attachment\n\nThe bugfixes mentioned above as a patch file",
+    "body": "Attachment [simple_api.patch](tarball://root/attachments/some-uuid/ticket9327/simple_api.patch) by dpoetzsch created at 2010-06-28 08:32:03\n\nThe bugfixes mentioned above as a patch file",
     "created_at": "2010-06-28T08:32:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9327",
     "type": "issue_comment",
@@ -93,7 +93,7 @@ archive/issue_comments_087982.json:
 }
 ```
 
-Attachment
+Attachment [simple_api.patch](tarball://root/attachments/some-uuid/ticket9327/simple_api.patch) by dpoetzsch created at 2010-06-28 08:32:03
 
 The bugfixes mentioned above as a patch file
 
@@ -140,7 +140,7 @@ Changing status from new to needs_review.
 archive/issue_comments_087985.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [twist.py](tarball://root/attachments/some-uuid/ticket9327/twist.py) by rlm created at 2010-07-06 11:53:53",
     "created_at": "2010-07-06T11:53:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9327",
     "type": "issue_comment",
@@ -149,7 +149,7 @@ archive/issue_comments_087985.json:
 }
 ```
 
-Attachment
+Attachment [twist.py](tarball://root/attachments/some-uuid/ticket9327/twist.py) by rlm created at 2010-07-06 11:53:53
 
 
 

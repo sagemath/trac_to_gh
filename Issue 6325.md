@@ -90,7 +90,7 @@ Patch applies fine to 4.0.2.rc1 and passes sage -tp 1 SAGE_ROOT/devel/sage/doc/e
 archive/issue_comments_050480.json:
 ```json
 {
-    "body": "Attachment\n\napplies to 4.0.2.rc1",
+    "body": "Attachment [trac_6325.patch](tarball://root/attachments/some-uuid/ticket6325/trac_6325.patch) by wdj created at 2009-06-17 12:56:57\n\napplies to 4.0.2.rc1",
     "created_at": "2009-06-17T12:56:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6325",
     "type": "issue_comment",
@@ -99,7 +99,7 @@ archive/issue_comments_050480.json:
 }
 ```
 
-Attachment
+Attachment [trac_6325.patch](tarball://root/attachments/some-uuid/ticket6325/trac_6325.patch) by wdj created at 2009-06-17 12:56:57
 
 applies to 4.0.2.rc1
 

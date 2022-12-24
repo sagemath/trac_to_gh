@@ -53,7 +53,7 @@ Script to prepend coding to .py(x) files.  Not a patch.
 archive/issue_comments_054948.json:
 ```json
 {
-    "body": "Attachment\n\nFrom my brief experience with Unicode in SageNB sources (#7249 adds them to doctests), we may just need to\n\n* Prepend `# -*- coding: utf-8 -*-` to every .py file.  I assume we should do this for .pyx files, too.  I've attached a [attachment:prependify.py script] that can do this, although I'm sure there are more succinct ways.\n\n* Use `unicode` strings for docstrings that contain non-ASCII Unicode characters.  For example,\n\n```python\ndef f(n):\n    u\"\"\"\n    Transmogrifies ``n``, heinously. \u263a\n    \"\"\"\n    return transmogrify(n, algorithm='heinous')\n```\n\n\nNote: At #8000, Minh suggested polling sage-devel about allowing non-ASCII characters in Sage library code.  I'll try to do this soon.",
+    "body": "Attachment [prependify.py](tarball://root/attachments/some-uuid/ticket6682/prependify.py) by mpatel created at 2010-01-21 04:47:22\n\nFrom my brief experience with Unicode in SageNB sources (#7249 adds them to doctests), we may just need to\n\n* Prepend `# -*- coding: utf-8 -*-` to every .py file.  I assume we should do this for .pyx files, too.  I've attached a [attachment:prependify.py script] that can do this, although I'm sure there are more succinct ways.\n\n* Use `unicode` strings for docstrings that contain non-ASCII Unicode characters.  For example,\n\n```python\ndef f(n):\n    u\"\"\"\n    Transmogrifies ``n``, heinously. \u263a\n    \"\"\"\n    return transmogrify(n, algorithm='heinous')\n```\n\n\nNote: At #8000, Minh suggested polling sage-devel about allowing non-ASCII characters in Sage library code.  I'll try to do this soon.",
     "created_at": "2010-01-21T04:47:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6682",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_054948.json:
 }
 ```
 
-Attachment
+Attachment [prependify.py](tarball://root/attachments/some-uuid/ticket6682/prependify.py) by mpatel created at 2010-01-21 04:47:22
 
 From my brief experience with Unicode in SageNB sources (#7249 adds them to doctests), we may just need to
 

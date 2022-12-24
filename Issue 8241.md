@@ -245,7 +245,7 @@ Ping. (#11586, which has positive review, depends on this one.)
 archive/issue_comments_072863.json:
 ```json
 {
-    "body": "Attachment\n\nAs Sebastian Pancratz noted in his talk, it would be great if someone wrote a better implementation of this.",
+    "body": "Attachment [8241.patch](tarball://root/attachments/some-uuid/ticket8241/8241.patch) by roed created at 2012-02-21 12:33:12\n\nAs Sebastian Pancratz noted in his talk, it would be great if someone wrote a better implementation of this.",
     "created_at": "2012-02-21T12:33:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8241",
     "type": "issue_comment",
@@ -254,7 +254,7 @@ archive/issue_comments_072863.json:
 }
 ```
 
-Attachment
+Attachment [8241.patch](tarball://root/attachments/some-uuid/ticket8241/8241.patch) by roed created at 2012-02-21 12:33:12
 
 As Sebastian Pancratz noted in his talk, it would be great if someone wrote a better implementation of this.
 
@@ -349,7 +349,7 @@ Looks good to me.  I've created #12657: write a more efficient implementation of
 archive/issue_comments_072868.json:
 ```json
 {
-    "body": "Attachment\n\nApply only this patch. Patch against 5.0.beta7",
+    "body": "Attachment [trac_8241-frobenius.patch](tarball://root/attachments/some-uuid/ticket8241/trac_8241-frobenius.patch) by davidloeffler created at 2012-03-12 19:47:42\n\nApply only this patch. Patch against 5.0.beta7",
     "created_at": "2012-03-12T19:47:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8241",
     "type": "issue_comment",
@@ -358,7 +358,7 @@ archive/issue_comments_072868.json:
 }
 ```
 
-Attachment
+Attachment [trac_8241-frobenius.patch](tarball://root/attachments/some-uuid/ticket8241/trac_8241-frobenius.patch) by davidloeffler created at 2012-03-12 19:47:42
 
 Apply only this patch. Patch against 5.0.beta7
 

@@ -132,7 +132,7 @@ Error: no write access to build directory /Users/palmieri/Desktop/Sage_stuff/sag
 archive/issue_comments_045791.json:
 ```json
 {
-    "body": "Attachment\n\nOK, fixed.",
+    "body": "Attachment [5825_install_perm.patch](tarball://root/attachments/some-uuid/ticket5825/5825_install_perm.patch) by jdemeyer created at 2013-05-22 08:47:36\n\nOK, fixed.",
     "created_at": "2013-05-22T08:47:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5825",
     "type": "issue_comment",
@@ -141,7 +141,7 @@ archive/issue_comments_045791.json:
 }
 ```
 
-Attachment
+Attachment [5825_install_perm.patch](tarball://root/attachments/some-uuid/ticket5825/5825_install_perm.patch) by jdemeyer created at 2013-05-22 08:47:36
 
 OK, fixed.
 

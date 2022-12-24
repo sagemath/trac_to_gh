@@ -248,7 +248,7 @@ I can't figure out quite which upgrade did it, though I found several possible s
 archive/issue_comments_012174.json:
 ```json
 {
-    "body": "Attachment\n\nApply [attachment:trac_1920-verify.patch].  I couldn't find a better place to add this... and if someone knows that this is already tested, please let me know.  I did a grep through the Sage library for plotting the 0 function, but of course if it is more like my test, then one could never find it.",
+    "body": "Attachment [trac_1920-verify.patch](tarball://root/attachments/some-uuid/ticket1920/trac_1920-verify.patch) by kcrisman created at 2012-07-07 03:55:00\n\nApply [attachment:trac_1920-verify.patch].  I couldn't find a better place to add this... and if someone knows that this is already tested, please let me know.  I did a grep through the Sage library for plotting the 0 function, but of course if it is more like my test, then one could never find it.",
     "created_at": "2012-07-07T03:55:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1920",
     "type": "issue_comment",
@@ -257,7 +257,7 @@ archive/issue_comments_012174.json:
 }
 ```
 
-Attachment
+Attachment [trac_1920-verify.patch](tarball://root/attachments/some-uuid/ticket1920/trac_1920-verify.patch) by kcrisman created at 2012-07-07 03:55:00
 
 Apply [attachment:trac_1920-verify.patch].  I couldn't find a better place to add this... and if someone knows that this is already tested, please let me know.  I did a grep through the Sage library for plotting the 0 function, but of course if it is more like my test, then one could never find it.
 

@@ -92,7 +92,7 @@ Apply to pari-2.4.3.svn-12577.p4.spkg. Note that added/changed files in `patches
 archive/issue_comments_097339.json:
 ```json
 {
-    "body": "Attachment\n\nDiff of files in `patches/files`. Apply with `patch -p1` inside spkg directory.",
+    "body": "Attachment [trac_9860-pari-2.4.3.svn-12577.p4-p5.spkg.patch](tarball://root/attachments/some-uuid/ticket9860/trac_9860-pari-2.4.3.svn-12577.p4-p5.spkg.patch) by leif created at 2010-09-06 12:12:47\n\nDiff of files in `patches/files`. Apply with `patch -p1` inside spkg directory.",
     "created_at": "2010-09-06T12:12:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9859",
     "type": "issue_comment",
@@ -101,7 +101,7 @@ archive/issue_comments_097339.json:
 }
 ```
 
-Attachment
+Attachment [trac_9860-pari-2.4.3.svn-12577.p4-p5.spkg.patch](tarball://root/attachments/some-uuid/ticket9860/trac_9860-pari-2.4.3.svn-12577.p4-p5.spkg.patch) by leif created at 2010-09-06 12:12:47
 
 Diff of files in `patches/files`. Apply with `patch -p1` inside spkg directory.
 
@@ -130,7 +130,7 @@ Changing status from new to needs_review.
 archive/issue_comments_097341.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9860-patched_files_not_under_revision_control.p4-p5.spkg.diff](tarball://root/attachments/some-uuid/ticket9860/trac_9860-patched_files_not_under_revision_control.p4-p5.spkg.diff) by leif created at 2010-09-06 12:38:46",
     "created_at": "2010-09-06T12:38:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9859",
     "type": "issue_comment",
@@ -139,7 +139,7 @@ archive/issue_comments_097341.json:
 }
 ```
 
-Attachment
+Attachment [trac_9860-patched_files_not_under_revision_control.p4-p5.spkg.diff](tarball://root/attachments/some-uuid/ticket9860/trac_9860-patched_files_not_under_revision_control.p4-p5.spkg.diff) by leif created at 2010-09-06 12:38:46
 
 
 
@@ -340,7 +340,7 @@ I will now make a new 4.6-prealpha4 based on 4.5.3-rc0 with the new spkgs (I wil
 archive/issue_comments_097348.json:
 ```json
 {
-    "body": "Attachment\n\nAdditional spkg patches by me",
+    "body": "Attachment [pari.p5.patch](tarball://root/attachments/some-uuid/ticket9860/pari.p5.patch) by jdemeyer created at 2010-09-06 19:32:01\n\nAdditional spkg patches by me",
     "created_at": "2010-09-06T19:32:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9859",
     "type": "issue_comment",
@@ -349,7 +349,7 @@ archive/issue_comments_097348.json:
 }
 ```
 
-Attachment
+Attachment [pari.p5.patch](tarball://root/attachments/some-uuid/ticket9860/pari.p5.patch) by jdemeyer created at 2010-09-06 19:32:01
 
 Additional spkg patches by me
 

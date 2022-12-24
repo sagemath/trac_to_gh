@@ -309,7 +309,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_013800.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:8 jpflori]:\n> Jeroen please decide what to do.\nWhy should I?  *You* should decide if you want this:\na. as standard package (which requires a discussion on `sage-devel` and changes to `spkg/standard/deps`)\nb. as optional package (but then NTL needs to work both with and without `gf2x`)\nc. not at all",
+    "body": "Attachment [ntl-5.5.2.p1.diff](tarball://root/attachments/some-uuid/ticket2114/ntl-5.5.2.p1.diff) by jdemeyer created at 2013-06-04 20:08:31\n\nReplying to [comment:8 jpflori]:\n> Jeroen please decide what to do.\nWhy should I?  *You* should decide if you want this:\na. as standard package (which requires a discussion on `sage-devel` and changes to `spkg/standard/deps`)\nb. as optional package (but then NTL needs to work both with and without `gf2x`)\nc. not at all",
     "created_at": "2013-06-04T20:08:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
@@ -318,7 +318,7 @@ archive/issue_comments_013800.json:
 }
 ```
 
-Attachment
+Attachment [ntl-5.5.2.p1.diff](tarball://root/attachments/some-uuid/ticket2114/ntl-5.5.2.p1.diff) by jdemeyer created at 2013-06-04 20:08:31
 
 Replying to [comment:8 jpflori]:
 > Jeroen please decide what to do.
@@ -1087,7 +1087,7 @@ I'm aware that we always print the patching message, it saves a few lines of scr
 archive/issue_comments_013834.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_2114-gf2x.patch](tarball://root/attachments/some-uuid/ticket2114/trac_2114-gf2x.patch) by jpflori created at 2013-06-06 09:52:26",
     "created_at": "2013-06-06T09:52:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
@@ -1096,7 +1096,7 @@ archive/issue_comments_013834.json:
 }
 ```
 
-Attachment
+Attachment [trac_2114-gf2x.patch](tarball://root/attachments/some-uuid/ticket2114/trac_2114-gf2x.patch) by jpflori created at 2013-06-06 09:52:26
 
 
 
@@ -1566,7 +1566,7 @@ Spkg diff, for review only.
 archive/issue_comments_013857.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [gf2x-1.1.diff](tarball://root/attachments/some-uuid/ticket2114/gf2x-1.1.diff) by jdemeyer created at 2013-06-08 11:28:40",
     "created_at": "2013-06-08T11:28:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
@@ -1575,7 +1575,7 @@ archive/issue_comments_013857.json:
 }
 ```
 
-Attachment
+Attachment [gf2x-1.1.diff](tarball://root/attachments/some-uuid/ticket2114/gf2x-1.1.diff) by jdemeyer created at 2013-06-08 11:28:40
 
 
 
@@ -1584,7 +1584,7 @@ Attachment
 archive/issue_comments_013858.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:61 leif]:\n> You didn't fix \"gf2x is a C/C+ software package\" though... ;-)\nFixed now.\n\n> Could you attach a diff of **your** changes?\n[attachment:gf2x-1.1-jdemeyer.diff]",
+    "body": "Attachment [gf2x-1.1-jdemeyer.diff](tarball://root/attachments/some-uuid/ticket2114/gf2x-1.1-jdemeyer.diff) by jdemeyer created at 2013-06-08 11:29:22\n\nReplying to [comment:61 leif]:\n> You didn't fix \"gf2x is a C/C+ software package\" though... ;-)\nFixed now.\n\n> Could you attach a diff of **your** changes?\n[attachment:gf2x-1.1-jdemeyer.diff]",
     "created_at": "2013-06-08T11:29:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
@@ -1593,7 +1593,7 @@ archive/issue_comments_013858.json:
 }
 ```
 
-Attachment
+Attachment [gf2x-1.1-jdemeyer.diff](tarball://root/attachments/some-uuid/ticket2114/gf2x-1.1-jdemeyer.diff) by jdemeyer created at 2013-06-08 11:29:22
 
 Replying to [comment:61 leif]:
 > You didn't fix "gf2x is a C/C+ software package" though... ;-)

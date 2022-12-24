@@ -47,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9436
 archive/issue_comments_090325.json:
 ```json
 {
-    "body": "Attachment\n\nIncludes zodb3's requirements in the package.",
+    "body": "Attachment [trac_9436-zodb3-requirements-package.patch](tarball://root/attachments/some-uuid/ticket9436/trac_9436-zodb3-requirements-package.patch) by timdumol created at 2010-07-06 14:22:17\n\nIncludes zodb3's requirements in the package.",
     "created_at": "2010-07-06T14:22:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9436",
     "type": "issue_comment",
@@ -56,7 +56,7 @@ archive/issue_comments_090325.json:
 }
 ```
 
-Attachment
+Attachment [trac_9436-zodb3-requirements-package.patch](tarball://root/attachments/some-uuid/ticket9436/trac_9436-zodb3-requirements-package.patch) by timdumol created at 2010-07-06 14:22:17
 
 Includes zodb3's requirements in the package.
 

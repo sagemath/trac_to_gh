@@ -279,7 +279,7 @@ Well, actually I did. But I should be done now, unless I notice a test failure.
 archive/issue_comments_077525.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8562-category-integer_mod_ring-nt.patch](tarball://root/attachments/some-uuid/ticket8562/trac_8562-category-integer_mod_ring-nt.patch) by nthiery created at 2010-03-22 22:24:12",
     "created_at": "2010-03-22T22:24:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_comment",
@@ -288,7 +288,7 @@ archive/issue_comments_077525.json:
 }
 ```
 
-Attachment
+Attachment [trac_8562-category-integer_mod_ring-nt.patch](tarball://root/attachments/some-uuid/ticket8562/trac_8562-category-integer_mod_ring-nt.patch) by nthiery created at 2010-03-22 22:24:12
 
 
 
@@ -392,7 +392,7 @@ rebased version. apply only this patch.
 archive/issue_comments_077530.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8562-rebased.patch](tarball://root/attachments/some-uuid/ticket8562/trac_8562-rebased.patch) by jhpalmieri created at 2010-06-21 20:37:58",
     "created_at": "2010-06-21T20:37:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_comment",
@@ -401,7 +401,7 @@ archive/issue_comments_077530.json:
 }
 ```
 
-Attachment
+Attachment [trac_8562-rebased.patch](tarball://root/attachments/some-uuid/ticket8562/trac_8562-rebased.patch) by jhpalmieri created at 2010-06-21 20:37:58
 
 
 

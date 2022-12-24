@@ -51,7 +51,7 @@ Changing status from new to needs_review.
 archive/issue_comments_079429.json:
 ```json
 {
-    "body": "Attachment\n\nattachment:trac_8708-doctest_quotes.patch fixes this problem.",
+    "body": "Attachment [trac_8708-doctest_quotes.patch](tarball://root/attachments/some-uuid/ticket8708/trac_8708-doctest_quotes.patch) by burcin created at 2011-08-11 08:41:37\n\nattachment:trac_8708-doctest_quotes.patch fixes this problem.",
     "created_at": "2011-08-11T08:41:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_079429.json:
 }
 ```
 
-Attachment
+Attachment [trac_8708-doctest_quotes.patch](tarball://root/attachments/some-uuid/ticket8708/trac_8708-doctest_quotes.patch) by burcin created at 2011-08-11 08:41:37
 
 attachment:trac_8708-doctest_quotes.patch fixes this problem.
 
@@ -193,7 +193,7 @@ I'll also add an example like this to the testing file.
 archive/issue_comments_079433.json:
 ```json
 {
-    "body": "Attachment\n\napply to scripts repo",
+    "body": "Attachment [trac_8708-jhp.patch](tarball://root/attachments/some-uuid/ticket8708/trac_8708-jhp.patch) by jhpalmieri created at 2011-08-16 15:17:56\n\napply to scripts repo",
     "created_at": "2011-08-16T15:17:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
@@ -202,7 +202,7 @@ archive/issue_comments_079433.json:
 }
 ```
 
-Attachment
+Attachment [trac_8708-jhp.patch](tarball://root/attachments/some-uuid/ticket8708/trac_8708-jhp.patch) by jhpalmieri created at 2011-08-16 15:17:56
 
 apply to scripts repo
 
@@ -213,7 +213,7 @@ apply to scripts repo
 archive/issue_comments_079434.json:
 ```json
 {
-    "body": "Attachment\n\nsmall Python file for testing purposes",
+    "body": "Attachment [trac_8708-testing.py](tarball://root/attachments/some-uuid/ticket8708/trac_8708-testing.py) by jhpalmieri created at 2011-08-16 15:18:08\n\nsmall Python file for testing purposes",
     "created_at": "2011-08-16T15:18:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
@@ -222,7 +222,7 @@ archive/issue_comments_079434.json:
 }
 ```
 
-Attachment
+Attachment [trac_8708-testing.py](tarball://root/attachments/some-uuid/ticket8708/trac_8708-testing.py) by jhpalmieri created at 2011-08-16 15:18:08
 
 small Python file for testing purposes
 
@@ -731,7 +731,7 @@ apply to scripts repo
 archive/issue_comments_079451.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:15 jhpalmieri]:\n> Okay, I've done that now.\n\nThanks; just the commit message there refers to this ticket (and its subject), i.e., is unrelated.\n\n> #9739 is still marked as closed, by the way.  I didn't reopen it.\n\nUnless nobody else reopens or closes tickets, or attaches files to / updates files on tickets I've already closed (and I didn't ask him to) I don't really care.\n\nReopening tickets IMHO only makes sense if I'm going to actually back it out.",
+    "body": "Attachment [trac_8708-jhp.v2.patch](tarball://root/attachments/some-uuid/ticket8708/trac_8708-jhp.v2.patch) by leif created at 2011-09-28 01:05:48\n\nReplying to [comment:15 jhpalmieri]:\n> Okay, I've done that now.\n\nThanks; just the commit message there refers to this ticket (and its subject), i.e., is unrelated.\n\n> #9739 is still marked as closed, by the way.  I didn't reopen it.\n\nUnless nobody else reopens or closes tickets, or attaches files to / updates files on tickets I've already closed (and I didn't ask him to) I don't really care.\n\nReopening tickets IMHO only makes sense if I'm going to actually back it out.",
     "created_at": "2011-09-28T01:05:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
@@ -740,7 +740,7 @@ archive/issue_comments_079451.json:
 }
 ```
 
-Attachment
+Attachment [trac_8708-jhp.v2.patch](tarball://root/attachments/some-uuid/ticket8708/trac_8708-jhp.v2.patch) by leif created at 2011-09-28 01:05:48
 
 Replying to [comment:15 jhpalmieri]:
 > Okay, I've done that now.
@@ -882,7 +882,7 @@ The problem with library_cython.pyx should be dealt with at #11871, so I'm makin
 archive/issue_comments_079457.json:
 ```json
 {
-    "body": "Attachment\n\nSage repository",
+    "body": "Attachment [trac_8708-doctests.patch](tarball://root/attachments/some-uuid/ticket8708/trac_8708-doctests.patch) by jhpalmieri created at 2011-09-29 18:55:57\n\nSage repository",
     "created_at": "2011-09-29T18:55:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
@@ -891,7 +891,7 @@ archive/issue_comments_079457.json:
 }
 ```
 
-Attachment
+Attachment [trac_8708-doctests.patch](tarball://root/attachments/some-uuid/ticket8708/trac_8708-doctests.patch) by jhpalmieri created at 2011-09-29 18:55:57
 
 Sage repository
 

@@ -71,7 +71,7 @@ Changing status from new to assigned.
 archive/issue_comments_054011.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6597_set_morphism_doc_pickling.patch](tarball://root/attachments/some-uuid/ticket6597/trac_6597_set_morphism_doc_pickling.patch) by nthiery created at 2009-09-02 15:17:04",
     "created_at": "2009-09-02T15:17:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6597",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_054011.json:
 }
 ```
 
-Attachment
+Attachment [trac_6597_set_morphism_doc_pickling.patch](tarball://root/attachments/some-uuid/ticket6597/trac_6597_set_morphism_doc_pickling.patch) by nthiery created at 2009-09-02 15:17:04
 
 
 

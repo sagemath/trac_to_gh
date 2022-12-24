@@ -175,7 +175,7 @@ pari-gp code from Tomás Oliveira e Silva
 archive/issue_comments_071545.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [riemann_pi.gp](tarball://root/attachments/some-uuid/ticket8135/riemann_pi.gp) by kevin.stueve created at 2010-01-31 07:19:28",
     "created_at": "2010-01-31T07:19:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8135",
     "type": "issue_comment",
@@ -184,7 +184,7 @@ archive/issue_comments_071545.json:
 }
 ```
 
-Attachment
+Attachment [riemann_pi.gp](tarball://root/attachments/some-uuid/ticket8135/riemann_pi.gp) by kevin.stueve created at 2010-01-31 07:19:28
 
 
 
@@ -193,7 +193,7 @@ Attachment
 archive/issue_comments_071546.json:
 ```json
 {
-    "body": "Attachment\n\nrewrote TOS's riemann_pi.gp in python (paste into cell)",
+    "body": "Attachment [riemann_pi.sage](tarball://root/attachments/some-uuid/ticket8135/riemann_pi.sage) by kevin.stueve created at 2010-02-04 06:56:10\n\nrewrote TOS's riemann_pi.gp in python (paste into cell)",
     "created_at": "2010-02-04T06:56:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8135",
     "type": "issue_comment",
@@ -202,7 +202,7 @@ archive/issue_comments_071546.json:
 }
 ```
 
-Attachment
+Attachment [riemann_pi.sage](tarball://root/attachments/some-uuid/ticket8135/riemann_pi.sage) by kevin.stueve created at 2010-02-04 06:56:10
 
 rewrote TOS's riemann_pi.gp in python (paste into cell)
 
@@ -233,7 +233,7 @@ Kevin Stueve
 archive/issue_comments_071548.json:
 ```json
 {
-    "body": "Attachment\n\nRewrote periodic terms in C with real and imaginary components calculated individually",
+    "body": "Attachment [li.c](tarball://root/attachments/some-uuid/ticket8135/li.c) by kevin.stueve created at 2010-03-31 08:48:59\n\nRewrote periodic terms in C with real and imaginary components calculated individually",
     "created_at": "2010-03-31T08:48:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8135",
     "type": "issue_comment",
@@ -242,6 +242,6 @@ archive/issue_comments_071548.json:
 }
 ```
 
-Attachment
+Attachment [li.c](tarball://root/attachments/some-uuid/ticket8135/li.c) by kevin.stueve created at 2010-03-31 08:48:59
 
 Rewrote periodic terms in C with real and imaginary components calculated individually

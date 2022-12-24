@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9125
 archive/issue_comments_084878.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9125-projective-space.patch](tarball://root/attachments/some-uuid/ticket9125/trac_9125-projective-space.patch) by jhpalmieri created at 2010-06-03 04:14:15",
     "created_at": "2010-06-03T04:14:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9125",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_084878.json:
 }
 ```
 
-Attachment
+Attachment [trac_9125-projective-space.patch](tarball://root/attachments/some-uuid/ticket9125/trac_9125-projective-space.patch) by jhpalmieri created at 2010-06-03 04:14:15
 
 
 
@@ -428,7 +428,7 @@ apply on top of other patch
 archive/issue_comments_084897.json:
 ```json
 {
-    "body": "Attachment\n\nCan this get reviewed soon?  The original patch was reviewed positively already, so I think only \"trac_9125-doctest-fix.patch\" needs to be reviewed.  That one just marks some doctests as being \"long time\" or \"optional - CHomP\", so I think it should be easy to review.",
+    "body": "Attachment [trac_9125-doctest-fix.patch](tarball://root/attachments/some-uuid/ticket9125/trac_9125-doctest-fix.patch) by jhpalmieri created at 2010-12-15 19:04:53\n\nCan this get reviewed soon?  The original patch was reviewed positively already, so I think only \"trac_9125-doctest-fix.patch\" needs to be reviewed.  That one just marks some doctests as being \"long time\" or \"optional - CHomP\", so I think it should be easy to review.",
     "created_at": "2010-12-15T19:04:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9125",
     "type": "issue_comment",
@@ -437,7 +437,7 @@ archive/issue_comments_084897.json:
 }
 ```
 
-Attachment
+Attachment [trac_9125-doctest-fix.patch](tarball://root/attachments/some-uuid/ticket9125/trac_9125-doctest-fix.patch) by jhpalmieri created at 2010-12-15 19:04:53
 
 Can this get reviewed soon?  The original patch was reviewed positively already, so I think only "trac_9125-doctest-fix.patch" needs to be reviewed.  That one just marks some doctests as being "long time" or "optional - CHomP", so I think it should be easy to review.
 
@@ -509,7 +509,7 @@ Use instead of previous doctest patch
 archive/issue_comments_084900.json:
 ```json
 {
-    "body": "Attachment\n\nOops, I forgot to fold so my patch is only cumulative with respect to trac_9125-doctest-fix.patch.",
+    "body": "Attachment [trac_9125-cumulative-doctest.patch](tarball://root/attachments/some-uuid/ticket9125/trac_9125-cumulative-doctest.patch) by mhampton created at 2011-03-28 11:50:21\n\nOops, I forgot to fold so my patch is only cumulative with respect to trac_9125-doctest-fix.patch.",
     "created_at": "2011-03-28T11:50:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9125",
     "type": "issue_comment",
@@ -518,7 +518,7 @@ archive/issue_comments_084900.json:
 }
 ```
 
-Attachment
+Attachment [trac_9125-cumulative-doctest.patch](tarball://root/attachments/some-uuid/ticket9125/trac_9125-cumulative-doctest.patch) by mhampton created at 2011-03-28 11:50:21
 
 Oops, I forgot to fold so my patch is only cumulative with respect to trac_9125-doctest-fix.patch.
 

@@ -250,7 +250,7 @@ Changing priority from critical to minor.
 archive/issue_comments_045821.json:
 ```json
 {
-    "body": "Attachment\n\nYou are right, \n\nI have updated the patch accordingly.\n\nThanks",
+    "body": "Attachment [trac_5828_already_solved.patch](tarball://root/attachments/some-uuid/ticket5828/trac_5828_already_solved.patch) by lftabera created at 2010-07-26 12:52:15\n\nYou are right, \n\nI have updated the patch accordingly.\n\nThanks",
     "created_at": "2010-07-26T12:52:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5828",
     "type": "issue_comment",
@@ -259,7 +259,7 @@ archive/issue_comments_045821.json:
 }
 ```
 
-Attachment
+Attachment [trac_5828_already_solved.patch](tarball://root/attachments/some-uuid/ticket5828/trac_5828_already_solved.patch) by lftabera created at 2010-07-26 12:52:15
 
 You are right, 
 

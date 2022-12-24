@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5116
 archive/issue_comments_039101.json:
 ```json
 {
-    "body": "Attachment\n\n* builds/checks/doctests clean on sage.math (Linux 64-bit)\n  * builds/checks/doctests clean on bsd (OSX 32-bit)\n  * builds/checks/doctests clean on iras (Linux IA-64)\n\nNote that the SPKG has `make check` enabled.",
+    "body": "Attachment [m4ri_200901.patch](tarball://root/attachments/some-uuid/ticket5116/m4ri_200901.patch) by malb created at 2009-01-28 13:15:21\n\n* builds/checks/doctests clean on sage.math (Linux 64-bit)\n  * builds/checks/doctests clean on bsd (OSX 32-bit)\n  * builds/checks/doctests clean on iras (Linux IA-64)\n\nNote that the SPKG has `make check` enabled.",
     "created_at": "2009-01-28T13:15:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5116",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_039101.json:
 }
 ```
 
-Attachment
+Attachment [m4ri_200901.patch](tarball://root/attachments/some-uuid/ticket5116/m4ri_200901.patch) by malb created at 2009-01-28 13:15:21
 
 * builds/checks/doctests clean on sage.math (Linux 64-bit)
   * builds/checks/doctests clean on bsd (OSX 32-bit)

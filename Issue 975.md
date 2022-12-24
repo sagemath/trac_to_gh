@@ -220,7 +220,7 @@ William
 archive/issue_comments_005948.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [update-environment.patch](tarball://root/attachments/some-uuid/ticket975/update-environment.patch) by jason created at 2007-12-12 00:22:33",
     "created_at": "2007-12-12T00:22:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/975",
     "type": "issue_comment",
@@ -229,7 +229,7 @@ archive/issue_comments_005948.json:
 }
 ```
 
-Attachment
+Attachment [update-environment.patch](tarball://root/attachments/some-uuid/ticket975/update-environment.patch) by jason created at 2007-12-12 00:22:33
 
 
 
@@ -292,7 +292,7 @@ Modifies the browsers returned to use "native-execute".  Use in conjunction with
 archive/issue_comments_005951.json:
 ```json
 {
-    "body": "Attachment\n\nApply to sage-scripts.  Creates new \"native-execute\" command that resets the LD_LIBRARY_PATH variable.",
+    "body": "Attachment [native-execute.patch](tarball://root/attachments/some-uuid/ticket975/native-execute.patch) by jason created at 2008-01-10 05:24:14\n\nApply to sage-scripts.  Creates new \"native-execute\" command that resets the LD_LIBRARY_PATH variable.",
     "created_at": "2008-01-10T05:24:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/975",
     "type": "issue_comment",
@@ -301,7 +301,7 @@ archive/issue_comments_005951.json:
 }
 ```
 
-Attachment
+Attachment [native-execute.patch](tarball://root/attachments/some-uuid/ticket975/native-execute.patch) by jason created at 2008-01-10 05:24:14
 
 Apply to sage-scripts.  Creates new "native-execute" command that resets the LD_LIBRARY_PATH variable.
 

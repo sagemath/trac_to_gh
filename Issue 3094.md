@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3094
 archive/issue_comments_021356.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-debian-package-3.0.1.patch](tarball://root/attachments/some-uuid/ticket3094/sage-debian-package-3.0.1.patch) by tabbott created at 2008-05-03 08:28:40",
     "created_at": "2008-05-03T08:28:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3094",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_021356.json:
 }
 ```
 
-Attachment
+Attachment [sage-debian-package-3.0.1.patch](tarball://root/attachments/some-uuid/ticket3094/sage-debian-package-3.0.1.patch) by tabbott created at 2008-05-03 08:28:40
 
 
 
@@ -67,7 +67,7 @@ I added a second patch that makes it so SAGE can find the cdd tests.
 archive/issue_comments_021358.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-cdd-bin.patch](tarball://root/attachments/some-uuid/ticket3094/sage-cdd-bin.patch) by tabbott created at 2008-05-03 08:36:02",
     "created_at": "2008-05-03T08:36:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3094",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_021358.json:
 }
 ```
 
-Attachment
+Attachment [sage-cdd-bin.patch](tarball://root/attachments/some-uuid/ticket3094/sage-cdd-bin.patch) by tabbott created at 2008-05-03 08:36:02
 
 
 

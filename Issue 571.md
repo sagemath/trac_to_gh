@@ -200,7 +200,7 @@ The attached patch removes the #long.
 archive/issue_comments_002968.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-571-simon-2-descent.patch](tarball://root/attachments/some-uuid/ticket571/trac-571-simon-2-descent.patch) by was created at 2008-01-27 12:54:33",
     "created_at": "2008-01-27T12:54:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/571",
     "type": "issue_comment",
@@ -209,7 +209,7 @@ archive/issue_comments_002968.json:
 }
 ```
 
-Attachment
+Attachment [trac-571-simon-2-descent.patch](tarball://root/attachments/some-uuid/ticket571/trac-571-simon-2-descent.patch) by was created at 2008-01-27 12:54:33
 
 
 

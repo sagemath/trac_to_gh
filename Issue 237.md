@@ -341,7 +341,7 @@ Nathann
 archive/issue_comments_001060.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_237.patch](tarball://root/attachments/some-uuid/ticket237/trac_237.patch) by ncohen created at 2013-04-27 11:18:49",
     "created_at": "2013-04-27T11:18:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/237",
     "type": "issue_comment",
@@ -350,7 +350,7 @@ archive/issue_comments_001060.json:
 }
 ```
 
-Attachment
+Attachment [trac_237.patch](tarball://root/attachments/some-uuid/ticket237/trac_237.patch) by ncohen created at 2013-04-27 11:18:49
 
 
 

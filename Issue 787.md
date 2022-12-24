@@ -36,7 +36,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/787
 archive/issue_comments_004713.json:
 ```json
 {
-    "body": "Attachment\n\nimplementation",
+    "body": "Attachment [fix.patch](tarball://root/attachments/some-uuid/ticket787/fix.patch) by nbruin created at 2007-10-02 13:42:51\n\nimplementation",
     "created_at": "2007-10-02T13:42:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/787",
     "type": "issue_comment",
@@ -45,7 +45,7 @@ archive/issue_comments_004713.json:
 }
 ```
 
-Attachment
+Attachment [fix.patch](tarball://root/attachments/some-uuid/ticket787/fix.patch) by nbruin created at 2007-10-02 13:42:51
 
 implementation
 
@@ -332,7 +332,7 @@ But Q[1] is the quotient map so should have `V.0 + V.1` in its kernel.
 archive/issue_comments_004727.json:
 ```json
 {
-    "body": "Attachment\n\nThis I think correctly really implements quotients of vector spaces.",
+    "body": "Attachment [trac787.patch](tarball://root/attachments/some-uuid/ticket787/trac787.patch) by was created at 2007-12-02 00:47:48\n\nThis I think correctly really implements quotients of vector spaces.",
     "created_at": "2007-12-02T00:47:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/787",
     "type": "issue_comment",
@@ -341,7 +341,7 @@ archive/issue_comments_004727.json:
 }
 ```
 
-Attachment
+Attachment [trac787.patch](tarball://root/attachments/some-uuid/ticket787/trac787.patch) by was created at 2007-12-02 00:47:48
 
 This I think correctly really implements quotients of vector spaces.
 
@@ -352,7 +352,7 @@ This I think correctly really implements quotients of vector spaces.
 archive/issue_comments_004728.json:
 ```json
 {
-    "body": "Attachment\n\nThis is also needed (it fixes a docstring)",
+    "body": "Attachment [trac787-part2.patch](tarball://root/attachments/some-uuid/ticket787/trac787-part2.patch) by was created at 2007-12-02 03:05:01\n\nThis is also needed (it fixes a docstring)",
     "created_at": "2007-12-02T03:05:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/787",
     "type": "issue_comment",
@@ -361,7 +361,7 @@ archive/issue_comments_004728.json:
 }
 ```
 
-Attachment
+Attachment [trac787-part2.patch](tarball://root/attachments/some-uuid/ticket787/trac787-part2.patch) by was created at 2007-12-02 03:05:01
 
 This is also needed (it fixes a docstring)
 
@@ -390,7 +390,7 @@ this is also needed.
 archive/issue_comments_004730.json:
 ```json
 {
-    "body": "Attachment\n\ninstead of applying those three patches, this is a clean bundle.",
+    "body": "Attachment [trac787-bundle.hg](tarball://root/attachments/some-uuid/ticket787/trac787-bundle.hg) by was created at 2007-12-02 03:14:44\n\ninstead of applying those three patches, this is a clean bundle.",
     "created_at": "2007-12-02T03:14:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/787",
     "type": "issue_comment",
@@ -399,7 +399,7 @@ archive/issue_comments_004730.json:
 }
 ```
 
-Attachment
+Attachment [trac787-bundle.hg](tarball://root/attachments/some-uuid/ticket787/trac787-bundle.hg) by was created at 2007-12-02 03:14:44
 
 instead of applying those three patches, this is a clean bundle.
 
@@ -464,7 +464,7 @@ Changes _repr_
 archive/issue_comments_004734.json:
 ```json
 {
-    "body": "Attachment\n\nThis was slightly buggy -- see Trac #1368 for a fix.",
+    "body": "Attachment [trac787-part4.patch](tarball://root/attachments/some-uuid/ticket787/trac787-part4.patch) by was created at 2007-12-02 09:45:48\n\nThis was slightly buggy -- see Trac #1368 for a fix.",
     "created_at": "2007-12-02T09:45:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/787",
     "type": "issue_comment",
@@ -473,6 +473,6 @@ archive/issue_comments_004734.json:
 }
 ```
 
-Attachment
+Attachment [trac787-part4.patch](tarball://root/attachments/some-uuid/ticket787/trac787-part4.patch) by was created at 2007-12-02 09:45:48
 
 This was slightly buggy -- see Trac #1368 for a fix.

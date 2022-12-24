@@ -199,7 +199,7 @@ For whitespace errors, see the file /home/wstein/build/sage-4.0.2.alpha3/tmp/.do
 archive/issue_comments_050523.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6329.patch](tarball://root/attachments/some-uuid/ticket6329/trac_6329.patch) by mariah created at 2011-05-25 18:24:06",
     "created_at": "2011-05-25T18:24:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6329",
     "type": "issue_comment",
@@ -208,7 +208,7 @@ archive/issue_comments_050523.json:
 }
 ```
 
-Attachment
+Attachment [trac_6329.patch](tarball://root/attachments/some-uuid/ticket6329/trac_6329.patch) by mariah created at 2011-05-25 18:24:06
 
 
 
@@ -366,7 +366,7 @@ Mhansen, you're right, the patch Mariah posted is wrong.   I'll post a correct p
 archive/issue_comments_050531.json:
 ```json
 {
-    "body": "Attachment\n\napply only this one",
+    "body": "Attachment [trac_6329.2.patch](tarball://root/attachments/some-uuid/ticket6329/trac_6329.2.patch) by was created at 2011-08-23 05:34:53\n\napply only this one",
     "created_at": "2011-08-23T05:34:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6329",
     "type": "issue_comment",
@@ -375,7 +375,7 @@ archive/issue_comments_050531.json:
 }
 ```
 
-Attachment
+Attachment [trac_6329.2.patch](tarball://root/attachments/some-uuid/ticket6329/trac_6329.2.patch) by was created at 2011-08-23 05:34:53
 
 apply only this one
 

@@ -498,7 +498,7 @@ Viviane, do you want to take this over, should we do that later together, or sho
 archive/issue_comments_079348.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch looks very complete, thanks you!\n\nOne thing I noticed: I would like to be able to reconstruct a tree from its string representation. I.e.,\n\n```\nsage: BinaryTree(\"[., [[., [., .]], .]]\")\n```\n\nUnfortunately, this resulted in an infinite recursion. It would be great if you could fix this.\n\n(I am not yet done with my review...)\n\nCheers, Christian",
+    "body": "Attachment [trac_8703-trees-fh.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-trees-fh.patch) by stumpc5 created at 2013-02-16 11:00:01\n\nThe patch looks very complete, thanks you!\n\nOne thing I noticed: I would like to be able to reconstruct a tree from its string representation. I.e.,\n\n```\nsage: BinaryTree(\"[., [[., [., .]], .]]\")\n```\n\nUnfortunately, this resulted in an infinite recursion. It would be great if you could fix this.\n\n(I am not yet done with my review...)\n\nCheers, Christian",
     "created_at": "2013-02-16T11:00:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
@@ -507,7 +507,7 @@ archive/issue_comments_079348.json:
 }
 ```
 
-Attachment
+Attachment [trac_8703-trees-fh.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-trees-fh.patch) by stumpc5 created at 2013-02-16 11:00:01
 
 The patch looks very complete, thanks you!
 
@@ -587,7 +587,7 @@ Thanks -- I wait for Florent or Fred for approval of your change.
 archive/issue_comments_079352.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:24 stumpc5]:\n> Thanks -- I wait for Florent or Fred for approval of your change.\n\nThanks Viviane for this very good idea ! However, I feel that it should be more documented as well as tested. That's why I revamped your patch in a bigger patch. Please review it knowing that I'm Ok with your changes (the tests I added pass :-).\n\nFlorent",
+    "body": "Attachment [trac_8703-additional-feature-fh.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-additional-feature-fh.patch) by hivert created at 2013-02-18 17:56:56\n\nReplying to [comment:24 stumpc5]:\n> Thanks -- I wait for Florent or Fred for approval of your change.\n\nThanks Viviane for this very good idea ! However, I feel that it should be more documented as well as tested. That's why I revamped your patch in a bigger patch. Please review it knowing that I'm Ok with your changes (the tests I added pass :-).\n\nFlorent",
     "created_at": "2013-02-18T17:56:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
@@ -596,7 +596,7 @@ archive/issue_comments_079352.json:
 }
 ```
 
-Attachment
+Attachment [trac_8703-additional-feature-fh.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-additional-feature-fh.patch) by hivert created at 2013-02-18 17:56:56
 
 Replying to [comment:24 stumpc5]:
 > Thanks -- I wait for Florent or Fred for approval of your change.
@@ -974,7 +974,7 @@ attempting manual override
 archive/issue_comments_079360.json:
 ```json
 {
-    "body": "Attachment\n\nOK, I'm really not getting this:\n\n```\ndarij@travis-virtualbox:~/sage-5.6/devel/sage-combinat$ hg commit\nabort: cannot commit over an applied mq patch\n```\n\n\nAnyway, attaching my changed versions as a tar.gz [trees.tar.gz] containing the three relevant .py files (I only modified docstrings). Sorry for the format :( Hope someone transforms it into a .patch.\n\nHere's something else I'm finding weird:\n\n```\nsage: a = []\nsage: BinaryTree(a)\n[., .]\nsage: b = ()\nsage: BinaryTree(b)\n.\n```\n\nOr shouldn't lists and tuples behave alike here?",
+    "body": "Attachment [trees.tar.gz](tarball://root/attachments/some-uuid/ticket8703/trees.tar.gz) by darij created at 2013-02-20 06:57:22\n\nOK, I'm really not getting this:\n\n```\ndarij@travis-virtualbox:~/sage-5.6/devel/sage-combinat$ hg commit\nabort: cannot commit over an applied mq patch\n```\n\n\nAnyway, attaching my changed versions as a tar.gz [trees.tar.gz] containing the three relevant .py files (I only modified docstrings). Sorry for the format :( Hope someone transforms it into a .patch.\n\nHere's something else I'm finding weird:\n\n```\nsage: a = []\nsage: BinaryTree(a)\n[., .]\nsage: b = ()\nsage: BinaryTree(b)\n.\n```\n\nOr shouldn't lists and tuples behave alike here?",
     "created_at": "2013-02-20T06:57:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
@@ -983,7 +983,7 @@ archive/issue_comments_079360.json:
 }
 ```
 
-Attachment
+Attachment [trees.tar.gz](tarball://root/attachments/some-uuid/ticket8703/trees.tar.gz) by darij created at 2013-02-20 06:57:22
 
 OK, I'm really not getting this:
 
@@ -1297,7 +1297,7 @@ EDIT: Ooops... The changes to ordered_tree.py look weird to me; I certainly did 
 archive/issue_comments_079371.json:
 ```json
 {
-    "body": "Attachment\n\ndocstrings improved. let's see if this works...",
+    "body": "Attachment [trac_8703-trees_addition-dg.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-trees_addition-dg.patch) by darij created at 2013-03-02 08:23:11\n\ndocstrings improved. let's see if this works...",
     "created_at": "2013-03-02T08:23:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
@@ -1306,7 +1306,7 @@ archive/issue_comments_079371.json:
 }
 ```
 
-Attachment
+Attachment [trac_8703-trees_addition-dg.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-trees_addition-dg.patch) by darij created at 2013-03-02 08:23:11
 
 docstrings improved. let's see if this works...
 
@@ -1337,7 +1337,7 @@ Rogue edits are gone (they were due to me incorrectly resolving a conflict with 
 archive/issue_comments_079373.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8703-trees-fh-rebase.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-trees-fh-rebase.patch) by VivianePons created at 2013-03-20 10:16:39",
     "created_at": "2013-03-20T10:16:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
@@ -1346,7 +1346,7 @@ archive/issue_comments_079373.json:
 }
 ```
 
-Attachment
+Attachment [trac_8703-trees-fh-rebase.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-trees-fh-rebase.patch) by VivianePons created at 2013-03-20 10:16:39
 
 
 
@@ -1415,7 +1415,7 @@ Thanks, Frédéric! I was about to tell Viviane not to bother fixing my patch, a
 archive/issue_comments_079377.json:
 ```json
 {
-    "body": "Attachment\n\nThanks a lot Fr\u00e9d\u00e9ric.\n\nI just uploaded a new version of \"additional feature\", it's just a small fix about the \"eval\" function. I was using the \"eval\" function to transform a string into an object, I changed it to use \"litteral_eval\" which is more secured (it won't eval just any python code, it is restricted to simple objects).\n\nOnce the bot is happy, is there anything else to do on this patch or can it go with \"positive review\" ?\n\n for the bot:\n\napply trac_8703-trees-fh-rebase.patch trac_8703-additional-feature-vp.patch trac_8703-trees_addition-dg-v2.patch",
+    "body": "Attachment [trac_8703-additional-feature-vp.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-additional-feature-vp.patch) by VivianePons created at 2013-03-21 09:01:51\n\nThanks a lot Fr\u00e9d\u00e9ric.\n\nI just uploaded a new version of \"additional feature\", it's just a small fix about the \"eval\" function. I was using the \"eval\" function to transform a string into an object, I changed it to use \"litteral_eval\" which is more secured (it won't eval just any python code, it is restricted to simple objects).\n\nOnce the bot is happy, is there anything else to do on this patch or can it go with \"positive review\" ?\n\n for the bot:\n\napply trac_8703-trees-fh-rebase.patch trac_8703-additional-feature-vp.patch trac_8703-trees_addition-dg-v2.patch",
     "created_at": "2013-03-21T09:01:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
@@ -1424,7 +1424,7 @@ archive/issue_comments_079377.json:
 }
 ```
 
-Attachment
+Attachment [trac_8703-additional-feature-vp.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-additional-feature-vp.patch) by VivianePons created at 2013-03-21 09:01:51
 
 Thanks a lot Frédéric.
 
@@ -1530,7 +1530,7 @@ I have made more changes in the new review patch. And yes, comment 33 should be 
 archive/issue_comments_079382.json:
 ```json
 {
-    "body": "Attachment\n\nnew patch, solving all issues in comments 33,52 and 53",
+    "body": "Attachment [trac_8703-trees_addition-dg-v2.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-trees_addition-dg-v2.patch) by chapoton created at 2013-03-21 18:37:12\n\nnew patch, solving all issues in comments 33,52 and 53",
     "created_at": "2013-03-21T18:37:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
@@ -1539,7 +1539,7 @@ archive/issue_comments_079382.json:
 }
 ```
 
-Attachment
+Attachment [trac_8703-trees_addition-dg-v2.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-trees_addition-dg-v2.patch) by chapoton created at 2013-03-21 18:37:12
 
 new patch, solving all issues in comments 33,52 and 53
 
@@ -1574,7 +1574,7 @@ apply trac_8703-trees-fh-rebase.patch trac_8703-additional-feature-vp.patch trac
 archive/issue_comments_079384.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8703-review-fc.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-review-fc.patch) by chapoton created at 2013-03-31 19:29:18",
     "created_at": "2013-03-31T19:29:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
@@ -1583,7 +1583,7 @@ archive/issue_comments_079384.json:
 }
 ```
 
-Attachment
+Attachment [trac_8703-review-fc.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-review-fc.patch) by chapoton created at 2013-03-31 19:29:18
 
 
 
@@ -1630,7 +1630,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_079387.json:
 ```json
 {
-    "body": "Attachment\n\nI folded the patches for the release manager.\n\nFlorent",
+    "body": "Attachment [trac_8703-trees-folded.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-trees-folded.patch) by hivert created at 2013-04-11 10:19:26\n\nI folded the patches for the release manager.\n\nFlorent",
     "created_at": "2013-04-11T10:19:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
@@ -1639,7 +1639,7 @@ archive/issue_comments_079387.json:
 }
 ```
 
-Attachment
+Attachment [trac_8703-trees-folded.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-trees-folded.patch) by hivert created at 2013-04-11 10:19:26
 
 I folded the patches for the release manager.
 
@@ -1711,7 +1711,7 @@ And this patch should be rebased to sage-5.9.beta5.
 archive/issue_comments_079391.json:
 ```json
 {
-    "body": "Attachment\n\nRebased patch.\n\nFor patchbot:\n\nApply: trac_8703-trees-rebased.patch",
+    "body": "Attachment [trac_8703-trees-rebased.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-trees-rebased.patch) by tscrim created at 2013-04-15 00:32:40\n\nRebased patch.\n\nFor patchbot:\n\nApply: trac_8703-trees-rebased.patch",
     "created_at": "2013-04-15T00:32:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
@@ -1720,7 +1720,7 @@ archive/issue_comments_079391.json:
 }
 ```
 
-Attachment
+Attachment [trac_8703-trees-rebased.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-trees-rebased.patch) by tscrim created at 2013-04-15 00:32:40
 
 Rebased patch.
 

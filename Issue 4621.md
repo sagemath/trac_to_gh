@@ -94,7 +94,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4621
 archive/issue_comments_034739.json:
 ```json
 {
-    "body": "Attachment\n\nThis issue is fixed. Followup about embedding into QQbar at #7960.",
+    "body": "Attachment [4621-qqbar-embed.patch](tarball://root/attachments/some-uuid/ticket4621/4621-qqbar-embed.patch) by robertwb created at 2010-01-17 00:26:44\n\nThis issue is fixed. Followup about embedding into QQbar at #7960.",
     "created_at": "2010-01-17T00:26:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
@@ -103,7 +103,7 @@ archive/issue_comments_034739.json:
 }
 ```
 
-Attachment
+Attachment [4621-qqbar-embed.patch](tarball://root/attachments/some-uuid/ticket4621/4621-qqbar-embed.patch) by robertwb created at 2010-01-17 00:26:44
 
 This issue is fixed. Followup about embedding into QQbar at #7960.
 

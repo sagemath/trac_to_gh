@@ -55,7 +55,7 @@ Changing status from new to needs_review.
 archive/issue_comments_070663.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [givaro-3.2.13rc2.p0,patch](tarball://root/attachments/some-uuid/ticket8062/givaro-3.2.13rc2.p0,patch) by jsp created at 2010-01-26 20:54:56",
     "created_at": "2010-01-26T20:54:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8062",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_070663.json:
 }
 ```
 
-Attachment
+Attachment [givaro-3.2.13rc2.p0,patch](tarball://root/attachments/some-uuid/ticket8062/givaro-3.2.13rc2.p0,patch) by jsp created at 2010-01-26 20:54:56
 
 
 
@@ -91,7 +91,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_070665.json:
 ```json
 {
-    "body": "Attachment\n\nThe comment in SPKG.txt is inaccurate, as the patch is not specific to Open Solaris. \n\n\nA more accurate comment would be. \n\nEnsures the compiler flag -m64 is added when the environment variable SAGE64 was set to yes - previously this was only happening on OS X. This should aid building 64-bit on any platform, though it has only been tested on Open Solaris. \n\nAlso, add the trac ticket number #8062 to the comment. \n\nIt's far better to open a ticket for the bug first, before trying to fix it. Then the ticket number can be placed in the comments in SPKG.txt. \n\nYou might want to remove Martin Albrecht as a maintainer, as his name is duplicated.",
+    "body": "Attachment [givaro-3.2.13rc2.p0.patch](tarball://root/attachments/some-uuid/ticket8062/givaro-3.2.13rc2.p0.patch) by drkirkby created at 2010-01-28 08:44:40\n\nThe comment in SPKG.txt is inaccurate, as the patch is not specific to Open Solaris. \n\n\nA more accurate comment would be. \n\nEnsures the compiler flag -m64 is added when the environment variable SAGE64 was set to yes - previously this was only happening on OS X. This should aid building 64-bit on any platform, though it has only been tested on Open Solaris. \n\nAlso, add the trac ticket number #8062 to the comment. \n\nIt's far better to open a ticket for the bug first, before trying to fix it. Then the ticket number can be placed in the comments in SPKG.txt. \n\nYou might want to remove Martin Albrecht as a maintainer, as his name is duplicated.",
     "created_at": "2010-01-28T08:44:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8062",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_070665.json:
 }
 ```
 
-Attachment
+Attachment [givaro-3.2.13rc2.p0.patch](tarball://root/attachments/some-uuid/ticket8062/givaro-3.2.13rc2.p0.patch) by drkirkby created at 2010-01-28 08:44:40
 
 The comment in SPKG.txt is inaccurate, as the patch is not specific to Open Solaris. 
 
@@ -180,7 +180,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_070668.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated SPKG.txt\n\nLeft patch level p0.\n\nLink is still\n[http://boxen.math.washington.edu/home/jsp/ports/givaro-3.2.13rc2.p0.spkg](http://boxen.math.washington.edu/home/jsp/ports/givaro-3.2.13rc2.p0.spkg)\n\n\nJaap",
+    "body": "Attachment [givaro-3.2.13rc2.p0+.patch](tarball://root/attachments/some-uuid/ticket8062/givaro-3.2.13rc2.p0+.patch) by jsp created at 2010-01-28 13:11:48\n\nUpdated SPKG.txt\n\nLeft patch level p0.\n\nLink is still\n[http://boxen.math.washington.edu/home/jsp/ports/givaro-3.2.13rc2.p0.spkg](http://boxen.math.washington.edu/home/jsp/ports/givaro-3.2.13rc2.p0.spkg)\n\n\nJaap",
     "created_at": "2010-01-28T13:11:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8062",
     "type": "issue_comment",
@@ -189,7 +189,7 @@ archive/issue_comments_070668.json:
 }
 ```
 
-Attachment
+Attachment [givaro-3.2.13rc2.p0+.patch](tarball://root/attachments/some-uuid/ticket8062/givaro-3.2.13rc2.p0+.patch) by jsp created at 2010-01-28 13:11:48
 
 Updated SPKG.txt
 

@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7549
 archive/issue_comments_064121.json:
 ```json
 {
-    "body": "Attachment\n\nDoc build options for inherited members, private variables.  Inheritance diagrams.  Apply to sage repo.",
+    "body": "Attachment [trac_7549-doc_inheritance_underscore.patch](tarball://root/attachments/some-uuid/ticket7549/trac_7549-doc_inheritance_underscore.patch) by mpatel created at 2009-11-28 13:55:05\n\nDoc build options for inherited members, private variables.  Inheritance diagrams.  Apply to sage repo.",
     "created_at": "2009-11-28T13:55:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
@@ -51,7 +51,7 @@ archive/issue_comments_064121.json:
 }
 ```
 
-Attachment
+Attachment [trac_7549-doc_inheritance_underscore.patch](tarball://root/attachments/some-uuid/ticket7549/trac_7549-doc_inheritance_underscore.patch) by mpatel created at 2009-11-28 13:55:05
 
 Doc build options for inherited members, private variables.  Inheritance diagrams.  Apply to sage repo.
 
@@ -351,7 +351,7 @@ Set up intersphinx for Python docs.  *Replaces* previous patch. sage repo.
 archive/issue_comments_064133.json:
 ```json
 {
-    "body": "Attachment\n\nVersion 2, which replaces the previous patch,\n\n* Enables `intersphinx` for the Python docs.  This is *easy* to use, e.g.,\n\n```\nFor more information, please consult :mod:`subprocess`.  Blah, blah, whatever...\n```\n\n* Adds `# -*- coding: utf-8 -*-` to the top of `sage.combinat.lyndon_word`.\n* Drops a `sage.interfaces.singular.SingularFunctionElement._sage_doc_` doctest.\n* Prepares for `extlinks`.  Sphinx 1.0 will include this new extension.",
+    "body": "Attachment [trac_7549-doc_inheritance_underscore_v2.patch](tarball://root/attachments/some-uuid/ticket7549/trac_7549-doc_inheritance_underscore_v2.patch) by mpatel created at 2009-11-29 09:11:42\n\nVersion 2, which replaces the previous patch,\n\n* Enables `intersphinx` for the Python docs.  This is *easy* to use, e.g.,\n\n```\nFor more information, please consult :mod:`subprocess`.  Blah, blah, whatever...\n```\n\n* Adds `# -*- coding: utf-8 -*-` to the top of `sage.combinat.lyndon_word`.\n* Drops a `sage.interfaces.singular.SingularFunctionElement._sage_doc_` doctest.\n* Prepares for `extlinks`.  Sphinx 1.0 will include this new extension.",
     "created_at": "2009-11-29T09:11:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
@@ -360,7 +360,7 @@ archive/issue_comments_064133.json:
 }
 ```
 
-Attachment
+Attachment [trac_7549-doc_inheritance_underscore_v2.patch](tarball://root/attachments/some-uuid/ticket7549/trac_7549-doc_inheritance_underscore_v2.patch) by mpatel created at 2009-11-29 09:11:42
 
 Version 2, which replaces the previous patch,
 
@@ -435,7 +435,7 @@ Rebased for 4.3.alpha1.  Replaces previous patches.
 archive/issue_comments_064137.json:
 ```json
 {
-    "body": "Attachment\n\nI should add that we can also link directly to [matplotlib's docs](http://matplotlib.sourceforge.net/contents.html) from the Sage documentation.  We just need to update `doc.common.conf.intersphinx_mapping` (the object inventory is [here](http://matplotlib.sourceforge.net/objects.inv)).  Perhaps there are others of interest in [this list](http://sphinx.pocoo.org/examples.html)?",
+    "body": "Attachment [trac_7549-doc_inheritance_underscore_v3.patch](tarball://root/attachments/some-uuid/ticket7549/trac_7549-doc_inheritance_underscore_v3.patch) by mpatel created at 2009-12-06 00:38:58\n\nI should add that we can also link directly to [matplotlib's docs](http://matplotlib.sourceforge.net/contents.html) from the Sage documentation.  We just need to update `doc.common.conf.intersphinx_mapping` (the object inventory is [here](http://matplotlib.sourceforge.net/objects.inv)).  Perhaps there are others of interest in [this list](http://sphinx.pocoo.org/examples.html)?",
     "created_at": "2009-12-06T00:38:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
@@ -444,7 +444,7 @@ archive/issue_comments_064137.json:
 }
 ```
 
-Attachment
+Attachment [trac_7549-doc_inheritance_underscore_v3.patch](tarball://root/attachments/some-uuid/ticket7549/trac_7549-doc_inheritance_underscore_v3.patch) by mpatel created at 2009-12-06 00:38:58
 
 I should add that we can also link directly to [matplotlib's docs](http://matplotlib.sourceforge.net/contents.html) from the Sage documentation.  We just need to update `doc.common.conf.intersphinx_mapping` (the object inventory is [here](http://matplotlib.sourceforge.net/objects.inv)).  Perhaps there are others of interest in [this list](http://sphinx.pocoo.org/examples.html)?
 
@@ -522,7 +522,7 @@ Rebased vs. 4.3.3.alpha0.  See comment.  Apply only this patch.  sage repo.
 archive/issue_comments_064141.json:
 ```json
 {
-    "body": "Attachment\n\nV4\n\n* Rebased vs. 4.3.3.alpha0.\n* Combines the skip member handlers, since Sphinx takes the first answer that's not `None`.  (I suppose we could keep them separate but return `None` when a test is inconclusive).\n* Detects changes in `-u`, too.  Toggling either new option should trigger a rebuild.\n\nShould we move the new options to the \"Advanced\" section?  Add \"may use lots of memory\"?\n\nNote: I still haven't done a complete build in each configuration.",
+    "body": "Attachment [trac_7549-doc_inheritance_underscore_v4.patch](tarball://root/attachments/some-uuid/ticket7549/trac_7549-doc_inheritance_underscore_v4.patch) by mpatel created at 2010-02-14 08:44:20\n\nV4\n\n* Rebased vs. 4.3.3.alpha0.\n* Combines the skip member handlers, since Sphinx takes the first answer that's not `None`.  (I suppose we could keep them separate but return `None` when a test is inconclusive).\n* Detects changes in `-u`, too.  Toggling either new option should trigger a rebuild.\n\nShould we move the new options to the \"Advanced\" section?  Add \"may use lots of memory\"?\n\nNote: I still haven't done a complete build in each configuration.",
     "created_at": "2010-02-14T08:44:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
@@ -531,7 +531,7 @@ archive/issue_comments_064141.json:
 }
 ```
 
-Attachment
+Attachment [trac_7549-doc_inheritance_underscore_v4.patch](tarball://root/attachments/some-uuid/ticket7549/trac_7549-doc_inheritance_underscore_v4.patch) by mpatel created at 2010-02-14 08:44:20
 
 V4
 
@@ -803,7 +803,7 @@ But I don't know if this is responsible for what we see.
 archive/issue_comments_064151.json:
 ```json
 {
-    "body": "Attachment\n\nRebase vs. 4.3.4.alpha1 + #8457.  Apply only this patch.",
+    "body": "Attachment [trac_7549-doc_inheritance_underscore_v5.patch](tarball://root/attachments/some-uuid/ticket7549/trac_7549-doc_inheritance_underscore_v5.patch) by mpatel created at 2010-03-11 06:21:32\n\nRebase vs. 4.3.4.alpha1 + #8457.  Apply only this patch.",
     "created_at": "2010-03-11T06:21:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
@@ -812,7 +812,7 @@ archive/issue_comments_064151.json:
 }
 ```
 
-Attachment
+Attachment [trac_7549-doc_inheritance_underscore_v5.patch](tarball://root/attachments/some-uuid/ticket7549/trac_7549-doc_inheritance_underscore_v5.patch) by mpatel created at 2010-03-11 06:21:32
 
 Rebase vs. 4.3.4.alpha1 + #8457.  Apply only this patch.
 
@@ -956,7 +956,7 @@ apply on top of other patch
 archive/issue_comments_064158.json:
 ```json
 {
-    "body": "Attachment\n\nFix recursion problem.  Apply only this combined patch.",
+    "body": "Attachment [trac_7549-doc_inheritance_underscore_v6.patch](tarball://root/attachments/some-uuid/ticket7549/trac_7549-doc_inheritance_underscore_v6.patch) by mpatel created at 2010-03-13 08:27:04\n\nFix recursion problem.  Apply only this combined patch.",
     "created_at": "2010-03-13T08:27:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
@@ -965,7 +965,7 @@ archive/issue_comments_064158.json:
 }
 ```
 
-Attachment
+Attachment [trac_7549-doc_inheritance_underscore_v6.patch](tarball://root/attachments/some-uuid/ticket7549/trac_7549-doc_inheritance_underscore_v6.patch) by mpatel created at 2010-03-13 08:27:04
 
 Fix recursion problem.  Apply only this combined patch.
 
@@ -1030,7 +1030,7 @@ The only change is in `sage_autodoc.py`.
 archive/issue_comments_064162.json:
 ```json
 {
-    "body": "Attachment\n\nHelp notes.  Replaces V6.",
+    "body": "Attachment [trac_7549-doc_inheritance_underscore_v7.patch](tarball://root/attachments/some-uuid/ticket7549/trac_7549-doc_inheritance_underscore_v7.patch) by mpatel created at 2010-03-13 09:01:03\n\nHelp notes.  Replaces V6.",
     "created_at": "2010-03-13T09:01:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
@@ -1039,7 +1039,7 @@ archive/issue_comments_064162.json:
 }
 ```
 
-Attachment
+Attachment [trac_7549-doc_inheritance_underscore_v7.patch](tarball://root/attachments/some-uuid/ticket7549/trac_7549-doc_inheritance_underscore_v7.patch) by mpatel created at 2010-03-13 09:01:03
 
 Help notes.  Replaces V6.
 

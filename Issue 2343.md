@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2343
 archive/issue_comments_015686.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [variety-arbitrary-rings.patch](tarball://root/attachments/some-uuid/ticket2343/variety-arbitrary-rings.patch) by cwitty created at 2008-02-28 05:24:36",
     "created_at": "2008-02-28T05:24:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2343",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_015686.json:
 }
 ```
 
-Attachment
+Attachment [variety-arbitrary-rings.patch](tarball://root/attachments/some-uuid/ticket2343/variety-arbitrary-rings.patch) by cwitty created at 2008-02-28 05:24:36
 
 
 

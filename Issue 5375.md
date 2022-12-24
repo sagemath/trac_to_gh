@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5375
 archive/issue_comments_041398.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [geom-rst.patch](tarball://root/attachments/some-uuid/ticket5375/geom-rst.patch) by jhpalmieri created at 2009-02-26 00:37:33",
     "created_at": "2009-02-26T00:37:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5375",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_041398.json:
 }
 ```
 
-Attachment
+Attachment [geom-rst.patch](tarball://root/attachments/some-uuid/ticket5375/geom-rst.patch) by jhpalmieri created at 2009-02-26 00:37:33
 
 
 

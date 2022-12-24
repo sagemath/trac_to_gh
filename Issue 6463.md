@@ -51,7 +51,7 @@ patch against 4.1.alpha2
 archive/issue_comments_052230.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6463-relative_residue_field.patch](tarball://root/attachments/some-uuid/ticket6463/trac_6463-relative_residue_field.patch) by davidloeffler created at 2009-07-04 15:52:37",
     "created_at": "2009-07-04T15:52:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6463",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_052230.json:
 }
 ```
 
-Attachment
+Attachment [trac_6463-relative_residue_field.patch](tarball://root/attachments/some-uuid/ticket6463/trac_6463-relative_residue_field.patch) by davidloeffler created at 2009-07-04 15:52:37
 
 
 

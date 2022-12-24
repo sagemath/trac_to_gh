@@ -51,7 +51,7 @@ Changing status from new to needs_review.
 archive/issue_comments_050938.json:
 ```json
 {
-    "body": "Attachment\n\nShould I add any Selenium tests?",
+    "body": "Attachment [trac_6368-shift_tab_unindents.patch](tarball://root/attachments/some-uuid/ticket6368/trac_6368-shift_tab_unindents.patch) by acleone created at 2010-01-20 02:52:15\n\nShould I add any Selenium tests?",
     "created_at": "2010-01-20T02:52:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6368",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_050938.json:
 }
 ```
 
-Attachment
+Attachment [trac_6368-shift_tab_unindents.patch](tarball://root/attachments/some-uuid/ticket6368/trac_6368-shift_tab_unindents.patch) by acleone created at 2010-01-20 02:52:15
 
 Should I add any Selenium tests?
 

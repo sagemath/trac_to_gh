@@ -49,7 +49,7 @@ Sage patch, fixing the tests
 archive/issue_comments_020256.json:
 ```json
 {
-    "body": "Attachment\n\n**Important note**: execute this command\n\nrm -r sage/local/lib/python2.5/site-packages/sympy*\n\nbefore installing the spkg, otherwise sympy will be broken.",
+    "body": "Attachment [sympy-0.5.13.patch](tarball://root/attachments/some-uuid/ticket2941/sympy-0.5.13.patch) by certik created at 2008-04-16 09:43:42\n\n**Important note**: execute this command\n\nrm -r sage/local/lib/python2.5/site-packages/sympy*\n\nbefore installing the spkg, otherwise sympy will be broken.",
     "created_at": "2008-04-16T09:43:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2941",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_020256.json:
 }
 ```
 
-Attachment
+Attachment [sympy-0.5.13.patch](tarball://root/attachments/some-uuid/ticket2941/sympy-0.5.13.patch) by certik created at 2008-04-16 09:43:42
 
 **Important note**: execute this command
 
@@ -124,7 +124,7 @@ Michael
 archive/issue_comments_020259.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sympy-0.5.13.spkg](tarball://root/attachments/some-uuid/ticket2941/sympy-0.5.13.spkg) by certik created at 2008-04-16 11:51:39",
     "created_at": "2008-04-16T11:51:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2941",
     "type": "issue_comment",
@@ -133,7 +133,7 @@ archive/issue_comments_020259.json:
 }
 ```
 
-Attachment
+Attachment [sympy-0.5.13.spkg](tarball://root/attachments/some-uuid/ticket2941/sympy-0.5.13.spkg) by certik created at 2008-04-16 11:51:39
 
 
 

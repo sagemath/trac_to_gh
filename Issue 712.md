@@ -102,7 +102,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/712
 archive/issue_comments_003732.json:
 ```json
 {
-    "body": "Attachment\n\nreplicates bug in Maxima",
+    "body": "Attachment [maxima_bug](tarball://root/attachments/some-uuid/ticket712/maxima_bug) by was created at 2007-09-20 18:51:39\n\nreplicates bug in Maxima",
     "created_at": "2007-09-20T18:51:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/712",
     "type": "issue_comment",
@@ -111,7 +111,7 @@ archive/issue_comments_003732.json:
 }
 ```
 
-Attachment
+Attachment [maxima_bug](tarball://root/attachments/some-uuid/ticket712/maxima_bug) by was created at 2007-09-20 18:51:39
 
 replicates bug in Maxima
 
@@ -173,7 +173,7 @@ this actually reproduces the bug
 archive/issue_comments_003735.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [j](tarball://root/attachments/some-uuid/ticket712/j) by mabshoff created at 2007-12-04 14:30:20",
     "created_at": "2007-12-04T14:30:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/712",
     "type": "issue_comment",
@@ -182,7 +182,7 @@ archive/issue_comments_003735.json:
 }
 ```
 
-Attachment
+Attachment [j](tarball://root/attachments/some-uuid/ticket712/j) by mabshoff created at 2007-12-04 14:30:20
 
 
 

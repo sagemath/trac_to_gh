@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9383
 archive/issue_comments_089206.json:
 ```json
 {
-    "body": "Attachment\n\nquadratic_forms reference manual docbuild",
+    "body": "Attachment [trac_9383.patch](tarball://root/attachments/some-uuid/ticket9383/trac_9383.patch) by annahaensch created at 2010-07-01 05:28:01\n\nquadratic_forms reference manual docbuild",
     "created_at": "2010-07-01T05:28:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9383",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_089206.json:
 }
 ```
 
-Attachment
+Attachment [trac_9383.patch](tarball://root/attachments/some-uuid/ticket9383/trac_9383.patch) by annahaensch created at 2010-07-01 05:28:01
 
 quadratic_forms reference manual docbuild
 
@@ -105,7 +105,7 @@ Use instead of trac_9383.patch
 archive/issue_comments_089210.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch should complete the reference documentation for quadratic forms.  It's still returning a warning that the file is not contained in a toctree.  Ideas?",
+    "body": "Attachment [trac_9383_v2.patch](tarball://root/attachments/some-uuid/ticket9383/trac_9383_v2.patch) by annahaensch created at 2010-07-01 20:54:40\n\nThis patch should complete the reference documentation for quadratic forms.  It's still returning a warning that the file is not contained in a toctree.  Ideas?",
     "created_at": "2010-07-01T20:54:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9383",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_089210.json:
 }
 ```
 
-Attachment
+Attachment [trac_9383_v2.patch](tarball://root/attachments/some-uuid/ticket9383/trac_9383_v2.patch) by annahaensch created at 2010-07-01 20:54:40
 
 This patch should complete the reference documentation for quadratic forms.  It's still returning a warning that the file is not contained in a toctree.  Ideas?
 
@@ -143,7 +143,7 @@ Changing status from new to needs_review.
 archive/issue_comments_089212.json:
 ```json
 {
-    "body": "Attachment\n\nUse in place of all previous patches",
+    "body": "Attachment [trac_9383_v3.patch](tarball://root/attachments/some-uuid/ticket9383/trac_9383_v3.patch) by annahaensch created at 2010-07-12 12:51:14\n\nUse in place of all previous patches",
     "created_at": "2010-07-12T12:51:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9383",
     "type": "issue_comment",
@@ -152,7 +152,7 @@ archive/issue_comments_089212.json:
 }
 ```
 
-Attachment
+Attachment [trac_9383_v3.patch](tarball://root/attachments/some-uuid/ticket9383/trac_9383_v3.patch) by annahaensch created at 2010-07-12 12:51:14
 
 Use in place of all previous patches
 
@@ -221,7 +221,7 @@ BTW: the reference manual building code can behave very oddly when files have be
 archive/issue_comments_089216.json:
 ```json
 {
-    "body": "Attachment\n\nreplaces all previous patches",
+    "body": "Attachment [trac_9383_v4.patch](tarball://root/attachments/some-uuid/ticket9383/trac_9383_v4.patch) by davidloeffler created at 2010-08-03 13:57:41\n\nreplaces all previous patches",
     "created_at": "2010-08-03T13:57:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9383",
     "type": "issue_comment",
@@ -230,7 +230,7 @@ archive/issue_comments_089216.json:
 }
 ```
 
-Attachment
+Attachment [trac_9383_v4.patch](tarball://root/attachments/some-uuid/ticket9383/trac_9383_v4.patch) by davidloeffler created at 2010-08-03 13:57:41
 
 replaces all previous patches
 

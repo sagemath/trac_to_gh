@@ -98,7 +98,7 @@ Total number of functions:  156
 archive/issue_comments_014883.json:
 ```json
 {
-    "body": "Attachment\n\nthis is the whole thing flattened and rebased against sage-2.10.3.alpha0",
+    "body": "Attachment [sage-2245.patch](tarball://root/attachments/some-uuid/ticket2245/sage-2245.patch) by was created at 2008-02-26 23:11:05\n\nthis is the whole thing flattened and rebased against sage-2.10.3.alpha0",
     "created_at": "2008-02-26T23:11:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2245",
     "type": "issue_comment",
@@ -107,7 +107,7 @@ archive/issue_comments_014883.json:
 }
 ```
 
-Attachment
+Attachment [sage-2245.patch](tarball://root/attachments/some-uuid/ticket2245/sage-2245.patch) by was created at 2008-02-26 23:11:05
 
 this is the whole thing flattened and rebased against sage-2.10.3.alpha0
 
@@ -138,7 +138,7 @@ There's one thing that still bothers me, though: given a modular abelian variety
 archive/issue_comments_014885.json:
 ```json
 {
-    "body": "Attachment\n\nminor typo corrections; apply after william's patch above",
+    "body": "Attachment [trac-2245-touch-ups.patch](tarball://root/attachments/some-uuid/ticket2245/trac-2245-touch-ups.patch) by craigcitro created at 2008-03-03 06:15:25\n\nminor typo corrections; apply after william's patch above",
     "created_at": "2008-03-03T06:15:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2245",
     "type": "issue_comment",
@@ -147,7 +147,7 @@ archive/issue_comments_014885.json:
 }
 ```
 
-Attachment
+Attachment [trac-2245-touch-ups.patch](tarball://root/attachments/some-uuid/ticket2245/trac-2245-touch-ups.patch) by craigcitro created at 2008-03-03 06:15:25
 
 minor typo corrections; apply after william's patch above
 
@@ -176,7 +176,7 @@ Good job fixing up my patch.  I just looked over your touch ups.  Very nice.
 archive/issue_comments_014887.json:
 ```json
 {
-    "body": "Attachment\n\napply this third",
+    "body": "Attachment [trac-2245-lseries.patch](tarball://root/attachments/some-uuid/ticket2245/trac-2245-lseries.patch) by craigcitro created at 2008-03-03 07:27:20\n\napply this third",
     "created_at": "2008-03-03T07:27:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2245",
     "type": "issue_comment",
@@ -185,7 +185,7 @@ archive/issue_comments_014887.json:
 }
 ```
 
-Attachment
+Attachment [trac-2245-lseries.patch](tarball://root/attachments/some-uuid/ticket2245/trac-2245-lseries.patch) by craigcitro created at 2008-03-03 07:27:20
 
 apply this third
 

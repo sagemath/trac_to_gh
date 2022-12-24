@@ -479,7 +479,7 @@ I have a patch that should fix this, but due to lack of knowledge of R I can't e
 archive/issue_comments_099947.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9970_r_strings.patch](tarball://root/attachments/some-uuid/ticket9970/9970_r_strings.patch) by wjp created at 2011-01-13 23:22:24",
     "created_at": "2011-01-13T23:22:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9969",
     "type": "issue_comment",
@@ -488,7 +488,7 @@ archive/issue_comments_099947.json:
 }
 ```
 
-Attachment
+Attachment [9970_r_strings.patch](tarball://root/attachments/some-uuid/ticket9970/9970_r_strings.patch) by wjp created at 2011-01-13 23:22:24
 
 
 

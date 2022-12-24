@@ -38,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8379
 archive/issue_comments_074920.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8379.patch](tarball://root/attachments/some-uuid/ticket8379/trac_8379.patch) by ylchapuy created at 2010-02-26 13:22:52",
     "created_at": "2010-02-26T13:22:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8379",
     "type": "issue_comment",
@@ -47,7 +47,7 @@ archive/issue_comments_074920.json:
 }
 ```
 
-Attachment
+Attachment [trac_8379.patch](tarball://root/attachments/some-uuid/ticket8379/trac_8379.patch) by ylchapuy created at 2010-02-26 13:22:52
 
 
 
@@ -164,7 +164,7 @@ ylchapuy?
 archive/issue_comments_074927.json:
 ```json
 {
-    "body": "Attachment\n\napply only this one",
+    "body": "Attachment [trac_8379_v2.patch](tarball://root/attachments/some-uuid/ticket8379/trac_8379_v2.patch) by ylchapuy created at 2010-05-04 12:53:12\n\napply only this one",
     "created_at": "2010-05-04T12:53:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8379",
     "type": "issue_comment",
@@ -173,7 +173,7 @@ archive/issue_comments_074927.json:
 }
 ```
 
-Attachment
+Attachment [trac_8379_v2.patch](tarball://root/attachments/some-uuid/ticket8379/trac_8379_v2.patch) by ylchapuy created at 2010-05-04 12:53:12
 
 apply only this one
 

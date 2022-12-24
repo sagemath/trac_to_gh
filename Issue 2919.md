@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2919
 archive/issue_comments_020101.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_2919_sagelib-gcc-4.3-fixes.patch](tarball://root/attachments/some-uuid/ticket2919/trac_2919_sagelib-gcc-4.3-fixes.patch) by mabshoff created at 2008-04-14 19:30:13",
     "created_at": "2008-04-14T19:30:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2919",
     "type": "issue_comment",
@@ -50,7 +50,7 @@ archive/issue_comments_020101.json:
 }
 ```
 
-Attachment
+Attachment [trac_2919_sagelib-gcc-4.3-fixes.patch](tarball://root/attachments/some-uuid/ticket2919/trac_2919_sagelib-gcc-4.3-fixes.patch) by mabshoff created at 2008-04-14 19:30:13
 
 
 

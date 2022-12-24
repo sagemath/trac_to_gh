@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2323
 archive/issue_comments_015454.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [dsage-tut.hg](tarball://root/attachments/some-uuid/ticket2323/dsage-tut.hg) by yi created at 2008-02-26 18:16:02",
     "created_at": "2008-02-26T18:16:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2323",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_015454.json:
 }
 ```
 
-Attachment
+Attachment [dsage-tut.hg](tarball://root/attachments/some-uuid/ticket2323/dsage-tut.hg) by yi created at 2008-02-26 18:16:02
 
 
 
@@ -99,7 +99,7 @@ Michael
 archive/issue_comments_015457.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2323.patch](tarball://root/attachments/some-uuid/ticket2323/2323.patch) by mhansen created at 2008-02-27 23:59:41",
     "created_at": "2008-02-27T23:59:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2323",
     "type": "issue_comment",
@@ -108,7 +108,7 @@ archive/issue_comments_015457.json:
 }
 ```
 
-Attachment
+Attachment [2323.patch](tarball://root/attachments/some-uuid/ticket2323/2323.patch) by mhansen created at 2008-02-27 23:59:41
 
 
 
@@ -117,7 +117,7 @@ Attachment
 archive/issue_comments_015458.json:
 ```json
 {
-    "body": "Attachment\n\nMerged in Sage 2.10.3.rc0. Please indicate clearly that this bundle is against the doc repo since it wasn't immediately clear and it cause some confusion.",
+    "body": "Attachment [2323.hg](tarball://root/attachments/some-uuid/ticket2323/2323.hg) by mabshoff created at 2008-02-28 00:13:27\n\nMerged in Sage 2.10.3.rc0. Please indicate clearly that this bundle is against the doc repo since it wasn't immediately clear and it cause some confusion.",
     "created_at": "2008-02-28T00:13:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2323",
     "type": "issue_comment",
@@ -126,7 +126,7 @@ archive/issue_comments_015458.json:
 }
 ```
 
-Attachment
+Attachment [2323.hg](tarball://root/attachments/some-uuid/ticket2323/2323.hg) by mabshoff created at 2008-02-28 00:13:27
 
 Merged in Sage 2.10.3.rc0. Please indicate clearly that this bundle is against the doc repo since it wasn't immediately clear and it cause some confusion.
 

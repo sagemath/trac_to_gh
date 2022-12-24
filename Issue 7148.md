@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7148
 archive/issue_comments_059230.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7148-tutorial-rings.patch](tarball://root/attachments/some-uuid/ticket7148/trac_7148-tutorial-rings.patch) by jhpalmieri created at 2009-10-07 23:59:39",
     "created_at": "2009-10-07T23:59:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7148",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_059230.json:
 }
 ```
 
-Attachment
+Attachment [trac_7148-tutorial-rings.patch](tarball://root/attachments/some-uuid/ticket7148/trac_7148-tutorial-rings.patch) by jhpalmieri created at 2009-10-07 23:59:39
 
 
 
@@ -103,7 +103,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_059234.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7148-tutorial-rings.2.patch](tarball://root/attachments/some-uuid/ticket7148/trac_7148-tutorial-rings.2.patch) by mhansen created at 2009-10-15 09:21:56",
     "created_at": "2009-10-15T09:21:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7148",
     "type": "issue_comment",
@@ -112,7 +112,7 @@ archive/issue_comments_059234.json:
 }
 ```
 
-Attachment
+Attachment [trac_7148-tutorial-rings.2.patch](tarball://root/attachments/some-uuid/ticket7148/trac_7148-tutorial-rings.2.patch) by mhansen created at 2009-10-15 09:21:56
 
 
 

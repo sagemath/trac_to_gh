@@ -54,7 +54,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8311
 archive/issue_comments_073712.json:
 ```json
 {
-    "body": "Attachment\n\napplies to 4.3.3.alpha1",
+    "body": "Attachment [trac_8311-random-point.patch](tarball://root/attachments/some-uuid/ticket8311/trac_8311-random-point.patch) by cremona created at 2010-02-20 13:48:52\n\napplies to 4.3.3.alpha1",
     "created_at": "2010-02-20T13:48:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8311",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_073712.json:
 }
 ```
 
-Attachment
+Attachment [trac_8311-random-point.patch](tarball://root/attachments/some-uuid/ticket8311/trac_8311-random-point.patch) by cremona created at 2010-02-20 13:48:52
 
 applies to 4.3.3.alpha1
 
@@ -146,7 +146,7 @@ Replaces the previous patch
 archive/issue_comments_073717.json:
 ```json
 {
-    "body": "Attachment\n\nI changed a few tabulators to spaces. Other than that the patch is fine. And I started testing now.",
+    "body": "Attachment [trac_8311_random_point_2.patch](tarball://root/attachments/some-uuid/ticket8311/trac_8311_random_point_2.patch) by wuthrich created at 2010-03-05 18:26:42\n\nI changed a few tabulators to spaces. Other than that the patch is fine. And I started testing now.",
     "created_at": "2010-03-05T18:26:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8311",
     "type": "issue_comment",
@@ -155,7 +155,7 @@ archive/issue_comments_073717.json:
 }
 ```
 
-Attachment
+Attachment [trac_8311_random_point_2.patch](tarball://root/attachments/some-uuid/ticket8311/trac_8311_random_point_2.patch) by wuthrich created at 2010-03-05 18:26:42
 
 I changed a few tabulators to spaces. Other than that the patch is fine. And I started testing now.
 

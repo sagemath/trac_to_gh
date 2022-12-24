@@ -107,7 +107,7 @@ Changing component from number theory to padics.
 archive/issue_comments_013491.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_2084.patch](tarball://root/attachments/some-uuid/ticket2084/trac_2084.patch) by mhansen created at 2010-01-17 07:42:49",
     "created_at": "2010-01-17T07:42:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2084",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_013491.json:
 }
 ```
 
-Attachment
+Attachment [trac_2084.patch](tarball://root/attachments/some-uuid/ticket2084/trac_2084.patch) by mhansen created at 2010-01-17 07:42:49
 
 
 

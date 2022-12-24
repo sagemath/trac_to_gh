@@ -80,7 +80,7 @@ sage: vector(vector(SR, (1, sqrt(2)) ) )
 archive/issue_comments_037949.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4977.patch](tarball://root/attachments/some-uuid/ticket4977/4977.patch) by ncalexan created at 2009-01-21 22:46:24",
     "created_at": "2009-01-21T22:46:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4977",
     "type": "issue_comment",
@@ -89,7 +89,7 @@ archive/issue_comments_037949.json:
 }
 ```
 
-Attachment
+Attachment [4977.patch](tarball://root/attachments/some-uuid/ticket4977/4977.patch) by ncalexan created at 2009-01-21 22:46:24
 
 
 

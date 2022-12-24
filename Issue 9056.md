@@ -63,7 +63,7 @@ Changing status from new to needs_review.
 archive/issue_comments_084010.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9056_semirings_category-nb.2.patch](tarball://root/attachments/some-uuid/ticket9056/trac_9056_semirings_category-nb.2.patch) by nborie created at 2010-05-27 14:51:21",
     "created_at": "2010-05-27T14:51:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9056",
     "type": "issue_comment",
@@ -72,7 +72,7 @@ archive/issue_comments_084010.json:
 }
 ```
 
-Attachment
+Attachment [trac_9056_semirings_category-nb.2.patch](tarball://root/attachments/some-uuid/ticket9056/trac_9056_semirings_category-nb.2.patch) by nborie created at 2010-05-27 14:51:21
 
 
 
@@ -302,7 +302,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_084022.json:
 ```json
 {
-    "body": "Attachment\n\nI am ok with your reviewer patch. I will try to delete ending blanks on my own since you made work well coloring with my hg qdiff. I qfolded your patch in mine and uploaded it...\n\nThanks for the review.\n\nFor the release manager ,apply only \nattachment:trac_9056_semirings_category-nb.patch",
+    "body": "Attachment [trac_9056_semirings_category-nb.patch](tarball://root/attachments/some-uuid/ticket9056/trac_9056_semirings_category-nb.patch) by nborie created at 2010-06-07 17:09:03\n\nI am ok with your reviewer patch. I will try to delete ending blanks on my own since you made work well coloring with my hg qdiff. I qfolded your patch in mine and uploaded it...\n\nThanks for the review.\n\nFor the release manager ,apply only \nattachment:trac_9056_semirings_category-nb.patch",
     "created_at": "2010-06-07T17:09:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9056",
     "type": "issue_comment",
@@ -311,7 +311,7 @@ archive/issue_comments_084022.json:
 }
 ```
 
-Attachment
+Attachment [trac_9056_semirings_category-nb.patch](tarball://root/attachments/some-uuid/ticket9056/trac_9056_semirings_category-nb.patch) by nborie created at 2010-06-07 17:09:03
 
 I am ok with your reviewer patch. I will try to delete ending blanks on my own since you made work well coloring with my hg qdiff. I qfolded your patch in mine and uploaded it...
 
@@ -485,7 +485,7 @@ trac_9056_semirings_category-review-nt.patch
 archive/issue_comments_084028.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9056-disable-llt-test.patch](tarball://root/attachments/some-uuid/ticket9056/trac_9056-disable-llt-test.patch) by mhansen created at 2010-06-09 03:06:45",
     "created_at": "2010-06-09T03:06:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9056",
     "type": "issue_comment",
@@ -494,7 +494,7 @@ archive/issue_comments_084028.json:
 }
 ```
 
-Attachment
+Attachment [trac_9056-disable-llt-test.patch](tarball://root/attachments/some-uuid/ticket9056/trac_9056-disable-llt-test.patch) by mhansen created at 2010-06-09 03:06:45
 
 
 

@@ -160,7 +160,7 @@ William
 archive/issue_comments_043399.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5570-naive.patch](tarball://root/attachments/some-uuid/ticket5570/5570-naive.patch) by jhpalmieri created at 2009-03-21 15:39:45",
     "created_at": "2009-03-21T15:39:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5570",
     "type": "issue_comment",
@@ -169,7 +169,7 @@ archive/issue_comments_043399.json:
 }
 ```
 
-Attachment
+Attachment [5570-naive.patch](tarball://root/attachments/some-uuid/ticket5570/5570-naive.patch) by jhpalmieri created at 2009-03-21 15:39:45
 
 
 
@@ -196,7 +196,7 @@ This is about as naive a fix as could be imagined, although it does speed things
 archive/issue_comments_043401.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5570-referee.patch](tarball://root/attachments/some-uuid/ticket5570/trac_5570-referee.patch) by was created at 2009-03-22 00:25:50",
     "created_at": "2009-03-22T00:25:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5570",
     "type": "issue_comment",
@@ -205,7 +205,7 @@ archive/issue_comments_043401.json:
 }
 ```
 
-Attachment
+Attachment [trac_5570-referee.patch](tarball://root/attachments/some-uuid/ticket5570/trac_5570-referee.patch) by was created at 2009-03-22 00:25:50
 
 
 

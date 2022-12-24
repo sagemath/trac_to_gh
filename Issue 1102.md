@@ -49,7 +49,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_006667.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [bdd_ideals.patch](tarball://root/attachments/some-uuid/ticket1102/bdd_ideals.patch) by rlm created at 2007-11-04 23:28:28",
     "created_at": "2007-11-04T23:28:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1102",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_006667.json:
 }
 ```
 
-Attachment
+Attachment [bdd_ideals.patch](tarball://root/attachments/some-uuid/ticket1102/bdd_ideals.patch) by rlm created at 2007-11-04 23:28:28
 
 
 
@@ -67,7 +67,7 @@ Attachment
 archive/issue_comments_006668.json:
 ```json
 {
-    "body": "Attachment\n\n(oops)",
+    "body": "Attachment [typo.patch](tarball://root/attachments/some-uuid/ticket1102/typo.patch) by rlm created at 2007-11-04 23:47:19\n\n(oops)",
     "created_at": "2007-11-04T23:47:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1102",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_006668.json:
 }
 ```
 
-Attachment
+Attachment [typo.patch](tarball://root/attachments/some-uuid/ticket1102/typo.patch) by rlm created at 2007-11-04 23:47:19
 
 (oops)
 

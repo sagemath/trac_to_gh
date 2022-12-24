@@ -73,7 +73,7 @@ Matrix to trigger the IndexError
 archive/issue_comments_051755.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [DetBugMatrix.sobj](tarball://root/attachments/some-uuid/ticket6442/DetBugMatrix.sobj) by davidloeffler created at 2009-07-05 08:09:47",
     "created_at": "2009-07-05T08:09:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6442",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_051755.json:
 }
 ```
 
-Attachment
+Attachment [DetBugMatrix.sobj](tarball://root/attachments/some-uuid/ticket6442/DetBugMatrix.sobj) by davidloeffler created at 2009-07-05 08:09:47
 
 
 
@@ -440,7 +440,7 @@ Updated patch with simpler test case and a better comment.
 archive/issue_comments_051770.json:
 ```json
 {
-    "body": "Attachment\n\nI just updated the patch with your test case.\n\nI moved the \"Cache the result\" comment to where it belongs, but also added a comment above the code that creates the dictionary, explaining why it occurs near the end of the function.",
+    "body": "Attachment [sage-trac_6442.patch](tarball://root/attachments/some-uuid/ticket6442/sage-trac_6442.patch) by mjo created at 2012-01-10 15:28:01\n\nI just updated the patch with your test case.\n\nI moved the \"Cache the result\" comment to where it belongs, but also added a comment above the code that creates the dictionary, explaining why it occurs near the end of the function.",
     "created_at": "2012-01-10T15:28:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6442",
     "type": "issue_comment",
@@ -449,7 +449,7 @@ archive/issue_comments_051770.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac_6442.patch](tarball://root/attachments/some-uuid/ticket6442/sage-trac_6442.patch) by mjo created at 2012-01-10 15:28:01
 
 I just updated the patch with your test case.
 

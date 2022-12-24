@@ -183,7 +183,7 @@ The above appears to make the heap unlimited.
 archive/issue_comments_055762.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:3 was]:\n> The above appears to make the heap unlimited.\n\nSomeone should check how Boehm decides if it should extend the heap area or try to reclaim garbage and reuse memory. A side-effect of removing a limit could be that ECL just keeps allocating more memory until everything is used up, before garbage collecting. Other processes might not like that too much.\n\nI guess a sanity check would be to try some long computation that is supposed to use constant memory and see if ext:set-limit influences the memory footprint.",
+    "body": "Attachment [trac_6772.patch](tarball://root/attachments/some-uuid/ticket6772/trac_6772.patch) by nbruin created at 2009-11-16 20:57:34\n\nReplying to [comment:3 was]:\n> The above appears to make the heap unlimited.\n\nSomeone should check how Boehm decides if it should extend the heap area or try to reclaim garbage and reuse memory. A side-effect of removing a limit could be that ECL just keeps allocating more memory until everything is used up, before garbage collecting. Other processes might not like that too much.\n\nI guess a sanity check would be to try some long computation that is supposed to use constant memory and see if ext:set-limit influences the memory footprint.",
     "created_at": "2009-11-16T20:57:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6772",
     "type": "issue_comment",
@@ -192,7 +192,7 @@ archive/issue_comments_055762.json:
 }
 ```
 
-Attachment
+Attachment [trac_6772.patch](tarball://root/attachments/some-uuid/ticket6772/trac_6772.patch) by nbruin created at 2009-11-16 20:57:34
 
 Replying to [comment:3 was]:
 > The above appears to make the heap unlimited.

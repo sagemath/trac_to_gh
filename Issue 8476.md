@@ -68,7 +68,7 @@ Would it be possible to add a doctest exposing the possible bug?
 archive/issue_comments_076392.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [mpolynomialsystem_copy_fix.patch](tarball://root/attachments/some-uuid/ticket8476/mpolynomialsystem_copy_fix.patch) by malb created at 2010-03-25 23:10:25",
     "created_at": "2010-03-25T23:10:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8476",
     "type": "issue_comment",
@@ -77,7 +77,7 @@ archive/issue_comments_076392.json:
 }
 ```
 
-Attachment
+Attachment [mpolynomialsystem_copy_fix.patch](tarball://root/attachments/some-uuid/ticket8476/mpolynomialsystem_copy_fix.patch) by malb created at 2010-03-25 23:10:25
 
 
 

@@ -89,7 +89,7 @@ Try it with a large degree number field -- you couldn't compute K.embeddings(K) 
 archive/issue_comments_035662.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4724-ncalexan-pari-galois-functions.patch](tarball://root/attachments/some-uuid/ticket4724/4724-ncalexan-pari-galois-functions.patch) by ncalexan created at 2009-02-13 02:47:03",
     "created_at": "2009-02-13T02:47:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4724",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_035662.json:
 }
 ```
 
-Attachment
+Attachment [4724-ncalexan-pari-galois-functions.patch](tarball://root/attachments/some-uuid/ticket4724/4724-ncalexan-pari-galois-functions.patch) by ncalexan created at 2009-02-13 02:47:03
 
 
 
@@ -179,7 +179,7 @@ replaces the previous patch
 archive/issue_comments_035667.json:
 ```json
 {
-    "body": "Attachment\n\nAll I did was rebase Nick's patch against 3.4.1.rc2.  (ok, I also rest-ified a couple of his docstrings.)\n\nOne issue was that the original patch seems to have had a lot of things in double.  This is now fixed, hence the difference in size.\n\nThe code looks good to me and is nicely documented.  Positive review.",
+    "body": "Attachment [4724_rebased.patch](tarball://root/attachments/some-uuid/ticket4724/4724_rebased.patch) by AlexGhitza created at 2009-04-13 08:43:09\n\nAll I did was rebase Nick's patch against 3.4.1.rc2.  (ok, I also rest-ified a couple of his docstrings.)\n\nOne issue was that the original patch seems to have had a lot of things in double.  This is now fixed, hence the difference in size.\n\nThe code looks good to me and is nicely documented.  Positive review.",
     "created_at": "2009-04-13T08:43:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4724",
     "type": "issue_comment",
@@ -188,7 +188,7 @@ archive/issue_comments_035667.json:
 }
 ```
 
-Attachment
+Attachment [4724_rebased.patch](tarball://root/attachments/some-uuid/ticket4724/4724_rebased.patch) by AlexGhitza created at 2009-04-13 08:43:09
 
 All I did was rebase Nick's patch against 3.4.1.rc2.  (ok, I also rest-ified a couple of his docstrings.)
 

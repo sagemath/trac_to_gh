@@ -105,7 +105,7 @@ Patch resolves this and #1313, depends on patch to #2271.
 archive/issue_comments_008252.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1311-ref.patch](tarball://root/attachments/some-uuid/ticket1311/1311-ref.patch) by rlm created at 2008-02-24 19:47:13",
     "created_at": "2008-02-24T19:47:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1311",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_008252.json:
 }
 ```
 
-Attachment
+Attachment [1311-ref.patch](tarball://root/attachments/some-uuid/ticket1311/1311-ref.patch) by rlm created at 2008-02-24 19:47:13
 
 
 
@@ -123,7 +123,7 @@ Attachment
 archive/issue_comments_008253.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1311_updated.patch](tarball://root/attachments/some-uuid/ticket1311/1311_updated.patch) by boothby created at 2008-02-25 20:18:05",
     "created_at": "2008-02-25T20:18:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1311",
     "type": "issue_comment",
@@ -132,7 +132,7 @@ archive/issue_comments_008253.json:
 }
 ```
 
-Attachment
+Attachment [1311_updated.patch](tarball://root/attachments/some-uuid/ticket1311/1311_updated.patch) by boothby created at 2008-02-25 20:18:05
 
 
 

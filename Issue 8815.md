@@ -49,7 +49,7 @@ Changing status from new to needs_review.
 archive/issue_comments_080906.json:
 ```json
 {
-    "body": "Attachment\n\nNote, `AttributeError` was the wrong thing to raise here, and got caught in odd places. The other logic was overly complicated, just let the TypeError get raised.",
+    "body": "Attachment [8815-ec-fixes.patch](tarball://root/attachments/some-uuid/ticket8815/8815-ec-fixes.patch) by robertwb created at 2010-04-29 04:30:31\n\nNote, `AttributeError` was the wrong thing to raise here, and got caught in odd places. The other logic was overly complicated, just let the TypeError get raised.",
     "created_at": "2010-04-29T04:30:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8815",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_080906.json:
 }
 ```
 
-Attachment
+Attachment [8815-ec-fixes.patch](tarball://root/attachments/some-uuid/ticket8815/8815-ec-fixes.patch) by robertwb created at 2010-04-29 04:30:31
 
 Note, `AttributeError` was the wrong thing to raise here, and got caught in odd places. The other logic was overly complicated, just let the TypeError get raised.
 
@@ -142,7 +142,7 @@ I'll fix the patch, including more doctests.
 archive/issue_comments_080910.json:
 ```json
 {
-    "body": "Attachment\n\nNo offence taken!  I'll review this again when ready.  #8820 wil take more work, so probably not today...",
+    "body": "Attachment [8815-ec-fixes.2.patch](tarball://root/attachments/some-uuid/ticket8815/8815-ec-fixes.2.patch) by cremona created at 2010-04-29 09:38:31\n\nNo offence taken!  I'll review this again when ready.  #8820 wil take more work, so probably not today...",
     "created_at": "2010-04-29T09:38:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8815",
     "type": "issue_comment",
@@ -151,7 +151,7 @@ archive/issue_comments_080910.json:
 }
 ```
 
-Attachment
+Attachment [8815-ec-fixes.2.patch](tarball://root/attachments/some-uuid/ticket8815/8815-ec-fixes.2.patch) by cremona created at 2010-04-29 09:38:31
 
 No offence taken!  I'll review this again when ready.  #8820 wil take more work, so probably not today...
 

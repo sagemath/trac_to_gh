@@ -264,7 +264,7 @@ Changing subject back to the original bug...
 archive/issue_comments_032274.json:
 ```json
 {
-    "body": "Attachment\n\nbased on Sage 4.1.2.alpha4",
+    "body": "Attachment [plot.png](tarball://root/attachments/some-uuid/ticket4384/plot.png) by mvngu created at 2009-09-29 16:15:39\n\nbased on Sage 4.1.2.alpha4",
     "created_at": "2009-09-29T16:15:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4384",
     "type": "issue_comment",
@@ -273,7 +273,7 @@ archive/issue_comments_032274.json:
 }
 ```
 
-Attachment
+Attachment [plot.png](tarball://root/attachments/some-uuid/ticket4384/plot.png) by mvngu created at 2009-09-29 16:15:39
 
 based on Sage 4.1.2.alpha4
 

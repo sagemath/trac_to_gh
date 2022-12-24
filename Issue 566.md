@@ -120,7 +120,7 @@ Michael
 archive/issue_comments_002934.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [gmp_leak.patch](tarball://root/attachments/some-uuid/ticket566/gmp_leak.patch) by malb created at 2007-09-06 22:01:52",
     "created_at": "2007-09-06T22:01:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/566",
     "type": "issue_comment",
@@ -129,7 +129,7 @@ archive/issue_comments_002934.json:
 }
 ```
 
-Attachment
+Attachment [gmp_leak.patch](tarball://root/attachments/some-uuid/ticket566/gmp_leak.patch) by malb created at 2007-09-06 22:01:52
 
 
 
@@ -240,7 +240,7 @@ Fixed in attached `segfault-fix.patch`. The problem was that vector_times_matrix
 archive/issue_comments_002940.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [segfault-fix.patch](tarball://root/attachments/some-uuid/ticket566/segfault-fix.patch) by malb created at 2007-09-07 10:52:13",
     "created_at": "2007-09-07T10:52:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/566",
     "type": "issue_comment",
@@ -249,7 +249,7 @@ archive/issue_comments_002940.json:
 }
 ```
 
-Attachment
+Attachment [segfault-fix.patch](tarball://root/attachments/some-uuid/ticket566/segfault-fix.patch) by malb created at 2007-09-07 10:52:13
 
 
 

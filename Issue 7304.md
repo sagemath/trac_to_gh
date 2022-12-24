@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7304
 archive/issue_comments_060915.json:
 ```json
 {
-    "body": "Attachment\n\nInitial patch for review",
+    "body": "Attachment [trac_7304.patch](tarball://root/attachments/some-uuid/ticket7304/trac_7304.patch) by AJonsson created at 2009-10-25 20:06:41\n\nInitial patch for review",
     "created_at": "2009-10-25T20:06:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7304",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_060915.json:
 }
 ```
 
-Attachment
+Attachment [trac_7304.patch](tarball://root/attachments/some-uuid/ticket7304/trac_7304.patch) by AJonsson created at 2009-10-25 20:06:41
 
 Initial patch for review
 
@@ -763,7 +763,7 @@ Thanks for the review! I will update the patch right now.
 archive/issue_comments_060950.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7304_contract_edge.patch](tarball://root/attachments/some-uuid/ticket7304/trac_7304_contract_edge.patch) by brunellus created at 2012-05-16 10:34:37",
     "created_at": "2012-05-16T10:34:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7304",
     "type": "issue_comment",
@@ -772,7 +772,7 @@ archive/issue_comments_060950.json:
 }
 ```
 
-Attachment
+Attachment [trac_7304_contract_edge.patch](tarball://root/attachments/some-uuid/ticket7304/trac_7304_contract_edge.patch) by brunellus created at 2012-05-16 10:34:37
 
 
 

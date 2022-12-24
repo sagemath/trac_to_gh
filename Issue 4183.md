@@ -122,7 +122,7 @@ second try
 archive/issue_comments_030362.json:
 ```json
 {
-    "body": "Attachment\n\nin previous patch I trusted the \"everything is object\" too much... so not everything have `__class__`, that's why I added back the check for `__class__` and also `__module__`, though every class should have one... better safe than sorry",
+    "body": "Attachment [4183-2.patch](tarball://root/attachments/some-uuid/ticket4183/4183-2.patch) by aginiewicz created at 2008-09-25 00:47:39\n\nin previous patch I trusted the \"everything is object\" too much... so not everything have `__class__`, that's why I added back the check for `__class__` and also `__module__`, though every class should have one... better safe than sorry",
     "created_at": "2008-09-25T00:47:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4183",
     "type": "issue_comment",
@@ -131,7 +131,7 @@ archive/issue_comments_030362.json:
 }
 ```
 
-Attachment
+Attachment [4183-2.patch](tarball://root/attachments/some-uuid/ticket4183/4183-2.patch) by aginiewicz created at 2008-09-25 00:47:39
 
 in previous patch I trusted the "everything is object" too much... so not everything have `__class__`, that's why I added back the check for `__class__` and also `__module__`, though every class should have one... better safe than sorry
 

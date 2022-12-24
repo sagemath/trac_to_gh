@@ -87,7 +87,7 @@ Changing component from combinatorics to graph theory.
 archive/issue_comments_008394.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [charpoly_for_graphs.patch](tarball://root/attachments/some-uuid/ticket1319/charpoly_for_graphs.patch) by rlm created at 2007-12-17 21:18:31",
     "created_at": "2007-12-17T21:18:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1319",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_008394.json:
 }
 ```
 
-Attachment
+Attachment [charpoly_for_graphs.patch](tarball://root/attachments/some-uuid/ticket1319/charpoly_for_graphs.patch) by rlm created at 2007-12-17 21:18:31
 
 
 

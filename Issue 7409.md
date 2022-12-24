@@ -107,7 +107,7 @@ Changing assignee from mhansen to hivert.
 archive/issue_comments_062353.json:
 ```json
 {
-    "body": "Attachment\n\nI implemented an algorithm from \"Nijenhuis, Wilf, Combinatorial Algorithms\" which looks reasonably fast. There is certainly room for improvement. However, It will be done later if needed.",
+    "body": "Attachment [trac_7409_random_partitions.patch](tarball://root/attachments/some-uuid/ticket7409/trac_7409_random_partitions.patch) by hivert created at 2009-11-24 12:50:27\n\nI implemented an algorithm from \"Nijenhuis, Wilf, Combinatorial Algorithms\" which looks reasonably fast. There is certainly room for improvement. However, It will be done later if needed.",
     "created_at": "2009-11-24T12:50:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7409",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_062353.json:
 }
 ```
 
-Attachment
+Attachment [trac_7409_random_partitions.patch](tarball://root/attachments/some-uuid/ticket7409/trac_7409_random_partitions.patch) by hivert created at 2009-11-24 12:50:27
 
 I implemented an algorithm from "Nijenhuis, Wilf, Combinatorial Algorithms" which looks reasonably fast. There is certainly room for improvement. However, It will be done later if needed.
 

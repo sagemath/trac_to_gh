@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2781
 archive/issue_comments_019101.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch currently passes minimal doctests, but breaks lots of other doctests.  I've run out of time to work on it now, but will look at this later.",
+    "body": "Attachment [trac-2781-symbolic-bool.patch](tarball://root/attachments/some-uuid/ticket2781/trac-2781-symbolic-bool.patch) by jason created at 2008-04-02 21:47:40\n\nThe patch currently passes minimal doctests, but breaks lots of other doctests.  I've run out of time to work on it now, but will look at this later.",
     "created_at": "2008-04-02T21:47:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2781",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_019101.json:
 }
 ```
 
-Attachment
+Attachment [trac-2781-symbolic-bool.patch](tarball://root/attachments/some-uuid/ticket2781/trac-2781-symbolic-bool.patch) by jason created at 2008-04-02 21:47:40
 
 The patch currently passes minimal doctests, but breaks lots of other doctests.  I've run out of time to work on it now, but will look at this later.
 

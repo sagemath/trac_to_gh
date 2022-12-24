@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6009
 archive/issue_comments_047815.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6009.patch](tarball://root/attachments/some-uuid/ticket6009/trac_6009.patch) by kcrisman created at 2009-05-08 19:16:56",
     "created_at": "2009-05-08T19:16:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6009",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_047815.json:
 }
 ```
 
-Attachment
+Attachment [trac_6009.patch](tarball://root/attachments/some-uuid/ticket6009/trac_6009.patch) by kcrisman created at 2009-05-08 19:16:56
 
 
 
@@ -139,7 +139,7 @@ reviewer patch: fix typos, add consistency to the whole module
 archive/issue_comments_047821.json:
 ```json
 {
-    "body": "Attachment\n\nREFEREE REPORT\n\n\n\nThe patch `trac_6009.patch` applies OK against the \"post-final\" sage-3.4.2, all doctests pass with the options `-t -long`. The reference manual built fine, but note that `sage/plot/text.py` is not included in the reference manual so don't be surprised when you can't search for `sage/plot/text.py` in the reference manual. The doctest coverage for `sage/plot/text.py` is 100% as claimed.\n\n\n\nHowever, I notice that the patch introduces some typos and inconsistencies into the module `sage/plot/text.py`. These are fixed in the reviewer patch `trac_6009-reviewer.patch`. Apart from these issues, positive review for kcrisman's patch. Only my patch needs to be reviewed.",
+    "body": "Attachment [trac_6009-reviewer.patch](tarball://root/attachments/some-uuid/ticket6009/trac_6009-reviewer.patch) by mvngu created at 2009-05-09 03:02:16\n\nREFEREE REPORT\n\n\n\nThe patch `trac_6009.patch` applies OK against the \"post-final\" sage-3.4.2, all doctests pass with the options `-t -long`. The reference manual built fine, but note that `sage/plot/text.py` is not included in the reference manual so don't be surprised when you can't search for `sage/plot/text.py` in the reference manual. The doctest coverage for `sage/plot/text.py` is 100% as claimed.\n\n\n\nHowever, I notice that the patch introduces some typos and inconsistencies into the module `sage/plot/text.py`. These are fixed in the reviewer patch `trac_6009-reviewer.patch`. Apart from these issues, positive review for kcrisman's patch. Only my patch needs to be reviewed.",
     "created_at": "2009-05-09T03:02:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6009",
     "type": "issue_comment",
@@ -148,7 +148,7 @@ archive/issue_comments_047821.json:
 }
 ```
 
-Attachment
+Attachment [trac_6009-reviewer.patch](tarball://root/attachments/some-uuid/ticket6009/trac_6009-reviewer.patch) by mvngu created at 2009-05-09 03:02:16
 
 REFEREE REPORT
 

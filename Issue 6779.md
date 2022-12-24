@@ -66,7 +66,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_055832.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good, positive review.",
+    "body": "Attachment [trac_6779_positive_integer_relations_bug_in_lattice_polytope.patch](tarball://root/attachments/some-uuid/ticket6779/trac_6779_positive_integer_relations_bug_in_lattice_polytope.patch) by mhampton created at 2009-10-24 15:44:28\n\nLooks good, positive review.",
     "created_at": "2009-10-24T15:44:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6779",
     "type": "issue_comment",
@@ -75,7 +75,7 @@ archive/issue_comments_055832.json:
 }
 ```
 
-Attachment
+Attachment [trac_6779_positive_integer_relations_bug_in_lattice_polytope.patch](tarball://root/attachments/some-uuid/ticket6779/trac_6779_positive_integer_relations_bug_in_lattice_polytope.patch) by mhampton created at 2009-10-24 15:44:28
 
 Looks good, positive review.
 

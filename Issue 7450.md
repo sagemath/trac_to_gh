@@ -115,7 +115,7 @@ I have replaced the patch with one that has the proper citation markup.  Having 
 archive/issue_comments_062754.json:
 ```json
 {
-    "body": "Attachment\n\nAnd I replaced it once more, having added an optional argument to `is_primary` to check whether an ideal is primary wrt a given prime ideal; also added more doctests borrowed from the Macaulay2 docs.",
+    "body": "Attachment [trac_7450.patch](tarball://root/attachments/some-uuid/ticket7450/trac_7450.patch) by AlexGhitza created at 2009-11-15 01:01:23\n\nAnd I replaced it once more, having added an optional argument to `is_primary` to check whether an ideal is primary wrt a given prime ideal; also added more doctests borrowed from the Macaulay2 docs.",
     "created_at": "2009-11-15T01:01:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7450",
     "type": "issue_comment",
@@ -124,7 +124,7 @@ archive/issue_comments_062754.json:
 }
 ```
 
-Attachment
+Attachment [trac_7450.patch](tarball://root/attachments/some-uuid/ticket7450/trac_7450.patch) by AlexGhitza created at 2009-11-15 01:01:23
 
 And I replaced it once more, having added an optional argument to `is_primary` to check whether an ideal is primary wrt a given prime ideal; also added more doctests borrowed from the Macaulay2 docs.
 

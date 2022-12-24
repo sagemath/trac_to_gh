@@ -54,7 +54,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6805
 archive/issue_comments_056031.json:
 ```json
 {
-    "body": "Attachment\n\nSeems like a reasonable change, and tests out OK, so positive review.",
+    "body": "Attachment [trac_6805_integrality_check_in_lattice_polytope.patch](tarball://root/attachments/some-uuid/ticket6805/trac_6805_integrality_check_in_lattice_polytope.patch) by mhampton created at 2009-10-29 18:42:50\n\nSeems like a reasonable change, and tests out OK, so positive review.",
     "created_at": "2009-10-29T18:42:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6805",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_056031.json:
 }
 ```
 
-Attachment
+Attachment [trac_6805_integrality_check_in_lattice_polytope.patch](tarball://root/attachments/some-uuid/ticket6805/trac_6805_integrality_check_in_lattice_polytope.patch) by mhampton created at 2009-10-29 18:42:50
 
 Seems like a reasonable change, and tests out OK, so positive review.
 

@@ -49,7 +49,7 @@ based on Sage 4.1.1.rc2
 archive/issue_comments_055050.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6700-spell-check-geometry.patch](tarball://root/attachments/some-uuid/ticket6700/trac_6700-spell-check-geometry.patch) by was created at 2009-08-11 18:21:33",
     "created_at": "2009-08-11T18:21:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6700",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_055050.json:
 }
 ```
 
-Attachment
+Attachment [trac_6700-spell-check-geometry.patch](tarball://root/attachments/some-uuid/ticket6700/trac_6700-spell-check-geometry.patch) by was created at 2009-08-11 18:21:33
 
 
 

@@ -264,7 +264,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1571
 archive/issue_comments_010001.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-2.10.alpha3-integrate-Minh-Nguyen-suggestions-for-tut.tex.patch](tarball://root/attachments/some-uuid/ticket1571/Sage-2.10.alpha3-integrate-Minh-Nguyen-suggestions-for-tut.tex.patch) by mabshoff created at 2008-01-13 18:43:40",
     "created_at": "2008-01-13T18:43:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1571",
     "type": "issue_comment",
@@ -273,7 +273,7 @@ archive/issue_comments_010001.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.10.alpha3-integrate-Minh-Nguyen-suggestions-for-tut.tex.patch](tarball://root/attachments/some-uuid/ticket1571/Sage-2.10.alpha3-integrate-Minh-Nguyen-suggestions-for-tut.tex.patch) by mabshoff created at 2008-01-13 18:43:40
 
 
 

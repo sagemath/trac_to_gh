@@ -157,7 +157,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_089446.json:
 ```json
 {
-    "body": "Attachment\n\ntable of contents of the book",
+    "body": "Attachment [intro.pdf](tarball://root/attachments/some-uuid/ticket9395/intro.pdf) by zimmerma created at 2010-07-01 08:48:54\n\ntable of contents of the book",
     "created_at": "2010-07-01T08:48:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9395",
     "type": "issue_comment",
@@ -166,7 +166,7 @@ archive/issue_comments_089446.json:
 }
 ```
 
-Attachment
+Attachment [intro.pdf](tarball://root/attachments/some-uuid/ticket9395/intro.pdf) by zimmerma created at 2010-07-01 08:48:54
 
 table of contents of the book
 
@@ -195,7 +195,7 @@ current version of chapter on number theory
 archive/issue_comments_089448.json:
 ```json
 {
-    "body": "Attachment\n\nThe version 1.0 of the book has now appeared, and is available from\nhttp://www.loria.fr/~zimmerma/sagebook.html. Any feedback is most welcome!",
+    "body": "Attachment [numbertheory.pdf](tarball://root/attachments/some-uuid/ticket9395/numbertheory.pdf) by zimmerma created at 2010-07-09 11:00:47\n\nThe version 1.0 of the book has now appeared, and is available from\nhttp://www.loria.fr/~zimmerma/sagebook.html. Any feedback is most welcome!",
     "created_at": "2010-07-09T11:00:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9395",
     "type": "issue_comment",
@@ -204,7 +204,7 @@ archive/issue_comments_089448.json:
 }
 ```
 
-Attachment
+Attachment [numbertheory.pdf](tarball://root/attachments/some-uuid/ticket9395/numbertheory.pdf) by zimmerma created at 2010-07-09 11:00:47
 
 The version 1.0 of the book has now appeared, and is available from
 http://www.loria.fr/~zimmerma/sagebook.html. Any feedback is most welcome!
@@ -389,7 +389,7 @@ Paul
 archive/issue_comments_089456.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9395.patch](tarball://root/attachments/some-uuid/ticket9395/trac_9395.patch) by zimmerma created at 2010-09-01 16:09:55",
     "created_at": "2010-09-01T16:09:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9395",
     "type": "issue_comment",
@@ -398,7 +398,7 @@ archive/issue_comments_089456.json:
 }
 ```
 
-Attachment
+Attachment [trac_9395.patch](tarball://root/attachments/some-uuid/ticket9395/trac_9395.patch) by zimmerma created at 2010-09-01 16:09:55
 
 
 
@@ -425,7 +425,7 @@ apply on top of trac_9395.patch
 archive/issue_comments_089458.json:
 ```json
 {
-    "body": "Attachment\n\nEverything is still ok for me. I added 'long time' to the longest tests, this reduces the time for normal testing to 12 seconds on my computer compared to 67 for the long version.\n\nPaul, if you agree with my reviewer's patch, you can give this ticket a positive review.\n\n       Yann",
+    "body": "Attachment [trac_9395_review.patch](tarball://root/attachments/some-uuid/ticket9395/trac_9395_review.patch) by ylchapuy created at 2010-09-01 17:33:34\n\nEverything is still ok for me. I added 'long time' to the longest tests, this reduces the time for normal testing to 12 seconds on my computer compared to 67 for the long version.\n\nPaul, if you agree with my reviewer's patch, you can give this ticket a positive review.\n\n       Yann",
     "created_at": "2010-09-01T17:33:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9395",
     "type": "issue_comment",
@@ -434,7 +434,7 @@ archive/issue_comments_089458.json:
 }
 ```
 
-Attachment
+Attachment [trac_9395_review.patch](tarball://root/attachments/some-uuid/ticket9395/trac_9395_review.patch) by ylchapuy created at 2010-09-01 17:33:34
 
 Everything is still ok for me. I added 'long time' to the longest tests, this reduces the time for normal testing to 12 seconds on my computer compared to 67 for the long version.
 
@@ -591,7 +591,7 @@ apply only this patch
 archive/issue_comments_089466.json:
 ```json
 {
-    "body": "Attachment\n\n> Could you update the just first line of the combined patch? \n\ndone.\nPaul",
+    "body": "Attachment [trac_9395_combined.patch](tarball://root/attachments/some-uuid/ticket9395/trac_9395_combined.patch) by zimmerma created at 2010-09-07 08:14:04\n\n> Could you update the just first line of the combined patch? \n\ndone.\nPaul",
     "created_at": "2010-09-07T08:14:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9395",
     "type": "issue_comment",
@@ -600,7 +600,7 @@ archive/issue_comments_089466.json:
 }
 ```
 
-Attachment
+Attachment [trac_9395_combined.patch](tarball://root/attachments/some-uuid/ticket9395/trac_9395_combined.patch) by zimmerma created at 2010-09-07 08:14:04
 
 > Could you update the just first line of the combined patch? 
 
@@ -650,7 +650,7 @@ Resolution: fixed
 archive/issue_comments_089469.json:
 ```json
 {
-    "body": "Attachment\n\nUpdate `MANIFEST.in` and `setup.py` with new file and directory",
+    "body": "Attachment [trac_9395-manifest_and_setup.patch](tarball://root/attachments/some-uuid/ticket9395/trac_9395-manifest_and_setup.patch) by mpatel created at 2010-09-17 02:58:09\n\nUpdate `MANIFEST.in` and `setup.py` with new file and directory",
     "created_at": "2010-09-17T02:58:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9395",
     "type": "issue_comment",
@@ -659,7 +659,7 @@ archive/issue_comments_089469.json:
 }
 ```
 
-Attachment
+Attachment [trac_9395-manifest_and_setup.patch](tarball://root/attachments/some-uuid/ticket9395/trac_9395-manifest_and_setup.patch) by mpatel created at 2010-09-17 02:58:09
 
 Update `MANIFEST.in` and `setup.py` with new file and directory
 

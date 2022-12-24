@@ -93,7 +93,7 @@ patch for fixing a bug and improving the documentation in jordan_form
 archive/issue_comments_022968.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [jordan_form_fixes.patch](tarball://root/attachments/some-uuid/ticket3316/jordan_form_fixes.patch) by pdenapo created at 2008-05-27 23:39:40",
     "created_at": "2008-05-27T23:39:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3316",
     "type": "issue_comment",
@@ -102,7 +102,7 @@ archive/issue_comments_022968.json:
 }
 ```
 
-Attachment
+Attachment [jordan_form_fixes.patch](tarball://root/attachments/some-uuid/ticket3316/jordan_form_fixes.patch) by pdenapo created at 2008-05-27 23:39:40
 
 
 
@@ -161,7 +161,7 @@ Michael
 archive/issue_comments_022970.json:
 ```json
 {
-    "body": "Attachment\n\na new patch (this time correct, I hope)",
+    "body": "Attachment [jordan_form_fixes_correction.patch](tarball://root/attachments/some-uuid/ticket3316/jordan_form_fixes_correction.patch) by pdenapo created at 2008-06-12 02:13:56\n\na new patch (this time correct, I hope)",
     "created_at": "2008-06-12T02:13:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3316",
     "type": "issue_comment",
@@ -170,7 +170,7 @@ archive/issue_comments_022970.json:
 }
 ```
 
-Attachment
+Attachment [jordan_form_fixes_correction.patch](tarball://root/attachments/some-uuid/ticket3316/jordan_form_fixes_correction.patch) by pdenapo created at 2008-06-12 02:13:56
 
 a new patch (this time correct, I hope)
 

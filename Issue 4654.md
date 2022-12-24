@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4654
 archive/issue_comments_035051.json:
 ```json
 {
-    "body": "Attachment\n\nYep, I agree that this is an excellent thing to do.\n\nCheers,\n\nMichael",
+    "body": "Attachment [sagetest.patch](tarball://root/attachments/some-uuid/ticket4654/sagetest.patch) by mabshoff created at 2008-11-29 16:51:58\n\nYep, I agree that this is an excellent thing to do.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-29T16:51:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4654",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_035051.json:
 }
 ```
 
-Attachment
+Attachment [sagetest.patch](tarball://root/attachments/some-uuid/ticket4654/sagetest.patch) by mabshoff created at 2008-11-29 16:51:58
 
 Yep, I agree that this is an excellent thing to do.
 

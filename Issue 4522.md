@@ -95,7 +95,7 @@ Oh yes, by the way, I doctested all of the rings directory after this patch and 
 archive/issue_comments_033566.json:
 ```json
 {
-    "body": "Attachment\n\nmake the interface of polynomials more consistent",
+    "body": "Attachment [trac_4522-polynomial_interface.patch](tarball://root/attachments/some-uuid/ticket4522/trac_4522-polynomial_interface.patch) by burcin created at 2008-11-28 12:41:51\n\nmake the interface of polynomials more consistent",
     "created_at": "2008-11-28T12:41:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4522",
     "type": "issue_comment",
@@ -104,7 +104,7 @@ archive/issue_comments_033566.json:
 }
 ```
 
-Attachment
+Attachment [trac_4522-polynomial_interface.patch](tarball://root/attachments/some-uuid/ticket4522/trac_4522-polynomial_interface.patch) by burcin created at 2008-11-28 12:41:51
 
 make the interface of polynomials more consistent
 

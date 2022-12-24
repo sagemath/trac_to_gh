@@ -139,7 +139,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_093356.json:
 ```json
 {
-    "body": "Attachment\n\nThis was fixed by #9880. [attachment:trac_9632-doctests.patch] adds doctests.",
+    "body": "Attachment [trac_9632-doctests.patch](tarball://root/attachments/some-uuid/ticket9632/trac_9632-doctests.patch) by burcin created at 2013-07-01 00:49:12\n\nThis was fixed by #9880. [attachment:trac_9632-doctests.patch] adds doctests.",
     "created_at": "2013-07-01T00:49:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9632",
     "type": "issue_comment",
@@ -148,7 +148,7 @@ archive/issue_comments_093356.json:
 }
 ```
 
-Attachment
+Attachment [trac_9632-doctests.patch](tarball://root/attachments/some-uuid/ticket9632/trac_9632-doctests.patch) by burcin created at 2013-07-01 00:49:12
 
 This was fixed by #9880. [attachment:trac_9632-doctests.patch] adds doctests.
 

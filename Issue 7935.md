@@ -90,7 +90,7 @@ Thanks, I'll review it as soon as possible (I wrote the function so it is my fau
 archive/issue_comments_069144.json:
 ```json
 {
-    "body": "Attachment\n\nexported against 4.3.alpha1",
+    "body": "Attachment [trac_7935.patch](tarball://root/attachments/some-uuid/ticket7935/trac_7935.patch) by wuthrich created at 2010-01-15 15:17:09\n\nexported against 4.3.alpha1",
     "created_at": "2010-01-15T15:17:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7935",
     "type": "issue_comment",
@@ -99,7 +99,7 @@ archive/issue_comments_069144.json:
 }
 ```
 
-Attachment
+Attachment [trac_7935.patch](tarball://root/attachments/some-uuid/ticket7935/trac_7935.patch) by wuthrich created at 2010-01-15 15:17:09
 
 exported against 4.3.alpha1
 
@@ -483,7 +483,7 @@ completes it as before.
 archive/issue_comments_069161.json:
 ```json
 {
-    "body": "Attachment\n\nApply after previous",
+    "body": "Attachment [trac_7935b.patch](tarball://root/attachments/some-uuid/ticket7935/trac_7935b.patch) by cremona created at 2010-01-19 15:42:09\n\nApply after previous",
     "created_at": "2010-01-19T15:42:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7935",
     "type": "issue_comment",
@@ -492,7 +492,7 @@ archive/issue_comments_069161.json:
 }
 ```
 
-Attachment
+Attachment [trac_7935b.patch](tarball://root/attachments/some-uuid/ticket7935/trac_7935b.patch) by cremona created at 2010-01-19 15:42:09
 
 Apply after previous
 
@@ -595,7 +595,7 @@ second patch to be applied after the first patch, exported against 4.3.1
 archive/issue_comments_069167.json:
 ```json
 {
-    "body": "Attachment\n\nI have rebased it.",
+    "body": "Attachment [trac_7935b.2.patch](tarball://root/attachments/some-uuid/ticket7935/trac_7935b.2.patch) by wuthrich created at 2010-01-21 13:06:15\n\nI have rebased it.",
     "created_at": "2010-01-21T13:06:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7935",
     "type": "issue_comment",
@@ -604,7 +604,7 @@ archive/issue_comments_069167.json:
 }
 ```
 
-Attachment
+Attachment [trac_7935b.2.patch](tarball://root/attachments/some-uuid/ticket7935/trac_7935b.2.patch) by wuthrich created at 2010-01-21 13:06:15
 
 I have rebased it.
 

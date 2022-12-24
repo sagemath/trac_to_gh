@@ -62,7 +62,7 @@ http://sage.math.washington.edu/home/dmharvey/ntl-5.4.2.p1.spkg
 archive/issue_comments_020016.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ntl-error.patch](tarball://root/attachments/some-uuid/ticket2903/ntl-error.patch) by mabshoff created at 2008-04-13 03:03:36",
     "created_at": "2008-04-13T03:03:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2903",
     "type": "issue_comment",
@@ -71,7 +71,7 @@ archive/issue_comments_020016.json:
 }
 ```
 
-Attachment
+Attachment [ntl-error.patch](tarball://root/attachments/some-uuid/ticket2903/ntl-error.patch) by mabshoff created at 2008-04-13 03:03:36
 
 
 

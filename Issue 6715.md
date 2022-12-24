@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6715
 archive/issue_comments_055114.json:
 ```json
 {
-    "body": "Attachment\n\nbased on Sage 4.1.1.rc2",
+    "body": "Attachment [trac_6715-unix-endlines.patch](tarball://root/attachments/some-uuid/ticket6715/trac_6715-unix-endlines.patch) by mvngu created at 2009-08-09 16:28:19\n\nbased on Sage 4.1.1.rc2",
     "created_at": "2009-08-09T16:28:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6715",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_055114.json:
 }
 ```
 
-Attachment
+Attachment [trac_6715-unix-endlines.patch](tarball://root/attachments/some-uuid/ticket6715/trac_6715-unix-endlines.patch) by mvngu created at 2009-08-09 16:28:19
 
 based on Sage 4.1.1.rc2
 
@@ -89,7 +89,7 @@ based on Sage 4.1.1.rc2
 archive/issue_comments_055117.json:
 ```json
 {
-    "body": "Attachment\n\nlooks good, only comments and doc-lines touched, no code or doctests.\n\nthere is just a \"newline missing\" note from mercurial at the bottom of the first part of the first patch. i think it is still ok, though (line 123 in sage/logic/booleval.py, first patch).",
+    "body": "Attachment [trac_6715-spell-check-logic.patch](tarball://root/attachments/some-uuid/ticket6715/trac_6715-spell-check-logic.patch) by schilly created at 2009-08-14 10:18:39\n\nlooks good, only comments and doc-lines touched, no code or doctests.\n\nthere is just a \"newline missing\" note from mercurial at the bottom of the first part of the first patch. i think it is still ok, though (line 123 in sage/logic/booleval.py, first patch).",
     "created_at": "2009-08-14T10:18:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6715",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_055117.json:
 }
 ```
 
-Attachment
+Attachment [trac_6715-spell-check-logic.patch](tarball://root/attachments/some-uuid/ticket6715/trac_6715-spell-check-logic.patch) by schilly created at 2009-08-14 10:18:39
 
 looks good, only comments and doc-lines touched, no code or doctests.
 

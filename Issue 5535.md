@@ -222,7 +222,7 @@ AttributeError: 'int' object has no attribute 'prime_divisors'
 archive/issue_comments_043039.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5535_is_primitive_avoid_duplicate_factorizations.patch](tarball://root/attachments/some-uuid/ticket5535/trac_5535_is_primitive_avoid_duplicate_factorizations.patch) by rhinton created at 2009-03-23 15:00:43",
     "created_at": "2009-03-23T15:00:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5535",
     "type": "issue_comment",
@@ -231,7 +231,7 @@ archive/issue_comments_043039.json:
 }
 ```
 
-Attachment
+Attachment [trac_5535_is_primitive_avoid_duplicate_factorizations.patch](tarball://root/attachments/some-uuid/ticket5535/trac_5535_is_primitive_avoid_duplicate_factorizations.patch) by rhinton created at 2009-03-23 15:00:43
 
 
 
@@ -260,7 +260,7 @@ Let me know if I can fix anything else.  When this patch receives a positive rev
 archive/issue_comments_043041.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5535_is_primitive_avoid_duplicate_factorizations.2.patch](tarball://root/attachments/some-uuid/ticket5535/trac_5535_is_primitive_avoid_duplicate_factorizations.2.patch) by cremona created at 2009-03-23 17:03:23",
     "created_at": "2009-03-23T17:03:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5535",
     "type": "issue_comment",
@@ -269,7 +269,7 @@ archive/issue_comments_043041.json:
 }
 ```
 
-Attachment
+Attachment [trac_5535_is_primitive_avoid_duplicate_factorizations.2.patch](tarball://root/attachments/some-uuid/ticket5535/trac_5535_is_primitive_avoid_duplicate_factorizations.2.patch) by cremona created at 2009-03-23 17:03:23
 
 
 

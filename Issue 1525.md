@@ -126,7 +126,7 @@ http://sage.math.washington.edu/home/rlmill/networkx-0.36.spkg
 archive/issue_comments_009759.json:
 ```json
 {
-    "body": "Attachment\n\nNote that now these numbers are backed up by Sloane!",
+    "body": "Attachment [bipartite.patch](tarball://root/attachments/some-uuid/ticket1525/bipartite.patch) by rlm created at 2008-01-14 00:27:36\n\nNote that now these numbers are backed up by Sloane!",
     "created_at": "2008-01-14T00:27:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1525",
     "type": "issue_comment",
@@ -135,7 +135,7 @@ archive/issue_comments_009759.json:
 }
 ```
 
-Attachment
+Attachment [bipartite.patch](tarball://root/attachments/some-uuid/ticket1525/bipartite.patch) by rlm created at 2008-01-14 00:27:36
 
 Note that now these numbers are backed up by Sloane!
 

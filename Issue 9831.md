@@ -51,7 +51,7 @@ Fixes the error.
 archive/issue_comments_097016.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9832-invalid-html.patch](tarball://root/attachments/some-uuid/ticket9832/trac_9832-invalid-html.patch) by timdumol created at 2010-08-28 14:15:48",
     "created_at": "2010-08-28T14:15:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9831",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_097016.json:
 }
 ```
 
-Attachment
+Attachment [trac_9832-invalid-html.patch](tarball://root/attachments/some-uuid/ticket9832/trac_9832-invalid-html.patch) by timdumol created at 2010-08-28 14:15:48
 
 
 

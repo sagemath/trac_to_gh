@@ -181,7 +181,7 @@ I haven't made a template for every html_* yet but the worksheet listing templat
 archive/issue_comments_028362.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3950.patch](tarball://root/attachments/some-uuid/ticket3950/trac_3950.patch) by mhansen created at 2008-12-02 10:33:36",
     "created_at": "2008-12-02T10:33:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3950",
     "type": "issue_comment",
@@ -190,7 +190,7 @@ archive/issue_comments_028362.json:
 }
 ```
 
-Attachment
+Attachment [trac_3950.patch](tarball://root/attachments/some-uuid/ticket3950/trac_3950.patch) by mhansen created at 2008-12-02 10:33:36
 
 
 
@@ -199,7 +199,7 @@ Attachment
 archive/issue_comments_028363.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3950-2.patch](tarball://root/attachments/some-uuid/ticket3950/trac_3950-2.patch) by mhansen created at 2008-12-03 00:43:35",
     "created_at": "2008-12-03T00:43:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3950",
     "type": "issue_comment",
@@ -208,7 +208,7 @@ archive/issue_comments_028363.json:
 }
 ```
 
-Attachment
+Attachment [trac_3950-2.patch](tarball://root/attachments/some-uuid/ticket3950/trac_3950-2.patch) by mhansen created at 2008-12-03 00:43:35
 
 
 
@@ -217,7 +217,7 @@ Attachment
 archive/issue_comments_028364.json:
 ```json
 {
-    "body": "Attachment\n\nI attached my changes as trac_3950-2.patch.  trac_3950-folded.patch is a patch showing the combined effect of the two patches.  It is helpful for reviewing purposes, but the two other ones are the ones that should be applied for credit reasons.",
+    "body": "Attachment [trac_3950-folded.patch](tarball://root/attachments/some-uuid/ticket3950/trac_3950-folded.patch) by mhansen created at 2008-12-03 00:50:00\n\nI attached my changes as trac_3950-2.patch.  trac_3950-folded.patch is a patch showing the combined effect of the two patches.  It is helpful for reviewing purposes, but the two other ones are the ones that should be applied for credit reasons.",
     "created_at": "2008-12-03T00:50:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3950",
     "type": "issue_comment",
@@ -226,7 +226,7 @@ archive/issue_comments_028364.json:
 }
 ```
 
-Attachment
+Attachment [trac_3950-folded.patch](tarball://root/attachments/some-uuid/ticket3950/trac_3950-folded.patch) by mhansen created at 2008-12-03 00:50:00
 
 I attached my changes as trac_3950-2.patch.  trac_3950-folded.patch is a patch showing the combined effect of the two patches.  It is helpful for reviewing purposes, but the two other ones are the ones that should be applied for credit reasons.
 

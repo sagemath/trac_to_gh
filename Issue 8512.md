@@ -110,7 +110,7 @@ Brand new (but mostly incomplete) SPKG.txt
 archive/issue_comments_076867.json:
 ```json
 {
-    "body": "Attachment\n\nModified spkg-install, removing the '-v' option to 'cp'",
+    "body": "Attachment [SPKG.txt](tarball://root/attachments/some-uuid/ticket8512/SPKG.txt) by drkirkby created at 2010-03-13 00:27:01\n\nModified spkg-install, removing the '-v' option to 'cp'",
     "created_at": "2010-03-13T00:27:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8512",
     "type": "issue_comment",
@@ -119,7 +119,7 @@ archive/issue_comments_076867.json:
 }
 ```
 
-Attachment
+Attachment [SPKG.txt](tarball://root/attachments/some-uuid/ticket8512/SPKG.txt) by drkirkby created at 2010-03-13 00:27:01
 
 Modified spkg-install, removing the '-v' option to 'cp'
 
@@ -130,7 +130,7 @@ Modified spkg-install, removing the '-v' option to 'cp'
 archive/issue_comments_076868.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [stein-watkins-ecdb.patch](tarball://root/attachments/some-uuid/ticket8512/stein-watkins-ecdb.patch) by drkirkby created at 2010-03-13 00:30:31",
     "created_at": "2010-03-13T00:30:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8512",
     "type": "issue_comment",
@@ -139,7 +139,7 @@ archive/issue_comments_076868.json:
 }
 ```
 
-Attachment
+Attachment [stein-watkins-ecdb.patch](tarball://root/attachments/some-uuid/ticket8512/stein-watkins-ecdb.patch) by drkirkby created at 2010-03-13 00:30:31
 
 
 

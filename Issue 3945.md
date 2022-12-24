@@ -216,7 +216,7 @@ Changing assignee from cwitty to mhansen.
 archive/issue_comments_028323.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3945.patch](tarball://root/attachments/some-uuid/ticket3945/trac_3945.patch) by mhansen created at 2008-10-12 19:01:24",
     "created_at": "2008-10-12T19:01:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3945",
     "type": "issue_comment",
@@ -225,7 +225,7 @@ archive/issue_comments_028323.json:
 }
 ```
 
-Attachment
+Attachment [trac_3945.patch](tarball://root/attachments/some-uuid/ticket3945/trac_3945.patch) by mhansen created at 2008-10-12 19:01:24
 
 
 
@@ -234,7 +234,7 @@ Attachment
 archive/issue_comments_028324.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3945-2.patch](tarball://root/attachments/some-uuid/ticket3945/trac_3945-2.patch) by mhansen created at 2008-10-12 20:12:57",
     "created_at": "2008-10-12T20:12:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3945",
     "type": "issue_comment",
@@ -243,7 +243,7 @@ archive/issue_comments_028324.json:
 }
 ```
 
-Attachment
+Attachment [trac_3945-2.patch](tarball://root/attachments/some-uuid/ticket3945/trac_3945-2.patch) by mhansen created at 2008-10-12 20:12:57
 
 
 
@@ -310,7 +310,7 @@ Resolution: fixed
 archive/issue_comments_028328.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3945-3.patch](tarball://root/attachments/some-uuid/ticket3945/trac_3945-3.patch) by mhansen created at 2008-10-12 23:02:03",
     "created_at": "2008-10-12T23:02:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3945",
     "type": "issue_comment",
@@ -319,4 +319,4 @@ archive/issue_comments_028328.json:
 }
 ```
 
-Attachment
+Attachment [trac_3945-3.patch](tarball://root/attachments/some-uuid/ticket3945/trac_3945-3.patch) by mhansen created at 2008-10-12 23:02:03

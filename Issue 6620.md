@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6620
 archive/issue_comments_054248.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6620.patch](tarball://root/attachments/some-uuid/ticket6620/trac_6620.patch) by saliola created at 2009-07-25 17:18:41",
     "created_at": "2009-07-25T17:18:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6620",
     "type": "issue_comment",
@@ -51,7 +51,7 @@ archive/issue_comments_054248.json:
 }
 ```
 
-Attachment
+Attachment [trac_6620.patch](tarball://root/attachments/some-uuid/ticket6620/trac_6620.patch) by saliola created at 2009-07-25 17:18:41
 
 
 
@@ -96,7 +96,7 @@ reviewer patch; fix typos in ReST format
 archive/issue_comments_054251.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch `trac_6620-reviewer.patch` fixes some typos in ReST formatting introduced by `trac_6620.patch`. Such typos would result in warnings when (re)building the reference manual.",
+    "body": "Attachment [trac_6620-reviewer.patch](tarball://root/attachments/some-uuid/ticket6620/trac_6620-reviewer.patch) by mvngu created at 2009-08-24 13:15:23\n\nThe patch `trac_6620-reviewer.patch` fixes some typos in ReST formatting introduced by `trac_6620.patch`. Such typos would result in warnings when (re)building the reference manual.",
     "created_at": "2009-08-24T13:15:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6620",
     "type": "issue_comment",
@@ -105,7 +105,7 @@ archive/issue_comments_054251.json:
 }
 ```
 
-Attachment
+Attachment [trac_6620-reviewer.patch](tarball://root/attachments/some-uuid/ticket6620/trac_6620-reviewer.patch) by mvngu created at 2009-08-24 13:15:23
 
 The patch `trac_6620-reviewer.patch` fixes some typos in ReST formatting introduced by `trac_6620.patch`. Such typos would result in warnings when (re)building the reference manual.
 

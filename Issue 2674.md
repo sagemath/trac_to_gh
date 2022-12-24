@@ -76,7 +76,7 @@ Fix for the first of the two reported problms.
 archive/issue_comments_018401.json:
 ```json
 {
-    "body": "Attachment\n\nI disagree that the second issue is a bug:\n\n```\n\nNote that \n\n  b[0] + 0\n\nand \n\n  0 + b[0]\n\nshould *not* work, since in each case that's a canonical coercion,\nand there is no natural map from ZZ (the parent of 0) into CuspForms(...)\nfor any weight except 0.   In Sage coercions should not happen automatically\nunless they are in some way natural and well defined on the whole domain\nof the coercion (in this case ZZ).\n```\n",
+    "body": "Attachment [modbug.patch](tarball://root/attachments/some-uuid/ticket2674/modbug.patch) by was created at 2008-03-26 18:03:40\n\nI disagree that the second issue is a bug:\n\n```\n\nNote that \n\n  b[0] + 0\n\nand \n\n  0 + b[0]\n\nshould *not* work, since in each case that's a canonical coercion,\nand there is no natural map from ZZ (the parent of 0) into CuspForms(...)\nfor any weight except 0.   In Sage coercions should not happen automatically\nunless they are in some way natural and well defined on the whole domain\nof the coercion (in this case ZZ).\n```\n",
     "created_at": "2008-03-26T18:03:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2674",
     "type": "issue_comment",
@@ -85,7 +85,7 @@ archive/issue_comments_018401.json:
 }
 ```
 
-Attachment
+Attachment [modbug.patch](tarball://root/attachments/some-uuid/ticket2674/modbug.patch) by was created at 2008-03-26 18:03:40
 
 I disagree that the second issue is a bug:
 
@@ -114,7 +114,7 @@ of the coercion (in this case ZZ).
 archive/issue_comments_018402.json:
 ```json
 {
-    "body": "Attachment\n\nThis new patch fixes the first issue reported above, as well as making the natural coercion from a subspace of modular forms into its parent work. \n\nInterestingly, this makes the second issue work, too.\n\nSo I'm not sure whether or not I like that this second issue works, because I agree with William's point that it should only work if there is a coercion from ZZ to a space of ModularForms. However, it's working \"for free\" for us, because it ultimately uses that the following works:\n\n\n```\nsage: M = ZZ**5\nsage: M(0)\n(0, 0, 0, 0, 0)\nsage: M(1)\n...\n<type 'exceptions.TypeError'>: can't initialize vector from nonzero non-list\n```\n\n\nThe issue is that a free module knows how to coerce 0 in, but no other integer (even when the module is rank 1 over ZZ, which I think is a good thing). So we could easily change it to make William's expectations correct by changing free modules, where the same issue arises.",
+    "body": "Attachment [trac-2674.patch](tarball://root/attachments/some-uuid/ticket2674/trac-2674.patch) by craigcitro created at 2008-03-26 18:34:31\n\nThis new patch fixes the first issue reported above, as well as making the natural coercion from a subspace of modular forms into its parent work. \n\nInterestingly, this makes the second issue work, too.\n\nSo I'm not sure whether or not I like that this second issue works, because I agree with William's point that it should only work if there is a coercion from ZZ to a space of ModularForms. However, it's working \"for free\" for us, because it ultimately uses that the following works:\n\n\n```\nsage: M = ZZ**5\nsage: M(0)\n(0, 0, 0, 0, 0)\nsage: M(1)\n...\n<type 'exceptions.TypeError'>: can't initialize vector from nonzero non-list\n```\n\n\nThe issue is that a free module knows how to coerce 0 in, but no other integer (even when the module is rank 1 over ZZ, which I think is a good thing). So we could easily change it to make William's expectations correct by changing free modules, where the same issue arises.",
     "created_at": "2008-03-26T18:34:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2674",
     "type": "issue_comment",
@@ -123,7 +123,7 @@ archive/issue_comments_018402.json:
 }
 ```
 
-Attachment
+Attachment [trac-2674.patch](tarball://root/attachments/some-uuid/ticket2674/trac-2674.patch) by craigcitro created at 2008-03-26 18:34:31
 
 This new patch fixes the first issue reported above, as well as making the natural coercion from a subspace of modular forms into its parent work. 
 
@@ -169,7 +169,7 @@ Changing assignee from was to craigcitro.
 archive/issue_comments_018404.json:
 ```json
 {
-    "body": "Attachment\n\nApply the bottom two patches in order, and this should also make coercion from `ModularForms(Gamma0(N))` to `ModularForms(Gamma0(Nd))` work. Note that it's currently *not* going to work involving `Gamma1(N)` -- this is because of a bug in `sturm_bound` (namely that it assumes it's working on `Gamma0`); I'm going to file another ticket for this, because I don't have time to fix it right now.",
+    "body": "Attachment [trac-2674-pt2.patch](tarball://root/attachments/some-uuid/ticket2674/trac-2674-pt2.patch) by craigcitro created at 2008-03-26 22:56:23\n\nApply the bottom two patches in order, and this should also make coercion from `ModularForms(Gamma0(N))` to `ModularForms(Gamma0(Nd))` work. Note that it's currently *not* going to work involving `Gamma1(N)` -- this is because of a bug in `sturm_bound` (namely that it assumes it's working on `Gamma0`); I'm going to file another ticket for this, because I don't have time to fix it right now.",
     "created_at": "2008-03-26T22:56:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2674",
     "type": "issue_comment",
@@ -178,7 +178,7 @@ archive/issue_comments_018404.json:
 }
 ```
 
-Attachment
+Attachment [trac-2674-pt2.patch](tarball://root/attachments/some-uuid/ticket2674/trac-2674-pt2.patch) by craigcitro created at 2008-03-26 22:56:23
 
 Apply the bottom two patches in order, and this should also make coercion from `ModularForms(Gamma0(N))` to `ModularForms(Gamma0(Nd))` work. Note that it's currently *not* going to work involving `Gamma1(N)` -- this is because of a bug in `sturm_bound` (namely that it assumes it's working on `Gamma0`); I'm going to file another ticket for this, because I don't have time to fix it right now.
 

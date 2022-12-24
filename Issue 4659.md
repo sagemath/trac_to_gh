@@ -47,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4659
 archive/issue_comments_035093.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me. As RobertWB said in http://groups.google.com/group/sage-devel/t/3d76203eeed29ec5 this can go in.\n\nCheers,\n\nMichael",
+    "body": "Attachment [integer-pyx.patch](tarball://root/attachments/some-uuid/ticket4659/integer-pyx.patch) by mabshoff created at 2008-11-30 03:44:20\n\nLooks good to me. As RobertWB said in http://groups.google.com/group/sage-devel/t/3d76203eeed29ec5 this can go in.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-30T03:44:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4659",
     "type": "issue_comment",
@@ -56,7 +56,7 @@ archive/issue_comments_035093.json:
 }
 ```
 
-Attachment
+Attachment [integer-pyx.patch](tarball://root/attachments/some-uuid/ticket4659/integer-pyx.patch) by mabshoff created at 2008-11-30 03:44:20
 
 Looks good to me. As RobertWB said in http://groups.google.com/group/sage-devel/t/3d76203eeed29ec5 this can go in.
 

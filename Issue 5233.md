@@ -69,7 +69,7 @@ Changing assignee from rlm to mhansen.
 archive/issue_comments_040104.json:
 ```json
 {
-    "body": "Attachment\n\nThe code looks reasonable, so positive review pending the doctests passing.",
+    "body": "Attachment [trac_5233.patch](tarball://root/attachments/some-uuid/ticket5233/trac_5233.patch) by jason created at 2009-02-11 06:46:20\n\nThe code looks reasonable, so positive review pending the doctests passing.",
     "created_at": "2009-02-11T06:46:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5233",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_040104.json:
 }
 ```
 
-Attachment
+Attachment [trac_5233.patch](tarball://root/attachments/some-uuid/ticket5233/trac_5233.patch) by jason created at 2009-02-11 06:46:20
 
 The code looks reasonable, so positive review pending the doctests passing.
 

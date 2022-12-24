@@ -129,7 +129,7 @@ Michael
 archive/issue_comments_040611.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5284.patch](tarball://root/attachments/some-uuid/ticket5284/trac_5284.patch) by mabshoff created at 2009-04-22 03:25:12",
     "created_at": "2009-04-22T03:25:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5284",
     "type": "issue_comment",
@@ -138,7 +138,7 @@ archive/issue_comments_040611.json:
 }
 ```
 
-Attachment
+Attachment [trac_5284.patch](tarball://root/attachments/some-uuid/ticket5284/trac_5284.patch) by mabshoff created at 2009-04-22 03:25:12
 
 
 

@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1668
 archive/issue_comments_010594.json:
 ```json
 {
-    "body": "Attachment\n\nrename polybori variables",
+    "body": "Attachment [trac_1668.patch](tarball://root/attachments/some-uuid/ticket1668/trac_1668.patch) by burcin created at 2008-01-08 14:17:14\n\nrename polybori variables",
     "created_at": "2008-01-08T14:17:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1668",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_010594.json:
 }
 ```
 
-Attachment
+Attachment [trac_1668.patch](tarball://root/attachments/some-uuid/ticket1668/trac_1668.patch) by burcin created at 2008-01-08 14:17:14
 
 rename polybori variables
 

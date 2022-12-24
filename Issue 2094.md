@@ -53,7 +53,7 @@ http://sage.math.washington.edu/home/boothby/SPKG/2.10.1/
 archive/issue_comments_013536.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [install.patch](tarball://root/attachments/some-uuid/ticket2094/install.patch) by boothby created at 2008-02-08 01:36:16",
     "created_at": "2008-02-08T01:36:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2094",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_013536.json:
 }
 ```
 
-Attachment
+Attachment [install.patch](tarball://root/attachments/some-uuid/ticket2094/install.patch) by boothby created at 2008-02-08 01:36:16
 
 
 

@@ -164,7 +164,7 @@ Michael
 archive/issue_comments_024877.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [favicon.ico](tarball://root/attachments/some-uuid/ticket3526/favicon.ico) by TimothyClemans created at 2008-07-06 02:30:34",
     "created_at": "2008-07-06T02:30:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3526",
     "type": "issue_comment",
@@ -173,7 +173,7 @@ archive/issue_comments_024877.json:
 }
 ```
 
-Attachment
+Attachment [favicon.ico](tarball://root/attachments/some-uuid/ticket3526/favicon.ico) by TimothyClemans created at 2008-07-06 02:30:34
 
 
 
@@ -182,7 +182,7 @@ Attachment
 archive/issue_comments_024878.json:
 ```json
 {
-    "body": "Attachment\n\nPatch looks good to me, positive review.\n\nCheers,\n\nMichael",
+    "body": "Attachment [extcode-3526.2.patch](tarball://root/attachments/some-uuid/ticket3526/extcode-3526.2.patch) by mabshoff created at 2008-07-06 02:38:30\n\nPatch looks good to me, positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-07-06T02:38:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3526",
     "type": "issue_comment",
@@ -191,7 +191,7 @@ archive/issue_comments_024878.json:
 }
 ```
 
-Attachment
+Attachment [extcode-3526.2.patch](tarball://root/attachments/some-uuid/ticket3526/extcode-3526.2.patch) by mabshoff created at 2008-07-06 02:38:30
 
 Patch looks good to me, positive review.
 

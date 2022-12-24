@@ -51,7 +51,7 @@ Fixes the problem, adds some functionality for padic extensions
 archive/issue_comments_005635.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [padic_framework.hg](tarball://root/attachments/some-uuid/ticket919/padic_framework.hg) by roed created at 2007-10-19 22:09:53",
     "created_at": "2007-10-19T22:09:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/919",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_005635.json:
 }
 ```
 
-Attachment
+Attachment [padic_framework.hg](tarball://root/attachments/some-uuid/ticket919/padic_framework.hg) by roed created at 2007-10-19 22:09:53
 
 
 

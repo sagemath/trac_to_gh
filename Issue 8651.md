@@ -100,7 +100,7 @@ add doctests
 archive/issue_comments_078497.json:
 ```json
 {
-    "body": "Attachment\n\nI uploaded a patch with the doctest, new pynac package with the fix coming soon.",
+    "body": "Attachment [trac_8651-binomial.patch](tarball://root/attachments/some-uuid/ticket8651/trac_8651-binomial.patch) by burcin created at 2010-05-05 19:13:53\n\nI uploaded a patch with the doctest, new pynac package with the fix coming soon.",
     "created_at": "2010-05-05T19:13:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8651",
     "type": "issue_comment",
@@ -109,7 +109,7 @@ archive/issue_comments_078497.json:
 }
 ```
 
-Attachment
+Attachment [trac_8651-binomial.patch](tarball://root/attachments/some-uuid/ticket8651/trac_8651-binomial.patch) by burcin created at 2010-05-05 19:13:53
 
 I uploaded a patch with the doctest, new pynac package with the fix coming soon.
 

@@ -106,7 +106,7 @@ changed the title so it doesn't get picked up by the wrong trac report
 archive/issue_comments_034038.json:
 ```json
 {
-    "body": "Attachment\n\nI'm totally unwilling to add some sort of epsilon for complex comparison in general; it's just a bad idea.\n\nHowever, the goal of sorting the output of .roots() is not so bad, and I'm willing to put an epsilon comparison in that sorting routine (since it's basically only for display, and especially since it helps doctest consistency); so that's what I've done in the attached patch.",
+    "body": "Attachment [trac4544.patch](tarball://root/attachments/some-uuid/ticket4544/trac4544.patch) by cwitty created at 2009-01-24 06:26:40\n\nI'm totally unwilling to add some sort of epsilon for complex comparison in general; it's just a bad idea.\n\nHowever, the goal of sorting the output of .roots() is not so bad, and I'm willing to put an epsilon comparison in that sorting routine (since it's basically only for display, and especially since it helps doctest consistency); so that's what I've done in the attached patch.",
     "created_at": "2009-01-24T06:26:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4544",
     "type": "issue_comment",
@@ -115,7 +115,7 @@ archive/issue_comments_034038.json:
 }
 ```
 
-Attachment
+Attachment [trac4544.patch](tarball://root/attachments/some-uuid/ticket4544/trac4544.patch) by cwitty created at 2009-01-24 06:26:40
 
 I'm totally unwilling to add some sort of epsilon for complex comparison in general; it's just a bad idea.
 
@@ -218,7 +218,7 @@ Michael
 archive/issue_comments_034042.json:
 ```json
 {
-    "body": "Attachment\n\nNote that the reviewer patch depends on #5129 being applied.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_4544_reviewer.patch](tarball://root/attachments/some-uuid/ticket4544/trac_4544_reviewer.patch) by mabshoff created at 2009-02-03 19:51:11\n\nNote that the reviewer patch depends on #5129 being applied.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-03T19:51:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4544",
     "type": "issue_comment",
@@ -227,7 +227,7 @@ archive/issue_comments_034042.json:
 }
 ```
 
-Attachment
+Attachment [trac_4544_reviewer.patch](tarball://root/attachments/some-uuid/ticket4544/trac_4544_reviewer.patch) by mabshoff created at 2009-02-03 19:51:11
 
 Note that the reviewer patch depends on #5129 being applied.
 

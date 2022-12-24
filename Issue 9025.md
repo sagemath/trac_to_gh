@@ -48,7 +48,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9025
 archive/issue_comments_083500.json:
 ```json
 {
-    "body": "Attachment\n\nMercurial patch",
+    "body": "Attachment [PALP-64-bit.patch](tarball://root/attachments/some-uuid/ticket9025/PALP-64-bit.patch) by drkirkby created at 2010-05-24 00:31:12\n\nMercurial patch",
     "created_at": "2010-05-24T00:31:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9025",
     "type": "issue_comment",
@@ -57,7 +57,7 @@ archive/issue_comments_083500.json:
 }
 ```
 
-Attachment
+Attachment [PALP-64-bit.patch](tarball://root/attachments/some-uuid/ticket9025/PALP-64-bit.patch) by drkirkby created at 2010-05-24 00:31:12
 
 Mercurial patch
 

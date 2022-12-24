@@ -114,7 +114,7 @@ Build failure obseved when random delays were inserted into the build process of
 archive/issue_comments_099971.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [boehm_gc-7.1.p6.log.nfg.txt](tarball://root/attachments/some-uuid/ticket9971/boehm_gc-7.1.p6.log.nfg.txt) by drkirkby created at 2010-09-22 22:45:36",
     "created_at": "2010-09-22T22:45:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9970",
     "type": "issue_comment",
@@ -123,7 +123,7 @@ archive/issue_comments_099971.json:
 }
 ```
 
-Attachment
+Attachment [boehm_gc-7.1.p6.log.nfg.txt](tarball://root/attachments/some-uuid/ticket9971/boehm_gc-7.1.p6.log.nfg.txt) by drkirkby created at 2010-09-22 22:45:36
 
 
 
@@ -150,7 +150,7 @@ Looks more like an error in your script, not like a race condition. ;-)
 archive/issue_comments_099973.json:
 ```json
 {
-    "body": "Attachment\n\ngcc script, which calls the real gcc after some delay",
+    "body": "Attachment [gcc](tarball://root/attachments/some-uuid/ticket9971/gcc) by drkirkby created at 2010-09-23 00:14:03\n\ngcc script, which calls the real gcc after some delay",
     "created_at": "2010-09-23T00:14:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9970",
     "type": "issue_comment",
@@ -159,7 +159,7 @@ archive/issue_comments_099973.json:
 }
 ```
 
-Attachment
+Attachment [gcc](tarball://root/attachments/some-uuid/ticket9971/gcc) by drkirkby created at 2010-09-23 00:14:03
 
 gcc script, which calls the real gcc after some delay
 

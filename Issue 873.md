@@ -85,7 +85,7 @@ fixes slow "-clone" (look for Cython-generated files, not Pyrex)
 archive/issue_comments_005385.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [466.patch](tarball://root/attachments/some-uuid/ticket873/466.patch) by cwitty created at 2007-10-13 07:02:41",
     "created_at": "2007-10-13T07:02:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/873",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_005385.json:
 }
 ```
 
-Attachment
+Attachment [466.patch](tarball://root/attachments/some-uuid/ticket873/466.patch) by cwitty created at 2007-10-13 07:02:41
 
 
 

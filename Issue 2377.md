@@ -61,7 +61,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2377
 archive/issue_comments_016037.json:
 ```json
 {
-    "body": "Attachment\n\nBugfix for the new copy method for SingularElement?; should apply to sage-2.10.3.rc0",
+    "body": "Attachment [bugfix__copy__.patch](tarball://root/attachments/some-uuid/ticket2377/bugfix__copy__.patch) by SimonKing created at 2008-03-03 17:17:13\n\nBugfix for the new copy method for SingularElement?; should apply to sage-2.10.3.rc0",
     "created_at": "2008-03-03T17:17:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2377",
     "type": "issue_comment",
@@ -70,7 +70,7 @@ archive/issue_comments_016037.json:
 }
 ```
 
-Attachment
+Attachment [bugfix__copy__.patch](tarball://root/attachments/some-uuid/ticket2377/bugfix__copy__.patch) by SimonKing created at 2008-03-03 17:17:13
 
 Bugfix for the new copy method for SingularElement?; should apply to sage-2.10.3.rc0
 

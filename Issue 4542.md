@@ -53,7 +53,7 @@ patch for polyhedra.py, fixes linearity problem
 archive/issue_comments_034028.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4542.patch](tarball://root/attachments/some-uuid/ticket4542/trac_4542.patch) by mabshoff created at 2008-11-18 02:44:51",
     "created_at": "2008-11-18T02:44:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4542",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_034028.json:
 }
 ```
 
-Attachment
+Attachment [trac_4542.patch](tarball://root/attachments/some-uuid/ticket4542/trac_4542.patch) by mabshoff created at 2008-11-18 02:44:51
 
 
 

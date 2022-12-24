@@ -242,7 +242,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_063442.json:
 ```json
 {
-    "body": "Attachment\n\nThis applied against 4.2, fixed the issue for me, and doesn't appear to have caused any failures of optional doctests.",
+    "body": "Attachment [trac_7504.patch](tarball://root/attachments/some-uuid/ticket7504/trac_7504.patch) by kedlaya created at 2009-11-24 22:19:29\n\nThis applied against 4.2, fixed the issue for me, and doesn't appear to have caused any failures of optional doctests.",
     "created_at": "2009-11-24T22:19:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7504",
     "type": "issue_comment",
@@ -251,7 +251,7 @@ archive/issue_comments_063442.json:
 }
 ```
 
-Attachment
+Attachment [trac_7504.patch](tarball://root/attachments/some-uuid/ticket7504/trac_7504.patch) by kedlaya created at 2009-11-24 22:19:29
 
 This applied against 4.2, fixed the issue for me, and doesn't appear to have caused any failures of optional doctests.
 

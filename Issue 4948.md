@@ -100,7 +100,7 @@ Michael
 archive/issue_comments_037559.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-4948-mathematica_lists.patch](tarball://root/attachments/some-uuid/ticket4948/trac-4948-mathematica_lists.patch) by flawrence created at 2009-08-22 05:29:23",
     "created_at": "2009-08-22T05:29:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4948",
     "type": "issue_comment",
@@ -109,7 +109,7 @@ archive/issue_comments_037559.json:
 }
 ```
 
-Attachment
+Attachment [trac-4948-mathematica_lists.patch](tarball://root/attachments/some-uuid/ticket4948/trac-4948-mathematica_lists.patch) by flawrence created at 2009-08-22 05:29:23
 
 
 
@@ -235,7 +235,7 @@ Changing assignee from cwitty to was.
 archive/issue_comments_037566.json:
 ```json
 {
-    "body": "Attachment\n\nI added the requested doctest for the generic _exponent_symbol(), a method that is meant to be overloaded by each derived class (i.e. the interface to gp, mathematica, etc).  Since this is meant to be overloaded by each of the interfaces, I didn't use any existing interface in this doctest, as when _exponent_symbol() was overloaded by that interface the doctest would become misleading.  Instead I created a fake interface so that the doctest would always call the correct version of _exponent_symbol.  It's a bit messy but it's the most stable way of doctesting the function that I could think of.\n\nThe approach could be taken to write doctests for the rest of the methods in the Expect class.",
+    "body": "Attachment [trac-4948-mathematica_lists 12660.patch](tarball://root/attachments/some-uuid/ticket4948/trac-4948-mathematica_lists 12660.patch) by flawrence created at 2009-09-17 03:43:40\n\nI added the requested doctest for the generic _exponent_symbol(), a method that is meant to be overloaded by each derived class (i.e. the interface to gp, mathematica, etc).  Since this is meant to be overloaded by each of the interfaces, I didn't use any existing interface in this doctest, as when _exponent_symbol() was overloaded by that interface the doctest would become misleading.  Instead I created a fake interface so that the doctest would always call the correct version of _exponent_symbol.  It's a bit messy but it's the most stable way of doctesting the function that I could think of.\n\nThe approach could be taken to write doctests for the rest of the methods in the Expect class.",
     "created_at": "2009-09-17T03:43:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4948",
     "type": "issue_comment",
@@ -244,7 +244,7 @@ archive/issue_comments_037566.json:
 }
 ```
 
-Attachment
+Attachment [trac-4948-mathematica_lists 12660.patch](tarball://root/attachments/some-uuid/ticket4948/trac-4948-mathematica_lists 12660.patch) by flawrence created at 2009-09-17 03:43:40
 
 I added the requested doctest for the generic _exponent_symbol(), a method that is meant to be overloaded by each derived class (i.e. the interface to gp, mathematica, etc).  Since this is meant to be overloaded by each of the interfaces, I didn't use any existing interface in this doctest, as when _exponent_symbol() was overloaded by that interface the doctest would become misleading.  Instead I created a fake interface so that the doctest would always call the correct version of _exponent_symbol.  It's a bit messy but it's the most stable way of doctesting the function that I could think of.
 

@@ -58,7 +58,7 @@ Changing priority from major to minor.
 archive/issue_comments_041757.json:
 ```json
 {
-    "body": "Attachment\n\nNot used anywhere in the Sage source.",
+    "body": "Attachment [5404-numerical_sqrt.patch](tarball://root/attachments/some-uuid/ticket5404/5404-numerical_sqrt.patch) by robertwb created at 2009-02-28 22:02:51\n\nNot used anywhere in the Sage source.",
     "created_at": "2009-02-28T22:02:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5404",
     "type": "issue_comment",
@@ -67,7 +67,7 @@ archive/issue_comments_041757.json:
 }
 ```
 
-Attachment
+Attachment [5404-numerical_sqrt.patch](tarball://root/attachments/some-uuid/ticket5404/5404-numerical_sqrt.patch) by robertwb created at 2009-02-28 22:02:51
 
 Not used anywhere in the Sage source.
 
@@ -166,7 +166,7 @@ This depends on #6171, not to apply and to pass doctests, but in the sense that 
 archive/issue_comments_041762.json:
 ```json
 {
-    "body": "Attachment\n\napply only this patch",
+    "body": "Attachment [numerical_sqrt.patch](tarball://root/attachments/some-uuid/ticket5404/numerical_sqrt.patch) by jhpalmieri created at 2009-05-31 23:40:07\n\napply only this patch",
     "created_at": "2009-05-31T23:40:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5404",
     "type": "issue_comment",
@@ -175,7 +175,7 @@ archive/issue_comments_041762.json:
 }
 ```
 
-Attachment
+Attachment [numerical_sqrt.patch](tarball://root/attachments/some-uuid/ticket5404/numerical_sqrt.patch) by jhpalmieri created at 2009-05-31 23:40:07
 
 apply only this patch
 

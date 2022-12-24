@@ -165,7 +165,7 @@ Changing assignee from mabshoff to was.
 archive/issue_comments_032336.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-4393.patch](tarball://root/attachments/some-uuid/ticket4393/sage-4393.patch) by was created at 2008-10-30 19:51:50",
     "created_at": "2008-10-30T19:51:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4393",
     "type": "issue_comment",
@@ -174,7 +174,7 @@ archive/issue_comments_032336.json:
 }
 ```
 
-Attachment
+Attachment [sage-4393.patch](tarball://root/attachments/some-uuid/ticket4393/sage-4393.patch) by was created at 2008-10-30 19:51:50
 
 
 

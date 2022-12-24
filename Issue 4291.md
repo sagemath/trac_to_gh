@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4291
 archive/issue_comments_031411.json:
 ```json
 {
-    "body": "Attachment\n\nI tried it with a fresh 3.1.3 installation, and it works, both with and without an init.sage file.",
+    "body": "Attachment [trac_4291.patch](tarball://root/attachments/some-uuid/ticket4291/trac_4291.patch) by zimmerma created at 2008-10-15 14:20:22\n\nI tried it with a fresh 3.1.3 installation, and it works, both with and without an init.sage file.",
     "created_at": "2008-10-15T14:20:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4291",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_031411.json:
 }
 ```
 
-Attachment
+Attachment [trac_4291.patch](tarball://root/attachments/some-uuid/ticket4291/trac_4291.patch) by zimmerma created at 2008-10-15 14:20:22
 
 I tried it with a fresh 3.1.3 installation, and it works, both with and without an init.sage file.
 

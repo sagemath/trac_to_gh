@@ -92,7 +92,7 @@ Review patch merged an positively reviewed.
 archive/issue_comments_084614.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [14129](tarball://root/attachments/some-uuid/ticket9106/14129) by hivert created at 2010-06-02 09:17:40",
     "created_at": "2010-06-02T09:17:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9106",
     "type": "issue_comment",
@@ -101,7 +101,7 @@ archive/issue_comments_084614.json:
 }
 ```
 
-Attachment
+Attachment [14129](tarball://root/attachments/some-uuid/ticket9106/14129) by hivert created at 2010-06-02 09:17:40
 
 
 
@@ -110,7 +110,7 @@ Attachment
 archive/issue_comments_084615.json:
 ```json
 {
-    "body": "Attachment\n\nSorry for uploading the wrong patch, I clic too fast...",
+    "body": "Attachment [trac_9106-UniqueRep_sphinx_fix-fh.patch](tarball://root/attachments/some-uuid/ticket9106/trac_9106-UniqueRep_sphinx_fix-fh.patch) by hivert created at 2010-06-02 09:21:22\n\nSorry for uploading the wrong patch, I clic too fast...",
     "created_at": "2010-06-02T09:21:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9106",
     "type": "issue_comment",
@@ -119,7 +119,7 @@ archive/issue_comments_084615.json:
 }
 ```
 
-Attachment
+Attachment [trac_9106-UniqueRep_sphinx_fix-fh.patch](tarball://root/attachments/some-uuid/ticket9106/trac_9106-UniqueRep_sphinx_fix-fh.patch) by hivert created at 2010-06-02 09:21:22
 
 Sorry for uploading the wrong patch, I clic too fast...
 

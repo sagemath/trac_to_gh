@@ -194,7 +194,7 @@ test.log with failures
 archive/issue_comments_085583.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:3 retry]:\n> Sympow doesn't work for me on Arch Linux, GCC 4.5.0\n\nThat's now\n* Cygwin\n* Arch Linux\n* Solaris 10 on x86 #9703.\n* OpenSolaris on x86 \n\nThe pseudo C code is not valid C. It tried to return functions from those declared as void, so its not clear to me what the intended behaviour. \n\nI've tried to build this with the Sun C compiler, but it refuses to compile it. \n\nDave",
+    "body": "Attachment [test.log](tarball://root/attachments/some-uuid/ticket9166/test.log) by drkirkby created at 2010-08-11 23:29:55\n\nReplying to [comment:3 retry]:\n> Sympow doesn't work for me on Arch Linux, GCC 4.5.0\n\nThat's now\n* Cygwin\n* Arch Linux\n* Solaris 10 on x86 #9703.\n* OpenSolaris on x86 \n\nThe pseudo C code is not valid C. It tried to return functions from those declared as void, so its not clear to me what the intended behaviour. \n\nI've tried to build this with the Sun C compiler, but it refuses to compile it. \n\nDave",
     "created_at": "2010-08-11T23:29:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9166",
     "type": "issue_comment",
@@ -203,7 +203,7 @@ archive/issue_comments_085583.json:
 }
 ```
 
-Attachment
+Attachment [test.log](tarball://root/attachments/some-uuid/ticket9166/test.log) by drkirkby created at 2010-08-11 23:29:55
 
 Replying to [comment:3 retry]:
 > Sympow doesn't work for me on Arch Linux, GCC 4.5.0

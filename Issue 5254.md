@@ -109,7 +109,7 @@ replaces the file "script" under $SAGE_APP_ROOT/Contents/Resources/
 archive/issue_comments_040315.json:
 ```json
 {
-    "body": "Attachment\n\nHi Michael,\n\nI couldn't trigger the Maxima failure (don't know why), but I could see that the Sage app bundle's \"/local/lib/sage-current-location.txt\" wasn't updated as it should. The new script I attached does fix this and should handle environmental settings cleaner on a broader scale. I didn't know where you want me to put it (certainly not inside some \"tar.gz\"), so I uploaded it plain as-is.\n\nYou said in sage-devel (Google thread) that you had a fix for dir names with spaces -- I don't see where, but anyway that fix of yours should apply as before.\n\nOne important thing I noted: The README.txt in the .dmg dates from Sage 2.9.2 and should definiteley either be updated, or killed. Probably you have to adjust sage-sdist and sage-bdist a bit to stop remnants of this (e.g. \"$SAGE_ROOT/sage-README-osx.txt\") from lurking around.\n\nOne other thing:\n\n+1 to your idea to name the app bundle \"Sage.x.y.z\" instead of \"Sage\". What do you think of putting in the name also the dependency \"Intel vs. PPC\" resp. \"32Bit vs. 64Bit\"? (It's not a \"universal binary\" we deliver, do we?)\n\nCheers, gsw",
+    "body": "Attachment [trac_5254_Contents_Resources_script](tarball://root/attachments/some-uuid/ticket5254/trac_5254_Contents_Resources_script) by GeorgSWeber created at 2009-02-15 10:01:17\n\nHi Michael,\n\nI couldn't trigger the Maxima failure (don't know why), but I could see that the Sage app bundle's \"/local/lib/sage-current-location.txt\" wasn't updated as it should. The new script I attached does fix this and should handle environmental settings cleaner on a broader scale. I didn't know where you want me to put it (certainly not inside some \"tar.gz\"), so I uploaded it plain as-is.\n\nYou said in sage-devel (Google thread) that you had a fix for dir names with spaces -- I don't see where, but anyway that fix of yours should apply as before.\n\nOne important thing I noted: The README.txt in the .dmg dates from Sage 2.9.2 and should definiteley either be updated, or killed. Probably you have to adjust sage-sdist and sage-bdist a bit to stop remnants of this (e.g. \"$SAGE_ROOT/sage-README-osx.txt\") from lurking around.\n\nOne other thing:\n\n+1 to your idea to name the app bundle \"Sage.x.y.z\" instead of \"Sage\". What do you think of putting in the name also the dependency \"Intel vs. PPC\" resp. \"32Bit vs. 64Bit\"? (It's not a \"universal binary\" we deliver, do we?)\n\nCheers, gsw",
     "created_at": "2009-02-15T10:01:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5254",
     "type": "issue_comment",
@@ -118,7 +118,7 @@ archive/issue_comments_040315.json:
 }
 ```
 
-Attachment
+Attachment [trac_5254_Contents_Resources_script](tarball://root/attachments/some-uuid/ticket5254/trac_5254_Contents_Resources_script) by GeorgSWeber created at 2009-02-15 10:01:17
 
 Hi Michael,
 

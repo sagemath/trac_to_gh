@@ -355,7 +355,7 @@ I'm changing the patch so that if a list or tuple is passed in, then it tries to
 archive/issue_comments_026280.json:
 ```json
 {
-    "body": "Attachment\n\nOkay, new patch is up which should take of the issues in my previous post.",
+    "body": "Attachment [trac-3704-diagonal_matrix.patch](tarball://root/attachments/some-uuid/ticket3704/trac-3704-diagonal_matrix.patch) by jason created at 2008-08-02 17:18:46\n\nOkay, new patch is up which should take of the issues in my previous post.",
     "created_at": "2008-08-02T17:18:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3704",
     "type": "issue_comment",
@@ -364,7 +364,7 @@ archive/issue_comments_026280.json:
 }
 ```
 
-Attachment
+Attachment [trac-3704-diagonal_matrix.patch](tarball://root/attachments/some-uuid/ticket3704/trac-3704-diagonal_matrix.patch) by jason created at 2008-08-02 17:18:46
 
 Okay, new patch is up which should take of the issues in my previous post.
 
@@ -433,7 +433,7 @@ I looked at the patch at #2577 and like the patch here better.  I can't see any 
 archive/issue_comments_026284.json:
 ```json
 {
-    "body": "Attachment\n\nI just added a patch, to be applied on top of the first patch, which does two things:\n\n1. Makes a trivial simplification in the code\n\n2. Adds a doctest illustrating the sparse keyword.",
+    "body": "Attachment [trac-3704-diagonal_matrix-2.patch](tarball://root/attachments/some-uuid/ticket3704/trac-3704-diagonal_matrix-2.patch) by jason created at 2008-08-16 00:07:27\n\nI just added a patch, to be applied on top of the first patch, which does two things:\n\n1. Makes a trivial simplification in the code\n\n2. Adds a doctest illustrating the sparse keyword.",
     "created_at": "2008-08-16T00:07:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3704",
     "type": "issue_comment",
@@ -442,7 +442,7 @@ archive/issue_comments_026284.json:
 }
 ```
 
-Attachment
+Attachment [trac-3704-diagonal_matrix-2.patch](tarball://root/attachments/some-uuid/ticket3704/trac-3704-diagonal_matrix-2.patch) by jason created at 2008-08-16 00:07:27
 
 I just added a patch, to be applied on top of the first patch, which does two things:
 
@@ -481,7 +481,7 @@ Michael
 archive/issue_comments_026286.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-3704-diagonal_matrix-3.patch](tarball://root/attachments/some-uuid/ticket3704/trac-3704-diagonal_matrix-3.patch) by cremona created at 2008-09-02 12:00:11",
     "created_at": "2008-09-02T12:00:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3704",
     "type": "issue_comment",
@@ -490,7 +490,7 @@ archive/issue_comments_026286.json:
 }
 ```
 
-Attachment
+Attachment [trac-3704-diagonal_matrix-3.patch](tarball://root/attachments/some-uuid/ticket3704/trac-3704-diagonal_matrix-3.patch) by cremona created at 2008-09-02 12:00:11
 
 
 
@@ -547,7 +547,7 @@ Conclusion:  kill #2577 and merge this one (all three patches).  I assume mabsho
 archive/issue_comments_026288.json:
 ```json
 {
-    "body": "Attachment\n\nPS Forgot to add that doctest: 4th patch does that too.",
+    "body": "Attachment [trac-3704-diagonal_matrix-4.patch](tarball://root/attachments/some-uuid/ticket3704/trac-3704-diagonal_matrix-4.patch) by cremona created at 2008-09-02 12:06:38\n\nPS Forgot to add that doctest: 4th patch does that too.",
     "created_at": "2008-09-02T12:06:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3704",
     "type": "issue_comment",
@@ -556,7 +556,7 @@ archive/issue_comments_026288.json:
 }
 ```
 
-Attachment
+Attachment [trac-3704-diagonal_matrix-4.patch](tarball://root/attachments/some-uuid/ticket3704/trac-3704-diagonal_matrix-4.patch) by cremona created at 2008-09-02 12:06:38
 
 PS Forgot to add that doctest: 4th patch does that too.
 
@@ -654,7 +654,7 @@ I'm attaching a new patch which takes a much lower level approach to solving the
 archive/issue_comments_026293.json:
 ```json
 {
-    "body": "Attachment\n\nIndependent of the other patches found here.",
+    "body": "Attachment [trac-3704.patch](tarball://root/attachments/some-uuid/ticket3704/trac-3704.patch) by rlm created at 2009-01-23 12:41:09\n\nIndependent of the other patches found here.",
     "created_at": "2009-01-23T12:41:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3704",
     "type": "issue_comment",
@@ -663,7 +663,7 @@ archive/issue_comments_026293.json:
 }
 ```
 
-Attachment
+Attachment [trac-3704.patch](tarball://root/attachments/some-uuid/ticket3704/trac-3704.patch) by rlm created at 2009-01-23 12:41:09
 
 Independent of the other patches found here.
 

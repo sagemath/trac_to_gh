@@ -86,7 +86,7 @@ This would be very nice for SageTeX, so that the user could put sagetex.py somew
 archive/issue_comments_026898.json:
 ```json
 {
-    "body": "Attachment\n\npatch for $SAGE_ROOT/local/bin/sage-env",
+    "body": "Attachment [trac_3784.patch](tarball://root/attachments/some-uuid/ticket3784/trac_3784.patch) by ddrake created at 2008-12-17 04:55:59\n\npatch for $SAGE_ROOT/local/bin/sage-env",
     "created_at": "2008-12-17T04:55:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3784",
     "type": "issue_comment",
@@ -95,7 +95,7 @@ archive/issue_comments_026898.json:
 }
 ```
 
-Attachment
+Attachment [trac_3784.patch](tarball://root/attachments/some-uuid/ticket3784/trac_3784.patch) by ddrake created at 2008-12-17 04:55:59
 
 patch for $SAGE_ROOT/local/bin/sage-env
 
@@ -124,7 +124,7 @@ patch for README.txt in $SAGE_ROOT
 archive/issue_comments_026900.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3784_README.patch](tarball://root/attachments/some-uuid/ticket3784/trac_3784_README.patch) by ddrake created at 2008-12-17 04:57:06",
     "created_at": "2008-12-17T04:57:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3784",
     "type": "issue_comment",
@@ -133,7 +133,7 @@ archive/issue_comments_026900.json:
 }
 ```
 
-Attachment
+Attachment [trac_3784_README.patch](tarball://root/attachments/some-uuid/ticket3784/trac_3784_README.patch) by ddrake created at 2008-12-17 04:57:06
 
 
 

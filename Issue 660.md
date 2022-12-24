@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/660
 archive/issue_comments_003432.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [gfqvectorreverse.patch](tarball://root/attachments/some-uuid/ticket660/gfqvectorreverse.patch) by malb created at 2007-09-15 13:10:21",
     "created_at": "2007-09-15T13:10:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/660",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_003432.json:
 }
 ```
 
-Attachment
+Attachment [gfqvectorreverse.patch](tarball://root/attachments/some-uuid/ticket660/gfqvectorreverse.patch) by malb created at 2007-09-15 13:10:21
 
 
 

@@ -355,7 +355,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_080778.json:
 ```json
 {
-    "body": "Attachment\n\nHopefully this will do it.",
+    "body": "Attachment [trac_8803-remove-axes.patch](tarball://root/attachments/some-uuid/ticket8803/trac_8803-remove-axes.patch) by kcrisman created at 2011-05-16 15:37:21\n\nHopefully this will do it.",
     "created_at": "2011-05-16T15:37:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8803",
     "type": "issue_comment",
@@ -364,7 +364,7 @@ archive/issue_comments_080778.json:
 }
 ```
 
-Attachment
+Attachment [trac_8803-remove-axes.patch](tarball://root/attachments/some-uuid/ticket8803/trac_8803-remove-axes.patch) by kcrisman created at 2011-05-16 15:37:21
 
 Hopefully this will do it.
 

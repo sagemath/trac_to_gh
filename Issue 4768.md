@@ -88,7 +88,7 @@ Wall time: 1.16 s
 archive/issue_comments_036125.json:
 ```json
 {
-    "body": "Attachment\n\nPatch applies cleanly, doctests in sage/matrix pass, reads good.",
+    "body": "Attachment [trac_4768.patch](tarball://root/attachments/some-uuid/ticket4768/trac_4768.patch) by malb created at 2008-12-12 14:39:58\n\nPatch applies cleanly, doctests in sage/matrix pass, reads good.",
     "created_at": "2008-12-12T14:39:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4768",
     "type": "issue_comment",
@@ -97,7 +97,7 @@ archive/issue_comments_036125.json:
 }
 ```
 
-Attachment
+Attachment [trac_4768.patch](tarball://root/attachments/some-uuid/ticket4768/trac_4768.patch) by malb created at 2008-12-12 14:39:58
 
 Patch applies cleanly, doctests in sage/matrix pass, reads good.
 
@@ -136,7 +136,7 @@ Michael
 archive/issue_comments_036127.json:
 ```json
 {
-    "body": "Attachment\n\nMerged both patches in Sage 3.2.2.alpha2",
+    "body": "Attachment [trac_4768_referee.patch](tarball://root/attachments/some-uuid/ticket4768/trac_4768_referee.patch) by mabshoff created at 2008-12-12 16:04:31\n\nMerged both patches in Sage 3.2.2.alpha2",
     "created_at": "2008-12-12T16:04:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4768",
     "type": "issue_comment",
@@ -145,7 +145,7 @@ archive/issue_comments_036127.json:
 }
 ```
 
-Attachment
+Attachment [trac_4768_referee.patch](tarball://root/attachments/some-uuid/ticket4768/trac_4768_referee.patch) by mabshoff created at 2008-12-12 16:04:31
 
 Merged both patches in Sage 3.2.2.alpha2
 

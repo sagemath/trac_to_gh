@@ -139,7 +139,7 @@ Changing status from new to assigned.
 archive/issue_comments_009290.json:
 ```json
 {
-    "body": "Attachment\n\nReview and questions:\n\nIf this is just an alias would it not be simpler to just put\n\n```\n    substitute = subs\n```\n\nin the class definition instead of defining a second function which calls the first?\n\nSecondly, for some reason the patch posted does not display in the normal way, but I don't know why.\n\nI don't really know enough about the issues raised by  jbmohler  to judge this solution;  but if this does solve the problem then the simple assignment I suggested would also!",
+    "body": "Attachment [redef_substi.changeset](tarball://root/attachments/some-uuid/ticket1440/redef_substi.changeset) by cremona created at 2008-05-13 21:56:50\n\nReview and questions:\n\nIf this is just an alias would it not be simpler to just put\n\n```\n    substitute = subs\n```\n\nin the class definition instead of defining a second function which calls the first?\n\nSecondly, for some reason the patch posted does not display in the normal way, but I don't know why.\n\nI don't really know enough about the issues raised by  jbmohler  to judge this solution;  but if this does solve the problem then the simple assignment I suggested would also!",
     "created_at": "2008-05-13T21:56:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1440",
     "type": "issue_comment",
@@ -148,7 +148,7 @@ archive/issue_comments_009290.json:
 }
 ```
 
-Attachment
+Attachment [redef_substi.changeset](tarball://root/attachments/some-uuid/ticket1440/redef_substi.changeset) by cremona created at 2008-05-13 21:56:50
 
 Review and questions:
 
@@ -236,7 +236,7 @@ Although that looks slightly strange, I think it is ok, especially if the docstr
 archive/issue_comments_009293.json:
 ```json
 {
-    "body": "Attachment\n\nReplacement for previous patch",
+    "body": "Attachment [redef_substi2.patch](tarball://root/attachments/some-uuid/ticket1440/redef_substi2.patch) by broune created at 2008-05-14 14:10:52\n\nReplacement for previous patch",
     "created_at": "2008-05-14T14:10:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1440",
     "type": "issue_comment",
@@ -245,7 +245,7 @@ archive/issue_comments_009293.json:
 }
 ```
 
-Attachment
+Attachment [redef_substi2.patch](tarball://root/attachments/some-uuid/ticket1440/redef_substi2.patch) by broune created at 2008-05-14 14:10:52
 
 Replacement for previous patch
 

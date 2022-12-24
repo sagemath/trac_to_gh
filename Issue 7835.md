@@ -89,7 +89,7 @@ Adds '# -*- coding: utf-8 -*-' to the preparsing code.
 archive/issue_comments_067874.json:
 ```json
 {
-    "body": "Attachment\n\nThis looks good to me.  Is there a simple example that breaks the existing code?",
+    "body": "Attachment [trac_7835-preparsing-unicode.patch](tarball://root/attachments/some-uuid/ticket7835/trac_7835-preparsing-unicode.patch) by mpatel created at 2010-01-06 20:26:42\n\nThis looks good to me.  Is there a simple example that breaks the existing code?",
     "created_at": "2010-01-06T20:26:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7835",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_067874.json:
 }
 ```
 
-Attachment
+Attachment [trac_7835-preparsing-unicode.patch](tarball://root/attachments/some-uuid/ticket7835/trac_7835-preparsing-unicode.patch) by mpatel created at 2010-01-06 20:26:42
 
 This looks good to me.  Is there a simple example that breaks the existing code?
 
@@ -231,7 +231,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_067881.json:
 ```json
 {
-    "body": "Attachment\n\nV2 wraps the [comment:4 problem above] in a `try-except` block, for now, i.e., until #7249 takes hold.  My review is positive, but someone should review my change.",
+    "body": "Attachment [trac_7835-preparsing-unicode_v2.patch](tarball://root/attachments/some-uuid/ticket7835/trac_7835-preparsing-unicode_v2.patch) by mpatel created at 2010-01-07 01:31:28\n\nV2 wraps the [comment:4 problem above] in a `try-except` block, for now, i.e., until #7249 takes hold.  My review is positive, but someone should review my change.",
     "created_at": "2010-01-07T01:31:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7835",
     "type": "issue_comment",
@@ -240,7 +240,7 @@ archive/issue_comments_067881.json:
 }
 ```
 
-Attachment
+Attachment [trac_7835-preparsing-unicode_v2.patch](tarball://root/attachments/some-uuid/ticket7835/trac_7835-preparsing-unicode_v2.patch) by mpatel created at 2010-01-07 01:31:28
 
 V2 wraps the [comment:4 problem above] in a `try-except` block, for now, i.e., until #7249 takes hold.  My review is positive, but someone should review my change.
 

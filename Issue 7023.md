@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7023
 archive/issue_comments_058162.json:
 ```json
 {
-    "body": "Attachment\n\nSpkg up at http://sage.math.washington.edu/home/robertwb/cython/cython-0.11.3.spkg",
+    "body": "Attachment [7023-cython-0.11.3.patch](tarball://root/attachments/some-uuid/ticket7023/7023-cython-0.11.3.patch) by robertwb created at 2009-09-27 07:53:53\n\nSpkg up at http://sage.math.washington.edu/home/robertwb/cython/cython-0.11.3.spkg",
     "created_at": "2009-09-27T07:53:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7023",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_058162.json:
 }
 ```
 
-Attachment
+Attachment [7023-cython-0.11.3.patch](tarball://root/attachments/some-uuid/ticket7023/7023-cython-0.11.3.patch) by robertwb created at 2009-09-27 07:53:53
 
 Spkg up at http://sage.math.washington.edu/home/robertwb/cython/cython-0.11.3.spkg
 

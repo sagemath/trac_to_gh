@@ -280,7 +280,7 @@ Michael
 archive/issue_comments_012431.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch fixes that issue and also refactors caching of Gr\u00f6bner bases.",
+    "body": "Attachment [mpolynomial_ideal_refactor.patch](tarball://root/attachments/some-uuid/ticket1952/mpolynomial_ideal_refactor.patch) by malb created at 2008-08-19 15:00:37\n\nThe attached patch fixes that issue and also refactors caching of Gr\u00f6bner bases.",
     "created_at": "2008-08-19T15:00:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1952",
     "type": "issue_comment",
@@ -289,7 +289,7 @@ archive/issue_comments_012431.json:
 }
 ```
 
-Attachment
+Attachment [mpolynomial_ideal_refactor.patch](tarball://root/attachments/some-uuid/ticket1952/mpolynomial_ideal_refactor.patch) by malb created at 2008-08-19 15:00:37
 
 The attached patch fixes that issue and also refactors caching of Gröbner bases.
 
@@ -318,7 +318,7 @@ was, can I ask you to review my patch?
 archive/issue_comments_012433.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_1952-2.patch](tarball://root/attachments/some-uuid/ticket1952/trac_1952-2.patch) by mhansen created at 2008-08-26 23:07:01",
     "created_at": "2008-08-26T23:07:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1952",
     "type": "issue_comment",
@@ -327,7 +327,7 @@ archive/issue_comments_012433.json:
 }
 ```
 
-Attachment
+Attachment [trac_1952-2.patch](tarball://root/attachments/some-uuid/ticket1952/trac_1952-2.patch) by mhansen created at 2008-08-26 23:07:01
 
 
 
@@ -427,7 +427,7 @@ Got:
 archive/issue_comments_012436.json:
 ```json
 {
-    "body": "Attachment\n\nApply all three patches in order (last one goes to doc repo).",
+    "body": "Attachment [trac_1952-tutfix.patch](tarball://root/attachments/some-uuid/ticket1952/trac_1952-tutfix.patch) by malb created at 2008-08-27 20:10:09\n\nApply all three patches in order (last one goes to doc repo).",
     "created_at": "2008-08-27T20:10:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1952",
     "type": "issue_comment",
@@ -436,7 +436,7 @@ archive/issue_comments_012436.json:
 }
 ```
 
-Attachment
+Attachment [trac_1952-tutfix.patch](tarball://root/attachments/some-uuid/ticket1952/trac_1952-tutfix.patch) by malb created at 2008-08-27 20:10:09
 
 Apply all three patches in order (last one goes to doc repo).
 

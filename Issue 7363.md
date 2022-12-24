@@ -69,7 +69,7 @@ add doctests
 archive/issue_comments_061696.json:
 ```json
 {
-    "body": "Attachment\n\nNext pynac release will have a patch for this. attachment:trac_7363-mul_coeff.patch fixes some doctests and adds a couple more.",
+    "body": "Attachment [trac_7363-mul_coeff.patch](tarball://root/attachments/some-uuid/ticket7363/trac_7363-mul_coeff.patch) by burcin created at 2010-01-17 07:22:12\n\nNext pynac release will have a patch for this. attachment:trac_7363-mul_coeff.patch fixes some doctests and adds a couple more.",
     "created_at": "2010-01-17T07:22:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7363",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_061696.json:
 }
 ```
 
-Attachment
+Attachment [trac_7363-mul_coeff.patch](tarball://root/attachments/some-uuid/ticket7363/trac_7363-mul_coeff.patch) by burcin created at 2010-01-17 07:22:12
 
 Next pynac release will have a patch for this. attachment:trac_7363-mul_coeff.patch fixes some doctests and adds a couple more.
 

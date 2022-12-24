@@ -47,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6426
 archive/issue_comments_051598.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [echidna.patch](tarball://root/attachments/some-uuid/ticket6426/echidna.patch) by kohel created at 2009-06-26 17:27:22",
     "created_at": "2009-06-26T17:27:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6426",
     "type": "issue_comment",
@@ -56,7 +56,7 @@ archive/issue_comments_051598.json:
 }
 ```
 
-Attachment
+Attachment [echidna.patch](tarball://root/attachments/some-uuid/ticket6426/echidna.patch) by kohel created at 2009-06-26 17:27:22
 
 
 
@@ -232,7 +232,7 @@ Does someone want to check and, if so, come up with a solution?
 archive/issue_comments_051606.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [magma.2.py](tarball://root/attachments/some-uuid/ticket6426/magma.2.py) by kohel created at 2009-06-28 18:53:21",
     "created_at": "2009-06-28T18:53:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6426",
     "type": "issue_comment",
@@ -241,7 +241,7 @@ archive/issue_comments_051606.json:
 }
 ```
 
-Attachment
+Attachment [magma.2.py](tarball://root/attachments/some-uuid/ticket6426/magma.2.py) by kohel created at 2009-06-28 18:53:21
 
 
 
@@ -286,7 +286,7 @@ Replaces previous, applies to 4.1.alpha2
 archive/issue_comments_051609.json:
 ```json
 {
-    "body": "Attachment\n\nThe new spkg works, and the new magma.py is ok (one minor doctest filaure in the __iter__ function which I have fixed).  See my attached match, which applies to 4.1.alpha2 and yields a correct magma.py.\n\nI ran into a lot of problems trying to evaluate the worksheet cells -- some Sage functions ins there (e.g. FunctionField(ZZ)) do not exist.  David, can you include an ordinary python file with these tests and demos in?  And if you have extra stuff implemented in Sage which the worksheet example need, why not include them (on a separate ticket) in Sage?  (There are some in magma.py but not many).\n\nI rebuilt the ref manual and it looks fine.\n\nI don't know what the magma2.py file is for -- I ignored it.",
+    "body": "Attachment [trac_6426.patch](tarball://root/attachments/some-uuid/ticket6426/trac_6426.patch) by cremona created at 2009-06-28 21:55:52\n\nThe new spkg works, and the new magma.py is ok (one minor doctest filaure in the __iter__ function which I have fixed).  See my attached match, which applies to 4.1.alpha2 and yields a correct magma.py.\n\nI ran into a lot of problems trying to evaluate the worksheet cells -- some Sage functions ins there (e.g. FunctionField(ZZ)) do not exist.  David, can you include an ordinary python file with these tests and demos in?  And if you have extra stuff implemented in Sage which the worksheet example need, why not include them (on a separate ticket) in Sage?  (There are some in magma.py but not many).\n\nI rebuilt the ref manual and it looks fine.\n\nI don't know what the magma2.py file is for -- I ignored it.",
     "created_at": "2009-06-28T21:55:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6426",
     "type": "issue_comment",
@@ -295,7 +295,7 @@ archive/issue_comments_051609.json:
 }
 ```
 
-Attachment
+Attachment [trac_6426.patch](tarball://root/attachments/some-uuid/ticket6426/trac_6426.patch) by cremona created at 2009-06-28 21:55:52
 
 The new spkg works, and the new magma.py is ok (one minor doctest filaure in the __iter__ function which I have fixed).  See my attached match, which applies to 4.1.alpha2 and yields a correct magma.py.
 

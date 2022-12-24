@@ -183,7 +183,7 @@ This patch actually causes segfaults all over the map.
 archive/issue_comments_016172.json:
 ```json
 {
-    "body": "Attachment\n\nFound the bug and doctests on matrix0,1,2 pass. I've updated the patch (2397.patch) but please ignore the bundle file (I'm having trouble making hg bundles work). More ewviews, please!",
+    "body": "Attachment [2397.patch](tarball://root/attachments/some-uuid/ticket2397/2397.patch) by dfdeshom created at 2008-03-12 22:19:17\n\nFound the bug and doctests on matrix0,1,2 pass. I've updated the patch (2397.patch) but please ignore the bundle file (I'm having trouble making hg bundles work). More ewviews, please!",
     "created_at": "2008-03-12T22:19:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2397",
     "type": "issue_comment",
@@ -192,7 +192,7 @@ archive/issue_comments_016172.json:
 }
 ```
 
-Attachment
+Attachment [2397.patch](tarball://root/attachments/some-uuid/ticket2397/2397.patch) by dfdeshom created at 2008-03-12 22:19:17
 
 Found the bug and doctests on matrix0,1,2 pass. I've updated the patch (2397.patch) but please ignore the bundle file (I'm having trouble making hg bundles work). More ewviews, please!
 
@@ -203,7 +203,7 @@ Found the bug and doctests on matrix0,1,2 pass. I've updated the patch (2397.pat
 archive/issue_comments_016173.json:
 ```json
 {
-    "body": "Attachment\n\nThe hg bundle should also work now.",
+    "body": "Attachment [2397.hg](tarball://root/attachments/some-uuid/ticket2397/2397.hg) by dfdeshom created at 2008-03-12 23:50:22\n\nThe hg bundle should also work now.",
     "created_at": "2008-03-12T23:50:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2397",
     "type": "issue_comment",
@@ -212,7 +212,7 @@ archive/issue_comments_016173.json:
 }
 ```
 
-Attachment
+Attachment [2397.hg](tarball://root/attachments/some-uuid/ticket2397/2397.hg) by dfdeshom created at 2008-03-12 23:50:22
 
 The hg bundle should also work now.
 

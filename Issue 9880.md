@@ -46,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9881
 archive/issue_comments_097938.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9881-csgn.patch](tarball://root/attachments/some-uuid/ticket9881/trac_9881-csgn.patch) by burcin created at 2010-09-12 11:07:50",
     "created_at": "2010-09-12T11:07:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9880",
     "type": "issue_comment",
@@ -55,7 +55,7 @@ archive/issue_comments_097938.json:
 }
 ```
 
-Attachment
+Attachment [trac_9881-csgn.patch](tarball://root/attachments/some-uuid/ticket9881/trac_9881-csgn.patch) by burcin created at 2010-09-12 11:07:50
 
 
 
@@ -213,7 +213,7 @@ Resolution: fixed
 archive/issue_comments_097947.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9881-csgn-reviewer.patch](tarball://root/attachments/some-uuid/ticket9881/trac_9881-csgn-reviewer.patch) by mpatel created at 2010-10-06 03:20:19",
     "created_at": "2010-10-06T03:20:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9880",
     "type": "issue_comment",
@@ -222,4 +222,4 @@ archive/issue_comments_097947.json:
 }
 ```
 
-Attachment
+Attachment [trac_9881-csgn-reviewer.patch](tarball://root/attachments/some-uuid/ticket9881/trac_9881-csgn-reviewer.patch) by mpatel created at 2010-10-06 03:20:19

@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6478
 archive/issue_comments_052363.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6478_sage-combinat-hgext-mq.patch](tarball://root/attachments/some-uuid/ticket6478/trac_6478_sage-combinat-hgext-mq.patch) by nthiery created at 2009-07-08 06:53:32",
     "created_at": "2009-07-08T06:53:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6478",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_052363.json:
 }
 ```
 
-Attachment
+Attachment [trac_6478_sage-combinat-hgext-mq.patch](tarball://root/attachments/some-uuid/ticket6478/trac_6478_sage-combinat-hgext-mq.patch) by nthiery created at 2009-07-08 06:53:32
 
 
 

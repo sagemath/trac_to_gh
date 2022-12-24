@@ -949,7 +949,7 @@ Changing status from new to needs_review.
 archive/issue_comments_097428.json:
 ```json
 {
-    "body": "Attachment\n\nI've added a spkg link to the description and attached an SPKG patch.  The main changes:\n\n* Comment out the `/usr/local/lib` line [comment:15 pointed out by Leif].\n* Use `patch` to apply the patch.\n\nThe package installs successfully and the long doctests pass for me on bsd (OSX 10.6-32), eno (Fedora 13-64), hawk (OpenSolaris 06.2009-32), redhawk (Ubuntu 10-64), rosemary (RHEL 5.5-64), and sage.math (Ubuntu 8-64).",
+    "body": "Attachment [trac_9864-PIL_library_path.patch](tarball://root/attachments/some-uuid/ticket9864/trac_9864-PIL_library_path.patch) by mpatel created at 2010-11-26 11:14:12\n\nI've added a spkg link to the description and attached an SPKG patch.  The main changes:\n\n* Comment out the `/usr/local/lib` line [comment:15 pointed out by Leif].\n* Use `patch` to apply the patch.\n\nThe package installs successfully and the long doctests pass for me on bsd (OSX 10.6-32), eno (Fedora 13-64), hawk (OpenSolaris 06.2009-32), redhawk (Ubuntu 10-64), rosemary (RHEL 5.5-64), and sage.math (Ubuntu 8-64).",
     "created_at": "2010-11-26T11:14:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
@@ -958,7 +958,7 @@ archive/issue_comments_097428.json:
 }
 ```
 
-Attachment
+Attachment [trac_9864-PIL_library_path.patch](tarball://root/attachments/some-uuid/ticket9864/trac_9864-PIL_library_path.patch) by mpatel created at 2010-11-26 11:14:12
 
 I've added a spkg link to the description and attached an SPKG patch.  The main changes:
 
@@ -1399,7 +1399,7 @@ SPKG patch, based on Mitesh's p3. Upstream now vanilla, some clean-up.
 archive/issue_comments_097445.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9864-remove_duplicate_usr_local_lib_dir-v2-spkg.patch](tarball://root/attachments/some-uuid/ticket9864/trac_9864-remove_duplicate_usr_local_lib_dir-v2-spkg.patch) by leif created at 2010-12-01 03:36:37",
     "created_at": "2010-12-01T03:36:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
@@ -1408,7 +1408,7 @@ archive/issue_comments_097445.json:
 }
 ```
 
-Attachment
+Attachment [trac_9864-remove_duplicate_usr_local_lib_dir-v2-spkg.patch](tarball://root/attachments/some-uuid/ticket9864/trac_9864-remove_duplicate_usr_local_lib_dir-v2-spkg.patch) by leif created at 2010-12-01 03:36:37
 
 
 

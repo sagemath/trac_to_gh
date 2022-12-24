@@ -62,7 +62,7 @@ Michael
 archive/issue_comments_025837.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3654-deprecation.patch](tarball://root/attachments/some-uuid/ticket3654/sage-3654-deprecation.patch) by jason created at 2008-08-25 20:35:33",
     "created_at": "2008-08-25T20:35:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3654",
     "type": "issue_comment",
@@ -71,7 +71,7 @@ archive/issue_comments_025837.json:
 }
 ```
 
-Attachment
+Attachment [sage-3654-deprecation.patch](tarball://root/attachments/some-uuid/ticket3654/sage-3654-deprecation.patch) by jason created at 2008-08-25 20:35:33
 
 
 

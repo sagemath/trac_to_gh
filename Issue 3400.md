@@ -116,7 +116,7 @@ Changing status from new to needs_review.
 archive/issue_comments_023813.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3400-matrix-group-action.patch](tarball://root/attachments/some-uuid/ticket3400/3400-matrix-group-action.patch) by robertwb created at 2010-01-17 11:09:21",
     "created_at": "2010-01-17T11:09:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3400",
     "type": "issue_comment",
@@ -125,7 +125,7 @@ archive/issue_comments_023813.json:
 }
 ```
 
-Attachment
+Attachment [3400-matrix-group-action.patch](tarball://root/attachments/some-uuid/ticket3400/3400-matrix-group-action.patch) by robertwb created at 2010-01-17 11:09:21
 
 
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5816
 archive/issue_comments_045696.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_scripts-5816.patch](tarball://root/attachments/some-uuid/ticket5816/trac_scripts-5816.patch) by was created at 2009-04-18 23:12:40",
     "created_at": "2009-04-18T23:12:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5816",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_045696.json:
 }
 ```
 
-Attachment
+Attachment [trac_scripts-5816.patch](tarball://root/attachments/some-uuid/ticket5816/trac_scripts-5816.patch) by was created at 2009-04-18 23:12:40
 
 
 
@@ -1172,7 +1172,7 @@ I like randorder better too.  I'll make a patch to change it to that.
 archive/issue_comments_045705.json:
 ```json
 {
-    "body": "Attachment\n\nthis fixes a bug (before it always ran in random order), changes to -randorder, and makes it so not giving the option uses the \"traditional\" order.",
+    "body": "Attachment [trac_scripts-5816-part2.patch](tarball://root/attachments/some-uuid/ticket5816/trac_scripts-5816-part2.patch) by was created at 2009-04-19 00:17:01\n\nthis fixes a bug (before it always ran in random order), changes to -randorder, and makes it so not giving the option uses the \"traditional\" order.",
     "created_at": "2009-04-19T00:17:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5816",
     "type": "issue_comment",
@@ -1181,7 +1181,7 @@ archive/issue_comments_045705.json:
 }
 ```
 
-Attachment
+Attachment [trac_scripts-5816-part2.patch](tarball://root/attachments/some-uuid/ticket5816/trac_scripts-5816-part2.patch) by was created at 2009-04-19 00:17:01
 
 this fixes a bug (before it always ran in random order), changes to -randorder, and makes it so not giving the option uses the "traditional" order.
 

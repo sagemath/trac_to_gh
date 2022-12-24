@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5568
 archive/issue_comments_043389.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good.  Positive review.",
+    "body": "Attachment [latex-methods.patch](tarball://root/attachments/some-uuid/ticket5568/latex-methods.patch) by rbeezer created at 2009-03-25 03:25:59\n\nLooks good.  Positive review.",
     "created_at": "2009-03-25T03:25:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5568",
     "type": "issue_comment",
@@ -43,7 +43,7 @@ archive/issue_comments_043389.json:
 }
 ```
 
-Attachment
+Attachment [latex-methods.patch](tarball://root/attachments/some-uuid/ticket5568/latex-methods.patch) by rbeezer created at 2009-03-25 03:25:59
 
 Looks good.  Positive review.
 

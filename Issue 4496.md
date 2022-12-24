@@ -58,7 +58,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4496
 archive/issue_comments_033251.json:
 ```json
 {
-    "body": "Attachment\n\nBased on 3.2.alpha0",
+    "body": "Attachment [trac_4496.patch](tarball://root/attachments/some-uuid/ticket4496/trac_4496.patch) by kcrisman created at 2008-11-11 22:59:42\n\nBased on 3.2.alpha0",
     "created_at": "2008-11-11T22:59:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4496",
     "type": "issue_comment",
@@ -67,7 +67,7 @@ archive/issue_comments_033251.json:
 }
 ```
 
-Attachment
+Attachment [trac_4496.patch](tarball://root/attachments/some-uuid/ticket4496/trac_4496.patch) by kcrisman created at 2008-11-11 22:59:42
 
 Based on 3.2.alpha0
 
@@ -150,7 +150,7 @@ Based on 3.2
 archive/issue_comments_033256.json:
 ```json
 {
-    "body": "Attachment\n\nThanks for waiting - doctests are here.  A separate ticket will be opened for the fact that \n\n```\nsage: p = plot(lambda x: f,x,-1,1)\n```\n\nwon't work, which is because \"evaluating\" the lambda function in this case returns a SymbolicCallableExpression which itself needs to be called again.",
+    "body": "Attachment [trac_4496_with_doctests.patch](tarball://root/attachments/some-uuid/ticket4496/trac_4496_with_doctests.patch) by kcrisman created at 2008-12-02 17:45:26\n\nThanks for waiting - doctests are here.  A separate ticket will be opened for the fact that \n\n```\nsage: p = plot(lambda x: f,x,-1,1)\n```\n\nwon't work, which is because \"evaluating\" the lambda function in this case returns a SymbolicCallableExpression which itself needs to be called again.",
     "created_at": "2008-12-02T17:45:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4496",
     "type": "issue_comment",
@@ -159,7 +159,7 @@ archive/issue_comments_033256.json:
 }
 ```
 
-Attachment
+Attachment [trac_4496_with_doctests.patch](tarball://root/attachments/some-uuid/ticket4496/trac_4496_with_doctests.patch) by kcrisman created at 2008-12-02 17:45:26
 
 Thanks for waiting - doctests are here.  A separate ticket will be opened for the fact that 
 

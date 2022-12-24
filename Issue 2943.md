@@ -518,7 +518,7 @@ After discussion with broune and cwitty on IRC, the proposed solution is as foll
 archive/issue_comments_020288.json:
 ```json
 {
-    "body": "Attachment\n\nAttached patch should fix this bug.\n\n(Note: this does not fix the \"list index\" exception issue, which also came up in the above discussion. That is now a separate ticket: #3184)",
+    "body": "Attachment [2943.patch](tarball://root/attachments/some-uuid/ticket2943/2943.patch) by dmharvey created at 2008-05-13 13:01:01\n\nAttached patch should fix this bug.\n\n(Note: this does not fix the \"list index\" exception issue, which also came up in the above discussion. That is now a separate ticket: #3184)",
     "created_at": "2008-05-13T13:01:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2943",
     "type": "issue_comment",
@@ -527,7 +527,7 @@ archive/issue_comments_020288.json:
 }
 ```
 
-Attachment
+Attachment [2943.patch](tarball://root/attachments/some-uuid/ticket2943/2943.patch) by dmharvey created at 2008-05-13 13:01:01
 
 Attached patch should fix this bug.
 
@@ -908,7 +908,7 @@ Especially in light of the existence of #6084 (which should fix #5075 among othe
 archive/issue_comments_020300.json:
 ```json
 {
-    "body": "Attachment\n\nI decided this ticket should actually end up with a patch and a review, so I added a patch (mislabeled, sorry) to put another doctest from the above discussion into polynomial_element.pyx.",
+    "body": "Attachment [trac_13106.patch](tarball://root/attachments/some-uuid/ticket2943/trac_13106.patch) by kedlaya created at 2009-12-03 03:26:34\n\nI decided this ticket should actually end up with a patch and a review, so I added a patch (mislabeled, sorry) to put another doctest from the above discussion into polynomial_element.pyx.",
     "created_at": "2009-12-03T03:26:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2943",
     "type": "issue_comment",
@@ -917,7 +917,7 @@ archive/issue_comments_020300.json:
 }
 ```
 
-Attachment
+Attachment [trac_13106.patch](tarball://root/attachments/some-uuid/ticket2943/trac_13106.patch) by kedlaya created at 2009-12-03 03:26:34
 
 I decided this ticket should actually end up with a patch and a review, so I added a patch (mislabeled, sorry) to put another doctest from the above discussion into polynomial_element.pyx.
 

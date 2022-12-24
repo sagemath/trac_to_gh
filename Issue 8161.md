@@ -103,7 +103,7 @@ I'll try to work on them, and anyone else who is interested can do the same.
 archive/issue_comments_071782.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8161-sphinxify.patch](tarball://root/attachments/some-uuid/ticket8161/trac_8161-sphinxify.patch) by jhpalmieri created at 2010-02-03 04:40:52",
     "created_at": "2010-02-03T04:40:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8161",
     "type": "issue_comment",
@@ -112,7 +112,7 @@ archive/issue_comments_071782.json:
 }
 ```
 
-Attachment
+Attachment [trac_8161-sphinxify.patch](tarball://root/attachments/some-uuid/ticket8161/trac_8161-sphinxify.patch) by jhpalmieri created at 2010-02-03 04:40:52
 
 
 
@@ -182,7 +182,7 @@ have `'<no docstring>'`.  V2 should fix this.
 archive/issue_comments_071786.json:
 ```json
 {
-    "body": "Attachment\n\nHandle Unicode docstrings.  Replaces previous.  **sage** repo.",
+    "body": "Attachment [trac_8161-sphinxify_cmd_line.2.patch](tarball://root/attachments/some-uuid/ticket8161/trac_8161-sphinxify_cmd_line.2.patch) by mpatel created at 2010-02-04 06:53:13\n\nHandle Unicode docstrings.  Replaces previous.  **sage** repo.",
     "created_at": "2010-02-04T06:53:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8161",
     "type": "issue_comment",
@@ -191,7 +191,7 @@ archive/issue_comments_071786.json:
 }
 ```
 
-Attachment
+Attachment [trac_8161-sphinxify_cmd_line.2.patch](tarball://root/attachments/some-uuid/ticket8161/trac_8161-sphinxify_cmd_line.2.patch) by mpatel created at 2010-02-04 06:53:13
 
 Handle Unicode docstrings.  Replaces previous.  **sage** repo.
 
@@ -220,7 +220,7 @@ Update `sagenb.misc.sageinspect` doctests.  **sagenb** repo.
 archive/issue_comments_071788.json:
 ```json
 {
-    "body": "Attachment\n\nV2 replaces `return str(r)` with\n\n```python\n    from sagenb.misc.misc import encoded_str\n    return encoded_str(r)\n```\n\nin `sage.misc.sageinspect._sage_getdoc_unformatted`.\n\nThe sagenb patch depends on #8051 + #8167 + #8102 + #8160.",
+    "body": "Attachment [trac_8161-sagenb_sageinspect.patch](tarball://root/attachments/some-uuid/ticket8161/trac_8161-sagenb_sageinspect.patch) by mpatel created at 2010-02-04 06:59:21\n\nV2 replaces `return str(r)` with\n\n```python\n    from sagenb.misc.misc import encoded_str\n    return encoded_str(r)\n```\n\nin `sage.misc.sageinspect._sage_getdoc_unformatted`.\n\nThe sagenb patch depends on #8051 + #8167 + #8102 + #8160.",
     "created_at": "2010-02-04T06:59:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8161",
     "type": "issue_comment",
@@ -229,7 +229,7 @@ archive/issue_comments_071788.json:
 }
 ```
 
-Attachment
+Attachment [trac_8161-sagenb_sageinspect.patch](tarball://root/attachments/some-uuid/ticket8161/trac_8161-sagenb_sageinspect.patch) by mpatel created at 2010-02-04 06:59:21
 
 V2 replaces `return str(r)` with
 
@@ -289,7 +289,7 @@ for sage repo
 archive/issue_comments_071791.json:
 ```json
 {
-    "body": "Attachment\n\nfor sagenb repo",
+    "body": "Attachment [trac_8161-sagenb_sageinspect-v2.patch](tarball://root/attachments/some-uuid/ticket8161/trac_8161-sagenb_sageinspect-v2.patch) by jhpalmieri created at 2010-02-05 03:56:33\n\nfor sagenb repo",
     "created_at": "2010-02-05T03:56:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8161",
     "type": "issue_comment",
@@ -298,7 +298,7 @@ archive/issue_comments_071791.json:
 }
 ```
 
-Attachment
+Attachment [trac_8161-sagenb_sageinspect-v2.patch](tarball://root/attachments/some-uuid/ticket8161/trac_8161-sagenb_sageinspect-v2.patch) by jhpalmieri created at 2010-02-05 03:56:33
 
 for sagenb repo
 

@@ -126,7 +126,7 @@ I also don't like that the `divisors` function returns only positive divisors, b
 archive/issue_comments_046260.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5855-squarefree_divisors.patch](tarball://root/attachments/some-uuid/ticket5855/trac_5855-squarefree_divisors.patch) by rlm created at 2009-04-27 15:18:09",
     "created_at": "2009-04-27T15:18:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5855",
     "type": "issue_comment",
@@ -135,7 +135,7 @@ archive/issue_comments_046260.json:
 }
 ```
 
-Attachment
+Attachment [trac_5855-squarefree_divisors.patch](tarball://root/attachments/some-uuid/ticket5855/trac_5855-squarefree_divisors.patch) by rlm created at 2009-04-27 15:18:09
 
 
 

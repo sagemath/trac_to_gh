@@ -74,7 +74,7 @@ Changing status from new to assigned.
 archive/issue_comments_031696.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [root_systems-4326-nt.patch](tarball://root/attachments/some-uuid/ticket4326/root_systems-4326-nt.patch) by nthiery created at 2009-06-11 05:48:44",
     "created_at": "2009-06-11T05:48:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4326",
     "type": "issue_comment",
@@ -83,7 +83,7 @@ archive/issue_comments_031696.json:
 }
 ```
 
-Attachment
+Attachment [root_systems-4326-nt.patch](tarball://root/attachments/some-uuid/ticket4326/root_systems-4326-nt.patch) by nthiery created at 2009-06-11 05:48:44
 
 
 
@@ -263,7 +263,7 @@ Latest version of the patch from the Sage-Combinat patch server (no change since
 archive/issue_comments_031703.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4326-root_systems-nt.patch](tarball://root/attachments/some-uuid/ticket4326/trac_4326-root_systems-nt.patch) by nthiery created at 2009-11-10 14:50:18",
     "created_at": "2009-11-10T14:50:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4326",
     "type": "issue_comment",
@@ -272,7 +272,7 @@ archive/issue_comments_031703.json:
 }
 ```
 
-Attachment
+Attachment [trac_4326-root_systems-nt.patch](tarball://root/attachments/some-uuid/ticket4326/trac_4326-root_systems-nt.patch) by nthiery created at 2009-11-10 14:50:18
 
 
 
@@ -299,7 +299,7 @@ Fix ClassicalWeylSubgroup and remove unneeded long time, as spotted by Mike
 archive/issue_comments_031705.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4326-root_systems-fix-nt.patch](tarball://root/attachments/some-uuid/ticket4326/trac_4326-root_systems-fix-nt.patch) by nthiery created at 2009-11-18 13:27:39",
     "created_at": "2009-11-18T13:27:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4326",
     "type": "issue_comment",
@@ -308,7 +308,7 @@ archive/issue_comments_031705.json:
 }
 ```
 
-Attachment
+Attachment [trac_4326-root_systems-fix-nt.patch](tarball://root/attachments/some-uuid/ticket4326/trac_4326-root_systems-fix-nt.patch) by nthiery created at 2009-11-18 13:27:39
 
 
 

@@ -822,7 +822,7 @@ Sage library patch fixing an issue with substitute_variable()
 archive/issue_comments_094842.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [polybori-0.6.4.p2.patch](tarball://root/attachments/some-uuid/ticket9717/polybori-0.6.4.p2.patch) by leif created at 2010-08-14 14:48:44",
     "created_at": "2010-08-14T14:48:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9717",
     "type": "issue_comment",
@@ -831,7 +831,7 @@ archive/issue_comments_094842.json:
 }
 ```
 
-Attachment
+Attachment [polybori-0.6.4.p2.patch](tarball://root/attachments/some-uuid/ticket9717/polybori-0.6.4.p2.patch) by leif created at 2010-08-14 14:48:44
 
 
 

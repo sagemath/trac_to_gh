@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4704
 archive/issue_comments_035435.json:
 ```json
 {
-    "body": "Attachment\n\nThis depends on the patch at #4700.",
+    "body": "Attachment [jquery-javascript-cleanup.patch](tarball://root/attachments/some-uuid/ticket4704/jquery-javascript-cleanup.patch) by jason created at 2008-12-05 01:11:54\n\nThis depends on the patch at #4700.",
     "created_at": "2008-12-05T01:11:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4704",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_035435.json:
 }
 ```
 
-Attachment
+Attachment [jquery-javascript-cleanup.patch](tarball://root/attachments/some-uuid/ticket4704/jquery-javascript-cleanup.patch) by jason created at 2008-12-05 01:11:54
 
 This depends on the patch at #4700.
 

@@ -51,7 +51,7 @@ Changing status from new to needs_review.
 archive/issue_comments_094168.json:
 ```json
 {
-    "body": "Attachment\n\nHTML and PDF docs build as expected.\n\nBilly Wonderly - this could be an easy review for you.  See your email for more.",
+    "body": "Attachment [trac_9687-citation-hanoi-graphs.patch](tarball://root/attachments/some-uuid/ticket9687/trac_9687-citation-hanoi-graphs.patch) by rbeezer created at 2010-08-05 04:45:02\n\nHTML and PDF docs build as expected.\n\nBilly Wonderly - this could be an easy review for you.  See your email for more.",
     "created_at": "2010-08-05T04:45:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9687",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_094168.json:
 }
 ```
 
-Attachment
+Attachment [trac_9687-citation-hanoi-graphs.patch](tarball://root/attachments/some-uuid/ticket9687/trac_9687-citation-hanoi-graphs.patch) by rbeezer created at 2010-08-05 04:45:02
 
 HTML and PDF docs build as expected.
 

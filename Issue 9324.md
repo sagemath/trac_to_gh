@@ -61,7 +61,7 @@ Applies to 4.4.4.alpha1
 archive/issue_comments_087934.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9324-tate.patch](tarball://root/attachments/some-uuid/ticket9324/trac_9324-tate.patch) by cremona created at 2010-06-24 06:27:44",
     "created_at": "2010-06-24T06:27:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9324",
     "type": "issue_comment",
@@ -70,7 +70,7 @@ archive/issue_comments_087934.json:
 }
 ```
 
-Attachment
+Attachment [trac_9324-tate.patch](tarball://root/attachments/some-uuid/ticket9324/trac_9324-tate.patch) by cremona created at 2010-06-24 06:27:44
 
 
 

@@ -171,7 +171,7 @@ Changing keywords from "polynomial ring fraction field conversion" to "polynomia
 archive/issue_comments_046763.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5917_add_doctest.patch](tarball://root/attachments/some-uuid/ticket5917/5917_add_doctest.patch) by Bouillaguet created at 2013-01-04 16:30:09",
     "created_at": "2013-01-04T16:30:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5917",
     "type": "issue_comment",
@@ -180,7 +180,7 @@ archive/issue_comments_046763.json:
 }
 ```
 
-Attachment
+Attachment [5917_add_doctest.patch](tarball://root/attachments/some-uuid/ticket5917/5917_add_doctest.patch) by Bouillaguet created at 2013-01-04 16:30:09
 
 
 

@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6996
 archive/issue_comments_057862.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-6996-contour_axes.patch](tarball://root/attachments/some-uuid/ticket6996/trac-6996-contour_axes.patch) by jason created at 2009-09-22 21:35:21",
     "created_at": "2009-09-22T21:35:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6996",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_057862.json:
 }
 ```
 
-Attachment
+Attachment [trac-6996-contour_axes.patch](tarball://root/attachments/some-uuid/ticket6996/trac-6996-contour_axes.patch) by jason created at 2009-09-22 21:35:21
 
 
 

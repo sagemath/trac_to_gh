@@ -231,7 +231,7 @@ Uses the HTTP-HOST header to attempt to get the host name.
 archive/issue_comments_040412.json:
 ```json
 {
-    "body": "Attachment\n\nNice!",
+    "body": "Attachment [trac_5263-publish-url.patch](tarball://root/attachments/some-uuid/ticket5263/trac_5263-publish-url.patch) by mpatel created at 2010-01-20 03:20:16\n\nNice!",
     "created_at": "2010-01-20T03:20:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5263",
     "type": "issue_comment",
@@ -240,7 +240,7 @@ archive/issue_comments_040412.json:
 }
 ```
 
-Attachment
+Attachment [trac_5263-publish-url.patch](tarball://root/attachments/some-uuid/ticket5263/trac_5263-publish-url.patch) by mpatel created at 2010-01-20 03:20:16
 
 Nice!
 

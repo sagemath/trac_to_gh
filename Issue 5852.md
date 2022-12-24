@@ -162,7 +162,7 @@ On systems where "readlink -f" is supported, use that so the path for $SAGE_ROOT
 archive/issue_comments_046180.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:1 tornaria]:\n> Patching `$SAGE_ROOT/sage` with this:\n> {{{\n> --- sage-3.4/sage.orig\t2009-04-22 01:45:48.000000000 -0300\n> +++ sage-3.4/sage\t2009-04-22 09:37:27.000000000 -0300\n> `@``@` -14,6 +14,7 `@``@`\n>  fi\n>  \n>  if [ \"$SAGE_ROOT\" = \".....\" ];  then\n> +    SAGE_ROOT=`readlink -nf \"$0\" 2> /dev/null` || \\\n>      SAGE_ROOT=`readlink -n \"$0\" 2> /dev/null` || \\\n>      SAGE_ROOT=`realpath    \"$0\" 2> /dev/null` || \\\n>      SAGE_ROOT=\"$0\"\n> }}}\n> fixes the issue, since now `$SAGE_ROOT` is correct.\n> \n> According to mabshoff, `readlink -f` doesn't work on some BSD; that's why I left the `readlink -n` test in the second line, but this should of course be tested on those BSD to make sure it doesn't cause a regression.\n\nI can confirm that it does not work on MacOS X.10.4.11 (e.g. Anne Schilling's machine)\n\nA fix would be most welcome, as this makes sage -t make false reports of broken test files.",
+    "body": "Attachment [trac_5852.patch](tarball://root/attachments/some-uuid/ticket5852/trac_5852.patch) by nthiery created at 2009-04-28 00:18:36\n\nReplying to [comment:1 tornaria]:\n> Patching `$SAGE_ROOT/sage` with this:\n> {{{\n> --- sage-3.4/sage.orig\t2009-04-22 01:45:48.000000000 -0300\n> +++ sage-3.4/sage\t2009-04-22 09:37:27.000000000 -0300\n> `@``@` -14,6 +14,7 `@``@`\n>  fi\n>  \n>  if [ \"$SAGE_ROOT\" = \".....\" ];  then\n> +    SAGE_ROOT=`readlink -nf \"$0\" 2> /dev/null` || \\\n>      SAGE_ROOT=`readlink -n \"$0\" 2> /dev/null` || \\\n>      SAGE_ROOT=`realpath    \"$0\" 2> /dev/null` || \\\n>      SAGE_ROOT=\"$0\"\n> }}}\n> fixes the issue, since now `$SAGE_ROOT` is correct.\n> \n> According to mabshoff, `readlink -f` doesn't work on some BSD; that's why I left the `readlink -n` test in the second line, but this should of course be tested on those BSD to make sure it doesn't cause a regression.\n\nI can confirm that it does not work on MacOS X.10.4.11 (e.g. Anne Schilling's machine)\n\nA fix would be most welcome, as this makes sage -t make false reports of broken test files.",
     "created_at": "2009-04-28T00:18:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
@@ -171,7 +171,7 @@ archive/issue_comments_046180.json:
 }
 ```
 
-Attachment
+Attachment [trac_5852.patch](tarball://root/attachments/some-uuid/ticket5852/trac_5852.patch) by nthiery created at 2009-04-28 00:18:36
 
 Replying to [comment:1 tornaria]:
 > Patching `$SAGE_ROOT/sage` with this:
@@ -699,7 +699,7 @@ Since `os.path.realpath` is used twice, shouldn't this be okay?  If not, another
 archive/issue_comments_046197.json:
 ```json
 {
-    "body": "Attachment\n\nShell script replacement for \"readlink -f\"",
+    "body": "Attachment [realpath_bash.sh](tarball://root/attachments/some-uuid/ticket5852/realpath_bash.sh) by jdemeyer created at 2011-08-19 17:31:34\n\nShell script replacement for \"readlink -f\"",
     "created_at": "2011-08-19T17:31:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
@@ -708,7 +708,7 @@ archive/issue_comments_046197.json:
 }
 ```
 
-Attachment
+Attachment [realpath_bash.sh](tarball://root/attachments/some-uuid/ticket5852/realpath_bash.sh) by jdemeyer created at 2011-08-19 17:31:34
 
 Shell script replacement for "readlink -f"
 
@@ -779,7 +779,7 @@ I also noticed that `data/extcode/sage/ext/mac-app/start-sage.sh` has its own `S
 archive/issue_comments_046201.json:
 ```json
 {
-    "body": "Attachment\n\nShell script replacement for \"readlink -f\"",
+    "body": "Attachment [resolvelinks.sh](tarball://root/attachments/some-uuid/ticket5852/resolvelinks.sh) by jdemeyer created at 2011-08-23 12:01:55\n\nShell script replacement for \"readlink -f\"",
     "created_at": "2011-08-23T12:01:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
@@ -788,7 +788,7 @@ archive/issue_comments_046201.json:
 }
 ```
 
-Attachment
+Attachment [resolvelinks.sh](tarball://root/attachments/some-uuid/ticket5852/resolvelinks.sh) by jdemeyer created at 2011-08-23 12:01:55
 
 Shell script replacement for "readlink -f"
 
@@ -939,7 +939,7 @@ Because `resolvelinks` resolves symbolic links in the `sage` executable name, wh
 archive/issue_comments_046208.json:
 ```json
 {
-    "body": "Attachment\n\nPatch for $SAGE_ROOT/sage, SAGE_ROOT repository",
+    "body": "Attachment [5852_sage_root.patch](tarball://root/attachments/some-uuid/ticket5852/5852_sage_root.patch) by jdemeyer created at 2011-10-30 13:08:20\n\nPatch for $SAGE_ROOT/sage, SAGE_ROOT repository",
     "created_at": "2011-10-30T13:08:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
@@ -948,7 +948,7 @@ archive/issue_comments_046208.json:
 }
 ```
 
-Attachment
+Attachment [5852_sage_root.patch](tarball://root/attachments/some-uuid/ticket5852/5852_sage_root.patch) by jdemeyer created at 2011-10-30 13:08:20
 
 Patch for $SAGE_ROOT/sage, SAGE_ROOT repository
 
@@ -959,7 +959,7 @@ Patch for $SAGE_ROOT/sage, SAGE_ROOT repository
 archive/issue_comments_046209.json:
 ```json
 {
-    "body": "Attachment\n\nPatch for local/bin/sage-env, SCRIPTS repository",
+    "body": "Attachment [5852_scripts.patch](tarball://root/attachments/some-uuid/ticket5852/5852_scripts.patch) by jdemeyer created at 2011-10-30 13:08:29\n\nPatch for local/bin/sage-env, SCRIPTS repository",
     "created_at": "2011-10-30T13:08:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
@@ -968,7 +968,7 @@ archive/issue_comments_046209.json:
 }
 ```
 
-Attachment
+Attachment [5852_scripts.patch](tarball://root/attachments/some-uuid/ticket5852/5852_scripts.patch) by jdemeyer created at 2011-10-30 13:08:29
 
 Patch for local/bin/sage-env, SCRIPTS repository
 
@@ -1165,7 +1165,7 @@ But it seems `bash` always supports `pwd -P` as shell builtin, so we are safe.
 archive/issue_comments_046218.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5852_doc.patch](tarball://root/attachments/some-uuid/ticket5852/5852_doc.patch) by jdemeyer created at 2011-11-18 09:09:12",
     "created_at": "2011-11-18T09:09:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
@@ -1174,7 +1174,7 @@ archive/issue_comments_046218.json:
 }
 ```
 
-Attachment
+Attachment [5852_doc.patch](tarball://root/attachments/some-uuid/ticket5852/5852_doc.patch) by jdemeyer created at 2011-11-18 09:09:12
 
 
 
@@ -1219,7 +1219,7 @@ This looks good to me.  I'm attaching a referee patch for the documentation part
 archive/issue_comments_046221.json:
 ```json
 {
-    "body": "Attachment\n\nmain sage repo",
+    "body": "Attachment [trac_5852-doc-referee.patch](tarball://root/attachments/some-uuid/ticket5852/trac_5852-doc-referee.patch) by jhpalmieri created at 2011-11-23 17:50:14\n\nmain sage repo",
     "created_at": "2011-11-23T17:50:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
@@ -1228,7 +1228,7 @@ archive/issue_comments_046221.json:
 }
 ```
 
-Attachment
+Attachment [trac_5852-doc-referee.patch](tarball://root/attachments/some-uuid/ticket5852/trac_5852-doc-referee.patch) by jhpalmieri created at 2011-11-23 17:50:14
 
 main sage repo
 

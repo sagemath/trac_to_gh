@@ -259,7 +259,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_065975.json:
 ```json
 {
-    "body": "Attachment\n\nOk, everything looks good to me.",
+    "body": "Attachment [7688_extcode_pyc.patch](tarball://root/attachments/some-uuid/ticket7688/7688_extcode_pyc.patch) by ohanar created at 2012-10-13 16:45:46\n\nOk, everything looks good to me.",
     "created_at": "2012-10-13T16:45:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7688",
     "type": "issue_comment",
@@ -268,7 +268,7 @@ archive/issue_comments_065975.json:
 }
 ```
 
-Attachment
+Attachment [7688_extcode_pyc.patch](tarball://root/attachments/some-uuid/ticket7688/7688_extcode_pyc.patch) by ohanar created at 2012-10-13 16:45:46
 
 Ok, everything looks good to me.
 

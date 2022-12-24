@@ -78,7 +78,7 @@ Wall time: 0.01
 archive/issue_comments_014237.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8312.patch](tarball://root/attachments/some-uuid/ticket2170/8312.patch) by zimmerma created at 2008-02-15 13:56:15",
     "created_at": "2008-02-15T13:56:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2170",
     "type": "issue_comment",
@@ -87,7 +87,7 @@ archive/issue_comments_014237.json:
 }
 ```
 
-Attachment
+Attachment [8312.patch](tarball://root/attachments/some-uuid/ticket2170/8312.patch) by zimmerma created at 2008-02-15 13:56:15
 
 
 
@@ -179,7 +179,7 @@ It certainly needs to be fixed to handle the base > 62 case, and this patch chan
 archive/issue_comments_014240.json:
 ```json
 {
-    "body": "Attachment\n\nAttached is a revised patch, fixing the issues reported by the reviewers (whom we thank):\n\n```\nsage: a = 9939082340\nsage: a.digits(512)\n[100, 302, 26, 74]\nsage: a.digits(10)\n[0, 4, 3, 2, 8, 0, 9, 3, 9, 9]\nsage: a = 3^100000\nsage: time w = a.digits(base=10)\nCPU times: user 0.12 s, sys: 0.00 s, total: 0.12 s\nWall time: 0.11\nsage: w[:10]\n[1, 0, 0, 0, 0, 0, 2, 2, 5, 5]\n```\n\nWe also made the change suggested by Robert (in Integer.str() too).\nThe new digits() function is faster for 10 <= base <= 62, but not as fast as in the 1st (wrong)\npatch; the bottleneck seems to be the map(make_integer, l) call.",
+    "body": "Attachment [8312.2.patch](tarball://root/attachments/some-uuid/ticket2170/8312.2.patch) by zimmerma created at 2008-02-25 14:18:47\n\nAttached is a revised patch, fixing the issues reported by the reviewers (whom we thank):\n\n```\nsage: a = 9939082340\nsage: a.digits(512)\n[100, 302, 26, 74]\nsage: a.digits(10)\n[0, 4, 3, 2, 8, 0, 9, 3, 9, 9]\nsage: a = 3^100000\nsage: time w = a.digits(base=10)\nCPU times: user 0.12 s, sys: 0.00 s, total: 0.12 s\nWall time: 0.11\nsage: w[:10]\n[1, 0, 0, 0, 0, 0, 2, 2, 5, 5]\n```\n\nWe also made the change suggested by Robert (in Integer.str() too).\nThe new digits() function is faster for 10 <= base <= 62, but not as fast as in the 1st (wrong)\npatch; the bottleneck seems to be the map(make_integer, l) call.",
     "created_at": "2008-02-25T14:18:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2170",
     "type": "issue_comment",
@@ -188,7 +188,7 @@ archive/issue_comments_014240.json:
 }
 ```
 
-Attachment
+Attachment [8312.2.patch](tarball://root/attachments/some-uuid/ticket2170/8312.2.patch) by zimmerma created at 2008-02-25 14:18:47
 
 Attached is a revised patch, fixing the issues reported by the reviewers (whom we thank):
 
@@ -237,7 +237,7 @@ This patch seems to be identical to the original patch.
 archive/issue_comments_014242.json:
 ```json
 {
-    "body": "Attachment\n\n> This patch seems to be identical to the original patch.\n\nSorry for that. The new one (8683.patch) should be the correct one.",
+    "body": "Attachment [8683.patch](tarball://root/attachments/some-uuid/ticket2170/8683.patch) by zimmerma created at 2008-02-25 16:32:56\n\n> This patch seems to be identical to the original patch.\n\nSorry for that. The new one (8683.patch) should be the correct one.",
     "created_at": "2008-02-25T16:32:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2170",
     "type": "issue_comment",
@@ -246,7 +246,7 @@ archive/issue_comments_014242.json:
 }
 ```
 
-Attachment
+Attachment [8683.patch](tarball://root/attachments/some-uuid/ticket2170/8683.patch) by zimmerma created at 2008-02-25 16:32:56
 
 > This patch seems to be identical to the original patch.
 

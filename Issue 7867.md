@@ -603,7 +603,7 @@ Updated Mercurial patch to avoid clash with 7761
 archive/issue_comments_068229.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated spkg-install to avoid clash with 7761",
+    "body": "Attachment [allow-python-modules-to-build-on-Solaris.patch](tarball://root/attachments/some-uuid/ticket7867/allow-python-modules-to-build-on-Solaris.patch) by drkirkby created at 2010-03-02 09:10:07\n\nUpdated spkg-install to avoid clash with 7761",
     "created_at": "2010-03-02T09:10:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7867",
     "type": "issue_comment",
@@ -612,7 +612,7 @@ archive/issue_comments_068229.json:
 }
 ```
 
-Attachment
+Attachment [allow-python-modules-to-build-on-Solaris.patch](tarball://root/attachments/some-uuid/ticket7867/allow-python-modules-to-build-on-Solaris.patch) by drkirkby created at 2010-03-02 09:10:07
 
 Updated spkg-install to avoid clash with 7761
 
@@ -623,7 +623,7 @@ Updated spkg-install to avoid clash with 7761
 archive/issue_comments_068230.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated SPKG.txt  patch to avoid clash with 7761",
+    "body": "Attachment [SPKG.txt](tarball://root/attachments/some-uuid/ticket7867/SPKG.txt) by drkirkby created at 2010-03-02 09:11:22\n\nUpdated SPKG.txt  patch to avoid clash with 7761",
     "created_at": "2010-03-02T09:11:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7867",
     "type": "issue_comment",
@@ -632,7 +632,7 @@ archive/issue_comments_068230.json:
 }
 ```
 
-Attachment
+Attachment [SPKG.txt](tarball://root/attachments/some-uuid/ticket7867/SPKG.txt) by drkirkby created at 2010-03-02 09:11:22
 
 Updated SPKG.txt  patch to avoid clash with 7761
 
@@ -661,7 +661,7 @@ Patch downloaded from Python web site - date changed to today
 archive/issue_comments_068232.json:
 ```json
 {
-    "body": "Attachment\n\nThank you Minh. \n\nI've created a .p7, based on the ticket at #7761. It may be found here. \n\nhttp://boxen.math.washington.edu/home/kirkby/portability/python-2.6.4.p7/python-2.6.4.p7.spkg\n\nI've updated all the files on this ticket. \n\nDespite the fact patch downloaded from the Python web site is unchanged, I decided to 'touch' it to bring the date upto date, as it was previously dated much earlier. I thought it might be a bit confusing if someone looks in the patches directory. I reattached it to this ticket, which was probably unnecessary, but can do no harm. As such, it should",
+    "body": "Attachment [configure.in.Solaris.patch](tarball://root/attachments/some-uuid/ticket7867/configure.in.Solaris.patch) by drkirkby created at 2010-03-02 09:49:15\n\nThank you Minh. \n\nI've created a .p7, based on the ticket at #7761. It may be found here. \n\nhttp://boxen.math.washington.edu/home/kirkby/portability/python-2.6.4.p7/python-2.6.4.p7.spkg\n\nI've updated all the files on this ticket. \n\nDespite the fact patch downloaded from the Python web site is unchanged, I decided to 'touch' it to bring the date upto date, as it was previously dated much earlier. I thought it might be a bit confusing if someone looks in the patches directory. I reattached it to this ticket, which was probably unnecessary, but can do no harm. As such, it should",
     "created_at": "2010-03-02T09:49:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7867",
     "type": "issue_comment",
@@ -670,7 +670,7 @@ archive/issue_comments_068232.json:
 }
 ```
 
-Attachment
+Attachment [configure.in.Solaris.patch](tarball://root/attachments/some-uuid/ticket7867/configure.in.Solaris.patch) by drkirkby created at 2010-03-02 09:49:15
 
 Thank you Minh. 
 

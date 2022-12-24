@@ -198,7 +198,7 @@ it is faster :)!
 archive/issue_comments_007479.json:
 ```json
 {
-    "body": "Attachment\n\nMy test case is the infamous 'dance' program: since sage-2.8.3 we won:\n\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.3.6, Release Date: 2007-09-06                     |\n| Type notebook() for the GUI, and license() for information.        |\n\nsage: attach '/home/jaap/pythonsrc/OEIS/dancing.sage'\n\nsage: time dance(6)\nh^6 - 9*h^5 + 60*h^4 - 225*h^3 + 555*h^2 - 774*h + 484\nCPU times: user 5.15 s, sys: 0.15 s, total: 5.30 s\nWall time: 5.33\n\nsage: time dance(7)\nh^7 - 14*h^6 + 126*h^5 - 700*h^4 + 2625*h^3 - 6342*h^2 + 9072*h - 5840\nCPU times: user 44.50 s, sys: 1.18 s, total: 45.69 s\nWall time: 45.85\n\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.14, Release Date: 2007-11-24                      |\n| Type notebook() for the GUI, and license() for information.        |\n\nsage: attach '/home/jaap/pythonsrc/OEIS/dancing.sage'\n\nsage: time dance(6)\nh^6 - 9*h^5 + 60*h^4 - 225*h^3 + 555*h^2 - 774*h + 484\nCPU times: user 2.16 s, sys: 0.03 s, total: 2.19 s\nWall time: 2.19\n\nsage: time dance(7)\nh^7 - 14*h^6 + 126*h^5 - 700*h^4 + 2625*h^3 - 6342*h^2 + 9072*h - 5840\nCPU times: user 17.22 s, sys: 0.17 s, total: 17.39 s\nWall time: 17.66\n\n\n```\n",
+    "body": "Attachment [choose27112007.hg](tarball://root/attachments/some-uuid/ticket1208/choose27112007.hg) by jsp created at 2007-11-27 20:35:27\n\nMy test case is the infamous 'dance' program: since sage-2.8.3 we won:\n\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.3.6, Release Date: 2007-09-06                     |\n| Type notebook() for the GUI, and license() for information.        |\n\nsage: attach '/home/jaap/pythonsrc/OEIS/dancing.sage'\n\nsage: time dance(6)\nh^6 - 9*h^5 + 60*h^4 - 225*h^3 + 555*h^2 - 774*h + 484\nCPU times: user 5.15 s, sys: 0.15 s, total: 5.30 s\nWall time: 5.33\n\nsage: time dance(7)\nh^7 - 14*h^6 + 126*h^5 - 700*h^4 + 2625*h^3 - 6342*h^2 + 9072*h - 5840\nCPU times: user 44.50 s, sys: 1.18 s, total: 45.69 s\nWall time: 45.85\n\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.14, Release Date: 2007-11-24                      |\n| Type notebook() for the GUI, and license() for information.        |\n\nsage: attach '/home/jaap/pythonsrc/OEIS/dancing.sage'\n\nsage: time dance(6)\nh^6 - 9*h^5 + 60*h^4 - 225*h^3 + 555*h^2 - 774*h + 484\nCPU times: user 2.16 s, sys: 0.03 s, total: 2.19 s\nWall time: 2.19\n\nsage: time dance(7)\nh^7 - 14*h^6 + 126*h^5 - 700*h^4 + 2625*h^3 - 6342*h^2 + 9072*h - 5840\nCPU times: user 17.22 s, sys: 0.17 s, total: 17.39 s\nWall time: 17.66\n\n\n```\n",
     "created_at": "2007-11-27T20:35:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1208",
     "type": "issue_comment",
@@ -207,7 +207,7 @@ archive/issue_comments_007479.json:
 }
 ```
 
-Attachment
+Attachment [choose27112007.hg](tarball://root/attachments/some-uuid/ticket1208/choose27112007.hg) by jsp created at 2007-11-27 20:35:27
 
 My test case is the infamous 'dance' program: since sage-2.8.3 we won:
 
@@ -260,7 +260,7 @@ Wall time: 17.66
 archive/issue_comments_007480.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [newchoose.hg](tarball://root/attachments/some-uuid/ticket1208/newchoose.hg) by jsp created at 2007-11-29 15:44:40",
     "created_at": "2007-11-29T15:44:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1208",
     "type": "issue_comment",
@@ -269,7 +269,7 @@ archive/issue_comments_007480.json:
 }
 ```
 
-Attachment
+Attachment [newchoose.hg](tarball://root/attachments/some-uuid/ticket1208/newchoose.hg) by jsp created at 2007-11-29 15:44:40
 
 
 

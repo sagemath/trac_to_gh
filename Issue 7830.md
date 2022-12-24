@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7830
 archive/issue_comments_067800.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-7830-floating_point_representation.patch](tarball://root/attachments/some-uuid/ticket7830/trac-7830-floating_point_representation.patch) by jason created at 2010-01-03 07:41:58",
     "created_at": "2010-01-03T07:41:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7830",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_067800.json:
 }
 ```
 
-Attachment
+Attachment [trac-7830-floating_point_representation.patch](tarball://root/attachments/some-uuid/ticket7830/trac-7830-floating_point_representation.patch) by jason created at 2010-01-03 07:41:58
 
 
 
@@ -143,7 +143,7 @@ apply on top of previous patch
 archive/issue_comments_067806.json:
 ```json
 {
-    "body": "Attachment\n\nOkay, I added a patch which changes the name.  This is hopefully ready for a positive review now :).",
+    "body": "Attachment [trac-7830-change-name.patch](tarball://root/attachments/some-uuid/ticket7830/trac-7830-change-name.patch) by jason created at 2010-01-08 12:28:29\n\nOkay, I added a patch which changes the name.  This is hopefully ready for a positive review now :).",
     "created_at": "2010-01-08T12:28:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7830",
     "type": "issue_comment",
@@ -152,7 +152,7 @@ archive/issue_comments_067806.json:
 }
 ```
 
-Attachment
+Attachment [trac-7830-change-name.patch](tarball://root/attachments/some-uuid/ticket7830/trac-7830-change-name.patch) by jason created at 2010-01-08 12:28:29
 
 Okay, I added a patch which changes the name.  This is hopefully ready for a positive review now :).
 
@@ -199,7 +199,7 @@ Very good point.  I'll look at this.  I might just end up creating an RR number 
 archive/issue_comments_067809.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of previous patches",
+    "body": "Attachment [trac-7830-sign_m_e.patch](tarball://root/attachments/some-uuid/ticket7830/trac-7830-sign_m_e.patch) by jason created at 2010-01-20 08:41:38\n\napply on top of previous patches",
     "created_at": "2010-01-20T08:41:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7830",
     "type": "issue_comment",
@@ -208,7 +208,7 @@ archive/issue_comments_067809.json:
 }
 ```
 
-Attachment
+Attachment [trac-7830-sign_m_e.patch](tarball://root/attachments/some-uuid/ticket7830/trac-7830-sign_m_e.patch) by jason created at 2010-01-20 08:41:38
 
 apply on top of previous patches
 
@@ -277,7 +277,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_067813.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of previous patches",
+    "body": "Attachment [trac-7830-fixes.patch](tarball://root/attachments/some-uuid/ticket7830/trac-7830-fixes.patch) by jason created at 2010-01-20 09:32:08\n\napply on top of previous patches",
     "created_at": "2010-01-20T09:32:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7830",
     "type": "issue_comment",
@@ -286,7 +286,7 @@ archive/issue_comments_067813.json:
 }
 ```
 
-Attachment
+Attachment [trac-7830-fixes.patch](tarball://root/attachments/some-uuid/ticket7830/trac-7830-fixes.patch) by jason created at 2010-01-20 09:32:08
 
 apply on top of previous patches
 
@@ -351,7 +351,7 @@ all four of the above folded into one
 archive/issue_comments_067817.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good.",
+    "body": "Attachment [7830-real-rep-all.patch](tarball://root/attachments/some-uuid/ticket7830/7830-real-rep-all.patch) by robertwb created at 2010-01-20 09:40:55\n\nLooks good.",
     "created_at": "2010-01-20T09:40:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7830",
     "type": "issue_comment",
@@ -360,7 +360,7 @@ archive/issue_comments_067817.json:
 }
 ```
 
-Attachment
+Attachment [7830-real-rep-all.patch](tarball://root/attachments/some-uuid/ticket7830/7830-real-rep-all.patch) by robertwb created at 2010-01-20 09:40:55
 
 Looks good.
 

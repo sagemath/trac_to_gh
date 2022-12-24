@@ -102,7 +102,7 @@ Based on 3.2.alpha0
 archive/issue_comments_032532.json:
 ```json
 {
-    "body": "Attachment\n\nI think that the .sqrt() method in Integer and Rational should call sqrt._do_sqrt instead of creating the SymbolicComposition themselves.  For example, see\n\n\n```\nsage: sqrt._do_sqrt(4)\n2\nsage: type(_)\n<class 'sage.calculus.calculus.SymbolicComposition'>\nsage: sqrt._do_sqrt(5)\nsqrt(5)\nsage: sqrt._do_sqrt(5, all=True)\n[sqrt(5), -sqrt(5)]\n```\n",
+    "body": "Attachment [sqrt-nonsymbolic.patch](tarball://root/attachments/some-uuid/ticket4425/sqrt-nonsymbolic.patch) by mhansen created at 2008-11-05 07:31:34\n\nI think that the .sqrt() method in Integer and Rational should call sqrt._do_sqrt instead of creating the SymbolicComposition themselves.  For example, see\n\n\n```\nsage: sqrt._do_sqrt(4)\n2\nsage: type(_)\n<class 'sage.calculus.calculus.SymbolicComposition'>\nsage: sqrt._do_sqrt(5)\nsqrt(5)\nsage: sqrt._do_sqrt(5, all=True)\n[sqrt(5), -sqrt(5)]\n```\n",
     "created_at": "2008-11-05T07:31:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4425",
     "type": "issue_comment",
@@ -111,7 +111,7 @@ archive/issue_comments_032532.json:
 }
 ```
 
-Attachment
+Attachment [sqrt-nonsymbolic.patch](tarball://root/attachments/some-uuid/ticket4425/sqrt-nonsymbolic.patch) by mhansen created at 2008-11-05 07:31:34
 
 I think that the .sqrt() method in Integer and Rational should call sqrt._do_sqrt instead of creating the SymbolicComposition themselves.  For example, see
 
@@ -135,7 +135,7 @@ sage: sqrt._do_sqrt(5, all=True)
 archive/issue_comments_032533.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached a patch which makes the change I suggested.  What are your thoughts?",
+    "body": "Attachment [trac_4425.patch](tarball://root/attachments/some-uuid/ticket4425/trac_4425.patch) by mhansen created at 2008-11-06 12:59:31\n\nI've attached a patch which makes the change I suggested.  What are your thoughts?",
     "created_at": "2008-11-06T12:59:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4425",
     "type": "issue_comment",
@@ -144,7 +144,7 @@ archive/issue_comments_032533.json:
 }
 ```
 
-Attachment
+Attachment [trac_4425.patch](tarball://root/attachments/some-uuid/ticket4425/trac_4425.patch) by mhansen created at 2008-11-06 12:59:31
 
 I've attached a patch which makes the change I suggested.  What are your thoughts?
 
@@ -155,7 +155,7 @@ I've attached a patch which makes the change I suggested.  What are your thought
 archive/issue_comments_032534.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sqrt-nonsymbolic-1.patch](tarball://root/attachments/some-uuid/ticket4425/sqrt-nonsymbolic-1.patch) by kcrisman created at 2008-11-06 14:17:14",
     "created_at": "2008-11-06T14:17:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4425",
     "type": "issue_comment",
@@ -164,7 +164,7 @@ archive/issue_comments_032534.json:
 }
 ```
 
-Attachment
+Attachment [sqrt-nonsymbolic-1.patch](tarball://root/attachments/some-uuid/ticket4425/sqrt-nonsymbolic-1.patch) by kcrisman created at 2008-11-06 14:17:14
 
 
 
@@ -215,7 +215,7 @@ The original patch sqrt-nonsymbolic-1.patch and that patch plus the attached fol
 archive/issue_comments_032537.json:
 ```json
 {
-    "body": "Attachment\n\nmabshoff -- apply this and sqrt-nonsymbolic-1.patch; don't apply anything else",
+    "body": "Attachment [sqrt-nonsymbolic-2.patch](tarball://root/attachments/some-uuid/ticket4425/sqrt-nonsymbolic-2.patch) by was created at 2008-11-06 19:50:07\n\nmabshoff -- apply this and sqrt-nonsymbolic-1.patch; don't apply anything else",
     "created_at": "2008-11-06T19:50:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4425",
     "type": "issue_comment",
@@ -224,7 +224,7 @@ archive/issue_comments_032537.json:
 }
 ```
 
-Attachment
+Attachment [sqrt-nonsymbolic-2.patch](tarball://root/attachments/some-uuid/ticket4425/sqrt-nonsymbolic-2.patch) by was created at 2008-11-06 19:50:07
 
 mabshoff -- apply this and sqrt-nonsymbolic-1.patch; don't apply anything else
 

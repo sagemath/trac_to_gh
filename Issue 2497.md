@@ -60,7 +60,7 @@ This also happens in `__florrdiv__(), quo_rem()`
 archive/issue_comments_016926.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2497.patch](tarball://root/attachments/some-uuid/ticket2497/2497.patch) by dmharvey created at 2008-04-05 19:24:52",
     "created_at": "2008-04-05T19:24:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2497",
     "type": "issue_comment",
@@ -69,7 +69,7 @@ archive/issue_comments_016926.json:
 }
 ```
 
-Attachment
+Attachment [2497.patch](tarball://root/attachments/some-uuid/ticket2497/2497.patch) by dmharvey created at 2008-04-05 19:24:52
 
 
 

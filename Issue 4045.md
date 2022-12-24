@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4045
 archive/issue_comments_029169.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [pbori_gb.patch](tarball://root/attachments/some-uuid/ticket4045/pbori_gb.patch) by malb created at 2008-09-03 13:37:59",
     "created_at": "2008-09-03T13:37:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4045",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_029169.json:
 }
 ```
 
-Attachment
+Attachment [pbori_gb.patch](tarball://root/attachments/some-uuid/ticket4045/pbori_gb.patch) by malb created at 2008-09-03 13:37:59
 
 
 
@@ -53,7 +53,7 @@ Attachment
 archive/issue_comments_029170.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [pbori_gb.2.patch](tarball://root/attachments/some-uuid/ticket4045/pbori_gb.2.patch) by malb created at 2008-09-03 15:37:58",
     "created_at": "2008-09-03T15:37:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4045",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_029170.json:
 }
 ```
 
-Attachment
+Attachment [pbori_gb.2.patch](tarball://root/attachments/some-uuid/ticket4045/pbori_gb.2.patch) by malb created at 2008-09-03 15:37:58
 
 
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5354
 archive/issue_comments_041252.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ignore-rand-max.patch](tarball://root/attachments/some-uuid/ticket5354/ignore-rand-max.patch) by cwitty created at 2009-02-24 02:21:20",
     "created_at": "2009-02-24T02:21:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5354",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_041252.json:
 }
 ```
 
-Attachment
+Attachment [ignore-rand-max.patch](tarball://root/attachments/some-uuid/ticket5354/ignore-rand-max.patch) by cwitty created at 2009-02-24 02:21:20
 
 
 

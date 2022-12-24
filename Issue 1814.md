@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1814
 archive/issue_comments_011465.json:
 ```json
 {
-    "body": "Attachment\n\nThe tests are good and should be applied.  The documentation itself is a mild improvement; in a perfect world this would be revisited.  Apply.",
+    "body": "Attachment [stream_cipher.patch](tarball://root/attachments/some-uuid/ticket1814/stream_cipher.patch) by ncalexan created at 2008-01-21 20:08:31\n\nThe tests are good and should be applied.  The documentation itself is a mild improvement; in a perfect world this would be revisited.  Apply.",
     "created_at": "2008-01-21T20:08:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1814",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_011465.json:
 }
 ```
 
-Attachment
+Attachment [stream_cipher.patch](tarball://root/attachments/some-uuid/ticket1814/stream_cipher.patch) by ncalexan created at 2008-01-21 20:08:31
 
 The tests are good and should be applied.  The documentation itself is a mild improvement; in a perfect world this would be revisited.  Apply.
 

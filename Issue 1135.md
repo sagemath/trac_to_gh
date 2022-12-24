@@ -79,7 +79,7 @@ Changing component from interfaces to number fields.
 archive/issue_comments_006887.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-1135.patch](tarball://root/attachments/some-uuid/ticket1135/trac-1135.patch) by lftabera created at 2010-09-17 14:54:52",
     "created_at": "2010-09-17T14:54:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1135",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_006887.json:
 }
 ```
 
-Attachment
+Attachment [trac-1135.patch](tarball://root/attachments/some-uuid/ticket1135/trac-1135.patch) by lftabera created at 2010-09-17 14:54:52
 
 
 

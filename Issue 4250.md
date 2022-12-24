@@ -124,7 +124,7 @@ Changing assignee from malb to burcin.
 archive/issue_comments_030923.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4250_QQx_pow_segfault.3.patch](tarball://root/attachments/some-uuid/ticket4250/trac_4250_QQx_pow_segfault.3.patch) by burcin created at 2008-10-31 10:42:56",
     "created_at": "2008-10-31T10:42:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4250",
     "type": "issue_comment",
@@ -133,7 +133,7 @@ archive/issue_comments_030923.json:
 }
 ```
 
-Attachment
+Attachment [trac_4250_QQx_pow_segfault.3.patch](tarball://root/attachments/some-uuid/ticket4250/trac_4250_QQx_pow_segfault.3.patch) by burcin created at 2008-10-31 10:42:56
 
 
 

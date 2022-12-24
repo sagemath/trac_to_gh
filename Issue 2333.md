@@ -123,7 +123,7 @@ Michael
 archive/issue_comments_015605.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2333.patch](tarball://root/attachments/some-uuid/ticket2333/2333.patch) by mhansen created at 2008-02-28 01:30:16",
     "created_at": "2008-02-28T01:30:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2333",
     "type": "issue_comment",
@@ -132,7 +132,7 @@ archive/issue_comments_015605.json:
 }
 ```
 
-Attachment
+Attachment [2333.patch](tarball://root/attachments/some-uuid/ticket2333/2333.patch) by mhansen created at 2008-02-28 01:30:16
 
 
 
@@ -141,7 +141,7 @@ Attachment
 archive/issue_comments_015606.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2333-2.patch](tarball://root/attachments/some-uuid/ticket2333/2333-2.patch) by mhansen created at 2008-02-28 08:43:25",
     "created_at": "2008-02-28T08:43:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2333",
     "type": "issue_comment",
@@ -150,7 +150,7 @@ archive/issue_comments_015606.json:
 }
 ```
 
-Attachment
+Attachment [2333-2.patch](tarball://root/attachments/some-uuid/ticket2333/2333-2.patch) by mhansen created at 2008-02-28 08:43:25
 
 
 
@@ -159,7 +159,7 @@ Attachment
 archive/issue_comments_015607.json:
 ```json
 {
-    "body": "Attachment\n\nAll three patches should be applied in order.",
+    "body": "Attachment [2333-3.patch](tarball://root/attachments/some-uuid/ticket2333/2333-3.patch) by mhansen created at 2008-02-28 08:45:58\n\nAll three patches should be applied in order.",
     "created_at": "2008-02-28T08:45:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2333",
     "type": "issue_comment",
@@ -168,7 +168,7 @@ archive/issue_comments_015607.json:
 }
 ```
 
-Attachment
+Attachment [2333-3.patch](tarball://root/attachments/some-uuid/ticket2333/2333-3.patch) by mhansen created at 2008-02-28 08:45:58
 
 All three patches should be applied in order.
 

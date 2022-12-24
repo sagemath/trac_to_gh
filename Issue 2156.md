@@ -179,7 +179,7 @@ I thing the above may be a case issue (cython didn't overwrite Cython) but I kno
 archive/issue_comments_014162.json:
 ```json
 {
-    "body": "Attachment\n\nI've uploaded a new spkg with a lowercase 'c' to the same directory as before. With the attached patch, things should work fine.",
+    "body": "Attachment [2156-tripledict.patch](tarball://root/attachments/some-uuid/ticket2156/2156-tripledict.patch) by robertwb created at 2008-02-14 18:29:51\n\nI've uploaded a new spkg with a lowercase 'c' to the same directory as before. With the attached patch, things should work fine.",
     "created_at": "2008-02-14T18:29:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2156",
     "type": "issue_comment",
@@ -188,7 +188,7 @@ archive/issue_comments_014162.json:
 }
 ```
 
-Attachment
+Attachment [2156-tripledict.patch](tarball://root/attachments/some-uuid/ticket2156/2156-tripledict.patch) by robertwb created at 2008-02-14 18:29:51
 
 I've uploaded a new spkg with a lowercase 'c' to the same directory as before. With the attached patch, things should work fine.
 

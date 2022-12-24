@@ -86,7 +86,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6170
 archive/issue_comments_049217.json:
 ```json
 {
-    "body": "Attachment\n\napply to $SAGE_LOCAL/bin",
+    "body": "Attachment [trac-6170-bin.patch](tarball://root/attachments/some-uuid/ticket6170/trac-6170-bin.patch) by craigcitro created at 2009-06-18 08:46:05\n\napply to $SAGE_LOCAL/bin",
     "created_at": "2009-06-18T08:46:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6170",
     "type": "issue_comment",
@@ -95,7 +95,7 @@ archive/issue_comments_049217.json:
 }
 ```
 
-Attachment
+Attachment [trac-6170-bin.patch](tarball://root/attachments/some-uuid/ticket6170/trac-6170-bin.patch) by craigcitro created at 2009-06-18 08:46:05
 
 apply to $SAGE_LOCAL/bin
 
@@ -106,7 +106,7 @@ apply to $SAGE_LOCAL/bin
 archive/issue_comments_049218.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-6170-bin-pt2.patch](tarball://root/attachments/some-uuid/ticket6170/trac-6170-bin-pt2.patch) by craigcitro created at 2009-06-18 23:54:48",
     "created_at": "2009-06-18T23:54:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6170",
     "type": "issue_comment",
@@ -115,7 +115,7 @@ archive/issue_comments_049218.json:
 }
 ```
 
-Attachment
+Attachment [trac-6170-bin-pt2.patch](tarball://root/attachments/some-uuid/ticket6170/trac-6170-bin-pt2.patch) by craigcitro created at 2009-06-18 23:54:48
 
 
 

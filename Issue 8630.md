@@ -93,7 +93,7 @@ archive/issue_comments_078247.json:
 archive/issue_comments_078248.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8630.patch](tarball://root/attachments/some-uuid/ticket8630/trac_8630.patch) by davidloeffler created at 2010-03-30 17:37:31",
     "created_at": "2010-03-30T17:37:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8630",
     "type": "issue_comment",
@@ -102,7 +102,7 @@ archive/issue_comments_078248.json:
 }
 ```
 
-Attachment
+Attachment [trac_8630.patch](tarball://root/attachments/some-uuid/ticket8630/trac_8630.patch) by davidloeffler created at 2010-03-30 17:37:31
 
 
 
@@ -220,7 +220,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_078254.json:
 ```json
 {
-    "body": "Attachment\n\napply over previous patch",
+    "body": "Attachment [trac_8630_docfixes.patch](tarball://root/attachments/some-uuid/ticket8630/trac_8630_docfixes.patch) by davidloeffler created at 2010-03-31 11:07:37\n\napply over previous patch",
     "created_at": "2010-03-31T11:07:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8630",
     "type": "issue_comment",
@@ -229,7 +229,7 @@ archive/issue_comments_078254.json:
 }
 ```
 
-Attachment
+Attachment [trac_8630_docfixes.patch](tarball://root/attachments/some-uuid/ticket8630/trac_8630_docfixes.patch) by davidloeffler created at 2010-03-31 11:07:37
 
 apply over previous patch
 

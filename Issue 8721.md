@@ -126,7 +126,7 @@ Changing status from new to needs_review.
 archive/issue_comments_079646.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8721-residue_field_lifting_bug.patch](tarball://root/attachments/some-uuid/ticket8721/trac_8721-residue_field_lifting_bug.patch) by davidloeffler created at 2011-01-25 17:18:45",
     "created_at": "2011-01-25T17:18:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8721",
     "type": "issue_comment",
@@ -135,7 +135,7 @@ archive/issue_comments_079646.json:
 }
 ```
 
-Attachment
+Attachment [trac_8721-residue_field_lifting_bug.patch](tarball://root/attachments/some-uuid/ticket8721/trac_8721-residue_field_lifting_bug.patch) by davidloeffler created at 2011-01-25 17:18:45
 
 
 

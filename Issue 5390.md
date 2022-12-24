@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5390
 archive/issue_comments_041512.json:
 ```json
 {
-    "body": "Attachment\n\nMake sure that install_package picks the right sage version (sorry, it seems the previous attachment was corrupted)",
+    "body": "Attachment [installpackage2.patch](tarball://root/attachments/some-uuid/ticket5390/installpackage2.patch) by SimonKing created at 2009-02-27 09:53:55\n\nMake sure that install_package picks the right sage version (sorry, it seems the previous attachment was corrupted)",
     "created_at": "2009-02-27T09:53:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5390",
     "type": "issue_comment",
@@ -53,7 +53,7 @@ archive/issue_comments_041512.json:
 }
 ```
 
-Attachment
+Attachment [installpackage2.patch](tarball://root/attachments/some-uuid/ticket5390/installpackage2.patch) by SimonKing created at 2009-02-27 09:53:55
 
 Make sure that install_package picks the right sage version (sorry, it seems the previous attachment was corrupted)
 

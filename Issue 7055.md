@@ -73,7 +73,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7055
 archive/issue_comments_058398.json:
 ```json
 {
-    "body": "Attachment\n\ntested against 4.1.2.alpha4",
+    "body": "Attachment [trac_7055-bitness-issue.patch](tarball://root/attachments/some-uuid/ticket7055/trac_7055-bitness-issue.patch) by GeorgSWeber created at 2009-09-28 19:02:38\n\ntested against 4.1.2.alpha4",
     "created_at": "2009-09-28T19:02:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7055",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_058398.json:
 }
 ```
 
-Attachment
+Attachment [trac_7055-bitness-issue.patch](tarball://root/attachments/some-uuid/ticket7055/trac_7055-bitness-issue.patch) by GeorgSWeber created at 2009-09-28 19:02:38
 
 tested against 4.1.2.alpha4
 

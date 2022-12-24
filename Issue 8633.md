@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8633
 archive/issue_comments_078297.json:
 ```json
 {
-    "body": "Attachment\n\nWorks for me (I had another case of \\texttt - thank you for providing such a timely patch!) and for the given code.\n\nIs it ready for review? The patch does not add any doctests, but I am not sure if it is possible to test such an issue in doctests. At least it does not break any existing ones.",
+    "body": "Attachment [trac_8633-texttt.patch](tarball://root/attachments/some-uuid/ticket8633/trac_8633-texttt.patch) by novoselt created at 2010-04-01 01:47:20\n\nWorks for me (I had another case of \\texttt - thank you for providing such a timely patch!) and for the given code.\n\nIs it ready for review? The patch does not add any doctests, but I am not sure if it is possible to test such an issue in doctests. At least it does not break any existing ones.",
     "created_at": "2010-04-01T01:47:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8633",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_078297.json:
 }
 ```
 
-Attachment
+Attachment [trac_8633-texttt.patch](tarball://root/attachments/some-uuid/ticket8633/trac_8633-texttt.patch) by novoselt created at 2010-04-01 01:47:20
 
 Works for me (I had another case of \texttt - thank you for providing such a timely patch!) and for the given code.
 

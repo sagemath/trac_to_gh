@@ -46,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9770
 archive/issue_comments_095726.json:
 ```json
 {
-    "body": "Attachment\n\nThe bug is not unique to the spherical distribution; rather, it has to do with whether the distribution is instantiated prior to the use of the random element method.  The worksheet above illustrates the same behavior with the Gaussian and uniform distributions.",
+    "body": "Attachment [SageDays_random_element_bug.sws](tarball://root/attachments/some-uuid/ticket9770/SageDays_random_element_bug.sws) by jreaton created at 2010-12-10 19:52:19\n\nThe bug is not unique to the spherical distribution; rather, it has to do with whether the distribution is instantiated prior to the use of the random element method.  The worksheet above illustrates the same behavior with the Gaussian and uniform distributions.",
     "created_at": "2010-12-10T19:52:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9769",
     "type": "issue_comment",
@@ -55,7 +55,7 @@ archive/issue_comments_095726.json:
 }
 ```
 
-Attachment
+Attachment [SageDays_random_element_bug.sws](tarball://root/attachments/some-uuid/ticket9770/SageDays_random_element_bug.sws) by jreaton created at 2010-12-10 19:52:19
 
 The bug is not unique to the spherical distribution; rather, it has to do with whether the distribution is instantiated prior to the use of the random element method.  The worksheet above illustrates the same behavior with the Gaussian and uniform distributions.
 
@@ -128,7 +128,7 @@ fix seed randomization
 archive/issue_comments_095730.json:
 ```json
 {
-    "body": "Attachment\n\nWow, good catch.  Affected file passes tests; code looks good.\n\nCan you fill in the author name?",
+    "body": "Attachment [trac_9770_fix_distribution_seeds.patch](tarball://root/attachments/some-uuid/ticket9770/trac_9770_fix_distribution_seeds.patch) by jason created at 2011-12-13 16:18:36\n\nWow, good catch.  Affected file passes tests; code looks good.\n\nCan you fill in the author name?",
     "created_at": "2011-12-13T16:18:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9769",
     "type": "issue_comment",
@@ -137,7 +137,7 @@ archive/issue_comments_095730.json:
 }
 ```
 
-Attachment
+Attachment [trac_9770_fix_distribution_seeds.patch](tarball://root/attachments/some-uuid/ticket9770/trac_9770_fix_distribution_seeds.patch) by jason created at 2011-12-13 16:18:36
 
 Wow, good catch.  Affected file passes tests; code looks good.
 
@@ -433,7 +433,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_095742.json:
 ```json
 {
-    "body": "Attachment\n\nVersion modified to (hopefully) avoid overflow errors without sacrificing entropy.  `@`jdemeyer, you mind trying it on hawk?",
+    "body": "Attachment [trac_9770_fix_distribution_seeds_v2.patch](tarball://root/attachments/some-uuid/ticket9770/trac_9770_fix_distribution_seeds_v2.patch) by dsm created at 2012-02-05 04:44:50\n\nVersion modified to (hopefully) avoid overflow errors without sacrificing entropy.  `@`jdemeyer, you mind trying it on hawk?",
     "created_at": "2012-02-05T04:44:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9769",
     "type": "issue_comment",
@@ -442,7 +442,7 @@ archive/issue_comments_095742.json:
 }
 ```
 
-Attachment
+Attachment [trac_9770_fix_distribution_seeds_v2.patch](tarball://root/attachments/some-uuid/ticket9770/trac_9770_fix_distribution_seeds_v2.patch) by dsm created at 2012-02-05 04:44:50
 
 Version modified to (hopefully) avoid overflow errors without sacrificing entropy.  `@`jdemeyer, you mind trying it on hawk?
 
@@ -509,7 +509,7 @@ This seems to conflict (in a rather trivial way) with #9958, and hence doesn't a
 archive/issue_comments_095746.json:
 ```json
 {
-    "body": "Attachment\n\nrebased to 5.0.beta7",
+    "body": "Attachment [trac_9770_fix_distribution_seeds_v4.patch](tarball://root/attachments/some-uuid/ticket9770/trac_9770_fix_distribution_seeds_v4.patch) by dsm created at 2012-03-12 02:42:32\n\nrebased to 5.0.beta7",
     "created_at": "2012-03-12T02:42:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9769",
     "type": "issue_comment",
@@ -518,7 +518,7 @@ archive/issue_comments_095746.json:
 }
 ```
 
-Attachment
+Attachment [trac_9770_fix_distribution_seeds_v4.patch](tarball://root/attachments/some-uuid/ticket9770/trac_9770_fix_distribution_seeds_v4.patch) by dsm created at 2012-03-12 02:42:32
 
 rebased to 5.0.beta7
 

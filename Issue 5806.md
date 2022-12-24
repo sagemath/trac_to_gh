@@ -833,7 +833,7 @@ When doctesting on sage.math, I started seeing the "argument must be an int, or 
 archive/issue_comments_045597.json:
 ```json
 {
-    "body": "Attachment\n\napply in addition to first patch; adds AUTHORS and removes nodoctest from sageinspect.py",
+    "body": "Attachment [trac_5806-part2.patch](tarball://root/attachments/some-uuid/ticket5806/trac_5806-part2.patch) by ddrake created at 2009-05-21 06:14:38\n\napply in addition to first patch; adds AUTHORS and removes nodoctest from sageinspect.py",
     "created_at": "2009-05-21T06:14:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5806",
     "type": "issue_comment",
@@ -842,7 +842,7 @@ archive/issue_comments_045597.json:
 }
 ```
 
-Attachment
+Attachment [trac_5806-part2.patch](tarball://root/attachments/some-uuid/ticket5806/trac_5806-part2.patch) by ddrake created at 2009-05-21 06:14:38
 
 apply in addition to first patch; adds AUTHORS and removes nodoctest from sageinspect.py
 
@@ -956,7 +956,7 @@ I think this is OS specific, and maybe it has to do with the BSD-style find comm
 archive/issue_comments_045602.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:29 jhpalmieri]:\n> I think this is OS specific, and maybe it has to do with the BSD-style find command on Mac OS X.  That is: with just your two patches, all tests pass on sage.math and on another linux box I have access to.  On my Intel Mac running OS X 10.5, I get the error listed above because of the leading slash \"/\".  Even worse, though, from the notebook interface, the links are broken, again because of the slash.  I think the right thing to do is to strip the leading slash if it's present.  Here's a patch which does that; it passes all tests on sage.math and on my mac.\n\nAh, perfect. Your patch3 passes doctests and works in the notebook on my own machine (amd64 Ubuntu, so no surprise there since it works on sage.math), and passes doctests on a 32-bit Fedora 10 machine.\n\nI did notice that `search_doc` was not actually searching the documentation...I was a little too quick with cut and paste. I'll upload a new version of the first patch (all I did was change a `'src'` to `'doc'`). Now we need to get someone to review this.",
+    "body": "Attachment [trac_5806-part3.patch](tarball://root/attachments/some-uuid/ticket5806/trac_5806-part3.patch) by ddrake created at 2009-05-27 01:26:26\n\nReplying to [comment:29 jhpalmieri]:\n> I think this is OS specific, and maybe it has to do with the BSD-style find command on Mac OS X.  That is: with just your two patches, all tests pass on sage.math and on another linux box I have access to.  On my Intel Mac running OS X 10.5, I get the error listed above because of the leading slash \"/\".  Even worse, though, from the notebook interface, the links are broken, again because of the slash.  I think the right thing to do is to strip the leading slash if it's present.  Here's a patch which does that; it passes all tests on sage.math and on my mac.\n\nAh, perfect. Your patch3 passes doctests and works in the notebook on my own machine (amd64 Ubuntu, so no surprise there since it works on sage.math), and passes doctests on a 32-bit Fedora 10 machine.\n\nI did notice that `search_doc` was not actually searching the documentation...I was a little too quick with cut and paste. I'll upload a new version of the first patch (all I did was change a `'src'` to `'doc'`). Now we need to get someone to review this.",
     "created_at": "2009-05-27T01:26:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5806",
     "type": "issue_comment",
@@ -965,7 +965,7 @@ archive/issue_comments_045602.json:
 }
 ```
 
-Attachment
+Attachment [trac_5806-part3.patch](tarball://root/attachments/some-uuid/ticket5806/trac_5806-part3.patch) by ddrake created at 2009-05-27 01:26:26
 
 Replying to [comment:29 jhpalmieri]:
 > I think this is OS specific, and maybe it has to do with the BSD-style find command on Mac OS X.  That is: with just your two patches, all tests pass on sage.math and on another linux box I have access to.  On my Intel Mac running OS X 10.5, I get the error listed above because of the leading slash "/".  Even worse, though, from the notebook interface, the links are broken, again because of the slash.  I think the right thing to do is to strip the leading slash if it's present.  Here's a patch which does that; it passes all tests on sage.math and on my mac.
@@ -981,7 +981,7 @@ I did notice that `search_doc` was not actually searching the documentation...I 
 archive/issue_comments_045603.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5806.patch](tarball://root/attachments/some-uuid/ticket5806/trac_5806.patch) by ddrake created at 2009-05-27 01:32:07",
     "created_at": "2009-05-27T01:32:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5806",
     "type": "issue_comment",
@@ -990,7 +990,7 @@ archive/issue_comments_045603.json:
 }
 ```
 
-Attachment
+Attachment [trac_5806.patch](tarball://root/attachments/some-uuid/ticket5806/trac_5806.patch) by ddrake created at 2009-05-27 01:32:07
 
 
 

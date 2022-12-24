@@ -235,7 +235,7 @@ sage: %timeit phi(f)
 archive/issue_comments_052405.json:
 ```json
 {
-    "body": "Attachment\n\n**Performance**\n\n\n```python\nsage: P.<a,b,c,d,e> = PolynomialRing(QQ)\nsage: f = P.random_element(degree=3,terms=50)\nsage: g = {a:b,b:c,c:d,d:e,e:a}\nsage: %timeit f.subs(g)\n1000 loops, best of 3: 271 \u00b5s per loop\n```\n\n\n\n```python\nsage: phi = P.hom([b,c,d,e,a])\nsage: %timeit phi(f)\n1000 loops, best of 3: 939 \u00b5s per loop\n```\n\n\n\n```python\nsage: phi(f)\n-a^2*b - 11/2*b^3 - 8*a^2*c + 1/51*b*c^2 + 1/2*c^3 - a^2*d + 1/3*a*b*d - 2/11*a*c*d + 195*b*c*d + 1/3*a*d^2 + 2*b*d^2 - c*d^2 - 2/3*a^2*e + 1/2*a*b*e - 203*b^2*e + 1/4*a*c*e + b*c*e - 5*c^2*e + 6*a*e^2 + b*e^2 - 1/3*c*e^2 - 5*d*e^2 + 3*e^3 + 1/3*a^2 - a*b - 7/48*a*c - 2*b*c - 53/2*c^2 - 1/3*a*d - 1/2*b*d + c*d - d^2 - a*e - 4*b*e - d*e + 13*e^2 - 2*a - 1/2*b - c + 9/2*d - 1/2\nsage: f.sub\nf.sub_m_mul_q  f.subs         f.substitute\nsage: f.subs(g)\n-a^2*b - 11/2*b^3 - 8*a^2*c + 1/51*b*c^2 + 1/2*c^3 - a^2*d + 1/3*a*b*d - 2/11*a*c*d + 195*b*c*d + 1/3*a*d^2 + 2*b*d^2 - c*d^2 - 2/3*a^2*e + 1/2*a*b*e - 203*b^2*e + 1/4*a*c*e + b*c*e - 5*c^2*e + 6*a*e^2 + b*e^2 - 1/3*c*e^2 - 5*d*e^2 + 3*e^3 + 1/3*a^2 - a*b - 7/48*a*c - 2*b*c - 53/2*c^2 - 1/3*a*d - 1/2*b*d + c*d - d^2 - a*e - 4*b*e - d*e + 13*e^2 - 2*a - 1/2*b - c + 9/2*d - 1/2\n```\n",
+    "body": "Attachment [fix_mpoly_subs.patch](tarball://root/attachments/some-uuid/ticket6482/fix_mpoly_subs.patch) by malb created at 2009-09-09 20:12:43\n\n**Performance**\n\n\n```python\nsage: P.<a,b,c,d,e> = PolynomialRing(QQ)\nsage: f = P.random_element(degree=3,terms=50)\nsage: g = {a:b,b:c,c:d,d:e,e:a}\nsage: %timeit f.subs(g)\n1000 loops, best of 3: 271 \u00b5s per loop\n```\n\n\n\n```python\nsage: phi = P.hom([b,c,d,e,a])\nsage: %timeit phi(f)\n1000 loops, best of 3: 939 \u00b5s per loop\n```\n\n\n\n```python\nsage: phi(f)\n-a^2*b - 11/2*b^3 - 8*a^2*c + 1/51*b*c^2 + 1/2*c^3 - a^2*d + 1/3*a*b*d - 2/11*a*c*d + 195*b*c*d + 1/3*a*d^2 + 2*b*d^2 - c*d^2 - 2/3*a^2*e + 1/2*a*b*e - 203*b^2*e + 1/4*a*c*e + b*c*e - 5*c^2*e + 6*a*e^2 + b*e^2 - 1/3*c*e^2 - 5*d*e^2 + 3*e^3 + 1/3*a^2 - a*b - 7/48*a*c - 2*b*c - 53/2*c^2 - 1/3*a*d - 1/2*b*d + c*d - d^2 - a*e - 4*b*e - d*e + 13*e^2 - 2*a - 1/2*b - c + 9/2*d - 1/2\nsage: f.sub\nf.sub_m_mul_q  f.subs         f.substitute\nsage: f.subs(g)\n-a^2*b - 11/2*b^3 - 8*a^2*c + 1/51*b*c^2 + 1/2*c^3 - a^2*d + 1/3*a*b*d - 2/11*a*c*d + 195*b*c*d + 1/3*a*d^2 + 2*b*d^2 - c*d^2 - 2/3*a^2*e + 1/2*a*b*e - 203*b^2*e + 1/4*a*c*e + b*c*e - 5*c^2*e + 6*a*e^2 + b*e^2 - 1/3*c*e^2 - 5*d*e^2 + 3*e^3 + 1/3*a^2 - a*b - 7/48*a*c - 2*b*c - 53/2*c^2 - 1/3*a*d - 1/2*b*d + c*d - d^2 - a*e - 4*b*e - d*e + 13*e^2 - 2*a - 1/2*b - c + 9/2*d - 1/2\n```\n",
     "created_at": "2009-09-09T20:12:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6482",
     "type": "issue_comment",
@@ -244,7 +244,7 @@ archive/issue_comments_052405.json:
 }
 ```
 
-Attachment
+Attachment [fix_mpoly_subs.patch](tarball://root/attachments/some-uuid/ticket6482/fix_mpoly_subs.patch) by malb created at 2009-09-09 20:12:43
 
 **Performance**
 

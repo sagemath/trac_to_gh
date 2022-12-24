@@ -1610,7 +1610,7 @@ backout attachment:trac1396-singular_options.2.patch
 archive/issue_comments_092620.json:
 ```json
 {
-    "body": "Attachment\n\nSince #1396 didn't fix any bugs or other failures, and since I'm not brave enough to merge any more spkgs than I already have, for 4.5.2 I propose that we backout attachment:trac1396-singular_options.2.patch. I will open a new ticket, in which we can re-merge #1396.\n\nThe patch here was obtained by using `hg backout`, so if we trust Mercurial, it will exactly reverse the patch from #1396.",
+    "body": "Attachment [trac_9583.patch](tarball://root/attachments/some-uuid/ticket9583/trac_9583.patch) by ddrake created at 2010-07-26 08:10:38\n\nSince #1396 didn't fix any bugs or other failures, and since I'm not brave enough to merge any more spkgs than I already have, for 4.5.2 I propose that we backout attachment:trac1396-singular_options.2.patch. I will open a new ticket, in which we can re-merge #1396.\n\nThe patch here was obtained by using `hg backout`, so if we trust Mercurial, it will exactly reverse the patch from #1396.",
     "created_at": "2010-07-26T08:10:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9583",
     "type": "issue_comment",
@@ -1619,7 +1619,7 @@ archive/issue_comments_092620.json:
 }
 ```
 
-Attachment
+Attachment [trac_9583.patch](tarball://root/attachments/some-uuid/ticket9583/trac_9583.patch) by ddrake created at 2010-07-26 08:10:38
 
 Since #1396 didn't fix any bugs or other failures, and since I'm not brave enough to merge any more spkgs than I already have, for 4.5.2 I propose that we backout attachment:trac1396-singular_options.2.patch. I will open a new ticket, in which we can re-merge #1396.
 

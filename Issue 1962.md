@@ -132,7 +132,7 @@ In fact, `set_edge_label` only makes sense when there is only one possible edge 
 archive/issue_comments_012673.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1962.patch](tarball://root/attachments/some-uuid/ticket1962/1962.patch) by rlm created at 2008-02-17 00:24:54",
     "created_at": "2008-02-17T00:24:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1962",
     "type": "issue_comment",
@@ -141,7 +141,7 @@ archive/issue_comments_012673.json:
 }
 ```
 
-Attachment
+Attachment [1962.patch](tarball://root/attachments/some-uuid/ticket1962/1962.patch) by rlm created at 2008-02-17 00:24:54
 
 
 
@@ -150,7 +150,7 @@ Attachment
 archive/issue_comments_012674.json:
 ```json
 {
-    "body": "Attachment\n\nAfter discussion on IRC, this looks good to me.  Apply.  Needs both patches, -ref second.",
+    "body": "Attachment [1962-ref.patch](tarball://root/attachments/some-uuid/ticket1962/1962-ref.patch) by ncalexan created at 2008-02-26 01:06:04\n\nAfter discussion on IRC, this looks good to me.  Apply.  Needs both patches, -ref second.",
     "created_at": "2008-02-26T01:06:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1962",
     "type": "issue_comment",
@@ -159,7 +159,7 @@ archive/issue_comments_012674.json:
 }
 ```
 
-Attachment
+Attachment [1962-ref.patch](tarball://root/attachments/some-uuid/ticket1962/1962-ref.patch) by ncalexan created at 2008-02-26 01:06:04
 
 After discussion on IRC, this looks good to me.  Apply.  Needs both patches, -ref second.
 

@@ -49,7 +49,7 @@ fix for assumption hang with ecl
 archive/issue_comments_046873.json:
 ```json
 {
-    "body": "Attachment\n\nfix (workaround) for out of sync hang which timeouts a doctest",
+    "body": "Attachment [trac_5929-fix_assumption_hang.patch](tarball://root/attachments/some-uuid/ticket5929/trac_5929-fix_assumption_hang.patch) by tornaria created at 2009-05-11 03:32:52\n\nfix (workaround) for out of sync hang which timeouts a doctest",
     "created_at": "2009-05-11T03:32:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5929",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_046873.json:
 }
 ```
 
-Attachment
+Attachment [trac_5929-fix_assumption_hang.patch](tarball://root/attachments/some-uuid/ticket5929/trac_5929-fix_assumption_hang.patch) by tornaria created at 2009-05-11 03:32:52
 
 fix (workaround) for out of sync hang which timeouts a doctest
 
@@ -69,7 +69,7 @@ fix (workaround) for out of sync hang which timeouts a doctest
 archive/issue_comments_046874.json:
 ```json
 {
-    "body": "Attachment\n\nComment for attachment:trac_5929-fix_assumption_hang.patch:\n\nFor #5929: fix hang in maxima/ecl due to assumption questions\n\nWhen maxima asks a question, current code sends CTRL-C\ntwice to break, then raises an exception. This used to work with\nclisp, but for ecl it actually hangs. A test case is given by\n\n\n```\nvar(\"Ax,Bx,By\")\nt = -Ax*sin(sqrt(Ax^2)/2)/(sqrt(Ax^2)*sqrt(By^2 + Bx^2))\nlimit(t, Ax=0)\n```\n\n\nIt turns out that it is possible to \"break\" from the question by just\nsending \";\" by itself to maxima. The current patch changes to this\nmethod of escaping. It works with clisp or ecl.",
+    "body": "Attachment [trac_5929-fix_outofsync_hang.patch](tarball://root/attachments/some-uuid/ticket5929/trac_5929-fix_outofsync_hang.patch) by tornaria created at 2009-05-11 03:35:35\n\nComment for attachment:trac_5929-fix_assumption_hang.patch:\n\nFor #5929: fix hang in maxima/ecl due to assumption questions\n\nWhen maxima asks a question, current code sends CTRL-C\ntwice to break, then raises an exception. This used to work with\nclisp, but for ecl it actually hangs. A test case is given by\n\n\n```\nvar(\"Ax,Bx,By\")\nt = -Ax*sin(sqrt(Ax^2)/2)/(sqrt(Ax^2)*sqrt(By^2 + Bx^2))\nlimit(t, Ax=0)\n```\n\n\nIt turns out that it is possible to \"break\" from the question by just\nsending \";\" by itself to maxima. The current patch changes to this\nmethod of escaping. It works with clisp or ecl.",
     "created_at": "2009-05-11T03:35:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5929",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_046874.json:
 }
 ```
 
-Attachment
+Attachment [trac_5929-fix_outofsync_hang.patch](tarball://root/attachments/some-uuid/ticket5929/trac_5929-fix_outofsync_hang.patch) by tornaria created at 2009-05-11 03:35:35
 
 Comment for attachment:trac_5929-fix_assumption_hang.patch:
 

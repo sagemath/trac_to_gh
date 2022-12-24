@@ -241,7 +241,7 @@ I think the right thing to do here is to depend on #11513. There are several way
 archive/issue_comments_082877.json:
 ```json
 {
-    "body": "Attachment\n\nmake erf(0) return 0",
+    "body": "Attachment [trac_8983.patch](tarball://root/attachments/some-uuid/ticket8983/trac_8983.patch) by benjaminfjones created at 2012-02-12 06:34:43\n\nmake erf(0) return 0",
     "created_at": "2012-02-12T06:34:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8983",
     "type": "issue_comment",
@@ -250,7 +250,7 @@ archive/issue_comments_082877.json:
 }
 ```
 
-Attachment
+Attachment [trac_8983.patch](tarball://root/attachments/some-uuid/ticket8983/trac_8983.patch) by benjaminfjones created at 2012-02-12 06:34:43
 
 make erf(0) return 0
 
@@ -355,7 +355,7 @@ Integer Ring
 archive/issue_comments_082882.json:
 ```json
 {
-    "body": "Attachment\n\nmake erf(0) return 0",
+    "body": "Attachment [trac_8983_v2.patch](tarball://root/attachments/some-uuid/ticket8983/trac_8983_v2.patch) by benjaminfjones created at 2012-02-13 04:33:25\n\nmake erf(0) return 0",
     "created_at": "2012-02-13T04:33:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8983",
     "type": "issue_comment",
@@ -364,7 +364,7 @@ archive/issue_comments_082882.json:
 }
 ```
 
-Attachment
+Attachment [trac_8983_v2.patch](tarball://root/attachments/some-uuid/ticket8983/trac_8983_v2.patch) by benjaminfjones created at 2012-02-13 04:33:25
 
 make erf(0) return 0
 
@@ -508,7 +508,7 @@ BTW, `erf(SR(0))` should be a simple way of hitting the `is_trivially_zero()` br
 archive/issue_comments_082889.json:
 ```json
 {
-    "body": "Attachment\n\nmake erf(0) return 0, with added doctests and simplified branching in _eval_",
+    "body": "Attachment [trac_8983_v3.patch](tarball://root/attachments/some-uuid/ticket8983/trac_8983_v3.patch) by benjaminfjones created at 2012-02-14 16:53:00\n\nmake erf(0) return 0, with added doctests and simplified branching in _eval_",
     "created_at": "2012-02-14T16:53:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8983",
     "type": "issue_comment",
@@ -517,7 +517,7 @@ archive/issue_comments_082889.json:
 }
 ```
 
-Attachment
+Attachment [trac_8983_v3.patch](tarball://root/attachments/some-uuid/ticket8983/trac_8983_v3.patch) by benjaminfjones created at 2012-02-14 16:53:00
 
 make erf(0) return 0, with added doctests and simplified branching in _eval_
 

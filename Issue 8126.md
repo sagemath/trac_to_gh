@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8126
 archive/issue_comments_071444.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [doc-circle.patch](tarball://root/attachments/some-uuid/ticket8126/doc-circle.patch) by robert.marik created at 2010-01-29 21:49:40",
     "created_at": "2010-01-29T21:49:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8126",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_071444.json:
 }
 ```
 
-Attachment
+Attachment [doc-circle.patch](tarball://root/attachments/some-uuid/ticket8126/doc-circle.patch) by robert.marik created at 2010-01-29 21:49:40
 
 
 
@@ -139,7 +139,7 @@ the same patch, renamed
 archive/issue_comments_071450.json:
 ```json
 {
-    "body": "Attachment\n\nMerged [trac_8126.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8126/trac_8126.patch).",
+    "body": "Attachment [trac_8126.patch](tarball://root/attachments/some-uuid/ticket8126/trac_8126.patch) by mvngu created at 2010-01-31 00:17:03\n\nMerged [trac_8126.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8126/trac_8126.patch).",
     "created_at": "2010-01-31T00:17:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8126",
     "type": "issue_comment",
@@ -148,7 +148,7 @@ archive/issue_comments_071450.json:
 }
 ```
 
-Attachment
+Attachment [trac_8126.patch](tarball://root/attachments/some-uuid/ticket8126/trac_8126.patch) by mvngu created at 2010-01-31 00:17:03
 
 Merged [trac_8126.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8126/trac_8126.patch).
 

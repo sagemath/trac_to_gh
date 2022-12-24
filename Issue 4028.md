@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4028
 archive/issue_comments_029046.json:
 ```json
 {
-    "body": "Attachment\n\nOne spelling error: \"requires Axoim\" (which Mike corrected) - other than that is passes doctests with and without Axiom installed. Mike went with me over the patch and answered questions. Positive review.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_4028.patch](tarball://root/attachments/some-uuid/ticket4028/trac_4028.patch) by mabshoff created at 2008-09-01 03:17:10\n\nOne spelling error: \"requires Axoim\" (which Mike corrected) - other than that is passes doctests with and without Axiom installed. Mike went with me over the patch and answered questions. Positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-01T03:17:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4028",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_029046.json:
 }
 ```
 
-Attachment
+Attachment [trac_4028.patch](tarball://root/attachments/some-uuid/ticket4028/trac_4028.patch) by mabshoff created at 2008-09-01 03:17:10
 
 One spelling error: "requires Axoim" (which Mike corrected) - other than that is passes doctests with and without Axiom installed. Mike went with me over the patch and answered questions. Positive review.
 

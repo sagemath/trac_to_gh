@@ -49,7 +49,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2611
 archive/issue_comments_017920.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [pb_monomial_coefficient.patch](tarball://root/attachments/some-uuid/ticket2611/pb_monomial_coefficient.patch) by malb created at 2008-03-20 11:53:41",
     "created_at": "2008-03-20T11:53:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2611",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_017920.json:
 }
 ```
 
-Attachment
+Attachment [pb_monomial_coefficient.patch](tarball://root/attachments/some-uuid/ticket2611/pb_monomial_coefficient.patch) by malb created at 2008-03-20 11:53:41
 
 
 
@@ -100,7 +100,7 @@ I also notice that we don't have a coefficient method like the other mpoly rings
 archive/issue_comments_017922.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch fixes the issue with different types.",
+    "body": "Attachment [pb_monomial_coefficient_types.patch](tarball://root/attachments/some-uuid/ticket2611/pb_monomial_coefficient_types.patch) by malb created at 2008-03-20 13:02:46\n\nThe attached patch fixes the issue with different types.",
     "created_at": "2008-03-20T13:02:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2611",
     "type": "issue_comment",
@@ -109,7 +109,7 @@ archive/issue_comments_017922.json:
 }
 ```
 
-Attachment
+Attachment [pb_monomial_coefficient_types.patch](tarball://root/attachments/some-uuid/ticket2611/pb_monomial_coefficient_types.patch) by malb created at 2008-03-20 13:02:46
 
 The attached patch fixes the issue with different types.
 

@@ -79,7 +79,7 @@ Changing status from new to needs_review.
 archive/issue_comments_067586.json:
 ```json
 {
-    "body": "Attachment\n\nPlease let me know if I've missed any other characters.",
+    "body": "Attachment [trac_7811-escape_ws_list_ids.patch](tarball://root/attachments/some-uuid/ticket7811/trac_7811-escape_ws_list_ids.patch) by mpatel created at 2010-01-01 23:05:52\n\nPlease let me know if I've missed any other characters.",
     "created_at": "2010-01-01T23:05:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7811",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_067586.json:
 }
 ```
 
-Attachment
+Attachment [trac_7811-escape_ws_list_ids.patch](tarball://root/attachments/some-uuid/ticket7811/trac_7811-escape_ws_list_ids.patch) by mpatel created at 2010-01-01 23:05:52
 
 Please let me know if I've missed any other characters.
 
@@ -135,7 +135,7 @@ Excellent point.  I'll update the patch.
 archive/issue_comments_067589.json:
 ```json
 {
-    "body": "Attachment\n\nMore general RegExp.  Replaces previous.",
+    "body": "Attachment [trac_7811-escape_ws_list_ids_v2.patch](tarball://root/attachments/some-uuid/ticket7811/trac_7811-escape_ws_list_ids_v2.patch) by mpatel created at 2010-01-02 08:55:41\n\nMore general RegExp.  Replaces previous.",
     "created_at": "2010-01-02T08:55:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7811",
     "type": "issue_comment",
@@ -144,7 +144,7 @@ archive/issue_comments_067589.json:
 }
 ```
 
-Attachment
+Attachment [trac_7811-escape_ws_list_ids_v2.patch](tarball://root/attachments/some-uuid/ticket7811/trac_7811-escape_ws_list_ids_v2.patch) by mpatel created at 2010-01-02 08:55:41
 
 More general RegExp.  Replaces previous.
 

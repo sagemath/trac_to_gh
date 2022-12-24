@@ -115,7 +115,7 @@ Changing status from new to assigned.
 archive/issue_comments_039964.json:
 ```json
 {
-    "body": "Attachment\n\nThis is Mike's patch slightly modified",
+    "body": "Attachment [trac_5216-spkg-base.patch](tarball://root/attachments/some-uuid/ticket5216/trac_5216-spkg-base.patch) by mabshoff created at 2009-02-20 14:21:18\n\nThis is Mike's patch slightly modified",
     "created_at": "2009-02-20T14:21:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5216",
     "type": "issue_comment",
@@ -124,7 +124,7 @@ archive/issue_comments_039964.json:
 }
 ```
 
-Attachment
+Attachment [trac_5216-spkg-base.patch](tarball://root/attachments/some-uuid/ticket5216/trac_5216-spkg-base.patch) by mabshoff created at 2009-02-20 14:21:18
 
 This is Mike's patch slightly modified
 

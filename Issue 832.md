@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/832
 archive/issue_comments_005143.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [vdim.patch](tarball://root/attachments/some-uuid/ticket832/vdim.patch) by was created at 2007-10-06 06:28:34",
     "created_at": "2007-10-06T06:28:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/832",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_005143.json:
 }
 ```
 
-Attachment
+Attachment [vdim.patch](tarball://root/attachments/some-uuid/ticket832/vdim.patch) by was created at 2007-10-06 06:28:34
 
 
 
@@ -85,7 +85,7 @@ Changing status from new to assigned.
 archive/issue_comments_005146.json:
 ```json
 {
-    "body": "Attachment\n\nsecond patch (multi_polynomial_ideal_-_vector_space_dimension_-_doctest_fix.patch) fixes doctest, apply after vdim.patch.",
+    "body": "Attachment [multi_polynomial_ideal_-_vector_space_dimension_-_doctest_fix.patch](tarball://root/attachments/some-uuid/ticket832/multi_polynomial_ideal_-_vector_space_dimension_-_doctest_fix.patch) by malb created at 2007-10-09 11:23:52\n\nsecond patch (multi_polynomial_ideal_-_vector_space_dimension_-_doctest_fix.patch) fixes doctest, apply after vdim.patch.",
     "created_at": "2007-10-09T11:23:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/832",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_005146.json:
 }
 ```
 
-Attachment
+Attachment [multi_polynomial_ideal_-_vector_space_dimension_-_doctest_fix.patch](tarball://root/attachments/some-uuid/ticket832/multi_polynomial_ideal_-_vector_space_dimension_-_doctest_fix.patch) by malb created at 2007-10-09 11:23:52
 
 second patch (multi_polynomial_ideal_-_vector_space_dimension_-_doctest_fix.patch) fixes doctest, apply after vdim.patch.
 

@@ -208,7 +208,7 @@ Nathann
 archive/issue_comments_081755.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8892.patch](tarball://root/attachments/some-uuid/ticket8892/trac_8892.patch) by ncohen created at 2010-05-10 17:32:00",
     "created_at": "2010-05-10T17:32:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8892",
     "type": "issue_comment",
@@ -217,7 +217,7 @@ archive/issue_comments_081755.json:
 }
 ```
 
-Attachment
+Attachment [trac_8892.patch](tarball://root/attachments/some-uuid/ticket8892/trac_8892.patch) by ncohen created at 2010-05-10 17:32:00
 
 
 
@@ -226,7 +226,7 @@ Attachment
 archive/issue_comments_081756.json:
 ```json
 {
-    "body": "Attachment\n\nI'm mostly happy with [trac_8892.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8892/trac_8892.patch). I have attached a reviewer patch that deals with the part I'm not happy with, i.e. fix some typos introduced by the first patch. Apart from myself, anyone is welcome to give a final sign off on this ticket.",
+    "body": "Attachment [trac_8892-reviewer.patch](tarball://root/attachments/some-uuid/ticket8892/trac_8892-reviewer.patch) by mvngu created at 2010-05-11 06:53:52\n\nI'm mostly happy with [trac_8892.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8892/trac_8892.patch). I have attached a reviewer patch that deals with the part I'm not happy with, i.e. fix some typos introduced by the first patch. Apart from myself, anyone is welcome to give a final sign off on this ticket.",
     "created_at": "2010-05-11T06:53:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8892",
     "type": "issue_comment",
@@ -235,7 +235,7 @@ archive/issue_comments_081756.json:
 }
 ```
 
-Attachment
+Attachment [trac_8892-reviewer.patch](tarball://root/attachments/some-uuid/ticket8892/trac_8892-reviewer.patch) by mvngu created at 2010-05-11 06:53:52
 
 I'm mostly happy with [trac_8892.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8892/trac_8892.patch). I have attached a reviewer patch that deals with the part I'm not happy with, i.e. fix some typos introduced by the first patch. Apart from myself, anyone is welcome to give a final sign off on this ticket.
 

@@ -56,7 +56,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9485
 archive/issue_comments_091066.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9485-strongly_connected_componnents_digraph-fix-nt.patch](tarball://root/attachments/some-uuid/ticket9485/trac_9485-strongly_connected_componnents_digraph-fix-nt.patch) by nthiery created at 2010-07-12 19:01:15",
     "created_at": "2010-07-12T19:01:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9485",
     "type": "issue_comment",
@@ -65,7 +65,7 @@ archive/issue_comments_091066.json:
 }
 ```
 
-Attachment
+Attachment [trac_9485-strongly_connected_componnents_digraph-fix-nt.patch](tarball://root/attachments/some-uuid/ticket9485/trac_9485-strongly_connected_componnents_digraph-fix-nt.patch) by nthiery created at 2010-07-12 19:01:15
 
 
 

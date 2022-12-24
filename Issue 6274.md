@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6274
 archive/issue_comments_050117.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6274.patch](tarball://root/attachments/some-uuid/ticket6274/trac_6274.patch) by mvngu created at 2009-06-13 15:27:39",
     "created_at": "2009-06-13T15:27:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6274",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_050117.json:
 }
 ```
 
-Attachment
+Attachment [trac_6274.patch](tarball://root/attachments/some-uuid/ticket6274/trac_6274.patch) by mvngu created at 2009-06-13 15:27:39
 
 
 
@@ -87,7 +87,7 @@ Looks good.  I'm attaching a referee's patch with two trivial fixes.
 archive/issue_comments_050120.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ref_6274.patch](tarball://root/attachments/some-uuid/ticket6274/ref_6274.patch) by jhpalmieri created at 2009-06-15 23:42:42",
     "created_at": "2009-06-15T23:42:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6274",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_050120.json:
 }
 ```
 
-Attachment
+Attachment [ref_6274.patch](tarball://root/attachments/some-uuid/ticket6274/ref_6274.patch) by jhpalmieri created at 2009-06-15 23:42:42
 
 
 

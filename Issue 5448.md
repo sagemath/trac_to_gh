@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5448
 archive/issue_comments_042133.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [plot.patch](tarball://root/attachments/some-uuid/ticket5448/plot.patch) by mhansen created at 2009-03-06 03:39:15",
     "created_at": "2009-03-06T03:39:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_042133.json:
 }
 ```
 
-Attachment
+Attachment [plot.patch](tarball://root/attachments/some-uuid/ticket5448/plot.patch) by mhansen created at 2009-03-06 03:39:15
 
 
 
@@ -1321,7 +1321,7 @@ apply instead of previous patch.
 archive/issue_comments_042173.json:
 ```json
 {
-    "body": "Attachment\n\nI posted a long post to sage-devel calling for comment and a vote on this axes placement strategy.  The post is here: http://groups.google.com/group/sage-devel/browse_thread/thread/5ad2b32d68bf8b87",
+    "body": "Attachment [trac-5448-matplotlib-axes-gridlines.patch](tarball://root/attachments/some-uuid/ticket5448/trac-5448-matplotlib-axes-gridlines.patch) by jason created at 2009-09-01 23:41:22\n\nI posted a long post to sage-devel calling for comment and a vote on this axes placement strategy.  The post is here: http://groups.google.com/group/sage-devel/browse_thread/thread/5ad2b32d68bf8b87",
     "created_at": "2009-09-01T23:41:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
@@ -1330,7 +1330,7 @@ archive/issue_comments_042173.json:
 }
 ```
 
-Attachment
+Attachment [trac-5448-matplotlib-axes-gridlines.patch](tarball://root/attachments/some-uuid/ticket5448/trac-5448-matplotlib-axes-gridlines.patch) by jason created at 2009-09-01 23:41:22
 
 I posted a long post to sage-devel calling for comment and a vote on this axes placement strategy.  The post is here: http://groups.google.com/group/sage-devel/browse_thread/thread/5ad2b32d68bf8b87
 
@@ -1458,7 +1458,7 @@ And one more thing needs to be done: documentation! (for the new functions added
 archive/issue_comments_042179.json:
 ```json
 {
-    "body": "Attachment\n\napply instead of previous patches",
+    "body": "Attachment [trac-5448-matplotlib-axes-gridlines.2.patch](tarball://root/attachments/some-uuid/ticket5448/trac-5448-matplotlib-axes-gridlines.2.patch) by jason created at 2009-09-05 03:54:34\n\napply instead of previous patches",
     "created_at": "2009-09-05T03:54:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
@@ -1467,7 +1467,7 @@ archive/issue_comments_042179.json:
 }
 ```
 
-Attachment
+Attachment [trac-5448-matplotlib-axes-gridlines.2.patch](tarball://root/attachments/some-uuid/ticket5448/trac-5448-matplotlib-axes-gridlines.2.patch) by jason created at 2009-09-05 03:54:34
 
 apply instead of previous patches
 
@@ -1478,7 +1478,7 @@ apply instead of previous patches
 archive/issue_comments_042180.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-5448-matplotlib-axes-gridlines.3.patch](tarball://root/attachments/some-uuid/ticket5448/trac-5448-matplotlib-axes-gridlines.3.patch) by jason created at 2009-09-05 04:12:35",
     "created_at": "2009-09-05T04:12:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
@@ -1487,7 +1487,7 @@ archive/issue_comments_042180.json:
 }
 ```
 
-Attachment
+Attachment [trac-5448-matplotlib-axes-gridlines.3.patch](tarball://root/attachments/some-uuid/ticket5448/trac-5448-matplotlib-axes-gridlines.3.patch) by jason created at 2009-09-05 04:12:35
 
 
 
@@ -1577,7 +1577,7 @@ def adjust_figure_to_contain_bbox(fig, bbox):
 archive/issue_comments_042182.json:
 ```json
 {
-    "body": "Attachment\n\napply instead of previous patches",
+    "body": "Attachment [trac-5448-matplotlib-axes-gridlines.4.patch](tarball://root/attachments/some-uuid/ticket5448/trac-5448-matplotlib-axes-gridlines.4.patch) by jason created at 2009-09-05 09:01:40\n\napply instead of previous patches",
     "created_at": "2009-09-05T09:01:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
@@ -1586,7 +1586,7 @@ archive/issue_comments_042182.json:
 }
 ```
 
-Attachment
+Attachment [trac-5448-matplotlib-axes-gridlines.4.patch](tarball://root/attachments/some-uuid/ticket5448/trac-5448-matplotlib-axes-gridlines.4.patch) by jason created at 2009-09-05 09:01:40
 
 apply instead of previous patches
 

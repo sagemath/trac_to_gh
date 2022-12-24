@@ -135,7 +135,7 @@ Applies to 4.1.1
 archive/issue_comments_044251.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch follows the above suggestion, and also overwrites the rational_points() function for elliptic curves over finite fields to be synonymous to points().",
+    "body": "Attachment [trac_5660-count_points.patch](tarball://root/attachments/some-uuid/ticket5660/trac_5660-count_points.patch) by cremona created at 2009-08-18 10:39:05\n\nThe patch follows the above suggestion, and also overwrites the rational_points() function for elliptic curves over finite fields to be synonymous to points().",
     "created_at": "2009-08-18T10:39:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5660",
     "type": "issue_comment",
@@ -144,7 +144,7 @@ archive/issue_comments_044251.json:
 }
 ```
 
-Attachment
+Attachment [trac_5660-count_points.patch](tarball://root/attachments/some-uuid/ticket5660/trac_5660-count_points.patch) by cremona created at 2009-08-18 10:39:05
 
 The patch follows the above suggestion, and also overwrites the rational_points() function for elliptic curves over finite fields to be synonymous to points().
 
@@ -173,7 +173,7 @@ Apply after previous
 archive/issue_comments_044253.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good and passes tests.",
+    "body": "Attachment [trac_5660-doc_fixes.patch](tarball://root/attachments/some-uuid/ticket5660/trac_5660-doc_fixes.patch) by AlexGhitza created at 2009-08-19 10:11:54\n\nLooks good and passes tests.",
     "created_at": "2009-08-19T10:11:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5660",
     "type": "issue_comment",
@@ -182,7 +182,7 @@ archive/issue_comments_044253.json:
 }
 ```
 
-Attachment
+Attachment [trac_5660-doc_fixes.patch](tarball://root/attachments/some-uuid/ticket5660/trac_5660-doc_fixes.patch) by AlexGhitza created at 2009-08-19 10:11:54
 
 Looks good and passes tests.
 
@@ -285,7 +285,7 @@ Resolution: fixed
 archive/issue_comments_044258.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5660_fix.patch](tarball://root/attachments/some-uuid/ticket5660/trac_5660_fix.patch) by mvngu created at 2009-08-23 10:09:56",
     "created_at": "2009-08-23T10:09:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5660",
     "type": "issue_comment",
@@ -294,7 +294,7 @@ archive/issue_comments_044258.json:
 }
 ```
 
-Attachment
+Attachment [trac_5660_fix.patch](tarball://root/attachments/some-uuid/ticket5660/trac_5660_fix.patch) by mvngu created at 2009-08-23 10:09:56
 
 
 

@@ -72,7 +72,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2296
 archive/issue_comments_015227.json:
 ```json
 {
-    "body": "Attachment\n\nPlease check out #2295 by burcin, which seems to nail the real culprit, i.e. the symlink problem.\n\nCheers,\n\nMichael",
+    "body": "Attachment [sage-2296.patch](tarball://root/attachments/some-uuid/ticket2296/sage-2296.patch) by mabshoff created at 2008-02-24 20:16:34\n\nPlease check out #2295 by burcin, which seems to nail the real culprit, i.e. the symlink problem.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-24T20:16:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2296",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_015227.json:
 }
 ```
 
-Attachment
+Attachment [sage-2296.patch](tarball://root/attachments/some-uuid/ticket2296/sage-2296.patch) by mabshoff created at 2008-02-24 20:16:34
 
 Please check out #2295 by burcin, which seems to nail the real culprit, i.e. the symlink problem.
 

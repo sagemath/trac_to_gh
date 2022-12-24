@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7370
 archive/issue_comments_061757.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [finite_field_iterator.patch](tarball://root/attachments/some-uuid/ticket7370/finite_field_iterator.patch) by malb created at 2009-11-01 17:06:38",
     "created_at": "2009-11-01T17:06:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7370",
     "type": "issue_comment",
@@ -49,7 +49,7 @@ archive/issue_comments_061757.json:
 }
 ```
 
-Attachment
+Attachment [finite_field_iterator.patch](tarball://root/attachments/some-uuid/ticket7370/finite_field_iterator.patch) by malb created at 2009-11-01 17:06:38
 
 
 

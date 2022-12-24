@@ -438,7 +438,7 @@ x^2 + x
 archive/issue_comments_072008.json:
 ```json
 {
-    "body": "Attachment\n\nfixed the issue reported bu Paul",
+    "body": "Attachment [trac_8173.patch](tarball://root/attachments/some-uuid/ticket8173/trac_8173.patch) by malb created at 2010-07-14 21:20:45\n\nfixed the issue reported bu Paul",
     "created_at": "2010-07-14T21:20:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8173",
     "type": "issue_comment",
@@ -447,7 +447,7 @@ archive/issue_comments_072008.json:
 }
 ```
 
-Attachment
+Attachment [trac_8173.patch](tarball://root/attachments/some-uuid/ticket8173/trac_8173.patch) by malb created at 2010-07-14 21:20:45
 
 fixed the issue reported bu Paul
 

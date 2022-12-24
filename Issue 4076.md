@@ -61,7 +61,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4076
 archive/issue_comments_029415.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-4076_1.patch](tarball://root/attachments/some-uuid/ticket4076/sage-4076_1.patch) by TimothyClemans created at 2008-09-08 13:27:15",
     "created_at": "2008-09-08T13:27:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4076",
     "type": "issue_comment",
@@ -70,7 +70,7 @@ archive/issue_comments_029415.json:
 }
 ```
 
-Attachment
+Attachment [sage-4076_1.patch](tarball://root/attachments/some-uuid/ticket4076/sage-4076_1.patch) by TimothyClemans created at 2008-09-08 13:27:15
 
 
 
@@ -133,7 +133,7 @@ I think the documentation fix is the correct one since there's no real reason to
 archive/issue_comments_029419.json:
 ```json
 {
-    "body": "Attachment\n\nPatch sage-4076_2.patch fixes the documentation.",
+    "body": "Attachment [sage-4076_2.patch](tarball://root/attachments/some-uuid/ticket4076/sage-4076_2.patch) by TimothyClemans created at 2008-09-09 14:03:47\n\nPatch sage-4076_2.patch fixes the documentation.",
     "created_at": "2008-09-09T14:03:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4076",
     "type": "issue_comment",
@@ -142,7 +142,7 @@ archive/issue_comments_029419.json:
 }
 ```
 
-Attachment
+Attachment [sage-4076_2.patch](tarball://root/attachments/some-uuid/ticket4076/sage-4076_2.patch) by TimothyClemans created at 2008-09-09 14:03:47
 
 Patch sage-4076_2.patch fixes the documentation.
 

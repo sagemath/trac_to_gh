@@ -102,7 +102,7 @@ sage: prod(L)
 archive/issue_comments_006244.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [balanced-prod-1018.patch](tarball://root/attachments/some-uuid/ticket1018/balanced-prod-1018.patch) by robertwb created at 2007-10-28 08:18:13",
     "created_at": "2007-10-28T08:18:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1018",
     "type": "issue_comment",
@@ -111,7 +111,7 @@ archive/issue_comments_006244.json:
 }
 ```
 
-Attachment
+Attachment [balanced-prod-1018.patch](tarball://root/attachments/some-uuid/ticket1018/balanced-prod-1018.patch) by robertwb created at 2007-10-28 08:18:13
 
 
 

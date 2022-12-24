@@ -51,7 +51,7 @@ Bundled against 2.10
 archive/issue_comments_012678.json:
 ```json
 {
-    "body": "Attachment\n\nI got the following merge conflict against 2.10.1.rc2:\n\n```\n<<<<<<< /scratch/mabshoff/release-cycle/sage-2.10.1.rc3/devel/sage-main/sage/schemes/elliptic_curves/padics.py.orig.2461327829\n    ALGORITHM:\n        Proposition 9 of ``Efficient Computation of p-adic Heights'' (David Harvey,\n        to appear in LMS JCM).\n\n        Complexity is soft-$O(\\log L \\log m + \\log^2 m)$.\n    Complexity is soft $O(\\log R \\log^2 m)$.\n=======\n    Complexity is soft $O(\\log R \\log m)$.\n>>>>>>> /tmp/padics.py~other.K30f_Q\n```\n\nBut I also have a compilation failure:\n\n```\n/usr/include/features.h:150:1: warning: this is the location of the previous definition\nsrc/ntl_wrap.cpp: In function \u2018void ZZ_pX_InvMod_newton_unram(NTL::ZZ_pX&, const NTL::ZZ_pX&, const NTL::ZZ_pXModulus&, const NTL::ZZ_pContext&, const NTL::ZZ_pContext&)\u2019:\nsrc/ntl_wrap.cpp:1136: error: reference to \u2018negate\u2019 is ambiguous\n```\n\nI will poke around a little more and update this if I find anything useful.\n||||||| /tmp/padics.py~base.ns4Mgb\nCheers,\n\nMichael",
+    "body": "Attachment [giant_padics.hg](tarball://root/attachments/some-uuid/ticket1963/giant_padics.hg) by mabshoff created at 2008-01-28 23:05:19\n\nI got the following merge conflict against 2.10.1.rc2:\n\n```\n<<<<<<< /scratch/mabshoff/release-cycle/sage-2.10.1.rc3/devel/sage-main/sage/schemes/elliptic_curves/padics.py.orig.2461327829\n    ALGORITHM:\n        Proposition 9 of ``Efficient Computation of p-adic Heights'' (David Harvey,\n        to appear in LMS JCM).\n\n        Complexity is soft-$O(\\log L \\log m + \\log^2 m)$.\n    Complexity is soft $O(\\log R \\log^2 m)$.\n=======\n    Complexity is soft $O(\\log R \\log m)$.\n>>>>>>> /tmp/padics.py~other.K30f_Q\n```\n\nBut I also have a compilation failure:\n\n```\n/usr/include/features.h:150:1: warning: this is the location of the previous definition\nsrc/ntl_wrap.cpp: In function \u2018void ZZ_pX_InvMod_newton_unram(NTL::ZZ_pX&, const NTL::ZZ_pX&, const NTL::ZZ_pXModulus&, const NTL::ZZ_pContext&, const NTL::ZZ_pContext&)\u2019:\nsrc/ntl_wrap.cpp:1136: error: reference to \u2018negate\u2019 is ambiguous\n```\n\nI will poke around a little more and update this if I find anything useful.\n||||||| /tmp/padics.py~base.ns4Mgb\nCheers,\n\nMichael",
     "created_at": "2008-01-28T23:05:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1963",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_012678.json:
 }
 ```
 
-Attachment
+Attachment [giant_padics.hg](tarball://root/attachments/some-uuid/ticket1963/giant_padics.hg) by mabshoff created at 2008-01-28 23:05:19
 
 I got the following merge conflict against 2.10.1.rc2:
 
@@ -120,7 +120,7 @@ Michael
 archive/issue_comments_012680.json:
 ```json
 {
-    "body": "Attachment\n\nFix the compilation issue with negate with gcc 4.1 (and others?)",
+    "body": "Attachment [Sage-2.10.1.rc3-ntl_wrap.cpp-compilation-fix.patch](tarball://root/attachments/some-uuid/ticket1963/Sage-2.10.1.rc3-ntl_wrap.cpp-compilation-fix.patch) by mabshoff created at 2008-01-28 23:47:22\n\nFix the compilation issue with negate with gcc 4.1 (and others?)",
     "created_at": "2008-01-28T23:47:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1963",
     "type": "issue_comment",
@@ -129,7 +129,7 @@ archive/issue_comments_012680.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.10.1.rc3-ntl_wrap.cpp-compilation-fix.patch](tarball://root/attachments/some-uuid/ticket1963/Sage-2.10.1.rc3-ntl_wrap.cpp-compilation-fix.patch) by mabshoff created at 2008-01-28 23:47:22
 
 Fix the compilation issue with negate with gcc 4.1 (and others?)
 
@@ -263,7 +263,7 @@ Traceback (most recent call last):
 archive/issue_comments_012685.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [padic_ZZ_pX_CR_element-1.patch](tarball://root/attachments/some-uuid/ticket1963/padic_ZZ_pX_CR_element-1.patch) by robertwb created at 2008-02-06 06:52:33",
     "created_at": "2008-02-06T06:52:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1963",
     "type": "issue_comment",
@@ -272,7 +272,7 @@ archive/issue_comments_012685.json:
 }
 ```
 
-Attachment
+Attachment [padic_ZZ_pX_CR_element-1.patch](tarball://root/attachments/some-uuid/ticket1963/padic_ZZ_pX_CR_element-1.patch) by robertwb created at 2008-02-06 06:52:33
 
 
 
@@ -281,7 +281,7 @@ Attachment
 archive/issue_comments_012686.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [padic_ZZ_pX_CR_element-2.patch](tarball://root/attachments/some-uuid/ticket1963/padic_ZZ_pX_CR_element-2.patch) by robertwb created at 2008-02-06 06:52:55",
     "created_at": "2008-02-06T06:52:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1963",
     "type": "issue_comment",
@@ -290,7 +290,7 @@ archive/issue_comments_012686.json:
 }
 ```
 
-Attachment
+Attachment [padic_ZZ_pX_CR_element-2.patch](tarball://root/attachments/some-uuid/ticket1963/padic_ZZ_pX_CR_element-2.patch) by robertwb created at 2008-02-06 06:52:55
 
 
 
@@ -299,7 +299,7 @@ Attachment
 archive/issue_comments_012687.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [padic_capped_absolute_element.diff](tarball://root/attachments/some-uuid/ticket1963/padic_capped_absolute_element.diff) by robertwb created at 2008-02-06 09:31:51",
     "created_at": "2008-02-06T09:31:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1963",
     "type": "issue_comment",
@@ -308,7 +308,7 @@ archive/issue_comments_012687.json:
 }
 ```
 
-Attachment
+Attachment [padic_capped_absolute_element.diff](tarball://root/attachments/some-uuid/ticket1963/padic_capped_absolute_element.diff) by robertwb created at 2008-02-06 09:31:51
 
 
 
@@ -317,7 +317,7 @@ Attachment
 archive/issue_comments_012688.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [padic-printing-2.patch](tarball://root/attachments/some-uuid/ticket1963/padic-printing-2.patch) by robertwb created at 2008-02-06 12:05:24",
     "created_at": "2008-02-06T12:05:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1963",
     "type": "issue_comment",
@@ -326,7 +326,7 @@ archive/issue_comments_012688.json:
 }
 ```
 
-Attachment
+Attachment [padic-printing-2.patch](tarball://root/attachments/some-uuid/ticket1963/padic-printing-2.patch) by robertwb created at 2008-02-06 12:05:24
 
 
 
@@ -335,7 +335,7 @@ Attachment
 archive/issue_comments_012689.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [padic-printing-3.patch](tarball://root/attachments/some-uuid/ticket1963/padic-printing-3.patch) by kedlaya created at 2008-02-06 19:31:30",
     "created_at": "2008-02-06T19:31:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1963",
     "type": "issue_comment",
@@ -344,7 +344,7 @@ archive/issue_comments_012689.json:
 }
 ```
 
-Attachment
+Attachment [padic-printing-3.patch](tarball://root/attachments/some-uuid/ticket1963/padic-printing-3.patch) by kedlaya created at 2008-02-06 19:31:30
 
 
 
@@ -353,7 +353,7 @@ Attachment
 archive/issue_comments_012690.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [padics-review-all.hg](tarball://root/attachments/some-uuid/ticket1963/padics-review-all.hg) by robertwb created at 2008-02-08 18:04:53",
     "created_at": "2008-02-08T18:04:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1963",
     "type": "issue_comment",
@@ -362,7 +362,7 @@ archive/issue_comments_012690.json:
 }
 ```
 
-Attachment
+Attachment [padics-review-all.hg](tarball://root/attachments/some-uuid/ticket1963/padics-review-all.hg) by robertwb created at 2008-02-08 18:04:53
 
 
 
@@ -371,7 +371,7 @@ Attachment
 archive/issue_comments_012691.json:
 ```json
 {
-    "body": "Attachment\n\nMust apply against latest bundle",
+    "body": "Attachment [kedlaya2.patch](tarball://root/attachments/some-uuid/ticket1963/kedlaya2.patch) by kedlaya created at 2008-02-08 23:34:40\n\nMust apply against latest bundle",
     "created_at": "2008-02-08T23:34:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1963",
     "type": "issue_comment",
@@ -380,7 +380,7 @@ archive/issue_comments_012691.json:
 }
 ```
 
-Attachment
+Attachment [kedlaya2.patch](tarball://root/attachments/some-uuid/ticket1963/kedlaya2.patch) by kedlaya created at 2008-02-08 23:34:40
 
 Must apply against latest bundle
 
@@ -391,7 +391,7 @@ Must apply against latest bundle
 archive/issue_comments_012692.json:
 ```json
 {
-    "body": "Attachment\n\nMust apply against latest bundle",
+    "body": "Attachment [kedlaya2.2.patch](tarball://root/attachments/some-uuid/ticket1963/kedlaya2.2.patch) by kedlaya created at 2008-02-08 23:35:24\n\nMust apply against latest bundle",
     "created_at": "2008-02-08T23:35:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1963",
     "type": "issue_comment",
@@ -400,7 +400,7 @@ archive/issue_comments_012692.json:
 }
 ```
 
-Attachment
+Attachment [kedlaya2.2.patch](tarball://root/attachments/some-uuid/ticket1963/kedlaya2.2.patch) by kedlaya created at 2008-02-08 23:35:24
 
 Must apply against latest bundle
 
@@ -429,7 +429,7 @@ Must apply against latest bundle
 archive/issue_comments_012694.json:
 ```json
 {
-    "body": "Attachment\n\nThe patches kedlaya2.patch and kedlaya2.2.patch are identical, so no need to grab the second one. Sorry about that.",
+    "body": "Attachment [multipoly.patch](tarball://root/attachments/some-uuid/ticket1963/multipoly.patch) by kedlaya created at 2008-02-09 00:35:50\n\nThe patches kedlaya2.patch and kedlaya2.2.patch are identical, so no need to grab the second one. Sorry about that.",
     "created_at": "2008-02-09T00:35:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1963",
     "type": "issue_comment",
@@ -438,7 +438,7 @@ archive/issue_comments_012694.json:
 }
 ```
 
-Attachment
+Attachment [multipoly.patch](tarball://root/attachments/some-uuid/ticket1963/multipoly.patch) by kedlaya created at 2008-02-09 00:35:50
 
 The patches kedlaya2.patch and kedlaya2.2.patch are identical, so no need to grab the second one. Sorry about that.
 
@@ -449,7 +449,7 @@ The patches kedlaya2.patch and kedlaya2.2.patch are identical, so no need to gra
 archive/issue_comments_012695.json:
 ```json
 {
-    "body": "Attachment\n\nBundle as of end of SD7",
+    "body": "Attachment [1963-padics-bundle-sd7-final.hg](tarball://root/attachments/some-uuid/ticket1963/1963-padics-bundle-sd7-final.hg) by roed created at 2008-02-10 02:38:15\n\nBundle as of end of SD7",
     "created_at": "2008-02-10T02:38:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1963",
     "type": "issue_comment",
@@ -458,7 +458,7 @@ archive/issue_comments_012695.json:
 }
 ```
 
-Attachment
+Attachment [1963-padics-bundle-sd7-final.hg](tarball://root/attachments/some-uuid/ticket1963/1963-padics-bundle-sd7-final.hg) by roed created at 2008-02-10 02:38:15
 
 Bundle as of end of SD7
 
@@ -469,7 +469,7 @@ Bundle as of end of SD7
 archive/issue_comments_012696.json:
 ```json
 {
-    "body": "Attachment\n\ndoctest fix",
+    "body": "Attachment [padic-sd7-fix.patch](tarball://root/attachments/some-uuid/ticket1963/padic-sd7-fix.patch) by roed created at 2008-02-10 03:02:27\n\ndoctest fix",
     "created_at": "2008-02-10T03:02:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1963",
     "type": "issue_comment",
@@ -478,7 +478,7 @@ archive/issue_comments_012696.json:
 }
 ```
 
-Attachment
+Attachment [padic-sd7-fix.patch](tarball://root/attachments/some-uuid/ticket1963/padic-sd7-fix.patch) by roed created at 2008-02-10 03:02:27
 
 doctest fix
 
@@ -599,7 +599,7 @@ Michael
 archive/issue_comments_012701.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch fixes the import issue from 2.10.2.alpha0",
+    "body": "Attachment [Sage-2.10.2.alpha1-fix-import-issue.patch](tarball://root/attachments/some-uuid/ticket1963/Sage-2.10.2.alpha1-fix-import-issue.patch) by mabshoff created at 2008-02-15 17:53:23\n\nThis patch fixes the import issue from 2.10.2.alpha0",
     "created_at": "2008-02-15T17:53:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1963",
     "type": "issue_comment",
@@ -608,7 +608,7 @@ archive/issue_comments_012701.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.10.2.alpha1-fix-import-issue.patch](tarball://root/attachments/some-uuid/ticket1963/Sage-2.10.2.alpha1-fix-import-issue.patch) by mabshoff created at 2008-02-15 17:53:23
 
 This patch fixes the import issue from 2.10.2.alpha0
 

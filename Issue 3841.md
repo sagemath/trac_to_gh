@@ -88,7 +88,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3841
 archive/issue_comments_027310.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3841_2.patch](tarball://root/attachments/some-uuid/ticket3841/trac_3841_2.patch) by gfurnish created at 2008-08-14 04:45:45",
     "created_at": "2008-08-14T04:45:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3841",
     "type": "issue_comment",
@@ -97,7 +97,7 @@ archive/issue_comments_027310.json:
 }
 ```
 
-Attachment
+Attachment [trac_3841_2.patch](tarball://root/attachments/some-uuid/ticket3841/trac_3841_2.patch) by gfurnish created at 2008-08-14 04:45:45
 
 
 
@@ -106,7 +106,7 @@ Attachment
 archive/issue_comments_027311.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3841_3.patch](tarball://root/attachments/some-uuid/ticket3841/trac_3841_3.patch) by gfurnish created at 2008-08-14 04:45:51",
     "created_at": "2008-08-14T04:45:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3841",
     "type": "issue_comment",
@@ -115,7 +115,7 @@ archive/issue_comments_027311.json:
 }
 ```
 
-Attachment
+Attachment [trac_3841_3.patch](tarball://root/attachments/some-uuid/ticket3841/trac_3841_3.patch) by gfurnish created at 2008-08-14 04:45:51
 
 
 
@@ -124,7 +124,7 @@ Attachment
 archive/issue_comments_027312.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3841_4.patch](tarball://root/attachments/some-uuid/ticket3841/trac_3841_4.patch) by gfurnish created at 2008-08-14 04:51:27",
     "created_at": "2008-08-14T04:51:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3841",
     "type": "issue_comment",
@@ -133,7 +133,7 @@ archive/issue_comments_027312.json:
 }
 ```
 
-Attachment
+Attachment [trac_3841_4.patch](tarball://root/attachments/some-uuid/ticket3841/trac_3841_4.patch) by gfurnish created at 2008-08-14 04:51:27
 
 
 
@@ -142,7 +142,7 @@ Attachment
 archive/issue_comments_027313.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [llt_fix.patch](tarball://root/attachments/some-uuid/ticket3841/llt_fix.patch) by mhansen created at 2008-08-14 05:34:10",
     "created_at": "2008-08-14T05:34:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3841",
     "type": "issue_comment",
@@ -151,7 +151,7 @@ archive/issue_comments_027313.json:
 }
 ```
 
-Attachment
+Attachment [llt_fix.patch](tarball://root/attachments/some-uuid/ticket3841/llt_fix.patch) by mhansen created at 2008-08-14 05:34:10
 
 
 
@@ -160,7 +160,7 @@ Attachment
 archive/issue_comments_027314.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3841_5.patch](tarball://root/attachments/some-uuid/ticket3841/trac_3841_5.patch) by gfurnish created at 2008-08-14 19:01:22",
     "created_at": "2008-08-14T19:01:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3841",
     "type": "issue_comment",
@@ -169,7 +169,7 @@ archive/issue_comments_027314.json:
 }
 ```
 
-Attachment
+Attachment [trac_3841_5.patch](tarball://root/attachments/some-uuid/ticket3841/trac_3841_5.patch) by gfurnish created at 2008-08-14 19:01:22
 
 
 
@@ -178,7 +178,7 @@ Attachment
 archive/issue_comments_027315.json:
 ```json
 {
-    "body": "Attachment\n\nReplaces the other patches.",
+    "body": "Attachment [trac_3841_flat.patch](tarball://root/attachments/some-uuid/ticket3841/trac_3841_flat.patch) by gfurnish created at 2008-08-14 22:10:25\n\nReplaces the other patches.",
     "created_at": "2008-08-14T22:10:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3841",
     "type": "issue_comment",
@@ -187,7 +187,7 @@ archive/issue_comments_027315.json:
 }
 ```
 
-Attachment
+Attachment [trac_3841_flat.patch](tarball://root/attachments/some-uuid/ticket3841/trac_3841_flat.patch) by gfurnish created at 2008-08-14 22:10:25
 
 Replaces the other patches.
 
@@ -216,7 +216,7 @@ Pre-review comments.
 archive/issue_comments_027317.json:
 ```json
 {
-    "body": "Attachment\n\nI didn't make it through the whole patch, but these are my initial impressions. I'll have much more time to give this my full attention tomorrow.",
+    "body": "Attachment [symbolic_comments.txt](tarball://root/attachments/some-uuid/ticket3841/symbolic_comments.txt) by rlm created at 2008-08-14 23:20:32\n\nI didn't make it through the whole patch, but these are my initial impressions. I'll have much more time to give this my full attention tomorrow.",
     "created_at": "2008-08-14T23:20:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3841",
     "type": "issue_comment",
@@ -225,7 +225,7 @@ archive/issue_comments_027317.json:
 }
 ```
 
-Attachment
+Attachment [symbolic_comments.txt](tarball://root/attachments/some-uuid/ticket3841/symbolic_comments.txt) by rlm created at 2008-08-14 23:20:32
 
 I didn't make it through the whole patch, but these are my initial impressions. I'll have much more time to give this my full attention tomorrow.
 

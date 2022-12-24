@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2620
 archive/issue_comments_017995.json:
 ```json
 {
-    "body": "Attachment\n\nPatch looks good to me. Doctests pass. Positive review.\n\nCheers,\n\nMichael",
+    "body": "Attachment [generator_generator.patch](tarball://root/attachments/some-uuid/ticket2620/generator_generator.patch) by mabshoff created at 2008-04-01 14:30:40\n\nPatch looks good to me. Doctests pass. Positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-01T14:30:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2620",
     "type": "issue_comment",
@@ -49,7 +49,7 @@ archive/issue_comments_017995.json:
 }
 ```
 
-Attachment
+Attachment [generator_generator.patch](tarball://root/attachments/some-uuid/ticket2620/generator_generator.patch) by mabshoff created at 2008-04-01 14:30:40
 
 Patch looks good to me. Doctests pass. Positive review.
 

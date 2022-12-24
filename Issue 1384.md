@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1384
 archive/issue_comments_008882.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-2.8.15.rc1-fix-numerical-noise-OSX-PPC.patch](tarball://root/attachments/some-uuid/ticket1384/Sage-2.8.15.rc1-fix-numerical-noise-OSX-PPC.patch) by mabshoff created at 2007-12-03 19:20:10",
     "created_at": "2007-12-03T19:20:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1384",
     "type": "issue_comment",
@@ -50,7 +50,7 @@ archive/issue_comments_008882.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.8.15.rc1-fix-numerical-noise-OSX-PPC.patch](tarball://root/attachments/some-uuid/ticket1384/Sage-2.8.15.rc1-fix-numerical-noise-OSX-PPC.patch) by mabshoff created at 2007-12-03 19:20:10
 
 
 

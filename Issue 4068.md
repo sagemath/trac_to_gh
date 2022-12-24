@@ -85,7 +85,7 @@ So we need to call Singular instead of using the native code.
 archive/issue_comments_029356.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [matrix_mpoly_det.patch](tarball://root/attachments/some-uuid/ticket4068/matrix_mpoly_det.patch) by malb created at 2008-09-05 19:20:48",
     "created_at": "2008-09-05T19:20:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4068",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_029356.json:
 }
 ```
 
-Attachment
+Attachment [matrix_mpoly_det.patch](tarball://root/attachments/some-uuid/ticket4068/matrix_mpoly_det.patch) by malb created at 2008-09-05 19:20:48
 
 
 

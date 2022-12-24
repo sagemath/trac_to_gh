@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1836
 archive/issue_comments_011620.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [redSB-doc.patch](tarball://root/attachments/some-uuid/ticket1836/redSB-doc.patch) by malb created at 2008-01-18 19:29:29",
     "created_at": "2008-01-18T19:29:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1836",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_011620.json:
 }
 ```
 
-Attachment
+Attachment [redSB-doc.patch](tarball://root/attachments/some-uuid/ticket1836/redSB-doc.patch) by malb created at 2008-01-18 19:29:29
 
 
 
@@ -85,7 +85,7 @@ updated patch which uses Python techniques to implement reduction of Groebner ba
 archive/issue_comments_011623.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:1 ncalexan]:\n> There are an awful lot of places that Groebner bases are computed.  (complete_prime_decomposition, etc).  I'd really like to guarantee that *all* such bases are reduced.  Is that unreasonable?\n\nThe updated patch is supposed to implement that.",
+    "body": "Attachment [redSB-sage.patch](tarball://root/attachments/some-uuid/ticket1836/redSB-sage.patch) by malb created at 2008-01-20 22:28:12\n\nReplying to [comment:1 ncalexan]:\n> There are an awful lot of places that Groebner bases are computed.  (complete_prime_decomposition, etc).  I'd really like to guarantee that *all* such bases are reduced.  Is that unreasonable?\n\nThe updated patch is supposed to implement that.",
     "created_at": "2008-01-20T22:28:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1836",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_011623.json:
 }
 ```
 
-Attachment
+Attachment [redSB-sage.patch](tarball://root/attachments/some-uuid/ticket1836/redSB-sage.patch) by malb created at 2008-01-20 22:28:12
 
 Replying to [comment:1 ncalexan]:
 > There are an awful lot of places that Groebner bases are computed.  (complete_prime_decomposition, etc).  I'd really like to guarantee that *all* such bases are reduced.  Is that unreasonable?

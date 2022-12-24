@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2055
 archive/issue_comments_013306.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_2055_mpolyring_call.patch](tarball://root/attachments/some-uuid/ticket2055/trac_2055_mpolyring_call.patch) by malb created at 2008-02-05 15:09:35",
     "created_at": "2008-02-05T15:09:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2055",
     "type": "issue_comment",
@@ -49,7 +49,7 @@ archive/issue_comments_013306.json:
 }
 ```
 
-Attachment
+Attachment [trac_2055_mpolyring_call.patch](tarball://root/attachments/some-uuid/ticket2055/trac_2055_mpolyring_call.patch) by malb created at 2008-02-05 15:09:35
 
 
 
@@ -76,7 +76,7 @@ fixes an exposed sigsegv in libsingular interface
 archive/issue_comments_013308.json:
 ```json
 {
-    "body": "Attachment\n\nThis should be applied.\n\nThe `__call__` method is not as general as it could be.  See ticket #2165 for an enhancement.",
+    "body": "Attachment [sigsegv.patch](tarball://root/attachments/some-uuid/ticket2055/sigsegv.patch) by ncalexan created at 2008-02-14 23:36:14\n\nThis should be applied.\n\nThe `__call__` method is not as general as it could be.  See ticket #2165 for an enhancement.",
     "created_at": "2008-02-14T23:36:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2055",
     "type": "issue_comment",
@@ -85,7 +85,7 @@ archive/issue_comments_013308.json:
 }
 ```
 
-Attachment
+Attachment [sigsegv.patch](tarball://root/attachments/some-uuid/ticket2055/sigsegv.patch) by ncalexan created at 2008-02-14 23:36:14
 
 This should be applied.
 

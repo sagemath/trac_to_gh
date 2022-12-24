@@ -133,7 +133,7 @@ This was about typesetting integrals, but since a description of exp not typeset
 archive/issue_comments_049626.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6211-exp_latex.patch](tarball://root/attachments/some-uuid/ticket6211/trac_6211-exp_latex.patch) by burcin created at 2009-06-14 21:36:57",
     "created_at": "2009-06-14T21:36:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6211",
     "type": "issue_comment",
@@ -142,7 +142,7 @@ archive/issue_comments_049626.json:
 }
 ```
 
-Attachment
+Attachment [trac_6211-exp_latex.patch](tarball://root/attachments/some-uuid/ticket6211/trac_6211-exp_latex.patch) by burcin created at 2009-06-14 21:36:57
 
 
 

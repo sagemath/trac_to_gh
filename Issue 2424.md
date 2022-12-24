@@ -186,7 +186,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2424
 archive/issue_comments_016400.json:
 ```json
 {
-    "body": "Attachment\n\nthis patch addresses a concern raised by David via private communication",
+    "body": "Attachment [coppersmith.patch](tarball://root/attachments/some-uuid/ticket2424/coppersmith.patch) by malb created at 2008-03-12 16:45:47\n\nthis patch addresses a concern raised by David via private communication",
     "created_at": "2008-03-12T16:45:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2424",
     "type": "issue_comment",
@@ -195,7 +195,7 @@ archive/issue_comments_016400.json:
 }
 ```
 
-Attachment
+Attachment [coppersmith.patch](tarball://root/attachments/some-uuid/ticket2424/coppersmith.patch) by malb created at 2008-03-12 16:45:47
 
 this patch addresses a concern raised by David via private communication
 
@@ -341,7 +341,7 @@ apply on top of coppersmith.patch (fixes issue discovered by wdj)
 archive/issue_comments_016405.json:
 ```json
 {
-    "body": "Attachment\n\nthis patch adapts the bound X such that the examples of David Joyner work",
+    "body": "Attachment [coppersmith-X-bound.patch](tarball://root/attachments/some-uuid/ticket2424/coppersmith-X-bound.patch) by malb created at 2008-03-14 11:52:17\n\nthis patch adapts the bound X such that the examples of David Joyner work",
     "created_at": "2008-03-14T11:52:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2424",
     "type": "issue_comment",
@@ -350,7 +350,7 @@ archive/issue_comments_016405.json:
 }
 ```
 
-Attachment
+Attachment [coppersmith-X-bound.patch](tarball://root/attachments/some-uuid/ticket2424/coppersmith-X-bound.patch) by malb created at 2008-03-14 11:52:17
 
 this patch adapts the bound X such that the examples of David Joyner work
 
@@ -465,7 +465,7 @@ patch addresses review remarks by Bill Hart
 archive/issue_comments_016409.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:7 malb]:\n> I think the algorithm will fail if the content of f is not coprime to\n> N. Since f is reduced mod N, this implies that a non-trivial factor of\n> N has been found, but should be checked for by taking the GCD of the\n> content and N.\n> \n> The polynomial should be made monic by multiplying by an inverse of\n> its leading coefficient if it isn't monic. If the user tries to run\n> this algorithm on a non-monic f, I believe that the results are\n> undefined.\n> \n> Furthermore, failure to compute such an inverse of the leading\n> coefficient would imply a factorisation of N, which again, should\n> technically be checked for. Obviously it is highly unlikely if N is\n> large, as it should be. But if this algorithm gets used in unintended\n> ways, it should still operate.\n\nAll this should be addressed by raising an error if the polynomial is not monic (including the content remark). We don't make the polynomial monic because this way the user has full control and can use the fact of being lucky and just having split N.\n \n> I see that you need the parameter epsilon to be less than beta/7, but\n> I am wondering why you choose it fixed at beta/8 rather than allow it\n> to be set by the user as a parameter and let epsilon have a default\n> value of beta/7?\n\nUpdated accordingly.\n\n> What happens if the user enters a value of beta which is negative or\n> greater than 1 (t for example will then be negative)?\n>\n> Currently if the user inputs a value of beta with beta <= deg(f)/8\n> then X gets set to 1.\n\nThe bounds are now enforced.\n \n> Is LLL always guaranteed to return the vectors in order of length,\n> since the algorithm relies on using the shortest of the LLL reduced\n> basis vectors?\n\nYes.\n\n> The algorithm, as currently implemented, may return values which are\n> not roots of the original polynomial f. You need to implement the rest\n> of step 4 on page 37 of the thesis.\n\nWoops & updated accordingly.\n\n> The value of X should use the 1/2 factor as on page 34. The technique\n> of Coppersmith is proven to return the roots below the bound, however\n> the proof relies on the factor of 1/2 on page 36 (about 2/3 of the way\n> down). Unless it can be reproved without the factor of 1/2 it should\n> be used in the implementation.\n\nFixed. However, I was under the impression that Magma does something different here. In any case, the user can supply his/her own X.",
+    "body": "Attachment [coppersmith-bhart-review.patch](tarball://root/attachments/some-uuid/ticket2424/coppersmith-bhart-review.patch) by malb created at 2008-03-19 11:35:34\n\nReplying to [comment:7 malb]:\n> I think the algorithm will fail if the content of f is not coprime to\n> N. Since f is reduced mod N, this implies that a non-trivial factor of\n> N has been found, but should be checked for by taking the GCD of the\n> content and N.\n> \n> The polynomial should be made monic by multiplying by an inverse of\n> its leading coefficient if it isn't monic. If the user tries to run\n> this algorithm on a non-monic f, I believe that the results are\n> undefined.\n> \n> Furthermore, failure to compute such an inverse of the leading\n> coefficient would imply a factorisation of N, which again, should\n> technically be checked for. Obviously it is highly unlikely if N is\n> large, as it should be. But if this algorithm gets used in unintended\n> ways, it should still operate.\n\nAll this should be addressed by raising an error if the polynomial is not monic (including the content remark). We don't make the polynomial monic because this way the user has full control and can use the fact of being lucky and just having split N.\n \n> I see that you need the parameter epsilon to be less than beta/7, but\n> I am wondering why you choose it fixed at beta/8 rather than allow it\n> to be set by the user as a parameter and let epsilon have a default\n> value of beta/7?\n\nUpdated accordingly.\n\n> What happens if the user enters a value of beta which is negative or\n> greater than 1 (t for example will then be negative)?\n>\n> Currently if the user inputs a value of beta with beta <= deg(f)/8\n> then X gets set to 1.\n\nThe bounds are now enforced.\n \n> Is LLL always guaranteed to return the vectors in order of length,\n> since the algorithm relies on using the shortest of the LLL reduced\n> basis vectors?\n\nYes.\n\n> The algorithm, as currently implemented, may return values which are\n> not roots of the original polynomial f. You need to implement the rest\n> of step 4 on page 37 of the thesis.\n\nWoops & updated accordingly.\n\n> The value of X should use the 1/2 factor as on page 34. The technique\n> of Coppersmith is proven to return the roots below the bound, however\n> the proof relies on the factor of 1/2 on page 36 (about 2/3 of the way\n> down). Unless it can be reproved without the factor of 1/2 it should\n> be used in the implementation.\n\nFixed. However, I was under the impression that Magma does something different here. In any case, the user can supply his/her own X.",
     "created_at": "2008-03-19T11:35:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2424",
     "type": "issue_comment",
@@ -474,7 +474,7 @@ archive/issue_comments_016409.json:
 }
 ```
 
-Attachment
+Attachment [coppersmith-bhart-review.patch](tarball://root/attachments/some-uuid/ticket2424/coppersmith-bhart-review.patch) by malb created at 2008-03-19 11:35:34
 
 Replying to [comment:7 malb]:
 > I think the algorithm will fail if the content of f is not coprime to
@@ -580,7 +580,7 @@ AFAIK, it doesn't need to be smaller than beta/7 but in my old code I assumed it
 archive/issue_comments_016412.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [small_roots_epsilon.patch](tarball://root/attachments/some-uuid/ticket2424/small_roots_epsilon.patch) by malb created at 2008-03-19 21:35:58",
     "created_at": "2008-03-19T21:35:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2424",
     "type": "issue_comment",
@@ -589,7 +589,7 @@ archive/issue_comments_016412.json:
 }
 ```
 
-Attachment
+Attachment [small_roots_epsilon.patch](tarball://root/attachments/some-uuid/ticket2424/small_roots_epsilon.patch) by malb created at 2008-03-19 21:35:58
 
 
 

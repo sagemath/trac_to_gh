@@ -51,7 +51,7 @@ some code, probably needs to be cleaned up
 archive/issue_comments_069006.json:
 ```json
 {
-    "body": "Attachment\n\nmore Weierstrass code",
+    "body": "Attachment [13535.patch](tarball://root/attachments/some-uuid/ticket7927/13535.patch) by jen created at 2010-01-15 13:59:11\n\nmore Weierstrass code",
     "created_at": "2010-01-15T13:59:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_069006.json:
 }
 ```
 
-Attachment
+Attachment [13535.patch](tarball://root/attachments/some-uuid/ticket7927/13535.patch) by jen created at 2010-01-15 13:59:11
 
 more Weierstrass code
 
@@ -97,7 +97,7 @@ And my apologies for the messed-up line breaks in hyperelliptic_generic -- just 
 archive/issue_comments_069008.json:
 ```json
 {
-    "body": "Attachment\n\napply after 13535 to fix line break problems",
+    "body": "Attachment [13536.patch](tarball://root/attachments/some-uuid/ticket7927/13536.patch) by jen created at 2010-01-16 00:33:24\n\napply after 13535 to fix line break problems",
     "created_at": "2010-01-16T00:33:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
@@ -106,7 +106,7 @@ archive/issue_comments_069008.json:
 }
 ```
 
-Attachment
+Attachment [13536.patch](tarball://root/attachments/some-uuid/ticket7927/13536.patch) by jen created at 2010-01-16 00:33:24
 
 apply after 13535 to fix line break problems
 
@@ -252,7 +252,7 @@ merged Robert's patch with mine, though still a work in progress
 archive/issue_comments_069013.json:
 ```json
 {
-    "body": "Attachment\n\nfixing precision issues in the infinite disc",
+    "body": "Attachment [13538.patch](tarball://root/attachments/some-uuid/ticket7927/13538.patch) by jen created at 2010-02-16 21:21:47\n\nfixing precision issues in the infinite disc",
     "created_at": "2010-02-16T21:21:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
@@ -261,7 +261,7 @@ archive/issue_comments_069013.json:
 }
 ```
 
-Attachment
+Attachment [13538.patch](tarball://root/attachments/some-uuid/ticket7927/13538.patch) by jen created at 2010-02-16 21:21:47
 
 fixing precision issues in the infinite disc
 
@@ -482,7 +482,7 @@ fixing things in comment #4 (doctests, etc.)
 archive/issue_comments_069018.json:
 ```json
 {
-    "body": "Attachment\n\ndoctesting exceptions; formatting of docstrings",
+    "body": "Attachment [13539.patch](tarball://root/attachments/some-uuid/ticket7927/13539.patch) by jen created at 2010-02-19 01:58:06\n\ndoctesting exceptions; formatting of docstrings",
     "created_at": "2010-02-19T01:58:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
@@ -491,7 +491,7 @@ archive/issue_comments_069018.json:
 }
 ```
 
-Attachment
+Attachment [13539.patch](tarball://root/attachments/some-uuid/ticket7927/13539.patch) by jen created at 2010-02-19 01:58:06
 
 doctesting exceptions; formatting of docstrings
 
@@ -502,7 +502,7 @@ doctesting exceptions; formatting of docstrings
 archive/issue_comments_069019.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [13540.patch](tarball://root/attachments/some-uuid/ticket7927/13540.patch) by jen created at 2010-02-19 01:58:31",
     "created_at": "2010-02-19T01:58:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
@@ -511,7 +511,7 @@ archive/issue_comments_069019.json:
 }
 ```
 
-Attachment
+Attachment [13540.patch](tarball://root/attachments/some-uuid/ticket7927/13540.patch) by jen created at 2010-02-19 01:58:31
 
 
 
@@ -556,7 +556,7 @@ removed coleman_integrals_on_basis in ell_padic_field.py
 archive/issue_comments_069022.json:
 ```json
 {
-    "body": "Attachment\n\nAfter applying 13535.patch through 13541.patch against 4.3.3.alpha0, I get no long doctest failures anywhere in sage/schemes/. Positive review.\n\nFor other issues with Coleman integration, see tickets #8304 and #8305.",
+    "body": "Attachment [13541.patch](tarball://root/attachments/some-uuid/ticket7927/13541.patch) by kedlaya created at 2010-02-19 16:08:16\n\nAfter applying 13535.patch through 13541.patch against 4.3.3.alpha0, I get no long doctest failures anywhere in sage/schemes/. Positive review.\n\nFor other issues with Coleman integration, see tickets #8304 and #8305.",
     "created_at": "2010-02-19T16:08:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
@@ -565,7 +565,7 @@ archive/issue_comments_069022.json:
 }
 ```
 
-Attachment
+Attachment [13541.patch](tarball://root/attachments/some-uuid/ticket7927/13541.patch) by kedlaya created at 2010-02-19 16:08:16
 
 After applying 13535.patch through 13541.patch against 4.3.3.alpha0, I get no long doctest failures anywhere in sage/schemes/. Positive review.
 

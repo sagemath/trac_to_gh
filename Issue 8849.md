@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8849
 archive/issue_comments_081347.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8849-fix_palp.patch](tarball://root/attachments/some-uuid/ticket8849/trac_8849-fix_palp.patch) by mhansen created at 2010-05-03 13:18:57",
     "created_at": "2010-05-03T13:18:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8849",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_081347.json:
 }
 ```
 
-Attachment
+Attachment [trac_8849-fix_palp.patch](tarball://root/attachments/some-uuid/ticket8849/trac_8849-fix_palp.patch) by mhansen created at 2010-05-03 13:18:57
 
 
 
@@ -103,7 +103,7 @@ I added a referee patch that adds a comment explaining why this is done.
 archive/issue_comments_081351.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8849-referee-part2.patch](tarball://root/attachments/some-uuid/ticket8849/trac_8849-referee-part2.patch) by was created at 2010-05-25 02:28:51",
     "created_at": "2010-05-25T02:28:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8849",
     "type": "issue_comment",
@@ -112,4 +112,4 @@ archive/issue_comments_081351.json:
 }
 ```
 
-Attachment
+Attachment [trac_8849-referee-part2.patch](tarball://root/attachments/some-uuid/ticket8849/trac_8849-referee-part2.patch) by was created at 2010-05-25 02:28:51

@@ -210,7 +210,7 @@ patch against 4.0.rc1
 archive/issue_comments_000633.json:
 ```json
 {
-    "body": "Attachment\n\nThe previous patch broke a doctest due to silly sorting issues; here's a better patch.",
+    "body": "Attachment [trac_133.patch](tarball://root/attachments/some-uuid/ticket133/trac_133.patch) by davidloeffler created at 2009-05-28 15:42:41\n\nThe previous patch broke a doctest due to silly sorting issues; here's a better patch.",
     "created_at": "2009-05-28T15:42:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/133",
     "type": "issue_comment",
@@ -219,7 +219,7 @@ archive/issue_comments_000633.json:
 }
 ```
 
-Attachment
+Attachment [trac_133.patch](tarball://root/attachments/some-uuid/ticket133/trac_133.patch) by davidloeffler created at 2009-05-28 15:42:41
 
 The previous patch broke a doctest due to silly sorting issues; here's a better patch.
 

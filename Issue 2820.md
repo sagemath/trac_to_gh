@@ -79,7 +79,7 @@ The attached patch does the following:
 archive/issue_comments_019361.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch also fixes #2800.\n\nCheers,\n\nMichael",
+    "body": "Attachment [sage-2820.patch](tarball://root/attachments/some-uuid/ticket2820/sage-2820.patch) by mabshoff created at 2008-04-08 17:14:32\n\nThis patch also fixes #2800.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-08T17:14:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2820",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_019361.json:
 }
 ```
 
-Attachment
+Attachment [sage-2820.patch](tarball://root/attachments/some-uuid/ticket2820/sage-2820.patch) by mabshoff created at 2008-04-08 17:14:32
 
 This patch also fixes #2800.
 

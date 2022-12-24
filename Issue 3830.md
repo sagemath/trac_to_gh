@@ -95,7 +95,7 @@ and when I see that error message, it looks like it's trying to tell me there's 
 archive/issue_comments_027248.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-3830.patch](tarball://root/attachments/some-uuid/ticket3830/trac-3830.patch) by rlm created at 2009-01-23 02:36:58",
     "created_at": "2009-01-23T02:36:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3830",
     "type": "issue_comment",
@@ -104,7 +104,7 @@ archive/issue_comments_027248.json:
 }
 ```
 
-Attachment
+Attachment [trac-3830.patch](tarball://root/attachments/some-uuid/ticket3830/trac-3830.patch) by rlm created at 2009-01-23 02:36:58
 
 
 

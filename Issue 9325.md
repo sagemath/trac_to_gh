@@ -107,7 +107,7 @@ Bugfixes
 archive/issue_comments_087942.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1474.patch](tarball://root/attachments/some-uuid/ticket9325/1474.patch) by dpoetzsch created at 2010-06-24 12:32:37",
     "created_at": "2010-06-24T12:32:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9325",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_087942.json:
 }
 ```
 
-Attachment
+Attachment [1474.patch](tarball://root/attachments/some-uuid/ticket9325/1474.patch) by dpoetzsch created at 2010-06-24 12:32:37
 
 
 

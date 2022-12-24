@@ -55,7 +55,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2020
 archive/issue_comments_013036.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good. (Actual review comments were in person, all taken care of.)",
+    "body": "Attachment [trac_2020.patch](tarball://root/attachments/some-uuid/ticket2020/trac_2020.patch) by craigcitro created at 2009-01-24 10:27:26\n\nLooks good. (Actual review comments were in person, all taken care of.)",
     "created_at": "2009-01-24T10:27:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2020",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_013036.json:
 }
 ```
 
-Attachment
+Attachment [trac_2020.patch](tarball://root/attachments/some-uuid/ticket2020/trac_2020.patch) by craigcitro created at 2009-01-24 10:27:26
 
 Looks good. (Actual review comments were in person, all taken care of.)
 

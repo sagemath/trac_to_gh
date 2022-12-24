@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8116
 archive/issue_comments_071288.json:
 ```json
 {
-    "body": "Attachment\n\n[http://boxen.math.washington.edu/home/jsp/ports/cython-0.12.p0.spkg](http://boxen.math.washington.edu/home/jsp/ports/cython-0.12.p0.spkg)\n\nThis spkg needs testing on OSX with $SAGE64 = \"yes\"\n\nJaap",
+    "body": "Attachment [cython-0.12.p0.patch](tarball://root/attachments/some-uuid/ticket8116/cython-0.12.p0.patch) by jsp created at 2010-01-29 13:23:27\n\n[http://boxen.math.washington.edu/home/jsp/ports/cython-0.12.p0.spkg](http://boxen.math.washington.edu/home/jsp/ports/cython-0.12.p0.spkg)\n\nThis spkg needs testing on OSX with $SAGE64 = \"yes\"\n\nJaap",
     "created_at": "2010-01-29T13:23:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8116",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_071288.json:
 }
 ```
 
-Attachment
+Attachment [cython-0.12.p0.patch](tarball://root/attachments/some-uuid/ticket8116/cython-0.12.p0.patch) by jsp created at 2010-01-29 13:23:27
 
 [http://boxen.math.washington.edu/home/jsp/ports/cython-0.12.p0.spkg](http://boxen.math.washington.edu/home/jsp/ports/cython-0.12.p0.spkg)
 

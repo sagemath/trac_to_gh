@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2613
 archive/issue_comments_017930.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [all_paths.patch](tarball://root/attachments/some-uuid/ticket2613/all_paths.patch) by vgermrk created at 2008-03-20 15:06:27",
     "created_at": "2008-03-20T15:06:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2613",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_017930.json:
 }
 ```
 
-Attachment
+Attachment [all_paths.patch](tarball://root/attachments/some-uuid/ticket2613/all_paths.patch) by vgermrk created at 2008-03-20 15:06:27
 
 
 
@@ -85,7 +85,7 @@ The code looks sensible, but you haven't created any new doctests to demonstrate
 archive/issue_comments_017933.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [all_paths_doctests.patch](tarball://root/attachments/some-uuid/ticket2613/all_paths_doctests.patch) by vgermrk created at 2008-03-21 12:54:10",
     "created_at": "2008-03-21T12:54:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2613",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_017933.json:
 }
 ```
 
-Attachment
+Attachment [all_paths_doctests.patch](tarball://root/attachments/some-uuid/ticket2613/all_paths_doctests.patch) by vgermrk created at 2008-03-21 12:54:10
 
 
 

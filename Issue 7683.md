@@ -80,7 +80,7 @@ The problem is that Sphinx needs to use the functions in sage.misc.sageinspect t
 archive/issue_comments_065938.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7683.patch](tarball://root/attachments/some-uuid/ticket7683/trac_7683.patch) by mhansen created at 2009-12-15 10:06:02",
     "created_at": "2009-12-15T10:06:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7683",
     "type": "issue_comment",
@@ -89,7 +89,7 @@ archive/issue_comments_065938.json:
 }
 ```
 
-Attachment
+Attachment [trac_7683.patch](tarball://root/attachments/some-uuid/ticket7683/trac_7683.patch) by mhansen created at 2009-12-15 10:06:02
 
 
 
@@ -98,7 +98,7 @@ Attachment
 archive/issue_comments_065939.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sphinx-0.6.3.p3.patch](tarball://root/attachments/some-uuid/ticket7683/sphinx-0.6.3.p3.patch) by mhansen created at 2009-12-15 10:06:59",
     "created_at": "2009-12-15T10:06:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7683",
     "type": "issue_comment",
@@ -107,7 +107,7 @@ archive/issue_comments_065939.json:
 }
 ```
 
-Attachment
+Attachment [sphinx-0.6.3.p3.patch](tarball://root/attachments/some-uuid/ticket7683/sphinx-0.6.3.p3.patch) by mhansen created at 2009-12-15 10:06:59
 
 
 

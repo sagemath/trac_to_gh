@@ -120,7 +120,7 @@ Updating 'sage.structure.sequence.tex'
 archive/issue_comments_031190.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4272_doc.patch](tarball://root/attachments/some-uuid/ticket4272/trac_4272_doc.patch) by mabshoff created at 2008-10-14 15:45:24",
     "created_at": "2008-10-14T15:45:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4272",
     "type": "issue_comment",
@@ -129,7 +129,7 @@ archive/issue_comments_031190.json:
 }
 ```
 
-Attachment
+Attachment [trac_4272_doc.patch](tarball://root/attachments/some-uuid/ticket4272/trac_4272_doc.patch) by mabshoff created at 2008-10-14 15:45:24
 
 
 
@@ -138,7 +138,7 @@ Attachment
 archive/issue_comments_031191.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4272_sagelib.patch](tarball://root/attachments/some-uuid/ticket4272/trac_4272_sagelib.patch) by mabshoff created at 2008-10-14 15:45:39",
     "created_at": "2008-10-14T15:45:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4272",
     "type": "issue_comment",
@@ -147,7 +147,7 @@ archive/issue_comments_031191.json:
 }
 ```
 
-Attachment
+Attachment [trac_4272_sagelib.patch](tarball://root/attachments/some-uuid/ticket4272/trac_4272_sagelib.patch) by mabshoff created at 2008-10-14 15:45:39
 
 
 

@@ -220,7 +220,7 @@ Patch 4 uses matrix() constructor to find ring for weighted graph constructions.
 archive/issue_comments_017778.json:
 ```json
 {
-    "body": "Attachment\n\nIn the future, when posting a new patch, please make sure to indicate whether it replaces old patches or builds on top of them. That makes it easier on people like mabshoff to look at the ticket without too much pain.\n\nI'm getting some doctest failures after applying this patch. It looks like the matrix constructor doesn't know what ring to use when it's given an empty list (although I might be wrong). Also in the future, make sure to run doctests on all relevant code before posting a patch. We're all guilty of this one :-).",
+    "body": "Attachment [reduced_am.4.patch](tarball://root/attachments/some-uuid/ticket2597/reduced_am.4.patch) by rlm created at 2008-03-23 15:19:15\n\nIn the future, when posting a new patch, please make sure to indicate whether it replaces old patches or builds on top of them. That makes it easier on people like mabshoff to look at the ticket without too much pain.\n\nI'm getting some doctest failures after applying this patch. It looks like the matrix constructor doesn't know what ring to use when it's given an empty list (although I might be wrong). Also in the future, make sure to run doctests on all relevant code before posting a patch. We're all guilty of this one :-).",
     "created_at": "2008-03-23T15:19:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2597",
     "type": "issue_comment",
@@ -229,7 +229,7 @@ archive/issue_comments_017778.json:
 }
 ```
 
-Attachment
+Attachment [reduced_am.4.patch](tarball://root/attachments/some-uuid/ticket2597/reduced_am.4.patch) by rlm created at 2008-03-23 15:19:15
 
 In the future, when posting a new patch, please make sure to indicate whether it replaces old patches or builds on top of them. That makes it easier on people like mabshoff to look at the ticket without too much pain.
 
@@ -298,7 +298,7 @@ patch to matrix/constructor.py to fix bug and allow all bipartite_graph doctests
 archive/issue_comments_017782.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good, relevant tests pass.",
+    "body": "Attachment [matrix-empty-dict.patch](tarball://root/attachments/some-uuid/ticket2597/matrix-empty-dict.patch) by rlm created at 2008-03-29 01:13:58\n\nLooks good, relevant tests pass.",
     "created_at": "2008-03-29T01:13:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2597",
     "type": "issue_comment",
@@ -307,7 +307,7 @@ archive/issue_comments_017782.json:
 }
 ```
 
-Attachment
+Attachment [matrix-empty-dict.patch](tarball://root/attachments/some-uuid/ticket2597/matrix-empty-dict.patch) by rlm created at 2008-03-29 01:13:58
 
 Looks good, relevant tests pass.
 

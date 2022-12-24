@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7310
 archive/issue_comments_061049.json:
 ```json
 {
-    "body": "Attachment\n\nReplaces the javascript prompt with a modal dialog. Light dependency on #7309",
+    "body": "Attachment [trac_7310-modals.patch](tarball://root/attachments/some-uuid/ticket7310/trac_7310-modals.patch) by timdumol created at 2009-10-26 13:32:18\n\nReplaces the javascript prompt with a modal dialog. Light dependency on #7309",
     "created_at": "2009-10-26T13:32:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7310",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_061049.json:
 }
 ```
 
-Attachment
+Attachment [trac_7310-modals.patch](tarball://root/attachments/some-uuid/ticket7310/trac_7310-modals.patch) by timdumol created at 2009-10-26 13:32:18
 
 Replaces the javascript prompt with a modal dialog. Light dependency on #7309
 
@@ -89,7 +89,7 @@ This patch relies on an additional body id introduced in #7309, but can easily b
 archive/issue_comments_061052.json:
 ```json
 {
-    "body": "Attachment\n\nAdds a 100ms fade in effect and prevents a warning under strict warnings mode (trailing comma).",
+    "body": "Attachment [trac_7310-modals.2.patch](tarball://root/attachments/some-uuid/ticket7310/trac_7310-modals.2.patch) by timdumol created at 2009-10-26 13:42:09\n\nAdds a 100ms fade in effect and prevents a warning under strict warnings mode (trailing comma).",
     "created_at": "2009-10-26T13:42:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7310",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_061052.json:
 }
 ```
 
-Attachment
+Attachment [trac_7310-modals.2.patch](tarball://root/attachments/some-uuid/ticket7310/trac_7310-modals.2.patch) by timdumol created at 2009-10-26 13:42:09
 
 Adds a 100ms fade in effect and prevents a warning under strict warnings mode (trailing comma).
 
@@ -127,7 +127,7 @@ Makes the rename dialog appear only when the page is fully loaded.
 archive/issue_comments_061054.json:
 ```json
 {
-    "body": "Attachment\n\nI tried v3, but the rename dialog was improperly rendered, possibly because an icon is missing?  But why not use [jQuery UI dialog](http://jqueryui.com/demos/dialog/#modal-form), since we're already loading the library and it has built-in theme support?\n\nI don't mean to pile on --- I'm happy to go through the Sage templates and code, converting alerts and prompts to dialogs.",
+    "body": "Attachment [trac_7310-modals.3.patch](tarball://root/attachments/some-uuid/ticket7310/trac_7310-modals.3.patch) by mpatel created at 2009-10-26 23:00:24\n\nI tried v3, but the rename dialog was improperly rendered, possibly because an icon is missing?  But why not use [jQuery UI dialog](http://jqueryui.com/demos/dialog/#modal-form), since we're already loading the library and it has built-in theme support?\n\nI don't mean to pile on --- I'm happy to go through the Sage templates and code, converting alerts and prompts to dialogs.",
     "created_at": "2009-10-26T23:00:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7310",
     "type": "issue_comment",
@@ -136,7 +136,7 @@ archive/issue_comments_061054.json:
 }
 ```
 
-Attachment
+Attachment [trac_7310-modals.3.patch](tarball://root/attachments/some-uuid/ticket7310/trac_7310-modals.3.patch) by mpatel created at 2009-10-26 23:00:24
 
 I tried v3, but the rename dialog was improperly rendered, possibly because an icon is missing?  But why not use [jQuery UI dialog](http://jqueryui.com/demos/dialog/#modal-form), since we're already loading the library and it has built-in theme support?
 
@@ -149,7 +149,7 @@ I don't mean to pile on --- I'm happy to go through the Sage templates and code,
 archive/issue_comments_061055.json:
 ```json
 {
-    "body": "Attachment\n\nAdds a new function `modal_prompt(...)` to replace `prompt()` dialogs based on jQuery UI Dialog.",
+    "body": "Attachment [trac_7310-modals.4.patch](tarball://root/attachments/some-uuid/ticket7310/trac_7310-modals.4.patch) by timdumol created at 2009-10-27 15:03:40\n\nAdds a new function `modal_prompt(...)` to replace `prompt()` dialogs based on jQuery UI Dialog.",
     "created_at": "2009-10-27T15:03:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7310",
     "type": "issue_comment",
@@ -158,7 +158,7 @@ archive/issue_comments_061055.json:
 }
 ```
 
-Attachment
+Attachment [trac_7310-modals.4.patch](tarball://root/attachments/some-uuid/ticket7310/trac_7310-modals.4.patch) by timdumol created at 2009-10-27 15:03:40
 
 Adds a new function `modal_prompt(...)` to replace `prompt()` dialogs based on jQuery UI Dialog.
 
@@ -205,7 +205,7 @@ I'll try to take a closer look tomorrow.  A quick note: The bgiframe plugin is a
 archive/issue_comments_061058.json:
 ```json
 {
-    "body": "Attachment\n\nAdds the requisite imports to `worksheet_listing.html`",
+    "body": "Attachment [trac_7310-modals.5.patch](tarball://root/attachments/some-uuid/ticket7310/trac_7310-modals.5.patch) by timdumol created at 2009-10-27 15:39:06\n\nAdds the requisite imports to `worksheet_listing.html`",
     "created_at": "2009-10-27T15:39:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7310",
     "type": "issue_comment",
@@ -214,7 +214,7 @@ archive/issue_comments_061058.json:
 }
 ```
 
-Attachment
+Attachment [trac_7310-modals.5.patch](tarball://root/attachments/some-uuid/ticket7310/trac_7310-modals.5.patch) by timdumol created at 2009-10-27 15:39:06
 
 Adds the requisite imports to `worksheet_listing.html`
 
@@ -263,7 +263,7 @@ Removes the dialog from the DOM if `destroy` option is given -- this is done for
 archive/issue_comments_061061.json:
 ```json
 {
-    "body": "Attachment\n\nMinified three JS files.  Various small changes.  Apply only this patch.",
+    "body": "Attachment [trac_7310-modals.7.patch](tarball://root/attachments/some-uuid/ticket7310/trac_7310-modals.7.patch) by mpatel created at 2009-10-31 08:02:48\n\nMinified three JS files.  Various small changes.  Apply only this patch.",
     "created_at": "2009-10-31T08:02:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7310",
     "type": "issue_comment",
@@ -272,7 +272,7 @@ archive/issue_comments_061061.json:
 }
 ```
 
-Attachment
+Attachment [trac_7310-modals.7.patch](tarball://root/attachments/some-uuid/ticket7310/trac_7310-modals.7.patch) by mpatel created at 2009-10-31 08:02:48
 
 Minified three JS files.  Various small changes.  Apply only this patch.
 
@@ -330,7 +330,7 @@ Pre-select input text and use `width: auto`. Apply only this patch.
 archive/issue_comments_061064.json:
 ```json
 {
-    "body": "Attachment\n\nVersion 8:\n\n* Uses `width: auto` for the input field.\n* Pre-selects the input text.",
+    "body": "Attachment [trac_7310-modals.8.patch](tarball://root/attachments/some-uuid/ticket7310/trac_7310-modals.8.patch) by mpatel created at 2009-11-01 11:24:02\n\nVersion 8:\n\n* Uses `width: auto` for the input field.\n* Pre-selects the input text.",
     "created_at": "2009-11-01T11:24:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7310",
     "type": "issue_comment",
@@ -339,7 +339,7 @@ archive/issue_comments_061064.json:
 }
 ```
 
-Attachment
+Attachment [trac_7310-modals.8.patch](tarball://root/attachments/some-uuid/ticket7310/trac_7310-modals.8.patch) by mpatel created at 2009-11-01 11:24:02
 
 Version 8:
 
@@ -353,7 +353,7 @@ Version 8:
 archive/issue_comments_061065.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7310-modals.8.2.patch](tarball://root/attachments/some-uuid/ticket7310/trac_7310-modals.8.2.patch) by mpatel created at 2009-11-01 11:25:03",
     "created_at": "2009-11-01T11:25:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7310",
     "type": "issue_comment",
@@ -362,7 +362,7 @@ archive/issue_comments_061065.json:
 }
 ```
 
-Attachment
+Attachment [trac_7310-modals.8.2.patch](tarball://root/attachments/some-uuid/ticket7310/trac_7310-modals.8.2.patch) by mpatel created at 2009-11-01 11:25:03
 
 
 

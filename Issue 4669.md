@@ -79,7 +79,7 @@ Changing assignee from was to jason.
 archive/issue_comments_035171.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [CDF-matrix-doctests.patch](tarball://root/attachments/some-uuid/ticket4669/CDF-matrix-doctests.patch) by jason created at 2008-12-05 08:40:13",
     "created_at": "2008-12-05T08:40:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4669",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_035171.json:
 }
 ```
 
-Attachment
+Attachment [CDF-matrix-doctests.patch](tarball://root/attachments/some-uuid/ticket4669/CDF-matrix-doctests.patch) by jason created at 2008-12-05 08:40:13
 
 
 

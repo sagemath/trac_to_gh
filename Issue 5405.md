@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5405
 archive/issue_comments_041765.json:
 ```json
 {
-    "body": "Attachment\n\nHi Mike!\n\nI am not so sure about the name, although I can't propose much better than\ndefault_values, or set_default_values.\n\nCould it be generalized to handle both positional and non positional arguments?\n\nI'd suggest to have the doc by starting with what the thing actually does, followed by the typical usage.\nSpeaking of which: could you add an example of this typical usage? (it was not clear to me).",
+    "body": "Attachment [trac_5405.patch](tarball://root/attachments/some-uuid/ticket5405/trac_5405.patch) by nthiery created at 2009-03-18 08:51:37\n\nHi Mike!\n\nI am not so sure about the name, although I can't propose much better than\ndefault_values, or set_default_values.\n\nCould it be generalized to handle both positional and non positional arguments?\n\nI'd suggest to have the doc by starting with what the thing actually does, followed by the typical usage.\nSpeaking of which: could you add an example of this typical usage? (it was not clear to me).",
     "created_at": "2009-03-18T08:51:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5405",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_041765.json:
 }
 ```
 
-Attachment
+Attachment [trac_5405.patch](tarball://root/attachments/some-uuid/ticket5405/trac_5405.patch) by nthiery created at 2009-03-18 08:51:37
 
 Hi Mike!
 
@@ -391,7 +391,7 @@ Fair enough -- but just to clarify, `functools.partial` *is* a decorator, just t
 archive/issue_comments_041779.json:
 ```json
 {
-    "body": "Attachment\n\nAdds module `sage.misc.decorators` with content `specialize`.",
+    "body": "Attachment [trac_5405-decorator-partial.patch](tarball://root/attachments/some-uuid/ticket5405/trac_5405-decorator-partial.patch) by timdumol created at 2009-12-05 09:53:26\n\nAdds module `sage.misc.decorators` with content `specialize`.",
     "created_at": "2009-12-05T09:53:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5405",
     "type": "issue_comment",
@@ -400,7 +400,7 @@ archive/issue_comments_041779.json:
 }
 ```
 
-Attachment
+Attachment [trac_5405-decorator-partial.patch](tarball://root/attachments/some-uuid/ticket5405/trac_5405-decorator-partial.patch) by timdumol created at 2009-12-05 09:53:26
 
 Adds module `sage.misc.decorators` with content `specialize`.
 
@@ -485,7 +485,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_041784.json:
 ```json
 {
-    "body": "Attachment\n\nsame as previous but with username",
+    "body": "Attachment [trac_5405-decorator-partial.2.patch](tarball://root/attachments/some-uuid/ticket5405/trac_5405-decorator-partial.2.patch) by mvngu created at 2010-05-08 04:06:27\n\nsame as previous but with username",
     "created_at": "2010-05-08T04:06:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5405",
     "type": "issue_comment",
@@ -494,7 +494,7 @@ archive/issue_comments_041784.json:
 }
 ```
 
-Attachment
+Attachment [trac_5405-decorator-partial.2.patch](tarball://root/attachments/some-uuid/ticket5405/trac_5405-decorator-partial.2.patch) by mvngu created at 2010-05-08 04:06:27
 
 same as previous but with username
 

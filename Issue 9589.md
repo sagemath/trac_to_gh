@@ -179,7 +179,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_092729.json:
 ```json
 {
-    "body": "Attachment\n\nI uploaded a patch that should fix the problem.\n\nI tested it on sage-4.5.1 and all tests passed. Needs review.",
+    "body": "Attachment [trac_9589-nfactor_doctest_fail-abm.patch](tarball://root/attachments/some-uuid/ticket9589/trac_9589-nfactor_doctest_fail-abm.patch) by abmasse created at 2010-07-24 14:06:22\n\nI uploaded a patch that should fix the problem.\n\nI tested it on sage-4.5.1 and all tests passed. Needs review.",
     "created_at": "2010-07-24T14:06:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9589",
     "type": "issue_comment",
@@ -188,7 +188,7 @@ archive/issue_comments_092729.json:
 }
 ```
 
-Attachment
+Attachment [trac_9589-nfactor_doctest_fail-abm.patch](tarball://root/attachments/some-uuid/ticket9589/trac_9589-nfactor_doctest_fail-abm.patch) by abmasse created at 2010-07-24 14:06:22
 
 I uploaded a patch that should fix the problem.
 

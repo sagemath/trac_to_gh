@@ -57,7 +57,7 @@ Mercurial patch to add an spkg-check file for Python
 archive/issue_comments_087526.json:
 ```json
 {
-    "body": "Attachment\n\nHere's the revised package. \n\n\nhttp://boxen.math.washington.edu/home/kirkby/revised-patches/python-2.6.4.p9.spkg\n\nWith those changes, and SAGE_CHECK exported to \"yes\", so the test suite is run: \n\n\n```\nSleeping for three seconds before testing python\nmath module OK\nhashlib module imported\n\nreal\t1m30.977s\nuser\t1m13.338s\nsys\t0m11.943s\nSuccessfully installed python-2.6.4.p9\nRunning the test suite.\nTesting the Python package\nrunning build\nrunning build_ext\n<snip>\ntest_grammar\ntest_opcodes\ntest_dict\ntest_builtin\ntest_exceptions\ntest_types\ntest_unittest\ntest_doctest\ntest_doctest2\ntest_MimeWriter\ntest_SimpleHTTPServer\n```\n\n\nOn my Sun Ultra 27 (OpenSolaris 06/2009), there are a few failures\n\n\n```\n322 tests OK.\n5 tests failed:\n    test_distutils test_float test_hotshot test_multiprocessing\n    test_sunaudiodev\n38 tests skipped:\n    test_aepack test_al test_applesingle test_bsddb test_bsddb185\n    test_bsddb3 test_cd test_cl test_codecmaps_cn test_codecmaps_hk\n    test_codecmaps_jp test_codecmaps_kr test_codecmaps_tw test_curses\n    test_epoll test_gdbm test_gl test_imgfile test_kqueue\n    test_linuxaudiodev test_macos test_macostools test_normalization\n    test_ossaudiodev test_pep277 test_py3kwarn test_scriptpackages\n    test_smtpnet test_socketserver test_ssl test_startfile test_tcl\n    test_timeout test_urllib2net test_urllibnet test_winreg\n    test_winsound test_zipfile64\n2 skips unexpected on sunos5:\n    test_tcl test_ssl\nmake[2]: *** [test] Error 1\nmake[2]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/python-2.6.4.p9/src'\nAn error occured whilst testing Python\n*************************************\n```\n\n\nso it was useful to know about these. \n\n**Note, failures detected by the test routine do NOT stop stage building unless SAGE_CHECK is set to yes, so the fact the test suite finds failures has no detrimental effect on Sage, but should highlight areas where we should be concerned**\n\nDave",
+    "body": "Attachment [9295.patch](tarball://root/attachments/some-uuid/ticket9295/9295.patch) by drkirkby created at 2010-06-21 12:54:29\n\nHere's the revised package. \n\n\nhttp://boxen.math.washington.edu/home/kirkby/revised-patches/python-2.6.4.p9.spkg\n\nWith those changes, and SAGE_CHECK exported to \"yes\", so the test suite is run: \n\n\n```\nSleeping for three seconds before testing python\nmath module OK\nhashlib module imported\n\nreal\t1m30.977s\nuser\t1m13.338s\nsys\t0m11.943s\nSuccessfully installed python-2.6.4.p9\nRunning the test suite.\nTesting the Python package\nrunning build\nrunning build_ext\n<snip>\ntest_grammar\ntest_opcodes\ntest_dict\ntest_builtin\ntest_exceptions\ntest_types\ntest_unittest\ntest_doctest\ntest_doctest2\ntest_MimeWriter\ntest_SimpleHTTPServer\n```\n\n\nOn my Sun Ultra 27 (OpenSolaris 06/2009), there are a few failures\n\n\n```\n322 tests OK.\n5 tests failed:\n    test_distutils test_float test_hotshot test_multiprocessing\n    test_sunaudiodev\n38 tests skipped:\n    test_aepack test_al test_applesingle test_bsddb test_bsddb185\n    test_bsddb3 test_cd test_cl test_codecmaps_cn test_codecmaps_hk\n    test_codecmaps_jp test_codecmaps_kr test_codecmaps_tw test_curses\n    test_epoll test_gdbm test_gl test_imgfile test_kqueue\n    test_linuxaudiodev test_macos test_macostools test_normalization\n    test_ossaudiodev test_pep277 test_py3kwarn test_scriptpackages\n    test_smtpnet test_socketserver test_ssl test_startfile test_tcl\n    test_timeout test_urllib2net test_urllibnet test_winreg\n    test_winsound test_zipfile64\n2 skips unexpected on sunos5:\n    test_tcl test_ssl\nmake[2]: *** [test] Error 1\nmake[2]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/python-2.6.4.p9/src'\nAn error occured whilst testing Python\n*************************************\n```\n\n\nso it was useful to know about these. \n\n**Note, failures detected by the test routine do NOT stop stage building unless SAGE_CHECK is set to yes, so the fact the test suite finds failures has no detrimental effect on Sage, but should highlight areas where we should be concerned**\n\nDave",
     "created_at": "2010-06-21T12:54:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9295",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_087526.json:
 }
 ```
 
-Attachment
+Attachment [9295.patch](tarball://root/attachments/some-uuid/ticket9295/9295.patch) by drkirkby created at 2010-06-21 12:54:29
 
 Here's the revised package. 
 
@@ -261,7 +261,7 @@ Correction of grammer and spelling.
 archive/issue_comments_087531.json:
 ```json
 {
-    "body": "Attachment\n\nI've corrected the spelling error, and the grammar too. \n\nI've tried on two systems and 5 test failures on each. You get 5 too, though they are not all the same. However, we all get ' test_distutils' fail. I've seen some references in trac tickets, and/or .spkg files alluding to the fact distuils is not very good. \n\nDave",
+    "body": "Attachment [9295.2.patch](tarball://root/attachments/some-uuid/ticket9295/9295.2.patch) by drkirkby created at 2010-06-21 18:49:33\n\nI've corrected the spelling error, and the grammar too. \n\nI've tried on two systems and 5 test failures on each. You get 5 too, though they are not all the same. However, we all get ' test_distutils' fail. I've seen some references in trac tickets, and/or .spkg files alluding to the fact distuils is not very good. \n\nDave",
     "created_at": "2010-06-21T18:49:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9295",
     "type": "issue_comment",
@@ -270,7 +270,7 @@ archive/issue_comments_087531.json:
 }
 ```
 
-Attachment
+Attachment [9295.2.patch](tarball://root/attachments/some-uuid/ticket9295/9295.2.patch) by drkirkby created at 2010-06-21 18:49:33
 
 I've corrected the spelling error, and the grammar too. 
 

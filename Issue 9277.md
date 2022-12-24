@@ -146,7 +146,7 @@ Changing status from new to needs_review.
 archive/issue_comments_087384.json:
 ```json
 {
-    "body": "Attachment\n\nMercurial patch which permits a 64-bit build of test suite and ensures tests dont run twice",
+    "body": "Attachment [9277.patch](tarball://root/attachments/some-uuid/ticket9277/9277.patch) by drkirkby created at 2010-06-19 23:58:59\n\nMercurial patch which permits a 64-bit build of test suite and ensures tests dont run twice",
     "created_at": "2010-06-19T23:58:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9277",
     "type": "issue_comment",
@@ -155,7 +155,7 @@ archive/issue_comments_087384.json:
 }
 ```
 
-Attachment
+Attachment [9277.patch](tarball://root/attachments/some-uuid/ticket9277/9277.patch) by drkirkby created at 2010-06-19 23:58:59
 
 Mercurial patch which permits a 64-bit build of test suite and ensures tests dont run twice
 

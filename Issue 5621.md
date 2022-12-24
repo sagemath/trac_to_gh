@@ -112,7 +112,7 @@ The following tests failed:
 archive/issue_comments_043894.json:
 ```json
 {
-    "body": "Attachment\n\nbased on sage-3.4.1.rc3",
+    "body": "Attachment [trac_5621-doctests-calculus.patch](tarball://root/attachments/some-uuid/ticket5621/trac_5621-doctests-calculus.patch) by mvngu created at 2009-04-17 03:32:52\n\nbased on sage-3.4.1.rc3",
     "created_at": "2009-04-17T03:32:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5621",
     "type": "issue_comment",
@@ -121,7 +121,7 @@ archive/issue_comments_043894.json:
 }
 ```
 
-Attachment
+Attachment [trac_5621-doctests-calculus.patch](tarball://root/attachments/some-uuid/ticket5621/trac_5621-doctests-calculus.patch) by mvngu created at 2009-04-17 03:32:52
 
 based on sage-3.4.1.rc3
 
@@ -172,7 +172,7 @@ Looks good, all tests pass on sage.math.  There is a trivial typo, corrected in 
 archive/issue_comments_043897.json:
 ```json
 {
-    "body": "Attachment\n\nGiven the pynac transformation I don't think it is a good idea to merge this now. calculus.py will be more or less gone before the end of the week anyway :).\n\nThoughts?\n\nCheers,\n\nMichael",
+    "body": "Attachment [ref_5621.patch](tarball://root/attachments/some-uuid/ticket5621/ref_5621.patch) by mabshoff created at 2009-05-11 08:08:15\n\nGiven the pynac transformation I don't think it is a good idea to merge this now. calculus.py will be more or less gone before the end of the week anyway :).\n\nThoughts?\n\nCheers,\n\nMichael",
     "created_at": "2009-05-11T08:08:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5621",
     "type": "issue_comment",
@@ -181,7 +181,7 @@ archive/issue_comments_043897.json:
 }
 ```
 
-Attachment
+Attachment [ref_5621.patch](tarball://root/attachments/some-uuid/ticket5621/ref_5621.patch) by mabshoff created at 2009-05-11 08:08:15
 
 Given the pynac transformation I don't think it is a good idea to merge this now. calculus.py will be more or less gone before the end of the week anyway :).
 

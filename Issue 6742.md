@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6742
 archive/issue_comments_055245.json:
 ```json
 {
-    "body": "Attachment\n\nServe main.css with MIME type text/css.",
+    "body": "Attachment [trac_6742-chrome_css.patch](tarball://root/attachments/some-uuid/ticket6742/trac_6742-chrome_css.patch) by mpatel created at 2009-08-14 06:40:21\n\nServe main.css with MIME type text/css.",
     "created_at": "2009-08-14T06:40:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6742",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_055245.json:
 }
 ```
 
-Attachment
+Attachment [trac_6742-chrome_css.patch](tarball://root/attachments/some-uuid/ticket6742/trac_6742-chrome_css.patch) by mpatel created at 2009-08-14 06:40:21
 
 Serve main.css with MIME type text/css.
 

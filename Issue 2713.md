@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2713
 archive/issue_comments_018702.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac2713-hg_scripts-backslash-handling.patch](tarball://root/attachments/some-uuid/ticket2713/trac2713-hg_scripts-backslash-handling.patch) by cwitty created at 2008-03-29 01:05:00",
     "created_at": "2008-03-29T01:05:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2713",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_018702.json:
 }
 ```
 
-Attachment
+Attachment [trac2713-hg_scripts-backslash-handling.patch](tarball://root/attachments/some-uuid/ticket2713/trac2713-hg_scripts-backslash-handling.patch) by cwitty created at 2008-03-29 01:05:00
 
 
 
@@ -51,7 +51,7 @@ Attachment
 archive/issue_comments_018703.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac2713-hg_sage-backslash-handling.patch](tarball://root/attachments/some-uuid/ticket2713/trac2713-hg_sage-backslash-handling.patch) by cwitty created at 2008-03-29 01:06:56",
     "created_at": "2008-03-29T01:06:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2713",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_018703.json:
 }
 ```
 
-Attachment
+Attachment [trac2713-hg_sage-backslash-handling.patch](tarball://root/attachments/some-uuid/ticket2713/trac2713-hg_sage-backslash-handling.patch) by cwitty created at 2008-03-29 01:06:56
 
 
 

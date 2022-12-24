@@ -56,7 +56,7 @@ fixes to the maple interface
 archive/issue_comments_012217.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch is very good except I don't like:\n\n```\n \t581\t        # everything is supposed to be comparable in Python, so we define \n \t582\t        # the comparison thus when no comparable in interfaced system. \n \t583\t        return -1   \n```\n\n\nIt would be better to compare something deterministic instead of always return -1, since you want that if a < b then it isn't the case that b < a; however your code will return that a < b *and* b < a, when the two aren't comparable.  Better would be to compare a hash of the string reps of the objects (can maple do that?!) or _something_ deterministic and easy.",
+    "body": "Attachment [sage-maple_interface_fixes.patch](tarball://root/attachments/some-uuid/ticket1926/sage-maple_interface_fixes.patch) by was created at 2008-01-25 13:58:32\n\nThis patch is very good except I don't like:\n\n```\n \t581\t        # everything is supposed to be comparable in Python, so we define \n \t582\t        # the comparison thus when no comparable in interfaced system. \n \t583\t        return -1   \n```\n\n\nIt would be better to compare something deterministic instead of always return -1, since you want that if a < b then it isn't the case that b < a; however your code will return that a < b *and* b < a, when the two aren't comparable.  Better would be to compare a hash of the string reps of the objects (can maple do that?!) or _something_ deterministic and easy.",
     "created_at": "2008-01-25T13:58:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1926",
     "type": "issue_comment",
@@ -65,7 +65,7 @@ archive/issue_comments_012217.json:
 }
 ```
 
-Attachment
+Attachment [sage-maple_interface_fixes.patch](tarball://root/attachments/some-uuid/ticket1926/sage-maple_interface_fixes.patch) by was created at 2008-01-25 13:58:32
 
 This patch is very good except I don't like:
 
@@ -103,7 +103,7 @@ fixes to the maple interface (new version, fixing __cmp__ problem)
 archive/issue_comments_012219.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:1 was]:\n> This patch is very good except I don't like:\n {{{\n  \t581\t        # everything is supposed to be comparable in Python, so we define \n  \t582\t        # the comparison thus when no comparable in interfaced system. \n \t583\t        return -1   \n }}}\n\nI copied the body of the `__cmp__` function from `sage/interfaces/expect.py`, and this comment came with it. \n\n> It would be better to compare something deterministic instead of always return -1, since you want that if a < b then it isn't the case that b < a; however your code will return that a < b *and* b < a, when the two aren't comparable.  Better would be to compare a hash of the string reps of the objects (can maple do that?!) or _something_ deterministic and easy.   \n\nYou're right. This was also a problem with `expect.py`. attachment:sage-maple_interface_fixes.2.patch  changes the offending lines with\n\n\n``` \nif hash(str(self)) < hash(str(other):\n    return -1\nelse:\n    return 1\n```\n\n\nHopefully making `__cmp__` behave more like an order relation.",
+    "body": "Attachment [sage-maple_interface_fixes.2.patch](tarball://root/attachments/some-uuid/ticket1926/sage-maple_interface_fixes.2.patch) by burcin created at 2008-01-25 16:27:26\n\nReplying to [comment:1 was]:\n> This patch is very good except I don't like:\n {{{\n  \t581\t        # everything is supposed to be comparable in Python, so we define \n  \t582\t        # the comparison thus when no comparable in interfaced system. \n \t583\t        return -1   \n }}}\n\nI copied the body of the `__cmp__` function from `sage/interfaces/expect.py`, and this comment came with it. \n\n> It would be better to compare something deterministic instead of always return -1, since you want that if a < b then it isn't the case that b < a; however your code will return that a < b *and* b < a, when the two aren't comparable.  Better would be to compare a hash of the string reps of the objects (can maple do that?!) or _something_ deterministic and easy.   \n\nYou're right. This was also a problem with `expect.py`. attachment:sage-maple_interface_fixes.2.patch  changes the offending lines with\n\n\n``` \nif hash(str(self)) < hash(str(other):\n    return -1\nelse:\n    return 1\n```\n\n\nHopefully making `__cmp__` behave more like an order relation.",
     "created_at": "2008-01-25T16:27:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1926",
     "type": "issue_comment",
@@ -112,7 +112,7 @@ archive/issue_comments_012219.json:
 }
 ```
 
-Attachment
+Attachment [sage-maple_interface_fixes.2.patch](tarball://root/attachments/some-uuid/ticket1926/sage-maple_interface_fixes.2.patch) by burcin created at 2008-01-25 16:27:26
 
 Replying to [comment:1 was]:
 > This patch is very good except I don't like:
@@ -203,7 +203,7 @@ I've added a patch which changes the hashing of expect elements and adds a speci
 archive/issue_comments_012222.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1926.patch](tarball://root/attachments/some-uuid/ticket1926/1926.patch) by mhansen created at 2008-01-28 01:17:15",
     "created_at": "2008-01-28T01:17:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1926",
     "type": "issue_comment",
@@ -212,7 +212,7 @@ archive/issue_comments_012222.json:
 }
 ```
 
-Attachment
+Attachment [1926.patch](tarball://root/attachments/some-uuid/ticket1926/1926.patch) by mhansen created at 2008-01-28 01:17:15
 
 
 
@@ -311,7 +311,7 @@ Changing status from closed to reopened.
 archive/issue_comments_012228.json:
 ```json
 {
-    "body": "Attachment\n\nattachment:1926-make_doctests_optional.patch needs to be applied to make the new doctests in the maple interface optional.",
+    "body": "Attachment [1926-make_doctests_optional.patch](tarball://root/attachments/some-uuid/ticket1926/1926-make_doctests_optional.patch) by burcin created at 2008-01-29 09:16:41\n\nattachment:1926-make_doctests_optional.patch needs to be applied to make the new doctests in the maple interface optional.",
     "created_at": "2008-01-29T09:16:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1926",
     "type": "issue_comment",
@@ -320,7 +320,7 @@ archive/issue_comments_012228.json:
 }
 ```
 
-Attachment
+Attachment [1926-make_doctests_optional.patch](tarball://root/attachments/some-uuid/ticket1926/1926-make_doctests_optional.patch) by burcin created at 2008-01-29 09:16:41
 
 attachment:1926-make_doctests_optional.patch needs to be applied to make the new doctests in the maple interface optional.
 

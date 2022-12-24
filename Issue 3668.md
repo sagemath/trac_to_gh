@@ -283,7 +283,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_025933.json:
 ```json
 {
-    "body": "Attachment\n\nNew version which keeps the actual hash and removes now unneeded `#indirect doctests`.",
+    "body": "Attachment [trac_3668-set_doc_update-ts.patch](tarball://root/attachments/some-uuid/ticket3668/trac_3668-set_doc_update-ts.patch) by tscrim created at 2013-07-12 09:41:02\n\nNew version which keeps the actual hash and removes now unneeded `#indirect doctests`.",
     "created_at": "2013-07-12T09:41:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3668",
     "type": "issue_comment",
@@ -292,7 +292,7 @@ archive/issue_comments_025933.json:
 }
 ```
 
-Attachment
+Attachment [trac_3668-set_doc_update-ts.patch](tarball://root/attachments/some-uuid/ticket3668/trac_3668-set_doc_update-ts.patch) by tscrim created at 2013-07-12 09:41:02
 
 New version which keeps the actual hash and removes now unneeded `#indirect doctests`.
 

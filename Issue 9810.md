@@ -385,7 +385,7 @@ SCRIPTS repo. Based on Sage 4.7.2.alpha4.
 archive/issue_comments_096753.json:
 ```json
 {
-    "body": "Attachment\n\nFixed a typo in a comment.\n\nSorry, patch (diff) doesn't look very nice, as I've changed the indentation (and replaced spaces by tabs).",
+    "body": "Attachment [trac_9811-use_pipestatus_in_sage-sage.scripts.patch](tarball://root/attachments/some-uuid/ticket9811/trac_9811-use_pipestatus_in_sage-sage.scripts.patch) by leif created at 2011-10-13 14:37:57\n\nFixed a typo in a comment.\n\nSorry, patch (diff) doesn't look very nice, as I've changed the indentation (and replaced spaces by tabs).",
     "created_at": "2011-10-13T14:37:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9810",
     "type": "issue_comment",
@@ -394,7 +394,7 @@ archive/issue_comments_096753.json:
 }
 ```
 
-Attachment
+Attachment [trac_9811-use_pipestatus_in_sage-sage.scripts.patch](tarball://root/attachments/some-uuid/ticket9811/trac_9811-use_pipestatus_in_sage-sage.scripts.patch) by leif created at 2011-10-13 14:37:57
 
 Fixed a typo in a comment.
 

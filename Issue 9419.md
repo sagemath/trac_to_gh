@@ -457,7 +457,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_089829.json:
 ```json
 {
-    "body": "Attachment\n\nA minor typo, with \"an\" instead of \"a\". \n\n\"so if you are writing an spkg which is not part of the standard\"\n\nPersonally I would have used:\n\n\n```\ndiff -Naur\n```\n\n\nwhich seems one of the most common ways. There's some discussion in \n\nhttp://linux.die.net/man/1/patch\n\nof the best arguments to use. The main change is that this is recursive, so if one edits multiple files to make a change to sort out some problem, there can be one patch file to resolve the problem, rather than having to make one for each file. \n\nDave",
+    "body": "Attachment [trac_9419-use-patch.patch](tarball://root/attachments/some-uuid/ticket9419/trac_9419-use-patch.patch) by drkirkby created at 2011-12-01 06:32:06\n\nA minor typo, with \"an\" instead of \"a\". \n\n\"so if you are writing an spkg which is not part of the standard\"\n\nPersonally I would have used:\n\n\n```\ndiff -Naur\n```\n\n\nwhich seems one of the most common ways. There's some discussion in \n\nhttp://linux.die.net/man/1/patch\n\nof the best arguments to use. The main change is that this is recursive, so if one edits multiple files to make a change to sort out some problem, there can be one patch file to resolve the problem, rather than having to make one for each file. \n\nDave",
     "created_at": "2011-12-01T06:32:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9419",
     "type": "issue_comment",
@@ -466,7 +466,7 @@ archive/issue_comments_089829.json:
 }
 ```
 
-Attachment
+Attachment [trac_9419-use-patch.patch](tarball://root/attachments/some-uuid/ticket9419/trac_9419-use-patch.patch) by drkirkby created at 2011-12-01 06:32:06
 
 A minor typo, with "an" instead of "a". 
 
@@ -866,7 +866,7 @@ Me too.
 archive/issue_comments_089841.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9419-part2.patch](tarball://root/attachments/some-uuid/ticket9419/trac_9419-part2.patch) by jhpalmieri created at 2011-12-19 21:21:22",
     "created_at": "2011-12-19T21:21:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9419",
     "type": "issue_comment",
@@ -875,7 +875,7 @@ archive/issue_comments_089841.json:
 }
 ```
 
-Attachment
+Attachment [trac_9419-part2.patch](tarball://root/attachments/some-uuid/ticket9419/trac_9419-part2.patch) by jhpalmieri created at 2011-12-19 21:21:22
 
 
 

@@ -370,7 +370,7 @@ I would caution that for annoying reasons we like to have the lines in the docum
 archive/issue_comments_066880.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7763.6.patch](tarball://root/attachments/some-uuid/ticket7763/trac_7763.6.patch) by gagansekhon created at 2011-01-17 17:15:18",
     "created_at": "2011-01-17T17:15:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7763",
     "type": "issue_comment",
@@ -379,7 +379,7 @@ archive/issue_comments_066880.json:
 }
 ```
 
-Attachment
+Attachment [trac_7763.6.patch](tarball://root/attachments/some-uuid/ticket7763/trac_7763.6.patch) by gagansekhon created at 2011-01-17 17:15:18
 
 
 
@@ -425,7 +425,7 @@ apply trac_7763.patch only
 archive/issue_comments_066883.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7763.7.patch](tarball://root/attachments/some-uuid/ticket7763/trac_7763.7.patch) by gagansekhon created at 2011-01-17 17:16:28",
     "created_at": "2011-01-17T17:16:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7763",
     "type": "issue_comment",
@@ -434,7 +434,7 @@ archive/issue_comments_066883.json:
 }
 ```
 
-Attachment
+Attachment [trac_7763.7.patch](tarball://root/attachments/some-uuid/ticket7763/trac_7763.7.patch) by gagansekhon created at 2011-01-17 17:16:28
 
 
 
@@ -641,7 +641,7 @@ This is still open, but if one uses integral instead of numerical_integral it wo
 archive/issue_comments_066890.json:
 ```json
 {
-    "body": "Attachment\n\nThanks for clearing up some of my misunderstandings.  I don't have time to look at this today, but hopefully within a week?  Just a couple clarifications:\n>  and hopefully links to the functions put in - see the plotting functions, especially plot.py, for examples of how to do that in Sphinx.\n> > \n> Did you want links each function listed in the file? Like a table of contents.\n\nI mean like `:func:`~sage.plot.plot.plot`` referring to the function `plot`; one can do the same here, I think.\n> > > I would caution that for annoying reasons we like to have the lines in the documentation be fairly short; see some of the other calculus or plotting files for examples of about how many characters (80? 84?) are appropriate.  (Otherwise it looks really bad in command line.)  So any updates should fix that.\n> > \n> > This comment still applies.\n> > \n> I tried to make the lines shorter, but the html file looked wierd. Html file formats each line and wraps it around. If I make them them shorter the documentation doesn't come out right. \n\nHmm, that's odd.  I'll have to check it out; in most files we do this.  Maybe we've just been living with weird HTML :)",
+    "body": "Attachment [trac_7763.8.patch](tarball://root/attachments/some-uuid/ticket7763/trac_7763.8.patch) by kcrisman created at 2011-01-19 22:08:16\n\nThanks for clearing up some of my misunderstandings.  I don't have time to look at this today, but hopefully within a week?  Just a couple clarifications:\n>  and hopefully links to the functions put in - see the plotting functions, especially plot.py, for examples of how to do that in Sphinx.\n> > \n> Did you want links each function listed in the file? Like a table of contents.\n\nI mean like `:func:`~sage.plot.plot.plot`` referring to the function `plot`; one can do the same here, I think.\n> > > I would caution that for annoying reasons we like to have the lines in the documentation be fairly short; see some of the other calculus or plotting files for examples of about how many characters (80? 84?) are appropriate.  (Otherwise it looks really bad in command line.)  So any updates should fix that.\n> > \n> > This comment still applies.\n> > \n> I tried to make the lines shorter, but the html file looked wierd. Html file formats each line and wraps it around. If I make them them shorter the documentation doesn't come out right. \n\nHmm, that's odd.  I'll have to check it out; in most files we do this.  Maybe we've just been living with weird HTML :)",
     "created_at": "2011-01-19T22:08:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7763",
     "type": "issue_comment",
@@ -650,7 +650,7 @@ archive/issue_comments_066890.json:
 }
 ```
 
-Attachment
+Attachment [trac_7763.8.patch](tarball://root/attachments/some-uuid/ticket7763/trac_7763.8.patch) by kcrisman created at 2011-01-19 22:08:16
 
 Thanks for clearing up some of my misunderstandings.  I don't have time to look at this today, but hopefully within a week?  Just a couple clarifications:
 >  and hopefully links to the functions put in - see the plotting functions, especially plot.py, for examples of how to do that in Sphinx.

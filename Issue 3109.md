@@ -62,7 +62,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_021484.json:
 ```json
 {
-    "body": "Attachment\n\n\n```\n{\nCremona:\n>  For ages Magma would only do Inverse(MultiplicationBymMap(m))(P) which\n>  would throw a run-time error if there were no solutions and give one\n>  solution only if there were any.  So I wronte my own, until they got\n>  around to DivisionPoints(P,m) which returns a list, possibly empty.\n\nSomething like that is next on my list.  Maybe instead of P.divide(m),\nwhich is what I planned, for consistency \nI should do P.division_points(m), which can return a possibly empty list.    \n```\n",
+    "body": "Attachment [sage-3109-part1.patch](tarball://root/attachments/some-uuid/ticket3109/sage-3109-part1.patch) by was created at 2008-05-06 17:24:59\n\n\n```\n{\nCremona:\n>  For ages Magma would only do Inverse(MultiplicationBymMap(m))(P) which\n>  would throw a run-time error if there were no solutions and give one\n>  solution only if there were any.  So I wronte my own, until they got\n>  around to DivisionPoints(P,m) which returns a list, possibly empty.\n\nSomething like that is next on my list.  Maybe instead of P.divide(m),\nwhich is what I planned, for consistency \nI should do P.division_points(m), which can return a possibly empty list.    \n```\n",
     "created_at": "2008-05-06T17:24:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3109",
     "type": "issue_comment",
@@ -71,7 +71,7 @@ archive/issue_comments_021484.json:
 }
 ```
 
-Attachment
+Attachment [sage-3109-part1.patch](tarball://root/attachments/some-uuid/ticket3109/sage-3109-part1.patch) by was created at 2008-05-06 17:24:59
 
 
 ```
@@ -113,7 +113,7 @@ this adds lots of docs and fixes bugs.  finishes implementing full_division_poly
 archive/issue_comments_021486.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3109-part2.patch](tarball://root/attachments/some-uuid/ticket3109/sage-3109-part2.patch) by was created at 2008-05-07 07:10:24",
     "created_at": "2008-05-07T07:10:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3109",
     "type": "issue_comment",
@@ -122,7 +122,7 @@ archive/issue_comments_021486.json:
 }
 ```
 
-Attachment
+Attachment [sage-3109-part2.patch](tarball://root/attachments/some-uuid/ticket3109/sage-3109-part2.patch) by was created at 2008-05-07 07:10:24
 
 
 
@@ -131,7 +131,7 @@ Attachment
 archive/issue_comments_021487.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3109-part3.patch](tarball://root/attachments/some-uuid/ticket3109/sage-3109-part3.patch) by was created at 2008-05-07 07:10:41",
     "created_at": "2008-05-07T07:10:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3109",
     "type": "issue_comment",
@@ -140,7 +140,7 @@ archive/issue_comments_021487.json:
 }
 ```
 
-Attachment
+Attachment [sage-3109-part3.patch](tarball://root/attachments/some-uuid/ticket3109/sage-3109-part3.patch) by was created at 2008-05-07 07:10:41
 
 
 
@@ -217,7 +217,7 @@ Regarding the referee's report:
 archive/issue_comments_021491.json:
 ```json
 {
-    "body": "Attachment\n\nsome slight refactoring in ell_point.py",
+    "body": "Attachment [sage-3019-part4.patch](tarball://root/attachments/some-uuid/ticket3109/sage-3019-part4.patch) by was created at 2008-05-07 15:39:16\n\nsome slight refactoring in ell_point.py",
     "created_at": "2008-05-07T15:39:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3109",
     "type": "issue_comment",
@@ -226,7 +226,7 @@ archive/issue_comments_021491.json:
 }
 ```
 
-Attachment
+Attachment [sage-3019-part4.patch](tarball://root/attachments/some-uuid/ticket3109/sage-3019-part4.patch) by was created at 2008-05-07 15:39:16
 
 some slight refactoring in ell_point.py
 

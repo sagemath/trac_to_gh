@@ -53,7 +53,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3051
 archive/issue_comments_021023.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9607.patch](tarball://root/attachments/some-uuid/ticket3051/9607.patch) by bump created at 2008-04-28 22:52:48",
     "created_at": "2008-04-28T22:52:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_021023.json:
 }
 ```
 
-Attachment
+Attachment [9607.patch](tarball://root/attachments/some-uuid/ticket3051/9607.patch) by bump created at 2008-04-28 22:52:48
 
 
 
@@ -228,7 +228,7 @@ In view of Michael Abshoff's comments the caching should be left off by default 
 archive/issue_comments_021030.json:
 ```json
 {
-    "body": "Attachment\n\nname change: Branch -> branch_weyl_character",
+    "body": "Attachment [9608.patch](tarball://root/attachments/some-uuid/ticket3051/9608.patch) by bump created at 2008-04-29 16:09:22\n\nname change: Branch -> branch_weyl_character",
     "created_at": "2008-04-29T16:09:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
@@ -237,7 +237,7 @@ archive/issue_comments_021030.json:
 }
 ```
 
-Attachment
+Attachment [9608.patch](tarball://root/attachments/some-uuid/ticket3051/9608.patch) by bump created at 2008-04-29 16:09:22
 
 name change: Branch -> branch_weyl_character
 
@@ -284,7 +284,7 @@ I'll go through and get it 100% doctested so it can go in.
 archive/issue_comments_021033.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9609.patch](tarball://root/attachments/some-uuid/ticket3051/9609.patch) by bump created at 2008-05-02 14:53:51",
     "created_at": "2008-05-02T14:53:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
@@ -293,7 +293,7 @@ archive/issue_comments_021033.json:
 }
 ```
 
-Attachment
+Attachment [9609.patch](tarball://root/attachments/some-uuid/ticket3051/9609.patch) by bump created at 2008-05-02 14:53:51
 
 
 
@@ -326,7 +326,7 @@ Corrects a minor bug (`__repr__` misspelled somewhere).
 archive/issue_comments_021035.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch 9610.patch completes the doctesting to 100%.\n\nI found 2 bugs which are fixed. In _add_ some code had the wrong\nindent level and this has been fixed. and `_neg_` was misspelled\nsomewhere.\n\nDan",
+    "body": "Attachment [9610.patch](tarball://root/attachments/some-uuid/ticket3051/9610.patch) by bump created at 2008-05-02 21:53:11\n\nThe patch 9610.patch completes the doctesting to 100%.\n\nI found 2 bugs which are fixed. In _add_ some code had the wrong\nindent level and this has been fixed. and `_neg_` was misspelled\nsomewhere.\n\nDan",
     "created_at": "2008-05-02T21:53:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
@@ -335,7 +335,7 @@ archive/issue_comments_021035.json:
 }
 ```
 
-Attachment
+Attachment [9610.patch](tarball://root/attachments/some-uuid/ticket3051/9610.patch) by bump created at 2008-05-02 21:53:11
 
 The patch 9610.patch completes the doctesting to 100%.
 
@@ -352,7 +352,7 @@ Dan
 archive/issue_comments_021036.json:
 ```json
 {
-    "body": "Attachment\n\nAdded 9611.patch.\n\nMinor bugfixes and improvements.\n\nThe bugfixes are in WeylCharacterRing's `__call__` method, which worked reasonably well over ZZ but not over a polynomial ring. After the patch, we first intercept integers, then try to coerce elements into the base ring, but we check the parent first since it is possible to coerce a list of integers into a polynomial ring.  In other words, we don't want to break calls like `R([2,1,0])`.\n\nI found that changing the way `repr_lincomb` is called resulted in nicer output.\n\nA parent method is added to elements.\n\nMore doctests are added in response to the problems I found in __call__ and there are revisions to old doctests in response to the revised lincomb call.",
+    "body": "Attachment [9611.patch](tarball://root/attachments/some-uuid/ticket3051/9611.patch) by bump created at 2008-05-04 17:17:43\n\nAdded 9611.patch.\n\nMinor bugfixes and improvements.\n\nThe bugfixes are in WeylCharacterRing's `__call__` method, which worked reasonably well over ZZ but not over a polynomial ring. After the patch, we first intercept integers, then try to coerce elements into the base ring, but we check the parent first since it is possible to coerce a list of integers into a polynomial ring.  In other words, we don't want to break calls like `R([2,1,0])`.\n\nI found that changing the way `repr_lincomb` is called resulted in nicer output.\n\nA parent method is added to elements.\n\nMore doctests are added in response to the problems I found in __call__ and there are revisions to old doctests in response to the revised lincomb call.",
     "created_at": "2008-05-04T17:17:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
@@ -361,7 +361,7 @@ archive/issue_comments_021036.json:
 }
 ```
 
-Attachment
+Attachment [9611.patch](tarball://root/attachments/some-uuid/ticket3051/9611.patch) by bump created at 2008-05-04 17:17:43
 
 Added 9611.patch.
 
@@ -382,7 +382,7 @@ More doctests are added in response to the problems I found in __call__ and ther
 archive/issue_comments_021037.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9673.patch](tarball://root/attachments/some-uuid/ticket3051/9673.patch) by bump created at 2008-05-06 18:56:07",
     "created_at": "2008-05-06T18:56:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
@@ -391,7 +391,7 @@ archive/issue_comments_021037.json:
 }
 ```
 
-Attachment
+Attachment [9673.patch](tarball://root/attachments/some-uuid/ticket3051/9673.patch) by bump created at 2008-05-06 18:56:07
 
 
 
@@ -424,7 +424,7 @@ One test result was changed because the weights of B3(spin) are calculated in a 
 archive/issue_comments_021039.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9674.patch](tarball://root/attachments/some-uuid/ticket3051/9674.patch) by bump created at 2008-05-07 21:54:17",
     "created_at": "2008-05-07T21:54:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
@@ -433,7 +433,7 @@ archive/issue_comments_021039.json:
 }
 ```
 
-Attachment
+Attachment [9674.patch](tarball://root/attachments/some-uuid/ticket3051/9674.patch) by bump created at 2008-05-07 21:54:17
 
 
 
@@ -442,7 +442,7 @@ Attachment
 archive/issue_comments_021040.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3051-unified.patch](tarball://root/attachments/some-uuid/ticket3051/3051-unified.patch) by bump created at 2008-05-07 21:55:37",
     "created_at": "2008-05-07T21:55:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
@@ -451,7 +451,7 @@ archive/issue_comments_021040.json:
 }
 ```
 
-Attachment
+Attachment [3051-unified.patch](tarball://root/attachments/some-uuid/ticket3051/3051-unified.patch) by bump created at 2008-05-07 21:55:37
 
 
 
@@ -541,7 +541,7 @@ Don't worry about that. If you want to make a new unified patch, do so and let m
 archive/issue_comments_021045.json:
 ```json
 {
-    "body": "Attachment\n\n> Don't worry about that. If you want to make a new unified patch, do so and let me know. I'll re-run sage -testall.\n\nThanks.\n\nI made a separate patch called 3051-1.patch containing just the changes to\ncrystals.py. This goes on top of 3051-1.unified.",
+    "body": "Attachment [3051-1.patch](tarball://root/attachments/some-uuid/ticket3051/3051-1.patch) by bump created at 2008-05-08 14:41:24\n\n> Don't worry about that. If you want to make a new unified patch, do so and let me know. I'll re-run sage -testall.\n\nThanks.\n\nI made a separate patch called 3051-1.patch containing just the changes to\ncrystals.py. This goes on top of 3051-1.unified.",
     "created_at": "2008-05-08T14:41:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
@@ -550,7 +550,7 @@ archive/issue_comments_021045.json:
 }
 ```
 
-Attachment
+Attachment [3051-1.patch](tarball://root/attachments/some-uuid/ticket3051/3051-1.patch) by bump created at 2008-05-08 14:41:24
 
 > Don't worry about that. If you want to make a new unified patch, do so and let me know. I'll re-run sage -testall.
 
@@ -664,7 +664,7 @@ I'll put up another patch (I hope by 5PM PDT) addressing (1) and (3) but not (2)
 archive/issue_comments_021049.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3051-2.patch](tarball://root/attachments/some-uuid/ticket3051/3051-2.patch) by bump created at 2008-05-09 00:10:57",
     "created_at": "2008-05-09T00:10:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
@@ -673,7 +673,7 @@ archive/issue_comments_021049.json:
 }
 ```
 
-Attachment
+Attachment [3051-2.patch](tarball://root/attachments/some-uuid/ticket3051/3051-2.patch) by bump created at 2008-05-09 00:10:57
 
 
 
@@ -682,7 +682,7 @@ Attachment
 archive/issue_comments_021050.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3051-unified-1.patch](tarball://root/attachments/some-uuid/ticket3051/3051-unified-1.patch) by bump created at 2008-05-09 00:11:53",
     "created_at": "2008-05-09T00:11:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
@@ -691,7 +691,7 @@ archive/issue_comments_021050.json:
 }
 ```
 
-Attachment
+Attachment [3051-unified-1.patch](tarball://root/attachments/some-uuid/ticket3051/3051-unified-1.patch) by bump created at 2008-05-09 00:11:53
 
 
 
@@ -740,7 +740,7 @@ This patch 3051-unified-1.patch applied cleanly to 3.0.1 and passes sage -testal
 archive/issue_comments_021053.json:
 ```json
 {
-    "body": "Attachment\n\nGoes on top of 3051-unified-1.patch. Revises the __repr to avoid string notation and adds _coerce_impl methods",
+    "body": "Attachment [3051-3.patch](tarball://root/attachments/some-uuid/ticket3051/3051-3.patch) by bump created at 2008-05-17 04:56:21\n\nGoes on top of 3051-unified-1.patch. Revises the __repr to avoid string notation and adds _coerce_impl methods",
     "created_at": "2008-05-17T04:56:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
@@ -749,7 +749,7 @@ archive/issue_comments_021053.json:
 }
 ```
 
-Attachment
+Attachment [3051-3.patch](tarball://root/attachments/some-uuid/ticket3051/3051-3.patch) by bump created at 2008-05-17 04:56:21
 
 Goes on top of 3051-unified-1.patch. Revises the __repr to avoid string notation and adds _coerce_impl methods
 
@@ -780,7 +780,7 @@ Also, _coerce_impl methods were added to WeylCharacterRing and WeightRing, so th
 archive/issue_comments_021055.json:
 ```json
 {
-    "body": "Attachment\n\nUnified patch equivalent to 3051-unified-1.patch plus 3051-3.patch plus 3051-4.patch",
+    "body": "Attachment [3051-unified-2.patch](tarball://root/attachments/some-uuid/ticket3051/3051-unified-2.patch) by bump created at 2008-05-17 14:26:06\n\nUnified patch equivalent to 3051-unified-1.patch plus 3051-3.patch plus 3051-4.patch",
     "created_at": "2008-05-17T14:26:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
@@ -789,7 +789,7 @@ archive/issue_comments_021055.json:
 }
 ```
 
-Attachment
+Attachment [3051-unified-2.patch](tarball://root/attachments/some-uuid/ticket3051/3051-unified-2.patch) by bump created at 2008-05-17 14:26:06
 
 Unified patch equivalent to 3051-unified-1.patch plus 3051-3.patch plus 3051-4.patch
 
@@ -888,7 +888,7 @@ file sage/combinat/root_system/weyl_characters.py already exists
 archive/issue_comments_021059.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3051-doctest.patch](tarball://root/attachments/some-uuid/ticket3051/3051-doctest.patch) by mhansen created at 2008-05-18 00:05:24",
     "created_at": "2008-05-18T00:05:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
@@ -897,7 +897,7 @@ archive/issue_comments_021059.json:
 }
 ```
 
-Attachment
+Attachment [3051-doctest.patch](tarball://root/attachments/some-uuid/ticket3051/3051-doctest.patch) by mhansen created at 2008-05-18 00:05:24
 
 
 

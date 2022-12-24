@@ -89,7 +89,7 @@ CCing possible reviewers; this patch increases real_mpfr.pyx doctest coverage fr
 archive/issue_comments_082593.json:
 ```json
 {
-    "body": "Attachment\n\nI've split off changing the latex representation to #8962.\n\nThis patch also changes a deprecated call to MPFR, and redefines several functions to be aliases when it is more appropriate (e.g., self.prec is an alias to self.precision)",
+    "body": "Attachment [trac-8960-RealField-docs.patch](tarball://root/attachments/some-uuid/ticket8960/trac-8960-RealField-docs.patch) by jason created at 2010-05-14 16:05:38\n\nI've split off changing the latex representation to #8962.\n\nThis patch also changes a deprecated call to MPFR, and redefines several functions to be aliases when it is more appropriate (e.g., self.prec is an alias to self.precision)",
     "created_at": "2010-05-14T16:05:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8960",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_082593.json:
 }
 ```
 
-Attachment
+Attachment [trac-8960-RealField-docs.patch](tarball://root/attachments/some-uuid/ticket8960/trac-8960-RealField-docs.patch) by jason created at 2010-05-14 16:05:38
 
 I've split off changing the latex representation to #8962.
 
@@ -111,7 +111,7 @@ This patch also changes a deprecated call to MPFR, and redefines several functio
 archive/issue_comments_082594.json:
 ```json
 {
-    "body": "Attachment\n\nChanges in the reviewer patch include:\n\n* Typo fixes.\n* Fix errors/warnings with LaTeX markups in docstrings.\n* Use error types, e.g. IndexError, etc., as callables in accordance with Python 3.x.\n* Don't LaTeX expressions wherever that makes sense. For example, something like\n {{{\n`self`\n }}}\n would actually LaTeX the word \"self\".\n\nIncidentally, I came across the following line\n\n```\nelif PY_TYPE_CHECK(x, gen) and typ((<gen>x).g) == t_REAL:\n```\n\nfrom the function\n\n```\ncdef _set(self, x, int base):\n        # This should not be called except when the number is being created.    \n        # Real Numbers are supposed to be immutable.\n<...>\n```\n\nNotice the call\n\n```\ntyp((<gen>x).g)\n```\n\nShould this be\n\n```\ntype((<gen>x).g)\n```\n\nThat is, use \"type\" instead of \"typ\"?\n\n\n\nApart from the above, I'm OK with Jason's changes. So only my patch needs review by anyone but me.",
+    "body": "Attachment [trac_8960-reviewer.patch](tarball://root/attachments/some-uuid/ticket8960/trac_8960-reviewer.patch) by mvngu created at 2010-05-15 04:03:14\n\nChanges in the reviewer patch include:\n\n* Typo fixes.\n* Fix errors/warnings with LaTeX markups in docstrings.\n* Use error types, e.g. IndexError, etc., as callables in accordance with Python 3.x.\n* Don't LaTeX expressions wherever that makes sense. For example, something like\n {{{\n`self`\n }}}\n would actually LaTeX the word \"self\".\n\nIncidentally, I came across the following line\n\n```\nelif PY_TYPE_CHECK(x, gen) and typ((<gen>x).g) == t_REAL:\n```\n\nfrom the function\n\n```\ncdef _set(self, x, int base):\n        # This should not be called except when the number is being created.    \n        # Real Numbers are supposed to be immutable.\n<...>\n```\n\nNotice the call\n\n```\ntyp((<gen>x).g)\n```\n\nShould this be\n\n```\ntype((<gen>x).g)\n```\n\nThat is, use \"type\" instead of \"typ\"?\n\n\n\nApart from the above, I'm OK with Jason's changes. So only my patch needs review by anyone but me.",
     "created_at": "2010-05-15T04:03:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8960",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_082594.json:
 }
 ```
 
-Attachment
+Attachment [trac_8960-reviewer.patch](tarball://root/attachments/some-uuid/ticket8960/trac_8960-reviewer.patch) by mvngu created at 2010-05-15 04:03:14
 
 Changes in the reviewer patch include:
 

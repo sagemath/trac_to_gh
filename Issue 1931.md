@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1931
 archive/issue_comments_012251.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-2.10.1.rc0-ecmlib-deps.patch](tarball://root/attachments/some-uuid/ticket1931/Sage-2.10.1.rc0-ecmlib-deps.patch) by mabshoff created at 2008-01-26 09:19:14",
     "created_at": "2008-01-26T09:19:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1931",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_012251.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.10.1.rc0-ecmlib-deps.patch](tarball://root/attachments/some-uuid/ticket1931/Sage-2.10.1.rc0-ecmlib-deps.patch) by mabshoff created at 2008-01-26 09:19:14
 
 
 

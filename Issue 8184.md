@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8184
 archive/issue_comments_072126.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [eclib-20080310.p9.spkg](tarball://root/attachments/some-uuid/ticket8184/eclib-20080310.p9.spkg) by cremona created at 2010-02-04 14:28:18",
     "created_at": "2010-02-04T14:28:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8184",
     "type": "issue_comment",
@@ -50,7 +50,7 @@ archive/issue_comments_072126.json:
 }
 ```
 
-Attachment
+Attachment [eclib-20080310.p9.spkg](tarball://root/attachments/some-uuid/ticket8184/eclib-20080310.p9.spkg) by cremona created at 2010-02-04 14:28:18
 
 
 
@@ -117,7 +117,7 @@ Applies to 4.3.2.alpha1
 archive/issue_comments_072130.json:
 ```json
 {
-    "body": "Attachment\n\nSorry -- try this one.\n\nNB After building the new spkg with \"sage -f\" the patch is required before Sage will work properly.  Even in a clone, you'll be stuck with the new spkg.  I am not sure how to revert back to the old eclib (if you want to).\n\nSo I would recommend tetsing this on (say) 4.3.2.alpha1 if you have it, and if all goes wrong you can build 4.3.2.rc0 which is out!",
+    "body": "Attachment [trac_8184-eclib.patch](tarball://root/attachments/some-uuid/ticket8184/trac_8184-eclib.patch) by cremona created at 2010-02-04 15:59:20\n\nSorry -- try this one.\n\nNB After building the new spkg with \"sage -f\" the patch is required before Sage will work properly.  Even in a clone, you'll be stuck with the new spkg.  I am not sure how to revert back to the old eclib (if you want to).\n\nSo I would recommend tetsing this on (say) 4.3.2.alpha1 if you have it, and if all goes wrong you can build 4.3.2.rc0 which is out!",
     "created_at": "2010-02-04T15:59:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8184",
     "type": "issue_comment",
@@ -126,7 +126,7 @@ archive/issue_comments_072130.json:
 }
 ```
 
-Attachment
+Attachment [trac_8184-eclib.patch](tarball://root/attachments/some-uuid/ticket8184/trac_8184-eclib.patch) by cremona created at 2010-02-04 15:59:20
 
 Sorry -- try this one.
 
@@ -159,7 +159,7 @@ Apply on top of trac_8184-eclib.patch
 archive/issue_comments_072132.json:
 ```json
 {
-    "body": "Attachment\n\nI added a patch which replaces tabs with single spaces (it looks like your editor sees tabs as eight spaces... mine only sees them as four).",
+    "body": "Attachment [trac_8184-indentation.patch](tarball://root/attachments/some-uuid/ticket8184/trac_8184-indentation.patch) by rlm created at 2010-02-04 19:09:33\n\nI added a patch which replaces tabs with single spaces (it looks like your editor sees tabs as eight spaces... mine only sees them as four).",
     "created_at": "2010-02-04T19:09:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8184",
     "type": "issue_comment",
@@ -168,7 +168,7 @@ archive/issue_comments_072132.json:
 }
 ```
 
-Attachment
+Attachment [trac_8184-indentation.patch](tarball://root/attachments/some-uuid/ticket8184/trac_8184-indentation.patch) by rlm created at 2010-02-04 19:09:33
 
 I added a patch which replaces tabs with single spaces (it looks like your editor sees tabs as eight spaces... mine only sees them as four).
 

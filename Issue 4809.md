@@ -89,7 +89,7 @@ The solution is easy though - use \url{...} instead. It is used in other places 
 archive/issue_comments_036458.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4809_constructions.patch](tarball://root/attachments/some-uuid/ticket4809/trac_4809_constructions.patch) by ddrake created at 2009-04-14 01:28:40",
     "created_at": "2009-04-14T01:28:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4809",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_036458.json:
 }
 ```
 
-Attachment
+Attachment [trac_4809_constructions.patch](tarball://root/attachments/some-uuid/ticket4809/trac_4809_constructions.patch) by ddrake created at 2009-04-14 01:28:40
 
 
 
@@ -107,7 +107,7 @@ Attachment
 archive/issue_comments_036459.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4809_installation.patch](tarball://root/attachments/some-uuid/ticket4809/trac_4809_installation.patch) by ddrake created at 2009-04-14 01:31:19",
     "created_at": "2009-04-14T01:31:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4809",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_036459.json:
 }
 ```
 
-Attachment
+Attachment [trac_4809_installation.patch](tarball://root/attachments/some-uuid/ticket4809/trac_4809_installation.patch) by ddrake created at 2009-04-14 01:31:19
 
 
 
@@ -161,7 +161,7 @@ trac_4809_constructions.patch and trac_4809_installation.patch are ready to go: 
 archive/issue_comments_036462.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4809_other.patch](tarball://root/attachments/some-uuid/ticket4809/trac_4809_other.patch) by jhpalmieri created at 2009-04-21 17:56:29",
     "created_at": "2009-04-21T17:56:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4809",
     "type": "issue_comment",
@@ -170,7 +170,7 @@ archive/issue_comments_036462.json:
 }
 ```
 
-Attachment
+Attachment [trac_4809_other.patch](tarball://root/attachments/some-uuid/ticket4809/trac_4809_other.patch) by jhpalmieri created at 2009-04-21 17:56:29
 
 
 

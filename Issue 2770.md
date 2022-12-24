@@ -65,7 +65,7 @@ Changing assignee from was to abergeron.
 archive/issue_comments_019031.json:
 ```json
 {
-    "body": "Attachment\n\nIf you want to try out part1, you need to apply the patch at #4884.  At the moment it support only one function.\n\nMultiple function support is coming in part2.",
+    "body": "Attachment [plot-region.png](tarball://root/attachments/some-uuid/ticket2770/plot-region.png) by abergeron created at 2008-12-28 01:11:27\n\nIf you want to try out part1, you need to apply the patch at #4884.  At the moment it support only one function.\n\nMultiple function support is coming in part2.",
     "created_at": "2008-12-28T01:11:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2770",
     "type": "issue_comment",
@@ -74,7 +74,7 @@ archive/issue_comments_019031.json:
 }
 ```
 
-Attachment
+Attachment [plot-region.png](tarball://root/attachments/some-uuid/ticket2770/plot-region.png) by abergeron created at 2008-12-28 01:11:27
 
 If you want to try out part1, you need to apply the patch at #4884.  At the moment it support only one function.
 
@@ -105,7 +105,7 @@ Changing status from new to assigned.
 archive/issue_comments_019033.json:
 ```json
 {
-    "body": "Attachment\n\nNow it is complete, apply both patches and the patch at #4884 to test.\n\nThe example in the screenshot should work, but is rather ugly at the default plot_points setting, try at plot_points=200 to see it looking good.",
+    "body": "Attachment [trac_2770_part2.patch](tarball://root/attachments/some-uuid/ticket2770/trac_2770_part2.patch) by abergeron created at 2008-12-28 20:47:42\n\nNow it is complete, apply both patches and the patch at #4884 to test.\n\nThe example in the screenshot should work, but is rather ugly at the default plot_points setting, try at plot_points=200 to see it looking good.",
     "created_at": "2008-12-28T20:47:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2770",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_019033.json:
 }
 ```
 
-Attachment
+Attachment [trac_2770_part2.patch](tarball://root/attachments/some-uuid/ticket2770/trac_2770_part2.patch) by abergeron created at 2008-12-28 20:47:42
 
 Now it is complete, apply both patches and the patch at #4884 to test.
 
@@ -295,7 +295,7 @@ Do these seem reasonable Arnaud?
 archive/issue_comments_019040.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_2770_part2.1.patch](tarball://root/attachments/some-uuid/ticket2770/trac_2770_part2.1.patch) by abergeron created at 2008-12-30 19:16:33",
     "created_at": "2008-12-30T19:16:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2770",
     "type": "issue_comment",
@@ -304,7 +304,7 @@ archive/issue_comments_019040.json:
 }
 ```
 
-Attachment
+Attachment [trac_2770_part2.1.patch](tarball://root/attachments/some-uuid/ticket2770/trac_2770_part2.1.patch) by abergeron created at 2008-12-30 19:16:33
 
 
 
@@ -387,7 +387,7 @@ Resolution: fixed
 archive/issue_comments_019045.json:
 ```json
 {
-    "body": "Attachment\n\nMerged all three patches in Sage 3.3.alpha0",
+    "body": "Attachment [trac_2770_part1.patch](tarball://root/attachments/some-uuid/ticket2770/trac_2770_part1.patch) by mabshoff created at 2009-01-12 02:00:26\n\nMerged all three patches in Sage 3.3.alpha0",
     "created_at": "2009-01-12T02:00:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2770",
     "type": "issue_comment",
@@ -396,6 +396,6 @@ archive/issue_comments_019045.json:
 }
 ```
 
-Attachment
+Attachment [trac_2770_part1.patch](tarball://root/attachments/some-uuid/ticket2770/trac_2770_part1.patch) by mabshoff created at 2009-01-12 02:00:26
 
 Merged all three patches in Sage 3.3.alpha0

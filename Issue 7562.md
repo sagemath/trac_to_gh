@@ -243,7 +243,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_064346.json:
 ```json
 {
-    "body": "Attachment\n\nNew breakpoint",
+    "body": "Attachment [trac_7562.patch](tarball://root/attachments/some-uuid/ticket7562/trac_7562.patch) by hgranath created at 2009-12-04 16:11:48\n\nNew breakpoint",
     "created_at": "2009-12-04T16:11:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7562",
     "type": "issue_comment",
@@ -252,7 +252,7 @@ archive/issue_comments_064346.json:
 }
 ```
 
-Attachment
+Attachment [trac_7562.patch](tarball://root/attachments/some-uuid/ticket7562/trac_7562.patch) by hgranath created at 2009-12-04 16:11:48
 
 New breakpoint
 

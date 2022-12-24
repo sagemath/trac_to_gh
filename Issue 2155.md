@@ -66,7 +66,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2155
 archive/issue_comments_014152.json:
 ```json
 {
-    "body": "Attachment\n\nWorks great for me. The doctest for invert() has some spurious code at the top of the examples block though. \n\nSince you're going to have to be in there anyway, it might be a bit more readable if \"t0\" was renamed to \"det.\"",
+    "body": "Attachment [trac-2155.patch](tarball://root/attachments/some-uuid/ticket2155/trac-2155.patch) by robertwb created at 2008-02-14 04:20:03\n\nWorks great for me. The doctest for invert() has some spurious code at the top of the examples block though. \n\nSince you're going to have to be in there anyway, it might be a bit more readable if \"t0\" was renamed to \"det.\"",
     "created_at": "2008-02-14T04:20:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2155",
     "type": "issue_comment",
@@ -75,7 +75,7 @@ archive/issue_comments_014152.json:
 }
 ```
 
-Attachment
+Attachment [trac-2155.patch](tarball://root/attachments/some-uuid/ticket2155/trac-2155.patch) by robertwb created at 2008-02-14 04:20:03
 
 Works great for me. The doctest for invert() has some spurious code at the top of the examples block though. 
 
@@ -88,7 +88,7 @@ Since you're going to have to be in there anyway, it might be a bit more readabl
 archive/issue_comments_014153.json:
 ```json
 {
-    "body": "Attachment\n\nI have addressed the referee's (Robert's) two complaints.  I also added an architecture for fast change of base ring and computation of the Hadamard bound.  This second thing is technically unrelated but it was too difficult to separate out safely. \n\nThis is now vastly faster than before\n\n```\nsage: a = random_matrix(ZZ,500)\nsage: time a.change_ring(RDF)\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02\n```\n",
+    "body": "Attachment [trac-2155-part2.patch](tarball://root/attachments/some-uuid/ticket2155/trac-2155-part2.patch) by was created at 2008-02-16 04:06:24\n\nI have addressed the referee's (Robert's) two complaints.  I also added an architecture for fast change of base ring and computation of the Hadamard bound.  This second thing is technically unrelated but it was too difficult to separate out safely. \n\nThis is now vastly faster than before\n\n```\nsage: a = random_matrix(ZZ,500)\nsage: time a.change_ring(RDF)\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02\n```\n",
     "created_at": "2008-02-16T04:06:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2155",
     "type": "issue_comment",
@@ -97,7 +97,7 @@ archive/issue_comments_014153.json:
 }
 ```
 
-Attachment
+Attachment [trac-2155-part2.patch](tarball://root/attachments/some-uuid/ticket2155/trac-2155-part2.patch) by was created at 2008-02-16 04:06:24
 
 I have addressed the referee's (Robert's) two complaints.  I also added an architecture for fast change of base ring and computation of the Hadamard bound.  This second thing is technically unrelated but it was too difficult to separate out safely. 
 

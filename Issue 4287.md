@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4287
 archive/issue_comments_031378.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4287.patch](tarball://root/attachments/some-uuid/ticket4287/trac_4287.patch) by zimmerma created at 2008-10-14 20:00:19",
     "created_at": "2008-10-14T20:00:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4287",
     "type": "issue_comment",
@@ -51,7 +51,7 @@ archive/issue_comments_031378.json:
 }
 ```
 
-Attachment
+Attachment [trac_4287.patch](tarball://root/attachments/some-uuid/ticket4287/trac_4287.patch) by zimmerma created at 2008-10-14 20:00:19
 
 
 
@@ -80,7 +80,7 @@ I don't know how to fix this.
 archive/issue_comments_031380.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4287_2.patch](tarball://root/attachments/some-uuid/ticket4287/trac_4287_2.patch) by cremona created at 2008-10-19 21:02:46",
     "created_at": "2008-10-19T21:02:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4287",
     "type": "issue_comment",
@@ -89,7 +89,7 @@ archive/issue_comments_031380.json:
 }
 ```
 
-Attachment
+Attachment [trac_4287_2.patch](tarball://root/attachments/some-uuid/ticket4287/trac_4287_2.patch) by cremona created at 2008-10-19 21:02:46
 
 
 

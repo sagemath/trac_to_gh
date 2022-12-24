@@ -174,7 +174,7 @@ Just do `hg add name_of_the_file`.  Before doing this you can try `hg status`, w
 archive/issue_comments_071707.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8156.patch](tarball://root/attachments/some-uuid/ticket8156/trac_8156.patch) by zimmerma created at 2010-02-23 09:47:36",
     "created_at": "2010-02-23T09:47:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8156",
     "type": "issue_comment",
@@ -183,7 +183,7 @@ archive/issue_comments_071707.json:
 }
 ```
 
-Attachment
+Attachment [trac_8156.patch](tarball://root/attachments/some-uuid/ticket8156/trac_8156.patch) by zimmerma created at 2010-02-23 09:47:36
 
 
 
@@ -473,7 +473,7 @@ No problem.
 archive/issue_comments_071718.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8156a.patch](tarball://root/attachments/some-uuid/ticket8156/trac_8156a.patch) by zimmerma created at 2010-04-19 16:33:47",
     "created_at": "2010-04-19T16:33:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8156",
     "type": "issue_comment",
@@ -482,7 +482,7 @@ archive/issue_comments_071718.json:
 }
 ```
 
-Attachment
+Attachment [trac_8156a.patch](tarball://root/attachments/some-uuid/ticket8156/trac_8156a.patch) by zimmerma created at 2010-04-19 16:33:47
 
 
 
@@ -552,7 +552,7 @@ First try changing """ to r""" at the beginning of the docstring.  That might fi
 archive/issue_comments_071722.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8156b.patch](tarball://root/attachments/some-uuid/ticket8156/trac_8156b.patch) by zimmerma created at 2010-04-20 09:38:09",
     "created_at": "2010-04-20T09:38:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8156",
     "type": "issue_comment",
@@ -561,7 +561,7 @@ archive/issue_comments_071722.json:
 }
 ```
 
-Attachment
+Attachment [trac_8156b.patch](tarball://root/attachments/some-uuid/ticket8156/trac_8156b.patch) by zimmerma created at 2010-04-20 09:38:09
 
 
 
@@ -727,7 +727,7 @@ Use `tmp_filename`.  Apply only this patch.
 archive/issue_comments_071730.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached a patch that uses `tmp_filename`.",
+    "body": "Attachment [trac_8156c.patch](tarball://root/attachments/some-uuid/ticket8156/trac_8156c.patch) by mpatel created at 2010-07-21 10:41:22\n\nI've attached a patch that uses `tmp_filename`.",
     "created_at": "2010-07-21T10:41:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8156",
     "type": "issue_comment",
@@ -736,7 +736,7 @@ archive/issue_comments_071730.json:
 }
 ```
 
-Attachment
+Attachment [trac_8156c.patch](tarball://root/attachments/some-uuid/ticket8156/trac_8156c.patch) by mpatel created at 2010-07-21 10:41:22
 
 I've attached a patch that uses `tmp_filename`.
 

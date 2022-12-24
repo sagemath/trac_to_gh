@@ -120,7 +120,7 @@ Yep, this was a mistake on my part. The attached patch fixes it, adds a few doct
 archive/issue_comments_020414.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-2959.patch](tarball://root/attachments/some-uuid/ticket2959/trac-2959.patch) by craigcitro created at 2008-04-19 23:54:42",
     "created_at": "2008-04-19T23:54:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2959",
     "type": "issue_comment",
@@ -129,7 +129,7 @@ archive/issue_comments_020414.json:
 }
 ```
 
-Attachment
+Attachment [trac-2959.patch](tarball://root/attachments/some-uuid/ticket2959/trac-2959.patch) by craigcitro created at 2008-04-19 23:54:42
 
 
 

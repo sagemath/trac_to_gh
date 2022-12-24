@@ -45,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5545
 archive/issue_comments_043135.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [dependency-tracker-bug-testcase.patch](tarball://root/attachments/some-uuid/ticket5545/dependency-tracker-bug-testcase.patch) by jdemeyer created at 2013-08-13 15:35:53",
     "created_at": "2013-08-13T15:35:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5545",
     "type": "issue_comment",
@@ -54,7 +54,7 @@ archive/issue_comments_043135.json:
 }
 ```
 
-Attachment
+Attachment [dependency-tracker-bug-testcase.patch](tarball://root/attachments/some-uuid/ticket5545/dependency-tracker-bug-testcase.patch) by jdemeyer created at 2013-08-13 15:35:53
 
 
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5331
 archive/issue_comments_041033.json:
 ```json
 {
-    "body": "Attachment\n\nI'm starting to review this patch.",
+    "body": "Attachment [sage_scripts.patch](tarball://root/attachments/some-uuid/ticket5331/sage_scripts.patch) by cwitty created at 2009-02-21 20:54:30\n\nI'm starting to review this patch.",
     "created_at": "2009-02-21T20:54:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5331",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_041033.json:
 }
 ```
 
-Attachment
+Attachment [sage_scripts.patch](tarball://root/attachments/some-uuid/ticket5331/sage_scripts.patch) by cwitty created at 2009-02-21 20:54:30
 
 I'm starting to review this patch.
 
@@ -69,7 +69,7 @@ The code looks good, and everything that I tested worked.  I attached a patch to
 archive/issue_comments_041035.json:
 ```json
 {
-    "body": "Attachment\n\n(BTW, I just updated my reviewer patch; I hope nobody had downloaded the previous version.)",
+    "body": "Attachment [trac5331-reviewer.patch](tarball://root/attachments/some-uuid/ticket5331/trac5331-reviewer.patch) by cwitty created at 2009-02-22 03:22:05\n\n(BTW, I just updated my reviewer patch; I hope nobody had downloaded the previous version.)",
     "created_at": "2009-02-22T03:22:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5331",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_041035.json:
 }
 ```
 
-Attachment
+Attachment [trac5331-reviewer.patch](tarball://root/attachments/some-uuid/ticket5331/trac5331-reviewer.patch) by cwitty created at 2009-02-22 03:22:05
 
 (BTW, I just updated my reviewer patch; I hope nobody had downloaded the previous version.)
 

@@ -56,7 +56,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2723
 archive/issue_comments_018767.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [mpoly-div-quotient.patch](tarball://root/attachments/some-uuid/ticket2723/mpoly-div-quotient.patch) by jbmohler created at 2008-03-29 18:52:36",
     "created_at": "2008-03-29T18:52:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2723",
     "type": "issue_comment",
@@ -65,7 +65,7 @@ archive/issue_comments_018767.json:
 }
 ```
 
-Attachment
+Attachment [mpoly-div-quotient.patch](tarball://root/attachments/some-uuid/ticket2723/mpoly-div-quotient.patch) by jbmohler created at 2008-03-29 18:52:36
 
 
 

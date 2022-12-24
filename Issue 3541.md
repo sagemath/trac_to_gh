@@ -105,7 +105,7 @@ This depends on #4774, and implements multiple edges for graphs only.
 archive/issue_comments_025029.json:
 ```json
 {
-    "body": "Attachment\n\nThis set of patches should fix #5248.",
+    "body": "Attachment [trac_3541-multiedge-1.patch](tarball://root/attachments/some-uuid/ticket3541/trac_3541-multiedge-1.patch) by rlm created at 2009-02-12 17:33:33\n\nThis set of patches should fix #5248.",
     "created_at": "2009-02-12T17:33:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3541",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_025029.json:
 }
 ```
 
-Attachment
+Attachment [trac_3541-multiedge-1.patch](tarball://root/attachments/some-uuid/ticket3541/trac_3541-multiedge-1.patch) by rlm created at 2009-02-12 17:33:33
 
 This set of patches should fix #5248.
 
@@ -125,7 +125,7 @@ This set of patches should fix #5248.
 archive/issue_comments_025030.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3541_beezy.patch](tarball://root/attachments/some-uuid/ticket3541/trac_3541_beezy.patch) by ekirkman created at 2009-02-14 01:51:37",
     "created_at": "2009-02-14T01:51:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3541",
     "type": "issue_comment",
@@ -134,7 +134,7 @@ archive/issue_comments_025030.json:
 }
 ```
 
-Attachment
+Attachment [trac_3541_beezy.patch](tarball://root/attachments/some-uuid/ticket3541/trac_3541_beezy.patch) by ekirkman created at 2009-02-14 01:51:37
 
 
 
@@ -221,7 +221,7 @@ Just fixes edge_color and adds a doctest
 archive/issue_comments_025035.json:
 ```json
 {
-    "body": "Attachment\n\nI caught some things while looking at the plots.  It should be a pretty quick review-- hopefully I got it in fast enough.",
+    "body": "Attachment [trac_3541_tinyfixes.patch](tarball://root/attachments/some-uuid/ticket3541/trac_3541_tinyfixes.patch) by ekirkman created at 2009-02-14 03:47:02\n\nI caught some things while looking at the plots.  It should be a pretty quick review-- hopefully I got it in fast enough.",
     "created_at": "2009-02-14T03:47:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3541",
     "type": "issue_comment",
@@ -230,7 +230,7 @@ archive/issue_comments_025035.json:
 }
 ```
 
-Attachment
+Attachment [trac_3541_tinyfixes.patch](tarball://root/attachments/some-uuid/ticket3541/trac_3541_tinyfixes.patch) by ekirkman created at 2009-02-14 03:47:02
 
 I caught some things while looking at the plots.  It should be a pretty quick review-- hopefully I got it in fast enough.
 
@@ -322,7 +322,7 @@ Michael
 archive/issue_comments_025039.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3541-reviewer-doctest.patch](tarball://root/attachments/some-uuid/ticket3541/trac_3541-reviewer-doctest.patch) by mabshoff created at 2009-02-14 13:30:30",
     "created_at": "2009-02-14T13:30:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3541",
     "type": "issue_comment",
@@ -331,7 +331,7 @@ archive/issue_comments_025039.json:
 }
 ```
 
-Attachment
+Attachment [trac_3541-reviewer-doctest.patch](tarball://root/attachments/some-uuid/ticket3541/trac_3541-reviewer-doctest.patch) by mabshoff created at 2009-02-14 13:30:30
 
 
 
@@ -405,7 +405,7 @@ Emily wrote all that by herself. I only reviewed and helped her with matplotlib.
 archive/issue_comments_025043.json:
 ```json
 {
-    "body": "Attachment\n\nsample plot of a multi-edge graph",
+    "body": "Attachment [trac_3541-multiedge-graph-example-plot.png](tarball://root/attachments/some-uuid/ticket3541/trac_3541-multiedge-graph-example-plot.png) by mvngu created at 2009-02-20 03:07:46\n\nsample plot of a multi-edge graph",
     "created_at": "2009-02-20T03:07:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3541",
     "type": "issue_comment",
@@ -414,7 +414,7 @@ archive/issue_comments_025043.json:
 }
 ```
 
-Attachment
+Attachment [trac_3541-multiedge-graph-example-plot.png](tarball://root/attachments/some-uuid/ticket3541/trac_3541-multiedge-graph-example-plot.png) by mvngu created at 2009-02-20 03:07:46
 
 sample plot of a multi-edge graph
 

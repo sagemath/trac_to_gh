@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3679
 archive/issue_comments_026050.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage.patch](tarball://root/attachments/some-uuid/ticket3679/sage.patch) by itolkov created at 2008-07-19 06:28:08",
     "created_at": "2008-07-19T06:28:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3679",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_026050.json:
 }
 ```
 
-Attachment
+Attachment [sage.patch](tarball://root/attachments/some-uuid/ticket3679/sage.patch) by itolkov created at 2008-07-19 06:28:08
 
 
 
@@ -51,7 +51,7 @@ Attachment
 archive/issue_comments_026051.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [extcode.patch](tarball://root/attachments/some-uuid/ticket3679/extcode.patch) by itolkov created at 2008-07-19 06:29:20",
     "created_at": "2008-07-19T06:29:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3679",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_026051.json:
 }
 ```
 
-Attachment
+Attachment [extcode.patch](tarball://root/attachments/some-uuid/ticket3679/extcode.patch) by itolkov created at 2008-07-19 06:29:20
 
 
 
@@ -141,7 +141,7 @@ def _(t1=range_slider(2, 5, 1/5, (3,4), 'alpha')):
 archive/issue_comments_026055.json:
 ```json
 {
-    "body": "Attachment\n\nAppend to sage.patch",
+    "body": "Attachment [sage_post1.patch](tarball://root/attachments/some-uuid/ticket3679/sage_post1.patch) by itolkov created at 2008-07-29 20:33:04\n\nAppend to sage.patch",
     "created_at": "2008-07-29T20:33:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3679",
     "type": "issue_comment",
@@ -150,7 +150,7 @@ archive/issue_comments_026055.json:
 }
 ```
 
-Attachment
+Attachment [sage_post1.patch](tarball://root/attachments/some-uuid/ticket3679/sage_post1.patch) by itolkov created at 2008-07-29 20:33:04
 
 Append to sage.patch
 

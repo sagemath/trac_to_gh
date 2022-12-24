@@ -531,7 +531,7 @@ Total time for all tests: 121.8 seconds
 archive/issue_comments_015850.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2355.hg](tarball://root/attachments/some-uuid/ticket2355/2355.hg) by dfdeshom created at 2008-03-14 13:20:11",
     "created_at": "2008-03-14T13:20:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2355",
     "type": "issue_comment",
@@ -540,7 +540,7 @@ archive/issue_comments_015850.json:
 }
 ```
 
-Attachment
+Attachment [2355.hg](tarball://root/attachments/some-uuid/ticket2355/2355.hg) by dfdeshom created at 2008-03-14 13:20:11
 
 
 
@@ -733,7 +733,7 @@ Michael
 archive/issue_comments_015858.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:24 mabshoff]:\n> Hi, \n> \n> while the patch passes doctests for me with 2.10.4 [modulo some known problems] I am still reluctant to apply this until the performance concern that was raised has been addressed.\n> \n> Cheers,\n> \n> Michael\n\nI've lost some speed while working on this. I've optimized the code a bit. Overall, my version is still slower because I'm doing more type-checking and handling more functionality (I think that's the reason):\n\n\n```\n# M is the same as above\n\n# element-by-element: slower by about 0.1 micro-seconds ~ 1.2x slower\n\n#2355\nsage: %timeit M[2,3]\n1000000 loops, best of 3: 395 ns per loop\n\n#main\nsage: %timeit M[2,3]\n1000000 loops, best of 3: 304 ns per loop\n\n# single slices: slower by < 1 micro-seconds ~ 1.01x slower\n\n#2355\nsage: %timeit M[:4]\n10000 loops, best of 3: 48 \u00c2\u00b5s per loop\n\n#main\nsage: %timeit M[:4]\n10000 loops, best of 3: 48.5 \u00c2\u00b5s per loop\n\n# Getting a whole row: faster by < 1 micro-seconds \n#2355 \nsage: %timeit M[3]\n10000 loops, best of 3: 72.2 \u00b5s per loop\n\n#main\nsage: %timeit M[3]\n10000 loops, best of 3: 72.9 \u00b5s per loop\n```\n \n\nI'm not posting speed comparisons using the other cases (ie, `M[:3,2:]`) since sage doesn't handle them right now.\n\nIf people think this speed loss is unacceptable, I could try to fold the extra functionality into the `submatrix` method instead which would leave `__getitem__` idem. \n\n\n2355.patch is updated. Warning: I've added a new file: `ext/python_slice.pxi` to have fast access to slice objects so the patch is a bit heavy and rebuilds everything ( nearly everything depends on python.pxi). Passes all tests in `matrix/`.",
+    "body": "Attachment [2355.patch](tarball://root/attachments/some-uuid/ticket2355/2355.patch) by dfdeshom created at 2008-03-22 01:21:30\n\nReplying to [comment:24 mabshoff]:\n> Hi, \n> \n> while the patch passes doctests for me with 2.10.4 [modulo some known problems] I am still reluctant to apply this until the performance concern that was raised has been addressed.\n> \n> Cheers,\n> \n> Michael\n\nI've lost some speed while working on this. I've optimized the code a bit. Overall, my version is still slower because I'm doing more type-checking and handling more functionality (I think that's the reason):\n\n\n```\n# M is the same as above\n\n# element-by-element: slower by about 0.1 micro-seconds ~ 1.2x slower\n\n#2355\nsage: %timeit M[2,3]\n1000000 loops, best of 3: 395 ns per loop\n\n#main\nsage: %timeit M[2,3]\n1000000 loops, best of 3: 304 ns per loop\n\n# single slices: slower by < 1 micro-seconds ~ 1.01x slower\n\n#2355\nsage: %timeit M[:4]\n10000 loops, best of 3: 48 \u00c2\u00b5s per loop\n\n#main\nsage: %timeit M[:4]\n10000 loops, best of 3: 48.5 \u00c2\u00b5s per loop\n\n# Getting a whole row: faster by < 1 micro-seconds \n#2355 \nsage: %timeit M[3]\n10000 loops, best of 3: 72.2 \u00b5s per loop\n\n#main\nsage: %timeit M[3]\n10000 loops, best of 3: 72.9 \u00b5s per loop\n```\n \n\nI'm not posting speed comparisons using the other cases (ie, `M[:3,2:]`) since sage doesn't handle them right now.\n\nIf people think this speed loss is unacceptable, I could try to fold the extra functionality into the `submatrix` method instead which would leave `__getitem__` idem. \n\n\n2355.patch is updated. Warning: I've added a new file: `ext/python_slice.pxi` to have fast access to slice objects so the patch is a bit heavy and rebuilds everything ( nearly everything depends on python.pxi). Passes all tests in `matrix/`.",
     "created_at": "2008-03-22T01:21:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2355",
     "type": "issue_comment",
@@ -742,7 +742,7 @@ archive/issue_comments_015858.json:
 }
 ```
 
-Attachment
+Attachment [2355.patch](tarball://root/attachments/some-uuid/ticket2355/2355.patch) by dfdeshom created at 2008-03-22 01:21:30
 
 Replying to [comment:24 mabshoff]:
 > Hi, 
@@ -856,7 +856,7 @@ I note these were the best times.  In my tests for (1) the new source averaged f
 archive/issue_comments_015860.json:
 ```json
 {
-    "body": "Attachment\n\nApply on top of 2355.patch",
+    "body": "Attachment [trac_2355_fast.patch](tarball://root/attachments/some-uuid/ticket2355/trac_2355_fast.patch) by gfurnish created at 2008-03-25 23:35:13\n\nApply on top of 2355.patch",
     "created_at": "2008-03-25T23:35:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2355",
     "type": "issue_comment",
@@ -865,7 +865,7 @@ archive/issue_comments_015860.json:
 }
 ```
 
-Attachment
+Attachment [trac_2355_fast.patch](tarball://root/attachments/some-uuid/ticket2355/trac_2355_fast.patch) by gfurnish created at 2008-03-25 23:35:13
 
 Apply on top of 2355.patch
 

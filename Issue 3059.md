@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3059
 archive/issue_comments_021119.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [extcode-3059.patch](tarball://root/attachments/some-uuid/ticket3059/extcode-3059.patch) by was created at 2008-04-30 00:36:39",
     "created_at": "2008-04-30T00:36:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3059",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_021119.json:
 }
 ```
 
-Attachment
+Attachment [extcode-3059.patch](tarball://root/attachments/some-uuid/ticket3059/extcode-3059.patch) by was created at 2008-04-30 00:36:39
 
 
 
@@ -49,7 +49,7 @@ Attachment
 archive/issue_comments_021120.json:
 ```json
 {
-    "body": "Attachment\n\nThe two patches turn ssl off by default, make logins required by default no matter what, print a big warning in a worrisome case, use a token to automate the first login, and fill in the admin username if it is the only possible username.",
+    "body": "Attachment [sage-3059.patch](tarball://root/attachments/some-uuid/ticket3059/sage-3059.patch) by was created at 2008-04-30 00:37:43\n\nThe two patches turn ssl off by default, make logins required by default no matter what, print a big warning in a worrisome case, use a token to automate the first login, and fill in the admin username if it is the only possible username.",
     "created_at": "2008-04-30T00:37:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3059",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_021120.json:
 }
 ```
 
-Attachment
+Attachment [sage-3059.patch](tarball://root/attachments/some-uuid/ticket3059/sage-3059.patch) by was created at 2008-04-30 00:37:43
 
 The two patches turn ssl off by default, make logins required by default no matter what, print a big warning in a worrisome case, use a token to automate the first login, and fill in the admin username if it is the only possible username.
 
@@ -109,7 +109,7 @@ Second patch appears fine (modulo the security discussion) but I haven't tested 
 archive/issue_comments_021123.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3059-doc.patch](tarball://root/attachments/some-uuid/ticket3059/sage-3059-doc.patch) by TimothyClemans created at 2008-04-30 04:13:32",
     "created_at": "2008-04-30T04:13:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3059",
     "type": "issue_comment",
@@ -118,7 +118,7 @@ archive/issue_comments_021123.json:
 }
 ```
 
-Attachment
+Attachment [sage-3059-doc.patch](tarball://root/attachments/some-uuid/ticket3059/sage-3059-doc.patch) by TimothyClemans created at 2008-04-30 04:13:32
 
 
 

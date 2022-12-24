@@ -49,7 +49,7 @@ Resolution: fixed
 archive/issue_comments_006716.json:
 ```json
 {
-    "body": "Attachment\n\napplied to 2.8.12.rc0",
+    "body": "Attachment [trac1110.patch](tarball://root/attachments/some-uuid/ticket1110/trac1110.patch) by mabshoff created at 2007-11-06 22:10:01\n\napplied to 2.8.12.rc0",
     "created_at": "2007-11-06T22:10:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1110",
     "type": "issue_comment",
@@ -58,6 +58,6 @@ archive/issue_comments_006716.json:
 }
 ```
 
-Attachment
+Attachment [trac1110.patch](tarball://root/attachments/some-uuid/ticket1110/trac1110.patch) by mabshoff created at 2007-11-06 22:10:01
 
 applied to 2.8.12.rc0

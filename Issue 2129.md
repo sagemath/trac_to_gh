@@ -117,7 +117,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_013969.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_2129-scripts.patch](tarball://root/attachments/some-uuid/ticket2129/trac_2129-scripts.patch) by was created at 2009-01-24 13:57:14",
     "created_at": "2009-01-24T13:57:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2129",
     "type": "issue_comment",
@@ -126,7 +126,7 @@ archive/issue_comments_013969.json:
 }
 ```
 
-Attachment
+Attachment [trac_2129-scripts.patch](tarball://root/attachments/some-uuid/ticket2129/trac_2129-scripts.patch) by was created at 2009-01-24 13:57:14
 
 
 
@@ -155,7 +155,7 @@ I manually updated the patch for 3.4 and added trac_2129-scripts-v3_4.patch, but
 archive/issue_comments_013971.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_2129-scripts-v3_4.patch](tarball://root/attachments/some-uuid/ticket2129/trac_2129-scripts-v3_4.patch) by rhinton created at 2009-03-12 00:34:53",
     "created_at": "2009-03-12T00:34:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2129",
     "type": "issue_comment",
@@ -164,7 +164,7 @@ archive/issue_comments_013971.json:
 }
 ```
 
-Attachment
+Attachment [trac_2129-scripts-v3_4.patch](tarball://root/attachments/some-uuid/ticket2129/trac_2129-scripts-v3_4.patch) by rhinton created at 2009-03-12 00:34:53
 
 
 
@@ -173,7 +173,7 @@ Attachment
 archive/issue_comments_013972.json:
 ```json
 {
-    "body": "Attachment\n\n.spyx file with a doctest that fails (since previous doctesting blithely reported all tests pass)",
+    "body": "Attachment [trac_2129.spyx](tarball://root/attachments/some-uuid/ticket2129/trac_2129.spyx) by rhinton created at 2009-03-13 15:47:29\n\n.spyx file with a doctest that fails (since previous doctesting blithely reported all tests pass)",
     "created_at": "2009-03-13T15:47:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2129",
     "type": "issue_comment",
@@ -182,7 +182,7 @@ archive/issue_comments_013972.json:
 }
 ```
 
-Attachment
+Attachment [trac_2129.spyx](tarball://root/attachments/some-uuid/ticket2129/trac_2129.spyx) by rhinton created at 2009-03-13 15:47:29
 
 .spyx file with a doctest that fails (since previous doctesting blithely reported all tests pass)
 

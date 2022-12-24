@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8355
 archive/issue_comments_074623.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8355-hue.patch](tarball://root/attachments/some-uuid/ticket8355/8355-hue.patch) by boothby created at 2010-04-02 00:31:57",
     "created_at": "2010-04-02T00:31:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8355",
     "type": "issue_comment",
@@ -49,7 +49,7 @@ archive/issue_comments_074623.json:
 }
 ```
 
-Attachment
+Attachment [8355-hue.patch](tarball://root/attachments/some-uuid/ticket8355/8355-hue.patch) by boothby created at 2010-04-02 00:31:57
 
 
 
@@ -263,7 +263,7 @@ hue doctest which applies to sage-4.6.1.rc1
 archive/issue_comments_074635.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.",
+    "body": "Attachment [8355-hue.2.patch](tarball://root/attachments/some-uuid/ticket8355/8355-hue.2.patch) by wjp created at 2011-01-09 23:15:11\n\nLooks good to me.",
     "created_at": "2011-01-09T23:15:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8355",
     "type": "issue_comment",
@@ -272,7 +272,7 @@ archive/issue_comments_074635.json:
 }
 ```
 
-Attachment
+Attachment [8355-hue.2.patch](tarball://root/attachments/some-uuid/ticket8355/8355-hue.2.patch) by wjp created at 2011-01-09 23:15:11
 
 Looks good to me.
 
@@ -391,7 +391,7 @@ Use only this patch
 archive/issue_comments_074642.json:
 ```json
 {
-    "body": "Attachment\n\nThis should fix this.  Apply only 8355-hue.2.2.patch",
+    "body": "Attachment [8355-hue.2.2.patch](tarball://root/attachments/some-uuid/ticket8355/8355-hue.2.2.patch) by kcrisman created at 2011-01-17 21:01:16\n\nThis should fix this.  Apply only 8355-hue.2.2.patch",
     "created_at": "2011-01-17T21:01:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8355",
     "type": "issue_comment",
@@ -400,7 +400,7 @@ archive/issue_comments_074642.json:
 }
 ```
 
-Attachment
+Attachment [8355-hue.2.2.patch](tarball://root/attachments/some-uuid/ticket8355/8355-hue.2.2.patch) by kcrisman created at 2011-01-17 21:01:16
 
 This should fix this.  Apply only 8355-hue.2.2.patch
 

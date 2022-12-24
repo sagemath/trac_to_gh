@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5453
 archive/issue_comments_042224.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5453.patch](tarball://root/attachments/some-uuid/ticket5453/trac_5453.patch) by mhansen created at 2009-03-07 19:14:08",
     "created_at": "2009-03-07T19:14:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5453",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_042224.json:
 }
 ```
 
-Attachment
+Attachment [trac_5453.patch](tarball://root/attachments/some-uuid/ticket5453/trac_5453.patch) by mhansen created at 2009-03-07 19:14:08
 
 
 
@@ -700,7 +700,7 @@ This patch removes some print commands that I forgot to remove after debugging. 
 archive/issue_comments_042242.json:
 ```json
 {
-    "body": "Attachment\n\nI forgot one change w.r.t. your implementation: Division is not implemented except for scalar divisors.\n\nContinuing the example from above:\n\n```\nsage: p/X(3)\n1/3*y2^3*x10 + 2/3*y3*x1\nsage: p/p\nNotImplementedError                       Traceback (most recent call last)\n...\nNotImplementedError: Fraction Fields of Symmetric Polynomial Rings are not implemented\n```\n\n\nCheers,\n    Simon",
+    "body": "Attachment [symmetric_polynomial_update.patch](tarball://root/attachments/some-uuid/ticket5453/symmetric_polynomial_update.patch) by SimonKing created at 2009-03-13 10:44:55\n\nI forgot one change w.r.t. your implementation: Division is not implemented except for scalar divisors.\n\nContinuing the example from above:\n\n```\nsage: p/X(3)\n1/3*y2^3*x10 + 2/3*y3*x1\nsage: p/p\nNotImplementedError                       Traceback (most recent call last)\n...\nNotImplementedError: Fraction Fields of Symmetric Polynomial Rings are not implemented\n```\n\n\nCheers,\n    Simon",
     "created_at": "2009-03-13T10:44:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5453",
     "type": "issue_comment",
@@ -709,7 +709,7 @@ archive/issue_comments_042242.json:
 }
 ```
 
-Attachment
+Attachment [symmetric_polynomial_update.patch](tarball://root/attachments/some-uuid/ticket5453/symmetric_polynomial_update.patch) by SimonKing created at 2009-03-13 10:44:55
 
 I forgot one change w.r.t. your implementation: Division is not implemented except for scalar divisors.
 
@@ -758,7 +758,7 @@ Cheers,
 archive/issue_comments_042244.json:
 ```json
 {
-    "body": "Attachment\n\nTo be applied after mhansen's patch. Replaces the other 'symmetric polynomial' patches",
+    "body": "Attachment [symmetric_polynomial.patch](tarball://root/attachments/some-uuid/ticket5453/symmetric_polynomial.patch) by SimonKing created at 2009-03-13 20:09:45\n\nTo be applied after mhansen's patch. Replaces the other 'symmetric polynomial' patches",
     "created_at": "2009-03-13T20:09:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5453",
     "type": "issue_comment",
@@ -767,7 +767,7 @@ archive/issue_comments_042244.json:
 }
 ```
 
-Attachment
+Attachment [symmetric_polynomial.patch](tarball://root/attachments/some-uuid/ticket5453/symmetric_polynomial.patch) by SimonKing created at 2009-03-13 20:09:45
 
 To be applied after mhansen's patch. Replaces the other 'symmetric polynomial' patches
 

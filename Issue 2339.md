@@ -168,7 +168,7 @@ should fix the problem
 archive/issue_comments_015642.json:
 ```json
 {
-    "body": "Attachment\n\nLooks okay to me, although I don't understand the purpose of the change from\n\n\n```\nG = Graphics() \nfor i in range(0, len(funcs)): \n```\n\n\nto\n\n\n```\nG = plot(funcs[0], (xmin, xmax), polar=polar, **kwds) \nfor i in range(1, len(funcs)): \n```\n",
+    "body": "Attachment [trac_2339_try1.patch](tarball://root/attachments/some-uuid/ticket2339/trac_2339_try1.patch) by jhpalmieri created at 2008-06-11 23:58:20\n\nLooks okay to me, although I don't understand the purpose of the change from\n\n\n```\nG = Graphics() \nfor i in range(0, len(funcs)): \n```\n\n\nto\n\n\n```\nG = plot(funcs[0], (xmin, xmax), polar=polar, **kwds) \nfor i in range(1, len(funcs)): \n```\n",
     "created_at": "2008-06-11T23:58:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2339",
     "type": "issue_comment",
@@ -177,7 +177,7 @@ archive/issue_comments_015642.json:
 }
 ```
 
-Attachment
+Attachment [trac_2339_try1.patch](tarball://root/attachments/some-uuid/ticket2339/trac_2339_try1.patch) by jhpalmieri created at 2008-06-11 23:58:20
 
 Looks okay to me, although I don't understand the purpose of the change from
 
@@ -356,7 +356,7 @@ new version of 2399 patch, fixing problem when xmin > xmax
 archive/issue_comments_015649.json:
 ```json
 {
-    "body": "Attachment\n\nBy the way, my patch supersedes Marshall's, but he should get credit for most of the work.  (Is it better to have one patch, for easier installation, or two, to make sure the right people get credit for their work?)\n\nOne question: in my patch, as I described, if you call plot with arguments xmin=10 and xmax=0, then the plot gets drawn between x=0 and x=10, with no error message.  Is this the best behavior, or should an exception be raised instead?",
+    "body": "Attachment [2339-new.patch](tarball://root/attachments/some-uuid/ticket2339/2339-new.patch) by jhpalmieri created at 2008-07-08 19:17:19\n\nBy the way, my patch supersedes Marshall's, but he should get credit for most of the work.  (Is it better to have one patch, for easier installation, or two, to make sure the right people get credit for their work?)\n\nOne question: in my patch, as I described, if you call plot with arguments xmin=10 and xmax=0, then the plot gets drawn between x=0 and x=10, with no error message.  Is this the best behavior, or should an exception be raised instead?",
     "created_at": "2008-07-08T19:17:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2339",
     "type": "issue_comment",
@@ -365,7 +365,7 @@ archive/issue_comments_015649.json:
 }
 ```
 
-Attachment
+Attachment [2339-new.patch](tarball://root/attachments/some-uuid/ticket2339/2339-new.patch) by jhpalmieri created at 2008-07-08 19:17:19
 
 By the way, my patch supersedes Marshall's, but he should get credit for most of the work.  (Is it better to have one patch, for easier installation, or two, to make sure the right people get credit for their work?)
 
@@ -503,7 +503,7 @@ Rebased to 3.2.alpha0
 archive/issue_comments_015656.json:
 ```json
 {
-    "body": "Attachment\n\nThis is a simple change that seems to solve the problem, positive review.",
+    "body": "Attachment [2339-3.2.alpha0.patch](tarball://root/attachments/some-uuid/ticket2339/2339-3.2.alpha0.patch) by mhampton created at 2008-10-22 19:23:19\n\nThis is a simple change that seems to solve the problem, positive review.",
     "created_at": "2008-10-22T19:23:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2339",
     "type": "issue_comment",
@@ -512,7 +512,7 @@ archive/issue_comments_015656.json:
 }
 ```
 
-Attachment
+Attachment [2339-3.2.alpha0.patch](tarball://root/attachments/some-uuid/ticket2339/2339-3.2.alpha0.patch) by mhampton created at 2008-10-22 19:23:19
 
 This is a simple change that seems to solve the problem, positive review.
 

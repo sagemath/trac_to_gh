@@ -58,7 +58,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3739
 archive/issue_comments_026566.json:
 ```json
 {
-    "body": "Attachment\n\nsmall followup when refereeing patch",
+    "body": "Attachment [sage-3739-part2.patch](tarball://root/attachments/some-uuid/ticket3739/sage-3739-part2.patch) by was created at 2008-07-29 21:57:22\n\nsmall followup when refereeing patch",
     "created_at": "2008-07-29T21:57:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3739",
     "type": "issue_comment",
@@ -67,7 +67,7 @@ archive/issue_comments_026566.json:
 }
 ```
 
-Attachment
+Attachment [sage-3739-part2.patch](tarball://root/attachments/some-uuid/ticket3739/sage-3739-part2.patch) by was created at 2008-07-29 21:57:22
 
 small followup when refereeing patch
 

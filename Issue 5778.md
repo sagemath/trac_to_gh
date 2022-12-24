@@ -1353,7 +1353,7 @@ Replying to [comment:47 mabshoff]:
 archive/issue_comments_045234.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [padic_doctests_1.patch](tarball://root/attachments/some-uuid/ticket5778/padic_doctests_1.patch) by roed created at 2009-05-11 09:20:31",
     "created_at": "2009-05-11T09:20:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
@@ -1362,7 +1362,7 @@ archive/issue_comments_045234.json:
 }
 ```
 
-Attachment
+Attachment [padic_doctests_1.patch](tarball://root/attachments/some-uuid/ticket5778/padic_doctests_1.patch) by roed created at 2009-05-11 09:20:31
 
 
 
@@ -1371,7 +1371,7 @@ Attachment
 archive/issue_comments_045235.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [padic_doctests_3.patch](tarball://root/attachments/some-uuid/ticket5778/padic_doctests_3.patch) by roed created at 2009-05-11 09:20:43",
     "created_at": "2009-05-11T09:20:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
@@ -1380,7 +1380,7 @@ archive/issue_comments_045235.json:
 }
 ```
 
-Attachment
+Attachment [padic_doctests_3.patch](tarball://root/attachments/some-uuid/ticket5778/padic_doctests_3.patch) by roed created at 2009-05-11 09:20:43
 
 
 
@@ -1389,7 +1389,7 @@ Attachment
 archive/issue_comments_045236.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [padic_referee_fixes.patch](tarball://root/attachments/some-uuid/ticket5778/padic_referee_fixes.patch) by roed created at 2009-05-11 09:21:41",
     "created_at": "2009-05-11T09:21:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
@@ -1398,7 +1398,7 @@ archive/issue_comments_045236.json:
 }
 ```
 
-Attachment
+Attachment [padic_referee_fixes.patch](tarball://root/attachments/some-uuid/ticket5778/padic_referee_fixes.patch) by roed created at 2009-05-11 09:21:41
 
 
 
@@ -1407,7 +1407,7 @@ Attachment
 archive/issue_comments_045237.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [padic_referee_fixes_2.patch](tarball://root/attachments/some-uuid/ticket5778/padic_referee_fixes_2.patch) by roed created at 2009-05-11 10:16:50",
     "created_at": "2009-05-11T10:16:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
@@ -1416,7 +1416,7 @@ archive/issue_comments_045237.json:
 }
 ```
 
-Attachment
+Attachment [padic_referee_fixes_2.patch](tarball://root/attachments/some-uuid/ticket5778/padic_referee_fixes_2.patch) by roed created at 2009-05-11 10:16:50
 
 
 
@@ -1425,7 +1425,7 @@ Attachment
 archive/issue_comments_045238.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [padic_doctests_deletions.patch](tarball://root/attachments/some-uuid/ticket5778/padic_doctests_deletions.patch) by roed created at 2009-05-11 10:19:29",
     "created_at": "2009-05-11T10:19:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
@@ -1434,7 +1434,7 @@ archive/issue_comments_045238.json:
 }
 ```
 
-Attachment
+Attachment [padic_doctests_deletions.patch](tarball://root/attachments/some-uuid/ticket5778/padic_doctests_deletions.patch) by roed created at 2009-05-11 10:19:29
 
 
 
@@ -1443,7 +1443,7 @@ Attachment
 archive/issue_comments_045239.json:
 ```json
 {
-    "body": "Attachment\n\nI am giving this ticket a positive review in RobertWB's name. It now passes all doctests on sage.math, it applies and builds, so any more concerns should be addressed via followup tickets. Post merge we are definitely in better shape than before and given the size of this patch it seems like a good idea to get this in. With all 8 patches applied:\n\n```\nOverall weighted coverage score:  74.4%\nTotal number of functions:  21967\nWe need  133 more function to get to 75% coverage.\n```\n",
+    "body": "Attachment [padic_doctests_outside.patch](tarball://root/attachments/some-uuid/ticket5778/padic_doctests_outside.patch) by mabshoff created at 2009-05-11 10:38:11\n\nI am giving this ticket a positive review in RobertWB's name. It now passes all doctests on sage.math, it applies and builds, so any more concerns should be addressed via followup tickets. Post merge we are definitely in better shape than before and given the size of this patch it seems like a good idea to get this in. With all 8 patches applied:\n\n```\nOverall weighted coverage score:  74.4%\nTotal number of functions:  21967\nWe need  133 more function to get to 75% coverage.\n```\n",
     "created_at": "2009-05-11T10:38:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
@@ -1452,7 +1452,7 @@ archive/issue_comments_045239.json:
 }
 ```
 
-Attachment
+Attachment [padic_doctests_outside.patch](tarball://root/attachments/some-uuid/ticket5778/padic_doctests_outside.patch) by mabshoff created at 2009-05-11 10:38:11
 
 I am giving this ticket a positive review in RobertWB's name. It now passes all doctests on sage.math, it applies and builds, so any more concerns should be addressed via followup tickets. Post merge we are definitely in better shape than before and given the size of this patch it seems like a good idea to get this in. With all 8 patches applied:
 

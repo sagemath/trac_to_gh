@@ -51,7 +51,7 @@ convert FractionFieldElements to magma
 archive/issue_comments_022775.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.",
+    "body": "Attachment [fraction_field_element_magma.patch](tarball://root/attachments/some-uuid/ticket3292/fraction_field_element_magma.patch) by mhansen created at 2008-05-24 17:23:12\n\nLooks good to me.",
     "created_at": "2008-05-24T17:23:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3292",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_022775.json:
 }
 ```
 
-Attachment
+Attachment [fraction_field_element_magma.patch](tarball://root/attachments/some-uuid/ticket3292/fraction_field_element_magma.patch) by mhansen created at 2008-05-24 17:23:12
 
 Looks good to me.
 

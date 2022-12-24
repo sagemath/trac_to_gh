@@ -49,7 +49,7 @@ based on Sage 4.1.1.rc2
 archive/issue_comments_055024.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6696-spell-check-finance.patch](tarball://root/attachments/some-uuid/ticket6696/trac_6696-spell-check-finance.patch) by mvngu created at 2009-08-09 06:46:30",
     "created_at": "2009-08-09T06:46:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6696",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_055024.json:
 }
 ```
 
-Attachment
+Attachment [trac_6696-spell-check-finance.patch](tarball://root/attachments/some-uuid/ticket6696/trac_6696-spell-check-finance.patch) by mvngu created at 2009-08-09 06:46:30
 
 
 

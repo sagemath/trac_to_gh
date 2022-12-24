@@ -140,7 +140,7 @@ Jaap
 archive/issue_comments_067003.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [test.log](tarball://root/attachments/some-uuid/ticket7773/test.log) by GokhanSever created at 2010-01-28 04:53:00",
     "created_at": "2010-01-28T04:53:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7773",
     "type": "issue_comment",
@@ -149,7 +149,7 @@ archive/issue_comments_067003.json:
 }
 ```
 
-Attachment
+Attachment [test.log](tarball://root/attachments/some-uuid/ticket7773/test.log) by GokhanSever created at 2010-01-28 04:53:00
 
 
 

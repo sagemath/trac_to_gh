@@ -362,7 +362,7 @@ Apply after previous
 archive/issue_comments_087018.json:
 ```json
 {
-    "body": "Attachment\n\nMy patch solves the issue with annoying output of warnings from saturation, since we now use a higher bound for saturation primes in finding the gens of an elliptic curve.  (This provides useful functionality as well as fixing this particular case).\n\nThe other issues remain, but I think that Robert could review my patch!",
+    "body": "Attachment [trac_9247-saturation.patch](tarball://root/attachments/some-uuid/ticket9247/trac_9247-saturation.patch) by cremona created at 2010-06-25 06:17:32\n\nMy patch solves the issue with annoying output of warnings from saturation, since we now use a higher bound for saturation primes in finding the gens of an elliptic curve.  (This provides useful functionality as well as fixing this particular case).\n\nThe other issues remain, but I think that Robert could review my patch!",
     "created_at": "2010-06-25T06:17:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
@@ -371,7 +371,7 @@ archive/issue_comments_087018.json:
 }
 ```
 
-Attachment
+Attachment [trac_9247-saturation.patch](tarball://root/attachments/some-uuid/ticket9247/trac_9247-saturation.patch) by cremona created at 2010-06-25 06:17:32
 
 My patch solves the issue with annoying output of warnings from saturation, since we now use a higher bound for saturation primes in finding the gens of an elliptic curve.  (This provides useful functionality as well as fixing this particular case).
 
@@ -502,7 +502,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_087025.json:
 ```json
 {
-    "body": "Attachment\n\nOkay, I've changed the default for elliptic curve modular symbols back to what it originally was. Now all tests pass, and this ticket is ready for a review.",
+    "body": "Attachment [trac_9247.patch](tarball://root/attachments/some-uuid/ticket9247/trac_9247.patch) by rlm created at 2010-07-17 15:04:31\n\nOkay, I've changed the default for elliptic curve modular symbols back to what it originally was. Now all tests pass, and this ticket is ready for a review.",
     "created_at": "2010-07-17T15:04:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
@@ -511,7 +511,7 @@ archive/issue_comments_087025.json:
 }
 ```
 
-Attachment
+Attachment [trac_9247.patch](tarball://root/attachments/some-uuid/ticket9247/trac_9247.patch) by rlm created at 2010-07-17 15:04:31
 
 Okay, I've changed the default for elliptic curve modular symbols back to what it originally was. Now all tests pass, and this ticket is ready for a review.
 

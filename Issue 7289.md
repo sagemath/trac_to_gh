@@ -71,7 +71,7 @@ Nathann
 archive/issue_comments_060689.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7289-rebased.patch](tarball://root/attachments/some-uuid/ticket7289/trac_7289-rebased.patch) by rlm created at 2010-06-18 23:06:42",
     "created_at": "2010-06-18T23:06:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7289",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_060689.json:
 }
 ```
 
-Attachment
+Attachment [trac_7289-rebased.patch](tarball://root/attachments/some-uuid/ticket7289/trac_7289-rebased.patch) by rlm created at 2010-06-18 23:06:42
 
 
 
@@ -89,7 +89,7 @@ Attachment
 archive/issue_comments_060690.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.\n\nApply attachment:trac_7289-rebased.patch and attachment:trac_7289-part2.patch\n\nNathann, Can I get your approval for the second patch? Switch it to positive if you're happy with it.",
+    "body": "Attachment [trac_7289-part2.patch](tarball://root/attachments/some-uuid/ticket7289/trac_7289-part2.patch) by rlm created at 2010-06-18 23:30:38\n\nLooks good to me.\n\nApply attachment:trac_7289-rebased.patch and attachment:trac_7289-part2.patch\n\nNathann, Can I get your approval for the second patch? Switch it to positive if you're happy with it.",
     "created_at": "2010-06-18T23:30:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7289",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_060690.json:
 }
 ```
 
-Attachment
+Attachment [trac_7289-part2.patch](tarball://root/attachments/some-uuid/ticket7289/trac_7289-part2.patch) by rlm created at 2010-06-18 23:30:38
 
 Looks good to me.
 

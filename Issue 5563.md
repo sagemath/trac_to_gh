@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5563
 archive/issue_comments_043298.json:
 ```json
 {
-    "body": "Attachment\n\npatch against Sage 3.4",
+    "body": "Attachment [sloane_find_optional.patch](tarball://root/attachments/some-uuid/ticket5563/sloane_find_optional.patch) by GeorgSWeber created at 2009-03-18 23:38:06\n\npatch against Sage 3.4",
     "created_at": "2009-03-18T23:38:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5563",
     "type": "issue_comment",
@@ -41,7 +41,7 @@ archive/issue_comments_043298.json:
 }
 ```
 
-Attachment
+Attachment [sloane_find_optional.patch](tarball://root/attachments/some-uuid/ticket5563/sloane_find_optional.patch) by GeorgSWeber created at 2009-03-18 23:38:06
 
 patch against Sage 3.4
 

@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2499
 archive/issue_comments_016940.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-2499_cython.patch](tarball://root/attachments/some-uuid/ticket2499/sage-2499_cython.patch) by was created at 2008-03-12 16:26:40",
     "created_at": "2008-03-12T16:26:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2499",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_016940.json:
 }
 ```
 
-Attachment
+Attachment [sage-2499_cython.patch](tarball://root/attachments/some-uuid/ticket2499/sage-2499_cython.patch) by was created at 2008-03-12 16:26:40
 
 
 
@@ -71,7 +71,7 @@ Positive review, in any case.
 archive/issue_comments_016942.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-2499_OSError.patch](tarball://root/attachments/some-uuid/ticket2499/sage-2499_OSError.patch) by wjp created at 2008-03-14 16:57:43",
     "created_at": "2008-03-14T16:57:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2499",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_016942.json:
 }
 ```
 
-Attachment
+Attachment [sage-2499_OSError.patch](tarball://root/attachments/some-uuid/ticket2499/sage-2499_OSError.patch) by wjp created at 2008-03-14 16:57:43
 
 
 

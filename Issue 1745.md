@@ -353,7 +353,7 @@ old P^3,B=10
 archive/issue_comments_011020.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [rationalpoints01.hg](tarball://root/attachments/some-uuid/ticket1745/rationalpoints01.hg) by was created at 2008-01-13 01:08:26",
     "created_at": "2008-01-13T01:08:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1745",
     "type": "issue_comment",
@@ -362,7 +362,7 @@ archive/issue_comments_011020.json:
 }
 ```
 
-Attachment
+Attachment [rationalpoints01.hg](tarball://root/attachments/some-uuid/ticket1745/rationalpoints01.hg) by was created at 2008-01-13 01:08:26
 
 
 

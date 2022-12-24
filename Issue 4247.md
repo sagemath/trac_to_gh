@@ -45,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4247
 archive/issue_comments_030879.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-4247.patch](tarball://root/attachments/some-uuid/ticket4247/trac-4247.patch) by was created at 2008-10-06 21:39:56",
     "created_at": "2008-10-06T21:39:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4247",
     "type": "issue_comment",
@@ -54,7 +54,7 @@ archive/issue_comments_030879.json:
 }
 ```
 
-Attachment
+Attachment [trac-4247.patch](tarball://root/attachments/some-uuid/ticket4247/trac-4247.patch) by was created at 2008-10-06 21:39:56
 
 
 
@@ -63,7 +63,7 @@ Attachment
 archive/issue_comments_030880.json:
 ```json
 {
-    "body": "Attachment\n\nApply only trac_4247.patch -- it is rebased against the latest plot.py.  Otherwise, it looks good to me.",
+    "body": "Attachment [trac_4247.patch](tarball://root/attachments/some-uuid/ticket4247/trac_4247.patch) by mhansen created at 2008-10-06 21:53:05\n\nApply only trac_4247.patch -- it is rebased against the latest plot.py.  Otherwise, it looks good to me.",
     "created_at": "2008-10-06T21:53:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4247",
     "type": "issue_comment",
@@ -72,7 +72,7 @@ archive/issue_comments_030880.json:
 }
 ```
 
-Attachment
+Attachment [trac_4247.patch](tarball://root/attachments/some-uuid/ticket4247/trac_4247.patch) by mhansen created at 2008-10-06 21:53:05
 
 Apply only trac_4247.patch -- it is rebased against the latest plot.py.  Otherwise, it looks good to me.
 

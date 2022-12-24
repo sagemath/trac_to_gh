@@ -50,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9294
 archive/issue_comments_087518.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [js-except-fix.diff](tarball://root/attachments/some-uuid/ticket9294/js-except-fix.diff) by hemmecke created at 2010-06-21 09:36:54",
     "created_at": "2010-06-21T09:36:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9294",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_087518.json:
 }
 ```
 
-Attachment
+Attachment [js-except-fix.diff](tarball://root/attachments/some-uuid/ticket9294/js-except-fix.diff) by hemmecke created at 2010-06-21 09:36:54
 
 
 

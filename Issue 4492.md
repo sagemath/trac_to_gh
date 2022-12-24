@@ -166,7 +166,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_033185.json:
 ```json
 {
-    "body": "Attachment\n\nRobert Bradshaw suggested adding an example that explicitly shows zero blocks may be non-square. I added a patch that adds that to the docstring of `block_matrix`.",
+    "body": "Attachment [4492_doctest_nonsquare0_block.patch](tarball://root/attachments/some-uuid/ticket4492/4492_doctest_nonsquare0_block.patch) by wjp created at 2010-01-19 18:19:40\n\nRobert Bradshaw suggested adding an example that explicitly shows zero blocks may be non-square. I added a patch that adds that to the docstring of `block_matrix`.",
     "created_at": "2010-01-19T18:19:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
@@ -175,7 +175,7 @@ archive/issue_comments_033185.json:
 }
 ```
 
-Attachment
+Attachment [4492_doctest_nonsquare0_block.patch](tarball://root/attachments/some-uuid/ticket4492/4492_doctest_nonsquare0_block.patch) by wjp created at 2010-01-19 18:19:40
 
 Robert Bradshaw suggested adding an example that explicitly shows zero blocks may be non-square. I added a patch that adds that to the docstring of `block_matrix`.
 
@@ -204,7 +204,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_033187.json:
 ```json
 {
-    "body": "Attachment\n\napply *only* this patch (don't apply wjp's)",
+    "body": "Attachment [trac_4492.patch](tarball://root/attachments/some-uuid/ticket4492/trac_4492.patch) by was created at 2010-01-26 18:56:59\n\napply *only* this patch (don't apply wjp's)",
     "created_at": "2010-01-26T18:56:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
@@ -213,7 +213,7 @@ archive/issue_comments_033187.json:
 }
 ```
 
-Attachment
+Attachment [trac_4492.patch](tarball://root/attachments/some-uuid/ticket4492/trac_4492.patch) by was created at 2010-01-26 18:56:59
 
 apply *only* this patch (don't apply wjp's)
 
@@ -433,7 +433,7 @@ The following tests failed:
 archive/issue_comments_033197.json:
 ```json
 {
-    "body": "Attachment\n\nblock_matrix rewrite. Replaces all previous patches.",
+    "body": "Attachment [4492_block_matrix.patch](tarball://root/attachments/some-uuid/ticket4492/4492_block_matrix.patch) by wjp created at 2011-01-12 21:55:41\n\nblock_matrix rewrite. Replaces all previous patches.",
     "created_at": "2011-01-12T21:55:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
@@ -442,7 +442,7 @@ archive/issue_comments_033197.json:
 }
 ```
 
-Attachment
+Attachment [4492_block_matrix.patch](tarball://root/attachments/some-uuid/ticket4492/4492_block_matrix.patch) by wjp created at 2011-01-12 21:55:41
 
 block_matrix rewrite. Replaces all previous patches.
 
@@ -489,7 +489,7 @@ Oops, sorry about that. New patch up that fixes those.
 archive/issue_comments_033200.json:
 ```json
 {
-    "body": "Attachment\n\nLooks real nice.  I've added some edits in a reviewer patch.\n\nI'll run full tests overnight (with reviewer patch), and then will be ready to give this a positive review (subject to acceptance of my reviewer edits).",
+    "body": "Attachment [trac_4492-block-matrix-reviewer.patch](tarball://root/attachments/some-uuid/ticket4492/trac_4492-block-matrix-reviewer.patch) by rbeezer created at 2011-01-13 06:30:46\n\nLooks real nice.  I've added some edits in a reviewer patch.\n\nI'll run full tests overnight (with reviewer patch), and then will be ready to give this a positive review (subject to acceptance of my reviewer edits).",
     "created_at": "2011-01-13T06:30:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
@@ -498,7 +498,7 @@ archive/issue_comments_033200.json:
 }
 ```
 
-Attachment
+Attachment [trac_4492-block-matrix-reviewer.patch](tarball://root/attachments/some-uuid/ticket4492/trac_4492-block-matrix-reviewer.patch) by rbeezer created at 2011-01-13 06:30:46
 
 Looks real nice.  I've added some edits in a reviewer patch.
 
@@ -533,7 +533,7 @@ Rob
 archive/issue_comments_033202.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4492_typo.patch](tarball://root/attachments/some-uuid/ticket4492/4492_typo.patch) by wjp created at 2011-01-13 18:54:31",
     "created_at": "2011-01-13T18:54:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
@@ -542,7 +542,7 @@ archive/issue_comments_033202.json:
 }
 ```
 
-Attachment
+Attachment [4492_typo.patch](tarball://root/attachments/some-uuid/ticket4492/4492_typo.patch) by wjp created at 2011-01-13 18:54:31
 
 
 
@@ -697,7 +697,7 @@ rebased to 4.6.2.alpha1
 archive/issue_comments_033211.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4492_block_matrix_rebased.patch](tarball://root/attachments/some-uuid/ticket4492/4492_block_matrix_rebased.patch) by wjp created at 2011-01-25 09:23:47",
     "created_at": "2011-01-25T09:23:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
@@ -706,7 +706,7 @@ archive/issue_comments_033211.json:
 }
 ```
 
-Attachment
+Attachment [4492_block_matrix_rebased.patch](tarball://root/attachments/some-uuid/ticket4492/4492_block_matrix_rebased.patch) by wjp created at 2011-01-25 09:23:47
 
 
 
@@ -751,7 +751,7 @@ Rebased patch attached. (No actual changes, just the context of one of the hunks
 archive/issue_comments_033214.json:
 ```json
 {
-    "body": "Attachment\n\nRebased patches apply fine and Sage builds.\n\nHowever 3 doctests fail.  These can be traced to #10433 that snuck into 4.6.2.alpha1 while this was in-progress.  ;-)  Specifically one 2x2 block matrix built at line 2366 of `sage/rings/number_field/number_field_ideal.py`\n\nLatest patch rearranges the block matrix construction to meet new requirements for more explicit lists for the block matrix.  I've cc'ed David Loeffler if he wants to check off on just that one change.  Passes all tests now in sage/rings.  All work here is on 4.6.2.alpha1.\n\nWould somebody like to retest the whole package now?",
+    "body": "Attachment [trac_4492-doctest-number-field.patch](tarball://root/attachments/some-uuid/ticket4492/trac_4492-doctest-number-field.patch) by rbeezer created at 2011-01-26 00:38:45\n\nRebased patches apply fine and Sage builds.\n\nHowever 3 doctests fail.  These can be traced to #10433 that snuck into 4.6.2.alpha1 while this was in-progress.  ;-)  Specifically one 2x2 block matrix built at line 2366 of `sage/rings/number_field/number_field_ideal.py`\n\nLatest patch rearranges the block matrix construction to meet new requirements for more explicit lists for the block matrix.  I've cc'ed David Loeffler if he wants to check off on just that one change.  Passes all tests now in sage/rings.  All work here is on 4.6.2.alpha1.\n\nWould somebody like to retest the whole package now?",
     "created_at": "2011-01-26T00:38:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
@@ -760,7 +760,7 @@ archive/issue_comments_033214.json:
 }
 ```
 
-Attachment
+Attachment [trac_4492-doctest-number-field.patch](tarball://root/attachments/some-uuid/ticket4492/trac_4492-doctest-number-field.patch) by rbeezer created at 2011-01-26 00:38:45
 
 Rebased patches apply fine and Sage builds.
 

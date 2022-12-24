@@ -53,7 +53,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7822
 archive/issue_comments_067707.json:
 ```json
 {
-    "body": "Attachment\n\nmake py_log handle float arguments",
+    "body": "Attachment [trac_7822-py_log.patch](tarball://root/attachments/some-uuid/ticket7822/trac_7822-py_log.patch) by burcin created at 2010-01-03 01:30:15\n\nmake py_log handle float arguments",
     "created_at": "2010-01-03T01:30:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7822",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_067707.json:
 }
 ```
 
-Attachment
+Attachment [trac_7822-py_log.patch](tarball://root/attachments/some-uuid/ticket7822/trac_7822-py_log.patch) by burcin created at 2010-01-03 01:30:15
 
 make py_log handle float arguments
 
@@ -167,7 +167,7 @@ Also, there are an awful lot of "ln"s when I thought we were trying to get away 
 archive/issue_comments_067712.json:
 ```json
 {
-    "body": "Attachment\n\nsecond try, faster this time",
+    "body": "Attachment [trac_7822-py_log.take2.patch](tarball://root/attachments/some-uuid/ticket7822/trac_7822-py_log.take2.patch) by burcin created at 2010-01-17 01:12:05\n\nsecond try, faster this time",
     "created_at": "2010-01-17T01:12:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7822",
     "type": "issue_comment",
@@ -176,7 +176,7 @@ archive/issue_comments_067712.json:
 }
 ```
 
-Attachment
+Attachment [trac_7822-py_log.take2.patch](tarball://root/attachments/some-uuid/ticket7822/trac_7822-py_log.take2.patch) by burcin created at 2010-01-17 01:12:05
 
 second try, faster this time
 

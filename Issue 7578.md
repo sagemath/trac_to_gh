@@ -93,7 +93,7 @@ Improving basic arithmetic of infinite polynomial rings
 archive/issue_comments_064544.json:
 ```json
 {
-    "body": "Attachment\n\nWith the attached patch, the example improves a lot:\n\n```\nsage: X.<x> = InfinitePolynomialRing(QQ)\nsage: x10000 = x[10000]\nsage: x10001 = x[10001]\nsage: %time 1/2*x10000\nCPU times: user 7.37 s, sys: 0.01 s, total: 7.38 s\nWall time: 7.38 s\n1/2*x10000\n```\n\n\nOf course, this is still a shame. But it may be better than nothing.\n\nThe idea / reason for the slowness:\n\n* When x10001 is created, the underlying finite polynomial ring of X changes. At this point, the underlying finite polynomial of x10000 does not belong to the underlying ring of X anymore.\n* In the old code, the underlying finite polynomial of x10000 was not updated.\n* With the patch, it will be updated as soon as x10000 is involved in any multiplication, summation or difference.\n\nHence, the timing is essentially reduced to the time for conversion of the underlying polynomials; namely, after restarting sage (clearing the cache):\n\n```\nsage: X.<x> = InfinitePolynomialRing(QQ)\nsage: x10000 = x[10000]\nsage: x10001 = x[10001]\nsage: %time x10000._p = X._P(x10000._p)\nCPU times: user 6.90 s, sys: 0.01 s, total: 6.91 s\nWall time: 6.91 s\n```\n\n\nI don't think that this is a satisfying time, but it is some progress, and as long as element conversion for polynomial rings isn't improved, I see no way to do it better.",
+    "body": "Attachment [7578_basic_arithmetic.patch](tarball://root/attachments/some-uuid/ticket7578/7578_basic_arithmetic.patch) by SimonKing created at 2009-12-01 23:50:45\n\nWith the attached patch, the example improves a lot:\n\n```\nsage: X.<x> = InfinitePolynomialRing(QQ)\nsage: x10000 = x[10000]\nsage: x10001 = x[10001]\nsage: %time 1/2*x10000\nCPU times: user 7.37 s, sys: 0.01 s, total: 7.38 s\nWall time: 7.38 s\n1/2*x10000\n```\n\n\nOf course, this is still a shame. But it may be better than nothing.\n\nThe idea / reason for the slowness:\n\n* When x10001 is created, the underlying finite polynomial ring of X changes. At this point, the underlying finite polynomial of x10000 does not belong to the underlying ring of X anymore.\n* In the old code, the underlying finite polynomial of x10000 was not updated.\n* With the patch, it will be updated as soon as x10000 is involved in any multiplication, summation or difference.\n\nHence, the timing is essentially reduced to the time for conversion of the underlying polynomials; namely, after restarting sage (clearing the cache):\n\n```\nsage: X.<x> = InfinitePolynomialRing(QQ)\nsage: x10000 = x[10000]\nsage: x10001 = x[10001]\nsage: %time x10000._p = X._P(x10000._p)\nCPU times: user 6.90 s, sys: 0.01 s, total: 6.91 s\nWall time: 6.91 s\n```\n\n\nI don't think that this is a satisfying time, but it is some progress, and as long as element conversion for polynomial rings isn't improved, I see no way to do it better.",
     "created_at": "2009-12-01T23:50:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7578",
     "type": "issue_comment",
@@ -102,7 +102,7 @@ archive/issue_comments_064544.json:
 }
 ```
 
-Attachment
+Attachment [7578_basic_arithmetic.patch](tarball://root/attachments/some-uuid/ticket7578/7578_basic_arithmetic.patch) by SimonKing created at 2009-12-01 23:50:45
 
 With the attached patch, the example improves a lot:
 

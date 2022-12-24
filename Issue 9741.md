@@ -36,7 +36,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9741
 archive/issue_comments_095373.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9741-graph-vertices-sort.patch](tarball://root/attachments/some-uuid/ticket9741/trac_9741-graph-vertices-sort.patch) by rbeezer created at 2010-08-13 17:26:38",
     "created_at": "2010-08-13T17:26:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9741",
     "type": "issue_comment",
@@ -45,7 +45,7 @@ archive/issue_comments_095373.json:
 }
 ```
 
-Attachment
+Attachment [trac_9741-graph-vertices-sort.patch](tarball://root/attachments/some-uuid/ticket9741/trac_9741-graph-vertices-sort.patch) by rbeezer created at 2010-08-13 17:26:38
 
 
 
@@ -141,7 +141,7 @@ Nathann
 archive/issue_comments_095378.json:
 ```json
 {
-    "body": "Attachment\n\nStandalone patch, apply only this",
+    "body": "Attachment [trac_9741-graph-vertices-sort-v2.patch](tarball://root/attachments/some-uuid/ticket9741/trac_9741-graph-vertices-sort-v2.patch) by rbeezer created at 2010-09-07 19:11:20\n\nStandalone patch, apply only this",
     "created_at": "2010-09-07T19:11:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9741",
     "type": "issue_comment",
@@ -150,7 +150,7 @@ archive/issue_comments_095378.json:
 }
 ```
 
-Attachment
+Attachment [trac_9741-graph-vertices-sort-v2.patch](tarball://root/attachments/some-uuid/ticket9741/trac_9741-graph-vertices-sort-v2.patch) by rbeezer created at 2010-09-07 19:11:20
 
 Standalone patch, apply only this
 

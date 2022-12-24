@@ -57,7 +57,7 @@ Changing priority from critical to blocker.
 archive/issue_comments_051376.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6394-graph_isom_fallout.patch](tarball://root/attachments/some-uuid/ticket6394/trac_6394-graph_isom_fallout.patch) by rlm created at 2009-06-24 19:26:57",
     "created_at": "2009-06-24T19:26:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6394",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_051376.json:
 }
 ```
 
-Attachment
+Attachment [trac_6394-graph_isom_fallout.patch](tarball://root/attachments/some-uuid/ticket6394/trac_6394-graph_isom_fallout.patch) by rlm created at 2009-06-24 19:26:57
 
 
 

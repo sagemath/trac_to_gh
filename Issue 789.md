@@ -208,7 +208,7 @@ HG bundle fixing the bug
 archive/issue_comments_004752.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [T789.hg](tarball://root/attachments/some-uuid/ticket789/T789.hg) by mhansen created at 2007-10-03 05:39:27",
     "created_at": "2007-10-03T05:39:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/789",
     "type": "issue_comment",
@@ -217,7 +217,7 @@ archive/issue_comments_004752.json:
 }
 ```
 
-Attachment
+Attachment [T789.hg](tarball://root/attachments/some-uuid/ticket789/T789.hg) by mhansen created at 2007-10-03 05:39:27
 
 
 

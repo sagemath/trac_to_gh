@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2249
 archive/issue_comments_014904.json:
 ```json
 {
-    "body": "Attachment\n\nOk, patch looks good and the issue should be fixed down the road by David Roe or somebody else working on p-adics.\n\nCheers,\n\nMichael",
+    "body": "Attachment [sage-2249.patch](tarball://root/attachments/some-uuid/ticket2249/sage-2249.patch) by mabshoff created at 2008-02-21 19:24:28\n\nOk, patch looks good and the issue should be fixed down the road by David Roe or somebody else working on p-adics.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-21T19:24:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2249",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_014904.json:
 }
 ```
 
-Attachment
+Attachment [sage-2249.patch](tarball://root/attachments/some-uuid/ticket2249/sage-2249.patch) by mabshoff created at 2008-02-21 19:24:28
 
 Ok, patch looks good and the issue should be fixed down the road by David Roe or somebody else working on p-adics.
 

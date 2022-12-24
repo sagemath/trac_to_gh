@@ -119,7 +119,7 @@ Expire cookies on logout.  sagenb repo.
 archive/issue_comments_072959.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached a patch that should delete both the test and notebook session cookies, when a user logs out.",
+    "body": "Attachment [trac_8249-notebook_cookies.patch](tarball://root/attachments/some-uuid/ticket8249/trac_8249-notebook_cookies.patch) by mpatel created at 2010-02-14 04:44:12\n\nI've attached a patch that should delete both the test and notebook session cookies, when a user logs out.",
     "created_at": "2010-02-14T04:44:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8249",
     "type": "issue_comment",
@@ -128,7 +128,7 @@ archive/issue_comments_072959.json:
 }
 ```
 
-Attachment
+Attachment [trac_8249-notebook_cookies.patch](tarball://root/attachments/some-uuid/ticket8249/trac_8249-notebook_cookies.patch) by mpatel created at 2010-02-14 04:44:12
 
 I've attached a patch that should delete both the test and notebook session cookies, when a user logs out.
 
@@ -249,7 +249,7 @@ Selenium errors with patch.  Same errors when the patch for #6069 -missing_pub_w
 archive/issue_comments_072966.json:
 ```json
 {
-    "body": "Attachment\n\nThanks for catching the Se test errors.  I should have checked.\n\nThe patch fixes for me the one cookie-related problem I could reproduce reliably:  Logging out in Chrom* displays a browser error page:\n\n\n```\nThis webpage has a redirect loop.\n\nThe webpage at http://localhost:8000/home/admin/ has resulted in too many redirects. Clearing your cookies for this site or allowing third-party cookies may fix the problem. If not, it is possibly a server configuration issue and not a problem with your computer.\n```\n\nBut with the patch, clicking on \"Sign Out\" just returns me to the login page.  I'm not sure if it helps with the reported problems, but making the cookies expire on logout seems logical.",
+    "body": "Attachment [trac_8249-notebook_cookies-selenium_errors.log](tarball://root/attachments/some-uuid/ticket8249/trac_8249-notebook_cookies-selenium_errors.log) by mpatel created at 2010-02-14 06:55:39\n\nThanks for catching the Se test errors.  I should have checked.\n\nThe patch fixes for me the one cookie-related problem I could reproduce reliably:  Logging out in Chrom* displays a browser error page:\n\n\n```\nThis webpage has a redirect loop.\n\nThe webpage at http://localhost:8000/home/admin/ has resulted in too many redirects. Clearing your cookies for this site or allowing third-party cookies may fix the problem. If not, it is possibly a server configuration issue and not a problem with your computer.\n```\n\nBut with the patch, clicking on \"Sign Out\" just returns me to the login page.  I'm not sure if it helps with the reported problems, but making the cookies expire on logout seems logical.",
     "created_at": "2010-02-14T06:55:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8249",
     "type": "issue_comment",
@@ -258,7 +258,7 @@ archive/issue_comments_072966.json:
 }
 ```
 
-Attachment
+Attachment [trac_8249-notebook_cookies-selenium_errors.log](tarball://root/attachments/some-uuid/ticket8249/trac_8249-notebook_cookies-selenium_errors.log) by mpatel created at 2010-02-14 06:55:39
 
 Thanks for catching the Se test errors.  I should have checked.
 
@@ -328,7 +328,7 @@ Adjust `close_callback` to make Se tests pass.  Apply only this patch.
 archive/issue_comments_072969.json:
 ```json
 {
-    "body": "Attachment\n\nV2 replaces `'/'` with `'/home/' + user_name` in `notebook_lib.js`'s `close_callback`.  Strangely, this seems to work.",
+    "body": "Attachment [trac_8249-notebook_cookies.2.patch](tarball://root/attachments/some-uuid/ticket8249/trac_8249-notebook_cookies.2.patch) by mpatel created at 2010-02-15 07:45:54\n\nV2 replaces `'/'` with `'/home/' + user_name` in `notebook_lib.js`'s `close_callback`.  Strangely, this seems to work.",
     "created_at": "2010-02-15T07:45:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8249",
     "type": "issue_comment",
@@ -337,7 +337,7 @@ archive/issue_comments_072969.json:
 }
 ```
 
-Attachment
+Attachment [trac_8249-notebook_cookies.2.patch](tarball://root/attachments/some-uuid/ticket8249/trac_8249-notebook_cookies.2.patch) by mpatel created at 2010-02-15 07:45:54
 
 V2 replaces `'/'` with `'/home/' + user_name` in `notebook_lib.js`'s `close_callback`.  Strangely, this seems to work.
 

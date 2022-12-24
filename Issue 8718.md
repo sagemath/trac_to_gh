@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8718
 archive/issue_comments_079566.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8718_map_over_polynomial.patch](tarball://root/attachments/some-uuid/ticket8718/trac_8718_map_over_polynomial.patch) by mmezzarobba created at 2010-05-17 19:50:52",
     "created_at": "2010-05-17T19:50:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8718",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_079566.json:
 }
 ```
 
-Attachment
+Attachment [trac_8718_map_over_polynomial.patch](tarball://root/attachments/some-uuid/ticket8718/trac_8718_map_over_polynomial.patch) by mmezzarobba created at 2010-05-17 19:50:52
 
 
 
@@ -267,7 +267,7 @@ adds map_coefficients()
 archive/issue_comments_079578.json:
 ```json
 {
-    "body": "Attachment\n\napply trac_8718.patch",
+    "body": "Attachment [trac_8718.patch](tarball://root/attachments/some-uuid/ticket8718/trac_8718.patch) by saraedum created at 2012-02-06 20:52:52\n\napply trac_8718.patch",
     "created_at": "2012-02-06T20:52:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8718",
     "type": "issue_comment",
@@ -276,7 +276,7 @@ archive/issue_comments_079578.json:
 }
 ```
 
-Attachment
+Attachment [trac_8718.patch](tarball://root/attachments/some-uuid/ticket8718/trac_8718.patch) by saraedum created at 2012-02-06 20:52:52
 
 apply trac_8718.patch
 
@@ -460,7 +460,7 @@ consider the codomain in map_coefficients for univariate polynomials
 archive/issue_comments_079588.json:
 ```json
 {
-    "body": "Attachment\n\nconsider the codomain in map_coefficients for multivariate polynomials",
+    "body": "Attachment [trac_8718_multivariate_codomain.patch](tarball://root/attachments/some-uuid/ticket8718/trac_8718_multivariate_codomain.patch) by saraedum created at 2012-02-19 17:43:58\n\nconsider the codomain in map_coefficients for multivariate polynomials",
     "created_at": "2012-02-19T17:43:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8718",
     "type": "issue_comment",
@@ -469,7 +469,7 @@ archive/issue_comments_079588.json:
 }
 ```
 
-Attachment
+Attachment [trac_8718_multivariate_codomain.patch](tarball://root/attachments/some-uuid/ticket8718/trac_8718_multivariate_codomain.patch) by saraedum created at 2012-02-19 17:43:58
 
 consider the codomain in map_coefficients for multivariate polynomials
 

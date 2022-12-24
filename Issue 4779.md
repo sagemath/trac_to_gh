@@ -76,7 +76,7 @@ This patch has zero overlap with anything else, so is fairly safe to apply.   Th
 archive/issue_comments_036222.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4779.patch](tarball://root/attachments/some-uuid/ticket4779/trac_4779.patch) by was created at 2008-12-31 02:37:09",
     "created_at": "2008-12-31T02:37:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4779",
     "type": "issue_comment",
@@ -85,7 +85,7 @@ archive/issue_comments_036222.json:
 }
 ```
 
-Attachment
+Attachment [trac_4779.patch](tarball://root/attachments/some-uuid/ticket4779/trac_4779.patch) by was created at 2008-12-31 02:37:09
 
 
 
@@ -179,7 +179,7 @@ I used this to test lots of polynomials and it was good.  Relative number fields
 archive/issue_comments_036226.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4779-part2.patch](tarball://root/attachments/some-uuid/ticket4779/trac_4779-part2.patch) by was created at 2009-02-20 05:06:49",
     "created_at": "2009-02-20T05:06:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4779",
     "type": "issue_comment",
@@ -188,7 +188,7 @@ archive/issue_comments_036226.json:
 }
 ```
 
-Attachment
+Attachment [trac_4779-part2.patch](tarball://root/attachments/some-uuid/ticket4779/trac_4779-part2.patch) by was created at 2009-02-20 05:06:49
 
 
 
@@ -259,7 +259,7 @@ Michael
 archive/issue_comments_036230.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4779-reviewer.patch](tarball://root/attachments/some-uuid/ticket4779/trac_4779-reviewer.patch) by mabshoff created at 2009-02-20 08:27:02",
     "created_at": "2009-02-20T08:27:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4779",
     "type": "issue_comment",
@@ -268,7 +268,7 @@ archive/issue_comments_036230.json:
 }
 ```
 
-Attachment
+Attachment [trac_4779-reviewer.patch](tarball://root/attachments/some-uuid/ticket4779/trac_4779-reviewer.patch) by mabshoff created at 2009-02-20 08:27:02
 
 
 

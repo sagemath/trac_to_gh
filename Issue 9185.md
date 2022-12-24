@@ -60,7 +60,7 @@ I think we should work from #9160.
 archive/issue_comments_085915.json:
 ```json
 {
-    "body": "Attachment\n\nspkg patch. Set empty `MAKEFLAGS`.",
+    "body": "Attachment [trac_9185-singular_makeflags.patch](tarball://root/attachments/some-uuid/ticket9185/trac_9185-singular_makeflags.patch) by mpatel created at 2010-06-09 02:30:51\n\nspkg patch. Set empty `MAKEFLAGS`.",
     "created_at": "2010-06-09T02:30:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9185",
     "type": "issue_comment",
@@ -69,7 +69,7 @@ archive/issue_comments_085915.json:
 }
 ```
 
-Attachment
+Attachment [trac_9185-singular_makeflags.patch](tarball://root/attachments/some-uuid/ticket9185/trac_9185-singular_makeflags.patch) by mpatel created at 2010-06-09 02:30:51
 
 spkg patch. Set empty `MAKEFLAGS`.
 

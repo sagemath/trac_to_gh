@@ -284,7 +284,7 @@ I guess there will be no doc-test unless someone produces a `test_dummy.spkg`
 archive/issue_comments_034399.json:
 ```json
 {
-    "body": "Attachment\n\ninstall_package: If there is a unique package starting with a given string, it gets installed",
+    "body": "Attachment [installpackage.patch](tarball://root/attachments/some-uuid/ticket4587/installpackage.patch) by SimonKing created at 2008-11-28 22:58:35\n\ninstall_package: If there is a unique package starting with a given string, it gets installed",
     "created_at": "2008-11-28T22:58:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4587",
     "type": "issue_comment",
@@ -293,7 +293,7 @@ archive/issue_comments_034399.json:
 }
 ```
 
-Attachment
+Attachment [installpackage.patch](tarball://root/attachments/some-uuid/ticket4587/installpackage.patch) by SimonKing created at 2008-11-28 22:58:35
 
 install_package: If there is a unique package starting with a given string, it gets installed
 
@@ -411,7 +411,7 @@ I agree that the error message may be clearer. So, back at work...
 archive/issue_comments_034403.json:
 ```json
 {
-    "body": "Attachment\n\nTo be applied after the first patch: Improving the error message",
+    "body": "Attachment [installpackageErrorMessage.patch](tarball://root/attachments/some-uuid/ticket4587/installpackageErrorMessage.patch) by SimonKing created at 2008-11-29 00:12:22\n\nTo be applied after the first patch: Improving the error message",
     "created_at": "2008-11-29T00:12:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4587",
     "type": "issue_comment",
@@ -420,7 +420,7 @@ archive/issue_comments_034403.json:
 }
 ```
 
-Attachment
+Attachment [installpackageErrorMessage.patch](tarball://root/attachments/some-uuid/ticket4587/installpackageErrorMessage.patch) by SimonKing created at 2008-11-29 00:12:22
 
 To be applied after the first patch: Improving the error message
 

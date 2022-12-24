@@ -178,7 +178,7 @@ Based on Sage 5.1.beta0
 archive/issue_comments_087137.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9260.patch](tarball://root/attachments/some-uuid/ticket9260/trac_9260.patch) by kcrisman created at 2012-05-26 19:59:31",
     "created_at": "2012-05-26T19:59:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9260",
     "type": "issue_comment",
@@ -187,7 +187,7 @@ archive/issue_comments_087137.json:
 }
 ```
 
-Attachment
+Attachment [trac_9260.patch](tarball://root/attachments/some-uuid/ticket9260/trac_9260.patch) by kcrisman created at 2012-05-26 19:59:31
 
 
 
@@ -268,7 +268,7 @@ apply to $SAGE_ROOT/devel/sage
 archive/issue_comments_087142.json:
 ```json
 {
-    "body": "Attachment\n\nHere's a reviewer patch to fix the \"excessively long line\", per your suggestion :)",
+    "body": "Attachment [trac_9260.reviewer.patch](tarball://root/attachments/some-uuid/ticket9260/trac_9260.reviewer.patch) by kini created at 2012-05-27 17:00:23\n\nHere's a reviewer patch to fix the \"excessively long line\", per your suggestion :)",
     "created_at": "2012-05-27T17:00:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9260",
     "type": "issue_comment",
@@ -277,7 +277,7 @@ archive/issue_comments_087142.json:
 }
 ```
 
-Attachment
+Attachment [trac_9260.reviewer.patch](tarball://root/attachments/some-uuid/ticket9260/trac_9260.reviewer.patch) by kini created at 2012-05-27 17:00:23
 
 Here's a reviewer patch to fix the "excessively long line", per your suggestion :)
 

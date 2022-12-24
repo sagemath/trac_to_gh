@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2642
 archive/issue_comments_018153.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac2642-small-roots.patch](tarball://root/attachments/some-uuid/ticket2642/trac2642-small-roots.patch) by cwitty created at 2008-03-22 01:46:49",
     "created_at": "2008-03-22T01:46:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2642",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_018153.json:
 }
 ```
 
-Attachment
+Attachment [trac2642-small-roots.patch](tarball://root/attachments/some-uuid/ticket2642/trac2642-small-roots.patch) by cwitty created at 2008-03-22 01:46:49
 
 
 
@@ -118,7 +118,7 @@ sage: p,q = N.prime_divisors()
 archive/issue_comments_018157.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [small_roots_fix.patch](tarball://root/attachments/some-uuid/ticket2642/small_roots_fix.patch) by malb created at 2008-03-24 00:49:57",
     "created_at": "2008-03-24T00:49:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2642",
     "type": "issue_comment",
@@ -127,7 +127,7 @@ archive/issue_comments_018157.json:
 }
 ```
 
-Attachment
+Attachment [small_roots_fix.patch](tarball://root/attachments/some-uuid/ticket2642/small_roots_fix.patch) by malb created at 2008-03-24 00:49:57
 
 
 

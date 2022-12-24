@@ -815,7 +815,7 @@ Ah; I don't have an account on sage.math.  Most of the uses of random_element co
 archive/issue_comments_012473.json:
 ```json
 {
-    "body": "Attachment\n\napply only this patch;  removes needless uses of random_element, adds some doctests, cleans up some documentation",
+    "body": "Attachment [trac_1956_multi_power_series_new.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_multi_power_series_new.patch) by niles created at 2010-09-15 21:43:00\n\napply only this patch;  removes needless uses of random_element, adds some doctests, cleans up some documentation",
     "created_at": "2010-09-15T21:43:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -824,7 +824,7 @@ archive/issue_comments_012473.json:
 }
 ```
 
-Attachment
+Attachment [trac_1956_multi_power_series_new.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_multi_power_series_new.patch) by niles created at 2010-09-15 21:43:00
 
 apply only this patch;  removes needless uses of random_element, adds some doctests, cleans up some documentation
 
@@ -1077,7 +1077,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_012485.json:
 ```json
 {
-    "body": "Attachment\n\nOk, the latest patch [attachment:trac_1956_multi_power_series_new_2.patch] passes all tests in the `sage/rings` directory, so I'm uploading it and starting `ptestlong`.\n\nAt this point, I'd like to start thinking that any other limitations of this patch should be filed under a new ticket, but we'll see what comes up.",
+    "body": "Attachment [trac_1956_multi_power_series_new_2.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_multi_power_series_new_2.patch) by niles created at 2010-09-16 17:29:42\n\nOk, the latest patch [attachment:trac_1956_multi_power_series_new_2.patch] passes all tests in the `sage/rings` directory, so I'm uploading it and starting `ptestlong`.\n\nAt this point, I'd like to start thinking that any other limitations of this patch should be filed under a new ticket, but we'll see what comes up.",
     "created_at": "2010-09-16T17:29:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -1086,7 +1086,7 @@ archive/issue_comments_012485.json:
 }
 ```
 
-Attachment
+Attachment [trac_1956_multi_power_series_new_2.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_multi_power_series_new_2.patch) by niles created at 2010-09-16 17:29:42
 
 Ok, the latest patch [attachment:trac_1956_multi_power_series_new_2.patch] passes all tests in the `sage/rings` directory, so I'm uploading it and starting `ptestlong`.
 
@@ -1117,7 +1117,7 @@ apply only this patch; minor docstring fixes, and update to `remove_var`
 archive/issue_comments_012487.json:
 ```json
 {
-    "body": "Attachment\n\nforgot to check the documentation!  There's just one minor fix, and it reminded me to update the behavior of `remove_var` to be consistent with the (new) behavior of `remove_var` for multivariate polynomial rings.  Here's the new patch: [attachment:trac_1956_multi_power_series_new_3.patch].\n\nsorry for the rapid-fire posts!",
+    "body": "Attachment [trac_1956_multi_power_series_new_3.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_multi_power_series_new_3.patch) by niles created at 2010-09-16 17:57:43\n\nforgot to check the documentation!  There's just one minor fix, and it reminded me to update the behavior of `remove_var` to be consistent with the (new) behavior of `remove_var` for multivariate polynomial rings.  Here's the new patch: [attachment:trac_1956_multi_power_series_new_3.patch].\n\nsorry for the rapid-fire posts!",
     "created_at": "2010-09-16T17:57:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -1126,7 +1126,7 @@ archive/issue_comments_012487.json:
 }
 ```
 
-Attachment
+Attachment [trac_1956_multi_power_series_new_3.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_multi_power_series_new_3.patch) by niles created at 2010-09-16 17:57:43
 
 forgot to check the documentation!  There's just one minor fix, and it reminded me to update the behavior of `remove_var` to be consistent with the (new) behavior of `remove_var` for multivariate polynomial rings.  Here's the new patch: [attachment:trac_1956_multi_power_series_new_3.patch].
 
@@ -1461,7 +1461,7 @@ implements multivariate power series rings through `PowerSeriesRing`
 archive/issue_comments_012501.json:
 ```json
 {
-    "body": "Attachment\n\nOk, I've attached a new patch which carries out the plan above.  After running doctests, it seems that there is a non-trivial body of code (elliptic curves, and maybe p-adics) that makes use of the syntax\n\n\n```\nT = PowerSeriesRing(QQ,'t',3)\n```\n\n\nor\n\n\n```\nT.<t> = PowerSeriesRing(QQ,3)\n```\n\n\nto construct univariate power series rings.  I will mention this and a few other things in a new ticket for merging univariate and multivariate power series rings.\n\nThis new patch passes all doctests (with -long), and documentation builds cleanly, looks good.",
+    "body": "Attachment [trac_1956_uni_multi_ps.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_uni_multi_ps.patch) by niles created at 2010-09-23 17:35:14\n\nOk, I've attached a new patch which carries out the plan above.  After running doctests, it seems that there is a non-trivial body of code (elliptic curves, and maybe p-adics) that makes use of the syntax\n\n\n```\nT = PowerSeriesRing(QQ,'t',3)\n```\n\n\nor\n\n\n```\nT.<t> = PowerSeriesRing(QQ,3)\n```\n\n\nto construct univariate power series rings.  I will mention this and a few other things in a new ticket for merging univariate and multivariate power series rings.\n\nThis new patch passes all doctests (with -long), and documentation builds cleanly, looks good.",
     "created_at": "2010-09-23T17:35:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -1470,7 +1470,7 @@ archive/issue_comments_012501.json:
 }
 ```
 
-Attachment
+Attachment [trac_1956_uni_multi_ps.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_uni_multi_ps.patch) by niles created at 2010-09-23 17:35:14
 
 Ok, I've attached a new patch which carries out the plan above.  After running doctests, it seems that there is a non-trivial body of code (elliptic curves, and maybe p-adics) that makes use of the syntax
 
@@ -1556,7 +1556,7 @@ Note: these patches apply cleanly to sage 4.6.alpha1
 archive/issue_comments_012505.json:
 ```json
 {
-    "body": "Attachment\n\nminor change fixing `_im_gens_` for use with ring homomorphisms",
+    "body": "Attachment [trac_1956_uni_multi_ps_2.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_uni_multi_ps_2.patch) by niles created at 2010-09-25 13:11:17\n\nminor change fixing `_im_gens_` for use with ring homomorphisms",
     "created_at": "2010-09-25T13:11:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -1565,7 +1565,7 @@ archive/issue_comments_012505.json:
 }
 ```
 
-Attachment
+Attachment [trac_1956_uni_multi_ps_2.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_uni_multi_ps_2.patch) by niles created at 2010-09-25 13:11:17
 
 minor change fixing `_im_gens_` for use with ring homomorphisms
 
@@ -2228,7 +2228,7 @@ Thanks for the feedback, and the encouragement; I'll try to get back to this nex
 archive/issue_comments_012519.json:
 ```json
 {
-    "body": "Attachment\n\ncode cleanup, addressing comments of was",
+    "body": "Attachment [trac_1956_multi_ps_cleanup.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_multi_ps_cleanup.patch) by niles created at 2010-11-29 19:49:14\n\ncode cleanup, addressing comments of was",
     "created_at": "2010-11-29T19:49:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -2237,7 +2237,7 @@ archive/issue_comments_012519.json:
 }
 ```
 
-Attachment
+Attachment [trac_1956_multi_ps_cleanup.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_multi_ps_cleanup.patch) by niles created at 2010-11-29 19:49:14
 
 code cleanup, addressing comments of was
 
@@ -2399,7 +2399,7 @@ Anyone interested in setting this to positive review?
 archive/issue_comments_012525.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_1956_faster_MPowerSeries_mul.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_faster_MPowerSeries_mul.patch) by pernici created at 2010-12-28 06:44:57",
     "created_at": "2010-12-28T06:44:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -2408,7 +2408,7 @@ archive/issue_comments_012525.json:
 }
 ```
 
-Attachment
+Attachment [trac_1956_faster_MPowerSeries_mul.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_faster_MPowerSeries_mul.patch) by pernici created at 2010-12-28 06:44:57
 
 
 
@@ -2417,7 +2417,7 @@ Attachment
 archive/issue_comments_012526.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [mu.sage](tarball://root/attachments/some-uuid/ticket1956/mu.sage) by pernici created at 2010-12-28 06:46:01",
     "created_at": "2010-12-28T06:46:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -2426,7 +2426,7 @@ archive/issue_comments_012526.json:
 }
 ```
 
-Attachment
+Attachment [mu.sage](tarball://root/attachments/some-uuid/ticket1956/mu.sage) by pernici created at 2010-12-28 06:46:01
 
 
 
@@ -2435,7 +2435,7 @@ Attachment
 archive/issue_comments_012527.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [bg.sage](tarball://root/attachments/some-uuid/ticket1956/bg.sage) by pernici created at 2010-12-28 06:47:04",
     "created_at": "2010-12-28T06:47:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -2444,7 +2444,7 @@ archive/issue_comments_012527.json:
 }
 ```
 
-Attachment
+Attachment [bg.sage](tarball://root/attachments/some-uuid/ticket1956/bg.sage) by pernici created at 2010-12-28 06:47:04
 
 
 
@@ -2801,7 +2801,7 @@ So, I don't mind about the different timings; but I think methods should be more
 archive/issue_comments_012538.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of other patches; return univariate ring rather than multivariate ring in one variable",
+    "body": "Attachment [trac_1956_one_variable_fix.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_one_variable_fix.patch) by niles created at 2011-01-04 13:43:22\n\napply on top of other patches; return univariate ring rather than multivariate ring in one variable",
     "created_at": "2011-01-04T13:43:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -2810,7 +2810,7 @@ archive/issue_comments_012538.json:
 }
 ```
 
-Attachment
+Attachment [trac_1956_one_variable_fix.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_one_variable_fix.patch) by niles created at 2011-01-04 13:43:22
 
 apply on top of other patches; return univariate ring rather than multivariate ring in one variable
 
@@ -3503,7 +3503,7 @@ I haven't been able to see how to do it either.  There have been a number of uns
 archive/issue_comments_012555.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [mo1.patch](tarball://root/attachments/some-uuid/ticket1956/mo1.patch) by pernici created at 2011-01-16 17:33:17",
     "created_at": "2011-01-16T17:33:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -3512,7 +3512,7 @@ archive/issue_comments_012555.json:
 }
 ```
 
-Attachment
+Attachment [mo1.patch](tarball://root/attachments/some-uuid/ticket1956/mo1.patch) by pernici created at 2011-01-16 17:33:17
 
 
 
@@ -4105,7 +4105,7 @@ updated for sage 4.6.2
 archive/issue_comments_012570.json:
 ```json
 {
-    "body": "Attachment\n\nMore code rot; patches should all apply to 4.6.2 now.\n\n\nFor the buildbot: \n\nApply \ntrac_1956_multi_power_series_new_4.patch,\ntrac_1956_uni_multi_ps_3.patch,\ntrac_1956_multi_ps_cleanup.patch",
+    "body": "Attachment [trac_1956_uni_multi_ps_3.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_uni_multi_ps_3.patch) by niles created at 2011-03-17 20:25:27\n\nMore code rot; patches should all apply to 4.6.2 now.\n\n\nFor the buildbot: \n\nApply \ntrac_1956_multi_power_series_new_4.patch,\ntrac_1956_uni_multi_ps_3.patch,\ntrac_1956_multi_ps_cleanup.patch",
     "created_at": "2011-03-17T20:25:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -4114,7 +4114,7 @@ archive/issue_comments_012570.json:
 }
 ```
 
-Attachment
+Attachment [trac_1956_uni_multi_ps_3.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_uni_multi_ps_3.patch) by niles created at 2011-03-17 20:25:27
 
 More code rot; patches should all apply to 4.6.2 now.
 
@@ -4153,7 +4153,7 @@ Apply trac_1956_multi_power_series_new_4.patch, trac_1956_uni_multi_ps_3.patch, 
 archive/issue_comments_012572.json:
 ```json
 {
-    "body": "Attachment\n\npickling fixed, minor docstring formatting fixed",
+    "body": "Attachment [trac_1956_multi_power_series_new_4.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_multi_power_series_new_4.patch) by niles created at 2011-03-18 13:55:50\n\npickling fixed, minor docstring formatting fixed",
     "created_at": "2011-03-18T13:55:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -4162,7 +4162,7 @@ archive/issue_comments_012572.json:
 }
 ```
 
-Attachment
+Attachment [trac_1956_multi_power_series_new_4.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_multi_power_series_new_4.patch) by niles created at 2011-03-18 13:55:50
 
 pickling fixed, minor docstring formatting fixed
 
@@ -4483,7 +4483,7 @@ improved coercion and substitution; also fixed minor typo
 archive/issue_comments_012580.json:
 ```json
 {
-    "body": "Attachment\n\nimproved coercion and substitution; also fixed minor typos",
+    "body": "Attachment [trac_1956_multi_ps_coercion.2.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_multi_ps_coercion.2.patch) by niles created at 2011-03-27 01:32:29\n\nimproved coercion and substitution; also fixed minor typos",
     "created_at": "2011-03-27T01:32:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -4492,7 +4492,7 @@ archive/issue_comments_012580.json:
 }
 ```
 
-Attachment
+Attachment [trac_1956_multi_ps_coercion.2.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_multi_ps_coercion.2.patch) by niles created at 2011-03-27 01:32:29
 
 improved coercion and substitution; also fixed minor typos
 
@@ -4503,7 +4503,7 @@ improved coercion and substitution; also fixed minor typos
 archive/issue_comments_012581.json:
 ```json
 {
-    "body": "Attachment\n\napologies for the many rapid updates -- fixing some stupid typos and trying to get the buildbot to apply the right patches.\n\nApply trac_1956_multi_power_series_new_4.patch, trac_1956_uni_multi_ps_3.patch, trac_1956_multi_ps_cleanup.patch, trac_1956_multi_ps_coercion.patch",
+    "body": "Attachment [trac_1956_multi_ps_coercion.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_multi_ps_coercion.patch) by niles created at 2011-03-27 01:35:16\n\napologies for the many rapid updates -- fixing some stupid typos and trying to get the buildbot to apply the right patches.\n\nApply trac_1956_multi_power_series_new_4.patch, trac_1956_uni_multi_ps_3.patch, trac_1956_multi_ps_cleanup.patch, trac_1956_multi_ps_coercion.patch",
     "created_at": "2011-03-27T01:35:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -4512,7 +4512,7 @@ archive/issue_comments_012581.json:
 }
 ```
 
-Attachment
+Attachment [trac_1956_multi_ps_coercion.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_multi_ps_coercion.patch) by niles created at 2011-03-27 01:35:16
 
 apologies for the many rapid updates -- fixing some stupid typos and trying to get the buildbot to apply the right patches.
 
@@ -4617,7 +4617,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_012585.json:
 ```json
 {
-    "body": "Attachment\n\nall patches at once",
+    "body": "Attachment [trac_1956_combined.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_combined.patch) by niles created at 2011-04-15 00:58:30\n\nall patches at once",
     "created_at": "2011-04-15T00:58:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -4626,7 +4626,7 @@ archive/issue_comments_012585.json:
 }
 ```
 
-Attachment
+Attachment [trac_1956_combined.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_combined.patch) by niles created at 2011-04-15 00:58:30
 
 all patches at once
 
@@ -4807,7 +4807,7 @@ Fine by me.
 archive/issue_comments_012590.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_1956_combined_2.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_combined_2.patch) by niles created at 2011-05-01 23:47:24",
     "created_at": "2011-05-01T23:47:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -4816,7 +4816,7 @@ archive/issue_comments_012590.json:
 }
 ```
 
-Attachment
+Attachment [trac_1956_combined_2.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_combined_2.patch) by niles created at 2011-05-01 23:47:24
 
 
 
@@ -5017,7 +5017,7 @@ diff between `trac_1956_combined.patch` and `trac_1956_combined_2.patch`
 archive/issue_comments_012596.json:
 ```json
 {
-    "body": "Attachment\n\nThis seems to be the current status:\n\n1. Sage passes all doctests with this patch\n\nwaiting for patchbot :)\n\n2. All code is documented and doctested thoroughly; documentation builds without error or warning\n\n**positive review**\n\n3. The underlying concept of the implementation (a wrapper for certain univariate power series over multivariate polynomials) is sound\n\n**positive review**\n\n4. multi_power_series_ring.py: the code accurately does what it claims to do\n\n**positive review**\n\n5. multi_power_series_ring_element.py: the code accurately does what it claims to do\n\n**needs review**\n\n6. Integration with the rest of sage: construction and use of PowerSeriesRings works correctly, and parallels behavior of polynomial rings\n\n**positive review**\n\n7. Performance: the multivariate power series arithmetic is fast enough to be included in Sage\n\n**positive review**\n\n8. Coding: the code is free from obvious inefficiencies in error handling, memory management, etc.\n\n**positive review**\n\n9. The items on this list constitute a complete review\n\n**positive review**\n\n\n----\n\nThanks for explaining the default precision business to me! As I said, I rarely touch power series.\n\n----\n> Excessive or not, each of the double underscore methods is necessary to replace the corresponding method of `PowerSeries` or `PowerSeriesRing_generic`, from which the `MPowerSeries*` classes inherit.  Here's a complete list of the double underscore attributes:\n\nSorry, I didn't mean stuff like `__init__` which of course has to be like it is. I meant stuff like `__poly_ring` which could easily be `_poly_ring`.",
+    "body": "Attachment [combined_1-2.diff](tarball://root/attachments/some-uuid/ticket1956/combined_1-2.diff) by malb created at 2011-05-02 09:48:19\n\nThis seems to be the current status:\n\n1. Sage passes all doctests with this patch\n\nwaiting for patchbot :)\n\n2. All code is documented and doctested thoroughly; documentation builds without error or warning\n\n**positive review**\n\n3. The underlying concept of the implementation (a wrapper for certain univariate power series over multivariate polynomials) is sound\n\n**positive review**\n\n4. multi_power_series_ring.py: the code accurately does what it claims to do\n\n**positive review**\n\n5. multi_power_series_ring_element.py: the code accurately does what it claims to do\n\n**needs review**\n\n6. Integration with the rest of sage: construction and use of PowerSeriesRings works correctly, and parallels behavior of polynomial rings\n\n**positive review**\n\n7. Performance: the multivariate power series arithmetic is fast enough to be included in Sage\n\n**positive review**\n\n8. Coding: the code is free from obvious inefficiencies in error handling, memory management, etc.\n\n**positive review**\n\n9. The items on this list constitute a complete review\n\n**positive review**\n\n\n----\n\nThanks for explaining the default precision business to me! As I said, I rarely touch power series.\n\n----\n> Excessive or not, each of the double underscore methods is necessary to replace the corresponding method of `PowerSeries` or `PowerSeriesRing_generic`, from which the `MPowerSeries*` classes inherit.  Here's a complete list of the double underscore attributes:\n\nSorry, I didn't mean stuff like `__init__` which of course has to be like it is. I meant stuff like `__poly_ring` which could easily be `_poly_ring`.",
     "created_at": "2011-05-02T09:48:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -5026,7 +5026,7 @@ archive/issue_comments_012596.json:
 }
 ```
 
-Attachment
+Attachment [combined_1-2.diff](tarball://root/attachments/some-uuid/ticket1956/combined_1-2.diff) by malb created at 2011-05-02 09:48:19
 
 This seems to be the current status:
 
@@ -5289,7 +5289,7 @@ __base_ring
 archive/issue_comments_012605.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_1956_combined_3.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_combined_3.patch) by niles created at 2011-05-03 02:07:17",
     "created_at": "2011-05-03T02:07:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -5298,7 +5298,7 @@ archive/issue_comments_012605.json:
 }
 ```
 
-Attachment
+Attachment [trac_1956_combined_3.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_combined_3.patch) by niles created at 2011-05-03 02:07:17
 
 
 
@@ -5436,7 +5436,7 @@ To be precise: Double underscore names are only problematic if they *start* with
 archive/issue_comments_012612.json:
 ```json
 {
-    "body": "Attachment\n\nremoved unnecessary double underscore attributes from `MPowerSeries_generic`",
+    "body": "Attachment [trac_1956_combined_4.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_combined_4.patch) by niles created at 2011-05-03 11:57:11\n\nremoved unnecessary double underscore attributes from `MPowerSeries_generic`",
     "created_at": "2011-05-03T11:57:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -5445,7 +5445,7 @@ archive/issue_comments_012612.json:
 }
 ```
 
-Attachment
+Attachment [trac_1956_combined_4.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_combined_4.patch) by niles created at 2011-05-03 11:57:11
 
 removed unnecessary double underscore attributes from `MPowerSeries_generic`
 
@@ -5586,7 +5586,7 @@ Got:
 archive/issue_comments_012619.json:
 ```json
 {
-    "body": "Attachment\n\nupdated for new repr of completion functor",
+    "body": "Attachment [trac_1956_combined_5.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_combined_5.patch) by niles created at 2011-05-11 18:44:17\n\nupdated for new repr of completion functor",
     "created_at": "2011-05-11T18:44:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -5595,7 +5595,7 @@ archive/issue_comments_012619.json:
 }
 ```
 
-Attachment
+Attachment [trac_1956_combined_5.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_combined_5.patch) by niles created at 2011-05-11 18:44:17
 
 updated for new repr of completion functor
 
@@ -5755,7 +5755,7 @@ I've addressed this problem, but I see other issues with `sage/interfaces/maxima
 archive/issue_comments_012626.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_1956_combined_6.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_combined_6.patch) by niles created at 2011-05-12 14:54:44",
     "created_at": "2011-05-12T14:54:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -5764,7 +5764,7 @@ archive/issue_comments_012626.json:
 }
 ```
 
-Attachment
+Attachment [trac_1956_combined_6.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_combined_6.patch) by niles created at 2011-05-12 14:54:44
 
 
 

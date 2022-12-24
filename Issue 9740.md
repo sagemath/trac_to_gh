@@ -216,7 +216,7 @@ The matrix in an interact for p=7
 archive/issue_comments_095344.json:
 ```json
 {
-    "body": "Attachment\n\nCould you try the following two plots?\n\nmatrix_plot(identity_matrix(100))\n\nmatrix_plot(identity_matrix(100, sparse=True))",
+    "body": "Attachment [Screen shot 2010-08-13 at 11.52.45 AM.png](tarball://root/attachments/some-uuid/ticket9740/Screen shot 2010-08-13 at 11.52.45 AM.png) by jason created at 2010-08-13 16:06:24\n\nCould you try the following two plots?\n\nmatrix_plot(identity_matrix(100))\n\nmatrix_plot(identity_matrix(100, sparse=True))",
     "created_at": "2010-08-13T16:06:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
@@ -225,7 +225,7 @@ archive/issue_comments_095344.json:
 }
 ```
 
-Attachment
+Attachment [Screen shot 2010-08-13 at 11.52.45 AM.png](tarball://root/attachments/some-uuid/ticket9740/Screen shot 2010-08-13 at 11.52.45 AM.png) by jason created at 2010-08-13 16:06:24
 
 Could you try the following two plots?
 
@@ -446,7 +446,7 @@ I've rebased to 4.6.alpha1 and combined the two patches.  kcrisman: can you revi
 archive/issue_comments_095355.json:
 ```json
 {
-    "body": "Attachment\n\napply only this patch; rebased to 4.6.alpha1",
+    "body": "Attachment [trac-9740-matrixplot.patch](tarball://root/attachments/some-uuid/ticket9740/trac-9740-matrixplot.patch) by jason created at 2010-09-28 17:22:52\n\napply only this patch; rebased to 4.6.alpha1",
     "created_at": "2010-09-28T17:22:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
@@ -455,7 +455,7 @@ archive/issue_comments_095355.json:
 }
 ```
 
-Attachment
+Attachment [trac-9740-matrixplot.patch](tarball://root/attachments/some-uuid/ticket9740/trac-9740-matrixplot.patch) by jason created at 2010-09-28 17:22:52
 
 apply only this patch; rebased to 4.6.alpha1
 
@@ -827,7 +827,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_095369.json:
 ```json
 {
-    "body": "Attachment\n\nI updated the review-fixes patch to take care of the issues you brought up.  I also polished two more references in the docs.",
+    "body": "Attachment [9740-review-fixes.patch](tarball://root/attachments/some-uuid/ticket9740/9740-review-fixes.patch) by jason created at 2010-09-29 04:22:44\n\nI updated the review-fixes patch to take care of the issues you brought up.  I also polished two more references in the docs.",
     "created_at": "2010-09-29T04:22:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
@@ -836,7 +836,7 @@ archive/issue_comments_095369.json:
 }
 ```
 
-Attachment
+Attachment [9740-review-fixes.patch](tarball://root/attachments/some-uuid/ticket9740/9740-review-fixes.patch) by jason created at 2010-09-29 04:22:44
 
 I updated the review-fixes patch to take care of the issues you brought up.  I also polished two more references in the docs.
 

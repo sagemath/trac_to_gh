@@ -105,7 +105,7 @@ to the top of `notebook.py` allows testing to proceed.  I'm not sure about a rea
 archive/issue_comments_065392.json:
 ```json
 {
-    "body": "Attachment\n\nAdd `--force_lib` option to `sage-doctest`.  Use `os.path.join`.  **scripts** repo.",
+    "body": "Attachment [trac_7650-sagenb_doctesting.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-sagenb_doctesting.patch) by mpatel created at 2009-12-10 11:39:48\n\nAdd `--force_lib` option to `sage-doctest`.  Use `os.path.join`.  **scripts** repo.",
     "created_at": "2009-12-10T11:39:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_065392.json:
 }
 ```
 
-Attachment
+Attachment [trac_7650-sagenb_doctesting.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-sagenb_doctesting.patch) by mpatel created at 2009-12-10 11:39:48
 
 Add `--force_lib` option to `sage-doctest`.  Use `os.path.join`.  **scripts** repo.
 
@@ -161,7 +161,7 @@ Changing priority from major to blocker.
 archive/issue_comments_065395.json:
 ```json
 {
-    "body": "Attachment\n\n**Please note: The attachments (or their descriptions) are switched.**  I apologize for this.\n\nAnyway, with the scripts repository patch, we can do, e.g.,\n\n```sh\n$ sage -t --force_lib sagenb/\n```\n\nWith the sagenb repository patch applied to #7625 + #7483 + #7482 + #7514 + #7648, all tests but 3 pass.  The failures are in `sagenb/misc/sageinspect.py` (cf. #7514).  The Selenium tests still pass.\n\nRemarks:\n\n* I hope I did not create false-negatives.\n* [This sage-notebook thread](http://groups.google.com/group/sage-notebook/browse_thread/thread/9dd524690bb1588b/38855ecc2819205a?#38855ecc2819205a) *might* be relevant to some tests that evaluate cells.\n* I \"untabified\" `cell.py`, `worksheet.py`, `notebook.py`, and `twist.py`.\n* I added `'nodoctest'` to `simple/twist.py`, since at least one test appears to hang indefinitely.  I don't know why.\n* Feel free to lower the priority.",
+    "body": "Attachment [trac_7650-scripts_doctest_force_lib.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-scripts_doctest_force_lib.patch) by mpatel created at 2009-12-10 11:57:53\n\n**Please note: The attachments (or their descriptions) are switched.**  I apologize for this.\n\nAnyway, with the scripts repository patch, we can do, e.g.,\n\n```sh\n$ sage -t --force_lib sagenb/\n```\n\nWith the sagenb repository patch applied to #7625 + #7483 + #7482 + #7514 + #7648, all tests but 3 pass.  The failures are in `sagenb/misc/sageinspect.py` (cf. #7514).  The Selenium tests still pass.\n\nRemarks:\n\n* I hope I did not create false-negatives.\n* [This sage-notebook thread](http://groups.google.com/group/sage-notebook/browse_thread/thread/9dd524690bb1588b/38855ecc2819205a?#38855ecc2819205a) *might* be relevant to some tests that evaluate cells.\n* I \"untabified\" `cell.py`, `worksheet.py`, `notebook.py`, and `twist.py`.\n* I added `'nodoctest'` to `simple/twist.py`, since at least one test appears to hang indefinitely.  I don't know why.\n* Feel free to lower the priority.",
     "created_at": "2009-12-10T11:57:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
@@ -170,7 +170,7 @@ archive/issue_comments_065395.json:
 }
 ```
 
-Attachment
+Attachment [trac_7650-scripts_doctest_force_lib.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-scripts_doctest_force_lib.patch) by mpatel created at 2009-12-10 11:57:53
 
 **Please note: The attachments (or their descriptions) are switched.**  I apologize for this.
 
@@ -301,7 +301,7 @@ Updated scripts repo patch.  Replaces previous.
 archive/issue_comments_065401.json:
 ```json
 {
-    "body": "Attachment\n\nQuit spawned worksheet processes.  Replaces previous sagenb repo patch.",
+    "body": "Attachment [trac_7650-sagenb_doctesting_v2.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-sagenb_doctesting_v2.patch) by mpatel created at 2009-12-13 14:18:53\n\nQuit spawned worksheet processes.  Replaces previous sagenb repo patch.",
     "created_at": "2009-12-13T14:18:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
@@ -310,7 +310,7 @@ archive/issue_comments_065401.json:
 }
 ```
 
-Attachment
+Attachment [trac_7650-sagenb_doctesting_v2.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-sagenb_doctesting_v2.patch) by mpatel created at 2009-12-13 14:18:53
 
 Quit spawned worksheet processes.  Replaces previous sagenb repo patch.
 
@@ -339,7 +339,7 @@ Auto-detect `site-packages`.  scripts repo.  Replaces previous.
 archive/issue_comments_065403.json:
 ```json
 {
-    "body": "Attachment\n\nAdds `-sagenb` option.  scripts repo.  Replaces previous.",
+    "body": "Attachment [trac_7650-scripts_doctest_force_lib_v3.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-scripts_doctest_force_lib_v3.patch) by mpatel created at 2009-12-14 06:06:45\n\nAdds `-sagenb` option.  scripts repo.  Replaces previous.",
     "created_at": "2009-12-14T06:06:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
@@ -348,7 +348,7 @@ archive/issue_comments_065403.json:
 }
 ```
 
-Attachment
+Attachment [trac_7650-scripts_doctest_force_lib_v3.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-scripts_doctest_force_lib_v3.patch) by mpatel created at 2009-12-14 06:06:45
 
 Adds `-sagenb` option.  scripts repo.  Replaces previous.
 
@@ -359,7 +359,7 @@ Adds `-sagenb` option.  scripts repo.  Replaces previous.
 archive/issue_comments_065404.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated `SAGE_ROOT/makefile`.",
+    "body": "Attachment [trac_7650-scripts_doctest_force_lib_v4.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-scripts_doctest_force_lib_v4.patch) by mpatel created at 2009-12-14 06:09:51\n\nUpdated `SAGE_ROOT/makefile`.",
     "created_at": "2009-12-14T06:09:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
@@ -368,7 +368,7 @@ archive/issue_comments_065404.json:
 }
 ```
 
-Attachment
+Attachment [trac_7650-scripts_doctest_force_lib_v4.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-scripts_doctest_force_lib_v4.patch) by mpatel created at 2009-12-14 06:09:51
 
 Updated `SAGE_ROOT/makefile`.
 
@@ -397,7 +397,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_065406.json:
 ```json
 {
-    "body": "Attachment\n\nWith [attachment:trac_7650-scripts_doctest_force_lib_v4.patch] and an updated top-level [attachment: makefile], we can do\n\n* `make test`\n* `make ptest`\n* `sage -t -sagenb`\n* `sage -tp -sagenb`\n\netc.  Maybe we should unify the test scripts and use [optparse](http://docs.python.org/library/optparse.html)?",
+    "body": "Attachment [makefile](tarball://root/attachments/some-uuid/ticket7650/makefile) by mpatel created at 2009-12-14 06:18:29\n\nWith [attachment:trac_7650-scripts_doctest_force_lib_v4.patch] and an updated top-level [attachment: makefile], we can do\n\n* `make test`\n* `make ptest`\n* `sage -t -sagenb`\n* `sage -tp -sagenb`\n\netc.  Maybe we should unify the test scripts and use [optparse](http://docs.python.org/library/optparse.html)?",
     "created_at": "2009-12-14T06:18:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
@@ -406,7 +406,7 @@ archive/issue_comments_065406.json:
 }
 ```
 
-Attachment
+Attachment [makefile](tarball://root/attachments/some-uuid/ticket7650/makefile) by mpatel created at 2009-12-14 06:18:29
 
 With [attachment:trac_7650-scripts_doctest_force_lib_v4.patch] and an updated top-level [attachment: makefile], we can do
 
@@ -496,7 +496,7 @@ Also: Be more agressive with `os.path.join`-ery.
 archive/issue_comments_065411.json:
 ```json
 {
-    "body": "Attachment\n\nDocument new options.  More `os.path.join`-ery.  Replaces previous.",
+    "body": "Attachment [trac_7650-scripts_doctest_force_lib_v5.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-scripts_doctest_force_lib_v5.patch) by mpatel created at 2009-12-28 23:10:03\n\nDocument new options.  More `os.path.join`-ery.  Replaces previous.",
     "created_at": "2009-12-28T23:10:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
@@ -505,7 +505,7 @@ archive/issue_comments_065411.json:
 }
 ```
 
-Attachment
+Attachment [trac_7650-scripts_doctest_force_lib_v5.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-scripts_doctest_force_lib_v5.patch) by mpatel created at 2009-12-28 23:10:03
 
 Document new options.  More `os.path.join`-ery.  Replaces previous.
 
@@ -552,7 +552,7 @@ Rebased vs. #7482's v4.  Replaces previous **sagenb** patch.
 archive/issue_comments_065414.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7650-sagenb_doctesting_v3.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-sagenb_doctesting_v3.patch) by mpatel created at 2010-01-01 10:57:37",
     "created_at": "2010-01-01T10:57:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
@@ -561,7 +561,7 @@ archive/issue_comments_065414.json:
 }
 ```
 
-Attachment
+Attachment [trac_7650-sagenb_doctesting_v3.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-sagenb_doctesting_v3.patch) by mpatel created at 2010-01-01 10:57:37
 
 
 
@@ -588,7 +588,7 @@ Rebased vs. 4.3.1.alpha0 + #7269.  Replaces previous sagenb patch.
 archive/issue_comments_065416.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7650-sagenb_doctesting_v4.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-sagenb_doctesting_v4.patch) by mpatel created at 2010-01-05 00:49:32",
     "created_at": "2010-01-05T00:49:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
@@ -597,7 +597,7 @@ archive/issue_comments_065416.json:
 }
 ```
 
-Attachment
+Attachment [trac_7650-sagenb_doctesting_v4.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-sagenb_doctesting_v4.patch) by mpatel created at 2010-01-05 00:49:32
 
 
 
@@ -624,7 +624,7 @@ I've attached a rebased sagenb patch.  I added `"""nodoctests"""` to the top of 
 archive/issue_comments_065418.json:
 ```json
 {
-    "body": "Attachment\n\nFix tags / user_view asymmetry.  Replaces previous sagenb patch.",
+    "body": "Attachment [trac_7650-sagenb_doctesting_v5.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-sagenb_doctesting_v5.patch) by mpatel created at 2010-01-14 21:58:17\n\nFix tags / user_view asymmetry.  Replaces previous sagenb patch.",
     "created_at": "2010-01-14T21:58:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
@@ -633,7 +633,7 @@ archive/issue_comments_065418.json:
 }
 ```
 
-Attachment
+Attachment [trac_7650-sagenb_doctesting_v5.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-sagenb_doctesting_v5.patch) by mpatel created at 2010-01-14 21:58:17
 
 Fix tags / user_view asymmetry.  Replaces previous sagenb patch.
 
@@ -680,7 +680,7 @@ Fix interact doctests for 4.3.1.alpha2 (colors.py).  Replaces previous sagenb pa
 archive/issue_comments_065421.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:17 mpatel]:\n> V5 makes it so a worksheet `reconstruct`ed from the `basic` representation of another has the same `tags` and `user_view` as the original.\n\nShouldn't this be put in a new ticket?",
+    "body": "Attachment [trac_7650-sagenb_doctesting_v6.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-sagenb_doctesting_v6.patch) by timdumol created at 2010-01-16 21:22:05\n\nReplying to [comment:17 mpatel]:\n> V5 makes it so a worksheet `reconstruct`ed from the `basic` representation of another has the same `tags` and `user_view` as the original.\n\nShouldn't this be put in a new ticket?",
     "created_at": "2010-01-16T21:22:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
@@ -689,7 +689,7 @@ archive/issue_comments_065421.json:
 }
 ```
 
-Attachment
+Attachment [trac_7650-sagenb_doctesting_v6.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-sagenb_doctesting_v6.patch) by timdumol created at 2010-01-16 21:22:05
 
 Replying to [comment:17 mpatel]:
 > V5 makes it so a worksheet `reconstruct`ed from the `basic` representation of another has the same `tags` and `user_view` as the original.
@@ -787,7 +787,7 @@ A few documentation fixes (precision errors and style), and a couple of changes 
 archive/issue_comments_065425.json:
 ```json
 {
-    "body": "Attachment\n\nFix two doctest failures.  Replaces reviewer patch.  sagenb repo.",
+    "body": "Attachment [trac_7650-reviewer.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-reviewer.patch) by mpatel created at 2010-01-18 04:10:43\n\nFix two doctest failures.  Replaces reviewer patch.  sagenb repo.",
     "created_at": "2010-01-18T04:10:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
@@ -796,7 +796,7 @@ archive/issue_comments_065425.json:
 }
 ```
 
-Attachment
+Attachment [trac_7650-reviewer.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-reviewer.patch) by mpatel created at 2010-01-18 04:10:43
 
 Fix two doctest failures.  Replaces reviewer patch.  sagenb repo.
 
@@ -825,7 +825,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_065427.json:
 ```json
 {
-    "body": "Attachment\n\nV2 of the reviewer patch:\n\n* Adds a missing dot (`.`) in `interact.py`.\n* Moves `# output depends on timezone` to the input statement in `worksheet.py`.\n* [Pre-existing] `most be defined` --> `must be defined`.",
+    "body": "Attachment [trac_7650-reviewer_v2.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-reviewer_v2.patch) by mpatel created at 2010-01-18 04:17:30\n\nV2 of the reviewer patch:\n\n* Adds a missing dot (`.`) in `interact.py`.\n* Moves `# output depends on timezone` to the input statement in `worksheet.py`.\n* [Pre-existing] `most be defined` --> `must be defined`.",
     "created_at": "2010-01-18T04:17:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
@@ -834,7 +834,7 @@ archive/issue_comments_065427.json:
 }
 ```
 
-Attachment
+Attachment [trac_7650-reviewer_v2.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-reviewer_v2.patch) by mpatel created at 2010-01-18 04:17:30
 
 V2 of the reviewer patch:
 

@@ -74,7 +74,7 @@ Changing assignee from somebody to ddrake.
 archive/issue_comments_054659.json:
 ```json
 {
-    "body": "Attachment\n\nI also edited a bit of the docstring.",
+    "body": "Attachment [trac_6658_integer_digits.patch](tarball://root/attachments/some-uuid/ticket6658/trac_6658_integer_digits.patch) by ddrake created at 2009-07-30 03:34:12\n\nI also edited a bit of the docstring.",
     "created_at": "2009-07-30T03:34:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6658",
     "type": "issue_comment",
@@ -83,7 +83,7 @@ archive/issue_comments_054659.json:
 }
 ```
 
-Attachment
+Attachment [trac_6658_integer_digits.patch](tarball://root/attachments/some-uuid/ticket6658/trac_6658_integer_digits.patch) by ddrake created at 2009-07-30 03:34:12
 
 I also edited a bit of the docstring.
 

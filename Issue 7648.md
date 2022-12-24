@@ -70,7 +70,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7648
 archive/issue_comments_065381.json:
 ```json
 {
-    "body": "Attachment\n\nMake the changes in the ticket description.  sagenb repo.",
+    "body": "Attachment [trac_7648-missing_indent.patch](tarball://root/attachments/some-uuid/ticket7648/trac_7648-missing_indent.patch) by mpatel created at 2009-12-10 02:22:30\n\nMake the changes in the ticket description.  sagenb repo.",
     "created_at": "2009-12-10T02:22:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7648",
     "type": "issue_comment",
@@ -79,7 +79,7 @@ archive/issue_comments_065381.json:
 }
 ```
 
-Attachment
+Attachment [trac_7648-missing_indent.patch](tarball://root/attachments/some-uuid/ticket7648/trac_7648-missing_indent.patch) by mpatel created at 2009-12-10 02:22:30
 
 Make the changes in the ticket description.  sagenb repo.
 

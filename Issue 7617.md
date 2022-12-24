@@ -276,7 +276,7 @@ a draft of additions to the installation guide
 archive/issue_comments_065068.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached a draft of what we might add to the installation guide to help users, well, install SageTeX. I'd also like to add something to the reference manual, as users might after installation want to use SageTeX and not think of \"installing\" anything new (since their friends will tell them it's included in Sage). Mostly, I think we need to put pointers to the SageTeX documentation in several places. Where else should we mention it in the documentation?",
+    "body": "Attachment [sample_for_installation_guide.patch](tarball://root/attachments/some-uuid/ticket7617/sample_for_installation_guide.patch) by ddrake created at 2009-12-11 09:35:44\n\nI've attached a draft of what we might add to the installation guide to help users, well, install SageTeX. I'd also like to add something to the reference manual, as users might after installation want to use SageTeX and not think of \"installing\" anything new (since their friends will tell them it's included in Sage). Mostly, I think we need to put pointers to the SageTeX documentation in several places. Where else should we mention it in the documentation?",
     "created_at": "2009-12-11T09:35:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
@@ -285,7 +285,7 @@ archive/issue_comments_065068.json:
 }
 ```
 
-Attachment
+Attachment [sample_for_installation_guide.patch](tarball://root/attachments/some-uuid/ticket7617/sample_for_installation_guide.patch) by ddrake created at 2009-12-11 09:35:44
 
 I've attached a draft of what we might add to the installation guide to help users, well, install SageTeX. I'd also like to add something to the reference manual, as users might after installation want to use SageTeX and not think of "installing" anything new (since their friends will tell them it's included in Sage). Mostly, I think we need to put pointers to the SageTeX documentation in several places. Where else should we mention it in the documentation?
 
@@ -296,7 +296,7 @@ I've attached a draft of what we might add to the installation guide to help use
 archive/issue_comments_065069.json:
 ```json
 {
-    "body": "Attachment\n\nadditions to the installation guide and tutorial",
+    "body": "Attachment [trac_7617.patch](tarball://root/attachments/some-uuid/ticket7617/trac_7617.patch) by ddrake created at 2009-12-22 08:23:43\n\nadditions to the installation guide and tutorial",
     "created_at": "2009-12-22T08:23:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
@@ -305,7 +305,7 @@ archive/issue_comments_065069.json:
 }
 ```
 
-Attachment
+Attachment [trac_7617.patch](tarball://root/attachments/some-uuid/ticket7617/trac_7617.patch) by ddrake created at 2009-12-22 08:23:43
 
 additions to the installation guide and tutorial
 
@@ -450,7 +450,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_065077.json:
 ```json
 {
-    "body": "Attachment\n\nadditions to the installation guide and tutorial",
+    "body": "Attachment [trac_7617.2.patch](tarball://root/attachments/some-uuid/ticket7617/trac_7617.2.patch) by ddrake created at 2009-12-28 08:34:19\n\nadditions to the installation guide and tutorial",
     "created_at": "2009-12-28T08:34:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
@@ -459,7 +459,7 @@ archive/issue_comments_065077.json:
 }
 ```
 
-Attachment
+Attachment [trac_7617.2.patch](tarball://root/attachments/some-uuid/ticket7617/trac_7617.2.patch) by ddrake created at 2009-12-28 08:34:19
 
 additions to the installation guide and tutorial
 
@@ -657,7 +657,7 @@ The "detect version mismatch ticket" is #8035.
 archive/issue_comments_065087.json:
 ```json
 {
-    "body": "Attachment\n\nadditions to the installation guide and tutorial, v3. apply only this.",
+    "body": "Attachment [trac_7617.3.patch](tarball://root/attachments/some-uuid/ticket7617/trac_7617.3.patch) by ddrake created at 2010-01-22 05:21:54\n\nadditions to the installation guide and tutorial, v3. apply only this.",
     "created_at": "2010-01-22T05:21:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
@@ -666,7 +666,7 @@ archive/issue_comments_065087.json:
 }
 ```
 
-Attachment
+Attachment [trac_7617.3.patch](tarball://root/attachments/some-uuid/ticket7617/trac_7617.3.patch) by ddrake created at 2010-01-22 05:21:54
 
 additions to the installation guide and tutorial, v3. apply only this.
 
@@ -872,7 +872,7 @@ updated deps for SageTeX
 archive/issue_comments_065098.json:
 ```json
 {
-    "body": "Attachment\n\ndifferences between deps in Sage 4.3.2.alpha0 and updated deps; don't apply",
+    "body": "Attachment [deps.patch](tarball://root/attachments/some-uuid/ticket7617/deps.patch) by mvngu created at 2010-01-29 17:47:09\n\ndifferences between deps in Sage 4.3.2.alpha0 and updated deps; don't apply",
     "created_at": "2010-01-29T17:47:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
@@ -881,7 +881,7 @@ archive/issue_comments_065098.json:
 }
 ```
 
-Attachment
+Attachment [deps.patch](tarball://root/attachments/some-uuid/ticket7617/deps.patch) by mvngu created at 2010-01-29 17:47:09
 
 differences between deps in Sage 4.3.2.alpha0 and updated deps; don't apply
 
@@ -892,7 +892,7 @@ differences between deps in Sage 4.3.2.alpha0 and updated deps; don't apply
 archive/issue_comments_065099.json:
 ```json
 {
-    "body": "Attachment\n\nupdated install for SageTeX",
+    "body": "Attachment [install](tarball://root/attachments/some-uuid/ticket7617/install) by mvngu created at 2010-01-29 17:47:34\n\nupdated install for SageTeX",
     "created_at": "2010-01-29T17:47:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
@@ -901,7 +901,7 @@ archive/issue_comments_065099.json:
 }
 ```
 
-Attachment
+Attachment [install](tarball://root/attachments/some-uuid/ticket7617/install) by mvngu created at 2010-01-29 17:47:34
 
 updated install for SageTeX
 
@@ -912,7 +912,7 @@ updated install for SageTeX
 archive/issue_comments_065100.json:
 ```json
 {
-    "body": "Attachment\n\ndifferences between install in Sage 4.3.2.alpha0 and updated install; don't apply",
+    "body": "Attachment [install.patch](tarball://root/attachments/some-uuid/ticket7617/install.patch) by mvngu created at 2010-01-29 17:48:01\n\ndifferences between install in Sage 4.3.2.alpha0 and updated install; don't apply",
     "created_at": "2010-01-29T17:48:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
@@ -921,7 +921,7 @@ archive/issue_comments_065100.json:
 }
 ```
 
-Attachment
+Attachment [install.patch](tarball://root/attachments/some-uuid/ticket7617/install.patch) by mvngu created at 2010-01-29 17:48:01
 
 differences between install in Sage 4.3.2.alpha0 and updated install; don't apply
 

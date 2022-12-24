@@ -111,7 +111,7 @@ Changing status from new to needs_review.
 archive/issue_comments_092861.json:
 ```json
 {
-    "body": "Attachment\n\npatch",
+    "body": "Attachment [trac_9598_build_cvxopt_with_glpk.patch](tarball://root/attachments/some-uuid/ticket9598/trac_9598_build_cvxopt_with_glpk.patch) by dunfield created at 2010-07-26 03:03:37\n\npatch",
     "created_at": "2010-07-26T03:03:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9598",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_092861.json:
 }
 ```
 
-Attachment
+Attachment [trac_9598_build_cvxopt_with_glpk.patch](tarball://root/attachments/some-uuid/ticket9598/trac_9598_build_cvxopt_with_glpk.patch) by dunfield created at 2010-07-26 03:03:37
 
 patch
 
@@ -502,7 +502,7 @@ As for a doctest, I think what schilly used in comment 42 of #6456 would work fi
 archive/issue_comments_092875.json:
 ```json
 {
-    "body": "Attachment\n\ndevel/sage/doc/en/numerical_sage/cvxopt.rst",
+    "body": "Attachment [trac_9598_cvxopt_doc_update.patch](tarball://root/attachments/some-uuid/ticket9598/trac_9598_cvxopt_doc_update.patch) by dunfield created at 2010-07-26 19:44:00\n\ndevel/sage/doc/en/numerical_sage/cvxopt.rst",
     "created_at": "2010-07-26T19:44:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9598",
     "type": "issue_comment",
@@ -511,7 +511,7 @@ archive/issue_comments_092875.json:
 }
 ```
 
-Attachment
+Attachment [trac_9598_cvxopt_doc_update.patch](tarball://root/attachments/some-uuid/ticket9598/trac_9598_cvxopt_doc_update.patch) by dunfield created at 2010-07-26 19:44:00
 
 devel/sage/doc/en/numerical_sage/cvxopt.rst
 
@@ -522,7 +522,7 @@ devel/sage/doc/en/numerical_sage/cvxopt.rst
 archive/issue_comments_092876.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:13 dunfield]:\n> > You do have access to a Solaris machine. In fact, you have a created a directory in /scratch on 't2'. \n> \n> Dave,\n> \n> You're confusing me (Nathan Dunfield) with Nathann Cohen, whose scratch directory you're referring to.  You can tell us apart because Nathann has three 'n's in his first name ;-).  \n> \n> As for a doctest, I think what schilly used in comment 42 of #6456 would work fine.  I've attached a patch for the documentation and also the file itself --- I'm not sure if DIma et al have also modified the docs.  \n\nSorry Nathan, you are correct. I am confusing the two of you. It is especially easy as I know Nathann Cohen has been using GLPK - I helped him make the package which is in Sage. I even cc'ed him, as I know he has been working a lot with GLPK. So when there were replies from a Nathan\n\nDo you have an account on sage.math? If so, you can have an account on the Solaris system t2.math and test there - let me know your username on sage.math. I can point you at some instructions on how to test on t2. Testing on the Solaris system sometimes gives slightly different results from other systems, as the floating point processors are not identical. (The CPUs are **totally** different to Intel or AMD CPUs - the code is not binary compatible, though it is at the source code level.)\n\nIt's not clear to me if there is a doc test or not on #6456, as it seems that #6456 is just showing the result of typing the commands at the command line. It is basically a ticket to upgrade cvxopt. \n\n\nDave",
+    "body": "Attachment [cvxopt.rst](tarball://root/attachments/some-uuid/ticket9598/cvxopt.rst) by drkirkby created at 2010-07-26 20:40:00\n\nReplying to [comment:13 dunfield]:\n> > You do have access to a Solaris machine. In fact, you have a created a directory in /scratch on 't2'. \n> \n> Dave,\n> \n> You're confusing me (Nathan Dunfield) with Nathann Cohen, whose scratch directory you're referring to.  You can tell us apart because Nathann has three 'n's in his first name ;-).  \n> \n> As for a doctest, I think what schilly used in comment 42 of #6456 would work fine.  I've attached a patch for the documentation and also the file itself --- I'm not sure if DIma et al have also modified the docs.  \n\nSorry Nathan, you are correct. I am confusing the two of you. It is especially easy as I know Nathann Cohen has been using GLPK - I helped him make the package which is in Sage. I even cc'ed him, as I know he has been working a lot with GLPK. So when there were replies from a Nathan\n\nDo you have an account on sage.math? If so, you can have an account on the Solaris system t2.math and test there - let me know your username on sage.math. I can point you at some instructions on how to test on t2. Testing on the Solaris system sometimes gives slightly different results from other systems, as the floating point processors are not identical. (The CPUs are **totally** different to Intel or AMD CPUs - the code is not binary compatible, though it is at the source code level.)\n\nIt's not clear to me if there is a doc test or not on #6456, as it seems that #6456 is just showing the result of typing the commands at the command line. It is basically a ticket to upgrade cvxopt. \n\n\nDave",
     "created_at": "2010-07-26T20:40:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9598",
     "type": "issue_comment",
@@ -531,7 +531,7 @@ archive/issue_comments_092876.json:
 }
 ```
 
-Attachment
+Attachment [cvxopt.rst](tarball://root/attachments/some-uuid/ticket9598/cvxopt.rst) by drkirkby created at 2010-07-26 20:40:00
 
 Replying to [comment:13 dunfield]:
 > > You do have access to a Solaris machine. In fact, you have a created a directory in /scratch on 't2'. 

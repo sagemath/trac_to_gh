@@ -211,7 +211,7 @@ His suggestion about watching the server log sounds pretty painful to implement,
 archive/issue_comments_025315.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3586.patch](tarball://root/attachments/some-uuid/ticket3586/sage-3586.patch) by was created at 2008-07-07 18:54:06",
     "created_at": "2008-07-07T18:54:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3586",
     "type": "issue_comment",
@@ -220,7 +220,7 @@ archive/issue_comments_025315.json:
 }
 ```
 
-Attachment
+Attachment [sage-3586.patch](tarball://root/attachments/some-uuid/ticket3586/sage-3586.patch) by was created at 2008-07-07 18:54:06
 
 
 

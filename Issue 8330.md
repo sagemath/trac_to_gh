@@ -208,7 +208,7 @@ REQUIRES #8421. Implements add/delete vertex/vertices and to_undirected to fix a
 archive/issue_comments_074182.json:
 ```json
 {
-    "body": "Attachment\n\nHello !!!\n\nNice patch, applies and does its job... I fixed one or two things... If you think they are ok, you can set this ticket to \"positive review\" :-)\n\nNathann",
+    "body": "Attachment [trac_8330-bipartite-delete-vertex.patch](tarball://root/attachments/some-uuid/ticket8330/trac_8330-bipartite-delete-vertex.patch) by ncohen created at 2010-04-01 12:30:24\n\nHello !!!\n\nNice patch, applies and does its job... I fixed one or two things... If you think they are ok, you can set this ticket to \"positive review\" :-)\n\nNathann",
     "created_at": "2010-04-01T12:30:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8330",
     "type": "issue_comment",
@@ -217,7 +217,7 @@ archive/issue_comments_074182.json:
 }
 ```
 
-Attachment
+Attachment [trac_8330-bipartite-delete-vertex.patch](tarball://root/attachments/some-uuid/ticket8330/trac_8330-bipartite-delete-vertex.patch) by ncohen created at 2010-04-01 12:30:24
 
 Hello !!!
 
@@ -232,7 +232,7 @@ Nathann
 archive/issue_comments_074183.json:
 ```json
 {
-    "body": "Attachment\n\nWell, it has been two weeks and I only fixed three lines, so let's say this ticket is positively reviewed ^^;\n\nNathann",
+    "body": "Attachment [trac_8330-smallfixes.patch](tarball://root/attachments/some-uuid/ticket8330/trac_8330-smallfixes.patch) by ncohen created at 2010-04-15 14:25:50\n\nWell, it has been two weeks and I only fixed three lines, so let's say this ticket is positively reviewed ^^;\n\nNathann",
     "created_at": "2010-04-15T14:25:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8330",
     "type": "issue_comment",
@@ -241,7 +241,7 @@ archive/issue_comments_074183.json:
 }
 ```
 
-Attachment
+Attachment [trac_8330-smallfixes.patch](tarball://root/attachments/some-uuid/ticket8330/trac_8330-smallfixes.patch) by ncohen created at 2010-04-15 14:25:50
 
 Well, it has been two weeks and I only fixed three lines, so let's say this ticket is positively reviewed ^^;
 

@@ -587,7 +587,7 @@ apply to Sage library
 archive/issue_comments_017843.json:
 ```json
 {
-    "body": "Attachment\n\nAdd a \"...\" to fix doctest on OS X.",
+    "body": "Attachment [trac2607.patch](tarball://root/attachments/some-uuid/ticket2607/trac2607.patch) by ddrake created at 2012-05-25 05:35:39\n\nAdd a \"...\" to fix doctest on OS X.",
     "created_at": "2012-05-25T05:35:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
@@ -596,7 +596,7 @@ archive/issue_comments_017843.json:
 }
 ```
 
-Attachment
+Attachment [trac2607.patch](tarball://root/attachments/some-uuid/ticket2607/trac2607.patch) by ddrake created at 2012-05-25 05:35:39
 
 Add a "..." to fix doctest on OS X.
 
@@ -1432,7 +1432,7 @@ patch trac2607-whitespace.patch with commit message
 archive/issue_comments_017885.json:
 ```json
 {
-    "body": "Attachment\n\npatch trac_2607_renaming.2.patch rebased on top of trac2607-whitespace.2.patch",
+    "body": "Attachment [trac2607-whitespace.2.patch](tarball://root/attachments/some-uuid/ticket2607/trac2607-whitespace.2.patch) by aginiewicz created at 2012-06-24 10:08:30\n\npatch trac_2607_renaming.2.patch rebased on top of trac2607-whitespace.2.patch",
     "created_at": "2012-06-24T10:08:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
@@ -1441,7 +1441,7 @@ archive/issue_comments_017885.json:
 }
 ```
 
-Attachment
+Attachment [trac2607-whitespace.2.patch](tarball://root/attachments/some-uuid/ticket2607/trac2607-whitespace.2.patch) by aginiewicz created at 2012-06-24 10:08:30
 
 patch trac_2607_renaming.2.patch rebased on top of trac2607-whitespace.2.patch
 
@@ -1452,7 +1452,7 @@ patch trac_2607_renaming.2.patch rebased on top of trac2607-whitespace.2.patch
 archive/issue_comments_017886.json:
 ```json
 {
-    "body": "Attachment\n\ndoctest and spacing cleanup",
+    "body": "Attachment [trac_2607_renaming.3.patch](tarball://root/attachments/some-uuid/ticket2607/trac_2607_renaming.3.patch) by aginiewicz created at 2012-06-24 10:08:56\n\ndoctest and spacing cleanup",
     "created_at": "2012-06-24T10:08:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
@@ -1461,7 +1461,7 @@ archive/issue_comments_017886.json:
 }
 ```
 
-Attachment
+Attachment [trac_2607_renaming.3.patch](tarball://root/attachments/some-uuid/ticket2607/trac_2607_renaming.3.patch) by aginiewicz created at 2012-06-24 10:08:56
 
 doctest and spacing cleanup
 
@@ -1490,7 +1490,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_017888.json:
 ```json
 {
-    "body": "Attachment\n\nI added the commit message to whitespace patch and rebased renaming patch based on it (keeping original authors/dates, I did not wanted to claim their work and it was minor rebase only to accommodate the commit message taken from comment by Dan).\n\nI also uploaded trac2607-doctest-and-spacing.patch, which adjusts doctest for numerical noise, fixes spacing to be more consistent (3 places, spaces between arguments - i.e. \"0,5\" looks very close to \"0.5\" instead of \"0, 5\") and changed \"f.find_local_minimum(\" to \"find_local_minimum(f\" - because after all this test occurs in definition of find_local_minimum function, not method.",
+    "body": "Attachment [trac2607-doctest-and-spacing.patch](tarball://root/attachments/some-uuid/ticket2607/trac2607-doctest-and-spacing.patch) by aginiewicz created at 2012-06-24 10:13:11\n\nI added the commit message to whitespace patch and rebased renaming patch based on it (keeping original authors/dates, I did not wanted to claim their work and it was minor rebase only to accommodate the commit message taken from comment by Dan).\n\nI also uploaded trac2607-doctest-and-spacing.patch, which adjusts doctest for numerical noise, fixes spacing to be more consistent (3 places, spaces between arguments - i.e. \"0,5\" looks very close to \"0.5\" instead of \"0, 5\") and changed \"f.find_local_minimum(\" to \"find_local_minimum(f\" - because after all this test occurs in definition of find_local_minimum function, not method.",
     "created_at": "2012-06-24T10:13:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
@@ -1499,7 +1499,7 @@ archive/issue_comments_017888.json:
 }
 ```
 
-Attachment
+Attachment [trac2607-doctest-and-spacing.patch](tarball://root/attachments/some-uuid/ticket2607/trac2607-doctest-and-spacing.patch) by aginiewicz created at 2012-06-24 10:13:11
 
 I added the commit message to whitespace patch and rebased renaming patch based on it (keeping original authors/dates, I did not wanted to claim their work and it was minor rebase only to accommodate the commit message taken from comment by Dan).
 
@@ -1584,7 +1584,7 @@ Updated patch
 archive/issue_comments_017893.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_2607_update_deprecation.patch](tarball://root/attachments/some-uuid/ticket2607/trac_2607_update_deprecation.patch) by vbraun created at 2012-06-30 18:31:26",
     "created_at": "2012-06-30T18:31:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
@@ -1593,7 +1593,7 @@ archive/issue_comments_017893.json:
 }
 ```
 
-Attachment
+Attachment [trac_2607_update_deprecation.patch](tarball://root/attachments/some-uuid/ticket2607/trac_2607_update_deprecation.patch) by vbraun created at 2012-06-30 18:31:26
 
 
 

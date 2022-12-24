@@ -93,7 +93,7 @@ Changing status from new to needs_review.
 archive/issue_comments_076027.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch should fix the bug and add plenty of trivial functionality to galois representations attached to elliptic curves. It should also give a new function `image_type` that tries to determine the image. Currently this gives back a string rather than a group. Also, it does not determine it completely in some cases, like when there is an isogeny is only says that the image is contained in the Borel, but does not try to determine if it is the full Borel or not. If someone wants this, we can try to add it later.",
+    "body": "Attachment [trac_8451.patch](tarball://root/attachments/some-uuid/ticket8451/trac_8451.patch) by wuthrich created at 2010-03-11 19:00:13\n\nThe patch should fix the bug and add plenty of trivial functionality to galois representations attached to elliptic curves. It should also give a new function `image_type` that tries to determine the image. Currently this gives back a string rather than a group. Also, it does not determine it completely in some cases, like when there is an isogeny is only says that the image is contained in the Borel, but does not try to determine if it is the full Borel or not. If someone wants this, we can try to add it later.",
     "created_at": "2010-03-11T19:00:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8451",
     "type": "issue_comment",
@@ -102,7 +102,7 @@ archive/issue_comments_076027.json:
 }
 ```
 
-Attachment
+Attachment [trac_8451.patch](tarball://root/attachments/some-uuid/ticket8451/trac_8451.patch) by wuthrich created at 2010-03-11 19:00:13
 
 The patch should fix the bug and add plenty of trivial functionality to galois representations attached to elliptic curves. It should also give a new function `image_type` that tries to determine the image. Currently this gives back a string rather than a group. Also, it does not determine it completely in some cases, like when there is an isogeny is only says that the image is contained in the Borel, but does not try to determine if it is the full Borel or not. If someone wants this, we can try to add it later.
 
@@ -281,7 +281,7 @@ My response, is that yes, I'm sure we can set you up with everything you want ab
 archive/issue_comments_076033.json:
 ```json
 {
-    "body": "Attachment\n\nscond patch to be applied after the first",
+    "body": "Attachment [trac_8451_2.patch](tarball://root/attachments/some-uuid/ticket8451/trac_8451_2.patch) by wuthrich created at 2010-04-13 14:37:50\n\nscond patch to be applied after the first",
     "created_at": "2010-04-13T14:37:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8451",
     "type": "issue_comment",
@@ -290,7 +290,7 @@ archive/issue_comments_076033.json:
 }
 ```
 
-Attachment
+Attachment [trac_8451_2.patch](tarball://root/attachments/some-uuid/ticket8451/trac_8451_2.patch) by wuthrich created at 2010-04-13 14:37:50
 
 scond patch to be applied after the first
 
@@ -369,7 +369,7 @@ and then everything seems fine.  This is trac_8541_3.patch.
 archive/issue_comments_076035.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8451_3.patch](tarball://root/attachments/some-uuid/ticket8451/trac_8451_3.patch) by was created at 2010-04-20 22:05:58",
     "created_at": "2010-04-20T22:05:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8451",
     "type": "issue_comment",
@@ -378,7 +378,7 @@ archive/issue_comments_076035.json:
 }
 ```
 
-Attachment
+Attachment [trac_8451_3.patch](tarball://root/attachments/some-uuid/ticket8451/trac_8451_3.patch) by was created at 2010-04-20 22:05:58
 
 
 
@@ -545,7 +545,7 @@ I juts came back from holidays and I have many other things to do, but I will so
 archive/issue_comments_076040.json:
 ```json
 {
-    "body": "Attachment\n\nexported against 4.5.2; replaces all previous patches",
+    "body": "Attachment [trac_8451_new.patch](tarball://root/attachments/some-uuid/ticket8451/trac_8451_new.patch) by wuthrich created at 2010-09-02 19:36:03\n\nexported against 4.5.2; replaces all previous patches",
     "created_at": "2010-09-02T19:36:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8451",
     "type": "issue_comment",
@@ -554,7 +554,7 @@ archive/issue_comments_076040.json:
 }
 ```
 
-Attachment
+Attachment [trac_8451_new.patch](tarball://root/attachments/some-uuid/ticket8451/trac_8451_new.patch) by wuthrich created at 2010-09-02 19:36:03
 
 exported against 4.5.2; replaces all previous patches
 

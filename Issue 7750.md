@@ -80,7 +80,7 @@ Changing status from new to needs_review.
 archive/issue_comments_066739.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7750-search-doc.patch](tarball://root/attachments/some-uuid/ticket7750/trac_7750-search-doc.patch) by jhpalmieri created at 2009-12-22 21:18:20",
     "created_at": "2009-12-22T21:18:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7750",
     "type": "issue_comment",
@@ -89,7 +89,7 @@ archive/issue_comments_066739.json:
 }
 ```
 
-Attachment
+Attachment [trac_7750-search-doc.patch](tarball://root/attachments/some-uuid/ticket7750/trac_7750-search-doc.patch) by jhpalmieri created at 2009-12-22 21:18:20
 
 
 

@@ -49,7 +49,7 @@ we already have the checkboxes, so maybe just another menu option that would tak
 archive/issue_comments_018839.json:
 ```json
 {
-    "body": "Attachment\n\nThis should be fixed to be non-blocking, possibly even with feedback (as it might be slow).",
+    "body": "Attachment [2740-download-all.patch](tarball://root/attachments/some-uuid/ticket2740/2740-download-all.patch) by robertwb created at 2009-04-14 12:47:59\n\nThis should be fixed to be non-blocking, possibly even with feedback (as it might be slow).",
     "created_at": "2009-04-14T12:47:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2740",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_018839.json:
 }
 ```
 
-Attachment
+Attachment [2740-download-all.patch](tarball://root/attachments/some-uuid/ticket2740/2740-download-all.patch) by robertwb created at 2009-04-14 12:47:59
 
 This should be fixed to be non-blocking, possibly even with feedback (as it might be slow).
 
@@ -69,7 +69,7 @@ This should be fixed to be non-blocking, possibly even with feedback (as it migh
 archive/issue_comments_018840.json:
 ```json
 {
-    "body": "Attachment\n\nallows downloading of checked worksheets only",
+    "body": "Attachment [2740-download-checked.patch](tarball://root/attachments/some-uuid/ticket2740/2740-download-checked.patch) by robertwb created at 2009-04-14 13:35:44\n\nallows downloading of checked worksheets only",
     "created_at": "2009-04-14T13:35:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2740",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_018840.json:
 }
 ```
 
-Attachment
+Attachment [2740-download-checked.patch](tarball://root/attachments/some-uuid/ticket2740/2740-download-checked.patch) by robertwb created at 2009-04-14 13:35:44
 
 allows downloading of checked worksheets only
 

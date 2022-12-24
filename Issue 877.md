@@ -132,7 +132,7 @@ To test: I know that the files steenrod_algebra_element.py and structure/factori
 archive/issue_comments_005430.json:
 ```json
 {
-    "body": "Attachment\n\napply to scripts repository",
+    "body": "Attachment [trac_877-scripts-coverage.patch](tarball://root/attachments/some-uuid/ticket877/trac_877-scripts-coverage.patch) by jhpalmieri created at 2009-07-24 23:55:48\n\napply to scripts repository",
     "created_at": "2009-07-24T23:55:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/877",
     "type": "issue_comment",
@@ -141,7 +141,7 @@ archive/issue_comments_005430.json:
 }
 ```
 
-Attachment
+Attachment [trac_877-scripts-coverage.patch](tarball://root/attachments/some-uuid/ticket877/trac_877-scripts-coverage.patch) by jhpalmieri created at 2009-07-24 23:55:48
 
 apply to scripts repository
 
@@ -241,7 +241,7 @@ use this version instead
 archive/issue_comments_005435.json:
 ```json
 {
-    "body": "Attachment\n\ntrac_877-scripts-coverage2.patch interchanges the lines that schilly mentions.  It also moves another re.compile statement earlier.  It also stores the list of nested functions in the list \"closures\", for possible future use.",
+    "body": "Attachment [trac_877-scripts-coverage2.patch](tarball://root/attachments/some-uuid/ticket877/trac_877-scripts-coverage2.patch) by jhpalmieri created at 2009-07-25 15:00:33\n\ntrac_877-scripts-coverage2.patch interchanges the lines that schilly mentions.  It also moves another re.compile statement earlier.  It also stores the list of nested functions in the list \"closures\", for possible future use.",
     "created_at": "2009-07-25T15:00:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/877",
     "type": "issue_comment",
@@ -250,7 +250,7 @@ archive/issue_comments_005435.json:
 }
 ```
 
-Attachment
+Attachment [trac_877-scripts-coverage2.patch](tarball://root/attachments/some-uuid/ticket877/trac_877-scripts-coverage2.patch) by jhpalmieri created at 2009-07-25 15:00:33
 
 trac_877-scripts-coverage2.patch interchanges the lines that schilly mentions.  It also moves another re.compile statement earlier.  It also stores the list of nested functions in the list "closures", for possible future use.
 

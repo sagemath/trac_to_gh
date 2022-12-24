@@ -48,7 +48,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9439
 archive/issue_comments_090362.json:
 ```json
 {
-    "body": "Attachment\n\ndraft of hyperbolic geometry space",
+    "body": "Attachment [trac_9439-hyperbolic geometry.py](tarball://root/attachments/some-uuid/ticket9439/trac_9439-hyperbolic geometry.py) by vdelecroix created at 2010-07-06 16:16:12\n\ndraft of hyperbolic geometry space",
     "created_at": "2010-07-06T16:16:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
@@ -57,7 +57,7 @@ archive/issue_comments_090362.json:
 }
 ```
 
-Attachment
+Attachment [trac_9439-hyperbolic geometry.py](tarball://root/attachments/some-uuid/ticket9439/trac_9439-hyperbolic geometry.py) by vdelecroix created at 2010-07-06 16:16:12
 
 draft of hyperbolic geometry space
 
@@ -86,7 +86,7 @@ Changing assignee from mhampton to vdelecroix.
 archive/issue_comments_090364.json:
 ```json
 {
-    "body": "Attachment\n\nthis patch contains the previous one",
+    "body": "Attachment [trac_9439-hyperbolic_geometry.patch](tarball://root/attachments/some-uuid/ticket9439/trac_9439-hyperbolic_geometry.patch) by vdelecroix created at 2010-07-20 17:58:01\n\nthis patch contains the previous one",
     "created_at": "2010-07-20T17:58:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
@@ -95,7 +95,7 @@ archive/issue_comments_090364.json:
 }
 ```
 
-Attachment
+Attachment [trac_9439-hyperbolic_geometry.patch](tarball://root/attachments/some-uuid/ticket9439/trac_9439-hyperbolic_geometry.patch) by vdelecroix created at 2010-07-20 17:58:01
 
 this patch contains the previous one
 
@@ -192,7 +192,7 @@ Okay.  Another possibility is to have the matrix ((a, b), (c, d)) in SL_2(ZZ) an
 archive/issue_comments_090368.json:
 ```json
 {
-    "body": "Attachment\n\nA sketch for hyperbolic 2-space implementation.",
+    "body": "Attachment [trac_9439-hyperbolic_2space.patch](tarball://root/attachments/some-uuid/ticket9439/trac_9439-hyperbolic_2space.patch) by mraum created at 2011-12-20 15:50:14\n\nA sketch for hyperbolic 2-space implementation.",
     "created_at": "2011-12-20T15:50:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
@@ -201,7 +201,7 @@ archive/issue_comments_090368.json:
 }
 ```
 
-Attachment
+Attachment [trac_9439-hyperbolic_2space.patch](tarball://root/attachments/some-uuid/ticket9439/trac_9439-hyperbolic_2space.patch) by mraum created at 2011-12-20 15:50:14
 
 A sketch for hyperbolic 2-space implementation.
 
@@ -212,7 +212,7 @@ A sketch for hyperbolic 2-space implementation.
 archive/issue_comments_090369.json:
 ```json
 {
-    "body": "Attachment\n\nSame patch with .py~ files removed",
+    "body": "Attachment [trac_9439-hyperbolic_2space.2.patch](tarball://root/attachments/some-uuid/ticket9439/trac_9439-hyperbolic_2space.2.patch) by johanbosman created at 2011-12-20 16:13:57\n\nSame patch with .py~ files removed",
     "created_at": "2011-12-20T16:13:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
@@ -221,7 +221,7 @@ archive/issue_comments_090369.json:
 }
 ```
 
-Attachment
+Attachment [trac_9439-hyperbolic_2space.2.patch](tarball://root/attachments/some-uuid/ticket9439/trac_9439-hyperbolic_2space.2.patch) by johanbosman created at 2011-12-20 16:13:57
 
 Same patch with .py~ files removed
 
@@ -250,7 +250,7 @@ Changing keywords from "hyperbolic geometry, Poincare disc, upper half plane" to
 archive/issue_comments_090371.json:
 ```json
 {
-    "body": "Attachment\n\nimplementations of geodesics, triangles, and polygons",
+    "body": "Attachment [trac_9439-hyperbolic_upper_half_plane.patch](tarball://root/attachments/some-uuid/ticket9439/trac_9439-hyperbolic_upper_half_plane.patch) by mraum created at 2011-12-20 18:06:16\n\nimplementations of geodesics, triangles, and polygons",
     "created_at": "2011-12-20T18:06:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
@@ -259,7 +259,7 @@ archive/issue_comments_090371.json:
 }
 ```
 
-Attachment
+Attachment [trac_9439-hyperbolic_upper_half_plane.patch](tarball://root/attachments/some-uuid/ticket9439/trac_9439-hyperbolic_upper_half_plane.patch) by mraum created at 2011-12-20 18:06:16
 
 implementations of geodesics, triangles, and polygons
 
@@ -270,7 +270,7 @@ implementations of geodesics, triangles, and polygons
 archive/issue_comments_090372.json:
 ```json
 {
-    "body": "Attachment\n\nContains (and thus replaces) previous patch",
+    "body": "Attachment [trac_9439_with_points.patch](tarball://root/attachments/some-uuid/ticket9439/trac_9439_with_points.patch) by johanbosman created at 2011-12-20 23:25:34\n\nContains (and thus replaces) previous patch",
     "created_at": "2011-12-20T23:25:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
@@ -279,7 +279,7 @@ archive/issue_comments_090372.json:
 }
 ```
 
-Attachment
+Attachment [trac_9439_with_points.patch](tarball://root/attachments/some-uuid/ticket9439/trac_9439_with_points.patch) by johanbosman created at 2011-12-20 23:25:34
 
 Contains (and thus replaces) previous patch
 
@@ -308,7 +308,7 @@ The patch I've just uploaded makes Sage import HH at startup.  I propose that we
 archive/issue_comments_090374.json:
 ```json
 {
-    "body": "Attachment\n\nSecond attempt; hopefully the point file is added. :).",
+    "body": "Attachment [trac_9439_with_points.2.patch](tarball://root/attachments/some-uuid/ticket9439/trac_9439_with_points.2.patch) by johanbosman created at 2011-12-21 12:56:30\n\nSecond attempt; hopefully the point file is added. :).",
     "created_at": "2011-12-21T12:56:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
@@ -317,7 +317,7 @@ archive/issue_comments_090374.json:
 }
 ```
 
-Attachment
+Attachment [trac_9439_with_points.2.patch](tarball://root/attachments/some-uuid/ticket9439/trac_9439_with_points.2.patch) by johanbosman created at 2011-12-21 12:56:30
 
 Second attempt; hopefully the point file is added. :).
 
@@ -346,7 +346,7 @@ Apparently not, so let's just upload the file. :P.
 archive/issue_comments_090376.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [upper_half_plane_point.py](tarball://root/attachments/some-uuid/ticket9439/upper_half_plane_point.py) by mraum created at 2011-12-21 20:57:06",
     "created_at": "2011-12-21T20:57:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
@@ -355,7 +355,7 @@ archive/issue_comments_090376.json:
 }
 ```
 
-Attachment
+Attachment [upper_half_plane_point.py](tarball://root/attachments/some-uuid/ticket9439/upper_half_plane_point.py) by mraum created at 2011-12-21 20:57:06
 
 
 
@@ -364,7 +364,7 @@ Attachment
 archive/issue_comments_090377.json:
 ```json
 {
-    "body": "Attachment\n\nI simply uploaded all current files, because I messed up my HG status.\n\nI couldn't fix the problem with conversion into CC, which is now #12216. I replaced it by the method toCC.\n\nI haven't checked whether triangles work, but I am exhausted. Plotting polygons works and it should be easy to fill in the tests, that are all stubs for the moment.",
+    "body": "Attachment [trac_9439_hyperbolic_space.tar.gz](tarball://root/attachments/some-uuid/ticket9439/trac_9439_hyperbolic_space.tar.gz) by mraum created at 2011-12-21 20:59:53\n\nI simply uploaded all current files, because I messed up my HG status.\n\nI couldn't fix the problem with conversion into CC, which is now #12216. I replaced it by the method toCC.\n\nI haven't checked whether triangles work, but I am exhausted. Plotting polygons works and it should be easy to fill in the tests, that are all stubs for the moment.",
     "created_at": "2011-12-21T20:59:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
@@ -373,7 +373,7 @@ archive/issue_comments_090377.json:
 }
 ```
 
-Attachment
+Attachment [trac_9439_hyperbolic_space.tar.gz](tarball://root/attachments/some-uuid/ticket9439/trac_9439_hyperbolic_space.tar.gz) by mraum created at 2011-12-21 20:59:53
 
 I simply uploaded all current files, because I messed up my HG status.
 
@@ -581,7 +581,7 @@ archive/issue_comments_090386.json:
 archive/issue_comments_090387.json:
 ```json
 {
-    "body": "Attachment\n\n77% coverage",
+    "body": "Attachment [trac_9439-hyperbolic_geometry_review_fc.patch](tarball://root/attachments/some-uuid/ticket9439/trac_9439-hyperbolic_geometry_review_fc.patch) by chapoton created at 2013-06-10 19:38:46\n\n77% coverage",
     "created_at": "2013-06-10T19:38:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
@@ -590,7 +590,7 @@ archive/issue_comments_090387.json:
 }
 ```
 
-Attachment
+Attachment [trac_9439-hyperbolic_geometry_review_fc.patch](tarball://root/attachments/some-uuid/ticket9439/trac_9439-hyperbolic_geometry_review_fc.patch) by chapoton created at 2013-06-10 19:38:46
 
 77% coverage
 
@@ -601,7 +601,7 @@ Attachment
 archive/issue_comments_090388.json:
 ```json
 {
-    "body": "Attachment\n\nalternative implementation of hyperbolic space",
+    "body": "Attachment [hyperbolic_space.patch](tarball://root/attachments/some-uuid/ticket9439/hyperbolic_space.patch) by glaun created at 2013-06-26 06:42:53\n\nalternative implementation of hyperbolic space",
     "created_at": "2013-06-26T06:42:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
@@ -610,7 +610,7 @@ archive/issue_comments_090388.json:
 }
 ```
 
-Attachment
+Attachment [hyperbolic_space.patch](tarball://root/attachments/some-uuid/ticket9439/hyperbolic_space.patch) by glaun created at 2013-06-26 06:42:53
 
 alternative implementation of hyperbolic space
 
@@ -639,7 +639,7 @@ demonstration of the hyperbolic geometry functionality
 archive/issue_comments_090390.json:
 ```json
 {
-    "body": "Attachment\n\nI atteched the long-overdue patch that I mentioned 9 months ago.  Sorry for the delay.  The patch has the following positive properties:\n* Hyperbolic point, geodesic, and isometry objects are implemented for each model.\n* Upper half plane, Poincare disk, Klein disk, and hyperboloid model all implemented.\n* Round-trip conversion among models works.  E.g. converting from the upper half plane to the hyperboloid and then back to the half plane gives the same point (up to numerical precision).  This was harder than might first be apparent since there are so many isomorphisms to choose from and they all have to play well together.\n* 100% test coverage, all tests pass\nAlso note the following negative things:\n* Points are not yet implemented as (point, isometry) pairs as suggested in Comment 3.\n* My handling of numerical computations could probably be significantly improved, as can the overall organization.  There may be features that are unnecessary or are vestigial from earlier versions.\n* Symbolic computations can take an incredibly long time.  I'm not sure if this is my fault (e.g. I should write functions to deal with this) or simply a drawback of allowing symbolic computations.\nI intend to comb through the previously attached patches and merge what I can.  I have also attached a filecalled hyp_demo.sage that demos the functionality of the implementation.",
+    "body": "Attachment [hyp_demo.sage](tarball://root/attachments/some-uuid/ticket9439/hyp_demo.sage) by glaun created at 2013-06-26 06:53:56\n\nI atteched the long-overdue patch that I mentioned 9 months ago.  Sorry for the delay.  The patch has the following positive properties:\n* Hyperbolic point, geodesic, and isometry objects are implemented for each model.\n* Upper half plane, Poincare disk, Klein disk, and hyperboloid model all implemented.\n* Round-trip conversion among models works.  E.g. converting from the upper half plane to the hyperboloid and then back to the half plane gives the same point (up to numerical precision).  This was harder than might first be apparent since there are so many isomorphisms to choose from and they all have to play well together.\n* 100% test coverage, all tests pass\nAlso note the following negative things:\n* Points are not yet implemented as (point, isometry) pairs as suggested in Comment 3.\n* My handling of numerical computations could probably be significantly improved, as can the overall organization.  There may be features that are unnecessary or are vestigial from earlier versions.\n* Symbolic computations can take an incredibly long time.  I'm not sure if this is my fault (e.g. I should write functions to deal with this) or simply a drawback of allowing symbolic computations.\nI intend to comb through the previously attached patches and merge what I can.  I have also attached a filecalled hyp_demo.sage that demos the functionality of the implementation.",
     "created_at": "2013-06-26T06:53:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
@@ -648,7 +648,7 @@ archive/issue_comments_090390.json:
 }
 ```
 
-Attachment
+Attachment [hyp_demo.sage](tarball://root/attachments/some-uuid/ticket9439/hyp_demo.sage) by glaun created at 2013-06-26 06:53:56
 
 I atteched the long-overdue patch that I mentioned 9 months ago.  Sorry for the delay.  The patch has the following positive properties:
 * Hyperbolic point, geodesic, and isometry objects are implemented for each model.
@@ -983,7 +983,7 @@ Updated hyperbolic space implementation.
 archive/issue_comments_090399.json:
 ```json
 {
-    "body": "Attachment\n\nI just attached a new version.  This one allows things like UHP.point(0) or KM.point((1/2, 1/2)), and similarly UHP.geodesic([start, finish]), and UHP.isometry(some_matrix).  \n\nThe class structure is somewhat complicated, but it's designed to make it easy to implement new models of 2D and 3D geometry.  Here's how it works:\n* The hyperbolic_model module contains data about each individual model, such as its name, the name of its isometry group, and dictionaries of maps to convert points and isometries to other models and so on.\n* the hyperbolic_point, hyperbolic_bdry_point, hyperbolic_geodesic, and hyperbolic_isometry modules all do what they sound like.  The methods in these modules are meant to be as general and abstract as possible.  Ideally they should barely have to be touched to implement new models of hyperbolic space.\n* hyperbolic_methods implements any methods that involve doing computations with actual numbers.  These methods have their own module because they are more likely to change if it turns out some computation is not efficient.  Also any model of hyperbolic geometry can choose to do computations in another model and convert the results.  In the current patch, every model does its computations in the upper half plane and then converts back to the desired model.  \n* hyperbolic_factory and model_factory are just factory patterns that make the whole abstract structure work.\n* finally, hyperbolic_interface is the module that contains the objects UHP, HM, KM, and PD that allow operations like UHP.point(1 + I).  These are just more pleasant user interfaces to methods in other classes.\n\nTo implement another 2D model, one mainly has to put the model information in hyperbolic_model and write down maps to all of the other models.  To implement a 3D model, one also has to implement hyperbolic_methods for at least one model (say the upper half space model).  In both cases there is a tiny amount of book keeping that must also be done in updating the factory and other modules with one or two lines of code.",
+    "body": "Attachment [trac_9439_hyperbolic_space.patch](tarball://root/attachments/some-uuid/ticket9439/trac_9439_hyperbolic_space.patch) by glaun created at 2013-09-10 03:13:27\n\nI just attached a new version.  This one allows things like UHP.point(0) or KM.point((1/2, 1/2)), and similarly UHP.geodesic([start, finish]), and UHP.isometry(some_matrix).  \n\nThe class structure is somewhat complicated, but it's designed to make it easy to implement new models of 2D and 3D geometry.  Here's how it works:\n* The hyperbolic_model module contains data about each individual model, such as its name, the name of its isometry group, and dictionaries of maps to convert points and isometries to other models and so on.\n* the hyperbolic_point, hyperbolic_bdry_point, hyperbolic_geodesic, and hyperbolic_isometry modules all do what they sound like.  The methods in these modules are meant to be as general and abstract as possible.  Ideally they should barely have to be touched to implement new models of hyperbolic space.\n* hyperbolic_methods implements any methods that involve doing computations with actual numbers.  These methods have their own module because they are more likely to change if it turns out some computation is not efficient.  Also any model of hyperbolic geometry can choose to do computations in another model and convert the results.  In the current patch, every model does its computations in the upper half plane and then converts back to the desired model.  \n* hyperbolic_factory and model_factory are just factory patterns that make the whole abstract structure work.\n* finally, hyperbolic_interface is the module that contains the objects UHP, HM, KM, and PD that allow operations like UHP.point(1 + I).  These are just more pleasant user interfaces to methods in other classes.\n\nTo implement another 2D model, one mainly has to put the model information in hyperbolic_model and write down maps to all of the other models.  To implement a 3D model, one also has to implement hyperbolic_methods for at least one model (say the upper half space model).  In both cases there is a tiny amount of book keeping that must also be done in updating the factory and other modules with one or two lines of code.",
     "created_at": "2013-09-10T03:13:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
@@ -992,7 +992,7 @@ archive/issue_comments_090399.json:
 }
 ```
 
-Attachment
+Attachment [trac_9439_hyperbolic_space.patch](tarball://root/attachments/some-uuid/ticket9439/trac_9439_hyperbolic_space.patch) by glaun created at 2013-09-10 03:13:27
 
 I just attached a new version.  This one allows things like UHP.point(0) or KM.point((1/2, 1/2)), and similarly UHP.geodesic([start, finish]), and UHP.isometry(some_matrix).  
 
@@ -1030,7 +1030,7 @@ Updated demo of hyperbolic space.
 archive/issue_comments_090401.json:
 ```json
 {
-    "body": "Attachment\n\nI had occasion yesterday to use my most recent patch for actual computations that involve a lot of model changing, and I realized it's shamefully buggy/nonfunctioning.  I fixed a few of the obvious bugs but I'll add more tests before I repost to make sure that I haven't introduced other bugs.",
+    "body": "Attachment [hyp_demo.2.sage](tarball://root/attachments/some-uuid/ticket9439/hyp_demo.2.sage) by glaun created at 2013-09-19 13:23:07\n\nI had occasion yesterday to use my most recent patch for actual computations that involve a lot of model changing, and I realized it's shamefully buggy/nonfunctioning.  I fixed a few of the obvious bugs but I'll add more tests before I repost to make sure that I haven't introduced other bugs.",
     "created_at": "2013-09-19T13:23:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
@@ -1039,7 +1039,7 @@ archive/issue_comments_090401.json:
 }
 ```
 
-Attachment
+Attachment [hyp_demo.2.sage](tarball://root/attachments/some-uuid/ticket9439/hyp_demo.2.sage) by glaun created at 2013-09-19 13:23:07
 
 I had occasion yesterday to use my most recent patch for actual computations that involve a lot of model changing, and I realized it's shamefully buggy/nonfunctioning.  I fixed a few of the obvious bugs but I'll add more tests before I repost to make sure that I haven't introduced other bugs.
 
@@ -1068,7 +1068,7 @@ Bug fixes and some new features.
 archive/issue_comments_090403.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9439_10_03_2013.patch](tarball://root/attachments/some-uuid/ticket9439/trac_9439_10_03_2013.patch) by glaun created at 2013-11-21 00:50:34",
     "created_at": "2013-11-21T00:50:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
@@ -1077,7 +1077,7 @@ archive/issue_comments_090403.json:
 }
 ```
 
-Attachment
+Attachment [trac_9439_10_03_2013.patch](tarball://root/attachments/some-uuid/ticket9439/trac_9439_10_03_2013.patch) by glaun created at 2013-11-21 00:50:34
 
 
 
@@ -1122,7 +1122,7 @@ This patch contains the previous ones as well as some changes to docstrings.
 archive/issue_comments_090406.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9439_11_20_2013.patch](tarball://root/attachments/some-uuid/ticket9439/trac_9439_11_20_2013.patch) by glaun created at 2013-11-21 01:17:42",
     "created_at": "2013-11-21T01:17:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
@@ -1131,7 +1131,7 @@ archive/issue_comments_090406.json:
 }
 ```
 
-Attachment
+Attachment [trac_9439_11_20_2013.patch](tarball://root/attachments/some-uuid/ticket9439/trac_9439_11_20_2013.patch) by glaun created at 2013-11-21 01:17:42
 
 
 

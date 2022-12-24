@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4310
 archive/issue_comments_031557.json:
 ```json
 {
-    "body": "Attachment\n\nGrammar comment: \"Deprecate\" is spelled with an e in the middle, not an i.\n\nDid you know that \"deprecate\" used to mean \"to pray against\" (as an evil) and comes from the latin roots de + precari (precari=\"to pray\").  I just learned that when I looked it up.  It certainly adds emphasis to deprecation statements if people are praying against the evil of whatever is being deprecated!  See http://www.merriam-webster.com/dictionary/deprecate",
+    "body": "Attachment [4310-coerce-simplification.patch](tarball://root/attachments/some-uuid/ticket4310/4310-coerce-simplification.patch) by jason created at 2008-10-16 20:58:26\n\nGrammar comment: \"Deprecate\" is spelled with an e in the middle, not an i.\n\nDid you know that \"deprecate\" used to mean \"to pray against\" (as an evil) and comes from the latin roots de + precari (precari=\"to pray\").  I just learned that when I looked it up.  It certainly adds emphasis to deprecation statements if people are praying against the evil of whatever is being deprecated!  See http://www.merriam-webster.com/dictionary/deprecate",
     "created_at": "2008-10-16T20:58:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4310",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_031557.json:
 }
 ```
 
-Attachment
+Attachment [4310-coerce-simplification.patch](tarball://root/attachments/some-uuid/ticket4310/4310-coerce-simplification.patch) by jason created at 2008-10-16 20:58:26
 
 Grammar comment: "Deprecate" is spelled with an e in the middle, not an i.
 
@@ -55,7 +55,7 @@ Did you know that "deprecate" used to mean "to pray against" (as an evil) and co
 archive/issue_comments_031558.json:
 ```json
 {
-    "body": "Attachment\n\nAfter a rebase and rebuild caused by parent.pxd, I think this is good.  It simplifies the coercion interface a fair amount.\n\nApply only trac_4310.patch",
+    "body": "Attachment [trac_4310.patch](tarball://root/attachments/some-uuid/ticket4310/trac_4310.patch) by mhansen created at 2008-11-21 16:53:17\n\nAfter a rebase and rebuild caused by parent.pxd, I think this is good.  It simplifies the coercion interface a fair amount.\n\nApply only trac_4310.patch",
     "created_at": "2008-11-21T16:53:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4310",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_031558.json:
 }
 ```
 
-Attachment
+Attachment [trac_4310.patch](tarball://root/attachments/some-uuid/ticket4310/trac_4310.patch) by mhansen created at 2008-11-21 16:53:17
 
 After a rebase and rebuild caused by parent.pxd, I think this is good.  It simplifies the coercion interface a fair amount.
 

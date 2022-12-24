@@ -51,7 +51,7 @@ Changing status from new to needs_review.
 archive/issue_comments_059829.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7209-coverage-TestSuite-nt.patch](tarball://root/attachments/some-uuid/ticket7209/trac_7209-coverage-TestSuite-nt.patch) by nthiery created at 2009-10-14 14:09:30",
     "created_at": "2009-10-14T14:09:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7209",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_059829.json:
 }
 ```
 
-Attachment
+Attachment [trac_7209-coverage-TestSuite-nt.patch](tarball://root/attachments/some-uuid/ticket7209/trac_7209-coverage-TestSuite-nt.patch) by nthiery created at 2009-10-14 14:09:30
 
 
 

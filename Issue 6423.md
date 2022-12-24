@@ -291,7 +291,7 @@ Based on 4.3.alpha1
 archive/issue_comments_051579.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review! Tested on 4.3.rc0 and got only errors which have been reported on sage-devel and are not relevent to this ticket. Tested together with #7745 and #4142.\n\nPositive review, thanks for upgrading.",
+    "body": "Attachment [trac_6423-exp.patch](tarball://root/attachments/some-uuid/ticket6423/trac_6423-exp.patch) by robert.marik created at 2009-12-23 08:38:28\n\nPositive review! Tested on 4.3.rc0 and got only errors which have been reported on sage-devel and are not relevent to this ticket. Tested together with #7745 and #4142.\n\nPositive review, thanks for upgrading.",
     "created_at": "2009-12-23T08:38:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6423",
     "type": "issue_comment",
@@ -300,7 +300,7 @@ archive/issue_comments_051579.json:
 }
 ```
 
-Attachment
+Attachment [trac_6423-exp.patch](tarball://root/attachments/some-uuid/ticket6423/trac_6423-exp.patch) by robert.marik created at 2009-12-23 08:38:28
 
 Positive review! Tested on 4.3.rc0 and got only errors which have been reported on sage-devel and are not relevent to this ticket. Tested together with #7745 and #4142.
 

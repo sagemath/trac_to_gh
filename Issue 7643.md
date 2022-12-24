@@ -142,7 +142,7 @@ Changing status from new to needs_review.
 archive/issue_comments_065323.json:
 ```json
 {
-    "body": "Attachment\n\nbased on 4.3.rc0",
+    "body": "Attachment [trac_7643.patch](tarball://root/attachments/some-uuid/ticket7643/trac_7643.patch) by fwclarke created at 2009-12-14 21:40:37\n\nbased on 4.3.rc0",
     "created_at": "2009-12-14T21:40:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7643",
     "type": "issue_comment",
@@ -151,7 +151,7 @@ archive/issue_comments_065323.json:
 }
 ```
 
-Attachment
+Attachment [trac_7643.patch](tarball://root/attachments/some-uuid/ticket7643/trac_7643.patch) by fwclarke created at 2009-12-14 21:40:37
 
 based on 4.3.rc0
 
@@ -286,7 +286,7 @@ replaces earlier patch, based on 4.3
 archive/issue_comments_065329.json:
 ```json
 {
-    "body": "Attachment\n\nSorry to have given your more work to do ;)\n\nI'll take a look!",
+    "body": "Attachment [trac_7643_revised.patch](tarball://root/attachments/some-uuid/ticket7643/trac_7643_revised.patch) by cremona created at 2010-01-16 19:59:58\n\nSorry to have given your more work to do ;)\n\nI'll take a look!",
     "created_at": "2010-01-16T19:59:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7643",
     "type": "issue_comment",
@@ -295,7 +295,7 @@ archive/issue_comments_065329.json:
 }
 ```
 
-Attachment
+Attachment [trac_7643_revised.patch](tarball://root/attachments/some-uuid/ticket7643/trac_7643_revised.patch) by cremona created at 2010-01-16 19:59:58
 
 Sorry to have given your more work to do ;)
 

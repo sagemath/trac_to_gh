@@ -198,7 +198,7 @@ Travis
 archive/issue_comments_047487.json:
 ```json
 {
-    "body": "Attachment\n\nRebased to sage-5.8.beta0.",
+    "body": "Attachment [trac_5978-quotient_zero_ideal-ts.patch](tarball://root/attachments/some-uuid/ticket5978/trac_5978-quotient_zero_ideal-ts.patch) by jdemeyer created at 2013-02-21 10:14:53\n\nRebased to sage-5.8.beta0.",
     "created_at": "2013-02-21T10:14:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5978",
     "type": "issue_comment",
@@ -207,7 +207,7 @@ archive/issue_comments_047487.json:
 }
 ```
 
-Attachment
+Attachment [trac_5978-quotient_zero_ideal-ts.patch](tarball://root/attachments/some-uuid/ticket5978/trac_5978-quotient_zero_ideal-ts.patch) by jdemeyer created at 2013-02-21 10:14:53
 
 Rebased to sage-5.8.beta0.
 

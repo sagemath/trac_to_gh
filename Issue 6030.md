@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6030
 archive/issue_comments_048010.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6030.patch](tarball://root/attachments/some-uuid/ticket6030/trac_6030.patch) by kcrisman created at 2009-05-12 16:09:13",
     "created_at": "2009-05-12T16:09:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6030",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_048010.json:
 }
 ```
 
-Attachment
+Attachment [trac_6030.patch](tarball://root/attachments/some-uuid/ticket6030/trac_6030.patch) by kcrisman created at 2009-05-12 16:09:13
 
 
 
@@ -239,7 +239,7 @@ Michael
 archive/issue_comments_048018.json:
 ```json
 {
-    "body": "Attachment\n\nBoth depend on #6023",
+    "body": "Attachment [trac_6030-fix.patch](tarball://root/attachments/some-uuid/ticket6030/trac_6030-fix.patch) by kcrisman created at 2009-05-14 16:17:21\n\nBoth depend on #6023",
     "created_at": "2009-05-14T16:17:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6030",
     "type": "issue_comment",
@@ -248,7 +248,7 @@ archive/issue_comments_048018.json:
 }
 ```
 
-Attachment
+Attachment [trac_6030-fix.patch](tarball://root/attachments/some-uuid/ticket6030/trac_6030-fix.patch) by kcrisman created at 2009-05-14 16:17:21
 
 Both depend on #6023
 

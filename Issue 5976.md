@@ -53,7 +53,7 @@ Changing assignee from was to shumow.
 archive/issue_comments_047425.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [isogeny.patch](tarball://root/attachments/some-uuid/ticket5976/isogeny.patch) by shumow created at 2009-05-04 05:46:45",
     "created_at": "2009-05-04T05:46:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_047425.json:
 }
 ```
 
-Attachment
+Attachment [isogeny.patch](tarball://root/attachments/some-uuid/ticket5976/isogeny.patch) by shumow created at 2009-05-04 05:46:45
 
 
 
@@ -141,7 +141,7 @@ This is an excellent contribution to Sage.  I will finish the review when I have
 archive/issue_comments_047429.json:
 ```json
 {
-    "body": "Attachment\n\nApply after previous (reviewer's patch)",
+    "body": "Attachment [trac_5976.patch](tarball://root/attachments/some-uuid/ticket5976/trac_5976.patch) by cremona created at 2009-05-04 17:14:32\n\nApply after previous (reviewer's patch)",
     "created_at": "2009-05-04T17:14:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
@@ -150,7 +150,7 @@ archive/issue_comments_047429.json:
 }
 ```
 
-Attachment
+Attachment [trac_5976.patch](tarball://root/attachments/some-uuid/ticket5976/trac_5976.patch) by cremona created at 2009-05-04 17:14:32
 
 Apply after previous (reviewer's patch)
 
@@ -787,7 +787,7 @@ in order to induce the computation of a minimal model (for the codomain).  I thi
 archive/issue_comments_047447.json:
 ```json
 {
-    "body": "Attachment\n\nsecond version of the isogeny code",
+    "body": "Attachment [isogeny_v2.patch](tarball://root/attachments/some-uuid/ticket5976/isogeny_v2.patch) by shumow created at 2009-05-14 07:33:00\n\nsecond version of the isogeny code",
     "created_at": "2009-05-14T07:33:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
@@ -796,7 +796,7 @@ archive/issue_comments_047447.json:
 }
 ```
 
-Attachment
+Attachment [isogeny_v2.patch](tarball://root/attachments/some-uuid/ticket5976/isogeny_v2.patch) by shumow created at 2009-05-14 07:33:00
 
 second version of the isogeny code
 
@@ -1029,7 +1029,7 @@ archive/issue_comments_047454.json:
 archive/issue_comments_047455.json:
 ```json
 {
-    "body": "Attachment\n\nI rebased the patch onto 4.0.rc0.  Hopefully this will not be jumping so many versions that it causes a problem.\n\nThe latest version is in isogeny_v3.patch.\n\nThe code I wrote that implemented \"switch_sign\" as well as unary negation, actually gives the ability to (post) compose with any W.iso, see the function set_post_isomorphism.\n\nThis still isn't ready to go in terms of being checked in, because I'm not at 100% doctests (I'm at 59% now.)  That said, the only things that I need to write doctests for at this point are internal functions, which I know have already been exercised by other doc tests.\n\nMy next \"to do\" items on this code are (in order of priority):\n\n-Finish doctests\n-add the isogeny function to ell_field\n-add a function \"is_normalized\"\n-finish implementing starks method\n-use starks method to implement computing the dual",
+    "body": "Attachment [isogeny_v3.patch](tarball://root/attachments/some-uuid/ticket5976/isogeny_v3.patch) by shumow created at 2009-05-23 22:38:27\n\nI rebased the patch onto 4.0.rc0.  Hopefully this will not be jumping so many versions that it causes a problem.\n\nThe latest version is in isogeny_v3.patch.\n\nThe code I wrote that implemented \"switch_sign\" as well as unary negation, actually gives the ability to (post) compose with any W.iso, see the function set_post_isomorphism.\n\nThis still isn't ready to go in terms of being checked in, because I'm not at 100% doctests (I'm at 59% now.)  That said, the only things that I need to write doctests for at this point are internal functions, which I know have already been exercised by other doc tests.\n\nMy next \"to do\" items on this code are (in order of priority):\n\n-Finish doctests\n-add the isogeny function to ell_field\n-add a function \"is_normalized\"\n-finish implementing starks method\n-use starks method to implement computing the dual",
     "created_at": "2009-05-23T22:38:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
@@ -1038,7 +1038,7 @@ archive/issue_comments_047455.json:
 }
 ```
 
-Attachment
+Attachment [isogeny_v3.patch](tarball://root/attachments/some-uuid/ticket5976/isogeny_v3.patch) by shumow created at 2009-05-23 22:38:27
 
 I rebased the patch onto 4.0.rc0.  Hopefully this will not be jumping so many versions that it causes a problem.
 
@@ -1081,7 +1081,7 @@ update of isogeny code - Apply after isogeny_v3.patch
 archive/issue_comments_047457.json:
 ```json
 {
-    "body": "Attachment\n\nJust uploaded isogeny_v4.patch,\n\nThis adds:\n\n-\"is_normalized\" function\n\n-isogeny and isogeny_codomain functions to the ell_field file, so that we can say E.isogeny(...)  and it returns EllipticCurveIsogeny(E, ...) and also E.isogeny_codomain(...) that returns the codomain only of the isogeny from E with given kernel data.\n\n-100% doctests\n\n\n\nNext, I will finish the Starks algorithm and a function to compute the dual.  After that I would say (modulo feedback from a review) that this will be good to checkin.",
+    "body": "Attachment [isogeny_v4.patch](tarball://root/attachments/some-uuid/ticket5976/isogeny_v4.patch) by shumow created at 2009-05-25 19:58:38\n\nJust uploaded isogeny_v4.patch,\n\nThis adds:\n\n-\"is_normalized\" function\n\n-isogeny and isogeny_codomain functions to the ell_field file, so that we can say E.isogeny(...)  and it returns EllipticCurveIsogeny(E, ...) and also E.isogeny_codomain(...) that returns the codomain only of the isogeny from E with given kernel data.\n\n-100% doctests\n\n\n\nNext, I will finish the Starks algorithm and a function to compute the dual.  After that I would say (modulo feedback from a review) that this will be good to checkin.",
     "created_at": "2009-05-25T19:58:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
@@ -1090,7 +1090,7 @@ archive/issue_comments_047457.json:
 }
 ```
 
-Attachment
+Attachment [isogeny_v4.patch](tarball://root/attachments/some-uuid/ticket5976/isogeny_v4.patch) by shumow created at 2009-05-25 19:58:38
 
 Just uploaded isogeny_v4.patch,
 
@@ -1113,7 +1113,7 @@ Next, I will finish the Starks algorithm and a function to compute the dual.  Af
 archive/issue_comments_047458.json:
 ```json
 {
-    "body": "Attachment\n\npatch made with sage-4.0 - apply this patch clean.  Ignore all previous patches",
+    "body": "Attachment [isogeny_v5.patch](tarball://root/attachments/some-uuid/ticket5976/isogeny_v5.patch) by shumow created at 2009-06-04 19:43:45\n\npatch made with sage-4.0 - apply this patch clean.  Ignore all previous patches",
     "created_at": "2009-06-04T19:43:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
@@ -1122,7 +1122,7 @@ archive/issue_comments_047458.json:
 }
 ```
 
-Attachment
+Attachment [isogeny_v5.patch](tarball://root/attachments/some-uuid/ticket5976/isogeny_v5.patch) by shumow created at 2009-06-04 19:43:45
 
 patch made with sage-4.0 - apply this patch clean.  Ignore all previous patches
 
@@ -1171,7 +1171,7 @@ Reviewer's patch;  apply *instead of* previous
 archive/issue_comments_047461.json:
 ```json
 {
-    "body": "Attachment\n\nI don't have time at the moment to go into this in a lot of detail.  The patch applies fine;  the examples I tried (including a 37-isogeny over Q) worked perfectly.\n\nI have a few minor comments listed below.  I found a lot of minor glitches in the docstrings when building the reference manual, and have fixed these.  My patch was supposed to be applied after yours, but owing to a mistake on my part is is a self-contained patch including all your code.  Sorry about that, I know that it makes it harder to see what I changed -- docstrings only!\n\nIt might be a good idea if David K also looked at it, since he is more familiar with \"his\" algorithm than I am;  I also know nothing about Stark's algorithm.\n\nOverall this is a very impressive piece of work (over 4000 lines!) and I think it should go in as soon as possible, since it is only when people start to use it for real that problems (if there are any) will surface.\n\nNow for the (mainly) minor points:\n\n* Several ReST glitches (e.g. missing double ::). [fixed]\n\n* In the doctests for the helper functions I think it would be better to\n  have direct rather than indirect doctests.  For example in the tests at \n  lines 98-99 surely the fact that the twosides agree is a tautology\n  since the same code is used on both sides?  And in\n  compute_codomain_formula(), why not put in a direct doctest.  (In that\n  function you do not really need A1,A2,A3 and you can define a1,...,a6\n  in one line via a1,a2,a3,a4,a6=E.ainvs().  Similarly elsewhere.)\n\n* compute_vw_kohel_even_deg1() does not use parameter a6.\n\n* l.225: incomplete sentence! [look for \"missing text\" in the source, I put in at least 2]\n\n* I like the very clear list of private data for the isogeny class,\n  where all are set to None by default, though I suspect this is more\n  like C++ than Python.  It makes it *very* much easier to see what is\n  going on.\n\n* There are lots of good examples.\n\n* The docstring for the isogeny method for elliptic curves should say\n  more: it should certainly detail the input parameters and give more\n  examples (possibly copied from the EllipticCurveIsogeny\n  documentation).  The point is the when someone E.<tab> and sees\n  E.isogeny is available and then types E.isogeny? they need to see how\n  to use that function.",
+    "body": "Attachment [trac_5976_review.patch](tarball://root/attachments/some-uuid/ticket5976/trac_5976_review.patch) by cremona created at 2009-06-05 12:05:44\n\nI don't have time at the moment to go into this in a lot of detail.  The patch applies fine;  the examples I tried (including a 37-isogeny over Q) worked perfectly.\n\nI have a few minor comments listed below.  I found a lot of minor glitches in the docstrings when building the reference manual, and have fixed these.  My patch was supposed to be applied after yours, but owing to a mistake on my part is is a self-contained patch including all your code.  Sorry about that, I know that it makes it harder to see what I changed -- docstrings only!\n\nIt might be a good idea if David K also looked at it, since he is more familiar with \"his\" algorithm than I am;  I also know nothing about Stark's algorithm.\n\nOverall this is a very impressive piece of work (over 4000 lines!) and I think it should go in as soon as possible, since it is only when people start to use it for real that problems (if there are any) will surface.\n\nNow for the (mainly) minor points:\n\n* Several ReST glitches (e.g. missing double ::). [fixed]\n\n* In the doctests for the helper functions I think it would be better to\n  have direct rather than indirect doctests.  For example in the tests at \n  lines 98-99 surely the fact that the twosides agree is a tautology\n  since the same code is used on both sides?  And in\n  compute_codomain_formula(), why not put in a direct doctest.  (In that\n  function you do not really need A1,A2,A3 and you can define a1,...,a6\n  in one line via a1,a2,a3,a4,a6=E.ainvs().  Similarly elsewhere.)\n\n* compute_vw_kohel_even_deg1() does not use parameter a6.\n\n* l.225: incomplete sentence! [look for \"missing text\" in the source, I put in at least 2]\n\n* I like the very clear list of private data for the isogeny class,\n  where all are set to None by default, though I suspect this is more\n  like C++ than Python.  It makes it *very* much easier to see what is\n  going on.\n\n* There are lots of good examples.\n\n* The docstring for the isogeny method for elliptic curves should say\n  more: it should certainly detail the input parameters and give more\n  examples (possibly copied from the EllipticCurveIsogeny\n  documentation).  The point is the when someone E.<tab> and sees\n  E.isogeny is available and then types E.isogeny? they need to see how\n  to use that function.",
     "created_at": "2009-06-05T12:05:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
@@ -1180,7 +1180,7 @@ archive/issue_comments_047461.json:
 }
 ```
 
-Attachment
+Attachment [trac_5976_review.patch](tarball://root/attachments/some-uuid/ticket5976/trac_5976_review.patch) by cremona created at 2009-06-05 12:05:44
 
 I don't have time at the moment to go into this in a lot of detail.  The patch applies fine;  the examples I tried (including a 37-isogeny over Q) worked perfectly.
 
@@ -1245,7 +1245,7 @@ apply *after* trac_5976_review.patch, incorporates J. Cremona's suggestions.
 archive/issue_comments_047463.json:
 ```json
 {
-    "body": "Attachment\n\nI have just posted a patch incorporating J. Cremona's suggestions, after trac_5976_review.patch, apply trac_5976_review2.patch.\n\nvery explicitly, I have fixed the following things:\n\n* In the doctests for the helper functions I think it would be better to have direct rather than indirect doctests. For example in the tests at lines 98-99 surely the fact that the twosides agree is a tautology since the same code is used on both sides? And in compute_codomain_formula(), why not put in a direct doctest. (In that function you do not really need A1,A2,A3 and you can define a1,...,a6 in one line via a1,a2,a3,a4,a6=E.ainvs(). Similarly elsewhere.) [fixed, in particular, all private / helper functions now have doctests]\n\n* compute_vw_kohel_even_deg1() does not use parameter a6. [fixed]\n\n\n* l.225: incomplete sentence! [look for \"missing text\" in the source, I put in at least 2] [fixed the two \"missing texts\", didn't see others.]\n\n* The docstring for the isogeny method for elliptic curves should say more: it should certainly detail the input parameters and give more examples (possibly copied from the EllipticCurveIsogeny? documentation). The point is the when someone E.<tab> and sees E.isogeny is available and then types E.isogeny? they need to see how to use that function. [fixed]",
+    "body": "Attachment [trac_5976_review2.patch](tarball://root/attachments/some-uuid/ticket5976/trac_5976_review2.patch) by shumow created at 2009-06-06 03:52:26\n\nI have just posted a patch incorporating J. Cremona's suggestions, after trac_5976_review.patch, apply trac_5976_review2.patch.\n\nvery explicitly, I have fixed the following things:\n\n* In the doctests for the helper functions I think it would be better to have direct rather than indirect doctests. For example in the tests at lines 98-99 surely the fact that the twosides agree is a tautology since the same code is used on both sides? And in compute_codomain_formula(), why not put in a direct doctest. (In that function you do not really need A1,A2,A3 and you can define a1,...,a6 in one line via a1,a2,a3,a4,a6=E.ainvs(). Similarly elsewhere.) [fixed, in particular, all private / helper functions now have doctests]\n\n* compute_vw_kohel_even_deg1() does not use parameter a6. [fixed]\n\n\n* l.225: incomplete sentence! [look for \"missing text\" in the source, I put in at least 2] [fixed the two \"missing texts\", didn't see others.]\n\n* The docstring for the isogeny method for elliptic curves should say more: it should certainly detail the input parameters and give more examples (possibly copied from the EllipticCurveIsogeny? documentation). The point is the when someone E.<tab> and sees E.isogeny is available and then types E.isogeny? they need to see how to use that function. [fixed]",
     "created_at": "2009-06-06T03:52:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
@@ -1254,7 +1254,7 @@ archive/issue_comments_047463.json:
 }
 ```
 
-Attachment
+Attachment [trac_5976_review2.patch](tarball://root/attachments/some-uuid/ticket5976/trac_5976_review2.patch) by shumow created at 2009-06-06 03:52:26
 
 I have just posted a patch incorporating J. Cremona's suggestions, after trac_5976_review.patch, apply trac_5976_review2.patch.
 

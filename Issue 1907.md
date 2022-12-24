@@ -114,7 +114,7 @@ Changing status from new to assigned.
 archive/issue_comments_012081.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good, applies cleanly against sage-2.10.3.rc3, and passes tests.",
+    "body": "Attachment [trac-1907-matrix_nullity.patch](tarball://root/attachments/some-uuid/ticket1907/trac-1907-matrix_nullity.patch) by AlexGhitza created at 2008-03-11 01:02:46\n\nLooks good, applies cleanly against sage-2.10.3.rc3, and passes tests.",
     "created_at": "2008-03-11T01:02:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1907",
     "type": "issue_comment",
@@ -123,7 +123,7 @@ archive/issue_comments_012081.json:
 }
 ```
 
-Attachment
+Attachment [trac-1907-matrix_nullity.patch](tarball://root/attachments/some-uuid/ticket1907/trac-1907-matrix_nullity.patch) by AlexGhitza created at 2008-03-11 01:02:46
 
 Looks good, applies cleanly against sage-2.10.3.rc3, and passes tests.
 

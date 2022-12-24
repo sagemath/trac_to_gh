@@ -107,7 +107,7 @@ A patch which does more or less what I want is on the sage-combinat queue, but i
 archive/issue_comments_084854.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9123-schur-algebra-and-gln-characters-ht.patch](tarball://root/attachments/some-uuid/ticket9123/trac_9123-schur-algebra-and-gln-characters-ht.patch) by hthomas created at 2013-03-25 12:19:49",
     "created_at": "2013-03-25T12:19:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9123",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_084854.json:
 }
 ```
 
-Attachment
+Attachment [trac_9123-schur-algebra-and-gln-characters-ht.patch](tarball://root/attachments/some-uuid/ticket9123/trac_9123-schur-algebra-and-gln-characters-ht.patch) by hthomas created at 2013-03-25 12:19:49
 
 
 

@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3431
 archive/issue_comments_024185.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac772-qepcad-interface.patch](tarball://root/attachments/some-uuid/ticket3431/trac772-qepcad-interface.patch) by cwitty created at 2008-06-15 22:17:33",
     "created_at": "2008-06-15T22:17:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3431",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_024185.json:
 }
 ```
 
-Attachment
+Attachment [trac772-qepcad-interface.patch](tarball://root/attachments/some-uuid/ticket3431/trac772-qepcad-interface.patch) by cwitty created at 2008-06-15 22:17:33
 
 
 
@@ -89,7 +89,7 @@ This patch looks very nice and seems to behave as advertised.  There are some do
 archive/issue_comments_024188.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached a patch to update the qepcad interface to deal with the newest interval printing, and to avoid locking the interface to one particular version of qepcad.\n\nNote that this patch depends on #3910 (without #3910, one doctest will fail).",
+    "body": "Attachment [trac3431-qepcad-interface-part2.patch](tarball://root/attachments/some-uuid/ticket3431/trac3431-qepcad-interface-part2.patch) by cwitty created at 2008-08-20 17:03:34\n\nI've attached a patch to update the qepcad interface to deal with the newest interval printing, and to avoid locking the interface to one particular version of qepcad.\n\nNote that this patch depends on #3910 (without #3910, one doctest will fail).",
     "created_at": "2008-08-20T17:03:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3431",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_024188.json:
 }
 ```
 
-Attachment
+Attachment [trac3431-qepcad-interface-part2.patch](tarball://root/attachments/some-uuid/ticket3431/trac3431-qepcad-interface-part2.patch) by cwitty created at 2008-08-20 17:03:34
 
 I've attached a patch to update the qepcad interface to deal with the newest interval printing, and to avoid locking the interface to one particular version of qepcad.
 

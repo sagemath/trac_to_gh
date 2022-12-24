@@ -299,7 +299,7 @@ Florent
 archive/issue_comments_043177.json:
 ```json
 {
-    "body": "Attachment\n\nAgainst sage 3.4. This patch is part of sage-combinat tree.",
+    "body": "Attachment [permutation_from_tableaux-5551-submitted-sl.patch](tarball://root/attachments/some-uuid/ticket5551/permutation_from_tableaux-5551-submitted-sl.patch) by slabbe created at 2009-03-20 15:06:22\n\nAgainst sage 3.4. This patch is part of sage-combinat tree.",
     "created_at": "2009-03-20T15:06:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5551",
     "type": "issue_comment",
@@ -308,7 +308,7 @@ archive/issue_comments_043177.json:
 }
 ```
 
-Attachment
+Attachment [permutation_from_tableaux-5551-submitted-sl.patch](tarball://root/attachments/some-uuid/ticket5551/permutation_from_tableaux-5551-submitted-sl.patch) by slabbe created at 2009-03-20 15:06:22
 
 Against sage 3.4. This patch is part of sage-combinat tree.
 
@@ -339,7 +339,7 @@ slabbe
 archive/issue_comments_043179.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [permutation_from_tableaux-5551-review-fh.patch](tarball://root/attachments/some-uuid/ticket5551/permutation_from_tableaux-5551-review-fh.patch) by hivert created at 2009-03-20 18:06:44",
     "created_at": "2009-03-20T18:06:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5551",
     "type": "issue_comment",
@@ -348,7 +348,7 @@ archive/issue_comments_043179.json:
 }
 ```
 
-Attachment
+Attachment [permutation_from_tableaux-5551-review-fh.patch](tarball://root/attachments/some-uuid/ticket5551/permutation_from_tableaux-5551-review-fh.patch) by hivert created at 2009-03-20 18:06:44
 
 
 
@@ -472,7 +472,7 @@ This patch applies over the precedent two.
 archive/issue_comments_043184.json:
 ```json
 {
-    "body": "Attachment\n\nI addressed saliola comments in the patch I just uploaded. Needs review...",
+    "body": "Attachment [permutation_from_tableaux-5551-feature-sl.patch](tarball://root/attachments/some-uuid/ticket5551/permutation_from_tableaux-5551-feature-sl.patch) by slabbe created at 2009-04-01 17:00:26\n\nI addressed saliola comments in the patch I just uploaded. Needs review...",
     "created_at": "2009-04-01T17:00:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5551",
     "type": "issue_comment",
@@ -481,7 +481,7 @@ archive/issue_comments_043184.json:
 }
 ```
 
-Attachment
+Attachment [permutation_from_tableaux-5551-feature-sl.patch](tarball://root/attachments/some-uuid/ticket5551/permutation_from_tableaux-5551-feature-sl.patch) by slabbe created at 2009-04-01 17:00:26
 
 I addressed saliola comments in the patch I just uploaded. Needs review...
 

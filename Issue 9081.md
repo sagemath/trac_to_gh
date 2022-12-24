@@ -51,7 +51,7 @@ Changing status from new to needs_review.
 archive/issue_comments_084305.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9081-devloper-walkthrough-transition.patch](tarball://root/attachments/some-uuid/ticket9081/trac_9081-devloper-walkthrough-transition.patch) by rbeezer created at 2010-05-29 06:37:43",
     "created_at": "2010-05-29T06:37:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9081",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_084305.json:
 }
 ```
 
-Attachment
+Attachment [trac_9081-devloper-walkthrough-transition.patch](tarball://root/attachments/some-uuid/ticket9081/trac_9081-devloper-walkthrough-transition.patch) by rbeezer created at 2010-05-29 06:37:43
 
 
 

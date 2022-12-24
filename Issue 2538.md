@@ -72,7 +72,7 @@ make this change and close this ticket.
 archive/issue_comments_017312.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_2538.patch](tarball://root/attachments/some-uuid/ticket2538/trac_2538.patch) by mabshoff created at 2008-03-16 05:27:35",
     "created_at": "2008-03-16T05:27:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2538",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_017312.json:
 }
 ```
 
-Attachment
+Attachment [trac_2538.patch](tarball://root/attachments/some-uuid/ticket2538/trac_2538.patch) by mabshoff created at 2008-03-16 05:27:35
 
 
 

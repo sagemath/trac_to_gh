@@ -95,7 +95,7 @@ Changing assignee from mvngu to hivert.
 archive/issue_comments_077634.json:
 ```json
 {
-    "body": "Attachment\n\nHi John,\n\n> A little more data:\n\n```\nsage: from sage.misc.sageinspect import _sage_getdoc_unformatted\nsage: from sagenb.misc.sphinxify import sphinxify\nsage: r = _sage_getdoc_unformatted(Poset)\nsage: len(sphinxify(r[:1438], format='text'))\n1382\nsage: len(sphinxify(r[:1439], format='text'))\n0\n```\n\n\nI don't know how you got it but this was exactly the problem: an extraneous space at the 1438th character ! Please review.\n\nFlorent",
+    "body": "Attachment [trac_8572-poset_doc_fix-fh.patch](tarball://root/attachments/some-uuid/ticket8572/trac_8572-poset_doc_fix-fh.patch) by hivert created at 2010-03-21 21:57:33\n\nHi John,\n\n> A little more data:\n\n```\nsage: from sage.misc.sageinspect import _sage_getdoc_unformatted\nsage: from sagenb.misc.sphinxify import sphinxify\nsage: r = _sage_getdoc_unformatted(Poset)\nsage: len(sphinxify(r[:1438], format='text'))\n1382\nsage: len(sphinxify(r[:1439], format='text'))\n0\n```\n\n\nI don't know how you got it but this was exactly the problem: an extraneous space at the 1438th character ! Please review.\n\nFlorent",
     "created_at": "2010-03-21T21:57:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8572",
     "type": "issue_comment",
@@ -104,7 +104,7 @@ archive/issue_comments_077634.json:
 }
 ```
 
-Attachment
+Attachment [trac_8572-poset_doc_fix-fh.patch](tarball://root/attachments/some-uuid/ticket8572/trac_8572-poset_doc_fix-fh.patch) by hivert created at 2010-03-21 21:57:33
 
 Hi John,
 

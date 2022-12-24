@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6856
 archive/issue_comments_056548.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6856-fix_account_settings_cancel.patch](tarball://root/attachments/some-uuid/ticket6856/trac_6856-fix_account_settings_cancel.patch) by wjp created at 2009-09-01 15:11:55",
     "created_at": "2009-09-01T15:11:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6856",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_056548.json:
 }
 ```
 
-Attachment
+Attachment [trac_6856-fix_account_settings_cancel.patch](tarball://root/attachments/some-uuid/ticket6856/trac_6856-fix_account_settings_cancel.patch) by wjp created at 2009-09-01 15:11:55
 
 
 

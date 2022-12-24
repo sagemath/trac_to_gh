@@ -60,7 +60,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9681
 archive/issue_comments_094113.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated deps file, which solves this major problem and corrects two minor ones in #9464 and #9637",
+    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket9681/deps) by drkirkby created at 2010-08-04 00:47:26\n\nUpdated deps file, which solves this major problem and corrects two minor ones in #9464 and #9637",
     "created_at": "2010-08-04T00:47:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9681",
     "type": "issue_comment",
@@ -69,7 +69,7 @@ archive/issue_comments_094113.json:
 }
 ```
 
-Attachment
+Attachment [deps](tarball://root/attachments/some-uuid/ticket9681/deps) by drkirkby created at 2010-08-04 00:47:26
 
 Updated deps file, which solves this major problem and corrects two minor ones in #9464 and #9637
 
@@ -80,7 +80,7 @@ Updated deps file, which solves this major problem and corrects two minor ones i
 archive/issue_comments_094114.json:
 ```json
 {
-    "body": "Attachment\n\nUnifier diff file for $SAGE_ROOT/spkg/standard/deps",
+    "body": "Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket9681/deps.diff) by drkirkby created at 2010-08-04 00:48:05\n\nUnifier diff file for $SAGE_ROOT/spkg/standard/deps",
     "created_at": "2010-08-04T00:48:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9681",
     "type": "issue_comment",
@@ -89,7 +89,7 @@ archive/issue_comments_094114.json:
 }
 ```
 
-Attachment
+Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket9681/deps.diff) by drkirkby created at 2010-08-04 00:48:05
 
 Unifier diff file for $SAGE_ROOT/spkg/standard/deps
 

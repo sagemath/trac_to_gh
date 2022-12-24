@@ -253,7 +253,7 @@ My feeling is that this entire section on using Grape is a waste of electrons be
 archive/issue_comments_050517.json:
 ```json
 {
-    "body": "Attachment\n\napplies to 4.0.2.rc1",
+    "body": "Attachment [trac_6328.patch](tarball://root/attachments/some-uuid/ticket6328/trac_6328.patch) by wdj created at 2009-06-17 13:46:20\n\napplies to 4.0.2.rc1",
     "created_at": "2009-06-17T13:46:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6328",
     "type": "issue_comment",
@@ -262,7 +262,7 @@ archive/issue_comments_050517.json:
 }
 ```
 
-Attachment
+Attachment [trac_6328.patch](tarball://root/attachments/some-uuid/ticket6328/trac_6328.patch) by wdj created at 2009-06-17 13:46:20
 
 applies to 4.0.2.rc1
 

@@ -74,7 +74,7 @@ Michael
 archive/issue_comments_001876.json:
 ```json
 {
-    "body": "Attachment\n\nSee the patch.  A few comments:\n\n1. The parenthesis issue is, I believe, taken care of.\n2. After some thinking, I decided to do away with all the \\cdot's.  For a while, I thought they might still been needed in some situations, but since in the default behavior _latex_ first simplifies the expressions, all the weird cases I could think of (e.g. f=cos*(x-1)) are taken care of automatically.  I'd be happy to change my mind if anyone can prove me wrong.\n\nSome examples:\n\n\n```\nsage: var('x,y')\n(x, y)\nsage: f=(x+y)*(x-y)*(x^2-2)*(y^2-3)\nsage: latex(f)\n{{{\\left( {x}^{2}  - 2 \\right) \\left( x - y \\right)} \\left( y + x \\right)} \\left( {y}^{2}  - 3 \\right)}\nsage: latex(cos*(x+1))\n{\\left( x + 1 \\right) \\cos}\nsage: latex(x^2*2*cos(x+1))\n{{{\nsage: var('x,y')\n(x, y)\nsage: f=(x+y)*(x-y)*(x^2-2)*(y^2-3)\nsage: latex(f)\n{{{\\left( {x}^{2}  - 2 \\right) \\left( x - y \\right)} \\left( y + x \\right)} \\left( {y}^{2}  - 3 \\right)}\nsage: latex(cos*(x+1))\n{\\left( x + 1 \\right) \\cos}\nsage: latex(x^2*2*cos(x+1))\n{{2 {x}^{2} } \\cos \\left( x + 1 \\right)}\n}}}",
+    "body": "Attachment [384-latex_symbexp.patch](tarball://root/attachments/some-uuid/ticket384/384-latex_symbexp.patch) by AlexGhitza created at 2008-01-27 02:07:51\n\nSee the patch.  A few comments:\n\n1. The parenthesis issue is, I believe, taken care of.\n2. After some thinking, I decided to do away with all the \\cdot's.  For a while, I thought they might still been needed in some situations, but since in the default behavior _latex_ first simplifies the expressions, all the weird cases I could think of (e.g. f=cos*(x-1)) are taken care of automatically.  I'd be happy to change my mind if anyone can prove me wrong.\n\nSome examples:\n\n\n```\nsage: var('x,y')\n(x, y)\nsage: f=(x+y)*(x-y)*(x^2-2)*(y^2-3)\nsage: latex(f)\n{{{\\left( {x}^{2}  - 2 \\right) \\left( x - y \\right)} \\left( y + x \\right)} \\left( {y}^{2}  - 3 \\right)}\nsage: latex(cos*(x+1))\n{\\left( x + 1 \\right) \\cos}\nsage: latex(x^2*2*cos(x+1))\n{{{\nsage: var('x,y')\n(x, y)\nsage: f=(x+y)*(x-y)*(x^2-2)*(y^2-3)\nsage: latex(f)\n{{{\\left( {x}^{2}  - 2 \\right) \\left( x - y \\right)} \\left( y + x \\right)} \\left( {y}^{2}  - 3 \\right)}\nsage: latex(cos*(x+1))\n{\\left( x + 1 \\right) \\cos}\nsage: latex(x^2*2*cos(x+1))\n{{2 {x}^{2} } \\cos \\left( x + 1 \\right)}\n}}}",
     "created_at": "2008-01-27T02:07:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/384",
     "type": "issue_comment",
@@ -83,7 +83,7 @@ archive/issue_comments_001876.json:
 }
 ```
 
-Attachment
+Attachment [384-latex_symbexp.patch](tarball://root/attachments/some-uuid/ticket384/384-latex_symbexp.patch) by AlexGhitza created at 2008-01-27 02:07:51
 
 See the patch.  A few comments:
 
@@ -121,7 +121,7 @@ sage: latex(x^2*2*cos(x+1))
 archive/issue_comments_001877.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [384-2.patch](tarball://root/attachments/some-uuid/ticket384/384-2.patch) by mhansen created at 2008-01-27 02:23:16",
     "created_at": "2008-01-27T02:23:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/384",
     "type": "issue_comment",
@@ -130,7 +130,7 @@ archive/issue_comments_001877.json:
 }
 ```
 
-Attachment
+Attachment [384-2.patch](tarball://root/attachments/some-uuid/ticket384/384-2.patch) by mhansen created at 2008-01-27 02:23:16
 
 
 
@@ -193,7 +193,7 @@ Merged in Sage 2.10.1.rc1
 archive/issue_comments_001881.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-2.10.1.rc1-384-doctest-fallout-fixes_part_1.patch](tarball://root/attachments/some-uuid/ticket384/Sage-2.10.1.rc1-384-doctest-fallout-fixes_part_1.patch) by mabshoff created at 2008-01-27 04:11:15",
     "created_at": "2008-01-27T04:11:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/384",
     "type": "issue_comment",
@@ -202,7 +202,7 @@ archive/issue_comments_001881.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.10.1.rc1-384-doctest-fallout-fixes_part_1.patch](tarball://root/attachments/some-uuid/ticket384/Sage-2.10.1.rc1-384-doctest-fallout-fixes_part_1.patch) by mabshoff created at 2008-01-27 04:11:15
 
 
 
@@ -211,7 +211,7 @@ Attachment
 archive/issue_comments_001882.json:
 ```json
 {
-    "body": "Attachment\n\nThe two doctest patches fix the issue in the documentation and the sage library. They have been merged in Sage 2.10.1.rc1.\n\nCheers,\n\nMichael",
+    "body": "Attachment [Sage-2.10.1.rc1-384-doctest-fallout-fixes_part_2.patch](tarball://root/attachments/some-uuid/ticket384/Sage-2.10.1.rc1-384-doctest-fallout-fixes_part_2.patch) by mabshoff created at 2008-01-27 04:14:22\n\nThe two doctest patches fix the issue in the documentation and the sage library. They have been merged in Sage 2.10.1.rc1.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-27T04:14:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/384",
     "type": "issue_comment",
@@ -220,7 +220,7 @@ archive/issue_comments_001882.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.10.1.rc1-384-doctest-fallout-fixes_part_2.patch](tarball://root/attachments/some-uuid/ticket384/Sage-2.10.1.rc1-384-doctest-fallout-fixes_part_2.patch) by mabshoff created at 2008-01-27 04:14:22
 
 The two doctest patches fix the issue in the documentation and the sage library. They have been merged in Sage 2.10.1.rc1.
 

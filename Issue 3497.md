@@ -54,7 +54,7 @@ adds .gitignore and updates .hgignore to ignore it and .git directory
 archive/issue_comments_024628.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [gitignore.patch](tarball://root/attachments/some-uuid/ticket3497/gitignore.patch) by mabshoff created at 2008-06-26 06:38:13",
     "created_at": "2008-06-26T06:38:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3497",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_024628.json:
 }
 ```
 
-Attachment
+Attachment [gitignore.patch](tarball://root/attachments/some-uuid/ticket3497/gitignore.patch) by mabshoff created at 2008-06-26 06:38:13
 
 
 

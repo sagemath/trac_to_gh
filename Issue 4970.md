@@ -121,7 +121,7 @@ Michael
 archive/issue_comments_037852.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4970-potential-fix.patch](tarball://root/attachments/some-uuid/ticket4970/trac_4970-potential-fix.patch) by mabshoff created at 2009-02-16 06:26:01",
     "created_at": "2009-02-16T06:26:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4970",
     "type": "issue_comment",
@@ -130,7 +130,7 @@ archive/issue_comments_037852.json:
 }
 ```
 
-Attachment
+Attachment [trac_4970-potential-fix.patch](tarball://root/attachments/some-uuid/ticket4970/trac_4970-potential-fix.patch) by mabshoff created at 2009-02-16 06:26:01
 
 
 

@@ -63,7 +63,7 @@ Changing assignee from somebody to cwitty.
 archive/issue_comments_005173.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [7003.patch](tarball://root/attachments/some-uuid/ticket837/7003.patch) by cwitty created at 2007-10-20 20:03:28",
     "created_at": "2007-10-20T20:03:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/837",
     "type": "issue_comment",
@@ -72,7 +72,7 @@ archive/issue_comments_005173.json:
 }
 ```
 
-Attachment
+Attachment [7003.patch](tarball://root/attachments/some-uuid/ticket837/7003.patch) by cwitty created at 2007-10-20 20:03:28
 
 
 

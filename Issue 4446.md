@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4446
 archive/issue_comments_032705.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [complex_mpc.patch](tarball://root/attachments/some-uuid/ticket4446/complex_mpc.patch) by thevenyp created at 2008-11-05 18:05:16",
     "created_at": "2008-11-05T18:05:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_032705.json:
 }
 ```
 
-Attachment
+Attachment [complex_mpc.patch](tarball://root/attachments/some-uuid/ticket4446/complex_mpc.patch) by thevenyp created at 2008-11-05 18:05:16
 
 
 
@@ -57,7 +57,7 @@ Attachment
 archive/issue_comments_032706.json:
 ```json
 {
-    "body": "Attachment\n\nreplace the previous patch (rebase against 3.2)",
+    "body": "Attachment [trac4446-complex_mpc.patch](tarball://root/attachments/some-uuid/ticket4446/trac4446-complex_mpc.patch) by AlexGhitza created at 2008-11-22 08:28:10\n\nreplace the previous patch (rebase against 3.2)",
     "created_at": "2008-11-22T08:28:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_032706.json:
 }
 ```
 
-Attachment
+Attachment [trac4446-complex_mpc.patch](tarball://root/attachments/some-uuid/ticket4446/trac4446-complex_mpc.patch) by AlexGhitza created at 2008-11-22 08:28:10
 
 replace the previous patch (rebase against 3.2)
 
@@ -95,7 +95,7 @@ There seems to have been some bitrot due to recent changes in Sage.  I have uplo
 archive/issue_comments_032708.json:
 ```json
 {
-    "body": "Attachment\n\ncoercion problems resolved, more functions",
+    "body": "Attachment [complex_mpc.p0.patch](tarball://root/attachments/some-uuid/ticket4446/complex_mpc.p0.patch) by thevenyp created at 2008-12-04 18:04:08\n\ncoercion problems resolved, more functions",
     "created_at": "2008-12-04T18:04:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -104,7 +104,7 @@ archive/issue_comments_032708.json:
 }
 ```
 
-Attachment
+Attachment [complex_mpc.p0.patch](tarball://root/attachments/some-uuid/ticket4446/complex_mpc.p0.patch) by thevenyp created at 2008-12-04 18:04:08
 
 coercion problems resolved, more functions
 
@@ -151,7 +151,7 @@ apply after complex_mpc.p0.patch
 archive/issue_comments_032711.json:
 ```json
 {
-    "body": "Attachment\n\nPhilippe,\n\nGreat work!  I'll do my best to review this for 3.2.2.  Right now I notice that the patch doesn't work in 3.2.1 because of #4580.  I'm attaching a tiny patch that fixes that (should be applied after complex_mpc.p0.patch.",
+    "body": "Attachment [trac4446_fix.patch](tarball://root/attachments/some-uuid/ticket4446/trac4446_fix.patch) by AlexGhitza created at 2008-12-05 07:50:45\n\nPhilippe,\n\nGreat work!  I'll do my best to review this for 3.2.2.  Right now I notice that the patch doesn't work in 3.2.1 because of #4580.  I'm attaching a tiny patch that fixes that (should be applied after complex_mpc.p0.patch.",
     "created_at": "2008-12-05T07:50:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -160,7 +160,7 @@ archive/issue_comments_032711.json:
 }
 ```
 
-Attachment
+Attachment [trac4446_fix.patch](tarball://root/attachments/some-uuid/ticket4446/trac4446_fix.patch) by AlexGhitza created at 2008-12-05 07:50:45
 
 Philippe,
 
@@ -260,7 +260,7 @@ apply after complex_mpc.p0.patch and trac4446_fix.patch
 archive/issue_comments_032714.json:
 ```json
 {
-    "body": "Attachment\n\nI added a patch trac4446_doctests.patch, which does a number of things:\n\n* adds doctests for all functions except three internal use only functions\n* changes _repr_ of complex numbers so that it agrees with the way complex numbers are currently printed in Sage\n* makes MPComplexField inherit from ParentWithGens, being generated over its real field by the square root of -1 (just as it is now); this required adding a few functions.  So now one can do\n\n\n```\nsage: from sage.rings.complex_mpc import MPComplexField\nsage: MPC.<j> = MPComplexField()\nsage: j^2\n-1.00000000000000 + 0.000000000000000*I\n```\n\n\nNote that only the last three patches should be applied, in order: complex_mpc.p0.patch, trac4446_fix.patch, and trac4446_doctests.patch",
+    "body": "Attachment [trac4446_doctests.patch](tarball://root/attachments/some-uuid/ticket4446/trac4446_doctests.patch) by AlexGhitza created at 2008-12-11 05:13:09\n\nI added a patch trac4446_doctests.patch, which does a number of things:\n\n* adds doctests for all functions except three internal use only functions\n* changes _repr_ of complex numbers so that it agrees with the way complex numbers are currently printed in Sage\n* makes MPComplexField inherit from ParentWithGens, being generated over its real field by the square root of -1 (just as it is now); this required adding a few functions.  So now one can do\n\n\n```\nsage: from sage.rings.complex_mpc import MPComplexField\nsage: MPC.<j> = MPComplexField()\nsage: j^2\n-1.00000000000000 + 0.000000000000000*I\n```\n\n\nNote that only the last three patches should be applied, in order: complex_mpc.p0.patch, trac4446_fix.patch, and trac4446_doctests.patch",
     "created_at": "2008-12-11T05:13:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -269,7 +269,7 @@ archive/issue_comments_032714.json:
 }
 ```
 
-Attachment
+Attachment [trac4446_doctests.patch](tarball://root/attachments/some-uuid/ticket4446/trac4446_doctests.patch) by AlexGhitza created at 2008-12-11 05:13:09
 
 I added a patch trac4446_doctests.patch, which does a number of things:
 
@@ -295,7 +295,7 @@ Note that only the last three patches should be applied, in order: complex_mpc.p
 archive/issue_comments_032715.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac4446_norm.patch](tarball://root/attachments/some-uuid/ticket4446/trac4446_norm.patch) by thevenyp created at 2008-12-18 12:47:06",
     "created_at": "2008-12-18T12:47:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -304,7 +304,7 @@ archive/issue_comments_032715.json:
 }
 ```
 
-Attachment
+Attachment [trac4446_norm.patch](tarball://root/attachments/some-uuid/ticket4446/trac4446_norm.patch) by thevenyp created at 2008-12-18 12:47:06
 
 
 
@@ -431,7 +431,7 @@ Thus until the above issues are addressed, I see no point in mpc going into sage
 archive/issue_comments_032718.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [complex_mpc.pxd](tarball://root/attachments/some-uuid/ticket4446/complex_mpc.pxd) by zimmerma created at 2009-08-26 12:31:09",
     "created_at": "2009-08-26T12:31:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -440,7 +440,7 @@ archive/issue_comments_032718.json:
 }
 ```
 
-Attachment
+Attachment [complex_mpc.pxd](tarball://root/attachments/some-uuid/ticket4446/complex_mpc.pxd) by zimmerma created at 2009-08-26 12:31:09
 
 
 
@@ -449,7 +449,7 @@ Attachment
 archive/issue_comments_032719.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [complex_mpc.pyx](tarball://root/attachments/some-uuid/ticket4446/complex_mpc.pyx) by zimmerma created at 2009-08-26 12:31:42",
     "created_at": "2009-08-26T12:31:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -458,7 +458,7 @@ archive/issue_comments_032719.json:
 }
 ```
 
-Attachment
+Attachment [complex_mpc.pyx](tarball://root/attachments/some-uuid/ticket4446/complex_mpc.pyx) by zimmerma created at 2009-08-26 12:31:42
 
 
 
@@ -467,7 +467,7 @@ Attachment
 archive/issue_comments_032720.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [mpc.pxi](tarball://root/attachments/some-uuid/ticket4446/mpc.pxi) by zimmerma created at 2009-08-26 12:31:53",
     "created_at": "2009-08-26T12:31:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -476,7 +476,7 @@ archive/issue_comments_032720.json:
 }
 ```
 
-Attachment
+Attachment [mpc.pxi](tarball://root/attachments/some-uuid/ticket4446/mpc.pxi) by zimmerma created at 2009-08-26 12:31:53
 
 
 
@@ -505,7 +505,7 @@ but still not as good as the current CC (but more reliable due to correct roundi
 archive/issue_comments_032722.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [mpc-0.8.1.patch](tarball://root/attachments/some-uuid/ticket4446/mpc-0.8.1.patch) by ylchapuy created at 2009-12-22 15:42:57",
     "created_at": "2009-12-22T15:42:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -514,7 +514,7 @@ archive/issue_comments_032722.json:
 }
 ```
 
-Attachment
+Attachment [mpc-0.8.1.patch](tarball://root/attachments/some-uuid/ticket4446/mpc-0.8.1.patch) by ylchapuy created at 2009-12-22 15:42:57
 
 
 
@@ -638,7 +638,7 @@ apply after mpc-0.8.1.patch
 archive/issue_comments_032726.json:
 ```json
 {
-    "body": "Attachment\n\nI put it as needs review to know what has eventually to be done.",
+    "body": "Attachment [bug_literal.patch](tarball://root/attachments/some-uuid/ticket4446/bug_literal.patch) by ylchapuy created at 2010-02-08 11:33:58\n\nI put it as needs review to know what has eventually to be done.",
     "created_at": "2010-02-08T11:33:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -647,7 +647,7 @@ archive/issue_comments_032726.json:
 }
 ```
 
-Attachment
+Attachment [bug_literal.patch](tarball://root/attachments/some-uuid/ticket4446/bug_literal.patch) by ylchapuy created at 2010-02-08 11:33:58
 
 I put it as needs review to know what has eventually to be done.
 
@@ -793,7 +793,7 @@ exact_rational).
 archive/issue_comments_032733.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac4446-rebase_sage4.3.3.patch](tarball://root/attachments/some-uuid/ticket4446/trac4446-rebase_sage4.3.3.patch) by ylchapuy created at 2010-03-10 14:38:33",
     "created_at": "2010-03-10T14:38:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -802,7 +802,7 @@ archive/issue_comments_032733.json:
 }
 ```
 
-Attachment
+Attachment [trac4446-rebase_sage4.3.3.patch](tarball://root/attachments/some-uuid/ticket4446/trac4446-rebase_sage4.3.3.patch) by ylchapuy created at 2010-03-10 14:38:33
 
 
 
@@ -948,7 +948,7 @@ Did somebody check the 500-bit outputs of CC and MPC agree?
 archive/issue_comments_032737.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage.c](tarball://root/attachments/some-uuid/ticket4446/sage.c) by zimmerma created at 2010-03-10 15:29:41",
     "created_at": "2010-03-10T15:29:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -957,7 +957,7 @@ archive/issue_comments_032737.json:
 }
 ```
 
-Attachment
+Attachment [sage.c](tarball://root/attachments/some-uuid/ticket4446/sage.c) by zimmerma created at 2010-03-10 15:29:41
 
 
 
@@ -1377,7 +1377,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_032754.json:
 ```json
 {
-    "body": "Attachment\n\nafter installing 'mpc-0.8.2svn793.spkg' ,\none needs to apply in order:\n* mpc-0.8.1.patch\n* bug_literal.patch\n* trac4446-rebase_sage4.3.3.patch\n* fix_declaration.patch\n\nTested with vanilla sage-4.4.3, Ubuntu 10.04, kernel 2.6.32-22-generic # 36-Ubuntu SMP Thu Jun 3 19:31:57 UTC 2010 x86_64 GNU/Linux, Intel(R) Core(TM) i5 CPU 650 `@` 3.20GHz.\n\n\n```\nsage -t  \"devel/sage-main/sage/rings/complex_mpc.pyx\"       \n\t [1.8 s]\n \n----------------------------------------------------------------------\nAll tests passed!\n```\n\n\nThe script 'spkg-install' is a mix between the template from:\n\nhttp://www.sagemath.org/doc/developer/producing_spkgs.html#creating-a-new-spkg\n\nand the script from the mpfr spkg. In particular, I don't know what is the point of the EXTRA flags, but thought they might be useful.\n\nYou will also see in the file SPKG.txt:\n\n\n```\n## SPKG Maintainers\n\n * ???\n```\n\n\nI just can't be the maintainer, sorry...",
+    "body": "Attachment [fix_declaration.patch](tarball://root/attachments/some-uuid/ticket4446/fix_declaration.patch) by ylchapuy created at 2010-06-18 21:33:42\n\nafter installing 'mpc-0.8.2svn793.spkg' ,\none needs to apply in order:\n* mpc-0.8.1.patch\n* bug_literal.patch\n* trac4446-rebase_sage4.3.3.patch\n* fix_declaration.patch\n\nTested with vanilla sage-4.4.3, Ubuntu 10.04, kernel 2.6.32-22-generic # 36-Ubuntu SMP Thu Jun 3 19:31:57 UTC 2010 x86_64 GNU/Linux, Intel(R) Core(TM) i5 CPU 650 `@` 3.20GHz.\n\n\n```\nsage -t  \"devel/sage-main/sage/rings/complex_mpc.pyx\"       \n\t [1.8 s]\n \n----------------------------------------------------------------------\nAll tests passed!\n```\n\n\nThe script 'spkg-install' is a mix between the template from:\n\nhttp://www.sagemath.org/doc/developer/producing_spkgs.html#creating-a-new-spkg\n\nand the script from the mpfr spkg. In particular, I don't know what is the point of the EXTRA flags, but thought they might be useful.\n\nYou will also see in the file SPKG.txt:\n\n\n```\n## SPKG Maintainers\n\n * ???\n```\n\n\nI just can't be the maintainer, sorry...",
     "created_at": "2010-06-18T21:33:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -1386,7 +1386,7 @@ archive/issue_comments_032754.json:
 }
 ```
 
-Attachment
+Attachment [fix_declaration.patch](tarball://root/attachments/some-uuid/ticket4446/fix_declaration.patch) by ylchapuy created at 2010-06-18 21:33:42
 
 after installing 'mpc-0.8.2svn793.spkg' ,
 one needs to apply in order:
@@ -1953,7 +1953,7 @@ Dave
 archive/issue_comments_032768.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [make_mpc_optional.patch](tarball://root/attachments/some-uuid/ticket4446/make_mpc_optional.patch) by ylchapuy created at 2010-06-21 21:45:03",
     "created_at": "2010-06-21T21:45:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -1962,7 +1962,7 @@ archive/issue_comments_032768.json:
 }
 ```
 
-Attachment
+Attachment [make_mpc_optional.patch](tarball://root/attachments/some-uuid/ticket4446/make_mpc_optional.patch) by ylchapuy created at 2010-06-21 21:45:03
 
 
 
@@ -2199,7 +2199,7 @@ apply only this patch
 archive/issue_comments_032776.json:
 ```json
 {
-    "body": "Attachment\n\nThis ticket is already too long, but here is another rebased version:\n\n* I made a self contained patch rebased on sage 4.5.2. http://trac.sagemath.org/sage_trac/attachment/ticket/4446/trac4446-optional_mpc-sage4.5.2based.patch\n\n* An spkg is still available at http://yann.laiglechapuy.net/spkg/mpc-0.8.3-dev-svn793.spkg\n\n* this is intended to make `mpc` an **optional** spkg. The `complex_mpc` module won't be compiled if the spkg is not installed.",
+    "body": "Attachment [trac4446-optional_mpc-sage4.5.2based.patch](tarball://root/attachments/some-uuid/ticket4446/trac4446-optional_mpc-sage4.5.2based.patch) by ylchapuy created at 2010-08-12 11:17:49\n\nThis ticket is already too long, but here is another rebased version:\n\n* I made a self contained patch rebased on sage 4.5.2. http://trac.sagemath.org/sage_trac/attachment/ticket/4446/trac4446-optional_mpc-sage4.5.2based.patch\n\n* An spkg is still available at http://yann.laiglechapuy.net/spkg/mpc-0.8.3-dev-svn793.spkg\n\n* this is intended to make `mpc` an **optional** spkg. The `complex_mpc` module won't be compiled if the spkg is not installed.",
     "created_at": "2010-08-12T11:17:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -2208,7 +2208,7 @@ archive/issue_comments_032776.json:
 }
 ```
 
-Attachment
+Attachment [trac4446-optional_mpc-sage4.5.2based.patch](tarball://root/attachments/some-uuid/ticket4446/trac4446-optional_mpc-sage4.5.2based.patch) by ylchapuy created at 2010-08-12 11:17:49
 
 This ticket is already too long, but here is another rebased version:
 
@@ -2642,7 +2642,7 @@ I won't be able to add this before next week, so if someone motivated beats me..
 archive/issue_comments_032785.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac4446-mark_doctests_optional.patch](tarball://root/attachments/some-uuid/ticket4446/trac4446-mark_doctests_optional.patch) by ylchapuy created at 2010-09-29 11:55:27",
     "created_at": "2010-09-29T11:55:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -2651,7 +2651,7 @@ archive/issue_comments_032785.json:
 }
 ```
 
-Attachment
+Attachment [trac4446-mark_doctests_optional.patch](tarball://root/attachments/some-uuid/ticket4446/trac4446-mark_doctests_optional.patch) by ylchapuy created at 2010-09-29 11:55:27
 
 
 

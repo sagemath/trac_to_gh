@@ -61,7 +61,7 @@ computes the Shimura subgroup of J0(N) and its subvarieties.
 archive/issue_comments_057634.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6966-shimuracuspidal.patch](tarball://root/attachments/some-uuid/ticket6966/6966-shimuracuspidal.patch) by was created at 2009-09-20 07:15:08",
     "created_at": "2009-09-20T07:15:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6966",
     "type": "issue_comment",
@@ -70,7 +70,7 @@ archive/issue_comments_057634.json:
 }
 ```
 
-Attachment
+Attachment [6966-shimuracuspidal.patch](tarball://root/attachments/some-uuid/ticket6966/6966-shimuracuspidal.patch) by was created at 2009-09-20 07:15:08
 
 
 

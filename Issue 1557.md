@@ -86,7 +86,7 @@ I moved Ted's comment to a new ticket: #3151.  Since it has nothing to do with t
 archive/issue_comments_009925.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-1557.patch](tarball://root/attachments/some-uuid/ticket1557/sage-1557.patch) by was created at 2008-05-10 21:13:44",
     "created_at": "2008-05-10T21:13:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1557",
     "type": "issue_comment",
@@ -95,7 +95,7 @@ archive/issue_comments_009925.json:
 }
 ```
 
-Attachment
+Attachment [sage-1557.patch](tarball://root/attachments/some-uuid/ticket1557/sage-1557.patch) by was created at 2008-05-10 21:13:44
 
 
 

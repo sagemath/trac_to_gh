@@ -104,7 +104,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_087330.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me!",
+    "body": "Attachment [trac_9272-only-optional-case-insensitive.patch](tarball://root/attachments/some-uuid/ticket9272/trac_9272-only-optional-case-insensitive.patch) by rlm created at 2010-06-20 22:55:27\n\nLooks good to me!",
     "created_at": "2010-06-20T22:55:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9272",
     "type": "issue_comment",
@@ -113,7 +113,7 @@ archive/issue_comments_087330.json:
 }
 ```
 
-Attachment
+Attachment [trac_9272-only-optional-case-insensitive.patch](tarball://root/attachments/some-uuid/ticket9272/trac_9272-only-optional-case-insensitive.patch) by rlm created at 2010-06-20 22:55:27
 
 Looks good to me!
 

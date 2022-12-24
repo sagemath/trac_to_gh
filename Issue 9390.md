@@ -128,7 +128,7 @@ Changing status from new to needs_review.
 archive/issue_comments_089392.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9390.patch](tarball://root/attachments/some-uuid/ticket9390/trac_9390.patch) by fwclarke created at 2010-12-10 15:07:28",
     "created_at": "2010-12-10T15:07:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9390",
     "type": "issue_comment",
@@ -137,7 +137,7 @@ archive/issue_comments_089392.json:
 }
 ```
 
-Attachment
+Attachment [trac_9390.patch](tarball://root/attachments/some-uuid/ticket9390/trac_9390.patch) by fwclarke created at 2010-12-10 15:07:28
 
 
 
@@ -244,7 +244,7 @@ It was also necessary to make a minor change to an unconnected doctest.  This i
 archive/issue_comments_089397.json:
 ```json
 {
-    "body": "Attachment\n\nReplaces previous patch",
+    "body": "Attachment [trac_9390-replacement.patch](tarball://root/attachments/some-uuid/ticket9390/trac_9390-replacement.patch) by fwclarke created at 2010-12-16 08:37:06\n\nReplaces previous patch",
     "created_at": "2010-12-16T08:37:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9390",
     "type": "issue_comment",
@@ -253,7 +253,7 @@ archive/issue_comments_089397.json:
 }
 ```
 
-Attachment
+Attachment [trac_9390-replacement.patch](tarball://root/attachments/some-uuid/ticket9390/trac_9390-replacement.patch) by fwclarke created at 2010-12-16 08:37:06
 
 Replaces previous patch
 
@@ -476,7 +476,7 @@ Replaces previous two patches
 archive/issue_comments_089403.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:7 fwclarke]:\n> I can't reproduce this.  Actually `is_galois` is not particularly ubiquitous (and certainly does figure in `gal_reps.py`):\n\nHow could you be so sure about that? The timeout is caused by the long test `EllipticCurve([1,-1,0,-107,-379]).galois_representation().image_type(7)`\nThe image_type() part runs forever on 4.6.1.alpha2 with your second patch, and is quite fast without any patches. That method is a long piece of code, so I didn't read it all, but it does suggest that it uses is_galois somewhere via another function.",
+    "body": "Attachment [trac_9390-2nd_replacement.patch](tarball://root/attachments/some-uuid/ticket9390/trac_9390-2nd_replacement.patch) by mstreng created at 2010-12-17 11:49:08\n\nReplying to [comment:7 fwclarke]:\n> I can't reproduce this.  Actually `is_galois` is not particularly ubiquitous (and certainly does figure in `gal_reps.py`):\n\nHow could you be so sure about that? The timeout is caused by the long test `EllipticCurve([1,-1,0,-107,-379]).galois_representation().image_type(7)`\nThe image_type() part runs forever on 4.6.1.alpha2 with your second patch, and is quite fast without any patches. That method is a long piece of code, so I didn't read it all, but it does suggest that it uses is_galois somewhere via another function.",
     "created_at": "2010-12-17T11:49:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9390",
     "type": "issue_comment",
@@ -485,7 +485,7 @@ archive/issue_comments_089403.json:
 }
 ```
 
-Attachment
+Attachment [trac_9390-2nd_replacement.patch](tarball://root/attachments/some-uuid/ticket9390/trac_9390-2nd_replacement.patch) by mstreng created at 2010-12-17 11:49:08
 
 Replying to [comment:7 fwclarke]:
 > I can't reproduce this.  Actually `is_galois` is not particularly ubiquitous (and certainly does figure in `gal_reps.py`):
@@ -658,7 +658,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_089410.json:
 ```json
 {
-    "body": "Attachment\n\nReplaces previous three patches",
+    "body": "Attachment [trac_9390-3rd_replacement.patch](tarball://root/attachments/some-uuid/ticket9390/trac_9390-3rd_replacement.patch) by fwclarke created at 2010-12-20 19:31:51\n\nReplaces previous three patches",
     "created_at": "2010-12-20T19:31:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9390",
     "type": "issue_comment",
@@ -667,7 +667,7 @@ archive/issue_comments_089410.json:
 }
 ```
 
-Attachment
+Attachment [trac_9390-3rd_replacement.patch](tarball://root/attachments/some-uuid/ticket9390/trac_9390-3rd_replacement.patch) by fwclarke created at 2010-12-20 19:31:51
 
 Replaces previous three patches
 

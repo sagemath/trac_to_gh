@@ -134,7 +134,7 @@ Note that the Debian 'dist' subdirectory also exists on this package, and should
 archive/issue_comments_083638.json:
 ```json
 {
-    "body": "Attachment\n\nMercurial patch to build 64-bit",
+    "body": "Attachment [flinqs.patch](tarball://root/attachments/some-uuid/ticket9034/flinqs.patch) by drkirkby created at 2010-05-24 15:45:13\n\nMercurial patch to build 64-bit",
     "created_at": "2010-05-24T15:45:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9034",
     "type": "issue_comment",
@@ -143,7 +143,7 @@ archive/issue_comments_083638.json:
 }
 ```
 
-Attachment
+Attachment [flinqs.patch](tarball://root/attachments/some-uuid/ticket9034/flinqs.patch) by drkirkby created at 2010-05-24 15:45:13
 
 Mercurial patch to build 64-bit
 

@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5258
 archive/issue_comments_040354.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5258-escape-with-cgi.patch](tarball://root/attachments/some-uuid/ticket5258/trac_5258-escape-with-cgi.patch) by jason created at 2009-02-13 19:11:03",
     "created_at": "2009-02-13T19:11:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5258",
     "type": "issue_comment",
@@ -41,7 +41,7 @@ archive/issue_comments_040354.json:
 }
 ```
 
-Attachment
+Attachment [trac_5258-escape-with-cgi.patch](tarball://root/attachments/some-uuid/ticket5258/trac_5258-escape-with-cgi.patch) by jason created at 2009-02-13 19:11:03
 
 
 

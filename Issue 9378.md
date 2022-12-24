@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9378
 archive/issue_comments_089111.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-russian-tutorial-rst.tar.bz2](tarball://root/attachments/some-uuid/ticket9378/Sage-russian-tutorial-rst.tar.bz2) by mvngu created at 2010-06-29 18:37:56",
     "created_at": "2010-06-29T18:37:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9378",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_089111.json:
 }
 ```
 
-Attachment
+Attachment [Sage-russian-tutorial-rst.tar.bz2](tarball://root/attachments/some-uuid/ticket9378/Sage-russian-tutorial-rst.tar.bz2) by mvngu created at 2010-06-29 18:37:56
 
 
 
@@ -159,7 +159,7 @@ archive/issue_comments_089117.json:
 archive/issue_comments_089118.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9378_russian_tutorial_translation.patch](tarball://root/attachments/some-uuid/ticket9378/9378_russian_tutorial_translation.patch) by novoselt created at 2010-07-20 17:58:00",
     "created_at": "2010-07-20T17:58:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9378",
     "type": "issue_comment",
@@ -168,7 +168,7 @@ archive/issue_comments_089118.json:
 }
 ```
 
-Attachment
+Attachment [9378_russian_tutorial_translation.patch](tarball://root/attachments/some-uuid/ticket9378/9378_russian_tutorial_translation.patch) by novoselt created at 2010-07-20 17:58:00
 
 
 
@@ -177,7 +177,7 @@ Attachment
 archive/issue_comments_089119.json:
 ```json
 {
-    "body": "Attachment\n\nRebased to apply on 4.7.1.alpha2",
+    "body": "Attachment [9378_russian_tutorial_translation.2.patch](tarball://root/attachments/some-uuid/ticket9378/9378_russian_tutorial_translation.2.patch) by novoselt created at 2011-06-13 23:38:10\n\nRebased to apply on 4.7.1.alpha2",
     "created_at": "2011-06-13T23:38:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9378",
     "type": "issue_comment",
@@ -186,7 +186,7 @@ archive/issue_comments_089119.json:
 }
 ```
 
-Attachment
+Attachment [9378_russian_tutorial_translation.2.patch](tarball://root/attachments/some-uuid/ticket9378/9378_russian_tutorial_translation.2.patch) by novoselt created at 2011-06-13 23:38:10
 
 Rebased to apply on 4.7.1.alpha2
 
@@ -514,7 +514,7 @@ Adjustments and comment translation
 archive/issue_comments_089132.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9378_reviewer.patch](tarball://root/attachments/some-uuid/ticket9378/trac_9378_reviewer.patch) by novoselt created at 2011-06-14 23:06:29",
     "created_at": "2011-06-14T23:06:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9378",
     "type": "issue_comment",
@@ -523,7 +523,7 @@ archive/issue_comments_089132.json:
 }
 ```
 
-Attachment
+Attachment [trac_9378_reviewer.patch](tarball://root/attachments/some-uuid/ticket9378/trac_9378_reviewer.patch) by novoselt created at 2011-06-14 23:06:29
 
 
 
@@ -612,7 +612,7 @@ Add devel/sage/doc/ru to TESTDIRS
 archive/issue_comments_089137.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9378_TESTDIRS.patch](tarball://root/attachments/some-uuid/ticket9378/9378_TESTDIRS.patch) by jdemeyer created at 2011-06-15 20:23:23",
     "created_at": "2011-06-15T20:23:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9378",
     "type": "issue_comment",
@@ -621,7 +621,7 @@ archive/issue_comments_089137.json:
 }
 ```
 
-Attachment
+Attachment [9378_TESTDIRS.patch](tarball://root/attachments/some-uuid/ticket9378/9378_TESTDIRS.patch) by jdemeyer created at 2011-06-15 20:23:23
 
 
 

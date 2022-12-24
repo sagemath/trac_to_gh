@@ -97,7 +97,7 @@ Changing status from new to assigned.
 archive/issue_comments_025733.json:
 ```json
 {
-    "body": "Attachment\n\nFixed the Z/8Z case. As for Z/7Z and Q, they are incomparable, which by convention means == returns False. (If it gave an error,we would have to re-think nonsense like `\"some string\" != random_matrix(ZZ, 3)` returning False).",
+    "body": "Attachment [3638-free-module-coerce.patch](tarball://root/attachments/some-uuid/ticket3638/3638-free-module-coerce.patch) by robertwb created at 2010-01-17 09:43:06\n\nFixed the Z/8Z case. As for Z/7Z and Q, they are incomparable, which by convention means == returns False. (If it gave an error,we would have to re-think nonsense like `\"some string\" != random_matrix(ZZ, 3)` returning False).",
     "created_at": "2010-01-17T09:43:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3638",
     "type": "issue_comment",
@@ -106,7 +106,7 @@ archive/issue_comments_025733.json:
 }
 ```
 
-Attachment
+Attachment [3638-free-module-coerce.patch](tarball://root/attachments/some-uuid/ticket3638/3638-free-module-coerce.patch) by robertwb created at 2010-01-17 09:43:06
 
 Fixed the Z/8Z case. As for Z/7Z and Q, they are incomparable, which by convention means == returns False. (If it gave an error,we would have to re-think nonsense like `"some string" != random_matrix(ZZ, 3)` returning False).
 

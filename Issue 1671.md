@@ -77,7 +77,7 @@ Resolution: fixed
 archive/issue_comments_010611.json:
 ```json
 {
-    "body": "Attachment\n\nApplied to 2.9.2.alpha0.",
+    "body": "Attachment [Sage-2.9.2-remove-debug-output.patch](tarball://root/attachments/some-uuid/ticket1671/Sage-2.9.2-remove-debug-output.patch) by mabshoff created at 2008-01-03 17:27:58\n\nApplied to 2.9.2.alpha0.",
     "created_at": "2008-01-03T17:27:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1671",
     "type": "issue_comment",
@@ -86,6 +86,6 @@ archive/issue_comments_010611.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.9.2-remove-debug-output.patch](tarball://root/attachments/some-uuid/ticket1671/Sage-2.9.2-remove-debug-output.patch) by mabshoff created at 2008-01-03 17:27:58
 
 Applied to 2.9.2.alpha0.

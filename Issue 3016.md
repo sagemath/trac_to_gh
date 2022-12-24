@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3016
 archive/issue_comments_020724.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [edit_area-0.7.1.spkg](tarball://root/attachments/some-uuid/ticket3016/edit_area-0.7.1.spkg) by jason created at 2008-04-24 08:52:21",
     "created_at": "2008-04-24T08:52:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3016",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_020724.json:
 }
 ```
 
-Attachment
+Attachment [edit_area-0.7.1.spkg](tarball://root/attachments/some-uuid/ticket3016/edit_area-0.7.1.spkg) by jason created at 2008-04-24 08:52:21
 
 
 
@@ -51,7 +51,7 @@ Attachment
 archive/issue_comments_020725.json:
 ```json
 {
-    "body": "Attachment\n\nHi Jason,\n\ninstead of an spkg it would be customary to add the code directly to the extcode repo. What is the license of the code? The notebook code is supposed to be BSD since other projects might be able to pick it up that way.\n\nIf you want discussion of something like this you should mention it on sage-devel since trac is certainly the wrong place to discuss this and few people will find the ticket without it being mentioned on sage-devel.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac-3016-edit-area.patch](tarball://root/attachments/some-uuid/ticket3016/trac-3016-edit-area.patch) by mabshoff created at 2008-04-24 14:17:12\n\nHi Jason,\n\ninstead of an spkg it would be customary to add the code directly to the extcode repo. What is the license of the code? The notebook code is supposed to be BSD since other projects might be able to pick it up that way.\n\nIf you want discussion of something like this you should mention it on sage-devel since trac is certainly the wrong place to discuss this and few people will find the ticket without it being mentioned on sage-devel.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-24T14:17:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3016",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_020725.json:
 }
 ```
 
-Attachment
+Attachment [trac-3016-edit-area.patch](tarball://root/attachments/some-uuid/ticket3016/trac-3016-edit-area.patch) by mabshoff created at 2008-04-24 14:17:12
 
 Hi Jason,
 

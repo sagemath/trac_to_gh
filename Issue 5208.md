@@ -53,7 +53,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5208
 archive/issue_comments_039899.json:
 ```json
 {
-    "body": "Attachment\n\nHigh-level code has been renamed from left_kernel() to simply kernel() to maintain consistency with derived classes.  So kernel() is no longer an alias for left_kernel().\n\nright_kernel() is mostly unchanged, calls kernel() on transpose.\n\nleft_kernel() now just calls kernel().  This should all ensure the proper versions of kernel() in derived classes are reached.\n\nDoctests for kernel() and left_kernel() are identical except for names used in explanations and the actual calls.  Doctests for right_kernel now have \"right\" in explantions, otherwise unchanged.\n\nEach of the three versions has a doctest with a symmetric 500 x 500 matrix of rational entries, which requires about 3 seconds of overhead and 1 second for the actual kernel call when patched.  Unpatched version 3.2.3 will take 589 seconds for left_kernel() on this example.  Runtimes seem to be O(n-cubed) if a smaller (faster) example is better.\n\nTimings on patched versions suggest that for rational matrices, the overhead in right_kernel() of transposing the matrix twice has the effect of doubling the runtime versus left_kernel.",
+    "body": "Attachment [trac_5208_kernels.patch](tarball://root/attachments/some-uuid/ticket5208/trac_5208_kernels.patch) by rbeezer created at 2009-02-08 22:52:12\n\nHigh-level code has been renamed from left_kernel() to simply kernel() to maintain consistency with derived classes.  So kernel() is no longer an alias for left_kernel().\n\nright_kernel() is mostly unchanged, calls kernel() on transpose.\n\nleft_kernel() now just calls kernel().  This should all ensure the proper versions of kernel() in derived classes are reached.\n\nDoctests for kernel() and left_kernel() are identical except for names used in explanations and the actual calls.  Doctests for right_kernel now have \"right\" in explantions, otherwise unchanged.\n\nEach of the three versions has a doctest with a symmetric 500 x 500 matrix of rational entries, which requires about 3 seconds of overhead and 1 second for the actual kernel call when patched.  Unpatched version 3.2.3 will take 589 seconds for left_kernel() on this example.  Runtimes seem to be O(n-cubed) if a smaller (faster) example is better.\n\nTimings on patched versions suggest that for rational matrices, the overhead in right_kernel() of transposing the matrix twice has the effect of doubling the runtime versus left_kernel.",
     "created_at": "2009-02-08T22:52:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5208",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_039899.json:
 }
 ```
 
-Attachment
+Attachment [trac_5208_kernels.patch](tarball://root/attachments/some-uuid/ticket5208/trac_5208_kernels.patch) by rbeezer created at 2009-02-08 22:52:12
 
 High-level code has been renamed from left_kernel() to simply kernel() to maintain consistency with derived classes.  So kernel() is no longer an alias for left_kernel().
 
@@ -246,7 +246,7 @@ This is a rebase version of Rob's patch. The problem was trivial since only doct
 archive/issue_comments_039906.json:
 ```json
 {
-    "body": "Attachment\n\ntrac_5208_kernels.2.patch is a rebased version of Rob's patch.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_5208_kernels.2.patch](tarball://root/attachments/some-uuid/ticket5208/trac_5208_kernels.2.patch) by mabshoff created at 2009-02-09 07:44:28\n\ntrac_5208_kernels.2.patch is a rebased version of Rob's patch.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-09T07:44:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5208",
     "type": "issue_comment",
@@ -255,7 +255,7 @@ archive/issue_comments_039906.json:
 }
 ```
 
-Attachment
+Attachment [trac_5208_kernels.2.patch](tarball://root/attachments/some-uuid/ticket5208/trac_5208_kernels.2.patch) by mabshoff created at 2009-02-09 07:44:28
 
 trac_5208_kernels.2.patch is a rebased version of Rob's patch.
 

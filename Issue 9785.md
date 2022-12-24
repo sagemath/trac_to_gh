@@ -96,7 +96,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_096049.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.",
+    "body": "Attachment [trac_9786_submultiset_fix.patch](tarball://root/attachments/some-uuid/ticket9786/trac_9786_submultiset_fix.patch) by mhansen created at 2011-12-18 13:26:47\n\nLooks good to me.",
     "created_at": "2011-12-18T13:26:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9785",
     "type": "issue_comment",
@@ -105,7 +105,7 @@ archive/issue_comments_096049.json:
 }
 ```
 
-Attachment
+Attachment [trac_9786_submultiset_fix.patch](tarball://root/attachments/some-uuid/ticket9786/trac_9786_submultiset_fix.patch) by mhansen created at 2011-12-18 13:26:47
 
 Looks good to me.
 

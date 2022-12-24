@@ -90,7 +90,7 @@ Changing status from new to needs_work.
 archive/issue_comments_075793.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [13544.patch](tarball://root/attachments/some-uuid/ticket8441/13544.patch) by jen created at 2010-03-05 01:34:27",
     "created_at": "2010-03-05T01:34:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8441",
     "type": "issue_comment",
@@ -99,7 +99,7 @@ archive/issue_comments_075793.json:
 }
 ```
 
-Attachment
+Attachment [13544.patch](tarball://root/attachments/some-uuid/ticket8441/13544.patch) by jen created at 2010-03-05 01:34:27
 
 
 
@@ -166,7 +166,7 @@ apply only trac_8441_rebased.patch
 archive/issue_comments_075797.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8441_rebased.patch](tarball://root/attachments/some-uuid/ticket8441/trac_8441_rebased.patch) by chapoton created at 2013-10-04 21:14:51",
     "created_at": "2013-10-04T21:14:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8441",
     "type": "issue_comment",
@@ -175,7 +175,7 @@ archive/issue_comments_075797.json:
 }
 ```
 
-Attachment
+Attachment [trac_8441_rebased.patch](tarball://root/attachments/some-uuid/ticket8441/trac_8441_rebased.patch) by chapoton created at 2013-10-04 21:14:51
 
 
 

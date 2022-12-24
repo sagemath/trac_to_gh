@@ -116,7 +116,7 @@ Changing assignee from rlm to mhansen.
 archive/issue_comments_010519.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1652.patch](tarball://root/attachments/some-uuid/ticket1652/1652.patch) by mhansen created at 2008-01-20 00:41:12",
     "created_at": "2008-01-20T00:41:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1652",
     "type": "issue_comment",
@@ -125,7 +125,7 @@ archive/issue_comments_010519.json:
 }
 ```
 
-Attachment
+Attachment [1652.patch](tarball://root/attachments/some-uuid/ticket1652/1652.patch) by mhansen created at 2008-01-20 00:41:12
 
 
 

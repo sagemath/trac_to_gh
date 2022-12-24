@@ -325,7 +325,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4785
 archive/issue_comments_036273.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4785.patch](tarball://root/attachments/some-uuid/ticket4785/trac_4785.patch) by mabshoff created at 2008-12-14 08:58:12",
     "created_at": "2008-12-14T08:58:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4785",
     "type": "issue_comment",
@@ -334,7 +334,7 @@ archive/issue_comments_036273.json:
 }
 ```
 
-Attachment
+Attachment [trac_4785.patch](tarball://root/attachments/some-uuid/ticket4785/trac_4785.patch) by mabshoff created at 2008-12-14 08:58:12
 
 
 

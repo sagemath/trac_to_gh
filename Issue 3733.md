@@ -107,7 +107,7 @@ Changing status from new to needs_review.
 archive/issue_comments_026505.json:
 ```json
 {
-    "body": "Attachment\n\nNote only does this add the remark to the manual, but also sphinxifies the ``notebook?`` docstring.",
+    "body": "Attachment [sagenb-3733.patch](tarball://root/attachments/some-uuid/ticket3733/sagenb-3733.patch) by was created at 2009-11-19 23:26:47\n\nNote only does this add the remark to the manual, but also sphinxifies the ``notebook?`` docstring.",
     "created_at": "2009-11-19T23:26:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3733",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_026505.json:
 }
 ```
 
-Attachment
+Attachment [sagenb-3733.patch](tarball://root/attachments/some-uuid/ticket3733/sagenb-3733.patch) by was created at 2009-11-19 23:26:47
 
 Note only does this add the remark to the manual, but also sphinxifies the ``notebook?`` docstring.
 

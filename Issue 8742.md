@@ -73,7 +73,7 @@ I forgot to add the doc in the reference manual, I just reuploaded a version wit
 archive/issue_comments_079987.json:
 ```json
 {
-    "body": "Attachment\n\nThe former patch made sphinx to raise a warning. This is now fixed.",
+    "body": "Attachment [trac_8742-lazy_format-fh.patch](tarball://root/attachments/some-uuid/ticket8742/trac_8742-lazy_format-fh.patch) by hivert created at 2010-04-22 19:41:22\n\nThe former patch made sphinx to raise a warning. This is now fixed.",
     "created_at": "2010-04-22T19:41:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8742",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_079987.json:
 }
 ```
 
-Attachment
+Attachment [trac_8742-lazy_format-fh.patch](tarball://root/attachments/some-uuid/ticket8742/trac_8742-lazy_format-fh.patch) by hivert created at 2010-04-22 19:41:22
 
 The former patch made sphinx to raise a warning. This is now fixed.
 
@@ -111,7 +111,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_079989.json:
 ```json
 {
-    "body": "Attachment\n\nThis is an extract from a private mail from Nicolas Thi\u00e9ry:\n\n```\n - trac_8742-lazy_format-fh.patch\n   trac_8742-lazy_format-review-nt.patch\n\n   Si mon patch de review est ok et les tests passent, c'est tout bon!\n```\n\nTranslation: If my review patch is ok and if the tests pass, this is all good.\n\nI'm ok with Nicolas review patch. I Put a positive review.",
+    "body": "Attachment [trac_8742-lazy_format-review-nt.patch](tarball://root/attachments/some-uuid/ticket8742/trac_8742-lazy_format-review-nt.patch) by hivert created at 2010-05-12 17:37:58\n\nThis is an extract from a private mail from Nicolas Thi\u00e9ry:\n\n```\n - trac_8742-lazy_format-fh.patch\n   trac_8742-lazy_format-review-nt.patch\n\n   Si mon patch de review est ok et les tests passent, c'est tout bon!\n```\n\nTranslation: If my review patch is ok and if the tests pass, this is all good.\n\nI'm ok with Nicolas review patch. I Put a positive review.",
     "created_at": "2010-05-12T17:37:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8742",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_079989.json:
 }
 ```
 
-Attachment
+Attachment [trac_8742-lazy_format-review-nt.patch](tarball://root/attachments/some-uuid/ticket8742/trac_8742-lazy_format-review-nt.patch) by hivert created at 2010-05-12 17:37:58
 
 This is an extract from a private mail from Nicolas Thiéry:
 

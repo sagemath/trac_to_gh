@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1561
 archive/issue_comments_009941.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ncalexan-vector-matrix.hg](tarball://root/attachments/some-uuid/ticket1561/ncalexan-vector-matrix.hg) by ncalexan created at 2007-12-18 19:37:27",
     "created_at": "2007-12-18T19:37:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1561",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_009941.json:
 }
 ```
 
-Attachment
+Attachment [ncalexan-vector-matrix.hg](tarball://root/attachments/some-uuid/ticket1561/ncalexan-vector-matrix.hg) by ncalexan created at 2007-12-18 19:37:27
 
 
 

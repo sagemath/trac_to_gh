@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2056
 archive/issue_comments_013311.json:
 ```json
 {
-    "body": "Attachment\n\nPatch looks good to me.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac-2056-examples_of_tetra.patch](tarball://root/attachments/some-uuid/ticket2056/trac-2056-examples_of_tetra.patch) by mabshoff created at 2008-02-07 05:20:57\n\nPatch looks good to me.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-07T05:20:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2056",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_013311.json:
 }
 ```
 
-Attachment
+Attachment [trac-2056-examples_of_tetra.patch](tarball://root/attachments/some-uuid/ticket2056/trac-2056-examples_of_tetra.patch) by mabshoff created at 2008-02-07 05:20:57
 
 Patch looks good to me.
 

@@ -106,7 +106,7 @@ Changing status from new to needs_work.
 archive/issue_comments_036019.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4756_eigenmatrices_double.patch](tarball://root/attachments/some-uuid/ticket4756/trac_4756_eigenmatrices_double.patch) by rbeezer created at 2010-01-19 02:47:05",
     "created_at": "2010-01-19T02:47:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4756",
     "type": "issue_comment",
@@ -115,7 +115,7 @@ archive/issue_comments_036019.json:
 }
 ```
 
-Attachment
+Attachment [trac_4756_eigenmatrices_double.patch](tarball://root/attachments/some-uuid/ticket4756/trac_4756_eigenmatrices_double.patch) by rbeezer created at 2010-01-19 02:47:05
 
 
 
@@ -142,7 +142,7 @@ Self-contained patch, apply only this
 archive/issue_comments_036021.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch fixes the bug and generally brings double-precision eigenvectors up-to-date.\n\n`left_eigenvectors` and `right_eigenvectors` now return their results in the same format as for exact matrices, so routines like `eigenmatrix_right` can digest the results properly.\n\nConsequently, `eigenspaces_left` was adjusted for this new format.  There was no `eigenspaces_right`, now there is.\n\nThe changed code in `modular/modform/numerical.py` simply adjusts for the new format to allow doctests to pass and is probably sub-optimal.  There is a bug nearby, so this will be addressed on #8018.\n\nDoctests:  I had some strange behavior for zero eigenvalues (ie very, very small eigenvalues), so the doctests avoid these.  For these eigenvalues, the tests would fail on a first run, but would pass on all subsequent runs (or vice-versa).  This was observed on my own machine and  boxen.math.washington.edu.  So I've avoided these eigenvalues by selecting certain ones in the doctests.\n\nDocumentation:  documentation was tested for these four functions via notebook introspection.  The rest of the file needs attention before it can go into the documentation, see #8046.",
+    "body": "Attachment [trac_4756-double-eigen.patch](tarball://root/attachments/some-uuid/ticket4756/trac_4756-double-eigen.patch) by rbeezer created at 2010-01-23 23:41:49\n\nThis patch fixes the bug and generally brings double-precision eigenvectors up-to-date.\n\n`left_eigenvectors` and `right_eigenvectors` now return their results in the same format as for exact matrices, so routines like `eigenmatrix_right` can digest the results properly.\n\nConsequently, `eigenspaces_left` was adjusted for this new format.  There was no `eigenspaces_right`, now there is.\n\nThe changed code in `modular/modform/numerical.py` simply adjusts for the new format to allow doctests to pass and is probably sub-optimal.  There is a bug nearby, so this will be addressed on #8018.\n\nDoctests:  I had some strange behavior for zero eigenvalues (ie very, very small eigenvalues), so the doctests avoid these.  For these eigenvalues, the tests would fail on a first run, but would pass on all subsequent runs (or vice-versa).  This was observed on my own machine and  boxen.math.washington.edu.  So I've avoided these eigenvalues by selecting certain ones in the doctests.\n\nDocumentation:  documentation was tested for these four functions via notebook introspection.  The rest of the file needs attention before it can go into the documentation, see #8046.",
     "created_at": "2010-01-23T23:41:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4756",
     "type": "issue_comment",
@@ -151,7 +151,7 @@ archive/issue_comments_036021.json:
 }
 ```
 
-Attachment
+Attachment [trac_4756-double-eigen.patch](tarball://root/attachments/some-uuid/ticket4756/trac_4756-double-eigen.patch) by rbeezer created at 2010-01-23 23:41:49
 
 This patch fixes the bug and generally brings double-precision eigenvectors up-to-date.
 
@@ -338,7 +338,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_036029.json:
 ```json
 {
-    "body": "Attachment\n\nI've got some doctests failing on another machine due to \"zero\" eigenvalues, so I'm going to rework some of the doctests.",
+    "body": "Attachment [trac_4756-double-eigen.2.patch](tarball://root/attachments/some-uuid/ticket4756/trac_4756-double-eigen.2.patch) by rbeezer created at 2010-01-24 05:13:23\n\nI've got some doctests failing on another machine due to \"zero\" eigenvalues, so I'm going to rework some of the doctests.",
     "created_at": "2010-01-24T05:13:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4756",
     "type": "issue_comment",
@@ -347,7 +347,7 @@ archive/issue_comments_036029.json:
 }
 ```
 
-Attachment
+Attachment [trac_4756-double-eigen.2.patch](tarball://root/attachments/some-uuid/ticket4756/trac_4756-double-eigen.2.patch) by rbeezer created at 2010-01-24 05:13:23
 
 I've got some doctests failing on another machine due to "zero" eigenvalues, so I'm going to rework some of the doctests.
 
@@ -358,7 +358,7 @@ I've got some doctests failing on another machine due to "zero" eigenvalues, so 
 archive/issue_comments_036030.json:
 ```json
 {
-    "body": "Attachment\n\nSelf conatined",
+    "body": "Attachment [trac_4756-double-eigen.3.patch](tarball://root/attachments/some-uuid/ticket4756/trac_4756-double-eigen.3.patch) by rbeezer created at 2010-01-24 06:34:43\n\nSelf conatined",
     "created_at": "2010-01-24T06:34:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4756",
     "type": "issue_comment",
@@ -367,7 +367,7 @@ archive/issue_comments_036030.json:
 }
 ```
 
-Attachment
+Attachment [trac_4756-double-eigen.3.patch](tarball://root/attachments/some-uuid/ticket4756/trac_4756-double-eigen.3.patch) by rbeezer created at 2010-01-24 06:34:43
 
 Self conatined
 

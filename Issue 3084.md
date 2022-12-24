@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3084
 archive/issue_comments_021292.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sudoku.patch](tarball://root/attachments/some-uuid/ticket3084/sudoku.patch) by boothby created at 2008-05-02 21:59:31",
     "created_at": "2008-05-02T21:59:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3084",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_021292.json:
 }
 ```
 
-Attachment
+Attachment [sudoku.patch](tarball://root/attachments/some-uuid/ticket3084/sudoku.patch) by boothby created at 2008-05-02 21:59:31
 
 
 
@@ -121,7 +121,7 @@ Apply just this patch
 archive/issue_comments_021297.json:
 ```json
 {
-    "body": "Attachment\n\nCurrent patch has a \"sudoku puzzle\" class, with tools for input/output of puzzles and two algorithms for finding solutions, including obtaining multiple solutions.\n\nDLX algorithm by Tom Boothby consistently solves 9x9 hard puzzles at a rate of about 700 per second on modern, but not extravagant, hardware.  Cythonized backtracking algorithm by Rob Beezer is more variable in performance, and can solve some hard puzzles at the rate of 4000 per second, though other problems can take close to a full second.\n\nDLX will work on any size puzzle (array dimensions must be perfect squares), string format works on up to 36x36, backtracking works on up to 16x16 since memory is not allocated dynamically.",
+    "body": "Attachment [trac_3084_sudoku_class.patch](tarball://root/attachments/some-uuid/ticket3084/trac_3084_sudoku_class.patch) by rbeezer created at 2009-06-07 00:10:50\n\nCurrent patch has a \"sudoku puzzle\" class, with tools for input/output of puzzles and two algorithms for finding solutions, including obtaining multiple solutions.\n\nDLX algorithm by Tom Boothby consistently solves 9x9 hard puzzles at a rate of about 700 per second on modern, but not extravagant, hardware.  Cythonized backtracking algorithm by Rob Beezer is more variable in performance, and can solve some hard puzzles at the rate of 4000 per second, though other problems can take close to a full second.\n\nDLX will work on any size puzzle (array dimensions must be perfect squares), string format works on up to 36x36, backtracking works on up to 16x16 since memory is not allocated dynamically.",
     "created_at": "2009-06-07T00:10:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3084",
     "type": "issue_comment",
@@ -130,7 +130,7 @@ archive/issue_comments_021297.json:
 }
 ```
 
-Attachment
+Attachment [trac_3084_sudoku_class.patch](tarball://root/attachments/some-uuid/ticket3084/trac_3084_sudoku_class.patch) by rbeezer created at 2009-06-07 00:10:50
 
 Current patch has a "sudoku puzzle" class, with tools for input/output of puzzles and two algorithms for finding solutions, including obtaining multiple solutions.
 

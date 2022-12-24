@@ -112,7 +112,7 @@ Michael
 archive/issue_comments_030486.json:
 ```json
 {
-    "body": "Attachment\n\nWhat spelling problems?  I don't see any ;-)",
+    "body": "Attachment [trac_4201.patch](tarball://root/attachments/some-uuid/ticket4201/trac_4201.patch) by mhansen created at 2008-09-26 20:15:12\n\nWhat spelling problems?  I don't see any ;-)",
     "created_at": "2008-09-26T20:15:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4201",
     "type": "issue_comment",
@@ -121,7 +121,7 @@ archive/issue_comments_030486.json:
 }
 ```
 
-Attachment
+Attachment [trac_4201.patch](tarball://root/attachments/some-uuid/ticket4201/trac_4201.patch) by mhansen created at 2008-09-26 20:15:12
 
 What spelling problems?  I don't see any ;-)
 
@@ -150,7 +150,7 @@ This does not apply cleanly to alpha1.  For example, the plot_slope_field patch 
 archive/issue_comments_030488.json:
 ```json
 {
-    "body": "Attachment\n\nApply instead of previous patch",
+    "body": "Attachment [trac_4201-rebased.patch](tarball://root/attachments/some-uuid/ticket4201/trac_4201-rebased.patch) by jason created at 2008-09-26 22:34:56\n\nApply instead of previous patch",
     "created_at": "2008-09-26T22:34:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4201",
     "type": "issue_comment",
@@ -159,7 +159,7 @@ archive/issue_comments_030488.json:
 }
 ```
 
-Attachment
+Attachment [trac_4201-rebased.patch](tarball://root/attachments/some-uuid/ticket4201/trac_4201-rebased.patch) by jason created at 2008-09-26 22:34:56
 
 Apply instead of previous patch
 
@@ -280,7 +280,7 @@ Positive review for the rebased original patch.  There probably ought to be a re
 archive/issue_comments_030495.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4201-reset-doc.patch](tarball://root/attachments/some-uuid/ticket4201/trac_4201-reset-doc.patch) by mhansen created at 2008-09-27 03:55:39",
     "created_at": "2008-09-27T03:55:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4201",
     "type": "issue_comment",
@@ -289,7 +289,7 @@ archive/issue_comments_030495.json:
 }
 ```
 
-Attachment
+Attachment [trac_4201-reset-doc.patch](tarball://root/attachments/some-uuid/ticket4201/trac_4201-reset-doc.patch) by mhansen created at 2008-09-27 03:55:39
 
 
 
@@ -298,7 +298,7 @@ Attachment
 archive/issue_comments_030496.json:
 ```json
 {
-    "body": "Attachment\n\nI just indented the examples on Jason's patches.  +1 to them.  Apply only the last three patches.",
+    "body": "Attachment [trac_4201-options-doc-defaults.patch](tarball://root/attachments/some-uuid/ticket4201/trac_4201-options-doc-defaults.patch) by mhansen created at 2008-09-27 03:56:27\n\nI just indented the examples on Jason's patches.  +1 to them.  Apply only the last three patches.",
     "created_at": "2008-09-27T03:56:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4201",
     "type": "issue_comment",
@@ -307,7 +307,7 @@ archive/issue_comments_030496.json:
 }
 ```
 
-Attachment
+Attachment [trac_4201-options-doc-defaults.patch](tarball://root/attachments/some-uuid/ticket4201/trac_4201-options-doc-defaults.patch) by mhansen created at 2008-09-27 03:56:27
 
 I just indented the examples on Jason's patches.  +1 to them.  Apply only the last three patches.
 

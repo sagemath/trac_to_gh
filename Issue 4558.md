@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4558
 archive/issue_comments_034153.json:
 ```json
 {
-    "body": "Attachment\n\nOk, all tests pass:\n\nhttp://sage.math.washington.edu/home/ondrej/sympy-0.6.3-sage-tests.log",
+    "body": "Attachment [sympy-0.6.3.patch](tarball://root/attachments/some-uuid/ticket4558/sympy-0.6.3.patch) by certik created at 2008-11-20 01:06:31\n\nOk, all tests pass:\n\nhttp://sage.math.washington.edu/home/ondrej/sympy-0.6.3-sage-tests.log",
     "created_at": "2008-11-20T01:06:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4558",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_034153.json:
 }
 ```
 
-Attachment
+Attachment [sympy-0.6.3.patch](tarball://root/attachments/some-uuid/ticket4558/sympy-0.6.3.patch) by certik created at 2008-11-20 01:06:31
 
 Ok, all tests pass:
 

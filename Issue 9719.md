@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9719
 archive/issue_comments_094856.json:
 ```json
 {
-    "body": "Attachment\n\nFrom #9203, by Vincent Delecroix",
+    "body": "Attachment [arcs and ellipses.sws](tarball://root/attachments/some-uuid/ticket9719/arcs and ellipses.sws) by kcrisman created at 2010-08-10 15:09:13\n\nFrom #9203, by Vincent Delecroix",
     "created_at": "2010-08-10T15:09:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9719",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_094856.json:
 }
 ```
 
-Attachment
+Attachment [arcs and ellipses.sws](tarball://root/attachments/some-uuid/ticket9719/arcs and ellipses.sws) by kcrisman created at 2010-08-10 15:09:13
 
 From #9203, by Vincent Delecroix
 

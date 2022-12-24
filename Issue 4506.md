@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4506
 archive/issue_comments_033410.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [planarity-add-edge.patch](tarball://root/attachments/some-uuid/ticket4506/planarity-add-edge.patch) by jason created at 2008-11-13 01:22:43",
     "created_at": "2008-11-13T01:22:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4506",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_033410.json:
 }
 ```
 
-Attachment
+Attachment [planarity-add-edge.patch](tarball://root/attachments/some-uuid/ticket4506/planarity-add-edge.patch) by jason created at 2008-11-13 01:22:43
 
 
 

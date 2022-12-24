@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6540
 archive/issue_comments_053321.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6540-edge_syntax.patch](tarball://root/attachments/some-uuid/ticket6540/trac_6540-edge_syntax.patch) by jason created at 2009-07-17 19:19:10",
     "created_at": "2009-07-17T19:19:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6540",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_053321.json:
 }
 ```
 
-Attachment
+Attachment [trac_6540-edge_syntax.patch](tarball://root/attachments/some-uuid/ticket6540/trac_6540-edge_syntax.patch) by jason created at 2009-07-17 19:19:10
 
 
 

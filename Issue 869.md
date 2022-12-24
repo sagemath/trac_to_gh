@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/869
 archive/issue_comments_005361.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [bipartite.patch](tarball://root/attachments/some-uuid/ticket869/bipartite.patch) by cwitty created at 2007-10-13 05:23:50",
     "created_at": "2007-10-13T05:23:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/869",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_005361.json:
 }
 ```
 
-Attachment
+Attachment [bipartite.patch](tarball://root/attachments/some-uuid/ticket869/bipartite.patch) by cwitty created at 2007-10-13 05:23:50
 
 
 

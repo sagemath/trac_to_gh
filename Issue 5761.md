@@ -336,7 +336,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_045040.json:
 ```json
 {
-    "body": "Attachment\n\nFixed trailing whitespace and matched ticket number",
+    "body": "Attachment [trac_5761-latex_docstrings-ts.patch](tarball://root/attachments/some-uuid/ticket5761/trac_5761-latex_docstrings-ts.patch) by tscrim created at 2013-02-06 18:30:53\n\nFixed trailing whitespace and matched ticket number",
     "created_at": "2013-02-06T18:30:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5761",
     "type": "issue_comment",
@@ -345,7 +345,7 @@ archive/issue_comments_045040.json:
 }
 ```
 
-Attachment
+Attachment [trac_5761-latex_docstrings-ts.patch](tarball://root/attachments/some-uuid/ticket5761/trac_5761-latex_docstrings-ts.patch) by tscrim created at 2013-02-06 18:30:53
 
 Fixed trailing whitespace and matched ticket number
 

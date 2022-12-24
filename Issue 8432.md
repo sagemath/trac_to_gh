@@ -85,7 +85,7 @@ differences between deps in Sage 4.3.4.alpha0 and updated deps
 archive/issue_comments_075658.json:
 ```json
 {
-    "body": "Attachment\n\nupdated deps",
+    "body": "Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket8432/deps.diff) by mvngu created at 2010-03-04 04:02:41\n\nupdated deps",
     "created_at": "2010-03-04T04:02:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8432",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_075658.json:
 }
 ```
 
-Attachment
+Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket8432/deps.diff) by mvngu created at 2010-03-04 04:02:41
 
 updated deps
 
@@ -105,7 +105,7 @@ updated deps
 archive/issue_comments_075659.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket8432/deps) by mvngu created at 2010-03-04 04:03:13",
     "created_at": "2010-03-04T04:03:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8432",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_075659.json:
 }
 ```
 
-Attachment
+Attachment [deps](tarball://root/attachments/some-uuid/ticket8432/deps) by mvngu created at 2010-03-04 04:03:13
 
 
 

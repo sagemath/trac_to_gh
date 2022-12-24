@@ -415,7 +415,7 @@ Probably we shouldn't be using dictionaries (that compare with equals) to cache 
 archive/issue_comments_021554.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3113-coerce-checks.patch](tarball://root/attachments/some-uuid/ticket3113/3113-coerce-checks.patch) by robertwb created at 2008-05-07 06:17:46",
     "created_at": "2008-05-07T06:17:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3113",
     "type": "issue_comment",
@@ -424,7 +424,7 @@ archive/issue_comments_021554.json:
 }
 ```
 
-Attachment
+Attachment [3113-coerce-checks.patch](tarball://root/attachments/some-uuid/ticket3113/3113-coerce-checks.patch) by robertwb created at 2008-05-07 06:17:46
 
 
 
@@ -521,7 +521,7 @@ Changing priority from major to blocker.
 archive/issue_comments_021558.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-3113-pt2.patch](tarball://root/attachments/some-uuid/ticket3113/trac-3113-pt2.patch) by craigcitro created at 2008-06-15 05:35:28",
     "created_at": "2008-06-15T05:35:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3113",
     "type": "issue_comment",
@@ -530,7 +530,7 @@ archive/issue_comments_021558.json:
 }
 ```
 
-Attachment
+Attachment [trac-3113-pt2.patch](tarball://root/attachments/some-uuid/ticket3113/trac-3113-pt2.patch) by craigcitro created at 2008-06-15 05:35:28
 
 
 

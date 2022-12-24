@@ -59,7 +59,7 @@ make Map.__pow__ return identity for power 0
 archive/issue_comments_032422.json:
 ```json
 {
-    "body": "Attachment\n\nThis is the suggested fix discussed by RobertWB and Burcin in IRC last night. The code looks correct and passes doctests, positive review.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_4410_map_pow.patch](tarball://root/attachments/some-uuid/ticket4410/trac_4410_map_pow.patch) by mabshoff created at 2008-10-31 15:35:42\n\nThis is the suggested fix discussed by RobertWB and Burcin in IRC last night. The code looks correct and passes doctests, positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-31T15:35:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4410",
     "type": "issue_comment",
@@ -68,7 +68,7 @@ archive/issue_comments_032422.json:
 }
 ```
 
-Attachment
+Attachment [trac_4410_map_pow.patch](tarball://root/attachments/some-uuid/ticket4410/trac_4410_map_pow.patch) by mabshoff created at 2008-10-31 15:35:42
 
 This is the suggested fix discussed by RobertWB and Burcin in IRC last night. The code looks correct and passes doctests, positive review.
 

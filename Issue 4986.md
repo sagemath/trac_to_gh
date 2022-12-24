@@ -53,7 +53,7 @@ I guess the patch isn't posted yet, but this seems like "sage -startuptime" whic
 archive/issue_comments_038028.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [import-audit.patch](tarball://root/attachments/some-uuid/ticket4986/import-audit.patch) by robertwb created at 2009-01-16 04:16:30",
     "created_at": "2009-01-16T04:16:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4986",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_038028.json:
 }
 ```
 
-Attachment
+Attachment [import-audit.patch](tarball://root/attachments/some-uuid/ticket4986/import-audit.patch) by robertwb created at 2009-01-16 04:16:30
 
 
 

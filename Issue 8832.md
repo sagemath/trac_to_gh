@@ -66,7 +66,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8832
 archive/issue_comments_081217.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8832-free_module_coerce-fh.patch](tarball://root/attachments/some-uuid/ticket8832/trac_8832-free_module_coerce-fh.patch) by hivert created at 2010-04-30 21:45:32",
     "created_at": "2010-04-30T21:45:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8832",
     "type": "issue_comment",
@@ -75,7 +75,7 @@ archive/issue_comments_081217.json:
 }
 ```
 
-Attachment
+Attachment [trac_8832-free_module_coerce-fh.patch](tarball://root/attachments/some-uuid/ticket8832/trac_8832-free_module_coerce-fh.patch) by hivert created at 2010-04-30 21:45:32
 
 
 

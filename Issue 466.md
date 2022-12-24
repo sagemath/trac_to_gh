@@ -150,7 +150,7 @@ use "hg -v help merge" to show global options
 archive/issue_comments_002314.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5825.patch](tarball://root/attachments/some-uuid/ticket466/5825.patch) by pdehaye created at 2007-08-22 19:28:44",
     "created_at": "2007-08-22T19:28:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/466",
     "type": "issue_comment",
@@ -159,7 +159,7 @@ archive/issue_comments_002314.json:
 }
 ```
 
-Attachment
+Attachment [5825.patch](tarball://root/attachments/some-uuid/ticket466/5825.patch) by pdehaye created at 2007-08-22 19:28:44
 
 
 

@@ -48,7 +48,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6631
 archive/issue_comments_054340.json:
 ```json
 {
-    "body": "Attachment\n\nDO NOT APPLY!",
+    "body": "Attachment [trac_6631-is_lyndon.2.patch](tarball://root/attachments/some-uuid/ticket6631/trac_6631-is_lyndon.2.patch) by saliola created at 2009-07-26 22:13:10\n\nDO NOT APPLY!",
     "created_at": "2009-07-26T22:13:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6631",
     "type": "issue_comment",
@@ -57,7 +57,7 @@ archive/issue_comments_054340.json:
 }
 ```
 
-Attachment
+Attachment [trac_6631-is_lyndon.2.patch](tarball://root/attachments/some-uuid/ticket6631/trac_6631-is_lyndon.2.patch) by saliola created at 2009-07-26 22:13:10
 
 DO NOT APPLY!
 
@@ -151,7 +151,7 @@ return i == 0
 archive/issue_comments_054344.json:
 ```json
 {
-    "body": "Attachment\n\ndepends on #6627;",
+    "body": "Attachment [trac_6631-is_lyndon.patch](tarball://root/attachments/some-uuid/ticket6631/trac_6631-is_lyndon.patch) by saliola created at 2009-07-27 10:02:08\n\ndepends on #6627;",
     "created_at": "2009-07-27T10:02:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6631",
     "type": "issue_comment",
@@ -160,7 +160,7 @@ archive/issue_comments_054344.json:
 }
 ```
 
-Attachment
+Attachment [trac_6631-is_lyndon.patch](tarball://root/attachments/some-uuid/ticket6631/trac_6631-is_lyndon.patch) by saliola created at 2009-07-27 10:02:08
 
 depends on #6627;
 
@@ -225,7 +225,7 @@ reviewer patch: fixes typo
 archive/issue_comments_054347.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch `trac_6631-reviewer.patch` fixes a typo introduced by `trac_6631-is_lyndon.patch`.",
+    "body": "Attachment [trac_6631-reviewer.patch](tarball://root/attachments/some-uuid/ticket6631/trac_6631-reviewer.patch) by mvngu created at 2009-08-25 00:27:34\n\nThe patch `trac_6631-reviewer.patch` fixes a typo introduced by `trac_6631-is_lyndon.patch`.",
     "created_at": "2009-08-25T00:27:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6631",
     "type": "issue_comment",
@@ -234,7 +234,7 @@ archive/issue_comments_054347.json:
 }
 ```
 
-Attachment
+Attachment [trac_6631-reviewer.patch](tarball://root/attachments/some-uuid/ticket6631/trac_6631-reviewer.patch) by mvngu created at 2009-08-25 00:27:34
 
 The patch `trac_6631-reviewer.patch` fixes a typo introduced by `trac_6631-is_lyndon.patch`.
 

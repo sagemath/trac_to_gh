@@ -46,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3365
 archive/issue_comments_023545.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3365.patch](tarball://root/attachments/some-uuid/ticket3365/sage-3365.patch) by was created at 2008-06-04 18:42:38",
     "created_at": "2008-06-04T18:42:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3365",
     "type": "issue_comment",
@@ -55,7 +55,7 @@ archive/issue_comments_023545.json:
 }
 ```
 
-Attachment
+Attachment [sage-3365.patch](tarball://root/attachments/some-uuid/ticket3365/sage-3365.patch) by was created at 2008-06-04 18:42:38
 
 
 
@@ -82,7 +82,7 @@ this satandard python package must be installed with ' sage -python setup.py ins
 archive/issue_comments_023547.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [py_inline-0.03.tar.bz2](tarball://root/attachments/some-uuid/ticket3365/py_inline-0.03.tar.bz2) by was created at 2008-06-04 18:45:22",
     "created_at": "2008-06-04T18:45:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3365",
     "type": "issue_comment",
@@ -91,7 +91,7 @@ archive/issue_comments_023547.json:
 }
 ```
 
-Attachment
+Attachment [py_inline-0.03.tar.bz2](tarball://root/attachments/some-uuid/ticket3365/py_inline-0.03.tar.bz2) by was created at 2008-06-04 18:45:22
 
 
 
@@ -161,7 +161,7 @@ Michael
 archive/issue_comments_023551.json:
 ```json
 {
-    "body": "Attachment\n\nthis zip file contains both the patch and the new to-be-made spkg; it replaces the previous attached patches",
+    "body": "Attachment [fixedtheproblem.zip](tarball://root/attachments/some-uuid/ticket3365/fixedtheproblem.zip) by was created at 2008-06-09 20:56:30\n\nthis zip file contains both the patch and the new to-be-made spkg; it replaces the previous attached patches",
     "created_at": "2008-06-09T20:56:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3365",
     "type": "issue_comment",
@@ -170,7 +170,7 @@ archive/issue_comments_023551.json:
 }
 ```
 
-Attachment
+Attachment [fixedtheproblem.zip](tarball://root/attachments/some-uuid/ticket3365/fixedtheproblem.zip) by was created at 2008-06-09 20:56:30
 
 this zip file contains both the patch and the new to-be-made spkg; it replaces the previous attached patches
 

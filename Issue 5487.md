@@ -279,7 +279,7 @@ Florent
 archive/issue_comments_042592.json:
 ```json
 {
-    "body": "Attachment\n\nDear Florent,\n\nI have changed the function to use index() and added an exception. More importantly, I have also created a StandardTableau_class class and a StandardTableau() function for holding and creating standard tableau...previously I was confused and thought that the StandardTableaux class  did this. I discovered my error when I tested the new version (which I confess I had previously just moved into StandardTableaux and not tested...I promise to test properly in future!).\n\nHopefully the new patch also removes my unintended change to kschur.py.\n\nRegards,\nAndrew",
+    "body": "Attachment [tableau-content-5487-AM.patch](tarball://root/attachments/some-uuid/ticket5487/tableau-content-5487-AM.patch) by andrew.mathas created at 2009-04-13 15:30:42\n\nDear Florent,\n\nI have changed the function to use index() and added an exception. More importantly, I have also created a StandardTableau_class class and a StandardTableau() function for holding and creating standard tableau...previously I was confused and thought that the StandardTableaux class  did this. I discovered my error when I tested the new version (which I confess I had previously just moved into StandardTableaux and not tested...I promise to test properly in future!).\n\nHopefully the new patch also removes my unintended change to kschur.py.\n\nRegards,\nAndrew",
     "created_at": "2009-04-13T15:30:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5487",
     "type": "issue_comment",
@@ -288,7 +288,7 @@ archive/issue_comments_042592.json:
 }
 ```
 
-Attachment
+Attachment [tableau-content-5487-AM.patch](tarball://root/attachments/some-uuid/ticket5487/tableau-content-5487-AM.patch) by andrew.mathas created at 2009-04-13 15:30:42
 
 Dear Florent,
 
@@ -324,7 +324,7 @@ Review patch
 archive/issue_comments_042594.json:
 ```json
 {
-    "body": "Attachment\n\nI Added a review patch which:\n\n- add some more doctests\n\n- correct the ReST syntax for doctests\n\n- Specifies which exception is caught.\n\nI'm giving the positive review though someone should probably reread my trivial review patch... \n\nMichael: please tell me if I should not give the review and ask for a formal review of my patch.   \n\nCheers,\n\nFlorent",
+    "body": "Attachment [tableau-content-5487-review-fh.patch](tarball://root/attachments/some-uuid/ticket5487/tableau-content-5487-review-fh.patch) by hivert created at 2009-04-13 21:53:51\n\nI Added a review patch which:\n\n- add some more doctests\n\n- correct the ReST syntax for doctests\n\n- Specifies which exception is caught.\n\nI'm giving the positive review though someone should probably reread my trivial review patch... \n\nMichael: please tell me if I should not give the review and ask for a formal review of my patch.   \n\nCheers,\n\nFlorent",
     "created_at": "2009-04-13T21:53:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5487",
     "type": "issue_comment",
@@ -333,7 +333,7 @@ archive/issue_comments_042594.json:
 }
 ```
 
-Attachment
+Attachment [tableau-content-5487-review-fh.patch](tarball://root/attachments/some-uuid/ticket5487/tableau-content-5487-review-fh.patch) by hivert created at 2009-04-13 21:53:51
 
 I Added a review patch which:
 
@@ -454,7 +454,7 @@ Resolution: fixed
 archive/issue_comments_042599.json:
 ```json
 {
-    "body": "Attachment\n\nThis is the same as the first patch, but instead of a diff it has been commited in Andrew's name",
+    "body": "Attachment [trac_5487_tableau-content-5487-AM.patch](tarball://root/attachments/some-uuid/ticket5487/trac_5487_tableau-content-5487-AM.patch) by mabshoff created at 2009-04-15 00:14:53\n\nThis is the same as the first patch, but instead of a diff it has been commited in Andrew's name",
     "created_at": "2009-04-15T00:14:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5487",
     "type": "issue_comment",
@@ -463,7 +463,7 @@ archive/issue_comments_042599.json:
 }
 ```
 
-Attachment
+Attachment [trac_5487_tableau-content-5487-AM.patch](tarball://root/attachments/some-uuid/ticket5487/trac_5487_tableau-content-5487-AM.patch) by mabshoff created at 2009-04-15 00:14:53
 
 This is the same as the first patch, but instead of a diff it has been commited in Andrew's name
 

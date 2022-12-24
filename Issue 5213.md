@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5213
 archive/issue_comments_039938.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch speeds up computations of charpoly and minpoly (a lot -- sage's linear algebra is much better than pari's for some of my examples).\n\nIt also makes charpoly, minpoly, absolute_charpoly, and absolute_minpoly work for relative order elements.",
+    "body": "Attachment [trac_5213-number-field-element-charpoly.patch](tarball://root/attachments/some-uuid/ticket5213/trac_5213-number-field-element-charpoly.patch) by ncalexan created at 2009-02-09 06:12:01\n\nThe patch speeds up computations of charpoly and minpoly (a lot -- sage's linear algebra is much better than pari's for some of my examples).\n\nIt also makes charpoly, minpoly, absolute_charpoly, and absolute_minpoly work for relative order elements.",
     "created_at": "2009-02-09T06:12:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5213",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_039938.json:
 }
 ```
 
-Attachment
+Attachment [trac_5213-number-field-element-charpoly.patch](tarball://root/attachments/some-uuid/ticket5213/trac_5213-number-field-element-charpoly.patch) by ncalexan created at 2009-02-09 06:12:01
 
 The patch speeds up computations of charpoly and minpoly (a lot -- sage's linear algebra is much better than pari's for some of my examples).
 
@@ -301,7 +301,7 @@ Michael said he'd run the tuning on a lot of architectures, so we can pick a swi
 archive/issue_comments_039943.json:
 ```json
 {
-    "body": "Attachment\n\nNote: the tuning function doesn't work properly on sage-3.2.3 because it relies on K.random_element() which was only introduced recently.  Running it on 3.3.rc0 is fine.",
+    "body": "Attachment [tune_charpoly_nf.sage](tarball://root/attachments/some-uuid/ticket5213/tune_charpoly_nf.sage) by AlexGhitza created at 2009-02-15 02:54:12\n\nNote: the tuning function doesn't work properly on sage-3.2.3 because it relies on K.random_element() which was only introduced recently.  Running it on 3.3.rc0 is fine.",
     "created_at": "2009-02-15T02:54:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5213",
     "type": "issue_comment",
@@ -310,7 +310,7 @@ archive/issue_comments_039943.json:
 }
 ```
 
-Attachment
+Attachment [tune_charpoly_nf.sage](tarball://root/attachments/some-uuid/ticket5213/tune_charpoly_nf.sage) by AlexGhitza created at 2009-02-15 02:54:12
 
 Note: the tuning function doesn't work properly on sage-3.2.3 because it relies on K.random_element() which was only introduced recently.  Running it on 3.3.rc0 is fine.
 
@@ -562,7 +562,7 @@ OK, we're going with a threshold degree of 25.  I'm giving Nick's patch a positi
 archive/issue_comments_039946.json:
 ```json
 {
-    "body": "Attachment\n\nI read trac_5213-treshold.patch and give it a positive review. The doctests also pass.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_5213-treshold.patch](tarball://root/attachments/some-uuid/ticket5213/trac_5213-treshold.patch) by mabshoff created at 2009-02-15 13:32:51\n\nI read trac_5213-treshold.patch and give it a positive review. The doctests also pass.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-15T13:32:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5213",
     "type": "issue_comment",
@@ -571,7 +571,7 @@ archive/issue_comments_039946.json:
 }
 ```
 
-Attachment
+Attachment [trac_5213-treshold.patch](tarball://root/attachments/some-uuid/ticket5213/trac_5213-treshold.patch) by mabshoff created at 2009-02-15 13:32:51
 
 I read trac_5213-treshold.patch and give it a positive review. The doctests also pass.
 

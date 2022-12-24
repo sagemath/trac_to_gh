@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/904
 archive/issue_comments_005566.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [clique_ind_set.patch](tarball://root/attachments/some-uuid/ticket904/clique_ind_set.patch) by jason created at 2007-10-15 22:19:30",
     "created_at": "2007-10-15T22:19:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/904",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_005566.json:
 }
 ```
 
-Attachment
+Attachment [clique_ind_set.patch](tarball://root/attachments/some-uuid/ticket904/clique_ind_set.patch) by jason created at 2007-10-15 22:19:30
 
 
 
@@ -73,7 +73,7 @@ This functionality now gives us the Combinatorica EmptyQ and CompleteQ functions
 archive/issue_comments_005568.json:
 ```json
 {
-    "body": "Attachment\n\nReplaces the first patch above.",
+    "body": "Attachment [clique_ind_set-2.patch](tarball://root/attachments/some-uuid/ticket904/clique_ind_set-2.patch) by jason created at 2007-10-17 16:12:06\n\nReplaces the first patch above.",
     "created_at": "2007-10-17T16:12:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/904",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_005568.json:
 }
 ```
 
-Attachment
+Attachment [clique_ind_set-2.patch](tarball://root/attachments/some-uuid/ticket904/clique_ind_set-2.patch) by jason created at 2007-10-17 16:12:06
 
 Replaces the first patch above.
 

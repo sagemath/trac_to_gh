@@ -101,7 +101,7 @@ Changing assignee from boothby to mabshoff.
 archive/issue_comments_021365.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3095.patch](tarball://root/attachments/some-uuid/ticket3095/trac_3095.patch) by mabshoff created at 2008-05-03 15:13:55",
     "created_at": "2008-05-03T15:13:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3095",
     "type": "issue_comment",
@@ -110,7 +110,7 @@ archive/issue_comments_021365.json:
 }
 ```
 
-Attachment
+Attachment [trac_3095.patch](tarball://root/attachments/some-uuid/ticket3095/trac_3095.patch) by mabshoff created at 2008-05-03 15:13:55
 
 
 

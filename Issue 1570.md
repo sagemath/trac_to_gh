@@ -48,7 +48,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1570
 archive/issue_comments_009999.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage.2.10.alpha3-fix-typo-in-numberfield.py.patch](tarball://root/attachments/some-uuid/ticket1570/Sage.2.10.alpha3-fix-typo-in-numberfield.py.patch) by mabshoff created at 2008-01-13 17:48:43",
     "created_at": "2008-01-13T17:48:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1570",
     "type": "issue_comment",
@@ -57,7 +57,7 @@ archive/issue_comments_009999.json:
 }
 ```
 
-Attachment
+Attachment [Sage.2.10.alpha3-fix-typo-in-numberfield.py.patch](tarball://root/attachments/some-uuid/ticket1570/Sage.2.10.alpha3-fix-typo-in-numberfield.py.patch) by mabshoff created at 2008-01-13 17:48:43
 
 
 

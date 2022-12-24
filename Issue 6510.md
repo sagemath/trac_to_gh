@@ -43,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6510
 archive/issue_comments_053037.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6510.patch](tarball://root/attachments/some-uuid/ticket6510/trac_6510.patch) by tsutton created at 2009-07-10 22:11:00",
     "created_at": "2009-07-10T22:11:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6510",
     "type": "issue_comment",
@@ -52,7 +52,7 @@ archive/issue_comments_053037.json:
 }
 ```
 
-Attachment
+Attachment [trac_6510.patch](tarball://root/attachments/some-uuid/ticket6510/trac_6510.patch) by tsutton created at 2009-07-10 22:11:00
 
 
 
@@ -79,7 +79,7 @@ Needs a doctest.
 archive/issue_comments_053039.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6510.2.patch](tarball://root/attachments/some-uuid/ticket6510/trac_6510.2.patch) by tsutton created at 2009-07-10 22:19:55",
     "created_at": "2009-07-10T22:19:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6510",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_053039.json:
 }
 ```
 
-Attachment
+Attachment [trac_6510.2.patch](tarball://root/attachments/some-uuid/ticket6510/trac_6510.2.patch) by tsutton created at 2009-07-10 22:19:55
 
 
 
@@ -220,7 +220,7 @@ Choose which block of function definition you want, and upload a new patch. Pref
 archive/issue_comments_053045.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6510.3.patch](tarball://root/attachments/some-uuid/ticket6510/trac_6510.3.patch) by roed created at 2009-07-16 18:21:10",
     "created_at": "2009-07-16T18:21:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6510",
     "type": "issue_comment",
@@ -229,7 +229,7 @@ archive/issue_comments_053045.json:
 }
 ```
 
-Attachment
+Attachment [trac_6510.3.patch](tarball://root/attachments/some-uuid/ticket6510/trac_6510.3.patch) by roed created at 2009-07-16 18:21:10
 
 
 

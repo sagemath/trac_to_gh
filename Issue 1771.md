@@ -77,7 +77,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1771
 archive/issue_comments_011200.json:
 ```json
 {
-    "body": "Attachment\n\nThis looks good to me.  Thanks for turning it into a patch Mike!",
+    "body": "Attachment [1771.patch](tarball://root/attachments/some-uuid/ticket1771/1771.patch) by was created at 2008-01-14 05:44:50\n\nThis looks good to me.  Thanks for turning it into a patch Mike!",
     "created_at": "2008-01-14T05:44:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1771",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_011200.json:
 }
 ```
 
-Attachment
+Attachment [1771.patch](tarball://root/attachments/some-uuid/ticket1771/1771.patch) by was created at 2008-01-14 05:44:50
 
 This looks good to me.  Thanks for turning it into a patch Mike!
 

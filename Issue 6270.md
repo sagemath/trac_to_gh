@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6270
 archive/issue_comments_050093.json:
 ```json
 {
-    "body": "Attachment\n\nWhen applying the patch, I got the following hunk failures:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: 6270\nsage: hg_sage.apply(\"../patch/6270/trac_6270.patch\")\ncd \"/scratch/mvngu/sage-4.0.1/devel/sage\" && hg status\ncd \"/scratch/mvngu/sage-4.0.1/devel/sage\" && hg status\ncd \"/scratch/mvngu/sage-4.0.1/devel/sage\" && hg import   \"/scratch/mvngu/patch/6270/trac_6270.patch\"\napplying /scratch/mvngu/patch/6270/trac_6270.patch\npatching file sage/plot/plot.py\nHunk #1 FAILED at 6\nHunk #2 FAILED at 1865\n2 out of 2 hunks FAILED -- saving rejects to file sage/plot/plot.py.rej\nabort: patch failed to apply\n```\n\nThe patch was applied on a fresh clone of Sage 4.0.1. Should there be a rebase?",
+    "body": "Attachment [trac_6270.patch](tarball://root/attachments/some-uuid/ticket6270/trac_6270.patch) by mvngu created at 2009-06-12 19:35:26\n\nWhen applying the patch, I got the following hunk failures:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: 6270\nsage: hg_sage.apply(\"../patch/6270/trac_6270.patch\")\ncd \"/scratch/mvngu/sage-4.0.1/devel/sage\" && hg status\ncd \"/scratch/mvngu/sage-4.0.1/devel/sage\" && hg status\ncd \"/scratch/mvngu/sage-4.0.1/devel/sage\" && hg import   \"/scratch/mvngu/patch/6270/trac_6270.patch\"\napplying /scratch/mvngu/patch/6270/trac_6270.patch\npatching file sage/plot/plot.py\nHunk #1 FAILED at 6\nHunk #2 FAILED at 1865\n2 out of 2 hunks FAILED -- saving rejects to file sage/plot/plot.py.rej\nabort: patch failed to apply\n```\n\nThe patch was applied on a fresh clone of Sage 4.0.1. Should there be a rebase?",
     "created_at": "2009-06-12T19:35:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6270",
     "type": "issue_comment",
@@ -41,7 +41,7 @@ archive/issue_comments_050093.json:
 }
 ```
 
-Attachment
+Attachment [trac_6270.patch](tarball://root/attachments/some-uuid/ticket6270/trac_6270.patch) by mvngu created at 2009-06-12 19:35:26
 
 When applying the patch, I got the following hunk failures:
 

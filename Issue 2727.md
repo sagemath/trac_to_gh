@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2727
 archive/issue_comments_018786.json:
 ```json
 {
-    "body": "Attachment\n\nPatch looks good to me. Positive review.",
+    "body": "Attachment [sage-singular-lib.patch](tarball://root/attachments/some-uuid/ticket2727/sage-singular-lib.patch) by mabshoff created at 2008-03-29 23:06:03\n\nPatch looks good to me. Positive review.",
     "created_at": "2008-03-29T23:06:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2727",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_018786.json:
 }
 ```
 
-Attachment
+Attachment [sage-singular-lib.patch](tarball://root/attachments/some-uuid/ticket2727/sage-singular-lib.patch) by mabshoff created at 2008-03-29 23:06:03
 
 Patch looks good to me. Positive review.
 

@@ -159,7 +159,7 @@ I've posted a hack-ish patch that at least fixes this problem.  Something better
 archive/issue_comments_031573.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-4312.patch](tarball://root/attachments/some-uuid/ticket4312/sage-4312.patch) by was created at 2008-11-16 20:06:33",
     "created_at": "2008-11-16T20:06:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4312",
     "type": "issue_comment",
@@ -168,7 +168,7 @@ archive/issue_comments_031573.json:
 }
 ```
 
-Attachment
+Attachment [sage-4312.patch](tarball://root/attachments/some-uuid/ticket4312/sage-4312.patch) by was created at 2008-11-16 20:06:33
 
 
 
@@ -177,7 +177,7 @@ Attachment
 archive/issue_comments_031574.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-4312-edited.patch](tarball://root/attachments/some-uuid/ticket4312/sage-4312-edited.patch) by craigcitro created at 2008-11-18 09:39:10",
     "created_at": "2008-11-18T09:39:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4312",
     "type": "issue_comment",
@@ -186,7 +186,7 @@ archive/issue_comments_031574.json:
 }
 ```
 
-Attachment
+Attachment [sage-4312-edited.patch](tarball://root/attachments/some-uuid/ticket4312/sage-4312-edited.patch) by craigcitro created at 2008-11-18 09:39:10
 
 
 

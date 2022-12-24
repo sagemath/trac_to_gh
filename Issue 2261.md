@@ -53,7 +53,7 @@ Changing status from new to assigned.
 archive/issue_comments_014968.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-2.10.2.rc0-trac_2261.patch](tarball://root/attachments/some-uuid/ticket2261/Sage-2.10.2.rc0-trac_2261.patch) by mabshoff created at 2008-02-22 18:30:45",
     "created_at": "2008-02-22T18:30:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2261",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_014968.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.10.2.rc0-trac_2261.patch](tarball://root/attachments/some-uuid/ticket2261/Sage-2.10.2.rc0-trac_2261.patch) by mabshoff created at 2008-02-22 18:30:45
 
 
 

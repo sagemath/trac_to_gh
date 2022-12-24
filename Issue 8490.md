@@ -158,7 +158,7 @@ another one-line correction that applies after #8429
 archive/issue_comments_076568.json:
 ```json
 {
-    "body": "Attachment\n\nanother one-line correction that applies after #8429",
+    "body": "Attachment [trac_8490-square_free-vd.2.patch](tarball://root/attachments/some-uuid/ticket8490/trac_8490-square_free-vd.2.patch) by vdelecroix created at 2010-03-10 17:40:39\n\nanother one-line correction that applies after #8429",
     "created_at": "2010-03-10T17:40:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8490",
     "type": "issue_comment",
@@ -167,7 +167,7 @@ archive/issue_comments_076568.json:
 }
 ```
 
-Attachment
+Attachment [trac_8490-square_free-vd.2.patch](tarball://root/attachments/some-uuid/ticket8490/trac_8490-square_free-vd.2.patch) by vdelecroix created at 2010-03-10 17:40:39
 
 another one-line correction that applies after #8429
 
@@ -178,7 +178,7 @@ another one-line correction that applies after #8429
 archive/issue_comments_076569.json:
 ```json
 {
-    "body": "Attachment\n\nApply only this",
+    "body": "Attachment [trac_8490-square_free-vd.3.patch](tarball://root/attachments/some-uuid/ticket8490/trac_8490-square_free-vd.3.patch) by vdelecroix created at 2010-03-10 22:50:51\n\nApply only this",
     "created_at": "2010-03-10T22:50:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8490",
     "type": "issue_comment",
@@ -187,7 +187,7 @@ archive/issue_comments_076569.json:
 }
 ```
 
-Attachment
+Attachment [trac_8490-square_free-vd.3.patch](tarball://root/attachments/some-uuid/ticket8490/trac_8490-square_free-vd.3.patch) by vdelecroix created at 2010-03-10 22:50:51
 
 Apply only this
 
@@ -198,7 +198,7 @@ Apply only this
 archive/issue_comments_076570.json:
 ```json
 {
-    "body": "Attachment\n\nThe same bug was occuring with `is_cube_free` :\n\n\n```\nsage: Word('111').is_cube_free()\nTrue\nsage: Word('2111').is_cube_free()\nTrue\nsage: Word('32111').is_cube_free()\nTrue\n```\n\n\nI just applied a patch which fixes this problem. I changed some doctests of both `is_square_free` and `is_cube_free`. I also removed a useless slice in the code of both functions and this gives good improvements in timings :\n\nBEFORE:\n\n\n```\nsage: t = words.ThueMorseWord()\nsage: %timeit t[:100].is_cube_free()\n5 loops, best of 3: 3.13 s per loop\n```\n\n\nAFTER:\n\n\n```\nsage: t = words.ThueMorseWord()\nsage: %timeit t[:100].is_cube_free()\n5 loops, best of 3: 1.18 s per loop\n```\n",
+    "body": "Attachment [trac_8490-square_free-vd.patch](tarball://root/attachments/some-uuid/ticket8490/trac_8490-square_free-vd.patch) by slabbe created at 2010-04-28 10:12:41\n\nThe same bug was occuring with `is_cube_free` :\n\n\n```\nsage: Word('111').is_cube_free()\nTrue\nsage: Word('2111').is_cube_free()\nTrue\nsage: Word('32111').is_cube_free()\nTrue\n```\n\n\nI just applied a patch which fixes this problem. I changed some doctests of both `is_square_free` and `is_cube_free`. I also removed a useless slice in the code of both functions and this gives good improvements in timings :\n\nBEFORE:\n\n\n```\nsage: t = words.ThueMorseWord()\nsage: %timeit t[:100].is_cube_free()\n5 loops, best of 3: 3.13 s per loop\n```\n\n\nAFTER:\n\n\n```\nsage: t = words.ThueMorseWord()\nsage: %timeit t[:100].is_cube_free()\n5 loops, best of 3: 1.18 s per loop\n```\n",
     "created_at": "2010-04-28T10:12:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8490",
     "type": "issue_comment",
@@ -207,7 +207,7 @@ archive/issue_comments_076570.json:
 }
 ```
 
-Attachment
+Attachment [trac_8490-square_free-vd.patch](tarball://root/attachments/some-uuid/ticket8490/trac_8490-square_free-vd.patch) by slabbe created at 2010-04-28 10:12:41
 
 The same bug was occuring with `is_cube_free` :
 
@@ -269,7 +269,7 @@ Applies over the precedent patch
 archive/issue_comments_076572.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8490_review-sl.patch](tarball://root/attachments/some-uuid/ticket8490/trac_8490_review-sl.patch) by slabbe created at 2010-04-28 10:21:34",
     "created_at": "2010-04-28T10:21:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8490",
     "type": "issue_comment",
@@ -278,7 +278,7 @@ archive/issue_comments_076572.json:
 }
 ```
 
-Attachment
+Attachment [trac_8490_review-sl.patch](tarball://root/attachments/some-uuid/ticket8490/trac_8490_review-sl.patch) by slabbe created at 2010-04-28 10:21:34
 
 
 

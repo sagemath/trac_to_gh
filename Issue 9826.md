@@ -163,7 +163,7 @@ Changing component from doctest to interfaces.
 archive/issue_comments_096936.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9827_custom_name.patch](tarball://root/attachments/some-uuid/ticket9827/9827_custom_name.patch) by jdemeyer created at 2013-04-05 13:27:11",
     "created_at": "2013-04-05T13:27:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9826",
     "type": "issue_comment",
@@ -172,7 +172,7 @@ archive/issue_comments_096936.json:
 }
 ```
 
-Attachment
+Attachment [9827_custom_name.patch](tarball://root/attachments/some-uuid/ticket9827/9827_custom_name.patch) by jdemeyer created at 2013-04-05 13:27:11
 
 
 

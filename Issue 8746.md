@@ -80,7 +80,7 @@ Changing status from new to needs_review.
 archive/issue_comments_080020.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me and passes all doctests.",
+    "body": "Attachment [trac_8746-posets__eq__speedup-fh.patch](tarball://root/attachments/some-uuid/ticket8746/trac_8746-posets__eq__speedup-fh.patch) by novoselt created at 2010-04-22 22:05:05\n\nLooks good to me and passes all doctests.",
     "created_at": "2010-04-22T22:05:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8746",
     "type": "issue_comment",
@@ -89,7 +89,7 @@ archive/issue_comments_080020.json:
 }
 ```
 
-Attachment
+Attachment [trac_8746-posets__eq__speedup-fh.patch](tarball://root/attachments/some-uuid/ticket8746/trac_8746-posets__eq__speedup-fh.patch) by novoselt created at 2010-04-22 22:05:05
 
 Looks good to me and passes all doctests.
 

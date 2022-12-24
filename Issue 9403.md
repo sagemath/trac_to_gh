@@ -91,7 +91,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_089605.json:
 ```json
 {
-    "body": "Attachment\n\nI have implemented the preimage method including documentation and tests. I just need a review now. Let me know if this should go somewhere better.",
+    "body": "Attachment [trac_9403-preimage.patch](tarball://root/attachments/some-uuid/ticket9403/trac_9403-preimage.patch) by jeremywest created at 2010-07-02 00:18:23\n\nI have implemented the preimage method including documentation and tests. I just need a review now. Let me know if this should go somewhere better.",
     "created_at": "2010-07-02T00:18:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9403",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_089605.json:
 }
 ```
 
-Attachment
+Attachment [trac_9403-preimage.patch](tarball://root/attachments/some-uuid/ticket9403/trac_9403-preimage.patch) by jeremywest created at 2010-07-02 00:18:23
 
 I have implemented the preimage method including documentation and tests. I just need a review now. Let me know if this should go somewhere better.
 
@@ -148,7 +148,7 @@ Replaces previous patch.
 archive/issue_comments_089608.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated documentation.",
+    "body": "Attachment [trac_9403-new.patch](tarball://root/attachments/some-uuid/ticket9403/trac_9403-new.patch) by ebeyerstedt created at 2010-07-02 05:44:41\n\nUpdated documentation.",
     "created_at": "2010-07-02T05:44:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9403",
     "type": "issue_comment",
@@ -157,7 +157,7 @@ archive/issue_comments_089608.json:
 }
 ```
 
-Attachment
+Attachment [trac_9403-new.patch](tarball://root/attachments/some-uuid/ticket9403/trac_9403-new.patch) by ebeyerstedt created at 2010-07-02 05:44:41
 
 Updated documentation.
 
@@ -258,7 +258,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_089614.json:
 ```json
 {
-    "body": "Attachment\n\nFixes error handling message, replaces all previous patches.",
+    "body": "Attachment [trac_9403-error_handling.patch](tarball://root/attachments/some-uuid/ticket9403/trac_9403-error_handling.patch) by jeremywest created at 2010-07-02 20:27:53\n\nFixes error handling message, replaces all previous patches.",
     "created_at": "2010-07-02T20:27:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9403",
     "type": "issue_comment",
@@ -267,7 +267,7 @@ archive/issue_comments_089614.json:
 }
 ```
 
-Attachment
+Attachment [trac_9403-error_handling.patch](tarball://root/attachments/some-uuid/ticket9403/trac_9403-error_handling.patch) by jeremywest created at 2010-07-02 20:27:53
 
 Fixes error handling message, replaces all previous patches.
 

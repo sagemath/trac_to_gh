@@ -55,7 +55,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4706
 archive/issue_comments_035495.json:
 ```json
 {
-    "body": "Attachment\n\nI think this is an old ticket which can be closed and has been fixed in the mean time. At least during the parralel builds I did (and I did quite a few this sage days already) I never saw this message.",
+    "body": "Attachment [trac_4706-scripts-repo.patch](tarball://root/attachments/some-uuid/ticket4706/trac_4706-scripts-repo.patch) by mderickx created at 2011-08-23 21:09:08\n\nI think this is an old ticket which can be closed and has been fixed in the mean time. At least during the parralel builds I did (and I did quite a few this sage days already) I never saw this message.",
     "created_at": "2011-08-23T21:09:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4706",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_035495.json:
 }
 ```
 
-Attachment
+Attachment [trac_4706-scripts-repo.patch](tarball://root/attachments/some-uuid/ticket4706/trac_4706-scripts-repo.patch) by mderickx created at 2011-08-23 21:09:08
 
 I think this is an old ticket which can be closed and has been fixed in the mean time. At least during the parralel builds I did (and I did quite a few this sage days already) I never saw this message.
 

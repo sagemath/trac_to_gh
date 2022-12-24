@@ -66,7 +66,7 @@ Changing status from new to needs_review.
 archive/issue_comments_099195.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9949_major_index_finite_permutation_group-nb.patch](tarball://root/attachments/some-uuid/ticket9949/trac_9949_major_index_finite_permutation_group-nb.patch) by nborie created at 2010-09-19 19:54:10",
     "created_at": "2010-09-19T19:54:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9948",
     "type": "issue_comment",
@@ -75,7 +75,7 @@ archive/issue_comments_099195.json:
 }
 ```
 
-Attachment
+Attachment [trac_9949_major_index_finite_permutation_group-nb.patch](tarball://root/attachments/some-uuid/ticket9949/trac_9949_major_index_finite_permutation_group-nb.patch) by nborie created at 2010-09-19 19:54:10
 
 
 
@@ -84,7 +84,7 @@ Attachment
 archive/issue_comments_099196.json:
 ```json
 {
-    "body": "Attachment\n\nI've added a review patch which fixes a few minor things.  Other than that, it looks good to me.  Do you want to fold the patches together, put the new one up, and I can give it positive review?",
+    "body": "Attachment [trac_9949_major_index_finite_permutation_group-review-mh.patch](tarball://root/attachments/some-uuid/ticket9949/trac_9949_major_index_finite_permutation_group-review-mh.patch) by mhansen created at 2010-11-26 02:58:52\n\nI've added a review patch which fixes a few minor things.  Other than that, it looks good to me.  Do you want to fold the patches together, put the new one up, and I can give it positive review?",
     "created_at": "2010-11-26T02:58:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9948",
     "type": "issue_comment",
@@ -93,7 +93,7 @@ archive/issue_comments_099196.json:
 }
 ```
 
-Attachment
+Attachment [trac_9949_major_index_finite_permutation_group-review-mh.patch](tarball://root/attachments/some-uuid/ticket9949/trac_9949_major_index_finite_permutation_group-review-mh.patch) by mhansen created at 2010-11-26 02:58:52
 
 I've added a review patch which fixes a few minor things.  Other than that, it looks good to me.  Do you want to fold the patches together, put the new one up, and I can give it positive review?
 
@@ -255,7 +255,7 @@ Thanks for having regarded this!
 archive/issue_comments_099204.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9949_major_index_final-nb.patch](tarball://root/attachments/some-uuid/ticket9949/trac_9949_major_index_final-nb.patch) by nborie created at 2011-02-16 17:52:49",
     "created_at": "2011-02-16T17:52:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9948",
     "type": "issue_comment",
@@ -264,7 +264,7 @@ archive/issue_comments_099204.json:
 }
 ```
 
-Attachment
+Attachment [trac_9949_major_index_final-nb.patch](tarball://root/attachments/some-uuid/ticket9949/trac_9949_major_index_final-nb.patch) by nborie created at 2011-02-16 17:52:49
 
 
 
@@ -474,7 +474,7 @@ Really final version, with ticket number
 archive/issue_comments_099216.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9949_major_index_really_final-nb.patch](tarball://root/attachments/some-uuid/ticket9949/trac_9949_major_index_really_final-nb.patch) by nthiery created at 2011-04-07 14:11:52",
     "created_at": "2011-04-07T14:11:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9948",
     "type": "issue_comment",
@@ -483,7 +483,7 @@ archive/issue_comments_099216.json:
 }
 ```
 
-Attachment
+Attachment [trac_9949_major_index_really_final-nb.patch](tarball://root/attachments/some-uuid/ticket9949/trac_9949_major_index_really_final-nb.patch) by nthiery created at 2011-04-07 14:11:52
 
 
 

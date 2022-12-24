@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9671
 archive/issue_comments_093946.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-9671-histogram.patch](tarball://root/attachments/some-uuid/ticket9671/trac-9671-histogram.patch) by jason created at 2010-08-09 20:28:18",
     "created_at": "2010-08-09T20:28:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9671",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_093946.json:
 }
 ```
 
-Attachment
+Attachment [trac-9671-histogram.patch](tarball://root/attachments/some-uuid/ticket9671/trac-9671-histogram.patch) by jason created at 2010-08-09 20:28:18
 
 
 
@@ -207,7 +207,7 @@ davidm, can you actually attach the patch here as well?  That will make it easie
 archive/issue_comments_093953.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-main_rev15695.patch](tarball://root/attachments/some-uuid/ticket9671/sage-main_rev15695.patch) by davidm created at 2011-07-29 20:51:07",
     "created_at": "2011-07-29T20:51:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9671",
     "type": "issue_comment",
@@ -216,7 +216,7 @@ archive/issue_comments_093953.json:
 }
 ```
 
-Attachment
+Attachment [sage-main_rev15695.patch](tarball://root/attachments/some-uuid/ticket9671/sage-main_rev15695.patch) by davidm created at 2011-07-29 20:51:07
 
 
 
@@ -243,7 +243,7 @@ Thanks!
 archive/issue_comments_093955.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac9671-histogram-docchange.patch](tarball://root/attachments/some-uuid/ticket9671/trac9671-histogram-docchange.patch) by davidm created at 2011-09-24 00:24:41",
     "created_at": "2011-09-24T00:24:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9671",
     "type": "issue_comment",
@@ -252,7 +252,7 @@ archive/issue_comments_093955.json:
 }
 ```
 
-Attachment
+Attachment [trac9671-histogram-docchange.patch](tarball://root/attachments/some-uuid/ticket9671/trac9671-histogram-docchange.patch) by davidm created at 2011-09-24 00:24:41
 
 
 
@@ -279,7 +279,7 @@ Just added a few changes to the docs and exposed more of the matplotlib options.
 archive/issue_comments_093957.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [histogram_fixes.patch](tarball://root/attachments/some-uuid/ticket9671/histogram_fixes.patch) by jason created at 2011-12-06 13:33:37",
     "created_at": "2011-12-06T13:33:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9671",
     "type": "issue_comment",
@@ -288,7 +288,7 @@ archive/issue_comments_093957.json:
 }
 ```
 
-Attachment
+Attachment [histogram_fixes.patch](tarball://root/attachments/some-uuid/ticket9671/histogram_fixes.patch) by jason created at 2011-12-06 13:33:37
 
 
 

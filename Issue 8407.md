@@ -133,7 +133,7 @@ I removed one of the objectives of the ticket related to isometries. Indeed, I n
 archive/issue_comments_075328.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8407_word-paths-sl.patch](tarball://root/attachments/some-uuid/ticket8407/trac_8407_word-paths-sl.patch) by slabbe created at 2010-04-11 15:18:11",
     "created_at": "2010-04-11T15:18:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8407",
     "type": "issue_comment",
@@ -142,7 +142,7 @@ archive/issue_comments_075328.json:
 }
 ```
 
-Attachment
+Attachment [trac_8407_word-paths-sl.patch](tarball://root/attachments/some-uuid/ticket8407/trac_8407_word-paths-sl.patch) by slabbe created at 2010-04-11 15:18:11
 
 
 

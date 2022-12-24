@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5306
 archive/issue_comments_040811.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch (by Maite Aranes) is based on 3.4.  It provides a number of Sage functions for ideals in number fields:  idealstar (multiplicative group modulo I), ideallog, idealcoprime, reduce (to reduce an element modulo an ideal) and invertible_residues_mod_units (an iterator through representatives of `(R/I)^*` modulo the image of a subgroup of the group of units -- something which will be needed for enumerating cusps over number fields!).",
+    "body": "Attachment [nf_utilities.patch](tarball://root/attachments/some-uuid/ticket5306/nf_utilities.patch) by cremona created at 2009-03-19 11:55:48\n\nThe attached patch (by Maite Aranes) is based on 3.4.  It provides a number of Sage functions for ideals in number fields:  idealstar (multiplicative group modulo I), ideallog, idealcoprime, reduce (to reduce an element modulo an ideal) and invertible_residues_mod_units (an iterator through representatives of `(R/I)^*` modulo the image of a subgroup of the group of units -- something which will be needed for enumerating cusps over number fields!).",
     "created_at": "2009-03-19T11:55:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5306",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_040811.json:
 }
 ```
 
-Attachment
+Attachment [nf_utilities.patch](tarball://root/attachments/some-uuid/ticket5306/nf_utilities.patch) by cremona created at 2009-03-19 11:55:48
 
 The attached patch (by Maite Aranes) is based on 3.4.  It provides a number of Sage functions for ideals in number fields:  idealstar (multiplicative group modulo I), ideallog, idealcoprime, reduce (to reduce an element modulo an ideal) and invertible_residues_mod_units (an iterator through representatives of `(R/I)^*` modulo the image of a subgroup of the group of units -- something which will be needed for enumerating cusps over number fields!).
 
@@ -175,7 +175,7 @@ replaces previous
 archive/issue_comments_040818.json:
 ```json
 {
-    "body": "Attachment\n\nThe new patch trac_5306.patch addresses the issues raised in the review (removes the accent, gives better descriptions of the functions, and does a little more tidying up).  It replaces the earlier patch.  (This makes it easier to apply, but harder to see what changed I made!)",
+    "body": "Attachment [trac_5306.patch](tarball://root/attachments/some-uuid/ticket5306/trac_5306.patch) by cremona created at 2009-04-08 08:54:58\n\nThe new patch trac_5306.patch addresses the issues raised in the review (removes the accent, gives better descriptions of the functions, and does a little more tidying up).  It replaces the earlier patch.  (This makes it easier to apply, but harder to see what changed I made!)",
     "created_at": "2009-04-08T08:54:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5306",
     "type": "issue_comment",
@@ -184,7 +184,7 @@ archive/issue_comments_040818.json:
 }
 ```
 
-Attachment
+Attachment [trac_5306.patch](tarball://root/attachments/some-uuid/ticket5306/trac_5306.patch) by cremona created at 2009-04-08 08:54:58
 
 The new patch trac_5306.patch addresses the issues raised in the review (removes the accent, gives better descriptions of the functions, and does a little more tidying up).  It replaces the earlier patch.  (This makes it easier to apply, but harder to see what changed I made!)
 
@@ -268,7 +268,7 @@ apply on top of trac_5306.patch
 archive/issue_comments_040822.json:
 ```json
 {
-    "body": "Attachment\n\nOK, here's another patch, which renames the function to just \"invertible_residues_mod\" and tidies up the docstrings a bit. If you're happy with it, then let's call that a positive review.",
+    "body": "Attachment [trac_5306-reviewer-fixes.patch](tarball://root/attachments/some-uuid/ticket5306/trac_5306-reviewer-fixes.patch) by davidloeffler created at 2009-04-08 10:28:23\n\nOK, here's another patch, which renames the function to just \"invertible_residues_mod\" and tidies up the docstrings a bit. If you're happy with it, then let's call that a positive review.",
     "created_at": "2009-04-08T10:28:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5306",
     "type": "issue_comment",
@@ -277,7 +277,7 @@ archive/issue_comments_040822.json:
 }
 ```
 
-Attachment
+Attachment [trac_5306-reviewer-fixes.patch](tarball://root/attachments/some-uuid/ticket5306/trac_5306-reviewer-fixes.patch) by davidloeffler created at 2009-04-08 10:28:23
 
 OK, here's another patch, which renames the function to just "invertible_residues_mod" and tidies up the docstrings a bit. If you're happy with it, then let's call that a positive review.
 

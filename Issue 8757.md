@@ -49,7 +49,7 @@ Preliminary work. Schema in sagenb.notebook.models.models.
 archive/issue_comments_080125.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8757-sqlalchemy-storage-incomplete.patch](tarball://root/attachments/some-uuid/ticket8757/trac_8757-sqlalchemy-storage-incomplete.patch) by jdemeyer created at 2013-08-13 15:35:53",
     "created_at": "2013-08-13T15:35:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8757",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_080125.json:
 }
 ```
 
-Attachment
+Attachment [trac_8757-sqlalchemy-storage-incomplete.patch](tarball://root/attachments/some-uuid/ticket8757/trac_8757-sqlalchemy-storage-incomplete.patch) by jdemeyer created at 2013-08-13 15:35:53
 
 
 

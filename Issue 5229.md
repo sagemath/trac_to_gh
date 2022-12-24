@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5229
 archive/issue_comments_040079.json:
 ```json
 {
-    "body": "Attachment\n\n\n```\n[1:28pm] ncalexan: jason|log: either it's not working or I don't get it.\n[1:28pm] ncalexan: plot3d(lambda x, y: x^2 + y^2, (-2,2), (-2,2))\n[1:28pm] ncalexan: gives me a smooth cup-like surface.\n[1:28pm] ncalexan: But the value at x=0, y=0 (which is z=0) does not coincide with the jmol axes.\n```\n",
+    "body": "Attachment [trac_5229-jmol-axes.patch](tarball://root/attachments/some-uuid/ticket5229/trac_5229-jmol-axes.patch) by ncalexan created at 2009-02-10 21:49:16\n\n\n```\n[1:28pm] ncalexan: jason|log: either it's not working or I don't get it.\n[1:28pm] ncalexan: plot3d(lambda x, y: x^2 + y^2, (-2,2), (-2,2))\n[1:28pm] ncalexan: gives me a smooth cup-like surface.\n[1:28pm] ncalexan: But the value at x=0, y=0 (which is z=0) does not coincide with the jmol axes.\n```\n",
     "created_at": "2009-02-10T21:49:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5229",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_040079.json:
 }
 ```
 
-Attachment
+Attachment [trac_5229-jmol-axes.patch](tarball://root/attachments/some-uuid/ticket5229/trac_5229-jmol-axes.patch) by ncalexan created at 2009-02-10 21:49:16
 
 
 ```

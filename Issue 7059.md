@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7059
 archive/issue_comments_058412.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review.  You beat me to it!  Good idea to add it to the devel guide.",
+    "body": "Attachment [trac_7059-sagetmp.patch](tarball://root/attachments/some-uuid/ticket7059/trac_7059-sagetmp.patch) by kcrisman created at 2009-09-29 14:34:49\n\nPositive review.  You beat me to it!  Good idea to add it to the devel guide.",
     "created_at": "2009-09-29T14:34:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7059",
     "type": "issue_comment",
@@ -43,7 +43,7 @@ archive/issue_comments_058412.json:
 }
 ```
 
-Attachment
+Attachment [trac_7059-sagetmp.patch](tarball://root/attachments/some-uuid/ticket7059/trac_7059-sagetmp.patch) by kcrisman created at 2009-09-29 14:34:49
 
 Positive review.  You beat me to it!  Good idea to add it to the devel guide.
 

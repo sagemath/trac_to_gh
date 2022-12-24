@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4281
 archive/issue_comments_031314.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4281.patch](tarball://root/attachments/some-uuid/ticket4281/trac_4281.patch) by zimmerma created at 2008-10-14 13:49:50",
     "created_at": "2008-10-14T13:49:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4281",
     "type": "issue_comment",
@@ -49,7 +49,7 @@ archive/issue_comments_031314.json:
 }
 ```
 
-Attachment
+Attachment [trac_4281.patch](tarball://root/attachments/some-uuid/ticket4281/trac_4281.patch) by zimmerma created at 2008-10-14 13:49:50
 
 
 
@@ -58,7 +58,7 @@ Attachment
 archive/issue_comments_031315.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4281.patch2](tarball://root/attachments/some-uuid/ticket4281/trac_4281.patch2) by zimmerma created at 2008-10-14 14:00:49",
     "created_at": "2008-10-14T14:00:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4281",
     "type": "issue_comment",
@@ -67,7 +67,7 @@ archive/issue_comments_031315.json:
 }
 ```
 
-Attachment
+Attachment [trac_4281.patch2](tarball://root/attachments/some-uuid/ticket4281/trac_4281.patch2) by zimmerma created at 2008-10-14 14:00:49
 
 
 
@@ -162,7 +162,7 @@ False
 archive/issue_comments_031320.json:
 ```json
 {
-    "body": "Attachment\n\nYep, sorry, I posted the wrong patch. I've replaced it now.",
+    "body": "Attachment [4281-tate-pickle.patch](tarball://root/attachments/some-uuid/ticket4281/4281-tate-pickle.patch) by robertwb created at 2008-10-18 17:02:45\n\nYep, sorry, I posted the wrong patch. I've replaced it now.",
     "created_at": "2008-10-18T17:02:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4281",
     "type": "issue_comment",
@@ -171,7 +171,7 @@ archive/issue_comments_031320.json:
 }
 ```
 
-Attachment
+Attachment [4281-tate-pickle.patch](tarball://root/attachments/some-uuid/ticket4281/4281-tate-pickle.patch) by robertwb created at 2008-10-18 17:02:45
 
 Yep, sorry, I posted the wrong patch. I've replaced it now.
 

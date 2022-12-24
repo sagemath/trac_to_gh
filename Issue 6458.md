@@ -49,7 +49,7 @@ patch against 4.1.alpha2
 archive/issue_comments_052189.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6458-relative_ideal_inverse_mod.patch](tarball://root/attachments/some-uuid/ticket6458/trac_6458-relative_ideal_inverse_mod.patch) by davidloeffler created at 2009-07-02 13:35:14",
     "created_at": "2009-07-02T13:35:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6458",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_052189.json:
 }
 ```
 
-Attachment
+Attachment [trac_6458-relative_ideal_inverse_mod.patch](tarball://root/attachments/some-uuid/ticket6458/trac_6458-relative_ideal_inverse_mod.patch) by davidloeffler created at 2009-07-02 13:35:14
 
 
 
@@ -116,7 +116,7 @@ Got:
 archive/issue_comments_052192.json:
 ```json
 {
-    "body": "Attachment\n\napply after previous patch",
+    "body": "Attachment [trac_6458-fix.patch](tarball://root/attachments/some-uuid/ticket6458/trac_6458-fix.patch) by davidloeffler created at 2009-07-14 22:04:13\n\napply after previous patch",
     "created_at": "2009-07-14T22:04:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6458",
     "type": "issue_comment",
@@ -125,7 +125,7 @@ archive/issue_comments_052192.json:
 }
 ```
 
-Attachment
+Attachment [trac_6458-fix.patch](tarball://root/attachments/some-uuid/ticket6458/trac_6458-fix.patch) by davidloeffler created at 2009-07-14 22:04:13
 
 apply after previous patch
 

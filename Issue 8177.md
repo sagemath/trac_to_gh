@@ -182,7 +182,7 @@ I'm waiting for Nicolas to weigh in on what he thinks should happen with the `El
 archive/issue_comments_072046.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8177-element_wrapper_segfault-fh.patch](tarball://root/attachments/some-uuid/ticket8177/trac_8177-element_wrapper_segfault-fh.patch) by hivert created at 2010-02-06 09:20:37",
     "created_at": "2010-02-06T09:20:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8177",
     "type": "issue_comment",
@@ -191,7 +191,7 @@ archive/issue_comments_072046.json:
 }
 ```
 
-Attachment
+Attachment [trac_8177-element_wrapper_segfault-fh.patch](tarball://root/attachments/some-uuid/ticket8177/trac_8177-element_wrapper_segfault-fh.patch) by hivert created at 2010-02-06 09:20:37
 
 
 

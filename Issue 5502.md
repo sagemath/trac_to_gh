@@ -192,7 +192,7 @@ Anne Schilling requests twisted affine types, but this is not done.
 archive/issue_comments_042742.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch `trac_5502-revised.patch` corrects some problems and supercedes\nthe previous patches.",
+    "body": "Attachment [trac_5502-revised.patch](tarball://root/attachments/some-uuid/ticket5502/trac_5502-revised.patch) by bump created at 2009-04-30 14:48:45\n\nThe patch `trac_5502-revised.patch` corrects some problems and supercedes\nthe previous patches.",
     "created_at": "2009-04-30T14:48:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5502",
     "type": "issue_comment",
@@ -201,7 +201,7 @@ archive/issue_comments_042742.json:
 }
 ```
 
-Attachment
+Attachment [trac_5502-revised.patch](tarball://root/attachments/some-uuid/ticket5502/trac_5502-revised.patch) by bump created at 2009-04-30 14:48:45
 
 The patch `trac_5502-revised.patch` corrects some problems and supercedes
 the previous patches.
@@ -279,7 +279,7 @@ Michael
 archive/issue_comments_042746.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch trac_5502-doc.patch goes on top of trac_5502-revised.patch.\n\nIt adds doctests to the two ascii art functions.",
+    "body": "Attachment [trac_5502-doc.patch](tarball://root/attachments/some-uuid/ticket5502/trac_5502-doc.patch) by bump created at 2009-05-12 04:09:56\n\nThe patch trac_5502-doc.patch goes on top of trac_5502-revised.patch.\n\nIt adds doctests to the two ascii art functions.",
     "created_at": "2009-05-12T04:09:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5502",
     "type": "issue_comment",
@@ -288,7 +288,7 @@ archive/issue_comments_042746.json:
 }
 ```
 
-Attachment
+Attachment [trac_5502-doc.patch](tarball://root/attachments/some-uuid/ticket5502/trac_5502-doc.patch) by bump created at 2009-05-12 04:09:56
 
 The patch trac_5502-doc.patch goes on top of trac_5502-revised.patch.
 

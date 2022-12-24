@@ -87,7 +87,7 @@ add doctests
 archive/issue_comments_063524.json:
 ```json
 {
-    "body": "Attachment\n\nThis is fixed (hopefully, for good) in the new pynac package here:\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.10.spkg\n\nattachment:trac_7508-fderivative_hash_collision_doctest.patch adds doctests for the fix.\n\nNote that the new pynac version also contains fixes for #7264 and #7406. Tests should be run with the patches from those tickets also applied in this order:\n\n* #7508 (this ticket)\n* #7264\n* #7406\n\nThis ticket now depends on #7490.",
+    "body": "Attachment [trac_7508-fderivative_hash_collision_doctest.patch](tarball://root/attachments/some-uuid/ticket7508/trac_7508-fderivative_hash_collision_doctest.patch) by burcin created at 2009-11-22 17:24:32\n\nThis is fixed (hopefully, for good) in the new pynac package here:\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.10.spkg\n\nattachment:trac_7508-fderivative_hash_collision_doctest.patch adds doctests for the fix.\n\nNote that the new pynac version also contains fixes for #7264 and #7406. Tests should be run with the patches from those tickets also applied in this order:\n\n* #7508 (this ticket)\n* #7264\n* #7406\n\nThis ticket now depends on #7490.",
     "created_at": "2009-11-22T17:24:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7508",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_063524.json:
 }
 ```
 
-Attachment
+Attachment [trac_7508-fderivative_hash_collision_doctest.patch](tarball://root/attachments/some-uuid/ticket7508/trac_7508-fderivative_hash_collision_doctest.patch) by burcin created at 2009-11-22 17:24:32
 
 This is fixed (hopefully, for good) in the new pynac package here:
 

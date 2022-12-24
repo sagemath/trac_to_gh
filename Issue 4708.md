@@ -79,7 +79,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4708
 archive/issue_comments_035504.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4708_bin.patch](tarball://root/attachments/some-uuid/ticket4708/trac_4708_bin.patch) by gfurnish created at 2008-12-05 04:55:48",
     "created_at": "2008-12-05T04:55:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4708",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_035504.json:
 }
 ```
 
-Attachment
+Attachment [trac_4708_bin.patch](tarball://root/attachments/some-uuid/ticket4708/trac_4708_bin.patch) by gfurnish created at 2008-12-05 04:55:48
 
 
 
@@ -151,7 +151,7 @@ Changing status from new to assigned.
 archive/issue_comments_035508.json:
 ```json
 {
-    "body": "Attachment\n\nApply only 4708_bin-2.patch, all credit to gfurnish.",
+    "body": "Attachment [4708_bin-2.patch](tarball://root/attachments/some-uuid/ticket4708/4708_bin-2.patch) by ncalexan created at 2008-12-05 05:44:12\n\nApply only 4708_bin-2.patch, all credit to gfurnish.",
     "created_at": "2008-12-05T05:44:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4708",
     "type": "issue_comment",
@@ -160,7 +160,7 @@ archive/issue_comments_035508.json:
 }
 ```
 
-Attachment
+Attachment [4708_bin-2.patch](tarball://root/attachments/some-uuid/ticket4708/4708_bin-2.patch) by ncalexan created at 2008-12-05 05:44:12
 
 Apply only 4708_bin-2.patch, all credit to gfurnish.
 

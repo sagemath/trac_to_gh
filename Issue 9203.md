@@ -269,7 +269,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_086138.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9203-ellipse.patch](tarball://root/attachments/some-uuid/ticket9203/trac_9203-ellipse.patch) by vdelecroix created at 2010-06-26 14:07:24",
     "created_at": "2010-06-26T14:07:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9203",
     "type": "issue_comment",
@@ -278,7 +278,7 @@ archive/issue_comments_086138.json:
 }
 ```
 
-Attachment
+Attachment [trac_9203-ellipse.patch](tarball://root/attachments/some-uuid/ticket9203/trac_9203-ellipse.patch) by vdelecroix created at 2010-06-26 14:07:24
 
 
 
@@ -305,7 +305,7 @@ worksheet that tests the bounding box of arcs and ellipses
 archive/issue_comments_086140.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:8 kcrisman]:\n> See #9076 for comments on bounding box and worksheet, though for this ticket I think it's ok.  Obviously the `fmod` function can be used here too, as well as already using math.pi since it's imported (I think this should work) and initializing the radii etc. as just the input numbers, waiting to float them until `_render...` and so forth.  Very nice work otherwise.\n> \n> This patch also depends on #9076, for others who might test it.",
+    "body": "Attachment [arcs and ellipses.sws](tarball://root/attachments/some-uuid/ticket9203/arcs and ellipses.sws) by vdelecroix created at 2010-06-26 14:09:45\n\nReplying to [comment:8 kcrisman]:\n> See #9076 for comments on bounding box and worksheet, though for this ticket I think it's ok.  Obviously the `fmod` function can be used here too, as well as already using math.pi since it's imported (I think this should work) and initializing the radii etc. as just the input numbers, waiting to float them until `_render...` and so forth.  Very nice work otherwise.\n> \n> This patch also depends on #9076, for others who might test it.",
     "created_at": "2010-06-26T14:09:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9203",
     "type": "issue_comment",
@@ -314,7 +314,7 @@ archive/issue_comments_086140.json:
 }
 ```
 
-Attachment
+Attachment [arcs and ellipses.sws](tarball://root/attachments/some-uuid/ticket9203/arcs and ellipses.sws) by vdelecroix created at 2010-06-26 14:09:45
 
 Replying to [comment:8 kcrisman]:
 > See #9076 for comments on bounding box and worksheet, though for this ticket I think it's ok.  Obviously the `fmod` function can be used here too, as well as already using math.pi since it's imported (I think this should work) and initializing the radii etc. as just the input numbers, waiting to float them until `_render...` and so forth.  Very nice work otherwise.
@@ -384,7 +384,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_086144.json:
 ```json
 {
-    "body": "Attachment\n\nApply after initial patch",
+    "body": "Attachment [trac_9203-ellipse-reviewer.patch](tarball://root/attachments/some-uuid/ticket9203/trac_9203-ellipse-reviewer.patch) by kcrisman created at 2010-08-10 15:06:54\n\nApply after initial patch",
     "created_at": "2010-08-10T15:06:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9203",
     "type": "issue_comment",
@@ -393,7 +393,7 @@ archive/issue_comments_086144.json:
 }
 ```
 
-Attachment
+Attachment [trac_9203-ellipse-reviewer.patch](tarball://root/attachments/some-uuid/ticket9203/trac_9203-ellipse-reviewer.patch) by kcrisman created at 2010-08-10 15:06:54
 
 Apply after initial patch
 
@@ -532,7 +532,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_086152.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9203-ellipse.2.patch](tarball://root/attachments/some-uuid/ticket9203/trac_9203-ellipse.2.patch) by mpatel created at 2010-08-16 21:17:40",
     "created_at": "2010-08-16T21:17:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9203",
     "type": "issue_comment",
@@ -541,7 +541,7 @@ archive/issue_comments_086152.json:
 }
 ```
 
-Attachment
+Attachment [trac_9203-ellipse.2.patch](tarball://root/attachments/some-uuid/ticket9203/trac_9203-ellipse.2.patch) by mpatel created at 2010-08-16 21:17:40
 
 
 

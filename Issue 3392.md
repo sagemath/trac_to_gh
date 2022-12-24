@@ -123,7 +123,7 @@ Apply instead of above
 archive/issue_comments_023761.json:
 ```json
 {
-    "body": "Attachment\n\nthe matplotlib-sage.3.patch above includes the other two patches and should be applied instead.  the .3.patch file also includes several more fixes for things added in 3.1.1.",
+    "body": "Attachment [matplotlib-sage.3.patch](tarball://root/attachments/some-uuid/ticket3392/matplotlib-sage.3.patch) by jason created at 2008-08-21 22:28:23\n\nthe matplotlib-sage.3.patch above includes the other two patches and should be applied instead.  the .3.patch file also includes several more fixes for things added in 3.1.1.",
     "created_at": "2008-08-21T22:28:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3392",
     "type": "issue_comment",
@@ -132,7 +132,7 @@ archive/issue_comments_023761.json:
 }
 ```
 
-Attachment
+Attachment [matplotlib-sage.3.patch](tarball://root/attachments/some-uuid/ticket3392/matplotlib-sage.3.patch) by jason created at 2008-08-21 22:28:23
 
 the matplotlib-sage.3.patch above includes the other two patches and should be applied instead.  the .3.patch file also includes several more fixes for things added in 3.1.1.
 
@@ -289,7 +289,7 @@ Resolution: fixed
 archive/issue_comments_023767.json:
 ```json
 {
-    "body": "Attachment\n\nMerged both patches in Sage 3.1.2.alpha1",
+    "body": "Attachment [trac_3392_doctest-fix.patch](tarball://root/attachments/some-uuid/ticket3392/trac_3392_doctest-fix.patch) by mabshoff created at 2008-08-27 12:16:03\n\nMerged both patches in Sage 3.1.2.alpha1",
     "created_at": "2008-08-27T12:16:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3392",
     "type": "issue_comment",
@@ -298,7 +298,7 @@ archive/issue_comments_023767.json:
 }
 ```
 
-Attachment
+Attachment [trac_3392_doctest-fix.patch](tarball://root/attachments/some-uuid/ticket3392/trac_3392_doctest-fix.patch) by mabshoff created at 2008-08-27 12:16:03
 
 Merged both patches in Sage 3.1.2.alpha1
 

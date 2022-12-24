@@ -64,7 +64,7 @@ this fixes one particular instance of the problem
 archive/issue_comments_017608.json:
 ```json
 {
-    "body": "Attachment\n\nTo test the attached:\n\n```\nR.<x,y,z> = PolynomialRing(QQ, 3, order='lex')\np = z^2 + 1; q = z^3 + 2\nI = (p*q^2, y-z^2)*R\npd = I.complete_primary_decomposition?\n```\n",
+    "body": "Attachment [sage-2576.patch](tarball://root/attachments/some-uuid/ticket2576/sage-2576.patch) by was created at 2008-03-17 18:52:06\n\nTo test the attached:\n\n```\nR.<x,y,z> = PolynomialRing(QQ, 3, order='lex')\np = z^2 + 1; q = z^3 + 2\nI = (p*q^2, y-z^2)*R\npd = I.complete_primary_decomposition?\n```\n",
     "created_at": "2008-03-17T18:52:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2576",
     "type": "issue_comment",
@@ -73,7 +73,7 @@ archive/issue_comments_017608.json:
 }
 ```
 
-Attachment
+Attachment [sage-2576.patch](tarball://root/attachments/some-uuid/ticket2576/sage-2576.patch) by was created at 2008-03-17 18:52:06
 
 To test the attached:
 

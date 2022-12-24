@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9796
 archive/issue_comments_096167.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9796-matrix-diagonal-elements.patch](tarball://root/attachments/some-uuid/ticket9796/trac_9796-matrix-diagonal-elements.patch) by rbeezer created at 2011-01-13 04:29:05",
     "created_at": "2011-01-13T04:29:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9795",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_096167.json:
 }
 ```
 
-Attachment
+Attachment [trac_9796-matrix-diagonal-elements.patch](tarball://root/attachments/some-uuid/ticket9796/trac_9796-matrix-diagonal-elements.patch) by rbeezer created at 2011-01-13 04:29:05
 
 
 

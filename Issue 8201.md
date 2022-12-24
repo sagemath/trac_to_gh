@@ -75,7 +75,7 @@ Changing status from new to needs_review.
 archive/issue_comments_072331.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-8201-fortran_spkg_install.patch](tarball://root/attachments/some-uuid/ticket8201/trac-8201-fortran_spkg_install.patch) by mraum created at 2010-02-06 19:11:06",
     "created_at": "2010-02-06T19:11:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8201",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_072331.json:
 }
 ```
 
-Attachment
+Attachment [trac-8201-fortran_spkg_install.patch](tarball://root/attachments/some-uuid/ticket8201/trac-8201-fortran_spkg_install.patch) by mraum created at 2010-02-06 19:11:06
 
 
 
@@ -129,7 +129,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_072334.json:
 ```json
 {
-    "body": "Attachment\n\nWhat happens if you set SAGE_FORTRAN to /usr/local/bin/gfortran-4.3 ? \n\nYou might find that is all you need, as perhaps 'which' will not be called then. The whole idea of SAGE_FORTRAN is to specify the Fortran compiler. I do wonder if it might not be less hassle to just create a link so there is a program called 'gfortran'. \n\nHave you checked this on Solaris 10? It is the sort of thing that could screw up on there as there are lots of code changes. \n\nThere's general information about building on Solaris at\n\n http://wiki.sagemath.org/solaris\n\nInformation specifically for 't2' at\n\n http://wiki.sagemath.org/devel/Building-Sage-on-the-T5240-t2\n\nBoth the source (4.3.0.1 is the latest to build on Solaris) and a binary which will run on any SPARC can be found at http://www.sagemath.org/download-source.html\n\nDave",
+    "body": "Attachment [trac-8201-fortran_spkg_install-2.patch](tarball://root/attachments/some-uuid/ticket8201/trac-8201-fortran_spkg_install-2.patch) by drkirkby created at 2010-02-21 23:54:03\n\nWhat happens if you set SAGE_FORTRAN to /usr/local/bin/gfortran-4.3 ? \n\nYou might find that is all you need, as perhaps 'which' will not be called then. The whole idea of SAGE_FORTRAN is to specify the Fortran compiler. I do wonder if it might not be less hassle to just create a link so there is a program called 'gfortran'. \n\nHave you checked this on Solaris 10? It is the sort of thing that could screw up on there as there are lots of code changes. \n\nThere's general information about building on Solaris at\n\n http://wiki.sagemath.org/solaris\n\nInformation specifically for 't2' at\n\n http://wiki.sagemath.org/devel/Building-Sage-on-the-T5240-t2\n\nBoth the source (4.3.0.1 is the latest to build on Solaris) and a binary which will run on any SPARC can be found at http://www.sagemath.org/download-source.html\n\nDave",
     "created_at": "2010-02-21T23:54:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8201",
     "type": "issue_comment",
@@ -138,7 +138,7 @@ archive/issue_comments_072334.json:
 }
 ```
 
-Attachment
+Attachment [trac-8201-fortran_spkg_install-2.patch](tarball://root/attachments/some-uuid/ticket8201/trac-8201-fortran_spkg_install-2.patch) by drkirkby created at 2010-02-21 23:54:03
 
 What happens if you set SAGE_FORTRAN to /usr/local/bin/gfortran-4.3 ? 
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8981
 archive/issue_comments_082855.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8981_param_gsl_ode.patch](tarball://root/attachments/some-uuid/ticket8981/trac_8981_param_gsl_ode.patch) by Moredread created at 2010-05-17 12:50:30",
     "created_at": "2010-05-17T12:50:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8981",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_082855.json:
 }
 ```
 
-Attachment
+Attachment [trac_8981_param_gsl_ode.patch](tarball://root/attachments/some-uuid/ticket8981/trac_8981_param_gsl_ode.patch) by Moredread created at 2010-05-17 12:50:30
 
 
 

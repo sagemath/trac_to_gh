@@ -86,7 +86,7 @@ The attached patch fixes this.
 archive/issue_comments_020313.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [noninvertible_jordan_form.patch](tarball://root/attachments/some-uuid/ticket2946/noninvertible_jordan_form.patch) by wjp created at 2008-04-17 21:51:31",
     "created_at": "2008-04-17T21:51:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2946",
     "type": "issue_comment",
@@ -95,7 +95,7 @@ archive/issue_comments_020313.json:
 }
 ```
 
-Attachment
+Attachment [noninvertible_jordan_form.patch](tarball://root/attachments/some-uuid/ticket2946/noninvertible_jordan_form.patch) by wjp created at 2008-04-17 21:51:31
 
 
 
@@ -227,7 +227,7 @@ Changing status from closed to reopened.
 archive/issue_comments_020320.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2946.patch](tarball://root/attachments/some-uuid/ticket2946/2946.patch) by mhansen created at 2008-04-18 06:29:39",
     "created_at": "2008-04-18T06:29:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2946",
     "type": "issue_comment",
@@ -236,7 +236,7 @@ archive/issue_comments_020320.json:
 }
 ```
 
-Attachment
+Attachment [2946.patch](tarball://root/attachments/some-uuid/ticket2946/2946.patch) by mhansen created at 2008-04-18 06:29:39
 
 
 

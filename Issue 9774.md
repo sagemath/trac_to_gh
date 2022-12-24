@@ -105,7 +105,7 @@ SPKG patch of Mike's changes.
 archive/issue_comments_095924.json:
 ```json
 {
-    "body": "Attachment\n\nThere is a small type in SPKG.txt: on line 29, you should replace \"lcalc-1.23.p2\" by \"lcalc-1.23.p3\"",
+    "body": "Attachment [trac_9775_spkg-lcalc_cygwin_dll.patch](tarball://root/attachments/some-uuid/ticket9775/trac_9775_spkg-lcalc_cygwin_dll.patch) by jdemeyer created at 2010-08-21 20:50:01\n\nThere is a small type in SPKG.txt: on line 29, you should replace \"lcalc-1.23.p2\" by \"lcalc-1.23.p3\"",
     "created_at": "2010-08-21T20:50:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9774",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_095924.json:
 }
 ```
 
-Attachment
+Attachment [trac_9775_spkg-lcalc_cygwin_dll.patch](tarball://root/attachments/some-uuid/ticket9775/trac_9775_spkg-lcalc_cygwin_dll.patch) by jdemeyer created at 2010-08-21 20:50:01
 
 There is a small type in SPKG.txt: on line 29, you should replace "lcalc-1.23.p2" by "lcalc-1.23.p3"
 

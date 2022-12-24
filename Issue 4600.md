@@ -192,7 +192,7 @@ Total time for all tests: 207.7 seconds
 archive/issue_comments_034489.json:
 ```json
 {
-    "body": "Attachment\n\nthis patch to the scripts repo should fix everything.",
+    "body": "Attachment [scripts-4600.patch](tarball://root/attachments/some-uuid/ticket4600/scripts-4600.patch) by was created at 2008-11-24 05:41:26\n\nthis patch to the scripts repo should fix everything.",
     "created_at": "2008-11-24T05:41:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4600",
     "type": "issue_comment",
@@ -201,7 +201,7 @@ archive/issue_comments_034489.json:
 }
 ```
 
-Attachment
+Attachment [scripts-4600.patch](tarball://root/attachments/some-uuid/ticket4600/scripts-4600.patch) by was created at 2008-11-24 05:41:26
 
 this patch to the scripts repo should fix everything.
 

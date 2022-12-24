@@ -91,7 +91,7 @@ patch to fix tableaux major index
 archive/issue_comments_069706.json:
 ```json
 {
-    "body": "Attachment\n\nThanks for the patch!  While I don't have time for a full review now, the main issue with this patch is going to be backward compatibility.  I'm pretty sure that the Macdonald polynomial code uses these functions, so sage --testall will probably fail after applying your patch.  That part will not be too hard to fix, but the bigger problem is for people who have sage code on their own machine.  When people upgrade sage and this change is included (without them necessarily knowing about it) this change could make their code behave in slightly wrong ways that are not obvious.  We really try to avoid that.\n\nSo I think the thing to do is to deprecate 'descents' and 'major_index' (look up deprecation in the developers guide), use 'i_descents' and 'i_major_index' for the existing statistics (as you have done) and give the classical statistics some new name. (Suggestions welcome!)",
+    "body": "Attachment [Fix_Tableau_Major_Index_AR.patch](tarball://root/attachments/some-uuid/ticket7983/Fix_Tableau_Major_Index_AR.patch) by jbandlow created at 2010-11-16 14:11:26\n\nThanks for the patch!  While I don't have time for a full review now, the main issue with this patch is going to be backward compatibility.  I'm pretty sure that the Macdonald polynomial code uses these functions, so sage --testall will probably fail after applying your patch.  That part will not be too hard to fix, but the bigger problem is for people who have sage code on their own machine.  When people upgrade sage and this change is included (without them necessarily knowing about it) this change could make their code behave in slightly wrong ways that are not obvious.  We really try to avoid that.\n\nSo I think the thing to do is to deprecate 'descents' and 'major_index' (look up deprecation in the developers guide), use 'i_descents' and 'i_major_index' for the existing statistics (as you have done) and give the classical statistics some new name. (Suggestions welcome!)",
     "created_at": "2010-11-16T14:11:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_069706.json:
 }
 ```
 
-Attachment
+Attachment [Fix_Tableau_Major_Index_AR.patch](tarball://root/attachments/some-uuid/ticket7983/Fix_Tableau_Major_Index_AR.patch) by jbandlow created at 2010-11-16 14:11:26
 
 Thanks for the patch!  While I don't have time for a full review now, the main issue with this patch is going to be backward compatibility.  I'm pretty sure that the Macdonald polynomial code uses these functions, so sage --testall will probably fail after applying your patch.  That part will not be too hard to fix, but the bigger problem is for people who have sage code on their own machine.  When people upgrade sage and this change is included (without them necessarily knowing about it) this change could make their code behave in slightly wrong ways that are not obvious.  We really try to avoid that.
 
@@ -443,7 +443,7 @@ implements the right notions of major index and descents for standard tableaux w
 archive/issue_comments_069721.json:
 ```json
 {
-    "body": "Attachment\n\nTypo in a docstring fixed.",
+    "body": "Attachment [trac_7983-major_index_and_other_tableau_fixes-dg.patch](tarball://root/attachments/some-uuid/ticket7983/trac_7983-major_index_and_other_tableau_fixes-dg.patch) by darij created at 2013-06-17 16:43:39\n\nTypo in a docstring fixed.",
     "created_at": "2013-06-17T16:43:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
@@ -452,7 +452,7 @@ archive/issue_comments_069721.json:
 }
 ```
 
-Attachment
+Attachment [trac_7983-major_index_and_other_tableau_fixes-dg.patch](tarball://root/attachments/some-uuid/ticket7983/trac_7983-major_index_and_other_tableau_fixes-dg.patch) by darij created at 2013-06-17 16:43:39
 
 Typo in a docstring fixed.
 
@@ -523,7 +523,7 @@ apply trac_7983-major_index_and_other_tableau_fixes-dg.patch trac_7983-review-ts
 archive/issue_comments_069725.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7983-review-ts.patch](tarball://root/attachments/some-uuid/ticket7983/trac_7983-review-ts.patch) by tscrim created at 2013-07-19 13:14:06",
     "created_at": "2013-07-19T13:14:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
@@ -532,7 +532,7 @@ archive/issue_comments_069725.json:
 }
 ```
 
-Attachment
+Attachment [trac_7983-review-ts.patch](tarball://root/attachments/some-uuid/ticket7983/trac_7983-review-ts.patch) by tscrim created at 2013-07-19 13:14:06
 
 
 

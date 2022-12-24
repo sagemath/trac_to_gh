@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5231
 archive/issue_comments_040093.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5231-lazy-relative-fields.patch](tarball://root/attachments/some-uuid/ticket5231/trac_5231-lazy-relative-fields.patch) by ncalexan created at 2009-02-11 00:37:48",
     "created_at": "2009-02-11T00:37:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5231",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_040093.json:
 }
 ```
 
-Attachment
+Attachment [trac_5231-lazy-relative-fields.patch](tarball://root/attachments/some-uuid/ticket5231/trac_5231-lazy-relative-fields.patch) by ncalexan created at 2009-02-11 00:37:48
 
 
 
@@ -77,7 +77,7 @@ I hope to have some time to look at this (and hopefully review it) this evening 
 archive/issue_comments_040095.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5231-lazy-relative-fields-updated.patch](tarball://root/attachments/some-uuid/ticket5231/trac_5231-lazy-relative-fields-updated.patch) by ncalexan created at 2009-02-11 05:32:04",
     "created_at": "2009-02-11T05:32:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5231",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_040095.json:
 }
 ```
 
-Attachment
+Attachment [trac_5231-lazy-relative-fields-updated.patch](tarball://root/attachments/some-uuid/ticket5231/trac_5231-lazy-relative-fields-updated.patch) by ncalexan created at 2009-02-11 05:32:04
 
 
 

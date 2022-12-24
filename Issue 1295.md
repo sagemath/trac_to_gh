@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1295
 archive/issue_comments_008132.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [butterfly-graph.patch](tarball://root/attachments/some-uuid/ticket1295/butterfly-graph.patch) by jason created at 2007-11-28 00:09:01",
     "created_at": "2007-11-28T00:09:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1295",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_008132.json:
 }
 ```
 
-Attachment
+Attachment [butterfly-graph.patch](tarball://root/attachments/some-uuid/ticket1295/butterfly-graph.patch) by jason created at 2007-11-28 00:09:01
 
 
 
@@ -73,7 +73,7 @@ apply this instead of butterfly-graph.patch
 archive/issue_comments_008134.json:
 ```json
 {
-    "body": "Attachment\n\nbutterfly-graph-2.patch adds a very fast bit-fiddling method from Robert Miller which works nicely when n<=30.",
+    "body": "Attachment [butterfly-graph-2.patch](tarball://root/attachments/some-uuid/ticket1295/butterfly-graph-2.patch) by jason created at 2007-11-28 06:44:21\n\nbutterfly-graph-2.patch adds a very fast bit-fiddling method from Robert Miller which works nicely when n<=30.",
     "created_at": "2007-11-28T06:44:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1295",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_008134.json:
 }
 ```
 
-Attachment
+Attachment [butterfly-graph-2.patch](tarball://root/attachments/some-uuid/ticket1295/butterfly-graph-2.patch) by jason created at 2007-11-28 06:44:21
 
 butterfly-graph-2.patch adds a very fast bit-fiddling method from Robert Miller which works nicely when n<=30.
 

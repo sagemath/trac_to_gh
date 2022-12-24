@@ -106,7 +106,7 @@ This ticket means that the method matrix() which is described as: "The matrix of
 archive/issue_comments_001344.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [K_matrix.patch](tarball://root/attachments/some-uuid/ticket282/K_matrix.patch) by malb created at 2007-10-20 22:46:32",
     "created_at": "2007-10-20T22:46:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/282",
     "type": "issue_comment",
@@ -115,7 +115,7 @@ archive/issue_comments_001344.json:
 }
 ```
 
-Attachment
+Attachment [K_matrix.patch](tarball://root/attachments/some-uuid/ticket282/K_matrix.patch) by malb created at 2007-10-20 22:46:32
 
 
 

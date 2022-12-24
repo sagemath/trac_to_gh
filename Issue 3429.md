@@ -146,7 +146,7 @@ Merged in Sage 3.0.4.alpha1
 archive/issue_comments_024170.json:
 ```json
 {
-    "body": "Attachment\n\nFix the new naming convention (include files and libraries) for linbox-1.1.6rc0",
+    "body": "Attachment [update_new_linbox_interface.patch](tarball://root/attachments/some-uuid/ticket3429/update_new_linbox_interface.patch) by cpernet created at 2008-06-27 21:14:54\n\nFix the new naming convention (include files and libraries) for linbox-1.1.6rc0",
     "created_at": "2008-06-27T21:14:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3429",
     "type": "issue_comment",
@@ -155,7 +155,7 @@ archive/issue_comments_024170.json:
 }
 ```
 
-Attachment
+Attachment [update_new_linbox_interface.patch](tarball://root/attachments/some-uuid/ticket3429/update_new_linbox_interface.patch) by cpernet created at 2008-06-27 21:14:54
 
 Fix the new naming convention (include files and libraries) for linbox-1.1.6rc0
 

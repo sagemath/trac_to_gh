@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4575
 archive/issue_comments_034276.json:
 ```json
 {
-    "body": "Attachment\n\nREFEREE REPORT:\n\nPositive review.  Code looks solid and the result is really pretty to look at. \n\n1. Line 945 contains a trivial typo:\n\n```\n935\t    Print a nestet list as a html table. \n```\n\n\n2. The patch isn't a mercurial patch, so... :-(",
+    "body": "Attachment [trac_4575.patch](tarball://root/attachments/some-uuid/ticket4575/trac_4575.patch) by was created at 2008-11-28 06:13:06\n\nREFEREE REPORT:\n\nPositive review.  Code looks solid and the result is really pretty to look at. \n\n1. Line 945 contains a trivial typo:\n\n```\n935\t    Print a nestet list as a html table. \n```\n\n\n2. The patch isn't a mercurial patch, so... :-(",
     "created_at": "2008-11-28T06:13:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4575",
     "type": "issue_comment",
@@ -43,7 +43,7 @@ archive/issue_comments_034276.json:
 }
 ```
 
-Attachment
+Attachment [trac_4575.patch](tarball://root/attachments/some-uuid/ticket4575/trac_4575.patch) by was created at 2008-11-28 06:13:06
 
 REFEREE REPORT:
 
@@ -172,7 +172,7 @@ Michael
 archive/issue_comments_034282.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4575-taketwo.patch](tarball://root/attachments/some-uuid/ticket4575/trac_4575-taketwo.patch) by mhansen created at 2008-11-29 18:39:36",
     "created_at": "2008-11-29T18:39:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4575",
     "type": "issue_comment",
@@ -181,7 +181,7 @@ archive/issue_comments_034282.json:
 }
 ```
 
-Attachment
+Attachment [trac_4575-taketwo.patch](tarball://root/attachments/some-uuid/ticket4575/trac_4575-taketwo.patch) by mhansen created at 2008-11-29 18:39:36
 
 
 
@@ -607,7 +607,7 @@ contains all previous patches
 archive/issue_comments_034296.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:15 jason]:\n> More comments:\n> \n>  * It would be simpler to have the row classes use itertools.cycle, instead of the modular arithmetic (smaller code size, anyway, and standard python tools)\n>  * It would be fantastic to be able to easily specify styles, like borders, background colors, heading rows, etc.\n> \n> and again, the call to latex should be replaced with a call to show() after #5836 is applied.\n\nI attached a new patch, which needs on #5836 to be applied. The command is now called html.table(). itertools.cycle is used, there is a option to use the first row as a heading,\nstrings are put into the table cells unmodified and also graphic objects are placed into\nthe table correctly.\n\nIt was not possible to just use show() unmodified because this results in nested notebook\ncells which render the notebook unusable.",
+    "body": "Attachment [table.patch](tarball://root/attachments/some-uuid/ticket4575/table.patch) by whuss created at 2009-04-21 14:31:39\n\nReplying to [comment:15 jason]:\n> More comments:\n> \n>  * It would be simpler to have the row classes use itertools.cycle, instead of the modular arithmetic (smaller code size, anyway, and standard python tools)\n>  * It would be fantastic to be able to easily specify styles, like borders, background colors, heading rows, etc.\n> \n> and again, the call to latex should be replaced with a call to show() after #5836 is applied.\n\nI attached a new patch, which needs on #5836 to be applied. The command is now called html.table(). itertools.cycle is used, there is a option to use the first row as a heading,\nstrings are put into the table cells unmodified and also graphic objects are placed into\nthe table correctly.\n\nIt was not possible to just use show() unmodified because this results in nested notebook\ncells which render the notebook unusable.",
     "created_at": "2009-04-21T14:31:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4575",
     "type": "issue_comment",
@@ -616,7 +616,7 @@ archive/issue_comments_034296.json:
 }
 ```
 
-Attachment
+Attachment [table.patch](tarball://root/attachments/some-uuid/ticket4575/table.patch) by whuss created at 2009-04-21 14:31:39
 
 Replying to [comment:15 jason]:
 > More comments:
@@ -700,7 +700,7 @@ apply on top of previous patch
 archive/issue_comments_034300.json:
 ```json
 {
-    "body": "Attachment\n\nThe referee patch contains slight doctest fixes so that doctests pass (there were some issues with the latex spacing).",
+    "body": "Attachment [trac_4575-referee.patch](tarball://root/attachments/some-uuid/ticket4575/trac_4575-referee.patch) by jason created at 2009-05-30 07:06:47\n\nThe referee patch contains slight doctest fixes so that doctests pass (there were some issues with the latex spacing).",
     "created_at": "2009-05-30T07:06:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4575",
     "type": "issue_comment",
@@ -709,7 +709,7 @@ archive/issue_comments_034300.json:
 }
 ```
 
-Attachment
+Attachment [trac_4575-referee.patch](tarball://root/attachments/some-uuid/ticket4575/trac_4575-referee.patch) by jason created at 2009-05-30 07:06:47
 
 The referee patch contains slight doctest fixes so that doctests pass (there were some issues with the latex spacing).
 
@@ -797,7 +797,7 @@ Can someone upload a screenshot that shows an example of a nicely formatted HTML
 archive/issue_comments_034305.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [html_table.png](tarball://root/attachments/some-uuid/ticket4575/html_table.png) by whuss created at 2009-06-04 14:54:50",
     "created_at": "2009-06-04T14:54:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4575",
     "type": "issue_comment",
@@ -806,7 +806,7 @@ archive/issue_comments_034305.json:
 }
 ```
 
-Attachment
+Attachment [html_table.png](tarball://root/attachments/some-uuid/ticket4575/html_table.png) by whuss created at 2009-06-04 14:54:50
 
 
 
@@ -815,7 +815,7 @@ Attachment
 archive/issue_comments_034306.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:22 mvngu]:\n> Can someone upload a screenshot that shows an example of a nicely formatted HTML table. Code sample would be good as well, if relevant. I plan to showcase this ticket in the release tour, and having a visual is worth a thousand words.\n\nThe first picture is produced by:\n\n\n```\nsage: functions = [sin(x), cos(x), tan(x), acos(x)]\nsage: t = [[f, taylor(f, x, 0, 10)] for f in functions]\nsage: html.table([[\"Function\", \"Series\"]] + t, header = True)\n```\n\n\nIt is also possible to put graphic objects into the table:\n\n\n```\nsage: f = 1/x*sin(x)\nsage: t = [[\"Function\", \"Plot\"],[f, plot(f, x, -4*pi, 4*pi)]]\nsage: html.table(t, header = True)\n```\n\n\nI hope this helps.",
+    "body": "Attachment [html_table1.png](tarball://root/attachments/some-uuid/ticket4575/html_table1.png) by whuss created at 2009-06-04 14:58:35\n\nReplying to [comment:22 mvngu]:\n> Can someone upload a screenshot that shows an example of a nicely formatted HTML table. Code sample would be good as well, if relevant. I plan to showcase this ticket in the release tour, and having a visual is worth a thousand words.\n\nThe first picture is produced by:\n\n\n```\nsage: functions = [sin(x), cos(x), tan(x), acos(x)]\nsage: t = [[f, taylor(f, x, 0, 10)] for f in functions]\nsage: html.table([[\"Function\", \"Series\"]] + t, header = True)\n```\n\n\nIt is also possible to put graphic objects into the table:\n\n\n```\nsage: f = 1/x*sin(x)\nsage: t = [[\"Function\", \"Plot\"],[f, plot(f, x, -4*pi, 4*pi)]]\nsage: html.table(t, header = True)\n```\n\n\nI hope this helps.",
     "created_at": "2009-06-04T14:58:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4575",
     "type": "issue_comment",
@@ -824,7 +824,7 @@ archive/issue_comments_034306.json:
 }
 ```
 
-Attachment
+Attachment [html_table1.png](tarball://root/attachments/some-uuid/ticket4575/html_table1.png) by whuss created at 2009-06-04 14:58:35
 
 Replying to [comment:22 mvngu]:
 > Can someone upload a screenshot that shows an example of a nicely formatted HTML table. Code sample would be good as well, if relevant. I plan to showcase this ticket in the release tour, and having a visual is worth a thousand words.

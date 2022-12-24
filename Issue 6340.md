@@ -140,7 +140,7 @@ Based on 4.1.1 and #6559
 archive/issue_comments_050609.json:
 ```json
 {
-    "body": "Attachment\n\nDepending on which one is reviewed first, here's a patch on top of #6559.  Should work identically.",
+    "body": "Attachment [trac_6340-var-ns-based-6559.patch](tarball://root/attachments/some-uuid/ticket6340/trac_6340-var-ns-based-6559.patch) by kcrisman created at 2009-09-21 15:16:20\n\nDepending on which one is reviewed first, here's a patch on top of #6559.  Should work identically.",
     "created_at": "2009-09-21T15:16:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6340",
     "type": "issue_comment",
@@ -149,7 +149,7 @@ archive/issue_comments_050609.json:
 }
 ```
 
-Attachment
+Attachment [trac_6340-var-ns-based-6559.patch](tarball://root/attachments/some-uuid/ticket6340/trac_6340-var-ns-based-6559.patch) by kcrisman created at 2009-09-21 15:16:20
 
 Depending on which one is reviewed first, here's a patch on top of #6559.  Should work identically.
 
@@ -304,7 +304,7 @@ Based on 4.1.2.alpha2
 archive/issue_comments_050616.json:
 ```json
 {
-    "body": "Attachment\n\nThis should take care of it, I hope.",
+    "body": "Attachment [trac_6340-var-ns.patch](tarball://root/attachments/some-uuid/ticket6340/trac_6340-var-ns.patch) by kcrisman created at 2009-09-22 19:45:49\n\nThis should take care of it, I hope.",
     "created_at": "2009-09-22T19:45:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6340",
     "type": "issue_comment",
@@ -313,7 +313,7 @@ archive/issue_comments_050616.json:
 }
 ```
 
-Attachment
+Attachment [trac_6340-var-ns.patch](tarball://root/attachments/some-uuid/ticket6340/trac_6340-var-ns.patch) by kcrisman created at 2009-09-22 19:45:49
 
 This should take care of it, I hope.
 
@@ -324,7 +324,7 @@ This should take care of it, I hope.
 archive/issue_comments_050617.json:
 ```json
 {
-    "body": "Attachment\n\nmore doctest fixes",
+    "body": "Attachment [trac_6340-missing_bits.patch](tarball://root/attachments/some-uuid/ticket6340/trac_6340-missing_bits.patch) by burcin created at 2009-09-22 22:42:47\n\nmore doctest fixes",
     "created_at": "2009-09-22T22:42:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6340",
     "type": "issue_comment",
@@ -333,7 +333,7 @@ archive/issue_comments_050617.json:
 }
 ```
 
-Attachment
+Attachment [trac_6340-missing_bits.patch](tarball://root/attachments/some-uuid/ticket6340/trac_6340-missing_bits.patch) by burcin created at 2009-09-22 22:42:47
 
 more doctest fixes
 

@@ -136,7 +136,7 @@ Note that if you take a look at const.pdf, there are still a few long lines.  Th
 archive/issue_comments_015184.json:
 ```json
 {
-    "body": "Attachment\n\nfixed some doctest failures",
+    "body": "Attachment [doc_const_fixes.patch](tarball://root/attachments/some-uuid/ticket2289/doc_const_fixes.patch) by AlexGhitza created at 2008-02-27 04:45:54\n\nfixed some doctest failures",
     "created_at": "2008-02-27T04:45:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2289",
     "type": "issue_comment",
@@ -145,7 +145,7 @@ archive/issue_comments_015184.json:
 }
 ```
 
-Attachment
+Attachment [doc_const_fixes.patch](tarball://root/attachments/some-uuid/ticket2289/doc_const_fixes.patch) by AlexGhitza created at 2008-02-27 04:45:54
 
 fixed some doctest failures
 

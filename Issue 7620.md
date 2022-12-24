@@ -218,7 +218,7 @@ and I think that is how it should be.
 archive/issue_comments_065122.json:
 ```json
 {
-    "body": "Attachment\n\nFixing bugs in the composition order of CompositConstructionFunctor, and adding some doc",
+    "body": "Attachment [7620FunctorCompositionOrder.patch](tarball://root/attachments/some-uuid/ticket7620/7620FunctorCompositionOrder.patch) by SimonKing created at 2009-12-08 13:13:03\n\nFixing bugs in the composition order of CompositConstructionFunctor, and adding some doc",
     "created_at": "2009-12-08T13:13:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7620",
     "type": "issue_comment",
@@ -227,7 +227,7 @@ archive/issue_comments_065122.json:
 }
 ```
 
-Attachment
+Attachment [7620FunctorCompositionOrder.patch](tarball://root/attachments/some-uuid/ticket7620/7620FunctorCompositionOrder.patch) by SimonKing created at 2009-12-08 13:13:03
 
 Fixing bugs in the composition order of CompositConstructionFunctor, and adding some doc
 

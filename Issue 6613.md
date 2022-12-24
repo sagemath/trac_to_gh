@@ -66,7 +66,7 @@ depends on #6393
 archive/issue_comments_054138.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6613-test-case.patch](tarball://root/attachments/some-uuid/ticket6613/trac_6613-test-case.patch) by mvngu created at 2009-07-24 14:39:45",
     "created_at": "2009-07-24T14:39:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6613",
     "type": "issue_comment",
@@ -75,7 +75,7 @@ archive/issue_comments_054138.json:
 }
 ```
 
-Attachment
+Attachment [trac_6613-test-case.patch](tarball://root/attachments/some-uuid/ticket6613/trac_6613-test-case.patch) by mvngu created at 2009-07-24 14:39:45
 
 
 

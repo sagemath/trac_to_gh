@@ -856,7 +856,7 @@ I'll fix that tomorrow.
 archive/issue_comments_091985.json:
 ```json
 {
-    "body": "Attachment\n\nSpkg diff, for review only.",
+    "body": "Attachment [cephes-2.8.p0.diff](tarball://root/attachments/some-uuid/ticket9543/cephes-2.8.p0.diff) by jpflori created at 2013-01-08 14:17:28\n\nSpkg diff, for review only.",
     "created_at": "2013-01-08T14:17:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
@@ -865,7 +865,7 @@ archive/issue_comments_091985.json:
 }
 ```
 
-Attachment
+Attachment [cephes-2.8.p0.diff](tarball://root/attachments/some-uuid/ticket9543/cephes-2.8.p0.diff) by jpflori created at 2013-01-08 14:17:28
 
 Spkg diff, for review only.
 
@@ -1051,7 +1051,7 @@ Resolution: fixed
 archive/issue_comments_091995.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [cephes-2.8.p1.diff](tarball://root/attachments/some-uuid/ticket9543/cephes-2.8.p1.diff) by jdemeyer created at 2013-01-12 08:52:00",
     "created_at": "2013-01-12T08:52:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
@@ -1060,4 +1060,4 @@ archive/issue_comments_091995.json:
 }
 ```
 
-Attachment
+Attachment [cephes-2.8.p1.diff](tarball://root/attachments/some-uuid/ticket9543/cephes-2.8.p1.diff) by jdemeyer created at 2013-01-12 08:52:00

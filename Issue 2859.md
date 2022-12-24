@@ -188,7 +188,7 @@ Arrows are always constructed pointing up in the z direction from the origin, an
 archive/issue_comments_019622.json:
 ```json
 {
-    "body": "Attachment\n\nI put up a new patch with the above explanation above the doctest.",
+    "body": "Attachment [trac-2859-arrow3d.patch](tarball://root/attachments/some-uuid/ticket2859/trac-2859-arrow3d.patch) by jason created at 2008-04-09 08:53:34\n\nI put up a new patch with the above explanation above the doctest.",
     "created_at": "2008-04-09T08:53:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2859",
     "type": "issue_comment",
@@ -197,7 +197,7 @@ archive/issue_comments_019622.json:
 }
 ```
 
-Attachment
+Attachment [trac-2859-arrow3d.patch](tarball://root/attachments/some-uuid/ticket2859/trac-2859-arrow3d.patch) by jason created at 2008-04-09 08:53:34
 
 I put up a new patch with the above explanation above the doctest.
 

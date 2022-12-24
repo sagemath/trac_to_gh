@@ -79,7 +79,7 @@ Changing status from new to needs_review.
 archive/issue_comments_071570.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8140-sturmian-sl.patch](tarball://root/attachments/some-uuid/ticket8140/trac_8140-sturmian-sl.patch) by slabbe created at 2010-02-01 21:01:12",
     "created_at": "2010-02-01T21:01:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8140",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_071570.json:
 }
 ```
 
-Attachment
+Attachment [trac_8140-sturmian-sl.patch](tarball://root/attachments/some-uuid/ticket8140/trac_8140-sturmian-sl.patch) by slabbe created at 2010-02-01 21:01:12
 
 
 
@@ -138,7 +138,7 @@ All tests passed, the code seems good and correct the problem mentionned in this
 archive/issue_comments_071573.json:
 ```json
 {
-    "body": "Attachment\n\nFew minor changes -- I let S\u00e9bastien check if he approves the changes",
+    "body": "Attachment [trac_8140-doc_fixes-abm.patch](tarball://root/attachments/some-uuid/ticket8140/trac_8140-doc_fixes-abm.patch) by abmasse created at 2010-02-03 14:49:19\n\nFew minor changes -- I let S\u00e9bastien check if he approves the changes",
     "created_at": "2010-02-03T14:49:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8140",
     "type": "issue_comment",
@@ -147,7 +147,7 @@ archive/issue_comments_071573.json:
 }
 ```
 
-Attachment
+Attachment [trac_8140-doc_fixes-abm.patch](tarball://root/attachments/some-uuid/ticket8140/trac_8140-doc_fixes-abm.patch) by abmasse created at 2010-02-03 14:49:19
 
 Few minor changes -- I let Sébastien check if he approves the changes
 
@@ -158,7 +158,7 @@ Few minor changes -- I let Sébastien check if he approves the changes
 archive/issue_comments_071574.json:
 ```json
 {
-    "body": "Attachment\n\nApplies over the two precedent patches.",
+    "body": "Attachment [trac_8140_cf-arg-sl.patch](tarball://root/attachments/some-uuid/ticket8140/trac_8140_cf-arg-sl.patch) by slabbe created at 2010-02-04 17:22:49\n\nApplies over the two precedent patches.",
     "created_at": "2010-02-04T17:22:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8140",
     "type": "issue_comment",
@@ -167,7 +167,7 @@ archive/issue_comments_071574.json:
 }
 ```
 
-Attachment
+Attachment [trac_8140_cf-arg-sl.patch](tarball://root/attachments/some-uuid/ticket8140/trac_8140_cf-arg-sl.patch) by slabbe created at 2010-02-04 17:22:49
 
 Applies over the two precedent patches.
 

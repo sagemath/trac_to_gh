@@ -59,7 +59,7 @@ Changing status from new to needs_review.
 archive/issue_comments_095399.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9742-graph-edges-sort.patch](tarball://root/attachments/some-uuid/ticket9742/trac_9742-graph-edges-sort.patch) by rbeezer created at 2010-08-13 17:31:48",
     "created_at": "2010-08-13T17:31:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9742",
     "type": "issue_comment",
@@ -68,7 +68,7 @@ archive/issue_comments_095399.json:
 }
 ```
 
-Attachment
+Attachment [trac_9742-graph-edges-sort.patch](tarball://root/attachments/some-uuid/ticket9742/trac_9742-graph-edges-sort.patch) by rbeezer created at 2010-08-13 17:31:48
 
 
 

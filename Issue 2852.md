@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2852
 archive/issue_comments_019574.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached should be approached with distrust.  It makes a very low-level change to how key events are handled.  Test all keycodes in all browsers before and after applying this patch.",
+    "body": "Attachment [2852-keyfixes.patch](tarball://root/attachments/some-uuid/ticket2852/2852-keyfixes.patch) by boothby created at 2008-04-08 05:40:36\n\nThe attached should be approached with distrust.  It makes a very low-level change to how key events are handled.  Test all keycodes in all browsers before and after applying this patch.",
     "created_at": "2008-04-08T05:40:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2852",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_019574.json:
 }
 ```
 
-Attachment
+Attachment [2852-keyfixes.patch](tarball://root/attachments/some-uuid/ticket2852/2852-keyfixes.patch) by boothby created at 2008-04-08 05:40:36
 
 The attached should be approached with distrust.  It makes a very low-level change to how key events are handled.  Test all keycodes in all browsers before and after applying this patch.
 

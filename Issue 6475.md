@@ -77,7 +77,7 @@ Changes the title of the successful delete page
 archive/issue_comments_052339.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6475-error-delete-data-file.patch](tarball://root/attachments/some-uuid/ticket6475/trac_6475-error-delete-data-file.patch) by timdumol created at 2010-01-19 10:54:49",
     "created_at": "2010-01-19T10:54:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6475",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_052339.json:
 }
 ```
 
-Attachment
+Attachment [trac_6475-error-delete-data-file.patch](tarball://root/attachments/some-uuid/ticket6475/trac_6475-error-delete-data-file.patch) by timdumol created at 2010-01-19 10:54:49
 
 
 

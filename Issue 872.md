@@ -138,7 +138,7 @@ This patch does vastly speed up this particular problem, but I would like somebo
 archive/issue_comments_005373.json:
 ```json
 {
-    "body": "Attachment\n\na potential patch for libfac/charset/csutil.cc",
+    "body": "Attachment [singular-alg_gcd.patch](tarball://root/attachments/some-uuid/ticket872/singular-alg_gcd.patch) by cwitty created at 2007-10-14 16:57:17\n\na potential patch for libfac/charset/csutil.cc",
     "created_at": "2007-10-14T16:57:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/872",
     "type": "issue_comment",
@@ -147,7 +147,7 @@ archive/issue_comments_005373.json:
 }
 ```
 
-Attachment
+Attachment [singular-alg_gcd.patch](tarball://root/attachments/some-uuid/ticket872/singular-alg_gcd.patch) by cwitty created at 2007-10-14 16:57:17
 
 a potential patch for libfac/charset/csutil.cc
 

@@ -576,7 +576,7 @@ Changing status from new to needs_review.
 archive/issue_comments_097392.json:
 ```json
 {
-    "body": "Attachment\n\nTweak flaky test with Maarten Derickx's suggestions",
+    "body": "Attachment [trac_9863-genus_memory_leak_test.patch](tarball://root/attachments/some-uuid/ticket9863/trac_9863-genus_memory_leak_test.patch) by mpatel created at 2010-11-24 10:51:34\n\nTweak flaky test with Maarten Derickx's suggestions",
     "created_at": "2010-11-24T10:51:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9862",
     "type": "issue_comment",
@@ -585,7 +585,7 @@ archive/issue_comments_097392.json:
 }
 ```
 
-Attachment
+Attachment [trac_9863-genus_memory_leak_test.patch](tarball://root/attachments/some-uuid/ticket9863/trac_9863-genus_memory_leak_test.patch) by mpatel created at 2010-11-24 10:51:34
 
 Tweak flaky test with Maarten Derickx's suggestions
 

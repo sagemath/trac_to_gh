@@ -77,7 +77,7 @@ Michael
 archive/issue_comments_044631.json:
 ```json
 {
-    "body": "Attachment\n\nUses Achtung (jQuery library) for notifications instead.",
+    "body": "Attachment [trac_5712-interrupt-notification.patch](tarball://root/attachments/some-uuid/ticket5712/trac_5712-interrupt-notification.patch) by timdumol created at 2010-01-18 04:25:12\n\nUses Achtung (jQuery library) for notifications instead.",
     "created_at": "2010-01-18T04:25:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5712",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_044631.json:
 }
 ```
 
-Attachment
+Attachment [trac_5712-interrupt-notification.patch](tarball://root/attachments/some-uuid/ticket5712/trac_5712-interrupt-notification.patch) by timdumol created at 2010-01-18 04:25:12
 
 Uses Achtung (jQuery library) for notifications instead.
 
@@ -151,7 +151,7 @@ Fixes #7702 and a typo in notebook_lib.js from the previous patch. Apply this pa
 archive/issue_comments_044635.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5712-interrupt-notification.2.patch](tarball://root/attachments/some-uuid/ticket5712/trac_5712-interrupt-notification.2.patch) by timdumol created at 2010-01-18 06:56:05",
     "created_at": "2010-01-18T06:56:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5712",
     "type": "issue_comment",
@@ -160,7 +160,7 @@ archive/issue_comments_044635.json:
 }
 ```
 
-Attachment
+Attachment [trac_5712-interrupt-notification.2.patch](tarball://root/attachments/some-uuid/ticket5712/trac_5712-interrupt-notification.2.patch) by timdumol created at 2010-01-18 06:56:05
 
 
 
@@ -337,7 +337,7 @@ This patch should do it.
 archive/issue_comments_044641.json:
 ```json
 {
-    "body": "Attachment\n\nAdds the requested changes.",
+    "body": "Attachment [trac_5712-interrupt-notification.3.patch](tarball://root/attachments/some-uuid/ticket5712/trac_5712-interrupt-notification.3.patch) by timdumol created at 2010-01-20 12:09:21\n\nAdds the requested changes.",
     "created_at": "2010-01-20T12:09:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5712",
     "type": "issue_comment",
@@ -346,7 +346,7 @@ archive/issue_comments_044641.json:
 }
 ```
 
-Attachment
+Attachment [trac_5712-interrupt-notification.3.patch](tarball://root/attachments/some-uuid/ticket5712/trac_5712-interrupt-notification.3.patch) by timdumol created at 2010-01-20 12:09:21
 
 Adds the requested changes.
 
@@ -357,7 +357,7 @@ Adds the requested changes.
 archive/issue_comments_044642.json:
 ```json
 {
-    "body": "Attachment\n\nSee comment.  Replaces previous.",
+    "body": "Attachment [trac_5712-interrupt-notification.4.patch](tarball://root/attachments/some-uuid/ticket5712/trac_5712-interrupt-notification.4.patch) by mpatel created at 2010-01-21 13:39:39\n\nSee comment.  Replaces previous.",
     "created_at": "2010-01-21T13:39:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5712",
     "type": "issue_comment",
@@ -366,7 +366,7 @@ archive/issue_comments_044642.json:
 }
 ```
 
-Attachment
+Attachment [trac_5712-interrupt-notification.4.patch](tarball://root/attachments/some-uuid/ticket5712/trac_5712-interrupt-notification.4.patch) by mpatel created at 2010-01-21 13:39:39
 
 See comment.  Replaces previous.
 
@@ -395,7 +395,7 @@ Periodically re-attempt to interrupt.  Replaces previous.
 archive/issue_comments_044644.json:
 ```json
 {
-    "body": "Attachment\n\nPlease ignore V4.  V5\n\n* Adds optional callbacks for the [jQuery achtung plug-in's](http://achtung-ui.googlecode.com/) timeout and close events.  See `ui.achtung-mod.js`.  The notebook actually loads `ui.achtung-mod.min.js`, which I made with the [YUI Compressor](http://developer.yahoo.com/yui/compressor/).\n\n* Uses the new callbacks to send additional interrupt requests and update an alert every 5 seconds, until a request succeeds or the user closes the alert.  If the process *is* interrupted, or the user restarts it, or the computation is done, etc., the alert should close itself.\n\nPlease test (and post feedback)!",
+    "body": "Attachment [trac_5712-interrupt-notification.5.patch](tarball://root/attachments/some-uuid/ticket5712/trac_5712-interrupt-notification.5.patch) by mpatel created at 2010-01-22 03:33:09\n\nPlease ignore V4.  V5\n\n* Adds optional callbacks for the [jQuery achtung plug-in's](http://achtung-ui.googlecode.com/) timeout and close events.  See `ui.achtung-mod.js`.  The notebook actually loads `ui.achtung-mod.min.js`, which I made with the [YUI Compressor](http://developer.yahoo.com/yui/compressor/).\n\n* Uses the new callbacks to send additional interrupt requests and update an alert every 5 seconds, until a request succeeds or the user closes the alert.  If the process *is* interrupted, or the user restarts it, or the computation is done, etc., the alert should close itself.\n\nPlease test (and post feedback)!",
     "created_at": "2010-01-22T03:33:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5712",
     "type": "issue_comment",
@@ -404,7 +404,7 @@ archive/issue_comments_044644.json:
 }
 ```
 
-Attachment
+Attachment [trac_5712-interrupt-notification.5.patch](tarball://root/attachments/some-uuid/ticket5712/trac_5712-interrupt-notification.5.patch) by mpatel created at 2010-01-22 03:33:09
 
 Please ignore V4.  V5
 
@@ -439,7 +439,7 @@ Rebased against SageNB 0.7 at #8051.  Replaces previous.
 archive/issue_comments_044646.json:
 ```json
 {
-    "body": "Attachment\n\nV6 is rebased against #8051's SageNB 0.7.",
+    "body": "Attachment [trac_5712-interrupt-notification.6.patch](tarball://root/attachments/some-uuid/ticket5712/trac_5712-interrupt-notification.6.patch) by mpatel created at 2010-01-25 04:40:57\n\nV6 is rebased against #8051's SageNB 0.7.",
     "created_at": "2010-01-25T04:40:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5712",
     "type": "issue_comment",
@@ -448,7 +448,7 @@ archive/issue_comments_044646.json:
 }
 ```
 
-Attachment
+Attachment [trac_5712-interrupt-notification.6.patch](tarball://root/attachments/some-uuid/ticket5712/trac_5712-interrupt-notification.6.patch) by mpatel created at 2010-01-25 04:40:57
 
 V6 is rebased against #8051's SageNB 0.7.
 

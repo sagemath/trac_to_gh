@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8109
 archive/issue_comments_071175.json:
 ```json
 {
-    "body": "Attachment\n\nneeds #7841 (I guess)",
+    "body": "Attachment [trac_8109-lzz_pEX.patch](tarball://root/attachments/some-uuid/ticket8109/trac_8109-lzz_pEX.patch) by ylchapuy created at 2010-01-29 23:27:32\n\nneeds #7841 (I guess)",
     "created_at": "2010-01-29T23:27:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8109",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_071175.json:
 }
 ```
 
-Attachment
+Attachment [trac_8109-lzz_pEX.patch](tarball://root/attachments/some-uuid/ticket8109/trac_8109-lzz_pEX.patch) by ylchapuy created at 2010-01-29 23:27:32
 
 needs #7841 (I guess)
 
@@ -189,7 +189,7 @@ use both patches
 archive/issue_comments_071181.json:
 ```json
 {
-    "body": "Attachment\n\nFinally, this is such a small patch that I add it here.\nWith both patches applied, the default implementation for polynomial ring is now based on NTL, and uses type ZZ or lzz depending on the characteristic (tested against NTL_SP_BOUND).",
+    "body": "Attachment [trac_8109-lzz_pEX-part2.patch](tarball://root/attachments/some-uuid/ticket8109/trac_8109-lzz_pEX-part2.patch) by ylchapuy created at 2010-02-01 20:01:39\n\nFinally, this is such a small patch that I add it here.\nWith both patches applied, the default implementation for polynomial ring is now based on NTL, and uses type ZZ or lzz depending on the characteristic (tested against NTL_SP_BOUND).",
     "created_at": "2010-02-01T20:01:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8109",
     "type": "issue_comment",
@@ -198,7 +198,7 @@ archive/issue_comments_071181.json:
 }
 ```
 
-Attachment
+Attachment [trac_8109-lzz_pEX-part2.patch](tarball://root/attachments/some-uuid/ticket8109/trac_8109-lzz_pEX-part2.patch) by ylchapuy created at 2010-02-01 20:01:39
 
 Finally, this is such a small patch that I add it here.
 With both patches applied, the default implementation for polynomial ring is now based on NTL, and uses type ZZ or lzz depending on the characteristic (tested against NTL_SP_BOUND).
@@ -264,7 +264,7 @@ I see that you changed it to "needs work."  One thing I noticed looking at the p
 archive/issue_comments_071185.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8109-lzz_pEX-part3.patch](tarball://root/attachments/some-uuid/ticket8109/trac_8109-lzz_pEX-part3.patch) by ylchapuy created at 2010-02-10 14:23:22",
     "created_at": "2010-02-10T14:23:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8109",
     "type": "issue_comment",
@@ -273,7 +273,7 @@ archive/issue_comments_071185.json:
 }
 ```
 
-Attachment
+Attachment [trac_8109-lzz_pEX-part3.patch](tarball://root/attachments/some-uuid/ticket8109/trac_8109-lzz_pEX-part3.patch) by ylchapuy created at 2010-02-10 14:23:22
 
 
 
@@ -300,7 +300,7 @@ replacing all previous ones
 archive/issue_comments_071187.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:6 roed]:\n> I see that you changed it to \"needs work.\"  One thing I noticed looking at the patch was that sage/libs/ntl/ntl_lzz_decl.pxd seems generally broken: shouldn't those be zz_p and lzz_p, not zz and lzz?\n\nIt's even worse than that, this file just shouldn't exist :)\nThe last patch replaces all previous ones and should be almost ready for review. I will just check and address the comments made on #7841 before.",
+    "body": "Attachment [trac_8109-lzz_pEX-all_in_one.patch](tarball://root/attachments/some-uuid/ticket8109/trac_8109-lzz_pEX-all_in_one.patch) by ylchapuy created at 2010-02-10 18:41:53\n\nReplying to [comment:6 roed]:\n> I see that you changed it to \"needs work.\"  One thing I noticed looking at the patch was that sage/libs/ntl/ntl_lzz_decl.pxd seems generally broken: shouldn't those be zz_p and lzz_p, not zz and lzz?\n\nIt's even worse than that, this file just shouldn't exist :)\nThe last patch replaces all previous ones and should be almost ready for review. I will just check and address the comments made on #7841 before.",
     "created_at": "2010-02-10T18:41:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8109",
     "type": "issue_comment",
@@ -309,7 +309,7 @@ archive/issue_comments_071187.json:
 }
 ```
 
-Attachment
+Attachment [trac_8109-lzz_pEX-all_in_one.patch](tarball://root/attachments/some-uuid/ticket8109/trac_8109-lzz_pEX-all_in_one.patch) by ylchapuy created at 2010-02-10 18:41:53
 
 Replying to [comment:6 roed]:
 > I see that you changed it to "needs work."  One thing I noticed looking at the patch was that sage/libs/ntl/ntl_lzz_decl.pxd seems generally broken: shouldn't those be zz_p and lzz_p, not zz and lzz?
@@ -324,7 +324,7 @@ The last patch replaces all previous ones and should be almost ready for review.
 archive/issue_comments_071188.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8109-lzz_pEX-copyrights.patch](tarball://root/attachments/some-uuid/ticket8109/trac_8109-lzz_pEX-copyrights.patch) by ylchapuy created at 2010-03-10 11:33:00",
     "created_at": "2010-03-10T11:33:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8109",
     "type": "issue_comment",
@@ -333,7 +333,7 @@ archive/issue_comments_071188.json:
 }
 ```
 
-Attachment
+Attachment [trac_8109-lzz_pEX-copyrights.patch](tarball://root/attachments/some-uuid/ticket8109/trac_8109-lzz_pEX-copyrights.patch) by ylchapuy created at 2010-03-10 11:33:00
 
 
 

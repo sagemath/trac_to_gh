@@ -208,7 +208,7 @@ I just added a patch which lets one specify the location of twistd's PID file: h
 archive/issue_comments_068662.json:
 ```json
 {
-    "body": "Attachment\n\nRunscript starting the Notebook server on Gentoo",
+    "body": "Attachment [sage-notebook-server](tarball://root/attachments/some-uuid/ticket7893/sage-notebook-server) by cschwan created at 2010-10-16 10:49:06\n\nRunscript starting the Notebook server on Gentoo",
     "created_at": "2010-10-16T10:49:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7893",
     "type": "issue_comment",
@@ -217,7 +217,7 @@ archive/issue_comments_068662.json:
 }
 ```
 
-Attachment
+Attachment [sage-notebook-server](tarball://root/attachments/some-uuid/ticket7893/sage-notebook-server) by cschwan created at 2010-10-16 10:49:06
 
 Runscript starting the Notebook server on Gentoo
 
@@ -302,7 +302,7 @@ revised for Sage 5.4; removed "upgrade" command
 archive/issue_comments_068667.json:
 ```json
 {
-    "body": "Attachment\n\nrevised for Sage 5.4; removed \"upgrade\" command",
+    "body": "Attachment [sage-server.zip](tarball://root/attachments/some-uuid/ticket7893/sage-server.zip) by klee created at 2012-12-03 01:30:53\n\nrevised for Sage 5.4; removed \"upgrade\" command",
     "created_at": "2012-12-03T01:30:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7893",
     "type": "issue_comment",
@@ -311,7 +311,7 @@ archive/issue_comments_068667.json:
 }
 ```
 
-Attachment
+Attachment [sage-server.zip](tarball://root/attachments/some-uuid/ticket7893/sage-server.zip) by klee created at 2012-12-03 01:30:53
 
 revised for Sage 5.4; removed "upgrade" command
 

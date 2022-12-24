@@ -60,7 +60,7 @@ Current buggy output.  (I will repost a new picture with the patch).
 archive/issue_comments_041333.json:
 ```json
 {
-    "body": "Attachment\n\nhere's the fix...",
+    "body": "Attachment [t2.png](tarball://root/attachments/some-uuid/ticket5366/t2.png) by ekirkman created at 2009-02-25 05:00:12\n\nhere's the fix...",
     "created_at": "2009-02-25T05:00:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5366",
     "type": "issue_comment",
@@ -69,7 +69,7 @@ archive/issue_comments_041333.json:
 }
 ```
 
-Attachment
+Attachment [t2.png](tarball://root/attachments/some-uuid/ticket5366/t2.png) by ekirkman created at 2009-02-25 05:00:12
 
 here's the fix...
 
@@ -80,7 +80,7 @@ here's the fix...
 archive/issue_comments_041334.json:
 ```json
 {
-    "body": "Attachment\n\nAnd the new plot output...",
+    "body": "Attachment [fixed.png](tarball://root/attachments/some-uuid/ticket5366/fixed.png) by ekirkman created at 2009-02-25 05:00:46\n\nAnd the new plot output...",
     "created_at": "2009-02-25T05:00:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5366",
     "type": "issue_comment",
@@ -89,7 +89,7 @@ archive/issue_comments_041334.json:
 }
 ```
 
-Attachment
+Attachment [fixed.png](tarball://root/attachments/some-uuid/ticket5366/fixed.png) by ekirkman created at 2009-02-25 05:00:46
 
 And the new plot output...
 

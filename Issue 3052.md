@@ -131,7 +131,7 @@ apply to $SAGE_ROOT
 archive/issue_comments_021067.json:
 ```json
 {
-    "body": "Attachment\n\napply to $SAGE_ROOT/spkg/base",
+    "body": "Attachment [trac_3052-textify.patch](tarball://root/attachments/some-uuid/ticket3052/trac_3052-textify.patch) by kini created at 2011-08-11 05:11:41\n\napply to $SAGE_ROOT/spkg/base",
     "created_at": "2011-08-11T05:11:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3052",
     "type": "issue_comment",
@@ -140,7 +140,7 @@ archive/issue_comments_021067.json:
 }
 ```
 
-Attachment
+Attachment [trac_3052-textify.patch](tarball://root/attachments/some-uuid/ticket3052/trac_3052-textify.patch) by kini created at 2011-08-11 05:11:41
 
 apply to $SAGE_ROOT/spkg/base
 
@@ -281,7 +281,7 @@ Resolution: fixed
 archive/issue_comments_021075.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3052-makefile-rebased.patch](tarball://root/attachments/some-uuid/ticket3052/trac_3052-makefile-rebased.patch) by jdemeyer created at 2011-10-06 11:38:40",
     "created_at": "2011-10-06T11:38:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3052",
     "type": "issue_comment",
@@ -290,7 +290,7 @@ archive/issue_comments_021075.json:
 }
 ```
 
-Attachment
+Attachment [trac_3052-makefile-rebased.patch](tarball://root/attachments/some-uuid/ticket3052/trac_3052-makefile-rebased.patch) by jdemeyer created at 2011-10-06 11:38:40
 
 
 

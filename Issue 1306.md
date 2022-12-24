@@ -110,7 +110,7 @@ Changing assignee from mhansen to rlm.
 archive/issue_comments_008217.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [graph_bundles.patch](tarball://root/attachments/some-uuid/ticket1306/graph_bundles.patch) by rlm created at 2008-01-21 03:56:29",
     "created_at": "2008-01-21T03:56:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1306",
     "type": "issue_comment",
@@ -119,7 +119,7 @@ archive/issue_comments_008217.json:
 }
 ```
 
-Attachment
+Attachment [graph_bundles.patch](tarball://root/attachments/some-uuid/ticket1306/graph_bundles.patch) by rlm created at 2008-01-21 03:56:29
 
 
 

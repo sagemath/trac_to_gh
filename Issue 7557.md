@@ -423,7 +423,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_064282.json:
 ```json
 {
-    "body": "Attachment\n\nUse this patch",
+    "body": "Attachment [trac_7557-maxima_complex_number_conversion.2.patch](tarball://root/attachments/some-uuid/ticket7557/trac_7557-maxima_complex_number_conversion.2.patch) by kcrisman created at 2012-12-18 15:02:37\n\nUse this patch",
     "created_at": "2012-12-18T15:02:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7557",
     "type": "issue_comment",
@@ -432,7 +432,7 @@ archive/issue_comments_064282.json:
 }
 ```
 
-Attachment
+Attachment [trac_7557-maxima_complex_number_conversion.2.patch](tarball://root/attachments/some-uuid/ticket7557/trac_7557-maxima_complex_number_conversion.2.patch) by kcrisman created at 2012-12-18 15:02:37
 
 Use this patch
 
@@ -671,7 +671,7 @@ So this might be something that only works with a working abs tol, which I may n
 archive/issue_comments_064292.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7557-fix_doctest_precision.patch](tarball://root/attachments/some-uuid/ticket7557/trac_7557-fix_doctest_precision.patch) by burcin created at 2013-01-11 13:17:31",
     "created_at": "2013-01-11T13:17:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7557",
     "type": "issue_comment",
@@ -680,7 +680,7 @@ archive/issue_comments_064292.json:
 }
 ```
 
-Attachment
+Attachment [trac_7557-fix_doctest_precision.patch](tarball://root/attachments/some-uuid/ticket7557/trac_7557-fix_doctest_precision.patch) by burcin created at 2013-01-11 13:17:31
 
 
 

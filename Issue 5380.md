@@ -43,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5380
 archive/issue_comments_041429.json:
 ```json
 {
-    "body": "Attachment\n\ndiff against previous version of contributors.xml",
+    "body": "Attachment [trac_5380_search-by-username.patch](tarball://root/attachments/some-uuid/ticket5380/trac_5380_search-by-username.patch) by mvngu created at 2009-02-26 03:19:13\n\ndiff against previous version of contributors.xml",
     "created_at": "2009-02-26T03:19:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5380",
     "type": "issue_comment",
@@ -52,7 +52,7 @@ archive/issue_comments_041429.json:
 }
 ```
 
-Attachment
+Attachment [trac_5380_search-by-username.patch](tarball://root/attachments/some-uuid/ticket5380/trac_5380_search-by-username.patch) by mvngu created at 2009-02-26 03:19:13
 
 diff against previous version of contributors.xml
 
@@ -274,7 +274,7 @@ harald
 archive/issue_comments_041436.json:
 ```json
 {
-    "body": "Attachment\n\nRemove Yi Qiang's trac username",
+    "body": "Attachment [trac_5380_remove-yi-username.patch](tarball://root/attachments/some-uuid/ticket5380/trac_5380_remove-yi-username.patch) by mvngu created at 2009-03-16 05:27:38\n\nRemove Yi Qiang's trac username",
     "created_at": "2009-03-16T05:27:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5380",
     "type": "issue_comment",
@@ -283,7 +283,7 @@ archive/issue_comments_041436.json:
 }
 ```
 
-Attachment
+Attachment [trac_5380_remove-yi-username.patch](tarball://root/attachments/some-uuid/ticket5380/trac_5380_remove-yi-username.patch) by mvngu created at 2009-03-16 05:27:38
 
 Remove Yi Qiang's trac username
 
@@ -294,7 +294,7 @@ Remove Yi Qiang's trac username
 archive/issue_comments_041437.json:
 ```json
 {
-    "body": "Attachment\n\nRemove trac usernames of some people",
+    "body": "Attachment [trac_5380_remove-usernames.patch](tarball://root/attachments/some-uuid/ticket5380/trac_5380_remove-usernames.patch) by mvngu created at 2009-03-16 05:58:13\n\nRemove trac usernames of some people",
     "created_at": "2009-03-16T05:58:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5380",
     "type": "issue_comment",
@@ -303,7 +303,7 @@ archive/issue_comments_041437.json:
 }
 ```
 
-Attachment
+Attachment [trac_5380_remove-usernames.patch](tarball://root/attachments/some-uuid/ticket5380/trac_5380_remove-usernames.patch) by mvngu created at 2009-03-16 05:58:13
 
 Remove trac usernames of some people
 
@@ -314,7 +314,7 @@ Remove trac usernames of some people
 archive/issue_comments_041438.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated contributors list",
+    "body": "Attachment [contributors.xml](tarball://root/attachments/some-uuid/ticket5380/contributors.xml) by mvngu created at 2009-03-16 05:59:15\n\nUpdated contributors list",
     "created_at": "2009-03-16T05:59:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5380",
     "type": "issue_comment",
@@ -323,7 +323,7 @@ archive/issue_comments_041438.json:
 }
 ```
 
-Attachment
+Attachment [contributors.xml](tarball://root/attachments/some-uuid/ticket5380/contributors.xml) by mvngu created at 2009-03-16 05:59:15
 
 Updated contributors list
 

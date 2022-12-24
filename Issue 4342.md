@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4342
 archive/issue_comments_031851.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4342.patch](tarball://root/attachments/some-uuid/ticket4342/trac_4342.patch) by anakha created at 2008-10-22 22:48:48",
     "created_at": "2008-10-22T22:48:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_031851.json:
 }
 ```
 
-Attachment
+Attachment [trac_4342.patch](tarball://root/attachments/some-uuid/ticket4342/trac_4342.patch) by anakha created at 2008-10-22 22:48:48
 
 
 
@@ -125,7 +125,7 @@ New patch to pass options around in a better way.  Also now use `@`suboptions ma
 archive/issue_comments_031856.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4342-2.patch](tarball://root/attachments/some-uuid/ticket4342/trac_4342-2.patch) by anakha created at 2008-10-23 21:35:20",
     "created_at": "2008-10-23T21:35:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
@@ -134,7 +134,7 @@ archive/issue_comments_031856.json:
 }
 ```
 
-Attachment
+Attachment [trac_4342-2.patch](tarball://root/attachments/some-uuid/ticket4342/trac_4342-2.patch) by anakha created at 2008-10-23 21:35:20
 
 
 
@@ -192,7 +192,7 @@ For the patch **trac_4342.patch**, here are possible fixes to your documentation
 archive/issue_comments_031858.json:
 ```json
 {
-    "body": "Attachment\n\nmvngu's doc fixes",
+    "body": "Attachment [trac_4342-3.patch](tarball://root/attachments/some-uuid/ticket4342/trac_4342-3.patch) by TimothyClemans created at 2008-11-09 23:26:08\n\nmvngu's doc fixes",
     "created_at": "2008-11-09T23:26:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
@@ -201,7 +201,7 @@ archive/issue_comments_031858.json:
 }
 ```
 
-Attachment
+Attachment [trac_4342-3.patch](tarball://root/attachments/some-uuid/ticket4342/trac_4342-3.patch) by TimothyClemans created at 2008-11-09 23:26:08
 
 mvngu's doc fixes
 
@@ -258,7 +258,7 @@ Mvngu, in the future please upload patches with your doc fixes. Thanks :)
 archive/issue_comments_031860.json:
 ```json
 {
-    "body": "Attachment\n\nI've folded all the patches together and rebased them against plot.py refactoring.  These are in trac_4342.2.patch .\n\nI'll try to give this a proper review sometime this weekend.",
+    "body": "Attachment [trac_4342.2.patch](tarball://root/attachments/some-uuid/ticket4342/trac_4342.2.patch) by mhansen created at 2008-11-28 07:10:53\n\nI've folded all the patches together and rebased them against plot.py refactoring.  These are in trac_4342.2.patch .\n\nI'll try to give this a proper review sometime this weekend.",
     "created_at": "2008-11-28T07:10:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
@@ -267,7 +267,7 @@ archive/issue_comments_031860.json:
 }
 ```
 
-Attachment
+Attachment [trac_4342.2.patch](tarball://root/attachments/some-uuid/ticket4342/trac_4342.2.patch) by mhansen created at 2008-11-28 07:10:53
 
 I've folded all the patches together and rebased them against plot.py refactoring.  These are in trac_4342.2.patch .
 
@@ -372,7 +372,7 @@ Michael
 archive/issue_comments_031864.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4342_v3.patch](tarball://root/attachments/some-uuid/ticket4342/trac_4342_v3.patch) by abergeron created at 2008-12-31 04:26:42",
     "created_at": "2008-12-31T04:26:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
@@ -381,7 +381,7 @@ archive/issue_comments_031864.json:
 }
 ```
 
-Attachment
+Attachment [trac_4342_v3.patch](tarball://root/attachments/some-uuid/ticket4342/trac_4342_v3.patch) by abergeron created at 2008-12-31 04:26:42
 
 
 
@@ -390,7 +390,7 @@ Attachment
 archive/issue_comments_031865.json:
 ```json
 {
-    "body": "Attachment\n\nThe last patch (trac_4342_v3.2.patch) fixes the TypeError problem and add tests and documentation where appropriate (can't believe I missed these).\n\nAs far as I know, there is no way to get the function that's being plotted from the GraphicsPrimitve object (except maybe for some specialized primitives like Circle) because all you have is a matrix of sample points.  So I don't think it is a good way.\n\nAbout the center point, it is already possible to specify a tuple of floats between 0 and 1 that gives the relative coordinates of the legend box.\n\nAnd last, about the design, I kind of copied it from matplotlib where each object is labeled beforehand.  I could always provide an option to specify legend labels in show() and save() but due to the design of Graphics I think this would be shaky at best because the user has now reliable way of knowing the content of a Graphics object.\n\nAnyway if some clever way of overcoming the obstacle(s) above is found then something like what you want could be implemented in a later patch.",
+    "body": "Attachment [trac_4342_v3.2.patch](tarball://root/attachments/some-uuid/ticket4342/trac_4342_v3.2.patch) by abergeron created at 2008-12-31 04:46:15\n\nThe last patch (trac_4342_v3.2.patch) fixes the TypeError problem and add tests and documentation where appropriate (can't believe I missed these).\n\nAs far as I know, there is no way to get the function that's being plotted from the GraphicsPrimitve object (except maybe for some specialized primitives like Circle) because all you have is a matrix of sample points.  So I don't think it is a good way.\n\nAbout the center point, it is already possible to specify a tuple of floats between 0 and 1 that gives the relative coordinates of the legend box.\n\nAnd last, about the design, I kind of copied it from matplotlib where each object is labeled beforehand.  I could always provide an option to specify legend labels in show() and save() but due to the design of Graphics I think this would be shaky at best because the user has now reliable way of knowing the content of a Graphics object.\n\nAnyway if some clever way of overcoming the obstacle(s) above is found then something like what you want could be implemented in a later patch.",
     "created_at": "2008-12-31T04:46:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
@@ -399,7 +399,7 @@ archive/issue_comments_031865.json:
 }
 ```
 
-Attachment
+Attachment [trac_4342_v3.2.patch](tarball://root/attachments/some-uuid/ticket4342/trac_4342_v3.2.patch) by abergeron created at 2008-12-31 04:46:15
 
 The last patch (trac_4342_v3.2.patch) fixes the TypeError problem and add tests and documentation where appropriate (can't believe I missed these).
 
@@ -580,7 +580,7 @@ Michael
 archive/issue_comments_031871.json:
 ```json
 {
-    "body": "Attachment\n\nrebase against 3.3.alpha1",
+    "body": "Attachment [trac_4342_rebase.patch](tarball://root/attachments/some-uuid/ticket4342/trac_4342_rebase.patch) by abergeron created at 2009-01-24 02:38:55\n\nrebase against 3.3.alpha1",
     "created_at": "2009-01-24T02:38:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
@@ -589,7 +589,7 @@ archive/issue_comments_031871.json:
 }
 ```
 
-Attachment
+Attachment [trac_4342_rebase.patch](tarball://root/attachments/some-uuid/ticket4342/trac_4342_rebase.patch) by abergeron created at 2009-01-24 02:38:55
 
 rebase against 3.3.alpha1
 
@@ -999,7 +999,7 @@ Agreed.  Here is a preliminary and very naive rebase - it still needs some work 
 archive/issue_comments_031884.json:
 ```json
 {
-    "body": "Attachment\n\nBased on 4.3",
+    "body": "Attachment [trac_4342-prelim.patch](tarball://root/attachments/some-uuid/ticket4342/trac_4342-prelim.patch) by kcrisman created at 2010-01-04 02:59:03\n\nBased on 4.3",
     "created_at": "2010-01-04T02:59:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
@@ -1008,7 +1008,7 @@ archive/issue_comments_031884.json:
 }
 ```
 
-Attachment
+Attachment [trac_4342-prelim.patch](tarball://root/attachments/some-uuid/ticket4342/trac_4342-prelim.patch) by kcrisman created at 2010-01-04 02:59:03
 
 Based on 4.3
 
@@ -1302,7 +1302,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_031894.json:
 ```json
 {
-    "body": "Attachment\n\nReady for review.  I made legend -> show_legend and that seems to clear up the problems with the `@`suboptions dictionary.  I expect it to be \"needs work\", by the way, but I want extensive testing of this.  Things to watch out for include:\n\n* Whether there are any missing/needed plot3d method removals\n\n* What the defaults should really be for all the legend_options; I don't think they are that good.\n\n* Whether there are any other places where a KeyError might arise.\n\nIncidentally, the rebase wasn't quite as bad as it seemed - the earlier patch for some reason was a \"double patch\" that sometimes occurs, as will be obvious if read the above (which I didn't).",
+    "body": "Attachment [trac_4342-new.patch](tarball://root/attachments/some-uuid/ticket4342/trac_4342-new.patch) by kcrisman created at 2010-05-26 14:11:19\n\nReady for review.  I made legend -> show_legend and that seems to clear up the problems with the `@`suboptions dictionary.  I expect it to be \"needs work\", by the way, but I want extensive testing of this.  Things to watch out for include:\n\n* Whether there are any missing/needed plot3d method removals\n\n* What the defaults should really be for all the legend_options; I don't think they are that good.\n\n* Whether there are any other places where a KeyError might arise.\n\nIncidentally, the rebase wasn't quite as bad as it seemed - the earlier patch for some reason was a \"double patch\" that sometimes occurs, as will be obvious if read the above (which I didn't).",
     "created_at": "2010-05-26T14:11:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
@@ -1311,7 +1311,7 @@ archive/issue_comments_031894.json:
 }
 ```
 
-Attachment
+Attachment [trac_4342-new.patch](tarball://root/attachments/some-uuid/ticket4342/trac_4342-new.patch) by kcrisman created at 2010-05-26 14:11:19
 
 Ready for review.  I made legend -> show_legend and that seems to clear up the problems with the `@`suboptions dictionary.  I expect it to be "needs work", by the way, but I want extensive testing of this.  Things to watch out for include:
 
@@ -1586,7 +1586,7 @@ Positive review.  Good job, everyone!  Sorry this took so long to review!
 archive/issue_comments_031907.json:
 ```json
 {
-    "body": "Attachment\n\napply only this patch; rebased to 4.6.alpha1",
+    "body": "Attachment [trac-4342-rebase-4.6.alpha1.patch](tarball://root/attachments/some-uuid/ticket4342/trac-4342-rebase-4.6.alpha1.patch) by jason created at 2010-09-28 20:07:56\n\napply only this patch; rebased to 4.6.alpha1",
     "created_at": "2010-09-28T20:07:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
@@ -1595,7 +1595,7 @@ archive/issue_comments_031907.json:
 }
 ```
 
-Attachment
+Attachment [trac-4342-rebase-4.6.alpha1.patch](tarball://root/attachments/some-uuid/ticket4342/trac-4342-rebase-4.6.alpha1.patch) by jason created at 2010-09-28 20:07:56
 
 apply only this patch; rebased to 4.6.alpha1
 
@@ -1606,7 +1606,7 @@ apply only this patch; rebased to 4.6.alpha1
 archive/issue_comments_031908.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of previous patches",
+    "body": "Attachment [4342-fix-docs.patch](tarball://root/attachments/some-uuid/ticket4342/4342-fix-docs.patch) by jason created at 2010-09-28 20:08:07\n\napply on top of previous patches",
     "created_at": "2010-09-28T20:08:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
@@ -1615,7 +1615,7 @@ archive/issue_comments_031908.json:
 }
 ```
 
-Attachment
+Attachment [4342-fix-docs.patch](tarball://root/attachments/some-uuid/ticket4342/4342-fix-docs.patch) by jason created at 2010-09-28 20:08:07
 
 apply on top of previous patches
 

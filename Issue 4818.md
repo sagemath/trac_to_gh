@@ -88,7 +88,7 @@ The attached patch fixes the reported bug by special casing the case of 1 or 2 i
 archive/issue_comments_036535.json:
 ```json
 {
-    "body": "Attachment\n\nThis does what it is supposed and has very sensible behaviour for the case of one or two points.",
+    "body": "Attachment [trac_4818.patch](tarball://root/attachments/some-uuid/ticket4818/trac_4818.patch) by jkantor created at 2009-01-23 03:33:54\n\nThis does what it is supposed and has very sensible behaviour for the case of one or two points.",
     "created_at": "2009-01-23T03:33:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4818",
     "type": "issue_comment",
@@ -97,7 +97,7 @@ archive/issue_comments_036535.json:
 }
 ```
 
-Attachment
+Attachment [trac_4818.patch](tarball://root/attachments/some-uuid/ticket4818/trac_4818.patch) by jkantor created at 2009-01-23 03:33:54
 
 This does what it is supposed and has very sensible behaviour for the case of one or two points.
 

@@ -51,7 +51,7 @@ Patch sage-4011_1.patch doesn't seem to resolve the problem.
 archive/issue_comments_028945.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4011.patch](tarball://root/attachments/some-uuid/ticket4011/trac_4011.patch) by mhansen created at 2009-01-24 06:20:35",
     "created_at": "2009-01-24T06:20:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4011",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_028945.json:
 }
 ```
 
-Attachment
+Attachment [trac_4011.patch](tarball://root/attachments/some-uuid/ticket4011/trac_4011.patch) by mhansen created at 2009-01-24 06:20:35
 
 
 
@@ -159,7 +159,7 @@ And if you're modifying the patch anyway, you might fix the typo in the docs in 
 archive/issue_comments_028951.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4135.2.patch](tarball://root/attachments/some-uuid/ticket4011/trac_4135.2.patch) by TimothyClemans created at 2009-03-16 19:58:10",
     "created_at": "2009-03-16T19:58:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4011",
     "type": "issue_comment",
@@ -168,7 +168,7 @@ archive/issue_comments_028951.json:
 }
 ```
 
-Attachment
+Attachment [trac_4135.2.patch](tarball://root/attachments/some-uuid/ticket4011/trac_4135.2.patch) by TimothyClemans created at 2009-03-16 19:58:10
 
 
 
@@ -177,7 +177,7 @@ Attachment
 archive/issue_comments_028952.json:
 ```json
 {
-    "body": "Attachment\n\nApply trac_4011.2.patch",
+    "body": "Attachment [trac_4011.2.patch](tarball://root/attachments/some-uuid/ticket4011/trac_4011.2.patch) by TimothyClemans created at 2009-03-16 19:59:22\n\nApply trac_4011.2.patch",
     "created_at": "2009-03-16T19:59:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4011",
     "type": "issue_comment",
@@ -186,7 +186,7 @@ archive/issue_comments_028952.json:
 }
 ```
 
-Attachment
+Attachment [trac_4011.2.patch](tarball://root/attachments/some-uuid/ticket4011/trac_4011.2.patch) by TimothyClemans created at 2009-03-16 19:59:22
 
 Apply trac_4011.2.patch
 

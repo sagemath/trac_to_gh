@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/360
 archive/issue_comments_001734.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [nfhtbound.m](tarball://root/attachments/some-uuid/ticket360/nfhtbound.m) by mabshoff created at 2007-09-10 02:20:27",
     "created_at": "2007-09-10T02:20:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/360",
     "type": "issue_comment",
@@ -50,7 +50,7 @@ archive/issue_comments_001734.json:
 }
 ```
 
-Attachment
+Attachment [nfhtbound.m](tarball://root/attachments/some-uuid/ticket360/nfhtbound.m) by mabshoff created at 2007-09-10 02:20:27
 
 
 

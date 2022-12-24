@@ -57,7 +57,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4329
 archive/issue_comments_031751.json:
 ```json
 {
-    "body": "Attachment\n\nCode looks good.\nConfirmed that it worked.\nConfirmed that it passes tests.",
+    "body": "Attachment [sage-4329.patch](tarball://root/attachments/some-uuid/ticket4329/sage-4329.patch) by shumow created at 2008-11-15 02:13:05\n\nCode looks good.\nConfirmed that it worked.\nConfirmed that it passes tests.",
     "created_at": "2008-11-15T02:13:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4329",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_031751.json:
 }
 ```
 
-Attachment
+Attachment [sage-4329.patch](tarball://root/attachments/some-uuid/ticket4329/sage-4329.patch) by shumow created at 2008-11-15 02:13:05
 
 Code looks good.
 Confirmed that it worked.

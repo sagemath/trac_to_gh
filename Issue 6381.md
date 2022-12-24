@@ -123,7 +123,7 @@ Applies to 4.0.2
 archive/issue_comments_051081.json:
 ```json
 {
-    "body": "Attachment\n\nPatch fixes the problem.  I wrote a longer comment but it was lost when I added the patch and I'm not going to type it again!",
+    "body": "Attachment [trac_6381.patch](tarball://root/attachments/some-uuid/ticket6381/trac_6381.patch) by cremona created at 2009-06-24 10:34:26\n\nPatch fixes the problem.  I wrote a longer comment but it was lost when I added the patch and I'm not going to type it again!",
     "created_at": "2009-06-24T10:34:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6381",
     "type": "issue_comment",
@@ -132,7 +132,7 @@ archive/issue_comments_051081.json:
 }
 ```
 
-Attachment
+Attachment [trac_6381.patch](tarball://root/attachments/some-uuid/ticket6381/trac_6381.patch) by cremona created at 2009-06-24 10:34:26
 
 Patch fixes the problem.  I wrote a longer comment but it was lost when I added the patch and I'm not going to type it again!
 

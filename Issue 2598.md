@@ -51,7 +51,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2598
 archive/issue_comments_017785.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [zz_gf2_constructor.patch](tarball://root/attachments/some-uuid/ticket2598/zz_gf2_constructor.patch) by mabshoff created at 2008-03-20 03:31:15",
     "created_at": "2008-03-20T03:31:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2598",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_017785.json:
 }
 ```
 
-Attachment
+Attachment [zz_gf2_constructor.patch](tarball://root/attachments/some-uuid/ticket2598/zz_gf2_constructor.patch) by mabshoff created at 2008-03-20 03:31:15
 
 
 

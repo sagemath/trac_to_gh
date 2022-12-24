@@ -84,7 +84,7 @@ Changing status from new to assigned.
 archive/issue_comments_014761.json:
 ```json
 {
-    "body": "Attachment\n\nFix doctest as indicated by William",
+    "body": "Attachment [trac_2228_number_field_ideal_doctest_fix.patch](tarball://root/attachments/some-uuid/ticket2228/trac_2228_number_field_ideal_doctest_fix.patch) by mabshoff created at 2008-02-20 13:46:21\n\nFix doctest as indicated by William",
     "created_at": "2008-02-20T13:46:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2228",
     "type": "issue_comment",
@@ -93,7 +93,7 @@ archive/issue_comments_014761.json:
 }
 ```
 
-Attachment
+Attachment [trac_2228_number_field_ideal_doctest_fix.patch](tarball://root/attachments/some-uuid/ticket2228/trac_2228_number_field_ideal_doctest_fix.patch) by mabshoff created at 2008-02-20 13:46:21
 
 Fix doctest as indicated by William
 

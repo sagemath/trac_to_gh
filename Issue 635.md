@@ -79,7 +79,7 @@ Changing assignee from was to dmharvey.
 archive/issue_comments_003275.json:
 ```json
 {
-    "body": "Attachment\n\nAttached patch fixes the precision problem, but seems to introduce some weird segfault-like issues when running long doctests. I have no idea why this is happening because I'm only touching high-level python code. My guess is that those issues are independent of this one.",
+    "body": "Attachment [patch-635.hg](tarball://root/attachments/some-uuid/ticket635/patch-635.hg) by dmharvey created at 2007-09-20 20:54:30\n\nAttached patch fixes the precision problem, but seems to introduce some weird segfault-like issues when running long doctests. I have no idea why this is happening because I'm only touching high-level python code. My guess is that those issues are independent of this one.",
     "created_at": "2007-09-20T20:54:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/635",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_003275.json:
 }
 ```
 
-Attachment
+Attachment [patch-635.hg](tarball://root/attachments/some-uuid/ticket635/patch-635.hg) by dmharvey created at 2007-09-20 20:54:30
 
 Attached patch fixes the precision problem, but seems to introduce some weird segfault-like issues when running long doctests. I have no idea why this is happening because I'm only touching high-level python code. My guess is that those issues are independent of this one.
 

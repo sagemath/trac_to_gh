@@ -55,7 +55,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8162
 archive/issue_comments_071794.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8162.patch](tarball://root/attachments/some-uuid/ticket8162/8162.patch) by roed created at 2011-11-09 03:42:58",
     "created_at": "2011-11-09T03:42:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8162",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_071794.json:
 }
 ```
 
-Attachment
+Attachment [8162.patch](tarball://root/attachments/some-uuid/ticket8162/8162.patch) by roed created at 2011-11-09 03:42:58
 
 
 
@@ -163,7 +163,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_071800.json:
 ```json
 {
-    "body": "Attachment\n\nI changed the requirement that check=False.\n\nApply only 8162.patch.",
+    "body": "Attachment [8162.2.patch](tarball://root/attachments/some-uuid/ticket8162/8162.2.patch) by roed created at 2011-12-12 15:28:05\n\nI changed the requirement that check=False.\n\nApply only 8162.patch.",
     "created_at": "2011-12-12T15:28:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8162",
     "type": "issue_comment",
@@ -172,7 +172,7 @@ archive/issue_comments_071800.json:
 }
 ```
 
-Attachment
+Attachment [8162.2.patch](tarball://root/attachments/some-uuid/ticket8162/8162.2.patch) by roed created at 2011-12-12 15:28:05
 
 I changed the requirement that check=False.
 
@@ -351,7 +351,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_071809.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:7 roed]:\n> I can't think of a good reason to allow a list, but also no particular reason not to allow it, since lists are a common container for objects in Python.  :-)\nSure, this makes sense.\n\n> As for the check parameter, my interpretation of check=False is that it only accepts input of a particular format in order to minimize the time spent in handling different input formats.  So I think it's completely reasonable for your example to fail when you don't pass in something of the form [(p, k)].\nI mostly agree with you. I think that with `check=False` nothing should be done that could be expensive (things like checking whether a minimal polynomial is actually irreducible). However, I believe that `check` should not have an influence on the interface.\n\nI adapted your patch to only make the check trigger whether we check that `p` is actually a prime. All the other checks are just `isinstance` and `len` checks which come essentially for free.\n\nI looked at some timings and the two versions don't really seem to differ with `q=(p,k)` and `check=False`.\n\nWould this patch be acceptable for you?\n\n[I haven't run full doctests yet, so let me see if the patchbot at least likes it.]",
+    "body": "Attachment [trac_8162.patch](tarball://root/attachments/some-uuid/ticket8162/trac_8162.patch) by saraedum created at 2012-11-19 21:01:31\n\nReplying to [comment:7 roed]:\n> I can't think of a good reason to allow a list, but also no particular reason not to allow it, since lists are a common container for objects in Python.  :-)\nSure, this makes sense.\n\n> As for the check parameter, my interpretation of check=False is that it only accepts input of a particular format in order to minimize the time spent in handling different input formats.  So I think it's completely reasonable for your example to fail when you don't pass in something of the form [(p, k)].\nI mostly agree with you. I think that with `check=False` nothing should be done that could be expensive (things like checking whether a minimal polynomial is actually irreducible). However, I believe that `check` should not have an influence on the interface.\n\nI adapted your patch to only make the check trigger whether we check that `p` is actually a prime. All the other checks are just `isinstance` and `len` checks which come essentially for free.\n\nI looked at some timings and the two versions don't really seem to differ with `q=(p,k)` and `check=False`.\n\nWould this patch be acceptable for you?\n\n[I haven't run full doctests yet, so let me see if the patchbot at least likes it.]",
     "created_at": "2012-11-19T21:01:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8162",
     "type": "issue_comment",
@@ -360,7 +360,7 @@ archive/issue_comments_071809.json:
 }
 ```
 
-Attachment
+Attachment [trac_8162.patch](tarball://root/attachments/some-uuid/ticket8162/trac_8162.patch) by saraedum created at 2012-11-19 21:01:31
 
 Replying to [comment:7 roed]:
 > I can't think of a good reason to allow a list, but also no particular reason not to allow it, since lists are a common container for objects in Python.  :-)

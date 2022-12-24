@@ -82,7 +82,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6421
 archive/issue_comments_051553.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6421-arctan2.patch](tarball://root/attachments/some-uuid/ticket6421/trac_6421-arctan2.patch) by kcrisman created at 2009-06-26 17:16:45",
     "created_at": "2009-06-26T17:16:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6421",
     "type": "issue_comment",
@@ -91,7 +91,7 @@ archive/issue_comments_051553.json:
 }
 ```
 
-Attachment
+Attachment [trac_6421-arctan2.patch](tarball://root/attachments/some-uuid/ticket6421/trac_6421-arctan2.patch) by kcrisman created at 2009-06-26 17:16:45
 
 
 
@@ -165,7 +165,7 @@ Of course, this doesn't fix the question about plotting, but now the failure on 
 archive/issue_comments_051557.json:
 ```json
 {
-    "body": "Attachment\n\nminor doctest fixes in `sage.symbolic.random_tests`",
+    "body": "Attachment [trac_6421-arctan2_doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket6421/trac_6421-arctan2_doctest_fixes.patch) by burcin created at 2009-06-27 16:03:26\n\nminor doctest fixes in `sage.symbolic.random_tests`",
     "created_at": "2009-06-27T16:03:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6421",
     "type": "issue_comment",
@@ -174,7 +174,7 @@ archive/issue_comments_051557.json:
 }
 ```
 
-Attachment
+Attachment [trac_6421-arctan2_doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket6421/trac_6421-arctan2_doctest_fixes.patch) by burcin created at 2009-06-27 16:03:26
 
 minor doctest fixes in `sage.symbolic.random_tests`
 

@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6136
 archive/issue_comments_049001.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [categories-freemodule-6136-nt.patch](tarball://root/attachments/some-uuid/ticket6136/categories-freemodule-6136-nt.patch) by nthiery created at 2009-10-23 23:57:40",
     "created_at": "2009-10-23T23:57:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6136",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_049001.json:
 }
 ```
 
-Attachment
+Attachment [categories-freemodule-6136-nt.patch](tarball://root/attachments/some-uuid/ticket6136/categories-freemodule-6136-nt.patch) by nthiery created at 2009-10-23 23:57:40
 
 
 
@@ -71,7 +71,7 @@ Changing status from new to needs_review.
 archive/issue_comments_049003.json:
 ```json
 {
-    "body": "Attachment\n\nAdds TestSuite.run call, and implements equality for PoorManMap's. Apply only this one.",
+    "body": "Attachment [trac_6136-categories-freemodule-nt.patch](tarball://root/attachments/some-uuid/ticket6136/trac_6136-categories-freemodule-nt.patch) by nthiery created at 2009-11-04 12:32:14\n\nAdds TestSuite.run call, and implements equality for PoorManMap's. Apply only this one.",
     "created_at": "2009-11-04T12:32:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6136",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_049003.json:
 }
 ```
 
-Attachment
+Attachment [trac_6136-categories-freemodule-nt.patch](tarball://root/attachments/some-uuid/ticket6136/trac_6136-categories-freemodule-nt.patch) by nthiery created at 2009-11-04 12:32:14
 
 Adds TestSuite.run call, and implements equality for PoorManMap's. Apply only this one.
 
@@ -127,7 +127,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_049006.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6136-categories-freemodule-nt.2.patch](tarball://root/attachments/some-uuid/ticket6136/trac_6136-categories-freemodule-nt.2.patch) by hivert created at 2009-11-06 15:53:44",
     "created_at": "2009-11-06T15:53:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6136",
     "type": "issue_comment",
@@ -136,7 +136,7 @@ archive/issue_comments_049006.json:
 }
 ```
 
-Attachment
+Attachment [trac_6136-categories-freemodule-nt.2.patch](tarball://root/attachments/some-uuid/ticket6136/trac_6136-categories-freemodule-nt.2.patch) by hivert created at 2009-11-06 15:53:44
 
 
 
@@ -171,7 +171,7 @@ Cheers,
 archive/issue_comments_049008.json:
 ```json
 {
-    "body": "Attachment\n\nCorrect version",
+    "body": "Attachment [trac_6136-categories-freemodule-nt.3.patch](tarball://root/attachments/some-uuid/ticket6136/trac_6136-categories-freemodule-nt.3.patch) by hivert created at 2009-11-06 21:36:53\n\nCorrect version",
     "created_at": "2009-11-06T21:36:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6136",
     "type": "issue_comment",
@@ -180,7 +180,7 @@ archive/issue_comments_049008.json:
 }
 ```
 
-Attachment
+Attachment [trac_6136-categories-freemodule-nt.3.patch](tarball://root/attachments/some-uuid/ticket6136/trac_6136-categories-freemodule-nt.3.patch) by hivert created at 2009-11-06 21:36:53
 
 Correct version
 

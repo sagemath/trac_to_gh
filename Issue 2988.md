@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2988
 archive/issue_comments_020570.json:
 ```json
 {
-    "body": "Attachment\n\nExcellent!",
+    "body": "Attachment [sage-2988.patch](tarball://root/attachments/some-uuid/ticket2988/sage-2988.patch) by boothby created at 2008-04-21 20:29:28\n\nExcellent!",
     "created_at": "2008-04-21T20:29:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2988",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_020570.json:
 }
 ```
 
-Attachment
+Attachment [sage-2988.patch](tarball://root/attachments/some-uuid/ticket2988/sage-2988.patch) by boothby created at 2008-04-21 20:29:28
 
 Excellent!
 
@@ -85,7 +85,7 @@ Michael
 archive/issue_comments_020572.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-2988_rebased.patch](tarball://root/attachments/some-uuid/ticket2988/sage-2988_rebased.patch) by was created at 2008-04-22 04:16:55",
     "created_at": "2008-04-22T04:16:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2988",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_020572.json:
 }
 ```
 
-Attachment
+Attachment [sage-2988_rebased.patch](tarball://root/attachments/some-uuid/ticket2988/sage-2988_rebased.patch) by was created at 2008-04-22 04:16:55
 
 
 

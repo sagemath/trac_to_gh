@@ -43,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9257
 archive/issue_comments_087112.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9257-remove-darcs.patch](tarball://root/attachments/some-uuid/ticket9257/9257-remove-darcs.patch) by robertwb created at 2010-06-21 21:36:15",
     "created_at": "2010-06-21T21:36:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9257",
     "type": "issue_comment",
@@ -52,7 +52,7 @@ archive/issue_comments_087112.json:
 }
 ```
 
-Attachment
+Attachment [9257-remove-darcs.patch](tarball://root/attachments/some-uuid/ticket9257/9257-remove-darcs.patch) by robertwb created at 2010-06-21 21:36:15
 
 
 

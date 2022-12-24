@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1729
 archive/issue_comments_010944.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1729-notebook-login.patch](tarball://root/attachments/some-uuid/ticket1729/1729-notebook-login.patch) by robertwb created at 2008-01-09 06:08:26",
     "created_at": "2008-01-09T06:08:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1729",
     "type": "issue_comment",
@@ -43,7 +43,7 @@ archive/issue_comments_010944.json:
 }
 ```
 
-Attachment
+Attachment [1729-notebook-login.patch](tarball://root/attachments/some-uuid/ticket1729/1729-notebook-login.patch) by robertwb created at 2008-01-09 06:08:26
 
 
 
@@ -88,7 +88,7 @@ Sorry, took me more than 18 seconds to attach the patch.
 archive/issue_comments_010947.json:
 ```json
 {
-    "body": "Attachment\n\nRobert's patch works for me, but adds noise to the log.  Revised patch removes the noise.",
+    "body": "Attachment [1729-notebook-login.2.patch](tarball://root/attachments/some-uuid/ticket1729/1729-notebook-login.2.patch) by boothby created at 2008-01-09 06:30:27\n\nRobert's patch works for me, but adds noise to the log.  Revised patch removes the noise.",
     "created_at": "2008-01-09T06:30:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1729",
     "type": "issue_comment",
@@ -97,7 +97,7 @@ archive/issue_comments_010947.json:
 }
 ```
 
-Attachment
+Attachment [1729-notebook-login.2.patch](tarball://root/attachments/some-uuid/ticket1729/1729-notebook-login.2.patch) by boothby created at 2008-01-09 06:30:27
 
 Robert's patch works for me, but adds noise to the log.  Revised patch removes the noise.
 
@@ -127,7 +127,7 @@ is now broken.
 archive/issue_comments_010949.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [inotebook-fix.patch](tarball://root/attachments/some-uuid/ticket1729/inotebook-fix.patch) by robertwb created at 2008-01-09 07:21:01",
     "created_at": "2008-01-09T07:21:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1729",
     "type": "issue_comment",
@@ -136,7 +136,7 @@ archive/issue_comments_010949.json:
 }
 ```
 
-Attachment
+Attachment [inotebook-fix.patch](tarball://root/attachments/some-uuid/ticket1729/inotebook-fix.patch) by robertwb created at 2008-01-09 07:21:01
 
 
 

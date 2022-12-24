@@ -51,7 +51,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4246
 archive/issue_comments_030870.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac4246-coerce_symbolic_into_polyrings.patch](tarball://root/attachments/some-uuid/ticket4246/trac4246-coerce_symbolic_into_polyrings.patch) by AlexGhitza created at 2008-10-05 21:49:01",
     "created_at": "2008-10-05T21:49:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4246",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_030870.json:
 }
 ```
 
-Attachment
+Attachment [trac4246-coerce_symbolic_into_polyrings.patch](tarball://root/attachments/some-uuid/ticket4246/trac4246-coerce_symbolic_into_polyrings.patch) by AlexGhitza created at 2008-10-05 21:49:01
 
 
 
@@ -166,7 +166,7 @@ Michael
 archive/issue_comments_030874.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac4246-coerce_symbolic_into_polyrings_1.patch](tarball://root/attachments/some-uuid/ticket4246/trac4246-coerce_symbolic_into_polyrings_1.patch) by AlexGhitza created at 2008-11-29 07:27:37",
     "created_at": "2008-11-29T07:27:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4246",
     "type": "issue_comment",
@@ -175,7 +175,7 @@ archive/issue_comments_030874.json:
 }
 ```
 
-Attachment
+Attachment [trac4246-coerce_symbolic_into_polyrings_1.patch](tarball://root/attachments/some-uuid/ticket4246/trac4246-coerce_symbolic_into_polyrings_1.patch) by AlexGhitza created at 2008-11-29 07:27:37
 
 
 

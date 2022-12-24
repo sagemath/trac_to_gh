@@ -51,7 +51,7 @@ Changing status from new to needs_review.
 archive/issue_comments_067529.json:
 ```json
 {
-    "body": "Attachment\n\nThis seems to pass all tests on sage 4.3.5 on a 10.6.2 mac (the only failure was that of the fresh copy of 4.3.5). \n\nLike #8639, this seems like a very very minor change. As far as I can seen, positive review.",
+    "body": "Attachment [trac_7805.patch](tarball://root/attachments/some-uuid/ticket7805/trac_7805.patch) by wdj created at 2010-04-03 06:07:02\n\nThis seems to pass all tests on sage 4.3.5 on a 10.6.2 mac (the only failure was that of the fresh copy of 4.3.5). \n\nLike #8639, this seems like a very very minor change. As far as I can seen, positive review.",
     "created_at": "2010-04-03T06:07:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7805",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_067529.json:
 }
 ```
 
-Attachment
+Attachment [trac_7805.patch](tarball://root/attachments/some-uuid/ticket7805/trac_7805.patch) by wdj created at 2010-04-03 06:07:02
 
 This seems to pass all tests on sage 4.3.5 on a 10.6.2 mac (the only failure was that of the fresh copy of 4.3.5). 
 

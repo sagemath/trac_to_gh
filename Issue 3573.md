@@ -97,7 +97,7 @@ Michael
 archive/issue_comments_025236.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3573-opentick1.patch](tarball://root/attachments/some-uuid/ticket3573/sage-3573-opentick1.patch) by cswiercz created at 2008-08-28 18:27:20",
     "created_at": "2008-08-28T18:27:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3573",
     "type": "issue_comment",
@@ -106,7 +106,7 @@ archive/issue_comments_025236.json:
 }
 ```
 
-Attachment
+Attachment [sage-3573-opentick1.patch](tarball://root/attachments/some-uuid/ticket3573/sage-3573-opentick1.patch) by cswiercz created at 2008-08-28 18:27:20
 
 
 
@@ -115,7 +115,7 @@ Attachment
 archive/issue_comments_025237.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3573-opentick2.patch](tarball://root/attachments/some-uuid/ticket3573/sage-3573-opentick2.patch) by cswiercz created at 2008-08-28 18:27:30",
     "created_at": "2008-08-28T18:27:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3573",
     "type": "issue_comment",
@@ -124,7 +124,7 @@ archive/issue_comments_025237.json:
 }
 ```
 
-Attachment
+Attachment [sage-3573-opentick2.patch](tarball://root/attachments/some-uuid/ticket3573/sage-3573-opentick2.patch) by cswiercz created at 2008-08-28 18:27:30
 
 
 

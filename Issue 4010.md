@@ -67,7 +67,7 @@ Changing assignee from boothby to mhansen.
 archive/issue_comments_028940.json:
 ```json
 {
-    "body": "Attachment\n\nSome code for this is already there except we need to handle the case where prompt returns an empty string (which is the case in Firefox).",
+    "body": "Attachment [trac_4010.patch](tarball://root/attachments/some-uuid/ticket4010/trac_4010.patch) by mhansen created at 2009-01-20 10:50:52\n\nSome code for this is already there except we need to handle the case where prompt returns an empty string (which is the case in Firefox).",
     "created_at": "2009-01-20T10:50:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4010",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_028940.json:
 }
 ```
 
-Attachment
+Attachment [trac_4010.patch](tarball://root/attachments/some-uuid/ticket4010/trac_4010.patch) by mhansen created at 2009-01-20 10:50:52
 
 Some code for this is already there except we need to handle the case where prompt returns an empty string (which is the case in Firefox).
 

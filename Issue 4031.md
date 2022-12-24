@@ -62,7 +62,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4031
 archive/issue_comments_029082.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [add_kwargs.patch](tarball://root/attachments/some-uuid/ticket4031/add_kwargs.patch) by jwmerrill created at 2008-09-01 06:27:23",
     "created_at": "2008-09-01T06:27:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4031",
     "type": "issue_comment",
@@ -71,7 +71,7 @@ archive/issue_comments_029082.json:
 }
 ```
 
-Attachment
+Attachment [add_kwargs.patch](tarball://root/attachments/some-uuid/ticket4031/add_kwargs.patch) by jwmerrill created at 2008-09-01 06:27:23
 
 
 
@@ -170,7 +170,7 @@ Opps :)
 archive/issue_comments_029088.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4031.patch](tarball://root/attachments/some-uuid/ticket4031/trac_4031.patch) by mhansen created at 2008-09-01 22:38:24",
     "created_at": "2008-09-01T22:38:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4031",
     "type": "issue_comment",
@@ -179,7 +179,7 @@ archive/issue_comments_029088.json:
 }
 ```
 
-Attachment
+Attachment [trac_4031.patch](tarball://root/attachments/some-uuid/ticket4031/trac_4031.patch) by mhansen created at 2008-09-01 22:38:24
 
 
 

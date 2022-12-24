@@ -299,7 +299,7 @@ Somehow I managed to remove John. I've put him back!
 archive/issue_comments_100301.json:
 ```json
 {
-    "body": "Attachment\n\nChanges to the configure.ac file which check that sqrt exists in the maths library.",
+    "body": "Attachment [9978-Changes-to-configure.ac.diff](tarball://root/attachments/some-uuid/ticket9978/9978-Changes-to-configure.ac.diff) by drkirkby created at 2011-03-30 16:21:29\n\nChanges to the configure.ac file which check that sqrt exists in the maths library.",
     "created_at": "2011-03-30T16:21:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9977",
     "type": "issue_comment",
@@ -308,7 +308,7 @@ archive/issue_comments_100301.json:
 }
 ```
 
-Attachment
+Attachment [9978-Changes-to-configure.ac.diff](tarball://root/attachments/some-uuid/ticket9978/9978-Changes-to-configure.ac.diff) by drkirkby created at 2011-03-30 16:21:29
 
 Changes to the configure.ac file which check that sqrt exists in the maths library.
 
@@ -337,7 +337,7 @@ New tar file. This does not need reviewing. Changes from prereq-0.7.tar are due 
 archive/issue_comments_100303.json:
 ```json
 {
-    "body": "Attachment\n\nI realised that I had not used Nicolas's exact wording for one of the messages, which was better than my own. Hence I have rebuilt the tar file. I checked again on AIX, and this is what it produced when I temporarily removed the maths library `/usr/lib/libm.a`\n\n\n\n```\nchecking for sqrt in -lm... no\nconfigure: This system has no maths library installed.\nconfigure: On AIX, libm is contained in the bos.adt.libm fileset.\nconfigure: Actually, we recommend to install the complete bos.adt fileset.\nconfigure: This needs to be performed by a system administrator.\nconfigure: error: Exiting, since a maths library was not found.\n ERROR: You do not have all of the prerequisites needed\n to build Sage from source.  See the errors above.\nmake[1]: *** [installed/prereq-0.8] Error 1\nmake[1]: Leaving directory `/home/users/drkirkby/sage-4.7.alpha1/spkg'\n\nreal    0m55.207s\nuser    0m29.541s\nsys     0m10.628s\nError building Sage.\nmake: *** [build] Error 1\n```\n",
+    "body": "Attachment [prereq-0.8.tar](tarball://root/attachments/some-uuid/ticket9978/prereq-0.8.tar) by drkirkby created at 2011-03-30 16:39:32\n\nI realised that I had not used Nicolas's exact wording for one of the messages, which was better than my own. Hence I have rebuilt the tar file. I checked again on AIX, and this is what it produced when I temporarily removed the maths library `/usr/lib/libm.a`\n\n\n\n```\nchecking for sqrt in -lm... no\nconfigure: This system has no maths library installed.\nconfigure: On AIX, libm is contained in the bos.adt.libm fileset.\nconfigure: Actually, we recommend to install the complete bos.adt fileset.\nconfigure: This needs to be performed by a system administrator.\nconfigure: error: Exiting, since a maths library was not found.\n ERROR: You do not have all of the prerequisites needed\n to build Sage from source.  See the errors above.\nmake[1]: *** [installed/prereq-0.8] Error 1\nmake[1]: Leaving directory `/home/users/drkirkby/sage-4.7.alpha1/spkg'\n\nreal    0m55.207s\nuser    0m29.541s\nsys     0m10.628s\nError building Sage.\nmake: *** [build] Error 1\n```\n",
     "created_at": "2011-03-30T16:39:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9977",
     "type": "issue_comment",
@@ -346,7 +346,7 @@ archive/issue_comments_100303.json:
 }
 ```
 
-Attachment
+Attachment [prereq-0.8.tar](tarball://root/attachments/some-uuid/ticket9978/prereq-0.8.tar) by drkirkby created at 2011-03-30 16:39:32
 
 I realised that I had not used Nicolas's exact wording for one of the messages, which was better than my own. Hence I have rebuilt the tar file. I checked again on AIX, and this is what it produced when I temporarily removed the maths library `/usr/lib/libm.a`
 

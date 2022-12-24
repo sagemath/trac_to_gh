@@ -61,7 +61,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7581
 archive/issue_comments_064613.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [singular_prcopyr.patch](tarball://root/attachments/some-uuid/ticket7581/singular_prcopyr.patch) by malb created at 2009-12-02 11:54:28",
     "created_at": "2009-12-02T11:54:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7581",
     "type": "issue_comment",
@@ -70,7 +70,7 @@ archive/issue_comments_064613.json:
 }
 ```
 
-Attachment
+Attachment [singular_prcopyr.patch](tarball://root/attachments/some-uuid/ticket7581/singular_prcopyr.patch) by malb created at 2009-12-02 11:54:28
 
 
 
@@ -474,7 +474,7 @@ Simon
 archive/issue_comments_064626.json:
 ```json
 {
-    "body": "Attachment\n\nnext attempt",
+    "body": "Attachment [singular_prcopyr_no7577.patch](tarball://root/attachments/some-uuid/ticket7581/singular_prcopyr_no7577.patch) by malb created at 2009-12-03 14:40:47\n\nnext attempt",
     "created_at": "2009-12-03T14:40:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7581",
     "type": "issue_comment",
@@ -483,7 +483,7 @@ archive/issue_comments_064626.json:
 }
 ```
 
-Attachment
+Attachment [singular_prcopyr_no7577.patch](tarball://root/attachments/some-uuid/ticket7581/singular_prcopyr_no7577.patch) by malb created at 2009-12-03 14:40:47
 
 next attempt
 

@@ -86,7 +86,7 @@ Changing status from new to needs_review.
 archive/issue_comments_092078.json:
 ```json
 {
-    "body": "Attachment\n\nApply this to the local/bin branch",
+    "body": "Attachment [9553.patch](tarball://root/attachments/some-uuid/ticket9553/9553.patch) by jdemeyer created at 2010-07-23 11:13:46\n\nApply this to the local/bin branch",
     "created_at": "2010-07-23T11:13:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9553",
     "type": "issue_comment",
@@ -95,7 +95,7 @@ archive/issue_comments_092078.json:
 }
 ```
 
-Attachment
+Attachment [9553.patch](tarball://root/attachments/some-uuid/ticket9553/9553.patch) by jdemeyer created at 2010-07-23 11:13:46
 
 Apply this to the local/bin branch
 
@@ -156,7 +156,7 @@ As far as I'm concerned, we could even complete remove the prompt and make -ba a
 archive/issue_comments_092081.json:
 ```json
 {
-    "body": "Attachment\n\n\"use\" --> \"Use\".  scripts repository.  Apply only this patch.",
+    "body": "Attachment [trac_9553-use_the_baforce_message.patch](tarball://root/attachments/some-uuid/ticket9553/trac_9553-use_the_baforce_message.patch) by mpatel created at 2010-08-19 21:49:34\n\n\"use\" --> \"Use\".  scripts repository.  Apply only this patch.",
     "created_at": "2010-08-19T21:49:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9553",
     "type": "issue_comment",
@@ -165,7 +165,7 @@ archive/issue_comments_092081.json:
 }
 ```
 
-Attachment
+Attachment [trac_9553-use_the_baforce_message.patch](tarball://root/attachments/some-uuid/ticket9553/trac_9553-use_the_baforce_message.patch) by mpatel created at 2010-08-19 21:49:34
 
 "use" --> "Use".  scripts repository.  Apply only this patch.
 

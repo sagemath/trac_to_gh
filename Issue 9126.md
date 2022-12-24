@@ -74,7 +74,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9126
 archive/issue_comments_084905.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-9126-arguments.patch](tarball://root/attachments/some-uuid/ticket9126/trac-9126-arguments.patch) by jason created at 2010-06-03 05:12:31",
     "created_at": "2010-06-03T05:12:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9126",
     "type": "issue_comment",
@@ -83,7 +83,7 @@ archive/issue_comments_084905.json:
 }
 ```
 
-Attachment
+Attachment [trac-9126-arguments.patch](tarball://root/attachments/some-uuid/ticket9126/trac-9126-arguments.patch) by jason created at 2010-06-03 05:12:31
 
 
 

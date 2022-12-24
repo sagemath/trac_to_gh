@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5227
 archive/issue_comments_040049.json:
 ```json
 {
-    "body": "Attachment\n\nalphabetize the current devmap",
+    "body": "Attachment [trac_5227-alphabetize.patch](tarball://root/attachments/some-uuid/ticket5227/trac_5227-alphabetize.patch) by mvngu created at 2009-02-10 08:25:57\n\nalphabetize the current devmap",
     "created_at": "2009-02-10T08:25:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5227",
     "type": "issue_comment",
@@ -49,7 +49,7 @@ archive/issue_comments_040049.json:
 }
 ```
 
-Attachment
+Attachment [trac_5227-alphabetize.patch](tarball://root/attachments/some-uuid/ticket5227/trac_5227-alphabetize.patch) by mvngu created at 2009-02-10 08:25:57
 
 alphabetize the current devmap
 
@@ -60,7 +60,7 @@ alphabetize the current devmap
 archive/issue_comments_040050.json:
 ```json
 {
-    "body": "Attachment\n\nadd 14 people to devmap",
+    "body": "Attachment [trac_5227-14-new-people.patch](tarball://root/attachments/some-uuid/ticket5227/trac_5227-14-new-people.patch) by mvngu created at 2009-02-10 08:26:54\n\nadd 14 people to devmap",
     "created_at": "2009-02-10T08:26:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5227",
     "type": "issue_comment",
@@ -69,7 +69,7 @@ archive/issue_comments_040050.json:
 }
 ```
 
-Attachment
+Attachment [trac_5227-14-new-people.patch](tarball://root/attachments/some-uuid/ticket5227/trac_5227-14-new-people.patch) by mvngu created at 2009-02-10 08:26:54
 
 add 14 people to devmap
 
@@ -80,7 +80,7 @@ add 14 people to devmap
 archive/issue_comments_040051.json:
 ```json
 {
-    "body": "Attachment\n\nupdate info for Simon King and Georg S. Weber",
+    "body": "Attachment [trac_5227-update-info-1.patch](tarball://root/attachments/some-uuid/ticket5227/trac_5227-update-info-1.patch) by mvngu created at 2009-02-10 08:27:49\n\nupdate info for Simon King and Georg S. Weber",
     "created_at": "2009-02-10T08:27:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5227",
     "type": "issue_comment",
@@ -89,7 +89,7 @@ archive/issue_comments_040051.json:
 }
 ```
 
-Attachment
+Attachment [trac_5227-update-info-1.patch](tarball://root/attachments/some-uuid/ticket5227/trac_5227-update-info-1.patch) by mvngu created at 2009-02-10 08:27:49
 
 update info for Simon King and Georg S. Weber
 
@@ -100,7 +100,7 @@ update info for Simon King and Georg S. Weber
 archive/issue_comments_040052.json:
 ```json
 {
-    "body": "Attachment\n\nupdate info for Arnaud Bergeron, David Loeffler and Jason Merrill",
+    "body": "Attachment [trac_5227-update-info-2.patch](tarball://root/attachments/some-uuid/ticket5227/trac_5227-update-info-2.patch) by mvngu created at 2009-02-10 08:28:26\n\nupdate info for Arnaud Bergeron, David Loeffler and Jason Merrill",
     "created_at": "2009-02-10T08:28:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5227",
     "type": "issue_comment",
@@ -109,7 +109,7 @@ archive/issue_comments_040052.json:
 }
 ```
 
-Attachment
+Attachment [trac_5227-update-info-2.patch](tarball://root/attachments/some-uuid/ticket5227/trac_5227-update-info-2.patch) by mvngu created at 2009-02-10 08:28:26
 
 update info for Arnaud Bergeron, David Loeffler and Jason Merrill
 
@@ -407,7 +407,7 @@ update information for Georg S. Weber
 archive/issue_comments_040066.json:
 ```json
 {
-    "body": "Attachment\n\nthe updated XML file after applying the attached 5 patches",
+    "body": "Attachment [contributors.xml](tarball://root/attachments/some-uuid/ticket5227/contributors.xml) by mvngu created at 2009-02-17 03:34:58\n\nthe updated XML file after applying the attached 5 patches",
     "created_at": "2009-02-17T03:34:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5227",
     "type": "issue_comment",
@@ -416,7 +416,7 @@ archive/issue_comments_040066.json:
 }
 ```
 
-Attachment
+Attachment [contributors.xml](tarball://root/attachments/some-uuid/ticket5227/contributors.xml) by mvngu created at 2009-02-17 03:34:58
 
 the updated XML file after applying the attached 5 patches
 

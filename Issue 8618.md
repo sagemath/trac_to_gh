@@ -67,7 +67,7 @@ Changing status from new to needs_review.
 archive/issue_comments_078103.json:
 ```json
 {
-    "body": "Attachment\n\nDepends on #8595",
+    "body": "Attachment [trac_8618_is_identity-sl.patch](tarball://root/attachments/some-uuid/ticket8618/trac_8618_is_identity-sl.patch) by slabbe created at 2010-03-31 13:52:06\n\nDepends on #8595",
     "created_at": "2010-03-31T13:52:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8618",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_078103.json:
 }
 ```
 
-Attachment
+Attachment [trac_8618_is_identity-sl.patch](tarball://root/attachments/some-uuid/ticket8618/trac_8618_is_identity-sl.patch) by slabbe created at 2010-03-31 13:52:06
 
 Depends on #8595
 

@@ -57,7 +57,7 @@ Changing status from new to needs_review.
 archive/issue_comments_099134.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9945-part-frac-FpT.patch](tarball://root/attachments/some-uuid/ticket9945/9945-part-frac-FpT.patch) by robertwb created at 2010-09-19 00:11:51",
     "created_at": "2010-09-19T00:11:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9944",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_099134.json:
 }
 ```
 
-Attachment
+Attachment [9945-part-frac-FpT.patch](tarball://root/attachments/some-uuid/ticket9945/9945-part-frac-FpT.patch) by robertwb created at 2010-09-19 00:11:51
 
 
 
@@ -161,7 +161,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_099139.json:
 ```json
 {
-    "body": "Attachment\n\nI was just moving code, but it doesn't hurt to clean it up as I do so (and I was the original author, so the criticism is just :) I removed the TODO, I was thinking about changing the factor command to group \"equal\" roots but that would be too invasive of a change to consider right now.",
+    "body": "Attachment [9945-referee-fixes.patch](tarball://root/attachments/some-uuid/ticket9945/9945-referee-fixes.patch) by robertwb created at 2010-09-21 06:27:34\n\nI was just moving code, but it doesn't hurt to clean it up as I do so (and I was the original author, so the criticism is just :) I removed the TODO, I was thinking about changing the factor command to group \"equal\" roots but that would be too invasive of a change to consider right now.",
     "created_at": "2010-09-21T06:27:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9944",
     "type": "issue_comment",
@@ -170,7 +170,7 @@ archive/issue_comments_099139.json:
 }
 ```
 
-Attachment
+Attachment [9945-referee-fixes.patch](tarball://root/attachments/some-uuid/ticket9945/9945-referee-fixes.patch) by robertwb created at 2010-09-21 06:27:34
 
 I was just moving code, but it doesn't hurt to clean it up as I do so (and I was the original author, so the criticism is just :) I removed the TODO, I was thinking about changing the factor command to group "equal" roots but that would be too invasive of a change to consider right now.
 
@@ -242,7 +242,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_099142.json:
 ```json
 {
-    "body": "Attachment\n\napply only this patch",
+    "body": "Attachment [9945-rebased.patch](tarball://root/attachments/some-uuid/ticket9945/9945-rebased.patch) by robertwb created at 2010-09-22 03:46:00\n\napply only this patch",
     "created_at": "2010-09-22T03:46:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9944",
     "type": "issue_comment",
@@ -251,7 +251,7 @@ archive/issue_comments_099142.json:
 }
 ```
 
-Attachment
+Attachment [9945-rebased.patch](tarball://root/attachments/some-uuid/ticket9945/9945-rebased.patch) by robertwb created at 2010-09-22 03:46:00
 
 apply only this patch
 
@@ -334,7 +334,7 @@ Rebased against #8334 which should be in 4.6.alpha2.  Apply only this patch.
 archive/issue_comments_099147.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached a patch rebased for the queue in [merger-4.6.alpha2](http://sage.math.washington.edu/home/release/sage-4.6.alpha2/merger-4.6.alpha2).",
+    "body": "Attachment [9945-rebased.2.patch](tarball://root/attachments/some-uuid/ticket9945/9945-rebased.2.patch) by mpatel created at 2010-09-29 09:22:46\n\nI've attached a patch rebased for the queue in [merger-4.6.alpha2](http://sage.math.washington.edu/home/release/sage-4.6.alpha2/merger-4.6.alpha2).",
     "created_at": "2010-09-29T09:22:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9944",
     "type": "issue_comment",
@@ -343,7 +343,7 @@ archive/issue_comments_099147.json:
 }
 ```
 
-Attachment
+Attachment [9945-rebased.2.patch](tarball://root/attachments/some-uuid/ticket9945/9945-rebased.2.patch) by mpatel created at 2010-09-29 09:22:46
 
 I've attached a patch rebased for the queue in [merger-4.6.alpha2](http://sage.math.washington.edu/home/release/sage-4.6.alpha2/merger-4.6.alpha2).
 

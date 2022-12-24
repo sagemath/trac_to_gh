@@ -81,7 +81,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5185
 archive/issue_comments_039763.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5185.patch](tarball://root/attachments/some-uuid/ticket5185/5185.patch) by jhpalmieri created at 2009-02-05 04:06:45",
     "created_at": "2009-02-05T04:06:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5185",
     "type": "issue_comment",
@@ -90,7 +90,7 @@ archive/issue_comments_039763.json:
 }
 ```
 
-Attachment
+Attachment [5185.patch](tarball://root/attachments/some-uuid/ticket5185/5185.patch) by jhpalmieri created at 2009-02-05 04:06:45
 
 
 
@@ -277,7 +277,7 @@ Oh, I didn't know that.  Here's a new patch which just deletes the `__nonzero__`
 archive/issue_comments_039773.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5185-new.patch](tarball://root/attachments/some-uuid/ticket5185/5185-new.patch) by jhpalmieri created at 2009-02-10 16:13:53",
     "created_at": "2009-02-10T16:13:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5185",
     "type": "issue_comment",
@@ -286,7 +286,7 @@ archive/issue_comments_039773.json:
 }
 ```
 
-Attachment
+Attachment [5185-new.patch](tarball://root/attachments/some-uuid/ticket5185/5185-new.patch) by jhpalmieri created at 2009-02-10 16:13:53
 
 
 
@@ -313,7 +313,7 @@ archive/issue_comments_039774.json:
 archive/issue_comments_039775.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5185-reviewer.patch](tarball://root/attachments/some-uuid/ticket5185/5185-reviewer.patch) by cwitty created at 2009-02-11 02:26:54",
     "created_at": "2009-02-11T02:26:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5185",
     "type": "issue_comment",
@@ -322,7 +322,7 @@ archive/issue_comments_039775.json:
 }
 ```
 
-Attachment
+Attachment [5185-reviewer.patch](tarball://root/attachments/some-uuid/ticket5185/5185-reviewer.patch) by cwitty created at 2009-02-11 02:26:54
 
 
 

@@ -71,7 +71,7 @@ The reason the above is unfortunately not a Sage bug is that in Maxima bool(...)
 archive/issue_comments_027236.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3829-wester.patch](tarball://root/attachments/some-uuid/ticket3829/trac_3829-wester.patch) by burcin created at 2009-02-08 14:57:39",
     "created_at": "2009-02-08T14:57:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3829",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_027236.json:
 }
 ```
 
-Attachment
+Attachment [trac_3829-wester.patch](tarball://root/attachments/some-uuid/ticket3829/trac_3829-wester.patch) by burcin created at 2009-02-08 14:57:39
 
 
 
@@ -127,7 +127,7 @@ Having `(NO)` in the comment is worse, because the identity is true! What should
 archive/issue_comments_027239.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3829-wester.take2.patch](tarball://root/attachments/some-uuid/ticket3829/trac_3829-wester.take2.patch) by burcin created at 2009-02-09 16:51:49",
     "created_at": "2009-02-09T16:51:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3829",
     "type": "issue_comment",
@@ -136,7 +136,7 @@ archive/issue_comments_027239.json:
 }
 ```
 
-Attachment
+Attachment [trac_3829-wester.take2.patch](tarball://root/attachments/some-uuid/ticket3829/trac_3829-wester.take2.patch) by burcin created at 2009-02-09 16:51:49
 
 
 
@@ -259,7 +259,7 @@ Apply only `trac_3829-rebased.patch`, which is rebased against 4.0.
 archive/issue_comments_027245.json:
 ```json
 {
-    "body": "Attachment\n\nrebased against 4.0",
+    "body": "Attachment [trac_3829-rebased.patch](tarball://root/attachments/some-uuid/ticket3829/trac_3829-rebased.patch) by AlexGhitza created at 2009-05-31 13:46:06\n\nrebased against 4.0",
     "created_at": "2009-05-31T13:46:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3829",
     "type": "issue_comment",
@@ -268,7 +268,7 @@ archive/issue_comments_027245.json:
 }
 ```
 
-Attachment
+Attachment [trac_3829-rebased.patch](tarball://root/attachments/some-uuid/ticket3829/trac_3829-rebased.patch) by AlexGhitza created at 2009-05-31 13:46:06
 
 rebased against 4.0
 

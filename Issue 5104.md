@@ -249,7 +249,7 @@ Michael
 archive/issue_comments_038981.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5104-cimport-dep.patch](tarball://root/attachments/some-uuid/ticket5104/5104-cimport-dep.patch) by robertwb created at 2009-02-17 10:38:23",
     "created_at": "2009-02-17T10:38:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5104",
     "type": "issue_comment",
@@ -258,7 +258,7 @@ archive/issue_comments_038981.json:
 }
 ```
 
-Attachment
+Attachment [5104-cimport-dep.patch](tarball://root/attachments/some-uuid/ticket5104/5104-cimport-dep.patch) by robertwb created at 2009-02-17 10:38:23
 
 
 

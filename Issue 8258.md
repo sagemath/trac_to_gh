@@ -113,7 +113,7 @@ Cheers, Georg
 archive/issue_comments_073080.json:
 ```json
 {
-    "body": "Attachment\n\nUse hashes instead of mtimes to get outdated docs.  Not a patch.",
+    "body": "Attachment [environment.py](tarball://root/attachments/some-uuid/ticket8258/environment.py) by mpatel created at 2010-02-19 07:43:33\n\nUse hashes instead of mtimes to get outdated docs.  Not a patch.",
     "created_at": "2010-02-19T07:43:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8258",
     "type": "issue_comment",
@@ -122,7 +122,7 @@ archive/issue_comments_073080.json:
 }
 ```
 
-Attachment
+Attachment [environment.py](tarball://root/attachments/some-uuid/ticket8258/environment.py) by mpatel created at 2010-02-19 07:43:33
 
 Use hashes instead of mtimes to get outdated docs.  Not a patch.
 

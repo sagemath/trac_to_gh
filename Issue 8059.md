@@ -59,7 +59,7 @@ You also need to apply the patch I am going to upload in a second.
 archive/issue_comments_070506.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [singular_3-0-1-9.patch](tarball://root/attachments/some-uuid/ticket8059/singular_3-0-1-9.patch) by malb created at 2010-01-25 19:07:33",
     "created_at": "2010-01-25T19:07:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8059",
     "type": "issue_comment",
@@ -68,7 +68,7 @@ archive/issue_comments_070506.json:
 }
 ```
 
-Attachment
+Attachment [singular_3-0-1-9.patch](tarball://root/attachments/some-uuid/ticket8059/singular_3-0-1-9.patch) by malb created at 2010-01-25 19:07:33
 
 
 
@@ -1081,7 +1081,7 @@ Fine, I'll take that.  I should be able to do it this weekend.
 archive/issue_comments_070546.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [singular-3-1-1-0.patch](tarball://root/attachments/some-uuid/ticket8059/singular-3-1-1-0.patch) by malb created at 2010-03-05 13:24:20",
     "created_at": "2010-03-05T13:24:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8059",
     "type": "issue_comment",
@@ -1090,7 +1090,7 @@ archive/issue_comments_070546.json:
 }
 ```
 
-Attachment
+Attachment [singular-3-1-1-0.patch](tarball://root/attachments/some-uuid/ticket8059/singular-3-1-1-0.patch) by malb created at 2010-03-05 13:24:20
 
 
 
@@ -1753,7 +1753,7 @@ Based on Martin's singular-3-1-1-3 package, but with improved error checking.
 archive/issue_comments_070566.json:
 ```json
 {
-    "body": "Attachment\n\nI just realised I copied a bit too little of that warning message. The message is about returning reference to temporary memory:\n\n\n```\n../kernel/int64vec.h:51: warning: returning reference to temporary memory\n```\n\n\nThat looks like it could result in segfaults to me. \n\nDave",
+    "body": "Attachment [8059-improved-error-checking.patch](tarball://root/attachments/some-uuid/ticket8059/8059-improved-error-checking.patch) by drkirkby created at 2010-07-11 09:12:10\n\nI just realised I copied a bit too little of that warning message. The message is about returning reference to temporary memory:\n\n\n```\n../kernel/int64vec.h:51: warning: returning reference to temporary memory\n```\n\n\nThat looks like it could result in segfaults to me. \n\nDave",
     "created_at": "2010-07-11T09:12:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8059",
     "type": "issue_comment",
@@ -1762,7 +1762,7 @@ archive/issue_comments_070566.json:
 }
 ```
 
-Attachment
+Attachment [8059-improved-error-checking.patch](tarball://root/attachments/some-uuid/ticket8059/8059-improved-error-checking.patch) by drkirkby created at 2010-07-11 09:12:10
 
 I just realised I copied a bit too little of that warning message. The message is about returning reference to temporary memory:
 
@@ -1783,7 +1783,7 @@ Dave
 archive/issue_comments_070567.json:
 ```json
 {
-    "body": "Attachment\n\nSimplify the building of singular",
+    "body": "Attachment [simplify-singular.patch](tarball://root/attachments/some-uuid/ticket8059/simplify-singular.patch) by fbissey created at 2010-07-11 09:53:26\n\nSimplify the building of singular",
     "created_at": "2010-07-11T09:53:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8059",
     "type": "issue_comment",
@@ -1792,7 +1792,7 @@ archive/issue_comments_070567.json:
 }
 ```
 
-Attachment
+Attachment [simplify-singular.patch](tarball://root/attachments/some-uuid/ticket8059/simplify-singular.patch) by fbissey created at 2010-07-11 09:53:26
 
 Simplify the building of singular
 
@@ -1975,7 +1975,7 @@ Dave
 archive/issue_comments_070574.json:
 ```json
 {
-    "body": "Attachment\n\nfixed many SIGSEGVs",
+    "body": "Attachment [singular-3-1-1-3.patch](tarball://root/attachments/some-uuid/ticket8059/singular-3-1-1-3.patch) by malb created at 2010-07-12 22:41:23\n\nfixed many SIGSEGVs",
     "created_at": "2010-07-12T22:41:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8059",
     "type": "issue_comment",
@@ -1984,7 +1984,7 @@ archive/issue_comments_070574.json:
 }
 ```
 
-Attachment
+Attachment [singular-3-1-1-3.patch](tarball://root/attachments/some-uuid/ticket8059/singular-3-1-1-3.patch) by malb created at 2010-07-12 22:41:23
 
 fixed many SIGSEGVs
 
@@ -2079,7 +2079,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_070577.json:
 ```json
 {
-    "body": "Attachment\n\nThe Singular team cut us a new release which\n\n* passes all doctests on sage.math\n* supports parallel make\n\nThe SPKG is at\n\nhttp://sage.math.washington.edu/home/malb/spkgs/singular-3-1-1-4.spkg",
+    "body": "Attachment [singular-3-1-1-4.patch](tarball://root/attachments/some-uuid/ticket8059/singular-3-1-1-4.patch) by malb created at 2010-07-15 17:12:34\n\nThe Singular team cut us a new release which\n\n* passes all doctests on sage.math\n* supports parallel make\n\nThe SPKG is at\n\nhttp://sage.math.washington.edu/home/malb/spkgs/singular-3-1-1-4.spkg",
     "created_at": "2010-07-15T17:12:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8059",
     "type": "issue_comment",
@@ -2088,7 +2088,7 @@ archive/issue_comments_070577.json:
 }
 ```
 
-Attachment
+Attachment [singular-3-1-1-4.patch](tarball://root/attachments/some-uuid/ticket8059/singular-3-1-1-4.patch) by malb created at 2010-07-15 17:12:34
 
 The Singular team cut us a new release which
 
@@ -3420,7 +3420,7 @@ I think that's right, and I don't think it needs to be rebased.  At least, I've 
 archive/issue_comments_070627.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated commit string.  Use with `singular-3-1-1-4.spkg`.",
+    "body": "Attachment [singular-3-1-1-4.2.patch](tarball://root/attachments/some-uuid/ticket8059/singular-3-1-1-4.2.patch) by mpatel created at 2010-08-08 21:57:20\n\nUpdated commit string.  Use with `singular-3-1-1-4.spkg`.",
     "created_at": "2010-08-08T21:57:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8059",
     "type": "issue_comment",
@@ -3429,7 +3429,7 @@ archive/issue_comments_070627.json:
 }
 ```
 
-Attachment
+Attachment [singular-3-1-1-4.2.patch](tarball://root/attachments/some-uuid/ticket8059/singular-3-1-1-4.2.patch) by mpatel created at 2010-08-08 21:57:20
 
 Updated commit string.  Use with `singular-3-1-1-4.spkg`.
 
@@ -3611,7 +3611,7 @@ ppc as well, probably over the next week end (it takes that much time).
 archive/issue_comments_070633.json:
 ```json
 {
-    "body": "Attachment\n\nRestore serial builds.  SPKG repo patch.",
+    "body": "Attachment [trac_8059_spkg-restore_serial_build.patch](tarball://root/attachments/some-uuid/ticket8059/trac_8059_spkg-restore_serial_build.patch) by mpatel created at 2010-08-11 00:22:35\n\nRestore serial builds.  SPKG repo patch.",
     "created_at": "2010-08-11T00:22:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8059",
     "type": "issue_comment",
@@ -3620,7 +3620,7 @@ archive/issue_comments_070633.json:
 }
 ```
 
-Attachment
+Attachment [trac_8059_spkg-restore_serial_build.patch](tarball://root/attachments/some-uuid/ticket8059/trac_8059_spkg-restore_serial_build.patch) by mpatel created at 2010-08-11 00:22:35
 
 Restore serial builds.  SPKG repo patch.
 

@@ -55,7 +55,7 @@ Applies to 3.4.2
 archive/issue_comments_048113.json:
 ```json
 {
-    "body": "Attachment\n\nThis is just sickening.  I must have spent over 10 hours in the last week documenting this file, resulting in a patch over 2000 lines long, and 100% doctest coverage.  But now I cannot apply it since after the 7 patches on 3 tickets which David warned me about (#5736, #4357 and #5250 all already merged in 4.0alpha0, in that order) I get this mess:\n\n\n```\njohn@ubuntu%sage -hg qpush\napplying trac_6042.patch\npatching file sage/modular/modsym/ambient.py\nHunk #17 FAILED at 800\nHunk #25 FAILED at 1291\nHunk #45 FAILED at 2230\nHunk #60 FAILED at 2829\nHunk #61 FAILED at 2836\nHunk #65 FAILED at 2962\nHunk #71 FAILED at 3195\n7 out of 76 hunks FAILED -- saving rejects to file sage/modular/modsym/ambient.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nErrors during apply, please fix and refresh trac_6042.patch\n```\n\n\nI'm really not sure I can be bothered to mess with this any more.  Is there any system to actually help one merge conflicting patches sensibly?  I have never managed to get things like k3diff to work.\n\nI will at least upload my patch  so that it does not get lost, but I have other things to do.",
+    "body": "Attachment [trac_6042.patch](tarball://root/attachments/some-uuid/ticket6042/trac_6042.patch) by cremona created at 2009-05-16 15:39:20\n\nThis is just sickening.  I must have spent over 10 hours in the last week documenting this file, resulting in a patch over 2000 lines long, and 100% doctest coverage.  But now I cannot apply it since after the 7 patches on 3 tickets which David warned me about (#5736, #4357 and #5250 all already merged in 4.0alpha0, in that order) I get this mess:\n\n\n```\njohn@ubuntu%sage -hg qpush\napplying trac_6042.patch\npatching file sage/modular/modsym/ambient.py\nHunk #17 FAILED at 800\nHunk #25 FAILED at 1291\nHunk #45 FAILED at 2230\nHunk #60 FAILED at 2829\nHunk #61 FAILED at 2836\nHunk #65 FAILED at 2962\nHunk #71 FAILED at 3195\n7 out of 76 hunks FAILED -- saving rejects to file sage/modular/modsym/ambient.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nErrors during apply, please fix and refresh trac_6042.patch\n```\n\n\nI'm really not sure I can be bothered to mess with this any more.  Is there any system to actually help one merge conflicting patches sensibly?  I have never managed to get things like k3diff to work.\n\nI will at least upload my patch  so that it does not get lost, but I have other things to do.",
     "created_at": "2009-05-16T15:39:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6042",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_048113.json:
 }
 ```
 
-Attachment
+Attachment [trac_6042.patch](tarball://root/attachments/some-uuid/ticket6042/trac_6042.patch) by cremona created at 2009-05-16 15:39:20
 
 This is just sickening.  I must have spent over 10 hours in the last week documenting this file, resulting in a patch over 2000 lines long, and 100% doctest coverage.  But now I cannot apply it since after the 7 patches on 3 tickets which David warned me about (#5736, #4357 and #5250 all already merged in 4.0alpha0, in that order) I get this mess:
 
@@ -270,7 +270,7 @@ Of course I would like credit to go to David too, if hg will allow.
 archive/issue_comments_048122.json:
 ```json
 {
-    "body": "Attachment\n\npatch against 4.0.alpha0",
+    "body": "Attachment [trac_6042-rebase.patch](tarball://root/attachments/some-uuid/ticket6042/trac_6042-rebase.patch) by davidloeffler created at 2009-05-18 15:39:24\n\npatch against 4.0.alpha0",
     "created_at": "2009-05-18T15:39:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6042",
     "type": "issue_comment",
@@ -279,7 +279,7 @@ archive/issue_comments_048122.json:
 }
 ```
 
-Attachment
+Attachment [trac_6042-rebase.patch](tarball://root/attachments/some-uuid/ticket6042/trac_6042-rebase.patch) by davidloeffler created at 2009-05-18 15:39:24
 
 patch against 4.0.alpha0
 

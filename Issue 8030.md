@@ -258,7 +258,7 @@ All tests passes including the optional one...
 archive/issue_comments_070148.json:
 ```json
 {
-    "body": "Attachment\n\nThe new implementation does the simplest thing: to just call GAP; and that fixes the problem at hand.The patch also adds a lots of doctests. All tests pass on 4.4.1. Positive review!",
+    "body": "Attachment [trac_8030_stabilizer_bug-nb.patch](tarball://root/attachments/some-uuid/ticket8030/trac_8030_stabilizer_bug-nb.patch) by nthiery created at 2010-05-18 21:30:58\n\nThe new implementation does the simplest thing: to just call GAP; and that fixes the problem at hand.The patch also adds a lots of doctests. All tests pass on 4.4.1. Positive review!",
     "created_at": "2010-05-18T21:30:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8030",
     "type": "issue_comment",
@@ -267,7 +267,7 @@ archive/issue_comments_070148.json:
 }
 ```
 
-Attachment
+Attachment [trac_8030_stabilizer_bug-nb.patch](tarball://root/attachments/some-uuid/ticket8030/trac_8030_stabilizer_bug-nb.patch) by nthiery created at 2010-05-18 21:30:58
 
 The new implementation does the simplest thing: to just call GAP; and that fixes the problem at hand.The patch also adds a lots of doctests. All tests pass on 4.4.1. Positive review!
 
@@ -314,7 +314,7 @@ Fix a trivial typo, and add hg header. Apply only this one.
 archive/issue_comments_070151.json:
 ```json
 {
-    "body": "Attachment\n\nStandalone doctring improvements, reviewer patch",
+    "body": "Attachment [trac_8030-stabilizer_bug-nb.patch](tarball://root/attachments/some-uuid/ticket8030/trac_8030-stabilizer_bug-nb.patch) by rbeezer created at 2010-05-31 03:23:36\n\nStandalone doctring improvements, reviewer patch",
     "created_at": "2010-05-31T03:23:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8030",
     "type": "issue_comment",
@@ -323,7 +323,7 @@ archive/issue_comments_070151.json:
 }
 ```
 
-Attachment
+Attachment [trac_8030-stabilizer_bug-nb.patch](tarball://root/attachments/some-uuid/ticket8030/trac_8030-stabilizer_bug-nb.patch) by rbeezer created at 2010-05-31 03:23:36
 
 Standalone doctring improvements, reviewer patch
 
@@ -334,7 +334,7 @@ Standalone doctring improvements, reviewer patch
 archive/issue_comments_070152.json:
 ```json
 {
-    "body": "Attachment\n\nSomehow I thought this needed review, but obviously didn't look close enough.\n\nIn any event, I made some improvements to the docstring, which I just added.  I'm going to move them to a new ticket, so as to not mess this up.  Sorry for the confusion.\n\nRelease manager - you can remove trac_8030-reviewer-doc-edit.patch - it'll appear elsewhere with a new name.\n\nRob",
+    "body": "Attachment [trac_8030-reviewer-doc-edit.patch](tarball://root/attachments/some-uuid/ticket8030/trac_8030-reviewer-doc-edit.patch) by rbeezer created at 2010-05-31 03:30:06\n\nSomehow I thought this needed review, but obviously didn't look close enough.\n\nIn any event, I made some improvements to the docstring, which I just added.  I'm going to move them to a new ticket, so as to not mess this up.  Sorry for the confusion.\n\nRelease manager - you can remove trac_8030-reviewer-doc-edit.patch - it'll appear elsewhere with a new name.\n\nRob",
     "created_at": "2010-05-31T03:30:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8030",
     "type": "issue_comment",
@@ -343,7 +343,7 @@ archive/issue_comments_070152.json:
 }
 ```
 
-Attachment
+Attachment [trac_8030-reviewer-doc-edit.patch](tarball://root/attachments/some-uuid/ticket8030/trac_8030-reviewer-doc-edit.patch) by rbeezer created at 2010-05-31 03:30:06
 
 Somehow I thought this needed review, but obviously didn't look close enough.
 

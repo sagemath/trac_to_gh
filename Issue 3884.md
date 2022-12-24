@@ -43,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3884
 archive/issue_comments_027711.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch changes the banner printed to something very similar at the startup of Sage.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_3884.patch](tarball://root/attachments/some-uuid/ticket3884/trac_3884.patch) by mabshoff created at 2008-08-22 22:14:26\n\nThis patch changes the banner printed to something very similar at the startup of Sage.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-22T22:14:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3884",
     "type": "issue_comment",
@@ -52,7 +52,7 @@ archive/issue_comments_027711.json:
 }
 ```
 
-Attachment
+Attachment [trac_3884.patch](tarball://root/attachments/some-uuid/ticket3884/trac_3884.patch) by mabshoff created at 2008-08-22 22:14:26
 
 This patch changes the banner printed to something very similar at the startup of Sage.
 

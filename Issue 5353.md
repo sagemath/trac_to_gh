@@ -71,7 +71,7 @@ Currently, in sage.libs.ntl.ntl_GF2X_linkage.pyx celement_xgcd just raises a Not
 archive/issue_comments_041244.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5353.patch](tarball://root/attachments/some-uuid/ticket5353/trac_5353.patch) by mhansen created at 2009-02-24 01:59:05",
     "created_at": "2009-02-24T01:59:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5353",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_041244.json:
 }
 ```
 
-Attachment
+Attachment [trac_5353.patch](tarball://root/attachments/some-uuid/ticket5353/trac_5353.patch) by mhansen created at 2009-02-24 01:59:05
 
 
 

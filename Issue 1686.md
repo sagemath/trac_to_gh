@@ -72,7 +72,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1686
 archive/issue_comments_010712.json:
 ```json
 {
-    "body": "Attachment\n\npatch by William to disable the doctest for now",
+    "body": "Attachment [trac-1686-disable.patch](tarball://root/attachments/some-uuid/ticket1686/trac-1686-disable.patch) by mabshoff created at 2008-01-05 00:13:47\n\npatch by William to disable the doctest for now",
     "created_at": "2008-01-05T00:13:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1686",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_010712.json:
 }
 ```
 
-Attachment
+Attachment [trac-1686-disable.patch](tarball://root/attachments/some-uuid/ticket1686/trac-1686-disable.patch) by mabshoff created at 2008-01-05 00:13:47
 
 patch by William to disable the doctest for now
 

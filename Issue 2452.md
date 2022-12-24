@@ -640,7 +640,7 @@ Thanks.
 archive/issue_comments_016593.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_2452-implements-Dirac-delta-Heaviside-and-Unit-step-functions.patch](tarball://root/attachments/some-uuid/ticket2452/trac_2452-implements-Dirac-delta-Heaviside-and-Unit-step-functions.patch) by gmhossain created at 2009-07-01 00:45:24",
     "created_at": "2009-07-01T00:45:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2452",
     "type": "issue_comment",
@@ -649,7 +649,7 @@ archive/issue_comments_016593.json:
 }
 ```
 
-Attachment
+Attachment [trac_2452-implements-Dirac-delta-Heaviside-and-Unit-step-functions.patch](tarball://root/attachments/some-uuid/ticket2452/trac_2452-implements-Dirac-delta-Heaviside-and-Unit-step-functions.patch) by gmhossain created at 2009-07-01 00:45:24
 
 
 
@@ -735,7 +735,7 @@ fix doctests in random_tests.py
 archive/issue_comments_016597.json:
 ```json
 {
-    "body": "Attachment\n\nThe failing doctests in sage/symbolic/random_tests.py is caused by this ticket. That function constructs a random expression, given all the symbolic functions defined in Sage. Since this patch adds new functions, the probability distribution, hence the result changes.\n\nI attached a small patch to fix these doctests.",
+    "body": "Attachment [trac_2452-doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket2452/trac_2452-doctest_fixes.patch) by burcin created at 2009-07-02 09:58:43\n\nThe failing doctests in sage/symbolic/random_tests.py is caused by this ticket. That function constructs a random expression, given all the symbolic functions defined in Sage. Since this patch adds new functions, the probability distribution, hence the result changes.\n\nI attached a small patch to fix these doctests.",
     "created_at": "2009-07-02T09:58:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2452",
     "type": "issue_comment",
@@ -744,7 +744,7 @@ archive/issue_comments_016597.json:
 }
 ```
 
-Attachment
+Attachment [trac_2452-doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket2452/trac_2452-doctest_fixes.patch) by burcin created at 2009-07-02 09:58:43
 
 The failing doctests in sage/symbolic/random_tests.py is caused by this ticket. That function constructs a random expression, given all the symbolic functions defined in Sage. Since this patch adds new functions, the probability distribution, hence the result changes.
 

@@ -323,7 +323,7 @@ Changing status from new to needs_review.
 archive/issue_comments_084537.json:
 ```json
 {
-    "body": "Attachment\n\nMercurial patch which enables gap to build 64-bit on Solaris 10 and OpenSolaris",
+    "body": "Attachment [64-bit-gap.patch](tarball://root/attachments/some-uuid/ticket9098/64-bit-gap.patch) by drkirkby created at 2010-06-14 21:13:46\n\nMercurial patch which enables gap to build 64-bit on Solaris 10 and OpenSolaris",
     "created_at": "2010-06-14T21:13:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9098",
     "type": "issue_comment",
@@ -332,7 +332,7 @@ archive/issue_comments_084537.json:
 }
 ```
 
-Attachment
+Attachment [64-bit-gap.patch](tarball://root/attachments/some-uuid/ticket9098/64-bit-gap.patch) by drkirkby created at 2010-06-14 21:13:46
 
 Mercurial patch which enables gap to build 64-bit on Solaris 10 and OpenSolaris
 

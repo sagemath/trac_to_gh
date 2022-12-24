@@ -102,7 +102,7 @@ Michael
 archive/issue_comments_034853.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4635.patch](tarball://root/attachments/some-uuid/ticket4635/trac_4635.patch) by mabshoff created at 2008-11-27 04:16:22",
     "created_at": "2008-11-27T04:16:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4635",
     "type": "issue_comment",
@@ -111,7 +111,7 @@ archive/issue_comments_034853.json:
 }
 ```
 
-Attachment
+Attachment [trac_4635.patch](tarball://root/attachments/some-uuid/ticket4635/trac_4635.patch) by mabshoff created at 2008-11-27 04:16:22
 
 
 
@@ -266,7 +266,7 @@ this replaces the old patch
 archive/issue_comments_034861.json:
 ```json
 {
-    "body": "Attachment\n\nHere's a patch.",
+    "body": "Attachment [4635-new.patch](tarball://root/attachments/some-uuid/ticket4635/4635-new.patch) by jhpalmieri created at 2008-11-27 04:27:44\n\nHere's a patch.",
     "created_at": "2008-11-27T04:27:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4635",
     "type": "issue_comment",
@@ -275,7 +275,7 @@ archive/issue_comments_034861.json:
 }
 ```
 
-Attachment
+Attachment [4635-new.patch](tarball://root/attachments/some-uuid/ticket4635/4635-new.patch) by jhpalmieri created at 2008-11-27 04:27:44
 
 Here's a patch.
 

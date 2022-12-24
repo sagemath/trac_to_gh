@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4577
 archive/issue_comments_034319.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4577.patch](tarball://root/attachments/some-uuid/ticket4577/trac_4577.patch) by cwitty created at 2008-11-23 01:13:00",
     "created_at": "2008-11-23T01:13:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4577",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_034319.json:
 }
 ```
 
-Attachment
+Attachment [trac_4577.patch](tarball://root/attachments/some-uuid/ticket4577/trac_4577.patch) by cwitty created at 2008-11-23 01:13:00
 
 
 
@@ -51,7 +51,7 @@ Attachment
 archive/issue_comments_034320.json:
 ```json
 {
-    "body": "Attachment\n\nCode looks reasonable, passes doctests.\n\nApply both patches.",
+    "body": "Attachment [trac_4577_reviewer.patch](tarball://root/attachments/some-uuid/ticket4577/trac_4577_reviewer.patch) by cwitty created at 2008-11-23 01:13:51\n\nCode looks reasonable, passes doctests.\n\nApply both patches.",
     "created_at": "2008-11-23T01:13:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4577",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_034320.json:
 }
 ```
 
-Attachment
+Attachment [trac_4577_reviewer.patch](tarball://root/attachments/some-uuid/ticket4577/trac_4577_reviewer.patch) by cwitty created at 2008-11-23 01:13:51
 
 Code looks reasonable, passes doctests.
 

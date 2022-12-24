@@ -155,7 +155,7 @@ Changing assignee from was to rlm.
 archive/issue_comments_004431.json:
 ```json
 {
-    "body": "Attachment\n\nThis one first, removed quick option from relabel().",
+    "body": "Attachment [trac749_1.patch](tarball://root/attachments/some-uuid/ticket749/trac749_1.patch) by rlm created at 2007-10-27 00:02:02\n\nThis one first, removed quick option from relabel().",
     "created_at": "2007-10-27T00:02:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/749",
     "type": "issue_comment",
@@ -164,7 +164,7 @@ archive/issue_comments_004431.json:
 }
 ```
 
-Attachment
+Attachment [trac749_1.patch](tarball://root/attachments/some-uuid/ticket749/trac749_1.patch) by rlm created at 2007-10-27 00:02:02
 
 This one first, removed quick option from relabel().
 
@@ -193,7 +193,7 @@ This is the main overhaul.
 archive/issue_comments_004433.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac749_2.patch](tarball://root/attachments/some-uuid/ticket749/trac749_2.patch) by rlm created at 2007-10-27 00:14:07",
     "created_at": "2007-10-27T00:14:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/749",
     "type": "issue_comment",
@@ -202,7 +202,7 @@ archive/issue_comments_004433.json:
 }
 ```
 
-Attachment
+Attachment [trac749_2.patch](tarball://root/attachments/some-uuid/ticket749/trac749_2.patch) by rlm created at 2007-10-27 00:14:07
 
 
 

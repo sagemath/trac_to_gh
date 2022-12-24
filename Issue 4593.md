@@ -248,7 +248,7 @@ disables default M2 if avaiable
 archive/issue_comments_034453.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [m2.patch](tarball://root/attachments/some-uuid/ticket4593/m2.patch) by malb created at 2009-01-23 07:40:42",
     "created_at": "2009-01-23T07:40:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4593",
     "type": "issue_comment",
@@ -257,7 +257,7 @@ archive/issue_comments_034453.json:
 }
 ```
 
-Attachment
+Attachment [m2.patch](tarball://root/attachments/some-uuid/ticket4593/m2.patch) by malb created at 2009-01-23 07:40:42
 
 
 

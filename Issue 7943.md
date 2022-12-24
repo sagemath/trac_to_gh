@@ -446,7 +446,7 @@ Updated `makefile`.
 archive/issue_comments_069303.json:
 ```json
 {
-    "body": "Attachment\n\nDiff of `makefile`.",
+    "body": "Attachment [makefile.diff](tarball://root/attachments/some-uuid/ticket7943/makefile.diff) by mpatel created at 2010-03-02 23:03:43\n\nDiff of `makefile`.",
     "created_at": "2010-03-02T23:03:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7943",
     "type": "issue_comment",
@@ -455,7 +455,7 @@ archive/issue_comments_069303.json:
 }
 ```
 
-Attachment
+Attachment [makefile.diff](tarball://root/attachments/some-uuid/ticket7943/makefile.diff) by mpatel created at 2010-03-02 23:03:43
 
 Diff of `makefile`.
 
@@ -606,7 +606,7 @@ Diff of `spkg/install`.
 archive/issue_comments_069309.json:
 ```json
 {
-    "body": "Attachment\n\nRebased vs. 4.3.4.alpha0.  Updated `spkg/install`.",
+    "body": "Attachment [install](tarball://root/attachments/some-uuid/ticket7943/install) by mpatel created at 2010-03-04 07:15:55\n\nRebased vs. 4.3.4.alpha0.  Updated `spkg/install`.",
     "created_at": "2010-03-04T07:15:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7943",
     "type": "issue_comment",
@@ -615,7 +615,7 @@ archive/issue_comments_069309.json:
 }
 ```
 
-Attachment
+Attachment [install](tarball://root/attachments/some-uuid/ticket7943/install) by mpatel created at 2010-03-04 07:15:55
 
 Rebased vs. 4.3.4.alpha0.  Updated `spkg/install`.
 

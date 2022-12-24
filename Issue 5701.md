@@ -49,7 +49,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5701
 archive/issue_comments_044557.json:
 ```json
 {
-    "body": "Attachment\n\nbased on 4.0.a0",
+    "body": "Attachment [trac_5701-guava-extraction.patch](tarball://root/attachments/some-uuid/ticket5701/trac_5701-guava-extraction.patch) by wdj created at 2009-05-20 18:28:08\n\nbased on 4.0.a0",
     "created_at": "2009-05-20T18:28:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5701",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_044557.json:
 }
 ```
 
-Attachment
+Attachment [trac_5701-guava-extraction.patch](tarball://root/attachments/some-uuid/ticket5701/trac_5701-guava-extraction.patch) by wdj created at 2009-05-20 18:28:08
 
 based on 4.0.a0
 
@@ -69,7 +69,7 @@ based on 4.0.a0
 archive/issue_comments_044558.json:
 ```json
 {
-    "body": "Attachment\n\nI have run tests and checked the code here, and everything seems fine, with the following caveat: I did not run tests on a fresh install, i.e. I ran tests on a system with Guava still installed.\n\nI will give this a positive review, pending the tests passing on a system with the right GAP spkg and workspace setup, and  wdj will follow up on #6094.",
+    "body": "Attachment [trac_5701-ref-suggestions.patch](tarball://root/attachments/some-uuid/ticket5701/trac_5701-ref-suggestions.patch) by rlm created at 2009-05-20 18:34:06\n\nI have run tests and checked the code here, and everything seems fine, with the following caveat: I did not run tests on a fresh install, i.e. I ran tests on a system with Guava still installed.\n\nI will give this a positive review, pending the tests passing on a system with the right GAP spkg and workspace setup, and  wdj will follow up on #6094.",
     "created_at": "2009-05-20T18:34:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5701",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_044558.json:
 }
 ```
 
-Attachment
+Attachment [trac_5701-ref-suggestions.patch](tarball://root/attachments/some-uuid/ticket5701/trac_5701-ref-suggestions.patch) by rlm created at 2009-05-20 18:34:06
 
 I have run tests and checked the code here, and everything seems fine, with the following caveat: I did not run tests on a fresh install, i.e. I ran tests on a system with Guava still installed.
 
@@ -91,7 +91,7 @@ I will give this a positive review, pending the tests passing on a system with t
 archive/issue_comments_044559.json:
 ```json
 {
-    "body": "Attachment\n\nto be applied after the other 2 patches (all three can be based on 4.0.rc0)",
+    "body": "Attachment [trac_5701-guava-extraction2.patch](tarball://root/attachments/some-uuid/ticket5701/trac_5701-guava-extraction2.patch) by wdj created at 2009-05-25 23:28:32\n\nto be applied after the other 2 patches (all three can be based on 4.0.rc0)",
     "created_at": "2009-05-25T23:28:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5701",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_044559.json:
 }
 ```
 
-Attachment
+Attachment [trac_5701-guava-extraction2.patch](tarball://root/attachments/some-uuid/ticket5701/trac_5701-guava-extraction2.patch) by wdj created at 2009-05-25 23:28:32
 
 to be applied after the other 2 patches (all three can be based on 4.0.rc0)
 
@@ -147,7 +147,7 @@ Since you are adding an input to `wtdist_gap`, you also need to add a descriptio
 archive/issue_comments_044562.json:
 ```json
 {
-    "body": "Attachment\n\nto be applied after the others.",
+    "body": "Attachment [trac_5701-ref-suggestions2.patch](tarball://root/attachments/some-uuid/ticket5701/trac_5701-ref-suggestions2.patch) by wdj created at 2009-06-05 11:54:57\n\nto be applied after the others.",
     "created_at": "2009-06-05T11:54:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5701",
     "type": "issue_comment",
@@ -156,7 +156,7 @@ archive/issue_comments_044562.json:
 }
 ```
 
-Attachment
+Attachment [trac_5701-ref-suggestions2.patch](tarball://root/attachments/some-uuid/ticket5701/trac_5701-ref-suggestions2.patch) by wdj created at 2009-06-05 11:54:57
 
 to be applied after the others.
 

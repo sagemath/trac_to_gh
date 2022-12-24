@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1734
 archive/issue_comments_010976.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [jmol-translucent.patch](tarball://root/attachments/some-uuid/ticket1734/jmol-translucent.patch) by was created at 2008-01-16 17:09:38",
     "created_at": "2008-01-16T17:09:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1734",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_010976.json:
 }
 ```
 
-Attachment
+Attachment [jmol-translucent.patch](tarball://root/attachments/some-uuid/ticket1734/jmol-translucent.patch) by was created at 2008-01-16 17:09:38
 
 
 
@@ -49,7 +49,7 @@ Attachment
 archive/issue_comments_010977.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-1734-doctest.patch](tarball://root/attachments/some-uuid/ticket1734/trac-1734-doctest.patch) by was created at 2008-01-16 17:18:10",
     "created_at": "2008-01-16T17:18:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1734",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_010977.json:
 }
 ```
 
-Attachment
+Attachment [trac-1734-doctest.patch](tarball://root/attachments/some-uuid/ticket1734/trac-1734-doctest.patch) by was created at 2008-01-16 17:18:10
 
 
 
@@ -67,7 +67,7 @@ Attachment
 archive/issue_comments_010978.json:
 ```json
 {
-    "body": "Attachment\n\nI added two additional doctest patches, which should be applied.",
+    "body": "Attachment [trac-1734-doctest-2.patch](tarball://root/attachments/some-uuid/ticket1734/trac-1734-doctest-2.patch) by was created at 2008-01-16 17:18:37\n\nI added two additional doctest patches, which should be applied.",
     "created_at": "2008-01-16T17:18:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1734",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_010978.json:
 }
 ```
 
-Attachment
+Attachment [trac-1734-doctest-2.patch](tarball://root/attachments/some-uuid/ticket1734/trac-1734-doctest-2.patch) by was created at 2008-01-16 17:18:37
 
 I added two additional doctest patches, which should be applied.
 

@@ -163,7 +163,7 @@ Nathann
 archive/issue_comments_081546.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8870.patch](tarball://root/attachments/some-uuid/ticket8870/trac_8870.patch) by ncohen created at 2010-06-21 21:06:53",
     "created_at": "2010-06-21T21:06:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8870",
     "type": "issue_comment",
@@ -172,7 +172,7 @@ archive/issue_comments_081546.json:
 }
 ```
 
-Attachment
+Attachment [trac_8870.patch](tarball://root/attachments/some-uuid/ticket8870/trac_8870.patch) by ncohen created at 2010-06-21 21:06:53
 
 
 
@@ -199,7 +199,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_081548.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me. Apply both patches.",
+    "body": "Attachment [trac_8870-ref.patch](tarball://root/attachments/some-uuid/ticket8870/trac_8870-ref.patch) by rlm created at 2010-06-21 21:50:44\n\nLooks good to me. Apply both patches.",
     "created_at": "2010-06-21T21:50:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8870",
     "type": "issue_comment",
@@ -208,7 +208,7 @@ archive/issue_comments_081548.json:
 }
 ```
 
-Attachment
+Attachment [trac_8870-ref.patch](tarball://root/attachments/some-uuid/ticket8870/trac_8870-ref.patch) by rlm created at 2010-06-21 21:50:44
 
 Looks good to me. Apply both patches.
 

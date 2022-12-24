@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7587
 archive/issue_comments_064685.json:
 ```json
 {
-    "body": "Attachment\n\nbased on 4.3.alpha0",
+    "body": "Attachment [trac_7587-multi_polynomial_libsingular_exponents.patch](tarball://root/attachments/some-uuid/ticket7587/trac_7587-multi_polynomial_libsingular_exponents.patch) by ylchapuy created at 2009-12-02 22:17:36\n\nbased on 4.3.alpha0",
     "created_at": "2009-12-02T22:17:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7587",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_064685.json:
 }
 ```
 
-Attachment
+Attachment [trac_7587-multi_polynomial_libsingular_exponents.patch](tarball://root/attachments/some-uuid/ticket7587/trac_7587-multi_polynomial_libsingular_exponents.patch) by ylchapuy created at 2009-12-02 22:17:36
 
 based on 4.3.alpha0
 

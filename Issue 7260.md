@@ -71,7 +71,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7260
 archive/issue_comments_060298.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7260.patch](tarball://root/attachments/some-uuid/ticket7260/trac_7260.patch) by fwclarke created at 2009-10-21 08:55:01",
     "created_at": "2009-10-21T08:55:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7260",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_060298.json:
 }
 ```
 
-Attachment
+Attachment [trac_7260.patch](tarball://root/attachments/some-uuid/ticket7260/trac_7260.patch) by fwclarke created at 2009-10-21 08:55:01
 
 
 

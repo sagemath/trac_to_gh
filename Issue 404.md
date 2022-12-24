@@ -51,7 +51,7 @@ Changing component from algebraic geometry to basic arithmetic.
 archive/issue_comments_001984.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch trac404.patch fixes this bug, plus some related ones and adds doctests.\nThis will be in SAGE-2.7.2.\n\nWilliam",
+    "body": "Attachment [trac404.patch](tarball://root/attachments/some-uuid/ticket404/trac404.patch) by was created at 2007-07-27 19:35:44\n\nThe patch trac404.patch fixes this bug, plus some related ones and adds doctests.\nThis will be in SAGE-2.7.2.\n\nWilliam",
     "created_at": "2007-07-27T19:35:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/404",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_001984.json:
 }
 ```
 
-Attachment
+Attachment [trac404.patch](tarball://root/attachments/some-uuid/ticket404/trac404.patch) by was created at 2007-07-27 19:35:44
 
 The patch trac404.patch fixes this bug, plus some related ones and adds doctests.
 This will be in SAGE-2.7.2.

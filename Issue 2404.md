@@ -65,7 +65,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2404
 archive/issue_comments_016231.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch fixes subs_expr to take a dictionary, adds an appropriate doctest, and clarifies the docstring a bit.",
+    "body": "Attachment [trac_2404.patch](tarball://root/attachments/some-uuid/ticket2404/trac_2404.patch) by AlexGhitza created at 2009-01-23 19:03:16\n\nThe attached patch fixes subs_expr to take a dictionary, adds an appropriate doctest, and clarifies the docstring a bit.",
     "created_at": "2009-01-23T19:03:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2404",
     "type": "issue_comment",
@@ -74,7 +74,7 @@ archive/issue_comments_016231.json:
 }
 ```
 
-Attachment
+Attachment [trac_2404.patch](tarball://root/attachments/some-uuid/ticket2404/trac_2404.patch) by AlexGhitza created at 2009-01-23 19:03:16
 
 The attached patch fixes subs_expr to take a dictionary, adds an appropriate doctest, and clarifies the docstring a bit.
 

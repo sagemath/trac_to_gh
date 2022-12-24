@@ -45,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/553
 archive/issue_comments_002851.json:
 ```json
 {
-    "body": "Attachment\n\nI attached a patch which throws an error when trying to substitute into a constant expression.\nIt can be overridden by passing a substitute=True parameter to __call__. \n\nAll doc tests pass with it.",
+    "body": "Attachment [553.patch](tarball://root/attachments/some-uuid/ticket553/553.patch) by mhansen created at 2007-09-06 22:49:40\n\nI attached a patch which throws an error when trying to substitute into a constant expression.\nIt can be overridden by passing a substitute=True parameter to __call__. \n\nAll doc tests pass with it.",
     "created_at": "2007-09-06T22:49:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/553",
     "type": "issue_comment",
@@ -54,7 +54,7 @@ archive/issue_comments_002851.json:
 }
 ```
 
-Attachment
+Attachment [553.patch](tarball://root/attachments/some-uuid/ticket553/553.patch) by mhansen created at 2007-09-06 22:49:40
 
 I attached a patch which throws an error when trying to substitute into a constant expression.
 It can be overridden by passing a substitute=True parameter to __call__. 
@@ -216,7 +216,7 @@ sage: (2^(8/9)-2^(1/9)).number_of_arguments()
 archive/issue_comments_002859.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [533.patch](tarball://root/attachments/some-uuid/ticket553/533.patch) by mhansen created at 2007-12-06 10:55:08",
     "created_at": "2007-12-06T10:55:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/553",
     "type": "issue_comment",
@@ -225,7 +225,7 @@ archive/issue_comments_002859.json:
 }
 ```
 
-Attachment
+Attachment [533.patch](tarball://root/attachments/some-uuid/ticket553/533.patch) by mhansen created at 2007-12-06 10:55:08
 
 
 
@@ -270,7 +270,7 @@ apply this patch and the one right above it.
 archive/issue_comments_002862.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-553-part2.patch](tarball://root/attachments/some-uuid/ticket553/trac-553-part2.patch) by was created at 2007-12-15 11:13:06",
     "created_at": "2007-12-15T11:13:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/553",
     "type": "issue_comment",
@@ -279,7 +279,7 @@ archive/issue_comments_002862.json:
 }
 ```
 
-Attachment
+Attachment [trac-553-part2.patch](tarball://root/attachments/some-uuid/ticket553/trac-553-part2.patch) by was created at 2007-12-15 11:13:06
 
 
 

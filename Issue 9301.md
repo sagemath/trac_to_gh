@@ -36,7 +36,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9301
 archive/issue_comments_087610.json:
 ```json
 {
-    "body": "Attachment\n\nPatch",
+    "body": "Attachment [14371.patch](tarball://root/attachments/some-uuid/ticket9301/14371.patch) by comick created at 2010-06-21 23:11:51\n\nPatch",
     "created_at": "2010-06-21T23:11:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9301",
     "type": "issue_comment",
@@ -45,7 +45,7 @@ archive/issue_comments_087610.json:
 }
 ```
 
-Attachment
+Attachment [14371.patch](tarball://root/attachments/some-uuid/ticket9301/14371.patch) by comick created at 2010-06-21 23:11:51
 
 Patch
 
@@ -146,7 +146,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_087616.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [doctest.py](tarball://root/attachments/some-uuid/ticket9301/doctest.py) by comick created at 2010-08-21 23:00:51",
     "created_at": "2010-08-21T23:00:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9301",
     "type": "issue_comment",
@@ -155,7 +155,7 @@ archive/issue_comments_087616.json:
 }
 ```
 
-Attachment
+Attachment [doctest.py](tarball://root/attachments/some-uuid/ticket9301/doctest.py) by comick created at 2010-08-21 23:00:51
 
 
 
@@ -164,7 +164,7 @@ Attachment
 archive/issue_comments_087617.json:
 ```json
 {
-    "body": "Attachment\n\nReplaces previous patch - added trac # to commit message.",
+    "body": "Attachment [trac_9301-part1.patch](tarball://root/attachments/some-uuid/ticket9301/trac_9301-part1.patch) by rlm created at 2010-08-31 17:16:46\n\nReplaces previous patch - added trac # to commit message.",
     "created_at": "2010-08-31T17:16:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9301",
     "type": "issue_comment",
@@ -173,7 +173,7 @@ archive/issue_comments_087617.json:
 }
 ```
 
-Attachment
+Attachment [trac_9301-part1.patch](tarball://root/attachments/some-uuid/ticket9301/trac_9301-part1.patch) by rlm created at 2010-08-31 17:16:46
 
 Replaces previous patch - added trac # to commit message.
 

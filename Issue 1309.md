@@ -94,7 +94,7 @@ that I am working on now. I discovered them while implementing this ticket, so t
 archive/issue_comments_008240.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trees.patch](tarball://root/attachments/some-uuid/ticket1309/trees.patch) by rlm created at 2007-12-03 01:53:26",
     "created_at": "2007-12-03T01:53:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1309",
     "type": "issue_comment",
@@ -103,7 +103,7 @@ archive/issue_comments_008240.json:
 }
 ```
 
-Attachment
+Attachment [trees.patch](tarball://root/attachments/some-uuid/ticket1309/trees.patch) by rlm created at 2007-12-03 01:53:26
 
 
 

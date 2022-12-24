@@ -136,7 +136,7 @@ Changing status from new to needs_review.
 archive/issue_comments_083566.json:
 ```json
 {
-    "body": "Attachment\n\nWith the attached patch and\n\nhttp://boxen.math.washington.edu/home/kirkby/patches/sympow-1.018.1.p7.spkg\n\nthis now builds 64-bit. \n\n\n```\ngcc -O3  -m64  -c -o rootno.o rootno.c\ngcc -O3  -m64  -c -o util.o util.c\nmkdir -p datafiles\ntouch datafiles/param_data\ngcc -O3  -m64 -o sympow  analrank.o analytic.o compute.o compute2.o fpu.o help.o conductors.o disk.o ec_ap.o ec_ap_bsgs.o ec_ap_large.o eulerfactors.o factor.o generate.o init_curve.o main.o moddeg.o periods.o prepare.o QD.o rootno.o util.o \n\nreal\t0m4.465s\nuser\t0m4.101s\nsys\t0m0.301s\nSuccessfully installed sympow-1.018.1.p7\nNow cleaning up tmp files.\nrm: Cannot remove any directory in the path of the current working directory\n/export/home/drkirkby/sage-4.4.2/spkg/build/sympow-1.018.1.p7\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing sympow-1.018.1.p7.spkg\ndrkirkby@hawk:~/sage-4.4.2$ file ./local/lib/sympow/sympow\n./local/lib/sympow/sympow:\tELF 64-bit LSB executable AMD64 Version 1, dynamically linked, not stripped, no debugging information available\n```\n\n\nThe binary is now 64-bit, not 32-bit as before. \n\n\n```\ndrkirkby@hawk:~/sage-4.4.2$ file ./local/lib/sympow/sympow\n./local/lib/sympow/sympow:\tELF 64-bit LSB executable AMD64 Version 1, dynamically linked, not stripped, no debugging information available\n```\n",
+    "body": "Attachment [sympow-64-bit.patch](tarball://root/attachments/some-uuid/ticket9029/sympow-64-bit.patch) by drkirkby created at 2010-05-25 03:03:10\n\nWith the attached patch and\n\nhttp://boxen.math.washington.edu/home/kirkby/patches/sympow-1.018.1.p7.spkg\n\nthis now builds 64-bit. \n\n\n```\ngcc -O3  -m64  -c -o rootno.o rootno.c\ngcc -O3  -m64  -c -o util.o util.c\nmkdir -p datafiles\ntouch datafiles/param_data\ngcc -O3  -m64 -o sympow  analrank.o analytic.o compute.o compute2.o fpu.o help.o conductors.o disk.o ec_ap.o ec_ap_bsgs.o ec_ap_large.o eulerfactors.o factor.o generate.o init_curve.o main.o moddeg.o periods.o prepare.o QD.o rootno.o util.o \n\nreal\t0m4.465s\nuser\t0m4.101s\nsys\t0m0.301s\nSuccessfully installed sympow-1.018.1.p7\nNow cleaning up tmp files.\nrm: Cannot remove any directory in the path of the current working directory\n/export/home/drkirkby/sage-4.4.2/spkg/build/sympow-1.018.1.p7\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing sympow-1.018.1.p7.spkg\ndrkirkby@hawk:~/sage-4.4.2$ file ./local/lib/sympow/sympow\n./local/lib/sympow/sympow:\tELF 64-bit LSB executable AMD64 Version 1, dynamically linked, not stripped, no debugging information available\n```\n\n\nThe binary is now 64-bit, not 32-bit as before. \n\n\n```\ndrkirkby@hawk:~/sage-4.4.2$ file ./local/lib/sympow/sympow\n./local/lib/sympow/sympow:\tELF 64-bit LSB executable AMD64 Version 1, dynamically linked, not stripped, no debugging information available\n```\n",
     "created_at": "2010-05-25T03:03:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9029",
     "type": "issue_comment",
@@ -145,7 +145,7 @@ archive/issue_comments_083566.json:
 }
 ```
 
-Attachment
+Attachment [sympow-64-bit.patch](tarball://root/attachments/some-uuid/ticket9029/sympow-64-bit.patch) by drkirkby created at 2010-05-25 03:03:10
 
 With the attached patch and
 

@@ -101,7 +101,7 @@ In any case, I am attaching a mini-patch with a doctest that verifies that it is
 archive/issue_comments_073460.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8291.patch](tarball://root/attachments/some-uuid/ticket8291/trac_8291.patch) by AlexGhitza created at 2010-11-05 08:14:12",
     "created_at": "2010-11-05T08:14:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8291",
     "type": "issue_comment",
@@ -110,7 +110,7 @@ archive/issue_comments_073460.json:
 }
 ```
 
-Attachment
+Attachment [trac_8291.patch](tarball://root/attachments/some-uuid/ticket8291/trac_8291.patch) by AlexGhitza created at 2010-11-05 08:14:12
 
 
 

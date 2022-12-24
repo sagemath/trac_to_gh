@@ -294,7 +294,7 @@ And yes, sigh, I just did the calculation, too, on sage.math (it's 64bit --- or 
 archive/issue_comments_041997.json:
 ```json
 {
-    "body": "Attachment\n\ntested against 3.4.rc0 on 32-bit (OS X)",
+    "body": "Attachment [trac_5428.patch](tarball://root/attachments/some-uuid/ticket5428/trac_5428.patch) by GeorgSWeber created at 2009-03-04 21:05:44\n\ntested against 3.4.rc0 on 32-bit (OS X)",
     "created_at": "2009-03-04T21:05:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5428",
     "type": "issue_comment",
@@ -303,7 +303,7 @@ archive/issue_comments_041997.json:
 }
 ```
 
-Attachment
+Attachment [trac_5428.patch](tarball://root/attachments/some-uuid/ticket5428/trac_5428.patch) by GeorgSWeber created at 2009-03-04 21:05:44
 
 tested against 3.4.rc0 on 32-bit (OS X)
 

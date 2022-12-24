@@ -123,7 +123,7 @@ Changing keywords from "" to "patch spkg".
 archive/issue_comments_089759.json:
 ```json
 {
-    "body": "Attachment\n\nPatch for the install file in the sage_scripts-4.6.1.alpha1 package.",
+    "body": "Attachment [install.patch](tarball://root/attachments/some-uuid/ticket9418/install.patch) by drkirkby created at 2010-11-13 23:48:57\n\nPatch for the install file in the sage_scripts-4.6.1.alpha1 package.",
     "created_at": "2010-11-13T23:48:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9418",
     "type": "issue_comment",
@@ -132,7 +132,7 @@ archive/issue_comments_089759.json:
 }
 ```
 
-Attachment
+Attachment [install.patch](tarball://root/attachments/some-uuid/ticket9418/install.patch) by drkirkby created at 2010-11-13 23:48:57
 
 Patch for the install file in the sage_scripts-4.6.1.alpha1 package.
 
@@ -143,7 +143,7 @@ Patch for the install file in the sage_scripts-4.6.1.alpha1 package.
 archive/issue_comments_089760.json:
 ```json
 {
-    "body": "Attachment\n\nReplacement 'install' file",
+    "body": "Attachment [install](tarball://root/attachments/some-uuid/ticket9418/install) by drkirkby created at 2010-11-13 23:51:31\n\nReplacement 'install' file",
     "created_at": "2010-11-13T23:51:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9418",
     "type": "issue_comment",
@@ -152,7 +152,7 @@ archive/issue_comments_089760.json:
 }
 ```
 
-Attachment
+Attachment [install](tarball://root/attachments/some-uuid/ticket9418/install) by drkirkby created at 2010-11-13 23:51:31
 
 Replacement 'install' file
 
@@ -295,7 +295,7 @@ SPKG.txt
 archive/issue_comments_089768.json:
 ```json
 {
-    "body": "Attachment\n\nspkg-check",
+    "body": "Attachment [SPKG.txt](tarball://root/attachments/some-uuid/ticket9418/SPKG.txt) by drkirkby created at 2010-11-14 00:36:28\n\nspkg-check",
     "created_at": "2010-11-14T00:36:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9418",
     "type": "issue_comment",
@@ -304,7 +304,7 @@ archive/issue_comments_089768.json:
 }
 ```
 
-Attachment
+Attachment [SPKG.txt](tarball://root/attachments/some-uuid/ticket9418/SPKG.txt) by drkirkby created at 2010-11-14 00:36:28
 
 spkg-check
 
@@ -315,7 +315,7 @@ spkg-check
 archive/issue_comments_089769.json:
 ```json
 {
-    "body": "Attachment\n\nspkg-install",
+    "body": "Attachment [spkg-install](tarball://root/attachments/some-uuid/ticket9418/spkg-install) by drkirkby created at 2010-11-14 00:36:43\n\nspkg-install",
     "created_at": "2010-11-14T00:36:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9418",
     "type": "issue_comment",
@@ -324,7 +324,7 @@ archive/issue_comments_089769.json:
 }
 ```
 
-Attachment
+Attachment [spkg-install](tarball://root/attachments/some-uuid/ticket9418/spkg-install) by drkirkby created at 2010-11-14 00:36:43
 
 spkg-install
 
@@ -463,7 +463,7 @@ Dave
 archive/issue_comments_089776.json:
 ```json
 {
-    "body": "Attachment\n\nAdded ticket number to file name",
+    "body": "Attachment [9418_install.patch](tarball://root/attachments/some-uuid/ticket9418/9418_install.patch) by jdemeyer created at 2010-11-14 11:07:09\n\nAdded ticket number to file name",
     "created_at": "2010-11-14T11:07:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9418",
     "type": "issue_comment",
@@ -472,7 +472,7 @@ archive/issue_comments_089776.json:
 }
 ```
 
-Attachment
+Attachment [9418_install.patch](tarball://root/attachments/some-uuid/ticket9418/9418_install.patch) by jdemeyer created at 2010-11-14 11:07:09
 
 Added ticket number to file name
 
@@ -795,7 +795,7 @@ Before installing the patch spkg and sphinx I had built the docs, but I had not 
 archive/issue_comments_089787.json:
 ```json
 {
-    "body": "Attachment\n\nCorectted 'deps' file, with SQLALCHEMY taken care of",
+    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket9418/deps) by drkirkby created at 2010-11-15 12:34:32\n\nCorectted 'deps' file, with SQLALCHEMY taken care of",
     "created_at": "2010-11-15T12:34:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9418",
     "type": "issue_comment",
@@ -804,7 +804,7 @@ archive/issue_comments_089787.json:
 }
 ```
 
-Attachment
+Attachment [deps](tarball://root/attachments/some-uuid/ticket9418/deps) by drkirkby created at 2010-11-15 12:34:32
 
 Corectted 'deps' file, with SQLALCHEMY taken care of
 
@@ -833,7 +833,7 @@ Updated deps patch, with ticket name and with the SQLALCHEMY resolved
 archive/issue_comments_089789.json:
 ```json
 {
-    "body": "Attachment\n\nI've updated deps and the patch for it. The package will have to wait though, as I need to do some painting. \n\nIt would be useful to get this tested in its current state, as changes will be minimal\n\ndave",
+    "body": "Attachment [9418_deps.patch](tarball://root/attachments/some-uuid/ticket9418/9418_deps.patch) by drkirkby created at 2010-11-15 13:11:15\n\nI've updated deps and the patch for it. The package will have to wait though, as I need to do some painting. \n\nIt would be useful to get this tested in its current state, as changes will be minimal\n\ndave",
     "created_at": "2010-11-15T13:11:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9418",
     "type": "issue_comment",
@@ -842,7 +842,7 @@ archive/issue_comments_089789.json:
 }
 ```
 
-Attachment
+Attachment [9418_deps.patch](tarball://root/attachments/some-uuid/ticket9418/9418_deps.patch) by drkirkby created at 2010-11-15 13:11:15
 
 I've updated deps and the patch for it. The package will have to wait though, as I need to do some painting. 
 
@@ -1017,7 +1017,7 @@ Remove the spkg-check file, as this version of patch has no self-tests that can 
 archive/issue_comments_089797.json:
 ```json
 {
-    "body": "Attachment\n\nI've checked the version at \n\nhttp://boxen.math.washington.edu/home/kirkby/older/patch-2.5.9.spkg\n\ninstalls OK on \n\n* OpenSolaris 06/2009 (my machine hawk).\n* Solaris 10 SPARC (t2.math)\n* Solaris 10 x86 (fulvia on skynet)\n* Linux (sage.math)  \n* OS X 10.6 (bsd.math)\n \nI can confirm that 2.6.1 did fail to install on Solaris 10 on SPARC (t2.math)\n\nDave",
+    "body": "Attachment [9418-remove-spkg-check-file.patch](tarball://root/attachments/some-uuid/ticket9418/9418-remove-spkg-check-file.patch) by drkirkby created at 2010-11-16 17:13:52\n\nI've checked the version at \n\nhttp://boxen.math.washington.edu/home/kirkby/older/patch-2.5.9.spkg\n\ninstalls OK on \n\n* OpenSolaris 06/2009 (my machine hawk).\n* Solaris 10 SPARC (t2.math)\n* Solaris 10 x86 (fulvia on skynet)\n* Linux (sage.math)  \n* OS X 10.6 (bsd.math)\n \nI can confirm that 2.6.1 did fail to install on Solaris 10 on SPARC (t2.math)\n\nDave",
     "created_at": "2010-11-16T17:13:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9418",
     "type": "issue_comment",
@@ -1026,7 +1026,7 @@ archive/issue_comments_089797.json:
 }
 ```
 
-Attachment
+Attachment [9418-remove-spkg-check-file.patch](tarball://root/attachments/some-uuid/ticket9418/9418-remove-spkg-check-file.patch) by drkirkby created at 2010-11-16 17:13:52
 
 I've checked the version at 
 

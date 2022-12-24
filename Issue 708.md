@@ -92,7 +92,7 @@ Michael
 archive/issue_comments_003719.json:
 ```json
 {
-    "body": "Attachment\n\nThere is a simple way of getting within range of Magma's speed: by Gauss' lemma, we can clear the denominators to get a polynomial over the integers, then test it for irreducibility using the significantly faster code over ZZ.\n\nSee the attached patch.  I'm getting a speedup factor of about 10, but I can't compare to Magma since I don't have it.",
+    "body": "Attachment [708-speedup_poly_irred.patch](tarball://root/attachments/some-uuid/ticket708/708-speedup_poly_irred.patch) by AlexGhitza created at 2008-08-29 22:38:15\n\nThere is a simple way of getting within range of Magma's speed: by Gauss' lemma, we can clear the denominators to get a polynomial over the integers, then test it for irreducibility using the significantly faster code over ZZ.\n\nSee the attached patch.  I'm getting a speedup factor of about 10, but I can't compare to Magma since I don't have it.",
     "created_at": "2008-08-29T22:38:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/708",
     "type": "issue_comment",
@@ -101,7 +101,7 @@ archive/issue_comments_003719.json:
 }
 ```
 
-Attachment
+Attachment [708-speedup_poly_irred.patch](tarball://root/attachments/some-uuid/ticket708/708-speedup_poly_irred.patch) by AlexGhitza created at 2008-08-29 22:38:15
 
 There is a simple way of getting within range of Magma's speed: by Gauss' lemma, we can clear the denominators to get a polynomial over the integers, then test it for irreducibility using the significantly faster code over ZZ.
 

@@ -115,7 +115,7 @@ There's a typo in line 495, and these groups are sufficiently unusual that some 
 archive/issue_comments_060149.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7244_dicyclic_groups.patch](tarball://root/attachments/some-uuid/ticket7244/trac_7244_dicyclic_groups.patch) by rbeezer created at 2009-10-22 02:34:57",
     "created_at": "2009-10-22T02:34:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7244",
     "type": "issue_comment",
@@ -124,7 +124,7 @@ archive/issue_comments_060149.json:
 }
 ```
 
-Attachment
+Attachment [trac_7244_dicyclic_groups.patch](tarball://root/attachments/some-uuid/ticket7244/trac_7244_dicyclic_groups.patch) by rbeezer created at 2009-10-22 02:34:57
 
 
 

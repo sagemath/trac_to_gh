@@ -38,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5873
 archive/issue_comments_046377.json:
 ```json
 {
-    "body": "Attachment\n\nOf course, this should be added to the current matplotlib spkg.",
+    "body": "Attachment [matplotlib-0.98.5.3rc0-svn6910.p3.patch](tarball://root/attachments/some-uuid/ticket5873/matplotlib-0.98.5.3rc0-svn6910.p3.patch) by jason created at 2009-09-22 19:57:03\n\nOf course, this should be added to the current matplotlib spkg.",
     "created_at": "2009-09-22T19:57:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5873",
     "type": "issue_comment",
@@ -47,7 +47,7 @@ archive/issue_comments_046377.json:
 }
 ```
 
-Attachment
+Attachment [matplotlib-0.98.5.3rc0-svn6910.p3.patch](tarball://root/attachments/some-uuid/ticket5873/matplotlib-0.98.5.3rc0-svn6910.p3.patch) by jason created at 2009-09-22 19:57:03
 
 Of course, this should be added to the current matplotlib spkg.
 
@@ -58,7 +58,7 @@ Of course, this should be added to the current matplotlib spkg.
 archive/issue_comments_046378.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5873.matplotlib.patch](tarball://root/attachments/some-uuid/ticket5873/5873.matplotlib.patch) by pjeremy created at 2010-01-03 09:45:44",
     "created_at": "2010-01-03T09:45:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5873",
     "type": "issue_comment",
@@ -67,7 +67,7 @@ archive/issue_comments_046378.json:
 }
 ```
 
-Attachment
+Attachment [5873.matplotlib.patch](tarball://root/attachments/some-uuid/ticket5873/5873.matplotlib.patch) by pjeremy created at 2010-01-03 09:45:44
 
 
 
@@ -236,7 +236,7 @@ Dave
 archive/issue_comments_046386.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [matplotlib-0.99.1.p4.patch](tarball://root/attachments/some-uuid/ticket5873/matplotlib-0.99.1.p4.patch) by pjeremy created at 2010-07-17 20:53:07",
     "created_at": "2010-07-17T20:53:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5873",
     "type": "issue_comment",
@@ -245,7 +245,7 @@ archive/issue_comments_046386.json:
 }
 ```
 
-Attachment
+Attachment [matplotlib-0.99.1.p4.patch](tarball://root/attachments/some-uuid/ticket5873/matplotlib-0.99.1.p4.patch) by pjeremy created at 2010-07-17 20:53:07
 
 
 

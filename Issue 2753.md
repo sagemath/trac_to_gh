@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2753
 archive/issue_comments_018909.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac2753-randstate.patch](tarball://root/attachments/some-uuid/ticket2753/trac2753-randstate.patch) by cwitty created at 2008-04-01 14:29:43",
     "created_at": "2008-04-01T14:29:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2753",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_018909.json:
 }
 ```
 
-Attachment
+Attachment [trac2753-randstate.patch](tarball://root/attachments/some-uuid/ticket2753/trac2753-randstate.patch) by cwitty created at 2008-04-01 14:29:43
 
 
 
@@ -53,7 +53,7 @@ Attachment
 archive/issue_comments_018910.json:
 ```json
 {
-    "body": "Attachment\n\nApplies cleanly to Sage 2.11. I am taking cwitty's word on doctests- I haven't run any of my own. IMO, this greatly improves the robustness of our doctesting infrastructure.",
+    "body": "Attachment [trac2753-hg_scripts-randstate-doctest.patch](tarball://root/attachments/some-uuid/ticket2753/trac2753-hg_scripts-randstate-doctest.patch) by rlm created at 2008-04-04 02:22:56\n\nApplies cleanly to Sage 2.11. I am taking cwitty's word on doctests- I haven't run any of my own. IMO, this greatly improves the robustness of our doctesting infrastructure.",
     "created_at": "2008-04-04T02:22:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2753",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_018910.json:
 }
 ```
 
-Attachment
+Attachment [trac2753-hg_scripts-randstate-doctest.patch](tarball://root/attachments/some-uuid/ticket2753/trac2753-hg_scripts-randstate-doctest.patch) by rlm created at 2008-04-04 02:22:56
 
 Applies cleanly to Sage 2.11. I am taking cwitty's word on doctests- I haven't run any of my own. IMO, this greatly improves the robustness of our doctesting infrastructure.
 
@@ -109,7 +109,7 @@ manula merges of the rejected hunks against my 3.0.alpha1 merge tree
 archive/issue_comments_018913.json:
 ```json
 {
-    "body": "Attachment\n\nMerged all three patches in Sage 3.0.alpha1",
+    "body": "Attachment [trac_2753-reject-merges.patch](tarball://root/attachments/some-uuid/ticket2753/trac_2753-reject-merges.patch) by mabshoff created at 2008-04-04 05:05:09\n\nMerged all three patches in Sage 3.0.alpha1",
     "created_at": "2008-04-04T05:05:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2753",
     "type": "issue_comment",
@@ -118,7 +118,7 @@ archive/issue_comments_018913.json:
 }
 ```
 
-Attachment
+Attachment [trac_2753-reject-merges.patch](tarball://root/attachments/some-uuid/ticket2753/trac_2753-reject-merges.patch) by mabshoff created at 2008-04-04 05:05:09
 
 Merged all three patches in Sage 3.0.alpha1
 

@@ -161,7 +161,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_079120.json:
 ```json
 {
-    "body": "Attachment\n\nI have implemented Gonzalo's suggestions.  It seems to work great, and indeed it's much faster; the matrix actions are almost 3 times faster with the new code, and `__call__` is an amazing 200 times faster.",
+    "body": "Attachment [trac_8681.patch](tarball://root/attachments/some-uuid/ticket8681/trac_8681.patch) by AlexGhitza created at 2010-04-14 11:18:03\n\nI have implemented Gonzalo's suggestions.  It seems to work great, and indeed it's much faster; the matrix actions are almost 3 times faster with the new code, and `__call__` is an amazing 200 times faster.",
     "created_at": "2010-04-14T11:18:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8681",
     "type": "issue_comment",
@@ -170,7 +170,7 @@ archive/issue_comments_079120.json:
 }
 ```
 
-Attachment
+Attachment [trac_8681.patch](tarball://root/attachments/some-uuid/ticket8681/trac_8681.patch) by AlexGhitza created at 2010-04-14 11:18:03
 
 I have implemented Gonzalo's suggestions.  It seems to work great, and indeed it's much faster; the matrix actions are almost 3 times faster with the new code, and `__call__` is an amazing 200 times faster.
 

@@ -53,7 +53,7 @@ This ticket could be closed by any significant advanced in this direction that c
 archive/issue_comments_055250.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [buildnotes.txt](tarball://root/attachments/some-uuid/ticket6743/buildnotes.txt) by was created at 2009-08-14 07:17:35",
     "created_at": "2009-08-14T07:17:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6743",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_055250.json:
 }
 ```
 
-Attachment
+Attachment [buildnotes.txt](tarball://root/attachments/some-uuid/ticket6743/buildnotes.txt) by was created at 2009-08-14 07:17:35
 
 
 
@@ -71,7 +71,7 @@ Attachment
 archive/issue_comments_055251.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-6743.patch](tarball://root/attachments/some-uuid/ticket6743/trac-6743.patch) by was created at 2009-08-19 23:31:05",
     "created_at": "2009-08-19T23:31:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6743",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_055251.json:
 }
 ```
 
-Attachment
+Attachment [trac-6743.patch](tarball://root/attachments/some-uuid/ticket6743/trac-6743.patch) by was created at 2009-08-19 23:31:05
 
 
 
@@ -89,7 +89,7 @@ Attachment
 archive/issue_comments_055252.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6743-SCRIPTS-part1.patch](tarball://root/attachments/some-uuid/ticket6743/trac_6743-SCRIPTS-part1.patch) by was created at 2009-09-26 01:23:36",
     "created_at": "2009-09-26T01:23:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6743",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_055252.json:
 }
 ```
 
-Attachment
+Attachment [trac_6743-SCRIPTS-part1.patch](tarball://root/attachments/some-uuid/ticket6743/trac_6743-SCRIPTS-part1.patch) by was created at 2009-09-26 01:23:36
 
 
 
@@ -193,7 +193,7 @@ I rebased the sage library patch to get the sage library to build against sage-4
 archive/issue_comments_055257.json:
 ```json
 {
-    "body": "Attachment\n\nthese are my notes when I tried to build sage-4.3.3.alpha0 from source on cygwin",
+    "body": "Attachment [trac_6743-rebase-sage-4.3.3.patch](tarball://root/attachments/some-uuid/ticket6743/trac_6743-rebase-sage-4.3.3.patch) by was created at 2010-02-16 02:59:47\n\nthese are my notes when I tried to build sage-4.3.3.alpha0 from source on cygwin",
     "created_at": "2010-02-16T02:59:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6743",
     "type": "issue_comment",
@@ -202,7 +202,7 @@ archive/issue_comments_055257.json:
 }
 ```
 
-Attachment
+Attachment [trac_6743-rebase-sage-4.3.3.patch](tarball://root/attachments/some-uuid/ticket6743/trac_6743-rebase-sage-4.3.3.patch) by was created at 2010-02-16 02:59:47
 
 these are my notes when I tried to build sage-4.3.3.alpha0 from source on cygwin
 
@@ -213,7 +213,7 @@ these are my notes when I tried to build sage-4.3.3.alpha0 from source on cygwin
 archive/issue_comments_055258.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [buildnotes-4.3.3.alpha0.txt](tarball://root/attachments/some-uuid/ticket6743/buildnotes-4.3.3.alpha0.txt) by mhansen created at 2010-02-16 08:11:19",
     "created_at": "2010-02-16T08:11:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6743",
     "type": "issue_comment",
@@ -222,7 +222,7 @@ archive/issue_comments_055258.json:
 }
 ```
 
-Attachment
+Attachment [buildnotes-4.3.3.alpha0.txt](tarball://root/attachments/some-uuid/ticket6743/buildnotes-4.3.3.alpha0.txt) by mhansen created at 2010-02-16 08:11:19
 
 
 
@@ -339,7 +339,7 @@ I just tried to go through the install on Windows 7 and Cygwin 1.7.9-1 (latest v
 archive/issue_comments_055265.json:
 ```json
 {
-    "body": "Attachment\n\nwindows 7, cygwin 1.7.9-1, python build error",
+    "body": "Attachment [install.log](tarball://root/attachments/some-uuid/ticket6743/install.log) by saliola created at 2011-07-05 04:20:43\n\nwindows 7, cygwin 1.7.9-1, python build error",
     "created_at": "2011-07-05T04:20:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6743",
     "type": "issue_comment",
@@ -348,7 +348,7 @@ archive/issue_comments_055265.json:
 }
 ```
 
-Attachment
+Attachment [install.log](tarball://root/attachments/some-uuid/ticket6743/install.log) by saliola created at 2011-07-05 04:20:43
 
 windows 7, cygwin 1.7.9-1, python build error
 
@@ -6133,7 +6133,7 @@ That said, I still think most of this is worthwhile.  What do you think of this 
 archive/issue_comments_055468.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6743-doc.patch](tarball://root/attachments/some-uuid/ticket6743/trac_6743-doc.patch) by kcrisman created at 2013-04-12 01:24:49",
     "created_at": "2013-04-12T01:24:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6743",
     "type": "issue_comment",
@@ -6142,7 +6142,7 @@ archive/issue_comments_055468.json:
 }
 ```
 
-Attachment
+Attachment [trac_6743-doc.patch](tarball://root/attachments/some-uuid/ticket6743/trac_6743-doc.patch) by kcrisman created at 2013-04-12 01:24:49
 
 
 

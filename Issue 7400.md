@@ -117,7 +117,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_062222.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7400-element_wrapper_copy-fh.patch](tarball://root/attachments/some-uuid/ticket7400/trac_7400-element_wrapper_copy-fh.patch) by hivert created at 2009-11-08 18:27:46",
     "created_at": "2009-11-08T18:27:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7400",
     "type": "issue_comment",
@@ -126,7 +126,7 @@ archive/issue_comments_062222.json:
 }
 ```
 
-Attachment
+Attachment [trac_7400-element_wrapper_copy-fh.patch](tarball://root/attachments/some-uuid/ticket7400/trac_7400-element_wrapper_copy-fh.patch) by hivert created at 2009-11-08 18:27:46
 
 
 
@@ -521,7 +521,7 @@ I just did some minor editing of the doc on the Sage-Combinat patch server. Plea
 archive/issue_comments_062239.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7400-element_copy_fh.patch](tarball://root/attachments/some-uuid/ticket7400/trac_7400-element_copy_fh.patch) by hivert created at 2009-12-19 00:32:16",
     "created_at": "2009-12-19T00:32:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7400",
     "type": "issue_comment",
@@ -530,7 +530,7 @@ archive/issue_comments_062239.json:
 }
 ```
 
-Attachment
+Attachment [trac_7400-element_copy_fh.patch](tarball://root/attachments/some-uuid/ticket7400/trac_7400-element_copy_fh.patch) by hivert created at 2009-12-19 00:32:16
 
 
 

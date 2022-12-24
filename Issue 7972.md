@@ -207,7 +207,7 @@ Minh Van Nguyen
 archive/issue_comments_069541.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7972.patch](tarball://root/attachments/some-uuid/ticket7972/trac_7972.patch) by was created at 2010-01-18 07:09:13",
     "created_at": "2010-01-18T07:09:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7972",
     "type": "issue_comment",
@@ -216,7 +216,7 @@ archive/issue_comments_069541.json:
 }
 ```
 
-Attachment
+Attachment [trac_7972.patch](tarball://root/attachments/some-uuid/ticket7972/trac_7972.patch) by was created at 2010-01-18 07:09:13
 
 
 

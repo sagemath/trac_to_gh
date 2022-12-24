@@ -94,7 +94,7 @@ By the way, EXCELLENT WORK on this  -- it's fast.  Excellent!
 archive/issue_comments_015927.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [digits.2.patch](tarball://root/attachments/some-uuid/ticket2362/digits.2.patch) by jbmohler created at 2008-03-03 20:20:53",
     "created_at": "2008-03-03T20:20:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2362",
     "type": "issue_comment",
@@ -103,7 +103,7 @@ archive/issue_comments_015927.json:
 }
 ```
 
-Attachment
+Attachment [digits.2.patch](tarball://root/attachments/some-uuid/ticket2362/digits.2.patch) by jbmohler created at 2008-03-03 20:20:53
 
 
 
@@ -134,7 +134,7 @@ Note that I also tweaked the ndigits method just a bit so that it works for arbi
 archive/issue_comments_015929.json:
 ```json
 {
-    "body": "Attachment\n\nNow, you should use digits.patch\n\nThis latest patch has been rebased on 2.10.3",
+    "body": "Attachment [digits.patch](tarball://root/attachments/some-uuid/ticket2362/digits.patch) by jbmohler created at 2008-03-13 14:39:40\n\nNow, you should use digits.patch\n\nThis latest patch has been rebased on 2.10.3",
     "created_at": "2008-03-13T14:39:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2362",
     "type": "issue_comment",
@@ -143,7 +143,7 @@ archive/issue_comments_015929.json:
 }
 ```
 
-Attachment
+Attachment [digits.patch](tarball://root/attachments/some-uuid/ticket2362/digits.patch) by jbmohler created at 2008-03-13 14:39:40
 
 Now, you should use digits.patch
 

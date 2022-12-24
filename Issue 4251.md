@@ -118,7 +118,7 @@ Michael
 archive/issue_comments_030928.json:
 ```json
 {
-    "body": "Attachment\n\na change to 2 lines of inst.tex, based on 3.1.3.alpha2",
+    "body": "Attachment [trac_4251-typo-install-guide.patch](tarball://root/attachments/some-uuid/ticket4251/trac_4251-typo-install-guide.patch) by wdj created at 2008-10-08 00:05:13\n\na change to 2 lines of inst.tex, based on 3.1.3.alpha2",
     "created_at": "2008-10-08T00:05:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4251",
     "type": "issue_comment",
@@ -127,7 +127,7 @@ archive/issue_comments_030928.json:
 }
 ```
 
-Attachment
+Attachment [trac_4251-typo-install-guide.patch](tarball://root/attachments/some-uuid/ticket4251/trac_4251-typo-install-guide.patch) by wdj created at 2008-10-08 00:05:13
 
 a change to 2 lines of inst.tex, based on 3.1.3.alpha2
 
@@ -174,7 +174,7 @@ The patch looks good to me, but I couldn't get it to apply, I think because the 
 archive/issue_comments_030931.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4251.patch](tarball://root/attachments/some-uuid/ticket4251/4251.patch) by jhpalmieri created at 2008-10-17 21:12:55",
     "created_at": "2008-10-17T21:12:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4251",
     "type": "issue_comment",
@@ -183,7 +183,7 @@ archive/issue_comments_030931.json:
 }
 ```
 
-Attachment
+Attachment [4251.patch](tarball://root/attachments/some-uuid/ticket4251/4251.patch) by jhpalmieri created at 2008-10-17 21:12:55
 
 
 

@@ -50,7 +50,7 @@ patch
 archive/issue_comments_031175.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-combinat-script.patch](tarball://root/attachments/some-uuid/ticket4270/sage-combinat-script.patch) by mhansen created at 2008-10-12 20:17:10",
     "created_at": "2008-10-12T20:17:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4270",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_031175.json:
 }
 ```
 
-Attachment
+Attachment [sage-combinat-script.patch](tarball://root/attachments/some-uuid/ticket4270/sage-combinat-script.patch) by mhansen created at 2008-10-12 20:17:10
 
 
 

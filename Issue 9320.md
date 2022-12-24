@@ -73,7 +73,7 @@ I don't think it is possible to review this until the ticket it depends on (#933
 archive/issue_comments_087825.json:
 ```json
 {
-    "body": "Attachment\n\nrequires #9334 and #9684",
+    "body": "Attachment [9320_root_numbers.patch](tarball://root/attachments/some-uuid/ticket9320/9320_root_numbers.patch) by arminstraub created at 2010-08-13 00:32:26\n\nrequires #9334 and #9684",
     "created_at": "2010-08-13T00:32:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9320",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_087825.json:
 }
 ```
 
-Attachment
+Attachment [9320_root_numbers.patch](tarball://root/attachments/some-uuid/ticket9320/9320_root_numbers.patch) by arminstraub created at 2010-08-13 00:32:26
 
 requires #9334 and #9684
 
@@ -147,7 +147,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_087829.json:
 ```json
 {
-    "body": "Attachment\n\nTicket #9334 has been merged, so this is now ready for review. Sadly it fails to apply, due to a trivial conflict with #11749. I've uploaded a rebased patch, and checked that all doctests in sage/schemes/elliptic_curves pass with this applied. \n\nHowever, some (trivial but tedious) work is needed fixing the ReST formatting of the docstrings -- the indentation is all over the place, and :: should only be used to introduce example code blocks.",
+    "body": "Attachment [9320_root_numbers-rebase.patch](tarball://root/attachments/some-uuid/ticket9320/9320_root_numbers-rebase.patch) by davidloeffler created at 2011-12-30 18:09:53\n\nTicket #9334 has been merged, so this is now ready for review. Sadly it fails to apply, due to a trivial conflict with #11749. I've uploaded a rebased patch, and checked that all doctests in sage/schemes/elliptic_curves pass with this applied. \n\nHowever, some (trivial but tedious) work is needed fixing the ReST formatting of the docstrings -- the indentation is all over the place, and :: should only be used to introduce example code blocks.",
     "created_at": "2011-12-30T18:09:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9320",
     "type": "issue_comment",
@@ -156,7 +156,7 @@ archive/issue_comments_087829.json:
 }
 ```
 
-Attachment
+Attachment [9320_root_numbers-rebase.patch](tarball://root/attachments/some-uuid/ticket9320/9320_root_numbers-rebase.patch) by davidloeffler created at 2011-12-30 18:09:53
 
 Ticket #9334 has been merged, so this is now ready for review. Sadly it fails to apply, due to a trivial conflict with #11749. I've uploaded a rebased patch, and checked that all doctests in sage/schemes/elliptic_curves pass with this applied. 
 
@@ -169,7 +169,7 @@ However, some (trivial but tedious) work is needed fixing the ReST formatting of
 archive/issue_comments_087830.json:
 ```json
 {
-    "body": "Attachment\n\ndocstrings improved",
+    "body": "Attachment [9320_root_numbers-rebase_docscleaned.patch](tarball://root/attachments/some-uuid/ticket9320/9320_root_numbers-rebase_docscleaned.patch) by cturner created at 2012-01-13 14:15:42\n\ndocstrings improved",
     "created_at": "2012-01-13T14:15:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9320",
     "type": "issue_comment",
@@ -178,7 +178,7 @@ archive/issue_comments_087830.json:
 }
 ```
 
-Attachment
+Attachment [9320_root_numbers-rebase_docscleaned.patch](tarball://root/attachments/some-uuid/ticket9320/9320_root_numbers-rebase_docscleaned.patch) by cturner created at 2012-01-13 14:15:42
 
 docstrings improved
 

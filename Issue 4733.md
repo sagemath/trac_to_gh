@@ -51,7 +51,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_035722.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [matrix-exp.patch](tarball://root/attachments/some-uuid/ticket4733/matrix-exp.patch) by jason created at 2008-12-06 23:36:03",
     "created_at": "2008-12-06T23:36:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4733",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_035722.json:
 }
 ```
 
-Attachment
+Attachment [matrix-exp.patch](tarball://root/attachments/some-uuid/ticket4733/matrix-exp.patch) by jason created at 2008-12-06 23:36:03
 
 
 
@@ -329,7 +329,7 @@ trivial rebase to 3.3.alpha0
 archive/issue_comments_035731.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4733.patch](tarball://root/attachments/some-uuid/ticket4733/trac_4733.patch) by AlexGhitza created at 2009-01-22 06:18:04",
     "created_at": "2009-01-22T06:18:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4733",
     "type": "issue_comment",
@@ -338,7 +338,7 @@ archive/issue_comments_035731.json:
 }
 ```
 
-Attachment
+Attachment [trac_4733.patch](tarball://root/attachments/some-uuid/ticket4733/trac_4733.patch) by AlexGhitza created at 2009-01-22 06:18:04
 
 
 

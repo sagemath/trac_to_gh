@@ -247,7 +247,7 @@ symbolic arg function
 archive/issue_comments_033274.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4498_arg.1.patch](tarball://root/attachments/some-uuid/ticket4498/trac_4498_arg.1.patch) by ktkohl created at 2012-01-12 04:54:33",
     "created_at": "2012-01-12T04:54:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4498",
     "type": "issue_comment",
@@ -256,7 +256,7 @@ archive/issue_comments_033274.json:
 }
 ```
 
-Attachment
+Attachment [trac_4498_arg.1.patch](tarball://root/attachments/some-uuid/ticket4498/trac_4498_arg.1.patch) by ktkohl created at 2012-01-12 04:54:33
 
 
 
@@ -497,7 +497,7 @@ revision of arg function--apply instead of the previous patch
 archive/issue_comments_033283.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4498_arg.2.patch](tarball://root/attachments/some-uuid/ticket4498/trac_4498_arg.2.patch) by ktkohl created at 2012-01-12 17:06:43",
     "created_at": "2012-01-12T17:06:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4498",
     "type": "issue_comment",
@@ -506,7 +506,7 @@ archive/issue_comments_033283.json:
 }
 ```
 
-Attachment
+Attachment [trac_4498_arg.2.patch](tarball://root/attachments/some-uuid/ticket4498/trac_4498_arg.2.patch) by ktkohl created at 2012-01-12 17:06:43
 
 
 
@@ -533,7 +533,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_033285.json:
 ```json
 {
-    "body": "Attachment\n\nsymbolic arg--fixed whitespace issues--use this one instead of others",
+    "body": "Attachment [trac_4498_arg.3.patch](tarball://root/attachments/some-uuid/ticket4498/trac_4498_arg.3.patch) by ktkohl created at 2012-01-12 18:41:28\n\nsymbolic arg--fixed whitespace issues--use this one instead of others",
     "created_at": "2012-01-12T18:41:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4498",
     "type": "issue_comment",
@@ -542,7 +542,7 @@ archive/issue_comments_033285.json:
 }
 ```
 
-Attachment
+Attachment [trac_4498_arg.3.patch](tarball://root/attachments/some-uuid/ticket4498/trac_4498_arg.3.patch) by ktkohl created at 2012-01-12 18:41:28
 
 symbolic arg--fixed whitespace issues--use this one instead of others
 
@@ -553,7 +553,7 @@ symbolic arg--fixed whitespace issues--use this one instead of others
 archive/issue_comments_033286.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4498-symbolic_arg.cleanup.patch](tarball://root/attachments/some-uuid/ticket4498/trac_4498-symbolic_arg.cleanup.patch) by burcin created at 2012-02-07 10:11:24",
     "created_at": "2012-02-07T10:11:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4498",
     "type": "issue_comment",
@@ -562,7 +562,7 @@ archive/issue_comments_033286.json:
 }
 ```
 
-Attachment
+Attachment [trac_4498-symbolic_arg.cleanup.patch](tarball://root/attachments/some-uuid/ticket4498/trac_4498-symbolic_arg.cleanup.patch) by burcin created at 2012-02-07 10:11:24
 
 
 
@@ -645,7 +645,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_033290.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4498-arg_evalf.patch](tarball://root/attachments/some-uuid/ticket4498/trac_4498-arg_evalf.patch) by burcin created at 2012-02-07 15:51:06",
     "created_at": "2012-02-07T15:51:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4498",
     "type": "issue_comment",
@@ -654,7 +654,7 @@ archive/issue_comments_033290.json:
 }
 ```
 
-Attachment
+Attachment [trac_4498-arg_evalf.patch](tarball://root/attachments/some-uuid/ticket4498/trac_4498-arg_evalf.patch) by burcin created at 2012-02-07 15:51:06
 
 
 

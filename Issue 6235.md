@@ -786,7 +786,7 @@ You're right, the scripts in local/bin use "mkdir", not "$MKDIR", so I've change
 archive/issue_comments_049771.json:
 ```json
 {
-    "body": "Attachment\n\nscripts repo",
+    "body": "Attachment [trac_6235-MPLCONFIGDIR.patch](tarball://root/attachments/some-uuid/ticket6235/trac_6235-MPLCONFIGDIR.patch) by jhpalmieri created at 2010-10-21 01:35:20\n\nscripts repo",
     "created_at": "2010-10-21T01:35:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6235",
     "type": "issue_comment",
@@ -795,7 +795,7 @@ archive/issue_comments_049771.json:
 }
 ```
 
-Attachment
+Attachment [trac_6235-MPLCONFIGDIR.patch](tarball://root/attachments/some-uuid/ticket6235/trac_6235-MPLCONFIGDIR.patch) by jhpalmieri created at 2010-10-21 01:35:20
 
 scripts repo
 

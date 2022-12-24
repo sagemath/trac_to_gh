@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5077
 archive/issue_comments_038665.json:
 ```json
 {
-    "body": "Attachment\n\nTrivial patch attached.  While I was at it I fixed a couple of typos.",
+    "body": "Attachment [trac_5077.patch](tarball://root/attachments/some-uuid/ticket5077/trac_5077.patch) by AlexGhitza created at 2009-01-24 07:50:42\n\nTrivial patch attached.  While I was at it I fixed a couple of typos.",
     "created_at": "2009-01-24T07:50:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5077",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_038665.json:
 }
 ```
 
-Attachment
+Attachment [trac_5077.patch](tarball://root/attachments/some-uuid/ticket5077/trac_5077.patch) by AlexGhitza created at 2009-01-24 07:50:42
 
 Trivial patch attached.  While I was at it I fixed a couple of typos.
 

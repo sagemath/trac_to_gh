@@ -51,7 +51,7 @@ Changing status from new to needs_review.
 archive/issue_comments_091650.json:
 ```json
 {
-    "body": "Attachment\n\nfix SAGE_ROOT (a separate bug, I guess)",
+    "body": "Attachment [trac_9527.patch](tarball://root/attachments/some-uuid/ticket9527/trac_9527.patch) by was created at 2010-07-17 13:03:03\n\nfix SAGE_ROOT (a separate bug, I guess)",
     "created_at": "2010-07-17T13:03:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9527",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_091650.json:
 }
 ```
 
-Attachment
+Attachment [trac_9527.patch](tarball://root/attachments/some-uuid/ticket9527/trac_9527.patch) by was created at 2010-07-17 13:03:03
 
 fix SAGE_ROOT (a separate bug, I guess)
 

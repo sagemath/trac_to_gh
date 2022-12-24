@@ -49,7 +49,7 @@ based on Sage 4.1.1.rc2
 archive/issue_comments_055157.json:
 ```json
 {
-    "body": "Attachment\n\nI don't think I should give a positive review here. The docbuild gives me :\n\n```\nWarning: could not import sage.modules.fg_pid.fgp_morphism\ncannot import name FGP_Morphism\n```\n",
+    "body": "Attachment [trac_6724-spell-check-modules.patch](tarball://root/attachments/some-uuid/ticket6724/trac_6724-spell-check-modules.patch) by wuthrich created at 2009-08-12 10:19:10\n\nI don't think I should give a positive review here. The docbuild gives me :\n\n```\nWarning: could not import sage.modules.fg_pid.fgp_morphism\ncannot import name FGP_Morphism\n```\n",
     "created_at": "2009-08-12T10:19:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6724",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_055157.json:
 }
 ```
 
-Attachment
+Attachment [trac_6724-spell-check-modules.patch](tarball://root/attachments/some-uuid/ticket6724/trac_6724-spell-check-modules.patch) by wuthrich created at 2009-08-12 10:19:10
 
 I don't think I should give a positive review here. The docbuild gives me :
 
@@ -151,7 +151,7 @@ Am I doing something wrong ?
 archive/issue_comments_055160.json:
 ```json
 {
-    "body": "Attachment\n\nbased on Sage 4.1.1.rc2",
+    "body": "Attachment [trac_6724-spell-check-modules-reduced.patch](tarball://root/attachments/some-uuid/ticket6724/trac_6724-spell-check-modules-reduced.patch) by mvngu created at 2009-08-12 15:08:34\n\nbased on Sage 4.1.1.rc2",
     "created_at": "2009-08-12T15:08:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6724",
     "type": "issue_comment",
@@ -160,7 +160,7 @@ archive/issue_comments_055160.json:
 }
 ```
 
-Attachment
+Attachment [trac_6724-spell-check-modules-reduced.patch](tarball://root/attachments/some-uuid/ticket6724/trac_6724-spell-check-modules-reduced.patch) by mvngu created at 2009-08-12 15:08:34
 
 based on Sage 4.1.1.rc2
 

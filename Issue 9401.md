@@ -177,7 +177,7 @@ for the ill-formed documentation of `get_flag`, see #15096.
 archive/issue_comments_089575.json:
 ```json
 {
-    "body": "Attachment\n\nthe attached patch does several things:\n\n1) it fixes two typos in `gen.pyx`\n\n2) it corrects the behaviour of `pari(n).isprime(1)` which incorrectly was returning `False` for prime n\n\n3) for prime n, now `pari(n).isprime(1)` returns a tuple `(True, cert)` where `cert` is the primality certificate (currently as Pari object, I didn't figure out how to convert it to a Python object)\n\nComments are welcome.\n\nPaul",
+    "body": "Attachment [trac_9401.patch](tarball://root/attachments/some-uuid/ticket9401/trac_9401.patch) by zimmerma created at 2013-08-25 12:45:08\n\nthe attached patch does several things:\n\n1) it fixes two typos in `gen.pyx`\n\n2) it corrects the behaviour of `pari(n).isprime(1)` which incorrectly was returning `False` for prime n\n\n3) for prime n, now `pari(n).isprime(1)` returns a tuple `(True, cert)` where `cert` is the primality certificate (currently as Pari object, I didn't figure out how to convert it to a Python object)\n\nComments are welcome.\n\nPaul",
     "created_at": "2013-08-25T12:45:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9401",
     "type": "issue_comment",
@@ -186,7 +186,7 @@ archive/issue_comments_089575.json:
 }
 ```
 
-Attachment
+Attachment [trac_9401.patch](tarball://root/attachments/some-uuid/ticket9401/trac_9401.patch) by zimmerma created at 2013-08-25 12:45:08
 
 the attached patch does several things:
 

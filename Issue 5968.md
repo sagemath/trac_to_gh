@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5968
 archive/issue_comments_047295.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5968.patch](tarball://root/attachments/some-uuid/ticket5968/trac_5968.patch) by was created at 2009-05-03 05:56:58",
     "created_at": "2009-05-03T05:56:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5968",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_047295.json:
 }
 ```
 
-Attachment
+Attachment [trac_5968.patch](tarball://root/attachments/some-uuid/ticket5968/trac_5968.patch) by was created at 2009-05-03 05:56:58
 
 
 
@@ -51,7 +51,7 @@ Attachment
 archive/issue_comments_047296.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5968-part2.patch](tarball://root/attachments/some-uuid/ticket5968/trac_5968-part2.patch) by was created at 2009-05-03 05:58:41",
     "created_at": "2009-05-03T05:58:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5968",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_047296.json:
 }
 ```
 
-Attachment
+Attachment [trac_5968-part2.patch](tarball://root/attachments/some-uuid/ticket5968/trac_5968-part2.patch) by was created at 2009-05-03 05:58:41
 
 
 
@@ -116,7 +116,7 @@ Apply over previous two patches
 archive/issue_comments_047299.json:
 ```json
 {
-    "body": "Attachment\n\nThe new patch above adds the suggested minus sign to give a more \"natural\" sort order, and adjusts the doctests accordingly; I've checked that with this modification all doctests still pass on my machine (32-bit Linux). I take back my comment about the `_repr_` method: all the native Python sequence types print with spaces in, so I agree that a space in modular symbols is better for consistency, and it certainly looks nicer.\n\nIn the process of fixing this I realised that the file `modular_symbols.py` isn't included in the reference manual, so the new patch does that too (and includes some ReST syntax fixes, so the manual page builds correctly and looks nice-ish). \n\nWilliam: I'm happy with your changes, so if you're happy with my subsequent ones, I guess we can call this a positive review.",
+    "body": "Attachment [trac_5968-part3.patch](tarball://root/attachments/some-uuid/ticket5968/trac_5968-part3.patch) by davidloeffler created at 2009-05-04 14:42:01\n\nThe new patch above adds the suggested minus sign to give a more \"natural\" sort order, and adjusts the doctests accordingly; I've checked that with this modification all doctests still pass on my machine (32-bit Linux). I take back my comment about the `_repr_` method: all the native Python sequence types print with spaces in, so I agree that a space in modular symbols is better for consistency, and it certainly looks nicer.\n\nIn the process of fixing this I realised that the file `modular_symbols.py` isn't included in the reference manual, so the new patch does that too (and includes some ReST syntax fixes, so the manual page builds correctly and looks nice-ish). \n\nWilliam: I'm happy with your changes, so if you're happy with my subsequent ones, I guess we can call this a positive review.",
     "created_at": "2009-05-04T14:42:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5968",
     "type": "issue_comment",
@@ -125,7 +125,7 @@ archive/issue_comments_047299.json:
 }
 ```
 
-Attachment
+Attachment [trac_5968-part3.patch](tarball://root/attachments/some-uuid/ticket5968/trac_5968-part3.patch) by davidloeffler created at 2009-05-04 14:42:01
 
 The new patch above adds the suggested minus sign to give a more "natural" sort order, and adjusts the doctests accordingly; I've checked that with this modification all doctests still pass on my machine (32-bit Linux). I take back my comment about the `_repr_` method: all the native Python sequence types print with spaces in, so I agree that a space in modular symbols is better for consistency, and it certainly looks nicer.
 

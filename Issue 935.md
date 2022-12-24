@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/935
 archive/issue_comments_005704.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-2.8.7-remove-deleted-files-from-repo.patch](tarball://root/attachments/some-uuid/ticket935/sage-2.8.7-remove-deleted-files-from-repo.patch) by mabshoff created at 2007-10-19 22:57:11",
     "created_at": "2007-10-19T22:57:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/935",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_005704.json:
 }
 ```
 
-Attachment
+Attachment [sage-2.8.7-remove-deleted-files-from-repo.patch](tarball://root/attachments/some-uuid/ticket935/sage-2.8.7-remove-deleted-files-from-repo.patch) by mabshoff created at 2007-10-19 22:57:11
 
 
 
@@ -210,7 +210,7 @@ Changing assignee from mabshoff to cwitty.
 archive/issue_comments_005713.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [935.patch](tarball://root/attachments/some-uuid/ticket935/935.patch) by cwitty created at 2007-10-28 17:48:58",
     "created_at": "2007-10-28T17:48:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/935",
     "type": "issue_comment",
@@ -219,7 +219,7 @@ archive/issue_comments_005713.json:
 }
 ```
 
-Attachment
+Attachment [935.patch](tarball://root/attachments/some-uuid/ticket935/935.patch) by cwitty created at 2007-10-28 17:48:58
 
 
 

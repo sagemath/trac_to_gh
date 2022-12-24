@@ -54,7 +54,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6291
 archive/issue_comments_050227.json:
 ```json
 {
-    "body": "Attachment\n\nThe identity Function",
+    "body": "Attachment [6291identityFuction.patch](tarball://root/attachments/some-uuid/ticket6291/6291identityFuction.patch) by jlefebvre created at 2009-06-15 04:05:26\n\nThe identity Function",
     "created_at": "2009-06-15T04:05:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6291",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_050227.json:
 }
 ```
 
-Attachment
+Attachment [6291identityFuction.patch](tarball://root/attachments/some-uuid/ticket6291/6291identityFuction.patch) by jlefebvre created at 2009-06-15 04:05:26
 
 The identity Function
 

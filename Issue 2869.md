@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2869
 archive/issue_comments_019690.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2869-resizer.patch](tarball://root/attachments/some-uuid/ticket2869/2869-resizer.patch) by boothby created at 2008-04-09 23:52:17",
     "created_at": "2008-04-09T23:52:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2869",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_019690.json:
 }
 ```
 
-Attachment
+Attachment [2869-resizer.patch](tarball://root/attachments/some-uuid/ticket2869/2869-resizer.patch) by boothby created at 2008-04-09 23:52:17
 
 
 
@@ -106,7 +106,7 @@ Merged in Sage 3.0.alpha4
 archive/issue_comments_019694.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2869-resizer_rebase-alpha5.patch](tarball://root/attachments/some-uuid/ticket2869/2869-resizer_rebase-alpha5.patch) by boothby created at 2008-04-17 18:28:39",
     "created_at": "2008-04-17T18:28:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2869",
     "type": "issue_comment",
@@ -115,7 +115,7 @@ archive/issue_comments_019694.json:
 }
 ```
 
-Attachment
+Attachment [2869-resizer_rebase-alpha5.patch](tarball://root/attachments/some-uuid/ticket2869/2869-resizer_rebase-alpha5.patch) by boothby created at 2008-04-17 18:28:39
 
 
 

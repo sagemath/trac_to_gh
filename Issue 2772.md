@@ -53,7 +53,7 @@ However, this is not ready for inclusion yet, because of some problem with the G
 archive/issue_comments_019053.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [singular-3-0-4-2-gcd-fix.patch](tarball://root/attachments/some-uuid/ticket2772/singular-3-0-4-2-gcd-fix.patch) by malb created at 2008-04-05 16:31:35",
     "created_at": "2008-04-05T16:31:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2772",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_019053.json:
 }
 ```
 
-Attachment
+Attachment [singular-3-0-4-2-gcd-fix.patch](tarball://root/attachments/some-uuid/ticket2772/singular-3-0-4-2-gcd-fix.patch) by malb created at 2008-04-05 16:31:35
 
 
 

@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2619
 archive/issue_comments_017992.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.",
+    "body": "Attachment [quotient_ring_gb.patch](tarball://root/attachments/some-uuid/ticket2619/quotient_ring_gb.patch) by mhansen created at 2008-03-21 02:05:40\n\nLooks good to me.",
     "created_at": "2008-03-21T02:05:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2619",
     "type": "issue_comment",
@@ -50,7 +50,7 @@ archive/issue_comments_017992.json:
 }
 ```
 
-Attachment
+Attachment [quotient_ring_gb.patch](tarball://root/attachments/some-uuid/ticket2619/quotient_ring_gb.patch) by mhansen created at 2008-03-21 02:05:40
 
 Looks good to me.
 

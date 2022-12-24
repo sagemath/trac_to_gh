@@ -141,7 +141,7 @@ Changing status from closed to reopened.
 archive/issue_comments_004316.json:
 ```json
 {
-    "body": "Attachment\n\nHG bundle attached.",
+    "body": "Attachment [736.hg](tarball://root/attachments/some-uuid/ticket736/736.hg) by mhansen created at 2007-10-04 15:23:44\n\nHG bundle attached.",
     "created_at": "2007-10-04T15:23:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/736",
     "type": "issue_comment",
@@ -150,7 +150,7 @@ archive/issue_comments_004316.json:
 }
 ```
 
-Attachment
+Attachment [736.hg](tarball://root/attachments/some-uuid/ticket736/736.hg) by mhansen created at 2007-10-04 15:23:44
 
 HG bundle attached.
 

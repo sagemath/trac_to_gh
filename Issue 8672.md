@@ -91,7 +91,7 @@ Nathann
 archive/issue_comments_078920.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8672.patch](tarball://root/attachments/some-uuid/ticket8672/trac_8672.patch) by ncohen created at 2010-04-11 12:55:13",
     "created_at": "2010-04-11T12:55:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8672",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_078920.json:
 }
 ```
 
-Attachment
+Attachment [trac_8672.patch](tarball://root/attachments/some-uuid/ticket8672/trac_8672.patch) by ncohen created at 2010-04-11 12:55:13
 
 
 

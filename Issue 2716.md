@@ -369,7 +369,7 @@ Michael
 archive/issue_comments_018731.json:
 ```json
 {
-    "body": "Attachment\n\nimproved improved patch (cleaned up import * issues)",
+    "body": "Attachment [trac_2716_improved.patch](tarball://root/attachments/some-uuid/ticket2716/trac_2716_improved.patch) by mhampton created at 2008-04-28 18:58:39\n\nimproved improved patch (cleaned up import * issues)",
     "created_at": "2008-04-28T18:58:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2716",
     "type": "issue_comment",
@@ -378,7 +378,7 @@ archive/issue_comments_018731.json:
 }
 ```
 
-Attachment
+Attachment [trac_2716_improved.patch](tarball://root/attachments/some-uuid/ticket2716/trac_2716_improved.patch) by mhampton created at 2008-04-28 18:58:39
 
 improved improved patch (cleaned up import * issues)
 

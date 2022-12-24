@@ -111,7 +111,7 @@ w
 archive/issue_comments_058561.json:
 ```json
 {
-    "body": "Attachment\n\nSolves problem, but in a very hackish way.",
+    "body": "Attachment [trac_7085_awful_hack.patch](tarball://root/attachments/some-uuid/ticket7085/trac_7085_awful_hack.patch) by mhampton created at 2011-01-11 06:06:47\n\nSolves problem, but in a very hackish way.",
     "created_at": "2011-01-11T06:06:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7085",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_058561.json:
 }
 ```
 
-Attachment
+Attachment [trac_7085_awful_hack.patch](tarball://root/attachments/some-uuid/ticket7085/trac_7085_awful_hack.patch) by mhampton created at 2011-01-11 06:06:47
 
 Solves problem, but in a very hackish way.
 

@@ -740,7 +740,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_079631.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-8720-printing-complex-zero.patch](tarball://root/attachments/some-uuid/ticket8720/trac-8720-printing-complex-zero.patch) by mhansen created at 2012-03-29 20:20:06",
     "created_at": "2012-03-29T20:20:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8720",
     "type": "issue_comment",
@@ -749,7 +749,7 @@ archive/issue_comments_079631.json:
 }
 ```
 
-Attachment
+Attachment [trac-8720-printing-complex-zero.patch](tarball://root/attachments/some-uuid/ticket8720/trac-8720-printing-complex-zero.patch) by mhansen created at 2012-03-29 20:20:06
 
 
 
@@ -758,7 +758,7 @@ Attachment
 archive/issue_comments_079632.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8720-doctests-2.patch](tarball://root/attachments/some-uuid/ticket8720/trac_8720-doctests-2.patch) by mhansen created at 2012-03-29 20:20:19",
     "created_at": "2012-03-29T20:20:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8720",
     "type": "issue_comment",
@@ -767,7 +767,7 @@ archive/issue_comments_079632.json:
 }
 ```
 
-Attachment
+Attachment [trac_8720-doctests-2.patch](tarball://root/attachments/some-uuid/ticket8720/trac_8720-doctests-2.patch) by mhansen created at 2012-03-29 20:20:19
 
 
 
@@ -858,7 +858,7 @@ The following tests failed:
 archive/issue_comments_079637.json:
 ```json
 {
-    "body": "Attachment\n\napply this patch on top of the other three",
+    "body": "Attachment [trac_8720-doctests-3.patch](tarball://root/attachments/some-uuid/ticket8720/trac_8720-doctests-3.patch) by zimmerma created at 2012-04-03 06:57:15\n\napply this patch on top of the other three",
     "created_at": "2012-04-03T06:57:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8720",
     "type": "issue_comment",
@@ -867,7 +867,7 @@ archive/issue_comments_079637.json:
 }
 ```
 
-Attachment
+Attachment [trac_8720-doctests-3.patch](tarball://root/attachments/some-uuid/ticket8720/trac_8720-doctests-3.patch) by zimmerma created at 2012-04-03 06:57:15
 
 apply this patch on top of the other three
 

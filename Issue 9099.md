@@ -317,7 +317,7 @@ Relocation errors seen on 64-bit SPARC (t2.math) when buidling with LD_OPTIONS=-
 archive/issue_comments_084549.json:
 ```json
 {
-    "body": "Attachment\n\nThis has been fixed by the upgrade to ECL on #10766, so this can be closed as fixed in sage-4.7.alpha1. \n\nDave",
+    "body": "Attachment [SPARC-reloaction-errors.txt](tarball://root/attachments/some-uuid/ticket9099/SPARC-reloaction-errors.txt) by drkirkby created at 2011-04-02 11:53:25\n\nThis has been fixed by the upgrade to ECL on #10766, so this can be closed as fixed in sage-4.7.alpha1. \n\nDave",
     "created_at": "2011-04-02T11:53:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9099",
     "type": "issue_comment",
@@ -326,7 +326,7 @@ archive/issue_comments_084549.json:
 }
 ```
 
-Attachment
+Attachment [SPARC-reloaction-errors.txt](tarball://root/attachments/some-uuid/ticket9099/SPARC-reloaction-errors.txt) by drkirkby created at 2011-04-02 11:53:25
 
 This has been fixed by the upgrade to ECL on #10766, so this can be closed as fixed in sage-4.7.alpha1. 
 

@@ -73,7 +73,7 @@ Changing assignee from tba to mhansen.
 archive/issue_comments_016886.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached a patch which should be applied to hg_doc.",
+    "body": "Attachment [2492.patch](tarball://root/attachments/some-uuid/ticket2492/2492.patch) by mhansen created at 2008-03-16 21:02:24\n\nI've attached a patch which should be applied to hg_doc.",
     "created_at": "2008-03-16T21:02:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2492",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_016886.json:
 }
 ```
 
-Attachment
+Attachment [2492.patch](tarball://root/attachments/some-uuid/ticket2492/2492.patch) by mhansen created at 2008-03-16 21:02:24
 
 I've attached a patch which should be applied to hg_doc.
 

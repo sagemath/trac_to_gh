@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3159
 archive/issue_comments_021912.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ntl-dynamic-library.patch](tarball://root/attachments/some-uuid/ticket3159/ntl-dynamic-library.patch) by tabbott created at 2008-05-11 16:58:37",
     "created_at": "2008-05-11T16:58:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3159",
     "type": "issue_comment",
@@ -43,7 +43,7 @@ archive/issue_comments_021912.json:
 }
 ```
 
-Attachment
+Attachment [ntl-dynamic-library.patch](tarball://root/attachments/some-uuid/ticket3159/ntl-dynamic-library.patch) by tabbott created at 2008-05-11 16:58:37
 
 
 
@@ -101,7 +101,7 @@ Francois
 archive/issue_comments_021915.json:
 ```json
 {
-    "body": "Attachment\n\nI have fixed a small couple issues with the patch in\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.2/alpha0/ntl-5.4.2.p3.spkg\n\nI did not patch src/src/mfile, but the one in patches, so the new Debian package as well as the ebuild needs to take that into consideration. The spkg builds fine on OSX and Linux, so positive review.\n\nCheers,\n\nMichael",
+    "body": "Attachment [spkg-install.patch](tarball://root/attachments/some-uuid/ticket3159/spkg-install.patch) by mabshoff created at 2008-05-11 21:20:07\n\nI have fixed a small couple issues with the patch in\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.2/alpha0/ntl-5.4.2.p3.spkg\n\nI did not patch src/src/mfile, but the one in patches, so the new Debian package as well as the ebuild needs to take that into consideration. The spkg builds fine on OSX and Linux, so positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-05-11T21:20:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3159",
     "type": "issue_comment",
@@ -110,7 +110,7 @@ archive/issue_comments_021915.json:
 }
 ```
 
-Attachment
+Attachment [spkg-install.patch](tarball://root/attachments/some-uuid/ticket3159/spkg-install.patch) by mabshoff created at 2008-05-11 21:20:07
 
 I have fixed a small couple issues with the patch in
 
@@ -223,7 +223,7 @@ I noticed the spkg-install script now has the current NTL version number in it; 
 archive/issue_comments_021921.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ntl-forget-version.patch](tarball://root/attachments/some-uuid/ticket3159/ntl-forget-version.patch) by tabbott created at 2008-05-20 17:26:51",
     "created_at": "2008-05-20T17:26:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3159",
     "type": "issue_comment",
@@ -232,4 +232,4 @@ archive/issue_comments_021921.json:
 }
 ```
 
-Attachment
+Attachment [ntl-forget-version.patch](tarball://root/attachments/some-uuid/ticket3159/ntl-forget-version.patch) by tabbott created at 2008-05-20 17:26:51

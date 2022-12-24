@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3092
 archive/issue_comments_021343.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [singular-permissions.patch](tarball://root/attachments/some-uuid/ticket3092/singular-permissions.patch) by tabbott created at 2008-05-03 08:21:42",
     "created_at": "2008-05-03T08:21:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3092",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_021343.json:
 }
 ```
 
-Attachment
+Attachment [singular-permissions.patch](tarball://root/attachments/some-uuid/ticket3092/singular-permissions.patch) by tabbott created at 2008-05-03 08:21:42
 
 
 
@@ -161,7 +161,7 @@ Resolution changed from fixed to
 archive/issue_comments_021350.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [singular-permissions.2.patch](tarball://root/attachments/some-uuid/ticket3092/singular-permissions.2.patch) by tabbott created at 2008-05-03 18:41:29",
     "created_at": "2008-05-03T18:41:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3092",
     "type": "issue_comment",
@@ -170,7 +170,7 @@ archive/issue_comments_021350.json:
 }
 ```
 
-Attachment
+Attachment [singular-permissions.2.patch](tarball://root/attachments/some-uuid/ticket3092/singular-permissions.2.patch) by tabbott created at 2008-05-03 18:41:29
 
 
 

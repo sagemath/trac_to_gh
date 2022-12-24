@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9407
 archive/issue_comments_089632.json:
 ```json
 {
-    "body": "Attachment\n\nexported against 4.4.4.alpha0",
+    "body": "Attachment [trac_9407.patch](tarball://root/attachments/some-uuid/ticket9407/trac_9407.patch) by wuthrich created at 2010-07-02 05:27:33\n\nexported against 4.4.4.alpha0",
     "created_at": "2010-07-02T05:27:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9407",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_089632.json:
 }
 ```
 
-Attachment
+Attachment [trac_9407.patch](tarball://root/attachments/some-uuid/ticket9407/trac_9407.patch) by wuthrich created at 2010-07-02 05:27:33
 
 exported against 4.4.4.alpha0
 
@@ -77,7 +77,7 @@ exported against 4.5.2.alpha1
 archive/issue_comments_089634.json:
 ```json
 {
-    "body": "Attachment\n\nApart from the above the patch here also introduces the function `is_abelian` and improves `is_galois` for number fields. Subfields of abelian fields inherit both.\n\nThere are a few minor things that could be improved at a later state (which I write down here so that I won't forget) :\n\n* The 2-part of the conductor needs adjustment\n\n* We can prove that a field is NOT abelian even if we can not decide that it is Galois, by finding that a prime congruent to 1 modulo the hypothetical conductor that does not completely split.\n\n* Is there some effective Chebotarev that can be used to prove that a field is Galois ?",
+    "body": "Attachment [trac_9407.2.patch](tarball://root/attachments/some-uuid/ticket9407/trac_9407.2.patch) by wuthrich created at 2010-07-30 17:19:26\n\nApart from the above the patch here also introduces the function `is_abelian` and improves `is_galois` for number fields. Subfields of abelian fields inherit both.\n\nThere are a few minor things that could be improved at a later state (which I write down here so that I won't forget) :\n\n* The 2-part of the conductor needs adjustment\n\n* We can prove that a field is NOT abelian even if we can not decide that it is Galois, by finding that a prime congruent to 1 modulo the hypothetical conductor that does not completely split.\n\n* Is there some effective Chebotarev that can be used to prove that a field is Galois ?",
     "created_at": "2010-07-30T17:19:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9407",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_089634.json:
 }
 ```
 
-Attachment
+Attachment [trac_9407.2.patch](tarball://root/attachments/some-uuid/ticket9407/trac_9407.2.patch) by wuthrich created at 2010-07-30 17:19:26
 
 Apart from the above the patch here also introduces the function `is_abelian` and improves `is_galois` for number fields. Subfields of abelian fields inherit both.
 
@@ -351,7 +351,7 @@ replaces the previsou patches. exported against 4.6.1
 archive/issue_comments_089643.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9407_new.patch](tarball://root/attachments/some-uuid/ticket9407/trac_9407_new.patch) by wuthrich created at 2011-02-07 17:29:14",
     "created_at": "2011-02-07T17:29:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9407",
     "type": "issue_comment",
@@ -360,7 +360,7 @@ archive/issue_comments_089643.json:
 }
 ```
 
-Attachment
+Attachment [trac_9407_new.patch](tarball://root/attachments/some-uuid/ticket9407/trac_9407_new.patch) by wuthrich created at 2011-02-07 17:29:14
 
 
 

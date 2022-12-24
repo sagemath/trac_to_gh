@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7981
 archive/issue_comments_069639.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-7981-show_options.patch](tarball://root/attachments/some-uuid/ticket7981/trac-7981-show_options.patch) by jason created at 2010-01-19 00:15:40",
     "created_at": "2010-01-19T00:15:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
@@ -53,7 +53,7 @@ archive/issue_comments_069639.json:
 }
 ```
 
-Attachment
+Attachment [trac-7981-show_options.patch](tarball://root/attachments/some-uuid/ticket7981/trac-7981-show_options.patch) by jason created at 2010-01-19 00:15:40
 
 
 
@@ -463,7 +463,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_069658.json:
 ```json
 {
-    "body": "Attachment\n\nAlternative patch",
+    "body": "Attachment [trac-7981-save_ignores_preset_plotting_options.patch](tarball://root/attachments/some-uuid/ticket7981/trac-7981-save_ignores_preset_plotting_options.patch) by novoselt created at 2011-01-13 03:18:03\n\nAlternative patch",
     "created_at": "2011-01-13T03:18:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
@@ -472,7 +472,7 @@ archive/issue_comments_069658.json:
 }
 ```
 
-Attachment
+Attachment [trac-7981-save_ignores_preset_plotting_options.patch](tarball://root/attachments/some-uuid/ticket7981/trac-7981-save_ignores_preset_plotting_options.patch) by novoselt created at 2011-01-13 03:18:03
 
 Alternative patch
 
@@ -640,7 +640,7 @@ reviewer patch
 archive/issue_comments_069666.json:
 ```json
 {
-    "body": "Attachment\n\nJust an update - apparently \n\n```\nsage: animate([plot(sin(x + float(k)), (0, 2*pi), ymin=-5, ymax=5)\n...            for k in srange(0,2*pi,0.3)]).show() # optional\n```\n\ndoes not obey the optional test, for it created a new file (I must have ImageMagick!).  We don't create non-temp new files in doctests, though, so this had to be changed.  New reviewer patch fixes this as well, maintains positive review.  Should not affect the plot patches which depend on this.",
+    "body": "Attachment [trac_7981-reviewer.patch](tarball://root/attachments/some-uuid/ticket7981/trac_7981-reviewer.patch) by kcrisman created at 2011-01-17 18:42:01\n\nJust an update - apparently \n\n```\nsage: animate([plot(sin(x + float(k)), (0, 2*pi), ymin=-5, ymax=5)\n...            for k in srange(0,2*pi,0.3)]).show() # optional\n```\n\ndoes not obey the optional test, for it created a new file (I must have ImageMagick!).  We don't create non-temp new files in doctests, though, so this had to be changed.  New reviewer patch fixes this as well, maintains positive review.  Should not affect the plot patches which depend on this.",
     "created_at": "2011-01-17T18:42:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
@@ -649,7 +649,7 @@ archive/issue_comments_069666.json:
 }
 ```
 
-Attachment
+Attachment [trac_7981-reviewer.patch](tarball://root/attachments/some-uuid/ticket7981/trac_7981-reviewer.patch) by kcrisman created at 2011-01-17 18:42:01
 
 Just an update - apparently 
 

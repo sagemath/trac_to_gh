@@ -328,7 +328,7 @@ Ah, forgot about that. Thanks for reminder, done now.
 archive/issue_comments_028401.json:
 ```json
 {
-    "body": "Attachment\n\nrebased on v5.4",
+    "body": "Attachment [trac3955-find_local_maximum-ff.2.patch](tarball://root/attachments/some-uuid/ticket3955/trac3955-find_local_maximum-ff.2.patch) by tkluck created at 2012-12-23 20:59:24\n\nrebased on v5.4",
     "created_at": "2012-12-23T20:59:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3955",
     "type": "issue_comment",
@@ -337,7 +337,7 @@ archive/issue_comments_028401.json:
 }
 ```
 
-Attachment
+Attachment [trac3955-find_local_maximum-ff.2.patch](tarball://root/attachments/some-uuid/ticket3955/trac3955-find_local_maximum-ff.2.patch) by tkluck created at 2012-12-23 20:59:24
 
 rebased on v5.4
 

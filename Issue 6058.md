@@ -51,7 +51,7 @@ A baby step towards top-level statistics
 archive/issue_comments_048233.json:
 ```json
 {
-    "body": "Attachment\n\nComments are welcome on this very initial effort.",
+    "body": "Attachment [trac_6058_basic_stats1.patch](tarball://root/attachments/some-uuid/ticket6058/trac_6058_basic_stats1.patch) by mhampton created at 2009-05-17 21:19:07\n\nComments are welcome on this very initial effort.",
     "created_at": "2009-05-17T21:19:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6058",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_048233.json:
 }
 ```
 
-Attachment
+Attachment [trac_6058_basic_stats1.patch](tarball://root/attachments/some-uuid/ticket6058/trac_6058_basic_stats1.patch) by mhampton created at 2009-05-17 21:19:07
 
 Comments are welcome on this very initial effort.
 

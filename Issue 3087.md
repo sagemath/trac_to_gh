@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3087
 archive/issue_comments_021318.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [palp-copyright-fix.patch](tarball://root/attachments/some-uuid/ticket3087/palp-copyright-fix.patch) by tabbott created at 2008-05-03 04:41:31",
     "created_at": "2008-05-03T04:41:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3087",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_021318.json:
 }
 ```
 
-Attachment
+Attachment [palp-copyright-fix.patch](tarball://root/attachments/some-uuid/ticket3087/palp-copyright-fix.patch) by tabbott created at 2008-05-03 04:41:31
 
 
 

@@ -137,7 +137,7 @@ Patch provides extension of the gap interface and of matrix groups to the case o
 archive/issue_comments_016158.json:
 ```json
 {
-    "body": "Attachment\n\nApplies and passes tests for me.",
+    "body": "Attachment [about_numberfields.patch](tarball://root/attachments/some-uuid/ticket2395/about_numberfields.patch) by mhansen created at 2008-03-05 13:36:20\n\nApplies and passes tests for me.",
     "created_at": "2008-03-05T13:36:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2395",
     "type": "issue_comment",
@@ -146,7 +146,7 @@ archive/issue_comments_016158.json:
 }
 ```
 
-Attachment
+Attachment [about_numberfields.patch](tarball://root/attachments/some-uuid/ticket2395/about_numberfields.patch) by mhansen created at 2008-03-05 13:36:20
 
 Applies and passes tests for me.
 

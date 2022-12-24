@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7635
 archive/issue_comments_065249.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sagenb_7635.patch](tarball://root/attachments/some-uuid/ticket7635/sagenb_7635.patch) by was created at 2009-12-09 06:15:26",
     "created_at": "2009-12-09T06:15:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7635",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_065249.json:
 }
 ```
 
-Attachment
+Attachment [sagenb_7635.patch](tarball://root/attachments/some-uuid/ticket7635/sagenb_7635.patch) by was created at 2009-12-09 06:15:26
 
 
 
@@ -154,7 +154,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_065255.json:
 ```json
 {
-    "body": "Attachment\n\nThe code here is simple, and ipaddr.py will be in Python 2.7 and is (I think) in Python 3.1, so we can drop that later. The only thing I'm worried about now is something that confused me when testing this -- you have to specify `address=*` *in addition to'' `subnet=[...]`. That strikes me as confusing -- they seem to be saying the same thing.\n\nOf course, if you read carefully and understand networking, they're not -- `address` refers to a network *interface*. So perhaps we can change `address` to `interface`, but continue accepting `address` for backwards compatibility? Something like this in the docstring:\n\n```\n            - ``interface``       -- (default: 'localhost'), address of network\n              interface to listen on; give '' to listen on all interfaces. You may \n              use ``address`` here for backwards compatibility, but this is deprecated\n              and will be removed in the future.\n```\n\nalong with a warning issued when `notebook()` gets an `address=` keyword.\n\nOr, we could have `subnets` imply `address=''`.\n\nThis will be a positive review once this small issue is sorted out.",
+    "body": "Attachment [sagenb_7635-part2.patch](tarball://root/attachments/some-uuid/ticket7635/sagenb_7635-part2.patch) by ddrake created at 2009-12-09 08:07:32\n\nThe code here is simple, and ipaddr.py will be in Python 2.7 and is (I think) in Python 3.1, so we can drop that later. The only thing I'm worried about now is something that confused me when testing this -- you have to specify `address=*` *in addition to'' `subnet=[...]`. That strikes me as confusing -- they seem to be saying the same thing.\n\nOf course, if you read carefully and understand networking, they're not -- `address` refers to a network *interface*. So perhaps we can change `address` to `interface`, but continue accepting `address` for backwards compatibility? Something like this in the docstring:\n\n```\n            - ``interface``       -- (default: 'localhost'), address of network\n              interface to listen on; give '' to listen on all interfaces. You may \n              use ``address`` here for backwards compatibility, but this is deprecated\n              and will be removed in the future.\n```\n\nalong with a warning issued when `notebook()` gets an `address=` keyword.\n\nOr, we could have `subnets` imply `address=''`.\n\nThis will be a positive review once this small issue is sorted out.",
     "created_at": "2009-12-09T08:07:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7635",
     "type": "issue_comment",
@@ -163,7 +163,7 @@ archive/issue_comments_065255.json:
 }
 ```
 
-Attachment
+Attachment [sagenb_7635-part2.patch](tarball://root/attachments/some-uuid/ticket7635/sagenb_7635-part2.patch) by ddrake created at 2009-12-09 08:07:32
 
 The code here is simple, and ipaddr.py will be in Python 2.7 and is (I think) in Python 3.1, so we can drop that later. The only thing I'm worried about now is something that confused me when testing this -- you have to specify `address=*` *in addition to'' `subnet=[...]`. That strikes me as confusing -- they seem to be saying the same thing.
 
@@ -461,7 +461,7 @@ William
 archive/issue_comments_065268.json:
 ```json
 {
-    "body": "Attachment\n\nuse 127.0.0.0/8 instead of only 127.0.0.1",
+    "body": "Attachment [trac_7635_localhost_fix.patch](tarball://root/attachments/some-uuid/ticket7635/trac_7635_localhost_fix.patch) by ddrake created at 2009-12-11 02:30:58\n\nuse 127.0.0.0/8 instead of only 127.0.0.1",
     "created_at": "2009-12-11T02:30:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7635",
     "type": "issue_comment",
@@ -470,7 +470,7 @@ archive/issue_comments_065268.json:
 }
 ```
 
-Attachment
+Attachment [trac_7635_localhost_fix.patch](tarball://root/attachments/some-uuid/ticket7635/trac_7635_localhost_fix.patch) by ddrake created at 2009-12-11 02:30:58
 
 use 127.0.0.0/8 instead of only 127.0.0.1
 

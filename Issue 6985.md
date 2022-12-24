@@ -69,7 +69,7 @@ Do this and/or #6947 address the issues with complex_plot not plotting some func
 archive/issue_comments_057766.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6985.patch](tarball://root/attachments/some-uuid/ticket6985/trac_6985.patch) by mhansen created at 2009-09-24 06:41:19",
     "created_at": "2009-09-24T06:41:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6985",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_057766.json:
 }
 ```
 
-Attachment
+Attachment [trac_6985.patch](tarball://root/attachments/some-uuid/ticket6985/trac_6985.patch) by mhansen created at 2009-09-24 06:41:19
 
 
 
@@ -454,7 +454,7 @@ Nope, this patch is ready to go in (maybe after you add a patch with the doctest
 archive/issue_comments_057783.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of previous patch",
+    "body": "Attachment [trac-6985-CDF-domain.patch](tarball://root/attachments/some-uuid/ticket6985/trac-6985-CDF-domain.patch) by jason created at 2009-09-25 06:06:28\n\napply on top of previous patch",
     "created_at": "2009-09-25T06:06:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6985",
     "type": "issue_comment",
@@ -463,7 +463,7 @@ archive/issue_comments_057783.json:
 }
 ```
 
-Attachment
+Attachment [trac-6985-CDF-domain.patch](tarball://root/attachments/some-uuid/ticket6985/trac-6985-CDF-domain.patch) by jason created at 2009-09-25 06:06:28
 
 apply on top of previous patch
 
@@ -510,7 +510,7 @@ Apply on top of first patch, instead of other CDF patch
 archive/issue_comments_057786.json:
 ```json
 {
-    "body": "Attachment\n\nOkay, positive review.  I put the example I wanted under tests instead, because it's really noticeably slower.",
+    "body": "Attachment [trac_6985-CDF_and_reviewer.patch](tarball://root/attachments/some-uuid/ticket6985/trac_6985-CDF_and_reviewer.patch) by kcrisman created at 2009-09-25 13:32:32\n\nOkay, positive review.  I put the example I wanted under tests instead, because it's really noticeably slower.",
     "created_at": "2009-09-25T13:32:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6985",
     "type": "issue_comment",
@@ -519,7 +519,7 @@ archive/issue_comments_057786.json:
 }
 ```
 
-Attachment
+Attachment [trac_6985-CDF_and_reviewer.patch](tarball://root/attachments/some-uuid/ticket6985/trac_6985-CDF_and_reviewer.patch) by kcrisman created at 2009-09-25 13:32:32
 
 Okay, positive review.  I put the example I wanted under tests instead, because it's really noticeably slower.
 

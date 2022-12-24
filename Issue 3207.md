@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3207
 archive/issue_comments_022164.json:
 ```json
 {
-    "body": "Attachment\n\nApply to the extcode repository",
+    "body": "Attachment [sage-3207-jsmath-upgrade-to-3.5.patch](tarball://root/attachments/some-uuid/ticket3207/sage-3207-jsmath-upgrade-to-3.5.patch) by jason created at 2008-05-14 22:34:17\n\nApply to the extcode repository",
     "created_at": "2008-05-14T22:34:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3207",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_022164.json:
 }
 ```
 
-Attachment
+Attachment [sage-3207-jsmath-upgrade-to-3.5.patch](tarball://root/attachments/some-uuid/ticket3207/sage-3207-jsmath-upgrade-to-3.5.patch) by jason created at 2008-05-14 22:34:17
 
 Apply to the extcode repository
 

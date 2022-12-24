@@ -134,7 +134,7 @@ Nathann
 archive/issue_comments_064357.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7563.patch](tarball://root/attachments/some-uuid/ticket7563/trac_7563.patch) by ncohen created at 2010-06-12 20:45:06",
     "created_at": "2010-06-12T20:45:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7563",
     "type": "issue_comment",
@@ -143,7 +143,7 @@ archive/issue_comments_064357.json:
 }
 ```
 
-Attachment
+Attachment [trac_7563.patch](tarball://root/attachments/some-uuid/ticket7563/trac_7563.patch) by ncohen created at 2010-06-12 20:45:06
 
 
 

@@ -59,7 +59,7 @@ I've added a patch that removes the check for the `SAGE_PARALLEL_DIST` flag, and
 archive/issue_comments_049736.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-6234.patch](tarball://root/attachments/some-uuid/ticket6234/trac-6234.patch) by craigcitro created at 2009-06-10 00:39:43",
     "created_at": "2009-06-10T00:39:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6234",
     "type": "issue_comment",
@@ -68,7 +68,7 @@ archive/issue_comments_049736.json:
 }
 ```
 
-Attachment
+Attachment [trac-6234.patch](tarball://root/attachments/some-uuid/ticket6234/trac-6234.patch) by craigcitro created at 2009-06-10 00:39:43
 
 
 
@@ -165,7 +165,7 @@ ERROR installing SAGE
 archive/issue_comments_049740.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-6234-pt2.patch](tarball://root/attachments/some-uuid/ticket6234/trac-6234-pt2.patch) by craigcitro created at 2009-06-12 02:12:34",
     "created_at": "2009-06-12T02:12:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6234",
     "type": "issue_comment",
@@ -174,7 +174,7 @@ archive/issue_comments_049740.json:
 }
 ```
 
-Attachment
+Attachment [trac-6234-pt2.patch](tarball://root/attachments/some-uuid/ticket6234/trac-6234-pt2.patch) by craigcitro created at 2009-06-12 02:12:34
 
 
 

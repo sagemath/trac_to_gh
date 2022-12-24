@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3513
 archive/issue_comments_024745.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3513-kill_compute_dual.patch](tarball://root/attachments/some-uuid/ticket3513/3513-kill_compute_dual.patch) by AlexGhitza created at 2008-07-03 17:26:22",
     "created_at": "2008-07-03T17:26:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3513",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_024745.json:
 }
 ```
 
-Attachment
+Attachment [3513-kill_compute_dual.patch](tarball://root/attachments/some-uuid/ticket3513/3513-kill_compute_dual.patch) by AlexGhitza created at 2008-07-03 17:26:22
 
 
 

@@ -72,7 +72,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/985
 archive/issue_comments_006022.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [985.patch](tarball://root/attachments/some-uuid/ticket985/985.patch) by mhansen created at 2007-10-25 02:07:58",
     "created_at": "2007-10-25T02:07:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/985",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_006022.json:
 }
 ```
 
-Attachment
+Attachment [985.patch](tarball://root/attachments/some-uuid/ticket985/985.patch) by mhansen created at 2007-10-25 02:07:58
 
 
 
@@ -126,7 +126,7 @@ Changing status from new to assigned.
 archive/issue_comments_006025.json:
 ```json
 {
-    "body": "Attachment\n\nUse the second patch.",
+    "body": "Attachment [985.2.patch](tarball://root/attachments/some-uuid/ticket985/985.2.patch) by mhansen created at 2007-10-25 02:08:44\n\nUse the second patch.",
     "created_at": "2007-10-25T02:08:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/985",
     "type": "issue_comment",
@@ -135,7 +135,7 @@ archive/issue_comments_006025.json:
 }
 ```
 
-Attachment
+Attachment [985.2.patch](tarball://root/attachments/some-uuid/ticket985/985.2.patch) by mhansen created at 2007-10-25 02:08:44
 
 Use the second patch.
 

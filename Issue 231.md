@@ -68,7 +68,7 @@ this fixes the bug (and more)
 archive/issue_comments_001026.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5958.patch](tarball://root/attachments/some-uuid/ticket231/5958.patch) by was created at 2007-08-29 02:37:55",
     "created_at": "2007-08-29T02:37:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/231",
     "type": "issue_comment",
@@ -77,7 +77,7 @@ archive/issue_comments_001026.json:
 }
 ```
 
-Attachment
+Attachment [5958.patch](tarball://root/attachments/some-uuid/ticket231/5958.patch) by was created at 2007-08-29 02:37:55
 
 
 

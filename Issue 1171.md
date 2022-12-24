@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1171
 archive/issue_comments_007176.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1171-quadratic-field-new.patch](tarball://root/attachments/some-uuid/ticket1171/1171-quadratic-field-new.patch) by robertwb created at 2007-12-02 09:32:20",
     "created_at": "2007-12-02T09:32:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1171",
     "type": "issue_comment",
@@ -41,7 +41,7 @@ archive/issue_comments_007176.json:
 }
 ```
 
-Attachment
+Attachment [1171-quadratic-field-new.patch](tarball://root/attachments/some-uuid/ticket1171/1171-quadratic-field-new.patch) by robertwb created at 2007-12-02 09:32:20
 
 
 

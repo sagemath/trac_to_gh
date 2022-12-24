@@ -53,7 +53,7 @@ Changing status from new to needs_work.
 archive/issue_comments_089163.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9380_Kaehler_Mori_cones.patch](tarball://root/attachments/some-uuid/ticket9380/trac_9380_Kaehler_Mori_cones.patch) by novoselt created at 2010-06-29 19:37:33",
     "created_at": "2010-06-29T19:37:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9380",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_089163.json:
 }
 ```
 
-Attachment
+Attachment [trac_9380_Kaehler_Mori_cones.patch](tarball://root/attachments/some-uuid/ticket9380/trac_9380_Kaehler_Mori_cones.patch) by novoselt created at 2010-06-29 19:37:33
 
 
 

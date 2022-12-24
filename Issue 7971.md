@@ -53,7 +53,7 @@ David - maybe you can run the optional tests as part of a review?
 archive/issue_comments_069532.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7971_method_algorithm.patch](tarball://root/attachments/some-uuid/ticket7971/trac_7971_method_algorithm.patch) by rbeezer created at 2010-01-18 05:42:18",
     "created_at": "2010-01-18T05:42:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7971",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_069532.json:
 }
 ```
 
-Attachment
+Attachment [trac_7971_method_algorithm.patch](tarball://root/attachments/some-uuid/ticket7971/trac_7971_method_algorithm.patch) by rbeezer created at 2010-01-18 05:42:18
 
 
 

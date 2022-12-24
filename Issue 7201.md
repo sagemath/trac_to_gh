@@ -75,7 +75,7 @@ Ticket #2902 is related.
 archive/issue_comments_059760.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-7201-auto-flow-input-cells.patch](tarball://root/attachments/some-uuid/ticket7201/trac-7201-auto-flow-input-cells.patch) by jason created at 2010-05-13 11:41:57",
     "created_at": "2010-05-13T11:41:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7201",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_059760.json:
 }
 ```
 
-Attachment
+Attachment [trac-7201-auto-flow-input-cells.patch](tarball://root/attachments/some-uuid/ticket7201/trac-7201-auto-flow-input-cells.patch) by jason created at 2010-05-13 11:41:57
 
 
 
@@ -129,7 +129,7 @@ Changing status from new to needs_review.
 archive/issue_comments_059763.json:
 ```json
 {
-    "body": "Attachment\n\nEdits the SASS source files too.",
+    "body": "Attachment [trac_7201-reviewer.patch](tarball://root/attachments/some-uuid/ticket7201/trac_7201-reviewer.patch) by timdumol created at 2010-07-05 10:11:36\n\nEdits the SASS source files too.",
     "created_at": "2010-07-05T10:11:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7201",
     "type": "issue_comment",
@@ -138,7 +138,7 @@ archive/issue_comments_059763.json:
 }
 ```
 
-Attachment
+Attachment [trac_7201-reviewer.patch](tarball://root/attachments/some-uuid/ticket7201/trac_7201-reviewer.patch) by timdumol created at 2010-07-05 10:11:36
 
 Edits the SASS source files too.
 

@@ -78,7 +78,7 @@ Proposed patch
 archive/issue_comments_019442.json:
 ```json
 {
-    "body": "Attachment\n\nI propose the attached patch. \nHowever, I still could not test it on a OS-X 10.4 since I only have access on 10.5 boxes.\nLet me know if it fixes the bug, and I will post the updated linbox spkg.",
+    "body": "Attachment [commentatorOSX10.4.patch](tarball://root/attachments/some-uuid/ticket2833/commentatorOSX10.4.patch) by cpernet created at 2008-04-09 16:40:00\n\nI propose the attached patch. \nHowever, I still could not test it on a OS-X 10.4 since I only have access on 10.5 boxes.\nLet me know if it fixes the bug, and I will post the updated linbox spkg.",
     "created_at": "2008-04-09T16:40:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2833",
     "type": "issue_comment",
@@ -87,7 +87,7 @@ archive/issue_comments_019442.json:
 }
 ```
 
-Attachment
+Attachment [commentatorOSX10.4.patch](tarball://root/attachments/some-uuid/ticket2833/commentatorOSX10.4.patch) by cpernet created at 2008-04-09 16:40:00
 
 I propose the attached patch. 
 However, I still could not test it on a OS-X 10.4 since I only have access on 10.5 boxes.

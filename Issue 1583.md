@@ -82,7 +82,7 @@ Changing status from new to assigned.
 archive/issue_comments_010083.json:
 ```json
 {
-    "body": "Attachment\n\nAdded a patch to fix this. I actually add the _is_simple flag when the cuspidal subspace is created -- when that's one-dimensional, we know it must be simple, so it seems easier to tag it then, rather than do something involving checking stability under the Hecke operators ...",
+    "body": "Attachment [craigcitro-1583.patch](tarball://root/attachments/some-uuid/ticket1583/craigcitro-1583.patch) by craigcitro created at 2008-01-21 06:10:22\n\nAdded a patch to fix this. I actually add the _is_simple flag when the cuspidal subspace is created -- when that's one-dimensional, we know it must be simple, so it seems easier to tag it then, rather than do something involving checking stability under the Hecke operators ...",
     "created_at": "2008-01-21T06:10:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1583",
     "type": "issue_comment",
@@ -91,7 +91,7 @@ archive/issue_comments_010083.json:
 }
 ```
 
-Attachment
+Attachment [craigcitro-1583.patch](tarball://root/attachments/some-uuid/ticket1583/craigcitro-1583.patch) by craigcitro created at 2008-01-21 06:10:22
 
 Added a patch to fix this. I actually add the _is_simple flag when the cuspidal subspace is created -- when that's one-dimensional, we know it must be simple, so it seems easier to tag it then, rather than do something involving checking stability under the Hecke operators ...
 

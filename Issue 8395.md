@@ -63,7 +63,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8395
 archive/issue_comments_075217.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-8395_degree.patch](tarball://root/attachments/some-uuid/ticket8395/trac-8395_degree.patch) by mvngu created at 2010-12-03 13:59:16",
     "created_at": "2010-12-03T13:59:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8395",
     "type": "issue_comment",
@@ -72,7 +72,7 @@ archive/issue_comments_075217.json:
 }
 ```
 
-Attachment
+Attachment [trac-8395_degree.patch](tarball://root/attachments/some-uuid/ticket8395/trac-8395_degree.patch) by mvngu created at 2010-12-03 13:59:16
 
 
 
@@ -99,7 +99,7 @@ Changing status from new to needs_review.
 archive/issue_comments_075219.json:
 ```json
 {
-    "body": "Attachment\n\napply after previous patch",
+    "body": "Attachment [trac_8395-part2.patch](tarball://root/attachments/some-uuid/ticket8395/trac_8395-part2.patch) by rlm created at 2010-12-03 16:26:30\n\napply after previous patch",
     "created_at": "2010-12-03T16:26:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8395",
     "type": "issue_comment",
@@ -108,7 +108,7 @@ archive/issue_comments_075219.json:
 }
 ```
 
-Attachment
+Attachment [trac_8395-part2.patch](tarball://root/attachments/some-uuid/ticket8395/trac_8395-part2.patch) by rlm created at 2010-12-03 16:26:30
 
 apply after previous patch
 

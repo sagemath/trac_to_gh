@@ -58,7 +58,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6388
 archive/issue_comments_051145.json:
 ```json
 {
-    "body": "Attachment\n\nBased on 4.1.1",
+    "body": "Attachment [trac_6388-log-behavior.patch](tarball://root/attachments/some-uuid/ticket6388/trac_6388-log-behavior.patch) by kcrisman created at 2009-09-02 12:21:55\n\nBased on 4.1.1",
     "created_at": "2009-09-02T12:21:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6388",
     "type": "issue_comment",
@@ -67,7 +67,7 @@ archive/issue_comments_051145.json:
 }
 ```
 
-Attachment
+Attachment [trac_6388-log-behavior.patch](tarball://root/attachments/some-uuid/ticket6388/trac_6388-log-behavior.patch) by kcrisman created at 2009-09-02 12:21:55
 
 Based on 4.1.1
 
@@ -78,7 +78,7 @@ Based on 4.1.1
 archive/issue_comments_051146.json:
 ```json
 {
-    "body": "Attachment\n\nBased on 4.1.1",
+    "body": "Attachment [trac_6388-log-behavior.2.patch](tarball://root/attachments/some-uuid/ticket6388/trac_6388-log-behavior.2.patch) by kcrisman created at 2009-09-02 12:55:39\n\nBased on 4.1.1",
     "created_at": "2009-09-02T12:55:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6388",
     "type": "issue_comment",
@@ -87,7 +87,7 @@ archive/issue_comments_051146.json:
 }
 ```
 
-Attachment
+Attachment [trac_6388-log-behavior.2.patch](tarball://root/attachments/some-uuid/ticket6388/trac_6388-log-behavior.2.patch) by kcrisman created at 2009-09-02 12:55:39
 
 Based on 4.1.1
 
@@ -164,7 +164,7 @@ The supplemental patch requires the previous patch, and adds a few cases I misse
 archive/issue_comments_051150.json:
 ```json
 {
-    "body": "Attachment\n\nRequires regular patch, based on 4.1.1",
+    "body": "Attachment [trac_6388-log-behavior-supplement.patch](tarball://root/attachments/some-uuid/ticket6388/trac_6388-log-behavior-supplement.patch) by kcrisman created at 2009-09-03 01:59:04\n\nRequires regular patch, based on 4.1.1",
     "created_at": "2009-09-03T01:59:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6388",
     "type": "issue_comment",
@@ -173,7 +173,7 @@ archive/issue_comments_051150.json:
 }
 ```
 
-Attachment
+Attachment [trac_6388-log-behavior-supplement.patch](tarball://root/attachments/some-uuid/ticket6388/trac_6388-log-behavior-supplement.patch) by kcrisman created at 2009-09-03 01:59:04
 
 Requires regular patch, based on 4.1.1
 
@@ -254,7 +254,7 @@ Just to clarify: changing above two lines should also fix the issue I mentioned.
 archive/issue_comments_051153.json:
 ```json
 {
-    "body": "Attachment\n\nApply after others",
+    "body": "Attachment [trac_6388-log-behavior-supp2.patch](tarball://root/attachments/some-uuid/ticket6388/trac_6388-log-behavior-supp2.patch) by kcrisman created at 2009-09-05 17:36:32\n\nApply after others",
     "created_at": "2009-09-05T17:36:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6388",
     "type": "issue_comment",
@@ -263,7 +263,7 @@ archive/issue_comments_051153.json:
 }
 ```
 
-Attachment
+Attachment [trac_6388-log-behavior-supp2.patch](tarball://root/attachments/some-uuid/ticket6388/trac_6388-log-behavior-supp2.patch) by kcrisman created at 2009-09-05 17:36:32
 
 Apply after others
 

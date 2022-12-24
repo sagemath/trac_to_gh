@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5491
 archive/issue_comments_042645.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [c](tarball://root/attachments/some-uuid/ticket5491/c) by mabshoff created at 2009-03-11 23:21:22",
     "created_at": "2009-03-11T23:21:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5491",
     "type": "issue_comment",
@@ -49,7 +49,7 @@ archive/issue_comments_042645.json:
 }
 ```
 
-Attachment
+Attachment [c](tarball://root/attachments/some-uuid/ticket5491/c) by mabshoff created at 2009-03-11 23:21:22
 
 
 
@@ -207,7 +207,7 @@ A doctest to confirm that this is fixed.
 archive/issue_comments_042653.json:
 ```json
 {
-    "body": "Attachment\n\nThis is already fixed. I created a doctest to test that,\n\n\n```\nPSL(10,2).sylow_subgroup(7)\n```\n\n\ndoes not crash.",
+    "body": "Attachment [sage-trac_5491.patch](tarball://root/attachments/some-uuid/ticket5491/sage-trac_5491.patch) by mjo created at 2012-01-07 03:09:13\n\nThis is already fixed. I created a doctest to test that,\n\n\n```\nPSL(10,2).sylow_subgroup(7)\n```\n\n\ndoes not crash.",
     "created_at": "2012-01-07T03:09:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5491",
     "type": "issue_comment",
@@ -216,7 +216,7 @@ archive/issue_comments_042653.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac_5491.patch](tarball://root/attachments/some-uuid/ticket5491/sage-trac_5491.patch) by mjo created at 2012-01-07 03:09:13
 
 This is already fixed. I created a doctest to test that,
 

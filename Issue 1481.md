@@ -280,7 +280,7 @@ I think this problem is a matplotlib problem and has to do with not dealing with
 archive/issue_comments_009528.json:
 ```json
 {
-    "body": "Attachment\n\nthis should completely deal with the dense case.",
+    "body": "Attachment [trac_1481-part1.patch](tarball://root/attachments/some-uuid/ticket1481/trac_1481-part1.patch) by was created at 2010-02-16 19:31:53\n\nthis should completely deal with the dense case.",
     "created_at": "2010-02-16T19:31:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1481",
     "type": "issue_comment",
@@ -289,7 +289,7 @@ archive/issue_comments_009528.json:
 }
 ```
 
-Attachment
+Attachment [trac_1481-part1.patch](tarball://root/attachments/some-uuid/ticket1481/trac_1481-part1.patch) by was created at 2010-02-16 19:31:53
 
 this should completely deal with the dense case.
 

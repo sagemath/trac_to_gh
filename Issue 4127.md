@@ -236,7 +236,7 @@ Ok, I merged them.  The -w option creates a whitelist in data/extcode.  The -o f
 archive/issue_comments_029932.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4127.patch](tarball://root/attachments/some-uuid/ticket4127/trac_4127.patch) by dphilp created at 2008-09-17 00:30:55",
     "created_at": "2008-09-17T00:30:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4127",
     "type": "issue_comment",
@@ -245,7 +245,7 @@ archive/issue_comments_029932.json:
 }
 ```
 
-Attachment
+Attachment [trac_4127.patch](tarball://root/attachments/some-uuid/ticket4127/trac_4127.patch) by dphilp created at 2008-09-17 00:30:55
 
 
 

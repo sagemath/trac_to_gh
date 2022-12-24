@@ -97,7 +97,7 @@ Just adds a random tag to the failing doctest.
 archive/issue_comments_092825.json:
 ```json
 {
-    "body": "Attachment\n\nI cannot *really* test this myself, because `generic_graph.py` does still not terminate on my 32-bit system, and on 64-bit it wasn't an issue...\n\n(At least the patch doesn't introduce new failures. ;-) )\n\nPlease review s.t. this can be merged into 4.5.2.alpha1.",
+    "body": "Attachment [trac_9594-mark_spring_layout_doctest_random.patch](tarball://root/attachments/some-uuid/ticket9594/trac_9594-mark_spring_layout_doctest_random.patch) by leif created at 2010-07-25 08:39:12\n\nI cannot *really* test this myself, because `generic_graph.py` does still not terminate on my 32-bit system, and on 64-bit it wasn't an issue...\n\n(At least the patch doesn't introduce new failures. ;-) )\n\nPlease review s.t. this can be merged into 4.5.2.alpha1.",
     "created_at": "2010-07-25T08:39:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9594",
     "type": "issue_comment",
@@ -106,7 +106,7 @@ archive/issue_comments_092825.json:
 }
 ```
 
-Attachment
+Attachment [trac_9594-mark_spring_layout_doctest_random.patch](tarball://root/attachments/some-uuid/ticket9594/trac_9594-mark_spring_layout_doctest_random.patch) by leif created at 2010-07-25 08:39:12
 
 I cannot *really* test this myself, because `generic_graph.py` does still not terminate on my 32-bit system, and on 64-bit it wasn't an issue...
 

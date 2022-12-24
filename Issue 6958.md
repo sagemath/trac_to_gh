@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6958
 archive/issue_comments_057552.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6958.patch](tarball://root/attachments/some-uuid/ticket6958/trac_6958.patch) by rlm created at 2009-09-19 18:26:31",
     "created_at": "2009-09-19T18:26:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6958",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_057552.json:
 }
 ```
 
-Attachment
+Attachment [trac_6958.patch](tarball://root/attachments/some-uuid/ticket6958/trac_6958.patch) by rlm created at 2009-09-19 18:26:31
 
 
 
@@ -148,7 +148,7 @@ so doing the index bound as a future patch is the way to go.
 archive/issue_comments_057554.json:
 ```json
 {
-    "body": "Attachment\n\nFor the second patch, proof=False and proof=True are reversed for the doctest on 389a.",
+    "body": "Attachment [trac-6958-referee_followup.patch](tarball://root/attachments/some-uuid/ticket6958/trac-6958-referee_followup.patch) by rlm created at 2009-09-19 22:38:57\n\nFor the second patch, proof=False and proof=True are reversed for the doctest on 389a.",
     "created_at": "2009-09-19T22:38:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6958",
     "type": "issue_comment",
@@ -157,7 +157,7 @@ archive/issue_comments_057554.json:
 }
 ```
 
-Attachment
+Attachment [trac-6958-referee_followup.patch](tarball://root/attachments/some-uuid/ticket6958/trac-6958-referee_followup.patch) by rlm created at 2009-09-19 22:38:57
 
 For the second patch, proof=False and proof=True are reversed for the doctest on 389a.
 
@@ -217,7 +217,7 @@ Errors during apply, please fix and refresh trac_6958-typos_followup.patch
 archive/issue_comments_057557.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6958-typos_followup.patch](tarball://root/attachments/some-uuid/ticket6958/trac_6958-typos_followup.patch) by mhansen created at 2009-10-05 07:03:29",
     "created_at": "2009-10-05T07:03:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6958",
     "type": "issue_comment",
@@ -226,7 +226,7 @@ archive/issue_comments_057557.json:
 }
 ```
 
-Attachment
+Attachment [trac_6958-typos_followup.patch](tarball://root/attachments/some-uuid/ticket6958/trac_6958-typos_followup.patch) by mhansen created at 2009-10-05 07:03:29
 
 
 

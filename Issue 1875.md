@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1875
 archive/issue_comments_011870.json:
 ```json
 {
-    "body": "Attachment\n\nPatch looks good.",
+    "body": "Attachment [trac-1875-increase_autosave_default.patch](tarball://root/attachments/some-uuid/ticket1875/trac-1875-increase_autosave_default.patch) by mabshoff created at 2008-01-26 16:14:45\n\nPatch looks good.",
     "created_at": "2008-01-26T16:14:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1875",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_011870.json:
 }
 ```
 
-Attachment
+Attachment [trac-1875-increase_autosave_default.patch](tarball://root/attachments/some-uuid/ticket1875/trac-1875-increase_autosave_default.patch) by mabshoff created at 2008-01-26 16:14:45
 
 Patch looks good.
 

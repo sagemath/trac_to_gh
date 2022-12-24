@@ -52,7 +52,7 @@ Patch file fixing an edit() problem
 archive/issue_comments_005129.json:
 ```json
 {
-    "body": "Attachment\n\nI don't think the DISPLAY variable is a good indication. Even when DISPLAY is set, if the editor is vi then running it in the background is a bad idea.\nI would propose:\n* if a full template is supplied, then take it as the user gives it\n* if you're trying to guess from the \"EDITOR\" variable, you'll have to look up\nhow to pass a line number anyway. For each of these editors you know whether an & makes sense, and this is independent of the &",
+    "body": "Attachment [edit.patch](tarball://root/attachments/some-uuid/ticket828/edit.patch) by nbruin created at 2007-10-05 07:43:29\n\nI don't think the DISPLAY variable is a good indication. Even when DISPLAY is set, if the editor is vi then running it in the background is a bad idea.\nI would propose:\n* if a full template is supplied, then take it as the user gives it\n* if you're trying to guess from the \"EDITOR\" variable, you'll have to look up\nhow to pass a line number anyway. For each of these editors you know whether an & makes sense, and this is independent of the &",
     "created_at": "2007-10-05T07:43:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/828",
     "type": "issue_comment",
@@ -61,7 +61,7 @@ archive/issue_comments_005129.json:
 }
 ```
 
-Attachment
+Attachment [edit.patch](tarball://root/attachments/some-uuid/ticket828/edit.patch) by nbruin created at 2007-10-05 07:43:29
 
 I don't think the DISPLAY variable is a good indication. Even when DISPLAY is set, if the editor is vi then running it in the background is a bad idea.
 I would propose:

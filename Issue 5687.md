@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5687
 archive/issue_comments_044478.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5687.patch](tarball://root/attachments/some-uuid/ticket5687/trac_5687.patch) by TimothyClemans created at 2009-04-05 06:38:18",
     "created_at": "2009-04-05T06:38:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5687",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_044478.json:
 }
 ```
 
-Attachment
+Attachment [trac_5687.patch](tarball://root/attachments/some-uuid/ticket5687/trac_5687.patch) by TimothyClemans created at 2009-04-05 06:38:18
 
 
 
@@ -75,7 +75,7 @@ Error:
 archive/issue_comments_044480.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review: Tested both manual save and autosave",
+    "body": "Attachment [trac_5687-part2.patch](tarball://root/attachments/some-uuid/ticket5687/trac_5687-part2.patch) by TimothyClemans created at 2009-04-05 07:23:16\n\nPositive review: Tested both manual save and autosave",
     "created_at": "2009-04-05T07:23:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5687",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_044480.json:
 }
 ```
 
-Attachment
+Attachment [trac_5687-part2.patch](tarball://root/attachments/some-uuid/ticket5687/trac_5687-part2.patch) by TimothyClemans created at 2009-04-05 07:23:16
 
 Positive review: Tested both manual save and autosave
 

@@ -55,7 +55,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2587
 archive/issue_comments_017708.json:
 ```json
 {
-    "body": "Attachment\n\nThis looks good and works for me.",
+    "body": "Attachment [2587-subgroups-are-slow.patch](tarball://root/attachments/some-uuid/ticket2587/2587-subgroups-are-slow.patch) by mhansen created at 2008-03-18 22:38:55\n\nThis looks good and works for me.",
     "created_at": "2008-03-18T22:38:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2587",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_017708.json:
 }
 ```
 
-Attachment
+Attachment [2587-subgroups-are-slow.patch](tarball://root/attachments/some-uuid/ticket2587/2587-subgroups-are-slow.patch) by mhansen created at 2008-03-18 22:38:55
 
 This looks good and works for me.
 

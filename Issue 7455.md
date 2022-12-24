@@ -67,7 +67,7 @@ Changing assignee from AlexGhitza to boothby.
 archive/issue_comments_062789.json:
 ```json
 {
-    "body": "Attachment\n\nThis remvoes the search bar from the history page and updates the tests to reflect that.",
+    "body": "Attachment [trac_7455-searching-on-log-page.patch](tarball://root/attachments/some-uuid/ticket7455/trac_7455-searching-on-log-page.patch) by timdumol created at 2009-11-13 23:31:29\n\nThis remvoes the search bar from the history page and updates the tests to reflect that.",
     "created_at": "2009-11-13T23:31:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7455",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_062789.json:
 }
 ```
 
-Attachment
+Attachment [trac_7455-searching-on-log-page.patch](tarball://root/attachments/some-uuid/ticket7455/trac_7455-searching-on-log-page.patch) by timdumol created at 2009-11-13 23:31:29
 
 This remvoes the search bar from the history page and updates the tests to reflect that.
 

@@ -70,7 +70,7 @@ Changing assignee from somebody to robertwb.
 archive/issue_comments_058585.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [7088-poly-factor-bug.patch](tarball://root/attachments/some-uuid/ticket7088/7088-poly-factor-bug.patch) by mhansen created at 2009-10-01 07:47:59",
     "created_at": "2009-10-01T07:47:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7088",
     "type": "issue_comment",
@@ -79,7 +79,7 @@ archive/issue_comments_058585.json:
 }
 ```
 
-Attachment
+Attachment [7088-poly-factor-bug.patch](tarball://root/attachments/some-uuid/ticket7088/7088-poly-factor-bug.patch) by mhansen created at 2009-10-01 07:47:59
 
 
 

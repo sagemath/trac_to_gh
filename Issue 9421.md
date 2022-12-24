@@ -71,7 +71,7 @@ This is a part of more general problem which has been reported in #6882.
 archive/issue_comments_089855.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9421.patch](tarball://root/attachments/some-uuid/ticket9421/trac_9421.patch) by zimmerma created at 2013-08-25 13:25:17",
     "created_at": "2013-08-25T13:25:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9421",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_089855.json:
 }
 ```
 
-Attachment
+Attachment [trac_9421.patch](tarball://root/attachments/some-uuid/ticket9421/trac_9421.patch) by zimmerma created at 2013-08-25 13:25:17
 
 
 

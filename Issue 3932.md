@@ -315,7 +315,7 @@ Apply this patch after trac_3932_tree_generation.patch
 archive/issue_comments_028163.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review to Ryan's patch. All we need now is someone to check mine.",
+    "body": "Attachment [trac_3932-tree-plugin.patch](tarball://root/attachments/some-uuid/ticket3932/trac_3932-tree-plugin.patch) by rlm created at 2009-04-29 16:25:46\n\nPositive review to Ryan's patch. All we need now is someone to check mine.",
     "created_at": "2009-04-29T16:25:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3932",
     "type": "issue_comment",
@@ -324,7 +324,7 @@ archive/issue_comments_028163.json:
 }
 ```
 
-Attachment
+Attachment [trac_3932-tree-plugin.patch](tarball://root/attachments/some-uuid/ticket3932/trac_3932-tree-plugin.patch) by rlm created at 2009-04-29 16:25:46
 
 Positive review to Ryan's patch. All we need now is someone to check mine.
 
@@ -488,7 +488,7 @@ Michael
 archive/issue_comments_028168.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3932_tree_generation.patch](tarball://root/attachments/some-uuid/ticket3932/trac_3932_tree_generation.patch) by rdingman created at 2009-05-17 03:49:39",
     "created_at": "2009-05-17T03:49:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3932",
     "type": "issue_comment",
@@ -497,7 +497,7 @@ archive/issue_comments_028168.json:
 }
 ```
 
-Attachment
+Attachment [trac_3932_tree_generation.patch](tarball://root/attachments/some-uuid/ticket3932/trac_3932_tree_generation.patch) by rdingman created at 2009-05-17 03:49:39
 
 
 

@@ -235,7 +235,7 @@ RecursiveSet(seeds, succ, structure="symmetric")
 archive/issue_comments_054382.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6637_recursive_set-sl.patch](tarball://root/attachments/some-uuid/ticket6637/trac_6637_recursive_set-sl.patch) by slabbe created at 2013-02-10 21:01:54",
     "created_at": "2013-02-10T21:01:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6637",
     "type": "issue_comment",
@@ -244,7 +244,7 @@ archive/issue_comments_054382.json:
 }
 ```
 
-Attachment
+Attachment [trac_6637_recursive_set-sl.patch](tarball://root/attachments/some-uuid/ticket6637/trac_6637_recursive_set-sl.patch) by slabbe created at 2013-02-10 21:01:54
 
 
 

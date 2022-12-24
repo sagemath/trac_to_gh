@@ -79,7 +79,7 @@ I'll submit a patch soon.
 archive/issue_comments_020674.json:
 ```json
 {
-    "body": "Attachment\n\nThinking about this problem more, I think it is my fault. In any case, a patch is attached.  It is based on 3.0 and passes sage -t but my (old) machine froze (as it very often does) during the sage -testall. No errors were reported before the freeze.",
+    "body": "Attachment [9607.patch](tarball://root/attachments/some-uuid/ticket3006/9607.patch) by wdj created at 2008-04-23 22:15:38\n\nThinking about this problem more, I think it is my fault. In any case, a patch is attached.  It is based on 3.0 and passes sage -t but my (old) machine froze (as it very often does) during the sage -testall. No errors were reported before the freeze.",
     "created_at": "2008-04-23T22:15:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3006",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_020674.json:
 }
 ```
 
-Attachment
+Attachment [9607.patch](tarball://root/attachments/some-uuid/ticket3006/9607.patch) by wdj created at 2008-04-23 22:15:38
 
 Thinking about this problem more, I think it is my fault. In any case, a patch is attached.  It is based on 3.0 and passes sage -t but my (old) machine froze (as it very often does) during the sage -testall. No errors were reported before the freeze.
 

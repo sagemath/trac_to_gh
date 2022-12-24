@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5021
 archive/issue_comments_038247.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good.  I tested a command from each package and it seemed to work great.  Positive review.",
+    "body": "Attachment [5021.patch](tarball://root/attachments/some-uuid/ticket5021/5021.patch) by jason created at 2009-01-28 17:39:05\n\nLooks good.  I tested a command from each package and it seemed to work great.  Positive review.",
     "created_at": "2009-01-28T17:39:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5021",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_038247.json:
 }
 ```
 
-Attachment
+Attachment [5021.patch](tarball://root/attachments/some-uuid/ticket5021/5021.patch) by jason created at 2009-01-28 17:39:05
 
 Looks good.  I tested a command from each package and it seemed to work great.  Positive review.
 

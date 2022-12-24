@@ -85,7 +85,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_078003.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.  Passes tests, etc.",
+    "body": "Attachment [trac_8610.patch](tarball://root/attachments/some-uuid/ticket8610/trac_8610.patch) by AlexGhitza created at 2010-03-26 03:52:11\n\nLooks good to me.  Passes tests, etc.",
     "created_at": "2010-03-26T03:52:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8610",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_078003.json:
 }
 ```
 
-Attachment
+Attachment [trac_8610.patch](tarball://root/attachments/some-uuid/ticket8610/trac_8610.patch) by AlexGhitza created at 2010-03-26 03:52:11
 
 Looks good to me.  Passes tests, etc.
 

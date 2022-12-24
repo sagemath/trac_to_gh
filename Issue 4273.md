@@ -66,7 +66,7 @@ Changing assignee from was to mhampton.
 archive/issue_comments_031196.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-4273-jordan_form.patch](tarball://root/attachments/some-uuid/ticket4273/trac-4273-jordan_form.patch) by jason created at 2008-11-18 04:31:34",
     "created_at": "2008-11-18T04:31:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4273",
     "type": "issue_comment",
@@ -75,7 +75,7 @@ archive/issue_comments_031196.json:
 }
 ```
 
-Attachment
+Attachment [trac-4273-jordan_form.patch](tarball://root/attachments/some-uuid/ticket4273/trac-4273-jordan_form.patch) by jason created at 2008-11-18 04:31:34
 
 
 

@@ -205,7 +205,7 @@ Good work, Craig Citro!  I spent hours tracking it as far as I did, too -- it wa
 archive/issue_comments_006550.json:
 ```json
 {
-    "body": "Attachment\n\nSo I got a response from the pari team that the problem on their end is fixed in svn. However, given the fact that the Pari release cycle is slower than ours, I've added a workaround to Sage. Looking at the other tests Nick had above, I noticed that for any NumberFieldElement a, a.matrix(QQ) didn't work. I fixed this while I was there, and added a few doctests.",
+    "body": "Attachment [craigcitro-1083.patch](tarball://root/attachments/some-uuid/ticket1083/craigcitro-1083.patch) by craigcitro created at 2008-01-23 11:19:48\n\nSo I got a response from the pari team that the problem on their end is fixed in svn. However, given the fact that the Pari release cycle is slower than ours, I've added a workaround to Sage. Looking at the other tests Nick had above, I noticed that for any NumberFieldElement a, a.matrix(QQ) didn't work. I fixed this while I was there, and added a few doctests.",
     "created_at": "2008-01-23T11:19:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1083",
     "type": "issue_comment",
@@ -214,7 +214,7 @@ archive/issue_comments_006550.json:
 }
 ```
 
-Attachment
+Attachment [craigcitro-1083.patch](tarball://root/attachments/some-uuid/ticket1083/craigcitro-1083.patch) by craigcitro created at 2008-01-23 11:19:48
 
 So I got a response from the pari team that the problem on their end is fixed in svn. However, given the fact that the Pari release cycle is slower than ours, I've added a workaround to Sage. Looking at the other tests Nick had above, I noticed that for any NumberFieldElement a, a.matrix(QQ) didn't work. I fixed this while I was there, and added a few doctests.
 

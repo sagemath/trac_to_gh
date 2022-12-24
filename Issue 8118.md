@@ -188,7 +188,7 @@ updated.
 archive/issue_comments_071312.json:
 ```json
 {
-    "body": "Attachment\n\nI applied the patch to 4.3.2.alpha1:  OK with some fuzz on hunk #7.\n\nTests in sage/schemes/elliptic_curves:  all tests (includng long) pass.\n\nsage -docbuild reference html worked fine for me (it warned about \n\n```\n/home/jec/sage-4.3.2.alpha1/devel/sage/doc/en/reference/sage/geometry/polytope.rst:: WARNING: document isn't included in any toctree\n/home/jec/sage-4.3.2.alpha1/devel/sage/doc/en/reference/sage/misc/attach.rst:: WARNING: document isn't included in any toctree\n```\n\nbut that's not from this patch!)\n\nI have not actually looked at the html docs for the new files yet, but will do so.  Meanwhile: positive review.",
+    "body": "Attachment [trac_8118.patch](tarball://root/attachments/some-uuid/ticket8118/trac_8118.patch) by cremona created at 2010-02-02 09:54:27\n\nI applied the patch to 4.3.2.alpha1:  OK with some fuzz on hunk #7.\n\nTests in sage/schemes/elliptic_curves:  all tests (includng long) pass.\n\nsage -docbuild reference html worked fine for me (it warned about \n\n```\n/home/jec/sage-4.3.2.alpha1/devel/sage/doc/en/reference/sage/geometry/polytope.rst:: WARNING: document isn't included in any toctree\n/home/jec/sage-4.3.2.alpha1/devel/sage/doc/en/reference/sage/misc/attach.rst:: WARNING: document isn't included in any toctree\n```\n\nbut that's not from this patch!)\n\nI have not actually looked at the html docs for the new files yet, but will do so.  Meanwhile: positive review.",
     "created_at": "2010-02-02T09:54:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8118",
     "type": "issue_comment",
@@ -197,7 +197,7 @@ archive/issue_comments_071312.json:
 }
 ```
 
-Attachment
+Attachment [trac_8118.patch](tarball://root/attachments/some-uuid/ticket8118/trac_8118.patch) by cremona created at 2010-02-02 09:54:27
 
 I applied the patch to 4.3.2.alpha1:  OK with some fuzz on hunk #7.
 
@@ -342,7 +342,7 @@ Perhaps the attachment needs a rebase.
 archive/issue_comments_071317.json:
 ```json
 {
-    "body": "Attachment\n\nexported against 4.3.3.alpha0",
+    "body": "Attachment [trac_8118_rebased.2.patch](tarball://root/attachments/some-uuid/ticket8118/trac_8118_rebased.2.patch) by wuthrich created at 2010-02-13 18:57:31\n\nexported against 4.3.3.alpha0",
     "created_at": "2010-02-13T18:57:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8118",
     "type": "issue_comment",
@@ -351,7 +351,7 @@ archive/issue_comments_071317.json:
 }
 ```
 
-Attachment
+Attachment [trac_8118_rebased.2.patch](tarball://root/attachments/some-uuid/ticket8118/trac_8118_rebased.2.patch) by wuthrich created at 2010-02-13 18:57:31
 
 exported against 4.3.3.alpha0
 
@@ -452,7 +452,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_071323.json:
 ```json
 {
-    "body": "Attachment\n\nexported against 4.3.3.alpha0",
+    "body": "Attachment [trac_8118_rebased.patch](tarball://root/attachments/some-uuid/ticket8118/trac_8118_rebased.patch) by wuthrich created at 2010-02-14 17:45:52\n\nexported against 4.3.3.alpha0",
     "created_at": "2010-02-14T17:45:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8118",
     "type": "issue_comment",
@@ -461,7 +461,7 @@ archive/issue_comments_071323.json:
 }
 ```
 
-Attachment
+Attachment [trac_8118_rebased.patch](tarball://root/attachments/some-uuid/ticket8118/trac_8118_rebased.patch) by wuthrich created at 2010-02-14 17:45:52
 
 exported against 4.3.3.alpha0
 

@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1953
 archive/issue_comments_012439.json:
 ```json
 {
-    "body": "Attachment\n\nI think this patch is OK.\n\nI want to make one comment though.  With the previous version of this patch, if you made a new class that derives from CallableSymbolicExpressionRing_class and overload args, then arguments would automatically call the overloaded method.  Now it won't -- argument will give you the old method before overloading.  This isn't a problem since that's not done in calculus.py.  \n\nSo I give this a positive review.",
+    "body": "Attachment [trac-1953.patch](tarball://root/attachments/some-uuid/ticket1953/trac-1953.patch) by was created at 2008-01-27 22:17:32\n\nI think this patch is OK.\n\nI want to make one comment though.  With the previous version of this patch, if you made a new class that derives from CallableSymbolicExpressionRing_class and overload args, then arguments would automatically call the overloaded method.  Now it won't -- argument will give you the old method before overloading.  This isn't a problem since that's not done in calculus.py.  \n\nSo I give this a positive review.",
     "created_at": "2008-01-27T22:17:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1953",
     "type": "issue_comment",
@@ -43,7 +43,7 @@ archive/issue_comments_012439.json:
 }
 ```
 
-Attachment
+Attachment [trac-1953.patch](tarball://root/attachments/some-uuid/ticket1953/trac-1953.patch) by was created at 2008-01-27 22:17:32
 
 I think this patch is OK.
 

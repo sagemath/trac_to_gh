@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2812
 archive/issue_comments_019300.json:
 ```json
 {
-    "body": "Attachment\n\ndo not apply 2812_1.patch this patch corrects the encoding error",
+    "body": "Attachment [2812_2.patch](tarball://root/attachments/some-uuid/ticket2812/2812_2.patch) by TimothyClemans created at 2008-04-05 19:20:17\n\ndo not apply 2812_1.patch this patch corrects the encoding error",
     "created_at": "2008-04-05T19:20:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2812",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_019300.json:
 }
 ```
 
-Attachment
+Attachment [2812_2.patch](tarball://root/attachments/some-uuid/ticket2812/2812_2.patch) by TimothyClemans created at 2008-04-05 19:20:17
 
 do not apply 2812_1.patch this patch corrects the encoding error
 
@@ -87,7 +87,7 @@ fixes users() and user() doctests are the same issue
 archive/issue_comments_019303.json:
 ```json
 {
-    "body": "Attachment\n\nmade sure dictonaries were sorted and changed 'mat' to 'password' and 'mark' to 'newpassword' in create_default_users() doctests",
+    "body": "Attachment [2812_4.patch](tarball://root/attachments/some-uuid/ticket2812/2812_4.patch) by TimothyClemans created at 2008-04-05 21:02:54\n\nmade sure dictonaries were sorted and changed 'mat' to 'password' and 'mark' to 'newpassword' in create_default_users() doctests",
     "created_at": "2008-04-05T21:02:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2812",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_019303.json:
 }
 ```
 
-Attachment
+Attachment [2812_4.patch](tarball://root/attachments/some-uuid/ticket2812/2812_4.patch) by TimothyClemans created at 2008-04-05 21:02:54
 
 made sure dictonaries were sorted and changed 'mat' to 'password' and 'mark' to 'newpassword' in create_default_users() doctests
 
@@ -107,7 +107,7 @@ made sure dictonaries were sorted and changed 'mat' to 'password' and 'mark' to 
 archive/issue_comments_019304.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.  I've combined all the need patches into 2812.patch so that is the only one that needs to be applied.",
+    "body": "Attachment [2812.patch](tarball://root/attachments/some-uuid/ticket2812/2812.patch) by mhansen created at 2008-04-05 21:31:38\n\nLooks good to me.  I've combined all the need patches into 2812.patch so that is the only one that needs to be applied.",
     "created_at": "2008-04-05T21:31:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2812",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_019304.json:
 }
 ```
 
-Attachment
+Attachment [2812.patch](tarball://root/attachments/some-uuid/ticket2812/2812.patch) by mhansen created at 2008-04-05 21:31:38
 
 Looks good to me.  I've combined all the need patches into 2812.patch so that is the only one that needs to be applied.
 

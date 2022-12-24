@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9704
 archive/issue_comments_094396.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9704-trace.patch](tarball://root/attachments/some-uuid/ticket9704/trac_9704-trace.patch) by was created at 2010-08-07 17:43:27",
     "created_at": "2010-08-07T17:43:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9704",
     "type": "issue_comment",
@@ -51,7 +51,7 @@ archive/issue_comments_094396.json:
 }
 ```
 
-Attachment
+Attachment [trac_9704-trace.patch](tarball://root/attachments/some-uuid/ticket9704/trac_9704-trace.patch) by was created at 2010-08-07 17:43:27
 
 
 
@@ -298,7 +298,7 @@ apply instead of previous patch
 archive/issue_comments_094408.json:
 ```json
 {
-    "body": "Attachment\n\nI incline to Jason's argument. I propose 'trace_through' as a more palpable name than Jason's 'trace_execution'.",
+    "body": "Attachment [trac-9704-trace.patch](tarball://root/attachments/some-uuid/ticket9704/trac-9704-trace.patch) by klee created at 2010-08-14 04:22:53\n\nI incline to Jason's argument. I propose 'trace_through' as a more palpable name than Jason's 'trace_execution'.",
     "created_at": "2010-08-14T04:22:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9704",
     "type": "issue_comment",
@@ -307,7 +307,7 @@ archive/issue_comments_094408.json:
 }
 ```
 
-Attachment
+Attachment [trac-9704-trace.patch](tarball://root/attachments/some-uuid/ticket9704/trac-9704-trace.patch) by klee created at 2010-08-14 04:22:53
 
 I incline to Jason's argument. I propose 'trace_through' as a more palpable name than Jason's 'trace_execution'.
 

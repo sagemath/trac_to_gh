@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1917
 archive/issue_comments_012139.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-1917-remove_linbox_workaround.patch](tarball://root/attachments/some-uuid/ticket1917/trac-1917-remove_linbox_workaround.patch) by was created at 2008-01-25 00:56:58",
     "created_at": "2008-01-25T00:56:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1917",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_012139.json:
 }
 ```
 
-Attachment
+Attachment [trac-1917-remove_linbox_workaround.patch](tarball://root/attachments/some-uuid/ticket1917/trac-1917-remove_linbox_workaround.patch) by was created at 2008-01-25 00:56:58
 
 
 

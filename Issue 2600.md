@@ -179,7 +179,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2600
 archive/issue_comments_017794.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch fixes the bug and adds a doctest for it.  Tests pass in plot.py .",
+    "body": "Attachment [trac2600_vector_field.patch](tarball://root/attachments/some-uuid/ticket2600/trac2600_vector_field.patch) by cwitty created at 2008-03-21 01:57:33\n\nThe attached patch fixes the bug and adds a doctest for it.  Tests pass in plot.py .",
     "created_at": "2008-03-21T01:57:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2600",
     "type": "issue_comment",
@@ -188,7 +188,7 @@ archive/issue_comments_017794.json:
 }
 ```
 
-Attachment
+Attachment [trac2600_vector_field.patch](tarball://root/attachments/some-uuid/ticket2600/trac2600_vector_field.patch) by cwitty created at 2008-03-21 01:57:33
 
 The attached patch fixes the bug and adds a doctest for it.  Tests pass in plot.py .
 

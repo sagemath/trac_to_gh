@@ -49,7 +49,7 @@ Changing status from new to needs_review.
 archive/issue_comments_060036.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7237.patch](tarball://root/attachments/some-uuid/ticket7237/trac_7237.patch) by was created at 2009-10-18 04:02:30",
     "created_at": "2009-10-18T04:02:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7237",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_060036.json:
 }
 ```
 
-Attachment
+Attachment [trac_7237.patch](tarball://root/attachments/some-uuid/ticket7237/trac_7237.patch) by was created at 2009-10-18 04:02:30
 
 
 
@@ -67,7 +67,7 @@ Attachment
 archive/issue_comments_060037.json:
 ```json
 {
-    "body": "Attachment\n\nPatch works. Printing no longer prints wrapped an unwrapped text. Positive review.",
+    "body": "Attachment [trac_7237-part2.patch](tarball://root/attachments/some-uuid/ticket7237/trac_7237-part2.patch) by timdumol created at 2009-10-18 04:15:32\n\nPatch works. Printing no longer prints wrapped an unwrapped text. Positive review.",
     "created_at": "2009-10-18T04:15:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7237",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_060037.json:
 }
 ```
 
-Attachment
+Attachment [trac_7237-part2.patch](tarball://root/attachments/some-uuid/ticket7237/trac_7237-part2.patch) by timdumol created at 2009-10-18 04:15:32
 
 Patch works. Printing no longer prints wrapped an unwrapped text. Positive review.
 

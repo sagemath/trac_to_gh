@@ -364,7 +364,7 @@ Sounds great to me.  The new patch disables the "plot" doctest that was failing 
 archive/issue_comments_074161.json:
 ```json
 {
-    "body": "Attachment\n\nmodifies copy() code in generic_graph.py and adds test to BipartiteGraph",
+    "body": "Attachment [trac_8329-bipartite-graph-copy.patch](tarball://root/attachments/some-uuid/ticket8329/trac_8329-bipartite-graph-copy.patch) by rhinton created at 2010-03-05 02:08:55\n\nmodifies copy() code in generic_graph.py and adds test to BipartiteGraph",
     "created_at": "2010-03-05T02:08:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8329",
     "type": "issue_comment",
@@ -373,7 +373,7 @@ archive/issue_comments_074161.json:
 }
 ```
 
-Attachment
+Attachment [trac_8329-bipartite-graph-copy.patch](tarball://root/attachments/some-uuid/ticket8329/trac_8329-bipartite-graph-copy.patch) by rhinton created at 2010-03-05 02:08:55
 
 modifies copy() code in generic_graph.py and adds test to BipartiteGraph
 
@@ -456,7 +456,7 @@ Found a failing doctest in combinat/posets/posets.py due to this change.  Additi
 archive/issue_comments_074166.json:
 ```json
 {
-    "body": "Attachment\n\nApply both patches, order does not matter",
+    "body": "Attachment [trac_8329-posets-repr.patch](tarball://root/attachments/some-uuid/ticket8329/trac_8329-posets-repr.patch) by rhinton created at 2010-03-24 18:44:26\n\nApply both patches, order does not matter",
     "created_at": "2010-03-24T18:44:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8329",
     "type": "issue_comment",
@@ -465,7 +465,7 @@ archive/issue_comments_074166.json:
 }
 ```
 
-Attachment
+Attachment [trac_8329-posets-repr.patch](tarball://root/attachments/some-uuid/ticket8329/trac_8329-posets-repr.patch) by rhinton created at 2010-03-24 18:44:26
 
 Apply both patches, order does not matter
 

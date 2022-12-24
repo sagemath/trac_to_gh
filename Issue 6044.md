@@ -88,7 +88,7 @@ No problem, though it is likely to have been reviewed within a day or two!
 archive/issue_comments_048135.json:
 ```json
 {
-    "body": "Attachment\n\nHere is the patch, with the new functions, etc, and corrections for the docstrings that were affected by the change in the 'residues' function.",
+    "body": "Attachment [trac_6044.patch](tarball://root/attachments/some-uuid/ticket6044/trac_6044.patch) by mtaranes created at 2009-05-16 09:08:57\n\nHere is the patch, with the new functions, etc, and corrections for the docstrings that were affected by the change in the 'residues' function.",
     "created_at": "2009-05-16T09:08:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6044",
     "type": "issue_comment",
@@ -97,7 +97,7 @@ archive/issue_comments_048135.json:
 }
 ```
 
-Attachment
+Attachment [trac_6044.patch](tarball://root/attachments/some-uuid/ticket6044/trac_6044.patch) by mtaranes created at 2009-05-16 09:08:57
 
 Here is the patch, with the new functions, etc, and corrections for the docstrings that were affected by the change in the 'residues' function.
 
@@ -108,7 +108,7 @@ Here is the patch, with the new functions, etc, and corrections for the docstrin
 archive/issue_comments_048136.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6044_review.patch](tarball://root/attachments/some-uuid/ticket6044/trac_6044_review.patch) by cremona created at 2009-05-20 11:54:23",
     "created_at": "2009-05-20T11:54:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6044",
     "type": "issue_comment",
@@ -117,7 +117,7 @@ archive/issue_comments_048136.json:
 }
 ```
 
-Attachment
+Attachment [trac_6044_review.patch](tarball://root/attachments/some-uuid/ticket6044/trac_6044_review.patch) by cremona created at 2009-05-20 11:54:23
 
 
 
@@ -166,7 +166,7 @@ Rebased to 4.0.1 and folded into one patch
 archive/issue_comments_048139.json:
 ```json
 {
-    "body": "Attachment\n\nGood stuff; it will be much more efficient to use hermite form rather than smith form in residues, besides being more canonical.\n\nI have rebased the patch to 4.0.1, and checked that it commutes with #5842 and #6188. All tests in sage/rings/number_field pass still (on a 32-bit machine), as do those in sage/doc/en/bordeaux_2008 (which have a habit of catching out unwary number theory patch authors). \n\nThis one has been in limbo for three weeks because the trac reports of patches with review / needing review / etc are done using text searches of the summary field, and thus \"with review, needs second opinion\" doesn't get picked up. I guess it would be safer to set it to \"needs review\", but this strikes me as conclusive proof that we need to change the way we use trac -- this is the *fifth* ticket I've spotted today which has been in limbo because of a slightly unusual summary string.",
+    "body": "Attachment [trac_6044_rebased_and_folded.patch](tarball://root/attachments/some-uuid/ticket6044/trac_6044_rebased_and_folded.patch) by davidloeffler created at 2009-06-10 11:06:19\n\nGood stuff; it will be much more efficient to use hermite form rather than smith form in residues, besides being more canonical.\n\nI have rebased the patch to 4.0.1, and checked that it commutes with #5842 and #6188. All tests in sage/rings/number_field pass still (on a 32-bit machine), as do those in sage/doc/en/bordeaux_2008 (which have a habit of catching out unwary number theory patch authors). \n\nThis one has been in limbo for three weeks because the trac reports of patches with review / needing review / etc are done using text searches of the summary field, and thus \"with review, needs second opinion\" doesn't get picked up. I guess it would be safer to set it to \"needs review\", but this strikes me as conclusive proof that we need to change the way we use trac -- this is the *fifth* ticket I've spotted today which has been in limbo because of a slightly unusual summary string.",
     "created_at": "2009-06-10T11:06:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6044",
     "type": "issue_comment",
@@ -175,7 +175,7 @@ archive/issue_comments_048139.json:
 }
 ```
 
-Attachment
+Attachment [trac_6044_rebased_and_folded.patch](tarball://root/attachments/some-uuid/ticket6044/trac_6044_rebased_and_folded.patch) by davidloeffler created at 2009-06-10 11:06:19
 
 Good stuff; it will be much more efficient to use hermite form rather than smith form in residues, besides being more canonical.
 

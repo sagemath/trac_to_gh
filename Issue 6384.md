@@ -409,7 +409,7 @@ Since nothing seems to happen with this patch and I continue to insist that it s
 archive/issue_comments_051109.json:
 ```json
 {
-    "body": "Attachment\n\nexported against 4.1.1 + patch #6672",
+    "body": "Attachment [trac_6384.patch](tarball://root/attachments/some-uuid/ticket6384/trac_6384.patch) by wuthrich created at 2009-08-20 12:10:52\n\nexported against 4.1.1 + patch #6672",
     "created_at": "2009-08-20T12:10:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6384",
     "type": "issue_comment",
@@ -418,7 +418,7 @@ archive/issue_comments_051109.json:
 }
 ```
 
-Attachment
+Attachment [trac_6384.patch](tarball://root/attachments/some-uuid/ticket6384/trac_6384.patch) by wuthrich created at 2009-08-20 12:10:52
 
 exported against 4.1.1 + patch #6672
 
@@ -539,7 +539,7 @@ It should be "Weierstrass" instead of "wWeierstrass".
 archive/issue_comments_051115.json:
 ```json
 {
-    "body": "Attachment\n\nreviewer patch; apply after previous one",
+    "body": "Attachment [trac_6384-reviewer.patch](tarball://root/attachments/some-uuid/ticket6384/trac_6384-reviewer.patch) by mvngu created at 2009-08-24 04:51:48\n\nreviewer patch; apply after previous one",
     "created_at": "2009-08-24T04:51:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6384",
     "type": "issue_comment",
@@ -548,7 +548,7 @@ archive/issue_comments_051115.json:
 }
 ```
 
-Attachment
+Attachment [trac_6384-reviewer.patch](tarball://root/attachments/some-uuid/ticket6384/trac_6384-reviewer.patch) by mvngu created at 2009-08-24 04:51:48
 
 reviewer patch; apply after previous one
 

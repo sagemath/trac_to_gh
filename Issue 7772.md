@@ -62,7 +62,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7772
 archive/issue_comments_066992.json:
 ```json
 {
-    "body": "Attachment\n\nbased on Sage 4.3",
+    "body": "Attachment [trac_7772-typo.patch](tarball://root/attachments/some-uuid/ticket7772/trac_7772-typo.patch) by mvngu created at 2009-12-27 12:48:50\n\nbased on Sage 4.3",
     "created_at": "2009-12-27T12:48:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7772",
     "type": "issue_comment",
@@ -71,7 +71,7 @@ archive/issue_comments_066992.json:
 }
 ```
 
-Attachment
+Attachment [trac_7772-typo.patch](tarball://root/attachments/some-uuid/ticket7772/trac_7772-typo.patch) by mvngu created at 2009-12-27 12:48:50
 
 based on Sage 4.3
 
@@ -82,7 +82,7 @@ based on Sage 4.3
 archive/issue_comments_066993.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of previous",
+    "body": "Attachment [trac_7772-bib.patch](tarball://root/attachments/some-uuid/ticket7772/trac_7772-bib.patch) by mvngu created at 2009-12-27 12:49:09\n\napply on top of previous",
     "created_at": "2009-12-27T12:49:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7772",
     "type": "issue_comment",
@@ -91,7 +91,7 @@ archive/issue_comments_066993.json:
 }
 ```
 
-Attachment
+Attachment [trac_7772-bib.patch](tarball://root/attachments/some-uuid/ticket7772/trac_7772-bib.patch) by mvngu created at 2009-12-27 12:49:09
 
 apply on top of previous
 
@@ -178,7 +178,7 @@ diff between old and new patches
 archive/issue_comments_066998.json:
 ```json
 {
-    "body": "Attachment\n\napply only this patch",
+    "body": "Attachment [trac_7772-all-in-one.patch](tarball://root/attachments/some-uuid/ticket7772/trac_7772-all-in-one.patch) by jhpalmieri created at 2009-12-27 17:26:28\n\napply only this patch",
     "created_at": "2009-12-27T17:26:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7772",
     "type": "issue_comment",
@@ -187,7 +187,7 @@ archive/issue_comments_066998.json:
 }
 ```
 
-Attachment
+Attachment [trac_7772-all-in-one.patch](tarball://root/attachments/some-uuid/ticket7772/trac_7772-all-in-one.patch) by jhpalmieri created at 2009-12-27 17:26:28
 
 apply only this patch
 

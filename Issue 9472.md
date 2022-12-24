@@ -61,7 +61,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9472
 archive/issue_comments_090852.json:
 ```json
 {
-    "body": "Attachment\n\nApply to polybori-0.6.4.p1. Source trees have to be removed manually.",
+    "body": "Attachment [polybori-0.6.4.p1-p2.patch](tarball://root/attachments/some-uuid/ticket9472/polybori-0.6.4.p1-p2.patch) by leif created at 2010-07-11 00:12:21\n\nApply to polybori-0.6.4.p1. Source trees have to be removed manually.",
     "created_at": "2010-07-11T00:12:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9472",
     "type": "issue_comment",
@@ -70,7 +70,7 @@ archive/issue_comments_090852.json:
 }
 ```
 
-Attachment
+Attachment [polybori-0.6.4.p1-p2.patch](tarball://root/attachments/some-uuid/ticket9472/polybori-0.6.4.p1-p2.patch) by leif created at 2010-07-11 00:12:21
 
 Apply to polybori-0.6.4.p1. Source trees have to be removed manually.
 

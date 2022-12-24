@@ -121,7 +121,7 @@ Changing status from new to assigned.
 archive/issue_comments_011192.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1769.patch](tarball://root/attachments/some-uuid/ticket1769/1769.patch) by craigcitro created at 2008-01-14 02:37:28",
     "created_at": "2008-01-14T02:37:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1769",
     "type": "issue_comment",
@@ -130,7 +130,7 @@ archive/issue_comments_011192.json:
 }
 ```
 
-Attachment
+Attachment [1769.patch](tarball://root/attachments/some-uuid/ticket1769/1769.patch) by craigcitro created at 2008-01-14 02:37:28
 
 
 
@@ -157,7 +157,7 @@ Adding one more small patch, that adds one initialization line that David Roe po
 archive/issue_comments_011194.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1769-2.patch](tarball://root/attachments/some-uuid/ticket1769/1769-2.patch) by roed created at 2008-01-14 22:28:07",
     "created_at": "2008-01-14T22:28:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1769",
     "type": "issue_comment",
@@ -166,7 +166,7 @@ archive/issue_comments_011194.json:
 }
 ```
 
-Attachment
+Attachment [1769-2.patch](tarball://root/attachments/some-uuid/ticket1769/1769-2.patch) by roed created at 2008-01-14 22:28:07
 
 
 

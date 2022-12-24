@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5803
 archive/issue_comments_045549.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5803-cython-0.11.1.patch](tarball://root/attachments/some-uuid/ticket5803/5803-cython-0.11.1.patch) by robertwb created at 2009-04-16 08:44:53",
     "created_at": "2009-04-16T08:44:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5803",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_045549.json:
 }
 ```
 
-Attachment
+Attachment [5803-cython-0.11.1.patch](tarball://root/attachments/some-uuid/ticket5803/5803-cython-0.11.1.patch) by robertwb created at 2009-04-16 08:44:53
 
 
 

@@ -246,7 +246,7 @@ variabe -> variable
 archive/issue_comments_031361.json:
 ```json
 {
-    "body": "Attachment\n\napply only this last patch",
+    "body": "Attachment [4285-desolver.4.patch](tarball://root/attachments/some-uuid/ticket4285/4285-desolver.4.patch) by robertwb created at 2008-10-15 10:07:52\n\napply only this last patch",
     "created_at": "2008-10-15T10:07:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4285",
     "type": "issue_comment",
@@ -255,7 +255,7 @@ archive/issue_comments_031361.json:
 }
 ```
 
-Attachment
+Attachment [4285-desolver.4.patch](tarball://root/attachments/some-uuid/ticket4285/4285-desolver.4.patch) by robertwb created at 2008-10-15 10:07:52
 
 apply only this last patch
 
@@ -354,7 +354,7 @@ based on 3.1.4
 archive/issue_comments_031365.json:
 ```json
 {
-    "body": "Attachment\n\nI added a patch which literally changes exactly this one line in tut.tex. Hope this is what you wanted!",
+    "body": "Attachment [trac_4285-tut-oneliner.patch](tarball://root/attachments/some-uuid/ticket4285/trac_4285-tut-oneliner.patch) by wdj created at 2008-10-18 11:50:54\n\nI added a patch which literally changes exactly this one line in tut.tex. Hope this is what you wanted!",
     "created_at": "2008-10-18T11:50:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4285",
     "type": "issue_comment",
@@ -363,7 +363,7 @@ archive/issue_comments_031365.json:
 }
 ```
 
-Attachment
+Attachment [trac_4285-tut-oneliner.patch](tarball://root/attachments/some-uuid/ticket4285/trac_4285-tut-oneliner.patch) by wdj created at 2008-10-18 11:50:54
 
 I added a patch which literally changes exactly this one line in tut.tex. Hope this is what you wanted!
 

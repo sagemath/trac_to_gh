@@ -98,7 +98,7 @@ Adressed William comments on sage-devel.
 archive/issue_comments_063658.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated patch to remark on sage-devel (i.e. just put the version of deprecation, without the date). Reday for review.",
+    "body": "Attachment [trac_7515_method_alias_decorator-fh.patch](tarball://root/attachments/some-uuid/ticket7515/trac_7515_method_alias_decorator-fh.patch) by hivert created at 2009-11-30 10:13:08\n\nUpdated patch to remark on sage-devel (i.e. just put the version of deprecation, without the date). Reday for review.",
     "created_at": "2009-11-30T10:13:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7515",
     "type": "issue_comment",
@@ -107,7 +107,7 @@ archive/issue_comments_063658.json:
 }
 ```
 
-Attachment
+Attachment [trac_7515_method_alias_decorator-fh.patch](tarball://root/attachments/some-uuid/ticket7515/trac_7515_method_alias_decorator-fh.patch) by hivert created at 2009-11-30 10:13:08
 
 Updated patch to remark on sage-devel (i.e. just put the version of deprecation, without the date). Reday for review.
 

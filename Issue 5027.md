@@ -105,7 +105,7 @@ Changing assignee from tbd to mabshoff.
 archive/issue_comments_038297.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5027.patch](tarball://root/attachments/some-uuid/ticket5027/trac_5027.patch) by mabshoff created at 2009-02-05 13:07:58",
     "created_at": "2009-02-05T13:07:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5027",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_038297.json:
 }
 ```
 
-Attachment
+Attachment [trac_5027.patch](tarball://root/attachments/some-uuid/ticket5027/trac_5027.patch) by mabshoff created at 2009-02-05 13:07:58
 
 
 

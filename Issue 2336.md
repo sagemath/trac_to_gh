@@ -50,7 +50,7 @@ archive/issue_comments_015621.json:
 archive/issue_comments_015622.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-2336.patch](tarball://root/attachments/some-uuid/ticket2336/sage-2336.patch) by was created at 2008-02-27 20:31:53",
     "created_at": "2008-02-27T20:31:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2336",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_015622.json:
 }
 ```
 
-Attachment
+Attachment [sage-2336.patch](tarball://root/attachments/some-uuid/ticket2336/sage-2336.patch) by was created at 2008-02-27 20:31:53
 
 
 

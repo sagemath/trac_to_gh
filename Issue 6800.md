@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6800
 archive/issue_comments_055993.json:
 ```json
 {
-    "body": "Attachment\n\npatch adds the file formal_powerseries.py",
+    "body": "Attachment [12846.patch](tarball://root/attachments/some-uuid/ticket6800/12846.patch) by Henryk.Trappmann created at 2009-08-22 07:33:49\n\npatch adds the file formal_powerseries.py",
     "created_at": "2009-08-22T07:33:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6800",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_055993.json:
 }
 ```
 
-Attachment
+Attachment [12846.patch](tarball://root/attachments/some-uuid/ticket6800/12846.patch) by Henryk.Trappmann created at 2009-08-22 07:33:49
 
 patch adds the file formal_powerseries.py
 

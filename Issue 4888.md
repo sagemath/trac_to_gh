@@ -127,7 +127,7 @@ Michael
 archive/issue_comments_037051.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review for the fix suggested by rlm. I have attached the patch with a doctest and it passes `-t -long` with my current merge tree. Credit for authorship goes to David Perkinson in whose name I committed the patch.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_4888.patch](tarball://root/attachments/some-uuid/ticket4888/trac_4888.patch) by mabshoff created at 2009-01-18 05:53:14\n\nPositive review for the fix suggested by rlm. I have attached the patch with a doctest and it passes `-t -long` with my current merge tree. Credit for authorship goes to David Perkinson in whose name I committed the patch.\n\nCheers,\n\nMichael",
     "created_at": "2009-01-18T05:53:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4888",
     "type": "issue_comment",
@@ -136,7 +136,7 @@ archive/issue_comments_037051.json:
 }
 ```
 
-Attachment
+Attachment [trac_4888.patch](tarball://root/attachments/some-uuid/ticket4888/trac_4888.patch) by mabshoff created at 2009-01-18 05:53:14
 
 Positive review for the fix suggested by rlm. I have attached the patch with a doctest and it passes `-t -long` with my current merge tree. Credit for authorship goes to David Perkinson in whose name I committed the patch.
 

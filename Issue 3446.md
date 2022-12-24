@@ -53,7 +53,7 @@ Changing keywords from "" to "editor_wstein".
 archive/issue_comments_024309.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3446.patch](tarball://root/attachments/some-uuid/ticket3446/3446.patch) by TimothyClemans created at 2008-06-17 03:50:03",
     "created_at": "2008-06-17T03:50:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3446",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_024309.json:
 }
 ```
 
-Attachment
+Attachment [3446.patch](tarball://root/attachments/some-uuid/ticket3446/3446.patch) by TimothyClemans created at 2008-06-17 03:50:03
 
 
 
@@ -71,7 +71,7 @@ Attachment
 archive/issue_comments_024310.json:
 ```json
 {
-    "body": "Attachment\n\nuses letters with numerals instead of pure numerals",
+    "body": "Attachment [sage-3446_2.patch](tarball://root/attachments/some-uuid/ticket3446/sage-3446_2.patch) by TimothyClemans created at 2008-06-17 04:56:05\n\nuses letters with numerals instead of pure numerals",
     "created_at": "2008-06-17T04:56:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3446",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_024310.json:
 }
 ```
 
-Attachment
+Attachment [sage-3446_2.patch](tarball://root/attachments/some-uuid/ticket3446/sage-3446_2.patch) by TimothyClemans created at 2008-06-17 04:56:05
 
 uses letters with numerals instead of pure numerals
 

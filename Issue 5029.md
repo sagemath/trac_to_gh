@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5029
 archive/issue_comments_038305.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [HgBundleViewer-0.2-py2.4.egg](tarball://root/attachments/some-uuid/ticket5029/HgBundleViewer-0.2-py2.4.egg) by robertwb created at 2009-01-19 20:18:12",
     "created_at": "2009-01-19T20:18:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5029",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_038305.json:
 }
 ```
 
-Attachment
+Attachment [HgBundleViewer-0.2-py2.4.egg](tarball://root/attachments/some-uuid/ticket5029/HgBundleViewer-0.2-py2.4.egg) by robertwb created at 2009-01-19 20:18:12
 
 
 

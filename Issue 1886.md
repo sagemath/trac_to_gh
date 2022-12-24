@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1886
 archive/issue_comments_011946.json:
 ```json
 {
-    "body": "Attachment\n\nI followed the directions here:\n   http://math-atlas.sourceforge.net/devel/atlas_devel/atlas_devel.html#SECTION00070000000000000000\n\nIn particular, I did:\n\n```\n   1. sage -f -m atlas-3.8.p7\n   2. cd spkg/build/atlas-3.8.p7\n   3. cd ATLAS-build/ARCHS\n   4. make ArchNew\n   5. make tarfile\n```\n",
+    "body": "Attachment [K732SSE1.tgz](tarball://root/attachments/some-uuid/ticket1886/K732SSE1.tgz) by was created at 2008-01-22 04:48:14\n\nI followed the directions here:\n   http://math-atlas.sourceforge.net/devel/atlas_devel/atlas_devel.html#SECTION00070000000000000000\n\nIn particular, I did:\n\n```\n   1. sage -f -m atlas-3.8.p7\n   2. cd spkg/build/atlas-3.8.p7\n   3. cd ATLAS-build/ARCHS\n   4. make ArchNew\n   5. make tarfile\n```\n",
     "created_at": "2008-01-22T04:48:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1886",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_011946.json:
 }
 ```
 
-Attachment
+Attachment [K732SSE1.tgz](tarball://root/attachments/some-uuid/ticket1886/K732SSE1.tgz) by was created at 2008-01-22 04:48:14
 
 I followed the directions here:
    http://math-atlas.sourceforge.net/devel/atlas_devel/atlas_devel.html#SECTION00070000000000000000

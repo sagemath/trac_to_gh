@@ -109,7 +109,7 @@ This affects sage 3.1.3alpha1 and later.
 archive/issue_comments_030759.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4232-preparse-long-list.patch](tarball://root/attachments/some-uuid/ticket4232/4232-preparse-long-list.patch) by robertwb created at 2008-10-01 21:10:32",
     "created_at": "2008-10-01T21:10:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4232",
     "type": "issue_comment",
@@ -118,7 +118,7 @@ archive/issue_comments_030759.json:
 }
 ```
 
-Attachment
+Attachment [4232-preparse-long-list.patch](tarball://root/attachments/some-uuid/ticket4232/4232-preparse-long-list.patch) by robertwb created at 2008-10-01 21:10:32
 
 
 

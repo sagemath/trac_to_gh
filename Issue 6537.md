@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6537
 archive/issue_comments_053286.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6537-c_graph_memleak.patch](tarball://root/attachments/some-uuid/ticket6537/trac_6537-c_graph_memleak.patch) by jason created at 2009-07-17 19:18:59",
     "created_at": "2009-07-17T19:18:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6537",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_053286.json:
 }
 ```
 
-Attachment
+Attachment [trac_6537-c_graph_memleak.patch](tarball://root/attachments/some-uuid/ticket6537/trac_6537-c_graph_memleak.patch) by jason created at 2009-07-17 19:18:59
 
 
 

@@ -325,7 +325,7 @@ this patch has been applied the current m4ri.spkg and should also be applied to 
 archive/issue_comments_022145.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3197_libm4ri-20071224.p2-spkg-install-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3204/trac_3197_libm4ri-20071224.p2-spkg-install-64bit-osx.patch) by malb created at 2008-05-21 21:28:47",
     "created_at": "2008-05-21T21:28:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3204",
     "type": "issue_comment",
@@ -334,7 +334,7 @@ archive/issue_comments_022145.json:
 }
 ```
 
-Attachment
+Attachment [trac_3197_libm4ri-20071224.p2-spkg-install-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3204/trac_3197_libm4ri-20071224.p2-spkg-install-64bit-osx.patch) by malb created at 2008-05-21 21:28:47
 
 
 
@@ -397,7 +397,7 @@ silly little script to check the results against Magma for a small range of matr
 archive/issue_comments_022149.json:
 ```json
 {
-    "body": "Attachment\n\nThe SPKG + patch passes the test in `m4ri_test.py` in addition to the Sage doctests and the M4RI tests.",
+    "body": "Attachment [m4ri_test.py](tarball://root/attachments/some-uuid/ticket3204/m4ri_test.py) by malb created at 2008-05-28 12:33:58\n\nThe SPKG + patch passes the test in `m4ri_test.py` in addition to the Sage doctests and the M4RI tests.",
     "created_at": "2008-05-28T12:33:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3204",
     "type": "issue_comment",
@@ -406,7 +406,7 @@ archive/issue_comments_022149.json:
 }
 ```
 
-Attachment
+Attachment [m4ri_test.py](tarball://root/attachments/some-uuid/ticket3204/m4ri_test.py) by malb created at 2008-05-28 12:33:58
 
 The SPKG + patch passes the test in `m4ri_test.py` in addition to the Sage doctests and the M4RI tests.
 
@@ -417,7 +417,7 @@ The SPKG + patch passes the test in `m4ri_test.py` in addition to the Sage docte
 archive/issue_comments_022150.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [new_m4ri_corner_cases.patch](tarball://root/attachments/some-uuid/ticket3204/new_m4ri_corner_cases.patch) by malb created at 2008-05-28 16:33:43",
     "created_at": "2008-05-28T16:33:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3204",
     "type": "issue_comment",
@@ -426,7 +426,7 @@ archive/issue_comments_022150.json:
 }
 ```
 
-Attachment
+Attachment [new_m4ri_corner_cases.patch](tarball://root/attachments/some-uuid/ticket3204/new_m4ri_corner_cases.patch) by malb created at 2008-05-28 16:33:43
 
 
 

@@ -53,7 +53,7 @@ coercion & minor fixes to polybori
 archive/issue_comments_010592.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me. This is isolated to polybori, so I merged it.\n\nCheers,\n\nMichael",
+    "body": "Attachment [polybori-coercion.patch](tarball://root/attachments/some-uuid/ticket1667/polybori-coercion.patch) by mabshoff created at 2008-01-03 16:00:27\n\nLooks good to me. This is isolated to polybori, so I merged it.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-03T16:00:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1667",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_010592.json:
 }
 ```
 
-Attachment
+Attachment [polybori-coercion.patch](tarball://root/attachments/some-uuid/ticket1667/polybori-coercion.patch) by mabshoff created at 2008-01-03 16:00:27
 
 Looks good to me. This is isolated to polybori, so I merged it.
 

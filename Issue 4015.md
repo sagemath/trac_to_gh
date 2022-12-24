@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4015
 archive/issue_comments_028963.json:
 ```json
 {
-    "body": "Attachment\n\nNice work. Positive review. I guess eventually the code should be extended, but as is at least the code is being doctested :)\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_4015-bench-docs.patch](tarball://root/attachments/some-uuid/ticket4015/trac_4015-bench-docs.patch) by mabshoff created at 2008-08-31 07:05:19\n\nNice work. Positive review. I guess eventually the code should be extended, but as is at least the code is being doctested :)\n\nCheers,\n\nMichael",
     "created_at": "2008-08-31T07:05:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4015",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_028963.json:
 }
 ```
 
-Attachment
+Attachment [trac_4015-bench-docs.patch](tarball://root/attachments/some-uuid/ticket4015/trac_4015-bench-docs.patch) by mabshoff created at 2008-08-31 07:05:19
 
 Nice work. Positive review. I guess eventually the code should be extended, but as is at least the code is being doctested :)
 
@@ -91,7 +91,7 @@ Merged in Sage 3.1.2.alpha3
 archive/issue_comments_028966.json:
 ```json
 {
-    "body": "Attachment\n\nNote that in the second patch, calling the string representation of these functions also actually runs the test code.",
+    "body": "Attachment [trac_4015.2.patch](tarball://root/attachments/some-uuid/ticket4015/trac_4015.2.patch) by rlm created at 2008-08-31 07:36:56\n\nNote that in the second patch, calling the string representation of these functions also actually runs the test code.",
     "created_at": "2008-08-31T07:36:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4015",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_028966.json:
 }
 ```
 
-Attachment
+Attachment [trac_4015.2.patch](tarball://root/attachments/some-uuid/ticket4015/trac_4015.2.patch) by rlm created at 2008-08-31 07:36:56
 
 Note that in the second patch, calling the string representation of these functions also actually runs the test code.
 

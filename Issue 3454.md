@@ -67,7 +67,7 @@ Changing assignee from boothby to TimothyClemans.
 archive/issue_comments_024355.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3454.patch](tarball://root/attachments/some-uuid/ticket3454/3454.patch) by TimothyClemans created at 2008-06-18 00:55:00",
     "created_at": "2008-06-18T00:55:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3454",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_024355.json:
 }
 ```
 
-Attachment
+Attachment [3454.patch](tarball://root/attachments/some-uuid/ticket3454/3454.patch) by TimothyClemans created at 2008-06-18 00:55:00
 
 
 

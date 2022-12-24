@@ -84,7 +84,7 @@ Changing status from new to needs_review.
 archive/issue_comments_046294.json:
 ```json
 {
-    "body": "Attachment\n\nThis was a pretty small fix, so there it is.\n\nThe coverage score would naturally be undefined, but saying it's 100% of zero is a useful fiction in this case.",
+    "body": "Attachment [sage-trac_5859.patch](tarball://root/attachments/some-uuid/ticket5859/sage-trac_5859.patch) by mjo created at 2012-01-09 05:03:05\n\nThis was a pretty small fix, so there it is.\n\nThe coverage score would naturally be undefined, but saying it's 100% of zero is a useful fiction in this case.",
     "created_at": "2012-01-09T05:03:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5859",
     "type": "issue_comment",
@@ -93,7 +93,7 @@ archive/issue_comments_046294.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac_5859.patch](tarball://root/attachments/some-uuid/ticket5859/sage-trac_5859.patch) by mjo created at 2012-01-09 05:03:05
 
 This was a pretty small fix, so there it is.
 

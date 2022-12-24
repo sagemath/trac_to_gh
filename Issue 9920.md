@@ -442,7 +442,7 @@ scripts repo
 archive/issue_comments_098755.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9921-nose-scripts.patch](tarball://root/attachments/some-uuid/ticket9921/trac_9921-nose-scripts.patch) by jhpalmieri created at 2012-06-14 23:20:18",
     "created_at": "2012-06-14T23:20:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9920",
     "type": "issue_comment",
@@ -451,7 +451,7 @@ archive/issue_comments_098755.json:
 }
 ```
 
-Attachment
+Attachment [trac_9921-nose-scripts.patch](tarball://root/attachments/some-uuid/ticket9921/trac_9921-nose-scripts.patch) by jhpalmieri created at 2012-06-14 23:20:18
 
 
 
@@ -514,7 +514,7 @@ patch for spkg, for review only
 archive/issue_comments_098759.json:
 ```json
 {
-    "body": "Attachment\n\npatch for spkg, for review only (version 1.1.3)",
+    "body": "Attachment [trac_9921-nose-spkg.git.patch](tarball://root/attachments/some-uuid/ticket9921/trac_9921-nose-spkg.git.patch) by jhpalmieri created at 2012-06-14 23:39:24\n\npatch for spkg, for review only (version 1.1.3)",
     "created_at": "2012-06-14T23:39:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9920",
     "type": "issue_comment",
@@ -523,7 +523,7 @@ archive/issue_comments_098759.json:
 }
 ```
 
-Attachment
+Attachment [trac_9921-nose-spkg.git.patch](tarball://root/attachments/some-uuid/ticket9921/trac_9921-nose-spkg.git.patch) by jhpalmieri created at 2012-06-14 23:39:24
 
 patch for spkg, for review only (version 1.1.3)
 

@@ -1021,7 +1021,7 @@ Could someone please update [attachment:trac9650_differential_forms_v2.patch] wi
 archive/issue_comments_093614.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:37 mpatel]:\n> Could someone please update [attachment:trac9650_differential_forms_v2.patch] with a more descriptive commit string that includes the ticket number?  For example: `#9650: Add support for differential forms`.\n\nDone -- thanks for pointing that out.",
+    "body": "Attachment [trac9650_differential_forms_v2.patch](tarball://root/attachments/some-uuid/ticket9650/trac9650_differential_forms_v2.patch) by jvkersch created at 2010-09-05 07:53:00\n\nReplying to [comment:37 mpatel]:\n> Could someone please update [attachment:trac9650_differential_forms_v2.patch] with a more descriptive commit string that includes the ticket number?  For example: `#9650: Add support for differential forms`.\n\nDone -- thanks for pointing that out.",
     "created_at": "2010-09-05T07:53:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
@@ -1030,7 +1030,7 @@ archive/issue_comments_093614.json:
 }
 ```
 
-Attachment
+Attachment [trac9650_differential_forms_v2.patch](tarball://root/attachments/some-uuid/ticket9650/trac9650_differential_forms_v2.patch) by jvkersch created at 2010-09-05 07:53:00
 
 Replying to [comment:37 mpatel]:
 > Could someone please update [attachment:trac9650_differential_forms_v2.patch] with a more descriptive commit string that includes the ticket number?  For example: `#9650: Add support for differential forms`.
@@ -1121,7 +1121,7 @@ corrected formatting for NotImplemented methods
 archive/issue_comments_093619.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:33 jvkersch]:\n\n> OK, I've updated the patch so that the methods which are not applicable raise `NotImplementedError`.  I don't know if I've done this properly though, since including all the doctests this amounts to quite a bit of additional code.\n\nThis looks great, and I agree with others on getting it included into sage soon.  There were some formatting errors in the new docstrings (need newline between `EXAMPLES::` and indented code block), and since someone else gave the positive review I just uploaded a corrected version (apply only [attachment:trac9650_differential_forms_v2-reviewer.patch]).",
+    "body": "Attachment [trac9650_differential_forms_v2-reviewer.patch](tarball://root/attachments/some-uuid/ticket9650/trac9650_differential_forms_v2-reviewer.patch) by niles created at 2010-09-05 17:26:05\n\nReplying to [comment:33 jvkersch]:\n\n> OK, I've updated the patch so that the methods which are not applicable raise `NotImplementedError`.  I don't know if I've done this properly though, since including all the doctests this amounts to quite a bit of additional code.\n\nThis looks great, and I agree with others on getting it included into sage soon.  There were some formatting errors in the new docstrings (need newline between `EXAMPLES::` and indented code block), and since someone else gave the positive review I just uploaded a corrected version (apply only [attachment:trac9650_differential_forms_v2-reviewer.patch]).",
     "created_at": "2010-09-05T17:26:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
@@ -1130,7 +1130,7 @@ archive/issue_comments_093619.json:
 }
 ```
 
-Attachment
+Attachment [trac9650_differential_forms_v2-reviewer.patch](tarball://root/attachments/some-uuid/ticket9650/trac9650_differential_forms_v2-reviewer.patch) by niles created at 2010-09-05 17:26:05
 
 Replying to [comment:33 jvkersch]:
 

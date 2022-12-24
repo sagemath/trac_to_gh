@@ -251,7 +251,7 @@ this might (?) completely fix the bug; it also adds some nice timing output
 archive/issue_comments_014324.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-2180.patch](tarball://root/attachments/some-uuid/ticket2180/sage-2180.patch) by mabshoff created at 2008-02-24 09:22:45",
     "created_at": "2008-02-24T09:22:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2180",
     "type": "issue_comment",
@@ -260,7 +260,7 @@ archive/issue_comments_014324.json:
 }
 ```
 
-Attachment
+Attachment [sage-2180.patch](tarball://root/attachments/some-uuid/ticket2180/sage-2180.patch) by mabshoff created at 2008-02-24 09:22:45
 
 
 

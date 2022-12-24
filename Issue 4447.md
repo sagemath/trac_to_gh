@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4447
 archive/issue_comments_032795.json:
 ```json
 {
-    "body": "Attachment\n\nall tests in graphs/*.py and graphs/*.pyx pass.",
+    "body": "Attachment [graph-update-attributes.patch](tarball://root/attachments/some-uuid/ticket4447/graph-update-attributes.patch) by jason created at 2008-11-05 19:10:24\n\nall tests in graphs/*.py and graphs/*.pyx pass.",
     "created_at": "2008-11-05T19:10:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4447",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_032795.json:
 }
 ```
 
-Attachment
+Attachment [graph-update-attributes.patch](tarball://root/attachments/some-uuid/ticket4447/graph-update-attributes.patch) by jason created at 2008-11-05 19:10:24
 
 all tests in graphs/*.py and graphs/*.pyx pass.
 

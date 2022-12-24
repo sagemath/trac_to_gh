@@ -50,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1863
 archive/issue_comments_011797.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_1863_change_ring.patch](tarball://root/attachments/some-uuid/ticket1863/trac_1863_change_ring.patch) by malb created at 2008-03-28 12:11:21",
     "created_at": "2008-03-28T12:11:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1863",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_011797.json:
 }
 ```
 
-Attachment
+Attachment [trac_1863_change_ring.patch](tarball://root/attachments/some-uuid/ticket1863/trac_1863_change_ring.patch) by malb created at 2008-03-28 12:11:21
 
 
 
@@ -86,7 +86,7 @@ The attached patch implements `change_ring`.
 archive/issue_comments_011799.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1863.patch](tarball://root/attachments/some-uuid/ticket1863/1863.patch) by mhansen created at 2008-03-31 14:46:26",
     "created_at": "2008-03-31T14:46:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1863",
     "type": "issue_comment",
@@ -95,7 +95,7 @@ archive/issue_comments_011799.json:
 }
 ```
 
-Attachment
+Attachment [1863.patch](tarball://root/attachments/some-uuid/ticket1863/1863.patch) by mhansen created at 2008-03-31 14:46:26
 
 
 

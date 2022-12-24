@@ -1070,7 +1070,7 @@ error: command 'gcc' failed with exit status 1
 archive/issue_comments_038047.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4987-cython-0.11.patch](tarball://root/attachments/some-uuid/ticket4987/4987-cython-0.11.patch) by robertwb created at 2009-02-26 05:48:54",
     "created_at": "2009-02-26T05:48:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4987",
     "type": "issue_comment",
@@ -1079,7 +1079,7 @@ archive/issue_comments_038047.json:
 }
 ```
 
-Attachment
+Attachment [4987-cython-0.11.patch](tarball://root/attachments/some-uuid/ticket4987/4987-cython-0.11.patch) by robertwb created at 2009-02-26 05:48:54
 
 
 
@@ -1224,7 +1224,7 @@ Note that the current patch enables the refnanny, which should be changed before
 archive/issue_comments_038054.json:
 ```json
 {
-    "body": "Attachment\n\nApply this one. (Exactly the same as above, but doesn't enable the refnanny.)",
+    "body": "Attachment [4987-cython-0.11-final.patch](tarball://root/attachments/some-uuid/ticket4987/4987-cython-0.11-final.patch) by robertwb created at 2009-03-14 08:00:08\n\nApply this one. (Exactly the same as above, but doesn't enable the refnanny.)",
     "created_at": "2009-03-14T08:00:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4987",
     "type": "issue_comment",
@@ -1233,7 +1233,7 @@ archive/issue_comments_038054.json:
 }
 ```
 
-Attachment
+Attachment [4987-cython-0.11-final.patch](tarball://root/attachments/some-uuid/ticket4987/4987-cython-0.11-final.patch) by robertwb created at 2009-03-14 08:00:08
 
 Apply this one. (Exactly the same as above, but doesn't enable the refnanny.)
 

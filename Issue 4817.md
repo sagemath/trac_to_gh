@@ -226,7 +226,7 @@ The Sage.app skeleton
 archive/issue_comments_036526.json:
 ```json
 {
-    "body": "Attachment\n\nchanges to sage-bdist",
+    "body": "Attachment [trac_4817_part1.patch](tarball://root/attachments/some-uuid/ticket4817/trac_4817_part1.patch) by iandrus created at 2009-02-03 19:52:30\n\nchanges to sage-bdist",
     "created_at": "2009-02-03T19:52:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4817",
     "type": "issue_comment",
@@ -235,7 +235,7 @@ archive/issue_comments_036526.json:
 }
 ```
 
-Attachment
+Attachment [trac_4817_part1.patch](tarball://root/attachments/some-uuid/ticket4817/trac_4817_part1.patch) by iandrus created at 2009-02-03 19:52:30
 
 changes to sage-bdist
 
@@ -246,7 +246,7 @@ changes to sage-bdist
 archive/issue_comments_036527.json:
 ```json
 {
-    "body": "Attachment\n\nchanges to sage-native-execute",
+    "body": "Attachment [trac_4817_part2.patch](tarball://root/attachments/some-uuid/ticket4817/trac_4817_part2.patch) by iandrus created at 2009-02-03 19:53:18\n\nchanges to sage-native-execute",
     "created_at": "2009-02-03T19:53:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4817",
     "type": "issue_comment",
@@ -255,7 +255,7 @@ archive/issue_comments_036527.json:
 }
 ```
 
-Attachment
+Attachment [trac_4817_part2.patch](tarball://root/attachments/some-uuid/ticket4817/trac_4817_part2.patch) by iandrus created at 2009-02-03 19:53:18
 
 changes to sage-native-execute
 
@@ -266,7 +266,7 @@ changes to sage-native-execute
 archive/issue_comments_036528.json:
 ```json
 {
-    "body": "Attachment\n\nI hope no one was using the incorrect quoting of commandline parameters in sage-native-execute. I originally needed this change since I had sage-bdist call platypus directly, but I have since gotten rid of that so I guess I don't need those changes anymore.  Unfortunately, I didn't realize that until I had uploaded it.  I'm not sure how to delete it (though the patch should go in anyway IMHO).",
+    "body": "Attachment [trac_4817_part3.patch](tarball://root/attachments/some-uuid/ticket4817/trac_4817_part3.patch) by iandrus created at 2009-02-03 19:56:43\n\nI hope no one was using the incorrect quoting of commandline parameters in sage-native-execute. I originally needed this change since I had sage-bdist call platypus directly, but I have since gotten rid of that so I guess I don't need those changes anymore.  Unfortunately, I didn't realize that until I had uploaded it.  I'm not sure how to delete it (though the patch should go in anyway IMHO).",
     "created_at": "2009-02-03T19:56:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4817",
     "type": "issue_comment",
@@ -275,7 +275,7 @@ archive/issue_comments_036528.json:
 }
 ```
 
-Attachment
+Attachment [trac_4817_part3.patch](tarball://root/attachments/some-uuid/ticket4817/trac_4817_part3.patch) by iandrus created at 2009-02-03 19:56:43
 
 I hope no one was using the incorrect quoting of commandline parameters in sage-native-execute. I originally needed this change since I had sage-bdist call platypus directly, but I have since gotten rid of that so I guess I don't need those changes anymore.  Unfortunately, I didn't realize that until I had uploaded it.  I'm not sure how to delete it (though the patch should go in anyway IMHO).
 
@@ -337,7 +337,7 @@ Ivan's patch clean up - apply this patch to the bin repo only
 archive/issue_comments_036531.json:
 ```json
 {
-    "body": "Attachment\n\nApply on top of part1.",
+    "body": "Attachment [trac_4817-ext-update-copyright.patch](tarball://root/attachments/some-uuid/ticket4817/trac_4817-ext-update-copyright.patch) by mabshoff created at 2009-02-04 00:05:49\n\nApply on top of part1.",
     "created_at": "2009-02-04T00:05:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4817",
     "type": "issue_comment",
@@ -346,7 +346,7 @@ archive/issue_comments_036531.json:
 }
 ```
 
-Attachment
+Attachment [trac_4817-ext-update-copyright.patch](tarball://root/attachments/some-uuid/ticket4817/trac_4817-ext-update-copyright.patch) by mabshoff created at 2009-02-04 00:05:49
 
 Apply on top of part1.
 

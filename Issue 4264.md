@@ -262,7 +262,7 @@ exported against 4.2.
 archive/issue_comments_031105.json:
 ```json
 {
-    "body": "Attachment\n\nI hope I did not miss any a_invs or a_invariants.",
+    "body": "Attachment [trac_4264.patch](tarball://root/attachments/some-uuid/ticket4264/trac_4264.patch) by wuthrich created at 2009-11-02 13:12:24\n\nI hope I did not miss any a_invs or a_invariants.",
     "created_at": "2009-11-02T13:12:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4264",
     "type": "issue_comment",
@@ -271,7 +271,7 @@ archive/issue_comments_031105.json:
 }
 ```
 
-Attachment
+Attachment [trac_4264.patch](tarball://root/attachments/some-uuid/ticket4264/trac_4264.patch) by wuthrich created at 2009-11-02 13:12:24
 
 I hope I did not miss any a_invs or a_invariants.
 

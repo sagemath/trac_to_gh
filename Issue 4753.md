@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4753
 archive/issue_comments_035980.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4753-part1.patch](tarball://root/attachments/some-uuid/ticket4753/trac_4753-part1.patch) by was created at 2008-12-11 02:37:16",
     "created_at": "2008-12-11T02:37:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4753",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_035980.json:
 }
 ```
 
-Attachment
+Attachment [trac_4753-part1.patch](tarball://root/attachments/some-uuid/ticket4753/trac_4753-part1.patch) by was created at 2008-12-11 02:37:16
 
 
 
@@ -185,7 +185,7 @@ Now it's ready for review.
 archive/issue_comments_035986.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4753-part2.patch](tarball://root/attachments/some-uuid/ticket4753/trac_4753-part2.patch) by craigcitro created at 2009-01-10 12:04:01",
     "created_at": "2009-01-10T12:04:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4753",
     "type": "issue_comment",
@@ -194,7 +194,7 @@ archive/issue_comments_035986.json:
 }
 ```
 
-Attachment
+Attachment [trac_4753-part2.patch](tarball://root/attachments/some-uuid/ticket4753/trac_4753-part2.patch) by craigcitro created at 2009-01-10 12:04:01
 
 
 
@@ -317,7 +317,7 @@ Michael
 archive/issue_comments_035990.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4753-part3.patch](tarball://root/attachments/some-uuid/ticket4753/trac_4753-part3.patch) by craigcitro created at 2009-01-11 08:59:14",
     "created_at": "2009-01-11T08:59:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4753",
     "type": "issue_comment",
@@ -326,7 +326,7 @@ archive/issue_comments_035990.json:
 }
 ```
 
-Attachment
+Attachment [trac_4753-part3.patch](tarball://root/attachments/some-uuid/ticket4753/trac_4753-part3.patch) by craigcitro created at 2009-01-11 08:59:14
 
 
 
@@ -401,7 +401,7 @@ I wised up, and tested `sage/matrix/` and `sage/modular/modsym` before posting -
 archive/issue_comments_035994.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4753-part4.patch](tarball://root/attachments/some-uuid/ticket4753/trac_4753-part4.patch) by was created at 2009-01-12 15:07:53",
     "created_at": "2009-01-12T15:07:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4753",
     "type": "issue_comment",
@@ -410,7 +410,7 @@ archive/issue_comments_035994.json:
 }
 ```
 
-Attachment
+Attachment [trac_4753-part4.patch](tarball://root/attachments/some-uuid/ticket4753/trac_4753-part4.patch) by was created at 2009-01-12 15:07:53
 
 
 

@@ -211,7 +211,7 @@ Michael
 archive/issue_comments_027854.json:
 ```json
 {
-    "body": "Attachment\n\nThis replaces the older patch.",
+    "body": "Attachment [3896-cython-0.9.8.1.1.patch](tarball://root/attachments/some-uuid/ticket3896/3896-cython-0.9.8.1.1.patch) by robertwb created at 2008-08-23 16:44:28\n\nThis replaces the older patch.",
     "created_at": "2008-08-23T16:44:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3896",
     "type": "issue_comment",
@@ -220,7 +220,7 @@ archive/issue_comments_027854.json:
 }
 ```
 
-Attachment
+Attachment [3896-cython-0.9.8.1.1.patch](tarball://root/attachments/some-uuid/ticket3896/3896-cython-0.9.8.1.1.patch) by robertwb created at 2008-08-23 16:44:28
 
 This replaces the older patch.
 

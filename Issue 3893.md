@@ -261,7 +261,7 @@ Changing status from new to needs_review.
 archive/issue_comments_027821.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3893_args_kwds_for_random_element.patch](tarball://root/attachments/some-uuid/ticket3893/trac_3893_args_kwds_for_random_element.patch) by niles created at 2010-08-23 14:30:52",
     "created_at": "2010-08-23T14:30:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3893",
     "type": "issue_comment",
@@ -270,7 +270,7 @@ archive/issue_comments_027821.json:
 }
 ```
 
-Attachment
+Attachment [trac_3893_args_kwds_for_random_element.patch](tarball://root/attachments/some-uuid/ticket3893/trac_3893_args_kwds_for_random_element.patch) by niles created at 2010-08-23 14:30:52
 
 
 
@@ -279,7 +279,7 @@ Attachment
 archive/issue_comments_027822.json:
 ```json
 {
-    "body": "Attachment\n\nI rebased the patch to 4.5.3.alpha2 and ran long doctests: all passed. The patch also looks good, the only issue I'd have: I'd either move the lines \"Trac#3893 ...\" to the TESTS:: section or remove that line completely. I understand that people want to point out where something changed, but that docstring is saying nothing to a user since it is developer information.",
+    "body": "Attachment [trac_3893_args_kwds_for_random_element-rebased-to-4.5.3.alpha2.patch](tarball://root/attachments/some-uuid/ticket3893/trac_3893_args_kwds_for_random_element-rebased-to-4.5.3.alpha2.patch) by malb created at 2010-08-24 15:18:04\n\nI rebased the patch to 4.5.3.alpha2 and ran long doctests: all passed. The patch also looks good, the only issue I'd have: I'd either move the lines \"Trac#3893 ...\" to the TESTS:: section or remove that line completely. I understand that people want to point out where something changed, but that docstring is saying nothing to a user since it is developer information.",
     "created_at": "2010-08-24T15:18:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3893",
     "type": "issue_comment",
@@ -288,7 +288,7 @@ archive/issue_comments_027822.json:
 }
 ```
 
-Attachment
+Attachment [trac_3893_args_kwds_for_random_element-rebased-to-4.5.3.alpha2.patch](tarball://root/attachments/some-uuid/ticket3893/trac_3893_args_kwds_for_random_element-rebased-to-4.5.3.alpha2.patch) by malb created at 2010-08-24 15:18:04
 
 I rebased the patch to 4.5.3.alpha2 and ran long doctests: all passed. The patch also looks good, the only issue I'd have: I'd either move the lines "Trac#3893 ..." to the TESTS:: section or remove that line completely. I understand that people want to point out where something changed, but that docstring is saying nothing to a user since it is developer information.
 
@@ -343,7 +343,7 @@ I'm not sure what the official policy is, but I'd say it would be a bit odd when
 archive/issue_comments_027825.json:
 ```json
 {
-    "body": "Attachment\n\nclarified docstrings",
+    "body": "Attachment [trac_3893_args_kwds_for_random_element-rebased-to-4.5.3.alpha2-clarified-docstring.patch](tarball://root/attachments/some-uuid/ticket3893/trac_3893_args_kwds_for_random_element-rebased-to-4.5.3.alpha2-clarified-docstring.patch) by niles created at 2010-08-24 21:32:14\n\nclarified docstrings",
     "created_at": "2010-08-24T21:32:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3893",
     "type": "issue_comment",
@@ -352,7 +352,7 @@ archive/issue_comments_027825.json:
 }
 ```
 
-Attachment
+Attachment [trac_3893_args_kwds_for_random_element-rebased-to-4.5.3.alpha2-clarified-docstring.patch](tarball://root/attachments/some-uuid/ticket3893/trac_3893_args_kwds_for_random_element-rebased-to-4.5.3.alpha2-clarified-docstring.patch) by niles created at 2010-08-24 21:32:14
 
 clarified docstrings
 
@@ -386,7 +386,7 @@ fair enough; I also can't find any mention of a policy like this in the develope
 archive/issue_comments_027827.json:
 ```json
 {
-    "body": "Attachment\n\nrebased to 4.5.3",
+    "body": "Attachment [trac_3893_args_kwds_for_random_element-rebased-to-4.5.3.patch](tarball://root/attachments/some-uuid/ticket3893/trac_3893_args_kwds_for_random_element-rebased-to-4.5.3.patch) by niles created at 2010-09-21 17:46:02\n\nrebased to 4.5.3",
     "created_at": "2010-09-21T17:46:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3893",
     "type": "issue_comment",
@@ -395,7 +395,7 @@ archive/issue_comments_027827.json:
 }
 ```
 
-Attachment
+Attachment [trac_3893_args_kwds_for_random_element-rebased-to-4.5.3.patch](tarball://root/attachments/some-uuid/ticket3893/trac_3893_args_kwds_for_random_element-rebased-to-4.5.3.patch) by niles created at 2010-09-21 17:46:02
 
 rebased to 4.5.3
 
@@ -541,7 +541,7 @@ Changing keywords from "" to "random_element, args, kwds".
 archive/issue_comments_027834.json:
 ```json
 {
-    "body": "Attachment\n\nIndeed; the interaction seems to be with #8955: after applying those patches, I get exactly the same doctest failures, with exactly the same \"Got\" output.  I just uploaded a fixed patch which passes all doctests after applying #8955.",
+    "body": "Attachment [trac_3893_args_kwds_for_random_element_4.6.alpha2.patch](tarball://root/attachments/some-uuid/ticket3893/trac_3893_args_kwds_for_random_element_4.6.alpha2.patch) by niles created at 2010-09-30 12:29:36\n\nIndeed; the interaction seems to be with #8955: after applying those patches, I get exactly the same doctest failures, with exactly the same \"Got\" output.  I just uploaded a fixed patch which passes all doctests after applying #8955.",
     "created_at": "2010-09-30T12:29:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3893",
     "type": "issue_comment",
@@ -550,7 +550,7 @@ archive/issue_comments_027834.json:
 }
 ```
 
-Attachment
+Attachment [trac_3893_args_kwds_for_random_element_4.6.alpha2.patch](tarball://root/attachments/some-uuid/ticket3893/trac_3893_args_kwds_for_random_element_4.6.alpha2.patch) by niles created at 2010-09-30 12:29:36
 
 Indeed; the interaction seems to be with #8955: after applying those patches, I get exactly the same doctest failures, with exactly the same "Got" output.  I just uploaded a fixed patch which passes all doctests after applying #8955.
 

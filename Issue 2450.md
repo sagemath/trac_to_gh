@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2450
 archive/issue_comments_016562.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [matrix_integer_dense.patch](tarball://root/attachments/some-uuid/ticket2450/matrix_integer_dense.patch) by mabshoff created at 2008-03-10 03:23:29",
     "created_at": "2008-03-10T03:23:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2450",
     "type": "issue_comment",
@@ -41,7 +41,7 @@ archive/issue_comments_016562.json:
 }
 ```
 
-Attachment
+Attachment [matrix_integer_dense.patch](tarball://root/attachments/some-uuid/ticket2450/matrix_integer_dense.patch) by mabshoff created at 2008-03-10 03:23:29
 
 
 

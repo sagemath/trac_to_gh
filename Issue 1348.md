@@ -175,7 +175,7 @@ I'm going to split off the last suggestion into a separate ticket.
 archive/issue_comments_008644.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1348-doc.patch](tarball://root/attachments/some-uuid/ticket1348/1348-doc.patch) by mhansen created at 2007-12-07 21:50:31",
     "created_at": "2007-12-07T21:50:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1348",
     "type": "issue_comment",
@@ -184,7 +184,7 @@ archive/issue_comments_008644.json:
 }
 ```
 
-Attachment
+Attachment [1348-doc.patch](tarball://root/attachments/some-uuid/ticket1348/1348-doc.patch) by mhansen created at 2007-12-07 21:50:31
 
 
 
@@ -193,7 +193,7 @@ Attachment
 archive/issue_comments_008645.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.",
+    "body": "Attachment [1348-sage.patch](tarball://root/attachments/some-uuid/ticket1348/1348-sage.patch) by mabshoff created at 2007-12-09 10:29:55\n\nLooks good to me.",
     "created_at": "2007-12-09T10:29:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1348",
     "type": "issue_comment",
@@ -202,7 +202,7 @@ archive/issue_comments_008645.json:
 }
 ```
 
-Attachment
+Attachment [1348-sage.patch](tarball://root/attachments/some-uuid/ticket1348/1348-sage.patch) by mabshoff created at 2007-12-09 10:29:55
 
 Looks good to me.
 

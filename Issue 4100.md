@@ -76,7 +76,7 @@ but people who don't know about the `is` operator shouldn't be hit that bad...
 archive/issue_comments_029583.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4100-eq-None.patch](tarball://root/attachments/some-uuid/ticket4100/4100-eq-None.patch) by robertwb created at 2008-09-11 06:08:54",
     "created_at": "2008-09-11T06:08:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4100",
     "type": "issue_comment",
@@ -85,7 +85,7 @@ archive/issue_comments_029583.json:
 }
 ```
 
-Attachment
+Attachment [4100-eq-None.patch](tarball://root/attachments/some-uuid/ticket4100/4100-eq-None.patch) by robertwb created at 2008-09-11 06:08:54
 
 
 

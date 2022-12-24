@@ -48,7 +48,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6027
 archive/issue_comments_047989.json:
 ```json
 {
-    "body": "Attachment\n\nI've added a patch to get the memory usage of Sage on Darwin without spawning top and parsing the output. With this patch, get_memory_usage() will still report the same result that top reports for VSIZE (the link above doesn't do this).\n\nBefore patch:\n\nsage: timeit('get_memory_usage()')\n5 loops, best of 3: 156 ms per loop\n\nAfter patch:\n\nsage: timeit('get_memory_usage()')\n125 loops, best of 3: 2.62 ms per loop\n\nThis has only been tested on OS X 10.5, Intel, 64-bit. It will likely work for PPC and 32-bit (still 10.5), but I'm not sure about 10.4 and earlier. I don't have access to hardware right now to test (and fix) this patch on all these other configurations. I'd be happy to finish up this patch if someone has machines to test on.",
+    "body": "Attachment [trac_6027_get_memory_usage_darwin.patch](tarball://root/attachments/some-uuid/ticket6027/trac_6027_get_memory_usage_darwin.patch) by rdingman created at 2009-05-22 18:15:04\n\nI've added a patch to get the memory usage of Sage on Darwin without spawning top and parsing the output. With this patch, get_memory_usage() will still report the same result that top reports for VSIZE (the link above doesn't do this).\n\nBefore patch:\n\nsage: timeit('get_memory_usage()')\n5 loops, best of 3: 156 ms per loop\n\nAfter patch:\n\nsage: timeit('get_memory_usage()')\n125 loops, best of 3: 2.62 ms per loop\n\nThis has only been tested on OS X 10.5, Intel, 64-bit. It will likely work for PPC and 32-bit (still 10.5), but I'm not sure about 10.4 and earlier. I don't have access to hardware right now to test (and fix) this patch on all these other configurations. I'd be happy to finish up this patch if someone has machines to test on.",
     "created_at": "2009-05-22T18:15:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6027",
     "type": "issue_comment",
@@ -57,7 +57,7 @@ archive/issue_comments_047989.json:
 }
 ```
 
-Attachment
+Attachment [trac_6027_get_memory_usage_darwin.patch](tarball://root/attachments/some-uuid/ticket6027/trac_6027_get_memory_usage_darwin.patch) by rdingman created at 2009-05-22 18:15:04
 
 I've added a patch to get the memory usage of Sage on Darwin without spawning top and parsing the output. With this patch, get_memory_usage() will still report the same result that top reports for VSIZE (the link above doesn't do this).
 
@@ -191,7 +191,7 @@ Resolution: fixed
 archive/issue_comments_047995.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review on William's additional patch, which is merged in sage-4.1.alpha1.",
+    "body": "Attachment [trac_6027-osx104.patch](tarball://root/attachments/some-uuid/ticket6027/trac_6027-osx104.patch) by rlm created at 2009-06-25 17:13:53\n\nPositive review on William's additional patch, which is merged in sage-4.1.alpha1.",
     "created_at": "2009-06-25T17:13:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6027",
     "type": "issue_comment",
@@ -200,7 +200,7 @@ archive/issue_comments_047995.json:
 }
 ```
 
-Attachment
+Attachment [trac_6027-osx104.patch](tarball://root/attachments/some-uuid/ticket6027/trac_6027-osx104.patch) by rlm created at 2009-06-25 17:13:53
 
 Positive review on William's additional patch, which is merged in sage-4.1.alpha1.
 

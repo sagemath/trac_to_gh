@@ -214,7 +214,7 @@ clean up of doc
 archive/issue_comments_054621.json:
 ```json
 {
-    "body": "Attachment\n\napply only group_algebras_feature_central_vf.v2.patch",
+    "body": "Attachment [group_algebras_feature_central_vf.v2.patch](tarball://root/attachments/some-uuid/ticket6654/group_algebras_feature_central_vf.v2.patch) by chapoton created at 2012-09-08 12:00:24\n\napply only group_algebras_feature_central_vf.v2.patch",
     "created_at": "2012-09-08T12:00:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6654",
     "type": "issue_comment",
@@ -223,7 +223,7 @@ archive/issue_comments_054621.json:
 }
 ```
 
-Attachment
+Attachment [group_algebras_feature_central_vf.v2.patch](tarball://root/attachments/some-uuid/ticket6654/group_algebras_feature_central_vf.v2.patch) by chapoton created at 2012-09-08 12:00:24
 
 apply only group_algebras_feature_central_vf.v2.patch
 

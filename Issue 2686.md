@@ -49,7 +49,7 @@ Some constructions of Chris Godsil, to be transplanted.
 archive/issue_comments_018464.json:
 ```json
 {
-    "body": "Attachment\n\nNote - Hoffman-Singleton is included in #2765",
+    "body": "Attachment [grfs.sage](tarball://root/attachments/some-uuid/ticket2686/grfs.sage) by rlm created at 2008-04-01 23:01:33\n\nNote - Hoffman-Singleton is included in #2765",
     "created_at": "2008-04-01T23:01:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2686",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_018464.json:
 }
 ```
 
-Attachment
+Attachment [grfs.sage](tarball://root/attachments/some-uuid/ticket2686/grfs.sage) by rlm created at 2008-04-01 23:01:33
 
 Note - Hoffman-Singleton is included in #2765
 

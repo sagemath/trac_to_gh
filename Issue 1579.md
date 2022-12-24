@@ -72,7 +72,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1579
 archive/issue_comments_010066.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-2.9-fix-ComplexDoubleVector-memleak.patch](tarball://root/attachments/some-uuid/ticket1579/Sage-2.9-fix-ComplexDoubleVector-memleak.patch) by mabshoff created at 2007-12-21 08:41:38",
     "created_at": "2007-12-21T08:41:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1579",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_010066.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.9-fix-ComplexDoubleVector-memleak.patch](tarball://root/attachments/some-uuid/ticket1579/Sage-2.9-fix-ComplexDoubleVector-memleak.patch) by mabshoff created at 2007-12-21 08:41:38
 
 
 

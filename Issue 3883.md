@@ -36,7 +36,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3883
 archive/issue_comments_027699.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-trac3883.patch](tarball://root/attachments/some-uuid/ticket3883/sage-trac3883.patch) by cremona created at 2008-08-17 17:34:25",
     "created_at": "2008-08-17T17:34:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3883",
     "type": "issue_comment",
@@ -45,7 +45,7 @@ archive/issue_comments_027699.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac3883.patch](tarball://root/attachments/some-uuid/ticket3883/sage-trac3883.patch) by cremona created at 2008-08-17 17:34:25
 
 
 
@@ -108,7 +108,7 @@ Apply after the previous patch
 archive/issue_comments_027703.json:
 ```json
 {
-    "body": "Attachment\n\nReview by Chris Wuthrich:\n\nSo, I had a closer look at your division polynomials.\n\nI don't get any errors with 3.1.1. (without the changes in 3927).\nI will make some small changes, like the spelling of my name :), and\nsome bigger ones, depending on your views on these :\n\n* Personally I would have chosen one name, say division_polynomial,\nand then an option in it to get the full_ version or the pseudo\nversion. There are already very many (218) function on the elliptic\ncurve class and it would be less confusing for the average user. That\nis a matter of taste, I guess.\n\n* multiply_x_* should maybe be a _multiply_x_* as I don't think\nsomeone will ever use that directly and it will certainly be confusing\nfor the newbie. Where was this function before ? Has it something to\ndo with the _multiply_point in padics.py ?\n There is another implementation of the division_polynomials that\ncould be rewritten. But there the curve has coefficients in a ring and\none computes integrally. So that does not make sense in ell_generic.\n\n* By the way and completely unrelated, I saw the example\n  E = EllipticCurve(GF(3),[1,2])\n  E.short_weierstrass_model()\nwhich gives \"no short model for Elliptic Curve defined by y^2  = x^3 +\nx + 2 over Finite Field of size 3\". Do you agree that we should not\nraise an error when the model is already in short form ?\n\n* Also, completely unrelated again. E.integral_weierstrass_model\nshould be E.integral_short_weierstrass_model..",
+    "body": "Attachment [sage-trac3883b.patch](tarball://root/attachments/some-uuid/ticket3883/sage-trac3883b.patch) by cremona created at 2008-08-26 15:39:46\n\nReview by Chris Wuthrich:\n\nSo, I had a closer look at your division polynomials.\n\nI don't get any errors with 3.1.1. (without the changes in 3927).\nI will make some small changes, like the spelling of my name :), and\nsome bigger ones, depending on your views on these :\n\n* Personally I would have chosen one name, say division_polynomial,\nand then an option in it to get the full_ version or the pseudo\nversion. There are already very many (218) function on the elliptic\ncurve class and it would be less confusing for the average user. That\nis a matter of taste, I guess.\n\n* multiply_x_* should maybe be a _multiply_x_* as I don't think\nsomeone will ever use that directly and it will certainly be confusing\nfor the newbie. Where was this function before ? Has it something to\ndo with the _multiply_point in padics.py ?\n There is another implementation of the division_polynomials that\ncould be rewritten. But there the curve has coefficients in a ring and\none computes integrally. So that does not make sense in ell_generic.\n\n* By the way and completely unrelated, I saw the example\n  E = EllipticCurve(GF(3),[1,2])\n  E.short_weierstrass_model()\nwhich gives \"no short model for Elliptic Curve defined by y^2  = x^3 +\nx + 2 over Finite Field of size 3\". Do you agree that we should not\nraise an error when the model is already in short form ?\n\n* Also, completely unrelated again. E.integral_weierstrass_model\nshould be E.integral_short_weierstrass_model..",
     "created_at": "2008-08-26T15:39:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3883",
     "type": "issue_comment",
@@ -117,7 +117,7 @@ archive/issue_comments_027703.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac3883b.patch](tarball://root/attachments/some-uuid/ticket3883/sage-trac3883b.patch) by cremona created at 2008-08-26 15:39:46
 
 Review by Chris Wuthrich:
 
@@ -248,7 +248,7 @@ small changes to be applied after the previous two patches.
 archive/issue_comments_027706.json:
 ```json
 {
-    "body": "Attachment\n\nI have added a small patch, which changes all multiply_x_numerator to _multiply_x_numerator. Personally I don't see why it should harm that there is a _function in ell_points.py. I don't believe this function would be used by users directly, so it makes sense to me to hide. Also I changed the documentation referring to my thesis.\n\nAs it is only a matter of taste, it is up to John to decide, I think, if he would like the third patch to be applied or not.\n\nOther than that all is fine. Test pass, the functions are very well documented and very well coded.\n\nPOSITIVE REVIEW (both with only the first two or will all three patches).",
+    "body": "Attachment [sage_trac_3883c.patch](tarball://root/attachments/some-uuid/ticket3883/sage_trac_3883c.patch) by wuthrich created at 2008-08-27 17:23:39\n\nI have added a small patch, which changes all multiply_x_numerator to _multiply_x_numerator. Personally I don't see why it should harm that there is a _function in ell_points.py. I don't believe this function would be used by users directly, so it makes sense to me to hide. Also I changed the documentation referring to my thesis.\n\nAs it is only a matter of taste, it is up to John to decide, I think, if he would like the third patch to be applied or not.\n\nOther than that all is fine. Test pass, the functions are very well documented and very well coded.\n\nPOSITIVE REVIEW (both with only the first two or will all three patches).",
     "created_at": "2008-08-27T17:23:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3883",
     "type": "issue_comment",
@@ -257,7 +257,7 @@ archive/issue_comments_027706.json:
 }
 ```
 
-Attachment
+Attachment [sage_trac_3883c.patch](tarball://root/attachments/some-uuid/ticket3883/sage_trac_3883c.patch) by wuthrich created at 2008-08-27 17:23:39
 
 I have added a small patch, which changes all multiply_x_numerator to _multiply_x_numerator. Personally I don't see why it should harm that there is a _function in ell_points.py. I don't believe this function would be used by users directly, so it makes sense to me to hide. Also I changed the documentation referring to my thesis.
 

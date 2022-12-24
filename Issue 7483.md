@@ -115,7 +115,7 @@ apply to the sagenb spkg
 archive/issue_comments_063180.json:
 ```json
 {
-    "body": "Attachment\n\napply to the core sage library",
+    "body": "Attachment [sagenb_7483.patch](tarball://root/attachments/some-uuid/ticket7483/sagenb_7483.patch) by was created at 2009-11-18 00:35:45\n\napply to the core sage library",
     "created_at": "2009-11-18T00:35:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7483",
     "type": "issue_comment",
@@ -124,7 +124,7 @@ archive/issue_comments_063180.json:
 }
 ```
 
-Attachment
+Attachment [sagenb_7483.patch](tarball://root/attachments/some-uuid/ticket7483/sagenb_7483.patch) by was created at 2009-11-18 00:35:45
 
 apply to the core sage library
 
@@ -153,7 +153,7 @@ Changing status from new to needs_review.
 archive/issue_comments_063182.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sagelib-7483.patch](tarball://root/attachments/some-uuid/ticket7483/sagelib-7483.patch) by was created at 2009-11-18 00:35:52",
     "created_at": "2009-11-18T00:35:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7483",
     "type": "issue_comment",
@@ -162,7 +162,7 @@ archive/issue_comments_063182.json:
 }
 ```
 
-Attachment
+Attachment [sagelib-7483.patch](tarball://root/attachments/some-uuid/ticket7483/sagelib-7483.patch) by was created at 2009-11-18 00:35:52
 
 
 

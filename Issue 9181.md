@@ -77,7 +77,7 @@ Changing assignee from mvngu to hivert.
 archive/issue_comments_085893.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9181-hash_devel_doc_fix-fh.patch](tarball://root/attachments/some-uuid/ticket9181/trac_9181-hash_devel_doc_fix-fh.patch) by hivert created at 2011-01-18 15:18:08",
     "created_at": "2011-01-18T15:18:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9181",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_085893.json:
 }
 ```
 
-Attachment
+Attachment [trac_9181-hash_devel_doc_fix-fh.patch](tarball://root/attachments/some-uuid/ticket9181/trac_9181-hash_devel_doc_fix-fh.patch) by hivert created at 2011-01-18 15:18:08
 
 
 

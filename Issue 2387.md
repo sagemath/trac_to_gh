@@ -73,7 +73,7 @@ The string returned will not construct the object usually since y is not a varia
 archive/issue_comments_016111.json:
 ```json
 {
-    "body": "Attachment\n\nAlso, there aren't any doctests...I'll be adding those.  If anyone wants to comment on something I did, please do so!  I'm not very familiar with the coercion system and did the above mainly by searching for _magma_init_ and copying where it made sense.",
+    "body": "Attachment [sage_init.patch](tarball://root/attachments/some-uuid/ticket2387/sage_init.patch) by jason created at 2008-03-05 19:09:40\n\nAlso, there aren't any doctests...I'll be adding those.  If anyone wants to comment on something I did, please do so!  I'm not very familiar with the coercion system and did the above mainly by searching for _magma_init_ and copying where it made sense.",
     "created_at": "2008-03-05T19:09:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2387",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_016111.json:
 }
 ```
 
-Attachment
+Attachment [sage_init.patch](tarball://root/attachments/some-uuid/ticket2387/sage_init.patch) by jason created at 2008-03-05 19:09:40
 
 Also, there aren't any doctests...I'll be adding those.  If anyone wants to comment on something I did, please do so!  I'm not very familiar with the coercion system and did the above mainly by searching for _magma_init_ and copying where it made sense.
 

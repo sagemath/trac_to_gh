@@ -98,7 +98,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3345
 archive/issue_comments_023228.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3345.patch](tarball://root/attachments/some-uuid/ticket3345/3345.patch) by mhansen created at 2008-06-10 04:06:56",
     "created_at": "2008-06-10T04:06:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3345",
     "type": "issue_comment",
@@ -107,7 +107,7 @@ archive/issue_comments_023228.json:
 }
 ```
 
-Attachment
+Attachment [3345.patch](tarball://root/attachments/some-uuid/ticket3345/3345.patch) by mhansen created at 2008-06-10 04:06:56
 
 
 
@@ -283,7 +283,7 @@ Changing keywords from "trace" to "trace, editor_mhansen".
 archive/issue_comments_023235.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3345.patch](tarball://root/attachments/some-uuid/ticket3345/trac_3345.patch) by mhansen created at 2008-07-15 21:26:10",
     "created_at": "2008-07-15T21:26:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3345",
     "type": "issue_comment",
@@ -292,7 +292,7 @@ archive/issue_comments_023235.json:
 }
 ```
 
-Attachment
+Attachment [trac_3345.patch](tarball://root/attachments/some-uuid/ticket3345/trac_3345.patch) by mhansen created at 2008-07-15 21:26:10
 
 
 
@@ -319,7 +319,7 @@ I don't know what's going on recalling the last value produced by trace, but tha
 archive/issue_comments_023237.json:
 ```json
 {
-    "body": "Attachment\n\ndone while refereeing.",
+    "body": "Attachment [trac_3345-part2.patch](tarball://root/attachments/some-uuid/ticket3345/trac_3345-part2.patch) by was created at 2008-07-21 18:19:39\n\ndone while refereeing.",
     "created_at": "2008-07-21T18:19:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3345",
     "type": "issue_comment",
@@ -328,7 +328,7 @@ archive/issue_comments_023237.json:
 }
 ```
 
-Attachment
+Attachment [trac_3345-part2.patch](tarball://root/attachments/some-uuid/ticket3345/trac_3345-part2.patch) by was created at 2008-07-21 18:19:39
 
 done while refereeing.
 
@@ -425,7 +425,7 @@ Michael
 archive/issue_comments_023241.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3345-part3.patch](tarball://root/attachments/some-uuid/ticket3345/trac_3345-part3.patch) by was created at 2008-07-21 21:00:13",
     "created_at": "2008-07-21T21:00:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3345",
     "type": "issue_comment",
@@ -434,7 +434,7 @@ archive/issue_comments_023241.json:
 }
 ```
 
-Attachment
+Attachment [trac_3345-part3.patch](tarball://root/attachments/some-uuid/ticket3345/trac_3345-part3.patch) by was created at 2008-07-21 21:00:13
 
 
 
@@ -443,7 +443,7 @@ Attachment
 archive/issue_comments_023242.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3345-part4.patch](tarball://root/attachments/some-uuid/ticket3345/trac_3345-part4.patch) by mhansen created at 2008-07-21 22:52:30",
     "created_at": "2008-07-21T22:52:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3345",
     "type": "issue_comment",
@@ -452,7 +452,7 @@ archive/issue_comments_023242.json:
 }
 ```
 
-Attachment
+Attachment [trac_3345-part4.patch](tarball://root/attachments/some-uuid/ticket3345/trac_3345-part4.patch) by mhansen created at 2008-07-21 22:52:30
 
 
 

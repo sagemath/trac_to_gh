@@ -98,7 +98,7 @@ to be applied to 3.3.alpha3
 archive/issue_comments_039420.json:
 ```json
 {
-    "body": "Attachment\n\nPlease *ignore* trac-5152-abelian-gp-order.2.patch (2.8 kB). I don't know how that got there; hg_sage.export was not working the way I expected.",
+    "body": "Attachment [trac-5152-abelian-gp-order.patch](tarball://root/attachments/some-uuid/ticket5152/trac-5152-abelian-gp-order.patch) by wdj created at 2009-02-01 23:11:49\n\nPlease *ignore* trac-5152-abelian-gp-order.2.patch (2.8 kB). I don't know how that got there; hg_sage.export was not working the way I expected.",
     "created_at": "2009-02-01T23:11:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5152",
     "type": "issue_comment",
@@ -107,7 +107,7 @@ archive/issue_comments_039420.json:
 }
 ```
 
-Attachment
+Attachment [trac-5152-abelian-gp-order.patch](tarball://root/attachments/some-uuid/ticket5152/trac-5152-abelian-gp-order.patch) by wdj created at 2009-02-01 23:11:49
 
 Please *ignore* trac-5152-abelian-gp-order.2.patch (2.8 kB). I don't know how that got there; hg_sage.export was not working the way I expected.
 

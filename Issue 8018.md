@@ -94,7 +94,7 @@ Changing status from new to needs_review.
 archive/issue_comments_070068.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8018-numerical-eigenforms.patch](tarball://root/attachments/some-uuid/ticket8018/trac_8018-numerical-eigenforms.patch) by rbeezer created at 2010-01-24 05:25:32",
     "created_at": "2010-01-24T05:25:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8018",
     "type": "issue_comment",
@@ -103,7 +103,7 @@ archive/issue_comments_070068.json:
 }
 ```
 
-Attachment
+Attachment [trac_8018-numerical-eigenforms.patch](tarball://root/attachments/some-uuid/ticket8018/trac_8018-numerical-eigenforms.patch) by rbeezer created at 2010-01-24 05:25:32
 
 
 

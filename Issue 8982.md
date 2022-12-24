@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8982
 archive/issue_comments_082863.json:
 ```json
 {
-    "body": "Attachment\n\nYou should mark the ticket as `needs_review` when you submit a patch. This will put it on the relevant trac reports http://trac.sagemath.org/sage_trac/report/30 and http://trac.sagemath.org/sage_trac/report/10.",
+    "body": "Attachment [ode_example.patch](tarball://root/attachments/some-uuid/ticket8982/ode_example.patch) by burcin created at 2010-05-22 11:54:55\n\nYou should mark the ticket as `needs_review` when you submit a patch. This will put it on the relevant trac reports http://trac.sagemath.org/sage_trac/report/30 and http://trac.sagemath.org/sage_trac/report/10.",
     "created_at": "2010-05-22T11:54:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8982",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_082863.json:
 }
 ```
 
-Attachment
+Attachment [ode_example.patch](tarball://root/attachments/some-uuid/ticket8982/ode_example.patch) by burcin created at 2010-05-22 11:54:55
 
 You should mark the ticket as `needs_review` when you submit a patch. This will put it on the relevant trac reports http://trac.sagemath.org/sage_trac/report/30 and http://trac.sagemath.org/sage_trac/report/10.
 

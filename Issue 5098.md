@@ -285,7 +285,7 @@ I hope everything is ok this time :)
 archive/issue_comments_038895.json:
 ```json
 {
-    "body": "Attachment\n\nThanks -- I am quite happy now, and give this a positive review!  Now I will go and look at the lambda patch too.",
+    "body": "Attachment [trac-5098-alpha2based.patch](tarball://root/attachments/some-uuid/ticket5098/trac-5098-alpha2based.patch) by cremona created at 2009-02-01 15:15:54\n\nThanks -- I am quite happy now, and give this a positive review!  Now I will go and look at the lambda patch too.",
     "created_at": "2009-02-01T15:15:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5098",
     "type": "issue_comment",
@@ -294,7 +294,7 @@ archive/issue_comments_038895.json:
 }
 ```
 
-Attachment
+Attachment [trac-5098-alpha2based.patch](tarball://root/attachments/some-uuid/ticket5098/trac-5098-alpha2based.patch) by cremona created at 2009-02-01 15:15:54
 
 Thanks -- I am quite happy now, and give this a positive review!  Now I will go and look at the lambda patch too.
 
@@ -446,7 +446,7 @@ I think it could be possible quite easily to make pollard rho algorithm to work 
 archive/issue_comments_038901.json:
 ```json
 {
-    "body": "Attachment\n\nadded a small patch to fix doctest, and return a NotImplementedError explaining the problem which is that we can't get the order of the base (in the example it's not a unit).",
+    "body": "Attachment [trac-5098-doctest.patch](tarball://root/attachments/some-uuid/ticket5098/trac-5098-doctest.patch) by ylchapuy created at 2009-02-11 10:12:55\n\nadded a small patch to fix doctest, and return a NotImplementedError explaining the problem which is that we can't get the order of the base (in the example it's not a unit).",
     "created_at": "2009-02-11T10:12:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5098",
     "type": "issue_comment",
@@ -455,7 +455,7 @@ archive/issue_comments_038901.json:
 }
 ```
 
-Attachment
+Attachment [trac-5098-doctest.patch](tarball://root/attachments/some-uuid/ticket5098/trac-5098-doctest.patch) by ylchapuy created at 2009-02-11 10:12:55
 
 added a small patch to fix doctest, and return a NotImplementedError explaining the problem which is that we can't get the order of the base (in the example it's not a unit).
 
@@ -778,7 +778,7 @@ I renamed the function to "discrete_log_rho", removed the unnecessary parameters
 archive/issue_comments_038914.json:
 ```json
 {
-    "body": "Attachment\n\nbased on sage 4.1.1",
+    "body": "Attachment [trac_5098_standalone.patch](tarball://root/attachments/some-uuid/ticket5098/trac_5098_standalone.patch) by ylchapuy created at 2009-09-05 15:43:40\n\nbased on sage 4.1.1",
     "created_at": "2009-09-05T15:43:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5098",
     "type": "issue_comment",
@@ -787,7 +787,7 @@ archive/issue_comments_038914.json:
 }
 ```
 
-Attachment
+Attachment [trac_5098_standalone.patch](tarball://root/attachments/some-uuid/ticket5098/trac_5098_standalone.patch) by ylchapuy created at 2009-09-05 15:43:40
 
 based on sage 4.1.1
 
@@ -852,7 +852,7 @@ This gets a positive review from me with the small changes in the review patch. 
 archive/issue_comments_038918.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-5098-pollard_review.patch](tarball://root/attachments/some-uuid/ticket5098/trac-5098-pollard_review.patch) by mhansen created at 2009-12-20 07:23:32",
     "created_at": "2009-12-20T07:23:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5098",
     "type": "issue_comment",
@@ -861,7 +861,7 @@ archive/issue_comments_038918.json:
 }
 ```
 
-Attachment
+Attachment [trac-5098-pollard_review.patch](tarball://root/attachments/some-uuid/ticket5098/trac-5098-pollard_review.patch) by mhansen created at 2009-12-20 07:23:32
 
 
 

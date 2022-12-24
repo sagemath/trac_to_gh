@@ -60,7 +60,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5173
 archive/issue_comments_039630.json:
 ```json
 {
-    "body": "Attachment\n\nThe code didn't do the right thing at all with ComplexIntervalField(200), because it was trying to compare incomparable values, so it fell back to comparing the types.  Fixed in the attached patch by adding an explicit conversion to the appropriate type.",
+    "body": "Attachment [trac5173-cmp-complex-converts.patch](tarball://root/attachments/some-uuid/ticket5173/trac5173-cmp-complex-converts.patch) by cwitty created at 2009-02-05 04:17:20\n\nThe code didn't do the right thing at all with ComplexIntervalField(200), because it was trying to compare incomparable values, so it fell back to comparing the types.  Fixed in the attached patch by adding an explicit conversion to the appropriate type.",
     "created_at": "2009-02-05T04:17:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5173",
     "type": "issue_comment",
@@ -69,7 +69,7 @@ archive/issue_comments_039630.json:
 }
 ```
 
-Attachment
+Attachment [trac5173-cmp-complex-converts.patch](tarball://root/attachments/some-uuid/ticket5173/trac5173-cmp-complex-converts.patch) by cwitty created at 2009-02-05 04:17:20
 
 The code didn't do the right thing at all with ComplexIntervalField(200), because it was trying to compare incomparable values, so it fell back to comparing the types.  Fixed in the attached patch by adding an explicit conversion to the appropriate type.
 

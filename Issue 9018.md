@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9018
 archive/issue_comments_083448.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9018-quadratic-latex.patch](tarball://root/attachments/some-uuid/ticket9018/9018-quadratic-latex.patch) by robertwb created at 2010-05-22 16:31:55",
     "created_at": "2010-05-22T16:31:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9018",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_083448.json:
 }
 ```
 
-Attachment
+Attachment [9018-quadratic-latex.patch](tarball://root/attachments/some-uuid/ticket9018/9018-quadratic-latex.patch) by robertwb created at 2010-05-22 16:31:55
 
 
 
@@ -85,7 +85,7 @@ Changing status from new to needs_review.
 archive/issue_comments_083451.json:
 ```json
 {
-    "body": "Attachment\n\nTo apply after 9018-quadratic-latex.patch",
+    "body": "Attachment [trac_9018_reviewer_patch.patch](tarball://root/attachments/some-uuid/ticket9018/trac_9018_reviewer_patch.patch) by fwclarke created at 2010-05-23 07:39:42\n\nTo apply after 9018-quadratic-latex.patch",
     "created_at": "2010-05-23T07:39:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9018",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_083451.json:
 }
 ```
 
-Attachment
+Attachment [trac_9018_reviewer_patch.patch](tarball://root/attachments/some-uuid/ticket9018/trac_9018_reviewer_patch.patch) by fwclarke created at 2010-05-23 07:39:42
 
 To apply after 9018-quadratic-latex.patch
 

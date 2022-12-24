@@ -241,7 +241,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_055686.json:
 ```json
 {
-    "body": "Attachment\n\nI think check should be added to make sure all weights are <= max. At the moment\n\n\n```\nbinpacking([1,2,3],2)\n```\n\ncauses infinite loop. Otherwise code seems fine.",
+    "body": "Attachment [binpacking.patch](tarball://root/attachments/some-uuid/ticket6763/binpacking.patch) by jsyri created at 2010-05-11 09:49:26\n\nI think check should be added to make sure all weights are <= max. At the moment\n\n\n```\nbinpacking([1,2,3],2)\n```\n\ncauses infinite loop. Otherwise code seems fine.",
     "created_at": "2010-05-11T09:49:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6763",
     "type": "issue_comment",
@@ -250,7 +250,7 @@ archive/issue_comments_055686.json:
 }
 ```
 
-Attachment
+Attachment [binpacking.patch](tarball://root/attachments/some-uuid/ticket6763/binpacking.patch) by jsyri created at 2010-05-11 09:49:26
 
 I think check should be added to make sure all weights are <= max. At the moment
 
@@ -400,7 +400,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_055694.json:
 ```json
 {
-    "body": "Attachment\n\nEverything seems to be in order. Positive review.",
+    "body": "Attachment [trac_6763.patch](tarball://root/attachments/some-uuid/ticket6763/trac_6763.patch) by jsyri created at 2010-05-12 18:03:38\n\nEverything seems to be in order. Positive review.",
     "created_at": "2010-05-12T18:03:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6763",
     "type": "issue_comment",
@@ -409,7 +409,7 @@ archive/issue_comments_055694.json:
 }
 ```
 
-Attachment
+Attachment [trac_6763.patch](tarball://root/attachments/some-uuid/ticket6763/trac_6763.patch) by jsyri created at 2010-05-12 18:03:38
 
 Everything seems to be in order. Positive review.
 

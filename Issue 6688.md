@@ -51,7 +51,7 @@ BTW, the 3rd hunk of the patch shows another instance of "mathematica" not capit
 archive/issue_comments_054989.json:
 ```json
 {
-    "body": "Attachment\n\nbased on Sage 4.1.1.rc2",
+    "body": "Attachment [trac_6688-spell-check-calculus.patch](tarball://root/attachments/some-uuid/ticket6688/trac_6688-spell-check-calculus.patch) by mvngu created at 2009-08-10 09:35:02\n\nbased on Sage 4.1.1.rc2",
     "created_at": "2009-08-10T09:35:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6688",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_054989.json:
 }
 ```
 
-Attachment
+Attachment [trac_6688-spell-check-calculus.patch](tarball://root/attachments/some-uuid/ticket6688/trac_6688-spell-check-calculus.patch) by mvngu created at 2009-08-10 09:35:02
 
 based on Sage 4.1.1.rc2
 

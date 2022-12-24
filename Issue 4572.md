@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4572
 archive/issue_comments_034257.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4572-maxima-float.patch](tarball://root/attachments/some-uuid/ticket4572/4572-maxima-float.patch) by robertwb created at 2008-11-20 22:03:56",
     "created_at": "2008-11-20T22:03:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4572",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_034257.json:
 }
 ```
 
-Attachment
+Attachment [4572-maxima-float.patch](tarball://root/attachments/some-uuid/ticket4572/4572-maxima-float.patch) by robertwb created at 2008-11-20 22:03:56
 
 
 
@@ -132,7 +132,7 @@ Michael
 archive/issue_comments_034261.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4572-maxima-float-fixes.patch](tarball://root/attachments/some-uuid/ticket4572/4572-maxima-float-fixes.patch) by robertwb created at 2008-11-25 11:26:57",
     "created_at": "2008-11-25T11:26:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4572",
     "type": "issue_comment",
@@ -141,7 +141,7 @@ archive/issue_comments_034261.json:
 }
 ```
 
-Attachment
+Attachment [4572-maxima-float-fixes.patch](tarball://root/attachments/some-uuid/ticket4572/4572-maxima-float-fixes.patch) by robertwb created at 2008-11-25 11:26:57
 
 
 
@@ -150,7 +150,7 @@ Attachment
 archive/issue_comments_034262.json:
 ```json
 {
-    "body": "Attachment\n\napply to docs repo",
+    "body": "Attachment [4572-maxima-float-fixes-tut.patch](tarball://root/attachments/some-uuid/ticket4572/4572-maxima-float-fixes-tut.patch) by robertwb created at 2008-11-25 11:27:21\n\napply to docs repo",
     "created_at": "2008-11-25T11:27:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4572",
     "type": "issue_comment",
@@ -159,7 +159,7 @@ archive/issue_comments_034262.json:
 }
 ```
 
-Attachment
+Attachment [4572-maxima-float-fixes-tut.patch](tarball://root/attachments/some-uuid/ticket4572/4572-maxima-float-fixes-tut.patch) by robertwb created at 2008-11-25 11:27:21
 
 apply to docs repo
 

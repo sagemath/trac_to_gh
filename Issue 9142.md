@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9142
 archive/issue_comments_085366.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-9142-fuzzy-ball.patch](tarball://root/attachments/some-uuid/ticket9142/trac-9142-fuzzy-ball.patch) by jason created at 2010-06-04 21:20:03",
     "created_at": "2010-06-04T21:20:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9142",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_085366.json:
 }
 ```
 
-Attachment
+Attachment [trac-9142-fuzzy-ball.patch](tarball://root/attachments/some-uuid/ticket9142/trac-9142-fuzzy-ball.patch) by jason created at 2010-06-04 21:20:03
 
 
 
@@ -203,7 +203,7 @@ Nathann
 archive/issue_comments_085375.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of previous patches",
+    "body": "Attachment [trac_9142-reviewer.patch](tarball://root/attachments/some-uuid/ticket9142/trac_9142-reviewer.patch) by jason created at 2010-06-04 22:15:52\n\napply on top of previous patches",
     "created_at": "2010-06-04T22:15:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9142",
     "type": "issue_comment",
@@ -212,7 +212,7 @@ archive/issue_comments_085375.json:
 }
 ```
 
-Attachment
+Attachment [trac_9142-reviewer.patch](tarball://root/attachments/some-uuid/ticket9142/trac_9142-reviewer.patch) by jason created at 2010-06-04 22:15:52
 
 apply on top of previous patches
 
@@ -223,7 +223,7 @@ apply on top of previous patches
 archive/issue_comments_085376.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review to your patch.  Can you look at my minor change in the explanation, to make it clear that you pass a list instead of a sum in for the partition?",
+    "body": "Attachment [trac-9142-small-doc-fix.patch](tarball://root/attachments/some-uuid/ticket9142/trac-9142-small-doc-fix.patch) by jason created at 2010-06-04 22:16:40\n\nPositive review to your patch.  Can you look at my minor change in the explanation, to make it clear that you pass a list instead of a sum in for the partition?",
     "created_at": "2010-06-04T22:16:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9142",
     "type": "issue_comment",
@@ -232,7 +232,7 @@ archive/issue_comments_085376.json:
 }
 ```
 
-Attachment
+Attachment [trac-9142-small-doc-fix.patch](tarball://root/attachments/some-uuid/ticket9142/trac-9142-small-doc-fix.patch) by jason created at 2010-06-04 22:16:40
 
 Positive review to your patch.  Can you look at my minor change in the explanation, to make it clear that you pass a list instead of a sum in for the partition?
 

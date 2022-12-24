@@ -60,7 +60,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8869
 archive/issue_comments_081525.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [complex-float.patch](tarball://root/attachments/some-uuid/ticket8869/complex-float.patch) by jason created at 2010-05-04 16:17:13",
     "created_at": "2010-05-04T16:17:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8869",
     "type": "issue_comment",
@@ -69,7 +69,7 @@ archive/issue_comments_081525.json:
 }
 ```
 
-Attachment
+Attachment [complex-float.patch](tarball://root/attachments/some-uuid/ticket8869/complex-float.patch) by jason created at 2010-05-04 16:17:13
 
 
 
@@ -175,7 +175,7 @@ Ready for review.  Leif's comment seems reasonable, so I added one (!) extra opt
 archive/issue_comments_081531.json:
 ```json
 {
-    "body": "Attachment\n\nBased on 4.4.2, apply only this patch",
+    "body": "Attachment [trac_8869.patch](tarball://root/attachments/some-uuid/ticket8869/trac_8869.patch) by kcrisman created at 2010-05-26 19:58:59\n\nBased on 4.4.2, apply only this patch",
     "created_at": "2010-05-26T19:58:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8869",
     "type": "issue_comment",
@@ -184,7 +184,7 @@ archive/issue_comments_081531.json:
 }
 ```
 
-Attachment
+Attachment [trac_8869.patch](tarball://root/attachments/some-uuid/ticket8869/trac_8869.patch) by kcrisman created at 2010-05-26 19:58:59
 
 Based on 4.4.2, apply only this patch
 

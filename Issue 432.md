@@ -96,7 +96,7 @@ Just a remark from a user:
 archive/issue_comments_002168.json:
 ```json
 {
-    "body": "Attachment\n\nI finally implemented this.  And it's with 100% doctest coverage of new functions, which is a new thing for the notebook (to have any docs at all).",
+    "body": "Attachment [sage-432.patch](tarball://root/attachments/some-uuid/ticket432/sage-432.patch) by was created at 2008-03-13 15:56:56\n\nI finally implemented this.  And it's with 100% doctest coverage of new functions, which is a new thing for the notebook (to have any docs at all).",
     "created_at": "2008-03-13T15:56:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/432",
     "type": "issue_comment",
@@ -105,7 +105,7 @@ archive/issue_comments_002168.json:
 }
 ```
 
-Attachment
+Attachment [sage-432.patch](tarball://root/attachments/some-uuid/ticket432/sage-432.patch) by was created at 2008-03-13 15:56:56
 
 I finally implemented this.  And it's with 100% doctest coverage of new functions, which is a new thing for the notebook (to have any docs at all).
 

@@ -55,7 +55,7 @@ Changing status from new to needs_review.
 archive/issue_comments_071066.json:
 ```json
 {
-    "body": "Attachment\n\nAn spkg can be found here:\n\n[http://boxen.math.washington.edu/home/jsp/ports/pari-2.3.3.p8.spkg](http://boxen.math.washington.edu/home/jsp/ports/pari-2.3.3.p8.spkg)\n\nJaap",
+    "body": "Attachment [pari-2.3.3.p8.patch](tarball://root/attachments/some-uuid/ticket8099/pari-2.3.3.p8.patch) by jsp created at 2010-01-27 23:37:24\n\nAn spkg can be found here:\n\n[http://boxen.math.washington.edu/home/jsp/ports/pari-2.3.3.p8.spkg](http://boxen.math.washington.edu/home/jsp/ports/pari-2.3.3.p8.spkg)\n\nJaap",
     "created_at": "2010-01-27T23:37:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8099",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_071066.json:
 }
 ```
 
-Attachment
+Attachment [pari-2.3.3.p8.patch](tarball://root/attachments/some-uuid/ticket8099/pari-2.3.3.p8.patch) by jsp created at 2010-01-27 23:37:24
 
 An spkg can be found here:
 

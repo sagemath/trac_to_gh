@@ -93,7 +93,7 @@ test both arguments, not only one of them
 archive/issue_comments_092519.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:2 schilly]:\n> I don't know if testing with RR is the best way to do this, but should work. What's missing is a test for max b/c you only tested for min.\n\nYou do not begin to know how I *HATE* this RR... Is there any way to check whether a value is numerical without having to import RINGS ? :-D\n\nEven a Python method is fine !!! The most esoteric thing that could be found there is a rational number !\n\nNathann",
+    "body": "Attachment [trac_9579_review.patch](tarball://root/attachments/some-uuid/ticket9579/trac_9579_review.patch) by ncohen created at 2010-07-23 09:02:46\n\nReplying to [comment:2 schilly]:\n> I don't know if testing with RR is the best way to do this, but should work. What's missing is a test for max b/c you only tested for min.\n\nYou do not begin to know how I *HATE* this RR... Is there any way to check whether a value is numerical without having to import RINGS ? :-D\n\nEven a Python method is fine !!! The most esoteric thing that could be found there is a rational number !\n\nNathann",
     "created_at": "2010-07-23T09:02:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9579",
     "type": "issue_comment",
@@ -102,7 +102,7 @@ archive/issue_comments_092519.json:
 }
 ```
 
-Attachment
+Attachment [trac_9579_review.patch](tarball://root/attachments/some-uuid/ticket9579/trac_9579_review.patch) by ncohen created at 2010-07-23 09:02:46
 
 Replying to [comment:2 schilly]:
 > I don't know if testing with RR is the best way to do this, but should work. What's missing is a test for max b/c you only tested for min.
@@ -120,7 +120,7 @@ Nathann
 archive/issue_comments_092520.json:
 ```json
 {
-    "body": "Attachment\n\nI just updated my patch so that instead of ugly \"try/except\", a \"if\" is enough, thanks to Harald's suggestion. By the way, your patch still applies on top of mine, so if you are ok with these changes, let's say this ticket is positively reviewed :-)\n\nNathann",
+    "body": "Attachment [trac_9579.patch](tarball://root/attachments/some-uuid/ticket9579/trac_9579.patch) by ncohen created at 2010-07-23 09:18:17\n\nI just updated my patch so that instead of ugly \"try/except\", a \"if\" is enough, thanks to Harald's suggestion. By the way, your patch still applies on top of mine, so if you are ok with these changes, let's say this ticket is positively reviewed :-)\n\nNathann",
     "created_at": "2010-07-23T09:18:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9579",
     "type": "issue_comment",
@@ -129,7 +129,7 @@ archive/issue_comments_092520.json:
 }
 ```
 
-Attachment
+Attachment [trac_9579.patch](tarball://root/attachments/some-uuid/ticket9579/trac_9579.patch) by ncohen created at 2010-07-23 09:18:17
 
 I just updated my patch so that instead of ugly "try/except", a "if" is enough, thanks to Harald's suggestion. By the way, your patch still applies on top of mine, so if you are ok with these changes, let's say this ticket is positively reviewed :-)
 

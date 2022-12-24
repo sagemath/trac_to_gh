@@ -45,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5474
 archive/issue_comments_042466.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [vector-latex-delimiters.patch](tarball://root/attachments/some-uuid/ticket5474/vector-latex-delimiters.patch) by jhpalmieri created at 2009-03-10 21:46:13",
     "created_at": "2009-03-10T21:46:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5474",
     "type": "issue_comment",
@@ -54,7 +54,7 @@ archive/issue_comments_042466.json:
 }
 ```
 
-Attachment
+Attachment [vector-latex-delimiters.patch](tarball://root/attachments/some-uuid/ticket5474/vector-latex-delimiters.patch) by jhpalmieri created at 2009-03-10 21:46:13
 
 
 

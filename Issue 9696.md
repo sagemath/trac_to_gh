@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9696
 archive/issue_comments_094233.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9696-cyclic-latex-additiveabeliangroup.patch](tarball://root/attachments/some-uuid/ticket9696/trac_9696-cyclic-latex-additiveabeliangroup.patch) by rbeezer created at 2010-08-06 06:26:38",
     "created_at": "2010-08-06T06:26:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9696",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_094233.json:
 }
 ```
 
-Attachment
+Attachment [trac_9696-cyclic-latex-additiveabeliangroup.patch](tarball://root/attachments/some-uuid/ticket9696/trac_9696-cyclic-latex-additiveabeliangroup.patch) by rbeezer created at 2010-08-06 06:26:38
 
 
 
@@ -155,7 +155,7 @@ Yes, I like the '0' suggestion, I'll make that change and post an updated patch 
 archive/issue_comments_094239.json:
 ```json
 {
-    "body": "Attachment\n\nStand-alone patch, apply just this one",
+    "body": "Attachment [trac_9696-cyclic-latex-additiveabeliangroup-v2.patch](tarball://root/attachments/some-uuid/ticket9696/trac_9696-cyclic-latex-additiveabeliangroup-v2.patch) by rbeezer created at 2010-08-22 19:55:15\n\nStand-alone patch, apply just this one",
     "created_at": "2010-08-22T19:55:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9696",
     "type": "issue_comment",
@@ -164,7 +164,7 @@ archive/issue_comments_094239.json:
 }
 ```
 
-Attachment
+Attachment [trac_9696-cyclic-latex-additiveabeliangroup-v2.patch](tarball://root/attachments/some-uuid/ticket9696/trac_9696-cyclic-latex-additiveabeliangroup-v2.patch) by rbeezer created at 2010-08-22 19:55:15
 
 Stand-alone patch, apply just this one
 

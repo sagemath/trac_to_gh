@@ -51,7 +51,7 @@ I started thinking about this as I was refereeing the original ticket, trying to
 archive/issue_comments_043902.json:
 ```json
 {
-    "body": "Attachment\n\nCode looks good, doctests pass.  Positive review, unless Michael complains about the portability issues.\n\nMichael, I see two potential portability issues with the code:\n\n1) it uses C99 complex numbers\n\n2) it adds the compiler argument -std=c99\n\nI'm guessing the latter will only work with gcc (unless other compilers specifically copy gcc command-line arguments).  Does Sage currently build with non-gcc compilers?",
+    "body": "Attachment [5622-fast-callable-cdf.patch](tarball://root/attachments/some-uuid/ticket5622/5622-fast-callable-cdf.patch) by cwitty created at 2009-03-28 16:56:24\n\nCode looks good, doctests pass.  Positive review, unless Michael complains about the portability issues.\n\nMichael, I see two potential portability issues with the code:\n\n1) it uses C99 complex numbers\n\n2) it adds the compiler argument -std=c99\n\nI'm guessing the latter will only work with gcc (unless other compilers specifically copy gcc command-line arguments).  Does Sage currently build with non-gcc compilers?",
     "created_at": "2009-03-28T16:56:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5622",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_043902.json:
 }
 ```
 
-Attachment
+Attachment [5622-fast-callable-cdf.patch](tarball://root/attachments/some-uuid/ticket5622/5622-fast-callable-cdf.patch) by cwitty created at 2009-03-28 16:56:24
 
 Code looks good, doctests pass.  Positive review, unless Michael complains about the portability issues.
 

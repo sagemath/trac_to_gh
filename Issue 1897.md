@@ -85,7 +85,7 @@ Changing status from new to assigned.
 archive/issue_comments_012007.json:
 ```json
 {
-    "body": "Attachment\n\nThe problem was caused by syseval in sage.server.support needing the second positional argument to be an argument for global variables.",
+    "body": "Attachment [trac_1897.patch](tarball://root/attachments/some-uuid/ticket1897/trac_1897.patch) by mhansen created at 2009-01-19 13:50:11\n\nThe problem was caused by syseval in sage.server.support needing the second positional argument to be an argument for global variables.",
     "created_at": "2009-01-19T13:50:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1897",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_012007.json:
 }
 ```
 
-Attachment
+Attachment [trac_1897.patch](tarball://root/attachments/some-uuid/ticket1897/trac_1897.patch) by mhansen created at 2009-01-19 13:50:11
 
 The problem was caused by syseval in sage.server.support needing the second positional argument to be an argument for global variables.
 

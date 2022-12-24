@@ -73,7 +73,7 @@ trivial patch
 archive/issue_comments_006789.json:
 ```json
 {
-    "body": "Attachment\n\n[with patch]",
+    "body": "Attachment [zero_submodule](tarball://root/attachments/some-uuid/ticket1124/zero_submodule) by syazdani created at 2007-11-07 18:15:36\n\n[with patch]",
     "created_at": "2007-11-07T18:15:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1124",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_006789.json:
 }
 ```
 
-Attachment
+Attachment [zero_submodule](tarball://root/attachments/some-uuid/ticket1124/zero_submodule) by syazdani created at 2007-11-07 18:15:36
 
 [with patch]
 
@@ -129,7 +129,7 @@ Added doctest for complement. Both patches should be applied.
 archive/issue_comments_006792.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [doctest](tarball://root/attachments/some-uuid/ticket1124/doctest) by mabshoff created at 2007-11-16 11:56:26",
     "created_at": "2007-11-16T11:56:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1124",
     "type": "issue_comment",
@@ -138,7 +138,7 @@ archive/issue_comments_006792.json:
 }
 ```
 
-Attachment
+Attachment [doctest](tarball://root/attachments/some-uuid/ticket1124/doctest) by mabshoff created at 2007-11-16 11:56:26
 
 
 

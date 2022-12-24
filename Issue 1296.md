@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1296
 archive/issue_comments_008138.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1296-fast-permgroup2.patch](tarball://root/attachments/some-uuid/ticket1296/1296-fast-permgroup2.patch) by robertwb created at 2007-11-28 05:46:40",
     "created_at": "2007-11-28T05:46:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1296",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_008138.json:
 }
 ```
 
-Attachment
+Attachment [1296-fast-permgroup2.patch](tarball://root/attachments/some-uuid/ticket1296/1296-fast-permgroup2.patch) by robertwb created at 2007-11-28 05:46:40
 
 
 
@@ -53,7 +53,7 @@ Attachment
 archive/issue_comments_008139.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1296-fast-permgroup3.patch](tarball://root/attachments/some-uuid/ticket1296/1296-fast-permgroup3.patch) by robertwb created at 2007-11-28 05:46:59",
     "created_at": "2007-11-28T05:46:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1296",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_008139.json:
 }
 ```
 
-Attachment
+Attachment [1296-fast-permgroup3.patch](tarball://root/attachments/some-uuid/ticket1296/1296-fast-permgroup3.patch) by robertwb created at 2007-11-28 05:46:59
 
 
 
@@ -89,7 +89,7 @@ Changing assignee from mhansen to robertwb.
 archive/issue_comments_008141.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1296-fast-permgroup4.patch](tarball://root/attachments/some-uuid/ticket1296/1296-fast-permgroup4.patch) by robertwb created at 2007-11-28 05:48:36",
     "created_at": "2007-11-28T05:48:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1296",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_008141.json:
 }
 ```
 
-Attachment
+Attachment [1296-fast-permgroup4.patch](tarball://root/attachments/some-uuid/ticket1296/1296-fast-permgroup4.patch) by robertwb created at 2007-11-28 05:48:36
 
 
 
@@ -177,7 +177,7 @@ Changing status from new to assigned.
 archive/issue_comments_008144.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1296-fast-permgroup5.patch](tarball://root/attachments/some-uuid/ticket1296/1296-fast-permgroup5.patch) by robertwb created at 2007-11-28 18:29:32",
     "created_at": "2007-11-28T18:29:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1296",
     "type": "issue_comment",
@@ -186,7 +186,7 @@ archive/issue_comments_008144.json:
 }
 ```
 
-Attachment
+Attachment [1296-fast-permgroup5.patch](tarball://root/attachments/some-uuid/ticket1296/1296-fast-permgroup5.patch) by robertwb created at 2007-11-28 18:29:32
 
 
 
@@ -195,7 +195,7 @@ Attachment
 archive/issue_comments_008145.json:
 ```json
 {
-    "body": "Attachment\n\nRobert,  if I comment out the following doctest then everything passes (on 100 runs through).\n\n```\n        #sage: G1 = AlternatingGroup([1,2,4,5])\n        #sage: G2 = AlternatingGroup([3,4,6,7])\n        #sage: D = direct_product_permgroups([G1,G2,G1])\n        #sage: D.order()\n        #1728\n        #sage: D = direct_product_permgroups([G1])\n        #sage: D==G1\n        #True\n        #sage: direct_product_permgroups([])\n        #Symmetric group of order 1! as a permutation group\n```\n\n\nUnfortunately, that doctest works perfectly if I do it from the command-line.",
+    "body": "Attachment [1296-permgroup_element.pxd](tarball://root/attachments/some-uuid/ticket1296/1296-permgroup_element.pxd) by mhansen created at 2007-12-05 23:24:59\n\nRobert,  if I comment out the following doctest then everything passes (on 100 runs through).\n\n```\n        #sage: G1 = AlternatingGroup([1,2,4,5])\n        #sage: G2 = AlternatingGroup([3,4,6,7])\n        #sage: D = direct_product_permgroups([G1,G2,G1])\n        #sage: D.order()\n        #1728\n        #sage: D = direct_product_permgroups([G1])\n        #sage: D==G1\n        #True\n        #sage: direct_product_permgroups([])\n        #Symmetric group of order 1! as a permutation group\n```\n\n\nUnfortunately, that doctest works perfectly if I do it from the command-line.",
     "created_at": "2007-12-05T23:24:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1296",
     "type": "issue_comment",
@@ -204,7 +204,7 @@ archive/issue_comments_008145.json:
 }
 ```
 
-Attachment
+Attachment [1296-permgroup_element.pxd](tarball://root/attachments/some-uuid/ticket1296/1296-permgroup_element.pxd) by mhansen created at 2007-12-05 23:24:59
 
 Robert,  if I comment out the following doctest then everything passes (on 100 runs through).
 

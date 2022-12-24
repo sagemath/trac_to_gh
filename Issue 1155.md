@@ -204,7 +204,7 @@ I've put a new patch up.
 archive/issue_comments_007053.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1155.patch](tarball://root/attachments/some-uuid/ticket1155/1155.patch) by mhansen created at 2007-12-06 03:47:11",
     "created_at": "2007-12-06T03:47:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1155",
     "type": "issue_comment",
@@ -213,7 +213,7 @@ archive/issue_comments_007053.json:
 }
 ```
 
-Attachment
+Attachment [1155.patch](tarball://root/attachments/some-uuid/ticket1155/1155.patch) by mhansen created at 2007-12-06 03:47:11
 
 
 

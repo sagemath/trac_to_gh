@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7847
 archive/issue_comments_067970.json:
 ```json
 {
-    "body": "Attachment\n\n\"No referer\" workaround.  sagenb repo.",
+    "body": "Attachment [trac_7847-empty_trash_ie_ff.patch](tarball://root/attachments/some-uuid/ticket7847/trac_7847-empty_trash_ie_ff.patch) by mpatel created at 2010-01-05 03:57:59\n\n\"No referer\" workaround.  sagenb repo.",
     "created_at": "2010-01-05T03:57:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7847",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_067970.json:
 }
 ```
 
-Attachment
+Attachment [trac_7847-empty_trash_ie_ff.patch](tarball://root/attachments/some-uuid/ticket7847/trac_7847-empty_trash_ie_ff.patch) by mpatel created at 2010-01-05 03:57:59
 
 "No referer" workaround.  sagenb repo.
 
@@ -109,7 +109,7 @@ Makes Worksheet_emptytrash accept only POST requests, and adds the requisite for
 archive/issue_comments_067974.json:
 ```json
 {
-    "body": "Attachment\n\nGood job fixing the problem, but unfortunately your patch means anyone can cause you to empty your trash.\n\nThe reason for the HTTP-Referer check was actually security. Without it, anyone could have sent you a link to http://localhost:8000/emptytrash (or http://sagenb.org/emptytrash) and empty one's trash. This was clearly the wrong approach though.\n\nThis new patch accepts only POST requests, which should be much more secure.",
+    "body": "Attachment [trac_7847-empty-trash-no-referer.patch](tarball://root/attachments/some-uuid/ticket7847/trac_7847-empty-trash-no-referer.patch) by timdumol created at 2010-01-17 19:13:27\n\nGood job fixing the problem, but unfortunately your patch means anyone can cause you to empty your trash.\n\nThe reason for the HTTP-Referer check was actually security. Without it, anyone could have sent you a link to http://localhost:8000/emptytrash (or http://sagenb.org/emptytrash) and empty one's trash. This was clearly the wrong approach though.\n\nThis new patch accepts only POST requests, which should be much more secure.",
     "created_at": "2010-01-17T19:13:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7847",
     "type": "issue_comment",
@@ -118,7 +118,7 @@ archive/issue_comments_067974.json:
 }
 ```
 
-Attachment
+Attachment [trac_7847-empty-trash-no-referer.patch](tarball://root/attachments/some-uuid/ticket7847/trac_7847-empty-trash-no-referer.patch) by timdumol created at 2010-01-17 19:13:27
 
 Good job fixing the problem, but unfortunately your patch means anyone can cause you to empty your trash.
 

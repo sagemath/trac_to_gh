@@ -100,7 +100,7 @@ Changing status from new to needs_review.
 archive/issue_comments_076173.json:
 ```json
 {
-    "body": "Attachment\n\nMercurial patch to fix numerical noise on SPARC processor",
+    "body": "Attachment [numerical-noise-colors.py.patch](tarball://root/attachments/some-uuid/ticket8462/numerical-noise-colors.py.patch) by drkirkby created at 2010-03-06 22:35:36\n\nMercurial patch to fix numerical noise on SPARC processor",
     "created_at": "2010-03-06T22:35:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8462",
     "type": "issue_comment",
@@ -109,7 +109,7 @@ archive/issue_comments_076173.json:
 }
 ```
 
-Attachment
+Attachment [numerical-noise-colors.py.patch](tarball://root/attachments/some-uuid/ticket8462/numerical-noise-colors.py.patch) by drkirkby created at 2010-03-06 22:35:36
 
 Mercurial patch to fix numerical noise on SPARC processor
 

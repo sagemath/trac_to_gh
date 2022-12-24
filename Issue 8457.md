@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8457
 archive/issue_comments_076122.json:
 ```json
 {
-    "body": "Attachment\n\nSkip builtins.  Depends on #7448.",
+    "body": "Attachment [trac_8457-doc_skip_builtins.patch](tarball://root/attachments/some-uuid/ticket8457/trac_8457-doc_skip_builtins.patch) by mpatel created at 2010-03-06 14:35:15\n\nSkip builtins.  Depends on #7448.",
     "created_at": "2010-03-06T14:35:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8457",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_076122.json:
 }
 ```
 
-Attachment
+Attachment [trac_8457-doc_skip_builtins.patch](tarball://root/attachments/some-uuid/ticket8457/trac_8457-doc_skip_builtins.patch) by mpatel created at 2010-03-06 14:35:15
 
 Skip builtins.  Depends on #7448.
 
@@ -79,7 +79,7 @@ Note: It clashes with the first at #8452.
 archive/issue_comments_076124.json:
 ```json
 {
-    "body": "Attachment\n\nRebased vs. #8452.",
+    "body": "Attachment [trac_8457-doc_skip_builtins.2.patch](tarball://root/attachments/some-uuid/ticket8457/trac_8457-doc_skip_builtins.2.patch) by mpatel created at 2010-03-09 04:53:39\n\nRebased vs. #8452.",
     "created_at": "2010-03-09T04:53:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8457",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_076124.json:
 }
 ```
 
-Attachment
+Attachment [trac_8457-doc_skip_builtins.2.patch](tarball://root/attachments/some-uuid/ticket8457/trac_8457-doc_skip_builtins.2.patch) by mpatel created at 2010-03-09 04:53:39
 
 Rebased vs. #8452.
 

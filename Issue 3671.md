@@ -341,7 +341,7 @@ Changing priority from blocker to critical.
 archive/issue_comments_025955.json:
 ```json
 {
-    "body": "Attachment\n\nI fixed the bug in the charpoly algorithm that was used before.\nThe attached patch also fixes the bug, fixes some memleaks and improves memory management as a bonus, and removes the workaround in spkg-install, that we used to fix the bug, replacing this algorithm by the former LUKrylov.\n\nI am cooking a new linbox spkg, so no review needed right now. You can apply the patch on 1.1.6.rc0.p1 and check if it also fixes the bug for you (I already checked it on sage.math).",
+    "body": "Attachment [ffpack_charpoly_3671.patch](tarball://root/attachments/some-uuid/ticket3671/ffpack_charpoly_3671.patch) by cpernet created at 2008-08-12 19:01:39\n\nI fixed the bug in the charpoly algorithm that was used before.\nThe attached patch also fixes the bug, fixes some memleaks and improves memory management as a bonus, and removes the workaround in spkg-install, that we used to fix the bug, replacing this algorithm by the former LUKrylov.\n\nI am cooking a new linbox spkg, so no review needed right now. You can apply the patch on 1.1.6.rc0.p1 and check if it also fixes the bug for you (I already checked it on sage.math).",
     "created_at": "2008-08-12T19:01:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3671",
     "type": "issue_comment",
@@ -350,7 +350,7 @@ archive/issue_comments_025955.json:
 }
 ```
 
-Attachment
+Attachment [ffpack_charpoly_3671.patch](tarball://root/attachments/some-uuid/ticket3671/ffpack_charpoly_3671.patch) by cpernet created at 2008-08-12 19:01:39
 
 I fixed the bug in the charpoly algorithm that was used before.
 The attached patch also fixes the bug, fixes some memleaks and improves memory management as a bonus, and removes the workaround in spkg-install, that we used to fix the bug, replacing this algorithm by the former LUKrylov.

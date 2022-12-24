@@ -100,7 +100,7 @@ Michael
 archive/issue_comments_009065.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-1404.patch](tarball://root/attachments/some-uuid/ticket1404/trac-1404.patch) by was created at 2007-12-15 13:09:08",
     "created_at": "2007-12-15T13:09:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1404",
     "type": "issue_comment",
@@ -109,7 +109,7 @@ archive/issue_comments_009065.json:
 }
 ```
 
-Attachment
+Attachment [trac-1404.patch](tarball://root/attachments/some-uuid/ticket1404/trac-1404.patch) by was created at 2007-12-15 13:09:08
 
 
 

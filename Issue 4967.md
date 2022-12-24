@@ -82,7 +82,7 @@ diff -c a/sage/interfaces/gap.py b/sage/interfaces/gap.py >> ticket.patch
 archive/issue_comments_037799.json:
 ```json
 {
-    "body": "Attachment\n\nHi,\n\nany chance you can post a proper mercurial patch? The attachment is \"just\" a diff, but I can commit it in your name.\n\nCheers,\n\nMichael",
+    "body": "Attachment [ticket.patch](tarball://root/attachments/some-uuid/ticket4967/ticket.patch) by mabshoff created at 2009-01-17 16:56:48\n\nHi,\n\nany chance you can post a proper mercurial patch? The attachment is \"just\" a diff, but I can commit it in your name.\n\nCheers,\n\nMichael",
     "created_at": "2009-01-17T16:56:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4967",
     "type": "issue_comment",
@@ -91,7 +91,7 @@ archive/issue_comments_037799.json:
 }
 ```
 
-Attachment
+Attachment [ticket.patch](tarball://root/attachments/some-uuid/ticket4967/ticket.patch) by mabshoff created at 2009-01-17 16:56:48
 
 Hi,
 
@@ -108,7 +108,7 @@ Michael
 archive/issue_comments_037800.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4967_ticket.patch](tarball://root/attachments/some-uuid/ticket4967/trac_4967_ticket.patch) by mabshoff created at 2009-01-18 05:11:59",
     "created_at": "2009-01-18T05:11:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4967",
     "type": "issue_comment",
@@ -117,7 +117,7 @@ archive/issue_comments_037800.json:
 }
 ```
 
-Attachment
+Attachment [trac_4967_ticket.patch](tarball://root/attachments/some-uuid/ticket4967/trac_4967_ticket.patch) by mabshoff created at 2009-01-18 05:11:59
 
 
 

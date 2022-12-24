@@ -69,7 +69,7 @@ Don't forget to put mpz_set_longlong in stdsage.
 archive/issue_comments_005231.json:
 ```json
 {
-    "body": "Attachment\n\nAlso, this now has the complete list of gmp functions found in the manual.",
+    "body": "Attachment [846-move-gmp.patch](tarball://root/attachments/some-uuid/ticket846/846-move-gmp.patch) by robertwb created at 2008-11-22 00:40:59\n\nAlso, this now has the complete list of gmp functions found in the manual.",
     "created_at": "2008-11-22T00:40:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/846",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_005231.json:
 }
 ```
 
-Attachment
+Attachment [846-move-gmp.patch](tarball://root/attachments/some-uuid/ticket846/846-move-gmp.patch) by robertwb created at 2008-11-22 00:40:59
 
 Also, this now has the complete list of gmp functions found in the manual.
 
@@ -125,7 +125,7 @@ See also #4580
 archive/issue_comments_005234.json:
 ```json
 {
-    "body": "Attachment\n\nVery nice!  My patch fixes a couple of compile errors; with my patch, all doctests pass.\n\nPositive review.  Apply both patches.",
+    "body": "Attachment [846-move-gmp-reviewer.patch](tarball://root/attachments/some-uuid/ticket846/846-move-gmp-reviewer.patch) by cwitty created at 2008-11-23 03:23:51\n\nVery nice!  My patch fixes a couple of compile errors; with my patch, all doctests pass.\n\nPositive review.  Apply both patches.",
     "created_at": "2008-11-23T03:23:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/846",
     "type": "issue_comment",
@@ -134,7 +134,7 @@ archive/issue_comments_005234.json:
 }
 ```
 
-Attachment
+Attachment [846-move-gmp-reviewer.patch](tarball://root/attachments/some-uuid/ticket846/846-move-gmp-reviewer.patch) by cwitty created at 2008-11-23 03:23:51
 
 Very nice!  My patch fixes a couple of compile errors; with my patch, all doctests pass.
 

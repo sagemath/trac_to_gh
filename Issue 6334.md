@@ -78,7 +78,7 @@ Changing assignee from tbd to cswiercz.
 archive/issue_comments_050556.json:
 ```json
 {
-    "body": "Attachment\n\nI also updated stock.py's documentation for Sphinx formatting.",
+    "body": "Attachment [sage-6334.patch](tarball://root/attachments/some-uuid/ticket6334/sage-6334.patch) by cswiercz created at 2009-06-16 22:18:20\n\nI also updated stock.py's documentation for Sphinx formatting.",
     "created_at": "2009-06-16T22:18:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6334",
     "type": "issue_comment",
@@ -87,7 +87,7 @@ archive/issue_comments_050556.json:
 }
 ```
 
-Attachment
+Attachment [sage-6334.patch](tarball://root/attachments/some-uuid/ticket6334/sage-6334.patch) by cswiercz created at 2009-06-16 22:18:20
 
 I also updated stock.py's documentation for Sphinx formatting.
 
@@ -156,7 +156,7 @@ sage -t -optional   output on  stock.py
 archive/issue_comments_050560.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [stock-tests.txt](tarball://root/attachments/some-uuid/ticket6334/stock-tests.txt) by rbeezer created at 2009-07-17 04:02:12",
     "created_at": "2009-07-17T04:02:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6334",
     "type": "issue_comment",
@@ -165,7 +165,7 @@ archive/issue_comments_050560.json:
 }
 ```
 
-Attachment
+Attachment [stock-tests.txt](tarball://root/attachments/some-uuid/ticket6334/stock-tests.txt) by rbeezer created at 2009-07-17 04:02:12
 
 
 
@@ -192,7 +192,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_050562.json:
 ```json
 {
-    "body": "Attachment\n\nIt looks like Minh fixed the documentation in `sage/finance` with [attachment:trac_9218-reviewer.patch:ticket:9218].\n\nThere is also #13884 to fix the optional doctests, where Karl-Dieter posted a patch.\n\nShall we close this ticket as duplicate?",
+    "body": "Attachment [trac_6334_reviewer_edits.patch](tarball://root/attachments/some-uuid/ticket6334/trac_6334_reviewer_edits.patch) by burcin created at 2013-01-11 11:05:51\n\nIt looks like Minh fixed the documentation in `sage/finance` with [attachment:trac_9218-reviewer.patch:ticket:9218].\n\nThere is also #13884 to fix the optional doctests, where Karl-Dieter posted a patch.\n\nShall we close this ticket as duplicate?",
     "created_at": "2013-01-11T11:05:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6334",
     "type": "issue_comment",
@@ -201,7 +201,7 @@ archive/issue_comments_050562.json:
 }
 ```
 
-Attachment
+Attachment [trac_6334_reviewer_edits.patch](tarball://root/attachments/some-uuid/ticket6334/trac_6334_reviewer_edits.patch) by burcin created at 2013-01-11 11:05:51
 
 It looks like Minh fixed the documentation in `sage/finance` with [attachment:trac_9218-reviewer.patch:ticket:9218].
 

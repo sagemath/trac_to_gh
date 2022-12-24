@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2702
 archive/issue_comments_018633.json:
 ```json
 {
-    "body": "Attachment\n\nThis is a positive review about the patch, but it's a big patch and could use another set of eyes, I expect.  I think it looks like it cleans up a lot of evolved changes to make the whole thing more cohesive.  I did not apply and doc-test (because I don't have a recent 2.11.alphaX build).\n\nTwo specific comments:\n* 1) I think the documentation of is_monomial should be very clear that 2*x is not monomial (with a sentence in the initial header).  This is not my intuitive definition of monomial, but it's a sane definition.  I would prefer that 2*x be a monomial, but it's not a big deal.\n* 2)  I see a number of lines like\n\n```\nsage: Q.<x,y,z>=MPolynomialRing(QQ,3)\n```\n\nI think they should be one of the following:\n\n```\nsage: Q.<x,y,z>=PolynomialRing(QQ)\nsage: Q.<x,y,z>=QQ[]\n```\n\nWilliam has made the comment that doc-tests should represent good sage usage and I think both of those are better than the first (certainly the \"3\" is unnecessary and obnoxious -- I suspect it's only recently that the 3 wasn't required.).  I think there is some room for personal opinion here -- perhaps some mixture is also good to let people see alternate styles as well.",
+    "body": "Attachment [mpoly_coverage_100.patch](tarball://root/attachments/some-uuid/ticket2702/mpoly_coverage_100.patch) by jbmohler created at 2008-03-28 18:50:14\n\nThis is a positive review about the patch, but it's a big patch and could use another set of eyes, I expect.  I think it looks like it cleans up a lot of evolved changes to make the whole thing more cohesive.  I did not apply and doc-test (because I don't have a recent 2.11.alphaX build).\n\nTwo specific comments:\n* 1) I think the documentation of is_monomial should be very clear that 2*x is not monomial (with a sentence in the initial header).  This is not my intuitive definition of monomial, but it's a sane definition.  I would prefer that 2*x be a monomial, but it's not a big deal.\n* 2)  I see a number of lines like\n\n```\nsage: Q.<x,y,z>=MPolynomialRing(QQ,3)\n```\n\nI think they should be one of the following:\n\n```\nsage: Q.<x,y,z>=PolynomialRing(QQ)\nsage: Q.<x,y,z>=QQ[]\n```\n\nWilliam has made the comment that doc-tests should represent good sage usage and I think both of those are better than the first (certainly the \"3\" is unnecessary and obnoxious -- I suspect it's only recently that the 3 wasn't required.).  I think there is some room for personal opinion here -- perhaps some mixture is also good to let people see alternate styles as well.",
     "created_at": "2008-03-28T18:50:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2702",
     "type": "issue_comment",
@@ -53,7 +53,7 @@ archive/issue_comments_018633.json:
 }
 ```
 
-Attachment
+Attachment [mpoly_coverage_100.patch](tarball://root/attachments/some-uuid/ticket2702/mpoly_coverage_100.patch) by jbmohler created at 2008-03-28 18:50:14
 
 This is a positive review about the patch, but it's a big patch and could use another set of eyes, I expect.  I think it looks like it cleans up a lot of evolved changes to make the whole thing more cohesive.  I did not apply and doc-test (because I don't have a recent 2.11.alphaX build).
 
@@ -240,7 +240,7 @@ I'm fine with the last two patches being applied.
 archive/issue_comments_018640.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2702.patch](tarball://root/attachments/some-uuid/ticket2702/2702.patch) by mhansen created at 2008-03-29 20:28:13",
     "created_at": "2008-03-29T20:28:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2702",
     "type": "issue_comment",
@@ -249,7 +249,7 @@ archive/issue_comments_018640.json:
 }
 ```
 
-Attachment
+Attachment [2702.patch](tarball://root/attachments/some-uuid/ticket2702/2702.patch) by mhansen created at 2008-03-29 20:28:13
 
 
 
@@ -276,7 +276,7 @@ Resolution: fixed
 archive/issue_comments_018642.json:
 ```json
 {
-    "body": "Attachment\n\nMerged 2702.patch and 2702-referee.patch in Sage 2.11.rc0",
+    "body": "Attachment [2702-referee.patch](tarball://root/attachments/some-uuid/ticket2702/2702-referee.patch) by mabshoff created at 2008-03-29 20:30:46\n\nMerged 2702.patch and 2702-referee.patch in Sage 2.11.rc0",
     "created_at": "2008-03-29T20:30:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2702",
     "type": "issue_comment",
@@ -285,6 +285,6 @@ archive/issue_comments_018642.json:
 }
 ```
 
-Attachment
+Attachment [2702-referee.patch](tarball://root/attachments/some-uuid/ticket2702/2702-referee.patch) by mabshoff created at 2008-03-29 20:30:46
 
 Merged 2702.patch and 2702-referee.patch in Sage 2.11.rc0

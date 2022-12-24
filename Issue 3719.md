@@ -191,7 +191,7 @@ docstring addition patch based on 3.1.alpha0
 archive/issue_comments_026392.json:
 ```json
 {
-    "body": "Attachment\n\nOkay, I just attached the patch you requested to this ticket. (I wasn't sure if it needed a new ticket or not.) It passes sage -t but it dawned on me afterwards that sage -t would not test for optional docstring additions. Anyway, hope this is what you were looking for.\n\nBTW, I am one of the webmasters for GAP (hence involved wityh package updates) and you can be sure that hap 1.8.8 will definitely get applied upstream, probably in the next week or so.",
+    "body": "Attachment [10128.patch](tarball://root/attachments/some-uuid/ticket3719/10128.patch) by wdj created at 2008-08-03 14:54:28\n\nOkay, I just attached the patch you requested to this ticket. (I wasn't sure if it needed a new ticket or not.) It passes sage -t but it dawned on me afterwards that sage -t would not test for optional docstring additions. Anyway, hope this is what you were looking for.\n\nBTW, I am one of the webmasters for GAP (hence involved wityh package updates) and you can be sure that hap 1.8.8 will definitely get applied upstream, probably in the next week or so.",
     "created_at": "2008-08-03T14:54:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3719",
     "type": "issue_comment",
@@ -200,7 +200,7 @@ archive/issue_comments_026392.json:
 }
 ```
 
-Attachment
+Attachment [10128.patch](tarball://root/attachments/some-uuid/ticket3719/10128.patch) by wdj created at 2008-08-03 14:54:28
 
 Okay, I just attached the patch you requested to this ticket. (I wasn't sure if it needed a new ticket or not.) It passes sage -t but it dawned on me afterwards that sage -t would not test for optional docstring additions. Anyway, hope this is what you were looking for.
 
@@ -242,7 +242,7 @@ Use
 archive/issue_comments_026394.json:
 ```json
 {
-    "body": "Attachment\n\nbased on 3.1.alpha0 and probably the previous patch",
+    "body": "Attachment [10129.patch](tarball://root/attachments/some-uuid/ticket3719/10129.patch) by wdj created at 2008-08-04 04:02:48\n\nbased on 3.1.alpha0 and probably the previous patch",
     "created_at": "2008-08-04T04:02:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3719",
     "type": "issue_comment",
@@ -251,7 +251,7 @@ archive/issue_comments_026394.json:
 }
 ```
 
-Attachment
+Attachment [10129.patch](tarball://root/attachments/some-uuid/ticket3719/10129.patch) by wdj created at 2008-08-04 04:02:48
 
 based on 3.1.alpha0 and probably the previous patch
 

@@ -229,7 +229,7 @@ See #2835 for a possible primes of degree one iterator implementation.
 archive/issue_comments_005547.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [903-charpoly_pari.patch](tarball://root/attachments/some-uuid/ticket903/903-charpoly_pari.patch) by AlexGhitza created at 2008-04-13 21:48:09",
     "created_at": "2008-04-13T21:48:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/903",
     "type": "issue_comment",
@@ -238,7 +238,7 @@ archive/issue_comments_005547.json:
 }
 ```
 
-Attachment
+Attachment [903-charpoly_pari.patch](tarball://root/attachments/some-uuid/ticket903/903-charpoly_pari.patch) by AlexGhitza created at 2008-04-13 21:48:09
 
 
 
@@ -299,7 +299,7 @@ This is hard -- we need polynomials over arbitrary pari number fields, and it do
 archive/issue_comments_005550.json:
 ```json
 {
-    "body": "Attachment\n\napply after 903-charpoly_pari.patch",
+    "body": "Attachment [903-charpoly_pari_doctests.patch](tarball://root/attachments/some-uuid/ticket903/903-charpoly_pari_doctests.patch) by AlexGhitza created at 2008-04-14 23:39:57\n\napply after 903-charpoly_pari.patch",
     "created_at": "2008-04-14T23:39:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/903",
     "type": "issue_comment",
@@ -308,7 +308,7 @@ archive/issue_comments_005550.json:
 }
 ```
 
-Attachment
+Attachment [903-charpoly_pari_doctests.patch](tarball://root/attachments/some-uuid/ticket903/903-charpoly_pari_doctests.patch) by AlexGhitza created at 2008-04-14 23:39:57
 
 apply after 903-charpoly_pari.patch
 
@@ -357,7 +357,7 @@ The patches apply and pass tests for me.  Nick, what are your thoughts?
 archive/issue_comments_005553.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [903-ncalexan-charpoly-over-number-field-1.patch](tarball://root/attachments/some-uuid/ticket903/903-ncalexan-charpoly-over-number-field-1.patch) by ncalexan created at 2008-04-15 06:17:38",
     "created_at": "2008-04-15T06:17:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/903",
     "type": "issue_comment",
@@ -366,7 +366,7 @@ archive/issue_comments_005553.json:
 }
 ```
 
-Attachment
+Attachment [903-ncalexan-charpoly-over-number-field-1.patch](tarball://root/attachments/some-uuid/ticket903/903-ncalexan-charpoly-over-number-field-1.patch) by ncalexan created at 2008-04-15 06:17:38
 
 
 
@@ -431,7 +431,7 @@ There is one problem I run into with this: 2 doctests in number_field_element.py
 archive/issue_comments_005557.json:
 ```json
 {
-    "body": "Attachment\n\napply after Nick's patch",
+    "body": "Attachment [903-small_fix.patch](tarball://root/attachments/some-uuid/ticket903/903-small_fix.patch) by AlexGhitza created at 2008-04-15 14:53:01\n\napply after Nick's patch",
     "created_at": "2008-04-15T14:53:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/903",
     "type": "issue_comment",
@@ -440,7 +440,7 @@ archive/issue_comments_005557.json:
 }
 ```
 
-Attachment
+Attachment [903-small_fix.patch](tarball://root/attachments/some-uuid/ticket903/903-small_fix.patch) by AlexGhitza created at 2008-04-15 14:53:01
 
 apply after Nick's patch
 
@@ -497,7 +497,7 @@ Wall time: 3.98
 archive/issue_comments_005559.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [903-ncalexan-charpoly-over-number-field-2.patch](tarball://root/attachments/some-uuid/ticket903/903-ncalexan-charpoly-over-number-field-2.patch) by ncalexan created at 2008-04-15 16:03:52",
     "created_at": "2008-04-15T16:03:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/903",
     "type": "issue_comment",
@@ -506,7 +506,7 @@ archive/issue_comments_005559.json:
 }
 ```
 
-Attachment
+Attachment [903-ncalexan-charpoly-over-number-field-2.patch](tarball://root/attachments/some-uuid/ticket903/903-ncalexan-charpoly-over-number-field-2.patch) by ncalexan created at 2008-04-15 16:03:52
 
 
 

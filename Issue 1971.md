@@ -51,7 +51,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1971
 archive/issue_comments_012754.json:
 ```json
 {
-    "body": "Attachment\n\nNecessary patch for the jsmath-image-fonts spkg to work.  Relies on #2116",
+    "body": "Attachment [jsmath-fonts.patch](tarball://root/attachments/some-uuid/ticket1971/jsmath-fonts.patch) by jason created at 2008-02-09 04:46:12\n\nNecessary patch for the jsmath-image-fonts spkg to work.  Relies on #2116",
     "created_at": "2008-02-09T04:46:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1971",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_012754.json:
 }
 ```
 
-Attachment
+Attachment [jsmath-fonts.patch](tarball://root/attachments/some-uuid/ticket1971/jsmath-fonts.patch) by jason created at 2008-02-09 04:46:12
 
 Necessary patch for the jsmath-image-fonts spkg to work.  Relies on #2116
 
@@ -162,7 +162,7 @@ Michael
 archive/issue_comments_012759.json:
 ```json
 {
-    "body": "Attachment\n\nspeeds up is-installed with a cache.",
+    "body": "Attachment [is-installed-cached.patch](tarball://root/attachments/some-uuid/ticket1971/is-installed-cached.patch) by jason created at 2008-02-16 04:12:44\n\nspeeds up is-installed with a cache.",
     "created_at": "2008-02-16T04:12:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1971",
     "type": "issue_comment",
@@ -171,7 +171,7 @@ archive/issue_comments_012759.json:
 }
 ```
 
-Attachment
+Attachment [is-installed-cached.patch](tarball://root/attachments/some-uuid/ticket1971/is-installed-cached.patch) by jason created at 2008-02-16 04:12:44
 
 speeds up is-installed with a cache.
 
@@ -238,7 +238,7 @@ Apply instead of first jsmath-fonts.patch
 archive/issue_comments_012762.json:
 ```json
 {
-    "body": "Attachment\n\nThe jsmath-fonts.2.patch also takes the installed package testing out of the page creation loop and just does the test once.  It should be (very marginally) faster, but theoretically better.\n\nThe jsmath-fonts.2.patch should be applied instead of the jsmath-fonts.patch.",
+    "body": "Attachment [jsmath-fonts.2.patch](tarball://root/attachments/some-uuid/ticket1971/jsmath-fonts.2.patch) by jason created at 2008-02-16 04:31:26\n\nThe jsmath-fonts.2.patch also takes the installed package testing out of the page creation loop and just does the test once.  It should be (very marginally) faster, but theoretically better.\n\nThe jsmath-fonts.2.patch should be applied instead of the jsmath-fonts.patch.",
     "created_at": "2008-02-16T04:31:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1971",
     "type": "issue_comment",
@@ -247,7 +247,7 @@ archive/issue_comments_012762.json:
 }
 ```
 
-Attachment
+Attachment [jsmath-fonts.2.patch](tarball://root/attachments/some-uuid/ticket1971/jsmath-fonts.2.patch) by jason created at 2008-02-16 04:31:26
 
 The jsmath-fonts.2.patch also takes the installed package testing out of the page creation loop and just does the test once.  It should be (very marginally) faster, but theoretically better.
 

@@ -70,7 +70,7 @@ Changing status from new to assigned.
 archive/issue_comments_049435.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6188.patch](tarball://root/attachments/some-uuid/ticket6188/trac_6188.patch) by davidloeffler created at 2009-06-02 17:25:51",
     "created_at": "2009-06-02T17:25:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6188",
     "type": "issue_comment",
@@ -79,7 +79,7 @@ archive/issue_comments_049435.json:
 }
 ```
 
-Attachment
+Attachment [trac_6188.patch](tarball://root/attachments/some-uuid/ticket6188/trac_6188.patch) by davidloeffler created at 2009-06-02 17:25:51
 
 
 
@@ -124,7 +124,7 @@ I am half way through reviewing this and should be able to finish tomorrow.
 archive/issue_comments_049438.json:
 ```json
 {
-    "body": "Attachment\n\nApply after previous",
+    "body": "Attachment [trac_6188_review.patch](tarball://root/attachments/some-uuid/ticket6188/trac_6188_review.patch) by cremona created at 2009-06-04 21:41:35\n\nApply after previous",
     "created_at": "2009-06-04T21:41:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6188",
     "type": "issue_comment",
@@ -133,7 +133,7 @@ archive/issue_comments_049438.json:
 }
 ```
 
-Attachment
+Attachment [trac_6188_review.patch](tarball://root/attachments/some-uuid/ticket6188/trac_6188_review.patch) by cremona created at 2009-06-04 21:41:35
 
 Apply after previous
 

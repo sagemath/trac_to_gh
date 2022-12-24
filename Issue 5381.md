@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5381
 archive/issue_comments_041444.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5381_matrix_kernels.patch](tarball://root/attachments/some-uuid/ticket5381/trac_5381_matrix_kernels.patch) by rbeezer created at 2009-03-08 23:29:31",
     "created_at": "2009-03-08T23:29:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5381",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_041444.json:
 }
 ```
 
-Attachment
+Attachment [trac_5381_matrix_kernels.patch](tarball://root/attachments/some-uuid/ticket5381/trac_5381_matrix_kernels.patch) by rbeezer created at 2009-03-08 23:29:31
 
 
 
@@ -99,7 +99,7 @@ Rob
 archive/issue_comments_041447.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5381_matrix_kernels_2.patch](tarball://root/attachments/some-uuid/ticket5381/trac_5381_matrix_kernels_2.patch) by rbeezer created at 2009-04-06 04:27:29",
     "created_at": "2009-04-06T04:27:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5381",
     "type": "issue_comment",
@@ -108,7 +108,7 @@ archive/issue_comments_041447.json:
 }
 ```
 
-Attachment
+Attachment [trac_5381_matrix_kernels_2.patch](tarball://root/attachments/some-uuid/ticket5381/trac_5381_matrix_kernels_2.patch) by rbeezer created at 2009-04-06 04:27:29
 
 
 
@@ -174,7 +174,7 @@ Minh - timings are getting a bit dated, but are probably still accurate, though 
 archive/issue_comments_041450.json:
 ```json
 {
-    "body": "Attachment\n\nThe latest patch addresses Jason's comments; it applies cleanly and passes testlong.",
+    "body": "Attachment [trac_5381_matrix_kernels_3.patch](tarball://root/attachments/some-uuid/ticket5381/trac_5381_matrix_kernels_3.patch) by AlexGhitza created at 2009-04-30 11:21:15\n\nThe latest patch addresses Jason's comments; it applies cleanly and passes testlong.",
     "created_at": "2009-04-30T11:21:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5381",
     "type": "issue_comment",
@@ -183,7 +183,7 @@ archive/issue_comments_041450.json:
 }
 ```
 
-Attachment
+Attachment [trac_5381_matrix_kernels_3.patch](tarball://root/attachments/some-uuid/ticket5381/trac_5381_matrix_kernels_3.patch) by AlexGhitza created at 2009-04-30 11:21:15
 
 The latest patch addresses Jason's comments; it applies cleanly and passes testlong.
 

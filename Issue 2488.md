@@ -127,7 +127,7 @@ This is not ready
 archive/issue_comments_016864.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_2488.patch](tarball://root/attachments/some-uuid/ticket2488/trac_2488.patch) by gfurnish created at 2008-03-13 02:06:05",
     "created_at": "2008-03-13T02:06:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2488",
     "type": "issue_comment",
@@ -136,7 +136,7 @@ archive/issue_comments_016864.json:
 }
 ```
 
-Attachment
+Attachment [trac_2488.patch](tarball://root/attachments/some-uuid/ticket2488/trac_2488.patch) by gfurnish created at 2008-03-13 02:06:05
 
 
 

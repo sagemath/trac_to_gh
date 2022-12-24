@@ -384,7 +384,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_084250.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9076-arc.patch](tarball://root/attachments/some-uuid/ticket9076/trac_9076-arc.patch) by vdelecroix created at 2010-06-26 14:01:54",
     "created_at": "2010-06-26T14:01:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9076",
     "type": "issue_comment",
@@ -393,7 +393,7 @@ archive/issue_comments_084250.json:
 }
 ```
 
-Attachment
+Attachment [trac_9076-arc.patch](tarball://root/attachments/some-uuid/ticket9076/trac_9076-arc.patch) by vdelecroix created at 2010-06-26 14:01:54
 
 
 
@@ -488,7 +488,7 @@ Otherwise ENTHUSIASTIC positive review for a great addition.  Very minor changes
 archive/issue_comments_084255.json:
 ```json
 {
-    "body": "Attachment\n\nApply after initial patch",
+    "body": "Attachment [trac_9076-arc-reviewer.patch](tarball://root/attachments/some-uuid/ticket9076/trac_9076-arc-reviewer.patch) by kcrisman created at 2010-08-10 14:49:02\n\nApply after initial patch",
     "created_at": "2010-08-10T14:49:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9076",
     "type": "issue_comment",
@@ -497,7 +497,7 @@ archive/issue_comments_084255.json:
 }
 ```
 
-Attachment
+Attachment [trac_9076-arc-reviewer.patch](tarball://root/attachments/some-uuid/ticket9076/trac_9076-arc-reviewer.patch) by kcrisman created at 2010-08-10 14:49:02
 
 Apply after initial patch
 
@@ -618,7 +618,7 @@ Same as other one, but better commit message
 archive/issue_comments_084262.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9076-arc.2.patch](tarball://root/attachments/some-uuid/ticket9076/trac_9076-arc.2.patch) by mpatel created at 2010-08-16 21:16:42",
     "created_at": "2010-08-16T21:16:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9076",
     "type": "issue_comment",
@@ -627,7 +627,7 @@ archive/issue_comments_084262.json:
 }
 ```
 
-Attachment
+Attachment [trac_9076-arc.2.patch](tarball://root/attachments/some-uuid/ticket9076/trac_9076-arc.2.patch) by mpatel created at 2010-08-16 21:16:42
 
 
 

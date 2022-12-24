@@ -69,7 +69,7 @@ William's bundle with all patches
 archive/issue_comments_024699.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3502.hg](tarball://root/attachments/some-uuid/ticket3502/3502.hg) by craigcitro created at 2008-09-11 09:21:23",
     "created_at": "2008-09-11T09:21:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3502",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_024699.json:
 }
 ```
 
-Attachment
+Attachment [3502.hg](tarball://root/attachments/some-uuid/ticket3502/3502.hg) by craigcitro created at 2008-09-11 09:21:23
 
 
 
@@ -87,7 +87,7 @@ Attachment
 archive/issue_comments_024700.json:
 ```json
 {
-    "body": "Attachment\n\n(This doesn't need to go into 3.1.2, so I'm moving it to 3.1.3.)",
+    "body": "Attachment [trac-3502-addl.patch](tarball://root/attachments/some-uuid/ticket3502/trac-3502-addl.patch) by craigcitro created at 2008-09-12 06:54:26\n\n(This doesn't need to go into 3.1.2, so I'm moving it to 3.1.3.)",
     "created_at": "2008-09-12T06:54:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3502",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_024700.json:
 }
 ```
 
-Attachment
+Attachment [trac-3502-addl.patch](tarball://root/attachments/some-uuid/ticket3502/trac-3502-addl.patch) by craigcitro created at 2008-09-12 06:54:26
 
 (This doesn't need to go into 3.1.2, so I'm moving it to 3.1.3.)
 

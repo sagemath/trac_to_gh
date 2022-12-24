@@ -53,7 +53,7 @@ initial public domain version by Mike Hogan and David Joyner; for reference only
 archive/issue_comments_072931.json:
 ```json
 {
-    "body": "Attachment\n\nbased on Sage 4.3.2; depends on #7746",
+    "body": "Attachment [trac_8246-carmichael.patch](tarball://root/attachments/some-uuid/ticket8246/trac_8246-carmichael.patch) by mvngu created at 2010-02-13 04:07:48\n\nbased on Sage 4.3.2; depends on #7746",
     "created_at": "2010-02-13T04:07:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8246",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_072931.json:
 }
 ```
 
-Attachment
+Attachment [trac_8246-carmichael.patch](tarball://root/attachments/some-uuid/ticket8246/trac_8246-carmichael.patch) by mvngu created at 2010-02-13 04:07:48
 
 based on Sage 4.3.2; depends on #7746
 
@@ -91,7 +91,7 @@ archive/issue_comments_072932.json:
 archive/issue_comments_072933.json:
 ```json
 {
-    "body": "Attachment\n\n%timeit time in microseconds for newer implementation",
+    "body": "Attachment [carmichael.old](tarball://root/attachments/some-uuid/ticket8246/carmichael.old) by mvngu created at 2010-02-13 04:09:35\n\n%timeit time in microseconds for newer implementation",
     "created_at": "2010-02-13T04:09:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8246",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_072933.json:
 }
 ```
 
-Attachment
+Attachment [carmichael.old](tarball://root/attachments/some-uuid/ticket8246/carmichael.old) by mvngu created at 2010-02-13 04:09:35
 
 %timeit time in microseconds for newer implementation
 
@@ -111,7 +111,7 @@ Attachment
 archive/issue_comments_072934.json:
 ```json
 {
-    "body": "Attachment\n\ncomparison between old (blue) and new (red) implementations",
+    "body": "Attachment [carmichael.new](tarball://root/attachments/some-uuid/ticket8246/carmichael.new) by mvngu created at 2010-02-13 04:10:16\n\ncomparison between old (blue) and new (red) implementations",
     "created_at": "2010-02-13T04:10:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8246",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_072934.json:
 }
 ```
 
-Attachment
+Attachment [carmichael.new](tarball://root/attachments/some-uuid/ticket8246/carmichael.new) by mvngu created at 2010-02-13 04:10:16
 
 comparison between old (blue) and new (red) implementations
 
@@ -131,7 +131,7 @@ comparison between old (blue) and new (red) implementations
 archive/issue_comments_072935.json:
 ```json
 {
-    "body": "Attachment\n\nThe attachment [trac_8246-carmichael.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/trac_8246-carmichael.patch) provides a non-recursive implementation of the Carmichael function. This is in contrast to the recursive implementation as contained in [BBScrypto.sage](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/BBScrypto.sage). I have provided some timing comparison to justify the non-recursive implementation. Say [BBScrypto.sage](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/BBScrypto.sage) is at `/home/mvngu/BBScrypto.sage` and [trac_8246-carmichael.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/trac_8246-carmichael.patch) has been applied to Sage 4.3.2. The following generates some timing statistics for both Hogan & Joyner's implementation, and the non-recursive implementation. Here are some timing statistics for the recursive implementation, where the timing results (in microseconds) are saved to [carmichael.old](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/carmichael.old):\n\n```\nsage: load(\"/home/mvngu/BBScrypto.sage\")\nsage: T = []\nsage: for n in xrange(1, 1001):\n....:     t = %timeit carmichael(n)\n....:     T.append(t.stats[3])\n....:     \nsage: f = open(\"/home/mvngu/carmichael.old\", \"w\")\nsage: for t in T:\n....:     f.write(str(t) + \"\\n\")\n....:     \nsage: f.close()\n```\n\n\nThe following are some timing statistics for the non-recursive implementation. Timing results (in microseconds) are saved to [carmichael.new](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/carmichael.new):\n\n```\nsage: from sage.crypto.util import carmichael_lambda\nsage: T = []\nsage: for n in xrange(1, 1001):\n....:     t = %timeit carmichael_lambda(n)\n....:     T.append(t.stats[3])\n....:     \nsage: # First 10 elements of T are timings in nanoseconds. \nsage: # So convert them to microseconds.\nsage: for i in xrange(10):\n....:     T[i] = T[i] / 1000\n....:     \nsage: f = open(\"/home/mvngu/carmichael.new\", \"w\")\nsage: for t in T:\n....:     f.write(str(t) + \"\\n\")\n....:     \nsage: f.close()\n```\n\n\nNow plot the timing results. The plot in blue is for the recursive implementation, while the plot in red is for the non-recursive implementation. The horizontal axis is for integer values of `n` starting from 1, up to and including 1000. The vertical axis is for the values of the Carmichael function of `n`. The resulting combined plot is contained in [benchmark-carmichael.png](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/benchmark-carmichael.png). Timing statistics were obtained using the machine `sage.math`.\n\n```\nsage: X = [1..1000]\nsage: Yold = []\nsage: f = open(\"/home/mvngu/carmichael.old\", \"r\")\nsage: for t in f:\n....:     Yold.append(RR(t.strip()))\n....:     \nsage: f.close()\nsage: Ynew = []\nsage: f = open(\"/home/mvngu/carmichael.new\", \"r\")\nsage: for t in f:\n....:     Ynew.append(RR(t.strip()))\n....:     \nsage: f.close()\nsage: Pold = line2d(zip(X, Yold), color=\"blue\", thickness=1)\nsage: Pnew = line2d(zip(X, Ynew), color=\"red\", thickness=1)\nsage: Pold + Pnew\n```\n\nFirst apply #7746 and then [trac_8246-carmichael.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/trac_8246-carmichael.patch).",
+    "body": "Attachment [benchmark-carmichael.png](tarball://root/attachments/some-uuid/ticket8246/benchmark-carmichael.png) by mvngu created at 2010-02-13 04:29:02\n\nThe attachment [trac_8246-carmichael.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/trac_8246-carmichael.patch) provides a non-recursive implementation of the Carmichael function. This is in contrast to the recursive implementation as contained in [BBScrypto.sage](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/BBScrypto.sage). I have provided some timing comparison to justify the non-recursive implementation. Say [BBScrypto.sage](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/BBScrypto.sage) is at `/home/mvngu/BBScrypto.sage` and [trac_8246-carmichael.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/trac_8246-carmichael.patch) has been applied to Sage 4.3.2. The following generates some timing statistics for both Hogan & Joyner's implementation, and the non-recursive implementation. Here are some timing statistics for the recursive implementation, where the timing results (in microseconds) are saved to [carmichael.old](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/carmichael.old):\n\n```\nsage: load(\"/home/mvngu/BBScrypto.sage\")\nsage: T = []\nsage: for n in xrange(1, 1001):\n....:     t = %timeit carmichael(n)\n....:     T.append(t.stats[3])\n....:     \nsage: f = open(\"/home/mvngu/carmichael.old\", \"w\")\nsage: for t in T:\n....:     f.write(str(t) + \"\\n\")\n....:     \nsage: f.close()\n```\n\n\nThe following are some timing statistics for the non-recursive implementation. Timing results (in microseconds) are saved to [carmichael.new](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/carmichael.new):\n\n```\nsage: from sage.crypto.util import carmichael_lambda\nsage: T = []\nsage: for n in xrange(1, 1001):\n....:     t = %timeit carmichael_lambda(n)\n....:     T.append(t.stats[3])\n....:     \nsage: # First 10 elements of T are timings in nanoseconds. \nsage: # So convert them to microseconds.\nsage: for i in xrange(10):\n....:     T[i] = T[i] / 1000\n....:     \nsage: f = open(\"/home/mvngu/carmichael.new\", \"w\")\nsage: for t in T:\n....:     f.write(str(t) + \"\\n\")\n....:     \nsage: f.close()\n```\n\n\nNow plot the timing results. The plot in blue is for the recursive implementation, while the plot in red is for the non-recursive implementation. The horizontal axis is for integer values of `n` starting from 1, up to and including 1000. The vertical axis is for the values of the Carmichael function of `n`. The resulting combined plot is contained in [benchmark-carmichael.png](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/benchmark-carmichael.png). Timing statistics were obtained using the machine `sage.math`.\n\n```\nsage: X = [1..1000]\nsage: Yold = []\nsage: f = open(\"/home/mvngu/carmichael.old\", \"r\")\nsage: for t in f:\n....:     Yold.append(RR(t.strip()))\n....:     \nsage: f.close()\nsage: Ynew = []\nsage: f = open(\"/home/mvngu/carmichael.new\", \"r\")\nsage: for t in f:\n....:     Ynew.append(RR(t.strip()))\n....:     \nsage: f.close()\nsage: Pold = line2d(zip(X, Yold), color=\"blue\", thickness=1)\nsage: Pnew = line2d(zip(X, Ynew), color=\"red\", thickness=1)\nsage: Pold + Pnew\n```\n\nFirst apply #7746 and then [trac_8246-carmichael.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/trac_8246-carmichael.patch).",
     "created_at": "2010-02-13T04:29:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8246",
     "type": "issue_comment",
@@ -140,7 +140,7 @@ archive/issue_comments_072935.json:
 }
 ```
 
-Attachment
+Attachment [benchmark-carmichael.png](tarball://root/attachments/some-uuid/ticket8246/benchmark-carmichael.png) by mvngu created at 2010-02-13 04:29:02
 
 The attachment [trac_8246-carmichael.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/trac_8246-carmichael.patch) provides a non-recursive implementation of the Carmichael function. This is in contrast to the recursive implementation as contained in [BBScrypto.sage](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/BBScrypto.sage). I have provided some timing comparison to justify the non-recursive implementation. Say [BBScrypto.sage](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/BBScrypto.sage) is at `/home/mvngu/BBScrypto.sage` and [trac_8246-carmichael.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/trac_8246-carmichael.patch) has been applied to Sage 4.3.2. The following generates some timing statistics for both Hogan & Joyner's implementation, and the non-recursive implementation. Here are some timing statistics for the recursive implementation, where the timing results (in microseconds) are saved to [carmichael.old](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/carmichael.old):
 

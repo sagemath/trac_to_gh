@@ -49,7 +49,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7762
 archive/issue_comments_066862.json:
 ```json
 {
-    "body": "Attachment\n\nUses `sagenb.misc.misc.DATA` instead.",
+    "body": "Attachment [trac_7762-conf-sagenb-path.patch](tarball://root/attachments/some-uuid/ticket7762/trac_7762-conf-sagenb-path.patch) by timdumol created at 2009-12-24 17:26:42\n\nUses `sagenb.misc.misc.DATA` instead.",
     "created_at": "2009-12-24T17:26:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7762",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_066862.json:
 }
 ```
 
-Attachment
+Attachment [trac_7762-conf-sagenb-path.patch](tarball://root/attachments/some-uuid/ticket7762/trac_7762-conf-sagenb-path.patch) by timdumol created at 2009-12-24 17:26:42
 
 Uses `sagenb.misc.misc.DATA` instead.
 

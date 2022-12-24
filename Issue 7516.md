@@ -100,7 +100,7 @@ Finitely generated module V/W over Integer Ring with invariants (0)
 archive/issue_comments_063666.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7516.patch](tarball://root/attachments/some-uuid/ticket7516/trac_7516.patch) by was created at 2010-01-19 13:03:06",
     "created_at": "2010-01-19T13:03:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7516",
     "type": "issue_comment",
@@ -109,7 +109,7 @@ archive/issue_comments_063666.json:
 }
 ```
 
-Attachment
+Attachment [trac_7516.patch](tarball://root/attachments/some-uuid/ticket7516/trac_7516.patch) by was created at 2010-01-19 13:03:06
 
 
 

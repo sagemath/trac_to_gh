@@ -79,7 +79,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1480
 archive/issue_comments_009516.json:
 ```json
 {
-    "body": "Attachment\n\nTimothy Clemans points out that to get graphics to work remotely do:\n\n\n```\nXvfb 19\nexport DISPLAY=localhost:19\n```\n\nthen start the sage notebook server. \n\nThis is discussed at \n\n http://witm.sourceforge.net/installation.php\n\nThis should definitely somehow be in sage before this ticket is closed!\n\nE.g., on failure a message could be printed out telling the user to do the\nabove... and something like this could be in the docstring for the new show command.",
+    "body": "Attachment [trac-1480.patch](tarball://root/attachments/some-uuid/ticket1480/trac-1480.patch) by was created at 2007-12-13 18:00:37\n\nTimothy Clemans points out that to get graphics to work remotely do:\n\n\n```\nXvfb 19\nexport DISPLAY=localhost:19\n```\n\nthen start the sage notebook server. \n\nThis is discussed at \n\n http://witm.sourceforge.net/installation.php\n\nThis should definitely somehow be in sage before this ticket is closed!\n\nE.g., on failure a message could be printed out telling the user to do the\nabove... and something like this could be in the docstring for the new show command.",
     "created_at": "2007-12-13T18:00:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1480",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_009516.json:
 }
 ```
 
-Attachment
+Attachment [trac-1480.patch](tarball://root/attachments/some-uuid/ticket1480/trac-1480.patch) by was created at 2007-12-13 18:00:37
 
 Timothy Clemans points out that to get graphics to work remotely do:
 
@@ -116,7 +116,7 @@ above... and something like this could be in the docstring for the new show comm
 archive/issue_comments_009517.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-148-part2.patch](tarball://root/attachments/some-uuid/ticket1480/trac-148-part2.patch) by was created at 2007-12-15 13:54:38",
     "created_at": "2007-12-15T13:54:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1480",
     "type": "issue_comment",
@@ -125,7 +125,7 @@ archive/issue_comments_009517.json:
 }
 ```
 
-Attachment
+Attachment [trac-148-part2.patch](tarball://root/attachments/some-uuid/ticket1480/trac-148-part2.patch) by was created at 2007-12-15 13:54:38
 
 
 

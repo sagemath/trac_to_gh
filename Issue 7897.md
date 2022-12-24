@@ -86,7 +86,7 @@ I changed my mind about importance of "restart" command in the middle of the cod
 archive/issue_comments_068685.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7897_macaulay2_doctests_update.patch](tarball://root/attachments/some-uuid/ticket7897/trac_7897_macaulay2_doctests_update.patch) by novoselt created at 2010-02-01 04:36:00",
     "created_at": "2010-02-01T04:36:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7897",
     "type": "issue_comment",
@@ -95,7 +95,7 @@ archive/issue_comments_068685.json:
 }
 ```
 
-Attachment
+Attachment [trac_7897_macaulay2_doctests_update.patch](tarball://root/attachments/some-uuid/ticket7897/trac_7897_macaulay2_doctests_update.patch) by novoselt created at 2010-02-01 04:36:00
 
 
 

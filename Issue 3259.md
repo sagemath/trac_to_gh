@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3259
 archive/issue_comments_022546.json:
 ```json
 {
-    "body": "Attachment\n\nI forgot to note this, but because flint doesn't have a static library, we only need to build it with -fPIC, which is accomplished by setting MAKECMDGOALS=library",
+    "body": "Attachment [flint-soname.patch](tarball://root/attachments/some-uuid/ticket3259/flint-soname.patch) by tabbott created at 2008-05-19 22:30:17\n\nI forgot to note this, but because flint doesn't have a static library, we only need to build it with -fPIC, which is accomplished by setting MAKECMDGOALS=library",
     "created_at": "2008-05-19T22:30:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3259",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_022546.json:
 }
 ```
 
-Attachment
+Attachment [flint-soname.patch](tarball://root/attachments/some-uuid/ticket3259/flint-soname.patch) by tabbott created at 2008-05-19 22:30:17
 
 I forgot to note this, but because flint doesn't have a static library, we only need to build it with -fPIC, which is accomplished by setting MAKECMDGOALS=library
 

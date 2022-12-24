@@ -73,7 +73,7 @@ Changing priority from major to blocker.
 archive/issue_comments_039794.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [delete-all-cells.patch](tarball://root/attachments/some-uuid/ticket5189/delete-all-cells.patch) by jason created at 2009-02-06 08:18:30",
     "created_at": "2009-02-06T08:18:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5189",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_039794.json:
 }
 ```
 
-Attachment
+Attachment [delete-all-cells.patch](tarball://root/attachments/some-uuid/ticket5189/delete-all-cells.patch) by jason created at 2009-02-06 08:18:30
 
 
 

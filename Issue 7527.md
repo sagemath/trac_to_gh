@@ -53,7 +53,7 @@ Changing status from new to needs_review.
 archive/issue_comments_063803.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7527.patch](tarball://root/attachments/some-uuid/ticket7527/trac_7527.patch) by ncohen created at 2009-11-25 08:45:29",
     "created_at": "2009-11-25T08:45:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7527",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_063803.json:
 }
 ```
 
-Attachment
+Attachment [trac_7527.patch](tarball://root/attachments/some-uuid/ticket7527/trac_7527.patch) by ncohen created at 2009-11-25 08:45:29
 
 
 
@@ -107,7 +107,7 @@ rebased; based on Sage 4.3.alpha1
 archive/issue_comments_063806.json:
 ```json
 {
-    "body": "Attachment\n\nreviewer patch",
+    "body": "Attachment [trac_7527-rebased.patch](tarball://root/attachments/some-uuid/ticket7527/trac_7527-rebased.patch) by mvngu created at 2009-12-08 19:00:48\n\nreviewer patch",
     "created_at": "2009-12-08T19:00:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7527",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_063806.json:
 }
 ```
 
-Attachment
+Attachment [trac_7527-rebased.patch](tarball://root/attachments/some-uuid/ticket7527/trac_7527-rebased.patch) by mvngu created at 2009-12-08 19:00:48
 
 reviewer patch
 
@@ -127,7 +127,7 @@ reviewer patch
 archive/issue_comments_063807.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch `trac_7527.patch` doesn't apply cleanly on top of Sage 4.3.alpha1:\n\n```\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7527/trac_7527.patch\nadding trac_7527.patch to series file\n[mvngu@sage sage-main]$ hg qpush\napplying trac_7527.patch\npatching file sage/graphs/graph_coloring.py\nHunk #3 FAILED at 143\nHunk #4 succeeded at 175 with fuzz 1 (offset 14 lines).\nHunk #7 succeeded at 651 with fuzz 1 (offset 416 lines).\n1 out of 7 hunks FAILED -- saving rejects to file sage/graphs/graph_coloring.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_7527.patch\n```\n\nThe rejected hunk is\n\n```\n[mvngu@sage ~]$ cat graph_coloring.py.rej \n--- graph_coloring.py\n+++ graph_coloring.py\n@@ -142,11 +144,12 @@\n         raise RuntimeError, \"Too much recursion!  Graph coloring failed.\"\n \n def first_coloring(G,n=0):\n-    \"\"\"\n-    Given a graph, and optionally a natural number n, returns\n-    the first coloring we find with at least n colors.\n+    r\"\"\"\n+    Given a graph, and optionally a natural number `n`, returns\n+    the first coloring we find with at least `n` colors.\n \n-    EXAMPLES:\n+    EXAMPLES::\n+\n         sage: from sage.graphs.graph_coloring import first_coloring\n         sage: G = Graph({0:[1,2,3],1:[2]})\n         sage: first_coloring(G,3)\n```\n\nwhich fails to apply because #6679 already takes care of that hunk. I have rebased ncohen's patch using Sage 4.3.alpha1; see `trac_7527-rebased.patch` which doesn't include the rejected hunk. I'm OK with ncohen's original patch, so only the rebased patch and my patch `trac_7527-reviewer.patch` needs reviewing. Patches should be applied in this order:\n\n1. `trac_7527-rebased.patch`\n2. `trac_7527-reviewer.patch`",
+    "body": "Attachment [trac_7527-reviewer.patch](tarball://root/attachments/some-uuid/ticket7527/trac_7527-reviewer.patch) by mvngu created at 2009-12-08 19:09:19\n\nThe patch `trac_7527.patch` doesn't apply cleanly on top of Sage 4.3.alpha1:\n\n```\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7527/trac_7527.patch\nadding trac_7527.patch to series file\n[mvngu@sage sage-main]$ hg qpush\napplying trac_7527.patch\npatching file sage/graphs/graph_coloring.py\nHunk #3 FAILED at 143\nHunk #4 succeeded at 175 with fuzz 1 (offset 14 lines).\nHunk #7 succeeded at 651 with fuzz 1 (offset 416 lines).\n1 out of 7 hunks FAILED -- saving rejects to file sage/graphs/graph_coloring.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_7527.patch\n```\n\nThe rejected hunk is\n\n```\n[mvngu@sage ~]$ cat graph_coloring.py.rej \n--- graph_coloring.py\n+++ graph_coloring.py\n@@ -142,11 +144,12 @@\n         raise RuntimeError, \"Too much recursion!  Graph coloring failed.\"\n \n def first_coloring(G,n=0):\n-    \"\"\"\n-    Given a graph, and optionally a natural number n, returns\n-    the first coloring we find with at least n colors.\n+    r\"\"\"\n+    Given a graph, and optionally a natural number `n`, returns\n+    the first coloring we find with at least `n` colors.\n \n-    EXAMPLES:\n+    EXAMPLES::\n+\n         sage: from sage.graphs.graph_coloring import first_coloring\n         sage: G = Graph({0:[1,2,3],1:[2]})\n         sage: first_coloring(G,3)\n```\n\nwhich fails to apply because #6679 already takes care of that hunk. I have rebased ncohen's patch using Sage 4.3.alpha1; see `trac_7527-rebased.patch` which doesn't include the rejected hunk. I'm OK with ncohen's original patch, so only the rebased patch and my patch `trac_7527-reviewer.patch` needs reviewing. Patches should be applied in this order:\n\n1. `trac_7527-rebased.patch`\n2. `trac_7527-reviewer.patch`",
     "created_at": "2009-12-08T19:09:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7527",
     "type": "issue_comment",
@@ -136,7 +136,7 @@ archive/issue_comments_063807.json:
 }
 ```
 
-Attachment
+Attachment [trac_7527-reviewer.patch](tarball://root/attachments/some-uuid/ticket7527/trac_7527-reviewer.patch) by mvngu created at 2009-12-08 19:09:19
 
 The patch `trac_7527.patch` doesn't apply cleanly on top of Sage 4.3.alpha1:
 

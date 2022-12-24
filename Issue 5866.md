@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5866
 archive/issue_comments_046337.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [freetype-2.3.5.p0.patch](tarball://root/attachments/some-uuid/ticket5866/freetype-2.3.5.p0.patch) by pjeremy created at 2009-04-23 06:53:28",
     "created_at": "2009-04-23T06:53:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5866",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_046337.json:
 }
 ```
 
-Attachment
+Attachment [freetype-2.3.5.p0.patch](tarball://root/attachments/some-uuid/ticket5866/freetype-2.3.5.p0.patch) by pjeremy created at 2009-04-23 06:53:28
 
 
 

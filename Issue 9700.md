@@ -164,7 +164,7 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_094335.json:
 ```json
 {
-    "body": "Attachment\n\nDone.",
+    "body": "Attachment [trac-9700-sparse_graph-export-check_edge_label.patch](tarball://root/attachments/some-uuid/ticket9700/trac-9700-sparse_graph-export-check_edge_label.patch) by mhansen created at 2010-08-07 06:35:27\n\nDone.",
     "created_at": "2010-08-07T06:35:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9700",
     "type": "issue_comment",
@@ -173,7 +173,7 @@ archive/issue_comments_094335.json:
 }
 ```
 
-Attachment
+Attachment [trac-9700-sparse_graph-export-check_edge_label.patch](tarball://root/attachments/some-uuid/ticket9700/trac-9700-sparse_graph-export-check_edge_label.patch) by mhansen created at 2010-08-07 06:35:27
 
 Done.
 

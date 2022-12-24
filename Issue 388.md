@@ -165,7 +165,7 @@ Resolution: fixed
 archive/issue_comments_001907.json:
 ```json
 {
-    "body": "Attachment\n\nlooks good to me.",
+    "body": "Attachment [ticket_388.hg](tarball://root/attachments/some-uuid/ticket388/ticket_388.hg) by was created at 2007-09-01 18:12:07\n\nlooks good to me.",
     "created_at": "2007-09-01T18:12:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/388",
     "type": "issue_comment",
@@ -174,6 +174,6 @@ archive/issue_comments_001907.json:
 }
 ```
 
-Attachment
+Attachment [ticket_388.hg](tarball://root/attachments/some-uuid/ticket388/ticket_388.hg) by was created at 2007-09-01 18:12:07
 
 looks good to me.

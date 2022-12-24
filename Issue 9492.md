@@ -93,7 +93,7 @@ In the attached file sd.sage, I implemented a few functions, and also copied in 
 archive/issue_comments_091119.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sd.sage](tarball://root/attachments/some-uuid/ticket9492/sd.sage) by was created at 2010-07-13 23:08:23",
     "created_at": "2010-07-13T23:08:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9492",
     "type": "issue_comment",
@@ -102,7 +102,7 @@ archive/issue_comments_091119.json:
 }
 ```
 
-Attachment
+Attachment [sd.sage](tarball://root/attachments/some-uuid/ticket9492/sd.sage) by was created at 2010-07-13 23:08:23
 
 
 
@@ -139,7 +139,7 @@ Wall time: 17.50 s
 archive/issue_comments_091121.json:
 ```json
 {
-    "body": "Attachment\n\nI just adapted sdpoly3 to use a binary tree. The result is called sdpoly5, see file sd2.sage. I found sdpoly5 to be slightly faster than sdpoly3 in the tests that I have run.\n\nWhen using naive polynomial multiplication, the algorithms sdpoly3 and sdpoly5 are asymptotically equivalent. As soon as FFT quasi-linear polynomial multiplication is implemented for interval arithmetic and examples become large, the algorithm sdpoly5 should be the faster one (quasi-linear).\n\n\n```\nsage: time sdpoly5(12)\nCPU times: user 845.82 s, sys: 0.10 s, total: 845.92 s\nWall time: 846.13 s\n\nsage: time sdpoly3(12)\nCPU times: user 861.84 s, sys: 0.01 s, total: 861.85 s\nWall time: 861.98 s\n```\n",
+    "body": "Attachment [sd2.sage](tarball://root/attachments/some-uuid/ticket9492/sd2.sage) by mstreng created at 2010-07-14 11:04:19\n\nI just adapted sdpoly3 to use a binary tree. The result is called sdpoly5, see file sd2.sage. I found sdpoly5 to be slightly faster than sdpoly3 in the tests that I have run.\n\nWhen using naive polynomial multiplication, the algorithms sdpoly3 and sdpoly5 are asymptotically equivalent. As soon as FFT quasi-linear polynomial multiplication is implemented for interval arithmetic and examples become large, the algorithm sdpoly5 should be the faster one (quasi-linear).\n\n\n```\nsage: time sdpoly5(12)\nCPU times: user 845.82 s, sys: 0.10 s, total: 845.92 s\nWall time: 846.13 s\n\nsage: time sdpoly3(12)\nCPU times: user 861.84 s, sys: 0.01 s, total: 861.85 s\nWall time: 861.98 s\n```\n",
     "created_at": "2010-07-14T11:04:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9492",
     "type": "issue_comment",
@@ -148,7 +148,7 @@ archive/issue_comments_091121.json:
 }
 ```
 
-Attachment
+Attachment [sd2.sage](tarball://root/attachments/some-uuid/ticket9492/sd2.sage) by mstreng created at 2010-07-14 11:04:19
 
 I just adapted sdpoly3 to use a binary tree. The result is called sdpoly5, see file sd2.sage. I found sdpoly5 to be slightly faster than sdpoly3 in the tests that I have run.
 

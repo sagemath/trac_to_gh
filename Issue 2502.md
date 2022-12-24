@@ -117,7 +117,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2502
 archive/issue_comments_016955.json:
 ```json
 {
-    "body": "Attachment\n\nnote that finite_field_element.py is not addressed in this patch",
+    "body": "Attachment [gf_doctests.patch](tarball://root/attachments/some-uuid/ticket2502/gf_doctests.patch) by malb created at 2008-03-12 19:03:03\n\nnote that finite_field_element.py is not addressed in this patch",
     "created_at": "2008-03-12T19:03:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2502",
     "type": "issue_comment",
@@ -126,7 +126,7 @@ archive/issue_comments_016955.json:
 }
 ```
 
-Attachment
+Attachment [gf_doctests.patch](tarball://root/attachments/some-uuid/ticket2502/gf_doctests.patch) by malb created at 2008-03-12 19:03:03
 
 note that finite_field_element.py is not addressed in this patch
 

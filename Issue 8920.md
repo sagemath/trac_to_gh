@@ -803,7 +803,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_082174.json:
 ```json
 {
-    "body": "Attachment\n\napply only this one (takes care of changes in the review patch)",
+    "body": "Attachment [trac_8920-alphabet.patch](tarball://root/attachments/some-uuid/ticket8920/trac_8920-alphabet.patch) by vdelecroix created at 2013-02-21 14:57:57\n\napply only this one (takes care of changes in the review patch)",
     "created_at": "2013-02-21T14:57:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8920",
     "type": "issue_comment",
@@ -812,7 +812,7 @@ archive/issue_comments_082174.json:
 }
 ```
 
-Attachment
+Attachment [trac_8920-alphabet.patch](tarball://root/attachments/some-uuid/ticket8920/trac_8920-alphabet.patch) by vdelecroix created at 2013-02-21 14:57:57
 
 apply only this one (takes care of changes in the review patch)
 

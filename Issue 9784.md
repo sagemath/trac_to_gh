@@ -47,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9785
 archive/issue_comments_096036.json:
 ```json
 {
-    "body": "Attachment\n\nThis fixes the problem for me.",
+    "body": "Attachment [trac_9785_fix_wrong_cell.patch](tarball://root/attachments/some-uuid/ticket9785/trac_9785_fix_wrong_cell.patch) by mmanashirov created at 2011-12-24 22:59:55\n\nThis fixes the problem for me.",
     "created_at": "2011-12-24T22:59:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9784",
     "type": "issue_comment",
@@ -56,7 +56,7 @@ archive/issue_comments_096036.json:
 }
 ```
 
-Attachment
+Attachment [trac_9785_fix_wrong_cell.patch](tarball://root/attachments/some-uuid/ticket9785/trac_9785_fix_wrong_cell.patch) by mmanashirov created at 2011-12-24 22:59:55
 
 This fixes the problem for me.
 

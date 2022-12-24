@@ -118,7 +118,7 @@ Changing status from new to needs_review.
 archive/issue_comments_085494.json:
 ```json
 {
-    "body": "Attachment\n\nAn updated .spkg may be found here\n\nhttp://boxen.math.washington.edu/home/kirkby/patches/singular-3.1.0.4.p6.spkg\n\nDave",
+    "body": "Attachment [Three-Singular-issues.patch](tarball://root/attachments/some-uuid/ticket9160/Three-Singular-issues.patch) by drkirkby created at 2010-06-06 13:33:51\n\nAn updated .spkg may be found here\n\nhttp://boxen.math.washington.edu/home/kirkby/patches/singular-3.1.0.4.p6.spkg\n\nDave",
     "created_at": "2010-06-06T13:33:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
@@ -127,7 +127,7 @@ archive/issue_comments_085494.json:
 }
 ```
 
-Attachment
+Attachment [Three-Singular-issues.patch](tarball://root/attachments/some-uuid/ticket9160/Three-Singular-issues.patch) by drkirkby created at 2010-06-06 13:33:51
 
 An updated .spkg may be found here
 
@@ -760,7 +760,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_085511.json:
 ```json
 {
-    "body": "Attachment\n\nI went back to the first version, and made a few minor changes from that. So forget the version you did not like. I've overwritten the patch file. \n\n* Removed the code specific to DYNAMIC_KERNEL on OS X, since as you say, it had already been disabled on all platforms except Linux. \n* set CPPFLAGS=\"-I$SAGE_LOCAL/include $CPPFLAGS\" (All flags like -m64, -g etc are still there. I've not removed them, though I'm not convinced they are needed myself). \n* Added required sections to SPKG.txt according to Developers guide. I filled in what I could  - only \"PKG Maintainers\" is empty. \n* Documented in the new \"Special Update/Build Instructions\" section about Solaris and the use of --without-dynamic-kernel option and CONFIG_SHELL. No changes have been made to CONFIG_SHELL or --without-dynamic-kernel. \n* touched src/factory/configure \n* moved SAGE64 stuff outside the debugging section. Even though as you say SAGE_DEBUG is set to zero, it still seems illogical to have it in that section, as if someone wanted to chage SAGE_DEBUG, they would disable the possibility of building 64-bit, which would seem rather stupid. \n* I realised too late my email was not in the commit message, but I don't think that should be a major problem. The subject line is more informative \n\n```\nchangeset:   93:0283ade6e1ad\ntag:         tip\nuser:        kirkby@localhost\ndate:        Tue Jun 08 16:34:56 2010 -0700\nsummary:     #9160. Few code changes, mainly releated to the dynamic kernel, and improved documentation\n```\n\n\nPackage is still at http://boxen.math.washington.edu/home/kirkby/patches/singular-3.1.0.4.p6.spkg\n\nThe two patches on the ticket need to be applied. \n\nDave",
+    "body": "Attachment [Three-Singular-issues-part-2.patch](tarball://root/attachments/some-uuid/ticket9160/Three-Singular-issues-part-2.patch) by drkirkby created at 2010-06-09 00:04:59\n\nI went back to the first version, and made a few minor changes from that. So forget the version you did not like. I've overwritten the patch file. \n\n* Removed the code specific to DYNAMIC_KERNEL on OS X, since as you say, it had already been disabled on all platforms except Linux. \n* set CPPFLAGS=\"-I$SAGE_LOCAL/include $CPPFLAGS\" (All flags like -m64, -g etc are still there. I've not removed them, though I'm not convinced they are needed myself). \n* Added required sections to SPKG.txt according to Developers guide. I filled in what I could  - only \"PKG Maintainers\" is empty. \n* Documented in the new \"Special Update/Build Instructions\" section about Solaris and the use of --without-dynamic-kernel option and CONFIG_SHELL. No changes have been made to CONFIG_SHELL or --without-dynamic-kernel. \n* touched src/factory/configure \n* moved SAGE64 stuff outside the debugging section. Even though as you say SAGE_DEBUG is set to zero, it still seems illogical to have it in that section, as if someone wanted to chage SAGE_DEBUG, they would disable the possibility of building 64-bit, which would seem rather stupid. \n* I realised too late my email was not in the commit message, but I don't think that should be a major problem. The subject line is more informative \n\n```\nchangeset:   93:0283ade6e1ad\ntag:         tip\nuser:        kirkby@localhost\ndate:        Tue Jun 08 16:34:56 2010 -0700\nsummary:     #9160. Few code changes, mainly releated to the dynamic kernel, and improved documentation\n```\n\n\nPackage is still at http://boxen.math.washington.edu/home/kirkby/patches/singular-3.1.0.4.p6.spkg\n\nThe two patches on the ticket need to be applied. \n\nDave",
     "created_at": "2010-06-09T00:04:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
@@ -769,7 +769,7 @@ archive/issue_comments_085511.json:
 }
 ```
 
-Attachment
+Attachment [Three-Singular-issues-part-2.patch](tarball://root/attachments/some-uuid/ticket9160/Three-Singular-issues-part-2.patch) by drkirkby created at 2010-06-09 00:04:59
 
 I went back to the first version, and made a few minor changes from that. So forget the version you did not like. I've overwritten the patch file. 
 
@@ -1080,7 +1080,7 @@ Resolution: fixed
 archive/issue_comments_085521.json:
 ```json
 {
-    "body": "Attachment\n\nRemove the rebuilding of factory and libfac from spkg-install",
+    "body": "Attachment [singular-simplified.patch](tarball://root/attachments/some-uuid/ticket9160/singular-simplified.patch) by fbissey created at 2010-06-12 09:40:35\n\nRemove the rebuilding of factory and libfac from spkg-install",
     "created_at": "2010-06-12T09:40:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
@@ -1089,7 +1089,7 @@ archive/issue_comments_085521.json:
 }
 ```
 
-Attachment
+Attachment [singular-simplified.patch](tarball://root/attachments/some-uuid/ticket9160/singular-simplified.patch) by fbissey created at 2010-06-12 09:40:35
 
 Remove the rebuilding of factory and libfac from spkg-install
 

@@ -85,7 +85,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2226
 archive/issue_comments_014749.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch adds a bunch of much-needed docstrings to polynomial_element.pyx.  It also, more to the point, fixes f.integrate() to pass to the fraction field if needed.",
+    "body": "Attachment [sage-2226.patch](tarball://root/attachments/some-uuid/ticket2226/sage-2226.patch) by was created at 2008-02-21 17:30:38\n\nThe attached patch adds a bunch of much-needed docstrings to polynomial_element.pyx.  It also, more to the point, fixes f.integrate() to pass to the fraction field if needed.",
     "created_at": "2008-02-21T17:30:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2226",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_014749.json:
 }
 ```
 
-Attachment
+Attachment [sage-2226.patch](tarball://root/attachments/some-uuid/ticket2226/sage-2226.patch) by was created at 2008-02-21 17:30:38
 
 The attached patch adds a bunch of much-needed docstrings to polynomial_element.pyx.  It also, more to the point, fixes f.integrate() to pass to the fraction field if needed.
 

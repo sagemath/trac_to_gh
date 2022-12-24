@@ -225,7 +225,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_049826.json:
 ```json
 {
-    "body": "Attachment\n\nOK, the revised patch is up.",
+    "body": "Attachment [trac_6237.patch](tarball://root/attachments/some-uuid/ticket6237/trac_6237.patch) by AlexGhitza created at 2010-01-04 23:56:23\n\nOK, the revised patch is up.",
     "created_at": "2010-01-04T23:56:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6237",
     "type": "issue_comment",
@@ -234,7 +234,7 @@ archive/issue_comments_049826.json:
 }
 ```
 
-Attachment
+Attachment [trac_6237.patch](tarball://root/attachments/some-uuid/ticket6237/trac_6237.patch) by AlexGhitza created at 2010-01-04 23:56:23
 
 OK, the revised patch is up.
 

@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8998
 archive/issue_comments_083210.json:
 ```json
 {
-    "body": "Attachment\n\nIt turns out that cusps (P^1(Q)) don't know their group of course. This function is thus somewhat badly named.  A minimal invasive change without breaking backwards compatibility is to clarify the *documentation* and do nothing else.  I think that is enough to close this ticket, though I may want to make another ticket later to add other actions, etc.   But for now, it is certainly a big improvement to at least fix a major incorrect statement in the documentation!     This patch is pretty safe, since it *only* changes documentation.",
+    "body": "Attachment [trac_8998.patch](tarball://root/attachments/some-uuid/ticket8998/trac_8998.patch) by was created at 2011-03-22 00:59:48\n\nIt turns out that cusps (P^1(Q)) don't know their group of course. This function is thus somewhat badly named.  A minimal invasive change without breaking backwards compatibility is to clarify the *documentation* and do nothing else.  I think that is enough to close this ticket, though I may want to make another ticket later to add other actions, etc.   But for now, it is certainly a big improvement to at least fix a major incorrect statement in the documentation!     This patch is pretty safe, since it *only* changes documentation.",
     "created_at": "2011-03-22T00:59:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8998",
     "type": "issue_comment",
@@ -53,7 +53,7 @@ archive/issue_comments_083210.json:
 }
 ```
 
-Attachment
+Attachment [trac_8998.patch](tarball://root/attachments/some-uuid/ticket8998/trac_8998.patch) by was created at 2011-03-22 00:59:48
 
 It turns out that cusps (P^1(Q)) don't know their group of course. This function is thus somewhat badly named.  A minimal invasive change without breaking backwards compatibility is to clarify the *documentation* and do nothing else.  I think that is enough to close this ticket, though I may want to make another ticket later to add other actions, etc.   But for now, it is certainly a big improvement to at least fix a major incorrect statement in the documentation!     This patch is pretty safe, since it *only* changes documentation.
 

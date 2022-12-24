@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9812
 archive/issue_comments_096757.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9812_sorting_bug_in_fan_subdivision.patch](tarball://root/attachments/some-uuid/ticket9812/trac_9812_sorting_bug_in_fan_subdivision.patch) by novoselt created at 2010-08-26 22:27:40",
     "created_at": "2010-08-26T22:27:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9811",
     "type": "issue_comment",
@@ -50,7 +50,7 @@ archive/issue_comments_096757.json:
 }
 ```
 
-Attachment
+Attachment [trac_9812_sorting_bug_in_fan_subdivision.patch](tarball://root/attachments/some-uuid/ticket9812/trac_9812_sorting_bug_in_fan_subdivision.patch) by novoselt created at 2010-08-26 22:27:40
 
 
 

@@ -51,7 +51,7 @@ Changing status from new to needs_review.
 archive/issue_comments_092419.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9570.patch](tarball://root/attachments/some-uuid/ticket9570/trac_9570.patch) by ncohen created at 2010-07-22 02:57:28",
     "created_at": "2010-07-22T02:57:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9570",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_092419.json:
 }
 ```
 
-Attachment
+Attachment [trac_9570.patch](tarball://root/attachments/some-uuid/ticket9570/trac_9570.patch) by ncohen created at 2010-07-22 02:57:28
 
 
 
@@ -87,7 +87,7 @@ Fixes the AttributeError that was returned when no mip solver was specified by t
 archive/issue_comments_092421.json:
 ```json
 {
-    "body": "Attachment\n\nI applied your patch, but while trying to solve an MIP without specifying a solver, I've got an AttributeError, since the attribute '_default_solver' was not defined.\nI just fixed this by adding a line stating that _default_solver = None.\nIf you agree with my changes, I think the patch can be said to be reviwed.",
+    "body": "Attachment [trac_9570-fix.patch](tarball://root/attachments/some-uuid/ticket9570/trac_9570-fix.patch) by lsampaio created at 2010-07-23 08:22:56\n\nI applied your patch, but while trying to solve an MIP without specifying a solver, I've got an AttributeError, since the attribute '_default_solver' was not defined.\nI just fixed this by adding a line stating that _default_solver = None.\nIf you agree with my changes, I think the patch can be said to be reviwed.",
     "created_at": "2010-07-23T08:22:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9570",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_092421.json:
 }
 ```
 
-Attachment
+Attachment [trac_9570-fix.patch](tarball://root/attachments/some-uuid/ticket9570/trac_9570-fix.patch) by lsampaio created at 2010-07-23 08:22:56
 
 I applied your patch, but while trying to solve an MIP without specifying a solver, I've got an AttributeError, since the attribute '_default_solver' was not defined.
 I just fixed this by adding a line stating that _default_solver = None.

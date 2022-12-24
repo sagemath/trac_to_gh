@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5969
 archive/issue_comments_047309.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5969-part2.patch](tarball://root/attachments/some-uuid/ticket5969/trac_5969-part2.patch) by was created at 2009-09-16 04:50:01",
     "created_at": "2009-09-16T04:50:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5969",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_047309.json:
 }
 ```
 
-Attachment
+Attachment [trac_5969-part2.patch](tarball://root/attachments/some-uuid/ticket5969/trac_5969-part2.patch) by was created at 2009-09-16 04:50:01
 
 
 
@@ -51,7 +51,7 @@ Attachment
 archive/issue_comments_047310.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-5969-part3.patch](tarball://root/attachments/some-uuid/ticket5969/trac-5969-part3.patch) by was created at 2010-01-21 19:36:24",
     "created_at": "2010-01-21T19:36:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5969",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_047310.json:
 }
 ```
 
-Attachment
+Attachment [trac-5969-part3.patch](tarball://root/attachments/some-uuid/ticket5969/trac-5969-part3.patch) by was created at 2010-01-21 19:36:24
 
 
 
@@ -107,7 +107,7 @@ Changing status from new to needs_review.
 archive/issue_comments_047313.json:
 ```json
 {
-    "body": "Attachment\n\nI just checked that all four patches apply fine to sage-4.3.5 still with no rebasing necessary.",
+    "body": "Attachment [trac_5969-part4.patch](tarball://root/attachments/some-uuid/ticket5969/trac_5969-part4.patch) by was created at 2010-03-30 00:47:12\n\nI just checked that all four patches apply fine to sage-4.3.5 still with no rebasing necessary.",
     "created_at": "2010-03-30T00:47:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5969",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_047313.json:
 }
 ```
 
-Attachment
+Attachment [trac_5969-part4.patch](tarball://root/attachments/some-uuid/ticket5969/trac_5969-part4.patch) by was created at 2010-03-30 00:47:12
 
 I just checked that all four patches apply fine to sage-4.3.5 still with no rebasing necessary.
 
@@ -207,7 +207,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_047317.json:
 ```json
 {
-    "body": "Attachment\n\nIt turns out that part 2 fixes a *MAJOR* bug in SNF for matrices over ZZ in an edge case.  The doctest in finitely generated modules was just wrong (ouch).    I carefully checked through this with Robert Bradshaw, and posted a patch that updates the doctest.",
+    "body": "Attachment [trac_5969-part5.patch](tarball://root/attachments/some-uuid/ticket5969/trac_5969-part5.patch) by was created at 2010-04-23 23:36:57\n\nIt turns out that part 2 fixes a *MAJOR* bug in SNF for matrices over ZZ in an edge case.  The doctest in finitely generated modules was just wrong (ouch).    I carefully checked through this with Robert Bradshaw, and posted a patch that updates the doctest.",
     "created_at": "2010-04-23T23:36:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5969",
     "type": "issue_comment",
@@ -216,7 +216,7 @@ archive/issue_comments_047317.json:
 }
 ```
 
-Attachment
+Attachment [trac_5969-part5.patch](tarball://root/attachments/some-uuid/ticket5969/trac_5969-part5.patch) by was created at 2010-04-23 23:36:57
 
 It turns out that part 2 fixes a *MAJOR* bug in SNF for matrices over ZZ in an edge case.  The doctest in finitely generated modules was just wrong (ouch).    I carefully checked through this with Robert Bradshaw, and posted a patch that updates the doctest.
 

@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1716
 archive/issue_comments_010880.json:
 ```json
 {
-    "body": "Attachment\n\nWorks for me.  I think it would be good to add the other functions as well.",
+    "body": "Attachment [7881.patch](tarball://root/attachments/some-uuid/ticket1716/7881.patch) by mhansen created at 2008-01-15 00:43:33\n\nWorks for me.  I think it would be good to add the other functions as well.",
     "created_at": "2008-01-15T00:43:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1716",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_010880.json:
 }
 ```
 
-Attachment
+Attachment [7881.patch](tarball://root/attachments/some-uuid/ticket1716/7881.patch) by mhansen created at 2008-01-15 00:43:33
 
 Works for me.  I think it would be good to add the other functions as well.
 

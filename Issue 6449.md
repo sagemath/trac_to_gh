@@ -776,7 +776,7 @@ It turns out that the patch thus obtained actually doesn't conflict with any of 
 archive/issue_comments_051860.json:
 ```json
 {
-    "body": "Attachment\n\nQfolded patch. Applies to 4.5.alpha1 with the patches from #9287.",
+    "body": "Attachment [trac_6449_everything.patch](tarball://root/attachments/some-uuid/ticket6449/trac_6449_everything.patch) by davidloeffler created at 2010-07-01 15:21:01\n\nQfolded patch. Applies to 4.5.alpha1 with the patches from #9287.",
     "created_at": "2010-07-01T15:21:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
@@ -785,7 +785,7 @@ archive/issue_comments_051860.json:
 }
 ```
 
-Attachment
+Attachment [trac_6449_everything.patch](tarball://root/attachments/some-uuid/ticket6449/trac_6449_everything.patch) by davidloeffler created at 2010-07-01 15:21:01
 
 Qfolded patch. Applies to 4.5.alpha1 with the patches from #9287.
 
@@ -911,7 +911,7 @@ The folded patch should deal with the first two. I also saw the other two you me
 archive/issue_comments_051865.json:
 ```json
 {
-    "body": "Attachment\n\nApply on top of #9287 and trac_6449_everything.patch",
+    "body": "Attachment [trac_6449_ones_that_got_away.patch](tarball://root/attachments/some-uuid/ticket6449/trac_6449_ones_that_got_away.patch) by davidloeffler created at 2010-07-01 17:36:16\n\nApply on top of #9287 and trac_6449_everything.patch",
     "created_at": "2010-07-01T17:36:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
@@ -920,7 +920,7 @@ archive/issue_comments_051865.json:
 }
 ```
 
-Attachment
+Attachment [trac_6449_ones_that_got_away.patch](tarball://root/attachments/some-uuid/ticket6449/trac_6449_ones_that_got_away.patch) by davidloeffler created at 2010-07-01 17:36:16
 
 Apply on top of #9287 and trac_6449_everything.patch
 
@@ -1024,7 +1024,7 @@ apply instead of previous one
 archive/issue_comments_051870.json:
 ```json
 {
-    "body": "Attachment\n\nOK, I will try that -- in which case we might ignore trac_6449_ones_that_got_away.1.patch which I just uploaded.",
+    "body": "Attachment [trac_6449_ones_that_got_away.1.patch](tarball://root/attachments/some-uuid/ticket6449/trac_6449_ones_that_got_away.1.patch) by cremona created at 2010-07-02 12:01:34\n\nOK, I will try that -- in which case we might ignore trac_6449_ones_that_got_away.1.patch which I just uploaded.",
     "created_at": "2010-07-02T12:01:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
@@ -1033,7 +1033,7 @@ archive/issue_comments_051870.json:
 }
 ```
 
-Attachment
+Attachment [trac_6449_ones_that_got_away.1.patch](tarball://root/attachments/some-uuid/ticket6449/trac_6449_ones_that_got_away.1.patch) by cremona created at 2010-07-02 12:01:34
 
 OK, I will try that -- in which case we might ignore trac_6449_ones_that_got_away.1.patch which I just uploaded.
 
@@ -1282,7 +1282,7 @@ Good point.  David, any chance you could oblige?
 archive/issue_comments_051880.json:
 ```json
 {
-    "body": "Attachment\n\nHere's a patch with the missing doctests. The current situation is that one needs to apply:\n\n- the #9287 patches\n- trac_6449_everything.patch\n- trac_6449_ones_that_got_away.patch\n- trac_6449_more_doctests.patch\n\nIf someone with trac admin rights could delete all the other patches that would be helpful.\n\nDavid",
+    "body": "Attachment [trac_6449_more_doctests.patch](tarball://root/attachments/some-uuid/ticket6449/trac_6449_more_doctests.patch) by davidloeffler created at 2010-07-11 15:15:37\n\nHere's a patch with the missing doctests. The current situation is that one needs to apply:\n\n- the #9287 patches\n- trac_6449_everything.patch\n- trac_6449_ones_that_got_away.patch\n- trac_6449_more_doctests.patch\n\nIf someone with trac admin rights could delete all the other patches that would be helpful.\n\nDavid",
     "created_at": "2010-07-11T15:15:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
@@ -1291,7 +1291,7 @@ archive/issue_comments_051880.json:
 }
 ```
 
-Attachment
+Attachment [trac_6449_more_doctests.patch](tarball://root/attachments/some-uuid/ticket6449/trac_6449_more_doctests.patch) by davidloeffler created at 2010-07-11 15:15:37
 
 Here's a patch with the missing doctests. The current situation is that one needs to apply:
 

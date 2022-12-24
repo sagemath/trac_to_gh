@@ -558,7 +558,7 @@ small patch to sage-doctest in sage_script to reenable sage's deprecation warnin
 archive/issue_comments_099326.json:
 ```json
 {
-    "body": "Attachment\n\nthis form of comparison is removed in python 2.6.5 and later, refreshed using --git.",
+    "body": "Attachment [trac_9958-fix_cmp.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix_cmp.patch) by fbissey created at 2011-04-15 00:16:32\n\nthis form of comparison is removed in python 2.6.5 and later, refreshed using --git.",
     "created_at": "2011-04-15T00:16:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -567,7 +567,7 @@ archive/issue_comments_099326.json:
 }
 ```
 
-Attachment
+Attachment [trac_9958-fix_cmp.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix_cmp.patch) by fbissey created at 2011-04-15 00:16:32
 
 this form of comparison is removed in python 2.6.5 and later, refreshed using --git.
 
@@ -791,7 +791,7 @@ I will put the cmp patch in its own ticket would you review it?
 archive/issue_comments_099334.json:
 ```json
 {
-    "body": "Attachment\n\nfix numerical noise part 1",
+    "body": "Attachment [trac_9958-fixing_numericalnoise-part1.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_numericalnoise-part1.patch) by fbissey created at 2011-04-28 03:19:06\n\nfix numerical noise part 1",
     "created_at": "2011-04-28T03:19:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -800,7 +800,7 @@ archive/issue_comments_099334.json:
 }
 ```
 
-Attachment
+Attachment [trac_9958-fixing_numericalnoise-part1.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_numericalnoise-part1.patch) by fbissey created at 2011-04-28 03:19:06
 
 fix numerical noise part 1
 
@@ -811,7 +811,7 @@ fix numerical noise part 1
 archive/issue_comments_099335.json:
 ```json
 {
-    "body": "Attachment\n\nfix numerical noise part 3",
+    "body": "Attachment [trac_9958-fixing_numericalnoise-part3.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_numericalnoise-part3.patch) by fbissey created at 2011-04-28 03:19:37\n\nfix numerical noise part 3",
     "created_at": "2011-04-28T03:19:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -820,7 +820,7 @@ archive/issue_comments_099335.json:
 }
 ```
 
-Attachment
+Attachment [trac_9958-fixing_numericalnoise-part3.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_numericalnoise-part3.patch) by fbissey created at 2011-04-28 03:19:37
 
 fix numerical noise part 3
 
@@ -849,7 +849,7 @@ fix numerical noise part 4: the forgotten bits
 archive/issue_comments_099337.json:
 ```json
 {
-    "body": "Attachment\n\n49 failures in colors.py, numerical noise except one.",
+    "body": "Attachment [trac_9958-fixing_colorspy.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_colorspy.patch) by fbissey created at 2011-04-28 03:20:37\n\n49 failures in colors.py, numerical noise except one.",
     "created_at": "2011-04-28T03:20:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -858,7 +858,7 @@ archive/issue_comments_099337.json:
 }
 ```
 
-Attachment
+Attachment [trac_9958-fixing_colorspy.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_colorspy.patch) by fbissey created at 2011-04-28 03:20:37
 
 49 failures in colors.py, numerical noise except one.
 
@@ -869,7 +869,7 @@ Attachment
 archive/issue_comments_099338.json:
 ```json
 {
-    "body": "Attachment\n\nfix the element reported by list index",
+    "body": "Attachment [trac_9958-fix-list_index.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix-list_index.patch) by fbissey created at 2011-04-28 03:21:13\n\nfix the element reported by list index",
     "created_at": "2011-04-28T03:21:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -878,7 +878,7 @@ archive/issue_comments_099338.json:
 }
 ```
 
-Attachment
+Attachment [trac_9958-fix-list_index.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix-list_index.patch) by fbissey created at 2011-04-28 03:21:13
 
 fix the element reported by list index
 
@@ -907,7 +907,7 @@ odds and ends missed in the other patches
 archive/issue_comments_099340.json:
 ```json
 {
-    "body": "Attachment\n\nI have attached some patches to fix all the noise for numerics and formatting changes. What's left should be looked at before patching.\n\nThere are several failures because hashes have changed but I cannot say it is allright to just change the doctest:\n\n```\nsage -t -long -force_lib \"devel/sage-main/sage/rings/padics/padic_capped_relative_element.pyx\"\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/rings/padics/padic_capped_relative_element.pyx\", line 2339:\n    sage: hash(R(-1)) \nExpected:\n    95367431640624\nGot:\n    1977800240\n**********************************************************************\n```\n\n\n\n```\nsage -t -long -force_lib \"devel/sage-main/sage/rings/integer.pyx\"\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/rings/integer.pyx\", line 2995:\n    sage: n = -920390823904823094890238490238484; n.__hash__()                                                                      \nExpected:                                                                                                                           \n    6874330978542788722                                                                                                             \nGot:                                                                                                                                \n    -2623069716                                                                                                                     \n**********************************************************************                                                              \nFile \"/usr/share/sage/devel/sage-main/sage/rings/integer.pyx\", line 3010:                                                           \n    sage: hash(n)                                                                                                                   \nExpected:                                                                                                                           \n    -9223372036854767616                                                                                                            \nGot:                                                                                                                                \n    8192                                                                                                                            \n**********************************************************************                                                              \nFile \"/usr/share/sage/devel/sage-main/sage/rings/integer.pyx\", line 3013:                                                           \n    sage: hash(n) == hash(int(n))                                                                                                   \nExpected:                                                                                                                           \n    True\nGot:\n    False\n**********************************************************************\n```\n\nThat hash(n) == hash(int(n)) is now false should be looked into carefully.\n\n```\nsage -t -long -force_lib \"devel/sage-main/sage/combinat/words/nfactor_enumerable_word.py\"\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/combinat/words/nfactor_enumerable_word.py\", line 20:\n    sage: it.next()\nExpected:\n    word: 6456\nGot:\n    word: 5645\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/combinat/words/nfactor_enumerable_word.py\", line 22:\n    sage: it.next()\nExpected:\n    word: 5645\nGot:\n    word: 6456\n**********************************************************************\n```\n\nI think that one is OK, just a change of order but a second opinion would be nice.\n\nFinally there are still three tests killed in libsingular's id_delete because a ring has been garbage collected even so there are some precautions in place for it:\n[http://groups.google.com/group/sage-devel/browse_thread/thread/8c165c887d6b9e54](http://groups.google.com/group/sage-devel/browse_thread/thread/8c165c887d6b9e54)\n\nNext we need an updated python spkg so that more people can play and even try the patchbot on it.",
+    "body": "Attachment [trac_9958-mixedfix.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-mixedfix.patch) by fbissey created at 2011-04-28 03:33:17\n\nI have attached some patches to fix all the noise for numerics and formatting changes. What's left should be looked at before patching.\n\nThere are several failures because hashes have changed but I cannot say it is allright to just change the doctest:\n\n```\nsage -t -long -force_lib \"devel/sage-main/sage/rings/padics/padic_capped_relative_element.pyx\"\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/rings/padics/padic_capped_relative_element.pyx\", line 2339:\n    sage: hash(R(-1)) \nExpected:\n    95367431640624\nGot:\n    1977800240\n**********************************************************************\n```\n\n\n\n```\nsage -t -long -force_lib \"devel/sage-main/sage/rings/integer.pyx\"\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/rings/integer.pyx\", line 2995:\n    sage: n = -920390823904823094890238490238484; n.__hash__()                                                                      \nExpected:                                                                                                                           \n    6874330978542788722                                                                                                             \nGot:                                                                                                                                \n    -2623069716                                                                                                                     \n**********************************************************************                                                              \nFile \"/usr/share/sage/devel/sage-main/sage/rings/integer.pyx\", line 3010:                                                           \n    sage: hash(n)                                                                                                                   \nExpected:                                                                                                                           \n    -9223372036854767616                                                                                                            \nGot:                                                                                                                                \n    8192                                                                                                                            \n**********************************************************************                                                              \nFile \"/usr/share/sage/devel/sage-main/sage/rings/integer.pyx\", line 3013:                                                           \n    sage: hash(n) == hash(int(n))                                                                                                   \nExpected:                                                                                                                           \n    True\nGot:\n    False\n**********************************************************************\n```\n\nThat hash(n) == hash(int(n)) is now false should be looked into carefully.\n\n```\nsage -t -long -force_lib \"devel/sage-main/sage/combinat/words/nfactor_enumerable_word.py\"\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/combinat/words/nfactor_enumerable_word.py\", line 20:\n    sage: it.next()\nExpected:\n    word: 6456\nGot:\n    word: 5645\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/combinat/words/nfactor_enumerable_word.py\", line 22:\n    sage: it.next()\nExpected:\n    word: 5645\nGot:\n    word: 6456\n**********************************************************************\n```\n\nI think that one is OK, just a change of order but a second opinion would be nice.\n\nFinally there are still three tests killed in libsingular's id_delete because a ring has been garbage collected even so there are some precautions in place for it:\n[http://groups.google.com/group/sage-devel/browse_thread/thread/8c165c887d6b9e54](http://groups.google.com/group/sage-devel/browse_thread/thread/8c165c887d6b9e54)\n\nNext we need an updated python spkg so that more people can play and even try the patchbot on it.",
     "created_at": "2011-04-28T03:33:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -916,7 +916,7 @@ archive/issue_comments_099340.json:
 }
 ```
 
-Attachment
+Attachment [trac_9958-mixedfix.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-mixedfix.patch) by fbissey created at 2011-04-28 03:33:17
 
 I have attached some patches to fix all the noise for numerics and formatting changes. What's left should be looked at before patching.
 
@@ -1330,7 +1330,7 @@ Not strictly necessary but this file needed a scrub. (refreshed for syntax error
 archive/issue_comments_099358.json:
 ```json
 {
-    "body": "Attachment\n\nHad to redo trac_9958-build_module_listpy.patch again as I messed up the syntax of one bit.",
+    "body": "Attachment [trac_9958-build_module_listpy.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-build_module_listpy.patch) by fbissey created at 2011-05-22 12:33:24\n\nHad to redo trac_9958-build_module_listpy.patch again as I messed up the syntax of one bit.",
     "created_at": "2011-05-22T12:33:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -1339,7 +1339,7 @@ archive/issue_comments_099358.json:
 }
 ```
 
-Attachment
+Attachment [trac_9958-build_module_listpy.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-build_module_listpy.patch) by fbissey created at 2011-05-22 12:33:24
 
 Had to redo trac_9958-build_module_listpy.patch again as I messed up the syntax of one bit.
 
@@ -1654,7 +1654,7 @@ let's not forget the hardcoded version of python in SConstruct for sage_clib
 archive/issue_comments_099370.json:
 ```json
 {
-    "body": "Attachment\n\nI have updated trac_9958-build-sage_clib.patch it could now be splited in its own ticket. It enables sage-clib to be smarter about the python version used. It would figure it on its own. I am looking at doing the same for setup.py, anyone would review that in its own ticket? Once in, we could at least build sage against python2.6 or 2.7 without changes.",
+    "body": "Attachment [trac_9958-build-sage_clib.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-build-sage_clib.patch) by fbissey created at 2011-05-24 03:34:43\n\nI have updated trac_9958-build-sage_clib.patch it could now be splited in its own ticket. It enables sage-clib to be smarter about the python version used. It would figure it on its own. I am looking at doing the same for setup.py, anyone would review that in its own ticket? Once in, we could at least build sage against python2.6 or 2.7 without changes.",
     "created_at": "2011-05-24T03:34:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -1663,7 +1663,7 @@ archive/issue_comments_099370.json:
 }
 ```
 
-Attachment
+Attachment [trac_9958-build-sage_clib.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-build-sage_clib.patch) by fbissey created at 2011-05-24 03:34:43
 
 I have updated trac_9958-build-sage_clib.patch it could now be splited in its own ticket. It enables sage-clib to be smarter about the python version used. It would figure it on its own. I am looking at doing the same for setup.py, anyone would review that in its own ticket? Once in, we could at least build sage against python2.6 or 2.7 without changes.
 
@@ -1692,7 +1692,7 @@ change needed in setup.py made it python version smart. I also scrubbed the debi
 archive/issue_comments_099372.json:
 ```json
 {
-    "body": "Attachment\n\nOK I also made setup.py python version smart any volunteer to review a separate ticket?",
+    "body": "Attachment [trac_9958-build_setuppy.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-build_setuppy.patch) by fbissey created at 2011-05-24 03:45:38\n\nOK I also made setup.py python version smart any volunteer to review a separate ticket?",
     "created_at": "2011-05-24T03:45:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -1701,7 +1701,7 @@ archive/issue_comments_099372.json:
 }
 ```
 
-Attachment
+Attachment [trac_9958-build_setuppy.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-build_setuppy.patch) by fbissey created at 2011-05-24 03:45:38
 
 OK I also made setup.py python version smart any volunteer to review a separate ticket?
 
@@ -1776,7 +1776,7 @@ If the spkg you have is not this could you download again and see if that fixed 
 archive/issue_comments_099375.json:
 ```json
 {
-    "body": "Attachment\n\nSome minor changes. The biggest change is to the doctest which explicitly refereed to python2.6 also we have extra include folders in a doctest apparently. [updated 20110525]",
+    "body": "Attachment [trac_9958-build_misc_cythonpy.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-build_misc_cythonpy.patch) by fbissey created at 2011-05-25 01:01:06\n\nSome minor changes. The biggest change is to the doctest which explicitly refereed to python2.6 also we have extra include folders in a doctest apparently. [updated 20110525]",
     "created_at": "2011-05-25T01:01:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -1785,7 +1785,7 @@ archive/issue_comments_099375.json:
 }
 ```
 
-Attachment
+Attachment [trac_9958-build_misc_cythonpy.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-build_misc_cythonpy.patch) by fbissey created at 2011-05-25 01:01:06
 
 Some minor changes. The biggest change is to the doctest which explicitly refereed to python2.6 also we have extra include folders in a doctest apparently. [updated 20110525]
 
@@ -2020,7 +2020,7 @@ fix doctest in sage/misc/cython.py, needs to be applied after #11376.
 archive/issue_comments_099385.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated trac_9958-fix-misc_cythonpy.patch to take into account changes in #11376. For some reason the numpy include line appears after the application of the other patches over there. Why it didn't appear before is a mistery.",
+    "body": "Attachment [trac_9958-fix-misc_cythonpy.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix-misc_cythonpy.patch) by fbissey created at 2011-06-14 13:36:27\n\nUpdated trac_9958-fix-misc_cythonpy.patch to take into account changes in #11376. For some reason the numpy include line appears after the application of the other patches over there. Why it didn't appear before is a mistery.",
     "created_at": "2011-06-14T13:36:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -2029,7 +2029,7 @@ archive/issue_comments_099385.json:
 }
 ```
 
-Attachment
+Attachment [trac_9958-fix-misc_cythonpy.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix-misc_cythonpy.patch) by fbissey created at 2011-06-14 13:36:27
 
 Updated trac_9958-fix-misc_cythonpy.patch to take into account changes in #11376. For some reason the numpy include line appears after the application of the other patches over there. Why it didn't appear before is a mistery.
 
@@ -2208,7 +2208,7 @@ fix numerical noise part 2 (refreshed against 4.7.1.alpha3 -20110625)
 archive/issue_comments_099391.json:
 ```json
 {
-    "body": "Attachment\n\nOK. There are a few more patches needed for numerical and formatting noise in 4.7.2.alpha1 but now anyone should be able to upgrade python without a premade sage spkg. All fixes to be able to build sage against python-2.7 out of the box are in!",
+    "body": "Attachment [trac_9958-fixing_numericalnoise-part2.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_numericalnoise-part2.patch) by fbissey created at 2011-08-23 22:04:02\n\nOK. There are a few more patches needed for numerical and formatting noise in 4.7.2.alpha1 but now anyone should be able to upgrade python without a premade sage spkg. All fixes to be able to build sage against python-2.7 out of the box are in!",
     "created_at": "2011-08-23T22:04:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -2217,7 +2217,7 @@ archive/issue_comments_099391.json:
 }
 ```
 
-Attachment
+Attachment [trac_9958-fixing_numericalnoise-part2.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_numericalnoise-part2.patch) by fbissey created at 2011-08-23 22:04:02
 
 OK. There are a few more patches needed for numerical and formatting noise in 4.7.2.alpha1 but now anyone should be able to upgrade python without a premade sage spkg. All fixes to be able to build sage against python-2.7 out of the box are in!
 
@@ -2539,7 +2539,7 @@ I am wrong! Not maxima or pari, there is a patch for it in [attachment:trac_9958
 archive/issue_comments_099403.json:
 ```json
 {
-    "body": "Attachment\n\nfix numerical noise in e_one_star.py",
+    "body": "Attachment [trac_9958-e_one_star.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-e_one_star.patch) by fbissey created at 2011-08-26 03:22:20\n\nfix numerical noise in e_one_star.py",
     "created_at": "2011-08-26T03:22:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -2548,7 +2548,7 @@ archive/issue_comments_099403.json:
 }
 ```
 
-Attachment
+Attachment [trac_9958-e_one_star.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-e_one_star.patch) by fbissey created at 2011-08-26 03:22:20
 
 fix numerical noise in e_one_star.py
 
@@ -2577,7 +2577,7 @@ fix error message in finite_crystals.py
 archive/issue_comments_099405.json:
 ```json
 {
-    "body": "Attachment\n\nfix error message in symbolics/callable.py",
+    "body": "Attachment [trac_9958-finite_crystals.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-finite_crystals.patch) by fbissey created at 2011-08-26 03:23:18\n\nfix error message in symbolics/callable.py",
     "created_at": "2011-08-26T03:23:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -2586,7 +2586,7 @@ archive/issue_comments_099405.json:
 }
 ```
 
-Attachment
+Attachment [trac_9958-finite_crystals.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-finite_crystals.patch) by fbissey created at 2011-08-26 03:23:18
 
 fix error message in symbolics/callable.py
 
@@ -2597,7 +2597,7 @@ fix error message in symbolics/callable.py
 archive/issue_comments_099406.json:
 ```json
 {
-    "body": "Attachment\n\nAdded three new patches. I will rework the patches that need adjusting between 32 and 64 bits next.",
+    "body": "Attachment [trac_9958-symbolic_callable.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-symbolic_callable.patch) by fbissey created at 2011-08-26 03:25:46\n\nAdded three new patches. I will rework the patches that need adjusting between 32 and 64 bits next.",
     "created_at": "2011-08-26T03:25:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -2606,7 +2606,7 @@ archive/issue_comments_099406.json:
 }
 ```
 
-Attachment
+Attachment [trac_9958-symbolic_callable.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-symbolic_callable.patch) by fbissey created at 2011-08-26 03:25:46
 
 Added three new patches. I will rework the patches that need adjusting between 32 and 64 bits next.
 
@@ -3037,7 +3037,7 @@ Attaching short logs of rerun tests (all reproducable)...
 archive/issue_comments_099418.json:
 ```json
 {
-    "body": "Attachment\n\nPentium4 Prescott (SSE3 / PNI, 32-bit), GCC 4.5.1, native code, `-mfpmath=sse`, Ubuntu 9.04 x86",
+    "body": "Attachment [Doctest_failures_Sage-4.7.2.alpha2_Linux_x86_SSE3-individual_tests_rerun.log](tarball://root/attachments/some-uuid/ticket9958/Doctest_failures_Sage-4.7.2.alpha2_Linux_x86_SSE3-individual_tests_rerun.log) by leif created at 2011-08-29 03:42:04\n\nPentium4 Prescott (SSE3 / PNI, 32-bit), GCC 4.5.1, native code, `-mfpmath=sse`, Ubuntu 9.04 x86",
     "created_at": "2011-08-29T03:42:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -3046,7 +3046,7 @@ archive/issue_comments_099418.json:
 }
 ```
 
-Attachment
+Attachment [Doctest_failures_Sage-4.7.2.alpha2_Linux_x86_SSE3-individual_tests_rerun.log](tarball://root/attachments/some-uuid/ticket9958/Doctest_failures_Sage-4.7.2.alpha2_Linux_x86_SSE3-individual_tests_rerun.log) by leif created at 2011-08-29 03:42:04
 
 Pentium4 Prescott (SSE3 / PNI, 32-bit), GCC 4.5.1, native code, `-mfpmath=sse`, Ubuntu 9.04 x86
 
@@ -3075,7 +3075,7 @@ Pentium4 Prescott (SSE3 / PNI, 32-bit), GCC 4.5.1, native code, -mfpmath=sse, Ub
 archive/issue_comments_099420.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:99 leif]:\n> Attaching short logs of rerun tests (all reproducable)...\n\nDone.\n\nHaha, the first segfault is an especially nice one:\n\n```\n...\n  10 tests in __main__.example_7\n   6 tests in __main__.example_8\n   7 tests in __main__.example_9\n511 tests in 55 items.\n511 passed and 0 failed.\nTest passed.\nSegmentation fault\n\t [9.8 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long -verbose \"devel/sage/sage/rings/morphism.pyx\"\nTotal time for all tests: 9.8 seconds\n\nreal\t0m10.013s\nuser\t0m6.980s\nsys\t0m1.068s\n```\n",
+    "body": "Attachment [Doctest_failures_Sage-4.7.2.alpha2_Linux_x86_SSE3-individual_tests_rerun-segfaults-verbose.log](tarball://root/attachments/some-uuid/ticket9958/Doctest_failures_Sage-4.7.2.alpha2_Linux_x86_SSE3-individual_tests_rerun-segfaults-verbose.log) by leif created at 2011-08-29 04:35:45\n\nReplying to [comment:99 leif]:\n> Attaching short logs of rerun tests (all reproducable)...\n\nDone.\n\nHaha, the first segfault is an especially nice one:\n\n```\n...\n  10 tests in __main__.example_7\n   6 tests in __main__.example_8\n   7 tests in __main__.example_9\n511 tests in 55 items.\n511 passed and 0 failed.\nTest passed.\nSegmentation fault\n\t [9.8 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long -verbose \"devel/sage/sage/rings/morphism.pyx\"\nTotal time for all tests: 9.8 seconds\n\nreal\t0m10.013s\nuser\t0m6.980s\nsys\t0m1.068s\n```\n",
     "created_at": "2011-08-29T04:35:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -3084,7 +3084,7 @@ archive/issue_comments_099420.json:
 }
 ```
 
-Attachment
+Attachment [Doctest_failures_Sage-4.7.2.alpha2_Linux_x86_SSE3-individual_tests_rerun-segfaults-verbose.log](tarball://root/attachments/some-uuid/ticket9958/Doctest_failures_Sage-4.7.2.alpha2_Linux_x86_SSE3-individual_tests_rerun-segfaults-verbose.log) by leif created at 2011-08-29 04:35:45
 
 Replying to [comment:99 leif]:
 > Attaching short logs of rerun tests (all reproducable)...
@@ -3396,7 +3396,7 @@ fixing numerical noise part 1 - updated 20110830
 archive/issue_comments_099430.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated the first patch for polyhedra.py, split transcendental.py in its own patch. I lowered the precision tested in the last numbers so that results from 32 and 64 bits are not different.",
+    "body": "Attachment [trac_9958-fixing_numericalnoise-part1_p1.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_numericalnoise-part1_p1.patch) by fbissey created at 2011-08-29 19:59:36\n\nUpdated the first patch for polyhedra.py, split transcendental.py in its own patch. I lowered the precision tested in the last numbers so that results from 32 and 64 bits are not different.",
     "created_at": "2011-08-29T19:59:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -3405,7 +3405,7 @@ archive/issue_comments_099430.json:
 }
 ```
 
-Attachment
+Attachment [trac_9958-fixing_numericalnoise-part1_p1.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_numericalnoise-part1_p1.patch) by fbissey created at 2011-08-29 19:59:36
 
 Updated the first patch for polyhedra.py, split transcendental.py in its own patch. I lowered the precision tested in the last numbers so that results from 32 and 64 bits are not different.
 
@@ -3505,7 +3505,7 @@ In polyhedra.py it looks like you have a problem with jmol printing 3D images to
 archive/issue_comments_099434.json:
 ```json
 {
-    "body": "Attachment\n\nfix some 32/64 bits messages",
+    "body": "Attachment [trac_9958-32_64bit_messages.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-32_64bit_messages.patch) by fbissey created at 2011-08-29 23:04:30\n\nfix some 32/64 bits messages",
     "created_at": "2011-08-29T23:04:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -3514,7 +3514,7 @@ archive/issue_comments_099434.json:
 }
 ```
 
-Attachment
+Attachment [trac_9958-32_64bit_messages.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-32_64bit_messages.patch) by fbissey created at 2011-08-29 23:04:30
 
 fix some 32/64 bits messages
 
@@ -3543,7 +3543,7 @@ all fixes to real_mpfr.pyx split from everything else
 archive/issue_comments_099436.json:
 ```json
 {
-    "body": "Attachment\n\nsplit real_mpfr.pyx from the mixed fixes patch",
+    "body": "Attachment [trac_9958-fix-real_mpfr.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix-real_mpfr.patch) by fbissey created at 2011-08-29 23:05:49\n\nsplit real_mpfr.pyx from the mixed fixes patch",
     "created_at": "2011-08-29T23:05:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -3552,7 +3552,7 @@ archive/issue_comments_099436.json:
 }
 ```
 
-Attachment
+Attachment [trac_9958-fix-real_mpfr.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix-real_mpfr.patch) by fbissey created at 2011-08-29 23:05:49
 
 split real_mpfr.pyx from the mixed fixes patch
 
@@ -3563,7 +3563,7 @@ split real_mpfr.pyx from the mixed fixes patch
 archive/issue_comments_099437.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated the patch set again. split real_mpfr.pyx from the mixedfix patch. The 32/64 bits issues reported is separate from the message that was already patched. Added a patch to fix 32/64 bit messages.",
+    "body": "Attachment [trac_9958-mixedfix_p1.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-mixedfix_p1.patch) by fbissey created at 2011-08-29 23:09:33\n\nUpdated the patch set again. split real_mpfr.pyx from the mixedfix patch. The 32/64 bits issues reported is separate from the message that was already patched. Added a patch to fix 32/64 bit messages.",
     "created_at": "2011-08-29T23:09:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -3572,7 +3572,7 @@ archive/issue_comments_099437.json:
 }
 ```
 
-Attachment
+Attachment [trac_9958-mixedfix_p1.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-mixedfix_p1.patch) by fbissey created at 2011-08-29 23:09:33
 
 Updated the patch set again. split real_mpfr.pyx from the mixedfix patch. The 32/64 bits issues reported is separate from the message that was already patched. Added a patch to fix 32/64 bit messages.
 
@@ -3725,7 +3725,7 @@ It's my fault for not noticing this difference between 32 and 64 bit results. It
 archive/issue_comments_099441.json:
 ```json
 {
-    "body": "Attachment\n\nfixing numerical noise in transcendental.py- split from numerical noise pt1 - updated 2011092",
+    "body": "Attachment [trac_9958-fix_transcendental.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix_transcendental.patch) by fbissey created at 2011-09-01 23:36:57\n\nfixing numerical noise in transcendental.py- split from numerical noise pt1 - updated 2011092",
     "created_at": "2011-09-01T23:36:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -3734,7 +3734,7 @@ archive/issue_comments_099441.json:
 }
 ```
 
-Attachment
+Attachment [trac_9958-fix_transcendental.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix_transcendental.patch) by fbissey created at 2011-09-01 23:36:57
 
 fixing numerical noise in transcendental.py- split from numerical noise pt1 - updated 2011092
 
@@ -4186,7 +4186,7 @@ Fix doctest in matrix_double_dense.pyx about junk
 archive/issue_comments_099455.json:
 ```json
 {
-    "body": "Attachment\n\nNew patch to fix the message about junk.",
+    "body": "Attachment [trac_9958_junk_valueerror.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958_junk_valueerror.patch) by fbissey created at 2011-11-02 22:38:55\n\nNew patch to fix the message about junk.",
     "created_at": "2011-11-02T22:38:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -4195,7 +4195,7 @@ archive/issue_comments_099455.json:
 }
 ```
 
-Attachment
+Attachment [trac_9958_junk_valueerror.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958_junk_valueerror.patch) by fbissey created at 2011-11-02 22:38:55
 
 New patch to fix the message about junk.
 
@@ -4242,7 +4242,7 @@ fix the doctest on enumeration order for 64bit system
 archive/issue_comments_099458.json:
 ```json
 {
-    "body": "Attachment\n\nOne more patch added to fix combinat/words/nfactor_enumerable_word.py on 64 bit system. I believe is output is equivalent in both case so it is not important.",
+    "body": "Attachment [trac_9958_enumerate64bit.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958_enumerate64bit.patch) by fbissey created at 2011-11-03 02:15:25\n\nOne more patch added to fix combinat/words/nfactor_enumerable_word.py on 64 bit system. I believe is output is equivalent in both case so it is not important.",
     "created_at": "2011-11-03T02:15:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -4251,7 +4251,7 @@ archive/issue_comments_099458.json:
 }
 ```
 
-Attachment
+Attachment [trac_9958_enumerate64bit.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958_enumerate64bit.patch) by fbissey created at 2011-11-03 02:15:25
 
 One more patch added to fix combinat/words/nfactor_enumerable_word.py on 64 bit system. I believe is output is equivalent in both case so it is not important.
 
@@ -4876,7 +4876,7 @@ fix pure assertErrors failures - updated for python-2.7.2
 archive/issue_comments_099475.json:
 ```json
 {
-    "body": "Attachment\n\nfix sage_unittest.py failures - updated for python-2.7.2",
+    "body": "Attachment [trac_9958-fix-pureAssertError.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix-pureAssertError.patch) by fbissey created at 2011-11-24 21:34:44\n\nfix sage_unittest.py failures - updated for python-2.7.2",
     "created_at": "2011-11-24T21:34:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -4885,7 +4885,7 @@ archive/issue_comments_099475.json:
 }
 ```
 
-Attachment
+Attachment [trac_9958-fix-pureAssertError.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix-pureAssertError.patch) by fbissey created at 2011-11-24 21:34:44
 
 fix sage_unittest.py failures - updated for python-2.7.2
 
@@ -4896,7 +4896,7 @@ fix sage_unittest.py failures - updated for python-2.7.2
 archive/issue_comments_099476.json:
 ```json
 {
-    "body": "Attachment\n\nPatch set updated for python-2.7.2.",
+    "body": "Attachment [trac_9958-sage_unittest.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-sage_unittest.patch) by fbissey created at 2011-11-24 21:35:26\n\nPatch set updated for python-2.7.2.",
     "created_at": "2011-11-24T21:35:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -4905,7 +4905,7 @@ archive/issue_comments_099476.json:
 }
 ```
 
-Attachment
+Attachment [trac_9958-sage_unittest.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-sage_unittest.patch) by fbissey created at 2011-11-24 21:35:26
 
 Patch set updated for python-2.7.2.
 
@@ -5844,7 +5844,7 @@ fixing numerical noise part 1 - updated for 4.8.alpha3
 archive/issue_comments_099507.json:
 ```json
 {
-    "body": "Attachment\n\nupdated the first patch and readded the transcendental patch to the list.",
+    "body": "Attachment [trac_9958-fixing_numericalnoise-part1_p2.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_numericalnoise-part1_p2.patch) by fbissey created at 2011-12-06 00:55:47\n\nupdated the first patch and readded the transcendental patch to the list.",
     "created_at": "2011-12-06T00:55:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -5853,7 +5853,7 @@ archive/issue_comments_099507.json:
 }
 ```
 
-Attachment
+Attachment [trac_9958-fixing_numericalnoise-part1_p2.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_numericalnoise-part1_p2.patch) by fbissey created at 2011-12-06 00:55:47
 
 updated the first patch and readded the transcendental patch to the list.
 
@@ -5889,7 +5889,7 @@ If we add that I don't see it on OS X x86 that looks bad. I also have an x86_64 
 archive/issue_comments_099509.json:
 ```json
 {
-    "body": "Attachment\n\nfix numerical noise in gsl/integration.pyx",
+    "body": "Attachment [trac_9958-gsl_integration.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-gsl_integration.patch) by fbissey created at 2011-12-06 01:37:15\n\nfix numerical noise in gsl/integration.pyx",
     "created_at": "2011-12-06T01:37:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -5898,7 +5898,7 @@ archive/issue_comments_099509.json:
 }
 ```
 
-Attachment
+Attachment [trac_9958-gsl_integration.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-gsl_integration.patch) by fbissey created at 2011-12-06 01:37:15
 
 fix numerical noise in gsl/integration.pyx
 
@@ -5909,7 +5909,7 @@ fix numerical noise in gsl/integration.pyx
 archive/issue_comments_099510.json:
 ```json
 {
-    "body": "Attachment\n\nfix numerical noise introduced by m4rie",
+    "body": "Attachment [trac_9958-matrix_mod2e_dense.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-matrix_mod2e_dense.patch) by fbissey created at 2011-12-06 01:38:34\n\nfix numerical noise introduced by m4rie",
     "created_at": "2011-12-06T01:38:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -5918,7 +5918,7 @@ archive/issue_comments_099510.json:
 }
 ```
 
-Attachment
+Attachment [trac_9958-matrix_mod2e_dense.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-matrix_mod2e_dense.patch) by fbissey created at 2011-12-06 01:38:34
 
 fix numerical noise introduced by m4rie
 
@@ -5965,7 +5965,7 @@ Rebased the spkg against #12096.
 archive/issue_comments_099513.json:
 ```json
 {
-    "body": "Attachment\n\nDiff for the Python spkg, for review only",
+    "body": "Attachment [python-2.6.4.p12-2.7.2.p0.diff](tarball://root/attachments/some-uuid/ticket9958/python-2.6.4.p12-2.7.2.p0.diff) by jdemeyer created at 2011-12-06 08:43:21\n\nDiff for the Python spkg, for review only",
     "created_at": "2011-12-06T08:43:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -5974,7 +5974,7 @@ archive/issue_comments_099513.json:
 }
 ```
 
-Attachment
+Attachment [python-2.6.4.p12-2.7.2.p0.diff](tarball://root/attachments/some-uuid/ticket9958/python-2.6.4.p12-2.7.2.p0.diff) by jdemeyer created at 2011-12-06 08:43:21
 
 Diff for the Python spkg, for review only
 
@@ -6285,7 +6285,7 @@ That would be great!  I would love to see this finished in time, such that the n
 archive/issue_comments_099524.json:
 ```json
 {
-    "body": "Attachment\n\ntest against more valid dictionaries in suffix_trees",
+    "body": "Attachment [trac_9958-suffix_trees-variations.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-suffix_trees-variations.patch) by fbissey created at 2011-12-10 22:12:56\n\ntest against more valid dictionaries in suffix_trees",
     "created_at": "2011-12-10T22:12:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -6294,7 +6294,7 @@ archive/issue_comments_099524.json:
 }
 ```
 
-Attachment
+Attachment [trac_9958-suffix_trees-variations.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-suffix_trees-variations.patch) by fbissey created at 2011-12-10 22:12:56
 
 test against more valid dictionaries in suffix_trees
 
@@ -6323,7 +6323,7 @@ fix all numerical noise in randstate
 archive/issue_comments_099526.json:
 ```json
 {
-    "body": "Attachment\n\nfixing numerical noise part 1 - updated 20111211: separate randstate and eis_modn_series",
+    "body": "Attachment [trac_9958-fix_randstate.pyx](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix_randstate.pyx) by fbissey created at 2011-12-10 22:14:55\n\nfixing numerical noise part 1 - updated 20111211: separate randstate and eis_modn_series",
     "created_at": "2011-12-10T22:14:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -6332,7 +6332,7 @@ archive/issue_comments_099526.json:
 }
 ```
 
-Attachment
+Attachment [trac_9958-fix_randstate.pyx](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix_randstate.pyx) by fbissey created at 2011-12-10 22:14:55
 
 fixing numerical noise part 1 - updated 20111211: separate randstate and eis_modn_series
 
@@ -6343,7 +6343,7 @@ fixing numerical noise part 1 - updated 20111211: separate randstate and eis_mod
 archive/issue_comments_099527.json:
 ```json
 {
-    "body": "Attachment\n\nupdating the patch set with a tentative solution for suffix_trees. It may not be exhaustive of all possible answers though. If we are going for it for the next release I can redo the python spkg to fix the lib/lib64 from #12131.\n\nPutting to need review :)",
+    "body": "Attachment [trac_9958-fixing_numericalnoise-part1_p3.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_numericalnoise-part1_p3.patch) by fbissey created at 2011-12-10 22:22:11\n\nupdating the patch set with a tentative solution for suffix_trees. It may not be exhaustive of all possible answers though. If we are going for it for the next release I can redo the python spkg to fix the lib/lib64 from #12131.\n\nPutting to need review :)",
     "created_at": "2011-12-10T22:22:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -6352,7 +6352,7 @@ archive/issue_comments_099527.json:
 }
 ```
 
-Attachment
+Attachment [trac_9958-fixing_numericalnoise-part1_p3.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_numericalnoise-part1_p3.patch) by fbissey created at 2011-12-10 22:22:11
 
 updating the patch set with a tentative solution for suffix_trees. It may not be exhaustive of all possible answers though. If we are going for it for the next release I can redo the python spkg to fix the lib/lib64 from #12131.
 
@@ -6596,7 +6596,7 @@ The last randstate.pyx one is definitely new, I am sure it didn't happen before.
 archive/issue_comments_099536.json:
 ```json
 {
-    "body": "Attachment\n\ntake into account the randomness of it.next sequence of call - put random in the right place this time.",
+    "body": "Attachment [trac_9958-nfactor_enumerable_word-randomness.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-nfactor_enumerable_word-randomness.patch) by fbissey created at 2011-12-11 11:32:22\n\ntake into account the randomness of it.next sequence of call - put random in the right place this time.",
     "created_at": "2011-12-11T11:32:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -6605,7 +6605,7 @@ archive/issue_comments_099536.json:
 }
 ```
 
-Attachment
+Attachment [trac_9958-nfactor_enumerable_word-randomness.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-nfactor_enumerable_word-randomness.patch) by fbissey created at 2011-12-11 11:32:22
 
 take into account the randomness of it.next sequence of call - put random in the right place this time.
 
@@ -6652,7 +6652,7 @@ I missed a line in randstate! And you cut the last digit of the line number Stev
 archive/issue_comments_099539.json:
 ```json
 {
-    "body": "Attachment\n\nfix all numerical noise in randstate",
+    "body": "Attachment [trac_9958-fix_randstate.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix_randstate.patch) by fbissey created at 2011-12-11 11:50:22\n\nfix all numerical noise in randstate",
     "created_at": "2011-12-11T11:50:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -6661,7 +6661,7 @@ archive/issue_comments_099539.json:
 }
 ```
 
-Attachment
+Attachment [trac_9958-fix_randstate.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix_randstate.patch) by fbissey created at 2011-12-11 11:50:22
 
 fix all numerical noise in randstate
 
@@ -6959,7 +6959,7 @@ Fix machine dependant doctest in suffix tree
 archive/issue_comments_099551.json:
 ```json
 {
-    "body": "Attachment\n\n> > > Unfortunately, I'd say it is too early. We need Karl to test it on his old ppc OS X 10.4 mac and a run on solaris is also in order.\n> > Is this all based on 4.8.alpha3?  I can try to do this starting today.  Jeroen might be done before me, though :)\n> Go ahead, I'm currently tackling other beasts...\nOkay, at least everything applies and builds from this and the two other tickets.  (Note that #11986 is listed as a dependency of **and** for #9958.)\n\nSo presumably sometime tomorrow I can report back.  So far six files having tested well...",
+    "body": "Attachment [trac_9958-suffix_trees-variations-sl.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-suffix_trees-variations-sl.patch) by kcrisman created at 2011-12-13 18:23:56\n\n> > > Unfortunately, I'd say it is too early. We need Karl to test it on his old ppc OS X 10.4 mac and a run on solaris is also in order.\n> > Is this all based on 4.8.alpha3?  I can try to do this starting today.  Jeroen might be done before me, though :)\n> Go ahead, I'm currently tackling other beasts...\nOkay, at least everything applies and builds from this and the two other tickets.  (Note that #11986 is listed as a dependency of **and** for #9958.)\n\nSo presumably sometime tomorrow I can report back.  So far six files having tested well...",
     "created_at": "2011-12-13T18:23:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -6968,7 +6968,7 @@ archive/issue_comments_099551.json:
 }
 ```
 
-Attachment
+Attachment [trac_9958-suffix_trees-variations-sl.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-suffix_trees-variations-sl.patch) by kcrisman created at 2011-12-13 18:23:56
 
 > > > Unfortunately, I'd say it is too early. We need Karl to test it on his old ppc OS X 10.4 mac and a run on solaris is also in order.
 > > Is this all based on 4.8.alpha3?  I can try to do this starting today.  Jeroen might be done before me, though :)
@@ -7025,7 +7025,7 @@ OK the upgrade of R in #12057 shipped with 4.8.alpha4 makes a small bit of patch
 archive/issue_comments_099554.json:
 ```json
 {
-    "body": "Attachment\n\nfixing numerical noise part 1 - updated 20111214 for 4.8.alpha4",
+    "body": "Attachment [trac_9958-fixing_numericalnoise-part1_p4.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_numericalnoise-part1_p4.patch) by fbissey created at 2011-12-13 21:11:18\n\nfixing numerical noise part 1 - updated 20111214 for 4.8.alpha4",
     "created_at": "2011-12-13T21:11:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -7034,7 +7034,7 @@ archive/issue_comments_099554.json:
 }
 ```
 
-Attachment
+Attachment [trac_9958-fixing_numericalnoise-part1_p4.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_numericalnoise-part1_p4.patch) by fbissey created at 2011-12-13 21:11:18
 
 fixing numerical noise part 1 - updated 20111214 for 4.8.alpha4
 
@@ -7114,7 +7114,7 @@ I have seen it on my sage-on-gentoo test run but I hadn't tried yet on a vanilla
 archive/issue_comments_099558.json:
 ```json
 {
-    "body": "Attachment\n\nnumerical noise in interface/r.py updated for R-2.14.0",
+    "body": "Attachment [trac_9958_fix_rpy.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958_fix_rpy.patch) by fbissey created at 2011-12-14 03:20:50\n\nnumerical noise in interface/r.py updated for R-2.14.0",
     "created_at": "2011-12-14T03:20:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -7123,7 +7123,7 @@ archive/issue_comments_099558.json:
 }
 ```
 
-Attachment
+Attachment [trac_9958_fix_rpy.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958_fix_rpy.patch) by fbissey created at 2011-12-14 03:20:50
 
 numerical noise in interface/r.py updated for R-2.14.0
 
@@ -8109,7 +8109,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_099600.json:
 ```json
 {
-    "body": "Attachment\n\nDiff for the Python spkg (without deleted files), for review only",
+    "body": "Attachment [python-2.7.2.p0.diff](tarball://root/attachments/some-uuid/ticket9958/python-2.7.2.p0.diff) by jdemeyer created at 2012-01-04 10:40:54\n\nDiff for the Python spkg (without deleted files), for review only",
     "created_at": "2012-01-04T10:40:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -8118,7 +8118,7 @@ archive/issue_comments_099600.json:
 }
 ```
 
-Attachment
+Attachment [python-2.7.2.p0.diff](tarball://root/attachments/some-uuid/ticket9958/python-2.7.2.p0.diff) by jdemeyer created at 2012-01-04 10:40:54
 
 Diff for the Python spkg (without deleted files), for review only
 
@@ -8191,7 +8191,7 @@ Diff for the Python spkg 2.7.2.p0 -> 2.7.2.p1, for review only
 archive/issue_comments_099604.json:
 ```json
 {
-    "body": "Attachment\n\n**positive_review** to the spkg, modulo my changes in the 2.7.2.p1 package.",
+    "body": "Attachment [python-2.7.2.p0-p1.diff](tarball://root/attachments/some-uuid/ticket9958/python-2.7.2.p0-p1.diff) by jdemeyer created at 2012-01-04 19:08:56\n\n**positive_review** to the spkg, modulo my changes in the 2.7.2.p1 package.",
     "created_at": "2012-01-04T19:08:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -8200,7 +8200,7 @@ archive/issue_comments_099604.json:
 }
 ```
 
-Attachment
+Attachment [python-2.7.2.p0-p1.diff](tarball://root/attachments/some-uuid/ticket9958/python-2.7.2.p0-p1.diff) by jdemeyer created at 2012-01-04 19:08:56
 
 **positive_review** to the spkg, modulo my changes in the 2.7.2.p1 package.
 
@@ -8229,7 +8229,7 @@ Looks good to me. I didn't notice I missed a patch in the stuff I removed. Anywa
 archive/issue_comments_099606.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9958_float_printing.patch](tarball://root/attachments/some-uuid/ticket9958/9958_float_printing.patch) by jdemeyer created at 2012-01-05 15:13:20",
     "created_at": "2012-01-05T15:13:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -8238,7 +8238,7 @@ archive/issue_comments_099606.json:
 }
 ```
 
-Attachment
+Attachment [9958_float_printing.patch](tarball://root/attachments/some-uuid/ticket9958/9958_float_printing.patch) by jdemeyer created at 2012-01-05 15:13:20
 
 
 
@@ -8247,7 +8247,7 @@ Attachment
 archive/issue_comments_099607.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9958_exceptions.patch](tarball://root/attachments/some-uuid/ticket9958/9958_exceptions.patch) by jdemeyer created at 2012-01-05 15:13:41",
     "created_at": "2012-01-05T15:13:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -8256,7 +8256,7 @@ archive/issue_comments_099607.json:
 }
 ```
 
-Attachment
+Attachment [9958_exceptions.patch](tarball://root/attachments/some-uuid/ticket9958/9958_exceptions.patch) by jdemeyer created at 2012-01-05 15:13:41
 
 
 
@@ -8265,7 +8265,7 @@ Attachment
 archive/issue_comments_099608.json:
 ```json
 {
-    "body": "Attachment\n\nFolded all the patches into only four patches.",
+    "body": "Attachment [9958_misc.patch](tarball://root/attachments/some-uuid/ticket9958/9958_misc.patch) by jdemeyer created at 2012-01-05 15:15:49\n\nFolded all the patches into only four patches.",
     "created_at": "2012-01-05T15:15:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -8274,7 +8274,7 @@ archive/issue_comments_099608.json:
 }
 ```
 
-Attachment
+Attachment [9958_misc.patch](tarball://root/attachments/some-uuid/ticket9958/9958_misc.patch) by jdemeyer created at 2012-01-05 15:15:49
 
 Folded all the patches into only four patches.
 
@@ -8424,7 +8424,7 @@ I overlooked that patch, it was not in the list of patches to be applied.  I agr
 archive/issue_comments_099616.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:279 jdemeyer]:\n> Replying to [comment:277 fbissey]:\n> > I didn't notice you had listed this particular patch. Why not use [attachment:trac_9958-suffix_trees-variations-sl.patch] from S\u00e9bastien Labb\u00e9 instead? It is more foolproof.\n> I overlooked that patch, it was not in the list of patches to be applied.  I agree it is better.\n\nIt was [http://trac.sagemath.org/sage_trac/ticket/9958?action=diff&version=273](http://trac.sagemath.org/sage_trac/ticket/9958?action=diff&version=273) but never mind we have it now.",
+    "body": "Attachment [9958_combinat.patch](tarball://root/attachments/some-uuid/ticket9958/9958_combinat.patch) by fbissey created at 2012-01-05 22:45:32\n\nReplying to [comment:279 jdemeyer]:\n> Replying to [comment:277 fbissey]:\n> > I didn't notice you had listed this particular patch. Why not use [attachment:trac_9958-suffix_trees-variations-sl.patch] from S\u00e9bastien Labb\u00e9 instead? It is more foolproof.\n> I overlooked that patch, it was not in the list of patches to be applied.  I agree it is better.\n\nIt was [http://trac.sagemath.org/sage_trac/ticket/9958?action=diff&version=273](http://trac.sagemath.org/sage_trac/ticket/9958?action=diff&version=273) but never mind we have it now.",
     "created_at": "2012-01-05T22:45:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -8433,7 +8433,7 @@ archive/issue_comments_099616.json:
 }
 ```
 
-Attachment
+Attachment [9958_combinat.patch](tarball://root/attachments/some-uuid/ticket9958/9958_combinat.patch) by fbissey created at 2012-01-05 22:45:32
 
 Replying to [comment:279 jdemeyer]:
 > Replying to [comment:277 fbissey]:

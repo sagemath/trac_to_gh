@@ -118,7 +118,7 @@ Michael
 archive/issue_comments_043201.json:
 ```json
 {
-    "body": "Attachment\n\nOkay, this adds back cholesky, with a deprecation warning.  I'm returning this to positive review, since nothing else has changed.",
+    "body": "Attachment [trac_5554-cholesky-decomposition-2.patch](tarball://root/attachments/some-uuid/ticket5554/trac_5554-cholesky-decomposition-2.patch) by ncalexan created at 2009-05-19 16:27:07\n\nOkay, this adds back cholesky, with a deprecation warning.  I'm returning this to positive review, since nothing else has changed.",
     "created_at": "2009-05-19T16:27:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5554",
     "type": "issue_comment",
@@ -127,7 +127,7 @@ archive/issue_comments_043201.json:
 }
 ```
 
-Attachment
+Attachment [trac_5554-cholesky-decomposition-2.patch](tarball://root/attachments/some-uuid/ticket5554/trac_5554-cholesky-decomposition-2.patch) by ncalexan created at 2009-05-19 16:27:07
 
 Okay, this adds back cholesky, with a deprecation warning.  I'm returning this to positive review, since nothing else has changed.
 

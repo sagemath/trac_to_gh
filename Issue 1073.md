@@ -74,7 +74,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_006496.json:
 ```json
 {
-    "body": "Attachment\n\nI am not a bash expert but the attached patch does the job for me.",
+    "body": "Attachment [trac_1073.patch](tarball://root/attachments/some-uuid/ticket1073/trac_1073.patch) by malb created at 2008-01-06 14:11:32\n\nI am not a bash expert but the attached patch does the job for me.",
     "created_at": "2008-01-06T14:11:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1073",
     "type": "issue_comment",
@@ -83,7 +83,7 @@ archive/issue_comments_006496.json:
 }
 ```
 
-Attachment
+Attachment [trac_1073.patch](tarball://root/attachments/some-uuid/ticket1073/trac_1073.patch) by malb created at 2008-01-06 14:11:32
 
 I am not a bash expert but the attached patch does the job for me.
 

@@ -249,7 +249,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_072179.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good, applies fine to 4.3.2 and passes sage -testal.\n\nThank you for adding this!\n\nPositive review.",
+    "body": "Attachment [trac_8188.patch](tarball://root/attachments/some-uuid/ticket8188/trac_8188.patch) by wdj created at 2010-02-08 13:50:22\n\nLooks good, applies fine to 4.3.2 and passes sage -testal.\n\nThank you for adding this!\n\nPositive review.",
     "created_at": "2010-02-08T13:50:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8188",
     "type": "issue_comment",
@@ -258,7 +258,7 @@ archive/issue_comments_072179.json:
 }
 ```
 
-Attachment
+Attachment [trac_8188.patch](tarball://root/attachments/some-uuid/ticket8188/trac_8188.patch) by wdj created at 2010-02-08 13:50:22
 
 Looks good, applies fine to 4.3.2 and passes sage -testal.
 

@@ -87,7 +87,7 @@ I guess the integral of a matrix doesn't come up that often, so I'm changing my 
 archive/issue_comments_033225.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [vector_derivative.patch](tarball://root/attachments/some-uuid/ticket4493/vector_derivative.patch) by jason created at 2008-12-05 08:15:34",
     "created_at": "2008-12-05T08:15:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4493",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_033225.json:
 }
 ```
 
-Attachment
+Attachment [vector_derivative.patch](tarball://root/attachments/some-uuid/ticket4493/vector_derivative.patch) by jason created at 2008-12-05 08:15:34
 
 
 
@@ -105,7 +105,7 @@ Attachment
 archive/issue_comments_033226.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [matrix-derivative.patch](tarball://root/attachments/some-uuid/ticket4493/matrix-derivative.patch) by jason created at 2008-12-05 08:31:54",
     "created_at": "2008-12-05T08:31:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4493",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_033226.json:
 }
 ```
 
-Attachment
+Attachment [matrix-derivative.patch](tarball://root/attachments/some-uuid/ticket4493/matrix-derivative.patch) by jason created at 2008-12-05 08:31:54
 
 
 

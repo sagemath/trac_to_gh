@@ -560,7 +560,7 @@ So this patch still needs a rebase (note that #8892 is included in 4.4.2.rc0).
 archive/issue_comments_074761.json:
 ```json
 {
-    "body": "Attachment\n\nThe amount of times I have rewritten this whole patch is just obscene :-D\n\nOk, so what's new in this version ? First, it is based on 4.4.2.rc0, into which #8892 in already included (thanks Jason !), and it does the same job as usual, plus one or two fixesin the docstrings. By the way, I fixed a bug in function at line 3152 or graph.py (last entry in the .patch file), by removing a \",t\"... I have to admit I have absolutely NO IDEA how this \",t\" appeared there, but well, it prevented the function from working, though... I also hadn't noticed the function max_weight_matching from networkx had been exposed, which makes ticket #8166 useless... But I will modify it so that we do not have in Sage 2 different functions for max matching (at the moment, matching() and max_weight_matching()).\n\nPlease Jason, if you can review this ticket again, help me !! I could not stand rewriting all these modifications again if it needs to be rebased once more ! :-)\n\nThank youuuuuuu !!\n\nNathann",
+    "body": "Attachment [trac_8364.patch](tarball://root/attachments/some-uuid/ticket8364/trac_8364.patch) by ncohen created at 2010-05-15 17:59:04\n\nThe amount of times I have rewritten this whole patch is just obscene :-D\n\nOk, so what's new in this version ? First, it is based on 4.4.2.rc0, into which #8892 in already included (thanks Jason !), and it does the same job as usual, plus one or two fixesin the docstrings. By the way, I fixed a bug in function at line 3152 or graph.py (last entry in the .patch file), by removing a \",t\"... I have to admit I have absolutely NO IDEA how this \",t\" appeared there, but well, it prevented the function from working, though... I also hadn't noticed the function max_weight_matching from networkx had been exposed, which makes ticket #8166 useless... But I will modify it so that we do not have in Sage 2 different functions for max matching (at the moment, matching() and max_weight_matching()).\n\nPlease Jason, if you can review this ticket again, help me !! I could not stand rewriting all these modifications again if it needs to be rebased once more ! :-)\n\nThank youuuuuuu !!\n\nNathann",
     "created_at": "2010-05-15T17:59:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8364",
     "type": "issue_comment",
@@ -569,7 +569,7 @@ archive/issue_comments_074761.json:
 }
 ```
 
-Attachment
+Attachment [trac_8364.patch](tarball://root/attachments/some-uuid/ticket8364/trac_8364.patch) by ncohen created at 2010-05-15 17:59:04
 
 The amount of times I have rewritten this whole patch is just obscene :-D
 
@@ -624,7 +624,7 @@ Changing priority from major to critical.
 archive/issue_comments_074764.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8364-reviewer.patch](tarball://root/attachments/some-uuid/ticket8364/trac_8364-reviewer.patch) by mvngu created at 2010-05-21 10:22:18",
     "created_at": "2010-05-21T10:22:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8364",
     "type": "issue_comment",
@@ -633,7 +633,7 @@ archive/issue_comments_074764.json:
 }
 ```
 
-Attachment
+Attachment [trac_8364-reviewer.patch](tarball://root/attachments/some-uuid/ticket8364/trac_8364-reviewer.patch) by mvngu created at 2010-05-21 10:22:18
 
 
 

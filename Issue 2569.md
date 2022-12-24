@@ -47,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2569
 archive/issue_comments_017556.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac2569-preparse-xor.patch](tarball://root/attachments/some-uuid/ticket2569/trac2569-preparse-xor.patch) by cwitty created at 2008-08-23 18:48:48",
     "created_at": "2008-08-23T18:48:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2569",
     "type": "issue_comment",
@@ -56,7 +56,7 @@ archive/issue_comments_017556.json:
 }
 ```
 
-Attachment
+Attachment [trac2569-preparse-xor.patch](tarball://root/attachments/some-uuid/ticket2569/trac2569-preparse-xor.patch) by cwitty created at 2008-08-23 18:48:48
 
 
 

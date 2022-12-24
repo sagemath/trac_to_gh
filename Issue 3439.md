@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3439
 archive/issue_comments_024265.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac3439-graph_isom_coverage.patch](tarball://root/attachments/some-uuid/ticket3439/trac3439-graph_isom_coverage.patch) by mabshoff created at 2008-06-16 18:44:10",
     "created_at": "2008-06-16T18:44:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3439",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_024265.json:
 }
 ```
 
-Attachment
+Attachment [trac3439-graph_isom_coverage.patch](tarball://root/attachments/some-uuid/ticket3439/trac3439-graph_isom_coverage.patch) by mabshoff created at 2008-06-16 18:44:10
 
 
 
@@ -67,7 +67,7 @@ Apply after #3471
 archive/issue_comments_024267.json:
 ```json
 {
-    "body": "Attachment\n\nApply after #3471 and other patches here",
+    "body": "Attachment [trac3439-avoid_sort.patch](tarball://root/attachments/some-uuid/ticket3439/trac3439-avoid_sort.patch) by rlm created at 2008-06-22 20:47:08\n\nApply after #3471 and other patches here",
     "created_at": "2008-06-22T20:47:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3439",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_024267.json:
 }
 ```
 
-Attachment
+Attachment [trac3439-avoid_sort.patch](tarball://root/attachments/some-uuid/ticket3439/trac3439-avoid_sort.patch) by rlm created at 2008-06-22 20:47:08
 
 Apply after #3471 and other patches here
 

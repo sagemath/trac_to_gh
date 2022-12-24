@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8846
 archive/issue_comments_081327.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8846-fix_partitions.patch](tarball://root/attachments/some-uuid/ticket8846/trac_8846-fix_partitions.patch) by mhansen created at 2010-05-03 13:23:07",
     "created_at": "2010-05-03T13:23:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8846",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_081327.json:
 }
 ```
 
-Attachment
+Attachment [trac_8846-fix_partitions.patch](tarball://root/attachments/some-uuid/ticket8846/trac_8846-fix_partitions.patch) by mhansen created at 2010-05-03 13:23:07
 
 
 

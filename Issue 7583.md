@@ -45,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7583
 archive/issue_comments_064644.json:
 ```json
 {
-    "body": "Attachment\n\nbased on Sage 4.3.alpha0",
+    "body": "Attachment [trac_7583-typo.patch](tarball://root/attachments/some-uuid/ticket7583/trac_7583-typo.patch) by mvngu created at 2009-12-02 15:46:25\n\nbased on Sage 4.3.alpha0",
     "created_at": "2009-12-02T15:46:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7583",
     "type": "issue_comment",
@@ -54,7 +54,7 @@ archive/issue_comments_064644.json:
 }
 ```
 
-Attachment
+Attachment [trac_7583-typo.patch](tarball://root/attachments/some-uuid/ticket7583/trac_7583-typo.patch) by mvngu created at 2009-12-02 15:46:25
 
 based on Sage 4.3.alpha0
 

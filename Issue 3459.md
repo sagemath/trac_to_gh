@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3459
 archive/issue_comments_024398.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good.",
+    "body": "Attachment [3459-ncalexan-nf-ideal-coercion-1.patch](tarball://root/attachments/some-uuid/ticket3459/3459-ncalexan-nf-ideal-coercion-1.patch) by dmharvey created at 2008-06-22 14:56:35\n\nLooks good.",
     "created_at": "2008-06-22T14:56:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3459",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_024398.json:
 }
 ```
 
-Attachment
+Attachment [3459-ncalexan-nf-ideal-coercion-1.patch](tarball://root/attachments/some-uuid/ticket3459/3459-ncalexan-nf-ideal-coercion-1.patch) by dmharvey created at 2008-06-22 14:56:35
 
 Looks good.
 

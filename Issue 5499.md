@@ -57,7 +57,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5499
 archive/issue_comments_042709.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5499.patch](tarball://root/attachments/some-uuid/ticket5499/trac_5499.patch) by roed created at 2009-03-17 05:31:22",
     "created_at": "2009-03-17T05:31:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5499",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_042709.json:
 }
 ```
 
-Attachment
+Attachment [trac_5499.patch](tarball://root/attachments/some-uuid/ticket5499/trac_5499.patch) by roed created at 2009-03-17 05:31:22
 
 
 
@@ -276,7 +276,7 @@ Fixes laurents series, as well as p-adic l-series code affected by change in dir
 archive/issue_comments_042717.json:
 ```json
 {
-    "body": "Attachment\n\nCool, trac_5499_2.patch only passes doctests for my 3.4.1.rc3 merge tree.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_5499_2.patch](tarball://root/attachments/some-uuid/ticket5499/trac_5499_2.patch) by mabshoff created at 2009-04-13 03:03:02\n\nCool, trac_5499_2.patch only passes doctests for my 3.4.1.rc3 merge tree.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-13T03:03:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5499",
     "type": "issue_comment",
@@ -285,7 +285,7 @@ archive/issue_comments_042717.json:
 }
 ```
 
-Attachment
+Attachment [trac_5499_2.patch](tarball://root/attachments/some-uuid/ticket5499/trac_5499_2.patch) by mabshoff created at 2009-04-13 03:03:02
 
 Cool, trac_5499_2.patch only passes doctests for my 3.4.1.rc3 merge tree.
 

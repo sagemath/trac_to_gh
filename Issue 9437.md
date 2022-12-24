@@ -50,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9437
 archive/issue_comments_090337.json:
 ```json
 {
-    "body": "Attachment\n\npatch against 4.6.alpha1",
+    "body": "Attachment [trac_9437_matrix_group_finite_ring.patch](tarball://root/attachments/some-uuid/ticket9437/trac_9437_matrix_group_finite_ring.patch) by davidloeffler created at 2010-09-23 13:28:21\n\npatch against 4.6.alpha1",
     "created_at": "2010-09-23T13:28:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9437",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_090337.json:
 }
 ```
 
-Attachment
+Attachment [trac_9437_matrix_group_finite_ring.patch](tarball://root/attachments/some-uuid/ticket9437/trac_9437_matrix_group_finite_ring.patch) by davidloeffler created at 2010-09-23 13:28:21
 
 patch against 4.6.alpha1
 
@@ -336,7 +336,7 @@ rebased version
 archive/issue_comments_090351.json:
 ```json
 {
-    "body": "Attachment\n\nDone. There's no change in the actual code of the patch, just variable names and diff context, so I'm reinstating the positive review.",
+    "body": "Attachment [trac_9437_matrix_group_finite_ring-rebase.patch](tarball://root/attachments/some-uuid/ticket9437/trac_9437_matrix_group_finite_ring-rebase.patch) by davidloeffler created at 2011-01-27 15:24:04\n\nDone. There's no change in the actual code of the patch, just variable names and diff context, so I'm reinstating the positive review.",
     "created_at": "2011-01-27T15:24:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9437",
     "type": "issue_comment",
@@ -345,7 +345,7 @@ archive/issue_comments_090351.json:
 }
 ```
 
-Attachment
+Attachment [trac_9437_matrix_group_finite_ring-rebase.patch](tarball://root/attachments/some-uuid/ticket9437/trac_9437_matrix_group_finite_ring-rebase.patch) by davidloeffler created at 2011-01-27 15:24:04
 
 Done. There's no change in the actual code of the patch, just variable names and diff context, so I'm reinstating the positive review.
 

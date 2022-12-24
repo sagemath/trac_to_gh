@@ -62,7 +62,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2701
 archive/issue_comments_018625.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9029.patch](tarball://root/attachments/some-uuid/ticket2701/9029.patch) by wdj created at 2008-03-28 17:23:57",
     "created_at": "2008-03-28T17:23:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2701",
     "type": "issue_comment",
@@ -71,7 +71,7 @@ archive/issue_comments_018625.json:
 }
 ```
 
-Attachment
+Attachment [9029.patch](tarball://root/attachments/some-uuid/ticket2701/9029.patch) by wdj created at 2008-03-28 17:23:57
 
 
 
@@ -174,7 +174,7 @@ Resolution: fixed
 archive/issue_comments_018631.json:
 ```json
 {
-    "body": "Attachment\n\nA doctest fix for a long case",
+    "body": "Attachment [trac_2701_doctest-fix.patch](tarball://root/attachments/some-uuid/ticket2701/trac_2701_doctest-fix.patch) by mabshoff created at 2008-03-29 00:42:22\n\nA doctest fix for a long case",
     "created_at": "2008-03-29T00:42:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2701",
     "type": "issue_comment",
@@ -183,7 +183,7 @@ archive/issue_comments_018631.json:
 }
 ```
 
-Attachment
+Attachment [trac_2701_doctest-fix.patch](tarball://root/attachments/some-uuid/ticket2701/trac_2701_doctest-fix.patch) by mabshoff created at 2008-03-29 00:42:22
 
 A doctest fix for a long case
 

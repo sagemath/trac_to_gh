@@ -64,7 +64,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4163
 archive/issue_comments_030211.json:
 ```json
 {
-    "body": "Attachment\n\ndoc patch",
+    "body": "Attachment [4163-tut_factorial.patch](tarball://root/attachments/some-uuid/ticket4163/4163-tut_factorial.patch) by AlexGhitza created at 2008-09-23 08:06:35\n\ndoc patch",
     "created_at": "2008-09-23T08:06:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4163",
     "type": "issue_comment",
@@ -73,7 +73,7 @@ archive/issue_comments_030211.json:
 }
 ```
 
-Attachment
+Attachment [4163-tut_factorial.patch](tarball://root/attachments/some-uuid/ticket4163/4163-tut_factorial.patch) by AlexGhitza created at 2008-09-23 08:06:35
 
 doc patch
 

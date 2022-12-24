@@ -524,7 +524,7 @@ until after 3.1.3.final is out this weekend.
 archive/issue_comments_028290.json:
 ```json
 {
-    "body": "Attachment\n\nThis is based on 3.1.3.alpha1. Apply this patch only - ignore all previous patches.",
+    "body": "Attachment [trac_3943-block-designs.patch](tarball://root/attachments/some-uuid/ticket3943/trac_3943-block-designs.patch) by wdj created at 2008-09-25 19:01:13\n\nThis is based on 3.1.3.alpha1. Apply this patch only - ignore all previous patches.",
     "created_at": "2008-09-25T19:01:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
@@ -533,7 +533,7 @@ archive/issue_comments_028290.json:
 }
 ```
 
-Attachment
+Attachment [trac_3943-block-designs.patch](tarball://root/attachments/some-uuid/ticket3943/trac_3943-block-designs.patch) by wdj created at 2008-09-25 19:01:13
 
 This is based on 3.1.3.alpha1. Apply this patch only - ignore all previous patches.
 
@@ -715,7 +715,7 @@ First apply trac_3943-block-designs.patch then apply this patch. Based on 3.1.3.
 archive/issue_comments_028297.json:
 ```json
 {
-    "body": "Attachment\n\nNow apply this patch after the other 2. Based on 3.1.3.alpha1.",
+    "body": "Attachment [trac3943-block-designs3.patch](tarball://root/attachments/some-uuid/ticket3943/trac3943-block-designs3.patch) by wdj created at 2008-09-27 00:10:33\n\nNow apply this patch after the other 2. Based on 3.1.3.alpha1.",
     "created_at": "2008-09-27T00:10:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
@@ -724,7 +724,7 @@ archive/issue_comments_028297.json:
 }
 ```
 
-Attachment
+Attachment [trac3943-block-designs3.patch](tarball://root/attachments/some-uuid/ticket3943/trac3943-block-designs3.patch) by wdj created at 2008-09-27 00:10:33
 
 Now apply this patch after the other 2. Based on 3.1.3.alpha1.
 
@@ -772,7 +772,7 @@ This is the last patch, I hope. Again, based on 3.1.3.alpha1 and to be applied a
 archive/issue_comments_028300.json:
 ```json
 {
-    "body": "Attachment\n\nAppliy this after the others. Based on 3.1.3.alpha1. Arrgghh.",
+    "body": "Attachment [trac3943-block-designs5.patch](tarball://root/attachments/some-uuid/ticket3943/trac3943-block-designs5.patch) by wdj created at 2008-09-27 00:47:27\n\nAppliy this after the others. Based on 3.1.3.alpha1. Arrgghh.",
     "created_at": "2008-09-27T00:47:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
@@ -781,7 +781,7 @@ archive/issue_comments_028300.json:
 }
 ```
 
-Attachment
+Attachment [trac3943-block-designs5.patch](tarball://root/attachments/some-uuid/ticket3943/trac3943-block-designs5.patch) by wdj created at 2008-09-27 00:47:27
 
 Appliy this after the others. Based on 3.1.3.alpha1. Arrgghh.
 
@@ -849,7 +849,7 @@ Michael
 archive/issue_comments_028303.json:
 ```json
 {
-    "body": "Attachment\n\nbased on 3.1.3.alpha1. To be applied after the 5 others before this one.",
+    "body": "Attachment [trac3943-block-designs6.patch](tarball://root/attachments/some-uuid/ticket3943/trac3943-block-designs6.patch) by wdj created at 2008-09-28 00:59:46\n\nbased on 3.1.3.alpha1. To be applied after the 5 others before this one.",
     "created_at": "2008-09-28T00:59:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
@@ -858,7 +858,7 @@ archive/issue_comments_028303.json:
 }
 ```
 
-Attachment
+Attachment [trac3943-block-designs6.patch](tarball://root/attachments/some-uuid/ticket3943/trac3943-block-designs6.patch) by wdj created at 2008-09-28 00:59:46
 
 based on 3.1.3.alpha1. To be applied after the 5 others before this one.
 
@@ -931,7 +931,7 @@ Please apply the 7 patches in order to 3.1.3.alpha1. They pass sage -t -optional
 archive/issue_comments_028305.json:
 ```json
 {
-    "body": "Attachment\n\nForgot one change suggested by the referee. Apply this after the others to 3.1.3.alpha1.",
+    "body": "Attachment [trac3943-block-designs7.patch](tarball://root/attachments/some-uuid/ticket3943/trac3943-block-designs7.patch) by wdj created at 2008-09-28 01:18:16\n\nForgot one change suggested by the referee. Apply this after the others to 3.1.3.alpha1.",
     "created_at": "2008-09-28T01:18:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
@@ -940,7 +940,7 @@ archive/issue_comments_028305.json:
 }
 ```
 
-Attachment
+Attachment [trac3943-block-designs7.patch](tarball://root/attachments/some-uuid/ticket3943/trac3943-block-designs7.patch) by wdj created at 2008-09-28 01:18:16
 
 Forgot one change suggested by the referee. Apply this after the others to 3.1.3.alpha1.
 
@@ -969,7 +969,7 @@ based on 3.1.3.alpha1. To be applied after the others.
 archive/issue_comments_028307.json:
 ```json
 {
-    "body": "Attachment\n\nThis last patch may or may not improve things. It passes sage -t -optional.\n\n1. I moved __repr__ to __str__ and created a very simple __repr__ method.\n2. I moved is_block_design to block_design_checker\n3. Created a new an rigorous (and very slow) is_block_design, following an off-list suggestion of the referee.\n4. Added some material to some of the docstrings.",
+    "body": "Attachment [trac3943-block-designs8.patch](tarball://root/attachments/some-uuid/ticket3943/trac3943-block-designs8.patch) by wdj created at 2008-09-30 03:03:06\n\nThis last patch may or may not improve things. It passes sage -t -optional.\n\n1. I moved __repr__ to __str__ and created a very simple __repr__ method.\n2. I moved is_block_design to block_design_checker\n3. Created a new an rigorous (and very slow) is_block_design, following an off-list suggestion of the referee.\n4. Added some material to some of the docstrings.",
     "created_at": "2008-09-30T03:03:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
@@ -978,7 +978,7 @@ archive/issue_comments_028307.json:
 }
 ```
 
-Attachment
+Attachment [trac3943-block-designs8.patch](tarball://root/attachments/some-uuid/ticket3943/trac3943-block-designs8.patch) by wdj created at 2008-09-30 03:03:06
 
 This last patch may or may not improve things. It passes sage -t -optional.
 

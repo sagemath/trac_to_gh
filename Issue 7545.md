@@ -53,7 +53,7 @@ patch exported in 4.3.alpha0.
 archive/issue_comments_064038.json:
 ```json
 {
-    "body": "Attachment\n\nThe added patch will add a file 'gaussian_integer.py' which adds `GaussianIntegers` and `GaussianNumberField` to sage. The elements of the `GaussianIntegers` are elements in a quadratic Order, but they have a few more functions. Like `factor`, `gcd`, `is_prime`, `quo_rem`,... Also they are printed as `a + b*i` not as `b*i + a`. Also the coefficients of integers are in `ZZ`, not in `QQ` as for general quadratic orders.\n\nI am not sure if I should propose this ticket for review and inclusion in sage. It maybe against the more general framework in number fields and will create silly exceptions. Also I still have not learned to do this in cython, so it is nowhere as efficient as it should be.\n\nOne might also want to change further things, like the function `gcd`. Also `QuadarticField(-1)` should give back `GaussianNumberFields` etc. \n\nA futher issue is 'i'. By default i is a symbol expression. If someone types `GaussianInteger()` he will probably assume that 'i' is in it afterwards. But changing this would probably not be a good idea.\n\nAnyway, the patch is here to be looked at as it may inspire some further work in this direction.",
+    "body": "Attachment [trac_7545_zi.patch](tarball://root/attachments/some-uuid/ticket7545/trac_7545_zi.patch) by wuthrich created at 2009-11-27 17:21:52\n\nThe added patch will add a file 'gaussian_integer.py' which adds `GaussianIntegers` and `GaussianNumberField` to sage. The elements of the `GaussianIntegers` are elements in a quadratic Order, but they have a few more functions. Like `factor`, `gcd`, `is_prime`, `quo_rem`,... Also they are printed as `a + b*i` not as `b*i + a`. Also the coefficients of integers are in `ZZ`, not in `QQ` as for general quadratic orders.\n\nI am not sure if I should propose this ticket for review and inclusion in sage. It maybe against the more general framework in number fields and will create silly exceptions. Also I still have not learned to do this in cython, so it is nowhere as efficient as it should be.\n\nOne might also want to change further things, like the function `gcd`. Also `QuadarticField(-1)` should give back `GaussianNumberFields` etc. \n\nA futher issue is 'i'. By default i is a symbol expression. If someone types `GaussianInteger()` he will probably assume that 'i' is in it afterwards. But changing this would probably not be a good idea.\n\nAnyway, the patch is here to be looked at as it may inspire some further work in this direction.",
     "created_at": "2009-11-27T17:21:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7545",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_064038.json:
 }
 ```
 
-Attachment
+Attachment [trac_7545_zi.patch](tarball://root/attachments/some-uuid/ticket7545/trac_7545_zi.patch) by wuthrich created at 2009-11-27 17:21:52
 
 The added patch will add a file 'gaussian_integer.py' which adds `GaussianIntegers` and `GaussianNumberField` to sage. The elements of the `GaussianIntegers` are elements in a quadratic Order, but they have a few more functions. Like `factor`, `gcd`, `is_prime`, `quo_rem`,... Also they are printed as `a + b*i` not as `b*i + a`. Also the coefficients of integers are in `ZZ`, not in `QQ` as for general quadratic orders.
 

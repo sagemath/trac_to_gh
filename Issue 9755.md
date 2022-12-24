@@ -179,7 +179,7 @@ Could someone make the commit string a bit more descriptive, e.g., `#9755: Fix c
 archive/issue_comments_095554.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9755_hall_littlewood_coercions-jb.patch](tarball://root/attachments/some-uuid/ticket9755/trac_9755_hall_littlewood_coercions-jb.patch) by jbandlow created at 2010-09-18 14:28:04",
     "created_at": "2010-09-18T14:28:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9755",
     "type": "issue_comment",
@@ -188,7 +188,7 @@ archive/issue_comments_095554.json:
 }
 ```
 
-Attachment
+Attachment [trac_9755_hall_littlewood_coercions-jb.patch](tarball://root/attachments/some-uuid/ticket9755/trac_9755_hall_littlewood_coercions-jb.patch) by jbandlow created at 2010-09-18 14:28:04
 
 
 
@@ -283,7 +283,7 @@ summary:     [mq]: trac_9755_hall_littlewood_coercions-jb.patch
 archive/issue_comments_095559.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9755_hall_littlewood_coercions-jb.2.patch](tarball://root/attachments/some-uuid/ticket9755/trac_9755_hall_littlewood_coercions-jb.2.patch) by jbandlow created at 2010-09-18 21:52:28",
     "created_at": "2010-09-18T21:52:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9755",
     "type": "issue_comment",
@@ -292,7 +292,7 @@ archive/issue_comments_095559.json:
 }
 ```
 
-Attachment
+Attachment [trac_9755_hall_littlewood_coercions-jb.2.patch](tarball://root/attachments/some-uuid/ticket9755/trac_9755_hall_littlewood_coercions-jb.2.patch) by jbandlow created at 2010-09-18 21:52:28
 
 
 

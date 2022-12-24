@@ -132,7 +132,7 @@ Resolution: fixed
 archive/issue_comments_020905.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3037.patch](tarball://root/attachments/some-uuid/ticket3037/trac_3037.patch) by mabshoff created at 2008-04-27 06:06:51",
     "created_at": "2008-04-27T06:06:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3037",
     "type": "issue_comment",
@@ -141,4 +141,4 @@ archive/issue_comments_020905.json:
 }
 ```
 
-Attachment
+Attachment [trac_3037.patch](tarball://root/attachments/some-uuid/ticket3037/trac_3037.patch) by mabshoff created at 2008-04-27 06:06:51

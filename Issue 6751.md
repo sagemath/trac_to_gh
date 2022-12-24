@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6751
 archive/issue_comments_055593.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6751.patch](tarball://root/attachments/some-uuid/ticket6751/trac_6751.patch) by was created at 2009-08-15 01:42:38",
     "created_at": "2009-08-15T01:42:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6751",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_055593.json:
 }
 ```
 
-Attachment
+Attachment [trac_6751.patch](tarball://root/attachments/some-uuid/ticket6751/trac_6751.patch) by was created at 2009-08-15 01:42:38
 
 
 
@@ -69,7 +69,7 @@ Apply after previous
 archive/issue_comments_055595.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me:  applies fine to 4.1.1, tests pass, some examples I tried looked correct (as does the code).\n\nThere's one small typo (\"had\" for \"has\" in the docstring) which I put into a second patch (overkill perhaps!)",
+    "body": "Attachment [trac_6751-review.patch](tarball://root/attachments/some-uuid/ticket6751/trac_6751-review.patch) by cremona created at 2009-08-23 16:08:23\n\nLooks good to me:  applies fine to 4.1.1, tests pass, some examples I tried looked correct (as does the code).\n\nThere's one small typo (\"had\" for \"has\" in the docstring) which I put into a second patch (overkill perhaps!)",
     "created_at": "2009-08-23T16:08:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6751",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_055595.json:
 }
 ```
 
-Attachment
+Attachment [trac_6751-review.patch](tarball://root/attachments/some-uuid/ticket6751/trac_6751-review.patch) by cremona created at 2009-08-23 16:08:23
 
 Looks good to me:  applies fine to 4.1.1, tests pass, some examples I tried looked correct (as does the code).
 

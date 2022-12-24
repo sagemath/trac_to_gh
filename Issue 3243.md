@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3243
 archive/issue_comments_022454.json:
 ```json
 {
-    "body": "Attachment\n\nThe same issue pops up on Solaris 9. Solaris 10 is fine.\n\nCheers,\n\nMichael",
+    "body": "Attachment [sage-3243.patch](tarball://root/attachments/some-uuid/ticket3243/sage-3243.patch) by mabshoff created at 2008-05-17 21:20:25\n\nThe same issue pops up on Solaris 9. Solaris 10 is fine.\n\nCheers,\n\nMichael",
     "created_at": "2008-05-17T21:20:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3243",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_022454.json:
 }
 ```
 
-Attachment
+Attachment [sage-3243.patch](tarball://root/attachments/some-uuid/ticket3243/sage-3243.patch) by mabshoff created at 2008-05-17 21:20:25
 
 The same issue pops up on Solaris 9. Solaris 10 is fine.
 

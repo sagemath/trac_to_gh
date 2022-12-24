@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9759
 archive/issue_comments_095580.json:
 ```json
 {
-    "body": "Attachment\n\nPatch that adds components of units.si_prefixes as properties on the UnitExpression class",
+    "body": "Attachment [trac_9759_si_prefixes.patch](tarball://root/attachments/some-uuid/ticket9759/trac_9759_si_prefixes.patch) by cousteau created at 2010-08-17 23:07:29\n\nPatch that adds components of units.si_prefixes as properties on the UnitExpression class",
     "created_at": "2010-08-17T23:07:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9758",
     "type": "issue_comment",
@@ -43,7 +43,7 @@ archive/issue_comments_095580.json:
 }
 ```
 
-Attachment
+Attachment [trac_9759_si_prefixes.patch](tarball://root/attachments/some-uuid/ticket9759/trac_9759_si_prefixes.patch) by cousteau created at 2010-08-17 23:07:29
 
 Patch that adds components of units.si_prefixes as properties on the UnitExpression class
 

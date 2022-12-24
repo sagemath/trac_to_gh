@@ -128,7 +128,7 @@ Changing status from new to assigned.
 archive/issue_comments_000325.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [61.patch](tarball://root/attachments/some-uuid/ticket61/61.patch) by was created at 2007-11-03 19:53:26",
     "created_at": "2007-11-03T19:53:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/61",
     "type": "issue_comment",
@@ -137,7 +137,7 @@ archive/issue_comments_000325.json:
 }
 ```
 
-Attachment
+Attachment [61.patch](tarball://root/attachments/some-uuid/ticket61/61.patch) by was created at 2007-11-03 19:53:26
 
 
 
@@ -164,7 +164,7 @@ Resolution: fixed
 archive/issue_comments_000327.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac61-modsym.patch](tarball://root/attachments/some-uuid/ticket61/trac61-modsym.patch) by was created at 2007-11-03 23:46:08",
     "created_at": "2007-11-03T23:46:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/61",
     "type": "issue_comment",
@@ -173,4 +173,4 @@ archive/issue_comments_000327.json:
 }
 ```
 
-Attachment
+Attachment [trac61-modsym.patch](tarball://root/attachments/some-uuid/ticket61/trac61-modsym.patch) by was created at 2007-11-03 23:46:08

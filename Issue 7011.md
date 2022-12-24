@@ -84,7 +84,7 @@ add in default maximum of 8 threads
 archive/issue_comments_057969.json:
 ```json
 {
-    "body": "Attachment\n\npatch for $SAGE_ROOT/makefile",
+    "body": "Attachment [trac_7011.patch](tarball://root/attachments/some-uuid/ticket7011/trac_7011.patch) by ddrake created at 2009-09-29 08:32:58\n\npatch for $SAGE_ROOT/makefile",
     "created_at": "2009-09-29T08:32:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7011",
     "type": "issue_comment",
@@ -93,7 +93,7 @@ archive/issue_comments_057969.json:
 }
 ```
 
-Attachment
+Attachment [trac_7011.patch](tarball://root/attachments/some-uuid/ticket7011/trac_7011.patch) by ddrake created at 2009-09-29 08:32:58
 
 patch for $SAGE_ROOT/makefile
 
@@ -140,7 +140,7 @@ Changing assignee from tbd to ddrake.
 archive/issue_comments_057972.json:
 ```json
 {
-    "body": "Attachment\n\nI've uploaded patches for the sage_scripts repo, and for the root makefile. The second attachment is an ordinary unified diff.",
+    "body": "Attachment [trac_7011-sage-root-makefile.patch](tarball://root/attachments/some-uuid/ticket7011/trac_7011-sage-root-makefile.patch) by ddrake created at 2009-09-29 08:36:53\n\nI've uploaded patches for the sage_scripts repo, and for the root makefile. The second attachment is an ordinary unified diff.",
     "created_at": "2009-09-29T08:36:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7011",
     "type": "issue_comment",
@@ -149,7 +149,7 @@ archive/issue_comments_057972.json:
 }
 ```
 
-Attachment
+Attachment [trac_7011-sage-root-makefile.patch](tarball://root/attachments/some-uuid/ticket7011/trac_7011-sage-root-makefile.patch) by ddrake created at 2009-09-29 08:36:53
 
 I've uploaded patches for the sage_scripts repo, and for the root makefile. The second attachment is an ordinary unified diff.
 

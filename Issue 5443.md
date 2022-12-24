@@ -113,7 +113,7 @@ Hopefully this will fix the issues -- let me know if you run into anything else!
 archive/issue_comments_042088.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch applies to my 3.4.rc1 merge tree without any rebase problems, so all we need is a review to get this in.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac-5443.patch](tarball://root/attachments/some-uuid/ticket5443/trac-5443.patch) by mabshoff created at 2009-03-08 06:20:43\n\nThe patch applies to my 3.4.rc1 merge tree without any rebase problems, so all we need is a review to get this in.\n\nCheers,\n\nMichael",
     "created_at": "2009-03-08T06:20:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5443",
     "type": "issue_comment",
@@ -122,7 +122,7 @@ archive/issue_comments_042088.json:
 }
 ```
 
-Attachment
+Attachment [trac-5443.patch](tarball://root/attachments/some-uuid/ticket5443/trac-5443.patch) by mabshoff created at 2009-03-08 06:20:43
 
 The patch applies to my 3.4.rc1 merge tree without any rebase problems, so all we need is a review to get this in.
 

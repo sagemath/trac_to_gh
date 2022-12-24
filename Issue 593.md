@@ -115,7 +115,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/593
 archive/issue_comments_003056.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch fixes this issue.",
+    "body": "Attachment [593.patch](tarball://root/attachments/some-uuid/ticket593/593.patch) by malb created at 2007-10-04 03:02:11\n\nThe attached patch fixes this issue.",
     "created_at": "2007-10-04T03:02:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/593",
     "type": "issue_comment",
@@ -124,7 +124,7 @@ archive/issue_comments_003056.json:
 }
 ```
 
-Attachment
+Attachment [593.patch](tarball://root/attachments/some-uuid/ticket593/593.patch) by malb created at 2007-10-04 03:02:11
 
 The attached patch fixes this issue.
 

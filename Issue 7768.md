@@ -43,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7768
 archive/issue_comments_066960.json:
 ```json
 {
-    "body": "Attachment\n\nbased on Sage 4.3",
+    "body": "Attachment [trac_7768-doc.patch](tarball://root/attachments/some-uuid/ticket7768/trac_7768-doc.patch) by mvngu created at 2009-12-26 13:38:23\n\nbased on Sage 4.3",
     "created_at": "2009-12-26T13:38:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7768",
     "type": "issue_comment",
@@ -52,7 +52,7 @@ archive/issue_comments_066960.json:
 }
 ```
 
-Attachment
+Attachment [trac_7768-doc.patch](tarball://root/attachments/some-uuid/ticket7768/trac_7768-doc.patch) by mvngu created at 2009-12-26 13:38:23
 
 based on Sage 4.3
 

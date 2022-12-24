@@ -155,7 +155,7 @@ The result of piecewise? was correct since PiecewisePolynomial didn't have a cla
 archive/issue_comments_007947.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1267.patch](tarball://root/attachments/some-uuid/ticket1267/1267.patch) by mhansen created at 2007-12-06 00:28:42",
     "created_at": "2007-12-06T00:28:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1267",
     "type": "issue_comment",
@@ -164,7 +164,7 @@ archive/issue_comments_007947.json:
 }
 ```
 
-Attachment
+Attachment [1267.patch](tarball://root/attachments/some-uuid/ticket1267/1267.patch) by mhansen created at 2007-12-06 00:28:42
 
 
 

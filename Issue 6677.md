@@ -98,7 +98,7 @@ http://sage.math.washington.edu/home/burcin/trac_6677-sequence_latex.patch
 archive/issue_comments_054880.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6677-sequence_latex.patch](tarball://root/attachments/some-uuid/ticket6677/trac_6677-sequence_latex.patch) by burcin created at 2009-08-09 19:50:46",
     "created_at": "2009-08-09T19:50:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6677",
     "type": "issue_comment",
@@ -107,7 +107,7 @@ archive/issue_comments_054880.json:
 }
 ```
 
-Attachment
+Attachment [trac_6677-sequence_latex.patch](tarball://root/attachments/some-uuid/ticket6677/trac_6677-sequence_latex.patch) by burcin created at 2009-08-09 19:50:46
 
 
 
@@ -152,7 +152,7 @@ Changing priority from major to minor.
 archive/issue_comments_054883.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of the other patch",
+    "body": "Attachment [trac_6677-referee.patch](tarball://root/attachments/some-uuid/ticket6677/trac_6677-referee.patch) by jhpalmieri created at 2009-08-20 21:06:42\n\napply on top of the other patch",
     "created_at": "2009-08-20T21:06:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6677",
     "type": "issue_comment",
@@ -161,7 +161,7 @@ archive/issue_comments_054883.json:
 }
 ```
 
-Attachment
+Attachment [trac_6677-referee.patch](tarball://root/attachments/some-uuid/ticket6677/trac_6677-referee.patch) by jhpalmieri created at 2009-08-20 21:06:42
 
 apply on top of the other patch
 

@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6948
 archive/issue_comments_057445.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6948-exp_power.patch](tarball://root/attachments/some-uuid/ticket6948/trac_6948-exp_power.patch) by burcin created at 2009-09-19 15:05:32",
     "created_at": "2009-09-19T15:05:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6948",
     "type": "issue_comment",
@@ -53,7 +53,7 @@ archive/issue_comments_057445.json:
 }
 ```
 
-Attachment
+Attachment [trac_6948-exp_power.patch](tarball://root/attachments/some-uuid/ticket6948/trac_6948-exp_power.patch) by burcin created at 2009-09-19 15:05:32
 
 
 
@@ -174,7 +174,7 @@ I'll attach a patch with some more doctests now.
 archive/issue_comments_057451.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review!",
+    "body": "Attachment [trac_6948-exp_power_print.patch](tarball://root/attachments/some-uuid/ticket6948/trac_6948-exp_power_print.patch) by kcrisman created at 2009-09-24 13:32:06\n\nPositive review!",
     "created_at": "2009-09-24T13:32:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6948",
     "type": "issue_comment",
@@ -183,7 +183,7 @@ archive/issue_comments_057451.json:
 }
 ```
 
-Attachment
+Attachment [trac_6948-exp_power_print.patch](tarball://root/attachments/some-uuid/ticket6948/trac_6948-exp_power_print.patch) by kcrisman created at 2009-09-24 13:32:06
 
 Positive review!
 

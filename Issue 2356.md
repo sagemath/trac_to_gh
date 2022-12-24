@@ -100,7 +100,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2356
 archive/issue_comments_015865.json:
 ```json
 {
-    "body": "Attachment\n\nAttached patch 8682 fixes both issues:  increases m by 1 and uses a dict() for fast lookup of the table.",
+    "body": "Attachment [8682.patch](tarball://root/attachments/some-uuid/ticket2356/8682.patch) by cremona created at 2008-02-29 22:48:48\n\nAttached patch 8682 fixes both issues:  increases m by 1 and uses a dict() for fast lookup of the table.",
     "created_at": "2008-02-29T22:48:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2356",
     "type": "issue_comment",
@@ -109,7 +109,7 @@ archive/issue_comments_015865.json:
 }
 ```
 
-Attachment
+Attachment [8682.patch](tarball://root/attachments/some-uuid/ticket2356/8682.patch) by cremona created at 2008-02-29 22:48:48
 
 Attached patch 8682 fixes both issues:  increases m by 1 and uses a dict() for fast lookup of the table.
 

@@ -55,7 +55,7 @@ Updated SPKG.txt
 archive/issue_comments_070391.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached my current version, and I think it conforms to the specs. Let me know if there is anything missing.",
+    "body": "Attachment [SPKG.txt](tarball://root/attachments/some-uuid/ticket8050/SPKG.txt) by vbraun created at 2010-01-27 17:09:08\n\nI've attached my current version, and I think it conforms to the specs. Let me know if there is anything missing.",
     "created_at": "2010-01-27T17:09:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8050",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_070391.json:
 }
 ```
 
-Attachment
+Attachment [SPKG.txt](tarball://root/attachments/some-uuid/ticket8050/SPKG.txt) by vbraun created at 2010-01-27 17:09:08
 
 I've attached my current version, and I think it conforms to the specs. Let me know if there is anything missing.
 

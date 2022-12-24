@@ -213,7 +213,7 @@ Changing status from new to assigned.
 archive/issue_comments_039093.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5114.patch](tarball://root/attachments/some-uuid/ticket5114/trac_5114.patch) by AlexGhitza created at 2009-04-29 13:52:25",
     "created_at": "2009-04-29T13:52:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5114",
     "type": "issue_comment",
@@ -222,7 +222,7 @@ archive/issue_comments_039093.json:
 }
 ```
 
-Attachment
+Attachment [trac_5114.patch](tarball://root/attachments/some-uuid/ticket5114/trac_5114.patch) by AlexGhitza created at 2009-04-29 13:52:25
 
 
 

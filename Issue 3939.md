@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3939
 archive/issue_comments_028238.json:
 ```json
 {
-    "body": "Attachment\n\nHa ha that's fine with me. (I love it: \"IANAL\" is a keyword. Now I can successfully search for IANAL on trac.)",
+    "body": "Attachment [copyriot.patch](tarball://root/attachments/some-uuid/ticket3939/copyriot.patch) by dmharvey created at 2008-08-23 22:33:53\n\nHa ha that's fine with me. (I love it: \"IANAL\" is a keyword. Now I can successfully search for IANAL on trac.)",
     "created_at": "2008-08-23T22:33:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3939",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_028238.json:
 }
 ```
 
-Attachment
+Attachment [copyriot.patch](tarball://root/attachments/some-uuid/ticket3939/copyriot.patch) by dmharvey created at 2008-08-23 22:33:53
 
 Ha ha that's fine with me. (I love it: "IANAL" is a keyword. Now I can successfully search for IANAL on trac.)
 

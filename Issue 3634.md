@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3634
 archive/issue_comments_025704.json:
 ```json
 {
-    "body": "Attachment\n\n\n```\nsage: sage: k.<a> = GF(2^500)\n\nsage: sage: time g = k.random_element()\nCPU times: user 0.07 s, sys: 0.00 s, total: 0.07 s\nWall time: 0.07 s\n\nsage: time f = g.minpoly()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.00 s\n\nsage: f(g)\n 0\nsage: timeit(\"g.minpoly()\")\n125 loops, best of 3: 4.03 ms per loop\n```\n",
+    "body": "Attachment [3634-gf2e-minpoly.patch](tarball://root/attachments/some-uuid/ticket3634/3634-gf2e-minpoly.patch) by robertwb created at 2008-07-10 18:07:41\n\n\n```\nsage: sage: k.<a> = GF(2^500)\n\nsage: sage: time g = k.random_element()\nCPU times: user 0.07 s, sys: 0.00 s, total: 0.07 s\nWall time: 0.07 s\n\nsage: time f = g.minpoly()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.00 s\n\nsage: f(g)\n 0\nsage: timeit(\"g.minpoly()\")\n125 loops, best of 3: 4.03 ms per loop\n```\n",
     "created_at": "2008-07-10T18:07:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3634",
     "type": "issue_comment",
@@ -43,7 +43,7 @@ archive/issue_comments_025704.json:
 }
 ```
 
-Attachment
+Attachment [3634-gf2e-minpoly.patch](tarball://root/attachments/some-uuid/ticket3634/3634-gf2e-minpoly.patch) by robertwb created at 2008-07-10 18:07:41
 
 
 ```
@@ -71,7 +71,7 @@ sage: timeit("g.minpoly()")
 archive/issue_comments_025705.json:
 ```json
 {
-    "body": "Attachment\n\nadd fast charpoly",
+    "body": "Attachment [sage-3634-referee.patch](tarball://root/attachments/some-uuid/ticket3634/sage-3634-referee.patch) by was created at 2008-07-10 23:21:26\n\nadd fast charpoly",
     "created_at": "2008-07-10T23:21:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3634",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_025705.json:
 }
 ```
 
-Attachment
+Attachment [sage-3634-referee.patch](tarball://root/attachments/some-uuid/ticket3634/sage-3634-referee.patch) by was created at 2008-07-10 23:21:26
 
 add fast charpoly
 

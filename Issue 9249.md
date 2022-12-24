@@ -161,7 +161,7 @@ Nathann
 archive/issue_comments_087049.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9249.patch](tarball://root/attachments/some-uuid/ticket9249/trac_9249.patch) by ncohen created at 2010-06-17 15:57:21",
     "created_at": "2010-06-17T15:57:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9249",
     "type": "issue_comment",
@@ -170,7 +170,7 @@ archive/issue_comments_087049.json:
 }
 ```
 
-Attachment
+Attachment [trac_9249.patch](tarball://root/attachments/some-uuid/ticket9249/trac_9249.patch) by ncohen created at 2010-06-17 15:57:21
 
 
 

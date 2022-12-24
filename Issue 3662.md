@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3662
 archive/issue_comments_025880.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3662-1.patch](tarball://root/attachments/some-uuid/ticket3662/trac_3662-1.patch) by mhansen created at 2008-08-06 16:46:24",
     "created_at": "2008-08-06T16:46:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3662",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_025880.json:
 }
 ```
 
-Attachment
+Attachment [trac_3662-1.patch](tarball://root/attachments/some-uuid/ticket3662/trac_3662-1.patch) by mhansen created at 2008-08-06 16:46:24
 
 
 
@@ -51,7 +51,7 @@ Attachment
 archive/issue_comments_025881.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3662-2.patch](tarball://root/attachments/some-uuid/ticket3662/trac_3662-2.patch) by mhansen created at 2008-08-06 16:46:50",
     "created_at": "2008-08-06T16:46:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3662",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_025881.json:
 }
 ```
 
-Attachment
+Attachment [trac_3662-2.patch](tarball://root/attachments/some-uuid/ticket3662/trac_3662-2.patch) by mhansen created at 2008-08-06 16:46:50
 
 
 
@@ -69,7 +69,7 @@ Attachment
 archive/issue_comments_025882.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3662-4.patch](tarball://root/attachments/some-uuid/ticket3662/trac_3662-4.patch) by mhansen created at 2008-08-06 16:47:07",
     "created_at": "2008-08-06T16:47:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3662",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_025882.json:
 }
 ```
 
-Attachment
+Attachment [trac_3662-4.patch](tarball://root/attachments/some-uuid/ticket3662/trac_3662-4.patch) by mhansen created at 2008-08-06 16:47:07
 
 
 
@@ -87,7 +87,7 @@ Attachment
 archive/issue_comments_025883.json:
 ```json
 {
-    "body": "Attachment\n\nCredit goes to Nicolas Thiery and Mike Hansen.",
+    "body": "Attachment [trac_3662-5.patch](tarball://root/attachments/some-uuid/ticket3662/trac_3662-5.patch) by mhansen created at 2008-08-06 19:17:18\n\nCredit goes to Nicolas Thiery and Mike Hansen.",
     "created_at": "2008-08-06T19:17:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3662",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_025883.json:
 }
 ```
 
-Attachment
+Attachment [trac_3662-5.patch](tarball://root/attachments/some-uuid/ticket3662/trac_3662-5.patch) by mhansen created at 2008-08-06 19:17:18
 
 Credit goes to Nicolas Thiery and Mike Hansen.
 
@@ -107,7 +107,7 @@ Credit goes to Nicolas Thiery and Mike Hansen.
 archive/issue_comments_025884.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3662-4.5.patch](tarball://root/attachments/some-uuid/ticket3662/trac_3662-4.5.patch) by mhansen created at 2008-08-06 22:06:54",
     "created_at": "2008-08-06T22:06:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3662",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_025884.json:
 }
 ```
 
-Attachment
+Attachment [trac_3662-4.5.patch](tarball://root/attachments/some-uuid/ticket3662/trac_3662-4.5.patch) by mhansen created at 2008-08-06 22:06:54
 
 
 

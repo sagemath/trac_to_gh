@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/848
 archive/issue_comments_005248.json:
 ```json
 {
-    "body": "Attachment\n\nSee the attached patch.",
+    "body": "Attachment [848-gsl_infinity.patch](tarball://root/attachments/some-uuid/ticket848/848-gsl_infinity.patch) by AlexGhitza created at 2008-04-13 03:38:44\n\nSee the attached patch.",
     "created_at": "2008-04-13T03:38:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/848",
     "type": "issue_comment",
@@ -41,7 +41,7 @@ archive/issue_comments_005248.json:
 }
 ```
 
-Attachment
+Attachment [848-gsl_infinity.patch](tarball://root/attachments/some-uuid/ticket848/848-gsl_infinity.patch) by AlexGhitza created at 2008-04-13 03:38:44
 
 See the attached patch.
 

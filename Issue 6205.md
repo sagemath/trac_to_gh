@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6205
 archive/issue_comments_049575.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6205-number_field-morphism-invert.patch](tarball://root/attachments/some-uuid/ticket6205/trac_6205-number_field-morphism-invert.patch) by mhansen created at 2009-06-04 05:35:23",
     "created_at": "2009-06-04T05:35:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6205",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_049575.json:
 }
 ```
 
-Attachment
+Attachment [trac_6205-number_field-morphism-invert.patch](tarball://root/attachments/some-uuid/ticket6205/trac_6205-number_field-morphism-invert.patch) by mhansen created at 2009-06-04 05:35:23
 
 
 

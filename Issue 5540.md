@@ -119,7 +119,7 @@ The attached patch fixes the problem for me.  I fixed the URLs by getting rid of
 archive/issue_comments_043100.json:
 ```json
 {
-    "body": "Attachment\n\nPatch solves the problem for me. The patch is also tiny, so while I'm not familiar with the code, I wouldn't expect it to cause any regressions.",
+    "body": "Attachment [5540.patch](tarball://root/attachments/some-uuid/ticket5540/5540.patch) by nbruin created at 2009-03-17 04:06:43\n\nPatch solves the problem for me. The patch is also tiny, so while I'm not familiar with the code, I wouldn't expect it to cause any regressions.",
     "created_at": "2009-03-17T04:06:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5540",
     "type": "issue_comment",
@@ -128,7 +128,7 @@ archive/issue_comments_043100.json:
 }
 ```
 
-Attachment
+Attachment [5540.patch](tarball://root/attachments/some-uuid/ticket5540/5540.patch) by nbruin created at 2009-03-17 04:06:43
 
 Patch solves the problem for me. The patch is also tiny, so while I'm not familiar with the code, I wouldn't expect it to cause any regressions.
 

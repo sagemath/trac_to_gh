@@ -69,7 +69,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_092696.json:
 ```json
 {
-    "body": "Attachment\n\nHi Harald,\n\nI'm sorry for the delay of looking at this carefully.  The code seems very clean and the example is helpful (and *really* important).  In any case, a couple of questions crossed my mind:\n\n#. Is it clear that a program to schedule lectures should be part of Sage?  I'm not saying it shouldn't be - it's hardly for me to decide.  I don't want to judge the usefulness of this program either.  But it's clearly slightly off the core mathematical track when compared to, say, integer addition :).  (Just to bring up a completely random example, should Sage also contain a Connect Four solver, say?)\n\n#. It seems clear that the usage of this class would be largely driven by the examples.  As such I think there should be at least one example showing how the program deals with clashes which cannot be avoided.  Does it just abort the generation of the schedule altogether?  Or does it minimize the number of lectures affected?\n\n#. It's not quite clear to me how this scales to large real-world examples.  Is there a way to obtain suitable input data to test this?\n\nBest wishes,\n\nSebastian",
+    "body": "Attachment [9586-lecturescheduler.patch](tarball://root/attachments/some-uuid/ticket9586/9586-lecturescheduler.patch) by spancratz created at 2010-07-29 14:01:40\n\nHi Harald,\n\nI'm sorry for the delay of looking at this carefully.  The code seems very clean and the example is helpful (and *really* important).  In any case, a couple of questions crossed my mind:\n\n#. Is it clear that a program to schedule lectures should be part of Sage?  I'm not saying it shouldn't be - it's hardly for me to decide.  I don't want to judge the usefulness of this program either.  But it's clearly slightly off the core mathematical track when compared to, say, integer addition :).  (Just to bring up a completely random example, should Sage also contain a Connect Four solver, say?)\n\n#. It seems clear that the usage of this class would be largely driven by the examples.  As such I think there should be at least one example showing how the program deals with clashes which cannot be avoided.  Does it just abort the generation of the schedule altogether?  Or does it minimize the number of lectures affected?\n\n#. It's not quite clear to me how this scales to large real-world examples.  Is there a way to obtain suitable input data to test this?\n\nBest wishes,\n\nSebastian",
     "created_at": "2010-07-29T14:01:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9586",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_092696.json:
 }
 ```
 
-Attachment
+Attachment [9586-lecturescheduler.patch](tarball://root/attachments/some-uuid/ticket9586/9586-lecturescheduler.patch) by spancratz created at 2010-07-29 14:01:40
 
 Hi Harald,
 

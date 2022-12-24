@@ -76,7 +76,7 @@ Thanks Nick, that will be very helpful.  It's unlikely that we will conflict.  T
 archive/issue_comments_016836.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8866.patch](tarball://root/attachments/some-uuid/ticket2485/8866.patch) by cremona created at 2008-03-14 17:56:02",
     "created_at": "2008-03-14T17:56:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2485",
     "type": "issue_comment",
@@ -85,7 +85,7 @@ archive/issue_comments_016836.json:
 }
 ```
 
-Attachment
+Attachment [8866.patch](tarball://root/attachments/some-uuid/ticket2485/8866.patch) by cremona created at 2008-03-14 17:56:02
 
 
 
@@ -233,7 +233,7 @@ and change the code to raise ValueError; it seems more appropriate than KeyError
 archive/issue_comments_016840.json:
 ```json
 {
-    "body": "Attachment\n\nApply after 8866.patch",
+    "body": "Attachment [8867.patch](tarball://root/attachments/some-uuid/ticket2485/8867.patch) by cremona created at 2008-03-14 19:52:28\n\nApply after 8866.patch",
     "created_at": "2008-03-14T19:52:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2485",
     "type": "issue_comment",
@@ -242,7 +242,7 @@ archive/issue_comments_016840.json:
 }
 ```
 
-Attachment
+Attachment [8867.patch](tarball://root/attachments/some-uuid/ticket2485/8867.patch) by cremona created at 2008-03-14 19:52:28
 
 Apply after 8866.patch
 

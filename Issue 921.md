@@ -168,7 +168,7 @@ sage: integrate(1/x^3,x,0,1)
 archive/issue_comments_005648.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [921.patch](tarball://root/attachments/some-uuid/ticket921/921.patch) by mhansen created at 2007-10-24 00:38:52",
     "created_at": "2007-10-24T00:38:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/921",
     "type": "issue_comment",
@@ -177,7 +177,7 @@ archive/issue_comments_005648.json:
 }
 ```
 
-Attachment
+Attachment [921.patch](tarball://root/attachments/some-uuid/ticket921/921.patch) by mhansen created at 2007-10-24 00:38:52
 
 
 

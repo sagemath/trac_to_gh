@@ -194,7 +194,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_098584.json:
 ```json
 {
-    "body": "Attachment\n\nYou're still using the list syntax for constraint addition loops at the end of the patch:\n\n```\n[p.add_constraint(d[u]-d[v]+n*(b[u]+b[v]),min=1) for (u,v) in self.edges(labels=None)] \n[p.add_constraint(d[u],max=n) for u in self]\n```\n\n\nOther than that, this patch looks good. All long tests pass against sage-4.6.1.rc1 and I'm otherwise happy. Fix the one issue, ping me and I'll set this to positive review.",
+    "body": "Attachment [trac_9911.patch](tarball://root/attachments/some-uuid/ticket9911/trac_9911.patch) by rlm created at 2011-01-12 01:42:33\n\nYou're still using the list syntax for constraint addition loops at the end of the patch:\n\n```\n[p.add_constraint(d[u]-d[v]+n*(b[u]+b[v]),min=1) for (u,v) in self.edges(labels=None)] \n[p.add_constraint(d[u],max=n) for u in self]\n```\n\n\nOther than that, this patch looks good. All long tests pass against sage-4.6.1.rc1 and I'm otherwise happy. Fix the one issue, ping me and I'll set this to positive review.",
     "created_at": "2011-01-12T01:42:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9910",
     "type": "issue_comment",
@@ -203,7 +203,7 @@ archive/issue_comments_098584.json:
 }
 ```
 
-Attachment
+Attachment [trac_9911.patch](tarball://root/attachments/some-uuid/ticket9911/trac_9911.patch) by rlm created at 2011-01-12 01:42:33
 
 You're still using the list syntax for constraint addition loops at the end of the patch:
 
@@ -240,7 +240,7 @@ Added a small patch fixing the last two list comprehension liness.
 archive/issue_comments_098586.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9911_fix.patch](tarball://root/attachments/some-uuid/ticket9911/9911_fix.patch) by gbe created at 2011-01-12 01:56:53",
     "created_at": "2011-01-12T01:56:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9910",
     "type": "issue_comment",
@@ -249,7 +249,7 @@ archive/issue_comments_098586.json:
 }
 ```
 
-Attachment
+Attachment [9911_fix.patch](tarball://root/attachments/some-uuid/ticket9911/9911_fix.patch) by gbe created at 2011-01-12 01:56:53
 
 
 

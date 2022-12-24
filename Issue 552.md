@@ -101,7 +101,7 @@ Michael
 archive/issue_comments_002847.json:
 ```json
 {
-    "body": "Attachment\n\nos.path.realpath() takes care of symlinks.\n\nIt's that simple folks.",
+    "body": "Attachment [trac_552.patch](tarball://root/attachments/some-uuid/ticket552/trac_552.patch) by anakha created at 2008-10-23 23:24:24\n\nos.path.realpath() takes care of symlinks.\n\nIt's that simple folks.",
     "created_at": "2008-10-23T23:24:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/552",
     "type": "issue_comment",
@@ -110,7 +110,7 @@ archive/issue_comments_002847.json:
 }
 ```
 
-Attachment
+Attachment [trac_552.patch](tarball://root/attachments/some-uuid/ticket552/trac_552.patch) by anakha created at 2008-10-23 23:24:24
 
 os.path.realpath() takes care of symlinks.
 

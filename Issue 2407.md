@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2407
 archive/issue_comments_016252.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-2407_1.patch](tarball://root/attachments/some-uuid/ticket2407/sage-2407_1.patch) by TimothyClemans created at 2008-09-29 18:48:38",
     "created_at": "2008-09-29T18:48:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2407",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_016252.json:
 }
 ```
 
-Attachment
+Attachment [sage-2407_1.patch](tarball://root/attachments/some-uuid/ticket2407/sage-2407_1.patch) by TimothyClemans created at 2008-09-29 18:48:38
 
 
 
@@ -53,7 +53,7 @@ Attachment
 archive/issue_comments_016253.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-2407_2.patch](tarball://root/attachments/some-uuid/ticket2407/sage-2407_2.patch) by TimothyClemans created at 2008-09-29 18:48:57",
     "created_at": "2008-09-29T18:48:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2407",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_016253.json:
 }
 ```
 
-Attachment
+Attachment [sage-2407_2.patch](tarball://root/attachments/some-uuid/ticket2407/sage-2407_2.patch) by TimothyClemans created at 2008-09-29 18:48:57
 
 
 
@@ -71,7 +71,7 @@ Attachment
 archive/issue_comments_016254.json:
 ```json
 {
-    "body": "Attachment\n\nTicket has been rebased. Apply all 3 patches.",
+    "body": "Attachment [sage-2407_3.patch](tarball://root/attachments/some-uuid/ticket2407/sage-2407_3.patch) by TimothyClemans created at 2008-09-29 18:49:49\n\nTicket has been rebased. Apply all 3 patches.",
     "created_at": "2008-09-29T18:49:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2407",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_016254.json:
 }
 ```
 
-Attachment
+Attachment [sage-2407_3.patch](tarball://root/attachments/some-uuid/ticket2407/sage-2407_3.patch) by TimothyClemans created at 2008-09-29 18:49:49
 
 Ticket has been rebased. Apply all 3 patches.
 

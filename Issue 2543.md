@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2543
 archive/issue_comments_017338.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good and doctests pass.",
+    "body": "Attachment [trac-2543.patch](tarball://root/attachments/some-uuid/ticket2543/trac-2543.patch) by AlexGhitza created at 2008-03-16 04:00:05\n\nLooks good and doctests pass.",
     "created_at": "2008-03-16T04:00:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2543",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_017338.json:
 }
 ```
 
-Attachment
+Attachment [trac-2543.patch](tarball://root/attachments/some-uuid/ticket2543/trac-2543.patch) by AlexGhitza created at 2008-03-16 04:00:05
 
 Looks good and doctests pass.
 

@@ -74,7 +74,7 @@ Changing assignee from was to boothby.
 archive/issue_comments_012188.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [pretty-print.patch](tarball://root/attachments/some-uuid/ticket1922/pretty-print.patch) by jason created at 2008-01-25 08:03:56",
     "created_at": "2008-01-25T08:03:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1922",
     "type": "issue_comment",
@@ -83,7 +83,7 @@ archive/issue_comments_012188.json:
 }
 ```
 
-Attachment
+Attachment [pretty-print.patch](tarball://root/attachments/some-uuid/ticket1922/pretty-print.patch) by jason created at 2008-01-25 08:03:56
 
 
 

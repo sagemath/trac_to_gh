@@ -86,7 +86,7 @@ Changing status from new to needs_review.
 archive/issue_comments_062673.json:
 ```json
 {
-    "body": "Attachment\n\nNotes:\n\n* This depends on #7428.\n* I assume it's OK to call `worksheet.save` in `notebook._initialize_worksheet`.\n* `TestWorksheetList.test_searching_for_worksheets` no longer fails --- it now yields an error.",
+    "body": "Attachment [trac_7444-search_after_publish.patch](tarball://root/attachments/some-uuid/ticket7444/trac_7444-search_after_publish.patch) by mpatel created at 2009-11-12 14:33:03\n\nNotes:\n\n* This depends on #7428.\n* I assume it's OK to call `worksheet.save` in `notebook._initialize_worksheet`.\n* `TestWorksheetList.test_searching_for_worksheets` no longer fails --- it now yields an error.",
     "created_at": "2009-11-12T14:33:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7444",
     "type": "issue_comment",
@@ -95,7 +95,7 @@ archive/issue_comments_062673.json:
 }
 ```
 
-Attachment
+Attachment [trac_7444-search_after_publish.patch](tarball://root/attachments/some-uuid/ticket7444/trac_7444-search_after_publish.patch) by mpatel created at 2009-11-12 14:33:03
 
 Notes:
 

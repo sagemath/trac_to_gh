@@ -88,7 +88,7 @@ and
 archive/issue_comments_044511.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5693.patch](tarball://root/attachments/some-uuid/ticket5693/trac_5693.patch) by was created at 2009-04-06 17:08:17",
     "created_at": "2009-04-06T17:08:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5693",
     "type": "issue_comment",
@@ -97,7 +97,7 @@ archive/issue_comments_044511.json:
 }
 ```
 
-Attachment
+Attachment [trac_5693.patch](tarball://root/attachments/some-uuid/ticket5693/trac_5693.patch) by was created at 2009-04-06 17:08:17
 
 
 

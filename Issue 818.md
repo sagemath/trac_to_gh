@@ -46,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/818
 archive/issue_comments_005080.json:
 ```json
 {
-    "body": "Attachment\n\nconvert to cython bundle",
+    "body": "Attachment [prod.hg](tarball://root/attachments/some-uuid/ticket818/prod.hg) by jbmohler created at 2007-10-04 01:34:05\n\nconvert to cython bundle",
     "created_at": "2007-10-04T01:34:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/818",
     "type": "issue_comment",
@@ -55,7 +55,7 @@ archive/issue_comments_005080.json:
 }
 ```
 
-Attachment
+Attachment [prod.hg](tarball://root/attachments/some-uuid/ticket818/prod.hg) by jbmohler created at 2007-10-04 01:34:05
 
 convert to cython bundle
 

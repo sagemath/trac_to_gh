@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1902
 archive/issue_comments_012042.json:
 ```json
 {
-    "body": "Attachment\n\nAttached patch corrects the docstring and adds a new doctest which is relevant,",
+    "body": "Attachment [8683.patch](tarball://root/attachments/some-uuid/ticket1902/8683.patch) by cremona created at 2008-03-01 16:31:24\n\nAttached patch corrects the docstring and adds a new doctest which is relevant,",
     "created_at": "2008-03-01T16:31:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1902",
     "type": "issue_comment",
@@ -53,7 +53,7 @@ archive/issue_comments_012042.json:
 }
 ```
 
-Attachment
+Attachment [8683.patch](tarball://root/attachments/some-uuid/ticket1902/8683.patch) by cremona created at 2008-03-01 16:31:24
 
 Attached patch corrects the docstring and adds a new doctest which is relevant,
 
@@ -100,7 +100,7 @@ Changing assignee from somebody to cremona.
 archive/issue_comments_012045.json:
 ```json
 {
-    "body": "Attachment\n\nI hand-edited John's original 8683.patch to create edited-8683.patch: I changed \"primitve\" -> \"primitive\".\n\nWith this revised patch: looks good, the doctest passes.",
+    "body": "Attachment [edited-8683.patch](tarball://root/attachments/some-uuid/ticket1902/edited-8683.patch) by cwitty created at 2008-03-01 18:12:33\n\nI hand-edited John's original 8683.patch to create edited-8683.patch: I changed \"primitve\" -> \"primitive\".\n\nWith this revised patch: looks good, the doctest passes.",
     "created_at": "2008-03-01T18:12:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1902",
     "type": "issue_comment",
@@ -109,7 +109,7 @@ archive/issue_comments_012045.json:
 }
 ```
 
-Attachment
+Attachment [edited-8683.patch](tarball://root/attachments/some-uuid/ticket1902/edited-8683.patch) by cwitty created at 2008-03-01 18:12:33
 
 I hand-edited John's original 8683.patch to create edited-8683.patch: I changed "primitve" -> "primitive".
 

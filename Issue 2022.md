@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2022
 archive/issue_comments_013056.json:
 ```json
 {
-    "body": "Attachment\n\nPatch looks good to me.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac-2022.patch](tarball://root/attachments/some-uuid/ticket2022/trac-2022.patch) by mabshoff created at 2008-02-01 04:02:43\n\nPatch looks good to me.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-01T04:02:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2022",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_013056.json:
 }
 ```
 
-Attachment
+Attachment [trac-2022.patch](tarball://root/attachments/some-uuid/ticket2022/trac-2022.patch) by mabshoff created at 2008-02-01 04:02:43
 
 Patch looks good to me.
 

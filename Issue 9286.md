@@ -89,7 +89,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9286
 archive/issue_comments_087462.json:
 ```json
 {
-    "body": "Attachment\n\nMercurial patch to add an spkg-check to enable self-tests",
+    "body": "Attachment [9286.patch](tarball://root/attachments/some-uuid/ticket9286/9286.patch) by drkirkby created at 2010-06-20 21:49:36\n\nMercurial patch to add an spkg-check to enable self-tests",
     "created_at": "2010-06-20T21:49:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9286",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_087462.json:
 }
 ```
 
-Attachment
+Attachment [9286.patch](tarball://root/attachments/some-uuid/ticket9286/9286.patch) by drkirkby created at 2010-06-20 21:49:36
 
 Mercurial patch to add an spkg-check to enable self-tests
 

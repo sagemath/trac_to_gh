@@ -71,7 +71,7 @@ Changing assignee from cwitty to mabshoff.
 archive/issue_comments_007312.json:
 ```json
 {
-    "body": "Attachment\n\nThe updated spkg is at \n\nhttp://sage.math.washington.edu/home/mabshoff/ntl-5.4.1.p7.spkg\n\nYou need to apply both the patch and add the ntl.spkg.\n\nCheers,\n\nMichael",
+    "body": "Attachment [Sage-2.8.15.alpha1-twiddle-with-link-order.patch](tarball://root/attachments/some-uuid/ticket1184/Sage-2.8.15.alpha1-twiddle-with-link-order.patch) by mabshoff created at 2007-12-02 02:55:56\n\nThe updated spkg is at \n\nhttp://sage.math.washington.edu/home/mabshoff/ntl-5.4.1.p7.spkg\n\nYou need to apply both the patch and add the ntl.spkg.\n\nCheers,\n\nMichael",
     "created_at": "2007-12-02T02:55:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1184",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_007312.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.8.15.alpha1-twiddle-with-link-order.patch](tarball://root/attachments/some-uuid/ticket1184/Sage-2.8.15.alpha1-twiddle-with-link-order.patch) by mabshoff created at 2007-12-02 02:55:56
 
 The updated spkg is at 
 

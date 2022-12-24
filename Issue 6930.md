@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6930
 archive/issue_comments_057281.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6930_axes3d_frame_label.patch](tarball://root/attachments/some-uuid/ticket6930/trac_6930_axes3d_frame_label.patch) by jason created at 2009-09-15 04:08:07",
     "created_at": "2009-09-15T04:08:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6930",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_057281.json:
 }
 ```
 
-Attachment
+Attachment [trac_6930_axes3d_frame_label.patch](tarball://root/attachments/some-uuid/ticket6930/trac_6930_axes3d_frame_label.patch) by jason created at 2009-09-15 04:08:07
 
 
 

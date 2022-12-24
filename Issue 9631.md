@@ -142,7 +142,7 @@ See #10098's [comment:ticket:10098:9 comment 9ff] for a proposed possible soluti
 archive/issue_comments_093325.json:
 ```json
 {
-    "body": "Attachment\n\nVersion of #9501's v2, rebased for 4.6.rc0.",
+    "body": "Attachment [trac_9631-fork_decorator.patch](tarball://root/attachments/some-uuid/ticket9631/trac_9631-fork_decorator.patch) by mpatel created at 2010-10-22 08:00:52\n\nVersion of #9501's v2, rebased for 4.6.rc0.",
     "created_at": "2010-10-22T08:00:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9631",
     "type": "issue_comment",
@@ -151,7 +151,7 @@ archive/issue_comments_093325.json:
 }
 ```
 
-Attachment
+Attachment [trac_9631-fork_decorator.patch](tarball://root/attachments/some-uuid/ticket9631/trac_9631-fork_decorator.patch) by mpatel created at 2010-10-22 08:00:52
 
 Version of #9501's v2, rebased for 4.6.rc0.
 
@@ -198,7 +198,7 @@ Changing status from new to needs_review.
 archive/issue_comments_093328.json:
 ```json
 {
-    "body": "Attachment\n\nRediffed for sage-4.7.1.rc1",
+    "body": "Attachment [trac_9631-fork_decorator.2.patch](tarball://root/attachments/some-uuid/ticket9631/trac_9631-fork_decorator.2.patch) by vbraun created at 2011-08-03 09:58:50\n\nRediffed for sage-4.7.1.rc1",
     "created_at": "2011-08-03T09:58:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9631",
     "type": "issue_comment",
@@ -207,7 +207,7 @@ archive/issue_comments_093328.json:
 }
 ```
 
-Attachment
+Attachment [trac_9631-fork_decorator.2.patch](tarball://root/attachments/some-uuid/ticket9631/trac_9631-fork_decorator.2.patch) by vbraun created at 2011-08-03 09:58:50
 
 Rediffed for sage-4.7.1.rc1
 
@@ -254,7 +254,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_093331.json:
 ```json
 {
-    "body": "Attachment\n\nI've updated the patch for Sage-4.7.1, there were some rejects due to changed docstrings. I didn't touch any actual functionality. \n\nThe actual workings of the fork decorator look good. Positive review.",
+    "body": "Attachment [trac_9631-fork_decorator.3.patch](tarball://root/attachments/some-uuid/ticket9631/trac_9631-fork_decorator.3.patch) by vbraun created at 2011-08-03 10:53:24\n\nI've updated the patch for Sage-4.7.1, there were some rejects due to changed docstrings. I didn't touch any actual functionality. \n\nThe actual workings of the fork decorator look good. Positive review.",
     "created_at": "2011-08-03T10:53:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9631",
     "type": "issue_comment",
@@ -263,7 +263,7 @@ archive/issue_comments_093331.json:
 }
 ```
 
-Attachment
+Attachment [trac_9631-fork_decorator.3.patch](tarball://root/attachments/some-uuid/ticket9631/trac_9631-fork_decorator.3.patch) by vbraun created at 2011-08-03 10:53:24
 
 I've updated the patch for Sage-4.7.1, there were some rejects due to changed docstrings. I didn't touch any actual functionality. 
 
@@ -296,7 +296,7 @@ Related (but *should<sup>TM</sup>* apply independently, haven't tested this yet)
 archive/issue_comments_093333.json:
 ```json
 {
-    "body": "Attachment\n\npolished docstrings fixing some typos.",
+    "body": "Attachment [trac_9631-fork_decorator.4.patch](tarball://root/attachments/some-uuid/ticket9631/trac_9631-fork_decorator.4.patch) by was created at 2011-08-15 02:49:43\n\npolished docstrings fixing some typos.",
     "created_at": "2011-08-15T02:49:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9631",
     "type": "issue_comment",
@@ -305,7 +305,7 @@ archive/issue_comments_093333.json:
 }
 ```
 
-Attachment
+Attachment [trac_9631-fork_decorator.4.patch](tarball://root/attachments/some-uuid/ticket9631/trac_9631-fork_decorator.4.patch) by was created at 2011-08-15 02:49:43
 
 polished docstrings fixing some typos.
 
@@ -661,7 +661,7 @@ Diff between v4 (William's) and v5 (Leif's) patch. For reference / review only.
 archive/issue_comments_093341.json:
 ```json
 {
-    "body": "Attachment\n\nSome more docstring fixes.",
+    "body": "Attachment [trac_9631-fork_decorator.4-5.diff](tarball://root/attachments/some-uuid/ticket9631/trac_9631-fork_decorator.4-5.diff) by leif created at 2011-08-15 08:26:45\n\nSome more docstring fixes.",
     "created_at": "2011-08-15T08:26:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9631",
     "type": "issue_comment",
@@ -670,7 +670,7 @@ archive/issue_comments_093341.json:
 }
 ```
 
-Attachment
+Attachment [trac_9631-fork_decorator.4-5.diff](tarball://root/attachments/some-uuid/ticket9631/trac_9631-fork_decorator.4-5.diff) by leif created at 2011-08-15 08:26:45
 
 Some more docstring fixes.
 
@@ -681,7 +681,7 @@ Some more docstring fixes.
 archive/issue_comments_093342.json:
 ```json
 {
-    "body": "Attachment\n\nOk, attached a v5 patch, and a diff between William's v4 and my version.\n\nTake a look at it, haven't updated the description yet.\n\nHope I didn't miss something, as I had to redo almost all from scratch, because some very weird things must have happened. Not only did the editor confuse files, presumably due to renaming and symbolic links, but also my first committed and exported version completely vanished from the Mercurial repository, which must be some weird bug related to cloning  and rebuilding a branch.",
+    "body": "Attachment [trac_9631-fork_decorator.5.patch](tarball://root/attachments/some-uuid/ticket9631/trac_9631-fork_decorator.5.patch) by leif created at 2011-08-15 08:40:32\n\nOk, attached a v5 patch, and a diff between William's v4 and my version.\n\nTake a look at it, haven't updated the description yet.\n\nHope I didn't miss something, as I had to redo almost all from scratch, because some very weird things must have happened. Not only did the editor confuse files, presumably due to renaming and symbolic links, but also my first committed and exported version completely vanished from the Mercurial repository, which must be some weird bug related to cloning  and rebuilding a branch.",
     "created_at": "2011-08-15T08:40:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9631",
     "type": "issue_comment",
@@ -690,7 +690,7 @@ archive/issue_comments_093342.json:
 }
 ```
 
-Attachment
+Attachment [trac_9631-fork_decorator.5.patch](tarball://root/attachments/some-uuid/ticket9631/trac_9631-fork_decorator.5.patch) by leif created at 2011-08-15 08:40:32
 
 Ok, attached a v5 patch, and a diff between William's v4 and my version.
 

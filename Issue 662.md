@@ -149,7 +149,7 @@ Changing status from assigned to new.
 archive/issue_comments_003445.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [firefox-crash-bugfix.patch](tarball://root/attachments/some-uuid/ticket662/firefox-crash-bugfix.patch) by malb created at 2007-10-05 10:09:58",
     "created_at": "2007-10-05T10:09:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/662",
     "type": "issue_comment",
@@ -158,7 +158,7 @@ archive/issue_comments_003445.json:
 }
 ```
 
-Attachment
+Attachment [firefox-crash-bugfix.patch](tarball://root/attachments/some-uuid/ticket662/firefox-crash-bugfix.patch) by malb created at 2007-10-05 10:09:58
 
 
 

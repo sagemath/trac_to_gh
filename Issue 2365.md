@@ -77,7 +77,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2365
 archive/issue_comments_015961.json:
 ```json
 {
-    "body": "Attachment\n\nThis seems good.",
+    "body": "Attachment [attach-ipython-threads.patch](tarball://root/attachments/some-uuid/ticket2365/attach-ipython-threads.patch) by gfurnish created at 2008-03-03 05:02:49\n\nThis seems good.",
     "created_at": "2008-03-03T05:02:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2365",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_015961.json:
 }
 ```
 
-Attachment
+Attachment [attach-ipython-threads.patch](tarball://root/attachments/some-uuid/ticket2365/attach-ipython-threads.patch) by gfurnish created at 2008-03-03 05:02:49
 
 This seems good.
 

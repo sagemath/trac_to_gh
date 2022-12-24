@@ -49,7 +49,7 @@ Algorithm 8.3.8 of Jungnickel's Graphs, Networks and Algorithms, for example.
 archive/issue_comments_018513.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.",
+    "body": "Attachment [2689-blocks-cut-verts.patch](tarball://root/attachments/some-uuid/ticket2689/2689-blocks-cut-verts.patch) by mhansen created at 2008-03-28 23:17:59\n\nLooks good to me.",
     "created_at": "2008-03-28T23:17:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2689",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_018513.json:
 }
 ```
 
-Attachment
+Attachment [2689-blocks-cut-verts.patch](tarball://root/attachments/some-uuid/ticket2689/2689-blocks-cut-verts.patch) by mhansen created at 2008-03-28 23:17:59
 
 Looks good to me.
 

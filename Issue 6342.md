@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6342
 archive/issue_comments_050670.json:
 ```json
 {
-    "body": "Attachment\n\nUnder Ubuntu j & firefox, I can repeatably hit an infinite memory consumption:\n\n1. Switch into slideshow mode\n2. Shift-click to create an html cell above the first cell\n3. Enter the text, `This is some $foo$`\n4. Shift-enter to save the html cell\n5. Shift-click to edit the html cell just created\n6. Quickly kill firefox before it takes down your system.",
+    "body": "Attachment [trac_6342.patch](tarball://root/attachments/some-uuid/ticket6342/trac_6342.patch) by boothby created at 2009-06-16 22:41:23\n\nUnder Ubuntu j & firefox, I can repeatably hit an infinite memory consumption:\n\n1. Switch into slideshow mode\n2. Shift-click to create an html cell above the first cell\n3. Enter the text, `This is some $foo$`\n4. Shift-enter to save the html cell\n5. Shift-click to edit the html cell just created\n6. Quickly kill firefox before it takes down your system.",
     "created_at": "2009-06-16T22:41:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6342",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_050670.json:
 }
 ```
 
-Attachment
+Attachment [trac_6342.patch](tarball://root/attachments/some-uuid/ticket6342/trac_6342.patch) by boothby created at 2009-06-16 22:41:23
 
 Under Ubuntu j & firefox, I can repeatably hit an infinite memory consumption:
 
@@ -80,7 +80,7 @@ Step 1 may be omitted, this bug is active in normal mode.  Step 5 should read, "
 archive/issue_comments_050672.json:
 ```json
 {
-    "body": "Attachment\n\na tiny little bugfix",
+    "body": "Attachment [trac_6342-part2.patch](tarball://root/attachments/some-uuid/ticket6342/trac_6342-part2.patch) by was created at 2009-06-17 10:28:59\n\na tiny little bugfix",
     "created_at": "2009-06-17T10:28:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6342",
     "type": "issue_comment",
@@ -89,7 +89,7 @@ archive/issue_comments_050672.json:
 }
 ```
 
-Attachment
+Attachment [trac_6342-part2.patch](tarball://root/attachments/some-uuid/ticket6342/trac_6342-part2.patch) by was created at 2009-06-17 10:28:59
 
 a tiny little bugfix
 
@@ -100,7 +100,7 @@ a tiny little bugfix
 archive/issue_comments_050673.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6342-part3.patch](tarball://root/attachments/some-uuid/ticket6342/trac_6342-part3.patch) by was created at 2009-06-17 10:29:12",
     "created_at": "2009-06-17T10:29:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6342",
     "type": "issue_comment",
@@ -109,7 +109,7 @@ archive/issue_comments_050673.json:
 }
 ```
 
-Attachment
+Attachment [trac_6342-part3.patch](tarball://root/attachments/some-uuid/ticket6342/trac_6342-part3.patch) by was created at 2009-06-17 10:29:12
 
 
 
@@ -136,7 +136,7 @@ make it so slides delimited by text cells with <hr>'s; lighten up control css
 archive/issue_comments_050675.json:
 ```json
 {
-    "body": "Attachment\n\nProblems:\n\n1. Shift-enter is broken in html cells\n2. Up & down buttons are completely broken (as are the pgup/pgdn keys):\n   a. Without any <hr> tags, nothing happens at all\n   b. With one <hr> tag, one can view either the first cell or just the text cell with the <hr> all by itself.\n \nComments:\n\n1. I liked the previous version which showed cells after the current one.\n2. It would be nice if you didn't have to have your mouse in a cell for the pgdn/pgup keys to work. (this would take some effort, as we have no global key handling right now -- so this should be handled in another ticket)",
+    "body": "Attachment [trac_6342-part4.patch](tarball://root/attachments/some-uuid/ticket6342/trac_6342-part4.patch) by boothby created at 2009-06-17 20:39:58\n\nProblems:\n\n1. Shift-enter is broken in html cells\n2. Up & down buttons are completely broken (as are the pgup/pgdn keys):\n   a. Without any <hr> tags, nothing happens at all\n   b. With one <hr> tag, one can view either the first cell or just the text cell with the <hr> all by itself.\n \nComments:\n\n1. I liked the previous version which showed cells after the current one.\n2. It would be nice if you didn't have to have your mouse in a cell for the pgdn/pgup keys to work. (this would take some effort, as we have no global key handling right now -- so this should be handled in another ticket)",
     "created_at": "2009-06-17T20:39:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6342",
     "type": "issue_comment",
@@ -145,7 +145,7 @@ archive/issue_comments_050675.json:
 }
 ```
 
-Attachment
+Attachment [trac_6342-part4.patch](tarball://root/attachments/some-uuid/ticket6342/trac_6342-part4.patch) by boothby created at 2009-06-17 20:39:58
 
 Problems:
 
@@ -226,7 +226,7 @@ It's going to be a lot more work to implement the counter to show the frames, an
 archive/issue_comments_050678.json:
 ```json
 {
-    "body": "Attachment\n\nSlideshow mode now works, shift-enter on HTML cells is still broken.",
+    "body": "Attachment [trac_6342-part5.patch](tarball://root/attachments/some-uuid/ticket6342/trac_6342-part5.patch) by boothby created at 2009-06-17 23:46:01\n\nSlideshow mode now works, shift-enter on HTML cells is still broken.",
     "created_at": "2009-06-17T23:46:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6342",
     "type": "issue_comment",
@@ -235,7 +235,7 @@ archive/issue_comments_050678.json:
 }
 ```
 
-Attachment
+Attachment [trac_6342-part5.patch](tarball://root/attachments/some-uuid/ticket6342/trac_6342-part5.patch) by boothby created at 2009-06-17 23:46:01
 
 Slideshow mode now works, shift-enter on HTML cells is still broken.
 

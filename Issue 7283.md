@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7283
 archive/issue_comments_060612.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7283-ref.patch](tarball://root/attachments/some-uuid/ticket7283/trac_7283-ref.patch) by jhpalmieri created at 2009-11-24 18:15:09",
     "created_at": "2009-11-24T18:15:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7283",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_060612.json:
 }
 ```
 
-Attachment
+Attachment [trac_7283-ref.patch](tarball://root/attachments/some-uuid/ticket7283/trac_7283-ref.patch) by jhpalmieri created at 2009-11-24 18:15:09
 
 
 

@@ -73,7 +73,7 @@ shortcut patch for extcode repository
 archive/issue_comments_029362.json:
 ```json
 {
-    "body": "Attachment\n\nshortcut patch for main repository",
+    "body": "Attachment [shortcut_extcode.patch](tarball://root/attachments/some-uuid/ticket4069/shortcut_extcode.patch) by ahupfer created at 2008-11-02 21:23:42\n\nshortcut patch for main repository",
     "created_at": "2008-11-02T21:23:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4069",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_029362.json:
 }
 ```
 
-Attachment
+Attachment [shortcut_extcode.patch](tarball://root/attachments/some-uuid/ticket4069/shortcut_extcode.patch) by ahupfer created at 2008-11-02 21:23:42
 
 shortcut patch for main repository
 
@@ -93,7 +93,7 @@ shortcut patch for main repository
 archive/issue_comments_029363.json:
 ```json
 {
-    "body": "Attachment\n\nThe images aren't in either of the patches. I think you have to do ` hg export --git `",
+    "body": "Attachment [shortcut_sage.patch](tarball://root/attachments/some-uuid/ticket4069/shortcut_sage.patch) by TimothyClemans created at 2008-11-10 02:33:41\n\nThe images aren't in either of the patches. I think you have to do ` hg export --git `",
     "created_at": "2008-11-10T02:33:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4069",
     "type": "issue_comment",
@@ -102,7 +102,7 @@ archive/issue_comments_029363.json:
 }
 ```
 
-Attachment
+Attachment [shortcut_sage.patch](tarball://root/attachments/some-uuid/ticket4069/shortcut_sage.patch) by TimothyClemans created at 2008-11-10 02:33:41
 
 The images aren't in either of the patches. I think you have to do ` hg export --git `
 
@@ -205,7 +205,7 @@ Michael
 archive/issue_comments_029368.json:
 ```json
 {
-    "body": "Attachment\n\nRebased",
+    "body": "Attachment [sage-4069_2.patch](tarball://root/attachments/some-uuid/ticket4069/sage-4069_2.patch) by TimothyClemans created at 2008-12-22 18:35:48\n\nRebased",
     "created_at": "2008-12-22T18:35:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4069",
     "type": "issue_comment",
@@ -214,7 +214,7 @@ archive/issue_comments_029368.json:
 }
 ```
 
-Attachment
+Attachment [sage-4069_2.patch](tarball://root/attachments/some-uuid/ticket4069/sage-4069_2.patch) by TimothyClemans created at 2008-12-22 18:35:48
 
 Rebased
 

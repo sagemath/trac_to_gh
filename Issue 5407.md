@@ -118,7 +118,7 @@ This is an updated Version of Wiliam's patch
 archive/issue_comments_041797.json:
 ```json
 {
-    "body": "Attachment\n\nOk, the problem has been fixed.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_5407.patch](tarball://root/attachments/some-uuid/ticket5407/trac_5407.patch) by mabshoff created at 2009-03-02 04:31:12\n\nOk, the problem has been fixed.\n\nCheers,\n\nMichael",
     "created_at": "2009-03-02T04:31:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5407",
     "type": "issue_comment",
@@ -127,7 +127,7 @@ archive/issue_comments_041797.json:
 }
 ```
 
-Attachment
+Attachment [trac_5407.patch](tarball://root/attachments/some-uuid/ticket5407/trac_5407.patch) by mabshoff created at 2009-03-02 04:31:12
 
 Ok, the problem has been fixed.
 

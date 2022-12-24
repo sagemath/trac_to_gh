@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/902
 archive/issue_comments_005541.json:
 ```json
 {
-    "body": "Attachment\n\nThe above patch implements this. \n\nI also added a bit of code to the ring __getitem__ method so constructions like ZZ[sqrt(2)] and QQ[I] work. I have not yet run \"sage -testall\"to make sure that it doesn't ruin any doctests elsewhere, but it should be good. It is also unclear how to handle names in this case, so the code there just names generators a, b, c, ... except for a couple of special cases.",
+    "body": "Attachment [symbolic-minpoly.hg](tarball://root/attachments/some-uuid/ticket902/symbolic-minpoly.hg) by robertwb created at 2007-10-15 19:49:01\n\nThe above patch implements this. \n\nI also added a bit of code to the ring __getitem__ method so constructions like ZZ[sqrt(2)] and QQ[I] work. I have not yet run \"sage -testall\"to make sure that it doesn't ruin any doctests elsewhere, but it should be good. It is also unclear how to handle names in this case, so the code there just names generators a, b, c, ... except for a couple of special cases.",
     "created_at": "2007-10-15T19:49:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/902",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_005541.json:
 }
 ```
 
-Attachment
+Attachment [symbolic-minpoly.hg](tarball://root/attachments/some-uuid/ticket902/symbolic-minpoly.hg) by robertwb created at 2007-10-15 19:49:01
 
 The above patch implements this. 
 

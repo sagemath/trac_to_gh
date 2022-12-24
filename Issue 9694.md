@@ -51,7 +51,7 @@ Preliminary version, no doctests, etc
 archive/issue_comments_094219.json:
 ```json
 {
-    "body": "Attachment\n\nPatch is a rough cut. Requires something in the 4.5.2 alpha/rc series to work.\n\nPosted here because of the hack to avoid having the `__call__` function in the derived class not get called during the initialization.\n\nSomewhere (once per invariant, I think) the creation of the optimized quotient module has a \"self()\" call that reaches all the way down into this class and if the optimized module is used for conversion, it just causes infinite recursion.  (Also happens with saving _orig_gens but that is more obvious).\n\nNeed for the conversion is described more fully at #9695.  Help or advice needed!",
+    "body": "Attachment [trac_9694-cyclic-group-product-v0.patch](tarball://root/attachments/some-uuid/ticket9694/trac_9694-cyclic-group-product-v0.patch) by rbeezer created at 2010-08-06 03:25:50\n\nPatch is a rough cut. Requires something in the 4.5.2 alpha/rc series to work.\n\nPosted here because of the hack to avoid having the `__call__` function in the derived class not get called during the initialization.\n\nSomewhere (once per invariant, I think) the creation of the optimized quotient module has a \"self()\" call that reaches all the way down into this class and if the optimized module is used for conversion, it just causes infinite recursion.  (Also happens with saving _orig_gens but that is more obvious).\n\nNeed for the conversion is described more fully at #9695.  Help or advice needed!",
     "created_at": "2010-08-06T03:25:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9694",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_094219.json:
 }
 ```
 
-Attachment
+Attachment [trac_9694-cyclic-group-product-v0.patch](tarball://root/attachments/some-uuid/ticket9694/trac_9694-cyclic-group-product-v0.patch) by rbeezer created at 2010-08-06 03:25:50
 
 Patch is a rough cut. Requires something in the 4.5.2 alpha/rc series to work.
 

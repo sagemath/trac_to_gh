@@ -68,7 +68,7 @@ http://docs.python.org/reference/lexical_analysis.html
 archive/issue_comments_045747.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5821-preparse-raw.patch](tarball://root/attachments/some-uuid/ticket5821/5821-preparse-raw.patch) by robertwb created at 2009-04-19 07:27:44",
     "created_at": "2009-04-19T07:27:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5821",
     "type": "issue_comment",
@@ -77,7 +77,7 @@ archive/issue_comments_045747.json:
 }
 ```
 
-Attachment
+Attachment [5821-preparse-raw.patch](tarball://root/attachments/some-uuid/ticket5821/5821-preparse-raw.patch) by robertwb created at 2009-04-19 07:27:44
 
 
 

@@ -77,7 +77,7 @@ Changing assignee from mabshoff to mhansen.
 archive/issue_comments_045638.json:
 ```json
 {
-    "body": "Attachment\n\n\n```\n<mhansen> mabs: Yep\n<mabs> Have you seen #5811 ?  [17:12]\n<mabs> It can be reproduced on the farm, i.e. the FC10 test box.\n<mabs> wstein can create you an account. \n<mhansen> Actually, it don't think we need that.  [17:14]\n<mhansen> It most likely comes from this line in cartan_type.py\n<mhansen>         if other.__class__ != self.__class__:\n<mhansen>             return cmp(self.__class__, other.__class__)\n<mhansen> \n<mabs> So you think it is a bug?  [17:15]\n<mhansen> Well, I think there are no guarantees on the results of class\n          comparisons.\n<mhansen> I would be fine with just changing that doctest since the order of\n          the types doesn't really matter.  [17:17]\n<mhansen> What matters most is deciding if they are equal or not.\n```\n",
+    "body": "Attachment [trac_5811.patch](tarball://root/attachments/some-uuid/ticket5811/trac_5811.patch) by mhansen created at 2009-04-18 06:22:10\n\n\n```\n<mhansen> mabs: Yep\n<mabs> Have you seen #5811 ?  [17:12]\n<mabs> It can be reproduced on the farm, i.e. the FC10 test box.\n<mabs> wstein can create you an account. \n<mhansen> Actually, it don't think we need that.  [17:14]\n<mhansen> It most likely comes from this line in cartan_type.py\n<mhansen>         if other.__class__ != self.__class__:\n<mhansen>             return cmp(self.__class__, other.__class__)\n<mhansen> \n<mabs> So you think it is a bug?  [17:15]\n<mhansen> Well, I think there are no guarantees on the results of class\n          comparisons.\n<mhansen> I would be fine with just changing that doctest since the order of\n          the types doesn't really matter.  [17:17]\n<mhansen> What matters most is deciding if they are equal or not.\n```\n",
     "created_at": "2009-04-18T06:22:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5811",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_045638.json:
 }
 ```
 
-Attachment
+Attachment [trac_5811.patch](tarball://root/attachments/some-uuid/ticket5811/trac_5811.patch) by mhansen created at 2009-04-18 06:22:10
 
 
 ```

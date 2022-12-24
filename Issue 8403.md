@@ -169,7 +169,7 @@ Nathann
 archive/issue_comments_075264.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:5 ncohen]:\n> And you are right. I was thinking about spanning trees, as I usually do not care about weights...\n\nI don't think spanning tree is linear: the standard method is a BFS/DFS, which is still worst case quadratic. I know this is no longer relevant here, but I want to make sure I have this right. If you do know of a linear time spanning tree algorithm, I'm curious about it.",
+    "body": "Attachment [trac_8403.patch](tarball://root/attachments/some-uuid/ticket8403/trac_8403.patch) by rlm created at 2010-06-18 15:04:22\n\nReplying to [comment:5 ncohen]:\n> And you are right. I was thinking about spanning trees, as I usually do not care about weights...\n\nI don't think spanning tree is linear: the standard method is a BFS/DFS, which is still worst case quadratic. I know this is no longer relevant here, but I want to make sure I have this right. If you do know of a linear time spanning tree algorithm, I'm curious about it.",
     "created_at": "2010-06-18T15:04:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8403",
     "type": "issue_comment",
@@ -178,7 +178,7 @@ archive/issue_comments_075264.json:
 }
 ```
 
-Attachment
+Attachment [trac_8403.patch](tarball://root/attachments/some-uuid/ticket8403/trac_8403.patch) by rlm created at 2010-06-18 15:04:22
 
 Replying to [comment:5 ncohen]:
 > And you are right. I was thinking about spanning trees, as I usually do not care about weights...
@@ -251,7 +251,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_075268.json:
 ```json
 {
-    "body": "Attachment\n\nThank you again ! :-)\n\nNathann",
+    "body": "Attachment [trac_8403-part2.patch](tarball://root/attachments/some-uuid/ticket8403/trac_8403-part2.patch) by ncohen created at 2010-06-20 17:46:59\n\nThank you again ! :-)\n\nNathann",
     "created_at": "2010-06-20T17:46:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8403",
     "type": "issue_comment",
@@ -260,7 +260,7 @@ archive/issue_comments_075268.json:
 }
 ```
 
-Attachment
+Attachment [trac_8403-part2.patch](tarball://root/attachments/some-uuid/ticket8403/trac_8403-part2.patch) by ncohen created at 2010-06-20 17:46:59
 
 Thank you again ! :-)
 
@@ -291,7 +291,7 @@ apply before part 2
 archive/issue_comments_075270.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8403-rebased.patch](tarball://root/attachments/some-uuid/ticket8403/trac_8403-rebased.patch) by rlm created at 2010-06-29 16:49:24",
     "created_at": "2010-06-29T16:49:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8403",
     "type": "issue_comment",
@@ -300,7 +300,7 @@ archive/issue_comments_075270.json:
 }
 ```
 
-Attachment
+Attachment [trac_8403-rebased.patch](tarball://root/attachments/some-uuid/ticket8403/trac_8403-rebased.patch) by rlm created at 2010-06-29 16:49:24
 
 
 

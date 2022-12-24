@@ -247,7 +247,7 @@ To be applied after the first patch
 archive/issue_comments_081005.json:
 ```json
 {
-    "body": "Attachment\n\nI added another patch (on top of the first patch), taking into account some of your remarks. In particular, I try to clarify that \"class <-> category\" is nothing more than a weak analogy.",
+    "body": "Attachment [trac_8821-tutorial-coercion_p1.patch](tarball://root/attachments/some-uuid/ticket8821/trac_8821-tutorial-coercion_p1.patch) by SimonKing created at 2010-04-29 12:44:55\n\nI added another patch (on top of the first patch), taking into account some of your remarks. In particular, I try to clarify that \"class <-> category\" is nothing more than a weak analogy.",
     "created_at": "2010-04-29T12:44:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8821",
     "type": "issue_comment",
@@ -256,7 +256,7 @@ archive/issue_comments_081005.json:
 }
 ```
 
-Attachment
+Attachment [trac_8821-tutorial-coercion_p1.patch](tarball://root/attachments/some-uuid/ticket8821/trac_8821-tutorial-coercion_p1.patch) by SimonKing created at 2010-04-29 12:44:55
 
 I added another patch (on top of the first patch), taking into account some of your remarks. In particular, I try to clarify that "class <-> category" is nothing more than a weak analogy.
 
@@ -573,7 +573,7 @@ In addition, I think that there should also be a thematic tutorial (i.e., not ju
 archive/issue_comments_081018.json:
 ```json
 {
-    "body": "Attachment\n\nONLY APPLY THIS PATCH: Insert a section on coercion into the guided tour.",
+    "body": "Attachment [trac_8821-tutorial-coercion.patch](tarball://root/attachments/some-uuid/ticket8821/trac_8821-tutorial-coercion.patch) by SimonKing created at 2011-06-16 07:53:35\n\nONLY APPLY THIS PATCH: Insert a section on coercion into the guided tour.",
     "created_at": "2011-06-16T07:53:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8821",
     "type": "issue_comment",
@@ -582,7 +582,7 @@ archive/issue_comments_081018.json:
 }
 ```
 
-Attachment
+Attachment [trac_8821-tutorial-coercion.patch](tarball://root/attachments/some-uuid/ticket8821/trac_8821-tutorial-coercion.patch) by SimonKing created at 2011-06-16 07:53:35
 
 ONLY APPLY THIS PATCH: Insert a section on coercion into the guided tour.
 
@@ -653,7 +653,7 @@ Here's a referee's patch.  Positive review.
 archive/issue_comments_081022.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8821-ref.patch](tarball://root/attachments/some-uuid/ticket8821/trac_8821-ref.patch) by jhpalmieri created at 2011-07-22 23:56:43",
     "created_at": "2011-07-22T23:56:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8821",
     "type": "issue_comment",
@@ -662,7 +662,7 @@ archive/issue_comments_081022.json:
 }
 ```
 
-Attachment
+Attachment [trac_8821-ref.patch](tarball://root/attachments/some-uuid/ticket8821/trac_8821-ref.patch) by jhpalmieri created at 2011-07-22 23:56:43
 
 
 

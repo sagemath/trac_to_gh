@@ -68,7 +68,7 @@ patch for elliptic_curve and number_field stuff
 archive/issue_comments_012355.json:
 ```json
 {
-    "body": "Attachment\n\nLots of doctests for elliptic curves with many bug fixes for bugs revealed by them.\n\nSeveral new functions for changing models:  thought still needed on how to return the isomorphism as well as the new model;  if not Magma style then by storing the map as an attribute of the new curve as is done for number fields?\n\nJoint work by John Cremona and William Stein.",
+    "body": "Attachment [8089.patch](tarball://root/attachments/some-uuid/ticket1946/8089.patch) by cremona created at 2008-01-28 06:32:09\n\nLots of doctests for elliptic curves with many bug fixes for bugs revealed by them.\n\nSeveral new functions for changing models:  thought still needed on how to return the isomorphism as well as the new model;  if not Magma style then by storing the map as an attribute of the new curve as is done for number fields?\n\nJoint work by John Cremona and William Stein.",
     "created_at": "2008-01-28T06:32:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1946",
     "type": "issue_comment",
@@ -77,7 +77,7 @@ archive/issue_comments_012355.json:
 }
 ```
 
-Attachment
+Attachment [8089.patch](tarball://root/attachments/some-uuid/ticket1946/8089.patch) by cremona created at 2008-01-28 06:32:09
 
 Lots of doctests for elliptic curves with many bug fixes for bugs revealed by them.
 
@@ -177,7 +177,7 @@ Michael
 archive/issue_comments_012360.json:
 ```json
 {
-    "body": "Attachment\n\nThis replaces Cremona's previous version; but has a comment and applies cleanly.",
+    "body": "Attachment [8090.patch](tarball://root/attachments/some-uuid/ticket1946/8090.patch) by was created at 2008-02-19 16:25:46\n\nThis replaces Cremona's previous version; but has a comment and applies cleanly.",
     "created_at": "2008-02-19T16:25:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1946",
     "type": "issue_comment",
@@ -186,7 +186,7 @@ archive/issue_comments_012360.json:
 }
 ```
 
-Attachment
+Attachment [8090.patch](tarball://root/attachments/some-uuid/ticket1946/8090.patch) by was created at 2008-02-19 16:25:46
 
 This replaces Cremona's previous version; but has a comment and applies cleanly.
 
@@ -261,7 +261,7 @@ any problems.
 archive/issue_comments_012364.json:
 ```json
 {
-    "body": "Attachment\n\napply all three patches, including this one",
+    "body": "Attachment [sage-1946-minor_formating.patch](tarball://root/attachments/some-uuid/ticket1946/sage-1946-minor_formating.patch) by was created at 2008-02-19 17:22:45\n\napply all three patches, including this one",
     "created_at": "2008-02-19T17:22:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1946",
     "type": "issue_comment",
@@ -270,7 +270,7 @@ archive/issue_comments_012364.json:
 }
 ```
 
-Attachment
+Attachment [sage-1946-minor_formating.patch](tarball://root/attachments/some-uuid/ticket1946/sage-1946-minor_formating.patch) by was created at 2008-02-19 17:22:45
 
 apply all three patches, including this one
 

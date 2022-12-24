@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4595
 archive/issue_comments_034462.json:
 ```json
 {
-    "body": "Attachment\n\ntypos in files under directory sage/calculus",
+    "body": "Attachment [trac_4595.patch](tarball://root/attachments/some-uuid/ticket4595/trac_4595.patch) by mvngu created at 2008-11-23 07:10:11\n\ntypos in files under directory sage/calculus",
     "created_at": "2008-11-23T07:10:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4595",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_034462.json:
 }
 ```
 
-Attachment
+Attachment [trac_4595.patch](tarball://root/attachments/some-uuid/ticket4595/trac_4595.patch) by mvngu created at 2008-11-23 07:10:11
 
 typos in files under directory sage/calculus
 

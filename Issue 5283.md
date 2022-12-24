@@ -72,7 +72,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5283
 archive/issue_comments_040603.json:
 ```json
 {
-    "body": "Attachment\n\nThe poset elements are just wrapping elements, so I modified the subposet constructor to unwrap before constructing the subposet (it was wrapping a wrapped element).\n\nNote that you can still create a poset of poset elements, this is just for the subposet constructor.",
+    "body": "Attachment [trac_5283.patch](tarball://root/attachments/some-uuid/ticket5283/trac_5283.patch) by saliola created at 2009-04-30 09:56:11\n\nThe poset elements are just wrapping elements, so I modified the subposet constructor to unwrap before constructing the subposet (it was wrapping a wrapped element).\n\nNote that you can still create a poset of poset elements, this is just for the subposet constructor.",
     "created_at": "2009-04-30T09:56:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5283",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_040603.json:
 }
 ```
 
-Attachment
+Attachment [trac_5283.patch](tarball://root/attachments/some-uuid/ticket5283/trac_5283.patch) by saliola created at 2009-04-30 09:56:11
 
 The poset elements are just wrapping elements, so I modified the subposet constructor to unwrap before constructing the subposet (it was wrapping a wrapped element).
 

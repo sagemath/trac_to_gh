@@ -126,7 +126,7 @@ KeyboardInterrupt:
 archive/issue_comments_035653.json:
 ```json
 {
-    "body": "Attachment\n\nEvidently my algorithm was overly enthusiastic about finding small intervals, with the result that sometimes it didn't terminate.  Modified to return whatever (correct) interval we have, instead of giving up and trying higher precision.",
+    "body": "Attachment [trac4723-complex-roots-bug.patch](tarball://root/attachments/some-uuid/ticket4723/trac4723-complex-roots-bug.patch) by cwitty created at 2008-12-21 01:08:59\n\nEvidently my algorithm was overly enthusiastic about finding small intervals, with the result that sometimes it didn't terminate.  Modified to return whatever (correct) interval we have, instead of giving up and trying higher precision.",
     "created_at": "2008-12-21T01:08:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4723",
     "type": "issue_comment",
@@ -135,7 +135,7 @@ archive/issue_comments_035653.json:
 }
 ```
 
-Attachment
+Attachment [trac4723-complex-roots-bug.patch](tarball://root/attachments/some-uuid/ticket4723/trac4723-complex-roots-bug.patch) by cwitty created at 2008-12-21 01:08:59
 
 Evidently my algorithm was overly enthusiastic about finding small intervals, with the result that sometimes it didn't terminate.  Modified to return whatever (correct) interval we have, instead of giving up and trying higher precision.
 

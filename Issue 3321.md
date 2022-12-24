@@ -57,7 +57,7 @@ png output which is way too dark (it should be white)
 archive/issue_comments_023027.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3321_visualize_structure.patch](tarball://root/attachments/some-uuid/ticket3321/3321_visualize_structure.patch) by malb created at 2009-01-22 07:37:15",
     "created_at": "2009-01-22T07:37:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3321",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_023027.json:
 }
 ```
 
-Attachment
+Attachment [3321_visualize_structure.patch](tarball://root/attachments/some-uuid/ticket3321/3321_visualize_structure.patch) by malb created at 2009-01-22 07:37:15
 
 
 
@@ -75,7 +75,7 @@ Attachment
 archive/issue_comments_023028.json:
 ```json
 {
-    "body": "Attachment\n\nshows that the bug was indeed fixed",
+    "body": "Attachment [sage0.2.png](tarball://root/attachments/some-uuid/ticket3321/sage0.2.png) by malb created at 2009-01-22 07:37:50\n\nshows that the bug was indeed fixed",
     "created_at": "2009-01-22T07:37:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3321",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_023028.json:
 }
 ```
 
-Attachment
+Attachment [sage0.2.png](tarball://root/attachments/some-uuid/ticket3321/sage0.2.png) by malb created at 2009-01-22 07:37:50
 
 shows that the bug was indeed fixed
 

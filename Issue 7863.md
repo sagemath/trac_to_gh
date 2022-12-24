@@ -57,7 +57,7 @@ Changing status from new to needs_review.
 archive/issue_comments_068168.json:
 ```json
 {
-    "body": "Attachment\n\nDeclare vars in functions, etc., in aux JS files.  Depends on #7786.  sagenb repo.",
+    "body": "Attachment [trac_7863-declare_vars_aux_js.patch](tarball://root/attachments/some-uuid/ticket7863/trac_7863-declare_vars_aux_js.patch) by mpatel created at 2010-01-07 03:21:17\n\nDeclare vars in functions, etc., in aux JS files.  Depends on #7786.  sagenb repo.",
     "created_at": "2010-01-07T03:21:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7863",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_068168.json:
 }
 ```
 
-Attachment
+Attachment [trac_7863-declare_vars_aux_js.patch](tarball://root/attachments/some-uuid/ticket7863/trac_7863-declare_vars_aux_js.patch) by mpatel created at 2010-01-07 03:21:17
 
 Declare vars in functions, etc., in aux JS files.  Depends on #7786.  sagenb repo.
 
@@ -77,7 +77,7 @@ Declare vars in functions, etc., in aux JS files.  Depends on #7786.  sagenb rep
 archive/issue_comments_068169.json:
 ```json
 {
-    "body": "Attachment\n\nRebased vs. #7786 v11.  Replaces previous.",
+    "body": "Attachment [trac_7863-declare_vars_aux_js_v2.patch](tarball://root/attachments/some-uuid/ticket7863/trac_7863-declare_vars_aux_js_v2.patch) by mpatel created at 2010-01-08 17:17:01\n\nRebased vs. #7786 v11.  Replaces previous.",
     "created_at": "2010-01-08T17:17:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7863",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_068169.json:
 }
 ```
 
-Attachment
+Attachment [trac_7863-declare_vars_aux_js_v2.patch](tarball://root/attachments/some-uuid/ticket7863/trac_7863-declare_vars_aux_js_v2.patch) by mpatel created at 2010-01-08 17:17:01
 
 Rebased vs. #7786 v11.  Replaces previous.
 

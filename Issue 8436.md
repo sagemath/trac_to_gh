@@ -129,7 +129,7 @@ Don't run jsMath on wrapped output.  sagenb repo.
 archive/issue_comments_075732.json:
 ```json
 {
-    "body": "Attachment\n\nTrial patch attached.",
+    "body": "Attachment [trac_8436-no_jsmath_for_wrapped.patch](tarball://root/attachments/some-uuid/ticket8436/trac_8436-no_jsmath_for_wrapped.patch) by mpatel created at 2010-03-05 03:32:57\n\nTrial patch attached.",
     "created_at": "2010-03-05T03:32:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8436",
     "type": "issue_comment",
@@ -138,7 +138,7 @@ archive/issue_comments_075732.json:
 }
 ```
 
-Attachment
+Attachment [trac_8436-no_jsmath_for_wrapped.patch](tarball://root/attachments/some-uuid/ticket8436/trac_8436-no_jsmath_for_wrapped.patch) by mpatel created at 2010-03-05 03:32:57
 
 Trial patch attached.
 

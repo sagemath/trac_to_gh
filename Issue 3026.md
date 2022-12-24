@@ -74,7 +74,7 @@ Changing status from new to assigned.
 archive/issue_comments_020807.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [novariables.changeset](tarball://root/attachments/some-uuid/ticket3026/novariables.changeset) by broune created at 2008-05-07 20:23:49",
     "created_at": "2008-05-07T20:23:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3026",
     "type": "issue_comment",
@@ -83,7 +83,7 @@ archive/issue_comments_020807.json:
 }
 ```
 
-Attachment
+Attachment [novariables.changeset](tarball://root/attachments/some-uuid/ticket3026/novariables.changeset) by broune created at 2008-05-07 20:23:49
 
 
 

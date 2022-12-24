@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2797
 archive/issue_comments_019209.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [zn_poly-0.8.p0.spkg](tarball://root/attachments/some-uuid/ticket2797/zn_poly-0.8.p0.spkg) by dmharvey created at 2008-04-04 14:22:58",
     "created_at": "2008-04-04T14:22:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2797",
     "type": "issue_comment",
@@ -41,7 +41,7 @@ archive/issue_comments_019209.json:
 }
 ```
 
-Attachment
+Attachment [zn_poly-0.8.p0.spkg](tarball://root/attachments/some-uuid/ticket2797/zn_poly-0.8.p0.spkg) by dmharvey created at 2008-04-04 14:22:58
 
 
 

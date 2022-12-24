@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4253
 archive/issue_comments_030937.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [pbori_navigator_eq.patch](tarball://root/attachments/some-uuid/ticket4253/pbori_navigator_eq.patch) by malb created at 2008-10-08 14:17:07",
     "created_at": "2008-10-08T14:17:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4253",
     "type": "issue_comment",
@@ -53,7 +53,7 @@ archive/issue_comments_030937.json:
 }
 ```
 
-Attachment
+Attachment [pbori_navigator_eq.patch](tarball://root/attachments/some-uuid/ticket4253/pbori_navigator_eq.patch) by malb created at 2008-10-08 14:17:07
 
 
 

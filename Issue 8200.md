@@ -53,7 +53,7 @@ Changing status from new to needs_review.
 archive/issue_comments_072313.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8200-element_wrapper_doctests-nt.patch](tarball://root/attachments/some-uuid/ticket8200/trac_8200-element_wrapper_doctests-nt.patch) by nthiery created at 2010-02-06 12:07:44",
     "created_at": "2010-02-06T12:07:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8200",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_072313.json:
 }
 ```
 
-Attachment
+Attachment [trac_8200-element_wrapper_doctests-nt.patch](tarball://root/attachments/some-uuid/ticket8200/trac_8200-element_wrapper_doctests-nt.patch) by nthiery created at 2010-02-06 12:07:44
 
 
 
@@ -353,7 +353,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_072323.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-8200-part2-referee.patch](tarball://root/attachments/some-uuid/ticket8200/trac-8200-part2-referee.patch) by was created at 2010-02-06 17:02:30",
     "created_at": "2010-02-06T17:02:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8200",
     "type": "issue_comment",
@@ -362,7 +362,7 @@ archive/issue_comments_072323.json:
 }
 ```
 
-Attachment
+Attachment [trac-8200-part2-referee.patch](tarball://root/attachments/some-uuid/ticket8200/trac-8200-part2-referee.patch) by was created at 2010-02-06 17:02:30
 
 
 

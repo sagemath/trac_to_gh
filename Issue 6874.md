@@ -70,7 +70,7 @@ depends on #4135
 archive/issue_comments_056751.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6874-fix-typos.patch](tarball://root/attachments/some-uuid/ticket6874/trac_6874-fix-typos.patch) by mvngu created at 2009-09-03 10:37:48",
     "created_at": "2009-09-03T10:37:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6874",
     "type": "issue_comment",
@@ -79,7 +79,7 @@ archive/issue_comments_056751.json:
 }
 ```
 
-Attachment
+Attachment [trac_6874-fix-typos.patch](tarball://root/attachments/some-uuid/ticket6874/trac_6874-fix-typos.patch) by mvngu created at 2009-09-03 10:37:48
 
 
 

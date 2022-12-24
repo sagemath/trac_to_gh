@@ -120,7 +120,7 @@ For the matplotlib-users discussion, see the messages with subject "quiver and I
 archive/issue_comments_040366.json:
 ```json
 {
-    "body": "Attachment\n\nupdated patch corrects the silly mistake in the doctest (I didn't account for the output of var('x,y')).  Now doctests pass in plot/*.py.",
+    "body": "Attachment [trac_5259-mask-invalid-quiver-data.patch](tarball://root/attachments/some-uuid/ticket5259/trac_5259-mask-invalid-quiver-data.patch) by jason created at 2009-02-13 21:26:13\n\nupdated patch corrects the silly mistake in the doctest (I didn't account for the output of var('x,y')).  Now doctests pass in plot/*.py.",
     "created_at": "2009-02-13T21:26:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5259",
     "type": "issue_comment",
@@ -129,7 +129,7 @@ archive/issue_comments_040366.json:
 }
 ```
 
-Attachment
+Attachment [trac_5259-mask-invalid-quiver-data.patch](tarball://root/attachments/some-uuid/ticket5259/trac_5259-mask-invalid-quiver-data.patch) by jason created at 2009-02-13 21:26:13
 
 updated patch corrects the silly mistake in the doctest (I didn't account for the output of var('x,y')).  Now doctests pass in plot/*.py.
 

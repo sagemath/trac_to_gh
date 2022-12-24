@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9566
 archive/issue_comments_092346.json:
 ```json
 {
-    "body": "Attachment\n\ndoes it make sense to also test for parent RDF ?",
+    "body": "Attachment [mpmath_call.patch](tarball://root/attachments/some-uuid/ticket9566/mpmath_call.patch) by schilly created at 2010-07-21 21:17:01\n\ndoes it make sense to also test for parent RDF ?",
     "created_at": "2010-07-21T21:17:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9566",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_092346.json:
 }
 ```
 
-Attachment
+Attachment [mpmath_call.patch](tarball://root/attachments/some-uuid/ticket9566/mpmath_call.patch) by schilly created at 2010-07-21 21:17:01
 
 does it make sense to also test for parent RDF ?
 
@@ -53,7 +53,7 @@ does it make sense to also test for parent RDF ?
 archive/issue_comments_092347.json:
 ```json
 {
-    "body": "Attachment\n\nworks for me",
+    "body": "Attachment [mpmath_call_reviewer.patch](tarball://root/attachments/some-uuid/ticket9566/mpmath_call_reviewer.patch) by schilly created at 2010-07-21 21:17:38\n\nworks for me",
     "created_at": "2010-07-21T21:17:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9566",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_092347.json:
 }
 ```
 
-Attachment
+Attachment [mpmath_call_reviewer.patch](tarball://root/attachments/some-uuid/ticket9566/mpmath_call_reviewer.patch) by schilly created at 2010-07-21 21:17:38
 
 works for me
 
@@ -163,7 +163,7 @@ Please include ticket numbers in commit messages! Please change back to positive
 archive/issue_comments_092353.json:
 ```json
 {
-    "body": "Attachment\n\nfixed patch",
+    "body": "Attachment [mpmath_call_FIXED.patch](tarball://root/attachments/some-uuid/ticket9566/mpmath_call_FIXED.patch) by fredrik.johansson created at 2010-07-22 20:54:14\n\nfixed patch",
     "created_at": "2010-07-22T20:54:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9566",
     "type": "issue_comment",
@@ -172,7 +172,7 @@ archive/issue_comments_092353.json:
 }
 ```
 
-Attachment
+Attachment [mpmath_call_FIXED.patch](tarball://root/attachments/some-uuid/ticket9566/mpmath_call_FIXED.patch) by fredrik.johansson created at 2010-07-22 20:54:14
 
 fixed patch
 

@@ -74,7 +74,7 @@ combinat/hall_polynomial.py
 archive/issue_comments_010704.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1685.patch](tarball://root/attachments/some-uuid/ticket1685/1685.patch) by mhansen created at 2008-01-05 00:08:40",
     "created_at": "2008-01-05T00:08:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1685",
     "type": "issue_comment",
@@ -83,7 +83,7 @@ archive/issue_comments_010704.json:
 }
 ```
 
-Attachment
+Attachment [1685.patch](tarball://root/attachments/some-uuid/ticket1685/1685.patch) by mhansen created at 2008-01-05 00:08:40
 
 
 
@@ -92,7 +92,7 @@ Attachment
 archive/issue_comments_010705.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1685-2.patch](tarball://root/attachments/some-uuid/ticket1685/1685-2.patch) by mhansen created at 2008-01-05 00:09:24",
     "created_at": "2008-01-05T00:09:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1685",
     "type": "issue_comment",
@@ -101,7 +101,7 @@ archive/issue_comments_010705.json:
 }
 ```
 
-Attachment
+Attachment [1685-2.patch](tarball://root/attachments/some-uuid/ticket1685/1685-2.patch) by mhansen created at 2008-01-05 00:09:24
 
 
 
@@ -110,7 +110,7 @@ Attachment
 archive/issue_comments_010706.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-2.10.alpha2-revert-hunk-from-ticket-1685.patch](tarball://root/attachments/some-uuid/ticket1685/Sage-2.10.alpha2-revert-hunk-from-ticket-1685.patch) by mabshoff created at 2008-01-11 16:15:49",
     "created_at": "2008-01-11T16:15:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1685",
     "type": "issue_comment",
@@ -119,7 +119,7 @@ archive/issue_comments_010706.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.10.alpha2-revert-hunk-from-ticket-1685.patch](tarball://root/attachments/some-uuid/ticket1685/Sage-2.10.alpha2-revert-hunk-from-ticket-1685.patch) by mabshoff created at 2008-01-11 16:15:49
 
 
 
@@ -354,7 +354,7 @@ Michael
 archive/issue_comments_010710.json:
 ```json
 {
-    "body": "Attachment\n\nMerged in Sage 2.10.alpha2. I applied 1685-doctests.patch and now all combinatorics doctest pass.\n\nCheers,\n\nMichael",
+    "body": "Attachment [1685-doctests.patch](tarball://root/attachments/some-uuid/ticket1685/1685-doctests.patch) by mabshoff created at 2008-01-13 12:14:32\n\nMerged in Sage 2.10.alpha2. I applied 1685-doctests.patch and now all combinatorics doctest pass.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-13T12:14:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1685",
     "type": "issue_comment",
@@ -363,7 +363,7 @@ archive/issue_comments_010710.json:
 }
 ```
 
-Attachment
+Attachment [1685-doctests.patch](tarball://root/attachments/some-uuid/ticket1685/1685-doctests.patch) by mabshoff created at 2008-01-13 12:14:32
 
 Merged in Sage 2.10.alpha2. I applied 1685-doctests.patch and now all combinatorics doctest pass.
 

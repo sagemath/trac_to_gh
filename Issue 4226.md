@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4226
 archive/issue_comments_030716.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4226-real-lazy.patch](tarball://root/attachments/some-uuid/ticket4226/4226-real-lazy.patch) by mhansen created at 2008-10-01 06:48:32",
     "created_at": "2008-10-01T06:48:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4226",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_030716.json:
 }
 ```
 
-Attachment
+Attachment [4226-real-lazy.patch](tarball://root/attachments/some-uuid/ticket4226/4226-real-lazy.patch) by mhansen created at 2008-10-01 06:48:32
 
 
 
@@ -49,7 +49,7 @@ Attachment
 archive/issue_comments_030717.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.  Note that the second patch should be applied as well since we got rid of the *_impl methods.",
+    "body": "Attachment [trac_4226-2.patch](tarball://root/attachments/some-uuid/ticket4226/trac_4226-2.patch) by mhansen created at 2008-10-01 06:49:26\n\nLooks good to me.  Note that the second patch should be applied as well since we got rid of the *_impl methods.",
     "created_at": "2008-10-01T06:49:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4226",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_030717.json:
 }
 ```
 
-Attachment
+Attachment [trac_4226-2.patch](tarball://root/attachments/some-uuid/ticket4226/trac_4226-2.patch) by mhansen created at 2008-10-01 06:49:26
 
 Looks good to me.  Note that the second patch should be applied as well since we got rid of the *_impl methods.
 

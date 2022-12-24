@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4224
 archive/issue_comments_030698.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac4224-question-printing-lbound.patch](tarball://root/attachments/some-uuid/ticket4224/trac4224-question-printing-lbound.patch) by cwitty created at 2008-09-30 19:10:42",
     "created_at": "2008-09-30T19:10:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4224",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_030698.json:
 }
 ```
 
-Attachment
+Attachment [trac4224-question-printing-lbound.patch](tarball://root/attachments/some-uuid/ticket4224/trac4224-question-printing-lbound.patch) by cwitty created at 2008-09-30 19:10:42
 
 
 

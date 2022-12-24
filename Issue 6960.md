@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6960
 archive/issue_comments_057571.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6960.patch](tarball://root/attachments/some-uuid/ticket6960/trac_6960.patch) by was created at 2010-01-18 13:26:32",
     "created_at": "2010-01-18T13:26:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6960",
     "type": "issue_comment",
@@ -49,7 +49,7 @@ archive/issue_comments_057571.json:
 }
 ```
 
-Attachment
+Attachment [trac_6960.patch](tarball://root/attachments/some-uuid/ticket6960/trac_6960.patch) by was created at 2010-01-18 13:26:32
 
 
 

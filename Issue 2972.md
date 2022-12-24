@@ -179,7 +179,7 @@ was@sage:~/build/sage-3.0.rc0/devel/sage/sage/rings/polynomial$ /home/was/build/
 archive/issue_comments_020480.json:
 ```json
 {
-    "body": "Attachment\n\nI posted a patch that disables weakrefs, which appears to fix the problem.\n\nThis isn't too much of a tradeoff.",
+    "body": "Attachment [sage-2972.patch](tarball://root/attachments/some-uuid/ticket2972/sage-2972.patch) by was created at 2008-04-21 03:14:03\n\nI posted a patch that disables weakrefs, which appears to fix the problem.\n\nThis isn't too much of a tradeoff.",
     "created_at": "2008-04-21T03:14:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2972",
     "type": "issue_comment",
@@ -188,7 +188,7 @@ archive/issue_comments_020480.json:
 }
 ```
 
-Attachment
+Attachment [sage-2972.patch](tarball://root/attachments/some-uuid/ticket2972/sage-2972.patch) by was created at 2008-04-21 03:14:03
 
 I posted a patch that disables weakrefs, which appears to fix the problem.
 

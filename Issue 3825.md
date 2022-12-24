@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3825
 archive/issue_comments_027204.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3825-gridlines.patch](tarball://root/attachments/some-uuid/ticket3825/trac_3825-gridlines.patch) by saliola created at 2008-08-12 23:30:09",
     "created_at": "2008-08-12T23:30:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3825",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_027204.json:
 }
 ```
 
-Attachment
+Attachment [trac_3825-gridlines.patch](tarball://root/attachments/some-uuid/ticket3825/trac_3825-gridlines.patch) by saliola created at 2008-08-12 23:30:09
 
 
 
@@ -251,7 +251,7 @@ patch with changes made after review
 archive/issue_comments_027210.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3825-gridlines-2.patch](tarball://root/attachments/some-uuid/ticket3825/trac_3825-gridlines-2.patch) by saliola created at 2008-08-13 06:58:23",
     "created_at": "2008-08-13T06:58:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3825",
     "type": "issue_comment",
@@ -260,7 +260,7 @@ archive/issue_comments_027210.json:
 }
 ```
 
-Attachment
+Attachment [trac_3825-gridlines-2.patch](tarball://root/attachments/some-uuid/ticket3825/trac_3825-gridlines-2.patch) by saliola created at 2008-08-13 06:58:23
 
 
 

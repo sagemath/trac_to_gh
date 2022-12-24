@@ -119,7 +119,7 @@ with polygon2d being the current code of polygon()
 archive/issue_comments_025090.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3547.patch](tarball://root/attachments/some-uuid/ticket3547/trac_3547.patch) by abergeron created at 2008-12-24 22:54:59",
     "created_at": "2008-12-24T22:54:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3547",
     "type": "issue_comment",
@@ -128,7 +128,7 @@ archive/issue_comments_025090.json:
 }
 ```
 
-Attachment
+Attachment [trac_3547.patch](tarball://root/attachments/some-uuid/ticket3547/trac_3547.patch) by abergeron created at 2008-12-24 22:54:59
 
 
 

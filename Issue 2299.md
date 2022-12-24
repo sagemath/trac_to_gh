@@ -71,7 +71,7 @@ Changing component from commutative algebra to linear algebra.
 archive/issue_comments_015251.json:
 ```json
 {
-    "body": "Attachment\n\nYou replaced \"n x n\" by \"$n \\times n$\" which reads nicer if typesetted. However, it is harder to comprehend from the command line (`foo?`).\n\nI am not sure that we need `identity_matrix` and `zero_matrix` (i.e. the functional versions of `MS(0)` and `MS(1)`) but that is a matter of taste.",
+    "body": "Attachment [2299-ncalexan-zero-matrix-1.patch](tarball://root/attachments/some-uuid/ticket2299/2299-ncalexan-zero-matrix-1.patch) by malb created at 2008-02-25 11:29:23\n\nYou replaced \"n x n\" by \"$n \\times n$\" which reads nicer if typesetted. However, it is harder to comprehend from the command line (`foo?`).\n\nI am not sure that we need `identity_matrix` and `zero_matrix` (i.e. the functional versions of `MS(0)` and `MS(1)`) but that is a matter of taste.",
     "created_at": "2008-02-25T11:29:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2299",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_015251.json:
 }
 ```
 
-Attachment
+Attachment [2299-ncalexan-zero-matrix-1.patch](tarball://root/attachments/some-uuid/ticket2299/2299-ncalexan-zero-matrix-1.patch) by malb created at 2008-02-25 11:29:23
 
 You replaced "n x n" by "$n \times n$" which reads nicer if typesetted. However, it is harder to comprehend from the command line (`foo?`).
 
@@ -204,7 +204,7 @@ Full MatrixSpace of 2 by 3 sparse matrices over Integer Ring
 archive/issue_comments_015256.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2299-ncalexan-zero-matrix-2.patch](tarball://root/attachments/some-uuid/ticket2299/2299-ncalexan-zero-matrix-2.patch) by ncalexan created at 2008-02-25 19:13:16",
     "created_at": "2008-02-25T19:13:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2299",
     "type": "issue_comment",
@@ -213,7 +213,7 @@ archive/issue_comments_015256.json:
 }
 ```
 
-Attachment
+Attachment [2299-ncalexan-zero-matrix-2.patch](tarball://root/attachments/some-uuid/ticket2299/2299-ncalexan-zero-matrix-2.patch) by ncalexan created at 2008-02-25 19:13:16
 
 
 
@@ -260,7 +260,7 @@ Works for me in 2.10.3.alpha0.  Note that only the last patch should be apply an
 archive/issue_comments_015259.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2299.patch](tarball://root/attachments/some-uuid/ticket2299/2299.patch) by mhansen created at 2008-02-27 22:16:00",
     "created_at": "2008-02-27T22:16:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2299",
     "type": "issue_comment",
@@ -269,7 +269,7 @@ archive/issue_comments_015259.json:
 }
 ```
 
-Attachment
+Attachment [2299.patch](tarball://root/attachments/some-uuid/ticket2299/2299.patch) by mhansen created at 2008-02-27 22:16:00
 
 
 

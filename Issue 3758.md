@@ -157,7 +157,7 @@ Michael
 archive/issue_comments_026694.json:
 ```json
 {
-    "body": "Attachment\n\nThe problem here is that the doctest for sage.crypto.mq.sr.test_consistency uses too much memory.\n\nThere are two options to fix this:\n\n1)  Just take the doc test out.\n<or>\n2)  Change the doctest to call test_consistency w/ max_n=1 instead of max_n=2.  This leads to a more than 5 fold improvement of memory usage / time.\n\nThis patch implements 2, because (1) would make test coverage numbers decrease.",
+    "body": "Attachment [trac_3758-Fix_Crypto_DocTest.patch](tarball://root/attachments/some-uuid/ticket3758/trac_3758-Fix_Crypto_DocTest.patch) by shumow created at 2009-01-23 22:15:43\n\nThe problem here is that the doctest for sage.crypto.mq.sr.test_consistency uses too much memory.\n\nThere are two options to fix this:\n\n1)  Just take the doc test out.\n<or>\n2)  Change the doctest to call test_consistency w/ max_n=1 instead of max_n=2.  This leads to a more than 5 fold improvement of memory usage / time.\n\nThis patch implements 2, because (1) would make test coverage numbers decrease.",
     "created_at": "2009-01-23T22:15:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3758",
     "type": "issue_comment",
@@ -166,7 +166,7 @@ archive/issue_comments_026694.json:
 }
 ```
 
-Attachment
+Attachment [trac_3758-Fix_Crypto_DocTest.patch](tarball://root/attachments/some-uuid/ticket3758/trac_3758-Fix_Crypto_DocTest.patch) by shumow created at 2009-01-23 22:15:43
 
 The problem here is that the doctest for sage.crypto.mq.sr.test_consistency uses too much memory.
 

@@ -329,7 +329,7 @@ I just wrote a quick patch in the queue implementing the requested changes, and 
 archive/issue_comments_077314.json:
 ```json
 {
-    "body": "Attachment\n\nThanks very much for these fix.\n\nAll tests pass for sage, all tests long and optionnal pass for the finite_permutation_groups, the doc is well built... New comments for parent argument make also more clear the doc.\n\nPositive Review from me. Thanks you Rob for pointing improvements and fix.",
+    "body": "Attachment [trac_8549_cycle_enumerator-nb.patch](tarball://root/attachments/some-uuid/ticket8549/trac_8549_cycle_enumerator-nb.patch) by nborie created at 2010-06-01 11:30:39\n\nThanks very much for these fix.\n\nAll tests pass for sage, all tests long and optionnal pass for the finite_permutation_groups, the doc is well built... New comments for parent argument make also more clear the doc.\n\nPositive Review from me. Thanks you Rob for pointing improvements and fix.",
     "created_at": "2010-06-01T11:30:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8549",
     "type": "issue_comment",
@@ -338,7 +338,7 @@ archive/issue_comments_077314.json:
 }
 ```
 
-Attachment
+Attachment [trac_8549_cycle_enumerator-nb.patch](tarball://root/attachments/some-uuid/ticket8549/trac_8549_cycle_enumerator-nb.patch) by nborie created at 2010-06-01 11:30:39
 
 Thanks very much for these fix.
 

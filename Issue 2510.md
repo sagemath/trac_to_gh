@@ -96,7 +96,7 @@ The breakage seems to occur in 2473-ref.patch from #2473
 archive/issue_comments_017026.json:
 ```json
 {
-    "body": "Attachment\n\nPatch looks good to me. All doctests pass again with this patch applied.",
+    "body": "Attachment [2510-fix.patch](tarball://root/attachments/some-uuid/ticket2510/2510-fix.patch) by mabshoff created at 2008-03-14 02:24:21\n\nPatch looks good to me. All doctests pass again with this patch applied.",
     "created_at": "2008-03-14T02:24:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2510",
     "type": "issue_comment",
@@ -105,7 +105,7 @@ archive/issue_comments_017026.json:
 }
 ```
 
-Attachment
+Attachment [2510-fix.patch](tarball://root/attachments/some-uuid/ticket2510/2510-fix.patch) by mabshoff created at 2008-03-14 02:24:21
 
 Patch looks good to me. All doctests pass again with this patch applied.
 

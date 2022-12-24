@@ -234,7 +234,7 @@ I will try to fix this today if I can find the time.
 archive/issue_comments_036910.json:
 ```json
 {
-    "body": "Attachment\n\nspecial casing of 2d polytopes in 3d",
+    "body": "Attachment [trac_4875_1.patch](tarball://root/attachments/some-uuid/ticket4875/trac_4875_1.patch) by mhampton created at 2009-03-21 04:13:12\n\nspecial casing of 2d polytopes in 3d",
     "created_at": "2009-03-21T04:13:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4875",
     "type": "issue_comment",
@@ -243,7 +243,7 @@ archive/issue_comments_036910.json:
 }
 ```
 
-Attachment
+Attachment [trac_4875_1.patch](tarball://root/attachments/some-uuid/ticket4875/trac_4875_1.patch) by mhampton created at 2009-03-21 04:13:12
 
 special casing of 2d polytopes in 3d
 

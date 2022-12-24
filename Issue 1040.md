@@ -112,7 +112,7 @@ Changing assignee from was to ncalexan.
 archive/issue_comments_006344.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1040-ncalexan-2.hg](tarball://root/attachments/some-uuid/ticket1040/1040-ncalexan-2.hg) by ncalexan created at 2007-11-03 23:36:39",
     "created_at": "2007-11-03T23:36:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1040",
     "type": "issue_comment",
@@ -121,7 +121,7 @@ archive/issue_comments_006344.json:
 }
 ```
 
-Attachment
+Attachment [1040-ncalexan-2.hg](tarball://root/attachments/some-uuid/ticket1040/1040-ncalexan-2.hg) by ncalexan created at 2007-11-03 23:36:39
 
 
 

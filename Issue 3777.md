@@ -90,7 +90,7 @@ It looks like the problem here is that we don't have a full HTML/Javascript pars
 archive/issue_comments_026861.json:
 ```json
 {
-    "body": "Attachment\n\nSample failure of </script> tags.",
+    "body": "Attachment [foo.html](tarball://root/attachments/some-uuid/ticket3777/foo.html) by timdumol created at 2010-01-19 06:51:42\n\nSample failure of </script> tags.",
     "created_at": "2010-01-19T06:51:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3777",
     "type": "issue_comment",
@@ -99,7 +99,7 @@ archive/issue_comments_026861.json:
 }
 ```
 
-Attachment
+Attachment [foo.html](tarball://root/attachments/some-uuid/ticket3777/foo.html) by timdumol created at 2010-01-19 06:51:42
 
 Sample failure of </script> tags.
 

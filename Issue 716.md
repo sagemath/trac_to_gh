@@ -119,7 +119,7 @@ The attached patch may break some of the doctests in graph.py, though.
 archive/issue_comments_004159.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [init_and_to_simple.hg](tarball://root/attachments/some-uuid/ticket716/init_and_to_simple.hg) by jason created at 2007-09-20 21:29:46",
     "created_at": "2007-09-20T21:29:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/716",
     "type": "issue_comment",
@@ -128,7 +128,7 @@ archive/issue_comments_004159.json:
 }
 ```
 
-Attachment
+Attachment [init_and_to_simple.hg](tarball://root/attachments/some-uuid/ticket716/init_and_to_simple.hg) by jason created at 2007-09-20 21:29:46
 
 
 
@@ -137,7 +137,7 @@ Attachment
 archive/issue_comments_004160.json:
 ```json
 {
-    "body": "Attachment\n\nFixes doctest failures and other strangeness",
+    "body": "Attachment [deep_copy.hg](tarball://root/attachments/some-uuid/ticket716/deep_copy.hg) by rlm created at 2007-09-20 22:49:31\n\nFixes doctest failures and other strangeness",
     "created_at": "2007-09-20T22:49:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/716",
     "type": "issue_comment",
@@ -146,7 +146,7 @@ archive/issue_comments_004160.json:
 }
 ```
 
-Attachment
+Attachment [deep_copy.hg](tarball://root/attachments/some-uuid/ticket716/deep_copy.hg) by rlm created at 2007-09-20 22:49:31
 
 Fixes doctest failures and other strangeness
 
@@ -157,7 +157,7 @@ Fixes doctest failures and other strangeness
 archive/issue_comments_004161.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [doc_changes.hg](tarball://root/attachments/some-uuid/ticket716/doc_changes.hg) by jason created at 2007-09-20 23:54:09",
     "created_at": "2007-09-20T23:54:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/716",
     "type": "issue_comment",
@@ -166,7 +166,7 @@ archive/issue_comments_004161.json:
 }
 ```
 
-Attachment
+Attachment [doc_changes.hg](tarball://root/attachments/some-uuid/ticket716/doc_changes.hg) by jason created at 2007-09-20 23:54:09
 
 
 
@@ -175,7 +175,7 @@ Attachment
 archive/issue_comments_004162.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [arc_edges.hg](tarball://root/attachments/some-uuid/ticket716/arc_edges.hg) by rlm created at 2007-09-21 00:12:56",
     "created_at": "2007-09-21T00:12:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/716",
     "type": "issue_comment",
@@ -184,7 +184,7 @@ archive/issue_comments_004162.json:
 }
 ```
 
-Attachment
+Attachment [arc_edges.hg](tarball://root/attachments/some-uuid/ticket716/arc_edges.hg) by rlm created at 2007-09-21 00:12:56
 
 
 
@@ -193,7 +193,7 @@ Attachment
 archive/issue_comments_004163.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [change_arc_to_edge.hg](tarball://root/attachments/some-uuid/ticket716/change_arc_to_edge.hg) by jason created at 2007-09-21 00:37:37",
     "created_at": "2007-09-21T00:37:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/716",
     "type": "issue_comment",
@@ -202,7 +202,7 @@ archive/issue_comments_004163.json:
 }
 ```
 
-Attachment
+Attachment [change_arc_to_edge.hg](tarball://root/attachments/some-uuid/ticket716/change_arc_to_edge.hg) by jason created at 2007-09-21 00:37:37
 
 
 
@@ -229,7 +229,7 @@ Resolution: worksforme
 archive/issue_comments_004165.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [combinat-arcs2edges.patch](tarball://root/attachments/some-uuid/ticket716/combinat-arcs2edges.patch) by rlm created at 2007-09-21 02:06:07",
     "created_at": "2007-09-21T02:06:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/716",
     "type": "issue_comment",
@@ -238,7 +238,7 @@ archive/issue_comments_004165.json:
 }
 ```
 
-Attachment
+Attachment [combinat-arcs2edges.patch](tarball://root/attachments/some-uuid/ticket716/combinat-arcs2edges.patch) by rlm created at 2007-09-21 02:06:07
 
 
 

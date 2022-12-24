@@ -97,7 +97,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_005768.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [7031.patch](tarball://root/attachments/some-uuid/ticket943/7031.patch) by malb created at 2007-10-20 20:42:38",
     "created_at": "2007-10-20T20:42:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/943",
     "type": "issue_comment",
@@ -106,7 +106,7 @@ archive/issue_comments_005768.json:
 }
 ```
 
-Attachment
+Attachment [7031.patch](tarball://root/attachments/some-uuid/ticket943/7031.patch) by malb created at 2007-10-20 20:42:38
 
 
 
@@ -115,7 +115,7 @@ Attachment
 archive/issue_comments_005769.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patches implement the NTL wrapping. They also make echelon_form fall back gracefully if ntl.mat_ZZ.HNF fails. However in that case NTL prints \"HNF: bad input\" which also shows up during the doctests.",
+    "body": "Attachment [7032.patch](tarball://root/attachments/some-uuid/ticket943/7032.patch) by malb created at 2007-10-20 20:44:36\n\nThe attached patches implement the NTL wrapping. They also make echelon_form fall back gracefully if ntl.mat_ZZ.HNF fails. However in that case NTL prints \"HNF: bad input\" which also shows up during the doctests.",
     "created_at": "2007-10-20T20:44:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/943",
     "type": "issue_comment",
@@ -124,7 +124,7 @@ archive/issue_comments_005769.json:
 }
 ```
 
-Attachment
+Attachment [7032.patch](tarball://root/attachments/some-uuid/ticket943/7032.patch) by malb created at 2007-10-20 20:44:36
 
 The attached patches implement the NTL wrapping. They also make echelon_form fall back gracefully if ntl.mat_ZZ.HNF fails. However in that case NTL prints "HNF: bad input" which also shows up during the doctests.
 

@@ -75,7 +75,7 @@ Oops:
 archive/issue_comments_037285.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage.graphs-final.patch](tarball://root/attachments/some-uuid/ticket4913/sage.graphs-final.patch) by mhansen created at 2009-02-21 19:18:27",
     "created_at": "2009-02-21T19:18:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4913",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_037285.json:
 }
 ```
 
-Attachment
+Attachment [sage.graphs-final.patch](tarball://root/attachments/some-uuid/ticket4913/sage.graphs-final.patch) by mhansen created at 2009-02-21 19:18:27
 
 
 

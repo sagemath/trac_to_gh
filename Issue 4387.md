@@ -50,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4387
 archive/issue_comments_032294.json:
 ```json
 {
-    "body": "Attachment\n\nNotice that the `mpz_init` happens twice -- this is definitely the right fix.",
+    "body": "Attachment [trac_4387.patch](tarball://root/attachments/some-uuid/ticket4387/trac_4387.patch) by craigcitro created at 2008-10-30 05:17:25\n\nNotice that the `mpz_init` happens twice -- this is definitely the right fix.",
     "created_at": "2008-10-30T05:17:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4387",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_032294.json:
 }
 ```
 
-Attachment
+Attachment [trac_4387.patch](tarball://root/attachments/some-uuid/ticket4387/trac_4387.patch) by craigcitro created at 2008-10-30 05:17:25
 
 Notice that the `mpz_init` happens twice -- this is definitely the right fix.
 

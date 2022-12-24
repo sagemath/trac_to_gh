@@ -131,7 +131,7 @@ Agnes Jany
 archive/issue_comments_005272.json:
 ```json
 {
-    "body": "Attachment\n\nNote that mpmath, which is now a standard Sage package, contains an implementation of pslq:\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: import sage.libs.mpmath.all as mpmath\nsage: mpmath.mp.dps = 30\nsage: mpmath.pslq([sqrt(n) for n in range(2, 8+1)])\n[2, 0, 0, 0, 0, 0, -1]\nsage: mpmath.pslq([pi/4, acot(5), acot(239)])\n[1, -4, 1]\n```\n\n| Sage Version 4.2.1, Release Date: 2009-11-14                       |\n| Type notebook() for the GUI, and license() for information.        |\nThe examples are from the mpmath documentation, see http://mpmath.googlecode.com/svn/trunk/doc/build/identification.html\n\nThe first one says that the only integer relation between the square roots of 2,3,...,8 is `2\\sqrt{2}-\\sqrt{8}=0`.  The second is one of the cool formulas expressing pi as a combination of arccotangents.",
+    "body": "Attachment [pslqimplementation.zip](tarball://root/attachments/some-uuid/ticket853/pslqimplementation.zip) by AlexGhitza created at 2009-11-29 03:01:50\n\nNote that mpmath, which is now a standard Sage package, contains an implementation of pslq:\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: import sage.libs.mpmath.all as mpmath\nsage: mpmath.mp.dps = 30\nsage: mpmath.pslq([sqrt(n) for n in range(2, 8+1)])\n[2, 0, 0, 0, 0, 0, -1]\nsage: mpmath.pslq([pi/4, acot(5), acot(239)])\n[1, -4, 1]\n```\n\n| Sage Version 4.2.1, Release Date: 2009-11-14                       |\n| Type notebook() for the GUI, and license() for information.        |\nThe examples are from the mpmath documentation, see http://mpmath.googlecode.com/svn/trunk/doc/build/identification.html\n\nThe first one says that the only integer relation between the square roots of 2,3,...,8 is `2\\sqrt{2}-\\sqrt{8}=0`.  The second is one of the cool formulas expressing pi as a combination of arccotangents.",
     "created_at": "2009-11-29T03:01:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/853",
     "type": "issue_comment",
@@ -140,7 +140,7 @@ archive/issue_comments_005272.json:
 }
 ```
 
-Attachment
+Attachment [pslqimplementation.zip](tarball://root/attachments/some-uuid/ticket853/pslqimplementation.zip) by AlexGhitza created at 2009-11-29 03:01:50
 
 Note that mpmath, which is now a standard Sage package, contains an implementation of pslq:
 
@@ -271,7 +271,7 @@ Changing status from needs_work to needs_info.
 archive/issue_comments_005277.json:
 ```json
 {
-    "body": "Attachment\n\napply after installing pslq-1.0.spkg",
+    "body": "Attachment [trac_853.patch](tarball://root/attachments/some-uuid/ticket853/trac_853.patch) by AlexGhitza created at 2010-02-21 12:06:16\n\napply after installing pslq-1.0.spkg",
     "created_at": "2010-02-21T12:06:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/853",
     "type": "issue_comment",
@@ -280,7 +280,7 @@ archive/issue_comments_005277.json:
 }
 ```
 
-Attachment
+Attachment [trac_853.patch](tarball://root/attachments/some-uuid/ticket853/trac_853.patch) by AlexGhitza created at 2010-02-21 12:06:16
 
 apply after installing pslq-1.0.spkg
 

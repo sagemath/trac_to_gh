@@ -375,7 +375,7 @@ Implements abs() and exlains the difference between it and norm()
 archive/issue_comments_038994.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review due to #5778 - credit goes to RobertWB.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_5105.patch](tarball://root/attachments/some-uuid/ticket5105/trac_5105.patch) by mabshoff created at 2009-05-11 10:33:04\n\nPositive review due to #5778 - credit goes to RobertWB.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-11T10:33:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5105",
     "type": "issue_comment",
@@ -384,7 +384,7 @@ archive/issue_comments_038994.json:
 }
 ```
 
-Attachment
+Attachment [trac_5105.patch](tarball://root/attachments/some-uuid/ticket5105/trac_5105.patch) by mabshoff created at 2009-05-11 10:33:04
 
 Positive review due to #5778 - credit goes to RobertWB.
 

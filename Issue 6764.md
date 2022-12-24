@@ -115,7 +115,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_055701.json:
 ```json
 {
-    "body": "Attachment\n\n1. The doctest needs to be marked as optional.\n\n2. There should be more examples.\n\n3. Whether or not GLPK is installed, the import `from sage.numerical.mip import MIP` fails. I suppose this is a rather old patch, should `MIP` be `MixedIntegerLinearProgram`?\n\n4. \"rebased for 4.3.rc1\" means 4.3.rc0 + #7640 + #7674 + #7673, all of which are merged in rc1.",
+    "body": "Attachment [ISR.patch](tarball://root/attachments/some-uuid/ticket6764/ISR.patch) by rlm created at 2009-12-15 16:38:01\n\n1. The doctest needs to be marked as optional.\n\n2. There should be more examples.\n\n3. Whether or not GLPK is installed, the import `from sage.numerical.mip import MIP` fails. I suppose this is a rather old patch, should `MIP` be `MixedIntegerLinearProgram`?\n\n4. \"rebased for 4.3.rc1\" means 4.3.rc0 + #7640 + #7674 + #7673, all of which are merged in rc1.",
     "created_at": "2009-12-15T16:38:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6764",
     "type": "issue_comment",
@@ -124,7 +124,7 @@ archive/issue_comments_055701.json:
 }
 ```
 
-Attachment
+Attachment [ISR.patch](tarball://root/attachments/some-uuid/ticket6764/ISR.patch) by rlm created at 2009-12-15 16:38:01
 
 1. The doctest needs to be marked as optional.
 
@@ -285,7 +285,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_055710.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6764.patch](tarball://root/attachments/some-uuid/ticket6764/trac_6764.patch) by ncohen created at 2009-12-16 00:41:57",
     "created_at": "2009-12-16T00:41:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6764",
     "type": "issue_comment",
@@ -294,7 +294,7 @@ archive/issue_comments_055710.json:
 }
 ```
 
-Attachment
+Attachment [trac_6764.patch](tarball://root/attachments/some-uuid/ticket6764/trac_6764.patch) by ncohen created at 2009-12-16 00:41:57
 
 
 

@@ -85,7 +85,7 @@ Hang on segfault appears to be fixed
 archive/issue_comments_016056.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_2739_local_1.patch](tarball://root/attachments/some-uuid/ticket2379/trac_2739_local_1.patch) by gfurnish created at 2008-04-08 10:49:28",
     "created_at": "2008-04-08T10:49:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2379",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_016056.json:
 }
 ```
 
-Attachment
+Attachment [trac_2739_local_1.patch](tarball://root/attachments/some-uuid/ticket2379/trac_2739_local_1.patch) by gfurnish created at 2008-04-08 10:49:28
 
 
 
@@ -103,7 +103,7 @@ Attachment
 archive/issue_comments_016057.json:
 ```json
 {
-    "body": "Attachment\n\nPatches look good to me. Let's merge this now.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_2739_local_2.patch](tarball://root/attachments/some-uuid/ticket2379/trac_2739_local_2.patch) by mabshoff created at 2008-04-08 11:02:23\n\nPatches look good to me. Let's merge this now.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-08T11:02:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2379",
     "type": "issue_comment",
@@ -112,7 +112,7 @@ archive/issue_comments_016057.json:
 }
 ```
 
-Attachment
+Attachment [trac_2739_local_2.patch](tarball://root/attachments/some-uuid/ticket2379/trac_2739_local_2.patch) by mabshoff created at 2008-04-08 11:02:23
 
 Patches look good to me. Let's merge this now.
 
@@ -163,7 +163,7 @@ Resolution: fixed
 archive/issue_comments_016060.json:
 ```json
 {
-    "body": "Attachment\n\nthis fixes the makefile so that \"make check\" and friends work",
+    "body": "Attachment [trac_2379-fix-makefile.patch](tarball://root/attachments/some-uuid/ticket2379/trac_2379-fix-makefile.patch) by mabshoff created at 2008-04-08 13:45:31\n\nthis fixes the makefile so that \"make check\" and friends work",
     "created_at": "2008-04-08T13:45:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2379",
     "type": "issue_comment",
@@ -172,6 +172,6 @@ archive/issue_comments_016060.json:
 }
 ```
 
-Attachment
+Attachment [trac_2379-fix-makefile.patch](tarball://root/attachments/some-uuid/ticket2379/trac_2379-fix-makefile.patch) by mabshoff created at 2008-04-08 13:45:31
 
 this fixes the makefile so that "make check" and friends work

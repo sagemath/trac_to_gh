@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9804
 archive/issue_comments_096319.json:
 ```json
 {
-    "body": "Attachment\n\nReplacement deps, which removes SCONS dependency",
+    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket9804/deps) by drkirkby created at 2010-08-26 01:21:13\n\nReplacement deps, which removes SCONS dependency",
     "created_at": "2010-08-26T01:21:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9803",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_096319.json:
 }
 ```
 
-Attachment
+Attachment [deps](tarball://root/attachments/some-uuid/ticket9804/deps) by drkirkby created at 2010-08-26 01:21:13
 
 Replacement deps, which removes SCONS dependency
 
@@ -89,7 +89,7 @@ Changing status from new to needs_review.
 archive/issue_comments_096322.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket9804/deps.diff) by drkirkby created at 2010-08-26 01:25:29",
     "created_at": "2010-08-26T01:25:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9803",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_096322.json:
 }
 ```
 
-Attachment
+Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket9804/deps.diff) by drkirkby created at 2010-08-26 01:25:29
 
 
 

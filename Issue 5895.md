@@ -59,7 +59,7 @@ Obviously, setting `max_snaps = 30` should be user-configurable.  Is it easy to 
 archive/issue_comments_046609.json:
 ```json
 {
-    "body": "Attachment\n\nYou *MUST* change this code:\n\n```\n \t1945\t        path = self.snapshot_directory() \n \t1946\t        snapshots = os.listdir(path) \n \t1947\t        snapshots.sort() \n \t1948\t        if len(snapshots) == (max_snaps + 1): \n \t1949\t            os.remove(os.path.join(path, snapshots[0]))\n```\n\n\nChange the line \"if len(snapshots) == (max_snaps + 1):\" to \n\n```\nwhile len(snapshots) > max_snaps:\n```\n\nIt reads better, will work, *and* will avoid subtle race conditions.  The way you have stuff setup in this patch, if there is ever a situation where two snapshots are made, but this function isn't called (e.g., due to some weird race conditions), then one goes back to having potentially thousands of snapshots.\n\nAlso, I see no reason to not delete snapshots from old worksheets too.  In fact, I very much hope that when I apply this patch, then directories with tons of snapshots on sagenb.org and my laptop will have their excessive snapshots deleted, at least if the corresponding worksheets are used.\n\n\nWilliam",
+    "body": "Attachment [trac_5895_limit_snapshots.2.patch](tarball://root/attachments/some-uuid/ticket5895/trac_5895_limit_snapshots.2.patch) by was created at 2009-04-26 01:48:42\n\nYou *MUST* change this code:\n\n```\n \t1945\t        path = self.snapshot_directory() \n \t1946\t        snapshots = os.listdir(path) \n \t1947\t        snapshots.sort() \n \t1948\t        if len(snapshots) == (max_snaps + 1): \n \t1949\t            os.remove(os.path.join(path, snapshots[0]))\n```\n\n\nChange the line \"if len(snapshots) == (max_snaps + 1):\" to \n\n```\nwhile len(snapshots) > max_snaps:\n```\n\nIt reads better, will work, *and* will avoid subtle race conditions.  The way you have stuff setup in this patch, if there is ever a situation where two snapshots are made, but this function isn't called (e.g., due to some weird race conditions), then one goes back to having potentially thousands of snapshots.\n\nAlso, I see no reason to not delete snapshots from old worksheets too.  In fact, I very much hope that when I apply this patch, then directories with tons of snapshots on sagenb.org and my laptop will have their excessive snapshots deleted, at least if the corresponding worksheets are used.\n\n\nWilliam",
     "created_at": "2009-04-26T01:48:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5895",
     "type": "issue_comment",
@@ -68,7 +68,7 @@ archive/issue_comments_046609.json:
 }
 ```
 
-Attachment
+Attachment [trac_5895_limit_snapshots.2.patch](tarball://root/attachments/some-uuid/ticket5895/trac_5895_limit_snapshots.2.patch) by was created at 2009-04-26 01:48:42
 
 You *MUST* change this code:
 
@@ -210,7 +210,7 @@ William
 archive/issue_comments_046614.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5895_limit_snapshots_2.patch](tarball://root/attachments/some-uuid/ticket5895/trac_5895_limit_snapshots_2.patch) by rbeezer created at 2009-04-27 13:32:02",
     "created_at": "2009-04-27T13:32:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5895",
     "type": "issue_comment",
@@ -219,7 +219,7 @@ archive/issue_comments_046614.json:
 }
 ```
 
-Attachment
+Attachment [trac_5895_limit_snapshots_2.patch](tarball://root/attachments/some-uuid/ticket5895/trac_5895_limit_snapshots_2.patch) by rbeezer created at 2009-04-27 13:32:02
 
 
 

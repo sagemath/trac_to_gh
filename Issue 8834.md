@@ -119,7 +119,7 @@ Having these tests exist, but get clearly marked #optional, will remind users th
 archive/issue_comments_081233.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8834.patch](tarball://root/attachments/some-uuid/ticket8834/trac_8834.patch) by was created at 2010-05-01 18:59:27",
     "created_at": "2010-05-01T18:59:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8834",
     "type": "issue_comment",
@@ -128,7 +128,7 @@ archive/issue_comments_081233.json:
 }
 ```
 
-Attachment
+Attachment [trac_8834.patch](tarball://root/attachments/some-uuid/ticket8834/trac_8834.patch) by was created at 2010-05-01 18:59:27
 
 
 

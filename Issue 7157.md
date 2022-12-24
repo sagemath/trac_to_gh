@@ -239,7 +239,7 @@ Updated !
 archive/issue_comments_059304.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:8 ncohen]:\n> Updated !\n\nIt was decided on sage-devel only to put the version and not the date in the message of deprecation aliases. I just uploaded a patch witch does that. Please review. Aside from that\n\nYou have a Positive review on trac_7157.patch. You can change the status as soon as you had an eye on my trivial review patch. \n\nCheers,\n\nFlorent\n\nBy the way a review on #7515 is welcome ;-)",
+    "body": "Attachment [trac_7157.patch](tarball://root/attachments/some-uuid/ticket7157/trac_7157.patch) by hivert created at 2009-11-30 10:48:39\n\nReplying to [comment:8 ncohen]:\n> Updated !\n\nIt was decided on sage-devel only to put the version and not the date in the message of deprecation aliases. I just uploaded a patch witch does that. Please review. Aside from that\n\nYou have a Positive review on trac_7157.patch. You can change the status as soon as you had an eye on my trivial review patch. \n\nCheers,\n\nFlorent\n\nBy the way a review on #7515 is welcome ;-)",
     "created_at": "2009-11-30T10:48:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7157",
     "type": "issue_comment",
@@ -248,7 +248,7 @@ archive/issue_comments_059304.json:
 }
 ```
 
-Attachment
+Attachment [trac_7157.patch](tarball://root/attachments/some-uuid/ticket7157/trac_7157.patch) by hivert created at 2009-11-30 10:48:39
 
 Replying to [comment:8 ncohen]:
 > Updated !
@@ -306,7 +306,7 @@ Resolution: fixed
 archive/issue_comments_059307.json:
 ```json
 {
-    "body": "Attachment\n\nI've added a new trac_7157_review.patch patch with two function calls that were missed.",
+    "body": "Attachment [trac_7157_review.patch](tarball://root/attachments/some-uuid/ticket7157/trac_7157_review.patch) by mhansen created at 2009-12-01 04:37:12\n\nI've added a new trac_7157_review.patch patch with two function calls that were missed.",
     "created_at": "2009-12-01T04:37:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7157",
     "type": "issue_comment",
@@ -315,7 +315,7 @@ archive/issue_comments_059307.json:
 }
 ```
 
-Attachment
+Attachment [trac_7157_review.patch](tarball://root/attachments/some-uuid/ticket7157/trac_7157_review.patch) by mhansen created at 2009-12-01 04:37:12
 
 I've added a new trac_7157_review.patch patch with two function calls that were missed.
 

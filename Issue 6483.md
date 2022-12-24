@@ -53,7 +53,7 @@ $SAGE_ROOT/local/notebook/javascript/jsmath/cmmi10.js
 archive/issue_comments_052412.json:
 ```json
 {
-    "body": "Attachment\n\nTest worksheet.",
+    "body": "Attachment [cmmi10.txt](tarball://root/attachments/some-uuid/ticket6483/cmmi10.txt) by mpatel created at 2009-07-08 13:32:33\n\nTest worksheet.",
     "created_at": "2009-07-08T13:32:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6483",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_052412.json:
 }
 ```
 
-Attachment
+Attachment [cmmi10.txt](tarball://root/attachments/some-uuid/ticket6483/cmmi10.txt) by mpatel created at 2009-07-08 13:32:33
 
 Test worksheet.
 

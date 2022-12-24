@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8614
 archive/issue_comments_078053.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8614.patch](tarball://root/attachments/some-uuid/ticket8614/trac_8614.patch) by was created at 2010-03-27 03:44:06",
     "created_at": "2010-03-27T03:44:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8614",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_078053.json:
 }
 ```
 
-Attachment
+Attachment [trac_8614.patch](tarball://root/attachments/some-uuid/ticket8614/trac_8614.patch) by was created at 2010-03-27 03:44:06
 
 
 
@@ -272,7 +272,7 @@ I will soon update the patch on this ticket by removing those parts.
 archive/issue_comments_078062.json:
 ```json
 {
-    "body": "Attachment\n\nI rebased the patch to 4.7alpha2 (with #10709 applied). Its not true that the new code is slower. I ran the following small tests:\n\n\n```\n%time M = ModularSymbols(1000,2,sign=1).new_subspace().cuspidal_subspace()\n%time t3 = M.hecke_matrix(3)\n%time time d = t3.decomposition(algorithm='multimodular', height_guess=1)\n\n%time ModularSymbols(2002, 2)\n%time ModularSymbols(302, 4)\n%time ModularSymbols(Gamma1(33), 4)\n%time ModularSymbols(DirichletGroup(308).0, 5)\n%time M = ModularSymbols(1, 810, 0, GF(809))\n```\n\n\nWithout the patch:\n\n```\nWall time: 2.92 s\nWall time: 0.19 s\nWall time: 0.09 s\n\nWall time: 1.34 s\nWall time: 4.08 s\nWall time: 2.20 s\nWall time: 10.97 s\nWall time: 16.23 s\n```\n\n\nWith the patch applied:\n\n```\nWall time: 2.77 s\nWall time: 0.13 s\nWall time: 0.09 s\n\nWall time: 1.22 s\nWall time: 4.38 s\nWall time: 2.10 s\nWall time: 11.12 s\nWall time: 15.33 s\n```\n\n\nNone of the differences is significant in the sense that %timeit could reproduce it. A profile\n\n```\n%prun M = ModularSymbols(Gamma1(52), 4)\n```\n\nshows that indeed the new code is three times as fast as the old one. But since the relevant function only needs 0.1s and 0.03s, respectively, this can be hardly tracked.\n\nMartin",
+    "body": "Attachment [trac-8614-optimize-modular-symbol-relations-rebase.patch](tarball://root/attachments/some-uuid/ticket8614/trac-8614-optimize-modular-symbol-relations-rebase.patch) by mraum created at 2011-03-22 02:25:56\n\nI rebased the patch to 4.7alpha2 (with #10709 applied). Its not true that the new code is slower. I ran the following small tests:\n\n\n```\n%time M = ModularSymbols(1000,2,sign=1).new_subspace().cuspidal_subspace()\n%time t3 = M.hecke_matrix(3)\n%time time d = t3.decomposition(algorithm='multimodular', height_guess=1)\n\n%time ModularSymbols(2002, 2)\n%time ModularSymbols(302, 4)\n%time ModularSymbols(Gamma1(33), 4)\n%time ModularSymbols(DirichletGroup(308).0, 5)\n%time M = ModularSymbols(1, 810, 0, GF(809))\n```\n\n\nWithout the patch:\n\n```\nWall time: 2.92 s\nWall time: 0.19 s\nWall time: 0.09 s\n\nWall time: 1.34 s\nWall time: 4.08 s\nWall time: 2.20 s\nWall time: 10.97 s\nWall time: 16.23 s\n```\n\n\nWith the patch applied:\n\n```\nWall time: 2.77 s\nWall time: 0.13 s\nWall time: 0.09 s\n\nWall time: 1.22 s\nWall time: 4.38 s\nWall time: 2.10 s\nWall time: 11.12 s\nWall time: 15.33 s\n```\n\n\nNone of the differences is significant in the sense that %timeit could reproduce it. A profile\n\n```\n%prun M = ModularSymbols(Gamma1(52), 4)\n```\n\nshows that indeed the new code is three times as fast as the old one. But since the relevant function only needs 0.1s and 0.03s, respectively, this can be hardly tracked.\n\nMartin",
     "created_at": "2011-03-22T02:25:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8614",
     "type": "issue_comment",
@@ -281,7 +281,7 @@ archive/issue_comments_078062.json:
 }
 ```
 
-Attachment
+Attachment [trac-8614-optimize-modular-symbol-relations-rebase.patch](tarball://root/attachments/some-uuid/ticket8614/trac-8614-optimize-modular-symbol-relations-rebase.patch) by mraum created at 2011-03-22 02:25:56
 
 I rebased the patch to 4.7alpha2 (with #10709 applied). Its not true that the new code is slower. I ran the following small tests:
 

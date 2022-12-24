@@ -78,7 +78,7 @@ Changing status from new to needs_review.
 archive/issue_comments_070806.json:
 ```json
 {
-    "body": "Attachment\n\nbased on Sage 4.3.2; depends on #8199",
+    "body": "Attachment [trac_8079-patching-spkgs.patch](tarball://root/attachments/some-uuid/ticket8079/trac_8079-patching-spkgs.patch) by mvngu created at 2010-02-10 05:23:28\n\nbased on Sage 4.3.2; depends on #8199",
     "created_at": "2010-02-10T05:23:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8079",
     "type": "issue_comment",
@@ -87,7 +87,7 @@ archive/issue_comments_070806.json:
 }
 ```
 
-Attachment
+Attachment [trac_8079-patching-spkgs.patch](tarball://root/attachments/some-uuid/ticket8079/trac_8079-patching-spkgs.patch) by mvngu created at 2010-02-10 05:23:28
 
 based on Sage 4.3.2; depends on #8199
 

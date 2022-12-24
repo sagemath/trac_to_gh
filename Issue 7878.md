@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7878
 archive/issue_comments_068449.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [remove-spaces-7878.patch](tarball://root/attachments/some-uuid/ticket7878/remove-spaces-7878.patch) by drkirkby created at 2010-01-09 19:13:44",
     "created_at": "2010-01-09T19:13:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7878",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_068449.json:
 }
 ```
 
-Attachment
+Attachment [remove-spaces-7878.patch](tarball://root/attachments/some-uuid/ticket7878/remove-spaces-7878.patch) by drkirkby created at 2010-01-09 19:13:44
 
 
 

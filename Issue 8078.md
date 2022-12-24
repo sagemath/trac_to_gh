@@ -129,7 +129,7 @@ Changing status from new to needs_review.
 archive/issue_comments_070800.json:
 ```json
 {
-    "body": "Attachment\n\nThis is already fixed in sage-4.8.alpha4, so I've added a doctest for it.",
+    "body": "Attachment [sage-trac_8078.patch](tarball://root/attachments/some-uuid/ticket8078/sage-trac_8078.patch) by mjo created at 2011-12-14 00:15:46\n\nThis is already fixed in sage-4.8.alpha4, so I've added a doctest for it.",
     "created_at": "2011-12-14T00:15:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8078",
     "type": "issue_comment",
@@ -138,7 +138,7 @@ archive/issue_comments_070800.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac_8078.patch](tarball://root/attachments/some-uuid/ticket8078/sage-trac_8078.patch) by mjo created at 2011-12-14 00:15:46
 
 This is already fixed in sage-4.8.alpha4, so I've added a doctest for it.
 

@@ -143,7 +143,7 @@ Don't use rstrip on internal prompt.  sagenb repo.
 archive/issue_comments_065621.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7663-rstrip_prompt.patch](tarball://root/attachments/some-uuid/ticket7663/trac_7663-rstrip_prompt.patch) by mpatel created at 2010-01-15 23:07:30",
     "created_at": "2010-01-15T23:07:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7663",
     "type": "issue_comment",
@@ -152,7 +152,7 @@ archive/issue_comments_065621.json:
 }
 ```
 
-Attachment
+Attachment [trac_7663-rstrip_prompt.patch](tarball://root/attachments/some-uuid/ticket7663/trac_7663-rstrip_prompt.patch) by mpatel created at 2010-01-15 23:07:30
 
 
 
@@ -233,7 +233,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_065626.json:
 ```json
 {
-    "body": "Attachment\n\nLGTM.",
+    "body": "Attachment [trac_7663-rstrip_prompt.2.patch](tarball://root/attachments/some-uuid/ticket7663/trac_7663-rstrip_prompt.2.patch) by timdumol created at 2010-01-17 18:31:44\n\nLGTM.",
     "created_at": "2010-01-17T18:31:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7663",
     "type": "issue_comment",
@@ -242,7 +242,7 @@ archive/issue_comments_065626.json:
 }
 ```
 
-Attachment
+Attachment [trac_7663-rstrip_prompt.2.patch](tarball://root/attachments/some-uuid/ticket7663/trac_7663-rstrip_prompt.2.patch) by timdumol created at 2010-01-17 18:31:44
 
 LGTM.
 
@@ -253,7 +253,7 @@ LGTM.
 archive/issue_comments_065627.json:
 ```json
 {
-    "body": "Attachment\n\nRemove extra line to fix #7648.  Replaces previous.",
+    "body": "Attachment [trac_7663-rstrip_prompt.3.patch](tarball://root/attachments/some-uuid/ticket7663/trac_7663-rstrip_prompt.3.patch) by mpatel created at 2010-01-18 08:41:35\n\nRemove extra line to fix #7648.  Replaces previous.",
     "created_at": "2010-01-18T08:41:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7663",
     "type": "issue_comment",
@@ -262,7 +262,7 @@ archive/issue_comments_065627.json:
 }
 ```
 
-Attachment
+Attachment [trac_7663-rstrip_prompt.3.patch](tarball://root/attachments/some-uuid/ticket7663/trac_7663-rstrip_prompt.3.patch) by mpatel created at 2010-01-18 08:41:35
 
 Remove extra line to fix #7648.  Replaces previous.
 

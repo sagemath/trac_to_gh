@@ -547,7 +547,7 @@ It's still a problem for me: with Sage 4.2.1 on OS X 10.5, Safari 4.0.4, it stil
 archive/issue_comments_038952.json:
 ```json
 {
-    "body": "Attachment\n\nAn attempt at fixing the bug.",
+    "body": "Attachment [trac_5100-empty-trash.patch](tarball://root/attachments/some-uuid/ticket5100/trac_5100-empty-trash.patch) by timdumol created at 2009-12-05 12:04:38\n\nAn attempt at fixing the bug.",
     "created_at": "2009-12-05T12:04:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5100",
     "type": "issue_comment",
@@ -556,7 +556,7 @@ archive/issue_comments_038952.json:
 }
 ```
 
-Attachment
+Attachment [trac_5100-empty-trash.patch](tarball://root/attachments/some-uuid/ticket5100/trac_5100-empty-trash.patch) by timdumol created at 2009-12-05 12:04:38
 
 An attempt at fixing the bug.
 

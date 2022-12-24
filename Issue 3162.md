@@ -58,7 +58,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3162
 archive/issue_comments_021934.json:
 ```json
 {
-    "body": "Attachment\n\nProblem matrix",
+    "body": "Attachment [prob-sol.sobj](tarball://root/attachments/some-uuid/ticket3162/prob-sol.sobj) by dunfield created at 2008-05-12 00:52:41\n\nProblem matrix",
     "created_at": "2008-05-12T00:52:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3162",
     "type": "issue_comment",
@@ -67,7 +67,7 @@ archive/issue_comments_021934.json:
 }
 ```
 
-Attachment
+Attachment [prob-sol.sobj](tarball://root/attachments/some-uuid/ticket3162/prob-sol.sobj) by dunfield created at 2008-05-12 00:52:41
 
 Problem matrix
 

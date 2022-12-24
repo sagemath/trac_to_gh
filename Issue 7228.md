@@ -74,7 +74,7 @@ Changing status from new to needs_review.
 archive/issue_comments_059956.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7228.patch](tarball://root/attachments/some-uuid/ticket7228/trac_7228.patch) by AJonsson created at 2009-10-15 15:33:12",
     "created_at": "2009-10-15T15:33:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7228",
     "type": "issue_comment",
@@ -83,7 +83,7 @@ archive/issue_comments_059956.json:
 }
 ```
 
-Attachment
+Attachment [trac_7228.patch](tarball://root/attachments/some-uuid/ticket7228/trac_7228.patch) by AJonsson created at 2009-10-15 15:33:12
 
 
 
@@ -112,7 +112,7 @@ If you agree with these, you can set this ticket to positive review !
 archive/issue_comments_059958.json:
 ```json
 {
-    "body": "Attachment\n\nThanks for your review, I agree with all changes. I noticed however that my patch caused a test to fail in graph.py (a test that looks up the coordinates of all vertices of the Petersen Graph). The failure was trivial, the main reason was that I had placed the nodes at larger distance from (0,0) than before.\n\nI have fixed these position issues in this new patch, which should be applied on top of trac_7228-reviewer.patch",
+    "body": "Attachment [trac_7228-reviewer.patch](tarball://root/attachments/some-uuid/ticket7228/trac_7228-reviewer.patch) by AJonsson created at 2009-10-20 07:15:23\n\nThanks for your review, I agree with all changes. I noticed however that my patch caused a test to fail in graph.py (a test that looks up the coordinates of all vertices of the Petersen Graph). The failure was trivial, the main reason was that I had placed the nodes at larger distance from (0,0) than before.\n\nI have fixed these position issues in this new patch, which should be applied on top of trac_7228-reviewer.patch",
     "created_at": "2009-10-20T07:15:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7228",
     "type": "issue_comment",
@@ -121,7 +121,7 @@ archive/issue_comments_059958.json:
 }
 ```
 
-Attachment
+Attachment [trac_7228-reviewer.patch](tarball://root/attachments/some-uuid/ticket7228/trac_7228-reviewer.patch) by AJonsson created at 2009-10-20 07:15:23
 
 Thanks for your review, I agree with all changes. I noticed however that my patch caused a test to fail in graph.py (a test that looks up the coordinates of all vertices of the Petersen Graph). The failure was trivial, the main reason was that I had placed the nodes at larger distance from (0,0) than before.
 
@@ -134,7 +134,7 @@ I have fixed these position issues in this new patch, which should be applied on
 archive/issue_comments_059959.json:
 ```json
 {
-    "body": "Attachment\n\nfixes failure of position test",
+    "body": "Attachment [trac_7228-fix_positions.patch](tarball://root/attachments/some-uuid/ticket7228/trac_7228-fix_positions.patch) by AJonsson created at 2009-10-20 07:16:34\n\nfixes failure of position test",
     "created_at": "2009-10-20T07:16:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7228",
     "type": "issue_comment",
@@ -143,7 +143,7 @@ archive/issue_comments_059959.json:
 }
 ```
 
-Attachment
+Attachment [trac_7228-fix_positions.patch](tarball://root/attachments/some-uuid/ticket7228/trac_7228-fix_positions.patch) by AJonsson created at 2009-10-20 07:16:34
 
 fixes failure of position test
 

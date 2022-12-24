@@ -46,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7425
 archive/issue_comments_062491.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7425.patch](tarball://root/attachments/some-uuid/ticket7425/trac_7425.patch) by AlexGhitza created at 2009-11-11 13:33:48",
     "created_at": "2009-11-11T13:33:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7425",
     "type": "issue_comment",
@@ -55,7 +55,7 @@ archive/issue_comments_062491.json:
 }
 ```
 
-Attachment
+Attachment [trac_7425.patch](tarball://root/attachments/some-uuid/ticket7425/trac_7425.patch) by AlexGhitza created at 2009-11-11 13:33:48
 
 
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8617
 archive/issue_comments_078085.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8617.patch](tarball://root/attachments/some-uuid/ticket8617/trac_8617.patch) by was created at 2010-03-27 23:25:55",
     "created_at": "2010-03-27T23:25:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8617",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_078085.json:
 }
 ```
 
-Attachment
+Attachment [trac_8617.patch](tarball://root/attachments/some-uuid/ticket8617/trac_8617.patch) by was created at 2010-03-27 23:25:55
 
 
 
@@ -49,7 +49,7 @@ Attachment
 archive/issue_comments_078086.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [galrep_gl2data.dat](tarball://root/attachments/some-uuid/ticket8617/galrep_gl2data.dat) by was created at 2010-03-27 23:26:31",
     "created_at": "2010-03-27T23:26:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8617",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_078086.json:
 }
 ```
 
-Attachment
+Attachment [galrep_gl2data.dat](tarball://root/attachments/some-uuid/ticket8617/galrep_gl2data.dat) by was created at 2010-03-27 23:26:31
 
 
 
@@ -121,7 +121,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_078090.json:
 ```json
 {
-    "body": "Attachment\n\nI will review this ticket, as long as someone else makes the necessary changes to the extcode spkg to include the `galrep_*.dat` files in the appropriate manner.",
+    "body": "Attachment [trac_8617-part2.patch](tarball://root/attachments/some-uuid/ticket8617/trac_8617-part2.patch) by rlm created at 2010-05-27 23:12:50\n\nI will review this ticket, as long as someone else makes the necessary changes to the extcode spkg to include the `galrep_*.dat` files in the appropriate manner.",
     "created_at": "2010-05-27T23:12:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8617",
     "type": "issue_comment",
@@ -130,7 +130,7 @@ archive/issue_comments_078090.json:
 }
 ```
 
-Attachment
+Attachment [trac_8617-part2.patch](tarball://root/attachments/some-uuid/ticket8617/trac_8617-part2.patch) by rlm created at 2010-05-27 23:12:50
 
 I will review this ticket, as long as someone else makes the necessary changes to the extcode spkg to include the `galrep_*.dat` files in the appropriate manner.
 
@@ -159,7 +159,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_078092.json:
 ```json
 {
-    "body": "Attachment\n\nPS - I don't think this is quite the right way to update extcode... I didn't realize I had done 'alpha0' --> 'alpha1'. I suppose the release manager would just add the \"galrep\" directory to the data/extcode directory, which would then be included in the new extcode spkg automatically by the dist script (Is this correct?)",
+    "body": "Attachment [trac_8617-part3.patch](tarball://root/attachments/some-uuid/ticket8617/trac_8617-part3.patch) by rlm created at 2010-06-17 17:04:06\n\nPS - I don't think this is quite the right way to update extcode... I didn't realize I had done 'alpha0' --> 'alpha1'. I suppose the release manager would just add the \"galrep\" directory to the data/extcode directory, which would then be included in the new extcode spkg automatically by the dist script (Is this correct?)",
     "created_at": "2010-06-17T17:04:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8617",
     "type": "issue_comment",
@@ -168,7 +168,7 @@ archive/issue_comments_078092.json:
 }
 ```
 
-Attachment
+Attachment [trac_8617-part3.patch](tarball://root/attachments/some-uuid/ticket8617/trac_8617-part3.patch) by rlm created at 2010-06-17 17:04:06
 
 PS - I don't think this is quite the right way to update extcode... I didn't realize I had done 'alpha0' --> 'alpha1'. I suppose the release manager would just add the "galrep" directory to the data/extcode directory, which would then be included in the new extcode spkg automatically by the dist script (Is this correct?)
 

@@ -69,7 +69,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1894
 archive/issue_comments_011992.json:
 ```json
 {
-    "body": "Attachment\n\nfixes bug and adapts doctest",
+    "body": "Attachment [trac_1894_toybuchberger.patch](tarball://root/attachments/some-uuid/ticket1894/trac_1894_toybuchberger.patch) by malb created at 2008-01-23 16:50:05\n\nfixes bug and adapts doctest",
     "created_at": "2008-01-23T16:50:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1894",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_011992.json:
 }
 ```
 
-Attachment
+Attachment [trac_1894_toybuchberger.patch](tarball://root/attachments/some-uuid/ticket1894/trac_1894_toybuchberger.patch) by malb created at 2008-01-23 16:50:05
 
 fixes bug and adapts doctest
 

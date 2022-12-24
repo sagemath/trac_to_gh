@@ -326,7 +326,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_071459.json:
 ```json
 {
-    "body": "Attachment\n\nThis now needed to have a string (or a WordDatatype_str) as separator. A ValueError is raised when it's not the case.",
+    "body": "Attachment [trac_8127.patch](tarball://root/attachments/some-uuid/ticket8127/trac_8127.patch) by vdelecroix created at 2010-02-08 21:07:42\n\nThis now needed to have a string (or a WordDatatype_str) as separator. A ValueError is raised when it's not the case.",
     "created_at": "2010-02-08T21:07:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8127",
     "type": "issue_comment",
@@ -335,7 +335,7 @@ archive/issue_comments_071459.json:
 }
 ```
 
-Attachment
+Attachment [trac_8127.patch](tarball://root/attachments/some-uuid/ticket8127/trac_8127.patch) by vdelecroix created at 2010-02-08 21:07:42
 
 This now needed to have a string (or a WordDatatype_str) as separator. A ValueError is raised when it's not the case.
 
@@ -364,7 +364,7 @@ Applies over the precedent patch
 archive/issue_comments_071461.json:
 ```json
 {
-    "body": "Attachment\n\nI just added a patch which changes split function to follow python behavior for when no arguments are given and changed some doc mise en forme.\n\nAll tests passed. The above problem is solve. Sphinx builds fine on both functions. I am giving a positive review to Vincent's patch.\n\nVincent, if you agree with my patch, you can change the status of this ticket for positive review.",
+    "body": "Attachment [trac_8127-review-sl.patch](tarball://root/attachments/some-uuid/ticket8127/trac_8127-review-sl.patch) by slabbe created at 2010-02-10 00:37:00\n\nI just added a patch which changes split function to follow python behavior for when no arguments are given and changed some doc mise en forme.\n\nAll tests passed. The above problem is solve. Sphinx builds fine on both functions. I am giving a positive review to Vincent's patch.\n\nVincent, if you agree with my patch, you can change the status of this ticket for positive review.",
     "created_at": "2010-02-10T00:37:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8127",
     "type": "issue_comment",
@@ -373,7 +373,7 @@ archive/issue_comments_071461.json:
 }
 ```
 
-Attachment
+Attachment [trac_8127-review-sl.patch](tarball://root/attachments/some-uuid/ticket8127/trac_8127-review-sl.patch) by slabbe created at 2010-02-10 00:37:00
 
 I just added a patch which changes split function to follow python behavior for when no arguments are given and changed some doc mise en forme.
 

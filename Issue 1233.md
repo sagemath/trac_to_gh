@@ -147,7 +147,7 @@ See model-changing code at #1239
 archive/issue_comments_007682.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [jec-20071219.hg](tarball://root/attachments/some-uuid/ticket1233/jec-20071219.hg) by cremona created at 2007-12-19 11:26:25",
     "created_at": "2007-12-19T11:26:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1233",
     "type": "issue_comment",
@@ -156,7 +156,7 @@ archive/issue_comments_007682.json:
 }
 ```
 
-Attachment
+Attachment [jec-20071219.hg](tarball://root/attachments/some-uuid/ticket1233/jec-20071219.hg) by cremona created at 2007-12-19 11:26:25
 
 
 
@@ -165,7 +165,7 @@ Attachment
 archive/issue_comments_007683.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [jec-20071219.2.hg](tarball://root/attachments/some-uuid/ticket1233/jec-20071219.2.hg) by cremona created at 2007-12-19 11:31:13",
     "created_at": "2007-12-19T11:31:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1233",
     "type": "issue_comment",
@@ -174,7 +174,7 @@ archive/issue_comments_007683.json:
 }
 ```
 
-Attachment
+Attachment [jec-20071219.2.hg](tarball://root/attachments/some-uuid/ticket1233/jec-20071219.2.hg) by cremona created at 2007-12-19 11:31:13
 
 
 
@@ -183,7 +183,7 @@ Attachment
 archive/issue_comments_007684.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [jec-20071219.3.hg](tarball://root/attachments/some-uuid/ticket1233/jec-20071219.3.hg) by cremona created at 2007-12-19 11:33:06",
     "created_at": "2007-12-19T11:33:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1233",
     "type": "issue_comment",
@@ -192,7 +192,7 @@ archive/issue_comments_007684.json:
 }
 ```
 
-Attachment
+Attachment [jec-20071219.3.hg](tarball://root/attachments/some-uuid/ticket1233/jec-20071219.3.hg) by cremona created at 2007-12-19 11:33:06
 
 
 

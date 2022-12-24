@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1170
 archive/issue_comments_007171.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1170-matrix-group-order.patch](tarball://root/attachments/some-uuid/ticket1170/1170-matrix-group-order.patch) by cremona created at 2008-09-04 15:43:19",
     "created_at": "2008-09-04T15:43:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1170",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_007171.json:
 }
 ```
 
-Attachment
+Attachment [1170-matrix-group-order.patch](tarball://root/attachments/some-uuid/ticket1170/1170-matrix-group-order.patch) by cremona created at 2008-09-04 15:43:19
 
 
 

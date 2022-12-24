@@ -124,7 +124,7 @@ Changing status from new to needs_review.
 archive/issue_comments_079152.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8686.patch](tarball://root/attachments/some-uuid/ticket8686/trac_8686.patch) by mhansen created at 2010-05-03 22:01:35",
     "created_at": "2010-05-03T22:01:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8686",
     "type": "issue_comment",
@@ -133,7 +133,7 @@ archive/issue_comments_079152.json:
 }
 ```
 
-Attachment
+Attachment [trac_8686.patch](tarball://root/attachments/some-uuid/ticket8686/trac_8686.patch) by mhansen created at 2010-05-03 22:01:35
 
 
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1900
 archive/issue_comments_012021.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [graph_am-updated.patch](tarball://root/attachments/some-uuid/ticket1900/graph_am-updated.patch) by jason created at 2008-01-24 05:44:07",
     "created_at": "2008-01-24T05:44:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1900",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_012021.json:
 }
 ```
 
-Attachment
+Attachment [graph_am-updated.patch](tarball://root/attachments/some-uuid/ticket1900/graph_am-updated.patch) by jason created at 2008-01-24 05:44:07
 
 
 
@@ -107,7 +107,7 @@ Changing priority from minor to major.
 archive/issue_comments_012025.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [graph_am-over_integers.patch](tarball://root/attachments/some-uuid/ticket1900/graph_am-over_integers.patch) by jason created at 2008-01-24 06:22:49",
     "created_at": "2008-01-24T06:22:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1900",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_012025.json:
 }
 ```
 
-Attachment
+Attachment [graph_am-over_integers.patch](tarball://root/attachments/some-uuid/ticket1900/graph_am-over_integers.patch) by jason created at 2008-01-24 06:22:49
 
 
 

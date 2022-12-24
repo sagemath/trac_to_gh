@@ -67,7 +67,7 @@ Changing status from new to needs_review.
 archive/issue_comments_079493.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch makes `sage-apply-ticket` use `optparse` instead of `getopt`, making things more robust, and adding a help/usage message, which displays all options and normal usage cases.",
+    "body": "Attachment [trac_8712-sage-merge-optparse.patch](tarball://root/attachments/some-uuid/ticket8712/trac_8712-sage-merge-optparse.patch) by timdumol created at 2010-04-18 12:16:53\n\nThis patch makes `sage-apply-ticket` use `optparse` instead of `getopt`, making things more robust, and adding a help/usage message, which displays all options and normal usage cases.",
     "created_at": "2010-04-18T12:16:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8712",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_079493.json:
 }
 ```
 
-Attachment
+Attachment [trac_8712-sage-merge-optparse.patch](tarball://root/attachments/some-uuid/ticket8712/trac_8712-sage-merge-optparse.patch) by timdumol created at 2010-04-18 12:16:53
 
 This patch makes `sage-apply-ticket` use `optparse` instead of `getopt`, making things more robust, and adding a help/usage message, which displays all options and normal usage cases.
 
@@ -87,7 +87,7 @@ This patch makes `sage-apply-ticket` use `optparse` instead of `getopt`, making 
 archive/issue_comments_079494.json:
 ```json
 {
-    "body": "Attachment\n\nFixes at typo. Apply this patch only.",
+    "body": "Attachment [trac_8712-sage-merge-optparse.2.patch](tarball://root/attachments/some-uuid/ticket8712/trac_8712-sage-merge-optparse.2.patch) by timdumol created at 2010-04-18 12:48:43\n\nFixes at typo. Apply this patch only.",
     "created_at": "2010-04-18T12:48:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8712",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_079494.json:
 }
 ```
 
-Attachment
+Attachment [trac_8712-sage-merge-optparse.2.patch](tarball://root/attachments/some-uuid/ticket8712/trac_8712-sage-merge-optparse.2.patch) by timdumol created at 2010-04-18 12:48:43
 
 Fixes at typo. Apply this patch only.
 
@@ -195,7 +195,7 @@ Looks pretty good. I found two small bugs (num_threads wasn't being passed corre
 archive/issue_comments_079497.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of trac_8712-sage-merge-optparse.2.patch",
+    "body": "Attachment [trac_8712-reviewer.patch](tarball://root/attachments/some-uuid/ticket8712/trac_8712-reviewer.patch) by jhpalmieri created at 2010-06-22 05:07:46\n\napply on top of trac_8712-sage-merge-optparse.2.patch",
     "created_at": "2010-06-22T05:07:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8712",
     "type": "issue_comment",
@@ -204,7 +204,7 @@ archive/issue_comments_079497.json:
 }
 ```
 
-Attachment
+Attachment [trac_8712-reviewer.patch](tarball://root/attachments/some-uuid/ticket8712/trac_8712-reviewer.patch) by jhpalmieri created at 2010-06-22 05:07:46
 
 apply on top of trac_8712-sage-merge-optparse.2.patch
 

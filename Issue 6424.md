@@ -170,7 +170,7 @@ fix sympy conversion of I
 archive/issue_comments_051585.json:
 ```json
 {
-    "body": "Attachment\n\nFor various reasons I need this to work.  Patch attached, which simply does what Ondrej recommended and adds a doctest.",
+    "body": "Attachment [trac_6424_sympy_I.patch](tarball://root/attachments/some-uuid/ticket6424/trac_6424_sympy_I.patch) by dsm created at 2011-12-14 01:01:46\n\nFor various reasons I need this to work.  Patch attached, which simply does what Ondrej recommended and adds a doctest.",
     "created_at": "2011-12-14T01:01:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6424",
     "type": "issue_comment",
@@ -179,7 +179,7 @@ archive/issue_comments_051585.json:
 }
 ```
 
-Attachment
+Attachment [trac_6424_sympy_I.patch](tarball://root/attachments/some-uuid/ticket6424/trac_6424_sympy_I.patch) by dsm created at 2011-12-14 01:01:46
 
 For various reasons I need this to work.  Patch attached, which simply does what Ondrej recommended and adds a doctest.
 

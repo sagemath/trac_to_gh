@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1670
 archive/issue_comments_010603.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3d-jan3-2008.hg](tarball://root/attachments/some-uuid/ticket1670/3d-jan3-2008.hg) by robertwb created at 2008-01-03 20:11:23",
     "created_at": "2008-01-03T20:11:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1670",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_010603.json:
 }
 ```
 
-Attachment
+Attachment [3d-jan3-2008.hg](tarball://root/attachments/some-uuid/ticket1670/3d-jan3-2008.hg) by robertwb created at 2008-01-03 20:11:23
 
 
 
@@ -55,7 +55,7 @@ Attachment
 archive/issue_comments_010604.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3d-jan3-merged.hg](tarball://root/attachments/some-uuid/ticket1670/3d-jan3-merged.hg) by robertwb created at 2008-01-04 06:13:33",
     "created_at": "2008-01-04T06:13:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1670",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_010604.json:
 }
 ```
 
-Attachment
+Attachment [3d-jan3-merged.hg](tarball://root/attachments/some-uuid/ticket1670/3d-jan3-merged.hg) by robertwb created at 2008-01-04 06:13:33
 
 
 
@@ -73,7 +73,7 @@ Attachment
 archive/issue_comments_010605.json:
 ```json
 {
-    "body": "Attachment\n\nFigured out how to display text in jmol, got rid of logo, implemented \"ruler\" function for displaying tick marks, ...",
+    "body": "Attachment [3d-jan3-robert.hg](tarball://root/attachments/some-uuid/ticket1670/3d-jan3-robert.hg) by robertwb created at 2008-01-04 06:19:00\n\nFigured out how to display text in jmol, got rid of logo, implemented \"ruler\" function for displaying tick marks, ...",
     "created_at": "2008-01-04T06:19:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1670",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_010605.json:
 }
 ```
 
-Attachment
+Attachment [3d-jan3-robert.hg](tarball://root/attachments/some-uuid/ticket1670/3d-jan3-robert.hg) by robertwb created at 2008-01-04 06:19:00
 
 Figured out how to display text in jmol, got rid of logo, implemented "ruler" function for displaying tick marks, ...
 
@@ -93,7 +93,7 @@ Figured out how to display text in jmol, got rid of logo, implemented "ruler" fu
 archive/issue_comments_010606.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3d-jan3-robert2.hg](tarball://root/attachments/some-uuid/ticket1670/3d-jan3-robert2.hg) by robertwb created at 2008-01-04 07:53:14",
     "created_at": "2008-01-04T07:53:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1670",
     "type": "issue_comment",
@@ -102,7 +102,7 @@ archive/issue_comments_010606.json:
 }
 ```
 
-Attachment
+Attachment [3d-jan3-robert2.hg](tarball://root/attachments/some-uuid/ticket1670/3d-jan3-robert2.hg) by robertwb created at 2008-01-04 07:53:14
 
 
 
@@ -111,7 +111,7 @@ Attachment
 archive/issue_comments_010607.json:
 ```json
 {
-    "body": "Attachment\n\nThis replaces one of the same name and merges cleanly (but doctests will fail)",
+    "body": "Attachment [jmol-jan4.hg](tarball://root/attachments/some-uuid/ticket1670/jmol-jan4.hg) by was created at 2008-01-04 11:14:37\n\nThis replaces one of the same name and merges cleanly (but doctests will fail)",
     "created_at": "2008-01-04T11:14:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1670",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_010607.json:
 }
 ```
 
-Attachment
+Attachment [jmol-jan4.hg](tarball://root/attachments/some-uuid/ticket1670/jmol-jan4.hg) by was created at 2008-01-04 11:14:37
 
 This replaces one of the same name and merges cleanly (but doctests will fail)
 

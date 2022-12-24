@@ -269,7 +269,7 @@ Otherwise I'm good with this patch.
 archive/issue_comments_039618.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5171.patch](tarball://root/attachments/some-uuid/ticket5171/trac_5171.patch) by rlm created at 2009-02-17 23:28:40",
     "created_at": "2009-02-17T23:28:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5171",
     "type": "issue_comment",
@@ -278,7 +278,7 @@ archive/issue_comments_039618.json:
 }
 ```
 
-Attachment
+Attachment [trac_5171.patch](tarball://root/attachments/some-uuid/ticket5171/trac_5171.patch) by rlm created at 2009-02-17 23:28:40
 
 
 
@@ -342,7 +342,7 @@ Michael
 archive/issue_comments_039621.json:
 ```json
 {
-    "body": "Attachment\n\nMike suggested the reviewer fix.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_5171-reviewer.patch](tarball://root/attachments/some-uuid/ticket5171/trac_5171-reviewer.patch) by mabshoff created at 2009-02-18 00:07:51\n\nMike suggested the reviewer fix.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-18T00:07:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5171",
     "type": "issue_comment",
@@ -351,7 +351,7 @@ archive/issue_comments_039621.json:
 }
 ```
 
-Attachment
+Attachment [trac_5171-reviewer.patch](tarball://root/attachments/some-uuid/ticket5171/trac_5171-reviewer.patch) by mabshoff created at 2009-02-18 00:07:51
 
 Mike suggested the reviewer fix.
 

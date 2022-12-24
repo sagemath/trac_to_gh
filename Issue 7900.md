@@ -43,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7900
 archive/issue_comments_068709.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [mercurial-variables-to-commands.patch](tarball://root/attachments/some-uuid/ticket7900/mercurial-variables-to-commands.patch) by drkirkby created at 2010-01-12 04:11:49",
     "created_at": "2010-01-12T04:11:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7900",
     "type": "issue_comment",
@@ -52,7 +52,7 @@ archive/issue_comments_068709.json:
 }
 ```
 
-Attachment
+Attachment [mercurial-variables-to-commands.patch](tarball://root/attachments/some-uuid/ticket7900/mercurial-variables-to-commands.patch) by drkirkby created at 2010-01-12 04:11:49
 
 
 

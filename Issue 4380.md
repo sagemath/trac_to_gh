@@ -163,7 +163,7 @@ Michael
 archive/issue_comments_032225.json:
 ```json
 {
-    "body": "Attachment\n\nFixing the leak, after a suggestion of malb",
+    "body": "Attachment [libsingularLeak.patch](tarball://root/attachments/some-uuid/ticket4380/libsingularLeak.patch) by SimonKing created at 2008-10-29 12:15:20\n\nFixing the leak, after a suggestion of malb",
     "created_at": "2008-10-29T12:15:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4380",
     "type": "issue_comment",
@@ -172,7 +172,7 @@ archive/issue_comments_032225.json:
 }
 ```
 
-Attachment
+Attachment [libsingularLeak.patch](tarball://root/attachments/some-uuid/ticket4380/libsingularLeak.patch) by SimonKing created at 2008-10-29 12:15:20
 
 Fixing the leak, after a suggestion of malb
 

@@ -378,7 +378,7 @@ Spkg up at http://sage.math.washington.edu/home/robertwb/cython/cython-0.13.p0.s
 archive/issue_comments_096951.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [0_fix_setup.patch](tarball://root/attachments/some-uuid/ticket9828/0_fix_setup.patch) by robertwb created at 2010-09-16 09:24:43",
     "created_at": "2010-09-16T09:24:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
@@ -387,7 +387,7 @@ archive/issue_comments_096951.json:
 }
 ```
 
-Attachment
+Attachment [0_fix_setup.patch](tarball://root/attachments/some-uuid/ticket9828/0_fix_setup.patch) by robertwb created at 2010-09-16 09:24:43
 
 
 
@@ -396,7 +396,7 @@ Attachment
 archive/issue_comments_096952.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2_no_autodict.patch](tarball://root/attachments/some-uuid/ticket9828/2_no_autodict.patch) by robertwb created at 2010-09-16 09:25:03",
     "created_at": "2010-09-16T09:25:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
@@ -405,7 +405,7 @@ archive/issue_comments_096952.json:
 }
 ```
 
-Attachment
+Attachment [2_no_autodict.patch](tarball://root/attachments/some-uuid/ticket9828/2_no_autodict.patch) by robertwb created at 2010-09-16 09:25:03
 
 
 
@@ -414,7 +414,7 @@ Attachment
 archive/issue_comments_096953.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3_broken_imports.patch](tarball://root/attachments/some-uuid/ticket9828/3_broken_imports.patch) by robertwb created at 2010-09-16 09:25:13",
     "created_at": "2010-09-16T09:25:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
@@ -423,7 +423,7 @@ archive/issue_comments_096953.json:
 }
 ```
 
-Attachment
+Attachment [3_broken_imports.patch](tarball://root/attachments/some-uuid/ticket9828/3_broken_imports.patch) by robertwb created at 2010-09-16 09:25:13
 
 
 
@@ -432,7 +432,7 @@ Attachment
 archive/issue_comments_096954.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4_typing_issue.patch](tarball://root/attachments/some-uuid/ticket9828/4_typing_issue.patch) by robertwb created at 2010-09-16 09:25:24",
     "created_at": "2010-09-16T09:25:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
@@ -441,7 +441,7 @@ archive/issue_comments_096954.json:
 }
 ```
 
-Attachment
+Attachment [4_typing_issue.patch](tarball://root/attachments/some-uuid/ticket9828/4_typing_issue.patch) by robertwb created at 2010-09-16 09:25:24
 
 
 
@@ -450,7 +450,7 @@ Attachment
 archive/issue_comments_096955.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5_random_typing.patch](tarball://root/attachments/some-uuid/ticket9828/5_random_typing.patch) by robertwb created at 2010-09-16 09:25:48",
     "created_at": "2010-09-16T09:25:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
@@ -459,7 +459,7 @@ archive/issue_comments_096955.json:
 }
 ```
 
-Attachment
+Attachment [5_random_typing.patch](tarball://root/attachments/some-uuid/ticket9828/5_random_typing.patch) by robertwb created at 2010-09-16 09:25:48
 
 
 
@@ -468,7 +468,7 @@ Attachment
 archive/issue_comments_096956.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [7_bool_bint.patch](tarball://root/attachments/some-uuid/ticket9828/7_bool_bint.patch) by robertwb created at 2010-09-16 09:26:08",
     "created_at": "2010-09-16T09:26:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
@@ -477,7 +477,7 @@ archive/issue_comments_096956.json:
 }
 ```
 
-Attachment
+Attachment [7_bool_bint.patch](tarball://root/attachments/some-uuid/ticket9828/7_bool_bint.patch) by robertwb created at 2010-09-16 09:26:08
 
 
 
@@ -661,7 +661,7 @@ Oooops...
 archive/issue_comments_096966.json:
 ```json
 {
-    "body": "Attachment\n\nSPKG patch. As the name says... (also quotes SAGE_LOCAL; some clean-up) Now with corrected SPKG.txt (__getattr__).",
+    "body": "Attachment [trac_9828-fix_applying_patch_and_more-spkg.patch](tarball://root/attachments/some-uuid/ticket9828/trac_9828-fix_applying_patch_and_more-spkg.patch) by leif created at 2010-09-16 17:54:47\n\nSPKG patch. As the name says... (also quotes SAGE_LOCAL; some clean-up) Now with corrected SPKG.txt (__getattr__).",
     "created_at": "2010-09-16T17:54:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
@@ -670,7 +670,7 @@ archive/issue_comments_096966.json:
 }
 ```
 
-Attachment
+Attachment [trac_9828-fix_applying_patch_and_more-spkg.patch](tarball://root/attachments/some-uuid/ticket9828/trac_9828-fix_applying_patch_and_more-spkg.patch) by leif created at 2010-09-16 17:54:47
 
 SPKG patch. As the name says... (also quotes SAGE_LOCAL; some clean-up) Now with corrected SPKG.txt (__getattr__).
 
@@ -699,7 +699,7 @@ I've replaced the patch with a corrected one (`__getitem__()` -> `__getattr__()`
 archive/issue_comments_096968.json:
 ```json
 {
-    "body": "Attachment\n\napply to sage local repo",
+    "body": "Attachment [hudson_results.patch](tarball://root/attachments/some-uuid/ticket9828/hudson_results.patch) by robertwb created at 2010-09-17 07:01:47\n\napply to sage local repo",
     "created_at": "2010-09-17T07:01:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
@@ -708,7 +708,7 @@ archive/issue_comments_096968.json:
 }
 ```
 
-Attachment
+Attachment [hudson_results.patch](tarball://root/attachments/some-uuid/ticket9828/hudson_results.patch) by robertwb created at 2010-09-17 07:01:47
 
 apply to sage local repo
 
@@ -719,7 +719,7 @@ apply to sage local repo
 archive/issue_comments_096969.json:
 ```json
 {
-    "body": "Attachment\n\nOkay, now I'm really confused about what patches I should apply where to review this.  Can someone give directions for reviewing?  Thanks!",
+    "body": "Attachment [sage-local-hudson.patch](tarball://root/attachments/some-uuid/ticket9828/sage-local-hudson.patch) by jason created at 2010-09-28 22:53:42\n\nOkay, now I'm really confused about what patches I should apply where to review this.  Can someone give directions for reviewing?  Thanks!",
     "created_at": "2010-09-28T22:53:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
@@ -728,7 +728,7 @@ archive/issue_comments_096969.json:
 }
 ```
 
-Attachment
+Attachment [sage-local-hudson.patch](tarball://root/attachments/some-uuid/ticket9828/sage-local-hudson.patch) by jason created at 2010-09-28 22:53:42
 
 Okay, now I'm really confused about what patches I should apply where to review this.  Can someone give directions for reviewing?  Thanks!
 
@@ -922,7 +922,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_096976.json:
 ```json
 {
-    "body": "Attachment\n\nOK, one more patch, and an updated spkg.",
+    "body": "Attachment [8_alpha_fixes.patch](tarball://root/attachments/some-uuid/ticket9828/8_alpha_fixes.patch) by robertwb created at 2010-10-01 08:33:51\n\nOK, one more patch, and an updated spkg.",
     "created_at": "2010-10-01T08:33:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
@@ -931,7 +931,7 @@ archive/issue_comments_096976.json:
 }
 ```
 
-Attachment
+Attachment [8_alpha_fixes.patch](tarball://root/attachments/some-uuid/ticket9828/8_alpha_fixes.patch) by robertwb created at 2010-10-01 08:33:51
 
 OK, one more patch, and an updated spkg.
 
@@ -1244,7 +1244,7 @@ SageNB doctest  fixes.  Apply to sagenb repository.
 archive/issue_comments_096989.json:
 ```json
 {
-    "body": "Attachment\n\nFolded sage repository patch.  Apply only this patch to the sage repository.",
+    "body": "Attachment [trac_9828-sagenb_cython_0_13.patch](tarball://root/attachments/some-uuid/ticket9828/trac_9828-sagenb_cython_0_13.patch) by mpatel created at 2010-10-07 09:48:09\n\nFolded sage repository patch.  Apply only this patch to the sage repository.",
     "created_at": "2010-10-07T09:48:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
@@ -1253,7 +1253,7 @@ archive/issue_comments_096989.json:
 }
 ```
 
-Attachment
+Attachment [trac_9828-sagenb_cython_0_13.patch](tarball://root/attachments/some-uuid/ticket9828/trac_9828-sagenb_cython_0_13.patch) by mpatel created at 2010-10-07 09:48:09
 
 Folded sage repository patch.  Apply only this patch to the sage repository.
 
@@ -1264,7 +1264,7 @@ Folded sage repository patch.  Apply only this patch to the sage repository.
 archive/issue_comments_096990.json:
 ```json
 {
-    "body": "Attachment\n\nTicket number in scripts repo patch.  Apply only this patch to the scripts repo.",
+    "body": "Attachment [trac_9828-scripts_hudson.patch](tarball://root/attachments/some-uuid/ticket9828/trac_9828-scripts_hudson.patch) by mpatel created at 2010-10-07 09:54:12\n\nTicket number in scripts repo patch.  Apply only this patch to the scripts repo.",
     "created_at": "2010-10-07T09:54:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
@@ -1273,7 +1273,7 @@ archive/issue_comments_096990.json:
 }
 ```
 
-Attachment
+Attachment [trac_9828-scripts_hudson.patch](tarball://root/attachments/some-uuid/ticket9828/trac_9828-scripts_hudson.patch) by mpatel created at 2010-10-07 09:54:12
 
 Ticket number in scripts repo patch.  Apply only this patch to the scripts repo.
 

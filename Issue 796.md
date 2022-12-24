@@ -43,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/796
 archive/issue_comments_004786.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [clib_fix_sage-main.hg](tarball://root/attachments/some-uuid/ticket796/clib_fix_sage-main.hg) by craigcitro created at 2007-10-03 00:05:27",
     "created_at": "2007-10-03T00:05:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/796",
     "type": "issue_comment",
@@ -52,7 +52,7 @@ archive/issue_comments_004786.json:
 }
 ```
 
-Attachment
+Attachment [clib_fix_sage-main.hg](tarball://root/attachments/some-uuid/ticket796/clib_fix_sage-main.hg) by craigcitro created at 2007-10-03 00:05:27
 
 
 

@@ -43,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2582
 archive/issue_comments_017670.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2582-perm-gp-elt-list.patch](tarball://root/attachments/some-uuid/ticket2582/2582-perm-gp-elt-list.patch) by rlm created at 2008-03-18 07:37:35",
     "created_at": "2008-03-18T07:37:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2582",
     "type": "issue_comment",
@@ -52,7 +52,7 @@ archive/issue_comments_017670.json:
 }
 ```
 
-Attachment
+Attachment [2582-perm-gp-elt-list.patch](tarball://root/attachments/some-uuid/ticket2582/2582-perm-gp-elt-list.patch) by rlm created at 2008-03-18 07:37:35
 
 
 

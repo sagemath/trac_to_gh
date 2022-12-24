@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8468
 archive/issue_comments_076256.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-group-theory-primer.tex](tarball://root/attachments/some-uuid/ticket8468/sage-group-theory-primer.tex) by rbeezer created at 2010-03-11 01:23:22",
     "created_at": "2010-03-11T01:23:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8468",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_076256.json:
 }
 ```
 
-Attachment
+Attachment [sage-group-theory-primer.tex](tarball://root/attachments/some-uuid/ticket8468/sage-group-theory-primer.tex) by rbeezer created at 2010-03-11 01:23:22
 
 
 
@@ -71,7 +71,7 @@ Changing status from new to needs_review.
 archive/issue_comments_076258.json:
 ```json
 {
-    "body": "Attachment\n\nTeX and PDF are posted here.  License should be compatible with the rest of Sage documentation now.  Any updates in the future should appear at http://abstract.ups.edu",
+    "body": "Attachment [sage-group-theory-primer.pdf](tarball://root/attachments/some-uuid/ticket8468/sage-group-theory-primer.pdf) by rbeezer created at 2010-03-11 01:25:21\n\nTeX and PDF are posted here.  License should be compatible with the rest of Sage documentation now.  Any updates in the future should appear at http://abstract.ups.edu",
     "created_at": "2010-03-11T01:25:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8468",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_076258.json:
 }
 ```
 
-Attachment
+Attachment [sage-group-theory-primer.pdf](tarball://root/attachments/some-uuid/ticket8468/sage-group-theory-primer.pdf) by rbeezer created at 2010-03-11 01:25:21
 
 TeX and PDF are posted here.  License should be compatible with the rest of Sage documentation now.  Any updates in the future should appear at http://abstract.ups.edu
 
@@ -129,7 +129,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_076261.json:
 ```json
 {
-    "body": "Attachment\n\nbased on Sage 4.3.4.alpha1; depends on #8469",
+    "body": "Attachment [trac_8468-groups.patch](tarball://root/attachments/some-uuid/ticket8468/trac_8468-groups.patch) by mvngu created at 2010-03-12 06:47:24\n\nbased on Sage 4.3.4.alpha1; depends on #8469",
     "created_at": "2010-03-12T06:47:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8468",
     "type": "issue_comment",
@@ -138,7 +138,7 @@ archive/issue_comments_076261.json:
 }
 ```
 
-Attachment
+Attachment [trac_8468-groups.patch](tarball://root/attachments/some-uuid/ticket8468/trac_8468-groups.patch) by mvngu created at 2010-03-12 06:47:24
 
 based on Sage 4.3.4.alpha1; depends on #8469
 

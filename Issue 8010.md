@@ -75,7 +75,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8010
 archive/issue_comments_070008.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8010.numpy.patch](tarball://root/attachments/some-uuid/ticket8010/8010.numpy.patch) by flawrence created at 2010-01-20 06:43:48",
     "created_at": "2010-01-20T06:43:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8010",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_070008.json:
 }
 ```
 
-Attachment
+Attachment [8010.numpy.patch](tarball://root/attachments/some-uuid/ticket8010/8010.numpy.patch) by flawrence created at 2010-01-20 06:43:48
 
 
 

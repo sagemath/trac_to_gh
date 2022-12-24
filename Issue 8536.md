@@ -113,7 +113,7 @@ applies to 4.3.5
 archive/issue_comments_077154.json:
 ```json
 {
-    "body": "Attachment\n\nI don't know how to change the file c_lib/src/interrupt.c safely since it is not included in the cloning system.  Can you either tell me how to do that, or do it yourself?\n\nMeanwhile I have added to the patch to deal with file misc/sagedoc.py so that the latex control sequences \\sage and \\SAGE (and also \\Sage) convert to 'Sage' instead of 'SAGE'.  I am not too sure of the reperucssions of this (it will surely change a lot o the documentation, but not affect doctests), so I am cc-ing jpalmieri and hope that he will comment.\n\nI testing the whole sage library and all tests passed.",
+    "body": "Attachment [trac_8536-SAGE.patch](tarball://root/attachments/some-uuid/ticket8536/trac_8536-SAGE.patch) by cremona created at 2010-04-01 09:26:58\n\nI don't know how to change the file c_lib/src/interrupt.c safely since it is not included in the cloning system.  Can you either tell me how to do that, or do it yourself?\n\nMeanwhile I have added to the patch to deal with file misc/sagedoc.py so that the latex control sequences \\sage and \\SAGE (and also \\Sage) convert to 'Sage' instead of 'SAGE'.  I am not too sure of the reperucssions of this (it will surely change a lot o the documentation, but not affect doctests), so I am cc-ing jpalmieri and hope that he will comment.\n\nI testing the whole sage library and all tests passed.",
     "created_at": "2010-04-01T09:26:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8536",
     "type": "issue_comment",
@@ -122,7 +122,7 @@ archive/issue_comments_077154.json:
 }
 ```
 
-Attachment
+Attachment [trac_8536-SAGE.patch](tarball://root/attachments/some-uuid/ticket8536/trac_8536-SAGE.patch) by cremona created at 2010-04-01 09:26:58
 
 I don't know how to change the file c_lib/src/interrupt.c safely since it is not included in the cloning system.  Can you either tell me how to do that, or do it yourself?
 
@@ -196,7 +196,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_077158.json:
 ```json
 {
-    "body": "Attachment\n\nYou are right.  I updated the patch to include that file, and reinstated \"needs review\".",
+    "body": "Attachment [trac_8536-SAGE.2.patch](tarball://root/attachments/some-uuid/ticket8536/trac_8536-SAGE.2.patch) by cremona created at 2010-04-01 13:24:57\n\nYou are right.  I updated the patch to include that file, and reinstated \"needs review\".",
     "created_at": "2010-04-01T13:24:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8536",
     "type": "issue_comment",
@@ -205,7 +205,7 @@ archive/issue_comments_077158.json:
 }
 ```
 
-Attachment
+Attachment [trac_8536-SAGE.2.patch](tarball://root/attachments/some-uuid/ticket8536/trac_8536-SAGE.2.patch) by cremona created at 2010-04-01 13:24:57
 
 You are right.  I updated the patch to include that file, and reinstated "needs review".
 

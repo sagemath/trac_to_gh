@@ -191,7 +191,7 @@ Updated the edit-in-place patch to fix two bugs.
 archive/issue_comments_031125.json:
 ```json
 {
-    "body": "Attachment\n\nApply only this patch from here and the extcode patch from the coments below.",
+    "body": "Attachment [edit-in-place-and-javascript-spkgs.patch](tarball://root/attachments/some-uuid/ticket4267/edit-in-place-and-javascript-spkgs.patch) by jason created at 2008-10-18 07:55:10\n\nApply only this patch from here and the extcode patch from the coments below.",
     "created_at": "2008-10-18T07:55:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
@@ -200,7 +200,7 @@ archive/issue_comments_031125.json:
 }
 ```
 
-Attachment
+Attachment [edit-in-place-and-javascript-spkgs.patch](tarball://root/attachments/some-uuid/ticket4267/edit-in-place-and-javascript-spkgs.patch) by jason created at 2008-10-18 07:55:10
 
 Apply only this patch from here and the extcode patch from the coments below.
 
@@ -451,7 +451,7 @@ apply on top of the previous edit-...patch
 archive/issue_comments_031137.json:
 ```json
 {
-    "body": "Attachment\n\nIf its easy to do I think we should keep the old theme, for consistency.",
+    "body": "Attachment [javascript-ajax-escaping.patch](tarball://root/attachments/some-uuid/ticket4267/javascript-ajax-escaping.patch) by mhampton created at 2008-10-21 15:51:17\n\nIf its easy to do I think we should keep the old theme, for consistency.",
     "created_at": "2008-10-21T15:51:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
@@ -460,7 +460,7 @@ archive/issue_comments_031137.json:
 }
 ```
 
-Attachment
+Attachment [javascript-ajax-escaping.patch](tarball://root/attachments/some-uuid/ticket4267/javascript-ajax-escaping.patch) by mhampton created at 2008-10-21 15:51:17
 
 If its easy to do I think we should keep the old theme, for consistency.
 
@@ -525,7 +525,7 @@ Thanks for the extensive testing!
 archive/issue_comments_031141.json:
 ```json
 {
-    "body": "Attachment\n\nThe flora.patch should be applied on top of the previous patches and switches the default theme back to flora (the old theme).  I've also updated the http://sage.math.washington.edu/home/jason/notebook/jqueryui-1.6r807svn.spkg to contain this theme (and I ported the modifications that we made to it as well).",
+    "body": "Attachment [flora.patch](tarball://root/attachments/some-uuid/ticket4267/flora.patch) by jason created at 2008-10-22 00:15:32\n\nThe flora.patch should be applied on top of the previous patches and switches the default theme back to flora (the old theme).  I've also updated the http://sage.math.washington.edu/home/jason/notebook/jqueryui-1.6r807svn.spkg to contain this theme (and I ported the modifications that we made to it as well).",
     "created_at": "2008-10-22T00:15:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
@@ -534,7 +534,7 @@ archive/issue_comments_031141.json:
 }
 ```
 
-Attachment
+Attachment [flora.patch](tarball://root/attachments/some-uuid/ticket4267/flora.patch) by jason created at 2008-10-22 00:15:32
 
 The flora.patch should be applied on top of the previous patches and switches the default theme back to flora (the old theme).  I've also updated the http://sage.math.washington.edu/home/jason/notebook/jqueryui-1.6r807svn.spkg to contain this theme (and I ported the modifications that we made to it as well).
 

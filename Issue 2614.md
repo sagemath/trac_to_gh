@@ -239,7 +239,7 @@ rebased against 2.11.alpha2 (or some approximation there-of)
 archive/issue_comments_017946.json:
 ```json
 {
-    "body": "Attachment\n\nThe current patch is re-based against 2.11.alpha1 augmented with patches from mabshoff's alpha2 release cycle directory.  I don't have a build of this to really test, but I believe doc-tests should pass.\n\nIf this is not integrated by the time alpha2 is released, I'll probably double-check some things with a built alpha2.",
+    "body": "Attachment [mpoly-coeff.patch](tarball://root/attachments/some-uuid/ticket2614/mpoly-coeff.patch) by jbmohler created at 2008-03-28 18:12:57\n\nThe current patch is re-based against 2.11.alpha1 augmented with patches from mabshoff's alpha2 release cycle directory.  I don't have a build of this to really test, but I believe doc-tests should pass.\n\nIf this is not integrated by the time alpha2 is released, I'll probably double-check some things with a built alpha2.",
     "created_at": "2008-03-28T18:12:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2614",
     "type": "issue_comment",
@@ -248,7 +248,7 @@ archive/issue_comments_017946.json:
 }
 ```
 
-Attachment
+Attachment [mpoly-coeff.patch](tarball://root/attachments/some-uuid/ticket2614/mpoly-coeff.patch) by jbmohler created at 2008-03-28 18:12:57
 
 The current patch is re-based against 2.11.alpha1 augmented with patches from mabshoff's alpha2 release cycle directory.  I don't have a build of this to really test, but I believe doc-tests should pass.
 

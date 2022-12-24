@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8132
 archive/issue_comments_071501.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8132.patch](tarball://root/attachments/some-uuid/ticket8132/trac_8132.patch) by robert.marik created at 2010-01-31 00:34:33",
     "created_at": "2010-01-31T00:34:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8132",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_071501.json:
 }
 ```
 
-Attachment
+Attachment [trac_8132.patch](tarball://root/attachments/some-uuid/ticket8132/trac_8132.patch) by robert.marik created at 2010-01-31 00:34:33
 
 
 
@@ -89,7 +89,7 @@ this patch
 archive/issue_comments_071504.json:
 ```json
 {
-    "body": "Attachment\n\nfixes one failed doctest, apply on the top of previous poatch",
+    "body": "Attachment [trac_8132_fixed_doctests.patch](tarball://root/attachments/some-uuid/ticket8132/trac_8132_fixed_doctests.patch) by robert.marik created at 2010-01-31 08:26:03\n\nfixes one failed doctest, apply on the top of previous poatch",
     "created_at": "2010-01-31T08:26:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8132",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_071504.json:
 }
 ```
 
-Attachment
+Attachment [trac_8132_fixed_doctests.patch](tarball://root/attachments/some-uuid/ticket8132/trac_8132_fixed_doctests.patch) by robert.marik created at 2010-01-31 08:26:03
 
 fixes one failed doctest, apply on the top of previous poatch
 
@@ -175,7 +175,7 @@ apply on the top of the previous two patches
 archive/issue_comments_071508.json:
 ```json
 {
-    "body": "Attachment\n\nbtw: the second problem which caused pdf not to build has been fixed by #8021",
+    "body": "Attachment [trac_8132_fixed_reference_manual.patch](tarball://root/attachments/some-uuid/ticket8132/trac_8132_fixed_reference_manual.patch) by robert.marik created at 2010-01-31 16:38:06\n\nbtw: the second problem which caused pdf not to build has been fixed by #8021",
     "created_at": "2010-01-31T16:38:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8132",
     "type": "issue_comment",
@@ -184,7 +184,7 @@ archive/issue_comments_071508.json:
 }
 ```
 
-Attachment
+Attachment [trac_8132_fixed_reference_manual.patch](tarball://root/attachments/some-uuid/ticket8132/trac_8132_fixed_reference_manual.patch) by robert.marik created at 2010-01-31 16:38:06
 
 btw: the second problem which caused pdf not to build has been fixed by #8021
 

@@ -163,7 +163,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_074510.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:3 kcrisman]:\n> This patch does not apply to 4.7.1.alpha1 because of a blank line someone must have removed earlier.  Unfortunately, I can't figure out how to fix the patch easily (so that Burcin remains the author of the patch), so it will have to be rebased.  Hopefully that won't be too much trouble :(\n\nI uploaded a rebased patch with the same name.\n\nIf you `qimport` a patch which already has mercurial headers, make changes, then `qrefresh` and `export`, the author shouldn't change. In this case, it wouldn't matter even if you changed it. :)\n\n> This also exposes a different problem - that our variables are assumed to be real.  This is known elsewhere.\n> {{{\n> sage: latex(x.conjugate())\n> \\overline{x}\n> sage: latex(x.conjugate().simplify())\n> x\n> }}}\n> \n> Not sure if that needs to be addressed on this ticket, though.\n\nThat is #6882, well beyond the scope of this ticket.",
+    "body": "Attachment [trac_8345-doctest.patch](tarball://root/attachments/some-uuid/ticket8345/trac_8345-doctest.patch) by burcin created at 2011-06-09 11:17:47\n\nReplying to [comment:3 kcrisman]:\n> This patch does not apply to 4.7.1.alpha1 because of a blank line someone must have removed earlier.  Unfortunately, I can't figure out how to fix the patch easily (so that Burcin remains the author of the patch), so it will have to be rebased.  Hopefully that won't be too much trouble :(\n\nI uploaded a rebased patch with the same name.\n\nIf you `qimport` a patch which already has mercurial headers, make changes, then `qrefresh` and `export`, the author shouldn't change. In this case, it wouldn't matter even if you changed it. :)\n\n> This also exposes a different problem - that our variables are assumed to be real.  This is known elsewhere.\n> {{{\n> sage: latex(x.conjugate())\n> \\overline{x}\n> sage: latex(x.conjugate().simplify())\n> x\n> }}}\n> \n> Not sure if that needs to be addressed on this ticket, though.\n\nThat is #6882, well beyond the scope of this ticket.",
     "created_at": "2011-06-09T11:17:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8345",
     "type": "issue_comment",
@@ -172,7 +172,7 @@ archive/issue_comments_074510.json:
 }
 ```
 
-Attachment
+Attachment [trac_8345-doctest.patch](tarball://root/attachments/some-uuid/ticket8345/trac_8345-doctest.patch) by burcin created at 2011-06-09 11:17:47
 
 Replying to [comment:3 kcrisman]:
 > This patch does not apply to 4.7.1.alpha1 because of a blank line someone must have removed earlier.  Unfortunately, I can't figure out how to fix the patch easily (so that Burcin remains the author of the patch), so it will have to be rebased.  Hopefully that won't be too much trouble :(

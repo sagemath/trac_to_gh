@@ -560,7 +560,7 @@ Ok, this last patch passes the bare minimum test: it applies cleanly to sage-2.1
 archive/issue_comments_017069.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8962coding.patch](tarball://root/attachments/some-uuid/ticket2514/8962coding.patch) by rlm created at 2008-03-20 00:15:07",
     "created_at": "2008-03-20T00:15:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2514",
     "type": "issue_comment",
@@ -569,7 +569,7 @@ archive/issue_comments_017069.json:
 }
 ```
 
-Attachment
+Attachment [8962coding.patch](tarball://root/attachments/some-uuid/ticket2514/8962coding.patch) by rlm created at 2008-03-20 00:15:07
 
 
 
@@ -602,7 +602,7 @@ Any docstring containing LaTeX should be a raw string ( i.e. `r"""` ). I have ad
 archive/issue_comments_017071.json:
 ```json
 {
-    "body": "Attachment\n\nPS- Please post the suggested changes in a single patch on top of sage-2.10.4 plus the two patches here.",
+    "body": "Attachment [2514-docs.patch](tarball://root/attachments/some-uuid/ticket2514/2514-docs.patch) by rlm created at 2008-03-20 00:36:54\n\nPS- Please post the suggested changes in a single patch on top of sage-2.10.4 plus the two patches here.",
     "created_at": "2008-03-20T00:36:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2514",
     "type": "issue_comment",
@@ -611,7 +611,7 @@ archive/issue_comments_017071.json:
 }
 ```
 
-Attachment
+Attachment [2514-docs.patch](tarball://root/attachments/some-uuid/ticket2514/2514-docs.patch) by rlm created at 2008-03-20 00:36:54
 
 PS- Please post the suggested changes in a single patch on top of sage-2.10.4 plus the two patches here.
 
@@ -700,7 +700,7 @@ Hope this works this time!
 archive/issue_comments_017074.json:
 ```json
 {
-    "body": "Attachment\n\napply 8962coding.patch+2514-docs.patch+this to 2.10.4.",
+    "body": "Attachment [8964.patch](tarball://root/attachments/some-uuid/ticket2514/8964.patch) by wdj created at 2008-03-20 10:50:31\n\napply 8962coding.patch+2514-docs.patch+this to 2.10.4.",
     "created_at": "2008-03-20T10:50:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2514",
     "type": "issue_comment",
@@ -709,7 +709,7 @@ archive/issue_comments_017074.json:
 }
 ```
 
-Attachment
+Attachment [8964.patch](tarball://root/attachments/some-uuid/ticket2514/8964.patch) by wdj created at 2008-03-20 10:50:31
 
 apply 8962coding.patch+2514-docs.patch+this to 2.10.4.
 
@@ -764,7 +764,7 @@ apply all 4 (in order) to 2.10.4
 archive/issue_comments_017077.json:
 ```json
 {
-    "body": "Attachment\n\nrlm:\n\n```\nI guess the real thing is that the code is very hard to read. There are several databases included with Sage, and they are not source-code databases. That is a very strange choice to me.\n```\n\nwdj:\nI wanted it human-readable (maybe I can get a student to work on it, if I'm lucky) since it is so incomplete. I needed a table of data to test certain conjectures against. This fit the bill. When it is more complete, another format might be more suitable.\n\nrlm:\n\n```\nSome of your doctests have <BLANKLINE>'s after the commands. Things look better, and you'll be more consistent with the rest of the source code in Sage, if you simply remove these lines. The doctests should still pass the same. It's a little jarring for someone reading the docs.\n\nWhy are the minimum distance bound functions commented out? \n```\n\nwdj:\nThe BLANKLINES are all removed and the patch has been retested (and passes). I removed the\ncommented out minimum distance bound functions several versions ago. (I think someone else commented them out when Brouwer's tables went down some time ago. I never bothered to delete them until recently.)\n\nrlm:\n\n```\nThe rest of the code looks pretty good. As I've indicated, I give this patch a positive review, modulo the few issues mentioned, but you're going to need to get a second opinion from someone else.\n```\n\nwdj:\nSorry, I misunderstood again. When I asked you if you objected to a \"code bomb\", I was assuming that you were the only referee. Since you said no, you didn't mind, I submitted it.",
+    "body": "Attachment [8965.patch](tarball://root/attachments/some-uuid/ticket2514/8965.patch) by wdj created at 2008-03-20 14:28:16\n\nrlm:\n\n```\nI guess the real thing is that the code is very hard to read. There are several databases included with Sage, and they are not source-code databases. That is a very strange choice to me.\n```\n\nwdj:\nI wanted it human-readable (maybe I can get a student to work on it, if I'm lucky) since it is so incomplete. I needed a table of data to test certain conjectures against. This fit the bill. When it is more complete, another format might be more suitable.\n\nrlm:\n\n```\nSome of your doctests have <BLANKLINE>'s after the commands. Things look better, and you'll be more consistent with the rest of the source code in Sage, if you simply remove these lines. The doctests should still pass the same. It's a little jarring for someone reading the docs.\n\nWhy are the minimum distance bound functions commented out? \n```\n\nwdj:\nThe BLANKLINES are all removed and the patch has been retested (and passes). I removed the\ncommented out minimum distance bound functions several versions ago. (I think someone else commented them out when Brouwer's tables went down some time ago. I never bothered to delete them until recently.)\n\nrlm:\n\n```\nThe rest of the code looks pretty good. As I've indicated, I give this patch a positive review, modulo the few issues mentioned, but you're going to need to get a second opinion from someone else.\n```\n\nwdj:\nSorry, I misunderstood again. When I asked you if you objected to a \"code bomb\", I was assuming that you were the only referee. Since you said no, you didn't mind, I submitted it.",
     "created_at": "2008-03-20T14:28:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2514",
     "type": "issue_comment",
@@ -773,7 +773,7 @@ archive/issue_comments_017077.json:
 }
 ```
 
-Attachment
+Attachment [8965.patch](tarball://root/attachments/some-uuid/ticket2514/8965.patch) by wdj created at 2008-03-20 14:28:16
 
 rlm:
 

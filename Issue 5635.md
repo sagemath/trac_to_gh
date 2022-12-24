@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5635
 archive/issue_comments_044014.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch removes plot() method and fixes the documentation. I also changed show() to show3d(), which shows the plot without axes.",
+    "body": "Attachment [11803.patch](tarball://root/attachments/some-uuid/ticket5635/11803.patch) by novoselt created at 2009-03-31 04:26:55\n\nThe patch removes plot() method and fixes the documentation. I also changed show() to show3d(), which shows the plot without axes.",
     "created_at": "2009-03-31T04:26:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5635",
     "type": "issue_comment",
@@ -50,7 +50,7 @@ archive/issue_comments_044014.json:
 }
 ```
 
-Attachment
+Attachment [11803.patch](tarball://root/attachments/some-uuid/ticket5635/11803.patch) by novoselt created at 2009-03-31 04:26:55
 
 The patch removes plot() method and fixes the documentation. I also changed show() to show3d(), which shows the plot without axes.
 

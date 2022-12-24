@@ -51,7 +51,7 @@ apply this. Then look at devel/sage/sage/stats/intlist.pyx, devel/sage/sage/stat
 archive/issue_comments_077273.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8547.patch](tarball://root/attachments/some-uuid/ticket8547/trac_8547.patch) by was created at 2010-03-20 12:49:50",
     "created_at": "2010-03-20T12:49:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8547",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_077273.json:
 }
 ```
 
-Attachment
+Attachment [trac_8547.patch](tarball://root/attachments/some-uuid/ticket8547/trac_8547.patch) by was created at 2010-03-20 12:49:50
 
 
 
@@ -213,7 +213,7 @@ this completely replaces the previous patch
 archive/issue_comments_077280.json:
 ```json
 {
-    "body": "Attachment\n\nOk, doctests run clean now.  I've tested the code out and read it over, and it works for me.  I'm a little cautious giving this a positive review because I know very little about this area of math.  However, given that it's replacing something that barely worked and used memory like toilet paper, I'm willing to throw caution to the wind if mhampton or jason are willing to sign off on the idea.",
+    "body": "Attachment [trac-8547-take2.patch](tarball://root/attachments/some-uuid/ticket8547/trac-8547-take2.patch) by boothby created at 2010-03-30 23:47:50\n\nOk, doctests run clean now.  I've tested the code out and read it over, and it works for me.  I'm a little cautious giving this a positive review because I know very little about this area of math.  However, given that it's replacing something that barely worked and used memory like toilet paper, I'm willing to throw caution to the wind if mhampton or jason are willing to sign off on the idea.",
     "created_at": "2010-03-30T23:47:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8547",
     "type": "issue_comment",
@@ -222,7 +222,7 @@ archive/issue_comments_077280.json:
 }
 ```
 
-Attachment
+Attachment [trac-8547-take2.patch](tarball://root/attachments/some-uuid/ticket8547/trac-8547-take2.patch) by boothby created at 2010-03-30 23:47:50
 
 Ok, doctests run clean now.  I've tested the code out and read it over, and it works for me.  I'm a little cautious giving this a positive review because I know very little about this area of math.  However, given that it's replacing something that barely worked and used memory like toilet paper, I'm willing to throw caution to the wind if mhampton or jason are willing to sign off on the idea.
 
@@ -427,7 +427,7 @@ part 2; apply this and the previous patch
 archive/issue_comments_077287.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:13 was]:\n\n\n\n> * Jason said above that IntList.sum doesn't have a doctest for the overflow case... but it does, so I don't know what he meant. \n\n\nI meant that the doctest looks like this:\n\n\n```\nNote that there can be overflow, since the entries are C ints:: \n    sage: a = stats.IntList([2^30,2^30]); a \n    [1073741824, 1073741824] \n\n```\n\n\nThat's it.  There's no test there; you're just creating a list, not summing anything.\n\n\n>  \n> * I read the source code for `sage.misc.misc_c.normalize_index` and cannot bring myself to use that in this situation.  That  function actually returns a Python *list* of Python ints for every single index into the list that is being sliced!  That would easily lead to factor of 50-100 slowdowns on realistic operations:\n\n> This stats code I'm writing is really meant to be industrial strength -- the sort of code maybe somebody would use in \"realtime\" processing of large datastreams.    I don't want slow functions anywhere in there. \n\n\nI agree.",
+    "body": "Attachment [trac_8547-take2-part2.patch](tarball://root/attachments/some-uuid/ticket8547/trac_8547-take2-part2.patch) by jason created at 2010-04-08 22:29:13\n\nReplying to [comment:13 was]:\n\n\n\n> * Jason said above that IntList.sum doesn't have a doctest for the overflow case... but it does, so I don't know what he meant. \n\n\nI meant that the doctest looks like this:\n\n\n```\nNote that there can be overflow, since the entries are C ints:: \n    sage: a = stats.IntList([2^30,2^30]); a \n    [1073741824, 1073741824] \n\n```\n\n\nThat's it.  There's no test there; you're just creating a list, not summing anything.\n\n\n>  \n> * I read the source code for `sage.misc.misc_c.normalize_index` and cannot bring myself to use that in this situation.  That  function actually returns a Python *list* of Python ints for every single index into the list that is being sliced!  That would easily lead to factor of 50-100 slowdowns on realistic operations:\n\n> This stats code I'm writing is really meant to be industrial strength -- the sort of code maybe somebody would use in \"realtime\" processing of large datastreams.    I don't want slow functions anywhere in there. \n\n\nI agree.",
     "created_at": "2010-04-08T22:29:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8547",
     "type": "issue_comment",
@@ -436,7 +436,7 @@ archive/issue_comments_077287.json:
 }
 ```
 
-Attachment
+Attachment [trac_8547-take2-part2.patch](tarball://root/attachments/some-uuid/ticket8547/trac_8547-take2-part2.patch) by jason created at 2010-04-08 22:29:13
 
 Replying to [comment:13 was]:
 
@@ -514,7 +514,7 @@ So, can I get a positive review now?
 archive/issue_comments_077289.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8547-take2-part3.patch](tarball://root/attachments/some-uuid/ticket8547/trac_8547-take2-part3.patch) by was created at 2010-04-10 19:19:10",
     "created_at": "2010-04-10T19:19:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8547",
     "type": "issue_comment",
@@ -523,7 +523,7 @@ archive/issue_comments_077289.json:
 }
 ```
 
-Attachment
+Attachment [trac_8547-take2-part3.patch](tarball://root/attachments/some-uuid/ticket8547/trac_8547-take2-part3.patch) by was created at 2010-04-10 19:19:10
 
 
 

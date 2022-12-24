@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6683
 archive/issue_comments_054953.json:
 ```json
 {
-    "body": "Attachment\n\nDelete message in Worksheet_rating_info and Worksheet_rate class from Sage 4.1 original source file server/notebook/twist.py",
+    "body": "Attachment [twist.py](tarball://root/attachments/some-uuid/ticket6683/twist.py) by NoSyu created at 2009-08-07 21:29:33\n\nDelete message in Worksheet_rating_info and Worksheet_rate class from Sage 4.1 original source file server/notebook/twist.py",
     "created_at": "2009-08-07T21:29:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6683",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_054953.json:
 }
 ```
 
-Attachment
+Attachment [twist.py](tarball://root/attachments/some-uuid/ticket6683/twist.py) by NoSyu created at 2009-08-07 21:29:33
 
 Delete message in Worksheet_rating_info and Worksheet_rate class from Sage 4.1 original source file server/notebook/twist.py
 

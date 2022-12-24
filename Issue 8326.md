@@ -91,7 +91,7 @@ Changing priority from minor to trivial.
 archive/issue_comments_073923.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch appears to work, but feel free to reject it.",
+    "body": "Attachment [trac_8326-sphinx_posets.patch](tarball://root/attachments/some-uuid/ticket8326/trac_8326-sphinx_posets.patch) by mpatel created at 2010-02-22 06:12:19\n\nThe patch appears to work, but feel free to reject it.",
     "created_at": "2010-02-22T06:12:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8326",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_073923.json:
 }
 ```
 
-Attachment
+Attachment [trac_8326-sphinx_posets.patch](tarball://root/attachments/some-uuid/ticket8326/trac_8326-sphinx_posets.patch) by mpatel created at 2010-02-22 06:12:19
 
 The patch appears to work, but feel free to reject it.
 

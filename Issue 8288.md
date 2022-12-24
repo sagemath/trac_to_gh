@@ -264,7 +264,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_073395.json:
 ```json
 {
-    "body": "Attachment\n\nOne more time, my english is still bad... Feel free to point them and thus, make my english increasing....",
+    "body": "Attachment [search_forest_depth_and_breath_improvement-nb.patch](tarball://root/attachments/some-uuid/ticket8288/search_forest_depth_and_breath_improvement-nb.patch) by nborie created at 2010-03-05 17:23:14\n\nOne more time, my english is still bad... Feel free to point them and thus, make my english increasing....",
     "created_at": "2010-03-05T17:23:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8288",
     "type": "issue_comment",
@@ -273,7 +273,7 @@ archive/issue_comments_073395.json:
 }
 ```
 
-Attachment
+Attachment [search_forest_depth_and_breath_improvement-nb.patch](tarball://root/attachments/some-uuid/ticket8288/search_forest_depth_and_breath_improvement-nb.patch) by nborie created at 2010-03-05 17:23:14
 
 One more time, my english is still bad... Feel free to point them and thus, make my english increasing....
 
@@ -284,7 +284,7 @@ One more time, my english is still bad... Feel free to point them and thus, make
 archive/issue_comments_073396.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8288-reviewer.patch](tarball://root/attachments/some-uuid/ticket8288/trac_8288-reviewer.patch) by mvngu created at 2010-04-19 02:52:24",
     "created_at": "2010-04-19T02:52:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8288",
     "type": "issue_comment",
@@ -293,7 +293,7 @@ archive/issue_comments_073396.json:
 }
 ```
 
-Attachment
+Attachment [trac_8288-reviewer.patch](tarball://root/attachments/some-uuid/ticket8288/trac_8288-reviewer.patch) by mvngu created at 2010-04-19 02:52:24
 
 
 
@@ -680,7 +680,7 @@ Cheers,
 archive/issue_comments_073412.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8288_search_forest_depth_and_breath_improvement-nb.patch](tarball://root/attachments/some-uuid/ticket8288/trac_8288_search_forest_depth_and_breath_improvement-nb.patch) by nborie created at 2011-03-24 16:41:17",
     "created_at": "2011-03-24T16:41:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8288",
     "type": "issue_comment",
@@ -689,7 +689,7 @@ archive/issue_comments_073412.json:
 }
 ```
 
-Attachment
+Attachment [trac_8288_search_forest_depth_and_breath_improvement-nb.patch](tarball://root/attachments/some-uuid/ticket8288/trac_8288_search_forest_depth_and_breath_improvement-nb.patch) by nborie created at 2011-03-24 16:41:17
 
 
 

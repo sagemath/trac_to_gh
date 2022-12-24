@@ -223,7 +223,7 @@ Nathann
 archive/issue_comments_075093.json:
 ```json
 {
-    "body": "Attachment\n\nDepends on ticket 8386.",
+    "body": "Attachment [trac_8388_pickling_path.patch](tarball://root/attachments/some-uuid/ticket8388/trac_8388_pickling_path.patch) by vdelecroix created at 2012-03-13 00:56:34\n\nDepends on ticket 8386.",
     "created_at": "2012-03-13T00:56:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8388",
     "type": "issue_comment",
@@ -232,7 +232,7 @@ archive/issue_comments_075093.json:
 }
 ```
 
-Attachment
+Attachment [trac_8388_pickling_path.patch](tarball://root/attachments/some-uuid/ticket8388/trac_8388_pickling_path.patch) by vdelecroix created at 2012-03-13 00:56:34
 
 Depends on ticket 8386.
 
@@ -351,7 +351,7 @@ apply trac_8388_pickling_path.v2.patch
 archive/issue_comments_075100.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8388_pickling_path.v2.patch](tarball://root/attachments/some-uuid/ticket8388/trac_8388_pickling_path.v2.patch) by chapoton created at 2013-08-29 11:11:36",
     "created_at": "2013-08-29T11:11:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8388",
     "type": "issue_comment",
@@ -360,7 +360,7 @@ archive/issue_comments_075100.json:
 }
 ```
 
-Attachment
+Attachment [trac_8388_pickling_path.v2.patch](tarball://root/attachments/some-uuid/ticket8388/trac_8388_pickling_path.v2.patch) by chapoton created at 2013-08-29 11:11:36
 
 
 

@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4114
 archive/issue_comments_029789.json:
 ```json
 {
-    "body": "Attachment\n\nOn an OSX 10.4 PPC box this patch fixes the issue:\n\n```\nvarro:~/sage-3.1.2.rc2 mabshoff$ ./sage -t devel/sage/sage/interfaces/lisp.py\nsage -t  devel/sage/sage/interfaces/lisp.py                 \n         [19.8 s]\n \n----------------------------------------------------------------------\nAll tests passed!\n```\n\nBut I am mystified why it did work on OSX Intel boxen. \n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_4114.patch](tarball://root/attachments/some-uuid/ticket4114/trac_4114.patch) by mabshoff created at 2008-09-14 07:03:48\n\nOn an OSX 10.4 PPC box this patch fixes the issue:\n\n```\nvarro:~/sage-3.1.2.rc2 mabshoff$ ./sage -t devel/sage/sage/interfaces/lisp.py\nsage -t  devel/sage/sage/interfaces/lisp.py                 \n         [19.8 s]\n \n----------------------------------------------------------------------\nAll tests passed!\n```\n\nBut I am mystified why it did work on OSX Intel boxen. \n\nCheers,\n\nMichael",
     "created_at": "2008-09-14T07:03:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4114",
     "type": "issue_comment",
@@ -53,7 +53,7 @@ archive/issue_comments_029789.json:
 }
 ```
 
-Attachment
+Attachment [trac_4114.patch](tarball://root/attachments/some-uuid/ticket4114/trac_4114.patch) by mabshoff created at 2008-09-14 07:03:48
 
 On an OSX 10.4 PPC box this patch fixes the issue:
 

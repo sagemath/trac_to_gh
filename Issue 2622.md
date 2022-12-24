@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2622
 archive/issue_comments_018003.json:
 ```json
 {
-    "body": "Attachment\n\npolybori-refman-sage.patch looks good to me: One small typo did sneak in: \"This quptient ring\"\n\npolybori-refman-doc.patch ought to be rebased since it has some unrelated changes included:\n\n```\npatch -p1 --dry-run < polybori-refman-doc.patch\\?format\\=raw\npatching file .hgtags\nHunk #1 FAILED at 122.\n1 out of 1 hunk FAILED -- saving rejects to file .hgtags.rej\npatching file commontex/patchlevel.tex\nHunk #1 FAILED at 1.\n1 out of 1 hunk FAILED -- saving rejects to file commontex/patchlevel.tex.rej\npatching file ref/combinat.tex\nReversed (or previously applied) patch detected!  Assume -R? [n] n\nApply anyway? [n] n\nSkipping patch.\n2 out of 2 hunks ignored -- saving rejects to file ref/combinat.tex.rej\npatching file ref/files\nReversed (or previously applied) patch detected!  Assume -R? [n] n\nApply anyway? [n] n\nSkipping patch.\n4 out of 4 hunks ignored -- saving rejects to file ref/files.rej\npatching file ref/hecke.tex\nReversed (or previously applied) patch detected!  Assume -R? [n] n\nApply anyway? [n] n\nSkipping patch.\n1 out of 1 hunk ignored -- saving rejects to file ref/hecke.tex.rej\npatching file ref/polynomial-rings.tex\npatching file ref/update_script.py\nReversed (or previously applied) patch detected!  Assume -R? [n] n\nApply anyway? [n] n\nSkipping patch.\n2 out of 2 hunks ignored -- saving rejects to file ref/update_script.py.rej\n```\n\n\nCheers,\n\nMichael",
+    "body": "Attachment [polybori-refman-doc.patch](tarball://root/attachments/some-uuid/ticket2622/polybori-refman-doc.patch) by mabshoff created at 2008-03-21 01:13:25\n\npolybori-refman-sage.patch looks good to me: One small typo did sneak in: \"This quptient ring\"\n\npolybori-refman-doc.patch ought to be rebased since it has some unrelated changes included:\n\n```\npatch -p1 --dry-run < polybori-refman-doc.patch\\?format\\=raw\npatching file .hgtags\nHunk #1 FAILED at 122.\n1 out of 1 hunk FAILED -- saving rejects to file .hgtags.rej\npatching file commontex/patchlevel.tex\nHunk #1 FAILED at 1.\n1 out of 1 hunk FAILED -- saving rejects to file commontex/patchlevel.tex.rej\npatching file ref/combinat.tex\nReversed (or previously applied) patch detected!  Assume -R? [n] n\nApply anyway? [n] n\nSkipping patch.\n2 out of 2 hunks ignored -- saving rejects to file ref/combinat.tex.rej\npatching file ref/files\nReversed (or previously applied) patch detected!  Assume -R? [n] n\nApply anyway? [n] n\nSkipping patch.\n4 out of 4 hunks ignored -- saving rejects to file ref/files.rej\npatching file ref/hecke.tex\nReversed (or previously applied) patch detected!  Assume -R? [n] n\nApply anyway? [n] n\nSkipping patch.\n1 out of 1 hunk ignored -- saving rejects to file ref/hecke.tex.rej\npatching file ref/polynomial-rings.tex\npatching file ref/update_script.py\nReversed (or previously applied) patch detected!  Assume -R? [n] n\nApply anyway? [n] n\nSkipping patch.\n2 out of 2 hunks ignored -- saving rejects to file ref/update_script.py.rej\n```\n\n\nCheers,\n\nMichael",
     "created_at": "2008-03-21T01:13:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2622",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_018003.json:
 }
 ```
 
-Attachment
+Attachment [polybori-refman-doc.patch](tarball://root/attachments/some-uuid/ticket2622/polybori-refman-doc.patch) by mabshoff created at 2008-03-21 01:13:25
 
 polybori-refman-sage.patch looks good to me: One small typo did sneak in: "This quptient ring"
 
@@ -138,7 +138,7 @@ Michael
 archive/issue_comments_018006.json:
 ```json
 {
-    "body": "Attachment\n\nfixed typo",
+    "body": "Attachment [polybori-refman-sage.patch](tarball://root/attachments/some-uuid/ticket2622/polybori-refman-sage.patch) by malb created at 2008-03-21 01:36:03\n\nfixed typo",
     "created_at": "2008-03-21T01:36:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2622",
     "type": "issue_comment",
@@ -147,7 +147,7 @@ archive/issue_comments_018006.json:
 }
 ```
 
-Attachment
+Attachment [polybori-refman-sage.patch](tarball://root/attachments/some-uuid/ticket2622/polybori-refman-sage.patch) by malb created at 2008-03-21 01:36:03
 
 fixed typo
 
@@ -158,7 +158,7 @@ fixed typo
 archive/issue_comments_018007.json:
 ```json
 {
-    "body": "Attachment\n\ncleaned up version of the patch",
+    "body": "Attachment [trac_2622_polybori-refman-doc.patch](tarball://root/attachments/some-uuid/ticket2622/trac_2622_polybori-refman-doc.patch) by malb created at 2008-03-21 02:16:13\n\ncleaned up version of the patch",
     "created_at": "2008-03-21T02:16:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2622",
     "type": "issue_comment",
@@ -167,7 +167,7 @@ archive/issue_comments_018007.json:
 }
 ```
 
-Attachment
+Attachment [trac_2622_polybori-refman-doc.patch](tarball://root/attachments/some-uuid/ticket2622/trac_2622_polybori-refman-doc.patch) by malb created at 2008-03-21 02:16:13
 
 cleaned up version of the patch
 

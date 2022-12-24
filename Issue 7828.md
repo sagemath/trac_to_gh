@@ -112,7 +112,7 @@ Based on 4.4.2
 archive/issue_comments_067771.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7828-sign.patch](tarball://root/attachments/some-uuid/ticket7828/trac_7828-sign.patch) by kcrisman created at 2010-05-26 19:27:08",
     "created_at": "2010-05-26T19:27:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7828",
     "type": "issue_comment",
@@ -121,7 +121,7 @@ archive/issue_comments_067771.json:
 }
 ```
 
-Attachment
+Attachment [trac_7828-sign.patch](tarball://root/attachments/some-uuid/ticket7828/trac_7828-sign.patch) by kcrisman created at 2010-05-26 19:27:08
 
 
 
@@ -254,7 +254,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_067778.json:
 ```json
 {
-    "body": "Attachment\n\nApply after previous",
+    "body": "Attachment [trac_7828-reviewer.patch](tarball://root/attachments/some-uuid/ticket7828/trac_7828-reviewer.patch) by cremona created at 2010-05-28 09:02:54\n\nApply after previous",
     "created_at": "2010-05-28T09:02:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7828",
     "type": "issue_comment",
@@ -263,7 +263,7 @@ archive/issue_comments_067778.json:
 }
 ```
 
-Attachment
+Attachment [trac_7828-reviewer.patch](tarball://root/attachments/some-uuid/ticket7828/trac_7828-reviewer.patch) by cremona created at 2010-05-28 09:02:54
 
 Apply after previous
 

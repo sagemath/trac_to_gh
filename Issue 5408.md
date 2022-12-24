@@ -48,7 +48,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5408
 archive/issue_comments_041800.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5408_pari_kernel_matrix.patch](tarball://root/attachments/some-uuid/ticket5408/trac_5408_pari_kernel_matrix.patch) by rbeezer created at 2009-03-01 23:50:38",
     "created_at": "2009-03-01T23:50:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5408",
     "type": "issue_comment",
@@ -57,7 +57,7 @@ archive/issue_comments_041800.json:
 }
 ```
 
-Attachment
+Attachment [trac_5408_pari_kernel_matrix.patch](tarball://root/attachments/some-uuid/ticket5408/trac_5408_pari_kernel_matrix.patch) by rbeezer created at 2009-03-01 23:50:38
 
 
 

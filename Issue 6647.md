@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6647
 archive/issue_comments_054512.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6647_permutationgroup_improvement.patch](tarball://root/attachments/some-uuid/ticket6647/trac_6647_permutationgroup_improvement.patch) by nborie created at 2009-07-28 13:42:12",
     "created_at": "2009-07-28T13:42:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6647",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_054512.json:
 }
 ```
 
-Attachment
+Attachment [trac_6647_permutationgroup_improvement.patch](tarball://root/attachments/some-uuid/ticket6647/trac_6647_permutationgroup_improvement.patch) by nborie created at 2009-07-28 13:42:12
 
 
 
@@ -378,7 +378,7 @@ but this did not apply and instead opened up vi. I aborted the patch, since I di
 archive/issue_comments_054525.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6647_permutationgroup_improvement_2.patch](tarball://root/attachments/some-uuid/ticket6647/trac_6647_permutationgroup_improvement_2.patch) by nborie created at 2009-08-16 15:49:57",
     "created_at": "2009-08-16T15:49:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6647",
     "type": "issue_comment",
@@ -387,7 +387,7 @@ archive/issue_comments_054525.json:
 }
 ```
 
-Attachment
+Attachment [trac_6647_permutationgroup_improvement_2.patch](tarball://root/attachments/some-uuid/ticket6647/trac_6647_permutationgroup_improvement_2.patch) by nborie created at 2009-08-16 15:49:57
 
 
 
@@ -445,7 +445,7 @@ Docstrings look good. Positive review from me. Are there other tests (eg, other 
 archive/issue_comments_054528.json:
 ```json
 {
-    "body": "Attachment\n\nreviewer patch; fix ReST formatting typos",
+    "body": "Attachment [trac_6647-reviewer.patch](tarball://root/attachments/some-uuid/ticket6647/trac_6647-reviewer.patch) by mvngu created at 2009-08-25 02:02:56\n\nreviewer patch; fix ReST formatting typos",
     "created_at": "2009-08-25T02:02:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6647",
     "type": "issue_comment",
@@ -454,7 +454,7 @@ archive/issue_comments_054528.json:
 }
 ```
 
-Attachment
+Attachment [trac_6647-reviewer.patch](tarball://root/attachments/some-uuid/ticket6647/trac_6647-reviewer.patch) by mvngu created at 2009-08-25 02:02:56
 
 reviewer patch; fix ReST formatting typos
 

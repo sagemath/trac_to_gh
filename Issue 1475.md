@@ -206,7 +206,7 @@ Depends on #4135. Don't apply extcode-1475_1.patch
 archive/issue_comments_009499.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached a patch which is all of the previous ones folded together.  This code doesn't actually work; it creates the option, but setting it to True doesn't actually cause the output in the notebook to be typeset by default.\n\nAlso, please don't say that this depends on #4135 as it does not.\n\nUsing Mercurial queues would allow you to make single patches as opposed to multiple little ones and would allow you to see what actually depends on what.",
+    "body": "Attachment [trac_1475.patch](tarball://root/attachments/some-uuid/ticket1475/trac_1475.patch) by mhansen created at 2009-01-19 06:47:45\n\nI've attached a patch which is all of the previous ones folded together.  This code doesn't actually work; it creates the option, but setting it to True doesn't actually cause the output in the notebook to be typeset by default.\n\nAlso, please don't say that this depends on #4135 as it does not.\n\nUsing Mercurial queues would allow you to make single patches as opposed to multiple little ones and would allow you to see what actually depends on what.",
     "created_at": "2009-01-19T06:47:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1475",
     "type": "issue_comment",
@@ -215,7 +215,7 @@ archive/issue_comments_009499.json:
 }
 ```
 
-Attachment
+Attachment [trac_1475.patch](tarball://root/attachments/some-uuid/ticket1475/trac_1475.patch) by mhansen created at 2009-01-19 06:47:45
 
 I've attached a patch which is all of the previous ones folded together.  This code doesn't actually work; it creates the option, but setting it to True doesn't actually cause the output in the notebook to be typeset by default.
 

@@ -85,7 +85,7 @@ Changing status from new to needs_work.
 archive/issue_comments_009221.json:
 ```json
 {
-    "body": "Attachment\n\nStill needs doctest examples.\n\nExample:\n\n\n```\n\ndef multiple_of_pi(n,pos):\n    m = n*1.0/float(pi)\n    c=[i for i in convergents(m) if i.denominator()<12]\n    q=c[-1]\n    if q.denominator()==1:\n        if q.numerator()==1:\n            return r'$\\pi$'\n        elif q.numerator()==-1:\n            return r'$-\\pi$'            \n        else:\n            return r'$%s\\pi$'%q\n    else:\n        if q.numerator()==1:\n            return r'$\\frac{\\pi}{%s}$'%q.denominator()\n        elif q.numerator()==-1:\n            return r'$\\frac{-\\pi}{%s}$'%q.denominator()\n        else:\n            return r'$\\frac{%s\\pi}{%s}$'%(q.numerator(),q.denominator())\n\nfrom matplotlib.ticker import MultipleLocator, FuncFormatter\nplot(sin(x), (x, -4, 4), tick_locator=MultipleLocator(float(pi/3)), tick_formatter=FuncFormatter(multiple_of_pi))\n\n```\n",
+    "body": "Attachment [formatter.patch](tarball://root/attachments/some-uuid/ticket1431/formatter.patch) by jason created at 2009-11-12 00:17:34\n\nStill needs doctest examples.\n\nExample:\n\n\n```\n\ndef multiple_of_pi(n,pos):\n    m = n*1.0/float(pi)\n    c=[i for i in convergents(m) if i.denominator()<12]\n    q=c[-1]\n    if q.denominator()==1:\n        if q.numerator()==1:\n            return r'$\\pi$'\n        elif q.numerator()==-1:\n            return r'$-\\pi$'            \n        else:\n            return r'$%s\\pi$'%q\n    else:\n        if q.numerator()==1:\n            return r'$\\frac{\\pi}{%s}$'%q.denominator()\n        elif q.numerator()==-1:\n            return r'$\\frac{-\\pi}{%s}$'%q.denominator()\n        else:\n            return r'$\\frac{%s\\pi}{%s}$'%(q.numerator(),q.denominator())\n\nfrom matplotlib.ticker import MultipleLocator, FuncFormatter\nplot(sin(x), (x, -4, 4), tick_locator=MultipleLocator(float(pi/3)), tick_formatter=FuncFormatter(multiple_of_pi))\n\n```\n",
     "created_at": "2009-11-12T00:17:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1431",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_009221.json:
 }
 ```
 
-Attachment
+Attachment [formatter.patch](tarball://root/attachments/some-uuid/ticket1431/formatter.patch) by jason created at 2009-11-12 00:17:34
 
 Still needs doctest examples.
 
@@ -335,7 +335,7 @@ Based on 4.2
 archive/issue_comments_009231.json:
 ```json
 {
-    "body": "Attachment\n\nTwo comments:\n\n* tick_formatter should accept rational multiples of *any* symbolic constant.  I think the code ought to be generalized before going into Sage.  For example, I should have ticks that are rational multiples of e as well.\n\n* I like the idea of having tick_locator be a number.  I think it should be expanded to being a list (if symbolic expressions, then latexing them can give the formatters), or a function.\n\nSee http://reference.wolfram.com/mathematica/ref/Ticks.html for the equivalent mathematica feature.",
+    "body": "Attachment [trac_1431.patch](tarball://root/attachments/some-uuid/ticket1431/trac_1431.patch) by jason created at 2009-11-12 17:46:09\n\nTwo comments:\n\n* tick_formatter should accept rational multiples of *any* symbolic constant.  I think the code ought to be generalized before going into Sage.  For example, I should have ticks that are rational multiples of e as well.\n\n* I like the idea of having tick_locator be a number.  I think it should be expanded to being a list (if symbolic expressions, then latexing them can give the formatters), or a function.\n\nSee http://reference.wolfram.com/mathematica/ref/Ticks.html for the equivalent mathematica feature.",
     "created_at": "2009-11-12T17:46:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1431",
     "type": "issue_comment",
@@ -344,7 +344,7 @@ archive/issue_comments_009231.json:
 }
 ```
 
-Attachment
+Attachment [trac_1431.patch](tarball://root/attachments/some-uuid/ticket1431/trac_1431.patch) by jason created at 2009-11-12 17:46:09
 
 Two comments:
 
@@ -449,7 +449,7 @@ could solve our log problems, though I think that would not belong on this ticke
 archive/issue_comments_009236.json:
 ```json
 {
-    "body": "Attachment\n\nBased on 4.3.5, apply only this patch to Sage library",
+    "body": "Attachment [trac_1431-ticks-and-formatting.patch](tarball://root/attachments/some-uuid/ticket1431/trac_1431-ticks-and-formatting.patch) by kcrisman created at 2010-04-20 19:42:16\n\nBased on 4.3.5, apply only this patch to Sage library",
     "created_at": "2010-04-20T19:42:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1431",
     "type": "issue_comment",
@@ -458,7 +458,7 @@ archive/issue_comments_009236.json:
 }
 ```
 
-Attachment
+Attachment [trac_1431-ticks-and-formatting.patch](tarball://root/attachments/some-uuid/ticket1431/trac_1431-ticks-and-formatting.patch) by kcrisman created at 2010-04-20 19:42:16
 
 Based on 4.3.5, apply only this patch to Sage library
 
@@ -977,7 +977,7 @@ Based on 4.3.5, apply only this patch to Sage library
 archive/issue_comments_009258.json:
 ```json
 {
-    "body": "Attachment\n\nNeeds review.  Notice that for some reason it kept the old message - but this latest one is based on 4.4.2, no worries :-)",
+    "body": "Attachment [trac_1431-ticks-and-formatting-and-latex.patch](tarball://root/attachments/some-uuid/ticket1431/trac_1431-ticks-and-formatting-and-latex.patch) by kcrisman created at 2010-05-25 18:46:48\n\nNeeds review.  Notice that for some reason it kept the old message - but this latest one is based on 4.4.2, no worries :-)",
     "created_at": "2010-05-25T18:46:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1431",
     "type": "issue_comment",
@@ -986,7 +986,7 @@ archive/issue_comments_009258.json:
 }
 ```
 
-Attachment
+Attachment [trac_1431-ticks-and-formatting-and-latex.patch](tarball://root/attachments/some-uuid/ticket1431/trac_1431-ticks-and-formatting-and-latex.patch) by kcrisman created at 2010-05-25 18:46:48
 
 Needs review.  Notice that for some reason it kept the old message - but this latest one is based on 4.4.2, no worries :-)
 

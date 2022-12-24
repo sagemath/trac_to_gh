@@ -71,7 +71,7 @@ Hard coded latex options for combinatorial graphs enabled.
 archive/issue_comments_053214.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [graph_latex_options.patch](tarball://root/attachments/some-uuid/ticket6525/graph_latex_options.patch) by mvngu created at 2009-07-13 22:21:53",
     "created_at": "2009-07-13T22:21:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6525",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_053214.json:
 }
 ```
 
-Attachment
+Attachment [graph_latex_options.patch](tarball://root/attachments/some-uuid/ticket6525/graph_latex_options.patch) by mvngu created at 2009-07-13 22:21:53
 
 
 
@@ -154,7 +154,7 @@ Some hard coded LaTeX options enabled. Please apply on top of graph_latex_option
 archive/issue_comments_053217.json:
 ```json
 {
-    "body": "Attachment\n\nAttached patch file (`graph_latex_options-2.patch`) features\n\n1. Spelling of \"whether\" fixed.\n\n2. Removed some blank lines in docstrings.\n\n3. `ValueError` exception is raised instead of printing error message.\n\n4. Errors for unknown values for options are now trapped when the option is set, this is in `GraphLatex.set_option()`.\n\n4.1 In `GraphLatex.set_option()`, if `option_name` is `None`, the value of `option_name` is set to its default value, instead of deleting the option.\n\n5. Docstrings were updated.",
+    "body": "Attachment [graph_latex_options-2.patch](tarball://root/attachments/some-uuid/ticket6525/graph_latex_options-2.patch) by fidelbarrera created at 2009-07-21 12:51:43\n\nAttached patch file (`graph_latex_options-2.patch`) features\n\n1. Spelling of \"whether\" fixed.\n\n2. Removed some blank lines in docstrings.\n\n3. `ValueError` exception is raised instead of printing error message.\n\n4. Errors for unknown values for options are now trapped when the option is set, this is in `GraphLatex.set_option()`.\n\n4.1 In `GraphLatex.set_option()`, if `option_name` is `None`, the value of `option_name` is set to its default value, instead of deleting the option.\n\n5. Docstrings were updated.",
     "created_at": "2009-07-21T12:51:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6525",
     "type": "issue_comment",
@@ -163,7 +163,7 @@ archive/issue_comments_053217.json:
 }
 ```
 
-Attachment
+Attachment [graph_latex_options-2.patch](tarball://root/attachments/some-uuid/ticket6525/graph_latex_options-2.patch) by fidelbarrera created at 2009-07-21 12:51:43
 
 Attached patch file (`graph_latex_options-2.patch`) features
 

@@ -201,7 +201,7 @@ based on #7565
 archive/issue_comments_064202.json:
 ```json
 {
-    "body": "Attachment\n\ndifferences between old and new README.txt; do not apply",
+    "body": "Attachment [readme.patch](tarball://root/attachments/some-uuid/ticket7553/readme.patch) by mvngu created at 2009-12-01 11:25:15\n\ndifferences between old and new README.txt; do not apply",
     "created_at": "2009-12-01T11:25:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7553",
     "type": "issue_comment",
@@ -210,7 +210,7 @@ archive/issue_comments_064202.json:
 }
 ```
 
-Attachment
+Attachment [readme.patch](tarball://root/attachments/some-uuid/ticket7553/readme.patch) by mvngu created at 2009-12-01 11:25:15
 
 differences between old and new README.txt; do not apply
 

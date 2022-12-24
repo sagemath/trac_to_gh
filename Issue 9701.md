@@ -49,7 +49,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9701
 archive/issue_comments_094337.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch adds the missing method and adds a doctest in symbolics where I originally saw the problem.\n\nAll doctests pass.",
+    "body": "Attachment [trac_9701-float-of-number-field-element.patch](tarball://root/attachments/some-uuid/ticket9701/trac_9701-float-of-number-field-element.patch) by cwitty created at 2010-08-07 01:17:34\n\nThe attached patch adds the missing method and adds a doctest in symbolics where I originally saw the problem.\n\nAll doctests pass.",
     "created_at": "2010-08-07T01:17:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9701",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_094337.json:
 }
 ```
 
-Attachment
+Attachment [trac_9701-float-of-number-field-element.patch](tarball://root/attachments/some-uuid/ticket9701/trac_9701-float-of-number-field-element.patch) by cwitty created at 2010-08-07 01:17:34
 
 The attached patch adds the missing method and adds a doctest in symbolics where I originally saw the problem.
 

@@ -121,7 +121,7 @@ I hand-checked, and the above difference is just an ordering difference.
 archive/issue_comments_007636.json:
 ```json
 {
-    "body": "Attachment\n\nmaybe a fix ?",
+    "body": "Attachment [trac1227.patch](tarball://root/attachments/some-uuid/ticket1227/trac1227.patch) by was created at 2007-11-21 14:11:44\n\nmaybe a fix ?",
     "created_at": "2007-11-21T14:11:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1227",
     "type": "issue_comment",
@@ -130,7 +130,7 @@ archive/issue_comments_007636.json:
 }
 ```
 
-Attachment
+Attachment [trac1227.patch](tarball://root/attachments/some-uuid/ticket1227/trac1227.patch) by was created at 2007-11-21 14:11:44
 
 maybe a fix ?
 

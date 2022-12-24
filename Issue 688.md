@@ -76,7 +76,7 @@ Did this ever work?  Is this really a feature request?
 archive/issue_comments_003581.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [qring.patch](tarball://root/attachments/some-uuid/ticket688/qring.patch) by malb created at 2007-10-20 21:45:37",
     "created_at": "2007-10-20T21:45:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/688",
     "type": "issue_comment",
@@ -85,7 +85,7 @@ archive/issue_comments_003581.json:
 }
 ```
 
-Attachment
+Attachment [qring.patch](tarball://root/attachments/some-uuid/ticket688/qring.patch) by malb created at 2007-10-20 21:45:37
 
 
 

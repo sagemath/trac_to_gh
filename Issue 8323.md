@@ -138,7 +138,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_073869.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8323.2.patch](tarball://root/attachments/some-uuid/ticket8323/trac_8323.2.patch) by craigcitro created at 2010-02-25 17:46:54",
     "created_at": "2010-02-25T17:46:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8323",
     "type": "issue_comment",
@@ -147,7 +147,7 @@ archive/issue_comments_073869.json:
 }
 ```
 
-Attachment
+Attachment [trac_8323.2.patch](tarball://root/attachments/some-uuid/ticket8323/trac_8323.2.patch) by craigcitro created at 2010-02-25 17:46:54
 
 
 

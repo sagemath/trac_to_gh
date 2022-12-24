@@ -120,7 +120,7 @@ If you fix this one issue, then this will get "positive review" from me.
 archive/issue_comments_043969.json:
 ```json
 {
-    "body": "Attachment\n\nAh, I had misinterpreted the existing docstring for `_cmp_`.  I removed the offending doctest (the one with `Spec(QQ) == 5` is already there) and clarified the docstring a little bit.\n\nNew patch is up replacing the old one.",
+    "body": "Attachment [trac_5630.patch](tarball://root/attachments/some-uuid/ticket5630/trac_5630.patch) by AlexGhitza created at 2009-03-29 21:08:35\n\nAh, I had misinterpreted the existing docstring for `_cmp_`.  I removed the offending doctest (the one with `Spec(QQ) == 5` is already there) and clarified the docstring a little bit.\n\nNew patch is up replacing the old one.",
     "created_at": "2009-03-29T21:08:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5630",
     "type": "issue_comment",
@@ -129,7 +129,7 @@ archive/issue_comments_043969.json:
 }
 ```
 
-Attachment
+Attachment [trac_5630.patch](tarball://root/attachments/some-uuid/ticket5630/trac_5630.patch) by AlexGhitza created at 2009-03-29 21:08:35
 
 Ah, I had misinterpreted the existing docstring for `_cmp_`.  I removed the offending doctest (the one with `Spec(QQ) == 5` is already there) and clarified the docstring a little bit.
 

@@ -104,7 +104,7 @@ patch to apply to main sage library (hg_sage.apply(...)); this deletes all of ds
 archive/issue_comments_045776.json:
 ```json
 {
-    "body": "Attachment\n\nthis is dsage as a complete self-contained spkg",
+    "body": "Attachment [dsage-1.0.spkg](tarball://root/attachments/some-uuid/ticket5824/dsage-1.0.spkg) by was created at 2009-04-19 20:00:29\n\nthis is dsage as a complete self-contained spkg",
     "created_at": "2009-04-19T20:00:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5824",
     "type": "issue_comment",
@@ -113,7 +113,7 @@ archive/issue_comments_045776.json:
 }
 ```
 
-Attachment
+Attachment [dsage-1.0.spkg](tarball://root/attachments/some-uuid/ticket5824/dsage-1.0.spkg) by was created at 2009-04-19 20:00:29
 
 this is dsage as a complete self-contained spkg
 
@@ -124,7 +124,7 @@ this is dsage as a complete self-contained spkg
 archive/issue_comments_045777.json:
 ```json
 {
-    "body": "Attachment\n\nreplace SAGE_ROOT/spkg/install by the attached file",
+    "body": "Attachment [install](tarball://root/attachments/some-uuid/ticket5824/install) by was created at 2009-04-19 20:01:58\n\nreplace SAGE_ROOT/spkg/install by the attached file",
     "created_at": "2009-04-19T20:01:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5824",
     "type": "issue_comment",
@@ -133,7 +133,7 @@ archive/issue_comments_045777.json:
 }
 ```
 
-Attachment
+Attachment [install](tarball://root/attachments/some-uuid/ticket5824/install) by was created at 2009-04-19 20:01:58
 
 replace SAGE_ROOT/spkg/install by the attached file
 
@@ -144,7 +144,7 @@ replace SAGE_ROOT/spkg/install by the attached file
 archive/issue_comments_045778.json:
 ```json
 {
-    "body": "Attachment\n\nreplace SAGE_ROOT/spkg/standard/deps by the attached file",
+    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket5824/deps) by was created at 2009-04-19 20:03:21\n\nreplace SAGE_ROOT/spkg/standard/deps by the attached file",
     "created_at": "2009-04-19T20:03:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5824",
     "type": "issue_comment",
@@ -153,7 +153,7 @@ archive/issue_comments_045778.json:
 }
 ```
 
-Attachment
+Attachment [deps](tarball://root/attachments/some-uuid/ticket5824/deps) by was created at 2009-04-19 20:03:21
 
 replace SAGE_ROOT/spkg/standard/deps by the attached file
 
@@ -301,7 +301,7 @@ Michael
 archive/issue_comments_045784.json:
 ```json
 {
-    "body": "Attachment\n\napply this to the hg_sage repo right after trac_5824.patch; it updates setup.py",
+    "body": "Attachment [trac_5824-part2.patch](tarball://root/attachments/some-uuid/ticket5824/trac_5824-part2.patch) by was created at 2009-04-20 02:05:21\n\napply this to the hg_sage repo right after trac_5824.patch; it updates setup.py",
     "created_at": "2009-04-20T02:05:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5824",
     "type": "issue_comment",
@@ -310,7 +310,7 @@ archive/issue_comments_045784.json:
 }
 ```
 
-Attachment
+Attachment [trac_5824-part2.patch](tarball://root/attachments/some-uuid/ticket5824/trac_5824-part2.patch) by was created at 2009-04-20 02:05:21
 
 apply this to the hg_sage repo right after trac_5824.patch; it updates setup.py
 

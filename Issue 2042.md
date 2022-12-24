@@ -36,7 +36,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2042
 archive/issue_comments_013235.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2042-has_been_simplified.patch](tarball://root/attachments/some-uuid/ticket2042/2042-has_been_simplified.patch) by AlexGhitza created at 2008-02-04 00:40:30",
     "created_at": "2008-02-04T00:40:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2042",
     "type": "issue_comment",
@@ -45,7 +45,7 @@ archive/issue_comments_013235.json:
 }
 ```
 
-Attachment
+Attachment [2042-has_been_simplified.patch](tarball://root/attachments/some-uuid/ticket2042/2042-has_been_simplified.patch) by AlexGhitza created at 2008-02-04 00:40:30
 
 
 

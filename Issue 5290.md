@@ -71,7 +71,7 @@ We all agree that the correct fix is to *delete* the offending line, not just co
 archive/issue_comments_040653.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5290.patch](tarball://root/attachments/some-uuid/ticket5290/trac_5290.patch) by mabshoff created at 2009-02-17 05:41:25",
     "created_at": "2009-02-17T05:41:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5290",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_040653.json:
 }
 ```
 
-Attachment
+Attachment [trac_5290.patch](tarball://root/attachments/some-uuid/ticket5290/trac_5290.patch) by mabshoff created at 2009-02-17 05:41:25
 
 
 
@@ -107,7 +107,7 @@ If the patch is changed to deleting the line instead of just commenting it out, 
 archive/issue_comments_040655.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5290-deletion.patch](tarball://root/attachments/some-uuid/ticket5290/trac_5290-deletion.patch) by mabshoff created at 2009-02-17 06:29:41",
     "created_at": "2009-02-17T06:29:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5290",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_040655.json:
 }
 ```
 
-Attachment
+Attachment [trac_5290-deletion.patch](tarball://root/attachments/some-uuid/ticket5290/trac_5290-deletion.patch) by mabshoff created at 2009-02-17 06:29:41
 
 
 

@@ -240,7 +240,7 @@ OK, that's weird.  Turns out I popped when I should have pushed, so I was testin
 archive/issue_comments_089349.json:
 ```json
 {
-    "body": "Attachment\n\nNew version of patch following DavidL's suggestion",
+    "body": "Attachment [9387.patch](tarball://root/attachments/some-uuid/ticket9387/9387.patch) by justin created at 2010-07-02 23:15:09\n\nNew version of patch following DavidL's suggestion",
     "created_at": "2010-07-02T23:15:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9387",
     "type": "issue_comment",
@@ -249,7 +249,7 @@ archive/issue_comments_089349.json:
 }
 ```
 
-Attachment
+Attachment [9387.patch](tarball://root/attachments/some-uuid/ticket9387/9387.patch) by justin created at 2010-07-02 23:15:09
 
 New version of patch following DavidL's suggestion
 

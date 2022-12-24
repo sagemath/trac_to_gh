@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8114
 archive/issue_comments_071237.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8114.patch](tarball://root/attachments/some-uuid/ticket8114/trac_8114.patch) by craigcitro created at 2010-01-28 22:32:21",
     "created_at": "2010-01-28T22:32:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8114",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_071237.json:
 }
 ```
 
-Attachment
+Attachment [trac_8114.patch](tarball://root/attachments/some-uuid/ticket8114/trac_8114.patch) by craigcitro created at 2010-01-28 22:32:21
 
 
 
@@ -118,7 +118,7 @@ Changing priority from major to blocker.
 archive/issue_comments_071241.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8114-part2.patch](tarball://root/attachments/some-uuid/ticket8114/trac_8114-part2.patch) by was created at 2010-01-28 23:08:54",
     "created_at": "2010-01-28T23:08:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8114",
     "type": "issue_comment",
@@ -127,7 +127,7 @@ archive/issue_comments_071241.json:
 }
 ```
 
-Attachment
+Attachment [trac_8114-part2.patch](tarball://root/attachments/some-uuid/ticket8114/trac_8114-part2.patch) by was created at 2010-01-28 23:08:54
 
 
 

@@ -170,7 +170,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3585
 archive/issue_comments_025306.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-3585.patch](tarball://root/attachments/some-uuid/ticket3585/trac-3585.patch) by craigcitro created at 2008-07-07 18:48:33",
     "created_at": "2008-07-07T18:48:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3585",
     "type": "issue_comment",
@@ -179,7 +179,7 @@ archive/issue_comments_025306.json:
 }
 ```
 
-Attachment
+Attachment [trac-3585.patch](tarball://root/attachments/some-uuid/ticket3585/trac-3585.patch) by craigcitro created at 2008-07-07 18:48:33
 
 
 

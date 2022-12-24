@@ -49,7 +49,7 @@ Changing status from new to needs_review.
 archive/issue_comments_087400.json:
 ```json
 {
-    "body": "Attachment\n\nHi John,\n\nFor the record: we went through your patches with Franco and Jason, and discussed quite a bit around it. We will post here shortly an updated patch with some little suggestions.",
+    "body": "Attachment [trac_9280-graded-algebras-example.patch](tarball://root/attachments/some-uuid/ticket9280/trac_9280-graded-algebras-example.patch) by nthiery created at 2010-07-21 05:10:48\n\nHi John,\n\nFor the record: we went through your patches with Franco and Jason, and discussed quite a bit around it. We will post here shortly an updated patch with some little suggestions.",
     "created_at": "2010-07-21T05:10:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9280",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_087400.json:
 }
 ```
 
-Attachment
+Attachment [trac_9280-graded-algebras-example.patch](tarball://root/attachments/some-uuid/ticket9280/trac_9280-graded-algebras-example.patch) by nthiery created at 2010-07-21 05:10:48
 
 Hi John,
 
@@ -143,7 +143,7 @@ By the way, all tests pass with this patch and with the one from #10193.  So per
 archive/issue_comments_087403.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of sage-combinat patch",
+    "body": "Attachment [trac_9280-ref.patch](tarball://root/attachments/some-uuid/ticket9280/trac_9280-ref.patch) by jhpalmieri created at 2010-11-08 23:28:27\n\napply on top of sage-combinat patch",
     "created_at": "2010-11-08T23:28:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9280",
     "type": "issue_comment",
@@ -152,7 +152,7 @@ archive/issue_comments_087403.json:
 }
 ```
 
-Attachment
+Attachment [trac_9280-ref.patch](tarball://root/attachments/some-uuid/ticket9280/trac_9280-ref.patch) by jhpalmieri created at 2010-11-08 23:28:27
 
 apply on top of sage-combinat patch
 
@@ -238,7 +238,7 @@ Franco, Nicolas, what can we do with this ticket ? Should we use the patch from 
 archive/issue_comments_087408.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9280-graded-algebras-example-fs.patch](tarball://root/attachments/some-uuid/ticket9280/trac_9280-graded-algebras-example-fs.patch) by chapoton created at 2013-08-30 16:01:47",
     "created_at": "2013-08-30T16:01:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9280",
     "type": "issue_comment",
@@ -247,7 +247,7 @@ archive/issue_comments_087408.json:
 }
 ```
 
-Attachment
+Attachment [trac_9280-graded-algebras-example-fs.patch](tarball://root/attachments/some-uuid/ticket9280/trac_9280-graded-algebras-example-fs.patch) by chapoton created at 2013-08-30 16:01:47
 
 
 
@@ -314,7 +314,7 @@ I upload here the "algebra only patch" that will be the new starting point.
 archive/issue_comments_087412.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9280_nomodule.patch](tarball://root/attachments/some-uuid/ticket9280/trac_9280_nomodule.patch) by chapoton created at 2013-08-30 18:38:13",
     "created_at": "2013-08-30T18:38:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9280",
     "type": "issue_comment",
@@ -323,7 +323,7 @@ archive/issue_comments_087412.json:
 }
 ```
 
-Attachment
+Attachment [trac_9280_nomodule.patch](tarball://root/attachments/some-uuid/ticket9280/trac_9280_nomodule.patch) by chapoton created at 2013-08-30 18:38:13
 
 
 

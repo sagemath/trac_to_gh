@@ -81,7 +81,7 @@ Other options include Markdown ([http://www.freewisdom.org/projects/python-markd
 archive/issue_comments_028016.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac3916-creole.patch](tarball://root/attachments/some-uuid/ticket3916/trac3916-creole.patch) by AlexGhitza created at 2009-01-23 02:51:10",
     "created_at": "2009-01-23T02:51:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3916",
     "type": "issue_comment",
@@ -90,7 +90,7 @@ archive/issue_comments_028016.json:
 }
 ```
 
-Attachment
+Attachment [trac3916-creole.patch](tarball://root/attachments/some-uuid/ticket3916/trac3916-creole.patch) by AlexGhitza created at 2009-01-23 02:51:10
 
 
 

@@ -150,7 +150,7 @@ That would be great. Thanks!
 archive/issue_comments_083780.json:
 ```json
 {
-    "body": "Attachment\n\nconverts a tuple to a list so matrix constructor isn't confused.",
+    "body": "Attachment [trac_9049_fix_is_groebner.patch](tarball://root/attachments/some-uuid/ticket9049/trac_9049_fix_is_groebner.patch) by syazdani created at 2010-06-25 15:27:59\n\nconverts a tuple to a list so matrix constructor isn't confused.",
     "created_at": "2010-06-25T15:27:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9049",
     "type": "issue_comment",
@@ -159,7 +159,7 @@ archive/issue_comments_083780.json:
 }
 ```
 
-Attachment
+Attachment [trac_9049_fix_is_groebner.patch](tarball://root/attachments/some-uuid/ticket9049/trac_9049_fix_is_groebner.patch) by syazdani created at 2010-06-25 15:27:59
 
 converts a tuple to a list so matrix constructor isn't confused.
 
@@ -298,7 +298,7 @@ Apply this patch only: allow construction of matrices from tuples.
 archive/issue_comments_083788.json:
 ```json
 {
-    "body": "Attachment\n\nDone!",
+    "body": "Attachment [trac_9049_bug_in_matrices_from_tuples.patch](tarball://root/attachments/some-uuid/ticket9049/trac_9049_bug_in_matrices_from_tuples.patch) by novoselt created at 2010-09-24 18:20:58\n\nDone!",
     "created_at": "2010-09-24T18:20:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9049",
     "type": "issue_comment",
@@ -307,7 +307,7 @@ archive/issue_comments_083788.json:
 }
 ```
 
-Attachment
+Attachment [trac_9049_bug_in_matrices_from_tuples.patch](tarball://root/attachments/some-uuid/ticket9049/trac_9049_bug_in_matrices_from_tuples.patch) by novoselt created at 2010-09-24 18:20:58
 
 Done!
 
@@ -336,7 +336,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_083790.json:
 ```json
 {
-    "body": "Attachment\n\nalternative patch",
+    "body": "Attachment [trac_9049_bug_in_matrices_from_tuples.take2.patch](tarball://root/attachments/some-uuid/ticket9049/trac_9049_bug_in_matrices_from_tuples.take2.patch) by burcin created at 2010-09-24 21:18:45\n\nalternative patch",
     "created_at": "2010-09-24T21:18:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9049",
     "type": "issue_comment",
@@ -345,7 +345,7 @@ archive/issue_comments_083790.json:
 }
 ```
 
-Attachment
+Attachment [trac_9049_bug_in_matrices_from_tuples.take2.patch](tarball://root/attachments/some-uuid/ticket9049/trac_9049_bug_in_matrices_from_tuples.take2.patch) by burcin created at 2010-09-24 21:18:45
 
 alternative patch
 

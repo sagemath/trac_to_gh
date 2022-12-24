@@ -68,7 +68,7 @@ Changing component from algebraic geometry to basic arithmetic.
 archive/issue_comments_004758.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [791.patch](tarball://root/attachments/some-uuid/ticket791/791.patch) by roed created at 2009-01-24 08:38:13",
     "created_at": "2009-01-24T08:38:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/791",
     "type": "issue_comment",
@@ -77,7 +77,7 @@ archive/issue_comments_004758.json:
 }
 ```
 
-Attachment
+Attachment [791.patch](tarball://root/attachments/some-uuid/ticket791/791.patch) by roed created at 2009-01-24 08:38:13
 
 
 
@@ -104,7 +104,7 @@ rebase of previous patch against 3.3.alpha2
 archive/issue_comments_004760.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good.  I have rebased the patch against 3.3.alpha2, since it got entangled in the whole Sage Days 12 flurry of activity.",
+    "body": "Attachment [791_rebased.patch](tarball://root/attachments/some-uuid/ticket791/791_rebased.patch) by AlexGhitza created at 2009-01-27 06:04:38\n\nLooks good.  I have rebased the patch against 3.3.alpha2, since it got entangled in the whole Sage Days 12 flurry of activity.",
     "created_at": "2009-01-27T06:04:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/791",
     "type": "issue_comment",
@@ -113,7 +113,7 @@ archive/issue_comments_004760.json:
 }
 ```
 
-Attachment
+Attachment [791_rebased.patch](tarball://root/attachments/some-uuid/ticket791/791_rebased.patch) by AlexGhitza created at 2009-01-27 06:04:38
 
 Looks good.  I have rebased the patch against 3.3.alpha2, since it got entangled in the whole Sage Days 12 flurry of activity.
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1717
 archive/issue_comments_010883.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [prog20080107.patch](tarball://root/attachments/some-uuid/ticket1717/prog20080107.patch) by AlexGhitza created at 2008-01-07 22:25:47",
     "created_at": "2008-01-07T22:25:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1717",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_010883.json:
 }
 ```
 
-Attachment
+Attachment [prog20080107.patch](tarball://root/attachments/some-uuid/ticket1717/prog20080107.patch) by AlexGhitza created at 2008-01-07 22:25:47
 
 
 
@@ -67,7 +67,7 @@ Ignore the bundle (something went wrong), see the patch instead.
 archive/issue_comments_010885.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1717.patch](tarball://root/attachments/some-uuid/ticket1717/1717.patch) by dmharvey created at 2008-01-08 03:13:16",
     "created_at": "2008-01-08T03:13:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1717",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_010885.json:
 }
 ```
 
-Attachment
+Attachment [1717.patch](tarball://root/attachments/some-uuid/ticket1717/1717.patch) by dmharvey created at 2008-01-08 03:13:16
 
 
 

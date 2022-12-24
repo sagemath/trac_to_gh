@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6371
 archive/issue_comments_050950.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6371-riemann-theta.patch](tarball://root/attachments/some-uuid/ticket6371/trac_6371-riemann-theta.patch) by ncalexan created at 2009-06-20 18:39:57",
     "created_at": "2009-06-20T18:39:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_050950.json:
 }
 ```
 
-Attachment
+Attachment [trac_6371-riemann-theta.patch](tarball://root/attachments/some-uuid/ticket6371/trac_6371-riemann-theta.patch) by ncalexan created at 2009-06-20 18:39:57
 
 
 
@@ -226,7 +226,7 @@ Huzzah! Thank _you_ for your help!
 archive/issue_comments_050959.json:
 ```json
 {
-    "body": "Attachment\n\nReplacement for first patch by ncalexan",
+    "body": "Attachment [trac_6371-riemann-theta-REPLACEMENT.patch](tarball://root/attachments/some-uuid/ticket6371/trac_6371-riemann-theta-REPLACEMENT.patch) by cswiercz created at 2011-03-25 00:08:59\n\nReplacement for first patch by ncalexan",
     "created_at": "2011-03-25T00:08:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
@@ -235,7 +235,7 @@ archive/issue_comments_050959.json:
 }
 ```
 
-Attachment
+Attachment [trac_6371-riemann-theta-REPLACEMENT.patch](tarball://root/attachments/some-uuid/ticket6371/trac_6371-riemann-theta-REPLACEMENT.patch) by cswiercz created at 2011-03-25 00:08:59
 
 Replacement for first patch by ncalexan
 
@@ -336,7 +336,7 @@ Part 2 of the replacement patch. Includes documentation fixes.
 archive/issue_comments_050965.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6371-riemann-theta-REPLACEMENT-PART2.patch](tarball://root/attachments/some-uuid/ticket6371/trac_6371-riemann-theta-REPLACEMENT-PART2.patch) by cswiercz created at 2011-03-28 18:22:31",
     "created_at": "2011-03-28T18:22:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
@@ -345,7 +345,7 @@ archive/issue_comments_050965.json:
 }
 ```
 
-Attachment
+Attachment [trac_6371-riemann-theta-REPLACEMENT-PART2.patch](tarball://root/attachments/some-uuid/ticket6371/trac_6371-riemann-theta-REPLACEMENT-PART2.patch) by cswiercz created at 2011-03-28 18:22:31
 
 
 
@@ -390,7 +390,7 @@ Minor last-minute bug.
 archive/issue_comments_050968.json:
 ```json
 {
-    "body": "Attachment\n\n(for patchbot)\n\nApply \n\n* [attachment:trac_6371-riemann-theta-REPLACEMENT.patch]\n\n* [attachment:trac_6371-riemann-theta-REPLACEMENT-PART2.patch]\n\n* [attachment:trac_6371_riemann-theta-REPLACEMENT-PART3.patch]",
+    "body": "Attachment [trac_6371_riemann-theta-REPLACEMENT-PART3.patch](tarball://root/attachments/some-uuid/ticket6371/trac_6371_riemann-theta-REPLACEMENT-PART3.patch) by mstreng created at 2011-03-28 18:47:07\n\n(for patchbot)\n\nApply \n\n* [attachment:trac_6371-riemann-theta-REPLACEMENT.patch]\n\n* [attachment:trac_6371-riemann-theta-REPLACEMENT-PART2.patch]\n\n* [attachment:trac_6371_riemann-theta-REPLACEMENT-PART3.patch]",
     "created_at": "2011-03-28T18:47:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
@@ -399,7 +399,7 @@ archive/issue_comments_050968.json:
 }
 ```
 
-Attachment
+Attachment [trac_6371_riemann-theta-REPLACEMENT-PART3.patch](tarball://root/attachments/some-uuid/ticket6371/trac_6371_riemann-theta-REPLACEMENT-PART3.patch) by mstreng created at 2011-03-28 18:47:07
 
 (for patchbot)
 
@@ -477,7 +477,7 @@ More documentation fixes.
 archive/issue_comments_050972.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6371-riemann-theta-REPLACEMENT-PART4.patch](tarball://root/attachments/some-uuid/ticket6371/trac_6371-riemann-theta-REPLACEMENT-PART4.patch) by cswiercz created at 2011-03-28 21:20:31",
     "created_at": "2011-03-28T21:20:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
@@ -486,7 +486,7 @@ archive/issue_comments_050972.json:
 }
 ```
 
-Attachment
+Attachment [trac_6371-riemann-theta-REPLACEMENT-PART4.patch](tarball://root/attachments/some-uuid/ticket6371/trac_6371-riemann-theta-REPLACEMENT-PART4.patch) by cswiercz created at 2011-03-28 21:20:31
 
 
 
@@ -549,7 +549,7 @@ Fixed derivative calculation errors that resulted in incorrect doctests.
 archive/issue_comments_050976.json:
 ```json
 {
-    "body": "Attachment\n\nFixed issues with computing derivatives that resulted in doctest failures. Minor documentation fixes as well.",
+    "body": "Attachment [trac_6371-riemann-theta-REPLACEMENT-PART5.patch](tarball://root/attachments/some-uuid/ticket6371/trac_6371-riemann-theta-REPLACEMENT-PART5.patch) by cswiercz created at 2011-03-29 20:51:59\n\nFixed issues with computing derivatives that resulted in doctest failures. Minor documentation fixes as well.",
     "created_at": "2011-03-29T20:51:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
@@ -558,7 +558,7 @@ archive/issue_comments_050976.json:
 }
 ```
 
-Attachment
+Attachment [trac_6371-riemann-theta-REPLACEMENT-PART5.patch](tarball://root/attachments/some-uuid/ticket6371/trac_6371-riemann-theta-REPLACEMENT-PART5.patch) by cswiercz created at 2011-03-29 20:51:59
 
 Fixed issues with computing derivatives that resulted in doctest failures. Minor documentation fixes as well.
 
@@ -623,7 +623,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_050980.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-6371-part2.patch](tarball://root/attachments/some-uuid/ticket6371/trac-6371-part2.patch) by cswiercz created at 2011-12-07 19:06:09",
     "created_at": "2011-12-07T19:06:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
@@ -632,7 +632,7 @@ archive/issue_comments_050980.json:
 }
 ```
 
-Attachment
+Attachment [trac-6371-part2.patch](tarball://root/attachments/some-uuid/ticket6371/trac-6371-part2.patch) by cswiercz created at 2011-12-07 19:06:09
 
 
 
@@ -659,7 +659,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_050982.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-6371-part3.patch](tarball://root/attachments/some-uuid/ticket6371/trac-6371-part3.patch) by cswiercz created at 2011-12-07 19:38:40",
     "created_at": "2011-12-07T19:38:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
@@ -668,7 +668,7 @@ archive/issue_comments_050982.json:
 }
 ```
 
-Attachment
+Attachment [trac-6371-part3.patch](tarball://root/attachments/some-uuid/ticket6371/trac-6371-part3.patch) by cswiercz created at 2011-12-07 19:38:40
 
 
 

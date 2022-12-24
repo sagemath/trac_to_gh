@@ -114,7 +114,7 @@ Changing component from combinatorics to graph theory.
 archive/issue_comments_008204.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [edge_labeled_isom.hg](tarball://root/attachments/some-uuid/ticket1304/edge_labeled_isom.hg) by rlm created at 2008-02-06 11:21:23",
     "created_at": "2008-02-06T11:21:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1304",
     "type": "issue_comment",
@@ -123,7 +123,7 @@ archive/issue_comments_008204.json:
 }
 ```
 
-Attachment
+Attachment [edge_labeled_isom.hg](tarball://root/attachments/some-uuid/ticket1304/edge_labeled_isom.hg) by rlm created at 2008-02-06 11:21:23
 
 
 

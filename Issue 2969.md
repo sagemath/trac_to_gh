@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2969
 archive/issue_comments_020462.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-debian-autoversion.patch](tarball://root/attachments/some-uuid/ticket2969/sage-debian-autoversion.patch) by tabbott created at 2008-04-20 04:20:35",
     "created_at": "2008-04-20T04:20:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2969",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_020462.json:
 }
 ```
 
-Attachment
+Attachment [sage-debian-autoversion.patch](tarball://root/attachments/some-uuid/ticket2969/sage-debian-autoversion.patch) by tabbott created at 2008-04-20 04:20:35
 
 
 
@@ -55,7 +55,7 @@ Attachment
 archive/issue_comments_020463.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [gap-guava-version.patch](tarball://root/attachments/some-uuid/ticket2969/gap-guava-version.patch) by tabbott created at 2008-04-20 04:20:51",
     "created_at": "2008-04-20T04:20:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2969",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_020463.json:
 }
 ```
 
-Attachment
+Attachment [gap-guava-version.patch](tarball://root/attachments/some-uuid/ticket2969/gap-guava-version.patch) by tabbott created at 2008-04-20 04:20:51
 
 
 
@@ -73,7 +73,7 @@ Attachment
 archive/issue_comments_020464.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sympow-version.patch](tarball://root/attachments/some-uuid/ticket2969/sympow-version.patch) by tabbott created at 2008-04-20 04:21:01",
     "created_at": "2008-04-20T04:21:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2969",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_020464.json:
 }
 ```
 
-Attachment
+Attachment [sympow-version.patch](tarball://root/attachments/some-uuid/ticket2969/sympow-version.patch) by tabbott created at 2008-04-20 04:21:01
 
 
 
@@ -91,7 +91,7 @@ Attachment
 archive/issue_comments_020465.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [iml-version.patch](tarball://root/attachments/some-uuid/ticket2969/iml-version.patch) by tabbott created at 2008-04-20 04:22:11",
     "created_at": "2008-04-20T04:22:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2969",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_020465.json:
 }
 ```
 
-Attachment
+Attachment [iml-version.patch](tarball://root/attachments/some-uuid/ticket2969/iml-version.patch) by tabbott created at 2008-04-20 04:22:11
 
 
 
@@ -109,7 +109,7 @@ Attachment
 archive/issue_comments_020466.json:
 ```json
 {
-    "body": "Attachment\n\nlcalc-debian-cleanup.patch conflicts/has some of the same hunks as #2967. Reverting that patch then  makes this patch import fine.\n\nCheers,\n\nMichael",
+    "body": "Attachment [flintqs-version.patch](tarball://root/attachments/some-uuid/ticket2969/flintqs-version.patch) by mabshoff created at 2008-04-20 04:59:50\n\nlcalc-debian-cleanup.patch conflicts/has some of the same hunks as #2967. Reverting that patch then  makes this patch import fine.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-20T04:59:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2969",
     "type": "issue_comment",
@@ -118,7 +118,7 @@ archive/issue_comments_020466.json:
 }
 ```
 
-Attachment
+Attachment [flintqs-version.patch](tarball://root/attachments/some-uuid/ticket2969/flintqs-version.patch) by mabshoff created at 2008-04-20 04:59:50
 
 lcalc-debian-cleanup.patch conflicts/has some of the same hunks as #2967. Reverting that patch then  makes this patch import fine.
 

@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8607
 archive/issue_comments_077977.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-8607-rename-deprecation.patch](tarball://root/attachments/some-uuid/ticket8607/trac-8607-rename-deprecation.patch) by jason created at 2010-03-25 19:12:04",
     "created_at": "2010-03-25T19:12:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8607",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_077977.json:
 }
 ```
 
-Attachment
+Attachment [trac-8607-rename-deprecation.patch](tarball://root/attachments/some-uuid/ticket8607/trac-8607-rename-deprecation.patch) by jason created at 2010-03-25 19:12:04
 
 
 
@@ -107,7 +107,7 @@ Positive review on the documentation changes.  I'm not qualified to comment on t
 archive/issue_comments_077981.json:
 ```json
 {
-    "body": "Attachment\n\nApplies over the precedent patch",
+    "body": "Attachment [trac_8607_review-sl.patch](tarball://root/attachments/some-uuid/ticket8607/trac_8607_review-sl.patch) by slabbe created at 2010-04-21 09:02:47\n\nApplies over the precedent patch",
     "created_at": "2010-04-21T09:02:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8607",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_077981.json:
 }
 ```
 
-Attachment
+Attachment [trac_8607_review-sl.patch](tarball://root/attachments/some-uuid/ticket8607/trac_8607_review-sl.patch) by slabbe created at 2010-04-21 09:02:47
 
 Applies over the precedent patch
 

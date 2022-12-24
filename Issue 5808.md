@@ -81,7 +81,7 @@ Apply after the first patch
 archive/issue_comments_045613.json:
 ```json
 {
-    "body": "Attachment\n\nApplies fine to 3.4.1.rc3.  When I did \"sage -docbuild all html\" I got lots of warnings in the tutrial (ok, not dealt with here) and a couple in algebras/quatalg/quaternion_algebra.py.\n\nSo I added some edits to that file, as in the second patch attached.\n\nMy positive review applies to the first patch.  If John likes the second one, that's good.",
+    "body": "Attachment [trac_5808-review.patch](tarball://root/attachments/some-uuid/ticket5808/trac_5808-review.patch) by cremona created at 2009-04-17 14:47:31\n\nApplies fine to 3.4.1.rc3.  When I did \"sage -docbuild all html\" I got lots of warnings in the tutrial (ok, not dealt with here) and a couple in algebras/quatalg/quaternion_algebra.py.\n\nSo I added some edits to that file, as in the second patch attached.\n\nMy positive review applies to the first patch.  If John likes the second one, that's good.",
     "created_at": "2009-04-17T14:47:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5808",
     "type": "issue_comment",
@@ -90,7 +90,7 @@ archive/issue_comments_045613.json:
 }
 ```
 
-Attachment
+Attachment [trac_5808-review.patch](tarball://root/attachments/some-uuid/ticket5808/trac_5808-review.patch) by cremona created at 2009-04-17 14:47:31
 
 Applies fine to 3.4.1.rc3.  When I did "sage -docbuild all html" I got lots of warnings in the tutrial (ok, not dealt with here) and a couple in algebras/quatalg/quaternion_algebra.py.
 
@@ -190,7 +190,7 @@ No problem -- done!
 archive/issue_comments_045618.json:
 ```json
 {
-    "body": "Attachment\n\napply only this patch",
+    "body": "Attachment [ref-warnings.patch](tarball://root/attachments/some-uuid/ticket5808/ref-warnings.patch) by jhpalmieri created at 2009-04-17 22:52:12\n\napply only this patch",
     "created_at": "2009-04-17T22:52:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5808",
     "type": "issue_comment",
@@ -199,7 +199,7 @@ archive/issue_comments_045618.json:
 }
 ```
 
-Attachment
+Attachment [ref-warnings.patch](tarball://root/attachments/some-uuid/ticket5808/ref-warnings.patch) by jhpalmieri created at 2009-04-17 22:52:12
 
 apply only this patch
 

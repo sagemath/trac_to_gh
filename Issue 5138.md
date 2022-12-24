@@ -127,7 +127,7 @@ Thanks for pointing out the 990h issue which I had forgot.  I found a bug relate
 archive/issue_comments_039291.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5138.patch](tarball://root/attachments/some-uuid/ticket5138/trac_5138.patch) by was created at 2009-02-01 09:24:43",
     "created_at": "2009-02-01T09:24:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5138",
     "type": "issue_comment",
@@ -136,7 +136,7 @@ archive/issue_comments_039291.json:
 }
 ```
 
-Attachment
+Attachment [trac_5138.patch](tarball://root/attachments/some-uuid/ticket5138/trac_5138.patch) by was created at 2009-02-01 09:24:43
 
 
 
@@ -209,7 +209,7 @@ Thanks John -- excellent catch.  And, I changed the code to use the code from da
 archive/issue_comments_039295.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good!",
+    "body": "Attachment [trac_5138_part2.patch](tarball://root/attachments/some-uuid/ticket5138/trac_5138_part2.patch) by cremona created at 2009-02-01 22:12:40\n\nLooks good!",
     "created_at": "2009-02-01T22:12:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5138",
     "type": "issue_comment",
@@ -218,7 +218,7 @@ archive/issue_comments_039295.json:
 }
 ```
 
-Attachment
+Attachment [trac_5138_part2.patch](tarball://root/attachments/some-uuid/ticket5138/trac_5138_part2.patch) by cremona created at 2009-02-01 22:12:40
 
 Looks good!
 

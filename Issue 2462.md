@@ -375,7 +375,7 @@ I'm posting a patch to fix this.
 archive/issue_comments_016693.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2462-poly-truncate.patch](tarball://root/attachments/some-uuid/ticket2462/2462-poly-truncate.patch) by robertwb created at 2008-10-30 19:57:45",
     "created_at": "2008-10-30T19:57:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2462",
     "type": "issue_comment",
@@ -384,7 +384,7 @@ archive/issue_comments_016693.json:
 }
 ```
 
-Attachment
+Attachment [2462-poly-truncate.patch](tarball://root/attachments/some-uuid/ticket2462/2462-poly-truncate.patch) by robertwb created at 2008-10-30 19:57:45
 
 
 

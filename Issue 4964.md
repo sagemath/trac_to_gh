@@ -374,7 +374,7 @@ Agreed: (0:0:1) has order 2, so that's consistent!  john
 archive/issue_comments_037737.json:
 ```json
 {
-    "body": "Attachment\n\nSage Version 3.2.3, Release Date: 2009-01-05",
+    "body": "Attachment [trac_4964.patch](tarball://root/attachments/some-uuid/ticket4964/trac_4964.patch) by dmhansen created at 2009-02-06 14:16:56\n\nSage Version 3.2.3, Release Date: 2009-01-05",
     "created_at": "2009-02-06T14:16:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4964",
     "type": "issue_comment",
@@ -383,7 +383,7 @@ archive/issue_comments_037737.json:
 }
 ```
 
-Attachment
+Attachment [trac_4964.patch](tarball://root/attachments/some-uuid/ticket4964/trac_4964.patch) by dmhansen created at 2009-02-06 14:16:56
 
 Sage Version 3.2.3, Release Date: 2009-01-05
 
@@ -412,7 +412,7 @@ New patch is up. I kept the pairing down in the ElliptiCurvePoint_finite_field c
 archive/issue_comments_037739.json:
 ```json
 {
-    "body": "Attachment\n\nThe revised patch fixes the bug.  I have taken the liberty of adding my patch trac_4964a.patch (to be applied after trac_4964.patch) which does the following:\n\n1. Adds a doctest to show that the bug I reported is fixed.\n2.  Moves the functions to the class EllipticCurvePoint_field, as I originally suggested, since this works perfectly well!\n3. Illustrate my point in 2 by adding a docest computing a 5th order Weil pairing over the 5th cyclotomic field.\n4. Edited the documentation about the implementation only applying when both points have the same order n, since in fact the only condition is that n*P=n*Q=0, i.e. that they are both in E[n], so the function could be applied to any two torsion points provided that n is a common multiple of their orders.\n\nIf dmhansen is happy with these adjustments then I am happy with the (combined) patch, so I am optimistically giving it a positive review.  Ideally, a 3rd party would take a look too.",
+    "body": "Attachment [trac_4964a.patch](tarball://root/attachments/some-uuid/ticket4964/trac_4964a.patch) by cremona created at 2009-02-07 15:42:40\n\nThe revised patch fixes the bug.  I have taken the liberty of adding my patch trac_4964a.patch (to be applied after trac_4964.patch) which does the following:\n\n1. Adds a doctest to show that the bug I reported is fixed.\n2.  Moves the functions to the class EllipticCurvePoint_field, as I originally suggested, since this works perfectly well!\n3. Illustrate my point in 2 by adding a docest computing a 5th order Weil pairing over the 5th cyclotomic field.\n4. Edited the documentation about the implementation only applying when both points have the same order n, since in fact the only condition is that n*P=n*Q=0, i.e. that they are both in E[n], so the function could be applied to any two torsion points provided that n is a common multiple of their orders.\n\nIf dmhansen is happy with these adjustments then I am happy with the (combined) patch, so I am optimistically giving it a positive review.  Ideally, a 3rd party would take a look too.",
     "created_at": "2009-02-07T15:42:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4964",
     "type": "issue_comment",
@@ -421,7 +421,7 @@ archive/issue_comments_037739.json:
 }
 ```
 
-Attachment
+Attachment [trac_4964a.patch](tarball://root/attachments/some-uuid/ticket4964/trac_4964a.patch) by cremona created at 2009-02-07 15:42:40
 
 The revised patch fixes the bug.  I have taken the liberty of adding my patch trac_4964a.patch (to be applied after trac_4964.patch) which does the following:
 
@@ -472,7 +472,7 @@ I am very happy with the changes and yes it would be nice to get a 3rd party rev
 archive/issue_comments_037741.json:
 ```json
 {
-    "body": "Attachment\n\nApply after previous two.",
+    "body": "Attachment [trac_4964b.patch](tarball://root/attachments/some-uuid/ticket4964/trac_4964b.patch) by cremona created at 2009-02-07 17:17:05\n\nApply after previous two.",
     "created_at": "2009-02-07T17:17:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4964",
     "type": "issue_comment",
@@ -481,7 +481,7 @@ archive/issue_comments_037741.json:
 }
 ```
 
-Attachment
+Attachment [trac_4964b.patch](tarball://root/attachments/some-uuid/ticket4964/trac_4964b.patch) by cremona created at 2009-02-07 17:17:05
 
 Apply after previous two.
 

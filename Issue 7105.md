@@ -113,7 +113,7 @@ Here's a patch.
 archive/issue_comments_058817.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7105-search.patch](tarball://root/attachments/some-uuid/ticket7105/trac_7105-search.patch) by jhpalmieri created at 2011-03-25 22:54:10",
     "created_at": "2011-03-25T22:54:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7105",
     "type": "issue_comment",
@@ -122,7 +122,7 @@ archive/issue_comments_058817.json:
 }
 ```
 
-Attachment
+Attachment [trac_7105-search.patch](tarball://root/attachments/some-uuid/ticket7105/trac_7105-search.patch) by jhpalmieri created at 2011-03-25 22:54:10
 
 
 

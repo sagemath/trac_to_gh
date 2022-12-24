@@ -669,7 +669,7 @@ Transcript written on combinat.log.
 archive/issue_comments_031735.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4327-root_system_plot_refactor-nt.patch](tarball://root/attachments/some-uuid/ticket4327/trac_4327-root_system_plot_refactor-nt.patch) by nthiery created at 2013-05-13 20:02:43",
     "created_at": "2013-05-13T20:02:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
@@ -678,7 +678,7 @@ archive/issue_comments_031735.json:
 }
 ```
 
-Attachment
+Attachment [trac_4327-root_system_plot_refactor-nt.patch](tarball://root/attachments/some-uuid/ticket4327/trac_4327-root_system_plot_refactor-nt.patch) by nthiery created at 2013-05-13 20:02:43
 
 
 

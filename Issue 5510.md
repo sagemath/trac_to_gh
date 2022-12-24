@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5510
 archive/issue_comments_042786.json:
 ```json
 {
-    "body": "Attachment\n\nPatch requires SPKG at:\n\n   http://sage.math.washington.edu/home/malb/spkgs/libm4ri-20090512.spkg\n\nThis update is a requirement for updating PolyBoRi to 0.6.",
+    "body": "Attachment [matrix_mod2_new_api_and_rank.patch](tarball://root/attachments/some-uuid/ticket5510/matrix_mod2_new_api_and_rank.patch) by malb created at 2009-05-12 01:36:56\n\nPatch requires SPKG at:\n\n   http://sage.math.washington.edu/home/malb/spkgs/libm4ri-20090512.spkg\n\nThis update is a requirement for updating PolyBoRi to 0.6.",
     "created_at": "2009-05-12T01:36:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5510",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_042786.json:
 }
 ```
 
-Attachment
+Attachment [matrix_mod2_new_api_and_rank.patch](tarball://root/attachments/some-uuid/ticket5510/matrix_mod2_new_api_and_rank.patch) by malb created at 2009-05-12 01:36:56
 
 Patch requires SPKG at:
 

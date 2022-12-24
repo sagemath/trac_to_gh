@@ -36,7 +36,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2736
 archive/issue_comments_018815.json:
 ```json
 {
-    "body": "Attachment\n\nTested on OS X.",
+    "body": "Attachment [dsage_doctest_threading.patch](tarball://root/attachments/some-uuid/ticket2736/dsage_doctest_threading.patch) by was created at 2008-03-30 22:03:49\n\nTested on OS X.",
     "created_at": "2008-03-30T22:03:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2736",
     "type": "issue_comment",
@@ -45,7 +45,7 @@ archive/issue_comments_018815.json:
 }
 ```
 
-Attachment
+Attachment [dsage_doctest_threading.patch](tarball://root/attachments/some-uuid/ticket2736/dsage_doctest_threading.patch) by was created at 2008-03-30 22:03:49
 
 Tested on OS X.
 

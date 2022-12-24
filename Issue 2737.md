@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2737
 archive/issue_comments_018818.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2737.patch](tarball://root/attachments/some-uuid/ticket2737/2737.patch) by mhansen created at 2008-03-31 11:50:03",
     "created_at": "2008-03-31T11:50:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2737",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_018818.json:
 }
 ```
 
-Attachment
+Attachment [2737.patch](tarball://root/attachments/some-uuid/ticket2737/2737.patch) by mhansen created at 2008-03-31 11:50:03
 
 
 
@@ -252,7 +252,7 @@ apply instead of previous patch
 archive/issue_comments_018827.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review to the second patch. I don't see an easy way to get rid of code duplication, so I think this is worth it.",
+    "body": "Attachment [trac-2737-balancedsum-rebased-bug-fixed.patch](tarball://root/attachments/some-uuid/ticket2737/trac-2737-balancedsum-rebased-bug-fixed.patch) by robertwb created at 2009-07-25 22:56:59\n\nPositive review to the second patch. I don't see an easy way to get rid of code duplication, so I think this is worth it.",
     "created_at": "2009-07-25T22:56:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2737",
     "type": "issue_comment",
@@ -261,7 +261,7 @@ archive/issue_comments_018827.json:
 }
 ```
 
-Attachment
+Attachment [trac-2737-balancedsum-rebased-bug-fixed.patch](tarball://root/attachments/some-uuid/ticket2737/trac-2737-balancedsum-rebased-bug-fixed.patch) by robertwb created at 2009-07-25 22:56:59
 
 Positive review to the second patch. I don't see an easy way to get rid of code duplication, so I think this is worth it.
 

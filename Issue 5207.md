@@ -38,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5207
 archive/issue_comments_039895.json:
 ```json
 {
-    "body": "Attachment\n\nAs suggested by John Cremona, the attached patch replaces the use of symbolic variables by variables in a polynomial ring over QQ.",
+    "body": "Attachment [trac_5207.patch](tarball://root/attachments/some-uuid/ticket5207/trac_5207.patch) by AlexGhitza created at 2009-02-08 13:13:57\n\nAs suggested by John Cremona, the attached patch replaces the use of symbolic variables by variables in a polynomial ring over QQ.",
     "created_at": "2009-02-08T13:13:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5207",
     "type": "issue_comment",
@@ -47,7 +47,7 @@ archive/issue_comments_039895.json:
 }
 ```
 
-Attachment
+Attachment [trac_5207.patch](tarball://root/attachments/some-uuid/ticket5207/trac_5207.patch) by AlexGhitza created at 2009-02-08 13:13:57
 
 As suggested by John Cremona, the attached patch replaces the use of symbolic variables by variables in a polynomial ring over QQ.
 

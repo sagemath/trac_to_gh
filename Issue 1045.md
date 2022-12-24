@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1045
 archive/issue_comments_006360.json:
 ```json
 {
-    "body": "Attachment\n\nJust some bookkeeping...",
+    "body": "Attachment [iospec.patch](tarball://root/attachments/some-uuid/ticket1045/iospec.patch) by rlm created at 2007-11-01 06:37:48\n\nJust some bookkeeping...",
     "created_at": "2007-11-01T06:37:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1045",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_006360.json:
 }
 ```
 
-Attachment
+Attachment [iospec.patch](tarball://root/attachments/some-uuid/ticket1045/iospec.patch) by rlm created at 2007-11-01 06:37:48
 
 Just some bookkeeping...
 

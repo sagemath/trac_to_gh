@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3042
 archive/issue_comments_020929.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3042-part1.patch](tarball://root/attachments/some-uuid/ticket3042/sage-3042-part1.patch) by was created at 2008-04-27 07:00:19",
     "created_at": "2008-04-27T07:00:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3042",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_020929.json:
 }
 ```
 
-Attachment
+Attachment [sage-3042-part1.patch](tarball://root/attachments/some-uuid/ticket3042/sage-3042-part1.patch) by was created at 2008-04-27 07:00:19
 
 
 
@@ -67,7 +67,7 @@ this implements fast charpoly
 archive/issue_comments_020931.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3042-pt3-echelon-pt1.patch](tarball://root/attachments/some-uuid/ticket3042/sage-3042-pt3-echelon-pt1.patch) by craigcitro created at 2008-04-28 12:24:33",
     "created_at": "2008-04-28T12:24:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3042",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_020931.json:
 }
 ```
 
-Attachment
+Attachment [sage-3042-pt3-echelon-pt1.patch](tarball://root/attachments/some-uuid/ticket3042/sage-3042-pt3-echelon-pt1.patch) by craigcitro created at 2008-04-28 12:24:33
 
 
 
@@ -85,7 +85,7 @@ Attachment
 archive/issue_comments_020932.json:
 ```json
 {
-    "body": "Attachment\n\ncurrent working state of code",
+    "body": "Attachment [sage-3042-pt4-echelon-work-in-progress.patch](tarball://root/attachments/some-uuid/ticket3042/sage-3042-pt4-echelon-work-in-progress.patch) by craigcitro created at 2008-05-01 00:40:27\n\ncurrent working state of code",
     "created_at": "2008-05-01T00:40:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3042",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_020932.json:
 }
 ```
 
-Attachment
+Attachment [sage-3042-pt4-echelon-work-in-progress.patch](tarball://root/attachments/some-uuid/ticket3042/sage-3042-pt4-echelon-work-in-progress.patch) by craigcitro created at 2008-05-01 00:40:27
 
 current working state of code
 
@@ -105,7 +105,7 @@ current working state of code
 archive/issue_comments_020933.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3042-pt5.patch](tarball://root/attachments/some-uuid/ticket3042/sage-3042-pt5.patch) by craigcitro created at 2008-05-01 10:14:02",
     "created_at": "2008-05-01T10:14:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3042",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_020933.json:
 }
 ```
 
-Attachment
+Attachment [sage-3042-pt5.patch](tarball://root/attachments/some-uuid/ticket3042/sage-3042-pt5.patch) by craigcitro created at 2008-05-01 10:14:02
 
 
 
@@ -123,7 +123,7 @@ Attachment
 archive/issue_comments_020934.json:
 ```json
 {
-    "body": "Attachment\n\nmultiply modular matrix multiply",
+    "body": "Attachment [sage-3042.pt6.patch](tarball://root/attachments/some-uuid/ticket3042/sage-3042.pt6.patch) by was created at 2008-05-02 05:34:09\n\nmultiply modular matrix multiply",
     "created_at": "2008-05-02T05:34:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3042",
     "type": "issue_comment",
@@ -132,7 +132,7 @@ archive/issue_comments_020934.json:
 }
 ```
 
-Attachment
+Attachment [sage-3042.pt6.patch](tarball://root/attachments/some-uuid/ticket3042/sage-3042.pt6.patch) by was created at 2008-05-02 05:34:09
 
 multiply modular matrix multiply
 
@@ -143,7 +143,7 @@ multiply modular matrix multiply
 archive/issue_comments_020935.json:
 ```json
 {
-    "body": "Attachment\n\nbring doctest coverage to 100%",
+    "body": "Attachment [sage-3042.pt8-doctest100percent.patch](tarball://root/attachments/some-uuid/ticket3042/sage-3042.pt8-doctest100percent.patch) by was created at 2008-05-05 17:11:51\n\nbring doctest coverage to 100%",
     "created_at": "2008-05-05T17:11:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3042",
     "type": "issue_comment",
@@ -152,7 +152,7 @@ archive/issue_comments_020935.json:
 }
 ```
 
-Attachment
+Attachment [sage-3042.pt8-doctest100percent.patch](tarball://root/attachments/some-uuid/ticket3042/sage-3042.pt8-doctest100percent.patch) by was created at 2008-05-05 17:11:51
 
 bring doctest coverage to 100%
 
@@ -201,7 +201,7 @@ single bundle with all patches
 archive/issue_comments_020938.json:
 ```json
 {
-    "body": "Attachment\n\nNote: you can just grab the bundle, which has all the patches. (And one more that's not posted.) It applies clean against my 3.0.1.",
+    "body": "Attachment [trac-3042.hg](tarball://root/attachments/some-uuid/ticket3042/trac-3042.hg) by craigcitro created at 2008-05-10 10:18:47\n\nNote: you can just grab the bundle, which has all the patches. (And one more that's not posted.) It applies clean against my 3.0.1.",
     "created_at": "2008-05-10T10:18:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3042",
     "type": "issue_comment",
@@ -210,7 +210,7 @@ archive/issue_comments_020938.json:
 }
 ```
 
-Attachment
+Attachment [trac-3042.hg](tarball://root/attachments/some-uuid/ticket3042/trac-3042.hg) by craigcitro created at 2008-05-10 10:18:47
 
 Note: you can just grab the bundle, which has all the patches. (And one more that's not posted.) It applies clean against my 3.0.1.
 
@@ -306,7 +306,7 @@ sage: prod([p for p in primes(sage.ext.multi_modular.MAX_MODULUS) if p % 13 == 1
 archive/issue_comments_020942.json:
 ```json
 {
-    "body": "Attachment\n\nThe code looks good, is well documented, and fast. Aside from the errors in _echelon_form_multimodular it seems to work as advertised. \n\nI added a patch illustrating what _reduction_matrix actually does, as this seems central to the ideas behind the algorithms. There needs to be at least a paragraph or two at the top explaining the storage format and ideas behind the algorithm (maybe the example I posted belongs there)--if I hadn't had it explained to me it would have probably taken a while to get the \"big picture\" from the code. \n\nOnce these issues are all solved, I think it's ready.",
+    "body": "Attachment [3042-illustrative-doctest.patch](tarball://root/attachments/some-uuid/ticket3042/3042-illustrative-doctest.patch) by robertwb created at 2008-05-15 01:08:32\n\nThe code looks good, is well documented, and fast. Aside from the errors in _echelon_form_multimodular it seems to work as advertised. \n\nI added a patch illustrating what _reduction_matrix actually does, as this seems central to the ideas behind the algorithms. There needs to be at least a paragraph or two at the top explaining the storage format and ideas behind the algorithm (maybe the example I posted belongs there)--if I hadn't had it explained to me it would have probably taken a while to get the \"big picture\" from the code. \n\nOnce these issues are all solved, I think it's ready.",
     "created_at": "2008-05-15T01:08:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3042",
     "type": "issue_comment",
@@ -315,7 +315,7 @@ archive/issue_comments_020942.json:
 }
 ```
 
-Attachment
+Attachment [3042-illustrative-doctest.patch](tarball://root/attachments/some-uuid/ticket3042/3042-illustrative-doctest.patch) by robertwb created at 2008-05-15 01:08:32
 
 The code looks good, is well documented, and fast. Aside from the errors in _echelon_form_multimodular it seems to work as advertised. 
 
@@ -348,7 +348,7 @@ I'm adding a patch that should address all of the above issues. There were two b
 archive/issue_comments_020944.json:
 ```json
 {
-    "body": "Attachment\n\nWarning: I just realized that I didn't have Robert's patch applied when I made mine, so I could cause some merge troubles with my patch. If there are any actual conflicts, let me know and I'll just make one big new bundle.",
+    "body": "Attachment [trac-3042-extra2.patch](tarball://root/attachments/some-uuid/ticket3042/trac-3042-extra2.patch) by craigcitro created at 2008-06-02 08:10:17\n\nWarning: I just realized that I didn't have Robert's patch applied when I made mine, so I could cause some merge troubles with my patch. If there are any actual conflicts, let me know and I'll just make one big new bundle.",
     "created_at": "2008-06-02T08:10:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3042",
     "type": "issue_comment",
@@ -357,7 +357,7 @@ archive/issue_comments_020944.json:
 }
 ```
 
-Attachment
+Attachment [trac-3042-extra2.patch](tarball://root/attachments/some-uuid/ticket3042/trac-3042-extra2.patch) by craigcitro created at 2008-06-02 08:10:17
 
 Warning: I just realized that I didn't have Robert's patch applied when I made mine, so I could cause some merge troubles with my patch. If there are any actual conflicts, let me know and I'll just make one big new bundle.
 
@@ -694,7 +694,7 @@ If no one else wants to deal with this, I'll look at it next Weds when I get to 
 archive/issue_comments_020952.json:
 ```json
 {
-    "body": "Attachment\n\nMerged \n\n* trac-3042.hg\n* 3042-illustrative-doctest.patch\n* trac-3042-extra2.patch \n* trac-3042-edge_cases.patch\n\nin Sage 3.0.3.alpha2\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac-3042-edge_cases.patch](tarball://root/attachments/some-uuid/ticket3042/trac-3042-edge_cases.patch) by mabshoff created at 2008-06-08 22:26:31\n\nMerged \n\n* trac-3042.hg\n* 3042-illustrative-doctest.patch\n* trac-3042-extra2.patch \n* trac-3042-edge_cases.patch\n\nin Sage 3.0.3.alpha2\n\nCheers,\n\nMichael",
     "created_at": "2008-06-08T22:26:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3042",
     "type": "issue_comment",
@@ -703,7 +703,7 @@ archive/issue_comments_020952.json:
 }
 ```
 
-Attachment
+Attachment [trac-3042-edge_cases.patch](tarball://root/attachments/some-uuid/ticket3042/trac-3042-edge_cases.patch) by mabshoff created at 2008-06-08 22:26:31
 
 Merged 
 

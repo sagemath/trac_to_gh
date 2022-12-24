@@ -172,7 +172,7 @@ sage: 'baba_baca'.lstrip('ab_')
 archive/issue_comments_030507.json:
 ```json
 {
-    "body": "Attachment\n\nI put up a new patch which addresses that issue.",
+    "body": "Attachment [trac_4203.patch](tarball://root/attachments/some-uuid/ticket4203/trac_4203.patch) by mhansen created at 2008-10-23 20:21:05\n\nI put up a new patch which addresses that issue.",
     "created_at": "2008-10-23T20:21:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4203",
     "type": "issue_comment",
@@ -181,7 +181,7 @@ archive/issue_comments_030507.json:
 }
 ```
 
-Attachment
+Attachment [trac_4203.patch](tarball://root/attachments/some-uuid/ticket4203/trac_4203.patch) by mhansen created at 2008-10-23 20:21:05
 
 I put up a new patch which addresses that issue.
 

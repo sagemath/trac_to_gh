@@ -265,7 +265,7 @@ Resolution: fixed
 archive/issue_comments_010618.json:
 ```json
 {
-    "body": "Attachment\n\nMerged in 2.9.2.rc1.",
+    "body": "Attachment [trac-1672.patch](tarball://root/attachments/some-uuid/ticket1672/trac-1672.patch) by mabshoff created at 2008-01-04 18:08:42\n\nMerged in 2.9.2.rc1.",
     "created_at": "2008-01-04T18:08:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1672",
     "type": "issue_comment",
@@ -274,7 +274,7 @@ archive/issue_comments_010618.json:
 }
 ```
 
-Attachment
+Attachment [trac-1672.patch](tarball://root/attachments/some-uuid/ticket1672/trac-1672.patch) by mabshoff created at 2008-01-04 18:08:42
 
 Merged in 2.9.2.rc1.
 
@@ -303,7 +303,7 @@ part 2 of 2
 archive/issue_comments_010620.json:
 ```json
 {
-    "body": "Attachment\n\nI also applied trac-1672.part2.patch in 2.9.2.rc1.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac-1672.part2.patch](tarball://root/attachments/some-uuid/ticket1672/trac-1672.part2.patch) by mabshoff created at 2008-01-04 19:22:50\n\nI also applied trac-1672.part2.patch in 2.9.2.rc1.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-04T19:22:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1672",
     "type": "issue_comment",
@@ -312,7 +312,7 @@ archive/issue_comments_010620.json:
 }
 ```
 
-Attachment
+Attachment [trac-1672.part2.patch](tarball://root/attachments/some-uuid/ticket1672/trac-1672.part2.patch) by mabshoff created at 2008-01-04 19:22:50
 
 I also applied trac-1672.part2.patch in 2.9.2.rc1.
 

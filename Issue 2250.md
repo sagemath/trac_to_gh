@@ -131,7 +131,7 @@ I take that back, I was working in the wrong branch. I do get that error in 2.10
 archive/issue_comments_014909.json:
 ```json
 {
-    "body": "Attachment\n\nThe above patch fixes this issue, returning None rather than raising an error in this corner case where there is no action (now that division by Z -> multiplication by Q).",
+    "body": "Attachment [2250-inverse-action.patch](tarball://root/attachments/some-uuid/ticket2250/2250-inverse-action.patch) by robertwb created at 2008-02-21 21:24:48\n\nThe above patch fixes this issue, returning None rather than raising an error in this corner case where there is no action (now that division by Z -> multiplication by Q).",
     "created_at": "2008-02-21T21:24:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2250",
     "type": "issue_comment",
@@ -140,7 +140,7 @@ archive/issue_comments_014909.json:
 }
 ```
 
-Attachment
+Attachment [2250-inverse-action.patch](tarball://root/attachments/some-uuid/ticket2250/2250-inverse-action.patch) by robertwb created at 2008-02-21 21:24:48
 
 The above patch fixes this issue, returning None rather than raising an error in this corner case where there is no action (now that division by Z -> multiplication by Q).
 

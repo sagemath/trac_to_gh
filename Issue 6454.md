@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6454
 archive/issue_comments_051964.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6454_sbox.patch](tarball://root/attachments/some-uuid/ticket6454/trac_6454_sbox.patch) by ylchapuy created at 2009-07-01 09:31:17",
     "created_at": "2009-07-01T09:31:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6454",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_051964.json:
 }
 ```
 
-Attachment
+Attachment [trac_6454_sbox.patch](tarball://root/attachments/some-uuid/ticket6454/trac_6454_sbox.patch) by ylchapuy created at 2009-07-01 09:31:17
 
 
 
@@ -106,7 +106,7 @@ This is a positive review except for the missing documentation.
 archive/issue_comments_051966.json:
 ```json
 {
-    "body": "Attachment\n\nBoth patches should be applied.\n\nI added an indirect doctest. I give myself a positive review, feel free to correct me if you disagree.",
+    "body": "Attachment [trac_6454_review.patch](tarball://root/attachments/some-uuid/ticket6454/trac_6454_review.patch) by ylchapuy created at 2009-07-01 12:16:56\n\nBoth patches should be applied.\n\nI added an indirect doctest. I give myself a positive review, feel free to correct me if you disagree.",
     "created_at": "2009-07-01T12:16:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6454",
     "type": "issue_comment",
@@ -115,7 +115,7 @@ archive/issue_comments_051966.json:
 }
 ```
 
-Attachment
+Attachment [trac_6454_review.patch](tarball://root/attachments/some-uuid/ticket6454/trac_6454_review.patch) by ylchapuy created at 2009-07-01 12:16:56
 
 Both patches should be applied.
 

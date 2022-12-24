@@ -89,7 +89,7 @@ This is because `IntegerMod_int.ivalue` is cdef'ed public but `IntegerMod_int64.
 archive/issue_comments_025012.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac3539_ivalue_to_int.patch](tarball://root/attachments/some-uuid/ticket3539/trac3539_ivalue_to_int.patch) by wjp created at 2008-07-06 01:28:18",
     "created_at": "2008-07-06T01:28:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3539",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_025012.json:
 }
 ```
 
-Attachment
+Attachment [trac3539_ivalue_to_int.patch](tarball://root/attachments/some-uuid/ticket3539/trac3539_ivalue_to_int.patch) by wjp created at 2008-07-06 01:28:18
 
 
 
@@ -143,7 +143,7 @@ I'm adding a new patch, that is intended as a replacement of the old one. Rob Br
 archive/issue_comments_025015.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-3539-new-patch.patch](tarball://root/attachments/some-uuid/ticket3539/trac-3539-new-patch.patch) by craigcitro created at 2008-07-06 20:51:22",
     "created_at": "2008-07-06T20:51:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3539",
     "type": "issue_comment",
@@ -152,7 +152,7 @@ archive/issue_comments_025015.json:
 }
 ```
 
-Attachment
+Attachment [trac-3539-new-patch.patch](tarball://root/attachments/some-uuid/ticket3539/trac-3539-new-patch.patch) by craigcitro created at 2008-07-06 20:51:22
 
 
 

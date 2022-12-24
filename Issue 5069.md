@@ -67,7 +67,7 @@ Changing status from new to assigned.
 archive/issue_comments_038611.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5069-coerce-poly.patch](tarball://root/attachments/some-uuid/ticket5069/5069-coerce-poly.patch) by robertwb created at 2009-01-23 12:20:06",
     "created_at": "2009-01-23T12:20:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5069",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_038611.json:
 }
 ```
 
-Attachment
+Attachment [5069-coerce-poly.patch](tarball://root/attachments/some-uuid/ticket5069/5069-coerce-poly.patch) by robertwb created at 2009-01-23 12:20:06
 
 
 
@@ -143,7 +143,7 @@ rebased Robert's patch so it applies after changes to polynomial_ring.py in #498
 archive/issue_comments_038615.json:
 ```json
 {
-    "body": "Attachment\n\nMerged 5069-coerce-poly-take2.patch in Sage 3.3.alpha2",
+    "body": "Attachment [5069-coerce-poly-take2.patch](tarball://root/attachments/some-uuid/ticket5069/5069-coerce-poly-take2.patch) by mabshoff created at 2009-01-25 01:46:04\n\nMerged 5069-coerce-poly-take2.patch in Sage 3.3.alpha2",
     "created_at": "2009-01-25T01:46:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5069",
     "type": "issue_comment",
@@ -152,7 +152,7 @@ archive/issue_comments_038615.json:
 }
 ```
 
-Attachment
+Attachment [5069-coerce-poly-take2.patch](tarball://root/attachments/some-uuid/ticket5069/5069-coerce-poly-take2.patch) by mabshoff created at 2009-01-25 01:46:04
 
 Merged 5069-coerce-poly-take2.patch in Sage 3.3.alpha2
 

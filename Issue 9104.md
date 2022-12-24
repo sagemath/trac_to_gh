@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9104
 archive/issue_comments_084599.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9104_freemod_name-fix-nt.patch](tarball://root/attachments/some-uuid/ticket9104/trac_9104_freemod_name-fix-nt.patch) by hivert created at 2010-05-31 13:10:52",
     "created_at": "2010-05-31T13:10:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9104",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_084599.json:
 }
 ```
 
-Attachment
+Attachment [trac_9104_freemod_name-fix-nt.patch](tarball://root/attachments/some-uuid/ticket9104/trac_9104_freemod_name-fix-nt.patch) by hivert created at 2010-05-31 13:10:52
 
 
 

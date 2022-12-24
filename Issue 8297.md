@@ -60,7 +60,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8297
 archive/issue_comments_073500.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8297-sfunction_extra_paranthesis.patch](tarball://root/attachments/some-uuid/ticket8297/trac_8297-sfunction_extra_paranthesis.patch) by burcin created at 2010-04-02 16:10:11",
     "created_at": "2010-04-02T16:10:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8297",
     "type": "issue_comment",
@@ -69,7 +69,7 @@ archive/issue_comments_073500.json:
 }
 ```
 
-Attachment
+Attachment [trac_8297-sfunction_extra_paranthesis.patch](tarball://root/attachments/some-uuid/ticket8297/trac_8297-sfunction_extra_paranthesis.patch) by burcin created at 2010-04-02 16:10:11
 
 
 
@@ -161,7 +161,7 @@ me without this patch, though.
 archive/issue_comments_073505.json:
 ```json
 {
-    "body": "Attachment\n\napply only this patch",
+    "body": "Attachment [trac_8297-sfunction_extra_paranthesis.take2.patch](tarball://root/attachments/some-uuid/ticket8297/trac_8297-sfunction_extra_paranthesis.take2.patch) by burcin created at 2010-04-11 12:38:50\n\napply only this patch",
     "created_at": "2010-04-11T12:38:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8297",
     "type": "issue_comment",
@@ -170,7 +170,7 @@ archive/issue_comments_073505.json:
 }
 ```
 
-Attachment
+Attachment [trac_8297-sfunction_extra_paranthesis.take2.patch](tarball://root/attachments/some-uuid/ticket8297/trac_8297-sfunction_extra_paranthesis.take2.patch) by burcin created at 2010-04-11 12:38:50
 
 apply only this patch
 

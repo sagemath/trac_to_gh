@@ -804,7 +804,7 @@ Unfortunately I don't know how to fix the other ones.
 archive/issue_comments_031473.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4302_speedup1.patch](tarball://root/attachments/some-uuid/ticket4302/4302_speedup1.patch) by zimmerma created at 2008-10-18 16:48:16",
     "created_at": "2008-10-18T16:48:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
@@ -813,7 +813,7 @@ archive/issue_comments_031473.json:
 }
 ```
 
-Attachment
+Attachment [4302_speedup1.patch](tarball://root/attachments/some-uuid/ticket4302/4302_speedup1.patch) by zimmerma created at 2008-10-18 16:48:16
 
 
 
@@ -974,7 +974,7 @@ fixes all known doctest failures
 archive/issue_comments_031479.json:
 ```json
 {
-    "body": "Attachment\n\nthe updated patch fixes all known doctest failures. The failure was caused by the fact that two GF(2) objects existed such that `x.parent() is parent` wasn't true anymore. Apply Paul's performance patch after `polynomial_gf2x.patch`",
+    "body": "Attachment [polynomial_gf2x.patch](tarball://root/attachments/some-uuid/ticket4302/polynomial_gf2x.patch) by malb created at 2008-10-19 15:18:59\n\nthe updated patch fixes all known doctest failures. The failure was caused by the fact that two GF(2) objects existed such that `x.parent() is parent` wasn't true anymore. Apply Paul's performance patch after `polynomial_gf2x.patch`",
     "created_at": "2008-10-19T15:18:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
@@ -983,7 +983,7 @@ archive/issue_comments_031479.json:
 }
 ```
 
-Attachment
+Attachment [polynomial_gf2x.patch](tarball://root/attachments/some-uuid/ticket4302/polynomial_gf2x.patch) by malb created at 2008-10-19 15:18:59
 
 the updated patch fixes all known doctest failures. The failure was caused by the fact that two GF(2) objects existed such that `x.parent() is parent` wasn't true anymore. Apply Paul's performance patch after `polynomial_gf2x.patch`
 

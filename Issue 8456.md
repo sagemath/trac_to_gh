@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8456
 archive/issue_comments_076082.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8456-lazy-import-enhancements.patch](tarball://root/attachments/some-uuid/ticket8456/8456-lazy-import-enhancements.patch) by robertwb created at 2010-03-06 09:37:25",
     "created_at": "2010-03-06T09:37:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_076082.json:
 }
 ```
 
-Attachment
+Attachment [8456-lazy-import-enhancements.patch](tarball://root/attachments/some-uuid/ticket8456/8456-lazy-import-enhancements.patch) by robertwb created at 2010-03-06 09:37:25
 
 
 
@@ -256,7 +256,7 @@ As for backing out, you can do "sage -hg rollback"
 archive/issue_comments_076089.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8456-lazy-import-fixes.patch](tarball://root/attachments/some-uuid/ticket8456/8456-lazy-import-fixes.patch) by robertwb created at 2010-06-22 20:45:27",
     "created_at": "2010-06-22T20:45:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
@@ -265,7 +265,7 @@ archive/issue_comments_076089.json:
 }
 ```
 
-Attachment
+Attachment [8456-lazy-import-fixes.patch](tarball://root/attachments/some-uuid/ticket8456/8456-lazy-import-fixes.patch) by robertwb created at 2010-06-22 20:45:27
 
 
 
@@ -587,7 +587,7 @@ Sorry, I missed the dependency... :/
 archive/issue_comments_076105.json:
 ```json
 {
-    "body": "Attachment\n\napply instead of 8456-lazy-import-cython.patch",
+    "body": "Attachment [8456-lazy-import-cython-rebase-4.6.patch](tarball://root/attachments/some-uuid/ticket8456/8456-lazy-import-cython-rebase-4.6.patch) by robertwb created at 2010-12-02 06:31:03\n\napply instead of 8456-lazy-import-cython.patch",
     "created_at": "2010-12-02T06:31:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
@@ -596,7 +596,7 @@ archive/issue_comments_076105.json:
 }
 ```
 
-Attachment
+Attachment [8456-lazy-import-cython-rebase-4.6.patch](tarball://root/attachments/some-uuid/ticket8456/8456-lazy-import-cython-rebase-4.6.patch) by robertwb created at 2010-12-02 06:31:03
 
 apply instead of 8456-lazy-import-cython.patch
 
@@ -693,7 +693,7 @@ No, you're absolutely right, that (half) doctest is an oversight on my part.
 archive/issue_comments_076110.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8456-lazy-import-enhancements-4.6.patch](tarball://root/attachments/some-uuid/ticket8456/8456-lazy-import-enhancements-4.6.patch) by robertwb created at 2010-12-07 10:21:50",
     "created_at": "2010-12-07T10:21:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
@@ -702,7 +702,7 @@ archive/issue_comments_076110.json:
 }
 ```
 
-Attachment
+Attachment [8456-lazy-import-enhancements-4.6.patch](tarball://root/attachments/some-uuid/ticket8456/8456-lazy-import-enhancements-4.6.patch) by robertwb created at 2010-12-07 10:21:50
 
 
 
@@ -845,7 +845,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_076118.json:
 ```json
 {
-    "body": "Attachment\n\nI've refreshed the documentation patch to escape this asterisk.",
+    "body": "Attachment [8456-lazy-import-documentation.patch](tarball://root/attachments/some-uuid/ticket8456/8456-lazy-import-documentation.patch) by robertwb created at 2011-01-25 07:00:59\n\nI've refreshed the documentation patch to escape this asterisk.",
     "created_at": "2011-01-25T07:00:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
@@ -854,7 +854,7 @@ archive/issue_comments_076118.json:
 }
 ```
 
-Attachment
+Attachment [8456-lazy-import-documentation.patch](tarball://root/attachments/some-uuid/ticket8456/8456-lazy-import-documentation.patch) by robertwb created at 2011-01-25 07:00:59
 
 I've refreshed the documentation patch to escape this asterisk.
 

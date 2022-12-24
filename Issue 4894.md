@@ -122,7 +122,7 @@ I've put a comment abou this in the patch.
 archive/issue_comments_037111.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4894.patch](tarball://root/attachments/some-uuid/ticket4894/trac_4894.patch) by mabshoff created at 2009-01-02 21:57:33",
     "created_at": "2009-01-02T21:57:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4894",
     "type": "issue_comment",
@@ -131,7 +131,7 @@ archive/issue_comments_037111.json:
 }
 ```
 
-Attachment
+Attachment [trac_4894.patch](tarball://root/attachments/some-uuid/ticket4894/trac_4894.patch) by mabshoff created at 2009-01-02 21:57:33
 
 
 

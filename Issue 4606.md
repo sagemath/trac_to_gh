@@ -46,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4606
 archive/issue_comments_034530.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4606-gz-lseries.patch](tarball://root/attachments/some-uuid/ticket4606/4606-gz-lseries.patch) by robertwb created at 2008-11-25 06:44:02",
     "created_at": "2008-11-25T06:44:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4606",
     "type": "issue_comment",
@@ -55,7 +55,7 @@ archive/issue_comments_034530.json:
 }
 ```
 
-Attachment
+Attachment [4606-gz-lseries.patch](tarball://root/attachments/some-uuid/ticket4606/4606-gz-lseries.patch) by robertwb created at 2008-11-25 06:44:02
 
 
 
@@ -82,7 +82,7 @@ Still going to add some doctests right now, but here's the code. Note, however, 
 archive/issue_comments_034532.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4606-gz-doctests.patch](tarball://root/attachments/some-uuid/ticket4606/4606-gz-doctests.patch) by robertwb created at 2008-11-25 08:17:14",
     "created_at": "2008-11-25T08:17:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4606",
     "type": "issue_comment",
@@ -91,7 +91,7 @@ archive/issue_comments_034532.json:
 }
 ```
 
-Attachment
+Attachment [4606-gz-doctests.patch](tarball://root/attachments/some-uuid/ticket4606/4606-gz-doctests.patch) by robertwb created at 2008-11-25 08:17:14
 
 
 
@@ -100,7 +100,7 @@ Attachment
 archive/issue_comments_034533.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-4606-pt3.patch](tarball://root/attachments/some-uuid/ticket4606/trac-4606-pt3.patch) by craigcitro created at 2008-11-28 11:10:18",
     "created_at": "2008-11-28T11:10:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4606",
     "type": "issue_comment",
@@ -109,7 +109,7 @@ archive/issue_comments_034533.json:
 }
 ```
 
-Attachment
+Attachment [trac-4606-pt3.patch](tarball://root/attachments/some-uuid/ticket4606/trac-4606-pt3.patch) by craigcitro created at 2008-11-28 11:10:18
 
 
 
@@ -314,7 +314,7 @@ apply only trac_4606_gross_zagier_lseries_rebased.patch
 archive/issue_comments_034542.json:
 ```json
 {
-    "body": "Attachment\n\nfolded all three patches and rebased on 5.12.beta5",
+    "body": "Attachment [trac_4606_gross_zagier_lseries_rebased.patch](tarball://root/attachments/some-uuid/ticket4606/trac_4606_gross_zagier_lseries_rebased.patch) by chapoton created at 2013-09-20 16:09:19\n\nfolded all three patches and rebased on 5.12.beta5",
     "created_at": "2013-09-20T16:09:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4606",
     "type": "issue_comment",
@@ -323,7 +323,7 @@ archive/issue_comments_034542.json:
 }
 ```
 
-Attachment
+Attachment [trac_4606_gross_zagier_lseries_rebased.patch](tarball://root/attachments/some-uuid/ticket4606/trac_4606_gross_zagier_lseries_rebased.patch) by chapoton created at 2013-09-20 16:09:19
 
 folded all three patches and rebased on 5.12.beta5
 

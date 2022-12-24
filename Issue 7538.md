@@ -46,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7538
 archive/issue_comments_063934.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7538_poset_equal_fix-fh.patch](tarball://root/attachments/some-uuid/ticket7538/trac_7538_poset_equal_fix-fh.patch) by hivert created at 2009-11-26 21:51:21",
     "created_at": "2009-11-26T21:51:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7538",
     "type": "issue_comment",
@@ -55,7 +55,7 @@ archive/issue_comments_063934.json:
 }
 ```
 
-Attachment
+Attachment [trac_7538_poset_equal_fix-fh.patch](tarball://root/attachments/some-uuid/ticket7538/trac_7538_poset_equal_fix-fh.patch) by hivert created at 2009-11-26 21:51:21
 
 
 
@@ -223,7 +223,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_063943.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me, passes all doctests.\n\nOnly the second patch should be applied.",
+    "body": "Attachment [trac_7538_poset_equal_fix-nb.patch](tarball://root/attachments/some-uuid/ticket7538/trac_7538_poset_equal_fix-nb.patch) by novoselt created at 2010-04-15 23:51:25\n\nLooks good to me, passes all doctests.\n\nOnly the second patch should be applied.",
     "created_at": "2010-04-15T23:51:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7538",
     "type": "issue_comment",
@@ -232,7 +232,7 @@ archive/issue_comments_063943.json:
 }
 ```
 
-Attachment
+Attachment [trac_7538_poset_equal_fix-nb.patch](tarball://root/attachments/some-uuid/ticket7538/trac_7538_poset_equal_fix-nb.patch) by novoselt created at 2010-04-15 23:51:25
 
 Looks good to me, passes all doctests.
 

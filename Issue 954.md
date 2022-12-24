@@ -119,7 +119,7 @@ perl script to test gcc version
 archive/issue_comments_005812.json:
 ```json
 {
-    "body": "Attachment\n\nI wrote a perl script to test if gcc version is greater than or equal to 3.4.0. \nIt exits 0 if this is the case and 1 otherwise. \n\nThe flint spkg-install should be easily modified to run this script and test the exit code and\ntake appropriate action. I didn't know what the desired behavior was so I didn't do this yet.",
+    "body": "Attachment [test_gcc_version.pl](tarball://root/attachments/some-uuid/ticket954/test_gcc_version.pl) by jkantor created at 2007-11-04 01:21:07\n\nI wrote a perl script to test if gcc version is greater than or equal to 3.4.0. \nIt exits 0 if this is the case and 1 otherwise. \n\nThe flint spkg-install should be easily modified to run this script and test the exit code and\ntake appropriate action. I didn't know what the desired behavior was so I didn't do this yet.",
     "created_at": "2007-11-04T01:21:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/954",
     "type": "issue_comment",
@@ -128,7 +128,7 @@ archive/issue_comments_005812.json:
 }
 ```
 
-Attachment
+Attachment [test_gcc_version.pl](tarball://root/attachments/some-uuid/ticket954/test_gcc_version.pl) by jkantor created at 2007-11-04 01:21:07
 
 I wrote a perl script to test if gcc version is greater than or equal to 3.4.0. 
 It exits 0 if this is the case and 1 otherwise. 

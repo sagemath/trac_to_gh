@@ -121,7 +121,7 @@ Mercurial patch
 archive/issue_comments_074880.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8374-numerical-noise.patch](tarball://root/attachments/some-uuid/ticket8374/8374-numerical-noise.patch) by drkirkby created at 2010-02-26 15:40:18",
     "created_at": "2010-02-26T15:40:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8374",
     "type": "issue_comment",
@@ -130,7 +130,7 @@ archive/issue_comments_074880.json:
 }
 ```
 
-Attachment
+Attachment [8374-numerical-noise.patch](tarball://root/attachments/some-uuid/ticket8374/8374-numerical-noise.patch) by drkirkby created at 2010-02-26 15:40:18
 
 
 
@@ -175,7 +175,7 @@ I've left a [comment:ticket:8375:2 review comment] at #8375.
 archive/issue_comments_074883.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8374-numerical-noise.2.patch](tarball://root/attachments/some-uuid/ticket8374/8374-numerical-noise.2.patch) by drkirkby created at 2010-03-03 12:01:42",
     "created_at": "2010-03-03T12:01:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8374",
     "type": "issue_comment",
@@ -184,7 +184,7 @@ archive/issue_comments_074883.json:
 }
 ```
 
-Attachment
+Attachment [8374-numerical-noise.2.patch](tarball://root/attachments/some-uuid/ticket8374/8374-numerical-noise.2.patch) by drkirkby created at 2010-03-03 12:01:42
 
 
 

@@ -104,7 +104,7 @@ Changing status from new to needs_review.
 archive/issue_comments_076133.json:
 ```json
 {
-    "body": "Attachment\n\nI corrected the main generator. There are several specialized (e.g. tree generator) but I don't think the same problem arises in any of them. Do you agree?",
+    "body": "Attachment [trac_8458_independent_graphs.patch](tarball://root/attachments/some-uuid/ticket8458/trac_8458_independent_graphs.patch) by brunellus created at 2012-01-03 23:10:53\n\nI corrected the main generator. There are several specialized (e.g. tree generator) but I don't think the same problem arises in any of them. Do you agree?",
     "created_at": "2012-01-03T23:10:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8458",
     "type": "issue_comment",
@@ -113,7 +113,7 @@ archive/issue_comments_076133.json:
 }
 ```
 
-Attachment
+Attachment [trac_8458_independent_graphs.patch](tarball://root/attachments/some-uuid/ticket8458/trac_8458_independent_graphs.patch) by brunellus created at 2012-01-03 23:10:53
 
 I corrected the main generator. There are several specialized (e.g. tree generator) but I don't think the same problem arises in any of them. Do you agree?
 
@@ -250,7 +250,7 @@ Nathann
 archive/issue_comments_076139.json:
 ```json
 {
-    "body": "Attachment\n\nIf you think that \"copy\" is better, I don't mind. I thought that a consumer of the library doesn't care about what is the way we create the graphs (that we copy them), so the relevant property of the output is rather independence. The proposed description is also good.",
+    "body": "Attachment [trac_8458_independent_graphs.2.patch](tarball://root/attachments/some-uuid/ticket8458/trac_8458_independent_graphs.2.patch) by brunellus created at 2012-01-31 12:34:03\n\nIf you think that \"copy\" is better, I don't mind. I thought that a consumer of the library doesn't care about what is the way we create the graphs (that we copy them), so the relevant property of the output is rather independence. The proposed description is also good.",
     "created_at": "2012-01-31T12:34:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8458",
     "type": "issue_comment",
@@ -259,7 +259,7 @@ archive/issue_comments_076139.json:
 }
 ```
 
-Attachment
+Attachment [trac_8458_independent_graphs.2.patch](tarball://root/attachments/some-uuid/ticket8458/trac_8458_independent_graphs.2.patch) by brunellus created at 2012-01-31 12:34:03
 
 If you think that "copy" is better, I don't mind. I thought that a consumer of the library doesn't care about what is the way we create the graphs (that we copy them), so the relevant property of the output is rather independence. The proposed description is also good.
 
@@ -384,7 +384,7 @@ Nathann
 archive/issue_comments_076146.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8458.patch](tarball://root/attachments/some-uuid/ticket8458/trac_8458.patch) by ncohen created at 2012-01-31 17:44:47",
     "created_at": "2012-01-31T17:44:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8458",
     "type": "issue_comment",
@@ -393,7 +393,7 @@ archive/issue_comments_076146.json:
 }
 ```
 
-Attachment
+Attachment [trac_8458.patch](tarball://root/attachments/some-uuid/ticket8458/trac_8458.patch) by ncohen created at 2012-01-31 17:44:47
 
 
 

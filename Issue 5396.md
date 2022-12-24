@@ -77,7 +77,7 @@ Michael
 archive/issue_comments_041554.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Lcalc_in_sage.sws](tarball://root/attachments/some-uuid/ticket5396/Lcalc_in_sage.sws) by rishi created at 2009-08-12 15:42:54",
     "created_at": "2009-08-12T15:42:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_041554.json:
 }
 ```
 
-Attachment
+Attachment [Lcalc_in_sage.sws](tarball://root/attachments/some-uuid/ticket5396/Lcalc_in_sage.sws) by rishi created at 2009-08-12 15:42:54
 
 
 
@@ -183,7 +183,7 @@ Because of the above I changed the tag from "needs review" to "needs work", sinc
 archive/issue_comments_041559.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [L-1.23.spkg](tarball://root/attachments/some-uuid/ticket5396/L-1.23.spkg) by rishi created at 2009-08-23 17:51:25",
     "created_at": "2009-08-23T17:51:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
@@ -192,7 +192,7 @@ archive/issue_comments_041559.json:
 }
 ```
 
-Attachment
+Attachment [L-1.23.spkg](tarball://root/attachments/some-uuid/ticket5396/L-1.23.spkg) by rishi created at 2009-08-23 17:51:25
 
 
 
@@ -669,7 +669,7 @@ basic lcalc wrapper
 archive/issue_comments_041566.json:
 ```json
 {
-    "body": "Attachment\n\nThe new patch adds lot of documentation, and clean few typos. There are three functions where True or False is more natural as parameter, and I am going to change it. That is pretty much the only change left. Any program written using this patch will continue to work when I make those changes, so this patch can still be included. I will probably post the patch by tomorrow. Today I received an email that someone wants to use this program so I am uploading this patch.",
+    "body": "Attachment [lcalc_wrapper.patch](tarball://root/attachments/some-uuid/ticket5396/lcalc_wrapper.patch) by rishi created at 2009-10-01 00:54:35\n\nThe new patch adds lot of documentation, and clean few typos. There are three functions where True or False is more natural as parameter, and I am going to change it. That is pretty much the only change left. Any program written using this patch will continue to work when I make those changes, so this patch can still be included. I will probably post the patch by tomorrow. Today I received an email that someone wants to use this program so I am uploading this patch.",
     "created_at": "2009-10-01T00:54:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
@@ -678,7 +678,7 @@ archive/issue_comments_041566.json:
 }
 ```
 
-Attachment
+Attachment [lcalc_wrapper.patch](tarball://root/attachments/some-uuid/ticket5396/lcalc_wrapper.patch) by rishi created at 2009-10-01 00:54:35
 
 The new patch adds lot of documentation, and clean few typos. There are three functions where True or False is more natural as parameter, and I am going to change it. That is pretty much the only change left. Any program written using this patch will continue to work when I make those changes, so this patch can still be included. I will probably post the patch by tomorrow. Today I received an email that someone wants to use this program so I am uploading this patch.
 
@@ -732,7 +732,7 @@ I assume `L-1.23.spkg` is version 1.23 of lcalc. Then the package must use the n
 archive/issue_comments_041569.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [minor_revision.patch](tarball://root/attachments/some-uuid/ticket5396/minor_revision.patch) by rishi created at 2009-10-01 15:09:37",
     "created_at": "2009-10-01T15:09:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
@@ -741,7 +741,7 @@ archive/issue_comments_041569.json:
 }
 ```
 
-Attachment
+Attachment [minor_revision.patch](tarball://root/attachments/some-uuid/ticket5396/minor_revision.patch) by rishi created at 2009-10-01 15:09:37
 
 
 
@@ -750,7 +750,7 @@ Attachment
 archive/issue_comments_041570.json:
 ```json
 {
-    "body": "Attachment\n\nstandalone patch, based on 4.3.alpha0",
+    "body": "Attachment [make_init_nonempty.patch](tarball://root/attachments/some-uuid/ticket5396/make_init_nonempty.patch) by ylchapuy created at 2009-11-26 01:36:15\n\nstandalone patch, based on 4.3.alpha0",
     "created_at": "2009-11-26T01:36:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
@@ -759,7 +759,7 @@ archive/issue_comments_041570.json:
 }
 ```
 
-Attachment
+Attachment [make_init_nonempty.patch](tarball://root/attachments/some-uuid/ticket5396/make_init_nonempty.patch) by ylchapuy created at 2009-11-26 01:36:15
 
 standalone patch, based on 4.3.alpha0
 
@@ -770,7 +770,7 @@ standalone patch, based on 4.3.alpha0
 archive/issue_comments_041571.json:
 ```json
 {
-    "body": "Attachment\n\nI hope you won't mind, but I refactored a little bit your code to address reviewers comments.\n\nIn the provided patch:\n\n* the different L-functions derive from a base class\n* all doctests are protected against numerical noise\n* I removed the file for_testing.py and incorporated the (renamed) functions in the main file\n  ( they could be moved to better places though )\n* added a __repr__ method (which is minimalistic)\n\nAfter spkg install, only my patch needs to be applied.\n\nPlease let me know your opinion about all these.",
+    "body": "Attachment [trac_5396-refactor.patch](tarball://root/attachments/some-uuid/ticket5396/trac_5396-refactor.patch) by ylchapuy created at 2009-11-26 01:45:10\n\nI hope you won't mind, but I refactored a little bit your code to address reviewers comments.\n\nIn the provided patch:\n\n* the different L-functions derive from a base class\n* all doctests are protected against numerical noise\n* I removed the file for_testing.py and incorporated the (renamed) functions in the main file\n  ( they could be moved to better places though )\n* added a __repr__ method (which is minimalistic)\n\nAfter spkg install, only my patch needs to be applied.\n\nPlease let me know your opinion about all these.",
     "created_at": "2009-11-26T01:45:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
@@ -779,7 +779,7 @@ archive/issue_comments_041571.json:
 }
 ```
 
-Attachment
+Attachment [trac_5396-refactor.patch](tarball://root/attachments/some-uuid/ticket5396/trac_5396-refactor.patch) by ylchapuy created at 2009-11-26 01:45:10
 
 I hope you won't mind, but I refactored a little bit your code to address reviewers comments.
 
@@ -1127,7 +1127,7 @@ The attached patch correct this, reals with the numerical noise (should we?) as 
 archive/issue_comments_041583.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5396-review.patch](tarball://root/attachments/some-uuid/ticket5396/trac_5396-review.patch) by ylchapuy created at 2009-12-23 21:12:53",
     "created_at": "2009-12-23T21:12:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
@@ -1136,7 +1136,7 @@ archive/issue_comments_041583.json:
 }
 ```
 
-Attachment
+Attachment [trac_5396-review.patch](tarball://root/attachments/some-uuid/ticket5396/trac_5396-review.patch) by ylchapuy created at 2009-12-23 21:12:53
 
 
 
@@ -1477,7 +1477,7 @@ This suggests to me that the build script in the spkg needs attention.
 archive/issue_comments_041597.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [lcalc-1.23.spkg](tarball://root/attachments/some-uuid/ticket5396/lcalc-1.23.spkg) by rishi created at 2010-01-13 15:34:23",
     "created_at": "2010-01-13T15:34:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
@@ -1486,7 +1486,7 @@ archive/issue_comments_041597.json:
 }
 ```
 
-Attachment
+Attachment [lcalc-1.23.spkg](tarball://root/attachments/some-uuid/ticket5396/lcalc-1.23.spkg) by rishi created at 2010-01-13 15:34:23
 
 
 
@@ -1702,7 +1702,7 @@ Replying to [comment:44 bober]:
 archive/issue_comments_041605.json:
 ```json
 {
-    "body": "Attachment\n\nFor lcalc wrapper. This should work with the old code based on command line version of lcalc",
+    "body": "Attachment [lcalc-1.23.p1.spkg](tarball://root/attachments/some-uuid/ticket5396/lcalc-1.23.p1.spkg) by rishi created at 2010-01-14 03:43:41\n\nFor lcalc wrapper. This should work with the old code based on command line version of lcalc",
     "created_at": "2010-01-14T03:43:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
@@ -1711,7 +1711,7 @@ archive/issue_comments_041605.json:
 }
 ```
 
-Attachment
+Attachment [lcalc-1.23.p1.spkg](tarball://root/attachments/some-uuid/ticket5396/lcalc-1.23.p1.spkg) by rishi created at 2010-01-14 03:43:41
 
 For lcalc wrapper. This should work with the old code based on command line version of lcalc
 
@@ -1796,7 +1796,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_041610.json:
 ```json
 {
-    "body": "Attachment\n\nWilliam said the other day he does not want to see patches used. One reason cited was the fact that not all systems have a patch command, though I pointed out 'patch' was a requirement for POSIX. \n\nAs such, I think you should rename this to a makefile.patch, and go back to your original solution of a patched makefile in the patches directory.",
+    "body": "Attachment [lcalc-1.23.p2.spkg](tarball://root/attachments/some-uuid/ticket5396/lcalc-1.23.p2.spkg) by drkirkby created at 2010-01-31 05:59:14\n\nWilliam said the other day he does not want to see patches used. One reason cited was the fact that not all systems have a patch command, though I pointed out 'patch' was a requirement for POSIX. \n\nAs such, I think you should rename this to a makefile.patch, and go back to your original solution of a patched makefile in the patches directory.",
     "created_at": "2010-01-31T05:59:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
@@ -1805,7 +1805,7 @@ archive/issue_comments_041610.json:
 }
 ```
 
-Attachment
+Attachment [lcalc-1.23.p2.spkg](tarball://root/attachments/some-uuid/ticket5396/lcalc-1.23.p2.spkg) by drkirkby created at 2010-01-31 05:59:14
 
 William said the other day he does not want to see patches used. One reason cited was the fact that not all systems have a patch command, though I pointed out 'patch' was a requirement for POSIX. 
 
@@ -1854,7 +1854,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_041613.json:
 ```json
 {
-    "body": "Attachment\n\nI have removed the patch file, and gone back to the version 1.23.p1. This works on boxen. All the tests passed.",
+    "body": "Attachment [lcalc-1.23.p3.spkg](tarball://root/attachments/some-uuid/ticket5396/lcalc-1.23.p3.spkg) by rishi created at 2010-02-02 14:28:40\n\nI have removed the patch file, and gone back to the version 1.23.p1. This works on boxen. All the tests passed.",
     "created_at": "2010-02-02T14:28:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
@@ -1863,7 +1863,7 @@ archive/issue_comments_041613.json:
 }
 ```
 
-Attachment
+Attachment [lcalc-1.23.p3.spkg](tarball://root/attachments/some-uuid/ticket5396/lcalc-1.23.p3.spkg) by rishi created at 2010-02-02 14:28:40
 
 I have removed the patch file, and gone back to the version 1.23.p1. This works on boxen. All the tests passed.
 
@@ -2472,7 +2472,7 @@ I have not seen -dn or -P options  in anything.
 archive/issue_comments_041635.json:
 ```json
 {
-    "body": "Attachment\n\nChanged makefile to compile on solaris",
+    "body": "Attachment [lcalc-1.23.p4.spkg](tarball://root/attachments/some-uuid/ticket5396/lcalc-1.23.p4.spkg) by rishi created at 2010-02-23 13:20:02\n\nChanged makefile to compile on solaris",
     "created_at": "2010-02-23T13:20:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
@@ -2481,7 +2481,7 @@ archive/issue_comments_041635.json:
 }
 ```
 
-Attachment
+Attachment [lcalc-1.23.p4.spkg](tarball://root/attachments/some-uuid/ticket5396/lcalc-1.23.p4.spkg) by rishi created at 2010-02-23 13:20:02
 
 Changed makefile to compile on solaris
 
@@ -2814,7 +2814,7 @@ archive/issue_comments_041648.json:
 archive/issue_comments_041649.json:
 ```json
 {
-    "body": "Attachment\n\nYou just have to apply the one character patch trac_5396-rebase_sage4.3.3.patch on top of others.",
+    "body": "Attachment [trac_5396-rebase_sage4.3.3.patch](tarball://root/attachments/some-uuid/ticket5396/trac_5396-rebase_sage4.3.3.patch) by ylchapuy created at 2010-03-09 20:59:17\n\nYou just have to apply the one character patch trac_5396-rebase_sage4.3.3.patch on top of others.",
     "created_at": "2010-03-09T20:59:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
@@ -2823,7 +2823,7 @@ archive/issue_comments_041649.json:
 }
 ```
 
-Attachment
+Attachment [trac_5396-rebase_sage4.3.3.patch](tarball://root/attachments/some-uuid/ticket5396/trac_5396-rebase_sage4.3.3.patch) by ylchapuy created at 2010-03-09 20:59:17
 
 You just have to apply the one character patch trac_5396-rebase_sage4.3.3.patch on top of others.
 
@@ -2852,7 +2852,7 @@ combined patch rebased to 4.3.3
 archive/issue_comments_041651.json:
 ```json
 {
-    "body": "Attachment\n\nOops! I did not see Yann had already posted a patch.",
+    "body": "Attachment [trac_5396_combined_rebasedto_4.3.3.patch](tarball://root/attachments/some-uuid/ticket5396/trac_5396_combined_rebasedto_4.3.3.patch) by rishi created at 2010-03-09 21:26:22\n\nOops! I did not see Yann had already posted a patch.",
     "created_at": "2010-03-09T21:26:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
@@ -2861,7 +2861,7 @@ archive/issue_comments_041651.json:
 }
 ```
 
-Attachment
+Attachment [trac_5396_combined_rebasedto_4.3.3.patch](tarball://root/attachments/some-uuid/ticket5396/trac_5396_combined_rebasedto_4.3.3.patch) by rishi created at 2010-03-09 21:26:22
 
 Oops! I did not see Yann had already posted a patch.
 
@@ -2946,7 +2946,7 @@ Only the last patch  trac_5396_combined_rebasedto_4.3.3.patch is needed. It comb
 archive/issue_comments_041656.json:
 ```json
 {
-    "body": "Attachment\n\nThe location of header files have changed in the lcalc spkg. This incorporates neccessary changes to compile.",
+    "body": "Attachment [trac_5396_combined_rebased_4.3.4.patch](tarball://root/attachments/some-uuid/ticket5396/trac_5396_combined_rebased_4.3.4.patch) by rishi created at 2010-03-25 12:00:56\n\nThe location of header files have changed in the lcalc spkg. This incorporates neccessary changes to compile.",
     "created_at": "2010-03-25T12:00:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
@@ -2955,7 +2955,7 @@ archive/issue_comments_041656.json:
 }
 ```
 
-Attachment
+Attachment [trac_5396_combined_rebased_4.3.4.patch](tarball://root/attachments/some-uuid/ticket5396/trac_5396_combined_rebased_4.3.4.patch) by rishi created at 2010-03-25 12:00:56
 
 The location of header files have changed in the lcalc spkg. This incorporates neccessary changes to compile.
 
@@ -3224,7 +3224,7 @@ Till this patch, lcalc was not require to build sage library. The code William w
 archive/issue_comments_041669.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated `spkg/standard/deps` merged into 4.5.2.alpha1.",
+    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket5396/deps) by mpatel created at 2010-07-27 07:44:10\n\nUpdated `spkg/standard/deps` merged into 4.5.2.alpha1.",
     "created_at": "2010-07-27T07:44:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
@@ -3233,7 +3233,7 @@ archive/issue_comments_041669.json:
 }
 ```
 
-Attachment
+Attachment [deps](tarball://root/attachments/some-uuid/ticket5396/deps) by mpatel created at 2010-07-27 07:44:10
 
 Updated `spkg/standard/deps` merged into 4.5.2.alpha1.
 
@@ -3262,7 +3262,7 @@ Diff of `spkg/standard/deps` from 4.5.2.alpha0 to 4.5.2.alpha1, minus #9456's  "
 archive/issue_comments_041671.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached the updated `deps` file included in Sage 4.5.2.alpha1.  Please see [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/9455213e89f94692/db2c5f0aa386eebb#db2c5f0aa386eebb) for an explanation.",
+    "body": "Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket5396/deps.diff) by mpatel created at 2010-07-27 07:49:37\n\nI've attached the updated `deps` file included in Sage 4.5.2.alpha1.  Please see [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/9455213e89f94692/db2c5f0aa386eebb#db2c5f0aa386eebb) for an explanation.",
     "created_at": "2010-07-27T07:49:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
@@ -3271,7 +3271,7 @@ archive/issue_comments_041671.json:
 }
 ```
 
-Attachment
+Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket5396/deps.diff) by mpatel created at 2010-07-27 07:49:37
 
 I've attached the updated `deps` file included in Sage 4.5.2.alpha1.  Please see [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/9455213e89f94692/db2c5f0aa386eebb#db2c5f0aa386eebb) for an explanation.
 

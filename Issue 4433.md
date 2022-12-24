@@ -57,7 +57,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4433
 archive/issue_comments_032580.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [factorial.patch](tarball://root/attachments/some-uuid/ticket4433/factorial.patch) by whuss created at 2008-11-03 20:07:42",
     "created_at": "2008-11-03T20:07:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4433",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_032580.json:
 }
 ```
 
-Attachment
+Attachment [factorial.patch](tarball://root/attachments/some-uuid/ticket4433/factorial.patch) by whuss created at 2008-11-03 20:07:42
 
 
 
@@ -129,7 +129,7 @@ I don't understand the purpose of converting everything to use the new factorial
 archive/issue_comments_032584.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [factorial2.patch](tarball://root/attachments/some-uuid/ticket4433/factorial2.patch) by whuss created at 2008-11-05 16:31:22",
     "created_at": "2008-11-05T16:31:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4433",
     "type": "issue_comment",
@@ -138,7 +138,7 @@ archive/issue_comments_032584.json:
 }
 ```
 
-Attachment
+Attachment [factorial2.patch](tarball://root/attachments/some-uuid/ticket4433/factorial2.patch) by whuss created at 2008-11-05 16:31:22
 
 
 
@@ -264,7 +264,7 @@ Michael
 archive/issue_comments_032590.json:
 ```json
 {
-    "body": "Attachment\n\nsupersedes the previous two patches",
+    "body": "Attachment [factorial3.patch](tarball://root/attachments/some-uuid/ticket4433/factorial3.patch) by whuss created at 2008-11-06 12:47:37\n\nsupersedes the previous two patches",
     "created_at": "2008-11-06T12:47:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4433",
     "type": "issue_comment",
@@ -273,7 +273,7 @@ archive/issue_comments_032590.json:
 }
 ```
 
-Attachment
+Attachment [factorial3.patch](tarball://root/attachments/some-uuid/ticket4433/factorial3.patch) by whuss created at 2008-11-06 12:47:37
 
 supersedes the previous two patches
 

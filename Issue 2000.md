@@ -111,7 +111,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_012938.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:1 malb]:\n> > The bug is that PolynomialRing(CC,1) should create a univariate ring,\n> > whereas MPolynomialRing(CC,1) should be how one creates a multivariate\n> > poly ring in 1 variable.\n> \n> I agree.\n\nSince MPolynomialRing is deprecated now, the reported behavior is indeed the correct behavior.\n \n> > Alternatively, the bug is that factoring a multivariate polynomial in 1 variable\n> > uses Singular instead of other better univariate code that we have. \n\nThis is fixed in the attached patch.",
+    "body": "Attachment [2000.patch](tarball://root/attachments/some-uuid/ticket2000/2000.patch) by malb created at 2008-08-18 13:31:14\n\nReplying to [comment:1 malb]:\n> > The bug is that PolynomialRing(CC,1) should create a univariate ring,\n> > whereas MPolynomialRing(CC,1) should be how one creates a multivariate\n> > poly ring in 1 variable.\n> \n> I agree.\n\nSince MPolynomialRing is deprecated now, the reported behavior is indeed the correct behavior.\n \n> > Alternatively, the bug is that factoring a multivariate polynomial in 1 variable\n> > uses Singular instead of other better univariate code that we have. \n\nThis is fixed in the attached patch.",
     "created_at": "2008-08-18T13:31:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2000",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_012938.json:
 }
 ```
 
-Attachment
+Attachment [2000.patch](tarball://root/attachments/some-uuid/ticket2000/2000.patch) by malb created at 2008-08-18 13:31:14
 
 Replying to [comment:1 malb]:
 > > The bug is that PolynomialRing(CC,1) should create a univariate ring,

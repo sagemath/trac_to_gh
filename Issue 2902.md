@@ -51,7 +51,7 @@ This isn't an "easy" problem, but it looks [this](http://www.intridea.com/2007/1
 archive/issue_comments_020000.json:
 ```json
 {
-    "body": "Attachment\n\nSets `onpaste` handler to resize cells.",
+    "body": "Attachment [trac_2902-paste-resize.patch](tarball://root/attachments/some-uuid/ticket2902/trac_2902-paste-resize.patch) by timdumol created at 2009-11-19 19:05:26\n\nSets `onpaste` handler to resize cells.",
     "created_at": "2009-11-19T19:05:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2902",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_020000.json:
 }
 ```
 
-Attachment
+Attachment [trac_2902-paste-resize.patch](tarball://root/attachments/some-uuid/ticket2902/trac_2902-paste-resize.patch) by timdumol created at 2009-11-19 19:05:26
 
 Sets `onpaste` handler to resize cells.
 

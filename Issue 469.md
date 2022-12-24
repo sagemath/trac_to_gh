@@ -255,7 +255,7 @@ fix doctests in pbori.pyx
 archive/issue_comments_002341.json:
 ```json
 {
-    "body": "Attachment\n\nMerged in 2.9.alpha6. - Finally. Doctests pass.",
+    "body": "Attachment [fix_pbori_doctests.hg](tarball://root/attachments/some-uuid/ticket469/fix_pbori_doctests.hg) by mabshoff created at 2007-12-12 18:37:38\n\nMerged in 2.9.alpha6. - Finally. Doctests pass.",
     "created_at": "2007-12-12T18:37:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/469",
     "type": "issue_comment",
@@ -264,7 +264,7 @@ archive/issue_comments_002341.json:
 }
 ```
 
-Attachment
+Attachment [fix_pbori_doctests.hg](tarball://root/attachments/some-uuid/ticket469/fix_pbori_doctests.hg) by mabshoff created at 2007-12-12 18:37:38
 
 Merged in 2.9.alpha6. - Finally. Doctests pass.
 

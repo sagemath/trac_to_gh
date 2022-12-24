@@ -147,7 +147,7 @@ Changing status from new to needs_review.
 archive/issue_comments_077205.json:
 ```json
 {
-    "body": "Attachment\n\nattachment:trac_8540-rational_power.patch fixes the problem, please review.",
+    "body": "Attachment [trac_8540-rational_power.patch](tarball://root/attachments/some-uuid/ticket8540/trac_8540-rational_power.patch) by burcin created at 2010-03-16 12:14:11\n\nattachment:trac_8540-rational_power.patch fixes the problem, please review.",
     "created_at": "2010-03-16T12:14:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8540",
     "type": "issue_comment",
@@ -156,7 +156,7 @@ archive/issue_comments_077205.json:
 }
 ```
 
-Attachment
+Attachment [trac_8540-rational_power.patch](tarball://root/attachments/some-uuid/ticket8540/trac_8540-rational_power.patch) by burcin created at 2010-03-16 12:14:11
 
 attachment:trac_8540-rational_power.patch fixes the problem, please review.
 

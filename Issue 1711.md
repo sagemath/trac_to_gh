@@ -111,7 +111,7 @@ For now, I cannot figure out why this specific iterator fails, and the others do
 archive/issue_comments_010847.json:
 ```json
 {
-    "body": "Attachment\n\nworkaround the crash by using BooleanPolynomial iterators",
+    "body": "Attachment [1711_BooleSet_iterator_workaround.patch](tarball://root/attachments/some-uuid/ticket1711/1711_BooleSet_iterator_workaround.patch) by burcin created at 2008-03-07 10:10:26\n\nworkaround the crash by using BooleanPolynomial iterators",
     "created_at": "2008-03-07T10:10:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1711",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_010847.json:
 }
 ```
 
-Attachment
+Attachment [1711_BooleSet_iterator_workaround.patch](tarball://root/attachments/some-uuid/ticket1711/1711_BooleSet_iterator_workaround.patch) by burcin created at 2008-03-07 10:10:26
 
 workaround the crash by using BooleanPolynomial iterators
 

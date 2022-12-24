@@ -199,7 +199,7 @@ Nathann
 archive/issue_comments_093551.json:
 ```json
 {
-    "body": "Attachment\n\nok, you are probably right.",
+    "body": "Attachment [9647-example-MILP.patch](tarball://root/attachments/some-uuid/ticket9647/9647-example-MILP.patch) by schilly created at 2010-07-31 14:54:25\n\nok, you are probably right.",
     "created_at": "2010-07-31T14:54:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9647",
     "type": "issue_comment",
@@ -208,7 +208,7 @@ archive/issue_comments_093551.json:
 }
 ```
 
-Attachment
+Attachment [9647-example-MILP.patch](tarball://root/attachments/some-uuid/ticket9647/9647-example-MILP.patch) by schilly created at 2010-07-31 14:54:25
 
 ok, you are probably right.
 

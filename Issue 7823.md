@@ -47,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7823
 archive/issue_comments_067720.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [7823.libgcrypt.patch](tarball://root/attachments/some-uuid/ticket7823/7823.libgcrypt.patch) by pjeremy created at 2010-01-03 01:54:01",
     "created_at": "2010-01-03T01:54:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7823",
     "type": "issue_comment",
@@ -56,7 +56,7 @@ archive/issue_comments_067720.json:
 }
 ```
 
-Attachment
+Attachment [7823.libgcrypt.patch](tarball://root/attachments/some-uuid/ticket7823/7823.libgcrypt.patch) by pjeremy created at 2010-01-03 01:54:01
 
 
 

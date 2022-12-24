@@ -75,7 +75,7 @@ This might be related to #4932.  I'll put this on my list for the bug day coming
 archive/issue_comments_068016.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7852-solve-linear-systems-CDF.patch](tarball://root/attachments/some-uuid/ticket7852/trac_7852-solve-linear-systems-CDF.patch) by rbeezer created at 2011-02-24 22:33:43",
     "created_at": "2011-02-24T22:33:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7852",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_068016.json:
 }
 ```
 
-Attachment
+Attachment [trac_7852-solve-linear-systems-CDF.patch](tarball://root/attachments/some-uuid/ticket7852/trac_7852-solve-linear-systems-CDF.patch) by rbeezer created at 2011-02-24 22:33:43
 
 
 
@@ -368,7 +368,7 @@ Resolution: fixed
 archive/issue_comments_068031.json:
 ```json
 {
-    "body": "Attachment\n\nReviewer patch. Apply on top of main patch, which causes a signed zero on Itanium 2.",
+    "body": "Attachment [trac_7852-fix_noise_errors_in_preparser_examples.reviewer.patch](tarball://root/attachments/some-uuid/ticket7852/trac_7852-fix_noise_errors_in_preparser_examples.reviewer.patch) by leif created at 2011-09-26 01:22:48\n\nReviewer patch. Apply on top of main patch, which causes a signed zero on Itanium 2.",
     "created_at": "2011-09-26T01:22:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7852",
     "type": "issue_comment",
@@ -377,7 +377,7 @@ archive/issue_comments_068031.json:
 }
 ```
 
-Attachment
+Attachment [trac_7852-fix_noise_errors_in_preparser_examples.reviewer.patch](tarball://root/attachments/some-uuid/ticket7852/trac_7852-fix_noise_errors_in_preparser_examples.reviewer.patch) by leif created at 2011-09-26 01:22:48
 
 Reviewer patch. Apply on top of main patch, which causes a signed zero on Itanium 2.
 
@@ -388,7 +388,7 @@ Reviewer patch. Apply on top of main patch, which causes a signed zero on Itaniu
 archive/issue_comments_068032.json:
 ```json
 {
-    "body": "Attachment\n\nReviewer patch. Apply on top of main patch, which causes doctests to fail on a couple of systems due to noisy zero terms.",
+    "body": "Attachment [trac_7852-fix_noise_errors_in_polys.reviewer.patch](tarball://root/attachments/some-uuid/ticket7852/trac_7852-fix_noise_errors_in_polys.reviewer.patch) by leif created at 2011-09-26 01:24:49\n\nReviewer patch. Apply on top of main patch, which causes doctests to fail on a couple of systems due to noisy zero terms.",
     "created_at": "2011-09-26T01:24:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7852",
     "type": "issue_comment",
@@ -397,7 +397,7 @@ archive/issue_comments_068032.json:
 }
 ```
 
-Attachment
+Attachment [trac_7852-fix_noise_errors_in_polys.reviewer.patch](tarball://root/attachments/some-uuid/ticket7852/trac_7852-fix_noise_errors_in_polys.reviewer.patch) by leif created at 2011-09-26 01:24:49
 
 Reviewer patch. Apply on top of main patch, which causes doctests to fail on a couple of systems due to noisy zero terms.
 
@@ -448,7 +448,7 @@ Reviewer patch. Apply on top of main patch, which causes another doctest to fail
 archive/issue_comments_068035.json:
 ```json
 {
-    "body": "Attachment\n\nThird reviewer patch (fixing a doctest error in `matrix_double_dense.pyx`) is up.",
+    "body": "Attachment [trac_7852-fix_noisy_zero_error_in_matrix_double_dense.reviewer.patch](tarball://root/attachments/some-uuid/ticket7852/trac_7852-fix_noisy_zero_error_in_matrix_double_dense.reviewer.patch) by leif created at 2011-09-26 02:46:34\n\nThird reviewer patch (fixing a doctest error in `matrix_double_dense.pyx`) is up.",
     "created_at": "2011-09-26T02:46:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7852",
     "type": "issue_comment",
@@ -457,7 +457,7 @@ archive/issue_comments_068035.json:
 }
 ```
 
-Attachment
+Attachment [trac_7852-fix_noisy_zero_error_in_matrix_double_dense.reviewer.patch](tarball://root/attachments/some-uuid/ticket7852/trac_7852-fix_noisy_zero_error_in_matrix_double_dense.reviewer.patch) by leif created at 2011-09-26 02:46:34
 
 Third reviewer patch (fixing a doctest error in `matrix_double_dense.pyx`) is up.
 
@@ -510,7 +510,7 @@ Reviewer patch. Slightly adjust threshold for noisy zero terms in polynomials, n
 archive/issue_comments_068038.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached yet another patch slightly increasing one epsilon, since one doctest still failed on MacOS X 10.6 (due to almost zero terms in a polynomial).",
+    "body": "Attachment [trac_7852-adjust_noisy_zero_term_threshold_for_polys.reviewer.patch](tarball://root/attachments/some-uuid/ticket7852/trac_7852-adjust_noisy_zero_term_threshold_for_polys.reviewer.patch) by leif created at 2011-09-27 21:52:53\n\nI've attached yet another patch slightly increasing one epsilon, since one doctest still failed on MacOS X 10.6 (due to almost zero terms in a polynomial).",
     "created_at": "2011-09-27T21:52:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7852",
     "type": "issue_comment",
@@ -519,7 +519,7 @@ archive/issue_comments_068038.json:
 }
 ```
 
-Attachment
+Attachment [trac_7852-adjust_noisy_zero_term_threshold_for_polys.reviewer.patch](tarball://root/attachments/some-uuid/ticket7852/trac_7852-adjust_noisy_zero_term_threshold_for_polys.reviewer.patch) by leif created at 2011-09-27 21:52:53
 
 I've attached yet another patch slightly increasing one epsilon, since one doctest still failed on MacOS X 10.6 (due to almost zero terms in a polynomial).
 

@@ -231,7 +231,7 @@ but that only measures which functoins have any kind of docstring, not what the 
 archive/issue_comments_067917.json:
 ```json
 {
-    "body": "Attachment\n\nbased on 4.3.1",
+    "body": "Attachment [trac7841-ZZ_pEX_poly.patch](tarball://root/attachments/some-uuid/ticket7841/trac7841-ZZ_pEX_poly.patch) by ylchapuy created at 2010-01-27 21:54:54\n\nbased on 4.3.1",
     "created_at": "2010-01-27T21:54:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7841",
     "type": "issue_comment",
@@ -240,7 +240,7 @@ archive/issue_comments_067917.json:
 }
 ```
 
-Attachment
+Attachment [trac7841-ZZ_pEX_poly.patch](tarball://root/attachments/some-uuid/ticket7841/trac7841-ZZ_pEX_poly.patch) by ylchapuy created at 2010-01-27 21:54:54
 
 based on 4.3.1
 
@@ -272,7 +272,7 @@ The doc is still minimal though.
 archive/issue_comments_067919.json:
 ```json
 {
-    "body": "Attachment\n\n( see also #8109 )",
+    "body": "Attachment [trac7841-fast_eval.patch](tarball://root/attachments/some-uuid/ticket7841/trac7841-fast_eval.patch) by ylchapuy created at 2010-02-01 20:11:42\n\n( see also #8109 )",
     "created_at": "2010-02-01T20:11:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7841",
     "type": "issue_comment",
@@ -281,7 +281,7 @@ archive/issue_comments_067919.json:
 }
 ```
 
-Attachment
+Attachment [trac7841-fast_eval.patch](tarball://root/attachments/some-uuid/ticket7841/trac7841-fast_eval.patch) by ylchapuy created at 2010-02-01 20:11:42
 
 ( see also #8109 )
 
@@ -365,7 +365,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_067923.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac7841-review.patch](tarball://root/attachments/some-uuid/ticket7841/trac7841-review.patch) by ylchapuy created at 2010-02-09 17:32:29",
     "created_at": "2010-02-09T17:32:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7841",
     "type": "issue_comment",
@@ -374,7 +374,7 @@ archive/issue_comments_067923.json:
 }
 ```
 
-Attachment
+Attachment [trac7841-review.patch](tarball://root/attachments/some-uuid/ticket7841/trac7841-review.patch) by ylchapuy created at 2010-02-09 17:32:29
 
 
 

@@ -73,7 +73,7 @@ based on Sage 4.1.rc0
 archive/issue_comments_052287.json:
 ```json
 {
-    "body": "Attachment\n\nI'm not totally convinced by this. \n\n- The function `primitive_roots_prime` shouldn't be exported to the global namespace. At present *everything* in sage/rings/arith is exported, which (to me) suggests moving the innards of this function to methods of the IntegerModRing class.\n\n- There is already a method `IntegerRing_class.multiplicative_group_is_cyclic()` which you can use to find out if a primitive root exists -- I fixed a bug in it not long back. Asking for a primitive root and then catching the exception if one isn't found is a bit ugly, besides being much slower.\n\n- For a prime modulus p, you take a primitive root g, then compute g<sup>k</sup> for each k in 1...phi(p). It would be more efficient to have a variable that is initialised to 1 and then multiplied by g (mod p) each time, avoiding the separate power_mod call. \n\n- The algorithm in the composite case can be *massively* improved using two simple observations: (1) there are no primitive roots mod n unless n is < 8, an odd prime power, or twice an odd prime power; and (2) if n is an odd prime power then g is a primitive root mod p<sup>k</sup> if and only if it's a primitive root mod p (and g is a primitive root mod 2 * p<sup>k</sup> iff g is a primitive root mod p and g is odd).\n\n(At a rough guess your current algorithm is running in time about N^{3/2} times a power of log; this observation will speed it up to N * power of log.)\n\nDavid",
+    "body": "Attachment [trac_6467.patch](tarball://root/attachments/some-uuid/ticket6467/trac_6467.patch) by davidloeffler created at 2009-07-14 10:42:33\n\nI'm not totally convinced by this. \n\n- The function `primitive_roots_prime` shouldn't be exported to the global namespace. At present *everything* in sage/rings/arith is exported, which (to me) suggests moving the innards of this function to methods of the IntegerModRing class.\n\n- There is already a method `IntegerRing_class.multiplicative_group_is_cyclic()` which you can use to find out if a primitive root exists -- I fixed a bug in it not long back. Asking for a primitive root and then catching the exception if one isn't found is a bit ugly, besides being much slower.\n\n- For a prime modulus p, you take a primitive root g, then compute g<sup>k</sup> for each k in 1...phi(p). It would be more efficient to have a variable that is initialised to 1 and then multiplied by g (mod p) each time, avoiding the separate power_mod call. \n\n- The algorithm in the composite case can be *massively* improved using two simple observations: (1) there are no primitive roots mod n unless n is < 8, an odd prime power, or twice an odd prime power; and (2) if n is an odd prime power then g is a primitive root mod p<sup>k</sup> if and only if it's a primitive root mod p (and g is a primitive root mod 2 * p<sup>k</sup> iff g is a primitive root mod p and g is odd).\n\n(At a rough guess your current algorithm is running in time about N^{3/2} times a power of log; this observation will speed it up to N * power of log.)\n\nDavid",
     "created_at": "2009-07-14T10:42:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6467",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_052287.json:
 }
 ```
 
-Attachment
+Attachment [trac_6467.patch](tarball://root/attachments/some-uuid/ticket6467/trac_6467.patch) by davidloeffler created at 2009-07-14 10:42:33
 
 I'm not totally convinced by this. 
 

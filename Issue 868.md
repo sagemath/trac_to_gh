@@ -51,7 +51,7 @@ Resolution: fixed
 archive/issue_comments_005360.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [networkx-0.35.1-upgrade.patch](tarball://root/attachments/some-uuid/ticket868/networkx-0.35.1-upgrade.patch) by rlm created at 2007-10-13 05:01:18",
     "created_at": "2007-10-13T05:01:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/868",
     "type": "issue_comment",
@@ -60,4 +60,4 @@ archive/issue_comments_005360.json:
 }
 ```
 
-Attachment
+Attachment [networkx-0.35.1-upgrade.patch](tarball://root/attachments/some-uuid/ticket868/networkx-0.35.1-upgrade.patch) by rlm created at 2007-10-13 05:01:18

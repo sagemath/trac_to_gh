@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2844
 archive/issue_comments_019519.json:
 ```json
 {
-    "body": "Attachment\n\nadds many polyhedral functions not requiring polymake",
+    "body": "Attachment [polyhedra.patch](tarball://root/attachments/some-uuid/ticket2844/polyhedra.patch) by mhampton created at 2008-04-07 14:46:11\n\nadds many polyhedral functions not requiring polymake",
     "created_at": "2008-04-07T14:46:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2844",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_019519.json:
 }
 ```
 
-Attachment
+Attachment [polyhedra.patch](tarball://root/attachments/some-uuid/ticket2844/polyhedra.patch) by mhampton created at 2008-04-07 14:46:11
 
 adds many polyhedral functions not requiring polymake
 
@@ -73,7 +73,7 @@ Nice work!  Applies to 3.0.alpha2 and passes tests for me.
 archive/issue_comments_019521.json:
 ```json
 {
-    "body": "Attachment\n\nI added 2844.patch which applies to the current 3.0.alpha3.  Apply it instead.",
+    "body": "Attachment [2844.patch](tarball://root/attachments/some-uuid/ticket2844/2844.patch) by mhansen created at 2008-04-07 22:49:10\n\nI added 2844.patch which applies to the current 3.0.alpha3.  Apply it instead.",
     "created_at": "2008-04-07T22:49:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2844",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_019521.json:
 }
 ```
 
-Attachment
+Attachment [2844.patch](tarball://root/attachments/some-uuid/ticket2844/2844.patch) by mhansen created at 2008-04-07 22:49:10
 
 I added 2844.patch which applies to the current 3.0.alpha3.  Apply it instead.
 

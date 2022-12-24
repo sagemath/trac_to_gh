@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9682
 archive/issue_comments_094123.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [fix_perfectmatching_vf.patch](tarball://root/attachments/some-uuid/ticket9682/fix_perfectmatching_vf.patch) by vferay created at 2010-08-04 05:15:52",
     "created_at": "2010-08-04T05:15:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9682",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_094123.json:
 }
 ```
 
-Attachment
+Attachment [fix_perfectmatching_vf.patch](tarball://root/attachments/some-uuid/ticket9682/fix_perfectmatching_vf.patch) by vferay created at 2010-08-04 05:15:52
 
 
 
@@ -75,7 +75,7 @@ Changing status from new to needs_review.
 archive/issue_comments_094125.json:
 ```json
 {
-    "body": "Attachment\n\nPatch good to go !",
+    "body": "Attachment [trac_9682_fix_perfectmatching_error_message_vf.patch](tarball://root/attachments/some-uuid/ticket9682/trac_9682_fix_perfectmatching_error_message_vf.patch) by hivert created at 2010-08-04 05:23:31\n\nPatch good to go !",
     "created_at": "2010-08-04T05:23:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9682",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_094125.json:
 }
 ```
 
-Attachment
+Attachment [trac_9682_fix_perfectmatching_error_message_vf.patch](tarball://root/attachments/some-uuid/ticket9682/trac_9682_fix_perfectmatching_error_message_vf.patch) by hivert created at 2010-08-04 05:23:31
 
 Patch good to go !
 

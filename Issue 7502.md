@@ -45,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7502
 archive/issue_comments_063420.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [7502-lazy-import.patch](tarball://root/attachments/some-uuid/ticket7502/7502-lazy-import.patch) by robertwb created at 2009-11-20 09:21:44",
     "created_at": "2009-11-20T09:21:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7502",
     "type": "issue_comment",
@@ -54,7 +54,7 @@ archive/issue_comments_063420.json:
 }
 ```
 
-Attachment
+Attachment [7502-lazy-import.patch](tarball://root/attachments/some-uuid/ticket7502/7502-lazy-import.patch) by robertwb created at 2009-11-20 09:21:44
 
 
 
@@ -135,7 +135,7 @@ Changing status from new to needs_review.
 archive/issue_comments_063425.json:
 ```json
 {
-    "body": "Attachment\n\nAlso map tab completion.  Add to reference manual. Rebased vs. 4.3.2.alpha0. Replaces previous.",
+    "body": "Attachment [7502-lazy-import.2.patch](tarball://root/attachments/some-uuid/ticket7502/7502-lazy-import.2.patch) by mpatel created at 2010-01-30 03:34:11\n\nAlso map tab completion.  Add to reference manual. Rebased vs. 4.3.2.alpha0. Replaces previous.",
     "created_at": "2010-01-30T03:34:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7502",
     "type": "issue_comment",
@@ -144,7 +144,7 @@ archive/issue_comments_063425.json:
 }
 ```
 
-Attachment
+Attachment [7502-lazy-import.2.patch](tarball://root/attachments/some-uuid/ticket7502/7502-lazy-import.2.patch) by mpatel created at 2010-01-30 03:34:11
 
 Also map tab completion.  Add to reference manual. Rebased vs. 4.3.2.alpha0. Replaces previous.
 

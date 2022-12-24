@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6110
 archive/issue_comments_048813.json:
 ```json
 {
-    "body": "Attachment\n\nReviewer patch, with demo of metaclass",
+    "body": "Attachment [nested-pickles.patch](tarball://root/attachments/some-uuid/ticket6110/nested-pickles.patch) by nthiery created at 2009-05-23 00:09:10\n\nReviewer patch, with demo of metaclass",
     "created_at": "2009-05-23T00:09:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6110",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_048813.json:
 }
 ```
 
-Attachment
+Attachment [nested-pickles.patch](tarball://root/attachments/some-uuid/ticket6110/nested-pickles.patch) by nthiery created at 2009-05-23 00:09:10
 
 Reviewer patch, with demo of metaclass
 
@@ -53,7 +53,7 @@ Reviewer patch, with demo of metaclass
 archive/issue_comments_048814.json:
 ```json
 {
-    "body": "Attachment\n\nI just uploaded a super patch (for sage 3.4.2) which:\n- Demonstrates the use a metaclass call nested_pickle automatically on a class, *and all derived subclasse*. Potential application: put this on Category, and all categories would be handled properly. Same thing on Parent? Hmm.\n- Fix nested_pickle to handle old-style classes",
+    "body": "Attachment [nested-pickles-reviewer.patch](tarball://root/attachments/some-uuid/ticket6110/nested-pickles-reviewer.patch) by nthiery created at 2009-05-23 00:15:38\n\nI just uploaded a super patch (for sage 3.4.2) which:\n- Demonstrates the use a metaclass call nested_pickle automatically on a class, *and all derived subclasse*. Potential application: put this on Category, and all categories would be handled properly. Same thing on Parent? Hmm.\n- Fix nested_pickle to handle old-style classes",
     "created_at": "2009-05-23T00:15:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6110",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_048814.json:
 }
 ```
 
-Attachment
+Attachment [nested-pickles-reviewer.patch](tarball://root/attachments/some-uuid/ticket6110/nested-pickles-reviewer.patch) by nthiery created at 2009-05-23 00:15:38
 
 I just uploaded a super patch (for sage 3.4.2) which:
 - Demonstrates the use a metaclass call nested_pickle automatically on a class, *and all derived subclasse*. Potential application: put this on Category, and all categories would be handled properly. Same thing on Parent? Hmm.

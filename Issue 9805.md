@@ -217,7 +217,7 @@ Could you please upload the most recent constellation patch from the sage-combin
 archive/issue_comments_096346.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:7 chapoton]:\n> Could you please upload the most recent constellation patch from the sage-combinat queue ? It seems that the version there is not the same, and my review patch does not apply ..\n\nDone.",
+    "body": "Attachment [trac_9806-constellations-vd.patch](tarball://root/attachments/some-uuid/ticket9806/trac_9806-constellations-vd.patch) by vdelecroix created at 2012-07-23 20:48:36\n\nReplying to [comment:7 chapoton]:\n> Could you please upload the most recent constellation patch from the sage-combinat queue ? It seems that the version there is not the same, and my review patch does not apply ..\n\nDone.",
     "created_at": "2012-07-23T20:48:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
@@ -226,7 +226,7 @@ archive/issue_comments_096346.json:
 }
 ```
 
-Attachment
+Attachment [trac_9806-constellations-vd.patch](tarball://root/attachments/some-uuid/ticket9806/trac_9806-constellations-vd.patch) by vdelecroix created at 2012-07-23 20:48:36
 
 Replying to [comment:7 chapoton]:
 > Could you please upload the most recent constellation patch from the sage-combinat queue ? It seems that the version there is not the same, and my review patch does not apply ..
@@ -261,7 +261,7 @@ Apply:
 archive/issue_comments_096348.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9806-constellations-doc-patch-fc.2.patch](tarball://root/attachments/some-uuid/ticket9806/trac_9806-constellations-doc-patch-fc.2.patch) by chapoton created at 2012-09-22 12:29:49",
     "created_at": "2012-09-22T12:29:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
@@ -270,7 +270,7 @@ archive/issue_comments_096348.json:
 }
 ```
 
-Attachment
+Attachment [trac_9806-constellations-doc-patch-fc.2.patch](tarball://root/attachments/some-uuid/ticket9806/trac_9806-constellations-doc-patch-fc.2.patch) by chapoton created at 2012-09-22 12:29:49
 
 
 
@@ -376,7 +376,7 @@ coverage 80%
 archive/issue_comments_096354.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9806-constellations-doc-patch-fc.patch](tarball://root/attachments/some-uuid/ticket9806/trac_9806-constellations-doc-patch-fc.patch) by chapoton created at 2013-05-24 18:59:21",
     "created_at": "2013-05-24T18:59:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
@@ -385,7 +385,7 @@ archive/issue_comments_096354.json:
 }
 ```
 
-Attachment
+Attachment [trac_9806-constellations-doc-patch-fc.patch](tarball://root/attachments/some-uuid/ticket9806/trac_9806-constellations-doc-patch-fc.patch) by chapoton created at 2013-05-24 18:59:21
 
 
 
@@ -625,7 +625,7 @@ I have taken care of the assert statements, but there is still a gap in the docu
 archive/issue_comments_096367.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9806_review_fc.patch](tarball://root/attachments/some-uuid/ticket9806/trac_9806_review_fc.patch) by chapoton created at 2013-07-25 14:37:10",
     "created_at": "2013-07-25T14:37:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
@@ -634,7 +634,7 @@ archive/issue_comments_096367.json:
 }
 ```
 
-Attachment
+Attachment [trac_9806_review_fc.patch](tarball://root/attachments/some-uuid/ticket9806/trac_9806_review_fc.patch) by chapoton created at 2013-07-25 14:37:10
 
 
 
@@ -685,7 +685,7 @@ I am starting to use intinsively the patch. And the most interesting part is not
 archive/issue_comments_096370.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9806-constellations-all_in_one-vdfc.patch](tarball://root/attachments/some-uuid/ticket9806/trac_9806-constellations-all_in_one-vdfc.patch) by vdelecroix created at 2013-09-22 14:11:01",
     "created_at": "2013-09-22T14:11:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
@@ -694,7 +694,7 @@ archive/issue_comments_096370.json:
 }
 ```
 
-Attachment
+Attachment [trac_9806-constellations-all_in_one-vdfc.patch](tarball://root/attachments/some-uuid/ticket9806/trac_9806-constellations-all_in_one-vdfc.patch) by vdelecroix created at 2013-09-22 14:11:01
 
 
 
@@ -703,7 +703,7 @@ Attachment
 archive/issue_comments_096371.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9806_doc_canonical_labels-vd.patch](tarball://root/attachments/some-uuid/ticket9806/trac_9806_doc_canonical_labels-vd.patch) by vdelecroix created at 2013-09-22 14:29:54",
     "created_at": "2013-09-22T14:29:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
@@ -712,7 +712,7 @@ archive/issue_comments_096371.json:
 }
 ```
 
-Attachment
+Attachment [trac_9806_doc_canonical_labels-vd.patch](tarball://root/attachments/some-uuid/ticket9806/trac_9806_doc_canonical_labels-vd.patch) by vdelecroix created at 2013-09-22 14:29:54
 
 
 

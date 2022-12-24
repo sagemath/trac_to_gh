@@ -119,7 +119,7 @@ The attached patch does this and adds doctests (including `f == loads(dumps(f))`
 archive/issue_comments_045742.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5820.patch](tarball://root/attachments/some-uuid/ticket5820/trac_5820.patch) by AlexGhitza created at 2009-04-25 09:46:33",
     "created_at": "2009-04-25T09:46:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5820",
     "type": "issue_comment",
@@ -128,7 +128,7 @@ archive/issue_comments_045742.json:
 }
 ```
 
-Attachment
+Attachment [trac_5820.patch](tarball://root/attachments/some-uuid/ticket5820/trac_5820.patch) by AlexGhitza created at 2009-04-25 09:46:33
 
 
 

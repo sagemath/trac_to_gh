@@ -114,7 +114,7 @@ fixes typos in sage-coding-cookbook.tex
 archive/issue_comments_025638.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:3 wdj]:\n> I put a standalone latex file there (http://sage.math.washington.edu/home/wdj/cookbook/coding-theory/sage-coding-cookbook.tex) for just that chapter (not in manual style) but also the full latex setup for a new subdirectory of SAGE_ROOT/devel/doc. \n\n\nI've attached a patch to your file [sage-coding-cookbook.tex](http://sage.math.washington.edu/home/wdj/cookbook/coding-theory/sage-coding-cookbook.tex). It mainly fixes typos. I'm still waiting for sage-3.1.4 to finish building on my machine, so at the moment I can't review the sample code in your file.",
+    "body": "Attachment [3624-doc.patch](tarball://root/attachments/some-uuid/ticket3624/3624-doc.patch) by mvngu created at 2008-10-29 11:28:07\n\nReplying to [comment:3 wdj]:\n> I put a standalone latex file there (http://sage.math.washington.edu/home/wdj/cookbook/coding-theory/sage-coding-cookbook.tex) for just that chapter (not in manual style) but also the full latex setup for a new subdirectory of SAGE_ROOT/devel/doc. \n\n\nI've attached a patch to your file [sage-coding-cookbook.tex](http://sage.math.washington.edu/home/wdj/cookbook/coding-theory/sage-coding-cookbook.tex). It mainly fixes typos. I'm still waiting for sage-3.1.4 to finish building on my machine, so at the moment I can't review the sample code in your file.",
     "created_at": "2008-10-29T11:28:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3624",
     "type": "issue_comment",
@@ -123,7 +123,7 @@ archive/issue_comments_025638.json:
 }
 ```
 
-Attachment
+Attachment [3624-doc.patch](tarball://root/attachments/some-uuid/ticket3624/3624-doc.patch) by mvngu created at 2008-10-29 11:28:07
 
 Replying to [comment:3 wdj]:
 > I put a standalone latex file there (http://sage.math.washington.edu/home/wdj/cookbook/coding-theory/sage-coding-cookbook.tex) for just that chapter (not in manual style) but also the full latex setup for a new subdirectory of SAGE_ROOT/devel/doc. 

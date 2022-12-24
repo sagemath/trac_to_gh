@@ -101,7 +101,7 @@ sage: x^2 in I
 archive/issue_comments_007538.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1214.patch](tarball://root/attachments/some-uuid/ticket1214/1214.patch) by mhansen created at 2007-11-20 05:51:05",
     "created_at": "2007-11-20T05:51:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1214",
     "type": "issue_comment",
@@ -110,7 +110,7 @@ archive/issue_comments_007538.json:
 }
 ```
 
-Attachment
+Attachment [1214.patch](tarball://root/attachments/some-uuid/ticket1214/1214.patch) by mhansen created at 2007-11-20 05:51:05
 
 
 

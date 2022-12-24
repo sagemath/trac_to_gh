@@ -84,7 +84,7 @@ Changing status from new to needs_review.
 archive/issue_comments_073578.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch should fix these issues (+doctests), so that invariant differential always behaves as dx/2y:\n\n\n```\nsage: R.<x> = QQ['x']\nsage: H = HyperellipticCurve(x^3+1)\nsage: K = Qp(5,8)\nsage: HK = H.change_ring(K)\nsage: w = HK.invariant_differential()\nsage: P = HK(0,1)\nsage: Q = HK.lift_x(5)\nsage: x,y = HK.monsky_washnitzer_gens()\nsage: (2*y*w).coleman_integral(P,Q)\n5 + O(5^9)\nsage: x,y,z = HK.local_analytic_interpolation(P,Q)\nsage: I2 = (x.derivative()/(2*y)).integral()\nsage: I2(1)-I2(0)\n3*5 + 2*5^2 + 2*5^3 + 5^4 + 4*5^6 + 5^7 + O(5^9)\nsage: HK.coleman_integral(w,P,Q)\n3*5 + 2*5^2 + 2*5^3 + 5^4 + 4*5^6 + 5^7 + O(5^9)\n```\n",
+    "body": "Attachment [13542.patch](tarball://root/attachments/some-uuid/ticket8304/13542.patch) by jen created at 2010-02-19 20:38:50\n\nThe attached patch should fix these issues (+doctests), so that invariant differential always behaves as dx/2y:\n\n\n```\nsage: R.<x> = QQ['x']\nsage: H = HyperellipticCurve(x^3+1)\nsage: K = Qp(5,8)\nsage: HK = H.change_ring(K)\nsage: w = HK.invariant_differential()\nsage: P = HK(0,1)\nsage: Q = HK.lift_x(5)\nsage: x,y = HK.monsky_washnitzer_gens()\nsage: (2*y*w).coleman_integral(P,Q)\n5 + O(5^9)\nsage: x,y,z = HK.local_analytic_interpolation(P,Q)\nsage: I2 = (x.derivative()/(2*y)).integral()\nsage: I2(1)-I2(0)\n3*5 + 2*5^2 + 2*5^3 + 5^4 + 4*5^6 + 5^7 + O(5^9)\nsage: HK.coleman_integral(w,P,Q)\n3*5 + 2*5^2 + 2*5^3 + 5^4 + 4*5^6 + 5^7 + O(5^9)\n```\n",
     "created_at": "2010-02-19T20:38:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8304",
     "type": "issue_comment",
@@ -93,7 +93,7 @@ archive/issue_comments_073578.json:
 }
 ```
 
-Attachment
+Attachment [13542.patch](tarball://root/attachments/some-uuid/ticket8304/13542.patch) by jen created at 2010-02-19 20:38:50
 
 The attached patch should fix these issues (+doctests), so that invariant differential always behaves as dx/2y:
 
@@ -125,7 +125,7 @@ sage: HK.coleman_integral(w,P,Q)
 archive/issue_comments_073579.json:
 ```json
 {
-    "body": "Attachment\n\nadded doctests for tiny_integrals",
+    "body": "Attachment [13543.patch](tarball://root/attachments/some-uuid/ticket8304/13543.patch) by jen created at 2010-02-20 05:29:38\n\nadded doctests for tiny_integrals",
     "created_at": "2010-02-20T05:29:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8304",
     "type": "issue_comment",
@@ -134,7 +134,7 @@ archive/issue_comments_073579.json:
 }
 ```
 
-Attachment
+Attachment [13543.patch](tarball://root/attachments/some-uuid/ticket8304/13543.patch) by jen created at 2010-02-20 05:29:38
 
 added doctests for tiny_integrals
 

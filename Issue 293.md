@@ -162,7 +162,7 @@ patch to remove all uses of FAST_SEQ_UNSAFE
 archive/issue_comments_001389.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [no-FAST_SEQ_UNSAFE.patch](tarball://root/attachments/some-uuid/ticket293/no-FAST_SEQ_UNSAFE.patch) by robertwb created at 2007-08-19 07:54:24",
     "created_at": "2007-08-19T07:54:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/293",
     "type": "issue_comment",
@@ -171,7 +171,7 @@ archive/issue_comments_001389.json:
 }
 ```
 
-Attachment
+Attachment [no-FAST_SEQ_UNSAFE.patch](tarball://root/attachments/some-uuid/ticket293/no-FAST_SEQ_UNSAFE.patch) by robertwb created at 2007-08-19 07:54:24
 
 
 

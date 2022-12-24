@@ -62,7 +62,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4352
 archive/issue_comments_031959.json:
 ```json
 {
-    "body": "Attachment\n\nbased on 3.1.4 but should be fine against 3.2-alpha0",
+    "body": "Attachment [4352_1.patch](tarball://root/attachments/some-uuid/ticket4352/4352_1.patch) by mhampton created at 2008-10-24 02:16:44\n\nbased on 3.1.4 but should be fine against 3.2-alpha0",
     "created_at": "2008-10-24T02:16:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4352",
     "type": "issue_comment",
@@ -71,7 +71,7 @@ archive/issue_comments_031959.json:
 }
 ```
 
-Attachment
+Attachment [4352_1.patch](tarball://root/attachments/some-uuid/ticket4352/4352_1.patch) by mhampton created at 2008-10-24 02:16:44
 
 based on 3.1.4 but should be fine against 3.2-alpha0
 
@@ -124,7 +124,7 @@ sage: sage_eval('2/3')
 archive/issue_comments_031961.json:
 ```json
 {
-    "body": "Attachment\n\nsupercedes previous patch, addresses review",
+    "body": "Attachment [4352_2.patch](tarball://root/attachments/some-uuid/ticket4352/4352_2.patch) by mhampton created at 2008-11-29 14:00:40\n\nsupercedes previous patch, addresses review",
     "created_at": "2008-11-29T14:00:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4352",
     "type": "issue_comment",
@@ -133,7 +133,7 @@ archive/issue_comments_031961.json:
 }
 ```
 
-Attachment
+Attachment [4352_2.patch](tarball://root/attachments/some-uuid/ticket4352/4352_2.patch) by mhampton created at 2008-11-29 14:00:40
 
 supercedes previous patch, addresses review
 
@@ -175,7 +175,7 @@ Michael
 archive/issue_comments_031963.json:
 ```json
 {
-    "body": "Attachment\n\nrebased against 3.2.1.rc0",
+    "body": "Attachment [4352_3.patch](tarball://root/attachments/some-uuid/ticket4352/4352_3.patch) by mhampton created at 2008-11-30 14:05:13\n\nrebased against 3.2.1.rc0",
     "created_at": "2008-11-30T14:05:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4352",
     "type": "issue_comment",
@@ -184,7 +184,7 @@ archive/issue_comments_031963.json:
 }
 ```
 
-Attachment
+Attachment [4352_3.patch](tarball://root/attachments/some-uuid/ticket4352/4352_3.patch) by mhampton created at 2008-11-30 14:05:13
 
 rebased against 3.2.1.rc0
 

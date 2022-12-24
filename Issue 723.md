@@ -142,7 +142,7 @@ The attached patch exposes NTL's floating point LLL implementations which are si
 archive/issue_comments_004213.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ntls-fp-lll.patch](tarball://root/attachments/some-uuid/ticket723/ntls-fp-lll.patch) by malb created at 2007-09-21 23:33:59",
     "created_at": "2007-09-21T23:33:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/723",
     "type": "issue_comment",
@@ -151,7 +151,7 @@ archive/issue_comments_004213.json:
 }
 ```
 
-Attachment
+Attachment [ntls-fp-lll.patch](tarball://root/attachments/some-uuid/ticket723/ntls-fp-lll.patch) by malb created at 2007-09-21 23:33:59
 
 
 

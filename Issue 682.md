@@ -62,7 +62,7 @@ Michael
 archive/issue_comments_003538.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-682_1.patch](tarball://root/attachments/some-uuid/ticket682/sage-682_1.patch) by TimothyClemans created at 2008-09-11 05:56:08",
     "created_at": "2008-09-11T05:56:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/682",
     "type": "issue_comment",
@@ -71,7 +71,7 @@ archive/issue_comments_003538.json:
 }
 ```
 
-Attachment
+Attachment [sage-682_1.patch](tarball://root/attachments/some-uuid/ticket682/sage-682_1.patch) by TimothyClemans created at 2008-09-11 05:56:08
 
 
 
@@ -98,7 +98,7 @@ I guess this is what Peter Doyle wanted but I'm not sure its exactly right.  "Op
 archive/issue_comments_003540.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-682_2.patch](tarball://root/attachments/some-uuid/ticket682/sage-682_2.patch) by TimothyClemans created at 2008-11-11 20:34:04",
     "created_at": "2008-11-11T20:34:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/682",
     "type": "issue_comment",
@@ -107,7 +107,7 @@ archive/issue_comments_003540.json:
 }
 ```
 
-Attachment
+Attachment [sage-682_2.patch](tarball://root/attachments/some-uuid/ticket682/sage-682_2.patch) by TimothyClemans created at 2008-11-11 20:34:04
 
 
 

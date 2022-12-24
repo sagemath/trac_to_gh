@@ -110,7 +110,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3907
 archive/issue_comments_027948.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3907.patch](tarball://root/attachments/some-uuid/ticket3907/trac_3907.patch) by mhansen created at 2008-08-29 00:02:54",
     "created_at": "2008-08-29T00:02:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3907",
     "type": "issue_comment",
@@ -119,7 +119,7 @@ archive/issue_comments_027948.json:
 }
 ```
 
-Attachment
+Attachment [trac_3907.patch](tarball://root/attachments/some-uuid/ticket3907/trac_3907.patch) by mhansen created at 2008-08-29 00:02:54
 
 
 
@@ -225,7 +225,7 @@ Mostly looks good, but what about `-inf`?
 archive/issue_comments_027954.json:
 ```json
 {
-    "body": "Attachment\n\nI've updated the patch to handle the -inf case.",
+    "body": "Attachment [trac_3907.2.patch](tarball://root/attachments/some-uuid/ticket3907/trac_3907.2.patch) by mhansen created at 2008-09-05 19:37:53\n\nI've updated the patch to handle the -inf case.",
     "created_at": "2008-09-05T19:37:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3907",
     "type": "issue_comment",
@@ -234,7 +234,7 @@ archive/issue_comments_027954.json:
 }
 ```
 
-Attachment
+Attachment [trac_3907.2.patch](tarball://root/attachments/some-uuid/ticket3907/trac_3907.2.patch) by mhansen created at 2008-09-05 19:37:53
 
 I've updated the patch to handle the -inf case.
 

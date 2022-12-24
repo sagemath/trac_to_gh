@@ -1322,7 +1322,7 @@ Final version (currently...) of Infinite Polynomial Rings and Symmetric Gröbner
 archive/issue_comments_043365.json:
 ```json
 {
-    "body": "Attachment\n\nDear Martin and Michael,\n\nReplying to [comment:36 malb]:\n> Replying to [comment:35 SimonKing]:\n> > First, some general questions:\n> > \n> >  1. Should previous versions of a patch be preserved, or is it better to overwrite the old patch with the new version? \n> \n> I don't think we established a good practice here yet. But it is certainly easier for the release manager if there is only one patch or a clear description what to apply when.\n\nOK, so I produced a stand-alone patch `SymmetricIdealsFinal.patch` relative to sage-3.4.1.rc3 that I consider final (see below).\n\n\n> > One question to the referee: As mentioned in a comment above, I try to be clever, i.e., in `SymmetricIdeal.symmetrisation()` I only apply elementary transpositions rather than the full symmetric group. I believe it works, but it is a difference to what Aschenbrenner and Hillar suggested. Shall I point it out in the documentation\n> \n> Yes, that should be pointed out clearly.\n\nOK, I did so in the documentation of `SymmetricIdeal.symmetrisation()` and `SymmetricIdeal.groebner_basis()`: I give no evidence *why* I believe that my algorithm is correct, but I state in what respect it differs from the work of Aschenbrenner and Hillar.\n\nMoreover, I made it optional to chose the *original* algorithm of Aschenbrenner and Hillar -- if some users don't trust me.\n \n> Let me know what the 'final' version of your patch is and then I'll review it.\n\nI think this version is final, in the following sense:\n- doc tests pass\n- I am already doing serious computations with that version, and it seems to work well\n- I looked intensely at the html documentation, and I found it alright.\n\nCheers,\n    Simon",
+    "body": "Attachment [SymmetricIdealsFinal.patch](tarball://root/attachments/some-uuid/ticket5566/SymmetricIdealsFinal.patch) by SimonKing created at 2009-04-27 11:13:39\n\nDear Martin and Michael,\n\nReplying to [comment:36 malb]:\n> Replying to [comment:35 SimonKing]:\n> > First, some general questions:\n> > \n> >  1. Should previous versions of a patch be preserved, or is it better to overwrite the old patch with the new version? \n> \n> I don't think we established a good practice here yet. But it is certainly easier for the release manager if there is only one patch or a clear description what to apply when.\n\nOK, so I produced a stand-alone patch `SymmetricIdealsFinal.patch` relative to sage-3.4.1.rc3 that I consider final (see below).\n\n\n> > One question to the referee: As mentioned in a comment above, I try to be clever, i.e., in `SymmetricIdeal.symmetrisation()` I only apply elementary transpositions rather than the full symmetric group. I believe it works, but it is a difference to what Aschenbrenner and Hillar suggested. Shall I point it out in the documentation\n> \n> Yes, that should be pointed out clearly.\n\nOK, I did so in the documentation of `SymmetricIdeal.symmetrisation()` and `SymmetricIdeal.groebner_basis()`: I give no evidence *why* I believe that my algorithm is correct, but I state in what respect it differs from the work of Aschenbrenner and Hillar.\n\nMoreover, I made it optional to chose the *original* algorithm of Aschenbrenner and Hillar -- if some users don't trust me.\n \n> Let me know what the 'final' version of your patch is and then I'll review it.\n\nI think this version is final, in the following sense:\n- doc tests pass\n- I am already doing serious computations with that version, and it seems to work well\n- I looked intensely at the html documentation, and I found it alright.\n\nCheers,\n    Simon",
     "created_at": "2009-04-27T11:13:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
@@ -1331,7 +1331,7 @@ archive/issue_comments_043365.json:
 }
 ```
 
-Attachment
+Attachment [SymmetricIdealsFinal.patch](tarball://root/attachments/some-uuid/ticket5566/SymmetricIdealsFinal.patch) by SimonKing created at 2009-04-27 11:13:39
 
 Dear Martin and Michael,
 
@@ -1416,7 +1416,7 @@ To be applied after SymmetricIdealsFinal.patch
 archive/issue_comments_043368.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:39 malb]:\n> Doctests fail:\n> \n> {{{\n> from sage.rings.polynomial.symmetric_reduction import SymmetricReductionStrategy\n> ImportError: No module named symmetric_reduction\n> }}}\n> \n> Maybe you didn't add the module to `module_list.py`?\n\nYes. So, `SymmetricIdealsFinal.patch` is not the final word. Please also apply `SymmetricIdealsForgotten.patch`.\n\nAnd I think it worked for me since I had built the extension in a different branch, so, it was somehow present.\n\nSorry,\n    Simon",
+    "body": "Attachment [SymmetricIdealsForgotten.patch](tarball://root/attachments/some-uuid/ticket5566/SymmetricIdealsForgotten.patch) by SimonKing created at 2009-04-27 14:30:15\n\nReplying to [comment:39 malb]:\n> Doctests fail:\n> \n> {{{\n> from sage.rings.polynomial.symmetric_reduction import SymmetricReductionStrategy\n> ImportError: No module named symmetric_reduction\n> }}}\n> \n> Maybe you didn't add the module to `module_list.py`?\n\nYes. So, `SymmetricIdealsFinal.patch` is not the final word. Please also apply `SymmetricIdealsForgotten.patch`.\n\nAnd I think it worked for me since I had built the extension in a different branch, so, it was somehow present.\n\nSorry,\n    Simon",
     "created_at": "2009-04-27T14:30:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
@@ -1425,7 +1425,7 @@ archive/issue_comments_043368.json:
 }
 ```
 
-Attachment
+Attachment [SymmetricIdealsForgotten.patch](tarball://root/attachments/some-uuid/ticket5566/SymmetricIdealsForgotten.patch) by SimonKing created at 2009-04-27 14:30:15
 
 Replying to [comment:39 malb]:
 > Doctests fail:
@@ -1550,7 +1550,7 @@ sage: for p in Permutations(4):
 archive/issue_comments_043371.json:
 ```json
 {
-    "body": "Attachment\n\nI've fixed a few doctest failures in `symmetric_ideal.py` and `infinite_polynomial_ring.py`. Simon, there is still a doctest failure on sage.math with 3.4.2 in `symmetric_ideal.py`. It is the protocol output of the calculation which is somehow different now. Please fix it, then we can merge this big patch.",
+    "body": "Attachment [SymmetricIdealsBugfix.patch](tarball://root/attachments/some-uuid/ticket5566/SymmetricIdealsBugfix.patch) by malb created at 2009-05-12 00:31:25\n\nI've fixed a few doctest failures in `symmetric_ideal.py` and `infinite_polynomial_ring.py`. Simon, there is still a doctest failure on sage.math with 3.4.2 in `symmetric_ideal.py`. It is the protocol output of the calculation which is somehow different now. Please fix it, then we can merge this big patch.",
     "created_at": "2009-05-12T00:31:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
@@ -1559,7 +1559,7 @@ archive/issue_comments_043371.json:
 }
 ```
 
-Attachment
+Attachment [SymmetricIdealsBugfix.patch](tarball://root/attachments/some-uuid/ticket5566/SymmetricIdealsBugfix.patch) by malb created at 2009-05-12 00:31:25
 
 I've fixed a few doctest failures in `symmetric_ideal.py` and `infinite_polynomial_ring.py`. Simon, there is still a doctest failure on sage.math with 3.4.2 in `symmetric_ideal.py`. It is the protocol output of the calculation which is somehow different now. Please fix it, then we can merge this big patch.
 
@@ -1609,7 +1609,7 @@ One trivial doc test fix
 archive/issue_comments_043374.json:
 ```json
 {
-    "body": "Attachment\n\nHi Martin, hi Michael,\n\nit turned out that the doc test failure was not in `infinite_polynomial_ring.py` but in `symmetric_ideal.py`. The fix is trivial, it is just insertion of one ':'.\n\nAfter applying all four patches in order, all doc test for infinite polynomial rings and symmetric ideals pass both on sage.math and at home:\n\n```\nSimonKing@sage:~/SAGE/sage-3.4.2/devel/sage-symmdevel/sage/rings/polynomial$ ~/SAGE/sage-3.4.2/sage -t -optional -long symmetric_ideal.py\nsage -t -optional -long \"devel/sage-symmdevel/sage/rings/polynomial/symmetric_ideal.py\"\n         [12.4 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 12.4 seconds\nSimonKing@sage:~/SAGE/sage-3.4.2/devel/sage-symmdevel/sage/rings/polynomial$ ~/SAGE/sage-3.4.2/sage -t -optional -long symmetric_reduction.pyx\nsage -t -optional -long \"devel/sage-symmdevel/sage/rings/polynomial/symmetric_reduction.pyx\"\n         [4.3 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 4.3 seconds\nSimonKing@sage:~/SAGE/sage-3.4.2/devel/sage-symmdevel/sage/rings/polynomial$ ~/SAGE/sage-3.4.2/sage -t -optional -long infinite_polynomial_element.py\nsage -t -optional -long \"devel/sage-symmdevel/sage/rings/polynomial/infinite_polynomial_element.py\"\n         [6.0 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 6.0 seconds\nSimonKing@sage:~/SAGE/sage-3.4.2/devel/sage-symmdevel/sage/rings/polynomial$ ~/SAGE/sage-3.4.2/sage -t -optional -long infinite_polynomial_ring.py\nsage -t -optional -long \"devel/sage-symmdevel/sage/rings/polynomial/infinite_polynomial_ring.py\"\n         [2.6 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 2.6 seconds\n```\n\n\nI tag the ticket as [needs review], but I hope that Martin's comment can be taken as a positive review already...\n\nCheers,\n    Simon",
+    "body": "Attachment [SymmetricIdealsLastWords.patch](tarball://root/attachments/some-uuid/ticket5566/SymmetricIdealsLastWords.patch) by SimonKing created at 2009-05-15 06:57:49\n\nHi Martin, hi Michael,\n\nit turned out that the doc test failure was not in `infinite_polynomial_ring.py` but in `symmetric_ideal.py`. The fix is trivial, it is just insertion of one ':'.\n\nAfter applying all four patches in order, all doc test for infinite polynomial rings and symmetric ideals pass both on sage.math and at home:\n\n```\nSimonKing@sage:~/SAGE/sage-3.4.2/devel/sage-symmdevel/sage/rings/polynomial$ ~/SAGE/sage-3.4.2/sage -t -optional -long symmetric_ideal.py\nsage -t -optional -long \"devel/sage-symmdevel/sage/rings/polynomial/symmetric_ideal.py\"\n         [12.4 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 12.4 seconds\nSimonKing@sage:~/SAGE/sage-3.4.2/devel/sage-symmdevel/sage/rings/polynomial$ ~/SAGE/sage-3.4.2/sage -t -optional -long symmetric_reduction.pyx\nsage -t -optional -long \"devel/sage-symmdevel/sage/rings/polynomial/symmetric_reduction.pyx\"\n         [4.3 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 4.3 seconds\nSimonKing@sage:~/SAGE/sage-3.4.2/devel/sage-symmdevel/sage/rings/polynomial$ ~/SAGE/sage-3.4.2/sage -t -optional -long infinite_polynomial_element.py\nsage -t -optional -long \"devel/sage-symmdevel/sage/rings/polynomial/infinite_polynomial_element.py\"\n         [6.0 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 6.0 seconds\nSimonKing@sage:~/SAGE/sage-3.4.2/devel/sage-symmdevel/sage/rings/polynomial$ ~/SAGE/sage-3.4.2/sage -t -optional -long infinite_polynomial_ring.py\nsage -t -optional -long \"devel/sage-symmdevel/sage/rings/polynomial/infinite_polynomial_ring.py\"\n         [2.6 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 2.6 seconds\n```\n\n\nI tag the ticket as [needs review], but I hope that Martin's comment can be taken as a positive review already...\n\nCheers,\n    Simon",
     "created_at": "2009-05-15T06:57:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
@@ -1618,7 +1618,7 @@ archive/issue_comments_043374.json:
 }
 ```
 
-Attachment
+Attachment [SymmetricIdealsLastWords.patch](tarball://root/attachments/some-uuid/ticket5566/SymmetricIdealsLastWords.patch) by SimonKing created at 2009-05-15 06:57:49
 
 Hi Martin, hi Michael,
 

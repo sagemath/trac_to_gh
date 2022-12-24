@@ -178,7 +178,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_075255.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8402-categories_missing_test-fh.patch](tarball://root/attachments/some-uuid/ticket8402/trac_8402-categories_missing_test-fh.patch) by was created at 2010-04-29 05:24:19",
     "created_at": "2010-04-29T05:24:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8402",
     "type": "issue_comment",
@@ -187,7 +187,7 @@ archive/issue_comments_075255.json:
 }
 ```
 
-Attachment
+Attachment [trac_8402-categories_missing_test-fh.patch](tarball://root/attachments/some-uuid/ticket8402/trac_8402-categories_missing_test-fh.patch) by was created at 2010-04-29 05:24:19
 
 
 

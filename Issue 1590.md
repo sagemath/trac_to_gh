@@ -125,7 +125,7 @@ and it would be mysteriously buggy.
 archive/issue_comments_010125.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1590-autosave.patch](tarball://root/attachments/some-uuid/ticket1590/1590-autosave.patch) by boothby created at 2008-03-16 21:33:50",
     "created_at": "2008-03-16T21:33:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1590",
     "type": "issue_comment",
@@ -134,7 +134,7 @@ archive/issue_comments_010125.json:
 }
 ```
 
-Attachment
+Attachment [1590-autosave.patch](tarball://root/attachments/some-uuid/ticket1590/1590-autosave.patch) by boothby created at 2008-03-16 21:33:50
 
 
 

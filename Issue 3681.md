@@ -115,7 +115,7 @@ William
 archive/issue_comments_026067.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3681-patch2.patch](tarball://root/attachments/some-uuid/ticket3681/sage-3681-patch2.patch) by was created at 2008-07-20 13:58:53",
     "created_at": "2008-07-20T13:58:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3681",
     "type": "issue_comment",
@@ -124,7 +124,7 @@ archive/issue_comments_026067.json:
 }
 ```
 
-Attachment
+Attachment [sage-3681-patch2.patch](tarball://root/attachments/some-uuid/ticket3681/sage-3681-patch2.patch) by was created at 2008-07-20 13:58:53
 
 
 
@@ -178,7 +178,7 @@ I cannot say that I understand any better, but I'll certainly give the first pat
 archive/issue_comments_026070.json:
 ```json
 {
-    "body": "Attachment\n\npatch attached that addresses mabshoff's nitpicks.",
+    "body": "Attachment [sage-3681-part3-ref_response.patch](tarball://root/attachments/some-uuid/ticket3681/sage-3681-part3-ref_response.patch) by was created at 2008-07-21 14:52:48\n\npatch attached that addresses mabshoff's nitpicks.",
     "created_at": "2008-07-21T14:52:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3681",
     "type": "issue_comment",
@@ -187,7 +187,7 @@ archive/issue_comments_026070.json:
 }
 ```
 
-Attachment
+Attachment [sage-3681-part3-ref_response.patch](tarball://root/attachments/some-uuid/ticket3681/sage-3681-part3-ref_response.patch) by was created at 2008-07-21 14:52:48
 
 patch attached that addresses mabshoff's nitpicks.
 

@@ -182,7 +182,7 @@ Based on 4.3.alpha1
 archive/issue_comments_066666.json:
 ```json
 {
-    "body": "Attachment\n\nSee #6423 and #4142 for other bugs fixed by this spkg.",
+    "body": "Attachment [trac_7745-upgrade-maxima.patch](tarball://root/attachments/some-uuid/ticket7745/trac_7745-upgrade-maxima.patch) by kcrisman created at 2009-12-22 21:17:14\n\nSee #6423 and #4142 for other bugs fixed by this spkg.",
     "created_at": "2009-12-22T21:17:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7745",
     "type": "issue_comment",
@@ -191,7 +191,7 @@ archive/issue_comments_066666.json:
 }
 ```
 
-Attachment
+Attachment [trac_7745-upgrade-maxima.patch](tarball://root/attachments/some-uuid/ticket7745/trac_7745-upgrade-maxima.patch) by kcrisman created at 2009-12-22 21:17:14
 
 See #6423 and #4142 for other bugs fixed by this spkg.
 
@@ -258,7 +258,7 @@ If those are the only ones you get, can you put a reviewer patch of those?  I al
 archive/issue_comments_066669.json:
 ```json
 {
-    "body": "Attachment\n\napply on the top of the previous patch and #6423 and #4142",
+    "body": "Attachment [trac_7745-reviewer.patch](tarball://root/attachments/some-uuid/ticket7745/trac_7745-reviewer.patch) by robert.marik created at 2009-12-23 08:33:11\n\napply on the top of the previous patch and #6423 and #4142",
     "created_at": "2009-12-23T08:33:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7745",
     "type": "issue_comment",
@@ -267,7 +267,7 @@ archive/issue_comments_066669.json:
 }
 ```
 
-Attachment
+Attachment [trac_7745-reviewer.patch](tarball://root/attachments/some-uuid/ticket7745/trac_7745-reviewer.patch) by robert.marik created at 2009-12-23 08:33:11
 
 apply on the top of the previous patch and #6423 and #4142
 

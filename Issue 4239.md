@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4239
 archive/issue_comments_030811.json:
 ```json
 {
-    "body": "Attachment\n\nThumbs up!\n\nLetting the new doctests run without the patch shows horrible behaviour indeed.\n\nPlease get this patch into 3.1.3.",
+    "body": "Attachment [sage-4239.patch](tarball://root/attachments/some-uuid/ticket4239/sage-4239.patch) by GeorgSWeber created at 2008-10-05 20:10:20\n\nThumbs up!\n\nLetting the new doctests run without the patch shows horrible behaviour indeed.\n\nPlease get this patch into 3.1.3.",
     "created_at": "2008-10-05T20:10:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4239",
     "type": "issue_comment",
@@ -43,7 +43,7 @@ archive/issue_comments_030811.json:
 }
 ```
 
-Attachment
+Attachment [sage-4239.patch](tarball://root/attachments/some-uuid/ticket4239/sage-4239.patch) by GeorgSWeber created at 2008-10-05 20:10:20
 
 Thumbs up!
 

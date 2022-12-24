@@ -68,7 +68,7 @@ Changing status from new to needs_review.
 archive/issue_comments_088703.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9345.patch](tarball://root/attachments/some-uuid/ticket9345/trac_9345.patch) by lftabera created at 2010-06-26 10:51:25",
     "created_at": "2010-06-26T10:51:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9345",
     "type": "issue_comment",
@@ -77,7 +77,7 @@ archive/issue_comments_088703.json:
 }
 ```
 
-Attachment
+Attachment [trac_9345.patch](tarball://root/attachments/some-uuid/ticket9345/trac_9345.patch) by lftabera created at 2010-06-26 10:51:25
 
 
 
@@ -86,7 +86,7 @@ Attachment
 archive/issue_comments_088704.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9345.2.patch](tarball://root/attachments/some-uuid/ticket9345/trac_9345.2.patch) by mvngu created at 2010-06-26 11:34:23",
     "created_at": "2010-06-26T11:34:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9345",
     "type": "issue_comment",
@@ -95,7 +95,7 @@ archive/issue_comments_088704.json:
 }
 ```
 
-Attachment
+Attachment [trac_9345.2.patch](tarball://root/attachments/some-uuid/ticket9345/trac_9345.2.patch) by mvngu created at 2010-06-26 11:34:23
 
 
 
@@ -104,7 +104,7 @@ Attachment
 archive/issue_comments_088705.json:
 ```json
 {
-    "body": "Attachment\n\nI'm mostly OK with lftabera's patch. Here are some changes that needs to be made:\n\n* Reference the ticket number in the relevant regression test.\n* Use the Python 3.x compliant way of raising exceptions.\n* Add a more general regression test.\n* Credit lftabera in his patch. (We don't accept anonymous patches.) Put a sensible commit message in lftabera's patch. So one now uses [trac_9345.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/9345/trac_9345.2.patch) instead of [trac_9345.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/9345/trac_9345.patch). \n\nSee the ticket description for instructions on how to apply the relevant patches. Only my proposed changes need review by anyone but me. If they are OK, then the whole ticket receives a positive review.",
+    "body": "Attachment [trac_9345-reviewer.patch](tarball://root/attachments/some-uuid/ticket9345/trac_9345-reviewer.patch) by mvngu created at 2010-06-26 11:40:18\n\nI'm mostly OK with lftabera's patch. Here are some changes that needs to be made:\n\n* Reference the ticket number in the relevant regression test.\n* Use the Python 3.x compliant way of raising exceptions.\n* Add a more general regression test.\n* Credit lftabera in his patch. (We don't accept anonymous patches.) Put a sensible commit message in lftabera's patch. So one now uses [trac_9345.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/9345/trac_9345.2.patch) instead of [trac_9345.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/9345/trac_9345.patch). \n\nSee the ticket description for instructions on how to apply the relevant patches. Only my proposed changes need review by anyone but me. If they are OK, then the whole ticket receives a positive review.",
     "created_at": "2010-06-26T11:40:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9345",
     "type": "issue_comment",
@@ -113,7 +113,7 @@ archive/issue_comments_088705.json:
 }
 ```
 
-Attachment
+Attachment [trac_9345-reviewer.patch](tarball://root/attachments/some-uuid/ticket9345/trac_9345-reviewer.patch) by mvngu created at 2010-06-26 11:40:18
 
 I'm mostly OK with lftabera's patch. Here are some changes that needs to be made:
 
@@ -295,7 +295,7 @@ m= mm.prod(); mpq_rational_reconstruction(Q_row[j], Z_row[j], m.value) So I cann
 archive/issue_comments_088709.json:
 ```json
 {
-    "body": "Attachment\n\nprevious patches merged",
+    "body": "Attachment [trac_9345.3.patch](tarball://root/attachments/some-uuid/ticket9345/trac_9345.3.patch) by lftabera created at 2010-07-02 10:07:18\n\nprevious patches merged",
     "created_at": "2010-07-02T10:07:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9345",
     "type": "issue_comment",
@@ -304,7 +304,7 @@ archive/issue_comments_088709.json:
 }
 ```
 
-Attachment
+Attachment [trac_9345.3.patch](tarball://root/attachments/some-uuid/ticket9345/trac_9345.3.patch) by lftabera created at 2010-07-02 10:07:18
 
 previous patches merged
 
@@ -407,7 +407,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_088715.json:
 ```json
 {
-    "body": "Attachment\n\nWell, there was a similar problem in #9357 and I got this answer to the question of _sig_onm, _sig_off\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/e8317365bfe9e6e8/2a4148024500dfd2\n\nNote that if the exception is controlled by _sig, it will raise a RuntimeError instead of ZeroDivisionError. Moreover, with the patch I provided, all ocurrences of being zero are catched and never reaches the C functions.\n\nAnyway, I have written a second patch that add the _sig_on, _sig_off to the problematic functions, so if they have to be added, apply the following patches (in order):\n\ntrac_9345.3.patch\ntrac-9345-sigs.patch",
+    "body": "Attachment [trac-9345-sigs.patch](tarball://root/attachments/some-uuid/ticket9345/trac-9345-sigs.patch) by lftabera created at 2010-09-06 09:03:03\n\nWell, there was a similar problem in #9357 and I got this answer to the question of _sig_onm, _sig_off\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/e8317365bfe9e6e8/2a4148024500dfd2\n\nNote that if the exception is controlled by _sig, it will raise a RuntimeError instead of ZeroDivisionError. Moreover, with the patch I provided, all ocurrences of being zero are catched and never reaches the C functions.\n\nAnyway, I have written a second patch that add the _sig_on, _sig_off to the problematic functions, so if they have to be added, apply the following patches (in order):\n\ntrac_9345.3.patch\ntrac-9345-sigs.patch",
     "created_at": "2010-09-06T09:03:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9345",
     "type": "issue_comment",
@@ -416,7 +416,7 @@ archive/issue_comments_088715.json:
 }
 ```
 
-Attachment
+Attachment [trac-9345-sigs.patch](tarball://root/attachments/some-uuid/ticket9345/trac-9345-sigs.patch) by lftabera created at 2010-09-06 09:03:03
 
 Well, there was a similar problem in #9357 and I got this answer to the question of _sig_onm, _sig_off
 
@@ -462,7 +462,7 @@ Well, the _sig_on and _sig_off are in the wrong places (_sig_on should be before
 archive/issue_comments_088717.json:
 ```json
 {
-    "body": "Attachment\n\nBetter alternative to trac-9345-sigs.patch",
+    "body": "Attachment [trac-9345-sigs-jd.patch](tarball://root/attachments/some-uuid/ticket9345/trac-9345-sigs-jd.patch) by jdemeyer created at 2010-09-07 20:54:54\n\nBetter alternative to trac-9345-sigs.patch",
     "created_at": "2010-09-07T20:54:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9345",
     "type": "issue_comment",
@@ -471,7 +471,7 @@ archive/issue_comments_088717.json:
 }
 ```
 
-Attachment
+Attachment [trac-9345-sigs-jd.patch](tarball://root/attachments/some-uuid/ticket9345/trac-9345-sigs-jd.patch) by jdemeyer created at 2010-09-07 20:54:54
 
 Better alternative to trac-9345-sigs.patch
 
@@ -503,7 +503,7 @@ I agree that it is overkill, but I'm fine with it.  I'm giving positive_review f
 archive/issue_comments_088719.json:
 ```json
 {
-    "body": "Attachment\n\nI have corrected jdemeyer patch to also  include the sparse matrix case. The patch to review is trac-9345-sigs-jd-2.patch",
+    "body": "Attachment [trac-9345-sigs-jd-2.patch](tarball://root/attachments/some-uuid/ticket9345/trac-9345-sigs-jd-2.patch) by lftabera created at 2010-09-08 08:13:31\n\nI have corrected jdemeyer patch to also  include the sparse matrix case. The patch to review is trac-9345-sigs-jd-2.patch",
     "created_at": "2010-09-08T08:13:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9345",
     "type": "issue_comment",
@@ -512,7 +512,7 @@ archive/issue_comments_088719.json:
 }
 ```
 
-Attachment
+Attachment [trac-9345-sigs-jd-2.patch](tarball://root/attachments/some-uuid/ticket9345/trac-9345-sigs-jd-2.patch) by lftabera created at 2010-09-08 08:13:31
 
 I have corrected jdemeyer patch to also  include the sparse matrix case. The patch to review is trac-9345-sigs-jd-2.patch
 

@@ -89,7 +89,7 @@ fixes a mistaken deletion of critical functionality in tachyon's tostr function
 archive/issue_comments_053331.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch fixes a mistaken deletion of critical functionality in tachyon's tostr function.  Looks like a piece of this function was sliced off by mistake during the colorsys refactoring.\n\nI will open a seperate ticket to improve the tachyon doctests; I think this patch should go in ASAP since tachyon is totally broken without it.",
+    "body": "Attachment [trac_6542_tachyon_tostr.patch](tarball://root/attachments/some-uuid/ticket6542/trac_6542_tachyon_tostr.patch) by mhampton created at 2009-07-16 18:22:09\n\nThe patch fixes a mistaken deletion of critical functionality in tachyon's tostr function.  Looks like a piece of this function was sliced off by mistake during the colorsys refactoring.\n\nI will open a seperate ticket to improve the tachyon doctests; I think this patch should go in ASAP since tachyon is totally broken without it.",
     "created_at": "2009-07-16T18:22:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6542",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_053331.json:
 }
 ```
 
-Attachment
+Attachment [trac_6542_tachyon_tostr.patch](tarball://root/attachments/some-uuid/ticket6542/trac_6542_tachyon_tostr.patch) by mhampton created at 2009-07-16 18:22:09
 
 The patch fixes a mistaken deletion of critical functionality in tachyon's tostr function.  Looks like a piece of this function was sliced off by mistake during the colorsys refactoring.
 
@@ -196,7 +196,7 @@ Yes, I've been thinking about doing this for a while too.
 archive/issue_comments_053336.json:
 ```json
 {
-    "body": "Attachment\n\nnew version with doctest",
+    "body": "Attachment [trac_6542_tachyon_tostr.2.patch](tarball://root/attachments/some-uuid/ticket6542/trac_6542_tachyon_tostr.2.patch) by mhampton created at 2009-07-16 20:06:22\n\nnew version with doctest",
     "created_at": "2009-07-16T20:06:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6542",
     "type": "issue_comment",
@@ -205,7 +205,7 @@ archive/issue_comments_053336.json:
 }
 ```
 
-Attachment
+Attachment [trac_6542_tachyon_tostr.2.patch](tarball://root/attachments/some-uuid/ticket6542/trac_6542_tachyon_tostr.2.patch) by mhampton created at 2009-07-16 20:06:22
 
 new version with doctest
 

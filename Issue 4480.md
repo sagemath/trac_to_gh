@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4480
 archive/issue_comments_033092.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4480-cython-deps.patch](tarball://root/attachments/some-uuid/ticket4480/4480-cython-deps.patch) by robertwb created at 2008-11-09 13:07:50",
     "created_at": "2008-11-09T13:07:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4480",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_033092.json:
 }
 ```
 
-Attachment
+Attachment [4480-cython-deps.patch](tarball://root/attachments/some-uuid/ticket4480/4480-cython-deps.patch) by robertwb created at 2008-11-09 13:07:50
 
 
 
@@ -69,7 +69,7 @@ So Gonzalo and I are in the middle of writing the build process in `setup.py`. L
 archive/issue_comments_033094.json:
 ```json
 {
-    "body": "Attachment\n\nHere we go! So this patch applies on top of `rc0` + the patch at #4500, because it was a needed fix. With this patch in, we've got it all: fast cached dependency checking, parallel calls to Cython, and dozens of small improvements to the build system thrown in, too. I also reorganized `setup.py` and created a `module_list.py` to have the list of extension modules. \n\nRobert, I've looked at (probably every line of) your code which is now in here -- can you review the rest? I did make small changes to one or two of your functions; in particular, `parse_deps`, I think.\n\nI've run it through some paces, but I'm happy to fix any bugs that pop up.\n\nCredit should go to Rob, Gonzalo, and me.",
+    "body": "Attachment [trac-4480-rc0.patch](tarball://root/attachments/some-uuid/ticket4480/trac-4480-rc0.patch) by craigcitro created at 2008-11-13 13:42:14\n\nHere we go! So this patch applies on top of `rc0` + the patch at #4500, because it was a needed fix. With this patch in, we've got it all: fast cached dependency checking, parallel calls to Cython, and dozens of small improvements to the build system thrown in, too. I also reorganized `setup.py` and created a `module_list.py` to have the list of extension modules. \n\nRobert, I've looked at (probably every line of) your code which is now in here -- can you review the rest? I did make small changes to one or two of your functions; in particular, `parse_deps`, I think.\n\nI've run it through some paces, but I'm happy to fix any bugs that pop up.\n\nCredit should go to Rob, Gonzalo, and me.",
     "created_at": "2008-11-13T13:42:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4480",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_033094.json:
 }
 ```
 
-Attachment
+Attachment [trac-4480-rc0.patch](tarball://root/attachments/some-uuid/ticket4480/trac-4480-rc0.patch) by craigcitro created at 2008-11-13 13:42:14
 
 Here we go! So this patch applies on top of `rc0` + the patch at #4500, because it was a needed fix. With this patch in, we've got it all: fast cached dependency checking, parallel calls to Cython, and dozens of small improvements to the build system thrown in, too. I also reorganized `setup.py` and created a `module_list.py` to have the list of extension modules. 
 
@@ -360,7 +360,7 @@ Resolution: fixed
 archive/issue_comments_033107.json:
 ```json
 {
-    "body": "Attachment\n\nMerged trac-4480-cumulative.patch in Sage 3.2.rc1",
+    "body": "Attachment [trac-4480-cumulative.patch](tarball://root/attachments/some-uuid/ticket4480/trac-4480-cumulative.patch) by mabshoff created at 2008-11-14 04:02:40\n\nMerged trac-4480-cumulative.patch in Sage 3.2.rc1",
     "created_at": "2008-11-14T04:02:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4480",
     "type": "issue_comment",
@@ -369,7 +369,7 @@ archive/issue_comments_033107.json:
 }
 ```
 
-Attachment
+Attachment [trac-4480-cumulative.patch](tarball://root/attachments/some-uuid/ticket4480/trac-4480-cumulative.patch) by mabshoff created at 2008-11-14 04:02:40
 
 Merged trac-4480-cumulative.patch in Sage 3.2.rc1
 
@@ -398,7 +398,7 @@ okay, maybe it only feels like part 18. :)
 archive/issue_comments_033109.json:
 ```json
 {
-    "body": "Attachment\n\nMerged trac-4480-pt18.patch in Sage 3.2.rc1.\n\nThanks Craig.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac-4480-pt18.patch](tarball://root/attachments/some-uuid/ticket4480/trac-4480-pt18.patch) by mabshoff created at 2008-11-14 05:24:29\n\nMerged trac-4480-pt18.patch in Sage 3.2.rc1.\n\nThanks Craig.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-14T05:24:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4480",
     "type": "issue_comment",
@@ -407,7 +407,7 @@ archive/issue_comments_033109.json:
 }
 ```
 
-Attachment
+Attachment [trac-4480-pt18.patch](tarball://root/attachments/some-uuid/ticket4480/trac-4480-pt18.patch) by mabshoff created at 2008-11-14 05:24:29
 
 Merged trac-4480-pt18.patch in Sage 3.2.rc1.
 

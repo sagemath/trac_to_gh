@@ -89,7 +89,7 @@ Paul
 archive/issue_comments_073701.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8309-fast-primerange.patch](tarball://root/attachments/some-uuid/ticket8309/8309-fast-primerange.patch) by robertwb created at 2010-02-26 08:06:49",
     "created_at": "2010-02-26T08:06:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8309",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_073701.json:
 }
 ```
 
-Attachment
+Attachment [8309-fast-primerange.patch](tarball://root/attachments/some-uuid/ticket8309/8309-fast-primerange.patch) by robertwb created at 2010-02-26 08:06:49
 
 
 

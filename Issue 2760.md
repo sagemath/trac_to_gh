@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2760
 archive/issue_comments_018967.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ntl-amd64.patch](tarball://root/attachments/some-uuid/ticket2760/ntl-amd64.patch) by tabbott created at 2008-04-01 21:28:28",
     "created_at": "2008-04-01T21:28:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2760",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_018967.json:
 }
 ```
 
-Attachment
+Attachment [ntl-amd64.patch](tarball://root/attachments/some-uuid/ticket2760/ntl-amd64.patch) by tabbott created at 2008-04-01 21:28:28
 
 
 

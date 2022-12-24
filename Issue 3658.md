@@ -165,7 +165,7 @@ Michael
 archive/issue_comments_025861.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-3658.patch](tarball://root/attachments/some-uuid/ticket3658/trac-3658.patch) by craigcitro created at 2009-01-24 19:57:19",
     "created_at": "2009-01-24T19:57:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3658",
     "type": "issue_comment",
@@ -174,7 +174,7 @@ archive/issue_comments_025861.json:
 }
 ```
 
-Attachment
+Attachment [trac-3658.patch](tarball://root/attachments/some-uuid/ticket3658/trac-3658.patch) by craigcitro created at 2009-01-24 19:57:19
 
 
 

@@ -57,7 +57,7 @@ Changing status from new to needs_work.
 archive/issue_comments_068082.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ff20100106.patch](tarball://root/attachments/some-uuid/ticket7857/ff20100106.patch) by spancratz created at 2010-01-06 16:13:11",
     "created_at": "2010-01-06T16:13:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7857",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_068082.json:
 }
 ```
 
-Attachment
+Attachment [ff20100106.patch](tarball://root/attachments/some-uuid/ticket7857/ff20100106.patch) by spancratz created at 2010-01-06 16:13:11
 
 
 
@@ -136,7 +136,7 @@ Second patch
 archive/issue_comments_068086.json:
 ```json
 {
-    "body": "Attachment\n\nFirst comment:  Note that the \"second patch\" replaces the first one!\n\nI noticed a bare \"except:\"  which is bad style -- it should list the errors expected explicitly.\n\nQuestion:  the code for sub is (of course) almost identical to that for add.  Would it not be better to implement sub by adding the inverse?  I would have thought that the overhead would be trivial, and itmakes the code easier to maintain.\n\nThe (second) patch applies fine to 4.3 and all tests in sage/rings and sage/schemes/elliptic_curves pass.  (I tested the latter since I seemed to remember some fraction field arithmetic somewhere in there).  I also checked the docs still build ok.\n\nI'll tag this as \"needs work\" but it's very minor to fix the exception trapping and (perhaps) replace the subtraction code.",
+    "body": "Attachment [trac7857_20090106.patch](tarball://root/attachments/some-uuid/ticket7857/trac7857_20090106.patch) by cremona created at 2010-01-06 18:22:17\n\nFirst comment:  Note that the \"second patch\" replaces the first one!\n\nI noticed a bare \"except:\"  which is bad style -- it should list the errors expected explicitly.\n\nQuestion:  the code for sub is (of course) almost identical to that for add.  Would it not be better to implement sub by adding the inverse?  I would have thought that the overhead would be trivial, and itmakes the code easier to maintain.\n\nThe (second) patch applies fine to 4.3 and all tests in sage/rings and sage/schemes/elliptic_curves pass.  (I tested the latter since I seemed to remember some fraction field arithmetic somewhere in there).  I also checked the docs still build ok.\n\nI'll tag this as \"needs work\" but it's very minor to fix the exception trapping and (perhaps) replace the subtraction code.",
     "created_at": "2010-01-06T18:22:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7857",
     "type": "issue_comment",
@@ -145,7 +145,7 @@ archive/issue_comments_068086.json:
 }
 ```
 
-Attachment
+Attachment [trac7857_20090106.patch](tarball://root/attachments/some-uuid/ticket7857/trac7857_20090106.patch) by cremona created at 2010-01-06 18:22:17
 
 First comment:  Note that the "second patch" replaces the first one!
 
@@ -261,7 +261,7 @@ Replying to [comment:3 cremona]:
 archive/issue_comments_068091.json:
 ```json
 {
-    "body": "Attachment\n\nThird patch (replacing all previous ones)",
+    "body": "Attachment [trac7857_20090107.patch](tarball://root/attachments/some-uuid/ticket7857/trac7857_20090107.patch) by spancratz created at 2010-01-06 23:37:31\n\nThird patch (replacing all previous ones)",
     "created_at": "2010-01-06T23:37:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7857",
     "type": "issue_comment",
@@ -270,7 +270,7 @@ archive/issue_comments_068091.json:
 }
 ```
 
-Attachment
+Attachment [trac7857_20090107.patch](tarball://root/attachments/some-uuid/ticket7857/trac7857_20090107.patch) by spancratz created at 2010-01-06 23:37:31
 
 Third patch (replacing all previous ones)
 
@@ -333,7 +333,7 @@ Fourth patch (replacing all previous ones)
 archive/issue_comments_068094.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch should now fix the previously remaining doctest failures.  But I am currently testing everything again tonight and will report back tomorrow.\n\nSebastian",
+    "body": "Attachment [trac7857_20100107.patch](tarball://root/attachments/some-uuid/ticket7857/trac7857_20100107.patch) by spancratz created at 2010-01-07 03:02:25\n\nThis patch should now fix the previously remaining doctest failures.  But I am currently testing everything again tonight and will report back tomorrow.\n\nSebastian",
     "created_at": "2010-01-07T03:02:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7857",
     "type": "issue_comment",
@@ -342,7 +342,7 @@ archive/issue_comments_068094.json:
 }
 ```
 
-Attachment
+Attachment [trac7857_20100107.patch](tarball://root/attachments/some-uuid/ticket7857/trac7857_20100107.patch) by spancratz created at 2010-01-07 03:02:25
 
 This patch should now fix the previously remaining doctest failures.  But I am currently testing everything again tonight and will report back tomorrow.
 
@@ -440,7 +440,7 @@ Fifth patch (replacing all previous ones)
 archive/issue_comments_068099.json:
 ```json
 {
-    "body": "Attachment\n\nI've made three further improvements:\n\n- I've now incorporated Robert's suggestion to catch ``NotImplementedError``s, too.  \n- I've improved the method for computing the derivative further, noting that the second GCD computation was unnecessary since at that point in the computation the result was in lowest terms already.\n- I've added some test cases to the method ``_derivative``.\n\nSebastian",
+    "body": "Attachment [trac7857_20100109.patch](tarball://root/attachments/some-uuid/ticket7857/trac7857_20100109.patch) by spancratz created at 2010-01-09 02:47:35\n\nI've made three further improvements:\n\n- I've now incorporated Robert's suggestion to catch ``NotImplementedError``s, too.  \n- I've improved the method for computing the derivative further, noting that the second GCD computation was unnecessary since at that point in the computation the result was in lowest terms already.\n- I've added some test cases to the method ``_derivative``.\n\nSebastian",
     "created_at": "2010-01-09T02:47:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7857",
     "type": "issue_comment",
@@ -449,7 +449,7 @@ archive/issue_comments_068099.json:
 }
 ```
 
-Attachment
+Attachment [trac7857_20100109.patch](tarball://root/attachments/some-uuid/ticket7857/trac7857_20100109.patch) by spancratz created at 2010-01-09 02:47:35
 
 I've made three further improvements:
 

@@ -155,7 +155,7 @@ See http://reference.wolfram.com/mathematica/guide/Colors.html for the predefine
 archive/issue_comments_043674.json:
 ```json
 {
-    "body": "Attachment\n\nAdd CSS3/SVG colors, lighter/darker methods, HSV and HSL/HLS constructors",
+    "body": "Attachment [trac_5601-builtin_colors.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-builtin_colors.patch) by mpatel created at 2009-11-18 04:33:57\n\nAdd CSS3/SVG colors, lighter/darker methods, HSV and HSL/HLS constructors",
     "created_at": "2009-11-18T04:33:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
@@ -164,7 +164,7 @@ archive/issue_comments_043674.json:
 }
 ```
 
-Attachment
+Attachment [trac_5601-builtin_colors.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-builtin_colors.patch) by mpatel created at 2009-11-18 04:33:57
 
 Add CSS3/SVG colors, lighter/darker methods, HSV and HSL/HLS constructors
 
@@ -391,7 +391,7 @@ Added matplotlib colormaps.  Apply only this patch.
 archive/issue_comments_043682.json:
 ```json
 {
-    "body": "Attachment\n\nSage colors.  Not a patch.",
+    "body": "Attachment [trac_5601-builtin_colors_v2.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-builtin_colors_v2.patch) by mpatel created at 2009-11-19 00:43:58\n\nSage colors.  Not a patch.",
     "created_at": "2009-11-19T00:43:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
@@ -400,7 +400,7 @@ archive/issue_comments_043682.json:
 }
 ```
 
-Attachment
+Attachment [trac_5601-builtin_colors_v2.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-builtin_colors_v2.patch) by mpatel created at 2009-11-19 00:43:58
 
 Sage colors.  Not a patch.
 
@@ -411,7 +411,7 @@ Sage colors.  Not a patch.
 archive/issue_comments_043683.json:
 ```json
 {
-    "body": "Attachment\n\n<img src=\"sage_colors.png\" width=900px>",
+    "body": "Attachment [sage_colors.png](tarball://root/attachments/some-uuid/ticket5601/sage_colors.png) by mpatel created at 2009-11-19 00:46:31\n\n<img src=\"sage_colors.png\" width=900px>",
     "created_at": "2009-11-19T00:46:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
@@ -420,7 +420,7 @@ archive/issue_comments_043683.json:
 }
 ```
 
-Attachment
+Attachment [sage_colors.png](tarball://root/attachments/some-uuid/ticket5601/sage_colors.png) by mpatel created at 2009-11-19 00:46:31
 
 <img src="sage_colors.png" width=900px>
 
@@ -552,7 +552,7 @@ when we need to use it, we have code like:
 archive/issue_comments_043688.json:
 ```json
 {
-    "body": "Attachment\n\nStart with HTML hex colors.  No change to colormap imports.  Apply only this patch.",
+    "body": "Attachment [trac_5601-builtin_colors_v3.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-builtin_colors_v3.patch) by mpatel created at 2009-11-20 11:21:23\n\nStart with HTML hex colors.  No change to colormap imports.  Apply only this patch.",
     "created_at": "2009-11-20T11:21:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
@@ -561,7 +561,7 @@ archive/issue_comments_043688.json:
 }
 ```
 
-Attachment
+Attachment [trac_5601-builtin_colors_v3.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-builtin_colors_v3.patch) by mpatel created at 2009-11-20 11:21:23
 
 Start with HTML hex colors.  No change to colormap imports.  Apply only this patch.
 
@@ -657,7 +657,7 @@ Is this still true?  The example appears to work for me, but I could be misinter
 archive/issue_comments_043693.json:
 ```json
 {
-    "body": "Attachment\n\nAdd to reference manual.  Defer loading of color maps.  Apply only this patch.",
+    "body": "Attachment [trac_5601-builtin_colors_v4.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-builtin_colors_v4.patch) by mpatel created at 2009-11-22 05:35:49\n\nAdd to reference manual.  Defer loading of color maps.  Apply only this patch.",
     "created_at": "2009-11-22T05:35:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
@@ -666,7 +666,7 @@ archive/issue_comments_043693.json:
 }
 ```
 
-Attachment
+Attachment [trac_5601-builtin_colors_v4.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-builtin_colors_v4.patch) by mpatel created at 2009-11-22 05:35:49
 
 Add to reference manual.  Defer loading of color maps.  Apply only this patch.
 
@@ -765,7 +765,7 @@ To do:
 archive/issue_comments_043698.json:
 ```json
 {
-    "body": "Attachment\n\nAttribute access for colors and color maps.  Apply only this patch.",
+    "body": "Attachment [trac_5601-builtin_colors_v5.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-builtin_colors_v5.patch) by mpatel created at 2009-11-26 05:37:27\n\nAttribute access for colors and color maps.  Apply only this patch.",
     "created_at": "2009-11-26T05:37:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
@@ -774,7 +774,7 @@ archive/issue_comments_043698.json:
 }
 ```
 
-Attachment
+Attachment [trac_5601-builtin_colors_v5.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-builtin_colors_v5.patch) by mpatel created at 2009-11-26 05:37:27
 
 Attribute access for colors and color maps.  Apply only this patch.
 
@@ -827,7 +827,7 @@ I just discovered [__add__ and friends](http://docs.python.org/reference/datamod
 archive/issue_comments_043701.json:
 ```json
 {
-    "body": "Attachment\n\n[Scalar] add and multiply colors.  This patch only.",
+    "body": "Attachment [trac_5601-builtin_colors_v6.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-builtin_colors_v6.patch) by mpatel created at 2009-12-03 16:00:49\n\n[Scalar] add and multiply colors.  This patch only.",
     "created_at": "2009-12-03T16:00:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
@@ -836,7 +836,7 @@ archive/issue_comments_043701.json:
 }
 ```
 
-Attachment
+Attachment [trac_5601-builtin_colors_v6.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-builtin_colors_v6.patch) by mpatel created at 2009-12-03 16:00:49
 
 [Scalar] add and multiply colors.  This patch only.
 
@@ -1091,7 +1091,7 @@ apply on top of previous patch; implements blending
 archive/issue_comments_043713.json:
 ```json
 {
-    "body": "Attachment\n\nI attached a *rough* patch that implements the mma-style blending, lighter(), and darker().  What do you think?  I don't know that much about color theory, so I don't know what \"should\" happen, but now colors.yellow+colors.green gives yellowgreenish colors.",
+    "body": "Attachment [trac-5601-blending.patch](tarball://root/attachments/some-uuid/ticket5601/trac-5601-blending.patch) by jason created at 2009-12-10 23:39:25\n\nI attached a *rough* patch that implements the mma-style blending, lighter(), and darker().  What do you think?  I don't know that much about color theory, so I don't know what \"should\" happen, but now colors.yellow+colors.green gives yellowgreenish colors.",
     "created_at": "2009-12-10T23:39:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
@@ -1100,7 +1100,7 @@ archive/issue_comments_043713.json:
 }
 ```
 
-Attachment
+Attachment [trac-5601-blending.patch](tarball://root/attachments/some-uuid/ticket5601/trac-5601-blending.patch) by jason created at 2009-12-10 23:39:25
 
 I attached a *rough* patch that implements the mma-style blending, lighter(), and darker().  What do you think?  I don't know that much about color theory, so I don't know what "should" happen, but now colors.yellow+colors.green gives yellowgreenish colors.
 
@@ -1230,7 +1230,7 @@ Anyway, I apologize for the mess, especially for claiming to cover #5604.  Thank
 archive/issue_comments_043719.json:
 ```json
 {
-    "body": "Attachment\n\nDoctest fixes.  Combined patch rebased vs. 4.3.3.alpha1.  Apply only this patch.",
+    "body": "Attachment [trac_5601-builtin_colors_v7.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-builtin_colors_v7.patch) by mpatel created at 2010-02-22 00:51:45\n\nDoctest fixes.  Combined patch rebased vs. 4.3.3.alpha1.  Apply only this patch.",
     "created_at": "2010-02-22T00:51:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
@@ -1239,7 +1239,7 @@ archive/issue_comments_043719.json:
 }
 ```
 
-Attachment
+Attachment [trac_5601-builtin_colors_v7.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-builtin_colors_v7.patch) by mpatel created at 2010-02-22 00:51:45
 
 Doctest fixes.  Combined patch rebased vs. 4.3.3.alpha1.  Apply only this patch.
 
@@ -1310,7 +1310,7 @@ Or fix them. :)
 archive/issue_comments_043723.json:
 ```json
 {
-    "body": "Attachment\n\nFix `interact` doctest.  **sagenb** repo.",
+    "body": "Attachment [trac_5601-sagenb_doctest.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-sagenb_doctest.patch) by mpatel created at 2010-02-22 04:18:04\n\nFix `interact` doctest.  **sagenb** repo.",
     "created_at": "2010-02-22T04:18:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
@@ -1319,7 +1319,7 @@ archive/issue_comments_043723.json:
 }
 ```
 
-Attachment
+Attachment [trac_5601-sagenb_doctest.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-sagenb_doctest.patch) by mpatel created at 2010-02-22 04:18:04
 
 Fix `interact` doctest.  **sagenb** repo.
 

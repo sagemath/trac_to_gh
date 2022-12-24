@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3346
 archive/issue_comments_023246.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3346.patch](tarball://root/attachments/some-uuid/ticket3346/sage-3346.patch) by was created at 2008-06-01 01:22:43",
     "created_at": "2008-06-01T01:22:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3346",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_023246.json:
 }
 ```
 
-Attachment
+Attachment [sage-3346.patch](tarball://root/attachments/some-uuid/ticket3346/sage-3346.patch) by was created at 2008-06-01 01:22:43
 
 
 
@@ -49,7 +49,7 @@ Attachment
 archive/issue_comments_023247.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3346-part2.patch](tarball://root/attachments/some-uuid/ticket3346/sage-3346-part2.patch) by was created at 2008-06-01 20:28:57",
     "created_at": "2008-06-01T20:28:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3346",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_023247.json:
 }
 ```
 
-Attachment
+Attachment [sage-3346-part2.patch](tarball://root/attachments/some-uuid/ticket3346/sage-3346-part2.patch) by was created at 2008-06-01 20:28:57
 
 
 
@@ -67,7 +67,7 @@ Attachment
 archive/issue_comments_023248.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3346-part4.patch](tarball://root/attachments/some-uuid/ticket3346/sage-3346-part4.patch) by was created at 2008-06-02 05:41:50",
     "created_at": "2008-06-02T05:41:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3346",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_023248.json:
 }
 ```
 
-Attachment
+Attachment [sage-3346-part4.patch](tarball://root/attachments/some-uuid/ticket3346/sage-3346-part4.patch) by was created at 2008-06-02 05:41:50
 
 
 
@@ -85,7 +85,7 @@ Attachment
 archive/issue_comments_023249.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3346-part5.patch](tarball://root/attachments/some-uuid/ticket3346/sage-3346-part5.patch) by was created at 2008-06-02 17:15:09",
     "created_at": "2008-06-02T17:15:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3346",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_023249.json:
 }
 ```
 
-Attachment
+Attachment [sage-3346-part5.patch](tarball://root/attachments/some-uuid/ticket3346/sage-3346-part5.patch) by was created at 2008-06-02 17:15:09
 
 
 
@@ -103,7 +103,7 @@ Attachment
 archive/issue_comments_023250.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3346-part6.patch](tarball://root/attachments/some-uuid/ticket3346/sage-3346-part6.patch) by was created at 2008-06-02 17:45:54",
     "created_at": "2008-06-02T17:45:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3346",
     "type": "issue_comment",
@@ -112,7 +112,7 @@ archive/issue_comments_023250.json:
 }
 ```
 
-Attachment
+Attachment [sage-3346-part6.patch](tarball://root/attachments/some-uuid/ticket3346/sage-3346-part6.patch) by was created at 2008-06-02 17:45:54
 
 
 

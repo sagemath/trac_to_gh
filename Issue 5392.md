@@ -96,7 +96,7 @@ patch against sage 5.10
 archive/issue_comments_041524.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5392.patch](tarball://root/attachments/some-uuid/ticket5392/trac_5392.patch) by ArgaezG created at 2013-07-23 13:24:34",
     "created_at": "2013-07-23T13:24:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5392",
     "type": "issue_comment",
@@ -105,7 +105,7 @@ archive/issue_comments_041524.json:
 }
 ```
 
-Attachment
+Attachment [trac_5392.patch](tarball://root/attachments/some-uuid/ticket5392/trac_5392.patch) by ArgaezG created at 2013-07-23 13:24:34
 
 
 
@@ -240,7 +240,7 @@ The reviewer patch needs a proper commit message, use `hg qrefresh -e` for this.
 archive/issue_comments_041532.json:
 ```json
 {
-    "body": "Attachment\n\n`@`jdemeyer: is it correct now?",
+    "body": "Attachment [trac_5392_subfield_review.patch](tarball://root/attachments/some-uuid/ticket5392/trac_5392_subfield_review.patch) by mkosters created at 2013-07-24 07:59:40\n\n`@`jdemeyer: is it correct now?",
     "created_at": "2013-07-24T07:59:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5392",
     "type": "issue_comment",
@@ -249,7 +249,7 @@ archive/issue_comments_041532.json:
 }
 ```
 
-Attachment
+Attachment [trac_5392_subfield_review.patch](tarball://root/attachments/some-uuid/ticket5392/trac_5392_subfield_review.patch) by mkosters created at 2013-07-24 07:59:40
 
 `@`jdemeyer: is it correct now?
 

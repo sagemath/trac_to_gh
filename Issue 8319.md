@@ -75,7 +75,7 @@ Applies to 4.3.3
 archive/issue_comments_073791.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch implements the cure.  I did not bother putting in a test for minimality of the original model, since all that does is to compute the minimal model anyway and compare!  Also, the minimal model is cached, so that would only be done once.  We do not cache the isomorphism to the minimal model, but that is cheap to compute.",
+    "body": "Attachment [trac_8319-heights.patch](tarball://root/attachments/some-uuid/ticket8319/trac_8319-heights.patch) by cremona created at 2010-02-24 21:02:54\n\nThe patch implements the cure.  I did not bother putting in a test for minimality of the original model, since all that does is to compute the minimal model anyway and compare!  Also, the minimal model is cached, so that would only be done once.  We do not cache the isomorphism to the minimal model, but that is cheap to compute.",
     "created_at": "2010-02-24T21:02:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8319",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_073791.json:
 }
 ```
 
-Attachment
+Attachment [trac_8319-heights.patch](tarball://root/attachments/some-uuid/ticket8319/trac_8319-heights.patch) by cremona created at 2010-02-24 21:02:54
 
 The patch implements the cure.  I did not bother putting in a test for minimality of the original model, since all that does is to compute the minimal model anyway and compare!  Also, the minimal model is cached, so that would only be done once.  We do not cache the isomorphism to the minimal model, but that is cheap to compute.
 

@@ -69,7 +69,7 @@ Changing status from new to assigned.
 archive/issue_comments_040646.json:
 ```json
 {
-    "body": "Attachment\n\nThis is the fix I am applying inside the spkg - it will make it easier for the reviewer",
+    "body": "Attachment [gdmodule_Setup.py-fix.patch](tarball://root/attachments/some-uuid/ticket5289/gdmodule_Setup.py-fix.patch) by mabshoff created at 2009-02-17 06:42:51\n\nThis is the fix I am applying inside the spkg - it will make it easier for the reviewer",
     "created_at": "2009-02-17T06:42:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5289",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_040646.json:
 }
 ```
 
-Attachment
+Attachment [gdmodule_Setup.py-fix.patch](tarball://root/attachments/some-uuid/ticket5289/gdmodule_Setup.py-fix.patch) by mabshoff created at 2009-02-17 06:42:51
 
 This is the fix I am applying inside the spkg - it will make it easier for the reviewer
 

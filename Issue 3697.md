@@ -67,7 +67,7 @@ Changing assignee from tbd to TomDraper.
 archive/issue_comments_026232.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [is_primitive.patch](tarball://root/attachments/some-uuid/ticket3697/is_primitive.patch) by TomDraper created at 2008-07-21 21:21:29",
     "created_at": "2008-07-21T21:21:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3697",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_026232.json:
 }
 ```
 
-Attachment
+Attachment [is_primitive.patch](tarball://root/attachments/some-uuid/ticket3697/is_primitive.patch) by TomDraper created at 2008-07-21 21:21:29
 
 
 
@@ -109,7 +109,7 @@ Michael
 archive/issue_comments_026234.json:
 ```json
 {
-    "body": "Attachment\n\nfixed the typo",
+    "body": "Attachment [is_primitive.2.patch](tarball://root/attachments/some-uuid/ticket3697/is_primitive.2.patch) by robertwb created at 2008-07-31 05:36:57\n\nfixed the typo",
     "created_at": "2008-07-31T05:36:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3697",
     "type": "issue_comment",
@@ -118,7 +118,7 @@ archive/issue_comments_026234.json:
 }
 ```
 
-Attachment
+Attachment [is_primitive.2.patch](tarball://root/attachments/some-uuid/ticket3697/is_primitive.2.patch) by robertwb created at 2008-07-31 05:36:57
 
 fixed the typo
 

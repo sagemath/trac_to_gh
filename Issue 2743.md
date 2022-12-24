@@ -117,7 +117,7 @@ sage: %timeit eq(x=2, y=3)
 archive/issue_comments_018859.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-2743-sym-eq-call.patch](tarball://root/attachments/some-uuid/ticket2743/trac-2743-sym-eq-call.patch) by jason created at 2008-04-02 07:09:30",
     "created_at": "2008-04-02T07:09:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2743",
     "type": "issue_comment",
@@ -126,7 +126,7 @@ archive/issue_comments_018859.json:
 }
 ```
 
-Attachment
+Attachment [trac-2743-sym-eq-call.patch](tarball://root/attachments/some-uuid/ticket2743/trac-2743-sym-eq-call.patch) by jason created at 2008-04-02 07:09:30
 
 
 

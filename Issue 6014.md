@@ -68,7 +68,7 @@ applies to 3.4.2 and passes sage -testall
 archive/issue_comments_047852.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6014-hexads.patch](tarball://root/attachments/some-uuid/ticket6014/trac_6014-hexads.patch) by wdj created at 2009-05-12 00:33:10",
     "created_at": "2009-05-12T00:33:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6014",
     "type": "issue_comment",
@@ -77,7 +77,7 @@ archive/issue_comments_047852.json:
 }
 ```
 
-Attachment
+Attachment [trac_6014-hexads.patch](tarball://root/attachments/some-uuid/ticket6014/trac_6014-hexads.patch) by wdj created at 2009-05-12 00:33:10
 
 
 
@@ -108,7 +108,7 @@ Also, is it really that difficult to implement minimog_modulo11?  I think the on
 archive/issue_comments_047854.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6014-hexads2.patch](tarball://root/attachments/some-uuid/ticket6014/trac_6014-hexads2.patch) by wdj created at 2009-06-03 04:41:37",
     "created_at": "2009-06-03T04:41:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6014",
     "type": "issue_comment",
@@ -117,7 +117,7 @@ archive/issue_comments_047854.json:
 }
 ```
 
-Attachment
+Attachment [trac_6014-hexads2.patch](tarball://root/attachments/some-uuid/ticket6014/trac_6014-hexads2.patch) by wdj created at 2009-06-03 04:41:37
 
 
 
@@ -146,7 +146,7 @@ Both patches need to be applied.
 archive/issue_comments_047856.json:
 ```json
 {
-    "body": "Attachment\n\nto be applied after the other two",
+    "body": "Attachment [trac_6014-hexads3.patch](tarball://root/attachments/some-uuid/ticket6014/trac_6014-hexads3.patch) by wdj created at 2009-06-03 22:12:29\n\nto be applied after the other two",
     "created_at": "2009-06-03T22:12:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6014",
     "type": "issue_comment",
@@ -155,7 +155,7 @@ archive/issue_comments_047856.json:
 }
 ```
 
-Attachment
+Attachment [trac_6014-hexads3.patch](tarball://root/attachments/some-uuid/ticket6014/trac_6014-hexads3.patch) by wdj created at 2009-06-03 22:12:29
 
 to be applied after the other two
 
@@ -166,7 +166,7 @@ to be applied after the other two
 archive/issue_comments_047857.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6014-hexads4.patch](tarball://root/attachments/some-uuid/ticket6014/trac_6014-hexads4.patch) by wdj created at 2009-06-04 02:36:29",
     "created_at": "2009-06-04T02:36:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6014",
     "type": "issue_comment",
@@ -175,7 +175,7 @@ archive/issue_comments_047857.json:
 }
 ```
 
-Attachment
+Attachment [trac_6014-hexads4.patch](tarball://root/attachments/some-uuid/ticket6014/trac_6014-hexads4.patch) by wdj created at 2009-06-04 02:36:29
 
 
 

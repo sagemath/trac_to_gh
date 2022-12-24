@@ -98,7 +98,7 @@ Okay, I've written a patch for this! Using pari is significantly faster than usi
 archive/issue_comments_007394.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_1191_solve_right_Z_mod_n.patch](tarball://root/attachments/some-uuid/ticket1191/trac_1191_solve_right_Z_mod_n.patch) by robharron created at 2013-04-02 04:27:17",
     "created_at": "2013-04-02T04:27:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1191",
     "type": "issue_comment",
@@ -107,7 +107,7 @@ archive/issue_comments_007394.json:
 }
 ```
 
-Attachment
+Attachment [trac_1191_solve_right_Z_mod_n.patch](tarball://root/attachments/some-uuid/ticket1191/trac_1191_solve_right_Z_mod_n.patch) by robharron created at 2013-04-02 04:27:17
 
 
 
@@ -251,7 +251,7 @@ Snippet of the f.g. modules over a PID implementation. This is much slower and o
 archive/issue_comments_007400.json:
 ```json
 {
-    "body": "Attachment\n\nOkay, that convinces me.",
+    "body": "Attachment [solve_left_slow_snippet.py](tarball://root/attachments/some-uuid/ticket1191/solve_left_slow_snippet.py) by malb created at 2013-04-02 18:33:50\n\nOkay, that convinces me.",
     "created_at": "2013-04-02T18:33:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1191",
     "type": "issue_comment",
@@ -260,7 +260,7 @@ archive/issue_comments_007400.json:
 }
 ```
 
-Attachment
+Attachment [solve_left_slow_snippet.py](tarball://root/attachments/some-uuid/ticket1191/solve_left_slow_snippet.py) by malb created at 2013-04-02 18:33:50
 
 Okay, that convinces me.
 

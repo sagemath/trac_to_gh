@@ -49,7 +49,7 @@ Changing status from new to needs_review.
 archive/issue_comments_081058.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8827-point-height-cache.patch](tarball://root/attachments/some-uuid/ticket8827/8827-point-height-cache.patch) by robertwb created at 2010-04-30 06:39:41",
     "created_at": "2010-04-30T06:39:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8827",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_081058.json:
 }
 ```
 
-Attachment
+Attachment [8827-point-height-cache.patch](tarball://root/attachments/some-uuid/ticket8827/8827-point-height-cache.patch) by robertwb created at 2010-04-30 06:39:41
 
 
 

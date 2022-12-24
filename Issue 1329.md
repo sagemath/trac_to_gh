@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1329
 archive/issue_comments_008507.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-2.8.14-rqdf_fix.h-on-Solaris-unclean.patch](tarball://root/attachments/some-uuid/ticket1329/Sage-2.8.14-rqdf_fix.h-on-Solaris-unclean.patch) by mabshoff created at 2007-11-28 22:29:19",
     "created_at": "2007-11-28T22:29:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1329",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_008507.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.8.14-rqdf_fix.h-on-Solaris-unclean.patch](tarball://root/attachments/some-uuid/ticket1329/Sage-2.8.14-rqdf_fix.h-on-Solaris-unclean.patch) by mabshoff created at 2007-11-28 22:29:19
 
 
 
@@ -53,7 +53,7 @@ Attachment
 archive/issue_comments_008508.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-2.10.1.rc2-Solaris-build-fixes-for-sage.spkg.patch](tarball://root/attachments/some-uuid/ticket1329/Sage-2.10.1.rc2-Solaris-build-fixes-for-sage.spkg.patch) by mabshoff created at 2008-01-30 03:19:11",
     "created_at": "2008-01-30T03:19:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1329",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_008508.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.10.1.rc2-Solaris-build-fixes-for-sage.spkg.patch](tarball://root/attachments/some-uuid/ticket1329/Sage-2.10.1.rc2-Solaris-build-fixes-for-sage.spkg.patch) by mabshoff created at 2008-01-30 03:19:11
 
 
 

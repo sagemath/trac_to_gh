@@ -107,7 +107,7 @@ Patches posted to change the repr of multivariate polynomials rings.  -testall p
 archive/issue_comments_004524.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [764.patch](tarball://root/attachments/some-uuid/ticket764/764.patch) by mhansen created at 2007-09-30 18:23:02",
     "created_at": "2007-09-30T18:23:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/764",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_004524.json:
 }
 ```
 
-Attachment
+Attachment [764.patch](tarball://root/attachments/some-uuid/ticket764/764.patch) by mhansen created at 2007-09-30 18:23:02
 
 
 
@@ -125,7 +125,7 @@ Attachment
 archive/issue_comments_004525.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [const-tut.patch](tarball://root/attachments/some-uuid/ticket764/const-tut.patch) by mhansen created at 2007-09-30 18:23:18",
     "created_at": "2007-09-30T18:23:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/764",
     "type": "issue_comment",
@@ -134,7 +134,7 @@ archive/issue_comments_004525.json:
 }
 ```
 
-Attachment
+Attachment [const-tut.patch](tarball://root/attachments/some-uuid/ticket764/const-tut.patch) by mhansen created at 2007-09-30 18:23:18
 
 
 

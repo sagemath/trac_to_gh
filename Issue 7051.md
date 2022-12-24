@@ -92,7 +92,7 @@ If necessary, we can split this into several tickets, because the first issue (`
 archive/issue_comments_058361.json:
 ```json
 {
-    "body": "Attachment\n\nApplies well. Things look good here. Positive review.",
+    "body": "Attachment [trac_7051-latex.patch](tarball://root/attachments/some-uuid/ticket7051/trac_7051-latex.patch) by timdumol created at 2009-10-01 13:36:12\n\nApplies well. Things look good here. Positive review.",
     "created_at": "2009-10-01T13:36:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7051",
     "type": "issue_comment",
@@ -101,7 +101,7 @@ archive/issue_comments_058361.json:
 }
 ```
 
-Attachment
+Attachment [trac_7051-latex.patch](tarball://root/attachments/some-uuid/ticket7051/trac_7051-latex.patch) by timdumol created at 2009-10-01 13:36:12
 
 Applies well. Things look good here. Positive review.
 
@@ -112,7 +112,7 @@ Applies well. Things look good here. Positive review.
 archive/issue_comments_058362.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7051-latex.2.patch](tarball://root/attachments/some-uuid/ticket7051/trac_7051-latex.2.patch) by mhansen created at 2009-10-15 09:30:25",
     "created_at": "2009-10-15T09:30:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7051",
     "type": "issue_comment",
@@ -121,7 +121,7 @@ archive/issue_comments_058362.json:
 }
 ```
 
-Attachment
+Attachment [trac_7051-latex.2.patch](tarball://root/attachments/some-uuid/ticket7051/trac_7051-latex.2.patch) by mhansen created at 2009-10-15 09:30:25
 
 
 

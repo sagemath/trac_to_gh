@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9226
 archive/issue_comments_086568.json:
 ```json
 {
-    "body": "Attachment\n\nSuggested revised README.txt",
+    "body": "Attachment [README.txt](tarball://root/attachments/some-uuid/ticket9226/README.txt) by drkirkby created at 2010-06-12 12:25:58\n\nSuggested revised README.txt",
     "created_at": "2010-06-12T12:25:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9226",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_086568.json:
 }
 ```
 
-Attachment
+Attachment [README.txt](tarball://root/attachments/some-uuid/ticket9226/README.txt) by drkirkby created at 2010-06-12 12:25:58
 
 Suggested revised README.txt
 
@@ -57,7 +57,7 @@ Suggested revised README.txt
 archive/issue_comments_086569.json:
 ```json
 {
-    "body": "Attachment\n\nDifferences from README.txt in Sage 4.4.3",
+    "body": "Attachment [README.txt.diff](tarball://root/attachments/some-uuid/ticket9226/README.txt.diff) by drkirkby created at 2010-06-12 12:26:40\n\nDifferences from README.txt in Sage 4.4.3",
     "created_at": "2010-06-12T12:26:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9226",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_086569.json:
 }
 ```
 
-Attachment
+Attachment [README.txt.diff](tarball://root/attachments/some-uuid/ticket9226/README.txt.diff) by drkirkby created at 2010-06-12 12:26:40
 
 Differences from README.txt in Sage 4.4.3
 

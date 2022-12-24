@@ -277,7 +277,7 @@ Most of my patch is not about coercion, but anyone doesn't understand how coerci
 archive/issue_comments_028729.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3999-multwrap.patch](tarball://root/attachments/some-uuid/ticket3999/3999-multwrap.patch) by robertwb created at 2008-12-07 10:44:07",
     "created_at": "2008-12-07T10:44:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3999",
     "type": "issue_comment",
@@ -286,7 +286,7 @@ archive/issue_comments_028729.json:
 }
 ```
 
-Attachment
+Attachment [3999-multwrap.patch](tarball://root/attachments/some-uuid/ticket3999/3999-multwrap.patch) by robertwb created at 2008-12-07 10:44:07
 
 
 
@@ -330,7 +330,7 @@ OK, will do.  a+b will not work for multiplicative groups:  it will give a NotIm
 archive/issue_comments_028731.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3999-doctests.patch](tarball://root/attachments/some-uuid/ticket3999/3999-doctests.patch) by boothby created at 2009-01-23 09:00:49",
     "created_at": "2009-01-23T09:00:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3999",
     "type": "issue_comment",
@@ -339,7 +339,7 @@ archive/issue_comments_028731.json:
 }
 ```
 
-Attachment
+Attachment [3999-doctests.patch](tarball://root/attachments/some-uuid/ticket3999/3999-doctests.patch) by boothby created at 2009-01-23 09:00:49
 
 
 
@@ -404,7 +404,7 @@ This would be useful, for example, if one wrote a blackbox group algorithm multi
 archive/issue_comments_028735.json:
 ```json
 {
-    "body": "Attachment\n\nDoctests fixed after #5064 is applied.",
+    "body": "Attachment [3999-fixtypo.patch](tarball://root/attachments/some-uuid/ticket3999/3999-fixtypo.patch) by boothby created at 2009-01-24 10:45:24\n\nDoctests fixed after #5064 is applied.",
     "created_at": "2009-01-24T10:45:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3999",
     "type": "issue_comment",
@@ -413,7 +413,7 @@ archive/issue_comments_028735.json:
 }
 ```
 
-Attachment
+Attachment [3999-fixtypo.patch](tarball://root/attachments/some-uuid/ticket3999/3999-fixtypo.patch) by boothby created at 2009-01-24 10:45:24
 
 Doctests fixed after #5064 is applied.
 

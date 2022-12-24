@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/630
 archive/issue_comments_003243.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [combinat.hg](tarball://root/attachments/some-uuid/ticket630/combinat.hg) by mhansen created at 2007-09-20 20:48:10",
     "created_at": "2007-09-20T20:48:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/630",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_003243.json:
 }
 ```
 
-Attachment
+Attachment [combinat.hg](tarball://root/attachments/some-uuid/ticket630/combinat.hg) by mhansen created at 2007-09-20 20:48:10
 
 
 
@@ -69,7 +69,7 @@ Bundle attached.
 archive/issue_comments_003245.json:
 ```json
 {
-    "body": "Attachment\n\nNOTE:\n\nThe old partitions function (copied below), was vastly faster than the new\nPartitions(n).list() for n=30...\n\n```\ndef partitions(n):\n    r\"\"\"\n    Generator of all the partitions of the integer $n$.\n\n    INPUT:\n        n -- int\n\n    To compute the number of partitions of $n$ use\n    \\code{number_of_partitions(n)}.\n\n    EXAMPLES:\n        sage.: partitions(3)\n        <generator object at 0xab3b3eac>\n        sage: list(partitions(3))\n        [(1, 1, 1), (1, 2), (3,)]\n\n\n    AUTHOR: Adapted from David Eppstein, Jan Van lent, George Yoshida;\n    Python Cookbook 2, Recipe 19.16.\n    \"\"\"\n    n == ZZ(n)\n    # base case of the recursion: zero is the sum of the empty tuple\n    if n == 0:\n        yield ( )\n        return\n    # modify the partitions of n-1 to form the partitions of n\n    for p in partitions(n-1):\n        yield (1,) + p\n        if p and (len(p) < 2 or p[1] > p[0]):\n            yield (p[0] + 1,) + p[1:]\nsage: time v=list(partitions(30))\nCPU times: user 0.03 s, sys: 0.00 s, total: 0.03 s\n\n\n--\n[15:59] <william_stein> mhansen -- interestingly the *old* partitions function is way faster than your new one...??\n[15:59] <william_stein> old:\n[15:59] <william_stein> sage: time v=list(partitions(30))\n[15:59] <william_stein> CPU times: user 0.03 s, sys: 0.00 s, total: 0.03 s\n[15:59] <millster> aha\n[15:59] <william_stein> new:\n[15:59] <william_stein> sage: time v=Partitions(30).list()\n[15:59] <william_stein> CPU times: user 0.46 s, sys: 0.02 s, total: 0.48 s\n```\n",
+    "body": "Attachment [tut.patch](tarball://root/attachments/some-uuid/ticket630/tut.patch) by was created at 2007-09-20 23:03:47\n\nNOTE:\n\nThe old partitions function (copied below), was vastly faster than the new\nPartitions(n).list() for n=30...\n\n```\ndef partitions(n):\n    r\"\"\"\n    Generator of all the partitions of the integer $n$.\n\n    INPUT:\n        n -- int\n\n    To compute the number of partitions of $n$ use\n    \\code{number_of_partitions(n)}.\n\n    EXAMPLES:\n        sage.: partitions(3)\n        <generator object at 0xab3b3eac>\n        sage: list(partitions(3))\n        [(1, 1, 1), (1, 2), (3,)]\n\n\n    AUTHOR: Adapted from David Eppstein, Jan Van lent, George Yoshida;\n    Python Cookbook 2, Recipe 19.16.\n    \"\"\"\n    n == ZZ(n)\n    # base case of the recursion: zero is the sum of the empty tuple\n    if n == 0:\n        yield ( )\n        return\n    # modify the partitions of n-1 to form the partitions of n\n    for p in partitions(n-1):\n        yield (1,) + p\n        if p and (len(p) < 2 or p[1] > p[0]):\n            yield (p[0] + 1,) + p[1:]\nsage: time v=list(partitions(30))\nCPU times: user 0.03 s, sys: 0.00 s, total: 0.03 s\n\n\n--\n[15:59] <william_stein> mhansen -- interestingly the *old* partitions function is way faster than your new one...??\n[15:59] <william_stein> old:\n[15:59] <william_stein> sage: time v=list(partitions(30))\n[15:59] <william_stein> CPU times: user 0.03 s, sys: 0.00 s, total: 0.03 s\n[15:59] <millster> aha\n[15:59] <william_stein> new:\n[15:59] <william_stein> sage: time v=Partitions(30).list()\n[15:59] <william_stein> CPU times: user 0.46 s, sys: 0.02 s, total: 0.48 s\n```\n",
     "created_at": "2007-09-20T23:03:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/630",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_003245.json:
 }
 ```
 
-Attachment
+Attachment [tut.patch](tarball://root/attachments/some-uuid/ticket630/tut.patch) by was created at 2007-09-20 23:03:47
 
 NOTE:
 
@@ -157,7 +157,7 @@ Resolution: fixed
 archive/issue_comments_003247.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [combinat.patch](tarball://root/attachments/some-uuid/ticket630/combinat.patch) by mhansen created at 2007-09-21 00:05:12",
     "created_at": "2007-09-21T00:05:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/630",
     "type": "issue_comment",
@@ -166,7 +166,7 @@ archive/issue_comments_003247.json:
 }
 ```
 
-Attachment
+Attachment [combinat.patch](tarball://root/attachments/some-uuid/ticket630/combinat.patch) by mhansen created at 2007-09-21 00:05:12
 
 
 
@@ -175,7 +175,7 @@ Attachment
 archive/issue_comments_003248.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [combinat2.patch](tarball://root/attachments/some-uuid/ticket630/combinat2.patch) by nthiery created at 2009-04-14 02:22:54",
     "created_at": "2009-04-14T02:22:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/630",
     "type": "issue_comment",
@@ -184,4 +184,4 @@ archive/issue_comments_003248.json:
 }
 ```
 
-Attachment
+Attachment [combinat2.patch](tarball://root/attachments/some-uuid/ticket630/combinat2.patch) by nthiery created at 2009-04-14 02:22:54

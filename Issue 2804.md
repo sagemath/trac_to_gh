@@ -119,7 +119,7 @@ Changing assignee from was to failure.
 archive/issue_comments_019251.json:
 ```json
 {
-    "body": "Attachment\n\ntrivial patch to revert to LUK charpoly method",
+    "body": "Attachment [2804.patch](tarball://root/attachments/some-uuid/ticket2804/2804.patch) by cpernet created at 2008-04-05 03:20:08\n\ntrivial patch to revert to LUK charpoly method",
     "created_at": "2008-04-05T03:20:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2804",
     "type": "issue_comment",
@@ -128,7 +128,7 @@ archive/issue_comments_019251.json:
 }
 ```
 
-Attachment
+Attachment [2804.patch](tarball://root/attachments/some-uuid/ticket2804/2804.patch) by cpernet created at 2008-04-05 03:20:08
 
 trivial patch to revert to LUK charpoly method
 

@@ -108,7 +108,7 @@ patch for SAGE_ROOT/makefile
 archive/issue_comments_084317.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch removes .BUILDSTART, dochtml.log, spkg/install, and spkg/installed. It's a regular unified diff, since SAGE_ROOT isn't in a Mercurial repo.\n\nHrm, I see the \"beginner\" tag...I hope I'm not stepping on any beginner's toes here! Although changing files in SAGE_ROOT is a bit strange, since they're not version controlled.",
+    "body": "Attachment [makefile.patch](tarball://root/attachments/some-uuid/ticket9083/makefile.patch) by ddrake created at 2010-06-01 07:55:34\n\nThe attached patch removes .BUILDSTART, dochtml.log, spkg/install, and spkg/installed. It's a regular unified diff, since SAGE_ROOT isn't in a Mercurial repo.\n\nHrm, I see the \"beginner\" tag...I hope I'm not stepping on any beginner's toes here! Although changing files in SAGE_ROOT is a bit strange, since they're not version controlled.",
     "created_at": "2010-06-01T07:55:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9083",
     "type": "issue_comment",
@@ -117,7 +117,7 @@ archive/issue_comments_084317.json:
 }
 ```
 
-Attachment
+Attachment [makefile.patch](tarball://root/attachments/some-uuid/ticket9083/makefile.patch) by ddrake created at 2010-06-01 07:55:34
 
 The attached patch removes .BUILDSTART, dochtml.log, spkg/install, and spkg/installed. It's a regular unified diff, since SAGE_ROOT isn't in a Mercurial repo.
 
@@ -354,7 +354,7 @@ I think that the directory spkg/optional should also be removed.
 archive/issue_comments_084325.json:
 ```json
 {
-    "body": "Attachment\n\nthe file SAGE_ROOT/makefile",
+    "body": "Attachment [makefile](tarball://root/attachments/some-uuid/ticket9083/makefile) by jhpalmieri created at 2010-06-27 05:38:24\n\nthe file SAGE_ROOT/makefile",
     "created_at": "2010-06-27T05:38:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9083",
     "type": "issue_comment",
@@ -363,7 +363,7 @@ archive/issue_comments_084325.json:
 }
 ```
 
-Attachment
+Attachment [makefile](tarball://root/attachments/some-uuid/ticket9083/makefile) by jhpalmieri created at 2010-06-27 05:38:24
 
 the file SAGE_ROOT/makefile
 
@@ -374,7 +374,7 @@ the file SAGE_ROOT/makefile
 archive/issue_comments_084326.json:
 ```json
 {
-    "body": "Attachment\n\ndiff between original makefile and the one I attached",
+    "body": "Attachment [makefile-new.patch](tarball://root/attachments/some-uuid/ticket9083/makefile-new.patch) by jhpalmieri created at 2010-06-27 05:38:44\n\ndiff between original makefile and the one I attached",
     "created_at": "2010-06-27T05:38:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9083",
     "type": "issue_comment",
@@ -383,7 +383,7 @@ archive/issue_comments_084326.json:
 }
 ```
 
-Attachment
+Attachment [makefile-new.patch](tarball://root/attachments/some-uuid/ticket9083/makefile-new.patch) by jhpalmieri created at 2010-06-27 05:38:44
 
 diff between original makefile and the one I attached
 
@@ -454,7 +454,7 @@ Also delete `docpdf.log`.
 archive/issue_comments_084330.json:
 ```json
 {
-    "body": "Attachment\n\nDiff of `makefile.2` vs. 4.5.alpha4.",
+    "body": "Attachment [makefile.2](tarball://root/attachments/some-uuid/ticket9083/makefile.2) by mpatel created at 2010-07-07 05:06:59\n\nDiff of `makefile.2` vs. 4.5.alpha4.",
     "created_at": "2010-07-07T05:06:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9083",
     "type": "issue_comment",
@@ -463,7 +463,7 @@ archive/issue_comments_084330.json:
 }
 ```
 
-Attachment
+Attachment [makefile.2](tarball://root/attachments/some-uuid/ticket9083/makefile.2) by mpatel created at 2010-07-07 05:06:59
 
 Diff of `makefile.2` vs. 4.5.alpha4.
 
@@ -474,7 +474,7 @@ Diff of `makefile.2` vs. 4.5.alpha4.
 archive/issue_comments_084331.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached a reviewer's update that also deletes `docpdf.log`.",
+    "body": "Attachment [makefile.diff](tarball://root/attachments/some-uuid/ticket9083/makefile.diff) by mpatel created at 2010-07-07 05:09:35\n\nI've attached a reviewer's update that also deletes `docpdf.log`.",
     "created_at": "2010-07-07T05:09:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9083",
     "type": "issue_comment",
@@ -483,7 +483,7 @@ archive/issue_comments_084331.json:
 }
 ```
 
-Attachment
+Attachment [makefile.diff](tarball://root/attachments/some-uuid/ticket9083/makefile.diff) by mpatel created at 2010-07-07 05:09:35
 
 I've attached a reviewer's update that also deletes `docpdf.log`.
 

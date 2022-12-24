@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9016
 archive/issue_comments_083395.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9016-morphishm_hash.patch](tarball://root/attachments/some-uuid/ticket9016/trac_9016-morphishm_hash.patch) by burcin created at 2010-05-22 15:38:15",
     "created_at": "2010-05-22T15:38:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
@@ -53,7 +53,7 @@ archive/issue_comments_083395.json:
 }
 ```
 
-Attachment
+Attachment [trac_9016-morphishm_hash.patch](tarball://root/attachments/some-uuid/ticket9016/trac_9016-morphishm_hash.patch) by burcin created at 2010-05-22 15:38:15
 
 
 
@@ -282,7 +282,7 @@ apply only this patch
 archive/issue_comments_083405.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:5 davidloeffler]:\n> This patch causes a doctest failure on vanilla Sage 4.5.alpha1: \n\nI uploaded a new patch which fixes this.\n\nattachment:trac_9016-morphishm_hash.take2.patch also adds `__hash__()` methods to all the classes defined in `sage/{categories/map.pyx,rings/morphism.pyx}` which also define `__cmp__()` or `__richcmp__()` methods, in line with Robert's remarks in comment:2.\n\nRobert, can you take a look at this again?",
+    "body": "Attachment [trac_9016-morphishm_hash.take2.patch](tarball://root/attachments/some-uuid/ticket9016/trac_9016-morphishm_hash.take2.patch) by burcin created at 2010-09-13 10:22:41\n\nReplying to [comment:5 davidloeffler]:\n> This patch causes a doctest failure on vanilla Sage 4.5.alpha1: \n\nI uploaded a new patch which fixes this.\n\nattachment:trac_9016-morphishm_hash.take2.patch also adds `__hash__()` methods to all the classes defined in `sage/{categories/map.pyx,rings/morphism.pyx}` which also define `__cmp__()` or `__richcmp__()` methods, in line with Robert's remarks in comment:2.\n\nRobert, can you take a look at this again?",
     "created_at": "2010-09-13T10:22:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
@@ -291,7 +291,7 @@ archive/issue_comments_083405.json:
 }
 ```
 
-Attachment
+Attachment [trac_9016-morphishm_hash.take2.patch](tarball://root/attachments/some-uuid/ticket9016/trac_9016-morphishm_hash.take2.patch) by burcin created at 2010-09-13 10:22:41
 
 Replying to [comment:5 davidloeffler]:
 > This patch causes a doctest failure on vanilla Sage 4.5.alpha1: 
@@ -345,7 +345,7 @@ rebased to 4.7.alpha1
 archive/issue_comments_083408.json:
 ```json
 {
-    "body": "Attachment\n\nApparently someone else fixed the problem in `sage/structure/sequence.py`. I rebased the patch to 4.7.alpha1.\n\nApply trac_9016-morphishm_hash.take3.patch",
+    "body": "Attachment [trac_9016-morphishm_hash.take3.patch](tarball://root/attachments/some-uuid/ticket9016/trac_9016-morphishm_hash.take3.patch) by burcin created at 2011-03-22 19:38:52\n\nApparently someone else fixed the problem in `sage/structure/sequence.py`. I rebased the patch to 4.7.alpha1.\n\nApply trac_9016-morphishm_hash.take3.patch",
     "created_at": "2011-03-22T19:38:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
@@ -354,7 +354,7 @@ archive/issue_comments_083408.json:
 }
 ```
 
-Attachment
+Attachment [trac_9016-morphishm_hash.take3.patch](tarball://root/attachments/some-uuid/ticket9016/trac_9016-morphishm_hash.take3.patch) by burcin created at 2011-03-22 19:38:52
 
 Apparently someone else fixed the problem in `sage/structure/sequence.py`. I rebased the patch to 4.7.alpha1.
 
@@ -554,7 +554,7 @@ Also, I don't believe you need `# indirect doctest` for the `hash()`, but this i
 archive/issue_comments_083417.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9016-morphishm_hash.take4.patch](tarball://root/attachments/some-uuid/ticket9016/trac_9016-morphishm_hash.take4.patch) by burcin created at 2012-11-19 03:34:50",
     "created_at": "2012-11-19T03:34:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
@@ -563,7 +563,7 @@ archive/issue_comments_083417.json:
 }
 ```
 
-Attachment
+Attachment [trac_9016-morphishm_hash.take4.patch](tarball://root/attachments/some-uuid/ticket9016/trac_9016-morphishm_hash.take4.patch) by burcin created at 2012-11-19 03:34:50
 
 
 
@@ -642,7 +642,7 @@ After this, that should be it. Thank you.
 archive/issue_comments_083421.json:
 ```json
 {
-    "body": "Attachment\n\napply only this patch",
+    "body": "Attachment [trac_9016-morphishm_hash.take5.patch](tarball://root/attachments/some-uuid/ticket9016/trac_9016-morphishm_hash.take5.patch) by burcin created at 2012-11-19 11:14:12\n\napply only this patch",
     "created_at": "2012-11-19T11:14:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
@@ -651,7 +651,7 @@ archive/issue_comments_083421.json:
 }
 ```
 
-Attachment
+Attachment [trac_9016-morphishm_hash.take5.patch](tarball://root/attachments/some-uuid/ticket9016/trac_9016-morphishm_hash.take5.patch) by burcin created at 2012-11-19 11:14:12
 
 apply only this patch
 
@@ -723,7 +723,7 @@ apply only this patch
 archive/issue_comments_083425.json:
 ```json
 {
-    "body": "Attachment\n\nI had some other patches applied. One of them might have changed the hash value. Corrected patch attached. Just to make sure there is no random error, I ran the tests in these two files 100 times. :)\n\nApply trac_9016-morphism_hash.patch",
+    "body": "Attachment [trac_9016-morphism_hash.patch](tarball://root/attachments/some-uuid/ticket9016/trac_9016-morphism_hash.patch) by burcin created at 2012-11-19 19:06:04\n\nI had some other patches applied. One of them might have changed the hash value. Corrected patch attached. Just to make sure there is no random error, I ran the tests in these two files 100 times. :)\n\nApply trac_9016-morphism_hash.patch",
     "created_at": "2012-11-19T19:06:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
@@ -732,7 +732,7 @@ archive/issue_comments_083425.json:
 }
 ```
 
-Attachment
+Attachment [trac_9016-morphism_hash.patch](tarball://root/attachments/some-uuid/ticket9016/trac_9016-morphism_hash.patch) by burcin created at 2012-11-19 19:06:04
 
 I had some other patches applied. One of them might have changed the hash value. Corrected patch attached. Just to make sure there is no random error, I ran the tests in these two files 100 times. :)
 
@@ -854,7 +854,7 @@ Travis
 archive/issue_comments_083430.json:
 ```json
 {
-    "body": "Attachment\n\napply only this patch",
+    "body": "Attachment [trac_9016-morphism_hash.take7.patch](tarball://root/attachments/some-uuid/ticket9016/trac_9016-morphism_hash.take7.patch) by burcin created at 2012-11-20 16:37:48\n\napply only this patch",
     "created_at": "2012-11-20T16:37:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
@@ -863,7 +863,7 @@ archive/issue_comments_083430.json:
 }
 ```
 
-Attachment
+Attachment [trac_9016-morphism_hash.take7.patch](tarball://root/attachments/some-uuid/ticket9016/trac_9016-morphism_hash.take7.patch) by burcin created at 2012-11-20 16:37:48
 
 apply only this patch
 

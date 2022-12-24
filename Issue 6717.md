@@ -79,7 +79,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6717
 archive/issue_comments_055128.json:
 ```json
 {
-    "body": "Attachment\n\nfix random printing problems in doctests",
+    "body": "Attachment [trac_6717.patch](tarball://root/attachments/some-uuid/ticket6717/trac_6717.patch) by burcin created at 2009-08-09 19:45:27\n\nfix random printing problems in doctests",
     "created_at": "2009-08-09T19:45:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6717",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_055128.json:
 }
 ```
 
-Attachment
+Attachment [trac_6717.patch](tarball://root/attachments/some-uuid/ticket6717/trac_6717.patch) by burcin created at 2009-08-09 19:45:27
 
 fix random printing problems in doctests
 

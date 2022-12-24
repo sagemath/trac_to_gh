@@ -136,7 +136,7 @@ I would delete "This exists for compatibility purposes." from the docstring.   I
 archive/issue_comments_014583.json:
 ```json
 {
-    "body": "Attachment\n\nNew patch posted, removes the questionable verbiage. Adds another doctest.",
+    "body": "Attachment [trac-2208.patch](tarball://root/attachments/some-uuid/ticket2208/trac-2208.patch) by craigcitro created at 2008-02-19 04:30:18\n\nNew patch posted, removes the questionable verbiage. Adds another doctest.",
     "created_at": "2008-02-19T04:30:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2208",
     "type": "issue_comment",
@@ -145,7 +145,7 @@ archive/issue_comments_014583.json:
 }
 ```
 
-Attachment
+Attachment [trac-2208.patch](tarball://root/attachments/some-uuid/ticket2208/trac-2208.patch) by craigcitro created at 2008-02-19 04:30:18
 
 New patch posted, removes the questionable verbiage. Adds another doctest.
 

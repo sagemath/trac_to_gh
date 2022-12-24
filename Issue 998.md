@@ -277,7 +277,7 @@ I think the problem is that the "names" member of a ring is allocated with the w
 archive/issue_comments_006078.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [998.patch](tarball://root/attachments/some-uuid/ticket998/998.patch) by cwitty created at 2007-11-25 05:09:01",
     "created_at": "2007-11-25T05:09:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/998",
     "type": "issue_comment",
@@ -286,7 +286,7 @@ archive/issue_comments_006078.json:
 }
 ```
 
-Attachment
+Attachment [998.patch](tarball://root/attachments/some-uuid/ticket998/998.patch) by cwitty created at 2007-11-25 05:09:01
 
 
 

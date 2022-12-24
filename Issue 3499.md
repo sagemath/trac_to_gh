@@ -61,7 +61,7 @@ Changing status from new to assigned.
 archive/issue_comments_024683.json:
 ```json
 {
-    "body": "Attachment\n\nI just realized that this may depend on trac #3495. Sorry.",
+    "body": "Attachment [trac-3499.2.patch](tarball://root/attachments/some-uuid/ticket3499/trac-3499.2.patch) by craigcitro created at 2008-06-24 00:26:42\n\nI just realized that this may depend on trac #3495. Sorry.",
     "created_at": "2008-06-24T00:26:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3499",
     "type": "issue_comment",
@@ -70,7 +70,7 @@ archive/issue_comments_024683.json:
 }
 ```
 
-Attachment
+Attachment [trac-3499.2.patch](tarball://root/attachments/some-uuid/ticket3499/trac-3499.2.patch) by craigcitro created at 2008-06-24 00:26:42
 
 I just realized that this may depend on trac #3495. Sorry.
 
@@ -147,7 +147,7 @@ part 2
 archive/issue_comments_024686.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-3499-2.patch](tarball://root/attachments/some-uuid/ticket3499/trac-3499-2.patch) by was created at 2008-06-24 03:08:50",
     "created_at": "2008-06-24T03:08:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3499",
     "type": "issue_comment",
@@ -156,7 +156,7 @@ archive/issue_comments_024686.json:
 }
 ```
 
-Attachment
+Attachment [trac-3499-2.patch](tarball://root/attachments/some-uuid/ticket3499/trac-3499-2.patch) by was created at 2008-06-24 03:08:50
 
 
 

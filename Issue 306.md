@@ -161,7 +161,7 @@ Changing assignee from somebody to was.
 archive/issue_comments_001458.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ncalexan-scripts-clone.hg](tarball://root/attachments/some-uuid/ticket306/ncalexan-scripts-clone.hg) by mabshoff created at 2007-09-11 02:44:41",
     "created_at": "2007-09-11T02:44:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/306",
     "type": "issue_comment",
@@ -170,7 +170,7 @@ archive/issue_comments_001458.json:
 }
 ```
 
-Attachment
+Attachment [ncalexan-scripts-clone.hg](tarball://root/attachments/some-uuid/ticket306/ncalexan-scripts-clone.hg) by mabshoff created at 2007-09-11 02:44:41
 
 
 

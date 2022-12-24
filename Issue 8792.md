@@ -51,7 +51,7 @@ Changing status from new to needs_review.
 archive/issue_comments_080516.json:
 ```json
 {
-    "body": "Attachment\n\nChanges in the patch include:\n\n* Add `sage/logic/booleval.py` to the reference manual.\n* Clean-ups in accordance with [PEP 008](http://www.python.org/dev/peps/pep-0008/).\n* Avoid using the name `vars` of a built-in function for a variable name.",
+    "body": "Attachment [trac_8792-booleval-clean-ups.patch](tarball://root/attachments/some-uuid/ticket8792/trac_8792-booleval-clean-ups.patch) by mvngu created at 2010-05-03 04:04:32\n\nChanges in the patch include:\n\n* Add `sage/logic/booleval.py` to the reference manual.\n* Clean-ups in accordance with [PEP 008](http://www.python.org/dev/peps/pep-0008/).\n* Avoid using the name `vars` of a built-in function for a variable name.",
     "created_at": "2010-05-03T04:04:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8792",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_080516.json:
 }
 ```
 
-Attachment
+Attachment [trac_8792-booleval-clean-ups.patch](tarball://root/attachments/some-uuid/ticket8792/trac_8792-booleval-clean-ups.patch) by mvngu created at 2010-05-03 04:04:32
 
 Changes in the patch include:
 

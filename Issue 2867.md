@@ -91,7 +91,7 @@ Merged in Sage 3.0.alpha4
 archive/issue_comments_019678.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [load_files.2.patch](tarball://root/attachments/some-uuid/ticket2867/load_files.2.patch) by yi created at 2008-04-10 03:41:12",
     "created_at": "2008-04-10T03:41:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2867",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_019678.json:
 }
 ```
 
-Attachment
+Attachment [load_files.2.patch](tarball://root/attachments/some-uuid/ticket2867/load_files.2.patch) by yi created at 2008-04-10 03:41:12
 
 
 

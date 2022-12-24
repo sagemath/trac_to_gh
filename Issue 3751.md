@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3751
 archive/issue_comments_026656.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch fixes this.  Based on 3.0.6, and all tests in sage/rings/number_fields pass.",
+    "body": "Attachment [sage-trac3751.patch](tarball://root/attachments/some-uuid/ticket3751/sage-trac3751.patch) by cremona created at 2008-08-01 02:41:37\n\nThe patch fixes this.  Based on 3.0.6, and all tests in sage/rings/number_fields pass.",
     "created_at": "2008-08-01T02:41:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3751",
     "type": "issue_comment",
@@ -50,7 +50,7 @@ archive/issue_comments_026656.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac3751.patch](tarball://root/attachments/some-uuid/ticket3751/sage-trac3751.patch) by cremona created at 2008-08-01 02:41:37
 
 The patch fixes this.  Based on 3.0.6, and all tests in sage/rings/number_fields pass.
 
@@ -61,7 +61,7 @@ The patch fixes this.  Based on 3.0.6, and all tests in sage/rings/number_fields
 archive/issue_comments_026657.json:
 ```json
 {
-    "body": "Attachment\n\nI added some tests, but this looks good.\n\nApply only 3751-ncalexan-class-number.patch.",
+    "body": "Attachment [3751-ncalexan-class-number.patch](tarball://root/attachments/some-uuid/ticket3751/3751-ncalexan-class-number.patch) by ncalexan created at 2008-08-10 19:02:08\n\nI added some tests, but this looks good.\n\nApply only 3751-ncalexan-class-number.patch.",
     "created_at": "2008-08-10T19:02:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3751",
     "type": "issue_comment",
@@ -70,7 +70,7 @@ archive/issue_comments_026657.json:
 }
 ```
 
-Attachment
+Attachment [3751-ncalexan-class-number.patch](tarball://root/attachments/some-uuid/ticket3751/3751-ncalexan-class-number.patch) by ncalexan created at 2008-08-10 19:02:08
 
 I added some tests, but this looks good.
 

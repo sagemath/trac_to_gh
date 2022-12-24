@@ -70,7 +70,7 @@ I was told it is not bad to put the corresponding ticket number in the doctest a
 archive/issue_comments_079901.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8736_radical_fix.patch](tarball://root/attachments/some-uuid/ticket8736/trac_8736_radical_fix.patch) by johanbosman created at 2010-04-22 10:54:19",
     "created_at": "2010-04-22T10:54:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8736",
     "type": "issue_comment",
@@ -79,7 +79,7 @@ archive/issue_comments_079901.json:
 }
 ```
 
-Attachment
+Attachment [trac_8736_radical_fix.patch](tarball://root/attachments/some-uuid/ticket8736/trac_8736_radical_fix.patch) by johanbosman created at 2010-04-22 10:54:19
 
 
 
@@ -160,7 +160,7 @@ Johan's patch with first hunk deleted
 archive/issue_comments_079906.json:
 ```json
 {
-    "body": "Attachment\n\nIt's easier to just edit the patch (i.e., delete the first hunk)...",
+    "body": "Attachment [trac_8736_radical_fix_single_patch.patch](tarball://root/attachments/some-uuid/ticket8736/trac_8736_radical_fix_single_patch.patch) by leif created at 2010-04-22 22:33:07\n\nIt's easier to just edit the patch (i.e., delete the first hunk)...",
     "created_at": "2010-04-22T22:33:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8736",
     "type": "issue_comment",
@@ -169,7 +169,7 @@ archive/issue_comments_079906.json:
 }
 ```
 
-Attachment
+Attachment [trac_8736_radical_fix_single_patch.patch](tarball://root/attachments/some-uuid/ticket8736/trac_8736_radical_fix_single_patch.patch) by leif created at 2010-04-22 22:33:07
 
 It's easier to just edit the patch (i.e., delete the first hunk)...
 

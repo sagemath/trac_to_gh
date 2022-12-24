@@ -211,7 +211,7 @@ Doctest now sorts the keys first.
 archive/issue_comments_046742.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5913-graph_colorings.patch](tarball://root/attachments/some-uuid/ticket5913/trac_5913-graph_colorings.patch) by rlm created at 2009-04-28 19:37:05",
     "created_at": "2009-04-28T19:37:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5913",
     "type": "issue_comment",
@@ -220,7 +220,7 @@ archive/issue_comments_046742.json:
 }
 ```
 
-Attachment
+Attachment [trac_5913-graph_colorings.patch](tarball://root/attachments/some-uuid/ticket5913/trac_5913-graph_colorings.patch) by rlm created at 2009-04-28 19:37:05
 
 
 

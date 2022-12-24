@@ -56,7 +56,7 @@ Changing status from new to needs_review.
 archive/issue_comments_070686.json:
 ```json
 {
-    "body": "Attachment\n\nThis package was building 64-bit before, so it's not entirely clear this is 100% necessary. But I agree it is desirable. It should make it more reliable. \n\nBut it is echoing 'Mac Intel' which is incorrect. \n\nDave",
+    "body": "Attachment [libgpg_error-1.6.p3.patch](tarball://root/attachments/some-uuid/ticket8066/libgpg_error-1.6.p3.patch) by drkirkby created at 2010-01-27 13:19:11\n\nThis package was building 64-bit before, so it's not entirely clear this is 100% necessary. But I agree it is desirable. It should make it more reliable. \n\nBut it is echoing 'Mac Intel' which is incorrect. \n\nDave",
     "created_at": "2010-01-27T13:19:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8066",
     "type": "issue_comment",
@@ -65,7 +65,7 @@ archive/issue_comments_070686.json:
 }
 ```
 
-Attachment
+Attachment [libgpg_error-1.6.p3.patch](tarball://root/attachments/some-uuid/ticket8066/libgpg_error-1.6.p3.patch) by drkirkby created at 2010-01-27 13:19:11
 
 This package was building 64-bit before, so it's not entirely clear this is 100% necessary. But I agree it is desirable. It should make it more reliable. 
 
@@ -116,7 +116,7 @@ I would also put the ticket number you are fixing in SPKG.txt. You should create
 archive/issue_comments_070689.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [libgpg_error-1.6.p3+.patch](tarball://root/attachments/some-uuid/ticket8066/libgpg_error-1.6.p3+.patch) by jsp created at 2010-01-27 13:37:51",
     "created_at": "2010-01-27T13:37:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8066",
     "type": "issue_comment",
@@ -125,7 +125,7 @@ archive/issue_comments_070689.json:
 }
 ```
 
-Attachment
+Attachment [libgpg_error-1.6.p3+.patch](tarball://root/attachments/some-uuid/ticket8066/libgpg_error-1.6.p3+.patch) by jsp created at 2010-01-27 13:37:51
 
 
 

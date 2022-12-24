@@ -147,7 +147,7 @@ I think this happens because `sphinx.environment.BuildEnvironment.topickle` firs
 archive/issue_comments_062965.json:
 ```json
 {
-    "body": "Attachment\n\nMake pickle saving preserve the hard link.  Apply to sage repo.",
+    "body": "Attachment [trac_7473-sage_builder.patch](tarball://root/attachments/some-uuid/ticket7473/trac_7473-sage_builder.patch) by mpatel created at 2009-11-20 14:17:49\n\nMake pickle saving preserve the hard link.  Apply to sage repo.",
     "created_at": "2009-11-20T14:17:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7473",
     "type": "issue_comment",
@@ -156,7 +156,7 @@ archive/issue_comments_062965.json:
 }
 ```
 
-Attachment
+Attachment [trac_7473-sage_builder.patch](tarball://root/attachments/some-uuid/ticket7473/trac_7473-sage_builder.patch) by mpatel created at 2009-11-20 14:17:49
 
 Make pickle saving preserve the hard link.  Apply to sage repo.
 
@@ -185,7 +185,7 @@ Don't capture Sphinx clone output.  This *may* prevent the hang.  Apply to scrip
 archive/issue_comments_062967.json:
 ```json
 {
-    "body": "Attachment\n\nI *think* the [attachment:trac_7473-scripts_clone.patch attached patch] for the scripts repository prevents the hang when cloning.  The [attachment:trac_7473-sage_builder.patch sage repository patch] should ensure that we usually keep just one copy of the reference manual's `environment.pickle`.\n\nBut I'm still not sure about how to avoid rebuilding nearly all of the manual when cloning or after trivially switching branches.  The latter may be a separate problem.",
+    "body": "Attachment [trac_7473-scripts_clone.patch](tarball://root/attachments/some-uuid/ticket7473/trac_7473-scripts_clone.patch) by mpatel created at 2009-11-20 14:29:39\n\nI *think* the [attachment:trac_7473-scripts_clone.patch attached patch] for the scripts repository prevents the hang when cloning.  The [attachment:trac_7473-sage_builder.patch sage repository patch] should ensure that we usually keep just one copy of the reference manual's `environment.pickle`.\n\nBut I'm still not sure about how to avoid rebuilding nearly all of the manual when cloning or after trivially switching branches.  The latter may be a separate problem.",
     "created_at": "2009-11-20T14:29:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7473",
     "type": "issue_comment",
@@ -194,7 +194,7 @@ archive/issue_comments_062967.json:
 }
 ```
 
-Attachment
+Attachment [trac_7473-scripts_clone.patch](tarball://root/attachments/some-uuid/ticket7473/trac_7473-scripts_clone.patch) by mpatel created at 2009-11-20 14:29:39
 
 I *think* the [attachment:trac_7473-scripts_clone.patch attached patch] for the scripts repository prevents the hang when cloning.  The [attachment:trac_7473-sage_builder.patch sage repository patch] should ensure that we usually keep just one copy of the reference manual's `environment.pickle`.
 
@@ -207,7 +207,7 @@ But I'm still not sure about how to avoid rebuilding nearly all of the manual wh
 archive/issue_comments_062968.json:
 ```json
 {
-    "body": "Attachment\n\nUse `cp -pr` to preserve .rst file times.  This may work.  Apply only this patch to scripts repo.",
+    "body": "Attachment [trac_7473-scripts_clone_v2.patch](tarball://root/attachments/some-uuid/ticket7473/trac_7473-scripts_clone_v2.patch) by mpatel created at 2009-11-22 18:57:53\n\nUse `cp -pr` to preserve .rst file times.  This may work.  Apply only this patch to scripts repo.",
     "created_at": "2009-11-22T18:57:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7473",
     "type": "issue_comment",
@@ -216,7 +216,7 @@ archive/issue_comments_062968.json:
 }
 ```
 
-Attachment
+Attachment [trac_7473-scripts_clone_v2.patch](tarball://root/attachments/some-uuid/ticket7473/trac_7473-scripts_clone_v2.patch) by mpatel created at 2009-11-22 18:57:53
 
 Use `cp -pr` to preserve .rst file times.  This may work.  Apply only this patch to scripts repo.
 
@@ -293,7 +293,7 @@ Shall we take the cited web page as enough evidence that this is cross-platform?
 archive/issue_comments_062972.json:
 ```json
 {
-    "body": "Attachment\n\nUse cp -pR for auto-generated .rst files.  Apply only this patch to the scripts repo.",
+    "body": "Attachment [trac_7473-scripts_clone_v3.patch](tarball://root/attachments/some-uuid/ticket7473/trac_7473-scripts_clone_v3.patch) by mpatel created at 2009-11-23 21:36:50\n\nUse cp -pR for auto-generated .rst files.  Apply only this patch to the scripts repo.",
     "created_at": "2009-11-23T21:36:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7473",
     "type": "issue_comment",
@@ -302,7 +302,7 @@ archive/issue_comments_062972.json:
 }
 ```
 
-Attachment
+Attachment [trac_7473-scripts_clone_v3.patch](tarball://root/attachments/some-uuid/ticket7473/trac_7473-scripts_clone_v3.patch) by mpatel created at 2009-11-23 21:36:50
 
 Use cp -pR for auto-generated .rst files.  Apply only this patch to the scripts repo.
 

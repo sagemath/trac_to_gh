@@ -305,7 +305,7 @@ Changing priority from blocker to critical.
 archive/issue_comments_021949.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3167_blank_jmol.patch](tarball://root/attachments/some-uuid/ticket3167/trac_3167_blank_jmol.patch) by mpatel created at 2009-06-20 15:32:28",
     "created_at": "2009-06-20T15:32:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3167",
     "type": "issue_comment",
@@ -314,7 +314,7 @@ archive/issue_comments_021949.json:
 }
 ```
 
-Attachment
+Attachment [trac_3167_blank_jmol.patch](tarball://root/attachments/some-uuid/ticket3167/trac_3167_blank_jmol.patch) by mpatel created at 2009-06-20 15:32:28
 
 
 

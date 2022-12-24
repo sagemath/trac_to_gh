@@ -208,7 +208,7 @@ Rob
 archive/issue_comments_053445.json:
 ```json
 {
-    "body": "Attachment\n\nI've updated the patch again with both of our outputs.  It should pass your doctests now too.  Can you review it again?\n\nThanks!",
+    "body": "Attachment [trac-6553-slicing-sparse-matrices.patch](tarball://root/attachments/some-uuid/ticket6553/trac-6553-slicing-sparse-matrices.patch) by jason created at 2009-07-21 06:50:33\n\nI've updated the patch again with both of our outputs.  It should pass your doctests now too.  Can you review it again?\n\nThanks!",
     "created_at": "2009-07-21T06:50:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6553",
     "type": "issue_comment",
@@ -217,7 +217,7 @@ archive/issue_comments_053445.json:
 }
 ```
 
-Attachment
+Attachment [trac-6553-slicing-sparse-matrices.patch](tarball://root/attachments/some-uuid/ticket6553/trac-6553-slicing-sparse-matrices.patch) by jason created at 2009-07-21 06:50:33
 
 I've updated the patch again with both of our outputs.  It should pass your doctests now too.  Can you review it again?
 

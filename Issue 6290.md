@@ -64,7 +64,7 @@ Nice.  Could you add more to the docstring for function (at least the one that I
 archive/issue_comments_050220.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [allow-keyword-arguments-such-as-latex_name-in-symbolic-functions.patch](tarball://root/attachments/some-uuid/ticket6290/allow-keyword-arguments-such-as-latex_name-in-symbolic-functions.patch) by gmhossain created at 2009-06-15 20:07:59",
     "created_at": "2009-06-15T20:07:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6290",
     "type": "issue_comment",
@@ -73,7 +73,7 @@ archive/issue_comments_050220.json:
 }
 ```
 
-Attachment
+Attachment [allow-keyword-arguments-such-as-latex_name-in-symbolic-functions.patch](tarball://root/attachments/some-uuid/ticket6290/allow-keyword-arguments-such-as-latex_name-in-symbolic-functions.patch) by gmhossain created at 2009-06-15 20:07:59
 
 
 

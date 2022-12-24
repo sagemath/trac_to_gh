@@ -582,7 +582,7 @@ Here's a patch.
 archive/issue_comments_098969.json:
 ```json
 {
-    "body": "Attachment\n\nI think implementing less-than, etc as submodule tests is the right way to go as well.\n\nPatch passes all long tests, and with the experimental package `chomp` installed, patched version also passes:\n\n\n```\nsage -t -long -only-optional=chomp \"devel/sage/sage/homology/tests.py\"\n```\n\n\nI also installed the (in-progress) patch at #9773 which builds finitely-generated groups on top of this module quotient code.  Limited testing indicates that (a) the current patch behaves as expected, and (b) the comparison methods will apply properly to the subclasses.\n\nDocumentation looks good when previewed in the notebook (since it is not included in the reference manual).\n\nSo: positive review.  Thanks, John, for pursuing this one.\n\nRob",
+    "body": "Attachment [trac_9940-ne.patch](tarball://root/attachments/some-uuid/ticket9940/trac_9940-ne.patch) by rbeezer created at 2010-11-28 20:28:24\n\nI think implementing less-than, etc as submodule tests is the right way to go as well.\n\nPatch passes all long tests, and with the experimental package `chomp` installed, patched version also passes:\n\n\n```\nsage -t -long -only-optional=chomp \"devel/sage/sage/homology/tests.py\"\n```\n\n\nI also installed the (in-progress) patch at #9773 which builds finitely-generated groups on top of this module quotient code.  Limited testing indicates that (a) the current patch behaves as expected, and (b) the comparison methods will apply properly to the subclasses.\n\nDocumentation looks good when previewed in the notebook (since it is not included in the reference manual).\n\nSo: positive review.  Thanks, John, for pursuing this one.\n\nRob",
     "created_at": "2010-11-28T20:28:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9939",
     "type": "issue_comment",
@@ -591,7 +591,7 @@ archive/issue_comments_098969.json:
 }
 ```
 
-Attachment
+Attachment [trac_9940-ne.patch](tarball://root/attachments/some-uuid/ticket9940/trac_9940-ne.patch) by rbeezer created at 2010-11-28 20:28:24
 
 I think implementing less-than, etc as submodule tests is the right way to go as well.
 

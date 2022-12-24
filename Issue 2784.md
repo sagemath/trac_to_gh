@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2784
 archive/issue_comments_019121.json:
 ```json
 {
-    "body": "Attachment\n\nDocstrings and doctests for rings/complex_number.pyx (CURRENT SCORE complex_number.pyx: 95% (60 of 63))",
+    "body": "Attachment [rings.complex_number.patch](tarball://root/attachments/some-uuid/ticket2784/rings.complex_number.patch) by cswiercz created at 2008-04-04 22:10:15\n\nDocstrings and doctests for rings/complex_number.pyx (CURRENT SCORE complex_number.pyx: 95% (60 of 63))",
     "created_at": "2008-04-04T22:10:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2784",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_019121.json:
 }
 ```
 
-Attachment
+Attachment [rings.complex_number.patch](tarball://root/attachments/some-uuid/ticket2784/rings.complex_number.patch) by cswiercz created at 2008-04-04 22:10:15
 
 Docstrings and doctests for rings/complex_number.pyx (CURRENT SCORE complex_number.pyx: 95% (60 of 63))
 

@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5763
 archive/issue_comments_045046.json:
 ```json
 {
-    "body": "Attachment\n\nThanks Nick!\n\nThe patch looks great, I am looking at the doctests right now. \n\nNote that #5753 fixes the coercion of constants to pynac, so you can use `is_a_constant` in the .is_constant() function.\n\nI will see what I can do about the doctest failures, and hopefully post a patch fixing them soon.",
+    "body": "Attachment [trac_5763-symbolic-polynomial.patch](tarball://root/attachments/some-uuid/ticket5763/trac_5763-symbolic-polynomial.patch) by burcin created at 2009-04-12 09:25:09\n\nThanks Nick!\n\nThe patch looks great, I am looking at the doctests right now. \n\nNote that #5753 fixes the coercion of constants to pynac, so you can use `is_a_constant` in the .is_constant() function.\n\nI will see what I can do about the doctest failures, and hopefully post a patch fixing them soon.",
     "created_at": "2009-04-12T09:25:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5763",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_045046.json:
 }
 ```
 
-Attachment
+Attachment [trac_5763-symbolic-polynomial.patch](tarball://root/attachments/some-uuid/ticket5763/trac_5763-symbolic-polynomial.patch) by burcin created at 2009-04-12 09:25:09
 
 Thanks Nick!
 

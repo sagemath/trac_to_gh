@@ -214,7 +214,7 @@ Michael
 archive/issue_comments_006619.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-2.10.alpha3-fix-ntl_ZZ_pX.pyx-memleaks.patch](tarball://root/attachments/some-uuid/ticket1093/Sage-2.10.alpha3-fix-ntl_ZZ_pX.pyx-memleaks.patch) by mabshoff created at 2008-01-07 22:50:45",
     "created_at": "2008-01-07T22:50:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1093",
     "type": "issue_comment",
@@ -223,7 +223,7 @@ archive/issue_comments_006619.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.10.alpha3-fix-ntl_ZZ_pX.pyx-memleaks.patch](tarball://root/attachments/some-uuid/ticket1093/Sage-2.10.alpha3-fix-ntl_ZZ_pX.pyx-memleaks.patch) by mabshoff created at 2008-01-07 22:50:45
 
 
 
@@ -253,7 +253,7 @@ Patch attached to do this, also in ntl_ZZX.pyx.
 archive/issue_comments_006621.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ntl_free_mismatch.patch](tarball://root/attachments/some-uuid/ticket1093/ntl_free_mismatch.patch) by mabshoff created at 2008-01-08 00:37:02",
     "created_at": "2008-01-08T00:37:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1093",
     "type": "issue_comment",
@@ -262,7 +262,7 @@ archive/issue_comments_006621.json:
 }
 ```
 
-Attachment
+Attachment [ntl_free_mismatch.patch](tarball://root/attachments/some-uuid/ticket1093/ntl_free_mismatch.patch) by mabshoff created at 2008-01-08 00:37:02
 
 
 
@@ -271,7 +271,7 @@ Attachment
 archive/issue_comments_006622.json:
 ```json
 {
-    "body": "Attachment\n\nApply patches in order of attaching them.\n\nCheers,\n\nMichael",
+    "body": "Attachment [Sage-2.10.alpha3-revert-charstar-fix.patch](tarball://root/attachments/some-uuid/ticket1093/Sage-2.10.alpha3-revert-charstar-fix.patch) by mabshoff created at 2008-01-08 00:37:37\n\nApply patches in order of attaching them.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-08T00:37:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1093",
     "type": "issue_comment",
@@ -280,7 +280,7 @@ archive/issue_comments_006622.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.10.alpha3-revert-charstar-fix.patch](tarball://root/attachments/some-uuid/ticket1093/Sage-2.10.alpha3-revert-charstar-fix.patch) by mabshoff created at 2008-01-08 00:37:37
 
 Apply patches in order of attaching them.
 

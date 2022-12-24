@@ -130,7 +130,7 @@ Changing status from new to assigned.
 archive/issue_comments_010180.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-2.10.2-trac_1601.patch](tarball://root/attachments/some-uuid/ticket1601/Sage-2.10.2-trac_1601.patch) by mabshoff created at 2008-02-18 18:02:19",
     "created_at": "2008-02-18T18:02:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1601",
     "type": "issue_comment",
@@ -139,7 +139,7 @@ archive/issue_comments_010180.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.10.2-trac_1601.patch](tarball://root/attachments/some-uuid/ticket1601/Sage-2.10.2-trac_1601.patch) by mabshoff created at 2008-02-18 18:02:19
 
 
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4020
 archive/issue_comments_028992.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4020-fracfield-doctests.patch](tarball://root/attachments/some-uuid/ticket4020/4020-fracfield-doctests.patch) by robertwb created at 2008-08-31 10:30:40",
     "created_at": "2008-08-31T10:30:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4020",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_028992.json:
 }
 ```
 
-Attachment
+Attachment [4020-fracfield-doctests.patch](tarball://root/attachments/some-uuid/ticket4020/4020-fracfield-doctests.patch) by robertwb created at 2008-08-31 10:30:40
 
 
 
@@ -67,7 +67,7 @@ Depends on #4019.
 archive/issue_comments_028994.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4020.patch](tarball://root/attachments/some-uuid/ticket4020/trac_4020.patch) by mhansen created at 2008-08-31 22:12:55",
     "created_at": "2008-08-31T22:12:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4020",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_028994.json:
 }
 ```
 
-Attachment
+Attachment [trac_4020.patch](tarball://root/attachments/some-uuid/ticket4020/trac_4020.patch) by mhansen created at 2008-08-31 22:12:55
 
 
 

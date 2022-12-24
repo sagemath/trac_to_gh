@@ -49,7 +49,7 @@ docstring patch based on sage-3.0.alpha0
 archive/issue_comments_019326.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9217.patch](tarball://root/attachments/some-uuid/ticket2815/9217.patch) by mabshoff created at 2008-04-05 21:34:24",
     "created_at": "2008-04-05T21:34:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2815",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_019326.json:
 }
 ```
 
-Attachment
+Attachment [9217.patch](tarball://root/attachments/some-uuid/ticket2815/9217.patch) by mabshoff created at 2008-04-05 21:34:24
 
 
 
@@ -67,7 +67,7 @@ Attachment
 archive/issue_comments_019327.json:
 ```json
 {
-    "body": "Attachment\n\ndoc patch based on sage-3.0.alpha0 which adds sections to ref.tex",
+    "body": "Attachment [511.patch](tarball://root/attachments/some-uuid/ticket2815/511.patch) by wdj created at 2008-04-05 21:35:37\n\ndoc patch based on sage-3.0.alpha0 which adds sections to ref.tex",
     "created_at": "2008-04-05T21:35:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2815",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_019327.json:
 }
 ```
 
-Attachment
+Attachment [511.patch](tarball://root/attachments/some-uuid/ticket2815/511.patch) by wdj created at 2008-04-05 21:35:37
 
 doc patch based on sage-3.0.alpha0 which adds sections to ref.tex
 

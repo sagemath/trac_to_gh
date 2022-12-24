@@ -163,7 +163,7 @@ Rebased patch
 archive/issue_comments_040193.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [non_decreasing_parking_function-5243-submitted.patch](tarball://root/attachments/some-uuid/ticket5243/non_decreasing_parking_function-5243-submitted.patch) by nthiery created at 2009-04-14 02:14:33",
     "created_at": "2009-04-14T02:14:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5243",
     "type": "issue_comment",
@@ -172,7 +172,7 @@ archive/issue_comments_040193.json:
 }
 ```
 
-Attachment
+Attachment [non_decreasing_parking_function-5243-submitted.patch](tarball://root/attachments/some-uuid/ticket5243/non_decreasing_parking_function-5243-submitted.patch) by nthiery created at 2009-04-14 02:14:33
 
 
 
@@ -334,7 +334,7 @@ I uploaded my documentation fixes patch, since there's no reason to keep it secr
 archive/issue_comments_040198.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5243-fixes.patch](tarball://root/attachments/some-uuid/ticket5243/trac_5243-fixes.patch) by ddrake created at 2009-05-06 04:28:52",
     "created_at": "2009-05-06T04:28:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5243",
     "type": "issue_comment",
@@ -343,7 +343,7 @@ archive/issue_comments_040198.json:
 }
 ```
 
-Attachment
+Attachment [trac_5243-fixes.patch](tarball://root/attachments/some-uuid/ticket5243/trac_5243-fixes.patch) by ddrake created at 2009-05-06 04:28:52
 
 
 
@@ -352,7 +352,7 @@ Attachment
 archive/issue_comments_040199.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5243-getitem_vs_call.patch](tarball://root/attachments/some-uuid/ticket5243/trac_5243-getitem_vs_call.patch) by mhansen created at 2009-09-26 04:16:51",
     "created_at": "2009-09-26T04:16:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5243",
     "type": "issue_comment",
@@ -361,7 +361,7 @@ archive/issue_comments_040199.json:
 }
 ```
 
-Attachment
+Attachment [trac_5243-getitem_vs_call.patch](tarball://root/attachments/some-uuid/ticket5243/trac_5243-getitem_vs_call.patch) by mhansen created at 2009-09-26 04:16:51
 
 
 

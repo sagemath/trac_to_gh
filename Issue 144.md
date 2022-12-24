@@ -38,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/144
 archive/issue_comments_000662.json:
 ```json
 {
-    "body": "Attachment\n\nNumpy build log",
+    "body": "Attachment [Numpy.errlog](tarball://root/attachments/some-uuid/ticket144/Numpy.errlog) by justin created at 2006-10-21 20:44:34\n\nNumpy build log",
     "created_at": "2006-10-21T20:44:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/144",
     "type": "issue_comment",
@@ -47,7 +47,7 @@ archive/issue_comments_000662.json:
 }
 ```
 
-Attachment
+Attachment [Numpy.errlog](tarball://root/attachments/some-uuid/ticket144/Numpy.errlog) by justin created at 2006-10-21 20:44:34
 
 Numpy build log
 

@@ -318,7 +318,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_091163.json:
 ```json
 {
-    "body": "Attachment\n\nmarked mpoly_all() as not tested",
+    "body": "Attachment [trac_9494-doctest_mpoly_all.2.patch](tarball://root/attachments/some-uuid/ticket9494/trac_9494-doctest_mpoly_all.2.patch) by benjaminfjones created at 2012-04-07 23:51:39\n\nmarked mpoly_all() as not tested",
     "created_at": "2012-04-07T23:51:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9494",
     "type": "issue_comment",
@@ -327,7 +327,7 @@ archive/issue_comments_091163.json:
 }
 ```
 
-Attachment
+Attachment [trac_9494-doctest_mpoly_all.2.patch](tarball://root/attachments/some-uuid/ticket9494/trac_9494-doctest_mpoly_all.2.patch) by benjaminfjones created at 2012-04-07 23:51:39
 
 marked mpoly_all() as not tested
 

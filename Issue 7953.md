@@ -63,7 +63,7 @@ Changing status from new to needs_review.
 archive/issue_comments_069395.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [7953_curve_printing.patch](tarball://root/attachments/some-uuid/ticket7953/7953_curve_printing.patch) by wjp created at 2010-01-17 03:50:50",
     "created_at": "2010-01-17T03:50:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7953",
     "type": "issue_comment",
@@ -72,7 +72,7 @@ archive/issue_comments_069395.json:
 }
 ```
 
-Attachment
+Attachment [7953_curve_printing.patch](tarball://root/attachments/some-uuid/ticket7953/7953_curve_printing.patch) by wjp created at 2010-01-17 03:50:50
 
 
 
@@ -189,7 +189,7 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_069402.json:
 ```json
 {
-    "body": "Attachment\n\nI'll take the liberty to switch this patch back to positive review, since it does solve the problem described in the ticket (which is bad - Sage gives wrong answers) and there was no work done in a \"better direction\" for 9 month neither here nor on #7954.\n\nThe original patch uses TABs, so I changed them to spaces leaving the rest the same. Applies cleanly and passes all tests on sage-4.6.rc0.",
+    "body": "Attachment [7953_curve_printing.2.patch](tarball://root/attachments/some-uuid/ticket7953/7953_curve_printing.2.patch) by novoselt created at 2010-10-23 21:59:33\n\nI'll take the liberty to switch this patch back to positive review, since it does solve the problem described in the ticket (which is bad - Sage gives wrong answers) and there was no work done in a \"better direction\" for 9 month neither here nor on #7954.\n\nThe original patch uses TABs, so I changed them to spaces leaving the rest the same. Applies cleanly and passes all tests on sage-4.6.rc0.",
     "created_at": "2010-10-23T21:59:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7953",
     "type": "issue_comment",
@@ -198,7 +198,7 @@ archive/issue_comments_069402.json:
 }
 ```
 
-Attachment
+Attachment [7953_curve_printing.2.patch](tarball://root/attachments/some-uuid/ticket7953/7953_curve_printing.2.patch) by novoselt created at 2010-10-23 21:59:33
 
 I'll take the liberty to switch this patch back to positive review, since it does solve the problem described in the ticket (which is bad - Sage gives wrong answers) and there was no work done in a "better direction" for 9 month neither here nor on #7954.
 

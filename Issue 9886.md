@@ -246,7 +246,7 @@ abort: patch failed to apply
 archive/issue_comments_097997.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9887.patch](tarball://root/attachments/some-uuid/ticket9887/9887.patch) by roed created at 2011-06-21 19:51:19",
     "created_at": "2011-06-21T19:51:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9886",
     "type": "issue_comment",
@@ -255,7 +255,7 @@ archive/issue_comments_097997.json:
 }
 ```
 
-Attachment
+Attachment [9887.patch](tarball://root/attachments/some-uuid/ticket9887/9887.patch) by roed created at 2011-06-21 19:51:19
 
 
 
@@ -336,7 +336,7 @@ Apply against 4.7
 archive/issue_comments_098002.json:
 ```json
 {
-    "body": "Attachment\n\nWhat is the status of this patch now?  It looks like it could easily bit-rot (if it hasn't already).",
+    "body": "Attachment [9887_vs_47.patch](tarball://root/attachments/some-uuid/ticket9887/9887_vs_47.patch) by jason created at 2011-12-13 16:11:46\n\nWhat is the status of this patch now?  It looks like it could easily bit-rot (if it hasn't already).",
     "created_at": "2011-12-13T16:11:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9886",
     "type": "issue_comment",
@@ -345,7 +345,7 @@ archive/issue_comments_098002.json:
 }
 ```
 
-Attachment
+Attachment [9887_vs_47.patch](tarball://root/attachments/some-uuid/ticket9887/9887_vs_47.patch) by jason created at 2011-12-13 16:11:46
 
 What is the status of this patch now?  It looks like it could easily bit-rot (if it hasn't already).
 
@@ -356,7 +356,7 @@ What is the status of this patch now?  It looks like it could easily bit-rot (if
 archive/issue_comments_098003.json:
 ```json
 {
-    "body": "Attachment\n\nApply against 4.8.alpha2",
+    "body": "Attachment [9887_vs_48a2.patch](tarball://root/attachments/some-uuid/ticket9887/9887_vs_48a2.patch) by roed created at 2011-12-15 05:24:22\n\nApply against 4.8.alpha2",
     "created_at": "2011-12-15T05:24:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9886",
     "type": "issue_comment",
@@ -365,7 +365,7 @@ archive/issue_comments_098003.json:
 }
 ```
 
-Attachment
+Attachment [9887_vs_48a2.patch](tarball://root/attachments/some-uuid/ticket9887/9887_vs_48a2.patch) by roed created at 2011-12-15 05:24:22
 
 Apply against 4.8.alpha2
 

@@ -38,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7984
 archive/issue_comments_069729.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [7984-qqbar-cmp.patch](tarball://root/attachments/some-uuid/ticket7984/7984-qqbar-cmp.patch) by robertwb created at 2010-01-18 20:31:34",
     "created_at": "2010-01-18T20:31:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7984",
     "type": "issue_comment",
@@ -47,7 +47,7 @@ archive/issue_comments_069729.json:
 }
 ```
 
-Attachment
+Attachment [7984-qqbar-cmp.patch](tarball://root/attachments/some-uuid/ticket7984/7984-qqbar-cmp.patch) by robertwb created at 2010-01-18 20:31:34
 
 
 

@@ -61,7 +61,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6288
 archive/issue_comments_050206.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6288.patch](tarball://root/attachments/some-uuid/ticket6288/trac_6288.patch) by mhansen created at 2013-07-23 13:23:57",
     "created_at": "2013-07-23T13:23:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6288",
     "type": "issue_comment",
@@ -70,7 +70,7 @@ archive/issue_comments_050206.json:
 }
 ```
 
-Attachment
+Attachment [trac_6288.patch](tarball://root/attachments/some-uuid/ticket6288/trac_6288.patch) by mhansen created at 2013-07-23 13:23:57
 
 
 
@@ -133,7 +133,7 @@ I also wonder if it is necessary to deprecate the bad names, instead of just usi
 archive/issue_comments_050209.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6288_addon_pep8.patch](tarball://root/attachments/some-uuid/ticket6288/trac_6288_addon_pep8.patch) by chapoton created at 2013-08-25 13:25:46",
     "created_at": "2013-08-25T13:25:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6288",
     "type": "issue_comment",
@@ -142,7 +142,7 @@ archive/issue_comments_050209.json:
 }
 ```
 
-Attachment
+Attachment [trac_6288_addon_pep8.patch](tarball://root/attachments/some-uuid/ticket6288/trac_6288_addon_pep8.patch) by chapoton created at 2013-08-25 13:25:46
 
 
 

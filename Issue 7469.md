@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7469
 archive/issue_comments_062913.json:
 ```json
 {
-    "body": "Attachment\n\nThis adds an additional test. Depends on #7468.",
+    "body": "Attachment [trac_7469-new-publishing-tests.patch](tarball://root/attachments/some-uuid/ticket7469/trac_7469-new-publishing-tests.patch) by timdumol created at 2009-11-15 07:33:38\n\nThis adds an additional test. Depends on #7468.",
     "created_at": "2009-11-15T07:33:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7469",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_062913.json:
 }
 ```
 
-Attachment
+Attachment [trac_7469-new-publishing-tests.patch](tarball://root/attachments/some-uuid/ticket7469/trac_7469-new-publishing-tests.patch) by timdumol created at 2009-11-15 07:33:38
 
 This adds an additional test. Depends on #7468.
 

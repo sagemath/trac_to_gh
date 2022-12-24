@@ -57,7 +57,7 @@ The patch up now adds the functions.  I'm finishing the doctests and doing any l
 archive/issue_comments_026976.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [eigenfunctions.patch](tarball://root/attachments/some-uuid/ticket3794/eigenfunctions.patch) by jason created at 2008-08-10 03:57:53",
     "created_at": "2008-08-10T03:57:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3794",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_026976.json:
 }
 ```
 
-Attachment
+Attachment [eigenfunctions.patch](tarball://root/attachments/some-uuid/ticket3794/eigenfunctions.patch) by jason created at 2008-08-10 03:57:53
 
 
 
@@ -121,7 +121,7 @@ I'm happy with the code but have some queries about the documentation mainly:
 archive/issue_comments_026979.json:
 ```json
 {
-    "body": "Attachment\n\nI've uploaded an eigenfunctions-2.patch, to be applied on top of the eigenfunctions.patch, which addresses cremona's comments.\n\nResponse to cremona's comments:\n\n1. Change made.  Thanks.\n\n2. Change made.  Thanks.\n\n3. The computations could be done over RR and CC matrices, but a warning is raised since numerical error will most likely mean that the results will be junk.  The best way to approach something like this, I think, is to convert your matrix to RDF or CDF and use the numerical functions (these are also due to be overhauled and switched to a numpy backend).  The other way of doing this would be to convert from QQbar to CC, but that conversion is only enabled in 3.1 or later.  We could put in a one-line example: `[RR(eig) for eig in a.eigenvalues()]`, but not having 3.1, I can't test that very well.  If this is still an issue, I will put that one-line patch in after 3.1 comes out.\n\n4. Doctest and explanation added.\n\nThanks for your comments and review!",
+    "body": "Attachment [eigenfunctions-2.patch](tarball://root/attachments/some-uuid/ticket3794/eigenfunctions-2.patch) by jason created at 2008-08-12 02:40:50\n\nI've uploaded an eigenfunctions-2.patch, to be applied on top of the eigenfunctions.patch, which addresses cremona's comments.\n\nResponse to cremona's comments:\n\n1. Change made.  Thanks.\n\n2. Change made.  Thanks.\n\n3. The computations could be done over RR and CC matrices, but a warning is raised since numerical error will most likely mean that the results will be junk.  The best way to approach something like this, I think, is to convert your matrix to RDF or CDF and use the numerical functions (these are also due to be overhauled and switched to a numpy backend).  The other way of doing this would be to convert from QQbar to CC, but that conversion is only enabled in 3.1 or later.  We could put in a one-line example: `[RR(eig) for eig in a.eigenvalues()]`, but not having 3.1, I can't test that very well.  If this is still an issue, I will put that one-line patch in after 3.1 comes out.\n\n4. Doctest and explanation added.\n\nThanks for your comments and review!",
     "created_at": "2008-08-12T02:40:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3794",
     "type": "issue_comment",
@@ -130,7 +130,7 @@ archive/issue_comments_026979.json:
 }
 ```
 
-Attachment
+Attachment [eigenfunctions-2.patch](tarball://root/attachments/some-uuid/ticket3794/eigenfunctions-2.patch) by jason created at 2008-08-12 02:40:50
 
 I've uploaded an eigenfunctions-2.patch, to be applied on top of the eigenfunctions.patch, which addresses cremona's comments.
 
@@ -276,7 +276,7 @@ Attached are two patches.  eigenfunctions-3.patch is to be applied on top of the
 archive/issue_comments_026984.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [eigenfunctions-doc.patch](tarball://root/attachments/some-uuid/ticket3794/eigenfunctions-doc.patch) by jason created at 2008-08-13 14:59:34",
     "created_at": "2008-08-13T14:59:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3794",
     "type": "issue_comment",
@@ -285,7 +285,7 @@ archive/issue_comments_026984.json:
 }
 ```
 
-Attachment
+Attachment [eigenfunctions-doc.patch](tarball://root/attachments/some-uuid/ticket3794/eigenfunctions-doc.patch) by jason created at 2008-08-13 14:59:34
 
 
 

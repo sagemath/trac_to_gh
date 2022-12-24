@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2532
 archive/issue_comments_017264.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [padic_restore_context_zero_bugfix.patch](tarball://root/attachments/some-uuid/ticket2532/padic_restore_context_zero_bugfix.patch) by mhansen created at 2008-03-15 21:49:01",
     "created_at": "2008-03-15T21:49:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2532",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_017264.json:
 }
 ```
 
-Attachment
+Attachment [padic_restore_context_zero_bugfix.patch](tarball://root/attachments/some-uuid/ticket2532/padic_restore_context_zero_bugfix.patch) by mhansen created at 2008-03-15 21:49:01
 
 
 

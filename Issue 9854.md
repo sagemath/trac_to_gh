@@ -267,7 +267,7 @@ Improves tachyon support
 archive/issue_comments_097270.json:
 ```json
 {
-    "body": "Attachment\n\nAdded more examples and documentation, I think is ready for review again.",
+    "body": "Attachment [trac_9855_tachyon.patch](tarball://root/attachments/some-uuid/ticket9855/trac_9855_tachyon.patch) by mhampton created at 2011-01-16 22:00:33\n\nAdded more examples and documentation, I think is ready for review again.",
     "created_at": "2011-01-16T22:00:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9854",
     "type": "issue_comment",
@@ -276,7 +276,7 @@ archive/issue_comments_097270.json:
 }
 ```
 
-Attachment
+Attachment [trac_9855_tachyon.patch](tarball://root/attachments/some-uuid/ticket9855/trac_9855_tachyon.patch) by mhampton created at 2011-01-16 22:00:33
 
 Added more examples and documentation, I think is ready for review again.
 
@@ -383,7 +383,7 @@ result of texture mapping
 archive/issue_comments_097276.json:
 ```json
 {
-    "body": "Attachment\n\nHere is one example image\n\n<img src=\"texture_mapping.png\" width=400px>",
+    "body": "Attachment [texture_mapping.png](tarball://root/attachments/some-uuid/ticket9855/texture_mapping.png) by chapoton created at 2014-12-28 14:23:14\n\nHere is one example image\n\n<img src=\"texture_mapping.png\" width=400px>",
     "created_at": "2014-12-28T14:23:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9854",
     "type": "issue_comment",
@@ -392,7 +392,7 @@ archive/issue_comments_097276.json:
 }
 ```
 
-Attachment
+Attachment [texture_mapping.png](tarball://root/attachments/some-uuid/ticket9855/texture_mapping.png) by chapoton created at 2014-12-28 14:23:14
 
 Here is one example image
 

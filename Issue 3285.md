@@ -485,7 +485,7 @@ Resolution: fixed
 archive/issue_comments_022742.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-3285-mem_bc.patch](tarball://root/attachments/some-uuid/ticket3285/trac-3285-mem_bc.patch) by mabshoff created at 2008-05-24 00:39:13",
     "created_at": "2008-05-24T00:39:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3285",
     "type": "issue_comment",
@@ -494,4 +494,4 @@ archive/issue_comments_022742.json:
 }
 ```
 
-Attachment
+Attachment [trac-3285-mem_bc.patch](tarball://root/attachments/some-uuid/ticket3285/trac-3285-mem_bc.patch) by mabshoff created at 2008-05-24 00:39:13

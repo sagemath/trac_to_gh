@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9802
 archive/issue_comments_096297.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9802-random-diagonalizable-matrix.patch](tarball://root/attachments/some-uuid/ticket9802/trac_9802-random-diagonalizable-matrix.patch) by bwonderly created at 2010-08-25 18:47:30",
     "created_at": "2010-08-25T18:47:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9801",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_096297.json:
 }
 ```
 
-Attachment
+Attachment [trac_9802-random-diagonalizable-matrix.patch](tarball://root/attachments/some-uuid/ticket9802/trac_9802-random-diagonalizable-matrix.patch) by bwonderly created at 2010-08-25 18:47:30
 
 
 
@@ -69,7 +69,7 @@ Changing status from new to needs_review.
 archive/issue_comments_096299.json:
 ```json
 {
-    "body": "Attachment\n\nrevised to fit generalization of random_matrix constructor. Apply v4 from #9720 and v2 from #9803 and go from there. This patch is independent from #9754, but will be rebased as soon as either one gets a positive review",
+    "body": "Attachment [trac_9802-random-diagonalizable-matrix-v2.patch](tarball://root/attachments/some-uuid/ticket9802/trac_9802-random-diagonalizable-matrix-v2.patch) by bwonderly created at 2010-08-28 02:39:04\n\nrevised to fit generalization of random_matrix constructor. Apply v4 from #9720 and v2 from #9803 and go from there. This patch is independent from #9754, but will be rebased as soon as either one gets a positive review",
     "created_at": "2010-08-28T02:39:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9801",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_096299.json:
 }
 ```
 
-Attachment
+Attachment [trac_9802-random-diagonalizable-matrix-v2.patch](tarball://root/attachments/some-uuid/ticket9802/trac_9802-random-diagonalizable-matrix-v2.patch) by bwonderly created at 2010-08-28 02:39:04
 
 revised to fit generalization of random_matrix constructor. Apply v4 from #9720 and v2 from #9803 and go from there. This patch is independent from #9754, but will be rebased as soon as either one gets a positive review
 

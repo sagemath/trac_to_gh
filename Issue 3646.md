@@ -51,7 +51,7 @@ On my intel mac: works for me in Safari, and works in Firefox but noisily: it be
 archive/issue_comments_025776.json:
 ```json
 {
-    "body": "Attachment\n\nI just discovered quilt!  4 patches all rolled into one.",
+    "body": "Attachment [3646-paren-matching-all.patch](tarball://root/attachments/some-uuid/ticket3646/3646-paren-matching-all.patch) by boothby created at 2008-07-29 17:22:55\n\nI just discovered quilt!  4 patches all rolled into one.",
     "created_at": "2008-07-29T17:22:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3646",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_025776.json:
 }
 ```
 
-Attachment
+Attachment [3646-paren-matching-all.patch](tarball://root/attachments/some-uuid/ticket3646/3646-paren-matching-all.patch) by boothby created at 2008-07-29 17:22:55
 
 I just discovered quilt!  4 patches all rolled into one.
 
@@ -109,7 +109,7 @@ REVIEW:
 archive/issue_comments_025779.json:
 ```json
 {
-    "body": "Attachment\n\nrebased against #6307",
+    "body": "Attachment [3646-paren-matching-all.2.patch](tarball://root/attachments/some-uuid/ticket3646/3646-paren-matching-all.2.patch) by boothby created at 2009-06-16 20:22:56\n\nrebased against #6307",
     "created_at": "2009-06-16T20:22:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3646",
     "type": "issue_comment",
@@ -118,7 +118,7 @@ archive/issue_comments_025779.json:
 }
 ```
 
-Attachment
+Attachment [3646-paren-matching-all.2.patch](tarball://root/attachments/some-uuid/ticket3646/3646-paren-matching-all.2.patch) by boothby created at 2009-06-16 20:22:56
 
 rebased against #6307
 
@@ -129,7 +129,7 @@ rebased against #6307
 archive/issue_comments_025780.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3646-silent.patch](tarball://root/attachments/some-uuid/ticket3646/3646-silent.patch) by boothby created at 2009-06-16 20:23:16",
     "created_at": "2009-06-16T20:23:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3646",
     "type": "issue_comment",
@@ -138,7 +138,7 @@ archive/issue_comments_025780.json:
 }
 ```
 
-Attachment
+Attachment [3646-silent.patch](tarball://root/attachments/some-uuid/ticket3646/3646-silent.patch) by boothby created at 2009-06-16 20:23:16
 
 
 
@@ -209,7 +209,7 @@ replaces all previous
 archive/issue_comments_025784.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3646-paren-matching.patch](tarball://root/attachments/some-uuid/ticket3646/3646-paren-matching.patch) by boothby created at 2009-09-22 05:15:25",
     "created_at": "2009-09-22T05:15:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3646",
     "type": "issue_comment",
@@ -218,7 +218,7 @@ archive/issue_comments_025784.json:
 }
 ```
 
-Attachment
+Attachment [3646-paren-matching.patch](tarball://root/attachments/some-uuid/ticket3646/3646-paren-matching.patch) by boothby created at 2009-09-22 05:15:25
 
 
 
@@ -281,7 +281,7 @@ replaces all previous patches
 archive/issue_comments_025788.json:
 ```json
 {
-    "body": "Attachment\n\nreplaces all previous patches + boothby's name as author",
+    "body": "Attachment [trac_3646-rebased.patch](tarball://root/attachments/some-uuid/ticket3646/trac_3646-rebased.patch) by mvngu created at 2009-09-24 07:24:45\n\nreplaces all previous patches + boothby's name as author",
     "created_at": "2009-09-24T07:24:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3646",
     "type": "issue_comment",
@@ -290,7 +290,7 @@ archive/issue_comments_025788.json:
 }
 ```
 
-Attachment
+Attachment [trac_3646-rebased.patch](tarball://root/attachments/some-uuid/ticket3646/trac_3646-rebased.patch) by mvngu created at 2009-09-24 07:24:45
 
 replaces all previous patches + boothby's name as author
 
@@ -301,7 +301,7 @@ replaces all previous patches + boothby's name as author
 archive/issue_comments_025789.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch `trac_3646-rebased-v2.patch` is the same as `trac_3646-rebased.patch`. The only difference is that v2 has the author name set to Tom Boothby.",
+    "body": "Attachment [trac_3646-rebased-v2.patch](tarball://root/attachments/some-uuid/ticket3646/trac_3646-rebased-v2.patch) by mvngu created at 2009-09-24 07:26:43\n\nThe patch `trac_3646-rebased-v2.patch` is the same as `trac_3646-rebased.patch`. The only difference is that v2 has the author name set to Tom Boothby.",
     "created_at": "2009-09-24T07:26:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3646",
     "type": "issue_comment",
@@ -310,7 +310,7 @@ archive/issue_comments_025789.json:
 }
 ```
 
-Attachment
+Attachment [trac_3646-rebased-v2.patch](tarball://root/attachments/some-uuid/ticket3646/trac_3646-rebased-v2.patch) by mvngu created at 2009-09-24 07:26:43
 
 The patch `trac_3646-rebased-v2.patch` is the same as `trac_3646-rebased.patch`. The only difference is that v2 has the author name set to Tom Boothby.
 
@@ -393,7 +393,7 @@ Rebase v. #7196.  Apply only this patch.
 archive/issue_comments_025794.json:
 ```json
 {
-    "body": "Attachment\n\n[attachment:trac_3646-sagenb_paren_match.patch Patch] rebased against SageNB's #7196.",
+    "body": "Attachment [trac_3646-sagenb_paren_match.patch](tarball://root/attachments/some-uuid/ticket3646/trac_3646-sagenb_paren_match.patch) by mpatel created at 2009-10-15 18:50:41\n\n[attachment:trac_3646-sagenb_paren_match.patch Patch] rebased against SageNB's #7196.",
     "created_at": "2009-10-15T18:50:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3646",
     "type": "issue_comment",
@@ -402,7 +402,7 @@ archive/issue_comments_025794.json:
 }
 ```
 
-Attachment
+Attachment [trac_3646-sagenb_paren_match.patch](tarball://root/attachments/some-uuid/ticket3646/trac_3646-sagenb_paren_match.patch) by mpatel created at 2009-10-15 18:50:41
 
 [attachment:trac_3646-sagenb_paren_match.patch Patch] rebased against SageNB's #7196.
 

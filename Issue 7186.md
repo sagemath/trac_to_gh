@@ -360,7 +360,7 @@ http://sage.math.washington.edu/home/wstein/patches/ecl-9.8.4-20090913cvs.p2.spk
 archive/issue_comments_059530.json:
 ```json
 {
-    "body": "Attachment\n\nYep, I missed the point about standalone \"./sage -sh && sage -ecl\" not working after a move of the Sage tree. This should go in now, in order to get the necessary testing on many platforms as soon as possible. The new spkg is clean (I just downloaded it, unpacked it, and looked at \"hg export default\"), and the changes to sage-env look sane, so I give a positive review right away.",
+    "body": "Attachment [trac_scripts-7186.patch](tarball://root/attachments/some-uuid/ticket7186/trac_scripts-7186.patch) by GeorgSWeber created at 2009-10-12 06:05:21\n\nYep, I missed the point about standalone \"./sage -sh && sage -ecl\" not working after a move of the Sage tree. This should go in now, in order to get the necessary testing on many platforms as soon as possible. The new spkg is clean (I just downloaded it, unpacked it, and looked at \"hg export default\"), and the changes to sage-env look sane, so I give a positive review right away.",
     "created_at": "2009-10-12T06:05:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7186",
     "type": "issue_comment",
@@ -369,7 +369,7 @@ archive/issue_comments_059530.json:
 }
 ```
 
-Attachment
+Attachment [trac_scripts-7186.patch](tarball://root/attachments/some-uuid/ticket7186/trac_scripts-7186.patch) by GeorgSWeber created at 2009-10-12 06:05:21
 
 Yep, I missed the point about standalone "./sage -sh && sage -ecl" not working after a move of the Sage tree. This should go in now, in order to get the necessary testing on many platforms as soon as possible. The new spkg is clean (I just downloaded it, unpacked it, and looked at "hg export default"), and the changes to sage-env look sane, so I give a positive review right away.
 

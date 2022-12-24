@@ -80,7 +80,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4814
 archive/issue_comments_036495.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4814.patch](tarball://root/attachments/some-uuid/ticket4814/trac_4814.patch) by was created at 2008-12-16 15:42:54",
     "created_at": "2008-12-16T15:42:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4814",
     "type": "issue_comment",
@@ -89,7 +89,7 @@ archive/issue_comments_036495.json:
 }
 ```
 
-Attachment
+Attachment [trac_4814.patch](tarball://root/attachments/some-uuid/ticket4814/trac_4814.patch) by was created at 2008-12-16 15:42:54
 
 
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4036
 archive/issue_comments_029114.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4036.patch](tarball://root/attachments/some-uuid/ticket4036/trac_4036.patch) by mhansen created at 2008-09-01 23:35:10",
     "created_at": "2008-09-01T23:35:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4036",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_029114.json:
 }
 ```
 
-Attachment
+Attachment [trac_4036.patch](tarball://root/attachments/some-uuid/ticket4036/trac_4036.patch) by mhansen created at 2008-09-01 23:35:10
 
 
 
@@ -49,7 +49,7 @@ Attachment
 archive/issue_comments_029115.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4036-2.patch](tarball://root/attachments/some-uuid/ticket4036/trac_4036-2.patch) by mhansen created at 2008-09-08 02:11:35",
     "created_at": "2008-09-08T02:11:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4036",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_029115.json:
 }
 ```
 
-Attachment
+Attachment [trac_4036-2.patch](tarball://root/attachments/some-uuid/ticket4036/trac_4036-2.patch) by mhansen created at 2008-09-08 02:11:35
 
 
 
@@ -67,7 +67,7 @@ Attachment
 archive/issue_comments_029116.json:
 ```json
 {
-    "body": "Attachment\n\npatches apply to 3.1.2.rc1 and doctests pass in `sage/interfaces`, with the following exceptions:\n\n```\nsage -t  devel/sage/sage/interfaces/psage.py\nEnd Of File (EOF) in read_nonblocking(). Empty string style platform.\n<pexpect.spawn instance at 0x7550f80>\nversion: 2.0 ($Revision: 1.151 $)\ncommand: /Users/rlmill/sage-3.1.2.rc1/sage\nargs: ['/Users/rlmill/sage-3.1.2.rc1/sage']\npatterns:\n    sage: \nbuffer (last 100 chars): \nbefore (last 100 chars): \nafter: <class 'pexpect.EOF'>\nmatch: None\nmatch_index: None\nexitstatus: None\nflag_eof: 1\npid: 27789\nchild_fd: 5\ntimeout: 30\ndelimiter: <class 'pexpect.EOF'>\nlogfile: None\nmaxread: 100000\nsearchwindowsize: None\ndelaybeforesend: 0\n\t [14.6 s]\n```\n\nThis one passes, but...\n\nAnd this one:\n\n```\nsage -t  devel/sage/sage/interfaces/lisp.py\n**********************************************************************\nFile \"/Users/rlmill/sage-3.1.2.rc1/tmp/lisp.py\", line 282:\n    sage: lisp.version()\nExpected:\n    GNU CLISP ... (...) (built ...) (memory ...)\n    ...\nGot:\n    GNU CLISP 2.46 (2008-07-02) (built on robert-millers-macbook-pro-15.local [192.168.0.101])\n    Software: GNU C 4.0.1 (Apple Inc. build 5465) \n    gcc -O0 -g -I/Users/rlmill/sage-3.1.2.rc1/local/include/ -L/Users/rlmill/sage-3.1.2.rc1/local/lib/ -W -Wswitch -Wcomment -Wpointer-arith -Wimplicit -Wreturn-type -Wmissing-declarations -Wno-sign-compare -O0 -fexpensive-optimizations -falign-functions=4 -DUNIX_BINARY_DISTRIB -DUNICODE -DNO_GETTEXT -DNO_SIGSEGV -I. -x none -lreadline -lncurses  -liconv  -L/usr/X11/lib -R/usr/X11/lib\n    SAFETY=0 HEAPCODES STANDARD_HEAPCODES SPVW_BLOCKS SPVW_MIXED TRIVIALMAP_MEMORY\n    libiconv 1.11\n    libreadline 5.2\n    Features: \n    (REGEXP SYSCALLS I18N LOOP COMPILER CLOS MOP CLISP ANSI-CL COMMON-LISP LISP=CL\n     INTERPRETER SOCKETS GENERIC-STREAMS LOGICAL-PATHNAMES SCREEN UNICODE\n     BASE-CHAR=CHARACTER UNIX MACOS)\n    C Modules: (clisp i18n syscalls regexp)\n    Installation directory: /Users/rlmill/sage-3.1.2.rc1/local/lib/clisp-2.46/\n    User language: ENGLISH\n    Machine: I386 (I386) D-69-91-148-44.dhcp4.washington.edu [69.91.148.44]\n    <BLANKLINE>\n**********************************************************************\n1 items had failures:\n   1 of   3 in __main__.example_14\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /Users/rlmill/sage-3.1.2.rc1/tmp/.doctest_lisp.py\n\n\t [3.2 s]\n```\n",
+    "body": "Attachment [trac_4036-3.patch](tarball://root/attachments/some-uuid/ticket4036/trac_4036-3.patch) by rlm created at 2008-09-15 00:55:41\n\npatches apply to 3.1.2.rc1 and doctests pass in `sage/interfaces`, with the following exceptions:\n\n```\nsage -t  devel/sage/sage/interfaces/psage.py\nEnd Of File (EOF) in read_nonblocking(). Empty string style platform.\n<pexpect.spawn instance at 0x7550f80>\nversion: 2.0 ($Revision: 1.151 $)\ncommand: /Users/rlmill/sage-3.1.2.rc1/sage\nargs: ['/Users/rlmill/sage-3.1.2.rc1/sage']\npatterns:\n    sage: \nbuffer (last 100 chars): \nbefore (last 100 chars): \nafter: <class 'pexpect.EOF'>\nmatch: None\nmatch_index: None\nexitstatus: None\nflag_eof: 1\npid: 27789\nchild_fd: 5\ntimeout: 30\ndelimiter: <class 'pexpect.EOF'>\nlogfile: None\nmaxread: 100000\nsearchwindowsize: None\ndelaybeforesend: 0\n\t [14.6 s]\n```\n\nThis one passes, but...\n\nAnd this one:\n\n```\nsage -t  devel/sage/sage/interfaces/lisp.py\n**********************************************************************\nFile \"/Users/rlmill/sage-3.1.2.rc1/tmp/lisp.py\", line 282:\n    sage: lisp.version()\nExpected:\n    GNU CLISP ... (...) (built ...) (memory ...)\n    ...\nGot:\n    GNU CLISP 2.46 (2008-07-02) (built on robert-millers-macbook-pro-15.local [192.168.0.101])\n    Software: GNU C 4.0.1 (Apple Inc. build 5465) \n    gcc -O0 -g -I/Users/rlmill/sage-3.1.2.rc1/local/include/ -L/Users/rlmill/sage-3.1.2.rc1/local/lib/ -W -Wswitch -Wcomment -Wpointer-arith -Wimplicit -Wreturn-type -Wmissing-declarations -Wno-sign-compare -O0 -fexpensive-optimizations -falign-functions=4 -DUNIX_BINARY_DISTRIB -DUNICODE -DNO_GETTEXT -DNO_SIGSEGV -I. -x none -lreadline -lncurses  -liconv  -L/usr/X11/lib -R/usr/X11/lib\n    SAFETY=0 HEAPCODES STANDARD_HEAPCODES SPVW_BLOCKS SPVW_MIXED TRIVIALMAP_MEMORY\n    libiconv 1.11\n    libreadline 5.2\n    Features: \n    (REGEXP SYSCALLS I18N LOOP COMPILER CLOS MOP CLISP ANSI-CL COMMON-LISP LISP=CL\n     INTERPRETER SOCKETS GENERIC-STREAMS LOGICAL-PATHNAMES SCREEN UNICODE\n     BASE-CHAR=CHARACTER UNIX MACOS)\n    C Modules: (clisp i18n syscalls regexp)\n    Installation directory: /Users/rlmill/sage-3.1.2.rc1/local/lib/clisp-2.46/\n    User language: ENGLISH\n    Machine: I386 (I386) D-69-91-148-44.dhcp4.washington.edu [69.91.148.44]\n    <BLANKLINE>\n**********************************************************************\n1 items had failures:\n   1 of   3 in __main__.example_14\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /Users/rlmill/sage-3.1.2.rc1/tmp/.doctest_lisp.py\n\n\t [3.2 s]\n```\n",
     "created_at": "2008-09-15T00:55:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4036",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_029116.json:
 }
 ```
 
-Attachment
+Attachment [trac_4036-3.patch](tarball://root/attachments/some-uuid/ticket4036/trac_4036-3.patch) by rlm created at 2008-09-15 00:55:41
 
 patches apply to 3.1.2.rc1 and doctests pass in `sage/interfaces`, with the following exceptions:
 
@@ -276,7 +276,7 @@ Exception raised:
 archive/issue_comments_029120.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch should fix the issues.",
+    "body": "Attachment [trac_4036-fixes.patch](tarball://root/attachments/some-uuid/ticket4036/trac_4036-fixes.patch) by mhansen created at 2008-09-15 03:51:23\n\nThis patch should fix the issues.",
     "created_at": "2008-09-15T03:51:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4036",
     "type": "issue_comment",
@@ -285,7 +285,7 @@ archive/issue_comments_029120.json:
 }
 ```
 
-Attachment
+Attachment [trac_4036-fixes.patch](tarball://root/attachments/some-uuid/ticket4036/trac_4036-fixes.patch) by mhansen created at 2008-09-15 03:51:23
 
 This patch should fix the issues.
 
@@ -354,7 +354,7 @@ abort: patch failed to apply
 archive/issue_comments_029123.json:
 ```json
 {
-    "body": "Attachment\n\nadd fricas tests to axiom.py",
+    "body": "Attachment [trac_4036-axiom_interface.patch](tarball://root/attachments/some-uuid/ticket4036/trac_4036-axiom_interface.patch) by awebb created at 2009-08-17 15:02:46\n\nadd fricas tests to axiom.py",
     "created_at": "2009-08-17T15:02:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4036",
     "type": "issue_comment",
@@ -363,7 +363,7 @@ archive/issue_comments_029123.json:
 }
 ```
 
-Attachment
+Attachment [trac_4036-axiom_interface.patch](tarball://root/attachments/some-uuid/ticket4036/trac_4036-axiom_interface.patch) by awebb created at 2009-08-17 15:02:46
 
 add fricas tests to axiom.py
 

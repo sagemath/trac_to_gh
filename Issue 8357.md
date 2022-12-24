@@ -147,7 +147,7 @@ There's still a timing(?) problem ([log](http://sage.math.washington.edu/home/mp
 archive/issue_comments_074655.json:
 ```json
 {
-    "body": "Attachment\n\nTweak `MAKEFILE`s for parallel builds.  eclib src repo.",
+    "body": "Attachment [trac_8357-eclib_makefiles.patch](tarball://root/attachments/some-uuid/ticket8357/trac_8357-eclib_makefiles.patch) by mpatel created at 2010-02-28 13:29:51\n\nTweak `MAKEFILE`s for parallel builds.  eclib src repo.",
     "created_at": "2010-02-28T13:29:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8357",
     "type": "issue_comment",
@@ -156,7 +156,7 @@ archive/issue_comments_074655.json:
 }
 ```
 
-Attachment
+Attachment [trac_8357-eclib_makefiles.patch](tarball://root/attachments/some-uuid/ticket8357/trac_8357-eclib_makefiles.patch) by mpatel created at 2010-02-28 13:29:51
 
 Tweak `MAKEFILE`s for parallel builds.  eclib src repo.
 
@@ -301,7 +301,7 @@ Diff of `spkg-install`, `SPKG.txt`.  eclib spkg repo.
 archive/issue_comments_074661.json:
 ```json
 {
-    "body": "Attachment\n\nDon't write `PRIMES`. Delete `1` after check.  eclib src repo",
+    "body": "Attachment [trac_8357-suppress_PRIMES.patch](tarball://root/attachments/some-uuid/ticket8357/trac_8357-suppress_PRIMES.patch) by mpatel created at 2010-03-01 00:18:24\n\nDon't write `PRIMES`. Delete `1` after check.  eclib src repo",
     "created_at": "2010-03-01T00:18:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8357",
     "type": "issue_comment",
@@ -310,7 +310,7 @@ archive/issue_comments_074661.json:
 }
 ```
 
-Attachment
+Attachment [trac_8357-suppress_PRIMES.patch](tarball://root/attachments/some-uuid/ticket8357/trac_8357-suppress_PRIMES.patch) by mpatel created at 2010-03-01 00:18:24
 
 Don't write `PRIMES`. Delete `1` after check.  eclib src repo
 
@@ -478,7 +478,7 @@ replacement src/g0n/Makefile
 archive/issue_comments_074669.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:12 mpatel]:\n> Sure, that sounds good.\nI have attached the replacement Makefile -- could you update the spkg with it?",
+    "body": "Attachment [Makefile](tarball://root/attachments/some-uuid/ticket8357/Makefile) by cremona created at 2010-03-01 22:04:17\n\nReplying to [comment:12 mpatel]:\n> Sure, that sounds good.\nI have attached the replacement Makefile -- could you update the spkg with it?",
     "created_at": "2010-03-01T22:04:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8357",
     "type": "issue_comment",
@@ -487,7 +487,7 @@ archive/issue_comments_074669.json:
 }
 ```
 
-Attachment
+Attachment [Makefile](tarball://root/attachments/some-uuid/ticket8357/Makefile) by cremona created at 2010-03-01 22:04:17
 
 Replying to [comment:12 mpatel]:
 > Sure, that sounds good.
@@ -518,7 +518,7 @@ Done!  The package now builds in parallel and `make check` now works for me on t
 archive/issue_comments_074671.json:
 ```json
 {
-    "body": "Attachment\n\nSimplify `g0n/Makefile`.  eclib src repo.",
+    "body": "Attachment [trac_8357-newforms_dir.patch](tarball://root/attachments/some-uuid/ticket8357/trac_8357-newforms_dir.patch) by mpatel created at 2010-03-02 22:34:35\n\nSimplify `g0n/Makefile`.  eclib src repo.",
     "created_at": "2010-03-02T22:34:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8357",
     "type": "issue_comment",
@@ -527,7 +527,7 @@ archive/issue_comments_074671.json:
 }
 ```
 
-Attachment
+Attachment [trac_8357-newforms_dir.patch](tarball://root/attachments/some-uuid/ticket8357/trac_8357-newforms_dir.patch) by mpatel created at 2010-03-02 22:34:35
 
 Simplify `g0n/Makefile`.  eclib src repo.
 

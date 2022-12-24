@@ -54,7 +54,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6000
 archive/issue_comments_047727.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [transitive_ideal-6000-submitted.patch](tarball://root/attachments/some-uuid/ticket6000/transitive_ideal-6000-submitted.patch) by nthiery created at 2009-05-06 22:48:06",
     "created_at": "2009-05-06T22:48:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6000",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_047727.json:
 }
 ```
 
-Attachment
+Attachment [transitive_ideal-6000-submitted.patch](tarball://root/attachments/some-uuid/ticket6000/transitive_ideal-6000-submitted.patch) by nthiery created at 2009-05-06 22:48:06
 
 
 
@@ -108,7 +108,7 @@ Apply on top of main patch
 archive/issue_comments_047730.json:
 ```json
 {
-    "body": "Attachment\n\nPasses tests:   ./sage -t devel/sage-backtrack/sage/combinat/\n\nReviewer patch adds two doctests, and some general cleanup, so apply on top of the main patch.\n\nIn the case of a search tree (not a graph), options for \"leaves only\" would be useful.  Then the generators could be checked for a first element when using a search tree for existence questions.\n\nBuilding a single function to call these routines as variants might ease the question of names and interfaces.\n\nPositive review.",
+    "body": "Attachment [trac_6000_reviewer.patch](tarball://root/attachments/some-uuid/ticket6000/trac_6000_reviewer.patch) by rbeezer created at 2009-05-21 05:11:41\n\nPasses tests:   ./sage -t devel/sage-backtrack/sage/combinat/\n\nReviewer patch adds two doctests, and some general cleanup, so apply on top of the main patch.\n\nIn the case of a search tree (not a graph), options for \"leaves only\" would be useful.  Then the generators could be checked for a first element when using a search tree for existence questions.\n\nBuilding a single function to call these routines as variants might ease the question of names and interfaces.\n\nPositive review.",
     "created_at": "2009-05-21T05:11:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6000",
     "type": "issue_comment",
@@ -117,7 +117,7 @@ archive/issue_comments_047730.json:
 }
 ```
 
-Attachment
+Attachment [trac_6000_reviewer.patch](tarball://root/attachments/some-uuid/ticket6000/trac_6000_reviewer.patch) by rbeezer created at 2009-05-21 05:11:41
 
 Passes tests:   ./sage -t devel/sage-backtrack/sage/combinat/
 

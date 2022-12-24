@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1490
 archive/issue_comments_009587.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-2.9.alpha6-test.py-OSX-10.5.1-doctest-fix.patch](tarball://root/attachments/some-uuid/ticket1490/Sage-2.9.alpha6-test.py-OSX-10.5.1-doctest-fix.patch) by mabshoff created at 2007-12-13 19:46:29",
     "created_at": "2007-12-13T19:46:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1490",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_009587.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.9.alpha6-test.py-OSX-10.5.1-doctest-fix.patch](tarball://root/attachments/some-uuid/ticket1490/Sage-2.9.alpha6-test.py-OSX-10.5.1-doctest-fix.patch) by mabshoff created at 2007-12-13 19:46:29
 
 
 

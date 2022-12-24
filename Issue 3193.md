@@ -53,7 +53,7 @@ Changing status from new to assigned.
 archive/issue_comments_022079.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [twisted-8.0.1-64bit-osx-support.patch](tarball://root/attachments/some-uuid/ticket3193/twisted-8.0.1-64bit-osx-support.patch) by mabshoff created at 2008-05-28 09:55:34",
     "created_at": "2008-05-28T09:55:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3193",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_022079.json:
 }
 ```
 
-Attachment
+Attachment [twisted-8.0.1-64bit-osx-support.patch](tarball://root/attachments/some-uuid/ticket3193/twisted-8.0.1-64bit-osx-support.patch) by mabshoff created at 2008-05-28 09:55:34
 
 
 

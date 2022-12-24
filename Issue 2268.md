@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2268
 archive/issue_comments_015027.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [parent.pyx.patch](tarball://root/attachments/some-uuid/ticket2268/parent.pyx.patch) by mabshoff created at 2008-02-22 22:24:36",
     "created_at": "2008-02-22T22:24:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2268",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_015027.json:
 }
 ```
 
-Attachment
+Attachment [parent.pyx.patch](tarball://root/attachments/some-uuid/ticket2268/parent.pyx.patch) by mabshoff created at 2008-02-22 22:24:36
 
 
 
@@ -161,7 +161,7 @@ patch based off 2.10.2
 archive/issue_comments_015032.json:
 ```json
 {
-    "body": "Attachment\n\nWhile there is a new coercion system coming soon, it seems like a good idea to have a high performance solution until it is released.  This new solution uses a single lookup statement but uses Py* to bypass the try except mechanism to keep speed up.  Unfortunately it has the if statement for backwards compatibility, but with some luck that might be removable before the next release.",
+    "body": "Attachment [parent.pyx.2.patch](tarball://root/attachments/some-uuid/ticket2268/parent.pyx.2.patch) by gfurnish created at 2008-02-23 06:22:56\n\nWhile there is a new coercion system coming soon, it seems like a good idea to have a high performance solution until it is released.  This new solution uses a single lookup statement but uses Py* to bypass the try except mechanism to keep speed up.  Unfortunately it has the if statement for backwards compatibility, but with some luck that might be removable before the next release.",
     "created_at": "2008-02-23T06:22:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2268",
     "type": "issue_comment",
@@ -170,7 +170,7 @@ archive/issue_comments_015032.json:
 }
 ```
 
-Attachment
+Attachment [parent.pyx.2.patch](tarball://root/attachments/some-uuid/ticket2268/parent.pyx.2.patch) by gfurnish created at 2008-02-23 06:22:56
 
 While there is a new coercion system coming soon, it seems like a good idea to have a high performance solution until it is released.  This new solution uses a single lookup statement but uses Py* to bypass the try except mechanism to keep speed up.  Unfortunately it has the if statement for backwards compatibility, but with some luck that might be removable before the next release.
 
@@ -181,7 +181,7 @@ While there is a new coercion system coming soon, it seems like a good idea to h
 archive/issue_comments_015033.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2268-alt.patch](tarball://root/attachments/some-uuid/ticket2268/2268-alt.patch) by robertwb created at 2008-02-29 01:31:51",
     "created_at": "2008-02-29T01:31:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2268",
     "type": "issue_comment",
@@ -190,7 +190,7 @@ archive/issue_comments_015033.json:
 }
 ```
 
-Attachment
+Attachment [2268-alt.patch](tarball://root/attachments/some-uuid/ticket2268/2268-alt.patch) by robertwb created at 2008-02-29 01:31:51
 
 
 

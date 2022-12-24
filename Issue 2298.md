@@ -45,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2298
 archive/issue_comments_015237.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [nf-from-algebraic.patch](tarball://root/attachments/some-uuid/ticket2298/nf-from-algebraic.patch) by jason created at 2008-02-25 16:18:17",
     "created_at": "2008-02-25T16:18:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2298",
     "type": "issue_comment",
@@ -54,7 +54,7 @@ archive/issue_comments_015237.json:
 }
 ```
 
-Attachment
+Attachment [nf-from-algebraic.patch](tarball://root/attachments/some-uuid/ticket2298/nf-from-algebraic.patch) by jason created at 2008-02-25 16:18:17
 
 
 
@@ -113,7 +113,7 @@ Changing status from new to assigned.
 archive/issue_comments_015240.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [nf-from-algebraic-v2.patch](tarball://root/attachments/some-uuid/ticket2298/nf-from-algebraic-v2.patch) by cwitty created at 2008-02-28 03:51:51",
     "created_at": "2008-02-28T03:51:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2298",
     "type": "issue_comment",
@@ -122,7 +122,7 @@ archive/issue_comments_015240.json:
 }
 ```
 
-Attachment
+Attachment [nf-from-algebraic-v2.patch](tarball://root/attachments/some-uuid/ticket2298/nf-from-algebraic-v2.patch) by cwitty created at 2008-02-28 03:51:51
 
 
 
@@ -193,7 +193,7 @@ just worked, too -- coerced to QQbar for you.
 archive/issue_comments_015244.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [nf-from-algebraic-response.patch](tarball://root/attachments/some-uuid/ticket2298/nf-from-algebraic-response.patch) by cwitty created at 2008-03-02 19:18:48",
     "created_at": "2008-03-02T19:18:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2298",
     "type": "issue_comment",
@@ -202,7 +202,7 @@ archive/issue_comments_015244.json:
 }
 ```
 
-Attachment
+Attachment [nf-from-algebraic-response.patch](tarball://root/attachments/some-uuid/ticket2298/nf-from-algebraic-response.patch) by cwitty created at 2008-03-02 19:18:48
 
 
 

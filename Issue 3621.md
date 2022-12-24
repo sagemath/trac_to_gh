@@ -719,7 +719,7 @@ Chris
 archive/issue_comments_025585.json:
 ```json
 {
-    "body": "Attachment\n\nReplacement patch for all patches listed above. Combines all changes.",
+    "body": "Attachment [sage-3621-combined.patch](tarball://root/attachments/some-uuid/ticket3621/sage-3621-combined.patch) by cswiercz created at 2008-08-07 23:06:50\n\nReplacement patch for all patches listed above. Combines all changes.",
     "created_at": "2008-08-07T23:06:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3621",
     "type": "issue_comment",
@@ -728,7 +728,7 @@ archive/issue_comments_025585.json:
 }
 ```
 
-Attachment
+Attachment [sage-3621-combined.patch](tarball://root/attachments/some-uuid/ticket3621/sage-3621-combined.patch) by cswiercz created at 2008-08-07 23:06:50
 
 Replacement patch for all patches listed above. Combines all changes.
 
@@ -761,7 +761,7 @@ Michael
 archive/issue_comments_025587.json:
 ```json
 {
-    "body": "Attachment\n\nAdded Yahoo Finance as a backup to Google Finance historical requests. Additional refinements.",
+    "body": "Attachment [sage-3621-extrapart1.patch](tarball://root/attachments/some-uuid/ticket3621/sage-3621-extrapart1.patch) by cswiercz created at 2008-08-13 00:51:55\n\nAdded Yahoo Finance as a backup to Google Finance historical requests. Additional refinements.",
     "created_at": "2008-08-13T00:51:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3621",
     "type": "issue_comment",
@@ -770,7 +770,7 @@ archive/issue_comments_025587.json:
 }
 ```
 
-Attachment
+Attachment [sage-3621-extrapart1.patch](tarball://root/attachments/some-uuid/ticket3621/sage-3621-extrapart1.patch) by cswiercz created at 2008-08-13 00:51:55
 
 Added Yahoo Finance as a backup to Google Finance historical requests. Additional refinements.
 
@@ -905,7 +905,7 @@ apply to repository in SAGE_ROOT/examples
 archive/issue_comments_025592.json:
 ```json
 {
-    "body": "Attachment\n\nremoves creation of example file from original",
+    "body": "Attachment [3621\u2013example.patch](tarball://root/attachments/some-uuid/ticket3621/3621\u2013example.patch) by boothby created at 2008-09-11 22:19:37\n\nremoves creation of example file from original",
     "created_at": "2008-09-11T22:19:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3621",
     "type": "issue_comment",
@@ -914,7 +914,7 @@ archive/issue_comments_025592.json:
 }
 ```
 
-Attachment
+Attachment [3621–example.patch](tarball://root/attachments/some-uuid/ticket3621/3621–example.patch) by boothby created at 2008-09-11 22:19:37
 
 removes creation of example file from original
 
@@ -925,7 +925,7 @@ removes creation of example file from original
 archive/issue_comments_025593.json:
 ```json
 {
-    "body": "Attachment\n\nAll (including optional) tests pass!",
+    "body": "Attachment [3621-combined.patch](tarball://root/attachments/some-uuid/ticket3621/3621-combined.patch) by boothby created at 2008-09-11 22:41:23\n\nAll (including optional) tests pass!",
     "created_at": "2008-09-11T22:41:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3621",
     "type": "issue_comment",
@@ -934,7 +934,7 @@ archive/issue_comments_025593.json:
 }
 ```
 
-Attachment
+Attachment [3621-combined.patch](tarball://root/attachments/some-uuid/ticket3621/3621-combined.patch) by boothby created at 2008-09-11 22:41:23
 
 All (including optional) tests pass!
 
@@ -945,7 +945,7 @@ All (including optional) tests pass!
 archive/issue_comments_025594.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3621-trivial_referee_followup.patch](tarball://root/attachments/some-uuid/ticket3621/sage-3621-trivial_referee_followup.patch) by was created at 2008-11-28 03:33:07",
     "created_at": "2008-11-28T03:33:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3621",
     "type": "issue_comment",
@@ -954,7 +954,7 @@ archive/issue_comments_025594.json:
 }
 ```
 
-Attachment
+Attachment [sage-3621-trivial_referee_followup.patch](tarball://root/attachments/some-uuid/ticket3621/sage-3621-trivial_referee_followup.patch) by was created at 2008-11-28 03:33:07
 
 
 

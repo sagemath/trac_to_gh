@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7577
 archive/issue_comments_064534.json:
 ```json
 {
-    "body": "Attachment\n\nI am CCing burcin because he knows libSingular and I am CCing ncohen because I wrote this patch in order to speed up the linear programming interface.",
+    "body": "Attachment [mpolynomial_rr_libsingular.patch](tarball://root/attachments/some-uuid/ticket7577/mpolynomial_rr_libsingular.patch) by malb created at 2009-12-01 23:15:19\n\nI am CCing burcin because he knows libSingular and I am CCing ncohen because I wrote this patch in order to speed up the linear programming interface.",
     "created_at": "2009-12-01T23:15:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7577",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_064534.json:
 }
 ```
 
-Attachment
+Attachment [mpolynomial_rr_libsingular.patch](tarball://root/attachments/some-uuid/ticket7577/mpolynomial_rr_libsingular.patch) by malb created at 2009-12-01 23:15:19
 
 I am CCing burcin because he knows libSingular and I am CCing ncohen because I wrote this patch in order to speed up the linear programming interface.
 
@@ -206,7 +206,7 @@ Changing status from needs_work to needs_info.
 archive/issue_comments_064542.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [mpolynomial_rr_libsingular_fixes.patch](tarball://root/attachments/some-uuid/ticket7577/mpolynomial_rr_libsingular_fixes.patch) by malb created at 2009-12-02 14:32:32",
     "created_at": "2009-12-02T14:32:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7577",
     "type": "issue_comment",
@@ -215,4 +215,4 @@ archive/issue_comments_064542.json:
 }
 ```
 
-Attachment
+Attachment [mpolynomial_rr_libsingular_fixes.patch](tarball://root/attachments/some-uuid/ticket7577/mpolynomial_rr_libsingular_fixes.patch) by malb created at 2009-12-02 14:32:32

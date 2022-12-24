@@ -259,7 +259,7 @@ Hmmm...I think you're right; it's best to simply remove it. I don't think changi
 archive/issue_comments_043779.json:
 ```json
 {
-    "body": "Attachment\n\nok, back to the original version of the patch",
+    "body": "Attachment [trac5608.patch](tarball://root/attachments/some-uuid/ticket5608/trac5608.patch) by chapoton created at 2013-08-28 16:50:56\n\nok, back to the original version of the patch",
     "created_at": "2013-08-28T16:50:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5608",
     "type": "issue_comment",
@@ -268,7 +268,7 @@ archive/issue_comments_043779.json:
 }
 ```
 
-Attachment
+Attachment [trac5608.patch](tarball://root/attachments/some-uuid/ticket5608/trac5608.patch) by chapoton created at 2013-08-28 16:50:56
 
 ok, back to the original version of the patch
 

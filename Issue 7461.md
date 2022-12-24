@@ -248,7 +248,7 @@ Also, I have fixed the doctests to ensure that they are truly random, so that al
 archive/issue_comments_062849.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7461.patch](tarball://root/attachments/some-uuid/ticket7461/trac_7461.patch) by rlm created at 2009-11-28 06:42:42",
     "created_at": "2009-11-28T06:42:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7461",
     "type": "issue_comment",
@@ -257,7 +257,7 @@ archive/issue_comments_062849.json:
 }
 ```
 
-Attachment
+Attachment [trac_7461.patch](tarball://root/attachments/some-uuid/ticket7461/trac_7461.patch) by rlm created at 2009-11-28 06:42:42
 
 
 

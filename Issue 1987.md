@@ -58,7 +58,7 @@ As Mike Hansen points out, use python natives "all" and "any" instead. Patch sho
 archive/issue_comments_012867.json:
 ```json
 {
-    "body": "Attachment\n\nPatch to fix docstrings of forall and exists to refer to Python natives.",
+    "body": "Attachment [witness.patch](tarball://root/attachments/some-uuid/ticket1987/witness.patch) by nbruin created at 2008-02-01 02:00:05\n\nPatch to fix docstrings of forall and exists to refer to Python natives.",
     "created_at": "2008-02-01T02:00:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1987",
     "type": "issue_comment",
@@ -67,7 +67,7 @@ archive/issue_comments_012867.json:
 }
 ```
 
-Attachment
+Attachment [witness.patch](tarball://root/attachments/some-uuid/ticket1987/witness.patch) by nbruin created at 2008-02-01 02:00:05
 
 Patch to fix docstrings of forall and exists to refer to Python natives.
 

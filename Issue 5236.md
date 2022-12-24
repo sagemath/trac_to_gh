@@ -142,7 +142,7 @@ Rebased against 5778.
 archive/issue_comments_040125.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac5236.patch](tarball://root/attachments/some-uuid/ticket5236/trac5236.patch) by roed created at 2009-04-25 07:51:38",
     "created_at": "2009-04-25T07:51:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5236",
     "type": "issue_comment",
@@ -151,7 +151,7 @@ archive/issue_comments_040125.json:
 }
 ```
 
-Attachment
+Attachment [trac5236.patch](tarball://root/attachments/some-uuid/ticket5236/trac5236.patch) by roed created at 2009-04-25 07:51:38
 
 
 
@@ -196,7 +196,7 @@ Includes commit message, rebased against 3.4.2 and #5778.
 archive/issue_comments_040128.json:
 ```json
 {
-    "body": "Attachment\n\nApplies against 4.0alpha0, passes all doctests, looks reasonable to me. Positive review.",
+    "body": "Attachment [trac5236.2.patch](tarball://root/attachments/some-uuid/ticket5236/trac5236.2.patch) by kedlaya created at 2009-05-19 16:07:43\n\nApplies against 4.0alpha0, passes all doctests, looks reasonable to me. Positive review.",
     "created_at": "2009-05-19T16:07:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5236",
     "type": "issue_comment",
@@ -205,7 +205,7 @@ archive/issue_comments_040128.json:
 }
 ```
 
-Attachment
+Attachment [trac5236.2.patch](tarball://root/attachments/some-uuid/ticket5236/trac5236.2.patch) by kedlaya created at 2009-05-19 16:07:43
 
 Applies against 4.0alpha0, passes all doctests, looks reasonable to me. Positive review.
 

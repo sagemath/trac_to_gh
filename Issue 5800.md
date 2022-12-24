@@ -270,7 +270,7 @@ CCing some more people that would be great reviewers.
 archive/issue_comments_045535.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-5800-bitset-class.patch](tarball://root/attachments/some-uuid/ticket5800/trac-5800-bitset-class.patch) by jason created at 2009-10-16 11:45:37",
     "created_at": "2009-10-16T11:45:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5800",
     "type": "issue_comment",
@@ -279,7 +279,7 @@ archive/issue_comments_045535.json:
 }
 ```
 
-Attachment
+Attachment [trac-5800-bitset-class.patch](tarball://root/attachments/some-uuid/ticket5800/trac-5800-bitset-class.patch) by jason created at 2009-10-16 11:45:37
 
 
 
@@ -342,7 +342,7 @@ apply on top of previous patch
 archive/issue_comments_045539.json:
 ```json
 {
-    "body": "Attachment\n\nApologies: that last patch had a bit of another unrelated patch in it.  I've just uploaded the corrected patch.",
+    "body": "Attachment [trac-5800-bitset-class-docs.patch](tarball://root/attachments/some-uuid/ticket5800/trac-5800-bitset-class-docs.patch) by jason created at 2009-10-23 00:47:51\n\nApologies: that last patch had a bit of another unrelated patch in it.  I've just uploaded the corrected patch.",
     "created_at": "2009-10-23T00:47:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5800",
     "type": "issue_comment",
@@ -351,7 +351,7 @@ archive/issue_comments_045539.json:
 }
 ```
 
-Attachment
+Attachment [trac-5800-bitset-class-docs.patch](tarball://root/attachments/some-uuid/ticket5800/trac-5800-bitset-class-docs.patch) by jason created at 2009-10-23 00:47:51
 
 Apologies: that last patch had a bit of another unrelated patch in it.  I've just uploaded the corrected patch.
 

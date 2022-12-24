@@ -126,7 +126,7 @@ This segfaults because the `monomials()` method doesn't set the current ring. at
 archive/issue_comments_059257.json:
 ```json
 {
-    "body": "Attachment\n\nset current ring for singular in monomials() method",
+    "body": "Attachment [trac_7152-monomials_cring.patch](tarball://root/attachments/some-uuid/ticket7152/trac_7152-monomials_cring.patch) by burcin created at 2010-01-17 02:36:37\n\nset current ring for singular in monomials() method",
     "created_at": "2010-01-17T02:36:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7152",
     "type": "issue_comment",
@@ -135,7 +135,7 @@ archive/issue_comments_059257.json:
 }
 ```
 
-Attachment
+Attachment [trac_7152-monomials_cring.patch](tarball://root/attachments/some-uuid/ticket7152/trac_7152-monomials_cring.patch) by burcin created at 2010-01-17 02:36:37
 
 set current ring for singular in monomials() method
 

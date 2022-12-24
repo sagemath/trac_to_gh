@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/929
 archive/issue_comments_005681.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch requires http://sage.math.washington.edu/home/malb/pkgs/libfplll-2.0-20071020.spkg to be installed. After that package has be installed and the patch was applied, fpLLL is the default implementation for Matrix_integer_dense.LLL. I'd appreciate if somebody more into LLL would check my documentation.",
+    "body": "Attachment [fpLLL-sage.patch](tarball://root/attachments/some-uuid/ticket929/fpLLL-sage.patch) by malb created at 2007-10-21 16:20:20\n\nThe attached patch requires http://sage.math.washington.edu/home/malb/pkgs/libfplll-2.0-20071020.spkg to be installed. After that package has be installed and the patch was applied, fpLLL is the default implementation for Matrix_integer_dense.LLL. I'd appreciate if somebody more into LLL would check my documentation.",
     "created_at": "2007-10-21T16:20:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/929",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_005681.json:
 }
 ```
 
-Attachment
+Attachment [fpLLL-sage.patch](tarball://root/attachments/some-uuid/ticket929/fpLLL-sage.patch) by malb created at 2007-10-21 16:20:20
 
 The attached patch requires http://sage.math.washington.edu/home/malb/pkgs/libfplll-2.0-20071020.spkg to be installed. After that package has be installed and the patch was applied, fpLLL is the default implementation for Matrix_integer_dense.LLL. I'd appreciate if somebody more into LLL would check my documentation.
 

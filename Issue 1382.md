@@ -52,7 +52,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1382
 archive/issue_comments_008859.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ticket_1382.patch](tarball://root/attachments/some-uuid/ticket1382/ticket_1382.patch) by mabshoff created at 2008-02-16 23:29:25",
     "created_at": "2008-02-16T23:29:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1382",
     "type": "issue_comment",
@@ -61,7 +61,7 @@ archive/issue_comments_008859.json:
 }
 ```
 
-Attachment
+Attachment [ticket_1382.patch](tarball://root/attachments/some-uuid/ticket1382/ticket_1382.patch) by mabshoff created at 2008-02-16 23:29:25
 
 
 
@@ -70,7 +70,7 @@ Attachment
 archive/issue_comments_008860.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [task_1832_2.patch](tarball://root/attachments/some-uuid/ticket1382/task_1832_2.patch) by TimothyClemans created at 2008-02-16 23:58:50",
     "created_at": "2008-02-16T23:58:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1382",
     "type": "issue_comment",
@@ -79,7 +79,7 @@ archive/issue_comments_008860.json:
 }
 ```
 
-Attachment
+Attachment [task_1832_2.patch](tarball://root/attachments/some-uuid/ticket1382/task_1832_2.patch) by TimothyClemans created at 2008-02-16 23:58:50
 
 
 
@@ -88,7 +88,7 @@ Attachment
 archive/issue_comments_008861.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [task_1832_3.patch](tarball://root/attachments/some-uuid/ticket1382/task_1832_3.patch) by TimothyClemans created at 2008-02-17 00:01:17",
     "created_at": "2008-02-17T00:01:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1382",
     "type": "issue_comment",
@@ -97,7 +97,7 @@ archive/issue_comments_008861.json:
 }
 ```
 
-Attachment
+Attachment [task_1832_3.patch](tarball://root/attachments/some-uuid/ticket1382/task_1832_3.patch) by TimothyClemans created at 2008-02-17 00:01:17
 
 
 
@@ -106,7 +106,7 @@ Attachment
 archive/issue_comments_008862.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [task_1382_4.patch](tarball://root/attachments/some-uuid/ticket1382/task_1382_4.patch) by TimothyClemans created at 2008-02-17 00:21:09",
     "created_at": "2008-02-17T00:21:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1382",
     "type": "issue_comment",
@@ -115,7 +115,7 @@ archive/issue_comments_008862.json:
 }
 ```
 
-Attachment
+Attachment [task_1382_4.patch](tarball://root/attachments/some-uuid/ticket1382/task_1382_4.patch) by TimothyClemans created at 2008-02-17 00:21:09
 
 
 
@@ -160,7 +160,7 @@ Changing status from new to assigned.
 archive/issue_comments_008865.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [combined_1382.patch](tarball://root/attachments/some-uuid/ticket1382/combined_1382.patch) by TimothyClemans created at 2008-02-17 01:13:19",
     "created_at": "2008-02-17T01:13:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1382",
     "type": "issue_comment",
@@ -169,7 +169,7 @@ archive/issue_comments_008865.json:
 }
 ```
 
-Attachment
+Attachment [combined_1382.patch](tarball://root/attachments/some-uuid/ticket1382/combined_1382.patch) by TimothyClemans created at 2008-02-17 01:13:19
 
 
 
@@ -212,7 +212,7 @@ Also, please post a unified patch making it easy to see just the total changes.
 archive/issue_comments_008867.json:
 ```json
 {
-    "body": "Attachment\n\n(this one by William and Timothy) apply this patch right after applying 1382_2.patch",
+    "body": "Attachment [1382_5.patch](tarball://root/attachments/some-uuid/ticket1382/1382_5.patch) by was created at 2008-02-23 00:57:10\n\n(this one by William and Timothy) apply this patch right after applying 1382_2.patch",
     "created_at": "2008-02-23T00:57:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1382",
     "type": "issue_comment",
@@ -221,7 +221,7 @@ archive/issue_comments_008867.json:
 }
 ```
 
-Attachment
+Attachment [1382_5.patch](tarball://root/attachments/some-uuid/ticket1382/1382_5.patch) by was created at 2008-02-23 00:57:10
 
 (this one by William and Timothy) apply this patch right after applying 1382_2.patch
 
@@ -232,7 +232,7 @@ Attachment
 archive/issue_comments_008868.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1382_5-part2of2.patch](tarball://root/attachments/some-uuid/ticket1382/1382_5-part2of2.patch) by was created at 2008-02-23 00:57:26",
     "created_at": "2008-02-23T00:57:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1382",
     "type": "issue_comment",
@@ -241,7 +241,7 @@ archive/issue_comments_008868.json:
 }
 ```
 
-Attachment
+Attachment [1382_5-part2of2.patch](tarball://root/attachments/some-uuid/ticket1382/1382_5-part2of2.patch) by was created at 2008-02-23 00:57:26
 
 
 

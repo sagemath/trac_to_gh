@@ -49,7 +49,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9963
 archive/issue_comments_099798.json:
 ```json
 {
-    "body": "Attachment\n\nInitial patch",
+    "body": "Attachment [trac_9963_nonnef_divisors_can_have_sections.patch](tarball://root/attachments/some-uuid/ticket9963/trac_9963_nonnef_divisors_can_have_sections.patch) by vbraun created at 2010-09-21 20:57:04\n\nInitial patch",
     "created_at": "2010-09-21T20:57:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9962",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_099798.json:
 }
 ```
 
-Attachment
+Attachment [trac_9963_nonnef_divisors_can_have_sections.patch](tarball://root/attachments/some-uuid/ticket9963/trac_9963_nonnef_divisors_can_have_sections.patch) by vbraun created at 2010-09-21 20:57:04
 
 Initial patch
 

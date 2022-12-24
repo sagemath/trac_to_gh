@@ -57,7 +57,7 @@ patch for riemann and comp interpolation
 archive/issue_comments_054535.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [ticket:6648 evanandel]:\n> This patch add's Riemann mapping functionality to sage: http://en.wikipedia.org/wiki/Riemann_mapping_theorem\n> \n> It can compute numerical maps and has multiple utilities for plotting/visualizing the maps.\n> \n> It also includes 2 functions to parametrically interpolate lists of complex points. This makes it far easier for the user to define the boundary of the figure that they wish to Riemann map.",
+    "body": "Attachment [12659.patch](tarball://root/attachments/some-uuid/ticket6648/12659.patch) by evanandel created at 2009-07-28 17:28:45\n\nReplying to [ticket:6648 evanandel]:\n> This patch add's Riemann mapping functionality to sage: http://en.wikipedia.org/wiki/Riemann_mapping_theorem\n> \n> It can compute numerical maps and has multiple utilities for plotting/visualizing the maps.\n> \n> It also includes 2 functions to parametrically interpolate lists of complex points. This makes it far easier for the user to define the boundary of the figure that they wish to Riemann map.",
     "created_at": "2009-07-28T17:28:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6648",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_054535.json:
 }
 ```
 
-Attachment
+Attachment [12659.patch](tarball://root/attachments/some-uuid/ticket6648/12659.patch) by evanandel created at 2009-07-28 17:28:45
 
 Replying to [ticket:6648 evanandel]:
 > This patch add's Riemann mapping functionality to sage: http://en.wikipedia.org/wiki/Riemann_mapping_theorem
@@ -151,7 +151,7 @@ Any idea what the problem is?
 archive/issue_comments_054537.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [12659.2.patch](tarball://root/attachments/some-uuid/ticket6648/12659.2.patch) by evanandel created at 2009-07-29 13:54:36",
     "created_at": "2009-07-29T13:54:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6648",
     "type": "issue_comment",
@@ -160,7 +160,7 @@ archive/issue_comments_054537.json:
 }
 ```
 
-Attachment
+Attachment [12659.2.patch](tarball://root/attachments/some-uuid/ticket6648/12659.2.patch) by evanandel created at 2009-07-29 13:54:36
 
 
 
@@ -321,7 +321,7 @@ The whole package is highly dependent on numerical methods, so noise wouldn't su
 archive/issue_comments_054541.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [12659.3.patch](tarball://root/attachments/some-uuid/ticket6648/12659.3.patch) by evanandel created at 2009-07-30 13:57:05",
     "created_at": "2009-07-30T13:57:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6648",
     "type": "issue_comment",
@@ -330,7 +330,7 @@ archive/issue_comments_054541.json:
 }
 ```
 
-Attachment
+Attachment [12659.3.patch](tarball://root/attachments/some-uuid/ticket6648/12659.3.patch) by evanandel created at 2009-07-30 13:57:05
 
 
 
@@ -467,7 +467,7 @@ Alright, new patch up. It truncates the required precision a bit.
 archive/issue_comments_054546.json:
 ```json
 {
-    "body": "Attachment\n\nThis passes sage -testall (except for the known failures for 4.1.1.a1 on an amd64 ubuntu 9.04 machine).\n\nPositive review from me. Should it undergo more testing?",
+    "body": "Attachment [12659.4.patch](tarball://root/attachments/some-uuid/ticket6648/12659.4.patch) by wdj created at 2009-07-31 18:59:01\n\nThis passes sage -testall (except for the known failures for 4.1.1.a1 on an amd64 ubuntu 9.04 machine).\n\nPositive review from me. Should it undergo more testing?",
     "created_at": "2009-07-31T18:59:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6648",
     "type": "issue_comment",
@@ -476,7 +476,7 @@ archive/issue_comments_054546.json:
 }
 ```
 
-Attachment
+Attachment [12659.4.patch](tarball://root/attachments/some-uuid/ticket6648/12659.4.patch) by wdj created at 2009-07-31 18:59:01
 
 This passes sage -testall (except for the known failures for 4.1.1.a1 on an amd64 ubuntu 9.04 machine).
 
@@ -588,7 +588,7 @@ Also, should these files be added to the reference manual?
 archive/issue_comments_054550.json:
 ```json
 {
-    "body": "Attachment\n\nAlright, new patch is up that fixes the missing documentation.\n\nWhat would adding the files to the reference manual entail?",
+    "body": "Attachment [12659.5.patch](tarball://root/attachments/some-uuid/ticket6648/12659.5.patch) by evanandel created at 2009-08-04 15:00:22\n\nAlright, new patch is up that fixes the missing documentation.\n\nWhat would adding the files to the reference manual entail?",
     "created_at": "2009-08-04T15:00:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6648",
     "type": "issue_comment",
@@ -597,7 +597,7 @@ archive/issue_comments_054550.json:
 }
 ```
 
-Attachment
+Attachment [12659.5.patch](tarball://root/attachments/some-uuid/ticket6648/12659.5.patch) by evanandel created at 2009-08-04 15:00:22
 
 Alright, new patch is up that fixes the missing documentation.
 
@@ -701,7 +701,7 @@ This patch is independent from the prefious ones, that is you need to install bo
 archive/issue_comments_054555.json:
 ```json
 {
-    "body": "Attachment\n\nPasses as before, so I give this a positive review again. However, I don't know how to check the reference docs, or what should be checked. Or is that part of the refereeing processing?",
+    "body": "Attachment [12660.patch](tarball://root/attachments/some-uuid/ticket6648/12660.patch) by wdj created at 2009-08-28 00:41:01\n\nPasses as before, so I give this a positive review again. However, I don't know how to check the reference docs, or what should be checked. Or is that part of the refereeing processing?",
     "created_at": "2009-08-28T00:41:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6648",
     "type": "issue_comment",
@@ -710,7 +710,7 @@ archive/issue_comments_054555.json:
 }
 ```
 
-Attachment
+Attachment [12660.patch](tarball://root/attachments/some-uuid/ticket6648/12660.patch) by wdj created at 2009-08-28 00:41:01
 
 Passes as before, so I give this a positive review again. However, I don't know how to check the reference docs, or what should be checked. Or is that part of the refereeing processing?
 
@@ -911,7 +911,7 @@ Should I be worried about the reference manual compilation warnings?
 archive/issue_comments_054560.json:
 ```json
 {
-    "body": "Attachment\n\nbased on Sage 4.3.alpha1",
+    "body": "Attachment [trac_6648-reviewer.patch](tarball://root/attachments/some-uuid/ticket6648/trac_6648-reviewer.patch) by mvngu created at 2009-12-05 19:48:49\n\nbased on Sage 4.3.alpha1",
     "created_at": "2009-12-05T19:48:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6648",
     "type": "issue_comment",
@@ -920,7 +920,7 @@ archive/issue_comments_054560.json:
 }
 ```
 
-Attachment
+Attachment [trac_6648-reviewer.patch](tarball://root/attachments/some-uuid/ticket6648/trac_6648-reviewer.patch) by mvngu created at 2009-12-05 19:48:49
 
 based on Sage 4.3.alpha1
 
@@ -1141,7 +1141,7 @@ Doc fixes
 archive/issue_comments_054568.json:
 ```json
 {
-    "body": "Attachment\n\nOk, I've put up a patch that fixes the missing documentation. Note that the relatively sparse documentation in the ColorPlot and _render_on_subplot is more than exists in the complex_plot module from which I obtained the code.\n\nAt this point all that is required is some kind knowledgeable soul to implement dump/load functionality so that the modules can pass the TestSuite requirement. Alternately direct me to a resource that provides an in depth tutorial on how to implement it. I appreciate all the help so far, and I would really like to get this published. If there's anything that I can do to speed it up, let me know.",
+    "body": "Attachment [12661.patch](tarball://root/attachments/some-uuid/ticket6648/12661.patch) by evanandel created at 2010-03-31 04:20:24\n\nOk, I've put up a patch that fixes the missing documentation. Note that the relatively sparse documentation in the ColorPlot and _render_on_subplot is more than exists in the complex_plot module from which I obtained the code.\n\nAt this point all that is required is some kind knowledgeable soul to implement dump/load functionality so that the modules can pass the TestSuite requirement. Alternately direct me to a resource that provides an in depth tutorial on how to implement it. I appreciate all the help so far, and I would really like to get this published. If there's anything that I can do to speed it up, let me know.",
     "created_at": "2010-03-31T04:20:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6648",
     "type": "issue_comment",
@@ -1150,7 +1150,7 @@ archive/issue_comments_054568.json:
 }
 ```
 
-Attachment
+Attachment [12661.patch](tarball://root/attachments/some-uuid/ticket6648/12661.patch) by evanandel created at 2010-03-31 04:20:24
 
 Ok, I've put up a patch that fixes the missing documentation. Note that the relatively sparse documentation in the ColorPlot and _render_on_subplot is more than exists in the complex_plot module from which I obtained the code.
 
@@ -1237,7 +1237,7 @@ Changing status from needs_info to needs_work.
 archive/issue_comments_054573.json:
 ```json
 {
-    "body": "Attachment\n\nMy apologies, I apparently made some mistakes with mercurial and somehow produced someone else's patch. Regardless, I have created a new, monolithic patch that should be applied INSTEAD of applying the previous patches. It incorporates all the changes so far including the ones that I intended to be in 12661.",
+    "body": "Attachment [13911.patch](tarball://root/attachments/some-uuid/ticket6648/13911.patch) by evanandel created at 2010-04-20 01:41:00\n\nMy apologies, I apparently made some mistakes with mercurial and somehow produced someone else's patch. Regardless, I have created a new, monolithic patch that should be applied INSTEAD of applying the previous patches. It incorporates all the changes so far including the ones that I intended to be in 12661.",
     "created_at": "2010-04-20T01:41:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6648",
     "type": "issue_comment",
@@ -1246,7 +1246,7 @@ archive/issue_comments_054573.json:
 }
 ```
 
-Attachment
+Attachment [13911.patch](tarball://root/attachments/some-uuid/ticket6648/13911.patch) by evanandel created at 2010-04-20 01:41:00
 
 My apologies, I apparently made some mistakes with mercurial and somehow produced someone else's patch. Regardless, I have created a new, monolithic patch that should be applied INSTEAD of applying the previous patches. It incorporates all the changes so far including the ones that I intended to be in 12661.
 

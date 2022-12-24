@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3206
 archive/issue_comments_022161.json:
 ```json
 {
-    "body": "Attachment\n\nI've fixed the indicated problem, cleaned up the code, and documented the heck out of local/bin/sage-download_package/.",
+    "body": "Attachment [scripts-3206.patch](tarball://root/attachments/some-uuid/ticket3206/scripts-3206.patch) by was created at 2008-05-15 00:26:50\n\nI've fixed the indicated problem, cleaned up the code, and documented the heck out of local/bin/sage-download_package/.",
     "created_at": "2008-05-15T00:26:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3206",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_022161.json:
 }
 ```
 
-Attachment
+Attachment [scripts-3206.patch](tarball://root/attachments/some-uuid/ticket3206/scripts-3206.patch) by was created at 2008-05-15 00:26:50
 
 I've fixed the indicated problem, cleaned up the code, and documented the heck out of local/bin/sage-download_package/.
 

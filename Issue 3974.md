@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3974
 archive/issue_comments_028552.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage_trac3974.patch](tarball://root/attachments/some-uuid/ticket3974/sage_trac3974.patch) by wuthrich created at 2008-08-28 12:10:49",
     "created_at": "2008-08-28T12:10:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3974",
     "type": "issue_comment",
@@ -49,7 +49,7 @@ archive/issue_comments_028552.json:
 }
 ```
 
-Attachment
+Attachment [sage_trac3974.patch](tarball://root/attachments/some-uuid/ticket3974/sage_trac3974.patch) by wuthrich created at 2008-08-28 12:10:49
 
 
 
@@ -183,7 +183,7 @@ new patch, erplaces the first patch !
 archive/issue_comments_028557.json:
 ```json
 {
-    "body": "Attachment\n\nI changed the patch according to Michael's remark. It replaces the previous patch. This patch only works with the patch from ticket 3654.\n\n Chris.",
+    "body": "Attachment [sage_trac3974_new.patch](tarball://root/attachments/some-uuid/ticket3974/sage_trac3974_new.patch) by wuthrich created at 2008-08-29 13:28:56\n\nI changed the patch according to Michael's remark. It replaces the previous patch. This patch only works with the patch from ticket 3654.\n\n Chris.",
     "created_at": "2008-08-29T13:28:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3974",
     "type": "issue_comment",
@@ -192,7 +192,7 @@ archive/issue_comments_028557.json:
 }
 ```
 
-Attachment
+Attachment [sage_trac3974_new.patch](tarball://root/attachments/some-uuid/ticket3974/sage_trac3974_new.patch) by wuthrich created at 2008-08-29 13:28:56
 
 I changed the patch according to Michael's remark. It replaces the previous patch. This patch only works with the patch from ticket 3654.
 

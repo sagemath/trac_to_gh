@@ -121,7 +121,7 @@ I have implemented this change and am currently testing.  Patch up later today!
 archive/issue_comments_037133.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch is based on 3.2.2 + #4901 (which has a positive review but is not yet merged).\n\nIt does what was promised above, i.e. corrects the function  point_preprocessing().  A doctest is added with example from Francois Glineur.  In addition, I reran every single curve in the database (as reported to sage-nt) and have uploaded the revised files to my web page:  in about 1% of cases (over 8000 curves) there are more integral points than before.\n\nThe only file touched here is schemes/elliptic_curves/ell_rational_field.py, which is one of the ones which has already been sphinxified (see #4926) so this patch will need to be merged with that one at some point.",
+    "body": "Attachment [trac_4897.patch](tarball://root/attachments/some-uuid/ticket4897/trac_4897.patch) by cremona created at 2009-01-04 17:44:05\n\nThe patch is based on 3.2.2 + #4901 (which has a positive review but is not yet merged).\n\nIt does what was promised above, i.e. corrects the function  point_preprocessing().  A doctest is added with example from Francois Glineur.  In addition, I reran every single curve in the database (as reported to sage-nt) and have uploaded the revised files to my web page:  in about 1% of cases (over 8000 curves) there are more integral points than before.\n\nThe only file touched here is schemes/elliptic_curves/ell_rational_field.py, which is one of the ones which has already been sphinxified (see #4926) so this patch will need to be merged with that one at some point.",
     "created_at": "2009-01-04T17:44:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4897",
     "type": "issue_comment",
@@ -130,7 +130,7 @@ archive/issue_comments_037133.json:
 }
 ```
 
-Attachment
+Attachment [trac_4897.patch](tarball://root/attachments/some-uuid/ticket4897/trac_4897.patch) by cremona created at 2009-01-04 17:44:05
 
 The patch is based on 3.2.2 + #4901 (which has a positive review but is not yet merged).
 
@@ -278,7 +278,7 @@ John's patch with his suggested fix integrated.
 archive/issue_comments_037139.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:7 cremona]:\n> Oops, just change `E=EllipticCurve('20160bg2')` to \n> `E=EllipticCurve([0,0,0,-468,2592])`\n> in that doctest.  It should suffice to edit the patch itself.\n\nYep, I should have thought of that. trac_4897.2.patch does exactly that.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_4897.2.patch](tarball://root/attachments/some-uuid/ticket4897/trac_4897.2.patch) by mabshoff created at 2009-01-12 11:07:26\n\nReplying to [comment:7 cremona]:\n> Oops, just change `E=EllipticCurve('20160bg2')` to \n> `E=EllipticCurve([0,0,0,-468,2592])`\n> in that doctest.  It should suffice to edit the patch itself.\n\nYep, I should have thought of that. trac_4897.2.patch does exactly that.\n\nCheers,\n\nMichael",
     "created_at": "2009-01-12T11:07:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4897",
     "type": "issue_comment",
@@ -287,7 +287,7 @@ archive/issue_comments_037139.json:
 }
 ```
 
-Attachment
+Attachment [trac_4897.2.patch](tarball://root/attachments/some-uuid/ticket4897/trac_4897.2.patch) by mabshoff created at 2009-01-12 11:07:26
 
 Replying to [comment:7 cremona]:
 > Oops, just change `E=EllipticCurve('20160bg2')` to 

@@ -38,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8593
 archive/issue_comments_077821.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8593_lehmer_code_schubert_step_2-nb.patch](tarball://root/attachments/some-uuid/ticket8593/trac_8593_lehmer_code_schubert_step_2-nb.patch) by nborie created at 2010-03-23 23:49:44",
     "created_at": "2010-03-23T23:49:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8593",
     "type": "issue_comment",
@@ -47,7 +47,7 @@ archive/issue_comments_077821.json:
 }
 ```
 
-Attachment
+Attachment [trac_8593_lehmer_code_schubert_step_2-nb.patch](tarball://root/attachments/some-uuid/ticket8593/trac_8593_lehmer_code_schubert_step_2-nb.patch) by nborie created at 2010-03-23 23:49:44
 
 
 

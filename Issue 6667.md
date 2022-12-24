@@ -116,7 +116,7 @@ Still there in 5.12.beta2
 archive/issue_comments_054735.json:
 ```json
 {
-    "body": "Attachment\n\nhere is a quick patch that should fix the problem\n\nI have not been careful concerning the precision of the coefficients\n\nNeeds review !",
+    "body": "Attachment [trac_6667.patch](tarball://root/attachments/some-uuid/ticket6667/trac_6667.patch) by chapoton created at 2013-08-23 10:16:54\n\nhere is a quick patch that should fix the problem\n\nI have not been careful concerning the precision of the coefficients\n\nNeeds review !",
     "created_at": "2013-08-23T10:16:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6667",
     "type": "issue_comment",
@@ -125,7 +125,7 @@ archive/issue_comments_054735.json:
 }
 ```
 
-Attachment
+Attachment [trac_6667.patch](tarball://root/attachments/some-uuid/ticket6667/trac_6667.patch) by chapoton created at 2013-08-23 10:16:54
 
 here is a quick patch that should fix the problem
 
@@ -216,7 +216,7 @@ your patch does not apply on a clean 5.12.beta3
 archive/issue_comments_054740.json:
 ```json
 {
-    "body": "Attachment\n\nSorry. I was working with an older version of Sage. It should be fixed now.",
+    "body": "Attachment [trac_6667_caruso.patch](tarball://root/attachments/some-uuid/ticket6667/trac_6667_caruso.patch) by caruso created at 2013-08-27 16:44:18\n\nSorry. I was working with an older version of Sage. It should be fixed now.",
     "created_at": "2013-08-27T16:44:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6667",
     "type": "issue_comment",
@@ -225,7 +225,7 @@ archive/issue_comments_054740.json:
 }
 ```
 
-Attachment
+Attachment [trac_6667_caruso.patch](tarball://root/attachments/some-uuid/ticket6667/trac_6667_caruso.patch) by caruso created at 2013-08-27 16:44:18
 
 Sorry. I was working with an older version of Sage. It should be fixed now.
 
@@ -236,7 +236,7 @@ Sorry. I was working with an older version of Sage. It should be fixed now.
 archive/issue_comments_054741.json:
 ```json
 {
-    "body": "Attachment\n\nhere is a review patch, with only minor changes to your code\n\nin my opinion, it would be good to add examples for the two other raise statements.",
+    "body": "Attachment [trac_6667_review_patch_1.patch](tarball://root/attachments/some-uuid/ticket6667/trac_6667_review_patch_1.patch) by chapoton created at 2013-08-27 18:56:15\n\nhere is a review patch, with only minor changes to your code\n\nin my opinion, it would be good to add examples for the two other raise statements.",
     "created_at": "2013-08-27T18:56:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6667",
     "type": "issue_comment",
@@ -245,7 +245,7 @@ archive/issue_comments_054741.json:
 }
 ```
 
-Attachment
+Attachment [trac_6667_review_patch_1.patch](tarball://root/attachments/some-uuid/ticket6667/trac_6667_review_patch_1.patch) by chapoton created at 2013-08-27 18:56:15
 
 here is a review patch, with only minor changes to your code
 
@@ -287,7 +287,7 @@ Apply only [attachment:trac_6667_caruso_revised.patch] (it includes your review)
 archive/issue_comments_054743.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6667_caruso_revised.patch](tarball://root/attachments/some-uuid/ticket6667/trac_6667_caruso_revised.patch) by chapoton created at 2013-08-28 09:48:14",
     "created_at": "2013-08-28T09:48:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6667",
     "type": "issue_comment",
@@ -296,7 +296,7 @@ archive/issue_comments_054743.json:
 }
 ```
 
-Attachment
+Attachment [trac_6667_caruso_revised.patch](tarball://root/attachments/some-uuid/ticket6667/trac_6667_caruso_revised.patch) by chapoton created at 2013-08-28 09:48:14
 
 
 

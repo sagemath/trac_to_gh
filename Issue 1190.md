@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1190
 archive/issue_comments_007385.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-2.8.12-fix-spkg-check-invocation.patch](tarball://root/attachments/some-uuid/ticket1190/Sage-2.8.12-fix-spkg-check-invocation.patch) by mabshoff created at 2007-11-17 06:47:27",
     "created_at": "2007-11-17T06:47:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1190",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_007385.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.8.12-fix-spkg-check-invocation.patch](tarball://root/attachments/some-uuid/ticket1190/Sage-2.8.12-fix-spkg-check-invocation.patch) by mabshoff created at 2007-11-17 06:47:27
 
 
 
@@ -71,7 +71,7 @@ updated rev 2 - incorporates suggestions by malb
 archive/issue_comments_007387.json:
 ```json
 {
-    "body": "Attachment\n\nPlease apply only Sage-2.8.12-fix-spkg-check-invocation.2.patch \n\nCheers,\n\nMichael",
+    "body": "Attachment [Sage-2.8.12-fix-spkg-check-invocation.2.patch](tarball://root/attachments/some-uuid/ticket1190/Sage-2.8.12-fix-spkg-check-invocation.2.patch) by mabshoff created at 2007-11-21 07:27:45\n\nPlease apply only Sage-2.8.12-fix-spkg-check-invocation.2.patch \n\nCheers,\n\nMichael",
     "created_at": "2007-11-21T07:27:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1190",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_007387.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.8.12-fix-spkg-check-invocation.2.patch](tarball://root/attachments/some-uuid/ticket1190/Sage-2.8.12-fix-spkg-check-invocation.2.patch) by mabshoff created at 2007-11-21 07:27:45
 
 Please apply only Sage-2.8.12-fix-spkg-check-invocation.2.patch 
 

@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1564
 archive/issue_comments_009954.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3d-1.patch](tarball://root/attachments/some-uuid/ticket1564/3d-1.patch) by was created at 2007-12-19 06:34:02",
     "created_at": "2007-12-19T06:34:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1564",
     "type": "issue_comment",
@@ -41,7 +41,7 @@ archive/issue_comments_009954.json:
 }
 ```
 
-Attachment
+Attachment [3d-1.patch](tarball://root/attachments/some-uuid/ticket1564/3d-1.patch) by was created at 2007-12-19 06:34:02
 
 
 
@@ -50,7 +50,7 @@ Attachment
 archive/issue_comments_009955.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3d-dec18.hg](tarball://root/attachments/some-uuid/ticket1564/3d-dec18.hg) by robertwb created at 2007-12-19 08:49:01",
     "created_at": "2007-12-19T08:49:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1564",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_009955.json:
 }
 ```
 
-Attachment
+Attachment [3d-dec18.hg](tarball://root/attachments/some-uuid/ticket1564/3d-dec18.hg) by robertwb created at 2007-12-19 08:49:01
 
 
 
@@ -68,7 +68,7 @@ Attachment
 archive/issue_comments_009956.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3d-dec22.hg](tarball://root/attachments/some-uuid/ticket1564/3d-dec22.hg) by was created at 2007-12-22 22:10:59",
     "created_at": "2007-12-22T22:10:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1564",
     "type": "issue_comment",
@@ -77,7 +77,7 @@ archive/issue_comments_009956.json:
 }
 ```
 
-Attachment
+Attachment [3d-dec22.hg](tarball://root/attachments/some-uuid/ticket1564/3d-dec22.hg) by was created at 2007-12-22 22:10:59
 
 
 

@@ -46,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8349
 archive/issue_comments_074554.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8349.patch](tarball://root/attachments/some-uuid/ticket8349/trac_8349.patch) by craigcitro created at 2010-02-24 18:35:48",
     "created_at": "2010-02-24T18:35:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8349",
     "type": "issue_comment",
@@ -55,7 +55,7 @@ archive/issue_comments_074554.json:
 }
 ```
 
-Attachment
+Attachment [trac_8349.patch](tarball://root/attachments/some-uuid/ticket8349/trac_8349.patch) by craigcitro created at 2010-02-24 18:35:48
 
 
 
@@ -147,7 +147,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_074559.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8349.2.patch](tarball://root/attachments/some-uuid/ticket8349/trac_8349.2.patch) by wuthrich created at 2010-02-24 19:02:53",
     "created_at": "2010-02-24T19:02:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8349",
     "type": "issue_comment",
@@ -156,7 +156,7 @@ archive/issue_comments_074559.json:
 }
 ```
 
-Attachment
+Attachment [trac_8349.2.patch](tarball://root/attachments/some-uuid/ticket8349/trac_8349.2.patch) by wuthrich created at 2010-02-24 19:02:53
 
 
 

@@ -534,7 +534,7 @@ I agree that something more sophisticated is definitely called for. I happened t
 archive/issue_comments_060330.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7262.patch](tarball://root/attachments/some-uuid/ticket7262/trac_7262.patch) by craigcitro created at 2010-01-20 22:57:37",
     "created_at": "2010-01-20T22:57:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7262",
     "type": "issue_comment",
@@ -543,7 +543,7 @@ archive/issue_comments_060330.json:
 }
 ```
 
-Attachment
+Attachment [trac_7262.patch](tarball://root/attachments/some-uuid/ticket7262/trac_7262.patch) by craigcitro created at 2010-01-20 22:57:37
 
 
 

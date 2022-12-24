@@ -255,7 +255,7 @@ applies to 4.5.2.alpha0
 archive/issue_comments_093764.json:
 ```json
 {
-    "body": "Attachment\n\nOK, my mistake -- I have updated the patch so it now says 1e-30.\n\nThe optimization change will effect this a lot.   The optimization flag on a pari build was downgraded a while back for a silly reason; and upped again on the ticket upgrading pari.  This will effect all the number field code.",
+    "body": "Attachment [trac_9659-regulator.patch](tarball://root/attachments/some-uuid/ticket9659/trac_9659-regulator.patch) by cremona created at 2010-08-02 02:37:12\n\nOK, my mistake -- I have updated the patch so it now says 1e-30.\n\nThe optimization change will effect this a lot.   The optimization flag on a pari build was downgraded a while back for a silly reason; and upped again on the ticket upgrading pari.  This will effect all the number field code.",
     "created_at": "2010-08-02T02:37:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9659",
     "type": "issue_comment",
@@ -264,7 +264,7 @@ archive/issue_comments_093764.json:
 }
 ```
 
-Attachment
+Attachment [trac_9659-regulator.patch](tarball://root/attachments/some-uuid/ticket9659/trac_9659-regulator.patch) by cremona created at 2010-08-02 02:37:12
 
 OK, my mistake -- I have updated the patch so it now says 1e-30.
 

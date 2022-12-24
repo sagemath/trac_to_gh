@@ -150,7 +150,7 @@ Changing component from basic arithmetic to combinatorics.
 archive/issue_comments_005599.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [graph_hash.patch](tarball://root/attachments/some-uuid/ticket911/graph_hash.patch) by ekirkman created at 2007-10-18 02:35:22",
     "created_at": "2007-10-18T02:35:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/911",
     "type": "issue_comment",
@@ -159,7 +159,7 @@ archive/issue_comments_005599.json:
 }
 ```
 
-Attachment
+Attachment [graph_hash.patch](tarball://root/attachments/some-uuid/ticket911/graph_hash.patch) by ekirkman created at 2007-10-18 02:35:22
 
 
 

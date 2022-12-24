@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2445
 archive/issue_comments_016531.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8821.patch](tarball://root/attachments/some-uuid/ticket2445/8821.patch) by cremona created at 2008-03-09 21:22:26",
     "created_at": "2008-03-09T21:22:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2445",
     "type": "issue_comment",
@@ -43,7 +43,7 @@ archive/issue_comments_016531.json:
 }
 ```
 
-Attachment
+Attachment [8821.patch](tarball://root/attachments/some-uuid/ticket2445/8821.patch) by cremona created at 2008-03-09 21:22:26
 
 
 
@@ -88,7 +88,7 @@ This just needs a True statement added in the doctest in algebra.py
 archive/issue_comments_016534.json:
 ```json
 {
-    "body": "Attachment\n\nFix for trivial algebra.py failure",
+    "body": "Attachment [trac_8821.patch](tarball://root/attachments/some-uuid/ticket2445/trac_8821.patch) by gfurnish created at 2008-03-10 13:45:35\n\nFix for trivial algebra.py failure",
     "created_at": "2008-03-10T13:45:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2445",
     "type": "issue_comment",
@@ -97,7 +97,7 @@ archive/issue_comments_016534.json:
 }
 ```
 
-Attachment
+Attachment [trac_8821.patch](tarball://root/attachments/some-uuid/ticket2445/trac_8821.patch) by gfurnish created at 2008-03-10 13:45:35
 
 Fix for trivial algebra.py failure
 

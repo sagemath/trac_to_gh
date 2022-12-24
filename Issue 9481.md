@@ -107,7 +107,7 @@ emulated behavior of polynomial ring random_element, as suggested on sage-devel;
 archive/issue_comments_091024.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9481_ps_random_element.patch](tarball://root/attachments/some-uuid/ticket9481/trac_9481_ps_random_element.patch) by rishi created at 2010-08-08 02:52:29",
     "created_at": "2010-08-08T02:52:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9481",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_091024.json:
 }
 ```
 
-Attachment
+Attachment [trac_9481_ps_random_element.patch](tarball://root/attachments/some-uuid/ticket9481/trac_9481_ps_random_element.patch) by rishi created at 2010-08-08 02:52:29
 
 
 
@@ -179,7 +179,7 @@ Looks good.
 archive/issue_comments_091028.json:
 ```json
 {
-    "body": "Attachment\n\nSame patch, fixed commit message",
+    "body": "Attachment [trac_9481_ps_random_element.2.patch](tarball://root/attachments/some-uuid/ticket9481/trac_9481_ps_random_element.2.patch) by jdemeyer created at 2011-01-19 02:00:19\n\nSame patch, fixed commit message",
     "created_at": "2011-01-19T02:00:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9481",
     "type": "issue_comment",
@@ -188,7 +188,7 @@ archive/issue_comments_091028.json:
 }
 ```
 
-Attachment
+Attachment [trac_9481_ps_random_element.2.patch](tarball://root/attachments/some-uuid/ticket9481/trac_9481_ps_random_element.2.patch) by jdemeyer created at 2011-01-19 02:00:19
 
 Same patch, fixed commit message
 
@@ -271,7 +271,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_091033.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9481_docstring.patch](tarball://root/attachments/some-uuid/ticket9481/9481_docstring.patch) by jdemeyer created at 2011-01-19 13:30:47",
     "created_at": "2011-01-19T13:30:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9481",
     "type": "issue_comment",
@@ -280,7 +280,7 @@ archive/issue_comments_091033.json:
 }
 ```
 
-Attachment
+Attachment [9481_docstring.patch](tarball://root/attachments/some-uuid/ticket9481/9481_docstring.patch) by jdemeyer created at 2011-01-19 13:30:47
 
 
 

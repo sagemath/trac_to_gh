@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6760
 archive/issue_comments_055662.json:
 ```json
 {
-    "body": "Attachment\n\nI think this is the right fix, but someone more familiar with the code should take a look.",
+    "body": "Attachment [6760-quatalg-free-module.patch](tarball://root/attachments/some-uuid/ticket6760/6760-quatalg-free-module.patch) by robertwb created at 2009-08-16 08:53:48\n\nI think this is the right fix, but someone more familiar with the code should take a look.",
     "created_at": "2009-08-16T08:53:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6760",
     "type": "issue_comment",
@@ -53,7 +53,7 @@ archive/issue_comments_055662.json:
 }
 ```
 
-Attachment
+Attachment [6760-quatalg-free-module.patch](tarball://root/attachments/some-uuid/ticket6760/6760-quatalg-free-module.patch) by robertwb created at 2009-08-16 08:53:48
 
 I think this is the right fix, but someone more familiar with the code should take a look.
 
@@ -84,7 +84,7 @@ Robert, if you're happy with the second patch, please change this to a positive 
 archive/issue_comments_055664.json:
 ```json
 {
-    "body": "Attachment\n\napply after the previous patch",
+    "body": "Attachment [trac_6760_doctest.patch](tarball://root/attachments/some-uuid/ticket6760/trac_6760_doctest.patch) by AlexGhitza created at 2009-11-15 10:20:17\n\napply after the previous patch",
     "created_at": "2009-11-15T10:20:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6760",
     "type": "issue_comment",
@@ -93,7 +93,7 @@ archive/issue_comments_055664.json:
 }
 ```
 
-Attachment
+Attachment [trac_6760_doctest.patch](tarball://root/attachments/some-uuid/ticket6760/trac_6760_doctest.patch) by AlexGhitza created at 2009-11-15 10:20:17
 
 apply after the previous patch
 

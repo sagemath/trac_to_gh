@@ -106,7 +106,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_070822.json:
 ```json
 {
-    "body": "Attachment\n\nApplies fine to 4.3.2.a0 and passes all but the 2 tests that failed previously on a mac 10.6.2.\n\nGood docstring patch. Thanks Nathann!\n\nPositive review.",
+    "body": "Attachment [trac_8081.patch](tarball://root/attachments/some-uuid/ticket8081/trac_8081.patch) by wdj created at 2010-01-28 14:15:02\n\nApplies fine to 4.3.2.a0 and passes all but the 2 tests that failed previously on a mac 10.6.2.\n\nGood docstring patch. Thanks Nathann!\n\nPositive review.",
     "created_at": "2010-01-28T14:15:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8081",
     "type": "issue_comment",
@@ -115,7 +115,7 @@ archive/issue_comments_070822.json:
 }
 ```
 
-Attachment
+Attachment [trac_8081.patch](tarball://root/attachments/some-uuid/ticket8081/trac_8081.patch) by wdj created at 2010-01-28 14:15:02
 
 Applies fine to 4.3.2.a0 and passes all but the 2 tests that failed previously on a mac 10.6.2.
 

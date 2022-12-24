@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3728
 archive/issue_comments_026458.json:
 ```json
 {
-    "body": "Attachment\n\ndocumentation for solving matrix equations",
+    "body": "Attachment [3728.patch](tarball://root/attachments/some-uuid/ticket3728/3728.patch) by jhpalmieri created at 2008-07-26 16:27:43\n\ndocumentation for solving matrix equations",
     "created_at": "2008-07-26T16:27:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3728",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_026458.json:
 }
 ```
 
-Attachment
+Attachment [3728.patch](tarball://root/attachments/some-uuid/ticket3728/3728.patch) by jhpalmieri created at 2008-07-26 16:27:43
 
 documentation for solving matrix equations
 
@@ -162,7 +162,7 @@ new version of patch; this replaces the old one
 archive/issue_comments_026463.json:
 ```json
 {
-    "body": "Attachment\n\nThanks for the tip about hg_doc.  I applied the patch ok, but I don't know how to view the patched tutorial!",
+    "body": "Attachment [3728-new.patch](tarball://root/attachments/some-uuid/ticket3728/3728-new.patch) by cremona created at 2008-07-29 11:40:23\n\nThanks for the tip about hg_doc.  I applied the patch ok, but I don't know how to view the patched tutorial!",
     "created_at": "2008-07-29T11:40:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3728",
     "type": "issue_comment",
@@ -171,7 +171,7 @@ archive/issue_comments_026463.json:
 }
 ```
 
-Attachment
+Attachment [3728-new.patch](tarball://root/attachments/some-uuid/ticket3728/3728-new.patch) by cremona created at 2008-07-29 11:40:23
 
 Thanks for the tip about hg_doc.  I applied the patch ok, but I don't know how to view the patched tutorial!
 

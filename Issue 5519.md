@@ -46,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5519
 archive/issue_comments_042895.json:
 ```json
 {
-    "body": "Attachment\n\nIs making it a `cpdef` function really necessary?\n\nAlso, I'm CCing Paul Zimmermann who would know about fast implementations of this.",
+    "body": "Attachment [trac_5519_irred_faster.patch](tarball://root/attachments/some-uuid/ticket5519/trac_5519_irred_faster.patch) by malb created at 2009-03-15 11:51:48\n\nIs making it a `cpdef` function really necessary?\n\nAlso, I'm CCing Paul Zimmermann who would know about fast implementations of this.",
     "created_at": "2009-03-15T11:51:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5519",
     "type": "issue_comment",
@@ -55,7 +55,7 @@ archive/issue_comments_042895.json:
 }
 ```
 
-Attachment
+Attachment [trac_5519_irred_faster.patch](tarball://root/attachments/some-uuid/ticket5519/trac_5519_irred_faster.patch) by malb created at 2009-03-15 11:51:48
 
 Is making it a `cpdef` function really necessary?
 
@@ -281,7 +281,7 @@ You are absolutely right.  Apparently I've already blocked out calling the M4RI 
 archive/issue_comments_042904.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5519_irred_faster.2.patch](tarball://root/attachments/some-uuid/ticket5519/trac_5519_irred_faster.2.patch) by rhinton created at 2009-03-16 20:23:45",
     "created_at": "2009-03-16T20:23:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5519",
     "type": "issue_comment",
@@ -290,7 +290,7 @@ archive/issue_comments_042904.json:
 }
 ```
 
-Attachment
+Attachment [trac_5519_irred_faster.2.patch](tarball://root/attachments/some-uuid/ticket5519/trac_5519_irred_faster.2.patch) by rhinton created at 2009-03-16 20:23:45
 
 
 

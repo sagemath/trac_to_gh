@@ -85,7 +85,7 @@ based on Sage 4.1.2.alpha4
 archive/issue_comments_058123.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7020-bitness-issue.patch](tarball://root/attachments/some-uuid/ticket7020/trac_7020-bitness-issue.patch) by mvngu created at 2009-09-28 03:55:17",
     "created_at": "2009-09-28T03:55:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7020",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_058123.json:
 }
 ```
 
-Attachment
+Attachment [trac_7020-bitness-issue.patch](tarball://root/attachments/some-uuid/ticket7020/trac_7020-bitness-issue.patch) by mvngu created at 2009-09-28 03:55:17
 
 
 

@@ -56,7 +56,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5586
 archive/issue_comments_043532.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [faster_sr.patch](tarball://root/attachments/some-uuid/ticket5586/faster_sr.patch) by malb created at 2009-03-22 17:54:49",
     "created_at": "2009-03-22T17:54:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5586",
     "type": "issue_comment",
@@ -65,7 +65,7 @@ archive/issue_comments_043532.json:
 }
 ```
 
-Attachment
+Attachment [faster_sr.patch](tarball://root/attachments/some-uuid/ticket5586/faster_sr.patch) by malb created at 2009-03-22 17:54:49
 
 
 
@@ -92,7 +92,7 @@ allows symbols for plaintext/ciphertext bits
 archive/issue_comments_043534.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sr_symbolic.patch](tarball://root/attachments/some-uuid/ticket5586/sr_symbolic.patch) by malb created at 2009-03-25 14:20:07",
     "created_at": "2009-03-25T14:20:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5586",
     "type": "issue_comment",
@@ -101,7 +101,7 @@ archive/issue_comments_043534.json:
 }
 ```
 
-Attachment
+Attachment [sr_symbolic.patch](tarball://root/attachments/some-uuid/ticket5586/sr_symbolic.patch) by malb created at 2009-03-25 14:20:07
 
 
 
@@ -395,7 +395,7 @@ Looks good to me.
 archive/issue_comments_043543.json:
 ```json
 {
-    "body": "Attachment\n\napply last",
+    "body": "Attachment [fix_long_doctest.patch](tarball://root/attachments/some-uuid/ticket5586/fix_long_doctest.patch) by malb created at 2009-05-12 17:03:37\n\napply last",
     "created_at": "2009-05-12T17:03:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5586",
     "type": "issue_comment",
@@ -404,7 +404,7 @@ archive/issue_comments_043543.json:
 }
 ```
 
-Attachment
+Attachment [fix_long_doctest.patch](tarball://root/attachments/some-uuid/ticket5586/fix_long_doctest.patch) by malb created at 2009-05-12 17:03:37
 
 apply last
 

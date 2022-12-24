@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4580
 archive/issue_comments_034342.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4580-mpfr-pxd.patch](tarball://root/attachments/some-uuid/ticket4580/4580-mpfr-pxd.patch) by robertwb created at 2008-11-22 01:39:35",
     "created_at": "2008-11-22T01:39:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4580",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_034342.json:
 }
 ```
 
-Attachment
+Attachment [4580-mpfr-pxd.patch](tarball://root/attachments/some-uuid/ticket4580/4580-mpfr-pxd.patch) by robertwb created at 2008-11-22 01:39:35
 
 
 

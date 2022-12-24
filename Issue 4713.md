@@ -122,7 +122,7 @@ By the way, definitely positive review pending adding the doctests suggested abo
 archive/issue_comments_035533.json:
 ```json
 {
-    "body": "Attachment\n\nupdated patch with the suggestions.  Accordingly, marking this positive review.",
+    "body": "Attachment [vector_apply_map.patch](tarball://root/attachments/some-uuid/ticket4713/vector_apply_map.patch) by jason created at 2008-12-06 23:45:23\n\nupdated patch with the suggestions.  Accordingly, marking this positive review.",
     "created_at": "2008-12-06T23:45:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4713",
     "type": "issue_comment",
@@ -131,7 +131,7 @@ archive/issue_comments_035533.json:
 }
 ```
 
-Attachment
+Attachment [vector_apply_map.patch](tarball://root/attachments/some-uuid/ticket4713/vector_apply_map.patch) by jason created at 2008-12-06 23:45:23
 
 updated patch with the suggestions.  Accordingly, marking this positive review.
 

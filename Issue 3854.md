@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3854
 archive/issue_comments_027447.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage.patch](tarball://root/attachments/some-uuid/ticket3854/sage.patch) by itolkov created at 2008-08-14 19:24:35",
     "created_at": "2008-08-14T19:24:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3854",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_027447.json:
 }
 ```
 
-Attachment
+Attachment [sage.patch](tarball://root/attachments/some-uuid/ticket3854/sage.patch) by itolkov created at 2008-08-14 19:24:35
 
 
 
@@ -134,7 +134,7 @@ Michael
 archive/issue_comments_027452.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3854.patch](tarball://root/attachments/some-uuid/ticket3854/trac_3854.patch) by mhansen created at 2008-08-27 00:38:20",
     "created_at": "2008-08-27T00:38:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3854",
     "type": "issue_comment",
@@ -143,7 +143,7 @@ archive/issue_comments_027452.json:
 }
 ```
 
-Attachment
+Attachment [trac_3854.patch](tarball://root/attachments/some-uuid/ticket3854/trac_3854.patch) by mhansen created at 2008-08-27 00:38:20
 
 
 
@@ -206,7 +206,7 @@ Resolution: fixed
 archive/issue_comments_027456.json:
 ```json
 {
-    "body": "Attachment\n\nTrivial patch to fix two doctest failures",
+    "body": "Attachment [trac_3854_doctest-fix.patch](tarball://root/attachments/some-uuid/ticket3854/trac_3854_doctest-fix.patch) by mabshoff created at 2008-08-27 01:47:45\n\nTrivial patch to fix two doctest failures",
     "created_at": "2008-08-27T01:47:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3854",
     "type": "issue_comment",
@@ -215,7 +215,7 @@ archive/issue_comments_027456.json:
 }
 ```
 
-Attachment
+Attachment [trac_3854_doctest-fix.patch](tarball://root/attachments/some-uuid/ticket3854/trac_3854_doctest-fix.patch) by mabshoff created at 2008-08-27 01:47:45
 
 Trivial patch to fix two doctest failures
 

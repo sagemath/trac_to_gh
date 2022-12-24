@@ -144,7 +144,7 @@ apply instead of previous patch (rebased for the new #8366)
 archive/issue_comments_074802.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:5 jason]:\n> Replying to [comment:4 mhampton]:\n> > One thing I don't like about this is that you can't easily get a 1:1 aspect ratio plot - using figsize = [a,a] makes the overall figure square but not the plotted region.\n> \n> Of course.  If you want the aspect ratio to be 1, then use the aspect_ratio=1 argument, which controls the aspect ratio.  The figsize option controls the \"figure size\", i.e., the size of the entire figure.\n\nOK.  I think I got into the habit of using figsize before aspect_ratio worked.  I will check the rebased version as soon as I can.",
+    "body": "Attachment [trac-8368-colorbars.patch](tarball://root/attachments/some-uuid/ticket8368/trac-8368-colorbars.patch) by mhampton created at 2010-04-15 15:14:56\n\nReplying to [comment:5 jason]:\n> Replying to [comment:4 mhampton]:\n> > One thing I don't like about this is that you can't easily get a 1:1 aspect ratio plot - using figsize = [a,a] makes the overall figure square but not the plotted region.\n> \n> Of course.  If you want the aspect ratio to be 1, then use the aspect_ratio=1 argument, which controls the aspect ratio.  The figsize option controls the \"figure size\", i.e., the size of the entire figure.\n\nOK.  I think I got into the habit of using figsize before aspect_ratio worked.  I will check the rebased version as soon as I can.",
     "created_at": "2010-04-15T15:14:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8368",
     "type": "issue_comment",
@@ -153,7 +153,7 @@ archive/issue_comments_074802.json:
 }
 ```
 
-Attachment
+Attachment [trac-8368-colorbars.patch](tarball://root/attachments/some-uuid/ticket8368/trac-8368-colorbars.patch) by mhampton created at 2010-04-15 15:14:56
 
 Replying to [comment:5 jason]:
 > Replying to [comment:4 mhampton]:
@@ -224,7 +224,7 @@ apply on top of previous patch
 archive/issue_comments_074805.json:
 ```json
 {
-    "body": "Attachment\n\nI fixed both issues in the above patch.\n\nI also doctested contour_plot.py this time!\u00a0 Things should work now.",
+    "body": "Attachment [trac-8368-fix-options.patch](tarball://root/attachments/some-uuid/ticket8368/trac-8368-fix-options.patch) by jason created at 2010-04-16 11:57:06\n\nI fixed both issues in the above patch.\n\nI also doctested contour_plot.py this time!\u00a0 Things should work now.",
     "created_at": "2010-04-16T11:57:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8368",
     "type": "issue_comment",
@@ -233,7 +233,7 @@ archive/issue_comments_074805.json:
 }
 ```
 
-Attachment
+Attachment [trac-8368-fix-options.patch](tarball://root/attachments/some-uuid/ticket8368/trac-8368-fix-options.patch) by jason created at 2010-04-16 11:57:06
 
 I fixed both issues in the above patch.
 

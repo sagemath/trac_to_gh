@@ -48,7 +48,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7233
 archive/issue_comments_060001.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [categories-symmetric_group_algebra-6138-nt.patch](tarball://root/attachments/some-uuid/ticket7233/categories-symmetric_group_algebra-6138-nt.patch) by hivert created at 2009-10-16 11:04:42",
     "created_at": "2009-10-16T11:04:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7233",
     "type": "issue_comment",
@@ -57,7 +57,7 @@ archive/issue_comments_060001.json:
 }
 ```
 
-Attachment
+Attachment [categories-symmetric_group_algebra-6138-nt.patch](tarball://root/attachments/some-uuid/ticket7233/categories-symmetric_group_algebra-6138-nt.patch) by hivert created at 2009-10-16 11:04:42
 
 
 

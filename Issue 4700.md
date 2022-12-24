@@ -134,7 +134,7 @@ OK, guys calm down.    It will be _massively_ easier referee wise if you can bre
 archive/issue_comments_035411.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [javascript-spkg.patch](tarball://root/attachments/some-uuid/ticket4700/javascript-spkg.patch) by jason created at 2008-12-05 00:54:34",
     "created_at": "2008-12-05T00:54:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4700",
     "type": "issue_comment",
@@ -143,7 +143,7 @@ archive/issue_comments_035411.json:
 }
 ```
 
-Attachment
+Attachment [javascript-spkg.patch](tarball://root/attachments/some-uuid/ticket4700/javascript-spkg.patch) by jason created at 2008-12-05 00:54:34
 
 
 

@@ -58,7 +58,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4892
 archive/issue_comments_037095.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4892-complex_approx.patch](tarball://root/attachments/some-uuid/ticket4892/trac_4892-complex_approx.patch) by rlm created at 2009-01-22 06:50:33",
     "created_at": "2009-01-22T06:50:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4892",
     "type": "issue_comment",
@@ -67,7 +67,7 @@ archive/issue_comments_037095.json:
 }
 ```
 
-Attachment
+Attachment [trac_4892-complex_approx.patch](tarball://root/attachments/some-uuid/ticket4892/trac_4892-complex_approx.patch) by rlm created at 2009-01-22 06:50:33
 
 
 
@@ -195,7 +195,7 @@ But the doctests were indeed wrong to start with, the vector spaces *should* be 
 archive/issue_comments_037101.json:
 ```json
 {
-    "body": "Attachment\n\napply after the other patch",
+    "body": "Attachment [trac_4892_1.patch](tarball://root/attachments/some-uuid/ticket4892/trac_4892_1.patch) by AlexGhitza created at 2009-01-25 02:31:04\n\napply after the other patch",
     "created_at": "2009-01-25T02:31:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4892",
     "type": "issue_comment",
@@ -204,7 +204,7 @@ archive/issue_comments_037101.json:
 }
 ```
 
-Attachment
+Attachment [trac_4892_1.patch](tarball://root/attachments/some-uuid/ticket4892/trac_4892_1.patch) by AlexGhitza created at 2009-01-25 02:31:04
 
 apply after the other patch
 

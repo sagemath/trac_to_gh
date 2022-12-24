@@ -111,7 +111,7 @@ needs #8212
 archive/issue_comments_072548.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8220-finite_field_creation.patch](tarball://root/attachments/some-uuid/ticket8220/trac_8220-finite_field_creation.patch) by ylchapuy created at 2010-02-09 16:23:39",
     "created_at": "2010-02-09T16:23:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8220",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_072548.json:
 }
 ```
 
-Attachment
+Attachment [trac_8220-finite_field_creation.patch](tarball://root/attachments/some-uuid/ticket8220/trac_8220-finite_field_creation.patch) by ylchapuy created at 2010-02-09 16:23:39
 
 
 
@@ -197,7 +197,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_072552.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8220-review.patch](tarball://root/attachments/some-uuid/ticket8220/trac_8220-review.patch) by ylchapuy created at 2010-02-11 08:40:15",
     "created_at": "2010-02-11T08:40:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8220",
     "type": "issue_comment",
@@ -206,7 +206,7 @@ archive/issue_comments_072552.json:
 }
 ```
 
-Attachment
+Attachment [trac_8220-review.patch](tarball://root/attachments/some-uuid/ticket8220/trac_8220-review.patch) by ylchapuy created at 2010-02-11 08:40:15
 
 
 

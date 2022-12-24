@@ -53,7 +53,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9749
 archive/issue_comments_095473.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9749.patch](tarball://root/attachments/some-uuid/ticket9749/trac_9749.patch) by AlexGhitza created at 2010-08-31 08:55:52",
     "created_at": "2010-08-31T08:55:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9749",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_095473.json:
 }
 ```
 
-Attachment
+Attachment [trac_9749.patch](tarball://root/attachments/some-uuid/ticket9749/trac_9749.patch) by AlexGhitza created at 2010-08-31 08:55:52
 
 
 
@@ -179,7 +179,7 @@ Resolution: fixed
 archive/issue_comments_095480.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9749.2.patch](tarball://root/attachments/some-uuid/ticket9749/trac_9749.2.patch) by mpatel created at 2010-09-15 10:39:46",
     "created_at": "2010-09-15T10:39:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9749",
     "type": "issue_comment",
@@ -188,4 +188,4 @@ archive/issue_comments_095480.json:
 }
 ```
 
-Attachment
+Attachment [trac_9749.2.patch](tarball://root/attachments/some-uuid/ticket9749/trac_9749.2.patch) by mpatel created at 2010-09-15 10:39:46

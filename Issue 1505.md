@@ -59,7 +59,7 @@ patch for Sage:
 archive/issue_comments_009641.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [removing_m4ri.patch](tarball://root/attachments/some-uuid/ticket1505/removing_m4ri.patch) by malb created at 2007-12-16 15:03:16",
     "created_at": "2007-12-16T15:03:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1505",
     "type": "issue_comment",
@@ -68,7 +68,7 @@ archive/issue_comments_009641.json:
 }
 ```
 
-Attachment
+Attachment [removing_m4ri.patch](tarball://root/attachments/some-uuid/ticket1505/removing_m4ri.patch) by malb created at 2007-12-16 15:03:16
 
 
 

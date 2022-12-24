@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1837
 archive/issue_comments_011627.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [groebner-kwds.patch](tarball://root/attachments/some-uuid/ticket1837/groebner-kwds.patch) by malb created at 2008-01-18 19:54:15",
     "created_at": "2008-01-18T19:54:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1837",
     "type": "issue_comment",
@@ -53,7 +53,7 @@ archive/issue_comments_011627.json:
 }
 ```
 
-Attachment
+Attachment [groebner-kwds.patch](tarball://root/attachments/some-uuid/ticket1837/groebner-kwds.patch) by malb created at 2008-01-18 19:54:15
 
 
 

@@ -52,7 +52,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9367
 archive/issue_comments_088972.json:
 ```json
 {
-    "body": "Attachment\n\nFixes the return type.",
+    "body": "Attachment [patch-9367.patch](tarball://root/attachments/some-uuid/ticket9367/patch-9367.patch) by syazdani created at 2010-06-28 22:08:33\n\nFixes the return type.",
     "created_at": "2010-06-28T22:08:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9367",
     "type": "issue_comment",
@@ -61,7 +61,7 @@ archive/issue_comments_088972.json:
 }
 ```
 
-Attachment
+Attachment [patch-9367.patch](tarball://root/attachments/some-uuid/ticket9367/patch-9367.patch) by syazdani created at 2010-06-28 22:08:33
 
 Fixes the return type.
 
@@ -90,7 +90,7 @@ Add a doctest for the correct behavior.
 archive/issue_comments_088974.json:
 ```json
 {
-    "body": "Attachment\n\nIt looks like someone beat you to it! I get the correct answer with 4.8.alpha6, so I've added a doctest for it.",
+    "body": "Attachment [sage-trac_9367.patch](tarball://root/attachments/some-uuid/ticket9367/sage-trac_9367.patch) by mjo created at 2012-01-16 04:22:20\n\nIt looks like someone beat you to it! I get the correct answer with 4.8.alpha6, so I've added a doctest for it.",
     "created_at": "2012-01-16T04:22:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9367",
     "type": "issue_comment",
@@ -99,7 +99,7 @@ archive/issue_comments_088974.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac_9367.patch](tarball://root/attachments/some-uuid/ticket9367/sage-trac_9367.patch) by mjo created at 2012-01-16 04:22:20
 
 It looks like someone beat you to it! I get the correct answer with 4.8.alpha6, so I've added a doctest for it.
 

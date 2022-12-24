@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4177
 archive/issue_comments_030311.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [nb-version-number.patch](tarball://root/attachments/some-uuid/ticket4177/nb-version-number.patch) by kcrisman created at 2008-10-17 19:03:18",
     "created_at": "2008-10-17T19:03:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4177",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_030311.json:
 }
 ```
 
-Attachment
+Attachment [nb-version-number.patch](tarball://root/attachments/some-uuid/ticket4177/nb-version-number.patch) by kcrisman created at 2008-10-17 19:03:18
 
 
 
@@ -129,7 +129,7 @@ Michael
 archive/issue_comments_030315.json:
 ```json
 {
-    "body": "Attachment\n\nThe reviewer patch \"...\" the length since it will otherwise break from version to version.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_4177_reviewer.patch](tarball://root/attachments/some-uuid/ticket4177/trac_4177_reviewer.patch) by mabshoff created at 2008-10-18 19:11:33\n\nThe reviewer patch \"...\" the length since it will otherwise break from version to version.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-18T19:11:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4177",
     "type": "issue_comment",
@@ -138,7 +138,7 @@ archive/issue_comments_030315.json:
 }
 ```
 
-Attachment
+Attachment [trac_4177_reviewer.patch](tarball://root/attachments/some-uuid/ticket4177/trac_4177_reviewer.patch) by mabshoff created at 2008-10-18 19:11:33
 
 The reviewer patch "..." the length since it will otherwise break from version to version.
 

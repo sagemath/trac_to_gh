@@ -38,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4309
 archive/issue_comments_031541.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [my.patch](tarball://root/attachments/some-uuid/ticket4309/my.patch) by kkilger created at 2008-10-16 17:31:02",
     "created_at": "2008-10-16T17:31:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4309",
     "type": "issue_comment",
@@ -47,7 +47,7 @@ archive/issue_comments_031541.json:
 }
 ```
 
-Attachment
+Attachment [my.patch](tarball://root/attachments/some-uuid/ticket4309/my.patch) by kkilger created at 2008-10-16 17:31:02
 
 
 
@@ -74,7 +74,7 @@ This doesn't apply in sage-3.2.alpha1
 archive/issue_comments_031543.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-4309_1.patch](tarball://root/attachments/some-uuid/ticket4309/sage-4309_1.patch) by TimothyClemans created at 2008-11-09 23:54:01",
     "created_at": "2008-11-09T23:54:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4309",
     "type": "issue_comment",
@@ -83,7 +83,7 @@ archive/issue_comments_031543.json:
 }
 ```
 
-Attachment
+Attachment [sage-4309_1.patch](tarball://root/attachments/some-uuid/ticket4309/sage-4309_1.patch) by TimothyClemans created at 2008-11-09 23:54:01
 
 
 
@@ -128,7 +128,7 @@ my.patch is replaced by sage-3950_1.patch and applies in sage-3.2.alpha1
 archive/issue_comments_031546.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-4309_2.patch](tarball://root/attachments/some-uuid/ticket4309/sage-4309_2.patch) by TimothyClemans created at 2008-11-10 02:07:54",
     "created_at": "2008-11-10T02:07:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4309",
     "type": "issue_comment",
@@ -137,7 +137,7 @@ archive/issue_comments_031546.json:
 }
 ```
 
-Attachment
+Attachment [sage-4309_2.patch](tarball://root/attachments/some-uuid/ticket4309/sage-4309_2.patch) by TimothyClemans created at 2008-11-10 02:07:54
 
 
 
@@ -164,7 +164,7 @@ OK now Kerberos isn't required.
 archive/issue_comments_031548.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-4309_3.patch](tarball://root/attachments/some-uuid/ticket4309/sage-4309_3.patch) by TimothyClemans created at 2008-11-10 04:02:41",
     "created_at": "2008-11-10T04:02:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4309",
     "type": "issue_comment",
@@ -173,7 +173,7 @@ archive/issue_comments_031548.json:
 }
 ```
 
-Attachment
+Attachment [sage-4309_3.patch](tarball://root/attachments/some-uuid/ticket4309/sage-4309_3.patch) by TimothyClemans created at 2008-11-10 04:02:41
 
 
 

@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3894
 archive/issue_comments_027840.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good.  I've made this change in the ReST version of the tutorial too.",
+    "body": "Attachment [3894.patch](tarball://root/attachments/some-uuid/ticket3894/3894.patch) by mhansen created at 2008-09-16 02:10:44\n\nLooks good.  I've made this change in the ReST version of the tutorial too.",
     "created_at": "2008-09-16T02:10:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3894",
     "type": "issue_comment",
@@ -51,7 +51,7 @@ archive/issue_comments_027840.json:
 }
 ```
 
-Attachment
+Attachment [3894.patch](tarball://root/attachments/some-uuid/ticket3894/3894.patch) by mhansen created at 2008-09-16 02:10:44
 
 Looks good.  I've made this change in the ReST version of the tutorial too.
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3744
 archive/issue_comments_026587.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3744-coercion-left.patch](tarball://root/attachments/some-uuid/ticket3744/3744-coercion-left.patch) by robertwb created at 2008-07-30 05:02:39",
     "created_at": "2008-07-30T05:02:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3744",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_026587.json:
 }
 ```
 
-Attachment
+Attachment [3744-coercion-left.patch](tarball://root/attachments/some-uuid/ticket3744/3744-coercion-left.patch) by robertwb created at 2008-07-30 05:02:39
 
 
 

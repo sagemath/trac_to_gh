@@ -83,7 +83,7 @@ Resolution: fixed
 archive/issue_comments_020584.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-2991.patch](tarball://root/attachments/some-uuid/ticket2991/sage-2991.patch) by was created at 2008-04-22 04:52:05",
     "created_at": "2008-04-22T04:52:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2991",
     "type": "issue_comment",
@@ -92,4 +92,4 @@ archive/issue_comments_020584.json:
 }
 ```
 
-Attachment
+Attachment [sage-2991.patch](tarball://root/attachments/some-uuid/ticket2991/sage-2991.patch) by was created at 2008-04-22 04:52:05

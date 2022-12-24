@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6733
 archive/issue_comments_055201.json:
 ```json
 {
-    "body": "Attachment\n\nbased on Sage 4.1.1.rc2",
+    "body": "Attachment [trac_6733-spell-check-sets.patch](tarball://root/attachments/some-uuid/ticket6733/trac_6733-spell-check-sets.patch) by mvngu created at 2009-08-11 08:47:22\n\nbased on Sage 4.1.1.rc2",
     "created_at": "2009-08-11T08:47:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6733",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_055201.json:
 }
 ```
 
-Attachment
+Attachment [trac_6733-spell-check-sets.patch](tarball://root/attachments/some-uuid/ticket6733/trac_6733-spell-check-sets.patch) by mvngu created at 2009-08-11 08:47:22
 
 based on Sage 4.1.1.rc2
 

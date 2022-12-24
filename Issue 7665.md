@@ -311,7 +311,7 @@ The patch still should apply, but still needs some work to deal with all the cas
 archive/issue_comments_065643.json:
 ```json
 {
-    "body": "Attachment\n\nRemoves the chdir in sagenb.notebook.worksheet_eval_cmd. Read comments for more info. Depends on #7997",
+    "body": "Attachment [trac_7655-sagenb-R-plotting.patch](tarball://root/attachments/some-uuid/ticket7665/trac_7655-sagenb-R-plotting.patch) by timdumol created at 2010-04-13 17:19:48\n\nRemoves the chdir in sagenb.notebook.worksheet_eval_cmd. Read comments for more info. Depends on #7997",
     "created_at": "2010-04-13T17:19:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
@@ -320,7 +320,7 @@ archive/issue_comments_065643.json:
 }
 ```
 
-Attachment
+Attachment [trac_7655-sagenb-R-plotting.patch](tarball://root/attachments/some-uuid/ticket7665/trac_7655-sagenb-R-plotting.patch) by timdumol created at 2010-04-13 17:19:48
 
 Removes the chdir in sagenb.notebook.worksheet_eval_cmd. Read comments for more info. Depends on #7997
 
@@ -547,7 +547,7 @@ Makes systems change to the current tempdir instead. Depends on #7997.
 archive/issue_comments_065654.json:
 ```json
 {
-    "body": "Attachment\n\nAdds a ``chdir`` function to the R interface.",
+    "body": "Attachment [trac_7633-nb_settings_buttons-reviewer.patch](tarball://root/attachments/some-uuid/ticket7665/trac_7633-nb_settings_buttons-reviewer.patch) by timdumol created at 2010-04-14 01:12:02\n\nAdds a ``chdir`` function to the R interface.",
     "created_at": "2010-04-14T01:12:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
@@ -556,7 +556,7 @@ archive/issue_comments_065654.json:
 }
 ```
 
-Attachment
+Attachment [trac_7633-nb_settings_buttons-reviewer.patch](tarball://root/attachments/some-uuid/ticket7665/trac_7633-nb_settings_buttons-reviewer.patch) by timdumol created at 2010-04-14 01:12:02
 
 Adds a ``chdir`` function to the R interface.
 
@@ -677,7 +677,7 @@ I posted the wrong patch. Let me get the right one.
 archive/issue_comments_065661.json:
 ```json
 {
-    "body": "Attachment\n\nAdds a ``chdir`` function to the R interface.",
+    "body": "Attachment [trac_7665-sage-library-R-plotting.patch](tarball://root/attachments/some-uuid/ticket7665/trac_7665-sage-library-R-plotting.patch) by timdumol created at 2010-04-14 17:54:05\n\nAdds a ``chdir`` function to the R interface.",
     "created_at": "2010-04-14T17:54:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
@@ -686,7 +686,7 @@ archive/issue_comments_065661.json:
 }
 ```
 
-Attachment
+Attachment [trac_7665-sage-library-R-plotting.patch](tarball://root/attachments/some-uuid/ticket7665/trac_7665-sage-library-R-plotting.patch) by timdumol created at 2010-04-14 17:54:05
 
 Adds a ``chdir`` function to the R interface.
 
@@ -773,7 +773,7 @@ Fixes a few doctests. Replaces trac_7655-sagenb-R-plotting.2.patch
 archive/issue_comments_065666.json:
 ```json
 {
-    "body": "Attachment\n\nThe substantive changes in the sagenb patch make it work on sage.math and my Macintel with OSX 10.6.  I don't know how to doctest sagenb stuff :(  And unfortunately the linked spkg is ... weird, to say the least.  It didn't unpack properly, for instance, and there was something inside I had to use instead - see [http://sage.math.washington.edu/home/kcrisman/sagenb-0.7.5.3.p0.spkg](http://sage.math.washington.edu/home/kcrisman/sagenb-0.7.5.3.p0.spkg) for something that does work, though of course the p0 and the 7.5.3 are not \"official\" by any means.\n\nI will test this tonight on PPC OSX, and then post an omnibus patch to the Sage library.  Do you know of any way to test %r type commands?  That would be helpful, also for documenting how to use it.",
+    "body": "Attachment [trac_7665-sagenb-R-plotting.patch](tarball://root/attachments/some-uuid/ticket7665/trac_7665-sagenb-R-plotting.patch) by kcrisman created at 2010-04-19 16:33:18\n\nThe substantive changes in the sagenb patch make it work on sage.math and my Macintel with OSX 10.6.  I don't know how to doctest sagenb stuff :(  And unfortunately the linked spkg is ... weird, to say the least.  It didn't unpack properly, for instance, and there was something inside I had to use instead - see [http://sage.math.washington.edu/home/kcrisman/sagenb-0.7.5.3.p0.spkg](http://sage.math.washington.edu/home/kcrisman/sagenb-0.7.5.3.p0.spkg) for something that does work, though of course the p0 and the 7.5.3 are not \"official\" by any means.\n\nI will test this tonight on PPC OSX, and then post an omnibus patch to the Sage library.  Do you know of any way to test %r type commands?  That would be helpful, also for documenting how to use it.",
     "created_at": "2010-04-19T16:33:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
@@ -782,7 +782,7 @@ archive/issue_comments_065666.json:
 }
 ```
 
-Attachment
+Attachment [trac_7665-sagenb-R-plotting.patch](tarball://root/attachments/some-uuid/ticket7665/trac_7665-sagenb-R-plotting.patch) by kcrisman created at 2010-04-19 16:33:18
 
 The substantive changes in the sagenb patch make it work on sage.math and my Macintel with OSX 10.6.  I don't know how to doctest sagenb stuff :(  And unfortunately the linked spkg is ... weird, to say the least.  It didn't unpack properly, for instance, and there was something inside I had to use instead - see [http://sage.math.washington.edu/home/kcrisman/sagenb-0.7.5.3.p0.spkg](http://sage.math.washington.edu/home/kcrisman/sagenb-0.7.5.3.p0.spkg) for something that does work, though of course the p0 and the 7.5.3 are not "official" by any means.
 
@@ -909,7 +909,7 @@ I get test failures in sagenb/notebook/cell.py and sagenb/notebook/notebook.py w
 archive/issue_comments_065671.json:
 ```json
 {
-    "body": "Attachment\n\nBased on 4.3.5 - this is the only patch to apply to main Sage library",
+    "body": "Attachment [trac_7665-r-plotting.patch](tarball://root/attachments/some-uuid/ticket7665/trac_7665-r-plotting.patch) by kcrisman created at 2010-04-20 01:31:25\n\nBased on 4.3.5 - this is the only patch to apply to main Sage library",
     "created_at": "2010-04-20T01:31:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
@@ -918,7 +918,7 @@ archive/issue_comments_065671.json:
 }
 ```
 
-Attachment
+Attachment [trac_7665-r-plotting.patch](tarball://root/attachments/some-uuid/ticket7665/trac_7665-r-plotting.patch) by kcrisman created at 2010-04-20 01:31:25
 
 Based on 4.3.5 - this is the only patch to apply to main Sage library
 
@@ -1003,7 +1003,7 @@ So I think fixing a few typos, testing a little more in the notebook, and we're 
 archive/issue_comments_065675.json:
 ```json
 {
-    "body": "Attachment\n\nI rebased this against the new sagenb-0.8, and fixed the \"it's\" --> \"its\" issue.  and tested.",
+    "body": "Attachment [trac_7665-sagenb-rebased-against-sagenb0.8.patch](tarball://root/attachments/some-uuid/ticket7665/trac_7665-sagenb-rebased-against-sagenb0.8.patch) by was created at 2010-04-24 23:43:47\n\nI rebased this against the new sagenb-0.8, and fixed the \"it's\" --> \"its\" issue.  and tested.",
     "created_at": "2010-04-24T23:43:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
@@ -1012,7 +1012,7 @@ archive/issue_comments_065675.json:
 }
 ```
 
-Attachment
+Attachment [trac_7665-sagenb-rebased-against-sagenb0.8.patch](tarball://root/attachments/some-uuid/ticket7665/trac_7665-sagenb-rebased-against-sagenb0.8.patch) by was created at 2010-04-24 23:43:47
 
 I rebased this against the new sagenb-0.8, and fixed the "it's" --> "its" issue.  and tested.
 

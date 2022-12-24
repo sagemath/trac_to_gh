@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3966
 archive/issue_comments_028491.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ode-cython.patch](tarball://root/attachments/some-uuid/ticket3966/ode-cython.patch) by jason created at 2008-08-27 16:12:58",
     "created_at": "2008-08-27T16:12:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3966",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_028491.json:
 }
 ```
 
-Attachment
+Attachment [ode-cython.patch](tarball://root/attachments/some-uuid/ticket3966/ode-cython.patch) by jason created at 2008-08-27 16:12:58
 
 
 

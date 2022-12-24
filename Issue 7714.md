@@ -104,7 +104,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_066250.json:
 ```json
 {
-    "body": "Attachment\n\nFixed.",
+    "body": "Attachment [trac_7714.patch](tarball://root/attachments/some-uuid/ticket7714/trac_7714.patch) by malb created at 2010-11-03 15:34:02\n\nFixed.",
     "created_at": "2010-11-03T15:34:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7714",
     "type": "issue_comment",
@@ -113,7 +113,7 @@ archive/issue_comments_066250.json:
 }
 ```
 
-Attachment
+Attachment [trac_7714.patch](tarball://root/attachments/some-uuid/ticket7714/trac_7714.patch) by malb created at 2010-11-03 15:34:02
 
 Fixed.
 
@@ -196,7 +196,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_066255.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7714_reviewer.patch](tarball://root/attachments/some-uuid/ticket7714/trac_7714_reviewer.patch) by lftabera created at 2011-09-13 11:05:55",
     "created_at": "2011-09-13T11:05:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7714",
     "type": "issue_comment",
@@ -205,7 +205,7 @@ archive/issue_comments_066255.json:
 }
 ```
 
-Attachment
+Attachment [trac_7714_reviewer.patch](tarball://root/attachments/some-uuid/ticket7714/trac_7714_reviewer.patch) by lftabera created at 2011-09-13 11:05:55
 
 
 

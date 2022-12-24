@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3410
 archive/issue_comments_023916.json:
 ```json
 {
-    "body": "Attachment\n\nfix matrix conversion over polynomial ring to magma",
+    "body": "Attachment [matrix_polyring_magma.patch](tarball://root/attachments/some-uuid/ticket3410/matrix_polyring_magma.patch) by burcin created at 2008-06-13 05:30:44\n\nfix matrix conversion over polynomial ring to magma",
     "created_at": "2008-06-13T05:30:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3410",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_023916.json:
 }
 ```
 
-Attachment
+Attachment [matrix_polyring_magma.patch](tarball://root/attachments/some-uuid/ticket3410/matrix_polyring_magma.patch) by burcin created at 2008-06-13 05:30:44
 
 fix matrix conversion over polynomial ring to magma
 
@@ -75,7 +75,7 @@ For reason 2 this patch is not acceptable.
 archive/issue_comments_023918.json:
 ```json
 {
-    "body": "Attachment\n\nfix conversion of matrices over polynomial rings to magma 2nd try",
+    "body": "Attachment [trac3410-matrix_polyring_magma-2.patch](tarball://root/attachments/some-uuid/ticket3410/trac3410-matrix_polyring_magma-2.patch) by burcin created at 2008-06-14 00:09:15\n\nfix conversion of matrices over polynomial rings to magma 2nd try",
     "created_at": "2008-06-14T00:09:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3410",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_023918.json:
 }
 ```
 
-Attachment
+Attachment [trac3410-matrix_polyring_magma-2.patch](tarball://root/attachments/some-uuid/ticket3410/trac3410-matrix_polyring_magma-2.patch) by burcin created at 2008-06-14 00:09:15
 
 fix conversion of matrices over polynomial rings to magma 2nd try
 
@@ -160,7 +160,7 @@ Pending this big +1.
 archive/issue_comments_023922.json:
 ```json
 {
-    "body": "Attachment\n\nconversion of matrices over polynomial rings to magma 3rd version",
+    "body": "Attachment [trac3410-matrix_polyring_magma-3.patch](tarball://root/attachments/some-uuid/ticket3410/trac3410-matrix_polyring_magma-3.patch) by burcin created at 2008-06-26 15:31:51\n\nconversion of matrices over polynomial rings to magma 3rd version",
     "created_at": "2008-06-26T15:31:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3410",
     "type": "issue_comment",
@@ -169,7 +169,7 @@ archive/issue_comments_023922.json:
 }
 ```
 
-Attachment
+Attachment [trac3410-matrix_polyring_magma-3.patch](tarball://root/attachments/some-uuid/ticket3410/trac3410-matrix_polyring_magma-3.patch) by burcin created at 2008-06-26 15:31:51
 
 conversion of matrices over polynomial rings to magma 3rd version
 

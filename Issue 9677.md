@@ -260,7 +260,7 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_094077.json:
 ```json
 {
-    "body": "Attachment\n\nI rebased the patch and ran the tests which do pass.  I think we can give this positive review.",
+    "body": "Attachment [trac_9677.patch](tarball://root/attachments/some-uuid/ticket9677/trac_9677.patch) by mhansen created at 2011-12-18 16:09:49\n\nI rebased the patch and ran the tests which do pass.  I think we can give this positive review.",
     "created_at": "2011-12-18T16:09:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9677",
     "type": "issue_comment",
@@ -269,7 +269,7 @@ archive/issue_comments_094077.json:
 }
 ```
 
-Attachment
+Attachment [trac_9677.patch](tarball://root/attachments/some-uuid/ticket9677/trac_9677.patch) by mhansen created at 2011-12-18 16:09:49
 
 I rebased the patch and ran the tests which do pass.  I think we can give this positive review.
 

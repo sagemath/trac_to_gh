@@ -643,7 +643,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_088057.json:
 ```json
 {
-    "body": "Attachment\n\nrebased on sage-4.6.1.alpha2",
+    "body": "Attachment [trac_9332.patch](tarball://root/attachments/some-uuid/ticket9332/trac_9332.patch) by rlm created at 2011-01-14 21:27:22\n\nrebased on sage-4.6.1.alpha2",
     "created_at": "2011-01-14T21:27:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9332",
     "type": "issue_comment",
@@ -652,7 +652,7 @@ archive/issue_comments_088057.json:
 }
 ```
 
-Attachment
+Attachment [trac_9332.patch](tarball://root/attachments/some-uuid/ticket9332/trac_9332.patch) by rlm created at 2011-01-14 21:27:22
 
 rebased on sage-4.6.1.alpha2
 

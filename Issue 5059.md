@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5059
 archive/issue_comments_038533.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-5059.patch](tarball://root/attachments/some-uuid/ticket5059/trac-5059.patch) by craigcitro created at 2009-01-22 23:58:41",
     "created_at": "2009-01-22T23:58:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5059",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_038533.json:
 }
 ```
 
-Attachment
+Attachment [trac-5059.patch](tarball://root/attachments/some-uuid/ticket5059/trac-5059.patch) by craigcitro created at 2009-01-22 23:58:41
 
 
 
@@ -117,7 +117,7 @@ Michael
 archive/issue_comments_038537.json:
 ```json
 {
-    "body": "Attachment\n\nThat seems to have addressed those doctest failures.",
+    "body": "Attachment [trac-5059-2.patch](tarball://root/attachments/some-uuid/ticket5059/trac-5059-2.patch) by robertwb created at 2009-01-23 09:22:55\n\nThat seems to have addressed those doctest failures.",
     "created_at": "2009-01-23T09:22:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5059",
     "type": "issue_comment",
@@ -126,7 +126,7 @@ archive/issue_comments_038537.json:
 }
 ```
 
-Attachment
+Attachment [trac-5059-2.patch](tarball://root/attachments/some-uuid/ticket5059/trac-5059-2.patch) by robertwb created at 2009-01-23 09:22:55
 
 That seems to have addressed those doctest failures.
 

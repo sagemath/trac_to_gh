@@ -112,7 +112,7 @@ This is now fixed, presumably in the Maxima upgrade.  Note that the integral in 
 archive/issue_comments_049443.json:
 ```json
 {
-    "body": "Attachment\n\nBased on 4.1.2.alpha2",
+    "body": "Attachment [trac_6189-num-approx-integral.patch](tarball://root/attachments/some-uuid/ticket6189/trac_6189-num-approx-integral.patch) by kcrisman created at 2009-09-29 14:45:50\n\nBased on 4.1.2.alpha2",
     "created_at": "2009-09-29T14:45:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6189",
     "type": "issue_comment",
@@ -121,7 +121,7 @@ archive/issue_comments_049443.json:
 }
 ```
 
-Attachment
+Attachment [trac_6189-num-approx-integral.patch](tarball://root/attachments/some-uuid/ticket6189/trac_6189-num-approx-integral.patch) by kcrisman created at 2009-09-29 14:45:50
 
 Based on 4.1.2.alpha2
 

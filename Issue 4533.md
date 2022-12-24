@@ -531,7 +531,7 @@ sage: %timeit v = magma_n.Divisors()
 archive/issue_comments_033776.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4533-divisors-final.patch](tarball://root/attachments/some-uuid/ticket4533/4533-divisors-final.patch) by robertwb created at 2008-11-20 23:54:47",
     "created_at": "2008-11-20T23:54:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4533",
     "type": "issue_comment",
@@ -540,7 +540,7 @@ archive/issue_comments_033776.json:
 }
 ```
 
-Attachment
+Attachment [4533-divisors-final.patch](tarball://root/attachments/some-uuid/ticket4533/4533-divisors-final.patch) by robertwb created at 2008-11-20 23:54:47
 
 
 

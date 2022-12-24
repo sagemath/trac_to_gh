@@ -112,7 +112,7 @@ Changing status from new to assigned.
 archive/issue_comments_040935.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good and passes tests for me.",
+    "body": "Attachment [trivial_permutations_fix-fh.patch](tarball://root/attachments/some-uuid/ticket5314/trivial_permutations_fix-fh.patch) by mhansen created at 2009-02-19 19:37:56\n\nLooks good and passes tests for me.",
     "created_at": "2009-02-19T19:37:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5314",
     "type": "issue_comment",
@@ -121,7 +121,7 @@ archive/issue_comments_040935.json:
 }
 ```
 
-Attachment
+Attachment [trivial_permutations_fix-fh.patch](tarball://root/attachments/some-uuid/ticket5314/trivial_permutations_fix-fh.patch) by mhansen created at 2009-02-19 19:37:56
 
 Looks good and passes tests for me.
 

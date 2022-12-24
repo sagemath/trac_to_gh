@@ -185,7 +185,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_074550.json:
 ```json
 {
-    "body": "Attachment\n\nthe attached patch (produced against Sage 5.9) adds documentation to `find_root`.\nNote: I found out that `find_root` is duplicated in `numerical/optimize.py` and in `symbolic/expression.pyx`, which is unfortunate.\n\nPaul",
+    "body": "Attachment [trac_8348.patch](tarball://root/attachments/some-uuid/ticket8348/trac_8348.patch) by zimmerma created at 2013-08-24 07:58:12\n\nthe attached patch (produced against Sage 5.9) adds documentation to `find_root`.\nNote: I found out that `find_root` is duplicated in `numerical/optimize.py` and in `symbolic/expression.pyx`, which is unfortunate.\n\nPaul",
     "created_at": "2013-08-24T07:58:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8348",
     "type": "issue_comment",
@@ -194,7 +194,7 @@ archive/issue_comments_074550.json:
 }
 ```
 
-Attachment
+Attachment [trac_8348.patch](tarball://root/attachments/some-uuid/ticket8348/trac_8348.patch) by zimmerma created at 2013-08-24 07:58:12
 
 the attached patch (produced against Sage 5.9) adds documentation to `find_root`.
 Note: I found out that `find_root` is duplicated in `numerical/optimize.py` and in `symbolic/expression.pyx`, which is unfortunate.

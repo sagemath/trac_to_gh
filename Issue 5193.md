@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5193
 archive/issue_comments_039807.json:
 ```json
 {
-    "body": "Attachment\n\nI think the reasoning is that Py_ssize_t is a signed integer to allow for negative indices.",
+    "body": "Attachment [fix-max-matrix-size.patch](tarball://root/attachments/some-uuid/ticket5193/fix-max-matrix-size.patch) by jason created at 2009-02-06 08:20:41\n\nI think the reasoning is that Py_ssize_t is a signed integer to allow for negative indices.",
     "created_at": "2009-02-06T08:20:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5193",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_039807.json:
 }
 ```
 
-Attachment
+Attachment [fix-max-matrix-size.patch](tarball://root/attachments/some-uuid/ticket5193/fix-max-matrix-size.patch) by jason created at 2009-02-06 08:20:41
 
 I think the reasoning is that Py_ssize_t is a signed integer to allow for negative indices.
 

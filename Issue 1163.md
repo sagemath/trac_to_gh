@@ -536,7 +536,7 @@ Now what?  The documentation of ex_to in Ginac, even when I found it on their we
 archive/issue_comments_007129.json:
 ```json
 {
-    "body": "Attachment\n\nBased on 4.1.2.alpha4, depends on #7084",
+    "body": "Attachment [trac_1163-experimental.patch](tarball://root/attachments/some-uuid/ticket1163/trac_1163-experimental.patch) by kcrisman created at 2009-10-01 15:33:25\n\nBased on 4.1.2.alpha4, depends on #7084",
     "created_at": "2009-10-01T15:33:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1163",
     "type": "issue_comment",
@@ -545,7 +545,7 @@ archive/issue_comments_007129.json:
 }
 ```
 
-Attachment
+Attachment [trac_1163-experimental.patch](tarball://root/attachments/some-uuid/ticket1163/trac_1163-experimental.patch) by kcrisman created at 2009-10-01 15:33:25
 
 Based on 4.1.2.alpha4, depends on #7084
 
@@ -583,7 +583,7 @@ So the problem really does seem to be the Ginac handling of !=, not something el
 archive/issue_comments_007131.json:
 ```json
 {
-    "body": "Attachment\n\nBased on 4.1.2.alpha4, depends on #7084",
+    "body": "Attachment [trac_1163.patch](tarball://root/attachments/some-uuid/ticket1163/trac_1163.patch) by kcrisman created at 2009-10-02 15:58:27\n\nBased on 4.1.2.alpha4, depends on #7084",
     "created_at": "2009-10-02T15:58:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1163",
     "type": "issue_comment",
@@ -592,7 +592,7 @@ archive/issue_comments_007131.json:
 }
 ```
 
-Attachment
+Attachment [trac_1163.patch](tarball://root/attachments/some-uuid/ticket1163/trac_1163.patch) by kcrisman created at 2009-10-02 15:58:27
 
 Based on 4.1.2.alpha4, depends on #7084
 
@@ -670,7 +670,7 @@ Apply only 'final' patch.
 archive/issue_comments_007134.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_1163-final.patch](tarball://root/attachments/some-uuid/ticket1163/trac_1163-final.patch) by kcrisman created at 2009-11-10 02:43:14",
     "created_at": "2009-11-10T02:43:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1163",
     "type": "issue_comment",
@@ -679,7 +679,7 @@ archive/issue_comments_007134.json:
 }
 ```
 
-Attachment
+Attachment [trac_1163-final.patch](tarball://root/attachments/some-uuid/ticket1163/trac_1163-final.patch) by kcrisman created at 2009-11-10 02:43:14
 
 
 

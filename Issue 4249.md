@@ -66,7 +66,7 @@ I strongly agree with John Cremona's suggested fix.
 archive/issue_comments_030889.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-4249.patch](tarball://root/attachments/some-uuid/ticket4249/sage-4249.patch) by cremona created at 2008-10-14 20:46:43",
     "created_at": "2008-10-14T20:46:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4249",
     "type": "issue_comment",
@@ -75,7 +75,7 @@ archive/issue_comments_030889.json:
 }
 ```
 
-Attachment
+Attachment [sage-4249.patch](tarball://root/attachments/some-uuid/ticket4249/sage-4249.patch) by cremona created at 2008-10-14 20:46:43
 
 
 
@@ -465,7 +465,7 @@ Whoops. Forgot that we had to look at John's original patch, too. :)
 archive/issue_comments_030905.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-4249-1a.patch](tarball://root/attachments/some-uuid/ticket4249/trac-4249-1a.patch) by craigcitro created at 2008-11-14 09:19:02",
     "created_at": "2008-11-14T09:19:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4249",
     "type": "issue_comment",
@@ -474,7 +474,7 @@ archive/issue_comments_030905.json:
 }
 ```
 
-Attachment
+Attachment [trac-4249-1a.patch](tarball://root/attachments/some-uuid/ticket4249/trac-4249-1a.patch) by craigcitro created at 2008-11-14 09:19:02
 
 
 
@@ -483,7 +483,7 @@ Attachment
 archive/issue_comments_030906.json:
 ```json
 {
-    "body": "Attachment\n\nThis looks good! \n\nThe only complaints I had were one or two naming issues; in particular, I didn't see why `integral_basis_internal` should be visible when you tab complete. (The `internal` in the name really makes it seem weird.) So I've just corrected a few naming issues, and made a new patch. Then I rebased the patch John Voight and I wrote on top of this. So you should apply:\n\n\n```\nsage-4249.patch\ntrac-4249-1a.patch\ntrac-4249-pt2a.patch\n```\n\n\nin order. (I've deleted the old pt2 patch, just to help avoid confusion.)",
+    "body": "Attachment [trac-4249-pt2a.patch](tarball://root/attachments/some-uuid/ticket4249/trac-4249-pt2a.patch) by craigcitro created at 2008-11-14 09:22:08\n\nThis looks good! \n\nThe only complaints I had were one or two naming issues; in particular, I didn't see why `integral_basis_internal` should be visible when you tab complete. (The `internal` in the name really makes it seem weird.) So I've just corrected a few naming issues, and made a new patch. Then I rebased the patch John Voight and I wrote on top of this. So you should apply:\n\n\n```\nsage-4249.patch\ntrac-4249-1a.patch\ntrac-4249-pt2a.patch\n```\n\n\nin order. (I've deleted the old pt2 patch, just to help avoid confusion.)",
     "created_at": "2008-11-14T09:22:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4249",
     "type": "issue_comment",
@@ -492,7 +492,7 @@ archive/issue_comments_030906.json:
 }
 ```
 
-Attachment
+Attachment [trac-4249-pt2a.patch](tarball://root/attachments/some-uuid/ticket4249/trac-4249-pt2a.patch) by craigcitro created at 2008-11-14 09:22:08
 
 This looks good! 
 
@@ -646,7 +646,7 @@ Total time for all tests: 31.0 seconds
 archive/issue_comments_030910.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-4249-3.patch](tarball://root/attachments/some-uuid/ticket4249/trac-4249-3.patch) by cremona created at 2008-11-14 20:46:24",
     "created_at": "2008-11-14T20:46:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4249",
     "type": "issue_comment",
@@ -655,7 +655,7 @@ archive/issue_comments_030910.json:
 }
 ```
 
-Attachment
+Attachment [trac-4249-3.patch](tarball://root/attachments/some-uuid/ticket4249/trac-4249-3.patch) by cremona created at 2008-11-14 20:46:24
 
 
 
@@ -664,7 +664,7 @@ Attachment
 archive/issue_comments_030911.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-4249-doc.patch](tarball://root/attachments/some-uuid/ticket4249/trac-4249-doc.patch) by cremona created at 2008-11-14 20:47:10",
     "created_at": "2008-11-14T20:47:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4249",
     "type": "issue_comment",
@@ -673,7 +673,7 @@ archive/issue_comments_030911.json:
 }
 ```
 
-Attachment
+Attachment [trac-4249-doc.patch](tarball://root/attachments/some-uuid/ticket4249/trac-4249-doc.patch) by cremona created at 2008-11-14 20:47:10
 
 
 

@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5899
 archive/issue_comments_046637.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-fix-debian-build.patch](tarball://root/attachments/some-uuid/ticket5899/sage-fix-debian-build.patch) by tabbott created at 2009-04-26 05:39:59",
     "created_at": "2009-04-26T05:39:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5899",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_046637.json:
 }
 ```
 
-Attachment
+Attachment [sage-fix-debian-build.patch](tarball://root/attachments/some-uuid/ticket5899/sage-fix-debian-build.patch) by tabbott created at 2009-04-26 05:39:59
 
 
 
@@ -51,7 +51,7 @@ Attachment
 archive/issue_comments_046638.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-fix-debian-cython-include-patch.patch](tarball://root/attachments/some-uuid/ticket5899/sage-fix-debian-cython-include-patch.patch) by tabbott created at 2009-04-26 05:40:17",
     "created_at": "2009-04-26T05:40:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5899",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_046638.json:
 }
 ```
 
-Attachment
+Attachment [sage-fix-debian-cython-include-patch.patch](tarball://root/attachments/some-uuid/ticket5899/sage-fix-debian-cython-include-patch.patch) by tabbott created at 2009-04-26 05:40:17
 
 
 
@@ -87,7 +87,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_046640.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.",
+    "body": "Attachment [sage-fix-debian-cython-path.patch](tarball://root/attachments/some-uuid/ticket5899/sage-fix-debian-cython-path.patch) by mhansen created at 2009-10-16 08:46:26\n\nLooks good to me.",
     "created_at": "2009-10-16T08:46:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5899",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_046640.json:
 }
 ```
 
-Attachment
+Attachment [sage-fix-debian-cython-path.patch](tarball://root/attachments/some-uuid/ticket5899/sage-fix-debian-cython-path.patch) by mhansen created at 2009-10-16 08:46:26
 
 Looks good to me.
 

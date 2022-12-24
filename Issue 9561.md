@@ -65,7 +65,7 @@ which does indeed often introduce actual examples, but now is more likely to hav
 archive/issue_comments_092167.json:
 ```json
 {
-    "body": "Attachment\n\nBased on 4.5.1 plus relevant patches",
+    "body": "Attachment [trac_9561-stats-rst-warnings.patch](tarball://root/attachments/some-uuid/ticket9561/trac_9561-stats-rst-warnings.patch) by kcrisman created at 2010-07-22 14:17:01\n\nBased on 4.5.1 plus relevant patches",
     "created_at": "2010-07-22T14:17:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9561",
     "type": "issue_comment",
@@ -74,7 +74,7 @@ archive/issue_comments_092167.json:
 }
 ```
 
-Attachment
+Attachment [trac_9561-stats-rst-warnings.patch](tarball://root/attachments/some-uuid/ticket9561/trac_9561-stats-rst-warnings.patch) by kcrisman created at 2010-07-22 14:17:01
 
 Based on 4.5.1 plus relevant patches
 

@@ -60,7 +60,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2077
 archive/issue_comments_013443.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [matrix-column-wrapping.patch](tarball://root/attachments/some-uuid/ticket2077/matrix-column-wrapping.patch) by jason created at 2008-02-07 02:31:31",
     "created_at": "2008-02-07T02:31:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2077",
     "type": "issue_comment",
@@ -69,7 +69,7 @@ archive/issue_comments_013443.json:
 }
 ```
 
-Attachment
+Attachment [matrix-column-wrapping.patch](tarball://root/attachments/some-uuid/ticket2077/matrix-column-wrapping.patch) by jason created at 2008-02-07 02:31:31
 
 
 
@@ -78,7 +78,7 @@ Attachment
 archive/issue_comments_013444.json:
 ```json
 {
-    "body": "Attachment\n\nApply the .2.patch (which corrects a minor typo).",
+    "body": "Attachment [matrix-column-wrapping.2.patch](tarball://root/attachments/some-uuid/ticket2077/matrix-column-wrapping.2.patch) by jason created at 2008-02-07 02:33:55\n\nApply the .2.patch (which corrects a minor typo).",
     "created_at": "2008-02-07T02:33:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2077",
     "type": "issue_comment",
@@ -87,7 +87,7 @@ archive/issue_comments_013444.json:
 }
 ```
 
-Attachment
+Attachment [matrix-column-wrapping.2.patch](tarball://root/attachments/some-uuid/ticket2077/matrix-column-wrapping.2.patch) by jason created at 2008-02-07 02:33:55
 
 Apply the .2.patch (which corrects a minor typo).
 

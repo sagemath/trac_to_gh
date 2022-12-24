@@ -51,7 +51,7 @@ Changing status from new to needs_review.
 archive/issue_comments_060127.json:
 ```json
 {
-    "body": "Attachment\n\nIt would also be nice to have it use a more robust downloader such as cURL or wget if it is present.  The current one doesn't resume downloads.",
+    "body": "Attachment [trac_7241.patch](tarball://root/attachments/some-uuid/ticket7241/trac_7241.patch) by mhansen created at 2009-10-18 17:44:06\n\nIt would also be nice to have it use a more robust downloader such as cURL or wget if it is present.  The current one doesn't resume downloads.",
     "created_at": "2009-10-18T17:44:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7241",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_060127.json:
 }
 ```
 
-Attachment
+Attachment [trac_7241.patch](tarball://root/attachments/some-uuid/ticket7241/trac_7241.patch) by mhansen created at 2009-10-18 17:44:06
 
 It would also be nice to have it use a more robust downloader such as cURL or wget if it is present.  The current one doesn't resume downloads.
 
@@ -71,7 +71,7 @@ It would also be nice to have it use a more robust downloader such as cURL or wg
 archive/issue_comments_060128.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7241-rebase.patch](tarball://root/attachments/some-uuid/ticket7241/trac_7241-rebase.patch) by hivert created at 2009-11-07 08:56:52",
     "created_at": "2009-11-07T08:56:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7241",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_060128.json:
 }
 ```
 
-Attachment
+Attachment [trac_7241-rebase.patch](tarball://root/attachments/some-uuid/ticket7241/trac_7241-rebase.patch) by hivert created at 2009-11-07 08:56:52
 
 
 

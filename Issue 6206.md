@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6206
 archive/issue_comments_049578.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6206-real_lazy-algebraic-closure.patch](tarball://root/attachments/some-uuid/ticket6206/trac_6206-real_lazy-algebraic-closure.patch) by ncalexan created at 2009-06-04 03:45:56",
     "created_at": "2009-06-04T03:45:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6206",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_049578.json:
 }
 ```
 
-Attachment
+Attachment [trac_6206-real_lazy-algebraic-closure.patch](tarball://root/attachments/some-uuid/ticket6206/trac_6206-real_lazy-algebraic-closure.patch) by ncalexan created at 2009-06-04 03:45:56
 
 
 

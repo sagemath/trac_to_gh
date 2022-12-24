@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7193
 archive/issue_comments_059630.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7193.patch](tarball://root/attachments/some-uuid/ticket7193/trac_7193.patch) by was created at 2009-10-12 05:11:26",
     "created_at": "2009-10-12T05:11:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7193",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_059630.json:
 }
 ```
 
-Attachment
+Attachment [trac_7193.patch](tarball://root/attachments/some-uuid/ticket7193/trac_7193.patch) by was created at 2009-10-12 05:11:26
 
 
 
@@ -329,7 +329,7 @@ sage: os.uname()[2]
 archive/issue_comments_059645.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7193-part2.patch](tarball://root/attachments/some-uuid/ticket7193/trac_7193-part2.patch) by was created at 2009-11-11 19:08:51",
     "created_at": "2009-11-11T19:08:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7193",
     "type": "issue_comment",
@@ -338,7 +338,7 @@ archive/issue_comments_059645.json:
 }
 ```
 
-Attachment
+Attachment [trac_7193-part2.patch](tarball://root/attachments/some-uuid/ticket7193/trac_7193-part2.patch) by was created at 2009-11-11 19:08:51
 
 
 

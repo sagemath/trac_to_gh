@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2643
 archive/issue_comments_018164.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [eclib.patch](tarball://root/attachments/some-uuid/ticket2643/eclib.patch) by tabbott created at 2008-03-22 03:47:28",
     "created_at": "2008-03-22T03:47:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2643",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_018164.json:
 }
 ```
 
-Attachment
+Attachment [eclib.patch](tarball://root/attachments/some-uuid/ticket2643/eclib.patch) by tabbott created at 2008-03-22 03:47:28
 
 
 
@@ -49,7 +49,7 @@ Attachment
 archive/issue_comments_018165.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [flint.patch](tarball://root/attachments/some-uuid/ticket2643/flint.patch) by tabbott created at 2008-03-22 03:49:16",
     "created_at": "2008-03-22T03:49:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2643",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_018165.json:
 }
 ```
 
-Attachment
+Attachment [flint.patch](tarball://root/attachments/some-uuid/ticket2643/flint.patch) by tabbott created at 2008-03-22 03:49:16
 
 
 
@@ -67,7 +67,7 @@ Attachment
 archive/issue_comments_018166.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [givaro.patch](tarball://root/attachments/some-uuid/ticket2643/givaro.patch) by tabbott created at 2008-03-22 03:49:46",
     "created_at": "2008-03-22T03:49:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2643",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_018166.json:
 }
 ```
 
-Attachment
+Attachment [givaro.patch](tarball://root/attachments/some-uuid/ticket2643/givaro.patch) by tabbott created at 2008-03-22 03:49:46
 
 
 
@@ -85,7 +85,7 @@ Attachment
 archive/issue_comments_018167.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [libm4ri.patch](tarball://root/attachments/some-uuid/ticket2643/libm4ri.patch) by tabbott created at 2008-03-22 03:49:54",
     "created_at": "2008-03-22T03:49:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2643",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_018167.json:
 }
 ```
 
-Attachment
+Attachment [libm4ri.patch](tarball://root/attachments/some-uuid/ticket2643/libm4ri.patch) by tabbott created at 2008-03-22 03:49:54
 
 
 
@@ -103,7 +103,7 @@ Attachment
 archive/issue_comments_018168.json:
 ```json
 {
-    "body": "Attachment\n\nMerged eclib.patch in eclib-20080310.p1.",
+    "body": "Attachment [singular.patch](tarball://root/attachments/some-uuid/ticket2643/singular.patch) by mabshoff created at 2008-04-01 21:20:16\n\nMerged eclib.patch in eclib-20080310.p1.",
     "created_at": "2008-04-01T21:20:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2643",
     "type": "issue_comment",
@@ -112,7 +112,7 @@ archive/issue_comments_018168.json:
 }
 ```
 
-Attachment
+Attachment [singular.patch](tarball://root/attachments/some-uuid/ticket2643/singular.patch) by mabshoff created at 2008-04-01 21:20:16
 
 Merged eclib.patch in eclib-20080310.p1.
 

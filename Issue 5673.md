@@ -45,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5673
 archive/issue_comments_044375.json:
 ```json
 {
-    "body": "Attachment\n\napply to 3.4.1.alpha0 + #4667 patches",
+    "body": "Attachment [twist.patch](tarball://root/attachments/some-uuid/ticket5673/twist.patch) by cremona created at 2009-04-03 11:08:27\n\napply to 3.4.1.alpha0 + #4667 patches",
     "created_at": "2009-04-03T11:08:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5673",
     "type": "issue_comment",
@@ -54,7 +54,7 @@ archive/issue_comments_044375.json:
 }
 ```
 
-Attachment
+Attachment [twist.patch](tarball://root/attachments/some-uuid/ticket5673/twist.patch) by cremona created at 2009-04-03 11:08:27
 
 apply to 3.4.1.alpha0 + #4667 patches
 
@@ -65,7 +65,7 @@ apply to 3.4.1.alpha0 + #4667 patches
 archive/issue_comments_044376.json:
 ```json
 {
-    "body": "Attachment\n\napply after last patch",
+    "body": "Attachment [5673-j-keyword.patch](tarball://root/attachments/some-uuid/ticket5673/5673-j-keyword.patch) by robertwb created at 2009-04-03 22:48:37\n\napply after last patch",
     "created_at": "2009-04-03T22:48:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5673",
     "type": "issue_comment",
@@ -74,7 +74,7 @@ archive/issue_comments_044376.json:
 }
 ```
 
-Attachment
+Attachment [5673-j-keyword.patch](tarball://root/attachments/some-uuid/ticket5673/5673-j-keyword.patch) by robertwb created at 2009-04-03 22:48:37
 
 apply after last patch
 
@@ -85,7 +85,7 @@ apply after last patch
 archive/issue_comments_044377.json:
 ```json
 {
-    "body": "Attachment\n\nreplaces previous (fixes typo)",
+    "body": "Attachment [5673-j-keyword.2.patch](tarball://root/attachments/some-uuid/ticket5673/5673-j-keyword.2.patch) by cremona created at 2009-04-06 10:41:30\n\nreplaces previous (fixes typo)",
     "created_at": "2009-04-06T10:41:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5673",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_044377.json:
 }
 ```
 
-Attachment
+Attachment [5673-j-keyword.2.patch](tarball://root/attachments/some-uuid/ticket5673/5673-j-keyword.2.patch) by cremona created at 2009-04-06 10:41:30
 
 replaces previous (fixes typo)
 
@@ -289,7 +289,7 @@ Apply after previous:  fixes rst doc failures in tutorial etc.
 archive/issue_comments_044386.json:
 ```json
 {
-    "body": "Attachment\n\nPatch trac_5763_rst.patch fixes the rst failures.  Now for sha_tate....",
+    "body": "Attachment [trac_5763_rst.patch](tarball://root/attachments/some-uuid/ticket5673/trac_5763_rst.patch) by cremona created at 2009-04-13 17:20:05\n\nPatch trac_5763_rst.patch fixes the rst failures.  Now for sha_tate....",
     "created_at": "2009-04-13T17:20:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5673",
     "type": "issue_comment",
@@ -298,7 +298,7 @@ archive/issue_comments_044386.json:
 }
 ```
 
-Attachment
+Attachment [trac_5763_rst.patch](tarball://root/attachments/some-uuid/ticket5673/trac_5763_rst.patch) by cremona created at 2009-04-13 17:20:05
 
 Patch trac_5763_rst.patch fixes the rst failures.  Now for sha_tate....
 
@@ -327,7 +327,7 @@ Apply after previous (fixes sha_tate doctest failure)
 archive/issue_comments_044388.json:
 ```json
 {
-    "body": "Attachment\n\nOK, the problem was that Chris's original minimal_quadratic_twist() function gave back the same curve it it already had minimal conductor, while mine did not, since my function takes the curve with smallest label.  But the padic code could not cope with a non-trivial twist of the same conductor!  (The bad example was '300b2' for which \"my\" minimal twist is '300a2' which is its 5-twist.)\n\nSolution:  if the minimal twist has the same conductor,  I just throw it away and use the original curve, as Chris's code used to do.\n\nThe patch trac_5673_review.patch fixes this.\n\nSorry I made two separate patches to fix the failures -- I was not sure I would succeed with both problems.",
+    "body": "Attachment [trac_5673_review.patch](tarball://root/attachments/some-uuid/ticket5673/trac_5673_review.patch) by cremona created at 2009-04-13 18:01:11\n\nOK, the problem was that Chris's original minimal_quadratic_twist() function gave back the same curve it it already had minimal conductor, while mine did not, since my function takes the curve with smallest label.  But the padic code could not cope with a non-trivial twist of the same conductor!  (The bad example was '300b2' for which \"my\" minimal twist is '300a2' which is its 5-twist.)\n\nSolution:  if the minimal twist has the same conductor,  I just throw it away and use the original curve, as Chris's code used to do.\n\nThe patch trac_5673_review.patch fixes this.\n\nSorry I made two separate patches to fix the failures -- I was not sure I would succeed with both problems.",
     "created_at": "2009-04-13T18:01:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5673",
     "type": "issue_comment",
@@ -336,7 +336,7 @@ archive/issue_comments_044388.json:
 }
 ```
 
-Attachment
+Attachment [trac_5673_review.patch](tarball://root/attachments/some-uuid/ticket5673/trac_5673_review.patch) by cremona created at 2009-04-13 18:01:11
 
 OK, the problem was that Chris's original minimal_quadratic_twist() function gave back the same curve it it already had minimal conductor, while mine did not, since my function takes the curve with smallest label.  But the padic code could not cope with a non-trivial twist of the same conductor!  (The bad example was '300b2' for which "my" minimal twist is '300a2' which is its 5-twist.)
 

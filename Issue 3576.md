@@ -84,7 +84,7 @@ sage: RDF(-1).nth_root(5)^(5)
 archive/issue_comments_025256.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3576.patch](tarball://root/attachments/some-uuid/ticket3576/sage-3576.patch) by was created at 2008-07-06 23:13:07",
     "created_at": "2008-07-06T23:13:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3576",
     "type": "issue_comment",
@@ -93,7 +93,7 @@ archive/issue_comments_025256.json:
 }
 ```
 
-Attachment
+Attachment [sage-3576.patch](tarball://root/attachments/some-uuid/ticket3576/sage-3576.patch) by was created at 2008-07-06 23:13:07
 
 
 

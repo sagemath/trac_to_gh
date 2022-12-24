@@ -703,7 +703,7 @@ cython -I/home/x/build/sage-2.10.3/devel/sage-main --incref-local-binop --embed-
 archive/issue_comments_016848.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_2486.patch](tarball://root/attachments/some-uuid/ticket2486/trac_2486.patch) by gfurnish created at 2008-03-13 02:10:32",
     "created_at": "2008-03-13T02:10:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2486",
     "type": "issue_comment",
@@ -712,7 +712,7 @@ archive/issue_comments_016848.json:
 }
 ```
 
-Attachment
+Attachment [trac_2486.patch](tarball://root/attachments/some-uuid/ticket2486/trac_2486.patch) by gfurnish created at 2008-03-13 02:10:32
 
 
 

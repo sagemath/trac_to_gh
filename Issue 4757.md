@@ -131,7 +131,7 @@ Changing status from new to assigned.
 archive/issue_comments_036044.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4757.patch](tarball://root/attachments/some-uuid/ticket4757/trac_4757.patch) by mhansen created at 2008-12-11 08:07:05",
     "created_at": "2008-12-11T08:07:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4757",
     "type": "issue_comment",
@@ -140,7 +140,7 @@ archive/issue_comments_036044.json:
 }
 ```
 
-Attachment
+Attachment [trac_4757.patch](tarball://root/attachments/some-uuid/ticket4757/trac_4757.patch) by mhansen created at 2008-12-11 08:07:05
 
 
 
@@ -207,7 +207,7 @@ apply on top of previous patches
 archive/issue_comments_036048.json:
 ```json
 {
-    "body": "Attachment\n\nThere already is a doctest which I think adequately covers the issue, but numerical error makes it so that it is marked #random.\n\nErring on the side of caution, my review patch probably ought to also be reviewed, as it changes code.",
+    "body": "Attachment [trac_4757_review.patch](tarball://root/attachments/some-uuid/ticket4757/trac_4757_review.patch) by jason created at 2008-12-12 21:08:14\n\nThere already is a doctest which I think adequately covers the issue, but numerical error makes it so that it is marked #random.\n\nErring on the side of caution, my review patch probably ought to also be reviewed, as it changes code.",
     "created_at": "2008-12-12T21:08:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4757",
     "type": "issue_comment",
@@ -216,7 +216,7 @@ archive/issue_comments_036048.json:
 }
 ```
 
-Attachment
+Attachment [trac_4757_review.patch](tarball://root/attachments/some-uuid/ticket4757/trac_4757_review.patch) by jason created at 2008-12-12 21:08:14
 
 There already is a doctest which I think adequately covers the issue, but numerical error makes it so that it is marked #random.
 

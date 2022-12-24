@@ -80,7 +80,7 @@ Log file of failed ECL build on OS X 64-bit.
 archive/issue_comments_056874.json:
 ```json
 {
-    "body": "Attachment\n\nI'm not surprised you got the failure, as I had updated the spkg after you tested it. That was my fault. \n\nBut I copiled the version of the .spkg from Alex's directory, which is where you said you copied yours from, and it still failed for me. \n\nI have created an updated one at \n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/ecl-9.8.4.p0/ecl-9.8.4.p0.spkg \n\nwhich fixes the issue you had (not finding the gmp library), but it still fails to build for me. \n\nI also downloaded the one from Alex's directory, which is where you copied yours from. That does not build for me either. So I'm somewhat surprised you managed to build this anyway.  \n\nDave",
+    "body": "Attachment [ecl-log.txt](tarball://root/attachments/some-uuid/ticket6883/ecl-log.txt) by drkirkby created at 2009-09-05 11:54:07\n\nI'm not surprised you got the failure, as I had updated the spkg after you tested it. That was my fault. \n\nBut I copiled the version of the .spkg from Alex's directory, which is where you said you copied yours from, and it still failed for me. \n\nI have created an updated one at \n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/ecl-9.8.4.p0/ecl-9.8.4.p0.spkg \n\nwhich fixes the issue you had (not finding the gmp library), but it still fails to build for me. \n\nI also downloaded the one from Alex's directory, which is where you copied yours from. That does not build for me either. So I'm somewhat surprised you managed to build this anyway.  \n\nDave",
     "created_at": "2009-09-05T11:54:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6883",
     "type": "issue_comment",
@@ -89,7 +89,7 @@ archive/issue_comments_056874.json:
 }
 ```
 
-Attachment
+Attachment [ecl-log.txt](tarball://root/attachments/some-uuid/ticket6883/ecl-log.txt) by drkirkby created at 2009-09-05 11:54:07
 
 I'm not surprised you got the failure, as I had updated the spkg after you tested it. That was my fault. 
 
@@ -499,7 +499,7 @@ Is this a serious issue, or just something to do with the new version of maxima?
 archive/issue_comments_056883.json:
 ```json
 {
-    "body": "Attachment\n\nbased on Sage 4.1.2.alpha1",
+    "body": "Attachment [trac_6883-proper-display.patch](tarball://root/attachments/some-uuid/ticket6883/trac_6883-proper-display.patch) by mvngu created at 2009-09-16 02:04:29\n\nbased on Sage 4.1.2.alpha1",
     "created_at": "2009-09-16T02:04:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6883",
     "type": "issue_comment",
@@ -508,7 +508,7 @@ archive/issue_comments_056883.json:
 }
 ```
 
-Attachment
+Attachment [trac_6883-proper-display.patch](tarball://root/attachments/some-uuid/ticket6883/trac_6883-proper-display.patch) by mvngu created at 2009-09-16 02:04:29
 
 based on Sage 4.1.2.alpha1
 

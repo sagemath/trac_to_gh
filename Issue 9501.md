@@ -248,7 +248,7 @@ SimonKing -- that's a good idea.  I've refreshed the patch with this example.
 archive/issue_comments_091244.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9501.patch](tarball://root/attachments/some-uuid/ticket9501/trac_9501.patch) by was created at 2010-07-15 23:54:12",
     "created_at": "2010-07-15T23:54:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9501",
     "type": "issue_comment",
@@ -257,7 +257,7 @@ archive/issue_comments_091244.json:
 }
 ```
 
-Attachment
+Attachment [trac_9501.patch](tarball://root/attachments/some-uuid/ticket9501/trac_9501.patch) by was created at 2010-07-15 23:54:12
 
 
 
@@ -407,7 +407,7 @@ That's right. See [this section](http://sphinx.pocoo.org/markup/para.html#dir-wa
 archive/issue_comments_091252.json:
 ```json
 {
-    "body": "Attachment\n\nnew version with fixed warnings.",
+    "body": "Attachment [trac_9501.2.patch](tarball://root/attachments/some-uuid/ticket9501/trac_9501.2.patch) by was created at 2010-07-17 12:53:25\n\nnew version with fixed warnings.",
     "created_at": "2010-07-17T12:53:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9501",
     "type": "issue_comment",
@@ -416,7 +416,7 @@ archive/issue_comments_091252.json:
 }
 ```
 
-Attachment
+Attachment [trac_9501.2.patch](tarball://root/attachments/some-uuid/ticket9501/trac_9501.2.patch) by was created at 2010-07-17 12:53:25
 
 new version with fixed warnings.
 

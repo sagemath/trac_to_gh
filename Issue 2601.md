@@ -118,7 +118,7 @@ This should return {(0, 0, 1): 1}.  I'm having trouble understanding exactly how
 archive/issue_comments_017800.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_2601.patch](tarball://root/attachments/some-uuid/ticket2601/trac_2601.patch) by was created at 2009-01-24 10:19:17",
     "created_at": "2009-01-24T10:19:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2601",
     "type": "issue_comment",
@@ -127,7 +127,7 @@ archive/issue_comments_017800.json:
 }
 ```
 
-Attachment
+Attachment [trac_2601.patch](tarball://root/attachments/some-uuid/ticket2601/trac_2601.patch) by was created at 2009-01-24 10:19:17
 
 
 

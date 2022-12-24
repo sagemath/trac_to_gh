@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7734
 archive/issue_comments_066456.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7734.patch](tarball://root/attachments/some-uuid/ticket7734/trac_7734.patch) by ncohen created at 2009-12-18 09:02:34",
     "created_at": "2009-12-18T09:02:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7734",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_066456.json:
 }
 ```
 
-Attachment
+Attachment [trac_7734.patch](tarball://root/attachments/some-uuid/ticket7734/trac_7734.patch) by ncohen created at 2009-12-18 09:02:34
 
 
 
@@ -115,7 +115,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_066460.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7734-edit.patch](tarball://root/attachments/some-uuid/ticket7734/trac_7734-edit.patch) by rlm created at 2009-12-18 21:24:09",
     "created_at": "2009-12-18T21:24:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7734",
     "type": "issue_comment",
@@ -124,7 +124,7 @@ archive/issue_comments_066460.json:
 }
 ```
 
-Attachment
+Attachment [trac_7734-edit.patch](tarball://root/attachments/some-uuid/ticket7734/trac_7734-edit.patch) by rlm created at 2009-12-18 21:24:09
 
 
 

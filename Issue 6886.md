@@ -38,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6886
 archive/issue_comments_056896.json:
 ```json
 {
-    "body": "Attachment\n\nAn optional argument 'check' is added to isogenies for elliptic curves.",
+    "body": "Attachment [trac_6886.patch](tarball://root/attachments/some-uuid/ticket6886/trac_6886.patch) by wuthrich created at 2009-10-08 21:55:38\n\nAn optional argument 'check' is added to isogenies for elliptic curves.",
     "created_at": "2009-10-08T21:55:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6886",
     "type": "issue_comment",
@@ -47,7 +47,7 @@ archive/issue_comments_056896.json:
 }
 ```
 
-Attachment
+Attachment [trac_6886.patch](tarball://root/attachments/some-uuid/ticket6886/trac_6886.patch) by wuthrich created at 2009-10-08 21:55:38
 
 An optional argument 'check' is added to isogenies for elliptic curves.
 
@@ -112,7 +112,7 @@ documentation for it; to be applied after the first
 archive/issue_comments_056900.json:
 ```json
 {
-    "body": "Attachment\n\nI forgot to add the documentation. The second patch (to be applied after the first) fixes that.\n\nIf check is false and a (or several) presumably-torsion points are given, the algorithm does not check if they are really torsion anymore. But it still needs the function .order(). I think we should open another ticket for this.\n\nChris.",
+    "body": "Attachment [trac_6886_doc.patch](tarball://root/attachments/some-uuid/ticket6886/trac_6886_doc.patch) by wuthrich created at 2009-10-09 09:06:23\n\nI forgot to add the documentation. The second patch (to be applied after the first) fixes that.\n\nIf check is false and a (or several) presumably-torsion points are given, the algorithm does not check if they are really torsion anymore. But it still needs the function .order(). I think we should open another ticket for this.\n\nChris.",
     "created_at": "2009-10-09T09:06:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6886",
     "type": "issue_comment",
@@ -121,7 +121,7 @@ archive/issue_comments_056900.json:
 }
 ```
 
-Attachment
+Attachment [trac_6886_doc.patch](tarball://root/attachments/some-uuid/ticket6886/trac_6886_doc.patch) by wuthrich created at 2009-10-09 09:06:23
 
 I forgot to add the documentation. The second patch (to be applied after the first) fixes that.
 

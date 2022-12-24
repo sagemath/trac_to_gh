@@ -46,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4460
 archive/issue_comments_032908.json:
 ```json
 {
-    "body": "Attachment\n\nIncludes pdf.png",
+    "body": "Attachment [trac_4460_pdf_links.patch](tarball://root/attachments/some-uuid/ticket4460/trac_4460_pdf_links.patch) by mpatel created at 2009-07-08 19:09:51\n\nIncludes pdf.png",
     "created_at": "2009-07-08T19:09:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4460",
     "type": "issue_comment",
@@ -55,7 +55,7 @@ archive/issue_comments_032908.json:
 }
 ```
 
-Attachment
+Attachment [trac_4460_pdf_links.patch](tarball://root/attachments/some-uuid/ticket4460/trac_4460_pdf_links.patch) by mpatel created at 2009-07-08 19:09:51
 
 Includes pdf.png
 
@@ -183,7 +183,7 @@ Apply only this patch.
 archive/issue_comments_032915.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:6 jhpalmieri]:\n> On the other hand, if I click on the \"Help\" button from the notebook, then click on \"Fast static versions of the Documentation\", then the I see pdf links but they don't work: I get messages like \"The resource /pdf/en/tutorial/SageTutorial.pdf cannot be found.\"\nThanks very much for catching this.  I think v2 covers both the static and offline docs.\n\nAside:  In the drive for internationalization, perhaps we should instead map `doc/common/output` to, e.g., `http://localhost:8000/doc/static` and serve `index.html` as `http://localhost:8000/doc/static/html/` + `LANG` + `/index.html`.\n\nCorrection:  That should be\n\n```\nconvert $SAGE_ROOT/local/share/moin/htdocs/applets/FCKeditor/editor/filemanager/browser/default/images/icons/pdf.gif $SAGE_ROOT/devel/sage/doc/en/website/static/pdf.png\n```\n",
+    "body": "Attachment [trac_4460-pdf_links_v2.patch](tarball://root/attachments/some-uuid/ticket4460/trac_4460-pdf_links_v2.patch) by mpatel created at 2009-07-22 23:19:41\n\nReplying to [comment:6 jhpalmieri]:\n> On the other hand, if I click on the \"Help\" button from the notebook, then click on \"Fast static versions of the Documentation\", then the I see pdf links but they don't work: I get messages like \"The resource /pdf/en/tutorial/SageTutorial.pdf cannot be found.\"\nThanks very much for catching this.  I think v2 covers both the static and offline docs.\n\nAside:  In the drive for internationalization, perhaps we should instead map `doc/common/output` to, e.g., `http://localhost:8000/doc/static` and serve `index.html` as `http://localhost:8000/doc/static/html/` + `LANG` + `/index.html`.\n\nCorrection:  That should be\n\n```\nconvert $SAGE_ROOT/local/share/moin/htdocs/applets/FCKeditor/editor/filemanager/browser/default/images/icons/pdf.gif $SAGE_ROOT/devel/sage/doc/en/website/static/pdf.png\n```\n",
     "created_at": "2009-07-22T23:19:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4460",
     "type": "issue_comment",
@@ -192,7 +192,7 @@ archive/issue_comments_032915.json:
 }
 ```
 
-Attachment
+Attachment [trac_4460-pdf_links_v2.patch](tarball://root/attachments/some-uuid/ticket4460/trac_4460-pdf_links_v2.patch) by mpatel created at 2009-07-22 23:19:41
 
 Replying to [comment:6 jhpalmieri]:
 > On the other hand, if I click on the "Help" button from the notebook, then click on "Fast static versions of the Documentation", then the I see pdf links but they don't work: I get messages like "The resource /pdf/en/tutorial/SageTutorial.pdf cannot be found."
@@ -312,7 +312,7 @@ Apply only this patch.
 archive/issue_comments_032921.json:
 ```json
 {
-    "body": "Attachment\n\nVersion 3 adds an option `--no-pdf-links` to the doc builder.  Try\n* `sage -docbuild website html --no-pdf-links -S -a`\n* `sage -docbuild website html -S -a`\nNote: `-S -a` forces a rewrite.\n\nSince #6187 awaits further inspection, I suggest that we keep waiting on this ticket.  Meanwhile, feel free to populate the website's empty sidebar.  Quick references?",
+    "body": "Attachment [trac_4460-pdf_links_v3.patch](tarball://root/attachments/some-uuid/ticket4460/trac_4460-pdf_links_v3.patch) by mpatel created at 2009-07-24 08:30:48\n\nVersion 3 adds an option `--no-pdf-links` to the doc builder.  Try\n* `sage -docbuild website html --no-pdf-links -S -a`\n* `sage -docbuild website html -S -a`\nNote: `-S -a` forces a rewrite.\n\nSince #6187 awaits further inspection, I suggest that we keep waiting on this ticket.  Meanwhile, feel free to populate the website's empty sidebar.  Quick references?",
     "created_at": "2009-07-24T08:30:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4460",
     "type": "issue_comment",
@@ -321,7 +321,7 @@ archive/issue_comments_032921.json:
 }
 ```
 
-Attachment
+Attachment [trac_4460-pdf_links_v3.patch](tarball://root/attachments/some-uuid/ticket4460/trac_4460-pdf_links_v3.patch) by mpatel created at 2009-07-24 08:30:48
 
 Version 3 adds an option `--no-pdf-links` to the doc builder.  Try
 * `sage -docbuild website html --no-pdf-links -S -a`
@@ -429,7 +429,7 @@ Changing status from closed to reopened.
 archive/issue_comments_032927.json:
 ```json
 {
-    "body": "Attachment\n\nI'm reopening this ticket since the patch `trac_4460-pdf_links_v2.patch` resulted in a corrupted repository in Sage 4.1.1.alpha1. The patch `trac_4460-manifest.patch` should resolve this issue of corrupt repo. So apply patches in this order:\n1. `trac_4460-pdf_links_v2.patch`\n2. `trac_4460-manifest.patch`\nOnly `trac_4460-manifest.patch` needs to be reviewed.\n\n\n\nmpatel: Can you please open another ticket for the patch `trac_4460-pdf_links_v3.patch` and upload that patch there?",
+    "body": "Attachment [trac_4460-manifest.patch](tarball://root/attachments/some-uuid/ticket4460/trac_4460-manifest.patch) by mvngu created at 2009-07-28 17:44:57\n\nI'm reopening this ticket since the patch `trac_4460-pdf_links_v2.patch` resulted in a corrupted repository in Sage 4.1.1.alpha1. The patch `trac_4460-manifest.patch` should resolve this issue of corrupt repo. So apply patches in this order:\n1. `trac_4460-pdf_links_v2.patch`\n2. `trac_4460-manifest.patch`\nOnly `trac_4460-manifest.patch` needs to be reviewed.\n\n\n\nmpatel: Can you please open another ticket for the patch `trac_4460-pdf_links_v3.patch` and upload that patch there?",
     "created_at": "2009-07-28T17:44:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4460",
     "type": "issue_comment",
@@ -438,7 +438,7 @@ archive/issue_comments_032927.json:
 }
 ```
 
-Attachment
+Attachment [trac_4460-manifest.patch](tarball://root/attachments/some-uuid/ticket4460/trac_4460-manifest.patch) by mvngu created at 2009-07-28 17:44:57
 
 I'm reopening this ticket since the patch `trac_4460-pdf_links_v2.patch` resulted in a corrupted repository in Sage 4.1.1.alpha1. The patch `trac_4460-manifest.patch` should resolve this issue of corrupt repo. So apply patches in this order:
 1. `trac_4460-pdf_links_v2.patch`

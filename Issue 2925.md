@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2925
 archive/issue_comments_020138.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [givaro-3.2.10.rc3-gcc-4.3-compile-fix.patch](tarball://root/attachments/some-uuid/ticket2925/givaro-3.2.10.rc3-gcc-4.3-compile-fix.patch) by mabshoff created at 2008-04-14 22:16:18",
     "created_at": "2008-04-14T22:16:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2925",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_020138.json:
 }
 ```
 
-Attachment
+Attachment [givaro-3.2.10.rc3-gcc-4.3-compile-fix.patch](tarball://root/attachments/some-uuid/ticket2925/givaro-3.2.10.rc3-gcc-4.3-compile-fix.patch) by mabshoff created at 2008-04-14 22:16:18
 
 
 

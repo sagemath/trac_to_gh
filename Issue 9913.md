@@ -459,7 +459,7 @@ Georg
 archive/issue_comments_098630.json:
 ```json
 {
-    "body": "Attachment\n\nI've added a rebased patch.\n\nApply trac_9914.patch\n\nAssuming tests pass, I'll give this a positive review.",
+    "body": "Attachment [trac_9914.patch](tarball://root/attachments/some-uuid/ticket9914/trac_9914.patch) by mhansen created at 2012-03-29 05:18:40\n\nI've added a rebased patch.\n\nApply trac_9914.patch\n\nAssuming tests pass, I'll give this a positive review.",
     "created_at": "2012-03-29T05:18:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9913",
     "type": "issue_comment",
@@ -468,7 +468,7 @@ archive/issue_comments_098630.json:
 }
 ```
 
-Attachment
+Attachment [trac_9914.patch](tarball://root/attachments/some-uuid/ticket9914/trac_9914.patch) by mhansen created at 2012-03-29 05:18:40
 
 I've added a rebased patch.
 

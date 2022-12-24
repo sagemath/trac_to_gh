@@ -57,7 +57,7 @@ Michael
 archive/issue_comments_047866.json:
 ```json
 {
-    "body": "Attachment\n\nIs this the right format?",
+    "body": "Attachment [12063.patch](tarball://root/attachments/some-uuid/ticket6016/12063.patch) by syazdani created at 2009-05-11 04:30:17\n\nIs this the right format?",
     "created_at": "2009-05-11T04:30:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6016",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_047866.json:
 }
 ```
 
-Attachment
+Attachment [12063.patch](tarball://root/attachments/some-uuid/ticket6016/12063.patch) by syazdani created at 2009-05-11 04:30:17
 
 Is this the right format?
 
@@ -117,7 +117,7 @@ based on sage-3.4.2
 archive/issue_comments_047869.json:
 ```json
 {
-    "body": "Attachment\n\nREFEREE REPORT\n\n\n\nThe patch `12063.patch` looks good. The new method `factor()` works over `ZZ`, `QQ`, `RR`, `CC`, and `GF`. There's only a trivial Sphinx formatting issue, which is fixed in the reviewer patch `trac_6016-reviewer.patch`.",
+    "body": "Attachment [trac_6016-reviewer.patch](tarball://root/attachments/some-uuid/ticket6016/trac_6016-reviewer.patch) by mvngu created at 2009-05-11 05:49:35\n\nREFEREE REPORT\n\n\n\nThe patch `12063.patch` looks good. The new method `factor()` works over `ZZ`, `QQ`, `RR`, `CC`, and `GF`. There's only a trivial Sphinx formatting issue, which is fixed in the reviewer patch `trac_6016-reviewer.patch`.",
     "created_at": "2009-05-11T05:49:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6016",
     "type": "issue_comment",
@@ -126,7 +126,7 @@ archive/issue_comments_047869.json:
 }
 ```
 
-Attachment
+Attachment [trac_6016-reviewer.patch](tarball://root/attachments/some-uuid/ticket6016/trac_6016-reviewer.patch) by mvngu created at 2009-05-11 05:49:35
 
 REFEREE REPORT
 

@@ -71,7 +71,7 @@ To be applied to the sage repository.
 archive/issue_comments_014334.json:
 ```json
 {
-    "body": "Attachment\n\nTo be applied to the sage-scripts repository (changes sage-env)",
+    "body": "Attachment [LD-LIBRARY-clobbered-SAGE-SCRIPTS.patch](tarball://root/attachments/some-uuid/ticket2182/LD-LIBRARY-clobbered-SAGE-SCRIPTS.patch) by jason created at 2008-02-17 03:11:15\n\nTo be applied to the sage-scripts repository (changes sage-env)",
     "created_at": "2008-02-17T03:11:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2182",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_014334.json:
 }
 ```
 
-Attachment
+Attachment [LD-LIBRARY-clobbered-SAGE-SCRIPTS.patch](tarball://root/attachments/some-uuid/ticket2182/LD-LIBRARY-clobbered-SAGE-SCRIPTS.patch) by jason created at 2008-02-17 03:11:15
 
 To be applied to the sage-scripts repository (changes sage-env)
 

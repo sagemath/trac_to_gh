@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5681
 archive/issue_comments_044432.json:
 ```json
 {
-    "body": "Attachment\n\n\n```\nYYY   YYY  EEEEEEEEE    SSSSSS   !!!  !!!\n YYY YYY   EEE         SSS  SSS  !!!  !!!\n  YYYYY    EEE        SSS        !!!  !!!\n   YYY     EEEEEEEEE   SSSSSSS   !!!  !!!\n   YYY     EEE              SSS  \n   YYY     EEE        SSS  SSS   !!!  !!!\n   YYY     EEEEEEEEE   SSSSSS    !!!  !!!\n```\n",
+    "body": "Attachment [trac_5681.patch](tarball://root/attachments/some-uuid/ticket5681/trac_5681.patch) by boothby created at 2009-04-04 16:22:48\n\n\n```\nYYY   YYY  EEEEEEEEE    SSSSSS   !!!  !!!\n YYY YYY   EEE         SSS  SSS  !!!  !!!\n  YYYYY    EEE        SSS        !!!  !!!\n   YYY     EEEEEEEEE   SSSSSSS   !!!  !!!\n   YYY     EEE              SSS  \n   YYY     EEE        SSS  SSS   !!!  !!!\n   YYY     EEEEEEEEE   SSSSSS    !!!  !!!\n```\n",
     "created_at": "2009-04-04T16:22:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5681",
     "type": "issue_comment",
@@ -41,7 +41,7 @@ archive/issue_comments_044432.json:
 }
 ```
 
-Attachment
+Attachment [trac_5681.patch](tarball://root/attachments/some-uuid/ticket5681/trac_5681.patch) by boothby created at 2009-04-04 16:22:48
 
 
 ```

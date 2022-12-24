@@ -54,7 +54,7 @@ Michael
 archive/issue_comments_019563.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-2851.patch](tarball://root/attachments/some-uuid/ticket2851/sage-2851.patch) by was created at 2008-04-15 00:44:16",
     "created_at": "2008-04-15T00:44:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2851",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_019563.json:
 }
 ```
 
-Attachment
+Attachment [sage-2851.patch](tarball://root/attachments/some-uuid/ticket2851/sage-2851.patch) by was created at 2008-04-15 00:44:16
 
 
 
@@ -209,7 +209,7 @@ Changing status from closed to reopened.
 archive/issue_comments_019570.json:
 ```json
 {
-    "body": "Attachment\n\nnew patch (we want both) -- this to the SCRIPTS repo.",
+    "body": "Attachment [scripts-2851.patch](tarball://root/attachments/some-uuid/ticket2851/scripts-2851.patch) by was created at 2008-04-15 17:19:41\n\nnew patch (we want both) -- this to the SCRIPTS repo.",
     "created_at": "2008-04-15T17:19:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2851",
     "type": "issue_comment",
@@ -218,7 +218,7 @@ archive/issue_comments_019570.json:
 }
 ```
 
-Attachment
+Attachment [scripts-2851.patch](tarball://root/attachments/some-uuid/ticket2851/scripts-2851.patch) by was created at 2008-04-15 17:19:41
 
 new patch (we want both) -- this to the SCRIPTS repo.
 

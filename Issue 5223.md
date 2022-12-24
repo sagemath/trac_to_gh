@@ -55,7 +55,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5223
 archive/issue_comments_040028.json:
 ```json
 {
-    "body": "Attachment\n\nPatch looks good. Fixes obvious mistake on my part. :)",
+    "body": "Attachment [trac_5223.patch](tarball://root/attachments/some-uuid/ticket5223/trac_5223.patch) by burcin created at 2009-02-09 20:18:21\n\nPatch looks good. Fixes obvious mistake on my part. :)",
     "created_at": "2009-02-09T20:18:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5223",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_040028.json:
 }
 ```
 
-Attachment
+Attachment [trac_5223.patch](tarball://root/attachments/some-uuid/ticket5223/trac_5223.patch) by burcin created at 2009-02-09 20:18:21
 
 Patch looks good. Fixes obvious mistake on my part. :)
 
@@ -154,7 +154,7 @@ Michael
 archive/issue_comments_040031.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5223.take2.patch](tarball://root/attachments/some-uuid/ticket5223/trac_5223.take2.patch) by burcin created at 2009-03-15 13:38:45",
     "created_at": "2009-03-15T13:38:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5223",
     "type": "issue_comment",
@@ -163,7 +163,7 @@ archive/issue_comments_040031.json:
 }
 ```
 
-Attachment
+Attachment [trac_5223.take2.patch](tarball://root/attachments/some-uuid/ticket5223/trac_5223.take2.patch) by burcin created at 2009-03-15 13:38:45
 
 
 

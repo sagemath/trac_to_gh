@@ -92,7 +92,7 @@ Changing status from new to assigned.
 archive/issue_comments_034983.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch covers #4645 as well as this ticket #4647. I did the minimally invasive version to make reenabling the caching code as simple as possible.\n\nOnce this patch is applied it survives:\n\n* a sage -b after deleting the Cython cache file\n* a sage -ba\n* a sage -b after applying the patch from #4206 - which caused us to disabled the caching for now.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_4645_4647.patch](tarball://root/attachments/some-uuid/ticket4647/trac_4645_4647.patch) by mabshoff created at 2008-11-29 06:29:04\n\nThis patch covers #4645 as well as this ticket #4647. I did the minimally invasive version to make reenabling the caching code as simple as possible.\n\nOnce this patch is applied it survives:\n\n* a sage -b after deleting the Cython cache file\n* a sage -ba\n* a sage -b after applying the patch from #4206 - which caused us to disabled the caching for now.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-29T06:29:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4647",
     "type": "issue_comment",
@@ -101,7 +101,7 @@ archive/issue_comments_034983.json:
 }
 ```
 
-Attachment
+Attachment [trac_4645_4647.patch](tarball://root/attachments/some-uuid/ticket4647/trac_4645_4647.patch) by mabshoff created at 2008-11-29 06:29:04
 
 This patch covers #4645 as well as this ticket #4647. I did the minimally invasive version to make reenabling the caching code as simple as possible.
 
@@ -187,7 +187,7 @@ Michael
 archive/issue_comments_034987.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-4647-pt2.patch](tarball://root/attachments/some-uuid/ticket4647/trac-4647-pt2.patch) by craigcitro created at 2008-11-29 07:41:15",
     "created_at": "2008-11-29T07:41:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4647",
     "type": "issue_comment",
@@ -196,7 +196,7 @@ archive/issue_comments_034987.json:
 }
 ```
 
-Attachment
+Attachment [trac-4647-pt2.patch](tarball://root/attachments/some-uuid/ticket4647/trac-4647-pt2.patch) by craigcitro created at 2008-11-29 07:41:15
 
 
 

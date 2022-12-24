@@ -158,7 +158,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_076593.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch is OK by me. The remaining three warnings can be dealt with in another ticket.",
+    "body": "Attachment [trac_8492-ref.patch](tarball://root/attachments/some-uuid/ticket8492/trac_8492-ref.patch) by mvngu created at 2010-03-11 00:43:11\n\nThe patch is OK by me. The remaining three warnings can be dealt with in another ticket.",
     "created_at": "2010-03-11T00:43:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8492",
     "type": "issue_comment",
@@ -167,7 +167,7 @@ archive/issue_comments_076593.json:
 }
 ```
 
-Attachment
+Attachment [trac_8492-ref.patch](tarball://root/attachments/some-uuid/ticket8492/trac_8492-ref.patch) by mvngu created at 2010-03-11 00:43:11
 
 The patch is OK by me. The remaining three warnings can be dealt with in another ticket.
 

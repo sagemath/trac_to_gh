@@ -51,7 +51,7 @@ Changing status from new to assigned.
 archive/issue_comments_030815.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-4240.patch](tarball://root/attachments/some-uuid/ticket4240/trac-4240.patch) by was created at 2008-10-04 05:43:52",
     "created_at": "2008-10-04T05:43:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4240",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_030815.json:
 }
 ```
 
-Attachment
+Attachment [trac-4240.patch](tarball://root/attachments/some-uuid/ticket4240/trac-4240.patch) by was created at 2008-10-04 05:43:52
 
 
 
@@ -87,7 +87,7 @@ coverage up to 69% -- all non underscore methods are now documented.
 archive/issue_comments_030817.json:
 ```json
 {
-    "body": "Attachment\n\ninsert all needed # optional's",
+    "body": "Attachment [trac-4240-part2.patch](tarball://root/attachments/some-uuid/ticket4240/trac-4240-part2.patch) by was created at 2008-10-11 15:38:29\n\ninsert all needed # optional's",
     "created_at": "2008-10-11T15:38:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4240",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_030817.json:
 }
 ```
 
-Attachment
+Attachment [trac-4240-part2.patch](tarball://root/attachments/some-uuid/ticket4240/trac-4240-part2.patch) by was created at 2008-10-11 15:38:29
 
 insert all needed # optional's
 
@@ -107,7 +107,7 @@ insert all needed # optional's
 archive/issue_comments_030818.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-4240-part3.patch](tarball://root/attachments/some-uuid/ticket4240/trac-4240-part3.patch) by was created at 2008-10-11 15:39:22",
     "created_at": "2008-10-11T15:39:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4240",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_030818.json:
 }
 ```
 
-Attachment
+Attachment [trac-4240-part3.patch](tarball://root/attachments/some-uuid/ticket4240/trac-4240-part3.patch) by was created at 2008-10-11 15:39:22
 
 
 

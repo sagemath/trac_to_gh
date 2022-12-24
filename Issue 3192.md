@@ -53,7 +53,7 @@ Changing status from new to assigned.
 archive/issue_comments_022074.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [python_gnutls-1.1.4.p2-spkg-install-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3192/python_gnutls-1.1.4.p2-spkg-install-64bit-osx.patch) by mabshoff created at 2008-05-19 05:00:24",
     "created_at": "2008-05-19T05:00:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3192",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_022074.json:
 }
 ```
 
-Attachment
+Attachment [python_gnutls-1.1.4.p2-spkg-install-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3192/python_gnutls-1.1.4.p2-spkg-install-64bit-osx.patch) by mabshoff created at 2008-05-19 05:00:24
 
 
 

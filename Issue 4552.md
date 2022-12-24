@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4552
 archive/issue_comments_034120.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-4552.patch](tarball://root/attachments/some-uuid/ticket4552/sage-4552.patch) by TimothyClemans created at 2008-11-19 18:11:32",
     "created_at": "2008-11-19T18:11:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4552",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_034120.json:
 }
 ```
 
-Attachment
+Attachment [sage-4552.patch](tarball://root/attachments/some-uuid/ticket4552/sage-4552.patch) by TimothyClemans created at 2008-11-19 18:11:32
 
 
 
@@ -87,7 +87,7 @@ If the email config is set to True then registration doesn't work.
 archive/issue_comments_034123.json:
 ```json
 {
-    "body": "Attachment\n\nmodified patch without dependency on #4551",
+    "body": "Attachment [trac_4552-notebook_account_email.patch](tarball://root/attachments/some-uuid/ticket4552/trac_4552-notebook_account_email.patch) by wjp created at 2009-09-01 18:40:58\n\nmodified patch without dependency on #4551",
     "created_at": "2009-09-01T18:40:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4552",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_034123.json:
 }
 ```
 
-Attachment
+Attachment [trac_4552-notebook_account_email.patch](tarball://root/attachments/some-uuid/ticket4552/trac_4552-notebook_account_email.patch) by wjp created at 2009-09-01 18:40:58
 
 modified patch without dependency on #4551
 

@@ -47,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2699
 archive/issue_comments_018616.json:
 ```json
 {
-    "body": "Attachment\n\ninstall.log of failed scipy build",
+    "body": "Attachment [install.log.tar.tar.bz2](tarball://root/attachments/some-uuid/ticket2699/install.log.tar.tar.bz2) by schilly created at 2008-03-28 14:10:02\n\ninstall.log of failed scipy build",
     "created_at": "2008-03-28T14:10:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2699",
     "type": "issue_comment",
@@ -56,7 +56,7 @@ archive/issue_comments_018616.json:
 }
 ```
 
-Attachment
+Attachment [install.log.tar.tar.bz2](tarball://root/attachments/some-uuid/ticket2699/install.log.tar.tar.bz2) by schilly created at 2008-03-28 14:10:02
 
 install.log of failed scipy build
 

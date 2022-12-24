@@ -81,7 +81,7 @@ What I am suggesting is just that the documentation be changed to reflect the ne
 archive/issue_comments_057888.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-7002-autoevaluate.patch](tarball://root/attachments/some-uuid/ticket7002/trac-7002-autoevaluate.patch) by jason created at 2009-09-23 16:32:25",
     "created_at": "2009-09-23T16:32:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7002",
     "type": "issue_comment",
@@ -90,7 +90,7 @@ archive/issue_comments_057888.json:
 }
 ```
 
-Attachment
+Attachment [trac-7002-autoevaluate.patch](tarball://root/attachments/some-uuid/ticket7002/trac-7002-autoevaluate.patch) by jason created at 2009-09-23 16:32:25
 
 
 
@@ -162,7 +162,7 @@ Based on 4.1.2.alpha2
 archive/issue_comments_057892.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review, since I just tested that %auto still works (as well as #auto); apply rebase patch only.",
+    "body": "Attachment [trac-7002-autoevaluate-rebase.patch](tarball://root/attachments/some-uuid/ticket7002/trac-7002-autoevaluate-rebase.patch) by kcrisman created at 2009-09-23 17:49:23\n\nPositive review, since I just tested that %auto still works (as well as #auto); apply rebase patch only.",
     "created_at": "2009-09-23T17:49:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7002",
     "type": "issue_comment",
@@ -171,7 +171,7 @@ archive/issue_comments_057892.json:
 }
 ```
 
-Attachment
+Attachment [trac-7002-autoevaluate-rebase.patch](tarball://root/attachments/some-uuid/ticket7002/trac-7002-autoevaluate-rebase.patch) by kcrisman created at 2009-09-23 17:49:23
 
 Positive review, since I just tested that %auto still works (as well as #auto); apply rebase patch only.
 
@@ -254,7 +254,7 @@ I just checked the help in 4.6.2 and it appears that these changes do *not* appe
 archive/issue_comments_057897.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [7002_rebase_4.7.patch](tarball://root/attachments/some-uuid/ticket7002/7002_rebase_4.7.patch) by jdemeyer created at 2011-05-31 08:50:16",
     "created_at": "2011-05-31T08:50:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7002",
     "type": "issue_comment",
@@ -263,7 +263,7 @@ archive/issue_comments_057897.json:
 }
 ```
 
-Attachment
+Attachment [7002_rebase_4.7.patch](tarball://root/attachments/some-uuid/ticket7002/7002_rebase_4.7.patch) by jdemeyer created at 2011-05-31 08:50:16
 
 
 

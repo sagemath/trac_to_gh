@@ -121,7 +121,7 @@ Changing status from new to needs_review.
 archive/issue_comments_058169.json:
 ```json
 {
-    "body": "Attachment\n\nfor review purposes",
+    "body": "Attachment [flint-1.5.0.p11.patch](tarball://root/attachments/some-uuid/ticket7024/flint-1.5.0.p11.patch) by ohanar created at 2012-02-09 14:38:31\n\nfor review purposes",
     "created_at": "2012-02-09T14:38:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7024",
     "type": "issue_comment",
@@ -130,7 +130,7 @@ archive/issue_comments_058169.json:
 }
 ```
 
-Attachment
+Attachment [flint-1.5.0.p11.patch](tarball://root/attachments/some-uuid/ticket7024/flint-1.5.0.p11.patch) by ohanar created at 2012-02-09 14:38:31
 
 for review purposes
 

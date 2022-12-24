@@ -168,7 +168,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_047008.json:
 ```json
 {
-    "body": "Attachment\n\nI decided to move `flint_factor` to `fast_arith.pyx`, so it can be used for `int`, too.\nTo check the improvements use attachment:5945_check_improvements.patch, attachment:5945_check_improvements.sage and\n\n```\n(line(values_p)+line(values_f,color='red')).plot()\n(line(values_med_p)+line(values_med_f,color='red')).plot()\n```\n",
+    "body": "Attachment [5945_check_improvements.sage](tarball://root/attachments/some-uuid/ticket5945/5945_check_improvements.sage) by aapitzsch created at 2010-11-08 09:29:12\n\nI decided to move `flint_factor` to `fast_arith.pyx`, so it can be used for `int`, too.\nTo check the improvements use attachment:5945_check_improvements.patch, attachment:5945_check_improvements.sage and\n\n```\n(line(values_p)+line(values_f,color='red')).plot()\n(line(values_med_p)+line(values_med_f,color='red')).plot()\n```\n",
     "created_at": "2010-11-08T09:29:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5945",
     "type": "issue_comment",
@@ -177,7 +177,7 @@ archive/issue_comments_047008.json:
 }
 ```
 
-Attachment
+Attachment [5945_check_improvements.sage](tarball://root/attachments/some-uuid/ticket5945/5945_check_improvements.sage) by aapitzsch created at 2010-11-08 09:29:12
 
 I decided to move `flint_factor` to `fast_arith.pyx`, so it can be used for `int`, too.
 To check the improvements use attachment:5945_check_improvements.patch, attachment:5945_check_improvements.sage and
@@ -195,7 +195,7 @@ To check the improvements use attachment:5945_check_improvements.patch, attachme
 archive/issue_comments_047009.json:
 ```json
 {
-    "body": "Attachment\n\napply only this patch; apply after #10211",
+    "body": "Attachment [trac_5945_flintfactor.patch](tarball://root/attachments/some-uuid/ticket5945/trac_5945_flintfactor.patch) by aapitzsch created at 2010-11-10 10:07:42\n\napply only this patch; apply after #10211",
     "created_at": "2010-11-10T10:07:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5945",
     "type": "issue_comment",
@@ -204,7 +204,7 @@ archive/issue_comments_047009.json:
 }
 ```
 
-Attachment
+Attachment [trac_5945_flintfactor.patch](tarball://root/attachments/some-uuid/ticket5945/trac_5945_flintfactor.patch) by aapitzsch created at 2010-11-10 10:07:42
 
 apply only this patch; apply after #10211
 
@@ -215,7 +215,7 @@ apply only this patch; apply after #10211
 archive/issue_comments_047010.json:
 ```json
 {
-    "body": "Attachment\n\nonly to check improvements, not for release",
+    "body": "Attachment [5945_check_improvements.patch](tarball://root/attachments/some-uuid/ticket5945/5945_check_improvements.patch) by aapitzsch created at 2010-11-10 10:08:15\n\nonly to check improvements, not for release",
     "created_at": "2010-11-10T10:08:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5945",
     "type": "issue_comment",
@@ -224,7 +224,7 @@ archive/issue_comments_047010.json:
 }
 ```
 
-Attachment
+Attachment [5945_check_improvements.patch](tarball://root/attachments/some-uuid/ticket5945/5945_check_improvements.patch) by aapitzsch created at 2010-11-10 10:08:15
 
 only to check improvements, not for release
 
@@ -306,7 +306,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_047014.json:
 ```json
 {
-    "body": "Attachment\n\nThanks for doing this!\n\nLooking at the source code, the line ``flint_bits = int(FLINT_BITS)`` seems wrong.  You can (and should, I think) simply use FLINT_BITS directly.  Of course, this comment is rather minor.\n\nSebastian",
+    "body": "Attachment [trac_5945_factor_flint.patch](tarball://root/attachments/some-uuid/ticket5945/trac_5945_factor_flint.patch) by spancratz created at 2011-01-08 06:49:32\n\nThanks for doing this!\n\nLooking at the source code, the line ``flint_bits = int(FLINT_BITS)`` seems wrong.  You can (and should, I think) simply use FLINT_BITS directly.  Of course, this comment is rather minor.\n\nSebastian",
     "created_at": "2011-01-08T06:49:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5945",
     "type": "issue_comment",
@@ -315,7 +315,7 @@ archive/issue_comments_047014.json:
 }
 ```
 
-Attachment
+Attachment [trac_5945_factor_flint.patch](tarball://root/attachments/some-uuid/ticket5945/trac_5945_factor_flint.patch) by spancratz created at 2011-01-08 06:49:32
 
 Thanks for doing this!
 
@@ -588,7 +588,7 @@ Sebastian
 archive/issue_comments_047025.json:
 ```json
 {
-    "body": "Attachment\n\nI'm sorry for adding the duplicate file ``trac_5945.2.patch``, this can be deleted from here.  The other file ``trac_5945.patch`` should now apply cleanly to 4.6.1.rc0 and pass all tests.\n\nSebastian",
+    "body": "Attachment [trac_5945.2.patch](tarball://root/attachments/some-uuid/ticket5945/trac_5945.2.patch) by spancratz created at 2011-01-12 04:15:17\n\nI'm sorry for adding the duplicate file ``trac_5945.2.patch``, this can be deleted from here.  The other file ``trac_5945.patch`` should now apply cleanly to 4.6.1.rc0 and pass all tests.\n\nSebastian",
     "created_at": "2011-01-12T04:15:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5945",
     "type": "issue_comment",
@@ -597,7 +597,7 @@ archive/issue_comments_047025.json:
 }
 ```
 
-Attachment
+Attachment [trac_5945.2.patch](tarball://root/attachments/some-uuid/ticket5945/trac_5945.2.patch) by spancratz created at 2011-01-12 04:15:17
 
 I'm sorry for adding the duplicate file ``trac_5945.2.patch``, this can be deleted from here.  The other file ``trac_5945.patch`` should now apply cleanly to 4.6.1.rc0 and pass all tests.
 
@@ -651,7 +651,7 @@ Can you also fix #10602 for Integer.factor(). I only mention this because it's f
 archive/issue_comments_047028.json:
 ```json
 {
-    "body": "Attachment\n\nVersion for 4.6.0",
+    "body": "Attachment [trac_5945.patch](tarball://root/attachments/some-uuid/ticket5945/trac_5945.patch) by spancratz created at 2011-01-12 19:25:10\n\nVersion for 4.6.0",
     "created_at": "2011-01-12T19:25:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5945",
     "type": "issue_comment",
@@ -660,7 +660,7 @@ archive/issue_comments_047028.json:
 }
 ```
 
-Attachment
+Attachment [trac_5945.patch](tarball://root/attachments/some-uuid/ticket5945/trac_5945.patch) by spancratz created at 2011-01-12 19:25:10
 
 Version for 4.6.0
 
@@ -671,7 +671,7 @@ Version for 4.6.0
 archive/issue_comments_047029.json:
 ```json
 {
-    "body": "Attachment\n\nVersion for 4.6.1.rc0",
+    "body": "Attachment [trac_5945-461rc0.patch](tarball://root/attachments/some-uuid/ticket5945/trac_5945-461rc0.patch) by spancratz created at 2011-01-12 19:57:28\n\nVersion for 4.6.1.rc0",
     "created_at": "2011-01-12T19:57:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5945",
     "type": "issue_comment",
@@ -680,7 +680,7 @@ archive/issue_comments_047029.json:
 }
 ```
 
-Attachment
+Attachment [trac_5945-461rc0.patch](tarball://root/attachments/some-uuid/ticket5945/trac_5945-461rc0.patch) by spancratz created at 2011-01-12 19:57:28
 
 Version for 4.6.1.rc0
 
@@ -709,7 +709,7 @@ Fix for a remaining doctest failure in sageinspect.py
 archive/issue_comments_047031.json:
 ```json
 {
-    "body": "Attachment\n\nHi Andre,\n\nI'm sorry for the earlier patch not including the IntegerFactorization class, I don't know how that happened.  Now, there are three things to do:\n\n- Apply #10211\n- Apply either trac_5945.patch or trac_5945-461rc0.patch, depending on the Sage version\n- Apply trac_5945_fix.patch\n\nTom, could you perhaps clean up this ticket and remove all other files that I or we added?\n\nSebastian",
+    "body": "Attachment [trac_5945_fix.patch](tarball://root/attachments/some-uuid/ticket5945/trac_5945_fix.patch) by spancratz created at 2011-01-12 20:24:35\n\nHi Andre,\n\nI'm sorry for the earlier patch not including the IntegerFactorization class, I don't know how that happened.  Now, there are three things to do:\n\n- Apply #10211\n- Apply either trac_5945.patch or trac_5945-461rc0.patch, depending on the Sage version\n- Apply trac_5945_fix.patch\n\nTom, could you perhaps clean up this ticket and remove all other files that I or we added?\n\nSebastian",
     "created_at": "2011-01-12T20:24:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5945",
     "type": "issue_comment",
@@ -718,7 +718,7 @@ archive/issue_comments_047031.json:
 }
 ```
 
-Attachment
+Attachment [trac_5945_fix.patch](tarball://root/attachments/some-uuid/ticket5945/trac_5945_fix.patch) by spancratz created at 2011-01-12 20:24:35
 
 Hi Andre,
 
@@ -757,7 +757,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_047033.json:
 ```json
 {
-    "body": "Attachment\n\nApply trac_5945_reviewer.patch after trac_5945_fix.patch\n\nVersion rc0 reviewed.\n\nAttached trac_5945_reviewer.patch handles doctest failure in *factorization.py*. I only changed the expected result but actually it should be a new test with old result.\n\n*sage/libs/flint/long_extras.pxd* contained `ctypedef struct factor_t:`... twice so I removed one.\n\nEverything else is okay.",
+    "body": "Attachment [trac_5945_reviewer.patch](tarball://root/attachments/some-uuid/ticket5945/trac_5945_reviewer.patch) by aapitzsch created at 2011-01-13 11:13:46\n\nApply trac_5945_reviewer.patch after trac_5945_fix.patch\n\nVersion rc0 reviewed.\n\nAttached trac_5945_reviewer.patch handles doctest failure in *factorization.py*. I only changed the expected result but actually it should be a new test with old result.\n\n*sage/libs/flint/long_extras.pxd* contained `ctypedef struct factor_t:`... twice so I removed one.\n\nEverything else is okay.",
     "created_at": "2011-01-13T11:13:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5945",
     "type": "issue_comment",
@@ -766,7 +766,7 @@ archive/issue_comments_047033.json:
 }
 ```
 
-Attachment
+Attachment [trac_5945_reviewer.patch](tarball://root/attachments/some-uuid/ticket5945/trac_5945_reviewer.patch) by aapitzsch created at 2011-01-13 11:13:46
 
 Apply trac_5945_reviewer.patch after trac_5945_fix.patch
 
@@ -807,7 +807,7 @@ Sebastian
 archive/issue_comments_047035.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5945-462a0.patch](tarball://root/attachments/some-uuid/ticket5945/trac_5945-462a0.patch) by aapitzsch created at 2011-01-17 13:09:57",
     "created_at": "2011-01-17T13:09:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5945",
     "type": "issue_comment",
@@ -816,7 +816,7 @@ archive/issue_comments_047035.json:
 }
 ```
 
-Attachment
+Attachment [trac_5945-462a0.patch](tarball://root/attachments/some-uuid/ticket5945/trac_5945-462a0.patch) by aapitzsch created at 2011-01-17 13:09:57
 
 
 
@@ -888,7 +888,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_047039.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5945_doc_fix.patch](tarball://root/attachments/some-uuid/ticket5945/trac_5945_doc_fix.patch) by aapitzsch created at 2011-01-18 09:27:49",
     "created_at": "2011-01-18T09:27:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5945",
     "type": "issue_comment",
@@ -897,7 +897,7 @@ archive/issue_comments_047039.json:
 }
 ```
 
-Attachment
+Attachment [trac_5945_doc_fix.patch](tarball://root/attachments/some-uuid/ticket5945/trac_5945_doc_fix.patch) by aapitzsch created at 2011-01-18 09:27:49
 
 
 

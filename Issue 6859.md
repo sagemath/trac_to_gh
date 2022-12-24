@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6859
 archive/issue_comments_056559.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6859.patch](tarball://root/attachments/some-uuid/ticket6859/trac_6859.patch) by myurko created at 2009-09-02 01:42:57",
     "created_at": "2009-09-02T01:42:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6859",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_056559.json:
 }
 ```
 
-Attachment
+Attachment [trac_6859.patch](tarball://root/attachments/some-uuid/ticket6859/trac_6859.patch) by myurko created at 2009-09-02 01:42:57
 
 
 
@@ -129,7 +129,7 @@ Well, I knew that you can use Latex in docstrings, but I tried not to use it sin
 archive/issue_comments_056564.json:
 ```json
 {
-    "body": "Attachment\n\nAdds definitions of graphs to docstrings",
+    "body": "Attachment [trac_6859_definitions.patch](tarball://root/attachments/some-uuid/ticket6859/trac_6859_definitions.patch) by myurko created at 2009-09-06 15:20:29\n\nAdds definitions of graphs to docstrings",
     "created_at": "2009-09-06T15:20:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6859",
     "type": "issue_comment",
@@ -138,7 +138,7 @@ archive/issue_comments_056564.json:
 }
 ```
 
-Attachment
+Attachment [trac_6859_definitions.patch](tarball://root/attachments/some-uuid/ticket6859/trac_6859_definitions.patch) by myurko created at 2009-09-06 15:20:29
 
 Adds definitions of graphs to docstrings
 
@@ -169,7 +169,7 @@ I'm attaching a patch which optimizes some of the code to use more python things
 archive/issue_comments_056566.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of previous patches",
+    "body": "Attachment [trac-6859-optimize.patch](tarball://root/attachments/some-uuid/ticket6859/trac-6859-optimize.patch) by jason created at 2009-09-22 16:46:11\n\napply on top of previous patches",
     "created_at": "2009-09-22T16:46:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6859",
     "type": "issue_comment",
@@ -178,7 +178,7 @@ archive/issue_comments_056566.json:
 }
 ```
 
-Attachment
+Attachment [trac-6859-optimize.patch](tarball://root/attachments/some-uuid/ticket6859/trac-6859-optimize.patch) by jason created at 2009-09-22 16:46:11
 
 apply on top of previous patches
 
@@ -245,7 +245,7 @@ All the graphs except the n,k star graph worked still. However, it was just a on
 archive/issue_comments_056570.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-6859-optimize-fix.patch](tarball://root/attachments/some-uuid/ticket6859/trac-6859-optimize-fix.patch) by myurko created at 2009-09-22 21:38:05",
     "created_at": "2009-09-22T21:38:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6859",
     "type": "issue_comment",
@@ -254,7 +254,7 @@ archive/issue_comments_056570.json:
 }
 ```
 
-Attachment
+Attachment [trac-6859-optimize-fix.patch](tarball://root/attachments/some-uuid/ticket6859/trac-6859-optimize-fix.patch) by myurko created at 2009-09-22 21:38:05
 
 
 
@@ -324,7 +324,7 @@ use ASCII characters for quotation marks and long dashes
 archive/issue_comments_056574.json:
 ```json
 {
-    "body": "Attachment\n\nproper formatting of lists",
+    "body": "Attachment [trac_6859-formatting-issues.patch](tarball://root/attachments/some-uuid/ticket6859/trac_6859-formatting-issues.patch) by mvngu created at 2009-09-24 10:24:47\n\nproper formatting of lists",
     "created_at": "2009-09-24T10:24:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6859",
     "type": "issue_comment",
@@ -333,7 +333,7 @@ archive/issue_comments_056574.json:
 }
 ```
 
-Attachment
+Attachment [trac_6859-formatting-issues.patch](tarball://root/attachments/some-uuid/ticket6859/trac_6859-formatting-issues.patch) by mvngu created at 2009-09-24 10:24:47
 
 proper formatting of lists
 

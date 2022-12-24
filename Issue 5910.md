@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5910
 archive/issue_comments_046703.json:
 ```json
 {
-    "body": "Attachment\n\nRestore the method simplify() and its doctests",
+    "body": "Attachment [trac_5910-doctest-simplify.patch](tarball://root/attachments/some-uuid/ticket5910/trac_5910-doctest-simplify.patch) by mvngu created at 2009-04-27 13:20:57\n\nRestore the method simplify() and its doctests",
     "created_at": "2009-04-27T13:20:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5910",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_046703.json:
 }
 ```
 
-Attachment
+Attachment [trac_5910-doctest-simplify.patch](tarball://root/attachments/some-uuid/ticket5910/trac_5910-doctest-simplify.patch) by mvngu created at 2009-04-27 13:20:57
 
 Restore the method simplify() and its doctests
 
@@ -93,7 +93,7 @@ with Unix newline
 archive/issue_comments_046706.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5910-boolopt.patch](tarball://root/attachments/some-uuid/ticket5910/trac_5910-boolopt.patch) by AlexGhitza created at 2010-01-02 03:18:33",
     "created_at": "2010-01-02T03:18:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5910",
     "type": "issue_comment",
@@ -102,7 +102,7 @@ archive/issue_comments_046706.json:
 }
 ```
 
-Attachment
+Attachment [trac_5910-boolopt.patch](tarball://root/attachments/some-uuid/ticket5910/trac_5910-boolopt.patch) by AlexGhitza created at 2010-01-02 03:18:33
 
 
 

@@ -84,7 +84,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3028
 archive/issue_comments_020823.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [idcomp.changeset](tarball://root/attachments/some-uuid/ticket3028/idcomp.changeset) by broune created at 2008-05-07 22:15:59",
     "created_at": "2008-05-07T22:15:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3028",
     "type": "issue_comment",
@@ -93,7 +93,7 @@ archive/issue_comments_020823.json:
 }
 ```
 
-Attachment
+Attachment [idcomp.changeset](tarball://root/attachments/some-uuid/ticket3028/idcomp.changeset) by broune created at 2008-05-07 22:15:59
 
 
 

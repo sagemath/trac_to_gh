@@ -36,7 +36,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2746
 archive/issue_comments_018870.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [doctest-typo.patch](tarball://root/attachments/some-uuid/ticket2746/doctest-typo.patch) by tabbott created at 2008-04-01 01:49:21",
     "created_at": "2008-04-01T01:49:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2746",
     "type": "issue_comment",
@@ -45,7 +45,7 @@ archive/issue_comments_018870.json:
 }
 ```
 
-Attachment
+Attachment [doctest-typo.patch](tarball://root/attachments/some-uuid/ticket2746/doctest-typo.patch) by tabbott created at 2008-04-01 01:49:21
 
 
 
@@ -76,7 +76,7 @@ Michael
 archive/issue_comments_018872.json:
 ```json
 {
-    "body": "Attachment\n\ncheck if SAGE_TEST is not empty",
+    "body": "Attachment [trac_2746-referee.patch](tarball://root/attachments/some-uuid/ticket2746/trac_2746-referee.patch) by mabshoff created at 2008-04-03 10:32:30\n\ncheck if SAGE_TEST is not empty",
     "created_at": "2008-04-03T10:32:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2746",
     "type": "issue_comment",
@@ -85,7 +85,7 @@ archive/issue_comments_018872.json:
 }
 ```
 
-Attachment
+Attachment [trac_2746-referee.patch](tarball://root/attachments/some-uuid/ticket2746/trac_2746-referee.patch) by mabshoff created at 2008-04-03 10:32:30
 
 check if SAGE_TEST is not empty
 

@@ -65,7 +65,7 @@ Updates sage-spkg to ask the user to try installing the latest version of a pack
 archive/issue_comments_008033.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch should do the job.",
+    "body": "Attachment [trac_1281-update-compilation-failure.patch](tarball://root/attachments/some-uuid/ticket1281/trac_1281-update-compilation-failure.patch) by timdumol created at 2010-01-16 07:59:54\n\nThis patch should do the job.",
     "created_at": "2010-01-16T07:59:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1281",
     "type": "issue_comment",
@@ -74,7 +74,7 @@ archive/issue_comments_008033.json:
 }
 ```
 
-Attachment
+Attachment [trac_1281-update-compilation-failure.patch](tarball://root/attachments/some-uuid/ticket1281/trac_1281-update-compilation-failure.patch) by timdumol created at 2010-01-16 07:59:54
 
 This patch should do the job.
 

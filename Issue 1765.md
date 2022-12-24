@@ -59,7 +59,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1765
 archive/issue_comments_011144.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1765.patch](tarball://root/attachments/some-uuid/ticket1765/1765.patch) by dfdeshom created at 2008-03-04 03:19:13",
     "created_at": "2008-03-04T03:19:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1765",
     "type": "issue_comment",
@@ -68,7 +68,7 @@ archive/issue_comments_011144.json:
 }
 ```
 
-Attachment
+Attachment [1765.patch](tarball://root/attachments/some-uuid/ticket1765/1765.patch) by dfdeshom created at 2008-03-04 03:19:13
 
 
 
@@ -104,7 +104,7 @@ this still throws a ValueError.
 archive/issue_comments_011146.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1765.hg](tarball://root/attachments/some-uuid/ticket1765/1765.hg) by dfdeshom created at 2008-03-13 15:03:58",
     "created_at": "2008-03-13T15:03:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1765",
     "type": "issue_comment",
@@ -113,7 +113,7 @@ archive/issue_comments_011146.json:
 }
 ```
 
-Attachment
+Attachment [1765.hg](tarball://root/attachments/some-uuid/ticket1765/1765.hg) by dfdeshom created at 2008-03-13 15:03:58
 
 
 
@@ -140,7 +140,7 @@ Should be corrected now so ` solve(sys, [s, i]) ` should now work. The correct c
 archive/issue_comments_011148.json:
 ```json
 {
-    "body": "Attachment\n\nuse instead of the above",
+    "body": "Attachment [1765_new.patch](tarball://root/attachments/some-uuid/ticket1765/1765_new.patch) by AlexGhitza created at 2008-03-15 17:41:33\n\nuse instead of the above",
     "created_at": "2008-03-15T17:41:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1765",
     "type": "issue_comment",
@@ -149,7 +149,7 @@ archive/issue_comments_011148.json:
 }
 ```
 
-Attachment
+Attachment [1765_new.patch](tarball://root/attachments/some-uuid/ticket1765/1765_new.patch) by AlexGhitza created at 2008-03-15 17:41:33
 
 use instead of the above
 

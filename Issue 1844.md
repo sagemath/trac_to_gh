@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1844
 archive/issue_comments_011673.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [modform-doctest.hg](tarball://root/attachments/some-uuid/ticket1844/modform-doctest.hg) by mhansen created at 2008-01-19 02:46:45",
     "created_at": "2008-01-19T02:46:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1844",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_011673.json:
 }
 ```
 
-Attachment
+Attachment [modform-doctest.hg](tarball://root/attachments/some-uuid/ticket1844/modform-doctest.hg) by mhansen created at 2008-01-19 02:46:45
 
 
 
@@ -85,7 +85,7 @@ I'm adding a patch that one should use *instead* of the .hg bundle above. (It's 
 archive/issue_comments_011676.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1844.patch](tarball://root/attachments/some-uuid/ticket1844/1844.patch) by craigcitro created at 2008-01-19 06:27:39",
     "created_at": "2008-01-19T06:27:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1844",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_011676.json:
 }
 ```
 
-Attachment
+Attachment [1844.patch](tarball://root/attachments/some-uuid/ticket1844/1844.patch) by craigcitro created at 2008-01-19 06:27:39
 
 
 
@@ -103,7 +103,7 @@ Attachment
 archive/issue_comments_011677.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1844-2.patch](tarball://root/attachments/some-uuid/ticket1844/1844-2.patch) by mhansen created at 2008-01-19 07:55:29",
     "created_at": "2008-01-19T07:55:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1844",
     "type": "issue_comment",
@@ -112,7 +112,7 @@ archive/issue_comments_011677.json:
 }
 ```
 
-Attachment
+Attachment [1844-2.patch](tarball://root/attachments/some-uuid/ticket1844/1844-2.patch) by mhansen created at 2008-01-19 07:55:29
 
 
 
@@ -139,7 +139,7 @@ I added a new patch which should apply cleanly against 2.10.
 archive/issue_comments_011679.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1844-2a.patch](tarball://root/attachments/some-uuid/ticket1844/1844-2a.patch) by craigcitro created at 2008-01-19 09:53:41",
     "created_at": "2008-01-19T09:53:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1844",
     "type": "issue_comment",
@@ -148,7 +148,7 @@ archive/issue_comments_011679.json:
 }
 ```
 
-Attachment
+Attachment [1844-2a.patch](tarball://root/attachments/some-uuid/ticket1844/1844-2a.patch) by craigcitro created at 2008-01-19 09:53:41
 
 
 

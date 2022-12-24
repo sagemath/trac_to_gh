@@ -155,7 +155,7 @@ sage:
 archive/issue_comments_034651.json:
 ```json
 {
-    "body": "Attachment\n\nVerified that this is now fixed, attached a patch with a doctest.",
+    "body": "Attachment [trac-4616.patch](tarball://root/attachments/some-uuid/ticket4616/trac-4616.patch) by rlm created at 2009-01-22 17:27:50\n\nVerified that this is now fixed, attached a patch with a doctest.",
     "created_at": "2009-01-22T17:27:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4616",
     "type": "issue_comment",
@@ -164,7 +164,7 @@ archive/issue_comments_034651.json:
 }
 ```
 
-Attachment
+Attachment [trac-4616.patch](tarball://root/attachments/some-uuid/ticket4616/trac-4616.patch) by rlm created at 2009-01-22 17:27:50
 
 Verified that this is now fixed, attached a patch with a doctest.
 

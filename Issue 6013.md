@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6013
 archive/issue_comments_047848.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch is good, but I accidentally cut it from my symbolics branch.  Not really a problem, but I mangled mq so the hg changeset info is wacky.  Maybe best to use mq to review this, so the actual hg parent, etc, is not taken into account.",
+    "body": "Attachment [trac_6013-relativize.patch](tarball://root/attachments/some-uuid/ticket6013/trac_6013-relativize.patch) by ncalexan created at 2009-05-10 08:12:41\n\nThe patch is good, but I accidentally cut it from my symbolics branch.  Not really a problem, but I mangled mq so the hg changeset info is wacky.  Maybe best to use mq to review this, so the actual hg parent, etc, is not taken into account.",
     "created_at": "2009-05-10T08:12:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6013",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_047848.json:
 }
 ```
 
-Attachment
+Attachment [trac_6013-relativize.patch](tarball://root/attachments/some-uuid/ticket6013/trac_6013-relativize.patch) by ncalexan created at 2009-05-10 08:12:41
 
 The patch is good, but I accidentally cut it from my symbolics branch.  Not really a problem, but I mangled mq so the hg changeset info is wacky.  Maybe best to use mq to review this, so the actual hg parent, etc, is not taken into account.
 

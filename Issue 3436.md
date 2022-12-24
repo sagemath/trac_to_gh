@@ -167,7 +167,7 @@ Changing status from new to needs_review.
 archive/issue_comments_024219.json:
 ```json
 {
-    "body": "Attachment\n\nFirst patch",
+    "body": "Attachment [trac3436_a.patch](tarball://root/attachments/some-uuid/ticket3436/trac3436_a.patch) by spancratz created at 2010-01-17 10:52:52\n\nFirst patch",
     "created_at": "2010-01-17T10:52:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
@@ -176,7 +176,7 @@ archive/issue_comments_024219.json:
 }
 ```
 
-Attachment
+Attachment [trac3436_a.patch](tarball://root/attachments/some-uuid/ticket3436/trac3436_a.patch) by spancratz created at 2010-01-17 10:52:52
 
 First patch
 
@@ -207,7 +207,7 @@ Sebastian
 archive/issue_comments_024221.json:
 ```json
 {
-    "body": "Attachment\n\nAdditional patch (more doctests)",
+    "body": "Attachment [trac3436_b.patch](tarball://root/attachments/some-uuid/ticket3436/trac3436_b.patch) by spancratz created at 2010-01-17 19:46:56\n\nAdditional patch (more doctests)",
     "created_at": "2010-01-17T19:46:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
@@ -216,7 +216,7 @@ archive/issue_comments_024221.json:
 }
 ```
 
-Attachment
+Attachment [trac3436_b.patch](tarball://root/attachments/some-uuid/ticket3436/trac3436_b.patch) by spancratz created at 2010-01-17 19:46:56
 
 Additional patch (more doctests)
 
@@ -506,7 +506,7 @@ Third patch, for matrices over cyclotomic fields
 archive/issue_comments_024235.json:
 ```json
 {
-    "body": "Attachment\n\nRebase of the first three patches to 4.3.1.rc0",
+    "body": "Attachment [trac3436_rb.patch](tarball://root/attachments/some-uuid/ticket3436/trac3436_rb.patch) by spancratz created at 2010-01-19 02:22:57\n\nRebase of the first three patches to 4.3.1.rc0",
     "created_at": "2010-01-19T02:22:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
@@ -515,7 +515,7 @@ archive/issue_comments_024235.json:
 }
 ```
 
-Attachment
+Attachment [trac3436_rb.patch](tarball://root/attachments/some-uuid/ticket3436/trac3436_rb.patch) by spancratz created at 2010-01-19 02:22:57
 
 Rebase of the first three patches to 4.3.1.rc0
 
@@ -604,7 +604,7 @@ Fixes the doctests for the rebase
 archive/issue_comments_024240.json:
 ```json
 {
-    "body": "Attachment\n\nrandom_element method in polynomial quotient rings (and number fields) passes on args and kwds",
+    "body": "Attachment [trac3436_rb_doctests.patch](tarball://root/attachments/some-uuid/ticket3436/trac3436_rb_doctests.patch) by spancratz created at 2010-01-19 04:16:22\n\nrandom_element method in polynomial quotient rings (and number fields) passes on args and kwds",
     "created_at": "2010-01-19T04:16:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
@@ -613,7 +613,7 @@ archive/issue_comments_024240.json:
 }
 ```
 
-Attachment
+Attachment [trac3436_rb_doctests.patch](tarball://root/attachments/some-uuid/ticket3436/trac3436_rb_doctests.patch) by spancratz created at 2010-01-19 04:16:22
 
 random_element method in polynomial quotient rings (and number fields) passes on args and kwds
 
@@ -624,7 +624,7 @@ random_element method in polynomial quotient rings (and number fields) passes on
 archive/issue_comments_024241.json:
 ```json
 {
-    "body": "Attachment\n\nTom suggested that we should change the code for random matrix generation over cyclotomic fields to rely on the random element generation code in the cyclotomic field, mostly in order to reduce code size.\n\nThe patch above now ensures that the polynomial quotient rings (and number fields) pass on additional arguments.\n\nThis patch should be applied in addition to all the other ones, in any case.\n\nThe next step is to compare the timings of the above code to Tom's suggestion.  If there is no noticeable speed difference, we should go with Tom's suggestion as it provides for cleaner code.  Otherwise, we should leave it done in the above patches.  We'll see.",
+    "body": "Attachment [trac3436_rb_poly.patch](tarball://root/attachments/some-uuid/ticket3436/trac3436_rb_poly.patch) by spancratz created at 2010-01-19 04:19:45\n\nTom suggested that we should change the code for random matrix generation over cyclotomic fields to rely on the random element generation code in the cyclotomic field, mostly in order to reduce code size.\n\nThe patch above now ensures that the polynomial quotient rings (and number fields) pass on additional arguments.\n\nThis patch should be applied in addition to all the other ones, in any case.\n\nThe next step is to compare the timings of the above code to Tom's suggestion.  If there is no noticeable speed difference, we should go with Tom's suggestion as it provides for cleaner code.  Otherwise, we should leave it done in the above patches.  We'll see.",
     "created_at": "2010-01-19T04:19:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
@@ -633,7 +633,7 @@ archive/issue_comments_024241.json:
 }
 ```
 
-Attachment
+Attachment [trac3436_rb_poly.patch](tarball://root/attachments/some-uuid/ticket3436/trac3436_rb_poly.patch) by spancratz created at 2010-01-19 04:19:45
 
 Tom suggested that we should change the code for random matrix generation over cyclotomic fields to rely on the random element generation code in the cyclotomic field, mostly in order to reduce code size.
 
@@ -650,7 +650,7 @@ The next step is to compare the timings of the above code to Tom's suggestion.  
 archive/issue_comments_024242.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac3436-tb.patch](tarball://root/attachments/some-uuid/ticket3436/trac3436-tb.patch) by boothby created at 2010-01-19 04:22:09",
     "created_at": "2010-01-19T04:22:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
@@ -659,7 +659,7 @@ archive/issue_comments_024242.json:
 }
 ```
 
-Attachment
+Attachment [trac3436-tb.patch](tarball://root/attachments/some-uuid/ticket3436/trac3436-tb.patch) by boothby created at 2010-01-19 04:22:09
 
 
 
@@ -686,7 +686,7 @@ Addendum to the last patch on polynomial quotients
 archive/issue_comments_024244.json:
 ```json
 {
-    "body": "Attachment\n\nHere are the timings for the code that Tom wrote, which gets rid of the \"ugly\" code I wrote for generating the random matrices over cyclotomic fields and instead uses the generic code of random elements in cyclotomic fields (implemented by two of the patches above):\n\n\n```\nsage: MS = MatrixSpace(CyclotomicField(10), 100, 100)\nsage: time A = MS.random_element()\nCPU times: user 27.11 s, sys: 0.35 s, total: 27.46 s\nWall time: 27.46 s\n```\n\n\nI suspect that the slowness of this code is largely due to the fact that for every random element of the cyclotomic field, two conversions take place.  One of a random list of rationals into the polynomial ring, and then another of that polynomial into the polynomial quotient ring.\n\nI don't think there is much we can do about this at the moment.  Thus, I propose that we should apply all of the patches on this ticket apart from ``trac3436-tb.patch``.  I'll flatten them a little, (1) main patch (2) ``random_element`` in polynomial rings, polynomial quotient rings, and number fields.  Hopefully, this will then pass all doctests and we'll be done.\n\nAny comments?\n\nPS: Of course, I'll include the fixed doctests (64-bit difference) from Tom's patch.",
+    "body": "Attachment [trac3436_rb_poly2.2.patch](tarball://root/attachments/some-uuid/ticket3436/trac3436_rb_poly2.2.patch) by spancratz created at 2010-01-19 04:49:46\n\nHere are the timings for the code that Tom wrote, which gets rid of the \"ugly\" code I wrote for generating the random matrices over cyclotomic fields and instead uses the generic code of random elements in cyclotomic fields (implemented by two of the patches above):\n\n\n```\nsage: MS = MatrixSpace(CyclotomicField(10), 100, 100)\nsage: time A = MS.random_element()\nCPU times: user 27.11 s, sys: 0.35 s, total: 27.46 s\nWall time: 27.46 s\n```\n\n\nI suspect that the slowness of this code is largely due to the fact that for every random element of the cyclotomic field, two conversions take place.  One of a random list of rationals into the polynomial ring, and then another of that polynomial into the polynomial quotient ring.\n\nI don't think there is much we can do about this at the moment.  Thus, I propose that we should apply all of the patches on this ticket apart from ``trac3436-tb.patch``.  I'll flatten them a little, (1) main patch (2) ``random_element`` in polynomial rings, polynomial quotient rings, and number fields.  Hopefully, this will then pass all doctests and we'll be done.\n\nAny comments?\n\nPS: Of course, I'll include the fixed doctests (64-bit difference) from Tom's patch.",
     "created_at": "2010-01-19T04:49:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
@@ -695,7 +695,7 @@ archive/issue_comments_024244.json:
 }
 ```
 
-Attachment
+Attachment [trac3436_rb_poly2.2.patch](tarball://root/attachments/some-uuid/ticket3436/trac3436_rb_poly2.2.patch) by spancratz created at 2010-01-19 04:49:46
 
 Here are the timings for the code that Tom wrote, which gets rid of the "ugly" code I wrote for generating the random matrices over cyclotomic fields and instead uses the generic code of random elements in cyclotomic fields (implemented by two of the patches above):
 
@@ -759,7 +759,7 @@ Main patch
 archive/issue_comments_024247.json:
 ```json
 {
-    "body": "Attachment\n\nPolynomial part",
+    "body": "Attachment [trac3436_poly.patch](tarball://root/attachments/some-uuid/ticket3436/trac3436_poly.patch) by spancratz created at 2010-01-19 05:26:18\n\nPolynomial part",
     "created_at": "2010-01-19T05:26:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
@@ -768,7 +768,7 @@ archive/issue_comments_024247.json:
 }
 ```
 
-Attachment
+Attachment [trac3436_poly.patch](tarball://root/attachments/some-uuid/ticket3436/trac3436_poly.patch) by spancratz created at 2010-01-19 05:26:18
 
 Polynomial part
 
@@ -819,7 +819,7 @@ So I'm tempted to (re-)propose a fix in the other direction. As Tom noted, the p
 archive/issue_comments_024250.json:
 ```json
 {
-    "body": "Attachment\n\nI attached a minor patch that fixes two whitespace problems in the doctests that caused failures.\n\nCurrent patch list:\n\ntrac3436_main.patch\ntrac3436_poly.patch\ntrac3436_whitespace.patch",
+    "body": "Attachment [trac3436_whitespace.patch](tarball://root/attachments/some-uuid/ticket3436/trac3436_whitespace.patch) by wjp created at 2010-01-19 06:00:34\n\nI attached a minor patch that fixes two whitespace problems in the doctests that caused failures.\n\nCurrent patch list:\n\ntrac3436_main.patch\ntrac3436_poly.patch\ntrac3436_whitespace.patch",
     "created_at": "2010-01-19T06:00:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
@@ -828,7 +828,7 @@ archive/issue_comments_024250.json:
 }
 ```
 
-Attachment
+Attachment [trac3436_whitespace.patch](tarball://root/attachments/some-uuid/ticket3436/trac3436_whitespace.patch) by wjp created at 2010-01-19 06:00:34
 
 I attached a minor patch that fixes two whitespace problems in the doctests that caused failures.
 

@@ -51,7 +51,7 @@ Changing status from new to needs_review.
 archive/issue_comments_081578.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8877-k_bounded-as.2.patch](tarball://root/attachments/some-uuid/ticket8877/trac_8877-k_bounded-as.2.patch) by hivert created at 2010-05-05 04:03:29",
     "created_at": "2010-05-05T04:03:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8877",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_081578.json:
 }
 ```
 
-Attachment
+Attachment [trac_8877-k_bounded-as.2.patch](tarball://root/attachments/some-uuid/ticket8877/trac_8877-k_bounded-as.2.patch) by hivert created at 2010-05-05 04:03:29
 
 
 

@@ -87,7 +87,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_080891.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8811_reduced_word_of_translations-nt.patch](tarball://root/attachments/some-uuid/ticket8811/trac_8811_reduced_word_of_translations-nt.patch) by nthiery created at 2010-06-02 20:04:38",
     "created_at": "2010-06-02T20:04:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8811",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_080891.json:
 }
 ```
 
-Attachment
+Attachment [trac_8811_reduced_word_of_translations-nt.patch](tarball://root/attachments/some-uuid/ticket8811/trac_8811_reduced_word_of_translations-nt.patch) by nthiery created at 2010-06-02 20:04:38
 
 
 

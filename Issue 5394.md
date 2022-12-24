@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5394
 archive/issue_comments_041541.json:
 ```json
 {
-    "body": "Attachment\n\nExcellent, couldn't have done it better myself :)\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_5394.patch](tarball://root/attachments/some-uuid/ticket5394/trac_5394.patch) by mabshoff created at 2009-02-27 21:03:32\n\nExcellent, couldn't have done it better myself :)\n\nCheers,\n\nMichael",
     "created_at": "2009-02-27T21:03:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5394",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_041541.json:
 }
 ```
 
-Attachment
+Attachment [trac_5394.patch](tarball://root/attachments/some-uuid/ticket5394/trac_5394.patch) by mabshoff created at 2009-02-27 21:03:32
 
 Excellent, couldn't have done it better myself :)
 
@@ -141,7 +141,7 @@ Michael
 archive/issue_comments_041546.json:
 ```json
 {
-    "body": "Attachment\n\nOops, the reviewer patch had some debug output in it. I removed that in the tree and did another checkin.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_5394-reviewer.patch](tarball://root/attachments/some-uuid/ticket5394/trac_5394-reviewer.patch) by mabshoff created at 2009-02-28 15:50:50\n\nOops, the reviewer patch had some debug output in it. I removed that in the tree and did another checkin.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-28T15:50:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5394",
     "type": "issue_comment",
@@ -150,7 +150,7 @@ archive/issue_comments_041546.json:
 }
 ```
 
-Attachment
+Attachment [trac_5394-reviewer.patch](tarball://root/attachments/some-uuid/ticket5394/trac_5394-reviewer.patch) by mabshoff created at 2009-02-28 15:50:50
 
 Oops, the reviewer patch had some debug output in it. I removed that in the tree and did another checkin.
 

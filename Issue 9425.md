@@ -50,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9425
 archive/issue_comments_089915.json:
 ```json
 {
-    "body": "Attachment\n\ncreated against the older Sage-4.4.2, but that shouldn't matter",
+    "body": "Attachment [trac_9425_kernel_on.patch](tarball://root/attachments/some-uuid/ticket9425/trac_9425_kernel_on.patch) by GeorgSWeber created at 2010-07-04 21:45:48\n\ncreated against the older Sage-4.4.2, but that shouldn't matter",
     "created_at": "2010-07-04T21:45:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9425",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_089915.json:
 }
 ```
 
-Attachment
+Attachment [trac_9425_kernel_on.patch](tarball://root/attachments/some-uuid/ticket9425/trac_9425_kernel_on.patch) by GeorgSWeber created at 2010-07-04 21:45:48
 
 created against the older Sage-4.4.2, but that shouldn't matter
 

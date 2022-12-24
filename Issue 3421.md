@@ -94,7 +94,7 @@ updated patch to address review
 archive/issue_comments_024080.json:
 ```json
 {
-    "body": "Attachment\n\nThe updated patch addresses that bug.",
+    "body": "Attachment [libsingular_longs.patch](tarball://root/attachments/some-uuid/ticket3421/libsingular_longs.patch) by malb created at 2008-06-14 00:47:42\n\nThe updated patch addresses that bug.",
     "created_at": "2008-06-14T00:47:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3421",
     "type": "issue_comment",
@@ -103,7 +103,7 @@ archive/issue_comments_024080.json:
 }
 ```
 
-Attachment
+Attachment [libsingular_longs.patch](tarball://root/attachments/some-uuid/ticket3421/libsingular_longs.patch) by malb created at 2008-06-14 00:47:42
 
 The updated patch addresses that bug.
 

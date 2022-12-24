@@ -124,7 +124,7 @@ I can try to review this, but I'd rather have a testing framework expert to it.
 archive/issue_comments_069812.json:
 ```json
 {
-    "body": "Attachment\n\nI noticed an existing, unrelated problem.  Let `foo.py` contain\n\n\n```python\ndef g():\n    \"\"\"\n    sage: 1 + 1\n    11\n    \"\"\"\n    return\n```\n\nThen `sage -tp 1 foo.py` ends with\n\n\n```python\n1 items had failures:\n   1 of   3 in __main__.example_0\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/.sage//tmp/.doctest_foo.py\n         [2.0 s]\n \n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/apps/sage/local/bin/sage-ptest\", line 361, in <module>\n    failed_files[F.split('#')[0].split()[2]] = None\nIndexError: list index out of range\n```\n",
+    "body": "Attachment [scripts_7993_doctest_error_handling.patch](tarball://root/attachments/some-uuid/ticket7993/scripts_7993_doctest_error_handling.patch) by mpatel created at 2010-01-31 05:05:14\n\nI noticed an existing, unrelated problem.  Let `foo.py` contain\n\n\n```python\ndef g():\n    \"\"\"\n    sage: 1 + 1\n    11\n    \"\"\"\n    return\n```\n\nThen `sage -tp 1 foo.py` ends with\n\n\n```python\n1 items had failures:\n   1 of   3 in __main__.example_0\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/.sage//tmp/.doctest_foo.py\n         [2.0 s]\n \n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/apps/sage/local/bin/sage-ptest\", line 361, in <module>\n    failed_files[F.split('#')[0].split()[2]] = None\nIndexError: list index out of range\n```\n",
     "created_at": "2010-01-31T05:05:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7993",
     "type": "issue_comment",
@@ -133,7 +133,7 @@ archive/issue_comments_069812.json:
 }
 ```
 
-Attachment
+Attachment [scripts_7993_doctest_error_handling.patch](tarball://root/attachments/some-uuid/ticket7993/scripts_7993_doctest_error_handling.patch) by mpatel created at 2010-01-31 05:05:14
 
 I noticed an existing, unrelated problem.  Let `foo.py` contain
 

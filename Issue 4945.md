@@ -164,7 +164,7 @@ Okay, here's a patch which (I think) addresses malb's issue.
 archive/issue_comments_037540.json:
 ```json
 {
-    "body": "Attachment\n\nPatch looks good.",
+    "body": "Attachment [4945.patch](tarball://root/attachments/some-uuid/ticket4945/4945.patch) by malb created at 2009-01-07 12:13:37\n\nPatch looks good.",
     "created_at": "2009-01-07T12:13:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4945",
     "type": "issue_comment",
@@ -173,7 +173,7 @@ archive/issue_comments_037540.json:
 }
 ```
 
-Attachment
+Attachment [4945.patch](tarball://root/attachments/some-uuid/ticket4945/4945.patch) by malb created at 2009-01-07 12:13:37
 
 Patch looks good.
 

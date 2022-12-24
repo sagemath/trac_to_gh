@@ -269,7 +269,7 @@ Please include the ticket number in the commit messages for your patches!
 archive/issue_comments_083169.json:
 ```json
 {
-    "body": "Attachment\n\nImplement polynomial quotient rings in singular interface",
+    "body": "Attachment [8993_poly_quotient_in_singular.patch](tarball://root/attachments/some-uuid/ticket8993/8993_poly_quotient_in_singular.patch) by SimonKing created at 2010-07-22 08:11:25\n\nImplement polynomial quotient rings in singular interface",
     "created_at": "2010-07-22T08:11:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8993",
     "type": "issue_comment",
@@ -278,7 +278,7 @@ archive/issue_comments_083169.json:
 }
 ```
 
-Attachment
+Attachment [8993_poly_quotient_in_singular.patch](tarball://root/attachments/some-uuid/ticket8993/8993_poly_quotient_in_singular.patch) by SimonKing created at 2010-07-22 08:11:25
 
 Implement polynomial quotient rings in singular interface
 
@@ -289,7 +289,7 @@ Implement polynomial quotient rings in singular interface
 archive/issue_comments_083170.json:
 ```json
 {
-    "body": "Attachment\n\nAvoid \"import sage\" according to the reviewer's request - apply after first patch",
+    "body": "Attachment [8993_poly_quotient_in_singular.p1.patch](tarball://root/attachments/some-uuid/ticket8993/8993_poly_quotient_in_singular.p1.patch) by SimonKing created at 2010-07-22 08:12:02\n\nAvoid \"import sage\" according to the reviewer's request - apply after first patch",
     "created_at": "2010-07-22T08:12:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8993",
     "type": "issue_comment",
@@ -298,7 +298,7 @@ archive/issue_comments_083170.json:
 }
 ```
 
-Attachment
+Attachment [8993_poly_quotient_in_singular.p1.patch](tarball://root/attachments/some-uuid/ticket8993/8993_poly_quotient_in_singular.p1.patch) by SimonKing created at 2010-07-22 08:12:02
 
 Avoid "import sage" according to the reviewer's request - apply after first patch
 

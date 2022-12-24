@@ -49,7 +49,7 @@ Resolution: fixed
 archive/issue_comments_003675.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [srange.hg](tarball://root/attachments/some-uuid/ticket701/srange.hg) by was created at 2007-09-21 00:00:58",
     "created_at": "2007-09-21T00:00:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/701",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_003675.json:
 }
 ```
 
-Attachment
+Attachment [srange.hg](tarball://root/attachments/some-uuid/ticket701/srange.hg) by was created at 2007-09-21 00:00:58
 
 
 
@@ -126,7 +126,7 @@ sage: srange(1.0, 5.0, include_endpoint=True)
 archive/issue_comments_003679.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [srange-fixes.hg](tarball://root/attachments/some-uuid/ticket701/srange-fixes.hg) by robertwb created at 2007-09-21 18:46:07",
     "created_at": "2007-09-21T18:46:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/701",
     "type": "issue_comment",
@@ -135,7 +135,7 @@ archive/issue_comments_003679.json:
 }
 ```
 
-Attachment
+Attachment [srange-fixes.hg](tarball://root/attachments/some-uuid/ticket701/srange-fixes.hg) by robertwb created at 2007-09-21 18:46:07
 
 
 

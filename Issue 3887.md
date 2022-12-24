@@ -45,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3887
 archive/issue_comments_027733.json:
 ```json
 {
-    "body": "Attachment\n\nOops, I forgot to mention: Nils-Peter Skoruppa was the one who reported this.",
+    "body": "Attachment [trac-3887.patch](tarball://root/attachments/some-uuid/ticket3887/trac-3887.patch) by craigcitro created at 2008-08-18 10:50:03\n\nOops, I forgot to mention: Nils-Peter Skoruppa was the one who reported this.",
     "created_at": "2008-08-18T10:50:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3887",
     "type": "issue_comment",
@@ -54,7 +54,7 @@ archive/issue_comments_027733.json:
 }
 ```
 
-Attachment
+Attachment [trac-3887.patch](tarball://root/attachments/some-uuid/ticket3887/trac-3887.patch) by craigcitro created at 2008-08-18 10:50:03
 
 Oops, I forgot to mention: Nils-Peter Skoruppa was the one who reported this.
 
@@ -219,7 +219,7 @@ Ah, so we just needed an extra factor of 2 in there (as we weren't taking into a
 archive/issue_comments_027741.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3887-faster-fix.patch](tarball://root/attachments/some-uuid/ticket3887/3887-faster-fix.patch) by robertwb created at 2008-12-18 00:22:39",
     "created_at": "2008-12-18T00:22:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3887",
     "type": "issue_comment",
@@ -228,7 +228,7 @@ archive/issue_comments_027741.json:
 }
 ```
 
-Attachment
+Attachment [3887-faster-fix.patch](tarball://root/attachments/some-uuid/ticket3887/3887-faster-fix.patch) by robertwb created at 2008-12-18 00:22:39
 
 
 

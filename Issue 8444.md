@@ -149,7 +149,7 @@ pari.`__call__`."
 archive/issue_comments_075916.json:
 ```json
 {
-    "body": "Attachment\n\nfix memory leak due to dup call to _sig_on",
+    "body": "Attachment [trac_8444.fix_pari_memleak.patch](tarball://root/attachments/some-uuid/ticket8444/trac_8444.fix_pari_memleak.patch) by tornaria created at 2010-03-11 04:33:34\n\nfix memory leak due to dup call to _sig_on",
     "created_at": "2010-03-11T04:33:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8444",
     "type": "issue_comment",
@@ -158,7 +158,7 @@ archive/issue_comments_075916.json:
 }
 ```
 
-Attachment
+Attachment [trac_8444.fix_pari_memleak.patch](tarball://root/attachments/some-uuid/ticket8444/trac_8444.fix_pari_memleak.patch) by tornaria created at 2010-03-11 04:33:34
 
 fix memory leak due to dup call to _sig_on
 

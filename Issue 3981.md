@@ -53,7 +53,7 @@ Changing status from new to assigned.
 archive/issue_comments_028636.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3981.patch](tarball://root/attachments/some-uuid/ticket3981/sage-3981.patch) by cswiercz created at 2008-08-29 17:14:41",
     "created_at": "2008-08-29T17:14:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3981",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_028636.json:
 }
 ```
 
-Attachment
+Attachment [sage-3981.patch](tarball://root/attachments/some-uuid/ticket3981/sage-3981.patch) by cswiercz created at 2008-08-29 17:14:41
 
 
 
@@ -71,7 +71,7 @@ Attachment
 archive/issue_comments_028637.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3981-2.patch](tarball://root/attachments/some-uuid/ticket3981/trac_3981-2.patch) by mhansen created at 2008-09-18 23:56:57",
     "created_at": "2008-09-18T23:56:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3981",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_028637.json:
 }
 ```
 
-Attachment
+Attachment [trac_3981-2.patch](tarball://root/attachments/some-uuid/ticket3981/trac_3981-2.patch) by mhansen created at 2008-09-18 23:56:57
 
 
 

@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4099
 archive/issue_comments_029577.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch just nukes all mention of .options and .reset.  So far as I can tell, this functionality is gone without replacement.  If there is now some other way to learn what these attributes used to tell you, then this patch should probably not be accepted, and the doc should be rewritten to explain the new functionality.",
+    "body": "Attachment [4099.patch](tarball://root/attachments/some-uuid/ticket4099/4099.patch) by jwmerrill created at 2008-09-14 02:56:21\n\nThe patch just nukes all mention of .options and .reset.  So far as I can tell, this functionality is gone without replacement.  If there is now some other way to learn what these attributes used to tell you, then this patch should probably not be accepted, and the doc should be rewritten to explain the new functionality.",
     "created_at": "2008-09-14T02:56:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4099",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_029577.json:
 }
 ```
 
-Attachment
+Attachment [4099.patch](tarball://root/attachments/some-uuid/ticket4099/4099.patch) by jwmerrill created at 2008-09-14 02:56:21
 
 The patch just nukes all mention of .options and .reset.  So far as I can tell, this functionality is gone without replacement.  If there is now some other way to learn what these attributes used to tell you, then this patch should probably not be accepted, and the doc should be rewritten to explain the new functionality.
 

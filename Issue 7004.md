@@ -655,7 +655,7 @@ Calling view on a graph with dot2tex format can be a bit slow. But see #8707 for
 archive/issue_comments_057924.json:
 ```json
 {
-    "body": "Attachment\n\nApply only this patch that fold all others",
+    "body": "Attachment [trac_7004-graphviz.patch](tarball://root/attachments/some-uuid/ticket7004/trac_7004-graphviz.patch) by vdelecroix created at 2010-04-27 21:56:20\n\nApply only this patch that fold all others",
     "created_at": "2010-04-27T21:56:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7004",
     "type": "issue_comment",
@@ -664,7 +664,7 @@ archive/issue_comments_057924.json:
 }
 ```
 
-Attachment
+Attachment [trac_7004-graphviz.patch](tarball://root/attachments/some-uuid/ticket7004/trac_7004-graphviz.patch) by vdelecroix created at 2010-04-27 21:56:20
 
 Apply only this patch that fold all others
 
@@ -729,7 +729,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_057928.json:
 ```json
 {
-    "body": "Attachment\n\nApply only this one",
+    "body": "Attachment [trac_7004-graphviz-nt.patch](tarball://root/attachments/some-uuid/ticket7004/trac_7004-graphviz-nt.patch) by nthiery created at 2010-04-28 10:05:16\n\nApply only this one",
     "created_at": "2010-04-28T10:05:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7004",
     "type": "issue_comment",
@@ -738,7 +738,7 @@ archive/issue_comments_057928.json:
 }
 ```
 
-Attachment
+Attachment [trac_7004-graphviz-nt.patch](tarball://root/attachments/some-uuid/ticket7004/trac_7004-graphviz-nt.patch) by nthiery created at 2010-04-28 10:05:16
 
 Apply only this one
 

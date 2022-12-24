@@ -75,7 +75,7 @@ Changing status from new to needs_review.
 archive/issue_comments_032180.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4376.patch](tarball://root/attachments/some-uuid/ticket4376/trac_4376.patch) by fwclarke created at 2010-08-27 10:19:27",
     "created_at": "2010-08-27T10:19:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4376",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_032180.json:
 }
 ```
 
-Attachment
+Attachment [trac_4376.patch](tarball://root/attachments/some-uuid/ticket4376/trac_4376.patch) by fwclarke created at 2010-08-27 10:19:27
 
 
 
@@ -350,7 +350,7 @@ Apply on top of previous patch
 archive/issue_comments_032192.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch removes the conversion PARI -> string -> PARI.  It does not address the doctest failures.",
+    "body": "Attachment [4376_no_strings.patch](tarball://root/attachments/some-uuid/ticket4376/4376_no_strings.patch) by jdemeyer created at 2011-01-27 14:58:07\n\nThe attached patch removes the conversion PARI -> string -> PARI.  It does not address the doctest failures.",
     "created_at": "2011-01-27T14:58:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4376",
     "type": "issue_comment",
@@ -359,7 +359,7 @@ archive/issue_comments_032192.json:
 }
 ```
 
-Attachment
+Attachment [4376_no_strings.patch](tarball://root/attachments/some-uuid/ticket4376/4376_no_strings.patch) by jdemeyer created at 2011-01-27 14:58:07
 
 The attached patch removes the conversion PARI -> string -> PARI.  It does not address the doctest failures.
 
@@ -524,7 +524,7 @@ I doubt that a PARI RFRAC can ever have a denominator which *is* a unit.
 archive/issue_comments_032199.json:
 ```json
 {
-    "body": "Attachment\n\nApply after previous two patches",
+    "body": "Attachment [4376_reversion_fixes.patch](tarball://root/attachments/some-uuid/ticket4376/4376_reversion_fixes.patch) by fwclarke created at 2011-02-02 09:14:23\n\nApply after previous two patches",
     "created_at": "2011-02-02T09:14:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4376",
     "type": "issue_comment",
@@ -533,7 +533,7 @@ archive/issue_comments_032199.json:
 }
 ```
 
-Attachment
+Attachment [4376_reversion_fixes.patch](tarball://root/attachments/some-uuid/ticket4376/4376_reversion_fixes.patch) by fwclarke created at 2011-02-02 09:14:23
 
 Apply after previous two patches
 

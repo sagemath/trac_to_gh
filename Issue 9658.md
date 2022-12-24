@@ -51,7 +51,7 @@ Changing status from new to needs_review.
 archive/issue_comments_093747.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-9658-mpz-typo.patch](tarball://root/attachments/some-uuid/ticket9658/trac-9658-mpz-typo.patch) by jason created at 2010-08-01 05:02:40",
     "created_at": "2010-08-01T05:02:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9658",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_093747.json:
 }
 ```
 
-Attachment
+Attachment [trac-9658-mpz-typo.patch](tarball://root/attachments/some-uuid/ticket9658/trac-9658-mpz-typo.patch) by jason created at 2010-08-01 05:02:40
 
 
 

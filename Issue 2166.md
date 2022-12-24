@@ -65,7 +65,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2166
 archive/issue_comments_014221.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.",
+    "body": "Attachment [Sage-2.10.2.alpha0-trac-2166.patch](tarball://root/attachments/some-uuid/ticket2166/Sage-2.10.2.alpha0-trac-2166.patch) by mhansen created at 2008-02-15 00:20:13\n\nLooks good to me.",
     "created_at": "2008-02-15T00:20:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2166",
     "type": "issue_comment",
@@ -74,7 +74,7 @@ archive/issue_comments_014221.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.10.2.alpha0-trac-2166.patch](tarball://root/attachments/some-uuid/ticket2166/Sage-2.10.2.alpha0-trac-2166.patch) by mhansen created at 2008-02-15 00:20:13
 
 Looks good to me.
 

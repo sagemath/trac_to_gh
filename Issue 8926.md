@@ -50,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8926
 archive/issue_comments_082233.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8926_family_repr-fh.patch](tarball://root/attachments/some-uuid/ticket8926/trac_8926_family_repr-fh.patch) by hivert created at 2010-05-07 23:02:25",
     "created_at": "2010-05-07T23:02:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8926",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_082233.json:
 }
 ```
 
-Attachment
+Attachment [trac_8926_family_repr-fh.patch](tarball://root/attachments/some-uuid/ticket8926/trac_8926_family_repr-fh.patch) by hivert created at 2010-05-07 23:02:25
 
 
 

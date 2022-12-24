@@ -133,7 +133,7 @@ archive/issue_comments_006700.json:
 archive/issue_comments_006701.json:
 ```json
 {
-    "body": "Attachment\n\nThis is rebased against 2.8.15",
+    "body": "Attachment [minkowski.patch](tarball://root/attachments/some-uuid/ticket1107/minkowski.patch) by was created at 2007-11-27 05:48:08\n\nThis is rebased against 2.8.15",
     "created_at": "2007-11-27T05:48:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1107",
     "type": "issue_comment",
@@ -142,7 +142,7 @@ archive/issue_comments_006701.json:
 }
 ```
 
-Attachment
+Attachment [minkowski.patch](tarball://root/attachments/some-uuid/ticket1107/minkowski.patch) by was created at 2007-11-27 05:48:08
 
 This is rebased against 2.8.15
 

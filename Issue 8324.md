@@ -73,7 +73,7 @@ Changing status from new to needs_review.
 archive/issue_comments_073877.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8324-sagenb_sageinspect.patch](tarball://root/attachments/some-uuid/ticket8324/trac_8324-sagenb_sageinspect.patch) by mpatel created at 2010-02-22 04:06:09",
     "created_at": "2010-02-22T04:06:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8324",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_073877.json:
 }
 ```
 
-Attachment
+Attachment [trac_8324-sagenb_sageinspect.patch](tarball://root/attachments/some-uuid/ticket8324/trac_8324-sagenb_sageinspect.patch) by mpatel created at 2010-02-22 04:06:09
 
 
 
@@ -261,7 +261,7 @@ archive/issue_comments_073886.json:
 archive/issue_comments_073887.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of other patch",
+    "body": "Attachment [trac_8324-new.patch](tarball://root/attachments/some-uuid/ticket8324/trac_8324-new.patch) by jhpalmieri created at 2010-03-03 22:08:03\n\napply on top of other patch",
     "created_at": "2010-03-03T22:08:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8324",
     "type": "issue_comment",
@@ -270,7 +270,7 @@ archive/issue_comments_073887.json:
 }
 ```
 
-Attachment
+Attachment [trac_8324-new.patch](tarball://root/attachments/some-uuid/ticket8324/trac_8324-new.patch) by jhpalmieri created at 2010-03-03 22:08:03
 
 apply on top of other patch
 

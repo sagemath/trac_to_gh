@@ -159,7 +159,7 @@ Changing assignee from burcin to mabshoff.
 archive/issue_comments_039205.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5129.patch](tarball://root/attachments/some-uuid/ticket5129/trac_5129.patch) by mabshoff created at 2009-02-03 18:24:56",
     "created_at": "2009-02-03T18:24:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5129",
     "type": "issue_comment",
@@ -168,7 +168,7 @@ archive/issue_comments_039205.json:
 }
 ```
 
-Attachment
+Attachment [trac_5129.patch](tarball://root/attachments/some-uuid/ticket5129/trac_5129.patch) by mabshoff created at 2009-02-03 18:24:56
 
 
 

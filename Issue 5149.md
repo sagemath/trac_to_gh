@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5149
 archive/issue_comments_039397.json:
 ```json
 {
-    "body": "Attachment\n\nPatch applies cleanly to 3.33.alpha2 and all tests pass.  Code looks good, so pass!",
+    "body": "Attachment [trac_5149.patch](tarball://root/attachments/some-uuid/ticket5149/trac_5149.patch) by cremona created at 2009-02-01 10:59:51\n\nPatch applies cleanly to 3.33.alpha2 and all tests pass.  Code looks good, so pass!",
     "created_at": "2009-02-01T10:59:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5149",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_039397.json:
 }
 ```
 
-Attachment
+Attachment [trac_5149.patch](tarball://root/attachments/some-uuid/ticket5149/trac_5149.patch) by cremona created at 2009-02-01 10:59:51
 
 Patch applies cleanly to 3.33.alpha2 and all tests pass.  Code looks good, so pass!
 

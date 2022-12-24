@@ -68,7 +68,7 @@ Patch covers docstring updates (see #5935) and adds an iterator for GraphQuery.
 archive/issue_comments_046934.json:
 ```json
 {
-    "body": "Attachment\n\nReferee edit of Emily's patch",
+    "body": "Attachment [trac5936_graphdatabase.patch](tarball://root/attachments/some-uuid/ticket5936/trac5936_graphdatabase.patch) by rlm created at 2009-05-21 22:27:00\n\nReferee edit of Emily's patch",
     "created_at": "2009-05-21T22:27:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5936",
     "type": "issue_comment",
@@ -77,7 +77,7 @@ archive/issue_comments_046934.json:
 }
 ```
 
-Attachment
+Attachment [trac5936_graphdatabase.patch](tarball://root/attachments/some-uuid/ticket5936/trac5936_graphdatabase.patch) by rlm created at 2009-05-21 22:27:00
 
 Referee edit of Emily's patch
 

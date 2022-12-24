@@ -134,7 +134,7 @@ The commit message is nonsensical:
 archive/issue_comments_074722.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8362_doc_fix-sl.patch](tarball://root/attachments/some-uuid/ticket8362/trac_8362_doc_fix-sl.patch) by slabbe created at 2010-02-26 15:50:44",
     "created_at": "2010-02-26T15:50:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8362",
     "type": "issue_comment",
@@ -143,7 +143,7 @@ archive/issue_comments_074722.json:
 }
 ```
 
-Attachment
+Attachment [trac_8362_doc_fix-sl.patch](tarball://root/attachments/some-uuid/ticket8362/trac_8362_doc_fix-sl.patch) by slabbe created at 2010-02-26 15:50:44
 
 
 

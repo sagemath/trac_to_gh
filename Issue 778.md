@@ -210,7 +210,7 @@ So what roed wants is for Q(f) to evaluate as f(Q.gen()), where f is a polynomia
 archive/issue_comments_004645.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac778.patch](tarball://root/attachments/some-uuid/ticket778/trac778.patch) by cremona created at 2008-04-04 22:03:49",
     "created_at": "2008-04-04T22:03:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/778",
     "type": "issue_comment",
@@ -219,7 +219,7 @@ archive/issue_comments_004645.json:
 }
 ```
 
-Attachment
+Attachment [trac778.patch](tarball://root/attachments/some-uuid/ticket778/trac778.patch) by cremona created at 2008-04-04 22:03:49
 
 
 

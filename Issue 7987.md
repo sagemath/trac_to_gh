@@ -69,7 +69,7 @@ Eventually, the library, include, and language information should be able to be 
 archive/issue_comments_069753.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [7987-module_list-cleanup.patch](tarball://root/attachments/some-uuid/ticket7987/7987-module_list-cleanup.patch) by robertwb created at 2010-01-19 21:57:49",
     "created_at": "2010-01-19T21:57:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7987",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_069753.json:
 }
 ```
 
-Attachment
+Attachment [7987-module_list-cleanup.patch](tarball://root/attachments/some-uuid/ticket7987/7987-module_list-cleanup.patch) by robertwb created at 2010-01-19 21:57:49
 
 
 

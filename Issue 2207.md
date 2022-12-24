@@ -67,7 +67,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_014568.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-2028-part1.patch](tarball://root/attachments/some-uuid/ticket2207/trac-2028-part1.patch) by jason created at 2008-02-18 21:26:29",
     "created_at": "2008-02-18T21:26:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2207",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_014568.json:
 }
 ```
 
-Attachment
+Attachment [trac-2028-part1.patch](tarball://root/attachments/some-uuid/ticket2207/trac-2028-part1.patch) by jason created at 2008-02-18 21:26:29
 
 
 
@@ -205,7 +205,7 @@ Changing status from closed to reopened.
 archive/issue_comments_014575.json:
 ```json
 {
-    "body": "Attachment\n\nNew patch against 2.10.3.rc1 attached which adds missing doctests",
+    "body": "Attachment [2207.patch](tarball://root/attachments/some-uuid/ticket2207/2207.patch) by mhansen created at 2008-03-05 01:09:01\n\nNew patch against 2.10.3.rc1 attached which adds missing doctests",
     "created_at": "2008-03-05T01:09:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2207",
     "type": "issue_comment",
@@ -214,7 +214,7 @@ archive/issue_comments_014575.json:
 }
 ```
 
-Attachment
+Attachment [2207.patch](tarball://root/attachments/some-uuid/ticket2207/2207.patch) by mhansen created at 2008-03-05 01:09:01
 
 New patch against 2.10.3.rc1 attached which adds missing doctests
 

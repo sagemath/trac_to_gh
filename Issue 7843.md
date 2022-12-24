@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7843
 archive/issue_comments_067936.json:
 ```json
 {
-    "body": "Attachment\n\nUse `os.listdir`.  sagenb repo.",
+    "body": "Attachment [trac_7843-cell_listdir.patch](tarball://root/attachments/some-uuid/ticket7843/trac_7843-cell_listdir.patch) by mpatel created at 2010-01-05 01:58:41\n\nUse `os.listdir`.  sagenb repo.",
     "created_at": "2010-01-05T01:58:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7843",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_067936.json:
 }
 ```
 
-Attachment
+Attachment [trac_7843-cell_listdir.patch](tarball://root/attachments/some-uuid/ticket7843/trac_7843-cell_listdir.patch) by mpatel created at 2010-01-05 01:58:41
 
 Use `os.listdir`.  sagenb repo.
 

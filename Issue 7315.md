@@ -101,7 +101,7 @@ So this piece of code is apparently using the wrong/un-Pythonic way of removing 
 archive/issue_comments_061127.json:
 ```json
 {
-    "body": "Attachment\n\nBased on 4.2",
+    "body": "Attachment [trac_7315-forget-all.patch](tarball://root/attachments/some-uuid/ticket7315/trac_7315-forget-all.patch) by kcrisman created at 2009-10-27 13:37:06\n\nBased on 4.2",
     "created_at": "2009-10-27T13:37:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7315",
     "type": "issue_comment",
@@ -110,7 +110,7 @@ archive/issue_comments_061127.json:
 }
 ```
 
-Attachment
+Attachment [trac_7315-forget-all.patch](tarball://root/attachments/some-uuid/ticket7315/trac_7315-forget-all.patch) by kcrisman created at 2009-10-27 13:37:06
 
 Based on 4.2
 

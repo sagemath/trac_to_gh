@@ -77,7 +77,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6305
 archive/issue_comments_050324.json:
 ```json
 {
-    "body": "Attachment\n\nA simple fix by moving out the code that does the literals (changes 1/2 -> Integer(1)/Integer(2)) into a separate function and made sure its called at each load.\n\nall tests in devel/sage/misc passed.",
+    "body": "Attachment [12063.patch](tarball://root/attachments/some-uuid/ticket6305/12063.patch) by rkirov created at 2009-06-16 02:49:07\n\nA simple fix by moving out the code that does the literals (changes 1/2 -> Integer(1)/Integer(2)) into a separate function and made sure its called at each load.\n\nall tests in devel/sage/misc passed.",
     "created_at": "2009-06-16T02:49:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6305",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_050324.json:
 }
 ```
 
-Attachment
+Attachment [12063.patch](tarball://root/attachments/some-uuid/ticket6305/12063.patch) by rkirov created at 2009-06-16 02:49:07
 
 A simple fix by moving out the code that does the literals (changes 1/2 -> Integer(1)/Integer(2)) into a separate function and made sure its called at each load.
 

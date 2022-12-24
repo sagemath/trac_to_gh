@@ -64,7 +64,7 @@ The problem appears to be the "Last Edited" field.
 archive/issue_comments_062508.json:
 ```json
 {
-    "body": "Attachment\n\nUpdate \"Last Edited\" field for newly published worksheets.  Apply to sagenb repo.",
+    "body": "Attachment [trac_7428-publish_last_edited.patch](tarball://root/attachments/some-uuid/ticket7428/trac_7428-publish_last_edited.patch) by mpatel created at 2009-11-12 09:29:19\n\nUpdate \"Last Edited\" field for newly published worksheets.  Apply to sagenb repo.",
     "created_at": "2009-11-12T09:29:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7428",
     "type": "issue_comment",
@@ -73,7 +73,7 @@ archive/issue_comments_062508.json:
 }
 ```
 
-Attachment
+Attachment [trac_7428-publish_last_edited.patch](tarball://root/attachments/some-uuid/ticket7428/trac_7428-publish_last_edited.patch) by mpatel created at 2009-11-12 09:29:19
 
 Update "Last Edited" field for newly published worksheets.  Apply to sagenb repo.
 
@@ -84,7 +84,7 @@ Update "Last Edited" field for newly published worksheets.  Apply to sagenb repo
 archive/issue_comments_062509.json:
 ```json
 {
-    "body": "Attachment\n\nAdded Selenium test.  Apply only this patch to sagenb repo.",
+    "body": "Attachment [trac_7428-publish_last_edited_v2.patch](tarball://root/attachments/some-uuid/ticket7428/trac_7428-publish_last_edited_v2.patch) by mpatel created at 2009-11-12 14:00:06\n\nAdded Selenium test.  Apply only this patch to sagenb repo.",
     "created_at": "2009-11-12T14:00:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7428",
     "type": "issue_comment",
@@ -93,7 +93,7 @@ archive/issue_comments_062509.json:
 }
 ```
 
-Attachment
+Attachment [trac_7428-publish_last_edited_v2.patch](tarball://root/attachments/some-uuid/ticket7428/trac_7428-publish_last_edited_v2.patch) by mpatel created at 2009-11-12 14:00:06
 
 Added Selenium test.  Apply only this patch to sagenb repo.
 

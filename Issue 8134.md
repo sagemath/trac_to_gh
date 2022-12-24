@@ -74,7 +74,7 @@ Changing status from new to needs_review.
 archive/issue_comments_071533.json:
 ```json
 {
-    "body": "Attachment\n\nI'm not sure why `sagenb.notebook.config?` doesn't render nicely in the notebook.",
+    "body": "Attachment [trac_8134-escape_dollars.patch](tarball://root/attachments/some-uuid/ticket8134/trac_8134-escape_dollars.patch) by mpatel created at 2010-01-31 02:36:47\n\nI'm not sure why `sagenb.notebook.config?` doesn't render nicely in the notebook.",
     "created_at": "2010-01-31T02:36:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8134",
     "type": "issue_comment",
@@ -83,7 +83,7 @@ archive/issue_comments_071533.json:
 }
 ```
 
-Attachment
+Attachment [trac_8134-escape_dollars.patch](tarball://root/attachments/some-uuid/ticket8134/trac_8134-escape_dollars.patch) by mpatel created at 2010-01-31 02:36:47
 
 I'm not sure why `sagenb.notebook.config?` doesn't render nicely in the notebook.
 
@@ -184,7 +184,7 @@ Make top docstring raw.  Replaces previous.
 archive/issue_comments_071539.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:4 jhpalmieri]:\n> It fixes the error messages and the output looks good.  Should there be an 'r' before the triple quotes at the top of the file?  I'll give it a positive review either way, so if you want to add that, go ahead.\nDone!",
+    "body": "Attachment [trac_8134-escape_dollars.2.patch](tarball://root/attachments/some-uuid/ticket8134/trac_8134-escape_dollars.2.patch) by mpatel created at 2010-02-06 16:26:52\n\nReplying to [comment:4 jhpalmieri]:\n> It fixes the error messages and the output looks good.  Should there be an 'r' before the triple quotes at the top of the file?  I'll give it a positive review either way, so if you want to add that, go ahead.\nDone!",
     "created_at": "2010-02-06T16:26:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8134",
     "type": "issue_comment",
@@ -193,7 +193,7 @@ archive/issue_comments_071539.json:
 }
 ```
 
-Attachment
+Attachment [trac_8134-escape_dollars.2.patch](tarball://root/attachments/some-uuid/ticket8134/trac_8134-escape_dollars.2.patch) by mpatel created at 2010-02-06 16:26:52
 
 Replying to [comment:4 jhpalmieri]:
 > It fixes the error messages and the output looks good.  Should there be an 'r' before the triple quotes at the top of the file?  I'll give it a positive review either way, so if you want to add that, go ahead.

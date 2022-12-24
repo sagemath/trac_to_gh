@@ -87,7 +87,7 @@ Resolution: fixed
 archive/issue_comments_001330.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ncalexan-scripts-tnew.hg](tarball://root/attachments/some-uuid/ticket279/ncalexan-scripts-tnew.hg) by was created at 2007-02-25 16:08:02",
     "created_at": "2007-02-25T16:08:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/279",
     "type": "issue_comment",
@@ -96,4 +96,4 @@ archive/issue_comments_001330.json:
 }
 ```
 
-Attachment
+Attachment [ncalexan-scripts-tnew.hg](tarball://root/attachments/some-uuid/ticket279/ncalexan-scripts-tnew.hg) by was created at 2007-02-25 16:08:02

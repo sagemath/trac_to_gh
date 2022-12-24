@@ -45,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6745
 archive/issue_comments_055493.json:
 ```json
 {
-    "body": "Attachment\n\nsage/algebras/quatalg/quaternion_algebra.py:1272\n\n\n```\nALGORITHM: Let `b_1, b_2, b_3, b_3` be a basis for this \n```\n\n\n(Typo, you want b_4). \n\nTabularUnified  sage/matrix/matrix_integer_dense.pyx:2310\n\n\n```\nif max(self._nrows, self._ncols) <= 50: \n```\n\n\nI think you intended to have an `elif` here. \n\nOther than that, looks good to me. Also, while I was playing around with it trying it out, I found #6762 useful.",
+    "body": "Attachment [trac_6745.patch](tarball://root/attachments/some-uuid/ticket6745/trac_6745.patch) by robertwb created at 2009-08-16 09:18:21\n\nsage/algebras/quatalg/quaternion_algebra.py:1272\n\n\n```\nALGORITHM: Let `b_1, b_2, b_3, b_3` be a basis for this \n```\n\n\n(Typo, you want b_4). \n\nTabularUnified  sage/matrix/matrix_integer_dense.pyx:2310\n\n\n```\nif max(self._nrows, self._ncols) <= 50: \n```\n\n\nI think you intended to have an `elif` here. \n\nOther than that, looks good to me. Also, while I was playing around with it trying it out, I found #6762 useful.",
     "created_at": "2009-08-16T09:18:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6745",
     "type": "issue_comment",
@@ -54,7 +54,7 @@ archive/issue_comments_055493.json:
 }
 ```
 
-Attachment
+Attachment [trac_6745.patch](tarball://root/attachments/some-uuid/ticket6745/trac_6745.patch) by robertwb created at 2009-08-16 09:18:21
 
 sage/algebras/quatalg/quaternion_algebra.py:1272
 
@@ -127,7 +127,7 @@ So the attached patch changes no logic in the code, but changes/improves two com
 archive/issue_comments_055496.json:
 ```json
 {
-    "body": "Attachment\n\nfix comments",
+    "body": "Attachment [trac_6745-part2.patch](tarball://root/attachments/some-uuid/ticket6745/trac_6745-part2.patch) by was created at 2009-08-30 21:58:48\n\nfix comments",
     "created_at": "2009-08-30T21:58:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6745",
     "type": "issue_comment",
@@ -136,7 +136,7 @@ archive/issue_comments_055496.json:
 }
 ```
 
-Attachment
+Attachment [trac_6745-part2.patch](tarball://root/attachments/some-uuid/ticket6745/trac_6745-part2.patch) by was created at 2009-08-30 21:58:48
 
 fix comments
 

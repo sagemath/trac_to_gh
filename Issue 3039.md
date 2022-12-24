@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3039
 archive/issue_comments_020910.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-debsource-versions.patch](tarball://root/attachments/some-uuid/ticket3039/sage-debsource-versions.patch) by tabbott created at 2008-04-27 02:36:34",
     "created_at": "2008-04-27T02:36:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3039",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_020910.json:
 }
 ```
 
-Attachment
+Attachment [sage-debsource-versions.patch](tarball://root/attachments/some-uuid/ticket3039/sage-debsource-versions.patch) by tabbott created at 2008-04-27 02:36:34
 
 
 

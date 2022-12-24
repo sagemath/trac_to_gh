@@ -51,7 +51,7 @@ Changing keywords from "" to "editor_mabshoff".
 archive/issue_comments_022850.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [cddlib-debian-shared-library.patch](tarball://root/attachments/some-uuid/ticket3304/cddlib-debian-shared-library.patch) by craigcitro created at 2008-06-15 21:31:26",
     "created_at": "2008-06-15T21:31:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3304",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_022850.json:
 }
 ```
 
-Attachment
+Attachment [cddlib-debian-shared-library.patch](tarball://root/attachments/some-uuid/ticket3304/cddlib-debian-shared-library.patch) by craigcitro created at 2008-06-15 21:31:26
 
 
 
@@ -69,7 +69,7 @@ Attachment
 archive/issue_comments_022851.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [cddlib-shared-library.patch](tarball://root/attachments/some-uuid/ticket3304/cddlib-shared-library.patch) by tabbott created at 2008-12-12 18:55:11",
     "created_at": "2008-12-12T18:55:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3304",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_022851.json:
 }
 ```
 
-Attachment
+Attachment [cddlib-shared-library.patch](tarball://root/attachments/some-uuid/ticket3304/cddlib-shared-library.patch) by tabbott created at 2008-12-12 18:55:11
 
 
 

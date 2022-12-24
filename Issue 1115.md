@@ -107,7 +107,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_006732.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch sage-trac1115.patch implements the following:\n\nIn ell_point.py: arbitrary precision for canonical heights (over Q)\n\nIn ell_rational_field.py: improved use of database for gens() (e.g. if the curve is not in the database but an isomorphic curve is);  no longer gets regulator from db but computes it from gens;  regulator_of_points() function to find the regulators (i.e. det of height pairing matrix) for any list of points, to arbitrary precision;  revised regulator() function handles arbitrary precision with caching.\n\nIn ell_sha.py:  full precision setting for an_numerical(), which amongst other things deals with the original posting.",
+    "body": "Attachment [sage-trac1115.patch](tarball://root/attachments/some-uuid/ticket1115/sage-trac1115.patch) by cremona created at 2008-09-01 11:34:15\n\nThe patch sage-trac1115.patch implements the following:\n\nIn ell_point.py: arbitrary precision for canonical heights (over Q)\n\nIn ell_rational_field.py: improved use of database for gens() (e.g. if the curve is not in the database but an isomorphic curve is);  no longer gets regulator from db but computes it from gens;  regulator_of_points() function to find the regulators (i.e. det of height pairing matrix) for any list of points, to arbitrary precision;  revised regulator() function handles arbitrary precision with caching.\n\nIn ell_sha.py:  full precision setting for an_numerical(), which amongst other things deals with the original posting.",
     "created_at": "2008-09-01T11:34:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1115",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_006732.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac1115.patch](tarball://root/attachments/some-uuid/ticket1115/sage-trac1115.patch) by cremona created at 2008-09-01 11:34:15
 
 The patch sage-trac1115.patch implements the following:
 
@@ -249,7 +249,7 @@ True
 archive/issue_comments_006737.json:
 ```json
 {
-    "body": "Attachment\n\nCorrection of docstring typos in previous patch",
+    "body": "Attachment [sage-trac1115a.patch](tarball://root/attachments/some-uuid/ticket1115/sage-trac1115a.patch) by cremona created at 2008-09-02 09:59:34\n\nCorrection of docstring typos in previous patch",
     "created_at": "2008-09-02T09:59:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1115",
     "type": "issue_comment",
@@ -258,7 +258,7 @@ archive/issue_comments_006737.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac1115a.patch](tarball://root/attachments/some-uuid/ticket1115/sage-trac1115a.patch) by cremona created at 2008-09-02 09:59:34
 
 Correction of docstring typos in previous patch
 
@@ -269,7 +269,7 @@ Correction of docstring typos in previous patch
 archive/issue_comments_006738.json:
 ```json
 {
-    "body": "Attachment\n\nThe second patch corrects the typos (and makes the description of the precision parameter consistent in those three places). [I think I may have attached it twice: if so ignore one of the files sage-trac1115a.patch .  Sorry.]\n\nI tried the dumps() thing again on a 64-bit machine and got the same error as you.\n\nMichael A, any chance you can help determine what makes this dumps() call work ok in 32-bit but not in 64-bit?",
+    "body": "Attachment [sage-trac1115a.2.patch](tarball://root/attachments/some-uuid/ticket1115/sage-trac1115a.2.patch) by cremona created at 2008-09-02 10:05:24\n\nThe second patch corrects the typos (and makes the description of the precision parameter consistent in those three places). [I think I may have attached it twice: if so ignore one of the files sage-trac1115a.patch .  Sorry.]\n\nI tried the dumps() thing again on a 64-bit machine and got the same error as you.\n\nMichael A, any chance you can help determine what makes this dumps() call work ok in 32-bit but not in 64-bit?",
     "created_at": "2008-09-02T10:05:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1115",
     "type": "issue_comment",
@@ -278,7 +278,7 @@ archive/issue_comments_006738.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac1115a.2.patch](tarball://root/attachments/some-uuid/ticket1115/sage-trac1115a.2.patch) by cremona created at 2008-09-02 10:05:24
 
 The second patch corrects the typos (and makes the description of the precision parameter consistent in those three places). [I think I may have attached it twice: if so ignore one of the files sage-trac1115a.patch .  Sorry.]
 
@@ -315,7 +315,7 @@ I'll have a new patch up soon.
 archive/issue_comments_006740.json:
 ```json
 {
-    "body": "Attachment\n\napply only this patch, after #3377",
+    "body": "Attachment [1115-sha_prec.patch](tarball://root/attachments/some-uuid/ticket1115/1115-sha_prec.patch) by AlexGhitza created at 2008-09-03 06:55:36\n\napply only this patch, after #3377",
     "created_at": "2008-09-03T06:55:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1115",
     "type": "issue_comment",
@@ -324,7 +324,7 @@ archive/issue_comments_006740.json:
 }
 ```
 
-Attachment
+Attachment [1115-sha_prec.patch](tarball://root/attachments/some-uuid/ticket1115/1115-sha_prec.patch) by AlexGhitza created at 2008-09-03 06:55:36
 
 apply only this patch, after #3377
 
@@ -388,7 +388,7 @@ I'll do this and test it after sorting out #3377.
 archive/issue_comments_006743.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1115-sha_prec-1.patch](tarball://root/attachments/some-uuid/ticket1115/1115-sha_prec-1.patch) by cremona created at 2008-09-03 10:50:15",
     "created_at": "2008-09-03T10:50:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1115",
     "type": "issue_comment",
@@ -397,7 +397,7 @@ archive/issue_comments_006743.json:
 }
 ```
 
-Attachment
+Attachment [1115-sha_prec-1.patch](tarball://root/attachments/some-uuid/ticket1115/1115-sha_prec-1.patch) by cremona created at 2008-09-03 10:50:15
 
 
 

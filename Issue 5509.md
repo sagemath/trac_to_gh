@@ -46,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5509
 archive/issue_comments_042782.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-5509-raw-docstring.patch](tarball://root/attachments/some-uuid/ticket5509/trac-5509-raw-docstring.patch) by jason created at 2009-03-13 14:43:59",
     "created_at": "2009-03-13T14:43:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5509",
     "type": "issue_comment",
@@ -55,7 +55,7 @@ archive/issue_comments_042782.json:
 }
 ```
 
-Attachment
+Attachment [trac-5509-raw-docstring.patch](tarball://root/attachments/some-uuid/ticket5509/trac-5509-raw-docstring.patch) by jason created at 2009-03-13 14:43:59
 
 
 

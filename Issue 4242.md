@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4242
 archive/issue_comments_030832.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4242.patch](tarball://root/attachments/some-uuid/ticket4242/4242.patch) by jbandlow created at 2008-10-04 14:07:50",
     "created_at": "2008-10-04T14:07:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4242",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_030832.json:
 }
 ```
 
-Attachment
+Attachment [4242.patch](tarball://root/attachments/some-uuid/ticket4242/4242.patch) by jbandlow created at 2008-10-04 14:07:50
 
 
 
@@ -178,7 +178,7 @@ Changing status from closed to reopened.
 archive/issue_comments_030839.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me. Thanks Mike.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_4242.patch](tarball://root/attachments/some-uuid/ticket4242/trac_4242.patch) by mabshoff created at 2008-10-12 19:46:34\n\nLooks good to me. Thanks Mike.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-12T19:46:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4242",
     "type": "issue_comment",
@@ -187,7 +187,7 @@ archive/issue_comments_030839.json:
 }
 ```
 
-Attachment
+Attachment [trac_4242.patch](tarball://root/attachments/some-uuid/ticket4242/trac_4242.patch) by mabshoff created at 2008-10-12 19:46:34
 
 Looks good to me. Thanks Mike.
 

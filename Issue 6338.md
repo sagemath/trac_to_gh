@@ -105,7 +105,7 @@ Changing status from new to needs_review.
 archive/issue_comments_050596.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6338_sagedist.patch](tarball://root/attachments/some-uuid/ticket6338/6338_sagedist.patch) by jdemeyer created at 2012-05-19 08:30:37",
     "created_at": "2012-05-19T08:30:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6338",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_050596.json:
 }
 ```
 
-Attachment
+Attachment [6338_sagedist.patch](tarball://root/attachments/some-uuid/ticket6338/6338_sagedist.patch) by jdemeyer created at 2012-05-19 08:30:37
 
 
 

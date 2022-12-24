@@ -139,7 +139,7 @@ The patch depends on the is_package_installed function, which won't appear until
 archive/issue_comments_014857.json:
 ```json
 {
-    "body": "Attachment\n\nIs there a better way to call nauty than from the command line? Is there some way to call the functions directly, by compiling nauty as a shared object, dynamic library, or something?",
+    "body": "Attachment [nauty_geng.patch](tarball://root/attachments/some-uuid/ticket2242/nauty_geng.patch) by rlm created at 2008-02-21 07:15:51\n\nIs there a better way to call nauty than from the command line? Is there some way to call the functions directly, by compiling nauty as a shared object, dynamic library, or something?",
     "created_at": "2008-02-21T07:15:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2242",
     "type": "issue_comment",
@@ -148,7 +148,7 @@ archive/issue_comments_014857.json:
 }
 ```
 
-Attachment
+Attachment [nauty_geng.patch](tarball://root/attachments/some-uuid/ticket2242/nauty_geng.patch) by rlm created at 2008-02-21 07:15:51
 
 Is there a better way to call nauty than from the command line? Is there some way to call the functions directly, by compiling nauty as a shared object, dynamic library, or something?
 
@@ -241,7 +241,7 @@ Michael
 archive/issue_comments_014862.json:
 ```json
 {
-    "body": "Attachment\n\nI think this should go in now.  I've updated the patch against 3.0.alpha2, and only 2242.patch should be applied.  The spkg installs fine on sage.math, and the code passes tests.",
+    "body": "Attachment [2242.patch](tarball://root/attachments/some-uuid/ticket2242/2242.patch) by mhansen created at 2008-04-07 08:45:48\n\nI think this should go in now.  I've updated the patch against 3.0.alpha2, and only 2242.patch should be applied.  The spkg installs fine on sage.math, and the code passes tests.",
     "created_at": "2008-04-07T08:45:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2242",
     "type": "issue_comment",
@@ -250,7 +250,7 @@ archive/issue_comments_014862.json:
 }
 ```
 
-Attachment
+Attachment [2242.patch](tarball://root/attachments/some-uuid/ticket2242/2242.patch) by mhansen created at 2008-04-07 08:45:48
 
 I think this should go in now.  I've updated the patch against 3.0.alpha2, and only 2242.patch should be applied.  The spkg installs fine on sage.math, and the code passes tests.
 

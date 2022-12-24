@@ -334,7 +334,7 @@ Changing status from new to needs_work.
 archive/issue_comments_018197.json:
 ```json
 {
-    "body": "Attachment\n\nFinally, a patch!",
+    "body": "Attachment [trac-2646-plot_vector_field3d.patch](tarball://root/attachments/some-uuid/ticket2646/trac-2646-plot_vector_field3d.patch) by jason created at 2009-10-29 06:29:00\n\nFinally, a patch!",
     "created_at": "2009-10-29T06:29:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2646",
     "type": "issue_comment",
@@ -343,7 +343,7 @@ archive/issue_comments_018197.json:
 }
 ```
 
-Attachment
+Attachment [trac-2646-plot_vector_field3d.patch](tarball://root/attachments/some-uuid/ticket2646/trac-2646-plot_vector_field3d.patch) by jason created at 2009-10-29 06:29:00
 
 Finally, a patch!
 

@@ -166,7 +166,7 @@ based on 4.0.rc0 and all patches in #5701
 archive/issue_comments_048561.json:
 ```json
 {
-    "body": "Attachment\n\nThe current patch passes sage -testall with guava removed and all patched on #5701 applied.",
+    "body": "Attachment [trac_6094-method-vs-algorithm.patch](tarball://root/attachments/some-uuid/ticket6094/trac_6094-method-vs-algorithm.patch) by wdj created at 2009-05-27 10:16:12\n\nThe current patch passes sage -testall with guava removed and all patched on #5701 applied.",
     "created_at": "2009-05-27T10:16:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
@@ -175,7 +175,7 @@ archive/issue_comments_048561.json:
 }
 ```
 
-Attachment
+Attachment [trac_6094-method-vs-algorithm.patch](tarball://root/attachments/some-uuid/ticket6094/trac_6094-method-vs-algorithm.patch) by wdj created at 2009-05-27 10:16:12
 
 The current patch passes sage -testall with guava removed and all patched on #5701 applied.
 
@@ -243,7 +243,7 @@ I don't know how to rebase. Can someone point me to a reference? I might be able
 archive/issue_comments_048564.json:
 ```json
 {
-    "body": "Attachment\n\nI rebased this against 4.3.1.rc0.",
+    "body": "Attachment [trac_6094-rebased_against_4.3.1.rc0.patch](tarball://root/attachments/some-uuid/ticket6094/trac_6094-rebased_against_4.3.1.rc0.patch) by was created at 2010-01-17 11:59:50\n\nI rebased this against 4.3.1.rc0.",
     "created_at": "2010-01-17T11:59:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
@@ -252,7 +252,7 @@ archive/issue_comments_048564.json:
 }
 ```
 
-Attachment
+Attachment [trac_6094-rebased_against_4.3.1.rc0.patch](tarball://root/attachments/some-uuid/ticket6094/trac_6094-rebased_against_4.3.1.rc0.patch) by was created at 2010-01-17 11:59:50
 
 I rebased this against 4.3.1.rc0.
 
@@ -427,7 +427,7 @@ Yep.  See the already-merged #8607.
 archive/issue_comments_048573.json:
 ```json
 {
-    "body": "Attachment\n\nRebased for 4.5.1. Change to more files and at more places as well as documentation. Added deprecation warnings.",
+    "body": "Attachment [trac_6094-4.5.1.with_deprecation](tarball://root/attachments/some-uuid/ticket6094/trac_6094-4.5.1.with_deprecation) by jsrn created at 2010-09-15 13:19:49\n\nRebased for 4.5.1. Change to more files and at more places as well as documentation. Added deprecation warnings.",
     "created_at": "2010-09-15T13:19:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
@@ -436,7 +436,7 @@ archive/issue_comments_048573.json:
 }
 ```
 
-Attachment
+Attachment [trac_6094-4.5.1.with_deprecation](tarball://root/attachments/some-uuid/ticket6094/trac_6094-4.5.1.with_deprecation) by jsrn created at 2010-09-15 13:19:49
 
 Rebased for 4.5.1. Change to more files and at more places as well as documentation. Added deprecation warnings.
 
@@ -492,7 +492,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_048576.json:
 ```json
 {
-    "body": "Attachment\n\nRebased, renamed, commit message edited",
+    "body": "Attachment [trac_6094-4.5.3.with_deprecation.patch](tarball://root/attachments/some-uuid/ticket6094/trac_6094-4.5.3.with_deprecation.patch) by rbeezer created at 2010-09-16 03:45:59\n\nRebased, renamed, commit message edited",
     "created_at": "2010-09-16T03:45:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
@@ -501,7 +501,7 @@ archive/issue_comments_048576.json:
 }
 ```
 
-Attachment
+Attachment [trac_6094-4.5.3.with_deprecation.patch](tarball://root/attachments/some-uuid/ticket6094/trac_6094-4.5.3.with_deprecation.patch) by rbeezer created at 2010-09-16 03:45:59
 
 Rebased, renamed, commit message edited
 
@@ -754,7 +754,7 @@ On the upside, I am pretty sure that the problem with #9907 is easily solved -- 
 archive/issue_comments_048585.json:
 ```json
 {
-    "body": "Attachment\n\nRebased for 4.5.3. Change to more files and at more places as well as documentation. Added deprecation warnings.  Fixed frobenius doctest",
+    "body": "Attachment [trac_6094-4.5.3.with_deprecation.2.patch](tarball://root/attachments/some-uuid/ticket6094/trac_6094-4.5.3.with_deprecation.2.patch) by jsrn created at 2010-09-23 14:03:24\n\nRebased for 4.5.3. Change to more files and at more places as well as documentation. Added deprecation warnings.  Fixed frobenius doctest",
     "created_at": "2010-09-23T14:03:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
@@ -763,7 +763,7 @@ archive/issue_comments_048585.json:
 }
 ```
 
-Attachment
+Attachment [trac_6094-4.5.3.with_deprecation.2.patch](tarball://root/attachments/some-uuid/ticket6094/trac_6094-4.5.3.with_deprecation.2.patch) by jsrn created at 2010-09-23 14:03:24
 
 Rebased for 4.5.3. Change to more files and at more places as well as documentation. Added deprecation warnings.  Fixed frobenius doctest
 
@@ -992,7 +992,7 @@ Rebased for 4.6.1.alpha0. Still requires patches for #9919 and #9907 (in that or
 archive/issue_comments_048594.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6094-4.6.1.alpha0.with_deprecation.patch](tarball://root/attachments/some-uuid/ticket6094/trac_6094-4.6.1.alpha0.with_deprecation.patch) by jsrn created at 2010-11-16 10:00:02",
     "created_at": "2010-11-16T10:00:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
@@ -1001,7 +1001,7 @@ archive/issue_comments_048594.json:
 }
 ```
 
-Attachment
+Attachment [trac_6094-4.6.1.alpha0.with_deprecation.patch](tarball://root/attachments/some-uuid/ticket6094/trac_6094-4.6.1.alpha0.with_deprecation.patch) by jsrn created at 2010-11-16 10:00:02
 
 
 

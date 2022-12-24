@@ -51,7 +51,7 @@ This picture was created with input sage: bezier3d([This is the Trac macro ** th
 archive/issue_comments_048628.json:
 ```json
 {
-    "body": "Attachment\n\nReferee edit",
+    "body": "Attachment [trac6098_bezier3d.patch](tarball://root/attachments/some-uuid/ticket6098/trac6098_bezier3d.patch) by rlm created at 2009-05-21 18:59:58\n\nReferee edit",
     "created_at": "2009-05-21T18:59:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6098",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_048628.json:
 }
 ```
 
-Attachment
+Attachment [trac6098_bezier3d.patch](tarball://root/attachments/some-uuid/ticket6098/trac6098_bezier3d.patch) by rlm created at 2009-05-21 18:59:58
 
 Referee edit
 
@@ -120,7 +120,7 @@ Apply only this patch
 archive/issue_comments_048631.json:
 ```json
 {
-    "body": "Attachment\n\nIt was completely trivial to get this patch working again. I did the work while Emily watched over my shoulder. If one positive review isn't enough, then you have two! :)",
+    "body": "Attachment [trac_6098-rebased.patch](tarball://root/attachments/some-uuid/ticket6098/trac_6098-rebased.patch) by rlm created at 2009-07-13 21:12:15\n\nIt was completely trivial to get this patch working again. I did the work while Emily watched over my shoulder. If one positive review isn't enough, then you have two! :)",
     "created_at": "2009-07-13T21:12:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6098",
     "type": "issue_comment",
@@ -129,7 +129,7 @@ archive/issue_comments_048631.json:
 }
 ```
 
-Attachment
+Attachment [trac_6098-rebased.patch](tarball://root/attachments/some-uuid/ticket6098/trac_6098-rebased.patch) by rlm created at 2009-07-13 21:12:15
 
 It was completely trivial to get this patch working again. I did the work while Emily watched over my shoulder. If one positive review isn't enough, then you have two! :)
 

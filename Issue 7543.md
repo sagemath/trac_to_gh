@@ -171,7 +171,7 @@ I just uploaded the patch. Some more examples. Better doc. The morphisms argumen
 archive/issue_comments_064003.json:
 ```json
 {
-    "body": "Attachment\n\nHi Sebastien,\n\nI made the following changes in the documentation and the code seems to be OK.\n\n* In english the term is adic (like p-adic numbers)\n* I added lines between the item of the INPUT (http://www.sagemath.org/doc/developer/conventions.html#documentation-strings)\n\nTake care,\nVincent",
+    "body": "Attachment [trac_7543_word_s_adiques-sl.patch](tarball://root/attachments/some-uuid/ticket7543/trac_7543_word_s_adiques-sl.patch) by vdelecroix created at 2009-12-29 11:25:49\n\nHi Sebastien,\n\nI made the following changes in the documentation and the code seems to be OK.\n\n* In english the term is adic (like p-adic numbers)\n* I added lines between the item of the INPUT (http://www.sagemath.org/doc/developer/conventions.html#documentation-strings)\n\nTake care,\nVincent",
     "created_at": "2009-12-29T11:25:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7543",
     "type": "issue_comment",
@@ -180,7 +180,7 @@ archive/issue_comments_064003.json:
 }
 ```
 
-Attachment
+Attachment [trac_7543_word_s_adiques-sl.patch](tarball://root/attachments/some-uuid/ticket7543/trac_7543_word_s_adiques-sl.patch) by vdelecroix created at 2009-12-29 11:25:49
 
 Hi Sebastien,
 
@@ -235,7 +235,7 @@ corrections in documentation string
 archive/issue_comments_064006.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7543-review-vd.patch](tarball://root/attachments/some-uuid/ticket7543/trac_7543-review-vd.patch) by vdelecroix created at 2009-12-29 11:42:23",
     "created_at": "2009-12-29T11:42:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7543",
     "type": "issue_comment",
@@ -244,7 +244,7 @@ archive/issue_comments_064006.json:
 }
 ```
 
-Attachment
+Attachment [trac_7543-review-vd.patch](tarball://root/attachments/some-uuid/ticket7543/trac_7543-review-vd.patch) by vdelecroix created at 2009-12-29 11:42:23
 
 
 
@@ -383,7 +383,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_064014.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:8 slabbe]:\n> I just uploaded the corrections patch because I did some doc and sphinx improvements.\n> \n> Vincent, can you review those small changes I did?\n\nThe doc is OK. positive review.",
+    "body": "Attachment [trac_7543_correction-sl.patch](tarball://root/attachments/some-uuid/ticket7543/trac_7543_correction-sl.patch) by vdelecroix created at 2010-01-07 23:38:59\n\nReplying to [comment:8 slabbe]:\n> I just uploaded the corrections patch because I did some doc and sphinx improvements.\n> \n> Vincent, can you review those small changes I did?\n\nThe doc is OK. positive review.",
     "created_at": "2010-01-07T23:38:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7543",
     "type": "issue_comment",
@@ -392,7 +392,7 @@ archive/issue_comments_064014.json:
 }
 ```
 
-Attachment
+Attachment [trac_7543_correction-sl.patch](tarball://root/attachments/some-uuid/ticket7543/trac_7543_correction-sl.patch) by vdelecroix created at 2010-01-07 23:38:59
 
 Replying to [comment:8 slabbe]:
 > I just uploaded the corrections patch because I did some doc and sphinx improvements.
@@ -469,7 +469,7 @@ Apply only this one.
 archive/issue_comments_064018.json:
 ```json
 {
-    "body": "Attachment\n\nSorry for that. There was something depending on patches at #7520. I commented out the offending line and now it should be fine.\n\nBeware, I folded all patches in the same \"final\" one.\n\nNeeds review again!",
+    "body": "Attachment [trac_7543_s_adic_final.patch](tarball://root/attachments/some-uuid/ticket7543/trac_7543_s_adic_final.patch) by slabbe created at 2010-01-13 11:38:27\n\nSorry for that. There was something depending on patches at #7520. I commented out the offending line and now it should be fine.\n\nBeware, I folded all patches in the same \"final\" one.\n\nNeeds review again!",
     "created_at": "2010-01-13T11:38:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7543",
     "type": "issue_comment",
@@ -478,7 +478,7 @@ archive/issue_comments_064018.json:
 }
 ```
 
-Attachment
+Attachment [trac_7543_s_adic_final.patch](tarball://root/attachments/some-uuid/ticket7543/trac_7543_s_adic_final.patch) by slabbe created at 2010-01-13 11:38:27
 
 Sorry for that. There was something depending on patches at #7520. I commented out the offending line and now it should be fine.
 
@@ -587,7 +587,7 @@ The rest is OK (I've got no doctesting error with the patch applied on a native 
 archive/issue_comments_064023.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch applies over the above 'final' patch.",
+    "body": "Attachment [trac_7543_infinite_alphabet-sl.patch](tarball://root/attachments/some-uuid/ticket7543/trac_7543_infinite_alphabet-sl.patch) by slabbe created at 2010-01-15 17:37:52\n\nThis patch applies over the above 'final' patch.",
     "created_at": "2010-01-15T17:37:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7543",
     "type": "issue_comment",
@@ -596,7 +596,7 @@ archive/issue_comments_064023.json:
 }
 ```
 
-Attachment
+Attachment [trac_7543_infinite_alphabet-sl.patch](tarball://root/attachments/some-uuid/ticket7543/trac_7543_infinite_alphabet-sl.patch) by slabbe created at 2010-01-15 17:37:52
 
 This patch applies over the above 'final' patch.
 

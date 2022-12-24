@@ -85,7 +85,7 @@ The attached patch fixes this by introducing the same type-check as in the univa
 archive/issue_comments_026046.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3678.patch](tarball://root/attachments/some-uuid/ticket3678/trac_3678.patch) by AlexGhitza created at 2008-12-21 05:29:15",
     "created_at": "2008-12-21T05:29:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3678",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_026046.json:
 }
 ```
 
-Attachment
+Attachment [trac_3678.patch](tarball://root/attachments/some-uuid/ticket3678/trac_3678.patch) by AlexGhitza created at 2008-12-21 05:29:15
 
 
 

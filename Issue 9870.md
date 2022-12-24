@@ -131,7 +131,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_097513.json:
 ```json
 {
-    "body": "Attachment\n\nMercurial patch. Note, the patched Makefile was not under revision control before, so the patch is quite big.",
+    "body": "Attachment [9871-update-cliquer-and-add-Solaris-fix.patch](tarball://root/attachments/some-uuid/ticket9871/9871-update-cliquer-and-add-Solaris-fix.patch) by drkirkby created at 2010-09-08 02:01:29\n\nMercurial patch. Note, the patched Makefile was not under revision control before, so the patch is quite big.",
     "created_at": "2010-09-08T02:01:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9870",
     "type": "issue_comment",
@@ -140,7 +140,7 @@ archive/issue_comments_097513.json:
 }
 ```
 
-Attachment
+Attachment [9871-update-cliquer-and-add-Solaris-fix.patch](tarball://root/attachments/some-uuid/ticket9871/9871-update-cliquer-and-add-Solaris-fix.patch) by drkirkby created at 2010-09-08 02:01:29
 
 Mercurial patch. Note, the patched Makefile was not under revision control before, so the patch is quite big.
 
@@ -611,7 +611,7 @@ Dave
 archive/issue_comments_097525.json:
 ```json
 {
-    "body": "Attachment\n\nSimple patch which *replaces* the earlier patch.",
+    "body": "Attachment [9871-simpler-patch-to-ONLY-solve-Solaris-problems.patch](tarball://root/attachments/some-uuid/ticket9871/9871-simpler-patch-to-ONLY-solve-Solaris-problems.patch) by drkirkby created at 2010-09-13 21:12:44\n\nSimple patch which *replaces* the earlier patch.",
     "created_at": "2010-09-13T21:12:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9870",
     "type": "issue_comment",
@@ -620,7 +620,7 @@ archive/issue_comments_097525.json:
 }
 ```
 
-Attachment
+Attachment [9871-simpler-patch-to-ONLY-solve-Solaris-problems.patch](tarball://root/attachments/some-uuid/ticket9871/9871-simpler-patch-to-ONLY-solve-Solaris-problems.patch) by drkirkby created at 2010-09-13 21:12:44
 
 Simple patch which *replaces* the earlier patch.
 

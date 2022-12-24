@@ -255,7 +255,7 @@ Changing status from new to needs_review.
 archive/issue_comments_005336.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_864-pari_long_conversion.patch](tarball://root/attachments/some-uuid/ticket864/trac_864-pari_long_conversion.patch) by pbruin created at 2013-09-09 18:40:22",
     "created_at": "2013-09-09T18:40:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/864",
     "type": "issue_comment",
@@ -264,7 +264,7 @@ archive/issue_comments_005336.json:
 }
 ```
 
-Attachment
+Attachment [trac_864-pari_long_conversion.patch](tarball://root/attachments/some-uuid/ticket864/trac_864-pari_long_conversion.patch) by pbruin created at 2013-09-09 18:40:22
 
 
 
@@ -368,7 +368,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_005341.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_864-pari_int_long_conversion.patch](tarball://root/attachments/some-uuid/ticket864/trac_864-pari_int_long_conversion.patch) by pbruin created at 2013-10-29 12:13:23",
     "created_at": "2013-10-29T12:13:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/864",
     "type": "issue_comment",
@@ -377,7 +377,7 @@ archive/issue_comments_005341.json:
 }
 ```
 
-Attachment
+Attachment [trac_864-pari_int_long_conversion.patch](tarball://root/attachments/some-uuid/ticket864/trac_864-pari_int_long_conversion.patch) by pbruin created at 2013-10-29 12:13:23
 
 
 

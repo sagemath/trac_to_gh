@@ -90,7 +90,7 @@ Michael
 archive/issue_comments_019671.json:
 ```json
 {
-    "body": "Attachment\n\nThanks for catching this, I updated the patch, it was a one liner blunder! Could you please reapply, should pass doctests now on sage.math at least :-)",
+    "body": "Attachment [use_tempfile_module.patch](tarball://root/attachments/some-uuid/ticket2866/use_tempfile_module.patch) by yi created at 2008-04-10 01:44:12\n\nThanks for catching this, I updated the patch, it was a one liner blunder! Could you please reapply, should pass doctests now on sage.math at least :-)",
     "created_at": "2008-04-10T01:44:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2866",
     "type": "issue_comment",
@@ -99,7 +99,7 @@ archive/issue_comments_019671.json:
 }
 ```
 
-Attachment
+Attachment [use_tempfile_module.patch](tarball://root/attachments/some-uuid/ticket2866/use_tempfile_module.patch) by yi created at 2008-04-10 01:44:12
 
 Thanks for catching this, I updated the patch, it was a one liner blunder! Could you please reapply, should pass doctests now on sage.math at least :-)
 

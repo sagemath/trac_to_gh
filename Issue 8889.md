@@ -159,7 +159,7 @@ Changing status from new to needs_review.
 archive/issue_comments_081727.json:
 ```json
 {
-    "body": "Attachment\n\nI've added a patch which adds the repeat keyword.",
+    "body": "Attachment [trac_8889.patch](tarball://root/attachments/some-uuid/ticket8889/trac_8889.patch) by mhansen created at 2010-05-05 18:53:57\n\nI've added a patch which adds the repeat keyword.",
     "created_at": "2010-05-05T18:53:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8889",
     "type": "issue_comment",
@@ -168,7 +168,7 @@ archive/issue_comments_081727.json:
 }
 ```
 
-Attachment
+Attachment [trac_8889.patch](tarball://root/attachments/some-uuid/ticket8889/trac_8889.patch) by mhansen created at 2010-05-05 18:53:57
 
 I've added a patch which adds the repeat keyword.
 

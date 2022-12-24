@@ -36,7 +36,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3210
 archive/issue_comments_022187.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3210-plot-Zp.patch](tarball://root/attachments/some-uuid/ticket3210/3210-plot-Zp.patch) by robertwb created at 2008-05-15 06:47:19",
     "created_at": "2008-05-15T06:47:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3210",
     "type": "issue_comment",
@@ -45,7 +45,7 @@ archive/issue_comments_022187.json:
 }
 ```
 
-Attachment
+Attachment [3210-plot-Zp.patch](tarball://root/attachments/some-uuid/ticket3210/3210-plot-Zp.patch) by robertwb created at 2008-05-15 06:47:19
 
 
 
@@ -54,7 +54,7 @@ Attachment
 archive/issue_comments_022188.json:
 ```json
 {
-    "body": "Attachment\n\ncool, quick comment, there is a typo in the docstring: \"algebraic an topological\"",
+    "body": "Attachment [Z5.png](tarball://root/attachments/some-uuid/ticket3210/Z5.png) by malb created at 2008-05-15 08:47:42\n\ncool, quick comment, there is a typo in the docstring: \"algebraic an topological\"",
     "created_at": "2008-05-15T08:47:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3210",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_022188.json:
 }
 ```
 
-Attachment
+Attachment [Z5.png](tarball://root/attachments/some-uuid/ticket3210/Z5.png) by malb created at 2008-05-15 08:47:42
 
 cool, quick comment, there is a typo in the docstring: "algebraic an topological"
 
@@ -74,7 +74,7 @@ cool, quick comment, there is a typo in the docstring: "algebraic an topological
 archive/issue_comments_022189.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3210-plot-Zp-typo-fix.patch](tarball://root/attachments/some-uuid/ticket3210/3210-plot-Zp-typo-fix.patch) by robertwb created at 2008-05-15 08:52:28",
     "created_at": "2008-05-15T08:52:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3210",
     "type": "issue_comment",
@@ -83,7 +83,7 @@ archive/issue_comments_022189.json:
 }
 ```
 
-Attachment
+Attachment [3210-plot-Zp-typo-fix.patch](tarball://root/attachments/some-uuid/ticket3210/3210-plot-Zp-typo-fix.patch) by robertwb created at 2008-05-15 08:52:28
 
 
 
@@ -277,7 +277,7 @@ Apply 3210-plot-Zp-typo-fix.patch followed by trac-3210-add-r.patch.
 archive/issue_comments_022197.json:
 ```json
 {
-    "body": "Attachment\n\nThe new ticket is #3474.",
+    "body": "Attachment [trac-3210-add-r.patch](tarball://root/attachments/some-uuid/ticket3210/trac-3210-add-r.patch) by craigcitro created at 2008-06-19 21:45:25\n\nThe new ticket is #3474.",
     "created_at": "2008-06-19T21:45:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3210",
     "type": "issue_comment",
@@ -286,7 +286,7 @@ archive/issue_comments_022197.json:
 }
 ```
 
-Attachment
+Attachment [trac-3210-add-r.patch](tarball://root/attachments/some-uuid/ticket3210/trac-3210-add-r.patch) by craigcitro created at 2008-06-19 21:45:25
 
 The new ticket is #3474.
 

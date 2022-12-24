@@ -99,7 +99,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6217
 archive/issue_comments_049663.json:
 ```json
 {
-    "body": "Attachment\n\nI've made it so that the examples don't use the string 'a' as a bases since that was causing problems for the sorting.",
+    "body": "Attachment [trac_6217.patch](tarball://root/attachments/some-uuid/ticket6217/trac_6217.patch) by mhansen created at 2009-06-05 00:53:15\n\nI've made it so that the examples don't use the string 'a' as a bases since that was causing problems for the sorting.",
     "created_at": "2009-06-05T00:53:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6217",
     "type": "issue_comment",
@@ -108,7 +108,7 @@ archive/issue_comments_049663.json:
 }
 ```
 
-Attachment
+Attachment [trac_6217.patch](tarball://root/attachments/some-uuid/ticket6217/trac_6217.patch) by mhansen created at 2009-06-05 00:53:15
 
 I've made it so that the examples don't use the string 'a' as a bases since that was causing problems for the sorting.
 

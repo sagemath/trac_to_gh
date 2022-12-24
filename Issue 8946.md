@@ -133,7 +133,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8946
 archive/issue_comments_082363.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8946.patch](tarball://root/attachments/some-uuid/ticket8946/trac_8946.patch) by whuss created at 2010-05-11 08:30:23",
     "created_at": "2010-05-11T08:30:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8946",
     "type": "issue_comment",
@@ -142,7 +142,7 @@ archive/issue_comments_082363.json:
 }
 ```
 
-Attachment
+Attachment [trac_8946.patch](tarball://root/attachments/some-uuid/ticket8946/trac_8946.patch) by whuss created at 2010-05-11 08:30:23
 
 
 

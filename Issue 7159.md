@@ -144,7 +144,7 @@ Nathann
 archive/issue_comments_059325.json:
 ```json
 {
-    "body": "Attachment\n\nBy the way, I can not find your email on the internet... It's good to see new people in Sage's graph theory section !! What are you studying ?",
+    "body": "Attachment [trac_7159.patch](tarball://root/attachments/some-uuid/ticket7159/trac_7159.patch) by ncohen created at 2009-10-25 23:20:32\n\nBy the way, I can not find your email on the internet... It's good to see new people in Sage's graph theory section !! What are you studying ?",
     "created_at": "2009-10-25T23:20:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7159",
     "type": "issue_comment",
@@ -153,7 +153,7 @@ archive/issue_comments_059325.json:
 }
 ```
 
-Attachment
+Attachment [trac_7159.patch](tarball://root/attachments/some-uuid/ticket7159/trac_7159.patch) by ncohen created at 2009-10-25 23:20:32
 
 By the way, I can not find your email on the internet... It's good to see new people in Sage's graph theory section !! What are you studying ?
 
@@ -198,7 +198,7 @@ I'm a student in mathematics and a bit of computer science. I use Sage for diver
 archive/issue_comments_059327.json:
 ```json
 {
-    "body": "Attachment\n\nRemove no-op tests",
+    "body": "Attachment [trac_7159-appendix.patch](tarball://root/attachments/some-uuid/ticket7159/trac_7159-appendix.patch) by AJonsson created at 2009-10-26 18:04:26\n\nRemove no-op tests",
     "created_at": "2009-10-26T18:04:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7159",
     "type": "issue_comment",
@@ -207,7 +207,7 @@ archive/issue_comments_059327.json:
 }
 ```
 
-Attachment
+Attachment [trac_7159-appendix.patch](tarball://root/attachments/some-uuid/ticket7159/trac_7159-appendix.patch) by AJonsson created at 2009-10-26 18:04:26
 
 Remove no-op tests
 
@@ -321,7 +321,7 @@ Adds one test
 archive/issue_comments_059333.json:
 ```json
 {
-    "body": "Attachment\n\nPerhaps the last one ? :-)",
+    "body": "Attachment [trac_7159-appendix-appendix.patch](tarball://root/attachments/some-uuid/ticket7159/trac_7159-appendix-appendix.patch) by ncohen created at 2009-10-31 10:30:55\n\nPerhaps the last one ? :-)",
     "created_at": "2009-10-31T10:30:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7159",
     "type": "issue_comment",
@@ -330,7 +330,7 @@ archive/issue_comments_059333.json:
 }
 ```
 
-Attachment
+Attachment [trac_7159-appendix-appendix.patch](tarball://root/attachments/some-uuid/ticket7159/trac_7159-appendix-appendix.patch) by ncohen created at 2009-10-31 10:30:55
 
 Perhaps the last one ? :-)
 

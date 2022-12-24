@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7704
 archive/issue_comments_066115.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7704.patch](tarball://root/attachments/some-uuid/ticket7704/trac_7704.patch) by was created at 2009-12-16 08:34:24",
     "created_at": "2009-12-16T08:34:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7704",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_066115.json:
 }
 ```
 
-Attachment
+Attachment [trac_7704.patch](tarball://root/attachments/some-uuid/ticket7704/trac_7704.patch) by was created at 2009-12-16 08:34:24
 
 
 
@@ -93,7 +93,7 @@ Very minor cosmetic change to the method
 archive/issue_comments_066118.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch looks fine, and ``make test`` on my installation of SAGE 4.2.1 returns only one unrelated error, which I include for completeness:\n\n\n```\nsage -t  \"devel/sage/sage/plot/plot3d/tachyon.py\"\n```\n\n\n\n```\nFile \"/scratch/pancratz/sage-4.2.1/devel/sage/sage/plot/plot3d/tachyon.py\", line 297:\n    sage: os.system('rm ' + tempname)\nExpected:\n    0\nGot:\n    256\n```\n\n\nI have attached an additional patch which removes one unused local variable.\n\nSebastian",
+    "body": "Attachment [trac_7704b.patch](tarball://root/attachments/some-uuid/ticket7704/trac_7704b.patch) by spancratz created at 2009-12-19 01:13:59\n\nThe patch looks fine, and ``make test`` on my installation of SAGE 4.2.1 returns only one unrelated error, which I include for completeness:\n\n\n```\nsage -t  \"devel/sage/sage/plot/plot3d/tachyon.py\"\n```\n\n\n\n```\nFile \"/scratch/pancratz/sage-4.2.1/devel/sage/sage/plot/plot3d/tachyon.py\", line 297:\n    sage: os.system('rm ' + tempname)\nExpected:\n    0\nGot:\n    256\n```\n\n\nI have attached an additional patch which removes one unused local variable.\n\nSebastian",
     "created_at": "2009-12-19T01:13:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7704",
     "type": "issue_comment",
@@ -102,7 +102,7 @@ archive/issue_comments_066118.json:
 }
 ```
 
-Attachment
+Attachment [trac_7704b.patch](tarball://root/attachments/some-uuid/ticket7704/trac_7704b.patch) by spancratz created at 2009-12-19 01:13:59
 
 The patch looks fine, and ``make test`` on my installation of SAGE 4.2.1 returns only one unrelated error, which I include for completeness:
 

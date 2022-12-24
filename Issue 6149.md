@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6149
 archive/issue_comments_049079.json:
 ```json
 {
-    "body": "Attachment\n\npatch against 4.0.rc1",
+    "body": "Attachment [trac_6149.patch](tarball://root/attachments/some-uuid/ticket6149/trac_6149.patch) by davidloeffler created at 2009-05-28 13:15:25\n\npatch against 4.0.rc1",
     "created_at": "2009-05-28T13:15:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6149",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_049079.json:
 }
 ```
 
-Attachment
+Attachment [trac_6149.patch](tarball://root/attachments/some-uuid/ticket6149/trac_6149.patch) by davidloeffler created at 2009-05-28 13:15:25
 
 patch against 4.0.rc1
 
@@ -77,7 +77,7 @@ John: I've cced you here, since you say you have suffered from this too :-) Any 
 archive/issue_comments_049081.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6149-2.patch](tarball://root/attachments/some-uuid/ticket6149/trac_6149-2.patch) by mhansen created at 2009-05-28 16:31:29",
     "created_at": "2009-05-28T16:31:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6149",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_049081.json:
 }
 ```
 
-Attachment
+Attachment [trac_6149-2.patch](tarball://root/attachments/some-uuid/ticket6149/trac_6149-2.patch) by mhansen created at 2009-05-28 16:31:29
 
 
 

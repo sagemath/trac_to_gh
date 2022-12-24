@@ -79,7 +79,7 @@ Changing status from new to needs_review.
 archive/issue_comments_086160.json:
 ```json
 {
-    "body": "Attachment\n\nHere's a patch. It fixes the \"log\" method so it returns the right answer when the multiplicative group is cyclic, and adds a new method (I called this \"generalised log\" -- I didn't know what else to call it) which returns a vector of exponents with respect to the generators of the unit group.",
+    "body": "Attachment [trac_9205-discrete_log.patch](tarball://root/attachments/some-uuid/ticket9205/trac_9205-discrete_log.patch) by davidloeffler created at 2010-06-10 14:43:26\n\nHere's a patch. It fixes the \"log\" method so it returns the right answer when the multiplicative group is cyclic, and adds a new method (I called this \"generalised log\" -- I didn't know what else to call it) which returns a vector of exponents with respect to the generators of the unit group.",
     "created_at": "2010-06-10T14:43:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9205",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_086160.json:
 }
 ```
 
-Attachment
+Attachment [trac_9205-discrete_log.patch](tarball://root/attachments/some-uuid/ticket9205/trac_9205-discrete_log.patch) by davidloeffler created at 2010-06-10 14:43:26
 
 Here's a patch. It fixes the "log" method so it returns the right answer when the multiplicative group is cyclic, and adds a new method (I called this "generalised log" -- I didn't know what else to call it) which returns a vector of exponents with respect to the generators of the unit group.
 
@@ -153,7 +153,7 @@ apply over previous patch
 archive/issue_comments_086164.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:2 cremona]:\n> Looks fine, applies to 4.4.4.alpha1 also and tests in rings/finite_rings pass.\n\n... but one of the doctest in sage/functions/log doesn't. Here's a tiny patch that fixes that.",
+    "body": "Attachment [trac_9205-doctest.patch](tarball://root/attachments/some-uuid/ticket9205/trac_9205-doctest.patch) by davidloeffler created at 2010-06-30 19:04:11\n\nReplying to [comment:2 cremona]:\n> Looks fine, applies to 4.4.4.alpha1 also and tests in rings/finite_rings pass.\n\n... but one of the doctest in sage/functions/log doesn't. Here's a tiny patch that fixes that.",
     "created_at": "2010-06-30T19:04:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9205",
     "type": "issue_comment",
@@ -162,7 +162,7 @@ archive/issue_comments_086164.json:
 }
 ```
 
-Attachment
+Attachment [trac_9205-doctest.patch](tarball://root/attachments/some-uuid/ticket9205/trac_9205-doctest.patch) by davidloeffler created at 2010-06-30 19:04:11
 
 Replying to [comment:2 cremona]:
 > Looks fine, applies to 4.4.4.alpha1 also and tests in rings/finite_rings pass.

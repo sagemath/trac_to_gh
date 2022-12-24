@@ -129,7 +129,7 @@ Changing status from new to needs_review.
 archive/issue_comments_085996.json:
 ```json
 {
-    "body": "Attachment\n\nI expanded on your patch, added a doctest, renamed `sage-sagex` to `sage-run-cython`.",
+    "body": "Attachment [9191_run_cython.patch](tarball://root/attachments/some-uuid/ticket9191/9191_run_cython.patch) by jdemeyer created at 2012-09-27 12:20:10\n\nI expanded on your patch, added a doctest, renamed `sage-sagex` to `sage-run-cython`.",
     "created_at": "2012-09-27T12:20:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9191",
     "type": "issue_comment",
@@ -138,7 +138,7 @@ archive/issue_comments_085996.json:
 }
 ```
 
-Attachment
+Attachment [9191_run_cython.patch](tarball://root/attachments/some-uuid/ticket9191/9191_run_cython.patch) by jdemeyer created at 2012-09-27 12:20:10
 
 I expanded on your patch, added a doctest, renamed `sage-sagex` to `sage-run-cython`.
 
@@ -352,7 +352,7 @@ This will need to be rebased to #13579.
 archive/issue_comments_086006.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9191_doctest_spyx.patch](tarball://root/attachments/some-uuid/ticket9191/9191_doctest_spyx.patch) by jdemeyer created at 2012-11-06 19:54:59",
     "created_at": "2012-11-06T19:54:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9191",
     "type": "issue_comment",
@@ -361,7 +361,7 @@ archive/issue_comments_086006.json:
 }
 ```
 
-Attachment
+Attachment [9191_doctest_spyx.patch](tarball://root/attachments/some-uuid/ticket9191/9191_doctest_spyx.patch) by jdemeyer created at 2012-11-06 19:54:59
 
 
 

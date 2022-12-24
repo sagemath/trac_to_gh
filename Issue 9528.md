@@ -114,7 +114,7 @@ I disagree -- It's 33 lines long, and  I read it for 2 minutes and didn't fully 
 archive/issue_comments_091659.json:
 ```json
 {
-    "body": "Attachment\n\nBash script to create specific version of \"pipestatus\" in $SAGE_ROOT/spkg",
+    "body": "Attachment [create-pipestatus.sh](tarball://root/attachments/some-uuid/ticket9528/create-pipestatus.sh) by leif created at 2010-07-17 13:56:28\n\nBash script to create specific version of \"pipestatus\" in $SAGE_ROOT/spkg",
     "created_at": "2010-07-17T13:56:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9528",
     "type": "issue_comment",
@@ -123,7 +123,7 @@ archive/issue_comments_091659.json:
 }
 ```
 
-Attachment
+Attachment [create-pipestatus.sh](tarball://root/attachments/some-uuid/ticket9528/create-pipestatus.sh) by leif created at 2010-07-17 13:56:28
 
 Bash script to create specific version of "pipestatus" in $SAGE_ROOT/spkg
 
@@ -221,7 +221,7 @@ if [ $# -ne 2 ]; then
 archive/issue_comments_091664.json:
 ```json
 {
-    "body": "Attachment\n\nthis should be put as SAGE_ROOT/spkg/install",
+    "body": "Attachment [install](tarball://root/attachments/some-uuid/ticket9528/install) by was created at 2010-07-17 14:59:10\n\nthis should be put as SAGE_ROOT/spkg/install",
     "created_at": "2010-07-17T14:59:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9528",
     "type": "issue_comment",
@@ -230,7 +230,7 @@ archive/issue_comments_091664.json:
 }
 ```
 
-Attachment
+Attachment [install](tarball://root/attachments/some-uuid/ticket9528/install) by was created at 2010-07-17 14:59:10
 
 this should be put as SAGE_ROOT/spkg/install
 
@@ -241,7 +241,7 @@ this should be put as SAGE_ROOT/spkg/install
 archive/issue_comments_091665.json:
 ```json
 {
-    "body": "Attachment\n\nCreates a slightly improved version of pipestatus, no changes to the script code itself",
+    "body": "Attachment [create-pipestatus-v2.sh](tarball://root/attachments/some-uuid/ticket9528/create-pipestatus-v2.sh) by leif created at 2010-07-17 15:00:40\n\nCreates a slightly improved version of pipestatus, no changes to the script code itself",
     "created_at": "2010-07-17T15:00:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9528",
     "type": "issue_comment",
@@ -250,7 +250,7 @@ archive/issue_comments_091665.json:
 }
 ```
 
-Attachment
+Attachment [create-pipestatus-v2.sh](tarball://root/attachments/some-uuid/ticket9528/create-pipestatus-v2.sh) by leif created at 2010-07-17 15:00:40
 
 Creates a slightly improved version of pipestatus, no changes to the script code itself
 
@@ -398,7 +398,7 @@ Remove blank line, add chmod.  Updated `spkg/install` based on "4.5"
 archive/issue_comments_091671.json:
 ```json
 {
-    "body": "Attachment\n\nDiff of `spkg/install` vs \"4.5\".",
+    "body": "Attachment [install.diff](tarball://root/attachments/some-uuid/ticket9528/install.diff) by mpatel created at 2010-07-17 21:17:56\n\nDiff of `spkg/install` vs \"4.5\".",
     "created_at": "2010-07-17T21:17:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9528",
     "type": "issue_comment",
@@ -407,7 +407,7 @@ archive/issue_comments_091671.json:
 }
 ```
 
-Attachment
+Attachment [install.diff](tarball://root/attachments/some-uuid/ticket9528/install.diff) by mpatel created at 2010-07-17 21:17:56
 
 Diff of `spkg/install` vs "4.5".
 

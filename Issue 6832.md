@@ -48,7 +48,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6832
 archive/issue_comments_056347.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [inverse_mod.patch](tarball://root/attachments/some-uuid/ticket6832/inverse_mod.patch) by mtaranes created at 2009-08-27 12:50:42",
     "created_at": "2009-08-27T12:50:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6832",
     "type": "issue_comment",
@@ -57,7 +57,7 @@ archive/issue_comments_056347.json:
 }
 ```
 
-Attachment
+Attachment [inverse_mod.patch](tarball://root/attachments/some-uuid/ticket6832/inverse_mod.patch) by mtaranes created at 2009-08-27 12:50:42
 
 
 

@@ -325,7 +325,7 @@ Changing status from new to needs_review.
 archive/issue_comments_095600.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9760-matrix2-noise.pyx](tarball://root/attachments/some-uuid/ticket9760/trac_9760-matrix2-noise.pyx) by jhpalmieri created at 2010-08-18 22:11:26",
     "created_at": "2010-08-18T22:11:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9759",
     "type": "issue_comment",
@@ -334,7 +334,7 @@ archive/issue_comments_095600.json:
 }
 ```
 
-Attachment
+Attachment [trac_9760-matrix2-noise.pyx](tarball://root/attachments/some-uuid/ticket9760/trac_9760-matrix2-noise.pyx) by jhpalmieri created at 2010-08-18 22:11:26
 
 
 
@@ -361,7 +361,7 @@ See #9765 for the "abs" issue.
 archive/issue_comments_095602.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9760-matrix2-noise.patch](tarball://root/attachments/some-uuid/ticket9760/trac_9760-matrix2-noise.patch) by jhpalmieri created at 2010-08-18 22:21:16",
     "created_at": "2010-08-18T22:21:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9759",
     "type": "issue_comment",
@@ -370,7 +370,7 @@ archive/issue_comments_095602.json:
 }
 ```
 
-Attachment
+Attachment [trac_9760-matrix2-noise.patch](tarball://root/attachments/some-uuid/ticket9760/trac_9760-matrix2-noise.patch) by jhpalmieri created at 2010-08-18 22:21:16
 
 
 

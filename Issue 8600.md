@@ -125,7 +125,7 @@ Thanks for your example and quick response, I like it! I've modified it a bit, a
 archive/issue_comments_077884.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [fibonaccy-graph.patch](tarball://root/attachments/some-uuid/ticket8600/fibonaccy-graph.patch) by schilly created at 2010-03-25 18:41:28",
     "created_at": "2010-03-25T18:41:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8600",
     "type": "issue_comment",
@@ -134,7 +134,7 @@ archive/issue_comments_077884.json:
 }
 ```
 
-Attachment
+Attachment [fibonaccy-graph.patch](tarball://root/attachments/some-uuid/ticket8600/fibonaccy-graph.patch) by schilly created at 2010-03-25 18:41:28
 
 
 

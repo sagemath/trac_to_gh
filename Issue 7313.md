@@ -167,7 +167,7 @@ homology/simplicial_complex.py
 archive/issue_comments_061112.json:
 ```json
 {
-    "body": "Attachment\n\ndepends on #7018",
+    "body": "Attachment [trac_7313-multiline.patch](tarball://root/attachments/some-uuid/ticket7313/trac_7313-multiline.patch) by jhpalmieri created at 2010-01-20 04:35:14\n\ndepends on #7018",
     "created_at": "2010-01-20T04:35:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7313",
     "type": "issue_comment",
@@ -176,7 +176,7 @@ archive/issue_comments_061112.json:
 }
 ```
 
-Attachment
+Attachment [trac_7313-multiline.patch](tarball://root/attachments/some-uuid/ticket7313/trac_7313-multiline.patch) by jhpalmieri created at 2010-01-20 04:35:14
 
 depends on #7018
 

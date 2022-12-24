@@ -98,7 +98,7 @@ Changing status from new to needs_review.
 archive/issue_comments_072923.json:
 ```json
 {
-    "body": "Attachment\n\nI just made that one change making the 7 a 6.",
+    "body": "Attachment [trac_8245_Euler_Guided_Tour.patch](tarball://root/attachments/some-uuid/ticket8245/trac_8245_Euler_Guided_Tour.patch) by ksmith created at 2012-01-11 21:27:38\n\nI just made that one change making the 7 a 6.",
     "created_at": "2012-01-11T21:27:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8245",
     "type": "issue_comment",
@@ -107,7 +107,7 @@ archive/issue_comments_072923.json:
 }
 ```
 
-Attachment
+Attachment [trac_8245_Euler_Guided_Tour.patch](tarball://root/attachments/some-uuid/ticket8245/trac_8245_Euler_Guided_Tour.patch) by ksmith created at 2012-01-11 21:27:38
 
 I just made that one change making the 7 a 6.
 

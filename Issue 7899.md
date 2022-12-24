@@ -63,7 +63,7 @@ Changing status from new to needs_review.
 archive/issue_comments_068705.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ntl-variables-to-commands.patch](tarball://root/attachments/some-uuid/ticket7899/ntl-variables-to-commands.patch) by drkirkby created at 2010-01-12 03:57:09",
     "created_at": "2010-01-12T03:57:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7899",
     "type": "issue_comment",
@@ -72,7 +72,7 @@ archive/issue_comments_068705.json:
 }
 ```
 
-Attachment
+Attachment [ntl-variables-to-commands.patch](tarball://root/attachments/some-uuid/ticket7899/ntl-variables-to-commands.patch) by drkirkby created at 2010-01-12 03:57:09
 
 
 

@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2516
 archive/issue_comments_017088.json:
 ```json
 {
-    "body": "Attachment\n\ntentative implementation of generalized hypergeometric functions",
+    "body": "Attachment [hyper.patch](tarball://root/attachments/some-uuid/ticket2516/hyper.patch) by fredrik.johansson created at 2010-07-26 03:17:42\n\ntentative implementation of generalized hypergeometric functions",
     "created_at": "2010-07-26T03:17:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2516",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_017088.json:
 }
 ```
 
-Attachment
+Attachment [hyper.patch](tarball://root/attachments/some-uuid/ticket2516/hyper.patch) by fredrik.johansson created at 2010-07-26 03:17:42
 
 tentative implementation of generalized hypergeometric functions
 
@@ -238,7 +238,7 @@ Here is an initial version of an updated patch. It needs some work because it's 
 archive/issue_comments_017098.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [hyper3.patch](tarball://root/attachments/some-uuid/ticket2516/hyper3.patch) by eviatarbach created at 2013-07-05 11:20:13",
     "created_at": "2013-07-05T11:20:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2516",
     "type": "issue_comment",
@@ -247,7 +247,7 @@ archive/issue_comments_017098.json:
 }
 ```
 
-Attachment
+Attachment [hyper3.patch](tarball://root/attachments/some-uuid/ticket2516/hyper3.patch) by eviatarbach created at 2013-07-05 11:20:13
 
 
 
@@ -314,7 +314,7 @@ Other than that the patch should be ready for review.
 archive/issue_comments_017102.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_2516.patch](tarball://root/attachments/some-uuid/ticket2516/trac_2516.patch) by eviatarbach created at 2013-07-14 02:49:22",
     "created_at": "2013-07-14T02:49:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2516",
     "type": "issue_comment",
@@ -323,7 +323,7 @@ archive/issue_comments_017102.json:
 }
 ```
 
-Attachment
+Attachment [trac_2516.patch](tarball://root/attachments/some-uuid/ticket2516/trac_2516.patch) by eviatarbach created at 2013-07-14 02:49:22
 
 
 
@@ -350,7 +350,7 @@ New patch fixes a circular import issue which caused a problem with numerical ev
 archive/issue_comments_017104.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_2516_2.patch](tarball://root/attachments/some-uuid/ticket2516/trac_2516_2.patch) by eviatarbach created at 2013-07-15 03:08:20",
     "created_at": "2013-07-15T03:08:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2516",
     "type": "issue_comment",
@@ -359,7 +359,7 @@ archive/issue_comments_017104.json:
 }
 ```
 
-Attachment
+Attachment [trac_2516_2.patch](tarball://root/attachments/some-uuid/ticket2516/trac_2516_2.patch) by eviatarbach created at 2013-07-15 03:08:20
 
 
 

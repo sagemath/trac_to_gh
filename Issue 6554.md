@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6554
 archive/issue_comments_053448.json:
 ```json
 {
-    "body": "Attachment\n\nThis took a very long time before, if it was even possible.\n\n\n```\n        sage: A=random_matrix(ZZ,100000,density=.00001,sparse=True)\n        sage: matrix_plot(A,marker=',')\n```\n",
+    "body": "Attachment [trac-6554-sparse-matrix-plot.patch](tarball://root/attachments/some-uuid/ticket6554/trac-6554-sparse-matrix-plot.patch) by jason created at 2009-07-18 14:54:27\n\nThis took a very long time before, if it was even possible.\n\n\n```\n        sage: A=random_matrix(ZZ,100000,density=.00001,sparse=True)\n        sage: matrix_plot(A,marker=',')\n```\n",
     "created_at": "2009-07-18T14:54:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6554",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_053448.json:
 }
 ```
 
-Attachment
+Attachment [trac-6554-sparse-matrix-plot.patch](tarball://root/attachments/some-uuid/ticket6554/trac-6554-sparse-matrix-plot.patch) by jason created at 2009-07-18 14:54:27
 
 This took a very long time before, if it was even possible.
 
@@ -133,7 +133,7 @@ comment to this effect be added to the docstring?
 archive/issue_comments_053452.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of previous patch",
+    "body": "Attachment [trac-6554-matrix-plot-docs.patch](tarball://root/attachments/some-uuid/ticket6554/trac-6554-matrix-plot-docs.patch) by jason created at 2009-07-27 16:04:40\n\napply on top of previous patch",
     "created_at": "2009-07-27T16:04:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6554",
     "type": "issue_comment",
@@ -142,7 +142,7 @@ archive/issue_comments_053452.json:
 }
 ```
 
-Attachment
+Attachment [trac-6554-matrix-plot-docs.patch](tarball://root/attachments/some-uuid/ticket6554/trac-6554-matrix-plot-docs.patch) by jason created at 2009-07-27 16:04:40
 
 apply on top of previous patch
 

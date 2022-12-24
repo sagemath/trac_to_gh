@@ -83,7 +83,7 @@ This is based on sage-3.3 + ReST patches, but I think it would probably apply wi
 archive/issue_comments_041142.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac5340-ntl-contexts-and-dealloc.patch](tarball://root/attachments/some-uuid/ticket5340/trac5340-ntl-contexts-and-dealloc.patch) by cwitty created at 2009-02-22 20:47:13",
     "created_at": "2009-02-22T20:47:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5340",
     "type": "issue_comment",
@@ -92,7 +92,7 @@ archive/issue_comments_041142.json:
 }
 ```
 
-Attachment
+Attachment [trac5340-ntl-contexts-and-dealloc.patch](tarball://root/attachments/some-uuid/ticket5340/trac5340-ntl-contexts-and-dealloc.patch) by cwitty created at 2009-02-22 20:47:13
 
 
 

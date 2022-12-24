@@ -125,7 +125,7 @@ No, not quite yet.  Basically, we'll also have the stuff to autotools to detect 
 archive/issue_comments_077227.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8542-pynac_pointer_table.patch](tarball://root/attachments/some-uuid/ticket8542/trac_8542-pynac_pointer_table.patch) by mhansen created at 2010-05-03 13:33:27",
     "created_at": "2010-05-03T13:33:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8542",
     "type": "issue_comment",
@@ -134,7 +134,7 @@ archive/issue_comments_077227.json:
 }
 ```
 
-Attachment
+Attachment [trac_8542-pynac_pointer_table.patch](tarball://root/attachments/some-uuid/ticket8542/trac_8542-pynac_pointer_table.patch) by mhansen created at 2010-05-03 13:33:27
 
 
 

@@ -59,7 +59,7 @@ Changing status from new to needs_review.
 archive/issue_comments_036683.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [patch_4838-vd.patch](tarball://root/attachments/some-uuid/ticket4838/patch_4838-vd.patch) by vdelecroix created at 2010-01-29 22:34:31",
     "created_at": "2010-01-29T22:34:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4838",
     "type": "issue_comment",
@@ -68,7 +68,7 @@ archive/issue_comments_036683.json:
 }
 ```
 
-Attachment
+Attachment [patch_4838-vd.patch](tarball://root/attachments/some-uuid/ticket4838/patch_4838-vd.patch) by vdelecroix created at 2010-01-29 22:34:31
 
 
 
@@ -77,7 +77,7 @@ Attachment
 archive/issue_comments_036684.json:
 ```json
 {
-    "body": "Attachment\n\nuse only this one !",
+    "body": "Attachment [trac_4838-vd.patch](tarball://root/attachments/some-uuid/ticket4838/trac_4838-vd.patch) by vdelecroix created at 2010-01-29 22:45:04\n\nuse only this one !",
     "created_at": "2010-01-29T22:45:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4838",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_036684.json:
 }
 ```
 
-Attachment
+Attachment [trac_4838-vd.patch](tarball://root/attachments/some-uuid/ticket4838/trac_4838-vd.patch) by vdelecroix created at 2010-01-29 22:45:04
 
 use only this one !
 

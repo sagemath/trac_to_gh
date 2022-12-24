@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2816
 archive/issue_comments_019334.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [linear-algebra-interface.patch](tarball://root/attachments/some-uuid/ticket2816/linear-algebra-interface.patch) by jason created at 2008-07-19 18:48:32",
     "created_at": "2008-07-19T18:48:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2816",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_019334.json:
 }
 ```
 
-Attachment
+Attachment [linear-algebra-interface.patch](tarball://root/attachments/some-uuid/ticket2816/linear-algebra-interface.patch) by jason created at 2008-07-19 18:48:32
 
 
 

@@ -118,7 +118,7 @@ There are a number of easy solutions, but I think the most robust would be to ju
 archive/issue_comments_058084.json:
 ```json
 {
-    "body": "Attachment\n\nchanged some double quotes to double backquotes",
+    "body": "Attachment [7017.patch](tarball://root/attachments/some-uuid/ticket7017/7017.patch) by kevin.stueve created at 2010-01-17 18:25:58\n\nchanged some double quotes to double backquotes",
     "created_at": "2010-01-17T18:25:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7017",
     "type": "issue_comment",
@@ -127,7 +127,7 @@ archive/issue_comments_058084.json:
 }
 ```
 
-Attachment
+Attachment [7017.patch](tarball://root/attachments/some-uuid/ticket7017/7017.patch) by kevin.stueve created at 2010-01-17 18:25:58
 
 changed some double quotes to double backquotes
 
@@ -275,7 +275,7 @@ Adds some docstring formatting and does a little Python 3 preparation.
 archive/issue_comments_058090.json:
 ```json
 {
-    "body": "Attachment\n\nGood job. Looks good to me. This referee patch does a little bit of formatting tweaks. Please feel free to review or ignore the patch.",
+    "body": "Attachment [trac_7017-referee.patch](tarball://root/attachments/some-uuid/ticket7017/trac_7017-referee.patch) by timdumol created at 2010-01-18 07:48:23\n\nGood job. Looks good to me. This referee patch does a little bit of formatting tweaks. Please feel free to review or ignore the patch.",
     "created_at": "2010-01-18T07:48:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7017",
     "type": "issue_comment",
@@ -284,7 +284,7 @@ archive/issue_comments_058090.json:
 }
 ```
 
-Attachment
+Attachment [trac_7017-referee.patch](tarball://root/attachments/some-uuid/ticket7017/trac_7017-referee.patch) by timdumol created at 2010-01-18 07:48:23
 
 Good job. Looks good to me. This referee patch does a little bit of formatting tweaks. Please feel free to review or ignore the patch.
 
@@ -335,7 +335,7 @@ Kevin: for the record, we put human-readable names in Author: and Reviewer:, not
 archive/issue_comments_058093.json:
 ```json
 {
-    "body": "Attachment\n\nFixes a transposed word. Apply this referee patch on top of original patch (7017.patch)",
+    "body": "Attachment [trac_7017-referee.2.patch](tarball://root/attachments/some-uuid/ticket7017/trac_7017-referee.2.patch) by timdumol created at 2010-01-18 08:16:19\n\nFixes a transposed word. Apply this referee patch on top of original patch (7017.patch)",
     "created_at": "2010-01-18T08:16:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7017",
     "type": "issue_comment",
@@ -344,7 +344,7 @@ archive/issue_comments_058093.json:
 }
 ```
 
-Attachment
+Attachment [trac_7017-referee.2.patch](tarball://root/attachments/some-uuid/ticket7017/trac_7017-referee.2.patch) by timdumol created at 2010-01-18 08:16:19
 
 Fixes a transposed word. Apply this referee patch on top of original patch (7017.patch)
 
@@ -409,7 +409,7 @@ Resolution: fixed
 archive/issue_comments_058097.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7017-ref3.patch](tarball://root/attachments/some-uuid/ticket7017/trac_7017-ref3.patch) by rlm created at 2010-01-19 01:14:26",
     "created_at": "2010-01-19T01:14:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7017",
     "type": "issue_comment",
@@ -418,7 +418,7 @@ archive/issue_comments_058097.json:
 }
 ```
 
-Attachment
+Attachment [trac_7017-ref3.patch](tarball://root/attachments/some-uuid/ticket7017/trac_7017-ref3.patch) by rlm created at 2010-01-19 01:14:26
 
 
 

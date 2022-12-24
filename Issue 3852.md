@@ -132,7 +132,7 @@ http://sourceforge.net/mailarchive/forum.php?thread_name=200808051930.57498.dsda
 archive/issue_comments_027399.json:
 ```json
 {
-    "body": "Attachment\n\nFIRST REFEREE REPORT on trac_3852.patch:\n\n1. The doctest coverage is still very bad (38%):\n\n\n```\nwstein@sage:~/build/sage-4.1.1$ ./sage -coverage devel/sage/sage/symbolic/units.py \n----------------------------------------------------------------------\ndevel/sage/sage/symbolic/units.py\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE devel/sage/sage/symbolic/units.py: 38% (5 of 13)\n\nMissing documentation:\n         * evalunitdict():\n         * unit_derivations_expr(v):\n         * _sage_doc_(self):\n         * str_to_unit(name):\n         * __init__(self, data):\n         * trait_names(self):\n         * __getattr__(self, name):\n\n\nMissing doctests:\n         * vars_in_str(s):\n\n\nPossibly wrong (function name doesn't occur in doctests):\n         * convert_temperature(expr, target):\n\n----------------------------------------------------------------------\n\n```\n\n\n\n\n2. The new code fails numerous doctests:\n\n```\n        sage -t  devel/sage/sage/symbolic/units.py # 4 doctests failed\n        sage -t  devel/sage/sage/symbolic/expression.pyx # 2 doctests failed\n```\n\n\nThe actual failures:\n\n```\n\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.1.1/devel/sage/sage/symbolic/expression.pyx\", line 5399:\n    sage: (units.pressure.pascal*units.si_prefixes.kilo).convert(units.pressure.pounds_per_square_inch)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_137[10]>\", line 1, in <module>\n        (units.pressure.pascal*units.si_prefixes.kilo).convert(units.pressure.pounds_per_square_inch)###line 5399:\n    sage: (units.pressure.pascal*units.si_prefixes.kilo).convert(units.pressure.pounds_per_square_inch)\n      File \"expression.pyx\", line 5424, in sage.symbolic.expression.Expression.convert (sage/symbolic/expression.cpp:21250\n)\n      File \"/scratch/wstein/build/sage-4.1.1/local/lib/python/site-packages/sage/symbolic/units.py\", line 1064, in convert\n        expr = expr.subs(z)\n      File \"expression.pyx\", line 2777, in sage.symbolic.expression.Expression.substitute (sage/symbolic/expression.cpp:13\n700)\n      File \"expression.pyx\", line 1517, in sage.symbolic.expression.Expression.coerce_in (sage/symbolic/expression.cpp:959\n1)\n      File \"parent_old.pyx\", line 331, in sage.structure.parent_old.Parent._coerce_ (sage/structure/parent_old.c:4673)\n      File \"parent.pyx\", line 429, in sage.structure.parent.Parent.coerce (sage/structure/parent.c:4806)\n    TypeError: no canonical coercion from <type 'str'> to Symbolic Ring\n\n...\n\nFile \"/scratch/wstein/build/sage-4.1.1/devel/sage/sage/symbolic/units.py\", line 31:\n    e: units.force.dyne?\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[6]>\", line 1\n         units.force.dyne?###line 31:\n    e: units.force.dyne?\n                         ^\n     SyntaxError: invalid syntax\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.1.1/devel/sage/sage/symbolic/units.py\", line 52:\n\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.1.1/devel/sage/sage/symbolic/units.py\", line 52:\n    e: t.convert(unit.charge.coulomb)\nExpected:\n    Traceback (most recent call last):\n    ...\n    ValueError: Incompatible units\nGot:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[11]>\", line 1, in <module>\n        t.convert(unit.charge.coulomb)###line 52:\n    e: t.convert(unit.charge.coulomb)\n    NameError: name 'unit' is not defined\n\n\n...\n```\n",
+    "body": "Attachment [trac_3852.patch](tarball://root/attachments/some-uuid/ticket3852/trac_3852.patch) by was created at 2009-10-04 18:54:58\n\nFIRST REFEREE REPORT on trac_3852.patch:\n\n1. The doctest coverage is still very bad (38%):\n\n\n```\nwstein@sage:~/build/sage-4.1.1$ ./sage -coverage devel/sage/sage/symbolic/units.py \n----------------------------------------------------------------------\ndevel/sage/sage/symbolic/units.py\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE devel/sage/sage/symbolic/units.py: 38% (5 of 13)\n\nMissing documentation:\n         * evalunitdict():\n         * unit_derivations_expr(v):\n         * _sage_doc_(self):\n         * str_to_unit(name):\n         * __init__(self, data):\n         * trait_names(self):\n         * __getattr__(self, name):\n\n\nMissing doctests:\n         * vars_in_str(s):\n\n\nPossibly wrong (function name doesn't occur in doctests):\n         * convert_temperature(expr, target):\n\n----------------------------------------------------------------------\n\n```\n\n\n\n\n2. The new code fails numerous doctests:\n\n```\n        sage -t  devel/sage/sage/symbolic/units.py # 4 doctests failed\n        sage -t  devel/sage/sage/symbolic/expression.pyx # 2 doctests failed\n```\n\n\nThe actual failures:\n\n```\n\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.1.1/devel/sage/sage/symbolic/expression.pyx\", line 5399:\n    sage: (units.pressure.pascal*units.si_prefixes.kilo).convert(units.pressure.pounds_per_square_inch)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_137[10]>\", line 1, in <module>\n        (units.pressure.pascal*units.si_prefixes.kilo).convert(units.pressure.pounds_per_square_inch)###line 5399:\n    sage: (units.pressure.pascal*units.si_prefixes.kilo).convert(units.pressure.pounds_per_square_inch)\n      File \"expression.pyx\", line 5424, in sage.symbolic.expression.Expression.convert (sage/symbolic/expression.cpp:21250\n)\n      File \"/scratch/wstein/build/sage-4.1.1/local/lib/python/site-packages/sage/symbolic/units.py\", line 1064, in convert\n        expr = expr.subs(z)\n      File \"expression.pyx\", line 2777, in sage.symbolic.expression.Expression.substitute (sage/symbolic/expression.cpp:13\n700)\n      File \"expression.pyx\", line 1517, in sage.symbolic.expression.Expression.coerce_in (sage/symbolic/expression.cpp:959\n1)\n      File \"parent_old.pyx\", line 331, in sage.structure.parent_old.Parent._coerce_ (sage/structure/parent_old.c:4673)\n      File \"parent.pyx\", line 429, in sage.structure.parent.Parent.coerce (sage/structure/parent.c:4806)\n    TypeError: no canonical coercion from <type 'str'> to Symbolic Ring\n\n...\n\nFile \"/scratch/wstein/build/sage-4.1.1/devel/sage/sage/symbolic/units.py\", line 31:\n    e: units.force.dyne?\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[6]>\", line 1\n         units.force.dyne?###line 31:\n    e: units.force.dyne?\n                         ^\n     SyntaxError: invalid syntax\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.1.1/devel/sage/sage/symbolic/units.py\", line 52:\n\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.1.1/devel/sage/sage/symbolic/units.py\", line 52:\n    e: t.convert(unit.charge.coulomb)\nExpected:\n    Traceback (most recent call last):\n    ...\n    ValueError: Incompatible units\nGot:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[11]>\", line 1, in <module>\n        t.convert(unit.charge.coulomb)###line 52:\n    e: t.convert(unit.charge.coulomb)\n    NameError: name 'unit' is not defined\n\n\n...\n```\n",
     "created_at": "2009-10-04T18:54:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3852",
     "type": "issue_comment",
@@ -141,7 +141,7 @@ archive/issue_comments_027399.json:
 }
 ```
 
-Attachment
+Attachment [trac_3852.patch](tarball://root/attachments/some-uuid/ticket3852/trac_3852.patch) by was created at 2009-10-04 18:54:58
 
 FIRST REFEREE REPORT on trac_3852.patch:
 
@@ -345,7 +345,7 @@ I've now read the patch and will try to find time to run the tests.
 archive/issue_comments_027404.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3852-part2.patch](tarball://root/attachments/some-uuid/ticket3852/trac_3852-part2.patch) by was created at 2010-01-21 02:54:02",
     "created_at": "2010-01-21T02:54:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3852",
     "type": "issue_comment",
@@ -354,7 +354,7 @@ archive/issue_comments_027404.json:
 }
 ```
 
-Attachment
+Attachment [trac_3852-part2.patch](tarball://root/attachments/some-uuid/ticket3852/trac_3852-part2.patch) by was created at 2010-01-21 02:54:02
 
 
 
@@ -381,7 +381,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_027406.json:
 ```json
 {
-    "body": "Attachment\n\nHm, it is not easy to find out what units() is actually supposed to be used for.. \nIn the notebook, units? gives:\n\nFile: /Users/sschym/Programs/sage/local/lib/python2.6/site-packages/sage/symbolic/units.py\n\nType: <type \u2018instance\u2019>\n\nDefinition: units( [noargspec] )\n\nDocstring:\n\n    A collection of units of a some type.\n\n        EXAMPLES:\n\n        sage: units.power\n        Collection power of units: cheval_vapeur horsepower watt\n\nI could not find anything useful in the documentation, either. Do I have to compile the documentation separately? \n\nCheers\nStan",
+    "body": "Attachment [trac_3852-part3.patch](tarball://root/attachments/some-uuid/ticket3852/trac_3852-part3.patch) by schymans created at 2010-01-26 15:26:44\n\nHm, it is not easy to find out what units() is actually supposed to be used for.. \nIn the notebook, units? gives:\n\nFile: /Users/sschym/Programs/sage/local/lib/python2.6/site-packages/sage/symbolic/units.py\n\nType: <type \u2018instance\u2019>\n\nDefinition: units( [noargspec] )\n\nDocstring:\n\n    A collection of units of a some type.\n\n        EXAMPLES:\n\n        sage: units.power\n        Collection power of units: cheval_vapeur horsepower watt\n\nI could not find anything useful in the documentation, either. Do I have to compile the documentation separately? \n\nCheers\nStan",
     "created_at": "2010-01-26T15:26:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3852",
     "type": "issue_comment",
@@ -390,7 +390,7 @@ archive/issue_comments_027406.json:
 }
 ```
 
-Attachment
+Attachment [trac_3852-part3.patch](tarball://root/attachments/some-uuid/ticket3852/trac_3852-part3.patch) by schymans created at 2010-01-26 15:26:44
 
 Hm, it is not easy to find out what units() is actually supposed to be used for.. 
 In the notebook, units? gives:
@@ -642,7 +642,7 @@ I would like to see some tab/whitespace cleanup -- there are (again) tons of tab
 archive/issue_comments_027416.json:
 ```json
 {
-    "body": "Attachment\n\nremove tabs, trailing whitespace from units.py",
+    "body": "Attachment [trac_3852_fix_whitespace.patch](tarball://root/attachments/some-uuid/ticket3852/trac_3852_fix_whitespace.patch) by ddrake created at 2010-04-13 03:04:05\n\nremove tabs, trailing whitespace from units.py",
     "created_at": "2010-04-13T03:04:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3852",
     "type": "issue_comment",
@@ -651,7 +651,7 @@ archive/issue_comments_027416.json:
 }
 ```
 
-Attachment
+Attachment [trac_3852_fix_whitespace.patch](tarball://root/attachments/some-uuid/ticket3852/trac_3852_fix_whitespace.patch) by ddrake created at 2010-04-13 03:04:05
 
 remove tabs, trailing whitespace from units.py
 
@@ -662,7 +662,7 @@ remove tabs, trailing whitespace from units.py
 archive/issue_comments_027417.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3852_referee.patch](tarball://root/attachments/some-uuid/ticket3852/trac_3852_referee.patch) by ddrake created at 2010-04-13 03:04:25",
     "created_at": "2010-04-13T03:04:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3852",
     "type": "issue_comment",
@@ -671,7 +671,7 @@ archive/issue_comments_027417.json:
 }
 ```
 
-Attachment
+Attachment [trac_3852_referee.patch](tarball://root/attachments/some-uuid/ticket3852/trac_3852_referee.patch) by ddrake created at 2010-04-13 03:04:25
 
 
 

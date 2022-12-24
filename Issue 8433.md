@@ -298,7 +298,7 @@ I didn't run doctests.  I ran the three commands in notebook().  All three produ
 archive/issue_comments_075680.json:
 ```json
 {
-    "body": "Attachment\n\nnotebook output to second commmand in bug report",
+    "body": "Attachment [sage0.png](tarball://root/attachments/some-uuid/ticket8433/sage0.png) by ryan created at 2010-11-03 12:17:50\n\nnotebook output to second commmand in bug report",
     "created_at": "2010-11-03T12:17:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8433",
     "type": "issue_comment",
@@ -307,7 +307,7 @@ archive/issue_comments_075680.json:
 }
 ```
 
-Attachment
+Attachment [sage0.png](tarball://root/attachments/some-uuid/ticket8433/sage0.png) by ryan created at 2010-11-03 12:17:50
 
 notebook output to second commmand in bug report
 
@@ -340,7 +340,7 @@ B.show()
 archive/issue_comments_075682.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-8433_plot3d.patch](tarball://root/attachments/some-uuid/ticket8433/trac-8433_plot3d.patch) by mvngu created at 2010-11-04 04:48:31",
     "created_at": "2010-11-04T04:48:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8433",
     "type": "issue_comment",
@@ -349,7 +349,7 @@ archive/issue_comments_075682.json:
 }
 ```
 
-Attachment
+Attachment [trac-8433_plot3d.patch](tarball://root/attachments/some-uuid/ticket8433/trac-8433_plot3d.patch) by mvngu created at 2010-11-04 04:48:31
 
 
 

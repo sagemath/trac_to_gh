@@ -53,7 +53,7 @@ Changing status from new to assigned.
 archive/issue_comments_022011.json:
 ```json
 {
-    "body": "Attachment\n\nThe updated spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.2/alpha1/libpng-1.2.22.p6.spkg\n\nCheers,\n\nMichael",
+    "body": "Attachment [libpng-1.2.22.p5-more-64bit-osx-fixes.patch](tarball://root/attachments/some-uuid/ticket3179/libpng-1.2.22.p5-more-64bit-osx-fixes.patch) by mabshoff created at 2008-05-19 03:14:10\n\nThe updated spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.2/alpha1/libpng-1.2.22.p6.spkg\n\nCheers,\n\nMichael",
     "created_at": "2008-05-19T03:14:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3179",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_022011.json:
 }
 ```
 
-Attachment
+Attachment [libpng-1.2.22.p5-more-64bit-osx-fixes.patch](tarball://root/attachments/some-uuid/ticket3179/libpng-1.2.22.p5-more-64bit-osx-fixes.patch) by mabshoff created at 2008-05-19 03:14:10
 
 The updated spkg is at
 

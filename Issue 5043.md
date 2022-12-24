@@ -186,7 +186,7 @@ Steve Linton    School of Computer Science  &
 archive/issue_comments_038410.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5043-extcode-gap-console-help.patch](tarball://root/attachments/some-uuid/ticket5043/trac_5043-extcode-gap-console-help.patch) by iandrus created at 2012-06-05 17:54:15",
     "created_at": "2012-06-05T17:54:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5043",
     "type": "issue_comment",
@@ -195,7 +195,7 @@ archive/issue_comments_038410.json:
 }
 ```
 
-Attachment
+Attachment [trac_5043-extcode-gap-console-help.patch](tarball://root/attachments/some-uuid/ticket5043/trac_5043-extcode-gap-console-help.patch) by iandrus created at 2012-06-05 17:54:15
 
 
 
@@ -204,7 +204,7 @@ Attachment
 archive/issue_comments_038411.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5043-gap-console-help.patch](tarball://root/attachments/some-uuid/ticket5043/trac_5043-gap-console-help.patch) by iandrus created at 2012-06-05 17:54:36",
     "created_at": "2012-06-05T17:54:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5043",
     "type": "issue_comment",
@@ -213,7 +213,7 @@ archive/issue_comments_038411.json:
 }
 ```
 
-Attachment
+Attachment [trac_5043-gap-console-help.patch](tarball://root/attachments/some-uuid/ticket5043/trac_5043-gap-console-help.patch) by iandrus created at 2012-06-05 17:54:36
 
 
 

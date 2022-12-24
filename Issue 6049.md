@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6049
 archive/issue_comments_048187.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [bitset-complement-wordsize.patch](tarball://root/attachments/some-uuid/ticket6049/bitset-complement-wordsize.patch) by jason created at 2009-05-16 18:28:14",
     "created_at": "2009-05-16T18:28:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6049",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_048187.json:
 }
 ```
 
-Attachment
+Attachment [bitset-complement-wordsize.patch](tarball://root/attachments/some-uuid/ticket6049/bitset-complement-wordsize.patch) by jason created at 2009-05-16 18:28:14
 
 
 

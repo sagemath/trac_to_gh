@@ -53,7 +53,7 @@ Changing status from new to needs_review.
 archive/issue_comments_082285.json:
 ```json
 {
-    "body": "Attachment\n\nFixed a mistake in the first version...",
+    "body": "Attachment [trac_8936_expose_facet_inequalities_for_lattice_polytopes.patch](tarball://root/attachments/some-uuid/ticket8936/trac_8936_expose_facet_inequalities_for_lattice_polytopes.patch) by novoselt created at 2010-05-09 04:57:08\n\nFixed a mistake in the first version...",
     "created_at": "2010-05-09T04:57:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8936",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_082285.json:
 }
 ```
 
-Attachment
+Attachment [trac_8936_expose_facet_inequalities_for_lattice_polytopes.patch](tarball://root/attachments/some-uuid/ticket8936/trac_8936_expose_facet_inequalities_for_lattice_polytopes.patch) by novoselt created at 2010-05-09 04:57:08
 
 Fixed a mistake in the first version...
 

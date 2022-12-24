@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2862
 archive/issue_comments_019635.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_2862-doc-repo.patch](tarball://root/attachments/some-uuid/ticket2862/trac_2862-doc-repo.patch) by mabshoff created at 2008-04-09 07:49:30",
     "created_at": "2008-04-09T07:49:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2862",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_019635.json:
 }
 ```
 
-Attachment
+Attachment [trac_2862-doc-repo.patch](tarball://root/attachments/some-uuid/ticket2862/trac_2862-doc-repo.patch) by mabshoff created at 2008-04-09 07:49:30
 
 
 
@@ -53,7 +53,7 @@ Attachment
 archive/issue_comments_019636.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.",
+    "body": "Attachment [trac_2862-sage-repo.patch](tarball://root/attachments/some-uuid/ticket2862/trac_2862-sage-repo.patch) by mhansen created at 2008-04-09 08:27:49\n\nLooks good to me.",
     "created_at": "2008-04-09T08:27:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2862",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_019636.json:
 }
 ```
 
-Attachment
+Attachment [trac_2862-sage-repo.patch](tarball://root/attachments/some-uuid/ticket2862/trac_2862-sage-repo.patch) by mhansen created at 2008-04-09 08:27:49
 
 Looks good to me.
 
@@ -91,7 +91,7 @@ fix a small issue introduce by the previous patch
 archive/issue_comments_019638.json:
 ```json
 {
-    "body": "Attachment\n\nMerged all three patches in Sage 3.0.alpha3",
+    "body": "Attachment [trac_2862-sage-repo-2.patch](tarball://root/attachments/some-uuid/ticket2862/trac_2862-sage-repo-2.patch) by mabshoff created at 2008-04-09 08:45:10\n\nMerged all three patches in Sage 3.0.alpha3",
     "created_at": "2008-04-09T08:45:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2862",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_019638.json:
 }
 ```
 
-Attachment
+Attachment [trac_2862-sage-repo-2.patch](tarball://root/attachments/some-uuid/ticket2862/trac_2862-sage-repo-2.patch) by mabshoff created at 2008-04-09 08:45:10
 
 Merged all three patches in Sage 3.0.alpha3
 

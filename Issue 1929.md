@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1929
 archive/issue_comments_012242.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1929-examples_in_qqbar.patch](tarball://root/attachments/some-uuid/ticket1929/1929-examples_in_qqbar.patch) by AlexGhitza created at 2008-01-26 02:11:04",
     "created_at": "2008-01-26T02:11:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1929",
     "type": "issue_comment",
@@ -50,7 +50,7 @@ archive/issue_comments_012242.json:
 }
 ```
 
-Attachment
+Attachment [1929-examples_in_qqbar.patch](tarball://root/attachments/some-uuid/ticket1929/1929-examples_in_qqbar.patch) by AlexGhitza created at 2008-01-26 02:11:04
 
 
 

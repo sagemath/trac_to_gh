@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5642
 archive/issue_comments_044065.json:
 ```json
 {
-    "body": "Attachment\n\npatch against 3.4.1.alpha0",
+    "body": "Attachment [overconvergent-1.patch](tarball://root/attachments/some-uuid/ticket5642/overconvergent-1.patch) by davidloeffler created at 2009-03-30 09:50:45\n\npatch against 3.4.1.alpha0",
     "created_at": "2009-03-30T09:50:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5642",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_044065.json:
 }
 ```
 
-Attachment
+Attachment [overconvergent-1.patch](tarball://root/attachments/some-uuid/ticket5642/overconvergent-1.patch) by davidloeffler created at 2009-03-30 09:50:45
 
 patch against 3.4.1.alpha0
 
@@ -296,7 +296,7 @@ Most of these are plain stupidity on my part and I will fix them, and add doctes
 archive/issue_comments_044069.json:
 ```json
 {
-    "body": "Attachment\n\napply over previous patch",
+    "body": "Attachment [overconvergent-2.patch](tarball://root/attachments/some-uuid/ticket5642/overconvergent-2.patch) by davidloeffler created at 2009-04-01 14:19:54\n\napply over previous patch",
     "created_at": "2009-04-01T14:19:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5642",
     "type": "issue_comment",
@@ -305,7 +305,7 @@ archive/issue_comments_044069.json:
 }
 ```
 
-Attachment
+Attachment [overconvergent-2.patch](tarball://root/attachments/some-uuid/ticket5642/overconvergent-2.patch) by davidloeffler created at 2009-04-01 14:19:54
 
 apply over previous patch
 

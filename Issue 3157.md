@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3157
 archive/issue_comments_021905.json:
 ```json
 {
-    "body": "Attachment\n\nPatch looks good to me. The missing documentation will be supplied in a follow up patch.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_3157.patch](tarball://root/attachments/some-uuid/ticket3157/trac_3157.patch) by mabshoff created at 2008-05-11 10:04:16\n\nPatch looks good to me. The missing documentation will be supplied in a follow up patch.\n\nCheers,\n\nMichael",
     "created_at": "2008-05-11T10:04:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3157",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_021905.json:
 }
 ```
 
-Attachment
+Attachment [trac_3157.patch](tarball://root/attachments/some-uuid/ticket3157/trac_3157.patch) by mabshoff created at 2008-05-11 10:04:16
 
 Patch looks good to me. The missing documentation will be supplied in a follow up patch.
 

@@ -73,7 +73,7 @@ Ccing mhansen since he is currently working on plotting code.
 archive/issue_comments_034178.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-4563.patch](tarball://root/attachments/some-uuid/ticket4563/trac-4563.patch) by jason created at 2009-01-22 19:00:44",
     "created_at": "2009-01-22T19:00:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4563",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_034178.json:
 }
 ```
 
-Attachment
+Attachment [trac-4563.patch](tarball://root/attachments/some-uuid/ticket4563/trac-4563.patch) by jason created at 2009-01-22 19:00:44
 
 
 

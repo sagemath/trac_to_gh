@@ -87,7 +87,7 @@ That this doesn't work should be considered a bug.   The actual introspection is
 archive/issue_comments_016880.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_2491.patch](tarball://root/attachments/some-uuid/ticket2491/trac_2491.patch) by mhansen created at 2008-08-27 01:56:10",
     "created_at": "2008-08-27T01:56:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2491",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_016880.json:
 }
 ```
 
-Attachment
+Attachment [trac_2491.patch](tarball://root/attachments/some-uuid/ticket2491/trac_2491.patch) by mhansen created at 2008-08-27 01:56:10
 
 
 

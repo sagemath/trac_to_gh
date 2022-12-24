@@ -96,7 +96,7 @@ Changing assignee from was to GeorgSWeber.
 archive/issue_comments_051066.json:
 ```json
 {
-    "body": "Attachment\n\ntested against 4.0.2",
+    "body": "Attachment [trac_6379-Rdoctest.patch](tarball://root/attachments/some-uuid/ticket6379/trac_6379-Rdoctest.patch) by GeorgSWeber created at 2009-06-21 21:54:06\n\ntested against 4.0.2",
     "created_at": "2009-06-21T21:54:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6379",
     "type": "issue_comment",
@@ -105,7 +105,7 @@ archive/issue_comments_051066.json:
 }
 ```
 
-Attachment
+Attachment [trac_6379-Rdoctest.patch](tarball://root/attachments/some-uuid/ticket6379/trac_6379-Rdoctest.patch) by GeorgSWeber created at 2009-06-21 21:54:06
 
 tested against 4.0.2
 

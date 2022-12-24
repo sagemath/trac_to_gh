@@ -343,7 +343,7 @@ That's about 40 times faster!
 archive/issue_comments_023306.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3353.patch](tarball://root/attachments/some-uuid/ticket3353/sage-3353.patch) by was created at 2008-06-03 04:17:27",
     "created_at": "2008-06-03T04:17:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3353",
     "type": "issue_comment",
@@ -352,7 +352,7 @@ archive/issue_comments_023306.json:
 }
 ```
 
-Attachment
+Attachment [sage-3353.patch](tarball://root/attachments/some-uuid/ticket3353/sage-3353.patch) by was created at 2008-06-03 04:17:27
 
 
 
@@ -411,7 +411,7 @@ this fixes the one bug spotted by the referee
 archive/issue_comments_023309.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3353-part2.patch](tarball://root/attachments/some-uuid/ticket3353/sage-3353-part2.patch) by was created at 2008-06-03 05:50:05",
     "created_at": "2008-06-03T05:50:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3353",
     "type": "issue_comment",
@@ -420,7 +420,7 @@ archive/issue_comments_023309.json:
 }
 ```
 
-Attachment
+Attachment [sage-3353-part2.patch](tarball://root/attachments/some-uuid/ticket3353/sage-3353-part2.patch) by was created at 2008-06-03 05:50:05
 
 
 

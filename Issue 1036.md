@@ -106,7 +106,7 @@ gbTrace C++-linkage patch
 archive/issue_comments_006329.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [macaulay2_gbTrace_linkage.diff](tarball://root/attachments/some-uuid/ticket1036/macaulay2_gbTrace_linkage.diff) by was created at 2007-12-06 04:19:39",
     "created_at": "2007-12-06T04:19:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1036",
     "type": "issue_comment",
@@ -115,7 +115,7 @@ archive/issue_comments_006329.json:
 }
 ```
 
-Attachment
+Attachment [macaulay2_gbTrace_linkage.diff](tarball://root/attachments/some-uuid/ticket1036/macaulay2_gbTrace_linkage.diff) by was created at 2007-12-06 04:19:39
 
 
 

@@ -61,7 +61,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4202
 archive/issue_comments_030499.json:
 ```json
 {
-    "body": "Attachment\n\nNice job.  Looks good to me.",
+    "body": "Attachment [diff-latex.patch](tarball://root/attachments/some-uuid/ticket4202/diff-latex.patch) by mhansen created at 2008-09-26 21:53:05\n\nNice job.  Looks good to me.",
     "created_at": "2008-09-26T21:53:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4202",
     "type": "issue_comment",
@@ -70,7 +70,7 @@ archive/issue_comments_030499.json:
 }
 ```
 
-Attachment
+Attachment [diff-latex.patch](tarball://root/attachments/some-uuid/ticket4202/diff-latex.patch) by mhansen created at 2008-09-26 21:53:05
 
 Nice job.  Looks good to me.
 

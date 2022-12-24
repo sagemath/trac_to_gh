@@ -127,7 +127,7 @@ In that case I'll leave this alone and wait for you to provide a suitable patch!
 archive/issue_comments_018244.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2654-cyclo.patch](tarball://root/attachments/some-uuid/ticket2654/2654-cyclo.patch) by robertwb created at 2008-04-01 00:13:21",
     "created_at": "2008-04-01T00:13:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2654",
     "type": "issue_comment",
@@ -136,7 +136,7 @@ archive/issue_comments_018244.json:
 }
 ```
 
-Attachment
+Attachment [2654-cyclo.patch](tarball://root/attachments/some-uuid/ticket2654/2654-cyclo.patch) by robertwb created at 2008-04-01 00:13:21
 
 
 
@@ -238,7 +238,7 @@ Fix the above 2, and it's a positive review.
 archive/issue_comments_018247.json:
 ```json
 {
-    "body": "Attachment\n\nFixes area attached.",
+    "body": "Attachment [2654-cyclo-fixes.patch](tarball://root/attachments/some-uuid/ticket2654/2654-cyclo-fixes.patch) by robertwb created at 2008-04-01 05:14:23\n\nFixes area attached.",
     "created_at": "2008-04-01T05:14:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2654",
     "type": "issue_comment",
@@ -247,7 +247,7 @@ archive/issue_comments_018247.json:
 }
 ```
 
-Attachment
+Attachment [2654-cyclo-fixes.patch](tarball://root/attachments/some-uuid/ticket2654/2654-cyclo-fixes.patch) by robertwb created at 2008-04-01 05:14:23
 
 Fixes area attached.
 
@@ -479,7 +479,7 @@ No such limit is mentioned at http://www.shoup.net/ntl/doc/ZZX.txt
 archive/issue_comments_018255.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2654-cyclo-printing.patch](tarball://root/attachments/some-uuid/ticket2654/2654-cyclo-printing.patch) by robertwb created at 2008-04-02 19:54:50",
     "created_at": "2008-04-02T19:54:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2654",
     "type": "issue_comment",
@@ -488,7 +488,7 @@ archive/issue_comments_018255.json:
 }
 ```
 
-Attachment
+Attachment [2654-cyclo-printing.patch](tarball://root/attachments/some-uuid/ticket2654/2654-cyclo-printing.patch) by robertwb created at 2008-04-02 19:54:50
 
 
 
@@ -497,7 +497,7 @@ Attachment
 archive/issue_comments_018256.json:
 ```json
 {
-    "body": "Attachment\n\nI implemented fast printing for `ZZ[x]`, but the generic case could be done better in some cases and I didn't touch that. \n\nAs for the limit, it's buried in ntl/include/ctools.h. \n\n\n```\n#define NTL_OVFBND (1L << (NTL_BITS_PER_LONG-4))\n```\n\n\nwhich is now checked for (rather than inducing a crash). Also, the failing doctests are fixed.",
+    "body": "Attachment [2654-cyclo-doctest-fixes.patch](tarball://root/attachments/some-uuid/ticket2654/2654-cyclo-doctest-fixes.patch) by robertwb created at 2008-04-02 19:58:29\n\nI implemented fast printing for `ZZ[x]`, but the generic case could be done better in some cases and I didn't touch that. \n\nAs for the limit, it's buried in ntl/include/ctools.h. \n\n\n```\n#define NTL_OVFBND (1L << (NTL_BITS_PER_LONG-4))\n```\n\n\nwhich is now checked for (rather than inducing a crash). Also, the failing doctests are fixed.",
     "created_at": "2008-04-02T19:58:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2654",
     "type": "issue_comment",
@@ -506,7 +506,7 @@ archive/issue_comments_018256.json:
 }
 ```
 
-Attachment
+Attachment [2654-cyclo-doctest-fixes.patch](tarball://root/attachments/some-uuid/ticket2654/2654-cyclo-doctest-fixes.patch) by robertwb created at 2008-04-02 19:58:29
 
 I implemented fast printing for `ZZ[x]`, but the generic case could be done better in some cases and I didn't touch that. 
 
@@ -587,7 +587,7 @@ Michael
 archive/issue_comments_018259.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2654-cyclo-64bit.patch](tarball://root/attachments/some-uuid/ticket2654/2654-cyclo-64bit.patch) by robertwb created at 2008-04-04 18:23:19",
     "created_at": "2008-04-04T18:23:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2654",
     "type": "issue_comment",
@@ -596,7 +596,7 @@ archive/issue_comments_018259.json:
 }
 ```
 
-Attachment
+Attachment [2654-cyclo-64bit.patch](tarball://root/attachments/some-uuid/ticket2654/2654-cyclo-64bit.patch) by robertwb created at 2008-04-04 18:23:19
 
 
 

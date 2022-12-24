@@ -57,7 +57,7 @@ Changing assignee from was to jason.
 archive/issue_comments_040426.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5266-plotting-fencepost-error.patch](tarball://root/attachments/some-uuid/ticket5266/trac_5266-plotting-fencepost-error.patch) by jason created at 2009-02-14 11:00:09",
     "created_at": "2009-02-14T11:00:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5266",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_040426.json:
 }
 ```
 
-Attachment
+Attachment [trac_5266-plotting-fencepost-error.patch](tarball://root/attachments/some-uuid/ticket5266/trac_5266-plotting-fencepost-error.patch) by jason created at 2009-02-14 11:00:09
 
 
 

@@ -46,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4507
 archive/issue_comments_033416.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [memset-not-declared.patch](tarball://root/attachments/some-uuid/ticket4507/memset-not-declared.patch) by jason created at 2008-11-13 01:24:59",
     "created_at": "2008-11-13T01:24:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4507",
     "type": "issue_comment",
@@ -55,7 +55,7 @@ archive/issue_comments_033416.json:
 }
 ```
 
-Attachment
+Attachment [memset-not-declared.patch](tarball://root/attachments/some-uuid/ticket4507/memset-not-declared.patch) by jason created at 2008-11-13 01:24:59
 
 
 

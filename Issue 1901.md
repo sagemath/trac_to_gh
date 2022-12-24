@@ -62,7 +62,7 @@ Changing assignee from somebody to cremona.
 archive/issue_comments_012032.json:
 ```json
 {
-    "body": "Attachment\n\nAttached patch 8684.patch corrects the docstring and adds a relevant doctest.",
+    "body": "Attachment [8684.patch](tarball://root/attachments/some-uuid/ticket1901/8684.patch) by cremona created at 2008-03-01 17:07:33\n\nAttached patch 8684.patch corrects the docstring and adds a relevant doctest.",
     "created_at": "2008-03-01T17:07:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1901",
     "type": "issue_comment",
@@ -71,7 +71,7 @@ archive/issue_comments_012032.json:
 }
 ```
 
-Attachment
+Attachment [8684.patch](tarball://root/attachments/some-uuid/ticket1901/8684.patch) by cremona created at 2008-03-01 17:07:33
 
 Attached patch 8684.patch corrects the docstring and adds a relevant doctest.
 
@@ -171,7 +171,7 @@ Apply this after 8684.patch!
 archive/issue_comments_012036.json:
 ```json
 {
-    "body": "Attachment\n\nThe second patch 8685.patch removes the doctests which are too random to be useful, and also adds to the docstring so that users are referred to multiplicative_generator() and warned that _both_ are random.",
+    "body": "Attachment [8685.patch](tarball://root/attachments/some-uuid/ticket1901/8685.patch) by cremona created at 2008-03-02 17:25:24\n\nThe second patch 8685.patch removes the doctests which are too random to be useful, and also adds to the docstring so that users are referred to multiplicative_generator() and warned that _both_ are random.",
     "created_at": "2008-03-02T17:25:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1901",
     "type": "issue_comment",
@@ -180,7 +180,7 @@ archive/issue_comments_012036.json:
 }
 ```
 
-Attachment
+Attachment [8685.patch](tarball://root/attachments/some-uuid/ticket1901/8685.patch) by cremona created at 2008-03-02 17:25:24
 
 The second patch 8685.patch removes the doctests which are too random to be useful, and also adds to the docstring so that users are referred to multiplicative_generator() and warned that _both_ are random.
 

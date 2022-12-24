@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6509
 archive/issue_comments_053032.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6509_four_squares.patch](tarball://root/attachments/some-uuid/ticket6509/trac_6509_four_squares.patch) by mhampton created at 2009-07-10 21:08:13",
     "created_at": "2009-07-10T21:08:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6509",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_053032.json:
 }
 ```
 
-Attachment
+Attachment [trac_6509_four_squares.patch](tarball://root/attachments/some-uuid/ticket6509/trac_6509_four_squares.patch) by mhampton created at 2009-07-10 21:08:13
 
 
 

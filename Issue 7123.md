@@ -741,7 +741,7 @@ I'm now addressing your comments.
 archive/issue_comments_059060.json:
 ```json
 {
-    "body": "Attachment\n\nbased on Sage 4.1.2.rc0 and #7010",
+    "body": "Attachment [trac_7123-clean-up.patch](tarball://root/attachments/some-uuid/ticket7123/trac_7123-clean-up.patch) by mvngu created at 2009-10-13 21:47:18\n\nbased on Sage 4.1.2.rc0 and #7010",
     "created_at": "2009-10-13T21:47:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
@@ -750,7 +750,7 @@ archive/issue_comments_059060.json:
 }
 ```
 
-Attachment
+Attachment [trac_7123-clean-up.patch](tarball://root/attachments/some-uuid/ticket7123/trac_7123-clean-up.patch) by mvngu created at 2009-10-13 21:47:18
 
 based on Sage 4.1.2.rc0 and #7010
 
@@ -761,7 +761,7 @@ based on Sage 4.1.2.rc0 and #7010
 archive/issue_comments_059061.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of previous",
+    "body": "Attachment [trac_7123-shift.patch](tarball://root/attachments/some-uuid/ticket7123/trac_7123-shift.patch) by mvngu created at 2009-10-13 21:57:27\n\napply on top of previous",
     "created_at": "2009-10-13T21:57:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
@@ -770,7 +770,7 @@ archive/issue_comments_059061.json:
 }
 ```
 
-Attachment
+Attachment [trac_7123-shift.patch](tarball://root/attachments/some-uuid/ticket7123/trac_7123-shift.patch) by mvngu created at 2009-10-13 21:57:27
 
 apply on top of previous
 
@@ -932,7 +932,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_059068.json:
 ```json
 {
-    "body": "Attachment\n\nThis doesn't work after the changes in #7198.",
+    "body": "Attachment [trac_7123-iter.patch](tarball://root/attachments/some-uuid/ticket7123/trac_7123-iter.patch) by mhansen created at 2009-10-19 07:17:35\n\nThis doesn't work after the changes in #7198.",
     "created_at": "2009-10-19T07:17:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
@@ -941,7 +941,7 @@ archive/issue_comments_059068.json:
 }
 ```
 
-Attachment
+Attachment [trac_7123-iter.patch](tarball://root/attachments/some-uuid/ticket7123/trac_7123-iter.patch) by mhansen created at 2009-10-19 07:17:35
 
 This doesn't work after the changes in #7198.
 

@@ -251,7 +251,7 @@ Michael
 archive/issue_comments_005746.json:
 ```json
 {
-    "body": "Attachment\n\nFix.",
+    "body": "Attachment [7031.patch](tarball://root/attachments/some-uuid/ticket939/7031.patch) by rlm created at 2007-10-21 02:38:49\n\nFix.",
     "created_at": "2007-10-21T02:38:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/939",
     "type": "issue_comment",
@@ -260,7 +260,7 @@ archive/issue_comments_005746.json:
 }
 ```
 
-Attachment
+Attachment [7031.patch](tarball://root/attachments/some-uuid/ticket939/7031.patch) by rlm created at 2007-10-21 02:38:49
 
 Fix.
 
@@ -289,7 +289,7 @@ Resolution: fixed
 archive/issue_comments_005748.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [doctest.patch](tarball://root/attachments/some-uuid/ticket939/doctest.patch) by was created at 2007-10-21 02:46:12",
     "created_at": "2007-10-21T02:46:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/939",
     "type": "issue_comment",
@@ -298,4 +298,4 @@ archive/issue_comments_005748.json:
 }
 ```
 
-Attachment
+Attachment [doctest.patch](tarball://root/attachments/some-uuid/ticket939/doctest.patch) by was created at 2007-10-21 02:46:12

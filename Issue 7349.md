@@ -51,7 +51,7 @@ Ports fixes from #6848 to SageNB
 archive/issue_comments_061576.json:
 ```json
 {
-    "body": "Attachment\n\nI think that #7316 is the same issue, but the patch is here, so we should close the other one as a duplicate.",
+    "body": "Attachment [trac_7349-6848-port.patch](tarball://root/attachments/some-uuid/ticket7349/trac_7349-6848-port.patch) by jhpalmieri created at 2009-10-29 17:23:13\n\nI think that #7316 is the same issue, but the patch is here, so we should close the other one as a duplicate.",
     "created_at": "2009-10-29T17:23:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7349",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_061576.json:
 }
 ```
 
-Attachment
+Attachment [trac_7349-6848-port.patch](tarball://root/attachments/some-uuid/ticket7349/trac_7349-6848-port.patch) by jhpalmieri created at 2009-10-29 17:23:13
 
 I think that #7316 is the same issue, but the patch is here, so we should close the other one as a duplicate.
 

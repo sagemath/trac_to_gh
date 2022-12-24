@@ -103,7 +103,7 @@ Note that due to this problem, the plot function fails with:
 archive/issue_comments_004683.json:
 ```json
 {
-    "body": "Attachment\n\nBut polylog is implemented to a more serious extent, in calculus.py.  I think we should just have dilog(z) be an alias for polylog(2, z).\n\nI've put up a patch making this change.",
+    "body": "Attachment [783-dilog_lame.patch](tarball://root/attachments/some-uuid/ticket783/783-dilog_lame.patch) by AlexGhitza created at 2008-04-19 14:41:38\n\nBut polylog is implemented to a more serious extent, in calculus.py.  I think we should just have dilog(z) be an alias for polylog(2, z).\n\nI've put up a patch making this change.",
     "created_at": "2008-04-19T14:41:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/783",
     "type": "issue_comment",
@@ -112,7 +112,7 @@ archive/issue_comments_004683.json:
 }
 ```
 
-Attachment
+Attachment [783-dilog_lame.patch](tarball://root/attachments/some-uuid/ticket783/783-dilog_lame.patch) by AlexGhitza created at 2008-04-19 14:41:38
 
 But polylog is implemented to a more serious extent, in calculus.py.  I think we should just have dilog(z) be an alias for polylog(2, z).
 
@@ -504,7 +504,7 @@ Paul
 archive/issue_comments_004701.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_783.patch](tarball://root/attachments/some-uuid/ticket783/trac_783.patch) by mhansen created at 2010-09-12 17:00:00",
     "created_at": "2010-09-12T17:00:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/783",
     "type": "issue_comment",
@@ -513,7 +513,7 @@ archive/issue_comments_004701.json:
 }
 ```
 
-Attachment
+Attachment [trac_783.patch](tarball://root/attachments/some-uuid/ticket783/trac_783.patch) by mhansen created at 2010-09-12 17:00:00
 
 
 

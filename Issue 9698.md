@@ -36,7 +36,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9698
 archive/issue_comments_094258.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9698.patch](tarball://root/attachments/some-uuid/ticket9698/trac_9698.patch) by fidelbarrera created at 2010-08-06 19:20:41",
     "created_at": "2010-08-06T19:20:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
@@ -45,7 +45,7 @@ archive/issue_comments_094258.json:
 }
 ```
 
-Attachment
+Attachment [trac_9698.patch](tarball://root/attachments/some-uuid/ticket9698/trac_9698.patch) by fidelbarrera created at 2010-08-06 19:20:41
 
 
 
@@ -255,7 +255,7 @@ Nathann
 archive/issue_comments_094266.json:
 ```json
 {
-    "body": "Attachment\n\nPlease apply instead of trac_9698.patch.",
+    "body": "Attachment [trac_9698_2.patch](tarball://root/attachments/some-uuid/ticket9698/trac_9698_2.patch) by fidelbarrera created at 2010-09-02 19:34:39\n\nPlease apply instead of trac_9698.patch.",
     "created_at": "2010-09-02T19:34:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
@@ -264,7 +264,7 @@ archive/issue_comments_094266.json:
 }
 ```
 
-Attachment
+Attachment [trac_9698_2.patch](tarball://root/attachments/some-uuid/ticket9698/trac_9698_2.patch) by fidelbarrera created at 2010-09-02 19:34:39
 
 Please apply instead of trac_9698.patch.
 
@@ -365,7 +365,7 @@ Please apply instead of trac_9698.patch and trac_9698_2.patch.
 archive/issue_comments_094271.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:9 rlm]:\n\n> Fidel, May I suggest to put this code into `generic_graph.pyx` instead of creating a new Cython file for just this one function?\n\nSure, please use trac_9698_3.patch instead of the previous ones.\n\nFidel",
+    "body": "Attachment [trac_9698_3.patch](tarball://root/attachments/some-uuid/ticket9698/trac_9698_3.patch) by fidelbarrera created at 2010-09-02 20:13:41\n\nReplying to [comment:9 rlm]:\n\n> Fidel, May I suggest to put this code into `generic_graph.pyx` instead of creating a new Cython file for just this one function?\n\nSure, please use trac_9698_3.patch instead of the previous ones.\n\nFidel",
     "created_at": "2010-09-02T20:13:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
@@ -374,7 +374,7 @@ archive/issue_comments_094271.json:
 }
 ```
 
-Attachment
+Attachment [trac_9698_3.patch](tarball://root/attachments/some-uuid/ticket9698/trac_9698_3.patch) by fidelbarrera created at 2010-09-02 20:13:41
 
 Replying to [comment:9 rlm]:
 
@@ -519,7 +519,7 @@ Please apply instead of previous patches.
 archive/issue_comments_094275.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:11 ncohen]:\n\nHello Nathann,\n\n> I have been spending some time reading your code. I began by fixing one or two typo, then ended up having more important remarks, so I will list them as they sometimes need your answers :\n\nThanks!\n\nI have fixed the doctest indentation, added an ALGORITHM: line and fixed the OUTPUT: line.\n\nThe vertices are now cached in !``vertices!``. And every vertex is picked randomly, not as before, where the first available vertex was chosen.\n\n> * I understand the usefulness of path reversing, or resetting, or removing the last 5 vertices, but there is something else I do not understand in your code : let us imagine that your algorithm, at each loop, is increasing the current path from one element at each time for a long period. At some point, your algorithm will reset it, or remove the last vertices, even while it may still be possible to extend the path. Why so ? A way around :\n\nHere we rely on the !``backtrack_bound!`` and !``reset_bound!``, we should give \"appropriate\" values.\n\n> * Each time a new vertex is added to the longest path, it is copied to be remembered. It is nice, but if your algorithm begins by building a path of length 20, you copy it 20 times ! By having a method like the previous one, you would call it just once, when the path can not be extended anymore.\n\nNow, the longest path is only updated if the path cannot be extended anymore.\n\n> * If your code finds a hamiltonian path whith is not a cycle, it ends anyway.\n\nI think that when a hamiltonian path is found, we check if the two ends are adjacent, if so, then it ends. The test is done in:\n\n\n```\n            done = g.has_arc( path[n-1], path[0] )\n```\n\nIt also takes longer with non hamiltonian graphs, e.g. the Petersen graph, i.e. it stops until it hits the max_iter bound.\n\nI think the problem with the vertices not being integers is fixed now Although I did not get error messages as yours, I just got as output a list of integer vertices.\n\nI think I have removed the word heuristic. It would be great to write the longest_path method. The function is almost exactly the same as the one that is written, in fact it might be possible to adapt this one to do both ;)\n\nThanks, \n\nFidel",
+    "body": "Attachment [trac_9698_4.patch](tarball://root/attachments/some-uuid/ticket9698/trac_9698_4.patch) by fidelbarrera created at 2010-09-12 21:21:41\n\nReplying to [comment:11 ncohen]:\n\nHello Nathann,\n\n> I have been spending some time reading your code. I began by fixing one or two typo, then ended up having more important remarks, so I will list them as they sometimes need your answers :\n\nThanks!\n\nI have fixed the doctest indentation, added an ALGORITHM: line and fixed the OUTPUT: line.\n\nThe vertices are now cached in !``vertices!``. And every vertex is picked randomly, not as before, where the first available vertex was chosen.\n\n> * I understand the usefulness of path reversing, or resetting, or removing the last 5 vertices, but there is something else I do not understand in your code : let us imagine that your algorithm, at each loop, is increasing the current path from one element at each time for a long period. At some point, your algorithm will reset it, or remove the last vertices, even while it may still be possible to extend the path. Why so ? A way around :\n\nHere we rely on the !``backtrack_bound!`` and !``reset_bound!``, we should give \"appropriate\" values.\n\n> * Each time a new vertex is added to the longest path, it is copied to be remembered. It is nice, but if your algorithm begins by building a path of length 20, you copy it 20 times ! By having a method like the previous one, you would call it just once, when the path can not be extended anymore.\n\nNow, the longest path is only updated if the path cannot be extended anymore.\n\n> * If your code finds a hamiltonian path whith is not a cycle, it ends anyway.\n\nI think that when a hamiltonian path is found, we check if the two ends are adjacent, if so, then it ends. The test is done in:\n\n\n```\n            done = g.has_arc( path[n-1], path[0] )\n```\n\nIt also takes longer with non hamiltonian graphs, e.g. the Petersen graph, i.e. it stops until it hits the max_iter bound.\n\nI think the problem with the vertices not being integers is fixed now Although I did not get error messages as yours, I just got as output a list of integer vertices.\n\nI think I have removed the word heuristic. It would be great to write the longest_path method. The function is almost exactly the same as the one that is written, in fact it might be possible to adapt this one to do both ;)\n\nThanks, \n\nFidel",
     "created_at": "2010-09-12T21:21:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
@@ -528,7 +528,7 @@ archive/issue_comments_094275.json:
 }
 ```
 
-Attachment
+Attachment [trac_9698_4.patch](tarball://root/attachments/some-uuid/ticket9698/trac_9698_4.patch) by fidelbarrera created at 2010-09-12 21:21:41
 
 Replying to [comment:11 ncohen]:
 
@@ -632,7 +632,7 @@ Please apply instead of previous patches.
 archive/issue_comments_094279.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:13 ncohen]:\n> ``longest_path`` written in #9910 `:-)`\n> \n> Nathann\n\nHello Nathann,\n\nI have modified the function so it can obtain longest paths as well. Please let me know what you think, about it.\n\nThanks,\nFidel",
+    "body": "Attachment [trac_9698_5.patch](tarball://root/attachments/some-uuid/ticket9698/trac_9698_5.patch) by fidelbarrera created at 2010-10-10 22:40:15\n\nReplying to [comment:13 ncohen]:\n> ``longest_path`` written in #9910 `:-)`\n> \n> Nathann\n\nHello Nathann,\n\nI have modified the function so it can obtain longest paths as well. Please let me know what you think, about it.\n\nThanks,\nFidel",
     "created_at": "2010-10-10T22:40:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
@@ -641,7 +641,7 @@ archive/issue_comments_094279.json:
 }
 ```
 
-Attachment
+Attachment [trac_9698_5.patch](tarball://root/attachments/some-uuid/ticket9698/trac_9698_5.patch) by fidelbarrera created at 2010-10-10 22:40:15
 
 Replying to [comment:13 ncohen]:
 > ``longest_path`` written in #9910 `:-)`
@@ -720,7 +720,7 @@ Rebased version of trac_9698_5.patch
 archive/issue_comments_094283.json:
 ```json
 {
-    "body": "Attachment\n\nHello Nathann,\n\n> It looks like you patch can not be applied on the brand-new 4.6.alpha3... \nI have rebased the patch, please see trac_9698_6.patch I hope it works now :)\n\nBest,\nFidel",
+    "body": "Attachment [trac_9698_6.patch](tarball://root/attachments/some-uuid/ticket9698/trac_9698_6.patch) by fidelbarrera created at 2010-10-17 04:42:43\n\nHello Nathann,\n\n> It looks like you patch can not be applied on the brand-new 4.6.alpha3... \nI have rebased the patch, please see trac_9698_6.patch I hope it works now :)\n\nBest,\nFidel",
     "created_at": "2010-10-17T04:42:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
@@ -729,7 +729,7 @@ archive/issue_comments_094283.json:
 }
 ```
 
-Attachment
+Attachment [trac_9698_6.patch](tarball://root/attachments/some-uuid/ticket9698/trac_9698_6.patch) by fidelbarrera created at 2010-10-17 04:42:43
 
 Hello Nathann,
 
@@ -804,7 +804,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_094287.json:
 ```json
 {
-    "body": "Attachment\n\nYour modifications look good. All doctests passed. Changing to positive review.\n\nThanks,\nFidel",
+    "body": "Attachment [trac_9698 - smallfixes.patch](tarball://root/attachments/some-uuid/ticket9698/trac_9698 - smallfixes.patch) by fidelbarrera created at 2010-10-18 16:16:23\n\nYour modifications look good. All doctests passed. Changing to positive review.\n\nThanks,\nFidel",
     "created_at": "2010-10-18T16:16:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
@@ -813,7 +813,7 @@ archive/issue_comments_094287.json:
 }
 ```
 
-Attachment
+Attachment [trac_9698 - smallfixes.patch](tarball://root/attachments/some-uuid/ticket9698/trac_9698 - smallfixes.patch) by fidelbarrera created at 2010-10-18 16:16:23
 
 Your modifications look good. All doctests passed. Changing to positive review.
 
@@ -827,7 +827,7 @@ Fidel
 archive/issue_comments_094288.json:
 ```json
 {
-    "body": "Attachment\n\nsame as trac_9698 - smallfixes.patch",
+    "body": "Attachment [trac_9698-smallfixes.patch](tarball://root/attachments/some-uuid/ticket9698/trac_9698-smallfixes.patch) by jdemeyer created at 2010-10-23 12:09:48\n\nsame as trac_9698 - smallfixes.patch",
     "created_at": "2010-10-23T12:09:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
@@ -836,7 +836,7 @@ archive/issue_comments_094288.json:
 }
 ```
 
-Attachment
+Attachment [trac_9698-smallfixes.patch](tarball://root/attachments/some-uuid/ticket9698/trac_9698-smallfixes.patch) by jdemeyer created at 2010-10-23 12:09:48
 
 same as trac_9698 - smallfixes.patch
 

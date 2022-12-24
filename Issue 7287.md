@@ -97,7 +97,7 @@ Changing assignee from mabshoff to nbruin.
 archive/issue_comments_060638.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [maxpackage.patch](tarball://root/attachments/some-uuid/ticket7287/maxpackage.patch) by nbruin created at 2009-10-25 07:09:11",
     "created_at": "2009-10-25T07:09:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7287",
     "type": "issue_comment",
@@ -106,7 +106,7 @@ archive/issue_comments_060638.json:
 }
 ```
 
-Attachment
+Attachment [maxpackage.patch](tarball://root/attachments/some-uuid/ticket7287/maxpackage.patch) by nbruin created at 2009-10-25 07:09:11
 
 
 

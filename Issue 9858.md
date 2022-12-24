@@ -122,7 +122,7 @@ Based on Sage 4.5.3.rc0. Apply to Sage library.
 archive/issue_comments_097332.json:
 ```json
 {
-    "body": "Attachment\n\nOk, I'm a beginner. ;-)\n\n(I've uploaded a patch.)",
+    "body": "Attachment [trac_9859-fix_hard-coded_doctest_line_numbers.patch](tarball://root/attachments/some-uuid/ticket9859/trac_9859-fix_hard-coded_doctest_line_numbers.patch) by leif created at 2010-09-06 05:06:53\n\nOk, I'm a beginner. ;-)\n\n(I've uploaded a patch.)",
     "created_at": "2010-09-06T05:06:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9858",
     "type": "issue_comment",
@@ -131,7 +131,7 @@ archive/issue_comments_097332.json:
 }
 ```
 
-Attachment
+Attachment [trac_9859-fix_hard-coded_doctest_line_numbers.patch](tarball://root/attachments/some-uuid/ticket9859/trac_9859-fix_hard-coded_doctest_line_numbers.patch) by leif created at 2010-09-06 05:06:53
 
 Ok, I'm a beginner. ;-)
 

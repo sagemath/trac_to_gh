@@ -55,7 +55,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2297
 archive/issue_comments_015230.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [tensorproduct.patch](tarball://root/attachments/some-uuid/ticket2297/tensorproduct.patch) by SimonKing created at 2008-02-24 21:11:46",
     "created_at": "2008-02-24T21:11:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2297",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_015230.json:
 }
 ```
 
-Attachment
+Attachment [tensorproduct.patch](tarball://root/attachments/some-uuid/ticket2297/tensorproduct.patch) by SimonKing created at 2008-02-24 21:11:46
 
 
 

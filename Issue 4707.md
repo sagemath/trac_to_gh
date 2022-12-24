@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4707
 archive/issue_comments_035499.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4707.patch](tarball://root/attachments/some-uuid/ticket4707/trac_4707.patch) by was created at 2008-12-05 02:55:03",
     "created_at": "2008-12-05T02:55:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4707",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_035499.json:
 }
 ```
 
-Attachment
+Attachment [trac_4707.patch](tarball://root/attachments/some-uuid/ticket4707/trac_4707.patch) by was created at 2008-12-05 02:55:03
 
 
 
@@ -55,7 +55,7 @@ Attachment
 archive/issue_comments_035500.json:
 ```json
 {
-    "body": "Attachment\n\nWorks for me.  Apply both patches.  We will open a separate ticket for the corresponding magma -> sage conversion.",
+    "body": "Attachment [trac_4707_tiny_followup.patch](tarball://root/attachments/some-uuid/ticket4707/trac_4707_tiny_followup.patch) by ncalexan created at 2008-12-06 23:49:58\n\nWorks for me.  Apply both patches.  We will open a separate ticket for the corresponding magma -> sage conversion.",
     "created_at": "2008-12-06T23:49:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4707",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_035500.json:
 }
 ```
 
-Attachment
+Attachment [trac_4707_tiny_followup.patch](tarball://root/attachments/some-uuid/ticket4707/trac_4707_tiny_followup.patch) by ncalexan created at 2008-12-06 23:49:58
 
 Works for me.  Apply both patches.  We will open a separate ticket for the corresponding magma -> sage conversion.
 

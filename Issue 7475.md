@@ -94,7 +94,7 @@ Changing assignee from tbd to was.
 archive/issue_comments_062999.json:
 ```json
 {
-    "body": "Attachment\n\nThe pickle in a different system",
+    "body": "Attachment [pickle.sobj](tarball://root/attachments/some-uuid/ticket7475/pickle.sobj) by itaibn created at 2012-02-26 04:47:34\n\nThe pickle in a different system",
     "created_at": "2012-02-26T04:47:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7475",
     "type": "issue_comment",
@@ -103,7 +103,7 @@ archive/issue_comments_062999.json:
 }
 ```
 
-Attachment
+Attachment [pickle.sobj](tarball://root/attachments/some-uuid/ticket7475/pickle.sobj) by itaibn created at 2012-02-26 04:47:34
 
 The pickle in a different system
 
@@ -150,7 +150,7 @@ An explanation of the pickle
 archive/issue_comments_063002.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [pickle-explanation](tarball://root/attachments/some-uuid/ticket7475/pickle-explanation) by jdemeyer created at 2013-08-13 15:35:53",
     "created_at": "2013-08-13T15:35:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7475",
     "type": "issue_comment",
@@ -159,7 +159,7 @@ archive/issue_comments_063002.json:
 }
 ```
 
-Attachment
+Attachment [pickle-explanation](tarball://root/attachments/some-uuid/ticket7475/pickle-explanation) by jdemeyer created at 2013-08-13 15:35:53
 
 
 

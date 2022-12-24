@@ -138,7 +138,7 @@ http://wstein.org
 archive/issue_comments_000340.json:
 ```json
 {
-    "body": "Attachment\n\nthis is a sed file to do something useful.",
+    "body": "Attachment [html2tex.txt](tarball://root/attachments/some-uuid/ticket66/html2tex.txt) by was created at 2007-09-23 17:27:10\n\nthis is a sed file to do something useful.",
     "created_at": "2007-09-23T17:27:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/66",
     "type": "issue_comment",
@@ -147,7 +147,7 @@ archive/issue_comments_000340.json:
 }
 ```
 
-Attachment
+Attachment [html2tex.txt](tarball://root/attachments/some-uuid/ticket66/html2tex.txt) by was created at 2007-09-23 17:27:10
 
 this is a sed file to do something useful.
 

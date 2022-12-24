@@ -161,7 +161,7 @@ It's not possible to doctest this, but easy to test by hand.
 archive/issue_comments_012915.json:
 ```json
 {
-    "body": "Attachment\n\nWhen you apply this to 3.2.alpha0 it may complain\n\n```\nHunk #2 FAILED at 951\n1 out of 2 hunks FAILED -- saving rejects to file sage/interfaces/magma.py.rej\n```\n\n\nThis hunk #2 is a blank line, and is totally safe to ignore this failure.",
+    "body": "Attachment [sage-1997.patch](tarball://root/attachments/some-uuid/ticket1997/sage-1997.patch) by was created at 2008-10-24 03:57:07\n\nWhen you apply this to 3.2.alpha0 it may complain\n\n```\nHunk #2 FAILED at 951\n1 out of 2 hunks FAILED -- saving rejects to file sage/interfaces/magma.py.rej\n```\n\n\nThis hunk #2 is a blank line, and is totally safe to ignore this failure.",
     "created_at": "2008-10-24T03:57:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1997",
     "type": "issue_comment",
@@ -170,7 +170,7 @@ archive/issue_comments_012915.json:
 }
 ```
 
-Attachment
+Attachment [sage-1997.patch](tarball://root/attachments/some-uuid/ticket1997/sage-1997.patch) by was created at 2008-10-24 03:57:07
 
 When you apply this to 3.2.alpha0 it may complain
 

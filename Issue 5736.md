@@ -359,7 +359,7 @@ Turns out that the doctests fail as a knock-on effect of #4306: the basis_matrix
 archive/issue_comments_044831.json:
 ```json
 {
-    "body": "Attachment\n\nreplaces all previous patches, rebased to 3.4.2.alpha0",
+    "body": "Attachment [trac_5736-rebase.patch](tarball://root/attachments/some-uuid/ticket5736/trac_5736-rebase.patch) by davidloeffler created at 2009-04-26 09:07:56\n\nreplaces all previous patches, rebased to 3.4.2.alpha0",
     "created_at": "2009-04-26T09:07:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5736",
     "type": "issue_comment",
@@ -368,7 +368,7 @@ archive/issue_comments_044831.json:
 }
 ```
 
-Attachment
+Attachment [trac_5736-rebase.patch](tarball://root/attachments/some-uuid/ticket5736/trac_5736-rebase.patch) by davidloeffler created at 2009-04-26 09:07:56
 
 replaces all previous patches, rebased to 3.4.2.alpha0
 
@@ -578,7 +578,7 @@ Michael
 archive/issue_comments_044840.json:
 ```json
 {
-    "body": "Attachment\n\napply over previous patch",
+    "body": "Attachment [trac_5736-more.patch](tarball://root/attachments/some-uuid/ticket5736/trac_5736-more.patch) by davidloeffler created at 2009-04-30 22:49:54\n\napply over previous patch",
     "created_at": "2009-04-30T22:49:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5736",
     "type": "issue_comment",
@@ -587,7 +587,7 @@ archive/issue_comments_044840.json:
 }
 ```
 
-Attachment
+Attachment [trac_5736-more.patch](tarball://root/attachments/some-uuid/ticket5736/trac_5736-more.patch) by davidloeffler created at 2009-04-30 22:49:54
 
 apply over previous patch
 

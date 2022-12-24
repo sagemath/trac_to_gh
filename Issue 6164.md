@@ -368,7 +368,7 @@ based on Sage 4.1.alpha0
 archive/issue_comments_049183.json:
 ```json
 {
-    "body": "Attachment\n\nCan you try again with the new patch?",
+    "body": "Attachment [trac_6164-mini-aes.patch](tarball://root/attachments/some-uuid/ticket6164/trac_6164-mini-aes.patch) by mvngu created at 2009-06-24 21:56:40\n\nCan you try again with the new patch?",
     "created_at": "2009-06-24T21:56:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6164",
     "type": "issue_comment",
@@ -377,7 +377,7 @@ archive/issue_comments_049183.json:
 }
 ```
 
-Attachment
+Attachment [trac_6164-mini-aes.patch](tarball://root/attachments/some-uuid/ticket6164/trac_6164-mini-aes.patch) by mvngu created at 2009-06-24 21:56:40
 
 Can you try again with the new patch?
 

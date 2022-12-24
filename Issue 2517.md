@@ -121,7 +121,7 @@ was for debugging purposes and should be deleted.
 archive/issue_comments_017168.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [plot_undefined.patch](tarball://root/attachments/some-uuid/ticket2517/plot_undefined.patch) by jason created at 2008-03-14 21:36:53",
     "created_at": "2008-03-14T21:36:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2517",
     "type": "issue_comment",
@@ -130,7 +130,7 @@ archive/issue_comments_017168.json:
 }
 ```
 
-Attachment
+Attachment [plot_undefined.patch](tarball://root/attachments/some-uuid/ticket2517/plot_undefined.patch) by jason created at 2008-03-14 21:36:53
 
 
 
@@ -251,7 +251,7 @@ Second patch is rebased against 2.10.4 and works correctly.
 archive/issue_comments_017172.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [plot_undefined.2.patch](tarball://root/attachments/some-uuid/ticket2517/plot_undefined.2.patch) by jason created at 2008-03-18 21:52:00",
     "created_at": "2008-03-18T21:52:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2517",
     "type": "issue_comment",
@@ -260,7 +260,7 @@ archive/issue_comments_017172.json:
 }
 ```
 
-Attachment
+Attachment [plot_undefined.2.patch](tarball://root/attachments/some-uuid/ticket2517/plot_undefined.2.patch) by jason created at 2008-03-18 21:52:00
 
 
 

@@ -223,7 +223,7 @@ Changing status from new to needs_info.
 archive/issue_comments_077174.json:
 ```json
 {
-    "body": "Attachment\n\ncurrent spkg install",
+    "body": "Attachment [spkg-install](tarball://root/attachments/some-uuid/ticket8537/spkg-install) by maldun created at 2011-01-07 00:18:41\n\ncurrent spkg install",
     "created_at": "2011-01-07T00:18:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8537",
     "type": "issue_comment",
@@ -232,7 +232,7 @@ archive/issue_comments_077174.json:
 }
 ```
 
-Attachment
+Attachment [spkg-install](tarball://root/attachments/some-uuid/ticket8537/spkg-install) by maldun created at 2011-01-07 00:18:41
 
 current spkg install
 
@@ -335,7 +335,7 @@ new spkg-install for reference
 archive/issue_comments_077179.json:
 ```json
 {
-    "body": "Attachment\n\nNice! Functionality-wise it is all good. But would you mind filling in the `SPKG.txt` according to the template in the developer manual? See\n\nhttp://www.sagemath.org/doc/developer/producing_spkgs.html#the-file-spkg-txt\n\nThat'll give us a place to record future changes etc. You could also add `.*~` to the `.hgignore` so that mercurial doesn't complain about emacs backup files.\n\nBest wishes,\nVolker",
+    "body": "Attachment [spkg-install.2](tarball://root/attachments/some-uuid/ticket8537/spkg-install.2) by vbraun created at 2011-01-11 21:59:52\n\nNice! Functionality-wise it is all good. But would you mind filling in the `SPKG.txt` according to the template in the developer manual? See\n\nhttp://www.sagemath.org/doc/developer/producing_spkgs.html#the-file-spkg-txt\n\nThat'll give us a place to record future changes etc. You could also add `.*~` to the `.hgignore` so that mercurial doesn't complain about emacs backup files.\n\nBest wishes,\nVolker",
     "created_at": "2011-01-11T21:59:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8537",
     "type": "issue_comment",
@@ -344,7 +344,7 @@ archive/issue_comments_077179.json:
 }
 ```
 
-Attachment
+Attachment [spkg-install.2](tarball://root/attachments/some-uuid/ticket8537/spkg-install.2) by vbraun created at 2011-01-11 21:59:52
 
 Nice! Functionality-wise it is all good. But would you mind filling in the `SPKG.txt` according to the template in the developer manual? See
 

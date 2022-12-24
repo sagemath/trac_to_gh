@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7198
 archive/issue_comments_059719.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [free_algebra.patch](tarball://root/attachments/some-uuid/ticket7198/free_algebra.patch) by PolyBoRi created at 2009-10-16 14:00:08",
     "created_at": "2009-10-16T14:00:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7198",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_059719.json:
 }
 ```
 
-Attachment
+Attachment [free_algebra.patch](tarball://root/attachments/some-uuid/ticket7198/free_algebra.patch) by PolyBoRi created at 2009-10-16 14:00:08
 
 
 
@@ -53,7 +53,7 @@ Attachment
 archive/issue_comments_059720.json:
 ```json
 {
-    "body": "Attachment\n\nnew version free_algebra.2.patch\nredesigns the iterator based on Burcins review.",
+    "body": "Attachment [free_algebra.2.patch](tarball://root/attachments/some-uuid/ticket7198/free_algebra.2.patch) by PolyBoRi created at 2009-10-16 14:01:17\n\nnew version free_algebra.2.patch\nredesigns the iterator based on Burcins review.",
     "created_at": "2009-10-16T14:01:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7198",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_059720.json:
 }
 ```
 
-Attachment
+Attachment [free_algebra.2.patch](tarball://root/attachments/some-uuid/ticket7198/free_algebra.2.patch) by PolyBoRi created at 2009-10-16 14:01:17
 
 new version free_algebra.2.patch
 redesigns the iterator based on Burcins review.
@@ -92,7 +92,7 @@ Changing status from new to needs_review.
 archive/issue_comments_059722.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7198-free_algebra_iterator.patch](tarball://root/attachments/some-uuid/ticket7198/trac_7198-free_algebra_iterator.patch) by burcin created at 2009-10-16 20:06:17",
     "created_at": "2009-10-16T20:06:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7198",
     "type": "issue_comment",
@@ -101,7 +101,7 @@ archive/issue_comments_059722.json:
 }
 ```
 
-Attachment
+Attachment [trac_7198-free_algebra_iterator.patch](tarball://root/attachments/some-uuid/ticket7198/trac_7198-free_algebra_iterator.patch) by burcin created at 2009-10-16 20:06:17
 
 
 
@@ -258,7 +258,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_059731.json:
 ```json
 {
-    "body": "Attachment\n\nI added a new patch which restores the expected iterator interface of `StringMonoidElement`s.\n\nMartin, can you review my changes?\n\nBoth\n* attachment:trac_7198-free_algebra_iterator.patch and\n* attachment:trac_7198-string_monoid_element_iterator.patch\nshould be applied.",
+    "body": "Attachment [trac_7198-string_monoid_element_iterator.patch](tarball://root/attachments/some-uuid/ticket7198/trac_7198-string_monoid_element_iterator.patch) by burcin created at 2009-12-29 21:44:43\n\nI added a new patch which restores the expected iterator interface of `StringMonoidElement`s.\n\nMartin, can you review my changes?\n\nBoth\n* attachment:trac_7198-free_algebra_iterator.patch and\n* attachment:trac_7198-string_monoid_element_iterator.patch\nshould be applied.",
     "created_at": "2009-12-29T21:44:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7198",
     "type": "issue_comment",
@@ -267,7 +267,7 @@ archive/issue_comments_059731.json:
 }
 ```
 
-Attachment
+Attachment [trac_7198-string_monoid_element_iterator.patch](tarball://root/attachments/some-uuid/ticket7198/trac_7198-string_monoid_element_iterator.patch) by burcin created at 2009-12-29 21:44:43
 
 I added a new patch which restores the expected iterator interface of `StringMonoidElement`s.
 

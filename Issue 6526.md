@@ -81,7 +81,7 @@ based on #6519
 archive/issue_comments_053221.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6526-remove-naive-suffix-tree.patch](tarball://root/attachments/some-uuid/ticket6526/trac_6526-remove-naive-suffix-tree.patch) by rlm created at 2009-07-14 16:05:59",
     "created_at": "2009-07-14T16:05:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6526",
     "type": "issue_comment",
@@ -90,7 +90,7 @@ archive/issue_comments_053221.json:
 }
 ```
 
-Attachment
+Attachment [trac_6526-remove-naive-suffix-tree.patch](tarball://root/attachments/some-uuid/ticket6526/trac_6526-remove-naive-suffix-tree.patch) by rlm created at 2009-07-14 16:05:59
 
 
 

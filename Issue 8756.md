@@ -341,7 +341,7 @@ The third patch above makes the necessary changes in Sage regarding NONPLANAR vs
 archive/issue_comments_080108.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of previous patches",
+    "body": "Attachment [trac-8756-planarity-v2.patch](tarball://root/attachments/some-uuid/ticket8756/trac-8756-planarity-v2.patch) by jason created at 2010-05-16 03:32:01\n\napply on top of previous patches",
     "created_at": "2010-05-16T03:32:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8756",
     "type": "issue_comment",
@@ -350,7 +350,7 @@ archive/issue_comments_080108.json:
 }
 ```
 
-Attachment
+Attachment [trac-8756-planarity-v2.patch](tarball://root/attachments/some-uuid/ticket8756/trac-8756-planarity-v2.patch) by jason created at 2010-05-16 03:32:01
 
 apply on top of previous patches
 
@@ -379,7 +379,7 @@ apply on top of previous patches
 archive/issue_comments_080110.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached patches which have the necessary commit messages.  I also removed the Eclipse and example data files from the code.  The new second patch now also has the updated BSD license in the graphK4* files.\n\nThere is a problem compiling these patches on OSX (the C code has #include <malloc.h>, which is apparently a problem on OSX).",
+    "body": "Attachment [trac-8756-planarity-sage-changes.patch](tarball://root/attachments/some-uuid/ticket8756/trac-8756-planarity-sage-changes.patch) by jason created at 2010-05-16 03:38:12\n\nI've attached patches which have the necessary commit messages.  I also removed the Eclipse and example data files from the code.  The new second patch now also has the updated BSD license in the graphK4* files.\n\nThere is a problem compiling these patches on OSX (the C code has #include <malloc.h>, which is apparently a problem on OSX).",
     "created_at": "2010-05-16T03:38:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8756",
     "type": "issue_comment",
@@ -388,7 +388,7 @@ archive/issue_comments_080110.json:
 }
 ```
 
-Attachment
+Attachment [trac-8756-planarity-sage-changes.patch](tarball://root/attachments/some-uuid/ticket8756/trac-8756-planarity-sage-changes.patch) by jason created at 2010-05-16 03:38:12
 
 I've attached patches which have the necessary commit messages.  I also removed the Eclipse and example data files from the code.  The new second patch now also has the updated BSD license in the graphK4* files.
 
@@ -474,7 +474,7 @@ P.S.: Shouldn't we report/fix this upstream?
 archive/issue_comments_080114.json:
 ```json
 {
-    "body": "Attachment\n\nRemoves <malloc.h> inclusion by <stdlib.h>. (2nd version)",
+    "body": "Attachment [trac_8756-replaces_malloc_h_by_stdlib_h.patch](tarball://root/attachments/some-uuid/ticket8756/trac_8756-replaces_malloc_h_by_stdlib_h.patch) by leif created at 2010-05-16 06:19:16\n\nRemoves <malloc.h> inclusion by <stdlib.h>. (2nd version)",
     "created_at": "2010-05-16T06:19:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8756",
     "type": "issue_comment",
@@ -483,7 +483,7 @@ archive/issue_comments_080114.json:
 }
 ```
 
-Attachment
+Attachment [trac_8756-replaces_malloc_h_by_stdlib_h.patch](tarball://root/attachments/some-uuid/ticket8756/trac_8756-replaces_malloc_h_by_stdlib_h.patch) by leif created at 2010-05-16 06:19:16
 
 Removes <malloc.h> inclusion by <stdlib.h>. (2nd version)
 

@@ -121,7 +121,7 @@ based on Sage 4.1.2.alpha4
 archive/issue_comments_058334.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated Singular package at\n\nhttp://sage.math.washington.edu/home/mvngu/release/spkg/standard/singular-3-1-0-4-20090818.p1.spkg",
+    "body": "Attachment [trac_7046-singular_build.patch](tarball://root/attachments/some-uuid/ticket7046/trac_7046-singular_build.patch) by mvngu created at 2009-09-28 08:57:07\n\nUpdated Singular package at\n\nhttp://sage.math.washington.edu/home/mvngu/release/spkg/standard/singular-3-1-0-4-20090818.p1.spkg",
     "created_at": "2009-09-28T08:57:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7046",
     "type": "issue_comment",
@@ -130,7 +130,7 @@ archive/issue_comments_058334.json:
 }
 ```
 
-Attachment
+Attachment [trac_7046-singular_build.patch](tarball://root/attachments/some-uuid/ticket7046/trac_7046-singular_build.patch) by mvngu created at 2009-09-28 08:57:07
 
 Updated Singular package at
 
@@ -143,7 +143,7 @@ http://sage.math.washington.edu/home/mvngu/release/spkg/standard/singular-3-1-0-
 archive/issue_comments_058335.json:
 ```json
 {
-    "body": "Attachment\n\ndoctest log for bsd.math with Sage 4.1.2.alpha4 and updated Singular spkg",
+    "body": "Attachment [doctest-4.1.2.alpha4-bsd.math-7046.log.bz2](tarball://root/attachments/some-uuid/ticket7046/doctest-4.1.2.alpha4-bsd.math-7046.log.bz2) by mvngu created at 2009-09-30 04:13:56\n\ndoctest log for bsd.math with Sage 4.1.2.alpha4 and updated Singular spkg",
     "created_at": "2009-09-30T04:13:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7046",
     "type": "issue_comment",
@@ -152,7 +152,7 @@ archive/issue_comments_058335.json:
 }
 ```
 
-Attachment
+Attachment [doctest-4.1.2.alpha4-bsd.math-7046.log.bz2](tarball://root/attachments/some-uuid/ticket7046/doctest-4.1.2.alpha4-bsd.math-7046.log.bz2) by mvngu created at 2009-09-30 04:13:56
 
 doctest log for bsd.math with Sage 4.1.2.alpha4 and updated Singular spkg
 
@@ -181,7 +181,7 @@ doctest log for cicero with Sage 4.1.2.alpha4 and updated Singular spkg
 archive/issue_comments_058337.json:
 ```json
 {
-    "body": "Attachment\n\ninstall log for t2.math with Sage 4.1.2.alpha4 and updated Singular spkg",
+    "body": "Attachment [doctest-4.1.2.alpha4-cicero-7046.log.bz2](tarball://root/attachments/some-uuid/ticket7046/doctest-4.1.2.alpha4-cicero-7046.log.bz2) by mvngu created at 2009-09-30 12:00:21\n\ninstall log for t2.math with Sage 4.1.2.alpha4 and updated Singular spkg",
     "created_at": "2009-09-30T12:00:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7046",
     "type": "issue_comment",
@@ -190,7 +190,7 @@ archive/issue_comments_058337.json:
 }
 ```
 
-Attachment
+Attachment [doctest-4.1.2.alpha4-cicero-7046.log.bz2](tarball://root/attachments/some-uuid/ticket7046/doctest-4.1.2.alpha4-cicero-7046.log.bz2) by mvngu created at 2009-09-30 12:00:21
 
 install log for t2.math with Sage 4.1.2.alpha4 and updated Singular spkg
 
@@ -201,7 +201,7 @@ install log for t2.math with Sage 4.1.2.alpha4 and updated Singular spkg
 archive/issue_comments_058338.json:
 ```json
 {
-    "body": "Attachment\n\nReport of my testing on various platforms with the updated Singular package and the cliquer spkg at #6681:\n\n* sage.math: 64-bit Ubuntu 8.04.3 LTS --- compile OK; all doctests pass.\n* bsd.math: 64-bit Mac OS X 10.6 --- compile OK; many doctest failures, all of which have been reported to [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/cdcf10c5c730f5b5). The full doctest log is attached.\n* rosemary.math: 64-bit RHEL 5.4 --- compile OK; all doctests pass.\n* cicero on SkyNet: 32-bit Fedora 9 --- compile OK; some doctest failures, all of which have been reported to [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/6abc4e530a6cd626). The full doctest log is attached.\n* eno on SkyNet: 64-bit Fedora 9 --- compile OK; all doctests pass.\n* lena on SkyNet: 64-bit RHEL 5.3 --- compile OK; all doctests pass.\n* menas on SkyNet: 64-bit openSUSE 11.1 --- compile OK; all doctests pass.\n* t2.math: SPARC Solaris with GCC 4.4.1 --- compilation abort when trying to install sage-4.1.2.alpha4.spkg; got past installing Singular, though. The full install log is attached.",
+    "body": "Attachment [install-4.1.2.alpha4-t2.math-7046.log.bz2](tarball://root/attachments/some-uuid/ticket7046/install-4.1.2.alpha4-t2.math-7046.log.bz2) by mvngu created at 2009-09-30 12:02:01\n\nReport of my testing on various platforms with the updated Singular package and the cliquer spkg at #6681:\n\n* sage.math: 64-bit Ubuntu 8.04.3 LTS --- compile OK; all doctests pass.\n* bsd.math: 64-bit Mac OS X 10.6 --- compile OK; many doctest failures, all of which have been reported to [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/cdcf10c5c730f5b5). The full doctest log is attached.\n* rosemary.math: 64-bit RHEL 5.4 --- compile OK; all doctests pass.\n* cicero on SkyNet: 32-bit Fedora 9 --- compile OK; some doctest failures, all of which have been reported to [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/6abc4e530a6cd626). The full doctest log is attached.\n* eno on SkyNet: 64-bit Fedora 9 --- compile OK; all doctests pass.\n* lena on SkyNet: 64-bit RHEL 5.3 --- compile OK; all doctests pass.\n* menas on SkyNet: 64-bit openSUSE 11.1 --- compile OK; all doctests pass.\n* t2.math: SPARC Solaris with GCC 4.4.1 --- compilation abort when trying to install sage-4.1.2.alpha4.spkg; got past installing Singular, though. The full install log is attached.",
     "created_at": "2009-09-30T12:02:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7046",
     "type": "issue_comment",
@@ -210,7 +210,7 @@ archive/issue_comments_058338.json:
 }
 ```
 
-Attachment
+Attachment [install-4.1.2.alpha4-t2.math-7046.log.bz2](tarball://root/attachments/some-uuid/ticket7046/install-4.1.2.alpha4-t2.math-7046.log.bz2) by mvngu created at 2009-09-30 12:02:01
 
 Report of my testing on various platforms with the updated Singular package and the cliquer spkg at #6681:
 

@@ -53,7 +53,7 @@ Changing status from new to needs_review.
 archive/issue_comments_071082.json:
 ```json
 {
-    "body": "Attachment\n\nAn spkg can be found here:\n\n[http://boxen.math.washington.edu/home/jsp/ports/ntl-5.4.2.p11.spkg](http://boxen.math.washington.edu/home/jsp/ports/ntl-5.4.2.p11.spkg)\n\nJaap",
+    "body": "Attachment [ntl-5.4.2.p11.patch](tarball://root/attachments/some-uuid/ticket8101/ntl-5.4.2.p11.patch) by jsp created at 2010-01-27 23:58:42\n\nAn spkg can be found here:\n\n[http://boxen.math.washington.edu/home/jsp/ports/ntl-5.4.2.p11.spkg](http://boxen.math.washington.edu/home/jsp/ports/ntl-5.4.2.p11.spkg)\n\nJaap",
     "created_at": "2010-01-27T23:58:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8101",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_071082.json:
 }
 ```
 
-Attachment
+Attachment [ntl-5.4.2.p11.patch](tarball://root/attachments/some-uuid/ticket8101/ntl-5.4.2.p11.patch) by jsp created at 2010-01-27 23:58:42
 
 An spkg can be found here:
 

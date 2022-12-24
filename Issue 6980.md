@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6980
 archive/issue_comments_057729.json:
 ```json
 {
-    "body": "Attachment\n\nAfter patching, we obtain what is expected:\n\n```\nsage: time matrix(ZZ,5000,sparse=True)._nonzero_positions_by_column()\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.01 s\n[]\n```\n",
+    "body": "Attachment [trac6980_nonzero_positions_by_column.patch](tarball://root/attachments/some-uuid/ticket6980/trac6980_nonzero_positions_by_column.patch) by ylchapuy created at 2009-09-21 22:24:32\n\nAfter patching, we obtain what is expected:\n\n```\nsage: time matrix(ZZ,5000,sparse=True)._nonzero_positions_by_column()\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.01 s\n[]\n```\n",
     "created_at": "2009-09-21T22:24:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6980",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_057729.json:
 }
 ```
 
-Attachment
+Attachment [trac6980_nonzero_positions_by_column.patch](tarball://root/attachments/some-uuid/ticket6980/trac6980_nonzero_positions_by_column.patch) by ylchapuy created at 2009-09-21 22:24:32
 
 After patching, we obtain what is expected:
 

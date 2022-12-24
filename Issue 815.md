@@ -114,7 +114,7 @@ was-815: That 815 thing is because I have a completely custom script for going t
 archive/issue_comments_005068.json:
 ```json
 {
-    "body": "Attachment\n\nLost of deleted code, a bit of modification and doctesting for .sage works as well as for the rest.\n\nIt's still of limited interest for files that are not part of the sage library, but at least it won't lie about the results anymore",
+    "body": "Attachment [trac_815.patch](tarball://root/attachments/some-uuid/ticket815/trac_815.patch) by anakha created at 2008-10-24 02:20:59\n\nLost of deleted code, a bit of modification and doctesting for .sage works as well as for the rest.\n\nIt's still of limited interest for files that are not part of the sage library, but at least it won't lie about the results anymore",
     "created_at": "2008-10-24T02:20:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/815",
     "type": "issue_comment",
@@ -123,7 +123,7 @@ archive/issue_comments_005068.json:
 }
 ```
 
-Attachment
+Attachment [trac_815.patch](tarball://root/attachments/some-uuid/ticket815/trac_815.patch) by anakha created at 2008-10-24 02:20:59
 
 Lost of deleted code, a bit of modification and doctesting for .sage works as well as for the rest.
 
@@ -154,7 +154,7 @@ this replaces the above and is a REBASING AGAINST 3.1.2.alpha2.
 archive/issue_comments_005070.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good. Eliminates cruft.",
+    "body": "Attachment [scripts-815.patch](tarball://root/attachments/some-uuid/ticket815/scripts-815.patch) by was created at 2008-11-27 07:14:54\n\nLooks good. Eliminates cruft.",
     "created_at": "2008-11-27T07:14:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/815",
     "type": "issue_comment",
@@ -163,7 +163,7 @@ archive/issue_comments_005070.json:
 }
 ```
 
-Attachment
+Attachment [scripts-815.patch](tarball://root/attachments/some-uuid/ticket815/scripts-815.patch) by was created at 2008-11-27 07:14:54
 
 Looks good. Eliminates cruft.
 

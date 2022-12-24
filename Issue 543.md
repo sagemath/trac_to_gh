@@ -49,7 +49,7 @@ Resolution: fixed
 archive/issue_comments_002754.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [logic.patch](tarball://root/attachments/some-uuid/ticket543/logic.patch) by was created at 2007-08-31 21:03:26",
     "created_at": "2007-08-31T21:03:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/543",
     "type": "issue_comment",
@@ -58,4 +58,4 @@ archive/issue_comments_002754.json:
 }
 ```
 
-Attachment
+Attachment [logic.patch](tarball://root/attachments/some-uuid/ticket543/logic.patch) by was created at 2007-08-31 21:03:26

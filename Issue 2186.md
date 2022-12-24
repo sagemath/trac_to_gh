@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2186
 archive/issue_comments_014354.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [graph_isom_verbosity_5.patch](tarball://root/attachments/some-uuid/ticket2186/graph_isom_verbosity_5.patch) by rlm created at 2008-02-17 00:00:39",
     "created_at": "2008-02-17T00:00:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2186",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_014354.json:
 }
 ```
 
-Attachment
+Attachment [graph_isom_verbosity_5.patch](tarball://root/attachments/some-uuid/ticket2186/graph_isom_verbosity_5.patch) by rlm created at 2008-02-17 00:00:39
 
 
 

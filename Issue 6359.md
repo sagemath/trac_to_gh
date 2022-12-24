@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6359
 archive/issue_comments_050850.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6359-scripts.patch](tarball://root/attachments/some-uuid/ticket6359/trac_6359-scripts.patch) by mhansen created at 2009-06-19 20:08:29",
     "created_at": "2009-06-19T20:08:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6359",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_050850.json:
 }
 ```
 
-Attachment
+Attachment [trac_6359-scripts.patch](tarball://root/attachments/some-uuid/ticket6359/trac_6359-scripts.patch) by mhansen created at 2009-06-19 20:08:29
 
 
 
@@ -261,7 +261,7 @@ Also, your step 4) above is a bit lacking. What did you have to do, exactly, to 
 archive/issue_comments_050860.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6359-1.patch](tarball://root/attachments/some-uuid/ticket6359/trac_6359-1.patch) by mhansen created at 2009-06-25 01:19:28",
     "created_at": "2009-06-25T01:19:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6359",
     "type": "issue_comment",
@@ -270,7 +270,7 @@ archive/issue_comments_050860.json:
 }
 ```
 
-Attachment
+Attachment [trac_6359-1.patch](tarball://root/attachments/some-uuid/ticket6359/trac_6359-1.patch) by mhansen created at 2009-06-25 01:19:28
 
 
 
@@ -279,7 +279,7 @@ Attachment
 archive/issue_comments_050861.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6359-2.patch](tarball://root/attachments/some-uuid/ticket6359/trac_6359-2.patch) by mhansen created at 2009-06-25 01:19:46",
     "created_at": "2009-06-25T01:19:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6359",
     "type": "issue_comment",
@@ -288,7 +288,7 @@ archive/issue_comments_050861.json:
 }
 ```
 
-Attachment
+Attachment [trac_6359-2.patch](tarball://root/attachments/some-uuid/ticket6359/trac_6359-2.patch) by mhansen created at 2009-06-25 01:19:46
 
 
 

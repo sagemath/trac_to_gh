@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5493
 archive/issue_comments_042666.json:
 ```json
 {
-    "body": "Attachment\n\nyay, my first sphinx patch",
+    "body": "Attachment [sr_sphinx.patch](tarball://root/attachments/some-uuid/ticket5493/sr_sphinx.patch) by malb created at 2009-03-11 23:03:54\n\nyay, my first sphinx patch",
     "created_at": "2009-03-11T23:03:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5493",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_042666.json:
 }
 ```
 
-Attachment
+Attachment [sr_sphinx.patch](tarball://root/attachments/some-uuid/ticket5493/sr_sphinx.patch) by malb created at 2009-03-11 23:03:54
 
 yay, my first sphinx patch
 

@@ -55,7 +55,7 @@ Changing status from new to assigned.
 archive/issue_comments_011742.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-1856.patch](tarball://root/attachments/some-uuid/ticket1856/trac-1856.patch) by was created at 2008-01-20 00:07:59",
     "created_at": "2008-01-20T00:07:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1856",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_011742.json:
 }
 ```
 
-Attachment
+Attachment [trac-1856.patch](tarball://root/attachments/some-uuid/ticket1856/trac-1856.patch) by was created at 2008-01-20 00:07:59
 
 
 
@@ -91,7 +91,7 @@ This fixes the problem mentioned above in a simple clean way, adds the ability t
 archive/issue_comments_011744.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1856.patch](tarball://root/attachments/some-uuid/ticket1856/1856.patch) by mhansen created at 2008-01-21 03:55:29",
     "created_at": "2008-01-21T03:55:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1856",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_011744.json:
 }
 ```
 
-Attachment
+Attachment [1856.patch](tarball://root/attachments/some-uuid/ticket1856/1856.patch) by mhansen created at 2008-01-21 03:55:29
 
 
 

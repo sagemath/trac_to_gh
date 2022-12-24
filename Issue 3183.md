@@ -53,7 +53,7 @@ Changing status from new to assigned.
 archive/issue_comments_022027.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [linbox-1.1.5.p4-spkg-install-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3183/linbox-1.1.5.p4-spkg-install-64bit-osx.patch) by mabshoff created at 2008-05-19 03:42:45",
     "created_at": "2008-05-19T03:42:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3183",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_022027.json:
 }
 ```
 
-Attachment
+Attachment [linbox-1.1.5.p4-spkg-install-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3183/linbox-1.1.5.p4-spkg-install-64bit-osx.patch) by mabshoff created at 2008-05-19 03:42:45
 
 
 

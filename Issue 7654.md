@@ -797,7 +797,7 @@ I am not sure, but it seems to me that the doc tests of the elliptic curves code
 archive/issue_comments_065478.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:18 SimonKing]:\n> We got two failures (interestingly in two modules I'm quite familiar with):\n> So, you just need to change two error messages.\n\nThe updated patch does just that.\n \n> I am not sure, but it seems to me that the doc tests of the elliptic curves code became slower. Testing it now.\n\nOkay, good. Let me know what the verdict is and I'll take a look at performance if needed.",
+    "body": "Attachment [trac_7654.patch](tarball://root/attachments/some-uuid/ticket7654/trac_7654.patch) by malb created at 2011-08-18 14:04:41\n\nReplying to [comment:18 SimonKing]:\n> We got two failures (interestingly in two modules I'm quite familiar with):\n> So, you just need to change two error messages.\n\nThe updated patch does just that.\n \n> I am not sure, but it seems to me that the doc tests of the elliptic curves code became slower. Testing it now.\n\nOkay, good. Let me know what the verdict is and I'll take a look at performance if needed.",
     "created_at": "2011-08-18T14:04:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7654",
     "type": "issue_comment",
@@ -806,7 +806,7 @@ archive/issue_comments_065478.json:
 }
 ```
 
-Attachment
+Attachment [trac_7654.patch](tarball://root/attachments/some-uuid/ticket7654/trac_7654.patch) by malb created at 2011-08-18 14:04:41
 
 Replying to [comment:18 SimonKing]:
 > We got two failures (interestingly in two modules I'm quite familiar with):

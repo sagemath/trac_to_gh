@@ -54,7 +54,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/468
 archive/issue_comments_002327.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch should fix this issue.",
+    "body": "Attachment [5834.patch](tarball://root/attachments/some-uuid/ticket468/5834.patch) by bober created at 2007-08-23 18:09:05\n\nThis patch should fix this issue.",
     "created_at": "2007-08-23T18:09:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/468",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_002327.json:
 }
 ```
 
-Attachment
+Attachment [5834.patch](tarball://root/attachments/some-uuid/ticket468/5834.patch) by bober created at 2007-08-23 18:09:05
 
 This patch should fix this issue.
 
@@ -92,7 +92,7 @@ x86 specific fpu stuff -- see ticket discussion (this should NOT be included in 
 archive/issue_comments_002329.json:
 ```json
 {
-    "body": "Attachment\n\nThe attachment `5835-fpu-status.patch` provides a module for checking/setting the fpu precision on an x86 processor, which can be useful for debugging problems like this one. Some example usage of this patch:\n\n\n```\nsage: import sage.misc.fpu as fpu\nsage: fpu.get_precision()\n'extended'\nsage: fpu.set_double_precision()\nsage: fpu.get_precision()\n'double'\nsage: fpu.set_single_precision()\nsage: fpu.get_precision()\n'single'\nsage: fpu.set_extended_precision()\nsage: fpu.get_precision()\n'extended'\n```\n\n\nThis patch should NOT be included in sage currently, as it relies on an x86 processor to function, and also just isn't written very nicely in general.",
+    "body": "Attachment [5835-fpu-status.patch](tarball://root/attachments/some-uuid/ticket468/5835-fpu-status.patch) by bober created at 2007-08-23 18:28:54\n\nThe attachment `5835-fpu-status.patch` provides a module for checking/setting the fpu precision on an x86 processor, which can be useful for debugging problems like this one. Some example usage of this patch:\n\n\n```\nsage: import sage.misc.fpu as fpu\nsage: fpu.get_precision()\n'extended'\nsage: fpu.set_double_precision()\nsage: fpu.get_precision()\n'double'\nsage: fpu.set_single_precision()\nsage: fpu.get_precision()\n'single'\nsage: fpu.set_extended_precision()\nsage: fpu.get_precision()\n'extended'\n```\n\n\nThis patch should NOT be included in sage currently, as it relies on an x86 processor to function, and also just isn't written very nicely in general.",
     "created_at": "2007-08-23T18:28:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/468",
     "type": "issue_comment",
@@ -101,7 +101,7 @@ archive/issue_comments_002329.json:
 }
 ```
 
-Attachment
+Attachment [5835-fpu-status.patch](tarball://root/attachments/some-uuid/ticket468/5835-fpu-status.patch) by bober created at 2007-08-23 18:28:54
 
 The attachment `5835-fpu-status.patch` provides a module for checking/setting the fpu precision on an x86 processor, which can be useful for debugging problems like this one. Some example usage of this patch:
 

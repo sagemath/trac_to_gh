@@ -79,7 +79,7 @@ and tell it that they are pointing to the same thing ('put')
 archive/issue_comments_043272.json:
 ```json
 {
-    "body": "Attachment\n\nI split out the two cases into put_GF2 and put_long.  Anything other suggestions for positive review? :-)",
+    "body": "Attachment [trac_5560_ntl_vec_GF2_MinPolySeq.patch](tarball://root/attachments/some-uuid/ticket5560/trac_5560_ntl_vec_GF2_MinPolySeq.patch) by rhinton created at 2009-03-23 18:01:27\n\nI split out the two cases into put_GF2 and put_long.  Anything other suggestions for positive review? :-)",
     "created_at": "2009-03-23T18:01:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5560",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_043272.json:
 }
 ```
 
-Attachment
+Attachment [trac_5560_ntl_vec_GF2_MinPolySeq.patch](tarball://root/attachments/some-uuid/ticket5560/trac_5560_ntl_vec_GF2_MinPolySeq.patch) by rhinton created at 2009-03-23 18:01:27
 
 I split out the two cases into put_GF2 and put_long.  Anything other suggestions for positive review? :-)
 

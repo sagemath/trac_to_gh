@@ -54,7 +54,7 @@ patch to sage/misc/latex.py
 archive/issue_comments_021820.json:
 ```json
 {
-    "body": "Attachment\n\nSorry, I didn't look at the preview carefully enough.  In item 3, the default for 'sep' is changed from '$$ $$' to the empty string (two single quotes with no space between them), which I haven't yet figured out how to type here...",
+    "body": "Attachment [latex.patch](tarball://root/attachments/some-uuid/ticket3145/latex.patch) by jhpalmieri created at 2008-05-09 19:21:47\n\nSorry, I didn't look at the preview carefully enough.  In item 3, the default for 'sep' is changed from '$$ $$' to the empty string (two single quotes with no space between them), which I haven't yet figured out how to type here...",
     "created_at": "2008-05-09T19:21:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3145",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_021820.json:
 }
 ```
 
-Attachment
+Attachment [latex.patch](tarball://root/attachments/some-uuid/ticket3145/latex.patch) by jhpalmieri created at 2008-05-09 19:21:47
 
 Sorry, I didn't look at the preview carefully enough.  In item 3, the default for 'sep' is changed from '$$ $$' to the empty string (two single quotes with no space between them), which I haven't yet figured out how to type here...
 
@@ -92,7 +92,7 @@ mercurial patch (instead of diff), to replace previous patch
 archive/issue_comments_021822.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3145.patch](tarball://root/attachments/some-uuid/ticket3145/3145.patch) by craigcitro created at 2008-06-15 21:59:00",
     "created_at": "2008-06-15T21:59:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3145",
     "type": "issue_comment",
@@ -101,7 +101,7 @@ archive/issue_comments_021822.json:
 }
 ```
 
-Attachment
+Attachment [3145.patch](tarball://root/attachments/some-uuid/ticket3145/3145.patch) by craigcitro created at 2008-06-15 21:59:00
 
 
 
@@ -173,7 +173,7 @@ So please do what you can from above and let me know.
 archive/issue_comments_021825.json:
 ```json
 {
-    "body": "Attachment\n\nI've tried to address these issues.  I've also changed the documentation a little more, to reflect the fact that 'xdvi' is not required: dvi files are not necessarily displayed by xdvi -- see \n\n[http://trac.sagemath.org/sage_trac/ticket/3137](http://trac.sagemath.org/sage_trac/ticket/3137)\n\nSo I've tried to change the references to xdvi to be more accurate.",
+    "body": "Attachment [3145-new.patch](tarball://root/attachments/some-uuid/ticket3145/3145-new.patch) by jhpalmieri created at 2008-06-16 04:59:19\n\nI've tried to address these issues.  I've also changed the documentation a little more, to reflect the fact that 'xdvi' is not required: dvi files are not necessarily displayed by xdvi -- see \n\n[http://trac.sagemath.org/sage_trac/ticket/3137](http://trac.sagemath.org/sage_trac/ticket/3137)\n\nSo I've tried to change the references to xdvi to be more accurate.",
     "created_at": "2008-06-16T04:59:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3145",
     "type": "issue_comment",
@@ -182,7 +182,7 @@ archive/issue_comments_021825.json:
 }
 ```
 
-Attachment
+Attachment [3145-new.patch](tarball://root/attachments/some-uuid/ticket3145/3145-new.patch) by jhpalmieri created at 2008-06-16 04:59:19
 
 I've tried to address these issues.  I've also changed the documentation a little more, to reflect the fact that 'xdvi' is not required: dvi files are not necessarily displayed by xdvi -- see 
 
@@ -215,7 +215,7 @@ archive/issue_comments_021826.json:
 archive/issue_comments_021827.json:
 ```json
 {
-    "body": "Attachment\n\npart 2 of 2",
+    "body": "Attachment [sage-3145-new-part2of2.patch](tarball://root/attachments/some-uuid/ticket3145/sage-3145-new-part2of2.patch) by was created at 2008-06-19 23:33:44\n\npart 2 of 2",
     "created_at": "2008-06-19T23:33:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3145",
     "type": "issue_comment",
@@ -224,7 +224,7 @@ archive/issue_comments_021827.json:
 }
 ```
 
-Attachment
+Attachment [sage-3145-new-part2of2.patch](tarball://root/attachments/some-uuid/ticket3145/sage-3145-new-part2of2.patch) by was created at 2008-06-19 23:33:44
 
 part 2 of 2
 

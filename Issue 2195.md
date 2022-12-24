@@ -139,7 +139,7 @@ Michael
 archive/issue_comments_014411.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached a valgrind record from my laptop.  (Actually, this is only the beginning of the valgrind record... I cut out the memory leak reports at the end.)\n\nI wonder if it could be a 32-bit vs. 64-bit issue?  My laptop is 32-bit.",
+    "body": "Attachment [2195-valgrind](tarball://root/attachments/some-uuid/ticket2195/2195-valgrind) by cwitty created at 2008-02-17 19:22:39\n\nI've attached a valgrind record from my laptop.  (Actually, this is only the beginning of the valgrind record... I cut out the memory leak reports at the end.)\n\nI wonder if it could be a 32-bit vs. 64-bit issue?  My laptop is 32-bit.",
     "created_at": "2008-02-17T19:22:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2195",
     "type": "issue_comment",
@@ -148,7 +148,7 @@ archive/issue_comments_014411.json:
 }
 ```
 
-Attachment
+Attachment [2195-valgrind](tarball://root/attachments/some-uuid/ticket2195/2195-valgrind) by cwitty created at 2008-02-17 19:22:39
 
 I've attached a valgrind record from my laptop.  (Actually, this is only the beginning of the valgrind record... I cut out the memory leak reports at the end.)
 

@@ -50,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2668
 archive/issue_comments_018367.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2668-ncalexan-QQbar-pickle-1.patch](tarball://root/attachments/some-uuid/ticket2668/2668-ncalexan-QQbar-pickle-1.patch) by ncalexan created at 2008-03-26 18:57:36",
     "created_at": "2008-03-26T18:57:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2668",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_018367.json:
 }
 ```
 
-Attachment
+Attachment [2668-ncalexan-QQbar-pickle-1.patch](tarball://root/attachments/some-uuid/ticket2668/2668-ncalexan-QQbar-pickle-1.patch) by ncalexan created at 2008-03-26 18:57:36
 
 
 
@@ -90,7 +90,7 @@ Michael
 archive/issue_comments_018369.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2668-qqbar-pickle-referee.patch](tarball://root/attachments/some-uuid/ticket2668/2668-qqbar-pickle-referee.patch) by cwitty created at 2008-03-28 14:45:58",
     "created_at": "2008-03-28T14:45:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2668",
     "type": "issue_comment",
@@ -99,7 +99,7 @@ archive/issue_comments_018369.json:
 }
 ```
 
-Attachment
+Attachment [2668-qqbar-pickle-referee.patch](tarball://root/attachments/some-uuid/ticket2668/2668-qqbar-pickle-referee.patch) by cwitty created at 2008-03-28 14:45:58
 
 
 

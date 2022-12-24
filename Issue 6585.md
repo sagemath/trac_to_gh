@@ -50,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6585
 archive/issue_comments_053802.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6585-backslash.patch](tarball://root/attachments/some-uuid/ticket6585/trac_6585-backslash.patch) by jhpalmieri created at 2009-07-22 05:04:57",
     "created_at": "2009-07-22T05:04:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6585",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_053802.json:
 }
 ```
 
-Attachment
+Attachment [trac_6585-backslash.patch](tarball://root/attachments/some-uuid/ticket6585/trac_6585-backslash.patch) by jhpalmieri created at 2009-07-22 05:04:57
 
 
 
@@ -68,7 +68,7 @@ Attachment
 archive/issue_comments_053803.json:
 ```json
 {
-    "body": "Attachment\n\nfix warning when building HTML version of sage/combinat/partition.py",
+    "body": "Attachment [trac_6585-fix-warnings.patch](tarball://root/attachments/some-uuid/ticket6585/trac_6585-fix-warnings.patch) by mvngu created at 2009-07-24 08:17:35\n\nfix warning when building HTML version of sage/combinat/partition.py",
     "created_at": "2009-07-24T08:17:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6585",
     "type": "issue_comment",
@@ -77,7 +77,7 @@ archive/issue_comments_053803.json:
 }
 ```
 
-Attachment
+Attachment [trac_6585-fix-warnings.patch](tarball://root/attachments/some-uuid/ticket6585/trac_6585-fix-warnings.patch) by mvngu created at 2009-07-24 08:17:35
 
 fix warning when building HTML version of sage/combinat/partition.py
 

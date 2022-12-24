@@ -185,7 +185,7 @@ Changing keywords from "pari cm curve ellpow" to "pari ellpow complex multiplica
 archive/issue_comments_050510.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6327_ellpow_cm.patch](tarball://root/attachments/some-uuid/ticket6327/6327_ellpow_cm.patch) by jdemeyer created at 2010-09-19 11:51:27",
     "created_at": "2010-09-19T11:51:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6327",
     "type": "issue_comment",
@@ -194,7 +194,7 @@ archive/issue_comments_050510.json:
 }
 ```
 
-Attachment
+Attachment [6327_ellpow_cm.patch](tarball://root/attachments/some-uuid/ticket6327/6327_ellpow_cm.patch) by jdemeyer created at 2010-09-19 11:51:27
 
 
 

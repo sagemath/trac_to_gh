@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8369
 archive/issue_comments_074810.json:
 ```json
 {
-    "body": "Attachment\n\nFix mistake.  sagenb repo.",
+    "body": "Attachment [trac_8369-upload_page_oops.patch](tarball://root/attachments/some-uuid/ticket8369/trac_8369-upload_page_oops.patch) by mpatel created at 2010-03-05 08:35:05\n\nFix mistake.  sagenb repo.",
     "created_at": "2010-03-05T08:35:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8369",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_074810.json:
 }
 ```
 
-Attachment
+Attachment [trac_8369-upload_page_oops.patch](tarball://root/attachments/some-uuid/ticket8369/trac_8369-upload_page_oops.patch) by mpatel created at 2010-03-05 08:35:05
 
 Fix mistake.  sagenb repo.
 

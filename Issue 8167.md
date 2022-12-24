@@ -51,7 +51,7 @@ Replace some Unicode characters.  sagenb repo.
 archive/issue_comments_071860.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8167-simpler_unicode.patch](tarball://root/attachments/some-uuid/ticket8167/trac_8167-simpler_unicode.patch) by mpatel created at 2010-02-03 09:29:34",
     "created_at": "2010-02-03T09:29:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8167",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_071860.json:
 }
 ```
 
-Attachment
+Attachment [trac_8167-simpler_unicode.patch](tarball://root/attachments/some-uuid/ticket8167/trac_8167-simpler_unicode.patch) by mpatel created at 2010-02-03 09:29:34
 
 
 

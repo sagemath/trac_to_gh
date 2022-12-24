@@ -102,7 +102,7 @@ You do exactly what is said in the description. But I noticed a few things that 
 archive/issue_comments_081638.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8832-free_module_coerce-fh.patch](tarball://root/attachments/some-uuid/ticket8882/trac_8832-free_module_coerce-fh.patch) by hivert created at 2010-05-05 14:23:21",
     "created_at": "2010-05-05T14:23:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8882",
     "type": "issue_comment",
@@ -111,7 +111,7 @@ archive/issue_comments_081638.json:
 }
 ```
 
-Attachment
+Attachment [trac_8832-free_module_coerce-fh.patch](tarball://root/attachments/some-uuid/ticket8882/trac_8832-free_module_coerce-fh.patch) by hivert created at 2010-05-05 14:23:21
 
 
 
@@ -252,7 +252,7 @@ the comment says that `args[2]` will be converted into a tuple, but I don't actu
 archive/issue_comments_081645.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8882-freemod_interface_cleanup-fh.patch](tarball://root/attachments/some-uuid/ticket8882/trac_8882-freemod_interface_cleanup-fh.patch) by hivert created at 2010-05-05 15:22:45",
     "created_at": "2010-05-05T15:22:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8882",
     "type": "issue_comment",
@@ -261,7 +261,7 @@ archive/issue_comments_081645.json:
 }
 ```
 
-Attachment
+Attachment [trac_8882-freemod_interface_cleanup-fh.patch](tarball://root/attachments/some-uuid/ticket8882/trac_8882-freemod_interface_cleanup-fh.patch) by hivert created at 2010-05-05 15:22:45
 
 
 

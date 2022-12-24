@@ -129,7 +129,7 @@ RuntimeError: Vertex (0) is not a vertex of the graph.
 archive/issue_comments_071625.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8148_dual_uses_poset_constructor.patch](tarball://root/attachments/some-uuid/ticket8148/trac_8148_dual_uses_poset_constructor.patch) by brunellus created at 2011-12-14 00:45:30",
     "created_at": "2011-12-14T00:45:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8148",
     "type": "issue_comment",
@@ -138,7 +138,7 @@ archive/issue_comments_071625.json:
 }
 ```
 
-Attachment
+Attachment [trac_8148_dual_uses_poset_constructor.patch](tarball://root/attachments/some-uuid/ticket8148/trac_8148_dual_uses_poset_constructor.patch) by brunellus created at 2011-12-14 00:45:30
 
 
 
@@ -219,7 +219,7 @@ It's the double-colon that says "here comes a doctest."
 archive/issue_comments_071629.json:
 ```json
 {
-    "body": "Attachment\n\nThanks! I tried to rewrite this to use FinitePoset immediately. Does it make sense? I tried to run it to few examples, but maybe there is something I overlooked.",
+    "body": "Attachment [trac_8148_dual_correctly_constructs_FinitePoset.patch](tarball://root/attachments/some-uuid/ticket8148/trac_8148_dual_correctly_constructs_FinitePoset.patch) by brunellus created at 2012-01-08 20:06:44\n\nThanks! I tried to rewrite this to use FinitePoset immediately. Does it make sense? I tried to run it to few examples, but maybe there is something I overlooked.",
     "created_at": "2012-01-08T20:06:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8148",
     "type": "issue_comment",
@@ -228,7 +228,7 @@ archive/issue_comments_071629.json:
 }
 ```
 
-Attachment
+Attachment [trac_8148_dual_correctly_constructs_FinitePoset.patch](tarball://root/attachments/some-uuid/ticket8148/trac_8148_dual_correctly_constructs_FinitePoset.patch) by brunellus created at 2012-01-08 20:06:44
 
 Thanks! I tried to rewrite this to use FinitePoset immediately. Does it make sense? I tried to run it to few examples, but maybe there is something I overlooked.
 

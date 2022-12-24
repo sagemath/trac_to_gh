@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9214
 archive/issue_comments_086341.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9214-doc_lyndon_word-sl.patch](tarball://root/attachments/some-uuid/ticket9214/trac_9214-doc_lyndon_word-sl.patch) by slabbe created at 2010-06-11 11:10:23",
     "created_at": "2010-06-11T11:10:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9214",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_086341.json:
 }
 ```
 
-Attachment
+Attachment [trac_9214-doc_lyndon_word-sl.patch](tarball://root/attachments/some-uuid/ticket9214/trac_9214-doc_lyndon_word-sl.patch) by slabbe created at 2010-06-11 11:10:23
 
 
 
@@ -105,7 +105,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_086345.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9214-reviewer.patch](tarball://root/attachments/some-uuid/ticket9214/trac_9214-reviewer.patch) by mvngu created at 2010-06-11 19:41:53",
     "created_at": "2010-06-11T19:41:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9214",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_086345.json:
 }
 ```
 
-Attachment
+Attachment [trac_9214-reviewer.patch](tarball://root/attachments/some-uuid/ticket9214/trac_9214-reviewer.patch) by mvngu created at 2010-06-11 19:41:53
 
 
 

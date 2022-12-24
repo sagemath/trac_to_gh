@@ -97,7 +97,7 @@ Michael
 archive/issue_comments_045261.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5782-rdf-pow.patch](tarball://root/attachments/some-uuid/ticket5782/5782-rdf-pow.patch) by robertwb created at 2009-04-16 04:58:55",
     "created_at": "2009-04-16T04:58:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5782",
     "type": "issue_comment",
@@ -106,7 +106,7 @@ archive/issue_comments_045261.json:
 }
 ```
 
-Attachment
+Attachment [5782-rdf-pow.patch](tarball://root/attachments/some-uuid/ticket5782/5782-rdf-pow.patch) by robertwb created at 2009-04-16 04:58:55
 
 
 

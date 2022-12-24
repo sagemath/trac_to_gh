@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5356
 archive/issue_comments_041262.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5356-notebook-preparser.patch](tarball://root/attachments/some-uuid/ticket5356/5356-notebook-preparser.patch) by robertwb created at 2009-02-24 08:13:37",
     "created_at": "2009-02-24T08:13:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5356",
     "type": "issue_comment",
@@ -50,7 +50,7 @@ archive/issue_comments_041262.json:
 }
 ```
 
-Attachment
+Attachment [5356-notebook-preparser.patch](tarball://root/attachments/some-uuid/ticket5356/5356-notebook-preparser.patch) by robertwb created at 2009-02-24 08:13:37
 
 
 

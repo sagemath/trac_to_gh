@@ -69,7 +69,7 @@ Changing status from new to needs_review.
 archive/issue_comments_069477.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7962-link-worksheets-zip-file.patch](tarball://root/attachments/some-uuid/ticket7962/trac_7962-link-worksheets-zip-file.patch) by timdumol created at 2010-01-17 08:46:48",
     "created_at": "2010-01-17T08:46:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7962",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_069477.json:
 }
 ```
 
-Attachment
+Attachment [trac_7962-link-worksheets-zip-file.patch](tarball://root/attachments/some-uuid/ticket7962/trac_7962-link-worksheets-zip-file.patch) by timdumol created at 2010-01-17 08:46:48
 
 
 

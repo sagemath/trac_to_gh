@@ -87,7 +87,7 @@ Apply this after the patch in #1922 (or change the executed command to "lprint()
 archive/issue_comments_012195.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [prettyprint-checkbox.patch](tarball://root/attachments/some-uuid/ticket1923/prettyprint-checkbox.patch) by jason created at 2008-01-25 19:34:38",
     "created_at": "2008-01-25T19:34:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1923",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_012195.json:
 }
 ```
 
-Attachment
+Attachment [prettyprint-checkbox.patch](tarball://root/attachments/some-uuid/ticket1923/prettyprint-checkbox.patch) by jason created at 2008-01-25 19:34:38
 
 
 
@@ -132,7 +132,7 @@ William
 archive/issue_comments_012197.json:
 ```json
 {
-    "body": "Attachment\n\nApply this instead of pretty-print-checkbox.patch",
+    "body": "Attachment [prettyprint-checkbox-updated.patch](tarball://root/attachments/some-uuid/ticket1923/prettyprint-checkbox-updated.patch) by jason created at 2008-01-28 15:22:07\n\nApply this instead of pretty-print-checkbox.patch",
     "created_at": "2008-01-28T15:22:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1923",
     "type": "issue_comment",
@@ -141,7 +141,7 @@ archive/issue_comments_012197.json:
 }
 ```
 
-Attachment
+Attachment [prettyprint-checkbox-updated.patch](tarball://root/attachments/some-uuid/ticket1923/prettyprint-checkbox-updated.patch) by jason created at 2008-01-28 15:22:07
 
 Apply this instead of pretty-print-checkbox.patch
 

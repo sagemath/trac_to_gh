@@ -53,7 +53,7 @@ fixes doctest fallout
 archive/issue_comments_048045.json:
 ```json
 {
-    "body": "Attachment\n\nThe SPKG can be found here:\n\n   http://sage.math.washington.edu/home/malb/spkgs/singular-3-1-0-2-20090512.spkg\n\nIt does not contain the changed LIB location. It basically is a drop-in replacement for the current Singular spkg.",
+    "body": "Attachment [singular_3_1_0.patch](tarball://root/attachments/some-uuid/ticket6034/singular_3_1_0.patch) by malb created at 2009-05-13 03:02:20\n\nThe SPKG can be found here:\n\n   http://sage.math.washington.edu/home/malb/spkgs/singular-3-1-0-2-20090512.spkg\n\nIt does not contain the changed LIB location. It basically is a drop-in replacement for the current Singular spkg.",
     "created_at": "2009-05-13T03:02:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6034",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_048045.json:
 }
 ```
 
-Attachment
+Attachment [singular_3_1_0.patch](tarball://root/attachments/some-uuid/ticket6034/singular_3_1_0.patch) by malb created at 2009-05-13 03:02:20
 
 The SPKG can be found here:
 
@@ -77,7 +77,7 @@ It does not contain the changed LIB location. It basically is a drop-in replacem
 archive/issue_comments_048046.json:
 ```json
 {
-    "body": "Attachment\n\nI've updated sage-env and the spkg to move the `*.lib` files out of the way to `$SAGE_LOCAL/share/singular`.",
+    "body": "Attachment [singular_env.patch](tarball://root/attachments/some-uuid/ticket6034/singular_env.patch) by malb created at 2009-05-13 03:42:36\n\nI've updated sage-env and the spkg to move the `*.lib` files out of the way to `$SAGE_LOCAL/share/singular`.",
     "created_at": "2009-05-13T03:42:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6034",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_048046.json:
 }
 ```
 
-Attachment
+Attachment [singular_env.patch](tarball://root/attachments/some-uuid/ticket6034/singular_env.patch) by malb created at 2009-05-13 03:42:36
 
 I've updated sage-env and the spkg to move the `*.lib` files out of the way to `$SAGE_LOCAL/share/singular`.
 

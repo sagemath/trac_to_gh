@@ -113,7 +113,7 @@ Haha, OK :) I found this ticket because someone asked about it on IRC and wants 
 archive/issue_comments_082467.json:
 ```json
 {
-    "body": "Attachment\n\nPatch performing the ticket request",
+    "body": "Attachment [trac_8952_odd_girth.patch](tarball://root/attachments/some-uuid/ticket8952/trac_8952_odd_girth.patch) by azi created at 2012-09-25 22:20:08\n\nPatch performing the ticket request",
     "created_at": "2012-09-25T22:20:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8952",
     "type": "issue_comment",
@@ -122,7 +122,7 @@ archive/issue_comments_082467.json:
 }
 ```
 
-Attachment
+Attachment [trac_8952_odd_girth.patch](tarball://root/attachments/some-uuid/ticket8952/trac_8952_odd_girth.patch) by azi created at 2012-09-25 22:20:08
 
 Patch performing the ticket request
 
@@ -266,7 +266,7 @@ Second patch implementing the requested comments
 archive/issue_comments_082473.json:
 ```json
 {
-    "body": "Attachment\n\nI have added a patch (hopefully valid) with the commends you requested. There is still one missing warning in building the documentation (Literal block expected; none found.\" is likely an indentiation problem and/or a problem with a double-colon) which I was not able to spot.",
+    "body": "Attachment [trac_8952_odd_girth_second.patch](tarball://root/attachments/some-uuid/ticket8952/trac_8952_odd_girth_second.patch) by azi created at 2012-09-26 16:39:52\n\nI have added a patch (hopefully valid) with the commends you requested. There is still one missing warning in building the documentation (Literal block expected; none found.\" is likely an indentiation problem and/or a problem with a double-colon) which I was not able to spot.",
     "created_at": "2012-09-26T16:39:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8952",
     "type": "issue_comment",
@@ -275,7 +275,7 @@ archive/issue_comments_082473.json:
 }
 ```
 
-Attachment
+Attachment [trac_8952_odd_girth_second.patch](tarball://root/attachments/some-uuid/ticket8952/trac_8952_odd_girth_second.patch) by azi created at 2012-09-26 16:39:52
 
 I have added a patch (hopefully valid) with the commends you requested. There is still one missing warning in building the documentation (Literal block expected; none found." is likely an indentiation problem and/or a problem with a double-colon) which I was not able to spot.
 
@@ -556,7 +556,7 @@ archive/issue_comments_082485.json:
 archive/issue_comments_082486.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch looks good to me. Am I allowed to change the status of the ticket to reflect that?",
+    "body": "Attachment [trac_8952_odd_girth-bugfix.patch](tarball://root/attachments/some-uuid/ticket8952/trac_8952_odd_girth-bugfix.patch) by azi created at 2012-10-27 13:23:48\n\nThe patch looks good to me. Am I allowed to change the status of the ticket to reflect that?",
     "created_at": "2012-10-27T13:23:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8952",
     "type": "issue_comment",
@@ -565,7 +565,7 @@ archive/issue_comments_082486.json:
 }
 ```
 
-Attachment
+Attachment [trac_8952_odd_girth-bugfix.patch](tarball://root/attachments/some-uuid/ticket8952/trac_8952_odd_girth-bugfix.patch) by azi created at 2012-10-27 13:23:48
 
 The patch looks good to me. Am I allowed to change the status of the ticket to reflect that?
 
@@ -844,7 +844,7 @@ Nathann
 archive/issue_comments_082501.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8952_odd_girth_consolidated.patch](tarball://root/attachments/some-uuid/ticket8952/trac_8952_odd_girth_consolidated.patch) by jdemeyer created at 2012-12-16 15:35:44",
     "created_at": "2012-12-16T15:35:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8952",
     "type": "issue_comment",
@@ -853,7 +853,7 @@ archive/issue_comments_082501.json:
 }
 ```
 
-Attachment
+Attachment [trac_8952_odd_girth_consolidated.patch](tarball://root/attachments/some-uuid/ticket8952/trac_8952_odd_girth_consolidated.patch) by jdemeyer created at 2012-12-16 15:35:44
 
 
 

@@ -169,7 +169,7 @@ depends on the latest patch at #5765
 archive/issue_comments_046576.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5890.patch](tarball://root/attachments/some-uuid/ticket5890/trac_5890.patch) by AlexGhitza created at 2009-04-25 05:26:32",
     "created_at": "2009-04-25T05:26:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5890",
     "type": "issue_comment",
@@ -178,7 +178,7 @@ archive/issue_comments_046576.json:
 }
 ```
 
-Attachment
+Attachment [trac_5890.patch](tarball://root/attachments/some-uuid/ticket5890/trac_5890.patch) by AlexGhitza created at 2009-04-25 05:26:32
 
 
 

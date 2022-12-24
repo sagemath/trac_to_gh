@@ -249,7 +249,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_087099.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9254.patch](tarball://root/attachments/some-uuid/ticket9254/trac_9254.patch) by rlm created at 2010-08-09 05:50:49",
     "created_at": "2010-08-09T05:50:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9254",
     "type": "issue_comment",
@@ -258,7 +258,7 @@ archive/issue_comments_087099.json:
 }
 ```
 
-Attachment
+Attachment [trac_9254.patch](tarball://root/attachments/some-uuid/ticket9254/trac_9254.patch) by rlm created at 2010-08-09 05:50:49
 
 
 

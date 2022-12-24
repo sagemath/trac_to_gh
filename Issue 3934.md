@@ -49,7 +49,7 @@ Changing status from new to assigned.
 archive/issue_comments_028183.json:
 ```json
 {
-    "body": "Attachment\n\nFirst version: patch against sage 3.1.1",
+    "body": "Attachment [10292.patch](tarball://root/attachments/some-uuid/ticket3934/10292.patch) by davidloeffler created at 2008-08-24 12:09:19\n\nFirst version: patch against sage 3.1.1",
     "created_at": "2008-08-24T12:09:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3934",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_028183.json:
 }
 ```
 
-Attachment
+Attachment [10292.patch](tarball://root/attachments/some-uuid/ticket3934/10292.patch) by davidloeffler created at 2008-08-24 12:09:19
 
 First version: patch against sage 3.1.1
 
@@ -134,7 +134,7 @@ Thanks very much for the comments. Since that first version was written I have r
 archive/issue_comments_028186.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [10293.patch](tarball://root/attachments/some-uuid/ticket3934/10293.patch) by davidloeffler created at 2008-08-27 14:19:40",
     "created_at": "2008-08-27T14:19:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3934",
     "type": "issue_comment",
@@ -143,7 +143,7 @@ archive/issue_comments_028186.json:
 }
 ```
 
-Attachment
+Attachment [10293.patch](tarball://root/attachments/some-uuid/ticket3934/10293.patch) by davidloeffler created at 2008-08-27 14:19:40
 
 
 
@@ -209,7 +209,7 @@ Apply after the previous two patches
 archive/issue_comments_028190.json:
 ```json
 {
-    "body": "Attachment\n\nReview summary:  This is a great piece of work, especially after the second patch.  I have made a few changes, detailed below, which are in the 3rd patch.\n\n* I changed the type-checking of the level parameter so that it forces it to be a Sage integer.  This is a good idea since some integer methods would not work if the level was a Python integer, and it also allows you to say `EtaGroup_class(4/2)` should you ever want to.\n\n* docstring for EtaGroup_class.basis() had a spurious redundant INPUT line (N)\n\n* I added a little more type and value checking of parameters\n\n* In  eta_poly_relations there is a lot of output which cannot be turned off.   Why not include a parameter verbose, default False, and only print the output if it is True?  I put this in and changed the doctests accordingly.\n\n* I commented out the NotImplemented plot function, as it seemed pointless to have it!\n\nCoverage test gives this:\n\n```\n ./sage -coverage devel/sage-eta/sage/modular/etaproducts.py \n\ndevel/sage-eta/sage/modular/etaproducts.py\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE devel/sage-eta/sage/modular/etaproducts.py: 74% (23 of 31)\n\nMissing documentation:\n\t * __init__(self, level)\n\t * _repr_(self)\n\t * __call__(self, dict)\n\t * __init__(self, parent, rdict)\n\t * __cmp__(self, other)\n\t * __eq__(self, other)\n\t * _short_repr(self)\n\t * _eta_relations_helper(eta1, eta2, degree, qexp_terms, labels, verbose)\n\n\nPossibly wrong (function name doesn't occur in doctests):\n\t * _mul_(self, other)\n\t * _div_(self, other)\n\t * _repr_(self)\n\t * _repr_(self)\n```\n\nI have never been sure about the loads(dumps) message.  Apart from that all functions which are not preceded by an underscore have docstrings and doctests, which is the main thing:  it would be better if they had a little documentation, but then you'll get the complaint that they should also have doctests.\n\n\nConclusion:  I am very happy with this, but it would be even better if someone who knows a lot more about eta products (such as Ken McMurdy) could put it through its paces.",
+    "body": "Attachment [10294.patch](tarball://root/attachments/some-uuid/ticket3934/10294.patch) by cremona created at 2008-08-27 15:37:13\n\nReview summary:  This is a great piece of work, especially after the second patch.  I have made a few changes, detailed below, which are in the 3rd patch.\n\n* I changed the type-checking of the level parameter so that it forces it to be a Sage integer.  This is a good idea since some integer methods would not work if the level was a Python integer, and it also allows you to say `EtaGroup_class(4/2)` should you ever want to.\n\n* docstring for EtaGroup_class.basis() had a spurious redundant INPUT line (N)\n\n* I added a little more type and value checking of parameters\n\n* In  eta_poly_relations there is a lot of output which cannot be turned off.   Why not include a parameter verbose, default False, and only print the output if it is True?  I put this in and changed the doctests accordingly.\n\n* I commented out the NotImplemented plot function, as it seemed pointless to have it!\n\nCoverage test gives this:\n\n```\n ./sage -coverage devel/sage-eta/sage/modular/etaproducts.py \n\ndevel/sage-eta/sage/modular/etaproducts.py\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE devel/sage-eta/sage/modular/etaproducts.py: 74% (23 of 31)\n\nMissing documentation:\n\t * __init__(self, level)\n\t * _repr_(self)\n\t * __call__(self, dict)\n\t * __init__(self, parent, rdict)\n\t * __cmp__(self, other)\n\t * __eq__(self, other)\n\t * _short_repr(self)\n\t * _eta_relations_helper(eta1, eta2, degree, qexp_terms, labels, verbose)\n\n\nPossibly wrong (function name doesn't occur in doctests):\n\t * _mul_(self, other)\n\t * _div_(self, other)\n\t * _repr_(self)\n\t * _repr_(self)\n```\n\nI have never been sure about the loads(dumps) message.  Apart from that all functions which are not preceded by an underscore have docstrings and doctests, which is the main thing:  it would be better if they had a little documentation, but then you'll get the complaint that they should also have doctests.\n\n\nConclusion:  I am very happy with this, but it would be even better if someone who knows a lot more about eta products (such as Ken McMurdy) could put it through its paces.",
     "created_at": "2008-08-27T15:37:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3934",
     "type": "issue_comment",
@@ -218,7 +218,7 @@ archive/issue_comments_028190.json:
 }
 ```
 
-Attachment
+Attachment [10294.patch](tarball://root/attachments/some-uuid/ticket3934/10294.patch) by cremona created at 2008-08-27 15:37:13
 
 Review summary:  This is a great piece of work, especially after the second patch.  I have made a few changes, detailed below, which are in the 3rd patch.
 
@@ -335,7 +335,7 @@ David
 archive/issue_comments_028194.json:
 ```json
 {
-    "body": "Attachment\n\nI've added doctests for the underscore methods, and a loads(dumps()) test; sage -coverage now returns 100%.",
+    "body": "Attachment [10295.patch](tarball://root/attachments/some-uuid/ticket3934/10295.patch) by davidloeffler created at 2008-09-23 10:35:57\n\nI've added doctests for the underscore methods, and a loads(dumps()) test; sage -coverage now returns 100%.",
     "created_at": "2008-09-23T10:35:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3934",
     "type": "issue_comment",
@@ -344,7 +344,7 @@ archive/issue_comments_028194.json:
 }
 ```
 
-Attachment
+Attachment [10295.patch](tarball://root/attachments/some-uuid/ticket3934/10295.patch) by davidloeffler created at 2008-09-23 10:35:57
 
 I've added doctests for the underscore methods, and a loads(dumps()) test; sage -coverage now returns 100%.
 

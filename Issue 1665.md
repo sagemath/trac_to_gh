@@ -103,7 +103,7 @@ Resolution: fixed
 archive/issue_comments_010585.json:
 ```json
 {
-    "body": "Attachment\n\nMerged in 2.9.2.alpha0.",
+    "body": "Attachment [1665-jmol-zip.hg](tarball://root/attachments/some-uuid/ticket1665/1665-jmol-zip.hg) by mabshoff created at 2008-01-03 16:15:28\n\nMerged in 2.9.2.alpha0.",
     "created_at": "2008-01-03T16:15:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1665",
     "type": "issue_comment",
@@ -112,6 +112,6 @@ archive/issue_comments_010585.json:
 }
 ```
 
-Attachment
+Attachment [1665-jmol-zip.hg](tarball://root/attachments/some-uuid/ticket1665/1665-jmol-zip.hg) by mabshoff created at 2008-01-03 16:15:28
 
 Merged in 2.9.2.alpha0.

@@ -53,7 +53,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6851
 archive/issue_comments_056494.json:
 ```json
 {
-    "body": "Attachment\n\nI hope I have the right fix in pynac this time. attachment:trac_6851-fderivative_hash_collision.patch contains doctests for Sage.\n\nI will post a new pynac package and review instructions soon.",
+    "body": "Attachment [trac_6851-fderivative_hash_collision.patch](tarball://root/attachments/some-uuid/ticket6851/trac_6851-fderivative_hash_collision.patch) by burcin created at 2009-09-19 15:14:23\n\nI hope I have the right fix in pynac this time. attachment:trac_6851-fderivative_hash_collision.patch contains doctests for Sage.\n\nI will post a new pynac package and review instructions soon.",
     "created_at": "2009-09-19T15:14:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6851",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_056494.json:
 }
 ```
 
-Attachment
+Attachment [trac_6851-fderivative_hash_collision.patch](tarball://root/attachments/some-uuid/ticket6851/trac_6851-fderivative_hash_collision.patch) by burcin created at 2009-09-19 15:14:23
 
 I hope I have the right fix in pynac this time. attachment:trac_6851-fderivative_hash_collision.patch contains doctests for Sage.
 

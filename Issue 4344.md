@@ -67,7 +67,7 @@ Changing status from new to assigned.
 archive/issue_comments_031920.json:
 ```json
 {
-    "body": "Attachment\n\nPatch for the Knoboo project",
+    "body": "Attachment [templating.patch](tarball://root/attachments/some-uuid/ticket4344/templating.patch) by TimothyClemans created at 2008-10-23 02:53:50\n\nPatch for the Knoboo project",
     "created_at": "2008-10-23T02:53:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4344",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_031920.json:
 }
 ```
 
-Attachment
+Attachment [templating.patch](tarball://root/attachments/some-uuid/ticket4344/templating.patch) by TimothyClemans created at 2008-10-23 02:53:50
 
 Patch for the Knoboo project
 

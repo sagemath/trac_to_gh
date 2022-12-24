@@ -88,7 +88,7 @@ So the problem here is straightforward to find -- M.factorization() breaks up th
 archive/issue_comments_007673.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_1232.patch](tarball://root/attachments/some-uuid/ticket1232/trac_1232.patch) by craigcitro created at 2007-12-12 04:30:33",
     "created_at": "2007-12-12T04:30:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1232",
     "type": "issue_comment",
@@ -97,7 +97,7 @@ archive/issue_comments_007673.json:
 }
 ```
 
-Attachment
+Attachment [trac_1232.patch](tarball://root/attachments/some-uuid/ticket1232/trac_1232.patch) by craigcitro created at 2007-12-12 04:30:33
 
 
 

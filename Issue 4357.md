@@ -139,7 +139,7 @@ Changing assignee from craigcitro to davidloeffler.
 archive/issue_comments_032005.json:
 ```json
 {
-    "body": "Attachment\n\nI have uploaded a patch which I think fixes this -- it certainly gives the above result for level 45 and weight 2.",
+    "body": "Attachment [trac_4357.patch](tarball://root/attachments/some-uuid/ticket4357/trac_4357.patch) by davidloeffler created at 2009-04-30 18:38:20\n\nI have uploaded a patch which I think fixes this -- it certainly gives the above result for level 45 and weight 2.",
     "created_at": "2009-04-30T18:38:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4357",
     "type": "issue_comment",
@@ -148,7 +148,7 @@ archive/issue_comments_032005.json:
 }
 ```
 
-Attachment
+Attachment [trac_4357.patch](tarball://root/attachments/some-uuid/ticket4357/trac_4357.patch) by davidloeffler created at 2009-04-30 18:38:20
 
 I have uploaded a patch which I think fixes this -- it certainly gives the above result for level 45 and weight 2.
 
@@ -249,7 +249,7 @@ I've swapped the order of the sum of cuspidal and Eisenstein parts, but this is 
 archive/issue_comments_032010.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4357_pt2.patch](tarball://root/attachments/some-uuid/ticket4357/trac_4357_pt2.patch) by davidloeffler created at 2009-05-08 10:41:57",
     "created_at": "2009-05-08T10:41:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4357",
     "type": "issue_comment",
@@ -258,7 +258,7 @@ archive/issue_comments_032010.json:
 }
 ```
 
-Attachment
+Attachment [trac_4357_pt2.patch](tarball://root/attachments/some-uuid/ticket4357/trac_4357_pt2.patch) by davidloeffler created at 2009-05-08 10:41:57
 
 
 

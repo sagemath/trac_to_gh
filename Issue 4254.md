@@ -67,7 +67,7 @@ apply before other patch
 archive/issue_comments_030943.json:
 ```json
 {
-    "body": "Attachment\n\nadded doctests",
+    "body": "Attachment [sr_convenience.patch](tarball://root/attachments/some-uuid/ticket4254/sr_convenience.patch) by malb created at 2008-11-23 22:25:56\n\nadded doctests",
     "created_at": "2008-11-23T22:25:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4254",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_030943.json:
 }
 ```
 
-Attachment
+Attachment [sr_convenience.patch](tarball://root/attachments/some-uuid/ticket4254/sr_convenience.patch) by malb created at 2008-11-23 22:25:56
 
 added doctests
 
@@ -87,7 +87,7 @@ added doctests
 archive/issue_comments_030944.json:
 ```json
 {
-    "body": "Attachment\n\nI added doctests and the patch this patch depends on which I forgot to submit last time.",
+    "body": "Attachment [sr_parameters.2.patch](tarball://root/attachments/some-uuid/ticket4254/sr_parameters.2.patch) by malb created at 2008-11-23 22:26:58\n\nI added doctests and the patch this patch depends on which I forgot to submit last time.",
     "created_at": "2008-11-23T22:26:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4254",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_030944.json:
 }
 ```
 
-Attachment
+Attachment [sr_parameters.2.patch](tarball://root/attachments/some-uuid/ticket4254/sr_parameters.2.patch) by malb created at 2008-11-23 22:26:58
 
 I added doctests and the patch this patch depends on which I forgot to submit last time.
 

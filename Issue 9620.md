@@ -61,7 +61,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9620
 archive/issue_comments_093185.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [pari-2.3.5.patch](tarball://root/attachments/some-uuid/ticket9620/pari-2.3.5.patch) by rbk created at 2010-07-28 07:56:36",
     "created_at": "2010-07-28T07:56:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9620",
     "type": "issue_comment",
@@ -70,7 +70,7 @@ archive/issue_comments_093185.json:
 }
 ```
 
-Attachment
+Attachment [pari-2.3.5.patch](tarball://root/attachments/some-uuid/ticket9620/pari-2.3.5.patch) by rbk created at 2010-07-28 07:56:36
 
 
 

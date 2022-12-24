@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1645
 archive/issue_comments_010464.json:
 ```json
 {
-    "body": "Attachment\n\nThis actually has nothing to do with erf really -- it's that converting a real interval to Maxima (or any other system) should raise a TypeError, but doesn't.   \n\nOf course, erf could be implemented for intervals, but that's not done yet; that would be an enhancement not a bug.",
+    "body": "Attachment [trac-1645.patch](tarball://root/attachments/some-uuid/ticket1645/trac-1645.patch) by was created at 2008-01-02 06:12:12\n\nThis actually has nothing to do with erf really -- it's that converting a real interval to Maxima (or any other system) should raise a TypeError, but doesn't.   \n\nOf course, erf could be implemented for intervals, but that's not done yet; that would be an enhancement not a bug.",
     "created_at": "2008-01-02T06:12:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1645",
     "type": "issue_comment",
@@ -53,7 +53,7 @@ archive/issue_comments_010464.json:
 }
 ```
 
-Attachment
+Attachment [trac-1645.patch](tarball://root/attachments/some-uuid/ticket1645/trac-1645.patch) by was created at 2008-01-02 06:12:12
 
 This actually has nothing to do with erf really -- it's that converting a real interval to Maxima (or any other system) should raise a TypeError, but doesn't.   
 

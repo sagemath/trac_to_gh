@@ -151,7 +151,7 @@ Dave
 archive/issue_comments_091513.json:
 ```json
 {
-    "body": "Attachment\n\nCompressed version of sage-4.5/spkg/logs/scipy-0.7.p5.log",
+    "body": "Attachment [scipy-0.7.p5.log.gz](tarball://root/attachments/some-uuid/ticket9519/scipy-0.7.p5.log.gz) by drkirkby created at 2010-07-17 00:25:05\n\nCompressed version of sage-4.5/spkg/logs/scipy-0.7.p5.log",
     "created_at": "2010-07-17T00:25:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9519",
     "type": "issue_comment",
@@ -160,7 +160,7 @@ archive/issue_comments_091513.json:
 }
 ```
 
-Attachment
+Attachment [scipy-0.7.p5.log.gz](tarball://root/attachments/some-uuid/ticket9519/scipy-0.7.p5.log.gz) by drkirkby created at 2010-07-17 00:25:05
 
 Compressed version of sage-4.5/spkg/logs/scipy-0.7.p5.log
 
@@ -261,7 +261,7 @@ Dave
 archive/issue_comments_091517.json:
 ```json
 {
-    "body": "Attachment\n\nOutput from: ./sage -python -c \"import scipy; scipy.test()\" > scipy.test.log  2>&1",
+    "body": "Attachment [scipy.test.log](tarball://root/attachments/some-uuid/ticket9519/scipy.test.log) by drkirkby created at 2010-07-17 00:50:00\n\nOutput from: ./sage -python -c \"import scipy; scipy.test()\" > scipy.test.log  2>&1",
     "created_at": "2010-07-17T00:50:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9519",
     "type": "issue_comment",
@@ -270,7 +270,7 @@ archive/issue_comments_091517.json:
 }
 ```
 
-Attachment
+Attachment [scipy.test.log](tarball://root/attachments/some-uuid/ticket9519/scipy.test.log) by drkirkby created at 2010-07-17 00:50:00
 
 Output from: ./sage -python -c "import scipy; scipy.test()" > scipy.test.log  2>&1
 

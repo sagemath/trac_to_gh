@@ -85,7 +85,7 @@ Changing priority from major to blocker.
 archive/issue_comments_029536.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4094-eval_all.patch](tarball://root/attachments/some-uuid/ticket4094/4094-eval_all.patch) by boothby created at 2008-09-09 23:01:00",
     "created_at": "2008-09-09T23:01:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4094",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_029536.json:
 }
 ```
 
-Attachment
+Attachment [4094-eval_all.patch](tarball://root/attachments/some-uuid/ticket4094/4094-eval_all.patch) by boothby created at 2008-09-09 23:01:00
 
 
 
@@ -121,7 +121,7 @@ The attached does *NOT* depend on #4078.  In fact, it conflicts hugely.  If it i
 archive/issue_comments_029538.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4094.patch](tarball://root/attachments/some-uuid/ticket4094/trac_4094.patch) by mhansen created at 2008-09-10 00:24:51",
     "created_at": "2008-09-10T00:24:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4094",
     "type": "issue_comment",
@@ -130,7 +130,7 @@ archive/issue_comments_029538.json:
 }
 ```
 
-Attachment
+Attachment [trac_4094.patch](tarball://root/attachments/some-uuid/ticket4094/trac_4094.patch) by mhansen created at 2008-09-10 00:24:51
 
 
 

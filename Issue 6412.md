@@ -97,7 +97,7 @@ Allow negative arguments for singular.cputime()
 archive/issue_comments_051492.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good.",
+    "body": "Attachment [cputime.patch](tarball://root/attachments/some-uuid/ticket6412/cputime.patch) by malb created at 2009-06-25 17:55:58\n\nLooks good.",
     "created_at": "2009-06-25T17:55:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6412",
     "type": "issue_comment",
@@ -106,7 +106,7 @@ archive/issue_comments_051492.json:
 }
 ```
 
-Attachment
+Attachment [cputime.patch](tarball://root/attachments/some-uuid/ticket6412/cputime.patch) by malb created at 2009-06-25 17:55:58
 
 Looks good.
 

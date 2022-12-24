@@ -202,7 +202,7 @@ Sure, but it was *wrong* before, and correctness trumps maxima startup time.  Un
 archive/issue_comments_078180.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-8624-abs-integration.patch](tarball://root/attachments/some-uuid/ticket8624/trac-8624-abs-integration.patch) by jason created at 2010-05-13 06:48:51",
     "created_at": "2010-05-13T06:48:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8624",
     "type": "issue_comment",
@@ -211,7 +211,7 @@ archive/issue_comments_078180.json:
 }
 ```
 
-Attachment
+Attachment [trac-8624-abs-integration.patch](tarball://root/attachments/some-uuid/ticket8624/trac-8624-abs-integration.patch) by jason created at 2010-05-13 06:48:51
 
 
 

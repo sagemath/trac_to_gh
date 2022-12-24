@@ -112,7 +112,7 @@ Michael
 archive/issue_comments_010151.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [gen.patch](tarball://root/attachments/some-uuid/ticket1595/gen.patch) by was created at 2009-04-08 00:57:43",
     "created_at": "2009-04-08T00:57:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1595",
     "type": "issue_comment",
@@ -121,7 +121,7 @@ archive/issue_comments_010151.json:
 }
 ```
 
-Attachment
+Attachment [gen.patch](tarball://root/attachments/some-uuid/ticket1595/gen.patch) by was created at 2009-04-08 00:57:43
 
 
 
@@ -196,7 +196,7 @@ Michael
 archive/issue_comments_010155.json:
 ```json
 {
-    "body": "Attachment\n\nMerged trac_1595-rebase.patch in Sage 3.4.1.rc2.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_1595-rebase.patch](tarball://root/attachments/some-uuid/ticket1595/trac_1595-rebase.patch) by mabshoff created at 2009-04-09 02:22:50\n\nMerged trac_1595-rebase.patch in Sage 3.4.1.rc2.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-09T02:22:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1595",
     "type": "issue_comment",
@@ -205,7 +205,7 @@ archive/issue_comments_010155.json:
 }
 ```
 
-Attachment
+Attachment [trac_1595-rebase.patch](tarball://root/attachments/some-uuid/ticket1595/trac_1595-rebase.patch) by mabshoff created at 2009-04-09 02:22:50
 
 Merged trac_1595-rebase.patch in Sage 3.4.1.rc2.
 

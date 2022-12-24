@@ -82,7 +82,7 @@ Changing status from new to assigned.
 archive/issue_comments_015462.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [rr-qq-coercion-crash.patch](tarball://root/attachments/some-uuid/ticket2324/rr-qq-coercion-crash.patch) by cwitty created at 2008-02-27 03:17:10",
     "created_at": "2008-02-27T03:17:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2324",
     "type": "issue_comment",
@@ -91,7 +91,7 @@ archive/issue_comments_015462.json:
 }
 ```
 
-Attachment
+Attachment [rr-qq-coercion-crash.patch](tarball://root/attachments/some-uuid/ticket2324/rr-qq-coercion-crash.patch) by cwitty created at 2008-02-27 03:17:10
 
 
 

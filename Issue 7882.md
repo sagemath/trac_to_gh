@@ -51,7 +51,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7882
 archive/issue_comments_068509.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Macaulay2_prompt_only_in_the_beginning_of_lines.patch](tarball://root/attachments/some-uuid/ticket7882/Macaulay2_prompt_only_in_the_beginning_of_lines.patch) by novoselt created at 2010-01-09 20:02:48",
     "created_at": "2010-01-09T20:02:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7882",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_068509.json:
 }
 ```
 
-Attachment
+Attachment [Macaulay2_prompt_only_in_the_beginning_of_lines.patch](tarball://root/attachments/some-uuid/ticket7882/Macaulay2_prompt_only_in_the_beginning_of_lines.patch) by novoselt created at 2010-01-09 20:02:48
 
 
 

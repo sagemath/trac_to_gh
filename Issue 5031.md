@@ -92,7 +92,7 @@ this is against sage-3.3.alpha0
 archive/issue_comments_038320.json:
 ```json
 {
-    "body": "Attachment\n\nI get even larger speedups (factor of 21 to 23), the doctest coverage for all 5 touched files is increased, and the code is fine. Positive review.",
+    "body": "Attachment [trac_5031.patch](tarball://root/attachments/some-uuid/ticket5031/trac_5031.patch) by ddrake created at 2009-01-20 09:11:45\n\nI get even larger speedups (factor of 21 to 23), the doctest coverage for all 5 touched files is increased, and the code is fine. Positive review.",
     "created_at": "2009-01-20T09:11:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5031",
     "type": "issue_comment",
@@ -101,7 +101,7 @@ archive/issue_comments_038320.json:
 }
 ```
 
-Attachment
+Attachment [trac_5031.patch](tarball://root/attachments/some-uuid/ticket5031/trac_5031.patch) by ddrake created at 2009-01-20 09:11:45
 
 I get even larger speedups (factor of 21 to 23), the doctest coverage for all 5 touched files is increased, and the code is fine. Positive review.
 

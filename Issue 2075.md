@@ -191,7 +191,7 @@ YES, this is a blocker.  If you create a free module over QQ[x] with given gener
 archive/issue_comments_013426.json:
 ```json
 {
-    "body": "Attachment\n\nSome minor issues:\n\n* in docstring of `_echelonize_ring` `NotImplemenetedError` should get `\\code{`}\n* does `self.dense_matrix()` return `self` if it is already dense? If not the extra copy should be avoided by checking if the matrix is dense or sparse first\n* What is the status of \"`#not very useful?`\" is that a note to self to fix this or for the user?\n* \"#This code is by Me\" that should be William Stein\n* Erocal Burcin -> Burcin Erocal\n\nExcept those minor things the code looks good. Note, I didn't attempt to apply the patch yet.",
+    "body": "Attachment [sage-2075.patch](tarball://root/attachments/some-uuid/ticket2075/sage-2075.patch) by malb created at 2008-02-21 20:04:10\n\nSome minor issues:\n\n* in docstring of `_echelonize_ring` `NotImplemenetedError` should get `\\code{`}\n* does `self.dense_matrix()` return `self` if it is already dense? If not the extra copy should be avoided by checking if the matrix is dense or sparse first\n* What is the status of \"`#not very useful?`\" is that a note to self to fix this or for the user?\n* \"#This code is by Me\" that should be William Stein\n* Erocal Burcin -> Burcin Erocal\n\nExcept those minor things the code looks good. Note, I didn't attempt to apply the patch yet.",
     "created_at": "2008-02-21T20:04:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2075",
     "type": "issue_comment",
@@ -200,7 +200,7 @@ archive/issue_comments_013426.json:
 }
 ```
 
-Attachment
+Attachment [sage-2075.patch](tarball://root/attachments/some-uuid/ticket2075/sage-2075.patch) by malb created at 2008-02-21 20:04:10
 
 Some minor issues:
 
@@ -276,7 +276,7 @@ fixes most minor issues
 archive/issue_comments_013429.json:
 ```json
 {
-    "body": "Attachment\n\n`sage-2075.2.patch` fixes:\n* in docstring of _echelonize_ring NotImplemenetedError should get \\code{} \n* \"#This code is by Me\" that should be William Stein \n* Erocal Burcin -> Burcin Erocal\n\nLeft over:\n* \"does self.dense_matrix() return self if it is already dense? If not the extra copy should be avoided by checking if the matrix is dense or sparse first  -> Yes, it returns self.\" So it needs no fix\n* \"What is the status of \"#not very useful?\" is that a note to self to fix this or for the user?  ->  It looks WRONG to me. Shouldn't the second row be removed?!\"\n  rowred only considers constants for reduction, not very useful for most applications indeed.\n\nI say apply. If we don't like rowred the way it is, we should (a) rename it and/or (b) fix it in another ticket.",
+    "body": "Attachment [sage-2075.2.patch](tarball://root/attachments/some-uuid/ticket2075/sage-2075.2.patch) by malb created at 2008-02-21 20:50:32\n\n`sage-2075.2.patch` fixes:\n* in docstring of _echelonize_ring NotImplemenetedError should get \\code{} \n* \"#This code is by Me\" that should be William Stein \n* Erocal Burcin -> Burcin Erocal\n\nLeft over:\n* \"does self.dense_matrix() return self if it is already dense? If not the extra copy should be avoided by checking if the matrix is dense or sparse first  -> Yes, it returns self.\" So it needs no fix\n* \"What is the status of \"#not very useful?\" is that a note to self to fix this or for the user?  ->  It looks WRONG to me. Shouldn't the second row be removed?!\"\n  rowred only considers constants for reduction, not very useful for most applications indeed.\n\nI say apply. If we don't like rowred the way it is, we should (a) rename it and/or (b) fix it in another ticket.",
     "created_at": "2008-02-21T20:50:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2075",
     "type": "issue_comment",
@@ -285,7 +285,7 @@ archive/issue_comments_013429.json:
 }
 ```
 
-Attachment
+Attachment [sage-2075.2.patch](tarball://root/attachments/some-uuid/ticket2075/sage-2075.2.patch) by malb created at 2008-02-21 20:50:32
 
 `sage-2075.2.patch` fixes:
 * in docstring of _echelonize_ring NotImplemenetedError should get \code{} 

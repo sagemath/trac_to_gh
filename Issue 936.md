@@ -78,7 +78,7 @@ fixed issued in permgroup.py
 archive/issue_comments_005718.json:
 ```json
 {
-    "body": "Attachment\n\nThe errors in lie.py come from the new coercion model:\n\n\n```\nsage: a = lie('2')\nsage: 2*a\nException exceptions.RuntimeError: RuntimeError('An error occured running a LiE command:\\nIdentifier sage5 is not defined. \\n(in <)',) in 'parent._unregister_pair' ignored\nException exceptions.RuntimeError: RuntimeError('An error occured running a LiE command:\\nIdentifier sage5 is not defined. \\n(in <)',) in 'parent._unregister_pair' ignored\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/mhansen/sage/devel/sage-main/sage/geometry/<ipython console> in <module>()\n\n/home/mhansen/sage/devel/sage-main/sage/geometry/element.pyx in element.RingElement.__mul__()\n\n/home/mhansen/sage/devel/sage-main/sage/geometry/coerce.pyx in coerce.CoercionModel_cache_maps.bin_op_c()\n\n<type 'exceptions.TypeError'>: unsupported operand parent(s) for '*': 'Integer Ring' and 'LiE Interpreter'\nsage: b = lie('2')\nsage: a*b\n4\n```\n",
+    "body": "Attachment [permgroup.patch](tarball://root/attachments/some-uuid/ticket936/permgroup.patch) by mhansen created at 2007-10-20 04:56:21\n\nThe errors in lie.py come from the new coercion model:\n\n\n```\nsage: a = lie('2')\nsage: 2*a\nException exceptions.RuntimeError: RuntimeError('An error occured running a LiE command:\\nIdentifier sage5 is not defined. \\n(in <)',) in 'parent._unregister_pair' ignored\nException exceptions.RuntimeError: RuntimeError('An error occured running a LiE command:\\nIdentifier sage5 is not defined. \\n(in <)',) in 'parent._unregister_pair' ignored\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/mhansen/sage/devel/sage-main/sage/geometry/<ipython console> in <module>()\n\n/home/mhansen/sage/devel/sage-main/sage/geometry/element.pyx in element.RingElement.__mul__()\n\n/home/mhansen/sage/devel/sage-main/sage/geometry/coerce.pyx in coerce.CoercionModel_cache_maps.bin_op_c()\n\n<type 'exceptions.TypeError'>: unsupported operand parent(s) for '*': 'Integer Ring' and 'LiE Interpreter'\nsage: b = lie('2')\nsage: a*b\n4\n```\n",
     "created_at": "2007-10-20T04:56:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/936",
     "type": "issue_comment",
@@ -87,7 +87,7 @@ archive/issue_comments_005718.json:
 }
 ```
 
-Attachment
+Attachment [permgroup.patch](tarball://root/attachments/some-uuid/ticket936/permgroup.patch) by mhansen created at 2007-10-20 04:56:21
 
 The errors in lie.py come from the new coercion model:
 
@@ -174,7 +174,7 @@ Exception raised:
 archive/issue_comments_005721.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [matlab.patch](tarball://root/attachments/some-uuid/ticket936/matlab.patch) by mhansen created at 2007-10-20 05:05:17",
     "created_at": "2007-10-20T05:05:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/936",
     "type": "issue_comment",
@@ -183,7 +183,7 @@ archive/issue_comments_005721.json:
 }
 ```
 
-Attachment
+Attachment [matlab.patch](tarball://root/attachments/some-uuid/ticket936/matlab.patch) by mhansen created at 2007-10-20 05:05:17
 
 
 
@@ -210,7 +210,7 @@ Patch added for errors in kash.py
 archive/issue_comments_005723.json:
 ```json
 {
-    "body": "Attachment\n\nAdded patch for error in remote_file.py .  It's an error in the URL.  The file in question should be moved to a more permanent spot.",
+    "body": "Attachment [kash.patch](tarball://root/attachments/some-uuid/ticket936/kash.patch) by mhansen created at 2007-10-20 05:30:36\n\nAdded patch for error in remote_file.py .  It's an error in the URL.  The file in question should be moved to a more permanent spot.",
     "created_at": "2007-10-20T05:30:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/936",
     "type": "issue_comment",
@@ -219,7 +219,7 @@ archive/issue_comments_005723.json:
 }
 ```
 
-Attachment
+Attachment [kash.patch](tarball://root/attachments/some-uuid/ticket936/kash.patch) by mhansen created at 2007-10-20 05:30:36
 
 Added patch for error in remote_file.py .  It's an error in the URL.  The file in question should be moved to a more permanent spot.
 
@@ -230,7 +230,7 @@ Added patch for error in remote_file.py .  It's an error in the URL.  The file i
 archive/issue_comments_005724.json:
 ```json
 {
-    "body": "Attachment\n\nAttached patch for number_field.py",
+    "body": "Attachment [remote_file.patch](tarball://root/attachments/some-uuid/ticket936/remote_file.patch) by mhansen created at 2007-10-20 05:43:14\n\nAttached patch for number_field.py",
     "created_at": "2007-10-20T05:43:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/936",
     "type": "issue_comment",
@@ -239,7 +239,7 @@ archive/issue_comments_005724.json:
 }
 ```
 
-Attachment
+Attachment [remote_file.patch](tarball://root/attachments/some-uuid/ticket936/remote_file.patch) by mhansen created at 2007-10-20 05:43:14
 
 Attached patch for number_field.py
 
@@ -250,7 +250,7 @@ Attached patch for number_field.py
 archive/issue_comments_005725.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [number_field.patch](tarball://root/attachments/some-uuid/ticket936/number_field.patch) by mhansen created at 2007-10-20 05:43:34",
     "created_at": "2007-10-20T05:43:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/936",
     "type": "issue_comment",
@@ -259,7 +259,7 @@ archive/issue_comments_005725.json:
 }
 ```
 
-Attachment
+Attachment [number_field.patch](tarball://root/attachments/some-uuid/ticket936/number_field.patch) by mhansen created at 2007-10-20 05:43:34
 
 
 
@@ -340,7 +340,7 @@ Problems with the lie interface fixed -- patch attached.
 archive/issue_comments_005728.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [lie.patch](tarball://root/attachments/some-uuid/ticket936/lie.patch) by mhansen created at 2007-10-20 19:36:13",
     "created_at": "2007-10-20T19:36:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/936",
     "type": "issue_comment",
@@ -349,7 +349,7 @@ archive/issue_comments_005728.json:
 }
 ```
 
-Attachment
+Attachment [lie.patch](tarball://root/attachments/some-uuid/ticket936/lie.patch) by mhansen created at 2007-10-20 19:36:13
 
 
 

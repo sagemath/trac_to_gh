@@ -344,7 +344,7 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_017015.json:
 ```json
 {
-    "body": "Attachment\n\nThanks, Jeroen!",
+    "body": "Attachment [2508.patch](tarball://root/attachments/some-uuid/ticket2508/2508.patch) by mpatel created at 2010-08-09 08:31:23\n\nThanks, Jeroen!",
     "created_at": "2010-08-09T08:31:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2508",
     "type": "issue_comment",
@@ -353,7 +353,7 @@ archive/issue_comments_017015.json:
 }
 ```
 
-Attachment
+Attachment [2508.patch](tarball://root/attachments/some-uuid/ticket2508/2508.patch) by mpatel created at 2010-08-09 08:31:23
 
 Thanks, Jeroen!
 

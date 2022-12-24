@@ -192,7 +192,7 @@ Okay.  Note that this means that if someone decides to add pictures to the tutor
 archive/issue_comments_044003.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [pic.patch](tarball://root/attachments/some-uuid/ticket5633/pic.patch) by jhpalmieri created at 2009-04-06 05:12:55",
     "created_at": "2009-04-06T05:12:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5633",
     "type": "issue_comment",
@@ -201,7 +201,7 @@ archive/issue_comments_044003.json:
 }
 ```
 
-Attachment
+Attachment [pic.patch](tarball://root/attachments/some-uuid/ticket5633/pic.patch) by jhpalmieri created at 2009-04-06 05:12:55
 
 
 

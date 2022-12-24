@@ -131,7 +131,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9397
 archive/issue_comments_089499.json:
 ```json
 {
-    "body": "Attachment\n\nCompressed build log on a 64-bit SPARC running Solaris 10, with Sage built 64-bit",
+    "body": "Attachment [Solaris-10-SPARC-64-bit-build-singular-3.1.0.4.p8.log.gz](tarball://root/attachments/some-uuid/ticket9397/Solaris-10-SPARC-64-bit-build-singular-3.1.0.4.p8.log.gz) by drkirkby created at 2010-06-30 21:44:32\n\nCompressed build log on a 64-bit SPARC running Solaris 10, with Sage built 64-bit",
     "created_at": "2010-06-30T21:44:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9397",
     "type": "issue_comment",
@@ -140,7 +140,7 @@ archive/issue_comments_089499.json:
 }
 ```
 
-Attachment
+Attachment [Solaris-10-SPARC-64-bit-build-singular-3.1.0.4.p8.log.gz](tarball://root/attachments/some-uuid/ticket9397/Solaris-10-SPARC-64-bit-build-singular-3.1.0.4.p8.log.gz) by drkirkby created at 2010-06-30 21:44:32
 
 Compressed build log on a 64-bit SPARC running Solaris 10, with Sage built 64-bit
 
@@ -169,7 +169,7 @@ Compressed build log on a 64-bit SPARC running Solaris 10, with Sage built 32-bi
 archive/issue_comments_089501.json:
 ```json
 {
-    "body": "Attachment\n\nCompressed build log on a MacPro 1 running OS X 10.6.4. Default 64-bit build",
+    "body": "Attachment [OS-X-10.6.4-on-Xeon-64-bit-build-singular-3.1.0.4.p8.log.gz](tarball://root/attachments/some-uuid/ticket9397/OS-X-10.6.4-on-Xeon-64-bit-build-singular-3.1.0.4.p8.log.gz) by drkirkby created at 2010-06-30 21:46:12\n\nCompressed build log on a MacPro 1 running OS X 10.6.4. Default 64-bit build",
     "created_at": "2010-06-30T21:46:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9397",
     "type": "issue_comment",
@@ -178,7 +178,7 @@ archive/issue_comments_089501.json:
 }
 ```
 
-Attachment
+Attachment [OS-X-10.6.4-on-Xeon-64-bit-build-singular-3.1.0.4.p8.log.gz](tarball://root/attachments/some-uuid/ticket9397/OS-X-10.6.4-on-Xeon-64-bit-build-singular-3.1.0.4.p8.log.gz) by drkirkby created at 2010-06-30 21:46:12
 
 Compressed build log on a MacPro 1 running OS X 10.6.4. Default 64-bit build
 
@@ -189,7 +189,7 @@ Compressed build log on a MacPro 1 running OS X 10.6.4. Default 64-bit build
 archive/issue_comments_089502.json:
 ```json
 {
-    "body": "Attachment\n\nCompressed build log on a Sun Fire X4450 server running Ubuntu 8.04.4 Linux",
+    "body": "Attachment [Ubuntu-8.04.4-Linux-on-Xeon-64-bit-build-singular-3.1.0.4.p8.log.gz](tarball://root/attachments/some-uuid/ticket9397/Ubuntu-8.04.4-Linux-on-Xeon-64-bit-build-singular-3.1.0.4.p8.log.gz) by drkirkby created at 2010-06-30 21:49:46\n\nCompressed build log on a Sun Fire X4450 server running Ubuntu 8.04.4 Linux",
     "created_at": "2010-06-30T21:49:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9397",
     "type": "issue_comment",
@@ -198,7 +198,7 @@ archive/issue_comments_089502.json:
 }
 ```
 
-Attachment
+Attachment [Ubuntu-8.04.4-Linux-on-Xeon-64-bit-build-singular-3.1.0.4.p8.log.gz](tarball://root/attachments/some-uuid/ticket9397/Ubuntu-8.04.4-Linux-on-Xeon-64-bit-build-singular-3.1.0.4.p8.log.gz) by drkirkby created at 2010-06-30 21:49:46
 
 Compressed build log on a Sun Fire X4450 server running Ubuntu 8.04.4 Linux
 
@@ -209,7 +209,7 @@ Compressed build log on a Sun Fire X4450 server running Ubuntu 8.04.4 Linux
 archive/issue_comments_089503.json:
 ```json
 {
-    "body": "Attachment\n\nCompressed build log on a Sun Ultra 27 (Xeon processor) running Solaris 10 06/2009. SAGE64=yes, so a 64-bit build",
+    "body": "Attachment [OpenSolaris-on-Xeon-CPU-64-bit-build-singular-3.1.0.4.p8.log.gz](tarball://root/attachments/some-uuid/ticket9397/OpenSolaris-on-Xeon-CPU-64-bit-build-singular-3.1.0.4.p8.log.gz) by drkirkby created at 2010-06-30 21:50:55\n\nCompressed build log on a Sun Ultra 27 (Xeon processor) running Solaris 10 06/2009. SAGE64=yes, so a 64-bit build",
     "created_at": "2010-06-30T21:50:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9397",
     "type": "issue_comment",
@@ -218,7 +218,7 @@ archive/issue_comments_089503.json:
 }
 ```
 
-Attachment
+Attachment [OpenSolaris-on-Xeon-CPU-64-bit-build-singular-3.1.0.4.p8.log.gz](tarball://root/attachments/some-uuid/ticket9397/OpenSolaris-on-Xeon-CPU-64-bit-build-singular-3.1.0.4.p8.log.gz) by drkirkby created at 2010-06-30 21:50:55
 
 Compressed build log on a Sun Ultra 27 (Xeon processor) running Solaris 10 06/2009. SAGE64=yes, so a 64-bit build
 
@@ -229,7 +229,7 @@ Compressed build log on a Sun Ultra 27 (Xeon processor) running Solaris 10 06/20
 archive/issue_comments_089504.json:
 ```json
 {
-    "body": "Attachment\n\nMercurial patch to sort out the mess of the Singular patches overwriting patches",
+    "body": "Attachment [9397.patch](tarball://root/attachments/some-uuid/ticket9397/9397.patch) by drkirkby created at 2010-06-30 21:53:53\n\nMercurial patch to sort out the mess of the Singular patches overwriting patches",
     "created_at": "2010-06-30T21:53:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9397",
     "type": "issue_comment",
@@ -238,7 +238,7 @@ archive/issue_comments_089504.json:
 }
 ```
 
-Attachment
+Attachment [9397.patch](tarball://root/attachments/some-uuid/ticket9397/9397.patch) by drkirkby created at 2010-06-30 21:53:53
 
 Mercurial patch to sort out the mess of the Singular patches overwriting patches
 

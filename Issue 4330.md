@@ -131,7 +131,7 @@ sage: gap.eval("MakeConfluent(%s)"%rws.name())
 archive/issue_comments_031759.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review, though it would be nice to remove \"import random\" from gap.py\nand it would be good to add my example\n\n```\nsage: a = mathematica('N[BesselK[1+I, 2+ 3*I], 20]')\nsage: a.Re()\n```\n\nas an optional doctest.\n\nWilliam",
+    "body": "Attachment [trac_4330.patch](tarball://root/attachments/some-uuid/ticket4330/trac_4330.patch) by was created at 2008-11-22 01:21:16\n\nPositive review, though it would be nice to remove \"import random\" from gap.py\nand it would be good to add my example\n\n```\nsage: a = mathematica('N[BesselK[1+I, 2+ 3*I], 20]')\nsage: a.Re()\n```\n\nas an optional doctest.\n\nWilliam",
     "created_at": "2008-11-22T01:21:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4330",
     "type": "issue_comment",
@@ -140,7 +140,7 @@ archive/issue_comments_031759.json:
 }
 ```
 
-Attachment
+Attachment [trac_4330.patch](tarball://root/attachments/some-uuid/ticket4330/trac_4330.patch) by was created at 2008-11-22 01:21:16
 
 Positive review, though it would be nice to remove "import random" from gap.py
 and it would be good to add my example

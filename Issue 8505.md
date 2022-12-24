@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8505
 archive/issue_comments_076786.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8505-ell-finite-random.patch](tarball://root/attachments/some-uuid/ticket8505/8505-ell-finite-random.patch) by robertwb created at 2010-03-12 00:35:53",
     "created_at": "2010-03-12T00:35:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8505",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_076786.json:
 }
 ```
 
-Attachment
+Attachment [8505-ell-finite-random.patch](tarball://root/attachments/some-uuid/ticket8505/8505-ell-finite-random.patch) by robertwb created at 2010-03-12 00:35:53
 
 
 
@@ -186,7 +186,7 @@ replaces previous
 archive/issue_comments_076791.json:
 ```json
 {
-    "body": "Attachment\n\nMy patch (after reviewing and testing the whole sage library) has to be applied *instead* of Robert's, though it still has his tag on it (sorry).  It does two things relative to his:\n1. I changed a few doctest outputs for the random point tests.  I am worried though, since these changes were not only replacing a point by its negative!  Why?\n2. testing with -long revealed a bug in sqrt() for integer-mods: when 0 then the return was 0 and not [0] which broke the new code since it uses the all=true option.  This was *only* revealed in the -long test!  Take note!!\n\nI left this as \"needs review\" since it needs someone else (e.g. robertwb) to check my change, especially the one at 2. above, and also I would like to hear views on my other remark under 1.",
+    "body": "Attachment [trac_8505-review.patch](tarball://root/attachments/some-uuid/ticket8505/trac_8505-review.patch) by cremona created at 2010-03-12 17:14:00\n\nMy patch (after reviewing and testing the whole sage library) has to be applied *instead* of Robert's, though it still has his tag on it (sorry).  It does two things relative to his:\n1. I changed a few doctest outputs for the random point tests.  I am worried though, since these changes were not only replacing a point by its negative!  Why?\n2. testing with -long revealed a bug in sqrt() for integer-mods: when 0 then the return was 0 and not [0] which broke the new code since it uses the all=true option.  This was *only* revealed in the -long test!  Take note!!\n\nI left this as \"needs review\" since it needs someone else (e.g. robertwb) to check my change, especially the one at 2. above, and also I would like to hear views on my other remark under 1.",
     "created_at": "2010-03-12T17:14:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8505",
     "type": "issue_comment",
@@ -195,7 +195,7 @@ archive/issue_comments_076791.json:
 }
 ```
 
-Attachment
+Attachment [trac_8505-review.patch](tarball://root/attachments/some-uuid/ticket8505/trac_8505-review.patch) by cremona created at 2010-03-12 17:14:00
 
 My patch (after reviewing and testing the whole sage library) has to be applied *instead* of Robert's, though it still has his tag on it (sorry).  It does two things relative to his:
 1. I changed a few doctest outputs for the random point tests.  I am worried though, since these changes were not only replacing a point by its negative!  Why?
@@ -282,7 +282,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_076796.json:
 ```json
 {
-    "body": "Attachment\n\nYes, I'm happy with it. I re-posted the patch removing the conflict with #8507, just in case that gets into an alpha before this. \n\nRelease manager: exactly one of `trac_8505-review.patch` or `trac_8505-review-post-8507.patch` should be applied.",
+    "body": "Attachment [trac_8505-review-post-8507.patch](tarball://root/attachments/some-uuid/ticket8505/trac_8505-review-post-8507.patch) by robertwb created at 2010-03-15 19:18:21\n\nYes, I'm happy with it. I re-posted the patch removing the conflict with #8507, just in case that gets into an alpha before this. \n\nRelease manager: exactly one of `trac_8505-review.patch` or `trac_8505-review-post-8507.patch` should be applied.",
     "created_at": "2010-03-15T19:18:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8505",
     "type": "issue_comment",
@@ -291,7 +291,7 @@ archive/issue_comments_076796.json:
 }
 ```
 
-Attachment
+Attachment [trac_8505-review-post-8507.patch](tarball://root/attachments/some-uuid/ticket8505/trac_8505-review-post-8507.patch) by robertwb created at 2010-03-15 19:18:21
 
 Yes, I'm happy with it. I re-posted the patch removing the conflict with #8507, just in case that gets into an alpha before this. 
 
@@ -340,7 +340,7 @@ This (" trac_8505-review-post-8507.patch") doesn't apply cleanly to 4.3.5 or to 
 archive/issue_comments_076799.json:
 ```json
 {
-    "body": "Attachment\n\nRebased on 4.4.alpha0",
+    "body": "Attachment [8505-ell-finite-random-rebased.patch](tarball://root/attachments/some-uuid/ticket8505/8505-ell-finite-random-rebased.patch) by robertwb created at 2010-04-17 19:26:45\n\nRebased on 4.4.alpha0",
     "created_at": "2010-04-17T19:26:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8505",
     "type": "issue_comment",
@@ -349,7 +349,7 @@ archive/issue_comments_076799.json:
 }
 ```
 
-Attachment
+Attachment [8505-ell-finite-random-rebased.patch](tarball://root/attachments/some-uuid/ticket8505/8505-ell-finite-random-rebased.patch) by robertwb created at 2010-04-17 19:26:45
 
 Rebased on 4.4.alpha0
 

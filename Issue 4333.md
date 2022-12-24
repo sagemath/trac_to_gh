@@ -70,7 +70,7 @@ Changing assignee from was to mhampton.
 archive/issue_comments_031773.json:
 ```json
 {
-    "body": "Attachment\n\nbased against 3.2 alpha0",
+    "body": "Attachment [trac_4333_remove_bernoulli_py.patch](tarball://root/attachments/some-uuid/ticket4333/trac_4333_remove_bernoulli_py.patch) by mhampton created at 2008-10-22 19:02:44\n\nbased against 3.2 alpha0",
     "created_at": "2008-10-22T19:02:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4333",
     "type": "issue_comment",
@@ -79,7 +79,7 @@ archive/issue_comments_031773.json:
 }
 ```
 
-Attachment
+Attachment [trac_4333_remove_bernoulli_py.patch](tarball://root/attachments/some-uuid/ticket4333/trac_4333_remove_bernoulli_py.patch) by mhampton created at 2008-10-22 19:02:44
 
 based against 3.2 alpha0
 

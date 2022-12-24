@@ -51,7 +51,7 @@ patch against 4.1.alpha2
 archive/issue_comments_052183.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6457-ideal_intersection.patch](tarball://root/attachments/some-uuid/ticket6457/trac_6457-ideal_intersection.patch) by davidloeffler created at 2009-07-02 13:13:04",
     "created_at": "2009-07-02T13:13:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6457",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_052183.json:
 }
 ```
 
-Attachment
+Attachment [trac_6457-ideal_intersection.patch](tarball://root/attachments/some-uuid/ticket6457/trac_6457-ideal_intersection.patch) by davidloeffler created at 2009-07-02 13:13:04
 
 
 

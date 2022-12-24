@@ -53,7 +53,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4671
 archive/issue_comments_035184.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4671.patch](tarball://root/attachments/some-uuid/ticket4671/trac_4671.patch) by was created at 2008-12-02 05:24:55",
     "created_at": "2008-12-02T05:24:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4671",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_035184.json:
 }
 ```
 
-Attachment
+Attachment [trac_4671.patch](tarball://root/attachments/some-uuid/ticket4671/trac_4671.patch) by was created at 2008-12-02 05:24:55
 
 
 
@@ -162,7 +162,7 @@ Mike -- can you think of anything that combinat code uses that might somehow hav
 archive/issue_comments_035188.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4671-2.patch](tarball://root/attachments/some-uuid/ticket4671/trac_4671-2.patch) by mhansen created at 2008-12-16 17:15:57",
     "created_at": "2008-12-16T17:15:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4671",
     "type": "issue_comment",
@@ -171,7 +171,7 @@ archive/issue_comments_035188.json:
 }
 ```
 
-Attachment
+Attachment [trac_4671-2.patch](tarball://root/attachments/some-uuid/ticket4671/trac_4671-2.patch) by mhansen created at 2008-12-16 17:15:57
 
 
 

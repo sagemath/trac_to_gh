@@ -124,7 +124,7 @@ Changing component from algebraic geometry to basic arithmetic.
 archive/issue_comments_005979.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [rand-poly.txt](tarball://root/attachments/some-uuid/ticket980/rand-poly.txt) by dfdeshom created at 2007-10-25 03:30:56",
     "created_at": "2007-10-25T03:30:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
@@ -133,7 +133,7 @@ archive/issue_comments_005979.json:
 }
 ```
 
-Attachment
+Attachment [rand-poly.txt](tarball://root/attachments/some-uuid/ticket980/rand-poly.txt) by dfdeshom created at 2007-10-25 03:30:56
 
 
 
@@ -184,7 +184,7 @@ NOTE: `random_element.py` is not a patch but a `py` file to load/attach into SAG
 archive/issue_comments_005982.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [random_monomial.py](tarball://root/attachments/some-uuid/ticket980/random_monomial.py) by malb created at 2007-11-07 13:27:05",
     "created_at": "2007-11-07T13:27:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
@@ -193,7 +193,7 @@ archive/issue_comments_005982.json:
 }
 ```
 
-Attachment
+Attachment [random_monomial.py](tarball://root/attachments/some-uuid/ticket980/random_monomial.py) by malb created at 2007-11-07 13:27:05
 
 
 
@@ -261,7 +261,7 @@ If you don't mind, I've attached a patch against 2.8.11 for this. The patch is n
 archive/issue_comments_005986.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [random-malb.txt](tarball://root/attachments/some-uuid/ticket980/random-malb.txt) by mabshoff created at 2007-11-16 11:55:45",
     "created_at": "2007-11-16T11:55:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
@@ -270,7 +270,7 @@ archive/issue_comments_005986.json:
 }
 ```
 
-Attachment
+Attachment [random-malb.txt](tarball://root/attachments/some-uuid/ticket980/random-malb.txt) by mabshoff created at 2007-11-16 11:55:45
 
 
 
@@ -297,7 +297,7 @@ Unfortunately, random-malb.txt no longer applies against sage-2.8.14.
 archive/issue_comments_005988.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [random-malb.hg](tarball://root/attachments/some-uuid/ticket980/random-malb.hg) by dfdeshom created at 2007-11-28 16:29:55",
     "created_at": "2007-11-28T16:29:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
@@ -306,7 +306,7 @@ archive/issue_comments_005988.json:
 }
 ```
 
-Attachment
+Attachment [random-malb.hg](tarball://root/attachments/some-uuid/ticket980/random-malb.hg) by dfdeshom created at 2007-11-28 16:29:55
 
 
 
@@ -633,7 +633,7 @@ Changing priority from minor to major.
 archive/issue_comments_006002.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [random_element.hg](tarball://root/attachments/some-uuid/ticket980/random_element.hg) by malb created at 2008-01-06 16:25:16",
     "created_at": "2008-01-06T16:25:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
@@ -642,7 +642,7 @@ archive/issue_comments_006002.json:
 }
 ```
 
-Attachment
+Attachment [random_element.hg](tarball://root/attachments/some-uuid/ticket980/random_element.hg) by malb created at 2008-01-06 16:25:16
 
 
 

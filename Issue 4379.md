@@ -36,7 +36,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4379
 archive/issue_comments_032217.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [tut-typo.patch](tarball://root/attachments/some-uuid/ticket4379/tut-typo.patch) by jhpalmieri created at 2008-10-28 21:51:54",
     "created_at": "2008-10-28T21:51:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4379",
     "type": "issue_comment",
@@ -45,7 +45,7 @@ archive/issue_comments_032217.json:
 }
 ```
 
-Attachment
+Attachment [tut-typo.patch](tarball://root/attachments/some-uuid/ticket4379/tut-typo.patch) by jhpalmieri created at 2008-10-28 21:51:54
 
 
 

@@ -272,7 +272,7 @@ The problem seems to be in parametric_plot3d.py in adapt_to_callable, in the lin
 archive/issue_comments_019610.json:
 ```json
 {
-    "body": "Attachment\n\nmike found one bug which this fixes.",
+    "body": "Attachment [trac_2858.patch](tarball://root/attachments/some-uuid/ticket2858/trac_2858.patch) by was created at 2009-01-24 11:41:22\n\nmike found one bug which this fixes.",
     "created_at": "2009-01-24T11:41:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2858",
     "type": "issue_comment",
@@ -281,7 +281,7 @@ archive/issue_comments_019610.json:
 }
 ```
 
-Attachment
+Attachment [trac_2858.patch](tarball://root/attachments/some-uuid/ticket2858/trac_2858.patch) by was created at 2009-01-24 11:41:22
 
 mike found one bug which this fixes.
 
@@ -292,7 +292,7 @@ mike found one bug which this fixes.
 archive/issue_comments_019611.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_2858-part2.patch](tarball://root/attachments/some-uuid/ticket2858/trac_2858-part2.patch) by mhansen created at 2009-01-24 11:45:53",
     "created_at": "2009-01-24T11:45:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2858",
     "type": "issue_comment",
@@ -301,7 +301,7 @@ archive/issue_comments_019611.json:
 }
 ```
 
-Attachment
+Attachment [trac_2858-part2.patch](tarball://root/attachments/some-uuid/ticket2858/trac_2858-part2.patch) by mhansen created at 2009-01-24 11:45:53
 
 
 

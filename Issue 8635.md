@@ -49,7 +49,7 @@ Changing status from new to needs_review.
 archive/issue_comments_078313.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch is trivial and due to Paul. So I think I can review myself => positive review.",
+    "body": "Attachment [trac_8635_typo_disjoint_union_enumerated_sets-fh.patch](tarball://root/attachments/some-uuid/ticket8635/trac_8635_typo_disjoint_union_enumerated_sets-fh.patch) by hivert created at 2010-03-31 09:41:07\n\nThe patch is trivial and due to Paul. So I think I can review myself => positive review.",
     "created_at": "2010-03-31T09:41:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8635",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_078313.json:
 }
 ```
 
-Attachment
+Attachment [trac_8635_typo_disjoint_union_enumerated_sets-fh.patch](tarball://root/attachments/some-uuid/ticket8635/trac_8635_typo_disjoint_union_enumerated_sets-fh.patch) by hivert created at 2010-03-31 09:41:07
 
 The patch is trivial and due to Paul. So I think I can review myself => positive review.
 

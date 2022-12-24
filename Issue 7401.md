@@ -65,7 +65,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7401
 archive/issue_comments_062243.json:
 ```json
 {
-    "body": "Attachment\n\napply together with the patch for #385 (if necessary)",
+    "body": "Attachment [trac_7401_marik_initial.patch](tarball://root/attachments/some-uuid/ticket7401/trac_7401_marik_initial.patch) by robert.marik created at 2009-11-06 10:56:42\n\napply together with the patch for #385 (if necessary)",
     "created_at": "2009-11-06T10:56:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7401",
     "type": "issue_comment",
@@ -74,7 +74,7 @@ archive/issue_comments_062243.json:
 }
 ```
 
-Attachment
+Attachment [trac_7401_marik_initial.patch](tarball://root/attachments/some-uuid/ticket7401/trac_7401_marik_initial.patch) by robert.marik created at 2009-11-06 10:56:42
 
 apply together with the patch for #385 (if necessary)
 
@@ -271,7 +271,7 @@ Perhaps could be improved for multivariable functions, but Maxima expression "at
 archive/issue_comments_062252.json:
 ```json
 {
-    "body": "Attachment\n\nApply only this patch.",
+    "body": "Attachment [trac-7401-revision-1.patch](tarball://root/attachments/some-uuid/ticket7401/trac-7401-revision-1.patch) by robert.marik created at 2009-11-13 12:33:10\n\nApply only this patch.",
     "created_at": "2009-11-13T12:33:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7401",
     "type": "issue_comment",
@@ -280,7 +280,7 @@ archive/issue_comments_062252.json:
 }
 ```
 
-Attachment
+Attachment [trac-7401-revision-1.patch](tarball://root/attachments/some-uuid/ticket7401/trac-7401-revision-1.patch) by robert.marik created at 2009-11-13 12:33:10
 
 Apply only this patch.
 

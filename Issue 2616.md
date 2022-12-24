@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2616
 archive/issue_comments_017955.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2616-replace_submatrix.patch](tarball://root/attachments/some-uuid/ticket2616/2616-replace_submatrix.patch) by AlexGhitza created at 2008-04-13 22:21:20",
     "created_at": "2008-04-13T22:21:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2616",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_017955.json:
 }
 ```
 
-Attachment
+Attachment [2616-replace_submatrix.patch](tarball://root/attachments/some-uuid/ticket2616/2616-replace_submatrix.patch) by AlexGhitza created at 2008-04-13 22:21:20
 
 
 

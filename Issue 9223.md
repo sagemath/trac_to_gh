@@ -106,7 +106,7 @@ I'm not sure how to test the remaining ones...
 archive/issue_comments_086523.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9223.patch](tarball://root/attachments/some-uuid/ticket9223/trac_9223.patch) by AlexGhitza created at 2010-06-12 11:48:58",
     "created_at": "2010-06-12T11:48:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9223",
     "type": "issue_comment",
@@ -115,7 +115,7 @@ archive/issue_comments_086523.json:
 }
 ```
 
-Attachment
+Attachment [trac_9223.patch](tarball://root/attachments/some-uuid/ticket9223/trac_9223.patch) by AlexGhitza created at 2010-06-12 11:48:58
 
 
 
@@ -182,7 +182,7 @@ Apply after previous patch
 archive/issue_comments_086527.json:
 ```json
 {
-    "body": "Attachment\n\nPS Apart from that range issue, I give a positive review to everything else Alex did, so all we need is someone to review my additional patch, and a decision on what to do about the remaining missing tests.  Can we tag them as \"not tested\" with some extra explanatory code?  Of course, somce one other than William ought to test the rebuilding of the database, and it should probably be me as I am the only one who has the raw data.",
+    "body": "Attachment [trac_9223-reviewer.patch](tarball://root/attachments/some-uuid/ticket9223/trac_9223-reviewer.patch) by cremona created at 2010-06-12 17:12:29\n\nPS Apart from that range issue, I give a positive review to everything else Alex did, so all we need is someone to review my additional patch, and a decision on what to do about the remaining missing tests.  Can we tag them as \"not tested\" with some extra explanatory code?  Of course, somce one other than William ought to test the rebuilding of the database, and it should probably be me as I am the only one who has the raw data.",
     "created_at": "2010-06-12T17:12:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9223",
     "type": "issue_comment",
@@ -191,7 +191,7 @@ archive/issue_comments_086527.json:
 }
 ```
 
-Attachment
+Attachment [trac_9223-reviewer.patch](tarball://root/attachments/some-uuid/ticket9223/trac_9223-reviewer.patch) by cremona created at 2010-06-12 17:12:29
 
 PS Apart from that range issue, I give a positive review to everything else Alex did, so all we need is someone to review my additional patch, and a decision on what to do about the remaining missing tests.  Can we tag them as "not tested" with some extra explanatory code?  Of course, somce one other than William ought to test the rebuilding of the database, and it should probably be me as I am the only one who has the raw data.
 

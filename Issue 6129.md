@@ -72,7 +72,7 @@ Looks good to me.
 archive/issue_comments_048964.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6129.patch](tarball://root/attachments/some-uuid/ticket6129/trac_6129.patch) by mhansen created at 2009-05-28 07:31:30",
     "created_at": "2009-05-28T07:31:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6129",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_048964.json:
 }
 ```
 
-Attachment
+Attachment [trac_6129.patch](tarball://root/attachments/some-uuid/ticket6129/trac_6129.patch) by mhansen created at 2009-05-28 07:31:30
 
 
 

@@ -69,7 +69,7 @@ I vote for deprecation of `injvar`.
 archive/issue_comments_030083.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch deprecates injvar.",
+    "body": "Attachment [4143.patch](tarball://root/attachments/some-uuid/ticket4143/4143.patch) by jhpalmieri created at 2008-12-10 21:07:41\n\nThis patch deprecates injvar.",
     "created_at": "2008-12-10T21:07:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4143",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_030083.json:
 }
 ```
 
-Attachment
+Attachment [4143.patch](tarball://root/attachments/some-uuid/ticket4143/4143.patch) by jhpalmieri created at 2008-12-10 21:07:41
 
 This patch deprecates injvar.
 

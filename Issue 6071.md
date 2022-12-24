@@ -69,7 +69,7 @@ Changing status from new to assigned.
 archive/issue_comments_048325.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6071.patch](tarball://root/attachments/some-uuid/ticket6071/trac_6071.patch) by davidloeffler created at 2009-05-18 15:23:12",
     "created_at": "2009-05-18T15:23:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6071",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_048325.json:
 }
 ```
 
-Attachment
+Attachment [trac_6071.patch](tarball://root/attachments/some-uuid/ticket6071/trac_6071.patch) by davidloeffler created at 2009-05-18 15:23:12
 
 
 
@@ -217,7 +217,7 @@ For what it's worth: that sounds like a good explanation.  Perhaps when you put 
 archive/issue_comments_048332.json:
 ```json
 {
-    "body": "Attachment\n\nReplaces previous patch",
+    "body": "Attachment [trac_6071-weight1_eisenstein.patch](tarball://root/attachments/some-uuid/ticket6071/trac_6071-weight1_eisenstein.patch) by davidloeffler created at 2009-06-25 21:40:41\n\nReplaces previous patch",
     "created_at": "2009-06-25T21:40:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6071",
     "type": "issue_comment",
@@ -226,7 +226,7 @@ archive/issue_comments_048332.json:
 }
 ```
 
-Attachment
+Attachment [trac_6071-weight1_eisenstein.patch](tarball://root/attachments/some-uuid/ticket6071/trac_6071-weight1_eisenstein.patch) by davidloeffler created at 2009-06-25 21:40:41
 
 Replaces previous patch
 
@@ -283,7 +283,7 @@ This ticket should be changed to "[with patch; positive review]" as soon as some
 archive/issue_comments_048334.json:
 ```json
 {
-    "body": "Attachment\n\nFair point. The new patch looks fine to me, so positive review.",
+    "body": "Attachment [trac_6071-referee.patch](tarball://root/attachments/some-uuid/ticket6071/trac_6071-referee.patch) by davidloeffler created at 2009-07-21 07:55:17\n\nFair point. The new patch looks fine to me, so positive review.",
     "created_at": "2009-07-21T07:55:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6071",
     "type": "issue_comment",
@@ -292,7 +292,7 @@ archive/issue_comments_048334.json:
 }
 ```
 
-Attachment
+Attachment [trac_6071-referee.patch](tarball://root/attachments/some-uuid/ticket6071/trac_6071-referee.patch) by davidloeffler created at 2009-07-21 07:55:17
 
 Fair point. The new patch looks fine to me, so positive review.
 

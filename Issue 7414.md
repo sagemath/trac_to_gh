@@ -206,7 +206,7 @@ Florent
 archive/issue_comments_062386.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7414-inversion_vector.patch](tarball://root/attachments/some-uuid/ticket7414/trac_7414-inversion_vector.patch) by ylchapuy created at 2009-11-09 23:01:04",
     "created_at": "2009-11-09T23:01:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7414",
     "type": "issue_comment",
@@ -215,7 +215,7 @@ archive/issue_comments_062386.json:
 }
 ```
 
-Attachment
+Attachment [trac_7414-inversion_vector.patch](tarball://root/attachments/some-uuid/ticket7414/trac_7414-inversion_vector.patch) by ylchapuy created at 2009-11-09 23:01:04
 
 
 
@@ -399,7 +399,7 @@ NB: The tests are long, but they should be much faster of applying #7415 which i
 archive/issue_comments_062390.json:
 ```json
 {
-    "body": "Attachment\n\nSorry, I forgot the from_* methods in the first patch. Please apply both.\n\nCheers,\n Yann",
+    "body": "Attachment [trac_7414-from_inversion_vector.patch](tarball://root/attachments/some-uuid/ticket7414/trac_7414-from_inversion_vector.patch) by ylchapuy created at 2009-11-10 00:27:48\n\nSorry, I forgot the from_* methods in the first patch. Please apply both.\n\nCheers,\n Yann",
     "created_at": "2009-11-10T00:27:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7414",
     "type": "issue_comment",
@@ -408,7 +408,7 @@ archive/issue_comments_062390.json:
 }
 ```
 
-Attachment
+Attachment [trac_7414-from_inversion_vector.patch](tarball://root/attachments/some-uuid/ticket7414/trac_7414-from_inversion_vector.patch) by ylchapuy created at 2009-11-10 00:27:48
 
 Sorry, I forgot the from_* methods in the first patch. Please apply both.
 

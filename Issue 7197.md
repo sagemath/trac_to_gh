@@ -129,7 +129,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_059698.json:
 ```json
 {
-    "body": "Attachment\n\nPatch added. \n\nArguments for std and variance changed to \"bias = True/False\" for division by n and n-1 respectively.",
+    "body": "Attachment [trac_7197_basic_stats.patch](tarball://root/attachments/some-uuid/ticket7197/trac_7197_basic_stats.patch) by amhou created at 2009-10-26 06:05:30\n\nPatch added. \n\nArguments for std and variance changed to \"bias = True/False\" for division by n and n-1 respectively.",
     "created_at": "2009-10-26T06:05:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7197",
     "type": "issue_comment",
@@ -138,7 +138,7 @@ archive/issue_comments_059698.json:
 }
 ```
 
-Attachment
+Attachment [trac_7197_basic_stats.patch](tarball://root/attachments/some-uuid/ticket7197/trac_7197_basic_stats.patch) by amhou created at 2009-10-26 06:05:30
 
 Patch added. 
 
@@ -187,7 +187,7 @@ Is there any way to have "std_sample" and "std_population" (and same for varianc
 archive/issue_comments_059701.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7197_basic_stats_2.patch](tarball://root/attachments/some-uuid/ticket7197/trac_7197_basic_stats_2.patch) by amhou created at 2009-10-26 23:06:45",
     "created_at": "2009-10-26T23:06:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7197",
     "type": "issue_comment",
@@ -196,7 +196,7 @@ archive/issue_comments_059701.json:
 }
 ```
 
-Attachment
+Attachment [trac_7197_basic_stats_2.patch](tarball://root/attachments/some-uuid/ticket7197/trac_7197_basic_stats_2.patch) by amhou created at 2009-10-26 23:06:45
 
 
 
@@ -255,7 +255,7 @@ Fix all the above and I'll be happy with this patch!
 archive/issue_comments_059704.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7197_part4.patch](tarball://root/attachments/some-uuid/ticket7197/trac_7197_part4.patch) by amhou created at 2009-11-08 00:49:39",
     "created_at": "2009-11-08T00:49:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7197",
     "type": "issue_comment",
@@ -264,7 +264,7 @@ archive/issue_comments_059704.json:
 }
 ```
 
-Attachment
+Attachment [trac_7197_part4.patch](tarball://root/attachments/some-uuid/ticket7197/trac_7197_part4.patch) by amhou created at 2009-11-08 00:49:39
 
 
 
@@ -291,7 +291,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_059706.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7197_basic_stats_part5.patch](tarball://root/attachments/some-uuid/ticket7197/trac_7197_basic_stats_part5.patch) by amhou created at 2009-11-12 22:16:54",
     "created_at": "2009-11-12T22:16:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7197",
     "type": "issue_comment",
@@ -300,7 +300,7 @@ archive/issue_comments_059706.json:
 }
 ```
 
-Attachment
+Attachment [trac_7197_basic_stats_part5.patch](tarball://root/attachments/some-uuid/ticket7197/trac_7197_basic_stats_part5.patch) by amhou created at 2009-11-12 22:16:54
 
 
 
@@ -464,7 +464,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_059709.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7197_part6.patch](tarball://root/attachments/some-uuid/ticket7197/trac_7197_part6.patch) by amhou created at 2009-11-16 08:15:38",
     "created_at": "2009-11-16T08:15:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7197",
     "type": "issue_comment",
@@ -473,7 +473,7 @@ archive/issue_comments_059709.json:
 }
 ```
 
-Attachment
+Attachment [trac_7197_part6.patch](tarball://root/attachments/some-uuid/ticket7197/trac_7197_part6.patch) by amhou created at 2009-11-16 08:15:38
 
 
 
@@ -526,7 +526,7 @@ Issues:
 archive/issue_comments_059712.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7197_part8.patch](tarball://root/attachments/some-uuid/ticket7197/trac_7197_part8.patch) by amhou created at 2009-11-17 01:00:09",
     "created_at": "2009-11-17T01:00:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7197",
     "type": "issue_comment",
@@ -535,7 +535,7 @@ archive/issue_comments_059712.json:
 }
 ```
 
-Attachment
+Attachment [trac_7197_part8.patch](tarball://root/attachments/some-uuid/ticket7197/trac_7197_part8.patch) by amhou created at 2009-11-17 01:00:09
 
 
 
@@ -544,7 +544,7 @@ Attachment
 archive/issue_comments_059713.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7197_part9.patch](tarball://root/attachments/some-uuid/ticket7197/trac_7197_part9.patch) by amhou created at 2009-11-20 22:56:52",
     "created_at": "2009-11-20T22:56:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7197",
     "type": "issue_comment",
@@ -553,7 +553,7 @@ archive/issue_comments_059713.json:
 }
 ```
 
-Attachment
+Attachment [trac_7197_part9.patch](tarball://root/attachments/some-uuid/ticket7197/trac_7197_part9.patch) by amhou created at 2009-11-20 22:56:52
 
 
 
@@ -562,7 +562,7 @@ Attachment
 archive/issue_comments_059714.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7197_part10.patch](tarball://root/attachments/some-uuid/ticket7197/trac_7197_part10.patch) by was created at 2009-11-24 01:04:03",
     "created_at": "2009-11-24T01:04:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7197",
     "type": "issue_comment",
@@ -571,7 +571,7 @@ archive/issue_comments_059714.json:
 }
 ```
 
-Attachment
+Attachment [trac_7197_part10.patch](tarball://root/attachments/some-uuid/ticket7197/trac_7197_part10.patch) by was created at 2009-11-24 01:04:03
 
 
 
@@ -616,7 +616,7 @@ All of the above patches folded together.  Apply only this patch.
 archive/issue_comments_059717.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7197.patch](tarball://root/attachments/some-uuid/ticket7197/trac_7197.patch) by mhansen created at 2009-11-29 05:07:20",
     "created_at": "2009-11-29T05:07:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7197",
     "type": "issue_comment",
@@ -625,7 +625,7 @@ archive/issue_comments_059717.json:
 }
 ```
 
-Attachment
+Attachment [trac_7197.patch](tarball://root/attachments/some-uuid/ticket7197/trac_7197.patch) by mhansen created at 2009-11-29 05:07:20
 
 
 

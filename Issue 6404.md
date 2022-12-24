@@ -50,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6404
 archive/issue_comments_051431.json:
 ```json
 {
-    "body": "Attachment\n\ndoctest fixes for conjugate typesetting change",
+    "body": "Attachment [trac_6404-conjugate_typesetting.patch](tarball://root/attachments/some-uuid/ticket6404/trac_6404-conjugate_typesetting.patch) by burcin created at 2009-07-28 12:10:22\n\ndoctest fixes for conjugate typesetting change",
     "created_at": "2009-07-28T12:10:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6404",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_051431.json:
 }
 ```
 
-Attachment
+Attachment [trac_6404-conjugate_typesetting.patch](tarball://root/attachments/some-uuid/ticket6404/trac_6404-conjugate_typesetting.patch) by burcin created at 2009-07-28 12:10:22
 
 doctest fixes for conjugate typesetting change
 

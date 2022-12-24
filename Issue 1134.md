@@ -331,7 +331,7 @@ Changing status from new to needs_work.
 archive/issue_comments_006879.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_1134.patch](tarball://root/attachments/some-uuid/ticket1134/trac_1134.patch) by mhansen created at 2013-07-22 13:39:33",
     "created_at": "2013-07-22T13:39:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1134",
     "type": "issue_comment",
@@ -340,7 +340,7 @@ archive/issue_comments_006879.json:
 }
 ```
 
-Attachment
+Attachment [trac_1134.patch](tarball://root/attachments/some-uuid/ticket1134/trac_1134.patch) by mhansen created at 2013-07-22 13:39:33
 
 
 

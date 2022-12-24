@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2530
 archive/issue_comments_017254.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch fixes some minor issues with selectors with interact:\n\n1. the default for a drop-down menu is now correct,\n\n2. buttons with strings are no longer have quotes,\n\n3. the default value for selectors is the actual value rather than the index into the list of values, which is much much more natural.",
+    "body": "Attachment [sage-2530.patch](tarball://root/attachments/some-uuid/ticket2530/sage-2530.patch) by was created at 2008-03-15 07:45:11\n\nThe attached patch fixes some minor issues with selectors with interact:\n\n1. the default for a drop-down menu is now correct,\n\n2. buttons with strings are no longer have quotes,\n\n3. the default value for selectors is the actual value rather than the index into the list of values, which is much much more natural.",
     "created_at": "2008-03-15T07:45:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2530",
     "type": "issue_comment",
@@ -49,7 +49,7 @@ archive/issue_comments_017254.json:
 }
 ```
 
-Attachment
+Attachment [sage-2530.patch](tarball://root/attachments/some-uuid/ticket2530/sage-2530.patch) by was created at 2008-03-15 07:45:11
 
 The attached patch fixes some minor issues with selectors with interact:
 

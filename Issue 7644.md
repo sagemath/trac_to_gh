@@ -372,7 +372,7 @@ apply only this patch; tries to use pari first, then falls back to Lagrange inve
 archive/issue_comments_065344.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:10 fwclarke]:\n> I've been looking at this.  \n\nThanks!\n\n> One concern is that for power series with rational coefficients the existing method using pari is a great deal faster, so that at least in this case the pari method should be retained.  \n\nYes, especially if there is work in progress to support converting more rings to pari.  I wrote a revised patch which first attempts to convert to pari and do reversion there, and then tries the Lagrange inversion if conversion to pari fails.  I think that implementation means that this patch can be independent of #4376 -- it will simply perform better when that patch is included.\n\n\n> I also think it is sensible to be able to revert infinite precision series, either by specifying the desired precision or by using the parent's default precision.  \n\nYes, upon further consideration I agree.  I've made this and two other improvements:\n\n1. Given a power series with infinite precision and degree `deg`, it's reversion is computed with precision `deg + 1`.\n2. Given a power series whose leading coefficient is not a unit, the code tries to pass to the fraction field of the base ring and compute the reversion there.\n3. Given a power series over a base ring of positive characteristic, the code tries to lift to a characteristic zero base (using `.lift()`), compute the reversion, and then push back down to the positive characteristic base.  This works over finite fields and `Zmod(n)`, but fails over a base ring like `Zmod(n)[x]`.\n\nEach of these is demonstrated with an example.",
+    "body": "Attachment [trac_7644_reversion_lagrange_3.patch](tarball://root/attachments/some-uuid/ticket7644/trac_7644_reversion_lagrange_3.patch) by niles created at 2010-12-01 02:44:53\n\nReplying to [comment:10 fwclarke]:\n> I've been looking at this.  \n\nThanks!\n\n> One concern is that for power series with rational coefficients the existing method using pari is a great deal faster, so that at least in this case the pari method should be retained.  \n\nYes, especially if there is work in progress to support converting more rings to pari.  I wrote a revised patch which first attempts to convert to pari and do reversion there, and then tries the Lagrange inversion if conversion to pari fails.  I think that implementation means that this patch can be independent of #4376 -- it will simply perform better when that patch is included.\n\n\n> I also think it is sensible to be able to revert infinite precision series, either by specifying the desired precision or by using the parent's default precision.  \n\nYes, upon further consideration I agree.  I've made this and two other improvements:\n\n1. Given a power series with infinite precision and degree `deg`, it's reversion is computed with precision `deg + 1`.\n2. Given a power series whose leading coefficient is not a unit, the code tries to pass to the fraction field of the base ring and compute the reversion there.\n3. Given a power series over a base ring of positive characteristic, the code tries to lift to a characteristic zero base (using `.lift()`), compute the reversion, and then push back down to the positive characteristic base.  This works over finite fields and `Zmod(n)`, but fails over a base ring like `Zmod(n)[x]`.\n\nEach of these is demonstrated with an example.",
     "created_at": "2010-12-01T02:44:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7644",
     "type": "issue_comment",
@@ -381,7 +381,7 @@ archive/issue_comments_065344.json:
 }
 ```
 
-Attachment
+Attachment [trac_7644_reversion_lagrange_3.patch](tarball://root/attachments/some-uuid/ticket7644/trac_7644_reversion_lagrange_3.patch) by niles created at 2010-12-01 02:44:53
 
 Replying to [comment:10 fwclarke]:
 > I've been looking at this.  
@@ -558,7 +558,7 @@ apply only this patch; choice for default precision improved
 archive/issue_comments_065349.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:14 fwclarke]:\n> Replying to [comment:11 niles]:\n> \n\n> A good point (but it would be nice if #4376 could be reviewed; it's very short).\n\nagreed -- I'll add it to my list\n\n> I don't see the logic for this.  I would suggest ...\n\nthat's a better idea; it's implemented in the new patch",
+    "body": "Attachment [trac_7644_reversion_lagrange_4.patch](tarball://root/attachments/some-uuid/ticket7644/trac_7644_reversion_lagrange_4.patch) by niles created at 2010-12-02 17:06:12\n\nReplying to [comment:14 fwclarke]:\n> Replying to [comment:11 niles]:\n> \n\n> A good point (but it would be nice if #4376 could be reviewed; it's very short).\n\nagreed -- I'll add it to my list\n\n> I don't see the logic for this.  I would suggest ...\n\nthat's a better idea; it's implemented in the new patch",
     "created_at": "2010-12-02T17:06:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7644",
     "type": "issue_comment",
@@ -567,7 +567,7 @@ archive/issue_comments_065349.json:
 }
 ```
 
-Attachment
+Attachment [trac_7644_reversion_lagrange_4.patch](tarball://root/attachments/some-uuid/ticket7644/trac_7644_reversion_lagrange_4.patch) by niles created at 2010-12-02 17:06:12
 
 Replying to [comment:14 fwclarke]:
 > Replying to [comment:11 niles]:
@@ -841,7 +841,7 @@ apply only this patch
 archive/issue_comments_065361.json:
 ```json
 {
-    "body": "Attachment\n\ndone.",
+    "body": "Attachment [trac_7644_reversion_lagrange_5.patch](tarball://root/attachments/some-uuid/ticket7644/trac_7644_reversion_lagrange_5.patch) by niles created at 2011-01-13 12:02:45\n\ndone.",
     "created_at": "2011-01-13T12:02:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7644",
     "type": "issue_comment",
@@ -850,7 +850,7 @@ archive/issue_comments_065361.json:
 }
 ```
 
-Attachment
+Attachment [trac_7644_reversion_lagrange_5.patch](tarball://root/attachments/some-uuid/ticket7644/trac_7644_reversion_lagrange_5.patch) by niles created at 2011-01-13 12:02:45
 
 done.
 
@@ -969,7 +969,7 @@ My apologies -- I'll upload a fixed version soon.
 archive/issue_comments_065368.json:
 ```json
 {
-    "body": "Attachment\n\napply only this patch",
+    "body": "Attachment [trac_7644_reversion_lagrange_6.patch](tarball://root/attachments/some-uuid/ticket7644/trac_7644_reversion_lagrange_6.patch) by niles created at 2011-01-19 13:24:56\n\napply only this patch",
     "created_at": "2011-01-19T13:24:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7644",
     "type": "issue_comment",
@@ -978,7 +978,7 @@ archive/issue_comments_065368.json:
 }
 ```
 
-Attachment
+Attachment [trac_7644_reversion_lagrange_6.patch](tarball://root/attachments/some-uuid/ticket7644/trac_7644_reversion_lagrange_6.patch) by niles created at 2011-01-19 13:24:56
 
 apply only this patch
 

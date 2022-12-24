@@ -106,7 +106,7 @@ Changing status from new to assigned.
 archive/issue_comments_020670.json:
 ```json
 {
-    "body": "Attachment\n\nThis is obviously right.",
+    "body": "Attachment [trac-3005.patch](tarball://root/attachments/some-uuid/ticket3005/trac-3005.patch) by was created at 2008-04-24 12:30:55\n\nThis is obviously right.",
     "created_at": "2008-04-24T12:30:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3005",
     "type": "issue_comment",
@@ -115,7 +115,7 @@ archive/issue_comments_020670.json:
 }
 ```
 
-Attachment
+Attachment [trac-3005.patch](tarball://root/attachments/some-uuid/ticket3005/trac-3005.patch) by was created at 2008-04-24 12:30:55
 
 This is obviously right.
 

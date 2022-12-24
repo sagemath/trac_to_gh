@@ -49,7 +49,7 @@ Also discriminants.
 archive/issue_comments_057088.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6911-hecke-basis-disc.patch](tarball://root/attachments/some-uuid/ticket6911/6911-hecke-basis-disc.patch) by robertwb created at 2009-09-10 05:50:13",
     "created_at": "2009-09-10T05:50:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6911",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_057088.json:
 }
 ```
 
-Attachment
+Attachment [6911-hecke-basis-disc.patch](tarball://root/attachments/some-uuid/ticket6911/6911-hecke-basis-disc.patch) by robertwb created at 2009-09-10 05:50:13
 
 
 
@@ -110,7 +110,7 @@ abort: patch failed to apply
 archive/issue_comments_057090.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6911-referee-replace_other_patch-apply_only_this.patch](tarball://root/attachments/some-uuid/ticket6911/trac_6911-referee-replace_other_patch-apply_only_this.patch) by was created at 2009-09-19 11:23:38",
     "created_at": "2009-09-19T11:23:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6911",
     "type": "issue_comment",
@@ -119,7 +119,7 @@ archive/issue_comments_057090.json:
 }
 ```
 
-Attachment
+Attachment [trac_6911-referee-replace_other_patch-apply_only_this.patch](tarball://root/attachments/some-uuid/ticket6911/trac_6911-referee-replace_other_patch-apply_only_this.patch) by was created at 2009-09-19 11:23:38
 
 
 
@@ -128,7 +128,7 @@ Attachment
 archive/issue_comments_057091.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6911-referee_followup_that_fixes_some_bugs.patch](tarball://root/attachments/some-uuid/ticket6911/trac_6911-referee_followup_that_fixes_some_bugs.patch) by was created at 2009-09-19 11:42:43",
     "created_at": "2009-09-19T11:42:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6911",
     "type": "issue_comment",
@@ -137,7 +137,7 @@ archive/issue_comments_057091.json:
 }
 ```
 
-Attachment
+Attachment [trac_6911-referee_followup_that_fixes_some_bugs.patch](tarball://root/attachments/some-uuid/ticket6911/trac_6911-referee_followup_that_fixes_some_bugs.patch) by was created at 2009-09-19 11:42:43
 
 
 

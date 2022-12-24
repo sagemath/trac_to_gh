@@ -73,7 +73,7 @@ sage: s
 archive/issue_comments_054258.json:
 ```json
 {
-    "body": "Attachment\n\nbased on sage 4.1.1.alpha1",
+    "body": "Attachment [trac_6622.patch](tarball://root/attachments/some-uuid/ticket6622/trac_6622.patch) by wcauchois created at 2009-07-29 00:44:15\n\nbased on sage 4.1.1.alpha1",
     "created_at": "2009-07-29T00:44:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6622",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_054258.json:
 }
 ```
 
-Attachment
+Attachment [trac_6622.patch](tarball://root/attachments/some-uuid/ticket6622/trac_6622.patch) by wcauchois created at 2009-07-29 00:44:15
 
 based on sage 4.1.1.alpha1
 

@@ -86,7 +86,7 @@ Changing assignee from cwitty to anakha.
 archive/issue_comments_029197.json:
 ```json
 {
-    "body": "Attachment\n\nPatch looks good to me. Positive review.\n\nOne general problem with Sage is that we depend on gnumake and gtar in a couple places. The shell scripts we use also assume GNUisms in a couple places, but I would be more than happy to get those wiped out.\n\nFor now I would suggest copying gmake into $SAGE_LOCAL/bin and rename it make. You should also treat gld and gas the same way for now.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_4049.patch](tarball://root/attachments/some-uuid/ticket4049/trac_4049.patch) by mabshoff created at 2008-09-03 18:10:25\n\nPatch looks good to me. Positive review.\n\nOne general problem with Sage is that we depend on gnumake and gtar in a couple places. The shell scripts we use also assume GNUisms in a couple places, but I would be more than happy to get those wiped out.\n\nFor now I would suggest copying gmake into $SAGE_LOCAL/bin and rename it make. You should also treat gld and gas the same way for now.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-03T18:10:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4049",
     "type": "issue_comment",
@@ -95,7 +95,7 @@ archive/issue_comments_029197.json:
 }
 ```
 
-Attachment
+Attachment [trac_4049.patch](tarball://root/attachments/some-uuid/ticket4049/trac_4049.patch) by mabshoff created at 2008-09-03 18:10:25
 
 Patch looks good to me. Positive review.
 

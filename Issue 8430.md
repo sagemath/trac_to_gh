@@ -179,7 +179,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_075585.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:5 mhampton]:\n\n> There is one doctest failure still:\n\n```\nFile \"/Volumes/E/sage-4.3.4.alpha0/devel/sage-t1/sage/categories/finite_semigroups.py\", line 229:\n    sage: sorted(S.j_transversal_of_idempotents())\nExpected:\n    ['a', 'ab', 'ac', 'acb', 'b', 'bc', 'c']\nGot:\n    ['a', 'ab', 'ac', 'acb', 'b', 'c', 'cb']\n*********************************************\n```\n \n> which is not covered by the patch.  Seems like maybe the expected string is wrong, unless the sorted function has varying behavior.\n\nI'm not sure to understand:\n- why I missed this one;\n- why the result of sorted changed between 4.3.3 and 4.3.4;\n- why despite of this change it seems to be stable on both version...\nAnyway the newly uploaded patch passed the tests 10 times in a raw on the machine sage. Maybe it could be worth checking of it is also stable on other architectures.\n\nSorry for the mess and please review.",
+    "body": "Attachment [trac_8430-semigroup_doctest_fix-fh.patch](tarball://root/attachments/some-uuid/ticket8430/trac_8430-semigroup_doctest_fix-fh.patch) by hivert created at 2010-03-04 21:41:49\n\nReplying to [comment:5 mhampton]:\n\n> There is one doctest failure still:\n\n```\nFile \"/Volumes/E/sage-4.3.4.alpha0/devel/sage-t1/sage/categories/finite_semigroups.py\", line 229:\n    sage: sorted(S.j_transversal_of_idempotents())\nExpected:\n    ['a', 'ab', 'ac', 'acb', 'b', 'bc', 'c']\nGot:\n    ['a', 'ab', 'ac', 'acb', 'b', 'c', 'cb']\n*********************************************\n```\n \n> which is not covered by the patch.  Seems like maybe the expected string is wrong, unless the sorted function has varying behavior.\n\nI'm not sure to understand:\n- why I missed this one;\n- why the result of sorted changed between 4.3.3 and 4.3.4;\n- why despite of this change it seems to be stable on both version...\nAnyway the newly uploaded patch passed the tests 10 times in a raw on the machine sage. Maybe it could be worth checking of it is also stable on other architectures.\n\nSorry for the mess and please review.",
     "created_at": "2010-03-04T21:41:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8430",
     "type": "issue_comment",
@@ -188,7 +188,7 @@ archive/issue_comments_075585.json:
 }
 ```
 
-Attachment
+Attachment [trac_8430-semigroup_doctest_fix-fh.patch](tarball://root/attachments/some-uuid/ticket8430/trac_8430-semigroup_doctest_fix-fh.patch) by hivert created at 2010-03-04 21:41:49
 
 Replying to [comment:5 mhampton]:
 

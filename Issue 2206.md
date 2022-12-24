@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2206
 archive/issue_comments_014559.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [factorization.patch](tarball://root/attachments/some-uuid/ticket2206/factorization.patch) by jason created at 2008-02-18 21:27:19",
     "created_at": "2008-02-18T21:27:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2206",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_014559.json:
 }
 ```
 
-Attachment
+Attachment [factorization.patch](tarball://root/attachments/some-uuid/ticket2206/factorization.patch) by jason created at 2008-02-18 21:27:19
 
 
 
@@ -126,7 +126,7 @@ Michael
 archive/issue_comments_014563.json:
 ```json
 {
-    "body": "Attachment\n\nRebased against 2.10.2.",
+    "body": "Attachment [factorization.2.patch](tarball://root/attachments/some-uuid/ticket2206/factorization.2.patch) by AlexGhitza created at 2008-02-25 04:10:56\n\nRebased against 2.10.2.",
     "created_at": "2008-02-25T04:10:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2206",
     "type": "issue_comment",
@@ -135,7 +135,7 @@ archive/issue_comments_014563.json:
 }
 ```
 
-Attachment
+Attachment [factorization.2.patch](tarball://root/attachments/some-uuid/ticket2206/factorization.2.patch) by AlexGhitza created at 2008-02-25 04:10:56
 
 Rebased against 2.10.2.
 

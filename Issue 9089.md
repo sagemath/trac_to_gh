@@ -81,7 +81,7 @@ Changing assignee from AlexGhitza to jason, was.
 archive/issue_comments_084407.json:
 ```json
 {
-    "body": "Attachment\n\nCredit goes to Ben Woodruff for reporting this issue.",
+    "body": "Attachment [trac-9089-graphics3d.patch](tarball://root/attachments/some-uuid/ticket9089/trac-9089-graphics3d.patch) by jason created at 2010-05-29 20:42:55\n\nCredit goes to Ben Woodruff for reporting this issue.",
     "created_at": "2010-05-29T20:42:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9089",
     "type": "issue_comment",
@@ -90,7 +90,7 @@ archive/issue_comments_084407.json:
 }
 ```
 
-Attachment
+Attachment [trac-9089-graphics3d.patch](tarball://root/attachments/some-uuid/ticket9089/trac-9089-graphics3d.patch) by jason created at 2010-05-29 20:42:55
 
 Credit goes to Ben Woodruff for reporting this issue.
 
@@ -413,7 +413,7 @@ sage -t  -long devel/sage/sage/plot/plot3d/shapes2.py # 5 doctests failed
 archive/issue_comments_084420.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of previous patches",
+    "body": "Attachment [trac-9089-graphics3d-2.patch](tarball://root/attachments/some-uuid/ticket9089/trac-9089-graphics3d-2.patch) by jason created at 2010-09-07 17:53:12\n\napply on top of previous patches",
     "created_at": "2010-09-07T17:53:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9089",
     "type": "issue_comment",
@@ -422,7 +422,7 @@ archive/issue_comments_084420.json:
 }
 ```
 
-Attachment
+Attachment [trac-9089-graphics3d-2.patch](tarball://root/attachments/some-uuid/ticket9089/trac-9089-graphics3d-2.patch) by jason created at 2010-09-07 17:53:12
 
 apply on top of previous patches
 

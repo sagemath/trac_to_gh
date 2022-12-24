@@ -310,7 +310,7 @@ based on sage 4.1
 archive/issue_comments_051813.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6447-canvas3d.patch](tarball://root/attachments/some-uuid/ticket6447/trac_6447-canvas3d.patch) by wcauchois created at 2009-07-16 02:26:50",
     "created_at": "2009-07-16T02:26:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6447",
     "type": "issue_comment",
@@ -319,7 +319,7 @@ archive/issue_comments_051813.json:
 }
 ```
 
-Attachment
+Attachment [trac_6447-canvas3d.patch](tarball://root/attachments/some-uuid/ticket6447/trac_6447-canvas3d.patch) by wcauchois created at 2009-07-16 02:26:50
 
 
 
@@ -389,7 +389,7 @@ I can add an example to the documentation for show(), but other than that I can'
 archive/issue_comments_051817.json:
 ```json
 {
-    "body": "Attachment\n\napply only this patch to sage 4.1",
+    "body": "Attachment [trac_6447~all.patch](tarball://root/attachments/some-uuid/ticket6447/trac_6447~all.patch) by wcauchois created at 2009-07-16 18:05:18\n\napply only this patch to sage 4.1",
     "created_at": "2009-07-16T18:05:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6447",
     "type": "issue_comment",
@@ -398,7 +398,7 @@ archive/issue_comments_051817.json:
 }
 ```
 
-Attachment
+Attachment [trac_6447~all.patch](tarball://root/attachments/some-uuid/ticket6447/trac_6447~all.patch) by wcauchois created at 2009-07-16 18:05:18
 
 apply only this patch to sage 4.1
 
@@ -502,7 +502,7 @@ based on sage 4.1.1.alpha1
 archive/issue_comments_051823.json:
 ```json
 {
-    "body": "Attachment\n\nI attached a self-contained patch where I've moved the JavaScript code into a separate file, in keeping with the changes made in #6307. Its based on Sage 4.1.1.alpha1. Can someone re-review this?",
+    "body": "Attachment [trac_6447~rebase.patch](tarball://root/attachments/some-uuid/ticket6447/trac_6447~rebase.patch) by wcauchois created at 2009-07-28 16:11:36\n\nI attached a self-contained patch where I've moved the JavaScript code into a separate file, in keeping with the changes made in #6307. Its based on Sage 4.1.1.alpha1. Can someone re-review this?",
     "created_at": "2009-07-28T16:11:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6447",
     "type": "issue_comment",
@@ -511,7 +511,7 @@ archive/issue_comments_051823.json:
 }
 ```
 
-Attachment
+Attachment [trac_6447~rebase.patch](tarball://root/attachments/some-uuid/ticket6447/trac_6447~rebase.patch) by wcauchois created at 2009-07-28 16:11:36
 
 I attached a self-contained patch where I've moved the JavaScript code into a separate file, in keeping with the changes made in #6307. Its based on Sage 4.1.1.alpha1. Can someone re-review this?
 

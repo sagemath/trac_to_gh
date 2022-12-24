@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9139
 archive/issue_comments_085323.json:
 ```json
 {
-    "body": "Attachment\n\nTiny fix",
+    "body": "Attachment [noetherian.patch](tarball://root/attachments/some-uuid/ticket9139/noetherian.patch) by roed created at 2010-06-04 19:30:16\n\nTiny fix",
     "created_at": "2010-06-04T19:30:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9139",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_085323.json:
 }
 ```
 
-Attachment
+Attachment [noetherian.patch](tarball://root/attachments/some-uuid/ticket9139/noetherian.patch) by roed created at 2010-06-04 19:30:16
 
 Tiny fix
 

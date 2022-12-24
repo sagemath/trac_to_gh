@@ -49,7 +49,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8159
 archive/issue_comments_071754.json:
 ```json
 {
-    "body": "Attachment\n\ncontains edited sage.libs.mpmath (update: old files removed)",
+    "body": "Attachment [mpmath_cython.tar.gz](tarball://root/attachments/some-uuid/ticket8159/mpmath_cython.tar.gz) by fredrik.johansson created at 2010-02-04 04:24:30\n\ncontains edited sage.libs.mpmath (update: old files removed)",
     "created_at": "2010-02-04T04:24:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8159",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_071754.json:
 }
 ```
 
-Attachment
+Attachment [mpmath_cython.tar.gz](tarball://root/attachments/some-uuid/ticket8159/mpmath_cython.tar.gz) by fredrik.johansson created at 2010-02-04 04:24:30
 
 contains edited sage.libs.mpmath (update: old files removed)
 
@@ -87,7 +87,7 @@ Here is an [0.14 spkg](http://boxen.math.washington.edu/home/schilly/sage/spkg/
 archive/issue_comments_071756.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [mpmath_cython.patch](tarball://root/attachments/some-uuid/ticket8159/mpmath_cython.patch) by fredrik.johansson created at 2010-02-04 18:01:46",
     "created_at": "2010-02-04T18:01:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8159",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_071756.json:
 }
 ```
 
-Attachment
+Attachment [mpmath_cython.patch](tarball://root/attachments/some-uuid/ticket8159/mpmath_cython.patch) by fredrik.johansson created at 2010-02-04 18:01:46
 
 
 
@@ -173,7 +173,7 @@ This exception pops up about 20 times ...
 archive/issue_comments_071760.json:
 ```json
 {
-    "body": "Attachment\n\nAttached a fix for the ImportError.",
+    "body": "Attachment [importfix.patch](tarball://root/attachments/some-uuid/ticket8159/importfix.patch) by fredrik.johansson created at 2010-02-04 20:01:58\n\nAttached a fix for the ImportError.",
     "created_at": "2010-02-04T20:01:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8159",
     "type": "issue_comment",
@@ -182,7 +182,7 @@ archive/issue_comments_071760.json:
 }
 ```
 
-Attachment
+Attachment [importfix.patch](tarball://root/attachments/some-uuid/ticket8159/importfix.patch) by fredrik.johansson created at 2010-02-04 20:01:58
 
 Attached a fix for the ImportError.
 

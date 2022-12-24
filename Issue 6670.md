@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6670
 archive/issue_comments_054764.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-6670-group_algebra.patch](tarball://root/attachments/some-uuid/ticket6670/trac-6670-group_algebra.patch) by mraum created at 2009-08-03 20:42:52",
     "created_at": "2009-08-03T20:42:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6670",
     "type": "issue_comment",
@@ -41,7 +41,7 @@ archive/issue_comments_054764.json:
 }
 ```
 
-Attachment
+Attachment [trac-6670-group_algebra.patch](tarball://root/attachments/some-uuid/ticket6670/trac-6670-group_algebra.patch) by mraum created at 2009-08-03 20:42:52
 
 
 
@@ -50,7 +50,7 @@ Attachment
 archive/issue_comments_054765.json:
 ```json
 {
-    "body": "Attachment\n\nThis is a rebase to 4.1.2",
+    "body": "Attachment [trac-6670-group_algebra-2.patch](tarball://root/attachments/some-uuid/ticket6670/trac-6670-group_algebra-2.patch) by mraum created at 2009-10-22 16:46:17\n\nThis is a rebase to 4.1.2",
     "created_at": "2009-10-22T16:46:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6670",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_054765.json:
 }
 ```
 
-Attachment
+Attachment [trac-6670-group_algebra-2.patch](tarball://root/attachments/some-uuid/ticket6670/trac-6670-group_algebra-2.patch) by mraum created at 2009-10-22 16:46:17
 
 This is a rebase to 4.1.2
 
@@ -180,7 +180,7 @@ Needs some work/rebasing for 4.3
 archive/issue_comments_054772.json:
 ```json
 {
-    "body": "Attachment\n\nThis is a rebase to 4.3alpha0 .",
+    "body": "Attachment [trac-6670-group_algebra-3.patch](tarball://root/attachments/some-uuid/ticket6670/trac-6670-group_algebra-3.patch) by mraum created at 2009-12-01 16:46:12\n\nThis is a rebase to 4.3alpha0 .",
     "created_at": "2009-12-01T16:46:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6670",
     "type": "issue_comment",
@@ -189,7 +189,7 @@ archive/issue_comments_054772.json:
 }
 ```
 
-Attachment
+Attachment [trac-6670-group_algebra-3.patch](tarball://root/attachments/some-uuid/ticket6670/trac-6670-group_algebra-3.patch) by mraum created at 2009-12-01 16:46:12
 
 This is a rebase to 4.3alpha0 .
 
@@ -260,7 +260,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_054776.json:
 ```json
 {
-    "body": "Attachment\n\nThis applies cleanly to a fresh 4.3.1",
+    "body": "Attachment [trac-6670-group_algebra-4.patch](tarball://root/attachments/some-uuid/ticket6670/trac-6670-group_algebra-4.patch) by mraum created at 2010-01-21 10:25:42\n\nThis applies cleanly to a fresh 4.3.1",
     "created_at": "2010-01-21T10:25:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6670",
     "type": "issue_comment",
@@ -269,7 +269,7 @@ archive/issue_comments_054776.json:
 }
 ```
 
-Attachment
+Attachment [trac-6670-group_algebra-4.patch](tarball://root/attachments/some-uuid/ticket6670/trac-6670-group_algebra-4.patch) by mraum created at 2010-01-21 10:25:42
 
 This applies cleanly to a fresh 4.3.1
 
@@ -407,7 +407,7 @@ UnpicklingError: NEWOBJ class argument isn't a type object
 archive/issue_comments_054782.json:
 ```json
 {
-    "body": "Attachment\n\nApply only this -- rebased against 4.5.alpha1 and docstrings ReSTified",
+    "body": "Attachment [trac-6670-group_algebra-5.patch](tarball://root/attachments/some-uuid/ticket6670/trac-6670-group_algebra-5.patch) by davidloeffler created at 2010-07-03 09:53:00\n\nApply only this -- rebased against 4.5.alpha1 and docstrings ReSTified",
     "created_at": "2010-07-03T09:53:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6670",
     "type": "issue_comment",
@@ -416,7 +416,7 @@ archive/issue_comments_054782.json:
 }
 ```
 
-Attachment
+Attachment [trac-6670-group_algebra-5.patch](tarball://root/attachments/some-uuid/ticket6670/trac-6670-group_algebra-5.patch) by davidloeffler created at 2010-07-03 09:53:00
 
 Apply only this -- rebased against 4.5.alpha1 and docstrings ReSTified
 
@@ -427,7 +427,7 @@ Apply only this -- rebased against 4.5.alpha1 and docstrings ReSTified
 archive/issue_comments_054783.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-6670-group_algebra-6.patch](tarball://root/attachments/some-uuid/ticket6670/trac-6670-group_algebra-6.patch) by mraum created at 2011-03-23 01:33:50",
     "created_at": "2011-03-23T01:33:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6670",
     "type": "issue_comment",
@@ -436,7 +436,7 @@ archive/issue_comments_054783.json:
 }
 ```
 
-Attachment
+Attachment [trac-6670-group_algebra-6.patch](tarball://root/attachments/some-uuid/ticket6670/trac-6670-group_algebra-6.patch) by mraum created at 2011-03-23 01:33:50
 
 
 
@@ -445,7 +445,7 @@ Attachment
 archive/issue_comments_054784.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-6670-group_algebra-7.patch](tarball://root/attachments/some-uuid/ticket6670/trac-6670-group_algebra-7.patch) by mraum created at 2011-03-23 01:34:04",
     "created_at": "2011-03-23T01:34:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6670",
     "type": "issue_comment",
@@ -454,7 +454,7 @@ archive/issue_comments_054784.json:
 }
 ```
 
-Attachment
+Attachment [trac-6670-group_algebra-7.patch](tarball://root/attachments/some-uuid/ticket6670/trac-6670-group_algebra-7.patch) by mraum created at 2011-03-23 01:34:04
 
 
 
@@ -604,7 +604,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_054792.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6670-jhp.patch](tarball://root/attachments/some-uuid/ticket6670/trac_6670-jhp.patch) by jhpalmieri created at 2011-07-28 22:46:49",
     "created_at": "2011-07-28T22:46:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6670",
     "type": "issue_comment",
@@ -613,7 +613,7 @@ archive/issue_comments_054792.json:
 }
 ```
 
-Attachment
+Attachment [trac_6670-jhp.patch](tarball://root/attachments/some-uuid/ticket6670/trac_6670-jhp.patch) by jhpalmieri created at 2011-07-28 22:46:49
 
 
 
@@ -660,7 +660,7 @@ I think it is important to note that on #11318 it is suggested unifying GroupAlg
 archive/issue_comments_054795.json:
 ```json
 {
-    "body": "Attachment\n\nI attached a patch that changes the way functors are called.\n\nAlso I reviewed the parts that you implemented. That is, the transition to CombinatorialFreeModule. I would give this a positive review. So if you agree with the procedure that I described above and are fine with the rest of the code you can give this a positive review as a whole.",
+    "body": "Attachment [trac-6670-functors.patch](tarball://root/attachments/some-uuid/ticket6670/trac-6670-functors.patch) by mraum created at 2011-07-31 21:59:44\n\nI attached a patch that changes the way functors are called.\n\nAlso I reviewed the parts that you implemented. That is, the transition to CombinatorialFreeModule. I would give this a positive review. So if you agree with the procedure that I described above and are fine with the rest of the code you can give this a positive review as a whole.",
     "created_at": "2011-07-31T21:59:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6670",
     "type": "issue_comment",
@@ -669,7 +669,7 @@ archive/issue_comments_054795.json:
 }
 ```
 
-Attachment
+Attachment [trac-6670-functors.patch](tarball://root/attachments/some-uuid/ticket6670/trac-6670-functors.patch) by mraum created at 2011-07-31 21:59:44
 
 I attached a patch that changes the way functors are called.
 

@@ -71,7 +71,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9946
 archive/issue_comments_099149.json:
 ```json
 {
-    "body": "Attachment\n\npatch for libfac makefile",
+    "body": "Attachment [singular-3.1.1.4-libfac.patch](tarball://root/attachments/some-uuid/ticket9946/singular-3.1.1.4-libfac.patch) by fbissey created at 2010-09-19 06:03:02\n\npatch for libfac makefile",
     "created_at": "2010-09-19T06:03:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9945",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_099149.json:
 }
 ```
 
-Attachment
+Attachment [singular-3.1.1.4-libfac.patch](tarball://root/attachments/some-uuid/ticket9946/singular-3.1.1.4-libfac.patch) by fbissey created at 2010-09-19 06:03:02
 
 patch for libfac makefile
 
@@ -407,7 +407,7 @@ Minimalistic C program (not very robust) to implement `nanosleep` analogous to `
 archive/issue_comments_099164.json:
 ```json
 {
-    "body": "Attachment\n\nDave, I've attached a [minimalistic C implementation](http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9946/nanosleep.c) of a command `nanosleep <nanoseconds>`.",
+    "body": "Attachment [nanosleep.c](tarball://root/attachments/some-uuid/ticket9946/nanosleep.c) by leif created at 2010-09-21 12:02:14\n\nDave, I've attached a [minimalistic C implementation](http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9946/nanosleep.c) of a command `nanosleep <nanoseconds>`.",
     "created_at": "2010-09-21T12:02:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9945",
     "type": "issue_comment",
@@ -416,7 +416,7 @@ archive/issue_comments_099164.json:
 }
 ```
 
-Attachment
+Attachment [nanosleep.c](tarball://root/attachments/some-uuid/ticket9946/nanosleep.c) by leif created at 2010-09-21 12:02:14
 
 Dave, I've attached a [minimalistic C implementation](http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9946/nanosleep.c) of a command `nanosleep <nanoseconds>`.
 
@@ -445,7 +445,7 @@ Causes a random delay up to a maximum of that set by an enviroment variable MAX_
 archive/issue_comments_099166.json:
 ```json
 {
-    "body": "Attachment\n\nI thought I'd commented on the file I added, but I forgot. \n\nI'd already done on this before Leif posted his file, though we both made use of `nanosleep()` Rather than take an argument like Leif's, mine reads the value of the environment variable `MAX_COMPILER_DELAY_IN_MICRO_SECONDS `. It reads from `/dev/urandom`\n\nWhat I'm less sure about, is what is a sensible maximum delay to use. That's a difficult question to answer I think. Any ideas?",
+    "body": "Attachment [randomsleep.c](tarball://root/attachments/some-uuid/ticket9946/randomsleep.c) by drkirkby created at 2010-09-21 12:39:12\n\nI thought I'd commented on the file I added, but I forgot. \n\nI'd already done on this before Leif posted his file, though we both made use of `nanosleep()` Rather than take an argument like Leif's, mine reads the value of the environment variable `MAX_COMPILER_DELAY_IN_MICRO_SECONDS `. It reads from `/dev/urandom`\n\nWhat I'm less sure about, is what is a sensible maximum delay to use. That's a difficult question to answer I think. Any ideas?",
     "created_at": "2010-09-21T12:39:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9945",
     "type": "issue_comment",
@@ -454,7 +454,7 @@ archive/issue_comments_099166.json:
 }
 ```
 
-Attachment
+Attachment [randomsleep.c](tarball://root/attachments/some-uuid/ticket9946/randomsleep.c) by drkirkby created at 2010-09-21 12:39:12
 
 I thought I'd commented on the file I added, but I forgot. 
 

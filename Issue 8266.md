@@ -69,7 +69,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8266
 archive/issue_comments_073169.json:
 ```json
 {
-    "body": "Attachment\n\nDepends on #7619.",
+    "body": "Attachment [trac_8266_word_doc_object-sl.patch](tarball://root/attachments/some-uuid/ticket8266/trac_8266_word_doc_object-sl.patch) by slabbe created at 2010-02-14 22:39:15\n\nDepends on #7619.",
     "created_at": "2010-02-14T22:39:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8266",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_073169.json:
 }
 ```
 
-Attachment
+Attachment [trac_8266_word_doc_object-sl.patch](tarball://root/attachments/some-uuid/ticket8266/trac_8266_word_doc_object-sl.patch) by slabbe created at 2010-02-14 22:39:15
 
 Depends on #7619.
 
@@ -153,7 +153,7 @@ If Sébastien agrees with my changes, I allow him to set the ticket to "positive
 archive/issue_comments_073173.json:
 ```json
 {
-    "body": "Attachment\n\nDoc fixes -- apply on top of S\u00e9bastien's patch",
+    "body": "Attachment [trac_8266_review-abm.patch](tarball://root/attachments/some-uuid/ticket8266/trac_8266_review-abm.patch) by abmasse created at 2010-03-03 21:12:12\n\nDoc fixes -- apply on top of S\u00e9bastien's patch",
     "created_at": "2010-03-03T21:12:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8266",
     "type": "issue_comment",
@@ -162,7 +162,7 @@ archive/issue_comments_073173.json:
 }
 ```
 
-Attachment
+Attachment [trac_8266_review-abm.patch](tarball://root/attachments/some-uuid/ticket8266/trac_8266_review-abm.patch) by abmasse created at 2010-03-03 21:12:12
 
 Doc fixes -- apply on top of Sébastien's patch
 
@@ -211,7 +211,7 @@ Since I my patch fix only two characters in the doc and because I agree with you
 archive/issue_comments_073176.json:
 ```json
 {
-    "body": "Attachment\n\nApplies over the two precedent patches.",
+    "body": "Attachment [trac_8266-review2-sl.patch](tarball://root/attachments/some-uuid/ticket8266/trac_8266-review2-sl.patch) by slabbe created at 2010-03-05 16:01:24\n\nApplies over the two precedent patches.",
     "created_at": "2010-03-05T16:01:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8266",
     "type": "issue_comment",
@@ -220,7 +220,7 @@ archive/issue_comments_073176.json:
 }
 ```
 
-Attachment
+Attachment [trac_8266-review2-sl.patch](tarball://root/attachments/some-uuid/ticket8266/trac_8266-review2-sl.patch) by slabbe created at 2010-03-05 16:01:24
 
 Applies over the two precedent patches.
 

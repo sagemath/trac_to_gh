@@ -99,7 +99,7 @@ True
 archive/issue_comments_054665.json:
 ```json
 {
-    "body": "Attachment\n\nI added a couple of comments to help the reader see what is happening in the source code.",
+    "body": "Attachment [trac_6659-graph-cores.patch](tarball://root/attachments/some-uuid/ticket6659/trac_6659-graph-cores.patch) by jason created at 2009-07-31 07:28:59\n\nI added a couple of comments to help the reader see what is happening in the source code.",
     "created_at": "2009-07-31T07:28:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6659",
     "type": "issue_comment",
@@ -108,7 +108,7 @@ archive/issue_comments_054665.json:
 }
 ```
 
-Attachment
+Attachment [trac_6659-graph-cores.patch](tarball://root/attachments/some-uuid/ticket6659/trac_6659-graph-cores.patch) by jason created at 2009-07-31 07:28:59
 
 I added a couple of comments to help the reader see what is happening in the source code.
 
@@ -137,7 +137,7 @@ reviewer patch; typo fix
 archive/issue_comments_054667.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch `trac_6659-reviewer.patch` fixes a typo found in `trac_6659-graph-cores.patch`.",
+    "body": "Attachment [trac_6659-reviewer.patch](tarball://root/attachments/some-uuid/ticket6659/trac_6659-reviewer.patch) by mvngu created at 2009-08-25 02:22:16\n\nThe patch `trac_6659-reviewer.patch` fixes a typo found in `trac_6659-graph-cores.patch`.",
     "created_at": "2009-08-25T02:22:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6659",
     "type": "issue_comment",
@@ -146,7 +146,7 @@ archive/issue_comments_054667.json:
 }
 ```
 
-Attachment
+Attachment [trac_6659-reviewer.patch](tarball://root/attachments/some-uuid/ticket6659/trac_6659-reviewer.patch) by mvngu created at 2009-08-25 02:22:16
 
 The patch `trac_6659-reviewer.patch` fixes a typo found in `trac_6659-graph-cores.patch`.
 

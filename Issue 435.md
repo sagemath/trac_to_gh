@@ -50,7 +50,7 @@ Changing priority from major to critical.
 archive/issue_comments_002181.json:
 ```json
 {
-    "body": "Attachment\n\nthis fixes the bug.",
+    "body": "Attachment [trac435.patch](tarball://root/attachments/some-uuid/ticket435/trac435.patch) by was created at 2007-11-03 17:53:32\n\nthis fixes the bug.",
     "created_at": "2007-11-03T17:53:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/435",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_002181.json:
 }
 ```
 
-Attachment
+Attachment [trac435.patch](tarball://root/attachments/some-uuid/ticket435/trac435.patch) by was created at 2007-11-03 17:53:32
 
 this fixes the bug.
 

@@ -469,7 +469,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_068153.json:
 ```json
 {
-    "body": "Attachment\n\nSimple change to export CC and CXX properly to build 64-bit on Solaris 10 and OpenSolaris",
+    "body": "Attachment [7861.patch](tarball://root/attachments/some-uuid/ticket7861/7861.patch) by drkirkby created at 2010-07-16 16:06:05\n\nSimple change to export CC and CXX properly to build 64-bit on Solaris 10 and OpenSolaris",
     "created_at": "2010-07-16T16:06:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7861",
     "type": "issue_comment",
@@ -478,7 +478,7 @@ archive/issue_comments_068153.json:
 }
 ```
 
-Attachment
+Attachment [7861.patch](tarball://root/attachments/some-uuid/ticket7861/7861.patch) by drkirkby created at 2010-07-16 16:06:05
 
 Simple change to export CC and CXX properly to build 64-bit on Solaris 10 and OpenSolaris
 
@@ -527,7 +527,7 @@ Build log from a Sun Blade 2000 with UltraSPARC III+ processors
 archive/issue_comments_068156.json:
 ```json
 {
-    "body": "Attachment\n\nBuild log from a Sun Ultra 27 with an Intel Xeon processor",
+    "body": "Attachment [pynac-0.2.0.p5.log.OpenSolaris_x64.txt](tarball://root/attachments/some-uuid/ticket7861/pynac-0.2.0.p5.log.OpenSolaris_x64.txt) by drkirkby created at 2010-07-16 16:51:52\n\nBuild log from a Sun Ultra 27 with an Intel Xeon processor",
     "created_at": "2010-07-16T16:51:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7861",
     "type": "issue_comment",
@@ -536,7 +536,7 @@ archive/issue_comments_068156.json:
 }
 ```
 
-Attachment
+Attachment [pynac-0.2.0.p5.log.OpenSolaris_x64.txt](tarball://root/attachments/some-uuid/ticket7861/pynac-0.2.0.p5.log.OpenSolaris_x64.txt) by drkirkby created at 2010-07-16 16:51:52
 
 Build log from a Sun Ultra 27 with an Intel Xeon processor
 

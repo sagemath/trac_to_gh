@@ -67,7 +67,7 @@ Changing status from new to assigned.
 archive/issue_comments_025832.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac3653-complex-random_element.patch](tarball://root/attachments/some-uuid/ticket3653/trac3653-complex-random_element.patch) by cwitty created at 2008-08-23 17:29:52",
     "created_at": "2008-08-23T17:29:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3653",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_025832.json:
 }
 ```
 
-Attachment
+Attachment [trac3653-complex-random_element.patch](tarball://root/attachments/some-uuid/ticket3653/trac3653-complex-random_element.patch) by cwitty created at 2008-08-23 17:29:52
 
 
 

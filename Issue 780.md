@@ -387,7 +387,7 @@ Changing status from assigned to new.
 archive/issue_comments_004666.json:
 ```json
 {
-    "body": "Attachment\n\nattachment:trac_780-maxima_integral.patch adds doctests to show that this is fixed.\n\nAlex, many thanks for your work on updating maxima. I'm trying to get as many symbolics/calculus tickets closed as possible for this release now.",
+    "body": "Attachment [trac_780-maxima_integral.patch](tarball://root/attachments/some-uuid/ticket780/trac_780-maxima_integral.patch) by burcin created at 2009-09-22 20:11:32\n\nattachment:trac_780-maxima_integral.patch adds doctests to show that this is fixed.\n\nAlex, many thanks for your work on updating maxima. I'm trying to get as many symbolics/calculus tickets closed as possible for this release now.",
     "created_at": "2009-09-22T20:11:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/780",
     "type": "issue_comment",
@@ -396,7 +396,7 @@ archive/issue_comments_004666.json:
 }
 ```
 
-Attachment
+Attachment [trac_780-maxima_integral.patch](tarball://root/attachments/some-uuid/ticket780/trac_780-maxima_integral.patch) by burcin created at 2009-09-22 20:11:32
 
 attachment:trac_780-maxima_integral.patch adds doctests to show that this is fixed.
 

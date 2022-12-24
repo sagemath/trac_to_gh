@@ -49,7 +49,7 @@ Changing priority from major to minor.
 archive/issue_comments_027156.json:
 ```json
 {
-    "body": "Attachment\n\nthis file should replace the existing COPYING.txt; this is a modification of the one in sage-3.1.alpha1",
+    "body": "Attachment [COPYING.txt](tarball://root/attachments/some-uuid/ticket3818/COPYING.txt) by was created at 2008-08-13 03:59:21\n\nthis file should replace the existing COPYING.txt; this is a modification of the one in sage-3.1.alpha1",
     "created_at": "2008-08-13T03:59:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3818",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_027156.json:
 }
 ```
 
-Attachment
+Attachment [COPYING.txt](tarball://root/attachments/some-uuid/ticket3818/COPYING.txt) by was created at 2008-08-13 03:59:21
 
 this file should replace the existing COPYING.txt; this is a modification of the one in sage-3.1.alpha1
 

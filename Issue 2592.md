@@ -128,7 +128,7 @@ Calls to NTL's div (and div-like) functions were only wrapped in `_sig_on`/`_sig
 archive/issue_comments_017741.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ntl_div_sig.patch](tarball://root/attachments/some-uuid/ticket2592/ntl_div_sig.patch) by wjp created at 2008-04-15 14:14:57",
     "created_at": "2008-04-15T14:14:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2592",
     "type": "issue_comment",
@@ -137,7 +137,7 @@ archive/issue_comments_017741.json:
 }
 ```
 
-Attachment
+Attachment [ntl_div_sig.patch](tarball://root/attachments/some-uuid/ticket2592/ntl_div_sig.patch) by wjp created at 2008-04-15 14:14:57
 
 
 
@@ -146,7 +146,7 @@ Attachment
 archive/issue_comments_017742.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch in `ntl_div_sig_after2903.patch` adapts the doctest to the patch for #2903. (Only apply it if #2903 is also applied.)",
+    "body": "Attachment [ntl_div_sig_after2903.patch](tarball://root/attachments/some-uuid/ticket2592/ntl_div_sig_after2903.patch) by wjp created at 2008-04-15 15:51:00\n\nThe patch in `ntl_div_sig_after2903.patch` adapts the doctest to the patch for #2903. (Only apply it if #2903 is also applied.)",
     "created_at": "2008-04-15T15:51:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2592",
     "type": "issue_comment",
@@ -155,7 +155,7 @@ archive/issue_comments_017742.json:
 }
 ```
 
-Attachment
+Attachment [ntl_div_sig_after2903.patch](tarball://root/attachments/some-uuid/ticket2592/ntl_div_sig_after2903.patch) by wjp created at 2008-04-15 15:51:00
 
 The patch in `ntl_div_sig_after2903.patch` adapts the doctest to the patch for #2903. (Only apply it if #2903 is also applied.)
 

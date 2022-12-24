@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2879
 archive/issue_comments_019805.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8681.patch](tarball://root/attachments/some-uuid/ticket2879/8681.patch) by jvoight created at 2008-04-11 18:10:03",
     "created_at": "2008-04-11T18:10:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2879",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_019805.json:
 }
 ```
 
-Attachment
+Attachment [8681.patch](tarball://root/attachments/some-uuid/ticket2879/8681.patch) by jvoight created at 2008-04-11 18:10:03
 
 
 
@@ -49,7 +49,7 @@ Attachment
 archive/issue_comments_019806.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8683.patch](tarball://root/attachments/some-uuid/ticket2879/8683.patch) by jvoight created at 2008-04-11 18:10:09",
     "created_at": "2008-04-11T18:10:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2879",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_019806.json:
 }
 ```
 
-Attachment
+Attachment [8683.patch](tarball://root/attachments/some-uuid/ticket2879/8683.patch) by jvoight created at 2008-04-11 18:10:09
 
 
 
@@ -85,7 +85,7 @@ Patch looks good. I'm attaching a new version of the patch, since I had merge tr
 archive/issue_comments_019808.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-2879.patch](tarball://root/attachments/some-uuid/ticket2879/trac-2879.patch) by craigcitro created at 2008-04-15 10:49:02",
     "created_at": "2008-04-15T10:49:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2879",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_019808.json:
 }
 ```
 
-Attachment
+Attachment [trac-2879.patch](tarball://root/attachments/some-uuid/ticket2879/trac-2879.patch) by craigcitro created at 2008-04-15 10:49:02
 
 
 

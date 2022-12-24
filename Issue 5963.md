@@ -119,7 +119,7 @@ Michael
 archive/issue_comments_047228.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch caps the allowed input to `2^40` for now and adds a long doctest to verify the correct value of all n in (30..40) for prime_pi(2**n). The upper allowable limit should be reviewed post Sage 3.4.2.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_5963.patch](tarball://root/attachments/some-uuid/ticket5963/trac_5963.patch) by mabshoff created at 2009-05-04 06:13:40\n\nThe attached patch caps the allowed input to `2^40` for now and adds a long doctest to verify the correct value of all n in (30..40) for prime_pi(2**n). The upper allowable limit should be reviewed post Sage 3.4.2.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-04T06:13:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5963",
     "type": "issue_comment",
@@ -128,7 +128,7 @@ archive/issue_comments_047228.json:
 }
 ```
 
-Attachment
+Attachment [trac_5963.patch](tarball://root/attachments/some-uuid/ticket5963/trac_5963.patch) by mabshoff created at 2009-05-04 06:13:40
 
 The attached patch caps the allowed input to `2^40` for now and adds a long doctest to verify the correct value of all n in (30..40) for prime_pi(2**n). The upper allowable limit should be reviewed post Sage 3.4.2.
 

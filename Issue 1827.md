@@ -100,7 +100,7 @@ Changing priority from major to critical.
 archive/issue_comments_011571.json:
 ```json
 {
-    "body": "Attachment\n\nthis should completely fix the problem.  But I've only tested it on one 32-bit linux system.  it needs more testing",
+    "body": "Attachment [trac-1827.patch](tarball://root/attachments/some-uuid/ticket1827/trac-1827.patch) by was created at 2008-01-18 22:54:11\n\nthis should completely fix the problem.  But I've only tested it on one 32-bit linux system.  it needs more testing",
     "created_at": "2008-01-18T22:54:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1827",
     "type": "issue_comment",
@@ -109,7 +109,7 @@ archive/issue_comments_011571.json:
 }
 ```
 
-Attachment
+Attachment [trac-1827.patch](tarball://root/attachments/some-uuid/ticket1827/trac-1827.patch) by was created at 2008-01-18 22:54:11
 
 this should completely fix the problem.  But I've only tested it on one 32-bit linux system.  it needs more testing
 

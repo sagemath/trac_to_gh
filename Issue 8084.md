@@ -50,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8084
 archive/issue_comments_070842.json:
 ```json
 {
-    "body": "Attachment\n\noutput of view(type(factor)) before the patch",
+    "body": "Attachment [factor_old.png](tarball://root/attachments/some-uuid/ticket8084/factor_old.png) by jhpalmieri created at 2010-01-26 21:28:49\n\noutput of view(type(factor)) before the patch",
     "created_at": "2010-01-26T21:28:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8084",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_070842.json:
 }
 ```
 
-Attachment
+Attachment [factor_old.png](tarball://root/attachments/some-uuid/ticket8084/factor_old.png) by jhpalmieri created at 2010-01-26 21:28:49
 
 output of view(type(factor)) before the patch
 
@@ -88,7 +88,7 @@ output of view(type(factor)) after the patch
 archive/issue_comments_070844.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [factor_new.png](tarball://root/attachments/some-uuid/ticket8084/factor_new.png) by jhpalmieri created at 2010-01-28 21:15:57",
     "created_at": "2010-01-28T21:15:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8084",
     "type": "issue_comment",
@@ -97,7 +97,7 @@ archive/issue_comments_070844.json:
 }
 ```
 
-Attachment
+Attachment [factor_new.png](tarball://root/attachments/some-uuid/ticket8084/factor_new.png) by jhpalmieri created at 2010-01-28 21:15:57
 
 
 

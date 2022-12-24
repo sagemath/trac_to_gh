@@ -318,7 +318,7 @@ The __init__.py changes don't appear to be needed any longer but the remaining f
 archive/issue_comments_067834.json:
 ```json
 {
-    "body": "Attachment\n\nNote that numpy 1.5.1 is on the way to Sage - #10792.   It would be great to get this incorporated with that.",
+    "body": "Attachment [7831.numpy.patch](tarball://root/attachments/some-uuid/ticket7831/7831.numpy.patch) by kcrisman created at 2011-03-12 04:11:32\n\nNote that numpy 1.5.1 is on the way to Sage - #10792.   It would be great to get this incorporated with that.",
     "created_at": "2011-03-12T04:11:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7831",
     "type": "issue_comment",
@@ -327,7 +327,7 @@ archive/issue_comments_067834.json:
 }
 ```
 
-Attachment
+Attachment [7831.numpy.patch](tarball://root/attachments/some-uuid/ticket7831/7831.numpy.patch) by kcrisman created at 2011-03-12 04:11:32
 
 Note that numpy 1.5.1 is on the way to Sage - #10792.   It would be great to get this incorporated with that.
 

@@ -159,7 +159,7 @@ New documentation strings should conform to [http://sagemath.org/doc/developer/c
 archive/issue_comments_092151.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9559.patch](tarball://root/attachments/some-uuid/ticket9559/trac_9559.patch) by rlm created at 2013-01-17 04:39:26",
     "created_at": "2013-01-17T04:39:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9559",
     "type": "issue_comment",
@@ -168,7 +168,7 @@ archive/issue_comments_092151.json:
 }
 ```
 
-Attachment
+Attachment [trac_9559.patch](tarball://root/attachments/some-uuid/ticket9559/trac_9559.patch) by rlm created at 2013-01-17 04:39:26
 
 
 

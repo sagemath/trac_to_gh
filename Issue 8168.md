@@ -69,7 +69,7 @@ Changing status from new to needs_review.
 archive/issue_comments_071870.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8168-attached_reset.patch](tarball://root/attachments/some-uuid/ticket8168/trac_8168-attached_reset.patch) by mpatel created at 2010-02-03 10:05:54",
     "created_at": "2010-02-03T10:05:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8168",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_071870.json:
 }
 ```
 
-Attachment
+Attachment [trac_8168-attached_reset.patch](tarball://root/attachments/some-uuid/ticket8168/trac_8168-attached_reset.patch) by mpatel created at 2010-02-03 10:05:54
 
 
 
@@ -123,7 +123,7 @@ Same as previous, except with default `attached=False`.  Apply just one patch.
 archive/issue_comments_071873.json:
 ```json
 {
-    "body": "Attachment\n\nNote: With V2, attaching a file that contains `reset(attached=True)` does not immediately detach the file.  This happens because `sage.misc.preparser.load` `exec`s the file *before* updating the attached files dictionary.",
+    "body": "Attachment [trac_8168-attached_reset.2.patch](tarball://root/attachments/some-uuid/ticket8168/trac_8168-attached_reset.2.patch) by mpatel created at 2010-02-03 10:39:46\n\nNote: With V2, attaching a file that contains `reset(attached=True)` does not immediately detach the file.  This happens because `sage.misc.preparser.load` `exec`s the file *before* updating the attached files dictionary.",
     "created_at": "2010-02-03T10:39:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8168",
     "type": "issue_comment",
@@ -132,7 +132,7 @@ archive/issue_comments_071873.json:
 }
 ```
 
-Attachment
+Attachment [trac_8168-attached_reset.2.patch](tarball://root/attachments/some-uuid/ticket8168/trac_8168-attached_reset.2.patch) by mpatel created at 2010-02-03 10:39:46
 
 Note: With V2, attaching a file that contains `reset(attached=True)` does not immediately detach the file.  This happens because `sage.misc.preparser.load` `exec`s the file *before* updating the attached files dictionary.
 
@@ -161,7 +161,7 @@ V2 rebased for #378.  Apply only this patch.
 archive/issue_comments_071875.json:
 ```json
 {
-    "body": "Attachment\n\nV3 is V2 rebased for #378.",
+    "body": "Attachment [trac_8168-attached_reset.3.patch](tarball://root/attachments/some-uuid/ticket8168/trac_8168-attached_reset.3.patch) by mpatel created at 2010-02-16 21:58:16\n\nV3 is V2 rebased for #378.",
     "created_at": "2010-02-16T21:58:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8168",
     "type": "issue_comment",
@@ -170,7 +170,7 @@ archive/issue_comments_071875.json:
 }
 ```
 
-Attachment
+Attachment [trac_8168-attached_reset.3.patch](tarball://root/attachments/some-uuid/ticket8168/trac_8168-attached_reset.3.patch) by mpatel created at 2010-02-16 21:58:16
 
 V3 is V2 rebased for #378.
 
@@ -199,7 +199,7 @@ Note to potential reviewers:  V2 of the patch should apply cleanly to 4.4.4.alph
 archive/issue_comments_071877.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8168-attached_reset.4.patch](tarball://root/attachments/some-uuid/ticket8168/trac_8168-attached_reset.4.patch) by mhansen created at 2011-12-18 10:19:11",
     "created_at": "2011-12-18T10:19:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8168",
     "type": "issue_comment",
@@ -208,7 +208,7 @@ archive/issue_comments_071877.json:
 }
 ```
 
-Attachment
+Attachment [trac_8168-attached_reset.4.patch](tarball://root/attachments/some-uuid/ticket8168/trac_8168-attached_reset.4.patch) by mhansen created at 2011-12-18 10:19:11
 
 
 

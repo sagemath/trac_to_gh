@@ -47,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2337
 archive/issue_comments_015627.json:
 ```json
 {
-    "body": "Attachment\n\nWorks for me on 2.10.3.alpha0.",
+    "body": "Attachment [sage-2337.patch](tarball://root/attachments/some-uuid/ticket2337/sage-2337.patch) by mhansen created at 2008-02-27 21:59:05\n\nWorks for me on 2.10.3.alpha0.",
     "created_at": "2008-02-27T21:59:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2337",
     "type": "issue_comment",
@@ -56,7 +56,7 @@ archive/issue_comments_015627.json:
 }
 ```
 
-Attachment
+Attachment [sage-2337.patch](tarball://root/attachments/some-uuid/ticket2337/sage-2337.patch) by mhansen created at 2008-02-27 21:59:05
 
 Works for me on 2.10.3.alpha0.
 

@@ -117,7 +117,7 @@ Changing status from new to assigned.
 archive/issue_comments_022620.json:
 ```json
 {
-    "body": "Attachment\n\nAfter talking to William in IRC I changed the test to the new, expected error message since we now post a link to the error message instead of the error message itself. I add \"...\" since the number depends if other help files have been produced since they are not deleted, i.e. \"sage/server/docs-0.html\" sticks around. See #3265 for that issue.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_3267.patch](tarball://root/attachments/some-uuid/ticket3267/trac_3267.patch) by mabshoff created at 2008-05-21 14:14:43\n\nAfter talking to William in IRC I changed the test to the new, expected error message since we now post a link to the error message instead of the error message itself. I add \"...\" since the number depends if other help files have been produced since they are not deleted, i.e. \"sage/server/docs-0.html\" sticks around. See #3265 for that issue.\n\nCheers,\n\nMichael",
     "created_at": "2008-05-21T14:14:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3267",
     "type": "issue_comment",
@@ -126,7 +126,7 @@ archive/issue_comments_022620.json:
 }
 ```
 
-Attachment
+Attachment [trac_3267.patch](tarball://root/attachments/some-uuid/ticket3267/trac_3267.patch) by mabshoff created at 2008-05-21 14:14:43
 
 After talking to William in IRC I changed the test to the new, expected error message since we now post a link to the error message instead of the error message itself. I add "..." since the number depends if other help files have been produced since they are not deleted, i.e. "sage/server/docs-0.html" sticks around. See #3265 for that issue.
 

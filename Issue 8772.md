@@ -222,7 +222,7 @@ Dave
 archive/issue_comments_080284.json:
 ```json
 {
-    "body": "Attachment\n\nFailed devel/sage-main/sage/modular/overconvergent/weightspace.py (first of two failures of this test)",
+    "body": "Attachment [run-21-weightspace.py.txt](tarball://root/attachments/some-uuid/ticket8772/run-21-weightspace.py.txt) by drkirkby created at 2010-08-31 23:19:59\n\nFailed devel/sage-main/sage/modular/overconvergent/weightspace.py (first of two failures of this test)",
     "created_at": "2010-08-31T23:19:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8772",
     "type": "issue_comment",
@@ -231,7 +231,7 @@ archive/issue_comments_080284.json:
 }
 ```
 
-Attachment
+Attachment [run-21-weightspace.py.txt](tarball://root/attachments/some-uuid/ticket8772/run-21-weightspace.py.txt) by drkirkby created at 2010-08-31 23:19:59
 
 Failed devel/sage-main/sage/modular/overconvergent/weightspace.py (first of two failures of this test)
 
@@ -260,7 +260,7 @@ Failed devel/sage/sage/tests/benchmark.py
 archive/issue_comments_080286.json:
 ```json
 {
-    "body": "Attachment\n\nFailed devel/sage-main/sage/modular/overconvergent/weightspace.py (second failure)",
+    "body": "Attachment [run-34-benchmark.py.txt](tarball://root/attachments/some-uuid/ticket8772/run-34-benchmark.py.txt) by drkirkby created at 2010-08-31 23:22:23\n\nFailed devel/sage-main/sage/modular/overconvergent/weightspace.py (second failure)",
     "created_at": "2010-08-31T23:22:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8772",
     "type": "issue_comment",
@@ -269,7 +269,7 @@ archive/issue_comments_080286.json:
 }
 ```
 
-Attachment
+Attachment [run-34-benchmark.py.txt](tarball://root/attachments/some-uuid/ticket8772/run-34-benchmark.py.txt) by drkirkby created at 2010-08-31 23:22:23
 
 Failed devel/sage-main/sage/modular/overconvergent/weightspace.py (second failure)
 
@@ -280,7 +280,7 @@ Failed devel/sage-main/sage/modular/overconvergent/weightspace.py (second failur
 archive/issue_comments_080287.json:
 ```json
 {
-    "body": "Attachment\n\nFailed devel/sage/sage/calculus/desolvers.py",
+    "body": "Attachment [run-60-weightspace.py.txt](tarball://root/attachments/some-uuid/ticket8772/run-60-weightspace.py.txt) by drkirkby created at 2010-08-31 23:23:06\n\nFailed devel/sage/sage/calculus/desolvers.py",
     "created_at": "2010-08-31T23:23:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8772",
     "type": "issue_comment",
@@ -289,7 +289,7 @@ archive/issue_comments_080287.json:
 }
 ```
 
-Attachment
+Attachment [run-60-weightspace.py.txt](tarball://root/attachments/some-uuid/ticket8772/run-60-weightspace.py.txt) by drkirkby created at 2010-08-31 23:23:06
 
 Failed devel/sage/sage/calculus/desolvers.py
 
@@ -300,7 +300,7 @@ Failed devel/sage/sage/calculus/desolvers.py
 archive/issue_comments_080288.json:
 ```json
 {
-    "body": "Attachment\n\nI was unable to attach the files earlier, as trac was not working correctly (/var was full). \n\nNote Alex Ghitza said on sage-devel that `modular/overconvergent/weightspace.py` has no reason to use Maxima, so he created a patch to fix that #9843. Of course, that does not help solve the underlying problem here. \n\nDave.",
+    "body": "Attachment [run-90-desolvers.py.txt](tarball://root/attachments/some-uuid/ticket8772/run-90-desolvers.py.txt) by drkirkby created at 2010-08-31 23:31:32\n\nI was unable to attach the files earlier, as trac was not working correctly (/var was full). \n\nNote Alex Ghitza said on sage-devel that `modular/overconvergent/weightspace.py` has no reason to use Maxima, so he created a patch to fix that #9843. Of course, that does not help solve the underlying problem here. \n\nDave.",
     "created_at": "2010-08-31T23:31:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8772",
     "type": "issue_comment",
@@ -309,7 +309,7 @@ archive/issue_comments_080288.json:
 }
 ```
 
-Attachment
+Attachment [run-90-desolvers.py.txt](tarball://root/attachments/some-uuid/ticket8772/run-90-desolvers.py.txt) by drkirkby created at 2010-08-31 23:31:32
 
 I was unable to attach the files earlier, as trac was not working correctly (/var was full). 
 

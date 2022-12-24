@@ -52,7 +52,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5582
 archive/issue_comments_043511.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5582-float-QQ.patch](tarball://root/attachments/some-uuid/ticket5582/5582-float-QQ.patch) by robertwb created at 2009-03-21 20:20:10",
     "created_at": "2009-03-21T20:20:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5582",
     "type": "issue_comment",
@@ -61,7 +61,7 @@ archive/issue_comments_043511.json:
 }
 ```
 
-Attachment
+Attachment [5582-float-QQ.patch](tarball://root/attachments/some-uuid/ticket5582/5582-float-QQ.patch) by robertwb created at 2009-03-21 20:20:10
 
 
 
@@ -123,7 +123,7 @@ Michael
 archive/issue_comments_043514.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5582-QQfloat2.patch](tarball://root/attachments/some-uuid/ticket5582/5582-QQfloat2.patch) by robertwb created at 2009-05-18 22:11:09",
     "created_at": "2009-05-18T22:11:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5582",
     "type": "issue_comment",
@@ -132,7 +132,7 @@ archive/issue_comments_043514.json:
 }
 ```
 
-Attachment
+Attachment [5582-QQfloat2.patch](tarball://root/attachments/some-uuid/ticket5582/5582-QQfloat2.patch) by robertwb created at 2009-05-18 22:11:09
 
 
 

@@ -51,7 +51,7 @@ based on 3.2.1 [using hg_doc]
 archive/issue_comments_035432.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4703-inst-tcltk.patch](tarball://root/attachments/some-uuid/ticket4703/trac_4703-inst-tcltk.patch) by was created at 2008-12-06 23:37:04",
     "created_at": "2008-12-06T23:37:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4703",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_035432.json:
 }
 ```
 
-Attachment
+Attachment [trac_4703-inst-tcltk.patch](tarball://root/attachments/some-uuid/ticket4703/trac_4703-inst-tcltk.patch) by was created at 2008-12-06 23:37:04
 
 
 

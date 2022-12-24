@@ -74,7 +74,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6870
 archive/issue_comments_056699.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [binomial_bug.patch](tarball://root/attachments/some-uuid/ticket6870/binomial_bug.patch) by hgranath created at 2009-09-02 20:21:00",
     "created_at": "2009-09-02T20:21:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6870",
     "type": "issue_comment",
@@ -83,7 +83,7 @@ archive/issue_comments_056699.json:
 }
 ```
 
-Attachment
+Attachment [binomial_bug.patch](tarball://root/attachments/some-uuid/ticket6870/binomial_bug.patch) by hgranath created at 2009-09-02 20:21:00
 
 
 
@@ -175,7 +175,7 @@ regression in the symbolic case.
 archive/issue_comments_056702.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [binomial_bug_v2.patch](tarball://root/attachments/some-uuid/ticket6870/binomial_bug_v2.patch) by hgranath created at 2009-09-16 03:49:58",
     "created_at": "2009-09-16T03:49:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6870",
     "type": "issue_comment",
@@ -184,7 +184,7 @@ archive/issue_comments_056702.json:
 }
 ```
 
-Attachment
+Attachment [binomial_bug_v2.patch](tarball://root/attachments/some-uuid/ticket6870/binomial_bug_v2.patch) by hgranath created at 2009-09-16 03:49:58
 
 
 
@@ -345,7 +345,7 @@ last one takes a looong time).
 archive/issue_comments_056707.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [binomial_bug_QQ_fix.patch](tarball://root/attachments/some-uuid/ticket6870/binomial_bug_QQ_fix.patch) by hgranath created at 2009-09-21 16:35:25",
     "created_at": "2009-09-21T16:35:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6870",
     "type": "issue_comment",
@@ -354,7 +354,7 @@ archive/issue_comments_056707.json:
 }
 ```
 
-Attachment
+Attachment [binomial_bug_QQ_fix.patch](tarball://root/attachments/some-uuid/ticket6870/binomial_bug_QQ_fix.patch) by hgranath created at 2009-09-21 16:35:25
 
 
 
@@ -363,7 +363,7 @@ Attachment
 archive/issue_comments_056708.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [binomial_bug_original_fixed.patch](tarball://root/attachments/some-uuid/ticket6870/binomial_bug_original_fixed.patch) by hgranath created at 2009-09-21 16:35:37",
     "created_at": "2009-09-21T16:35:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6870",
     "type": "issue_comment",
@@ -372,7 +372,7 @@ archive/issue_comments_056708.json:
 }
 ```
 
-Attachment
+Attachment [binomial_bug_original_fixed.patch](tarball://root/attachments/some-uuid/ticket6870/binomial_bug_original_fixed.patch) by hgranath created at 2009-09-21 16:35:37
 
 
 
@@ -506,7 +506,7 @@ I hope I finally got everything right in version 5 of the patch!
 archive/issue_comments_056713.json:
 ```json
 {
-    "body": "Attachment\n\nUnfortunately my Sage upgrade croaked, so I can't check it immediately.   I will try to do so as soon as possible.\n\nHowever, what does this patch do with this?\n\n```\nsage: binomial(SR(3/2),SR(1/1))?\n```\n\nTrying x-m won't work on this.   Note that \n\n```\nsage: type(SR(1/1).pyobject())\n<type 'sage.rings.rational.Rational'>\n```\n\nwhich means you may still want a m=ZZ(m) or rational check once you have discovered you aren't in the n+1 case.   I may have that wrong, though, since I can't actually try the patch out.\n\nAs for a trivial point, there is a misspelling of \"coerce\" as well.",
+    "body": "Attachment [binomial_bug_v5.patch](tarball://root/attachments/some-uuid/ticket6870/binomial_bug_v5.patch) by kcrisman created at 2009-09-22 15:36:52\n\nUnfortunately my Sage upgrade croaked, so I can't check it immediately.   I will try to do so as soon as possible.\n\nHowever, what does this patch do with this?\n\n```\nsage: binomial(SR(3/2),SR(1/1))?\n```\n\nTrying x-m won't work on this.   Note that \n\n```\nsage: type(SR(1/1).pyobject())\n<type 'sage.rings.rational.Rational'>\n```\n\nwhich means you may still want a m=ZZ(m) or rational check once you have discovered you aren't in the n+1 case.   I may have that wrong, though, since I can't actually try the patch out.\n\nAs for a trivial point, there is a misspelling of \"coerce\" as well.",
     "created_at": "2009-09-22T15:36:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6870",
     "type": "issue_comment",
@@ -515,7 +515,7 @@ archive/issue_comments_056713.json:
 }
 ```
 
-Attachment
+Attachment [binomial_bug_v5.patch](tarball://root/attachments/some-uuid/ticket6870/binomial_bug_v5.patch) by kcrisman created at 2009-09-22 15:36:52
 
 Unfortunately my Sage upgrade croaked, so I can't check it immediately.   I will try to do so as soon as possible.
 
@@ -562,7 +562,7 @@ reasons) but not e.g. binomial(3/2,SR(1/1)). Fixed in new version.
 archive/issue_comments_056715.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [binomial_bug_v6.patch](tarball://root/attachments/some-uuid/ticket6870/binomial_bug_v6.patch) by hgranath created at 2009-09-22 16:28:53",
     "created_at": "2009-09-22T16:28:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6870",
     "type": "issue_comment",
@@ -571,7 +571,7 @@ archive/issue_comments_056715.json:
 }
 ```
 
-Attachment
+Attachment [binomial_bug_v6.patch](tarball://root/attachments/some-uuid/ticket6870/binomial_bug_v6.patch) by hgranath created at 2009-09-22 16:28:53
 
 
 
@@ -612,7 +612,7 @@ One might as well add a doctest for that last case you mentioned, too.  I'm reba
 archive/issue_comments_056717.json:
 ```json
 {
-    "body": "Attachment\n\nBased on 4.1.2.alpha2; apply this patch only.",
+    "body": "Attachment [trac_6870-final.patch](tarball://root/attachments/some-uuid/ticket6870/trac_6870-final.patch) by kcrisman created at 2009-09-22 18:08:27\n\nBased on 4.1.2.alpha2; apply this patch only.",
     "created_at": "2009-09-22T18:08:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6870",
     "type": "issue_comment",
@@ -621,7 +621,7 @@ archive/issue_comments_056717.json:
 }
 ```
 
-Attachment
+Attachment [trac_6870-final.patch](tarball://root/attachments/some-uuid/ticket6870/trac_6870-final.patch) by kcrisman created at 2009-09-22 18:08:27
 
 Based on 4.1.2.alpha2; apply this patch only.
 
@@ -668,7 +668,7 @@ set username to Hakan Granath
 archive/issue_comments_056720.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch `trac_6870-final-v2.patch` is the same as `trac_6870-final.patch`. The only difference is that I have set the username to Hakan Granath. This is because `trac_6870-final.patch` is a rebase of Hakan's previous patches.",
+    "body": "Attachment [trac_6870-final-v2.patch](tarball://root/attachments/some-uuid/ticket6870/trac_6870-final-v2.patch) by mvngu created at 2009-09-24 11:10:03\n\nThe patch `trac_6870-final-v2.patch` is the same as `trac_6870-final.patch`. The only difference is that I have set the username to Hakan Granath. This is because `trac_6870-final.patch` is a rebase of Hakan's previous patches.",
     "created_at": "2009-09-24T11:10:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6870",
     "type": "issue_comment",
@@ -677,7 +677,7 @@ archive/issue_comments_056720.json:
 }
 ```
 
-Attachment
+Attachment [trac_6870-final-v2.patch](tarball://root/attachments/some-uuid/ticket6870/trac_6870-final-v2.patch) by mvngu created at 2009-09-24 11:10:03
 
 The patch `trac_6870-final-v2.patch` is the same as `trac_6870-final.patch`. The only difference is that I have set the username to Hakan Granath. This is because `trac_6870-final.patch` is a rebase of Hakan's previous patches.
 
@@ -800,7 +800,7 @@ Minh, I tried this again in a branch with no binomial changes, and it is still t
 archive/issue_comments_056726.json:
 ```json
 {
-    "body": "Attachment\n\nfix 32- vs. 64-bit issue",
+    "body": "Attachment [trac_6870-bitness-issue.patch](tarball://root/attachments/some-uuid/ticket6870/trac_6870-bitness-issue.patch) by mvngu created at 2009-09-26 05:45:47\n\nfix 32- vs. 64-bit issue",
     "created_at": "2009-09-26T05:45:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6870",
     "type": "issue_comment",
@@ -809,7 +809,7 @@ archive/issue_comments_056726.json:
 }
 ```
 
-Attachment
+Attachment [trac_6870-bitness-issue.patch](tarball://root/attachments/some-uuid/ticket6870/trac_6870-bitness-issue.patch) by mvngu created at 2009-09-26 05:45:47
 
 fix 32- vs. 64-bit issue
 
@@ -904,7 +904,7 @@ from that patch. The new patch would be the same as the original, only with chan
 archive/issue_comments_056730.json:
 ```json
 {
-    "body": "Attachment\n\nThe final patch.  No, really.",
+    "body": "Attachment [trac_6870-final-v2.2.patch](tarball://root/attachments/some-uuid/ticket6870/trac_6870-final-v2.2.patch) by kcrisman created at 2009-09-27 00:48:10\n\nThe final patch.  No, really.",
     "created_at": "2009-09-27T00:48:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6870",
     "type": "issue_comment",
@@ -913,7 +913,7 @@ archive/issue_comments_056730.json:
 }
 ```
 
-Attachment
+Attachment [trac_6870-final-v2.2.patch](tarball://root/attachments/some-uuid/ticket6870/trac_6870-final-v2.2.patch) by kcrisman created at 2009-09-27 00:48:10
 
 The final patch.  No, really.
 

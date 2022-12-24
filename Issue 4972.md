@@ -150,7 +150,7 @@ ignore the .2.patch file.  I've refreshed the original .patch file.
 archive/issue_comments_037867.json:
 ```json
 {
-    "body": "Attachment\n\nRefreshed patch to fix some doctests.",
+    "body": "Attachment [trac_4972-matrix-setitem.patch](tarball://root/attachments/some-uuid/ticket4972/trac_4972-matrix-setitem.patch) by jason created at 2009-02-05 08:08:23\n\nRefreshed patch to fix some doctests.",
     "created_at": "2009-02-05T08:08:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4972",
     "type": "issue_comment",
@@ -159,7 +159,7 @@ archive/issue_comments_037867.json:
 }
 ```
 
-Attachment
+Attachment [trac_4972-matrix-setitem.patch](tarball://root/attachments/some-uuid/ticket4972/trac_4972-matrix-setitem.patch) by jason created at 2009-02-05 08:08:23
 
 Refreshed patch to fix some doctests.
 
@@ -240,7 +240,7 @@ the fixups.patch addresses cwitty's concerns.  It should be applied on top of tr
 archive/issue_comments_037870.json:
 ```json
 {
-    "body": "Attachment\n\ngrr, forgot to check the \"replace\" checkbox again.\n\nSo apply the following:\n\ntrac_4972-matrix-setitem.patch, then trac_4972-matrix-setitem-fixups.patch\n\nIgnore both .2.patch files.\n\nThis second refresh corrects some \"int\" cdefs in misc_c.pyx",
+    "body": "Attachment [trac_4972-matrix-setitem-fixups.patch](tarball://root/attachments/some-uuid/ticket4972/trac_4972-matrix-setitem-fixups.patch) by jason created at 2009-02-06 06:28:43\n\ngrr, forgot to check the \"replace\" checkbox again.\n\nSo apply the following:\n\ntrac_4972-matrix-setitem.patch, then trac_4972-matrix-setitem-fixups.patch\n\nIgnore both .2.patch files.\n\nThis second refresh corrects some \"int\" cdefs in misc_c.pyx",
     "created_at": "2009-02-06T06:28:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4972",
     "type": "issue_comment",
@@ -249,7 +249,7 @@ archive/issue_comments_037870.json:
 }
 ```
 
-Attachment
+Attachment [trac_4972-matrix-setitem-fixups.patch](tarball://root/attachments/some-uuid/ticket4972/trac_4972-matrix-setitem-fixups.patch) by jason created at 2009-02-06 06:28:43
 
 grr, forgot to check the "replace" checkbox again.
 

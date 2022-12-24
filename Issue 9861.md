@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9862
 archive/issue_comments_097363.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9862.patch](tarball://root/attachments/some-uuid/ticket9862/trac_9862.patch) by edward.scheinerman created at 2010-09-06 18:54:32",
     "created_at": "2010-09-06T18:54:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9861",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_097363.json:
 }
 ```
 
-Attachment
+Attachment [trac_9862.patch](tarball://root/attachments/some-uuid/ticket9862/trac_9862.patch) by edward.scheinerman created at 2010-09-06 18:54:32
 
 
 
@@ -91,7 +91,7 @@ Nathann
 archive/issue_comments_097366.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9862 - small docstring fixes.patch](tarball://root/attachments/some-uuid/ticket9862/trac_9862 - small docstring fixes.patch) by ncohen created at 2010-09-06 19:25:08",
     "created_at": "2010-09-06T19:25:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9861",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_097366.json:
 }
 ```
 
-Attachment
+Attachment [trac_9862 - small docstring fixes.patch](tarball://root/attachments/some-uuid/ticket9862/trac_9862 - small docstring fixes.patch) by ncohen created at 2010-09-06 19:25:08
 
 
 

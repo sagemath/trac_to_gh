@@ -38,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2238
 archive/issue_comments_014816.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [const_fails.patch](tarball://root/attachments/some-uuid/ticket2238/const_fails.patch) by AlexGhitza created at 2008-02-20 23:01:01",
     "created_at": "2008-02-20T23:01:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2238",
     "type": "issue_comment",
@@ -47,7 +47,7 @@ archive/issue_comments_014816.json:
 }
 ```
 
-Attachment
+Attachment [const_fails.patch](tarball://root/attachments/some-uuid/ticket2238/const_fails.patch) by AlexGhitza created at 2008-02-20 23:01:01
 
 
 
@@ -106,7 +106,7 @@ this and doc-2238.patch should replace the above patch (apply this to sage repo;
 archive/issue_comments_014819.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-2238.patch](tarball://root/attachments/some-uuid/ticket2238/sage-2238.patch) by was created at 2008-02-21 00:21:36",
     "created_at": "2008-02-21T00:21:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2238",
     "type": "issue_comment",
@@ -115,7 +115,7 @@ archive/issue_comments_014819.json:
 }
 ```
 
-Attachment
+Attachment [sage-2238.patch](tarball://root/attachments/some-uuid/ticket2238/sage-2238.patch) by was created at 2008-02-21 00:21:36
 
 
 
@@ -124,7 +124,7 @@ Attachment
 archive/issue_comments_014820.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [doc-2238.patch](tarball://root/attachments/some-uuid/ticket2238/doc-2238.patch) by was created at 2008-02-21 00:21:56",
     "created_at": "2008-02-21T00:21:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2238",
     "type": "issue_comment",
@@ -133,7 +133,7 @@ archive/issue_comments_014820.json:
 }
 ```
 
-Attachment
+Attachment [doc-2238.patch](tarball://root/attachments/some-uuid/ticket2238/doc-2238.patch) by was created at 2008-02-21 00:21:56
 
 
 
@@ -160,7 +160,7 @@ Changing priority from major to blocker.
 archive/issue_comments_014822.json:
 ```json
 {
-    "body": "Attachment\n\nreplace sage-2238.patch",
+    "body": "Attachment [sage-2238-new.patch](tarball://root/attachments/some-uuid/ticket2238/sage-2238-new.patch) by AlexGhitza created at 2008-02-21 02:54:37\n\nreplace sage-2238.patch",
     "created_at": "2008-02-21T02:54:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2238",
     "type": "issue_comment",
@@ -169,7 +169,7 @@ archive/issue_comments_014822.json:
 }
 ```
 
-Attachment
+Attachment [sage-2238-new.patch](tarball://root/attachments/some-uuid/ticket2238/sage-2238-new.patch) by AlexGhitza created at 2008-02-21 02:54:37
 
 replace sage-2238.patch
 

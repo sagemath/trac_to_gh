@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2135
 archive/issue_comments_014004.json:
 ```json
 {
-    "body": "Attachment\n\nApply.  There are no doctests, but how would one doctest this?  There is a small typo in the docstring, I think -- a missing apostrophe.",
+    "body": "Attachment [plot_positions_with_spring-graphs.patch](tarball://root/attachments/some-uuid/ticket2135/plot_positions_with_spring-graphs.patch) by ncalexan created at 2008-02-15 03:50:25\n\nApply.  There are no doctests, but how would one doctest this?  There is a small typo in the docstring, I think -- a missing apostrophe.",
     "created_at": "2008-02-15T03:50:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2135",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_014004.json:
 }
 ```
 
-Attachment
+Attachment [plot_positions_with_spring-graphs.patch](tarball://root/attachments/some-uuid/ticket2135/plot_positions_with_spring-graphs.patch) by ncalexan created at 2008-02-15 03:50:25
 
 Apply.  There are no doctests, but how would one doctest this?  There is a small typo in the docstring, I think -- a missing apostrophe.
 
@@ -87,7 +87,7 @@ Resolution: fixed
 archive/issue_comments_014007.json:
 ```json
 {
-    "body": "Attachment\n\nMerged both patches in Sage 2.10.3.alpha0. I fixed the missing apostrophe in plot_positions_with_spring-graphs.patch.\n\nCheeers,\n\nMichael",
+    "body": "Attachment [2135-doctest.patch](tarball://root/attachments/some-uuid/ticket2135/2135-doctest.patch) by mabshoff created at 2008-02-25 01:38:18\n\nMerged both patches in Sage 2.10.3.alpha0. I fixed the missing apostrophe in plot_positions_with_spring-graphs.patch.\n\nCheeers,\n\nMichael",
     "created_at": "2008-02-25T01:38:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2135",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_014007.json:
 }
 ```
 
-Attachment
+Attachment [2135-doctest.patch](tarball://root/attachments/some-uuid/ticket2135/2135-doctest.patch) by mabshoff created at 2008-02-25 01:38:18
 
 Merged both patches in Sage 2.10.3.alpha0. I fixed the missing apostrophe in plot_positions_with_spring-graphs.patch.
 

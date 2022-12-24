@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6686
 archive/issue_comments_054980.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6686-help_center_tag.patch](tarball://root/attachments/some-uuid/ticket6686/trac_6686-help_center_tag.patch) by mpatel created at 2009-08-08 09:58:44",
     "created_at": "2009-08-08T09:58:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6686",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_054980.json:
 }
 ```
 
-Attachment
+Attachment [trac_6686-help_center_tag.patch](tarball://root/attachments/some-uuid/ticket6686/trac_6686-help_center_tag.patch) by mpatel created at 2009-08-08 09:58:44
 
 
 
@@ -67,7 +67,7 @@ Alternative way to balance <center> tags.  Apply either this OR the other patch.
 archive/issue_comments_054982.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6686-help_center_tag_alt.patch](tarball://root/attachments/some-uuid/ticket6686/trac_6686-help_center_tag_alt.patch) by mpatel created at 2009-08-08 10:03:33",
     "created_at": "2009-08-08T10:03:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6686",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_054982.json:
 }
 ```
 
-Attachment
+Attachment [trac_6686-help_center_tag_alt.patch](tarball://root/attachments/some-uuid/ticket6686/trac_6686-help_center_tag_alt.patch) by mpatel created at 2009-08-08 10:03:33
 
 
 

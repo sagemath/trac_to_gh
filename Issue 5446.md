@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5446
 archive/issue_comments_042105.json:
 ```json
 {
-    "body": "Attachment\n\nYep, this looks good. Out of curiousity, is there a reason `RIF` itself isn't unique (or just \"no one's gotten around to it\")?",
+    "body": "Attachment [rif-sidesteps-rr-uniqueness.patch](tarball://root/attachments/some-uuid/ticket5446/rif-sidesteps-rr-uniqueness.patch) by craigcitro created at 2009-03-15 23:27:03\n\nYep, this looks good. Out of curiousity, is there a reason `RIF` itself isn't unique (or just \"no one's gotten around to it\")?",
     "created_at": "2009-03-15T23:27:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5446",
     "type": "issue_comment",
@@ -43,7 +43,7 @@ archive/issue_comments_042105.json:
 }
 ```
 
-Attachment
+Attachment [rif-sidesteps-rr-uniqueness.patch](tarball://root/attachments/some-uuid/ticket5446/rif-sidesteps-rr-uniqueness.patch) by craigcitro created at 2009-03-15 23:27:03
 
 Yep, this looks good. Out of curiousity, is there a reason `RIF` itself isn't unique (or just "no one's gotten around to it")?
 

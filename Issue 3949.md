@@ -51,7 +51,7 @@ Ignore the class ` Worksheet_rating_info `
 archive/issue_comments_028346.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [extcode-3949_1.patch](tarball://root/attachments/some-uuid/ticket3949/extcode-3949_1.patch) by TimothyClemans created at 2008-08-25 17:49:34",
     "created_at": "2008-08-25T17:49:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3949",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_028346.json:
 }
 ```
 
-Attachment
+Attachment [extcode-3949_1.patch](tarball://root/attachments/some-uuid/ticket3949/extcode-3949_1.patch) by TimothyClemans created at 2008-08-25 17:49:34
 
 
 
@@ -87,7 +87,7 @@ See #3923
 archive/issue_comments_028348.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3949.patch](tarball://root/attachments/some-uuid/ticket3949/trac_3949.patch) by mhansen created at 2008-10-23 23:30:02",
     "created_at": "2008-10-23T23:30:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3949",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_028348.json:
 }
 ```
 
-Attachment
+Attachment [trac_3949.patch](tarball://root/attachments/some-uuid/ticket3949/trac_3949.patch) by mhansen created at 2008-10-23 23:30:02
 
 
 
@@ -141,7 +141,7 @@ Changing status from new to assigned.
 archive/issue_comments_028351.json:
 ```json
 {
-    "body": "Attachment\n\nI've rebased this against 3.2.alpha0 and moved the templates into sage/server/notebook/templates/\n\nApply only the last two patches: trac_3949.patch and extcode_3949.patch",
+    "body": "Attachment [extcode_3949.patch](tarball://root/attachments/some-uuid/ticket3949/extcode_3949.patch) by mhansen created at 2008-10-23 23:31:47\n\nI've rebased this against 3.2.alpha0 and moved the templates into sage/server/notebook/templates/\n\nApply only the last two patches: trac_3949.patch and extcode_3949.patch",
     "created_at": "2008-10-23T23:31:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3949",
     "type": "issue_comment",
@@ -150,7 +150,7 @@ archive/issue_comments_028351.json:
 }
 ```
 
-Attachment
+Attachment [extcode_3949.patch](tarball://root/attachments/some-uuid/ticket3949/extcode_3949.patch) by mhansen created at 2008-10-23 23:31:47
 
 I've rebased this against 3.2.alpha0 and moved the templates into sage/server/notebook/templates/
 

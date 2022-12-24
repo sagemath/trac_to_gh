@@ -49,7 +49,7 @@ Changing status from new to needs_work.
 archive/issue_comments_092708.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9587-conferencescheduler.patch](tarball://root/attachments/some-uuid/ticket9587/9587-conferencescheduler.patch) by schilly created at 2010-07-27 11:38:51",
     "created_at": "2010-07-27T11:38:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9587",
     "type": "issue_comment",
@@ -58,4 +58,4 @@ archive/issue_comments_092708.json:
 }
 ```
 
-Attachment
+Attachment [9587-conferencescheduler.patch](tarball://root/attachments/some-uuid/ticket9587/9587-conferencescheduler.patch) by schilly created at 2010-07-27 11:38:51

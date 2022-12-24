@@ -45,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5118
 archive/issue_comments_039122.json:
 ```json
 {
-    "body": "Attachment\n\nPasses doctests and makes the printing consistent regarding spaces. Positive review. \n\nI am CCing John since he might be affected by this patch.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac-5118.patch](tarball://root/attachments/some-uuid/ticket5118/trac-5118.patch) by mabshoff created at 2009-02-02 05:52:23\n\nPasses doctests and makes the printing consistent regarding spaces. Positive review. \n\nI am CCing John since he might be affected by this patch.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-02T05:52:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5118",
     "type": "issue_comment",
@@ -54,7 +54,7 @@ archive/issue_comments_039122.json:
 }
 ```
 
-Attachment
+Attachment [trac-5118.patch](tarball://root/attachments/some-uuid/ticket5118/trac-5118.patch) by mabshoff created at 2009-02-02 05:52:23
 
 Passes doctests and makes the printing consistent regarding spaces. Positive review. 
 

@@ -53,7 +53,7 @@ Changing status from new to needs_review.
 archive/issue_comments_073495.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8296-fix-tab-completion-emacs-nt.patch](tarball://root/attachments/some-uuid/ticket8296/trac_8296-fix-tab-completion-emacs-nt.patch) by nthiery created at 2010-02-17 21:50:50",
     "created_at": "2010-02-17T21:50:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8296",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_073495.json:
 }
 ```
 
-Attachment
+Attachment [trac_8296-fix-tab-completion-emacs-nt.patch](tarball://root/attachments/some-uuid/ticket8296/trac_8296-fix-tab-completion-emacs-nt.patch) by nthiery created at 2010-02-17 21:50:50
 
 
 

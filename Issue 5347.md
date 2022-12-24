@@ -53,7 +53,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5347
 archive/issue_comments_041200.json:
 ```json
 {
-    "body": "Attachment\n\nApplies to 4.1.1",
+    "body": "Attachment [trac_5347-divides.patch](tarball://root/attachments/some-uuid/ticket5347/trac_5347-divides.patch) by cremona created at 2009-08-30 17:43:24\n\nApplies to 4.1.1",
     "created_at": "2009-08-30T17:43:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5347",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_041200.json:
 }
 ```
 
-Attachment
+Attachment [trac_5347-divides.patch](tarball://root/attachments/some-uuid/ticket5347/trac_5347-divides.patch) by cremona created at 2009-08-30 17:43:24
 
 Applies to 4.1.1
 

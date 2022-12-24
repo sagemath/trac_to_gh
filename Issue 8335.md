@@ -128,7 +128,7 @@ Includes everything in 8218, 8332, 7880, 7883, 8333, 8334 and 8335 except the 82
 archive/issue_comments_074283.json:
 ```json
 {
-    "body": "Attachment\n\nFor convenience, I added a giant patch which includes all the changes except the bundle at 8218 (which we want to leave as a bundle in order to preserve file history).",
+    "body": "Attachment [finite_field_coerce_ALL.patch](tarball://root/attachments/some-uuid/ticket8335/finite_field_coerce_ALL.patch) by roed created at 2010-02-23 17:51:54\n\nFor convenience, I added a giant patch which includes all the changes except the bundle at 8218 (which we want to leave as a bundle in order to preserve file history).",
     "created_at": "2010-02-23T17:51:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -137,7 +137,7 @@ archive/issue_comments_074283.json:
 }
 ```
 
-Attachment
+Attachment [finite_field_coerce_ALL.patch](tarball://root/attachments/some-uuid/ticket8335/finite_field_coerce_ALL.patch) by roed created at 2010-02-23 17:51:54
 
 For convenience, I added a giant patch which includes all the changes except the bundle at 8218 (which we want to leave as a bundle in order to preserve file history).
 
@@ -198,7 +198,7 @@ trac_8722.patch
 archive/issue_comments_074286.json:
 ```json
 {
-    "body": "Attachment\n\nApply first",
+    "body": "Attachment [8335_pseudo_conway.patch](tarball://root/attachments/some-uuid/ticket8335/8335_pseudo_conway.patch) by roed created at 2011-06-21 13:51:50\n\nApply first",
     "created_at": "2011-06-21T13:51:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -207,7 +207,7 @@ archive/issue_comments_074286.json:
 }
 ```
 
-Attachment
+Attachment [8335_pseudo_conway.patch](tarball://root/attachments/some-uuid/ticket8335/8335_pseudo_conway.patch) by roed created at 2011-06-21 13:51:50
 
 Apply first
 
@@ -272,7 +272,7 @@ Apply second
 archive/issue_comments_074290.json:
 ```json
 {
-    "body": "Attachment\n\nAgainst 4.7 for patchbot",
+    "body": "Attachment [8335_finite_field_coerce.patch](tarball://root/attachments/some-uuid/ticket8335/8335_finite_field_coerce.patch) by roed created at 2011-06-22 08:53:42\n\nAgainst 4.7 for patchbot",
     "created_at": "2011-06-22T08:53:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -281,7 +281,7 @@ archive/issue_comments_074290.json:
 }
 ```
 
-Attachment
+Attachment [8335_finite_field_coerce.patch](tarball://root/attachments/some-uuid/ticket8335/8335_finite_field_coerce.patch) by roed created at 2011-06-22 08:53:42
 
 Against 4.7 for patchbot
 
@@ -292,7 +292,7 @@ Against 4.7 for patchbot
 archive/issue_comments_074291.json:
 ```json
 {
-    "body": "Attachment\n\nTo work against 4.7, apply 8335_pseudo_conway.patch then 8335_finite_field_coerce_vs_47.patch.",
+    "body": "Attachment [8335_finite_field_coerce_vs_47.patch](tarball://root/attachments/some-uuid/ticket8335/8335_finite_field_coerce_vs_47.patch) by roed created at 2011-06-22 08:54:14\n\nTo work against 4.7, apply 8335_pseudo_conway.patch then 8335_finite_field_coerce_vs_47.patch.",
     "created_at": "2011-06-22T08:54:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -301,7 +301,7 @@ archive/issue_comments_074291.json:
 }
 ```
 
-Attachment
+Attachment [8335_finite_field_coerce_vs_47.patch](tarball://root/attachments/some-uuid/ticket8335/8335_finite_field_coerce_vs_47.patch) by roed created at 2011-06-22 08:54:14
 
 To work against 4.7, apply 8335_pseudo_conway.patch then 8335_finite_field_coerce_vs_47.patch.
 
@@ -391,7 +391,7 @@ I also get 7 warnings when building the docs. These all seem to be missing blank
 archive/issue_comments_074296.json:
 ```json
 {
-    "body": "Attachment\n\nPatch for PCP; rebased on top of 5.7.beta3.",
+    "body": "Attachment [trac_8335-pseudo_conway-5.7.b3.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-pseudo_conway-5.7.b3.patch) by jpflori created at 2013-02-08 14:30:26\n\nPatch for PCP; rebased on top of 5.7.beta3.",
     "created_at": "2013-02-08T14:30:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -400,7 +400,7 @@ archive/issue_comments_074296.json:
 }
 ```
 
-Attachment
+Attachment [trac_8335-pseudo_conway-5.7.b3.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-pseudo_conway-5.7.b3.patch) by jpflori created at 2013-02-08 14:30:26
 
 Patch for PCP; rebased on top of 5.7.beta3.
 
@@ -411,7 +411,7 @@ Patch for PCP; rebased on top of 5.7.beta3.
 archive/issue_comments_074297.json:
 ```json
 {
-    "body": "Attachment\n\nPatch for coercion; rebased on top of 5.7.beta3.",
+    "body": "Attachment [trac_8335-finite_field_coerce-5.7.b3.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-finite_field_coerce-5.7.b3.patch) by jpflori created at 2013-02-08 14:30:46\n\nPatch for coercion; rebased on top of 5.7.beta3.",
     "created_at": "2013-02-08T14:30:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -420,7 +420,7 @@ archive/issue_comments_074297.json:
 }
 ```
 
-Attachment
+Attachment [trac_8335-finite_field_coerce-5.7.b3.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-finite_field_coerce-5.7.b3.patch) by jpflori created at 2013-02-08 14:30:46
 
 Patch for coercion; rebased on top of 5.7.beta3.
 
@@ -449,7 +449,7 @@ Patch for doc fixes; rebased on top of 5.7.beta3.
 archive/issue_comments_074299.json:
 ```json
 {
-    "body": "Attachment\n\nThese patches were quite old and things have moved around since they were written.\nAs a consequence, part of the old patches now apply to different files, that is the case of the NTL GF2E implementation which has been split in a Python and a Cython file.\n\nSome pseudo Conway polys changed so that two doctests now fail (not corrected in the patches cause I did not take the time to think about it, feel free to do it).\nAs these pseudo Conway polynomials are not unique, I'm not sure if the procedure to generate them is deterministic or to which point randomness comes into play and if the failing doctests are just due to some routine called during the generation which may give a different result since the patches were originally written.\n\nNot really sure how to cast restriction on the is_square and squarefree_decomposition methods, nor what I've changed makes sense, I've come up with this quickly, feel free to correct it.\nThe basic problem was that now Sage supports function fields where we have no p-th roots and that raised an AttributeError when calling is_square which called squarefree_decomposition in some doctests.\n\nThe doc now builds ok and looks nice (although I did not have LaTeX on my computer), but may need some revamping.\nNonetheless it would be great to get this in quickly.",
+    "body": "Attachment [trac_8335-doc-5.7.beta3.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-doc-5.7.beta3.patch) by jpflori created at 2013-02-08 14:40:16\n\nThese patches were quite old and things have moved around since they were written.\nAs a consequence, part of the old patches now apply to different files, that is the case of the NTL GF2E implementation which has been split in a Python and a Cython file.\n\nSome pseudo Conway polys changed so that two doctests now fail (not corrected in the patches cause I did not take the time to think about it, feel free to do it).\nAs these pseudo Conway polynomials are not unique, I'm not sure if the procedure to generate them is deterministic or to which point randomness comes into play and if the failing doctests are just due to some routine called during the generation which may give a different result since the patches were originally written.\n\nNot really sure how to cast restriction on the is_square and squarefree_decomposition methods, nor what I've changed makes sense, I've come up with this quickly, feel free to correct it.\nThe basic problem was that now Sage supports function fields where we have no p-th roots and that raised an AttributeError when calling is_square which called squarefree_decomposition in some doctests.\n\nThe doc now builds ok and looks nice (although I did not have LaTeX on my computer), but may need some revamping.\nNonetheless it would be great to get this in quickly.",
     "created_at": "2013-02-08T14:40:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -458,7 +458,7 @@ archive/issue_comments_074299.json:
 }
 ```
 
-Attachment
+Attachment [trac_8335-doc-5.7.beta3.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-doc-5.7.beta3.patch) by jpflori created at 2013-02-08 14:40:16
 
 These patches were quite old and things have moved around since they were written.
 As a consequence, part of the old patches now apply to different files, that is the case of the NTL GF2E implementation which has been split in a Python and a Cython file.
@@ -533,7 +533,7 @@ Fixes
 archive/issue_comments_074303.json:
 ```json
 {
-    "body": "Attachment\n\nThere were problem doing coercion because Sage now tried to define algebraic extension of Integers(1) and failed on ArithmeticError when trying 0^0, or depth of recursion if that was changed to return 1.\n\nI've added an extension method to the IntegerModring_generic class to handle separatly this ring.\n\nDid not check everything is fine though.",
+    "body": "Attachment [trac_8335-doc-5.7.b3.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-doc-5.7.b3.patch) by jpflori created at 2013-02-09 13:59:21\n\nThere were problem doing coercion because Sage now tried to define algebraic extension of Integers(1) and failed on ArithmeticError when trying 0^0, or depth of recursion if that was changed to return 1.\n\nI've added an extension method to the IntegerModring_generic class to handle separatly this ring.\n\nDid not check everything is fine though.",
     "created_at": "2013-02-09T13:59:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -542,7 +542,7 @@ archive/issue_comments_074303.json:
 }
 ```
 
-Attachment
+Attachment [trac_8335-doc-5.7.b3.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-doc-5.7.b3.patch) by jpflori created at 2013-02-09 13:59:21
 
 There were problem doing coercion because Sage now tried to define algebraic extension of Integers(1) and failed on ArithmeticError when trying 0^0, or depth of recursion if that was changed to return 1.
 
@@ -808,7 +808,7 @@ The doctests which changed were surely not caused by different randomness but be
 archive/issue_comments_074317.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8335-finite_field_coerce-5.7.b4.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-finite_field_coerce-5.7.b4.patch) by jpflori created at 2013-02-21 21:22:02",
     "created_at": "2013-02-21T21:22:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -817,7 +817,7 @@ archive/issue_comments_074317.json:
 }
 ```
 
-Attachment
+Attachment [trac_8335-finite_field_coerce-5.7.b4.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-finite_field_coerce-5.7.b4.patch) by jpflori created at 2013-02-21 21:22:02
 
 
 
@@ -826,7 +826,7 @@ Attachment
 archive/issue_comments_074318.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8335-pseudo_conway-5.7.b4.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-pseudo_conway-5.7.b4.patch) by jpflori created at 2013-02-21 21:25:06",
     "created_at": "2013-02-21T21:25:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -835,7 +835,7 @@ archive/issue_comments_074318.json:
 }
 ```
 
-Attachment
+Attachment [trac_8335-pseudo_conway-5.7.b4.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-pseudo_conway-5.7.b4.patch) by jpflori created at 2013-02-21 21:25:06
 
 
 
@@ -844,7 +844,7 @@ Attachment
 archive/issue_comments_074319.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8335-doc-5.7.b4.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-doc-5.7.b4.patch) by jpflori created at 2013-02-21 22:44:18",
     "created_at": "2013-02-21T22:44:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -853,7 +853,7 @@ archive/issue_comments_074319.json:
 }
 ```
 
-Attachment
+Attachment [trac_8335-doc-5.7.b4.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-doc-5.7.b4.patch) by jpflori created at 2013-02-21 22:44:18
 
 
 
@@ -862,7 +862,7 @@ Attachment
 archive/issue_comments_074320.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8335-pseudo_conway-5.8.b0.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-pseudo_conway-5.8.b0.patch) by jpflori created at 2013-02-22 10:50:32",
     "created_at": "2013-02-22T10:50:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -871,7 +871,7 @@ archive/issue_comments_074320.json:
 }
 ```
 
-Attachment
+Attachment [trac_8335-pseudo_conway-5.8.b0.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-pseudo_conway-5.8.b0.patch) by jpflori created at 2013-02-22 10:50:32
 
 
 
@@ -880,7 +880,7 @@ Attachment
 archive/issue_comments_074321.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8335-finite_field_coerce-5.8.b0.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-finite_field_coerce-5.8.b0.patch) by jpflori created at 2013-02-22 10:50:47",
     "created_at": "2013-02-22T10:50:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -889,7 +889,7 @@ archive/issue_comments_074321.json:
 }
 ```
 
-Attachment
+Attachment [trac_8335-finite_field_coerce-5.8.b0.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-finite_field_coerce-5.8.b0.patch) by jpflori created at 2013-02-22 10:50:47
 
 
 
@@ -976,7 +976,7 @@ Awesome!  I will take a look this weekend.
 archive/issue_comments_074326.json:
 ```json
 {
-    "body": "Attachment\n\nPrevious version was not qrefreshed...",
+    "body": "Attachment [trac_8335-fixes-5.8.b0.2.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-fixes-5.8.b0.2.patch) by jpflori created at 2013-02-22 12:37:14\n\nPrevious version was not qrefreshed...",
     "created_at": "2013-02-22T12:37:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -985,7 +985,7 @@ archive/issue_comments_074326.json:
 }
 ```
 
-Attachment
+Attachment [trac_8335-fixes-5.8.b0.2.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-fixes-5.8.b0.2.patch) by jpflori created at 2013-02-22 12:37:14
 
 Previous version was not qrefreshed...
 
@@ -996,7 +996,7 @@ Previous version was not qrefreshed...
 archive/issue_comments_074327.json:
 ```json
 {
-    "body": "Attachment\n\nShould really be ok now... sorry for the noise.",
+    "body": "Attachment [trac_8335-fixes-5.8.b0.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-fixes-5.8.b0.patch) by jpflori created at 2013-02-22 13:32:51\n\nShould really be ok now... sorry for the noise.",
     "created_at": "2013-02-22T13:32:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -1005,7 +1005,7 @@ archive/issue_comments_074327.json:
 }
 ```
 
-Attachment
+Attachment [trac_8335-fixes-5.8.b0.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-fixes-5.8.b0.patch) by jpflori created at 2013-02-22 13:32:51
 
 Should really be ok now... sorry for the noise.
 
@@ -1129,7 +1129,7 @@ Not sure what the patchbot complains about, missing docstrings?
 archive/issue_comments_074333.json:
 ```json
 {
-    "body": "Attachment\n\nApply trac_8335-pseudo_conway-5.8.b0.patch trac_8335-finite_field_coerce-5.8.b0.patch trac_8335-fixes-5.10.b3.patch",
+    "body": "Attachment [trac_8335-pseudo_conway-5.10.b3.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-pseudo_conway-5.10.b3.patch) by saraedum created at 2013-05-16 13:13:47\n\nApply trac_8335-pseudo_conway-5.8.b0.patch trac_8335-finite_field_coerce-5.8.b0.patch trac_8335-fixes-5.10.b3.patch",
     "created_at": "2013-05-16T13:13:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -1138,7 +1138,7 @@ archive/issue_comments_074333.json:
 }
 ```
 
-Attachment
+Attachment [trac_8335-pseudo_conway-5.10.b3.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-pseudo_conway-5.10.b3.patch) by saraedum created at 2013-05-16 13:13:47
 
 Apply trac_8335-pseudo_conway-5.8.b0.patch trac_8335-finite_field_coerce-5.8.b0.patch trac_8335-fixes-5.10.b3.patch
 
@@ -1407,7 +1407,7 @@ No idea, I'll check tomorrow.
 archive/issue_comments_074340.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8335-fixes-5.11.b1.2.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-fixes-5.11.b1.2.patch) by jpflori created at 2013-06-18 14:24:00",
     "created_at": "2013-06-18T14:24:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -1416,7 +1416,7 @@ archive/issue_comments_074340.json:
 }
 ```
 
-Attachment
+Attachment [trac_8335-fixes-5.11.b1.2.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-fixes-5.11.b1.2.patch) by jpflori created at 2013-06-18 14:24:00
 
 
 
@@ -1920,7 +1920,7 @@ So I just removed the hack forcing the use of pseudo-Conway polynomials.
 archive/issue_comments_074364.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8335-fixes-5.11.b1.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-fixes-5.11.b1.patch) by caruso created at 2013-06-26 08:24:43",
     "created_at": "2013-06-26T08:24:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -1929,7 +1929,7 @@ archive/issue_comments_074364.json:
 }
 ```
 
-Attachment
+Attachment [trac_8335-fixes-5.11.b1.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-fixes-5.11.b1.patch) by caruso created at 2013-06-26 08:24:43
 
 
 
@@ -2238,7 +2238,7 @@ I'll upload a fixed patch when I make sure no tests fail.
 archive/issue_comments_074374.json:
 ```json
 {
-    "body": "Attachment\n\nI have some failing tests on top of 5.11.b3 but they seem completely unrelated (something with get_test_shell() and I did not test a vanilla install, so they were surely there without these patches).",
+    "body": "Attachment [trac_8335-fixes-5.11.b3.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-fixes-5.11.b3.patch) by jpflori created at 2013-06-26 16:14:24\n\nI have some failing tests on top of 5.11.b3 but they seem completely unrelated (something with get_test_shell() and I did not test a vanilla install, so they were surely there without these patches).",
     "created_at": "2013-06-26T16:14:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -2247,7 +2247,7 @@ archive/issue_comments_074374.json:
 }
 ```
 
-Attachment
+Attachment [trac_8335-fixes-5.11.b3.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-fixes-5.11.b3.patch) by jpflori created at 2013-06-26 16:14:24
 
 I have some failing tests on top of 5.11.b3 but they seem completely unrelated (something with get_test_shell() and I did not test a vanilla install, so they were surely there without these patches).
 
@@ -2631,7 +2631,7 @@ Note it does not include anything from [attachment:trac_8335-fixes-5.11.b3.patch
 archive/issue_comments_074389.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8335-pseudo_conway-fixes.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-pseudo_conway-fixes.patch) by jpflori created at 2013-07-19 14:30:41",
     "created_at": "2013-07-19T14:30:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -2640,7 +2640,7 @@ archive/issue_comments_074389.json:
 }
 ```
 
-Attachment
+Attachment [trac_8335-pseudo_conway-fixes.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-pseudo_conway-fixes.patch) by jpflori created at 2013-07-19 14:30:41
 
 
 
@@ -2767,7 +2767,7 @@ to work on during Sage Days 51
 archive/issue_comments_074396.json:
 ```json
 {
-    "body": "Attachment\n\nunified, rebased and cleaned up",
+    "body": "Attachment [trac_8335_sd51.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335_sd51.patch) by pbruin created at 2013-07-29 11:48:52\n\nunified, rebased and cleaned up",
     "created_at": "2013-07-29T11:48:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -2776,7 +2776,7 @@ archive/issue_comments_074396.json:
 }
 ```
 
-Attachment
+Attachment [trac_8335_sd51.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335_sd51.patch) by pbruin created at 2013-07-29 11:48:52
 
 unified, rebased and cleaned up
 
@@ -2787,7 +2787,7 @@ unified, rebased and cleaned up
 archive/issue_comments_074397.json:
 ```json
 {
-    "body": "Attachment\n\nBesides everything else, the latest patch moves `_coerce_map_from_()` from the various finite field implementations to the `FiniteField` base class; it is now implementation-independent.  For this reason, this ticket now depends on #12142.  Various other changes have been made.\n\nThe syntax for constructing finite fields using Conway polynomials that admit automatic coercion is now\n\n```\nsage: F.<a> = FiniteField(5^3, conway=True, prefix='z')\n```\n\nThis is not too pretty, but it is meant as a temporary solution until we have algebraic closures of finite fields.\n\nOlder patches on this ticket contained various changes that were in older attachments and that do not seem immediately relevant to this ticket.  I deleted those changes that seemed superfluous and kept those that I thought could be necessary after all.\n\nThis ticket should be reviewed once #14958 is done.\n\nFor patchbot:\n\n```\napply trac_8335-finite_field_coerce-5.11.b3.patch\n```\n",
+    "body": "Attachment [trac_8335-finite_field_coerce-5.11.b3.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-finite_field_coerce-5.11.b3.patch) by pbruin created at 2013-07-29 12:08:49\n\nBesides everything else, the latest patch moves `_coerce_map_from_()` from the various finite field implementations to the `FiniteField` base class; it is now implementation-independent.  For this reason, this ticket now depends on #12142.  Various other changes have been made.\n\nThe syntax for constructing finite fields using Conway polynomials that admit automatic coercion is now\n\n```\nsage: F.<a> = FiniteField(5^3, conway=True, prefix='z')\n```\n\nThis is not too pretty, but it is meant as a temporary solution until we have algebraic closures of finite fields.\n\nOlder patches on this ticket contained various changes that were in older attachments and that do not seem immediately relevant to this ticket.  I deleted those changes that seemed superfluous and kept those that I thought could be necessary after all.\n\nThis ticket should be reviewed once #14958 is done.\n\nFor patchbot:\n\n```\napply trac_8335-finite_field_coerce-5.11.b3.patch\n```\n",
     "created_at": "2013-07-29T12:08:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -2796,7 +2796,7 @@ archive/issue_comments_074397.json:
 }
 ```
 
-Attachment
+Attachment [trac_8335-finite_field_coerce-5.11.b3.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-finite_field_coerce-5.11.b3.patch) by pbruin created at 2013-07-29 12:08:49
 
 Besides everything else, the latest patch moves `_coerce_map_from_()` from the various finite field implementations to the `FiniteField` base class; it is now implementation-independent.  For this reason, this ticket now depends on #12142.  Various other changes have been made.
 
@@ -2880,7 +2880,7 @@ Rebased on top of #14888.
 archive/issue_comments_074401.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8335-finite_field_coerce-5.11.b3-14888.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-finite_field_coerce-5.11.b3-14888.patch) by jpflori created at 2013-07-30 12:38:20",
     "created_at": "2013-07-30T12:38:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -2889,7 +2889,7 @@ archive/issue_comments_074401.json:
 }
 ```
 
-Attachment
+Attachment [trac_8335-finite_field_coerce-5.11.b3-14888.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-finite_field_coerce-5.11.b3-14888.patch) by jpflori created at 2013-07-30 12:38:20
 
 
 
@@ -2956,7 +2956,7 @@ So either we have to store the lattice in the finite field to keep it alive and 
 archive/issue_comments_074405.json:
 ```json
 {
-    "body": "Attachment\n\nName changes in #14958.",
+    "body": "Attachment [trac_8335-rebase_14958.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-rebase_14958.patch) by jpflori created at 2013-07-30 12:57:09\n\nName changes in #14958.",
     "created_at": "2013-07-30T12:57:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -2965,7 +2965,7 @@ archive/issue_comments_074405.json:
 }
 ```
 
-Attachment
+Attachment [trac_8335-rebase_14958.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-rebase_14958.patch) by jpflori created at 2013-07-30 12:57:09
 
 Name changes in #14958.
 
@@ -3136,7 +3136,7 @@ use only (non-pseudo-)Conway polynomials
 archive/issue_comments_074413.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8335-no_pseudo.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-no_pseudo.patch) by pbruin created at 2013-08-02 11:06:44",
     "created_at": "2013-08-02T11:06:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -3145,7 +3145,7 @@ archive/issue_comments_074413.json:
 }
 ```
 
-Attachment
+Attachment [trac_8335-no_pseudo.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-no_pseudo.patch) by pbruin created at 2013-08-02 11:06:44
 
 
 

@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7419
 archive/issue_comments_062429.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-7419-implicit-z-range.patch](tarball://root/attachments/some-uuid/ticket7419/trac-7419-implicit-z-range.patch) by jason created at 2009-11-09 17:47:53",
     "created_at": "2009-11-09T17:47:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7419",
     "type": "issue_comment",
@@ -53,7 +53,7 @@ archive/issue_comments_062429.json:
 }
 ```
 
-Attachment
+Attachment [trac-7419-implicit-z-range.patch](tarball://root/attachments/some-uuid/ticket7419/trac-7419-implicit-z-range.patch) by jason created at 2009-11-09 17:47:53
 
 
 
@@ -134,7 +134,7 @@ Based on 4.2.1.alpha0, apply only this patch.
 archive/issue_comments_062434.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-7419-implicit-z-range-review.patch](tarball://root/attachments/some-uuid/ticket7419/trac-7419-implicit-z-range-review.patch) by kcrisman created at 2009-11-10 15:04:02",
     "created_at": "2009-11-10T15:04:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7419",
     "type": "issue_comment",
@@ -143,7 +143,7 @@ archive/issue_comments_062434.json:
 }
 ```
 
-Attachment
+Attachment [trac-7419-implicit-z-range-review.patch](tarball://root/attachments/some-uuid/ticket7419/trac-7419-implicit-z-range-review.patch) by kcrisman created at 2009-11-10 15:04:02
 
 
 

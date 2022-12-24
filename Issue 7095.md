@@ -1328,7 +1328,7 @@ Changing status from new to needs_review.
 archive/issue_comments_058659.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7095.patch](tarball://root/attachments/some-uuid/ticket7095/trac_7095.patch) by craigcitro created at 2010-01-14 20:12:15",
     "created_at": "2010-01-14T20:12:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
@@ -1337,7 +1337,7 @@ archive/issue_comments_058659.json:
 }
 ```
 
-Attachment
+Attachment [trac_7095.patch](tarball://root/attachments/some-uuid/ticket7095/trac_7095.patch) by craigcitro created at 2010-01-14 20:12:15
 
 
 
@@ -1368,7 +1368,7 @@ So far, though, everything looks good: I did "sage -f ..." for the two spkg's he
 archive/issue_comments_058661.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of trac_7095.patch",
+    "body": "Attachment [trac_7095-ref.patch](tarball://root/attachments/some-uuid/ticket7095/trac_7095-ref.patch) by jhpalmieri created at 2010-01-14 22:49:37\n\napply on top of trac_7095.patch",
     "created_at": "2010-01-14T22:49:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
@@ -1377,7 +1377,7 @@ archive/issue_comments_058661.json:
 }
 ```
 
-Attachment
+Attachment [trac_7095-ref.patch](tarball://root/attachments/some-uuid/ticket7095/trac_7095-ref.patch) by jhpalmieri created at 2010-01-14 22:49:37
 
 apply on top of trac_7095.patch
 
@@ -1388,7 +1388,7 @@ apply on top of trac_7095.patch
 archive/issue_comments_058662.json:
 ```json
 {
-    "body": "Attachment\n\nfor reference only; do not apply",
+    "body": "Attachment [python-2.6.4.p3.patch](tarball://root/attachments/some-uuid/ticket7095/python-2.6.4.p3.patch) by jhpalmieri created at 2010-01-14 22:49:54\n\nfor reference only; do not apply",
     "created_at": "2010-01-14T22:49:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
@@ -1397,7 +1397,7 @@ archive/issue_comments_058662.json:
 }
 ```
 
-Attachment
+Attachment [python-2.6.4.p3.patch](tarball://root/attachments/some-uuid/ticket7095/python-2.6.4.p3.patch) by jhpalmieri created at 2010-01-14 22:49:54
 
 for reference only; do not apply
 
@@ -1986,7 +1986,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_058688.json:
 ```json
 {
-    "body": "Attachment\n\nApparently I just forgot to make these changes last night. Anyway, I've attached a patch for the `$SAGE_ROOT/local/bin` repo that puts the changes in `sage-env`, and I've posted a new python spkg (which simply removes those lines) here:\n\n  http://sage.math.washington.edu/home/craigcitro/sage/SPKGs/python-2.6.4.p4.spkg\n\nThis should do it ... famous last words. :) The only problem would be if `sage-env` isn't sourced before we build the python spkg, but I don't think that's the case. (Reality will correct me if I'm wrong.)",
+    "body": "Attachment [sage-scripts_trac_7095.patch](tarball://root/attachments/some-uuid/ticket7095/sage-scripts_trac_7095.patch) by craigcitro created at 2010-01-17 18:11:39\n\nApparently I just forgot to make these changes last night. Anyway, I've attached a patch for the `$SAGE_ROOT/local/bin` repo that puts the changes in `sage-env`, and I've posted a new python spkg (which simply removes those lines) here:\n\n  http://sage.math.washington.edu/home/craigcitro/sage/SPKGs/python-2.6.4.p4.spkg\n\nThis should do it ... famous last words. :) The only problem would be if `sage-env` isn't sourced before we build the python spkg, but I don't think that's the case. (Reality will correct me if I'm wrong.)",
     "created_at": "2010-01-17T18:11:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
@@ -1995,7 +1995,7 @@ archive/issue_comments_058688.json:
 }
 ```
 
-Attachment
+Attachment [sage-scripts_trac_7095.patch](tarball://root/attachments/some-uuid/ticket7095/sage-scripts_trac_7095.patch) by craigcitro created at 2010-01-17 18:11:39
 
 Apparently I just forgot to make these changes last night. Anyway, I've attached a patch for the `$SAGE_ROOT/local/bin` repo that puts the changes in `sage-env`, and I've posted a new python spkg (which simply removes those lines) here:
 
@@ -2048,7 +2048,7 @@ No sweat -- I actually didn't know there was a second copy. (Does sdist and/or b
 archive/issue_comments_058691.json:
 ```json
 {
-    "body": "Attachment\n\nCopy of sage-env that results from the attached sage-scripts patch",
+    "body": "Attachment [sage-env](tarball://root/attachments/some-uuid/ticket7095/sage-env) by craigcitro created at 2010-01-17 18:37:47\n\nCopy of sage-env that results from the attached sage-scripts patch",
     "created_at": "2010-01-17T18:37:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
@@ -2057,7 +2057,7 @@ archive/issue_comments_058691.json:
 }
 ```
 
-Attachment
+Attachment [sage-env](tarball://root/attachments/some-uuid/ticket7095/sage-env) by craigcitro created at 2010-01-17 18:37:47
 
 Copy of sage-env that results from the attached sage-scripts patch
 

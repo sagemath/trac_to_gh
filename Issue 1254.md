@@ -58,7 +58,7 @@ use this instead of the hg bundle linked to
 archive/issue_comments_007842.json:
 ```json
 {
-    "body": "Attachment\n\nI've refereed this -- it has some typos, and bad design, but this is fixed in hadamard.hg.",
+    "body": "Attachment [hadamard.hg](tarball://root/attachments/some-uuid/ticket1254/hadamard.hg) by was created at 2007-11-24 18:32:54\n\nI've refereed this -- it has some typos, and bad design, but this is fixed in hadamard.hg.",
     "created_at": "2007-11-24T18:32:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1254",
     "type": "issue_comment",
@@ -67,7 +67,7 @@ archive/issue_comments_007842.json:
 }
 ```
 
-Attachment
+Attachment [hadamard.hg](tarball://root/attachments/some-uuid/ticket1254/hadamard.hg) by was created at 2007-11-24 18:32:54
 
 I've refereed this -- it has some typos, and bad design, but this is fixed in hadamard.hg.
 

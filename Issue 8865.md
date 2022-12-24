@@ -55,7 +55,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8865
 archive/issue_comments_081468.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8865_fraction_field_keywords.patch](tarball://root/attachments/some-uuid/ticket8865/trac_8865_fraction_field_keywords.patch) by mguaypaq created at 2010-05-04 12:26:27",
     "created_at": "2010-05-04T12:26:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8865",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_081468.json:
 }
 ```
 
-Attachment
+Attachment [trac_8865_fraction_field_keywords.patch](tarball://root/attachments/some-uuid/ticket8865/trac_8865_fraction_field_keywords.patch) by mguaypaq created at 2010-05-04 12:26:27
 
 
 

@@ -45,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9152
 archive/issue_comments_085440.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [mpmath15fix.patch](tarball://root/attachments/some-uuid/ticket9152/mpmath15fix.patch) by fredrik.johansson created at 2010-06-05 17:45:13",
     "created_at": "2010-06-05T17:45:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9152",
     "type": "issue_comment",
@@ -54,7 +54,7 @@ archive/issue_comments_085440.json:
 }
 ```
 
-Attachment
+Attachment [mpmath15fix.patch](tarball://root/attachments/some-uuid/ticket9152/mpmath15fix.patch) by fredrik.johansson created at 2010-06-05 17:45:13
 
 
 
@@ -63,7 +63,7 @@ Attachment
 archive/issue_comments_085441.json:
 ```json
 {
-    "body": "Attachment\n\nI've released mpmath-0.15; providing spkg as attachment.",
+    "body": "Attachment [mpmath-0.15.spkg](tarball://root/attachments/some-uuid/ticket9152/mpmath-0.15.spkg) by fredrik.johansson created at 2010-06-06 19:59:08\n\nI've released mpmath-0.15; providing spkg as attachment.",
     "created_at": "2010-06-06T19:59:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9152",
     "type": "issue_comment",
@@ -72,7 +72,7 @@ archive/issue_comments_085441.json:
 }
 ```
 
-Attachment
+Attachment [mpmath-0.15.spkg](tarball://root/attachments/some-uuid/ticket9152/mpmath-0.15.spkg) by fredrik.johansson created at 2010-06-06 19:59:08
 
 I've released mpmath-0.15; providing spkg as attachment.
 
@@ -135,7 +135,7 @@ Also, I think it's considered best to not post spkgs as ticket attachments -- us
 archive/issue_comments_085443.json:
 ```json
 {
-    "body": "Attachment\n\nsmall fix on top of mpmath15fix.patch",
+    "body": "Attachment [mpmath15fixfix.patch](tarball://root/attachments/some-uuid/ticket9152/mpmath15fixfix.patch) by fredrik.johansson created at 2010-06-10 00:45:06\n\nsmall fix on top of mpmath15fix.patch",
     "created_at": "2010-06-10T00:45:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9152",
     "type": "issue_comment",
@@ -144,7 +144,7 @@ archive/issue_comments_085443.json:
 }
 ```
 
-Attachment
+Attachment [mpmath15fixfix.patch](tarball://root/attachments/some-uuid/ticket9152/mpmath15fixfix.patch) by fredrik.johansson created at 2010-06-10 00:45:06
 
 small fix on top of mpmath15fix.patch
 

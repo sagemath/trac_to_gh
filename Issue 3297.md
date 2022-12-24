@@ -56,7 +56,7 @@ new patch folder
 archive/issue_comments_022804.json:
 ```json
 {
-    "body": "Attachment\n\npatch to spkg-install",
+    "body": "Attachment [spkg-install.patch](tarball://root/attachments/some-uuid/ticket3297/spkg-install.patch) by fbissey created at 2008-05-25 09:21:53\n\npatch to spkg-install",
     "created_at": "2008-05-25T09:21:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3297",
     "type": "issue_comment",
@@ -65,7 +65,7 @@ archive/issue_comments_022804.json:
 }
 ```
 
-Attachment
+Attachment [spkg-install.patch](tarball://root/attachments/some-uuid/ticket3297/spkg-install.patch) by fbissey created at 2008-05-25 09:21:53
 
 patch to spkg-install
 

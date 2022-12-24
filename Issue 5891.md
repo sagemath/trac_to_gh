@@ -205,7 +205,7 @@ Changing status from new to assigned.
 archive/issue_comments_046583.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [categories-framework-nt.patch](tarball://root/attachments/some-uuid/ticket5891/categories-framework-nt.patch) by nthiery created at 2009-05-21 18:54:47",
     "created_at": "2009-05-21T18:54:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5891",
     "type": "issue_comment",
@@ -214,7 +214,7 @@ archive/issue_comments_046583.json:
 }
 ```
 
-Attachment
+Attachment [categories-framework-nt.patch](tarball://root/attachments/some-uuid/ticket5891/categories-framework-nt.patch) by nthiery created at 2009-05-21 18:54:47
 
 
 
@@ -223,7 +223,7 @@ Attachment
 archive/issue_comments_046584.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [categories-fixsagelib-nt.patch](tarball://root/attachments/some-uuid/ticket5891/categories-fixsagelib-nt.patch) by nthiery created at 2009-05-21 18:56:51",
     "created_at": "2009-05-21T18:56:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5891",
     "type": "issue_comment",
@@ -232,7 +232,7 @@ archive/issue_comments_046584.json:
 }
 ```
 
-Attachment
+Attachment [categories-fixsagelib-nt.patch](tarball://root/attachments/some-uuid/ticket5891/categories-fixsagelib-nt.patch) by nthiery created at 2009-05-21 18:56:51
 
 
 
@@ -241,7 +241,7 @@ Attachment
 archive/issue_comments_046585.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [categories-enumeratedsets-nt.patch](tarball://root/attachments/some-uuid/ticket5891/categories-enumeratedsets-nt.patch) by nthiery created at 2009-05-21 18:57:12",
     "created_at": "2009-05-21T18:57:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5891",
     "type": "issue_comment",
@@ -250,7 +250,7 @@ archive/issue_comments_046585.json:
 }
 ```
 
-Attachment
+Attachment [categories-enumeratedsets-nt.patch](tarball://root/attachments/some-uuid/ticket5891/categories-enumeratedsets-nt.patch) by nthiery created at 2009-05-21 18:57:12
 
 
 
@@ -259,7 +259,7 @@ Attachment
 archive/issue_comments_046586.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [categories-combinat-nt.patch](tarball://root/attachments/some-uuid/ticket5891/categories-combinat-nt.patch) by nthiery created at 2009-05-21 18:57:27",
     "created_at": "2009-05-21T18:57:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5891",
     "type": "issue_comment",
@@ -268,7 +268,7 @@ archive/issue_comments_046586.json:
 }
 ```
 
-Attachment
+Attachment [categories-combinat-nt.patch](tarball://root/attachments/some-uuid/ticket5891/categories-combinat-nt.patch) by nthiery created at 2009-05-21 18:57:27
 
 
 
@@ -277,7 +277,7 @@ Attachment
 archive/issue_comments_046587.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [categories-numberfield_homset-nt.patch](tarball://root/attachments/some-uuid/ticket5891/categories-numberfield_homset-nt.patch) by nthiery created at 2009-05-21 18:57:48",
     "created_at": "2009-05-21T18:57:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5891",
     "type": "issue_comment",
@@ -286,7 +286,7 @@ archive/issue_comments_046587.json:
 }
 ```
 
-Attachment
+Attachment [categories-numberfield_homset-nt.patch](tarball://root/attachments/some-uuid/ticket5891/categories-numberfield_homset-nt.patch) by nthiery created at 2009-05-21 18:57:48
 
 
 

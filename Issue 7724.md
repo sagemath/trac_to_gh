@@ -361,7 +361,7 @@ use extend instead of append improves performance
 archive/issue_comments_066370.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7724_iterator-rebased.patch](tarball://root/attachments/some-uuid/ticket7724/trac_7724_iterator-rebased.patch) by rlm created at 2010-01-02 16:01:11",
     "created_at": "2010-01-02T16:01:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7724",
     "type": "issue_comment",
@@ -370,7 +370,7 @@ archive/issue_comments_066370.json:
 }
 ```
 
-Attachment
+Attachment [trac_7724_iterator-rebased.patch](tarball://root/attachments/some-uuid/ticket7724/trac_7724_iterator-rebased.patch) by rlm created at 2010-01-02 16:01:11
 
 
 
@@ -419,7 +419,7 @@ archive/issue_comments_066372.json:
 archive/issue_comments_066373.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7724-ref.patch](tarball://root/attachments/some-uuid/ticket7724/trac_7724-ref.patch) by rlm created at 2010-01-02 16:18:40",
     "created_at": "2010-01-02T16:18:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7724",
     "type": "issue_comment",
@@ -428,7 +428,7 @@ archive/issue_comments_066373.json:
 }
 ```
 
-Attachment
+Attachment [trac_7724-ref.patch](tarball://root/attachments/some-uuid/ticket7724/trac_7724-ref.patch) by rlm created at 2010-01-02 16:18:40
 
 
 

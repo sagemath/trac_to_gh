@@ -83,7 +83,7 @@ Changing status from new to needs_review.
 archive/issue_comments_059377.json:
 ```json
 {
-    "body": "Attachment\n\nA revised .spkg can be found at \n\nhttp://boxen.math.washington.edu/home/kirkby/portability/gd-2.0.35.p3/gd-2.0.35.p3.spkg",
+    "body": "Attachment [7162.patch](tarball://root/attachments/some-uuid/ticket7162/7162.patch) by drkirkby created at 2010-01-02 18:49:34\n\nA revised .spkg can be found at \n\nhttp://boxen.math.washington.edu/home/kirkby/portability/gd-2.0.35.p3/gd-2.0.35.p3.spkg",
     "created_at": "2010-01-02T18:49:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7162",
     "type": "issue_comment",
@@ -92,7 +92,7 @@ archive/issue_comments_059377.json:
 }
 ```
 
-Attachment
+Attachment [7162.patch](tarball://root/attachments/some-uuid/ticket7162/7162.patch) by drkirkby created at 2010-01-02 18:49:34
 
 A revised .spkg can be found at 
 

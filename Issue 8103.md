@@ -69,7 +69,7 @@ Changing status from new to needs_review.
 archive/issue_comments_071097.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached a patch for testing and review.",
+    "body": "Attachment [trac_8103-pub_worksheet_cmd.patch](tarball://root/attachments/some-uuid/ticket8103/trac_8103-pub_worksheet_cmd.patch) by mpatel created at 2010-01-28 04:04:57\n\nI've attached a patch for testing and review.",
     "created_at": "2010-01-28T04:04:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8103",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_071097.json:
 }
 ```
 
-Attachment
+Attachment [trac_8103-pub_worksheet_cmd.patch](tarball://root/attachments/some-uuid/ticket8103/trac_8103-pub_worksheet_cmd.patch) by mpatel created at 2010-01-28 04:04:57
 
 I've attached a patch for testing and review.
 
@@ -125,7 +125,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_071100.json:
 ```json
 {
-    "body": "Attachment\n\nLess draconian restrictions.  Replaces previous.",
+    "body": "Attachment [trac_8103-pub_worksheet_cmd.2.patch](tarball://root/attachments/some-uuid/ticket8103/trac_8103-pub_worksheet_cmd.2.patch) by mpatel created at 2010-01-28 07:09:56\n\nLess draconian restrictions.  Replaces previous.",
     "created_at": "2010-01-28T07:09:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8103",
     "type": "issue_comment",
@@ -134,7 +134,7 @@ archive/issue_comments_071100.json:
 }
 ```
 
-Attachment
+Attachment [trac_8103-pub_worksheet_cmd.2.patch](tarball://root/attachments/some-uuid/ticket8103/trac_8103-pub_worksheet_cmd.2.patch) by mpatel created at 2010-01-28 07:09:56
 
 Less draconian restrictions.  Replaces previous.
 
@@ -181,7 +181,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_071103.json:
 ```json
 {
-    "body": "Attachment\n\nCloser to the truth.  Replaces previous.",
+    "body": "Attachment [trac_8103-pub_worksheet_cmd.3.patch](tarball://root/attachments/some-uuid/ticket8103/trac_8103-pub_worksheet_cmd.3.patch) by mpatel created at 2010-01-28 07:20:47\n\nCloser to the truth.  Replaces previous.",
     "created_at": "2010-01-28T07:20:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8103",
     "type": "issue_comment",
@@ -190,7 +190,7 @@ archive/issue_comments_071103.json:
 }
 ```
 
-Attachment
+Attachment [trac_8103-pub_worksheet_cmd.3.patch](tarball://root/attachments/some-uuid/ticket8103/trac_8103-pub_worksheet_cmd.3.patch) by mpatel created at 2010-01-28 07:20:47
 
 Closer to the truth.  Replaces previous.
 

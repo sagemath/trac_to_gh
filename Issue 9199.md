@@ -105,7 +105,7 @@ Changing status from new to needs_work.
 archive/issue_comments_086045.json:
 ```json
 {
-    "body": "Attachment\n\nhere is the patch that fixes the fill=False issue.  It breaks fill=None (however, fill=None isn't really that natural).\n\nInteresting issue...when running the doctests for this patch, the doctest timed out and then crashed.\n---------------------------------------\nTrying:\nplot(x**Integer(3),(x,Integer(1),Integer(2))) # this one does not###line\n2276:_sage_ >>> plot(x^3,(x,1,2)) # this one does not\nExpecting nothing\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\n[361.7 s]\n--------------------------------------- \nwhen plotting this in sagenb, it works fine.",
+    "body": "Attachment [trac_9199_plot_fill.patch](tarball://root/attachments/some-uuid/ticket9199/trac_9199_plot_fill.patch) by ryan created at 2010-08-03 06:34:10\n\nhere is the patch that fixes the fill=False issue.  It breaks fill=None (however, fill=None isn't really that natural).\n\nInteresting issue...when running the doctests for this patch, the doctest timed out and then crashed.\n---------------------------------------\nTrying:\nplot(x**Integer(3),(x,Integer(1),Integer(2))) # this one does not###line\n2276:_sage_ >>> plot(x^3,(x,1,2)) # this one does not\nExpecting nothing\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\n[361.7 s]\n--------------------------------------- \nwhen plotting this in sagenb, it works fine.",
     "created_at": "2010-08-03T06:34:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9199",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_086045.json:
 }
 ```
 
-Attachment
+Attachment [trac_9199_plot_fill.patch](tarball://root/attachments/some-uuid/ticket9199/trac_9199_plot_fill.patch) by ryan created at 2010-08-03 06:34:10
 
 here is the patch that fixes the fill=False issue.  It breaks fill=None (however, fill=None isn't really that natural).
 
@@ -223,7 +223,7 @@ I'll add it back as soon as I get back to my sage computer.
 archive/issue_comments_086049.json:
 ```json
 {
-    "body": "Attachment\n\nupdate: fill=None works too!",
+    "body": "Attachment [trac_9199_plot_fill.2.patch](tarball://root/attachments/some-uuid/ticket9199/trac_9199_plot_fill.2.patch) by ryan created at 2010-08-04 21:56:22\n\nupdate: fill=None works too!",
     "created_at": "2010-08-04T21:56:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9199",
     "type": "issue_comment",
@@ -232,7 +232,7 @@ archive/issue_comments_086049.json:
 }
 ```
 
-Attachment
+Attachment [trac_9199_plot_fill.2.patch](tarball://root/attachments/some-uuid/ticket9199/trac_9199_plot_fill.2.patch) by ryan created at 2010-08-04 21:56:22
 
 update: fill=None works too!
 
@@ -279,7 +279,7 @@ How did you get that second patch (i.e., how did you generated whatever you post
 archive/issue_comments_086052.json:
 ```json
 {
-    "body": "Attachment\n\nRebased to 4.5.2; apply only this patch",
+    "body": "Attachment [trac_9199_plot_fill-rebased.patch](tarball://root/attachments/some-uuid/ticket9199/trac_9199_plot_fill-rebased.patch) by jason created at 2010-08-29 02:53:15\n\nRebased to 4.5.2; apply only this patch",
     "created_at": "2010-08-29T02:53:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9199",
     "type": "issue_comment",
@@ -288,7 +288,7 @@ archive/issue_comments_086052.json:
 }
 ```
 
-Attachment
+Attachment [trac_9199_plot_fill-rebased.patch](tarball://root/attachments/some-uuid/ticket9199/trac_9199_plot_fill-rebased.patch) by jason created at 2010-08-29 02:53:15
 
 Rebased to 4.5.2; apply only this patch
 
@@ -362,7 +362,7 @@ Updated patch (with Sage 4.5.3)
 archive/issue_comments_086056.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:8 jason]:\n> I rebased your patch (your patch had the default color to be rgbcolor=(0,0,0) for some reason), and combined your two patches into one patch.  However, when I do:\n> \n> {{{\n> plot(x^2,(x,-1,1), fill=None)\n> \n> }}}\n> \n> I get filling (where I didn't before the patch).\n\nUpdated patch should fix this.",
+    "body": "Attachment [trac_9199_plot_fill.3.patch](tarball://root/attachments/some-uuid/ticket9199/trac_9199_plot_fill.3.patch) by ryan created at 2010-09-11 05:22:02\n\nReplying to [comment:8 jason]:\n> I rebased your patch (your patch had the default color to be rgbcolor=(0,0,0) for some reason), and combined your two patches into one patch.  However, when I do:\n> \n> {{{\n> plot(x^2,(x,-1,1), fill=None)\n> \n> }}}\n> \n> I get filling (where I didn't before the patch).\n\nUpdated patch should fix this.",
     "created_at": "2010-09-11T05:22:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9199",
     "type": "issue_comment",
@@ -371,7 +371,7 @@ archive/issue_comments_086056.json:
 }
 ```
 
-Attachment
+Attachment [trac_9199_plot_fill.3.patch](tarball://root/attachments/some-uuid/ticket9199/trac_9199_plot_fill.3.patch) by ryan created at 2010-09-11 05:22:02
 
 Replying to [comment:8 jason]:
 > I rebased your patch (your patch had the default color to be rgbcolor=(0,0,0) for some reason), and combined your two patches into one patch.  However, when I do:

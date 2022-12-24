@@ -120,7 +120,7 @@ William's suggestion above is not sufficient to actually test fpLLL; at least we
 archive/issue_comments_008631.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [fplll_doctests.patch](tarball://root/attachments/some-uuid/ticket1346/fplll_doctests.patch) by malb created at 2008-10-04 18:04:01",
     "created_at": "2008-10-04T18:04:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1346",
     "type": "issue_comment",
@@ -129,7 +129,7 @@ archive/issue_comments_008631.json:
 }
 ```
 
-Attachment
+Attachment [fplll_doctests.patch](tarball://root/attachments/some-uuid/ticket1346/fplll_doctests.patch) by malb created at 2008-10-04 18:04:01
 
 
 
@@ -237,7 +237,7 @@ Oh, yes, you're right. I forgot for a moment that b_i^* and b_{i+1}^* are orthog
 archive/issue_comments_008636.json:
 ```json
 {
-    "body": "Attachment\n\nI attached a new patch without that change to the norm check.",
+    "body": "Attachment [trac1346_lll_doctest2.patch](tarball://root/attachments/some-uuid/ticket1346/trac1346_lll_doctest2.patch) by wjp created at 2008-10-10 21:14:24\n\nI attached a new patch without that change to the norm check.",
     "created_at": "2008-10-10T21:14:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1346",
     "type": "issue_comment",
@@ -246,7 +246,7 @@ archive/issue_comments_008636.json:
 }
 ```
 
-Attachment
+Attachment [trac1346_lll_doctest2.patch](tarball://root/attachments/some-uuid/ticket1346/trac1346_lll_doctest2.patch) by wjp created at 2008-10-10 21:14:24
 
 I attached a new patch without that change to the norm check.
 

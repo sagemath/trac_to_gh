@@ -49,7 +49,7 @@ Cwitty pointed out that if you use the secure=False option, one gets logged on a
 archive/issue_comments_019757.json:
 ```json
 {
-    "body": "Attachment\n\nWorks perfectly.",
+    "body": "Attachment [simple_server_doctest.patch](tarball://root/attachments/some-uuid/ticket2876/simple_server_doctest.patch) by was created at 2008-04-11 23:45:07\n\nWorks perfectly.",
     "created_at": "2008-04-11T23:45:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2876",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_019757.json:
 }
 ```
 
-Attachment
+Attachment [simple_server_doctest.patch](tarball://root/attachments/some-uuid/ticket2876/simple_server_doctest.patch) by was created at 2008-04-11 23:45:07
 
 Works perfectly.
 

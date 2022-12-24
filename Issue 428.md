@@ -115,7 +115,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/428
 archive/issue_comments_002148.json:
 ```json
 {
-    "body": "Attachment\n\nfull install log for failed build",
+    "body": "Attachment [install.log.gz](tarball://root/attachments/some-uuid/ticket428/install.log.gz) by dmharvey created at 2007-08-15 16:30:48\n\nfull install log for failed build",
     "created_at": "2007-08-15T16:30:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/428",
     "type": "issue_comment",
@@ -124,7 +124,7 @@ archive/issue_comments_002148.json:
 }
 ```
 
-Attachment
+Attachment [install.log.gz](tarball://root/attachments/some-uuid/ticket428/install.log.gz) by dmharvey created at 2007-08-15 16:30:48
 
 full install log for failed build
 

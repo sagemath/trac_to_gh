@@ -47,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5287
 archive/issue_comments_040629.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch applied to my 3.3.rc2 merge tree does pass long doctests.\n\nCheers,\n\nMichael",
+    "body": "Attachment [better_sr.patch](tarball://root/attachments/some-uuid/ticket5287/better_sr.patch) by mabshoff created at 2009-02-17 21:55:46\n\nThis patch applied to my 3.3.rc2 merge tree does pass long doctests.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-17T21:55:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5287",
     "type": "issue_comment",
@@ -56,7 +56,7 @@ archive/issue_comments_040629.json:
 }
 ```
 
-Attachment
+Attachment [better_sr.patch](tarball://root/attachments/some-uuid/ticket5287/better_sr.patch) by mabshoff created at 2009-02-17 21:55:46
 
 This patch applied to my 3.3.rc2 merge tree does pass long doctests.
 
@@ -152,7 +152,7 @@ Right now many of the options aren't tested at all.
 archive/issue_comments_040631.json:
 ```json
 {
-    "body": "Attachment\n\naddresses referee's concerns",
+    "body": "Attachment [trac_5287_corrections.patch](tarball://root/attachments/some-uuid/ticket5287/trac_5287_corrections.patch) by malb created at 2009-02-18 11:16:37\n\naddresses referee's concerns",
     "created_at": "2009-02-18T11:16:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5287",
     "type": "issue_comment",
@@ -161,7 +161,7 @@ archive/issue_comments_040631.json:
 }
 ```
 
-Attachment
+Attachment [trac_5287_corrections.patch](tarball://root/attachments/some-uuid/ticket5287/trac_5287_corrections.patch) by malb created at 2009-02-18 11:16:37
 
 addresses referee's concerns
 

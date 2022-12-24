@@ -48,7 +48,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8963
 archive/issue_comments_082610.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch also adds a method called entries() which returns a list containing the entries of the tableau.  All tests pass and coverage for tableau.py is 100%.  The patch is based on sage-4.4.",
+    "body": "Attachment [trac_8963_row_stabilizer.patch](tarball://root/attachments/some-uuid/ticket8963/trac_8963_row_stabilizer.patch) by jdc created at 2010-05-14 15:41:34\n\nThe attached patch also adds a method called entries() which returns a list containing the entries of the tableau.  All tests pass and coverage for tableau.py is 100%.  The patch is based on sage-4.4.",
     "created_at": "2010-05-14T15:41:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8963",
     "type": "issue_comment",
@@ -57,7 +57,7 @@ archive/issue_comments_082610.json:
 }
 ```
 
-Attachment
+Attachment [trac_8963_row_stabilizer.patch](tarball://root/attachments/some-uuid/ticket8963/trac_8963_row_stabilizer.patch) by jdc created at 2010-05-14 15:41:34
 
 The attached patch also adds a method called entries() which returns a list containing the entries of the tableau.  All tests pass and coverage for tableau.py is 100%.  The patch is based on sage-4.4.
 

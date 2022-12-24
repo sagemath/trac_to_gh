@@ -67,7 +67,7 @@ Changing status from new to assigned.
 archive/issue_comments_059012.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch corrects the bug.",
+    "body": "Attachment [trac7119.patch](tarball://root/attachments/some-uuid/ticket7119/trac7119.patch) by klee created at 2009-10-05 04:59:59\n\nThe patch corrects the bug.",
     "created_at": "2009-10-05T04:59:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7119",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_059012.json:
 }
 ```
 
-Attachment
+Attachment [trac7119.patch](tarball://root/attachments/some-uuid/ticket7119/trac7119.patch) by klee created at 2009-10-05 04:59:59
 
 The patch corrects the bug.
 
@@ -123,7 +123,7 @@ I think a doctest should be added for the case that the patch fixes. ~ adam
 archive/issue_comments_059015.json:
 ```json
 {
-    "body": "Attachment\n\nThe new patch includes doctests and a bugfix of the patch itself.\n\nMartin says:\n\nAlex Ghitza wrote a patch to fix printing of multivariate polynomials in\ngeneral\n\n  http://trac.sagemath.org/sage_trac/ticket/6551\n\nwhich might contain your fix. However, it needs some work before it can go in.\n\n\nHowever, it seems to me that Alex Ghitza's patch is independent with the current patch.",
+    "body": "Attachment [trac_#7119.patch](tarball://root/attachments/some-uuid/ticket7119/trac_#7119.patch) by klee created at 2009-10-12 08:03:55\n\nThe new patch includes doctests and a bugfix of the patch itself.\n\nMartin says:\n\nAlex Ghitza wrote a patch to fix printing of multivariate polynomials in\ngeneral\n\n  http://trac.sagemath.org/sage_trac/ticket/6551\n\nwhich might contain your fix. However, it needs some work before it can go in.\n\n\nHowever, it seems to me that Alex Ghitza's patch is independent with the current patch.",
     "created_at": "2009-10-12T08:03:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7119",
     "type": "issue_comment",
@@ -132,7 +132,7 @@ archive/issue_comments_059015.json:
 }
 ```
 
-Attachment
+Attachment [trac_#7119.patch](tarball://root/attachments/some-uuid/ticket7119/trac_#7119.patch) by klee created at 2009-10-12 08:03:55
 
 The new patch includes doctests and a bugfix of the patch itself.
 
@@ -229,7 +229,7 @@ suggested changes
 archive/issue_comments_059019.json:
 ```json
 {
-    "body": "Attachment\n\nI added a \"suggested changes\" patch just to clarify. ~ Adam",
+    "body": "Attachment [trac_7119_b.patch](tarball://root/attachments/some-uuid/ticket7119/trac_7119_b.patch) by awebb created at 2009-10-12 11:43:09\n\nI added a \"suggested changes\" patch just to clarify. ~ Adam",
     "created_at": "2009-10-12T11:43:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7119",
     "type": "issue_comment",
@@ -238,7 +238,7 @@ archive/issue_comments_059019.json:
 }
 ```
 
-Attachment
+Attachment [trac_7119_b.patch](tarball://root/attachments/some-uuid/ticket7119/trac_7119_b.patch) by awebb created at 2009-10-12 11:43:09
 
 I added a "suggested changes" patch just to clarify. ~ Adam
 

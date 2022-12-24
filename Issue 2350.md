@@ -96,7 +96,7 @@ The ticket that introduced the mentioned changes is #1908
 archive/issue_comments_015786.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [show-revert.patch](tarball://root/attachments/some-uuid/ticket2350/show-revert.patch) by jason created at 2008-03-03 22:41:24",
     "created_at": "2008-03-03T22:41:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2350",
     "type": "issue_comment",
@@ -105,7 +105,7 @@ archive/issue_comments_015786.json:
 }
 ```
 
-Attachment
+Attachment [show-revert.patch](tarball://root/attachments/some-uuid/ticket2350/show-revert.patch) by jason created at 2008-03-03 22:41:24
 
 
 

@@ -162,7 +162,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_018569.json:
 ```json
 {
-    "body": "Attachment\n\nThese should now work:\n\n\n```\nsage: integrate(x, -1,1)\n0\nsage: integrate(sin(x),0,pi)\n2\n```\n\n\nSadly, because I don't know enough about Maxima to get it to accept the default variable, we still get this joke one might make in freshman calculus:\n\n\n```\nsage: integrate(sin,0,pi) \npi*sin \n```\n",
+    "body": "Attachment [int_without_var.patch](tarball://root/attachments/some-uuid/ticket2697/int_without_var.patch) by kcrisman created at 2008-10-17 03:02:38\n\nThese should now work:\n\n\n```\nsage: integrate(x, -1,1)\n0\nsage: integrate(sin(x),0,pi)\n2\n```\n\n\nSadly, because I don't know enough about Maxima to get it to accept the default variable, we still get this joke one might make in freshman calculus:\n\n\n```\nsage: integrate(sin,0,pi) \npi*sin \n```\n",
     "created_at": "2008-10-17T03:02:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2697",
     "type": "issue_comment",
@@ -171,7 +171,7 @@ archive/issue_comments_018569.json:
 }
 ```
 
-Attachment
+Attachment [int_without_var.patch](tarball://root/attachments/some-uuid/ticket2697/int_without_var.patch) by kcrisman created at 2008-10-17 03:02:38
 
 These should now work:
 
@@ -326,7 +326,7 @@ That alone is worth it for me.
 archive/issue_comments_018573.json:
 ```json
 {
-    "body": "Attachment\n\nBased on 3.2.alpha0",
+    "body": "Attachment [int_without_var-final.patch](tarball://root/attachments/some-uuid/ticket2697/int_without_var-final.patch) by kcrisman created at 2008-11-01 03:20:21\n\nBased on 3.2.alpha0",
     "created_at": "2008-11-01T03:20:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2697",
     "type": "issue_comment",
@@ -335,7 +335,7 @@ archive/issue_comments_018573.json:
 }
 ```
 
-Attachment
+Attachment [int_without_var-final.patch](tarball://root/attachments/some-uuid/ticket2697/int_without_var-final.patch) by kcrisman created at 2008-11-01 03:20:21
 
 Based on 3.2.alpha0
 
@@ -418,7 +418,7 @@ I've attached a new patch that resolves this issue. It should be more robust, as
 archive/issue_comments_018577.json:
 ```json
 {
-    "body": "Attachment\n\nI don't have a chance to review this yet (tomorrow?) but at least want to point out that the other day I noticed that the functionality did also not work for CallableSymbolicExpression (e.g. lines 5779 or so the integral() method), which seems to have an even more primitive version of the same code.  E.g., to try the original example for this ticket:\n\n```\nsage: f(x)=x\nsage: f\nx |--> x\nsage: type(f)\n<class 'sage.calculus.calculus.CallableSymbolicExpression'>\nsage: integrate(f,-1,1)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n<snip>\nsage: f.integral(-1,1)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n<snip>\n```\n\nBut this does work, so I think one would really have to fix the CallableSymbolicVariable piece:\n\n```\nsage: f.integral(x,-1,1)\n0\nsage: integral(f,x,-1,1)\n0\n```\n\nThanks for working on this - I knew it would be impossible for me to get to it until after the semester, and that proved to be true.",
+    "body": "Attachment [2697-integrate-without-var.patch](tarball://root/attachments/some-uuid/ticket2697/2697-integrate-without-var.patch) by kcrisman created at 2008-12-21 21:58:44\n\nI don't have a chance to review this yet (tomorrow?) but at least want to point out that the other day I noticed that the functionality did also not work for CallableSymbolicExpression (e.g. lines 5779 or so the integral() method), which seems to have an even more primitive version of the same code.  E.g., to try the original example for this ticket:\n\n```\nsage: f(x)=x\nsage: f\nx |--> x\nsage: type(f)\n<class 'sage.calculus.calculus.CallableSymbolicExpression'>\nsage: integrate(f,-1,1)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n<snip>\nsage: f.integral(-1,1)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n<snip>\n```\n\nBut this does work, so I think one would really have to fix the CallableSymbolicVariable piece:\n\n```\nsage: f.integral(x,-1,1)\n0\nsage: integral(f,x,-1,1)\n0\n```\n\nThanks for working on this - I knew it would be impossible for me to get to it until after the semester, and that proved to be true.",
     "created_at": "2008-12-21T21:58:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2697",
     "type": "issue_comment",
@@ -427,7 +427,7 @@ archive/issue_comments_018577.json:
 }
 ```
 
-Attachment
+Attachment [2697-integrate-without-var.patch](tarball://root/attachments/some-uuid/ticket2697/2697-integrate-without-var.patch) by kcrisman created at 2008-12-21 21:58:44
 
 I don't have a chance to review this yet (tomorrow?) but at least want to point out that the other day I noticed that the functionality did also not work for CallableSymbolicExpression (e.g. lines 5779 or so the integral() method), which seems to have an even more primitive version of the same code.  E.g., to try the original example for this ticket:
 
@@ -787,7 +787,7 @@ Based on 3.3.alpha0
 archive/issue_comments_018590.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch (trac_2697.patch) should take care of the piecewise error and still do the new things, plus adds a little documentation for things like f(x)=x^2.  My calculus.py always times out in testing, but hopefully running that test and the piecewise.py test should lead to a final positive review.",
+    "body": "Attachment [trac_2697.patch](tarball://root/attachments/some-uuid/ticket2697/trac_2697.patch) by kcrisman created at 2009-01-21 03:55:04\n\nThis patch (trac_2697.patch) should take care of the piecewise error and still do the new things, plus adds a little documentation for things like f(x)=x^2.  My calculus.py always times out in testing, but hopefully running that test and the piecewise.py test should lead to a final positive review.",
     "created_at": "2009-01-21T03:55:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2697",
     "type": "issue_comment",
@@ -796,7 +796,7 @@ archive/issue_comments_018590.json:
 }
 ```
 
-Attachment
+Attachment [trac_2697.patch](tarball://root/attachments/some-uuid/ticket2697/trac_2697.patch) by kcrisman created at 2009-01-21 03:55:04
 
 This patch (trac_2697.patch) should take care of the piecewise error and still do the new things, plus adds a little documentation for things like f(x)=x^2.  My calculus.py always times out in testing, but hopefully running that test and the piecewise.py test should lead to a final positive review.
 

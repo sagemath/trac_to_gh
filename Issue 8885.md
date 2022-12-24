@@ -285,7 +285,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_081674.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8885-deprecated_alias_doc-fh.patch](tarball://root/attachments/some-uuid/ticket8885/trac_8885-deprecated_alias_doc-fh.patch) by hivert created at 2011-06-28 15:06:12",
     "created_at": "2011-06-28T15:06:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8885",
     "type": "issue_comment",
@@ -294,7 +294,7 @@ archive/issue_comments_081674.json:
 }
 ```
 
-Attachment
+Attachment [trac_8885-deprecated_alias_doc-fh.patch](tarball://root/attachments/some-uuid/ticket8885/trac_8885-deprecated_alias_doc-fh.patch) by hivert created at 2011-06-28 15:06:12
 
 
 

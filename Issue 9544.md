@@ -157,7 +157,7 @@ Rebased to #12855.
 archive/issue_comments_092002.json:
 ```json
 {
-    "body": "Attachment\n\nDiff for the flintqs spkg. For reference / review only.",
+    "body": "Attachment [flintqs-20070817.p8.diff](tarball://root/attachments/some-uuid/ticket9544/flintqs-20070817.p8.diff) by jdemeyer created at 2012-06-21 10:26:49\n\nDiff for the flintqs spkg. For reference / review only.",
     "created_at": "2012-06-21T10:26:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9544",
     "type": "issue_comment",
@@ -166,7 +166,7 @@ archive/issue_comments_092002.json:
 }
 ```
 
-Attachment
+Attachment [flintqs-20070817.p8.diff](tarball://root/attachments/some-uuid/ticket9544/flintqs-20070817.p8.diff) by jdemeyer created at 2012-06-21 10:26:49
 
 Diff for the flintqs spkg. For reference / review only.
 

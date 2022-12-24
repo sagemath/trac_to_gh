@@ -158,7 +158,7 @@ apply to 4.4.2
 archive/issue_comments_083190.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch seems to fix the problem. When applied to 4.4.2 on a 10.6.3 mac, it passes sage -testall except for an unrelated docstring failure (in interfaces/r.py).\n\nI'm leaving it as needs work for now since I want to test it on more machines. I'm posting it in case others want to test it too.",
+    "body": "Attachment [trac_8997-riemann-roch.patch](tarball://root/attachments/some-uuid/ticket8997/trac_8997-riemann-roch.patch) by wdj created at 2010-05-26 18:56:52\n\nThe attached patch seems to fix the problem. When applied to 4.4.2 on a 10.6.3 mac, it passes sage -testall except for an unrelated docstring failure (in interfaces/r.py).\n\nI'm leaving it as needs work for now since I want to test it on more machines. I'm posting it in case others want to test it too.",
     "created_at": "2010-05-26T18:56:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8997",
     "type": "issue_comment",
@@ -167,7 +167,7 @@ archive/issue_comments_083190.json:
 }
 ```
 
-Attachment
+Attachment [trac_8997-riemann-roch.patch](tarball://root/attachments/some-uuid/ticket8997/trac_8997-riemann-roch.patch) by wdj created at 2010-05-26 18:56:52
 
 The attached patch seems to fix the problem. When applied to 4.4.2 on a 10.6.3 mac, it passes sage -testall except for an unrelated docstring failure (in interfaces/r.py).
 
@@ -337,7 +337,7 @@ apply to 4.6
 archive/issue_comments_083197.json:
 ```json
 {
-    "body": "Attachment\n\nFollowing Jose's explanations on the Singular trac server, the modified Sage wrapper should now work with the new patch. What the unmodified wrapper did wrong was how it defined the divisor in Singular. There's actually two lists that are important: The divisor needs to be defined relative to the list of points C[3] (in the above example), but to know which point the k-th entry of this list actually refers to, one has to parse the list POINTS of the rings C[5][d][1], where d is the degree of the point. -- The patch also modifies the documentation to illustrate this with an example.",
+    "body": "Attachment [trac_8997_fix_rr_basis_and_doc.patch](tarball://root/attachments/some-uuid/ticket8997/trac_8997_fix_rr_basis_and_doc.patch) by minz created at 2010-11-21 12:50:44\n\nFollowing Jose's explanations on the Singular trac server, the modified Sage wrapper should now work with the new patch. What the unmodified wrapper did wrong was how it defined the divisor in Singular. There's actually two lists that are important: The divisor needs to be defined relative to the list of points C[3] (in the above example), but to know which point the k-th entry of this list actually refers to, one has to parse the list POINTS of the rings C[5][d][1], where d is the degree of the point. -- The patch also modifies the documentation to illustrate this with an example.",
     "created_at": "2010-11-21T12:50:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8997",
     "type": "issue_comment",
@@ -346,7 +346,7 @@ archive/issue_comments_083197.json:
 }
 ```
 
-Attachment
+Attachment [trac_8997_fix_rr_basis_and_doc.patch](tarball://root/attachments/some-uuid/ticket8997/trac_8997_fix_rr_basis_and_doc.patch) by minz created at 2010-11-21 12:50:44
 
 Following Jose's explanations on the Singular trac server, the modified Sage wrapper should now work with the new patch. What the unmodified wrapper did wrong was how it defined the divisor in Singular. There's actually two lists that are important: The divisor needs to be defined relative to the list of points C[3] (in the above example), but to know which point the k-th entry of this list actually refers to, one has to parse the list POINTS of the rings C[5][d][1], where d is the degree of the point. -- The patch also modifies the documentation to illustrate this with an example.
 

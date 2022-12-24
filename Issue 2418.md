@@ -137,7 +137,7 @@ Changing status from new to needs_review.
 archive/issue_comments_016308.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_2418.patch](tarball://root/attachments/some-uuid/ticket2418/trac_2418.patch) by AlexGhitza created at 2010-01-03 06:48:10",
     "created_at": "2010-01-03T06:48:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2418",
     "type": "issue_comment",
@@ -146,7 +146,7 @@ archive/issue_comments_016308.json:
 }
 ```
 
-Attachment
+Attachment [trac_2418.patch](tarball://root/attachments/some-uuid/ticket2418/trac_2418.patch) by AlexGhitza created at 2010-01-03 06:48:10
 
 
 
@@ -294,7 +294,7 @@ rebased on 4.3.1.alpha1 and #6237, apply instead of the previous patch
 archive/issue_comments_016316.json:
 ```json
 {
-    "body": "Attachment\n\nI checked that this applies fine on top of 4.3.1.alpha1 + #6237, and tests pass, so positive review.",
+    "body": "Attachment [trac_2418-rebased.patch](tarball://root/attachments/some-uuid/ticket2418/trac_2418-rebased.patch) by cremona created at 2010-01-13 11:47:31\n\nI checked that this applies fine on top of 4.3.1.alpha1 + #6237, and tests pass, so positive review.",
     "created_at": "2010-01-13T11:47:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2418",
     "type": "issue_comment",
@@ -303,7 +303,7 @@ archive/issue_comments_016316.json:
 }
 ```
 
-Attachment
+Attachment [trac_2418-rebased.patch](tarball://root/attachments/some-uuid/ticket2418/trac_2418-rebased.patch) by cremona created at 2010-01-13 11:47:31
 
 I checked that this applies fine on top of 4.3.1.alpha1 + #6237, and tests pass, so positive review.
 

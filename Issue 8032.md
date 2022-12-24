@@ -67,7 +67,7 @@ Changing status from new to needs_review.
 archive/issue_comments_070164.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4492_doctest_nonsquare0_block.patch](tarball://root/attachments/some-uuid/ticket8032/4492_doctest_nonsquare0_block.patch) by robertwb created at 2010-01-21 20:27:54",
     "created_at": "2010-01-21T20:27:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8032",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_070164.json:
 }
 ```
 
-Attachment
+Attachment [4492_doctest_nonsquare0_block.patch](tarball://root/attachments/some-uuid/ticket8032/4492_doctest_nonsquare0_block.patch) by robertwb created at 2010-01-21 20:27:54
 
 
 

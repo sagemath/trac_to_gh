@@ -73,7 +73,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4062
 archive/issue_comments_029299.json:
 ```json
 {
-    "body": "Attachment\n\nThis is a fix for the above problem. In fact, the fix was suggested by Peter Bruin, who originally reported the fix. Here's what he had to say:\n\n\n```\nThe other possibility is to define E_{k,chi,psi} as the unique modular\nform whose L-series equals L(s,chi) L(s-k+1,psi); this is the form\nwhich Miyake considers in Theorem 4.7.1 (cf. E. Hecke, Math. Ann. 114\n(1937), 316--351 [= Mathematische Werke, 672--707]).  Then the\nformulas for the q-expansion as they are now in William Stein's book\nand in Sage remain correct (i.e. without replacing psi by its\nconjugate), and the change that should be made in this case (in the\nbook and in Sage) is to change the relation between chi, psi and the\ncharacter epsilon of E_{k,chi,psi} from\n\n chi = epsilon * psi\n\nto\n\n chi * psi = epsilon.\n\nThis would mean that the comment (not the code!) in __find_eisen_chars\nin eis_series.py should be changed (refer to Miyake's Theorem 4.7.1),\nand that in the method called `character' of the class\nEisensteinSeries in element.py, the line\n\n self.__character = self.__chi * (~self.__psi)\n\nshould be replaced by\n\n self.__character = self.__chi * self.__psi\n```\n\n\nThe attached patch fixes this, and adds a few doctests to catch it in the future. Credit for the patch should also go to Peter.",
+    "body": "Attachment [trac-4062.patch](tarball://root/attachments/some-uuid/ticket4062/trac-4062.patch) by craigcitro created at 2008-10-30 09:13:37\n\nThis is a fix for the above problem. In fact, the fix was suggested by Peter Bruin, who originally reported the fix. Here's what he had to say:\n\n\n```\nThe other possibility is to define E_{k,chi,psi} as the unique modular\nform whose L-series equals L(s,chi) L(s-k+1,psi); this is the form\nwhich Miyake considers in Theorem 4.7.1 (cf. E. Hecke, Math. Ann. 114\n(1937), 316--351 [= Mathematische Werke, 672--707]).  Then the\nformulas for the q-expansion as they are now in William Stein's book\nand in Sage remain correct (i.e. without replacing psi by its\nconjugate), and the change that should be made in this case (in the\nbook and in Sage) is to change the relation between chi, psi and the\ncharacter epsilon of E_{k,chi,psi} from\n\n chi = epsilon * psi\n\nto\n\n chi * psi = epsilon.\n\nThis would mean that the comment (not the code!) in __find_eisen_chars\nin eis_series.py should be changed (refer to Miyake's Theorem 4.7.1),\nand that in the method called `character' of the class\nEisensteinSeries in element.py, the line\n\n self.__character = self.__chi * (~self.__psi)\n\nshould be replaced by\n\n self.__character = self.__chi * self.__psi\n```\n\n\nThe attached patch fixes this, and adds a few doctests to catch it in the future. Credit for the patch should also go to Peter.",
     "created_at": "2008-10-30T09:13:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4062",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_029299.json:
 }
 ```
 
-Attachment
+Attachment [trac-4062.patch](tarball://root/attachments/some-uuid/ticket4062/trac-4062.patch) by craigcitro created at 2008-10-30 09:13:37
 
 This is a fix for the above problem. In fact, the fix was suggested by Peter Bruin, who originally reported the fix. Here's what he had to say:
 

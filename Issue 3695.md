@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3695
 archive/issue_comments_026216.json:
 ```json
 {
-    "body": "Attachment\n\nREFEREE:\n\nLooks good. It is also safe to apply to sage-3.0.6 even since it contains no new doctests and no new source code.",
+    "body": "Attachment [factor_docstring.patch](tarball://root/attachments/some-uuid/ticket3695/factor_docstring.patch) by was created at 2008-07-21 18:55:38\n\nREFEREE:\n\nLooks good. It is also safe to apply to sage-3.0.6 even since it contains no new doctests and no new source code.",
     "created_at": "2008-07-21T18:55:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3695",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_026216.json:
 }
 ```
 
-Attachment
+Attachment [factor_docstring.patch](tarball://root/attachments/some-uuid/ticket3695/factor_docstring.patch) by was created at 2008-07-21 18:55:38
 
 REFEREE:
 
@@ -230,7 +230,7 @@ Michael
 archive/issue_comments_026224.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:7 mabshoff]:\n> There is a slight typo in John's patch:\n> {{{\n> A Factorization contains bothe the \n> }}}\n> \n> Cheers,\n> \n> Michael\n\n\nI fixed that by text-editing the patch file and re-uploading it in place of the original (of mine).  I hope that works....",
+    "body": "Attachment [factor_docstring_extra.patch](tarball://root/attachments/some-uuid/ticket3695/factor_docstring_extra.patch) by cremona created at 2008-07-21 20:32:23\n\nReplying to [comment:7 mabshoff]:\n> There is a slight typo in John's patch:\n> {{{\n> A Factorization contains bothe the \n> }}}\n> \n> Cheers,\n> \n> Michael\n\n\nI fixed that by text-editing the patch file and re-uploading it in place of the original (of mine).  I hope that works....",
     "created_at": "2008-07-21T20:32:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3695",
     "type": "issue_comment",
@@ -239,7 +239,7 @@ archive/issue_comments_026224.json:
 }
 ```
 
-Attachment
+Attachment [factor_docstring_extra.patch](tarball://root/attachments/some-uuid/ticket3695/factor_docstring_extra.patch) by cremona created at 2008-07-21 20:32:23
 
 Replying to [comment:7 mabshoff]:
 > There is a slight typo in John's patch:

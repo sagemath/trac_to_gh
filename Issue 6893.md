@@ -49,7 +49,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_056948.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [plot.patch](tarball://root/attachments/some-uuid/ticket6893/plot.patch) by jason created at 2010-03-17 05:20:39",
     "created_at": "2010-03-17T05:20:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6893",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_056948.json:
 }
 ```
 
-Attachment
+Attachment [plot.patch](tarball://root/attachments/some-uuid/ticket6893/plot.patch) by jason created at 2010-03-17 05:20:39
 
 
 

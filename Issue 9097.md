@@ -114,7 +114,7 @@ Mercurial patch which adds -m64 when building c_lib.
 archive/issue_comments_084520.json:
 ```json
 {
-    "body": "Attachment\n\nThis is not a complete fix which enables the library to build, but it adds the flag -m64 on all platforms except OS X. (On OS X the flag is already added, but along with some other flags which I don't understand, and for now are best left). \n\nDave",
+    "body": "Attachment [c_lib.patch](tarball://root/attachments/some-uuid/ticket9097/c_lib.patch) by drkirkby created at 2010-06-14 17:30:05\n\nThis is not a complete fix which enables the library to build, but it adds the flag -m64 on all platforms except OS X. (On OS X the flag is already added, but along with some other flags which I don't understand, and for now are best left). \n\nDave",
     "created_at": "2010-06-14T17:30:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9097",
     "type": "issue_comment",
@@ -123,7 +123,7 @@ archive/issue_comments_084520.json:
 }
 ```
 
-Attachment
+Attachment [c_lib.patch](tarball://root/attachments/some-uuid/ticket9097/c_lib.patch) by drkirkby created at 2010-06-14 17:30:05
 
 This is not a complete fix which enables the library to build, but it adds the flag -m64 on all platforms except OS X. (On OS X the flag is already added, but along with some other flags which I don't understand, and for now are best left). 
 
@@ -172,7 +172,7 @@ Log file of building on OpenSolaris x64. The section where files are extracted f
 archive/issue_comments_084523.json:
 ```json
 {
-    "body": "Attachment\n\nI'm attaching a log file which shows that this patch allows the build progress to go a long way. The log file for the build of the library `spkg/logs/sage-4.5.alpha1.log` is 958 KB in size, so clearly this gets a long way, where without the 4 lines\n\n\n```\nif env['PLATFORM'] != \"darwin\" and os.environ['SAGE64']==\"yes\": \n    env.Append( CFLAGS=\"-O2 -g -m64\" ) \n    env.Append( CXXFLAGS=\"-O2 -g -m64\" ) \n    env.Append( LINKFLAGS=\"-m64\" ) \n```\n\n\nthe build fails after only 40 lines or so. \n\nThere are some remaining issues to resolve, but this patch, which is only implemented if SAGE64 is set to yes and the operating system is **not** OS X, goes a long way towards helping a 64-bit port to OpenSolaris. \n\nDave",
+    "body": "Attachment [sage-4.5.alpha1.log](tarball://root/attachments/some-uuid/ticket9097/sage-4.5.alpha1.log) by drkirkby created at 2010-07-01 00:09:43\n\nI'm attaching a log file which shows that this patch allows the build progress to go a long way. The log file for the build of the library `spkg/logs/sage-4.5.alpha1.log` is 958 KB in size, so clearly this gets a long way, where without the 4 lines\n\n\n```\nif env['PLATFORM'] != \"darwin\" and os.environ['SAGE64']==\"yes\": \n    env.Append( CFLAGS=\"-O2 -g -m64\" ) \n    env.Append( CXXFLAGS=\"-O2 -g -m64\" ) \n    env.Append( LINKFLAGS=\"-m64\" ) \n```\n\n\nthe build fails after only 40 lines or so. \n\nThere are some remaining issues to resolve, but this patch, which is only implemented if SAGE64 is set to yes and the operating system is **not** OS X, goes a long way towards helping a 64-bit port to OpenSolaris. \n\nDave",
     "created_at": "2010-07-01T00:09:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9097",
     "type": "issue_comment",
@@ -181,7 +181,7 @@ archive/issue_comments_084523.json:
 }
 ```
 
-Attachment
+Attachment [sage-4.5.alpha1.log](tarball://root/attachments/some-uuid/ticket9097/sage-4.5.alpha1.log) by drkirkby created at 2010-07-01 00:09:43
 
 I'm attaching a log file which shows that this patch allows the build progress to go a long way. The log file for the build of the library `spkg/logs/sage-4.5.alpha1.log` is 958 KB in size, so clearly this gets a long way, where without the 4 lines
 
@@ -295,7 +295,7 @@ Cleaner and proper patch with the same ideas previously shown
 archive/issue_comments_084527.json:
 ```json
 {
-    "body": "Attachment\n\nNote that the space in\n\n```\nLINKFLAGS=\" -single_module -flat_namespace -undefined dynamic_lookup\"\n```\n\nis on purpose as scons concatenate strings. We don't want to end\nup with \"-m64-single_module\".",
+    "body": "Attachment [sage_clib64.patch](tarball://root/attachments/some-uuid/ticket9097/sage_clib64.patch) by fbissey created at 2010-07-01 09:41:01\n\nNote that the space in\n\n```\nLINKFLAGS=\" -single_module -flat_namespace -undefined dynamic_lookup\"\n```\n\nis on purpose as scons concatenate strings. We don't want to end\nup with \"-m64-single_module\".",
     "created_at": "2010-07-01T09:41:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9097",
     "type": "issue_comment",
@@ -304,7 +304,7 @@ archive/issue_comments_084527.json:
 }
 ```
 
-Attachment
+Attachment [sage_clib64.patch](tarball://root/attachments/some-uuid/ticket9097/sage_clib64.patch) by fbissey created at 2010-07-01 09:41:01
 
 Note that the space in
 

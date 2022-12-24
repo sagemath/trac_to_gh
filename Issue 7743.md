@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7743
 archive/issue_comments_066606.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [12159.patch](tarball://root/attachments/some-uuid/ticket7743/12159.patch) by AlexGhitza created at 2009-12-19 23:36:02",
     "created_at": "2009-12-19T23:36:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7743",
     "type": "issue_comment",
@@ -50,7 +50,7 @@ archive/issue_comments_066606.json:
 }
 ```
 
-Attachment
+Attachment [12159.patch](tarball://root/attachments/some-uuid/ticket7743/12159.patch) by AlexGhitza created at 2009-12-19 23:36:02
 
 
 
@@ -131,7 +131,7 @@ This patch failed to apply to sage-4.3.a1 and 4.3.rc0. Maybe it needs rebasing?
 archive/issue_comments_066611.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [13311.patch](tarball://root/attachments/some-uuid/ticket7743/13311.patch) by pbutler created at 2009-12-20 17:03:46",
     "created_at": "2009-12-20T17:03:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7743",
     "type": "issue_comment",
@@ -140,7 +140,7 @@ archive/issue_comments_066611.json:
 }
 ```
 
-Attachment
+Attachment [13311.patch](tarball://root/attachments/some-uuid/ticket7743/13311.patch) by pbutler created at 2009-12-20 17:03:46
 
 
 
@@ -213,7 +213,7 @@ I'm declaring a total feature freeze on sage-4.3.
 archive/issue_comments_066615.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [13535.patch](tarball://root/attachments/some-uuid/ticket7743/13535.patch) by pbutler created at 2010-01-06 05:06:41",
     "created_at": "2010-01-06T05:06:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7743",
     "type": "issue_comment",
@@ -222,7 +222,7 @@ archive/issue_comments_066615.json:
 }
 ```
 
-Attachment
+Attachment [13535.patch](tarball://root/attachments/some-uuid/ticket7743/13535.patch) by pbutler created at 2010-01-06 05:06:41
 
 
 

@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4636
 archive/issue_comments_034864.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4636-ncalexan-Polynomial_dense_modp_ntl_zz.patch](tarball://root/attachments/some-uuid/ticket4636/4636-ncalexan-Polynomial_dense_modp_ntl_zz.patch) by mabshoff created at 2008-11-27 04:51:09",
     "created_at": "2008-11-27T04:51:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4636",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_034864.json:
 }
 ```
 
-Attachment
+Attachment [4636-ncalexan-Polynomial_dense_modp_ntl_zz.patch](tarball://root/attachments/some-uuid/ticket4636/4636-ncalexan-Polynomial_dense_modp_ntl_zz.patch) by mabshoff created at 2008-11-27 04:51:09
 
 
 

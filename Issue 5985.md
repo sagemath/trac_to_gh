@@ -149,7 +149,7 @@ Followup at #5986
 archive/issue_comments_047555.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [cPickle-5985-import-submitted.patch](tarball://root/attachments/some-uuid/ticket5985/cPickle-5985-import-submitted.patch) by nthiery created at 2009-05-23 07:42:38",
     "created_at": "2009-05-23T07:42:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5985",
     "type": "issue_comment",
@@ -158,7 +158,7 @@ archive/issue_comments_047555.json:
 }
 ```
 
-Attachment
+Attachment [cPickle-5985-import-submitted.patch](tarball://root/attachments/some-uuid/ticket5985/cPickle-5985-import-submitted.patch) by nthiery created at 2009-05-23 07:42:38
 
 
 
@@ -245,7 +245,7 @@ The patch cPickle-5985-copy_reg_classes-submitted.patch includes a fairly comple
 archive/issue_comments_047559.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:14 nthiery]:\n> Replying to [comment:13 craigcitro]:\n> > I've rolled an spkg with the patch by Nicolas incorporated -- it's here:\n> > \n> >   http://sage.math.washington.edu/home/craigcitro/four-one/python-2.6.2.p2.spkg\n> > \n> > It's not ready to be merged (I need to commit the changes in hg), but I'd like Nicolas to confirm that it still works before I play with it too much. Or, if there's an easy testcase, post that and I'll play with it. \n> > \n> > I should have more time to look at this tonight (and give it a review, assuming it works).\n> \n> Thanks for working on this!\n> \n> The patch cPickle-5985-copy_reg_classes-submitted.patch includes a fairly complete testsuite (see the addition to sage/misc/test_cpickle_sage.py)\n\nOops, this testsuite used type.__new__(...) which apparently does not work anymore with Python 2.6. I just rewrote the testsuite so that it does not use this feature anymore. See attached patch.\n\nLuckily enough, the real applications of this patch readily did not use this feature anymore!",
+    "body": "Attachment [cPickle-5985-copy_reg_classes-submitted.patch](tarball://root/attachments/some-uuid/ticket5985/cPickle-5985-copy_reg_classes-submitted.patch) by nthiery created at 2009-07-11 22:48:25\n\nReplying to [comment:14 nthiery]:\n> Replying to [comment:13 craigcitro]:\n> > I've rolled an spkg with the patch by Nicolas incorporated -- it's here:\n> > \n> >   http://sage.math.washington.edu/home/craigcitro/four-one/python-2.6.2.p2.spkg\n> > \n> > It's not ready to be merged (I need to commit the changes in hg), but I'd like Nicolas to confirm that it still works before I play with it too much. Or, if there's an easy testcase, post that and I'll play with it. \n> > \n> > I should have more time to look at this tonight (and give it a review, assuming it works).\n> \n> Thanks for working on this!\n> \n> The patch cPickle-5985-copy_reg_classes-submitted.patch includes a fairly complete testsuite (see the addition to sage/misc/test_cpickle_sage.py)\n\nOops, this testsuite used type.__new__(...) which apparently does not work anymore with Python 2.6. I just rewrote the testsuite so that it does not use this feature anymore. See attached patch.\n\nLuckily enough, the real applications of this patch readily did not use this feature anymore!",
     "created_at": "2009-07-11T22:48:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5985",
     "type": "issue_comment",
@@ -254,7 +254,7 @@ archive/issue_comments_047559.json:
 }
 ```
 
-Attachment
+Attachment [cPickle-5985-copy_reg_classes-submitted.patch](tarball://root/attachments/some-uuid/ticket5985/cPickle-5985-copy_reg_classes-submitted.patch) by nthiery created at 2009-07-11 22:48:25
 
 Replying to [comment:14 nthiery]:
 > Replying to [comment:13 craigcitro]:
@@ -437,7 +437,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_047566.json:
 ```json
 {
-    "body": "Attachment\n\nApply only this patch, after updating the python spkg linked to below",
+    "body": "Attachment [trac_5985_test_class_pickling.patch](tarball://root/attachments/some-uuid/ticket5985/trac_5985_test_class_pickling.patch) by mhansen created at 2009-10-15 06:55:09\n\nApply only this patch, after updating the python spkg linked to below",
     "created_at": "2009-10-15T06:55:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5985",
     "type": "issue_comment",
@@ -446,7 +446,7 @@ archive/issue_comments_047566.json:
 }
 ```
 
-Attachment
+Attachment [trac_5985_test_class_pickling.patch](tarball://root/attachments/some-uuid/ticket5985/trac_5985_test_class_pickling.patch) by mhansen created at 2009-10-15 06:55:09
 
 Apply only this patch, after updating the python spkg linked to below
 

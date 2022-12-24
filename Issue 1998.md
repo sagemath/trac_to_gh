@@ -126,7 +126,7 @@ There were two problems here. One was that plot() no longer took xmin and xmax k
 archive/issue_comments_012921.json:
 ```json
 {
-    "body": "Attachment\n\nSee changesets 8313 - 8317 of the attached bundle.",
+    "body": "Attachment [animate.hg](tarball://root/attachments/some-uuid/ticket1998/animate.hg) by moretti created at 2008-02-08 23:32:23\n\nSee changesets 8313 - 8317 of the attached bundle.",
     "created_at": "2008-02-08T23:32:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1998",
     "type": "issue_comment",
@@ -135,7 +135,7 @@ archive/issue_comments_012921.json:
 }
 ```
 
-Attachment
+Attachment [animate.hg](tarball://root/attachments/some-uuid/ticket1998/animate.hg) by moretti created at 2008-02-08 23:32:23
 
 See changesets 8313 - 8317 of the attached bundle.
 

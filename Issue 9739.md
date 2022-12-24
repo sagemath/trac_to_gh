@@ -75,7 +75,7 @@ sage: import tempfile
 archive/issue_comments_095222.json:
 ```json
 {
-    "body": "Attachment\n\nFrequency-sorted list of doctest file basenames (includes .py, .pyx, .pxi, .rst, .tex files).  Not a patch.",
+    "body": "Attachment [basenames_frequencies.txt](tarball://root/attachments/some-uuid/ticket9739/basenames_frequencies.txt) by mpatel created at 2010-08-13 01:39:09\n\nFrequency-sorted list of doctest file basenames (includes .py, .pyx, .pxi, .rst, .tex files).  Not a patch.",
     "created_at": "2010-08-13T01:39:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9739",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_095222.json:
 }
 ```
 
-Attachment
+Attachment [basenames_frequencies.txt](tarball://root/attachments/some-uuid/ticket9739/basenames_frequencies.txt) by mpatel created at 2010-08-13 01:39:09
 
 Frequency-sorted list of doctest file basenames (includes .py, .pyx, .pxi, .rst, .tex files).  Not a patch.
 
@@ -131,7 +131,7 @@ Doctest with unique temporary files.  Apply to scripts repo.
 archive/issue_comments_095225.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached a patch.  I haven't modified `sage-test`, since we're likely to phase it out at #9224.",
+    "body": "Attachment [trac_9739-unique_doctest_names.patch](tarball://root/attachments/some-uuid/ticket9739/trac_9739-unique_doctest_names.patch) by mpatel created at 2010-09-04 07:01:05\n\nI've attached a patch.  I haven't modified `sage-test`, since we're likely to phase it out at #9224.",
     "created_at": "2010-09-04T07:01:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9739",
     "type": "issue_comment",
@@ -140,7 +140,7 @@ archive/issue_comments_095225.json:
 }
 ```
 
-Attachment
+Attachment [trac_9739-unique_doctest_names.patch](tarball://root/attachments/some-uuid/ticket9739/trac_9739-unique_doctest_names.patch) by mpatel created at 2010-09-04 07:01:05
 
 I've attached a patch.  I haven't modified `sage-test`, since we're likely to phase it out at #9224.
 
@@ -2167,7 +2167,7 @@ Regarding deleting files on interruption: it's not clear how to easily determine
 archive/issue_comments_095296.json:
 ```json
 {
-    "body": "Attachment\n\nscripts repo",
+    "body": "Attachment [trac_9739.patch](tarball://root/attachments/some-uuid/ticket9739/trac_9739.patch) by jhpalmieri created at 2011-08-13 20:55:27\n\nscripts repo",
     "created_at": "2011-08-13T20:55:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9739",
     "type": "issue_comment",
@@ -2176,7 +2176,7 @@ archive/issue_comments_095296.json:
 }
 ```
 
-Attachment
+Attachment [trac_9739.patch](tarball://root/attachments/some-uuid/ticket9739/trac_9739.patch) by jhpalmieri created at 2011-08-13 20:55:27
 
 scripts repo
 
@@ -2390,7 +2390,7 @@ Along these lines, we have [attachment:trac_9739-graphviz.patch], a patch for th
 archive/issue_comments_095304.json:
 ```json
 {
-    "body": "Attachment\n\nfor review only",
+    "body": "Attachment [trac_9739-delta1to2.patch](tarball://root/attachments/some-uuid/ticket9739/trac_9739-delta1to2.patch) by jhpalmieri created at 2011-09-10 20:59:59\n\nfor review only",
     "created_at": "2011-09-10T20:59:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9739",
     "type": "issue_comment",
@@ -2399,7 +2399,7 @@ archive/issue_comments_095304.json:
 }
 ```
 
-Attachment
+Attachment [trac_9739-delta1to2.patch](tarball://root/attachments/some-uuid/ticket9739/trac_9739-delta1to2.patch) by jhpalmieri created at 2011-09-10 20:59:59
 
 for review only
 
@@ -2428,7 +2428,7 @@ main Sage library repo
 archive/issue_comments_095306.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:75 jhpalmieri]:\n> Along these lines, we have [attachment:trac_9739-graphviz.patch], a patch for the main Sage library, which writes a temporary file to SAGE_TMP rather than to SAGE_TESTDIR, so that the doctesting directory is indeed empty after doctesting the Sage library.\n\nShouldn't doctests delete the files they create afterwards anyway?",
+    "body": "Attachment [trac_9739-graphviz.patch](tarball://root/attachments/some-uuid/ticket9739/trac_9739-graphviz.patch) by leif created at 2011-09-10 22:56:19\n\nReplying to [comment:75 jhpalmieri]:\n> Along these lines, we have [attachment:trac_9739-graphviz.patch], a patch for the main Sage library, which writes a temporary file to SAGE_TMP rather than to SAGE_TESTDIR, so that the doctesting directory is indeed empty after doctesting the Sage library.\n\nShouldn't doctests delete the files they create afterwards anyway?",
     "created_at": "2011-09-10T22:56:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9739",
     "type": "issue_comment",
@@ -2437,7 +2437,7 @@ archive/issue_comments_095306.json:
 }
 ```
 
-Attachment
+Attachment [trac_9739-graphviz.patch](tarball://root/attachments/some-uuid/ticket9739/trac_9739-graphviz.patch) by leif created at 2011-09-10 22:56:19
 
 Replying to [comment:75 jhpalmieri]:
 > Along these lines, we have [attachment:trac_9739-graphviz.patch], a patch for the main Sage library, which writes a temporary file to SAGE_TMP rather than to SAGE_TESTDIR, so that the doctesting directory is indeed empty after doctesting the Sage library.
@@ -2554,7 +2554,7 @@ diff --git a/sage-ptest b/sage-ptest
 archive/issue_comments_095309.json:
 ```json
 {
-    "body": "Attachment\n\nscripts repo",
+    "body": "Attachment [trac_9739.v2.patch](tarball://root/attachments/some-uuid/ticket9739/trac_9739.v2.patch) by jhpalmieri created at 2011-09-10 23:31:29\n\nscripts repo",
     "created_at": "2011-09-10T23:31:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9739",
     "type": "issue_comment",
@@ -2563,7 +2563,7 @@ archive/issue_comments_095309.json:
 }
 ```
 
-Attachment
+Attachment [trac_9739.v2.patch](tarball://root/attachments/some-uuid/ticket9739/trac_9739.v2.patch) by jhpalmieri created at 2011-09-10 23:31:29
 
 scripts repo
 
@@ -2640,7 +2640,7 @@ I added the path of the original file to the doctest file, but did nothing about
 archive/issue_comments_095313.json:
 ```json
 {
-    "body": "Attachment\n\nfor review only",
+    "body": "Attachment [trac_9739-delta2to3.patch](tarball://root/attachments/some-uuid/ticket9739/trac_9739-delta2to3.patch) by jhpalmieri created at 2011-09-11 01:15:14\n\nfor review only",
     "created_at": "2011-09-11T01:15:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9739",
     "type": "issue_comment",
@@ -2649,7 +2649,7 @@ archive/issue_comments_095313.json:
 }
 ```
 
-Attachment
+Attachment [trac_9739-delta2to3.patch](tarball://root/attachments/some-uuid/ticket9739/trac_9739-delta2to3.patch) by jhpalmieri created at 2011-09-11 01:15:14
 
 for review only
 
@@ -2678,7 +2678,7 @@ scripts repo
 archive/issue_comments_095315.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9739.v3.patch](tarball://root/attachments/some-uuid/ticket9739/trac_9739.v3.patch) by jhpalmieri created at 2011-09-11 01:15:34",
     "created_at": "2011-09-11T01:15:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9739",
     "type": "issue_comment",
@@ -2687,7 +2687,7 @@ archive/issue_comments_095315.json:
 }
 ```
 
-Attachment
+Attachment [trac_9739.v3.patch](tarball://root/attachments/some-uuid/ticket9739/trac_9739.v3.patch) by jhpalmieri created at 2011-09-11 01:15:34
 
 
 
@@ -3146,7 +3146,7 @@ scripts repo; apply on top of other patch
 archive/issue_comments_095334.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:99 jhpalmieri]:\n> It wasn't clear from this ticket that the patch had been merged: it was marked as merged and closed before the patch was attached, and I didn't check the actual log to see if it had been merged.  Sorry.\n\nWell, I could have added a clarifying comment, although I thought it was clear from the context that it is indeed merged; otherwise I would have reopened the ticket or moved the patch to another one.",
+    "body": "Attachment [trac_9739-extra.patch](tarball://root/attachments/some-uuid/ticket9739/trac_9739-extra.patch) by leif created at 2011-10-03 20:34:49\n\nReplying to [comment:99 jhpalmieri]:\n> It wasn't clear from this ticket that the patch had been merged: it was marked as merged and closed before the patch was attached, and I didn't check the actual log to see if it had been merged.  Sorry.\n\nWell, I could have added a clarifying comment, although I thought it was clear from the context that it is indeed merged; otherwise I would have reopened the ticket or moved the patch to another one.",
     "created_at": "2011-10-03T20:34:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9739",
     "type": "issue_comment",
@@ -3155,7 +3155,7 @@ archive/issue_comments_095334.json:
 }
 ```
 
-Attachment
+Attachment [trac_9739-extra.patch](tarball://root/attachments/some-uuid/ticket9739/trac_9739-extra.patch) by leif created at 2011-10-03 20:34:49
 
 Replying to [comment:99 jhpalmieri]:
 > It wasn't clear from this ticket that the patch had been merged: it was marked as merged and closed before the patch was attached, and I didn't check the actual log to see if it had been merged.  Sorry.

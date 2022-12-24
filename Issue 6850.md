@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6850
 archive/issue_comments_056489.json:
 ```json
 {
-    "body": "Attachment\n\ndepends on #6531",
+    "body": "Attachment [trac_6850-add-ring.patch](tarball://root/attachments/some-uuid/ticket6850/trac_6850-add-ring.patch) by mvngu created at 2009-08-31 05:48:31\n\ndepends on #6531",
     "created_at": "2009-08-31T05:48:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6850",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_056489.json:
 }
 ```
 
-Attachment
+Attachment [trac_6850-add-ring.patch](tarball://root/attachments/some-uuid/ticket6850/trac_6850-add-ring.patch) by mvngu created at 2009-08-31 05:48:31
 
 depends on #6531
 

@@ -54,7 +54,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7298
 archive/issue_comments_060753.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ogv.patch](tarball://root/attachments/some-uuid/ticket7298/ogv.patch) by whuss created at 2009-10-25 16:01:03",
     "created_at": "2009-10-25T16:01:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7298",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_060753.json:
 }
 ```
 
-Attachment
+Attachment [ogv.patch](tarball://root/attachments/some-uuid/ticket7298/ogv.patch) by whuss created at 2009-10-25 16:01:03
 
 
 
@@ -333,7 +333,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_060767.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:7 mpatel]:\n> I'm getting a docbuild warning from `sage/plot/animate.py`:\n> {{{\n> :0: (WARNING/2) Literal block expected; none found.\n> }}}\n> I think the problem is that the `ogv` method's docstring ends with\n> {{{\n>         .. note::\n>            If libtheora is not installed, you will get an error\n>            message like this::\n> }}}\n> Could someone please fix this?  For now, I'm removing [attachment:ogv.patch] from 4.5.2.alpha0.\n\nI added the error message to the documentation in the new patch [attachment:trac-7298-ogv.patch].",
+    "body": "Attachment [trac-7298-ogv.patch](tarball://root/attachments/some-uuid/ticket7298/trac-7298-ogv.patch) by whuss created at 2010-07-21 07:21:50\n\nReplying to [comment:7 mpatel]:\n> I'm getting a docbuild warning from `sage/plot/animate.py`:\n> {{{\n> :0: (WARNING/2) Literal block expected; none found.\n> }}}\n> I think the problem is that the `ogv` method's docstring ends with\n> {{{\n>         .. note::\n>            If libtheora is not installed, you will get an error\n>            message like this::\n> }}}\n> Could someone please fix this?  For now, I'm removing [attachment:ogv.patch] from 4.5.2.alpha0.\n\nI added the error message to the documentation in the new patch [attachment:trac-7298-ogv.patch].",
     "created_at": "2010-07-21T07:21:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7298",
     "type": "issue_comment",
@@ -342,7 +342,7 @@ archive/issue_comments_060767.json:
 }
 ```
 
-Attachment
+Attachment [trac-7298-ogv.patch](tarball://root/attachments/some-uuid/ticket7298/trac-7298-ogv.patch) by whuss created at 2010-07-21 07:21:50
 
 Replying to [comment:7 mpatel]:
 > I'm getting a docbuild warning from `sage/plot/animate.py`:
@@ -940,7 +940,7 @@ log file of failing install in Mac 10.6
 archive/issue_comments_060783.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:22 whuss]:\n> It still works for me. Could someone test it on OSX?\n> \n\nI'm afraid it's still failing for me--PNG is still not found.  Here is the complete [attachment:libtheora_Mac-10.6.log log file].",
+    "body": "Attachment [libtheora_Mac-10.6.log](tarball://root/attachments/some-uuid/ticket7298/libtheora_Mac-10.6.log) by niles created at 2011-03-07 19:08:54\n\nReplying to [comment:22 whuss]:\n> It still works for me. Could someone test it on OSX?\n> \n\nI'm afraid it's still failing for me--PNG is still not found.  Here is the complete [attachment:libtheora_Mac-10.6.log log file].",
     "created_at": "2011-03-07T19:08:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7298",
     "type": "issue_comment",
@@ -949,7 +949,7 @@ archive/issue_comments_060783.json:
 }
 ```
 
-Attachment
+Attachment [libtheora_Mac-10.6.log](tarball://root/attachments/some-uuid/ticket7298/libtheora_Mac-10.6.log) by niles created at 2011-03-07 19:08:54
 
 Replying to [comment:22 whuss]:
 > It still works for me. Could someone test it on OSX?

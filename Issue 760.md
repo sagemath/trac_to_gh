@@ -117,7 +117,7 @@ Same patch as listed in the post.
 archive/issue_comments_004510.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [#760.patch](tarball://root/attachments/some-uuid/ticket760/#760.patch) by was created at 2007-10-04 14:57:55",
     "created_at": "2007-10-04T14:57:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/760",
     "type": "issue_comment",
@@ -126,7 +126,7 @@ archive/issue_comments_004510.json:
 }
 ```
 
-Attachment
+Attachment [#760.patch](tarball://root/attachments/some-uuid/ticket760/#760.patch) by was created at 2007-10-04 14:57:55
 
 
 

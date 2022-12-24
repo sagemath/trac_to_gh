@@ -65,7 +65,7 @@ I don't agree that this should be the default. First, how is the indefinite inte
 archive/issue_comments_035611.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [piecewise_integration.patch](tarball://root/attachments/some-uuid/ticket4721/piecewise_integration.patch) by pbutler created at 2008-12-05 22:50:30",
     "created_at": "2008-12-05T22:50:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4721",
     "type": "issue_comment",
@@ -74,7 +74,7 @@ archive/issue_comments_035611.json:
 }
 ```
 
-Attachment
+Attachment [piecewise_integration.patch](tarball://root/attachments/some-uuid/ticket4721/piecewise_integration.patch) by pbutler created at 2008-12-05 22:50:30
 
 
 
@@ -185,7 +185,7 @@ Michael
 archive/issue_comments_035616.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [piecewise_integration2.patch](tarball://root/attachments/some-uuid/ticket4721/piecewise_integration2.patch) by pbutler created at 2008-12-11 16:46:29",
     "created_at": "2008-12-11T16:46:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4721",
     "type": "issue_comment",
@@ -194,7 +194,7 @@ archive/issue_comments_035616.json:
 }
 ```
 
-Attachment
+Attachment [piecewise_integration2.patch](tarball://root/attachments/some-uuid/ticket4721/piecewise_integration2.patch) by pbutler created at 2008-12-11 16:46:29
 
 
 
@@ -348,7 +348,7 @@ Yes. Can you please do that and add the FTC example to the docstring?
 archive/issue_comments_035622.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [piecewise_integration3.patch](tarball://root/attachments/some-uuid/ticket4721/piecewise_integration3.patch) by pbutler created at 2009-01-25 02:06:00",
     "created_at": "2009-01-25T02:06:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4721",
     "type": "issue_comment",
@@ -357,7 +357,7 @@ archive/issue_comments_035622.json:
 }
 ```
 
-Attachment
+Attachment [piecewise_integration3.patch](tarball://root/attachments/some-uuid/ticket4721/piecewise_integration3.patch) by pbutler created at 2009-01-25 02:06:00
 
 
 
@@ -422,7 +422,7 @@ I'll try this on my macbook but this will take awhile since it's very slow. If t
 archive/issue_comments_035626.json:
 ```json
 {
-    "body": "Attachment\n\nI should have mentioned that the patches are not meant to be applied on top of each other. I kept the old ones up simply for comparison. Sorry for the confusion.\n\nFor comparison, my (fairly modest) laptop finishes the tests in 126s. Looking through the code again, I realized that I didn't make `default_variable()` cache the results, so I've prepared a patch (`default_variable.patch`) to be applied on top of `piecewise_integration3.patch`.",
+    "body": "Attachment [default_variable.patch](tarball://root/attachments/some-uuid/ticket4721/default_variable.patch) by pbutler created at 2009-01-25 03:52:48\n\nI should have mentioned that the patches are not meant to be applied on top of each other. I kept the old ones up simply for comparison. Sorry for the confusion.\n\nFor comparison, my (fairly modest) laptop finishes the tests in 126s. Looking through the code again, I realized that I didn't make `default_variable()` cache the results, so I've prepared a patch (`default_variable.patch`) to be applied on top of `piecewise_integration3.patch`.",
     "created_at": "2009-01-25T03:52:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4721",
     "type": "issue_comment",
@@ -431,7 +431,7 @@ archive/issue_comments_035626.json:
 }
 ```
 
-Attachment
+Attachment [default_variable.patch](tarball://root/attachments/some-uuid/ticket4721/default_variable.patch) by pbutler created at 2009-01-25 03:52:48
 
 I should have mentioned that the patches are not meant to be applied on top of each other. I kept the old ones up simply for comparison. Sorry for the confusion.
 
@@ -521,7 +521,7 @@ If you agree to all this, could you just make a small patch to go on top of the 
 archive/issue_comments_035628.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached `docstring.patch` which fixes these issues.",
+    "body": "Attachment [docstring.patch](tarball://root/attachments/some-uuid/ticket4721/docstring.patch) by pbutler created at 2009-01-25 17:15:32\n\nI've attached `docstring.patch` which fixes these issues.",
     "created_at": "2009-01-25T17:15:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4721",
     "type": "issue_comment",
@@ -530,7 +530,7 @@ archive/issue_comments_035628.json:
 }
 ```
 
-Attachment
+Attachment [docstring.patch](tarball://root/attachments/some-uuid/ticket4721/docstring.patch) by pbutler created at 2009-01-25 17:15:32
 
 I've attached `docstring.patch` which fixes these issues.
 
@@ -612,7 +612,7 @@ Michael
 archive/issue_comments_035631.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [const_doctest.patch](tarball://root/attachments/some-uuid/ticket4721/const_doctest.patch) by pbutler created at 2009-01-29 03:18:50",
     "created_at": "2009-01-29T03:18:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4721",
     "type": "issue_comment",
@@ -621,7 +621,7 @@ archive/issue_comments_035631.json:
 }
 ```
 
-Attachment
+Attachment [const_doctest.patch](tarball://root/attachments/some-uuid/ticket4721/const_doctest.patch) by pbutler created at 2009-01-29 03:18:50
 
 
 
@@ -630,7 +630,7 @@ Attachment
 archive/issue_comments_035632.json:
 ```json
 {
-    "body": "Attachment\n\nOk, I've added the patches.\n\n`piecewise_all_patches.patch` fixes the problem in `calculus/wester.py` and *replaces all previous patches* that are part of this ticket.\n\n`const_doctest.patch` fixes the problem in `doc/const/const.tex`.",
+    "body": "Attachment [piecewise_all_patches.patch](tarball://root/attachments/some-uuid/ticket4721/piecewise_all_patches.patch) by pbutler created at 2009-01-29 03:22:06\n\nOk, I've added the patches.\n\n`piecewise_all_patches.patch` fixes the problem in `calculus/wester.py` and *replaces all previous patches* that are part of this ticket.\n\n`const_doctest.patch` fixes the problem in `doc/const/const.tex`.",
     "created_at": "2009-01-29T03:22:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4721",
     "type": "issue_comment",
@@ -639,7 +639,7 @@ archive/issue_comments_035632.json:
 }
 ```
 
-Attachment
+Attachment [piecewise_all_patches.patch](tarball://root/attachments/some-uuid/ticket4721/piecewise_all_patches.patch) by pbutler created at 2009-01-29 03:22:06
 
 Ok, I've added the patches.
 

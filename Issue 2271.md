@@ -56,7 +56,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_015056.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2271_adds_DLX.hg](tarball://root/attachments/some-uuid/ticket2271/2271_adds_DLX.hg) by boothby created at 2008-02-22 23:32:33",
     "created_at": "2008-02-22T23:32:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2271",
     "type": "issue_comment",
@@ -65,7 +65,7 @@ archive/issue_comments_015056.json:
 }
 ```
 
-Attachment
+Attachment [2271_adds_DLX.hg](tarball://root/attachments/some-uuid/ticket2271/2271_adds_DLX.hg) by boothby created at 2008-02-22 23:32:33
 
 
 
@@ -114,7 +114,7 @@ Oops, I forgot to add the functions to all.py, so the tests fail.  New patch up 
 archive/issue_comments_015059.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch (although awesome) doesn't quite obey the new doctest-for-every-function rule, since the following functions do not have doctests:\n\n1. `walknodes`\n2. `constructmatrix`\n3. `covercolumn`\n4. `uncovercolumn`\n5. `dosearch`\n6. `solve`",
+    "body": "Attachment [2271_adds_DLX.patch](tarball://root/attachments/some-uuid/ticket2271/2271_adds_DLX.patch) by rlm created at 2008-02-24 19:32:29\n\nThis patch (although awesome) doesn't quite obey the new doctest-for-every-function rule, since the following functions do not have doctests:\n\n1. `walknodes`\n2. `constructmatrix`\n3. `covercolumn`\n4. `uncovercolumn`\n5. `dosearch`\n6. `solve`",
     "created_at": "2008-02-24T19:32:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2271",
     "type": "issue_comment",
@@ -123,7 +123,7 @@ archive/issue_comments_015059.json:
 }
 ```
 
-Attachment
+Attachment [2271_adds_DLX.patch](tarball://root/attachments/some-uuid/ticket2271/2271_adds_DLX.patch) by rlm created at 2008-02-24 19:32:29
 
 This patch (although awesome) doesn't quite obey the new doctest-for-every-function rule, since the following functions do not have doctests:
 
@@ -141,7 +141,7 @@ This patch (although awesome) doesn't quite obey the new doctest-for-every-funct
 archive/issue_comments_015060.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2271_doctests.patch](tarball://root/attachments/some-uuid/ticket2271/2271_doctests.patch) by boothby created at 2008-02-25 19:59:52",
     "created_at": "2008-02-25T19:59:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2271",
     "type": "issue_comment",
@@ -150,7 +150,7 @@ archive/issue_comments_015060.json:
 }
 ```
 
-Attachment
+Attachment [2271_doctests.patch](tarball://root/attachments/some-uuid/ticket2271/2271_doctests.patch) by boothby created at 2008-02-25 19:59:52
 
 
 

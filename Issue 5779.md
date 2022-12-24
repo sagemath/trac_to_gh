@@ -169,7 +169,7 @@ Michael
 archive/issue_comments_045248.json:
 ```json
 {
-    "body": "Attachment\n\nOK, I did the same thing as for fast_callable.",
+    "body": "Attachment [5779-fast-float-pow.patch](tarball://root/attachments/some-uuid/ticket5779/5779-fast-float-pow.patch) by robertwb created at 2009-04-16 05:21:10\n\nOK, I did the same thing as for fast_callable.",
     "created_at": "2009-04-16T05:21:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5779",
     "type": "issue_comment",
@@ -178,7 +178,7 @@ archive/issue_comments_045248.json:
 }
 ```
 
-Attachment
+Attachment [5779-fast-float-pow.patch](tarball://root/attachments/some-uuid/ticket5779/5779-fast-float-pow.patch) by robertwb created at 2009-04-16 05:21:10
 
 OK, I did the same thing as for fast_callable.
 

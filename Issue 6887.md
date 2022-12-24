@@ -67,7 +67,7 @@ Remove assignee davidloeffler.
 archive/issue_comments_056906.json:
 ```json
 {
-    "body": "Attachment\n\nposter by Jenny for an exhibition at U of Warwick",
+    "body": "Attachment [URSS_Poster_Computing_Elliptic_Curve_Isogenies_October_2009.pdf](tarball://root/attachments/some-uuid/ticket6887/URSS_Poster_Computing_Elliptic_Curve_Isogenies_October_2009.pdf) by cremona created at 2009-11-09 09:22:51\n\nposter by Jenny for an exhibition at U of Warwick",
     "created_at": "2009-11-09T09:22:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_056906.json:
 }
 ```
 
-Attachment
+Attachment [URSS_Poster_Computing_Elliptic_Curve_Isogenies_October_2009.pdf](tarball://root/attachments/some-uuid/ticket6887/URSS_Poster_Computing_Elliptic_Curve_Isogenies_October_2009.pdf) by cremona created at 2009-11-09 09:22:51
 
 poster by Jenny for an exhibition at U of Warwick
 
@@ -216,7 +216,7 @@ How weird -- I did not edit any "introspect" files.  I will try to edit the patc
 archive/issue_comments_056913.json:
 ```json
 {
-    "body": "Attachment\n\napplies to 4.3.alpha0",
+    "body": "Attachment [trac_6887-isogeny.patch](tarball://root/attachments/some-uuid/ticket6887/trac_6887-isogeny.patch) by cremona created at 2009-11-27 20:44:35\n\napplies to 4.3.alpha0",
     "created_at": "2009-11-27T20:44:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
@@ -225,7 +225,7 @@ archive/issue_comments_056913.json:
 }
 ```
 
-Attachment
+Attachment [trac_6887-isogeny.patch](tarball://root/attachments/some-uuid/ticket6887/trac_6887-isogeny.patch) by cremona created at 2009-11-27 20:44:35
 
 applies to 4.3.alpha0
 
@@ -338,7 +338,7 @@ Hope to finish and re-post patch on Wednesday.
 archive/issue_comments_056918.json:
 ```json
 {
-    "body": "Attachment\n\nReplaces previous, applies to 4.3.alpha1",
+    "body": "Attachment [trac_6887-isogeny2.patch](tarball://root/attachments/some-uuid/ticket6887/trac_6887-isogeny2.patch) by cremona created at 2009-12-09 20:20:46\n\nReplaces previous, applies to 4.3.alpha1",
     "created_at": "2009-12-09T20:20:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
@@ -347,7 +347,7 @@ archive/issue_comments_056918.json:
 }
 ```
 
-Attachment
+Attachment [trac_6887-isogeny2.patch](tarball://root/attachments/some-uuid/ticket6887/trac_6887-isogeny2.patch) by cremona created at 2009-12-09 20:20:46
 
 Replaces previous, applies to 4.3.alpha1
 

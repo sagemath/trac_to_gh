@@ -85,7 +85,7 @@ I could probably provide timing on sage.math for a release tour (along with a ni
 archive/issue_comments_066970.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7770_hanoi_tower_graph.patch](tarball://root/attachments/some-uuid/ticket7770/trac_7770_hanoi_tower_graph.patch) by rbeezer created at 2009-12-27 00:14:58",
     "created_at": "2009-12-27T00:14:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7770",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_066970.json:
 }
 ```
 
-Attachment
+Attachment [trac_7770_hanoi_tower_graph.patch](tarball://root/attachments/some-uuid/ticket7770/trac_7770_hanoi_tower_graph.patch) by rbeezer created at 2009-12-27 00:14:58
 
 
 

@@ -55,7 +55,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8588
 archive/issue_comments_077775.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-8588](tarball://root/attachments/some-uuid/ticket8588/trac-8588) by itaibn created at 2012-05-30 00:39:37",
     "created_at": "2012-05-30T00:39:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8588",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_077775.json:
 }
 ```
 
-Attachment
+Attachment [trac-8588](tarball://root/attachments/some-uuid/ticket8588/trac-8588) by itaibn created at 2012-05-30 00:39:37
 
 
 
@@ -91,7 +91,7 @@ Just attached a fix.
 archive/issue_comments_077777.json:
 ```json
 {
-    "body": "Attachment\n\nFixed a typo and improved the formatting.",
+    "body": "Attachment [trac-8588-2](tarball://root/attachments/some-uuid/ticket8588/trac-8588-2) by itaibn created at 2012-06-04 22:14:41\n\nFixed a typo and improved the formatting.",
     "created_at": "2012-06-04T22:14:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8588",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_077777.json:
 }
 ```
 
-Attachment
+Attachment [trac-8588-2](tarball://root/attachments/some-uuid/ticket8588/trac-8588-2) by itaibn created at 2012-06-04 22:14:41
 
 Fixed a typo and improved the formatting.
 
@@ -153,7 +153,7 @@ The reason I this fix is that I assumed that whoever made that test knew what th
 archive/issue_comments_077780.json:
 ```json
 {
-    "body": "Attachment\n\nI got\n\n```\nsage: G = SL(2,2)\nsage: TestSuite(G).run()\nsage: list(G)[2]\n[0 1]\n[1 1]\nsage: G.list()[2]\n[0 1]\n[1 1]\n\n```\n",
+    "body": "Attachment [trac-8588-3](tarball://root/attachments/some-uuid/ticket8588/trac-8588-3) by aapitzsch created at 2014-08-18 21:50:01\n\nI got\n\n```\nsage: G = SL(2,2)\nsage: TestSuite(G).run()\nsage: list(G)[2]\n[0 1]\n[1 1]\nsage: G.list()[2]\n[0 1]\n[1 1]\n\n```\n",
     "created_at": "2014-08-18T21:50:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8588",
     "type": "issue_comment",
@@ -162,7 +162,7 @@ archive/issue_comments_077780.json:
 }
 ```
 
-Attachment
+Attachment [trac-8588-3](tarball://root/attachments/some-uuid/ticket8588/trac-8588-3) by aapitzsch created at 2014-08-18 21:50:01
 
 I got
 

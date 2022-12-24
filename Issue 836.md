@@ -100,7 +100,7 @@ sage: L(1)
 archive/issue_comments_005170.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac836.patch](tarball://root/attachments/some-uuid/ticket836/trac836.patch) by was created at 2007-11-03 20:26:55",
     "created_at": "2007-11-03T20:26:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/836",
     "type": "issue_comment",
@@ -109,7 +109,7 @@ archive/issue_comments_005170.json:
 }
 ```
 
-Attachment
+Attachment [trac836.patch](tarball://root/attachments/some-uuid/ticket836/trac836.patch) by was created at 2007-11-03 20:26:55
 
 
 

@@ -69,7 +69,7 @@ after applying the startuptime patch: #3559
 archive/issue_comments_025183.json:
 ```json
 {
-    "body": "Attachment\n\nThis bug is fixed in the new version of sympy:\n\n\n```\n12:01 < ondrej> now it is not\n12:01 < ondrej> we fixed that in 0.5.15\n12:01 < ondrej> bug I fixed important bug in our hg\n12:01 < ondrej> and I am releasing the whole weekend...\n12:02 < ondrej> (important sage<-> sympy bug)\n12:02 < ondrej> so when I release, I'll create a spkg\n```\n",
+    "body": "Attachment [sage-3564.patch](tarball://root/attachments/some-uuid/ticket3564/sage-3564.patch) by was created at 2008-07-06 19:04:34\n\nThis bug is fixed in the new version of sympy:\n\n\n```\n12:01 < ondrej> now it is not\n12:01 < ondrej> we fixed that in 0.5.15\n12:01 < ondrej> bug I fixed important bug in our hg\n12:01 < ondrej> and I am releasing the whole weekend...\n12:02 < ondrej> (important sage<-> sympy bug)\n12:02 < ondrej> so when I release, I'll create a spkg\n```\n",
     "created_at": "2008-07-06T19:04:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3564",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_025183.json:
 }
 ```
 
-Attachment
+Attachment [sage-3564.patch](tarball://root/attachments/some-uuid/ticket3564/sage-3564.patch) by was created at 2008-07-06 19:04:34
 
 This bug is fixed in the new version of sympy:
 

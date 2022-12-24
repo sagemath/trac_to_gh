@@ -57,7 +57,7 @@ Michael
 archive/issue_comments_040743.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-README-osx.txt](tarball://root/attachments/some-uuid/ticket5296/sage-README-osx.txt) by kcrisman created at 2009-09-23 20:19:42",
     "created_at": "2009-09-23T20:19:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5296",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_040743.json:
 }
 ```
 
-Attachment
+Attachment [sage-README-osx.txt](tarball://root/attachments/some-uuid/ticket5296/sage-README-osx.txt) by kcrisman created at 2009-09-23 20:19:42
 
 
 
@@ -205,7 +205,7 @@ But we're very, very close!  So much thanks to iandrus for making huge leaps ove
 archive/issue_comments_040751.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-README-osx.2.txt](tarball://root/attachments/some-uuid/ticket5296/sage-README-osx.2.txt) by iandrus created at 2010-03-30 21:22:23",
     "created_at": "2010-03-30T21:22:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5296",
     "type": "issue_comment",
@@ -214,7 +214,7 @@ archive/issue_comments_040751.json:
 }
 ```
 
-Attachment
+Attachment [sage-README-osx.2.txt](tarball://root/attachments/some-uuid/ticket5296/sage-README-osx.2.txt) by iandrus created at 2010-03-30 21:22:23
 
 
 

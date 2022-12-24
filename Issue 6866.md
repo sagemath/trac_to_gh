@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6866
 archive/issue_comments_056676.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [typos_orth_poly.patch](tarball://root/attachments/some-uuid/ticket6866/typos_orth_poly.patch) by hgranath created at 2009-09-02 15:57:08",
     "created_at": "2009-09-02T15:57:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6866",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_056676.json:
 }
 ```
 
-Attachment
+Attachment [typos_orth_poly.patch](tarball://root/attachments/some-uuid/ticket6866/typos_orth_poly.patch) by hgranath created at 2009-09-02 15:57:08
 
 
 

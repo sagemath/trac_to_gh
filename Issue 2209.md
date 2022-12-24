@@ -137,7 +137,7 @@ Michael
 archive/issue_comments_014592.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [itanium.s](tarball://root/attachments/some-uuid/ticket2209/itanium.s) by was created at 2008-08-27 19:51:23",
     "created_at": "2008-08-27T19:51:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2209",
     "type": "issue_comment",
@@ -146,7 +146,7 @@ archive/issue_comments_014592.json:
 }
 ```
 
-Attachment
+Attachment [itanium.s](tarball://root/attachments/some-uuid/ticket2209/itanium.s) by was created at 2008-08-27 19:51:23
 
 
 

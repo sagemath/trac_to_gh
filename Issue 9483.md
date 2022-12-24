@@ -82,7 +82,7 @@ Changing status from new to needs_review.
 archive/issue_comments_091046.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch fixes the error; all doctests pass.",
+    "body": "Attachment [trac_9483-implicit-plot3d-symbolic-diff.patch](tarball://root/attachments/some-uuid/ticket9483/trac_9483-implicit-plot3d-symbolic-diff.patch) by cwitty created at 2010-07-18 02:52:46\n\nThis patch fixes the error; all doctests pass.",
     "created_at": "2010-07-18T02:52:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9483",
     "type": "issue_comment",
@@ -91,7 +91,7 @@ archive/issue_comments_091046.json:
 }
 ```
 
-Attachment
+Attachment [trac_9483-implicit-plot3d-symbolic-diff.patch](tarball://root/attachments/some-uuid/ticket9483/trac_9483-implicit-plot3d-symbolic-diff.patch) by cwitty created at 2010-07-18 02:52:46
 
 This patch fixes the error; all doctests pass.
 
@@ -331,7 +331,7 @@ Resolution: fixed
 archive/issue_comments_091058.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9483-implicit-plot3d-symbolic-diff-reviewed.patch](tarball://root/attachments/some-uuid/ticket9483/trac_9483-implicit-plot3d-symbolic-diff-reviewed.patch) by jdemeyer created at 2011-06-15 20:13:06",
     "created_at": "2011-06-15T20:13:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9483",
     "type": "issue_comment",
@@ -340,4 +340,4 @@ archive/issue_comments_091058.json:
 }
 ```
 
-Attachment
+Attachment [trac_9483-implicit-plot3d-symbolic-diff-reviewed.patch](tarball://root/attachments/some-uuid/ticket9483/trac_9483-implicit-plot3d-symbolic-diff-reviewed.patch) by jdemeyer created at 2011-06-15 20:13:06

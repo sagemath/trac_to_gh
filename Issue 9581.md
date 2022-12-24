@@ -90,7 +90,7 @@ Nathann
 archive/issue_comments_092539.json:
 ```json
 {
-    "body": "Attachment\n\nNathan, Why did you put this ticket as needs_review? It seems to be important to be a lot more explicit in the definition of each function of generic_graph and implement all the cases in examples... perhaps it is the matter of another ticket...",
+    "body": "Attachment [trac_9581-fix.patch](tarball://root/attachments/some-uuid/ticket9581/trac_9581-fix.patch) by vdelecroix created at 2010-07-23 23:27:42\n\nNathan, Why did you put this ticket as needs_review? It seems to be important to be a lot more explicit in the definition of each function of generic_graph and implement all the cases in examples... perhaps it is the matter of another ticket...",
     "created_at": "2010-07-23T23:27:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9581",
     "type": "issue_comment",
@@ -99,7 +99,7 @@ archive/issue_comments_092539.json:
 }
 ```
 
-Attachment
+Attachment [trac_9581-fix.patch](tarball://root/attachments/some-uuid/ticket9581/trac_9581-fix.patch) by vdelecroix created at 2010-07-23 23:27:42
 
 Nathan, Why did you put this ticket as needs_review? It seems to be important to be a lot more explicit in the definition of each function of generic_graph and implement all the cases in examples... perhaps it is the matter of another ticket...
 
@@ -164,7 +164,7 @@ apply only this patch which takes care of Nathan remark
 archive/issue_comments_092543.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9581-edge_incident.patch](tarball://root/attachments/some-uuid/ticket9581/trac_9581-edge_incident.patch) by vdelecroix created at 2010-10-10 10:20:24",
     "created_at": "2010-10-10T10:20:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9581",
     "type": "issue_comment",
@@ -173,7 +173,7 @@ archive/issue_comments_092543.json:
 }
 ```
 
-Attachment
+Attachment [trac_9581-edge_incident.patch](tarball://root/attachments/some-uuid/ticket9581/trac_9581-edge_incident.patch) by vdelecroix created at 2010-10-10 10:20:24
 
 
 
@@ -238,7 +238,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_092547.json:
 ```json
 {
-    "body": "Attachment\n\nrebased version (apply only this one)",
+    "body": "Attachment [trac_9581-edge_incident.2.patch](tarball://root/attachments/some-uuid/ticket9581/trac_9581-edge_incident.2.patch) by vdelecroix created at 2010-10-11 08:02:00\n\nrebased version (apply only this one)",
     "created_at": "2010-10-11T08:02:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9581",
     "type": "issue_comment",
@@ -247,7 +247,7 @@ archive/issue_comments_092547.json:
 }
 ```
 
-Attachment
+Attachment [trac_9581-edge_incident.2.patch](tarball://root/attachments/some-uuid/ticket9581/trac_9581-edge_incident.2.patch) by vdelecroix created at 2010-10-11 08:02:00
 
 rebased version (apply only this one)
 

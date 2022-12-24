@@ -127,7 +127,7 @@ Nathann
 archive/issue_comments_061684.json:
 ```json
 {
-    "body": "Attachment\n\nThanks for looking at this.  I have replaced the patch with a new one incorporating your comments.",
+    "body": "Attachment [trac_7361.patch](tarball://root/attachments/some-uuid/ticket7361/trac_7361.patch) by AlexGhitza created at 2009-11-01 02:43:37\n\nThanks for looking at this.  I have replaced the patch with a new one incorporating your comments.",
     "created_at": "2009-11-01T02:43:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7361",
     "type": "issue_comment",
@@ -136,7 +136,7 @@ archive/issue_comments_061684.json:
 }
 ```
 
-Attachment
+Attachment [trac_7361.patch](tarball://root/attachments/some-uuid/ticket7361/trac_7361.patch) by AlexGhitza created at 2009-11-01 02:43:37
 
 Thanks for looking at this.  I have replaced the patch with a new one incorporating your comments.
 

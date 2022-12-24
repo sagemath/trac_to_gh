@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3596
 archive/issue_comments_025410.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [doc-3596.patch](tarball://root/attachments/some-uuid/ticket3596/doc-3596.patch) by was created at 2008-07-07 23:55:16",
     "created_at": "2008-07-07T23:55:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3596",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_025410.json:
 }
 ```
 
-Attachment
+Attachment [doc-3596.patch](tarball://root/attachments/some-uuid/ticket3596/doc-3596.patch) by was created at 2008-07-07 23:55:16
 
 
 
@@ -49,7 +49,7 @@ Attachment
 archive/issue_comments_025411.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3596.patch](tarball://root/attachments/some-uuid/ticket3596/sage-3596.patch) by was created at 2008-07-07 23:55:27",
     "created_at": "2008-07-07T23:55:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3596",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_025411.json:
 }
 ```
 
-Attachment
+Attachment [sage-3596.patch](tarball://root/attachments/some-uuid/ticket3596/sage-3596.patch) by was created at 2008-07-07 23:55:27
 
 
 
@@ -67,7 +67,7 @@ Attachment
 archive/issue_comments_025412.json:
 ```json
 {
-    "body": "Attachment\n\nOK, this patch puts the \"rm *.ind\" back, and simply issues two makes instead of one.  It works fine for me.",
+    "body": "Attachment [doc-3596-part2.patch](tarball://root/attachments/some-uuid/ticket3596/doc-3596-part2.patch) by was created at 2008-07-08 00:12:42\n\nOK, this patch puts the \"rm *.ind\" back, and simply issues two makes instead of one.  It works fine for me.",
     "created_at": "2008-07-08T00:12:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3596",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_025412.json:
 }
 ```
 
-Attachment
+Attachment [doc-3596-part2.patch](tarball://root/attachments/some-uuid/ticket3596/doc-3596-part2.patch) by was created at 2008-07-08 00:12:42
 
 OK, this patch puts the "rm *.ind" back, and simply issues two makes instead of one.  It works fine for me.
 

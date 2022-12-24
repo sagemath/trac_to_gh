@@ -71,7 +71,7 @@ Changing priority from major to minor.
 archive/issue_comments_088812.json:
 ```json
 {
-    "body": "Attachment\n\noutput of \"hg diff\" in atlas directory",
+    "body": "Attachment [atlas.patch](tarball://root/attachments/some-uuid/ticket9356/atlas.patch) by jhpalmieri created at 2010-06-28 01:31:30\n\noutput of \"hg diff\" in atlas directory",
     "created_at": "2010-06-28T01:31:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9356",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_088812.json:
 }
 ```
 
-Attachment
+Attachment [atlas.patch](tarball://root/attachments/some-uuid/ticket9356/atlas.patch) by jhpalmieri created at 2010-06-28 01:31:30
 
 output of "hg diff" in atlas directory
 

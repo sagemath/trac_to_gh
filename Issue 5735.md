@@ -93,7 +93,7 @@ sage/rings/rational_field.py:        sage: E = ExtendedRationalField
 archive/issue_comments_044813.json:
 ```json
 {
-    "body": "Attachment\n\nI've removed these files, it only required two minor changes outside of this removal (padic valuation and a coercion test). All doctests in piadics pass.",
+    "body": "Attachment [5735-remove-extended-QQ-ZZ.patch](tarball://root/attachments/some-uuid/ticket5735/5735-remove-extended-QQ-ZZ.patch) by robertwb created at 2009-04-12 00:33:21\n\nI've removed these files, it only required two minor changes outside of this removal (padic valuation and a coercion test). All doctests in piadics pass.",
     "created_at": "2009-04-12T00:33:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5735",
     "type": "issue_comment",
@@ -102,7 +102,7 @@ archive/issue_comments_044813.json:
 }
 ```
 
-Attachment
+Attachment [5735-remove-extended-QQ-ZZ.patch](tarball://root/attachments/some-uuid/ticket5735/5735-remove-extended-QQ-ZZ.patch) by robertwb created at 2009-04-12 00:33:21
 
 I've removed these files, it only required two minor changes outside of this removal (padic valuation and a coercion test). All doctests in piadics pass.
 
@@ -146,7 +146,7 @@ Michael
 archive/issue_comments_044815.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5735-remove-extended-QQ-ZZ.patch](tarball://root/attachments/some-uuid/ticket5735/trac_5735-remove-extended-QQ-ZZ.patch) by mabshoff created at 2009-04-12 20:39:23",
     "created_at": "2009-04-12T20:39:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5735",
     "type": "issue_comment",
@@ -155,7 +155,7 @@ archive/issue_comments_044815.json:
 }
 ```
 
-Attachment
+Attachment [trac_5735-remove-extended-QQ-ZZ.patch](tarball://root/attachments/some-uuid/ticket5735/trac_5735-remove-extended-QQ-ZZ.patch) by mabshoff created at 2009-04-12 20:39:23
 
 
 
@@ -275,7 +275,7 @@ Michael
 archive/issue_comments_044820.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5735-pickle-number-fix.patch](tarball://root/attachments/some-uuid/ticket5735/trac_5735-pickle-number-fix.patch) by mabshoff created at 2009-04-13 08:14:05",
     "created_at": "2009-04-13T08:14:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5735",
     "type": "issue_comment",
@@ -284,7 +284,7 @@ archive/issue_comments_044820.json:
 }
 ```
 
-Attachment
+Attachment [trac_5735-pickle-number-fix.patch](tarball://root/attachments/some-uuid/ticket5735/trac_5735-pickle-number-fix.patch) by mabshoff created at 2009-04-13 08:14:05
 
 
 

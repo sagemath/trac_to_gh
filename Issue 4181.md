@@ -130,7 +130,7 @@ Changing priority from major to blocker.
 archive/issue_comments_030338.json:
 ```json
 {
-    "body": "Attachment\n\nWell, what shall I say: apply the two patches (the one from #5344 and this one), and the long standing \"long\" doctest for \"ell_finite_field.py\" now succeeds on sage 3.3, finally:\n\n```\nsage -t -long \"local/lib/python/site-packages/sage/schemes/elliptic_curves/ell_finite_field.py\"\n         [53.9 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 53.9 seconds\n```\n\n\nI'll test 666 rings (#3760) in a minute.\n\nCheers, gsw",
+    "body": "Attachment [trac-4181.patch](tarball://root/attachments/some-uuid/ticket4181/trac-4181.patch) by GeorgSWeber created at 2009-02-22 22:13:25\n\nWell, what shall I say: apply the two patches (the one from #5344 and this one), and the long standing \"long\" doctest for \"ell_finite_field.py\" now succeeds on sage 3.3, finally:\n\n```\nsage -t -long \"local/lib/python/site-packages/sage/schemes/elliptic_curves/ell_finite_field.py\"\n         [53.9 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 53.9 seconds\n```\n\n\nI'll test 666 rings (#3760) in a minute.\n\nCheers, gsw",
     "created_at": "2009-02-22T22:13:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4181",
     "type": "issue_comment",
@@ -139,7 +139,7 @@ archive/issue_comments_030338.json:
 }
 ```
 
-Attachment
+Attachment [trac-4181.patch](tarball://root/attachments/some-uuid/ticket4181/trac-4181.patch) by GeorgSWeber created at 2009-02-22 22:13:25
 
 Well, what shall I say: apply the two patches (the one from #5344 and this one), and the long standing "long" doctest for "ell_finite_field.py" now succeeds on sage 3.3, finally:
 

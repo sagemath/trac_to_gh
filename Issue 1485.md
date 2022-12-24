@@ -57,7 +57,7 @@ but does not resolve that issue.
 archive/issue_comments_009563.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch applies cleanly and the doctests pass. I cannot check the results due to lack of knowledge, though. Good to go in, if you ask me.",
+    "body": "Attachment [matrix_group20071213.hg](tarball://root/attachments/some-uuid/ticket1485/matrix_group20071213.hg) by malb created at 2008-01-16 16:34:19\n\nThe patch applies cleanly and the doctests pass. I cannot check the results due to lack of knowledge, though. Good to go in, if you ask me.",
     "created_at": "2008-01-16T16:34:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1485",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_009563.json:
 }
 ```
 
-Attachment
+Attachment [matrix_group20071213.hg](tarball://root/attachments/some-uuid/ticket1485/matrix_group20071213.hg) by malb created at 2008-01-16 16:34:19
 
 The patch applies cleanly and the doctests pass. I cannot check the results due to lack of knowledge, though. Good to go in, if you ask me.
 

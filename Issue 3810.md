@@ -135,7 +135,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3810
 archive/issue_comments_027068.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3810-ncalexan-class-group-list.patch](tarball://root/attachments/some-uuid/ticket3810/3810-ncalexan-class-group-list.patch) by ncalexan created at 2008-08-12 04:57:37",
     "created_at": "2008-08-12T04:57:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3810",
     "type": "issue_comment",
@@ -144,7 +144,7 @@ archive/issue_comments_027068.json:
 }
 ```
 
-Attachment
+Attachment [3810-ncalexan-class-group-list.patch](tarball://root/attachments/some-uuid/ticket3810/3810-ncalexan-class-group-list.patch) by ncalexan created at 2008-08-12 04:57:37
 
 
 
@@ -181,7 +181,7 @@ sage: G.list()
 archive/issue_comments_027070.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3810-ncalexan-abelian-group-iter-2.patch](tarball://root/attachments/some-uuid/ticket3810/3810-ncalexan-abelian-group-iter-2.patch) by ncalexan created at 2008-08-13 21:42:44",
     "created_at": "2008-08-13T21:42:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3810",
     "type": "issue_comment",
@@ -190,7 +190,7 @@ archive/issue_comments_027070.json:
 }
 ```
 
-Attachment
+Attachment [3810-ncalexan-abelian-group-iter-2.patch](tarball://root/attachments/some-uuid/ticket3810/3810-ncalexan-abelian-group-iter-2.patch) by ncalexan created at 2008-08-13 21:42:44
 
 
 
@@ -392,7 +392,7 @@ NB The patch at #4061 which has just been merged into 3.2.2 contains a fix for t
 archive/issue_comments_027079.json:
 ```json
 {
-    "body": "Attachment\n\nReplaces all previous; apply to 3.2.1 + #4061 patches",
+    "body": "Attachment [sage-3810-combined.patch](tarball://root/attachments/some-uuid/ticket3810/sage-3810-combined.patch) by cremona created at 2008-12-07 17:07:15\n\nReplaces all previous; apply to 3.2.1 + #4061 patches",
     "created_at": "2008-12-07T17:07:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3810",
     "type": "issue_comment",
@@ -401,7 +401,7 @@ archive/issue_comments_027079.json:
 }
 ```
 
-Attachment
+Attachment [sage-3810-combined.patch](tarball://root/attachments/some-uuid/ticket3810/sage-3810-combined.patch) by cremona created at 2008-12-07 17:07:15
 
 Replaces all previous; apply to 3.2.1 + #4061 patches
 
@@ -586,7 +586,7 @@ John
 archive/issue_comments_027085.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3810-fix64.patch](tarball://root/attachments/some-uuid/ticket3810/sage-3810-fix64.patch) by cremona created at 2008-12-08 10:07:42",
     "created_at": "2008-12-08T10:07:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3810",
     "type": "issue_comment",
@@ -595,7 +595,7 @@ archive/issue_comments_027085.json:
 }
 ```
 
-Attachment
+Attachment [sage-3810-fix64.patch](tarball://root/attachments/some-uuid/ticket3810/sage-3810-fix64.patch) by cremona created at 2008-12-08 10:07:42
 
 
 

@@ -213,7 +213,7 @@ Given that this is a printing problem rather than an incorrect output problem, I
 archive/issue_comments_021106.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3056_kill_karat.patch](tarball://root/attachments/some-uuid/ticket3056/3056_kill_karat.patch) by boothby created at 2009-01-22 07:58:42",
     "created_at": "2009-01-22T07:58:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3056",
     "type": "issue_comment",
@@ -222,7 +222,7 @@ archive/issue_comments_021106.json:
 }
 ```
 
-Attachment
+Attachment [3056_kill_karat.patch](tarball://root/attachments/some-uuid/ticket3056/3056_kill_karat.patch) by boothby created at 2009-01-22 07:58:42
 
 
 
@@ -231,7 +231,7 @@ Attachment
 archive/issue_comments_021107.json:
 ```json
 {
-    "body": "Attachment\n\nChanges doctests to reflect classical multiplication used instead of karatsuba.  Note that in every case (with possible exception of the test in padics/pow_computer_ext.pyx), the result is better (higher precision when inexact; simpler form when exact).  In the case of padics/pow_computer_ext.pyx, it is unclear that the original was correct to any reasonable precision.  David Roe seemed to think that this was ok.\n\nAlso, I added the test that presented this problem to the doctests of polynomial_element.__mul__",
+    "body": "Attachment [3056-doctest.patch](tarball://root/attachments/some-uuid/ticket3056/3056-doctest.patch) by boothby created at 2009-01-22 09:27:31\n\nChanges doctests to reflect classical multiplication used instead of karatsuba.  Note that in every case (with possible exception of the test in padics/pow_computer_ext.pyx), the result is better (higher precision when inexact; simpler form when exact).  In the case of padics/pow_computer_ext.pyx, it is unclear that the original was correct to any reasonable precision.  David Roe seemed to think that this was ok.\n\nAlso, I added the test that presented this problem to the doctests of polynomial_element.__mul__",
     "created_at": "2009-01-22T09:27:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3056",
     "type": "issue_comment",
@@ -240,7 +240,7 @@ archive/issue_comments_021107.json:
 }
 ```
 
-Attachment
+Attachment [3056-doctest.patch](tarball://root/attachments/some-uuid/ticket3056/3056-doctest.patch) by boothby created at 2009-01-22 09:27:31
 
 Changes doctests to reflect classical multiplication used instead of karatsuba.  Note that in every case (with possible exception of the test in padics/pow_computer_ext.pyx), the result is better (higher precision when inexact; simpler form when exact).  In the case of padics/pow_computer_ext.pyx, it is unclear that the original was correct to any reasonable precision.  David Roe seemed to think that this was ok.
 

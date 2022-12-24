@@ -111,7 +111,7 @@ Solves the integer and real types. Complex types are still an issue which will n
 archive/issue_comments_038722.json:
 ```json
 {
-    "body": "Attachment\n\nBrilliant!  I'm upgrading now so I can test this!",
+    "body": "Attachment [5081-numpy-types.patch](tarball://root/attachments/some-uuid/ticket5081/5081-numpy-types.patch) by jason created at 2009-07-09 09:24:24\n\nBrilliant!  I'm upgrading now so I can test this!",
     "created_at": "2009-07-09T09:24:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5081",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_038722.json:
 }
 ```
 
-Attachment
+Attachment [5081-numpy-types.patch](tarball://root/attachments/some-uuid/ticket5081/5081-numpy-types.patch) by jason created at 2009-07-09 09:24:24
 
 Brilliant!  I'm upgrading now so I can test this!
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5543
 archive/issue_comments_043131.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [rif-unique-parents.patch](tarball://root/attachments/some-uuid/ticket5543/rif-unique-parents.patch) by was created at 2009-04-12 04:20:16",
     "created_at": "2009-04-12T04:20:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5543",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_043131.json:
 }
 ```
 
-Attachment
+Attachment [rif-unique-parents.patch](tarball://root/attachments/some-uuid/ticket5543/rif-unique-parents.patch) by was created at 2009-04-12 04:20:16
 
 
 

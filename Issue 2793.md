@@ -54,7 +54,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2793
 archive/issue_comments_019178.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-2793.2.patch](tarball://root/attachments/some-uuid/ticket2793/sage-2793.2.patch) by was created at 2008-04-04 01:09:42",
     "created_at": "2008-04-04T01:09:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2793",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_019178.json:
 }
 ```
 
-Attachment
+Attachment [sage-2793.2.patch](tarball://root/attachments/some-uuid/ticket2793/sage-2793.2.patch) by was created at 2008-04-04 01:09:42
 
 
 
@@ -90,7 +90,7 @@ Breaks on `s = "\\"`.
 archive/issue_comments_019180.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-2793-part2.patch](tarball://root/attachments/some-uuid/ticket2793/sage-2793-part2.patch) by was created at 2008-04-04 19:00:33",
     "created_at": "2008-04-04T19:00:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2793",
     "type": "issue_comment",
@@ -99,7 +99,7 @@ archive/issue_comments_019180.json:
 }
 ```
 
-Attachment
+Attachment [sage-2793-part2.patch](tarball://root/attachments/some-uuid/ticket2793/sage-2793-part2.patch) by was created at 2008-04-04 19:00:33
 
 
 

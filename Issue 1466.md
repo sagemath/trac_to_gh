@@ -74,7 +74,7 @@ Makes the traceback message: "click to the left of this block for traceback" ins
 archive/issue_comments_009436.json:
 ```json
 {
-    "body": "Attachment\n\nIn case anyone considers this confusing enough, this patch makes the error message slightly more verbose.",
+    "body": "Attachment [trac_1466-click-to-the-left-verbose.patch](tarball://root/attachments/some-uuid/ticket1466/trac_1466-click-to-the-left-verbose.patch) by timdumol created at 2009-11-15 15:41:57\n\nIn case anyone considers this confusing enough, this patch makes the error message slightly more verbose.",
     "created_at": "2009-11-15T15:41:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1466",
     "type": "issue_comment",
@@ -83,7 +83,7 @@ archive/issue_comments_009436.json:
 }
 ```
 
-Attachment
+Attachment [trac_1466-click-to-the-left-verbose.patch](tarball://root/attachments/some-uuid/ticket1466/trac_1466-click-to-the-left-verbose.patch) by timdumol created at 2009-11-15 15:41:57
 
 In case anyone considers this confusing enough, this patch makes the error message slightly more verbose.
 

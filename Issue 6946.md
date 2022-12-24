@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6946
 archive/issue_comments_057430.json:
 ```json
 {
-    "body": "Attachment\n\ndelaunay rpm patch",
+    "body": "Attachment [sage-4.1.1-list_plot.patch](tarball://root/attachments/some-uuid/ticket6946/sage-4.1.1-list_plot.patch) by pcpa created at 2009-09-16 20:20:40\n\ndelaunay rpm patch",
     "created_at": "2009-09-16T20:20:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6946",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_057430.json:
 }
 ```
 
-Attachment
+Attachment [sage-4.1.1-list_plot.patch](tarball://root/attachments/some-uuid/ticket6946/sage-4.1.1-list_plot.patch) by pcpa created at 2009-09-16 20:20:40
 
 delaunay rpm patch
 
@@ -120,7 +120,7 @@ just for documentation - but this patch should be no longer applied, and instead
 archive/issue_comments_057434.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-4.1.1-mpmath.patch](tarball://root/attachments/some-uuid/ticket6946/sage-4.1.1-mpmath.patch) by jason created at 2011-03-15 05:34:41",
     "created_at": "2011-03-15T05:34:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6946",
     "type": "issue_comment",
@@ -129,7 +129,7 @@ archive/issue_comments_057434.json:
 }
 ```
 
-Attachment
+Attachment [sage-4.1.1-mpmath.patch](tarball://root/attachments/some-uuid/ticket6946/sage-4.1.1-mpmath.patch) by jason created at 2011-03-15 05:34:41
 
 
 

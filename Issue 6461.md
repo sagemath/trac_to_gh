@@ -142,7 +142,7 @@ based on Sage 4.1.1.alpha0
 archive/issue_comments_052221.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:2 malb]:\n>  * I assume that the specification implemented is correct, I didn't check against the paper, are there official test vectors?\n\nThere are no official test vectors for simplified DES. Even the original paper by Schaefer doesn't contain any such vectors.\n\n\n\n\n>  * `__cmp__` expects you to return an integer (-1,0,1) and not `True` or `False`, cf. http://docs.python.org/reference/datamodel.html\n\nThe latest patch `trac_6461-sdes.patch` now uses `__eq__()`. I have also modified the class `MiniAES` in `sage/crypto/block_cipher/miniaes.py` so it now also uses `__eq__()`.\n\n\n\n\n>  * it would be nice to have an `sbox(n)` function to return the S-Boxes 0 and 1\n\nDone.",
+    "body": "Attachment [trac_6461-sdes.patch](tarball://root/attachments/some-uuid/ticket6461/trac_6461-sdes.patch) by mvngu created at 2009-07-24 21:05:06\n\nReplying to [comment:2 malb]:\n>  * I assume that the specification implemented is correct, I didn't check against the paper, are there official test vectors?\n\nThere are no official test vectors for simplified DES. Even the original paper by Schaefer doesn't contain any such vectors.\n\n\n\n\n>  * `__cmp__` expects you to return an integer (-1,0,1) and not `True` or `False`, cf. http://docs.python.org/reference/datamodel.html\n\nThe latest patch `trac_6461-sdes.patch` now uses `__eq__()`. I have also modified the class `MiniAES` in `sage/crypto/block_cipher/miniaes.py` so it now also uses `__eq__()`.\n\n\n\n\n>  * it would be nice to have an `sbox(n)` function to return the S-Boxes 0 and 1\n\nDone.",
     "created_at": "2009-07-24T21:05:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6461",
     "type": "issue_comment",
@@ -151,7 +151,7 @@ archive/issue_comments_052221.json:
 }
 ```
 
-Attachment
+Attachment [trac_6461-sdes.patch](tarball://root/attachments/some-uuid/ticket6461/trac_6461-sdes.patch) by mvngu created at 2009-07-24 21:05:06
 
 Replying to [comment:2 malb]:
 >  * I assume that the specification implemented is correct, I didn't check against the paper, are there official test vectors?

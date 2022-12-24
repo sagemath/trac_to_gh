@@ -300,7 +300,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_052954.json:
 ```json
 {
-    "body": "Attachment\n\nHere are two patches, one for the scripts repo and one for the main repo.  Note that one patch removes the file \"parallel/multiprocessing.py\" (actually renaming it to \"multiprocessing_sage.py\" plus the requisite changes to import statements).  When I tried to run Sage after applying this patch, I still had copies of multiprocessing.py lying around which I had to delete by hand (this won't be a problem from a build from scratch, but upgrading could problematic): I had to delete the files\n\n```\nSAGE_ROOT/devel/sage/build/lib.macosx-10.6-i386-2.6/sage/parallel/multiprocessing.py\nSAGE_ROOT/local/lib/python/site-packages/sage/parallel/multiprocessing.py\n```\n\n(Without deleting these files, commands like `import multiprocessing` in parallel/multiprocessing_sage.py imported the old Sage file `multiprocessing.py` instead of the Python module `multiprocessing`.)\n\nI haven't run a full test suite yet, but \"sage -tp 2 SAGE_ROOT/devel/sage/sage/parallel/\" passes all tests for me.",
+    "body": "Attachment [trac_6503-scripts.patch](tarball://root/attachments/some-uuid/ticket6503/trac_6503-scripts.patch) by jhpalmieri created at 2010-01-26 19:57:35\n\nHere are two patches, one for the scripts repo and one for the main repo.  Note that one patch removes the file \"parallel/multiprocessing.py\" (actually renaming it to \"multiprocessing_sage.py\" plus the requisite changes to import statements).  When I tried to run Sage after applying this patch, I still had copies of multiprocessing.py lying around which I had to delete by hand (this won't be a problem from a build from scratch, but upgrading could problematic): I had to delete the files\n\n```\nSAGE_ROOT/devel/sage/build/lib.macosx-10.6-i386-2.6/sage/parallel/multiprocessing.py\nSAGE_ROOT/local/lib/python/site-packages/sage/parallel/multiprocessing.py\n```\n\n(Without deleting these files, commands like `import multiprocessing` in parallel/multiprocessing_sage.py imported the old Sage file `multiprocessing.py` instead of the Python module `multiprocessing`.)\n\nI haven't run a full test suite yet, but \"sage -tp 2 SAGE_ROOT/devel/sage/sage/parallel/\" passes all tests for me.",
     "created_at": "2010-01-26T19:57:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6503",
     "type": "issue_comment",
@@ -309,7 +309,7 @@ archive/issue_comments_052954.json:
 }
 ```
 
-Attachment
+Attachment [trac_6503-scripts.patch](tarball://root/attachments/some-uuid/ticket6503/trac_6503-scripts.patch) by jhpalmieri created at 2010-01-26 19:57:35
 
 Here are two patches, one for the scripts repo and one for the main repo.  Note that one patch removes the file "parallel/multiprocessing.py" (actually renaming it to "multiprocessing_sage.py" plus the requisite changes to import statements).  When I tried to run Sage after applying this patch, I still had copies of multiprocessing.py lying around which I had to delete by hand (this won't be a problem from a build from scratch, but upgrading could problematic): I had to delete the files
 
@@ -576,7 +576,7 @@ patch for Sage library
 archive/issue_comments_052962.json:
 ```json
 {
-    "body": "Attachment\n\nOkay, I took a copy of Sage, applied the attached patches and made Minh's suggested changes to install and deps, then ran `sage -sdist`.  I took the resulting tar file and tried to build it.  With MAKE defined as \"make -j2\", I ran into the same issue that Minh did.  At that point I redefined MAKE to be \"make\", and the build finished.  I'm running doctests now, but everything looks good.  In particular, `sage/sage/parallel` passes doctests.",
+    "body": "Attachment [trac_6503-sage.patch](tarball://root/attachments/some-uuid/ticket6503/trac_6503-sage.patch) by jhpalmieri created at 2010-02-26 20:32:11\n\nOkay, I took a copy of Sage, applied the attached patches and made Minh's suggested changes to install and deps, then ran `sage -sdist`.  I took the resulting tar file and tried to build it.  With MAKE defined as \"make -j2\", I ran into the same issue that Minh did.  At that point I redefined MAKE to be \"make\", and the build finished.  I'm running doctests now, but everything looks good.  In particular, `sage/sage/parallel` passes doctests.",
     "created_at": "2010-02-26T20:32:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6503",
     "type": "issue_comment",
@@ -585,7 +585,7 @@ archive/issue_comments_052962.json:
 }
 ```
 
-Attachment
+Attachment [trac_6503-sage.patch](tarball://root/attachments/some-uuid/ticket6503/trac_6503-sage.patch) by jhpalmieri created at 2010-02-26 20:32:11
 
 Okay, I took a copy of Sage, applied the attached patches and made Minh's suggested changes to install and deps, then ran `sage -sdist`.  I took the resulting tar file and tried to build it.  With MAKE defined as "make -j2", I ran into the same issue that Minh did.  At that point I redefined MAKE to be "make", and the build finished.  I'm running doctests now, but everything looks good.  In particular, `sage/sage/parallel` passes doctests.
 
@@ -668,7 +668,7 @@ http://wiki.sagemath.org/MercurialQueues
 archive/issue_comments_052966.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6503-fix.patch](tarball://root/attachments/some-uuid/ticket6503/trac_6503-fix.patch) by mhansen created at 2010-02-27 20:12:36",
     "created_at": "2010-02-27T20:12:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6503",
     "type": "issue_comment",
@@ -677,7 +677,7 @@ archive/issue_comments_052966.json:
 }
 ```
 
-Attachment
+Attachment [trac_6503-fix.patch](tarball://root/attachments/some-uuid/ticket6503/trac_6503-fix.patch) by mhansen created at 2010-02-27 20:12:36
 
 
 
@@ -832,7 +832,7 @@ rebased against #8191
 archive/issue_comments_052975.json:
 ```json
 {
-    "body": "Attachment\n\nrebased against #8191",
+    "body": "Attachment [install](tarball://root/attachments/some-uuid/ticket6503/install) by jhpalmieri created at 2010-03-02 20:14:39\n\nrebased against #8191",
     "created_at": "2010-03-02T20:14:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6503",
     "type": "issue_comment",
@@ -841,7 +841,7 @@ archive/issue_comments_052975.json:
 }
 ```
 
-Attachment
+Attachment [install](tarball://root/attachments/some-uuid/ticket6503/install) by jhpalmieri created at 2010-03-02 20:14:39
 
 rebased against #8191
 
@@ -870,7 +870,7 @@ rebased against #8191
 archive/issue_comments_052977.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket6503/deps) by jhpalmieri created at 2010-03-02 20:14:58",
     "created_at": "2010-03-02T20:14:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6503",
     "type": "issue_comment",
@@ -879,7 +879,7 @@ archive/issue_comments_052977.json:
 }
 ```
 
-Attachment
+Attachment [deps](tarball://root/attachments/some-uuid/ticket6503/deps) by jhpalmieri created at 2010-03-02 20:14:58
 
 
 
@@ -888,7 +888,7 @@ Attachment
 archive/issue_comments_052978.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [install.diff](tarball://root/attachments/some-uuid/ticket6503/install.diff) by jhpalmieri created at 2010-03-02 20:15:06",
     "created_at": "2010-03-02T20:15:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6503",
     "type": "issue_comment",
@@ -897,7 +897,7 @@ archive/issue_comments_052978.json:
 }
 ```
 
-Attachment
+Attachment [install.diff](tarball://root/attachments/some-uuid/ticket6503/install.diff) by jhpalmieri created at 2010-03-02 20:15:06
 
 
 

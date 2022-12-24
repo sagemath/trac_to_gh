@@ -63,7 +63,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1007
 archive/issue_comments_006157.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [cyclo-1007.patch](tarball://root/attachments/some-uuid/ticket1007/cyclo-1007.patch) by robertwb created at 2007-10-27 10:48:20",
     "created_at": "2007-10-27T10:48:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1007",
     "type": "issue_comment",
@@ -72,7 +72,7 @@ archive/issue_comments_006157.json:
 }
 ```
 
-Attachment
+Attachment [cyclo-1007.patch](tarball://root/attachments/some-uuid/ticket1007/cyclo-1007.patch) by robertwb created at 2007-10-27 10:48:20
 
 
 

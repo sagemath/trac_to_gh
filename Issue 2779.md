@@ -142,7 +142,7 @@ Outputs a clearer error message (see comment)
 archive/issue_comments_019090.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_2779-sagenb-error-message.patch](tarball://root/attachments/some-uuid/ticket2779/trac_2779-sagenb-error-message.patch) by wjp created at 2010-01-17 19:32:13",
     "created_at": "2010-01-17T19:32:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2779",
     "type": "issue_comment",
@@ -151,7 +151,7 @@ archive/issue_comments_019090.json:
 }
 ```
 
-Attachment
+Attachment [trac_2779-sagenb-error-message.patch](tarball://root/attachments/some-uuid/ticket2779/trac_2779-sagenb-error-message.patch) by wjp created at 2010-01-17 19:32:13
 
 
 
@@ -160,7 +160,7 @@ Attachment
 archive/issue_comments_019091.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review for Tim's patch. It works great for me.\n\nI've added a second minor patch (to be applied after `trac_2779-sagenb-error-message.patch`) that moves displaying the \"Please open your browser\" banner to below the check Tim added.",
+    "body": "Attachment [2779_2_banner.patch](tarball://root/attachments/some-uuid/ticket2779/2779_2_banner.patch) by wjp created at 2010-01-17 19:38:13\n\nPositive review for Tim's patch. It works great for me.\n\nI've added a second minor patch (to be applied after `trac_2779-sagenb-error-message.patch`) that moves displaying the \"Please open your browser\" banner to below the check Tim added.",
     "created_at": "2010-01-17T19:38:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2779",
     "type": "issue_comment",
@@ -169,7 +169,7 @@ archive/issue_comments_019091.json:
 }
 ```
 
-Attachment
+Attachment [2779_2_banner.patch](tarball://root/attachments/some-uuid/ticket2779/2779_2_banner.patch) by wjp created at 2010-01-17 19:38:13
 
 Positive review for Tim's patch. It works great for me.
 

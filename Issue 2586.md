@@ -91,7 +91,7 @@ Michael
 archive/issue_comments_017701.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2586_latex_polynomials.patch](tarball://root/attachments/some-uuid/ticket2586/2586_latex_polynomials.patch) by AlexGhitza created at 2008-03-19 23:31:17",
     "created_at": "2008-03-19T23:31:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2586",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_017701.json:
 }
 ```
 
-Attachment
+Attachment [2586_latex_polynomials.patch](tarball://root/attachments/some-uuid/ticket2586/2586_latex_polynomials.patch) by AlexGhitza created at 2008-03-19 23:31:17
 
 
 
@@ -109,7 +109,7 @@ Attachment
 archive/issue_comments_017702.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2586_doc_const.patch](tarball://root/attachments/some-uuid/ticket2586/2586_doc_const.patch) by AlexGhitza created at 2008-03-19 23:32:35",
     "created_at": "2008-03-19T23:32:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2586",
     "type": "issue_comment",
@@ -118,7 +118,7 @@ archive/issue_comments_017702.json:
 }
 ```
 
-Attachment
+Attachment [2586_doc_const.patch](tarball://root/attachments/some-uuid/ticket2586/2586_doc_const.patch) by AlexGhitza created at 2008-03-19 23:32:35
 
 
 
@@ -207,7 +207,7 @@ Resolution: fixed
 archive/issue_comments_017707.json:
 ```json
 {
-    "body": "Attachment\n\nMerged all three patches in Sage 2.11.alpha1",
+    "body": "Attachment [trac_2586-further-doctest-fixes.patch](tarball://root/attachments/some-uuid/ticket2586/trac_2586-further-doctest-fixes.patch) by mabshoff created at 2008-03-21 04:17:19\n\nMerged all three patches in Sage 2.11.alpha1",
     "created_at": "2008-03-21T04:17:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2586",
     "type": "issue_comment",
@@ -216,6 +216,6 @@ archive/issue_comments_017707.json:
 }
 ```
 
-Attachment
+Attachment [trac_2586-further-doctest-fixes.patch](tarball://root/attachments/some-uuid/ticket2586/trac_2586-further-doctest-fixes.patch) by mabshoff created at 2008-03-21 04:17:19
 
 Merged all three patches in Sage 2.11.alpha1

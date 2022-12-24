@@ -83,7 +83,7 @@ Changing component from Cygwin to basic arithmetic.
 archive/issue_comments_021423.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3102.patch](tarball://root/attachments/some-uuid/ticket3102/trac_3102.patch) by gfurnish created at 2008-09-07 22:04:16",
     "created_at": "2008-09-07T22:04:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3102",
     "type": "issue_comment",
@@ -92,7 +92,7 @@ archive/issue_comments_021423.json:
 }
 ```
 
-Attachment
+Attachment [trac_3102.patch](tarball://root/attachments/some-uuid/ticket3102/trac_3102.patch) by gfurnish created at 2008-09-07 22:04:16
 
 
 
@@ -209,7 +209,7 @@ John Cremona is definitely right here.
 archive/issue_comments_021428.json:
 ```json
 {
-    "body": "Attachment\n\nfollowup -- apply the above patch *and* this one.",
+    "body": "Attachment [sage-3102.patch](tarball://root/attachments/some-uuid/ticket3102/sage-3102.patch) by was created at 2008-11-27 07:01:34\n\nfollowup -- apply the above patch *and* this one.",
     "created_at": "2008-11-27T07:01:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3102",
     "type": "issue_comment",
@@ -218,7 +218,7 @@ archive/issue_comments_021428.json:
 }
 ```
 
-Attachment
+Attachment [sage-3102.patch](tarball://root/attachments/some-uuid/ticket3102/sage-3102.patch) by was created at 2008-11-27 07:01:34
 
 followup -- apply the above patch *and* this one.
 

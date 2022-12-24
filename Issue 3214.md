@@ -338,7 +338,7 @@ Please post to sage-devel, hopefully it will shed some light on what should happ
 archive/issue_comments_022256.json:
 ```json
 {
-    "body": "Attachment\n\nOK, following the discussion at http://groups.google.com/group/sage-devel/browse_thread/thread/35abc577b5ba78e7/170c0da22b9a36b9#170c0da22b9a36b9 I am implementing a trivial gcd() method for rational numbers and renaming the current rational gcd() to content().\nThe (newly) attached patch also touches a few other files in the sage library that are affected by this.\n\nThere is one doctest failure that I don't know how to deal with, in the symbolic gcd of ginac; sage -t symbolic/expression.pyx exposes this.",
+    "body": "Attachment [trac_3214.patch](tarball://root/attachments/some-uuid/ticket3214/trac_3214.patch) by AlexGhitza created at 2009-01-04 18:28:23\n\nOK, following the discussion at http://groups.google.com/group/sage-devel/browse_thread/thread/35abc577b5ba78e7/170c0da22b9a36b9#170c0da22b9a36b9 I am implementing a trivial gcd() method for rational numbers and renaming the current rational gcd() to content().\nThe (newly) attached patch also touches a few other files in the sage library that are affected by this.\n\nThere is one doctest failure that I don't know how to deal with, in the symbolic gcd of ginac; sage -t symbolic/expression.pyx exposes this.",
     "created_at": "2009-01-04T18:28:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3214",
     "type": "issue_comment",
@@ -347,7 +347,7 @@ archive/issue_comments_022256.json:
 }
 ```
 
-Attachment
+Attachment [trac_3214.patch](tarball://root/attachments/some-uuid/ticket3214/trac_3214.patch) by AlexGhitza created at 2009-01-04 18:28:23
 
 OK, following the discussion at http://groups.google.com/group/sage-devel/browse_thread/thread/35abc577b5ba78e7/170c0da22b9a36b9#170c0da22b9a36b9 I am implementing a trivial gcd() method for rational numbers and renaming the current rational gcd() to content().
 The (newly) attached patch also touches a few other files in the sage library that are affected by this.
@@ -442,7 +442,7 @@ The right time to work on fixing the pynac issue would have been SD12 since both
 archive/issue_comments_022260.json:
 ```json
 {
-    "body": "Attachment\n\nI finally found time to look at this.\n\nattachment:trac_3214-py_gcd.patch fixes the doctest problem. It is not a very clean solution, but since we are going to switch to using Sage/Singular for gcd's it's not worth investing more time in this.\n\nIf someone can look over my 2 line patch, and change the subject to \"positive review\", maybe this can still make it to 3.3.",
+    "body": "Attachment [trac_3214-py_gcd.patch](tarball://root/attachments/some-uuid/ticket3214/trac_3214-py_gcd.patch) by burcin created at 2009-02-08 18:30:23\n\nI finally found time to look at this.\n\nattachment:trac_3214-py_gcd.patch fixes the doctest problem. It is not a very clean solution, but since we are going to switch to using Sage/Singular for gcd's it's not worth investing more time in this.\n\nIf someone can look over my 2 line patch, and change the subject to \"positive review\", maybe this can still make it to 3.3.",
     "created_at": "2009-02-08T18:30:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3214",
     "type": "issue_comment",
@@ -451,7 +451,7 @@ archive/issue_comments_022260.json:
 }
 ```
 
-Attachment
+Attachment [trac_3214-py_gcd.patch](tarball://root/attachments/some-uuid/ticket3214/trac_3214-py_gcd.patch) by burcin created at 2009-02-08 18:30:23
 
 I finally found time to look at this.
 

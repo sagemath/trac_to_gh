@@ -63,7 +63,7 @@ main patch
 archive/issue_comments_001954.json:
 ```json
 {
-    "body": "Attachment\n\nfollow-up patch for faster ZZ.digits()",
+    "body": "Attachment [4867.patch](tarball://root/attachments/some-uuid/ticket397/4867.patch) by malb created at 2007-06-30 20:08:33\n\nfollow-up patch for faster ZZ.digits()",
     "created_at": "2007-06-30T20:08:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/397",
     "type": "issue_comment",
@@ -72,7 +72,7 @@ archive/issue_comments_001954.json:
 }
 ```
 
-Attachment
+Attachment [4867.patch](tarball://root/attachments/some-uuid/ticket397/4867.patch) by malb created at 2007-06-30 20:08:33
 
 follow-up patch for faster ZZ.digits()
 
@@ -83,7 +83,7 @@ follow-up patch for faster ZZ.digits()
 archive/issue_comments_001955.json:
 ```json
 {
-    "body": "Attachment\n\nAdded follow-up patch based on William's input.",
+    "body": "Attachment [4868.patch](tarball://root/attachments/some-uuid/ticket397/4868.patch) by malb created at 2007-06-30 20:11:14\n\nAdded follow-up patch based on William's input.",
     "created_at": "2007-06-30T20:11:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/397",
     "type": "issue_comment",
@@ -92,7 +92,7 @@ archive/issue_comments_001955.json:
 }
 ```
 
-Attachment
+Attachment [4868.patch](tarball://root/attachments/some-uuid/ticket397/4868.patch) by malb created at 2007-06-30 20:11:14
 
 Added follow-up patch based on William's input.
 

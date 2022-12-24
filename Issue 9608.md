@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9608
 archive/issue_comments_093073.json:
 ```json
 {
-    "body": "Attachment\n\nMake the docstring raw",
+    "body": "Attachment [trac_9608-matlab_docbuild.patch](tarball://root/attachments/some-uuid/ticket9608/trac_9608-matlab_docbuild.patch) by mpatel created at 2010-07-27 07:55:33\n\nMake the docstring raw",
     "created_at": "2010-07-27T07:55:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9608",
     "type": "issue_comment",
@@ -53,7 +53,7 @@ archive/issue_comments_093073.json:
 }
 ```
 
-Attachment
+Attachment [trac_9608-matlab_docbuild.patch](tarball://root/attachments/some-uuid/ticket9608/trac_9608-matlab_docbuild.patch) by mpatel created at 2010-07-27 07:55:33
 
 Make the docstring raw
 

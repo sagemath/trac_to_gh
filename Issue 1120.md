@@ -49,7 +49,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1120
 archive/issue_comments_006768.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ell_finite_field_order.patch](tarball://root/attachments/some-uuid/ticket1120/ell_finite_field_order.patch) by mabshoff created at 2007-11-11 23:38:48",
     "created_at": "2007-11-11T23:38:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1120",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_006768.json:
 }
 ```
 
-Attachment
+Attachment [ell_finite_field_order.patch](tarball://root/attachments/some-uuid/ticket1120/ell_finite_field_order.patch) by mabshoff created at 2007-11-11 23:38:48
 
 
 

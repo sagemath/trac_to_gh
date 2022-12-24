@@ -180,7 +180,7 @@ That makes sense. The attached patch implements it.
 archive/issue_comments_007560.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8015.patch](tarball://root/attachments/some-uuid/ticket1217/8015.patch) by wjp created at 2008-01-18 16:57:42",
     "created_at": "2008-01-18T16:57:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1217",
     "type": "issue_comment",
@@ -189,7 +189,7 @@ archive/issue_comments_007560.json:
 }
 ```
 
-Attachment
+Attachment [8015.patch](tarball://root/attachments/some-uuid/ticket1217/8015.patch) by wjp created at 2008-01-18 16:57:42
 
 
 

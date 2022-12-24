@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1249
 archive/issue_comments_007824.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me: the example in the doctests fails before the patch and succeeds after the patch.  There is one caveat: I think the call to D.show() in the first doctest chunk was supposed to be D.plot().\n\nBut IMHO good enough to apply, anyway.",
+    "body": "Attachment [graph_plotting_partitions.patch](tarball://root/attachments/some-uuid/ticket1249/graph_plotting_partitions.patch) by cwitty created at 2007-11-28 02:28:38\n\nLooks good to me: the example in the doctests fails before the patch and succeeds after the patch.  There is one caveat: I think the call to D.show() in the first doctest chunk was supposed to be D.plot().\n\nBut IMHO good enough to apply, anyway.",
     "created_at": "2007-11-28T02:28:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1249",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_007824.json:
 }
 ```
 
-Attachment
+Attachment [graph_plotting_partitions.patch](tarball://root/attachments/some-uuid/ticket1249/graph_plotting_partitions.patch) by cwitty created at 2007-11-28 02:28:38
 
 Looks good to me: the example in the doctests fails before the patch and succeeds after the patch.  There is one caveat: I think the call to D.show() in the first doctest chunk was supposed to be D.plot().
 

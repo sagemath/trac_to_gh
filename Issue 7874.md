@@ -43,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7874
 archive/issue_comments_068395.json:
 ```json
 {
-    "body": "Attachment\n\n`jsMath.Process()` wrapped output text for interacts.  sagenb repo.",
+    "body": "Attachment [trac_7874-typeset_interact_labels.patch](tarball://root/attachments/some-uuid/ticket7874/trac_7874-typeset_interact_labels.patch) by mpatel created at 2010-01-08 21:40:21\n\n`jsMath.Process()` wrapped output text for interacts.  sagenb repo.",
     "created_at": "2010-01-08T21:40:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7874",
     "type": "issue_comment",
@@ -52,7 +52,7 @@ archive/issue_comments_068395.json:
 }
 ```
 
-Attachment
+Attachment [trac_7874-typeset_interact_labels.patch](tarball://root/attachments/some-uuid/ticket7874/trac_7874-typeset_interact_labels.patch) by mpatel created at 2010-01-08 21:40:21
 
 `jsMath.Process()` wrapped output text for interacts.  sagenb repo.
 
@@ -261,7 +261,7 @@ Rob
 archive/issue_comments_068405.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:7 mpatel]:\n> Hi Rob -- If you're feeling adventurous and have some spare time, please try testing the spkg at #7666.\n\nYes, to adventurous, no to spare time.  But I think adventure wins.  \n\nBut (this is embarrassing) I've never installed an spkg.  How should I do this so I can back it out again without having a mess on my hands?  ;-)  I don't have anything important to lose, so it won't be a crisis if I screw up.  Can you give me another short primer?\n\nShould have said above: I don't think I know enough to give a review.  But I'm going to go right now and advertise how good the patch is and see if we can get one.\n\nRob",
+    "body": "Attachment [interact-controls-formatted.png](tarball://root/attachments/some-uuid/ticket7874/interact-controls-formatted.png) by rbeezer created at 2010-01-09 00:52:04\n\nReplying to [comment:7 mpatel]:\n> Hi Rob -- If you're feeling adventurous and have some spare time, please try testing the spkg at #7666.\n\nYes, to adventurous, no to spare time.  But I think adventure wins.  \n\nBut (this is embarrassing) I've never installed an spkg.  How should I do this so I can back it out again without having a mess on my hands?  ;-)  I don't have anything important to lose, so it won't be a crisis if I screw up.  Can you give me another short primer?\n\nShould have said above: I don't think I know enough to give a review.  But I'm going to go right now and advertise how good the patch is and see if we can get one.\n\nRob",
     "created_at": "2010-01-09T00:52:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7874",
     "type": "issue_comment",
@@ -270,7 +270,7 @@ archive/issue_comments_068405.json:
 }
 ```
 
-Attachment
+Attachment [interact-controls-formatted.png](tarball://root/attachments/some-uuid/ticket7874/interact-controls-formatted.png) by rbeezer created at 2010-01-09 00:52:04
 
 Replying to [comment:7 mpatel]:
 > Hi Rob -- If you're feeling adventurous and have some spare time, please try testing the spkg at #7666.

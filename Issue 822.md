@@ -52,7 +52,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/822
 archive/issue_comments_005097.json:
 ```json
 {
-    "body": "Attachment\n\nmatrix multiplication optimization",
+    "body": "Attachment [matrix_coercion.hg](tarball://root/attachments/some-uuid/ticket822/matrix_coercion.hg) by jbmohler created at 2007-10-04 09:52:34\n\nmatrix multiplication optimization",
     "created_at": "2007-10-04T09:52:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/822",
     "type": "issue_comment",
@@ -61,7 +61,7 @@ archive/issue_comments_005097.json:
 }
 ```
 
-Attachment
+Attachment [matrix_coercion.hg](tarball://root/attachments/some-uuid/ticket822/matrix_coercion.hg) by jbmohler created at 2007-10-04 09:52:34
 
 matrix multiplication optimization
 

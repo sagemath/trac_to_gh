@@ -77,7 +77,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1840
 archive/issue_comments_011655.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [crypto_2008.01.18-1.hg](tarball://root/attachments/some-uuid/ticket1840/crypto_2008.01.18-1.hg) by kohel created at 2008-01-18 23:09:27",
     "created_at": "2008-01-18T23:09:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1840",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_011655.json:
 }
 ```
 
-Attachment
+Attachment [crypto_2008.01.18-1.hg](tarball://root/attachments/some-uuid/ticket1840/crypto_2008.01.18-1.hg) by kohel created at 2008-01-18 23:09:27
 
 
 
@@ -113,7 +113,7 @@ Patch looks good and applies cleanly against 2.10. Only detail: It uses `__repr_
 archive/issue_comments_011657.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1840-repr.patch](tarball://root/attachments/some-uuid/ticket1840/1840-repr.patch) by mhansen created at 2008-01-21 05:39:15",
     "created_at": "2008-01-21T05:39:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1840",
     "type": "issue_comment",
@@ -122,7 +122,7 @@ archive/issue_comments_011657.json:
 }
 ```
 
-Attachment
+Attachment [1840-repr.patch](tarball://root/attachments/some-uuid/ticket1840/1840-repr.patch) by mhansen created at 2008-01-21 05:39:15
 
 
 

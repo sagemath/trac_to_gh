@@ -79,7 +79,7 @@ archive/issue_comments_013930.json:
 archive/issue_comments_013931.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-2123.patch](tarball://root/attachments/some-uuid/ticket2123/trac-2123.patch) by craigcitro created at 2008-02-12 07:26:44",
     "created_at": "2008-02-12T07:26:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2123",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_013931.json:
 }
 ```
 
-Attachment
+Attachment [trac-2123.patch](tarball://root/attachments/some-uuid/ticket2123/trac-2123.patch) by craigcitro created at 2008-02-12 07:26:44
 
 
 

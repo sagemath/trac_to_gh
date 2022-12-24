@@ -45,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6518
 archive/issue_comments_053131.json:
 ```json
 {
-    "body": "Attachment\n\npatch for the scripts repository",
+    "body": "Attachment [trac_6518-doctest_warning.patch](tarball://root/attachments/some-uuid/ticket6518/trac_6518-doctest_warning.patch) by burcin created at 2009-07-12 12:20:52\n\npatch for the scripts repository",
     "created_at": "2009-07-12T12:20:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6518",
     "type": "issue_comment",
@@ -54,7 +54,7 @@ archive/issue_comments_053131.json:
 }
 ```
 
-Attachment
+Attachment [trac_6518-doctest_warning.patch](tarball://root/attachments/some-uuid/ticket6518/trac_6518-doctest_warning.patch) by burcin created at 2009-07-12 12:20:52
 
 patch for the scripts repository
 

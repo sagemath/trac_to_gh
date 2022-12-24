@@ -74,7 +74,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5795
 archive/issue_comments_045443.json:
 ```json
 {
-    "body": "Attachment\n\nImproved performance for polynomial conversion",
+    "body": "Attachment [MPolyRingCall.patch](tarball://root/attachments/some-uuid/ticket5795/MPolyRingCall.patch) by SimonKing created at 2009-04-16 02:51:35\n\nImproved performance for polynomial conversion",
     "created_at": "2009-04-16T02:51:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5795",
     "type": "issue_comment",
@@ -83,7 +83,7 @@ archive/issue_comments_045443.json:
 }
 ```
 
-Attachment
+Attachment [MPolyRingCall.patch](tarball://root/attachments/some-uuid/ticket5795/MPolyRingCall.patch) by SimonKing created at 2009-04-16 02:51:35
 
 Improved performance for polynomial conversion
 

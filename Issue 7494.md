@@ -303,7 +303,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_063314.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7494.patch](tarball://root/attachments/some-uuid/ticket7494/trac_7494.patch) by was created at 2011-08-24 06:43:53",
     "created_at": "2011-08-24T06:43:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7494",
     "type": "issue_comment",
@@ -312,7 +312,7 @@ archive/issue_comments_063314.json:
 }
 ```
 
-Attachment
+Attachment [trac_7494.patch](tarball://root/attachments/some-uuid/ticket7494/trac_7494.patch) by was created at 2011-08-24 06:43:53
 
 
 
@@ -525,7 +525,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_063326.json:
 ```json
 {
-    "body": "Attachment\n\nI'm good with jhpalmieri's cleanup of my patch.",
+    "body": "Attachment [trac_7494-scripts.patch](tarball://root/attachments/some-uuid/ticket7494/trac_7494-scripts.patch) by was created at 2011-09-27 01:23:17\n\nI'm good with jhpalmieri's cleanup of my patch.",
     "created_at": "2011-09-27T01:23:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7494",
     "type": "issue_comment",
@@ -534,7 +534,7 @@ archive/issue_comments_063326.json:
 }
 ```
 
-Attachment
+Attachment [trac_7494-scripts.patch](tarball://root/attachments/some-uuid/ticket7494/trac_7494-scripts.patch) by was created at 2011-09-27 01:23:17
 
 I'm good with jhpalmieri's cleanup of my patch.
 
@@ -669,7 +669,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_063333.json:
 ```json
 {
-    "body": "Attachment\n\nOk, I've `sdist`ed with a version with the patches applied, built the new Sage distribution from scratch, and all (long) tests pass.\n\nAs expected, I got rid of the `examples/` directory and the spkg in the new distro.\n(Note that also the examples spkg in `spkg/standard/` of the *original* distribution got deleted; not sure whether this is intentional. In contrast, the `examples/` directory there remained.)\n\nUpgrading from a path without an examples spkg *should*<sup>TM</sup> IMHO also work; haven't tried that [yet].\n\n\n\n\nDon't know yet whether Jeroen's merger is \"prepared\" for such an operation, and since Sage 4.7.2.alpha3 is almost out, I don't think I'll attempt to merge this ticket into *this* release. There'll certainly be an alpha4, or we could try with the next release candidate.\n\nUnfortunately we don't win much regarding the size; the current examples spkg is just 2.0 MB, 3.9 MB uncompressed on my disk (i.e., the size of the `examples/` directory), and just 2.6 MB in \"real\" bytes.",
+    "body": "Attachment [trac_7494-root-repo.patch](tarball://root/attachments/some-uuid/ticket7494/trac_7494-root-repo.patch) by leif created at 2011-09-29 01:59:00\n\nOk, I've `sdist`ed with a version with the patches applied, built the new Sage distribution from scratch, and all (long) tests pass.\n\nAs expected, I got rid of the `examples/` directory and the spkg in the new distro.\n(Note that also the examples spkg in `spkg/standard/` of the *original* distribution got deleted; not sure whether this is intentional. In contrast, the `examples/` directory there remained.)\n\nUpgrading from a path without an examples spkg *should*<sup>TM</sup> IMHO also work; haven't tried that [yet].\n\n\n\n\nDon't know yet whether Jeroen's merger is \"prepared\" for such an operation, and since Sage 4.7.2.alpha3 is almost out, I don't think I'll attempt to merge this ticket into *this* release. There'll certainly be an alpha4, or we could try with the next release candidate.\n\nUnfortunately we don't win much regarding the size; the current examples spkg is just 2.0 MB, 3.9 MB uncompressed on my disk (i.e., the size of the `examples/` directory), and just 2.6 MB in \"real\" bytes.",
     "created_at": "2011-09-29T01:59:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7494",
     "type": "issue_comment",
@@ -678,7 +678,7 @@ archive/issue_comments_063333.json:
 }
 ```
 
-Attachment
+Attachment [trac_7494-root-repo.patch](tarball://root/attachments/some-uuid/ticket7494/trac_7494-root-repo.patch) by leif created at 2011-09-29 01:59:00
 
 Ok, I've `sdist`ed with a version with the patches applied, built the new Sage distribution from scratch, and all (long) tests pass.
 
@@ -779,7 +779,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_063338.json:
 ```json
 {
-    "body": "Attachment\n\nSage library: fix docbuilding problem",
+    "body": "Attachment [trac_7494-ref.patch](tarball://root/attachments/some-uuid/ticket7494/trac_7494-ref.patch) by jhpalmieri created at 2011-10-04 22:37:15\n\nSage library: fix docbuilding problem",
     "created_at": "2011-10-04T22:37:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7494",
     "type": "issue_comment",
@@ -788,7 +788,7 @@ archive/issue_comments_063338.json:
 }
 ```
 
-Attachment
+Attachment [trac_7494-ref.patch](tarball://root/attachments/some-uuid/ticket7494/trac_7494-ref.patch) by jhpalmieri created at 2011-10-04 22:37:15
 
 Sage library: fix docbuilding problem
 

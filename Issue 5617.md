@@ -85,7 +85,7 @@ Here's a (trivial) patch.
 archive/issue_comments_043863.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5617-solve-linear.patch](tarball://root/attachments/some-uuid/ticket5617/trac_5617-solve-linear.patch) by jhpalmieri created at 2009-07-22 02:39:41",
     "created_at": "2009-07-22T02:39:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5617",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_043863.json:
 }
 ```
 
-Attachment
+Attachment [trac_5617-solve-linear.patch](tarball://root/attachments/some-uuid/ticket5617/trac_5617-solve-linear.patch) by jhpalmieri created at 2009-07-22 02:39:41
 
 
 

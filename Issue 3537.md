@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3537
 archive/issue_comments_024960.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3537_scripts.patch](tarball://root/attachments/some-uuid/ticket3537/trac_3537_scripts.patch) by gfurnish created at 2008-06-30 03:27:30",
     "created_at": "2008-06-30T03:27:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3537",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_024960.json:
 }
 ```
 
-Attachment
+Attachment [trac_3537_scripts.patch](tarball://root/attachments/some-uuid/ticket3537/trac_3537_scripts.patch) by gfurnish created at 2008-06-30 03:27:30
 
 
 
@@ -547,7 +547,7 @@ So right now, singular is the only place this is used, and it consistently uses 
 archive/issue_comments_024982.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3537-doc.patch](tarball://root/attachments/some-uuid/ticket3537/trac_3537-doc.patch) by jhpalmieri created at 2011-03-26 17:04:47",
     "created_at": "2011-03-26T17:04:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3537",
     "type": "issue_comment",
@@ -556,7 +556,7 @@ archive/issue_comments_024982.json:
 }
 ```
 
-Attachment
+Attachment [trac_3537-doc.patch](tarball://root/attachments/some-uuid/ticket3537/trac_3537-doc.patch) by jhpalmieri created at 2011-03-26 17:04:47
 
 
 
@@ -782,7 +782,7 @@ Do not set $RM in sage-env
 archive/issue_comments_024992.json:
 ```json
 {
-    "body": "Attachment\n\n[attachment:trac_3537-unset-RM.patch] applied to sage-4.7.rc2 tested on skynet/taurus with make testlong.  All tests passed.  Positive review.",
+    "body": "Attachment [trac_3537-unset-RM.patch](tarball://root/attachments/some-uuid/ticket3537/trac_3537-unset-RM.patch) by mariah created at 2011-05-12 20:40:02\n\n[attachment:trac_3537-unset-RM.patch] applied to sage-4.7.rc2 tested on skynet/taurus with make testlong.  All tests passed.  Positive review.",
     "created_at": "2011-05-12T20:40:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3537",
     "type": "issue_comment",
@@ -791,7 +791,7 @@ archive/issue_comments_024992.json:
 }
 ```
 
-Attachment
+Attachment [trac_3537-unset-RM.patch](tarball://root/attachments/some-uuid/ticket3537/trac_3537-unset-RM.patch) by mariah created at 2011-05-12 20:40:02
 
 [attachment:trac_3537-unset-RM.patch] applied to sage-4.7.rc2 tested on skynet/taurus with make testlong.  All tests passed.  Positive review.
 

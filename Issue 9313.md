@@ -69,7 +69,7 @@ Changing status from new to needs_review.
 archive/issue_comments_087742.json:
 ```json
 {
-    "body": "Attachment\n\nHere's a patch.",
+    "body": "Attachment [trac_9313-remove_padic_height.patch](tarball://root/attachments/some-uuid/ticket9313/trac_9313-remove_padic_height.patch) by davidloeffler created at 2010-06-29 09:16:25\n\nHere's a patch.",
     "created_at": "2010-06-29T09:16:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9313",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_087742.json:
 }
 ```
 
-Attachment
+Attachment [trac_9313-remove_padic_height.patch](tarball://root/attachments/some-uuid/ticket9313/trac_9313-remove_padic_height.patch) by davidloeffler created at 2010-06-29 09:16:25
 
 Here's a patch.
 

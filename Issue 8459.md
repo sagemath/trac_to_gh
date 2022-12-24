@@ -63,7 +63,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8459
 archive/issue_comments_076151.json:
 ```json
 {
-    "body": "Attachment\n\napply only this patch",
+    "body": "Attachment [trac-8390.patch](tarball://root/attachments/some-uuid/ticket8459/trac-8390.patch) by robert.marik created at 2010-03-06 22:28:53\n\napply only this patch",
     "created_at": "2010-03-06T22:28:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8459",
     "type": "issue_comment",
@@ -72,7 +72,7 @@ archive/issue_comments_076151.json:
 }
 ```
 
-Attachment
+Attachment [trac-8390.patch](tarball://root/attachments/some-uuid/ticket8459/trac-8390.patch) by robert.marik created at 2010-03-06 22:28:53
 
 apply only this patch
 
@@ -83,7 +83,7 @@ apply only this patch
 archive/issue_comments_076152.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch is attached. Still have behavior which I do not understand:\nlog(-x^2 + 1)*log(x) + 1/2*polylog(2, -x^2 + 1) evaluates numerically at x=1/2 only if it is obtained from direct input and not from Maxima.\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: f(x)=integrate(ln(1-x^2)/x,x)                       \nsage: f\nx |--> log(-x^2 + 1)*log(x) + 1/2*polylog(2, -x^2 + 1)\nsage: g(x)=log(-x^2 + 1)*log(x) + 1/2*polylog(2, -x^2 + 1)\nsage: g\nx |--> log(-x^2 + 1)*log(x) + 1/2*polylog(2, -x^2 + 1)\nsage: bool(f==g)                                          \nFalse\nsage: bool(f._repr_()==g._repr_())                        \nTrue\nsage: g(1/2).n()\n0.688640713882747\nsage: f(1/2).n()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n| Sage Version 4.3.3, Release Date: 2010-02-21                       |\n| Type notebook() for the GUI, and license() for information.        |\n/opt/sage-4.3.3-i686-Linux/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:17036)()\n\nTypeError: cannot evaluate symbolic expresssion numerically\nsage:\n```\n\nAny idea what happens?",
+    "body": "Attachment [trac-8459.patch](tarball://root/attachments/some-uuid/ticket8459/trac-8459.patch) by robert.marik created at 2010-03-06 22:32:42\n\nThe patch is attached. Still have behavior which I do not understand:\nlog(-x^2 + 1)*log(x) + 1/2*polylog(2, -x^2 + 1) evaluates numerically at x=1/2 only if it is obtained from direct input and not from Maxima.\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: f(x)=integrate(ln(1-x^2)/x,x)                       \nsage: f\nx |--> log(-x^2 + 1)*log(x) + 1/2*polylog(2, -x^2 + 1)\nsage: g(x)=log(-x^2 + 1)*log(x) + 1/2*polylog(2, -x^2 + 1)\nsage: g\nx |--> log(-x^2 + 1)*log(x) + 1/2*polylog(2, -x^2 + 1)\nsage: bool(f==g)                                          \nFalse\nsage: bool(f._repr_()==g._repr_())                        \nTrue\nsage: g(1/2).n()\n0.688640713882747\nsage: f(1/2).n()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n| Sage Version 4.3.3, Release Date: 2010-02-21                       |\n| Type notebook() for the GUI, and license() for information.        |\n/opt/sage-4.3.3-i686-Linux/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:17036)()\n\nTypeError: cannot evaluate symbolic expresssion numerically\nsage:\n```\n\nAny idea what happens?",
     "created_at": "2010-03-06T22:32:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8459",
     "type": "issue_comment",
@@ -92,7 +92,7 @@ archive/issue_comments_076152.json:
 }
 ```
 
-Attachment
+Attachment [trac-8459.patch](tarball://root/attachments/some-uuid/ticket8459/trac-8459.patch) by robert.marik created at 2010-03-06 22:32:42
 
 The patch is attached. Still have behavior which I do not understand:
 log(-x^2 + 1)*log(x) + 1/2*polylog(2, -x^2 + 1) evaluates numerically at x=1/2 only if it is obtained from direct input and not from Maxima.
@@ -231,7 +231,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_076157.json:
 ```json
 {
-    "body": "Attachment\n\nThank you for the patch and pointing out the conversion problem Robert.\n\nI fixed the problems reported in comment:2 in #7661.\n\nattachment:trac_8459-doctest.patch adds a doctest to sage.functions.log.Function_polylog to check if the conversion works. It also moves the compilation of the regular expression out of the `symbolic_expression_from_maxima_string()` function.\n\nPatches to be applied, in this order:\n* attachment:trac-8459.patch\n* attachment:trac_8459-doctest.patch\n\nThis ticket depends on #7661.",
+    "body": "Attachment [trac_8459-doctest.patch](tarball://root/attachments/some-uuid/ticket8459/trac_8459-doctest.patch) by burcin created at 2010-04-05 10:51:47\n\nThank you for the patch and pointing out the conversion problem Robert.\n\nI fixed the problems reported in comment:2 in #7661.\n\nattachment:trac_8459-doctest.patch adds a doctest to sage.functions.log.Function_polylog to check if the conversion works. It also moves the compilation of the regular expression out of the `symbolic_expression_from_maxima_string()` function.\n\nPatches to be applied, in this order:\n* attachment:trac-8459.patch\n* attachment:trac_8459-doctest.patch\n\nThis ticket depends on #7661.",
     "created_at": "2010-04-05T10:51:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8459",
     "type": "issue_comment",
@@ -240,7 +240,7 @@ archive/issue_comments_076157.json:
 }
 ```
 
-Attachment
+Attachment [trac_8459-doctest.patch](tarball://root/attachments/some-uuid/ticket8459/trac_8459-doctest.patch) by burcin created at 2010-04-05 10:51:47
 
 Thank you for the patch and pointing out the conversion problem Robert.
 

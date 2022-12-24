@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2234
 archive/issue_comments_014797.json:
 ```json
 {
-    "body": "Attachment\n\nD'oh - malb is correct in telling us that we could have figured that one out ourselves. Positive review.\n\nCheers,\n\nMichael",
+    "body": "Attachment [typo.patch](tarball://root/attachments/some-uuid/ticket2234/typo.patch) by mabshoff created at 2008-02-20 20:18:57\n\nD'oh - malb is correct in telling us that we could have figured that one out ourselves. Positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-20T20:18:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2234",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_014797.json:
 }
 ```
 
-Attachment
+Attachment [typo.patch](tarball://root/attachments/some-uuid/ticket2234/typo.patch) by mabshoff created at 2008-02-20 20:18:57
 
 D'oh - malb is correct in telling us that we could have figured that one out ourselves. Positive review.
 

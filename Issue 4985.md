@@ -98,7 +98,7 @@ By the way, I wasn't sure what "the very unhelpful error message" is. We might c
 archive/issue_comments_038022.json:
 ```json
 {
-    "body": "Attachment\n\nNice!  Positive review.",
+    "body": "Attachment [4985.patch](tarball://root/attachments/some-uuid/ticket4985/4985.patch) by jason created at 2009-03-23 21:16:08\n\nNice!  Positive review.",
     "created_at": "2009-03-23T21:16:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4985",
     "type": "issue_comment",
@@ -107,7 +107,7 @@ archive/issue_comments_038022.json:
 }
 ```
 
-Attachment
+Attachment [4985.patch](tarball://root/attachments/some-uuid/ticket4985/4985.patch) by jason created at 2009-03-23 21:16:08
 
 Nice!  Positive review.
 

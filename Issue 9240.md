@@ -142,7 +142,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9240
 archive/issue_comments_086895.json:
 ```json
 {
-    "body": "Attachment\n\nbased on Sage 4.4.1",
+    "body": "Attachment [trac_9240_full_simplify_gamma.patch](tarball://root/attachments/some-uuid/ticket9240/trac_9240_full_simplify_gamma.patch) by tomc created at 2010-06-15 03:49:32\n\nbased on Sage 4.4.1",
     "created_at": "2010-06-15T03:49:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9240",
     "type": "issue_comment",
@@ -151,7 +151,7 @@ archive/issue_comments_086895.json:
 }
 ```
 
-Attachment
+Attachment [trac_9240_full_simplify_gamma.patch](tarball://root/attachments/some-uuid/ticket9240/trac_9240_full_simplify_gamma.patch) by tomc created at 2010-06-15 03:49:32
 
 based on Sage 4.4.1
 
@@ -372,7 +372,7 @@ apply after trac_9240_full_simplify_gamma.patch
 archive/issue_comments_086905.json:
 ```json
 {
-    "body": "Attachment\n\nattachment:trac_9240-factorial_evaluation.patch adds further doctests and fixes for the evaluation of factorials. It should be applied after attachment:trac_9240_full_simplify_gamma.patch.\n\nMy changes depend on a small patch to pynac, where I somehow used && instead of bitwise and. This patch can be obtained from: \n\nhttps://bitbucket.org/burcin/pynac-patches/src/c3c5b3b8b1eb/bitwise.patch\n\nThis ticket now depends on a new pynac release, which should be coming soon.",
+    "body": "Attachment [trac_9240-factorial_evaluation.patch](tarball://root/attachments/some-uuid/ticket9240/trac_9240-factorial_evaluation.patch) by burcin created at 2011-05-24 19:20:03\n\nattachment:trac_9240-factorial_evaluation.patch adds further doctests and fixes for the evaluation of factorials. It should be applied after attachment:trac_9240_full_simplify_gamma.patch.\n\nMy changes depend on a small patch to pynac, where I somehow used && instead of bitwise and. This patch can be obtained from: \n\nhttps://bitbucket.org/burcin/pynac-patches/src/c3c5b3b8b1eb/bitwise.patch\n\nThis ticket now depends on a new pynac release, which should be coming soon.",
     "created_at": "2011-05-24T19:20:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9240",
     "type": "issue_comment",
@@ -381,7 +381,7 @@ archive/issue_comments_086905.json:
 }
 ```
 
-Attachment
+Attachment [trac_9240-factorial_evaluation.patch](tarball://root/attachments/some-uuid/ticket9240/trac_9240-factorial_evaluation.patch) by burcin created at 2011-05-24 19:20:03
 
 attachment:trac_9240-factorial_evaluation.patch adds further doctests and fixes for the evaluation of factorials. It should be applied after attachment:trac_9240_full_simplify_gamma.patch.
 

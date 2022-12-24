@@ -49,7 +49,7 @@ Changing priority from major to blocker.
 archive/issue_comments_019750.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-2875.patch](tarball://root/attachments/some-uuid/ticket2875/sage-2875.patch) by was created at 2008-04-12 03:31:56",
     "created_at": "2008-04-12T03:31:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2875",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_019750.json:
 }
 ```
 
-Attachment
+Attachment [sage-2875.patch](tarball://root/attachments/some-uuid/ticket2875/sage-2875.patch) by was created at 2008-04-12 03:31:56
 
 
 

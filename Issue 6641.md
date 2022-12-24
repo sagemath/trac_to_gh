@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6641
 archive/issue_comments_054444.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6641-poset_antichains_backtracker.patch](tarball://root/attachments/some-uuid/ticket6641/trac_6641-poset_antichains_backtracker.patch) by saliola created at 2009-07-27 15:29:57",
     "created_at": "2009-07-27T15:29:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6641",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_054444.json:
 }
 ```
 
-Attachment
+Attachment [trac_6641-poset_antichains_backtracker.patch](tarball://root/attachments/some-uuid/ticket6641/trac_6641-poset_antichains_backtracker.patch) by saliola created at 2009-07-27 15:29:57
 
 
 
@@ -71,7 +71,7 @@ Thanks to Dan Drake for teaching me how to use the backtracker.
 archive/issue_comments_054446.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6641-poset_antichains_backtracker-part2.patch](tarball://root/attachments/some-uuid/ticket6641/trac_6641-poset_antichains_backtracker-part2.patch) by saliola created at 2009-07-27 19:56:06",
     "created_at": "2009-07-27T19:56:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6641",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_054446.json:
 }
 ```
 
-Attachment
+Attachment [trac_6641-poset_antichains_backtracker-part2.patch](tarball://root/attachments/some-uuid/ticket6641/trac_6641-poset_antichains_backtracker-part2.patch) by saliola created at 2009-07-27 19:56:06
 
 
 
@@ -192,7 +192,7 @@ Rebased version against #8735
 archive/issue_comments_054452.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6641-poset_antichains_backtracker.2.patch](tarball://root/attachments/some-uuid/ticket6641/trac_6641-poset_antichains_backtracker.2.patch) by jdemeyer created at 2013-08-13 15:35:53",
     "created_at": "2013-08-13T15:35:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6641",
     "type": "issue_comment",
@@ -201,7 +201,7 @@ archive/issue_comments_054452.json:
 }
 ```
 
-Attachment
+Attachment [trac_6641-poset_antichains_backtracker.2.patch](tarball://root/attachments/some-uuid/ticket6641/trac_6641-poset_antichains_backtracker.2.patch) by jdemeyer created at 2013-08-13 15:35:53
 
 
 

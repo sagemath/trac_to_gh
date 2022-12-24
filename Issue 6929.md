@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6929
 archive/issue_comments_057270.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6929-functional-doctests.patch](tarball://root/attachments/some-uuid/ticket6929/trac_6929-functional-doctests.patch) by kcrisman created at 2009-09-14 19:56:21",
     "created_at": "2009-09-14T19:56:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6929",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_057270.json:
 }
 ```
 
-Attachment
+Attachment [trac_6929-functional-doctests.patch](tarball://root/attachments/some-uuid/ticket6929/trac_6929-functional-doctests.patch) by kcrisman created at 2009-09-14 19:56:21
 
 
 
@@ -69,7 +69,7 @@ rebased against 4.1.2.alpha2. apply only this patch
 archive/issue_comments_057272.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch needed to be rebased (only the changes in rings/ring.pyx).  I also added one fix (referee's prerogative: changing ``n`th` to ``n^{th}`` in misc/functional.py) to avoid a warning when building the reference manual.\n\nLooks good, all tests pass, positive review.",
+    "body": "Attachment [trac_6929-rebased.patch](tarball://root/attachments/some-uuid/ticket6929/trac_6929-rebased.patch) by jhpalmieri created at 2009-09-23 04:25:53\n\nThe patch needed to be rebased (only the changes in rings/ring.pyx).  I also added one fix (referee's prerogative: changing ``n`th` to ``n^{th}`` in misc/functional.py) to avoid a warning when building the reference manual.\n\nLooks good, all tests pass, positive review.",
     "created_at": "2009-09-23T04:25:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6929",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_057272.json:
 }
 ```
 
-Attachment
+Attachment [trac_6929-rebased.patch](tarball://root/attachments/some-uuid/ticket6929/trac_6929-rebased.patch) by jhpalmieri created at 2009-09-23 04:25:53
 
 The patch needed to be rebased (only the changes in rings/ring.pyx).  I also added one fix (referee's prerogative: changing ``n`th` to ``n^{th}`` in misc/functional.py) to avoid a warning when building the reference manual.
 
@@ -109,7 +109,7 @@ set username as kcrisman
 archive/issue_comments_057274.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch `trac_6929-rebased-v2.patch` is the same as `trac_6929-rebased.patch`. The only difference is that `trac_6929-rebased-v2.patch` sets the username to that of kcrisman's. That way, the patch would be committed in his name. Even after a rebase, the username of the original author should remain in the rebased patch.",
+    "body": "Attachment [trac_6929-rebased-v2.patch](tarball://root/attachments/some-uuid/ticket6929/trac_6929-rebased-v2.patch) by mvngu created at 2009-09-24 11:46:18\n\nThe patch `trac_6929-rebased-v2.patch` is the same as `trac_6929-rebased.patch`. The only difference is that `trac_6929-rebased-v2.patch` sets the username to that of kcrisman's. That way, the patch would be committed in his name. Even after a rebase, the username of the original author should remain in the rebased patch.",
     "created_at": "2009-09-24T11:46:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6929",
     "type": "issue_comment",
@@ -118,7 +118,7 @@ archive/issue_comments_057274.json:
 }
 ```
 
-Attachment
+Attachment [trac_6929-rebased-v2.patch](tarball://root/attachments/some-uuid/ticket6929/trac_6929-rebased-v2.patch) by mvngu created at 2009-09-24 11:46:18
 
 The patch `trac_6929-rebased-v2.patch` is the same as `trac_6929-rebased.patch`. The only difference is that `trac_6929-rebased-v2.patch` sets the username to that of kcrisman's. That way, the patch would be committed in his name. Even after a rebase, the username of the original author should remain in the rebased patch.
 

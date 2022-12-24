@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3408
 archive/issue_comments_023904.json:
 ```json
 {
-    "body": "Attachment\n\nThis seems to break the future import in padic_generic_element.pyx",
+    "body": "Attachment [3408-cython-0.9.8.patch](tarball://root/attachments/some-uuid/ticket3408/3408-cython-0.9.8.patch) by gfurnish created at 2008-06-13 02:53:29\n\nThis seems to break the future import in padic_generic_element.pyx",
     "created_at": "2008-06-13T02:53:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3408",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_023904.json:
 }
 ```
 
-Attachment
+Attachment [3408-cython-0.9.8.patch](tarball://root/attachments/some-uuid/ticket3408/3408-cython-0.9.8.patch) by gfurnish created at 2008-06-13 02:53:29
 
 This seems to break the future import in padic_generic_element.pyx
 
@@ -191,7 +191,7 @@ rebased
 archive/issue_comments_023911.json:
 ```json
 {
-    "body": "Attachment\n\nOK, I've rebased the patch. Note that interactive_constructors_c is sorted now, so this won't bite us again.",
+    "body": "Attachment [3408-cython-0.9.8.2.patch](tarball://root/attachments/some-uuid/ticket3408/3408-cython-0.9.8.2.patch) by robertwb created at 2008-06-13 17:11:51\n\nOK, I've rebased the patch. Note that interactive_constructors_c is sorted now, so this won't bite us again.",
     "created_at": "2008-06-13T17:11:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3408",
     "type": "issue_comment",
@@ -200,7 +200,7 @@ archive/issue_comments_023911.json:
 }
 ```
 
-Attachment
+Attachment [3408-cython-0.9.8.2.patch](tarball://root/attachments/some-uuid/ticket3408/3408-cython-0.9.8.2.patch) by robertwb created at 2008-06-13 17:11:51
 
 OK, I've rebased the patch. Note that interactive_constructors_c is sorted now, so this won't bite us again.
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/895
 archive/issue_comments_005510.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch needs some work:\n\n1. It should be in matrix2.pyx not matrix_dense.pyx, so it will be available to both sparse and dense matrices.\n\n2. It should call m.__invert__() instead of do m**(-1).      Or it could call ~m, which is the Python notation for __invert__.\n\n3. The docstring should also mention doing ~m.\n\nWilliam",
+    "body": "Attachment [6721.patch](tarball://root/attachments/some-uuid/ticket895/6721.patch) by was created at 2007-10-19 01:12:43\n\nThis patch needs some work:\n\n1. It should be in matrix2.pyx not matrix_dense.pyx, so it will be available to both sparse and dense matrices.\n\n2. It should call m.__invert__() instead of do m**(-1).      Or it could call ~m, which is the Python notation for __invert__.\n\n3. The docstring should also mention doing ~m.\n\nWilliam",
     "created_at": "2007-10-19T01:12:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/895",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_005510.json:
 }
 ```
 
-Attachment
+Attachment [6721.patch](tarball://root/attachments/some-uuid/ticket895/6721.patch) by was created at 2007-10-19 01:12:43
 
 This patch needs some work:
 
@@ -59,7 +59,7 @@ William
 archive/issue_comments_005511.json:
 ```json
 {
-    "body": "Attachment\n\nUpadated patch -- use the last one and ignore the first one.",
+    "body": "Attachment [6971.patch](tarball://root/attachments/some-uuid/ticket895/6971.patch) by mhansen created at 2007-10-19 21:27:26\n\nUpadated patch -- use the last one and ignore the first one.",
     "created_at": "2007-10-19T21:27:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/895",
     "type": "issue_comment",
@@ -68,7 +68,7 @@ archive/issue_comments_005511.json:
 }
 ```
 
-Attachment
+Attachment [6971.patch](tarball://root/attachments/some-uuid/ticket895/6971.patch) by mhansen created at 2007-10-19 21:27:26
 
 Upadated patch -- use the last one and ignore the first one.
 

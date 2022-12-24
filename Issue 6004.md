@@ -71,7 +71,7 @@ ok, genuine positive review.
 archive/issue_comments_047766.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6004-odd-degree-model-5.patch](tarball://root/attachments/some-uuid/ticket6004/trac_6004-odd-degree-model-5.patch) by ncalexan created at 2009-05-07 22:50:02",
     "created_at": "2009-05-07T22:50:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6004",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_047766.json:
 }
 ```
 
-Attachment
+Attachment [trac_6004-odd-degree-model-5.patch](tarball://root/attachments/some-uuid/ticket6004/trac_6004-odd-degree-model-5.patch) by ncalexan created at 2009-05-07 22:50:02
 
 
 
@@ -149,7 +149,7 @@ Michael
 archive/issue_comments_047769.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6004-odd-degree-model-5.2.patch](tarball://root/attachments/some-uuid/ticket6004/trac_6004-odd-degree-model-5.2.patch) by ncalexan created at 2009-05-12 21:04:59",
     "created_at": "2009-05-12T21:04:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6004",
     "type": "issue_comment",
@@ -158,7 +158,7 @@ archive/issue_comments_047769.json:
 }
 ```
 
-Attachment
+Attachment [trac_6004-odd-degree-model-5.2.patch](tarball://root/attachments/some-uuid/ticket6004/trac_6004-odd-degree-model-5.2.patch) by ncalexan created at 2009-05-12 21:04:59
 
 
 

@@ -208,7 +208,7 @@ Unfortunately, the originial request doesn't quite make sense -- `bernoulli_poly
 archive/issue_comments_017637.json:
 ```json
 {
-    "body": "Attachment\n\npositive review;\n\nit could be optimized by using horner's rule",
+    "body": "Attachment [trac-2578.patch](tarball://root/attachments/some-uuid/ticket2578/trac-2578.patch) by was created at 2009-01-23 10:34:38\n\npositive review;\n\nit could be optimized by using horner's rule",
     "created_at": "2009-01-23T10:34:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2578",
     "type": "issue_comment",
@@ -217,7 +217,7 @@ archive/issue_comments_017637.json:
 }
 ```
 
-Attachment
+Attachment [trac-2578.patch](tarball://root/attachments/some-uuid/ticket2578/trac-2578.patch) by was created at 2009-01-23 10:34:38
 
 positive review;
 

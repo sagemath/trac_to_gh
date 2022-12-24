@@ -311,7 +311,7 @@ Perfect, thanks. The libjpeg makefile actually uses $CP, $RM and $MV, so that se
 archive/issue_comments_061490.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [spkg-install](tarball://root/attachments/some-uuid/ticket7344/spkg-install) by drkirkby created at 2010-01-11 20:15:12",
     "created_at": "2010-01-11T20:15:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
@@ -320,7 +320,7 @@ archive/issue_comments_061490.json:
 }
 ```
 
-Attachment
+Attachment [spkg-install](tarball://root/attachments/some-uuid/ticket7344/spkg-install) by drkirkby created at 2010-01-11 20:15:12
 
 
 

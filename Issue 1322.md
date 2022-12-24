@@ -88,7 +88,7 @@ See also the thread:
 archive/issue_comments_008445.json:
 ```json
 {
-    "body": "Attachment\n\nExtremely rough cut of initial functionality for interactive widgets in the notebook.",
+    "body": "Attachment [menu-widget.patch](tarball://root/attachments/some-uuid/ticket1322/menu-widget.patch) by jason created at 2007-12-01 06:37:52\n\nExtremely rough cut of initial functionality for interactive widgets in the notebook.",
     "created_at": "2007-12-01T06:37:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
@@ -97,7 +97,7 @@ archive/issue_comments_008445.json:
 }
 ```
 
-Attachment
+Attachment [menu-widget.patch](tarball://root/attachments/some-uuid/ticket1322/menu-widget.patch) by jason created at 2007-12-01 06:37:52
 
 Extremely rough cut of initial functionality for interactive widgets in the notebook.
 
@@ -434,7 +434,7 @@ A different very rough cut of functionality.
 archive/issue_comments_008458.json:
 ```json
 {
-    "body": "Attachment\n\nWow, this is a lot of fun!\n\nHere's another, more interesting example.  (This uses a CELL_ID of zero, so the first cell in your notebook will be overwritten.)\n\n```\nx = polygen(ZZ)\ncoeff_range = ButtonGroup([-4,-3,-2,-1,0,1,2,3,4])\nmanipulate(\"p = a*x^4 + b*x^3 + c*x^2 + d*x + e; show(plot(p, -4, 4)); show(p); p.roots(ring=RR)\", \n           {'a': coeff_range,\n            'b': coeff_range,\n            'c': coeff_range,\n            'd': coeff_range,\n            'e': coeff_range}, 0)\n```\n\n\nJust judging from the functionality, I'd be willing to give a positive review once these two issues were addressed.  (I haven't read the code yet, though.)\n\n1. Having to specify a CELL_ID is lame.\n\n2. The API of specifying a dictionary is bad.  In the above example, the controls don't appear in the expected order (a,b,c,d,e); but that can't be fixed in manipulate, because it doesn't know what order you used when you typed the dictionary literal.  Instead, manipulate should take a list of pairs.\n\nWishlist items:\n\n1. Slider bars would be nice.\n\n2. Widgets should be labeled with the variable name they control.\n\n3. The syntax is pretty ugly.  I haven't thought of a way to fix that without some sort of preparser; here's a first suggestion for a preparser-based syntax:\n\n```\n%manipulate\nx : Menu([2,4,6,8])\ny : Menu([1,10,100,1000])\n--\nx^y\n```\n\nFor extra bonus points, this could work in conjunction with %pari/%magma/etc.",
+    "body": "Attachment [manipulate.patch](tarball://root/attachments/some-uuid/ticket1322/manipulate.patch) by cwitty created at 2008-03-01 05:43:09\n\nWow, this is a lot of fun!\n\nHere's another, more interesting example.  (This uses a CELL_ID of zero, so the first cell in your notebook will be overwritten.)\n\n```\nx = polygen(ZZ)\ncoeff_range = ButtonGroup([-4,-3,-2,-1,0,1,2,3,4])\nmanipulate(\"p = a*x^4 + b*x^3 + c*x^2 + d*x + e; show(plot(p, -4, 4)); show(p); p.roots(ring=RR)\", \n           {'a': coeff_range,\n            'b': coeff_range,\n            'c': coeff_range,\n            'd': coeff_range,\n            'e': coeff_range}, 0)\n```\n\n\nJust judging from the functionality, I'd be willing to give a positive review once these two issues were addressed.  (I haven't read the code yet, though.)\n\n1. Having to specify a CELL_ID is lame.\n\n2. The API of specifying a dictionary is bad.  In the above example, the controls don't appear in the expected order (a,b,c,d,e); but that can't be fixed in manipulate, because it doesn't know what order you used when you typed the dictionary literal.  Instead, manipulate should take a list of pairs.\n\nWishlist items:\n\n1. Slider bars would be nice.\n\n2. Widgets should be labeled with the variable name they control.\n\n3. The syntax is pretty ugly.  I haven't thought of a way to fix that without some sort of preparser; here's a first suggestion for a preparser-based syntax:\n\n```\n%manipulate\nx : Menu([2,4,6,8])\ny : Menu([1,10,100,1000])\n--\nx^y\n```\n\nFor extra bonus points, this could work in conjunction with %pari/%magma/etc.",
     "created_at": "2008-03-01T05:43:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
@@ -443,7 +443,7 @@ archive/issue_comments_008458.json:
 }
 ```
 
-Attachment
+Attachment [manipulate.patch](tarball://root/attachments/some-uuid/ticket1322/manipulate.patch) by cwitty created at 2008-03-01 05:43:09
 
 Wow, this is a lot of fun!
 
@@ -492,7 +492,7 @@ For extra bonus points, this could work in conjunction with %pari/%magma/etc.
 archive/issue_comments_008459.json:
 ```json
 {
-    "body": "Attachment\n\nthis is independent of the patches above -- it's standalone -- see comments below for how to use.",
+    "body": "Attachment [manipulate-take3.patch](tarball://root/attachments/some-uuid/ticket1322/manipulate-take3.patch) by was created at 2008-03-01 10:30:18\n\nthis is independent of the patches above -- it's standalone -- see comments below for how to use.",
     "created_at": "2008-03-01T10:30:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
@@ -501,7 +501,7 @@ archive/issue_comments_008459.json:
 }
 ```
 
-Attachment
+Attachment [manipulate-take3.patch](tarball://root/attachments/some-uuid/ticket1322/manipulate-take3.patch) by was created at 2008-03-01 10:30:18
 
 this is independent of the patches above -- it's standalone -- see comments below for how to use.
 
@@ -603,7 +603,7 @@ def gcd_steps(numbers):
 archive/issue_comments_008462.json:
 ```json
 {
-    "body": "Attachment\n\npart 2 of manipulate with decorators; this is usable again (probably) better docs; but there are several things to do soon and I'm too tired.",
+    "body": "Attachment [manipulate-take3_part2.patch](tarball://root/attachments/some-uuid/ticket1322/manipulate-take3_part2.patch) by was created at 2008-03-02 08:53:24\n\npart 2 of manipulate with decorators; this is usable again (probably) better docs; but there are several things to do soon and I'm too tired.",
     "created_at": "2008-03-02T08:53:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
@@ -612,7 +612,7 @@ archive/issue_comments_008462.json:
 }
 ```
 
-Attachment
+Attachment [manipulate-take3_part2.patch](tarball://root/attachments/some-uuid/ticket1322/manipulate-take3_part2.patch) by was created at 2008-03-02 08:53:24
 
 part 2 of manipulate with decorators; this is usable again (probably) better docs; but there are several things to do soon and I'm too tired.
 
@@ -691,7 +691,7 @@ def ec(a,b):
 archive/issue_comments_008465.json:
 ```json
 {
-    "body": "Attachment\n\nthis requires that you also install the extcode patch that gives jquery support.",
+    "body": "Attachment [manipulate_take3_part3.patch](tarball://root/attachments/some-uuid/ticket1322/manipulate_take3_part3.patch) by was created at 2008-03-03 02:07:14\n\nthis requires that you also install the extcode patch that gives jquery support.",
     "created_at": "2008-03-03T02:07:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
@@ -700,7 +700,7 @@ archive/issue_comments_008465.json:
 }
 ```
 
-Attachment
+Attachment [manipulate_take3_part3.patch](tarball://root/attachments/some-uuid/ticket1322/manipulate_take3_part3.patch) by was created at 2008-03-03 02:07:14
 
 this requires that you also install the extcode patch that gives jquery support.
 
@@ -837,7 +837,7 @@ Sorry for all the trouble.
 archive/issue_comments_008470.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [manipulate_take3_part4.patch](tarball://root/attachments/some-uuid/ticket1322/manipulate_take3_part4.patch) by was created at 2008-03-04 11:28:26",
     "created_at": "2008-03-04T11:28:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
@@ -846,7 +846,7 @@ archive/issue_comments_008470.json:
 }
 ```
 
-Attachment
+Attachment [manipulate_take3_part4.patch](tarball://root/attachments/some-uuid/ticket1322/manipulate_take3_part4.patch) by was created at 2008-03-04 11:28:26
 
 
 
@@ -855,7 +855,7 @@ Attachment
 archive/issue_comments_008471.json:
 ```json
 {
-    "body": "Attachment\n\nthis is a new better version",
+    "body": "Attachment [manipulate.hg](tarball://root/attachments/some-uuid/ticket1322/manipulate.hg) by was created at 2008-03-05 10:01:42\n\nthis is a new better version",
     "created_at": "2008-03-05T10:01:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
@@ -864,7 +864,7 @@ archive/issue_comments_008471.json:
 }
 ```
 
-Attachment
+Attachment [manipulate.hg](tarball://root/attachments/some-uuid/ticket1322/manipulate.hg) by was created at 2008-03-05 10:01:42
 
 this is a new better version
 

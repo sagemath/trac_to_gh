@@ -177,7 +177,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_044866.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch looks fine, but results in zeta of a CDF being approximately fifty times slower.  This seems problematic, and perhaps also something that would happen a lot if we start switching things to mpmath?  Mpmath looks like a great package, but if it has the same issue as NetworkX versus C graphs, we might not want to move default behavior there quite yet. \n\nMarking as needs_info since there does not seem to be a Sage-wide policy on mpmath at this point, and I am reluctant to give positive review to such a marked slowdown.",
+    "body": "Attachment [trac_5739.patch](tarball://root/attachments/some-uuid/ticket5739/trac_5739.patch) by kcrisman created at 2010-01-18 16:22:05\n\nThe patch looks fine, but results in zeta of a CDF being approximately fifty times slower.  This seems problematic, and perhaps also something that would happen a lot if we start switching things to mpmath?  Mpmath looks like a great package, but if it has the same issue as NetworkX versus C graphs, we might not want to move default behavior there quite yet. \n\nMarking as needs_info since there does not seem to be a Sage-wide policy on mpmath at this point, and I am reluctant to give positive review to such a marked slowdown.",
     "created_at": "2010-01-18T16:22:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5739",
     "type": "issue_comment",
@@ -186,7 +186,7 @@ archive/issue_comments_044866.json:
 }
 ```
 
-Attachment
+Attachment [trac_5739.patch](tarball://root/attachments/some-uuid/ticket5739/trac_5739.patch) by kcrisman created at 2010-01-18 16:22:05
 
 The patch looks fine, but results in zeta of a CDF being approximately fifty times slower.  This seems problematic, and perhaps also something that would happen a lot if we start switching things to mpmath?  Mpmath looks like a great package, but if it has the same issue as NetworkX versus C graphs, we might not want to move default behavior there quite yet. 
 
@@ -199,7 +199,7 @@ Marking as needs_info since there does not seem to be a Sage-wide policy on mpma
 archive/issue_comments_044867.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5739-CDF-zeta.patch](tarball://root/attachments/some-uuid/ticket5739/5739-CDF-zeta.patch) by robertwb created at 2010-01-18 19:45:45",
     "created_at": "2010-01-18T19:45:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5739",
     "type": "issue_comment",
@@ -208,7 +208,7 @@ archive/issue_comments_044867.json:
 }
 ```
 
-Attachment
+Attachment [5739-CDF-zeta.patch](tarball://root/attachments/some-uuid/ticket5739/5739-CDF-zeta.patch) by robertwb created at 2010-01-18 19:45:45
 
 
 
@@ -351,7 +351,7 @@ Other than that, I would recommend keeping Pari where it's faster.
 archive/issue_comments_044873.json:
 ```json
 {
-    "body": "Attachment\n\napply this and 5739-CDF-zeta.patch",
+    "body": "Attachment [5739-CC-RR.patch](tarball://root/attachments/some-uuid/ticket5739/5739-CC-RR.patch) by robertwb created at 2010-01-24 11:11:05\n\napply this and 5739-CDF-zeta.patch",
     "created_at": "2010-01-24T11:11:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5739",
     "type": "issue_comment",
@@ -360,7 +360,7 @@ archive/issue_comments_044873.json:
 }
 ```
 
-Attachment
+Attachment [5739-CC-RR.patch](tarball://root/attachments/some-uuid/ticket5739/5739-CC-RR.patch) by robertwb created at 2010-01-24 11:11:05
 
 apply this and 5739-CDF-zeta.patch
 
@@ -513,7 +513,7 @@ Since #8864, `zeta(1)` returns the answer given by GiNaC, which leaves it uneval
 archive/issue_comments_044879.json:
 ```json
 {
-    "body": "Attachment\n\napply only this patch",
+    "body": "Attachment [5739-complex-zeta.patch](tarball://root/attachments/some-uuid/ticket5739/5739-complex-zeta.patch) by robertwb created at 2010-07-29 06:49:38\n\napply only this patch",
     "created_at": "2010-07-29T06:49:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5739",
     "type": "issue_comment",
@@ -522,7 +522,7 @@ archive/issue_comments_044879.json:
 }
 ```
 
-Attachment
+Attachment [5739-complex-zeta.patch](tarball://root/attachments/some-uuid/ticket5739/5739-complex-zeta.patch) by robertwb created at 2010-07-29 06:49:38
 
 apply only this patch
 
@@ -686,7 +686,7 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_044888.json:
 ```json
 {
-    "body": "Attachment\n\nDone",
+    "body": "Attachment [5739-complex-zeta-with-header.patch](tarball://root/attachments/some-uuid/ticket5739/5739-complex-zeta-with-header.patch) by davidloeffler created at 2010-09-28 08:26:27\n\nDone",
     "created_at": "2010-09-28T08:26:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5739",
     "type": "issue_comment",
@@ -695,7 +695,7 @@ archive/issue_comments_044888.json:
 }
 ```
 
-Attachment
+Attachment [5739-complex-zeta-with-header.patch](tarball://root/attachments/some-uuid/ticket5739/5739-complex-zeta-with-header.patch) by davidloeffler created at 2010-09-28 08:26:27
 
 Done
 

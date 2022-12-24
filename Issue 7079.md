@@ -102,7 +102,7 @@ I think the attached patch might solve the problem.  [I'm off to work now, so I'
 archive/issue_comments_058532.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7079.patch](tarball://root/attachments/some-uuid/ticket7079/trac_7079.patch) by mvngu created at 2009-09-30 08:41:33",
     "created_at": "2009-09-30T08:41:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7079",
     "type": "issue_comment",
@@ -111,7 +111,7 @@ archive/issue_comments_058532.json:
 }
 ```
 
-Attachment
+Attachment [trac_7079.patch](tarball://root/attachments/some-uuid/ticket7079/trac_7079.patch) by mvngu created at 2009-09-30 08:41:33
 
 
 

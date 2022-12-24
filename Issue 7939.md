@@ -1293,7 +1293,7 @@ Total time for all tests: 14.4 seconds
 archive/issue_comments_069261.json:
 ```json
 {
-    "body": "Attachment\n\nThat's because I uploaded the wrong file somehow. Now it should be the right one.",
+    "body": "Attachment [mpoly_ideal_libsingular.patch](tarball://root/attachments/some-uuid/ticket7939/mpoly_ideal_libsingular.patch) by malb created at 2010-01-23 03:53:44\n\nThat's because I uploaded the wrong file somehow. Now it should be the right one.",
     "created_at": "2010-01-23T03:53:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7939",
     "type": "issue_comment",
@@ -1302,7 +1302,7 @@ archive/issue_comments_069261.json:
 }
 ```
 
-Attachment
+Attachment [mpoly_ideal_libsingular.patch](tarball://root/attachments/some-uuid/ticket7939/mpoly_ideal_libsingular.patch) by malb created at 2010-01-23 03:53:44
 
 That's because I uploaded the wrong file somehow. Now it should be the right one.
 
@@ -1371,7 +1371,7 @@ apply after the previous patch
 archive/issue_comments_069265.json:
 ```json
 {
-    "body": "Attachment\n\nAlex's patch looks good.",
+    "body": "Attachment [trac_7939-referee.patch](tarball://root/attachments/some-uuid/ticket7939/trac_7939-referee.patch) by malb created at 2010-01-23 12:30:44\n\nAlex's patch looks good.",
     "created_at": "2010-01-23T12:30:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7939",
     "type": "issue_comment",
@@ -1380,7 +1380,7 @@ archive/issue_comments_069265.json:
 }
 ```
 
-Attachment
+Attachment [trac_7939-referee.patch](tarball://root/attachments/some-uuid/ticket7939/trac_7939-referee.patch) by malb created at 2010-01-23 12:30:44
 
 Alex's patch looks good.
 

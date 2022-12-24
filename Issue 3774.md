@@ -45,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3774
 archive/issue_comments_026842.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3774-radd.patch](tarball://root/attachments/some-uuid/ticket3774/3774-radd.patch) by robertwb created at 2008-08-05 08:25:54",
     "created_at": "2008-08-05T08:25:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3774",
     "type": "issue_comment",
@@ -54,7 +54,7 @@ archive/issue_comments_026842.json:
 }
 ```
 
-Attachment
+Attachment [3774-radd.patch](tarball://root/attachments/some-uuid/ticket3774/3774-radd.patch) by robertwb created at 2008-08-05 08:25:54
 
 
 
@@ -117,7 +117,7 @@ Please go ahead and write one, though implementing `__radd__` should not be enco
 archive/issue_comments_026846.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3774.patch](tarball://root/attachments/some-uuid/ticket3774/trac_3774.patch) by mhansen created at 2008-09-24 02:10:59",
     "created_at": "2008-09-24T02:10:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3774",
     "type": "issue_comment",
@@ -126,7 +126,7 @@ archive/issue_comments_026846.json:
 }
 ```
 
-Attachment
+Attachment [trac_3774.patch](tarball://root/attachments/some-uuid/ticket3774/trac_3774.patch) by mhansen created at 2008-09-24 02:10:59
 
 
 

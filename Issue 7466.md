@@ -111,7 +111,7 @@ wiki/moin.rst
 archive/issue_comments_062879.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7466.patch](tarball://root/attachments/some-uuid/ticket7466/trac_7466.patch) by jhpalmieri created at 2009-12-05 05:00:19",
     "created_at": "2009-12-05T05:00:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7466",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_062879.json:
 }
 ```
 
-Attachment
+Attachment [trac_7466.patch](tarball://root/attachments/some-uuid/ticket7466/trac_7466.patch) by jhpalmieri created at 2009-12-05 05:00:19
 
 
 

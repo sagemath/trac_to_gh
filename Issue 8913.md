@@ -79,7 +79,7 @@ Changing keywords from "" to "cayley graph".
 archive/issue_comments_082105.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8913-cayley_graph_twosided_labels-nt.patch](tarball://root/attachments/some-uuid/ticket8913/trac_8913-cayley_graph_twosided_labels-nt.patch) by nthiery created at 2010-05-18 21:18:56",
     "created_at": "2010-05-18T21:18:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8913",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_082105.json:
 }
 ```
 
-Attachment
+Attachment [trac_8913-cayley_graph_twosided_labels-nt.patch](tarball://root/attachments/some-uuid/ticket8913/trac_8913-cayley_graph_twosided_labels-nt.patch) by nthiery created at 2010-05-18 21:18:56
 
 
 

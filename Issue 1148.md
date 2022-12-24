@@ -91,7 +91,7 @@ Changing assignee from somebody to dmharvey.
 archive/issue_comments_007009.json:
 ```json
 {
-    "body": "Attachment\n\nfixed it",
+    "body": "Attachment [1148.hg](tarball://root/attachments/some-uuid/ticket1148/1148.hg) by dmharvey created at 2007-11-16 02:15:37\n\nfixed it",
     "created_at": "2007-11-16T02:15:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1148",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_007009.json:
 }
 ```
 
-Attachment
+Attachment [1148.hg](tarball://root/attachments/some-uuid/ticket1148/1148.hg) by dmharvey created at 2007-11-16 02:15:37
 
 fixed it
 
@@ -111,7 +111,7 @@ fixed it
 archive/issue_comments_007010.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1148-more.patch](tarball://root/attachments/some-uuid/ticket1148/1148-more.patch) by robertwb created at 2007-11-18 08:52:58",
     "created_at": "2007-11-18T08:52:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1148",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_007010.json:
 }
 ```
 
-Attachment
+Attachment [1148-more.patch](tarball://root/attachments/some-uuid/ticket1148/1148-more.patch) by robertwb created at 2007-11-18 08:52:58
 
 
 

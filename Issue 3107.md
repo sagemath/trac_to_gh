@@ -54,7 +54,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3107
 archive/issue_comments_021472.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3107-x3d-triangulation.patch](tarball://root/attachments/some-uuid/ticket3107/3107-x3d-triangulation.patch) by robertwb created at 2008-05-07 06:45:32",
     "created_at": "2008-05-07T06:45:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3107",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_021472.json:
 }
 ```
 
-Attachment
+Attachment [3107-x3d-triangulation.patch](tarball://root/attachments/some-uuid/ticket3107/3107-x3d-triangulation.patch) by robertwb created at 2008-05-07 06:45:32
 
 
 

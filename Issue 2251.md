@@ -49,7 +49,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2251
 archive/issue_comments_014913.json:
 ```json
 {
-    "body": "Attachment\n\nFixes the doctest to the answer that sage was producing, which is correct. (One can check it within sage, i.e. it's easy to check that the two ideals are equal to one another, and I even double-checked in Pari to make sure we weren't missing something in moving the answer from Pari to Sage.)",
+    "body": "Attachment [trac-2252.patch](tarball://root/attachments/some-uuid/ticket2251/trac-2252.patch) by craigcitro created at 2008-02-21 23:13:49\n\nFixes the doctest to the answer that sage was producing, which is correct. (One can check it within sage, i.e. it's easy to check that the two ideals are equal to one another, and I even double-checked in Pari to make sure we weren't missing something in moving the answer from Pari to Sage.)",
     "created_at": "2008-02-21T23:13:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2251",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_014913.json:
 }
 ```
 
-Attachment
+Attachment [trac-2252.patch](tarball://root/attachments/some-uuid/ticket2251/trac-2252.patch) by craigcitro created at 2008-02-21 23:13:49
 
 Fixes the doctest to the answer that sage was producing, which is correct. (One can check it within sage, i.e. it's easy to check that the two ideals are equal to one another, and I even double-checked in Pari to make sure we weren't missing something in moving the answer from Pari to Sage.)
 

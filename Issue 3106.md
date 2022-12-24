@@ -106,7 +106,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_021465.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [jmol-save-image.patch](tarball://root/attachments/some-uuid/ticket3106/jmol-save-image.patch) by jason created at 2009-02-14 09:48:46",
     "created_at": "2009-02-14T09:48:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3106",
     "type": "issue_comment",
@@ -115,7 +115,7 @@ archive/issue_comments_021465.json:
 }
 ```
 
-Attachment
+Attachment [jmol-save-image.patch](tarball://root/attachments/some-uuid/ticket3106/jmol-save-image.patch) by jason created at 2009-02-14 09:48:46
 
 
 

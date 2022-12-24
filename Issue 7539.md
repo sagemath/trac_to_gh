@@ -194,7 +194,7 @@ Provided by Leif Leonhardy in his first email
 archive/issue_comments_063950.json:
 ```json
 {
-    "body": "Attachment\n\nProvided by Leif Leonhardy in his second email",
+    "body": "Attachment [Silva.c.additional.diff](tarball://root/attachments/some-uuid/ticket7539/Silva.c.additional.diff) by kevin.stueve created at 2009-12-06 06:31:04\n\nProvided by Leif Leonhardy in his second email",
     "created_at": "2009-12-06T06:31:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7539",
     "type": "issue_comment",
@@ -203,7 +203,7 @@ archive/issue_comments_063950.json:
 }
 ```
 
-Attachment
+Attachment [Silva.c.additional.diff](tarball://root/attachments/some-uuid/ticket7539/Silva.c.additional.diff) by kevin.stueve created at 2009-12-06 06:31:04
 
 Provided by Leif Leonhardy in his second email
 
@@ -232,7 +232,7 @@ Provided by Leif Leonhardy in his third email
 archive/issue_comments_063952.json:
 ```json
 {
-    "body": "Attachment\n\noriginal version of Silva.c",
+    "body": "Attachment [Silva.c.orig](tarball://root/attachments/some-uuid/ticket7539/Silva.c.orig) by mvngu created at 2009-12-24 15:27:50\n\noriginal version of Silva.c",
     "created_at": "2009-12-24T15:27:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7539",
     "type": "issue_comment",
@@ -241,7 +241,7 @@ archive/issue_comments_063952.json:
 }
 ```
 
-Attachment
+Attachment [Silva.c.orig](tarball://root/attachments/some-uuid/ticket7539/Silva.c.orig) by mvngu created at 2009-12-24 15:27:50
 
 original version of Silva.c
 
@@ -299,7 +299,7 @@ After applying the above three patches on top of `Silva.c.orig`, you get the fil
 archive/issue_comments_063954.json:
 ```json
 {
-    "body": "Attachment\n\nfirst patch of Leif_attachment1.zip, i.e. Silva.c.diff0",
+    "body": "Attachment [01_Silva.patch](tarball://root/attachments/some-uuid/ticket7539/01_Silva.patch) by mvngu created at 2009-12-24 16:24:04\n\nfirst patch of Leif_attachment1.zip, i.e. Silva.c.diff0",
     "created_at": "2009-12-24T16:24:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7539",
     "type": "issue_comment",
@@ -308,7 +308,7 @@ archive/issue_comments_063954.json:
 }
 ```
 
-Attachment
+Attachment [01_Silva.patch](tarball://root/attachments/some-uuid/ticket7539/01_Silva.patch) by mvngu created at 2009-12-24 16:24:04
 
 first patch of Leif_attachment1.zip, i.e. Silva.c.diff0
 
@@ -337,7 +337,7 @@ Leif_attachment1.zip, patch Silva.c.diff: apply all changes in Silva.c.diff that
 archive/issue_comments_063956.json:
 ```json
 {
-    "body": "Attachment\n\nadd changes from Silva.c.additional.diff",
+    "body": "Attachment [02_Silva.patch](tarball://root/attachments/some-uuid/ticket7539/02_Silva.patch) by mvngu created at 2009-12-24 16:24:51\n\nadd changes from Silva.c.additional.diff",
     "created_at": "2009-12-24T16:24:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7539",
     "type": "issue_comment",
@@ -346,7 +346,7 @@ archive/issue_comments_063956.json:
 }
 ```
 
-Attachment
+Attachment [02_Silva.patch](tarball://root/attachments/some-uuid/ticket7539/02_Silva.patch) by mvngu created at 2009-12-24 16:24:51
 
 add changes from Silva.c.additional.diff
 
@@ -357,7 +357,7 @@ add changes from Silva.c.additional.diff
 archive/issue_comments_063957.json:
 ```json
 {
-    "body": "Attachment\n\nadd changes from Silva.c.bounds-restriction-removed.diff",
+    "body": "Attachment [04_Silva.patch](tarball://root/attachments/some-uuid/ticket7539/04_Silva.patch) by mvngu created at 2009-12-24 16:25:07\n\nadd changes from Silva.c.bounds-restriction-removed.diff",
     "created_at": "2009-12-24T16:25:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7539",
     "type": "issue_comment",
@@ -366,7 +366,7 @@ archive/issue_comments_063957.json:
 }
 ```
 
-Attachment
+Attachment [04_Silva.patch](tarball://root/attachments/some-uuid/ticket7539/04_Silva.patch) by mvngu created at 2009-12-24 16:25:07
 
 add changes from Silva.c.bounds-restriction-removed.diff
 
@@ -377,7 +377,7 @@ add changes from Silva.c.bounds-restriction-removed.diff
 archive/issue_comments_063958.json:
 ```json
 {
-    "body": "Attachment\n\nversion of Silva.c after applying the previous 4 patches",
+    "body": "Attachment [Silva.c](tarball://root/attachments/some-uuid/ticket7539/Silva.c) by mvngu created at 2009-12-24 16:25:43\n\nversion of Silva.c after applying the previous 4 patches",
     "created_at": "2009-12-24T16:25:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7539",
     "type": "issue_comment",
@@ -386,7 +386,7 @@ archive/issue_comments_063958.json:
 }
 ```
 
-Attachment
+Attachment [Silva.c](tarball://root/attachments/some-uuid/ticket7539/Silva.c) by mvngu created at 2009-12-24 16:25:43
 
 version of Silva.c after applying the previous 4 patches
 
@@ -797,7 +797,7 @@ I've also posted a few patches, one that provides a cython wrapper, and a couple
 archive/issue_comments_063973.json:
 ```json
 {
-    "body": "Attachment\n\nIntegrates primesieve-4.4.spkg into sagemath",
+    "body": "Attachment [primesieve-sage-root.patch](tarball://root/attachments/some-uuid/ticket7539/primesieve-sage-root.patch) by walki created at 2013-09-09 12:33:41\n\nIntegrates primesieve-4.4.spkg into sagemath",
     "created_at": "2013-09-09T12:33:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7539",
     "type": "issue_comment",
@@ -806,7 +806,7 @@ archive/issue_comments_063973.json:
 }
 ```
 
-Attachment
+Attachment [primesieve-sage-root.patch](tarball://root/attachments/some-uuid/ticket7539/primesieve-sage-root.patch) by walki created at 2013-09-09 12:33:41
 
 Integrates primesieve-4.4.spkg into sagemath
 
@@ -817,7 +817,7 @@ Integrates primesieve-4.4.spkg into sagemath
 archive/issue_comments_063974.json:
 ```json
 {
-    "body": "Attachment\n\nInitial primesieve patch",
+    "body": "Attachment [primesieve-sage-main.patch](tarball://root/attachments/some-uuid/ticket7539/primesieve-sage-main.patch) by walki created at 2013-09-09 12:34:37\n\nInitial primesieve patch",
     "created_at": "2013-09-09T12:34:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7539",
     "type": "issue_comment",
@@ -826,7 +826,7 @@ archive/issue_comments_063974.json:
 }
 ```
 
-Attachment
+Attachment [primesieve-sage-main.patch](tarball://root/attachments/some-uuid/ticket7539/primesieve-sage-main.patch) by walki created at 2013-09-09 12:34:37
 
 Initial primesieve patch
 
@@ -895,7 +895,7 @@ Changing status from new to needs_review.
 archive/issue_comments_063978.json:
 ```json
 {
-    "body": "Attachment\n\nI've reviewed this code while Kim was writing it, so other than the following questions/concerns, it has a positive review from me.\n\n1. What is our policy with licencing files in the Sage library. This patch adds two files which are marked as BSD licensed, is this ok? (given that the Sage library as a whole is GPL licensed)\n2. What is the current policy on adding new standard SPKGs? At some point it was decided that all new SPKGs had to be optional before they were made standard, but this requirement has been repeatedly ignored.\n3. Would it make sense stripping out the directory src/src/apps/gui? This would reduce the size of the spkg by over half.\n\nP.S. Kim, would you please update the list of developers on trac's homepage so people know who you are.",
+    "body": "Attachment [02_primesieve-sage-main.patch](tarball://root/attachments/some-uuid/ticket7539/02_primesieve-sage-main.patch) by ohanar created at 2013-09-10 03:42:57\n\nI've reviewed this code while Kim was writing it, so other than the following questions/concerns, it has a positive review from me.\n\n1. What is our policy with licencing files in the Sage library. This patch adds two files which are marked as BSD licensed, is this ok? (given that the Sage library as a whole is GPL licensed)\n2. What is the current policy on adding new standard SPKGs? At some point it was decided that all new SPKGs had to be optional before they were made standard, but this requirement has been repeatedly ignored.\n3. Would it make sense stripping out the directory src/src/apps/gui? This would reduce the size of the spkg by over half.\n\nP.S. Kim, would you please update the list of developers on trac's homepage so people know who you are.",
     "created_at": "2013-09-10T03:42:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7539",
     "type": "issue_comment",
@@ -904,7 +904,7 @@ archive/issue_comments_063978.json:
 }
 ```
 
-Attachment
+Attachment [02_primesieve-sage-main.patch](tarball://root/attachments/some-uuid/ticket7539/02_primesieve-sage-main.patch) by ohanar created at 2013-09-10 03:42:57
 
 I've reviewed this code while Kim was writing it, so other than the following questions/concerns, it has a positive review from me.
 
@@ -992,7 +992,7 @@ Same as 02_primesieve-sage-main.patch but uses GPL instead of BSD license.
 archive/issue_comments_063982.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [03_primesieve-sage-main.patch](tarball://root/attachments/some-uuid/ticket7539/03_primesieve-sage-main.patch) by vbraun_spam created at 2014-01-30 21:20:52",
     "created_at": "2014-01-30T21:20:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7539",
     "type": "issue_comment",
@@ -1001,7 +1001,7 @@ archive/issue_comments_063982.json:
 }
 ```
 
-Attachment
+Attachment [03_primesieve-sage-main.patch](tarball://root/attachments/some-uuid/ticket7539/03_primesieve-sage-main.patch) by vbraun_spam created at 2014-01-30 21:20:52
 
 
 

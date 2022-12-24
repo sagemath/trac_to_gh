@@ -105,7 +105,7 @@ sage: type(list(x + y)[0][-1])
 archive/issue_comments_010037.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_1577.patch](tarball://root/attachments/some-uuid/ticket1577/trac_1577.patch) by malb created at 2008-01-06 17:09:38",
     "created_at": "2008-01-06T17:09:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1577",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_010037.json:
 }
 ```
 
-Attachment
+Attachment [trac_1577.patch](tarball://root/attachments/some-uuid/ticket1577/trac_1577.patch) by malb created at 2008-01-06 17:09:38
 
 
 
@@ -204,7 +204,7 @@ I am okay with changing the docstring but want to point out that "from largest t
 archive/issue_comments_010042.json:
 ```json
 {
-    "body": "Attachment\n\nJoel's suggested change is in `trac_1577_comment_4.patch`.",
+    "body": "Attachment [trac_1577_comment_4.patch](tarball://root/attachments/some-uuid/ticket1577/trac_1577_comment_4.patch) by malb created at 2008-01-10 15:03:32\n\nJoel's suggested change is in `trac_1577_comment_4.patch`.",
     "created_at": "2008-01-10T15:03:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1577",
     "type": "issue_comment",
@@ -213,7 +213,7 @@ archive/issue_comments_010042.json:
 }
 ```
 
-Attachment
+Attachment [trac_1577_comment_4.patch](tarball://root/attachments/some-uuid/ticket1577/trac_1577_comment_4.patch) by malb created at 2008-01-10 15:03:32
 
 Joel's suggested change is in `trac_1577_comment_4.patch`.
 

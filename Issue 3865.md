@@ -95,7 +95,7 @@ Michael
 archive/issue_comments_027550.json:
 ```json
 {
-    "body": "Attachment\n\nPatch against 5.11.beta3",
+    "body": "Attachment [trac_3865.patch](tarball://root/attachments/some-uuid/ticket3865/trac_3865.patch) by davidloeffler created at 2013-07-22 19:46:43\n\nPatch against 5.11.beta3",
     "created_at": "2013-07-22T19:46:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3865",
     "type": "issue_comment",
@@ -104,7 +104,7 @@ archive/issue_comments_027550.json:
 }
 ```
 
-Attachment
+Attachment [trac_3865.patch](tarball://root/attachments/some-uuid/ticket3865/trac_3865.patch) by davidloeffler created at 2013-07-22 19:46:43
 
 Patch against 5.11.beta3
 

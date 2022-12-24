@@ -118,7 +118,7 @@ Sorry, I meant *closely* related.
 archive/issue_comments_063517.json:
 ```json
 {
-    "body": "Attachment\n\nThis seems to be fixed in the meanwhile. attachment:trac_7507-forget_assumptions.patch adds a doctest.",
+    "body": "Attachment [trac_7507-forget_assumptions.patch](tarball://root/attachments/some-uuid/ticket7507/trac_7507-forget_assumptions.patch) by burcin created at 2011-05-08 20:11:15\n\nThis seems to be fixed in the meanwhile. attachment:trac_7507-forget_assumptions.patch adds a doctest.",
     "created_at": "2011-05-08T20:11:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7507",
     "type": "issue_comment",
@@ -127,7 +127,7 @@ archive/issue_comments_063517.json:
 }
 ```
 
-Attachment
+Attachment [trac_7507-forget_assumptions.patch](tarball://root/attachments/some-uuid/ticket7507/trac_7507-forget_assumptions.patch) by burcin created at 2011-05-08 20:11:15
 
 This seems to be fixed in the meanwhile. attachment:trac_7507-forget_assumptions.patch adds a doctest.
 

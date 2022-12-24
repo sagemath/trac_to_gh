@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2461
 archive/issue_comments_016678.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [vector-norms.patch](tarball://root/attachments/some-uuid/ticket2461/vector-norms.patch) by robertwb created at 2008-03-10 18:05:42",
     "created_at": "2008-03-10T18:05:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2461",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_016678.json:
 }
 ```
 
-Attachment
+Attachment [vector-norms.patch](tarball://root/attachments/some-uuid/ticket2461/vector-norms.patch) by robertwb created at 2008-03-10 18:05:42
 
 
 
@@ -81,7 +81,7 @@ I fixed this and put up a new patch that incorporates both this fix and Robert's
 archive/issue_comments_016680.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [vector-norms_replace.patch](tarball://root/attachments/some-uuid/ticket2461/vector-norms_replace.patch) by rlm created at 2008-03-12 05:19:23",
     "created_at": "2008-03-12T05:19:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2461",
     "type": "issue_comment",
@@ -90,7 +90,7 @@ archive/issue_comments_016680.json:
 }
 ```
 
-Attachment
+Attachment [vector-norms_replace.patch](tarball://root/attachments/some-uuid/ticket2461/vector-norms_replace.patch) by rlm created at 2008-03-12 05:19:23
 
 
 

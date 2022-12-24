@@ -80,7 +80,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3892
 archive/issue_comments_027814.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [finite_field_givaro_random_element.patch](tarball://root/attachments/some-uuid/ticket3892/finite_field_givaro_random_element.patch) by malb created at 2008-08-27 13:27:26",
     "created_at": "2008-08-27T13:27:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3892",
     "type": "issue_comment",
@@ -89,7 +89,7 @@ archive/issue_comments_027814.json:
 }
 ```
 
-Attachment
+Attachment [finite_field_givaro_random_element.patch](tarball://root/attachments/some-uuid/ticket3892/finite_field_givaro_random_element.patch) by malb created at 2008-08-27 13:27:26
 
 
 

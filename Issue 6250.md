@@ -38,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6250
 archive/issue_comments_049911.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [matrix_group_gap-cardinality_len-6250-nt.2.patch](tarball://root/attachments/some-uuid/ticket6250/matrix_group_gap-cardinality_len-6250-nt.2.patch) by nthiery created at 2009-06-08 23:26:26",
     "created_at": "2009-06-08T23:26:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6250",
     "type": "issue_comment",
@@ -47,7 +47,7 @@ archive/issue_comments_049911.json:
 }
 ```
 
-Attachment
+Attachment [matrix_group_gap-cardinality_len-6250-nt.2.patch](tarball://root/attachments/some-uuid/ticket6250/matrix_group_gap-cardinality_len-6250-nt.2.patch) by nthiery created at 2009-06-08 23:26:26
 
 
 

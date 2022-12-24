@@ -159,7 +159,7 @@ Changing status from new to needs_work.
 archive/issue_comments_098929.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9937_pari_prec.patch](tarball://root/attachments/some-uuid/ticket9937/9937_pari_prec.patch) by jdemeyer created at 2012-04-29 14:01:45",
     "created_at": "2012-04-29T14:01:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9936",
     "type": "issue_comment",
@@ -168,7 +168,7 @@ archive/issue_comments_098929.json:
 }
 ```
 
-Attachment
+Attachment [9937_pari_prec.patch](tarball://root/attachments/some-uuid/ticket9937/9937_pari_prec.patch) by jdemeyer created at 2012-04-29 14:01:45
 
 
 

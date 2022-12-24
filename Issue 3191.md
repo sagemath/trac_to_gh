@@ -53,7 +53,7 @@ Changing status from new to assigned.
 archive/issue_comments_022069.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [quaddouble-2.2.p7-spkg-install-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3191/quaddouble-2.2.p7-spkg-install-64bit-osx.patch) by mabshoff created at 2008-05-19 04:53:39",
     "created_at": "2008-05-19T04:53:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3191",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_022069.json:
 }
 ```
 
-Attachment
+Attachment [quaddouble-2.2.p7-spkg-install-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3191/quaddouble-2.2.p7-spkg-install-64bit-osx.patch) by mabshoff created at 2008-05-19 04:53:39
 
 
 

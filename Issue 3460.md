@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3460
 archive/issue_comments_024401.json:
 ```json
 {
-    "body": "Attachment\n\nMostly okay, couple of issues:\n\n* in the docstring, `t^d` should be `t^{d-1} `\n* shouldn't QQ get this method too? I suppose this is a more general problem, it's not just this method. Maybe that should be a different ticket.\n* the docstring is slightly ambiguous. \"Return the power basis for this number field over its base field.\": it's not \"the\" power basis, it's \"a\" power basis. Also, \"and t is a root of f(x) in this field\": it's not just any root, it's the root that's being used to represent the elements. Perhaps just merge these sentences.",
+    "body": "Attachment [3460-ncalexan-nf-power-basis-1.patch](tarball://root/attachments/some-uuid/ticket3460/3460-ncalexan-nf-power-basis-1.patch) by dmharvey created at 2008-06-21 19:04:50\n\nMostly okay, couple of issues:\n\n* in the docstring, `t^d` should be `t^{d-1} `\n* shouldn't QQ get this method too? I suppose this is a more general problem, it's not just this method. Maybe that should be a different ticket.\n* the docstring is slightly ambiguous. \"Return the power basis for this number field over its base field.\": it's not \"the\" power basis, it's \"a\" power basis. Also, \"and t is a root of f(x) in this field\": it's not just any root, it's the root that's being used to represent the elements. Perhaps just merge these sentences.",
     "created_at": "2008-06-21T19:04:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3460",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_024401.json:
 }
 ```
 
-Attachment
+Attachment [3460-ncalexan-nf-power-basis-1.patch](tarball://root/attachments/some-uuid/ticket3460/3460-ncalexan-nf-power-basis-1.patch) by dmharvey created at 2008-06-21 19:04:50
 
 Mostly okay, couple of issues:
 
@@ -153,7 +153,7 @@ Michael
 archive/issue_comments_024407.json:
 ```json
 {
-    "body": "Attachment\n\nThis addresses the comments about the docstring and adds the desired function to QQ.\n\nIt also addresses a bug in residue_field that I just noticed... sorry for the crosspost.",
+    "body": "Attachment [3460-ncalexan-nf-power-basis-2.patch](tarball://root/attachments/some-uuid/ticket3460/3460-ncalexan-nf-power-basis-2.patch) by ncalexan created at 2008-08-10 06:41:12\n\nThis addresses the comments about the docstring and adds the desired function to QQ.\n\nIt also addresses a bug in residue_field that I just noticed... sorry for the crosspost.",
     "created_at": "2008-08-10T06:41:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3460",
     "type": "issue_comment",
@@ -162,7 +162,7 @@ archive/issue_comments_024407.json:
 }
 ```
 
-Attachment
+Attachment [3460-ncalexan-nf-power-basis-2.patch](tarball://root/attachments/some-uuid/ticket3460/3460-ncalexan-nf-power-basis-2.patch) by ncalexan created at 2008-08-10 06:41:12
 
 This addresses the comments about the docstring and adds the desired function to QQ.
 
@@ -175,7 +175,7 @@ It also addresses a bug in residue_field that I just noticed... sorry for the cr
 archive/issue_comments_024408.json:
 ```json
 {
-    "body": "Attachment\n\nFinal patch fixes a one word type in the doctest :)\n\nHopefully it's good now.  All patches are \"from scratch\", i.e. apply only the last patch.",
+    "body": "Attachment [3460-ncalexan-nf-power-basis-3.patch](tarball://root/attachments/some-uuid/ticket3460/3460-ncalexan-nf-power-basis-3.patch) by ncalexan created at 2008-08-10 18:22:12\n\nFinal patch fixes a one word type in the doctest :)\n\nHopefully it's good now.  All patches are \"from scratch\", i.e. apply only the last patch.",
     "created_at": "2008-08-10T18:22:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3460",
     "type": "issue_comment",
@@ -184,7 +184,7 @@ archive/issue_comments_024408.json:
 }
 ```
 
-Attachment
+Attachment [3460-ncalexan-nf-power-basis-3.patch](tarball://root/attachments/some-uuid/ticket3460/3460-ncalexan-nf-power-basis-3.patch) by ncalexan created at 2008-08-10 18:22:12
 
 Final patch fixes a one word type in the doctest :)
 

@@ -91,7 +91,7 @@ I'm suspicious of the patch I just attached. New one coming right up.
 archive/issue_comments_046623.json:
 ```json
 {
-    "body": "Attachment\n\nOk, it's ready to go.",
+    "body": "Attachment [lcalc-doc.patch](tarball://root/attachments/some-uuid/ticket5896/lcalc-doc.patch) by craigcitro created at 2009-04-27 09:38:44\n\nOk, it's ready to go.",
     "created_at": "2009-04-27T09:38:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5896",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_046623.json:
 }
 ```
 
-Attachment
+Attachment [lcalc-doc.patch](tarball://root/attachments/some-uuid/ticket5896/lcalc-doc.patch) by craigcitro created at 2009-04-27 09:38:44
 
 Ok, it's ready to go.
 

@@ -45,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6196
 archive/issue_comments_049479.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [mpmath.patch](tarball://root/attachments/some-uuid/ticket6196/mpmath.patch) by fredrik.johansson created at 2009-06-03 17:36:56",
     "created_at": "2009-06-03T17:36:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6196",
     "type": "issue_comment",
@@ -54,7 +54,7 @@ archive/issue_comments_049479.json:
 }
 ```
 
-Attachment
+Attachment [mpmath.patch](tarball://root/attachments/some-uuid/ticket6196/mpmath.patch) by fredrik.johansson created at 2009-06-03 17:36:56
 
 
 
@@ -99,7 +99,7 @@ Changing assignee from mabshoff to mhansen.
 archive/issue_comments_049482.json:
 ```json
 {
-    "body": "Attachment\n\nI put an spkg at http://sage.math.washington.edu/home/mhansen/mpmath-0.12.spkg",
+    "body": "Attachment [trac_6196-review.patch](tarball://root/attachments/some-uuid/ticket6196/trac_6196-review.patch) by mhansen created at 2009-06-19 22:20:55\n\nI put an spkg at http://sage.math.washington.edu/home/mhansen/mpmath-0.12.spkg",
     "created_at": "2009-06-19T22:20:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6196",
     "type": "issue_comment",
@@ -108,7 +108,7 @@ archive/issue_comments_049482.json:
 }
 ```
 
-Attachment
+Attachment [trac_6196-review.patch](tarball://root/attachments/some-uuid/ticket6196/trac_6196-review.patch) by mhansen created at 2009-06-19 22:20:55
 
 I put an spkg at http://sage.math.washington.edu/home/mhansen/mpmath-0.12.spkg
 
@@ -173,7 +173,7 @@ Positive review for me.  Change status after my tiny patch is refereed.
 archive/issue_comments_049486.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6196-ncalexan.patch](tarball://root/attachments/some-uuid/ticket6196/trac_6196-ncalexan.patch) by ncalexan created at 2009-06-19 22:56:41",
     "created_at": "2009-06-19T22:56:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6196",
     "type": "issue_comment",
@@ -182,7 +182,7 @@ archive/issue_comments_049486.json:
 }
 ```
 
-Attachment
+Attachment [trac_6196-ncalexan.patch](tarball://root/attachments/some-uuid/ticket6196/trac_6196-ncalexan.patch) by ncalexan created at 2009-06-19 22:56:41
 
 
 

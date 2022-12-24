@@ -103,7 +103,7 @@ Changing assignee from tba to schilly.
 archive/issue_comments_049939.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [contributors.xml](tarball://root/attachments/some-uuid/ticket6252/contributors.xml) by mvngu created at 2009-06-09 20:07:04",
     "created_at": "2009-06-09T20:07:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6252",
     "type": "issue_comment",
@@ -112,7 +112,7 @@ archive/issue_comments_049939.json:
 }
 ```
 
-Attachment
+Attachment [contributors.xml](tarball://root/attachments/some-uuid/ticket6252/contributors.xml) by mvngu created at 2009-06-09 20:07:04
 
 
 

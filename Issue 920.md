@@ -193,7 +193,7 @@ Looks, good though:
 archive/issue_comments_005644.json:
 ```json
 {
-    "body": "Attachment\n\napplied to 2.8.9.alpha1",
+    "body": "Attachment [920.patch](tarball://root/attachments/some-uuid/ticket920/920.patch) by malb created at 2007-10-24 19:24:49\n\napplied to 2.8.9.alpha1",
     "created_at": "2007-10-24T19:24:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/920",
     "type": "issue_comment",
@@ -202,7 +202,7 @@ archive/issue_comments_005644.json:
 }
 ```
 
-Attachment
+Attachment [920.patch](tarball://root/attachments/some-uuid/ticket920/920.patch) by malb created at 2007-10-24 19:24:49
 
 applied to 2.8.9.alpha1
 

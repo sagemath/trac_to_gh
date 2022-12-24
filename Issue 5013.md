@@ -53,7 +53,7 @@ Changing status from new to assigned.
 archive/issue_comments_038206.json:
 ```json
 {
-    "body": "Attachment\n\nThis is a standard fix for numerical noise issues, positive review (although I have not tested this on Solaris).",
+    "body": "Attachment [trac_5013_fast_eval-numerical.patch](tarball://root/attachments/some-uuid/ticket5013/trac_5013_fast_eval-numerical.patch) by mhampton created at 2009-01-18 17:13:54\n\nThis is a standard fix for numerical noise issues, positive review (although I have not tested this on Solaris).",
     "created_at": "2009-01-18T17:13:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5013",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_038206.json:
 }
 ```
 
-Attachment
+Attachment [trac_5013_fast_eval-numerical.patch](tarball://root/attachments/some-uuid/ticket5013/trac_5013_fast_eval-numerical.patch) by mhampton created at 2009-01-18 17:13:54
 
 This is a standard fix for numerical noise issues, positive review (although I have not tested this on Solaris).
 

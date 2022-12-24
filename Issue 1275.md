@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1275
 archive/issue_comments_007981.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [7427-for-review.patch](tarball://root/attachments/some-uuid/ticket1275/7427-for-review.patch) by cwitty created at 2007-11-25 22:51:06",
     "created_at": "2007-11-25T22:51:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1275",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_007981.json:
 }
 ```
 
-Attachment
+Attachment [7427-for-review.patch](tarball://root/attachments/some-uuid/ticket1275/7427-for-review.patch) by cwitty created at 2007-11-25 22:51:06
 
 
 
@@ -193,7 +193,7 @@ abort: patch failed to apply
 archive/issue_comments_007984.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [qqbar-full.hg](tarball://root/attachments/some-uuid/ticket1275/qqbar-full.hg) by cwitty created at 2007-11-30 03:14:42",
     "created_at": "2007-11-30T03:14:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1275",
     "type": "issue_comment",
@@ -202,7 +202,7 @@ archive/issue_comments_007984.json:
 }
 ```
 
-Attachment
+Attachment [qqbar-full.hg](tarball://root/attachments/some-uuid/ticket1275/qqbar-full.hg) by cwitty created at 2007-11-30 03:14:42
 
 
 
@@ -251,7 +251,7 @@ One thing that looked really out of place to me was the handling of the golden r
 archive/issue_comments_007987.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [qqbar-sqrt-golden.patch](tarball://root/attachments/some-uuid/ticket1275/qqbar-sqrt-golden.patch) by robertwb created at 2007-12-01 02:27:29",
     "created_at": "2007-12-01T02:27:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1275",
     "type": "issue_comment",
@@ -260,7 +260,7 @@ archive/issue_comments_007987.json:
 }
 ```
 
-Attachment
+Attachment [qqbar-sqrt-golden.patch](tarball://root/attachments/some-uuid/ticket1275/qqbar-sqrt-golden.patch) by robertwb created at 2007-12-01 02:27:29
 
 
 

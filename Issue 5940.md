@@ -38,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5940
 archive/issue_comments_046956.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac5940_circ_planar_empty_boundary.patch](tarball://root/attachments/some-uuid/ticket5940/trac5940_circ_planar_empty_boundary.patch) by ekirkman created at 2009-05-18 19:18:49",
     "created_at": "2009-05-18T19:18:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5940",
     "type": "issue_comment",
@@ -47,7 +47,7 @@ archive/issue_comments_046956.json:
 }
 ```
 
-Attachment
+Attachment [trac5940_circ_planar_empty_boundary.patch](tarball://root/attachments/some-uuid/ticket5940/trac5940_circ_planar_empty_boundary.patch) by ekirkman created at 2009-05-18 19:18:49
 
 
 
@@ -92,7 +92,7 @@ Apply instead.
 archive/issue_comments_046959.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5940-ref_fix.patch](tarball://root/attachments/some-uuid/ticket5940/trac_5940-ref_fix.patch) by rlm created at 2009-05-18 20:46:18",
     "created_at": "2009-05-18T20:46:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5940",
     "type": "issue_comment",
@@ -101,7 +101,7 @@ archive/issue_comments_046959.json:
 }
 ```
 
-Attachment
+Attachment [trac_5940-ref_fix.patch](tarball://root/attachments/some-uuid/ticket5940/trac_5940-ref_fix.patch) by rlm created at 2009-05-18 20:46:18
 
 
 

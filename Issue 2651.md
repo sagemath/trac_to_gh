@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2651
 archive/issue_comments_018214.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sr_matrix.patch](tarball://root/attachments/some-uuid/ticket2651/sr_matrix.patch) by malb created at 2008-03-25 19:48:39",
     "created_at": "2008-03-25T19:48:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2651",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_018214.json:
 }
 ```
 
-Attachment
+Attachment [sr_matrix.patch](tarball://root/attachments/some-uuid/ticket2651/sr_matrix.patch) by malb created at 2008-03-25 19:48:39
 
 
 
@@ -97,7 +97,7 @@ apply instead of previous matrix-refactor.patch patches
 archive/issue_comments_018217.json:
 ```json
 {
-    "body": "Attachment\n\nmatrix-refactor.3.patch is ready to be reviewed.  sr_matrix.patch should be also applied to fix lots of doctests since the new matrix() is a bit stricter on syntax.\n\nThere is an issue remaining with transform.pyx (line 44) calling matrix(3,1,elts), where elts is a list containing a RDF vector of 3 elements instead of elts being a list of 3 RDF numbers.  I'm opening another ticket for this bug.",
+    "body": "Attachment [matrix-refactor.3.patch](tarball://root/attachments/some-uuid/ticket2651/matrix-refactor.3.patch) by jason created at 2008-03-25 21:22:43\n\nmatrix-refactor.3.patch is ready to be reviewed.  sr_matrix.patch should be also applied to fix lots of doctests since the new matrix() is a bit stricter on syntax.\n\nThere is an issue remaining with transform.pyx (line 44) calling matrix(3,1,elts), where elts is a list containing a RDF vector of 3 elements instead of elts being a list of 3 RDF numbers.  I'm opening another ticket for this bug.",
     "created_at": "2008-03-25T21:22:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2651",
     "type": "issue_comment",
@@ -106,7 +106,7 @@ archive/issue_comments_018217.json:
 }
 ```
 
-Attachment
+Attachment [matrix-refactor.3.patch](tarball://root/attachments/some-uuid/ticket2651/matrix-refactor.3.patch) by jason created at 2008-03-25 21:22:43
 
 matrix-refactor.3.patch is ready to be reviewed.  sr_matrix.patch should be also applied to fix lots of doctests since the new matrix() is a bit stricter on syntax.
 
@@ -213,7 +213,7 @@ or something like that, maybe?
 archive/issue_comments_018222.json:
 ```json
 {
-    "body": "Attachment\n\nApply on top of latest matrix-refactor.patch.  Contains doc rewording, extra doctest matrix(graph), redefines matrix(int,dict) according to sage-devel vote.",
+    "body": "Attachment [matrix-refactor-extra.patch](tarball://root/attachments/some-uuid/ticket2651/matrix-refactor-extra.patch) by rhinton created at 2008-03-29 00:31:11\n\nApply on top of latest matrix-refactor.patch.  Contains doc rewording, extra doctest matrix(graph), redefines matrix(int,dict) according to sage-devel vote.",
     "created_at": "2008-03-29T00:31:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2651",
     "type": "issue_comment",
@@ -222,7 +222,7 @@ archive/issue_comments_018222.json:
 }
 ```
 
-Attachment
+Attachment [matrix-refactor-extra.patch](tarball://root/attachments/some-uuid/ticket2651/matrix-refactor-extra.patch) by rhinton created at 2008-03-29 00:31:11
 
 Apply on top of latest matrix-refactor.patch.  Contains doc rewording, extra doctest matrix(graph), redefines matrix(int,dict) according to sage-devel vote.
 
@@ -271,7 +271,7 @@ Apply on top of other patches.  Fixes doctests that fail due to semantic change 
 archive/issue_comments_018225.json:
 ```json
 {
-    "body": "Attachment\n\nAlong with the patch for #2667, a \"sage -t -long devel/sage/sage\" passes with no failures for me.  I think this patch is ready as soon as someone can review my changes.",
+    "body": "Attachment [matrix-refactor-fix-other-tests.patch](tarball://root/attachments/some-uuid/ticket2651/matrix-refactor-fix-other-tests.patch) by rhinton created at 2008-03-29 05:07:27\n\nAlong with the patch for #2667, a \"sage -t -long devel/sage/sage\" passes with no failures for me.  I think this patch is ready as soon as someone can review my changes.",
     "created_at": "2008-03-29T05:07:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2651",
     "type": "issue_comment",
@@ -280,7 +280,7 @@ archive/issue_comments_018225.json:
 }
 ```
 
-Attachment
+Attachment [matrix-refactor-fix-other-tests.patch](tarball://root/attachments/some-uuid/ticket2651/matrix-refactor-fix-other-tests.patch) by rhinton created at 2008-03-29 05:07:27
 
 Along with the patch for #2667, a "sage -t -long devel/sage/sage" passes with no failures for me.  I think this patch is ready as soon as someone can review my changes.
 
@@ -309,7 +309,7 @@ The patches above all apply cleanly and all doctests (-long) pass if the patch a
 archive/issue_comments_018227.json:
 ```json
 {
-    "body": "Attachment\n\nChanges a comment to reflect current documentation.",
+    "body": "Attachment [trac_2651_vector_comment.patch](tarball://root/attachments/some-uuid/ticket2651/trac_2651_vector_comment.patch) by jason created at 2008-03-31 14:17:50\n\nChanges a comment to reflect current documentation.",
     "created_at": "2008-03-31T14:17:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2651",
     "type": "issue_comment",
@@ -318,7 +318,7 @@ archive/issue_comments_018227.json:
 }
 ```
 
-Attachment
+Attachment [trac_2651_vector_comment.patch](tarball://root/attachments/some-uuid/ticket2651/trac_2651_vector_comment.patch) by jason created at 2008-03-31 14:17:50
 
 Changes a comment to reflect current documentation.
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7083
 archive/issue_comments_058549.json:
 ```json
 {
-    "body": "Attachment\n\nBased on 4.1.2.alpha4",
+    "body": "Attachment [trac_7083-special-funcs.patch](tarball://root/attachments/some-uuid/ticket7083/trac_7083-special-funcs.patch) by kcrisman created at 2009-09-30 15:04:02\n\nBased on 4.1.2.alpha4",
     "created_at": "2009-09-30T15:04:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7083",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_058549.json:
 }
 ```
 
-Attachment
+Attachment [trac_7083-special-funcs.patch](tarball://root/attachments/some-uuid/ticket7083/trac_7083-special-funcs.patch) by kcrisman created at 2009-09-30 15:04:02
 
 Based on 4.1.2.alpha4
 

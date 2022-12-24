@@ -145,7 +145,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_082641.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8966-pbori_reduce.patch](tarball://root/attachments/some-uuid/ticket8966/trac_8966-pbori_reduce.patch) by was created at 2010-06-04 14:59:04",
     "created_at": "2010-06-04T14:59:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8966",
     "type": "issue_comment",
@@ -154,7 +154,7 @@ archive/issue_comments_082641.json:
 }
 ```
 
-Attachment
+Attachment [trac_8966-pbori_reduce.patch](tarball://root/attachments/some-uuid/ticket8966/trac_8966-pbori_reduce.patch) by was created at 2010-06-04 14:59:04
 
 
 

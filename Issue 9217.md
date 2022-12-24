@@ -154,7 +154,7 @@ revised patch also changes the AUTHORS block to match the format suggested in th
 archive/issue_comments_086369.json:
 ```json
 {
-    "body": "Attachment\n\nIt looks like the patch just changes the AUTHORS block and doesn't have the actual fix for the problem in it.",
+    "body": "Attachment [trac_9217_Taylor_gamma_fix.patch](tarball://root/attachments/some-uuid/ticket9217/trac_9217_Taylor_gamma_fix.patch) by mhansen created at 2010-06-11 19:36:52\n\nIt looks like the patch just changes the AUTHORS block and doesn't have the actual fix for the problem in it.",
     "created_at": "2010-06-11T19:36:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9217",
     "type": "issue_comment",
@@ -163,7 +163,7 @@ archive/issue_comments_086369.json:
 }
 ```
 
-Attachment
+Attachment [trac_9217_Taylor_gamma_fix.patch](tarball://root/attachments/some-uuid/ticket9217/trac_9217_Taylor_gamma_fix.patch) by mhansen created at 2010-06-11 19:36:52
 
 It looks like the patch just changes the AUTHORS block and doesn't have the actual fix for the problem in it.
 
@@ -195,7 +195,7 @@ Argh!  Will upload new patch.
 archive/issue_comments_086371.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9217-fix-1.patch](tarball://root/attachments/some-uuid/ticket9217/trac_9217-fix-1.patch) by tomc created at 2010-06-11 19:55:21",
     "created_at": "2010-06-11T19:55:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9217",
     "type": "issue_comment",
@@ -204,7 +204,7 @@ archive/issue_comments_086371.json:
 }
 ```
 
-Attachment
+Attachment [trac_9217-fix-1.patch](tarball://root/attachments/some-uuid/ticket9217/trac_9217-fix-1.patch) by tomc created at 2010-06-11 19:55:21
 
 
 
@@ -213,7 +213,7 @@ Attachment
 archive/issue_comments_086372.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9217-fix-2.patch](tarball://root/attachments/some-uuid/ticket9217/trac_9217-fix-2.patch) by tomc created at 2010-06-11 19:56:23",
     "created_at": "2010-06-11T19:56:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9217",
     "type": "issue_comment",
@@ -222,7 +222,7 @@ archive/issue_comments_086372.json:
 }
 ```
 
-Attachment
+Attachment [trac_9217-fix-2.patch](tarball://root/attachments/some-uuid/ticket9217/trac_9217-fix-2.patch) by tomc created at 2010-06-11 19:56:23
 
 
 

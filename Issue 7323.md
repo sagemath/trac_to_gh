@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7323
 archive/issue_comments_061191.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7323-simplicial.patch](tarball://root/attachments/some-uuid/ticket7323/trac_7323-simplicial.patch) by jhpalmieri created at 2009-10-27 18:49:36",
     "created_at": "2009-10-27T18:49:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7323",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_061191.json:
 }
 ```
 
-Attachment
+Attachment [trac_7323-simplicial.patch](tarball://root/attachments/some-uuid/ticket7323/trac_7323-simplicial.patch) by jhpalmieri created at 2009-10-27 18:49:36
 
 
 
@@ -121,7 +121,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_061196.json:
 ```json
 {
-    "body": "Attachment\n\napply only this patch",
+    "body": "Attachment [trac_7323-simplicial-v2.patch](tarball://root/attachments/some-uuid/ticket7323/trac_7323-simplicial-v2.patch) by jhpalmieri created at 2009-10-28 22:00:48\n\napply only this patch",
     "created_at": "2009-10-28T22:00:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7323",
     "type": "issue_comment",
@@ -130,7 +130,7 @@ archive/issue_comments_061196.json:
 }
 ```
 
-Attachment
+Attachment [trac_7323-simplicial-v2.patch](tarball://root/attachments/some-uuid/ticket7323/trac_7323-simplicial-v2.patch) by jhpalmieri created at 2009-10-28 22:00:48
 
 apply only this patch
 

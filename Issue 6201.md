@@ -98,7 +98,7 @@ Simple fix up for review.
 archive/issue_comments_049543.json:
 ```json
 {
-    "body": "Attachment\n\nSimple change to the code, includes a doctest, passes all tests, reference manual builds.  Positive review.\n\nNow should we do the same thing with GF(2)(), CDF(), etc.?",
+    "body": "Attachment [trac_6201.patch](tarball://root/attachments/some-uuid/ticket6201/trac_6201.patch) by jhpalmieri created at 2009-06-09 03:41:34\n\nSimple change to the code, includes a doctest, passes all tests, reference manual builds.  Positive review.\n\nNow should we do the same thing with GF(2)(), CDF(), etc.?",
     "created_at": "2009-06-09T03:41:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6201",
     "type": "issue_comment",
@@ -107,7 +107,7 @@ archive/issue_comments_049543.json:
 }
 ```
 
-Attachment
+Attachment [trac_6201.patch](tarball://root/attachments/some-uuid/ticket6201/trac_6201.patch) by jhpalmieri created at 2009-06-09 03:41:34
 
 Simple change to the code, includes a doctest, passes all tests, reference manual builds.  Positive review.
 

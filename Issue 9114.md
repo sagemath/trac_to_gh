@@ -75,7 +75,7 @@ Changing status from new to needs_review.
 archive/issue_comments_084797.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9114_doc_infinite_polynomial.patch](tarball://root/attachments/some-uuid/ticket9114/9114_doc_infinite_polynomial.patch) by SimonKing created at 2010-06-02 11:04:27",
     "created_at": "2010-06-02T11:04:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9114",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_084797.json:
 }
 ```
 
-Attachment
+Attachment [9114_doc_infinite_polynomial.patch](tarball://root/attachments/some-uuid/ticket9114/9114_doc_infinite_polynomial.patch) by SimonKing created at 2010-06-02 11:04:27
 
 
 
@@ -93,7 +93,7 @@ Attachment
 archive/issue_comments_084798.json:
 ```json
 {
-    "body": "Attachment\n\napply over previous patch",
+    "body": "Attachment [trac_9114-reviewer.patch](tarball://root/attachments/some-uuid/ticket9114/trac_9114-reviewer.patch) by davidloeffler created at 2010-06-14 12:14:38\n\napply over previous patch",
     "created_at": "2010-06-14T12:14:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9114",
     "type": "issue_comment",
@@ -102,7 +102,7 @@ archive/issue_comments_084798.json:
 }
 ```
 
-Attachment
+Attachment [trac_9114-reviewer.patch](tarball://root/attachments/some-uuid/ticket9114/trac_9114-reviewer.patch) by davidloeffler created at 2010-06-14 12:14:38
 
 apply over previous patch
 

@@ -47,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1372
 archive/issue_comments_008805.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-2.8.15.alpha2-fix-dokchitser-doctest-FC7-32bit.patch](tarball://root/attachments/some-uuid/ticket1372/Sage-2.8.15.alpha2-fix-dokchitser-doctest-FC7-32bit.patch) by mabshoff created at 2007-12-02 16:38:46",
     "created_at": "2007-12-02T16:38:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1372",
     "type": "issue_comment",
@@ -56,7 +56,7 @@ archive/issue_comments_008805.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.8.15.alpha2-fix-dokchitser-doctest-FC7-32bit.patch](tarball://root/attachments/some-uuid/ticket1372/Sage-2.8.15.alpha2-fix-dokchitser-doctest-FC7-32bit.patch) by mabshoff created at 2007-12-02 16:38:46
 
 
 

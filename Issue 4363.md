@@ -146,7 +146,7 @@ Just to emphasize, the patch above mysteriously doesn't work with #auto...
 archive/issue_comments_032057.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4363.patch](tarball://root/attachments/some-uuid/ticket4363/trac_4363.patch) by mhansen created at 2009-01-19 04:16:14",
     "created_at": "2009-01-19T04:16:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4363",
     "type": "issue_comment",
@@ -155,7 +155,7 @@ archive/issue_comments_032057.json:
 }
 ```
 
-Attachment
+Attachment [trac_4363.patch](tarball://root/attachments/some-uuid/ticket4363/trac_4363.patch) by mhansen created at 2009-01-19 04:16:14
 
 
 

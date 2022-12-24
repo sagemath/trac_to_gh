@@ -378,7 +378,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_087506.json:
 ```json
 {
-    "body": "Attachment\n\nI made `CoxeterMatrixGroup` lazy import in to fix the numpy startup import.",
+    "body": "Attachment [trac_9290-geometric_coxeter_groups-ts.patch](tarball://root/attachments/some-uuid/ticket9290/trac_9290-geometric_coxeter_groups-ts.patch) by tscrim created at 2013-09-23 02:20:41\n\nI made `CoxeterMatrixGroup` lazy import in to fix the numpy startup import.",
     "created_at": "2013-09-23T02:20:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9290",
     "type": "issue_comment",
@@ -387,7 +387,7 @@ archive/issue_comments_087506.json:
 }
 ```
 
-Attachment
+Attachment [trac_9290-geometric_coxeter_groups-ts.patch](tarball://root/attachments/some-uuid/ticket9290/trac_9290-geometric_coxeter_groups-ts.patch) by tscrim created at 2013-09-23 02:20:41
 
 I made `CoxeterMatrixGroup` lazy import in to fix the numpy startup import.
 
@@ -416,7 +416,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_087508.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-9290-review.patch](tarball://root/attachments/some-uuid/ticket9290/trac-9290-review.patch) by chapoton created at 2013-10-20 20:29:30",
     "created_at": "2013-10-20T20:29:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9290",
     "type": "issue_comment",
@@ -425,7 +425,7 @@ archive/issue_comments_087508.json:
 }
 ```
 
-Attachment
+Attachment [trac-9290-review.patch](tarball://root/attachments/some-uuid/ticket9290/trac-9290-review.patch) by chapoton created at 2013-10-20 20:29:30
 
 
 

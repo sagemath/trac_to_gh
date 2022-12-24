@@ -53,7 +53,7 @@ adds basic doctests to tri_plot.py
 archive/issue_comments_075210.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8394_v1.patch](tarball://root/attachments/some-uuid/ticket8394/trac_8394_v1.patch) by mhampton created at 2010-04-25 21:38:05",
     "created_at": "2010-04-25T21:38:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8394",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_075210.json:
 }
 ```
 
-Attachment
+Attachment [trac_8394_v1.patch](tarball://root/attachments/some-uuid/ticket8394/trac_8394_v1.patch) by mhampton created at 2010-04-25 21:38:05
 
 
 
@@ -107,7 +107,7 @@ The patch formally gets coverage of tri_plot.py from 0 to 100%.  Since I still d
 archive/issue_comments_075213.json:
 ```json
 {
-    "body": "Attachment\n\nThe documentation is OK by me. I have just one trivial patch to add, which requires another pair of eyes other than mine. So if that reviewer patch gets a positive review, the whole ticket is good to go.\n\n\n\nWhen the module `plot/plot3d/tri_plot.py` is added to the reference manual, building the reference manual with that newly added module would result in some warnings. But fixing that is another ticket.",
+    "body": "Attachment [trac_8394-reviewer.patch](tarball://root/attachments/some-uuid/ticket8394/trac_8394-reviewer.patch) by mvngu created at 2010-04-28 13:36:24\n\nThe documentation is OK by me. I have just one trivial patch to add, which requires another pair of eyes other than mine. So if that reviewer patch gets a positive review, the whole ticket is good to go.\n\n\n\nWhen the module `plot/plot3d/tri_plot.py` is added to the reference manual, building the reference manual with that newly added module would result in some warnings. But fixing that is another ticket.",
     "created_at": "2010-04-28T13:36:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8394",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_075213.json:
 }
 ```
 
-Attachment
+Attachment [trac_8394-reviewer.patch](tarball://root/attachments/some-uuid/ticket8394/trac_8394-reviewer.patch) by mvngu created at 2010-04-28 13:36:24
 
 The documentation is OK by me. I have just one trivial patch to add, which requires another pair of eyes other than mine. So if that reviewer patch gets a positive review, the whole ticket is good to go.
 

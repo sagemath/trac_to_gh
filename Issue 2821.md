@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2821
 archive/issue_comments_019365.json:
 ```json
 {
-    "body": "Attachment\n\ndoc patch",
+    "body": "Attachment [2821-stop_bugging_wstein.patch](tarball://root/attachments/some-uuid/ticket2821/2821-stop_bugging_wstein.patch) by AlexGhitza created at 2008-04-25 00:36:07\n\ndoc patch",
     "created_at": "2008-04-25T00:36:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2821",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_019365.json:
 }
 ```
 
-Attachment
+Attachment [2821-stop_bugging_wstein.patch](tarball://root/attachments/some-uuid/ticket2821/2821-stop_bugging_wstein.patch) by AlexGhitza created at 2008-04-25 00:36:07
 
 doc patch
 

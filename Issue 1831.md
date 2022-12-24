@@ -49,7 +49,7 @@ these are from David Joyner
 archive/issue_comments_011592.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me",
+    "body": "Attachment [trac-1831.patch](tarball://root/attachments/some-uuid/ticket1831/trac-1831.patch) by mhansen created at 2008-01-21 03:30:55\n\nLooks good to me",
     "created_at": "2008-01-21T03:30:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1831",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_011592.json:
 }
 ```
 
-Attachment
+Attachment [trac-1831.patch](tarball://root/attachments/some-uuid/ticket1831/trac-1831.patch) by mhansen created at 2008-01-21 03:30:55
 
 Looks good to me
 

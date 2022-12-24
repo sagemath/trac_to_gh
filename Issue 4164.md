@@ -38,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4164
 archive/issue_comments_030218.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4164.patch](tarball://root/attachments/some-uuid/ticket4164/trac_4164.patch) by anakha created at 2008-09-21 20:36:21",
     "created_at": "2008-09-21T20:36:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4164",
     "type": "issue_comment",
@@ -47,7 +47,7 @@ archive/issue_comments_030218.json:
 }
 ```
 
-Attachment
+Attachment [trac_4164.patch](tarball://root/attachments/some-uuid/ticket4164/trac_4164.patch) by anakha created at 2008-09-21 20:36:21
 
 
 
@@ -114,7 +114,7 @@ I was just lucky with my earlier tests.  Expect an updated patch later tonight.
 archive/issue_comments_030222.json:
 ```json
 {
-    "body": "Attachment\n\nNow it works in all cases, all the time.  It is faster for dimensions 2 and 3.\n\nDimensions higher than that can take really long (like 1 second in dimension 4) to compute, but at least they work.\n\nI would like someone familiar with polyhedrons and their triangularization to do a sanity check on the output for dimensions 4 or 5 since my level of understanding of this topic is a bit lacking.",
+    "body": "Attachment [trac_4164_corrections.patch](tarball://root/attachments/some-uuid/ticket4164/trac_4164_corrections.patch) by anakha created at 2008-09-23 06:02:18\n\nNow it works in all cases, all the time.  It is faster for dimensions 2 and 3.\n\nDimensions higher than that can take really long (like 1 second in dimension 4) to compute, but at least they work.\n\nI would like someone familiar with polyhedrons and their triangularization to do a sanity check on the output for dimensions 4 or 5 since my level of understanding of this topic is a bit lacking.",
     "created_at": "2008-09-23T06:02:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4164",
     "type": "issue_comment",
@@ -123,7 +123,7 @@ archive/issue_comments_030222.json:
 }
 ```
 
-Attachment
+Attachment [trac_4164_corrections.patch](tarball://root/attachments/some-uuid/ticket4164/trac_4164_corrections.patch) by anakha created at 2008-09-23 06:02:18
 
 Now it works in all cases, all the time.  It is faster for dimensions 2 and 3.
 
@@ -138,7 +138,7 @@ I would like someone familiar with polyhedrons and their triangularization to do
 archive/issue_comments_030223.json:
 ```json
 {
-    "body": "Attachment\n\nCrap, I forgot to remove the part that disabled the cache for the timings I did.  trac_4164_corrections2.patch fixes that.",
+    "body": "Attachment [trac_4164_corrections2.patch](tarball://root/attachments/some-uuid/ticket4164/trac_4164_corrections2.patch) by anakha created at 2008-09-23 06:03:17\n\nCrap, I forgot to remove the part that disabled the cache for the timings I did.  trac_4164_corrections2.patch fixes that.",
     "created_at": "2008-09-23T06:03:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4164",
     "type": "issue_comment",
@@ -147,7 +147,7 @@ archive/issue_comments_030223.json:
 }
 ```
 
-Attachment
+Attachment [trac_4164_corrections2.patch](tarball://root/attachments/some-uuid/ticket4164/trac_4164_corrections2.patch) by anakha created at 2008-09-23 06:03:17
 
 Crap, I forgot to remove the part that disabled the cache for the timings I did.  trac_4164_corrections2.patch fixes that.
 
@@ -273,7 +273,7 @@ I will post a patch soon so you can take a look if you want at what I've been do
 archive/issue_comments_030227.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4164_tfi.patch](tarball://root/attachments/some-uuid/ticket4164/trac_4164_tfi.patch) by anakha created at 2008-09-24 04:05:30",
     "created_at": "2008-09-24T04:05:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4164",
     "type": "issue_comment",
@@ -282,7 +282,7 @@ archive/issue_comments_030227.json:
 }
 ```
 
-Attachment
+Attachment [trac_4164_tfi.patch](tarball://root/attachments/some-uuid/ticket4164/trac_4164_tfi.patch) by anakha created at 2008-09-24 04:05:30
 
 
 
@@ -415,7 +415,7 @@ Final version (apply only this)
 archive/issue_comments_030232.json:
 ```json
 {
-    "body": "Attachment\n\nI now consider the general case to be impossible.  I don't have a formal proof for that though, only experience.  I had almost fixed all of the problems with your 4D example and just to test, tried it with a 5D example.  This broke a lot of things. I kind of realized that even if I managed to fix the 5D case, there would be still more problems in nD (for any n > 5).\n\nSo I restricted the input to polyhedrons of three dimensions or less which works fine and is sensible.  It also fits better with the original function definition which was to produce only triangles.\n\nAny attempt to make a more general version of this should go in a separate ticket/patch and have a different function name.",
+    "body": "Attachment [trac_4164_final.patch](tarball://root/attachments/some-uuid/ticket4164/trac_4164_final.patch) by anakha created at 2008-09-29 05:48:19\n\nI now consider the general case to be impossible.  I don't have a formal proof for that though, only experience.  I had almost fixed all of the problems with your 4D example and just to test, tried it with a 5D example.  This broke a lot of things. I kind of realized that even if I managed to fix the 5D case, there would be still more problems in nD (for any n > 5).\n\nSo I restricted the input to polyhedrons of three dimensions or less which works fine and is sensible.  It also fits better with the original function definition which was to produce only triangles.\n\nAny attempt to make a more general version of this should go in a separate ticket/patch and have a different function name.",
     "created_at": "2008-09-29T05:48:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4164",
     "type": "issue_comment",
@@ -424,7 +424,7 @@ archive/issue_comments_030232.json:
 }
 ```
 
-Attachment
+Attachment [trac_4164_final.patch](tarball://root/attachments/some-uuid/ticket4164/trac_4164_final.patch) by anakha created at 2008-09-29 05:48:19
 
 I now consider the general case to be impossible.  I don't have a formal proof for that though, only experience.  I had almost fixed all of the problems with your 4D example and just to test, tried it with a 5D example.  This broke a lot of things. I kind of realized that even if I managed to fix the 5D case, there would be still more problems in nD (for any n > 5).
 
@@ -439,7 +439,7 @@ Any attempt to make a more general version of this should go in a separate ticke
 archive/issue_comments_030233.json:
 ```json
 {
-    "body": "Attachment\n\nOnly patch needed; merges A.B. and M.H. improvements",
+    "body": "Attachment [trac_4164_merge.patch](tarball://root/attachments/some-uuid/ticket4164/trac_4164_merge.patch) by mhampton created at 2008-09-30 02:48:58\n\nOnly patch needed; merges A.B. and M.H. improvements",
     "created_at": "2008-09-30T02:48:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4164",
     "type": "issue_comment",
@@ -448,7 +448,7 @@ archive/issue_comments_030233.json:
 }
 ```
 
-Attachment
+Attachment [trac_4164_merge.patch](tarball://root/attachments/some-uuid/ticket4164/trac_4164_merge.patch) by mhampton created at 2008-09-30 02:48:58
 
 Only patch needed; merges A.B. and M.H. improvements
 
@@ -477,7 +477,7 @@ OK, I've combined your code in 3D with my improvements for higher dimensions.  I
 archive/issue_comments_030235.json:
 ```json
 {
-    "body": "Attachment\n\nanother merged contribution; no other patch is necessary",
+    "body": "Attachment [trac_4164_merge2.patch](tarball://root/attachments/some-uuid/ticket4164/trac_4164_merge2.patch) by mhampton created at 2008-10-07 21:11:30\n\nanother merged contribution; no other patch is necessary",
     "created_at": "2008-10-07T21:11:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4164",
     "type": "issue_comment",
@@ -486,7 +486,7 @@ archive/issue_comments_030235.json:
 }
 ```
 
-Attachment
+Attachment [trac_4164_merge2.patch](tarball://root/attachments/some-uuid/ticket4164/trac_4164_merge2.patch) by mhampton created at 2008-10-07 21:11:30
 
 another merged contribution; no other patch is necessary
 

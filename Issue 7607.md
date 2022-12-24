@@ -101,7 +101,7 @@ Changing component from documentation to misc.
 archive/issue_comments_064897.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:1 mhansen]:\n> I don't think that those should be checked in since they are installed by spkgs.\n\nYes, good point! Would you consider configuring Mercurial to ignore those files? If so, I have attached the patch `trac_7607-hgignore.patch` to take care of the Mercurial configuration. That patch should be applied to the script repository.",
+    "body": "Attachment [trac_7607-hgignore.patch](tarball://root/attachments/some-uuid/ticket7607/trac_7607-hgignore.patch) by mvngu created at 2009-12-05 13:59:52\n\nReplying to [comment:1 mhansen]:\n> I don't think that those should be checked in since they are installed by spkgs.\n\nYes, good point! Would you consider configuring Mercurial to ignore those files? If so, I have attached the patch `trac_7607-hgignore.patch` to take care of the Mercurial configuration. That patch should be applied to the script repository.",
     "created_at": "2009-12-05T13:59:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7607",
     "type": "issue_comment",
@@ -110,7 +110,7 @@ archive/issue_comments_064897.json:
 }
 ```
 
-Attachment
+Attachment [trac_7607-hgignore.patch](tarball://root/attachments/some-uuid/ticket7607/trac_7607-hgignore.patch) by mvngu created at 2009-12-05 13:59:52
 
 Replying to [comment:1 mhansen]:
 > I don't think that those should be checked in since they are installed by spkgs.

@@ -93,7 +93,7 @@ array([  0.,   1.,   1.,   2.,   3.,   5.,   8.,  13.,  21.,  34.])
 archive/issue_comments_046732.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5912.patch](tarball://root/attachments/some-uuid/ticket5912/trac_5912.patch) by was created at 2009-04-27 18:14:30",
     "created_at": "2009-04-27T18:14:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5912",
     "type": "issue_comment",
@@ -102,7 +102,7 @@ archive/issue_comments_046732.json:
 }
 ```
 
-Attachment
+Attachment [trac_5912.patch](tarball://root/attachments/some-uuid/ticket5912/trac_5912.patch) by was created at 2009-04-27 18:14:30
 
 
 

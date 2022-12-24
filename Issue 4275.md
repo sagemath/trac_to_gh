@@ -67,7 +67,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4275
 archive/issue_comments_031215.json:
 ```json
 {
-    "body": "Attachment\n\nPaul, can you say which version (exactly) your patch should apply to?  I failed to apply it to 3.1.3.alpha3, and suspect that some of the changes I made between 3.1.2 and that one conflict with yours.  (For example, I thought I had already converted some \"internal functions\" to lambda functions!)  It is a habit of mine that when I work on a file I try to improve its doctest coverage at the same time, so this is not so surprising!  John",
+    "body": "Attachment [10554.patch](tarball://root/attachments/some-uuid/ticket4275/10554.patch) by cremona created at 2008-10-13 16:53:19\n\nPaul, can you say which version (exactly) your patch should apply to?  I failed to apply it to 3.1.3.alpha3, and suspect that some of the changes I made between 3.1.2 and that one conflict with yours.  (For example, I thought I had already converted some \"internal functions\" to lambda functions!)  It is a habit of mine that when I work on a file I try to improve its doctest coverage at the same time, so this is not so surprising!  John",
     "created_at": "2008-10-13T16:53:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4275",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_031215.json:
 }
 ```
 
-Attachment
+Attachment [10554.patch](tarball://root/attachments/some-uuid/ticket4275/10554.patch) by cremona created at 2008-10-13 16:53:19
 
 Paul, can you say which version (exactly) your patch should apply to?  I failed to apply it to 3.1.3.alpha3, and suspect that some of the changes I made between 3.1.2 and that one conflict with yours.  (For example, I thought I had already converted some "internal functions" to lambda functions!)  It is a habit of mine that when I work on a file I try to improve its doctest coverage at the same time, so this is not so surprising!  John
 
@@ -107,7 +107,7 @@ I will submit it soon.
 archive/issue_comments_031217.json:
 ```json
 {
-    "body": "Attachment\n\nThe second patch (to be applied after the first one) adds some documentation and one test for the\nPari conversion (thanks Karim Belabas).",
+    "body": "Attachment [10556.patch](tarball://root/attachments/some-uuid/ticket4275/10556.patch) by zimmerma created at 2008-10-14 10:42:34\n\nThe second patch (to be applied after the first one) adds some documentation and one test for the\nPari conversion (thanks Karim Belabas).",
     "created_at": "2008-10-14T10:42:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4275",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_031217.json:
 }
 ```
 
-Attachment
+Attachment [10556.patch](tarball://root/attachments/some-uuid/ticket4275/10556.patch) by zimmerma created at 2008-10-14 10:42:34
 
 The second patch (to be applied after the first one) adds some documentation and one test for the
 Pari conversion (thanks Karim Belabas).
@@ -128,7 +128,7 @@ Pari conversion (thanks Karim Belabas).
 archive/issue_comments_031218.json:
 ```json
 {
-    "body": "Attachment\n\nThe 3rd patch (to be applied after the first 2) re-enable two methods that were unused in\nell_modular_symbols.py, but one was used elsewhere, and the other one might be useful.",
+    "body": "Attachment [trac_4275_part3.patch](tarball://root/attachments/some-uuid/ticket4275/trac_4275_part3.patch) by zimmerma created at 2008-10-14 19:05:30\n\nThe 3rd patch (to be applied after the first 2) re-enable two methods that were unused in\nell_modular_symbols.py, but one was used elsewhere, and the other one might be useful.",
     "created_at": "2008-10-14T19:05:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4275",
     "type": "issue_comment",
@@ -137,7 +137,7 @@ archive/issue_comments_031218.json:
 }
 ```
 
-Attachment
+Attachment [trac_4275_part3.patch](tarball://root/attachments/some-uuid/ticket4275/trac_4275_part3.patch) by zimmerma created at 2008-10-14 19:05:30
 
 The 3rd patch (to be applied after the first 2) re-enable two methods that were unused in
 ell_modular_symbols.py, but one was used elsewhere, and the other one might be useful.
@@ -149,7 +149,7 @@ ell_modular_symbols.py, but one was used elsewhere, and the other one might be u
 archive/issue_comments_031219.json:
 ```json
 {
-    "body": "Attachment\n\nReplaces the three earlier patches",
+    "body": "Attachment [sage-trac4275.patch](tarball://root/attachments/some-uuid/ticket4275/sage-trac4275.patch) by cremona created at 2008-10-18 08:54:14\n\nReplaces the three earlier patches",
     "created_at": "2008-10-18T08:54:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4275",
     "type": "issue_comment",
@@ -158,7 +158,7 @@ archive/issue_comments_031219.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac4275.patch](tarball://root/attachments/some-uuid/ticket4275/sage-trac4275.patch) by cremona created at 2008-10-18 08:54:14
 
 Replaces the three earlier patches
 

@@ -2543,7 +2543,7 @@ rebased Simon's patch to 4.7.1.alpha1
 archive/issue_comments_085246.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac9138_categories_for_more_rings.rebase4.7.1.a1.patch](tarball://root/attachments/some-uuid/ticket9138/trac9138_categories_for_more_rings.rebase4.7.1.a1.patch) by burcin created at 2011-06-07 21:37:25",
     "created_at": "2011-06-07T21:37:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9138",
     "type": "issue_comment",
@@ -2552,7 +2552,7 @@ archive/issue_comments_085246.json:
 }
 ```
 
-Attachment
+Attachment [trac9138_categories_for_more_rings.rebase4.7.1.a1.patch](tarball://root/attachments/some-uuid/ticket9138/trac9138_categories_for_more_rings.rebase4.7.1.a1.patch) by burcin created at 2011-06-07 21:37:25
 
 
 
@@ -3357,7 +3357,7 @@ I am currently running the doc tests (the two tests that previously failed are n
 archive/issue_comments_085275.json:
 ```json
 {
-    "body": "Attachment\n\nUse category framework for rings",
+    "body": "Attachment [trac9138-categories_for_rings.patch](tarball://root/attachments/some-uuid/ticket9138/trac9138-categories_for_rings.patch) by SimonKing created at 2011-08-14 17:46:01\n\nUse category framework for rings",
     "created_at": "2011-08-14T17:46:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9138",
     "type": "issue_comment",
@@ -3366,7 +3366,7 @@ archive/issue_comments_085275.json:
 }
 ```
 
-Attachment
+Attachment [trac9138-categories_for_rings.patch](tarball://root/attachments/some-uuid/ticket9138/trac9138-categories_for_rings.patch) by SimonKing created at 2011-08-14 17:46:01
 
 Use category framework for rings
 
@@ -4019,7 +4019,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_085296.json:
 ```json
 {
-    "body": "Attachment\n\nCategory framework for quotient rings and free algebras; new coercion framework for boolean polynomial rings; conversion from univariate polynomial rings to boolean polynomial rings",
+    "body": "Attachment [trac9138_categories_for_more_rings.patch](tarball://root/attachments/some-uuid/ticket9138/trac9138_categories_for_more_rings.patch) by SimonKing created at 2011-09-07 20:38:54\n\nCategory framework for quotient rings and free algebras; new coercion framework for boolean polynomial rings; conversion from univariate polynomial rings to boolean polynomial rings",
     "created_at": "2011-09-07T20:38:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9138",
     "type": "issue_comment",
@@ -4028,7 +4028,7 @@ archive/issue_comments_085296.json:
 }
 ```
 
-Attachment
+Attachment [trac9138_categories_for_more_rings.patch](tarball://root/attachments/some-uuid/ticket9138/trac9138_categories_for_more_rings.patch) by SimonKing created at 2011-09-07 20:38:54
 
 Category framework for quotient rings and free algebras; new coercion framework for boolean polynomial rings; conversion from univariate polynomial rings to boolean polynomial rings
 
@@ -4131,7 +4131,7 @@ Second patch:
 archive/issue_comments_085301.json:
 ```json
 {
-    "body": "Attachment\n\nCompletely remove old unused code, rather than commenting it out",
+    "body": "Attachment [trac9138_remove_unused_code.patch](tarball://root/attachments/some-uuid/ticket9138/trac9138_remove_unused_code.patch) by SimonKing created at 2011-09-08 08:20:24\n\nCompletely remove old unused code, rather than commenting it out",
     "created_at": "2011-09-08T08:20:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9138",
     "type": "issue_comment",
@@ -4140,7 +4140,7 @@ archive/issue_comments_085301.json:
 }
 ```
 
-Attachment
+Attachment [trac9138_remove_unused_code.patch](tarball://root/attachments/some-uuid/ticket9138/trac9138_remove_unused_code.patch) by SimonKing created at 2011-09-08 08:20:24
 
 Completely remove old unused code, rather than commenting it out
 
@@ -4529,7 +4529,7 @@ A note to the release manager: #11900 just got a positive review by Nicolas Thi√
 archive/issue_comments_085321.json:
 ```json
 {
-    "body": "Attachment\n\nAll patches together in one patch, rebased to #9958",
+    "body": "Attachment [9138_flat.patch](tarball://root/attachments/some-uuid/ticket9138/9138_flat.patch) by jdemeyer created at 2012-01-05 22:44:45\n\nAll patches together in one patch, rebased to #9958",
     "created_at": "2012-01-05T22:44:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9138",
     "type": "issue_comment",
@@ -4538,7 +4538,7 @@ archive/issue_comments_085321.json:
 }
 ```
 
-Attachment
+Attachment [9138_flat.patch](tarball://root/attachments/some-uuid/ticket9138/9138_flat.patch) by jdemeyer created at 2012-01-05 22:44:45
 
 All patches together in one patch, rebased to #9958
 

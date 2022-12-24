@@ -140,7 +140,7 @@ mhansen and I independently came up with the same solution in about the same tim
 archive/issue_comments_016066.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.",
+    "body": "Attachment [vector-field.patch](tarball://root/attachments/some-uuid/ticket2381/vector-field.patch) by mhansen created at 2008-03-04 06:49:17\n\nLooks good to me.",
     "created_at": "2008-03-04T06:49:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2381",
     "type": "issue_comment",
@@ -149,7 +149,7 @@ archive/issue_comments_016066.json:
 }
 ```
 
-Attachment
+Attachment [vector-field.patch](tarball://root/attachments/some-uuid/ticket2381/vector-field.patch) by mhansen created at 2008-03-04 06:49:17
 
 Looks good to me.
 

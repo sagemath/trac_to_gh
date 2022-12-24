@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7979
 archive/issue_comments_069613.json:
 ```json
 {
-    "body": "Attachment\n\nI contacted Karim Belabas about this, suggesting the attached patch to pari's `config/get_fltk`.",
+    "body": "Attachment [pari_fltk.patch](tarball://root/attachments/some-uuid/ticket7979/pari_fltk.patch) by wjp created at 2010-01-18 18:21:12\n\nI contacted Karim Belabas about this, suggesting the attached patch to pari's `config/get_fltk`.",
     "created_at": "2010-01-18T18:21:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7979",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_069613.json:
 }
 ```
 
-Attachment
+Attachment [pari_fltk.patch](tarball://root/attachments/some-uuid/ticket7979/pari_fltk.patch) by wjp created at 2010-01-18 18:21:12
 
 I contacted Karim Belabas about this, suggesting the attached patch to pari's `config/get_fltk`.
 

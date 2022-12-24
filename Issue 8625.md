@@ -53,7 +53,7 @@ Would this be like a density plot or contour plot?  Even after consulting the in
 archive/issue_comments_078197.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [two_positive_charges2d.png](tarball://root/attachments/some-uuid/ticket8625/two_positive_charges2d.png) by olazo created at 2010-08-01 01:06:04",
     "created_at": "2010-08-01T01:06:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8625",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_078197.json:
 }
 ```
 
-Attachment
+Attachment [two_positive_charges2d.png](tarball://root/attachments/some-uuid/ticket8625/two_positive_charges2d.png) by olazo created at 2010-08-01 01:06:04
 
 
 
@@ -71,7 +71,7 @@ Attachment
 archive/issue_comments_078198.json:
 ```json
 {
-    "body": "Attachment\n\nI have just attatched two pictures of the intended results. Both are plots of electric potentials the first one comes with a plot_vector_field of the corresponding electric field.\n\nI also attatched a picture of the 3d version, although I mean to make a new ticket for that once this one is finished.",
+    "body": "Attachment [electric_dipole3d.png](tarball://root/attachments/some-uuid/ticket8625/electric_dipole3d.png) by olazo created at 2010-08-01 01:09:50\n\nI have just attatched two pictures of the intended results. Both are plots of electric potentials the first one comes with a plot_vector_field of the corresponding electric field.\n\nI also attatched a picture of the 3d version, although I mean to make a new ticket for that once this one is finished.",
     "created_at": "2010-08-01T01:09:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8625",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_078198.json:
 }
 ```
 
-Attachment
+Attachment [electric_dipole3d.png](tarball://root/attachments/some-uuid/ticket8625/electric_dipole3d.png) by olazo created at 2010-08-01 01:09:50
 
 I have just attatched two pictures of the intended results. Both are plots of electric potentials the first one comes with a plot_vector_field of the corresponding electric field.
 
@@ -211,7 +211,7 @@ Yes, that is what I used to produce the 3d picture. I have just made #9669
 archive/issue_comments_078204.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [concentrated_contours.png](tarball://root/attachments/some-uuid/ticket8625/concentrated_contours.png) by olazo created at 2010-10-23 23:19:22",
     "created_at": "2010-10-23T23:19:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8625",
     "type": "issue_comment",
@@ -220,4 +220,4 @@ archive/issue_comments_078204.json:
 }
 ```
 
-Attachment
+Attachment [concentrated_contours.png](tarball://root/attachments/some-uuid/ticket8625/concentrated_contours.png) by olazo created at 2010-10-23 23:19:22

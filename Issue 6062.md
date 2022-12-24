@@ -56,7 +56,7 @@ allow python int argument in is_padic_square
 archive/issue_comments_048254.json:
 ```json
 {
-    "body": "Attachment\n\nNote: this is needed to fix doctests in quadratic forms (#5954, #6037, #6040).",
+    "body": "Attachment [trac_6062.patch](tarball://root/attachments/some-uuid/ticket6062/trac_6062.patch) by tornaria created at 2009-05-18 05:20:43\n\nNote: this is needed to fix doctests in quadratic forms (#5954, #6037, #6040).",
     "created_at": "2009-05-18T05:20:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6062",
     "type": "issue_comment",
@@ -65,7 +65,7 @@ archive/issue_comments_048254.json:
 }
 ```
 
-Attachment
+Attachment [trac_6062.patch](tarball://root/attachments/some-uuid/ticket6062/trac_6062.patch) by tornaria created at 2009-05-18 05:20:43
 
 Note: this is needed to fix doctests in quadratic forms (#5954, #6037, #6040).
 

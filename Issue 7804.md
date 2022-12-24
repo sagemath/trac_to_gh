@@ -95,7 +95,7 @@ I was curious and skimmed this patch for ~ 3 minutes and it "looks good" (not a 
 archive/issue_comments_067521.json:
 ```json
 {
-    "body": "Attachment\n\nI just modified it so that it is now independent from the huge changes going on in graph.py. Would it be possible to have this merged to the next release ? It would let me write another speed-up patch now that solve_glpk and solve_cbc are available ;-)\n\nNathann",
+    "body": "Attachment [trac_7804.patch](tarball://root/attachments/some-uuid/ticket7804/trac_7804.patch) by ncohen created at 2010-01-11 17:02:38\n\nI just modified it so that it is now independent from the huge changes going on in graph.py. Would it be possible to have this merged to the next release ? It would let me write another speed-up patch now that solve_glpk and solve_cbc are available ;-)\n\nNathann",
     "created_at": "2010-01-11T17:02:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7804",
     "type": "issue_comment",
@@ -104,7 +104,7 @@ archive/issue_comments_067521.json:
 }
 ```
 
-Attachment
+Attachment [trac_7804.patch](tarball://root/attachments/some-uuid/ticket7804/trac_7804.patch) by ncohen created at 2010-01-11 17:02:38
 
 I just modified it so that it is now independent from the huge changes going on in graph.py. Would it be possible to have this merged to the next release ? It would let me write another speed-up patch now that solve_glpk and solve_cbc are available ;-)
 

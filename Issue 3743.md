@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3743
 archive/issue_comments_026580.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3743.patch](tarball://root/attachments/some-uuid/ticket3743/sage-3743.patch) by TimothyClemans created at 2008-07-29 18:19:14",
     "created_at": "2008-07-29T18:19:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3743",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_026580.json:
 }
 ```
 
-Attachment
+Attachment [sage-3743.patch](tarball://root/attachments/some-uuid/ticket3743/sage-3743.patch) by TimothyClemans created at 2008-07-29 18:19:14
 
 
 
@@ -93,7 +93,7 @@ I started out using user_type but for whatever reason for user admin it was retu
 archive/issue_comments_026583.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3743_2.patch](tarball://root/attachments/some-uuid/ticket3743/sage-3743_2.patch) by TimothyClemans created at 2008-07-30 04:26:41",
     "created_at": "2008-07-30T04:26:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3743",
     "type": "issue_comment",
@@ -102,7 +102,7 @@ archive/issue_comments_026583.json:
 }
 ```
 
-Attachment
+Attachment [sage-3743_2.patch](tarball://root/attachments/some-uuid/ticket3743/sage-3743_2.patch) by TimothyClemans created at 2008-07-30 04:26:41
 
 
 

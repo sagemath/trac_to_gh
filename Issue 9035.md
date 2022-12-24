@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9035
 archive/issue_comments_083646.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9035-zmod_poly_reverse.patch](tarball://root/attachments/some-uuid/ticket9035/trac_9035-zmod_poly_reverse.patch) by burcin created at 2010-05-24 13:10:39",
     "created_at": "2010-05-24T13:10:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9035",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_083646.json:
 }
 ```
 
-Attachment
+Attachment [trac_9035-zmod_poly_reverse.patch](tarball://root/attachments/some-uuid/ticket9035/trac_9035-zmod_poly_reverse.patch) by burcin created at 2010-05-24 13:10:39
 
 
 

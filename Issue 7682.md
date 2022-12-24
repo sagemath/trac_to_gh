@@ -322,7 +322,7 @@ The Cython "property" construct can also take a nice docstring.  Is anything eve
 archive/issue_comments_065903.json:
 ```json
 {
-    "body": "Attachment\n\nOkay, this is getting big now.  I went through real_mpfr.pyx and added a lot of doctests and documentation.\n\nThere are four doctests failing right now because I'm not sure if they are bugs or if they are right.  Here they are:\n\n\n```\n**********************************************************************\nFile \"/home/grout/sage-4.3.1/devel/sage-main/sage/rings/real_mpfr.pyx\", line 3343:\n    sage: RR('nan').is_real() # fail until we decide what it should be\nExpected nothing\nGot:\n    True\n**********************************************************************\nFile \"/home/grout/sage-4.3.1/devel/sage-main/sage/rings/real_mpfr.pyx\", line 3344:\n    sage: RR('inf').is_real() # fail until we decide what it should be\nExpected nothing\nGot:\n    True\n**********************************************************************\nFile \"/home/grout/sage-4.3.1/devel/sage-main/sage/rings/real_mpfr.pyx\", line 3360:\n    sage: RR('nan').__nonzero__() # fail until we decide what it should be\nExpected nothing\nGot:\n    False\n**********************************************************************\nFile \"/home/grout/sage-4.3.1/devel/sage-main/sage/rings/real_mpfr.pyx\", line 3397:\n    sage: RR('nan')==RR('nan') # Fail until we decide what it should be\nExpected nothing\nGot:\n    True\n**********************************************************************\nFile \"/home/grout/sage-4.3.1/devel/sage-main/sage/rings/real_mpfr.pyx\", line 3419:\n    sage: RR('nan')==RR('nan') # fail until we decide what it should be\nExpected nothing\nGot:\n    True\n```\n\n\nAre those four answers right (the \"Got:\" parts)?  See #8074 for more corner cases.",
+    "body": "Attachment [trac-7682-realfield-printing-options.patch](tarball://root/attachments/some-uuid/ticket7682/trac-7682-realfield-printing-options.patch) by jason created at 2010-01-26 09:40:28\n\nOkay, this is getting big now.  I went through real_mpfr.pyx and added a lot of doctests and documentation.\n\nThere are four doctests failing right now because I'm not sure if they are bugs or if they are right.  Here they are:\n\n\n```\n**********************************************************************\nFile \"/home/grout/sage-4.3.1/devel/sage-main/sage/rings/real_mpfr.pyx\", line 3343:\n    sage: RR('nan').is_real() # fail until we decide what it should be\nExpected nothing\nGot:\n    True\n**********************************************************************\nFile \"/home/grout/sage-4.3.1/devel/sage-main/sage/rings/real_mpfr.pyx\", line 3344:\n    sage: RR('inf').is_real() # fail until we decide what it should be\nExpected nothing\nGot:\n    True\n**********************************************************************\nFile \"/home/grout/sage-4.3.1/devel/sage-main/sage/rings/real_mpfr.pyx\", line 3360:\n    sage: RR('nan').__nonzero__() # fail until we decide what it should be\nExpected nothing\nGot:\n    False\n**********************************************************************\nFile \"/home/grout/sage-4.3.1/devel/sage-main/sage/rings/real_mpfr.pyx\", line 3397:\n    sage: RR('nan')==RR('nan') # Fail until we decide what it should be\nExpected nothing\nGot:\n    True\n**********************************************************************\nFile \"/home/grout/sage-4.3.1/devel/sage-main/sage/rings/real_mpfr.pyx\", line 3419:\n    sage: RR('nan')==RR('nan') # fail until we decide what it should be\nExpected nothing\nGot:\n    True\n```\n\n\nAre those four answers right (the \"Got:\" parts)?  See #8074 for more corner cases.",
     "created_at": "2010-01-26T09:40:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7682",
     "type": "issue_comment",
@@ -331,7 +331,7 @@ archive/issue_comments_065903.json:
 }
 ```
 
-Attachment
+Attachment [trac-7682-realfield-printing-options.patch](tarball://root/attachments/some-uuid/ticket7682/trac-7682-realfield-printing-options.patch) by jason created at 2010-01-26 09:40:28
 
 Okay, this is getting big now.  I went through real_mpfr.pyx and added a lot of doctests and documentation.
 
@@ -399,7 +399,7 @@ I rebased this patch to apply to 4.3.3 (it conflicted with a big rewrite by was 
 archive/issue_comments_065905.json:
 ```json
 {
-    "body": "Attachment\n\napply instead of previous patch.  Rebased to Sage 4.3.3",
+    "body": "Attachment [trac-7682-realfield-printing-options.2.patch](tarball://root/attachments/some-uuid/ticket7682/trac-7682-realfield-printing-options.2.patch) by jason created at 2010-02-28 04:58:59\n\napply instead of previous patch.  Rebased to Sage 4.3.3",
     "created_at": "2010-02-28T04:58:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7682",
     "type": "issue_comment",
@@ -408,7 +408,7 @@ archive/issue_comments_065905.json:
 }
 ```
 
-Attachment
+Attachment [trac-7682-realfield-printing-options.2.patch](tarball://root/attachments/some-uuid/ticket7682/trac-7682-realfield-printing-options.2.patch) by jason created at 2010-02-28 04:58:59
 
 apply instead of previous patch.  Rebased to Sage 4.3.3
 
@@ -491,7 +491,7 @@ rebase to 4.4.1, apply only this patch
 archive/issue_comments_065910.json:
 ```json
 {
-    "body": "Attachment\n\nI removed a bunch of fixes unrelated to the printing option change and put them on other tickets.  I also fixed at least one accidental code removal.  In 4.4.1, Sage won't start after this patch is applied, due to\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\ninit2.c:52: MPFR assertion failed: p >= 2 && p <= ((mpfr_prec_t)((mpfr_prec_t)(~(mpfr_prec_t)0)>>1))\n/Users/grout/sage/local/bin/sage-sage: line 206: 16842 Abort trap              sage-ipython \"$@\" -i\n| Sage Version 4.4.1, Release Date: 2010-05-02                       |\n| Type notebook() for the GUI, and license() for information.        |\n```\n",
+    "body": "Attachment [trac-7682-realfield-printing-options.3.patch](tarball://root/attachments/some-uuid/ticket7682/trac-7682-realfield-printing-options.3.patch) by jason created at 2010-05-14 17:07:52\n\nI removed a bunch of fixes unrelated to the printing option change and put them on other tickets.  I also fixed at least one accidental code removal.  In 4.4.1, Sage won't start after this patch is applied, due to\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\ninit2.c:52: MPFR assertion failed: p >= 2 && p <= ((mpfr_prec_t)((mpfr_prec_t)(~(mpfr_prec_t)0)>>1))\n/Users/grout/sage/local/bin/sage-sage: line 206: 16842 Abort trap              sage-ipython \"$@\" -i\n| Sage Version 4.4.1, Release Date: 2010-05-02                       |\n| Type notebook() for the GUI, and license() for information.        |\n```\n",
     "created_at": "2010-05-14T17:07:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7682",
     "type": "issue_comment",
@@ -500,7 +500,7 @@ archive/issue_comments_065910.json:
 }
 ```
 
-Attachment
+Attachment [trac-7682-realfield-printing-options.3.patch](tarball://root/attachments/some-uuid/ticket7682/trac-7682-realfield-printing-options.3.patch) by jason created at 2010-05-14 17:07:52
 
 I removed a bunch of fixes unrelated to the printing option change and put them on other tickets.  I also fixed at least one accidental code removal.  In 4.4.1, Sage won't start after this patch is applied, due to
 
@@ -558,7 +558,7 @@ rebase to 4.4.1, fix startup bug,  apply only this patch
 archive/issue_comments_065913.json:
 ```json
 {
-    "body": "Attachment\n\nrebase to 4.4.1, fix startup bug,  fix one doctest to test for the startup bug; apply only this patch",
+    "body": "Attachment [trac-7682-realfield-printing-options.5.patch](tarball://root/attachments/some-uuid/ticket7682/trac-7682-realfield-printing-options.5.patch) by jason created at 2010-05-14 19:21:11\n\nrebase to 4.4.1, fix startup bug,  fix one doctest to test for the startup bug; apply only this patch",
     "created_at": "2010-05-14T19:21:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7682",
     "type": "issue_comment",
@@ -567,7 +567,7 @@ archive/issue_comments_065913.json:
 }
 ```
 
-Attachment
+Attachment [trac-7682-realfield-printing-options.5.patch](tarball://root/attachments/some-uuid/ticket7682/trac-7682-realfield-printing-options.5.patch) by jason created at 2010-05-14 19:21:11
 
 rebase to 4.4.1, fix startup bug,  fix one doctest to test for the startup bug; apply only this patch
 
@@ -690,7 +690,7 @@ apply on top of previous patch
 archive/issue_comments_065920.json:
 ```json
 {
-    "body": "Attachment\n\nI added a patch which implements the feature wanted in #9261:\n\n\n```\nsage: R=RealIntervalField(print_options=dict(style='brackets'))\nsage: R.print_options\n{'style': 'brackets', 'error_digits': 0}\nsage: R(1,2)\n[1.0000000000000000 .. 2.0000000000000000]\n```\n\n\nDoctests and documentation still needs to be written for this.  And maybe convenience functions for setting these two options (i.e., make the syntax in #9261 work).",
+    "body": "Attachment [trac-7682-realintervalfield-printing.patch](tarball://root/attachments/some-uuid/ticket7682/trac-7682-realintervalfield-printing.patch) by jason created at 2010-06-18 17:34:43\n\nI added a patch which implements the feature wanted in #9261:\n\n\n```\nsage: R=RealIntervalField(print_options=dict(style='brackets'))\nsage: R.print_options\n{'style': 'brackets', 'error_digits': 0}\nsage: R(1,2)\n[1.0000000000000000 .. 2.0000000000000000]\n```\n\n\nDoctests and documentation still needs to be written for this.  And maybe convenience functions for setting these two options (i.e., make the syntax in #9261 work).",
     "created_at": "2010-06-18T17:34:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7682",
     "type": "issue_comment",
@@ -699,7 +699,7 @@ archive/issue_comments_065920.json:
 }
 ```
 
-Attachment
+Attachment [trac-7682-realintervalfield-printing.patch](tarball://root/attachments/some-uuid/ticket7682/trac-7682-realintervalfield-printing.patch) by jason created at 2010-06-18 17:34:43
 
 I added a patch which implements the feature wanted in #9261:
 

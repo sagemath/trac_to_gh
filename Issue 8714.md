@@ -328,7 +328,7 @@ I don't have a lot of free time these days and it takes some time to write the d
 archive/issue_comments_079517.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8714.patch](tarball://root/attachments/some-uuid/ticket8714/trac_8714.patch) by dcoudert created at 2013-04-06 15:42:56",
     "created_at": "2013-04-06T15:42:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8714",
     "type": "issue_comment",
@@ -337,7 +337,7 @@ archive/issue_comments_079517.json:
 }
 ```
 
-Attachment
+Attachment [trac_8714.patch](tarball://root/attachments/some-uuid/ticket8714/trac_8714.patch) by dcoudert created at 2013-04-06 15:42:56
 
 
 
@@ -428,7 +428,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_079522.json:
 ```json
 {
-    "body": "Attachment\n\nFinally, this patch is ready to be reviewed!\n\nThe method is now transparently called when negative weights are detected. I have also added an optional parameter that could be used e.g. in patch #13380.\n\n\napply: trac_8714.2.patch",
+    "body": "Attachment [trac_8714.2.patch](tarball://root/attachments/some-uuid/ticket8714/trac_8714.2.patch) by dcoudert created at 2013-09-15 14:07:48\n\nFinally, this patch is ready to be reviewed!\n\nThe method is now transparently called when negative weights are detected. I have also added an optional parameter that could be used e.g. in patch #13380.\n\n\napply: trac_8714.2.patch",
     "created_at": "2013-09-15T14:07:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8714",
     "type": "issue_comment",
@@ -437,7 +437,7 @@ archive/issue_comments_079522.json:
 }
 ```
 
-Attachment
+Attachment [trac_8714.2.patch](tarball://root/attachments/some-uuid/ticket8714/trac_8714.2.patch) by dcoudert created at 2013-09-15 14:07:48
 
 Finally, this patch is ready to be reviewed!
 
@@ -471,7 +471,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_079524.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8714_addon1.patch](tarball://root/attachments/some-uuid/ticket8714/trac_8714_addon1.patch) by chapoton created at 2013-10-20 12:23:40",
     "created_at": "2013-10-20T12:23:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8714",
     "type": "issue_comment",
@@ -480,7 +480,7 @@ archive/issue_comments_079524.json:
 }
 ```
 
-Attachment
+Attachment [trac_8714_addon1.patch](tarball://root/attachments/some-uuid/ticket8714/trac_8714_addon1.patch) by chapoton created at 2013-10-20 12:23:40
 
 
 

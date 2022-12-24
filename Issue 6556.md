@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6556
 archive/issue_comments_053460.json:
 ```json
 {
-    "body": "Attachment\n\nReorganize notebook help page",
+    "body": "Attachment [help_page.patch](tarball://root/attachments/some-uuid/ticket6556/help_page.patch) by hgranath created at 2009-08-07 03:40:35\n\nReorganize notebook help page",
     "created_at": "2009-08-07T03:40:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6556",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_053460.json:
 }
 ```
 
-Attachment
+Attachment [help_page.patch](tarball://root/attachments/some-uuid/ticket6556/help_page.patch) by hgranath created at 2009-08-07 03:40:35
 
 Reorganize notebook help page
 
@@ -107,7 +107,7 @@ Updates help page, tutorial and reference manual
 archive/issue_comments_053463.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6556.patch](tarball://root/attachments/some-uuid/ticket6556/trac_6556.patch) by hgranath created at 2009-08-17 17:47:07",
     "created_at": "2009-08-17T17:47:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6556",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_053463.json:
 }
 ```
 
-Attachment
+Attachment [trac_6556.patch](tarball://root/attachments/some-uuid/ticket6556/trac_6556.patch) by hgranath created at 2009-08-17 17:47:07
 
 
 

@@ -51,7 +51,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1879
 archive/issue_comments_011892.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1879-relativelinks.patch](tarball://root/attachments/some-uuid/ticket1879/1879-relativelinks.patch) by boothby created at 2008-03-16 19:29:30",
     "created_at": "2008-03-16T19:29:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1879",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_011892.json:
 }
 ```
 
-Attachment
+Attachment [1879-relativelinks.patch](tarball://root/attachments/some-uuid/ticket1879/1879-relativelinks.patch) by boothby created at 2008-03-16 19:29:30
 
 
 

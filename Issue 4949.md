@@ -559,7 +559,7 @@ scripts repo
 archive/issue_comments_037595.json:
 ```json
 {
-    "body": "Attachment\n\nThere's a `$` missing in\n\n```\n:file:`$SAGE_ROOT/spkg/build` or :file:`SAGE_BUILD_TMPDIR/build`\n```\n\n\nI would clarify that `SAGE_KEEP_BUILT_SPKGS=yes` affects *all* spkg installations (whether with `./sage [-i|-f]` or `make`, the latter also when *re*building [parts of] Sage), and that the build directory (within the Sage tree or in `$SAGE_BUILD_TMPDIR/`) will definitely grow over time, i.e., whenever new packages get installed or already existing / built packages reinstalled, unless one unsets `SAGE_KEEP_BUILT_SPKGS` at some point (which of course doesn't delete existing subdirectories in the first place).\n\n\n\n\nYour observations regarding the build tree sizes on skynet are interesting; there IMHO shouldn't be such a large difference, at least not when doing \"the same thing\".\n\nThere are differences in object code size between RISC and CISC architectures (on the former usually larger, but *at most* by a factor of 2 I think) and between 32-bit and 64-bit (mostly on RISC architectures, and also if there's a lot of static data involving e.g. pointers or integers of different size); other differences might be due to debug symbols and *how and what* we build (e.g. assembly implementations, static or dynamic libraries in addition) on a specific platform.\n\nI would mention the effect of the block size of the file system though (as a note perhaps), since many packages consist of a large number of small files.",
+    "body": "Attachment [trac_4949-scripts.patch](tarball://root/attachments/some-uuid/ticket4949/trac_4949-scripts.patch) by leif created at 2011-08-08 12:58:06\n\nThere's a `$` missing in\n\n```\n:file:`$SAGE_ROOT/spkg/build` or :file:`SAGE_BUILD_TMPDIR/build`\n```\n\n\nI would clarify that `SAGE_KEEP_BUILT_SPKGS=yes` affects *all* spkg installations (whether with `./sage [-i|-f]` or `make`, the latter also when *re*building [parts of] Sage), and that the build directory (within the Sage tree or in `$SAGE_BUILD_TMPDIR/`) will definitely grow over time, i.e., whenever new packages get installed or already existing / built packages reinstalled, unless one unsets `SAGE_KEEP_BUILT_SPKGS` at some point (which of course doesn't delete existing subdirectories in the first place).\n\n\n\n\nYour observations regarding the build tree sizes on skynet are interesting; there IMHO shouldn't be such a large difference, at least not when doing \"the same thing\".\n\nThere are differences in object code size between RISC and CISC architectures (on the former usually larger, but *at most* by a factor of 2 I think) and between 32-bit and 64-bit (mostly on RISC architectures, and also if there's a lot of static data involving e.g. pointers or integers of different size); other differences might be due to debug symbols and *how and what* we build (e.g. assembly implementations, static or dynamic libraries in addition) on a specific platform.\n\nI would mention the effect of the block size of the file system though (as a note perhaps), since many packages consist of a large number of small files.",
     "created_at": "2011-08-08T12:58:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4949",
     "type": "issue_comment",
@@ -568,7 +568,7 @@ archive/issue_comments_037595.json:
 }
 ```
 
-Attachment
+Attachment [trac_4949-scripts.patch](tarball://root/attachments/some-uuid/ticket4949/trac_4949-scripts.patch) by leif created at 2011-08-08 12:58:06
 
 There's a `$` missing in
 
@@ -595,7 +595,7 @@ I would mention the effect of the block size of the file system though (as a not
 archive/issue_comments_037596.json:
 ```json
 {
-    "body": "Attachment\n\nsage repo: update installation guide",
+    "body": "Attachment [trac_4949-installation.patch](tarball://root/attachments/some-uuid/ticket4949/trac_4949-installation.patch) by jhpalmieri created at 2011-08-08 15:39:55\n\nsage repo: update installation guide",
     "created_at": "2011-08-08T15:39:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4949",
     "type": "issue_comment",
@@ -604,7 +604,7 @@ archive/issue_comments_037596.json:
 }
 ```
 
-Attachment
+Attachment [trac_4949-installation.patch](tarball://root/attachments/some-uuid/ticket4949/trac_4949-installation.patch) by jhpalmieri created at 2011-08-08 15:39:55
 
 sage repo: update installation guide
 
@@ -819,7 +819,7 @@ I've rebased this to Sage 5.0.beta1.  It had a positive review already, so I'm l
 archive/issue_comments_037607.json:
 ```json
 {
-    "body": "Attachment\n\nroot repo",
+    "body": "Attachment [trac_4949-root.patch](tarball://root/attachments/some-uuid/ticket4949/trac_4949-root.patch) by jhpalmieri created at 2012-01-23 15:49:45\n\nroot repo",
     "created_at": "2012-01-23T15:49:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4949",
     "type": "issue_comment",
@@ -828,7 +828,7 @@ archive/issue_comments_037607.json:
 }
 ```
 
-Attachment
+Attachment [trac_4949-root.patch](tarball://root/attachments/some-uuid/ticket4949/trac_4949-root.patch) by jhpalmieri created at 2012-01-23 15:49:45
 
 root repo
 
@@ -1051,7 +1051,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_037616.json:
 ```json
 {
-    "body": "Attachment\n\nroot repo",
+    "body": "Attachment [trac_4949-root.v2.patch](tarball://root/attachments/some-uuid/ticket4949/trac_4949-root.v2.patch) by jhpalmieri created at 2012-01-23 23:13:37\n\nroot repo",
     "created_at": "2012-01-23T23:13:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4949",
     "type": "issue_comment",
@@ -1060,7 +1060,7 @@ archive/issue_comments_037616.json:
 }
 ```
 
-Attachment
+Attachment [trac_4949-root.v2.patch](tarball://root/attachments/some-uuid/ticket4949/trac_4949-root.v2.patch) by jhpalmieri created at 2012-01-23 23:13:37
 
 root repo
 
@@ -1163,7 +1163,7 @@ root repo
 archive/issue_comments_037622.json:
 ```json
 {
-    "body": "Attachment\n\nroot repo: diff between v2 and v3",
+    "body": "Attachment [trac_4949-root.v3.patch](tarball://root/attachments/some-uuid/ticket4949/trac_4949-root.v3.patch) by jhpalmieri created at 2012-02-10 22:38:12\n\nroot repo: diff between v2 and v3",
     "created_at": "2012-02-10T22:38:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4949",
     "type": "issue_comment",
@@ -1172,7 +1172,7 @@ archive/issue_comments_037622.json:
 }
 ```
 
-Attachment
+Attachment [trac_4949-root.v3.patch](tarball://root/attachments/some-uuid/ticket4949/trac_4949-root.v3.patch) by jhpalmieri created at 2012-02-10 22:38:12
 
 root repo: diff between v2 and v3
 
@@ -1183,7 +1183,7 @@ root repo: diff between v2 and v3
 archive/issue_comments_037623.json:
 ```json
 {
-    "body": "Attachment\n\nsage repo: update installation guide",
+    "body": "Attachment [trac_4949-root-delta2to3.patch](tarball://root/attachments/some-uuid/ticket4949/trac_4949-root-delta2to3.patch) by jhpalmieri created at 2012-02-10 22:38:33\n\nsage repo: update installation guide",
     "created_at": "2012-02-10T22:38:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4949",
     "type": "issue_comment",
@@ -1192,7 +1192,7 @@ archive/issue_comments_037623.json:
 }
 ```
 
-Attachment
+Attachment [trac_4949-root-delta2to3.patch](tarball://root/attachments/some-uuid/ticket4949/trac_4949-root-delta2to3.patch) by jhpalmieri created at 2012-02-10 22:38:33
 
 sage repo: update installation guide
 
@@ -1203,7 +1203,7 @@ sage repo: update installation guide
 archive/issue_comments_037624.json:
 ```json
 {
-    "body": "Attachment\n\nsage repo: diff between original and v2",
+    "body": "Attachment [trac_4949-installation-delta1to2.patch](tarball://root/attachments/some-uuid/ticket4949/trac_4949-installation-delta1to2.patch) by jhpalmieri created at 2012-02-10 22:38:52\n\nsage repo: diff between original and v2",
     "created_at": "2012-02-10T22:38:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4949",
     "type": "issue_comment",
@@ -1212,7 +1212,7 @@ archive/issue_comments_037624.json:
 }
 ```
 
-Attachment
+Attachment [trac_4949-installation-delta1to2.patch](tarball://root/attachments/some-uuid/ticket4949/trac_4949-installation-delta1to2.patch) by jhpalmieri created at 2012-02-10 22:38:52
 
 sage repo: diff between original and v2
 
@@ -1524,7 +1524,7 @@ installation guide: diff between v2 and v3
 archive/issue_comments_037636.json:
 ```json
 {
-    "body": "Attachment\n\nsage repo: update installation guide",
+    "body": "Attachment [trac_4949-installation-delta2to3.patch](tarball://root/attachments/some-uuid/ticket4949/trac_4949-installation-delta2to3.patch) by jhpalmieri created at 2012-02-14 23:20:44\n\nsage repo: update installation guide",
     "created_at": "2012-02-14T23:20:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4949",
     "type": "issue_comment",
@@ -1533,7 +1533,7 @@ archive/issue_comments_037636.json:
 }
 ```
 
-Attachment
+Attachment [trac_4949-installation-delta2to3.patch](tarball://root/attachments/some-uuid/ticket4949/trac_4949-installation-delta2to3.patch) by jhpalmieri created at 2012-02-14 23:20:44
 
 sage repo: update installation guide
 
@@ -1544,7 +1544,7 @@ sage repo: update installation guide
 archive/issue_comments_037637.json:
 ```json
 {
-    "body": "Attachment\n\nroot repo: diff between v3 and v4",
+    "body": "Attachment [trac_4949-installation.v3.patch](tarball://root/attachments/some-uuid/ticket4949/trac_4949-installation.v3.patch) by jhpalmieri created at 2012-02-14 23:21:02\n\nroot repo: diff between v3 and v4",
     "created_at": "2012-02-14T23:21:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4949",
     "type": "issue_comment",
@@ -1553,7 +1553,7 @@ archive/issue_comments_037637.json:
 }
 ```
 
-Attachment
+Attachment [trac_4949-installation.v3.patch](tarball://root/attachments/some-uuid/ticket4949/trac_4949-installation.v3.patch) by jhpalmieri created at 2012-02-14 23:21:02
 
 root repo: diff between v3 and v4
 
@@ -1564,7 +1564,7 @@ root repo: diff between v3 and v4
 archive/issue_comments_037638.json:
 ```json
 {
-    "body": "Attachment\n\nroot repo",
+    "body": "Attachment [trac_4949-root-delta3to4.patch](tarball://root/attachments/some-uuid/ticket4949/trac_4949-root-delta3to4.patch) by jhpalmieri created at 2012-02-14 23:21:11\n\nroot repo",
     "created_at": "2012-02-14T23:21:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4949",
     "type": "issue_comment",
@@ -1573,7 +1573,7 @@ archive/issue_comments_037638.json:
 }
 ```
 
-Attachment
+Attachment [trac_4949-root-delta3to4.patch](tarball://root/attachments/some-uuid/ticket4949/trac_4949-root-delta3to4.patch) by jhpalmieri created at 2012-02-14 23:21:11
 
 root repo
 
@@ -1584,7 +1584,7 @@ root repo
 archive/issue_comments_037639.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4949-root.v4.patch](tarball://root/attachments/some-uuid/ticket4949/trac_4949-root.v4.patch) by jhpalmieri created at 2012-02-14 23:21:36",
     "created_at": "2012-02-14T23:21:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4949",
     "type": "issue_comment",
@@ -1593,7 +1593,7 @@ archive/issue_comments_037639.json:
 }
 ```
 
-Attachment
+Attachment [trac_4949-root.v4.patch](tarball://root/attachments/some-uuid/ticket4949/trac_4949-root.v4.patch) by jhpalmieri created at 2012-02-14 23:21:36
 
 
 
@@ -1735,7 +1735,7 @@ Left over from the previous version. I can fix that.
 archive/issue_comments_037645.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4949-root-delta4to5.patch](tarball://root/attachments/some-uuid/ticket4949/trac_4949-root-delta4to5.patch) by jhpalmieri created at 2012-02-15 18:09:24",
     "created_at": "2012-02-15T18:09:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4949",
     "type": "issue_comment",
@@ -1744,7 +1744,7 @@ archive/issue_comments_037645.json:
 }
 ```
 
-Attachment
+Attachment [trac_4949-root-delta4to5.patch](tarball://root/attachments/some-uuid/ticket4949/trac_4949-root-delta4to5.patch) by jhpalmieri created at 2012-02-15 18:09:24
 
 
 
@@ -1753,7 +1753,7 @@ Attachment
 archive/issue_comments_037646.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4949-root.v5.patch](tarball://root/attachments/some-uuid/ticket4949/trac_4949-root.v5.patch) by jhpalmieri created at 2012-02-15 18:09:37",
     "created_at": "2012-02-15T18:09:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4949",
     "type": "issue_comment",
@@ -1762,7 +1762,7 @@ archive/issue_comments_037646.json:
 }
 ```
 
-Attachment
+Attachment [trac_4949-root.v5.patch](tarball://root/attachments/some-uuid/ticket4949/trac_4949-root.v5.patch) by jhpalmieri created at 2012-02-15 18:09:37
 
 
 
@@ -1771,7 +1771,7 @@ Attachment
 archive/issue_comments_037647.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4949_review.patch](tarball://root/attachments/some-uuid/ticket4949/4949_review.patch) by jdemeyer created at 2012-02-15 18:39:01",
     "created_at": "2012-02-15T18:39:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4949",
     "type": "issue_comment",
@@ -1780,7 +1780,7 @@ archive/issue_comments_037647.json:
 }
 ```
 
-Attachment
+Attachment [4949_review.patch](tarball://root/attachments/some-uuid/ticket4949/4949_review.patch) by jdemeyer created at 2012-02-15 18:39:01
 
 
 

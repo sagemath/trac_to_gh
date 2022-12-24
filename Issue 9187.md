@@ -96,7 +96,7 @@ Changing status from new to needs_review.
 archive/issue_comments_085936.json:
 ```json
 {
-    "body": "Attachment\n\nI've put a new spkg at\n\n* http://sage.math.washington.edu/home/mpatel/trac/9187/ecl-10.4.1.p0.spkg\n\n(Or should it be p1?)  This is based against the package mentioned in [comment:ticket:8951:10 this comment] at #8951.",
+    "body": "Attachment [trac_9187-ecl_makeflags.patch](tarball://root/attachments/some-uuid/ticket9187/trac_9187-ecl_makeflags.patch) by mpatel created at 2010-06-09 02:30:02\n\nI've put a new spkg at\n\n* http://sage.math.washington.edu/home/mpatel/trac/9187/ecl-10.4.1.p0.spkg\n\n(Or should it be p1?)  This is based against the package mentioned in [comment:ticket:8951:10 this comment] at #8951.",
     "created_at": "2010-06-09T02:30:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9187",
     "type": "issue_comment",
@@ -105,7 +105,7 @@ archive/issue_comments_085936.json:
 }
 ```
 
-Attachment
+Attachment [trac_9187-ecl_makeflags.patch](tarball://root/attachments/some-uuid/ticket9187/trac_9187-ecl_makeflags.patch) by mpatel created at 2010-06-09 02:30:02
 
 I've put a new spkg at
 
@@ -310,7 +310,7 @@ spkg patch rebased vs. #9474.
 archive/issue_comments_085947.json:
 ```json
 {
-    "body": "Attachment\n\nHere's a new spkg based on #9474:\n\n http://sage.math.washington.edu/home/mpatel/trac/9187/ecl-10.2.1.p1.spkg\n\nIt works for me with 4.5.rc0 + #7379 on sage.math, but I have not yet had a chance to test it on bsd.math.",
+    "body": "Attachment [trac_9187-ecl_makeflags.2.patch](tarball://root/attachments/some-uuid/ticket9187/trac_9187-ecl_makeflags.2.patch) by mpatel created at 2010-07-12 20:32:07\n\nHere's a new spkg based on #9474:\n\n http://sage.math.washington.edu/home/mpatel/trac/9187/ecl-10.2.1.p1.spkg\n\nIt works for me with 4.5.rc0 + #7379 on sage.math, but I have not yet had a chance to test it on bsd.math.",
     "created_at": "2010-07-12T20:32:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9187",
     "type": "issue_comment",
@@ -319,7 +319,7 @@ archive/issue_comments_085947.json:
 }
 ```
 
-Attachment
+Attachment [trac_9187-ecl_makeflags.2.patch](tarball://root/attachments/some-uuid/ticket9187/trac_9187-ecl_makeflags.2.patch) by mpatel created at 2010-07-12 20:32:07
 
 Here's a new spkg based on #9474:
 

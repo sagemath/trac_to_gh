@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2964
 archive/issue_comments_020436.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9564.patch](tarball://root/attachments/some-uuid/ticket2964/9564.patch) by bump created at 2008-04-20 03:52:32",
     "created_at": "2008-04-20T03:52:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2964",
     "type": "issue_comment",
@@ -51,7 +51,7 @@ archive/issue_comments_020436.json:
 }
 ```
 
-Attachment
+Attachment [9564.patch](tarball://root/attachments/some-uuid/ticket2964/9564.patch) by bump created at 2008-04-20 03:52:32
 
 
 
@@ -60,7 +60,7 @@ Attachment
 archive/issue_comments_020437.json:
 ```json
 {
-    "body": "Attachment\n\nThese are patches against 3.0alpha6.",
+    "body": "Attachment [9565.patch](tarball://root/attachments/some-uuid/ticket2964/9565.patch) by bump created at 2008-04-20 03:54:55\n\nThese are patches against 3.0alpha6.",
     "created_at": "2008-04-20T03:54:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2964",
     "type": "issue_comment",
@@ -69,7 +69,7 @@ archive/issue_comments_020437.json:
 }
 ```
 
-Attachment
+Attachment [9565.patch](tarball://root/attachments/some-uuid/ticket2964/9565.patch) by bump created at 2008-04-20 03:54:55
 
 These are patches against 3.0alpha6.
 
@@ -116,7 +116,7 @@ Okay, excellent.  I'll review them when you put them up.
 archive/issue_comments_020440.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9566.patch](tarball://root/attachments/some-uuid/ticket2964/9566.patch) by bump created at 2008-04-20 04:07:51",
     "created_at": "2008-04-20T04:07:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2964",
     "type": "issue_comment",
@@ -125,7 +125,7 @@ archive/issue_comments_020440.json:
 }
 ```
 
-Attachment
+Attachment [9566.patch](tarball://root/attachments/some-uuid/ticket2964/9566.patch) by bump created at 2008-04-20 04:07:51
 
 
 
@@ -154,7 +154,7 @@ Thanks, Dan
 archive/issue_comments_020442.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2964-review.patch](tarball://root/attachments/some-uuid/ticket2964/2964-review.patch) by mhansen created at 2008-04-20 05:51:07",
     "created_at": "2008-04-20T05:51:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2964",
     "type": "issue_comment",
@@ -163,7 +163,7 @@ archive/issue_comments_020442.json:
 }
 ```
 
-Attachment
+Attachment [2964-review.patch](tarball://root/attachments/some-uuid/ticket2964/2964-review.patch) by mhansen created at 2008-04-20 05:51:07
 
 
 

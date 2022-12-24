@@ -108,7 +108,7 @@ Changing status from new to assigned.
 archive/issue_comments_009073.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1406.patch](tarball://root/attachments/some-uuid/ticket1406/1406.patch) by mhansen created at 2007-12-06 08:28:44",
     "created_at": "2007-12-06T08:28:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1406",
     "type": "issue_comment",
@@ -117,7 +117,7 @@ archive/issue_comments_009073.json:
 }
 ```
 
-Attachment
+Attachment [1406.patch](tarball://root/attachments/some-uuid/ticket1406/1406.patch) by mhansen created at 2007-12-06 08:28:44
 
 
 
@@ -126,7 +126,7 @@ Attachment
 archive/issue_comments_009074.json:
 ```json
 {
-    "body": "Attachment\n\nThis is a -- I think -- better version of the 1406.patch that mhansen attached -- use it instead.",
+    "body": "Attachment [trac-1406.patch](tarball://root/attachments/some-uuid/ticket1406/trac-1406.patch) by was created at 2007-12-06 15:55:33\n\nThis is a -- I think -- better version of the 1406.patch that mhansen attached -- use it instead.",
     "created_at": "2007-12-06T15:55:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1406",
     "type": "issue_comment",
@@ -135,7 +135,7 @@ archive/issue_comments_009074.json:
 }
 ```
 
-Attachment
+Attachment [trac-1406.patch](tarball://root/attachments/some-uuid/ticket1406/trac-1406.patch) by was created at 2007-12-06 15:55:33
 
 This is a -- I think -- better version of the 1406.patch that mhansen attached -- use it instead.
 

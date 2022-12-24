@@ -70,7 +70,7 @@ Build failure observed on an RS/6000 running AIX 5.3
 archive/issue_comments_100322.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ecm-6.2.1.p2.log](tarball://root/attachments/some-uuid/ticket9984/ecm-6.2.1.p2.log) by jdemeyer created at 2013-08-13 15:35:53",
     "created_at": "2013-08-13T15:35:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9983",
     "type": "issue_comment",
@@ -79,7 +79,7 @@ archive/issue_comments_100322.json:
 }
 ```
 
-Attachment
+Attachment [ecm-6.2.1.p2.log](tarball://root/attachments/some-uuid/ticket9984/ecm-6.2.1.p2.log) by jdemeyer created at 2013-08-13 15:35:53
 
 
 

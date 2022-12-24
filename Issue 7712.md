@@ -418,7 +418,7 @@ I didn't see this ticket when submitting the new ticket #13760. There I provide 
 archive/issue_comments_066239.json:
 ```json
 {
-    "body": "Attachment\n\nTests should work after applying trac 13760 patch",
+    "body": "Attachment [trac_7712_regression_tests_for_13760_fix.patch](tarball://root/attachments/some-uuid/ticket7712/trac_7712_regression_tests_for_13760_fix.patch) by gmoroz created at 2012-12-13 11:20:16\n\nTests should work after applying trac 13760 patch",
     "created_at": "2012-12-13T11:20:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7712",
     "type": "issue_comment",
@@ -427,7 +427,7 @@ archive/issue_comments_066239.json:
 }
 ```
 
-Attachment
+Attachment [trac_7712_regression_tests_for_13760_fix.patch](tarball://root/attachments/some-uuid/ticket7712/trac_7712_regression_tests_for_13760_fix.patch) by gmoroz created at 2012-12-13 11:20:16
 
 Tests should work after applying trac 13760 patch
 

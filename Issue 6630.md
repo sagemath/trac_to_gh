@@ -163,7 +163,7 @@ Docstring coverage must be 100% for any new module.
 archive/issue_comments_054335.json:
 ```json
 {
-    "body": "Attachment\n\nNew version of the patch with mgnvu's one folded.",
+    "body": "Attachment [empty_species-fh-6630-v2.patch](tarball://root/attachments/some-uuid/ticket6630/empty_species-fh-6630-v2.patch) by hivert created at 2009-09-11 15:18:26\n\nNew version of the patch with mgnvu's one folded.",
     "created_at": "2009-09-11T15:18:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6630",
     "type": "issue_comment",
@@ -172,7 +172,7 @@ archive/issue_comments_054335.json:
 }
 ```
 
-Attachment
+Attachment [empty_species-fh-6630-v2.patch](tarball://root/attachments/some-uuid/ticket6630/empty_species-fh-6630-v2.patch) by hivert created at 2009-09-11 15:18:26
 
 New version of the patch with mgnvu's one folded.
 

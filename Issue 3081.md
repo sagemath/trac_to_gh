@@ -94,7 +94,7 @@ Changing component from Cygwin to number theory.
 archive/issue_comments_021247.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [dirichlet2.patch](tarball://root/attachments/some-uuid/ticket3081/dirichlet2.patch) by kkilger created at 2008-05-02 15:13:31",
     "created_at": "2008-05-02T15:13:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3081",
     "type": "issue_comment",
@@ -103,7 +103,7 @@ archive/issue_comments_021247.json:
 }
 ```
 
-Attachment
+Attachment [dirichlet2.patch](tarball://root/attachments/some-uuid/ticket3081/dirichlet2.patch) by kkilger created at 2008-05-02 15:13:31
 
 
 
@@ -446,7 +446,7 @@ So I think with some very obvious simple work, this can easily be included.  Jus
 archive/issue_comments_021260.json:
 ```json
 {
-    "body": "Attachment\n\nRepaired patch",
+    "body": "Attachment [kloosterman.patch](tarball://root/attachments/some-uuid/ticket3081/kloosterman.patch) by kkilger created at 2009-04-11 14:22:57\n\nRepaired patch",
     "created_at": "2009-04-11T14:22:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3081",
     "type": "issue_comment",
@@ -455,7 +455,7 @@ archive/issue_comments_021260.json:
 }
 ```
 
-Attachment
+Attachment [kloosterman.patch](tarball://root/attachments/some-uuid/ticket3081/kloosterman.patch) by kkilger created at 2009-04-11 14:22:57
 
 Repaired patch
 

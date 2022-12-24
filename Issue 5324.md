@@ -137,7 +137,7 @@ Note that the problem isn't just with %time, but with any % modes.
 archive/issue_comments_040989.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sagenb_5324.patch](tarball://root/attachments/some-uuid/ticket5324/sagenb_5324.patch) by was created at 2009-11-09 02:13:16",
     "created_at": "2009-11-09T02:13:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5324",
     "type": "issue_comment",
@@ -146,7 +146,7 @@ archive/issue_comments_040989.json:
 }
 ```
 
-Attachment
+Attachment [sagenb_5324.patch](tarball://root/attachments/some-uuid/ticket5324/sagenb_5324.patch) by was created at 2009-11-09 02:13:16
 
 
 
@@ -232,7 +232,7 @@ You're right, using i=0 makes more sense, though of course won't make any differ
 archive/issue_comments_040994.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sagenb_5324-part2.patch](tarball://root/attachments/some-uuid/ticket5324/sagenb_5324-part2.patch) by was created at 2009-11-09 17:12:17",
     "created_at": "2009-11-09T17:12:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5324",
     "type": "issue_comment",
@@ -241,7 +241,7 @@ archive/issue_comments_040994.json:
 }
 ```
 
-Attachment
+Attachment [sagenb_5324-part2.patch](tarball://root/attachments/some-uuid/ticket5324/sagenb_5324-part2.patch) by was created at 2009-11-09 17:12:17
 
 
 

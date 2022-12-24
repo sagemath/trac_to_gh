@@ -82,7 +82,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_000800.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [HermiteNormalForm_1.tex](tarball://root/attachments/some-uuid/ticket174/HermiteNormalForm_1.tex) by was created at 2007-01-13 01:44:45",
     "created_at": "2007-01-13T01:44:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/174",
     "type": "issue_comment",
@@ -91,7 +91,7 @@ archive/issue_comments_000800.json:
 }
 ```
 
-Attachment
+Attachment [HermiteNormalForm_1.tex](tarball://root/attachments/some-uuid/ticket174/HermiteNormalForm_1.tex) by was created at 2007-01-13 01:44:45
 
 
 
@@ -119,7 +119,7 @@ be reasonably easy to implement in SAGE given what we now have.
 archive/issue_comments_000802.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-174.patch](tarball://root/attachments/some-uuid/ticket174/trac-174.patch) by was created at 2008-02-08 16:08:15",
     "created_at": "2008-02-08T16:08:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/174",
     "type": "issue_comment",
@@ -128,7 +128,7 @@ archive/issue_comments_000802.json:
 }
 ```
 
-Attachment
+Attachment [trac-174.patch](tarball://root/attachments/some-uuid/ticket174/trac-174.patch) by was created at 2008-02-08 16:08:15
 
 
 
@@ -137,7 +137,7 @@ Attachment
 archive/issue_comments_000803.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [hnfrow.sage](tarball://root/attachments/some-uuid/ticket174/hnfrow.sage) by was created at 2008-02-08 16:11:31",
     "created_at": "2008-02-08T16:11:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/174",
     "type": "issue_comment",
@@ -146,7 +146,7 @@ archive/issue_comments_000803.json:
 }
 ```
 
-Attachment
+Attachment [hnfrow.sage](tarball://root/attachments/some-uuid/ticket174/hnfrow.sage) by was created at 2008-02-08 16:11:31
 
 
 
@@ -155,7 +155,7 @@ Attachment
 archive/issue_comments_000804.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-174-part2.patch](tarball://root/attachments/some-uuid/ticket174/trac-174-part2.patch) by was created at 2008-02-08 16:11:49",
     "created_at": "2008-02-08T16:11:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/174",
     "type": "issue_comment",
@@ -164,7 +164,7 @@ archive/issue_comments_000804.json:
 }
 ```
 
-Attachment
+Attachment [trac-174-part2.patch](tarball://root/attachments/some-uuid/ticket174/trac-174-part2.patch) by was created at 2008-02-08 16:11:49
 
 
 
@@ -173,7 +173,7 @@ Attachment
 archive/issue_comments_000805.json:
 ```json
 {
-    "body": "Attachment\n\nI've put the final hnf.hg bundle here:\n\n  http://sage.math.washington.edu/home/was/patches/hnf.hg\n\nThis is a bundle that I made by cleanly applying all my relevant\npatches to 2.10.2.alpha0, then do hg_sage.send(...). \n\nThe code is well documented, works well (very well tested with\nautomated testing and doctstrings), but has a HUGE MEMORY LEAK somewhere:\n\n\n```\nsage: a = random_matrix(ZZ,200,x=0,y=9)\nsage: a._clear_cache(); e = a.hermite_form(proof=False); get_memory_usage()\n'234M+'\nsage: a._clear_cache(); e = a.hermite_form(proof=False); get_memory_usage()\n'239M+'\nsage: a._clear_cache(); e = a.hermite_form(proof=False); get_memory_usage()\n'244M+'\nsage: a._clear_cache(); e = a.hermite_form(proof=False); get_memory_usage()\n'249M+'\n```\n\n\nI suspect the memleak is in the optimized GMP code I added to matrix_integer_dense, and will find out soon...",
+    "body": "Attachment [trac-174-part3.patch](tarball://root/attachments/some-uuid/ticket174/trac-174-part3.patch) by was created at 2008-02-17 01:14:22\n\nI've put the final hnf.hg bundle here:\n\n  http://sage.math.washington.edu/home/was/patches/hnf.hg\n\nThis is a bundle that I made by cleanly applying all my relevant\npatches to 2.10.2.alpha0, then do hg_sage.send(...). \n\nThe code is well documented, works well (very well tested with\nautomated testing and doctstrings), but has a HUGE MEMORY LEAK somewhere:\n\n\n```\nsage: a = random_matrix(ZZ,200,x=0,y=9)\nsage: a._clear_cache(); e = a.hermite_form(proof=False); get_memory_usage()\n'234M+'\nsage: a._clear_cache(); e = a.hermite_form(proof=False); get_memory_usage()\n'239M+'\nsage: a._clear_cache(); e = a.hermite_form(proof=False); get_memory_usage()\n'244M+'\nsage: a._clear_cache(); e = a.hermite_form(proof=False); get_memory_usage()\n'249M+'\n```\n\n\nI suspect the memleak is in the optimized GMP code I added to matrix_integer_dense, and will find out soon...",
     "created_at": "2008-02-17T01:14:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/174",
     "type": "issue_comment",
@@ -182,7 +182,7 @@ archive/issue_comments_000805.json:
 }
 ```
 
-Attachment
+Attachment [trac-174-part3.patch](tarball://root/attachments/some-uuid/ticket174/trac-174-part3.patch) by was created at 2008-02-17 01:14:22
 
 I've put the final hnf.hg bundle here:
 

@@ -478,7 +478,7 @@ Changing status from new to assigned.
 archive/issue_comments_030543.json:
 ```json
 {
-    "body": "Attachment\n\nTo review this patch:\n\n1. Start with sage-3.2\n2. Apply the patch at #4570\n3. Apply the following patch to /sage/local/lib/python2.5/site-packages/Cython/Compiler/Buffer.py:\n\n\n```\ndiff -r 04e83ffd8ea2 Cython/Compiler/Buffer.py\n--- a/Cython/Compiler/Buffer.py Fri Nov 07 06:55:37 2008 +0100\n+++ b/Cython/Compiler/Buffer.py Sun Nov 23 16:58:15 2008 +0100\n@@ -710,7 +710,11 @@ def use_py2_buffer_functions(env):\n     # Search all types for __getbuffer__ overloads\n     types = []\n+    visited_scopes = set()\n     def find_buffer_types(scope):\n+        if scope in visited_scopes:\n+            return\n+        visited_scopes.add(scope)\n         for m in scope.cimported_modules:\n             find_buffer_types(m)\n         for e in scope.type_entries:\n```\n\n4. Of course, do sage -br",
+    "body": "Attachment [vector-RDF-CDF-numpy.patch](tarball://root/attachments/some-uuid/ticket4206/vector-RDF-CDF-numpy.patch) by jason created at 2008-11-24 16:19:31\n\nTo review this patch:\n\n1. Start with sage-3.2\n2. Apply the patch at #4570\n3. Apply the following patch to /sage/local/lib/python2.5/site-packages/Cython/Compiler/Buffer.py:\n\n\n```\ndiff -r 04e83ffd8ea2 Cython/Compiler/Buffer.py\n--- a/Cython/Compiler/Buffer.py Fri Nov 07 06:55:37 2008 +0100\n+++ b/Cython/Compiler/Buffer.py Sun Nov 23 16:58:15 2008 +0100\n@@ -710,7 +710,11 @@ def use_py2_buffer_functions(env):\n     # Search all types for __getbuffer__ overloads\n     types = []\n+    visited_scopes = set()\n     def find_buffer_types(scope):\n+        if scope in visited_scopes:\n+            return\n+        visited_scopes.add(scope)\n         for m in scope.cimported_modules:\n             find_buffer_types(m)\n         for e in scope.type_entries:\n```\n\n4. Of course, do sage -br",
     "created_at": "2008-11-24T16:19:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
@@ -487,7 +487,7 @@ archive/issue_comments_030543.json:
 }
 ```
 
-Attachment
+Attachment [vector-RDF-CDF-numpy.patch](tarball://root/attachments/some-uuid/ticket4206/vector-RDF-CDF-numpy.patch) by jason created at 2008-11-24 16:19:31
 
 To review this patch:
 
@@ -558,7 +558,7 @@ Oh, yeah, and step 3.5: apply the patch on this ticket :).
 archive/issue_comments_030546.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [vector-rdf-doctest-correction.patch](tarball://root/attachments/some-uuid/ticket4206/vector-rdf-doctest-correction.patch) by jason created at 2008-11-24 20:28:06",
     "created_at": "2008-11-24T20:28:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
@@ -567,7 +567,7 @@ archive/issue_comments_030546.json:
 }
 ```
 
-Attachment
+Attachment [vector-rdf-doctest-correction.patch](tarball://root/attachments/some-uuid/ticket4206/vector-rdf-doctest-correction.patch) by jason created at 2008-11-24 20:28:06
 
 
 
@@ -630,7 +630,7 @@ I'm rebasing this to merge after #4580 has been merged.
 archive/issue_comments_030550.json:
 ```json
 {
-    "body": "Attachment\n\nRebased for sage-3.2.1.alpha1",
+    "body": "Attachment [vector-RDF-CDF-numpy.2.patch](tarball://root/attachments/some-uuid/ticket4206/vector-RDF-CDF-numpy.2.patch) by jason created at 2008-11-26 17:40:45\n\nRebased for sage-3.2.1.alpha1",
     "created_at": "2008-11-26T17:40:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
@@ -639,7 +639,7 @@ archive/issue_comments_030550.json:
 }
 ```
 
-Attachment
+Attachment [vector-RDF-CDF-numpy.2.patch](tarball://root/attachments/some-uuid/ticket4206/vector-RDF-CDF-numpy.2.patch) by jason created at 2008-11-26 17:40:45
 
 Rebased for sage-3.2.1.alpha1
 
@@ -773,7 +773,7 @@ Apparently I  concentrated so much on making the documentation in vector_double_
 archive/issue_comments_030555.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [vector-RDF-CDF-numpy-sage-3.2.1.alpha2.patch](tarball://root/attachments/some-uuid/ticket4206/vector-RDF-CDF-numpy-sage-3.2.1.alpha2.patch) by jason created at 2008-11-28 02:57:37",
     "created_at": "2008-11-28T02:57:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
@@ -782,7 +782,7 @@ archive/issue_comments_030555.json:
 }
 ```
 
-Attachment
+Attachment [vector-RDF-CDF-numpy-sage-3.2.1.alpha2.patch](tarball://root/attachments/some-uuid/ticket4206/vector-RDF-CDF-numpy-sage-3.2.1.alpha2.patch) by jason created at 2008-11-28 02:57:37
 
 
 
@@ -952,7 +952,7 @@ Reviewer -- make sure that the attached file v.sobj can be loaded after this pat
 archive/issue_comments_030561.json:
 ```json
 {
-    "body": "Attachment\n\nThe updated (sage-3.2.1) patch deletes the real_double_vector.pyx and complex_double_vector.pyx files and instead creates (real|complex)_double_vector.py files, which basically contain references to the unpickling functions and make the old classes aliases for the new classes.  We could just as well make the old classes = None (and I think unpickling old things will still work), but this way there is some sort of backwards compatibility for people still using the old class names.",
+    "body": "Attachment [v.sobj](tarball://root/attachments/some-uuid/ticket4206/v.sobj) by jason created at 2008-12-03 17:31:58\n\nThe updated (sage-3.2.1) patch deletes the real_double_vector.pyx and complex_double_vector.pyx files and instead creates (real|complex)_double_vector.py files, which basically contain references to the unpickling functions and make the old classes aliases for the new classes.  We could just as well make the old classes = None (and I think unpickling old things will still work), but this way there is some sort of backwards compatibility for people still using the old class names.",
     "created_at": "2008-12-03T17:31:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
@@ -961,7 +961,7 @@ archive/issue_comments_030561.json:
 }
 ```
 
-Attachment
+Attachment [v.sobj](tarball://root/attachments/some-uuid/ticket4206/v.sobj) by jason created at 2008-12-03 17:31:58
 
 The updated (sage-3.2.1) patch deletes the real_double_vector.pyx and complex_double_vector.pyx files and instead creates (real|complex)_double_vector.py files, which basically contain references to the unpickling functions and make the old classes aliases for the new classes.  We could just as well make the old classes = None (and I think unpickling old things will still work), but this way there is some sort of backwards compatibility for people still using the old class names.
 
@@ -1128,7 +1128,7 @@ I get the same error stream as was on intel atom.
 archive/issue_comments_030568.json:
 ```json
 {
-    "body": "Attachment\n\nI attached a patch which should take care of the problem.  The problem was manifest on a system that does not have a system numpy; the include directories were not set up properly for real_roots.pyx.  So now, apply vector-RDF-CDF-numpy-sage-3.2.1.patch and then apply real_roots-import.patch.\n\nLet me know if the problem still persists.",
+    "body": "Attachment [real_roots-import.patch](tarball://root/attachments/some-uuid/ticket4206/real_roots-import.patch) by jason created at 2008-12-07 03:41:54\n\nI attached a patch which should take care of the problem.  The problem was manifest on a system that does not have a system numpy; the include directories were not set up properly for real_roots.pyx.  So now, apply vector-RDF-CDF-numpy-sage-3.2.1.patch and then apply real_roots-import.patch.\n\nLet me know if the problem still persists.",
     "created_at": "2008-12-07T03:41:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
@@ -1137,7 +1137,7 @@ archive/issue_comments_030568.json:
 }
 ```
 
-Attachment
+Attachment [real_roots-import.patch](tarball://root/attachments/some-uuid/ticket4206/real_roots-import.patch) by jason created at 2008-12-07 03:41:54
 
 I attached a patch which should take care of the problem.  The problem was manifest on a system that does not have a system numpy; the include directories were not set up properly for real_roots.pyx.  So now, apply vector-RDF-CDF-numpy-sage-3.2.1.patch and then apply real_roots-import.patch.
 
@@ -1328,7 +1328,7 @@ apply on top of previous patches
 archive/issue_comments_030575.json:
 ```json
 {
-    "body": "Attachment\n\nOkay, updated the vector_fft.patch. The new timing comparison is:\n\n\n```\nsage: v=vector(RDF, range(1000000r))\nn=v.numpy()\nsage: n=v.numpy()\nsage: import scipy; import scipy.fftpack\nsage: timeit('a=v.fft()')\n5 loops, best of 3: 342 ms per loop\nsage: timeit('b=scipy.fft(n)')\n5 loops, best of 3: 316 ms per loop\nsage: timeit('a=v.inv_fft()')\n5 loops, best of 3: 442 ms per loop\nsage: timeit('b=scipy.ifft(n)')\n5 loops, best of 3: 416 ms per loop\nsage: v=vector(CDF, range(1000000r))\nsage: n=v.numpy()\nsage: timeit('a=v.fft()')\n5 loops, best of 3: 346 ms per loop\nsage: timeit('b=scipy.fft(n)')\n5 loops, best of 3: 319 ms per loop\nsage: timeit('a=v.inv_fft()')\n5 loops, best of 3: 470 ms per loop\nsage: timeit('b=scipy.ifft(n)')\n5 loops, best of 3: 419 ms per loop\n```\n\n\nSince the timing issue is addressed, I'm marking this as positive review as directed in jkantor's comment.",
+    "body": "Attachment [vector_fft.patch](tarball://root/attachments/some-uuid/ticket4206/vector_fft.patch) by jason created at 2008-12-09 06:49:36\n\nOkay, updated the vector_fft.patch. The new timing comparison is:\n\n\n```\nsage: v=vector(RDF, range(1000000r))\nn=v.numpy()\nsage: n=v.numpy()\nsage: import scipy; import scipy.fftpack\nsage: timeit('a=v.fft()')\n5 loops, best of 3: 342 ms per loop\nsage: timeit('b=scipy.fft(n)')\n5 loops, best of 3: 316 ms per loop\nsage: timeit('a=v.inv_fft()')\n5 loops, best of 3: 442 ms per loop\nsage: timeit('b=scipy.ifft(n)')\n5 loops, best of 3: 416 ms per loop\nsage: v=vector(CDF, range(1000000r))\nsage: n=v.numpy()\nsage: timeit('a=v.fft()')\n5 loops, best of 3: 346 ms per loop\nsage: timeit('b=scipy.fft(n)')\n5 loops, best of 3: 319 ms per loop\nsage: timeit('a=v.inv_fft()')\n5 loops, best of 3: 470 ms per loop\nsage: timeit('b=scipy.ifft(n)')\n5 loops, best of 3: 419 ms per loop\n```\n\n\nSince the timing issue is addressed, I'm marking this as positive review as directed in jkantor's comment.",
     "created_at": "2008-12-09T06:49:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
@@ -1337,7 +1337,7 @@ archive/issue_comments_030575.json:
 }
 ```
 
-Attachment
+Attachment [vector_fft.patch](tarball://root/attachments/some-uuid/ticket4206/vector_fft.patch) by jason created at 2008-12-09 06:49:36
 
 Okay, updated the vector_fft.patch. The new timing comparison is:
 
@@ -1438,7 +1438,7 @@ Michael
 archive/issue_comments_030578.json:
 ```json
 {
-    "body": "Attachment\n\ndeleted reject hunk from file; the three patches should work now.",
+    "body": "Attachment [vector-RDF-CDF-numpy-sage-3.2.1.patch](tarball://root/attachments/some-uuid/ticket4206/vector-RDF-CDF-numpy-sage-3.2.1.patch) by jason created at 2008-12-09 08:06:40\n\ndeleted reject hunk from file; the three patches should work now.",
     "created_at": "2008-12-09T08:06:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
@@ -1447,7 +1447,7 @@ archive/issue_comments_030578.json:
 }
 ```
 
-Attachment
+Attachment [vector-RDF-CDF-numpy-sage-3.2.1.patch](tarball://root/attachments/some-uuid/ticket4206/vector-RDF-CDF-numpy-sage-3.2.1.patch) by jason created at 2008-12-09 08:06:40
 
 deleted reject hunk from file; the three patches should work now.
 
@@ -1555,7 +1555,7 @@ apply on top of previous patches
 archive/issue_comments_030581.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review for the last patch.\n\nMerge\n\n* vector-RDF-CDF-numpy-sage-3.2.1.patch\n* real_roots-import.patch\n* vector_fft.patch \n* timeseries-64bit.patch \n\nCheers,\n\nMichael",
+    "body": "Attachment [timeseries-64bit.patch](tarball://root/attachments/some-uuid/ticket4206/timeseries-64bit.patch) by mabshoff created at 2008-12-09 09:02:28\n\nPositive review for the last patch.\n\nMerge\n\n* vector-RDF-CDF-numpy-sage-3.2.1.patch\n* real_roots-import.patch\n* vector_fft.patch \n* timeseries-64bit.patch \n\nCheers,\n\nMichael",
     "created_at": "2008-12-09T09:02:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
@@ -1564,7 +1564,7 @@ archive/issue_comments_030581.json:
 }
 ```
 
-Attachment
+Attachment [timeseries-64bit.patch](tarball://root/attachments/some-uuid/ticket4206/timeseries-64bit.patch) by mabshoff created at 2008-12-09 09:02:28
 
 Positive review for the last patch.
 

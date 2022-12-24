@@ -81,7 +81,7 @@ Allow for larger coeffecients in chromatic polynomial. Add McGee graph generator
 archive/issue_comments_058372.json:
 ```json
 {
-    "body": "Attachment\n\nFigured out the cause of the miscalculations. Coefficients of the chromatic polynomial are saved as 32-bit integers in Sage, so numbers larger than 2,147,483,647 will come out wrong.\n\nComparison of the computed chromatic polynomial for the McGee graph using Sage and using a program made by Pearce and Haggard[1]:\n\nChromatic polynomial using Pearce:\n\n```\nx^24 - 36*x^23 + 630*x^22 - 7140*x^21 + 58905*x^20 - 376992*x^19 +\n1947760*x^18 - 8346686*x^17 + 30245418*x^16 - 93999140*x^15 +\n253180660*x^14 - 595401630*x^13 + 1228477234*x^12 - 2229115744*x^11 +\n3556493741*x^10 - 4973964734*x^9 + 6058278383*x^8 - 6356758192*x^7 +\n5650054983*x^6 - 4146754706*x^5 + 2415720549*x^4 - 1046958944*x^3 +\n299392840*x^2 - 42167160*x\n```\n\n\nUsing Sage:\n\n```\nx^24 - 36*x^23 + 630*x^22 - 7140*x^21 + 58905*x^20 - 376992*x^19 +\n1947760*x^18 - 8346686*x^17 + 30245418*x^16 - 93999140*x^15 +\n253180660*x^14 - 595401630*x^13 + 1228477234*x^12 + 2065851552*x^11 -\n738473555*x^10 - 678997438*x^9 + 1763311087*x^8 - 2061790896*x^7 +\n1355087687*x^6 + 148212590*x^5 - 1879246747*x^4 - 1046958944*x^3 +\n299392840*x^2 - 42167160*x\n```\n\n\nIf we now look at the coefficients for x^11 we see that the difference between them is \n\n```\n2065851552 - (-2229115744) = 4294967296 = 2^32\n```\n\ni.e  32-bit integer.\n\nsolution: replace int with long long in suitable places in /sage/graphs/chrompoly.pyx so that 64 bits are used to describe each coefficient value (long won't suffice, as it is only 32-bit)\n\nAttaching a patch that changes relevant variables to long long, as well as adding the McGee graph to named graphs as a doctest to show that the changes give a correct answer (the chromatic number should be 3).\n\n\n[1]: http://homepages.mcs.vuw.ac.nz/~djp/tutte/",
+    "body": "Attachment [trac_7052.patch](tarball://root/attachments/some-uuid/ticket7052/trac_7052.patch) by AJonsson created at 2009-10-05 07:42:53\n\nFigured out the cause of the miscalculations. Coefficients of the chromatic polynomial are saved as 32-bit integers in Sage, so numbers larger than 2,147,483,647 will come out wrong.\n\nComparison of the computed chromatic polynomial for the McGee graph using Sage and using a program made by Pearce and Haggard[1]:\n\nChromatic polynomial using Pearce:\n\n```\nx^24 - 36*x^23 + 630*x^22 - 7140*x^21 + 58905*x^20 - 376992*x^19 +\n1947760*x^18 - 8346686*x^17 + 30245418*x^16 - 93999140*x^15 +\n253180660*x^14 - 595401630*x^13 + 1228477234*x^12 - 2229115744*x^11 +\n3556493741*x^10 - 4973964734*x^9 + 6058278383*x^8 - 6356758192*x^7 +\n5650054983*x^6 - 4146754706*x^5 + 2415720549*x^4 - 1046958944*x^3 +\n299392840*x^2 - 42167160*x\n```\n\n\nUsing Sage:\n\n```\nx^24 - 36*x^23 + 630*x^22 - 7140*x^21 + 58905*x^20 - 376992*x^19 +\n1947760*x^18 - 8346686*x^17 + 30245418*x^16 - 93999140*x^15 +\n253180660*x^14 - 595401630*x^13 + 1228477234*x^12 + 2065851552*x^11 -\n738473555*x^10 - 678997438*x^9 + 1763311087*x^8 - 2061790896*x^7 +\n1355087687*x^6 + 148212590*x^5 - 1879246747*x^4 - 1046958944*x^3 +\n299392840*x^2 - 42167160*x\n```\n\n\nIf we now look at the coefficients for x^11 we see that the difference between them is \n\n```\n2065851552 - (-2229115744) = 4294967296 = 2^32\n```\n\ni.e  32-bit integer.\n\nsolution: replace int with long long in suitable places in /sage/graphs/chrompoly.pyx so that 64 bits are used to describe each coefficient value (long won't suffice, as it is only 32-bit)\n\nAttaching a patch that changes relevant variables to long long, as well as adding the McGee graph to named graphs as a doctest to show that the changes give a correct answer (the chromatic number should be 3).\n\n\n[1]: http://homepages.mcs.vuw.ac.nz/~djp/tutte/",
     "created_at": "2009-10-05T07:42:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7052",
     "type": "issue_comment",
@@ -90,7 +90,7 @@ archive/issue_comments_058372.json:
 }
 ```
 
-Attachment
+Attachment [trac_7052.patch](tarball://root/attachments/some-uuid/ticket7052/trac_7052.patch) by AJonsson created at 2009-10-05 07:42:53
 
 Figured out the cause of the miscalculations. Coefficients of the chromatic polynomial are saved as 32-bit integers in Sage, so numbers larger than 2,147,483,647 will come out wrong.
 
@@ -178,7 +178,7 @@ Changing priority from minor to major.
 archive/issue_comments_058375.json:
 ```json
 {
-    "body": "Attachment\n\nFound the wonderful graphs.LCFGraph() function, so it became clear to me that a constructor for the McGee graph was redundant, when a simple graphs.LCFGraph(24, [12,7,-7], 8) worked just as fine.\n\nNew version of the patch just changes int to long long at the necessary places, and adds a test of the value of the chromatic polynomial at x=2, to see that it is 0 now.\n\nChanging priority to major, as this clearly will happen to any graph that is sufficiently large.",
+    "body": "Attachment [trac_7052_minimal.patch](tarball://root/attachments/some-uuid/ticket7052/trac_7052_minimal.patch) by AJonsson created at 2009-10-12 18:57:51\n\nFound the wonderful graphs.LCFGraph() function, so it became clear to me that a constructor for the McGee graph was redundant, when a simple graphs.LCFGraph(24, [12,7,-7], 8) worked just as fine.\n\nNew version of the patch just changes int to long long at the necessary places, and adds a test of the value of the chromatic polynomial at x=2, to see that it is 0 now.\n\nChanging priority to major, as this clearly will happen to any graph that is sufficiently large.",
     "created_at": "2009-10-12T18:57:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7052",
     "type": "issue_comment",
@@ -187,7 +187,7 @@ archive/issue_comments_058375.json:
 }
 ```
 
-Attachment
+Attachment [trac_7052_minimal.patch](tarball://root/attachments/some-uuid/ticket7052/trac_7052_minimal.patch) by AJonsson created at 2009-10-12 18:57:51
 
 Found the wonderful graphs.LCFGraph() function, so it became clear to me that a constructor for the McGee graph was redundant, when a simple graphs.LCFGraph(24, [12,7,-7], 8) worked just as fine.
 
@@ -346,7 +346,7 @@ Uses mpz_t instead of long long
 archive/issue_comments_058384.json:
 ```json
 {
-    "body": "Attachment\n\nThis new patch should fix the original problem in a more rigorous manner.\n\nAs far as the Tutte polynomial, this is definitely a topic for another ticket.",
+    "body": "Attachment [trac_7052_chrompoly_gmp.patch](tarball://root/attachments/some-uuid/ticket7052/trac_7052_chrompoly_gmp.patch) by rlm created at 2009-10-30 03:53:06\n\nThis new patch should fix the original problem in a more rigorous manner.\n\nAs far as the Tutte polynomial, this is definitely a topic for another ticket.",
     "created_at": "2009-10-30T03:53:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7052",
     "type": "issue_comment",
@@ -355,7 +355,7 @@ archive/issue_comments_058384.json:
 }
 ```
 
-Attachment
+Attachment [trac_7052_chrompoly_gmp.patch](tarball://root/attachments/some-uuid/ticket7052/trac_7052_chrompoly_gmp.patch) by rlm created at 2009-10-30 03:53:06
 
 This new patch should fix the original problem in a more rigorous manner.
 

@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6309
 archive/issue_comments_050350.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6309.patch](tarball://root/attachments/some-uuid/ticket6309/6309.patch) by bantieau created at 2009-06-16 06:41:40",
     "created_at": "2009-06-16T06:41:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6309",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_050350.json:
 }
 ```
 
-Attachment
+Attachment [6309.patch](tarball://root/attachments/some-uuid/ticket6309/6309.patch) by bantieau created at 2009-06-16 06:41:40
 
 
 
@@ -71,7 +71,7 @@ tweak to be compatibe with #6141, which changes facets to facets().
 archive/issue_comments_050352.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch doesn't apply cleanly; does this depend on #6099?\n\nThe `remove_facet` method needs some doctests.  It also seems to have a line using self.facets, not self.facets().  Would it in fact make sense to just combine this with `remove_face`?  That is, rewrite `remove_face`: first check if the face being removed is a facet, in which case use your code.  Otherwise, use the old, presumably slower, code. I don't think we need two separate methods.  And before removing it, you should probably check that it's actually a facet: make sure it's not a face of any other facet.\n\nSimilarly, the `is_connected` method might fail if the complex was constructed with `maximality_check` False.\n\nYou might check your `is_connected` method for speed -- compare to this:\n\n```\nreturn self.graph().is_connected()\n```\n\nI expect that yours will be faster, even after the maximality check.  If you keep your code, you could put in a doctest like\n\n```\nsage: K = simplicial_complexes.RandomComplex(8,1)     [or some other simplicial complex]\nsage: K.is_connected() == K.graph().is_connected()\nTrue\n```\n",
+    "body": "Attachment [6309-2.patch](tarball://root/attachments/some-uuid/ticket6309/6309-2.patch) by jhpalmieri created at 2009-06-17 17:19:24\n\nThe patch doesn't apply cleanly; does this depend on #6099?\n\nThe `remove_facet` method needs some doctests.  It also seems to have a line using self.facets, not self.facets().  Would it in fact make sense to just combine this with `remove_face`?  That is, rewrite `remove_face`: first check if the face being removed is a facet, in which case use your code.  Otherwise, use the old, presumably slower, code. I don't think we need two separate methods.  And before removing it, you should probably check that it's actually a facet: make sure it's not a face of any other facet.\n\nSimilarly, the `is_connected` method might fail if the complex was constructed with `maximality_check` False.\n\nYou might check your `is_connected` method for speed -- compare to this:\n\n```\nreturn self.graph().is_connected()\n```\n\nI expect that yours will be faster, even after the maximality check.  If you keep your code, you could put in a doctest like\n\n```\nsage: K = simplicial_complexes.RandomComplex(8,1)     [or some other simplicial complex]\nsage: K.is_connected() == K.graph().is_connected()\nTrue\n```\n",
     "created_at": "2009-06-17T17:19:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6309",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_050352.json:
 }
 ```
 
-Attachment
+Attachment [6309-2.patch](tarball://root/attachments/some-uuid/ticket6309/6309-2.patch) by jhpalmieri created at 2009-06-17 17:19:24
 
 The patch doesn't apply cleanly; does this depend on #6099?
 
@@ -168,7 +168,7 @@ which I think is added by #6099.
 archive/issue_comments_050355.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [simp_cx_graph.patch](tarball://root/attachments/some-uuid/ticket6309/simp_cx_graph.patch) by jhpalmieri created at 2009-06-17 19:40:00",
     "created_at": "2009-06-17T19:40:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6309",
     "type": "issue_comment",
@@ -177,7 +177,7 @@ archive/issue_comments_050355.json:
 }
 ```
 
-Attachment
+Attachment [simp_cx_graph.patch](tarball://root/attachments/some-uuid/ticket6309/simp_cx_graph.patch) by jhpalmieri created at 2009-06-17 19:40:00
 
 
 
@@ -204,7 +204,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_050357.json:
 ```json
 {
-    "body": "Attachment\n\nAdded a hopefully final patch: 6309-merged. This contains the above patches, and merges well on a fresh branch of 4.2.\n\nThe methods graph() and remove_face() now both work correctly. My method for is_connected() was completely wrong. So, for the moment, is_connected() calls graph().is_connected(). This will not give the correct answer for simplicial complexes created with maximal_check=False.\n\nI also updated the changes to graphs/graph.py to reflect the depreciation of the cliques() method.",
+    "body": "Attachment [6309-merged.patch](tarball://root/attachments/some-uuid/ticket6309/6309-merged.patch) by bantieau created at 2009-11-06 19:13:40\n\nAdded a hopefully final patch: 6309-merged. This contains the above patches, and merges well on a fresh branch of 4.2.\n\nThe methods graph() and remove_face() now both work correctly. My method for is_connected() was completely wrong. So, for the moment, is_connected() calls graph().is_connected(). This will not give the correct answer for simplicial complexes created with maximal_check=False.\n\nI also updated the changes to graphs/graph.py to reflect the depreciation of the cliques() method.",
     "created_at": "2009-11-06T19:13:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6309",
     "type": "issue_comment",
@@ -213,7 +213,7 @@ archive/issue_comments_050357.json:
 }
 ```
 
-Attachment
+Attachment [6309-merged.patch](tarball://root/attachments/some-uuid/ticket6309/6309-merged.patch) by bantieau created at 2009-11-06 19:13:40
 
 Added a hopefully final patch: 6309-merged. This contains the above patches, and merges well on a fresh branch of 4.2.
 
@@ -228,7 +228,7 @@ I also updated the changes to graphs/graph.py to reflect the depreciation of the
 archive/issue_comments_050358.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of 6309-merged.patch",
+    "body": "Attachment [trac_6309-referee.patch](tarball://root/attachments/some-uuid/ticket6309/trac_6309-referee.patch) by jhpalmieri created at 2009-11-06 21:09:55\n\napply on top of 6309-merged.patch",
     "created_at": "2009-11-06T21:09:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6309",
     "type": "issue_comment",
@@ -237,7 +237,7 @@ archive/issue_comments_050358.json:
 }
 ```
 
-Attachment
+Attachment [trac_6309-referee.patch](tarball://root/attachments/some-uuid/ticket6309/trac_6309-referee.patch) by jhpalmieri created at 2009-11-06 21:09:55
 
 apply on top of 6309-merged.patch
 
@@ -302,7 +302,7 @@ To the release manager: apply only "6309-merged.patch" and "trac_6309-referee.pa
 archive/issue_comments_050362.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6309-doctest-fix.patch](tarball://root/attachments/some-uuid/ticket6309/trac_6309-doctest-fix.patch) by mhansen created at 2009-11-07 06:12:20",
     "created_at": "2009-11-07T06:12:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6309",
     "type": "issue_comment",
@@ -311,7 +311,7 @@ archive/issue_comments_050362.json:
 }
 ```
 
-Attachment
+Attachment [trac_6309-doctest-fix.patch](tarball://root/attachments/some-uuid/ticket6309/trac_6309-doctest-fix.patch) by mhansen created at 2009-11-07 06:12:20
 
 
 

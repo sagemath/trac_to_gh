@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2111
 archive/issue_comments_013763.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [native_gb.patch](tarball://root/attachments/some-uuid/ticket2111/native_gb.patch) by malb created at 2008-02-08 12:17:34",
     "created_at": "2008-02-08T12:17:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2111",
     "type": "issue_comment",
@@ -50,7 +50,7 @@ archive/issue_comments_013763.json:
 }
 ```
 
-Attachment
+Attachment [native_gb.patch](tarball://root/attachments/some-uuid/ticket2111/native_gb.patch) by malb created at 2008-02-08 12:17:34
 
 
 
@@ -59,7 +59,7 @@ Attachment
 archive/issue_comments_013764.json:
 ```json
 {
-    "body": "Attachment\n\nmisc additional improvements, apply after first patch",
+    "body": "Attachment [trac_2111_2.patch](tarball://root/attachments/some-uuid/ticket2111/trac_2111_2.patch) by malb created at 2008-02-13 13:26:34\n\nmisc additional improvements, apply after first patch",
     "created_at": "2008-02-13T13:26:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2111",
     "type": "issue_comment",
@@ -68,7 +68,7 @@ archive/issue_comments_013764.json:
 }
 ```
 
-Attachment
+Attachment [trac_2111_2.patch](tarball://root/attachments/some-uuid/ticket2111/trac_2111_2.patch) by malb created at 2008-02-13 13:26:34
 
 misc additional improvements, apply after first patch
 

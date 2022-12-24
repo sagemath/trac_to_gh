@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7759
 archive/issue_comments_066812.json:
 ```json
 {
-    "body": "Attachment\n\nFile to add to $SAGE_ROOT",
+    "body": "Attachment [README.Solaris](tarball://root/attachments/some-uuid/ticket7759/README.Solaris) by drkirkby created at 2009-12-24 10:22:04\n\nFile to add to $SAGE_ROOT",
     "created_at": "2009-12-24T10:22:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7759",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_066812.json:
 }
 ```
 
-Attachment
+Attachment [README.Solaris](tarball://root/attachments/some-uuid/ticket7759/README.Solaris) by drkirkby created at 2009-12-24 10:22:04
 
 File to add to $SAGE_ROOT
 

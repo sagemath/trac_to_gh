@@ -67,7 +67,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5166
 archive/issue_comments_039587.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5166-pynac_function_doctest_failure.patch](tarball://root/attachments/some-uuid/ticket5166/trac_5166-pynac_function_doctest_failure.patch) by burcin created at 2009-02-04 08:50:50",
     "created_at": "2009-02-04T08:50:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5166",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_039587.json:
 }
 ```
 
-Attachment
+Attachment [trac_5166-pynac_function_doctest_failure.patch](tarball://root/attachments/some-uuid/ticket5166/trac_5166-pynac_function_doctest_failure.patch) by burcin created at 2009-02-04 08:50:50
 
 
 

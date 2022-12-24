@@ -68,7 +68,7 @@ allow utf-8 in .sage files
 archive/issue_comments_017747.json:
 ```json
 {
-    "body": "Attachment\n\nNice patch, it fixes the issue and applies cleanly to my 2.11.alpha0 tree. Positive review.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_2593.patch](tarball://root/attachments/some-uuid/ticket2593/trac_2593.patch) by mabshoff created at 2008-03-19 11:55:30\n\nNice patch, it fixes the issue and applies cleanly to my 2.11.alpha0 tree. Positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-03-19T11:55:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2593",
     "type": "issue_comment",
@@ -77,7 +77,7 @@ archive/issue_comments_017747.json:
 }
 ```
 
-Attachment
+Attachment [trac_2593.patch](tarball://root/attachments/some-uuid/ticket2593/trac_2593.patch) by mabshoff created at 2008-03-19 11:55:30
 
 Nice patch, it fixes the issue and applies cleanly to my 2.11.alpha0 tree. Positive review.
 

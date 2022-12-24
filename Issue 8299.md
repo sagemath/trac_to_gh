@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8299
 archive/issue_comments_073516.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8299-integer-bool-coerce.patch](tarball://root/attachments/some-uuid/ticket8299/8299-integer-bool-coerce.patch) by robertwb created at 2010-02-18 22:30:21",
     "created_at": "2010-02-18T22:30:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8299",
     "type": "issue_comment",
@@ -49,7 +49,7 @@ archive/issue_comments_073516.json:
 }
 ```
 
-Attachment
+Attachment [8299-integer-bool-coerce.patch](tarball://root/attachments/some-uuid/ticket8299/8299-integer-bool-coerce.patch) by robertwb created at 2010-02-18 22:30:21
 
 
 

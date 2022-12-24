@@ -76,7 +76,7 @@ Changing status from new to assigned.
 archive/issue_comments_047608.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [dynamic_class-5991-submitted.patch](tarball://root/attachments/some-uuid/ticket5991/dynamic_class-5991-submitted.patch) by nthiery created at 2009-05-21 08:15:11",
     "created_at": "2009-05-21T08:15:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5991",
     "type": "issue_comment",
@@ -85,7 +85,7 @@ archive/issue_comments_047608.json:
 }
 ```
 
-Attachment
+Attachment [dynamic_class-5991-submitted.patch](tarball://root/attachments/some-uuid/ticket5991/dynamic_class-5991-submitted.patch) by nthiery created at 2009-05-21 08:15:11
 
 
 
@@ -242,7 +242,7 @@ Should there be a new field in the trac server for listing systematically the ot
 archive/issue_comments_047613.json:
 ```json
 {
-    "body": "Attachment\n\nThe two added patches, by David and myself improve introspection.\nI give a positive review on David's. David, can you double check mine?",
+    "body": "Attachment [trac_5991-dynamic_class-referee-dr.patch](tarball://root/attachments/some-uuid/ticket5991/trac_5991-dynamic_class-referee-dr.patch) by nthiery created at 2009-07-10 23:24:36\n\nThe two added patches, by David and myself improve introspection.\nI give a positive review on David's. David, can you double check mine?",
     "created_at": "2009-07-10T23:24:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5991",
     "type": "issue_comment",
@@ -251,7 +251,7 @@ archive/issue_comments_047613.json:
 }
 ```
 
-Attachment
+Attachment [trac_5991-dynamic_class-referee-dr.patch](tarball://root/attachments/some-uuid/ticket5991/trac_5991-dynamic_class-referee-dr.patch) by nthiery created at 2009-07-10 23:24:36
 
 The two added patches, by David and myself improve introspection.
 I give a positive review on David's. David, can you double check mine?
@@ -263,7 +263,7 @@ I give a positive review on David's. David, can you double check mine?
 archive/issue_comments_047614.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:11 nthiery]:\n> The two added patches, by David and myself improve introspection.\n> I give a positive review on David's. David, can you double check mine?\n\nThe updated referee patch by myself adds a copyright header, and fixes a warning in sage -docbuild.\n\nDavid: please double check!",
+    "body": "Attachment [trac_5991-dynamic_class-referee-nt.patch](tarball://root/attachments/some-uuid/ticket5991/trac_5991-dynamic_class-referee-nt.patch) by nthiery created at 2009-07-13 06:54:55\n\nReplying to [comment:11 nthiery]:\n> The two added patches, by David and myself improve introspection.\n> I give a positive review on David's. David, can you double check mine?\n\nThe updated referee patch by myself adds a copyright header, and fixes a warning in sage -docbuild.\n\nDavid: please double check!",
     "created_at": "2009-07-13T06:54:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5991",
     "type": "issue_comment",
@@ -272,7 +272,7 @@ archive/issue_comments_047614.json:
 }
 ```
 
-Attachment
+Attachment [trac_5991-dynamic_class-referee-nt.patch](tarball://root/attachments/some-uuid/ticket5991/trac_5991-dynamic_class-referee-nt.patch) by nthiery created at 2009-07-13 06:54:55
 
 Replying to [comment:11 nthiery]:
 > The two added patches, by David and myself improve introspection.
@@ -289,7 +289,7 @@ David: please double check!
 archive/issue_comments_047615.json:
 ```json
 {
-    "body": "Attachment\n\nFix reduction after David's referee patch",
+    "body": "Attachment [dynamic_class-reduction-nt.patch](tarball://root/attachments/some-uuid/ticket5991/dynamic_class-reduction-nt.patch) by nthiery created at 2009-07-17 22:30:52\n\nFix reduction after David's referee patch",
     "created_at": "2009-07-17T22:30:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5991",
     "type": "issue_comment",
@@ -298,7 +298,7 @@ archive/issue_comments_047615.json:
 }
 ```
 
-Attachment
+Attachment [dynamic_class-reduction-nt.patch](tarball://root/attachments/some-uuid/ticket5991/dynamic_class-reduction-nt.patch) by nthiery created at 2009-07-17 22:30:52
 
 Fix reduction after David's referee patch
 
@@ -327,7 +327,7 @@ Fold of all the patches above. Apply only this one
 archive/issue_comments_047617.json:
 ```json
 {
-    "body": "Attachment\n\nDavid: can you have a quick look at my latest addition, and set a positive review (pending #5985)",
+    "body": "Attachment [trac_5991_dynamic_class-nt.patch](tarball://root/attachments/some-uuid/ticket5991/trac_5991_dynamic_class-nt.patch) by nthiery created at 2009-07-17 22:41:39\n\nDavid: can you have a quick look at my latest addition, and set a positive review (pending #5985)",
     "created_at": "2009-07-17T22:41:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5991",
     "type": "issue_comment",
@@ -336,7 +336,7 @@ archive/issue_comments_047617.json:
 }
 ```
 
-Attachment
+Attachment [trac_5991_dynamic_class-nt.patch](tarball://root/attachments/some-uuid/ticket5991/trac_5991_dynamic_class-nt.patch) by nthiery created at 2009-07-17 22:41:39
 
 David: can you have a quick look at my latest addition, and set a positive review (pending #5985)
 
@@ -422,7 +422,7 @@ NOTE to self -- the change to sageinspect needs to be ported into the separated 
 archive/issue_comments_047622.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5991_dynamic_class-nt.2.patch](tarball://root/attachments/some-uuid/ticket5991/trac_5991_dynamic_class-nt.2.patch) by mhansen created at 2009-10-15 07:02:44",
     "created_at": "2009-10-15T07:02:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5991",
     "type": "issue_comment",
@@ -431,7 +431,7 @@ archive/issue_comments_047622.json:
 }
 ```
 
-Attachment
+Attachment [trac_5991_dynamic_class-nt.2.patch](tarball://root/attachments/some-uuid/ticket5991/trac_5991_dynamic_class-nt.2.patch) by mhansen created at 2009-10-15 07:02:44
 
 
 

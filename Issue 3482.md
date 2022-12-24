@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3482
 archive/issue_comments_024533.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3482.patch](tarball://root/attachments/some-uuid/ticket3482/sage-3482.patch) by was created at 2008-06-20 06:27:41",
     "created_at": "2008-06-20T06:27:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3482",
     "type": "issue_comment",
@@ -51,7 +51,7 @@ archive/issue_comments_024533.json:
 }
 ```
 
-Attachment
+Attachment [sage-3482.patch](tarball://root/attachments/some-uuid/ticket3482/sage-3482.patch) by was created at 2008-06-20 06:27:41
 
 
 
@@ -293,7 +293,7 @@ Nick
 archive/issue_comments_024540.json:
 ```json
 {
-    "body": "Attachment\n\nthis addresses the referee's remarks.",
+    "body": "Attachment [sage-3482-part2.patch](tarball://root/attachments/some-uuid/ticket3482/sage-3482-part2.patch) by was created at 2008-07-06 17:57:10\n\nthis addresses the referee's remarks.",
     "created_at": "2008-07-06T17:57:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3482",
     "type": "issue_comment",
@@ -302,7 +302,7 @@ archive/issue_comments_024540.json:
 }
 ```
 
-Attachment
+Attachment [sage-3482-part2.patch](tarball://root/attachments/some-uuid/ticket3482/sage-3482-part2.patch) by was created at 2008-07-06 17:57:10
 
 this addresses the referee's remarks.
 
@@ -313,7 +313,7 @@ this addresses the referee's remarks.
 archive/issue_comments_024541.json:
 ```json
 {
-    "body": "Attachment\n\nan official pickle jar from sage-3.0.3 made on ubuntu 64-bit (sagemath.org)",
+    "body": "Attachment [pickle_jar-3.0.3.tar.bz2](tarball://root/attachments/some-uuid/ticket3482/pickle_jar-3.0.3.tar.bz2) by was created at 2008-07-06 19:16:44\n\nan official pickle jar from sage-3.0.3 made on ubuntu 64-bit (sagemath.org)",
     "created_at": "2008-07-06T19:16:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3482",
     "type": "issue_comment",
@@ -322,7 +322,7 @@ archive/issue_comments_024541.json:
 }
 ```
 
-Attachment
+Attachment [pickle_jar-3.0.3.tar.bz2](tarball://root/attachments/some-uuid/ticket3482/pickle_jar-3.0.3.tar.bz2) by was created at 2008-07-06 19:16:44
 
 an official pickle jar from sage-3.0.3 made on ubuntu 64-bit (sagemath.org)
 
@@ -333,7 +333,7 @@ an official pickle jar from sage-3.0.3 made on ubuntu 64-bit (sagemath.org)
 archive/issue_comments_024542.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3482-part3.patch](tarball://root/attachments/some-uuid/ticket3482/sage-3482-part3.patch) by was created at 2008-07-06 19:37:28",
     "created_at": "2008-07-06T19:37:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3482",
     "type": "issue_comment",
@@ -342,7 +342,7 @@ archive/issue_comments_024542.json:
 }
 ```
 
-Attachment
+Attachment [sage-3482-part3.patch](tarball://root/attachments/some-uuid/ticket3482/sage-3482-part3.patch) by was created at 2008-07-06 19:37:28
 
 
 
@@ -405,7 +405,7 @@ Resolution: fixed
 archive/issue_comments_024546.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [pickle_jar-3.0.5.tar.bz2](tarball://root/attachments/some-uuid/ticket3482/pickle_jar-3.0.5.tar.bz2) by was created at 2008-07-29 15:21:22",
     "created_at": "2008-07-29T15:21:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3482",
     "type": "issue_comment",
@@ -414,4 +414,4 @@ archive/issue_comments_024546.json:
 }
 ```
 
-Attachment
+Attachment [pickle_jar-3.0.5.tar.bz2](tarball://root/attachments/some-uuid/ticket3482/pickle_jar-3.0.5.tar.bz2) by was created at 2008-07-29 15:21:22

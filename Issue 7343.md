@@ -69,7 +69,7 @@ Changing status from new to needs_review.
 archive/issue_comments_061448.json:
 ```json
 {
-    "body": "Attachment\n\nDepends on #7309, #7310 and #7332. This is an initial version of the test suite. Many of these test cases were adapted and mildly modified from Mike Hansen's original Selenium test code.\n\nMore test cases to come, but I feel that having a test suite included asap is essential.",
+    "body": "Attachment [trac_7343-selenium-tests.patch](tarball://root/attachments/some-uuid/ticket7343/trac_7343-selenium-tests.patch) by timdumol created at 2009-10-29 04:08:58\n\nDepends on #7309, #7310 and #7332. This is an initial version of the test suite. Many of these test cases were adapted and mildly modified from Mike Hansen's original Selenium test code.\n\nMore test cases to come, but I feel that having a test suite included asap is essential.",
     "created_at": "2009-10-29T04:08:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_061448.json:
 }
 ```
 
-Attachment
+Attachment [trac_7343-selenium-tests.patch](tarball://root/attachments/some-uuid/ticket7343/trac_7343-selenium-tests.patch) by timdumol created at 2009-10-29 04:08:58
 
 Depends on #7309, #7310 and #7332. This is an initial version of the test suite. Many of these test cases were adapted and mildly modified from Mike Hansen's original Selenium test code.
 
@@ -152,7 +152,7 @@ The previous patch had some errors (*~ files, missing file).
 archive/issue_comments_061452.json:
 ```json
 {
-    "body": "Attachment\n\nAdded a test to confirm that #7341 works.",
+    "body": "Attachment [trac_7343-selenium-tests.3.patch](tarball://root/attachments/some-uuid/ticket7343/trac_7343-selenium-tests.3.patch) by timdumol created at 2009-10-29 12:06:04\n\nAdded a test to confirm that #7341 works.",
     "created_at": "2009-10-29T12:06:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
@@ -161,7 +161,7 @@ archive/issue_comments_061452.json:
 }
 ```
 
-Attachment
+Attachment [trac_7343-selenium-tests.3.patch](tarball://root/attachments/some-uuid/ticket7343/trac_7343-selenium-tests.3.patch) by timdumol created at 2009-10-29 12:06:04
 
 Added a test to confirm that #7341 works.
 
@@ -190,7 +190,7 @@ Added "Edit worksheet" test. Made sure that no orphan processes are left behind 
 archive/issue_comments_061454.json:
 ```json
 {
-    "body": "Attachment\n\nSo far, this looks great!  I'm still reading through the [Selenium-RC documentation](http://seleniumhq.org/docs/05_selenium_rc.html), but I think I can review this ticket formally tomorrow.  At the risk of asking too soon: Can we specify the particular browser to test in `run_tests()`?  Another potentially useful option, at least for Firefox: Use, e.g., `firefox -P selenium-test -remote \"openURL($*, new-tab)\"`, to open multiple tabs instead of windows.  I'll investigate.\n\nAside: It's nice that both [Selenium](http://seleniumhq.org/) and [FunkLoad](http://funkload.nuxeo.org/) are build on Python's [unittest framework](http://docs.python.org/library/unittest.html).  Of course, FunkLoad only simulates a browser, but I think we can attain approximate parity between the notebook's functional (i.e., with Selenium) and load (i.e., with FunkLoad) tests.  Selenium's advantage is that it tests real-world browsers, but even with [Selenium-Grid](http://selenium-grid.seleniumhq.org/), we'd have difficulty (I think) simulating thousands of simultaneous notebook users.",
+    "body": "Attachment [trac_7343-selenium-tests.4.patch](tarball://root/attachments/some-uuid/ticket7343/trac_7343-selenium-tests.4.patch) by mpatel created at 2009-10-31 15:10:51\n\nSo far, this looks great!  I'm still reading through the [Selenium-RC documentation](http://seleniumhq.org/docs/05_selenium_rc.html), but I think I can review this ticket formally tomorrow.  At the risk of asking too soon: Can we specify the particular browser to test in `run_tests()`?  Another potentially useful option, at least for Firefox: Use, e.g., `firefox -P selenium-test -remote \"openURL($*, new-tab)\"`, to open multiple tabs instead of windows.  I'll investigate.\n\nAside: It's nice that both [Selenium](http://seleniumhq.org/) and [FunkLoad](http://funkload.nuxeo.org/) are build on Python's [unittest framework](http://docs.python.org/library/unittest.html).  Of course, FunkLoad only simulates a browser, but I think we can attain approximate parity between the notebook's functional (i.e., with Selenium) and load (i.e., with FunkLoad) tests.  Selenium's advantage is that it tests real-world browsers, but even with [Selenium-Grid](http://selenium-grid.seleniumhq.org/), we'd have difficulty (I think) simulating thousands of simultaneous notebook users.",
     "created_at": "2009-10-31T15:10:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
@@ -199,7 +199,7 @@ archive/issue_comments_061454.json:
 }
 ```
 
-Attachment
+Attachment [trac_7343-selenium-tests.4.patch](tarball://root/attachments/some-uuid/ticket7343/trac_7343-selenium-tests.4.patch) by mpatel created at 2009-10-31 15:10:51
 
 So far, this looks great!  I'm still reading through the [Selenium-RC documentation](http://seleniumhq.org/docs/05_selenium_rc.html), but I think I can review this ticket formally tomorrow.  At the risk of asking too soon: Can we specify the particular browser to test in `run_tests()`?  Another potentially useful option, at least for Firefox: Use, e.g., `firefox -P selenium-test -remote "openURL($*, new-tab)"`, to open multiple tabs instead of windows.  I'll investigate.
 
@@ -248,7 +248,7 @@ Tweaked a few tests.  See the comment.  Apply only this patch.
 archive/issue_comments_061457.json:
 ```json
 {
-    "body": "Attachment\n\nVersion 5:\n\n* Fixes `TestWorksheet.test_edit`.\n\n* Changes `TestWorksheet.test_7341`, for now, to use\n\n```python\nsel.get_eval('window.evaluate_cell_introspection(1, null, null);')\n```\n\n   instead of\n\n```python\nself.tab('cell_input_1')\n```\n\n   For some reason, `self.selenium.key_press_native(9)` doesn't consistently send a TAB character in Firefox 3.5.3, at least for me.  I think the problem is Selenium's.\n\n* Simplifies `TestWorksheetsList.test_searching_for_worksheets`.  Is searching published worksheets broken in sagenb's tip?  I see, e.g.,\n\n```\n        exceptions.IOError: [Errno 2] No such file or directory: '/home/.sage/sage_notebook.sagenb/home/pub/12/worksheet.html\n```\n\n   if I publish a worksheet, visit \"Published,\" and try a search.  Restarting the server fixes the problem.\n\nAnyway, this is great work!  To the extent it counts, my review is positive.",
+    "body": "Attachment [trac_7343-selenium-tests.5.patch](tarball://root/attachments/some-uuid/ticket7343/trac_7343-selenium-tests.5.patch) by mpatel created at 2009-11-01 10:45:58\n\nVersion 5:\n\n* Fixes `TestWorksheet.test_edit`.\n\n* Changes `TestWorksheet.test_7341`, for now, to use\n\n```python\nsel.get_eval('window.evaluate_cell_introspection(1, null, null);')\n```\n\n   instead of\n\n```python\nself.tab('cell_input_1')\n```\n\n   For some reason, `self.selenium.key_press_native(9)` doesn't consistently send a TAB character in Firefox 3.5.3, at least for me.  I think the problem is Selenium's.\n\n* Simplifies `TestWorksheetsList.test_searching_for_worksheets`.  Is searching published worksheets broken in sagenb's tip?  I see, e.g.,\n\n```\n        exceptions.IOError: [Errno 2] No such file or directory: '/home/.sage/sage_notebook.sagenb/home/pub/12/worksheet.html\n```\n\n   if I publish a worksheet, visit \"Published,\" and try a search.  Restarting the server fixes the problem.\n\nAnyway, this is great work!  To the extent it counts, my review is positive.",
     "created_at": "2009-11-01T10:45:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
@@ -257,7 +257,7 @@ archive/issue_comments_061457.json:
 }
 ```
 
-Attachment
+Attachment [trac_7343-selenium-tests.5.patch](tarball://root/attachments/some-uuid/ticket7343/trac_7343-selenium-tests.5.patch) by mpatel created at 2009-11-01 10:45:58
 
 Version 5:
 

@@ -83,7 +83,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7424
 archive/issue_comments_062487.json:
 ```json
 {
-    "body": "Attachment\n\nhere is a patch, that also cleans a bit the doc",
+    "body": "Attachment [trac_7424.patch](tarball://root/attachments/some-uuid/ticket7424/trac_7424.patch) by chapoton created at 2013-08-02 19:17:20\n\nhere is a patch, that also cleans a bit the doc",
     "created_at": "2013-08-02T19:17:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7424",
     "type": "issue_comment",
@@ -92,7 +92,7 @@ archive/issue_comments_062487.json:
 }
 ```
 
-Attachment
+Attachment [trac_7424.patch](tarball://root/attachments/some-uuid/ticket7424/trac_7424.patch) by chapoton created at 2013-08-02 19:17:20
 
 here is a patch, that also cleans a bit the doc
 

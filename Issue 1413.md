@@ -266,7 +266,7 @@ patch against 2.10.1
 archive/issue_comments_009119.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [_sig_on_libsingular.patch](tarball://root/attachments/some-uuid/ticket1413/_sig_on_libsingular.patch) by jbmohler created at 2008-02-14 18:17:55",
     "created_at": "2008-02-14T18:17:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1413",
     "type": "issue_comment",
@@ -275,7 +275,7 @@ archive/issue_comments_009119.json:
 }
 ```
 
-Attachment
+Attachment [_sig_on_libsingular.patch](tarball://root/attachments/some-uuid/ticket1413/_sig_on_libsingular.patch) by jbmohler created at 2008-02-14 18:17:55
 
 
 

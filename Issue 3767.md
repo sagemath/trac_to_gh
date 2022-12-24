@@ -71,7 +71,7 @@ http://sage.math.washington.edu/home/jason/jquery-1.2.6.spkg
 archive/issue_comments_026797.json:
 ```json
 {
-    "body": "Attachment\n\nOkay, apply the patch to the extcode repository, then install the spkg, and you should have an updated jquery.",
+    "body": "Attachment [remove-jquery.patch](tarball://root/attachments/some-uuid/ticket3767/remove-jquery.patch) by jason created at 2008-10-10 04:37:26\n\nOkay, apply the patch to the extcode repository, then install the spkg, and you should have an updated jquery.",
     "created_at": "2008-10-10T04:37:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3767",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_026797.json:
 }
 ```
 
-Attachment
+Attachment [remove-jquery.patch](tarball://root/attachments/some-uuid/ticket3767/remove-jquery.patch) by jason created at 2008-10-10 04:37:26
 
 Okay, apply the patch to the extcode repository, then install the spkg, and you should have an updated jquery.
 
@@ -235,7 +235,7 @@ Ignore any patches of spkgs here.  See #4267 instead.
 archive/issue_comments_026806.json:
 ```json
 {
-    "body": "Attachment\n\nuse instead of any previous patches",
+    "body": "Attachment [jquery-and-friends-spkg.patch](tarball://root/attachments/some-uuid/ticket3767/jquery-and-friends-spkg.patch) by jason created at 2008-12-05 10:15:26\n\nuse instead of any previous patches",
     "created_at": "2008-12-05T10:15:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3767",
     "type": "issue_comment",
@@ -244,7 +244,7 @@ archive/issue_comments_026806.json:
 }
 ```
 
-Attachment
+Attachment [jquery-and-friends-spkg.patch](tarball://root/attachments/some-uuid/ticket3767/jquery-and-friends-spkg.patch) by jason created at 2008-12-05 10:15:26
 
 use instead of any previous patches
 
@@ -317,7 +317,7 @@ Changing priority from minor to major.
 archive/issue_comments_026810.json:
 ```json
 {
-    "body": "Attachment\n\nApply tclemans  jquery-and-friends-spkg.2.patch patch instead of mine.",
+    "body": "Attachment [jquery-and-friends-spkg.2.patch](tarball://root/attachments/some-uuid/ticket3767/jquery-and-friends-spkg.2.patch) by jason created at 2008-12-20 21:56:53\n\nApply tclemans  jquery-and-friends-spkg.2.patch patch instead of mine.",
     "created_at": "2008-12-20T21:56:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3767",
     "type": "issue_comment",
@@ -326,7 +326,7 @@ archive/issue_comments_026810.json:
 }
 ```
 
-Attachment
+Attachment [jquery-and-friends-spkg.2.patch](tarball://root/attachments/some-uuid/ticket3767/jquery-and-friends-spkg.2.patch) by jason created at 2008-12-20 21:56:53
 
 Apply tclemans  jquery-and-friends-spkg.2.patch patch instead of mine.
 

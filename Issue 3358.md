@@ -354,7 +354,7 @@ Francois
 archive/issue_comments_023374.json:
 ```json
 {
-    "body": "Attachment\n\nnew patch for spkg.install + new patch file for environment variables",
+    "body": "Attachment [spkg.patch](tarball://root/attachments/some-uuid/ticket3358/spkg.patch) by fbissey created at 2008-12-04 10:56:26\n\nnew patch for spkg.install + new patch file for environment variables",
     "created_at": "2008-12-04T10:56:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3358",
     "type": "issue_comment",
@@ -363,7 +363,7 @@ archive/issue_comments_023374.json:
 }
 ```
 
-Attachment
+Attachment [spkg.patch](tarball://root/attachments/some-uuid/ticket3358/spkg.patch) by fbissey created at 2008-12-04 10:56:26
 
 new patch for spkg.install + new patch file for environment variables
 

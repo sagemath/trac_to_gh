@@ -220,7 +220,7 @@ You are right about the security hole though, it's probably the least of our wor
 archive/issue_comments_076321.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8473-sagenb.patch](tarball://root/attachments/some-uuid/ticket8473/trac_8473-sagenb.patch) by iandrus created at 2011-01-04 14:36:47",
     "created_at": "2011-01-04T14:36:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8473",
     "type": "issue_comment",
@@ -229,7 +229,7 @@ archive/issue_comments_076321.json:
 }
 ```
 
-Attachment
+Attachment [trac_8473-sagenb.patch](tarball://root/attachments/some-uuid/ticket8473/trac_8473-sagenb.patch) by iandrus created at 2011-01-04 14:36:47
 
 
 
@@ -274,7 +274,7 @@ I'd like to test this, but I'm reluctant to do so until someone who knows someth
 archive/issue_comments_076324.json:
 ```json
 {
-    "body": "Attachment\n\nI added zip and txt files to the Mac App as well as support (icons etc.) for Cython files.",
+    "body": "Attachment [trac_8473-extcode.patch](tarball://root/attachments/some-uuid/ticket8473/trac_8473-extcode.patch) by iandrus created at 2011-03-12 16:28:44\n\nI added zip and txt files to the Mac App as well as support (icons etc.) for Cython files.",
     "created_at": "2011-03-12T16:28:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8473",
     "type": "issue_comment",
@@ -283,7 +283,7 @@ archive/issue_comments_076324.json:
 }
 ```
 
-Attachment
+Attachment [trac_8473-extcode.patch](tarball://root/attachments/some-uuid/ticket8473/trac_8473-extcode.patch) by iandrus created at 2011-03-12 16:28:44
 
 I added zip and txt files to the Mac App as well as support (icons etc.) for Cython files.
 
@@ -568,7 +568,7 @@ Hmm.  The extra `/` doesn't cause a problem on my machine, but I have noticed di
 archive/issue_comments_076334.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8473-sagenb.2.patch](tarball://root/attachments/some-uuid/ticket8473/trac_8473-sagenb.2.patch) by kcrisman created at 2011-03-30 15:33:06",
     "created_at": "2011-03-30T15:33:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8473",
     "type": "issue_comment",
@@ -577,7 +577,7 @@ archive/issue_comments_076334.json:
 }
 ```
 
-Attachment
+Attachment [trac_8473-sagenb.2.patch](tarball://root/attachments/some-uuid/ticket8473/trac_8473-sagenb.2.patch) by kcrisman created at 2011-03-30 15:33:06
 
 
 

@@ -267,7 +267,7 @@ previous fix rewritten for sage 3.4, with Alex's recommendation on a NotImplemen
 archive/issue_comments_042578.json:
 ```json
 {
-    "body": "Attachment\n\nThe current patch raises a NotImplementedError over rings that are not fields. (Tested with ZZ[x,y].) Over rings that Singular can't handle, this now works with the given problem. I added a docstring that tests it over PolynomialRing(GF(2147483659),order='lex'), and it returns the correct result.",
+    "body": "Attachment [dimension_zero_ideal.patch](tarball://root/attachments/some-uuid/ticket5485/dimension_zero_ideal.patch) by john_perry created at 2009-03-30 22:40:18\n\nThe current patch raises a NotImplementedError over rings that are not fields. (Tested with ZZ[x,y].) Over rings that Singular can't handle, this now works with the given problem. I added a docstring that tests it over PolynomialRing(GF(2147483659),order='lex'), and it returns the correct result.",
     "created_at": "2009-03-30T22:40:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5485",
     "type": "issue_comment",
@@ -276,7 +276,7 @@ archive/issue_comments_042578.json:
 }
 ```
 
-Attachment
+Attachment [dimension_zero_ideal.patch](tarball://root/attachments/some-uuid/ticket5485/dimension_zero_ideal.patch) by john_perry created at 2009-03-30 22:40:18
 
 The current patch raises a NotImplementedError over rings that are not fields. (Tested with ZZ[x,y].) Over rings that Singular can't handle, this now works with the given problem. I added a docstring that tests it over PolynomialRing(GF(2147483659),order='lex'), and it returns the correct result.
 

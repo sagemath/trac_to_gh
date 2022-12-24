@@ -164,7 +164,7 @@ Here's a patch, which also provides 100% coverage for the file banner.py.  The p
 archive/issue_comments_013205.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review. Nice work, I am considering importing version_dict() and require_version() into the global namespace, but we can do that via another ticket if there is demand.\n\nCheers,\n\nMichael",
+    "body": "Attachment [version.patch](tarball://root/attachments/some-uuid/ticket2039/version.patch) by mabshoff created at 2008-10-31 23:24:40\n\nPositive review. Nice work, I am considering importing version_dict() and require_version() into the global namespace, but we can do that via another ticket if there is demand.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-31T23:24:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2039",
     "type": "issue_comment",
@@ -173,7 +173,7 @@ archive/issue_comments_013205.json:
 }
 ```
 
-Attachment
+Attachment [version.patch](tarball://root/attachments/some-uuid/ticket2039/version.patch) by mabshoff created at 2008-10-31 23:24:40
 
 Positive review. Nice work, I am considering importing version_dict() and require_version() into the global namespace, but we can do that via another ticket if there is demand.
 

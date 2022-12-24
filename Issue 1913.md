@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1913
 archive/issue_comments_012121.json:
 ```json
 {
-    "body": "Attachment\n\nmake gamma return Infinity for 0, -1, ...",
+    "body": "Attachment [1913-gamma_poles.patch](tarball://root/attachments/some-uuid/ticket1913/1913-gamma_poles.patch) by burcin created at 2008-01-24 16:40:29\n\nmake gamma return Infinity for 0, -1, ...",
     "created_at": "2008-01-24T16:40:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1913",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_012121.json:
 }
 ```
 
-Attachment
+Attachment [1913-gamma_poles.patch](tarball://root/attachments/some-uuid/ticket1913/1913-gamma_poles.patch) by burcin created at 2008-01-24 16:40:29
 
 make gamma return Infinity for 0, -1, ...
 

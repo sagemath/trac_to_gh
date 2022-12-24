@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3636
 archive/issue_comments_025717.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac3636_1.patch](tarball://root/attachments/some-uuid/ticket3636/trac3636_1.patch) by itolkov created at 2008-07-10 21:10:15",
     "created_at": "2008-07-10T21:10:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3636",
     "type": "issue_comment",
@@ -51,7 +51,7 @@ archive/issue_comments_025717.json:
 }
 ```
 
-Attachment
+Attachment [trac3636_1.patch](tarball://root/attachments/some-uuid/ticket3636/trac3636_1.patch) by itolkov created at 2008-07-10 21:10:15
 
 
 
@@ -100,7 +100,7 @@ Michael
 archive/issue_comments_025720.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac3636_2.patch](tarball://root/attachments/some-uuid/ticket3636/trac3636_2.patch) by itolkov created at 2008-07-22 20:01:39",
     "created_at": "2008-07-22T20:01:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3636",
     "type": "issue_comment",
@@ -109,7 +109,7 @@ archive/issue_comments_025720.json:
 }
 ```
 
-Attachment
+Attachment [trac3636_2.patch](tarball://root/attachments/some-uuid/ticket3636/trac3636_2.patch) by itolkov created at 2008-07-22 20:01:39
 
 
 

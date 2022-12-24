@@ -276,7 +276,7 @@ Updated !
 archive/issue_comments_057607.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6962-doctest-fixes.patch](tarball://root/attachments/some-uuid/ticket6962/trac_6962-doctest-fixes.patch) by rlm created at 2009-12-17 21:51:06",
     "created_at": "2009-12-17T21:51:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6962",
     "type": "issue_comment",
@@ -285,7 +285,7 @@ archive/issue_comments_057607.json:
 }
 ```
 
-Attachment
+Attachment [trac_6962-doctest-fixes.patch](tarball://root/attachments/some-uuid/ticket6962/trac_6962-doctest-fixes.patch) by rlm created at 2009-12-17 21:51:06
 
 
 

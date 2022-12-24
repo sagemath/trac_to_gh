@@ -59,7 +59,7 @@ an attempt at implementing the MMA style, for testing only
 archive/issue_comments_050703.json:
 ```json
 {
-    "body": "Attachment\n\nattachment:trac_6344-mma_style_attempt.patch implements an approximation to MMA style. It is just for testing, needs much more work for inclusion.\n\nIt doesn't look good in text only mode:\n\n\n```\nsage: f = function('f')\nsage: f(x).derivative(x,3)\nf^{(3)}(x)\n```\n",
+    "body": "Attachment [trac_6344-mma_style_attempt.patch](tarball://root/attachments/some-uuid/ticket6344/trac_6344-mma_style_attempt.patch) by burcin created at 2009-06-24 21:49:13\n\nattachment:trac_6344-mma_style_attempt.patch implements an approximation to MMA style. It is just for testing, needs much more work for inclusion.\n\nIt doesn't look good in text only mode:\n\n\n```\nsage: f = function('f')\nsage: f(x).derivative(x,3)\nf^{(3)}(x)\n```\n",
     "created_at": "2009-06-24T21:49:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6344",
     "type": "issue_comment",
@@ -68,7 +68,7 @@ archive/issue_comments_050703.json:
 }
 ```
 
-Attachment
+Attachment [trac_6344-mma_style_attempt.patch](tarball://root/attachments/some-uuid/ticket6344/trac_6344-mma_style_attempt.patch) by burcin created at 2009-06-24 21:49:13
 
 attachment:trac_6344-mma_style_attempt.patch implements an approximation to MMA style. It is just for testing, needs much more work for inclusion.
 
@@ -195,7 +195,7 @@ Set assignee to burcin.
 archive/issue_comments_050707.json:
 ```json
 {
-    "body": "Attachment\n\nchange printing of symbolic derivatives",
+    "body": "Attachment [trac_6344-symbolic_derivative_print.patch](tarball://root/attachments/some-uuid/ticket6344/trac_6344-symbolic_derivative_print.patch) by burcin created at 2009-07-14 21:39:39\n\nchange printing of symbolic derivatives",
     "created_at": "2009-07-14T21:39:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6344",
     "type": "issue_comment",
@@ -204,7 +204,7 @@ archive/issue_comments_050707.json:
 }
 ```
 
-Attachment
+Attachment [trac_6344-symbolic_derivative_print.patch](tarball://root/attachments/some-uuid/ticket6344/trac_6344-symbolic_derivative_print.patch) by burcin created at 2009-07-14 21:39:39
 
 change printing of symbolic derivatives
 

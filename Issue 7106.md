@@ -36,7 +36,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7106
 archive/issue_comments_058827.json:
 ```json
 {
-    "body": "Attachment\n\nDepends on #7104",
+    "body": "Attachment [trac_7106.patch](tarball://root/attachments/some-uuid/ticket7106/trac_7106.patch) by hgranath created at 2009-10-04 05:47:19\n\nDepends on #7104",
     "created_at": "2009-10-04T05:47:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7106",
     "type": "issue_comment",
@@ -45,7 +45,7 @@ archive/issue_comments_058827.json:
 }
 ```
 
-Attachment
+Attachment [trac_7106.patch](tarball://root/attachments/some-uuid/ticket7106/trac_7106.patch) by hgranath created at 2009-10-04 05:47:19
 
 Depends on #7104
 
@@ -164,7 +164,7 @@ Changing component from documentation to notebook.
 archive/issue_comments_058834.json:
 ```json
 {
-    "body": "Attachment\n\nRebased for sagenb 0.4.  Apply only this patch to the sagenb repository.",
+    "body": "Attachment [trac_7106-paren_match_doc.patch](tarball://root/attachments/some-uuid/ticket7106/trac_7106-paren_match_doc.patch) by mpatel created at 2009-11-01 12:12:26\n\nRebased for sagenb 0.4.  Apply only this patch to the sagenb repository.",
     "created_at": "2009-11-01T12:12:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7106",
     "type": "issue_comment",
@@ -173,7 +173,7 @@ archive/issue_comments_058834.json:
 }
 ```
 
-Attachment
+Attachment [trac_7106-paren_match_doc.patch](tarball://root/attachments/some-uuid/ticket7106/trac_7106-paren_match_doc.patch) by mpatel created at 2009-11-01 12:12:26
 
 Rebased for sagenb 0.4.  Apply only this patch to the sagenb repository.
 
@@ -202,7 +202,7 @@ The [attachment:trac_7106-paren_match_doc.patch new patch] applies to sagenb 0.4
 archive/issue_comments_058836.json:
 ```json
 {
-    "body": "Attachment\n\nFix Sphinx warning, better spacing. Apply only this patch to the sagenb repository.",
+    "body": "Attachment [trac_7106-paren_match_doc_v2.patch](tarball://root/attachments/some-uuid/ticket7106/trac_7106-paren_match_doc_v2.patch) by mpatel created at 2009-11-01 13:29:47\n\nFix Sphinx warning, better spacing. Apply only this patch to the sagenb repository.",
     "created_at": "2009-11-01T13:29:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7106",
     "type": "issue_comment",
@@ -211,7 +211,7 @@ archive/issue_comments_058836.json:
 }
 ```
 
-Attachment
+Attachment [trac_7106-paren_match_doc_v2.patch](tarball://root/attachments/some-uuid/ticket7106/trac_7106-paren_match_doc_v2.patch) by mpatel created at 2009-11-01 13:29:47
 
 Fix Sphinx warning, better spacing. Apply only this patch to the sagenb repository.
 

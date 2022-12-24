@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9725
 archive/issue_comments_095005.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [tour.rst](tarball://root/attachments/some-uuid/ticket9725/tour.rst) by phil created at 2010-08-11 16:46:47",
     "created_at": "2010-08-11T16:46:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9725",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_095005.json:
 }
 ```
 
-Attachment
+Attachment [tour.rst](tarball://root/attachments/some-uuid/ticket9725/tour.rst) by phil created at 2010-08-11 16:46:47
 
 
 
@@ -53,7 +53,7 @@ Attachment
 archive/issue_comments_095006.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [tour_assignment.rst](tarball://root/attachments/some-uuid/ticket9725/tour_assignment.rst) by phil created at 2010-08-12 01:11:27",
     "created_at": "2010-08-12T01:11:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9725",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_095006.json:
 }
 ```
 
-Attachment
+Attachment [tour_assignment.rst](tarball://root/attachments/some-uuid/ticket9725/tour_assignment.rst) by phil created at 2010-08-12 01:11:27
 
 
 
@@ -71,7 +71,7 @@ Attachment
 archive/issue_comments_095007.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [tour_help.rst](tarball://root/attachments/some-uuid/ticket9725/tour_help.rst) by phil created at 2010-08-12 01:12:47",
     "created_at": "2010-08-12T01:12:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9725",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_095007.json:
 }
 ```
 
-Attachment
+Attachment [tour_help.rst](tarball://root/attachments/some-uuid/ticket9725/tour_help.rst) by phil created at 2010-08-12 01:12:47
 
 
 
@@ -191,7 +191,7 @@ Michael
 archive/issue_comments_095013.json:
 ```json
 {
-    "body": "Attachment\n\nEin paar Hinweise/Typos:\n\nlangfristige >>Zeile<< von Sage -> Ich denke ihr meint >>Ziele<< =)\n\ngef\u00fchrte Tour -> Ich w\u00fcrde guided mit \"begleitend\", statt mit \"gef\u00fchrt\" \u00fcbersetzen macht im Deutschen mehr Sinn...\n\nIch glaube statt \"Hilfe erhalten\", w\u00fcrde ich nur \"Hilfe\" schreiben \n\nEuler\u2019s Method for Systems of Differential Equations\u00b6 -> warum wurde das nicht \u00fcbersetzt?\n\nDas sind nur ein paar Sachen die mir beim schnellen durchlesen aufgefallen sind. Aber ansich eine gute \u00dcbersetzung. bravo!\n\ngreez \nmaldun",
+    "body": "Attachment [interactive_shell.rst](tarball://root/attachments/some-uuid/ticket9725/interactive_shell.rst) by maldun created at 2010-08-23 10:02:04\n\nEin paar Hinweise/Typos:\n\nlangfristige >>Zeile<< von Sage -> Ich denke ihr meint >>Ziele<< =)\n\ngef\u00fchrte Tour -> Ich w\u00fcrde guided mit \"begleitend\", statt mit \"gef\u00fchrt\" \u00fcbersetzen macht im Deutschen mehr Sinn...\n\nIch glaube statt \"Hilfe erhalten\", w\u00fcrde ich nur \"Hilfe\" schreiben \n\nEuler\u2019s Method for Systems of Differential Equations\u00b6 -> warum wurde das nicht \u00fcbersetzt?\n\nDas sind nur ein paar Sachen die mir beim schnellen durchlesen aufgefallen sind. Aber ansich eine gute \u00dcbersetzung. bravo!\n\ngreez \nmaldun",
     "created_at": "2010-08-23T10:02:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9725",
     "type": "issue_comment",
@@ -200,7 +200,7 @@ archive/issue_comments_095013.json:
 }
 ```
 
-Attachment
+Attachment [interactive_shell.rst](tarball://root/attachments/some-uuid/ticket9725/interactive_shell.rst) by maldun created at 2010-08-23 10:02:04
 
 Ein paar Hinweise/Typos:
 
@@ -248,7 +248,7 @@ Phil
 archive/issue_comments_095015.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [interfaces.rst](tarball://root/attachments/some-uuid/ticket9725/interfaces.rst) by mardaus created at 2010-08-25 16:23:54",
     "created_at": "2010-08-25T16:23:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9725",
     "type": "issue_comment",
@@ -257,7 +257,7 @@ archive/issue_comments_095015.json:
 }
 ```
 
-Attachment
+Attachment [interfaces.rst](tarball://root/attachments/some-uuid/ticket9725/interfaces.rst) by mardaus created at 2010-08-25 16:23:54
 
 
 
@@ -266,7 +266,7 @@ Attachment
 archive/issue_comments_095016.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [latex.rst](tarball://root/attachments/some-uuid/ticket9725/latex.rst) by mardaus created at 2010-09-06 17:27:03",
     "created_at": "2010-09-06T17:27:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9725",
     "type": "issue_comment",
@@ -275,7 +275,7 @@ archive/issue_comments_095016.json:
 }
 ```
 
-Attachment
+Attachment [latex.rst](tarball://root/attachments/some-uuid/ticket9725/latex.rst) by mardaus created at 2010-09-06 17:27:03
 
 
 
@@ -302,7 +302,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_095018.json:
 ```json
 {
-    "body": "Attachment\n\nProofread version of Phil's parts",
+    "body": "Attachment [sage-proofread.zip](tarball://root/attachments/some-uuid/ticket9725/sage-proofread.zip) by mardaus created at 2010-10-11 13:59:02\n\nProofread version of Phil's parts",
     "created_at": "2010-10-11T13:59:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9725",
     "type": "issue_comment",
@@ -311,7 +311,7 @@ archive/issue_comments_095018.json:
 }
 ```
 
-Attachment
+Attachment [sage-proofread.zip](tarball://root/attachments/some-uuid/ticket9725/sage-proofread.zip) by mardaus created at 2010-10-11 13:59:02
 
 Proofread version of Phil's parts
 
@@ -322,7 +322,7 @@ Proofread version of Phil's parts
 archive/issue_comments_095019.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [tutorial-de.tgz](tarball://root/attachments/some-uuid/ticket9725/tutorial-de.tgz) by phil created at 2010-11-06 16:43:17",
     "created_at": "2010-11-06T16:43:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9725",
     "type": "issue_comment",
@@ -331,7 +331,7 @@ archive/issue_comments_095019.json:
 }
 ```
 
-Attachment
+Attachment [tutorial-de.tgz](tarball://root/attachments/some-uuid/ticket9725/tutorial-de.tgz) by phil created at 2010-11-06 16:43:17
 
 
 
@@ -382,7 +382,7 @@ Sieht gut aus! Ich gebe dem ticket positive review bis auf den tippfehler. Wenn 
 archive/issue_comments_095022.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9725.patch](tarball://root/attachments/some-uuid/ticket9725/trac_9725.patch) by phil created at 2011-05-11 18:24:25",
     "created_at": "2011-05-11T18:24:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9725",
     "type": "issue_comment",
@@ -391,7 +391,7 @@ archive/issue_comments_095022.json:
 }
 ```
 
-Attachment
+Attachment [trac_9725.patch](tarball://root/attachments/some-uuid/ticket9725/trac_9725.patch) by phil created at 2011-05-11 18:24:25
 
 
 
@@ -673,7 +673,7 @@ Apply to SAGE_ROOT repository
 archive/issue_comments_095035.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9725_TESTDIRS.patch](tarball://root/attachments/some-uuid/ticket9725/9725_TESTDIRS.patch) by jdemeyer created at 2011-05-24 12:27:09",
     "created_at": "2011-05-24T12:27:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9725",
     "type": "issue_comment",
@@ -682,7 +682,7 @@ archive/issue_comments_095035.json:
 }
 ```
 
-Attachment
+Attachment [9725_TESTDIRS.patch](tarball://root/attachments/some-uuid/ticket9725/9725_TESTDIRS.patch) by jdemeyer created at 2011-05-24 12:27:09
 
 
 
@@ -838,7 +838,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_095042.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9725B.patch](tarball://root/attachments/some-uuid/ticket9725/trac_9725B.patch) by phil created at 2011-05-26 21:16:38",
     "created_at": "2011-05-26T21:16:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9725",
     "type": "issue_comment",
@@ -847,7 +847,7 @@ archive/issue_comments_095042.json:
 }
 ```
 
-Attachment
+Attachment [trac_9725B.patch](tarball://root/attachments/some-uuid/ticket9725/trac_9725B.patch) by phil created at 2011-05-26 21:16:38
 
 
 
@@ -1073,7 +1073,7 @@ Well, of course you can only get the required output if you have the GAP group d
 archive/issue_comments_095051.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9725C.patch](tarball://root/attachments/some-uuid/ticket9725/trac_9725C.patch) by phil created at 2011-05-31 13:30:47",
     "created_at": "2011-05-31T13:30:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9725",
     "type": "issue_comment",
@@ -1082,7 +1082,7 @@ archive/issue_comments_095051.json:
 }
 ```
 
-Attachment
+Attachment [trac_9725C.patch](tarball://root/attachments/some-uuid/ticket9725/trac_9725C.patch) by phil created at 2011-05-31 13:30:47
 
 
 

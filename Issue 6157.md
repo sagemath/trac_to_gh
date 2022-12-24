@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6157
 archive/issue_comments_049121.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good!",
+    "body": "Attachment [trac-6157-implicit_plot3d-docs.patch](tarball://root/attachments/some-uuid/ticket6157/trac-6157-implicit_plot3d-docs.patch) by AlexGhitza created at 2009-05-30 09:02:07\n\nLooks good!",
     "created_at": "2009-05-30T09:02:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6157",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_049121.json:
 }
 ```
 
-Attachment
+Attachment [trac-6157-implicit_plot3d-docs.patch](tarball://root/attachments/some-uuid/ticket6157/trac-6157-implicit_plot3d-docs.patch) by AlexGhitza created at 2009-05-30 09:02:07
 
 Looks good!
 

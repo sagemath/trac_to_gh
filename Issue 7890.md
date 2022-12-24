@@ -95,7 +95,7 @@ Changing status from new to needs_work.
 archive/issue_comments_068634.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [13590.patch](tarball://root/attachments/some-uuid/ticket7890/13590.patch) by jlopez created at 2010-01-10 15:55:11",
     "created_at": "2010-01-10T15:55:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7890",
     "type": "issue_comment",
@@ -104,7 +104,7 @@ archive/issue_comments_068634.json:
 }
 ```
 
-Attachment
+Attachment [13590.patch](tarball://root/attachments/some-uuid/ticket7890/13590.patch) by jlopez created at 2010-01-10 15:55:11
 
 
 
@@ -149,7 +149,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_068637.json:
 ```json
 {
-    "body": "Attachment\n\nThe patches should be applied in order.\nThis provides conversion of finite fields, cyclotomic fields and their elements, as well as gap matrices.",
+    "body": "Attachment [13591.patch](tarball://root/attachments/some-uuid/ticket7890/13591.patch) by jlopez created at 2010-01-12 00:13:29\n\nThe patches should be applied in order.\nThis provides conversion of finite fields, cyclotomic fields and their elements, as well as gap matrices.",
     "created_at": "2010-01-12T00:13:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7890",
     "type": "issue_comment",
@@ -158,7 +158,7 @@ archive/issue_comments_068637.json:
 }
 ```
 
-Attachment
+Attachment [13591.patch](tarball://root/attachments/some-uuid/ticket7890/13591.patch) by jlopez created at 2010-01-12 00:13:29
 
 The patches should be applied in order.
 This provides conversion of finite fields, cyclotomic fields and their elements, as well as gap matrices.
@@ -188,7 +188,7 @@ Simplification of one of the previous functions
 archive/issue_comments_068639.json:
 ```json
 {
-    "body": "Attachment\n\nFurther simplifications and merging. Apply only this patch.",
+    "body": "Attachment [13592.patch](tarball://root/attachments/some-uuid/ticket7890/13592.patch) by jlopez created at 2010-01-12 00:39:06\n\nFurther simplifications and merging. Apply only this patch.",
     "created_at": "2010-01-12T00:39:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7890",
     "type": "issue_comment",
@@ -197,7 +197,7 @@ archive/issue_comments_068639.json:
 }
 ```
 
-Attachment
+Attachment [13592.patch](tarball://root/attachments/some-uuid/ticket7890/13592.patch) by jlopez created at 2010-01-12 00:39:06
 
 Further simplifications and merging. Apply only this patch.
 
@@ -226,7 +226,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_068641.json:
 ```json
 {
-    "body": "Attachment\n\nLast patch applied fine to sage-4.3.a0 on a 64bit ubuntu machine, but the following tests failed:\n\n\n```\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/groups/perm_gps/permgroup.py\"\n        sage -t  \"devel/sage/sage/structure/parent.pyx\"\n        sage -t  \"devel/sage/sage/structure/parent_old.pyx\"\n        sage -t  \"devel/sage/sage/misc/sagedoc.py\"\n        sage -t  \"devel/sage/sage/misc/sage_eval.py\"\n\n```\n",
+    "body": "Attachment [gap_to_sage.patch](tarball://root/attachments/some-uuid/ticket7890/gap_to_sage.patch) by wdj created at 2010-01-12 03:06:28\n\nLast patch applied fine to sage-4.3.a0 on a 64bit ubuntu machine, but the following tests failed:\n\n\n```\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/groups/perm_gps/permgroup.py\"\n        sage -t  \"devel/sage/sage/structure/parent.pyx\"\n        sage -t  \"devel/sage/sage/structure/parent_old.pyx\"\n        sage -t  \"devel/sage/sage/misc/sagedoc.py\"\n        sage -t  \"devel/sage/sage/misc/sage_eval.py\"\n\n```\n",
     "created_at": "2010-01-12T03:06:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7890",
     "type": "issue_comment",
@@ -235,7 +235,7 @@ archive/issue_comments_068641.json:
 }
 ```
 
-Attachment
+Attachment [gap_to_sage.patch](tarball://root/attachments/some-uuid/ticket7890/gap_to_sage.patch) by wdj created at 2010-01-12 03:06:28
 
 Last patch applied fine to sage-4.3.a0 on a 64bit ubuntu machine, but the following tests failed:
 

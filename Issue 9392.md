@@ -53,7 +53,7 @@ Changing status from new to needs_review.
 archive/issue_comments_089416.json:
 ```json
 {
-    "body": "Attachment\n\nHere it is !\n\nNathann",
+    "body": "Attachment [trac_9392.patch](tarball://root/attachments/some-uuid/ticket9392/trac_9392.patch) by ncohen created at 2010-06-30 05:47:05\n\nHere it is !\n\nNathann",
     "created_at": "2010-06-30T05:47:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9392",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_089416.json:
 }
 ```
 
-Attachment
+Attachment [trac_9392.patch](tarball://root/attachments/some-uuid/ticket9392/trac_9392.patch) by ncohen created at 2010-06-30 05:47:05
 
 Here it is !
 
@@ -111,7 +111,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_089419.json:
 ```json
 {
-    "body": "Attachment\n\nFixes non-optional doctesting. Apply on top of Nathann's patch.",
+    "body": "Attachment [trac_9392-first_reviewer.patch](tarball://root/attachments/some-uuid/ticket9392/trac_9392-first_reviewer.patch) by leif created at 2010-07-04 20:16:37\n\nFixes non-optional doctesting. Apply on top of Nathann's patch.",
     "created_at": "2010-07-04T20:16:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9392",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_089419.json:
 }
 ```
 
-Attachment
+Attachment [trac_9392-first_reviewer.patch](tarball://root/attachments/some-uuid/ticket9392/trac_9392-first_reviewer.patch) by leif created at 2010-07-04 20:16:37
 
 Fixes non-optional doctesting. Apply on top of Nathann's patch.
 

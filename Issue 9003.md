@@ -656,7 +656,7 @@ I can't really think of anything other than seemingly unrelated things affecting
 archive/issue_comments_083277.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9003_rename_doctest.patch](tarball://root/attachments/some-uuid/ticket9003/9003_rename_doctest.patch) by wjp created at 2010-05-27 21:56:49",
     "created_at": "2010-05-27T21:56:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9003",
     "type": "issue_comment",
@@ -665,7 +665,7 @@ archive/issue_comments_083277.json:
 }
 ```
 
-Attachment
+Attachment [9003_rename_doctest.patch](tarball://root/attachments/some-uuid/ticket9003/9003_rename_doctest.patch) by wjp created at 2010-05-27 21:56:49
 
 
 
@@ -882,7 +882,7 @@ Right now in one doctest `QQ^7` is renamed, and in another doctest we depend on 
 archive/issue_comments_083286.json:
 ```json
 {
-    "body": "Attachment\n\napply instead (or additionally, but the first patch is not needed anymore with this one)",
+    "body": "Attachment [trac_9003_rename_doctest_alternate.patch](tarball://root/attachments/some-uuid/ticket9003/trac_9003_rename_doctest_alternate.patch) by GeorgSWeber created at 2010-06-14 18:38:26\n\napply instead (or additionally, but the first patch is not needed anymore with this one)",
     "created_at": "2010-06-14T18:38:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9003",
     "type": "issue_comment",
@@ -891,7 +891,7 @@ archive/issue_comments_083286.json:
 }
 ```
 
-Attachment
+Attachment [trac_9003_rename_doctest_alternate.patch](tarball://root/attachments/some-uuid/ticket9003/trac_9003_rename_doctest_alternate.patch) by GeorgSWeber created at 2010-06-14 18:38:26
 
 apply instead (or additionally, but the first patch is not needed anymore with this one)
 

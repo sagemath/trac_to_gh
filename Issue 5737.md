@@ -51,7 +51,7 @@ add .find() method
 archive/issue_comments_044850.json:
 ```json
 {
-    "body": "Attachment\n\nfix py_real() and py_imag()",
+    "body": "Attachment [trac_5737-02-real_imag.patch](tarball://root/attachments/some-uuid/ticket5737/trac_5737-02-real_imag.patch) by burcin created at 2009-04-10 21:10:24\n\nfix py_real() and py_imag()",
     "created_at": "2009-04-10T21:10:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5737",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_044850.json:
 }
 ```
 
-Attachment
+Attachment [trac_5737-02-real_imag.patch](tarball://root/attachments/some-uuid/ticket5737/trac_5737-02-real_imag.patch) by burcin created at 2009-04-10 21:10:24
 
 fix py_real() and py_imag()
 
@@ -107,7 +107,7 @@ Changing status from new to assigned.
 archive/issue_comments_044853.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5737-03-is_polynomial.patch](tarball://root/attachments/some-uuid/ticket5737/trac_5737-03-is_polynomial.patch) by burcin created at 2009-04-10 21:11:55",
     "created_at": "2009-04-10T21:11:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5737",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_044853.json:
 }
 ```
 
-Attachment
+Attachment [trac_5737-03-is_polynomial.patch](tarball://root/attachments/some-uuid/ticket5737/trac_5737-03-is_polynomial.patch) by burcin created at 2009-04-10 21:11:55
 
 
 

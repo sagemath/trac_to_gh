@@ -63,7 +63,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4627
 archive/issue_comments_034795.json:
 ```json
 {
-    "body": "Attachment\n\nWhat is the credit situation here?\n\nCheers,\n\nMichael",
+    "body": "Attachment [4627-ncalexan-hnf-crt-1.patch](tarball://root/attachments/some-uuid/ticket4627/4627-ncalexan-hnf-crt-1.patch) by mabshoff created at 2008-11-26 23:13:06\n\nWhat is the credit situation here?\n\nCheers,\n\nMichael",
     "created_at": "2008-11-26T23:13:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4627",
     "type": "issue_comment",
@@ -72,7 +72,7 @@ archive/issue_comments_034795.json:
 }
 ```
 
-Attachment
+Attachment [4627-ncalexan-hnf-crt-1.patch](tarball://root/attachments/some-uuid/ticket4627/4627-ncalexan-hnf-crt-1.patch) by mabshoff created at 2008-11-26 23:13:06
 
 What is the credit situation here?
 
@@ -107,7 +107,7 @@ Nick, what is a good test case to see the performance improvement?
 archive/issue_comments_034797.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-4627-v2.patch](tarball://root/attachments/some-uuid/ticket4627/trac-4627-v2.patch) by craigcitro created at 2008-11-27 04:18:30",
     "created_at": "2008-11-27T04:18:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4627",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_034797.json:
 }
 ```
 
-Attachment
+Attachment [trac-4627-v2.patch](tarball://root/attachments/some-uuid/ticket4627/trac-4627-v2.patch) by craigcitro created at 2008-11-27 04:18:30
 
 
 

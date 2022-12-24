@@ -67,7 +67,7 @@ Need to remove hardcoded home directory.
 archive/issue_comments_081380.json:
 ```json
 {
-    "body": "Attachment\n\nI've removed the hardcoded path.",
+    "body": "Attachment [trac_8855-sage_env.patch](tarball://root/attachments/some-uuid/ticket8855/trac_8855-sage_env.patch) by mhansen created at 2010-05-25 02:09:52\n\nI've removed the hardcoded path.",
     "created_at": "2010-05-25T02:09:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8855",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_081380.json:
 }
 ```
 
-Attachment
+Attachment [trac_8855-sage_env.patch](tarball://root/attachments/some-uuid/ticket8855/trac_8855-sage_env.patch) by mhansen created at 2010-05-25 02:09:52
 
 I've removed the hardcoded path.
 

@@ -49,7 +49,7 @@ deletes a view duplicate lines
 archive/issue_comments_036614.json:
 ```json
 {
-    "body": "Attachment\n\n3.3 is foremost about the ReST transition, so all tickets should be opened against 3.4.\n\nCheers,\n\nMichael",
+    "body": "Attachment [remove-duplicate-code.patch](tarball://root/attachments/some-uuid/ticket4830/remove-duplicate-code.patch) by mabshoff created at 2008-12-19 11:36:26\n\n3.3 is foremost about the ReST transition, so all tickets should be opened against 3.4.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-19T11:36:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4830",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_036614.json:
 }
 ```
 
-Attachment
+Attachment [remove-duplicate-code.patch](tarball://root/attachments/some-uuid/ticket4830/remove-duplicate-code.patch) by mabshoff created at 2008-12-19 11:36:26
 
 3.3 is foremost about the ReST transition, so all tickets should be opened against 3.4.
 

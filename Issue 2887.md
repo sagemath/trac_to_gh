@@ -64,7 +64,7 @@ works fine and looks good.  I say apply.
 archive/issue_comments_019855.json:
 ```json
 {
-    "body": "Attachment\n\nMerged in Sage 3.0.alpha4",
+    "body": "Attachment [sage-2887.patch](tarball://root/attachments/some-uuid/ticket2887/sage-2887.patch) by mabshoff created at 2008-04-12 09:58:26\n\nMerged in Sage 3.0.alpha4",
     "created_at": "2008-04-12T09:58:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2887",
     "type": "issue_comment",
@@ -73,7 +73,7 @@ archive/issue_comments_019855.json:
 }
 ```
 
-Attachment
+Attachment [sage-2887.patch](tarball://root/attachments/some-uuid/ticket2887/sage-2887.patch) by mabshoff created at 2008-04-12 09:58:26
 
 Merged in Sage 3.0.alpha4
 

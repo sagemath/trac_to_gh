@@ -127,7 +127,7 @@ No, I haven't fixed it.  It's one of those low-hanging, one-line fixes, though.
 archive/issue_comments_006207.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_1013.patch](tarball://root/attachments/some-uuid/ticket1013/trac_1013.patch) by mhansen created at 2010-08-26 20:11:50",
     "created_at": "2010-08-26T20:11:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1013",
     "type": "issue_comment",
@@ -136,7 +136,7 @@ archive/issue_comments_006207.json:
 }
 ```
 
-Attachment
+Attachment [trac_1013.patch](tarball://root/attachments/some-uuid/ticket1013/trac_1013.patch) by mhansen created at 2010-08-26 20:11:50
 
 
 
@@ -163,7 +163,7 @@ Changing status from new to needs_review.
 archive/issue_comments_006209.json:
 ```json
 {
-    "body": "Attachment\n\nSame patch as before but with trailing whitespace removed",
+    "body": "Attachment [trac_1013-whitespace_removed.patch](tarball://root/attachments/some-uuid/ticket1013/trac_1013-whitespace_removed.patch) by davidloeffler created at 2012-03-14 15:30:59\n\nSame patch as before but with trailing whitespace removed",
     "created_at": "2012-03-14T15:30:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1013",
     "type": "issue_comment",
@@ -172,7 +172,7 @@ archive/issue_comments_006209.json:
 }
 ```
 
-Attachment
+Attachment [trac_1013-whitespace_removed.patch](tarball://root/attachments/some-uuid/ticket1013/trac_1013-whitespace_removed.patch) by davidloeffler created at 2012-03-14 15:30:59
 
 Same patch as before but with trailing whitespace removed
 
@@ -282,7 +282,7 @@ Rebase to 5.0.beta10
 archive/issue_comments_006215.json:
 ```json
 {
-    "body": "Attachment\n\nApply trac_1013-rebase.patch\n\nHere's the rebase. Since I didn't actually do anything, just hg import / qpush / refresh / export, I think it's valid for me just to restate the positive review.",
+    "body": "Attachment [trac_1013-rebase.patch](tarball://root/attachments/some-uuid/ticket1013/trac_1013-rebase.patch) by davidloeffler created at 2012-03-25 13:33:09\n\nApply trac_1013-rebase.patch\n\nHere's the rebase. Since I didn't actually do anything, just hg import / qpush / refresh / export, I think it's valid for me just to restate the positive review.",
     "created_at": "2012-03-25T13:33:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1013",
     "type": "issue_comment",
@@ -291,7 +291,7 @@ archive/issue_comments_006215.json:
 }
 ```
 
-Attachment
+Attachment [trac_1013-rebase.patch](tarball://root/attachments/some-uuid/ticket1013/trac_1013-rebase.patch) by davidloeffler created at 2012-03-25 13:33:09
 
 Apply trac_1013-rebase.patch
 

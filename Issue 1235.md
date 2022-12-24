@@ -253,7 +253,7 @@ which could be doable for many analytically defined functions at least.
 archive/issue_comments_007708.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-1235.patch](tarball://root/attachments/some-uuid/ticket1235/trac-1235.patch) by was created at 2007-12-08 08:43:05",
     "created_at": "2007-12-08T08:43:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1235",
     "type": "issue_comment",
@@ -262,7 +262,7 @@ archive/issue_comments_007708.json:
 }
 ```
 
-Attachment
+Attachment [trac-1235.patch](tarball://root/attachments/some-uuid/ticket1235/trac-1235.patch) by was created at 2007-12-08 08:43:05
 
 
 
@@ -271,7 +271,7 @@ Attachment
 archive/issue_comments_007709.json:
 ```json
 {
-    "body": "Attachment\n\nSeems good to me. Tested the patch (both parts).\nIt appears to work robustly in the cases I tried.",
+    "body": "Attachment [trac-1235-part2.patch](tarball://root/attachments/some-uuid/ticket1235/trac-1235-part2.patch) by jkantor created at 2007-12-08 09:39:38\n\nSeems good to me. Tested the patch (both parts).\nIt appears to work robustly in the cases I tried.",
     "created_at": "2007-12-08T09:39:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1235",
     "type": "issue_comment",
@@ -280,7 +280,7 @@ archive/issue_comments_007709.json:
 }
 ```
 
-Attachment
+Attachment [trac-1235-part2.patch](tarball://root/attachments/some-uuid/ticket1235/trac-1235-part2.patch) by jkantor created at 2007-12-08 09:39:38
 
 Seems good to me. Tested the patch (both parts).
 It appears to work robustly in the cases I tried.
@@ -328,7 +328,7 @@ Merged in 2.9.alpha2.
 archive/issue_comments_007712.json:
 ```json
 {
-    "body": "Attachment\n\nThis fixes a doctest failure on Redhat Linux 32-bit.",
+    "body": "Attachment [trac-1235-doctest_fix.patch](tarball://root/attachments/some-uuid/ticket1235/trac-1235-doctest_fix.patch) by was created at 2007-12-10 15:34:12\n\nThis fixes a doctest failure on Redhat Linux 32-bit.",
     "created_at": "2007-12-10T15:34:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1235",
     "type": "issue_comment",
@@ -337,7 +337,7 @@ archive/issue_comments_007712.json:
 }
 ```
 
-Attachment
+Attachment [trac-1235-doctest_fix.patch](tarball://root/attachments/some-uuid/ticket1235/trac-1235-doctest_fix.patch) by was created at 2007-12-10 15:34:12
 
 This fixes a doctest failure on Redhat Linux 32-bit.
 

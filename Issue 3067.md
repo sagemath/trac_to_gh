@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3067
 archive/issue_comments_021168.json:
 ```json
 {
-    "body": "Attachment\n\nI deleted this function since it looks like sage doesn't use Numeric anymore. Or I could do a conditional import. Thoughts?",
+    "body": "Attachment [3067.patch](tarball://root/attachments/some-uuid/ticket3067/3067.patch) by dfdeshom created at 2008-04-30 18:54:00\n\nI deleted this function since it looks like sage doesn't use Numeric anymore. Or I could do a conditional import. Thoughts?",
     "created_at": "2008-04-30T18:54:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3067",
     "type": "issue_comment",
@@ -51,7 +51,7 @@ archive/issue_comments_021168.json:
 }
 ```
 
-Attachment
+Attachment [3067.patch](tarball://root/attachments/some-uuid/ticket3067/3067.patch) by dfdeshom created at 2008-04-30 18:54:00
 
 I deleted this function since it looks like sage doesn't use Numeric anymore. Or I could do a conditional import. Thoughts?
 

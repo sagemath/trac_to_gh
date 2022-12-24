@@ -47,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9023
 archive/issue_comments_083482.json:
 ```json
 {
-    "body": "Attachment\n\nMercurial patch to build GHMM 64-bit on any operating system.",
+    "body": "Attachment [ghmm-64-bit-fix.patch](tarball://root/attachments/some-uuid/ticket9023/ghmm-64-bit-fix.patch) by drkirkby created at 2010-05-23 21:37:46\n\nMercurial patch to build GHMM 64-bit on any operating system.",
     "created_at": "2010-05-23T21:37:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9023",
     "type": "issue_comment",
@@ -56,7 +56,7 @@ archive/issue_comments_083482.json:
 }
 ```
 
-Attachment
+Attachment [ghmm-64-bit-fix.patch](tarball://root/attachments/some-uuid/ticket9023/ghmm-64-bit-fix.patch) by drkirkby created at 2010-05-23 21:37:46
 
 Mercurial patch to build GHMM 64-bit on any operating system.
 

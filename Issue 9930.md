@@ -63,7 +63,7 @@ Changing status from new to needs_review.
 archive/issue_comments_098889.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9931_ell_point_pari.patch](tarball://root/attachments/some-uuid/ticket9931/9931_ell_point_pari.patch) by jdemeyer created at 2010-09-19 12:18:04",
     "created_at": "2010-09-19T12:18:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9930",
     "type": "issue_comment",
@@ -72,7 +72,7 @@ archive/issue_comments_098889.json:
 }
 ```
 
-Attachment
+Attachment [9931_ell_point_pari.patch](tarball://root/attachments/some-uuid/ticket9931/9931_ell_point_pari.patch) by jdemeyer created at 2010-09-19 12:18:04
 
 
 

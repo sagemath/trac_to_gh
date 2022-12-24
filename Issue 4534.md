@@ -49,7 +49,7 @@ Changing status from new to assigned.
 archive/issue_comments_033782.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-4534.patch](tarball://root/attachments/some-uuid/ticket4534/trac-4534.patch) by craigcitro created at 2008-11-16 13:01:26",
     "created_at": "2008-11-16T13:01:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4534",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_033782.json:
 }
 ```
 
-Attachment
+Attachment [trac-4534.patch](tarball://root/attachments/some-uuid/ticket4534/trac-4534.patch) by craigcitro created at 2008-11-16 13:01:26
 
 
 
@@ -123,7 +123,7 @@ Patch coming right up.
 archive/issue_comments_033786.json:
 ```json
 {
-    "body": "Attachment\n\nNew patch, which should be much better. Unfortunately, it touches `integer.pxd`, so it takes a while to rebuild.",
+    "body": "Attachment [trac-4534-v2.patch](tarball://root/attachments/some-uuid/ticket4534/trac-4534-v2.patch) by craigcitro created at 2008-11-17 20:43:52\n\nNew patch, which should be much better. Unfortunately, it touches `integer.pxd`, so it takes a while to rebuild.",
     "created_at": "2008-11-17T20:43:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4534",
     "type": "issue_comment",
@@ -132,7 +132,7 @@ archive/issue_comments_033786.json:
 }
 ```
 
-Attachment
+Attachment [trac-4534-v2.patch](tarball://root/attachments/some-uuid/ticket4534/trac-4534-v2.patch) by craigcitro created at 2008-11-17 20:43:52
 
 New patch, which should be much better. Unfortunately, it touches `integer.pxd`, so it takes a while to rebuild.
 

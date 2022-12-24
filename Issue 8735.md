@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8735
 archive/issue_comments_079892.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8735-poset_size_cardinality-fh.patch](tarball://root/attachments/some-uuid/ticket8735/trac_8735-poset_size_cardinality-fh.patch) by hivert created at 2010-04-21 20:50:49",
     "created_at": "2010-04-21T20:50:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8735",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_079892.json:
 }
 ```
 
-Attachment
+Attachment [trac_8735-poset_size_cardinality-fh.patch](tarball://root/attachments/some-uuid/ticket8735/trac_8735-poset_size_cardinality-fh.patch) by hivert created at 2010-04-21 20:50:49
 
 
 

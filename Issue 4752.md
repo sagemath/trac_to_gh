@@ -98,7 +98,7 @@ It may be that in the upgrade of scipy that something changed with the the scipy
 archive/issue_comments_035959.json:
 ```json
 {
-    "body": "Attachment\n\nThe segfault problem is because scipy just doesn't like multiple points with the same x,y coordinates and different z coordinates. The attached patch fixes that.\n\n```\nsage: pts =[(-4/5, -2/5, -2/5), (-4/5, -2/5, 2/5), (-4/5, 2/5, -2/5), (-4/5, 2/5, 2/5), (-2/5, -4/5, -2/5), (-2/5, -4/5, 2/5), (-2/5, -2/5, -4/5), (-2/5, -2/5, 4/5), (-2/5, 2/5, -4/5), (-2/5, 2/5, 4/5), (-2/5, 4/5, -2/5), (-2/5, 4/5, 2/5), (2/5, -4/5, -2/5), (2/5, -4/5, 2/5), (2/5, -2/5, -4/5), (2/5, -2/5, 4/5), (2/5, 2/5, -4/5), (2/5, 2/5, 4/5), (2/5, 4/5, -2/5), (2/5, 4/5, 2/5), (4/5, -2/5, -2/5), (4/5, -2/5, 2/5), (4/5, 2/5, -2/5), (4/5, 2/5, 2/5)]\nsage: show(list_plot3d(pts))\n```\n\nI still intend to add the radial basis stuff, but this fixes the segfault\n\n\nnow raises an exception while\n\n\n```\nsage: pts =[(-4/5, -2/5, -2/5), (-4/5, -2/5, 2/5), (-4/5, 2/5, -2/5), (-4/5, 2/5, 2/5), (-2/5, -4/5, -2/5), (-2/5, -4/5, 2/5), (-2/5, -2/5, -4/5), (-2/5, -2/5, 4/5), (-2/5, 2/5, -4/5), (-2/5, 2/5, 4/5), (-2/5, 4/5, -2/5), (-2/5, 4/5, 2/5), (2/5, -4/5, -2/5), (2/5, -4/5, 2/5), (2/5, -2/5, -4/5), (2/5, -2/5, 4/5), (2/5, 2/5, -4/5), (2/5, 2/5, 4/5), (2/5, 4/5, -2/5), (2/5, 4/5, 2/5), (4/5, -2/5, -2/5), (4/5, -2/5, 2/5), (4/5, 2/5, -2/5), (4/5, 2/5, 2/5)]\nsage: pts=[a in pts if a[2]>0]\nsage: show(list_plot3d(pts))\n```\n\nworks.",
+    "body": "Attachment [radial.py](tarball://root/attachments/some-uuid/ticket4752/radial.py) by jkantor created at 2008-12-17 06:29:36\n\nThe segfault problem is because scipy just doesn't like multiple points with the same x,y coordinates and different z coordinates. The attached patch fixes that.\n\n```\nsage: pts =[(-4/5, -2/5, -2/5), (-4/5, -2/5, 2/5), (-4/5, 2/5, -2/5), (-4/5, 2/5, 2/5), (-2/5, -4/5, -2/5), (-2/5, -4/5, 2/5), (-2/5, -2/5, -4/5), (-2/5, -2/5, 4/5), (-2/5, 2/5, -4/5), (-2/5, 2/5, 4/5), (-2/5, 4/5, -2/5), (-2/5, 4/5, 2/5), (2/5, -4/5, -2/5), (2/5, -4/5, 2/5), (2/5, -2/5, -4/5), (2/5, -2/5, 4/5), (2/5, 2/5, -4/5), (2/5, 2/5, 4/5), (2/5, 4/5, -2/5), (2/5, 4/5, 2/5), (4/5, -2/5, -2/5), (4/5, -2/5, 2/5), (4/5, 2/5, -2/5), (4/5, 2/5, 2/5)]\nsage: show(list_plot3d(pts))\n```\n\nI still intend to add the radial basis stuff, but this fixes the segfault\n\n\nnow raises an exception while\n\n\n```\nsage: pts =[(-4/5, -2/5, -2/5), (-4/5, -2/5, 2/5), (-4/5, 2/5, -2/5), (-4/5, 2/5, 2/5), (-2/5, -4/5, -2/5), (-2/5, -4/5, 2/5), (-2/5, -2/5, -4/5), (-2/5, -2/5, 4/5), (-2/5, 2/5, -4/5), (-2/5, 2/5, 4/5), (-2/5, 4/5, -2/5), (-2/5, 4/5, 2/5), (2/5, -4/5, -2/5), (2/5, -4/5, 2/5), (2/5, -2/5, -4/5), (2/5, -2/5, 4/5), (2/5, 2/5, -4/5), (2/5, 2/5, 4/5), (2/5, 4/5, -2/5), (2/5, 4/5, 2/5), (4/5, -2/5, -2/5), (4/5, -2/5, 2/5), (4/5, 2/5, -2/5), (4/5, 2/5, 2/5)]\nsage: pts=[a in pts if a[2]>0]\nsage: show(list_plot3d(pts))\n```\n\nworks.",
     "created_at": "2008-12-17T06:29:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4752",
     "type": "issue_comment",
@@ -107,7 +107,7 @@ archive/issue_comments_035959.json:
 }
 ```
 
-Attachment
+Attachment [radial.py](tarball://root/attachments/some-uuid/ticket4752/radial.py) by jkantor created at 2008-12-17 06:29:36
 
 The segfault problem is because scipy just doesn't like multiple points with the same x,y coordinates and different z coordinates. The attached patch fixes that.
 
@@ -155,7 +155,7 @@ what I mean is the first code block raises an exception the second plots.
 archive/issue_comments_035961.json:
 ```json
 {
-    "body": "Attachment\n\npatch to list_plot3d",
+    "body": "Attachment [list_plot_patch.patch](tarball://root/attachments/some-uuid/ticket4752/list_plot_patch.patch) by jkantor created at 2008-12-17 06:31:28\n\npatch to list_plot3d",
     "created_at": "2008-12-17T06:31:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4752",
     "type": "issue_comment",
@@ -164,7 +164,7 @@ archive/issue_comments_035961.json:
 }
 ```
 
-Attachment
+Attachment [list_plot_patch.patch](tarball://root/attachments/some-uuid/ticket4752/list_plot_patch.patch) by jkantor created at 2008-12-17 06:31:28
 
 patch to list_plot3d
 
@@ -195,7 +195,7 @@ Also I added a check that there are more than three points which is required for
 archive/issue_comments_035963.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [list_plot_patch_2.patch](tarball://root/attachments/some-uuid/ticket4752/list_plot_patch_2.patch) by jkantor created at 2008-12-17 07:49:10",
     "created_at": "2008-12-17T07:49:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4752",
     "type": "issue_comment",
@@ -204,7 +204,7 @@ archive/issue_comments_035963.json:
 }
 ```
 
-Attachment
+Attachment [list_plot_patch_2.patch](tarball://root/attachments/some-uuid/ticket4752/list_plot_patch_2.patch) by jkantor created at 2008-12-17 07:49:10
 
 
 
@@ -255,7 +255,7 @@ addresses referree comments rebased against 3.2.3
 archive/issue_comments_035966.json:
 ```json
 {
-    "body": "Attachment\n\nThe 4752_patch fixes the issues raised by the referee and is rebased against 3.2.3",
+    "body": "Attachment [4752_patch.patch](tarball://root/attachments/some-uuid/ticket4752/4752_patch.patch) by jkantor created at 2009-01-23 04:11:15\n\nThe 4752_patch fixes the issues raised by the referee and is rebased against 3.2.3",
     "created_at": "2009-01-23T04:11:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4752",
     "type": "issue_comment",
@@ -264,7 +264,7 @@ archive/issue_comments_035966.json:
 }
 ```
 
-Attachment
+Attachment [4752_patch.patch](tarball://root/attachments/some-uuid/ticket4752/4752_patch.patch) by jkantor created at 2009-01-23 04:11:15
 
 The 4752_patch fixes the issues raised by the referee and is rebased against 3.2.3
 
@@ -393,7 +393,7 @@ Michael
 archive/issue_comments_035972.json:
 ```json
 {
-    "body": "Attachment\n\nThis is a rebase version of Josh's patch. The problem was trivial since only doctests had been added to the docstring. Apply only this patch.",
+    "body": "Attachment [trac_4752_patch.2.patch](tarball://root/attachments/some-uuid/ticket4752/trac_4752_patch.2.patch) by mabshoff created at 2009-02-09 08:13:48\n\nThis is a rebase version of Josh's patch. The problem was trivial since only doctests had been added to the docstring. Apply only this patch.",
     "created_at": "2009-02-09T08:13:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4752",
     "type": "issue_comment",
@@ -402,7 +402,7 @@ archive/issue_comments_035972.json:
 }
 ```
 
-Attachment
+Attachment [trac_4752_patch.2.patch](tarball://root/attachments/some-uuid/ticket4752/trac_4752_patch.2.patch) by mabshoff created at 2009-02-09 08:13:48
 
 This is a rebase version of Josh's patch. The problem was trivial since only doctests had been added to the docstring. Apply only this patch.
 
@@ -485,7 +485,7 @@ Never mind, here's a patch which keeps the doctest.  This one is better, so I'm 
 archive/issue_comments_035976.json:
 ```json
 {
-    "body": "Attachment\n\napply this on top of trac_4752_patch.2.patch",
+    "body": "Attachment [4752-doctest.patch](tarball://root/attachments/some-uuid/ticket4752/4752-doctest.patch) by jhpalmieri created at 2009-02-12 06:08:15\n\napply this on top of trac_4752_patch.2.patch",
     "created_at": "2009-02-12T06:08:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4752",
     "type": "issue_comment",
@@ -494,7 +494,7 @@ archive/issue_comments_035976.json:
 }
 ```
 
-Attachment
+Attachment [4752-doctest.patch](tarball://root/attachments/some-uuid/ticket4752/4752-doctest.patch) by jhpalmieri created at 2009-02-12 06:08:15
 
 apply this on top of trac_4752_patch.2.patch
 

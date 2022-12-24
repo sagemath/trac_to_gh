@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6666
 archive/issue_comments_054708.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6666-part1.patch](tarball://root/attachments/some-uuid/ticket6666/trac_6666-part1.patch) by davidloeffler created at 2013-07-25 17:23:57",
     "created_at": "2013-07-25T17:23:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6666",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_054708.json:
 }
 ```
 
-Attachment
+Attachment [trac_6666-part1.patch](tarball://root/attachments/some-uuid/ticket6666/trac_6666-part1.patch) by davidloeffler created at 2013-07-25 17:23:57
 
 
 
@@ -305,7 +305,7 @@ apply trac_6666-rebased-5.12.patch
 archive/issue_comments_054722.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6666-rebased-5.12.patch](tarball://root/attachments/some-uuid/ticket6666/trac_6666-rebased-5.12.patch) by chapoton created at 2013-11-25 17:58:52",
     "created_at": "2013-11-25T17:58:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6666",
     "type": "issue_comment",
@@ -314,7 +314,7 @@ archive/issue_comments_054722.json:
 }
 ```
 
-Attachment
+Attachment [trac_6666-rebased-5.12.patch](tarball://root/attachments/some-uuid/ticket6666/trac_6666-rebased-5.12.patch) by chapoton created at 2013-11-25 17:58:52
 
 
 

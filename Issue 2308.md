@@ -85,7 +85,7 @@ It is indeed a trivial fix :)
 archive/issue_comments_015364.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_2308.patch](tarball://root/attachments/some-uuid/ticket2308/trac_2308.patch) by rlm created at 2008-02-26 01:55:01",
     "created_at": "2008-02-26T01:55:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2308",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_015364.json:
 }
 ```
 
-Attachment
+Attachment [trac_2308.patch](tarball://root/attachments/some-uuid/ticket2308/trac_2308.patch) by rlm created at 2008-02-26 01:55:01
 
 
 

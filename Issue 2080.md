@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2080
 archive/issue_comments_013468.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-2080-notebook.patch](tarball://root/attachments/some-uuid/ticket2080/trac-2080-notebook.patch) by mabshoff created at 2008-02-07 08:09:22",
     "created_at": "2008-02-07T08:09:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2080",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_013468.json:
 }
 ```
 
-Attachment
+Attachment [trac-2080-notebook.patch](tarball://root/attachments/some-uuid/ticket2080/trac-2080-notebook.patch) by mabshoff created at 2008-02-07 08:09:22
 
 
 

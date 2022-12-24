@@ -67,7 +67,7 @@ Signal handling is omitted for functions/precisions that were clearly and unifor
 archive/issue_comments_068458.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [7879-RR-signal.patch](tarball://root/attachments/some-uuid/ticket7879/7879-RR-signal.patch) by robertwb created at 2010-01-09 19:42:17",
     "created_at": "2010-01-09T19:42:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7879",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_068458.json:
 }
 ```
 
-Attachment
+Attachment [7879-RR-signal.patch](tarball://root/attachments/some-uuid/ticket7879/7879-RR-signal.patch) by robertwb created at 2010-01-09 19:42:17
 
 
 
@@ -374,7 +374,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_068472.json:
 ```json
 {
-    "body": "Attachment\n\nRebased on 4.7",
+    "body": "Attachment [7879-RR-signal.2.patch](tarball://root/attachments/some-uuid/ticket7879/7879-RR-signal.2.patch) by robertwb created at 2011-05-31 08:01:57\n\nRebased on 4.7",
     "created_at": "2011-05-31T08:01:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7879",
     "type": "issue_comment",
@@ -383,7 +383,7 @@ archive/issue_comments_068472.json:
 }
 ```
 
-Attachment
+Attachment [7879-RR-signal.2.patch](tarball://root/attachments/some-uuid/ticket7879/7879-RR-signal.2.patch) by robertwb created at 2011-05-31 08:01:57
 
 Rebased on 4.7
 
@@ -590,7 +590,7 @@ Sage library patch. Robert's patch rebased to Sage 4.7.2.alpha2, because of fuzz
 archive/issue_comments_068480.json:
 ```json
 {
-    "body": "Attachment\n\nDo not apply. Fuzz against Sage 4.7.2.alpha2. For reference only.",
+    "body": "Attachment [trac_7879-harmless_fuzz_2.diff](tarball://root/attachments/some-uuid/ticket7879/trac_7879-harmless_fuzz_2.diff) by leif created at 2011-09-12 15:52:24\n\nDo not apply. Fuzz against Sage 4.7.2.alpha2. For reference only.",
     "created_at": "2011-09-12T15:52:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7879",
     "type": "issue_comment",
@@ -599,7 +599,7 @@ archive/issue_comments_068480.json:
 }
 ```
 
-Attachment
+Attachment [trac_7879-harmless_fuzz_2.diff](tarball://root/attachments/some-uuid/ticket7879/trac_7879-harmless_fuzz_2.diff) by leif created at 2011-09-12 15:52:24
 
 Do not apply. Fuzz against Sage 4.7.2.alpha2. For reference only.
 

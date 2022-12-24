@@ -51,7 +51,7 @@ apply to sagenb repo
 archive/issue_comments_060181.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7249_switch_notebook_to_jinja2.patch](tarball://root/attachments/some-uuid/ticket7249/trac_7249_switch_notebook_to_jinja2.patch) by ddrake created at 2009-10-20 00:32:11",
     "created_at": "2009-10-20T00:32:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7249",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_060181.json:
 }
 ```
 
-Attachment
+Attachment [trac_7249_switch_notebook_to_jinja2.patch](tarball://root/attachments/some-uuid/ticket7249/trac_7249_switch_notebook_to_jinja2.patch) by ddrake created at 2009-10-20 00:32:11
 
 
 
@@ -228,7 +228,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_060190.json:
 ```json
 {
-    "body": "Attachment\n\nHopefully this patch will do the trick and make i18n easier.",
+    "body": "Attachment [trac_7249_jinja2.patch](tarball://root/attachments/some-uuid/ticket7249/trac_7249_jinja2.patch) by timdumol created at 2010-01-06 20:14:01\n\nHopefully this patch will do the trick and make i18n easier.",
     "created_at": "2010-01-06T20:14:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7249",
     "type": "issue_comment",
@@ -237,7 +237,7 @@ archive/issue_comments_060190.json:
 }
 ```
 
-Attachment
+Attachment [trac_7249_jinja2.patch](tarball://root/attachments/some-uuid/ticket7249/trac_7249_jinja2.patch) by timdumol created at 2010-01-06 20:14:01
 
 Hopefully this patch will do the trick and make i18n easier.
 
@@ -248,7 +248,7 @@ Hopefully this patch will do the trick and make i18n easier.
 archive/issue_comments_060191.json:
 ```json
 {
-    "body": "Attachment\n\nFix several doctests.  Replaces previous.",
+    "body": "Attachment [trac_7249_jinja2_v2.patch](tarball://root/attachments/some-uuid/ticket7249/trac_7249_jinja2_v2.patch) by mpatel created at 2010-01-06 21:41:59\n\nFix several doctests.  Replaces previous.",
     "created_at": "2010-01-06T21:41:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7249",
     "type": "issue_comment",
@@ -257,7 +257,7 @@ archive/issue_comments_060191.json:
 }
 ```
 
-Attachment
+Attachment [trac_7249_jinja2_v2.patch](tarball://root/attachments/some-uuid/ticket7249/trac_7249_jinja2_v2.patch) by mpatel created at 2010-01-06 21:41:59
 
 Fix several doctests.  Replaces previous.
 
@@ -336,7 +336,7 @@ Rebased vs. #7835 v2, #7786 v8, etc.  Replaces previous.
 archive/issue_comments_060195.json:
 ```json
 {
-    "body": "Attachment\n\nV3 (really) is rebased against the latest at #7835, #7786.  Besides consistently using UTF-8 for the cell/worksheet system, I'm curious about `Cell.__init__`, where `str`s are `encode`d, not `decode`d.  Again, I'm not very familiar with encodings, so I may well be wrong.  Thanks!",
+    "body": "Attachment [trac_7249_jinja2_v3.patch](tarball://root/attachments/some-uuid/ticket7249/trac_7249_jinja2_v3.patch) by mpatel created at 2010-01-07 02:39:24\n\nV3 (really) is rebased against the latest at #7835, #7786.  Besides consistently using UTF-8 for the cell/worksheet system, I'm curious about `Cell.__init__`, where `str`s are `encode`d, not `decode`d.  Again, I'm not very familiar with encodings, so I may well be wrong.  Thanks!",
     "created_at": "2010-01-07T02:39:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7249",
     "type": "issue_comment",
@@ -345,7 +345,7 @@ archive/issue_comments_060195.json:
 }
 ```
 
-Attachment
+Attachment [trac_7249_jinja2_v3.patch](tarball://root/attachments/some-uuid/ticket7249/trac_7249_jinja2_v3.patch) by mpatel created at 2010-01-07 02:39:24
 
 V3 (really) is rebased against the latest at #7835, #7786.  Besides consistently using UTF-8 for the cell/worksheet system, I'm curious about `Cell.__init__`, where `str`s are `encode`d, not `decode`d.  Again, I'm not very familiar with encodings, so I may well be wrong.  Thanks!
 
@@ -472,7 +472,7 @@ The new patch fixes the styling of the worksheet listing page and adds two new f
 archive/issue_comments_060201.json:
 ```json
 {
-    "body": "Attachment\n\nFixes the styling of the worksheet listing page.",
+    "body": "Attachment [trac_7249_jinja2_v4.patch](tarball://root/attachments/some-uuid/ticket7249/trac_7249_jinja2_v4.patch) by timdumol created at 2010-01-16 23:24:36\n\nFixes the styling of the worksheet listing page.",
     "created_at": "2010-01-16T23:24:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7249",
     "type": "issue_comment",
@@ -481,7 +481,7 @@ archive/issue_comments_060201.json:
 }
 ```
 
-Attachment
+Attachment [trac_7249_jinja2_v4.patch](tarball://root/attachments/some-uuid/ticket7249/trac_7249_jinja2_v4.patch) by timdumol created at 2010-01-16 23:24:36
 
 Fixes the styling of the worksheet listing page.
 
@@ -546,7 +546,7 @@ Rebase on a new patch set.
 archive/issue_comments_060204.json:
 ```json
 {
-    "body": "Attachment\n\nAdded an 'ignore' errors directive to `unicode_string`",
+    "body": "Attachment [trac_7249_jinja2_v5.2.patch](tarball://root/attachments/some-uuid/ticket7249/trac_7249_jinja2_v5.2.patch) by timdumol created at 2010-01-18 01:26:17\n\nAdded an 'ignore' errors directive to `unicode_string`",
     "created_at": "2010-01-18T01:26:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7249",
     "type": "issue_comment",
@@ -555,7 +555,7 @@ archive/issue_comments_060204.json:
 }
 ```
 
-Attachment
+Attachment [trac_7249_jinja2_v5.2.patch](tarball://root/attachments/some-uuid/ticket7249/trac_7249_jinja2_v5.2.patch) by timdumol created at 2010-01-18 01:26:17
 
 Added an 'ignore' errors directive to `unicode_string`
 
@@ -690,7 +690,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_060211.json:
 ```json
 {
-    "body": "Attachment\n\nWoops! Sorry, accidentally put it to positive review. You should be the one, if ever.",
+    "body": "Attachment [trac_7249_jinja2_v5.3.patch](tarball://root/attachments/some-uuid/ticket7249/trac_7249_jinja2_v5.3.patch) by timdumol created at 2010-01-18 08:19:14\n\nWoops! Sorry, accidentally put it to positive review. You should be the one, if ever.",
     "created_at": "2010-01-18T08:19:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7249",
     "type": "issue_comment",
@@ -699,7 +699,7 @@ archive/issue_comments_060211.json:
 }
 ```
 
-Attachment
+Attachment [trac_7249_jinja2_v5.3.patch](tarball://root/attachments/some-uuid/ticket7249/trac_7249_jinja2_v5.3.patch) by timdumol created at 2010-01-18 08:19:14
 
 Woops! Sorry, accidentally put it to positive review. You should be the one, if ever.
 
@@ -757,7 +757,7 @@ I'm pretty sure that that warning is unavoidable (has to do with upgrading from 
 archive/issue_comments_060214.json:
 ```json
 {
-    "body": "Attachment\n\nAdds the requested doctests and Se tests and the cleanup on `sage_inspect.py`",
+    "body": "Attachment [trac_7249_jinja2_v5.4.patch](tarball://root/attachments/some-uuid/ticket7249/trac_7249_jinja2_v5.4.patch) by timdumol created at 2010-01-18 10:51:38\n\nAdds the requested doctests and Se tests and the cleanup on `sage_inspect.py`",
     "created_at": "2010-01-18T10:51:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7249",
     "type": "issue_comment",
@@ -766,7 +766,7 @@ archive/issue_comments_060214.json:
 }
 ```
 
-Attachment
+Attachment [trac_7249_jinja2_v5.4.patch](tarball://root/attachments/some-uuid/ticket7249/trac_7249_jinja2_v5.4.patch) by timdumol created at 2010-01-18 10:51:38
 
 Adds the requested doctests and Se tests and the cleanup on `sage_inspect.py`
 
@@ -831,7 +831,7 @@ Fixes a problem with text cells with unicode contents.
 archive/issue_comments_060218.json:
 ```json
 {
-    "body": "Attachment\n\nTest fix, drop pdb.  Replaces previous.",
+    "body": "Attachment [trac_7249-jinja2_v6.patch](tarball://root/attachments/some-uuid/ticket7249/trac_7249-jinja2_v6.patch) by mpatel created at 2010-01-19 11:31:46\n\nTest fix, drop pdb.  Replaces previous.",
     "created_at": "2010-01-19T11:31:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7249",
     "type": "issue_comment",
@@ -840,7 +840,7 @@ archive/issue_comments_060218.json:
 }
 ```
 
-Attachment
+Attachment [trac_7249-jinja2_v6.patch](tarball://root/attachments/some-uuid/ticket7249/trac_7249-jinja2_v6.patch) by mpatel created at 2010-01-19 11:31:46
 
 Test fix, drop pdb.  Replaces previous.
 
@@ -869,7 +869,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_060220.json:
 ```json
 {
-    "body": "Attachment\n\nV7 fixes a failed doctest in `cell.py` (line 138) and removes `import pdb; pdb.set_trace()` from `test_worksheet_list.py`.",
+    "body": "Attachment [trac_7249-jinja2_v7.patch](tarball://root/attachments/some-uuid/ticket7249/trac_7249-jinja2_v7.patch) by mpatel created at 2010-01-19 11:31:54\n\nV7 fixes a failed doctest in `cell.py` (line 138) and removes `import pdb; pdb.set_trace()` from `test_worksheet_list.py`.",
     "created_at": "2010-01-19T11:31:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7249",
     "type": "issue_comment",
@@ -878,7 +878,7 @@ archive/issue_comments_060220.json:
 }
 ```
 
-Attachment
+Attachment [trac_7249-jinja2_v7.patch](tarball://root/attachments/some-uuid/ticket7249/trac_7249-jinja2_v7.patch) by mpatel created at 2010-01-19 11:31:54
 
 V7 fixes a failed doctest in `cell.py` (line 138) and removes `import pdb; pdb.set_trace()` from `test_worksheet_list.py`.
 
@@ -939,7 +939,7 @@ V8 just makes the docstring raw (`"""` --> `r"""`).  I've added `'Теория �
 archive/issue_comments_060223.json:
 ```json
 {
-    "body": "Attachment\n\nMake `Worksheet.name`'s docstring raw, for Sphinx.  Replaces previous.",
+    "body": "Attachment [trac_7249-jinja2_v8.patch](tarball://root/attachments/some-uuid/ticket7249/trac_7249-jinja2_v8.patch) by mpatel created at 2010-01-19 19:04:58\n\nMake `Worksheet.name`'s docstring raw, for Sphinx.  Replaces previous.",
     "created_at": "2010-01-19T19:04:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7249",
     "type": "issue_comment",
@@ -948,7 +948,7 @@ archive/issue_comments_060223.json:
 }
 ```
 
-Attachment
+Attachment [trac_7249-jinja2_v8.patch](tarball://root/attachments/some-uuid/ticket7249/trac_7249-jinja2_v8.patch) by mpatel created at 2010-01-19 19:04:58
 
 Make `Worksheet.name`'s docstring raw, for Sphinx.  Replaces previous.
 
@@ -983,7 +983,7 @@ Trac detected an internal error:
 archive/issue_comments_060225.json:
 ```json
 {
-    "body": "Attachment\n\nMake the docstrings unicode strings.  Replaces previous.",
+    "body": "Attachment [trac_7249-jinja2_v9.5.patch](tarball://root/attachments/some-uuid/ticket7249/trac_7249-jinja2_v9.5.patch) by mpatel created at 2010-01-19 19:23:45\n\nMake the docstrings unicode strings.  Replaces previous.",
     "created_at": "2010-01-19T19:23:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7249",
     "type": "issue_comment",
@@ -992,7 +992,7 @@ archive/issue_comments_060225.json:
 }
 ```
 
-Attachment
+Attachment [trac_7249-jinja2_v9.5.patch](tarball://root/attachments/some-uuid/ticket7249/trac_7249-jinja2_v9.5.patch) by mpatel created at 2010-01-19 19:23:45
 
 Make the docstrings unicode strings.  Replaces previous.
 

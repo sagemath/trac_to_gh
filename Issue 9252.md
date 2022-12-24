@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9252
 archive/issue_comments_087070.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac9252.patch](tarball://root/attachments/some-uuid/ticket9252/trac9252.patch) by wjlaffin created at 2010-06-17 23:03:56",
     "created_at": "2010-06-17T23:03:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9252",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_087070.json:
 }
 ```
 
-Attachment
+Attachment [trac9252.patch](tarball://root/attachments/some-uuid/ticket9252/trac9252.patch) by wjlaffin created at 2010-06-17 23:03:56
 
 
 
@@ -89,7 +89,7 @@ Whops. Forgot to test that. Disregard the first one.
 archive/issue_comments_087073.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac9252.1.patch](tarball://root/attachments/some-uuid/ticket9252/trac9252.1.patch) by wjlaffin created at 2010-06-17 23:22:01",
     "created_at": "2010-06-17T23:22:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9252",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_087073.json:
 }
 ```
 
-Attachment
+Attachment [trac9252.1.patch](tarball://root/attachments/some-uuid/ticket9252/trac9252.1.patch) by wjlaffin created at 2010-06-17 23:22:01
 
 
 

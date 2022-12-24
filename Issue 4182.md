@@ -60,7 +60,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4182
 archive/issue_comments_030353.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4182.patch](tarball://root/attachments/some-uuid/ticket4182/4182.patch) by jhpalmieri created at 2008-10-20 21:19:01",
     "created_at": "2008-10-20T21:19:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4182",
     "type": "issue_comment",
@@ -69,7 +69,7 @@ archive/issue_comments_030353.json:
 }
 ```
 
-Attachment
+Attachment [4182.patch](tarball://root/attachments/some-uuid/ticket4182/4182.patch) by jhpalmieri created at 2008-10-20 21:19:01
 
 
 

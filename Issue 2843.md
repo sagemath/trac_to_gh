@@ -134,7 +134,7 @@ I'm attaching a patch that solves this by not copying the ZZ_pX_Modulus objects.
 archive/issue_comments_019511.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [padics_ZZ_pXModulus.patch](tarball://root/attachments/some-uuid/ticket2843/padics_ZZ_pXModulus.patch) by wjp created at 2008-04-10 18:32:02",
     "created_at": "2008-04-10T18:32:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2843",
     "type": "issue_comment",
@@ -143,7 +143,7 @@ archive/issue_comments_019511.json:
 }
 ```
 
-Attachment
+Attachment [padics_ZZ_pXModulus.patch](tarball://root/attachments/some-uuid/ticket2843/padics_ZZ_pXModulus.patch) by wjp created at 2008-04-10 18:32:02
 
 
 
@@ -192,7 +192,7 @@ Replaces previous patch, changes a few more ZZ_pX_Modulus_c to ZZ_pX_Modulus_c* 
 archive/issue_comments_019514.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [padics_ZZ_pXModulus2.patch](tarball://root/attachments/some-uuid/ticket2843/padics_ZZ_pXModulus2.patch) by roed created at 2008-04-10 22:37:45",
     "created_at": "2008-04-10T22:37:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2843",
     "type": "issue_comment",
@@ -201,7 +201,7 @@ archive/issue_comments_019514.json:
 }
 ```
 
-Attachment
+Attachment [padics_ZZ_pXModulus2.patch](tarball://root/attachments/some-uuid/ticket2843/padics_ZZ_pXModulus2.patch) by roed created at 2008-04-10 22:37:45
 
 
 
@@ -246,7 +246,7 @@ Resolution: fixed
 archive/issue_comments_019517.json:
 ```json
 {
-    "body": "Attachment\n\nShould be used instead of compile_fix.",
+    "body": "Attachment [trac_2843_compile-fix.patch](tarball://root/attachments/some-uuid/ticket2843/trac_2843_compile-fix.patch) by roed created at 2008-04-11 03:33:45\n\nShould be used instead of compile_fix.",
     "created_at": "2008-04-11T03:33:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2843",
     "type": "issue_comment",
@@ -255,7 +255,7 @@ archive/issue_comments_019517.json:
 }
 ```
 
-Attachment
+Attachment [trac_2843_compile-fix.patch](tarball://root/attachments/some-uuid/ticket2843/trac_2843_compile-fix.patch) by roed created at 2008-04-11 03:33:45
 
 Should be used instead of compile_fix.
 
@@ -266,7 +266,7 @@ Should be used instead of compile_fix.
 archive/issue_comments_019518.json:
 ```json
 {
-    "body": "Attachment\n\nMerged padics_ZZ_pXModulus_fix.patch in Sage 3.0.alpha4",
+    "body": "Attachment [padics_ZZ_pXModulus_fix.patch](tarball://root/attachments/some-uuid/ticket2843/padics_ZZ_pXModulus_fix.patch) by mabshoff created at 2008-04-11 19:32:02\n\nMerged padics_ZZ_pXModulus_fix.patch in Sage 3.0.alpha4",
     "created_at": "2008-04-11T19:32:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2843",
     "type": "issue_comment",
@@ -275,6 +275,6 @@ archive/issue_comments_019518.json:
 }
 ```
 
-Attachment
+Attachment [padics_ZZ_pXModulus_fix.patch](tarball://root/attachments/some-uuid/ticket2843/padics_ZZ_pXModulus_fix.patch) by mabshoff created at 2008-04-11 19:32:02
 
 Merged padics_ZZ_pXModulus_fix.patch in Sage 3.0.alpha4

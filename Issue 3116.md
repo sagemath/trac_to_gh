@@ -161,7 +161,7 @@ Changing assignee from was to mhansen.
 archive/issue_comments_021575.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3116.patch](tarball://root/attachments/some-uuid/ticket3116/3116.patch) by mhansen created at 2008-05-07 01:47:57",
     "created_at": "2008-05-07T01:47:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3116",
     "type": "issue_comment",
@@ -170,7 +170,7 @@ archive/issue_comments_021575.json:
 }
 ```
 
-Attachment
+Attachment [3116.patch](tarball://root/attachments/some-uuid/ticket3116/3116.patch) by mhansen created at 2008-05-07 01:47:57
 
 
 

@@ -71,7 +71,7 @@ I read the patch.  Positive review if it still works on linux.
 archive/issue_comments_037407.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4931.patch](tarball://root/attachments/some-uuid/ticket4931/trac_4931.patch) by mabshoff created at 2009-01-03 05:51:22",
     "created_at": "2009-01-03T05:51:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4931",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_037407.json:
 }
 ```
 
-Attachment
+Attachment [trac_4931.patch](tarball://root/attachments/some-uuid/ticket4931/trac_4931.patch) by mabshoff created at 2009-01-03 05:51:22
 
 
 
@@ -109,7 +109,7 @@ With the attached referee followup patch this gets positive review.
 archive/issue_comments_037409.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4931_ref.patch](tarball://root/attachments/some-uuid/ticket4931/trac_4931_ref.patch) by was created at 2009-01-03 06:33:56",
     "created_at": "2009-01-03T06:33:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4931",
     "type": "issue_comment",
@@ -118,7 +118,7 @@ archive/issue_comments_037409.json:
 }
 ```
 
-Attachment
+Attachment [trac_4931_ref.patch](tarball://root/attachments/some-uuid/ticket4931/trac_4931_ref.patch) by was created at 2009-01-03 06:33:56
 
 
 

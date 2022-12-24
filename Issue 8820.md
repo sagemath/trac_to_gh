@@ -162,7 +162,7 @@ Changing status from new to needs_review.
 archive/issue_comments_080955.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch implements this.  I left the old code (using ellztopoint) for curves over QQ though the new code (using ellwp) works fine too, since the the output of many doctests would have changed (in insignificant bits), especially in heegner.py.\n\nI also documented a couple of functions in period_lattice.py which were not, so that file now has 100% coverage.",
+    "body": "Attachment [trac_8820-elliptic-exp.patch](tarball://root/attachments/some-uuid/ticket8820/trac_8820-elliptic-exp.patch) by cremona created at 2010-08-29 14:38:36\n\nThe patch implements this.  I left the old code (using ellztopoint) for curves over QQ though the new code (using ellwp) works fine too, since the the output of many doctests would have changed (in insignificant bits), especially in heegner.py.\n\nI also documented a couple of functions in period_lattice.py which were not, so that file now has 100% coverage.",
     "created_at": "2010-08-29T14:38:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
@@ -171,7 +171,7 @@ archive/issue_comments_080955.json:
 }
 ```
 
-Attachment
+Attachment [trac_8820-elliptic-exp.patch](tarball://root/attachments/some-uuid/ticket8820/trac_8820-elliptic-exp.patch) by cremona created at 2010-08-29 14:38:36
 
 The patch implements this.  I left the old code (using ellztopoint) for curves over QQ though the new code (using ellwp) works fine too, since the the output of many doctests would have changed (in insignificant bits), especially in heegner.py.
 
@@ -477,7 +477,7 @@ I have now fixed all the offending "Pari" and "pari" in the patch, and all the f
 archive/issue_comments_080968.json:
 ```json
 {
-    "body": "Attachment\n\napplies to 4.6.alpha1",
+    "body": "Attachment [trac_8820-elliptic-exp-rebase.patch](tarball://root/attachments/some-uuid/ticket8820/trac_8820-elliptic-exp-rebase.patch) by cremona created at 2010-09-26 16:46:50\n\napplies to 4.6.alpha1",
     "created_at": "2010-09-26T16:46:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
@@ -486,7 +486,7 @@ archive/issue_comments_080968.json:
 }
 ```
 
-Attachment
+Attachment [trac_8820-elliptic-exp-rebase.patch](tarball://root/attachments/some-uuid/ticket8820/trac_8820-elliptic-exp-rebase.patch) by cremona created at 2010-09-26 16:46:50
 
 applies to 4.6.alpha1
 
@@ -624,7 +624,7 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_080975.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:17 jdemeyer]:\n> Replying to [comment:16 cremona]:\n> > # User Jeroen Demeyer <jdemeyer`@`cage.ugent.be>\n> > ...\n> > [mq]: 8820_rebase_after_9931\n> > }}}\n> > and I think protocol would leave me as author (and have a better one-line description) ;)\n> \n> OK, I just copy-pasted the header from your patch.\n\nThanks -- I added your name as reviewer and marked the ticket Positive Review.  If you want, you can add your name as author (and mine as reviewer) -- I appreciate your attention to detail.\n\nRelease manager:  apply only the last patch 8820_rebase_after_9931.patch, after the patch at #9931.",
+    "body": "Attachment [8820_rebase_after_9931.patch](tarball://root/attachments/some-uuid/ticket8820/8820_rebase_after_9931.patch) by cremona created at 2010-09-26 21:42:19\n\nReplying to [comment:17 jdemeyer]:\n> Replying to [comment:16 cremona]:\n> > # User Jeroen Demeyer <jdemeyer`@`cage.ugent.be>\n> > ...\n> > [mq]: 8820_rebase_after_9931\n> > }}}\n> > and I think protocol would leave me as author (and have a better one-line description) ;)\n> \n> OK, I just copy-pasted the header from your patch.\n\nThanks -- I added your name as reviewer and marked the ticket Positive Review.  If you want, you can add your name as author (and mine as reviewer) -- I appreciate your attention to detail.\n\nRelease manager:  apply only the last patch 8820_rebase_after_9931.patch, after the patch at #9931.",
     "created_at": "2010-09-26T21:42:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
@@ -633,7 +633,7 @@ archive/issue_comments_080975.json:
 }
 ```
 
-Attachment
+Attachment [8820_rebase_after_9931.patch](tarball://root/attachments/some-uuid/ticket8820/8820_rebase_after_9931.patch) by cremona created at 2010-09-26 21:42:19
 
 Replying to [comment:17 jdemeyer]:
 > Replying to [comment:16 cremona]:
@@ -1111,7 +1111,7 @@ replaces previous
 archive/issue_comments_080995.json:
 ```json
 {
-    "body": "Attachment\n\nThanks to all, and apologies for missing that one.  I have changed the patch as suggested and just tested it on a 32-bit machine as well as a 64-bit.\n\nThat failing test is exactly the kind of thing it would be nice to avoid altogether in doctests, since the \"true\" value of the x-coordinate is 0, so all nonzero digits, and the sign, are completely spurious.\n\nJeroen, if you are happy with this now could you mark it as \"positive review\"?  Thanks.\n\nRelease manager: only the last patch is to be applied.",
+    "body": "Attachment [8820_rebase_after_9931-new.patch](tarball://root/attachments/some-uuid/ticket8820/8820_rebase_after_9931-new.patch) by cremona created at 2010-10-05 08:30:57\n\nThanks to all, and apologies for missing that one.  I have changed the patch as suggested and just tested it on a 32-bit machine as well as a 64-bit.\n\nThat failing test is exactly the kind of thing it would be nice to avoid altogether in doctests, since the \"true\" value of the x-coordinate is 0, so all nonzero digits, and the sign, are completely spurious.\n\nJeroen, if you are happy with this now could you mark it as \"positive review\"?  Thanks.\n\nRelease manager: only the last patch is to be applied.",
     "created_at": "2010-10-05T08:30:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
@@ -1120,7 +1120,7 @@ archive/issue_comments_080995.json:
 }
 ```
 
-Attachment
+Attachment [8820_rebase_after_9931-new.patch](tarball://root/attachments/some-uuid/ticket8820/8820_rebase_after_9931-new.patch) by cremona created at 2010-10-05 08:30:57
 
 Thanks to all, and apologies for missing that one.  I have changed the patch as suggested and just tested it on a 32-bit machine as well as a 64-bit.
 

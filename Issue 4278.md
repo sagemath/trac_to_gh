@@ -57,7 +57,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4278
 archive/issue_comments_031282.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.",
+    "body": "Attachment [trac_4278.patch](tarball://root/attachments/some-uuid/ticket4278/trac_4278.patch) by robertwb created at 2008-10-14 10:59:59\n\nLooks good to me.",
     "created_at": "2008-10-14T10:59:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4278",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_031282.json:
 }
 ```
 
-Attachment
+Attachment [trac_4278.patch](tarball://root/attachments/some-uuid/ticket4278/trac_4278.patch) by robertwb created at 2008-10-14 10:59:59
 
 Looks good to me.
 
@@ -350,7 +350,7 @@ attachment:trac_4278_2.patch should fix the problems with the first patch.
 archive/issue_comments_031288.json:
 ```json
 {
-    "body": "Attachment\n\n+1 for Burcin's patch.",
+    "body": "Attachment [trac_4278_2.patch](tarball://root/attachments/some-uuid/ticket4278/trac_4278_2.patch) by mhansen created at 2008-10-24 02:52:26\n\n+1 for Burcin's patch.",
     "created_at": "2008-10-24T02:52:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4278",
     "type": "issue_comment",
@@ -359,7 +359,7 @@ archive/issue_comments_031288.json:
 }
 ```
 
-Attachment
+Attachment [trac_4278_2.patch](tarball://root/attachments/some-uuid/ticket4278/trac_4278_2.patch) by mhansen created at 2008-10-24 02:52:26
 
 +1 for Burcin's patch.
 
@@ -557,7 +557,7 @@ apply only this patch
 archive/issue_comments_031296.json:
 ```json
 {
-    "body": "Attachment\n\nThe segfault was due to #4520, and in the process I streamlined this patch.",
+    "body": "Attachment [4278-final.patch](tarball://root/attachments/some-uuid/ticket4278/4278-final.patch) by robertwb created at 2008-11-14 07:09:22\n\nThe segfault was due to #4520, and in the process I streamlined this patch.",
     "created_at": "2008-11-14T07:09:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4278",
     "type": "issue_comment",
@@ -566,7 +566,7 @@ archive/issue_comments_031296.json:
 }
 ```
 
-Attachment
+Attachment [4278-final.patch](tarball://root/attachments/some-uuid/ticket4278/4278-final.patch) by robertwb created at 2008-11-14 07:09:22
 
 The segfault was due to #4520, and in the process I streamlined this patch.
 

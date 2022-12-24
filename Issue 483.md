@@ -36,7 +36,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/483
 archive/issue_comments_002411.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5827.patch](tarball://root/attachments/some-uuid/ticket483/5827.patch) by pdehaye created at 2007-08-23 10:07:09",
     "created_at": "2007-08-23T10:07:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/483",
     "type": "issue_comment",
@@ -45,7 +45,7 @@ archive/issue_comments_002411.json:
 }
 ```
 
-Attachment
+Attachment [5827.patch](tarball://root/attachments/some-uuid/ticket483/5827.patch) by pdehaye created at 2007-08-23 10:07:09
 
 
 
@@ -72,7 +72,7 @@ Changing status from new to assigned.
 archive/issue_comments_002413.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5828.patch](tarball://root/attachments/some-uuid/ticket483/5828.patch) by pdehaye created at 2007-08-23 10:09:53",
     "created_at": "2007-08-23T10:09:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/483",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_002413.json:
 }
 ```
 
-Attachment
+Attachment [5828.patch](tarball://root/attachments/some-uuid/ticket483/5828.patch) by pdehaye created at 2007-08-23 10:09:53
 
 
 

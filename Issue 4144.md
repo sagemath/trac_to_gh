@@ -43,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4144
 archive/issue_comments_030087.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sbox_gfq.patch](tarball://root/attachments/some-uuid/ticket4144/sbox_gfq.patch) by malb created at 2008-09-18 10:27:16",
     "created_at": "2008-09-18T10:27:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4144",
     "type": "issue_comment",
@@ -52,7 +52,7 @@ archive/issue_comments_030087.json:
 }
 ```
 
-Attachment
+Attachment [sbox_gfq.patch](tarball://root/attachments/some-uuid/ticket4144/sbox_gfq.patch) by malb created at 2008-09-18 10:27:16
 
 
 

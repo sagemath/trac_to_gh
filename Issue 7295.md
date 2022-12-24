@@ -62,7 +62,7 @@ patch to spkg-install
 archive/issue_comments_060735.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ecm-6.2.1_p0-spkg-install.patch](tarball://root/attachments/some-uuid/ticket7295/ecm-6.2.1_p0-spkg-install.patch) by fbissey created at 2009-10-26 01:02:32",
     "created_at": "2009-10-26T01:02:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7295",
     "type": "issue_comment",
@@ -71,7 +71,7 @@ archive/issue_comments_060735.json:
 }
 ```
 
-Attachment
+Attachment [ecm-6.2.1_p0-spkg-install.patch](tarball://root/attachments/some-uuid/ticket7295/ecm-6.2.1_p0-spkg-install.patch) by fbissey created at 2009-10-26 01:02:32
 
 
 

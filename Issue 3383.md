@@ -325,7 +325,7 @@ John
 archive/issue_comments_023685.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch just adds a doctest to show that the bug no longer exists.",
+    "body": "Attachment [sage-trac3383.patch](tarball://root/attachments/some-uuid/ticket3383/sage-trac3383.patch) by cremona created at 2008-08-13 08:46:23\n\nThe patch just adds a doctest to show that the bug no longer exists.",
     "created_at": "2008-08-13T08:46:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3383",
     "type": "issue_comment",
@@ -334,7 +334,7 @@ archive/issue_comments_023685.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac3383.patch](tarball://root/attachments/some-uuid/ticket3383/sage-trac3383.patch) by cremona created at 2008-08-13 08:46:23
 
 The patch just adds a doctest to show that the bug no longer exists.
 

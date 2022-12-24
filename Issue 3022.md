@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3022
 archive/issue_comments_020790.json:
 ```json
 {
-    "body": "Attachment\n\nPatch looks good to me.\n\nCheers,\n\nMichael",
+    "body": "Attachment [polybori-debian.patch](tarball://root/attachments/some-uuid/ticket3022/polybori-debian.patch) by mabshoff created at 2008-04-25 18:56:09\n\nPatch looks good to me.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-25T18:56:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3022",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_020790.json:
 }
 ```
 
-Attachment
+Attachment [polybori-debian.patch](tarball://root/attachments/some-uuid/ticket3022/polybori-debian.patch) by mabshoff created at 2008-04-25 18:56:09
 
 Patch looks good to me.
 

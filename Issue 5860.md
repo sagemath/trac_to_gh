@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5860
 archive/issue_comments_046297.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5860.patch](tarball://root/attachments/some-uuid/ticket5860/trac_5860.patch) by was created at 2009-04-23 05:09:38",
     "created_at": "2009-04-23T05:09:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5860",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_046297.json:
 }
 ```
 
-Attachment
+Attachment [trac_5860.patch](tarball://root/attachments/some-uuid/ticket5860/trac_5860.patch) by was created at 2009-04-23 05:09:38
 
 
 
@@ -49,7 +49,7 @@ Attachment
 archive/issue_comments_046298.json:
 ```json
 {
-    "body": "Attachment\n\nI'm getting intermittent doctest failures for devel/sage/sage/server/misc.py for 3.4.1 on sage.math. But it seems to happen without this patch too. Hmmm I can't see how it could be related.\n\nThumbs up.",
+    "body": "Attachment [trac_5860-part2.patch](tarball://root/attachments/some-uuid/ticket5860/trac_5860-part2.patch) by dmharvey created at 2009-04-25 17:42:31\n\nI'm getting intermittent doctest failures for devel/sage/sage/server/misc.py for 3.4.1 on sage.math. But it seems to happen without this patch too. Hmmm I can't see how it could be related.\n\nThumbs up.",
     "created_at": "2009-04-25T17:42:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5860",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_046298.json:
 }
 ```
 
-Attachment
+Attachment [trac_5860-part2.patch](tarball://root/attachments/some-uuid/ticket5860/trac_5860-part2.patch) by dmharvey created at 2009-04-25 17:42:31
 
 I'm getting intermittent doctest failures for devel/sage/sage/server/misc.py for 3.4.1 on sage.math. But it seems to happen without this patch too. Hmmm I can't see how it could be related.
 

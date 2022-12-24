@@ -204,7 +204,7 @@ sage: get_memory_usage()
 archive/issue_comments_016078.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached pure python file leaks too.",
+    "body": "Attachment [memleak.py](tarball://root/attachments/some-uuid/ticket2383/memleak.py) by robertwb created at 2008-03-16 09:14:12\n\nThe attached pure python file leaks too.",
     "created_at": "2008-03-16T09:14:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2383",
     "type": "issue_comment",
@@ -213,7 +213,7 @@ archive/issue_comments_016078.json:
 }
 ```
 
-Attachment
+Attachment [memleak.py](tarball://root/attachments/some-uuid/ticket2383/memleak.py) by robertwb created at 2008-03-16 09:14:12
 
 The attached pure python file leaks too.
 

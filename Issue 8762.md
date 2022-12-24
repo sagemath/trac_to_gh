@@ -161,7 +161,7 @@ Changing status from new to needs_review.
 archive/issue_comments_080167.json:
 ```json
 {
-    "body": "Attachment\n\nOnly use NTL with non-sparse polynomial rings over finite fields. Now with doctest.",
+    "body": "Attachment [trac_8762_sparse_gfx.patch](tarball://root/attachments/some-uuid/ticket8762/trac_8762_sparse_gfx.patch) by jsrn created at 2010-09-17 07:52:33\n\nOnly use NTL with non-sparse polynomial rings over finite fields. Now with doctest.",
     "created_at": "2010-09-17T07:52:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8762",
     "type": "issue_comment",
@@ -170,7 +170,7 @@ archive/issue_comments_080167.json:
 }
 ```
 
-Attachment
+Attachment [trac_8762_sparse_gfx.patch](tarball://root/attachments/some-uuid/ticket8762/trac_8762_sparse_gfx.patch) by jsrn created at 2010-09-17 07:52:33
 
 Only use NTL with non-sparse polynomial rings over finite fields. Now with doctest.
 

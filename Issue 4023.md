@@ -111,7 +111,7 @@ Michael
 archive/issue_comments_029014.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4023-gp_32_bit.patch](tarball://root/attachments/some-uuid/ticket4023/4023-gp_32_bit.patch) by AlexGhitza created at 2008-09-05 04:00:02",
     "created_at": "2008-09-05T04:00:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4023",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_029014.json:
 }
 ```
 
-Attachment
+Attachment [4023-gp_32_bit.patch](tarball://root/attachments/some-uuid/ticket4023/4023-gp_32_bit.patch) by AlexGhitza created at 2008-09-05 04:00:02
 
 
 

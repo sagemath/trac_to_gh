@@ -45,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8392
 archive/issue_comments_075150.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8392_check_permutation-nb.patch](tarball://root/attachments/some-uuid/ticket8392/trac_8392_check_permutation-nb.patch) by nborie created at 2010-03-01 00:25:28",
     "created_at": "2010-03-01T00:25:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8392",
     "type": "issue_comment",
@@ -54,7 +54,7 @@ archive/issue_comments_075150.json:
 }
 ```
 
-Attachment
+Attachment [trac_8392_check_permutation-nb.patch](tarball://root/attachments/some-uuid/ticket8392/trac_8392_check_permutation-nb.patch) by nborie created at 2010-03-01 00:25:28
 
 
 
@@ -667,7 +667,7 @@ apply after trac_8392-check_permutation-ts.patch
 archive/issue_comments_075179.json:
 ```json
 {
-    "body": "Attachment\n\nI've just reviewed the math: [attachment:trac_8392-review_patch-dg.patch].\n\nDocumentation extended (please check my formatting!), Edelman-Greene insertion fixed (it used to do the same as normal RSK), an is_increasing() method for tableaux added (since we're already doing Edelman-Greene...), and some more doc fixes made (including the changes that were formerly in #14131).\n\nI have not fixed the issues in my previous comment; I don't know our stance on them.",
+    "body": "Attachment [trac_8392-review_patch-dg.patch](tarball://root/attachments/some-uuid/ticket8392/trac_8392-review_patch-dg.patch) by darij created at 2013-05-12 06:49:44\n\nI've just reviewed the math: [attachment:trac_8392-review_patch-dg.patch].\n\nDocumentation extended (please check my formatting!), Edelman-Greene insertion fixed (it used to do the same as normal RSK), an is_increasing() method for tableaux added (since we're already doing Edelman-Greene...), and some more doc fixes made (including the changes that were formerly in #14131).\n\nI have not fixed the issues in my previous comment; I don't know our stance on them.",
     "created_at": "2013-05-12T06:49:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8392",
     "type": "issue_comment",
@@ -676,7 +676,7 @@ archive/issue_comments_075179.json:
 }
 ```
 
-Attachment
+Attachment [trac_8392-review_patch-dg.patch](tarball://root/attachments/some-uuid/ticket8392/trac_8392-review_patch-dg.patch) by darij created at 2013-05-12 06:49:44
 
 I've just reviewed the math: [attachment:trac_8392-review_patch-dg.patch].
 
@@ -1062,7 +1062,7 @@ Rebased
 archive/issue_comments_075197.json:
 ```json
 {
-    "body": "Attachment\n\nRebased over #14302.",
+    "body": "Attachment [trac_8392-check_permutation-ts.patch](tarball://root/attachments/some-uuid/ticket8392/trac_8392-check_permutation-ts.patch) by tscrim created at 2013-05-28 14:49:30\n\nRebased over #14302.",
     "created_at": "2013-05-28T14:49:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8392",
     "type": "issue_comment",
@@ -1071,7 +1071,7 @@ archive/issue_comments_075197.json:
 }
 ```
 
-Attachment
+Attachment [trac_8392-check_permutation-ts.patch](tarball://root/attachments/some-uuid/ticket8392/trac_8392-check_permutation-ts.patch) by tscrim created at 2013-05-28 14:49:30
 
 Rebased over #14302.
 

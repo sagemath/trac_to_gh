@@ -85,7 +85,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9840
 archive/issue_comments_097118.json:
 ```json
 {
-    "body": "Attachment\n\nBuild log on OpenSolaris, when using debugging options to show text relocations.",
+    "body": "Attachment [complete-log-of-OpenSolaris-86-built.txt.gz](tarball://root/attachments/some-uuid/ticket9840/complete-log-of-OpenSolaris-86-built.txt.gz) by drkirkby created at 2010-08-30 12:13:45\n\nBuild log on OpenSolaris, when using debugging options to show text relocations.",
     "created_at": "2010-08-30T12:13:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9839",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_097118.json:
 }
 ```
 
-Attachment
+Attachment [complete-log-of-OpenSolaris-86-built.txt.gz](tarball://root/attachments/some-uuid/ticket9840/complete-log-of-OpenSolaris-86-built.txt.gz) by drkirkby created at 2010-08-30 12:13:45
 
 Build log on OpenSolaris, when using debugging options to show text relocations.
 

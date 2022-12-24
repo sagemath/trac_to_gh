@@ -188,7 +188,7 @@ The point is that when something goes wrong, one wants to be able to ask "what h
 archive/issue_comments_032075.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sagetrac-4366-first.patch](tarball://root/attachments/some-uuid/ticket4366/sagetrac-4366-first.patch) by GeorgSWeber created at 2008-10-27 23:14:21",
     "created_at": "2008-10-27T23:14:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4366",
     "type": "issue_comment",
@@ -197,7 +197,7 @@ archive/issue_comments_032075.json:
 }
 ```
 
-Attachment
+Attachment [sagetrac-4366-first.patch](tarball://root/attachments/some-uuid/ticket4366/sagetrac-4366-first.patch) by GeorgSWeber created at 2008-10-27 23:14:21
 
 
 
@@ -285,7 +285,7 @@ Michael
 archive/issue_comments_032079.json:
 ```json
 {
-    "body": "Attachment\n\napply this patch only",
+    "body": "Attachment [4366-coercion-traceback.patch](tarball://root/attachments/some-uuid/ticket4366/4366-coercion-traceback.patch) by robertwb created at 2008-10-28 06:56:09\n\napply this patch only",
     "created_at": "2008-10-28T06:56:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4366",
     "type": "issue_comment",
@@ -294,7 +294,7 @@ archive/issue_comments_032079.json:
 }
 ```
 
-Attachment
+Attachment [4366-coercion-traceback.patch](tarball://root/attachments/some-uuid/ticket4366/4366-coercion-traceback.patch) by robertwb created at 2008-10-28 06:56:09
 
 apply this patch only
 
@@ -425,7 +425,7 @@ Ah, yes. That fix is fine to make (I saw it on my end, but thought it was due to
 archive/issue_comments_032085.json:
 ```json
 {
-    "body": "Attachment\n\napply this patch only",
+    "body": "Attachment [4366-coercion-traceback-fixed.patch](tarball://root/attachments/some-uuid/ticket4366/4366-coercion-traceback-fixed.patch) by GeorgSWeber created at 2008-10-28 20:41:11\n\napply this patch only",
     "created_at": "2008-10-28T20:41:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4366",
     "type": "issue_comment",
@@ -434,7 +434,7 @@ archive/issue_comments_032085.json:
 }
 ```
 
-Attachment
+Attachment [4366-coercion-traceback-fixed.patch](tarball://root/attachments/some-uuid/ticket4366/4366-coercion-traceback-fixed.patch) by GeorgSWeber created at 2008-10-28 20:41:11
 
 apply this patch only
 

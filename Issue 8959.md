@@ -91,7 +91,7 @@ def plot_example(f=sin(x^2),r=range_slider(-5,5,step_size=1/4,default=(-3,3)),
 archive/issue_comments_082579.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Interact Layouts.png](tarball://root/attachments/some-uuid/ticket8959/Interact Layouts.png) by jason created at 2010-05-14 03:23:28",
     "created_at": "2010-05-14T03:23:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8959",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_082579.json:
 }
 ```
 
-Attachment
+Attachment [Interact Layouts.png](tarball://root/attachments/some-uuid/ticket8959/Interact Layouts.png) by jason created at 2010-05-14 03:23:28
 
 
 
@@ -169,7 +169,7 @@ Changing status from new to needs_review.
 archive/issue_comments_082583.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch depends on #7379 and extends the functionality there.",
+    "body": "Attachment [trac-8959-interact-layout-align.patch](tarball://root/attachments/some-uuid/ticket8959/trac-8959-interact-layout-align.patch) by jason created at 2010-05-14 07:15:15\n\nThis patch depends on #7379 and extends the functionality there.",
     "created_at": "2010-05-14T07:15:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8959",
     "type": "issue_comment",
@@ -178,7 +178,7 @@ archive/issue_comments_082583.json:
 }
 ```
 
-Attachment
+Attachment [trac-8959-interact-layout-align.patch](tarball://root/attachments/some-uuid/ticket8959/trac-8959-interact-layout-align.patch) by jason created at 2010-05-14 07:15:15
 
 This patch depends on #7379 and extends the functionality there.
 
@@ -207,7 +207,7 @@ apply on top of previous patches
 archive/issue_comments_082585.json:
 ```json
 {
-    "body": "Attachment\n\nThe handle-update-button patch takes care of the auto_update problem mhampton pointed out on #7379.  At least, I think it does; the feature seems to work.  I don't know how to doctest the notebook after I've done \"sage -python setup.py develop\" to work on notebook files.  When I try to run sage -t, there's just an error about importing jsmath.",
+    "body": "Attachment [trac-8959-handle-update-button.patch](tarball://root/attachments/some-uuid/ticket8959/trac-8959-handle-update-button.patch) by jason created at 2010-05-16 04:48:16\n\nThe handle-update-button patch takes care of the auto_update problem mhampton pointed out on #7379.  At least, I think it does; the feature seems to work.  I don't know how to doctest the notebook after I've done \"sage -python setup.py develop\" to work on notebook files.  When I try to run sage -t, there's just an error about importing jsmath.",
     "created_at": "2010-05-16T04:48:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8959",
     "type": "issue_comment",
@@ -216,7 +216,7 @@ archive/issue_comments_082585.json:
 }
 ```
 
-Attachment
+Attachment [trac-8959-handle-update-button.patch](tarball://root/attachments/some-uuid/ticket8959/trac-8959-handle-update-button.patch) by jason created at 2010-05-16 04:48:16
 
 The handle-update-button patch takes care of the auto_update problem mhampton pointed out on #7379.  At least, I think it does; the feature seems to work.  I don't know how to doctest the notebook after I've done "sage -python setup.py develop" to work on notebook files.  When I try to run sage -t, there's just an error about importing jsmath.
 

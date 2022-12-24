@@ -36,7 +36,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/147
 archive/issue_comments_000672.json:
 ```json
 {
-    "body": "Attachment\n\nbuild log for gd",
+    "body": "Attachment [Gd.errlog](tarball://root/attachments/some-uuid/ticket147/Gd.errlog) by justin created at 2006-10-21 20:52:14\n\nbuild log for gd",
     "created_at": "2006-10-21T20:52:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/147",
     "type": "issue_comment",
@@ -45,7 +45,7 @@ archive/issue_comments_000672.json:
 }
 ```
 
-Attachment
+Attachment [Gd.errlog](tarball://root/attachments/some-uuid/ticket147/Gd.errlog) by justin created at 2006-10-21 20:52:14
 
 build log for gd
 

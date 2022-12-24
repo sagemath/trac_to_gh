@@ -47,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2148
 archive/issue_comments_014091.json:
 ```json
 {
-    "body": "Attachment\n\nfix monomial order keywords in polybori wrapper",
+    "body": "Attachment [2148-polybori_monomial_order_keywords.patch](tarball://root/attachments/some-uuid/ticket2148/2148-polybori_monomial_order_keywords.patch) by burcin created at 2008-02-17 16:51:36\n\nfix monomial order keywords in polybori wrapper",
     "created_at": "2008-02-17T16:51:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2148",
     "type": "issue_comment",
@@ -56,7 +56,7 @@ archive/issue_comments_014091.json:
 }
 ```
 
-Attachment
+Attachment [2148-polybori_monomial_order_keywords.patch](tarball://root/attachments/some-uuid/ticket2148/2148-polybori_monomial_order_keywords.patch) by burcin created at 2008-02-17 16:51:36
 
 fix monomial order keywords in polybori wrapper
 
@@ -236,7 +236,7 @@ reverse variables for degrevlex to dp_asc conversion
 archive/issue_comments_014099.json:
 ```json
 {
-    "body": "Attachment\n\nattachment:2148-polybori-fix_degrevlex.patch arranges the variable indexes in the Sage - `PolyBoRi` interface to handle the difference between degrevlex and dp_asc orders.\n\nNote that with this patch, printing is reversed when using dp_asc orders:\n\n\n```\nsage: P.<x,y,z> = BooleanPolynomialRing(3,order='degrevlex')\nsage: x*y*z\nz*y*x\nsage: P.<x,y,z> = BooleanPolynomialRing(3,order='lex')\nsage: x*y*z\nx*y*z\n```\n",
+    "body": "Attachment [2148-polybori-fix_degrevlex.patch](tarball://root/attachments/some-uuid/ticket2148/2148-polybori-fix_degrevlex.patch) by burcin created at 2008-03-08 13:31:46\n\nattachment:2148-polybori-fix_degrevlex.patch arranges the variable indexes in the Sage - `PolyBoRi` interface to handle the difference between degrevlex and dp_asc orders.\n\nNote that with this patch, printing is reversed when using dp_asc orders:\n\n\n```\nsage: P.<x,y,z> = BooleanPolynomialRing(3,order='degrevlex')\nsage: x*y*z\nz*y*x\nsage: P.<x,y,z> = BooleanPolynomialRing(3,order='lex')\nsage: x*y*z\nx*y*z\n```\n",
     "created_at": "2008-03-08T13:31:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2148",
     "type": "issue_comment",
@@ -245,7 +245,7 @@ archive/issue_comments_014099.json:
 }
 ```
 
-Attachment
+Attachment [2148-polybori-fix_degrevlex.patch](tarball://root/attachments/some-uuid/ticket2148/2148-polybori-fix_degrevlex.patch) by burcin created at 2008-03-08 13:31:46
 
 attachment:2148-polybori-fix_degrevlex.patch arranges the variable indexes in the Sage - `PolyBoRi` interface to handle the difference between degrevlex and dp_asc orders.
 

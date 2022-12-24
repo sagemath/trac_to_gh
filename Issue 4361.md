@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4361
 archive/issue_comments_032041.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [integer_gamma_poles.patch](tarball://root/attachments/some-uuid/ticket4361/integer_gamma_poles.patch) by robertwb created at 2008-10-30 21:37:58",
     "created_at": "2008-10-30T21:37:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4361",
     "type": "issue_comment",
@@ -51,7 +51,7 @@ archive/issue_comments_032041.json:
 }
 ```
 
-Attachment
+Attachment [integer_gamma_poles.patch](tarball://root/attachments/some-uuid/ticket4361/integer_gamma_poles.patch) by robertwb created at 2008-10-30 21:37:58
 
 
 

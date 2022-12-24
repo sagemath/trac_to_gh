@@ -53,7 +53,7 @@ Changing status from new to needs_review.
 archive/issue_comments_085395.json:
 ```json
 {
-    "body": "Attachment\n\nPatch removes doc/common/macros.tex, replaces amsfonts by amssymb in latex preamble string of doc/common/conf.py.\n\n4.4.3.alpha3 HTMl and PDF documentation all build without halting when this patch is applied and a limited survey indicates they look good as well.",
+    "body": "Attachment [trac_9145_math_symbols_docs.patch](tarball://root/attachments/some-uuid/ticket9145/trac_9145_math_symbols_docs.patch) by rbeezer created at 2010-06-05 04:14:02\n\nPatch removes doc/common/macros.tex, replaces amsfonts by amssymb in latex preamble string of doc/common/conf.py.\n\n4.4.3.alpha3 HTMl and PDF documentation all build without halting when this patch is applied and a limited survey indicates they look good as well.",
     "created_at": "2010-06-05T04:14:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9145",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_085395.json:
 }
 ```
 
-Attachment
+Attachment [trac_9145_math_symbols_docs.patch](tarball://root/attachments/some-uuid/ticket9145/trac_9145_math_symbols_docs.patch) by rbeezer created at 2010-06-05 04:14:02
 
 Patch removes doc/common/macros.tex, replaces amsfonts by amssymb in latex preamble string of doc/common/conf.py.
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4916
 archive/issue_comments_037308.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4916.patch](tarball://root/attachments/some-uuid/ticket4916/trac_4916.patch) by mhansen created at 2009-01-02 02:32:43",
     "created_at": "2009-01-02T02:32:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4916",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_037308.json:
 }
 ```
 
-Attachment
+Attachment [trac_4916.patch](tarball://root/attachments/some-uuid/ticket4916/trac_4916.patch) by mhansen created at 2009-01-02 02:32:43
 
 
 
@@ -174,7 +174,7 @@ Resolution: fixed
 archive/issue_comments_037313.json:
 ```json
 {
-    "body": "Attachment\n\nMerged in Sage 3.4.alpha0.\n\nCheers,\n\nMichael",
+    "body": "Attachment [sage.lfunctions-final.patch](tarball://root/attachments/some-uuid/ticket4916/sage.lfunctions-final.patch) by mabshoff created at 2009-02-24 18:54:42\n\nMerged in Sage 3.4.alpha0.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-24T18:54:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4916",
     "type": "issue_comment",
@@ -183,7 +183,7 @@ archive/issue_comments_037313.json:
 }
 ```
 
-Attachment
+Attachment [sage.lfunctions-final.patch](tarball://root/attachments/some-uuid/ticket4916/sage.lfunctions-final.patch) by mabshoff created at 2009-02-24 18:54:42
 
 Merged in Sage 3.4.alpha0.
 

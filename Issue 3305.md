@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3305
 archive/issue_comments_022861.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [lcalc-manpage.patch](tarball://root/attachments/some-uuid/ticket3305/lcalc-manpage.patch) by tabbott created at 2008-05-26 02:41:10",
     "created_at": "2008-05-26T02:41:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3305",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_022861.json:
 }
 ```
 
-Attachment
+Attachment [lcalc-manpage.patch](tarball://root/attachments/some-uuid/ticket3305/lcalc-manpage.patch) by tabbott created at 2008-05-26 02:41:10
 
 
 

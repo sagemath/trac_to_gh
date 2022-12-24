@@ -51,7 +51,7 @@ Changing status from new to needs_review.
 archive/issue_comments_077990.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8609_switch_ambient_space_and_scheme_to_parent.patch](tarball://root/attachments/some-uuid/ticket8609/trac_8609_switch_ambient_space_and_scheme_to_parent.patch) by novoselt created at 2010-03-25 22:52:48",
     "created_at": "2010-03-25T22:52:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8609",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_077990.json:
 }
 ```
 
-Attachment
+Attachment [trac_8609_switch_ambient_space_and_scheme_to_parent.patch](tarball://root/attachments/some-uuid/ticket8609/trac_8609_switch_ambient_space_and_scheme_to_parent.patch) by novoselt created at 2010-03-25 22:52:48
 
 
 

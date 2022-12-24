@@ -216,7 +216,7 @@ Ummm.... do we have any other way to provide the factorisation? For example, Gen
 archive/issue_comments_019069.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_2775.patch](tarball://root/attachments/some-uuid/ticket2775/trac_2775.patch) by malb created at 2008-04-05 21:35:03",
     "created_at": "2008-04-05T21:35:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2775",
     "type": "issue_comment",
@@ -225,7 +225,7 @@ archive/issue_comments_019069.json:
 }
 ```
 
-Attachment
+Attachment [trac_2775.patch](tarball://root/attachments/some-uuid/ticket2775/trac_2775.patch) by malb created at 2008-04-05 21:35:03
 
 
 

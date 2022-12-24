@@ -54,7 +54,7 @@ Migrates old notebook saves to the new notebook
 archive/issue_comments_058427.json:
 ```json
 {
-    "body": "Attachment\n\nApply this patch only.",
+    "body": "Attachment [trac_7063-sagenb-migrate-old-notebook.2.patch](tarball://root/attachments/some-uuid/ticket7063/trac_7063-sagenb-migrate-old-notebook.2.patch) by timdumol created at 2009-09-29 04:57:33\n\nApply this patch only.",
     "created_at": "2009-09-29T04:57:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7063",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_058427.json:
 }
 ```
 
-Attachment
+Attachment [trac_7063-sagenb-migrate-old-notebook.2.patch](tarball://root/attachments/some-uuid/ticket7063/trac_7063-sagenb-migrate-old-notebook.2.patch) by timdumol created at 2009-09-29 04:57:33
 
 Apply this patch only.
 
@@ -74,7 +74,7 @@ Apply this patch only.
 archive/issue_comments_058428.json:
 ```json
 {
-    "body": "Attachment\n\nExcludes everything under `backups` and `worksheets`. Apply this patch only./",
+    "body": "Attachment [trac_7063-sagenb-migrate-old-notebook.3.patch](tarball://root/attachments/some-uuid/ticket7063/trac_7063-sagenb-migrate-old-notebook.3.patch) by timdumol created at 2009-09-29 05:37:42\n\nExcludes everything under `backups` and `worksheets`. Apply this patch only./",
     "created_at": "2009-09-29T05:37:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7063",
     "type": "issue_comment",
@@ -83,7 +83,7 @@ archive/issue_comments_058428.json:
 }
 ```
 
-Attachment
+Attachment [trac_7063-sagenb-migrate-old-notebook.3.patch](tarball://root/attachments/some-uuid/ticket7063/trac_7063-sagenb-migrate-old-notebook.3.patch) by timdumol created at 2009-09-29 05:37:42
 
 Excludes everything under `backups` and `worksheets`. Apply this patch only./
 
@@ -130,7 +130,7 @@ Resolution: fixed
 archive/issue_comments_058431.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7063-sagenb-migrate-old-notebook.4.patch](tarball://root/attachments/some-uuid/ticket7063/trac_7063-sagenb-migrate-old-notebook.4.patch) by was created at 2009-09-29 06:28:34",
     "created_at": "2009-09-29T06:28:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7063",
     "type": "issue_comment",
@@ -139,7 +139,7 @@ archive/issue_comments_058431.json:
 }
 ```
 
-Attachment
+Attachment [trac_7063-sagenb-migrate-old-notebook.4.patch](tarball://root/attachments/some-uuid/ticket7063/trac_7063-sagenb-migrate-old-notebook.4.patch) by was created at 2009-09-29 06:28:34
 
 
 

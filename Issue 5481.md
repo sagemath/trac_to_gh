@@ -91,7 +91,7 @@ Maybe sage-ptest needs changing.  I'm still trying to figure out what the issue 
 archive/issue_comments_042527.json:
 ```json
 {
-    "body": "Attachment\n\nHere's a patch.  (The first change -- deleting all.py and __init__.py -- comes from #6108.)",
+    "body": "Attachment [trac_5481_scripts.patch](tarball://root/attachments/some-uuid/ticket5481/trac_5481_scripts.patch) by jhpalmieri created at 2009-06-16 03:28:03\n\nHere's a patch.  (The first change -- deleting all.py and __init__.py -- comes from #6108.)",
     "created_at": "2009-06-16T03:28:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5481",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_042527.json:
 }
 ```
 
-Attachment
+Attachment [trac_5481_scripts.patch](tarball://root/attachments/some-uuid/ticket5481/trac_5481_scripts.patch) by jhpalmieri created at 2009-06-16 03:28:03
 
 Here's a patch.  (The first change -- deleting all.py and __init__.py -- comes from #6108.)
 

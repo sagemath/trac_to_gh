@@ -217,7 +217,7 @@ Actually, I was confused -- I was under the impression that `e` was of type `Exp
 archive/issue_comments_035749.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4735.patch](tarball://root/attachments/some-uuid/ticket4735/trac_4735.patch) by mhansen created at 2012-05-28 07:08:26",
     "created_at": "2012-05-28T07:08:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4735",
     "type": "issue_comment",
@@ -226,7 +226,7 @@ archive/issue_comments_035749.json:
 }
 ```
 
-Attachment
+Attachment [trac_4735.patch](tarball://root/attachments/some-uuid/ticket4735/trac_4735.patch) by mhansen created at 2012-05-28 07:08:26
 
 
 
@@ -289,7 +289,7 @@ Adds lots of examples
 archive/issue_comments_035753.json:
 ```json
 {
-    "body": "Attachment\n\nThis is a **heavily** requested feature, so I've added a number of examples, as well as added the original file in question to the reference manual (though the new doc there from the first patch doesn't show up since it's in a double-underscore method).  The complex matrices were in particular demand, so thank you so much for fixing this.\n\nI've added enough that, though it passes tests, I'd appreciate a further review to make sure I didn't do something silly.  Positive review for Mike's patch.",
+    "body": "Attachment [trac_4735-examples.patch](tarball://root/attachments/some-uuid/ticket4735/trac_4735-examples.patch) by kcrisman created at 2012-05-28 15:43:01\n\nThis is a **heavily** requested feature, so I've added a number of examples, as well as added the original file in question to the reference manual (though the new doc there from the first patch doesn't show up since it's in a double-underscore method).  The complex matrices were in particular demand, so thank you so much for fixing this.\n\nI've added enough that, though it passes tests, I'd appreciate a further review to make sure I didn't do something silly.  Positive review for Mike's patch.",
     "created_at": "2012-05-28T15:43:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4735",
     "type": "issue_comment",
@@ -298,7 +298,7 @@ archive/issue_comments_035753.json:
 }
 ```
 
-Attachment
+Attachment [trac_4735-examples.patch](tarball://root/attachments/some-uuid/ticket4735/trac_4735-examples.patch) by kcrisman created at 2012-05-28 15:43:01
 
 This is a **heavily** requested feature, so I've added a number of examples, as well as added the original file in question to the reference manual (though the new doc there from the first patch doesn't show up since it's in a double-underscore method).  The complex matrices were in particular demand, so thank you so much for fixing this.
 

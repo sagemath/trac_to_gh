@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9119
 archive/issue_comments_084811.json:
 ```json
 {
-    "body": "Attachment\n\nThis ticket is a trivial one to review!",
+    "body": "Attachment [trac-9119-declare-variables.patch](tarball://root/attachments/some-uuid/ticket9119/trac-9119-declare-variables.patch) by jason created at 2010-06-03 02:25:02\n\nThis ticket is a trivial one to review!",
     "created_at": "2010-06-03T02:25:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9119",
     "type": "issue_comment",
@@ -50,7 +50,7 @@ archive/issue_comments_084811.json:
 }
 ```
 
-Attachment
+Attachment [trac-9119-declare-variables.patch](tarball://root/attachments/some-uuid/ticket9119/trac-9119-declare-variables.patch) by jason created at 2010-06-03 02:25:02
 
 This ticket is a trivial one to review!
 

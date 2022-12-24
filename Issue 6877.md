@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6877
 archive/issue_comments_056770.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6877_Boolean_function_bugfix.patch](tarball://root/attachments/some-uuid/ticket6877/trac_6877_Boolean_function_bugfix.patch) by ylchapuy created at 2009-09-03 12:24:31",
     "created_at": "2009-09-03T12:24:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6877",
     "type": "issue_comment",
@@ -49,7 +49,7 @@ archive/issue_comments_056770.json:
 }
 ```
 
-Attachment
+Attachment [trac_6877_Boolean_function_bugfix.patch](tarball://root/attachments/some-uuid/ticket6877/trac_6877_Boolean_function_bugfix.patch) by ylchapuy created at 2009-09-03 12:24:31
 
 
 

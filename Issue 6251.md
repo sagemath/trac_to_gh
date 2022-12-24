@@ -119,7 +119,7 @@ Yes, this should be fixed. It's a security issue as well. I'm surprised the sess
 archive/issue_comments_049923.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6251.patch](tarball://root/attachments/some-uuid/ticket6251/trac_6251.patch) by ddrake created at 2009-06-09 07:23:46",
     "created_at": "2009-06-09T07:23:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6251",
     "type": "issue_comment",
@@ -128,7 +128,7 @@ archive/issue_comments_049923.json:
 }
 ```
 
-Attachment
+Attachment [trac_6251.patch](tarball://root/attachments/some-uuid/ticket6251/trac_6251.patch) by ddrake created at 2009-06-09 07:23:46
 
 
 
@@ -313,7 +313,7 @@ Positive review subject to removing twist.rst from the patch.
 archive/issue_comments_049933.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6251-further-stuff.patch](tarball://root/attachments/some-uuid/ticket6251/trac_6251-further-stuff.patch) by ddrake created at 2009-07-26 05:36:15",
     "created_at": "2009-07-26T05:36:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6251",
     "type": "issue_comment",
@@ -322,7 +322,7 @@ archive/issue_comments_049933.json:
 }
 ```
 
-Attachment
+Attachment [trac_6251-further-stuff.patch](tarball://root/attachments/some-uuid/ticket6251/trac_6251-further-stuff.patch) by ddrake created at 2009-07-26 05:36:15
 
 
 

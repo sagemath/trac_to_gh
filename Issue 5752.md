@@ -49,7 +49,7 @@ Coverage is now 100%, Several additional examples, including a minimal-hint, uni
 archive/issue_comments_044963.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5752_sudoku_doctest.patch](tarball://root/attachments/some-uuid/ticket5752/trac_5752_sudoku_doctest.patch) by rbeezer created at 2009-04-11 19:29:09",
     "created_at": "2009-04-11T19:29:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5752",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_044963.json:
 }
 ```
 
-Attachment
+Attachment [trac_5752_sudoku_doctest.patch](tarball://root/attachments/some-uuid/ticket5752/trac_5752_sudoku_doctest.patch) by rbeezer created at 2009-04-11 19:29:09
 
 
 

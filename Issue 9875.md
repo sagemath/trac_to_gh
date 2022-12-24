@@ -65,7 +65,7 @@ output of Configure
 archive/issue_comments_097711.json:
 ```json
 {
-    "body": "Attachment\n\ndiff from `make test-all`",
+    "body": "Attachment [rnfkummer-sta.dif](tarball://root/attachments/some-uuid/ticket9876/rnfkummer-sta.dif) by jdemeyer created at 2010-09-08 18:59:33\n\ndiff from `make test-all`",
     "created_at": "2010-09-08T18:59:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9875",
     "type": "issue_comment",
@@ -74,7 +74,7 @@ archive/issue_comments_097711.json:
 }
 ```
 
-Attachment
+Attachment [rnfkummer-sta.dif](tarball://root/attachments/some-uuid/ticket9876/rnfkummer-sta.dif) by jdemeyer created at 2010-09-08 18:59:33
 
 diff from `make test-all`
 
@@ -269,7 +269,7 @@ i860? That were the days of SPARC V7... ;-)
 archive/issue_comments_097721.json:
 ```json
 {
-    "body": "Attachment\n\nAdds doctest to catch this error in the future",
+    "body": "Attachment [9876_doctest.patch](tarball://root/attachments/some-uuid/ticket9876/9876_doctest.patch) by jdemeyer created at 2010-09-10 19:11:28\n\nAdds doctest to catch this error in the future",
     "created_at": "2010-09-10T19:11:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9875",
     "type": "issue_comment",
@@ -278,7 +278,7 @@ archive/issue_comments_097721.json:
 }
 ```
 
-Attachment
+Attachment [9876_doctest.patch](tarball://root/attachments/some-uuid/ticket9876/9876_doctest.patch) by jdemeyer created at 2010-09-10 19:11:28
 
 Adds doctest to catch this error in the future
 
@@ -531,7 +531,7 @@ patch for the PARI spkg with upstream fix and some cleanup
 archive/issue_comments_097733.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:19 leif]:\n> Jeroen, could you also extend the message printed when `SAGE_TUNE_PARI=yes` to strongly recommend running PARI's test suite after tuning?\n> \n> ----\n> \n> I'd prefer prepending `./` to `Configure`, since this will give an *appropriate* error message in any case where `src/Configure` does (for whatever reason) not exist.\n\nDone. New spkg, same place: [http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-12577.p6.spkg](http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-12577.p6.spkg)",
+    "body": "Attachment [pari.p6.patch](tarball://root/attachments/some-uuid/ticket9876/pari.p6.patch) by jdemeyer created at 2010-09-11 13:11:16\n\nReplying to [comment:19 leif]:\n> Jeroen, could you also extend the message printed when `SAGE_TUNE_PARI=yes` to strongly recommend running PARI's test suite after tuning?\n> \n> ----\n> \n> I'd prefer prepending `./` to `Configure`, since this will give an *appropriate* error message in any case where `src/Configure` does (for whatever reason) not exist.\n\nDone. New spkg, same place: [http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-12577.p6.spkg](http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-12577.p6.spkg)",
     "created_at": "2010-09-11T13:11:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9875",
     "type": "issue_comment",
@@ -540,7 +540,7 @@ archive/issue_comments_097733.json:
 }
 ```
 
-Attachment
+Attachment [pari.p6.patch](tarball://root/attachments/some-uuid/ticket9876/pari.p6.patch) by jdemeyer created at 2010-09-11 13:11:16
 
 Replying to [comment:19 leif]:
 > Jeroen, could you also extend the message printed when `SAGE_TUNE_PARI=yes` to strongly recommend running PARI's test suite after tuning?
@@ -751,7 +751,7 @@ New spkg: [http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-125
 archive/issue_comments_097741.json:
 ```json
 {
-    "body": "Attachment\n\nPatch for the PARI spkg .p6 to .p7",
+    "body": "Attachment [pari.p7.patch](tarball://root/attachments/some-uuid/ticket9876/pari.p7.patch) by jdemeyer created at 2010-09-19 08:47:28\n\nPatch for the PARI spkg .p6 to .p7",
     "created_at": "2010-09-19T08:47:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9875",
     "type": "issue_comment",
@@ -760,7 +760,7 @@ archive/issue_comments_097741.json:
 }
 ```
 
-Attachment
+Attachment [pari.p7.patch](tarball://root/attachments/some-uuid/ticket9876/pari.p7.patch) by jdemeyer created at 2010-09-19 08:47:28
 
 Patch for the PARI spkg .p6 to .p7
 

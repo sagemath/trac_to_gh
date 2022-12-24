@@ -113,7 +113,7 @@ I just refereed that patch and I can't find any implicit_plot functionality in i
 archive/issue_comments_011790.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [implicit-plot.patch](tarball://root/attachments/some-uuid/ticket1862/implicit-plot.patch) by cwitty created at 2008-03-02 18:31:33",
     "created_at": "2008-03-02T18:31:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1862",
     "type": "issue_comment",
@@ -122,7 +122,7 @@ archive/issue_comments_011790.json:
 }
 ```
 
-Attachment
+Attachment [implicit-plot.patch](tarball://root/attachments/some-uuid/ticket1862/implicit-plot.patch) by cwitty created at 2008-03-02 18:31:33
 
 
 
@@ -203,7 +203,7 @@ This should be trivial to fix by changing implicit_plot to call fast_float.  In 
 archive/issue_comments_011794.json:
 ```json
 {
-    "body": "Attachment\n\nI've put up a version of the patch ( 1862.patch ) rebased against 2.10.4.alpha0.  That's the one that should be applied.  Other than that, looks good to me.",
+    "body": "Attachment [1862.patch](tarball://root/attachments/some-uuid/ticket1862/1862.patch) by mhansen created at 2008-03-15 23:20:32\n\nI've put up a version of the patch ( 1862.patch ) rebased against 2.10.4.alpha0.  That's the one that should be applied.  Other than that, looks good to me.",
     "created_at": "2008-03-15T23:20:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1862",
     "type": "issue_comment",
@@ -212,7 +212,7 @@ archive/issue_comments_011794.json:
 }
 ```
 
-Attachment
+Attachment [1862.patch](tarball://root/attachments/some-uuid/ticket1862/1862.patch) by mhansen created at 2008-03-15 23:20:32
 
 I've put up a version of the patch ( 1862.patch ) rebased against 2.10.4.alpha0.  That's the one that should be applied.  Other than that, looks good to me.
 

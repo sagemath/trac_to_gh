@@ -54,7 +54,7 @@ Implementation of degree 2 theta series
 archive/issue_comments_077904.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8602.theta_series_degree_2.patch](tarball://root/attachments/some-uuid/ticket8602/trac_8602.theta_series_degree_2.patch) by tornaria created at 2010-03-24 19:08:26",
     "created_at": "2010-03-24T19:08:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8602",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_077904.json:
 }
 ```
 
-Attachment
+Attachment [trac_8602.theta_series_degree_2.patch](tarball://root/attachments/some-uuid/ticket8602/trac_8602.theta_series_degree_2.patch) by tornaria created at 2010-03-24 19:08:26
 
 
 

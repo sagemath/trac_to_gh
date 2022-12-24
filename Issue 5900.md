@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5900
 archive/issue_comments_046642.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage_scripts-dsage-trial.patch](tarball://root/attachments/some-uuid/ticket5900/sage_scripts-dsage-trial.patch) by tabbott created at 2009-04-26 05:43:57",
     "created_at": "2009-04-26T05:43:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5900",
     "type": "issue_comment",
@@ -43,7 +43,7 @@ archive/issue_comments_046642.json:
 }
 ```
 
-Attachment
+Attachment [sage_scripts-dsage-trial.patch](tarball://root/attachments/some-uuid/ticket5900/sage_scripts-dsage-trial.patch) by tabbott created at 2009-04-26 05:43:57
 
 
 
@@ -52,7 +52,7 @@ Attachment
 archive/issue_comments_046643.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage_scripts-twistd.patch](tarball://root/attachments/some-uuid/ticket5900/sage_scripts-twistd.patch) by tabbott created at 2009-04-26 05:44:06",
     "created_at": "2009-04-26T05:44:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5900",
     "type": "issue_comment",
@@ -61,7 +61,7 @@ archive/issue_comments_046643.json:
 }
 ```
 
-Attachment
+Attachment [sage_scripts-twistd.patch](tarball://root/attachments/some-uuid/ticket5900/sage_scripts-twistd.patch) by tabbott created at 2009-04-26 05:44:06
 
 
 

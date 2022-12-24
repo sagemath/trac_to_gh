@@ -242,7 +242,7 @@ Sorry to be so picky -- the basic idea is certainly a good one.
 archive/issue_comments_016103.json:
 ```json
 {
-    "body": "Attachment\n\nThanks very much for the comments.  I think that documentation is the principal hurdle this patch faces so I want to get it right!  I posted a new patch to address your comments.\n\nReplying to [comment:6 cremona]:\n> Also, can you give a more precise but succinct definition of your polynomial_coefficient() function, more than just examples?\n\nWell, I actually thought my description was pretty good.  It's sort of difficult to get succinct.  Feel free to post better alternatives to the first paragraph of polynomial_coefficient doc-string.",
+    "body": "Attachment [mpoly-coeff.patch](tarball://root/attachments/some-uuid/ticket2385/mpoly-coeff.patch) by jbmohler created at 2008-03-11 18:25:12\n\nThanks very much for the comments.  I think that documentation is the principal hurdle this patch faces so I want to get it right!  I posted a new patch to address your comments.\n\nReplying to [comment:6 cremona]:\n> Also, can you give a more precise but succinct definition of your polynomial_coefficient() function, more than just examples?\n\nWell, I actually thought my description was pretty good.  It's sort of difficult to get succinct.  Feel free to post better alternatives to the first paragraph of polynomial_coefficient doc-string.",
     "created_at": "2008-03-11T18:25:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2385",
     "type": "issue_comment",
@@ -251,7 +251,7 @@ archive/issue_comments_016103.json:
 }
 ```
 
-Attachment
+Attachment [mpoly-coeff.patch](tarball://root/attachments/some-uuid/ticket2385/mpoly-coeff.patch) by jbmohler created at 2008-03-11 18:25:12
 
 Thanks very much for the comments.  I think that documentation is the principal hurdle this patch faces so I want to get it right!  I posted a new patch to address your comments.
 

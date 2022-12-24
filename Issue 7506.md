@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7506
 archive/issue_comments_063496.json:
 ```json
 {
-    "body": "Attachment\n\nThis updates the notebook_object.py documentation and removes the warnings on build.",
+    "body": "Attachment [trac_7506-notebook_object-documentation.patch](tarball://root/attachments/some-uuid/ticket7506/trac_7506-notebook_object-documentation.patch) by timdumol created at 2010-01-19 21:58:04\n\nThis updates the notebook_object.py documentation and removes the warnings on build.",
     "created_at": "2010-01-19T21:58:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7506",
     "type": "issue_comment",
@@ -53,7 +53,7 @@ archive/issue_comments_063496.json:
 }
 ```
 
-Attachment
+Attachment [trac_7506-notebook_object-documentation.patch](tarball://root/attachments/some-uuid/ticket7506/trac_7506-notebook_object-documentation.patch) by timdumol created at 2010-01-19 21:58:04
 
 This updates the notebook_object.py documentation and removes the warnings on build.
 
@@ -82,7 +82,7 @@ Adds `notebook_object` to the reference manual
 archive/issue_comments_063498.json:
 ```json
 {
-    "body": "Attachment\n\nRelated: #4574.",
+    "body": "Attachment [trac_7506-sage_core_lib-notebook-obj-ref.patch](tarball://root/attachments/some-uuid/ticket7506/trac_7506-sage_core_lib-notebook-obj-ref.patch) by mpatel created at 2010-01-20 11:36:54\n\nRelated: #4574.",
     "created_at": "2010-01-20T11:36:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7506",
     "type": "issue_comment",
@@ -91,7 +91,7 @@ archive/issue_comments_063498.json:
 }
 ```
 
-Attachment
+Attachment [trac_7506-sage_core_lib-notebook-obj-ref.patch](tarball://root/attachments/some-uuid/ticket7506/trac_7506-sage_core_lib-notebook-obj-ref.patch) by mpatel created at 2010-01-20 11:36:54
 
 Related: #4574.
 
@@ -138,7 +138,7 @@ Changing status from new to needs_review.
 archive/issue_comments_063501.json:
 ```json
 {
-    "body": "Attachment\n\nHi Dan, Jason, and Karl-Dieter -- Could you look at the patch and make/recommend improvements here or at [StartingTheNotebook](http://wiki.sagemath.org/StartingTheNotebook)?\n\nAlso, should the latter have a link to [JustEnoughSageServer](http://wiki.sagemath.org/DanDrake/JustEnoughSageServer)?",
+    "body": "Attachment [trac_7506-notebook_object-documentation.2.patch](tarball://root/attachments/some-uuid/ticket7506/trac_7506-notebook_object-documentation.2.patch) by mpatel created at 2010-01-24 20:20:21\n\nHi Dan, Jason, and Karl-Dieter -- Could you look at the patch and make/recommend improvements here or at [StartingTheNotebook](http://wiki.sagemath.org/StartingTheNotebook)?\n\nAlso, should the latter have a link to [JustEnoughSageServer](http://wiki.sagemath.org/DanDrake/JustEnoughSageServer)?",
     "created_at": "2010-01-24T20:20:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7506",
     "type": "issue_comment",
@@ -147,7 +147,7 @@ archive/issue_comments_063501.json:
 }
 ```
 
-Attachment
+Attachment [trac_7506-notebook_object-documentation.2.patch](tarball://root/attachments/some-uuid/ticket7506/trac_7506-notebook_object-documentation.2.patch) by mpatel created at 2010-01-24 20:20:21
 
 Hi Dan, Jason, and Karl-Dieter -- Could you look at the patch and make/recommend improvements here or at [StartingTheNotebook](http://wiki.sagemath.org/StartingTheNotebook)?
 
@@ -295,7 +295,7 @@ The patch looks good.  Here's an accompanying patch for the Sage library: for th
 archive/issue_comments_063509.json:
 ```json
 {
-    "body": "Attachment\n\npatch for the sage repo",
+    "body": "Attachment [trac_7506-ref-manual.patch](tarball://root/attachments/some-uuid/ticket7506/trac_7506-ref-manual.patch) by jhpalmieri created at 2010-02-07 21:52:22\n\npatch for the sage repo",
     "created_at": "2010-02-07T21:52:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7506",
     "type": "issue_comment",
@@ -304,7 +304,7 @@ archive/issue_comments_063509.json:
 }
 ```
 
-Attachment
+Attachment [trac_7506-ref-manual.patch](tarball://root/attachments/some-uuid/ticket7506/trac_7506-ref-manual.patch) by jhpalmieri created at 2010-02-07 21:52:22
 
 patch for the sage repo
 

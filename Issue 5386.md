@@ -305,7 +305,7 @@ Florent, thanks for the comment, and even more, thanks for the helpful error mes
 archive/issue_comments_041483.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [homology.patch](tarball://root/attachments/some-uuid/ticket5386/homology.patch) by jhpalmieri created at 2009-04-13 23:55:44",
     "created_at": "2009-04-13T23:55:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5386",
     "type": "issue_comment",
@@ -314,7 +314,7 @@ archive/issue_comments_041483.json:
 }
 ```
 
-Attachment
+Attachment [homology.patch](tarball://root/attachments/some-uuid/ticket5386/homology.patch) by jhpalmieri created at 2009-04-13 23:55:44
 
 
 

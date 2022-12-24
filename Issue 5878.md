@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5878
 archive/issue_comments_046437.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch adds functionality to construct Young's seminormal and orthogonal representations as well as the Specht representation. This is done via Yang-Baxter graphs, so the patch implements that as well.",
+    "body": "Attachment [trac_5878.patch](tarball://root/attachments/some-uuid/ticket5878/trac_5878.patch) by saliola created at 2009-04-23 17:05:46\n\nThe patch adds functionality to construct Young's seminormal and orthogonal representations as well as the Specht representation. This is done via Yang-Baxter graphs, so the patch implements that as well.",
     "created_at": "2009-04-23T17:05:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5878",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_046437.json:
 }
 ```
 
-Attachment
+Attachment [trac_5878.patch](tarball://root/attachments/some-uuid/ticket5878/trac_5878.patch) by saliola created at 2009-04-23 17:05:46
 
 The patch adds functionality to construct Young's seminormal and orthogonal representations as well as the Specht representation. This is done via Yang-Baxter graphs, so the patch implements that as well.
 
@@ -186,7 +186,7 @@ Changing assignee from saliola to mhansen.
 archive/issue_comments_046443.json:
 ```json
 {
-    "body": "Attachment\n\nThings look good to me after I've applied my reviewer patch which takes care of the issues with the upgrade to 4.0.\n\nFranco, can you just check over these?",
+    "body": "Attachment [trac_5878-review.patch](tarball://root/attachments/some-uuid/ticket5878/trac_5878-review.patch) by mhansen created at 2009-06-04 18:48:09\n\nThings look good to me after I've applied my reviewer patch which takes care of the issues with the upgrade to 4.0.\n\nFranco, can you just check over these?",
     "created_at": "2009-06-04T18:48:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5878",
     "type": "issue_comment",
@@ -195,7 +195,7 @@ archive/issue_comments_046443.json:
 }
 ```
 
-Attachment
+Attachment [trac_5878-review.patch](tarball://root/attachments/some-uuid/ticket5878/trac_5878-review.patch) by mhansen created at 2009-06-04 18:48:09
 
 Things look good to me after I've applied my reviewer patch which takes care of the issues with the upgrade to 4.0.
 

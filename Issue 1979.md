@@ -91,7 +91,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1979
 archive/issue_comments_012828.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-2.10.1.rc3-fix-doctest-fallout-from_trac-740.patch](tarball://root/attachments/some-uuid/ticket1979/Sage-2.10.1.rc3-fix-doctest-fallout-from_trac-740.patch) by mabshoff created at 2008-01-30 05:18:12",
     "created_at": "2008-01-30T05:18:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1979",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_012828.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.10.1.rc3-fix-doctest-fallout-from_trac-740.patch](tarball://root/attachments/some-uuid/ticket1979/Sage-2.10.1.rc3-fix-doctest-fallout-from_trac-740.patch) by mabshoff created at 2008-01-30 05:18:12
 
 
 
@@ -163,7 +163,7 @@ Looks good to me (and Cremona said the same in email).
 archive/issue_comments_012832.json:
 ```json
 {
-    "body": "Attachment\n\nThis is a corrected patch of my patch, so I am reverting my patch an applying this one",
+    "body": "Attachment [ec740.patch](tarball://root/attachments/some-uuid/ticket1979/ec740.patch) by mabshoff created at 2008-01-30 15:24:06\n\nThis is a corrected patch of my patch, so I am reverting my patch an applying this one",
     "created_at": "2008-01-30T15:24:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1979",
     "type": "issue_comment",
@@ -172,7 +172,7 @@ archive/issue_comments_012832.json:
 }
 ```
 
-Attachment
+Attachment [ec740.patch](tarball://root/attachments/some-uuid/ticket1979/ec740.patch) by mabshoff created at 2008-01-30 15:24:06
 
 This is a corrected patch of my patch, so I am reverting my patch an applying this one
 

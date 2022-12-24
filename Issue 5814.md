@@ -163,7 +163,7 @@ Resolution: invalid
 archive/issue_comments_045661.json:
 ```json
 {
-    "body": "Attachment\n\nIt turns out that this does need to be tackled in the sage library itself. It is possible to add a `prun` object there, which will be automatically used without having to do any special handling in the notebook. I've closed my pull request for the notebook and am reopening this ticket.",
+    "body": "Attachment [trac_5814_enable_prun_in_notebook.patch](tarball://root/attachments/some-uuid/ticket5814/trac_5814_enable_prun_in_notebook.patch) by tkluck created at 2012-09-05 12:58:16\n\nIt turns out that this does need to be tackled in the sage library itself. It is possible to add a `prun` object there, which will be automatically used without having to do any special handling in the notebook. I've closed my pull request for the notebook and am reopening this ticket.",
     "created_at": "2012-09-05T12:58:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
     "type": "issue_comment",
@@ -172,7 +172,7 @@ archive/issue_comments_045661.json:
 }
 ```
 
-Attachment
+Attachment [trac_5814_enable_prun_in_notebook.patch](tarball://root/attachments/some-uuid/ticket5814/trac_5814_enable_prun_in_notebook.patch) by tkluck created at 2012-09-05 12:58:16
 
 It turns out that this does need to be tackled in the sage library itself. It is possible to add a `prun` object there, which will be automatically used without having to do any special handling in the notebook. I've closed my pull request for the notebook and am reopening this ticket.
 
@@ -279,7 +279,7 @@ Travis
 archive/issue_comments_045667.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5814_add_doctests_to_prun_object.patch](tarball://root/attachments/some-uuid/ticket5814/trac_5814_add_doctests_to_prun_object.patch) by tkluck created at 2013-03-11 15:49:41",
     "created_at": "2013-03-11T15:49:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
     "type": "issue_comment",
@@ -288,7 +288,7 @@ archive/issue_comments_045667.json:
 }
 ```
 
-Attachment
+Attachment [trac_5814_add_doctests_to_prun_object.patch](tarball://root/attachments/some-uuid/ticket5814/trac_5814_add_doctests_to_prun_object.patch) by tkluck created at 2013-03-11 15:49:41
 
 
 
@@ -315,7 +315,7 @@ Thanks for your comment, Travis. I just added the doctests. I'm not sure whether
 archive/issue_comments_045669.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5814-prun_notebook-review-ts.patch](tarball://root/attachments/some-uuid/ticket5814/trac_5814-prun_notebook-review-ts.patch) by tscrim created at 2013-04-01 18:03:29",
     "created_at": "2013-04-01T18:03:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
     "type": "issue_comment",
@@ -324,7 +324,7 @@ archive/issue_comments_045669.json:
 }
 ```
 
-Attachment
+Attachment [trac_5814-prun_notebook-review-ts.patch](tarball://root/attachments/some-uuid/ticket5814/trac_5814-prun_notebook-review-ts.patch) by tscrim created at 2013-04-01 18:03:29
 
 
 
@@ -481,7 +481,7 @@ The first patch isn't a proper HG changeset (patches should be generated using `
 archive/issue_comments_045676.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5814-prun_notebook-combined.patch](tarball://root/attachments/some-uuid/ticket5814/trac_5814-prun_notebook-combined.patch) by tscrim created at 2013-04-04 16:25:46",
     "created_at": "2013-04-04T16:25:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
     "type": "issue_comment",
@@ -490,7 +490,7 @@ archive/issue_comments_045676.json:
 }
 ```
 
-Attachment
+Attachment [trac_5814-prun_notebook-combined.patch](tarball://root/attachments/some-uuid/ticket5814/trac_5814-prun_notebook-combined.patch) by tscrim created at 2013-04-04 16:25:46
 
 
 

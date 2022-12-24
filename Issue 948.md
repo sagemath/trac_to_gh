@@ -105,7 +105,7 @@ I am retagging this as 2.8.10 which means applying the patch attached to this ti
 archive/issue_comments_005788.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [singular-nf.patch](tarball://root/attachments/some-uuid/ticket948/singular-nf.patch) by malb created at 2007-10-25 15:33:12",
     "created_at": "2007-10-25T15:33:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/948",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_005788.json:
 }
 ```
 
-Attachment
+Attachment [singular-nf.patch](tarball://root/attachments/some-uuid/ticket948/singular-nf.patch) by malb created at 2007-10-25 15:33:12
 
 
 

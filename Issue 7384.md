@@ -51,7 +51,7 @@ Changing status from new to needs_review.
 archive/issue_comments_062103.json:
 ```json
 {
-    "body": "Attachment\n\nFixed the doctests",
+    "body": "Attachment [trac_7384-sphinxify-docstrings.patch](tarball://root/attachments/some-uuid/ticket7384/trac_7384-sphinxify-docstrings.patch) by timdumol created at 2009-11-03 21:19:48\n\nFixed the doctests",
     "created_at": "2009-11-03T21:19:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7384",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_062103.json:
 }
 ```
 
-Attachment
+Attachment [trac_7384-sphinxify-docstrings.patch](tarball://root/attachments/some-uuid/ticket7384/trac_7384-sphinxify-docstrings.patch) by timdumol created at 2009-11-03 21:19:48
 
 Fixed the doctests
 
@@ -113,7 +113,7 @@ But it could be my setup.  If not, please see version 2 of the patch.
 archive/issue_comments_062105.json:
 ```json
 {
-    "body": "Attachment\n\nUpdate doctest outputs.  Apply only this patch.",
+    "body": "Attachment [trac_7384-sphinxify-docstrings_v2.patch](tarball://root/attachments/some-uuid/ticket7384/trac_7384-sphinxify-docstrings_v2.patch) by mpatel created at 2009-11-04 05:14:01\n\nUpdate doctest outputs.  Apply only this patch.",
     "created_at": "2009-11-04T05:14:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7384",
     "type": "issue_comment",
@@ -122,7 +122,7 @@ archive/issue_comments_062105.json:
 }
 ```
 
-Attachment
+Attachment [trac_7384-sphinxify-docstrings_v2.patch](tarball://root/attachments/some-uuid/ticket7384/trac_7384-sphinxify-docstrings_v2.patch) by mpatel created at 2009-11-04 05:14:01
 
 Update doctest outputs.  Apply only this patch.
 

@@ -49,7 +49,7 @@ bundle with my rewrite and some fixes by R. Bradshaw and D. Harvey
 archive/issue_comments_003646.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ntl_rewrite_for_2842.hg](tarball://root/attachments/some-uuid/ticket697/ntl_rewrite_for_2842.hg) by mabshoff created at 2007-09-19 21:21:16",
     "created_at": "2007-09-19T21:21:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/697",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_003646.json:
 }
 ```
 
-Attachment
+Attachment [ntl_rewrite_for_2842.hg](tarball://root/attachments/some-uuid/ticket697/ntl_rewrite_for_2842.hg) by mabshoff created at 2007-09-19 21:21:16
 
 
 

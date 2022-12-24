@@ -85,7 +85,7 @@ to be applied to sage-3.3.alpha6
 archive/issue_comments_040168.json:
 ```json
 {
-    "body": "Attachment\n\nThis passes sage -t but sage -testall has lots of (unrelated I think) failures. It simply fixes the bug reported and adds the required docstring examples.",
+    "body": "Attachment [trac_5241-matrix-gp-list.patch](tarball://root/attachments/some-uuid/ticket5241/trac_5241-matrix-gp-list.patch) by wdj created at 2009-02-17 02:55:24\n\nThis passes sage -t but sage -testall has lots of (unrelated I think) failures. It simply fixes the bug reported and adds the required docstring examples.",
     "created_at": "2009-02-17T02:55:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5241",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_040168.json:
 }
 ```
 
-Attachment
+Attachment [trac_5241-matrix-gp-list.patch](tarball://root/attachments/some-uuid/ticket5241/trac_5241-matrix-gp-list.patch) by wdj created at 2009-02-17 02:55:24
 
 This passes sage -t but sage -testall has lots of (unrelated I think) failures. It simply fixes the bug reported and adds the required docstring examples.
 
@@ -170,7 +170,7 @@ Apply only `trac_5241-rebased.patch`.
 archive/issue_comments_040172.json:
 ```json
 {
-    "body": "Attachment\n\nrebased against 4.0",
+    "body": "Attachment [trac_5241-rebased.patch](tarball://root/attachments/some-uuid/ticket5241/trac_5241-rebased.patch) by AlexGhitza created at 2009-05-31 13:20:11\n\nrebased against 4.0",
     "created_at": "2009-05-31T13:20:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5241",
     "type": "issue_comment",
@@ -179,7 +179,7 @@ archive/issue_comments_040172.json:
 }
 ```
 
-Attachment
+Attachment [trac_5241-rebased.patch](tarball://root/attachments/some-uuid/ticket5241/trac_5241-rebased.patch) by AlexGhitza created at 2009-05-31 13:20:11
 
 rebased against 4.0
 

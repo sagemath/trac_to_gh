@@ -79,7 +79,7 @@ Escape data file content placed in view/edit window.  sagenb repo.
 archive/issue_comments_063386.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7497-escape_view_edit_attached.patch](tarball://root/attachments/some-uuid/ticket7497/trac_7497-escape_view_edit_attached.patch) by mpatel created at 2010-01-02 01:08:54",
     "created_at": "2010-01-02T01:08:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7497",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_063386.json:
 }
 ```
 
-Attachment
+Attachment [trac_7497-escape_view_edit_attached.patch](tarball://root/attachments/some-uuid/ticket7497/trac_7497-escape_view_edit_attached.patch) by mpatel created at 2010-01-02 01:08:54
 
 
 

@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7243
 archive/issue_comments_060134.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7243.patch](tarball://root/attachments/some-uuid/ticket7243/trac_7243.patch) by mhansen created at 2009-10-19 04:06:57",
     "created_at": "2009-10-19T04:06:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7243",
     "type": "issue_comment",
@@ -51,7 +51,7 @@ archive/issue_comments_060134.json:
 }
 ```
 
-Attachment
+Attachment [trac_7243.patch](tarball://root/attachments/some-uuid/ticket7243/trac_7243.patch) by mhansen created at 2009-10-19 04:06:57
 
 
 
@@ -157,7 +157,7 @@ Yeah, using '#!/usr/bin/env bash' should be correct.
 archive/issue_comments_060139.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7243.patch.v2](tarball://root/attachments/some-uuid/ticket7243/trac_7243.patch.v2) by tabbott created at 2009-12-17 19:34:25",
     "created_at": "2009-12-17T19:34:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7243",
     "type": "issue_comment",
@@ -166,7 +166,7 @@ archive/issue_comments_060139.json:
 }
 ```
 
-Attachment
+Attachment [trac_7243.patch.v2](tarball://root/attachments/some-uuid/ticket7243/trac_7243.patch.v2) by tabbott created at 2009-12-17 19:34:25
 
 
 

@@ -47,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8673
 archive/issue_comments_078928.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8673_out_of_range_index-sl.patch](tarball://root/attachments/some-uuid/ticket8673/trac_8673_out_of_range_index-sl.patch) by slabbe created at 2011-02-18 19:57:43",
     "created_at": "2011-02-18T19:57:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8673",
     "type": "issue_comment",
@@ -56,7 +56,7 @@ archive/issue_comments_078928.json:
 }
 ```
 
-Attachment
+Attachment [trac_8673_out_of_range_index-sl.patch](tarball://root/attachments/some-uuid/ticket8673/trac_8673_out_of_range_index-sl.patch) by slabbe created at 2011-02-18 19:57:43
 
 
 

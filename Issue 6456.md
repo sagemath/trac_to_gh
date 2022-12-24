@@ -197,7 +197,7 @@ Can you reproduce this on a stand-alone build of cvxopt?
 archive/issue_comments_051985.json:
 ```json
 {
-    "body": "Attachment\n\npatch for cvxopt-1.1.2.p1/src/src/setup.py",
+    "body": "Attachment [trac-6456.patch](tarball://root/attachments/some-uuid/ticket6456/trac-6456.patch) by dimpase created at 2010-02-04 16:22:54\n\npatch for cvxopt-1.1.2.p1/src/src/setup.py",
     "created_at": "2010-02-04T16:22:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -206,7 +206,7 @@ archive/issue_comments_051985.json:
 }
 ```
 
-Attachment
+Attachment [trac-6456.patch](tarball://root/attachments/some-uuid/ticket6456/trac-6456.patch) by dimpase created at 2010-02-04 16:22:54
 
 patch for cvxopt-1.1.2.p1/src/src/setup.py
 
@@ -971,7 +971,7 @@ trival changes to the cvxopt chapter in the numerical sage tutorial
 archive/issue_comments_052013.json:
 ```json
 {
-    "body": "Attachment\n\nAny ideas why the new spkg is so much smaller than the old one?\n\n```\n-rw-r--r-- 1 palmieri palmieri 2463336 2010-02-11 08:56 spkg/standard/cvxopt-0.9.p8.spkg\n-rw-r--r-- 1 palmieri palmieri  733213 2010-03-24 09:49 spkg/standard/cvxopt-1.1.2.spkg\n```\n",
+    "body": "Attachment [6456-numerical_sage_cvxopt.patch](tarball://root/attachments/some-uuid/ticket6456/6456-numerical_sage_cvxopt.patch) by jhpalmieri created at 2010-04-19 21:58:42\n\nAny ideas why the new spkg is so much smaller than the old one?\n\n```\n-rw-r--r-- 1 palmieri palmieri 2463336 2010-02-11 08:56 spkg/standard/cvxopt-0.9.p8.spkg\n-rw-r--r-- 1 palmieri palmieri  733213 2010-03-24 09:49 spkg/standard/cvxopt-1.1.2.spkg\n```\n",
     "created_at": "2010-04-19T21:58:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -980,7 +980,7 @@ archive/issue_comments_052013.json:
 }
 ```
 
-Attachment
+Attachment [6456-numerical_sage_cvxopt.patch](tarball://root/attachments/some-uuid/ticket6456/6456-numerical_sage_cvxopt.patch) by jhpalmieri created at 2010-04-19 21:58:42
 
 Any ideas why the new spkg is so much smaller than the old one?
 
@@ -1211,7 +1211,7 @@ There is also the issue at #9525 which needs to be taken care of.
 archive/issue_comments_052023.json:
 ```json
 {
-    "body": "Attachment\n\nCheck for errors while installing cvxopt. Note there is still no spkg-check file. That may or may not be useful - it depends on the source code whether it supports tests.",
+    "body": "Attachment [6456-error-check-while-installing.patch](tarball://root/attachments/some-uuid/ticket6456/6456-error-check-while-installing.patch) by drkirkby created at 2010-07-17 18:45:06\n\nCheck for errors while installing cvxopt. Note there is still no spkg-check file. That may or may not be useful - it depends on the source code whether it supports tests.",
     "created_at": "2010-07-17T18:45:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -1220,7 +1220,7 @@ archive/issue_comments_052023.json:
 }
 ```
 
-Attachment
+Attachment [6456-error-check-while-installing.patch](tarball://root/attachments/some-uuid/ticket6456/6456-error-check-while-installing.patch) by drkirkby created at 2010-07-17 18:45:06
 
 Check for errors while installing cvxopt. Note there is still no spkg-check file. That may or may not be useful - it depends on the source code whether it supports tests.
 
@@ -1758,7 +1758,7 @@ Dave
 archive/issue_comments_052041.json:
 ```json
 {
-    "body": "Attachment\n\n6456-freebsd-spkg-install.patch adds support for FreeBSD (this is a port of the patch in #9601).  I have compile-tested this but not yet tried to use the resultant module.\n\nNote that further changes are necessary for cvxopt-1.1.2.p1.spkg to work on most 64-bit OSs.\nCompiling in FreeBSD/amd64 (with or without the above patch) gives:\n\n```\ngcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I/mnt/sage-4.5/local/include -fPIC -DDLONG= -I/mnt/sage-4.5/local/include/python2.6 -c C/misc_solvers.c -o build/temp.freebsd-8.1-PRERELEASE-amd64-2.6/C/misc_solvers.o\nC/misc_solvers.c: In function 'scale':\nC/misc_solvers.c:152:13: warning: passing argument 1 of 'dscal_' from incompatible pointer type\nC/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:152:13: warning: passing argument 4 of 'dscal_' from incompatible pointer type\nC/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:155:13: warning: passing argument 3 of 'dgemv_' from incompatible pointer type\nC/misc_solvers.c:39:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:156:9: warning: passing argument 1 of 'dscal_' from incompatible pointer type\nC/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:156:9: warning: passing argument 4 of 'dscal_' from incompatible pointer type\nC/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:158:13: warning: passing argument 2 of 'dger_' from incompatible pointer type\nC/misc_solvers.c:41:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:160:13: warning: passing argument 1 of 'dscal_' from incompatible pointer type\nC/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:160:13: warning: passing argument 4 of 'dscal_' from incompatible pointer type\nC/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c: In function 'pack2':\nC/misc_solvers.c:459:17: warning: passing argument 3 of 'dlacpy_' from incompatible pointer type\nC/misc_solvers.c:49:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:459:17: warning: passing argument 5 of 'dlacpy_' from incompatible pointer type\nC/misc_solvers.c:49:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:461:17: warning: passing argument 1 of 'dscal_' from incompatible pointer type\nC/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:463:17: warning: passing argument 3 of 'dlacpy_' from incompatible pointer type\nC/misc_solvers.c:49:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:463:17: warning: passing argument 7 of 'dlacpy_' from incompatible pointer type\nC/misc_solvers.c:49:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\n```\n\n\n`Py_ssize_t` is typedef'd from `ssize_t`, which is `long` on at least FreeBSD, Linux and Solaris.  I believe this is a blocking issue.",
+    "body": "Attachment [6456-freebsd-spkg-install.patch](tarball://root/attachments/some-uuid/ticket6456/6456-freebsd-spkg-install.patch) by pjeremy created at 2010-07-27 23:01:20\n\n6456-freebsd-spkg-install.patch adds support for FreeBSD (this is a port of the patch in #9601).  I have compile-tested this but not yet tried to use the resultant module.\n\nNote that further changes are necessary for cvxopt-1.1.2.p1.spkg to work on most 64-bit OSs.\nCompiling in FreeBSD/amd64 (with or without the above patch) gives:\n\n```\ngcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I/mnt/sage-4.5/local/include -fPIC -DDLONG= -I/mnt/sage-4.5/local/include/python2.6 -c C/misc_solvers.c -o build/temp.freebsd-8.1-PRERELEASE-amd64-2.6/C/misc_solvers.o\nC/misc_solvers.c: In function 'scale':\nC/misc_solvers.c:152:13: warning: passing argument 1 of 'dscal_' from incompatible pointer type\nC/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:152:13: warning: passing argument 4 of 'dscal_' from incompatible pointer type\nC/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:155:13: warning: passing argument 3 of 'dgemv_' from incompatible pointer type\nC/misc_solvers.c:39:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:156:9: warning: passing argument 1 of 'dscal_' from incompatible pointer type\nC/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:156:9: warning: passing argument 4 of 'dscal_' from incompatible pointer type\nC/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:158:13: warning: passing argument 2 of 'dger_' from incompatible pointer type\nC/misc_solvers.c:41:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:160:13: warning: passing argument 1 of 'dscal_' from incompatible pointer type\nC/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:160:13: warning: passing argument 4 of 'dscal_' from incompatible pointer type\nC/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c: In function 'pack2':\nC/misc_solvers.c:459:17: warning: passing argument 3 of 'dlacpy_' from incompatible pointer type\nC/misc_solvers.c:49:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:459:17: warning: passing argument 5 of 'dlacpy_' from incompatible pointer type\nC/misc_solvers.c:49:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:461:17: warning: passing argument 1 of 'dscal_' from incompatible pointer type\nC/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:463:17: warning: passing argument 3 of 'dlacpy_' from incompatible pointer type\nC/misc_solvers.c:49:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:463:17: warning: passing argument 7 of 'dlacpy_' from incompatible pointer type\nC/misc_solvers.c:49:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\n```\n\n\n`Py_ssize_t` is typedef'd from `ssize_t`, which is `long` on at least FreeBSD, Linux and Solaris.  I believe this is a blocking issue.",
     "created_at": "2010-07-27T23:01:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -1767,7 +1767,7 @@ archive/issue_comments_052041.json:
 }
 ```
 
-Attachment
+Attachment [6456-freebsd-spkg-install.patch](tarball://root/attachments/some-uuid/ticket6456/6456-freebsd-spkg-install.patch) by pjeremy created at 2010-07-27 23:01:20
 
 6456-freebsd-spkg-install.patch adds support for FreeBSD (this is a port of the patch in #9601).  I have compile-tested this but not yet tried to use the resultant module.
 
@@ -2252,7 +2252,7 @@ Results from running cvxopt's self tests on a Linux system (sage.math), but sett
 archive/issue_comments_052055.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:58 drkirkby]:\n> I'm not sure what to make of this. I don't feel this is ready, given the high failure rate of the self-tests. \n\nI've run them locally and many open a plot window. Do you have installed all the appropriate libraries for plotting? For me, this smells like it is clearly not designed for automated testing because I had to close all windows manually. Besides that, your script also tests `/chap7/covsel.bin` which is not a python file and also not found by the appropriate `/chap7/covsel` script due to relative paths.\n\nI appreciate to try to include testing - and in general it makes sense to do it - but my point of view is that it is much more important to update this years old library and get compiling working on all platforms and resort fixing the library later in separate tickets. 0.9 is not useful at all.",
+    "body": "Attachment [cvxopt-1.1.2-Linux-tests.log](tarball://root/attachments/some-uuid/ticket6456/cvxopt-1.1.2-Linux-tests.log) by schilly created at 2010-07-28 17:58:48\n\nReplying to [comment:58 drkirkby]:\n> I'm not sure what to make of this. I don't feel this is ready, given the high failure rate of the self-tests. \n\nI've run them locally and many open a plot window. Do you have installed all the appropriate libraries for plotting? For me, this smells like it is clearly not designed for automated testing because I had to close all windows manually. Besides that, your script also tests `/chap7/covsel.bin` which is not a python file and also not found by the appropriate `/chap7/covsel` script due to relative paths.\n\nI appreciate to try to include testing - and in general it makes sense to do it - but my point of view is that it is much more important to update this years old library and get compiling working on all platforms and resort fixing the library later in separate tickets. 0.9 is not useful at all.",
     "created_at": "2010-07-28T17:58:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -2261,7 +2261,7 @@ archive/issue_comments_052055.json:
 }
 ```
 
-Attachment
+Attachment [cvxopt-1.1.2-Linux-tests.log](tarball://root/attachments/some-uuid/ticket6456/cvxopt-1.1.2-Linux-tests.log) by schilly created at 2010-07-28 17:58:48
 
 Replying to [comment:58 drkirkby]:
 > I'm not sure what to make of this. I don't feel this is ready, given the high failure rate of the self-tests. 
@@ -2295,7 +2295,7 @@ ok, i have to take that back, with spkg-check there are no popup windows and wit
 archive/issue_comments_052057.json:
 ```json
 {
-    "body": "Attachment\n\nubuntu 10.4, pentium 4",
+    "body": "Attachment [cvxopt-1.1.2-SAGE_CHECK.log](tarball://root/attachments/some-uuid/ticket6456/cvxopt-1.1.2-SAGE_CHECK.log) by schilly created at 2010-07-28 18:15:55\n\nubuntu 10.4, pentium 4",
     "created_at": "2010-07-28T18:15:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -2304,7 +2304,7 @@ archive/issue_comments_052057.json:
 }
 ```
 
-Attachment
+Attachment [cvxopt-1.1.2-SAGE_CHECK.log](tarball://root/attachments/some-uuid/ticket6456/cvxopt-1.1.2-SAGE_CHECK.log) by schilly created at 2010-07-28 18:15:55
 
 ubuntu 10.4, pentium 4
 
@@ -3775,7 +3775,7 @@ A few comments.
 archive/issue_comments_052094.json:
 ```json
 {
-    "body": "Attachment\n\nModified deps file to ensure both GSL and GLPK gets built before cvxopt",
+    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket6456/deps) by drkirkby created at 2010-10-12 07:10:25\n\nModified deps file to ensure both GSL and GLPK gets built before cvxopt",
     "created_at": "2010-10-12T07:10:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -3784,7 +3784,7 @@ archive/issue_comments_052094.json:
 }
 ```
 
-Attachment
+Attachment [deps](tarball://root/attachments/some-uuid/ticket6456/deps) by drkirkby created at 2010-10-12 07:10:25
 
 Modified deps file to ensure both GSL and GLPK gets built before cvxopt
 
@@ -3795,7 +3795,7 @@ Modified deps file to ensure both GSL and GLPK gets built before cvxopt
 archive/issue_comments_052095.json:
 ```json
 {
-    "body": "Attachment\n\nDifferences between the new 'deps' file and that in sage-4.6.alpha3. Only for review purposes - this should not be applied.",
+    "body": "Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket6456/deps.diff) by drkirkby created at 2010-10-12 07:15:15\n\nDifferences between the new 'deps' file and that in sage-4.6.alpha3. Only for review purposes - this should not be applied.",
     "created_at": "2010-10-12T07:15:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -3804,7 +3804,7 @@ archive/issue_comments_052095.json:
 }
 ```
 
-Attachment
+Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket6456/deps.diff) by drkirkby created at 2010-10-12 07:15:15
 
 Differences between the new 'deps' file and that in sage-4.6.alpha3. Only for review purposes - this should not be applied.
 
@@ -5634,7 +5634,7 @@ Patch for spkg/standard/deps assuming #9418 has been applied
 archive/issue_comments_052156.json:
 ```json
 {
-    "body": "Attachment\n\nPlease make it clear which patches have to be applied.  I am assuming the following, but I can't be sure:\n\n1. [attachment:6456-numerical_sage_cvxopt.patch]\n2. [attachment:6456-cvxopt-glpk-interface.patch]\n3. [attachment:6456_after_9418_deps.patch] (assuming #9418 is merged of course)\n\nAlso, you should change the commit message of the patches (use `hg qrefresh -e` for that) such that the first line contains the ticket number and a short description of the patch (you may use following lines for a longer description).",
+    "body": "Attachment [6456_after_9418_deps.patch](tarball://root/attachments/some-uuid/ticket6456/6456_after_9418_deps.patch) by jdemeyer created at 2010-11-15 12:38:17\n\nPlease make it clear which patches have to be applied.  I am assuming the following, but I can't be sure:\n\n1. [attachment:6456-numerical_sage_cvxopt.patch]\n2. [attachment:6456-cvxopt-glpk-interface.patch]\n3. [attachment:6456_after_9418_deps.patch] (assuming #9418 is merged of course)\n\nAlso, you should change the commit message of the patches (use `hg qrefresh -e` for that) such that the first line contains the ticket number and a short description of the patch (you may use following lines for a longer description).",
     "created_at": "2010-11-15T12:38:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -5643,7 +5643,7 @@ archive/issue_comments_052156.json:
 }
 ```
 
-Attachment
+Attachment [6456_after_9418_deps.patch](tarball://root/attachments/some-uuid/ticket6456/6456_after_9418_deps.patch) by jdemeyer created at 2010-11-15 12:38:17
 
 Please make it clear which patches have to be applied.  I am assuming the following, but I can't be sure:
 
@@ -5678,7 +5678,7 @@ option to linear_program() to use glpk as the solver
 archive/issue_comments_052158.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:150 jdemeyer]:\n> Please make it clear which patches have to be applied.  I am assuming the following, but I can't be sure:\n> \n>  1. [attachment:6456-numerical_sage_cvxopt.patch]\n>  1. [attachment:6456-cvxopt-glpk-interface.patch]\n>  1. [attachment:6456_after_9418_deps.patch] (assuming #9418 is merged of course)\n> \n\nright, only instead of [attachment:6456-numerical_sage_cvxopt.patch] please take [attachment:6456-numerical_sage_cvxopt-with-updated-commitmessage.patch] (I am not its author, so I can't just update).\n\n> Also, you should change the commit message of the patches (use `hg qrefresh -e` for that) such that the first line contains the ticket number and a short description of the patch (you may use following lines for a longer description).\n\ndone.\n\nDima",
+    "body": "Attachment [6456-cvxopt-glpk-interface.patch](tarball://root/attachments/some-uuid/ticket6456/6456-cvxopt-glpk-interface.patch) by dimpase created at 2010-11-15 13:29:34\n\nReplying to [comment:150 jdemeyer]:\n> Please make it clear which patches have to be applied.  I am assuming the following, but I can't be sure:\n> \n>  1. [attachment:6456-numerical_sage_cvxopt.patch]\n>  1. [attachment:6456-cvxopt-glpk-interface.patch]\n>  1. [attachment:6456_after_9418_deps.patch] (assuming #9418 is merged of course)\n> \n\nright, only instead of [attachment:6456-numerical_sage_cvxopt.patch] please take [attachment:6456-numerical_sage_cvxopt-with-updated-commitmessage.patch] (I am not its author, so I can't just update).\n\n> Also, you should change the commit message of the patches (use `hg qrefresh -e` for that) such that the first line contains the ticket number and a short description of the patch (you may use following lines for a longer description).\n\ndone.\n\nDima",
     "created_at": "2010-11-15T13:29:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -5687,7 +5687,7 @@ archive/issue_comments_052158.json:
 }
 ```
 
-Attachment
+Attachment [6456-cvxopt-glpk-interface.patch](tarball://root/attachments/some-uuid/ticket6456/6456-cvxopt-glpk-interface.patch) by dimpase created at 2010-11-15 13:29:34
 
 Replying to [comment:150 jdemeyer]:
 > Please make it clear which patches have to be applied.  I am assuming the following, but I can't be sure:
@@ -5827,7 +5827,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_052165.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:153 jdemeyer]:\n> Replying to [comment:151 dimpase]:\n> > > Also, you should change the commit message of the patches (use `hg qrefresh -e` for that) such that the first line contains the ticket number and a short description of the patch (you may use following lines for a longer description).\n> > \n> > done.\n> \n> Except that the ticket number in [attachment:6456-numerical_sage_cvxopt-with-updated-commitmessage.patch] is wrong...\n\nAUB",
+    "body": "Attachment [6456-numerical_sage_cvxopt-with-updated-commitmessage.patch](tarball://root/attachments/some-uuid/ticket6456/6456-numerical_sage_cvxopt-with-updated-commitmessage.patch) by dimpase created at 2010-11-15 15:41:37\n\nReplying to [comment:153 jdemeyer]:\n> Replying to [comment:151 dimpase]:\n> > > Also, you should change the commit message of the patches (use `hg qrefresh -e` for that) such that the first line contains the ticket number and a short description of the patch (you may use following lines for a longer description).\n> > \n> > done.\n> \n> Except that the ticket number in [attachment:6456-numerical_sage_cvxopt-with-updated-commitmessage.patch] is wrong...\n\nAUB",
     "created_at": "2010-11-15T15:41:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -5836,7 +5836,7 @@ archive/issue_comments_052165.json:
 }
 ```
 
-Attachment
+Attachment [6456-numerical_sage_cvxopt-with-updated-commitmessage.patch](tarball://root/attachments/some-uuid/ticket6456/6456-numerical_sage_cvxopt-with-updated-commitmessage.patch) by dimpase created at 2010-11-15 15:41:37
 
 Replying to [comment:153 jdemeyer]:
 > Replying to [comment:151 dimpase]:
@@ -5910,7 +5910,7 @@ Patch at #10309
 archive/issue_comments_052168.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [10309_cvxopt_doctest.patch](tarball://root/attachments/some-uuid/ticket6456/10309_cvxopt_doctest.patch) by jdemeyer created at 2010-11-22 14:28:34",
     "created_at": "2010-11-22T14:28:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -5919,7 +5919,7 @@ archive/issue_comments_052168.json:
 }
 ```
 
-Attachment
+Attachment [10309_cvxopt_doctest.patch](tarball://root/attachments/some-uuid/ticket6456/10309_cvxopt_doctest.patch) by jdemeyer created at 2010-11-22 14:28:34
 
 
 

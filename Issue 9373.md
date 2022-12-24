@@ -49,7 +49,7 @@ Changing status from new to needs_review.
 archive/issue_comments_089073.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9373-graphdb.patch](tarball://root/attachments/some-uuid/ticket9373/trac_9373-graphdb.patch) by mvngu created at 2010-06-29 17:18:46",
     "created_at": "2010-06-29T17:18:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9373",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_089073.json:
 }
 ```
 
-Attachment
+Attachment [trac_9373-graphdb.patch](tarball://root/attachments/some-uuid/ticket9373/trac_9373-graphdb.patch) by mvngu created at 2010-06-29 17:18:46
 
 
 
@@ -129,7 +129,7 @@ Nathann
 archive/issue_comments_089077.json:
 ```json
 {
-    "body": "Attachment\n\nOk, I just edited the corresponding line and replaced it with what was written in your patch.\n\nI really hadn't thought of it... I'm very very sorry for that :-/\n\nNathann",
+    "body": "Attachment [trac_9373.patch](tarball://root/attachments/some-uuid/ticket9373/trac_9373.patch) by ncohen created at 2010-07-16 03:15:20\n\nOk, I just edited the corresponding line and replaced it with what was written in your patch.\n\nI really hadn't thought of it... I'm very very sorry for that :-/\n\nNathann",
     "created_at": "2010-07-16T03:15:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9373",
     "type": "issue_comment",
@@ -138,7 +138,7 @@ archive/issue_comments_089077.json:
 }
 ```
 
-Attachment
+Attachment [trac_9373.patch](tarball://root/attachments/some-uuid/ticket9373/trac_9373.patch) by ncohen created at 2010-07-16 03:15:20
 
 Ok, I just edited the corresponding line and replaced it with what was written in your patch.
 

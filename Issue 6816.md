@@ -221,7 +221,7 @@ Based on 4.2.alpha0
 archive/issue_comments_056210.json:
 ```json
 {
-    "body": "Attachment\n\nRebased, otherwise should be fine.",
+    "body": "Attachment [trac_6816-tuples-in-integral.patch](tarball://root/attachments/some-uuid/ticket6816/trac_6816-tuples-in-integral.patch) by kcrisman created at 2009-10-20 06:23:37\n\nRebased, otherwise should be fine.",
     "created_at": "2009-10-20T06:23:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6816",
     "type": "issue_comment",
@@ -230,7 +230,7 @@ archive/issue_comments_056210.json:
 }
 ```
 
-Attachment
+Attachment [trac_6816-tuples-in-integral.patch](tarball://root/attachments/some-uuid/ticket6816/trac_6816-tuples-in-integral.patch) by kcrisman created at 2009-10-20 06:23:37
 
 Rebased, otherwise should be fine.
 

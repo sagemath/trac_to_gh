@@ -305,7 +305,7 @@ This line does not show up at all in the patch, as-is right now. You should get 
 archive/issue_comments_029800.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4115-double-cosets.patch](tarball://root/attachments/some-uuid/ticket4115/trac_4115-double-cosets.patch) by rlm created at 2008-09-17 13:17:17",
     "created_at": "2008-09-17T13:17:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4115",
     "type": "issue_comment",
@@ -314,7 +314,7 @@ archive/issue_comments_029800.json:
 }
 ```
 
-Attachment
+Attachment [trac_4115-double-cosets.patch](tarball://root/attachments/some-uuid/ticket4115/trac_4115-double-cosets.patch) by rlm created at 2008-09-17 13:17:17
 
 
 

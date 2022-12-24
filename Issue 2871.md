@@ -49,7 +49,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2871
 archive/issue_comments_019702.json:
 ```json
 {
-    "body": "Attachment\n\nThe code and doctests look good, and doctests pass in sage/matrix in Sage 2.11.  Unfortunately, applying the patch to Sage 3.0 alpha 2 (the latest I have at the moment) gives a rejected hunk.",
+    "body": "Attachment [2871.patch](tarball://root/attachments/some-uuid/ticket2871/2871.patch) by cwitty created at 2008-04-12 04:19:11\n\nThe code and doctests look good, and doctests pass in sage/matrix in Sage 2.11.  Unfortunately, applying the patch to Sage 3.0 alpha 2 (the latest I have at the moment) gives a rejected hunk.",
     "created_at": "2008-04-12T04:19:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2871",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_019702.json:
 }
 ```
 
-Attachment
+Attachment [2871.patch](tarball://root/attachments/some-uuid/ticket2871/2871.patch) by cwitty created at 2008-04-12 04:19:11
 
 The code and doctests look good, and doctests pass in sage/matrix in Sage 2.11.  Unfortunately, applying the patch to Sage 3.0 alpha 2 (the latest I have at the moment) gives a rejected hunk.
 
@@ -87,7 +87,7 @@ patch against alpha2
 archive/issue_comments_019704.json:
 ```json
 {
-    "body": "Attachment\n\nWith the revised 2871-alpha2.patch, the patch applies and doctests pass in sage/matrix for sage 3.0 alpha2.\n\nDidier, thanks for making the changes I requested on IRC!\n\nLooks good, please apply.",
+    "body": "Attachment [2871-alpha2.patch](tarball://root/attachments/some-uuid/ticket2871/2871-alpha2.patch) by cwitty created at 2008-04-12 05:00:00\n\nWith the revised 2871-alpha2.patch, the patch applies and doctests pass in sage/matrix for sage 3.0 alpha2.\n\nDidier, thanks for making the changes I requested on IRC!\n\nLooks good, please apply.",
     "created_at": "2008-04-12T05:00:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2871",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_019704.json:
 }
 ```
 
-Attachment
+Attachment [2871-alpha2.patch](tarball://root/attachments/some-uuid/ticket2871/2871-alpha2.patch) by cwitty created at 2008-04-12 05:00:00
 
 With the revised 2871-alpha2.patch, the patch applies and doctests pass in sage/matrix for sage 3.0 alpha2.
 

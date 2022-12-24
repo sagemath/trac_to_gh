@@ -290,7 +290,7 @@ When running a test manually (i.e. typing it into a sage console), everything wo
 archive/issue_comments_012149.json:
 ```json
 {
-    "body": "Attachment\n\nbased on sage 4.2.1",
+    "body": "Attachment [trac_1918-displayhook.patch](tarball://root/attachments/some-uuid/ticket1918/trac_1918-displayhook.patch) by wcauchois created at 2009-12-02 08:38:50\n\nbased on sage 4.2.1",
     "created_at": "2009-12-02T08:38:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1918",
     "type": "issue_comment",
@@ -299,7 +299,7 @@ archive/issue_comments_012149.json:
 }
 ```
 
-Attachment
+Attachment [trac_1918-displayhook.patch](tarball://root/attachments/some-uuid/ticket1918/trac_1918-displayhook.patch) by wcauchois created at 2009-12-02 08:38:50
 
 based on sage 4.2.1
 
@@ -310,7 +310,7 @@ based on sage 4.2.1
 archive/issue_comments_012150.json:
 ```json
 {
-    "body": "Attachment\n\nbased on sage 4.3.alpha0; apply only this patch",
+    "body": "Attachment [trac_1918-all.patch](tarball://root/attachments/some-uuid/ticket1918/trac_1918-all.patch) by wcauchois created at 2009-12-02 08:39:22\n\nbased on sage 4.3.alpha0; apply only this patch",
     "created_at": "2009-12-02T08:39:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1918",
     "type": "issue_comment",
@@ -319,7 +319,7 @@ archive/issue_comments_012150.json:
 }
 ```
 
-Attachment
+Attachment [trac_1918-all.patch](tarball://root/attachments/some-uuid/ticket1918/trac_1918-all.patch) by wcauchois created at 2009-12-02 08:39:22
 
 based on sage 4.3.alpha0; apply only this patch
 

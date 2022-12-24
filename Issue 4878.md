@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4878
 archive/issue_comments_036934.json:
 ```json
 {
-    "body": "Attachment\n\nApplies to 3.2.2 cleanly and passes sage -t. The docstrings look fine.\n\nI tried\n\n```\nsage: density_plot(sin(x^2 + y^2)*cos(x)*sin(y), (-4, 4), (-4, 4), cmap='winter', plot_points=100)\n\nsage: contour_plot(sin(x^2 + y^2)*cos(x)*sin(y), (-4, 4), (-4, 4), cmap='winter', plot_points=100, contours=40)\n```\n\nand noticed that they look very similar (modulo scaling). However, there are some plotting artifacts contour_plot leaves at the \"corners\" where cos(x)=0 and sin(y)=0. density_plot seems to avoid these problems. Nice patch.\n\nBTW, where can one find the list of \"legal\" values of cmap? For example, _allowed_options gives this:\n\n\n```\n    cmap           The colormap, one of (autumn, bone, cool, copper,\n                       gray, hot, hsv, jet, pink, prism, spring, summer, winter)\n```\n\n\nBut this is incomplete, since Oranges, Blues, etc also work. For example, try\n\n\n```\nsage: x,y = var('x,y')\nsage: density_plot(sin(x^2 + y^2)*exp((x^2+y^2)/10), (-4, 4), (-4, 4), cmap='Greens')\n```\n\nI'm happy giving this a positive review but am wondering about this one small issue with the output of _allowed_options. Can the author please comment on this?",
+    "body": "Attachment [trac_4878.patch](tarball://root/attachments/some-uuid/ticket4878/trac_4878.patch) by wdj created at 2008-12-26 13:21:47\n\nApplies to 3.2.2 cleanly and passes sage -t. The docstrings look fine.\n\nI tried\n\n```\nsage: density_plot(sin(x^2 + y^2)*cos(x)*sin(y), (-4, 4), (-4, 4), cmap='winter', plot_points=100)\n\nsage: contour_plot(sin(x^2 + y^2)*cos(x)*sin(y), (-4, 4), (-4, 4), cmap='winter', plot_points=100, contours=40)\n```\n\nand noticed that they look very similar (modulo scaling). However, there are some plotting artifacts contour_plot leaves at the \"corners\" where cos(x)=0 and sin(y)=0. density_plot seems to avoid these problems. Nice patch.\n\nBTW, where can one find the list of \"legal\" values of cmap? For example, _allowed_options gives this:\n\n\n```\n    cmap           The colormap, one of (autumn, bone, cool, copper,\n                       gray, hot, hsv, jet, pink, prism, spring, summer, winter)\n```\n\n\nBut this is incomplete, since Oranges, Blues, etc also work. For example, try\n\n\n```\nsage: x,y = var('x,y')\nsage: density_plot(sin(x^2 + y^2)*exp((x^2+y^2)/10), (-4, 4), (-4, 4), cmap='Greens')\n```\n\nI'm happy giving this a positive review but am wondering about this one small issue with the output of _allowed_options. Can the author please comment on this?",
     "created_at": "2008-12-26T13:21:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4878",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_036934.json:
 }
 ```
 
-Attachment
+Attachment [trac_4878.patch](tarball://root/attachments/some-uuid/ticket4878/trac_4878.patch) by wdj created at 2008-12-26 13:21:47
 
 Applies to 3.2.2 cleanly and passes sage -t. The docstrings look fine.
 
@@ -84,7 +84,7 @@ I'm happy giving this a positive review but am wondering about this one small is
 archive/issue_comments_036935.json:
 ```json
 {
-    "body": "Attachment\n\nFix some problems with original patch, incremental",
+    "body": "Attachment [trac_4878.2.patch](tarball://root/attachments/some-uuid/ticket4878/trac_4878.2.patch) by abergeron created at 2008-12-27 23:19:37\n\nFix some problems with original patch, incremental",
     "created_at": "2008-12-27T23:19:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4878",
     "type": "issue_comment",
@@ -93,7 +93,7 @@ archive/issue_comments_036935.json:
 }
 ```
 
-Attachment
+Attachment [trac_4878.2.patch](tarball://root/attachments/some-uuid/ticket4878/trac_4878.2.patch) by abergeron created at 2008-12-27 23:19:37
 
 Fix some problems with original patch, incremental
 
@@ -313,7 +313,7 @@ Is it possible for someone to attach an image or two to this ticket? I'm looking
 archive/issue_comments_036946.json:
 ```json
 {
-    "body": "Attachment\n\nexample image for mvngu",
+    "body": "Attachment [4878_example.png](tarball://root/attachments/some-uuid/ticket4878/4878_example.png) by abergeron created at 2009-02-18 18:41:46\n\nexample image for mvngu",
     "created_at": "2009-02-18T18:41:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4878",
     "type": "issue_comment",
@@ -322,7 +322,7 @@ archive/issue_comments_036946.json:
 }
 ```
 
-Attachment
+Attachment [4878_example.png](tarball://root/attachments/some-uuid/ticket4878/4878_example.png) by abergeron created at 2009-02-18 18:41:46
 
 example image for mvngu
 
@@ -351,7 +351,7 @@ Thanks, Arnaud, for attaching that sample image. Just out of curiosity, what cod
 archive/issue_comments_036948.json:
 ```json
 {
-    "body": "Attachment\n\nanother sample plot in black and white",
+    "body": "Attachment [trac_4878-sample-plot-bw.png](tarball://root/attachments/some-uuid/ticket4878/trac_4878-sample-plot-bw.png) by mvngu created at 2009-02-20 04:50:47\n\nanother sample plot in black and white",
     "created_at": "2009-02-20T04:50:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4878",
     "type": "issue_comment",
@@ -360,7 +360,7 @@ archive/issue_comments_036948.json:
 }
 ```
 
-Attachment
+Attachment [trac_4878-sample-plot-bw.png](tarball://root/attachments/some-uuid/ticket4878/trac_4878-sample-plot-bw.png) by mvngu created at 2009-02-20 04:50:47
 
 another sample plot in black and white
 

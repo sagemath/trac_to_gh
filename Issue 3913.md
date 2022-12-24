@@ -57,7 +57,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3913
 archive/issue_comments_027988.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch implements this, and adds doctests to some other functions.  Based on 3.1.1, and all doctests in sage/rings/number_fields pass.",
+    "body": "Attachment [sage-trac3913.patch](tarball://root/attachments/some-uuid/ticket3913/sage-trac3913.patch) by cremona created at 2008-08-20 17:02:04\n\nThe patch implements this, and adds doctests to some other functions.  Based on 3.1.1, and all doctests in sage/rings/number_fields pass.",
     "created_at": "2008-08-20T17:02:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3913",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_027988.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac3913.patch](tarball://root/attachments/some-uuid/ticket3913/sage-trac3913.patch) by cremona created at 2008-08-20 17:02:04
 
 The patch implements this, and adds doctests to some other functions.  Based on 3.1.1, and all doctests in sage/rings/number_fields pass.
 

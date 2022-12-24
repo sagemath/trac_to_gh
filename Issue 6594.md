@@ -73,7 +73,7 @@ tested against 4.1.1.alpha0
 archive/issue_comments_053962.json:
 ```json
 {
-    "body": "Attachment\n\nMinh, could please review this one-liner?\n(Cough, cough ...)",
+    "body": "Attachment [trac_6594-R_doctest.patch](tarball://root/attachments/some-uuid/ticket6594/trac_6594-R_doctest.patch) by GeorgSWeber created at 2009-07-22 18:48:29\n\nMinh, could please review this one-liner?\n(Cough, cough ...)",
     "created_at": "2009-07-22T18:48:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6594",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_053962.json:
 }
 ```
 
-Attachment
+Attachment [trac_6594-R_doctest.patch](tarball://root/attachments/some-uuid/ticket6594/trac_6594-R_doctest.patch) by GeorgSWeber created at 2009-07-22 18:48:29
 
 Minh, could please review this one-liner?
 (Cough, cough ...)

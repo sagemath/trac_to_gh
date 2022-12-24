@@ -78,7 +78,7 @@ Changing status from new to needs_review.
 archive/issue_comments_066018.json:
 ```json
 {
-    "body": "Attachment\n\nThis is ready for review but depends on #9407.\n\nOf course, this is not the only solution, but it eliminates the cases that bother me.",
+    "body": "Attachment [trac_7695.patch](tarball://root/attachments/some-uuid/ticket7695/trac_7695.patch) by wuthrich created at 2010-07-30 17:24:15\n\nThis is ready for review but depends on #9407.\n\nOf course, this is not the only solution, but it eliminates the cases that bother me.",
     "created_at": "2010-07-30T17:24:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7695",
     "type": "issue_comment",
@@ -87,7 +87,7 @@ archive/issue_comments_066018.json:
 }
 ```
 
-Attachment
+Attachment [trac_7695.patch](tarball://root/attachments/some-uuid/ticket7695/trac_7695.patch) by wuthrich created at 2010-07-30 17:24:15
 
 This is ready for review but depends on #9407.
 

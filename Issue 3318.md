@@ -57,7 +57,7 @@ Changing status from new to assigned.
 archive/issue_comments_023010.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [python-2.5.2.p0-osx64-part3.patch](tarball://root/attachments/some-uuid/ticket3318/python-2.5.2.p0-osx64-part3.patch) by mabshoff created at 2008-05-28 09:43:32",
     "created_at": "2008-05-28T09:43:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3318",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_023010.json:
 }
 ```
 
-Attachment
+Attachment [python-2.5.2.p0-osx64-part3.patch](tarball://root/attachments/some-uuid/ticket3318/python-2.5.2.p0-osx64-part3.patch) by mabshoff created at 2008-05-28 09:43:32
 
 
 
@@ -75,7 +75,7 @@ Attachment
 archive/issue_comments_023011.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [python-2.5.2.p0-osx64-part4.patch](tarball://root/attachments/some-uuid/ticket3318/python-2.5.2.p0-osx64-part4.patch) by mabshoff created at 2008-05-28 09:43:44",
     "created_at": "2008-05-28T09:43:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3318",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_023011.json:
 }
 ```
 
-Attachment
+Attachment [python-2.5.2.p0-osx64-part4.patch](tarball://root/attachments/some-uuid/ticket3318/python-2.5.2.p0-osx64-part4.patch) by mabshoff created at 2008-05-28 09:43:44
 
 
 
@@ -93,7 +93,7 @@ Attachment
 archive/issue_comments_023012.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [python-2.5.2.p0-osx64-part5.patch](tarball://root/attachments/some-uuid/ticket3318/python-2.5.2.p0-osx64-part5.patch) by mabshoff created at 2008-05-28 09:43:53",
     "created_at": "2008-05-28T09:43:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3318",
     "type": "issue_comment",
@@ -102,7 +102,7 @@ archive/issue_comments_023012.json:
 }
 ```
 
-Attachment
+Attachment [python-2.5.2.p0-osx64-part5.patch](tarball://root/attachments/some-uuid/ticket3318/python-2.5.2.p0-osx64-part5.patch) by mabshoff created at 2008-05-28 09:43:53
 
 
 
@@ -111,7 +111,7 @@ Attachment
 archive/issue_comments_023013.json:
 ```json
 {
-    "body": "Attachment\n\nThe spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.3/alpha0/python-2.5.2.p1.spkg\n\ncontains the above fixes. It has been build tested with Linux and 32 & 64 bit OSX.\n\nCurrently the _ctypes.so extension is broken. Since the fix is complicated this will be another ticket.\n\nCheers,\n\nMichael",
+    "body": "Attachment [python-pymactoolbox.h-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3318/python-pymactoolbox.h-64bit-osx.patch) by mabshoff created at 2008-05-28 09:49:11\n\nThe spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.3/alpha0/python-2.5.2.p1.spkg\n\ncontains the above fixes. It has been build tested with Linux and 32 & 64 bit OSX.\n\nCurrently the _ctypes.so extension is broken. Since the fix is complicated this will be another ticket.\n\nCheers,\n\nMichael",
     "created_at": "2008-05-28T09:49:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3318",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_023013.json:
 }
 ```
 
-Attachment
+Attachment [python-pymactoolbox.h-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3318/python-pymactoolbox.h-64bit-osx.patch) by mabshoff created at 2008-05-28 09:49:11
 
 The spkg at
 

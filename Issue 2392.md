@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2392
 archive/issue_comments_016134.json:
 ```json
 {
-    "body": "Attachment\n\n**Review**:\n* patch looks good, I say apply\n* shall we open a ticket for the mentioned Sage<->PARI issue?",
+    "body": "Attachment [2392-ncalexan-discriminant-1.patch](tarball://root/attachments/some-uuid/ticket2392/2392-ncalexan-discriminant-1.patch) by malb created at 2008-03-05 11:30:28\n\n**Review**:\n* patch looks good, I say apply\n* shall we open a ticket for the mentioned Sage<->PARI issue?",
     "created_at": "2008-03-05T11:30:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2392",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_016134.json:
 }
 ```
 
-Attachment
+Attachment [2392-ncalexan-discriminant-1.patch](tarball://root/attachments/some-uuid/ticket2392/2392-ncalexan-discriminant-1.patch) by malb created at 2008-03-05 11:30:28
 
 **Review**:
 * patch looks good, I say apply

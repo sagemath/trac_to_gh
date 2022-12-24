@@ -106,7 +106,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/210
 archive/issue_comments_000940.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9124.patch](tarball://root/attachments/some-uuid/ticket210/9124.patch) by cremona created at 2008-04-04 08:57:01",
     "created_at": "2008-04-04T08:57:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/210",
     "type": "issue_comment",
@@ -115,7 +115,7 @@ archive/issue_comments_000940.json:
 }
 ```
 
-Attachment
+Attachment [9124.patch](tarball://root/attachments/some-uuid/ticket210/9124.patch) by cremona created at 2008-04-04 08:57:01
 
 
 

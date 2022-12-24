@@ -51,7 +51,7 @@ Tuning information for Pentium D / 64 bit
 archive/issue_comments_020560.json:
 ```json
 {
-    "body": "Attachment\n\nFor the record: I followed instructions in r1886 (using atlas-3.8.1.p0).",
+    "body": "Attachment [P4D64SSE3.tgz](tarball://root/attachments/some-uuid/ticket2986/P4D64SSE3.tgz) by tornaria created at 2008-04-21 06:01:08\n\nFor the record: I followed instructions in r1886 (using atlas-3.8.1.p0).",
     "created_at": "2008-04-21T06:01:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2986",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_020560.json:
 }
 ```
 
-Attachment
+Attachment [P4D64SSE3.tgz](tarball://root/attachments/some-uuid/ticket2986/P4D64SSE3.tgz) by tornaria created at 2008-04-21 06:01:08
 
 For the record: I followed instructions in r1886 (using atlas-3.8.1.p0).
 

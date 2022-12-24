@@ -119,7 +119,7 @@ This is ./sage -t -verbose of .../sage0.py on Fedora7
 archive/issue_comments_012330.json:
 ```json
 {
-    "body": "Attachment\n\n\n```\n> > Also, could you try replacing the line 150 by\n> >           s = self.eval('cputime(%s)'%t)\n> >           print \"'%s'\"%s\n> >           return 0\n> > in case my above suggestion doesn't work, and report what gets printed.\n> > \n\nExiting SAGE (CPU time 0m0.00s, Wall time 0m8.03s).\n[jaap@paix sage-2.10.1.rc0]$ ./sage -t  devel/sage-main/sage/interfaces/sage0.py 2>&1 | tee -a test_sage0.log\nsage -t  devel/sage-main/sage/interfaces/sage0.py           **********************************************************************\nFile \"sage0.py\", line 143:\n     sage: _= sage0.cputime()     # random output\nExpected nothing\nGot:\n     ' 1.360792\n     '\n**********************************************************************\nFile \"sage0.py\", line 147:\n     sage: _= sage0.cputime()     # random output\nExpected nothing\nGot:\n     ' 1.7347349999999999\n     '\n**********************************************************************\n1 items had failures:\n    2 of   3 in __main__.example_2\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file .doctest_sage0.py\n          [7.0 s]\nexit code: 256\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n         sage -t  devel/sage-main/sage/interfaces/sage0.py\nTotal time for all tests: 7.0 seconds\n[jaap@paix sage-2.10.1.rc0]$\n\n```\n",
+    "body": "Attachment [test_sage0.log](tarball://root/attachments/some-uuid/ticket1942/test_sage0.log) by jsp created at 2008-01-27 13:13:20\n\n\n```\n> > Also, could you try replacing the line 150 by\n> >           s = self.eval('cputime(%s)'%t)\n> >           print \"'%s'\"%s\n> >           return 0\n> > in case my above suggestion doesn't work, and report what gets printed.\n> > \n\nExiting SAGE (CPU time 0m0.00s, Wall time 0m8.03s).\n[jaap@paix sage-2.10.1.rc0]$ ./sage -t  devel/sage-main/sage/interfaces/sage0.py 2>&1 | tee -a test_sage0.log\nsage -t  devel/sage-main/sage/interfaces/sage0.py           **********************************************************************\nFile \"sage0.py\", line 143:\n     sage: _= sage0.cputime()     # random output\nExpected nothing\nGot:\n     ' 1.360792\n     '\n**********************************************************************\nFile \"sage0.py\", line 147:\n     sage: _= sage0.cputime()     # random output\nExpected nothing\nGot:\n     ' 1.7347349999999999\n     '\n**********************************************************************\n1 items had failures:\n    2 of   3 in __main__.example_2\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file .doctest_sage0.py\n          [7.0 s]\nexit code: 256\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n         sage -t  devel/sage-main/sage/interfaces/sage0.py\nTotal time for all tests: 7.0 seconds\n[jaap@paix sage-2.10.1.rc0]$\n\n```\n",
     "created_at": "2008-01-27T13:13:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1942",
     "type": "issue_comment",
@@ -128,7 +128,7 @@ archive/issue_comments_012330.json:
 }
 ```
 
-Attachment
+Attachment [test_sage0.log](tarball://root/attachments/some-uuid/ticket1942/test_sage0.log) by jsp created at 2008-01-27 13:13:20
 
 
 ```

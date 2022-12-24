@@ -109,7 +109,7 @@ apply to $SAGE_ROOT
 archive/issue_comments_007189.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.",
+    "body": "Attachment [trac_1172-watkins-license.patch](tarball://root/attachments/some-uuid/ticket1172/trac_1172-watkins-license.patch) by ohanar created at 2012-06-25 22:56:23\n\nLooks good to me.",
     "created_at": "2012-06-25T22:56:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1172",
     "type": "issue_comment",
@@ -118,7 +118,7 @@ archive/issue_comments_007189.json:
 }
 ```
 
-Attachment
+Attachment [trac_1172-watkins-license.patch](tarball://root/attachments/some-uuid/ticket1172/trac_1172-watkins-license.patch) by ohanar created at 2012-06-25 22:56:23
 
 Looks good to me.
 

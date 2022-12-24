@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3239
 archive/issue_comments_022426.json:
 ```json
 {
-    "body": "Attachment\n\nCygwin build fix",
+    "body": "Attachment [cpu_stats.c.patch](tarball://root/attachments/some-uuid/ticket3239/cpu_stats.c.patch) by mabshoff created at 2008-05-18 13:46:38\n\nCygwin build fix",
     "created_at": "2008-05-18T13:46:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3239",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_022426.json:
 }
 ```
 
-Attachment
+Attachment [cpu_stats.c.patch](tarball://root/attachments/some-uuid/ticket3239/cpu_stats.c.patch) by mabshoff created at 2008-05-18 13:46:38
 
 Cygwin build fix
 
@@ -75,7 +75,7 @@ Cygwin python.exe fix
 archive/issue_comments_022428.json:
 ```json
 {
-    "body": "Attachment\n\nSpkg looks good to me. I checked in some diffs of all the patched files we use on Cygwin. I also attached those files to the ticket and added PolyBoRi to the CC field on this ticket so the changes can get cleaned up and integrated upstream [at least the SConstuct fix must be cleaned up].\n\nIn total: Positive review.\n\nCheers,\n\nMichael",
+    "body": "Attachment [SConstruct.cygwin.patch](tarball://root/attachments/some-uuid/ticket3239/SConstruct.cygwin.patch) by mabshoff created at 2008-05-18 13:49:27\n\nSpkg looks good to me. I checked in some diffs of all the patched files we use on Cygwin. I also attached those files to the ticket and added PolyBoRi to the CC field on this ticket so the changes can get cleaned up and integrated upstream [at least the SConstuct fix must be cleaned up].\n\nIn total: Positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-05-18T13:49:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3239",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_022428.json:
 }
 ```
 
-Attachment
+Attachment [SConstruct.cygwin.patch](tarball://root/attachments/some-uuid/ticket3239/SConstruct.cygwin.patch) by mabshoff created at 2008-05-18 13:49:27
 
 Spkg looks good to me. I checked in some diffs of all the patched files we use on Cygwin. I also attached those files to the ticket and added PolyBoRi to the CC field on this ticket so the changes can get cleaned up and integrated upstream [at least the SConstuct fix must be cleaned up].
 
@@ -208,7 +208,7 @@ More generic patch, which obsoletes both patches above
 archive/issue_comments_022434.json:
 ```json
 {
-    "body": "Attachment\n\nHi Michael,\n> that looks like a likely fix. Right now I don't have a Cygwin env setup up to test, but it won't take long. \n> \n> Re cpu_stats.c: it looks like the sledge hammer approach and we conditionally copy it into the PolyBoRi tree on Cygwin only. Any cleaner solution is appreciated and I plan to write some Win2K+ specific patches that uses the native Windows infrastructure for accounting and memory consumption. I already did so for CoCoALib, so it should be an easy fix.\nI've uploaded an extended version of the patch, which should fix both problems from SConstruct, so the cpu_stats.c patch will be obsolete.\n\nBest regards,\n  Alexander",
+    "body": "Attachment [SConstruct.generic.patch](tarball://root/attachments/some-uuid/ticket3239/SConstruct.generic.patch) by PolyBoRi created at 2008-05-18 23:25:11\n\nHi Michael,\n> that looks like a likely fix. Right now I don't have a Cygwin env setup up to test, but it won't take long. \n> \n> Re cpu_stats.c: it looks like the sledge hammer approach and we conditionally copy it into the PolyBoRi tree on Cygwin only. Any cleaner solution is appreciated and I plan to write some Win2K+ specific patches that uses the native Windows infrastructure for accounting and memory consumption. I already did so for CoCoALib, so it should be an easy fix.\nI've uploaded an extended version of the patch, which should fix both problems from SConstruct, so the cpu_stats.c patch will be obsolete.\n\nBest regards,\n  Alexander",
     "created_at": "2008-05-18T23:25:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3239",
     "type": "issue_comment",
@@ -217,7 +217,7 @@ archive/issue_comments_022434.json:
 }
 ```
 
-Attachment
+Attachment [SConstruct.generic.patch](tarball://root/attachments/some-uuid/ticket3239/SConstruct.generic.patch) by PolyBoRi created at 2008-05-18 23:25:11
 
 Hi Michael,
 > that looks like a likely fix. Right now I don't have a Cygwin env setup up to test, but it won't take long. 

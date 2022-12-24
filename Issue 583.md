@@ -97,7 +97,7 @@ fix the bug
 archive/issue_comments_003013.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac583.patch](tarball://root/attachments/some-uuid/ticket583/trac583.patch) by was created at 2007-09-04 02:17:53",
     "created_at": "2007-09-04T02:17:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/583",
     "type": "issue_comment",
@@ -106,7 +106,7 @@ archive/issue_comments_003013.json:
 }
 ```
 
-Attachment
+Attachment [trac583.patch](tarball://root/attachments/some-uuid/ticket583/trac583.patch) by was created at 2007-09-04 02:17:53
 
 
 

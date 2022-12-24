@@ -95,7 +95,7 @@ Changing status from new to needs_review.
 archive/issue_comments_066530.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [7741-symbolic-frac.patch](tarball://root/attachments/some-uuid/ticket7741/7741-symbolic-frac.patch) by robertwb created at 2010-01-17 10:04:02",
     "created_at": "2010-01-17T10:04:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7741",
     "type": "issue_comment",
@@ -104,7 +104,7 @@ archive/issue_comments_066530.json:
 }
 ```
 
-Attachment
+Attachment [7741-symbolic-frac.patch](tarball://root/attachments/some-uuid/ticket7741/7741-symbolic-frac.patch) by robertwb created at 2010-01-17 10:04:02
 
 
 
@@ -149,7 +149,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_066533.json:
 ```json
 {
-    "body": "Attachment\n\nrebased to 4.4.4",
+    "body": "Attachment [trac_7741-symbolic-frac-rebase.patch](tarball://root/attachments/some-uuid/ticket7741/trac_7741-symbolic-frac-rebase.patch) by davidloeffler created at 2010-06-29 09:41:41\n\nrebased to 4.4.4",
     "created_at": "2010-06-29T09:41:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7741",
     "type": "issue_comment",
@@ -158,7 +158,7 @@ archive/issue_comments_066533.json:
 }
 ```
 
-Attachment
+Attachment [trac_7741-symbolic-frac-rebase.patch](tarball://root/attachments/some-uuid/ticket7741/trac_7741-symbolic-frac-rebase.patch) by davidloeffler created at 2010-06-29 09:41:41
 
 rebased to 4.4.4
 
@@ -245,7 +245,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_066538.json:
 ```json
 {
-    "body": "Attachment\n\nActually, the \"is 1\" was intentional, as I wasn't thinking of taking that path if the user passed in a ring element (as opposed to the default value) and didn't want to make the default value None and handle it everywhere. In retrospect, I think it's fine for it to be equal to 1.",
+    "body": "Attachment [7741-symbolic-frac-fixed.patch](tarball://root/attachments/some-uuid/ticket7741/7741-symbolic-frac-fixed.patch) by robertwb created at 2010-07-29 05:47:35\n\nActually, the \"is 1\" was intentional, as I wasn't thinking of taking that path if the user passed in a ring element (as opposed to the default value) and didn't want to make the default value None and handle it everywhere. In retrospect, I think it's fine for it to be equal to 1.",
     "created_at": "2010-07-29T05:47:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7741",
     "type": "issue_comment",
@@ -254,7 +254,7 @@ archive/issue_comments_066538.json:
 }
 ```
 
-Attachment
+Attachment [7741-symbolic-frac-fixed.patch](tarball://root/attachments/some-uuid/ticket7741/7741-symbolic-frac-fixed.patch) by robertwb created at 2010-07-29 05:47:35
 
 Actually, the "is 1" was intentional, as I wasn't thinking of taking that path if the user passed in a ring element (as opposed to the default value) and didn't want to make the default value None and handle it everywhere. In retrospect, I think it's fine for it to be equal to 1.
 

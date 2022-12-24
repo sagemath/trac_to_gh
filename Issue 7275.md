@@ -46,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7275
 archive/issue_comments_060541.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7275-tutorial-noise.patch](tarball://root/attachments/some-uuid/ticket7275/trac_7275-tutorial-noise.patch) by jhpalmieri created at 2009-10-23 21:44:30",
     "created_at": "2009-10-23T21:44:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7275",
     "type": "issue_comment",
@@ -55,7 +55,7 @@ archive/issue_comments_060541.json:
 }
 ```
 
-Attachment
+Attachment [trac_7275-tutorial-noise.patch](tarball://root/attachments/some-uuid/ticket7275/trac_7275-tutorial-noise.patch) by jhpalmieri created at 2009-10-23 21:44:30
 
 
 

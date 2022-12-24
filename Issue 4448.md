@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4448
 archive/issue_comments_032799.json:
 ```json
 {
-    "body": "Attachment\n\nIndeed, that was the problem.",
+    "body": "Attachment [trac-4448-interact-grid.patch](tarball://root/attachments/some-uuid/ticket4448/trac-4448-interact-grid.patch) by jason created at 2008-11-05 20:38:10\n\nIndeed, that was the problem.",
     "created_at": "2008-11-05T20:38:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4448",
     "type": "issue_comment",
@@ -50,7 +50,7 @@ archive/issue_comments_032799.json:
 }
 ```
 
-Attachment
+Attachment [trac-4448-interact-grid.patch](tarball://root/attachments/some-uuid/ticket4448/trac-4448-interact-grid.patch) by jason created at 2008-11-05 20:38:10
 
 Indeed, that was the problem.
 

@@ -53,7 +53,7 @@ Changing status from new to assigned.
 archive/issue_comments_022002.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [python-2.5.2-spkg-install-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3177/python-2.5.2-spkg-install-64bit-osx.patch) by mabshoff created at 2008-05-19 02:56:10",
     "created_at": "2008-05-19T02:56:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3177",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_022002.json:
 }
 ```
 
-Attachment
+Attachment [python-2.5.2-spkg-install-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3177/python-2.5.2-spkg-install-64bit-osx.patch) by mabshoff created at 2008-05-19 02:56:10
 
 
 

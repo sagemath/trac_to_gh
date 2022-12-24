@@ -756,7 +756,7 @@ Replaces previous patches
 archive/issue_comments_066109.json:
 ```json
 {
-    "body": "Attachment\n\nThis works for at least two distinct sets of output, so if it's a 32-64 bit issue, this should take care of it.",
+    "body": "Attachment [trac_7703-flat.patch](tarball://root/attachments/some-uuid/ticket7703/trac_7703-flat.patch) by rlm created at 2010-01-16 05:42:25\n\nThis works for at least two distinct sets of output, so if it's a 32-64 bit issue, this should take care of it.",
     "created_at": "2010-01-16T05:42:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7703",
     "type": "issue_comment",
@@ -765,7 +765,7 @@ archive/issue_comments_066109.json:
 }
 ```
 
-Attachment
+Attachment [trac_7703-flat.patch](tarball://root/attachments/some-uuid/ticket7703/trac_7703-flat.patch) by rlm created at 2010-01-16 05:42:25
 
 This works for at least two distinct sets of output, so if it's a 32-64 bit issue, this should take care of it.
 

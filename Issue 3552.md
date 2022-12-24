@@ -250,7 +250,7 @@ document top; optimize opening new worksheets
 archive/issue_comments_025123.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3552-part1.patch](tarball://root/attachments/some-uuid/ticket3552/sage-3552-part1.patch) by was created at 2008-07-05 21:08:06",
     "created_at": "2008-07-05T21:08:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3552",
     "type": "issue_comment",
@@ -259,7 +259,7 @@ archive/issue_comments_025123.json:
 }
 ```
 
-Attachment
+Attachment [sage-3552-part1.patch](tarball://root/attachments/some-uuid/ticket3552/sage-3552-part1.patch) by was created at 2008-07-05 21:08:06
 
 
 
@@ -286,7 +286,7 @@ this brings coverage up to 35% and fixes some bugs.
 archive/issue_comments_025125.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3552-part2.patch](tarball://root/attachments/some-uuid/ticket3552/sage-3552-part2.patch) by TimothyClemans created at 2008-07-05 22:20:52",
     "created_at": "2008-07-05T22:20:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3552",
     "type": "issue_comment",
@@ -295,7 +295,7 @@ archive/issue_comments_025125.json:
 }
 ```
 
-Attachment
+Attachment [sage-3552-part2.patch](tarball://root/attachments/some-uuid/ticket3552/sage-3552-part2.patch) by TimothyClemans created at 2008-07-05 22:20:52
 
 
 
@@ -304,7 +304,7 @@ Attachment
 archive/issue_comments_025126.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3552-part3.patch](tarball://root/attachments/some-uuid/ticket3552/sage-3552-part3.patch) by TimothyClemans created at 2008-07-05 22:21:08",
     "created_at": "2008-07-05T22:21:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3552",
     "type": "issue_comment",
@@ -313,7 +313,7 @@ archive/issue_comments_025126.json:
 }
 ```
 
-Attachment
+Attachment [sage-3552-part3.patch](tarball://root/attachments/some-uuid/ticket3552/sage-3552-part3.patch) by TimothyClemans created at 2008-07-05 22:21:08
 
 
 

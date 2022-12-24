@@ -72,7 +72,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8363
 archive/issue_comments_074725.json:
 ```json
 {
-    "body": "Attachment\n\nMercurial patch",
+    "body": "Attachment [cddlib-094f.p5.patch](tarball://root/attachments/some-uuid/ticket8363/cddlib-094f.p5.patch) by drkirkby created at 2010-02-25 16:33:13\n\nMercurial patch",
     "created_at": "2010-02-25T16:33:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8363",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_074725.json:
 }
 ```
 
-Attachment
+Attachment [cddlib-094f.p5.patch](tarball://root/attachments/some-uuid/ticket8363/cddlib-094f.p5.patch) by drkirkby created at 2010-02-25 16:33:13
 
 Mercurial patch
 
@@ -128,7 +128,7 @@ Changing status from new to needs_review.
 archive/issue_comments_074728.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [cddlib-094f.p5.spkg](tarball://root/attachments/some-uuid/ticket8363/cddlib-094f.p5.spkg) by drkirkby created at 2010-02-25 16:35:11",
     "created_at": "2010-02-25T16:35:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8363",
     "type": "issue_comment",
@@ -137,7 +137,7 @@ archive/issue_comments_074728.json:
 }
 ```
 
-Attachment
+Attachment [cddlib-094f.p5.spkg](tarball://root/attachments/some-uuid/ticket8363/cddlib-094f.p5.spkg) by drkirkby created at 2010-02-25 16:35:11
 
 
 

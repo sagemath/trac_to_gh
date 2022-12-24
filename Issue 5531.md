@@ -62,7 +62,7 @@ Changing status from new to assigned.
 archive/issue_comments_043009.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [quaternion_docstring_fix.patch](tarball://root/attachments/some-uuid/ticket5531/quaternion_docstring_fix.patch) by davidloeffler created at 2009-03-16 17:53:03",
     "created_at": "2009-03-16T17:53:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5531",
     "type": "issue_comment",
@@ -71,7 +71,7 @@ archive/issue_comments_043009.json:
 }
 ```
 
-Attachment
+Attachment [quaternion_docstring_fix.patch](tarball://root/attachments/some-uuid/ticket5531/quaternion_docstring_fix.patch) by davidloeffler created at 2009-03-16 17:53:03
 
 
 

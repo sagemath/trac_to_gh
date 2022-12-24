@@ -51,7 +51,7 @@ Changing status from new to assigned.
 archive/issue_comments_012406.json:
 ```json
 {
-    "body": "Attachment\n\nthis is part 1 -- it doesn't even build yet, but all functions are there...",
+    "body": "Attachment [trac-1949-mwrank_rewrite_part1.patch](tarball://root/attachments/some-uuid/ticket1949/trac-1949-mwrank_rewrite_part1.patch) by was created at 2008-01-28 06:24:20\n\nthis is part 1 -- it doesn't even build yet, but all functions are there...",
     "created_at": "2008-01-28T06:24:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1949",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_012406.json:
 }
 ```
 
-Attachment
+Attachment [trac-1949-mwrank_rewrite_part1.patch](tarball://root/attachments/some-uuid/ticket1949/trac-1949-mwrank_rewrite_part1.patch) by was created at 2008-01-28 06:24:20
 
 this is part 1 -- it doesn't even build yet, but all functions are there...
 

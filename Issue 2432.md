@@ -959,7 +959,7 @@ Great job!
 archive/issue_comments_016461.json:
 ```json
 {
-    "body": "Attachment\n\nI've updated the patch to fix the typos.",
+    "body": "Attachment [2432-referee.patch](tarball://root/attachments/some-uuid/ticket2432/2432-referee.patch) by mhansen created at 2008-03-14 19:01:52\n\nI've updated the patch to fix the typos.",
     "created_at": "2008-03-14T19:01:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2432",
     "type": "issue_comment",
@@ -968,7 +968,7 @@ archive/issue_comments_016461.json:
 }
 ```
 
-Attachment
+Attachment [2432-referee.patch](tarball://root/attachments/some-uuid/ticket2432/2432-referee.patch) by mhansen created at 2008-03-14 19:01:52
 
 I've updated the patch to fix the typos.
 

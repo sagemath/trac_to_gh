@@ -63,7 +63,7 @@ First patch !
 archive/issue_comments_054890.json:
 ```json
 {
-    "body": "Attachment\n\nFirst patch !",
+    "body": "Attachment [coloring-1.2.patch](tarball://root/attachments/some-uuid/ticket6679/coloring-1.2.patch) by ncohen created at 2009-08-06 15:11:44\n\nFirst patch !",
     "created_at": "2009-08-06T15:11:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6679",
     "type": "issue_comment",
@@ -72,7 +72,7 @@ archive/issue_comments_054890.json:
 }
 ```
 
-Attachment
+Attachment [coloring-1.2.patch](tarball://root/attachments/some-uuid/ticket6679/coloring-1.2.patch) by ncohen created at 2009-08-06 15:11:44
 
 First patch !
 
@@ -141,7 +141,7 @@ Even shorter, even better, even more efficient... Here is the new version of the
 archive/issue_comments_054894.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [coloring-symbolic.patch](tarball://root/attachments/some-uuid/ticket6679/coloring-symbolic.patch) by ncohen created at 2009-09-03 17:06:17",
     "created_at": "2009-09-03T17:06:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6679",
     "type": "issue_comment",
@@ -150,7 +150,7 @@ archive/issue_comments_054894.json:
 }
 ```
 
-Attachment
+Attachment [coloring-symbolic.patch](tarball://root/attachments/some-uuid/ticket6679/coloring-symbolic.patch) by ncohen created at 2009-09-03 17:06:17
 
 
 
@@ -365,7 +365,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_054904.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:14 ncohen]:\n> I have a question though : I build the reference to check the docstrings and noticed the file graph_colouring.pyx was not included in them : should we change it ?\nAn ultimate goal is to include all documentation of the Sage library in the reference manual. So, yes to your suggestion. Please open another ticket to include the file `sage/graph/graph_coloring.py` in the reference manual.",
+    "body": "Attachment [trac_6679.patch](tarball://root/attachments/some-uuid/ticket6679/trac_6679.patch) by mvngu created at 2009-11-25 08:25:09\n\nReplying to [comment:14 ncohen]:\n> I have a question though : I build the reference to check the docstrings and noticed the file graph_colouring.pyx was not included in them : should we change it ?\nAn ultimate goal is to include all documentation of the Sage library in the reference manual. So, yes to your suggestion. Please open another ticket to include the file `sage/graph/graph_coloring.py` in the reference manual.",
     "created_at": "2009-11-25T08:25:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6679",
     "type": "issue_comment",
@@ -374,7 +374,7 @@ archive/issue_comments_054904.json:
 }
 ```
 
-Attachment
+Attachment [trac_6679.patch](tarball://root/attachments/some-uuid/ticket6679/trac_6679.patch) by mvngu created at 2009-11-25 08:25:09
 
 Replying to [comment:14 ncohen]:
 > I have a question though : I build the reference to check the docstrings and noticed the file graph_colouring.pyx was not included in them : should we change it ?
@@ -405,7 +405,7 @@ based on trac_6679.patch
 archive/issue_comments_054906.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch `trac_6679.patch` applies OK against Sage 4.3.alpha0. All doctests pass with the options `-t -long`, apart from the following known doctest failure:\n\n```\nsage -t -long devel/sage/sage/interfaces/maxima.py # 1 doctests failed\n```\n\nThe doctests also pass with the optional packages `cbc-2.3.p0` and `glpk-4.38.p2`, again with the above failure. In the function `first_coloring`(), the function signature states that `hex_colors=True`, which means that `hex_colors` is `True` by default. Yet, the documentation of this keyword claims otherwise. I have adjusted the documentation and value of `hex_colors` accordingly. However, it's crucial that you check my changes because in the function `coloring()` its default value is `False`. I have attached the reviewer patch `trac_6679-reviewer.patch`. Only my patch needs review. You should apply patches in this order:\n\n1. `trac_6679.patch`\n2. `trac_6679-reviewer.patch`",
+    "body": "Attachment [trac_6679-reviewer.patch](tarball://root/attachments/some-uuid/ticket6679/trac_6679-reviewer.patch) by mvngu created at 2009-12-01 18:21:26\n\nThe patch `trac_6679.patch` applies OK against Sage 4.3.alpha0. All doctests pass with the options `-t -long`, apart from the following known doctest failure:\n\n```\nsage -t -long devel/sage/sage/interfaces/maxima.py # 1 doctests failed\n```\n\nThe doctests also pass with the optional packages `cbc-2.3.p0` and `glpk-4.38.p2`, again with the above failure. In the function `first_coloring`(), the function signature states that `hex_colors=True`, which means that `hex_colors` is `True` by default. Yet, the documentation of this keyword claims otherwise. I have adjusted the documentation and value of `hex_colors` accordingly. However, it's crucial that you check my changes because in the function `coloring()` its default value is `False`. I have attached the reviewer patch `trac_6679-reviewer.patch`. Only my patch needs review. You should apply patches in this order:\n\n1. `trac_6679.patch`\n2. `trac_6679-reviewer.patch`",
     "created_at": "2009-12-01T18:21:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6679",
     "type": "issue_comment",
@@ -414,7 +414,7 @@ archive/issue_comments_054906.json:
 }
 ```
 
-Attachment
+Attachment [trac_6679-reviewer.patch](tarball://root/attachments/some-uuid/ticket6679/trac_6679-reviewer.patch) by mvngu created at 2009-12-01 18:21:26
 
 The patch `trac_6679.patch` applies OK against Sage 4.3.alpha0. All doctests pass with the options `-t -long`, apart from the following known doctest failure:
 

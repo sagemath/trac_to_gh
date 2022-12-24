@@ -55,7 +55,7 @@ Applies #8167's treatment to `Worksheet.__init__`.  sagenb repo.
 archive/issue_comments_073163.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8265-unicode_underscore.patch](tarball://root/attachments/some-uuid/ticket8265/trac_8265-unicode_underscore.patch) by mpatel created at 2010-02-14 19:05:38",
     "created_at": "2010-02-14T19:05:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8265",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_073163.json:
 }
 ```
 
-Attachment
+Attachment [trac_8265-unicode_underscore.patch](tarball://root/attachments/some-uuid/ticket8265/trac_8265-unicode_underscore.patch) by mpatel created at 2010-02-14 19:05:38
 
 
 

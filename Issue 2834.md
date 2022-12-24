@@ -38,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2834
 archive/issue_comments_019447.json:
 ```json
 {
-    "body": "Attachment\n\nAll tests pass for me.  I'd give it a positive review, but I'd also like to hear others' comments.",
+    "body": "Attachment [pylint_polynomial_import.patch](tarball://root/attachments/some-uuid/ticket2834/pylint_polynomial_import.patch) by mhansen created at 2008-04-06 22:49:52\n\nAll tests pass for me.  I'd give it a positive review, but I'd also like to hear others' comments.",
     "created_at": "2008-04-06T22:49:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2834",
     "type": "issue_comment",
@@ -47,7 +47,7 @@ archive/issue_comments_019447.json:
 }
 ```
 
-Attachment
+Attachment [pylint_polynomial_import.patch](tarball://root/attachments/some-uuid/ticket2834/pylint_polynomial_import.patch) by mhansen created at 2008-04-06 22:49:52
 
 All tests pass for me.  I'd give it a positive review, but I'd also like to hear others' comments.
 
@@ -99,7 +99,7 @@ Michael
 archive/issue_comments_019449.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [pylint_linear_code_long_fix_and_cleanup.patch](tarball://root/attachments/some-uuid/ticket2834/pylint_linear_code_long_fix_and_cleanup.patch) by malb created at 2008-04-07 13:07:09",
     "created_at": "2008-04-07T13:07:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2834",
     "type": "issue_comment",
@@ -108,7 +108,7 @@ archive/issue_comments_019449.json:
 }
 ```
 
-Attachment
+Attachment [pylint_linear_code_long_fix_and_cleanup.patch](tarball://root/attachments/some-uuid/ticket2834/pylint_linear_code_long_fix_and_cleanup.patch) by malb created at 2008-04-07 13:07:09
 
 
 

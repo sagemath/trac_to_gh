@@ -116,7 +116,7 @@ sobj/
 archive/issue_comments_026132.json:
 ```json
 {
-    "body": "Attachment\n\nThe Debian people made me fix all these problems myself, so I've attached patches to fix the #! lines to each of these tickets.  You'll have to remove the executable bits yourself, since I seem to recall mercurial doesn't support that.\n\nBy the way, the empty directories in the extcode spkg are for the Sage pexpect wrapper, and can't be deleted.  The others can.",
+    "body": "Attachment [extcode_shebang.patch](tarball://root/attachments/some-uuid/ticket3686/extcode_shebang.patch) by tabbott created at 2008-08-03 05:45:46\n\nThe Debian people made me fix all these problems myself, so I've attached patches to fix the #! lines to each of these tickets.  You'll have to remove the executable bits yourself, since I seem to recall mercurial doesn't support that.\n\nBy the way, the empty directories in the extcode spkg are for the Sage pexpect wrapper, and can't be deleted.  The others can.",
     "created_at": "2008-08-03T05:45:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3686",
     "type": "issue_comment",
@@ -125,7 +125,7 @@ archive/issue_comments_026132.json:
 }
 ```
 
-Attachment
+Attachment [extcode_shebang.patch](tarball://root/attachments/some-uuid/ticket3686/extcode_shebang.patch) by tabbott created at 2008-08-03 05:45:46
 
 The Debian people made me fix all these problems myself, so I've attached patches to fix the #! lines to each of these tickets.  You'll have to remove the executable bits yourself, since I seem to recall mercurial doesn't support that.
 

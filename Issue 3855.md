@@ -61,7 +61,7 @@ Changing assignee from was to anakha.
 archive/issue_comments_027460.json:
 ```json
 {
-    "body": "Attachment\n\nYes, easy.",
+    "body": "Attachment [trac_3855.patch](tarball://root/attachments/some-uuid/ticket3855/trac_3855.patch) by anakha created at 2008-09-21 19:47:09\n\nYes, easy.",
     "created_at": "2008-09-21T19:47:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3855",
     "type": "issue_comment",
@@ -70,7 +70,7 @@ archive/issue_comments_027460.json:
 }
 ```
 
-Attachment
+Attachment [trac_3855.patch](tarball://root/attachments/some-uuid/ticket3855/trac_3855.patch) by anakha created at 2008-09-21 19:47:09
 
 Yes, easy.
 

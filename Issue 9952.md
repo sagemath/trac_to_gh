@@ -70,7 +70,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9953
 archive/issue_comments_099270.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9953.patch](tarball://root/attachments/some-uuid/ticket9953/9953.patch) by roed created at 2010-10-25 21:27:01",
     "created_at": "2010-10-25T21:27:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9952",
     "type": "issue_comment",
@@ -79,7 +79,7 @@ archive/issue_comments_099270.json:
 }
 ```
 
-Attachment
+Attachment [9953.patch](tarball://root/attachments/some-uuid/ticket9953/9953.patch) by roed created at 2010-10-25 21:27:01
 
 
 

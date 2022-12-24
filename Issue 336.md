@@ -80,7 +80,7 @@ To test it do the following:
 archive/issue_comments_001651.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-336.patch](tarball://root/attachments/some-uuid/ticket336/sage-336.patch) by was created at 2008-05-10 19:54:50",
     "created_at": "2008-05-10T19:54:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/336",
     "type": "issue_comment",
@@ -89,7 +89,7 @@ archive/issue_comments_001651.json:
 }
 ```
 
-Attachment
+Attachment [sage-336.patch](tarball://root/attachments/some-uuid/ticket336/sage-336.patch) by was created at 2008-05-10 19:54:50
 
 
 
@@ -127,7 +127,7 @@ Got:
 archive/issue_comments_001653.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review with doctestfix patch. I didn't really do 5 except I did look at the doctest stuff.",
+    "body": "Attachment [336_doctestfix.patch](tarball://root/attachments/some-uuid/ticket336/336_doctestfix.patch) by TimothyClemans created at 2008-05-11 04:02:38\n\nPositive review with doctestfix patch. I didn't really do 5 except I did look at the doctest stuff.",
     "created_at": "2008-05-11T04:02:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/336",
     "type": "issue_comment",
@@ -136,7 +136,7 @@ archive/issue_comments_001653.json:
 }
 ```
 
-Attachment
+Attachment [336_doctestfix.patch](tarball://root/attachments/some-uuid/ticket336/336_doctestfix.patch) by TimothyClemans created at 2008-05-11 04:02:38
 
 Positive review with doctestfix patch. I didn't really do 5 except I did look at the doctest stuff.
 

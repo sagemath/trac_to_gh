@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/889
 archive/issue_comments_005489.json:
 ```json
 {
-    "body": "Attachment\n\nFixes the doctest",
+    "body": "Attachment [trac889.patch](tarball://root/attachments/some-uuid/ticket889/trac889.patch) by roed created at 2007-10-14 03:12:31\n\nFixes the doctest",
     "created_at": "2007-10-14T03:12:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/889",
     "type": "issue_comment",
@@ -50,7 +50,7 @@ archive/issue_comments_005489.json:
 }
 ```
 
-Attachment
+Attachment [trac889.patch](tarball://root/attachments/some-uuid/ticket889/trac889.patch) by roed created at 2007-10-14 03:12:31
 
 Fixes the doctest
 

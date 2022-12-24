@@ -51,7 +51,7 @@ based on Sage 4.0.1.rc1
 archive/issue_comments_049679.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6222.patch](tarball://root/attachments/some-uuid/ticket6222/trac_6222.patch) by mvngu created at 2009-06-05 07:40:58",
     "created_at": "2009-06-05T07:40:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6222",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_049679.json:
 }
 ```
 
-Attachment
+Attachment [trac_6222.patch](tarball://root/attachments/some-uuid/ticket6222/trac_6222.patch) by mvngu created at 2009-06-05 07:40:58
 
 
 

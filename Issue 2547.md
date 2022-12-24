@@ -254,7 +254,7 @@ I did a little spelunking on this one, and so far, what it appears to come down 
 archive/issue_comments_017395.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [function_derivatives.patch](tarball://root/attachments/some-uuid/ticket2547/function_derivatives.patch) by jwmerrill created at 2008-09-01 04:28:40",
     "created_at": "2008-09-01T04:28:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2547",
     "type": "issue_comment",
@@ -263,7 +263,7 @@ archive/issue_comments_017395.json:
 }
 ```
 
-Attachment
+Attachment [function_derivatives.patch](tarball://root/attachments/some-uuid/ticket2547/function_derivatives.patch) by jwmerrill created at 2008-09-01 04:28:40
 
 
 

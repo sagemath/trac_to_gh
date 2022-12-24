@@ -65,7 +65,7 @@ Changing status from new to assigned.
 archive/issue_comments_008544.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-2.8.14-polynomial_element-doctest-fix-PPCLinux.patch](tarball://root/attachments/some-uuid/ticket1336/Sage-2.8.14-polynomial_element-doctest-fix-PPCLinux.patch) by mabshoff created at 2007-11-29 09:42:40",
     "created_at": "2007-11-29T09:42:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1336",
     "type": "issue_comment",
@@ -74,7 +74,7 @@ archive/issue_comments_008544.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.8.14-polynomial_element-doctest-fix-PPCLinux.patch](tarball://root/attachments/some-uuid/ticket1336/Sage-2.8.14-polynomial_element-doctest-fix-PPCLinux.patch) by mabshoff created at 2007-11-29 09:42:40
 
 
 

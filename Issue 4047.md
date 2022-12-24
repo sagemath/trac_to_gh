@@ -104,7 +104,7 @@ Looks good to me.
 archive/issue_comments_029187.json:
 ```json
 {
-    "body": "Attachment\n\nThe updated patch is good too :-)",
+    "body": "Attachment [trac_4047-hypergraphs.patch](tarball://root/attachments/some-uuid/ticket4047/trac_4047-hypergraphs.patch) by mhansen created at 2008-09-05 19:37:04\n\nThe updated patch is good too :-)",
     "created_at": "2008-09-05T19:37:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4047",
     "type": "issue_comment",
@@ -113,7 +113,7 @@ archive/issue_comments_029187.json:
 }
 ```
 
-Attachment
+Attachment [trac_4047-hypergraphs.patch](tarball://root/attachments/some-uuid/ticket4047/trac_4047-hypergraphs.patch) by mhansen created at 2008-09-05 19:37:04
 
 The updated patch is good too :-)
 

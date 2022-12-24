@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1089
 archive/issue_comments_006593.json:
 ```json
 {
-    "body": "Attachment\n\nJason,\n\nPlease include a fresh patch that comes from a clean install of sage 2.8.11. The base version does not match. Also, the function subgraph(vertices) returns the induced subgraph with the given vertices and *all* edges from the original graph whose endpoints are in vertices. Perhaps the current function should be renamed induced_subgraph, and you could make a separate subgraph_from_edges() function. It also occurs to me that we don't yet have an is_subgraph fucntion...\n\nCheers,\n\nRobert M",
+    "body": "Attachment [subgraph-edges.patch](tarball://root/attachments/some-uuid/ticket1089/subgraph-edges.patch) by rlm created at 2007-11-03 23:29:50\n\nJason,\n\nPlease include a fresh patch that comes from a clean install of sage 2.8.11. The base version does not match. Also, the function subgraph(vertices) returns the induced subgraph with the given vertices and *all* edges from the original graph whose endpoints are in vertices. Perhaps the current function should be renamed induced_subgraph, and you could make a separate subgraph_from_edges() function. It also occurs to me that we don't yet have an is_subgraph fucntion...\n\nCheers,\n\nRobert M",
     "created_at": "2007-11-03T23:29:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1089",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_006593.json:
 }
 ```
 
-Attachment
+Attachment [subgraph-edges.patch](tarball://root/attachments/some-uuid/ticket1089/subgraph-edges.patch) by rlm created at 2007-11-03 23:29:50
 
 Jason,
 
@@ -141,7 +141,7 @@ Indeed, the subgraph isomorphism problem is NP-complete, but I was just talking 
 archive/issue_comments_006597.json:
 ```json
 {
-    "body": "Attachment\n\nCorrected bugs, rebased against 2.8.12, and put in more comprehensive doctests.",
+    "body": "Attachment [subgraph_edges-updated.patch](tarball://root/attachments/some-uuid/ticket1089/subgraph_edges-updated.patch) by jason created at 2007-11-13 23:44:12\n\nCorrected bugs, rebased against 2.8.12, and put in more comprehensive doctests.",
     "created_at": "2007-11-13T23:44:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1089",
     "type": "issue_comment",
@@ -150,7 +150,7 @@ archive/issue_comments_006597.json:
 }
 ```
 
-Attachment
+Attachment [subgraph_edges-updated.patch](tarball://root/attachments/some-uuid/ticket1089/subgraph_edges-updated.patch) by jason created at 2007-11-13 23:44:12
 
 Corrected bugs, rebased against 2.8.12, and put in more comprehensive doctests.
 

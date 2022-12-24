@@ -126,7 +126,7 @@ Done !
 archive/issue_comments_056692.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [MIP-now-symbolic.patch](tarball://root/attachments/some-uuid/ticket6869/MIP-now-symbolic.patch) by ncohen created at 2009-09-09 17:53:08",
     "created_at": "2009-09-09T17:53:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6869",
     "type": "issue_comment",
@@ -135,7 +135,7 @@ archive/issue_comments_056692.json:
 }
 ```
 
-Attachment
+Attachment [MIP-now-symbolic.patch](tarball://root/attachments/some-uuid/ticket6869/MIP-now-symbolic.patch) by ncohen created at 2009-09-09 17:53:08
 
 
 

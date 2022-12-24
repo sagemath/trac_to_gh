@@ -187,7 +187,7 @@ This spkg needs to be installed before the attached patch is applied.
 archive/issue_comments_023697.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [plot_vector_field_aspect_ratio.patch](tarball://root/attachments/some-uuid/ticket3385/plot_vector_field_aspect_ratio.patch) by jason created at 2008-09-20 19:21:58",
     "created_at": "2008-09-20T19:21:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3385",
     "type": "issue_comment",
@@ -196,7 +196,7 @@ archive/issue_comments_023697.json:
 }
 ```
 
-Attachment
+Attachment [plot_vector_field_aspect_ratio.patch](tarball://root/attachments/some-uuid/ticket3385/plot_vector_field_aspect_ratio.patch) by jason created at 2008-09-20 19:21:58
 
 
 

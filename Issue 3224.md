@@ -53,7 +53,7 @@ Changing status from new to assigned.
 archive/issue_comments_022315.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [lcalc-20080205.p0-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3224/lcalc-20080205.p0-64bit-osx.patch) by mabshoff created at 2008-05-18 23:27:55",
     "created_at": "2008-05-18T23:27:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3224",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_022315.json:
 }
 ```
 
-Attachment
+Attachment [lcalc-20080205.p0-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3224/lcalc-20080205.p0-64bit-osx.patch) by mabshoff created at 2008-05-18 23:27:55
 
 
 

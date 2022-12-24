@@ -130,7 +130,7 @@ Total time for all tests: 65.0 seconds
 archive/issue_comments_072140.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8185-numerical-noise.patch](tarball://root/attachments/some-uuid/ticket8185/8185-numerical-noise.patch) by robertwb created at 2010-02-04 20:55:36",
     "created_at": "2010-02-04T20:55:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8185",
     "type": "issue_comment",
@@ -139,7 +139,7 @@ archive/issue_comments_072140.json:
 }
 ```
 
-Attachment
+Attachment [8185-numerical-noise.patch](tarball://root/attachments/some-uuid/ticket8185/8185-numerical-noise.patch) by robertwb created at 2010-02-04 20:55:36
 
 
 

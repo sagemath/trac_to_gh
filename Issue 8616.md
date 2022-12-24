@@ -57,7 +57,7 @@ Changing status from new to needs_review.
 archive/issue_comments_078076.json:
 ```json
 {
-    "body": "Attachment\n\nsymbolic sage module",
+    "body": "Attachment [trac_8616_symbolic_sage.patch](tarball://root/attachments/some-uuid/ticket8616/trac_8616_symbolic_sage.patch) by yuri.k created at 2010-03-27 20:34:00\n\nsymbolic sage module",
     "created_at": "2010-03-27T20:34:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8616",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_078076.json:
 }
 ```
 
-Attachment
+Attachment [trac_8616_symbolic_sage.patch](tarball://root/attachments/some-uuid/ticket8616/trac_8616_symbolic_sage.patch) by yuri.k created at 2010-03-27 20:34:00
 
 symbolic sage module
 
@@ -77,7 +77,7 @@ symbolic sage module
 archive/issue_comments_078077.json:
 ```json
 {
-    "body": "Attachment\n\nsymbolic sage module",
+    "body": "Attachment [trac_8616_symbolic_sage.2.patch](tarball://root/attachments/some-uuid/ticket8616/trac_8616_symbolic_sage.2.patch) by yuri.k created at 2010-03-27 20:34:04\n\nsymbolic sage module",
     "created_at": "2010-03-27T20:34:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8616",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_078077.json:
 }
 ```
 
-Attachment
+Attachment [trac_8616_symbolic_sage.2.patch](tarball://root/attachments/some-uuid/ticket8616/trac_8616_symbolic_sage.2.patch) by yuri.k created at 2010-03-27 20:34:04
 
 symbolic sage module
 
@@ -123,7 +123,7 @@ And there is no mtype.* file in sage/symmbolic in my Sage 4.3.4
 archive/issue_comments_078079.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8616_symbolic_sage_correct.patch](tarball://root/attachments/some-uuid/ticket8616/trac_8616_symbolic_sage_correct.patch) by yuri.k created at 2010-03-28 17:50:14",
     "created_at": "2010-03-28T17:50:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8616",
     "type": "issue_comment",
@@ -132,7 +132,7 @@ archive/issue_comments_078079.json:
 }
 ```
 
-Attachment
+Attachment [trac_8616_symbolic_sage_correct.patch](tarball://root/attachments/some-uuid/ticket8616/trac_8616_symbolic_sage_correct.patch) by yuri.k created at 2010-03-28 17:50:14
 
 
 
@@ -141,7 +141,7 @@ Attachment
 archive/issue_comments_078080.json:
 ```json
 {
-    "body": "Attachment\n\nmore precise autodetect of independent variable",
+    "body": "Attachment [trac_8616_symbolic_sage_correct2.patch](tarball://root/attachments/some-uuid/ticket8616/trac_8616_symbolic_sage_correct2.patch) by yuri.k created at 2010-03-29 09:50:08\n\nmore precise autodetect of independent variable",
     "created_at": "2010-03-29T09:50:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8616",
     "type": "issue_comment",
@@ -150,7 +150,7 @@ archive/issue_comments_078080.json:
 }
 ```
 
-Attachment
+Attachment [trac_8616_symbolic_sage_correct2.patch](tarball://root/attachments/some-uuid/ticket8616/trac_8616_symbolic_sage_correct2.patch) by yuri.k created at 2010-03-29 09:50:08
 
 more precise autodetect of independent variable
 

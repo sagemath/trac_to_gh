@@ -49,7 +49,7 @@ Changing status from new to needs_review.
 archive/issue_comments_070273.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8041.patch](tarball://root/attachments/some-uuid/ticket8041/trac_8041.patch) by was created at 2010-01-22 15:34:40",
     "created_at": "2010-01-22T15:34:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8041",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_070273.json:
 }
 ```
 
-Attachment
+Attachment [trac_8041.patch](tarball://root/attachments/some-uuid/ticket8041/trac_8041.patch) by was created at 2010-01-22 15:34:40
 
 
 
@@ -85,7 +85,7 @@ Positive review for was's patch.  Here's another patch fixing the same and simil
 archive/issue_comments_070275.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of other patch",
+    "body": "Attachment [trac_8041-part2.patch](tarball://root/attachments/some-uuid/ticket8041/trac_8041-part2.patch) by jhpalmieri created at 2010-01-22 16:12:11\n\napply on top of other patch",
     "created_at": "2010-01-22T16:12:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8041",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_070275.json:
 }
 ```
 
-Attachment
+Attachment [trac_8041-part2.patch](tarball://root/attachments/some-uuid/ticket8041/trac_8041-part2.patch) by jhpalmieri created at 2010-01-22 16:12:11
 
 apply on top of other patch
 

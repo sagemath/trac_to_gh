@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6768
 archive/issue_comments_055741.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [12538.patch](tarball://root/attachments/some-uuid/ticket6768/12538.patch) by wakep created at 2009-08-17 01:13:37",
     "created_at": "2009-08-17T01:13:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6768",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_055741.json:
 }
 ```
 
-Attachment
+Attachment [12538.patch](tarball://root/attachments/some-uuid/ticket6768/12538.patch) by wakep created at 2009-08-17 01:13:37
 
 
 
@@ -69,7 +69,7 @@ Hi Preston. For your patch, references should go in a separate references sectio
 archive/issue_comments_055743.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [hecke.patch](tarball://root/attachments/some-uuid/ticket6768/hecke.patch) by wakep created at 2009-08-17 20:35:08",
     "created_at": "2009-08-17T20:35:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6768",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_055743.json:
 }
 ```
 
-Attachment
+Attachment [hecke.patch](tarball://root/attachments/some-uuid/ticket6768/hecke.patch) by wakep created at 2009-08-17 20:35:08
 
 
 

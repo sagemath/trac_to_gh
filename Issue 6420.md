@@ -153,7 +153,7 @@ Patch is now up.
 archive/issue_comments_051550.json:
 ```json
 {
-    "body": "Attachment\n\nI updated the patch to remove some excess blank lines and to remove the \".. note::\" which didn't make sense.  Otherwise, your change is good by me.\n\nkcrisman, could you okay these changes and mark it as a positive review?",
+    "body": "Attachment [trac_6420-integrate-one-over-cube.patch](tarball://root/attachments/some-uuid/ticket6420/trac_6420-integrate-one-over-cube.patch) by mhansen created at 2009-10-05 04:57:06\n\nI updated the patch to remove some excess blank lines and to remove the \".. note::\" which didn't make sense.  Otherwise, your change is good by me.\n\nkcrisman, could you okay these changes and mark it as a positive review?",
     "created_at": "2009-10-05T04:57:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6420",
     "type": "issue_comment",
@@ -162,7 +162,7 @@ archive/issue_comments_051550.json:
 }
 ```
 
-Attachment
+Attachment [trac_6420-integrate-one-over-cube.patch](tarball://root/attachments/some-uuid/ticket6420/trac_6420-integrate-one-over-cube.patch) by mhansen created at 2009-10-05 04:57:06
 
 I updated the patch to remove some excess blank lines and to remove the ".. note::" which didn't make sense.  Otherwise, your change is good by me.
 

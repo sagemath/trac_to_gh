@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6497
 archive/issue_comments_052854.json:
 ```json
 {
-    "body": "Attachment\n\nThis depends on #5081.",
+    "body": "Attachment [6497-numpy-sin.patch](tarball://root/attachments/some-uuid/ticket6497/6497-numpy-sin.patch) by burcin created at 2009-07-12 10:33:03\n\nThis depends on #5081.",
     "created_at": "2009-07-12T10:33:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6497",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_052854.json:
 }
 ```
 
-Attachment
+Attachment [6497-numpy-sin.patch](tarball://root/attachments/some-uuid/ticket6497/6497-numpy-sin.patch) by burcin created at 2009-07-12 10:33:03
 
 This depends on #5081.
 

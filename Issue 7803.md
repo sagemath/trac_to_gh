@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7803
 archive/issue_comments_067507.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-4.3-fix-deprecation-warning.patch](tarball://root/attachments/some-uuid/ticket7803/sage-4.3-fix-deprecation-warning.patch) by cschwan created at 2010-01-01 12:24:52",
     "created_at": "2010-01-01T12:24:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7803",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_067507.json:
 }
 ```
 
-Attachment
+Attachment [sage-4.3-fix-deprecation-warning.patch](tarball://root/attachments/some-uuid/ticket7803/sage-4.3-fix-deprecation-warning.patch) by cschwan created at 2010-01-01 12:24:52
 
 
 
@@ -205,7 +205,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_067514.json:
 ```json
 {
-    "body": "Attachment\n\nMaking new attachments does not create \"ticket update\" messages, so I didn't know that a new version is added. As I understand, this is now ready for review, so I'll go ahead and change the status.",
+    "body": "Attachment [sage-4.3.4-fix-usage-of-deprecated-sets-module.patch](tarball://root/attachments/some-uuid/ticket7803/sage-4.3.4-fix-usage-of-deprecated-sets-module.patch) by novoselt created at 2010-05-21 16:44:15\n\nMaking new attachments does not create \"ticket update\" messages, so I didn't know that a new version is added. As I understand, this is now ready for review, so I'll go ahead and change the status.",
     "created_at": "2010-05-21T16:44:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7803",
     "type": "issue_comment",
@@ -214,7 +214,7 @@ archive/issue_comments_067514.json:
 }
 ```
 
-Attachment
+Attachment [sage-4.3.4-fix-usage-of-deprecated-sets-module.patch](tarball://root/attachments/some-uuid/ticket7803/sage-4.3.4-fix-usage-of-deprecated-sets-module.patch) by novoselt created at 2010-05-21 16:44:15
 
 Making new attachments does not create "ticket update" messages, so I didn't know that a new version is added. As I understand, this is now ready for review, so I'll go ahead and change the status.
 

@@ -63,7 +63,7 @@ Replace all things like $MKDIR with mkdir
 archive/issue_comments_068692.json:
 ```json
 {
-    "body": "Attachment\n\nNote, $CP is purposely left as '$CP', since the GNU version of 'cp' have an extra option which can be useful.",
+    "body": "Attachment [singular-variables-to-names.patch](tarball://root/attachments/some-uuid/ticket7898/singular-variables-to-names.patch) by drkirkby created at 2010-01-12 03:41:04\n\nNote, $CP is purposely left as '$CP', since the GNU version of 'cp' have an extra option which can be useful.",
     "created_at": "2010-01-12T03:41:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7898",
     "type": "issue_comment",
@@ -72,7 +72,7 @@ archive/issue_comments_068692.json:
 }
 ```
 
-Attachment
+Attachment [singular-variables-to-names.patch](tarball://root/attachments/some-uuid/ticket7898/singular-variables-to-names.patch) by drkirkby created at 2010-01-12 03:41:04
 
 Note, $CP is purposely left as '$CP', since the GNU version of 'cp' have an extra option which can be useful.
 

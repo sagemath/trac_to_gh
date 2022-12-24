@@ -57,7 +57,7 @@ count spanning trees of graphs
 archive/issue_comments_059491.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7184.patch](tarball://root/attachments/some-uuid/ticket7184/trac_7184.patch) by AJonsson created at 2009-10-10 18:03:00",
     "created_at": "2009-10-10T18:03:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7184",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_059491.json:
 }
 ```
 
-Attachment
+Attachment [trac_7184.patch](tarball://root/attachments/some-uuid/ticket7184/trac_7184.patch) by AJonsson created at 2009-10-10 18:03:00
 
 
 
@@ -298,7 +298,7 @@ built against sage 4.1.2, extra typecheck
 archive/issue_comments_059501.json:
 ```json
 {
-    "body": "Attachment\n\nConsidering the view Tom Boothby had of my little modification of kirchhoff_matrix, it may be better not to touch it for the moment in this patch. If as you say, the two different ways are used, the best option would be to modify kirchhoff_matrix as you say, to let the user choose its own definition. ( the problem with the loops still remains, though, but we do not really care about it in this special application ).\n\nI am still worried about what you said considering Strings, though. If as you say, your code can be broken if vertices are strings, then you did not really solve your problem by taking this into account, as vertices can actually be of any immutable type. See for example patch #7246 where vertices are defined as Words ( which is a totally independent Sage object ). This does not fit in the integer case, nor in the String case.\n\nIf I make no mistake remembering what is written in the book you mentioned, they also talk of a different way to compute the number of out-trees : you do not add this special vertex, but just consider the kirchhoff matrix of the first graph, then add 1 to the vertex you want to take as root. It is ( I think ) an easier way to define your matrix in this case, without having to consider these types.. You just have to deal with the matrix ! ( I'm sorry I can not write this patch myself now, I do not have the correct tools on the computer I use and have some urgent work to get done until tomorrow... :-) )\n\nNathann",
+    "body": "Attachment [trac_7184-try2.patch](tarball://root/attachments/some-uuid/ticket7184/trac_7184-try2.patch) by ncohen created at 2009-10-19 20:19:48\n\nConsidering the view Tom Boothby had of my little modification of kirchhoff_matrix, it may be better not to touch it for the moment in this patch. If as you say, the two different ways are used, the best option would be to modify kirchhoff_matrix as you say, to let the user choose its own definition. ( the problem with the loops still remains, though, but we do not really care about it in this special application ).\n\nI am still worried about what you said considering Strings, though. If as you say, your code can be broken if vertices are strings, then you did not really solve your problem by taking this into account, as vertices can actually be of any immutable type. See for example patch #7246 where vertices are defined as Words ( which is a totally independent Sage object ). This does not fit in the integer case, nor in the String case.\n\nIf I make no mistake remembering what is written in the book you mentioned, they also talk of a different way to compute the number of out-trees : you do not add this special vertex, but just consider the kirchhoff matrix of the first graph, then add 1 to the vertex you want to take as root. It is ( I think ) an easier way to define your matrix in this case, without having to consider these types.. You just have to deal with the matrix ! ( I'm sorry I can not write this patch myself now, I do not have the correct tools on the computer I use and have some urgent work to get done until tomorrow... :-) )\n\nNathann",
     "created_at": "2009-10-19T20:19:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7184",
     "type": "issue_comment",
@@ -307,7 +307,7 @@ archive/issue_comments_059501.json:
 }
 ```
 
-Attachment
+Attachment [trac_7184-try2.patch](tarball://root/attachments/some-uuid/ticket7184/trac_7184-try2.patch) by ncohen created at 2009-10-19 20:19:48
 
 Considering the view Tom Boothby had of my little modification of kirchhoff_matrix, it may be better not to touch it for the moment in this patch. If as you say, the two different ways are used, the best option would be to modify kirchhoff_matrix as you say, to let the user choose its own definition. ( the problem with the loops still remains, though, but we do not really care about it in this special application ).
 
@@ -460,7 +460,7 @@ remove unneeded reassignment of all diagonal entries of Kirchhoff matrix
 archive/issue_comments_059509.json:
 ```json
 {
-    "body": "Attachment\n\nSorryyyyyyy !! I had forgotten to edit your function after I edited kirchhoff_matrix !\n\nHere is a new patch removing this line which is now integrated into kirchhoff_matrix. Besides, I wanted to do something about \n\n```\n\t            for i in self.vertices():  \n\t                        M[j,j]=self.in_degree(i)  \n\t                        if (self.vertices()[j]== root_vertex):  \n\t                            M[j,j]= M[j,j] + 1  \n\t                        j= j + 1  \n```\n\nWith these lines, you are evaluating all the vertices at each look, just to return its jth element. As the vertices do not change, you could have stored the list of vertices in a variable, each time trying to find the jth element of this list ( without listing allt he vertices again ). But with this new patch, you are just getting the index of the vertex you are interested in, and updating the matrix... And with some luck, this patch is the last one :-)",
+    "body": "Attachment [trac7184-simplified.patch](tarball://root/attachments/some-uuid/ticket7184/trac7184-simplified.patch) by ncohen created at 2009-10-21 12:55:17\n\nSorryyyyyyy !! I had forgotten to edit your function after I edited kirchhoff_matrix !\n\nHere is a new patch removing this line which is now integrated into kirchhoff_matrix. Besides, I wanted to do something about \n\n```\n\t            for i in self.vertices():  \n\t                        M[j,j]=self.in_degree(i)  \n\t                        if (self.vertices()[j]== root_vertex):  \n\t                            M[j,j]= M[j,j] + 1  \n\t                        j= j + 1  \n```\n\nWith these lines, you are evaluating all the vertices at each look, just to return its jth element. As the vertices do not change, you could have stored the list of vertices in a variable, each time trying to find the jth element of this list ( without listing allt he vertices again ). But with this new patch, you are just getting the index of the vertex you are interested in, and updating the matrix... And with some luck, this patch is the last one :-)",
     "created_at": "2009-10-21T12:55:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7184",
     "type": "issue_comment",
@@ -469,7 +469,7 @@ archive/issue_comments_059509.json:
 }
 ```
 
-Attachment
+Attachment [trac7184-simplified.patch](tarball://root/attachments/some-uuid/ticket7184/trac7184-simplified.patch) by ncohen created at 2009-10-21 12:55:17
 
 Sorryyyyyyy !! I had forgotten to edit your function after I edited kirchhoff_matrix !
 
@@ -492,7 +492,7 @@ With these lines, you are evaluating all the vertices at each look, just to retu
 archive/issue_comments_059510.json:
 ```json
 {
-    "body": "Attachment\n\nLooks really nice. I'm fully satisfied with the patch.\n\nAnders",
+    "body": "Attachment [trac_7184-reviewer.patch](tarball://root/attachments/some-uuid/ticket7184/trac_7184-reviewer.patch) by AJonsson created at 2009-10-21 14:37:28\n\nLooks really nice. I'm fully satisfied with the patch.\n\nAnders",
     "created_at": "2009-10-21T14:37:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7184",
     "type": "issue_comment",
@@ -501,7 +501,7 @@ archive/issue_comments_059510.json:
 }
 ```
 
-Attachment
+Attachment [trac_7184-reviewer.patch](tarball://root/attachments/some-uuid/ticket7184/trac_7184-reviewer.patch) by AJonsson created at 2009-10-21 14:37:28
 
 Looks really nice. I'm fully satisfied with the patch.
 

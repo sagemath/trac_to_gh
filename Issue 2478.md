@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2478
 archive/issue_comments_016791.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2478-chrompoly.patch](tarball://root/attachments/some-uuid/ticket2478/2478-chrompoly.patch) by rlm created at 2008-03-12 04:31:38",
     "created_at": "2008-03-12T04:31:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2478",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_016791.json:
 }
 ```
 
-Attachment
+Attachment [2478-chrompoly.patch](tarball://root/attachments/some-uuid/ticket2478/2478-chrompoly.patch) by rlm created at 2008-03-12 04:31:38
 
 
 

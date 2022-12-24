@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1939
 archive/issue_comments_012307.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-2.10.1.rc0-fix-rpy-import-on-OSX.patch](tarball://root/attachments/some-uuid/ticket1939/Sage-2.10.1.rc0-fix-rpy-import-on-OSX.patch) by mabshoff created at 2008-01-26 13:45:46",
     "created_at": "2008-01-26T13:45:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1939",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_012307.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.10.1.rc0-fix-rpy-import-on-OSX.patch](tarball://root/attachments/some-uuid/ticket1939/Sage-2.10.1.rc0-fix-rpy-import-on-OSX.patch) by mabshoff created at 2008-01-26 13:45:46
 
 
 

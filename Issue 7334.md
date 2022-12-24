@@ -54,7 +54,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7334
 archive/issue_comments_061337.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-7334-logcontract.patch](tarball://root/attachments/some-uuid/ticket7334/trac-7334-logcontract.patch) by whuss created at 2009-10-28 17:33:27",
     "created_at": "2009-10-28T17:33:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_061337.json:
 }
 ```
 
-Attachment
+Attachment [trac-7334-logcontract.patch](tarball://root/attachments/some-uuid/ticket7334/trac-7334-logcontract.patch) by whuss created at 2009-10-28 17:33:27
 
 
 
@@ -217,7 +217,7 @@ radical_simplify, simplify_radical, exp_simplify, simplify_exp
 archive/issue_comments_061345.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:4 robert.marik]:\n> Replying to [comment:2 kcrisman]:\n> > Anyway, then you could just call this wherever you think is best in the definition of .simplify_full(), which certainly should have this included.  \n> \n> Do not do it please. The user knows if he/she wants to contract logarithms or not and then he/she can run the coresponding method. If you include this as an automatical simplification in simplify_full, consider the following\n> \n\nI disagree.  simplify_full is the sort of thing used by people who do NOT know if they want to contract - they want the simplest-looking form possible.  In fact, these people usually use just simplify() first and then email sage-support complaining it doesn't do things like this :)  \n\nAnyone who is looking for something specific can use the specific wrappers for the Maxima simplifiers; the general user who is not actually interested in symbolics or niceties like domains (which presumably the other simplifiers also disrespect, e.g. x**2/x is not x but presumably one of them does this and is part of simplify_full) needs a function which applies as much machinery as possible, and simplify_full is it.\n\nThat said, wrapping more of the expanding functions is a very good idea!  One could even have an \"expand_full\" function to complement the \"simplify_full\".  \n\n(Unfortunately, many users (including me) get tripped on on simplify versus expand linguistically, because in colloquial high school English they are often used interchangeably... sigh, but I'm just as guilty as anyone.)",
+    "body": "Attachment [trac-7344-logcontract-2.patch](tarball://root/attachments/some-uuid/ticket7334/trac-7344-logcontract-2.patch) by kcrisman created at 2009-11-08 01:58:15\n\nReplying to [comment:4 robert.marik]:\n> Replying to [comment:2 kcrisman]:\n> > Anyway, then you could just call this wherever you think is best in the definition of .simplify_full(), which certainly should have this included.  \n> \n> Do not do it please. The user knows if he/she wants to contract logarithms or not and then he/she can run the coresponding method. If you include this as an automatical simplification in simplify_full, consider the following\n> \n\nI disagree.  simplify_full is the sort of thing used by people who do NOT know if they want to contract - they want the simplest-looking form possible.  In fact, these people usually use just simplify() first and then email sage-support complaining it doesn't do things like this :)  \n\nAnyone who is looking for something specific can use the specific wrappers for the Maxima simplifiers; the general user who is not actually interested in symbolics or niceties like domains (which presumably the other simplifiers also disrespect, e.g. x**2/x is not x but presumably one of them does this and is part of simplify_full) needs a function which applies as much machinery as possible, and simplify_full is it.\n\nThat said, wrapping more of the expanding functions is a very good idea!  One could even have an \"expand_full\" function to complement the \"simplify_full\".  \n\n(Unfortunately, many users (including me) get tripped on on simplify versus expand linguistically, because in colloquial high school English they are often used interchangeably... sigh, but I'm just as guilty as anyone.)",
     "created_at": "2009-11-08T01:58:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
@@ -226,7 +226,7 @@ archive/issue_comments_061345.json:
 }
 ```
 
-Attachment
+Attachment [trac-7344-logcontract-2.patch](tarball://root/attachments/some-uuid/ticket7334/trac-7344-logcontract-2.patch) by kcrisman created at 2009-11-08 01:58:15
 
 Replying to [comment:4 robert.marik]:
 > Replying to [comment:2 kcrisman]:
@@ -268,7 +268,7 @@ apply only this patch
 archive/issue_comments_061347.json:
 ```json
 {
-    "body": "Attachment\n\nAdded contraction of logarithms to simplify_full() and some more options.",
+    "body": "Attachment [trac-7344-logcontract-3.patch](tarball://root/attachments/some-uuid/ticket7334/trac-7344-logcontract-3.patch) by robert.marik created at 2009-11-08 14:14:43\n\nAdded contraction of logarithms to simplify_full() and some more options.",
     "created_at": "2009-11-08T14:14:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
@@ -277,7 +277,7 @@ archive/issue_comments_061347.json:
 }
 ```
 
-Attachment
+Attachment [trac-7344-logcontract-3.patch](tarball://root/attachments/some-uuid/ticket7334/trac-7344-logcontract-3.patch) by robert.marik created at 2009-11-08 14:14:43
 
 Added contraction of logarithms to simplify_full() and some more options.
 
@@ -370,7 +370,7 @@ it must have some other rationale.  Anyway, that should be clarified, or the dup
 archive/issue_comments_061351.json:
 ```json
 {
-    "body": "Attachment\n\nApply only this patch.",
+    "body": "Attachment [trac-7334-logcontract-4.patch](tarball://root/attachments/some-uuid/ticket7334/trac-7334-logcontract-4.patch) by robert.marik created at 2009-11-12 10:50:19\n\nApply only this patch.",
     "created_at": "2009-11-12T10:50:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
@@ -379,7 +379,7 @@ archive/issue_comments_061351.json:
 }
 ```
 
-Attachment
+Attachment [trac-7334-logcontract-4.patch](tarball://root/attachments/some-uuid/ticket7334/trac-7334-logcontract-4.patch) by robert.marik created at 2009-11-12 10:50:19
 
 Apply only this patch.
 
@@ -650,7 +650,7 @@ Yes, the second "problem" is a fixed bug from Maxima :)
 archive/issue_comments_061364.json:
 ```json
 {
-    "body": "Attachment\n\nNew patch (switch temporary logexpand to false when doing logcontract) is attched. Apply only this patch.\n\n\n```\n./sage -t devel/sage/sage/symbolic\n```\n\npassed. Running all tests now. If they pass, I'll mark it as 'needs review' (tomorrow morning).",
+    "body": "Attachment [trac-7334-logcontract-5.patch](tarball://root/attachments/some-uuid/ticket7334/trac-7334-logcontract-5.patch) by robert.marik created at 2010-02-03 21:24:00\n\nNew patch (switch temporary logexpand to false when doing logcontract) is attched. Apply only this patch.\n\n\n```\n./sage -t devel/sage/sage/symbolic\n```\n\npassed. Running all tests now. If they pass, I'll mark it as 'needs review' (tomorrow morning).",
     "created_at": "2010-02-03T21:24:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
@@ -659,7 +659,7 @@ archive/issue_comments_061364.json:
 }
 ```
 
-Attachment
+Attachment [trac-7334-logcontract-5.patch](tarball://root/attachments/some-uuid/ticket7334/trac-7334-logcontract-5.patch) by robert.marik created at 2010-02-03 21:24:00
 
 New patch (switch temporary logexpand to false when doing logcontract) is attched. Apply only this patch.
 
@@ -677,7 +677,7 @@ passed. Running all tests now. If they pass, I'll mark it as 'needs review' (tom
 archive/issue_comments_061365.json:
 ```json
 {
-    "body": "Attachment\n\napply after trac-7334-logcontract-5.patch",
+    "body": "Attachment [trac-7334-logcontract-5-bugfix.patch](tarball://root/attachments/some-uuid/ticket7334/trac-7334-logcontract-5-bugfix.patch) by robert.marik created at 2010-02-04 07:37:26\n\napply after trac-7334-logcontract-5.patch",
     "created_at": "2010-02-04T07:37:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
@@ -686,7 +686,7 @@ archive/issue_comments_061365.json:
 }
 ```
 
-Attachment
+Attachment [trac-7334-logcontract-5-bugfix.patch](tarball://root/attachments/some-uuid/ticket7334/trac-7334-logcontract-5-bugfix.patch) by robert.marik created at 2010-02-04 07:37:26
 
 apply after trac-7334-logcontract-5.patch
 
@@ -751,7 +751,7 @@ Apply after others
 archive/issue_comments_061369.json:
 ```json
 {
-    "body": "Attachment\n\nReviewer patch adds some additional doctests, fixes typos, clarifies a few other things.  It also fixes a bug which may not have appeared on the author's platform, essentially the same one as in the 5-bugfix patch but for the log_expand function.  \n\nI don't really understand why the original code didn't work, because it should!  But for some reason the logexpand variable was sticking around, also messing up other doctests in expression.pyx, for me, so I made this change.  Only this change needs review now; all else is enthusiastic positive review!",
+    "body": "Attachment [trac_7334-logcontract-5-reviewer.patch](tarball://root/attachments/some-uuid/ticket7334/trac_7334-logcontract-5-reviewer.patch) by kcrisman created at 2010-02-04 16:08:44\n\nReviewer patch adds some additional doctests, fixes typos, clarifies a few other things.  It also fixes a bug which may not have appeared on the author's platform, essentially the same one as in the 5-bugfix patch but for the log_expand function.  \n\nI don't really understand why the original code didn't work, because it should!  But for some reason the logexpand variable was sticking around, also messing up other doctests in expression.pyx, for me, so I made this change.  Only this change needs review now; all else is enthusiastic positive review!",
     "created_at": "2010-02-04T16:08:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
@@ -760,7 +760,7 @@ archive/issue_comments_061369.json:
 }
 ```
 
-Attachment
+Attachment [trac_7334-logcontract-5-reviewer.patch](tarball://root/attachments/some-uuid/ticket7334/trac_7334-logcontract-5-reviewer.patch) by kcrisman created at 2010-02-04 16:08:44
 
 Reviewer patch adds some additional doctests, fixes typos, clarifies a few other things.  It also fixes a bug which may not have appeared on the author's platform, essentially the same one as in the 5-bugfix patch but for the log_expand function.  
 

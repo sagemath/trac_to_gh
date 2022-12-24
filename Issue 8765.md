@@ -458,7 +458,7 @@ Nathann
 archive/issue_comments_080215.json:
 ```json
 {
-    "body": "Attachment\n\n`from operator import xor`... ;-)\n\nI'll test it this evening.",
+    "body": "Attachment [trac_8765.patch](tarball://root/attachments/some-uuid/ticket8765/trac_8765.patch) by leif created at 2010-04-30 10:33:31\n\n`from operator import xor`... ;-)\n\nI'll test it this evening.",
     "created_at": "2010-04-30T10:33:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8765",
     "type": "issue_comment",
@@ -467,7 +467,7 @@ archive/issue_comments_080215.json:
 }
 ```
 
-Attachment
+Attachment [trac_8765.patch](tarball://root/attachments/some-uuid/ticket8765/trac_8765.patch) by leif created at 2010-04-30 10:33:31
 
 `from operator import xor`... ;-)
 
@@ -480,7 +480,7 @@ I'll test it this evening.
 archive/issue_comments_080216.json:
 ```json
 {
-    "body": "Attachment\n\nnew module sage.coding.source_coding.huffman",
+    "body": "Attachment [trac_8765-huffman.patch](tarball://root/attachments/some-uuid/ticket8765/trac_8765-huffman.patch) by mvngu created at 2010-05-02 07:51:26\n\nnew module sage.coding.source_coding.huffman",
     "created_at": "2010-05-02T07:51:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8765",
     "type": "issue_comment",
@@ -489,7 +489,7 @@ archive/issue_comments_080216.json:
 }
 ```
 
-Attachment
+Attachment [trac_8765-huffman.patch](tarball://root/attachments/some-uuid/ticket8765/trac_8765-huffman.patch) by mvngu created at 2010-05-02 07:51:26
 
 new module sage.coding.source_coding.huffman
 
@@ -541,7 +541,7 @@ Have to clone again and import the new patch... ;-)
 archive/issue_comments_080219.json:
 ```json
 {
-    "body": "Attachment\n\nChanges in the reviewer patch include:\n\n1. Add substantially more documentation to the module.\n2. Clean-ups in accordance with [PEP 008](http://www.python.org/dev/peps/pep-0008/).\n3. Don't use the module `string` nor its `join` function. These have been deprecated. You should now use `str` and the function `\"\".join`.\n4. Get the whole module to 100% coverage.\n\nThis means I have reviewed [trac_8765-huffman.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8765/trac_8765-huffman.patch), so only my patch needs review by anyone but me.",
+    "body": "Attachment [trac_8765-clean-ups.patch](tarball://root/attachments/some-uuid/ticket8765/trac_8765-clean-ups.patch) by mvngu created at 2010-05-02 17:25:09\n\nChanges in the reviewer patch include:\n\n1. Add substantially more documentation to the module.\n2. Clean-ups in accordance with [PEP 008](http://www.python.org/dev/peps/pep-0008/).\n3. Don't use the module `string` nor its `join` function. These have been deprecated. You should now use `str` and the function `\"\".join`.\n4. Get the whole module to 100% coverage.\n\nThis means I have reviewed [trac_8765-huffman.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8765/trac_8765-huffman.patch), so only my patch needs review by anyone but me.",
     "created_at": "2010-05-02T17:25:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8765",
     "type": "issue_comment",
@@ -550,7 +550,7 @@ archive/issue_comments_080219.json:
 }
 ```
 
-Attachment
+Attachment [trac_8765-clean-ups.patch](tarball://root/attachments/some-uuid/ticket8765/trac_8765-clean-ups.patch) by mvngu created at 2010-05-02 17:25:09
 
 Changes in the reviewer patch include:
 

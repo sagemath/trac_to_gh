@@ -134,7 +134,7 @@ new patch the previous one did not apply to a clean sage installation
 archive/issue_comments_051462.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6409.3.patch](tarball://root/attachments/some-uuid/ticket6409/trac_6409.3.patch) by lftabera created at 2010-06-24 10:53:17",
     "created_at": "2010-06-24T10:53:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6409",
     "type": "issue_comment",
@@ -143,7 +143,7 @@ archive/issue_comments_051462.json:
 }
 ```
 
-Attachment
+Attachment [trac_6409.3.patch](tarball://root/attachments/some-uuid/ticket6409/trac_6409.3.patch) by lftabera created at 2010-06-24 10:53:17
 
 
 

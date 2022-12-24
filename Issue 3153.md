@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3153
 archive/issue_comments_021863.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [GF2X_sparse_poly_fix_random.patch](tarball://root/attachments/some-uuid/ticket3153/GF2X_sparse_poly_fix_random.patch) by cwitty created at 2008-05-10 22:41:57",
     "created_at": "2008-05-10T22:41:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3153",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_021863.json:
 }
 ```
 
-Attachment
+Attachment [GF2X_sparse_poly_fix_random.patch](tarball://root/attachments/some-uuid/ticket3153/GF2X_sparse_poly_fix_random.patch) by cwitty created at 2008-05-10 22:41:57
 
 
 

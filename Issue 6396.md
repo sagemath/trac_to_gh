@@ -158,7 +158,7 @@ David
 archive/issue_comments_051388.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6396-deg1primes.patch](tarball://root/attachments/some-uuid/ticket6396/trac_6396-deg1primes.patch) by davidloeffler created at 2009-06-26 18:05:00",
     "created_at": "2009-06-26T18:05:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6396",
     "type": "issue_comment",
@@ -167,7 +167,7 @@ archive/issue_comments_051388.json:
 }
 ```
 
-Attachment
+Attachment [trac_6396-deg1primes.patch](tarball://root/attachments/some-uuid/ticket6396/trac_6396-deg1primes.patch) by davidloeffler created at 2009-06-26 18:05:00
 
 
 
@@ -232,7 +232,7 @@ Hello? I'm marking this as "positive review" so it comes to the attention of the
 archive/issue_comments_051392.json:
 ```json
 {
-    "body": "Attachment\n\nreviewer patch; fix minor docstring formatting",
+    "body": "Attachment [trac_6396-reviewer.patch](tarball://root/attachments/some-uuid/ticket6396/trac_6396-reviewer.patch) by mvngu created at 2009-07-16 18:04:09\n\nreviewer patch; fix minor docstring formatting",
     "created_at": "2009-07-16T18:04:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6396",
     "type": "issue_comment",
@@ -241,7 +241,7 @@ archive/issue_comments_051392.json:
 }
 ```
 
-Attachment
+Attachment [trac_6396-reviewer.patch](tarball://root/attachments/some-uuid/ticket6396/trac_6396-reviewer.patch) by mvngu created at 2009-07-16 18:04:09
 
 reviewer patch; fix minor docstring formatting
 

@@ -165,7 +165,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_092050.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9549_InfinitePolynomialRing_is_field.patch](tarball://root/attachments/some-uuid/ticket9549/trac_9549_InfinitePolynomialRing_is_field.patch) by mmezzarobba created at 2010-07-19 20:08:02",
     "created_at": "2010-07-19T20:08:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9549",
     "type": "issue_comment",
@@ -174,7 +174,7 @@ archive/issue_comments_092050.json:
 }
 ```
 
-Attachment
+Attachment [trac_9549_InfinitePolynomialRing_is_field.patch](tarball://root/attachments/some-uuid/ticket9549/trac_9549_InfinitePolynomialRing_is_field.patch) by mmezzarobba created at 2010-07-19 20:08:02
 
 
 

@@ -229,7 +229,7 @@ CPU time: 0.06 s,  Wall time: 0.06 s
 archive/issue_comments_001097.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [249-preparse-constants.patch](tarball://root/attachments/some-uuid/ticket249/249-preparse-constants.patch) by robertwb created at 2008-09-23 21:43:57",
     "created_at": "2008-09-23T21:43:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/249",
     "type": "issue_comment",
@@ -238,7 +238,7 @@ archive/issue_comments_001097.json:
 }
 ```
 
-Attachment
+Attachment [249-preparse-constants.patch](tarball://root/attachments/some-uuid/ticket249/249-preparse-constants.patch) by robertwb created at 2008-09-23 21:43:57
 
 
 

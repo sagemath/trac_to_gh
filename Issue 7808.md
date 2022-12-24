@@ -208,7 +208,7 @@ Changing status from new to needs_info.
 archive/issue_comments_067548.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached a patch which is a workaround solving the problem.  However, it causes other side effects (fuzzy lines, since now lines are not snapped to whole-pixels).  You can uncomment the antialiased line in the patch to not get fuzzy lines, but then sometimes one axis will be one pixel wider than the other, which looks bad.  I haven't tested how these options affect vector graphics output (e.g., pdf).\n\nSo we have three options:\n\n1. Leave things the way they are\n2. Turn off snapping, but deal with possible fuzzy lines\n3. Turn off snapping and turn off antialiasing, and deal with axes that sometimes don't match in width.\n\nPick your poison.",
+    "body": "Attachment [trac-7808-axes-through-origin.patch](tarball://root/attachments/some-uuid/ticket7808/trac-7808-axes-through-origin.patch) by jason created at 2010-06-11 18:54:37\n\nI've attached a patch which is a workaround solving the problem.  However, it causes other side effects (fuzzy lines, since now lines are not snapped to whole-pixels).  You can uncomment the antialiased line in the patch to not get fuzzy lines, but then sometimes one axis will be one pixel wider than the other, which looks bad.  I haven't tested how these options affect vector graphics output (e.g., pdf).\n\nSo we have three options:\n\n1. Leave things the way they are\n2. Turn off snapping, but deal with possible fuzzy lines\n3. Turn off snapping and turn off antialiasing, and deal with axes that sometimes don't match in width.\n\nPick your poison.",
     "created_at": "2010-06-11T18:54:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7808",
     "type": "issue_comment",
@@ -217,7 +217,7 @@ archive/issue_comments_067548.json:
 }
 ```
 
-Attachment
+Attachment [trac-7808-axes-through-origin.patch](tarball://root/attachments/some-uuid/ticket7808/trac-7808-axes-through-origin.patch) by jason created at 2010-06-11 18:54:37
 
 I've attached a patch which is a workaround solving the problem.  However, it causes other side effects (fuzzy lines, since now lines are not snapped to whole-pixels).  You can uncomment the antialiased line in the patch to not get fuzzy lines, but then sometimes one axis will be one pixel wider than the other, which looks bad.  I haven't tested how these options affect vector graphics output (e.g., pdf).
 

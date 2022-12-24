@@ -51,7 +51,7 @@ Changing assignee from boothby to somebody.
 archive/issue_comments_020348.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-2951.patch](tarball://root/attachments/some-uuid/ticket2951/sage-2951.patch) by was created at 2008-04-18 13:25:50",
     "created_at": "2008-04-18T13:25:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2951",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_020348.json:
 }
 ```
 
-Attachment
+Attachment [sage-2951.patch](tarball://root/attachments/some-uuid/ticket2951/sage-2951.patch) by was created at 2008-04-18 13:25:50
 
 
 

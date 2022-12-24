@@ -51,7 +51,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9291
 archive/issue_comments_087514.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [cartan_type_from_matrices.py](tarball://root/attachments/some-uuid/ticket9291/cartan_type_from_matrices.py) by chapoton created at 2012-12-17 17:07:50",
     "created_at": "2012-12-17T17:07:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9291",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_087514.json:
 }
 ```
 
-Attachment
+Attachment [cartan_type_from_matrices.py](tarball://root/attachments/some-uuid/ticket9291/cartan_type_from_matrices.py) by chapoton created at 2012-12-17 17:07:50
 
 
 

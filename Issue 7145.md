@@ -60,7 +60,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7145
 archive/issue_comments_059190.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7145-iet-vd.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-iet-vd.patch) by vdelecroix created at 2009-10-07 12:15:27",
     "created_at": "2009-10-07T12:15:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7145",
     "type": "issue_comment",
@@ -69,7 +69,7 @@ archive/issue_comments_059190.json:
 }
 ```
 
-Attachment
+Attachment [trac_7145-iet-vd.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-iet-vd.patch) by vdelecroix created at 2009-10-07 12:15:27
 
 
 
@@ -298,7 +298,7 @@ Applies over the precedent patch.
 archive/issue_comments_059197.json:
 ```json
 {
-    "body": "Attachment\n\nVincent, I tried your code again with Thierry Monteil who knows better this field and he liked all the functions you implemented.\n\nHe suggested that you change Permutation* to `LabelledPermutation` or `PermutationwithLabel`... up to you.\n\nAlso, I notice the following. I think it should be a method and not an attribute :\n\n\n```\nsage: p = Permutation([4,3,2,1])\nsage: pp = PermutationIET(p)\nsage: pp.alphabet\nOrdered Alphabet [1, 2, 3, 4]\n```\n",
+    "body": "Attachment [trac_7145-review-sl.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-review-sl.patch) by slabbe created at 2009-12-10 16:17:35\n\nVincent, I tried your code again with Thierry Monteil who knows better this field and he liked all the functions you implemented.\n\nHe suggested that you change Permutation* to `LabelledPermutation` or `PermutationwithLabel`... up to you.\n\nAlso, I notice the following. I think it should be a method and not an attribute :\n\n\n```\nsage: p = Permutation([4,3,2,1])\nsage: pp = PermutationIET(p)\nsage: pp.alphabet\nOrdered Alphabet [1, 2, 3, 4]\n```\n",
     "created_at": "2009-12-10T16:17:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7145",
     "type": "issue_comment",
@@ -307,7 +307,7 @@ archive/issue_comments_059197.json:
 }
 ```
 
-Attachment
+Attachment [trac_7145-review-sl.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-review-sl.patch) by slabbe created at 2009-12-10 16:17:35
 
 Vincent, I tried your code again with Thierry Monteil who knows better this field and he liked all the functions you implemented.
 
@@ -455,7 +455,7 @@ done.
 archive/issue_comments_059201.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7145-corrections-vd.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-corrections-vd.patch) by vdelecroix created at 2009-12-13 13:52:00",
     "created_at": "2009-12-13T13:52:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7145",
     "type": "issue_comment",
@@ -464,7 +464,7 @@ archive/issue_comments_059201.json:
 }
 ```
 
-Attachment
+Attachment [trac_7145-corrections-vd.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-corrections-vd.patch) by vdelecroix created at 2009-12-13 13:52:00
 
 
 
@@ -665,7 +665,7 @@ I changed a little bit the `_repr_` of Interval exchange transformation. See the
 archive/issue_comments_059204.json:
 ```json
 {
-    "body": "Attachment\n\nApplies over the precedent 3 patches.",
+    "body": "Attachment [trac_7145-review2-sl.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-review2-sl.patch) by slabbe created at 2009-12-24 12:57:58\n\nApplies over the precedent 3 patches.",
     "created_at": "2009-12-24T12:57:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7145",
     "type": "issue_comment",
@@ -674,7 +674,7 @@ archive/issue_comments_059204.json:
 }
 ```
 
-Attachment
+Attachment [trac_7145-review2-sl.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-review2-sl.patch) by slabbe created at 2009-12-24 12:57:58
 
 Applies over the precedent 3 patches.
 
@@ -810,7 +810,7 @@ Applies over the 4 precedings
 archive/issue_comments_059208.json:
 ```json
 {
-    "body": "Attachment\n\nGreat. Point ONE above was addressed. The documentation coverage is now 100% perfect. All tests passed. \n\nI builded the documentation and there was several sphinx issues. I corrected them in a patch that I will upload shortly.",
+    "body": "Attachment [trac_7145-corrections2-vd.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-corrections2-vd.patch) by slabbe created at 2010-01-06 15:09:54\n\nGreat. Point ONE above was addressed. The documentation coverage is now 100% perfect. All tests passed. \n\nI builded the documentation and there was several sphinx issues. I corrected them in a patch that I will upload shortly.",
     "created_at": "2010-01-06T15:09:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7145",
     "type": "issue_comment",
@@ -819,7 +819,7 @@ archive/issue_comments_059208.json:
 }
 ```
 
-Attachment
+Attachment [trac_7145-corrections2-vd.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-corrections2-vd.patch) by slabbe created at 2010-01-06 15:09:54
 
 Great. Point ONE above was addressed. The documentation coverage is now 100% perfect. All tests passed. 
 
@@ -832,7 +832,7 @@ I builded the documentation and there was several sphinx issues. I corrected the
 archive/issue_comments_059209.json:
 ```json
 {
-    "body": "Attachment\n\nApplies over all the precedent patches.",
+    "body": "Attachment [trac_7145-review3-sl.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-review3-sl.patch) by slabbe created at 2010-01-06 15:37:56\n\nApplies over all the precedent patches.",
     "created_at": "2010-01-06T15:37:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7145",
     "type": "issue_comment",
@@ -841,7 +841,7 @@ archive/issue_comments_059209.json:
 }
 ```
 
-Attachment
+Attachment [trac_7145-review3-sl.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-review3-sl.patch) by slabbe created at 2010-01-06 15:37:56
 
 Applies over all the precedent patches.
 
@@ -946,7 +946,7 @@ I also made little modifications on default argument on some method (.flips() an
 archive/issue_comments_059214.json:
 ```json
 {
-    "body": "Attachment\n\napplies over (trac_7145-iet-vd.patch, trac_7145-review-sl.patch, trac_7145-corrections-vd.patch, trac_7145-review2-sl ,trac_7145-corrections2-vd.patch)",
+    "body": "Attachment [trac_7145-documentation-review-vd.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-documentation-review-vd.patch) by vdelecroix created at 2010-01-09 19:00:17\n\napplies over (trac_7145-iet-vd.patch, trac_7145-review-sl.patch, trac_7145-corrections-vd.patch, trac_7145-review2-sl ,trac_7145-corrections2-vd.patch)",
     "created_at": "2010-01-09T19:00:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7145",
     "type": "issue_comment",
@@ -955,7 +955,7 @@ archive/issue_comments_059214.json:
 }
 ```
 
-Attachment
+Attachment [trac_7145-documentation-review-vd.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-documentation-review-vd.patch) by vdelecroix created at 2010-01-09 19:00:17
 
 applies over (trac_7145-iet-vd.patch, trac_7145-review-sl.patch, trac_7145-corrections-vd.patch, trac_7145-review2-sl ,trac_7145-corrections2-vd.patch)
 
@@ -966,7 +966,7 @@ applies over (trac_7145-iet-vd.patch, trac_7145-review-sl.patch, trac_7145-corre
 archive/issue_comments_059215.json:
 ```json
 {
-    "body": "Attachment\n\napplies over (trac_7145-iet-vd.patch, trac_7145-review-sl.patch, trac_7145-corrections-vd.patch, trac_7145-review2-sl ,trac_7145-corrections2-vd.patch)",
+    "body": "Attachment [trac_7145-documentation-review-vd.2.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-documentation-review-vd.2.patch) by vdelecroix created at 2010-01-09 19:00:40\n\napplies over (trac_7145-iet-vd.patch, trac_7145-review-sl.patch, trac_7145-corrections-vd.patch, trac_7145-review2-sl ,trac_7145-corrections2-vd.patch)",
     "created_at": "2010-01-09T19:00:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7145",
     "type": "issue_comment",
@@ -975,7 +975,7 @@ archive/issue_comments_059215.json:
 }
 ```
 
-Attachment
+Attachment [trac_7145-documentation-review-vd.2.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-documentation-review-vd.2.patch) by vdelecroix created at 2010-01-09 19:00:40
 
 applies over (trac_7145-iet-vd.patch, trac_7145-review-sl.patch, trac_7145-corrections-vd.patch, trac_7145-review2-sl ,trac_7145-corrections2-vd.patch)
 
@@ -986,7 +986,7 @@ applies over (trac_7145-iet-vd.patch, trac_7145-review-sl.patch, trac_7145-corre
 archive/issue_comments_059216.json:
 ```json
 {
-    "body": "Attachment\n\nApply only this one.",
+    "body": "Attachment [trac_7145-iet-final.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-iet-final.patch) by slabbe created at 2010-01-13 17:54:03\n\nApply only this one.",
     "created_at": "2010-01-13T17:54:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7145",
     "type": "issue_comment",
@@ -995,7 +995,7 @@ archive/issue_comments_059216.json:
 }
 ```
 
-Attachment
+Attachment [trac_7145-iet-final.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-iet-final.patch) by slabbe created at 2010-01-13 17:54:03
 
 Apply only this one.
 

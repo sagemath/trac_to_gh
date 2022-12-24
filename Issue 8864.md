@@ -56,7 +56,7 @@ Note: this is a followup of #7748.
 archive/issue_comments_081457.json:
 ```json
 {
-    "body": "Attachment\n\nWith attachment:trac_8864-symbolic_zeta.patch you can do this:\n\n\n```\nsage: zeta(3)\nzeta(3)\nsage: zeta(2)\n1/6*pi^2\n```\n\n\nProbably, the changes to `sage/symbolic/random_tests.py` depend on #6949.",
+    "body": "Attachment [trac_8864-symbolic_zeta.patch](tarball://root/attachments/some-uuid/ticket8864/trac_8864-symbolic_zeta.patch) by burcin created at 2010-05-06 20:01:38\n\nWith attachment:trac_8864-symbolic_zeta.patch you can do this:\n\n\n```\nsage: zeta(3)\nzeta(3)\nsage: zeta(2)\n1/6*pi^2\n```\n\n\nProbably, the changes to `sage/symbolic/random_tests.py` depend on #6949.",
     "created_at": "2010-05-06T20:01:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8864",
     "type": "issue_comment",
@@ -65,7 +65,7 @@ archive/issue_comments_081457.json:
 }
 ```
 
-Attachment
+Attachment [trac_8864-symbolic_zeta.patch](tarball://root/attachments/some-uuid/ticket8864/trac_8864-symbolic_zeta.patch) by burcin created at 2010-05-06 20:01:38
 
 With attachment:trac_8864-symbolic_zeta.patch you can do this:
 
@@ -177,7 +177,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_081462.json:
 ```json
 {
-    "body": "Attachment\n\napply only this patch",
+    "body": "Attachment [trac_8864-symbolic_zeta.take2.patch](tarball://root/attachments/some-uuid/ticket8864/trac_8864-symbolic_zeta.take2.patch) by burcin created at 2010-05-08 22:19:06\n\napply only this patch",
     "created_at": "2010-05-08T22:19:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8864",
     "type": "issue_comment",
@@ -186,7 +186,7 @@ archive/issue_comments_081462.json:
 }
 ```
 
-Attachment
+Attachment [trac_8864-symbolic_zeta.take2.patch](tarball://root/attachments/some-uuid/ticket8864/trac_8864-symbolic_zeta.take2.patch) by burcin created at 2010-05-08 22:19:06
 
 apply only this patch
 

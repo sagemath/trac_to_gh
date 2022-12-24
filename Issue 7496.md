@@ -250,7 +250,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_063366.json:
 ```json
 {
-    "body": "Attachment\n\nApply after initial patch",
+    "body": "Attachment [trac_7496-reviewer.patch](tarball://root/attachments/some-uuid/ticket7496/trac_7496-reviewer.patch) by kcrisman created at 2011-06-24 03:08:43\n\nApply after initial patch",
     "created_at": "2011-06-24T03:08:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7496",
     "type": "issue_comment",
@@ -259,7 +259,7 @@ archive/issue_comments_063366.json:
 }
 ```
 
-Attachment
+Attachment [trac_7496-reviewer.patch](tarball://root/attachments/some-uuid/ticket7496/trac_7496-reviewer.patch) by kcrisman created at 2011-06-24 03:08:43
 
 Apply after initial patch
 
@@ -569,7 +569,7 @@ Updated patch
 archive/issue_comments_063379.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated patch",
+    "body": "Attachment [trac_7496-reviewer.2.patch](tarball://root/attachments/some-uuid/ticket7496/trac_7496-reviewer.2.patch) by vbraun created at 2011-06-24 15:33:16\n\nUpdated patch",
     "created_at": "2011-06-24T15:33:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7496",
     "type": "issue_comment",
@@ -578,7 +578,7 @@ archive/issue_comments_063379.json:
 }
 ```
 
-Attachment
+Attachment [trac_7496-reviewer.2.patch](tarball://root/attachments/some-uuid/ticket7496/trac_7496-reviewer.2.patch) by vbraun created at 2011-06-24 15:33:16
 
 Updated patch
 

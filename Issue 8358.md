@@ -52,7 +52,7 @@ Changing keywords from "" to "Gaussian integers".
 archive/issue_comments_074676.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8358.patch](tarball://root/attachments/some-uuid/ticket8358/trac_8358.patch) by zimmerma created at 2010-02-25 08:25:06",
     "created_at": "2010-02-25T08:25:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8358",
     "type": "issue_comment",
@@ -61,7 +61,7 @@ archive/issue_comments_074676.json:
 }
 ```
 
-Attachment
+Attachment [trac_8358.patch](tarball://root/attachments/some-uuid/ticket8358/trac_8358.patch) by zimmerma created at 2010-02-25 08:25:06
 
 
 

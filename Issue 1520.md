@@ -76,7 +76,7 @@ Changing status from new to assigned.
 archive/issue_comments_009736.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-2.9.rc0-fix-link-issue-on-OSX-10.4.patch](tarball://root/attachments/some-uuid/ticket1520/Sage-2.9.rc0-fix-link-issue-on-OSX-10.4.patch) by mabshoff created at 2007-12-15 06:53:19",
     "created_at": "2007-12-15T06:53:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1520",
     "type": "issue_comment",
@@ -85,7 +85,7 @@ archive/issue_comments_009736.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.9.rc0-fix-link-issue-on-OSX-10.4.patch](tarball://root/attachments/some-uuid/ticket1520/Sage-2.9.rc0-fix-link-issue-on-OSX-10.4.patch) by mabshoff created at 2007-12-15 06:53:19
 
 
 

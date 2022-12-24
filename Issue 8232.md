@@ -188,7 +188,7 @@ Changing status from new to needs_review.
 archive/issue_comments_072721.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8232_word_cmp_bug-sl.patch](tarball://root/attachments/some-uuid/ticket8232/trac_8232_word_cmp_bug-sl.patch) by slabbe created at 2010-02-10 17:55:29",
     "created_at": "2010-02-10T17:55:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8232",
     "type": "issue_comment",
@@ -197,7 +197,7 @@ archive/issue_comments_072721.json:
 }
 ```
 
-Attachment
+Attachment [trac_8232_word_cmp_bug-sl.patch](tarball://root/attachments/some-uuid/ticket8232/trac_8232_word_cmp_bug-sl.patch) by slabbe created at 2010-02-10 17:55:29
 
 
 

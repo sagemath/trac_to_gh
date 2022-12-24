@@ -67,7 +67,7 @@ Patch for sage-scripts
 archive/issue_comments_042661.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5492_sage_bt.patch](tarball://root/attachments/some-uuid/ticket5492/5492_sage_bt.patch) by jdemeyer created at 2010-10-15 07:40:31",
     "created_at": "2010-10-15T07:40:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5492",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_042661.json:
 }
 ```
 
-Attachment
+Attachment [5492_sage_bt.patch](tarball://root/attachments/some-uuid/ticket5492/5492_sage_bt.patch) by jdemeyer created at 2010-10-15 07:40:31
 
 
 

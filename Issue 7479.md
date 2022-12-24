@@ -68,7 +68,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7479
 archive/issue_comments_063136.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7479.patch](tarball://root/attachments/some-uuid/ticket7479/trac_7479.patch) by mhansen created at 2009-11-17 12:19:06",
     "created_at": "2009-11-17T12:19:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7479",
     "type": "issue_comment",
@@ -77,7 +77,7 @@ archive/issue_comments_063136.json:
 }
 ```
 
-Attachment
+Attachment [trac_7479.patch](tarball://root/attachments/some-uuid/ticket7479/trac_7479.patch) by mhansen created at 2009-11-17 12:19:06
 
 
 
@@ -183,7 +183,7 @@ Based on 4.2.1, apply only this patch
 archive/issue_comments_063142.json:
 ```json
 {
-    "body": "Attachment\n\nI still feel safer putting it in there (for instance, if we switch to using Maxima as an ECL library this sort of thing could also break but for a different reason), so please apply this patch with the extra doctest.",
+    "body": "Attachment [trac_7479-review.patch](tarball://root/attachments/some-uuid/ticket7479/trac_7479-review.patch) by kcrisman created at 2009-11-18 14:04:11\n\nI still feel safer putting it in there (for instance, if we switch to using Maxima as an ECL library this sort of thing could also break but for a different reason), so please apply this patch with the extra doctest.",
     "created_at": "2009-11-18T14:04:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7479",
     "type": "issue_comment",
@@ -192,7 +192,7 @@ archive/issue_comments_063142.json:
 }
 ```
 
-Attachment
+Attachment [trac_7479-review.patch](tarball://root/attachments/some-uuid/ticket7479/trac_7479-review.patch) by kcrisman created at 2009-11-18 14:04:11
 
 I still feel safer putting it in there (for instance, if we switch to using Maxima as an ECL library this sort of thing could also break but for a different reason), so please apply this patch with the extra doctest.
 

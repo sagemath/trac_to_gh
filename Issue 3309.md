@@ -247,7 +247,7 @@ sage: %timeit binomial(x, y)
 archive/issue_comments_022888.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3309.patch](tarball://root/attachments/some-uuid/ticket3309/trac_3309.patch) by ddrake created at 2009-03-24 06:47:04",
     "created_at": "2009-03-24T06:47:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3309",
     "type": "issue_comment",
@@ -256,7 +256,7 @@ archive/issue_comments_022888.json:
 }
 ```
 
-Attachment
+Attachment [trac_3309.patch](tarball://root/attachments/some-uuid/ticket3309/trac_3309.patch) by ddrake created at 2009-03-24 06:47:04
 
 
 
@@ -265,7 +265,7 @@ Attachment
 archive/issue_comments_022889.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3309-referee.patch](tarball://root/attachments/some-uuid/ticket3309/trac_3309-referee.patch) by was created at 2009-04-12 03:25:05",
     "created_at": "2009-04-12T03:25:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3309",
     "type": "issue_comment",
@@ -274,7 +274,7 @@ archive/issue_comments_022889.json:
 }
 ```
 
-Attachment
+Attachment [trac_3309-referee.patch](tarball://root/attachments/some-uuid/ticket3309/trac_3309-referee.patch) by was created at 2009-04-12 03:25:05
 
 
 

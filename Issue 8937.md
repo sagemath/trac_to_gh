@@ -75,7 +75,7 @@ Changing assignee from mvngu to amca01.
 archive/issue_comments_082292.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [aes.sage](tarball://root/attachments/some-uuid/ticket8937/aes.sage) by amca01 created at 2010-05-11 22:38:14",
     "created_at": "2010-05-11T22:38:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8937",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_082292.json:
 }
 ```
 
-Attachment
+Attachment [aes.sage](tarball://root/attachments/some-uuid/ticket8937/aes.sage) by amca01 created at 2010-05-11 22:38:14
 
 
 

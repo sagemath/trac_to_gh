@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9234
 archive/issue_comments_086676.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9234_doc_texture-sl.patch](tarball://root/attachments/some-uuid/ticket9234/trac_9234_doc_texture-sl.patch) by slabbe created at 2010-06-14 09:52:18",
     "created_at": "2010-06-14T09:52:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9234",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_086676.json:
 }
 ```
 
-Attachment
+Attachment [trac_9234_doc_texture-sl.patch](tarball://root/attachments/some-uuid/ticket9234/trac_9234_doc_texture-sl.patch) by slabbe created at 2010-06-14 09:52:18
 
 
 
@@ -69,7 +69,7 @@ Changing status from new to needs_review.
 archive/issue_comments_086678.json:
 ```json
 {
-    "body": "Attachment\n\nApply after initial patch",
+    "body": "Attachment [trac_9234-reviewer.patch](tarball://root/attachments/some-uuid/ticket9234/trac_9234-reviewer.patch) by kcrisman created at 2010-06-18 19:30:57\n\nApply after initial patch",
     "created_at": "2010-06-18T19:30:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9234",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_086678.json:
 }
 ```
 
-Attachment
+Attachment [trac_9234-reviewer.patch](tarball://root/attachments/some-uuid/ticket9234/trac_9234-reviewer.patch) by kcrisman created at 2010-06-18 19:30:57
 
 Apply after initial patch
 

@@ -36,7 +36,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6215
 archive/issue_comments_049654.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [symmetricgroupalgebra_jucysmurphy_fix_6215-final.patch](tarball://root/attachments/some-uuid/ticket6215/symmetricgroupalgebra_jucysmurphy_fix_6215-final.patch) by nthiery created at 2009-06-04 23:43:11",
     "created_at": "2009-06-04T23:43:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6215",
     "type": "issue_comment",
@@ -45,7 +45,7 @@ archive/issue_comments_049654.json:
 }
 ```
 
-Attachment
+Attachment [symmetricgroupalgebra_jucysmurphy_fix_6215-final.patch](tarball://root/attachments/some-uuid/ticket6215/symmetricgroupalgebra_jucysmurphy_fix_6215-final.patch) by nthiery created at 2009-06-04 23:43:11
 
 
 

@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5066
 archive/issue_comments_038592.json:
 ```json
 {
-    "body": "Attachment\n\nFails a doctest, to be addressed by patches to #1357 (which will depend on this)",
+    "body": "Attachment [trac_5066-relnf-file.patch](tarball://root/attachments/some-uuid/ticket5066/trac_5066-relnf-file.patch) by ncalexan created at 2009-01-23 09:21:23\n\nFails a doctest, to be addressed by patches to #1357 (which will depend on this)",
     "created_at": "2009-01-23T09:21:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5066",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_038592.json:
 }
 ```
 
-Attachment
+Attachment [trac_5066-relnf-file.patch](tarball://root/attachments/some-uuid/ticket5066/trac_5066-relnf-file.patch) by ncalexan created at 2009-01-23 09:21:23
 
 Fails a doctest, to be addressed by patches to #1357 (which will depend on this)
 

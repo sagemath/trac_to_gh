@@ -223,7 +223,7 @@ sage: b.gens()
 archive/issue_comments_014713.json:
 ```json
 {
-    "body": "Attachment\n\nAdd doctest for a trivial extension",
+    "body": "Attachment [sage-trac_2220.patch](tarball://root/attachments/some-uuid/ticket2220/sage-trac_2220.patch) by mjo created at 2011-12-17 20:37:32\n\nAdd doctest for a trivial extension",
     "created_at": "2011-12-17T20:37:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2220",
     "type": "issue_comment",
@@ -232,7 +232,7 @@ archive/issue_comments_014713.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac_2220.patch](tarball://root/attachments/some-uuid/ticket2220/sage-trac_2220.patch) by mjo created at 2011-12-17 20:37:32
 
 Add doctest for a trivial extension
 

@@ -227,7 +227,7 @@ based on Sage 4.3.alpha0
 archive/issue_comments_064371.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:6 ncohen]:\n> Could it be possible to define in the same patch functions outdegree_sequence and indegree_sequence for DiGraphs ? :-)\n\nY-E-S, yes! :-)\n\n\n\nThe patch `trac_7564-degree-sequences.patch` implements the following degree sequences:\n\n1. `degree_sequence()` --- the degree sequence of a (di)graph. This is implemented in the class `GenericGraph`.\n2. `in_degree_sequence()` --- the indegree sequence of a digraph. This is implemented in the class `DiGraph`.\n3. `out_degree_sequence()` --- the outdegree sequence of a digraph, also implemented in the class `DiGraph`.\n \nI use the method names `in_degree_sequence()` and `out_degree_sequence()` to be consistent with how the graph theory module names the indegree and outdegree methods.",
+    "body": "Attachment [trac_7564-degree-sequences.patch](tarball://root/attachments/some-uuid/ticket7564/trac_7564-degree-sequences.patch) by mvngu created at 2009-12-01 07:37:23\n\nReplying to [comment:6 ncohen]:\n> Could it be possible to define in the same patch functions outdegree_sequence and indegree_sequence for DiGraphs ? :-)\n\nY-E-S, yes! :-)\n\n\n\nThe patch `trac_7564-degree-sequences.patch` implements the following degree sequences:\n\n1. `degree_sequence()` --- the degree sequence of a (di)graph. This is implemented in the class `GenericGraph`.\n2. `in_degree_sequence()` --- the indegree sequence of a digraph. This is implemented in the class `DiGraph`.\n3. `out_degree_sequence()` --- the outdegree sequence of a digraph, also implemented in the class `DiGraph`.\n \nI use the method names `in_degree_sequence()` and `out_degree_sequence()` to be consistent with how the graph theory module names the indegree and outdegree methods.",
     "created_at": "2009-12-01T07:37:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7564",
     "type": "issue_comment",
@@ -236,7 +236,7 @@ archive/issue_comments_064371.json:
 }
 ```
 
-Attachment
+Attachment [trac_7564-degree-sequences.patch](tarball://root/attachments/some-uuid/ticket7564/trac_7564-degree-sequences.patch) by mvngu created at 2009-12-01 07:37:23
 
 Replying to [comment:6 ncohen]:
 > Could it be possible to define in the same patch functions outdegree_sequence and indegree_sequence for DiGraphs ? :-)

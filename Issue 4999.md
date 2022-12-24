@@ -61,7 +61,7 @@ Changing status from new to assigned.
 archive/issue_comments_038132.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4999_integration.pyx-sparc.patch](tarball://root/attachments/some-uuid/ticket4999/trac_4999_integration.pyx-sparc.patch) by mabshoff created at 2009-01-18 06:30:16",
     "created_at": "2009-01-18T06:30:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4999",
     "type": "issue_comment",
@@ -70,7 +70,7 @@ archive/issue_comments_038132.json:
 }
 ```
 
-Attachment
+Attachment [trac_4999_integration.pyx-sparc.patch](tarball://root/attachments/some-uuid/ticket4999/trac_4999_integration.pyx-sparc.patch) by mabshoff created at 2009-01-18 06:30:16
 
 
 

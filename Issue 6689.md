@@ -51,7 +51,7 @@ based on Sage 4.1.1.rc2
 archive/issue_comments_054993.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6689-spell-check-categories.patch](tarball://root/attachments/some-uuid/ticket6689/trac_6689-spell-check-categories.patch) by mvngu created at 2009-08-08 17:21:10",
     "created_at": "2009-08-08T17:21:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6689",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_054993.json:
 }
 ```
 
-Attachment
+Attachment [trac_6689-spell-check-categories.patch](tarball://root/attachments/some-uuid/ticket6689/trac_6689-spell-check-categories.patch) by mvngu created at 2009-08-08 17:21:10
 
 
 

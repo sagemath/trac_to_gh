@@ -355,7 +355,7 @@ The current patch does not split up graph.py, but the final version will...
 archive/issue_comments_065239.json:
 ```json
 {
-    "body": "Attachment\n\ndepends on 4.3.1.alpha1",
+    "body": "Attachment [trac_7634-switchover.patch](tarball://root/attachments/some-uuid/ticket7634/trac_7634-switchover.patch) by rlm created at 2010-01-06 07:25:14\n\ndepends on 4.3.1.alpha1",
     "created_at": "2010-01-06T07:25:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7634",
     "type": "issue_comment",
@@ -364,7 +364,7 @@ archive/issue_comments_065239.json:
 }
 ```
 
-Attachment
+Attachment [trac_7634-switchover.patch](tarball://root/attachments/some-uuid/ticket7634/trac_7634-switchover.patch) by rlm created at 2010-01-06 07:25:14
 
 depends on 4.3.1.alpha1
 
@@ -411,7 +411,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_065242.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7634-refactor.patch](tarball://root/attachments/some-uuid/ticket7634/trac_7634-refactor.patch) by rlm created at 2010-01-06 07:26:31",
     "created_at": "2010-01-06T07:26:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7634",
     "type": "issue_comment",
@@ -420,7 +420,7 @@ archive/issue_comments_065242.json:
 }
 ```
 
-Attachment
+Attachment [trac_7634-refactor.patch](tarball://root/attachments/some-uuid/ticket7634/trac_7634-refactor.patch) by rlm created at 2010-01-06 07:26:31
 
 
 
@@ -523,7 +523,7 @@ Resolution: fixed
 archive/issue_comments_065248.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7634-fix-pickle.patch](tarball://root/attachments/some-uuid/ticket7634/trac_7634-fix-pickle.patch) by rlm created at 2010-01-13 04:35:52",
     "created_at": "2010-01-13T04:35:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7634",
     "type": "issue_comment",
@@ -532,4 +532,4 @@ archive/issue_comments_065248.json:
 }
 ```
 
-Attachment
+Attachment [trac_7634-fix-pickle.patch](tarball://root/attachments/some-uuid/ticket7634/trac_7634-fix-pickle.patch) by rlm created at 2010-01-13 04:35:52

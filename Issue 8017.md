@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8017
 archive/issue_comments_070045.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8017-cont-frac.patch](tarball://root/attachments/some-uuid/ticket8017/8017-cont-frac.patch) by robertwb created at 2010-01-21 01:23:43",
     "created_at": "2010-01-21T01:23:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8017",
     "type": "issue_comment",
@@ -49,7 +49,7 @@ archive/issue_comments_070045.json:
 }
 ```
 
-Attachment
+Attachment [8017-cont-frac.patch](tarball://root/attachments/some-uuid/ticket8017/8017-cont-frac.patch) by robertwb created at 2010-01-21 01:23:43
 
 
 
@@ -150,7 +150,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_070050.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8017-contfrac-referee-fixes.patch](tarball://root/attachments/some-uuid/ticket8017/8017-contfrac-referee-fixes.patch) by robertwb created at 2010-03-15 20:06:32",
     "created_at": "2010-03-15T20:06:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8017",
     "type": "issue_comment",
@@ -159,7 +159,7 @@ archive/issue_comments_070050.json:
 }
 ```
 
-Attachment
+Attachment [8017-contfrac-referee-fixes.patch](tarball://root/attachments/some-uuid/ticket8017/8017-contfrac-referee-fixes.patch) by robertwb created at 2010-03-15 20:06:32
 
 
 
@@ -321,7 +321,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_070058.json:
 ```json
 {
-    "body": "Attachment\n\nThanks for being so quick to look at this after such a long wait. Yes, I was thinking about this when I made these changes. The answers are not substantially different, and should be clear to any user that the current behavior is correct (e.g. by computing things out to higher precision or consulting external sources). \n\nMost importantly, the commands used are not broken or semantically different, which would be really bad. I refreshed the patch just inserting a little note about the change (and, of course, it will be fully recorded in the revision control system).",
+    "body": "Attachment [8017-contfrac-referee2.patch](tarball://root/attachments/some-uuid/ticket8017/8017-contfrac-referee2.patch) by robertwb created at 2010-07-29 18:15:23\n\nThanks for being so quick to look at this after such a long wait. Yes, I was thinking about this when I made these changes. The answers are not substantially different, and should be clear to any user that the current behavior is correct (e.g. by computing things out to higher precision or consulting external sources). \n\nMost importantly, the commands used are not broken or semantically different, which would be really bad. I refreshed the patch just inserting a little note about the change (and, of course, it will be fully recorded in the revision control system).",
     "created_at": "2010-07-29T18:15:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8017",
     "type": "issue_comment",
@@ -330,7 +330,7 @@ archive/issue_comments_070058.json:
 }
 ```
 
-Attachment
+Attachment [8017-contfrac-referee2.patch](tarball://root/attachments/some-uuid/ticket8017/8017-contfrac-referee2.patch) by robertwb created at 2010-07-29 18:15:23
 
 Thanks for being so quick to look at this after such a long wait. Yes, I was thinking about this when I made these changes. The answers are not substantially different, and should be clear to any user that the current behavior is correct (e.g. by computing things out to higher precision or consulting external sources). 
 
@@ -379,7 +379,7 @@ Changing status from positive_review to needs_info.
 archive/issue_comments_070061.json:
 ```json
 {
-    "body": "Attachment\n\napply only this patch",
+    "body": "Attachment [8017-all.patch](tarball://root/attachments/some-uuid/ticket8017/8017-all.patch) by robertwb created at 2010-08-04 07:43:06\n\napply only this patch",
     "created_at": "2010-08-04T07:43:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8017",
     "type": "issue_comment",
@@ -388,7 +388,7 @@ archive/issue_comments_070061.json:
 }
 ```
 
-Attachment
+Attachment [8017-all.patch](tarball://root/attachments/some-uuid/ticket8017/8017-all.patch) by robertwb created at 2010-08-04 07:43:06
 
 apply only this patch
 

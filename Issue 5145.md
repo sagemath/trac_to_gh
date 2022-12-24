@@ -203,7 +203,7 @@ Based on 4.1.1 and #5448
 archive/issue_comments_039364.json:
 ```json
 {
-    "body": "Attachment\n\nTry this.",
+    "body": "Attachment [trac_5145-plot-points-default.patch](tarball://root/attachments/some-uuid/ticket5145/trac_5145-plot-points-default.patch) by kcrisman created at 2009-09-10 15:46:05\n\nTry this.",
     "created_at": "2009-09-10T15:46:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5145",
     "type": "issue_comment",
@@ -212,7 +212,7 @@ archive/issue_comments_039364.json:
 }
 ```
 
-Attachment
+Attachment [trac_5145-plot-points-default.patch](tarball://root/attachments/some-uuid/ticket5145/trac_5145-plot-points-default.patch) by kcrisman created at 2009-09-10 15:46:05
 
 Try this.
 

@@ -80,7 +80,7 @@ Changing keywords from "" to "editor_mabshoff".
 archive/issue_comments_023603.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ntl-sun.patch](tarball://root/attachments/some-uuid/ticket3375/ntl-sun.patch) by craigcitro created at 2008-06-15 21:52:48",
     "created_at": "2008-06-15T21:52:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3375",
     "type": "issue_comment",
@@ -89,7 +89,7 @@ archive/issue_comments_023603.json:
 }
 ```
 
-Attachment
+Attachment [ntl-sun.patch](tarball://root/attachments/some-uuid/ticket3375/ntl-sun.patch) by craigcitro created at 2008-06-15 21:52:48
 
 
 

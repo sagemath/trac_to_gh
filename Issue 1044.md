@@ -191,7 +191,7 @@ Michael
 archive/issue_comments_006356.json:
 ```json
 {
-    "body": "Attachment\n\nI've added an attachment that fixes the crash.  (I think the underlying problem might actually be in the coercion code, though.)",
+    "body": "Attachment [1044.patch](tarball://root/attachments/some-uuid/ticket1044/1044.patch) by cwitty created at 2007-11-01 02:40:58\n\nI've added an attachment that fixes the crash.  (I think the underlying problem might actually be in the coercion code, though.)",
     "created_at": "2007-11-01T02:40:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1044",
     "type": "issue_comment",
@@ -200,7 +200,7 @@ archive/issue_comments_006356.json:
 }
 ```
 
-Attachment
+Attachment [1044.patch](tarball://root/attachments/some-uuid/ticket1044/1044.patch) by cwitty created at 2007-11-01 02:40:58
 
 I've added an attachment that fixes the crash.  (I think the underlying problem might actually be in the coercion code, though.)
 

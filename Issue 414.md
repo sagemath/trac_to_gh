@@ -148,7 +148,7 @@ Resolution: fixed
 archive/issue_comments_002047.json:
 ```json
 {
-    "body": "Attachment\n\nFixed for sage-2.8.4.3.  Now both .spyx and .pyx files are accepted.",
+    "body": "Attachment [pyx.patch](tarball://root/attachments/some-uuid/ticket414/pyx.patch) by was created at 2007-09-14 22:07:40\n\nFixed for sage-2.8.4.3.  Now both .spyx and .pyx files are accepted.",
     "created_at": "2007-09-14T22:07:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/414",
     "type": "issue_comment",
@@ -157,6 +157,6 @@ archive/issue_comments_002047.json:
 }
 ```
 
-Attachment
+Attachment [pyx.patch](tarball://root/attachments/some-uuid/ticket414/pyx.patch) by was created at 2007-09-14 22:07:40
 
 Fixed for sage-2.8.4.3.  Now both .spyx and .pyx files are accepted.

@@ -81,7 +81,7 @@ See the attached patch.
 archive/issue_comments_039581.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5165.patch](tarball://root/attachments/some-uuid/ticket5165/trac_5165.patch) by AlexGhitza created at 2010-01-03 10:20:37",
     "created_at": "2010-01-03T10:20:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5165",
     "type": "issue_comment",
@@ -90,7 +90,7 @@ archive/issue_comments_039581.json:
 }
 ```
 
-Attachment
+Attachment [trac_5165.patch](tarball://root/attachments/some-uuid/ticket5165/trac_5165.patch) by AlexGhitza created at 2010-01-03 10:20:37
 
 
 

@@ -87,7 +87,7 @@ Same patch as listed in the post.
 archive/issue_comments_004503.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [#759.patch](tarball://root/attachments/some-uuid/ticket759/#759.patch) by was created at 2007-10-04 14:56:15",
     "created_at": "2007-10-04T14:56:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/759",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_004503.json:
 }
 ```
 
-Attachment
+Attachment [#759.patch](tarball://root/attachments/some-uuid/ticket759/#759.patch) by was created at 2007-10-04 14:56:15
 
 
 

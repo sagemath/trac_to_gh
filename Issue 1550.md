@@ -72,7 +72,7 @@ Needs serious improvement- just a minimal implementation, probably in the wrong 
 archive/issue_comments_009885.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [libecm.patch](tarball://root/attachments/some-uuid/ticket1550/libecm.patch) by rlm created at 2008-01-21 20:56:18",
     "created_at": "2008-01-21T20:56:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1550",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_009885.json:
 }
 ```
 
-Attachment
+Attachment [libecm.patch](tarball://root/attachments/some-uuid/ticket1550/libecm.patch) by rlm created at 2008-01-21 20:56:18
 
 
 
@@ -108,7 +108,7 @@ Patch on top of libecm.patch
 archive/issue_comments_009887.json:
 ```json
 {
-    "body": "Attachment\n\nReview: This is a great patch, which could in addition serve as example of how to interface a C\nlibrary with SAGE. Just a minor comment: the example ecmfactor(999, 0.0) always outputs (True, 27):\nfactors 2 and 3 are special within ECM. I would suggest a more difficult example, for instance\necmfactor(1022117, 10.0) which sometimes outputs (True, 1013), sometimes (True, 1009),\nsometimes (True, 1022117), or (False, None). However this might cause problems with the doctests:\nhow to check functions with non-deterministic output?",
+    "body": "Attachment [libecm-2.patch](tarball://root/attachments/some-uuid/ticket1550/libecm-2.patch) by zimmerma created at 2008-01-22 08:58:37\n\nReview: This is a great patch, which could in addition serve as example of how to interface a C\nlibrary with SAGE. Just a minor comment: the example ecmfactor(999, 0.0) always outputs (True, 27):\nfactors 2 and 3 are special within ECM. I would suggest a more difficult example, for instance\necmfactor(1022117, 10.0) which sometimes outputs (True, 1013), sometimes (True, 1009),\nsometimes (True, 1022117), or (False, None). However this might cause problems with the doctests:\nhow to check functions with non-deterministic output?",
     "created_at": "2008-01-22T08:58:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1550",
     "type": "issue_comment",
@@ -117,7 +117,7 @@ archive/issue_comments_009887.json:
 }
 ```
 
-Attachment
+Attachment [libecm-2.patch](tarball://root/attachments/some-uuid/ticket1550/libecm-2.patch) by zimmerma created at 2008-01-22 08:58:37
 
 Review: This is a great patch, which could in addition serve as example of how to interface a C
 library with SAGE. Just a minor comment: the example ecmfactor(999, 0.0) always outputs (True, 27):

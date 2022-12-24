@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5982
 archive/issue_comments_047501.json:
 ```json
 {
-    "body": "Attachment\n\nFix/workaround using Macaulay 2",
+    "body": "Attachment [sage+multi-polynomial-fraction-fields2.diff](tarball://root/attachments/some-uuid/ticket5982/sage+multi-polynomial-fraction-fields2.diff) by jmbr created at 2009-05-04 23:22:22\n\nFix/workaround using Macaulay 2",
     "created_at": "2009-05-04T23:22:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5982",
     "type": "issue_comment",
@@ -53,7 +53,7 @@ archive/issue_comments_047501.json:
 }
 ```
 
-Attachment
+Attachment [sage+multi-polynomial-fraction-fields2.diff](tarball://root/attachments/some-uuid/ticket5982/sage+multi-polynomial-fraction-fields2.diff) by jmbr created at 2009-05-04 23:22:22
 
 Fix/workaround using Macaulay 2
 
@@ -175,7 +175,7 @@ Michael
 archive/issue_comments_047506.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5982-ncalexan.patch](tarball://root/attachments/some-uuid/ticket5982/trac_5982-ncalexan.patch) by ncalexan created at 2009-06-19 22:24:11",
     "created_at": "2009-06-19T22:24:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5982",
     "type": "issue_comment",
@@ -184,7 +184,7 @@ archive/issue_comments_047506.json:
 }
 ```
 
-Attachment
+Attachment [trac_5982-ncalexan.patch](tarball://root/attachments/some-uuid/ticket5982/trac_5982-ncalexan.patch) by ncalexan created at 2009-06-19 22:24:11
 
 
 
@@ -392,7 +392,7 @@ wstein@sage:~/build/sage-4.1$
 archive/issue_comments_047515.json:
 ```json
 {
-    "body": "Attachment\n\nMinh (or whoever merges this),\n\nApply *only* trac_5982-ncalexan-with-check.patch.  Note that you'll have to check it in as Nick Alexander and \"Juan M. Bello Rivas <jmbr`@`superadditive.com>\" when applying the patch, since Juan didn't use HG evidently.",
+    "body": "Attachment [trac_5982-ncalexan-with-check.patch](tarball://root/attachments/some-uuid/ticket5982/trac_5982-ncalexan-with-check.patch) by was created at 2009-07-26 21:51:52\n\nMinh (or whoever merges this),\n\nApply *only* trac_5982-ncalexan-with-check.patch.  Note that you'll have to check it in as Nick Alexander and \"Juan M. Bello Rivas <jmbr`@`superadditive.com>\" when applying the patch, since Juan didn't use HG evidently.",
     "created_at": "2009-07-26T21:51:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5982",
     "type": "issue_comment",
@@ -401,7 +401,7 @@ archive/issue_comments_047515.json:
 }
 ```
 
-Attachment
+Attachment [trac_5982-ncalexan-with-check.patch](tarball://root/attachments/some-uuid/ticket5982/trac_5982-ncalexan-with-check.patch) by was created at 2009-07-26 21:51:52
 
 Minh (or whoever merges this),
 
@@ -414,7 +414,7 @@ Apply *only* trac_5982-ncalexan-with-check.patch.  Note that you'll have to chec
 archive/issue_comments_047516.json:
 ```json
 {
-    "body": "Attachment\n\nreviewer patch: fix ReST typos",
+    "body": "Attachment [trac_5982-reviewer.patch](tarball://root/attachments/some-uuid/ticket5982/trac_5982-reviewer.patch) by mvngu created at 2009-08-23 10:53:50\n\nreviewer patch: fix ReST typos",
     "created_at": "2009-08-23T10:53:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5982",
     "type": "issue_comment",
@@ -423,7 +423,7 @@ archive/issue_comments_047516.json:
 }
 ```
 
-Attachment
+Attachment [trac_5982-reviewer.patch](tarball://root/attachments/some-uuid/ticket5982/trac_5982-reviewer.patch) by mvngu created at 2009-08-23 10:53:50
 
 reviewer patch: fix ReST typos
 
@@ -605,7 +605,7 @@ Patchbot seems to be happy with it, but a full ptestlong run on my 4.6.2.alpha1 
 archive/issue_comments_047525.json:
 ```json
 {
-    "body": "Attachment\n\nWhy is this\n\n```\n        The following is Trac #5982.  Note that the quotient ring \n        is not recognized as being a field at this time, so the \n        fraction field is not the quotient ring itself:: \n \n            sage: Q = R.quotient(I); Q \n            Quotient of Multivariate Polynomial Ring in x, y over Rational Field by the ideal (x^2 - y^2 - 1) \n            sage: Q.fraction_field() \n            Fraction Field of Quotient of Multivariate Polynomial Ring in x, y over Rational Field by the ideal (x^2 - y^2 - 1) \n```\n\npart of the documentation of `is_prime` and not of `fraction_field`?\n\nAll tests pass with these patches on sage-4.6.2.alpha4. Patches fix the problem in the ticket description, and all changes look good.",
+    "body": "Attachment [trac_5982_review2.patch](tarball://root/attachments/some-uuid/ticket5982/trac_5982_review2.patch) by mstreng created at 2011-02-14 09:41:26\n\nWhy is this\n\n```\n        The following is Trac #5982.  Note that the quotient ring \n        is not recognized as being a field at this time, so the \n        fraction field is not the quotient ring itself:: \n \n            sage: Q = R.quotient(I); Q \n            Quotient of Multivariate Polynomial Ring in x, y over Rational Field by the ideal (x^2 - y^2 - 1) \n            sage: Q.fraction_field() \n            Fraction Field of Quotient of Multivariate Polynomial Ring in x, y over Rational Field by the ideal (x^2 - y^2 - 1) \n```\n\npart of the documentation of `is_prime` and not of `fraction_field`?\n\nAll tests pass with these patches on sage-4.6.2.alpha4. Patches fix the problem in the ticket description, and all changes look good.",
     "created_at": "2011-02-14T09:41:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5982",
     "type": "issue_comment",
@@ -614,7 +614,7 @@ archive/issue_comments_047525.json:
 }
 ```
 
-Attachment
+Attachment [trac_5982_review2.patch](tarball://root/attachments/some-uuid/ticket5982/trac_5982_review2.patch) by mstreng created at 2011-02-14 09:41:26
 
 Why is this
 
@@ -771,7 +771,7 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_047533.json:
 ```json
 {
-    "body": "Attachment\n\nI made that patch into a proper hg changeset. All tests still pass, and as the new patch does exactly the same as the old one, I put it back to positive_review.\n\n(apply [attachment:trac_5982-ncalexan-with-check2.patch], [attachment:trac_5982-reviewer.patch], [attachment:trac_5982_review2.patch])",
+    "body": "Attachment [trac_5982-ncalexan-with-check2.patch](tarball://root/attachments/some-uuid/ticket5982/trac_5982-ncalexan-with-check2.patch) by mstreng created at 2011-04-28 10:41:08\n\nI made that patch into a proper hg changeset. All tests still pass, and as the new patch does exactly the same as the old one, I put it back to positive_review.\n\n(apply [attachment:trac_5982-ncalexan-with-check2.patch], [attachment:trac_5982-reviewer.patch], [attachment:trac_5982_review2.patch])",
     "created_at": "2011-04-28T10:41:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5982",
     "type": "issue_comment",
@@ -780,7 +780,7 @@ archive/issue_comments_047533.json:
 }
 ```
 
-Attachment
+Attachment [trac_5982-ncalexan-with-check2.patch](tarball://root/attachments/some-uuid/ticket5982/trac_5982-ncalexan-with-check2.patch) by mstreng created at 2011-04-28 10:41:08
 
 I made that patch into a proper hg changeset. All tests still pass, and as the new patch does exactly the same as the old one, I put it back to positive_review.
 
@@ -793,7 +793,7 @@ I made that patch into a proper hg changeset. All tests still pass, and as the n
 archive/issue_comments_047534.json:
 ```json
 {
-    "body": "Attachment\n\nthe difference between trac_5982-ncalexan-with-check.patch and trac_5982-ncalexan-with-check2.patch",
+    "body": "Attachment [patches.diff](tarball://root/attachments/some-uuid/ticket5982/patches.diff) by mstreng created at 2011-04-28 10:46:32\n\nthe difference between trac_5982-ncalexan-with-check.patch and trac_5982-ncalexan-with-check2.patch",
     "created_at": "2011-04-28T10:46:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5982",
     "type": "issue_comment",
@@ -802,7 +802,7 @@ archive/issue_comments_047534.json:
 }
 ```
 
-Attachment
+Attachment [patches.diff](tarball://root/attachments/some-uuid/ticket5982/patches.diff) by mstreng created at 2011-04-28 10:46:32
 
 the difference between trac_5982-ncalexan-with-check.patch and trac_5982-ncalexan-with-check2.patch
 

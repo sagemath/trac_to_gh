@@ -46,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6088
 archive/issue_comments_048503.json:
 ```json
 {
-    "body": "Attachment\n\nGood change, positive review. I have already learned that it is a bad idea to catch exceptions from a bigger than tiny piece of code.\n\nAnd thanks for the comment on Sequence! (Here it was used only for pretty output with \"cr=True\" but probably should not hurt performance too much since operations with nef partitions are long on their own.)",
+    "body": "Attachment [lattice_polytope-trivialfix-6088-nt.patch](tarball://root/attachments/some-uuid/ticket6088/lattice_polytope-trivialfix-6088-nt.patch) by novoselt created at 2009-05-20 02:34:09\n\nGood change, positive review. I have already learned that it is a bad idea to catch exceptions from a bigger than tiny piece of code.\n\nAnd thanks for the comment on Sequence! (Here it was used only for pretty output with \"cr=True\" but probably should not hurt performance too much since operations with nef partitions are long on their own.)",
     "created_at": "2009-05-20T02:34:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6088",
     "type": "issue_comment",
@@ -55,7 +55,7 @@ archive/issue_comments_048503.json:
 }
 ```
 
-Attachment
+Attachment [lattice_polytope-trivialfix-6088-nt.patch](tarball://root/attachments/some-uuid/ticket6088/lattice_polytope-trivialfix-6088-nt.patch) by novoselt created at 2009-05-20 02:34:09
 
 Good change, positive review. I have already learned that it is a bad idea to catch exceptions from a bigger than tiny piece of code.
 

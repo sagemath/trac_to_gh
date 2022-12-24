@@ -92,7 +92,7 @@ Changing component from algebraic geometry to linear algebra.
 archive/issue_comments_001951.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [396.patch](tarball://root/attachments/some-uuid/ticket396/396.patch) by mhansen created at 2007-09-06 23:02:48",
     "created_at": "2007-09-06T23:02:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/396",
     "type": "issue_comment",
@@ -101,7 +101,7 @@ archive/issue_comments_001951.json:
 }
 ```
 
-Attachment
+Attachment [396.patch](tarball://root/attachments/some-uuid/ticket396/396.patch) by mhansen created at 2007-09-06 23:02:48
 
 
 

@@ -416,7 +416,7 @@ Kazhdan-Lusztig polynomials, Bruhat order, improved `__repr__` for WeylGroups.
 archive/issue_comments_066761.json:
 ```json
 {
-    "body": "Attachment\n\nPatch rebased to sage-4.3.3.alpha0. This fixes the conflict\nreported by mpatel with no other changes.",
+    "body": "Attachment [kazhdan_lusztig.patch](tarball://root/attachments/some-uuid/ticket7751/kazhdan_lusztig.patch) by bump created at 2010-02-13 01:26:45\n\nPatch rebased to sage-4.3.3.alpha0. This fixes the conflict\nreported by mpatel with no other changes.",
     "created_at": "2010-02-13T01:26:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7751",
     "type": "issue_comment",
@@ -425,7 +425,7 @@ archive/issue_comments_066761.json:
 }
 ```
 
-Attachment
+Attachment [kazhdan_lusztig.patch](tarball://root/attachments/some-uuid/ticket7751/kazhdan_lusztig.patch) by bump created at 2010-02-13 01:26:45
 
 Patch rebased to sage-4.3.3.alpha0. This fixes the conflict
 reported by mpatel with no other changes.

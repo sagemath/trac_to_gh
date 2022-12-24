@@ -88,7 +88,7 @@ Changing assignee from was to saliola.
 archive/issue_comments_098932.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac9938.2.patch](tarball://root/attachments/some-uuid/ticket9938/trac9938.2.patch) by saliola created at 2010-09-17 22:33:38",
     "created_at": "2010-09-17T22:33:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9937",
     "type": "issue_comment",
@@ -97,7 +97,7 @@ archive/issue_comments_098932.json:
 }
 ```
 
-Attachment
+Attachment [trac9938.2.patch](tarball://root/attachments/some-uuid/ticket9938/trac9938.2.patch) by saliola created at 2010-09-17 22:33:38
 
 
 
@@ -106,7 +106,7 @@ Attachment
 archive/issue_comments_098933.json:
 ```json
 {
-    "body": "Attachment\n\napply only this patch!",
+    "body": "Attachment [trac9938.patch](tarball://root/attachments/some-uuid/ticket9938/trac9938.patch) by saliola created at 2010-09-17 22:34:15\n\napply only this patch!",
     "created_at": "2010-09-17T22:34:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9937",
     "type": "issue_comment",
@@ -115,7 +115,7 @@ archive/issue_comments_098933.json:
 }
 ```
 
-Attachment
+Attachment [trac9938.patch](tarball://root/attachments/some-uuid/ticket9938/trac9938.patch) by saliola created at 2010-09-17 22:34:15
 
 apply only this patch!
 
@@ -180,7 +180,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_098937.json:
 ```json
 {
-    "body": "Attachment\n\nApplies over the precedent patch",
+    "body": "Attachment [trac9938-review-sl.patch](tarball://root/attachments/some-uuid/ticket9938/trac9938-review-sl.patch) by slabbe created at 2010-09-18 13:39:00\n\nApplies over the precedent patch",
     "created_at": "2010-09-18T13:39:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9937",
     "type": "issue_comment",
@@ -189,7 +189,7 @@ archive/issue_comments_098937.json:
 }
 ```
 
-Attachment
+Attachment [trac9938-review-sl.patch](tarball://root/attachments/some-uuid/ticket9938/trac9938-review-sl.patch) by slabbe created at 2010-09-18 13:39:00
 
 Applies over the precedent patch
 

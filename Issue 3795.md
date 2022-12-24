@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3795
 archive/issue_comments_026988.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3795.patch](tarball://root/attachments/some-uuid/ticket3795/trac_3795.patch) by mhansen created at 2008-08-09 15:16:31",
     "created_at": "2008-08-09T15:16:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3795",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_026988.json:
 }
 ```
 
-Attachment
+Attachment [trac_3795.patch](tarball://root/attachments/some-uuid/ticket3795/trac_3795.patch) by mhansen created at 2008-08-09 15:16:31
 
 
 
@@ -79,7 +79,7 @@ SCORE cell.py: 79% (67 of 84)
 archive/issue_comments_026990.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3795-mhansen-doctest-cell.patch](tarball://root/attachments/some-uuid/ticket3795/3795-mhansen-doctest-cell.patch) by ncalexan created at 2008-08-10 23:15:51",
     "created_at": "2008-08-10T23:15:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3795",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_026990.json:
 }
 ```
 
-Attachment
+Attachment [3795-mhansen-doctest-cell.patch](tarball://root/attachments/some-uuid/ticket3795/3795-mhansen-doctest-cell.patch) by ncalexan created at 2008-08-10 23:15:51
 
 
 

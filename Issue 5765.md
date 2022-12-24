@@ -91,7 +91,7 @@ Good question.  I have done almost all I wanted to do with it, but unfortunately
 archive/issue_comments_045064.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch brings up the doctest coverage from 24% to 87% (29 of 33).\n\nThere is also some fairly straightforward refactoring of code, e.g. moving `_validate` to the ambient spaces where it belongs logically.  I also realised that `self.complement(other)` is counterintuitive and changed it to match normal speech patterns: it should be \"the complement of self in other\", which is other-self, not self-other.  An added bonus is that now one can write `X.complement()` to get the complement of X in its ambient space, which is highly intuitive.  Normally such a change in behaviour would be tricky but since the functions were just broken until 3.4.1.rc3, this shouldn't lead to any confusion (since nobody has used them yet).\n\nNote that the patch relies on changes that only went in at 3.4.1.rc3, so it should only be applied on top of 3.4.1.rc3.",
+    "body": "Attachment [trac_5765.patch](tarball://root/attachments/some-uuid/ticket5765/trac_5765.patch) by AlexGhitza created at 2009-04-17 09:00:47\n\nThe attached patch brings up the doctest coverage from 24% to 87% (29 of 33).\n\nThere is also some fairly straightforward refactoring of code, e.g. moving `_validate` to the ambient spaces where it belongs logically.  I also realised that `self.complement(other)` is counterintuitive and changed it to match normal speech patterns: it should be \"the complement of self in other\", which is other-self, not self-other.  An added bonus is that now one can write `X.complement()` to get the complement of X in its ambient space, which is highly intuitive.  Normally such a change in behaviour would be tricky but since the functions were just broken until 3.4.1.rc3, this shouldn't lead to any confusion (since nobody has used them yet).\n\nNote that the patch relies on changes that only went in at 3.4.1.rc3, so it should only be applied on top of 3.4.1.rc3.",
     "created_at": "2009-04-17T09:00:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5765",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_045064.json:
 }
 ```
 
-Attachment
+Attachment [trac_5765.patch](tarball://root/attachments/some-uuid/ticket5765/trac_5765.patch) by AlexGhitza created at 2009-04-17 09:00:47
 
 The attached patch brings up the doctest coverage from 24% to 87% (29 of 33).
 
@@ -196,7 +196,7 @@ Those failures are in files where I changed the docstrings recently, so I'll tak
 archive/issue_comments_045068.json:
 ```json
 {
-    "body": "Attachment\n\nReplaces earlier patch",
+    "body": "Attachment [trac_5765-1.patch](tarball://root/attachments/some-uuid/ticket5765/trac_5765-1.patch) by cremona created at 2009-04-23 09:38:20\n\nReplaces earlier patch",
     "created_at": "2009-04-23T09:38:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5765",
     "type": "issue_comment",
@@ -205,7 +205,7 @@ archive/issue_comments_045068.json:
 }
 ```
 
-Attachment
+Attachment [trac_5765-1.patch](tarball://root/attachments/some-uuid/ticket5765/trac_5765-1.patch) by cremona created at 2009-04-23 09:38:20
 
 Replaces earlier patch
 
@@ -262,7 +262,7 @@ There was one left, in `schemes/plane_curves/constructor.py`.  The fix is trivia
 archive/issue_comments_045071.json:
 ```json
 {
-    "body": "Attachment\n\napply after trac_5765-1.patch",
+    "body": "Attachment [trac_5765-2.patch](tarball://root/attachments/some-uuid/ticket5765/trac_5765-2.patch) by AlexGhitza created at 2009-04-23 13:10:52\n\napply after trac_5765-1.patch",
     "created_at": "2009-04-23T13:10:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5765",
     "type": "issue_comment",
@@ -271,7 +271,7 @@ archive/issue_comments_045071.json:
 }
 ```
 
-Attachment
+Attachment [trac_5765-2.patch](tarball://root/attachments/some-uuid/ticket5765/trac_5765-2.patch) by AlexGhitza created at 2009-04-23 13:10:52
 
 apply after trac_5765-1.patch
 
@@ -487,7 +487,7 @@ E = EllipticCurve(R, [-1,0])
 archive/issue_comments_045080.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5765-rebased.patch](tarball://root/attachments/some-uuid/ticket5765/trac_5765-rebased.patch) by AlexGhitza created at 2009-04-24 23:09:45",
     "created_at": "2009-04-24T23:09:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5765",
     "type": "issue_comment",
@@ -496,7 +496,7 @@ archive/issue_comments_045080.json:
 }
 ```
 
-Attachment
+Attachment [trac_5765-rebased.patch](tarball://root/attachments/some-uuid/ticket5765/trac_5765-rebased.patch) by AlexGhitza created at 2009-04-24 23:09:45
 
 
 

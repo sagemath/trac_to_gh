@@ -79,7 +79,7 @@ This needs to have a better error message - the example here is trying to render
 archive/issue_comments_042425.json:
 ```json
 {
-    "body": "Attachment\n\nAdds some more informative error messages",
+    "body": "Attachment [trac_5465_1.patch](tarball://root/attachments/some-uuid/ticket5465/trac_5465_1.patch) by mhampton created at 2009-03-20 18:52:07\n\nAdds some more informative error messages",
     "created_at": "2009-03-20T18:52:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5465",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_042425.json:
 }
 ```
 
-Attachment
+Attachment [trac_5465_1.patch](tarball://root/attachments/some-uuid/ticket5465/trac_5465_1.patch) by mhampton created at 2009-03-20 18:52:07
 
 Adds some more informative error messages
 

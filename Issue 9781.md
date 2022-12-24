@@ -95,7 +95,7 @@ Working on it!
 archive/issue_comments_096018.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9782_bug_in_computing_star_generators.patch](tarball://root/attachments/some-uuid/ticket9782/trac_9782_bug_in_computing_star_generators.patch) by novoselt created at 2010-08-23 00:12:11",
     "created_at": "2010-08-23T00:12:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9781",
     "type": "issue_comment",
@@ -104,7 +104,7 @@ archive/issue_comments_096018.json:
 }
 ```
 
-Attachment
+Attachment [trac_9782_bug_in_computing_star_generators.patch](tarball://root/attachments/some-uuid/ticket9782/trac_9782_bug_in_computing_star_generators.patch) by novoselt created at 2010-08-23 00:12:11
 
 
 

@@ -43,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1985
 archive/issue_comments_012857.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-2.10.1.rc4-fix-is_pseudoprime-docstring-wrapping_trac_1985.patch](tarball://root/attachments/some-uuid/ticket1985/Sage-2.10.1.rc4-fix-is_pseudoprime-docstring-wrapping_trac_1985.patch) by mabshoff created at 2008-01-30 15:16:44",
     "created_at": "2008-01-30T15:16:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1985",
     "type": "issue_comment",
@@ -52,7 +52,7 @@ archive/issue_comments_012857.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.10.1.rc4-fix-is_pseudoprime-docstring-wrapping_trac_1985.patch](tarball://root/attachments/some-uuid/ticket1985/Sage-2.10.1.rc4-fix-is_pseudoprime-docstring-wrapping_trac_1985.patch) by mabshoff created at 2008-01-30 15:16:44
 
 
 

@@ -98,7 +98,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3533
 archive/issue_comments_024924.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3533.patch](tarball://root/attachments/some-uuid/ticket3533/sage-3533.patch) by fwclarke created at 2008-06-29 09:59:13",
     "created_at": "2008-06-29T09:59:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3533",
     "type": "issue_comment",
@@ -107,7 +107,7 @@ archive/issue_comments_024924.json:
 }
 ```
 
-Attachment
+Attachment [sage-3533.patch](tarball://root/attachments/some-uuid/ticket3533/sage-3533.patch) by fwclarke created at 2008-06-29 09:59:13
 
 
 
@@ -199,7 +199,7 @@ These do not look serious, they are to do with outputting floating point numbers
 archive/issue_comments_024926.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage.3533a.patch](tarball://root/attachments/some-uuid/ticket3533/sage.3533a.patch) by fwclarke created at 2008-06-29 21:05:36",
     "created_at": "2008-06-29T21:05:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3533",
     "type": "issue_comment",
@@ -208,7 +208,7 @@ archive/issue_comments_024926.json:
 }
 ```
 
-Attachment
+Attachment [sage.3533a.patch](tarball://root/attachments/some-uuid/ticket3533/sage.3533a.patch) by fwclarke created at 2008-06-29 21:05:36
 
 
 
@@ -482,7 +482,7 @@ code in these patches is just a minor adaptation of code used elsewhere.
 archive/issue_comments_024932.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage.3533b.patch](tarball://root/attachments/some-uuid/ticket3533/sage.3533b.patch) by fwclarke created at 2008-07-04 12:15:09",
     "created_at": "2008-07-04T12:15:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3533",
     "type": "issue_comment",
@@ -491,7 +491,7 @@ archive/issue_comments_024932.json:
 }
 ```
 
-Attachment
+Attachment [sage.3533b.patch](tarball://root/attachments/some-uuid/ticket3533/sage.3533b.patch) by fwclarke created at 2008-07-04 12:15:09
 
 
 
@@ -522,7 +522,7 @@ In the 4th patch sage.3533c.patch I added tests to this effect and corresponding
 archive/issue_comments_024934.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage.3533c.patch](tarball://root/attachments/some-uuid/ticket3533/sage.3533c.patch) by cremona created at 2008-07-04 15:08:50",
     "created_at": "2008-07-04T15:08:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3533",
     "type": "issue_comment",
@@ -531,7 +531,7 @@ archive/issue_comments_024934.json:
 }
 ```
 
-Attachment
+Attachment [sage.3533c.patch](tarball://root/attachments/some-uuid/ticket3533/sage.3533c.patch) by cremona created at 2008-07-04 15:08:50
 
 
 
@@ -742,7 +742,7 @@ cleaned up version of the previous diff.
 archive/issue_comments_024940.json:
 ```json
 {
-    "body": "Attachment\n\nNote that in the last doctest fix patch I am removing\n\n```\ne.gauss_sum_numerical() \n```\n\nfrom dirichlet.py since it is numerically unstable and would require an ellipsis at the start of a line which is not allowed. We still test the absolute, so I think we are covered.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_3533_doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket3533/trac_3533_doctest_fixes.patch) by mabshoff created at 2008-07-06 17:49:29\n\nNote that in the last doctest fix patch I am removing\n\n```\ne.gauss_sum_numerical() \n```\n\nfrom dirichlet.py since it is numerically unstable and would require an ellipsis at the start of a line which is not allowed. We still test the absolute, so I think we are covered.\n\nCheers,\n\nMichael",
     "created_at": "2008-07-06T17:49:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3533",
     "type": "issue_comment",
@@ -751,7 +751,7 @@ archive/issue_comments_024940.json:
 }
 ```
 
-Attachment
+Attachment [trac_3533_doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket3533/trac_3533_doctest_fixes.patch) by mabshoff created at 2008-07-06 17:49:29
 
 Note that in the last doctest fix patch I am removing
 

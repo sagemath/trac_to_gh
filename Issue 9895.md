@@ -1615,7 +1615,7 @@ Sage library patch. Fixes the relevant extension module dependencies. Based on S
 archive/issue_comments_098232.json:
 ```json
 {
-    "body": "Attachment\n\nScripts repo patch (to sage-upgrade). Based on Sage 4.6.alpha1.",
+    "body": "Attachment [trac_9896-propagate_upgrading_to_install_script-scripts_repo.patch](tarball://root/attachments/some-uuid/ticket9896/trac_9896-propagate_upgrading_to_install_script-scripts_repo.patch) by leif created at 2010-09-23 06:45:42\n\nScripts repo patch (to sage-upgrade). Based on Sage 4.6.alpha1.",
     "created_at": "2010-09-23T06:45:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
@@ -1624,7 +1624,7 @@ archive/issue_comments_098232.json:
 }
 ```
 
-Attachment
+Attachment [trac_9896-propagate_upgrading_to_install_script-scripts_repo.patch](tarball://root/attachments/some-uuid/ticket9896/trac_9896-propagate_upgrading_to_install_script-scripts_repo.patch) by leif created at 2010-09-23 06:45:42
 
 Scripts repo patch (to sage-upgrade). Based on Sage 4.6.alpha1.
 
@@ -1653,7 +1653,7 @@ New `spkg/standard/deps`. Based on Sage 4.6.alpha1. (Not under revision control.
 archive/issue_comments_098234.json:
 ```json
 {
-    "body": "Attachment\n\nDiff of new `spkg/standard/deps` against that of Sage 4.6.alpha1.",
+    "body": "Attachment [trac_9896-SAGE_ROOT__spkg__standard__deps.diff](tarball://root/attachments/some-uuid/ticket9896/trac_9896-SAGE_ROOT__spkg__standard__deps.diff) by leif created at 2010-09-23 06:51:26\n\nDiff of new `spkg/standard/deps` against that of Sage 4.6.alpha1.",
     "created_at": "2010-09-23T06:51:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
@@ -1662,7 +1662,7 @@ archive/issue_comments_098234.json:
 }
 ```
 
-Attachment
+Attachment [trac_9896-SAGE_ROOT__spkg__standard__deps.diff](tarball://root/attachments/some-uuid/ticket9896/trac_9896-SAGE_ROOT__spkg__standard__deps.diff) by leif created at 2010-09-23 06:51:26
 
 Diff of new `spkg/standard/deps` against that of Sage 4.6.alpha1.
 
@@ -1863,7 +1863,7 @@ New `spkg/install`. Based on Sage 4.6.alpha1. (Not under revision control.)
 archive/issue_comments_098244.json:
 ```json
 {
-    "body": "Attachment\n\nDiff of new `spkg/install` against that of Sage 4.6.alpha1.",
+    "body": "Attachment [trac_9896-SAGE_ROOT__spkg__install](tarball://root/attachments/some-uuid/ticket9896/trac_9896-SAGE_ROOT__spkg__install) by leif created at 2010-09-23 13:20:58\n\nDiff of new `spkg/install` against that of Sage 4.6.alpha1.",
     "created_at": "2010-09-23T13:20:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
@@ -1872,7 +1872,7 @@ archive/issue_comments_098244.json:
 }
 ```
 
-Attachment
+Attachment [trac_9896-SAGE_ROOT__spkg__install](tarball://root/attachments/some-uuid/ticket9896/trac_9896-SAGE_ROOT__spkg__install) by leif created at 2010-09-23 13:20:58
 
 Diff of new `spkg/install` against that of Sage 4.6.alpha1.
 
@@ -1883,7 +1883,7 @@ Diff of new `spkg/install` against that of Sage 4.6.alpha1.
 archive/issue_comments_098245.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:54 leif]:\n> One can also test it by doing a real upgrade from some **vanilla** version to 4.6.alpha1, **after that** applying the patch to `module_list.py` and copying over the new `spkg/install` and `spkg/standard/deps`, then exporting `SAGE_UPGRADE=yes` and running `make`. Then everything should be properly [re]built.\n\ns/`SAGE_UPGRADE`/`SAGE_UPGRADING`/",
+    "body": "Attachment [trac_9896-SAGE_ROOT__spkg__install.diff](tarball://root/attachments/some-uuid/ticket9896/trac_9896-SAGE_ROOT__spkg__install.diff) by leif created at 2010-09-23 13:24:21\n\nReplying to [comment:54 leif]:\n> One can also test it by doing a real upgrade from some **vanilla** version to 4.6.alpha1, **after that** applying the patch to `module_list.py` and copying over the new `spkg/install` and `spkg/standard/deps`, then exporting `SAGE_UPGRADE=yes` and running `make`. Then everything should be properly [re]built.\n\ns/`SAGE_UPGRADE`/`SAGE_UPGRADING`/",
     "created_at": "2010-09-23T13:24:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
@@ -1892,7 +1892,7 @@ archive/issue_comments_098245.json:
 }
 ```
 
-Attachment
+Attachment [trac_9896-SAGE_ROOT__spkg__install.diff](tarball://root/attachments/some-uuid/ticket9896/trac_9896-SAGE_ROOT__spkg__install.diff) by leif created at 2010-09-23 13:24:21
 
 Replying to [comment:54 leif]:
 > One can also test it by doing a real upgrade from some **vanilla** version to 4.6.alpha1, **after that** applying the patch to `module_list.py` and copying over the new `spkg/install` and `spkg/standard/deps`, then exporting `SAGE_UPGRADE=yes` and running `make`. Then everything should be properly [re]built.
@@ -3055,7 +3055,7 @@ P.S.: In case you rename it, if its name starts with `sage-`, it will also be co
 archive/issue_comments_098291.json:
 ```json
 {
-    "body": "Attachment\n\nImproved new `spkg/standard/deps`. Based on Sage 4.6.alpha1. (Not under revision control.)",
+    "body": "Attachment [trac_9896-SAGE_ROOT__spkg__standard__deps.v2b](tarball://root/attachments/some-uuid/ticket9896/trac_9896-SAGE_ROOT__spkg__standard__deps.v2b) by leif created at 2010-09-27 21:01:40\n\nImproved new `spkg/standard/deps`. Based on Sage 4.6.alpha1. (Not under revision control.)",
     "created_at": "2010-09-27T21:01:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
@@ -3064,7 +3064,7 @@ archive/issue_comments_098291.json:
 }
 ```
 
-Attachment
+Attachment [trac_9896-SAGE_ROOT__spkg__standard__deps.v2b](tarball://root/attachments/some-uuid/ticket9896/trac_9896-SAGE_ROOT__spkg__standard__deps.v2b) by leif created at 2010-09-27 21:01:40
 
 Improved new `spkg/standard/deps`. Based on Sage 4.6.alpha1. (Not under revision control.)
 
@@ -3075,7 +3075,7 @@ Improved new `spkg/standard/deps`. Based on Sage 4.6.alpha1. (Not under revision
 archive/issue_comments_098292.json:
 ```json
 {
-    "body": "Attachment\n\nDiff of improved new `spkg/standard/deps` against that of Sage 4.6.alpha1.",
+    "body": "Attachment [trac_9896-SAGE_ROOT__spkg__standard__deps.v2b.diff](tarball://root/attachments/some-uuid/ticket9896/trac_9896-SAGE_ROOT__spkg__standard__deps.v2b.diff) by leif created at 2010-09-27 21:02:28\n\nDiff of improved new `spkg/standard/deps` against that of Sage 4.6.alpha1.",
     "created_at": "2010-09-27T21:02:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
@@ -3084,7 +3084,7 @@ archive/issue_comments_098292.json:
 }
 ```
 
-Attachment
+Attachment [trac_9896-SAGE_ROOT__spkg__standard__deps.v2b.diff](tarball://root/attachments/some-uuid/ticket9896/trac_9896-SAGE_ROOT__spkg__standard__deps.v2b.diff) by leif created at 2010-09-27 21:02:28
 
 Diff of improved new `spkg/standard/deps` against that of Sage 4.6.alpha1.
 
@@ -3095,7 +3095,7 @@ Diff of improved new `spkg/standard/deps` against that of Sage 4.6.alpha1.
 archive/issue_comments_098293.json:
 ```json
 {
-    "body": "Attachment\n\nImproved new `spkg/install`. Based on Sage 4.6.alpha1. (Not under revision control.)",
+    "body": "Attachment [trac_9896-SAGE_ROOT__spkg__install.v2b](tarball://root/attachments/some-uuid/ticket9896/trac_9896-SAGE_ROOT__spkg__install.v2b) by leif created at 2010-09-27 21:03:17\n\nImproved new `spkg/install`. Based on Sage 4.6.alpha1. (Not under revision control.)",
     "created_at": "2010-09-27T21:03:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
@@ -3104,7 +3104,7 @@ archive/issue_comments_098293.json:
 }
 ```
 
-Attachment
+Attachment [trac_9896-SAGE_ROOT__spkg__install.v2b](tarball://root/attachments/some-uuid/ticket9896/trac_9896-SAGE_ROOT__spkg__install.v2b) by leif created at 2010-09-27 21:03:17
 
 Improved new `spkg/install`. Based on Sage 4.6.alpha1. (Not under revision control.)
 
@@ -3115,7 +3115,7 @@ Improved new `spkg/install`. Based on Sage 4.6.alpha1. (Not under revision contr
 archive/issue_comments_098294.json:
 ```json
 {
-    "body": "Attachment\n\nDiff of improved new `spkg/install` against that of Sage 4.6.alpha1.",
+    "body": "Attachment [trac_9896-SAGE_ROOT__spkg__install.v2b.diff](tarball://root/attachments/some-uuid/ticket9896/trac_9896-SAGE_ROOT__spkg__install.v2b.diff) by leif created at 2010-09-27 21:04:08\n\nDiff of improved new `spkg/install` against that of Sage 4.6.alpha1.",
     "created_at": "2010-09-27T21:04:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
@@ -3124,7 +3124,7 @@ archive/issue_comments_098294.json:
 }
 ```
 
-Attachment
+Attachment [trac_9896-SAGE_ROOT__spkg__install.v2b.diff](tarball://root/attachments/some-uuid/ticket9896/trac_9896-SAGE_ROOT__spkg__install.v2b.diff) by leif created at 2010-09-27 21:04:08
 
 Diff of improved new `spkg/install` against that of Sage 4.6.alpha1.
 
@@ -3456,7 +3456,7 @@ Improved new `spkg/standard/deps`. Based on Sage 4.6.alpha**3**, removes `sage_s
 archive/issue_comments_098307.json:
 ```json
 {
-    "body": "Attachment\n\nDiff of improved new `spkg/standard/deps` against that of Sage 4.6.alpha**3**.",
+    "body": "Attachment [trac_9896-SAGE_ROOT__spkg__standard__deps.v3.diff](tarball://root/attachments/some-uuid/ticket9896/trac_9896-SAGE_ROOT__spkg__standard__deps.v3.diff) by leif created at 2010-10-18 13:15:45\n\nDiff of improved new `spkg/standard/deps` against that of Sage 4.6.alpha**3**.",
     "created_at": "2010-10-18T13:15:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
@@ -3465,7 +3465,7 @@ archive/issue_comments_098307.json:
 }
 ```
 
-Attachment
+Attachment [trac_9896-SAGE_ROOT__spkg__standard__deps.v3.diff](tarball://root/attachments/some-uuid/ticket9896/trac_9896-SAGE_ROOT__spkg__standard__deps.v3.diff) by leif created at 2010-10-18 13:15:45
 
 Diff of improved new `spkg/standard/deps` against that of Sage 4.6.alpha**3**.
 
@@ -3552,7 +3552,7 @@ Add "install" to .hgignore, patch for sage-scripts
 archive/issue_comments_098310.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9896_scripts_hgignore.patch](tarball://root/attachments/some-uuid/ticket9896/9896_scripts_hgignore.patch) by jdemeyer created at 2010-10-18 16:04:19",
     "created_at": "2010-10-18T16:04:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
@@ -3561,7 +3561,7 @@ archive/issue_comments_098310.json:
 }
 ```
 
-Attachment
+Attachment [9896_scripts_hgignore.patch](tarball://root/attachments/some-uuid/ticket9896/9896_scripts_hgignore.patch) by jdemeyer created at 2010-10-18 16:04:19
 
 
 
@@ -3570,7 +3570,7 @@ Attachment
 archive/issue_comments_098311.json:
 ```json
 {
-    "body": "Attachment\n\nSage library patch. Fixes Darwin linker issue (in `setup.py`). Based on Sage 4.6.alpha3.",
+    "body": "Attachment [trac_9896-fix_hardcoded_libdirs_in_extmod_linker_cmd-sagelib.patch](tarball://root/attachments/some-uuid/ticket9896/trac_9896-fix_hardcoded_libdirs_in_extmod_linker_cmd-sagelib.patch) by leif created at 2010-10-19 10:03:31\n\nSage library patch. Fixes Darwin linker issue (in `setup.py`). Based on Sage 4.6.alpha3.",
     "created_at": "2010-10-19T10:03:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
@@ -3579,7 +3579,7 @@ archive/issue_comments_098311.json:
 }
 ```
 
-Attachment
+Attachment [trac_9896-fix_hardcoded_libdirs_in_extmod_linker_cmd-sagelib.patch](tarball://root/attachments/some-uuid/ticket9896/trac_9896-fix_hardcoded_libdirs_in_extmod_linker_cmd-sagelib.patch) by leif created at 2010-10-19 10:03:31
 
 Sage library patch. Fixes Darwin linker issue (in `setup.py`). Based on Sage 4.6.alpha3.
 

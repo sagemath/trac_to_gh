@@ -53,7 +53,7 @@ Experimental.
 archive/issue_comments_052559.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch is experimental.  Notes:\n\n* `sage -docbuild reference pdf` fails to build `arithgroup.pdf`, apparently because of the math macro `\\ZZ` in the title.  Unfortunately, I don't know how to fix this.  \n* Since it *replaces* the top level PDF file with several smaller files, it breaks the patch at #4460.\n* It's not clear what happens to cross-ReST document links.  I'll try to investigate.",
+    "body": "Attachment [trac_6495_ref_pdf_pieces.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495_ref_pdf_pieces.patch) by mpatel created at 2009-07-09 09:05:04\n\nThe attached patch is experimental.  Notes:\n\n* `sage -docbuild reference pdf` fails to build `arithgroup.pdf`, apparently because of the math macro `\\ZZ` in the title.  Unfortunately, I don't know how to fix this.  \n* Since it *replaces* the top level PDF file with several smaller files, it breaks the patch at #4460.\n* It's not clear what happens to cross-ReST document links.  I'll try to investigate.",
     "created_at": "2009-07-09T09:05:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_052559.json:
 }
 ```
 
-Attachment
+Attachment [trac_6495_ref_pdf_pieces.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495_ref_pdf_pieces.patch) by mpatel created at 2009-07-09 09:05:04
 
 The attached patch is experimental.  Notes:
 
@@ -142,7 +142,7 @@ in `arithgroup.rst`.
 archive/issue_comments_052562.json:
 ```json
 {
-    "body": "Attachment\n\nAnother approach.  Depends on #7549.  Still experimental.  This patch only.  sage repo.",
+    "body": "Attachment [trac_6495-reference_breakup.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495-reference_breakup.patch) by mpatel created at 2009-11-29 19:18:44\n\nAnother approach.  Depends on #7549.  Still experimental.  This patch only.  sage repo.",
     "created_at": "2009-11-29T19:18:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -151,7 +151,7 @@ archive/issue_comments_052562.json:
 }
 ```
 
-Attachment
+Attachment [trac_6495-reference_breakup.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495-reference_breakup.patch) by mpatel created at 2009-11-29 19:18:44
 
 Another approach.  Depends on #7549.  Still experimental.  This patch only.  sage repo.
 
@@ -314,7 +314,7 @@ PDF fixes.  This patch only.  sage repo.
 archive/issue_comments_052570.json:
 ```json
 {
-    "body": "Attachment\n\nSphinx caches \"foreign\" object inventories in a document's `environment.pickle`.  These now use a lot of disk space.",
+    "body": "Attachment [trac_6495-reference_breakup_v2.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495-reference_breakup_v2.patch) by mpatel created at 2009-12-03 00:37:15\n\nSphinx caches \"foreign\" object inventories in a document's `environment.pickle`.  These now use a lot of disk space.",
     "created_at": "2009-12-03T00:37:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -323,7 +323,7 @@ archive/issue_comments_052570.json:
 }
 ```
 
-Attachment
+Attachment [trac_6495-reference_breakup_v2.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495-reference_breakup_v2.patch) by mpatel created at 2009-12-03 00:37:15
 
 Sphinx caches "foreign" object inventories in a document's `environment.pickle`.  These now use a lot of disk space.
 
@@ -661,7 +661,7 @@ use only this patch
 archive/issue_comments_052582.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6495-subdivide-ref-manual.2.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495-subdivide-ref-manual.2.patch) by jhpalmieri created at 2011-07-14 15:58:35",
     "created_at": "2011-07-14T15:58:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -670,7 +670,7 @@ archive/issue_comments_052582.json:
 }
 ```
 
-Attachment
+Attachment [trac_6495-subdivide-ref-manual.2.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495-subdivide-ref-manual.2.patch) by jhpalmieri created at 2011-07-14 15:58:35
 
 
 
@@ -697,7 +697,7 @@ use only this patch
 archive/issue_comments_052584.json:
 ```json
 {
-    "body": "Attachment\n\nHere's a new version, with #11298 as a new dependency.  (It may apply without #11298, perhaps with fuzz.)  To help with reviewing, I've broken the patch into two pieces, as explained in the ticket description.",
+    "body": "Attachment [trac_6495-subdivide-ref-manual.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495-subdivide-ref-manual.patch) by jhpalmieri created at 2011-07-21 05:46:00\n\nHere's a new version, with #11298 as a new dependency.  (It may apply without #11298, perhaps with fuzz.)  To help with reviewing, I've broken the patch into two pieces, as explained in the ticket description.",
     "created_at": "2011-07-21T05:46:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -706,7 +706,7 @@ archive/issue_comments_052584.json:
 }
 ```
 
-Attachment
+Attachment [trac_6495-subdivide-ref-manual.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495-subdivide-ref-manual.patch) by jhpalmieri created at 2011-07-21 05:46:00
 
 Here's a new version, with #11298 as a new dependency.  (It may apply without #11298, perhaps with fuzz.)  To help with reviewing, I've broken the patch into two pieces, as explained in the ticket description.
 
@@ -859,7 +859,7 @@ Here are rebased patches, along with the following change: there is now an envir
 archive/issue_comments_052592.json:
 ```json
 {
-    "body": "Attachment\n\nroot repo",
+    "body": "Attachment [trac_6495-root.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495-root.patch) by jhpalmieri created at 2011-11-12 02:06:27\n\nroot repo",
     "created_at": "2011-11-12T02:06:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -868,7 +868,7 @@ archive/issue_comments_052592.json:
 }
 ```
 
-Attachment
+Attachment [trac_6495-root.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495-root.patch) by jhpalmieri created at 2011-11-12 02:06:27
 
 root repo
 
@@ -2172,7 +2172,7 @@ inventory builder + merge todo list & html / js indexes
 archive/issue_comments_052641.json:
 ```json
 {
-    "body": "Attachment\n\n> Citations may be an issue, in particular if the same reference is cited\n> twice in two different parts of the reference manual: we may just need to\n> add another copy of the citation, or perhaps a master list of citations that\n> gets used by everything. I don't know if that's practical.\n\nI've probably a way to handle cross-citation as well. They are stored in the\nenvironement and I can get them to gather the link in the main reference\nmanual, exactly the way I gather TODO and indexes. It is just a little more\ntricky because I need to redispatch them to the other documents. I'm\nexperimenting...\n\nFlorent",
+    "body": "Attachment [invbuilder.patch](tarball://root/attachments/some-uuid/ticket6495/invbuilder.patch) by hivert created at 2012-05-07 01:09:43\n\n> Citations may be an issue, in particular if the same reference is cited\n> twice in two different parts of the reference manual: we may just need to\n> add another copy of the citation, or perhaps a master list of citations that\n> gets used by everything. I don't know if that's practical.\n\nI've probably a way to handle cross-citation as well. They are stored in the\nenvironement and I can get them to gather the link in the main reference\nmanual, exactly the way I gather TODO and indexes. It is just a little more\ntricky because I need to redispatch them to the other documents. I'm\nexperimenting...\n\nFlorent",
     "created_at": "2012-05-07T01:09:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -2181,7 +2181,7 @@ archive/issue_comments_052641.json:
 }
 ```
 
-Attachment
+Attachment [invbuilder.patch](tarball://root/attachments/some-uuid/ticket6495/invbuilder.patch) by hivert created at 2012-05-07 01:09:43
 
 > Citations may be an issue, in particular if the same reference is cited
 > twice in two different parts of the reference manual: we may just need to
@@ -2221,7 +2221,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_052643.json:
 ```json
 {
-    "body": "Attachment\n\nHi there,\n\nI just uploaded which seems to solve most of the problems we had here,\nincluding merging of\n- the todo list if this extension is activated;\n- the python indexes;\n- the list of python modules;\n- the javascript index;\n- the citations.\n\nI put a need review though I'm quite not sure everything is ready for\ninclusion into Sage. I do need feedback and people shaking my code to see if\nit's robust.\n\nFlorent",
+    "body": "Attachment [trac_6495-part3-the-remaining.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495-part3-the-remaining.patch) by hivert created at 2012-05-07 18:52:41\n\nHi there,\n\nI just uploaded which seems to solve most of the problems we had here,\nincluding merging of\n- the todo list if this extension is activated;\n- the python indexes;\n- the list of python modules;\n- the javascript index;\n- the citations.\n\nI put a need review though I'm quite not sure everything is ready for\ninclusion into Sage. I do need feedback and people shaking my code to see if\nit's robust.\n\nFlorent",
     "created_at": "2012-05-07T18:52:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -2230,7 +2230,7 @@ archive/issue_comments_052643.json:
 }
 ```
 
-Attachment
+Attachment [trac_6495-part3-the-remaining.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495-part3-the-remaining.patch) by hivert created at 2012-05-07 18:52:41
 
 Hi there,
 
@@ -2878,7 +2878,7 @@ apply second (if you've applied the patches at #9774)
 archive/issue_comments_052671.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6495-part2-everything-else-9774.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495-part2-everything-else-9774.patch) by jhpalmieri created at 2012-07-10 13:52:21",
     "created_at": "2012-07-10T13:52:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -2887,7 +2887,7 @@ archive/issue_comments_052671.json:
 }
 ```
 
-Attachment
+Attachment [trac_6495-part2-everything-else-9774.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495-part2-everything-else-9774.patch) by jhpalmieri created at 2012-07-10 13:52:21
 
 
 
@@ -3029,7 +3029,7 @@ Florent
 archive/issue_comments_052678.json:
 ```json
 {
-    "body": "Attachment\n\nRebased to #13143 and Sage 5.4.rc2 (because of changes to builder.py in #13579).",
+    "body": "Attachment [trac_6495-part4-interrupts.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495-part4-interrupts.patch) by jhpalmieri created at 2012-10-19 17:21:46\n\nRebased to #13143 and Sage 5.4.rc2 (because of changes to builder.py in #13579).",
     "created_at": "2012-10-19T17:21:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -3038,7 +3038,7 @@ archive/issue_comments_052678.json:
 }
 ```
 
-Attachment
+Attachment [trac_6495-part4-interrupts.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495-part4-interrupts.patch) by jhpalmieri created at 2012-10-19 17:21:46
 
 Rebased to #13143 and Sage 5.4.rc2 (because of changes to builder.py in #13579).
 
@@ -3544,7 +3544,7 @@ I didn't use any code from this ticket, I only used the patch you linked to for 
 archive/issue_comments_052702.json:
 ```json
 {
-    "body": "Attachment\n\napply third",
+    "body": "Attachment [trac_6495-part3-the-remaining-vs-5.4.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495-part3-the-remaining-vs-5.4.patch) by jhpalmieri created at 2013-01-18 06:41:08\n\napply third",
     "created_at": "2013-01-18T06:41:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -3553,7 +3553,7 @@ archive/issue_comments_052702.json:
 }
 ```
 
-Attachment
+Attachment [trac_6495-part3-the-remaining-vs-5.4.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495-part3-the-remaining-vs-5.4.patch) by jhpalmieri created at 2013-01-18 06:41:08
 
 apply third
 
@@ -3772,7 +3772,7 @@ sed s-sage/symbolic-calculus/sage/symbolic-
 archive/issue_comments_052711.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6495-redirect_html.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495-redirect_html.patch) by mhansen created at 2013-01-24 16:48:16",
     "created_at": "2013-01-24T16:48:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -3781,7 +3781,7 @@ archive/issue_comments_052711.json:
 }
 ```
 
-Attachment
+Attachment [trac_6495-redirect_html.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495-redirect_html.patch) by mhansen created at 2013-01-24 16:48:16
 
 
 
@@ -3981,7 +3981,7 @@ Florent
 archive/issue_comments_052720.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-6495_silence_warning-fh.patch](tarball://root/attachments/some-uuid/ticket6495/trac-6495_silence_warning-fh.patch) by hivert created at 2013-01-25 12:10:18",
     "created_at": "2013-01-25T12:10:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -3990,7 +3990,7 @@ archive/issue_comments_052720.json:
 }
 ```
 
-Attachment
+Attachment [trac-6495_silence_warning-fh.patch](tarball://root/attachments/some-uuid/ticket6495/trac-6495_silence_warning-fh.patch) by hivert created at 2013-01-25 12:10:18
 
 
 
@@ -4102,7 +4102,7 @@ Positive review without the HTML redirection patch?  (Cf. John's comments above.
 archive/issue_comments_052726.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6495-redirect_html.2.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495-redirect_html.2.patch) by hivert created at 2013-01-25 16:20:11",
     "created_at": "2013-01-25T16:20:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -4111,7 +4111,7 @@ archive/issue_comments_052726.json:
 }
 ```
 
-Attachment
+Attachment [trac_6495-redirect_html.2.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495-redirect_html.2.patch) by hivert created at 2013-01-25 16:20:11
 
 
 
@@ -4161,7 +4161,7 @@ Well, the docstrings are still a bit of a mess. Here's a patch; maybe the last o
 archive/issue_comments_052729.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6495-docstrings.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495-docstrings.patch) by jhpalmieri created at 2013-01-25 16:49:52",
     "created_at": "2013-01-25T16:49:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -4170,7 +4170,7 @@ archive/issue_comments_052729.json:
 }
 ```
 
-Attachment
+Attachment [trac_6495-docstrings.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495-docstrings.patch) by jhpalmieri created at 2013-01-25 16:49:52
 
 
 
@@ -4295,7 +4295,7 @@ everything except "part 1"
 archive/issue_comments_052736.json:
 ```json
 {
-    "body": "Attachment\n\nThis is definitely the most painful patch I've ever put into Sage. It would be a huge relief to have it integrated into sage. So I hope nothing more is blocking it. Is the rebase done with your script ?\n\nFlorent",
+    "body": "Attachment [trac_6495-other-parts.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495-other-parts.patch) by hivert created at 2013-01-27 00:41:46\n\nThis is definitely the most painful patch I've ever put into Sage. It would be a huge relief to have it integrated into sage. So I hope nothing more is blocking it. Is the rebase done with your script ?\n\nFlorent",
     "created_at": "2013-01-27T00:41:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -4304,7 +4304,7 @@ archive/issue_comments_052736.json:
 }
 ```
 
-Attachment
+Attachment [trac_6495-other-parts.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495-other-parts.patch) by hivert created at 2013-01-27 00:41:46
 
 This is definitely the most painful patch I've ever put into Sage. It would be a huge relief to have it integrated into sage. So I hope nothing more is blocking it. Is the rebase done with your script ?
 
@@ -4697,7 +4697,7 @@ script used to generate "part 1" patch
 archive/issue_comments_052751.json:
 ```json
 {
-    "body": "Attachment\n\nThird attempt, now it's the notebook which gives problems:\n\n```\nWARNING: intersphinx inventory '/release/merger/sage-5.7.beta3/devel/sage/doc/output/html/en/reference/notebook/objects.inv' not readable due to ValueError: unknown or unsupported inventory version\n```\n\n\nSo it's certainly not deterministic, but quite likely that **something** goes wrong.",
+    "body": "Attachment [trac_6495-script.sh](tarball://root/attachments/some-uuid/ticket6495/trac_6495-script.sh) by jdemeyer created at 2013-01-29 16:00:29\n\nThird attempt, now it's the notebook which gives problems:\n\n```\nWARNING: intersphinx inventory '/release/merger/sage-5.7.beta3/devel/sage/doc/output/html/en/reference/notebook/objects.inv' not readable due to ValueError: unknown or unsupported inventory version\n```\n\n\nSo it's certainly not deterministic, but quite likely that **something** goes wrong.",
     "created_at": "2013-01-29T16:00:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -4706,7 +4706,7 @@ archive/issue_comments_052751.json:
 }
 ```
 
-Attachment
+Attachment [trac_6495-script.sh](tarball://root/attachments/some-uuid/ticket6495/trac_6495-script.sh) by jdemeyer created at 2013-01-29 16:00:29
 
 Third attempt, now it's the notebook which gives problems:
 
@@ -4902,7 +4902,7 @@ that seem to have not been "translated" properly.
 archive/issue_comments_052759.json:
 ```json
 {
-    "body": "Attachment\n\nInitial patch",
+    "body": "Attachment [trac_6495_output_filter.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495_output_filter.patch) by vbraun created at 2013-01-31 12:49:21\n\nInitial patch",
     "created_at": "2013-01-31T12:49:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -4911,7 +4911,7 @@ archive/issue_comments_052759.json:
 }
 ```
 
-Attachment
+Attachment [trac_6495_output_filter.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495_output_filter.patch) by vbraun created at 2013-01-31 12:49:21
 
 Initial patch
 
@@ -4976,7 +4976,7 @@ Done building the documentation!
 archive/issue_comments_052762.json:
 ```json
 {
-    "body": "Attachment\n\nInitial patch",
+    "body": "Attachment [trac_6495_separate_inventory.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495_separate_inventory.patch) by vbraun created at 2013-02-01 11:04:47\n\nInitial patch",
     "created_at": "2013-02-01T11:04:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -4985,7 +4985,7 @@ archive/issue_comments_052762.json:
 }
 ```
 
-Attachment
+Attachment [trac_6495_separate_inventory.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495_separate_inventory.patch) by vbraun created at 2013-02-01 11:04:47
 
 Initial patch
 
@@ -5133,7 +5133,7 @@ Updated patch
 archive/issue_comments_052770.json:
 ```json
 {
-    "body": "Attachment\n\nOk I've now correctly resolved the merge conflict ;-) Just a minor change in the combinat docs, its all fine now.\n\nThe only thing left to review would be my final patch. I made all changes that I wanted, so I'm fine with anything else thats in this ticket.",
+    "body": "Attachment [trac_6495-all-in-one-vb.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495-all-in-one-vb.patch) by vbraun created at 2013-02-01 17:17:43\n\nOk I've now correctly resolved the merge conflict ;-) Just a minor change in the combinat docs, its all fine now.\n\nThe only thing left to review would be my final patch. I made all changes that I wanted, so I'm fine with anything else thats in this ticket.",
     "created_at": "2013-02-01T17:17:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -5142,7 +5142,7 @@ archive/issue_comments_052770.json:
 }
 ```
 
-Attachment
+Attachment [trac_6495-all-in-one-vb.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495-all-in-one-vb.patch) by vbraun created at 2013-02-01 17:17:43
 
 Ok I've now correctly resolved the merge conflict ;-) Just a minor change in the combinat docs, its all fine now.
 
@@ -5337,7 +5337,7 @@ until it finally gets to something which has changed.
 archive/issue_comments_052778.json:
 ```json
 {
-    "body": "Attachment\n\ncombined patch",
+    "body": "Attachment [trac_6495-all-in-one.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495-all-in-one.patch) by jhpalmieri created at 2013-02-06 03:51:18\n\ncombined patch",
     "created_at": "2013-02-06T03:51:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -5346,7 +5346,7 @@ archive/issue_comments_052778.json:
 }
 ```
 
-Attachment
+Attachment [trac_6495-all-in-one.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495-all-in-one.patch) by jhpalmieri created at 2013-02-06 03:51:18
 
 combined patch
 
@@ -5357,7 +5357,7 @@ combined patch
 archive/issue_comments_052779.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6495-filtering.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495-filtering.patch) by jhpalmieri created at 2013-02-06 03:53:01",
     "created_at": "2013-02-06T03:53:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -5366,7 +5366,7 @@ archive/issue_comments_052779.json:
 }
 ```
 
-Attachment
+Attachment [trac_6495-filtering.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495-filtering.patch) by jhpalmieri created at 2013-02-06 03:53:01
 
 
 
@@ -5375,7 +5375,7 @@ Attachment
 archive/issue_comments_052780.json:
 ```json
 {
-    "body": "Attachment\n\nI rebased the patches to 5.7.beta3. The only change of substance: in the \"part2\" patch:\n\n```diff\ndiff --git a/sage/graphs/graph_plot.py b/sage/graphs/graph_plot.py\n--- a/sage/graphs/graph_plot.py\n+++ b/sage/graphs/graph_plot.py\n@@ -106,7 +106,7 @@\n       settings from ``DEFAULT_SHOW_OPTIONS`` only affects ``G.show()``.\n \n     * In order to define a default value permanently, you can add a couple of\n-      lines to :doc:`Sage's startup scripts <../../startup>`. Example ::\n+      lines to `Sage's startup scripts <../../../cmd/startup.html>`_. Example ::\n \n        sage: import sage.graphs.graph_plot\n        sage: sage.graphs.graph_plot.DEFAULT_SHOW_OPTIONS['figsize'] = [4,4]\n```\n\n(The only change to the \"part3\" patch was to change the commit message.) With the newest patch ([attachment:trac_6495-filtering.patch]), all superfluous warnings are suppressed. I'm happy with this now.\n\nI think it might be best to include every single patch, or else credit will not get assigned appropriately; for example, the old \"all in one\" patch combined my work (which is really based on mpatel's, but I don't know how to get his name back in here...) with Florent's.",
+    "body": "Attachment [trac-6495_silence_warning-fh.v2.patch](tarball://root/attachments/some-uuid/ticket6495/trac-6495_silence_warning-fh.v2.patch) by jhpalmieri created at 2013-02-06 04:01:38\n\nI rebased the patches to 5.7.beta3. The only change of substance: in the \"part2\" patch:\n\n```diff\ndiff --git a/sage/graphs/graph_plot.py b/sage/graphs/graph_plot.py\n--- a/sage/graphs/graph_plot.py\n+++ b/sage/graphs/graph_plot.py\n@@ -106,7 +106,7 @@\n       settings from ``DEFAULT_SHOW_OPTIONS`` only affects ``G.show()``.\n \n     * In order to define a default value permanently, you can add a couple of\n-      lines to :doc:`Sage's startup scripts <../../startup>`. Example ::\n+      lines to `Sage's startup scripts <../../../cmd/startup.html>`_. Example ::\n \n        sage: import sage.graphs.graph_plot\n        sage: sage.graphs.graph_plot.DEFAULT_SHOW_OPTIONS['figsize'] = [4,4]\n```\n\n(The only change to the \"part3\" patch was to change the commit message.) With the newest patch ([attachment:trac_6495-filtering.patch]), all superfluous warnings are suppressed. I'm happy with this now.\n\nI think it might be best to include every single patch, or else credit will not get assigned appropriately; for example, the old \"all in one\" patch combined my work (which is really based on mpatel's, but I don't know how to get his name back in here...) with Florent's.",
     "created_at": "2013-02-06T04:01:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -5384,7 +5384,7 @@ archive/issue_comments_052780.json:
 }
 ```
 
-Attachment
+Attachment [trac-6495_silence_warning-fh.v2.patch](tarball://root/attachments/some-uuid/ticket6495/trac-6495_silence_warning-fh.v2.patch) by jhpalmieri created at 2013-02-06 04:01:38
 
 I rebased the patches to 5.7.beta3. The only change of substance: in the "part2" patch:
 
@@ -5414,7 +5414,7 @@ I think it might be best to include every single patch, or else credit will not 
 archive/issue_comments_052781.json:
 ```json
 {
-    "body": "Attachment\n\napply first",
+    "body": "Attachment [trac_6495-part1-moving-files.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495-part1-moving-files.patch) by jhpalmieri created at 2013-02-09 21:57:18\n\napply first",
     "created_at": "2013-02-09T21:57:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -5423,7 +5423,7 @@ archive/issue_comments_052781.json:
 }
 ```
 
-Attachment
+Attachment [trac_6495-part1-moving-files.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495-part1-moving-files.patch) by jhpalmieri created at 2013-02-09 21:57:18
 
 apply first
 
@@ -5434,7 +5434,7 @@ apply first
 archive/issue_comments_052782.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6495-script-jhp.sh](tarball://root/attachments/some-uuid/ticket6495/trac_6495-script-jhp.sh) by jhpalmieri created at 2013-02-09 21:58:22",
     "created_at": "2013-02-09T21:58:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -5443,7 +5443,7 @@ archive/issue_comments_052782.json:
 }
 ```
 
-Attachment
+Attachment [trac_6495-script-jhp.sh](tarball://root/attachments/some-uuid/ticket6495/trac_6495-script-jhp.sh) by jhpalmieri created at 2013-02-09 21:58:22
 
 
 
@@ -5491,7 +5491,7 @@ Rebased to Sage 5.7.beta4 (because of the recently added file `doc/en/reference/
 archive/issue_comments_052785.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6495-part3-the-remaining-vs-5.7.beta4.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495-part3-the-remaining-vs-5.7.beta4.patch) by jhpalmieri created at 2013-02-09 22:04:36",
     "created_at": "2013-02-09T22:04:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -5500,7 +5500,7 @@ archive/issue_comments_052785.json:
 }
 ```
 
-Attachment
+Attachment [trac_6495-part3-the-remaining-vs-5.7.beta4.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495-part3-the-remaining-vs-5.7.beta4.patch) by jhpalmieri created at 2013-02-09 22:04:36
 
 
 
@@ -5717,7 +5717,7 @@ apply first
 archive/issue_comments_052796.json:
 ```json
 {
-    "body": "Attachment\n\n[attachment:trac_6495-script-jhp.2.sh] is identical to the old script; it can be deleted. (Why can't I delete my own attachments?)",
+    "body": "Attachment [trac_6495-part1-moving-files-link.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495-part1-moving-files-link.patch) by jhpalmieri created at 2013-02-10 03:29:55\n\n[attachment:trac_6495-script-jhp.2.sh] is identical to the old script; it can be deleted. (Why can't I delete my own attachments?)",
     "created_at": "2013-02-10T03:29:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -5726,7 +5726,7 @@ archive/issue_comments_052796.json:
 }
 ```
 
-Attachment
+Attachment [trac_6495-part1-moving-files-link.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495-part1-moving-files-link.patch) by jhpalmieri created at 2013-02-10 03:29:55
 
 [attachment:trac_6495-script-jhp.2.sh] is identical to the old script; it can be deleted. (Why can't I delete my own attachments?)
 
@@ -5737,7 +5737,7 @@ Attachment
 archive/issue_comments_052797.json:
 ```json
 {
-    "body": "Attachment\n\nscript used to generate \"part 1\" patch",
+    "body": "Attachment [trac_6495-script-jhp-link.sh](tarball://root/attachments/some-uuid/ticket6495/trac_6495-script-jhp-link.sh) by jhpalmieri created at 2013-02-10 03:30:10\n\nscript used to generate \"part 1\" patch",
     "created_at": "2013-02-10T03:30:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -5746,7 +5746,7 @@ archive/issue_comments_052797.json:
 }
 ```
 
-Attachment
+Attachment [trac_6495-script-jhp-link.sh](tarball://root/attachments/some-uuid/ticket6495/trac_6495-script-jhp-link.sh) by jhpalmieri created at 2013-02-10 03:30:10
 
 script used to generate "part 1" patch
 
@@ -6154,7 +6154,7 @@ Looks reasonable to me.
 archive/issue_comments_052814.json:
 ```json
 {
-    "body": "Attachment\n\nLog file of troublesome build",
+    "body": "Attachment [dochtml.log](tarball://root/attachments/some-uuid/ticket6495/dochtml.log) by jdemeyer created at 2013-02-13 11:09:18\n\nLog file of troublesome build",
     "created_at": "2013-02-13T11:09:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -6163,7 +6163,7 @@ archive/issue_comments_052814.json:
 }
 ```
 
-Attachment
+Attachment [dochtml.log](tarball://root/attachments/some-uuid/ticket6495/dochtml.log) by jdemeyer created at 2013-02-13 11:09:18
 
 Log file of troublesome build
 
@@ -6372,7 +6372,7 @@ patch for Sphinx spkg; for review only
 archive/issue_comments_052822.json:
 ```json
 {
-    "body": "Attachment\n\nThanks, looks good and works for me. Hopefully that was the last race in Sphinx, fingers crossed ;-)",
+    "body": "Attachment [trac_6495-sphinx-grammar.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495-sphinx-grammar.patch) by vbraun created at 2013-02-13 20:26:00\n\nThanks, looks good and works for me. Hopefully that was the last race in Sphinx, fingers crossed ;-)",
     "created_at": "2013-02-13T20:26:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -6381,7 +6381,7 @@ archive/issue_comments_052822.json:
 }
 ```
 
-Attachment
+Attachment [trac_6495-sphinx-grammar.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495-sphinx-grammar.patch) by vbraun created at 2013-02-13 20:26:00
 
 Thanks, looks good and works for me. Hopefully that was the last race in Sphinx, fingers crossed ;-)
 
@@ -6575,7 +6575,7 @@ apply second
 archive/issue_comments_052832.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated patch",
+    "body": "Attachment [trac_6495_fixes.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495_fixes.patch) by vbraun created at 2013-02-15 20:29:52\n\nUpdated patch",
     "created_at": "2013-02-15T20:29:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -6584,7 +6584,7 @@ archive/issue_comments_052832.json:
 }
 ```
 
-Attachment
+Attachment [trac_6495_fixes.patch](tarball://root/attachments/some-uuid/ticket6495/trac_6495_fixes.patch) by vbraun created at 2013-02-15 20:29:52
 
 Updated patch
 

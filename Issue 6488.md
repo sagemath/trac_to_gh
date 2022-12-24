@@ -51,7 +51,7 @@ Here's a patch.  Is it accurate (especially the part about having jsMath install
 archive/issue_comments_052464.json:
 ```json
 {
-    "body": "Attachment\n\nI apologize for not posting a note here earlier, but the latest changeset at #6187 \"documents\" the `--jsmath` flag and several new command-line options for `sage -docbuild`.  Of course, that approach may not be right, but if it's OK, should we modify it, instead?",
+    "body": "Attachment [trac_6488-jsmath.patch](tarball://root/attachments/some-uuid/ticket6488/trac_6488-jsmath.patch) by mpatel created at 2009-07-22 04:21:40\n\nI apologize for not posting a note here earlier, but the latest changeset at #6187 \"documents\" the `--jsmath` flag and several new command-line options for `sage -docbuild`.  Of course, that approach may not be right, but if it's OK, should we modify it, instead?",
     "created_at": "2009-07-22T04:21:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6488",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_052464.json:
 }
 ```
 
-Attachment
+Attachment [trac_6488-jsmath.patch](tarball://root/attachments/some-uuid/ticket6488/trac_6488-jsmath.patch) by mpatel created at 2009-07-22 04:21:40
 
 I apologize for not posting a note here earlier, but the latest changeset at #6187 "documents" the `--jsmath` flag and several new command-line options for `sage -docbuild`.  Of course, that approach may not be right, but if it's OK, should we modify it, instead?
 

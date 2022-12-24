@@ -90,7 +90,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/10000
 archive/issue_comments_100458.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [gsl-1.14.log](tarball://root/attachments/some-uuid/ticket10000/gsl-1.14.log) by drkirkby created at 2010-09-24 02:42:29",
     "created_at": "2010-09-24T02:42:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9999",
     "type": "issue_comment",
@@ -99,7 +99,7 @@ archive/issue_comments_100458.json:
 }
 ```
 
-Attachment
+Attachment [gsl-1.14.log](tarball://root/attachments/some-uuid/ticket10000/gsl-1.14.log) by drkirkby created at 2010-09-24 02:42:29
 
 
 
@@ -414,7 +414,7 @@ Dave
 archive/issue_comments_100468.json:
 ```json
 {
-    "body": "Attachment\n\n/usr/include/float.h from an RS/6000 7025 F50 running AIX 5.3 (This is a 32-bit PowerPC server)",
+    "body": "Attachment [float.h](tarball://root/attachments/some-uuid/ticket10000/float.h) by drkirkby created at 2010-09-27 12:46:26\n\n/usr/include/float.h from an RS/6000 7025 F50 running AIX 5.3 (This is a 32-bit PowerPC server)",
     "created_at": "2010-09-27T12:46:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9999",
     "type": "issue_comment",
@@ -423,7 +423,7 @@ archive/issue_comments_100468.json:
 }
 ```
 
-Attachment
+Attachment [float.h](tarball://root/attachments/some-uuid/ticket10000/float.h) by drkirkby created at 2010-09-27 12:46:26
 
 /usr/include/float.h from an RS/6000 7025 F50 running AIX 5.3 (This is a 32-bit PowerPC server)
 
@@ -553,7 +553,7 @@ Unified diff patch for configure.ac, which upstram developers have commited, so 
 archive/issue_comments_100474.json:
 ```json
 {
-    "body": "Attachment\n\nUnified diff patch for fp-aix.c, which upstram developers have commited, so will be in the next GSL relese",
+    "body": "Attachment [configure.ac.patch](tarball://root/attachments/some-uuid/ticket10000/configure.ac.patch) by drkirkby created at 2010-11-06 15:43:21\n\nUnified diff patch for fp-aix.c, which upstram developers have commited, so will be in the next GSL relese",
     "created_at": "2010-11-06T15:43:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9999",
     "type": "issue_comment",
@@ -562,7 +562,7 @@ archive/issue_comments_100474.json:
 }
 ```
 
-Attachment
+Attachment [configure.ac.patch](tarball://root/attachments/some-uuid/ticket10000/configure.ac.patch) by drkirkby created at 2010-11-06 15:43:21
 
 Unified diff patch for fp-aix.c, which upstram developers have commited, so will be in the next GSL relese
 
@@ -573,7 +573,7 @@ Unified diff patch for fp-aix.c, which upstram developers have commited, so will
 archive/issue_comments_100475.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [fp-aix.c.patch](tarball://root/attachments/some-uuid/ticket10000/fp-aix.c.patch) by fbissey created at 2011-03-17 01:33:57",
     "created_at": "2011-03-17T01:33:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9999",
     "type": "issue_comment",
@@ -582,7 +582,7 @@ archive/issue_comments_100475.json:
 }
 ```
 
-Attachment
+Attachment [fp-aix.c.patch](tarball://root/attachments/some-uuid/ticket10000/fp-aix.c.patch) by fbissey created at 2011-03-17 01:33:57
 
 
 
@@ -591,7 +591,7 @@ Attachment
 archive/issue_comments_100476.json:
 ```json
 {
-    "body": "Attachment\n\nMercurial patch that includes 1) Two patches which are applied by GNU patch 2) Changes to spkg-install to apply the patches. 3) A new 'configure' script. The latter makes this patch large",
+    "body": "Attachment [gsl-fixes-for-AIX.patch](tarball://root/attachments/some-uuid/ticket10000/gsl-fixes-for-AIX.patch) by drkirkby created at 2011-03-23 23:13:59\n\nMercurial patch that includes 1) Two patches which are applied by GNU patch 2) Changes to spkg-install to apply the patches. 3) A new 'configure' script. The latter makes this patch large",
     "created_at": "2011-03-23T23:13:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9999",
     "type": "issue_comment",
@@ -600,7 +600,7 @@ archive/issue_comments_100476.json:
 }
 ```
 
-Attachment
+Attachment [gsl-fixes-for-AIX.patch](tarball://root/attachments/some-uuid/ticket10000/gsl-fixes-for-AIX.patch) by drkirkby created at 2011-03-23 23:13:59
 
 Mercurial patch that includes 1) Two patches which are applied by GNU patch 2) Changes to spkg-install to apply the patches. 3) A new 'configure' script. The latter makes this patch large
 

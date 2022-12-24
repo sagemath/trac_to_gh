@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8876
 archive/issue_comments_081571.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8876-triangular_morphisms_improve-fh.patch](tarball://root/attachments/some-uuid/ticket8876/trac_8876-triangular_morphisms_improve-fh.patch) by hivert created at 2010-06-02 10:15:19",
     "created_at": "2010-06-02T10:15:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8876",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_081571.json:
 }
 ```
 
-Attachment
+Attachment [trac_8876-triangular_morphisms_improve-fh.patch](tarball://root/attachments/some-uuid/ticket8876/trac_8876-triangular_morphisms_improve-fh.patch) by hivert created at 2010-06-02 10:15:19
 
 
 
@@ -69,7 +69,7 @@ Changing status from new to needs_review.
 archive/issue_comments_081573.json:
 ```json
 {
-    "body": "Attachment\n\nHi Florent, I found some issues with the file as I was going through it, which I've fixed in the attached reviewer patch. (Many were probably my fault to begin with.)  Everything else looks good to me.  If you approve my reviewer patch and verify that all tests pass on massena without prereqs, you can set a positive review.  (I will post my reviewer patch on the combinat queue immediately below yours right now.)",
+    "body": "Attachment [trac_8876-reviewer_patch-jb.patch](tarball://root/attachments/some-uuid/ticket8876/trac_8876-reviewer_patch-jb.patch) by jbandlow created at 2010-06-03 22:44:36\n\nHi Florent, I found some issues with the file as I was going through it, which I've fixed in the attached reviewer patch. (Many were probably my fault to begin with.)  Everything else looks good to me.  If you approve my reviewer patch and verify that all tests pass on massena without prereqs, you can set a positive review.  (I will post my reviewer patch on the combinat queue immediately below yours right now.)",
     "created_at": "2010-06-03T22:44:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8876",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_081573.json:
 }
 ```
 
-Attachment
+Attachment [trac_8876-reviewer_patch-jb.patch](tarball://root/attachments/some-uuid/ticket8876/trac_8876-reviewer_patch-jb.patch) by jbandlow created at 2010-06-03 22:44:36
 
 Hi Florent, I found some issues with the file as I was going through it, which I've fixed in the attached reviewer patch. (Many were probably my fault to begin with.)  Everything else looks good to me.  If you approve my reviewer patch and verify that all tests pass on massena without prereqs, you can set a positive review.  (I will post my reviewer patch on the combinat queue immediately below yours right now.)
 

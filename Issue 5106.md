@@ -257,7 +257,7 @@ The rebase issue was #4405, which was independently resolved by this patch.
 archive/issue_comments_039007.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5106-preparse-gens.patch](tarball://root/attachments/some-uuid/ticket5106/5106-preparse-gens.patch) by robertwb created at 2009-02-15 09:19:31",
     "created_at": "2009-02-15T09:19:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5106",
     "type": "issue_comment",
@@ -266,7 +266,7 @@ archive/issue_comments_039007.json:
 }
 ```
 
-Attachment
+Attachment [5106-preparse-gens.patch](tarball://root/attachments/some-uuid/ticket5106/5106-preparse-gens.patch) by robertwb created at 2009-02-15 09:19:31
 
 
 
@@ -310,7 +310,7 @@ Michael
 archive/issue_comments_039009.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5106-preparse-gens-rebase.patch](tarball://root/attachments/some-uuid/ticket5106/5106-preparse-gens-rebase.patch) by robertwb created at 2009-02-17 06:37:28",
     "created_at": "2009-02-17T06:37:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5106",
     "type": "issue_comment",
@@ -319,7 +319,7 @@ archive/issue_comments_039009.json:
 }
 ```
 
-Attachment
+Attachment [5106-preparse-gens-rebase.patch](tarball://root/attachments/some-uuid/ticket5106/5106-preparse-gens-rebase.patch) by robertwb created at 2009-02-17 06:37:28
 
 
 
@@ -396,7 +396,7 @@ Hmm... I'll look at this in a moment.
 archive/issue_comments_039013.json:
 ```json
 {
-    "body": "Attachment\n\nOK, I've resolved the issue above.",
+    "body": "Attachment [5106-fix.patch](tarball://root/attachments/some-uuid/ticket5106/5106-fix.patch) by robertwb created at 2009-02-17 12:16:23\n\nOK, I've resolved the issue above.",
     "created_at": "2009-02-17T12:16:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5106",
     "type": "issue_comment",
@@ -405,7 +405,7 @@ archive/issue_comments_039013.json:
 }
 ```
 
-Attachment
+Attachment [5106-fix.patch](tarball://root/attachments/some-uuid/ticket5106/5106-fix.patch) by robertwb created at 2009-02-17 12:16:23
 
 OK, I've resolved the issue above.
 

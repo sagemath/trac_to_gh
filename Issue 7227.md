@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7227
 archive/issue_comments_059940.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7227_word_factor_complexity-sl.patch](tarball://root/attachments/some-uuid/ticket7227/trac_7227_word_factor_complexity-sl.patch) by slabbe created at 2009-10-15 14:33:06",
     "created_at": "2009-10-15T14:33:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7227",
     "type": "issue_comment",
@@ -50,7 +50,7 @@ archive/issue_comments_059940.json:
 }
 ```
 
-Attachment
+Attachment [trac_7227_word_factor_complexity-sl.patch](tarball://root/attachments/some-uuid/ticket7227/trac_7227_word_factor_complexity-sl.patch) by slabbe created at 2009-10-15 14:33:06
 
 
 
@@ -141,7 +141,7 @@ Changing status from new to needs_review.
 archive/issue_comments_059943.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7227_edge_labels-sl.patch](tarball://root/attachments/some-uuid/ticket7227/trac_7227_edge_labels-sl.patch) by slabbe created at 2009-10-20 11:29:10",
     "created_at": "2009-10-20T11:29:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7227",
     "type": "issue_comment",
@@ -150,7 +150,7 @@ archive/issue_comments_059943.json:
 }
 ```
 
-Attachment
+Attachment [trac_7227_edge_labels-sl.patch](tarball://root/attachments/some-uuid/ticket7227/trac_7227_edge_labels-sl.patch) by slabbe created at 2009-10-20 11:29:10
 
 
 
@@ -252,7 +252,7 @@ sage: timeit('d = {}\nfor i in range(200):\n  d[i]=[]\n  for j in range(200):\n 
 archive/issue_comments_059948.json:
 ```json
 {
-    "body": "Attachment\n\nApplies over the precedent 2 patches.",
+    "body": "Attachment [trac_7227_add_edge-sl.patch](tarball://root/attachments/some-uuid/ticket7227/trac_7227_add_edge-sl.patch) by slabbe created at 2009-10-29 14:40:42\n\nApplies over the precedent 2 patches.",
     "created_at": "2009-10-29T14:40:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7227",
     "type": "issue_comment",
@@ -261,7 +261,7 @@ archive/issue_comments_059948.json:
 }
 ```
 
-Attachment
+Attachment [trac_7227_add_edge-sl.patch](tarball://root/attachments/some-uuid/ticket7227/trac_7227_add_edge-sl.patch) by slabbe created at 2009-10-29 14:40:42
 
 Applies over the precedent 2 patches.
 

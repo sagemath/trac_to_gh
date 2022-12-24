@@ -105,7 +105,7 @@ It would be worth spelling "occurred" correctly too.  Otherwise ok, of course.
 archive/issue_comments_082619.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-8964-two-typos.patch](tarball://root/attachments/some-uuid/ticket8964/trac-8964-two-typos.patch) by jason created at 2010-05-14 19:24:56",
     "created_at": "2010-05-14T19:24:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8964",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_082619.json:
 }
 ```
 
-Attachment
+Attachment [trac-8964-two-typos.patch](tarball://root/attachments/some-uuid/ticket8964/trac-8964-two-typos.patch) by jason created at 2010-05-14 19:24:56
 
 
 

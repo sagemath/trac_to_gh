@@ -60,7 +60,7 @@ new README.txt file, based on Sage 4.3.alpha0
 archive/issue_comments_064377.json:
 ```json
 {
-    "body": "Attachment\n\ndifferences between old and new README.txt files; do not apply",
+    "body": "Attachment [readme.patch](tarball://root/attachments/some-uuid/ticket7565/readme.patch) by mvngu created at 2009-11-30 23:19:39\n\ndifferences between old and new README.txt files; do not apply",
     "created_at": "2009-11-30T23:19:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7565",
     "type": "issue_comment",
@@ -69,7 +69,7 @@ archive/issue_comments_064377.json:
 }
 ```
 
-Attachment
+Attachment [readme.patch](tarball://root/attachments/some-uuid/ticket7565/readme.patch) by mvngu created at 2009-11-30 23:19:39
 
 differences between old and new README.txt files; do not apply
 

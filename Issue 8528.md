@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8528
 archive/issue_comments_077065.json:
 ```json
 {
-    "body": "Attachment\n\nbased on Sage 4.3.4.alpha1",
+    "body": "Attachment [trac_8528-typo.patch](tarball://root/attachments/some-uuid/ticket8528/trac_8528-typo.patch) by mvngu created at 2010-03-14 00:39:35\n\nbased on Sage 4.3.4.alpha1",
     "created_at": "2010-03-14T00:39:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8528",
     "type": "issue_comment",
@@ -49,7 +49,7 @@ archive/issue_comments_077065.json:
 }
 ```
 
-Attachment
+Attachment [trac_8528-typo.patch](tarball://root/attachments/some-uuid/ticket8528/trac_8528-typo.patch) by mvngu created at 2010-03-14 00:39:35
 
 based on Sage 4.3.4.alpha1
 
@@ -132,7 +132,7 @@ apply on top of other patch
 archive/issue_comments_077070.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8528-doctests.patch](tarball://root/attachments/some-uuid/ticket8528/trac_8528-doctests.patch) by mvngu created at 2010-03-14 06:23:43",
     "created_at": "2010-03-14T06:23:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8528",
     "type": "issue_comment",
@@ -141,7 +141,7 @@ archive/issue_comments_077070.json:
 }
 ```
 
-Attachment
+Attachment [trac_8528-doctests.patch](tarball://root/attachments/some-uuid/ticket8528/trac_8528-doctests.patch) by mvngu created at 2010-03-14 06:23:43
 
 
 

@@ -45,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7858
 archive/issue_comments_068104.json:
 ```json
 {
-    "body": "Attachment\n\nUse proper `Content-Type`.  Explicitly declare vars.  sagenb repo.",
+    "body": "Attachment [trac_7858-key_binding_vars.patch](tarball://root/attachments/some-uuid/ticket7858/trac_7858-key_binding_vars.patch) by mpatel created at 2010-01-06 19:28:01\n\nUse proper `Content-Type`.  Explicitly declare vars.  sagenb repo.",
     "created_at": "2010-01-06T19:28:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7858",
     "type": "issue_comment",
@@ -54,7 +54,7 @@ archive/issue_comments_068104.json:
 }
 ```
 
-Attachment
+Attachment [trac_7858-key_binding_vars.patch](tarball://root/attachments/some-uuid/ticket7858/trac_7858-key_binding_vars.patch) by mpatel created at 2010-01-06 19:28:01
 
 Use proper `Content-Type`.  Explicitly declare vars.  sagenb repo.
 
@@ -229,7 +229,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_068114.json:
 ```json
 {
-    "body": "Attachment\n\nV2 *should* preserve the bindings.  I mistrans*ed from #7666.  I apologize for this.",
+    "body": "Attachment [trac_7858-key_binding_vars_v2.patch](tarball://root/attachments/some-uuid/ticket7858/trac_7858-key_binding_vars_v2.patch) by mpatel created at 2010-01-06 20:21:07\n\nV2 *should* preserve the bindings.  I mistrans*ed from #7666.  I apologize for this.",
     "created_at": "2010-01-06T20:21:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7858",
     "type": "issue_comment",
@@ -238,7 +238,7 @@ archive/issue_comments_068114.json:
 }
 ```
 
-Attachment
+Attachment [trac_7858-key_binding_vars_v2.patch](tarball://root/attachments/some-uuid/ticket7858/trac_7858-key_binding_vars_v2.patch) by mpatel created at 2010-01-06 20:21:07
 
 V2 *should* preserve the bindings.  I mistrans*ed from #7666.  I apologize for this.
 

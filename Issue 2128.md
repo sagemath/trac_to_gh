@@ -90,7 +90,7 @@ Michael
 archive/issue_comments_013964.json:
 ```json
 {
-    "body": "Attachment\n\nI've added the doctests and replaced the patch.",
+    "body": "Attachment [2128-random_prime.patch](tarball://root/attachments/some-uuid/ticket2128/2128-random_prime.patch) by AlexGhitza created at 2008-02-17 18:49:30\n\nI've added the doctests and replaced the patch.",
     "created_at": "2008-02-17T18:49:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2128",
     "type": "issue_comment",
@@ -99,7 +99,7 @@ archive/issue_comments_013964.json:
 }
 ```
 
-Attachment
+Attachment [2128-random_prime.patch](tarball://root/attachments/some-uuid/ticket2128/2128-random_prime.patch) by AlexGhitza created at 2008-02-17 18:49:30
 
 I've added the doctests and replaced the patch.
 

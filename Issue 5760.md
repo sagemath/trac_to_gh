@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5760
 archive/issue_comments_045022.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5760-shapes-doctests.patch](tarball://root/attachments/some-uuid/ticket5760/5760-shapes-doctests.patch) by robertwb created at 2009-04-11 23:56:14",
     "created_at": "2009-04-11T23:56:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5760",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_045022.json:
 }
 ```
 
-Attachment
+Attachment [5760-shapes-doctests.patch](tarball://root/attachments/some-uuid/ticket5760/5760-shapes-doctests.patch) by robertwb created at 2009-04-11 23:56:14
 
 
 

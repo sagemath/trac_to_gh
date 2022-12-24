@@ -132,7 +132,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_070967.json:
 ```json
 {
-    "body": "Attachment\n\ntested on sage-4.3.1",
+    "body": "Attachment [trac_8095_wordmorph_is_primitive-sl.patch](tarball://root/attachments/some-uuid/ticket8095/trac_8095_wordmorph_is_primitive-sl.patch) by slabbe created at 2010-01-29 14:23:05\n\ntested on sage-4.3.1",
     "created_at": "2010-01-29T14:23:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8095",
     "type": "issue_comment",
@@ -141,7 +141,7 @@ archive/issue_comments_070967.json:
 }
 ```
 
-Attachment
+Attachment [trac_8095_wordmorph_is_primitive-sl.patch](tarball://root/attachments/some-uuid/ticket8095/trac_8095_wordmorph_is_primitive-sl.patch) by slabbe created at 2010-01-29 14:23:05
 
 tested on sage-4.3.1
 

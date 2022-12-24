@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2836
 archive/issue_comments_019460.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [conch_deprecated_warnings.patch](tarball://root/attachments/some-uuid/ticket2836/conch_deprecated_warnings.patch) by yi created at 2008-04-07 00:11:40",
     "created_at": "2008-04-07T00:11:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2836",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_019460.json:
 }
 ```
 
-Attachment
+Attachment [conch_deprecated_warnings.patch](tarball://root/attachments/some-uuid/ticket2836/conch_deprecated_warnings.patch) by yi created at 2008-04-07 00:11:40
 
 
 

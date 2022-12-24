@@ -60,7 +60,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8387
 archive/issue_comments_075066.json:
 ```json
 {
-    "body": "Attachment\n\n\"address\" --> \"interface\".  sagenb repo.",
+    "body": "Attachment [trac_8387-nb_object_docstring.patch](tarball://root/attachments/some-uuid/ticket8387/trac_8387-nb_object_docstring.patch) by mpatel created at 2010-02-27 23:17:33\n\n\"address\" --> \"interface\".  sagenb repo.",
     "created_at": "2010-02-27T23:17:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8387",
     "type": "issue_comment",
@@ -69,7 +69,7 @@ archive/issue_comments_075066.json:
 }
 ```
 
-Attachment
+Attachment [trac_8387-nb_object_docstring.patch](tarball://root/attachments/some-uuid/ticket8387/trac_8387-nb_object_docstring.patch) by mpatel created at 2010-02-27 23:17:33
 
 "address" --> "interface".  sagenb repo.
 
@@ -155,7 +155,7 @@ There is no such chapter/section in the Installation Guide. Could you remove any
 archive/issue_comments_075071.json:
 ```json
 {
-    "body": "Attachment\n\nDon't refer to non-existent chapter.  Nicer wiki links.  Replaces previous.",
+    "body": "Attachment [trac_8387-nb_object_docstring.2.patch](tarball://root/attachments/some-uuid/ticket8387/trac_8387-nb_object_docstring.2.patch) by mpatel created at 2010-02-28 00:04:29\n\nDon't refer to non-existent chapter.  Nicer wiki links.  Replaces previous.",
     "created_at": "2010-02-28T00:04:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8387",
     "type": "issue_comment",
@@ -164,7 +164,7 @@ archive/issue_comments_075071.json:
 }
 ```
 
-Attachment
+Attachment [trac_8387-nb_object_docstring.2.patch](tarball://root/attachments/some-uuid/ticket8387/trac_8387-nb_object_docstring.2.patch) by mpatel created at 2010-02-28 00:04:29
 
 Don't refer to non-existent chapter.  Nicer wiki links.  Replaces previous.
 

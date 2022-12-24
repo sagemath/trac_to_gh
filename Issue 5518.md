@@ -45,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5518
 archive/issue_comments_042888.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [multiplicative_order.patch](tarball://root/attachments/some-uuid/ticket5518/multiplicative_order.patch) by cremona created at 2009-03-14 20:35:19",
     "created_at": "2009-03-14T20:35:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5518",
     "type": "issue_comment",
@@ -54,7 +54,7 @@ archive/issue_comments_042888.json:
 }
 ```
 
-Attachment
+Attachment [multiplicative_order.patch](tarball://root/attachments/some-uuid/ticket5518/multiplicative_order.patch) by cremona created at 2009-03-14 20:35:19
 
 
 
@@ -128,7 +128,7 @@ Changing priority from minor to major.
 archive/issue_comments_042892.json:
 ```json
 {
-    "body": "Attachment\n\nI added a small patch with the additional doctest as suggested.",
+    "body": "Attachment [trac_5518.patch](tarball://root/attachments/some-uuid/ticket5518/trac_5518.patch) by cremona created at 2009-03-17 22:10:29\n\nI added a small patch with the additional doctest as suggested.",
     "created_at": "2009-03-17T22:10:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5518",
     "type": "issue_comment",
@@ -137,7 +137,7 @@ archive/issue_comments_042892.json:
 }
 ```
 
-Attachment
+Attachment [trac_5518.patch](tarball://root/attachments/some-uuid/ticket5518/trac_5518.patch) by cremona created at 2009-03-17 22:10:29
 
 I added a small patch with the additional doctest as suggested.
 

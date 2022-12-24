@@ -50,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/995
 archive/issue_comments_006061.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [995b.patch](tarball://root/attachments/some-uuid/ticket995/995b.patch) by cwitty created at 2007-11-04 03:54:47",
     "created_at": "2007-11-04T03:54:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/995",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_006061.json:
 }
 ```
 
-Attachment
+Attachment [995b.patch](tarball://root/attachments/some-uuid/ticket995/995b.patch) by cwitty created at 2007-11-04 03:54:47
 
 
 

@@ -57,7 +57,7 @@ support disabling chain rule for symbolic functions
 archive/issue_comments_052249.json:
 ```json
 {
-    "body": "Attachment\n\nattachment:trac_6465-chain_rule.patch adds support for disabling chain rule for symbolic functions. It depends on the new pynac package here:\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.8.p2.spkg",
+    "body": "Attachment [trac_6465-chain_rule.patch](tarball://root/attachments/some-uuid/ticket6465/trac_6465-chain_rule.patch) by burcin created at 2009-08-01 02:38:24\n\nattachment:trac_6465-chain_rule.patch adds support for disabling chain rule for symbolic functions. It depends on the new pynac package here:\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.8.p2.spkg",
     "created_at": "2009-08-01T02:38:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_052249.json:
 }
 ```
 
-Attachment
+Attachment [trac_6465-chain_rule.patch](tarball://root/attachments/some-uuid/ticket6465/trac_6465-chain_rule.patch) by burcin created at 2009-08-01 02:38:24
 
 attachment:trac_6465-chain_rule.patch adds support for disabling chain rule for symbolic functions. It depends on the new pynac package here:
 
@@ -79,7 +79,7 @@ http://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.8.p2.spkg
 archive/issue_comments_052250.json:
 ```json
 {
-    "body": "Attachment\n\nShould be applied after the chain-rule patch",
+    "body": "Attachment [trac_6465-moves-integration-into-sfunction-subclass.patch](tarball://root/attachments/some-uuid/ticket6465/trac_6465-moves-integration-into-sfunction-subclass.patch) by gmhossain created at 2009-08-21 17:24:43\n\nShould be applied after the chain-rule patch",
     "created_at": "2009-08-21T17:24:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_052250.json:
 }
 ```
 
-Attachment
+Attachment [trac_6465-moves-integration-into-sfunction-subclass.patch](tarball://root/attachments/some-uuid/ticket6465/trac_6465-moves-integration-into-sfunction-subclass.patch) by gmhossain created at 2009-08-21 17:24:43
 
 Should be applied after the chain-rule patch
 
@@ -267,7 +267,7 @@ rebased to 4.3.rc0
 archive/issue_comments_052258.json:
 ```json
 {
-    "body": "Attachment\n\nrebased to 4.3.1.rc0",
+    "body": "Attachment [trac_6465-chain_rule.take2.patch](tarball://root/attachments/some-uuid/ticket6465/trac_6465-chain_rule.take2.patch) by burcin created at 2010-01-19 10:21:39\n\nrebased to 4.3.1.rc0",
     "created_at": "2010-01-19T10:21:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_comment",
@@ -276,7 +276,7 @@ archive/issue_comments_052258.json:
 }
 ```
 
-Attachment
+Attachment [trac_6465-chain_rule.take2.patch](tarball://root/attachments/some-uuid/ticket6465/trac_6465-chain_rule.take2.patch) by burcin created at 2010-01-19 10:21:39
 
 rebased to 4.3.1.rc0
 
@@ -287,7 +287,7 @@ rebased to 4.3.1.rc0
 archive/issue_comments_052259.json:
 ```json
 {
-    "body": "Attachment\n\nreferee patch",
+    "body": "Attachment [trac_6465-moves-integration-into-sfunction-subclass.take2.patch](tarball://root/attachments/some-uuid/ticket6465/trac_6465-moves-integration-into-sfunction-subclass.take2.patch) by burcin created at 2010-01-19 10:22:07\n\nreferee patch",
     "created_at": "2010-01-19T10:22:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_comment",
@@ -296,7 +296,7 @@ archive/issue_comments_052259.json:
 }
 ```
 
-Attachment
+Attachment [trac_6465-moves-integration-into-sfunction-subclass.take2.patch](tarball://root/attachments/some-uuid/ticket6465/trac_6465-moves-integration-into-sfunction-subclass.take2.patch) by burcin created at 2010-01-19 10:22:07
 
 referee patch
 
@@ -307,7 +307,7 @@ referee patch
 archive/issue_comments_052260.json:
 ```json
 {
-    "body": "Attachment\n\nI uploaded new versions of the two old patches, rebased to 4.3.1.rc0, and a referee patch. I consider this ready now, though someone needs to review my changes.\n\nUnfortunately attachment:trac_6465-chain_rule.take2.patch depends on the next version of pynac. I will release that real soon now. :)\n\nThe patches should be applied in this order:\n* attachment:trac_6465-chain_rule.take2.patch\n* attachment:trac_6465-moves-integration-into-sfunction-subclass.take2.patch\n* attachment:trac_6465-integral.patch\n\nThey probably depend on other tickets. ATM, my queue contains: #7822, #6961, #7876, #7363, #7955, #7957, #7916 related to symbolics.",
+    "body": "Attachment [trac_6465-integral.patch](tarball://root/attachments/some-uuid/ticket6465/trac_6465-integral.patch) by burcin created at 2010-01-19 10:33:07\n\nI uploaded new versions of the two old patches, rebased to 4.3.1.rc0, and a referee patch. I consider this ready now, though someone needs to review my changes.\n\nUnfortunately attachment:trac_6465-chain_rule.take2.patch depends on the next version of pynac. I will release that real soon now. :)\n\nThe patches should be applied in this order:\n* attachment:trac_6465-chain_rule.take2.patch\n* attachment:trac_6465-moves-integration-into-sfunction-subclass.take2.patch\n* attachment:trac_6465-integral.patch\n\nThey probably depend on other tickets. ATM, my queue contains: #7822, #6961, #7876, #7363, #7955, #7957, #7916 related to symbolics.",
     "created_at": "2010-01-19T10:33:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_comment",
@@ -316,7 +316,7 @@ archive/issue_comments_052260.json:
 }
 ```
 
-Attachment
+Attachment [trac_6465-integral.patch](tarball://root/attachments/some-uuid/ticket6465/trac_6465-integral.patch) by burcin created at 2010-01-19 10:33:07
 
 I uploaded new versions of the two old patches, rebased to 4.3.1.rc0, and a referee patch. I consider this ready now, though someone needs to review my changes.
 
@@ -770,7 +770,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_052269.json:
 ```json
 {
-    "body": "Attachment\n\nnew version",
+    "body": "Attachment [trac_6465-integral.take2.patch](tarball://root/attachments/some-uuid/ticket6465/trac_6465-integral.take2.patch) by burcin created at 2010-01-31 21:13:20\n\nnew version",
     "created_at": "2010-01-31T21:13:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_comment",
@@ -779,7 +779,7 @@ archive/issue_comments_052269.json:
 }
 ```
 
-Attachment
+Attachment [trac_6465-integral.take2.patch](tarball://root/attachments/some-uuid/ticket6465/trac_6465-integral.take2.patch) by burcin created at 2010-01-31 21:13:20
 
 new version
 
@@ -851,7 +851,7 @@ fix numerical problems in doctests
 archive/issue_comments_052273.json:
 ```json
 {
-    "body": "Attachment\n\nAfter testing on a 32-bit Debian box, I uploaded attachment:trac_6465-integral.take3.patch to replace attachment:trac_6465-integral.take2.patch. The only difference is the `...` used for the trailing digits of the numerical integral on line 188 of `sage/symbolic/integration/integral.py`.\n\nThe patches that need to be applied are: \n* attachment:trac_6465-chain_rule.take2.patch\n* attachment:trac_6465-moves-integration-into-sfunction-subclass.take2.patch\n* attachment:trac_6465-integral.take2.patch",
+    "body": "Attachment [trac_6465-integral.take3.patch](tarball://root/attachments/some-uuid/ticket6465/trac_6465-integral.take3.patch) by burcin created at 2010-02-03 11:57:30\n\nAfter testing on a 32-bit Debian box, I uploaded attachment:trac_6465-integral.take3.patch to replace attachment:trac_6465-integral.take2.patch. The only difference is the `...` used for the trailing digits of the numerical integral on line 188 of `sage/symbolic/integration/integral.py`.\n\nThe patches that need to be applied are: \n* attachment:trac_6465-chain_rule.take2.patch\n* attachment:trac_6465-moves-integration-into-sfunction-subclass.take2.patch\n* attachment:trac_6465-integral.take2.patch",
     "created_at": "2010-02-03T11:57:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_comment",
@@ -860,7 +860,7 @@ archive/issue_comments_052273.json:
 }
 ```
 
-Attachment
+Attachment [trac_6465-integral.take3.patch](tarball://root/attachments/some-uuid/ticket6465/trac_6465-integral.take3.patch) by burcin created at 2010-02-03 11:57:30
 
 After testing on a 32-bit Debian box, I uploaded attachment:trac_6465-integral.take3.patch to replace attachment:trac_6465-integral.take2.patch. The only difference is the `...` used for the trailing digits of the numerical integral on line 188 of `sage/symbolic/integration/integral.py`.
 
@@ -894,7 +894,7 @@ Oops, the last patch to be applied is attachment:trac_6465-integral.take3.patch!
 archive/issue_comments_052275.json:
 ```json
 {
-    "body": "Attachment\n\nrebased to 4.3.2",
+    "body": "Attachment [trac_6465-integral.take4.patch](tarball://root/attachments/some-uuid/ticket6465/trac_6465-integral.take4.patch) by burcin created at 2010-02-09 10:56:52\n\nrebased to 4.3.2",
     "created_at": "2010-02-09T10:56:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_comment",
@@ -903,7 +903,7 @@ archive/issue_comments_052275.json:
 }
 ```
 
-Attachment
+Attachment [trac_6465-integral.take4.patch](tarball://root/attachments/some-uuid/ticket6465/trac_6465-integral.take4.patch) by burcin created at 2010-02-09 10:56:52
 
 rebased to 4.3.2
 
@@ -932,7 +932,7 @@ rebased to 4.3.2
 archive/issue_comments_052277.json:
 ```json
 {
-    "body": "Attachment\n\nI rebased the patches to 4.3.2. Patches to be applied are now:\n\n* attachment:trac_6465-chain_rule.take2.patch\n* attachment:trac_6465-moves-integration-into-sfunction-subclass.take3.patch\n* attachment:trac_6465-integral.take4.patch",
+    "body": "Attachment [trac_6465-moves-integration-into-sfunction-subclass.take3.patch](tarball://root/attachments/some-uuid/ticket6465/trac_6465-moves-integration-into-sfunction-subclass.take3.patch) by burcin created at 2010-02-09 11:01:02\n\nI rebased the patches to 4.3.2. Patches to be applied are now:\n\n* attachment:trac_6465-chain_rule.take2.patch\n* attachment:trac_6465-moves-integration-into-sfunction-subclass.take3.patch\n* attachment:trac_6465-integral.take4.patch",
     "created_at": "2010-02-09T11:01:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_comment",
@@ -941,7 +941,7 @@ archive/issue_comments_052277.json:
 }
 ```
 
-Attachment
+Attachment [trac_6465-moves-integration-into-sfunction-subclass.take3.patch](tarball://root/attachments/some-uuid/ticket6465/trac_6465-moves-integration-into-sfunction-subclass.take3.patch) by burcin created at 2010-02-09 11:01:02
 
 I rebased the patches to 4.3.2. Patches to be applied are now:
 

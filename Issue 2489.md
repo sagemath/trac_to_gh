@@ -71,7 +71,7 @@ Changing status from new to assigned.
 archive/issue_comments_016872.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2489.patch](tarball://root/attachments/some-uuid/ticket2489/2489.patch) by mhansen created at 2008-03-12 11:20:53",
     "created_at": "2008-03-12T11:20:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2489",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_016872.json:
 }
 ```
 
-Attachment
+Attachment [2489.patch](tarball://root/attachments/some-uuid/ticket2489/2489.patch) by mhansen created at 2008-03-12 11:20:53
 
 
 
@@ -107,7 +107,7 @@ Successfully installs, no more error, code looks good.
 archive/issue_comments_016874.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2489.2.patch](tarball://root/attachments/some-uuid/ticket2489/2489.2.patch) by mhansen created at 2008-03-14 20:32:16",
     "created_at": "2008-03-14T20:32:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2489",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_016874.json:
 }
 ```
 
-Attachment
+Attachment [2489.2.patch](tarball://root/attachments/some-uuid/ticket2489/2489.2.patch) by mhansen created at 2008-03-14 20:32:16
 
 
 

@@ -226,7 +226,7 @@ Please change the commit message (using hg qrefresh -e) such that the ticket num
 archive/issue_comments_047222.json:
 ```json
 {
-    "body": "Attachment\n\nAvoid an error being raised when comparing GAP elements. Add doctest.",
+    "body": "Attachment [trac_5962_GAP__cmp__.patch](tarball://root/attachments/some-uuid/ticket5962/trac_5962_GAP__cmp__.patch) by SimonKing created at 2011-03-27 14:00:58\n\nAvoid an error being raised when comparing GAP elements. Add doctest.",
     "created_at": "2011-03-27T14:00:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5962",
     "type": "issue_comment",
@@ -235,7 +235,7 @@ archive/issue_comments_047222.json:
 }
 ```
 
-Attachment
+Attachment [trac_5962_GAP__cmp__.patch](tarball://root/attachments/some-uuid/ticket5962/trac_5962_GAP__cmp__.patch) by SimonKing created at 2011-03-27 14:00:58
 
 Avoid an error being raised when comparing GAP elements. Add doctest.
 

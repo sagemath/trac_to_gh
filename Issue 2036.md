@@ -80,7 +80,7 @@ William
 archive/issue_comments_013174.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [maxima-charpoly.patch](tarball://root/attachments/some-uuid/ticket2036/maxima-charpoly.patch) by jason created at 2008-02-04 21:00:40",
     "created_at": "2008-02-04T21:00:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2036",
     "type": "issue_comment",
@@ -89,7 +89,7 @@ archive/issue_comments_013174.json:
 }
 ```
 
-Attachment
+Attachment [maxima-charpoly.patch](tarball://root/attachments/some-uuid/ticket2036/maxima-charpoly.patch) by jason created at 2008-02-04 21:00:40
 
 
 

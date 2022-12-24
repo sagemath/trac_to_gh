@@ -101,7 +101,7 @@ Michael
 archive/issue_comments_002909.json:
 ```json
 {
-    "body": "Attachment\n\nburcin's fix extracted from the patch for #559",
+    "body": "Attachment [sage-2.8.7.rc1-fix-small-memleaks-in_MultiModularBasis_base.patch](tarball://root/attachments/some-uuid/ticket561/sage-2.8.7.rc1-fix-small-memleaks-in_MultiModularBasis_base.patch) by mabshoff created at 2007-10-16 02:56:58\n\nburcin's fix extracted from the patch for #559",
     "created_at": "2007-10-16T02:56:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/561",
     "type": "issue_comment",
@@ -110,7 +110,7 @@ archive/issue_comments_002909.json:
 }
 ```
 
-Attachment
+Attachment [sage-2.8.7.rc1-fix-small-memleaks-in_MultiModularBasis_base.patch](tarball://root/attachments/some-uuid/ticket561/sage-2.8.7.rc1-fix-small-memleaks-in_MultiModularBasis_base.patch) by mabshoff created at 2007-10-16 02:56:58
 
 burcin's fix extracted from the patch for #559
 

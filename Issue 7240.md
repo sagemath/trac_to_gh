@@ -323,7 +323,7 @@ Thank you for the clarification, John. The merging of this ticket can wait until
 archive/issue_comments_060086.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac7240_make_standard.patch](tarball://root/attachments/some-uuid/ticket7240/trac7240_make_standard.patch) by ylchapuy created at 2010-01-25 09:55:22",
     "created_at": "2010-01-25T09:55:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7240",
     "type": "issue_comment",
@@ -332,7 +332,7 @@ archive/issue_comments_060086.json:
 }
 ```
 
-Attachment
+Attachment [trac7240_make_standard.patch](tarball://root/attachments/some-uuid/ticket7240/trac7240_make_standard.patch) by ylchapuy created at 2010-01-25 09:55:22
 
 
 
@@ -459,7 +459,7 @@ rebased on sage 4.4
 archive/issue_comments_060092.json:
 ```json
 {
-    "body": "Attachment\n\nI think it's ok for review now.",
+    "body": "Attachment [trac7240_Cunningham_factorization_application.patch](tarball://root/attachments/some-uuid/ticket7240/trac7240_Cunningham_factorization_application.patch) by ylchapuy created at 2010-04-29 22:03:15\n\nI think it's ok for review now.",
     "created_at": "2010-04-29T22:03:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7240",
     "type": "issue_comment",
@@ -468,7 +468,7 @@ archive/issue_comments_060092.json:
 }
 ```
 
-Attachment
+Attachment [trac7240_Cunningham_factorization_application.patch](tarball://root/attachments/some-uuid/ticket7240/trac7240_Cunningham_factorization_application.patch) by ylchapuy created at 2010-04-29 22:03:15
 
 I think it's ok for review now.
 
@@ -812,7 +812,7 @@ I've addressed Andrew's comments, and added a new version of the SPKG at http://
 archive/issue_comments_060111.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [7240.patch](tarball://root/attachments/some-uuid/ticket7240/7240.patch) by jdemeyer created at 2013-08-13 15:35:53",
     "created_at": "2013-08-13T15:35:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7240",
     "type": "issue_comment",
@@ -821,7 +821,7 @@ archive/issue_comments_060111.json:
 }
 ```
 
-Attachment
+Attachment [7240.patch](tarball://root/attachments/some-uuid/ticket7240/7240.patch) by jdemeyer created at 2013-08-13 15:35:53
 
 
 

@@ -60,7 +60,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9309
 archive/issue_comments_087661.json:
 ```json
 {
-    "body": "Attachment\n\nMercurial patch to add an spkg-check file to enable self-tests",
+    "body": "Attachment [9309.patch](tarball://root/attachments/some-uuid/ticket9309/9309.patch) by drkirkby created at 2010-06-22 14:59:00\n\nMercurial patch to add an spkg-check file to enable self-tests",
     "created_at": "2010-06-22T14:59:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9309",
     "type": "issue_comment",
@@ -69,7 +69,7 @@ archive/issue_comments_087661.json:
 }
 ```
 
-Attachment
+Attachment [9309.patch](tarball://root/attachments/some-uuid/ticket9309/9309.patch) by drkirkby created at 2010-06-22 14:59:00
 
 Mercurial patch to add an spkg-check file to enable self-tests
 
@@ -283,7 +283,7 @@ Only updates upstream info in SPKG.txt
 archive/issue_comments_087672.json:
 ```json
 {
-    "body": "Attachment\n\nDave, can you merge my patch to `SPKG.txt`?",
+    "body": "Attachment [trac_9309-IML-SPKG.txt_update.patch](tarball://root/attachments/some-uuid/ticket9309/trac_9309-IML-SPKG.txt_update.patch) by leif created at 2010-07-21 17:51:04\n\nDave, can you merge my patch to `SPKG.txt`?",
     "created_at": "2010-07-21T17:51:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9309",
     "type": "issue_comment",
@@ -292,7 +292,7 @@ archive/issue_comments_087672.json:
 }
 ```
 
-Attachment
+Attachment [trac_9309-IML-SPKG.txt_update.patch](tarball://root/attachments/some-uuid/ticket9309/trac_9309-IML-SPKG.txt_update.patch) by leif created at 2010-07-21 17:51:04
 
 Dave, can you merge my patch to `SPKG.txt`?
 

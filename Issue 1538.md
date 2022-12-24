@@ -69,7 +69,7 @@ Changing component from algebraic geometry to distribution.
 archive/issue_comments_009820.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1538_upgrade_root.patch](tarball://root/attachments/some-uuid/ticket1538/1538_upgrade_root.patch) by jdemeyer created at 2012-10-05 13:09:08",
     "created_at": "2012-10-05T13:09:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1538",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_009820.json:
 }
 ```
 
-Attachment
+Attachment [1538_upgrade_root.patch](tarball://root/attachments/some-uuid/ticket1538/1538_upgrade_root.patch) by jdemeyer created at 2012-10-05 13:09:08
 
 
 
@@ -105,7 +105,7 @@ Changing component from distribution to build.
 archive/issue_comments_009822.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1538_upgrade_scripts.patch](tarball://root/attachments/some-uuid/ticket1538/1538_upgrade_scripts.patch) by jdemeyer created at 2013-08-13 15:34:36",
     "created_at": "2013-08-13T15:34:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1538",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_009822.json:
 }
 ```
 
-Attachment
+Attachment [1538_upgrade_scripts.patch](tarball://root/attachments/some-uuid/ticket1538/1538_upgrade_scripts.patch) by jdemeyer created at 2013-08-13 15:34:36
 
 
 

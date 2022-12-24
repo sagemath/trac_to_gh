@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3732
 archive/issue_comments_026495.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [testintfailscases.py](tarball://root/attachments/some-uuid/ticket3732/testintfailscases.py) by was created at 2008-07-28 04:11:36",
     "created_at": "2008-07-28T04:11:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3732",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_026495.json:
 }
 ```
 
-Attachment
+Attachment [testintfailscases.py](tarball://root/attachments/some-uuid/ticket3732/testintfailscases.py) by was created at 2008-07-28 04:11:36
 
 
 
@@ -115,7 +115,7 @@ another failing integral
 archive/issue_comments_026498.json:
 ```json
 {
-    "body": "Attachment\n\nI added a testcase for another integral, namely `integral( s^2 * exp(- (a + b) * s^2 ), s)`, that fails to integrate.  This is reproduced on Sage 3.1.1.",
+    "body": "Attachment [gaussian-integral-testcase.py](tarball://root/attachments/some-uuid/ticket3732/gaussian-integral-testcase.py) by gnprice created at 2008-10-24 10:26:55\n\nI added a testcase for another integral, namely `integral( s^2 * exp(- (a + b) * s^2 ), s)`, that fails to integrate.  This is reproduced on Sage 3.1.1.",
     "created_at": "2008-10-24T10:26:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3732",
     "type": "issue_comment",
@@ -124,7 +124,7 @@ archive/issue_comments_026498.json:
 }
 ```
 
-Attachment
+Attachment [gaussian-integral-testcase.py](tarball://root/attachments/some-uuid/ticket3732/gaussian-integral-testcase.py) by gnprice created at 2008-10-24 10:26:55
 
 I added a testcase for another integral, namely `integral( s^2 * exp(- (a + b) * s^2 ), s)`, that fails to integrate.  This is reproduced on Sage 3.1.1.
 

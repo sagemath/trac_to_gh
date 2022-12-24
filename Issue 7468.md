@@ -51,7 +51,7 @@ Adds `zope.testbrowser` to the package's dependencies and makes `spkg-dist` auto
 archive/issue_comments_062901.json:
 ```json
 {
-    "body": "Attachment\n\nThis should do the trick.",
+    "body": "Attachment [trac_7468-zope.testbrowser.patch](tarball://root/attachments/some-uuid/ticket7468/trac_7468-zope.testbrowser.patch) by timdumol created at 2009-11-15 07:31:10\n\nThis should do the trick.",
     "created_at": "2009-11-15T07:31:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7468",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_062901.json:
 }
 ```
 
-Attachment
+Attachment [trac_7468-zope.testbrowser.patch](tarball://root/attachments/some-uuid/ticket7468/trac_7468-zope.testbrowser.patch) by timdumol created at 2009-11-15 07:31:10
 
 This should do the trick.
 

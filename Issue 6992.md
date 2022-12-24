@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6992
 archive/issue_comments_057830.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6992-rename_lgamma.patch](tarball://root/attachments/some-uuid/ticket6992/trac_6992-rename_lgamma.patch) by burcin created at 2009-09-22 19:13:45",
     "created_at": "2009-09-22T19:13:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6992",
     "type": "issue_comment",
@@ -43,7 +43,7 @@ archive/issue_comments_057830.json:
 }
 ```
 
-Attachment
+Attachment [trac_6992-rename_lgamma.patch](tarball://root/attachments/some-uuid/ticket6992/trac_6992-rename_lgamma.patch) by burcin created at 2009-09-22 19:13:45
 
 
 

@@ -194,7 +194,7 @@ New patch after Nicolas review.
 archive/issue_comments_039848.json:
 ```json
 {
-    "body": "Attachment\n\nNicolas sent me a review on sage-combinat-devel. The new subsets_subwords-5200-submitted.2.patch patch fixes the various problems pointed out by the review (typos + code improvements). \n\nFlorent",
+    "body": "Attachment [subsets_subwords-5200-submitted.2.patch](tarball://root/attachments/some-uuid/ticket5200/subsets_subwords-5200-submitted.2.patch) by hivert created at 2009-03-17 17:55:33\n\nNicolas sent me a review on sage-combinat-devel. The new subsets_subwords-5200-submitted.2.patch patch fixes the various problems pointed out by the review (typos + code improvements). \n\nFlorent",
     "created_at": "2009-03-17T17:55:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5200",
     "type": "issue_comment",
@@ -203,7 +203,7 @@ archive/issue_comments_039848.json:
 }
 ```
 
-Attachment
+Attachment [subsets_subwords-5200-submitted.2.patch](tarball://root/attachments/some-uuid/ticket5200/subsets_subwords-5200-submitted.2.patch) by hivert created at 2009-03-17 17:55:33
 
 Nicolas sent me a review on sage-combinat-devel. The new subsets_subwords-5200-submitted.2.patch patch fixes the various problems pointed out by the review (typos + code improvements). 
 
@@ -236,7 +236,7 @@ Florent: feel free to switch the title to with review after the following micro 
 archive/issue_comments_039850.json:
 ```json
 {
-    "body": "Attachment\n\nLast review patch.",
+    "body": "Attachment [subsets_subwords-5200-review.patch](tarball://root/attachments/some-uuid/ticket5200/subsets_subwords-5200-review.patch) by hivert created at 2009-03-19 20:59:14\n\nLast review patch.",
     "created_at": "2009-03-19T20:59:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5200",
     "type": "issue_comment",
@@ -245,7 +245,7 @@ archive/issue_comments_039850.json:
 }
 ```
 
-Attachment
+Attachment [subsets_subwords-5200-review.patch](tarball://root/attachments/some-uuid/ticket5200/subsets_subwords-5200-review.patch) by hivert created at 2009-03-19 20:59:14
 
 Last review patch.
 

@@ -165,7 +165,7 @@ Branching rule fix and revised doc in weyl_characters.py
 archive/issue_comments_075360.json:
 ```json
 {
-    "body": "Attachment\n\n> Please also include the ticket number in the patch title!\n>\n> #8411: Branching rule fix and doc revision\n>\n> Sorry for the extra bother ...\n\nOK, I changed the patch description to begin #8411.",
+    "body": "Attachment [trac_8411_branching_rules.patch](tarball://root/attachments/some-uuid/ticket8411/trac_8411_branching_rules.patch) by bump created at 2010-04-19 01:31:11\n\n> Please also include the ticket number in the patch title!\n>\n> #8411: Branching rule fix and doc revision\n>\n> Sorry for the extra bother ...\n\nOK, I changed the patch description to begin #8411.",
     "created_at": "2010-04-19T01:31:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8411",
     "type": "issue_comment",
@@ -174,7 +174,7 @@ archive/issue_comments_075360.json:
 }
 ```
 
-Attachment
+Attachment [trac_8411_branching_rules.patch](tarball://root/attachments/some-uuid/ticket8411/trac_8411_branching_rules.patch) by bump created at 2010-04-19 01:31:11
 
 > Please also include the ticket number in the patch title!
 >

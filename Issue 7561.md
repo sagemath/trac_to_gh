@@ -181,7 +181,7 @@ Nathann
 archive/issue_comments_064332.json:
 ```json
 {
-    "body": "Attachment\n\nThis should go into 4.3, it opens a whole new world for MIP problems.",
+    "body": "Attachment [trac_7561.patch](tarball://root/attachments/some-uuid/ticket7561/trac_7561.patch) by malb created at 2009-12-05 14:59:46\n\nThis should go into 4.3, it opens a whole new world for MIP problems.",
     "created_at": "2009-12-05T14:59:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7561",
     "type": "issue_comment",
@@ -190,7 +190,7 @@ archive/issue_comments_064332.json:
 }
 ```
 
-Attachment
+Attachment [trac_7561.patch](tarball://root/attachments/some-uuid/ticket7561/trac_7561.patch) by malb created at 2009-12-05 14:59:46
 
 This should go into 4.3, it opens a whole new world for MIP problems.
 
@@ -237,7 +237,7 @@ Thankssssssssssssss :-)
 archive/issue_comments_064335.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7561-review.patch](tarball://root/attachments/some-uuid/ticket7561/trac_7561-review.patch) by mhansen created at 2009-12-06 08:51:22",
     "created_at": "2009-12-06T08:51:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7561",
     "type": "issue_comment",
@@ -246,7 +246,7 @@ archive/issue_comments_064335.json:
 }
 ```
 
-Attachment
+Attachment [trac_7561-review.patch](tarball://root/attachments/some-uuid/ticket7561/trac_7561-review.patch) by mhansen created at 2009-12-06 08:51:22
 
 
 

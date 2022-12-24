@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8009
 archive/issue_comments_070003.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-8009-plot-field-color.patch](tarball://root/attachments/some-uuid/ticket8009/trac-8009-plot-field-color.patch) by jason created at 2010-01-20 05:59:10",
     "created_at": "2010-01-20T05:59:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8009",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_070003.json:
 }
 ```
 
-Attachment
+Attachment [trac-8009-plot-field-color.patch](tarball://root/attachments/some-uuid/ticket8009/trac-8009-plot-field-color.patch) by jason created at 2010-01-20 05:59:10
 
 
 

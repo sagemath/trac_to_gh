@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/681
 archive/issue_comments_003533.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [mq.patch](tarball://root/attachments/some-uuid/ticket681/mq.patch) by malb created at 2007-09-17 16:01:35",
     "created_at": "2007-09-17T16:01:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/681",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_003533.json:
 }
 ```
 
-Attachment
+Attachment [mq.patch](tarball://root/attachments/some-uuid/ticket681/mq.patch) by malb created at 2007-09-17 16:01:35
 
 
 
@@ -75,7 +75,7 @@ Great, first bugfix already. See second attachment.
 archive/issue_comments_003535.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [mq-change_ring-bugfix.patch](tarball://root/attachments/some-uuid/ticket681/mq-change_ring-bugfix.patch) by mhansen created at 2007-09-20 00:39:41",
     "created_at": "2007-09-20T00:39:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/681",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_003535.json:
 }
 ```
 
-Attachment
+Attachment [mq-change_ring-bugfix.patch](tarball://root/attachments/some-uuid/ticket681/mq-change_ring-bugfix.patch) by mhansen created at 2007-09-20 00:39:41
 
 
 

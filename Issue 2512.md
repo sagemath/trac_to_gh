@@ -117,7 +117,7 @@ Changing status from new to needs_review.
 archive/issue_comments_017036.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch implements a very simple .condition_number() method, based on a matrix's .norm() method. As such it only works for p = 1,2,Infinity or the Frobenius norm.\n\nSuggestions/comments welcome. Written on sage 4.6.2.",
+    "body": "Attachment [trac_2512_matrix_condition_number.patch](tarball://root/attachments/some-uuid/ticket2512/trac_2512_matrix_condition_number.patch) by spice created at 2011-03-22 23:44:51\n\nThe patch implements a very simple .condition_number() method, based on a matrix's .norm() method. As such it only works for p = 1,2,Infinity or the Frobenius norm.\n\nSuggestions/comments welcome. Written on sage 4.6.2.",
     "created_at": "2011-03-22T23:44:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2512",
     "type": "issue_comment",
@@ -126,7 +126,7 @@ archive/issue_comments_017036.json:
 }
 ```
 
-Attachment
+Attachment [trac_2512_matrix_condition_number.patch](tarball://root/attachments/some-uuid/ticket2512/trac_2512_matrix_condition_number.patch) by spice created at 2011-03-22 23:44:51
 
 The patch implements a very simple .condition_number() method, based on a matrix's .norm() method. As such it only works for p = 1,2,Infinity or the Frobenius norm.
 

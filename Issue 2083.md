@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2083
 archive/issue_comments_013483.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ncalexan-nf-galois-closure.patch](tarball://root/attachments/some-uuid/ticket2083/ncalexan-nf-galois-closure.patch) by ncalexan created at 2008-02-07 08:57:45",
     "created_at": "2008-02-07T08:57:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2083",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_013483.json:
 }
 ```
 
-Attachment
+Attachment [ncalexan-nf-galois-closure.patch](tarball://root/attachments/some-uuid/ticket2083/ncalexan-nf-galois-closure.patch) by ncalexan created at 2008-02-07 08:57:45
 
 
 

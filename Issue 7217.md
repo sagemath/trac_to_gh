@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7217
 archive/issue_comments_059872.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [integer_factorization.rst](tarball://root/attachments/some-uuid/ticket7217/integer_factorization.rst) by chapoton created at 2014-07-18 12:50:35",
     "created_at": "2014-07-18T12:50:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7217",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_059872.json:
 }
 ```
 
-Attachment
+Attachment [integer_factorization.rst](tarball://root/attachments/some-uuid/ticket7217/integer_factorization.rst) by chapoton created at 2014-07-18 12:50:35
 
 
 

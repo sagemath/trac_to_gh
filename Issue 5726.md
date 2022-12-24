@@ -71,7 +71,7 @@ On the command line, cython code *never* gets a function "Definition".
 archive/issue_comments_044745.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5726-sageinspect.patch](tarball://root/attachments/some-uuid/ticket5726/trac_5726-sageinspect.patch) by jhpalmieri created at 2009-08-24 16:42:40",
     "created_at": "2009-08-24T16:42:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5726",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_044745.json:
 }
 ```
 
-Attachment
+Attachment [trac_5726-sageinspect.patch](tarball://root/attachments/some-uuid/ticket5726/trac_5726-sageinspect.patch) by jhpalmieri created at 2009-08-24 16:42:40
 
 
 

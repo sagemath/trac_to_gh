@@ -202,7 +202,7 @@ Michael
 archive/issue_comments_013737.json:
 ```json
 {
-    "body": "Attachment\n\nChange the wrapper for linbox rank, to directly use FFPACK rank.",
+    "body": "Attachment [trac-2107.patch](tarball://root/attachments/some-uuid/ticket2107/trac-2107.patch) by cpernet created at 2008-02-09 00:31:39\n\nChange the wrapper for linbox rank, to directly use FFPACK rank.",
     "created_at": "2008-02-09T00:31:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2107",
     "type": "issue_comment",
@@ -211,7 +211,7 @@ archive/issue_comments_013737.json:
 }
 ```
 
-Attachment
+Attachment [trac-2107.patch](tarball://root/attachments/some-uuid/ticket2107/trac-2107.patch) by cpernet created at 2008-02-09 00:31:39
 
 Change the wrapper for linbox rank, to directly use FFPACK rank.
 
@@ -284,7 +284,7 @@ Fix the conflict of the previous patch with ticket 2127
 archive/issue_comments_013741.json:
 ```json
 {
-    "body": "Attachment\n\nadds the originial problem report as a doctest",
+    "body": "Attachment [linboxdet.3.patch](tarball://root/attachments/some-uuid/ticket2107/linboxdet.3.patch) by mabshoff created at 2008-02-17 00:26:34\n\nadds the originial problem report as a doctest",
     "created_at": "2008-02-17T00:26:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2107",
     "type": "issue_comment",
@@ -293,7 +293,7 @@ archive/issue_comments_013741.json:
 }
 ```
 
-Attachment
+Attachment [linboxdet.3.patch](tarball://root/attachments/some-uuid/ticket2107/linboxdet.3.patch) by mabshoff created at 2008-02-17 00:26:34
 
 adds the originial problem report as a doctest
 
@@ -304,7 +304,7 @@ adds the originial problem report as a doctest
 archive/issue_comments_013742.json:
 ```json
 {
-    "body": "Attachment\n\nThe spkg at \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.10.2/alpha1/linbox-20070915.p5.spkg\n\nfixes the issue. It is linbox-20070915.p4 + the fixes from linbox-20070915.p5 at #2127 merged into one.\n\nCheers,\n\nMichael",
+    "body": "Attachment [Sage-2.10.2.alpha1-trac_2107_doctest.patch](tarball://root/attachments/some-uuid/ticket2107/Sage-2.10.2.alpha1-trac_2107_doctest.patch) by mabshoff created at 2008-02-17 00:28:02\n\nThe spkg at \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.10.2/alpha1/linbox-20070915.p5.spkg\n\nfixes the issue. It is linbox-20070915.p4 + the fixes from linbox-20070915.p5 at #2127 merged into one.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-17T00:28:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2107",
     "type": "issue_comment",
@@ -313,7 +313,7 @@ archive/issue_comments_013742.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.10.2.alpha1-trac_2107_doctest.patch](tarball://root/attachments/some-uuid/ticket2107/Sage-2.10.2.alpha1-trac_2107_doctest.patch) by mabshoff created at 2008-02-17 00:28:02
 
 The spkg at 
 

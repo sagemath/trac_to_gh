@@ -52,7 +52,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9004
 archive/issue_comments_083294.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac9004.patch](tarball://root/attachments/some-uuid/ticket9004/trac9004.patch) by fbissey created at 2010-05-21 04:15:58",
     "created_at": "2010-05-21T04:15:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9004",
     "type": "issue_comment",
@@ -61,7 +61,7 @@ archive/issue_comments_083294.json:
 }
 ```
 
-Attachment
+Attachment [trac9004.patch](tarball://root/attachments/some-uuid/ticket9004/trac9004.patch) by fbissey created at 2010-05-21 04:15:58
 
 
 

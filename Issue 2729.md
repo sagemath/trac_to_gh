@@ -59,7 +59,7 @@ positive review pending the deletion of the print statement.
 archive/issue_comments_018792.json:
 ```json
 {
-    "body": "Attachment\n\nOK, print statement is gone.",
+    "body": "Attachment [2729-jmol-holes.patch](tarball://root/attachments/some-uuid/ticket2729/2729-jmol-holes.patch) by robertwb created at 2008-03-30 00:38:35\n\nOK, print statement is gone.",
     "created_at": "2008-03-30T00:38:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2729",
     "type": "issue_comment",
@@ -68,7 +68,7 @@ archive/issue_comments_018792.json:
 }
 ```
 
-Attachment
+Attachment [2729-jmol-holes.patch](tarball://root/attachments/some-uuid/ticket2729/2729-jmol-holes.patch) by robertwb created at 2008-03-30 00:38:35
 
 OK, print statement is gone.
 

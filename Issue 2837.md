@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2837
 archive/issue_comments_019464.json:
 ```json
 {
-    "body": "Attachment\n\nApplies and passes tests on 3.0.alpha1 + new twisted spkg.",
+    "body": "Attachment [blockingcall_api_change.patch](tarball://root/attachments/some-uuid/ticket2837/blockingcall_api_change.patch) by mhansen created at 2008-04-07 01:05:03\n\nApplies and passes tests on 3.0.alpha1 + new twisted spkg.",
     "created_at": "2008-04-07T01:05:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2837",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_019464.json:
 }
 ```
 
-Attachment
+Attachment [blockingcall_api_change.patch](tarball://root/attachments/some-uuid/ticket2837/blockingcall_api_change.patch) by mhansen created at 2008-04-07 01:05:03
 
 Applies and passes tests on 3.0.alpha1 + new twisted spkg.
 

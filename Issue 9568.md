@@ -317,7 +317,7 @@ Build log from a Sun Ultra 27 with an Intel Xeon processor - showing a strange f
 archive/issue_comments_092405.json:
 ```json
 {
-    "body": "Attachment\n\nI just rebuilt version 1.0.1 in a loop 100 times. It failed to build once in that 100 times! (That's two failures in total I have observed of this). \n\nDave",
+    "body": "Attachment [iml-1.0.1.p12.log.txt](tarball://root/attachments/some-uuid/ticket9568/iml-1.0.1.p12.log.txt) by drkirkby created at 2010-07-23 12:17:02\n\nI just rebuilt version 1.0.1 in a loop 100 times. It failed to build once in that 100 times! (That's two failures in total I have observed of this). \n\nDave",
     "created_at": "2010-07-23T12:17:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9568",
     "type": "issue_comment",
@@ -326,7 +326,7 @@ archive/issue_comments_092405.json:
 }
 ```
 
-Attachment
+Attachment [iml-1.0.1.p12.log.txt](tarball://root/attachments/some-uuid/ticket9568/iml-1.0.1.p12.log.txt) by drkirkby created at 2010-07-23 12:17:02
 
 I just rebuilt version 1.0.1 in a loop 100 times. It failed to build once in that 100 times! (That's two failures in total I have observed of this). 
 

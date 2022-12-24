@@ -99,7 +99,7 @@ Michael
 archive/issue_comments_034827.json:
 ```json
 {
-    "body": "Attachment\n\npatch file",
+    "body": "Attachment [fortanish.patch](tarball://root/attachments/some-uuid/ticket4633/fortanish.patch) by bpage created at 2008-11-27 01:46:11\n\npatch file",
     "created_at": "2008-11-27T01:46:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4633",
     "type": "issue_comment",
@@ -108,7 +108,7 @@ archive/issue_comments_034827.json:
 }
 ```
 
-Attachment
+Attachment [fortanish.patch](tarball://root/attachments/some-uuid/ticket4633/fortanish.patch) by bpage created at 2008-11-27 01:46:11
 
 patch file
 
@@ -228,7 +228,7 @@ Michael
 archive/issue_comments_034833.json:
 ```json
 {
-    "body": "Attachment\n\n[with patch, needs review] Better?",
+    "body": "Attachment [trac_4633.patch](tarball://root/attachments/some-uuid/ticket4633/trac_4633.patch) by bpage created at 2008-11-27 05:05:01\n\n[with patch, needs review] Better?",
     "created_at": "2008-11-27T05:05:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4633",
     "type": "issue_comment",
@@ -237,7 +237,7 @@ archive/issue_comments_034833.json:
 }
 ```
 
-Attachment
+Attachment [trac_4633.patch](tarball://root/attachments/some-uuid/ticket4633/trac_4633.patch) by bpage created at 2008-11-27 05:05:01
 
 [with patch, needs review] Better?
 

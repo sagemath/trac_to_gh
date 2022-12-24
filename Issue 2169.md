@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2169
 archive/issue_comments_014231.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-trac8329-magma_sage.patch](tarball://root/attachments/some-uuid/ticket2169/sage-trac8329-magma_sage.patch) by was created at 2008-02-15 01:22:57",
     "created_at": "2008-02-15T01:22:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2169",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_014231.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac8329-magma_sage.patch](tarball://root/attachments/some-uuid/ticket2169/sage-trac8329-magma_sage.patch) by was created at 2008-02-15 01:22:57
 
 
 
@@ -49,7 +49,7 @@ Attachment
 archive/issue_comments_014232.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.  Doctests are in place.  Both patches must be applied.",
+    "body": "Attachment [extcode-trac145-magma_sage.patch](tarball://root/attachments/some-uuid/ticket2169/extcode-trac145-magma_sage.patch) by ncalexan created at 2008-02-15 04:35:45\n\nLooks good to me.  Doctests are in place.  Both patches must be applied.",
     "created_at": "2008-02-15T04:35:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2169",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_014232.json:
 }
 ```
 
-Attachment
+Attachment [extcode-trac145-magma_sage.patch](tarball://root/attachments/some-uuid/ticket2169/extcode-trac145-magma_sage.patch) by ncalexan created at 2008-02-15 04:35:45
 
 Looks good to me.  Doctests are in place.  Both patches must be applied.
 

@@ -436,7 +436,7 @@ I will look at this before changing the status to `needs review`.
 archive/issue_comments_055806.json:
 ```json
 {
-    "body": "Attachment\n\nApplies over the precedent patch.",
+    "body": "Attachment [trac_6775-with_dealloc-sl.patch](tarball://root/attachments/some-uuid/ticket6775/trac_6775-with_dealloc-sl.patch) by slabbe created at 2010-01-19 17:44:53\n\nApplies over the precedent patch.",
     "created_at": "2010-01-19T17:44:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6775",
     "type": "issue_comment",
@@ -445,7 +445,7 @@ archive/issue_comments_055806.json:
 }
 ```
 
-Attachment
+Attachment [trac_6775-with_dealloc-sl.patch](tarball://root/attachments/some-uuid/ticket6775/trac_6775-with_dealloc-sl.patch) by slabbe created at 2010-01-19 17:44:53
 
 Applies over the precedent patch.
 
@@ -570,7 +570,7 @@ Apply only this one.
 archive/issue_comments_055812.json:
 ```json
 {
-    "body": "Attachment\n\nGood point. I followed your suggestion and I folded both precedent patches.\n\nNeeds review!",
+    "body": "Attachment [trac_6775-disjoint_set-sl.patch](tarball://root/attachments/some-uuid/ticket6775/trac_6775-disjoint_set-sl.patch) by slabbe created at 2010-02-07 16:33:09\n\nGood point. I followed your suggestion and I folded both precedent patches.\n\nNeeds review!",
     "created_at": "2010-02-07T16:33:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6775",
     "type": "issue_comment",
@@ -579,7 +579,7 @@ archive/issue_comments_055812.json:
 }
 ```
 
-Attachment
+Attachment [trac_6775-disjoint_set-sl.patch](tarball://root/attachments/some-uuid/ticket6775/trac_6775-disjoint_set-sl.patch) by slabbe created at 2010-02-07 16:33:09
 
 Good point. I followed your suggestion and I folded both precedent patches.
 

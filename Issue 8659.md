@@ -340,7 +340,7 @@ Changing status from new to needs_review.
 archive/issue_comments_078571.json:
 ```json
 {
-    "body": "Attachment\n\nAt first I thought I minded this discrepancy, but I think that maybe that's okay, given they really do live in different places.  At the same time, in theory then we should be holding anything that might ever be multivalued.  Like a square root.\n\n```\nsage: 8^(1/2)\n2*sqrt(2)\nsage: I.pyobject().parent()\nNumber Field in I with defining polynomial x^2 + 1\nsage: I.pyobject().parent()(8)^(1/2)\nsqrt(8)\n```\n\nIn particular, what do we want here?\n\n```\nsage: a= matrix([[2,2,I],[2,2,-I],[I,-I,0]]).determinant();\nsage: b = a.pyobject()\nsage: b^(-1/2); a^(-1/2)\n1/sqrt(8)\n1/8*sqrt(8)\n```\n",
+    "body": "Attachment [trac_8659-hold_powers.patch](tarball://root/attachments/some-uuid/ticket8659/trac_8659-hold_powers.patch) by kcrisman created at 2011-04-25 17:02:33\n\nAt first I thought I minded this discrepancy, but I think that maybe that's okay, given they really do live in different places.  At the same time, in theory then we should be holding anything that might ever be multivalued.  Like a square root.\n\n```\nsage: 8^(1/2)\n2*sqrt(2)\nsage: I.pyobject().parent()\nNumber Field in I with defining polynomial x^2 + 1\nsage: I.pyobject().parent()(8)^(1/2)\nsqrt(8)\n```\n\nIn particular, what do we want here?\n\n```\nsage: a= matrix([[2,2,I],[2,2,-I],[I,-I,0]]).determinant();\nsage: b = a.pyobject()\nsage: b^(-1/2); a^(-1/2)\n1/sqrt(8)\n1/8*sqrt(8)\n```\n",
     "created_at": "2011-04-25T17:02:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8659",
     "type": "issue_comment",
@@ -349,7 +349,7 @@ archive/issue_comments_078571.json:
 }
 ```
 
-Attachment
+Attachment [trac_8659-hold_powers.patch](tarball://root/attachments/some-uuid/ticket8659/trac_8659-hold_powers.patch) by kcrisman created at 2011-04-25 17:02:33
 
 At first I thought I minded this discrepancy, but I think that maybe that's okay, given they really do live in different places.  At the same time, in theory then we should be holding anything that might ever be multivalued.  Like a square root.
 
@@ -439,7 +439,7 @@ Or am I missing something?   Sorry if I've misinterpreted something; otherwise t
 archive/issue_comments_078574.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8659-hold_powers.take2.patch](tarball://root/attachments/some-uuid/ticket8659/trac_8659-hold_powers.take2.patch) by burcin created at 2011-05-30 22:28:01",
     "created_at": "2011-05-30T22:28:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8659",
     "type": "issue_comment",
@@ -448,7 +448,7 @@ archive/issue_comments_078574.json:
 }
 ```
 
-Attachment
+Attachment [trac_8659-hold_powers.take2.patch](tarball://root/attachments/some-uuid/ticket8659/trac_8659-hold_powers.take2.patch) by burcin created at 2011-05-30 22:28:01
 
 
 
@@ -628,7 +628,7 @@ Sorry if these are dumb questions.
 archive/issue_comments_078583.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8659-hold_powers.take3.patch](tarball://root/attachments/some-uuid/ticket8659/trac_8659-hold_powers.take3.patch) by burcin created at 2012-02-15 16:59:30",
     "created_at": "2012-02-15T16:59:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8659",
     "type": "issue_comment",
@@ -637,7 +637,7 @@ archive/issue_comments_078583.json:
 }
 ```
 
-Attachment
+Attachment [trac_8659-hold_powers.take3.patch](tarball://root/attachments/some-uuid/ticket8659/trac_8659-hold_powers.take3.patch) by burcin created at 2012-02-15 16:59:30
 
 
 
@@ -874,7 +874,7 @@ Patch does not apply (either to 5.0.beta7, or to 4.8 with #12511 installed).
 archive/issue_comments_078591.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8659-hold_powers.take4.patch](tarball://root/attachments/some-uuid/ticket8659/trac_8659-hold_powers.take4.patch) by burcin created at 2012-05-24 09:49:41",
     "created_at": "2012-05-24T09:49:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8659",
     "type": "issue_comment",
@@ -883,7 +883,7 @@ archive/issue_comments_078591.json:
 }
 ```
 
-Attachment
+Attachment [trac_8659-hold_powers.take4.patch](tarball://root/attachments/some-uuid/ticket8659/trac_8659-hold_powers.take4.patch) by burcin created at 2012-05-24 09:49:41
 
 
 

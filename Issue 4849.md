@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4849
 archive/issue_comments_036768.json:
 ```json
 {
-    "body": "Attachment\n\nThis is mostly Magma code",
+    "body": "Attachment [heegner.py](tarball://root/attachments/some-uuid/ticket4849/heegner.py) by mabshoff created at 2008-12-21 22:10:31\n\nThis is mostly Magma code",
     "created_at": "2008-12-21T22:10:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4849",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_036768.json:
 }
 ```
 
-Attachment
+Attachment [heegner.py](tarball://root/attachments/some-uuid/ticket4849/heegner.py) by mabshoff created at 2008-12-21 22:10:31
 
 This is mostly Magma code
 

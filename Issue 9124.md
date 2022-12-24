@@ -50,7 +50,7 @@ Changing status from new to needs_review.
 archive/issue_comments_084874.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9124-h-vector.patch](tarball://root/attachments/some-uuid/ticket9124/trac_9124-h-vector.patch) by jhpalmieri created at 2010-06-03 04:14:38",
     "created_at": "2010-06-03T04:14:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9124",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_084874.json:
 }
 ```
 
-Attachment
+Attachment [trac_9124-h-vector.patch](tarball://root/attachments/some-uuid/ticket9124/trac_9124-h-vector.patch) by jhpalmieri created at 2010-06-03 04:14:38
 
 
 

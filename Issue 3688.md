@@ -69,7 +69,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3688
 archive/issue_comments_026143.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-shebang-fixes.patch](tarball://root/attachments/some-uuid/ticket3688/sage-shebang-fixes.patch) by tabbott created at 2008-08-03 05:43:28",
     "created_at": "2008-08-03T05:43:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3688",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_026143.json:
 }
 ```
 
-Attachment
+Attachment [sage-shebang-fixes.patch](tarball://root/attachments/some-uuid/ticket3688/sage-shebang-fixes.patch) by tabbott created at 2008-08-03 05:43:28
 
 
 
@@ -187,7 +187,7 @@ Resolution: fixed
 archive/issue_comments_026149.json:
 ```json
 {
-    "body": "Attachment\n\ndsage has been moved into its own package. You can find it under `SAGE_ROOT/spkg/standard/`.",
+    "body": "Attachment [sage-shebang-fixes.2.patch](tarball://root/attachments/some-uuid/ticket3688/sage-shebang-fixes.2.patch) by mvngu created at 2009-07-24 09:11:34\n\ndsage has been moved into its own package. You can find it under `SAGE_ROOT/spkg/standard/`.",
     "created_at": "2009-07-24T09:11:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3688",
     "type": "issue_comment",
@@ -196,6 +196,6 @@ archive/issue_comments_026149.json:
 }
 ```
 
-Attachment
+Attachment [sage-shebang-fixes.2.patch](tarball://root/attachments/some-uuid/ticket3688/sage-shebang-fixes.2.patch) by mvngu created at 2009-07-24 09:11:34
 
 dsage has been moved into its own package. You can find it under `SAGE_ROOT/spkg/standard/`.

@@ -194,7 +194,7 @@ Changing priority from minor to major.
 archive/issue_comments_004455.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [derivative.patch](tarball://root/attachments/some-uuid/ticket753/derivative.patch) by dmharvey created at 2008-02-28 03:09:20",
     "created_at": "2008-02-28T03:09:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/753",
     "type": "issue_comment",
@@ -203,7 +203,7 @@ archive/issue_comments_004455.json:
 }
 ```
 
-Attachment
+Attachment [derivative.patch](tarball://root/attachments/some-uuid/ticket753/derivative.patch) by dmharvey created at 2008-02-28 03:09:20
 
 
 
@@ -212,7 +212,7 @@ Attachment
 archive/issue_comments_004456.json:
 ```json
 {
-    "body": "Attachment\n\nI've added an additional file derivative2.patch which incorporates a missing file (derivative.pyx)",
+    "body": "Attachment [derivative2.patch](tarball://root/attachments/some-uuid/ticket753/derivative2.patch) by dmharvey created at 2008-03-02 01:55:27\n\nI've added an additional file derivative2.patch which incorporates a missing file (derivative.pyx)",
     "created_at": "2008-03-02T01:55:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/753",
     "type": "issue_comment",
@@ -221,7 +221,7 @@ archive/issue_comments_004456.json:
 }
 ```
 
-Attachment
+Attachment [derivative2.patch](tarball://root/attachments/some-uuid/ticket753/derivative2.patch) by dmharvey created at 2008-03-02 01:55:27
 
 I've added an additional file derivative2.patch which incorporates a missing file (derivative.pyx)
 
@@ -232,7 +232,7 @@ I've added an additional file derivative2.patch which incorporates a missing fil
 archive/issue_comments_004457.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me!  \"sage -testall\" passes, code and doctests look good.  I added a patch that changes some indirect doctests to direct doctests, and fixes a 1-character typo.\n\nApply all three patches.",
+    "body": "Attachment [derivative-reviewer.patch](tarball://root/attachments/some-uuid/ticket753/derivative-reviewer.patch) by cwitty created at 2008-03-02 02:53:24\n\nLooks good to me!  \"sage -testall\" passes, code and doctests look good.  I added a patch that changes some indirect doctests to direct doctests, and fixes a 1-character typo.\n\nApply all three patches.",
     "created_at": "2008-03-02T02:53:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/753",
     "type": "issue_comment",
@@ -241,7 +241,7 @@ archive/issue_comments_004457.json:
 }
 ```
 
-Attachment
+Attachment [derivative-reviewer.patch](tarball://root/attachments/some-uuid/ticket753/derivative-reviewer.patch) by cwitty created at 2008-03-02 02:53:24
 
 Looks good to me!  "sage -testall" passes, code and doctests look good.  I added a patch that changes some indirect doctests to direct doctests, and fixes a 1-character typo.
 

@@ -52,7 +52,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/750
 archive/issue_comments_004435.json:
 ```json
 {
-    "body": "Attachment\n\nAdded a patch to implement something similar to the second.  With this patch, one may do the following:\n\n\n```\nsage: G = SymmetricGroup(4)\nsage: g = G((1,2,3,4))\nsage: sage: g('abcd')\n'bcda'\nsage: sage: g([0,1,2,3])\n[1, 2, 3, 0]\nsage: sage: g(('foo','bar','baz','what'))\n('bar', 'baz', 'what', 'foo')\n```\n\n\nHowever, I can see absolutely no reason for one to want a dict rather than a list.  Do you have an example of where this might be useful?",
+    "body": "Attachment [750.hg](tarball://root/attachments/some-uuid/ticket750/750.hg) by boothby created at 2007-10-27 22:01:10\n\nAdded a patch to implement something similar to the second.  With this patch, one may do the following:\n\n\n```\nsage: G = SymmetricGroup(4)\nsage: g = G((1,2,3,4))\nsage: sage: g('abcd')\n'bcda'\nsage: sage: g([0,1,2,3])\n[1, 2, 3, 0]\nsage: sage: g(('foo','bar','baz','what'))\n('bar', 'baz', 'what', 'foo')\n```\n\n\nHowever, I can see absolutely no reason for one to want a dict rather than a list.  Do you have an example of where this might be useful?",
     "created_at": "2007-10-27T22:01:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/750",
     "type": "issue_comment",
@@ -61,7 +61,7 @@ archive/issue_comments_004435.json:
 }
 ```
 
-Attachment
+Attachment [750.hg](tarball://root/attachments/some-uuid/ticket750/750.hg) by boothby created at 2007-10-27 22:01:10
 
 Added a patch to implement something similar to the second.  With this patch, one may do the following:
 
@@ -141,7 +141,7 @@ Changing status from new to assigned.
 archive/issue_comments_004439.json:
 ```json
 {
-    "body": "Attachment\n\nIncludes .dict() code.",
+    "body": "Attachment [750.1.hg](tarball://root/attachments/some-uuid/ticket750/750.1.hg) by boothby created at 2007-10-31 18:03:05\n\nIncludes .dict() code.",
     "created_at": "2007-10-31T18:03:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/750",
     "type": "issue_comment",
@@ -150,7 +150,7 @@ archive/issue_comments_004439.json:
 }
 ```
 
-Attachment
+Attachment [750.1.hg](tarball://root/attachments/some-uuid/ticket750/750.1.hg) by boothby created at 2007-10-31 18:03:05
 
 Includes .dict() code.
 
@@ -179,7 +179,7 @@ fixes bugs from previous edition / ready for 2.8.11
 archive/issue_comments_004441.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [750.1.2.hg](tarball://root/attachments/some-uuid/ticket750/750.1.2.hg) by mabshoff created at 2007-11-01 20:12:35",
     "created_at": "2007-11-01T20:12:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/750",
     "type": "issue_comment",
@@ -188,7 +188,7 @@ archive/issue_comments_004441.json:
 }
 ```
 
-Attachment
+Attachment [750.1.2.hg](tarball://root/attachments/some-uuid/ticket750/750.1.2.hg) by mabshoff created at 2007-11-01 20:12:35
 
 
 

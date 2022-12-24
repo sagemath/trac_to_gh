@@ -69,7 +69,7 @@ Ignore lint.patch.  2828.patch is the one to be reviewed.
 archive/issue_comments_019414.json:
 ```json
 {
-    "body": "Attachment\n\nNote that this patch is based against 3.0.alpha2.",
+    "body": "Attachment [2828.patch](tarball://root/attachments/some-uuid/ticket2828/2828.patch) by mhansen created at 2008-04-06 10:36:42\n\nNote that this patch is based against 3.0.alpha2.",
     "created_at": "2008-04-06T10:36:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2828",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_019414.json:
 }
 ```
 
-Attachment
+Attachment [2828.patch](tarball://root/attachments/some-uuid/ticket2828/2828.patch) by mhansen created at 2008-04-06 10:36:42
 
 Note that this patch is based against 3.0.alpha2.
 
@@ -119,7 +119,7 @@ I provide a partial fix for the issues mentioned above. The patch does not fix a
 archive/issue_comments_019416.json:
 ```json
 {
-    "body": "Attachment\n\nMerged in Sage 3.0.alpha2",
+    "body": "Attachment [trac_2828_fixes.patch](tarball://root/attachments/some-uuid/ticket2828/trac_2828_fixes.patch) by mabshoff created at 2008-04-06 14:09:32\n\nMerged in Sage 3.0.alpha2",
     "created_at": "2008-04-06T14:09:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2828",
     "type": "issue_comment",
@@ -128,7 +128,7 @@ archive/issue_comments_019416.json:
 }
 ```
 
-Attachment
+Attachment [trac_2828_fixes.patch](tarball://root/attachments/some-uuid/ticket2828/trac_2828_fixes.patch) by mabshoff created at 2008-04-06 14:09:32
 
 Merged in Sage 3.0.alpha2
 

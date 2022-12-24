@@ -87,7 +87,7 @@ Changing assignee from was to wcauchois.
 archive/issue_comments_040086.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [boundary-style.patch](tarball://root/attachments/some-uuid/ticket5230/boundary-style.patch) by wcauchois created at 2009-02-25 00:17:22",
     "created_at": "2009-02-25T00:17:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5230",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_040086.json:
 }
 ```
 
-Attachment
+Attachment [boundary-style.patch](tarball://root/attachments/some-uuid/ticket5230/boundary-style.patch) by wcauchois created at 2009-02-25 00:17:22
 
 
 
@@ -142,7 +142,7 @@ NOTE: This patch will have to be rebased for 3.4.alpha because of the ReST trans
 archive/issue_comments_040088.json:
 ```json
 {
-    "body": "Attachment\n\nThis needs to be rebased, as mentioned in the comment:\n\n```\nmabshoff@sage:/scratch/mabshoff/sage-3.4.alpha1/devel/sage$ patch -p1 < trac_5230_boundary-style.patch \npatching file sage/plot/plot3d/parametric_plot3d.py\nHunk #1 succeeded at 10 with fuzz 2 (offset 1 line).\nHunk #2 FAILED at 39.\nHunk #3 FAILED at 100.\nHunk #4 succeeded at 492 (offset 106 lines).\nHunk #5 succeeded at 537 with fuzz 2 (offset 107 lines).\nHunk #6 succeeded at 565 (offset 108 lines).\n```\n\n\nSo I am changing the summary properly so I won't find it out that way again :)\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_5230-referee.patch](tarball://root/attachments/some-uuid/ticket5230/trac_5230-referee.patch) by mabshoff created at 2009-02-28 19:55:23\n\nThis needs to be rebased, as mentioned in the comment:\n\n```\nmabshoff@sage:/scratch/mabshoff/sage-3.4.alpha1/devel/sage$ patch -p1 < trac_5230_boundary-style.patch \npatching file sage/plot/plot3d/parametric_plot3d.py\nHunk #1 succeeded at 10 with fuzz 2 (offset 1 line).\nHunk #2 FAILED at 39.\nHunk #3 FAILED at 100.\nHunk #4 succeeded at 492 (offset 106 lines).\nHunk #5 succeeded at 537 with fuzz 2 (offset 107 lines).\nHunk #6 succeeded at 565 (offset 108 lines).\n```\n\n\nSo I am changing the summary properly so I won't find it out that way again :)\n\nCheers,\n\nMichael",
     "created_at": "2009-02-28T19:55:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5230",
     "type": "issue_comment",
@@ -151,7 +151,7 @@ archive/issue_comments_040088.json:
 }
 ```
 
-Attachment
+Attachment [trac_5230-referee.patch](tarball://root/attachments/some-uuid/ticket5230/trac_5230-referee.patch) by mabshoff created at 2009-02-28 19:55:23
 
 This needs to be rebased, as mentioned in the comment:
 
@@ -180,7 +180,7 @@ Michael
 archive/issue_comments_040089.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac5230-rebased.patch](tarball://root/attachments/some-uuid/ticket5230/trac5230-rebased.patch) by wcauchois created at 2009-04-07 17:48:41",
     "created_at": "2009-04-07T17:48:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5230",
     "type": "issue_comment",
@@ -189,7 +189,7 @@ archive/issue_comments_040089.json:
 }
 ```
 
-Attachment
+Attachment [trac5230-rebased.patch](tarball://root/attachments/some-uuid/ticket5230/trac5230-rebased.patch) by wcauchois created at 2009-04-07 17:48:41
 
 
 

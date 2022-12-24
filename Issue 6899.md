@@ -119,7 +119,7 @@ faster conversion to float
 archive/issue_comments_056999.json:
 ```json
 {
-    "body": "Attachment\n\nattachment:trac_6899.take2.patch doesn't go through python function calls for the conversions. Thus, it is much faster.\n\nWith the python calls to `.is_real()` and `.real_part()`:\n\n\n```\nsage: t = CC([2^20,0])\nsage: float(t)\n1048576.0\nsage: %timeit u = float(t)\n100000 loops, best of 3: 1.48 \u00b5s per loop\n```\n\n\nUsing mpfr directly:\n\n\n```\nsage: t = CC([2^20,0])\nsage: float(t)\n1048576.0\nsage: %timeit u = float(t)\n1000000 loops, best of 3: 221 ns per loop\n```\n\n\nI give a positive review to Mike's changes. Mike, can you look over the two lines I touched?",
+    "body": "Attachment [trac_6899.take2.patch](tarball://root/attachments/some-uuid/ticket6899/trac_6899.take2.patch) by burcin created at 2009-09-12 19:02:54\n\nattachment:trac_6899.take2.patch doesn't go through python function calls for the conversions. Thus, it is much faster.\n\nWith the python calls to `.is_real()` and `.real_part()`:\n\n\n```\nsage: t = CC([2^20,0])\nsage: float(t)\n1048576.0\nsage: %timeit u = float(t)\n100000 loops, best of 3: 1.48 \u00b5s per loop\n```\n\n\nUsing mpfr directly:\n\n\n```\nsage: t = CC([2^20,0])\nsage: float(t)\n1048576.0\nsage: %timeit u = float(t)\n1000000 loops, best of 3: 221 ns per loop\n```\n\n\nI give a positive review to Mike's changes. Mike, can you look over the two lines I touched?",
     "created_at": "2009-09-12T19:02:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6899",
     "type": "issue_comment",
@@ -128,7 +128,7 @@ archive/issue_comments_056999.json:
 }
 ```
 
-Attachment
+Attachment [trac_6899.take2.patch](tarball://root/attachments/some-uuid/ticket6899/trac_6899.take2.patch) by burcin created at 2009-09-12 19:02:54
 
 attachment:trac_6899.take2.patch doesn't go through python function calls for the conversions. Thus, it is much faster.
 

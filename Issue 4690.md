@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4690
 archive/issue_comments_035353.json:
 ```json
 {
-    "body": "Attachment\n\nPatch file for piecewise derivative",
+    "body": "Attachment [piecewise_derivative.patch](tarball://root/attachments/some-uuid/ticket4690/piecewise_derivative.patch) by pbutler created at 2008-12-04 01:23:15\n\nPatch file for piecewise derivative",
     "created_at": "2008-12-04T01:23:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4690",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_035353.json:
 }
 ```
 
-Attachment
+Attachment [piecewise_derivative.patch](tarball://root/attachments/some-uuid/ticket4690/piecewise_derivative.patch) by pbutler created at 2008-12-04 01:23:15
 
 Patch file for piecewise derivative
 

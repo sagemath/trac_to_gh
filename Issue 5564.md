@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5564
 archive/issue_comments_043303.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5564-1.patch](tarball://root/attachments/some-uuid/ticket5564/trac_5564-1.patch) by mhansen created at 2009-03-19 12:07:18",
     "created_at": "2009-03-19T12:07:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5564",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_043303.json:
 }
 ```
 
-Attachment
+Attachment [trac_5564-1.patch](tarball://root/attachments/some-uuid/ticket5564/trac_5564-1.patch) by mhansen created at 2009-03-19 12:07:18
 
 
 
@@ -57,7 +57,7 @@ Attachment
 archive/issue_comments_043304.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5564-2.patch](tarball://root/attachments/some-uuid/ticket5564/trac_5564-2.patch) by mhansen created at 2009-03-19 12:08:40",
     "created_at": "2009-03-19T12:08:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5564",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_043304.json:
 }
 ```
 
-Attachment
+Attachment [trac_5564-2.patch](tarball://root/attachments/some-uuid/ticket5564/trac_5564-2.patch) by mhansen created at 2009-03-19 12:08:40
 
 
 
@@ -159,7 +159,7 @@ I will be applying #4547 + #5211 in a live sage notebook (3.4), and will report 
 archive/issue_comments_043308.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5564-3.patch](tarball://root/attachments/some-uuid/ticket5564/trac_5564-3.patch) by mhansen created at 2009-03-23 11:15:02",
     "created_at": "2009-03-23T11:15:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5564",
     "type": "issue_comment",
@@ -168,7 +168,7 @@ archive/issue_comments_043308.json:
 }
 ```
 
-Attachment
+Attachment [trac_5564-3.patch](tarball://root/attachments/some-uuid/ticket5564/trac_5564-3.patch) by mhansen created at 2009-03-23 11:15:02
 
 
 
@@ -273,7 +273,7 @@ This ticket is intended to fix [this problem](http://groups.google.com/group/sag
 archive/issue_comments_043314.json:
 ```json
 {
-    "body": "Attachment\n\nscreenshot of the save and re-edit problem",
+    "body": "Attachment [trac_5564-problem.png](tarball://root/attachments/some-uuid/ticket5564/trac_5564-problem.png) by ddrake created at 2009-06-03 02:57:36\n\nscreenshot of the save and re-edit problem",
     "created_at": "2009-06-03T02:57:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5564",
     "type": "issue_comment",
@@ -282,7 +282,7 @@ archive/issue_comments_043314.json:
 }
 ```
 
-Attachment
+Attachment [trac_5564-problem.png](tarball://root/attachments/some-uuid/ticket5564/trac_5564-problem.png) by ddrake created at 2009-06-03 02:57:36
 
 screenshot of the save and re-edit problem
 

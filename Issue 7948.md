@@ -296,7 +296,7 @@ Applies to 4.3.1.rc0
 archive/issue_comments_069341.json:
 ```json
 {
-    "body": "Attachment\n\nApplies to 4.3.1.rc0",
+    "body": "Attachment [trac_7948-docstrings.2.patch](tarball://root/attachments/some-uuid/ticket7948/trac_7948-docstrings.2.patch) by cremona created at 2010-01-16 17:59:39\n\nApplies to 4.3.1.rc0",
     "created_at": "2010-01-16T17:59:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7948",
     "type": "issue_comment",
@@ -305,7 +305,7 @@ archive/issue_comments_069341.json:
 }
 ```
 
-Attachment
+Attachment [trac_7948-docstrings.2.patch](tarball://root/attachments/some-uuid/ticket7948/trac_7948-docstrings.2.patch) by cremona created at 2010-01-16 17:59:39
 
 Applies to 4.3.1.rc0
 
@@ -437,7 +437,7 @@ both patches: 162 warnings
 archive/issue_comments_069347.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7948-cythonargspec.patch](tarball://root/attachments/some-uuid/ticket7948/trac_7948-cythonargspec.patch) by jhpalmieri created at 2010-01-17 01:34:08",
     "created_at": "2010-01-17T01:34:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7948",
     "type": "issue_comment",
@@ -446,7 +446,7 @@ archive/issue_comments_069347.json:
 }
 ```
 
-Attachment
+Attachment [trac_7948-cythonargspec.patch](tarball://root/attachments/some-uuid/ticket7948/trac_7948-cythonargspec.patch) by jhpalmieri created at 2010-01-17 01:34:08
 
 
 
@@ -501,7 +501,7 @@ apply on top of the other two patches
 archive/issue_comments_069350.json:
 ```json
 {
-    "body": "Attachment\n\nI'm about to test John P's two patches on top of mine.  If all goes well I'll give the ticket a positive review (since John already positively reviewed my patch), and then we can make a new patch for what remains.",
+    "body": "Attachment [trac_7948-lazy.patch](tarball://root/attachments/some-uuid/ticket7948/trac_7948-lazy.patch) by cremona created at 2010-01-17 18:29:15\n\nI'm about to test John P's two patches on top of mine.  If all goes well I'll give the ticket a positive review (since John already positively reviewed my patch), and then we can make a new patch for what remains.",
     "created_at": "2010-01-17T18:29:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7948",
     "type": "issue_comment",
@@ -510,7 +510,7 @@ archive/issue_comments_069350.json:
 }
 ```
 
-Attachment
+Attachment [trac_7948-lazy.patch](tarball://root/attachments/some-uuid/ticket7948/trac_7948-lazy.patch) by cremona created at 2010-01-17 18:29:15
 
 I'm about to test John P's two patches on top of mine.  If all goes well I'll give the ticket a positive review (since John already positively reviewed my patch), and then we can make a new patch for what remains.
 
@@ -521,7 +521,7 @@ I'm about to test John P's two patches on top of mine.  If all goes well I'll gi
 archive/issue_comments_069351.json:
 ```json
 {
-    "body": "Attachment\n\nApply after previous",
+    "body": "Attachment [trac_7948-part4.patch](tarball://root/attachments/some-uuid/ticket7948/trac_7948-part4.patch) by cremona created at 2010-01-17 19:03:18\n\nApply after previous",
     "created_at": "2010-01-17T19:03:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7948",
     "type": "issue_comment",
@@ -530,7 +530,7 @@ archive/issue_comments_069351.json:
 }
 ```
 
-Attachment
+Attachment [trac_7948-part4.patch](tarball://root/attachments/some-uuid/ticket7948/trac_7948-part4.patch) by cremona created at 2010-01-17 19:03:18
 
 Apply after previous
 

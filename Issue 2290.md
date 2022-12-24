@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2290
 archive/issue_comments_015188.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8681.patch](tarball://root/attachments/some-uuid/ticket2290/8681.patch) by zimmerma created at 2008-02-24 09:48:36",
     "created_at": "2008-02-24T09:48:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2290",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_015188.json:
 }
 ```
 
-Attachment
+Attachment [8681.patch](tarball://root/attachments/some-uuid/ticket2290/8681.patch) by zimmerma created at 2008-02-24 09:48:36
 
 
 
@@ -83,7 +83,7 @@ Michael
 archive/issue_comments_015190.json:
 ```json
 {
-    "body": "Attachment\n\nmy attempt, as a native english speaker",
+    "body": "Attachment [sage-2290-english.patch](tarball://root/attachments/some-uuid/ticket2290/sage-2290-english.patch) by was created at 2008-02-24 20:47:18\n\nmy attempt, as a native english speaker",
     "created_at": "2008-02-24T20:47:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2290",
     "type": "issue_comment",
@@ -92,7 +92,7 @@ archive/issue_comments_015190.json:
 }
 ```
 
-Attachment
+Attachment [sage-2290-english.patch](tarball://root/attachments/some-uuid/ticket2290/sage-2290-english.patch) by was created at 2008-02-24 20:47:18
 
 my attempt, as a native english speaker
 

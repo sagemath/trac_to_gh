@@ -529,7 +529,7 @@ Thanks!
 archive/issue_comments_090913.json:
 ```json
 {
-    "body": "Attachment\n\nYou have to commit Martin's changes (\"p0\") first to apply this.",
+    "body": "Attachment [trac_9475-libm4ri-20100701.p1-based_on_p0.patch](tarball://root/attachments/some-uuid/ticket9475/trac_9475-libm4ri-20100701.p1-based_on_p0.patch) by leif created at 2010-07-16 02:12:07\n\nYou have to commit Martin's changes (\"p0\") first to apply this.",
     "created_at": "2010-07-16T02:12:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9475",
     "type": "issue_comment",
@@ -538,7 +538,7 @@ archive/issue_comments_090913.json:
 }
 ```
 
-Attachment
+Attachment [trac_9475-libm4ri-20100701.p1-based_on_p0.patch](tarball://root/attachments/some-uuid/ticket9475/trac_9475-libm4ri-20100701.p1-based_on_p0.patch) by leif created at 2010-07-16 02:12:07
 
 You have to commit Martin's changes ("p0") first to apply this.
 
@@ -1654,7 +1654,7 @@ Sage library patch - needed to comply with new M4RI API (libm4ri-20100701). (Con
 archive/issue_comments_090957.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:50 malb]:\n> Argh, I'm an idiot! I'll update the patch, the 'top' stuff must be removed\n\nNevertheless, passed all long tests with Sage 4.5.3.alpha0 and PolyBoRi 0.6.4.p4 from #9717 on Fedora 13 x86 (Pentium 4 Prescott, gcc 4.4.4).\n\nThe newly uploaded patch contains only the desired changes.",
+    "body": "Attachment [m4ri_new_version.v2.patch](tarball://root/attachments/some-uuid/ticket9475/m4ri_new_version.v2.patch) by leif created at 2010-08-13 09:43:20\n\nReplying to [comment:50 malb]:\n> Argh, I'm an idiot! I'll update the patch, the 'top' stuff must be removed\n\nNevertheless, passed all long tests with Sage 4.5.3.alpha0 and PolyBoRi 0.6.4.p4 from #9717 on Fedora 13 x86 (Pentium 4 Prescott, gcc 4.4.4).\n\nThe newly uploaded patch contains only the desired changes.",
     "created_at": "2010-08-13T09:43:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9475",
     "type": "issue_comment",
@@ -1663,7 +1663,7 @@ archive/issue_comments_090957.json:
 }
 ```
 
-Attachment
+Attachment [m4ri_new_version.v2.patch](tarball://root/attachments/some-uuid/ticket9475/m4ri_new_version.v2.patch) by leif created at 2010-08-13 09:43:20
 
 Replying to [comment:50 malb]:
 > Argh, I'm an idiot! I'll update the patch, the 'top' stuff must be removed

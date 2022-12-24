@@ -360,7 +360,7 @@ bibtex-data of some components
 archive/issue_comments_022987.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-3317-bib-data.patch](tarball://root/attachments/some-uuid/ticket3317/trac-3317-bib-data.patch) by ranosch created at 2011-09-27 16:43:54",
     "created_at": "2011-09-27T16:43:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3317",
     "type": "issue_comment",
@@ -369,7 +369,7 @@ archive/issue_comments_022987.json:
 }
 ```
 
-Attachment
+Attachment [trac-3317-bib-data.patch](tarball://root/attachments/some-uuid/ticket3317/trac-3317-bib-data.patch) by ranosch created at 2011-09-27 16:43:54
 
 
 
@@ -378,7 +378,7 @@ Attachment
 archive/issue_comments_022988.json:
 ```json
 {
-    "body": "Attachment\n\nUploaded an updated version (with the sage citation included) and accidently added `trac-3317-example-usage.2.patch` ... please ignore this file.",
+    "body": "Attachment [trac-3317-example-usage.2.patch](tarball://root/attachments/some-uuid/ticket3317/trac-3317-example-usage.2.patch) by ranosch created at 2011-09-27 16:53:17\n\nUploaded an updated version (with the sage citation included) and accidently added `trac-3317-example-usage.2.patch` ... please ignore this file.",
     "created_at": "2011-09-27T16:53:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3317",
     "type": "issue_comment",
@@ -387,7 +387,7 @@ archive/issue_comments_022988.json:
 }
 ```
 
-Attachment
+Attachment [trac-3317-example-usage.2.patch](tarball://root/attachments/some-uuid/ticket3317/trac-3317-example-usage.2.patch) by ranosch created at 2011-09-27 16:53:17
 
 Uploaded an updated version (with the sage citation included) and accidently added `trac-3317-example-usage.2.patch` ... please ignore this file.
 
@@ -569,7 +569,7 @@ The intention of this ticket (as far as I see it) is to track sage's components 
 archive/issue_comments_022997.json:
 ```json
 {
-    "body": "Attachment\n\nNew citation system",
+    "body": "Attachment [trac-3317-citation-system-integrated.patch](tarball://root/attachments/some-uuid/ticket3317/trac-3317-citation-system-integrated.patch) by ranosch created at 2012-05-28 15:55:50\n\nNew citation system",
     "created_at": "2012-05-28T15:55:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3317",
     "type": "issue_comment",
@@ -578,7 +578,7 @@ archive/issue_comments_022997.json:
 }
 ```
 
-Attachment
+Attachment [trac-3317-citation-system-integrated.patch](tarball://root/attachments/some-uuid/ticket3317/trac-3317-citation-system-integrated.patch) by ranosch created at 2012-05-28 15:55:50
 
 New citation system
 
@@ -625,7 +625,7 @@ environment changes for the citation system
 archive/issue_comments_023000.json:
 ```json
 {
-    "body": "Attachment\n\nNew citation system",
+    "body": "Attachment [trac-3317-citation-system.patch](tarball://root/attachments/some-uuid/ticket3317/trac-3317-citation-system.patch) by ranosch created at 2012-05-28 22:43:46\n\nNew citation system",
     "created_at": "2012-05-28T22:43:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3317",
     "type": "issue_comment",
@@ -634,7 +634,7 @@ archive/issue_comments_023000.json:
 }
 ```
 
-Attachment
+Attachment [trac-3317-citation-system.patch](tarball://root/attachments/some-uuid/ticket3317/trac-3317-citation-system.patch) by ranosch created at 2012-05-28 22:43:46
 
 New citation system
 
@@ -663,7 +663,7 @@ bibtex-data of some components
 archive/issue_comments_023002.json:
 ```json
 {
-    "body": "Attachment\n\nExample usage in multipolynomial-libsingular",
+    "body": "Attachment [trac-3317-example-usage.patch](tarball://root/attachments/some-uuid/ticket3317/trac-3317-example-usage.patch) by ranosch created at 2012-05-28 22:45:10\n\nExample usage in multipolynomial-libsingular",
     "created_at": "2012-05-28T22:45:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3317",
     "type": "issue_comment",
@@ -672,7 +672,7 @@ archive/issue_comments_023002.json:
 }
 ```
 
-Attachment
+Attachment [trac-3317-example-usage.patch](tarball://root/attachments/some-uuid/ticket3317/trac-3317-example-usage.patch) by ranosch created at 2012-05-28 22:45:10
 
 Example usage in multipolynomial-libsingular
 

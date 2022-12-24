@@ -78,7 +78,7 @@ Looks like this is in Ginac/Pynac.  But maybe it makes sense *not* to have an an
 archive/issue_comments_082346.json:
 ```json
 {
-    "body": "Attachment\n\nThis was fixed upstream in ginac. The changes will be in the next pynac release. Patch with doctest is attached.",
+    "body": "Attachment [trac_8943-series.patch](tarball://root/attachments/some-uuid/ticket8943/trac_8943-series.patch) by burcin created at 2011-05-08 19:51:29\n\nThis was fixed upstream in ginac. The changes will be in the next pynac release. Patch with doctest is attached.",
     "created_at": "2011-05-08T19:51:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8943",
     "type": "issue_comment",
@@ -87,7 +87,7 @@ archive/issue_comments_082346.json:
 }
 ```
 
-Attachment
+Attachment [trac_8943-series.patch](tarball://root/attachments/some-uuid/ticket8943/trac_8943-series.patch) by burcin created at 2011-05-08 19:51:29
 
 This was fixed upstream in ginac. The changes will be in the next pynac release. Patch with doctest is attached.
 

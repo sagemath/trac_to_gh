@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8226
 archive/issue_comments_072635.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-8226-elementary_divisors.patch](tarball://root/attachments/some-uuid/ticket8226/trac-8226-elementary_divisors.patch) by mraum created at 2010-02-10 08:49:46",
     "created_at": "2010-02-10T08:49:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8226",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_072635.json:
 }
 ```
 
-Attachment
+Attachment [trac-8226-elementary_divisors.patch](tarball://root/attachments/some-uuid/ticket8226/trac-8226-elementary_divisors.patch) by mraum created at 2010-02-10 08:49:46
 
 
 

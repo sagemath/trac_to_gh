@@ -197,7 +197,7 @@ The patch I will post will do this properly.
 archive/issue_comments_004334.json:
 ```json
 {
-    "body": "Attachment\n\nAttached patch fixes the bugs (was made against 2.9.3)",
+    "body": "Attachment [eciso.hg](tarball://root/attachments/some-uuid/ticket740/eciso.hg) by cremona created at 2008-01-25 18:18:46\n\nAttached patch fixes the bugs (was made against 2.9.3)",
     "created_at": "2008-01-25T18:18:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/740",
     "type": "issue_comment",
@@ -206,7 +206,7 @@ archive/issue_comments_004334.json:
 }
 ```
 
-Attachment
+Attachment [eciso.hg](tarball://root/attachments/some-uuid/ticket740/eciso.hg) by cremona created at 2008-01-25 18:18:46
 
 Attached patch fixes the bugs (was made against 2.9.3)
 
@@ -270,7 +270,7 @@ Should we throw an error, or indicate (in the docstring or elsewhere) that the r
 archive/issue_comments_004336.json:
 ```json
 {
-    "body": "Attachment\n\nThis coimpletely replaces the previous patch (eciso.hg)",
+    "body": "Attachment [8087.patch](tarball://root/attachments/some-uuid/ticket740/8087.patch) by cremona created at 2008-01-27 03:44:40\n\nThis coimpletely replaces the previous patch (eciso.hg)",
     "created_at": "2008-01-27T03:44:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/740",
     "type": "issue_comment",
@@ -279,7 +279,7 @@ archive/issue_comments_004336.json:
 }
 ```
 
-Attachment
+Attachment [8087.patch](tarball://root/attachments/some-uuid/ticket740/8087.patch) by cremona created at 2008-01-27 03:44:40
 
 This coimpletely replaces the previous patch (eciso.hg)
 
@@ -290,7 +290,7 @@ This coimpletely replaces the previous patch (eciso.hg)
 archive/issue_comments_004337.json:
 ```json
 {
-    "body": "Attachment\n\nMinor additional patch to 8087.patch (fix 2 doctests)",
+    "body": "Attachment [8088.patch](tarball://root/attachments/some-uuid/ticket740/8088.patch) by cremona created at 2008-01-27 04:00:43\n\nMinor additional patch to 8087.patch (fix 2 doctests)",
     "created_at": "2008-01-27T04:00:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/740",
     "type": "issue_comment",
@@ -299,7 +299,7 @@ archive/issue_comments_004337.json:
 }
 ```
 
-Attachment
+Attachment [8088.patch](tarball://root/attachments/some-uuid/ticket740/8088.patch) by cremona created at 2008-01-27 04:00:43
 
 Minor additional patch to 8087.patch (fix 2 doctests)
 

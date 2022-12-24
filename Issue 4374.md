@@ -185,7 +185,7 @@ Changing status from assigned to new.
 archive/issue_comments_032170.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch fixes the above issues, as well as cleaning up the files `book_stein_ent.py` and `book_stein_modform.py`. I'll keep an eye out for any new numerical noise that pops up during testing ...",
+    "body": "Attachment [trac-4374.patch](tarball://root/attachments/some-uuid/ticket4374/trac-4374.patch) by craigcitro created at 2008-10-27 19:47:28\n\nThe attached patch fixes the above issues, as well as cleaning up the files `book_stein_ent.py` and `book_stein_modform.py`. I'll keep an eye out for any new numerical noise that pops up during testing ...",
     "created_at": "2008-10-27T19:47:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4374",
     "type": "issue_comment",
@@ -194,7 +194,7 @@ archive/issue_comments_032170.json:
 }
 ```
 
-Attachment
+Attachment [trac-4374.patch](tarball://root/attachments/some-uuid/ticket4374/trac-4374.patch) by craigcitro created at 2008-10-27 19:47:28
 
 The attached patch fixes the above issues, as well as cleaning up the files `book_stein_ent.py` and `book_stein_modform.py`. I'll keep an eye out for any new numerical noise that pops up during testing ...
 

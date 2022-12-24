@@ -49,7 +49,7 @@ I used sage-3.0.1 and applied http://sage.math.washington.edu/home/was/patches/b
 archive/issue_comments_022237.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3213.patch](tarball://root/attachments/some-uuid/ticket3213/3213.patch) by TimothyClemans created at 2008-05-16 01:32:51",
     "created_at": "2008-05-16T01:32:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3213",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_022237.json:
 }
 ```
 
-Attachment
+Attachment [3213.patch](tarball://root/attachments/some-uuid/ticket3213/3213.patch) by TimothyClemans created at 2008-05-16 01:32:51
 
 
 

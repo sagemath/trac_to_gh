@@ -38,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2752
 archive/issue_comments_018901.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [all_paths_speedup.patch](tarball://root/attachments/some-uuid/ticket2752/all_paths_speedup.patch) by vgermrk created at 2008-04-01 13:43:12",
     "created_at": "2008-04-01T13:43:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2752",
     "type": "issue_comment",
@@ -47,7 +47,7 @@ archive/issue_comments_018901.json:
 }
 ```
 
-Attachment
+Attachment [all_paths_speedup.patch](tarball://root/attachments/some-uuid/ticket2752/all_paths_speedup.patch) by vgermrk created at 2008-04-01 13:43:12
 
 
 
@@ -164,7 +164,7 @@ Sorry, the comment about dense small graphs didn't get deleted before going to p
 archive/issue_comments_018906.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [test_paths.sage](tarball://root/attachments/some-uuid/ticket2752/test_paths.sage) by rlm created at 2008-04-02 00:35:24",
     "created_at": "2008-04-02T00:35:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2752",
     "type": "issue_comment",
@@ -173,7 +173,7 @@ archive/issue_comments_018906.json:
 }
 ```
 
-Attachment
+Attachment [test_paths.sage](tarball://root/attachments/some-uuid/ticket2752/test_paths.sage) by rlm created at 2008-04-02 00:35:24
 
 
 

@@ -148,7 +148,7 @@ Fixing dangerous doc test behaviour in session.pyx (2nd version)
 archive/issue_comments_034226.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:3 mhansen]:\n> My concern with the current wording is that it's not entirely clear that the user should NOT save the session to a file in SAGE_TMP.  We only do that for doctesting purposes.\n\nHi Mike, \n\nGood point! I changed my patch accordingly - in the new patch I clearly say that for permanent saving SAGE_TMP would be a bad idea.\n\nCheers\n    Simon",
+    "body": "Attachment [save_session.patch](tarball://root/attachments/some-uuid/ticket4568/save_session.patch) by SimonKing created at 2008-11-22 11:15:41\n\nReplying to [comment:3 mhansen]:\n> My concern with the current wording is that it's not entirely clear that the user should NOT save the session to a file in SAGE_TMP.  We only do that for doctesting purposes.\n\nHi Mike, \n\nGood point! I changed my patch accordingly - in the new patch I clearly say that for permanent saving SAGE_TMP would be a bad idea.\n\nCheers\n    Simon",
     "created_at": "2008-11-22T11:15:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4568",
     "type": "issue_comment",
@@ -157,7 +157,7 @@ archive/issue_comments_034226.json:
 }
 ```
 
-Attachment
+Attachment [save_session.patch](tarball://root/attachments/some-uuid/ticket4568/save_session.patch) by SimonKing created at 2008-11-22 11:15:41
 
 Replying to [comment:3 mhansen]:
 > My concern with the current wording is that it's not entirely clear that the user should NOT save the session to a file in SAGE_TMP.  We only do that for doctesting purposes.

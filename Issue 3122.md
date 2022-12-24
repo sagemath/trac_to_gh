@@ -186,7 +186,7 @@ This patch is to the main makefile and is a classic patch, i.e. no hg here
 archive/issue_comments_021637.json:
 ```json
 {
-    "body": "Attachment\n\nThe hopefully final patch for 3.2.1.rc1 :)\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_3122.patch](tarball://root/attachments/some-uuid/ticket3122/trac_3122.patch) by mabshoff created at 2008-12-01 08:45:19\n\nThe hopefully final patch for 3.2.1.rc1 :)\n\nCheers,\n\nMichael",
     "created_at": "2008-12-01T08:45:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3122",
     "type": "issue_comment",
@@ -195,7 +195,7 @@ archive/issue_comments_021637.json:
 }
 ```
 
-Attachment
+Attachment [trac_3122.patch](tarball://root/attachments/some-uuid/ticket3122/trac_3122.patch) by mabshoff created at 2008-12-01 08:45:19
 
 The hopefully final patch for 3.2.1.rc1 :)
 

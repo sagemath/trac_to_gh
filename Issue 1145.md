@@ -330,7 +330,7 @@ Changing status from new to needs_review.
 archive/issue_comments_006973.json:
 ```json
 {
-    "body": "Attachment\n\nApply first: #5945, #5310\n\nPatch makes use of SQUFOF, ecmfactor, cunningham_table and sympy.factorint.\n\nTo pass all tests cunningham database should become a standard package or the warning in cunningham_tables.py should be removed.\n\nTo evalutate run attachment:evaluate_1145.sage\n\nThis should also fix #9463.",
+    "body": "Attachment [evaluate_1145.sage](tarball://root/attachments/some-uuid/ticket1145/evaluate_1145.sage) by aapitzsch created at 2010-11-19 15:18:02\n\nApply first: #5945, #5310\n\nPatch makes use of SQUFOF, ecmfactor, cunningham_table and sympy.factorint.\n\nTo pass all tests cunningham database should become a standard package or the warning in cunningham_tables.py should be removed.\n\nTo evalutate run attachment:evaluate_1145.sage\n\nThis should also fix #9463.",
     "created_at": "2010-11-19T15:18:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
@@ -339,7 +339,7 @@ archive/issue_comments_006973.json:
 }
 ```
 
-Attachment
+Attachment [evaluate_1145.sage](tarball://root/attachments/some-uuid/ticket1145/evaluate_1145.sage) by aapitzsch created at 2010-11-19 15:18:02
 
 Apply first: #5945, #5310
 
@@ -635,7 +635,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_006987.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_1145_cunningham_warning.patch](tarball://root/attachments/some-uuid/ticket1145/trac_1145_cunningham_warning.patch) by aapitzsch created at 2010-12-07 15:56:41",
     "created_at": "2010-12-07T15:56:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
@@ -644,7 +644,7 @@ archive/issue_comments_006987.json:
 }
 ```
 
-Attachment
+Attachment [trac_1145_cunningham_warning.patch](tarball://root/attachments/some-uuid/ticket1145/trac_1145_cunningham_warning.patch) by aapitzsch created at 2010-12-07 15:56:41
 
 
 
@@ -728,7 +728,7 @@ Apply trac_1145_integer_factorization.patch and trac_1145_cunningham_warning.pat
 archive/issue_comments_006992.json:
 ```json
 {
-    "body": "Attachment\n\nYafu (http://sourceforge.net/projects/yafu/) might be an interesting software to include,\nalthough I have difficulties finding its license. It includes a multi-thread implementation\nof SIQS, which might be interesting in the 70-100 digit range.\n\nPaul Zimmermann",
+    "body": "Attachment [trac_1145_integer_factorization.patch](tarball://root/attachments/some-uuid/ticket1145/trac_1145_integer_factorization.patch) by zimmerma created at 2011-06-17 09:39:26\n\nYafu (http://sourceforge.net/projects/yafu/) might be an interesting software to include,\nalthough I have difficulties finding its license. It includes a multi-thread implementation\nof SIQS, which might be interesting in the 70-100 digit range.\n\nPaul Zimmermann",
     "created_at": "2011-06-17T09:39:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
@@ -737,7 +737,7 @@ archive/issue_comments_006992.json:
 }
 ```
 
-Attachment
+Attachment [trac_1145_integer_factorization.patch](tarball://root/attachments/some-uuid/ticket1145/trac_1145_integer_factorization.patch) by zimmerma created at 2011-06-17 09:39:26
 
 Yafu (http://sourceforge.net/projects/yafu/) might be an interesting software to include,
 although I have difficulties finding its license. It includes a multi-thread implementation

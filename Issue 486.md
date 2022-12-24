@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/486
 archive/issue_comments_002425.json:
 ```json
 {
-    "body": "Attachment\n\nPatch for the improvements described in this ticket. Touches files setup.py, combinat.py, and partitions_c.cc",
+    "body": "Attachment [5835-number_of_partitions-improvement.patch](tarball://root/attachments/some-uuid/ticket486/5835-number_of_partitions-improvement.patch) by bober created at 2007-08-29 15:56:05\n\nPatch for the improvements described in this ticket. Touches files setup.py, combinat.py, and partitions_c.cc",
     "created_at": "2007-08-29T15:56:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/486",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_002425.json:
 }
 ```
 
-Attachment
+Attachment [5835-number_of_partitions-improvement.patch](tarball://root/attachments/some-uuid/ticket486/5835-number_of_partitions-improvement.patch) by bober created at 2007-08-29 15:56:05
 
 Patch for the improvements described in this ticket. Touches files setup.py, combinat.py, and partitions_c.cc
 
@@ -125,7 +125,7 @@ bundle with both the patches for 468 and 486
 archive/issue_comments_002428.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [partition_updates.hg](tarball://root/attachments/some-uuid/ticket486/partition_updates.hg) by was created at 2007-10-13 07:47:59",
     "created_at": "2007-10-13T07:47:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/486",
     "type": "issue_comment",
@@ -134,7 +134,7 @@ archive/issue_comments_002428.json:
 }
 ```
 
-Attachment
+Attachment [partition_updates.hg](tarball://root/attachments/some-uuid/ticket486/partition_updates.hg) by was created at 2007-10-13 07:47:59
 
 
 

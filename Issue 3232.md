@@ -136,7 +136,7 @@ I didn't hear back from rpw yet. Maybe another referee could jump in.
 archive/issue_comments_022395.json:
 ```json
 {
-    "body": "Attachment\n\nNTRU derived lattice, n=47",
+    "body": "Attachment [ntru_2_47.sage](tarball://root/attachments/some-uuid/ticket3232/ntru_2_47.sage) by rpw created at 2008-07-07 23:12:17\n\nNTRU derived lattice, n=47",
     "created_at": "2008-07-07T23:12:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3232",
     "type": "issue_comment",
@@ -145,7 +145,7 @@ archive/issue_comments_022395.json:
 }
 ```
 
-Attachment
+Attachment [ntru_2_47.sage](tarball://root/attachments/some-uuid/ticket3232/ntru_2_47.sage) by rpw created at 2008-07-07 23:12:17
 
 NTRU derived lattice, n=47
 
@@ -269,7 +269,7 @@ addresses rpw's review
 archive/issue_comments_022400.json:
 ```json
 {
-    "body": "Attachment\n\nTypos fixed in updated patch, apply `bkz.patch` only.",
+    "body": "Attachment [bkz.patch](tarball://root/attachments/some-uuid/ticket3232/bkz.patch) by malb created at 2008-07-08 11:55:28\n\nTypos fixed in updated patch, apply `bkz.patch` only.",
     "created_at": "2008-07-08T11:55:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3232",
     "type": "issue_comment",
@@ -278,7 +278,7 @@ archive/issue_comments_022400.json:
 }
 ```
 
-Attachment
+Attachment [bkz.patch](tarball://root/attachments/some-uuid/ticket3232/bkz.patch) by malb created at 2008-07-08 11:55:28
 
 Typos fixed in updated patch, apply `bkz.patch` only.
 

@@ -65,7 +65,7 @@ patch that removes the union method
 archive/issue_comments_039108.json:
 ```json
 {
-    "body": "Attachment\n\nI disagree that this should be removed.  I created it because I use it!\n\nI think the docstring makes it pretty clear what it does, but I do not object to renaming it.  Perhaps union_of_vertices? Or union_by_vertices?\n\nMarshall",
+    "body": "Attachment [remove_union.diff](tarball://root/attachments/some-uuid/ticket5117/remove_union.diff) by mhampton created at 2009-01-28 16:01:07\n\nI disagree that this should be removed.  I created it because I use it!\n\nI think the docstring makes it pretty clear what it does, but I do not object to renaming it.  Perhaps union_of_vertices? Or union_by_vertices?\n\nMarshall",
     "created_at": "2009-01-28T16:01:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5117",
     "type": "issue_comment",
@@ -74,7 +74,7 @@ archive/issue_comments_039108.json:
 }
 ```
 
-Attachment
+Attachment [remove_union.diff](tarball://root/attachments/some-uuid/ticket5117/remove_union.diff) by mhampton created at 2009-01-28 16:01:07
 
 I disagree that this should be removed.  I created it because I use it!
 
@@ -277,7 +277,7 @@ Real Double Field
 archive/issue_comments_039116.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [14261.patch](tarball://root/attachments/some-uuid/ticket5117/14261.patch) by vbraun created at 2010-05-09 14:13:09",
     "created_at": "2010-05-09T14:13:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5117",
     "type": "issue_comment",
@@ -286,7 +286,7 @@ archive/issue_comments_039116.json:
 }
 ```
 
-Attachment
+Attachment [14261.patch](tarball://root/attachments/some-uuid/ticket5117/14261.patch) by vbraun created at 2010-05-09 14:13:09
 
 
 
@@ -313,7 +313,7 @@ Apply this patch first
 archive/issue_comments_039118.json:
 ```json
 {
-    "body": "Attachment\n\nApply this patch second (and last)",
+    "body": "Attachment [trac_5117_rename_union_to_convex_hull_add_coerce_field_for polyhedra.patch](tarball://root/attachments/some-uuid/ticket5117/trac_5117_rename_union_to_convex_hull_add_coerce_field_for polyhedra.patch) by novoselt created at 2010-05-09 15:40:00\n\nApply this patch second (and last)",
     "created_at": "2010-05-09T15:40:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5117",
     "type": "issue_comment",
@@ -322,7 +322,7 @@ archive/issue_comments_039118.json:
 }
 ```
 
-Attachment
+Attachment [trac_5117_rename_union_to_convex_hull_add_coerce_field_for polyhedra.patch](tarball://root/attachments/some-uuid/ticket5117/trac_5117_rename_union_to_convex_hull_add_coerce_field_for polyhedra.patch) by novoselt created at 2010-05-09 15:40:00
 
 Apply this patch second (and last)
 
@@ -333,7 +333,7 @@ Apply this patch second (and last)
 archive/issue_comments_039119.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me. I have renamed the original patch file to include the ticket number and its description. On top of that I have made the documentation look nicer and added a message to the TyperError exception. Passes all doctests, so I am giving this a positive review.\n\nMy only concern is whether or not we need to use some framework for deprecating functions or what is done for \"union\" is enough.",
+    "body": "Attachment [trac_5117_reviewer_docfixes.patch](tarball://root/attachments/some-uuid/ticket5117/trac_5117_reviewer_docfixes.patch) by novoselt created at 2010-05-09 15:45:03\n\nLooks good to me. I have renamed the original patch file to include the ticket number and its description. On top of that I have made the documentation look nicer and added a message to the TyperError exception. Passes all doctests, so I am giving this a positive review.\n\nMy only concern is whether or not we need to use some framework for deprecating functions or what is done for \"union\" is enough.",
     "created_at": "2010-05-09T15:45:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5117",
     "type": "issue_comment",
@@ -342,7 +342,7 @@ archive/issue_comments_039119.json:
 }
 ```
 
-Attachment
+Attachment [trac_5117_reviewer_docfixes.patch](tarball://root/attachments/some-uuid/ticket5117/trac_5117_reviewer_docfixes.patch) by novoselt created at 2010-05-09 15:45:03
 
 Looks good to me. I have renamed the original patch file to include the ticket number and its description. On top of that I have made the documentation look nicer and added a message to the TyperError exception. Passes all doctests, so I am giving this a positive review.
 

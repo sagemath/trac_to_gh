@@ -215,7 +215,7 @@ This is supposed to fix #2899, so it would be good to check if the other issue i
 archive/issue_comments_019949.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2898-jgrout-coerce-to-integer-1.patch](tarball://root/attachments/some-uuid/ticket2898/2898-jgrout-coerce-to-integer-1.patch) by ncalexan created at 2008-08-14 00:33:50",
     "created_at": "2008-08-14T00:33:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2898",
     "type": "issue_comment",
@@ -224,7 +224,7 @@ archive/issue_comments_019949.json:
 }
 ```
 
-Attachment
+Attachment [2898-jgrout-coerce-to-integer-1.patch](tarball://root/attachments/some-uuid/ticket2898/2898-jgrout-coerce-to-integer-1.patch) by ncalexan created at 2008-08-14 00:33:50
 
 
 
@@ -401,7 +401,7 @@ Michael
 archive/issue_comments_019958.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2898-jgrout-coerce-to-integer-3.3.alpha2.patch](tarball://root/attachments/some-uuid/ticket2898/2898-jgrout-coerce-to-integer-3.3.alpha2.patch) by cwitty created at 2009-01-25 20:16:57",
     "created_at": "2009-01-25T20:16:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2898",
     "type": "issue_comment",
@@ -410,7 +410,7 @@ archive/issue_comments_019958.json:
 }
 ```
 
-Attachment
+Attachment [2898-jgrout-coerce-to-integer-3.3.alpha2.patch](tarball://root/attachments/some-uuid/ticket2898/2898-jgrout-coerce-to-integer-3.3.alpha2.patch) by cwitty created at 2009-01-25 20:16:57
 
 
 
@@ -507,7 +507,7 @@ Doctests pass in all files touched by the fixups patch.  I'd like someone else t
 archive/issue_comments_019963.json:
 ```json
 {
-    "body": "Attachment\n\nWe didn't get this in quite soon enough; in alpha5, this gives failing doctests in symbolic/expression.pyx.  (The following is hand-edited to remove boring bits of the backtraces.)\n\n```\nsage -t  \"devel/sage-mqtmp/sage/symbolic/expression.pyx\"    \n**********************************************************************\nFile \"/home/cwitty/sage-3.3.alpha5/devel/sage-mqtmp/sage/symbolic/expression.pyx\", line 2169:\n    sage: S(10.0r).gamma()\nExpected:\n    362880.000000000\nGot:\n    362880\n**********************************************************************\nFile \"/home/cwitty/sage-3.3.alpha5/devel/sage-mqtmp/sage/symbolic/expression.pyx\", line 2180:\n    sage: set_verbose(-1); plot(lambda x: S(x).gamma(), -6,4).show(ymin=-3,ymax=3)\nException raised:\n    Traceback (most recent call last):\n...\n      File \"<doctest __main__.example_73[9]>\", line 1, in <module>\n        set_verbose(-Integer(1)); plot(lambda x: S(x).gamma(), -Integer(6),Integer(4)).show(ymin=-Integer(3),ymax=Integer(3))###line 2180:\n    sage: set_verbose(-1); plot(lambda x: S(x).gamma(), -6,4).show(ymin=-3,ymax=3)\n      File \"/home/cwitty/sage-3.3.alpha5/local/lib/python2.5/site-packages/sage/plot/misc.py\", line 428, in wrapper\n        return func(*args, **kwds)\n...\n      File \"<doctest __main__.example_73[9]>\", line 1, in <lambda>\n        set_verbose(-Integer(1)); plot(lambda x: S(x).gamma(), -Integer(6),Integer(4)).show(ymin=-Integer(3),ymax=Integer(3))###line 2180:\n    sage: set_verbose(-1); plot(lambda x: S(x).gamma(), -6,4).show(ymin=-3,ymax=3)\n      File \"expression.pyx\", line 2183, in sage.symbolic.expression.Expression.gamma (sage/symbolic/expression.cpp:8410)\n    RuntimeError: tgamma_eval(): simple pole\n**********************************************************************\nFile \"/home/cwitty/sage-3.3.alpha5/devel/sage-mqtmp/sage/symbolic/expression.pyx\", line 2204:\n    sage: set_verbose(-1); plot(lambda x: S(x).lgamma(), -7,8, plot_points=1000).show()\nException raised:\n    Traceback (most recent call last):\n...\n      File \"<doctest __main__.example_74[7]>\", line 1, in <module>\n        set_verbose(-Integer(1)); plot(lambda x: S(x).lgamma(), -Integer(7),Integer(8), plot_points=Integer(1000)).show()###line 2204:\n    sage: set_verbose(-1); plot(lambda x: S(x).lgamma(), -7,8, plot_points=1000).show()\n...\n      File \"<doctest __main__.example_74[7]>\", line 1, in <lambda>\n        set_verbose(-Integer(1)); plot(lambda x: S(x).lgamma(), -Integer(7),Integer(8), plot_points=Integer(1000)).show()###line 2204:\n    sage: set_verbose(-1); plot(lambda x: S(x).lgamma(), -7,8, plot_points=1000).show()\n      File \"expression.pyx\", line 2210, in sage.symbolic.expression.Expression.lgamma (sage/symbolic/expression.cpp:8476)\n    RuntimeError: lgamma_eval(): logarithmic pole\n**********************************************************************\n2 items had failures:\n   2 of  10 in __main__.example_73\n   1 of  10 in __main__.example_74\n***Test Failed*** 3 failures.\n```\n",
+    "body": "Attachment [trac2898-fixups.patch](tarball://root/attachments/some-uuid/ticket2898/trac2898-fixups.patch) by cwitty created at 2009-02-06 07:42:31\n\nWe didn't get this in quite soon enough; in alpha5, this gives failing doctests in symbolic/expression.pyx.  (The following is hand-edited to remove boring bits of the backtraces.)\n\n```\nsage -t  \"devel/sage-mqtmp/sage/symbolic/expression.pyx\"    \n**********************************************************************\nFile \"/home/cwitty/sage-3.3.alpha5/devel/sage-mqtmp/sage/symbolic/expression.pyx\", line 2169:\n    sage: S(10.0r).gamma()\nExpected:\n    362880.000000000\nGot:\n    362880\n**********************************************************************\nFile \"/home/cwitty/sage-3.3.alpha5/devel/sage-mqtmp/sage/symbolic/expression.pyx\", line 2180:\n    sage: set_verbose(-1); plot(lambda x: S(x).gamma(), -6,4).show(ymin=-3,ymax=3)\nException raised:\n    Traceback (most recent call last):\n...\n      File \"<doctest __main__.example_73[9]>\", line 1, in <module>\n        set_verbose(-Integer(1)); plot(lambda x: S(x).gamma(), -Integer(6),Integer(4)).show(ymin=-Integer(3),ymax=Integer(3))###line 2180:\n    sage: set_verbose(-1); plot(lambda x: S(x).gamma(), -6,4).show(ymin=-3,ymax=3)\n      File \"/home/cwitty/sage-3.3.alpha5/local/lib/python2.5/site-packages/sage/plot/misc.py\", line 428, in wrapper\n        return func(*args, **kwds)\n...\n      File \"<doctest __main__.example_73[9]>\", line 1, in <lambda>\n        set_verbose(-Integer(1)); plot(lambda x: S(x).gamma(), -Integer(6),Integer(4)).show(ymin=-Integer(3),ymax=Integer(3))###line 2180:\n    sage: set_verbose(-1); plot(lambda x: S(x).gamma(), -6,4).show(ymin=-3,ymax=3)\n      File \"expression.pyx\", line 2183, in sage.symbolic.expression.Expression.gamma (sage/symbolic/expression.cpp:8410)\n    RuntimeError: tgamma_eval(): simple pole\n**********************************************************************\nFile \"/home/cwitty/sage-3.3.alpha5/devel/sage-mqtmp/sage/symbolic/expression.pyx\", line 2204:\n    sage: set_verbose(-1); plot(lambda x: S(x).lgamma(), -7,8, plot_points=1000).show()\nException raised:\n    Traceback (most recent call last):\n...\n      File \"<doctest __main__.example_74[7]>\", line 1, in <module>\n        set_verbose(-Integer(1)); plot(lambda x: S(x).lgamma(), -Integer(7),Integer(8), plot_points=Integer(1000)).show()###line 2204:\n    sage: set_verbose(-1); plot(lambda x: S(x).lgamma(), -7,8, plot_points=1000).show()\n...\n      File \"<doctest __main__.example_74[7]>\", line 1, in <lambda>\n        set_verbose(-Integer(1)); plot(lambda x: S(x).lgamma(), -Integer(7),Integer(8), plot_points=Integer(1000)).show()###line 2204:\n    sage: set_verbose(-1); plot(lambda x: S(x).lgamma(), -7,8, plot_points=1000).show()\n      File \"expression.pyx\", line 2210, in sage.symbolic.expression.Expression.lgamma (sage/symbolic/expression.cpp:8476)\n    RuntimeError: lgamma_eval(): logarithmic pole\n**********************************************************************\n2 items had failures:\n   2 of  10 in __main__.example_73\n   1 of  10 in __main__.example_74\n***Test Failed*** 3 failures.\n```\n",
     "created_at": "2009-02-06T07:42:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2898",
     "type": "issue_comment",
@@ -516,7 +516,7 @@ archive/issue_comments_019963.json:
 }
 ```
 
-Attachment
+Attachment [trac2898-fixups.patch](tarball://root/attachments/some-uuid/ticket2898/trac2898-fixups.patch) by cwitty created at 2009-02-06 07:42:31
 
 We didn't get this in quite soon enough; in alpha5, this gives failing doctests in symbolic/expression.pyx.  (The following is hand-edited to remove boring bits of the backtraces.)
 

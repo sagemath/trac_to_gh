@@ -82,7 +82,7 @@ Changing status from new to assigned.
 archive/issue_comments_022460.json:
 ```json
 {
-    "body": "Attachment\n\nI updated the patch to address your concerns.  Note that inner plethysm isn't bilinear, but only linear in the first argument.\n\n(I also updated 2144 to have this patch.)",
+    "body": "Attachment [3244.patch](tarball://root/attachments/some-uuid/ticket3244/3244.patch) by mhansen created at 2008-05-22 20:15:35\n\nI updated the patch to address your concerns.  Note that inner plethysm isn't bilinear, but only linear in the first argument.\n\n(I also updated 2144 to have this patch.)",
     "created_at": "2008-05-22T20:15:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3244",
     "type": "issue_comment",
@@ -91,7 +91,7 @@ archive/issue_comments_022460.json:
 }
 ```
 
-Attachment
+Attachment [3244.patch](tarball://root/attachments/some-uuid/ticket3244/3244.patch) by mhansen created at 2008-05-22 20:15:35
 
 I updated the patch to address your concerns.  Note that inner plethysm isn't bilinear, but only linear in the first argument.
 
@@ -144,7 +144,7 @@ sigma. Now sigma circ rho is an S_n representation and, by
 archive/issue_comments_022462.json:
 ```json
 {
-    "body": "Attachment\n\nThis looks good to me now.  Nice work, Mike.",
+    "body": "Attachment [3244.2.patch](tarball://root/attachments/some-uuid/ticket3244/3244.2.patch) by jbandlow created at 2008-05-25 07:03:50\n\nThis looks good to me now.  Nice work, Mike.",
     "created_at": "2008-05-25T07:03:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3244",
     "type": "issue_comment",
@@ -153,7 +153,7 @@ archive/issue_comments_022462.json:
 }
 ```
 
-Attachment
+Attachment [3244.2.patch](tarball://root/attachments/some-uuid/ticket3244/3244.2.patch) by jbandlow created at 2008-05-25 07:03:50
 
 This looks good to me now.  Nice work, Mike.
 

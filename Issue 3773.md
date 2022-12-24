@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3773
 archive/issue_comments_026833.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3773-part2.patch](tarball://root/attachments/some-uuid/ticket3773/sage-3773-part2.patch) by was created at 2008-08-07 14:42:40",
     "created_at": "2008-08-07T14:42:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3773",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_026833.json:
 }
 ```
 
-Attachment
+Attachment [sage-3773-part2.patch](tarball://root/attachments/some-uuid/ticket3773/sage-3773-part2.patch) by was created at 2008-08-07 14:42:40
 
 
 
@@ -49,7 +49,7 @@ Attachment
 archive/issue_comments_026834.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3773-part3.patch](tarball://root/attachments/some-uuid/ticket3773/sage-3773-part3.patch) by was created at 2008-08-07 14:42:47",
     "created_at": "2008-08-07T14:42:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3773",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_026834.json:
 }
 ```
 
-Attachment
+Attachment [sage-3773-part3.patch](tarball://root/attachments/some-uuid/ticket3773/sage-3773-part3.patch) by was created at 2008-08-07 14:42:47
 
 
 
@@ -125,7 +125,7 @@ this addresses all josh's comments on #3773 and also #3726
 archive/issue_comments_026838.json:
 ```json
 {
-    "body": "Attachment\n\naddresses another referee remark",
+    "body": "Attachment [sage-3773-part5.patch](tarball://root/attachments/some-uuid/ticket3773/sage-3773-part5.patch) by was created at 2008-08-12 12:32:42\n\naddresses another referee remark",
     "created_at": "2008-08-12T12:32:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3773",
     "type": "issue_comment",
@@ -134,7 +134,7 @@ archive/issue_comments_026838.json:
 }
 ```
 
-Attachment
+Attachment [sage-3773-part5.patch](tarball://root/attachments/some-uuid/ticket3773/sage-3773-part5.patch) by was created at 2008-08-12 12:32:42
 
 addresses another referee remark
 

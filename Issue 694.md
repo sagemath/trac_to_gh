@@ -54,7 +54,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/694
 archive/issue_comments_003632.json:
 ```json
 {
-    "body": "Attachment\n\nthis file has the singular input of a multivariate polynomial gcd that takes *minutes* in SAGE over QQ, but mod p the same takes 0.08 seconds.",
+    "body": "Attachment [gcd_slow.singular](tarball://root/attachments/some-uuid/ticket694/gcd_slow.singular) by was created at 2007-09-19 20:24:23\n\nthis file has the singular input of a multivariate polynomial gcd that takes *minutes* in SAGE over QQ, but mod p the same takes 0.08 seconds.",
     "created_at": "2007-09-19T20:24:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/694",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_003632.json:
 }
 ```
 
-Attachment
+Attachment [gcd_slow.singular](tarball://root/attachments/some-uuid/ticket694/gcd_slow.singular) by was created at 2007-09-19 20:24:23
 
 this file has the singular input of a multivariate polynomial gcd that takes *minutes* in SAGE over QQ, but mod p the same takes 0.08 seconds.
 
@@ -182,7 +182,7 @@ in Singular 2.0.4, which it did not support.
 archive/issue_comments_003636.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6546.patch](tarball://root/attachments/some-uuid/ticket694/6546.patch) by malb created at 2007-10-01 23:18:30",
     "created_at": "2007-10-01T23:18:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/694",
     "type": "issue_comment",
@@ -191,7 +191,7 @@ archive/issue_comments_003636.json:
 }
 ```
 
-Attachment
+Attachment [6546.patch](tarball://root/attachments/some-uuid/ticket694/6546.patch) by malb created at 2007-10-01 23:18:30
 
 
 

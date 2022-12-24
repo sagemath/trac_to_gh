@@ -51,7 +51,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3451
 archive/issue_comments_024335.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3451_scheme_morphism.patch](tarball://root/attachments/some-uuid/ticket3451/3451_scheme_morphism.patch) by AlexGhitza created at 2008-08-27 08:54:33",
     "created_at": "2008-08-27T08:54:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3451",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_024335.json:
 }
 ```
 
-Attachment
+Attachment [3451_scheme_morphism.patch](tarball://root/attachments/some-uuid/ticket3451/3451_scheme_morphism.patch) by AlexGhitza created at 2008-08-27 08:54:33
 
 
 

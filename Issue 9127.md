@@ -180,7 +180,7 @@ So whether or not the patch fixes things on some systems, it breaks others, so c
 archive/issue_comments_084915.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9127.patch](tarball://root/attachments/some-uuid/ticket9127/trac_9127.patch) by rlm created at 2010-06-05 15:02:35",
     "created_at": "2010-06-05T15:02:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9127",
     "type": "issue_comment",
@@ -189,7 +189,7 @@ archive/issue_comments_084915.json:
 }
 ```
 
-Attachment
+Attachment [trac_9127.patch](tarball://root/attachments/some-uuid/ticket9127/trac_9127.patch) by rlm created at 2010-06-05 15:02:35
 
 
 

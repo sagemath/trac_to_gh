@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9969
 archive/issue_comments_099880.json:
 ```json
 {
-    "body": "Attachment\n\nupdated mpmath Cython extension code",
+    "body": "Attachment [14600.patch](tarball://root/attachments/some-uuid/ticket9969/14600.patch) by fredrik.johansson created at 2010-09-22 13:16:39\n\nupdated mpmath Cython extension code",
     "created_at": "2010-09-22T13:16:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
@@ -51,7 +51,7 @@ archive/issue_comments_099880.json:
 }
 ```
 
-Attachment
+Attachment [14600.patch](tarball://root/attachments/some-uuid/ticket9969/14600.patch) by fredrik.johansson created at 2010-09-22 13:16:39
 
 updated mpmath Cython extension code
 
@@ -170,7 +170,7 @@ cdef cy_exp_basecase(mpz_t y, mpz_t x, int prec):
 archive/issue_comments_099886.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [docstring-fixes.patch](tarball://root/attachments/some-uuid/ticket9969/docstring-fixes.patch) by fredrik.johansson created at 2010-11-19 14:57:54",
     "created_at": "2010-11-19T14:57:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
@@ -179,7 +179,7 @@ archive/issue_comments_099886.json:
 }
 ```
 
-Attachment
+Attachment [docstring-fixes.patch](tarball://root/attachments/some-uuid/ticket9969/docstring-fixes.patch) by fredrik.johansson created at 2010-11-19 14:57:54
 
 
 
@@ -417,7 +417,7 @@ Fixed patch that should apply in sage-4.6.1
 archive/issue_comments_099899.json:
 ```json
 {
-    "body": "Attachment\n\nPatch that fixes some mpmath test failures due to use of the truediv operator",
+    "body": "Attachment [mpmath_update_fixed_4.6.1.patch](tarball://root/attachments/some-uuid/ticket9969/mpmath_update_fixed_4.6.1.patch) by fredrik.johansson created at 2011-02-18 08:35:16\n\nPatch that fixes some mpmath test failures due to use of the truediv operator",
     "created_at": "2011-02-18T08:35:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
@@ -426,7 +426,7 @@ archive/issue_comments_099899.json:
 }
 ```
 
-Attachment
+Attachment [mpmath_update_fixed_4.6.1.patch](tarball://root/attachments/some-uuid/ticket9969/mpmath_update_fixed_4.6.1.patch) by fredrik.johansson created at 2011-02-18 08:35:16
 
 Patch that fixes some mpmath test failures due to use of the truediv operator
 
@@ -437,7 +437,7 @@ Patch that fixes some mpmath test failures due to use of the truediv operator
 archive/issue_comments_099900.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [truediv_fix.patch](tarball://root/attachments/some-uuid/ticket9969/truediv_fix.patch) by fredrik.johansson created at 2011-02-18 08:36:42",
     "created_at": "2011-02-18T08:36:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
@@ -446,7 +446,7 @@ archive/issue_comments_099900.json:
 }
 ```
 
-Attachment
+Attachment [truediv_fix.patch](tarball://root/attachments/some-uuid/ticket9969/truediv_fix.patch) by fredrik.johansson created at 2011-02-18 08:36:42
 
 
 
@@ -798,7 +798,7 @@ I will post a patch making this the default. Voice any opposition then.
 archive/issue_comments_099912.json:
 ```json
 {
-    "body": "Attachment\n\npatch to deps to make mpmath depend on matplotlib",
+    "body": "Attachment [mpmath-deps.patch](tarball://root/attachments/some-uuid/ticket9969/mpmath-deps.patch) by fbissey created at 2011-02-21 21:19:24\n\npatch to deps to make mpmath depend on matplotlib",
     "created_at": "2011-02-21T21:19:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
@@ -807,7 +807,7 @@ archive/issue_comments_099912.json:
 }
 ```
 
-Attachment
+Attachment [mpmath-deps.patch](tarball://root/attachments/some-uuid/ticket9969/mpmath-deps.patch) by fbissey created at 2011-02-21 21:19:24
 
 patch to deps to make mpmath depend on matplotlib
 

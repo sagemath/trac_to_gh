@@ -382,7 +382,7 @@ Hopefully it is reproducible for you.
 archive/issue_comments_016327.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-2419-singular_synch.patch](tarball://root/attachments/some-uuid/ticket2419/sage-2419-singular_synch.patch) by was created at 2008-03-12 15:33:10",
     "created_at": "2008-03-12T15:33:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2419",
     "type": "issue_comment",
@@ -391,7 +391,7 @@ archive/issue_comments_016327.json:
 }
 ```
 
-Attachment
+Attachment [sage-2419-singular_synch.patch](tarball://root/attachments/some-uuid/ticket2419/sage-2419-singular_synch.patch) by was created at 2008-03-12 15:33:10
 
 
 
@@ -790,7 +790,7 @@ Adding some doctests to singular synchronization. To be applied after William's 
 archive/issue_comments_016346.json:
 ```json
 {
-    "body": "Attachment\n\nI found that bug since doc tests for my patch from #2420 failed. Thus i expected that William's synchronization patch would fix #2420 as well, but it didn't -- see my comments there.\n\nI'll try to boil down the new problem, but i suspect that a synchronization will be needed for the gap interface as well.",
+    "body": "Attachment [sage-2419-singular_synch_doctest.patch](tarball://root/attachments/some-uuid/ticket2419/sage-2419-singular_synch_doctest.patch) by SimonKing created at 2008-03-13 10:40:04\n\nI found that bug since doc tests for my patch from #2420 failed. Thus i expected that William's synchronization patch would fix #2420 as well, but it didn't -- see my comments there.\n\nI'll try to boil down the new problem, but i suspect that a synchronization will be needed for the gap interface as well.",
     "created_at": "2008-03-13T10:40:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2419",
     "type": "issue_comment",
@@ -799,7 +799,7 @@ archive/issue_comments_016346.json:
 }
 ```
 
-Attachment
+Attachment [sage-2419-singular_synch_doctest.patch](tarball://root/attachments/some-uuid/ticket2419/sage-2419-singular_synch_doctest.patch) by SimonKing created at 2008-03-13 10:40:04
 
 I found that bug since doc tests for my patch from #2420 failed. Thus i expected that William's synchronization patch would fix #2420 as well, but it didn't -- see my comments there.
 
@@ -900,7 +900,7 @@ Michael
 archive/issue_comments_016351.json:
 ```json
 {
-    "body": "Attachment\n\napply *all three* patches in order.",
+    "body": "Attachment [sage-2419-refactor.patch](tarball://root/attachments/some-uuid/ticket2419/sage-2419-refactor.patch) by was created at 2008-04-20 19:50:30\n\napply *all three* patches in order.",
     "created_at": "2008-04-20T19:50:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2419",
     "type": "issue_comment",
@@ -909,7 +909,7 @@ archive/issue_comments_016351.json:
 }
 ```
 
-Attachment
+Attachment [sage-2419-refactor.patch](tarball://root/attachments/some-uuid/ticket2419/sage-2419-refactor.patch) by was created at 2008-04-20 19:50:30
 
 apply *all three* patches in order.
 
@@ -1098,7 +1098,7 @@ Michael
 archive/issue_comments_016357.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-2419-followup.patch](tarball://root/attachments/some-uuid/ticket2419/sage-2419-followup.patch) by was created at 2008-04-21 01:52:26",
     "created_at": "2008-04-21T01:52:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2419",
     "type": "issue_comment",
@@ -1107,7 +1107,7 @@ archive/issue_comments_016357.json:
 }
 ```
 
-Attachment
+Attachment [sage-2419-followup.patch](tarball://root/attachments/some-uuid/ticket2419/sage-2419-followup.patch) by was created at 2008-04-21 01:52:26
 
 
 

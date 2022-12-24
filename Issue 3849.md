@@ -87,7 +87,7 @@ Error reporting does exist for file extension errors. However, it is not inline.
 archive/issue_comments_027376.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3844_1.patch](tarball://root/attachments/some-uuid/ticket3849/sage-3844_1.patch) by TimothyClemans created at 2008-08-14 13:30:09",
     "created_at": "2008-08-14T13:30:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3849",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_027376.json:
 }
 ```
 
-Attachment
+Attachment [sage-3844_1.patch](tarball://root/attachments/some-uuid/ticket3849/sage-3844_1.patch) by TimothyClemans created at 2008-08-14 13:30:09
 
 
 
@@ -123,7 +123,7 @@ Took care of (1) and also now clicking "Upload Worksheet" when form blank no lon
 archive/issue_comments_027378.json:
 ```json
 {
-    "body": "Attachment\n\nForget about this code.  This is an important error though.\n\nThe attached patch sagenb_3849-part1.patch I think completely fixes all such problems for uploading a *worksheet*, but doesn't do anything about Data-->Upload or attach file.\n\nI'm making Data -->Upload or attach a file a new ticket: #7495",
+    "body": "Attachment [sage-3849_1.patch](tarball://root/attachments/some-uuid/ticket3849/sage-3849_1.patch) by was created at 2009-11-20 00:34:53\n\nForget about this code.  This is an important error though.\n\nThe attached patch sagenb_3849-part1.patch I think completely fixes all such problems for uploading a *worksheet*, but doesn't do anything about Data-->Upload or attach file.\n\nI'm making Data -->Upload or attach a file a new ticket: #7495",
     "created_at": "2009-11-20T00:34:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3849",
     "type": "issue_comment",
@@ -132,7 +132,7 @@ archive/issue_comments_027378.json:
 }
 ```
 
-Attachment
+Attachment [sage-3849_1.patch](tarball://root/attachments/some-uuid/ticket3849/sage-3849_1.patch) by was created at 2009-11-20 00:34:53
 
 Forget about this code.  This is an important error though.
 
@@ -165,7 +165,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_027380.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sagenb_3849.patch](tarball://root/attachments/some-uuid/ticket3849/sagenb_3849.patch) by was created at 2009-11-20 00:36:56",
     "created_at": "2009-11-20T00:36:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3849",
     "type": "issue_comment",
@@ -174,7 +174,7 @@ archive/issue_comments_027380.json:
 }
 ```
 
-Attachment
+Attachment [sagenb_3849.patch](tarball://root/attachments/some-uuid/ticket3849/sagenb_3849.patch) by was created at 2009-11-20 00:36:56
 
 
 
@@ -183,7 +183,7 @@ Attachment
 archive/issue_comments_027381.json:
 ```json
 {
-    "body": "Attachment\n\nVersion 2.  Added backlink.  Apply only this patch to the sagenb repo.",
+    "body": "Attachment [sagenb_3849.2.patch](tarball://root/attachments/some-uuid/ticket3849/sagenb_3849.2.patch) by mpatel created at 2009-11-20 07:29:36\n\nVersion 2.  Added backlink.  Apply only this patch to the sagenb repo.",
     "created_at": "2009-11-20T07:29:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3849",
     "type": "issue_comment",
@@ -192,7 +192,7 @@ archive/issue_comments_027381.json:
 }
 ```
 
-Attachment
+Attachment [sagenb_3849.2.patch](tarball://root/attachments/some-uuid/ticket3849/sagenb_3849.2.patch) by mpatel created at 2009-11-20 07:29:36
 
 Version 2.  Added backlink.  Apply only this patch to the sagenb repo.
 

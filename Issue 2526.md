@@ -75,7 +75,7 @@ this patch straight up revers #2453
 archive/issue_comments_017230.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_2526.patch](tarball://root/attachments/some-uuid/ticket2526/trac_2526.patch) by mabshoff created at 2008-03-15 05:19:32",
     "created_at": "2008-03-15T05:19:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2526",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_017230.json:
 }
 ```
 
-Attachment
+Attachment [trac_2526.patch](tarball://root/attachments/some-uuid/ticket2526/trac_2526.patch) by mabshoff created at 2008-03-15 05:19:32
 
 
 

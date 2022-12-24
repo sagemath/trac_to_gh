@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7245
 archive/issue_comments_060156.json:
 ```json
 {
-    "body": "Attachment\n\nApply to the scripts repository",
+    "body": "Attachment [trac_7245.patch](tarball://root/attachments/some-uuid/ticket7245/trac_7245.patch) by mhansen created at 2009-10-19 05:30:09\n\nApply to the scripts repository",
     "created_at": "2009-10-19T05:30:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7245",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_060156.json:
 }
 ```
 
-Attachment
+Attachment [trac_7245.patch](tarball://root/attachments/some-uuid/ticket7245/trac_7245.patch) by mhansen created at 2009-10-19 05:30:09
 
 Apply to the scripts repository
 

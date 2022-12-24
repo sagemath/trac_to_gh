@@ -56,7 +56,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9009
 archive/issue_comments_083335.json:
 ```json
 {
-    "body": "Attachment\n\nMercurial patch to allow to build 64-bit on any operating system, not just OS X",
+    "body": "Attachment [mercurial-64-bit.patch](tarball://root/attachments/some-uuid/ticket9009/mercurial-64-bit.patch) by drkirkby created at 2010-05-23 11:41:19\n\nMercurial patch to allow to build 64-bit on any operating system, not just OS X",
     "created_at": "2010-05-23T11:41:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9009",
     "type": "issue_comment",
@@ -65,7 +65,7 @@ archive/issue_comments_083335.json:
 }
 ```
 
-Attachment
+Attachment [mercurial-64-bit.patch](tarball://root/attachments/some-uuid/ticket9009/mercurial-64-bit.patch) by drkirkby created at 2010-05-23 11:41:19
 
 Mercurial patch to allow to build 64-bit on any operating system, not just OS X
 

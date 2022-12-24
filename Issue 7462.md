@@ -435,7 +435,7 @@ The following tests failed:
 archive/issue_comments_062853.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7462.patch](tarball://root/attachments/some-uuid/ticket7462/trac_7462.patch) by klee created at 2009-11-16 06:00:56",
     "created_at": "2009-11-16T06:00:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7462",
     "type": "issue_comment",
@@ -444,7 +444,7 @@ archive/issue_comments_062853.json:
 }
 ```
 
-Attachment
+Attachment [trac_7462.patch](tarball://root/attachments/some-uuid/ticket7462/trac_7462.patch) by klee created at 2009-11-16 06:00:56
 
 
 

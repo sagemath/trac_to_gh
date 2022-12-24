@@ -56,7 +56,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2808
 archive/issue_comments_019275.json:
 ```json
 {
-    "body": "Attachment\n\npatch correcting the G2 fundamental weights",
+    "body": "Attachment [g2.patch](tarball://root/attachments/some-uuid/ticket2808/g2.patch) by bump created at 2008-04-05 16:20:14\n\npatch correcting the G2 fundamental weights",
     "created_at": "2008-04-05T16:20:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2808",
     "type": "issue_comment",
@@ -65,7 +65,7 @@ archive/issue_comments_019275.json:
 }
 ```
 
-Attachment
+Attachment [g2.patch](tarball://root/attachments/some-uuid/ticket2808/g2.patch) by bump created at 2008-04-05 16:20:14
 
 patch correcting the G2 fundamental weights
 

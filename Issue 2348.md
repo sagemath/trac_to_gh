@@ -391,7 +391,7 @@ I found that in `sage/rings/number_field/number_field.py` there is no method `_s
 archive/issue_comments_015763.json:
 ```json
 {
-    "body": "Attachment\n\nThis solves only a part of the problem",
+    "body": "Attachment [numberfields_gap.patch](tarball://root/attachments/some-uuid/ticket2348/numberfields_gap.patch) by SimonKing created at 2008-03-01 10:14:42\n\nThis solves only a part of the problem",
     "created_at": "2008-03-01T10:14:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
@@ -400,7 +400,7 @@ archive/issue_comments_015763.json:
 }
 ```
 
-Attachment
+Attachment [numberfields_gap.patch](tarball://root/attachments/some-uuid/ticket2348/numberfields_gap.patch) by SimonKing created at 2008-03-01 10:14:42
 
 This solves only a part of the problem
 
@@ -476,7 +476,7 @@ Since the line `sage: gap(F)` is necessary; otherwise `zeta8` would not be defin
 archive/issue_comments_015765.json:
 ```json
 {
-    "body": "Attachment\n\nThis may be close to a solution",
+    "body": "Attachment [numberfields_gap.2.patch](tarball://root/attachments/some-uuid/ticket2348/numberfields_gap.2.patch) by SimonKing created at 2008-03-01 14:34:08\n\nThis may be close to a solution",
     "created_at": "2008-03-01T14:34:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
@@ -485,7 +485,7 @@ archive/issue_comments_015765.json:
 }
 ```
 
-Attachment
+Attachment [numberfields_gap.2.patch](tarball://root/attachments/some-uuid/ticket2348/numberfields_gap.2.patch) by SimonKing created at 2008-03-01 14:34:08
 
 This may be close to a solution
 
@@ -544,7 +544,7 @@ I still see some problems:
 archive/issue_comments_015767.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch is relative to sage-2.10.3.rc0 and replaces the previous patches. I think it provides a solution of the problem",
+    "body": "Attachment [final_numberfields_gap.patch](tarball://root/attachments/some-uuid/ticket2348/final_numberfields_gap.patch) by SimonKing created at 2008-03-01 23:52:33\n\nThe patch is relative to sage-2.10.3.rc0 and replaces the previous patches. I think it provides a solution of the problem",
     "created_at": "2008-03-01T23:52:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
@@ -553,7 +553,7 @@ archive/issue_comments_015767.json:
 }
 ```
 
-Attachment
+Attachment [final_numberfields_gap.patch](tarball://root/attachments/some-uuid/ticket2348/final_numberfields_gap.patch) by SimonKing created at 2008-03-01 23:52:33
 
 The patch is relative to sage-2.10.3.rc0 and replaces the previous patches. I think it provides a solution of the problem
 
@@ -739,7 +739,7 @@ First apply the previous patch, then this patch. It fixes and extends doc tests 
 archive/issue_comments_015774.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch fix_doctests_gap_numberfield.patch should be applied after final_numberfields_gap.patch. \n\nThe new patch fixes some problems with doc tests. Also, it adds more doc tests. Moreover, now the generator of a number field gets the same name in gap and in sage, which may be convenient for the users.\n\nThe following doctests related with and extended by the patch pass:\nmatrix_group.py,\nnumber_field.py,\nnumber_field_element.pyx,\nmatrix1.pyx\n\n`@`wdj: Could you please see if your positive review still holds when adding the new patch?",
+    "body": "Attachment [fix_doctests_gap_numberfield.patch](tarball://root/attachments/some-uuid/ticket2348/fix_doctests_gap_numberfield.patch) by SimonKing created at 2008-03-02 22:18:28\n\nThe patch fix_doctests_gap_numberfield.patch should be applied after final_numberfields_gap.patch. \n\nThe new patch fixes some problems with doc tests. Also, it adds more doc tests. Moreover, now the generator of a number field gets the same name in gap and in sage, which may be convenient for the users.\n\nThe following doctests related with and extended by the patch pass:\nmatrix_group.py,\nnumber_field.py,\nnumber_field_element.pyx,\nmatrix1.pyx\n\n`@`wdj: Could you please see if your positive review still holds when adding the new patch?",
     "created_at": "2008-03-02T22:18:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
@@ -748,7 +748,7 @@ archive/issue_comments_015774.json:
 }
 ```
 
-Attachment
+Attachment [fix_doctests_gap_numberfield.patch](tarball://root/attachments/some-uuid/ticket2348/fix_doctests_gap_numberfield.patch) by SimonKing created at 2008-03-02 22:18:28
 
 The patch fix_doctests_gap_numberfield.patch should be applied after final_numberfields_gap.patch. 
 

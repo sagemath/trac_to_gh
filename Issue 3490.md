@@ -53,7 +53,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3490
 archive/issue_comments_024585.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3490.patch](tarball://root/attachments/some-uuid/ticket3490/sage-3490.patch) by TimothyClemans created at 2008-06-23 20:55:52",
     "created_at": "2008-06-23T20:55:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3490",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_024585.json:
 }
 ```
 
-Attachment
+Attachment [sage-3490.patch](tarball://root/attachments/some-uuid/ticket3490/sage-3490.patch) by TimothyClemans created at 2008-06-23 20:55:52
 
 
 
@@ -71,7 +71,7 @@ Attachment
 archive/issue_comments_024586.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3490_2.patch](tarball://root/attachments/some-uuid/ticket3490/sage-3490_2.patch) by TimothyClemans created at 2008-06-23 20:56:16",
     "created_at": "2008-06-23T20:56:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3490",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_024586.json:
 }
 ```
 
-Attachment
+Attachment [sage-3490_2.patch](tarball://root/attachments/some-uuid/ticket3490/sage-3490_2.patch) by TimothyClemans created at 2008-06-23 20:56:16
 
 
 
@@ -89,7 +89,7 @@ Attachment
 archive/issue_comments_024587.json:
 ```json
 {
-    "body": "Attachment\n\nnote: sage-3490_2.patch puts a somehow removed extract_title function",
+    "body": "Attachment [extcode-3490.patch](tarball://root/attachments/some-uuid/ticket3490/extcode-3490.patch) by TimothyClemans created at 2008-06-23 20:57:35\n\nnote: sage-3490_2.patch puts a somehow removed extract_title function",
     "created_at": "2008-06-23T20:57:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3490",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_024587.json:
 }
 ```
 
-Attachment
+Attachment [extcode-3490.patch](tarball://root/attachments/some-uuid/ticket3490/extcode-3490.patch) by TimothyClemans created at 2008-06-23 20:57:35
 
 note: sage-3490_2.patch puts a somehow removed extract_title function
 

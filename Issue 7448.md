@@ -136,7 +136,7 @@ Patch to experiment the interaction Sphinx/NestedMetaclass
 archive/issue_comments_062704.json:
 ```json
 {
-    "body": "Attachment\n\n> I've made some experiments. Actually it seems that the problem is a bad interaction between sphinx and the particular metaclass `NestedMetaclass` we have to use to work around the nested class pickling bug of python. If you apply the attached patch, you'll see that `TestParent1` is correctly rendered whereas the other parent are not. I think this is a lead which should be followed. \n\nMore info on this: to workaround python's nested class pickle bug we put any class which contain a nested class into `NestedMetaclass`. The main purpose of this metaclass is to change the class `__name__` with the help of the function\n`modify_for_nested_pickle`. As a result sphinx has the impression that the class is an alias. Demonstration: if I comment line 112 of nested_class.py\n\n```\ndiff --git a/sage/misc/nested_class.py b/sage/misc/nested_class.py\n--- a/sage/misc/nested_class.py\n+++ b/sage/misc/nested_class.py\n@@ -108,7 +108,7 @@ def modify_for_nested_pickle(cls, name_p\n             if v.__name__ == name and v.__module__ == module.__name__ and getattr(module, name, None) is not v:\n                 # OK, probably this is a nested class.\n                 dotted_name = name_prefix + '.' + name\n-                v.__name__ = dotted_name\n+                # v.__name__ = dotted_name\n                 setattr(module, dotted_name, v)\n                 modify_for_nested_pickle(v, dotted_name, module)\n```\n\nThen everything works fine. Any idea to solve this ?",
+    "body": "Attachment [trac_7448-nested_class_sphinx_exper-fh.patch](tarball://root/attachments/some-uuid/ticket7448/trac_7448-nested_class_sphinx_exper-fh.patch) by hivert created at 2010-02-17 21:21:55\n\n> I've made some experiments. Actually it seems that the problem is a bad interaction between sphinx and the particular metaclass `NestedMetaclass` we have to use to work around the nested class pickling bug of python. If you apply the attached patch, you'll see that `TestParent1` is correctly rendered whereas the other parent are not. I think this is a lead which should be followed. \n\nMore info on this: to workaround python's nested class pickle bug we put any class which contain a nested class into `NestedMetaclass`. The main purpose of this metaclass is to change the class `__name__` with the help of the function\n`modify_for_nested_pickle`. As a result sphinx has the impression that the class is an alias. Demonstration: if I comment line 112 of nested_class.py\n\n```\ndiff --git a/sage/misc/nested_class.py b/sage/misc/nested_class.py\n--- a/sage/misc/nested_class.py\n+++ b/sage/misc/nested_class.py\n@@ -108,7 +108,7 @@ def modify_for_nested_pickle(cls, name_p\n             if v.__name__ == name and v.__module__ == module.__name__ and getattr(module, name, None) is not v:\n                 # OK, probably this is a nested class.\n                 dotted_name = name_prefix + '.' + name\n-                v.__name__ = dotted_name\n+                # v.__name__ = dotted_name\n                 setattr(module, dotted_name, v)\n                 modify_for_nested_pickle(v, dotted_name, module)\n```\n\nThen everything works fine. Any idea to solve this ?",
     "created_at": "2010-02-17T21:21:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7448",
     "type": "issue_comment",
@@ -145,7 +145,7 @@ archive/issue_comments_062704.json:
 }
 ```
 
-Attachment
+Attachment [trac_7448-nested_class_sphinx_exper-fh.patch](tarball://root/attachments/some-uuid/ticket7448/trac_7448-nested_class_sphinx_exper-fh.patch) by hivert created at 2010-02-17 21:21:55
 
 > I've made some experiments. Actually it seems that the problem is a bad interaction between sphinx and the particular metaclass `NestedMetaclass` we have to use to work around the nested class pickling bug of python. If you apply the attached patch, you'll see that `TestParent1` is correctly rendered whereas the other parent are not. I think this is a lead which should be followed. 
 
@@ -489,7 +489,7 @@ Finally, going to the directory containing sphinx-0.6.3.p5, you run "sage -pkg s
 archive/issue_comments_062718.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7448-nested_class_sphinx-fh.patch](tarball://root/attachments/some-uuid/ticket7448/trac_7448-nested_class_sphinx-fh.patch) by hivert created at 2010-02-20 00:05:09",
     "created_at": "2010-02-20T00:05:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7448",
     "type": "issue_comment",
@@ -498,7 +498,7 @@ archive/issue_comments_062718.json:
 }
 ```
 
-Attachment
+Attachment [trac_7448-nested_class_sphinx-fh.patch](tarball://root/attachments/some-uuid/ticket7448/trac_7448-nested_class_sphinx-fh.patch) by hivert created at 2010-02-20 00:05:09
 
 
 
@@ -525,7 +525,7 @@ patch to sphinx autodoc.py
 archive/issue_comments_062720.json:
 ```json
 {
-    "body": "Attachment\n\nI should have reached a final state for this ticket. I've added a lot of comment explaining what's happening. Please review.\n\nI uploaded a new patch for sphinx and for autodoc.py. Do *not* apply `trac_7448-nested_class_sphinx_exper-fh.patch` which was used for experiments. \n\nmpatel told on #8258 he will take care or building the spkg. Many thanks to him.",
+    "body": "Attachment [autodoc.py.patch](tarball://root/attachments/some-uuid/ticket7448/autodoc.py.patch) by hivert created at 2010-02-20 00:14:14\n\nI should have reached a final state for this ticket. I've added a lot of comment explaining what's happening. Please review.\n\nI uploaded a new patch for sphinx and for autodoc.py. Do *not* apply `trac_7448-nested_class_sphinx_exper-fh.patch` which was used for experiments. \n\nmpatel told on #8258 he will take care or building the spkg. Many thanks to him.",
     "created_at": "2010-02-20T00:14:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7448",
     "type": "issue_comment",
@@ -534,7 +534,7 @@ archive/issue_comments_062720.json:
 }
 ```
 
-Attachment
+Attachment [autodoc.py.patch](tarball://root/attachments/some-uuid/ticket7448/autodoc.py.patch) by hivert created at 2010-02-20 00:14:14
 
 I should have reached a final state for this ticket. I've added a lot of comment explaining what's happening. Please review.
 
@@ -567,7 +567,7 @@ Combined patch rebased vs. #8244.  Apply *only* this patch.  sage repo.
 archive/issue_comments_062722.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached a combined patch that's rebased against #8244.  That ticket adds a custom `sage_autodoc` extension to the sage repository.  We don't need to update the Sphinx spkg here.\n\nPlease check that I did this correctly.  Thanks!",
+    "body": "Attachment [trac_7448-nested_class_sphinx-fh.2.patch](tarball://root/attachments/some-uuid/ticket7448/trac_7448-nested_class_sphinx-fh.2.patch) by mpatel created at 2010-02-20 21:11:08\n\nI've attached a combined patch that's rebased against #8244.  That ticket adds a custom `sage_autodoc` extension to the sage repository.  We don't need to update the Sphinx spkg here.\n\nPlease check that I did this correctly.  Thanks!",
     "created_at": "2010-02-20T21:11:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7448",
     "type": "issue_comment",
@@ -576,7 +576,7 @@ archive/issue_comments_062722.json:
 }
 ```
 
-Attachment
+Attachment [trac_7448-nested_class_sphinx-fh.2.patch](tarball://root/attachments/some-uuid/ticket7448/trac_7448-nested_class_sphinx-fh.2.patch) by mpatel created at 2010-02-20 21:11:08
 
 I've attached a combined patch that's rebased against #8244.  That ticket adds a custom `sage_autodoc` extension to the sage repository.  We don't need to update the Sphinx spkg here.
 
@@ -689,7 +689,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_062728.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [autodoc.py.2.patch](tarball://root/attachments/some-uuid/ticket7448/autodoc.py.2.patch) by hivert created at 2010-02-23 20:12:01",
     "created_at": "2010-02-23T20:12:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7448",
     "type": "issue_comment",
@@ -698,7 +698,7 @@ archive/issue_comments_062728.json:
 }
 ```
 
-Attachment
+Attachment [autodoc.py.2.patch](tarball://root/attachments/some-uuid/ticket7448/autodoc.py.2.patch) by hivert created at 2010-02-23 20:12:01
 
 
 
@@ -707,7 +707,7 @@ Attachment
 archive/issue_comments_062729.json:
 ```json
 {
-    "body": "Attachment\n\nHi there ! I just uploaded what should be the final version of this patch:\n`autodoc.py` and `autodoc.py.2.patch` and ` trac_7448-nested_class_sphinx-fh.3.patch`. If you wan't to test the rendering you can comment\n\n```\n__all__ = [] # Don't document any parents\n```\n \nat the beginning of `nested_class_test.py`.",
+    "body": "Attachment [trac_7448-nested_class_sphinx-fh.3.patch](tarball://root/attachments/some-uuid/ticket7448/trac_7448-nested_class_sphinx-fh.3.patch) by hivert created at 2010-02-23 20:20:28\n\nHi there ! I just uploaded what should be the final version of this patch:\n`autodoc.py` and `autodoc.py.2.patch` and ` trac_7448-nested_class_sphinx-fh.3.patch`. If you wan't to test the rendering you can comment\n\n```\n__all__ = [] # Don't document any parents\n```\n \nat the beginning of `nested_class_test.py`.",
     "created_at": "2010-02-23T20:20:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7448",
     "type": "issue_comment",
@@ -716,7 +716,7 @@ archive/issue_comments_062729.json:
 }
 ```
 
-Attachment
+Attachment [trac_7448-nested_class_sphinx-fh.3.patch](tarball://root/attachments/some-uuid/ticket7448/trac_7448-nested_class_sphinx-fh.3.patch) by hivert created at 2010-02-23 20:20:28
 
 Hi there ! I just uploaded what should be the final version of this patch:
 `autodoc.py` and `autodoc.py.2.patch` and ` trac_7448-nested_class_sphinx-fh.3.patch`. If you wan't to test the rendering you can comment
@@ -788,7 +788,7 @@ Rebased for queue in comment.  Apply only this patch.
 archive/issue_comments_062733.json:
 ```json
 {
-    "body": "Attachment\n\nV4 is rebased for the following queue:\n\n```\ntrac_8244-slot_wrapper_argspec.patch\ntrac_8244-conf-autodoc.2.patch\ntrac_8244-sagedoc.patch\ntrac_7448-nested_class_sphinx-fh.4.patch\n```\n\nWith #8244, we don't need to update the `sphinx-*.spkg`, so please refresh [attachment:trac_7448-nested_class_sphinx-fh.4.patch].\n\nQuestions:\n\n* Are there objections to making the unpicklable class check optional?  We could add a command-line option. \n* Also, is it possible to move the check into a processing function in `conf.py`? Then we could minimize our changes to `autodoc`:\n\n```diff\ndiff --git a/doc/common/sage_autodoc.py b/doc/common/sage_autodoc.py\n--- a/doc/common/sage_autodoc.py\n+++ b/doc/common/sage_autodoc.py\n@@ -848,7 +848,9 @@ class ClassDocumenter(ModuleLevelDocumen\n         # as data/attribute\n         if ret:\n             if hasattr(self.object, '__name__'):\n-                self.doc_as_attr = (self.objpath[-1] != self.object.__name__)\n+                name = self.object.__name__\n+                self.doc_as_attr = (self.objpath != name.split('.') and \n+                                    self.check_module())\n             else:\n                 self.doc_as_attr = True\n         return ret\n```\n\n  and make it easier to upgrade to newer Sphinx versions.\n\nNote: We have made changes to `environment.py` and `highlighting.py` and other changes to `autodoc.py`.  But Georg Brandl has recently committed a [change](http://bitbucket.org/birkenfeld/sphinx/changeset/ee86e8563c6f/) --- requested by Mike Hansen? --- that should allow us to revert to the upstream `enviroment.py` and `autodoc.py`, modulo this ticket.  Actually, I think we can avoid patching `highlighting.py`, too, if we [subclass Pygments' Python lexer](http://pygments.org/docs/lexerdevelopment/).",
+    "body": "Attachment [trac_7448-nested_class_sphinx-fh.4.patch](tarball://root/attachments/some-uuid/ticket7448/trac_7448-nested_class_sphinx-fh.4.patch) by mpatel created at 2010-02-24 04:32:56\n\nV4 is rebased for the following queue:\n\n```\ntrac_8244-slot_wrapper_argspec.patch\ntrac_8244-conf-autodoc.2.patch\ntrac_8244-sagedoc.patch\ntrac_7448-nested_class_sphinx-fh.4.patch\n```\n\nWith #8244, we don't need to update the `sphinx-*.spkg`, so please refresh [attachment:trac_7448-nested_class_sphinx-fh.4.patch].\n\nQuestions:\n\n* Are there objections to making the unpicklable class check optional?  We could add a command-line option. \n* Also, is it possible to move the check into a processing function in `conf.py`? Then we could minimize our changes to `autodoc`:\n\n```diff\ndiff --git a/doc/common/sage_autodoc.py b/doc/common/sage_autodoc.py\n--- a/doc/common/sage_autodoc.py\n+++ b/doc/common/sage_autodoc.py\n@@ -848,7 +848,9 @@ class ClassDocumenter(ModuleLevelDocumen\n         # as data/attribute\n         if ret:\n             if hasattr(self.object, '__name__'):\n-                self.doc_as_attr = (self.objpath[-1] != self.object.__name__)\n+                name = self.object.__name__\n+                self.doc_as_attr = (self.objpath != name.split('.') and \n+                                    self.check_module())\n             else:\n                 self.doc_as_attr = True\n         return ret\n```\n\n  and make it easier to upgrade to newer Sphinx versions.\n\nNote: We have made changes to `environment.py` and `highlighting.py` and other changes to `autodoc.py`.  But Georg Brandl has recently committed a [change](http://bitbucket.org/birkenfeld/sphinx/changeset/ee86e8563c6f/) --- requested by Mike Hansen? --- that should allow us to revert to the upstream `enviroment.py` and `autodoc.py`, modulo this ticket.  Actually, I think we can avoid patching `highlighting.py`, too, if we [subclass Pygments' Python lexer](http://pygments.org/docs/lexerdevelopment/).",
     "created_at": "2010-02-24T04:32:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7448",
     "type": "issue_comment",
@@ -797,7 +797,7 @@ archive/issue_comments_062733.json:
 }
 ```
 
-Attachment
+Attachment [trac_7448-nested_class_sphinx-fh.4.patch](tarball://root/attachments/some-uuid/ticket7448/trac_7448-nested_class_sphinx-fh.4.patch) by mpatel created at 2010-02-24 04:32:56
 
 V4 is rebased for the following queue:
 
@@ -940,7 +940,7 @@ Only fix rendering of nested classes.
 archive/issue_comments_062737.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:28 mpatel]:\n> > Sure ! Please do ! I won't have much time working on this so I'll appreciate someone take over those if the architecture is changed.  \n> I tried doing this and didn't have instant success.  But as you suggest, it might be better to do this elsewhere.\n\nI've attached V5, which should \"just\" fix Sphinx's rendering of nested classes.  To the extent it counts, my review is positive.  Could someone please review V5 for this ticket?  I've opened #8452 for the nested class pickling check and will make a patch for that.",
+    "body": "Attachment [trac_7448-nested_class_sphinx-fh.5.patch](tarball://root/attachments/some-uuid/ticket7448/trac_7448-nested_class_sphinx-fh.5.patch) by mpatel created at 2010-03-06 00:47:04\n\nReplying to [comment:28 mpatel]:\n> > Sure ! Please do ! I won't have much time working on this so I'll appreciate someone take over those if the architecture is changed.  \n> I tried doing this and didn't have instant success.  But as you suggest, it might be better to do this elsewhere.\n\nI've attached V5, which should \"just\" fix Sphinx's rendering of nested classes.  To the extent it counts, my review is positive.  Could someone please review V5 for this ticket?  I've opened #8452 for the nested class pickling check and will make a patch for that.",
     "created_at": "2010-03-06T00:47:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7448",
     "type": "issue_comment",
@@ -949,7 +949,7 @@ archive/issue_comments_062737.json:
 }
 ```
 
-Attachment
+Attachment [trac_7448-nested_class_sphinx-fh.5.patch](tarball://root/attachments/some-uuid/ticket7448/trac_7448-nested_class_sphinx-fh.5.patch) by mpatel created at 2010-03-06 00:47:04
 
 Replying to [comment:28 mpatel]:
 > > Sure ! Please do ! I won't have much time working on this so I'll appreciate someone take over those if the architecture is changed.  

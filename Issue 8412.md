@@ -177,7 +177,7 @@ Oops, you're absolutely right.  I'll get to it tomorrow.
 archive/issue_comments_075370.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8412_trivial_center.patch](tarball://root/attachments/some-uuid/ticket8412/trac_8412_trivial_center.patch) by iandrus created at 2010-03-02 11:05:07",
     "created_at": "2010-03-02T11:05:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8412",
     "type": "issue_comment",
@@ -186,7 +186,7 @@ archive/issue_comments_075370.json:
 }
 ```
 
-Attachment
+Attachment [trac_8412_trivial_center.patch](tarball://root/attachments/some-uuid/ticket8412/trac_8412_trivial_center.patch) by iandrus created at 2010-03-02 11:05:07
 
 
 
@@ -287,7 +287,7 @@ properly folded patch; apply only this one
 archive/issue_comments_075376.json:
 ```json
 {
-    "body": "Attachment\n\nIt looks like [trac_8412_trivial_center.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8412/trac_8412_trivial_center.patch) consists of two patch files rolled into one, as evident from this snippet:\n\n```\n     ::\n-    \n+\n         sage: F = GF(5); MS = MatrixSpace(F,2,2)\n         sage: G = MatrixGroup([MS.0])\n         Traceback (most recent call last):\n# HG changeset patch\n# User Ivan Andrus <darthandrus@gmail.com>\n# Date 1267527460 -3600\n# Node ID fa0a59cf132bca55c4500e7c134157e57a23dc3d\n# Parent  023d02e0af46ae4e4450e3f2f14db54345aa8774\nAdded doctest for trivial center patch\n\ndiff -r 023d02e0af46 -r fa0a59cf132b sage/groups/matrix_gps/matrix_group.py\n--- a/sage/groups/matrix_gps/matrix_group.py\tMon Mar 01 23:52:39 2010 +0100\n+++ b/sage/groups/matrix_gps/matrix_group.py\tTue Mar 02 11:57:40 2010 +0100\n@@ -739,6 +739,11 @@\n```\n\nA patch file shouldn't be like that. I have attached the same patch, which also include the ticket number in the commit message. (Every commit message must have a ticket number.)",
+    "body": "Attachment [trac_8412-folded.patch](tarball://root/attachments/some-uuid/ticket8412/trac_8412-folded.patch) by mvngu created at 2010-03-03 02:53:32\n\nIt looks like [trac_8412_trivial_center.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8412/trac_8412_trivial_center.patch) consists of two patch files rolled into one, as evident from this snippet:\n\n```\n     ::\n-    \n+\n         sage: F = GF(5); MS = MatrixSpace(F,2,2)\n         sage: G = MatrixGroup([MS.0])\n         Traceback (most recent call last):\n# HG changeset patch\n# User Ivan Andrus <darthandrus@gmail.com>\n# Date 1267527460 -3600\n# Node ID fa0a59cf132bca55c4500e7c134157e57a23dc3d\n# Parent  023d02e0af46ae4e4450e3f2f14db54345aa8774\nAdded doctest for trivial center patch\n\ndiff -r 023d02e0af46 -r fa0a59cf132b sage/groups/matrix_gps/matrix_group.py\n--- a/sage/groups/matrix_gps/matrix_group.py\tMon Mar 01 23:52:39 2010 +0100\n+++ b/sage/groups/matrix_gps/matrix_group.py\tTue Mar 02 11:57:40 2010 +0100\n@@ -739,6 +739,11 @@\n```\n\nA patch file shouldn't be like that. I have attached the same patch, which also include the ticket number in the commit message. (Every commit message must have a ticket number.)",
     "created_at": "2010-03-03T02:53:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8412",
     "type": "issue_comment",
@@ -296,7 +296,7 @@ archive/issue_comments_075376.json:
 }
 ```
 
-Attachment
+Attachment [trac_8412-folded.patch](tarball://root/attachments/some-uuid/ticket8412/trac_8412-folded.patch) by mvngu created at 2010-03-03 02:53:32
 
 It looks like [trac_8412_trivial_center.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8412/trac_8412_trivial_center.patch) consists of two patch files rolled into one, as evident from this snippet:
 

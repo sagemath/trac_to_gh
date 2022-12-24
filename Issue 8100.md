@@ -86,7 +86,7 @@ Changing status from new to needs_review.
 archive/issue_comments_071077.json:
 ```json
 {
-    "body": "Attachment\n\nPatch attached.",
+    "body": "Attachment [trac_8100-run_notebook_cwd.patch](tarball://root/attachments/some-uuid/ticket8100/trac_8100-run_notebook_cwd.patch) by mpatel created at 2010-02-05 13:17:25\n\nPatch attached.",
     "created_at": "2010-02-05T13:17:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8100",
     "type": "issue_comment",
@@ -95,7 +95,7 @@ archive/issue_comments_071077.json:
 }
 ```
 
-Attachment
+Attachment [trac_8100-run_notebook_cwd.patch](tarball://root/attachments/some-uuid/ticket8100/trac_8100-run_notebook_cwd.patch) by mpatel created at 2010-02-05 13:17:25
 
 Patch attached.
 

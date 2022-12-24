@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3142
 archive/issue_comments_021810.json:
 ```json
 {
-    "body": "Attachment\n\nPatch is good and passes doctests. Positive review.\n\nCheers,\n\nMichael",
+    "body": "Attachment [mpolynomial_ideal_homogenize.patch](tarball://root/attachments/some-uuid/ticket3142/mpolynomial_ideal_homogenize.patch) by mabshoff created at 2008-05-11 13:39:31\n\nPatch is good and passes doctests. Positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-05-11T13:39:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3142",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_021810.json:
 }
 ```
 
-Attachment
+Attachment [mpolynomial_ideal_homogenize.patch](tarball://root/attachments/some-uuid/ticket3142/mpolynomial_ideal_homogenize.patch) by mabshoff created at 2008-05-11 13:39:31
 
 Patch is good and passes doctests. Positive review.
 

@@ -70,7 +70,7 @@ Fixes the code:   sage: 2.sqrt(extend = False, all = True)
 archive/issue_comments_090796.json:
 ```json
 {
-    "body": "Attachment\n\nFixes the code:  sage: FiniteField(next_prime(2^100))(2).sqrt(extend = False, all = True)",
+    "body": "Attachment [my2.patch](tarball://root/attachments/some-uuid/ticket9466/my2.patch) by ruckers created at 2012-02-08 05:09:21\n\nFixes the code:  sage: FiniteField(next_prime(2^100))(2).sqrt(extend = False, all = True)",
     "created_at": "2012-02-08T05:09:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9466",
     "type": "issue_comment",
@@ -79,7 +79,7 @@ archive/issue_comments_090796.json:
 }
 ```
 
-Attachment
+Attachment [my2.patch](tarball://root/attachments/some-uuid/ticket9466/my2.patch) by ruckers created at 2012-02-08 05:09:21
 
 Fixes the code:  sage: FiniteField(next_prime(2^100))(2).sqrt(extend = False, all = True)
 
@@ -151,7 +151,7 @@ If you have any questions, let me know!
 archive/issue_comments_090799.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9466.2.patch](tarball://root/attachments/some-uuid/ticket9466/9466.2.patch) by mstreng created at 2013-07-25 18:20:22",
     "created_at": "2013-07-25T18:20:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9466",
     "type": "issue_comment",
@@ -160,7 +160,7 @@ archive/issue_comments_090799.json:
 }
 ```
 
-Attachment
+Attachment [9466.2.patch](tarball://root/attachments/some-uuid/ticket9466/9466.2.patch) by mstreng created at 2013-07-25 18:20:22
 
 
 
@@ -169,7 +169,7 @@ Attachment
 archive/issue_comments_090800.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9466.3.patch](tarball://root/attachments/some-uuid/ticket9466/9466.3.patch) by mstreng created at 2013-07-25 18:21:59",
     "created_at": "2013-07-25T18:21:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9466",
     "type": "issue_comment",
@@ -178,7 +178,7 @@ archive/issue_comments_090800.json:
 }
 ```
 
-Attachment
+Attachment [9466.3.patch](tarball://root/attachments/some-uuid/ticket9466/9466.3.patch) by mstreng created at 2013-07-25 18:21:59
 
 
 
@@ -205,7 +205,7 @@ Changing keywords from "" to "sd23 sd51 sqrt all".
 archive/issue_comments_090802.json:
 ```json
 {
-    "body": "Attachment\n\nDoes anyone know who user \"ruckers\" is? (s)he should be added to the list of authors\n\napply 9466.patch",
+    "body": "Attachment [9466.patch](tarball://root/attachments/some-uuid/ticket9466/9466.patch) by mstreng created at 2013-07-25 18:31:32\n\nDoes anyone know who user \"ruckers\" is? (s)he should be added to the list of authors\n\napply 9466.patch",
     "created_at": "2013-07-25T18:31:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9466",
     "type": "issue_comment",
@@ -214,7 +214,7 @@ archive/issue_comments_090802.json:
 }
 ```
 
-Attachment
+Attachment [9466.patch](tarball://root/attachments/some-uuid/ticket9466/9466.patch) by mstreng created at 2013-07-25 18:31:32
 
 Does anyone know who user "ruckers" is? (s)he should be added to the list of authors
 

@@ -50,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7149
 archive/issue_comments_059237.json:
 ```json
 {
-    "body": "Attachment\n\nthanks for noticing this!\n\nmerged in 4.2.1.rc1",
+    "body": "Attachment [trac_7149-delete-graphtheory.patch](tarball://root/attachments/some-uuid/ticket7149/trac_7149-delete-graphtheory.patch) by was created at 2009-10-08 01:05:41\n\nthanks for noticing this!\n\nmerged in 4.2.1.rc1",
     "created_at": "2009-10-08T01:05:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7149",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_059237.json:
 }
 ```
 
-Attachment
+Attachment [trac_7149-delete-graphtheory.patch](tarball://root/attachments/some-uuid/ticket7149/trac_7149-delete-graphtheory.patch) by was created at 2009-10-08 01:05:41
 
 thanks for noticing this!
 

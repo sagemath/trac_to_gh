@@ -43,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7526
 archive/issue_comments_063793.json:
 ```json
 {
-    "body": "Attachment\n\nbased on 4.3.alpha0",
+    "body": "Attachment [trac_7256-polynomial_template_coercion.patch](tarball://root/attachments/some-uuid/ticket7526/trac_7256-polynomial_template_coercion.patch) by ylchapuy created at 2009-11-24 22:16:05\n\nbased on 4.3.alpha0",
     "created_at": "2009-11-24T22:16:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7526",
     "type": "issue_comment",
@@ -52,7 +52,7 @@ archive/issue_comments_063793.json:
 }
 ```
 
-Attachment
+Attachment [trac_7256-polynomial_template_coercion.patch](tarball://root/attachments/some-uuid/ticket7526/trac_7256-polynomial_template_coercion.patch) by ylchapuy created at 2009-11-24 22:16:05
 
 based on 4.3.alpha0
 
@@ -186,7 +186,7 @@ I think you attached the patch for #7531.
 archive/issue_comments_063798.json:
 ```json
 {
-    "body": "Attachment\n\nWoops, fixed.",
+    "body": "Attachment [trac_7256-polynomial_template_coercion_faster.patch](tarball://root/attachments/some-uuid/ticket7526/trac_7256-polynomial_template_coercion_faster.patch) by malb created at 2009-11-25 22:47:20\n\nWoops, fixed.",
     "created_at": "2009-11-25T22:47:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7526",
     "type": "issue_comment",
@@ -195,7 +195,7 @@ archive/issue_comments_063798.json:
 }
 ```
 
-Attachment
+Attachment [trac_7256-polynomial_template_coercion_faster.patch](tarball://root/attachments/some-uuid/ticket7526/trac_7256-polynomial_template_coercion_faster.patch) by malb created at 2009-11-25 22:47:20
 
 Woops, fixed.
 

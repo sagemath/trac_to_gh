@@ -77,7 +77,7 @@ http://sage.math.washington.edu/home/tabbott/polybori-0.5rc.spkg
 archive/issue_comments_022587.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [pbori-0.5-sage.patch](tarball://root/attachments/some-uuid/ticket3264/pbori-0.5-sage.patch) by tabbott created at 2008-07-11 01:40:44",
     "created_at": "2008-07-11T01:40:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3264",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_022587.json:
 }
 ```
 
-Attachment
+Attachment [pbori-0.5-sage.patch](tarball://root/attachments/some-uuid/ticket3264/pbori-0.5-sage.patch) by tabbott created at 2008-07-11 01:40:44
 
 
 
@@ -623,7 +623,7 @@ updated patch
 archive/issue_comments_022605.json:
 ```json
 {
-    "body": "Attachment\n\nHi there,\n\nI've uploaded an updated SPKG (not based on the rc Alexander pointed us to) here:\n\n  http://sage.math.washington.edu/home/malb/spkgs/polybori-0.5rc.p1.spkg\n\nand updated the attached patch. `sage -t sage/rings/` passes for me. I'v reverted #3104 too btw. and fixed the SPKG.txt.",
+    "body": "Attachment [pbori-0.5-sage.2.patch](tarball://root/attachments/some-uuid/ticket3264/pbori-0.5-sage.2.patch) by malb created at 2008-09-01 13:54:29\n\nHi there,\n\nI've uploaded an updated SPKG (not based on the rc Alexander pointed us to) here:\n\n  http://sage.math.washington.edu/home/malb/spkgs/polybori-0.5rc.p1.spkg\n\nand updated the attached patch. `sage -t sage/rings/` passes for me. I'v reverted #3104 too btw. and fixed the SPKG.txt.",
     "created_at": "2008-09-01T13:54:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3264",
     "type": "issue_comment",
@@ -632,7 +632,7 @@ archive/issue_comments_022605.json:
 }
 ```
 
-Attachment
+Attachment [pbori-0.5-sage.2.patch](tarball://root/attachments/some-uuid/ticket3264/pbori-0.5-sage.2.patch) by malb created at 2008-09-01 13:54:29
 
 Hi there,
 

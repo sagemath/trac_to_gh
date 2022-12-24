@@ -537,7 +537,7 @@ Hello world
 archive/issue_comments_086430.json:
 ```json
 {
-    "body": "Attachment\n\nWith the patch, all doctests in plot/*.py pass with matplotlib 1.0.",
+    "body": "Attachment [trac-9221-matplotlib-update.patch](tarball://root/attachments/some-uuid/ticket9221/trac-9221-matplotlib-update.patch) by jason created at 2010-08-14 16:00:05\n\nWith the patch, all doctests in plot/*.py pass with matplotlib 1.0.",
     "created_at": "2010-08-14T16:00:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9221",
     "type": "issue_comment",
@@ -546,7 +546,7 @@ archive/issue_comments_086430.json:
 }
 ```
 
-Attachment
+Attachment [trac-9221-matplotlib-update.patch](tarball://root/attachments/some-uuid/ticket9221/trac-9221-matplotlib-update.patch) by jason created at 2010-08-14 16:00:05
 
 With the patch, all doctests in plot/*.py pass with matplotlib 1.0.
 

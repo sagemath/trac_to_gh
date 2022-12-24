@@ -46,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3651
 archive/issue_comments_025820.json:
 ```json
 {
-    "body": "Attachment\n\nAfter the attached patch (based on 3.0.4) it works fine:\n\n```\nsage: EllipticCurve([0,0,0,-193^2,0]).sha().an()\n4\n```\n",
+    "body": "Attachment [sage-trac3651.patch](tarball://root/attachments/some-uuid/ticket3651/sage-trac3651.patch) by cremona created at 2008-07-13 19:45:47\n\nAfter the attached patch (based on 3.0.4) it works fine:\n\n```\nsage: EllipticCurve([0,0,0,-193^2,0]).sha().an()\n4\n```\n",
     "created_at": "2008-07-13T19:45:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3651",
     "type": "issue_comment",
@@ -55,7 +55,7 @@ archive/issue_comments_025820.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac3651.patch](tarball://root/attachments/some-uuid/ticket3651/sage-trac3651.patch) by cremona created at 2008-07-13 19:45:47
 
 After the attached patch (based on 3.0.4) it works fine:
 

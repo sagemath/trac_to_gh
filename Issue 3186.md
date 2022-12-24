@@ -55,7 +55,7 @@ Changing status from new to assigned.
 archive/issue_comments_022044.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [numpy-20080104-1.0.4.p2-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3186/numpy-20080104-1.0.4.p2-64bit-osx.patch) by mabshoff created at 2008-05-19 03:49:45",
     "created_at": "2008-05-19T03:49:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3186",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_022044.json:
 }
 ```
 
-Attachment
+Attachment [numpy-20080104-1.0.4.p2-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3186/numpy-20080104-1.0.4.p2-64bit-osx.patch) by mabshoff created at 2008-05-19 03:49:45
 
 
 
@@ -73,7 +73,7 @@ Attachment
 archive/issue_comments_022045.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [numpy-20080104-1.0.4.p2-64bit-osx_part2.patch](tarball://root/attachments/some-uuid/ticket3186/numpy-20080104-1.0.4.p2-64bit-osx_part2.patch) by mabshoff created at 2008-05-19 03:49:55",
     "created_at": "2008-05-19T03:49:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3186",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_022045.json:
 }
 ```
 
-Attachment
+Attachment [numpy-20080104-1.0.4.p2-64bit-osx_part2.patch](tarball://root/attachments/some-uuid/ticket3186/numpy-20080104-1.0.4.p2-64bit-osx_part2.patch) by mabshoff created at 2008-05-19 03:49:55
 
 
 
@@ -91,7 +91,7 @@ Attachment
 archive/issue_comments_022046.json:
 ```json
 {
-    "body": "Attachment\n\nThe updated spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.2/alpha1/numpy-20080104-1.0.4.p4.spkg\n\nCheers,\n\nMichael",
+    "body": "Attachment [numpy-20080104-1.0.4.p2-64bit-osx_part3.patch](tarball://root/attachments/some-uuid/ticket3186/numpy-20080104-1.0.4.p2-64bit-osx_part3.patch) by mabshoff created at 2008-05-19 03:57:37\n\nThe updated spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.2/alpha1/numpy-20080104-1.0.4.p4.spkg\n\nCheers,\n\nMichael",
     "created_at": "2008-05-19T03:57:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3186",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_022046.json:
 }
 ```
 
-Attachment
+Attachment [numpy-20080104-1.0.4.p2-64bit-osx_part3.patch](tarball://root/attachments/some-uuid/ticket3186/numpy-20080104-1.0.4.p2-64bit-osx_part3.patch) by mabshoff created at 2008-05-19 03:57:37
 
 The updated spkg is at
 

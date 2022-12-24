@@ -82,7 +82,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8003
 archive/issue_comments_069933.json:
 ```json
 {
-    "body": "Attachment\n\nfor reference",
+    "body": "Attachment [trac_8003-make_D_in_ZZ_only.patch](tarball://root/attachments/some-uuid/ticket8003/trac_8003-make_D_in_ZZ_only.patch) by rlm created at 2010-01-19 21:12:33\n\nfor reference",
     "created_at": "2010-01-19T21:12:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8003",
     "type": "issue_comment",
@@ -91,7 +91,7 @@ archive/issue_comments_069933.json:
 }
 ```
 
-Attachment
+Attachment [trac_8003-make_D_in_ZZ_only.patch](tarball://root/attachments/some-uuid/ticket8003/trac_8003-make_D_in_ZZ_only.patch) by rlm created at 2010-01-19 21:12:33
 
 for reference
 
@@ -120,7 +120,7 @@ This is a bug that I corrected earlier for the ordinary case and I forgot to adj
 archive/issue_comments_069935.json:
 ```json
 {
-    "body": "Attachment\n\nexported against 4.3.1.",
+    "body": "Attachment [trac_8003.patch](tarball://root/attachments/some-uuid/ticket8003/trac_8003.patch) by wuthrich created at 2010-01-23 18:32:40\n\nexported against 4.3.1.",
     "created_at": "2010-01-23T18:32:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8003",
     "type": "issue_comment",
@@ -129,7 +129,7 @@ archive/issue_comments_069935.json:
 }
 ```
 
-Attachment
+Attachment [trac_8003.patch](tarball://root/attachments/some-uuid/ticket8003/trac_8003.patch) by wuthrich created at 2010-01-23 18:32:40
 
 exported against 4.3.1.
 

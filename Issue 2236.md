@@ -54,7 +54,7 @@ I agree with the suggestion to *not* randomize the endpoints.  That's bad.
 archive/issue_comments_014809.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [plot_fix_endpoints.patch](tarball://root/attachments/some-uuid/ticket2236/plot_fix_endpoints.patch) by jason created at 2008-02-20 22:51:08",
     "created_at": "2008-02-20T22:51:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2236",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_014809.json:
 }
 ```
 
-Attachment
+Attachment [plot_fix_endpoints.patch](tarball://root/attachments/some-uuid/ticket2236/plot_fix_endpoints.patch) by jason created at 2008-02-20 22:51:08
 
 
 

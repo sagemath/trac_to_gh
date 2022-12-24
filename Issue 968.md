@@ -49,7 +49,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_005910.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [mem_graph_isom.hg](tarball://root/attachments/some-uuid/ticket968/mem_graph_isom.hg) by rlm created at 2007-10-22 01:23:12",
     "created_at": "2007-10-22T01:23:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/968",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_005910.json:
 }
 ```
 
-Attachment
+Attachment [mem_graph_isom.hg](tarball://root/attachments/some-uuid/ticket968/mem_graph_isom.hg) by rlm created at 2007-10-22 01:23:12
 
 
 
@@ -85,7 +85,7 @@ I should mention I found another bug like #939 when I cleaned up the allocation,
 archive/issue_comments_005912.json:
 ```json
 {
-    "body": "Attachment\n\nThis should be patched on top of the bundle...",
+    "body": "Attachment [7091.patch](tarball://root/attachments/some-uuid/ticket968/7091.patch) by rlm created at 2007-10-22 01:45:11\n\nThis should be patched on top of the bundle...",
     "created_at": "2007-10-22T01:45:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/968",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_005912.json:
 }
 ```
 
-Attachment
+Attachment [7091.patch](tarball://root/attachments/some-uuid/ticket968/7091.patch) by rlm created at 2007-10-22 01:45:11
 
 This should be patched on top of the bundle...
 

@@ -53,7 +53,7 @@ Description of the inputs and algorithms used in QF local density routines
 archive/issue_comments_048077.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Local Densities Writeup.pdf](tarball://root/attachments/some-uuid/ticket6037/Local Densities Writeup.pdf) by jonhanke created at 2009-05-14 21:18:47",
     "created_at": "2009-05-14T21:18:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6037",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_048077.json:
 }
 ```
 
-Attachment
+Attachment [Local Densities Writeup.pdf](tarball://root/attachments/some-uuid/ticket6037/Local Densities Writeup.pdf) by jonhanke created at 2009-05-14 21:18:47
 
 
 
@@ -71,7 +71,7 @@ Attachment
 archive/issue_comments_048078.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [patch-2__QF_local_densities__3.4.1.patch](tarball://root/attachments/some-uuid/ticket6037/patch-2__QF_local_densities__3.4.1.patch) by jonhanke created at 2009-05-14 21:19:46",
     "created_at": "2009-05-14T21:19:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6037",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_048078.json:
 }
 ```
 
-Attachment
+Attachment [patch-2__QF_local_densities__3.4.1.patch](tarball://root/attachments/some-uuid/ticket6037/patch-2__QF_local_densities__3.4.1.patch) by jonhanke created at 2009-05-14 21:19:46
 
 
 
@@ -89,7 +89,7 @@ Attachment
 archive/issue_comments_048079.json:
 ```json
 {
-    "body": "Attachment\n\nLaTeX file used to create the PDF writeup",
+    "body": "Attachment [Local Densities Writeup.tex](tarball://root/attachments/some-uuid/ticket6037/Local Densities Writeup.tex) by jonhanke created at 2009-05-15 18:16:41\n\nLaTeX file used to create the PDF writeup",
     "created_at": "2009-05-15T18:16:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6037",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_048079.json:
 }
 ```
 
-Attachment
+Attachment [Local Densities Writeup.tex](tarball://root/attachments/some-uuid/ticket6037/Local Densities Writeup.tex) by jonhanke created at 2009-05-15 18:16:41
 
 LaTeX file used to create the PDF writeup
 

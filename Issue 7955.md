@@ -62,7 +62,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7955
 archive/issue_comments_069415.json:
 ```json
 {
-    "body": "Attachment\n\nfix typesetting of unevaluated integrals",
+    "body": "Attachment [trac_7955-integrate_latex.patch](tarball://root/attachments/some-uuid/ticket7955/trac_7955-integrate_latex.patch) by burcin created at 2010-01-17 09:10:29\n\nfix typesetting of unevaluated integrals",
     "created_at": "2010-01-17T09:10:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7955",
     "type": "issue_comment",
@@ -71,7 +71,7 @@ archive/issue_comments_069415.json:
 }
 ```
 
-Attachment
+Attachment [trac_7955-integrate_latex.patch](tarball://root/attachments/some-uuid/ticket7955/trac_7955-integrate_latex.patch) by burcin created at 2010-01-17 09:10:29
 
 fix typesetting of unevaluated integrals
 

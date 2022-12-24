@@ -43,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4290
 archive/issue_comments_031399.json:
 ```json
 {
-    "body": "Attachment\n\nimplementation of EllipticCurve_from_plane_curve",
+    "body": "Attachment [EllipticCurve_from_plane_curve.sage](tarball://root/attachments/some-uuid/ticket4290/EllipticCurve_from_plane_curve.sage) by ljpk created at 2008-10-14 22:39:46\n\nimplementation of EllipticCurve_from_plane_curve",
     "created_at": "2008-10-14T22:39:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4290",
     "type": "issue_comment",
@@ -52,7 +52,7 @@ archive/issue_comments_031399.json:
 }
 ```
 
-Attachment
+Attachment [EllipticCurve_from_plane_curve.sage](tarball://root/attachments/some-uuid/ticket4290/EllipticCurve_from_plane_curve.sage) by ljpk created at 2008-10-14 22:39:46
 
 implementation of EllipticCurve_from_plane_curve
 
@@ -161,7 +161,7 @@ Patch based on the above, based on 3.4.1.rc0
 archive/issue_comments_031405.json:
 ```json
 {
-    "body": "Attachment\n\nI have made a proper patch based on Lloyd's function (based on 3.4.1.rc0), which also fixes his function so that it works when the variable names are something other than 'x','y','z' (which it did not before).\n\nYou might think that this function makes the existing EllipicCurve_from_cubic redundant;  it nearly does, but that function takes a homogeneous polynomial while this one takes an actual curve.  It would probably be better to combine these when all this is rewritten in Sage.\n\nI added the new function to all.py so that it is in the global namespace.  I am not sure what the convention is here, given that it is an optional-only function requiring magma!  Also I have nto tested my patch o na machine without magma since I don't have one handy :)",
+    "body": "Attachment [trac_4290.patch](tarball://root/attachments/some-uuid/ticket4290/trac_4290.patch) by cremona created at 2009-04-06 10:14:49\n\nI have made a proper patch based on Lloyd's function (based on 3.4.1.rc0), which also fixes his function so that it works when the variable names are something other than 'x','y','z' (which it did not before).\n\nYou might think that this function makes the existing EllipicCurve_from_cubic redundant;  it nearly does, but that function takes a homogeneous polynomial while this one takes an actual curve.  It would probably be better to combine these when all this is rewritten in Sage.\n\nI added the new function to all.py so that it is in the global namespace.  I am not sure what the convention is here, given that it is an optional-only function requiring magma!  Also I have nto tested my patch o na machine without magma since I don't have one handy :)",
     "created_at": "2009-04-06T10:14:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4290",
     "type": "issue_comment",
@@ -170,7 +170,7 @@ archive/issue_comments_031405.json:
 }
 ```
 
-Attachment
+Attachment [trac_4290.patch](tarball://root/attachments/some-uuid/ticket4290/trac_4290.patch) by cremona created at 2009-04-06 10:14:49
 
 I have made a proper patch based on Lloyd's function (based on 3.4.1.rc0), which also fixes his function so that it works when the variable names are something other than 'x','y','z' (which it did not before).
 
@@ -233,7 +233,7 @@ Replaces previous; rebased to 4.0.1
 archive/issue_comments_031408.json:
 ```json
 {
-    "body": "Attachment\n\nThe new patch replaces previous ones.  It marks the doctests as William asked;  testing then revealed bugs which have been fixed.  Also rebased to 4.0.1 and the docstrings properly ReSTified to the reference manual page looks good.",
+    "body": "Attachment [trac_4290-rebase.patch](tarball://root/attachments/some-uuid/ticket4290/trac_4290-rebase.patch) by cremona created at 2009-06-11 20:39:20\n\nThe new patch replaces previous ones.  It marks the doctests as William asked;  testing then revealed bugs which have been fixed.  Also rebased to 4.0.1 and the docstrings properly ReSTified to the reference manual page looks good.",
     "created_at": "2009-06-11T20:39:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4290",
     "type": "issue_comment",
@@ -242,7 +242,7 @@ archive/issue_comments_031408.json:
 }
 ```
 
-Attachment
+Attachment [trac_4290-rebase.patch](tarball://root/attachments/some-uuid/ticket4290/trac_4290-rebase.patch) by cremona created at 2009-06-11 20:39:20
 
 The new patch replaces previous ones.  It marks the doctests as William asked;  testing then revealed bugs which have been fixed.  Also rebased to 4.0.1 and the docstrings properly ReSTified to the reference manual page looks good.
 

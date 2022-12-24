@@ -89,7 +89,7 @@ replaces all previous patches
 archive/issue_comments_045296.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch I've just uploaded unifies the previous two patches, and adds some more doctests to bring the coverage higher still (although not quite to 100% as I don't have time right now to understand some of the weirder things that are going on in hecke/submodule.py). Note that again this patch is designed to be applied over the patches at #5736.",
+    "body": "Attachment [trac_5787-all.patch](tarball://root/attachments/some-uuid/ticket5787/trac_5787-all.patch) by davidloeffler created at 2009-05-04 16:49:46\n\nThe patch I've just uploaded unifies the previous two patches, and adds some more doctests to bring the coverage higher still (although not quite to 100% as I don't have time right now to understand some of the weirder things that are going on in hecke/submodule.py). Note that again this patch is designed to be applied over the patches at #5736.",
     "created_at": "2009-05-04T16:49:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5787",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_045296.json:
 }
 ```
 
-Attachment
+Attachment [trac_5787-all.patch](tarball://root/attachments/some-uuid/ticket5787/trac_5787-all.patch) by davidloeffler created at 2009-05-04 16:49:46
 
 The patch I've just uploaded unifies the previous two patches, and adds some more doctests to bring the coverage higher still (although not quite to 100% as I don't have time right now to understand some of the weirder things that are going on in hecke/submodule.py). Note that again this patch is designed to be applied over the patches at #5736.
 
@@ -109,7 +109,7 @@ The patch I've just uploaded unifies the previous two patches, and adds some mor
 archive/issue_comments_045297.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5787_pt2.patch](tarball://root/attachments/some-uuid/ticket5787/trac_5787_pt2.patch) by craigcitro created at 2009-05-08 09:44:31",
     "created_at": "2009-05-08T09:44:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5787",
     "type": "issue_comment",
@@ -118,7 +118,7 @@ archive/issue_comments_045297.json:
 }
 ```
 
-Attachment
+Attachment [trac_5787_pt2.patch](tarball://root/attachments/some-uuid/ticket5787/trac_5787_pt2.patch) by craigcitro created at 2009-05-08 09:44:31
 
 
 
@@ -190,7 +190,7 @@ David
 archive/issue_comments_045301.json:
 ```json
 {
-    "body": "Attachment\n\nrebased not  to conflict with #4357",
+    "body": "Attachment [trac_5787_pt2_rebased.patch](tarball://root/attachments/some-uuid/ticket5787/trac_5787_pt2_rebased.patch) by davidloeffler created at 2009-05-10 21:32:24\n\nrebased not  to conflict with #4357",
     "created_at": "2009-05-10T21:32:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5787",
     "type": "issue_comment",
@@ -199,7 +199,7 @@ archive/issue_comments_045301.json:
 }
 ```
 
-Attachment
+Attachment [trac_5787_pt2_rebased.patch](tarball://root/attachments/some-uuid/ticket5787/trac_5787_pt2_rebased.patch) by davidloeffler created at 2009-05-10 21:32:24
 
 rebased not  to conflict with #4357
 
@@ -210,7 +210,7 @@ rebased not  to conflict with #4357
 archive/issue_comments_045302.json:
 ```json
 {
-    "body": "Attachment\n\nOn inspection, it turns out that the `__cmp__` routine was written stupidly anyway, so I rewrote it. Hence the third patch above. So now applying trac_5787-all.patch, trac_5787_pt2_rebased.patch, and trac_5787_pt3.patch (on top of the already-merged #5736 patches and #4357) should not conflict -- at least it doesn't on my machine.\n\nCraig: I'm entirely happy with the rest of your changes, so if you could just check to make sure that applying #5736 + #4357 + the patches here works for you and passes doctests, I think we can call this a positive review at last.",
+    "body": "Attachment [trac_5787_pt3.patch](tarball://root/attachments/some-uuid/ticket5787/trac_5787_pt3.patch) by davidloeffler created at 2009-05-10 21:47:58\n\nOn inspection, it turns out that the `__cmp__` routine was written stupidly anyway, so I rewrote it. Hence the third patch above. So now applying trac_5787-all.patch, trac_5787_pt2_rebased.patch, and trac_5787_pt3.patch (on top of the already-merged #5736 patches and #4357) should not conflict -- at least it doesn't on my machine.\n\nCraig: I'm entirely happy with the rest of your changes, so if you could just check to make sure that applying #5736 + #4357 + the patches here works for you and passes doctests, I think we can call this a positive review at last.",
     "created_at": "2009-05-10T21:47:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5787",
     "type": "issue_comment",
@@ -219,7 +219,7 @@ archive/issue_comments_045302.json:
 }
 ```
 
-Attachment
+Attachment [trac_5787_pt3.patch](tarball://root/attachments/some-uuid/ticket5787/trac_5787_pt3.patch) by davidloeffler created at 2009-05-10 21:47:58
 
 On inspection, it turns out that the `__cmp__` routine was written stupidly anyway, so I rewrote it. Hence the third patch above. So now applying trac_5787-all.patch, trac_5787_pt2_rebased.patch, and trac_5787_pt3.patch (on top of the already-merged #5736 patches and #4357) should not conflict -- at least it doesn't on my machine.
 

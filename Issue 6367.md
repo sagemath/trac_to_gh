@@ -108,7 +108,7 @@ Unfortunately this is pretty hard to change since `polygon` is expected to work 
 archive/issue_comments_050932.json:
 ```json
 {
-    "body": "Attachment\n\n> Unfortunately this is pretty hard to change since `polygon` is expected to work for two and three D input.\nWhat I mean, of course, is that it would be hard to change since users probably are using it this way a lot and the deprecation period and all simply isn't worth the effort at this point.  Anyway, needs review.",
+    "body": "Attachment [trac_6367-polygon.patch](tarball://root/attachments/some-uuid/ticket6367/trac_6367-polygon.patch) by kcrisman created at 2012-05-26 21:13:27\n\n> Unfortunately this is pretty hard to change since `polygon` is expected to work for two and three D input.\nWhat I mean, of course, is that it would be hard to change since users probably are using it this way a lot and the deprecation period and all simply isn't worth the effort at this point.  Anyway, needs review.",
     "created_at": "2012-05-26T21:13:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6367",
     "type": "issue_comment",
@@ -117,7 +117,7 @@ archive/issue_comments_050932.json:
 }
 ```
 
-Attachment
+Attachment [trac_6367-polygon.patch](tarball://root/attachments/some-uuid/ticket6367/trac_6367-polygon.patch) by kcrisman created at 2012-05-26 21:13:27
 
 > Unfortunately this is pretty hard to change since `polygon` is expected to work for two and three D input.
 What I mean, of course, is that it would be hard to change since users probably are using it this way a lot and the deprecation period and all simply isn't worth the effort at this point.  Anyway, needs review.

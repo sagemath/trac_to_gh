@@ -89,7 +89,7 @@ Changing priority from major to minor.
 archive/issue_comments_080735.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch implements duals of projective hypersurfaces. Patch rebased on top of Sage 5.2.",
+    "body": "Attachment [trac_8801_projective_duals.patch](tarball://root/attachments/some-uuid/ticket8801/trac_8801_projective_duals.patch) by davideklund created at 2012-08-24 17:20:59\n\nThe patch implements duals of projective hypersurfaces. Patch rebased on top of Sage 5.2.",
     "created_at": "2012-08-24T17:20:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8801",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_080735.json:
 }
 ```
 
-Attachment
+Attachment [trac_8801_projective_duals.patch](tarball://root/attachments/some-uuid/ticket8801/trac_8801_projective_duals.patch) by davideklund created at 2012-08-24 17:20:59
 
 The patch implements duals of projective hypersurfaces. Patch rebased on top of Sage 5.2.
 

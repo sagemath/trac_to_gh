@@ -106,7 +106,7 @@ Still, we should check for nr>nc ourselves to present a more userfriendly except
 archive/issue_comments_008018.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_1279.patch](tarball://root/attachments/some-uuid/ticket1279/trac_1279.patch) by malb created at 2007-11-27 22:00:33",
     "created_at": "2007-11-27T22:00:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1279",
     "type": "issue_comment",
@@ -115,7 +115,7 @@ archive/issue_comments_008018.json:
 }
 ```
 
-Attachment
+Attachment [trac_1279.patch](tarball://root/attachments/some-uuid/ticket1279/trac_1279.patch) by malb created at 2007-11-27 22:00:33
 
 
 

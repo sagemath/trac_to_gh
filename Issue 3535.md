@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3535
 archive/issue_comments_024952.json:
 ```json
 {
-    "body": "Attachment\n\nThis is no longer needed thanks to the welcome message on a user's worksheet listing page.",
+    "body": "Attachment [sage-3535.patch](tarball://root/attachments/some-uuid/ticket3535/sage-3535.patch) by TimothyClemans created at 2008-09-08 15:57:41\n\nThis is no longer needed thanks to the welcome message on a user's worksheet listing page.",
     "created_at": "2008-09-08T15:57:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3535",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_024952.json:
 }
 ```
 
-Attachment
+Attachment [sage-3535.patch](tarball://root/attachments/some-uuid/ticket3535/sage-3535.patch) by TimothyClemans created at 2008-09-08 15:57:41
 
 This is no longer needed thanks to the welcome message on a user's worksheet listing page.
 

@@ -117,7 +117,7 @@ The main point is that converting from pari to Sage using .python() has a precis
 archive/issue_comments_029316.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4064-ell_pari_precision.patch](tarball://root/attachments/some-uuid/ticket4064/4064-ell_pari_precision.patch) by AlexGhitza created at 2008-09-06 11:14:19",
     "created_at": "2008-09-06T11:14:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4064",
     "type": "issue_comment",
@@ -126,7 +126,7 @@ archive/issue_comments_029316.json:
 }
 ```
 
-Attachment
+Attachment [4064-ell_pari_precision.patch](tarball://root/attachments/some-uuid/ticket4064/4064-ell_pari_precision.patch) by AlexGhitza created at 2008-09-06 11:14:19
 
 
 
@@ -226,7 +226,7 @@ This is just on account of differing behaviour on 64-bit machines which Alex had
 archive/issue_comments_029320.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4064-ell_pari_precision-1a.patch](tarball://root/attachments/some-uuid/ticket4064/4064-ell_pari_precision-1a.patch) by cremona created at 2008-09-06 19:31:02",
     "created_at": "2008-09-06T19:31:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4064",
     "type": "issue_comment",
@@ -235,7 +235,7 @@ archive/issue_comments_029320.json:
 }
 ```
 
-Attachment
+Attachment [4064-ell_pari_precision-1a.patch](tarball://root/attachments/some-uuid/ticket4064/4064-ell_pari_precision-1a.patch) by cremona created at 2008-09-06 19:31:02
 
 
 
@@ -315,7 +315,7 @@ apply before the above two patches, on top of pristine 3.1.2.alpha4 (ignore if u
 archive/issue_comments_029324.json:
 ```json
 {
-    "body": "Attachment\n\nFor the record, John's patch looks good to me.\n\nIn order to ease the work of whoever might want to look at this before rc0 comes out, I have attached a patch with all the prerequisites listed in the above comments.  So if you're on a 3.1.2.alpha4 and want to check this out, first apply 4064-prerequisites.patch, then the two others from this ticket.  You of course don't have to review any of the changes in 4064-prerequisites.patch, since these have all already been reviewed and merged.\n\nIf you're on rc0 just apply the two first patches.",
+    "body": "Attachment [4064-prerequisites.patch](tarball://root/attachments/some-uuid/ticket4064/4064-prerequisites.patch) by AlexGhitza created at 2008-09-06 22:14:53\n\nFor the record, John's patch looks good to me.\n\nIn order to ease the work of whoever might want to look at this before rc0 comes out, I have attached a patch with all the prerequisites listed in the above comments.  So if you're on a 3.1.2.alpha4 and want to check this out, first apply 4064-prerequisites.patch, then the two others from this ticket.  You of course don't have to review any of the changes in 4064-prerequisites.patch, since these have all already been reviewed and merged.\n\nIf you're on rc0 just apply the two first patches.",
     "created_at": "2008-09-06T22:14:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4064",
     "type": "issue_comment",
@@ -324,7 +324,7 @@ archive/issue_comments_029324.json:
 }
 ```
 
-Attachment
+Attachment [4064-prerequisites.patch](tarball://root/attachments/some-uuid/ticket4064/4064-prerequisites.patch) by AlexGhitza created at 2008-09-06 22:14:53
 
 For the record, John's patch looks good to me.
 

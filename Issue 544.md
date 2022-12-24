@@ -54,7 +54,7 @@ Changing assignee from wdjoyner to mhansen.
 archive/issue_comments_002756.json:
 ```json
 {
-    "body": "Attachment\n\nPatch attached.",
+    "body": "Attachment [544.patch](tarball://root/attachments/some-uuid/ticket544/544.patch) by mhansen created at 2007-09-06 23:45:53\n\nPatch attached.",
     "created_at": "2007-09-06T23:45:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/544",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_002756.json:
 }
 ```
 
-Attachment
+Attachment [544.patch](tarball://root/attachments/some-uuid/ticket544/544.patch) by mhansen created at 2007-09-06 23:45:53
 
 Patch attached.
 

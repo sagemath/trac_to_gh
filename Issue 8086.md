@@ -376,7 +376,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_070864.json:
 ```json
 {
-    "body": "Attachment\n\nMercurial patch which solves the Numpy build issues without any sort of hack. I think this would work on OS X too, but I'm not changing the OS X code now.",
+    "body": "Attachment [8086.patch](tarball://root/attachments/some-uuid/ticket8086/8086.patch) by drkirkby created at 2010-07-30 09:34:27\n\nMercurial patch which solves the Numpy build issues without any sort of hack. I think this would work on OS X too, but I'm not changing the OS X code now.",
     "created_at": "2010-07-30T09:34:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8086",
     "type": "issue_comment",
@@ -385,7 +385,7 @@ archive/issue_comments_070864.json:
 }
 ```
 
-Attachment
+Attachment [8086.patch](tarball://root/attachments/some-uuid/ticket8086/8086.patch) by drkirkby created at 2010-07-30 09:34:27
 
 Mercurial patch which solves the Numpy build issues without any sort of hack. I think this would work on OS X too, but I'm not changing the OS X code now.
 

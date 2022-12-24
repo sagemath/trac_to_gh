@@ -214,7 +214,7 @@ To expand on this a little bit, I think that the right way to fix it is making `
 archive/issue_comments_020162.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [padics_tmp_coeff_size.patch](tarball://root/attachments/some-uuid/ticket2928/padics_tmp_coeff_size.patch) by wjp created at 2008-04-20 13:19:25",
     "created_at": "2008-04-20T13:19:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2928",
     "type": "issue_comment",
@@ -223,7 +223,7 @@ archive/issue_comments_020162.json:
 }
 ```
 
-Attachment
+Attachment [padics_tmp_coeff_size.patch](tarball://root/attachments/some-uuid/ticket2928/padics_tmp_coeff_size.patch) by wjp created at 2008-04-20 13:19:25
 
 
 
@@ -232,7 +232,7 @@ Attachment
 archive/issue_comments_020163.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [padics_tmp_coeff_size.2.patch](tarball://root/attachments/some-uuid/ticket2928/padics_tmp_coeff_size.2.patch) by wjp created at 2008-04-20 13:39:07",
     "created_at": "2008-04-20T13:39:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2928",
     "type": "issue_comment",
@@ -241,7 +241,7 @@ archive/issue_comments_020163.json:
 }
 ```
 
-Attachment
+Attachment [padics_tmp_coeff_size.2.patch](tarball://root/attachments/some-uuid/ticket2928/padics_tmp_coeff_size.2.patch) by wjp created at 2008-04-20 13:39:07
 
 
 

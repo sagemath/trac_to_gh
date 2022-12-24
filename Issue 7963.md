@@ -114,7 +114,7 @@ Changing status from new to needs_review.
 archive/issue_comments_069485.json:
 ```json
 {
-    "body": "Attachment\n\nThis adds what mpatel suggested.",
+    "body": "Attachment [trac_7963-download-multiple-worksheets.patch](tarball://root/attachments/some-uuid/ticket7963/trac_7963-download-multiple-worksheets.patch) by timdumol created at 2010-01-19 08:58:00\n\nThis adds what mpatel suggested.",
     "created_at": "2010-01-19T08:58:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7963",
     "type": "issue_comment",
@@ -123,7 +123,7 @@ archive/issue_comments_069485.json:
 }
 ```
 
-Attachment
+Attachment [trac_7963-download-multiple-worksheets.patch](tarball://root/attachments/some-uuid/ticket7963/trac_7963-download-multiple-worksheets.patch) by timdumol created at 2010-01-19 08:58:00
 
 This adds what mpatel suggested.
 

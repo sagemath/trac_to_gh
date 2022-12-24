@@ -51,7 +51,7 @@ One-column indexes for PDF ref. manual.  Depends on #8036's "utfx8" patch.
 archive/issue_comments_071559.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8138-one_column_index.patch](tarball://root/attachments/some-uuid/ticket8138/trac_8138-one_column_index.patch) by mpatel created at 2010-01-31 10:06:50",
     "created_at": "2010-01-31T10:06:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8138",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_071559.json:
 }
 ```
 
-Attachment
+Attachment [trac_8138-one_column_index.patch](tarball://root/attachments/some-uuid/ticket8138/trac_8138-one_column_index.patch) by mpatel created at 2010-01-31 10:06:50
 
 
 
@@ -161,7 +161,7 @@ One small error: you need an "r" before the triple quotes; otherwise the latex f
 archive/issue_comments_071565.json:
 ```json
 {
-    "body": "Attachment\n\napply instead of other patch",
+    "body": "Attachment [trac_8138-one_column_index-v2.patch](tarball://root/attachments/some-uuid/ticket8138/trac_8138-one_column_index-v2.patch) by jhpalmieri created at 2010-01-31 16:59:47\n\napply instead of other patch",
     "created_at": "2010-01-31T16:59:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8138",
     "type": "issue_comment",
@@ -170,7 +170,7 @@ archive/issue_comments_071565.json:
 }
 ```
 
-Attachment
+Attachment [trac_8138-one_column_index-v2.patch](tarball://root/attachments/some-uuid/ticket8138/trac_8138-one_column_index-v2.patch) by jhpalmieri created at 2010-01-31 16:59:47
 
 apply instead of other patch
 

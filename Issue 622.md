@@ -81,7 +81,7 @@ Changing assignee from somebody to was.
 archive/issue_comments_003200.json:
 ```json
 {
-    "body": "Attachment\n\nthis should fix the problem pretty well",
+    "body": "Attachment [6288.patch](tarball://root/attachments/some-uuid/ticket622/6288.patch) by was created at 2007-09-12 18:32:38\n\nthis should fix the problem pretty well",
     "created_at": "2007-09-12T18:32:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/622",
     "type": "issue_comment",
@@ -90,7 +90,7 @@ archive/issue_comments_003200.json:
 }
 ```
 
-Attachment
+Attachment [6288.patch](tarball://root/attachments/some-uuid/ticket622/6288.patch) by was created at 2007-09-12 18:32:38
 
 this should fix the problem pretty well
 

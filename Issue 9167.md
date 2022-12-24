@@ -1713,7 +1713,7 @@ Spkg diff, for review only. Not committed in spkg.
 archive/issue_comments_085654.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [spkg.diff](tarball://root/attachments/some-uuid/ticket9167/spkg.diff) by jpflori created at 2012-10-02 20:15:48",
     "created_at": "2012-10-02T20:15:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -1722,7 +1722,7 @@ archive/issue_comments_085654.json:
 }
 ```
 
-Attachment
+Attachment [spkg.diff](tarball://root/attachments/some-uuid/ticket9167/spkg.diff) by jpflori created at 2012-10-02 20:15:48
 
 
 
@@ -1867,7 +1867,7 @@ For review only - based on JP's spkg
 archive/issue_comments_085662.json:
 ```json
 {
-    "body": "Attachment\n\n> Not quite ready for prime-time, but [this spkg](http://sage.math.washington.edu/home/kcrisman/ecl-12.7.1.p1.spkg) with the above diff.  This is just naively porting JP's diff.  Somehow I mixed up something, and also there is the problem with the weird tarring... but an attempt, anyway.\n\nOkay, I see what I did wrong.  I still have the weird unknown extended keyword thing while untarring, but at least the patches apply now!  Waiting on the build, hopefully all will be well on Cygwin.",
+    "body": "Attachment [spkg-take2.diff](tarball://root/attachments/some-uuid/ticket9167/spkg-take2.diff) by kcrisman created at 2012-12-06 17:03:11\n\n> Not quite ready for prime-time, but [this spkg](http://sage.math.washington.edu/home/kcrisman/ecl-12.7.1.p1.spkg) with the above diff.  This is just naively porting JP's diff.  Somehow I mixed up something, and also there is the problem with the weird tarring... but an attempt, anyway.\n\nOkay, I see what I did wrong.  I still have the weird unknown extended keyword thing while untarring, but at least the patches apply now!  Waiting on the build, hopefully all will be well on Cygwin.",
     "created_at": "2012-12-06T17:03:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -1876,7 +1876,7 @@ archive/issue_comments_085662.json:
 }
 ```
 
-Attachment
+Attachment [spkg-take2.diff](tarball://root/attachments/some-uuid/ticket9167/spkg-take2.diff) by kcrisman created at 2012-12-06 17:03:11
 
 > Not quite ready for prime-time, but [this spkg](http://sage.math.washington.edu/home/kcrisman/ecl-12.7.1.p1.spkg) with the above diff.  This is just naively porting JP's diff.  Somehow I mixed up something, and also there is the problem with the weird tarring... but an attempt, anyway.
 
@@ -2073,7 +2073,7 @@ Patch to upstream build system.
 archive/issue_comments_085672.json:
 ```json
 {
-    "body": "Attachment\n\nI guess I should have used a matching version of autoconf to generate a smaller diff.",
+    "body": "Attachment [implib.patch](tarball://root/attachments/some-uuid/ticket9167/implib.patch) by jpflori created at 2012-12-18 17:16:23\n\nI guess I should have used a matching version of autoconf to generate a smaller diff.",
     "created_at": "2012-12-18T17:16:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -2082,7 +2082,7 @@ archive/issue_comments_085672.json:
 }
 ```
 
-Attachment
+Attachment [implib.patch](tarball://root/attachments/some-uuid/ticket9167/implib.patch) by jpflori created at 2012-12-18 17:16:23
 
 I guess I should have used a matching version of autoconf to generate a smaller diff.
 
@@ -2850,7 +2850,7 @@ Should be ok now (I've even taken the time to actually try to build it (on Linux
 archive/issue_comments_085709.json:
 ```json
 {
-    "body": "Attachment\n\nSpkg diff, for review only.",
+    "body": "Attachment [ecl-12.12.1.p1.diff](tarball://root/attachments/some-uuid/ticket9167/ecl-12.12.1.p1.diff) by jpflori created at 2013-01-18 10:54:08\n\nSpkg diff, for review only.",
     "created_at": "2013-01-18T10:54:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -2859,7 +2859,7 @@ archive/issue_comments_085709.json:
 }
 ```
 
-Attachment
+Attachment [ecl-12.12.1.p1.diff](tarball://root/attachments/some-uuid/ticket9167/ecl-12.12.1.p1.diff) by jpflori created at 2013-01-18 10:54:08
 
 Spkg diff, for review only.
 

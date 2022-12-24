@@ -59,7 +59,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2717
 archive/issue_comments_018735.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac2717-maxima-sync-fail-safer.patch](tarball://root/attachments/some-uuid/ticket2717/trac2717-maxima-sync-fail-safer.patch) by cwitty created at 2008-03-29 19:19:23",
     "created_at": "2008-03-29T19:19:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2717",
     "type": "issue_comment",
@@ -68,7 +68,7 @@ archive/issue_comments_018735.json:
 }
 ```
 
-Attachment
+Attachment [trac2717-maxima-sync-fail-safer.patch](tarball://root/attachments/some-uuid/ticket2717/trac2717-maxima-sync-fail-safer.patch) by cwitty created at 2008-03-29 19:19:23
 
 
 

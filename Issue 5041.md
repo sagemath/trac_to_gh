@@ -76,7 +76,7 @@ $ ./sage -t -only_optional=magma devel/sage/sage/
 archive/issue_comments_038395.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5041-extcode_repo.patch](tarball://root/attachments/some-uuid/ticket5041/trac_5041-extcode_repo.patch) by was created at 2009-01-22 12:01:43",
     "created_at": "2009-01-22T12:01:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5041",
     "type": "issue_comment",
@@ -85,7 +85,7 @@ archive/issue_comments_038395.json:
 }
 ```
 
-Attachment
+Attachment [trac_5041-extcode_repo.patch](tarball://root/attachments/some-uuid/ticket5041/trac_5041-extcode_repo.patch) by was created at 2009-01-22 12:01:43
 
 
 

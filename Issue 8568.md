@@ -169,7 +169,7 @@ Any ideas?
 archive/issue_comments_077601.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8568-diff_conversion.patch](tarball://root/attachments/some-uuid/ticket8568/trac_8568-diff_conversion.patch) by burcin created at 2010-05-27 10:38:43",
     "created_at": "2010-05-27T10:38:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8568",
     "type": "issue_comment",
@@ -178,7 +178,7 @@ archive/issue_comments_077601.json:
 }
 ```
 
-Attachment
+Attachment [trac_8568-diff_conversion.patch](tarball://root/attachments/some-uuid/ticket8568/trac_8568-diff_conversion.patch) by burcin created at 2010-05-27 10:38:43
 
 
 
@@ -261,7 +261,7 @@ Apply only this.
 archive/issue_comments_077606.json:
 ```json
 {
-    "body": "Attachment\n\nThis looks like a good change.  I did the other thing, and put the test of the original bug report in that file, since it seemed like it belonged there now that it works :)  Should pass all tests (only failures for me were related to Maxima upgrade).",
+    "body": "Attachment [trac_8568-diff-conv-and-erf-deriv.patch](tarball://root/attachments/some-uuid/ticket8568/trac_8568-diff-conv-and-erf-deriv.patch) by kcrisman created at 2010-05-27 15:48:04\n\nThis looks like a good change.  I did the other thing, and put the test of the original bug report in that file, since it seemed like it belonged there now that it works :)  Should pass all tests (only failures for me were related to Maxima upgrade).",
     "created_at": "2010-05-27T15:48:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8568",
     "type": "issue_comment",
@@ -270,7 +270,7 @@ archive/issue_comments_077606.json:
 }
 ```
 
-Attachment
+Attachment [trac_8568-diff-conv-and-erf-deriv.patch](tarball://root/attachments/some-uuid/ticket8568/trac_8568-diff-conv-and-erf-deriv.patch) by kcrisman created at 2010-05-27 15:48:04
 
 This looks like a good change.  I did the other thing, and put the test of the original bug report in that file, since it seemed like it belonged there now that it works :)  Should pass all tests (only failures for me were related to Maxima upgrade).
 
@@ -299,7 +299,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_077608.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8568-erf-deriv.patch](tarball://root/attachments/some-uuid/ticket8568/trac_8568-erf-deriv.patch) by burcin created at 2010-05-27 16:04:10",
     "created_at": "2010-05-27T16:04:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8568",
     "type": "issue_comment",
@@ -308,7 +308,7 @@ archive/issue_comments_077608.json:
 }
 ```
 
-Attachment
+Attachment [trac_8568-erf-deriv.patch](tarball://root/attachments/some-uuid/ticket8568/trac_8568-erf-deriv.patch) by burcin created at 2010-05-27 16:04:10
 
 
 
@@ -317,7 +317,7 @@ Attachment
 archive/issue_comments_077609.json:
 ```json
 {
-    "body": "Attachment\n\nThanks for the quick fix!\n\nYour patch removes my commit message, which I tried hard to make long and explanatory. :) Please submit a separate patch in the future.\n\nI uploaded two new patches, one including your changes to the `erf` function, and the other my fixes for `expression_conversions.py`.\n\nPatches to be applied:\n* attachment:trac_8568-diff_conversion.take2.patch\n* attachment:trac_8568-erf-deriv.patch",
+    "body": "Attachment [trac_8568-diff_conversion.take2.patch](tarball://root/attachments/some-uuid/ticket8568/trac_8568-diff_conversion.take2.patch) by burcin created at 2010-05-27 16:18:25\n\nThanks for the quick fix!\n\nYour patch removes my commit message, which I tried hard to make long and explanatory. :) Please submit a separate patch in the future.\n\nI uploaded two new patches, one including your changes to the `erf` function, and the other my fixes for `expression_conversions.py`.\n\nPatches to be applied:\n* attachment:trac_8568-diff_conversion.take2.patch\n* attachment:trac_8568-erf-deriv.patch",
     "created_at": "2010-05-27T16:18:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8568",
     "type": "issue_comment",
@@ -326,7 +326,7 @@ archive/issue_comments_077609.json:
 }
 ```
 
-Attachment
+Attachment [trac_8568-diff_conversion.take2.patch](tarball://root/attachments/some-uuid/ticket8568/trac_8568-diff_conversion.take2.patch) by burcin created at 2010-05-27 16:18:25
 
 Thanks for the quick fix!
 
@@ -559,7 +559,7 @@ so that there isn't a derivative function defined for ceil.  I'm not sure exactl
 archive/issue_comments_077617.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8568-fix_doctests.patch](tarball://root/attachments/some-uuid/ticket8568/trac_8568-fix_doctests.patch) by burcin created at 2010-09-08 11:44:30",
     "created_at": "2010-09-08T11:44:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8568",
     "type": "issue_comment",
@@ -568,7 +568,7 @@ archive/issue_comments_077617.json:
 }
 ```
 
-Attachment
+Attachment [trac_8568-fix_doctests.patch](tarball://root/attachments/some-uuid/ticket8568/trac_8568-fix_doctests.patch) by burcin created at 2010-09-08 11:44:30
 
 
 

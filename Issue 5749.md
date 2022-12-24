@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5749
 archive/issue_comments_044939.json:
 ```json
 {
-    "body": "Attachment\n\nNote that the patch is against `sage-3.4.1-rc1`, so hopefully has no merge issues with `rc2`.",
+    "body": "Attachment [power-series-poly-docs.patch](tarball://root/attachments/some-uuid/ticket5749/power-series-poly-docs.patch) by craigcitro created at 2009-04-11 08:26:21\n\nNote that the patch is against `sage-3.4.1-rc1`, so hopefully has no merge issues with `rc2`.",
     "created_at": "2009-04-11T08:26:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5749",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_044939.json:
 }
 ```
 
-Attachment
+Attachment [power-series-poly-docs.patch](tarball://root/attachments/some-uuid/ticket5749/power-series-poly-docs.patch) by craigcitro created at 2009-04-11 08:26:21
 
 Note that the patch is against `sage-3.4.1-rc1`, so hopefully has no merge issues with `rc2`.
 

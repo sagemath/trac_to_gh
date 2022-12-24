@@ -151,7 +151,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_076247.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [linear_programming2.rst](tarball://root/attachments/some-uuid/ticket8467/linear_programming2.rst) by jason created at 2010-05-14 21:04:13",
     "created_at": "2010-05-14T21:04:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8467",
     "type": "issue_comment",
@@ -160,7 +160,7 @@ archive/issue_comments_076247.json:
 }
 ```
 
-Attachment
+Attachment [linear_programming2.rst](tarball://root/attachments/some-uuid/ticket8467/linear_programming2.rst) by jason created at 2010-05-14 21:04:13
 
 
 
@@ -195,7 +195,7 @@ I adjoint a rst file with corrections. The example on "Maximum average degree" i
 archive/issue_comments_076249.json:
 ```json
 {
-    "body": "Attachment\n\nThank you very much for reading it until then !!! Actually, I will need to change some parts of it now that GLPK is a standard SPKG. I will also update the end of it, to give more natural examples :-)\n\nI am setting it to \"needs work\" until this is done !!\n\nNathann",
+    "body": "Attachment [linear_programming2_some_changes.rst](tarball://root/attachments/some-uuid/ticket8467/linear_programming2_some_changes.rst) by ncohen created at 2010-07-21 02:29:03\n\nThank you very much for reading it until then !!! Actually, I will need to change some parts of it now that GLPK is a standard SPKG. I will also update the end of it, to give more natural examples :-)\n\nI am setting it to \"needs work\" until this is done !!\n\nNathann",
     "created_at": "2010-07-21T02:29:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8467",
     "type": "issue_comment",
@@ -204,7 +204,7 @@ archive/issue_comments_076249.json:
 }
 ```
 
-Attachment
+Attachment [linear_programming2_some_changes.rst](tarball://root/attachments/some-uuid/ticket8467/linear_programming2_some_changes.rst) by ncohen created at 2010-07-21 02:29:03
 
 Thank you very much for reading it until then !!! Actually, I will need to change some parts of it now that GLPK is a standard SPKG. I will also update the end of it, to give more natural examples :-)
 

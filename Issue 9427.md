@@ -54,7 +54,7 @@ Changing status from new to needs_review.
 archive/issue_comments_089933.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9427-fricas-integrate.patch](tarball://root/attachments/some-uuid/ticket9427/trac_9427-fricas-integrate.patch) by whuss created at 2010-07-05 08:51:37",
     "created_at": "2010-07-05T08:51:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9427",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_089933.json:
 }
 ```
 
-Attachment
+Attachment [trac_9427-fricas-integrate.patch](tarball://root/attachments/some-uuid/ticket9427/trac_9427-fricas-integrate.patch) by whuss created at 2010-07-05 08:51:37
 
 
 
@@ -117,7 +117,7 @@ sage: infinity._fricas_init_()
 archive/issue_comments_089936.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:2 burcin]:\n>  * the conversion of different infinities on line 95-103 should be moved to the `_fricas_init_()` method of the corresponding classes. Then this would work:\n>  {{{\n> sage: infinity._fricas_init_()\n> \"%plusInfinity\"\n> }}}\n\nI tried this (see fricas_infinity.patch), but for some reason that I don't understand the output of\n_fricas_init_() changes into something which is not a valid fricas expression.\n\n\n```\nsage: oo._fricas_init_()\n'%plusInfinity'\n```\n\n\nbut\n\n\n```\nsage: oo._fricas_()\n+ infinity\n```\n\n\nI have no idea what is going on here.",
+    "body": "Attachment [fricas_infinity.patch](tarball://root/attachments/some-uuid/ticket9427/fricas_infinity.patch) by whuss created at 2010-07-05 15:11:20\n\nReplying to [comment:2 burcin]:\n>  * the conversion of different infinities on line 95-103 should be moved to the `_fricas_init_()` method of the corresponding classes. Then this would work:\n>  {{{\n> sage: infinity._fricas_init_()\n> \"%plusInfinity\"\n> }}}\n\nI tried this (see fricas_infinity.patch), but for some reason that I don't understand the output of\n_fricas_init_() changes into something which is not a valid fricas expression.\n\n\n```\nsage: oo._fricas_init_()\n'%plusInfinity'\n```\n\n\nbut\n\n\n```\nsage: oo._fricas_()\n+ infinity\n```\n\n\nI have no idea what is going on here.",
     "created_at": "2010-07-05T15:11:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9427",
     "type": "issue_comment",
@@ -126,7 +126,7 @@ archive/issue_comments_089936.json:
 }
 ```
 
-Attachment
+Attachment [fricas_infinity.patch](tarball://root/attachments/some-uuid/ticket9427/fricas_infinity.patch) by whuss created at 2010-07-05 15:11:20
 
 Replying to [comment:2 burcin]:
 >  * the conversion of different infinities on line 95-103 should be moved to the `_fricas_init_()` method of the corresponding classes. Then this would work:

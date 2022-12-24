@@ -98,7 +98,7 @@ Changing assignee from was to failure.
 archive/issue_comments_003473.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-2.9-fix-numerical-doctests-in-piecewise.py-Solaris10.patch](tarball://root/attachments/some-uuid/ticket670/Sage-2.9-fix-numerical-doctests-in-piecewise.py-Solaris10.patch) by mabshoff created at 2007-12-21 12:50:32",
     "created_at": "2007-12-21T12:50:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/670",
     "type": "issue_comment",
@@ -107,7 +107,7 @@ archive/issue_comments_003473.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.9-fix-numerical-doctests-in-piecewise.py-Solaris10.patch](tarball://root/attachments/some-uuid/ticket670/Sage-2.9-fix-numerical-doctests-in-piecewise.py-Solaris10.patch) by mabshoff created at 2007-12-21 12:50:32
 
 
 

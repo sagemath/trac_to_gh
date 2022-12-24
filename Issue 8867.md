@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8867
 archive/issue_comments_081487.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-8867-riemann-fastcallable.patch](tarball://root/attachments/some-uuid/ticket8867/trac-8867-riemann-fastcallable.patch) by jason created at 2010-05-04 05:24:06",
     "created_at": "2010-05-04T05:24:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8867",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_081487.json:
 }
 ```
 
-Attachment
+Attachment [trac-8867-riemann-fastcallable.patch](tarball://root/attachments/some-uuid/ticket8867/trac-8867-riemann-fastcallable.patch) by jason created at 2010-05-04 05:24:06
 
 
 
@@ -316,7 +316,7 @@ Updated to dodge lambdas and work with new doctests
 archive/issue_comments_081501.json:
 ```json
 {
-    "body": "Attachment\n\nI've uploaded a new version of the fast_callable patch. It now properly avoids failing with lambda functions, although it doesn't work optimally for them. I'll add some notes on that in\u00a0#10945. It also is updated to work properly with the numpy 1.5.1 version. Therefore tickets\u00a0#10792\u00a0and\u00a0#10821\u00a0should be applied first. I don't think the current patch is dependent on #5572, although I'm sure that faster fast_callables would help.",
+    "body": "Attachment [trac-8867-riemann-fastcallable.2.patch](tarball://root/attachments/some-uuid/ticket8867/trac-8867-riemann-fastcallable.2.patch) by evanandel created at 2011-03-22 03:39:51\n\nI've uploaded a new version of the fast_callable patch. It now properly avoids failing with lambda functions, although it doesn't work optimally for them. I'll add some notes on that in\u00a0#10945. It also is updated to work properly with the numpy 1.5.1 version. Therefore tickets\u00a0#10792\u00a0and\u00a0#10821\u00a0should be applied first. I don't think the current patch is dependent on #5572, although I'm sure that faster fast_callables would help.",
     "created_at": "2011-03-22T03:39:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8867",
     "type": "issue_comment",
@@ -325,7 +325,7 @@ archive/issue_comments_081501.json:
 }
 ```
 
-Attachment
+Attachment [trac-8867-riemann-fastcallable.2.patch](tarball://root/attachments/some-uuid/ticket8867/trac-8867-riemann-fastcallable.2.patch) by evanandel created at 2011-03-22 03:39:51
 
 I've uploaded a new version of the fast_callable patch. It now properly avoids failing with lambda functions, although it doesn't work optimally for them. I'll add some notes on that in #10945. It also is updated to work properly with the numpy 1.5.1 version. Therefore tickets #10792 and #10821 should be applied first. I don't think the current patch is dependent on #5572, although I'm sure that faster fast_callables would help.
 

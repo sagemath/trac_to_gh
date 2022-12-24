@@ -55,7 +55,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6879
 archive/issue_comments_056785.json:
 ```json
 {
-    "body": "Attachment\n\nApplies to 4.1.1",
+    "body": "Attachment [trac_6879-ell_field.patch](tarball://root/attachments/some-uuid/ticket6879/trac_6879-ell_field.patch) by cremona created at 2009-09-03 16:45:34\n\nApplies to 4.1.1",
     "created_at": "2009-09-03T16:45:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6879",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_056785.json:
 }
 ```
 
-Attachment
+Attachment [trac_6879-ell_field.patch](tarball://root/attachments/some-uuid/ticket6879/trac_6879-ell_field.patch) by cremona created at 2009-09-03 16:45:34
 
 Applies to 4.1.1
 

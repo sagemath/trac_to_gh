@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3635
 archive/issue_comments_025710.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch implements the requested behavior. Jason, do you want to review it?",
+    "body": "Attachment [matrix_plot.patch](tarball://root/attachments/some-uuid/ticket3635/matrix_plot.patch) by malb created at 2008-08-18 21:17:32\n\nThe attached patch implements the requested behavior. Jason, do you want to review it?",
     "created_at": "2008-08-18T21:17:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3635",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_025710.json:
 }
 ```
 
-Attachment
+Attachment [matrix_plot.patch](tarball://root/attachments/some-uuid/ticket3635/matrix_plot.patch) by malb created at 2008-08-18 21:17:32
 
 The attached patch implements the requested behavior. Jason, do you want to review it?
 
@@ -69,7 +69,7 @@ Whoever reviews it and/or malb should note that the patches to #3853 would imply
 archive/issue_comments_025712.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [matrix_plot-rebased.patch](tarball://root/attachments/some-uuid/ticket3635/matrix_plot-rebased.patch) by jason created at 2008-08-27 14:44:02",
     "created_at": "2008-08-27T14:44:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3635",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_025712.json:
 }
 ```
 
-Attachment
+Attachment [matrix_plot-rebased.patch](tarball://root/attachments/some-uuid/ticket3635/matrix_plot-rebased.patch) by jason created at 2008-08-27 14:44:02
 
 
 

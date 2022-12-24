@@ -147,7 +147,7 @@ $SAGE_ROOT/spkg/standard/deps to force Fortran to build before R
 archive/issue_comments_090760.json:
 ```json
 {
-    "body": "Attachment\n\nDiff between $SAGE_ROOT/spkg/standard/deps and that is sage-4.5.alpha4",
+    "body": "Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket9464/deps.diff) by drkirkby created at 2010-07-09 14:46:51\n\nDiff between $SAGE_ROOT/spkg/standard/deps and that is sage-4.5.alpha4",
     "created_at": "2010-07-09T14:46:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9464",
     "type": "issue_comment",
@@ -156,7 +156,7 @@ archive/issue_comments_090760.json:
 }
 ```
 
-Attachment
+Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket9464/deps.diff) by drkirkby created at 2010-07-09 14:46:51
 
 Diff between $SAGE_ROOT/spkg/standard/deps and that is sage-4.5.alpha4
 

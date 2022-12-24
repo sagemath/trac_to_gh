@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8449
 archive/issue_comments_075955.json:
 ```json
 {
-    "body": "Attachment\n\nbased on Sage 4.4.2.alpha0",
+    "body": "Attachment [trac_8449.patch](tarball://root/attachments/some-uuid/ticket8449/trac_8449.patch) by mvngu created at 2010-05-09 23:36:00\n\nbased on Sage 4.4.2.alpha0",
     "created_at": "2010-05-09T23:36:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8449",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_075955.json:
 }
 ```
 
-Attachment
+Attachment [trac_8449.patch](tarball://root/attachments/some-uuid/ticket8449/trac_8449.patch) by mvngu created at 2010-05-09 23:36:00
 
 based on Sage 4.4.2.alpha0
 
@@ -87,7 +87,7 @@ Changing status from new to needs_review.
 archive/issue_comments_075958.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8449.more_rs.patch](tarball://root/attachments/some-uuid/ticket8449/trac_8449.more_rs.patch) by burcin created at 2010-05-10 03:23:01",
     "created_at": "2010-05-10T03:23:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8449",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_075958.json:
 }
 ```
 
-Attachment
+Attachment [trac_8449.more_rs.patch](tarball://root/attachments/some-uuid/ticket8449/trac_8449.more_rs.patch) by burcin created at 2010-05-10 03:23:01
 
 
 

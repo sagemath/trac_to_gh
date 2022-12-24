@@ -52,7 +52,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5015
 archive/issue_comments_038216.json:
 ```json
 {
-    "body": "Attachment\n\nNote that the new code doesn't get run as doing\n\nf(x) = 1\n\noverwrites the old x (which was created with var('x',ns=1)) with just var('x').  The infinite recursion is due the CallableSymbolicExpression ring assuming that all elements of SR were instances of SymbolicExpression.",
+    "body": "Attachment [trac_5015.patch](tarball://root/attachments/some-uuid/ticket5015/trac_5015.patch) by mhansen created at 2009-01-18 19:53:15\n\nNote that the new code doesn't get run as doing\n\nf(x) = 1\n\noverwrites the old x (which was created with var('x',ns=1)) with just var('x').  The infinite recursion is due the CallableSymbolicExpression ring assuming that all elements of SR were instances of SymbolicExpression.",
     "created_at": "2009-01-18T19:53:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5015",
     "type": "issue_comment",
@@ -61,7 +61,7 @@ archive/issue_comments_038216.json:
 }
 ```
 
-Attachment
+Attachment [trac_5015.patch](tarball://root/attachments/some-uuid/ticket5015/trac_5015.patch) by mhansen created at 2009-01-18 19:53:15
 
 Note that the new code doesn't get run as doing
 

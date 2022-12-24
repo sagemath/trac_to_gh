@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4560
 archive/issue_comments_034161.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4560](tarball://root/attachments/some-uuid/ticket4560/4560) by roed created at 2009-01-23 02:47:35",
     "created_at": "2009-01-23T02:47:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4560",
     "type": "issue_comment",
@@ -49,7 +49,7 @@ archive/issue_comments_034161.json:
 }
 ```
 
-Attachment
+Attachment [4560](tarball://root/attachments/some-uuid/ticket4560/4560) by roed created at 2009-01-23 02:47:35
 
 
 
@@ -111,7 +111,7 @@ Michael
 archive/issue_comments_034164.json:
 ```json
 {
-    "body": "Attachment\n\nDocumentation fix",
+    "body": "Attachment [4560-doc.patch](tarball://root/attachments/some-uuid/ticket4560/4560-doc.patch) by roed created at 2009-01-24 14:49:16\n\nDocumentation fix",
     "created_at": "2009-01-24T14:49:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4560",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_034164.json:
 }
 ```
 
-Attachment
+Attachment [4560-doc.patch](tarball://root/attachments/some-uuid/ticket4560/4560-doc.patch) by roed created at 2009-01-24 14:49:16
 
 Documentation fix
 
@@ -167,7 +167,7 @@ Resolution: fixed
 archive/issue_comments_034167.json:
 ```json
 {
-    "body": "Attachment\n\nMerged 4560-doc.patch and trac_4560.patch in Sage 3.3.alpha3.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_4560.patch](tarball://root/attachments/some-uuid/ticket4560/trac_4560.patch) by mabshoff created at 2009-01-29 02:46:54\n\nMerged 4560-doc.patch and trac_4560.patch in Sage 3.3.alpha3.\n\nCheers,\n\nMichael",
     "created_at": "2009-01-29T02:46:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4560",
     "type": "issue_comment",
@@ -176,7 +176,7 @@ archive/issue_comments_034167.json:
 }
 ```
 
-Attachment
+Attachment [trac_4560.patch](tarball://root/attachments/some-uuid/ticket4560/trac_4560.patch) by mabshoff created at 2009-01-29 02:46:54
 
 Merged 4560-doc.patch and trac_4560.patch in Sage 3.3.alpha3.
 

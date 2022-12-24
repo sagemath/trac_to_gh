@@ -396,7 +396,7 @@ apply to scripts repository
 archive/issue_comments_018032.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_2624-ptest-scripts.patch](tarball://root/attachments/some-uuid/ticket2624/trac_2624-ptest-scripts.patch) by jhpalmieri created at 2009-09-23 05:02:07",
     "created_at": "2009-09-23T05:02:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2624",
     "type": "issue_comment",
@@ -405,7 +405,7 @@ archive/issue_comments_018032.json:
 }
 ```
 
-Attachment
+Attachment [trac_2624-ptest-scripts.patch](tarball://root/attachments/some-uuid/ticket2624/trac_2624-ptest-scripts.patch) by jhpalmieri created at 2009-09-23 05:02:07
 
 
 

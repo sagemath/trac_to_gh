@@ -54,7 +54,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3134
 archive/issue_comments_021770.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3134.patch](tarball://root/attachments/some-uuid/ticket3134/trac_3134.patch) by mhansen created at 2008-12-02 09:44:00",
     "created_at": "2008-12-02T09:44:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3134",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_021770.json:
 }
 ```
 
-Attachment
+Attachment [trac_3134.patch](tarball://root/attachments/some-uuid/ticket3134/trac_3134.patch) by mhansen created at 2008-12-02 09:44:00
 
 
 
@@ -90,7 +90,7 @@ Changing status from new to assigned.
 archive/issue_comments_021772.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached two patches each of which fixes the problem.  I couldn't decide which one is better so I've left it up to the reviewer.  In my tests, PARI seemed to be a bit faster than the GMP routine.",
+    "body": "Attachment [trac_3134-2.patch](tarball://root/attachments/some-uuid/ticket3134/trac_3134-2.patch) by mhansen created at 2008-12-02 09:45:30\n\nI've attached two patches each of which fixes the problem.  I couldn't decide which one is better so I've left it up to the reviewer.  In my tests, PARI seemed to be a bit faster than the GMP routine.",
     "created_at": "2008-12-02T09:45:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3134",
     "type": "issue_comment",
@@ -99,7 +99,7 @@ archive/issue_comments_021772.json:
 }
 ```
 
-Attachment
+Attachment [trac_3134-2.patch](tarball://root/attachments/some-uuid/ticket3134/trac_3134-2.patch) by mhansen created at 2008-12-02 09:45:30
 
 I've attached two patches each of which fixes the problem.  I couldn't decide which one is better so I've left it up to the reviewer.  In my tests, PARI seemed to be a bit faster than the GMP routine.
 

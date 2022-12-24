@@ -372,7 +372,7 @@ Changing priority from major to blocker.
 archive/issue_comments_097188.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9847_unset_R.patch](tarball://root/attachments/some-uuid/ticket9847/9847_unset_R.patch) by jdemeyer created at 2013-03-27 01:12:07",
     "created_at": "2013-03-27T01:12:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9846",
     "type": "issue_comment",
@@ -381,7 +381,7 @@ archive/issue_comments_097188.json:
 }
 ```
 
-Attachment
+Attachment [9847_unset_R.patch](tarball://root/attachments/some-uuid/ticket9847/9847_unset_R.patch) by jdemeyer created at 2013-03-27 01:12:07
 
 
 

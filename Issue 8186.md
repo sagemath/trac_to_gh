@@ -97,7 +97,7 @@ It also adds a function that gives the longest periodic prefixes of a word which
 archive/issue_comments_072145.json:
 ```json
 {
-    "body": "Attachment\n\nVery minor changes in the doc (typos and rephrasing)",
+    "body": "Attachment [trac_8186_minor_doc_changes-abm.patch](tarball://root/attachments/some-uuid/ticket8186/trac_8186_minor_doc_changes-abm.patch) by abmasse created at 2010-02-05 13:58:34\n\nVery minor changes in the doc (typos and rephrasing)",
     "created_at": "2010-02-05T13:58:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8186",
     "type": "issue_comment",
@@ -106,7 +106,7 @@ archive/issue_comments_072145.json:
 }
 ```
 
-Attachment
+Attachment [trac_8186_minor_doc_changes-abm.patch](tarball://root/attachments/some-uuid/ticket8186/trac_8186_minor_doc_changes-abm.patch) by abmasse created at 2010-02-05 13:58:34
 
 Very minor changes in the doc (typos and rephrasing)
 

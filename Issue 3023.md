@@ -59,7 +59,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3023
 archive/issue_comments_020793.json:
 ```json
 {
-    "body": "Attachment\n\ndoctests in the matrix/ directory pass with the above patch.",
+    "body": "Attachment [trac-3023-matrix-applymap-empty.patch](tarball://root/attachments/some-uuid/ticket3023/trac-3023-matrix-applymap-empty.patch) by jason created at 2008-04-25 16:51:30\n\ndoctests in the matrix/ directory pass with the above patch.",
     "created_at": "2008-04-25T16:51:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3023",
     "type": "issue_comment",
@@ -68,7 +68,7 @@ archive/issue_comments_020793.json:
 }
 ```
 
-Attachment
+Attachment [trac-3023-matrix-applymap-empty.patch](tarball://root/attachments/some-uuid/ticket3023/trac-3023-matrix-applymap-empty.patch) by jason created at 2008-04-25 16:51:30
 
 doctests in the matrix/ directory pass with the above patch.
 

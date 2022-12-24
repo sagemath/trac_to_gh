@@ -66,7 +66,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2399
 archive/issue_comments_016193.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [utf8.patch](tarball://root/attachments/some-uuid/ticket2399/utf8.patch) by jason created at 2008-03-05 22:48:21",
     "created_at": "2008-03-05T22:48:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2399",
     "type": "issue_comment",
@@ -75,7 +75,7 @@ archive/issue_comments_016193.json:
 }
 ```
 
-Attachment
+Attachment [utf8.patch](tarball://root/attachments/some-uuid/ticket2399/utf8.patch) by jason created at 2008-03-05 22:48:21
 
 
 

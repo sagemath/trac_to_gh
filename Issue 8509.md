@@ -86,7 +86,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8509
 archive/issue_comments_076829.json:
 ```json
 {
-    "body": "Attachment\n\nRevised sage-spkg removing the -o option",
+    "body": "Attachment [sage-spkg](tarball://root/attachments/some-uuid/ticket8509/sage-spkg) by drkirkby created at 2010-03-13 18:18:21\n\nRevised sage-spkg removing the -o option",
     "created_at": "2010-03-13T18:18:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8509",
     "type": "issue_comment",
@@ -95,7 +95,7 @@ archive/issue_comments_076829.json:
 }
 ```
 
-Attachment
+Attachment [sage-spkg](tarball://root/attachments/some-uuid/ticket8509/sage-spkg) by drkirkby created at 2010-03-13 18:18:21
 
 Revised sage-spkg removing the -o option
 
@@ -178,7 +178,7 @@ Oops, my mistake. I was not aware of that. I'm attaching a Mercurial patch
 archive/issue_comments_076834.json:
 ```json
 {
-    "body": "Attachment\n\nMercurial patch (replaces the earlier one, which was just from 'diff')",
+    "body": "Attachment [sage-spkg.patch](tarball://root/attachments/some-uuid/ticket8509/sage-spkg.patch) by drkirkby created at 2010-03-13 22:08:36\n\nMercurial patch (replaces the earlier one, which was just from 'diff')",
     "created_at": "2010-03-13T22:08:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8509",
     "type": "issue_comment",
@@ -187,7 +187,7 @@ archive/issue_comments_076834.json:
 }
 ```
 
-Attachment
+Attachment [sage-spkg.patch](tarball://root/attachments/some-uuid/ticket8509/sage-spkg.patch) by drkirkby created at 2010-03-13 22:08:36
 
 Mercurial patch (replaces the earlier one, which was just from 'diff')
 

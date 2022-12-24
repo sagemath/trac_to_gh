@@ -130,7 +130,7 @@ abort: patch failed to apply
 archive/issue_comments_032031.json:
 ```json
 {
-    "body": "Attachment\n\nfix fraction field homomorphisms",
+    "body": "Attachment [04_fraction_field_hom.patch](tarball://root/attachments/some-uuid/ticket4360/04_fraction_field_hom.patch) by burcin created at 2008-11-28 12:17:22\n\nfix fraction field homomorphisms",
     "created_at": "2008-11-28T12:17:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4360",
     "type": "issue_comment",
@@ -139,7 +139,7 @@ archive/issue_comments_032031.json:
 }
 ```
 
-Attachment
+Attachment [04_fraction_field_hom.patch](tarball://root/attachments/some-uuid/ticket4360/04_fraction_field_hom.patch) by burcin created at 2008-11-28 12:17:22
 
 fix fraction field homomorphisms
 
@@ -299,7 +299,7 @@ add random_element() method
 archive/issue_comments_032035.json:
 ```json
 {
-    "body": "Attachment\n\nmove element class to cython",
+    "body": "Attachment [03_fraction_field_element_pyx.patch](tarball://root/attachments/some-uuid/ticket4360/03_fraction_field_element_pyx.patch) by burcin created at 2008-12-04 23:29:25\n\nmove element class to cython",
     "created_at": "2008-12-04T23:29:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4360",
     "type": "issue_comment",
@@ -308,7 +308,7 @@ archive/issue_comments_032035.json:
 }
 ```
 
-Attachment
+Attachment [03_fraction_field_element_pyx.patch](tarball://root/attachments/some-uuid/ticket4360/03_fraction_field_element_pyx.patch) by burcin created at 2008-12-04 23:29:25
 
 move element class to cython
 
@@ -337,7 +337,7 @@ new coercion model, element class a parameter
 archive/issue_comments_032037.json:
 ```json
 {
-    "body": "Attachment\n\nI posted new patches that fix the doctest errors in comment:6.\n\nThe fix for the pickles depends on #4698.",
+    "body": "Attachment [01_fraction_field_element_class.patch](tarball://root/attachments/some-uuid/ticket4360/01_fraction_field_element_class.patch) by burcin created at 2008-12-05 23:17:49\n\nI posted new patches that fix the doctest errors in comment:6.\n\nThe fix for the pickles depends on #4698.",
     "created_at": "2008-12-05T23:17:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4360",
     "type": "issue_comment",
@@ -346,7 +346,7 @@ archive/issue_comments_032037.json:
 }
 ```
 
-Attachment
+Attachment [01_fraction_field_element_class.patch](tarball://root/attachments/some-uuid/ticket4360/01_fraction_field_element_class.patch) by burcin created at 2008-12-05 23:17:49
 
 I posted new patches that fix the doctest errors in comment:6.
 

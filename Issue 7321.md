@@ -69,7 +69,7 @@ The spkg can be found a http://sage.math.washington.edu/home/mhansen/numpy-1.3.0
 archive/issue_comments_061176.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7321-1.patch](tarball://root/attachments/some-uuid/ticket7321/trac_7321-1.patch) by mhansen created at 2010-01-03 16:40:16",
     "created_at": "2010-01-03T16:40:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7321",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_061176.json:
 }
 ```
 
-Attachment
+Attachment [trac_7321-1.patch](tarball://root/attachments/some-uuid/ticket7321/trac_7321-1.patch) by mhansen created at 2010-01-03 16:40:16
 
 
 
@@ -87,7 +87,7 @@ Attachment
 archive/issue_comments_061177.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7321-2.patch](tarball://root/attachments/some-uuid/ticket7321/trac_7321-2.patch) by mhansen created at 2010-01-03 16:40:27",
     "created_at": "2010-01-03T16:40:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7321",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_061177.json:
 }
 ```
 
-Attachment
+Attachment [trac_7321-2.patch](tarball://root/attachments/some-uuid/ticket7321/trac_7321-2.patch) by mhansen created at 2010-01-03 16:40:27
 
 
 

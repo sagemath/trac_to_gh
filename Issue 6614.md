@@ -54,7 +54,7 @@ Changing assignee from tbd to tba.
 archive/issue_comments_054142.json:
 ```json
 {
-    "body": "Attachment\n\nThis [attachment:trac_6614-distutils_symlinks.patch patch] alters `setup.py` so that distutils includes broken symbolic links as it builds a source distribution of the Sage library.  Is this appropriate?\n\nIf so, I can add another patch that replaces the `jsmath` directory in `$SAGE_DOC/common/static` with a symlink and updates the repository accordingly (i.e., reverses the patch mentioned [here](http://trac.sagemath.org/sage_trac/ticket/5799#comment:11)).\n\nOne caveat is that Python's [os](http://docs.python.org/library/os.html) module supports symbolic links only on Unix systems.  If we need to avoid links altogether, we could instead copy jsMath to multiple locations from its own `spkg-install` script.",
+    "body": "Attachment [trac_6614-distutils_symlinks.patch](tarball://root/attachments/some-uuid/ticket6614/trac_6614-distutils_symlinks.patch) by mpatel created at 2009-07-24 15:27:39\n\nThis [attachment:trac_6614-distutils_symlinks.patch patch] alters `setup.py` so that distutils includes broken symbolic links as it builds a source distribution of the Sage library.  Is this appropriate?\n\nIf so, I can add another patch that replaces the `jsmath` directory in `$SAGE_DOC/common/static` with a symlink and updates the repository accordingly (i.e., reverses the patch mentioned [here](http://trac.sagemath.org/sage_trac/ticket/5799#comment:11)).\n\nOne caveat is that Python's [os](http://docs.python.org/library/os.html) module supports symbolic links only on Unix systems.  If we need to avoid links altogether, we could instead copy jsMath to multiple locations from its own `spkg-install` script.",
     "created_at": "2009-07-24T15:27:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6614",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_054142.json:
 }
 ```
 
-Attachment
+Attachment [trac_6614-distutils_symlinks.patch](tarball://root/attachments/some-uuid/ticket6614/trac_6614-distutils_symlinks.patch) by mpatel created at 2009-07-24 15:27:39
 
 This [attachment:trac_6614-distutils_symlinks.patch patch] alters `setup.py` so that distutils includes broken symbolic links as it builds a source distribution of the Sage library.  Is this appropriate?
 
@@ -132,7 +132,7 @@ Should we add the jsmath directory to devel/sage/.hgignore?
 archive/issue_comments_054146.json:
 ```json
 {
-    "body": "Attachment\n\nDifferent approach.",
+    "body": "Attachment [trac_6614-jsmath_repo.patch](tarball://root/attachments/some-uuid/ticket6614/trac_6614-jsmath_repo.patch) by mpatel created at 2009-07-25 12:38:28\n\nDifferent approach.",
     "created_at": "2009-07-25T12:38:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6614",
     "type": "issue_comment",
@@ -141,7 +141,7 @@ archive/issue_comments_054146.json:
 }
 ```
 
-Attachment
+Attachment [trac_6614-jsmath_repo.patch](tarball://root/attachments/some-uuid/ticket6614/trac_6614-jsmath_repo.patch) by mpatel created at 2009-07-25 12:38:28
 
 Different approach.
 
@@ -192,7 +192,7 @@ New version that puts jsMath path first.
 archive/issue_comments_054149.json:
 ```json
 {
-    "body": "Attachment\n\nThe new version *prepends* jsMath's path to `html_static_path`, so that custom files copied subsequently from, e.g., `doc/common/static`,  can override certain settings, at our option.\n\nThe same caveats apply.",
+    "body": "Attachment [trac_6614-jsmath_repo_v2.patch](tarball://root/attachments/some-uuid/ticket6614/trac_6614-jsmath_repo_v2.patch) by mpatel created at 2009-08-02 19:00:25\n\nThe new version *prepends* jsMath's path to `html_static_path`, so that custom files copied subsequently from, e.g., `doc/common/static`,  can override certain settings, at our option.\n\nThe same caveats apply.",
     "created_at": "2009-08-02T19:00:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6614",
     "type": "issue_comment",
@@ -201,7 +201,7 @@ archive/issue_comments_054149.json:
 }
 ```
 
-Attachment
+Attachment [trac_6614-jsmath_repo_v2.patch](tarball://root/attachments/some-uuid/ticket6614/trac_6614-jsmath_repo_v2.patch) by mpatel created at 2009-08-02 19:00:25
 
 The new version *prepends* jsMath's path to `html_static_path`, so that custom files copied subsequently from, e.g., `doc/common/static`,  can override certain settings, at our option.
 

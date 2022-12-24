@@ -106,7 +106,7 @@ On second thoughts we already have special code for QQ (calling squarefree_part(
 archive/issue_comments_053683.json:
 ```json
 {
-    "body": "Attachment\n\nI opted for your second suggestion. In case K is QQ it is ZZ(1) that is returned.",
+    "body": "Attachment [trac_6574.patch](tarball://root/attachments/some-uuid/ticket6574/trac_6574.patch) by wuthrich created at 2009-07-21 18:31:38\n\nI opted for your second suggestion. In case K is QQ it is ZZ(1) that is returned.",
     "created_at": "2009-07-21T18:31:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6574",
     "type": "issue_comment",
@@ -115,7 +115,7 @@ archive/issue_comments_053683.json:
 }
 ```
 
-Attachment
+Attachment [trac_6574.patch](tarball://root/attachments/some-uuid/ticket6574/trac_6574.patch) by wuthrich created at 2009-07-21 18:31:38
 
 I opted for your second suggestion. In case K is QQ it is ZZ(1) that is returned.
 

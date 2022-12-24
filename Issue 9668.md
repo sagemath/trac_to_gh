@@ -500,7 +500,7 @@ It's easy enough to add these to the "for" loop that I added to spkg-install, so
 archive/issue_comments_093882.json:
 ```json
 {
-    "body": "Attachment\n\npatch for R spkg; for review only",
+    "body": "Attachment [trac_9668-r.patch](tarball://root/attachments/some-uuid/ticket9668/trac_9668-r.patch) by jhpalmieri created at 2012-10-26 21:07:50\n\npatch for R spkg; for review only",
     "created_at": "2012-10-26T21:07:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9668",
     "type": "issue_comment",
@@ -509,7 +509,7 @@ archive/issue_comments_093882.json:
 }
 ```
 
-Attachment
+Attachment [trac_9668-r.patch](tarball://root/attachments/some-uuid/ticket9668/trac_9668-r.patch) by jhpalmieri created at 2012-10-26 21:07:50
 
 patch for R spkg; for review only
 
@@ -730,7 +730,7 @@ You sound like you're arguing that we might as well use `sed` :-)  If I wasn't l
 archive/issue_comments_093894.json:
 ```json
 {
-    "body": "Attachment\n\npatch for R spkg; for review only",
+    "body": "Attachment [trac_9668-r.v2.patch](tarball://root/attachments/some-uuid/ticket9668/trac_9668-r.v2.patch) by jhpalmieri created at 2013-02-01 02:12:11\n\npatch for R spkg; for review only",
     "created_at": "2013-02-01T02:12:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9668",
     "type": "issue_comment",
@@ -739,7 +739,7 @@ archive/issue_comments_093894.json:
 }
 ```
 
-Attachment
+Attachment [trac_9668-r.v2.patch](tarball://root/attachments/some-uuid/ticket9668/trac_9668-r.v2.patch) by jhpalmieri created at 2013-02-01 02:12:11
 
 patch for R spkg; for review only
 
@@ -964,7 +964,7 @@ This line is completely irrelevant, as we already patch `R.sh.in` to overwrite `
 archive/issue_comments_093905.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9668-r.v3.patch](tarball://root/attachments/some-uuid/ticket9668/trac_9668-r.v3.patch) by jhpalmieri created at 2013-03-18 01:02:42",
     "created_at": "2013-03-18T01:02:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9668",
     "type": "issue_comment",
@@ -973,7 +973,7 @@ archive/issue_comments_093905.json:
 }
 ```
 
-Attachment
+Attachment [trac_9668-r.v3.patch](tarball://root/attachments/some-uuid/ticket9668/trac_9668-r.v3.patch) by jhpalmieri created at 2013-03-18 01:02:42
 
 
 

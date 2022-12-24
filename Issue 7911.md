@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7911
 archive/issue_comments_068798.json:
 ```json
 {
-    "body": "Attachment\n\nAdd scilab to drop-down list.  sagenb repo.",
+    "body": "Attachment [trac_7911-missing_scilab.patch](tarball://root/attachments/some-uuid/ticket7911/trac_7911-missing_scilab.patch) by mpatel created at 2010-01-25 14:52:05\n\nAdd scilab to drop-down list.  sagenb repo.",
     "created_at": "2010-01-25T14:52:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7911",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_068798.json:
 }
 ```
 
-Attachment
+Attachment [trac_7911-missing_scilab.patch](tarball://root/attachments/some-uuid/ticket7911/trac_7911-missing_scilab.patch) by mpatel created at 2010-01-25 14:52:05
 
 Add scilab to drop-down list.  sagenb repo.
 
@@ -232,7 +232,7 @@ I applied the patch to the alpha0 version of sage on my local PC - built from so
 archive/issue_comments_068808.json:
 ```json
 {
-    "body": "Attachment\n\nSame as previous, except for SageNB 0.6.  Apply just one of these.  sagenb repo.",
+    "body": "Attachment [trac_7911-missing_scilab.2.patch](tarball://root/attachments/some-uuid/ticket7911/trac_7911-missing_scilab.2.patch) by mpatel created at 2010-02-01 12:35:57\n\nSame as previous, except for SageNB 0.6.  Apply just one of these.  sagenb repo.",
     "created_at": "2010-02-01T12:35:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7911",
     "type": "issue_comment",
@@ -241,7 +241,7 @@ archive/issue_comments_068808.json:
 }
 ```
 
-Attachment
+Attachment [trac_7911-missing_scilab.2.patch](tarball://root/attachments/some-uuid/ticket7911/trac_7911-missing_scilab.2.patch) by mpatel created at 2010-02-01 12:35:57
 
 Same as previous, except for SageNB 0.6.  Apply just one of these.  sagenb repo.
 
@@ -368,7 +368,7 @@ Make `scilab.eval` accept extra non-keyword arguments.  **sage** repository.
 archive/issue_comments_068813.json:
 ```json
 {
-    "body": "Attachment\n\nWe may need to update the Scilab interface (and its `optional` doctests).  I've posted a [attachment:trac_7911-sage_scilab.patch workaround patch] to the main Sage library.  I'm not sure it's the best way to proceed --- we should get some expert input ---  but it seems to work.  Let me know what happens.\n\nTo apply the patch:\n\n```\ncd $SAGE_ROOT/devel/sage/\nhg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7911/trac_7911-sage_scilab.patch\nhg qpush\nsage -b    # This rebuilds the updated files.\n```\n",
+    "body": "Attachment [trac_7911-sage_scilab.patch](tarball://root/attachments/some-uuid/ticket7911/trac_7911-sage_scilab.patch) by mpatel created at 2010-02-02 20:57:22\n\nWe may need to update the Scilab interface (and its `optional` doctests).  I've posted a [attachment:trac_7911-sage_scilab.patch workaround patch] to the main Sage library.  I'm not sure it's the best way to proceed --- we should get some expert input ---  but it seems to work.  Let me know what happens.\n\nTo apply the patch:\n\n```\ncd $SAGE_ROOT/devel/sage/\nhg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7911/trac_7911-sage_scilab.patch\nhg qpush\nsage -b    # This rebuilds the updated files.\n```\n",
     "created_at": "2010-02-02T20:57:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7911",
     "type": "issue_comment",
@@ -377,7 +377,7 @@ archive/issue_comments_068813.json:
 }
 ```
 
-Attachment
+Attachment [trac_7911-sage_scilab.patch](tarball://root/attachments/some-uuid/ticket7911/trac_7911-sage_scilab.patch) by mpatel created at 2010-02-02 20:57:22
 
 We may need to update the Scilab interface (and its `optional` doctests).  I've posted a [attachment:trac_7911-sage_scilab.patch workaround patch] to the main Sage library.  I'm not sure it's the best way to proceed --- we should get some expert input ---  but it seems to work.  Let me know what happens.
 
@@ -871,7 +871,7 @@ Also fix doctests.  Replaces previous **sage** repository patch.
 archive/issue_comments_068828.json:
 ```json
 {
-    "body": "Attachment\n\nV2 of the sage repository patch should fix the failed doctests.  (I decided not to create a new ticket.)  It seems that parts of the Sage library have changed significantly since we last updated the Scilab interface.  It would be great to get feedback from an interface expert!\n\nI'm changing this ticket's component to 'interfaces.'",
+    "body": "Attachment [trac_7911-sage_scilab.2.patch](tarball://root/attachments/some-uuid/ticket7911/trac_7911-sage_scilab.2.patch) by mpatel created at 2010-02-15 22:29:39\n\nV2 of the sage repository patch should fix the failed doctests.  (I decided not to create a new ticket.)  It seems that parts of the Sage library have changed significantly since we last updated the Scilab interface.  It would be great to get feedback from an interface expert!\n\nI'm changing this ticket's component to 'interfaces.'",
     "created_at": "2010-02-15T22:29:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7911",
     "type": "issue_comment",
@@ -880,7 +880,7 @@ archive/issue_comments_068828.json:
 }
 ```
 
-Attachment
+Attachment [trac_7911-sage_scilab.2.patch](tarball://root/attachments/some-uuid/ticket7911/trac_7911-sage_scilab.2.patch) by mpatel created at 2010-02-15 22:29:39
 
 V2 of the sage repository patch should fix the failed doctests.  (I decided not to create a new ticket.)  It seems that parts of the Sage library have changed significantly since we last updated the Scilab interface.  It would be great to get feedback from an interface expert!
 

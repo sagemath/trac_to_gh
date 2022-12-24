@@ -48,7 +48,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8209
 archive/issue_comments_072397.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8209-mathtt.patch](tarball://root/attachments/some-uuid/ticket8209/trac_8209-mathtt.patch) by jhpalmieri created at 2010-02-07 17:57:19",
     "created_at": "2010-02-07T17:57:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8209",
     "type": "issue_comment",
@@ -57,7 +57,7 @@ archive/issue_comments_072397.json:
 }
 ```
 
-Attachment
+Attachment [trac_8209-mathtt.patch](tarball://root/attachments/some-uuid/ticket8209/trac_8209-mathtt.patch) by jhpalmieri created at 2010-02-07 17:57:19
 
 
 
@@ -121,7 +121,7 @@ Call `process_mathtt` with `embedded=True` in docbuild.  Apply only this patch. 
 archive/issue_comments_072401.json:
 ```json
 {
-    "body": "Attachment\n\nShould we call `process_mathtt` with `embedded=True` when building the reference manual?  V2 makes this change, but it's for both jsMath and PNG math modes.  Is that OK?",
+    "body": "Attachment [trac_8209-mathtt.2.patch](tarball://root/attachments/some-uuid/ticket8209/trac_8209-mathtt.2.patch) by mpatel created at 2010-02-09 04:30:06\n\nShould we call `process_mathtt` with `embedded=True` when building the reference manual?  V2 makes this change, but it's for both jsMath and PNG math modes.  Is that OK?",
     "created_at": "2010-02-09T04:30:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8209",
     "type": "issue_comment",
@@ -130,7 +130,7 @@ archive/issue_comments_072401.json:
 }
 ```
 
-Attachment
+Attachment [trac_8209-mathtt.2.patch](tarball://root/attachments/some-uuid/ticket8209/trac_8209-mathtt.2.patch) by mpatel created at 2010-02-09 04:30:06
 
 Should we call `process_mathtt` with `embedded=True` when building the reference manual?  V2 makes this change, but it's for both jsMath and PNG math modes.  Is that OK?
 
@@ -170,7 +170,7 @@ if len(docstringlines) > 0 and 'SAGE_DOC_JSMATH' in os.environ:
 archive/issue_comments_072403.json:
 ```json
 {
-    "body": "Attachment\n\napply only this patch (sage repo)",
+    "body": "Attachment [trac_8209-mathtt.3.patch](tarball://root/attachments/some-uuid/ticket8209/trac_8209-mathtt.3.patch) by jhpalmieri created at 2010-02-09 07:07:46\n\napply only this patch (sage repo)",
     "created_at": "2010-02-09T07:07:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8209",
     "type": "issue_comment",
@@ -179,7 +179,7 @@ archive/issue_comments_072403.json:
 }
 ```
 
-Attachment
+Attachment [trac_8209-mathtt.3.patch](tarball://root/attachments/some-uuid/ticket8209/trac_8209-mathtt.3.patch) by jhpalmieri created at 2010-02-09 07:07:46
 
 apply only this patch (sage repo)
 

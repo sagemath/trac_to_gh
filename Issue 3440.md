@@ -100,7 +100,7 @@ this fixes the first issue
 archive/issue_comments_024273.json:
 ```json
 {
-    "body": "Attachment\n\nThe attache patch fixes the issue above, however now:\n\n\n```\nsage: sr = mq.SR(2,1,1,4,gf2=True)\nsage: F,s = sr.polynomial_system()\nsage: R = F.ring()\nsage: B = BooleanPolynomialRing(R.ngens(),R.variable_names())\nsage: I = Ideal([B(f) for f in F])\nsage: type(I)\n<class 'sage.rings.polynomial.pbori.BooleanPolynomialIdeal'>\nsage: I.groebner_basis(aes=True)\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n...\n/usr/local/sage-3.0.6/local/lib/python2.5/site-packages/polybori/aes.py in preprocess(I, prot)\n     55     global cache\n     56     if get_order_code()==OrderCode.lp:\n---> 57       import cache as cache_module\n     58       cache=cache_module.cache\n     59       del cache_module\nImportError: No module named cache\n```\n\n\nIdeas, thoughts, work-arounds?",
+    "body": "Attachment [trac_3440_gen.patch](tarball://root/attachments/some-uuid/ticket3440/trac_3440_gen.patch) by malb created at 2008-08-18 12:13:00\n\nThe attache patch fixes the issue above, however now:\n\n\n```\nsage: sr = mq.SR(2,1,1,4,gf2=True)\nsage: F,s = sr.polynomial_system()\nsage: R = F.ring()\nsage: B = BooleanPolynomialRing(R.ngens(),R.variable_names())\nsage: I = Ideal([B(f) for f in F])\nsage: type(I)\n<class 'sage.rings.polynomial.pbori.BooleanPolynomialIdeal'>\nsage: I.groebner_basis(aes=True)\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n...\n/usr/local/sage-3.0.6/local/lib/python2.5/site-packages/polybori/aes.py in preprocess(I, prot)\n     55     global cache\n     56     if get_order_code()==OrderCode.lp:\n---> 57       import cache as cache_module\n     58       cache=cache_module.cache\n     59       del cache_module\nImportError: No module named cache\n```\n\n\nIdeas, thoughts, work-arounds?",
     "created_at": "2008-08-18T12:13:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3440",
     "type": "issue_comment",
@@ -109,7 +109,7 @@ archive/issue_comments_024273.json:
 }
 ```
 
-Attachment
+Attachment [trac_3440_gen.patch](tarball://root/attachments/some-uuid/ticket3440/trac_3440_gen.patch) by malb created at 2008-08-18 12:13:00
 
 The attache patch fixes the issue above, however now:
 

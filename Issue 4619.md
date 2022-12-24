@@ -53,7 +53,7 @@ Changing status from new to assigned.
 archive/issue_comments_034730.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch doesn't apply against a repo, but shows the changes added to HISTORY.txt by adding the release notes of 3.1.3, 3.1.4 and 3.2 as well as some minimal formatting.\n\nCheers,\n\nMichael",
+    "body": "Attachment [HISTORY.txt-3.1.3-3.2.patch](tarball://root/attachments/some-uuid/ticket4619/HISTORY.txt-3.1.3-3.2.patch) by mabshoff created at 2008-11-30 06:31:21\n\nThe patch doesn't apply against a repo, but shows the changes added to HISTORY.txt by adding the release notes of 3.1.3, 3.1.4 and 3.2 as well as some minimal formatting.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-30T06:31:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4619",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_034730.json:
 }
 ```
 
-Attachment
+Attachment [HISTORY.txt-3.1.3-3.2.patch](tarball://root/attachments/some-uuid/ticket4619/HISTORY.txt-3.1.3-3.2.patch) by mabshoff created at 2008-11-30 06:31:21
 
 The patch doesn't apply against a repo, but shows the changes added to HISTORY.txt by adding the release notes of 3.1.3, 3.1.4 and 3.2 as well as some minimal formatting.
 

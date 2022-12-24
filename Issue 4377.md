@@ -104,7 +104,7 @@ Michael
 archive/issue_comments_032208.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-4377.patch](tarball://root/attachments/some-uuid/ticket4377/sage-4377.patch) by was created at 2008-10-28 15:49:53",
     "created_at": "2008-10-28T15:49:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4377",
     "type": "issue_comment",
@@ -113,7 +113,7 @@ archive/issue_comments_032208.json:
 }
 ```
 
-Attachment
+Attachment [sage-4377.patch](tarball://root/attachments/some-uuid/ticket4377/sage-4377.patch) by was created at 2008-10-28 15:49:53
 
 
 

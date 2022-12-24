@@ -69,7 +69,7 @@ Updates `MANIFEST.in` for #7269.  Does *not* include the missing files.  sagenb 
 archive/issue_comments_069208.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7937-sass_manifest.patch](tarball://root/attachments/some-uuid/ticket7937/trac_7937-sass_manifest.patch) by mpatel created at 2010-01-15 19:20:11",
     "created_at": "2010-01-15T19:20:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7937",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_069208.json:
 }
 ```
 
-Attachment
+Attachment [trac_7937-sass_manifest.patch](tarball://root/attachments/some-uuid/ticket7937/trac_7937-sass_manifest.patch) by mpatel created at 2010-01-15 19:20:11
 
 
 

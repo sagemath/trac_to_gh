@@ -78,7 +78,7 @@ Changing status from new to assigned.
 archive/issue_comments_002927.json:
 ```json
 {
-    "body": "Attachment\n\nthis patch fixes a memleak when setting an entry to 0 in a sparse vector",
+    "body": "Attachment [6082.patch](tarball://root/attachments/some-uuid/ticket565/6082.patch) by was created at 2007-09-03 15:39:29\n\nthis patch fixes a memleak when setting an entry to 0 in a sparse vector",
     "created_at": "2007-09-03T15:39:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/565",
     "type": "issue_comment",
@@ -87,7 +87,7 @@ archive/issue_comments_002927.json:
 }
 ```
 
-Attachment
+Attachment [6082.patch](tarball://root/attachments/some-uuid/ticket565/6082.patch) by was created at 2007-09-03 15:39:29
 
 this patch fixes a memleak when setting an entry to 0 in a sparse vector
 

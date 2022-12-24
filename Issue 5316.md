@@ -52,7 +52,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5316
 archive/issue_comments_040942.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac5316-nf-quadratic-elements.patch](tarball://root/attachments/some-uuid/ticket5316/trac5316-nf-quadratic-elements.patch) by cwitty created at 2009-02-20 07:03:23",
     "created_at": "2009-02-20T07:03:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5316",
     "type": "issue_comment",
@@ -61,7 +61,7 @@ archive/issue_comments_040942.json:
 }
 ```
 
-Attachment
+Attachment [trac5316-nf-quadratic-elements.patch](tarball://root/attachments/some-uuid/ticket5316/trac5316-nf-quadratic-elements.patch) by cwitty created at 2009-02-20 07:03:23
 
 
 

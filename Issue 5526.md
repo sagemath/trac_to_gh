@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5526
 archive/issue_comments_042991.json:
 ```json
 {
-    "body": "Attachment\n\nI can live with this patch. We do not technically need the 'ssse3' flag since the Sage library does not use it.\n\nCheers,\n\nMihcael",
+    "body": "Attachment [trac-local_bin_repo-5526.patch](tarball://root/attachments/some-uuid/ticket5526/trac-local_bin_repo-5526.patch) by mabshoff created at 2009-03-16 04:36:54\n\nI can live with this patch. We do not technically need the 'ssse3' flag since the Sage library does not use it.\n\nCheers,\n\nMihcael",
     "created_at": "2009-03-16T04:36:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5526",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_042991.json:
 }
 ```
 
-Attachment
+Attachment [trac-local_bin_repo-5526.patch](tarball://root/attachments/some-uuid/ticket5526/trac-local_bin_repo-5526.patch) by mabshoff created at 2009-03-16 04:36:54
 
 I can live with this patch. We do not technically need the 'ssse3' flag since the Sage library does not use it.
 

@@ -105,7 +105,7 @@ OK, I will make this change, thanks.
 archive/issue_comments_062465.json:
 ```json
 {
-    "body": "Attachment\n\nPatch with new constructions",
+    "body": "Attachment [trac_7422_block_design_constructions.patch](tarball://root/attachments/some-uuid/ticket7422/trac_7422_block_design_constructions.patch) by brett created at 2009-11-14 18:42:17\n\nPatch with new constructions",
     "created_at": "2009-11-14T18:42:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7422",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_062465.json:
 }
 ```
 
-Attachment
+Attachment [trac_7422_block_design_constructions.patch](tarball://root/attachments/some-uuid/ticket7422/trac_7422_block_design_constructions.patch) by brett created at 2009-11-14 18:42:17
 
 Patch with new constructions
 

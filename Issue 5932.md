@@ -77,7 +77,7 @@ def random_regular_graph(d, n, seed=None):
 archive/issue_comments_046914.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5932.patch](tarball://root/attachments/some-uuid/ticket5932/trac_5932.patch) by rlm created at 2009-07-16 22:05:49",
     "created_at": "2009-07-16T22:05:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5932",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_046914.json:
 }
 ```
 
-Attachment
+Attachment [trac_5932.patch](tarball://root/attachments/some-uuid/ticket5932/trac_5932.patch) by rlm created at 2009-07-16 22:05:49
 
 
 

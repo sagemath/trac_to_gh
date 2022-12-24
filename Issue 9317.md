@@ -53,7 +53,7 @@ Changing status from new to needs_review.
 archive/issue_comments_087801.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [S_part.patch](tarball://root/attachments/some-uuid/ticket9317/S_part.patch) by robertwb created at 2010-06-23 05:56:08",
     "created_at": "2010-06-23T05:56:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9317",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_087801.json:
 }
 ```
 
-Attachment
+Attachment [S_part.patch](tarball://root/attachments/some-uuid/ticket9317/S_part.patch) by robertwb created at 2010-06-23 05:56:08
 
 
 
@@ -89,7 +89,7 @@ Shouldn't these be like ` is_s_unit `  instead of the capital s?
 archive/issue_comments_087803.json:
 ```json
 {
-    "body": "Attachment\n\nApply after previous patch",
+    "body": "Attachment [trac_9317-review.patch](tarball://root/attachments/some-uuid/ticket9317/trac_9317-review.patch) by cremona created at 2010-06-23 07:05:44\n\nApply after previous patch",
     "created_at": "2010-06-23T07:05:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9317",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_087803.json:
 }
 ```
 
-Attachment
+Attachment [trac_9317-review.patch](tarball://root/attachments/some-uuid/ticket9317/trac_9317-review.patch) by cremona created at 2010-06-23 07:05:44
 
 Apply after previous patch
 
@@ -154,7 +154,7 @@ On the other hand, we don't capitalize things like Eulerian in `is_eulerian`.  W
 archive/issue_comments_087806.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9317_doctest_change.patch](tarball://root/attachments/some-uuid/ticket9317/trac_9317_doctest_change.patch) by aly.deines created at 2010-06-23 16:12:35",
     "created_at": "2010-06-23T16:12:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9317",
     "type": "issue_comment",
@@ -163,7 +163,7 @@ archive/issue_comments_087806.json:
 }
 ```
 
-Attachment
+Attachment [trac_9317_doctest_change.patch](tarball://root/attachments/some-uuid/ticket9317/trac_9317_doctest_change.patch) by aly.deines created at 2010-06-23 16:12:35
 
 
 

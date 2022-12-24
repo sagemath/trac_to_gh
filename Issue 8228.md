@@ -216,7 +216,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_072667.json:
 ```json
 {
-    "body": "Attachment\n\nadd doctest",
+    "body": "Attachment [trac_8228-doctest.patch](tarball://root/attachments/some-uuid/ticket8228/trac_8228-doctest.patch) by burcin created at 2010-09-19 14:48:48\n\nadd doctest",
     "created_at": "2010-09-19T14:48:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8228",
     "type": "issue_comment",
@@ -225,7 +225,7 @@ archive/issue_comments_072667.json:
 }
 ```
 
-Attachment
+Attachment [trac_8228-doctest.patch](tarball://root/attachments/some-uuid/ticket8228/trac_8228-doctest.patch) by burcin created at 2010-09-19 14:48:48
 
 add doctest
 

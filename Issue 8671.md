@@ -66,7 +66,7 @@ Changing status from new to needs_review.
 archive/issue_comments_078911.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8671-field_element_quo_rem.patch](tarball://root/attachments/some-uuid/ticket8671/trac_8671-field_element_quo_rem.patch) by burcin created at 2010-04-11 12:29:32",
     "created_at": "2010-04-11T12:29:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8671",
     "type": "issue_comment",
@@ -75,7 +75,7 @@ archive/issue_comments_078911.json:
 }
 ```
 
-Attachment
+Attachment [trac_8671-field_element_quo_rem.patch](tarball://root/attachments/some-uuid/ticket8671/trac_8671-field_element_quo_rem.patch) by burcin created at 2010-04-11 12:29:32
 
 
 

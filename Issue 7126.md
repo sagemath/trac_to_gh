@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7126
 archive/issue_comments_059112.json:
 ```json
 {
-    "body": "Attachment\n\nChanges line comments to block comments. Adds missing semicolons.",
+    "body": "Attachment [trac_7126-doc-sidebar-fix.patch](tarball://root/attachments/some-uuid/ticket7126/trac_7126-doc-sidebar-fix.patch) by timdumol created at 2009-10-05 19:04:15\n\nChanges line comments to block comments. Adds missing semicolons.",
     "created_at": "2009-10-05T19:04:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7126",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_059112.json:
 }
 ```
 
-Attachment
+Attachment [trac_7126-doc-sidebar-fix.patch](tarball://root/attachments/some-uuid/ticket7126/trac_7126-doc-sidebar-fix.patch) by timdumol created at 2009-10-05 19:04:15
 
 Changes line comments to block comments. Adds missing semicolons.
 
@@ -127,7 +127,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_059117.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.",
+    "body": "Attachment [trac_7126-doc-sidebar-fix_v2.patch](tarball://root/attachments/some-uuid/ticket7126/trac_7126-doc-sidebar-fix_v2.patch) by mhansen created at 2009-10-16 04:50:38\n\nLooks good to me.",
     "created_at": "2009-10-16T04:50:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7126",
     "type": "issue_comment",
@@ -136,7 +136,7 @@ archive/issue_comments_059117.json:
 }
 ```
 
-Attachment
+Attachment [trac_7126-doc-sidebar-fix_v2.patch](tarball://root/attachments/some-uuid/ticket7126/trac_7126-doc-sidebar-fix_v2.patch) by mhansen created at 2009-10-16 04:50:38
 
 Looks good to me.
 

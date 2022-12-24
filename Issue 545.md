@@ -297,7 +297,7 @@ Pablo
 archive/issue_comments_002766.json:
 ```json
 {
-    "body": "Attachment\n\nthis is from chris gorecki",
+    "body": "Attachment [logic.hg](tarball://root/attachments/some-uuid/ticket545/logic.hg) by was created at 2008-04-09 19:44:13\n\nthis is from chris gorecki",
     "created_at": "2008-04-09T19:44:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/545",
     "type": "issue_comment",
@@ -306,7 +306,7 @@ archive/issue_comments_002766.json:
 }
 ```
 
-Attachment
+Attachment [logic.hg](tarball://root/attachments/some-uuid/ticket545/logic.hg) by was created at 2008-04-09 19:44:13
 
 this is from chris gorecki
 
@@ -422,7 +422,7 @@ Changing keywords from "" to "editor_wstein".
 archive/issue_comments_002770.json:
 ```json
 {
-    "body": "Attachment\n\nThis is the referee report",
+    "body": "Attachment [sekine.pdf](tarball://root/attachments/some-uuid/ticket545/sekine.pdf) by was created at 2008-06-15 22:06:59\n\nThis is the referee report",
     "created_at": "2008-06-15T22:06:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/545",
     "type": "issue_comment",
@@ -431,7 +431,7 @@ archive/issue_comments_002770.json:
 }
 ```
 
-Attachment
+Attachment [sekine.pdf](tarball://root/attachments/some-uuid/ticket545/sekine.pdf) by was created at 2008-06-15 22:06:59
 
 This is the referee report
 
@@ -497,7 +497,7 @@ latest release
 archive/issue_comments_002774.json:
 ```json
 {
-    "body": "Attachment\n\nThis release should address all the issues in sekine.pdf.",
+    "body": "Attachment [logic.2.tgz](tarball://root/attachments/some-uuid/ticket545/logic.2.tgz) by goreckc created at 2008-09-11 02:53:12\n\nThis release should address all the issues in sekine.pdf.",
     "created_at": "2008-09-11T02:53:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/545",
     "type": "issue_comment",
@@ -506,7 +506,7 @@ archive/issue_comments_002774.json:
 }
 ```
 
-Attachment
+Attachment [logic.2.tgz](tarball://root/attachments/some-uuid/ticket545/logic.2.tgz) by goreckc created at 2008-09-11 02:53:12
 
 This release should address all the issues in sekine.pdf.
 
@@ -1155,7 +1155,7 @@ Michael
 archive/issue_comments_002779.json:
 ```json
 {
-    "body": "Attachment\n\nChris,\n\ndo *not* attach tgz files to trac since it causes massive problems. Instead post plain hg patches.\n\nCheers,\n\nMichael",
+    "body": "Attachment [logic.tgz](tarball://root/attachments/some-uuid/ticket545/logic.tgz) by mabshoff created at 2008-10-28 02:53:58\n\nChris,\n\ndo *not* attach tgz files to trac since it causes massive problems. Instead post plain hg patches.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-28T02:53:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/545",
     "type": "issue_comment",
@@ -1164,7 +1164,7 @@ archive/issue_comments_002779.json:
 }
 ```
 
-Attachment
+Attachment [logic.tgz](tarball://root/attachments/some-uuid/ticket545/logic.tgz) by mabshoff created at 2008-10-28 02:53:58
 
 Chris,
 
@@ -1233,7 +1233,7 @@ Any other way(s) of getting the diff file(s) bundled in **logic.hg**?
 archive/issue_comments_002781.json:
 ```json
 {
-    "body": "Attachment\n\nHaving trouble with the patch, don't use logic.patch.",
+    "body": "Attachment [logic.patch](tarball://root/attachments/some-uuid/ticket545/logic.patch) by goreckc created at 2008-11-18 06:37:02\n\nHaving trouble with the patch, don't use logic.patch.",
     "created_at": "2008-11-18T06:37:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/545",
     "type": "issue_comment",
@@ -1242,7 +1242,7 @@ archive/issue_comments_002781.json:
 }
 ```
 
-Attachment
+Attachment [logic.patch](tarball://root/attachments/some-uuid/ticket545/logic.patch) by goreckc created at 2008-11-18 06:37:02
 
 Having trouble with the patch, don't use logic.patch.
 
@@ -1271,7 +1271,7 @@ Fixed documentation.
 archive/issue_comments_002783.json:
 ```json
 {
-    "body": "Attachment\n\nAll of mvngu's changes have been incorporated into logic2.patch.",
+    "body": "Attachment [logic2.patch](tarball://root/attachments/some-uuid/ticket545/logic2.patch) by goreckc created at 2008-11-24 02:34:56\n\nAll of mvngu's changes have been incorporated into logic2.patch.",
     "created_at": "2008-11-24T02:34:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/545",
     "type": "issue_comment",
@@ -1280,7 +1280,7 @@ archive/issue_comments_002783.json:
 }
 ```
 
-Attachment
+Attachment [logic2.patch](tarball://root/attachments/some-uuid/ticket545/logic2.patch) by goreckc created at 2008-11-24 02:34:56
 
 All of mvngu's changes have been incorporated into logic2.patch.
 
@@ -1291,7 +1291,7 @@ All of mvngu's changes have been incorporated into logic2.patch.
 archive/issue_comments_002784.json:
 ```json
 {
-    "body": "Attachment\n\nImprove latex output for boolean formulas, fix a few spelling mistakes",
+    "body": "Attachment [trac_545_latex.patch](tarball://root/attachments/some-uuid/ticket545/trac_545_latex.patch) by whuss created at 2008-11-25 17:30:34\n\nImprove latex output for boolean formulas, fix a few spelling mistakes",
     "created_at": "2008-11-25T17:30:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/545",
     "type": "issue_comment",
@@ -1300,7 +1300,7 @@ archive/issue_comments_002784.json:
 }
 ```
 
-Attachment
+Attachment [trac_545_latex.patch](tarball://root/attachments/some-uuid/ticket545/trac_545_latex.patch) by whuss created at 2008-11-25 17:30:34
 
 Improve latex output for boolean formulas, fix a few spelling mistakes
 
@@ -1380,7 +1380,7 @@ Changed directory.
 archive/issue_comments_002788.json:
 ```json
 {
-    "body": "Attachment\n\nI believe this patch should output to SAGE_ROOT/devel/sage/sage/logic.  I'm not sure if it is being imported properly.  \n\nIt doesn't have the trac_545_latex.patch applied against it either.  Should this be done?",
+    "body": "Attachment [logic3.patch](tarball://root/attachments/some-uuid/ticket545/logic3.patch) by goreckc created at 2008-12-01 00:57:06\n\nI believe this patch should output to SAGE_ROOT/devel/sage/sage/logic.  I'm not sure if it is being imported properly.  \n\nIt doesn't have the trac_545_latex.patch applied against it either.  Should this be done?",
     "created_at": "2008-12-01T00:57:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/545",
     "type": "issue_comment",
@@ -1389,7 +1389,7 @@ archive/issue_comments_002788.json:
 }
 ```
 
-Attachment
+Attachment [logic3.patch](tarball://root/attachments/some-uuid/ticket545/logic3.patch) by goreckc created at 2008-12-01 00:57:06
 
 I believe this patch should output to SAGE_ROOT/devel/sage/sage/logic.  I'm not sure if it is being imported properly.  
 
@@ -1438,7 +1438,7 @@ Apply only this patch and then "trac_545_latex.patch"
 archive/issue_comments_002791.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review, this should go into the 3.3 series.\n\n`@`Michael:\nFor this ticket, only two of the patches are to be applied (I tested against Sage3.3.alpha0 on my Mac) to the Sage Library (devel/sage-main):\n\n* \"logic4.patch\" (should apply cleanly, credit: Chris Gorecki)\n\n* \"trac_545_latex.patch\" (should apply, but with one hunk succeeding only with fuzz, credit: Wilfried Huss)\n\nNote 1: The \"logic4.patch\" is essentially the \"logic3.patch\", but such that the files do not go into \"devel/sage/logic/\", but into \"devel/sage/sage/logic\", where they belong. For the doctests to pass I also changed lines like \"sage: import propcalc\" into \"sage: import sage.logic.propcalc as propcalc\", and I removed linebreaks/backslashes in the \"Expected Output\" so that the true output now does match the expected output. Probably one should adjust the \"all.py\" in the \"sage/logic\" subdirectory in an appropriate way, but I wanted to do only minimal invasive changes to the original (\"logic3\") patch.\n\nNote 2: I have not tried any ReSTification. But I would rather have it in 3.4 without Sphinx documentation, than having to rewrite the patches for this ticket for 3.4.1 again, given the age of the ticket. Wil might have an opinion on that.\n\nNote 3: One of the six new files, the file \"boolopt.py\", says in it: \"Copyright 2006 (c) Michael Greenberg.  NewBSD license, listed below ...\". The terms listed are definitely compatible with GPLv2+, as far as I can tell, but IANAL. (The other five files are entirely written by Chris Gorecki, and are \"Distributed under the terms of the GNU General Public License (GPL)\".)\n\nNote 4: This \"other\" file boolopt.py misses doctests on its own, but the functionality provided is well tested implicitly by using it in other ones of these six files. This is OK from my side, but probably a \"\"\"nodoctests\"\"\" should be added --- or the code has to be refactored on a larger scale --- or this one file would have to be put in its own micro-spkg.\n\nNote 5: There definitely is further work to be done on the \"sage/logic/\" part of Sage, e.g. the old \"logic.py\" file most probably should be thrown out, \"all.py\" should be adjusted, and so on. But please, please, please open new tickets for that!",
+    "body": "Attachment [logic4.patch](tarball://root/attachments/some-uuid/ticket545/logic4.patch) by GeorgSWeber created at 2009-01-20 23:31:46\n\nPositive review, this should go into the 3.3 series.\n\n`@`Michael:\nFor this ticket, only two of the patches are to be applied (I tested against Sage3.3.alpha0 on my Mac) to the Sage Library (devel/sage-main):\n\n* \"logic4.patch\" (should apply cleanly, credit: Chris Gorecki)\n\n* \"trac_545_latex.patch\" (should apply, but with one hunk succeeding only with fuzz, credit: Wilfried Huss)\n\nNote 1: The \"logic4.patch\" is essentially the \"logic3.patch\", but such that the files do not go into \"devel/sage/logic/\", but into \"devel/sage/sage/logic\", where they belong. For the doctests to pass I also changed lines like \"sage: import propcalc\" into \"sage: import sage.logic.propcalc as propcalc\", and I removed linebreaks/backslashes in the \"Expected Output\" so that the true output now does match the expected output. Probably one should adjust the \"all.py\" in the \"sage/logic\" subdirectory in an appropriate way, but I wanted to do only minimal invasive changes to the original (\"logic3\") patch.\n\nNote 2: I have not tried any ReSTification. But I would rather have it in 3.4 without Sphinx documentation, than having to rewrite the patches for this ticket for 3.4.1 again, given the age of the ticket. Wil might have an opinion on that.\n\nNote 3: One of the six new files, the file \"boolopt.py\", says in it: \"Copyright 2006 (c) Michael Greenberg.  NewBSD license, listed below ...\". The terms listed are definitely compatible with GPLv2+, as far as I can tell, but IANAL. (The other five files are entirely written by Chris Gorecki, and are \"Distributed under the terms of the GNU General Public License (GPL)\".)\n\nNote 4: This \"other\" file boolopt.py misses doctests on its own, but the functionality provided is well tested implicitly by using it in other ones of these six files. This is OK from my side, but probably a \"\"\"nodoctests\"\"\" should be added --- or the code has to be refactored on a larger scale --- or this one file would have to be put in its own micro-spkg.\n\nNote 5: There definitely is further work to be done on the \"sage/logic/\" part of Sage, e.g. the old \"logic.py\" file most probably should be thrown out, \"all.py\" should be adjusted, and so on. But please, please, please open new tickets for that!",
     "created_at": "2009-01-20T23:31:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/545",
     "type": "issue_comment",
@@ -1447,7 +1447,7 @@ archive/issue_comments_002791.json:
 }
 ```
 
-Attachment
+Attachment [logic4.patch](tarball://root/attachments/some-uuid/ticket545/logic4.patch) by GeorgSWeber created at 2009-01-20 23:31:46
 
 Positive review, this should go into the 3.3 series.
 
@@ -1628,7 +1628,7 @@ Cheers, gsw
 archive/issue_comments_002798.json:
 ```json
 {
-    "body": "Attachment\n\nApply first \"logic4\" then the \"latex\" one and after that this one patch",
+    "body": "Attachment [trac_545_long-doctests-fixed.patch](tarball://root/attachments/some-uuid/ticket545/trac_545_long-doctests-fixed.patch) by GeorgSWeber created at 2009-01-23 21:12:17\n\nApply first \"logic4\" then the \"latex\" one and after that this one patch",
     "created_at": "2009-01-23T21:12:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/545",
     "type": "issue_comment",
@@ -1637,7 +1637,7 @@ archive/issue_comments_002798.json:
 }
 ```
 
-Attachment
+Attachment [trac_545_long-doctests-fixed.patch](tarball://root/attachments/some-uuid/ticket545/trac_545_long-doctests-fixed.patch) by GeorgSWeber created at 2009-01-23 21:12:17
 
 Apply first "logic4" then the "latex" one and after that this one patch
 
@@ -1747,7 +1747,7 @@ Michael
 archive/issue_comments_002803.json:
 ```json
 {
-    "body": "Attachment\n\nBring doctest coverage of boolformula.py up to 100%",
+    "body": "Attachment [trac_545_boolformula-doctests.patch](tarball://root/attachments/some-uuid/ticket545/trac_545_boolformula-doctests.patch) by mvngu created at 2009-02-25 10:09:23\n\nBring doctest coverage of boolformula.py up to 100%",
     "created_at": "2009-02-25T10:09:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/545",
     "type": "issue_comment",
@@ -1756,7 +1756,7 @@ archive/issue_comments_002803.json:
 }
 ```
 
-Attachment
+Attachment [trac_545_boolformula-doctests.patch](tarball://root/attachments/some-uuid/ticket545/trac_545_boolformula-doctests.patch) by mvngu created at 2009-02-25 10:09:23
 
 Bring doctest coverage of boolformula.py up to 100%
 
@@ -1830,7 +1830,7 @@ based on sage-3.4.2.alpha0
 archive/issue_comments_002807.json:
 ```json
 {
-    "body": "Attachment\n\nbased on sage-3.4.2.alpha0",
+    "body": "Attachment [trac_545-logic5.patch](tarball://root/attachments/some-uuid/ticket545/trac_545-logic5.patch) by mvngu created at 2009-04-27 13:03:29\n\nbased on sage-3.4.2.alpha0",
     "created_at": "2009-04-27T13:03:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/545",
     "type": "issue_comment",
@@ -1839,7 +1839,7 @@ archive/issue_comments_002807.json:
 }
 ```
 
-Attachment
+Attachment [trac_545-logic5.patch](tarball://root/attachments/some-uuid/ticket545/trac_545-logic5.patch) by mvngu created at 2009-04-27 13:03:29
 
 based on sage-3.4.2.alpha0
 
@@ -1850,7 +1850,7 @@ based on sage-3.4.2.alpha0
 archive/issue_comments_002808.json:
 ```json
 {
-    "body": "Attachment\n\nbased on sage-3.4.2.alpha0",
+    "body": "Attachment [trac_545-adjust-simplify.patch](tarball://root/attachments/some-uuid/ticket545/trac_545-adjust-simplify.patch) by mvngu created at 2009-04-27 13:03:45\n\nbased on sage-3.4.2.alpha0",
     "created_at": "2009-04-27T13:03:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/545",
     "type": "issue_comment",
@@ -1859,7 +1859,7 @@ archive/issue_comments_002808.json:
 }
 ```
 
-Attachment
+Attachment [trac_545-adjust-simplify.patch](tarball://root/attachments/some-uuid/ticket545/trac_545-adjust-simplify.patch) by mvngu created at 2009-04-27 13:03:45
 
 based on sage-3.4.2.alpha0
 
@@ -1932,7 +1932,7 @@ fix spelling mistakes
 archive/issue_comments_002812.json:
 ```json
 {
-    "body": "Attachment\n\napply after the other five patches instead of \"equivlant.patch\"",
+    "body": "Attachment [trac_545-equivlant_rebased.patch](tarball://root/attachments/some-uuid/ticket545/trac_545-equivlant_rebased.patch) by GeorgSWeber created at 2009-04-28 19:25:09\n\napply after the other five patches instead of \"equivlant.patch\"",
     "created_at": "2009-04-28T19:25:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/545",
     "type": "issue_comment",
@@ -1941,7 +1941,7 @@ archive/issue_comments_002812.json:
 }
 ```
 
-Attachment
+Attachment [trac_545-equivlant_rebased.patch](tarball://root/attachments/some-uuid/ticket545/trac_545-equivlant_rebased.patch) by GeorgSWeber created at 2009-04-28 19:25:09
 
 apply after the other five patches instead of "equivlant.patch"
 

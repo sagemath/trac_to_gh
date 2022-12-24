@@ -83,7 +83,7 @@ tentative patch
 archive/issue_comments_099766.json:
 ```json
 {
-    "body": "Attachment\n\nthe patch gives the described output, but someone should double check my code for correctness.",
+    "body": "Attachment [trac_9962_start_vector.patch](tarball://root/attachments/some-uuid/ticket9962/trac_9962_start_vector.patch) by ryan created at 2011-01-09 06:26:25\n\nthe patch gives the described output, but someone should double check my code for correctness.",
     "created_at": "2011-01-09T06:26:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9961",
     "type": "issue_comment",
@@ -92,7 +92,7 @@ archive/issue_comments_099766.json:
 }
 ```
 
-Attachment
+Attachment [trac_9962_start_vector.patch](tarball://root/attachments/some-uuid/ticket9962/trac_9962_start_vector.patch) by ryan created at 2011-01-09 06:26:25
 
 the patch gives the described output, but someone should double check my code for correctness.
 
@@ -178,7 +178,7 @@ updated patch
 archive/issue_comments_099771.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9962_vector_start.patch](tarball://root/attachments/some-uuid/ticket9962/trac_9962_vector_start.patch) by ryan created at 2011-01-11 00:36:37",
     "created_at": "2011-01-11T00:36:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9961",
     "type": "issue_comment",
@@ -187,7 +187,7 @@ archive/issue_comments_099771.json:
 }
 ```
 
-Attachment
+Attachment [trac_9962_vector_start.patch](tarball://root/attachments/some-uuid/ticket9962/trac_9962_vector_start.patch) by ryan created at 2011-01-11 00:36:37
 
 
 
@@ -250,7 +250,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_099775.json:
 ```json
 {
-    "body": "Attachment\n\nupdated patch:\n\nIncluded error handling for some cases where the two coordinates are not of the same dimension.  Also, added doctests.\n\nMuch cleaner patch.\n\nI appreciate the suggestions for making this patch better.",
+    "body": "Attachment [trac_9962_vector_start.2.patch](tarball://root/attachments/some-uuid/ticket9962/trac_9962_vector_start.2.patch) by ryan created at 2011-01-11 00:46:08\n\nupdated patch:\n\nIncluded error handling for some cases where the two coordinates are not of the same dimension.  Also, added doctests.\n\nMuch cleaner patch.\n\nI appreciate the suggestions for making this patch better.",
     "created_at": "2011-01-11T00:46:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9961",
     "type": "issue_comment",
@@ -259,7 +259,7 @@ archive/issue_comments_099775.json:
 }
 ```
 
-Attachment
+Attachment [trac_9962_vector_start.2.patch](tarball://root/attachments/some-uuid/ticket9962/trac_9962_vector_start.2.patch) by ryan created at 2011-01-11 00:46:08
 
 updated patch:
 
@@ -546,7 +546,7 @@ I think I have it fixed.  However, the bizarre error messages remain for one-dim
 archive/issue_comments_099790.json:
 ```json
 {
-    "body": "Attachment\n\nApply after vector_start.2 patch",
+    "body": "Attachment [trac_9962-reviewer.patch](tarball://root/attachments/some-uuid/ticket9962/trac_9962-reviewer.patch) by kcrisman created at 2011-03-13 01:58:22\n\nApply after vector_start.2 patch",
     "created_at": "2011-03-13T01:58:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9961",
     "type": "issue_comment",
@@ -555,7 +555,7 @@ archive/issue_comments_099790.json:
 }
 ```
 
-Attachment
+Attachment [trac_9962-reviewer.patch](tarball://root/attachments/some-uuid/ticket9962/trac_9962-reviewer.patch) by kcrisman created at 2011-03-13 01:58:22
 
 Apply after vector_start.2 patch
 

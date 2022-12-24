@@ -82,7 +82,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7519
 archive/issue_comments_063695.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7519_wordmorphism_datatype_choice-sl.patch](tarball://root/attachments/some-uuid/ticket7519/trac_7519_wordmorphism_datatype_choice-sl.patch) by slabbe created at 2009-11-23 12:56:33",
     "created_at": "2009-11-23T12:56:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7519",
     "type": "issue_comment",
@@ -91,7 +91,7 @@ archive/issue_comments_063695.json:
 }
 ```
 
-Attachment
+Attachment [trac_7519_wordmorphism_datatype_choice-sl.patch](tarball://root/attachments/some-uuid/ticket7519/trac_7519_wordmorphism_datatype_choice-sl.patch) by slabbe created at 2009-11-23 12:56:33
 
 
 

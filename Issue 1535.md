@@ -69,7 +69,7 @@ Changing status from new to assigned.
 archive/issue_comments_009803.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1535-smoothness.hg](tarball://root/attachments/some-uuid/ticket1535/1535-smoothness.hg) by robertwb created at 2007-12-30 10:09:29",
     "created_at": "2007-12-30T10:09:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1535",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_009803.json:
 }
 ```
 
-Attachment
+Attachment [1535-smoothness.hg](tarball://root/attachments/some-uuid/ticket1535/1535-smoothness.hg) by robertwb created at 2007-12-30 10:09:29
 
 
 

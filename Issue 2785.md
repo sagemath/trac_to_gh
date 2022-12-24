@@ -67,7 +67,7 @@ extcode patch
 archive/issue_comments_019128.json:
 ```json
 {
-    "body": "Attachment\n\nThis was voted in positively on sage-devel a while ago. Can somebody dig out the link?\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_2785_1.patch](tarball://root/attachments/some-uuid/ticket2785/trac_2785_1.patch) by mabshoff created at 2008-04-03 11:13:35\n\nThis was voted in positively on sage-devel a while ago. Can somebody dig out the link?\n\nCheers,\n\nMichael",
     "created_at": "2008-04-03T11:13:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2785",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_019128.json:
 }
 ```
 
-Attachment
+Attachment [trac_2785_1.patch](tarball://root/attachments/some-uuid/ticket2785/trac_2785_1.patch) by mabshoff created at 2008-04-03 11:13:35
 
 This was voted in positively on sage-devel a while ago. Can somebody dig out the link?
 

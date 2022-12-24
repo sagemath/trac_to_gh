@@ -67,7 +67,7 @@ For me, this passes all tests on Mac OS X (both 32-bit and 64-bit), and also on 
 archive/issue_comments_053661.json:
 ```json
 {
-    "body": "Attachment\n\nSee #6642 for the problem with the 'solve' doctest.",
+    "body": "Attachment [trac_6572_scripts.patch](tarball://root/attachments/some-uuid/ticket6572/trac_6572_scripts.patch) by jhpalmieri created at 2009-07-27 17:14:26\n\nSee #6642 for the problem with the 'solve' doctest.",
     "created_at": "2009-07-27T17:14:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6572",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_053661.json:
 }
 ```
 
-Attachment
+Attachment [trac_6572_scripts.patch](tarball://root/attachments/some-uuid/ticket6572/trac_6572_scripts.patch) by jhpalmieri created at 2009-07-27 17:14:26
 
 See #6642 for the problem with the 'solve' doctest.
 
@@ -146,7 +146,7 @@ In restructured text, the two should be equivalent.  It should be the same for t
 archive/issue_comments_053665.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of other scripts patch",
+    "body": "Attachment [trac_6572-scripts-part2.patch](tarball://root/attachments/some-uuid/ticket6572/trac_6572-scripts-part2.patch) by jhpalmieri created at 2009-10-05 15:06:40\n\napply on top of other scripts patch",
     "created_at": "2009-10-05T15:06:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6572",
     "type": "issue_comment",
@@ -155,7 +155,7 @@ archive/issue_comments_053665.json:
 }
 ```
 
-Attachment
+Attachment [trac_6572-scripts-part2.patch](tarball://root/attachments/some-uuid/ticket6572/trac_6572-scripts-part2.patch) by jhpalmieri created at 2009-10-05 15:06:40
 
 apply on top of other scripts patch
 
@@ -222,7 +222,7 @@ I'll post a replacement for "trac_6572-double-colon.patch" soon.  That patch sho
 archive/issue_comments_053668.json:
 ```json
 {
-    "body": "Attachment\n\ndepends on #6642",
+    "body": "Attachment [trac_6572-double-colon.patch](tarball://root/attachments/some-uuid/ticket6572/trac_6572-double-colon.patch) by jhpalmieri created at 2009-10-06 00:59:39\n\ndepends on #6642",
     "created_at": "2009-10-06T00:59:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6572",
     "type": "issue_comment",
@@ -231,7 +231,7 @@ archive/issue_comments_053668.json:
 }
 ```
 
-Attachment
+Attachment [trac_6572-double-colon.patch](tarball://root/attachments/some-uuid/ticket6572/trac_6572-double-colon.patch) by jhpalmieri created at 2009-10-06 00:59:39
 
 depends on #6642
 
@@ -332,7 +332,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_053674.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.",
+    "body": "Attachment [trac_6572-graphtheory.patch](tarball://root/attachments/some-uuid/ticket6572/trac_6572-graphtheory.patch) by mhansen created at 2009-10-15 09:17:06\n\nLooks good to me.",
     "created_at": "2009-10-15T09:17:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6572",
     "type": "issue_comment",
@@ -341,7 +341,7 @@ archive/issue_comments_053674.json:
 }
 ```
 
-Attachment
+Attachment [trac_6572-graphtheory.patch](tarball://root/attachments/some-uuid/ticket6572/trac_6572-graphtheory.patch) by mhansen created at 2009-10-15 09:17:06
 
 Looks good to me.
 

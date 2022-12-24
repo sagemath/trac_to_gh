@@ -77,7 +77,7 @@ Defines a dummy class for pickling/unpickling test
 archive/issue_comments_043022.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [junk7.spyx](tarball://root/attachments/some-uuid/ticket5533/junk7.spyx) by mabshoff created at 2009-04-23 08:05:05",
     "created_at": "2009-04-23T08:05:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5533",
     "type": "issue_comment",
@@ -86,4 +86,4 @@ archive/issue_comments_043022.json:
 }
 ```
 
-Attachment
+Attachment [junk7.spyx](tarball://root/attachments/some-uuid/ticket5533/junk7.spyx) by mabshoff created at 2009-04-23 08:05:05

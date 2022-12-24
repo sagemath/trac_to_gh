@@ -93,7 +93,7 @@ No, I don't think so... Just kidding.  Here's a new patch with a doctest.
 archive/issue_comments_047719.json:
 ```json
 {
-    "body": "Attachment\n\nreviewer patch; fix trivial typo",
+    "body": "Attachment [trac_5997-reviewer.patch](tarball://root/attachments/some-uuid/ticket5997/trac_5997-reviewer.patch) by mvngu created at 2009-05-08 00:14:53\n\nreviewer patch; fix trivial typo",
     "created_at": "2009-05-08T00:14:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5997",
     "type": "issue_comment",
@@ -102,7 +102,7 @@ archive/issue_comments_047719.json:
 }
 ```
 
-Attachment
+Attachment [trac_5997-reviewer.patch](tarball://root/attachments/some-uuid/ticket5997/trac_5997-reviewer.patch) by mvngu created at 2009-05-08 00:14:53
 
 reviewer patch; fix trivial typo
 

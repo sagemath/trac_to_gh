@@ -81,7 +81,7 @@ archive/issue_comments_003123.json:
 archive/issue_comments_003124.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [607a.patch](tarball://root/attachments/some-uuid/ticket607/607a.patch) by robertwb created at 2007-09-07 00:31:00",
     "created_at": "2007-09-07T00:31:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/607",
     "type": "issue_comment",
@@ -90,7 +90,7 @@ archive/issue_comments_003124.json:
 }
 ```
 
-Attachment
+Attachment [607a.patch](tarball://root/attachments/some-uuid/ticket607/607a.patch) by robertwb created at 2007-09-07 00:31:00
 
 
 
@@ -99,7 +99,7 @@ Attachment
 archive/issue_comments_003125.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [607b.patch](tarball://root/attachments/some-uuid/ticket607/607b.patch) by robertwb created at 2007-09-07 00:31:28",
     "created_at": "2007-09-07T00:31:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/607",
     "type": "issue_comment",
@@ -108,7 +108,7 @@ archive/issue_comments_003125.json:
 }
 ```
 
-Attachment
+Attachment [607b.patch](tarball://root/attachments/some-uuid/ticket607/607b.patch) by robertwb created at 2007-09-07 00:31:28
 
 
 

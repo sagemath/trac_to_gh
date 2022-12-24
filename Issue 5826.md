@@ -67,7 +67,7 @@ Changing component from algebra to misc.
 archive/issue_comments_045797.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5826.patch](tarball://root/attachments/some-uuid/ticket5826/trac_5826.patch) by ddrake created at 2009-04-20 03:07:28",
     "created_at": "2009-04-20T03:07:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5826",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_045797.json:
 }
 ```
 
-Attachment
+Attachment [trac_5826.patch](tarball://root/attachments/some-uuid/ticket5826/trac_5826.patch) by ddrake created at 2009-04-20 03:07:28
 
 
 

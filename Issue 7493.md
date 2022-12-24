@@ -120,7 +120,7 @@ Nicolas, can you actually attach your toy patch to this ticket?  I've now been i
 archive/issue_comments_063299.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7493-check-long-time.patch](tarball://root/attachments/some-uuid/ticket7493/trac_7493-check-long-time.patch) by nthiery created at 2010-01-23 22:59:26",
     "created_at": "2010-01-23T22:59:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7493",
     "type": "issue_comment",
@@ -129,7 +129,7 @@ archive/issue_comments_063299.json:
 }
 ```
 
-Attachment
+Attachment [trac_7493-check-long-time.patch](tarball://root/attachments/some-uuid/ticket7493/trac_7493-check-long-time.patch) by nthiery created at 2010-01-23 22:59:26
 
 
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2307
 archive/issue_comments_015358.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me, apply.",
+    "body": "Attachment [2307-has_edge.patch](tarball://root/attachments/some-uuid/ticket2307/2307-has_edge.patch) by ncalexan created at 2008-02-26 00:43:43\n\nLooks good to me, apply.",
     "created_at": "2008-02-26T00:43:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2307",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_015358.json:
 }
 ```
 
-Attachment
+Attachment [2307-has_edge.patch](tarball://root/attachments/some-uuid/ticket2307/2307-has_edge.patch) by ncalexan created at 2008-02-26 00:43:43
 
 Looks good to me, apply.
 

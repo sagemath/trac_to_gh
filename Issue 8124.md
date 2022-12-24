@@ -188,7 +188,7 @@ Replaces previous (fixes latex glitch)
 archive/issue_comments_071427.json:
 ```json
 {
-    "body": "Attachment\n\nPatch  trac_8124-selmer-nf.review.patch applies fine to 4.3.2.alpha1 and tests pass and doc build ok!\n\nThe tag was already at review, and I'm happy to leave it there.",
+    "body": "Attachment [trac_8124-selmer-nf.review.patch](tarball://root/attachments/some-uuid/ticket8124/trac_8124-selmer-nf.review.patch) by cremona created at 2010-02-04 20:00:41\n\nPatch  trac_8124-selmer-nf.review.patch applies fine to 4.3.2.alpha1 and tests pass and doc build ok!\n\nThe tag was already at review, and I'm happy to leave it there.",
     "created_at": "2010-02-04T20:00:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8124",
     "type": "issue_comment",
@@ -197,7 +197,7 @@ archive/issue_comments_071427.json:
 }
 ```
 
-Attachment
+Attachment [trac_8124-selmer-nf.review.patch](tarball://root/attachments/some-uuid/ticket8124/trac_8124-selmer-nf.review.patch) by cremona created at 2010-02-04 20:00:41
 
 Patch  trac_8124-selmer-nf.review.patch applies fine to 4.3.2.alpha1 and tests pass and doc build ok!
 

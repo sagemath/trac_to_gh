@@ -96,7 +96,7 @@ Nathann
 archive/issue_comments_084057.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.",
+    "body": "Attachment [trac_9059.patch](tarball://root/attachments/some-uuid/ticket9059/trac_9059.patch) by rlm created at 2010-06-21 20:45:44\n\nLooks good to me.",
     "created_at": "2010-06-21T20:45:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9059",
     "type": "issue_comment",
@@ -105,7 +105,7 @@ archive/issue_comments_084057.json:
 }
 ```
 
-Attachment
+Attachment [trac_9059.patch](tarball://root/attachments/some-uuid/ticket9059/trac_9059.patch) by rlm created at 2010-06-21 20:45:44
 
 Looks good to me.
 

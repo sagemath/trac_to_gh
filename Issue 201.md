@@ -257,7 +257,7 @@ Excellent, thanks!
 archive/issue_comments_000907.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [options.h](tarball://root/attachments/some-uuid/ticket201/options.h) by was created at 2007-08-17 14:35:10",
     "created_at": "2007-08-17T14:35:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/201",
     "type": "issue_comment",
@@ -266,7 +266,7 @@ archive/issue_comments_000907.json:
 }
 ```
 
-Attachment
+Attachment [options.h](tarball://root/attachments/some-uuid/ticket201/options.h) by was created at 2007-08-17 14:35:10
 
 
 
@@ -275,7 +275,7 @@ Attachment
 archive/issue_comments_000908.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [realroots.cc](tarball://root/attachments/some-uuid/ticket201/realroots.cc) by was created at 2007-08-18 21:18:23",
     "created_at": "2007-08-18T21:18:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/201",
     "type": "issue_comment",
@@ -284,7 +284,7 @@ archive/issue_comments_000908.json:
 }
 ```
 
-Attachment
+Attachment [realroots.cc](tarball://root/attachments/some-uuid/ticket201/realroots.cc) by was created at 2007-08-18 21:18:23
 
 
 

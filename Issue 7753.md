@@ -174,7 +174,7 @@ Updated timings w.r.t. #7754 which is already in Sage
 archive/issue_comments_066776.json:
 ```json
 {
-    "body": "Attachment\n\nBy now this code is tested a lot, at least for finite Weyl groups, and\nthe previous reviewer comments were addressed. I am changing the\nstatus to positive review.",
+    "body": "Attachment [trac_7753_root_systems-bruhat_order-nt.patch](tarball://root/attachments/some-uuid/ticket7753/trac_7753_root_systems-bruhat_order-nt.patch) by bump created at 2010-01-07 14:18:37\n\nBy now this code is tested a lot, at least for finite Weyl groups, and\nthe previous reviewer comments were addressed. I am changing the\nstatus to positive review.",
     "created_at": "2010-01-07T14:18:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7753",
     "type": "issue_comment",
@@ -183,7 +183,7 @@ archive/issue_comments_066776.json:
 }
 ```
 
-Attachment
+Attachment [trac_7753_root_systems-bruhat_order-nt.patch](tarball://root/attachments/some-uuid/ticket7753/trac_7753_root_systems-bruhat_order-nt.patch) by bump created at 2010-01-07 14:18:37
 
 By now this code is tested a lot, at least for finite Weyl groups, and
 the previous reviewer comments were addressed. I am changing the

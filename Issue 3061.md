@@ -115,7 +115,7 @@ Changing status from new to assigned.
 archive/issue_comments_021134.json:
 ```json
 {
-    "body": "Attachment\n\nTested on OSX & Linux. It works:\n\n```\nmabshoff@sage:~$ ln -s /scratch/mabshoff/release-cycle/sage-3.0.1.alpha1/sage foo\nmabshoff@sage:~$ ls -al foo\nlrwxrwxrwx 1 mabshoff 1090 54 2008-04-29 22:37 foo -> /scratch/mabshoff/release-cycle/sage-3.0.1.alpha1/sage\nmabshoff@sage:~$ ./foo\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0.1.alpha0, Release Date: 2008-04-26                |\n| Type notebook() for the GUI, and license() for information.        |\nsage:\nExiting SAGE (CPU time 0m0.01s, Wall time 0m1.41s).\n```\n\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_3061.patch](tarball://root/attachments/some-uuid/ticket3061/trac_3061.patch) by mabshoff created at 2008-04-30 05:43:54\n\nTested on OSX & Linux. It works:\n\n```\nmabshoff@sage:~$ ln -s /scratch/mabshoff/release-cycle/sage-3.0.1.alpha1/sage foo\nmabshoff@sage:~$ ls -al foo\nlrwxrwxrwx 1 mabshoff 1090 54 2008-04-29 22:37 foo -> /scratch/mabshoff/release-cycle/sage-3.0.1.alpha1/sage\nmabshoff@sage:~$ ./foo\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0.1.alpha0, Release Date: 2008-04-26                |\n| Type notebook() for the GUI, and license() for information.        |\nsage:\nExiting SAGE (CPU time 0m0.01s, Wall time 0m1.41s).\n```\n\n\nCheers,\n\nMichael",
     "created_at": "2008-04-30T05:43:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3061",
     "type": "issue_comment",
@@ -124,7 +124,7 @@ archive/issue_comments_021134.json:
 }
 ```
 
-Attachment
+Attachment [trac_3061.patch](tarball://root/attachments/some-uuid/ticket3061/trac_3061.patch) by mabshoff created at 2008-04-30 05:43:54
 
 Tested on OSX & Linux. It works:
 

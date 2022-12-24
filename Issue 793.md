@@ -68,7 +68,7 @@ See also #965. I've had several requests for this functionality, so it would be 
 archive/issue_comments_004767.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [frobenius.patch](tarball://root/attachments/some-uuid/ticket793/frobenius.patch) by dmharvey created at 2009-03-17 19:17:34",
     "created_at": "2009-03-17T19:17:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/793",
     "type": "issue_comment",
@@ -77,7 +77,7 @@ archive/issue_comments_004767.json:
 }
 ```
 
-Attachment
+Attachment [frobenius.patch](tarball://root/attachments/some-uuid/ticket793/frobenius.patch) by dmharvey created at 2009-03-17 19:17:34
 
 
 
@@ -312,7 +312,7 @@ gsw
 archive/issue_comments_004778.json:
 ```json
 {
-    "body": "Attachment\n\nLet's try again. New patch should be applied on top of the old.\n\nGeorg: regarding the precision, I am preparing for a talk on Friday, and the slowdown caused by the p-adic precision overestimates actually made a big difference to the presentation.",
+    "body": "Attachment [793.patch](tarball://root/attachments/some-uuid/ticket793/793.patch) by dmharvey created at 2009-04-01 19:28:57\n\nLet's try again. New patch should be applied on top of the old.\n\nGeorg: regarding the precision, I am preparing for a talk on Friday, and the slowdown caused by the p-adic precision overestimates actually made a big difference to the presentation.",
     "created_at": "2009-04-01T19:28:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/793",
     "type": "issue_comment",
@@ -321,7 +321,7 @@ archive/issue_comments_004778.json:
 }
 ```
 
-Attachment
+Attachment [793.patch](tarball://root/attachments/some-uuid/ticket793/793.patch) by dmharvey created at 2009-04-01 19:28:57
 
 Let's try again. New patch should be applied on top of the old.
 

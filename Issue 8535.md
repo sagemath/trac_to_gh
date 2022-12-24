@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8535
 archive/issue_comments_077138.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8535-intervals.patch](tarball://root/attachments/some-uuid/ticket8535/8535-intervals.patch) by robertwb created at 2010-04-28 05:09:38",
     "created_at": "2010-04-28T05:09:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8535",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_077138.json:
 }
 ```
 
-Attachment
+Attachment [8535-intervals.patch](tarball://root/attachments/some-uuid/ticket8535/8535-intervals.patch) by robertwb created at 2010-04-28 05:09:38
 
 
 
@@ -160,7 +160,7 @@ Same as previous, but uses GMP_RNDN rather than GMP_RNDZ
 archive/issue_comments_077145.json:
 ```json
 {
-    "body": "Attachment\n\nPatch attached.",
+    "body": "Attachment [8535-intervals-rndn.patch](tarball://root/attachments/some-uuid/ticket8535/8535-intervals-rndn.patch) by robertwb created at 2010-05-15 21:36:06\n\nPatch attached.",
     "created_at": "2010-05-15T21:36:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8535",
     "type": "issue_comment",
@@ -169,7 +169,7 @@ archive/issue_comments_077145.json:
 }
 ```
 
-Attachment
+Attachment [8535-intervals-rndn.patch](tarball://root/attachments/some-uuid/ticket8535/8535-intervals-rndn.patch) by robertwb created at 2010-05-15 21:36:06
 
 Patch attached.
 

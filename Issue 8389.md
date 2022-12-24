@@ -179,7 +179,7 @@ This is fixed, probably by #10470. I've added a doctest in the parent list() met
 archive/issue_comments_075108.json:
 ```json
 {
-    "body": "Attachment\n\nAdd a doctest to the parent list() method.",
+    "body": "Attachment [sage-trac_8389.patch](tarball://root/attachments/some-uuid/ticket8389/sage-trac_8389.patch) by mjo created at 2012-01-16 02:49:16\n\nAdd a doctest to the parent list() method.",
     "created_at": "2012-01-16T02:49:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8389",
     "type": "issue_comment",
@@ -188,7 +188,7 @@ archive/issue_comments_075108.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac_8389.patch](tarball://root/attachments/some-uuid/ticket8389/sage-trac_8389.patch) by mjo created at 2012-01-16 02:49:16
 
 Add a doctest to the parent list() method.
 

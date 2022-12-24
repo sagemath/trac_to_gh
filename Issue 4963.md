@@ -131,7 +131,7 @@ I did notice that this patch also extends the "Home" page of the notebook which 
 archive/issue_comments_037719.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [notebook-whitespace.patch](tarball://root/attachments/some-uuid/ticket4963/notebook-whitespace.patch) by jason created at 2009-01-21 23:32:25",
     "created_at": "2009-01-21T23:32:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4963",
     "type": "issue_comment",
@@ -140,7 +140,7 @@ archive/issue_comments_037719.json:
 }
 ```
 
-Attachment
+Attachment [notebook-whitespace.patch](tarball://root/attachments/some-uuid/ticket4963/notebook-whitespace.patch) by jason created at 2009-01-21 23:32:25
 
 
 

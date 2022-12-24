@@ -280,7 +280,7 @@ I'll upload the new patch in a few minutes.
 archive/issue_comments_072650.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated patch with corrections",
+    "body": "Attachment [trac_8227_iterated_palindromic_closure_improvement-abm.patch](tarball://root/attachments/some-uuid/ticket8227/trac_8227_iterated_palindromic_closure_improvement-abm.patch) by abmasse created at 2010-02-21 01:57:11\n\nUpdated patch with corrections",
     "created_at": "2010-02-21T01:57:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8227",
     "type": "issue_comment",
@@ -289,7 +289,7 @@ archive/issue_comments_072650.json:
 }
 ```
 
-Attachment
+Attachment [trac_8227_iterated_palindromic_closure_improvement-abm.patch](tarball://root/attachments/some-uuid/ticket8227/trac_8227_iterated_palindromic_closure_improvement-abm.patch) by abmasse created at 2010-02-21 01:57:11
 
 Updated patch with corrections
 
@@ -318,7 +318,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_072652.json:
 ```json
 {
-    "body": "Attachment\n\nApplies over the precedent patch",
+    "body": "Attachment [trac_8227_review-sl.patch](tarball://root/attachments/some-uuid/ticket8227/trac_8227_review-sl.patch) by slabbe created at 2010-02-23 02:43:07\n\nApplies over the precedent patch",
     "created_at": "2010-02-23T02:43:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8227",
     "type": "issue_comment",
@@ -327,7 +327,7 @@ archive/issue_comments_072652.json:
 }
 ```
 
-Attachment
+Attachment [trac_8227_review-sl.patch](tarball://root/attachments/some-uuid/ticket8227/trac_8227_review-sl.patch) by slabbe created at 2010-02-23 02:43:07
 
 Applies over the precedent patch
 

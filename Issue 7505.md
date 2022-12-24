@@ -212,7 +212,7 @@ Small shell script to check the type of C compiler
 archive/issue_comments_063445.json:
 ```json
 {
-    "body": "Attachment\n\nSmall shell script to check the type of C++ compiler",
+    "body": "Attachment [testcc](tarball://root/attachments/some-uuid/ticket7505/testcc) by drkirkby created at 2009-11-20 18:10:43\n\nSmall shell script to check the type of C++ compiler",
     "created_at": "2009-11-20T18:10:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7505",
     "type": "issue_comment",
@@ -221,7 +221,7 @@ archive/issue_comments_063445.json:
 }
 ```
 
-Attachment
+Attachment [testcc](tarball://root/attachments/some-uuid/ticket7505/testcc) by drkirkby created at 2009-11-20 18:10:43
 
 Small shell script to check the type of C++ compiler
 
@@ -232,7 +232,7 @@ Small shell script to check the type of C++ compiler
 archive/issue_comments_063446.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [testcxx](tarball://root/attachments/some-uuid/ticket7505/testcxx) by drkirkby created at 2009-11-20 18:14:45",
     "created_at": "2009-11-20T18:14:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7505",
     "type": "issue_comment",
@@ -241,7 +241,7 @@ archive/issue_comments_063446.json:
 }
 ```
 
-Attachment
+Attachment [testcxx](tarball://root/attachments/some-uuid/ticket7505/testcxx) by drkirkby created at 2009-11-20 18:14:45
 
 
 
@@ -527,7 +527,7 @@ Dave
 archive/issue_comments_063459.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated 'install' scipt which copies testcc.sh and testcxx.sh to $SAGE_LOCAL/bin",
+    "body": "Attachment [install](tarball://root/attachments/some-uuid/ticket7505/install) by drkirkby created at 2009-12-08 23:28:25\n\nUpdated 'install' scipt which copies testcc.sh and testcxx.sh to $SAGE_LOCAL/bin",
     "created_at": "2009-12-08T23:28:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7505",
     "type": "issue_comment",
@@ -536,7 +536,7 @@ archive/issue_comments_063459.json:
 }
 ```
 
-Attachment
+Attachment [install](tarball://root/attachments/some-uuid/ticket7505/install) by drkirkby created at 2009-12-08 23:28:25
 
 Updated 'install' scipt which copies testcc.sh and testcxx.sh to $SAGE_LOCAL/bin
 
@@ -547,7 +547,7 @@ Updated 'install' scipt which copies testcc.sh and testcxx.sh to $SAGE_LOCAL/bin
 archive/issue_comments_063460.json:
 ```json
 {
-    "body": "Attachment\n\nPatch, showing changes between the old an new versions of the install script",
+    "body": "Attachment [install.patch](tarball://root/attachments/some-uuid/ticket7505/install.patch) by drkirkby created at 2009-12-08 23:29:07\n\nPatch, showing changes between the old an new versions of the install script",
     "created_at": "2009-12-08T23:29:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7505",
     "type": "issue_comment",
@@ -556,7 +556,7 @@ archive/issue_comments_063460.json:
 }
 ```
 
-Attachment
+Attachment [install.patch](tarball://root/attachments/some-uuid/ticket7505/install.patch) by drkirkby created at 2009-12-08 23:29:07
 
 Patch, showing changes between the old an new versions of the install script
 
@@ -677,7 +677,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_063465.json:
 ```json
 {
-    "body": "Attachment\n\nPeter Jeremy has found a cleaner way of testing the compiler, which I intend using. It makes use of the pre-processor in exactly the same way, but it is simpler to maintain, they way Peter wrote it. \n\nThis needs a bit of further testing, so I've stuck it back to 'needs work' for now. Then hopefully it can be reviewed when I've uploaded a couple of revised versions of testcc.sh and testcxx.sh\n\nDave",
+    "body": "Attachment [trac_7505.patch](tarball://root/attachments/some-uuid/ticket7505/trac_7505.patch) by drkirkby created at 2009-12-30 02:07:36\n\nPeter Jeremy has found a cleaner way of testing the compiler, which I intend using. It makes use of the pre-processor in exactly the same way, but it is simpler to maintain, they way Peter wrote it. \n\nThis needs a bit of further testing, so I've stuck it back to 'needs work' for now. Then hopefully it can be reviewed when I've uploaded a couple of revised versions of testcc.sh and testcxx.sh\n\nDave",
     "created_at": "2009-12-30T02:07:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7505",
     "type": "issue_comment",
@@ -686,7 +686,7 @@ archive/issue_comments_063465.json:
 }
 ```
 
-Attachment
+Attachment [trac_7505.patch](tarball://root/attachments/some-uuid/ticket7505/trac_7505.patch) by drkirkby created at 2009-12-30 02:07:36
 
 Peter Jeremy has found a cleaner way of testing the compiler, which I intend using. It makes use of the pre-processor in exactly the same way, but it is simpler to maintain, they way Peter wrote it. 
 
@@ -701,7 +701,7 @@ Dave
 archive/issue_comments_063466.json:
 ```json
 {
-    "body": "Attachment\n\nSimpler version of file to check the c-compiler",
+    "body": "Attachment [testcc.sh](tarball://root/attachments/some-uuid/ticket7505/testcc.sh) by drkirkby created at 2009-12-30 15:57:35\n\nSimpler version of file to check the c-compiler",
     "created_at": "2009-12-30T15:57:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7505",
     "type": "issue_comment",
@@ -710,7 +710,7 @@ archive/issue_comments_063466.json:
 }
 ```
 
-Attachment
+Attachment [testcc.sh](tarball://root/attachments/some-uuid/ticket7505/testcc.sh) by drkirkby created at 2009-12-30 15:57:35
 
 Simpler version of file to check the c-compiler
 
@@ -721,7 +721,7 @@ Simpler version of file to check the c-compiler
 archive/issue_comments_063467.json:
 ```json
 {
-    "body": "Attachment\n\nSimpler version of file to check the C++ compiler",
+    "body": "Attachment [testcxx.sh](tarball://root/attachments/some-uuid/ticket7505/testcxx.sh) by drkirkby created at 2009-12-30 15:58:08\n\nSimpler version of file to check the C++ compiler",
     "created_at": "2009-12-30T15:58:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7505",
     "type": "issue_comment",
@@ -730,7 +730,7 @@ archive/issue_comments_063467.json:
 }
 ```
 
-Attachment
+Attachment [testcxx.sh](tarball://root/attachments/some-uuid/ticket7505/testcxx.sh) by drkirkby created at 2009-12-30 15:58:08
 
 Simpler version of file to check the C++ compiler
 
@@ -779,7 +779,7 @@ Dave
 archive/issue_comments_063470.json:
 ```json
 {
-    "body": "Attachment\n\nA patch to be used in place of Martin's earlier version.",
+    "body": "Attachment [trac_7505-test-scripts.patch](tarball://root/attachments/some-uuid/ticket7505/trac_7505-test-scripts.patch) by drkirkby created at 2009-12-30 22:23:03\n\nA patch to be used in place of Martin's earlier version.",
     "created_at": "2009-12-30T22:23:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7505",
     "type": "issue_comment",
@@ -788,7 +788,7 @@ archive/issue_comments_063470.json:
 }
 ```
 
-Attachment
+Attachment [trac_7505-test-scripts.patch](tarball://root/attachments/some-uuid/ticket7505/trac_7505-test-scripts.patch) by drkirkby created at 2009-12-30 22:23:03
 
 A patch to be used in place of Martin's earlier version.
 
@@ -968,7 +968,7 @@ based on Sage 4.3
 archive/issue_comments_063475.json:
 ```json
 {
-    "body": "Attachment\n\nversion of kirkby's patch suitable for applying to spkg/base repository",
+    "body": "Attachment [trac_7505-revision-control.patch](tarball://root/attachments/some-uuid/ticket7505/trac_7505-revision-control.patch) by mvngu created at 2009-12-31 18:49:07\n\nversion of kirkby's patch suitable for applying to spkg/base repository",
     "created_at": "2009-12-31T18:49:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7505",
     "type": "issue_comment",
@@ -977,7 +977,7 @@ archive/issue_comments_063475.json:
 }
 ```
 
-Attachment
+Attachment [trac_7505-revision-control.patch](tarball://root/attachments/some-uuid/ticket7505/trac_7505-revision-control.patch) by mvngu created at 2009-12-31 18:49:07
 
 version of kirkby's patch suitable for applying to spkg/base repository
 
@@ -1006,7 +1006,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_063477.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7505-scripts.patch](tarball://root/attachments/some-uuid/ticket7505/trac_7505-scripts.patch) by mvngu created at 2009-12-31 19:23:06",
     "created_at": "2009-12-31T19:23:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7505",
     "type": "issue_comment",
@@ -1015,7 +1015,7 @@ archive/issue_comments_063477.json:
 }
 ```
 
-Attachment
+Attachment [trac_7505-scripts.patch](tarball://root/attachments/some-uuid/ticket7505/trac_7505-scripts.patch) by mvngu created at 2009-12-31 19:23:06
 
 
 
@@ -1835,7 +1835,7 @@ Tests C compiler reading from the command line, not environment variable CC
 archive/issue_comments_063484.json:
 ```json
 {
-    "body": "Attachment\n\nTests C++ compiler reading from the command line, not environment variable CXX",
+    "body": "Attachment [testcc.2.sh](tarball://root/attachments/some-uuid/ticket7505/testcc.2.sh) by drkirkby created at 2009-12-31 19:51:51\n\nTests C++ compiler reading from the command line, not environment variable CXX",
     "created_at": "2009-12-31T19:51:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7505",
     "type": "issue_comment",
@@ -1844,7 +1844,7 @@ archive/issue_comments_063484.json:
 }
 ```
 
-Attachment
+Attachment [testcc.2.sh](tarball://root/attachments/some-uuid/ticket7505/testcc.2.sh) by drkirkby created at 2009-12-31 19:51:51
 
 Tests C++ compiler reading from the command line, not environment variable CXX
 
@@ -1855,7 +1855,7 @@ Tests C++ compiler reading from the command line, not environment variable CXX
 archive/issue_comments_063485.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached the revised versions. I did not overwrite the file names, and note they now have a 2 appended to the names, which was done by the trac server, not me.",
+    "body": "Attachment [testcxx.2.sh](tarball://root/attachments/some-uuid/ticket7505/testcxx.2.sh) by drkirkby created at 2009-12-31 19:53:25\n\nI've attached the revised versions. I did not overwrite the file names, and note they now have a 2 appended to the names, which was done by the trac server, not me.",
     "created_at": "2009-12-31T19:53:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7505",
     "type": "issue_comment",
@@ -1864,7 +1864,7 @@ archive/issue_comments_063485.json:
 }
 ```
 
-Attachment
+Attachment [testcxx.2.sh](tarball://root/attachments/some-uuid/ticket7505/testcxx.2.sh) by drkirkby created at 2009-12-31 19:53:25
 
 I've attached the revised versions. I did not overwrite the file names, and note they now have a 2 appended to the names, which was done by the trac server, not me.
 
@@ -2003,7 +2003,7 @@ PS: If you want to replace an earlier version of an attachment with the same nam
 archive/issue_comments_063490.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [testcc.3.sh](tarball://root/attachments/some-uuid/ticket7505/testcc.3.sh) by drkirkby created at 2009-12-31 20:40:43",
     "created_at": "2009-12-31T20:40:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7505",
     "type": "issue_comment",
@@ -2012,7 +2012,7 @@ archive/issue_comments_063490.json:
 }
 ```
 
-Attachment
+Attachment [testcc.3.sh](tarball://root/attachments/some-uuid/ticket7505/testcc.3.sh) by drkirkby created at 2009-12-31 20:40:43
 
 
 

@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9821
 archive/issue_comments_096830.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9821.patch](tarball://root/attachments/some-uuid/ticket9821/trac_9821.patch) by fwclarke created at 2010-08-27 11:59:50",
     "created_at": "2010-08-27T11:59:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9820",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_096830.json:
 }
 ```
 
-Attachment
+Attachment [trac_9821.patch](tarball://root/attachments/some-uuid/ticket9821/trac_9821.patch) by fwclarke created at 2010-08-27 11:59:50
 
 
 
@@ -161,7 +161,7 @@ replaces previous patch
 archive/issue_comments_096836.json:
 ```json
 {
-    "body": "Attachment\n\nThis has been fixed by #9443.  This ticket was actually a triplicate!\n\nThe bug in `is_integral_domain` for generic quotient rings is now the subject of #10219.",
+    "body": "Attachment [trace_9821-replacement.patch](tarball://root/attachments/some-uuid/ticket9821/trace_9821-replacement.patch) by fwclarke created at 2010-11-05 12:22:45\n\nThis has been fixed by #9443.  This ticket was actually a triplicate!\n\nThe bug in `is_integral_domain` for generic quotient rings is now the subject of #10219.",
     "created_at": "2010-11-05T12:22:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9820",
     "type": "issue_comment",
@@ -170,7 +170,7 @@ archive/issue_comments_096836.json:
 }
 ```
 
-Attachment
+Attachment [trace_9821-replacement.patch](tarball://root/attachments/some-uuid/ticket9821/trace_9821-replacement.patch) by fwclarke created at 2010-11-05 12:22:45
 
 This has been fixed by #9443.  This ticket was actually a triplicate!
 

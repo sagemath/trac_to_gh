@@ -53,7 +53,7 @@ Changing status from new to assigned.
 archive/issue_comments_038197.json:
 ```json
 {
-    "body": "Attachment\n\nI don't have a Sun to test this on, so I'm taking for granted that the actual command being run is correct. However, I can verify that it will only be run on a Sun, which is the goal. So positive review with Michael's assurance that it's the correct usage. :)",
+    "body": "Attachment [trac_5011_get_memory.patch](tarball://root/attachments/some-uuid/ticket5011/trac_5011_get_memory.patch) by craigcitro created at 2009-01-18 12:36:35\n\nI don't have a Sun to test this on, so I'm taking for granted that the actual command being run is correct. However, I can verify that it will only be run on a Sun, which is the goal. So positive review with Michael's assurance that it's the correct usage. :)",
     "created_at": "2009-01-18T12:36:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5011",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_038197.json:
 }
 ```
 
-Attachment
+Attachment [trac_5011_get_memory.patch](tarball://root/attachments/some-uuid/ticket5011/trac_5011_get_memory.patch) by craigcitro created at 2009-01-18 12:36:35
 
 I don't have a Sun to test this on, so I'm taking for granted that the actual command being run is correct. However, I can verify that it will only be run on a Sun, which is the goal. So positive review with Michael's assurance that it's the correct usage. :)
 

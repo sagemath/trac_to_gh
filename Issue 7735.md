@@ -87,7 +87,7 @@ Patch to correct the problem and a test case
 archive/issue_comments_066466.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [interreduced.patch](tarball://root/attachments/some-uuid/ticket7735/interreduced.patch) by lftabera created at 2009-12-18 13:44:09",
     "created_at": "2009-12-18T13:44:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7735",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_066466.json:
 }
 ```
 
-Attachment
+Attachment [interreduced.patch](tarball://root/attachments/some-uuid/ticket7735/interreduced.patch) by lftabera created at 2009-12-18 13:44:09
 
 
 

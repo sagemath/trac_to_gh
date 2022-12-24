@@ -197,7 +197,7 @@ The other ticket (with the pari <--> python long issue) is #864.
 archive/issue_comments_002324.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [convert.hg](tarball://root/attachments/some-uuid/ticket467/convert.hg) by craigcitro created at 2007-10-12 19:49:47",
     "created_at": "2007-10-12T19:49:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/467",
     "type": "issue_comment",
@@ -206,7 +206,7 @@ archive/issue_comments_002324.json:
 }
 ```
 
-Attachment
+Attachment [convert.hg](tarball://root/attachments/some-uuid/ticket467/convert.hg) by craigcitro created at 2007-10-12 19:49:47
 
 
 

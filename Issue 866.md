@@ -51,7 +51,7 @@ Changing status from new to assigned.
 archive/issue_comments_005351.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [full-ntl-bundle.hg](tarball://root/attachments/some-uuid/ticket866/full-ntl-bundle.hg) by craigcitro created at 2007-10-12 21:11:57",
     "created_at": "2007-10-12T21:11:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/866",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_005351.json:
 }
 ```
 
-Attachment
+Attachment [full-ntl-bundle.hg](tarball://root/attachments/some-uuid/ticket866/full-ntl-bundle.hg) by craigcitro created at 2007-10-12 21:11:57
 
 
 
@@ -145,7 +145,7 @@ Michael
 archive/issue_comments_005354.json:
 ```json
 {
-    "body": "Attachment\n\nfiix the __repr__ leak",
+    "body": "Attachment [Sage-2.8.6-fix-__repr__-memleak-in-ntl_ZZ_pX.patch](tarball://root/attachments/some-uuid/ticket866/Sage-2.8.6-fix-__repr__-memleak-in-ntl_ZZ_pX.patch) by mabshoff created at 2007-10-13 02:03:10\n\nfiix the __repr__ leak",
     "created_at": "2007-10-13T02:03:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/866",
     "type": "issue_comment",
@@ -154,7 +154,7 @@ archive/issue_comments_005354.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.8.6-fix-__repr__-memleak-in-ntl_ZZ_pX.patch](tarball://root/attachments/some-uuid/ticket866/Sage-2.8.6-fix-__repr__-memleak-in-ntl_ZZ_pX.patch) by mabshoff created at 2007-10-13 02:03:10
 
 fiix the __repr__ leak
 

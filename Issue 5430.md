@@ -194,7 +194,7 @@ If there is an issue with rational reconstruction, I'd say make that a separate 
 archive/issue_comments_042018.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5430.patch](tarball://root/attachments/some-uuid/ticket5430/5430.patch) by kedlaya created at 2009-05-21 06:14:30",
     "created_at": "2009-05-21T06:14:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5430",
     "type": "issue_comment",
@@ -203,7 +203,7 @@ archive/issue_comments_042018.json:
 }
 ```
 
-Attachment
+Attachment [5430.patch](tarball://root/attachments/some-uuid/ticket5430/5430.patch) by kedlaya created at 2009-05-21 06:14:30
 
 
 
@@ -212,7 +212,7 @@ Attachment
 archive/issue_comments_042019.json:
 ```json
 {
-    "body": "Attachment\n\nSee attached patches. The first one eliminates all casting to/from QQ (I think). The second one adds a doctest to confirm that the above example now works:\n\n```\nsage: R.<x> = QQ['x']\nsage: H = HyperellipticCurve(x*(x-1)*(x+9))\nsage: K = Qp(7,10)\nsage: HK = H.change_ring(K)\nsage: import sage.schemes.elliptic_curves.monsky_washnitzer as mw\nsage: M_frob, forms = mw.matrix_of_frobenius_hyperelliptic(HK)\nsage: w = HK.invariant_differential()\nsage: x,y = HK.monsky_washnitzer_gens()\nsage: f = forms[0]\nsage: S= HK(9,36)\nsage: Q = HK.teichmuller(S)\nsage: P = HK(-1,4)\nsage: b = x*w*w._coeff.parent()(f)\nsage: HK.coleman_integral(b,P,Q)\n7 + 7^2 + 4*7^3 + 5*7^4 + 3*7^5 + 7^6 + 5*7^7 + 3*7^8 + 4*7^9 + 4*7^10 + O(7^11)\n```\n",
+    "body": "Attachment [5430-2.patch](tarball://root/attachments/some-uuid/ticket5430/5430-2.patch) by kedlaya created at 2009-05-21 06:24:04\n\nSee attached patches. The first one eliminates all casting to/from QQ (I think). The second one adds a doctest to confirm that the above example now works:\n\n```\nsage: R.<x> = QQ['x']\nsage: H = HyperellipticCurve(x*(x-1)*(x+9))\nsage: K = Qp(7,10)\nsage: HK = H.change_ring(K)\nsage: import sage.schemes.elliptic_curves.monsky_washnitzer as mw\nsage: M_frob, forms = mw.matrix_of_frobenius_hyperelliptic(HK)\nsage: w = HK.invariant_differential()\nsage: x,y = HK.monsky_washnitzer_gens()\nsage: f = forms[0]\nsage: S= HK(9,36)\nsage: Q = HK.teichmuller(S)\nsage: P = HK(-1,4)\nsage: b = x*w*w._coeff.parent()(f)\nsage: HK.coleman_integral(b,P,Q)\n7 + 7^2 + 4*7^3 + 5*7^4 + 3*7^5 + 7^6 + 5*7^7 + 3*7^8 + 4*7^9 + 4*7^10 + O(7^11)\n```\n",
     "created_at": "2009-05-21T06:24:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5430",
     "type": "issue_comment",
@@ -221,7 +221,7 @@ archive/issue_comments_042019.json:
 }
 ```
 
-Attachment
+Attachment [5430-2.patch](tarball://root/attachments/some-uuid/ticket5430/5430-2.patch) by kedlaya created at 2009-05-21 06:24:04
 
 See attached patches. The first one eliminates all casting to/from QQ (I think). The second one adds a doctest to confirm that the above example now works:
 
@@ -251,7 +251,7 @@ sage: HK.coleman_integral(b,P,Q)
 archive/issue_comments_042020.json:
 ```json
 {
-    "body": "Attachment\n\nRebased against the revised patch to #5948. You may ignore the previous two patches.",
+    "body": "Attachment [5430-v2.patch](tarball://root/attachments/some-uuid/ticket5430/5430-v2.patch) by kedlaya created at 2009-05-22 21:09:20\n\nRebased against the revised patch to #5948. You may ignore the previous two patches.",
     "created_at": "2009-05-22T21:09:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5430",
     "type": "issue_comment",
@@ -260,7 +260,7 @@ archive/issue_comments_042020.json:
 }
 ```
 
-Attachment
+Attachment [5430-v2.patch](tarball://root/attachments/some-uuid/ticket5430/5430-v2.patch) by kedlaya created at 2009-05-22 21:09:20
 
 Rebased against the revised patch to #5948. You may ignore the previous two patches.
 

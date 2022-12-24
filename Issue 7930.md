@@ -279,7 +279,7 @@ exported against 4.4.4.alpha0
 archive/issue_comments_069046.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good & tests fine on 4.4.4.alpha0.",
+    "body": "Attachment [trac_7930.patch](tarball://root/attachments/some-uuid/ticket7930/trac_7930.patch) by cremona created at 2010-06-24 20:37:21\n\nLooks good & tests fine on 4.4.4.alpha0.",
     "created_at": "2010-06-24T20:37:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7930",
     "type": "issue_comment",
@@ -288,7 +288,7 @@ archive/issue_comments_069046.json:
 }
 ```
 
-Attachment
+Attachment [trac_7930.patch](tarball://root/attachments/some-uuid/ticket7930/trac_7930.patch) by cremona created at 2010-06-24 20:37:21
 
 Looks good & tests fine on 4.4.4.alpha0.
 

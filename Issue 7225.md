@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7225
 archive/issue_comments_059922.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [introduction.rst](tarball://root/attachments/some-uuid/ticket7225/introduction.rst) by Loufer created at 2009-10-15 02:43:06",
     "created_at": "2009-10-15T02:43:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7225",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_059922.json:
 }
 ```
 
-Attachment
+Attachment [introduction.rst](tarball://root/attachments/some-uuid/ticket7225/introduction.rst) by Loufer created at 2009-10-15 02:43:06
 
 
 
@@ -49,7 +49,7 @@ Attachment
 archive/issue_comments_059923.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [introduction.2.rst](tarball://root/attachments/some-uuid/ticket7225/introduction.2.rst) by pdenapo created at 2010-10-24 14:21:24",
     "created_at": "2010-10-24T14:21:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7225",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_059923.json:
 }
 ```
 
-Attachment
+Attachment [introduction.2.rst](tarball://root/attachments/some-uuid/ticket7225/introduction.2.rst) by pdenapo created at 2010-10-24 14:21:24
 
 
 
@@ -85,7 +85,7 @@ In my opinion, the original tanslation (first attachment) was too literal, and i
 archive/issue_comments_059925.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [introduction.3.rst](tarball://root/attachments/some-uuid/ticket7225/introduction.3.rst) by pdenapo created at 2010-10-24 19:31:49",
     "created_at": "2010-10-24T19:31:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7225",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_059925.json:
 }
 ```
 
-Attachment
+Attachment [introduction.3.rst](tarball://root/attachments/some-uuid/ticket7225/introduction.3.rst) by pdenapo created at 2010-10-24 19:31:49
 
 
 

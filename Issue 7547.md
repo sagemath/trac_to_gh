@@ -214,7 +214,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_064112.json:
 ```json
 {
-    "body": "Attachment\n\nNew timing for the same test: 1.22s. It's useful to sleep!",
+    "body": "Attachment [trac_7547-has_multiple_edges.patch](tarball://root/attachments/some-uuid/ticket7547/trac_7547-has_multiple_edges.patch) by ylchapuy created at 2009-11-28 10:22:31\n\nNew timing for the same test: 1.22s. It's useful to sleep!",
     "created_at": "2009-11-28T10:22:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7547",
     "type": "issue_comment",
@@ -223,7 +223,7 @@ archive/issue_comments_064112.json:
 }
 ```
 
-Attachment
+Attachment [trac_7547-has_multiple_edges.patch](tarball://root/attachments/some-uuid/ticket7547/trac_7547-has_multiple_edges.patch) by ylchapuy created at 2009-11-28 10:22:31
 
 New timing for the same test: 1.22s. It's useful to sleep!
 

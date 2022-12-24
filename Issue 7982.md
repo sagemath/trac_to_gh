@@ -276,7 +276,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_069690.json:
 ```json
 {
-    "body": "Attachment\n\nMade a new spkg:\n\n[http://boxen.math.washington.edu/home/jsp/ports/fortran-20100118.p0.patch](http://boxen.math.washington.edu/home/jsp/ports/fortran-20100118.p0.patch)\n\n\n\n```\njaap@opensolaris:~/Downloads/sage-4.3.3.alpha1$ cat local/bin/sage_fortran \n#!/bin/sh \n\n/usr/local/gcc-4.4.2/bin/gfortran -m64 -fPIC $@\n\n```\n\n\nAnd on hawk:\n\n\n```\n-bash-3.2$ file local/lib/*fortran*\nlocal/lib/libgfortran.so:       ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\n-bash-3.2$ \n\n```\n\n\nJaap",
+    "body": "Attachment [fortran-20100118.p0.patch](tarball://root/attachments/some-uuid/ticket7982/fortran-20100118.p0.patch) by jsp created at 2010-02-22 23:23:30\n\nMade a new spkg:\n\n[http://boxen.math.washington.edu/home/jsp/ports/fortran-20100118.p0.patch](http://boxen.math.washington.edu/home/jsp/ports/fortran-20100118.p0.patch)\n\n\n\n```\njaap@opensolaris:~/Downloads/sage-4.3.3.alpha1$ cat local/bin/sage_fortran \n#!/bin/sh \n\n/usr/local/gcc-4.4.2/bin/gfortran -m64 -fPIC $@\n\n```\n\n\nAnd on hawk:\n\n\n```\n-bash-3.2$ file local/lib/*fortran*\nlocal/lib/libgfortran.so:       ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\n-bash-3.2$ \n\n```\n\n\nJaap",
     "created_at": "2010-02-22T23:23:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7982",
     "type": "issue_comment",
@@ -285,7 +285,7 @@ archive/issue_comments_069690.json:
 }
 ```
 
-Attachment
+Attachment [fortran-20100118.p0.patch](tarball://root/attachments/some-uuid/ticket7982/fortran-20100118.p0.patch) by jsp created at 2010-02-22 23:23:30
 
 Made a new spkg:
 

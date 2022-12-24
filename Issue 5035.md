@@ -49,7 +49,7 @@ this is against sage-3.3.alpha0
 archive/issue_comments_038339.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5035.patch](tarball://root/attachments/some-uuid/ticket5035/trac_5035.patch) by was created at 2009-01-20 07:16:39",
     "created_at": "2009-01-20T07:16:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5035",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_038339.json:
 }
 ```
 
-Attachment
+Attachment [trac_5035.patch](tarball://root/attachments/some-uuid/ticket5035/trac_5035.patch) by was created at 2009-01-20 07:16:39
 
 
 
@@ -104,7 +104,7 @@ exit code: 1024
 archive/issue_comments_038341.json:
 ```json
 {
-    "body": "Attachment\n\nWith both patches applied, we have 100% coverage, and the examples are nice. Positive review.",
+    "body": "Attachment [trac_5035_part2.patch](tarball://root/attachments/some-uuid/ticket5035/trac_5035_part2.patch) by ddrake created at 2009-01-20 07:37:09\n\nWith both patches applied, we have 100% coverage, and the examples are nice. Positive review.",
     "created_at": "2009-01-20T07:37:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5035",
     "type": "issue_comment",
@@ -113,7 +113,7 @@ archive/issue_comments_038341.json:
 }
 ```
 
-Attachment
+Attachment [trac_5035_part2.patch](tarball://root/attachments/some-uuid/ticket5035/trac_5035_part2.patch) by ddrake created at 2009-01-20 07:37:09
 
 With both patches applied, we have 100% coverage, and the examples are nice. Positive review.
 

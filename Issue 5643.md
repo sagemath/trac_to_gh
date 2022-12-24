@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5643
 archive/issue_comments_044074.json:
 ```json
 {
-    "body": "Attachment\n\nYep, the Sphinx formatting fix looks good. Patch applied fine against Sage 3.4.1.alpha0. Positive review.",
+    "body": "Attachment [steenrod_algebra_doctest.patch](tarball://root/attachments/some-uuid/ticket5643/steenrod_algebra_doctest.patch) by mvngu created at 2009-03-31 05:43:30\n\nYep, the Sphinx formatting fix looks good. Patch applied fine against Sage 3.4.1.alpha0. Positive review.",
     "created_at": "2009-03-31T05:43:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5643",
     "type": "issue_comment",
@@ -41,7 +41,7 @@ archive/issue_comments_044074.json:
 }
 ```
 
-Attachment
+Attachment [steenrod_algebra_doctest.patch](tarball://root/attachments/some-uuid/ticket5643/steenrod_algebra_doctest.patch) by mvngu created at 2009-03-31 05:43:30
 
 Yep, the Sphinx formatting fix looks good. Patch applied fine against Sage 3.4.1.alpha0. Positive review.
 

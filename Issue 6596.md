@@ -210,7 +210,7 @@ instead.
 archive/issue_comments_054001.json:
 ```json
 {
-    "body": "Attachment\n\nshould apply cleanly against 4.1.1",
+    "body": "Attachment [libsingular_refactoring.patch](tarball://root/attachments/some-uuid/ticket6596/libsingular_refactoring.patch) by malb created at 2009-08-19 11:42:45\n\nshould apply cleanly against 4.1.1",
     "created_at": "2009-08-19T11:42:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6596",
     "type": "issue_comment",
@@ -219,7 +219,7 @@ archive/issue_comments_054001.json:
 }
 ```
 
-Attachment
+Attachment [libsingular_refactoring.patch](tarball://root/attachments/some-uuid/ticket6596/libsingular_refactoring.patch) by malb created at 2009-08-19 11:42:45
 
 should apply cleanly against 4.1.1
 
@@ -248,7 +248,7 @@ I rebased and updated the patch.
 archive/issue_comments_054003.json:
 ```json
 {
-    "body": "Attachment\n\napply after the previous patch",
+    "body": "Attachment [trac_6596-referee.patch](tarball://root/attachments/some-uuid/ticket6596/trac_6596-referee.patch) by AlexGhitza created at 2009-08-27 00:53:23\n\napply after the previous patch",
     "created_at": "2009-08-27T00:53:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6596",
     "type": "issue_comment",
@@ -257,7 +257,7 @@ archive/issue_comments_054003.json:
 }
 ```
 
-Attachment
+Attachment [trac_6596-referee.patch](tarball://root/attachments/some-uuid/ticket6596/trac_6596-referee.patch) by AlexGhitza created at 2009-08-27 00:53:23
 
 apply after the previous patch
 

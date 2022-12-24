@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2580
 archive/issue_comments_017648.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2580-graph_backends.patch](tarball://root/attachments/some-uuid/ticket2580/2580-graph_backends.patch) by rlm created at 2008-03-18 02:00:07",
     "created_at": "2008-03-18T02:00:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2580",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_017648.json:
 }
 ```
 
-Attachment
+Attachment [2580-graph_backends.patch](tarball://root/attachments/some-uuid/ticket2580/2580-graph_backends.patch) by rlm created at 2008-03-18 02:00:07
 
 
 
@@ -49,7 +49,7 @@ Attachment
 archive/issue_comments_017649.json:
 ```json
 {
-    "body": "Attachment\n\nMake sure to apply both patches before building. :)",
+    "body": "Attachment [2580-graph_backends_added_files.patch](tarball://root/attachments/some-uuid/ticket2580/2580-graph_backends_added_files.patch) by rlm created at 2008-03-18 02:01:14\n\nMake sure to apply both patches before building. :)",
     "created_at": "2008-03-18T02:01:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2580",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_017649.json:
 }
 ```
 
-Attachment
+Attachment [2580-graph_backends_added_files.patch](tarball://root/attachments/some-uuid/ticket2580/2580-graph_backends_added_files.patch) by rlm created at 2008-03-18 02:01:14
 
 Make sure to apply both patches before building. :)
 

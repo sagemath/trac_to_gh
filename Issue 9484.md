@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9484
 archive/issue_comments_091059.json:
 ```json
 {
-    "body": "Attachment\n\nI picked a slightly different example.",
+    "body": "Attachment [trac_9484-implicit-plot3d-csg-example.patch](tarball://root/attachments/some-uuid/ticket9484/trac_9484-implicit-plot3d-csg-example.patch) by cwitty created at 2010-07-18 02:54:05\n\nI picked a slightly different example.",
     "created_at": "2010-07-18T02:54:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9484",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_091059.json:
 }
 ```
 
-Attachment
+Attachment [trac_9484-implicit-plot3d-csg-example.patch](tarball://root/attachments/some-uuid/ticket9484/trac_9484-implicit-plot3d-csg-example.patch) by cwitty created at 2010-07-18 02:54:05
 
 I picked a slightly different example.
 

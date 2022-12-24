@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9856
 archive/issue_comments_097283.json:
 ```json
 {
-    "body": "Attachment\n\nPatch based on sage 4.5.3 + #7199 (but I don't know if it depends on it).\nPaul, as you did such a good job reviewing the other ticket, I cc'd you.",
+    "body": "Attachment [trac9856-improve_augment_for_sparse_matrices.patch](tarball://root/attachments/some-uuid/ticket9856/trac9856-improve_augment_for_sparse_matrices.patch) by ylchapuy created at 2010-09-22 08:44:57\n\nPatch based on sage 4.5.3 + #7199 (but I don't know if it depends on it).\nPaul, as you did such a good job reviewing the other ticket, I cc'd you.",
     "created_at": "2010-09-22T08:44:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9855",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_097283.json:
 }
 ```
 
-Attachment
+Attachment [trac9856-improve_augment_for_sparse_matrices.patch](tarball://root/attachments/some-uuid/ticket9856/trac9856-improve_augment_for_sparse_matrices.patch) by ylchapuy created at 2010-09-22 08:44:57
 
 Patch based on sage 4.5.3 + #7199 (but I don't know if it depends on it).
 Paul, as you did such a good job reviewing the other ticket, I cc'd you.
@@ -248,7 +248,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_097292.json:
 ```json
 {
-    "body": "Attachment\n\nNice spot, typo fixed. Apply both patches.\n\n    Yann",
+    "body": "Attachment [trac9856-typo_fix.patch](tarball://root/attachments/some-uuid/ticket9856/trac9856-typo_fix.patch) by ylchapuy created at 2010-09-23 00:28:47\n\nNice spot, typo fixed. Apply both patches.\n\n    Yann",
     "created_at": "2010-09-23T00:28:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9855",
     "type": "issue_comment",
@@ -257,7 +257,7 @@ archive/issue_comments_097292.json:
 }
 ```
 
-Attachment
+Attachment [trac9856-typo_fix.patch](tarball://root/attachments/some-uuid/ticket9856/trac9856-typo_fix.patch) by ylchapuy created at 2010-09-23 00:28:47
 
 Nice spot, typo fixed. Apply both patches.
 

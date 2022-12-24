@@ -64,7 +64,7 @@ Changing assignee from boothby to craigcitro.
 archive/issue_comments_034999.json:
 ```json
 {
-    "body": "Attachment\n\nI agree, this file needs a lot of cleanup.\n\nI fixed the one example Tom mentioned above ... lots more needs to be done, but I thought it would be good to close this and open a new series of specific tickets (most of which will probably get handled at SD12 in San Diego).",
+    "body": "Attachment [trac-4650.patch](tarball://root/attachments/some-uuid/ticket4650/trac-4650.patch) by craigcitro created at 2009-01-15 23:08:14\n\nI agree, this file needs a lot of cleanup.\n\nI fixed the one example Tom mentioned above ... lots more needs to be done, but I thought it would be good to close this and open a new series of specific tickets (most of which will probably get handled at SD12 in San Diego).",
     "created_at": "2009-01-15T23:08:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4650",
     "type": "issue_comment",
@@ -73,7 +73,7 @@ archive/issue_comments_034999.json:
 }
 ```
 
-Attachment
+Attachment [trac-4650.patch](tarball://root/attachments/some-uuid/ticket4650/trac-4650.patch) by craigcitro created at 2009-01-15 23:08:14
 
 I agree, this file needs a lot of cleanup.
 

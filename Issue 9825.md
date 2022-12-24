@@ -174,7 +174,7 @@ Refreshed patch, with a doctest.
 archive/issue_comments_096920.json:
 ```json
 {
-    "body": "Attachment\n\nThe fix works and makes sense to me (positive review for that). I've added a doctest (needs review), and rebased the original patch against 4.8.alpha5.\n\nUnfortunately, something is wrong with exceptions at the moment:\n\n\n```\nsage: (a*x).complex_roots()\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1731, 0))\n...\n```\n\n\nand that's fixed by Simon King's patch in #11900, so I've added a dependency there. The milestone update is to match #11900.",
+    "body": "Attachment [sage-trac_9826.patch](tarball://root/attachments/some-uuid/ticket9826/sage-trac_9826.patch) by mjo created at 2012-01-02 14:21:13\n\nThe fix works and makes sense to me (positive review for that). I've added a doctest (needs review), and rebased the original patch against 4.8.alpha5.\n\nUnfortunately, something is wrong with exceptions at the moment:\n\n\n```\nsage: (a*x).complex_roots()\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1731, 0))\n...\n```\n\n\nand that's fixed by Simon King's patch in #11900, so I've added a dependency there. The milestone update is to match #11900.",
     "created_at": "2012-01-02T14:21:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9825",
     "type": "issue_comment",
@@ -183,7 +183,7 @@ archive/issue_comments_096920.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac_9826.patch](tarball://root/attachments/some-uuid/ticket9826/sage-trac_9826.patch) by mjo created at 2012-01-02 14:21:13
 
 The fix works and makes sense to me (positive review for that). I've added a doctest (needs review), and rebased the original patch against 4.8.alpha5.
 
@@ -356,7 +356,7 @@ Same patch with my typo fixed.
 archive/issue_comments_096929.json:
 ```json
 {
-    "body": "Attachment\n\nI guess I should finally fix that typo, huh. The only change is to spell \"uninitialized\" correctly, but I'm uploading a separate patch since it's got a positive review.",
+    "body": "Attachment [sage-trac_9826-typofix.patch](tarball://root/attachments/some-uuid/ticket9826/sage-trac_9826-typofix.patch) by mjo created at 2012-04-24 04:16:22\n\nI guess I should finally fix that typo, huh. The only change is to spell \"uninitialized\" correctly, but I'm uploading a separate patch since it's got a positive review.",
     "created_at": "2012-04-24T04:16:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9825",
     "type": "issue_comment",
@@ -365,7 +365,7 @@ archive/issue_comments_096929.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac_9826-typofix.patch](tarball://root/attachments/some-uuid/ticket9826/sage-trac_9826-typofix.patch) by mjo created at 2012-04-24 04:16:22
 
 I guess I should finally fix that typo, huh. The only change is to spell "uninitialized" correctly, but I'm uploading a separate patch since it's got a positive review.
 

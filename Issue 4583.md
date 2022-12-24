@@ -57,7 +57,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4583
 archive/issue_comments_034369.json:
 ```json
 {
-    "body": "Attachment\n\napply to the local/bin/ scripts repo.",
+    "body": "Attachment [scripts-4583.patch](tarball://root/attachments/some-uuid/ticket4583/scripts-4583.patch) by was created at 2008-11-23 01:57:25\n\napply to the local/bin/ scripts repo.",
     "created_at": "2008-11-23T01:57:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4583",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_034369.json:
 }
 ```
 
-Attachment
+Attachment [scripts-4583.patch](tarball://root/attachments/some-uuid/ticket4583/scripts-4583.patch) by was created at 2008-11-23 01:57:25
 
 apply to the local/bin/ scripts repo.
 
@@ -77,7 +77,7 @@ apply to the local/bin/ scripts repo.
 archive/issue_comments_034370.json:
 ```json
 {
-    "body": "Attachment\n\nthis rolls out using # optional - foo for most of the magma, macaulay2 and mathematica doctests.  It changes a *LOT* of files.  Note -- the optional doctests for those components may not pass (e.g., the magma ones won't), because it is already known that many optional doctests have bitrotted.  Fixing this is the subject of another ticket.  Note, in a few cases I increased doctest coverage, since I saw functions with no doctests at all.",
+    "body": "Attachment [sage-4583.patch](tarball://root/attachments/some-uuid/ticket4583/sage-4583.patch) by was created at 2008-11-23 01:58:58\n\nthis rolls out using # optional - foo for most of the magma, macaulay2 and mathematica doctests.  It changes a *LOT* of files.  Note -- the optional doctests for those components may not pass (e.g., the magma ones won't), because it is already known that many optional doctests have bitrotted.  Fixing this is the subject of another ticket.  Note, in a few cases I increased doctest coverage, since I saw functions with no doctests at all.",
     "created_at": "2008-11-23T01:58:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4583",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_034370.json:
 }
 ```
 
-Attachment
+Attachment [sage-4583.patch](tarball://root/attachments/some-uuid/ticket4583/sage-4583.patch) by was created at 2008-11-23 01:58:58
 
 this rolls out using # optional - foo for most of the magma, macaulay2 and mathematica doctests.  It changes a *LOT* of files.  Note -- the optional doctests for those components may not pass (e.g., the magma ones won't), because it is already known that many optional doctests have bitrotted.  Fixing this is the subject of another ticket.  Note, in a few cases I increased doctest coverage, since I saw functions with no doctests at all.
 
@@ -97,7 +97,7 @@ this rolls out using # optional - foo for most of the magma, macaulay2 and mathe
 archive/issue_comments_034371.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-4583-part2.patch](tarball://root/attachments/some-uuid/ticket4583/sage-4583-part2.patch) by was created at 2008-11-23 02:20:51",
     "created_at": "2008-11-23T02:20:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4583",
     "type": "issue_comment",
@@ -106,7 +106,7 @@ archive/issue_comments_034371.json:
 }
 ```
 
-Attachment
+Attachment [sage-4583-part2.patch](tarball://root/attachments/some-uuid/ticket4583/sage-4583-part2.patch) by was created at 2008-11-23 02:20:51
 
 
 
@@ -115,7 +115,7 @@ Attachment
 archive/issue_comments_034372.json:
 ```json
 {
-    "body": "Attachment\n\nthis finishes the only_optional no args case",
+    "body": "Attachment [scripts-4583-part2.patch](tarball://root/attachments/some-uuid/ticket4583/scripts-4583-part2.patch) by was created at 2008-11-23 02:31:05\n\nthis finishes the only_optional no args case",
     "created_at": "2008-11-23T02:31:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4583",
     "type": "issue_comment",
@@ -124,7 +124,7 @@ archive/issue_comments_034372.json:
 }
 ```
 
-Attachment
+Attachment [scripts-4583-part2.patch](tarball://root/attachments/some-uuid/ticket4583/scripts-4583-part2.patch) by was created at 2008-11-23 02:31:05
 
 this finishes the only_optional no args case
 
@@ -171,7 +171,7 @@ Michael
 archive/issue_comments_034374.json:
 ```json
 {
-    "body": "Attachment\n\nsage-4583-part3.patch fixes the above issue with sage/rings/number_field/number_field.py I mentioned above.\n\nCheers,\n\nMichael",
+    "body": "Attachment [sage-4583-part3.patch](tarball://root/attachments/some-uuid/ticket4583/sage-4583-part3.patch) by mabshoff created at 2008-11-23 03:08:12\n\nsage-4583-part3.patch fixes the above issue with sage/rings/number_field/number_field.py I mentioned above.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-23T03:08:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4583",
     "type": "issue_comment",
@@ -180,7 +180,7 @@ archive/issue_comments_034374.json:
 }
 ```
 
-Attachment
+Attachment [sage-4583-part3.patch](tarball://root/attachments/some-uuid/ticket4583/sage-4583-part3.patch) by mabshoff created at 2008-11-23 03:08:12
 
 sage-4583-part3.patch fixes the above issue with sage/rings/number_field/number_field.py I mentioned above.
 

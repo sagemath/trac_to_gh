@@ -51,7 +51,7 @@ Moved CSS in `css.py` to templates, and adjusted `twist.py` to use them.
 archive/issue_comments_056659.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6865-templates-css.patch](tarball://root/attachments/some-uuid/ticket6865/trac_6865-templates-css.patch) by timdumol created at 2009-09-02 16:20:43",
     "created_at": "2009-09-02T16:20:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6865",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_056659.json:
 }
 ```
 
-Attachment
+Attachment [trac_6865-templates-css.patch](tarball://root/attachments/some-uuid/ticket6865/trac_6865-templates-css.patch) by timdumol created at 2009-09-02 16:20:43
 
 
 
@@ -267,7 +267,7 @@ Moved CSS in css.py to templates, and adjusted twist.py to use them. Rev 2. Appl
 archive/issue_comments_056669.json:
 ```json
 {
-    "body": "Attachment\n\nMoved CSS in css.py to templates, and adjusted twist.py to use them. Rev 3. Apply this patch only.",
+    "body": "Attachment [trac_6865-templates-css.3.patch](tarball://root/attachments/some-uuid/ticket6865/trac_6865-templates-css.3.patch) by mpatel created at 2009-09-21 00:30:15\n\nMoved CSS in css.py to templates, and adjusted twist.py to use them. Rev 3. Apply this patch only.",
     "created_at": "2009-09-21T00:30:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6865",
     "type": "issue_comment",
@@ -276,7 +276,7 @@ archive/issue_comments_056669.json:
 }
 ```
 
-Attachment
+Attachment [trac_6865-templates-css.3.patch](tarball://root/attachments/some-uuid/ticket6865/trac_6865-templates-css.3.patch) by mpatel created at 2009-09-21 00:30:15
 
 Moved CSS in css.py to templates, and adjusted twist.py to use them. Rev 3. Apply this patch only.
 

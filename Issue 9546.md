@@ -152,7 +152,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_092022.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9546.patch](tarball://root/attachments/some-uuid/ticket9546/trac_9546.patch) by ncohen created at 2011-01-12 09:23:37",
     "created_at": "2011-01-12T09:23:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9546",
     "type": "issue_comment",
@@ -161,7 +161,7 @@ archive/issue_comments_092022.json:
 }
 ```
 
-Attachment
+Attachment [trac_9546.patch](tarball://root/attachments/some-uuid/ticket9546/trac_9546.patch) by ncohen created at 2011-01-12 09:23:37
 
 
 
@@ -246,7 +246,7 @@ All in all I think the better solution is to just bring floor(x) into scope from
 archive/issue_comments_092024.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9546_scope_fix.patch](tarball://root/attachments/some-uuid/ticket9546/9546_scope_fix.patch) by jthurber created at 2011-01-14 21:42:19",
     "created_at": "2011-01-14T21:42:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9546",
     "type": "issue_comment",
@@ -255,7 +255,7 @@ archive/issue_comments_092024.json:
 }
 ```
 
-Attachment
+Attachment [9546_scope_fix.patch](tarball://root/attachments/some-uuid/ticket9546/9546_scope_fix.patch) by jthurber created at 2011-01-14 21:42:19
 
 
 
@@ -282,7 +282,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_092026.json:
 ```json
 {
-    "body": "Attachment\n\napply all three patches",
+    "body": "Attachment [trac_9546-ref-edit.patch](tarball://root/attachments/some-uuid/ticket9546/trac_9546-ref-edit.patch) by rlm created at 2011-01-14 21:49:51\n\napply all three patches",
     "created_at": "2011-01-14T21:49:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9546",
     "type": "issue_comment",
@@ -291,7 +291,7 @@ archive/issue_comments_092026.json:
 }
 ```
 
-Attachment
+Attachment [trac_9546-ref-edit.patch](tarball://root/attachments/some-uuid/ticket9546/trac_9546-ref-edit.patch) by rlm created at 2011-01-14 21:49:51
 
 apply all three patches
 

@@ -206,7 +206,7 @@ on the queue. Then either me or you fold, reupload and set positive review.
 archive/issue_comments_063132.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:7 hivert]:\n> There are still some minor problems (missing ```...``` in the documentation of testsuite. Aside those everything is ok for me. Nicolas can you review \n> `trac_7478_testsuite_dots-fh-review.patch`\n> on the queue. Then either me or you fold, reupload and set positive review. \n> \n> ...trying to ping you on irc for synchro.\n\nReview patch is good. Folded and uploaded. positive review.",
+    "body": "Attachment [trac_7478_testsuite_dots-fh.patch](tarball://root/attachments/some-uuid/ticket7478/trac_7478_testsuite_dots-fh.patch) by nthiery created at 2009-11-18 22:09:46\n\nReplying to [comment:7 hivert]:\n> There are still some minor problems (missing ```...``` in the documentation of testsuite. Aside those everything is ok for me. Nicolas can you review \n> `trac_7478_testsuite_dots-fh-review.patch`\n> on the queue. Then either me or you fold, reupload and set positive review. \n> \n> ...trying to ping you on irc for synchro.\n\nReview patch is good. Folded and uploaded. positive review.",
     "created_at": "2009-11-18T22:09:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7478",
     "type": "issue_comment",
@@ -215,7 +215,7 @@ archive/issue_comments_063132.json:
 }
 ```
 
-Attachment
+Attachment [trac_7478_testsuite_dots-fh.patch](tarball://root/attachments/some-uuid/ticket7478/trac_7478_testsuite_dots-fh.patch) by nthiery created at 2009-11-18 22:09:46
 
 Replying to [comment:7 hivert]:
 > There are still some minor problems (missing ```...``` in the documentation of testsuite. Aside those everything is ok for me. Nicolas can you review 

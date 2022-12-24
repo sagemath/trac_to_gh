@@ -106,7 +106,7 @@ Code demonstrating the problem
 archive/issue_comments_066426.json:
 ```json
 {
-    "body": "Attachment\n\nI've come a little closer to isolating the problem.  Using the matrix from the code in the problem description and the notation from the method ``hessenbergize`` in file ``matrix2.pyx``, the first problematic case occurs when ``m = 4`` (in the outer loop) and ``j = 5`` (in the inner loop).  This is the point at which the size of the elements that are considered changes from a couple of lines to something filling more than one screen (at a little over 80 characters per line).\n\nThen, in the call to ``add_multiple_of_row_c`` (in the file ``matrix0.pyx``) at the iteration ``c = 4`` in the inner loop an expression of the form `x + a*y` is formed.  The attached file ``x.sage`` contains that particular case as follows:\n\n    sage: x, a, y = test_problem()\n\nNow the easier expression ``a*y`` already causes Sage to hang.  I can't see an easy reason for why this computation shouldn't finish, I guess it's just that *fraction fields* of multivariate polynomial rings are very slow in the current implementation.  In any case, I'll run the code on an idle machine in a few minutes and post here again in the next few days.\n\nSebastian",
+    "body": "Attachment [x.sage](tarball://root/attachments/some-uuid/ticket7730/x.sage) by spancratz created at 2009-12-27 23:55:04\n\nI've come a little closer to isolating the problem.  Using the matrix from the code in the problem description and the notation from the method ``hessenbergize`` in file ``matrix2.pyx``, the first problematic case occurs when ``m = 4`` (in the outer loop) and ``j = 5`` (in the inner loop).  This is the point at which the size of the elements that are considered changes from a couple of lines to something filling more than one screen (at a little over 80 characters per line).\n\nThen, in the call to ``add_multiple_of_row_c`` (in the file ``matrix0.pyx``) at the iteration ``c = 4`` in the inner loop an expression of the form `x + a*y` is formed.  The attached file ``x.sage`` contains that particular case as follows:\n\n    sage: x, a, y = test_problem()\n\nNow the easier expression ``a*y`` already causes Sage to hang.  I can't see an easy reason for why this computation shouldn't finish, I guess it's just that *fraction fields* of multivariate polynomial rings are very slow in the current implementation.  In any case, I'll run the code on an idle machine in a few minutes and post here again in the next few days.\n\nSebastian",
     "created_at": "2009-12-27T23:55:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7730",
     "type": "issue_comment",
@@ -115,7 +115,7 @@ archive/issue_comments_066426.json:
 }
 ```
 
-Attachment
+Attachment [x.sage](tarball://root/attachments/some-uuid/ticket7730/x.sage) by spancratz created at 2009-12-27 23:55:04
 
 I've come a little closer to isolating the problem.  Using the matrix from the code in the problem description and the notation from the method ``hessenbergize`` in file ``matrix2.pyx``, the first problematic case occurs when ``m = 4`` (in the outer loop) and ``j = 5`` (in the inner loop).  This is the point at which the size of the elements that are considered changes from a couple of lines to something filling more than one screen (at a little over 80 characters per line).
 
@@ -215,7 +215,7 @@ Code exhibiting the problem more clearly (on the level of fraction fields)
 archive/issue_comments_066430.json:
 ```json
 {
-    "body": "Attachment\n\nThis is mostly just to confirm that the problem is indeed the multivariate polynomial GCD.  I don't know much about this at the moment, but I am writing an email to Martin Albrecht, who I think wrote the libSINGULAR interface, to ask whether he has any suggestions.\n\nHowever, there is another possible improvement that here would push the problem a little further away (to instances of about twice the size, I guess), but I think it should also be done in general:\n\nIn the generic fraction field implementation, in order to compute the product a/b * c/d, we first compute a*c and b*d, then form their GCD and finally divide both the numerator and the denominator by this.  This could be computed much faster if we assumed (or even checked and ensured, if necessary!) that a/b and c/d are in lowest terms and then compute GCD(a,d) and GCD(b,c) instead.\n\nI think this might affect the fraction field implementation a lot though, since it affects the assumptions about when elements are in lowest terms and when not.  I guess that this is something that ought to be discussed on sage-devel, right?\n\nSebastian",
+    "body": "Attachment [x2.sage](tarball://root/attachments/some-uuid/ticket7730/x2.sage) by spancratz created at 2010-01-04 14:02:24\n\nThis is mostly just to confirm that the problem is indeed the multivariate polynomial GCD.  I don't know much about this at the moment, but I am writing an email to Martin Albrecht, who I think wrote the libSINGULAR interface, to ask whether he has any suggestions.\n\nHowever, there is another possible improvement that here would push the problem a little further away (to instances of about twice the size, I guess), but I think it should also be done in general:\n\nIn the generic fraction field implementation, in order to compute the product a/b * c/d, we first compute a*c and b*d, then form their GCD and finally divide both the numerator and the denominator by this.  This could be computed much faster if we assumed (or even checked and ensured, if necessary!) that a/b and c/d are in lowest terms and then compute GCD(a,d) and GCD(b,c) instead.\n\nI think this might affect the fraction field implementation a lot though, since it affects the assumptions about when elements are in lowest terms and when not.  I guess that this is something that ought to be discussed on sage-devel, right?\n\nSebastian",
     "created_at": "2010-01-04T14:02:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7730",
     "type": "issue_comment",
@@ -224,7 +224,7 @@ archive/issue_comments_066430.json:
 }
 ```
 
-Attachment
+Attachment [x2.sage](tarball://root/attachments/some-uuid/ticket7730/x2.sage) by spancratz created at 2010-01-04 14:02:24
 
 This is mostly just to confirm that the problem is indeed the multivariate polynomial GCD.  I don't know much about this at the moment, but I am writing an email to Martin Albrecht, who I think wrote the libSINGULAR interface, to ask whether he has any suggestions.
 

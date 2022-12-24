@@ -120,7 +120,7 @@ and note that when you start sage the files you created in $DOT_SAGE/gap are del
 archive/issue_comments_037474.json:
 ```json
 {
-    "body": "Attachment\n\nThis works perfectly for me.",
+    "body": "Attachment [trac_4936.patch](tarball://root/attachments/some-uuid/ticket4936/trac_4936.patch) by mhansen created at 2009-01-24 06:31:20\n\nThis works perfectly for me.",
     "created_at": "2009-01-24T06:31:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4936",
     "type": "issue_comment",
@@ -129,7 +129,7 @@ archive/issue_comments_037474.json:
 }
 ```
 
-Attachment
+Attachment [trac_4936.patch](tarball://root/attachments/some-uuid/ticket4936/trac_4936.patch) by mhansen created at 2009-01-24 06:31:20
 
 This works perfectly for me.
 

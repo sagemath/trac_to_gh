@@ -115,7 +115,7 @@ Nathann
 archive/issue_comments_098023.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9890.patch](tarball://root/attachments/some-uuid/ticket9890/trac_9890.patch) by ncohen created at 2013-03-23 11:34:13",
     "created_at": "2013-03-23T11:34:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9889",
     "type": "issue_comment",
@@ -124,7 +124,7 @@ archive/issue_comments_098023.json:
 }
 ```
 
-Attachment
+Attachment [trac_9890.patch](tarball://root/attachments/some-uuid/ticket9890/trac_9890.patch) by ncohen created at 2013-03-23 11:34:13
 
 
 
@@ -175,7 +175,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_098026.json:
 ```json
 {
-    "body": "Attachment\n\n> I have taken the opportunity to make a complete cosmetic clean-up of the file (using pep8 and pyflakes)\n> \n> if my review patch is ok for you, you can set a positive review\n\nOkayyyyyyy ! Good to go, then `:-)`\n\nBy the way, how do you use pep8 and pyflakes ? Do you run them externally on files or do you have a way to use them ?\n\nNathann",
+    "body": "Attachment [trac_9890_review.patch](tarball://root/attachments/some-uuid/ticket9890/trac_9890_review.patch) by ncohen created at 2013-05-18 10:14:47\n\n> I have taken the opportunity to make a complete cosmetic clean-up of the file (using pep8 and pyflakes)\n> \n> if my review patch is ok for you, you can set a positive review\n\nOkayyyyyyy ! Good to go, then `:-)`\n\nBy the way, how do you use pep8 and pyflakes ? Do you run them externally on files or do you have a way to use them ?\n\nNathann",
     "created_at": "2013-05-18T10:14:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9889",
     "type": "issue_comment",
@@ -184,7 +184,7 @@ archive/issue_comments_098026.json:
 }
 ```
 
-Attachment
+Attachment [trac_9890_review.patch](tarball://root/attachments/some-uuid/ticket9890/trac_9890_review.patch) by ncohen created at 2013-05-18 10:14:47
 
 > I have taken the opportunity to make a complete cosmetic clean-up of the file (using pep8 and pyflakes)
 > 

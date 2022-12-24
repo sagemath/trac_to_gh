@@ -213,7 +213,7 @@ apply in normal sage repository
 archive/issue_comments_036161.json:
 ```json
 {
-    "body": "Attachment\n\nI've updated the spkg at http://sage.math.washington.edu/home/jason/matplotlib-svn6821.spkg\n\nIt should be ready to be reviewed now.",
+    "body": "Attachment [trac_4774_arrow.patch](tarball://root/attachments/some-uuid/ticket4774/trac_4774_arrow.patch) by jason created at 2009-01-26 22:49:47\n\nI've updated the spkg at http://sage.math.washington.edu/home/jason/matplotlib-svn6821.spkg\n\nIt should be ready to be reviewed now.",
     "created_at": "2009-01-26T22:49:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4774",
     "type": "issue_comment",
@@ -222,7 +222,7 @@ archive/issue_comments_036161.json:
 }
 ```
 
-Attachment
+Attachment [trac_4774_arrow.patch](tarball://root/attachments/some-uuid/ticket4774/trac_4774_arrow.patch) by jason created at 2009-01-26 22:49:47
 
 I've updated the spkg at http://sage.math.washington.edu/home/jason/matplotlib-svn6821.spkg
 
@@ -633,7 +633,7 @@ The spkg installs cleanly for me (ubuntu 8.10).
 archive/issue_comments_036176.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4774_BIN.patch](tarball://root/attachments/some-uuid/ticket4774/trac_4774_BIN.patch) by jason created at 2009-02-13 17:36:38",
     "created_at": "2009-02-13T17:36:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4774",
     "type": "issue_comment",
@@ -642,7 +642,7 @@ archive/issue_comments_036176.json:
 }
 ```
 
-Attachment
+Attachment [trac_4774_BIN.patch](tarball://root/attachments/some-uuid/ticket4774/trac_4774_BIN.patch) by jason created at 2009-02-13 17:36:38
 
 
 
@@ -687,7 +687,7 @@ This patch is on top of Jason's latest spkg and resolved libpng12 linking issues
 archive/issue_comments_036179.json:
 ```json
 {
-    "body": "Attachment\n\nThe new spkg can be found at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.3/rc1/matplotlib-0.98.5.3rc0-svn6910.p0.spkg\n\nAll spkg changes by Jason look good, indeed they are **very** clean. I will review the patches to the various repos and hopefully Jason will give my changes a review.\n\nCheers,\n\nMichael",
+    "body": "Attachment [matplotlib-0.98.5.3rc0-svn6910.p0.patch](tarball://root/attachments/some-uuid/ticket4774/matplotlib-0.98.5.3rc0-svn6910.p0.patch) by mabshoff created at 2009-02-14 10:50:37\n\nThe new spkg can be found at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.3/rc1/matplotlib-0.98.5.3rc0-svn6910.p0.spkg\n\nAll spkg changes by Jason look good, indeed they are **very** clean. I will review the patches to the various repos and hopefully Jason will give my changes a review.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-14T10:50:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4774",
     "type": "issue_comment",
@@ -696,7 +696,7 @@ archive/issue_comments_036179.json:
 }
 ```
 
-Attachment
+Attachment [matplotlib-0.98.5.3rc0-svn6910.p0.patch](tarball://root/attachments/some-uuid/ticket4774/matplotlib-0.98.5.3rc0-svn6910.p0.patch) by mabshoff created at 2009-02-14 10:50:37
 
 The new spkg can be found at
 

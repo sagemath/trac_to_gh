@@ -57,7 +57,7 @@ Changing status from new to needs_review.
 archive/issue_comments_098900.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch fixes the reported issue. In the process I also fixed a very annoying performance issue\n\n\n```python\n# Old\nsage: B = BooleanPolynomialRing(200,'x')\nsage: %timeit B(\"x0\")\n25 loops, best of 3: 17.1 ms per loop\n\n# New\nsage: B = BooleanPolynomialRing(200,'x')\nsage: %timeit B(\"x0\")\n625 loops, best of 3: 11.6 \u00b5s per loop\n\n# \"optimal\"\nsage: gd = B.gens_dict()\nsage: %timeit gd['x0']\n625 loops, best of 3: 94.2 ns per loop\n```\n",
+    "body": "Attachment [trac_9933.patch](tarball://root/attachments/some-uuid/ticket9933/trac_9933.patch) by malb created at 2010-10-12 16:41:44\n\nThe attached patch fixes the reported issue. In the process I also fixed a very annoying performance issue\n\n\n```python\n# Old\nsage: B = BooleanPolynomialRing(200,'x')\nsage: %timeit B(\"x0\")\n25 loops, best of 3: 17.1 ms per loop\n\n# New\nsage: B = BooleanPolynomialRing(200,'x')\nsage: %timeit B(\"x0\")\n625 loops, best of 3: 11.6 \u00b5s per loop\n\n# \"optimal\"\nsage: gd = B.gens_dict()\nsage: %timeit gd['x0']\n625 loops, best of 3: 94.2 ns per loop\n```\n",
     "created_at": "2010-10-12T16:41:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9932",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_098900.json:
 }
 ```
 
-Attachment
+Attachment [trac_9933.patch](tarball://root/attachments/some-uuid/ticket9933/trac_9933.patch) by malb created at 2010-10-12 16:41:44
 
 The attached patch fixes the reported issue. In the process I also fixed a very annoying performance issue
 

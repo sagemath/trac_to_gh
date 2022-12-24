@@ -137,7 +137,7 @@ Changing status from new to assigned.
 archive/issue_comments_010666.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1681-complex-pow.diff](tarball://root/attachments/some-uuid/ticket1681/1681-complex-pow.diff) by robertwb created at 2008-01-04 21:10:21",
     "created_at": "2008-01-04T21:10:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1681",
     "type": "issue_comment",
@@ -146,7 +146,7 @@ archive/issue_comments_010666.json:
 }
 ```
 
-Attachment
+Attachment [1681-complex-pow.diff](tarball://root/attachments/some-uuid/ticket1681/1681-complex-pow.diff) by robertwb created at 2008-01-04 21:10:21
 
 
 

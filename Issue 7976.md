@@ -173,7 +173,7 @@ I just uploaded a new patch which addresses all these remarks... Please re-revie
 archive/issue_comments_069586.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7976-classcall_no_inherits-review-nt.patch](tarball://root/attachments/some-uuid/ticket7976/trac_7976-classcall_no_inherits-review-nt.patch) by nthiery created at 2010-01-19 09:05:06",
     "created_at": "2010-01-19T09:05:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7976",
     "type": "issue_comment",
@@ -182,7 +182,7 @@ archive/issue_comments_069586.json:
 }
 ```
 
-Attachment
+Attachment [trac_7976-classcall_no_inherits-review-nt.patch](tarball://root/attachments/some-uuid/ticket7976/trac_7976-classcall_no_inherits-review-nt.patch) by nthiery created at 2010-01-19 09:05:06
 
 
 
@@ -227,7 +227,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_069589.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:4 nthiery]:\n> Please double check the quick review patch, and add '#7976:' in front of the patch description, and it's good to go!\n\nI added '#7976:' and re-uploaded the patch. Thanks for the improvement of the doc. Your review patch is ok => positive review.",
+    "body": "Attachment [trac_7976-classcall_no_inherits-fh.patch](tarball://root/attachments/some-uuid/ticket7976/trac_7976-classcall_no_inherits-fh.patch) by hivert created at 2010-01-19 11:50:38\n\nReplying to [comment:4 nthiery]:\n> Please double check the quick review patch, and add '#7976:' in front of the patch description, and it's good to go!\n\nI added '#7976:' and re-uploaded the patch. Thanks for the improvement of the doc. Your review patch is ok => positive review.",
     "created_at": "2010-01-19T11:50:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7976",
     "type": "issue_comment",
@@ -236,7 +236,7 @@ archive/issue_comments_069589.json:
 }
 ```
 
-Attachment
+Attachment [trac_7976-classcall_no_inherits-fh.patch](tarball://root/attachments/some-uuid/ticket7976/trac_7976-classcall_no_inherits-fh.patch) by hivert created at 2010-01-19 11:50:38
 
 Replying to [comment:4 nthiery]:
 > Please double check the quick review patch, and add '#7976:' in front of the patch description, and it's good to go!

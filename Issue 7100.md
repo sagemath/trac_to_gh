@@ -170,7 +170,7 @@ Use this patch instead of the other one (updated)
 archive/issue_comments_058772.json:
 ```json
 {
-    "body": "Attachment\n\nAll tests pass with my patch on top of a clean sage-4.3.",
+    "body": "Attachment [trac_7100b.patch](tarball://root/attachments/some-uuid/ticket7100/trac_7100b.patch) by tornaria created at 2010-01-14 16:57:46\n\nAll tests pass with my patch on top of a clean sage-4.3.",
     "created_at": "2010-01-14T16:57:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7100",
     "type": "issue_comment",
@@ -179,7 +179,7 @@ archive/issue_comments_058772.json:
 }
 ```
 
-Attachment
+Attachment [trac_7100b.patch](tarball://root/attachments/some-uuid/ticket7100/trac_7100b.patch) by tornaria created at 2010-01-14 16:57:46
 
 All tests pass with my patch on top of a clean sage-4.3.
 

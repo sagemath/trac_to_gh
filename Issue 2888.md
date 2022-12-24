@@ -69,7 +69,7 @@ Changing assignee from was to dfdeshom.
 archive/issue_comments_019858.json:
 ```json
 {
-    "body": "Attachment\n\npatch against alpha3",
+    "body": "Attachment [2888.patch](tarball://root/attachments/some-uuid/ticket2888/2888.patch) by dfdeshom created at 2008-04-13 03:08:37\n\npatch against alpha3",
     "created_at": "2008-04-13T03:08:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2888",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_019858.json:
 }
 ```
 
-Attachment
+Attachment [2888.patch](tarball://root/attachments/some-uuid/ticket2888/2888.patch) by dfdeshom created at 2008-04-13 03:08:37
 
 patch against alpha3
 
@@ -159,7 +159,7 @@ Michael
 archive/issue_comments_019862.json:
 ```json
 {
-    "body": "Attachment\n\npatch against upcoming alpha release",
+    "body": "Attachment [2888-incoming-alpha4.patch](tarball://root/attachments/some-uuid/ticket2888/2888-incoming-alpha4.patch) by dfdeshom created at 2008-04-13 04:37:02\n\npatch against upcoming alpha release",
     "created_at": "2008-04-13T04:37:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2888",
     "type": "issue_comment",
@@ -168,7 +168,7 @@ archive/issue_comments_019862.json:
 }
 ```
 
-Attachment
+Attachment [2888-incoming-alpha4.patch](tarball://root/attachments/some-uuid/ticket2888/2888-incoming-alpha4.patch) by dfdeshom created at 2008-04-13 04:37:02
 
 patch against upcoming alpha release
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8891
 archive/issue_comments_081742.json:
 ```json
 {
-    "body": "Attachment\n\nIt was explicitly disabled long ago (before Trac), but I don't see any reason why it should be now.",
+    "body": "Attachment [trac_8891.patch](tarball://root/attachments/some-uuid/ticket8891/trac_8891.patch) by mhansen created at 2010-05-05 16:48:11\n\nIt was explicitly disabled long ago (before Trac), but I don't see any reason why it should be now.",
     "created_at": "2010-05-05T16:48:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8891",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_081742.json:
 }
 ```
 
-Attachment
+Attachment [trac_8891.patch](tarball://root/attachments/some-uuid/ticket8891/trac_8891.patch) by mhansen created at 2010-05-05 16:48:11
 
 It was explicitly disabled long ago (before Trac), but I don't see any reason why it should be now.
 

@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3283
 archive/issue_comments_022701.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [pbori_memleak.patch](tarball://root/attachments/some-uuid/ticket3283/pbori_memleak.patch) by mabshoff created at 2008-05-23 18:15:38",
     "created_at": "2008-05-23T18:15:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3283",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_022701.json:
 }
 ```
 
-Attachment
+Attachment [pbori_memleak.patch](tarball://root/attachments/some-uuid/ticket3283/pbori_memleak.patch) by mabshoff created at 2008-05-23 18:15:38
 
 
 
@@ -202,7 +202,7 @@ So the strategy is either of the following?
 archive/issue_comments_022707.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [pbori_memleak_nex_attempt.patch](tarball://root/attachments/some-uuid/ticket3283/pbori_memleak_nex_attempt.patch) by malb created at 2008-05-25 13:52:30",
     "created_at": "2008-05-25T13:52:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3283",
     "type": "issue_comment",
@@ -211,7 +211,7 @@ archive/issue_comments_022707.json:
 }
 ```
 
-Attachment
+Attachment [pbori_memleak_nex_attempt.patch](tarball://root/attachments/some-uuid/ticket3283/pbori_memleak_nex_attempt.patch) by malb created at 2008-05-25 13:52:30
 
 
 
@@ -238,7 +238,7 @@ The attached patch removes all `.obj` members from the iterators and replaces th
 archive/issue_comments_022709.json:
 ```json
 {
-    "body": "Attachment\n\nremove object references from BooleanPolynomialIterator",
+    "body": "Attachment [trac3283_bpi_object_reference.patch](tarball://root/attachments/some-uuid/ticket3283/trac3283_bpi_object_reference.patch) by burcin created at 2008-05-25 19:36:13\n\nremove object references from BooleanPolynomialIterator",
     "created_at": "2008-05-25T19:36:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3283",
     "type": "issue_comment",
@@ -247,7 +247,7 @@ archive/issue_comments_022709.json:
 }
 ```
 
-Attachment
+Attachment [trac3283_bpi_object_reference.patch](tarball://root/attachments/some-uuid/ticket3283/trac3283_bpi_object_reference.patch) by burcin created at 2008-05-25 19:36:13
 
 remove object references from BooleanPolynomialIterator
 
@@ -470,7 +470,7 @@ new version addresses burcin's review
 archive/issue_comments_022720.json:
 ```json
 {
-    "body": "Attachment\n\nSince the pending changes are in the updated patch, I give the patch a positive review.",
+    "body": "Attachment [pbori_iterators.patch](tarball://root/attachments/some-uuid/ticket3283/pbori_iterators.patch) by malb created at 2008-07-06 12:18:30\n\nSince the pending changes are in the updated patch, I give the patch a positive review.",
     "created_at": "2008-07-06T12:18:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3283",
     "type": "issue_comment",
@@ -479,7 +479,7 @@ archive/issue_comments_022720.json:
 }
 ```
 
-Attachment
+Attachment [pbori_iterators.patch](tarball://root/attachments/some-uuid/ticket3283/pbori_iterators.patch) by malb created at 2008-07-06 12:18:30
 
 Since the pending changes are in the updated patch, I give the patch a positive review.
 

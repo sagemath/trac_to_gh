@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6640
 archive/issue_comments_054439.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6640_partitions_conjugate_typos-fh.patch](tarball://root/attachments/some-uuid/ticket6640/trac_6640_partitions_conjugate_typos-fh.patch) by hivert created at 2009-07-27 14:21:01",
     "created_at": "2009-07-27T14:21:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6640",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_054439.json:
 }
 ```
 
-Attachment
+Attachment [trac_6640_partitions_conjugate_typos-fh.patch](tarball://root/attachments/some-uuid/ticket6640/trac_6640_partitions_conjugate_typos-fh.patch) by hivert created at 2009-07-27 14:21:01
 
 
 

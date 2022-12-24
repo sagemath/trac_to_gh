@@ -284,7 +284,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_063288.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7492.patch](tarball://root/attachments/some-uuid/ticket7492/trac_7492.patch) by ncohen created at 2010-05-17 20:15:20",
     "created_at": "2010-05-17T20:15:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7492",
     "type": "issue_comment",
@@ -293,7 +293,7 @@ archive/issue_comments_063288.json:
 }
 ```
 
-Attachment
+Attachment [trac_7492.patch](tarball://root/attachments/some-uuid/ticket7492/trac_7492.patch) by ncohen created at 2010-05-17 20:15:20
 
 
 
@@ -302,7 +302,7 @@ Attachment
 archive/issue_comments_063289.json:
 ```json
 {
-    "body": "Attachment\n\napply over previous patch",
+    "body": "Attachment [trac_7492_review.patch](tarball://root/attachments/some-uuid/ticket7492/trac_7492_review.patch) by davidloeffler created at 2010-05-18 13:52:16\n\napply over previous patch",
     "created_at": "2010-05-18T13:52:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7492",
     "type": "issue_comment",
@@ -311,7 +311,7 @@ archive/issue_comments_063289.json:
 }
 ```
 
-Attachment
+Attachment [trac_7492_review.patch](tarball://root/attachments/some-uuid/ticket7492/trac_7492_review.patch) by davidloeffler created at 2010-05-18 13:52:16
 
 apply over previous patch
 

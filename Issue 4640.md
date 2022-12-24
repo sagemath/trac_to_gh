@@ -159,7 +159,7 @@ Michael
 archive/issue_comments_034930.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4640.patch](tarball://root/attachments/some-uuid/ticket4640/trac_4640.patch) by mabshoff created at 2009-03-10 20:17:48",
     "created_at": "2009-03-10T20:17:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4640",
     "type": "issue_comment",
@@ -168,7 +168,7 @@ archive/issue_comments_034930.json:
 }
 ```
 
-Attachment
+Attachment [trac_4640.patch](tarball://root/attachments/some-uuid/ticket4640/trac_4640.patch) by mabshoff created at 2009-03-10 20:17:48
 
 
 

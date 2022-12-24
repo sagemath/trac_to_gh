@@ -51,7 +51,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6824
 archive/issue_comments_056280.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6824-cdef-in-timeseries.pyx](tarball://root/attachments/some-uuid/ticket6824/trac_6824-cdef-in-timeseries.pyx) by jason created at 2009-08-25 15:38:21",
     "created_at": "2009-08-25T15:38:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6824",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_056280.json:
 }
 ```
 
-Attachment
+Attachment [trac_6824-cdef-in-timeseries.pyx](tarball://root/attachments/some-uuid/ticket6824/trac_6824-cdef-in-timeseries.pyx) by jason created at 2009-08-25 15:38:21
 
 
 
@@ -105,7 +105,7 @@ Jason: You should change the file extension to ".patch" so the patch would displ
 archive/issue_comments_056283.json:
 ```json
 {
-    "body": "Attachment\n\nsame as above, but with a \".patch\" extension",
+    "body": "Attachment [trac_6824-cdef-in-timeseries.patch](tarball://root/attachments/some-uuid/ticket6824/trac_6824-cdef-in-timeseries.patch) by jason created at 2009-08-25 18:37:00\n\nsame as above, but with a \".patch\" extension",
     "created_at": "2009-08-25T18:37:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6824",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_056283.json:
 }
 ```
 
-Attachment
+Attachment [trac_6824-cdef-in-timeseries.patch](tarball://root/attachments/some-uuid/ticket6824/trac_6824-cdef-in-timeseries.patch) by jason created at 2009-08-25 18:37:00
 
 same as above, but with a ".patch" extension
 

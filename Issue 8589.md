@@ -609,7 +609,7 @@ Done!
 archive/issue_comments_077803.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8589_feature_group_algebras_vf.2.patch](tarball://root/attachments/some-uuid/ticket8589/trac_8589_feature_group_algebras_vf.2.patch) by vferay created at 2010-10-18 13:21:04",
     "created_at": "2010-10-18T13:21:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8589",
     "type": "issue_comment",
@@ -618,7 +618,7 @@ archive/issue_comments_077803.json:
 }
 ```
 
-Attachment
+Attachment [trac_8589_feature_group_algebras_vf.2.patch](tarball://root/attachments/some-uuid/ticket8589/trac_8589_feature_group_algebras_vf.2.patch) by vferay created at 2010-10-18 13:21:04
 
 
 
@@ -627,7 +627,7 @@ Attachment
 archive/issue_comments_077804.json:
 ```json
 {
-    "body": "Attachment\n\nWhich of the patches should be applied?",
+    "body": "Attachment [trac_8589_feature_group_algebras_vf.patch](tarball://root/attachments/some-uuid/ticket8589/trac_8589_feature_group_algebras_vf.patch) by jdemeyer created at 2010-10-23 11:58:11\n\nWhich of the patches should be applied?",
     "created_at": "2010-10-23T11:58:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8589",
     "type": "issue_comment",
@@ -636,7 +636,7 @@ archive/issue_comments_077804.json:
 }
 ```
 
-Attachment
+Attachment [trac_8589_feature_group_algebras_vf.patch](tarball://root/attachments/some-uuid/ticket8589/trac_8589_feature_group_algebras_vf.patch) by jdemeyer created at 2010-10-23 11:58:11
 
 Which of the patches should be applied?
 

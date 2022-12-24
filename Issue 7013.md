@@ -356,7 +356,7 @@ Andrew
 archive/issue_comments_058009.json:
 ```json
 {
-    "body": "Attachment\n\nRough first patch",
+    "body": "Attachment [7013.patch](tarball://root/attachments/some-uuid/ticket7013/7013.patch) by ohanar created at 2009-11-23 10:13:36\n\nRough first patch",
     "created_at": "2009-11-23T10:13:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7013",
     "type": "issue_comment",
@@ -365,7 +365,7 @@ archive/issue_comments_058009.json:
 }
 ```
 
-Attachment
+Attachment [7013.patch](tarball://root/attachments/some-uuid/ticket7013/7013.patch) by ohanar created at 2009-11-23 10:13:36
 
 Rough first patch
 
@@ -433,7 +433,7 @@ Write-up of project
 archive/issue_comments_058012.json:
 ```json
 {
-    "body": "Attachment\n\nAndrew (ohanar),\n\nI obtained the li_approx code via a personal communication (email) from Fredrik Johansson, owner of the mpmath project.  It computes an approximation to the logarithmic integral using an asymptotic series.  You can also find it described at\n\nhttp://en.wikipedia.org/wiki/Logarithmic_integral_function#Asymptotic_expansion\n\nI first used the Sage Li function, but switched to this one because it is orders of magnitude faster.  The Sage Li function spends unnecessary cycles calculating Li out to many decimal places.  For this application, we can stop at the decimal point, because we only need an approximation.  Note that the calculation of an exact value of li would probably use the series representation of li rather than the asymptotic series.\n\nhttp://en.wikipedia.org/wiki/Logarithmic_integral_function#Series_representation\n\nFor large computations, the difference in time between Li and li_approx is negligible compared to the total computation time.  However, for small computations, the saved time could be the limiting factor in the time complexity of this algorithm.  This is especially apparent when generating the tables.  Because speed is one of the most important factors in this program, I strongly advocate keeping li_approx rather than using Sage's exact Li.  IMHO,the simplicity of calling a preexisting library function simply does not outweigh the time trade-off of using the asymptotic series.  If anything, I would want some sort of fast li_approx to be made a permanent part of the Sage function library, as it would be useful for number theory research.  If using exist parts of the Sage library is desired over using new code, it might be possible to optimize small prime_pi calculations to not depend on li, but I see this as very unnecessary extra work.\n\nIf the sage-devel team decides that they want to use Li for its simplicity over the asymptotic series provided by Fredrik Johansson (actually in any case), I would like to stress the importance of using the same prime_pi approximation function (whether li_exact or li_approx) when generating the tables and when using them.  It is absolutely critical that every detail, including but not limited to rounding versus truncating and what the last included term of the series is is exactly the same in both calculations (generating the table and using it).\n\nFor everyone involved I would like to mention to be careful about confusing the logarithmic integral and offset logarithmic integral.\n\nFor everyone to read, here is a link to my writeup (I also created an attachment):\n\nhttp://www.wstein.org/projects/stueve.pdf\n\nAfter the code is added to Sage, I intend to submit the paper (most likely with revisions/additions) for publication.  As Andrew is taking part in the development of the code and sharing authorship, I believe it would be appropriate for myself, Andrew Ohana, and William Stein to share authorship of both the code added to Sage and the paper submitted for publication.\n\nKevin Stueve",
+    "body": "Attachment [stueve.pdf](tarball://root/attachments/some-uuid/ticket7013/stueve.pdf) by kevin.stueve created at 2009-11-25 03:33:48\n\nAndrew (ohanar),\n\nI obtained the li_approx code via a personal communication (email) from Fredrik Johansson, owner of the mpmath project.  It computes an approximation to the logarithmic integral using an asymptotic series.  You can also find it described at\n\nhttp://en.wikipedia.org/wiki/Logarithmic_integral_function#Asymptotic_expansion\n\nI first used the Sage Li function, but switched to this one because it is orders of magnitude faster.  The Sage Li function spends unnecessary cycles calculating Li out to many decimal places.  For this application, we can stop at the decimal point, because we only need an approximation.  Note that the calculation of an exact value of li would probably use the series representation of li rather than the asymptotic series.\n\nhttp://en.wikipedia.org/wiki/Logarithmic_integral_function#Series_representation\n\nFor large computations, the difference in time between Li and li_approx is negligible compared to the total computation time.  However, for small computations, the saved time could be the limiting factor in the time complexity of this algorithm.  This is especially apparent when generating the tables.  Because speed is one of the most important factors in this program, I strongly advocate keeping li_approx rather than using Sage's exact Li.  IMHO,the simplicity of calling a preexisting library function simply does not outweigh the time trade-off of using the asymptotic series.  If anything, I would want some sort of fast li_approx to be made a permanent part of the Sage function library, as it would be useful for number theory research.  If using exist parts of the Sage library is desired over using new code, it might be possible to optimize small prime_pi calculations to not depend on li, but I see this as very unnecessary extra work.\n\nIf the sage-devel team decides that they want to use Li for its simplicity over the asymptotic series provided by Fredrik Johansson (actually in any case), I would like to stress the importance of using the same prime_pi approximation function (whether li_exact or li_approx) when generating the tables and when using them.  It is absolutely critical that every detail, including but not limited to rounding versus truncating and what the last included term of the series is is exactly the same in both calculations (generating the table and using it).\n\nFor everyone involved I would like to mention to be careful about confusing the logarithmic integral and offset logarithmic integral.\n\nFor everyone to read, here is a link to my writeup (I also created an attachment):\n\nhttp://www.wstein.org/projects/stueve.pdf\n\nAfter the code is added to Sage, I intend to submit the paper (most likely with revisions/additions) for publication.  As Andrew is taking part in the development of the code and sharing authorship, I believe it would be appropriate for myself, Andrew Ohana, and William Stein to share authorship of both the code added to Sage and the paper submitted for publication.\n\nKevin Stueve",
     "created_at": "2009-11-25T03:33:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7013",
     "type": "issue_comment",
@@ -442,7 +442,7 @@ archive/issue_comments_058012.json:
 }
 ```
 
-Attachment
+Attachment [stueve.pdf](tarball://root/attachments/some-uuid/ticket7013/stueve.pdf) by kevin.stueve created at 2009-11-25 03:33:48
 
 Andrew (ohanar),
 
@@ -1852,7 +1852,7 @@ Kevin Stueve
 archive/issue_comments_058047.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [cython_table_based_prime_pi.pyx](tarball://root/attachments/some-uuid/ticket7013/cython_table_based_prime_pi.pyx) by kevin.stueve created at 2010-04-25 12:41:51",
     "created_at": "2010-04-25T12:41:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7013",
     "type": "issue_comment",
@@ -1861,7 +1861,7 @@ archive/issue_comments_058047.json:
 }
 ```
 
-Attachment
+Attachment [cython_table_based_prime_pi.pyx](tarball://root/attachments/some-uuid/ticket7013/cython_table_based_prime_pi.pyx) by kevin.stueve created at 2010-04-25 12:41:51
 
 
 
@@ -1870,7 +1870,7 @@ Attachment
 archive/issue_comments_058048.json:
 ```json
 {
-    "body": "Attachment\n\nJust for the record:\n\nTOS has published a new prime sieve program, which also incorporates some of my ideas (separate list for sieving primes that have multiples in every sieve segment, combined striking of multiples of the smallest primes).\n\nHowever, it is rather a rewrite from scratch than an update of his previous one.",
+    "body": "Attachment [prime_sieve.c](tarball://root/attachments/some-uuid/ticket7013/prime_sieve.c) by leif created at 2010-09-02 18:43:10\n\nJust for the record:\n\nTOS has published a new prime sieve program, which also incorporates some of my ideas (separate list for sieving primes that have multiples in every sieve segment, combined striking of multiples of the smallest primes).\n\nHowever, it is rather a rewrite from scratch than an update of his previous one.",
     "created_at": "2010-09-02T18:43:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7013",
     "type": "issue_comment",
@@ -1879,7 +1879,7 @@ archive/issue_comments_058048.json:
 }
 ```
 
-Attachment
+Attachment [prime_sieve.c](tarball://root/attachments/some-uuid/ticket7013/prime_sieve.c) by leif created at 2010-09-02 18:43:10
 
 Just for the record:
 
@@ -1894,7 +1894,7 @@ However, it is rather a rewrite from scratch than an update of his previous one.
 archive/issue_comments_058049.json:
 ```json
 {
-    "body": "Attachment\n\nI have posted new table-based prime counting code in table_based_prime_pi_23_July_2011.zip.  In addition to counting primes, this code can also count twin primes, prime triplets, and prime quadruplets.  Since my last contribution, denser tables of the prime counting function and counts of prime constellations have become available (by a factor of 10 in some intervals), decreasing the amount of sieving needed by such a factor.\n\nThis code fixes the problems in my original contribution.  The sieve I used in my original contribution was Tom\u00e1s Oliveira e Silva's prime_sieve.c, which assumed pointers have 4 bytes.  The sieve I use in my new code is Kim Walisch's primesieve.  Primesieve uses portable c++ and uses Oliveira e Silva's algorithm for large x.\n\nAlthough a lot of work has been done, my code should still be considered a rough draft.  The path to the primesieve package is still hard-coded.  A second person should fix such problems and also go over the code line by line and double-check for off-by-one errors and the like.  I am willing to offer someone who can can get this code in Sage coauthorship of the code.\n\nThis code checks for the presence of prime count tables in SAGE_ROOT/data/prime_counting_tables, and if they are not there, instructs the user to download them from http://sage.math.washington.edu/home/kstueve/prime_pi_tables/.\n\nThe code communicates with primesieve using the subprocess module and primesievesubprocess.cpp, a file I wrote to allow the code to communicate with primesieve over the command line.  It may be desirable to change this arrangement.  For one thing, primesieve has to do its initialization for every call to table_based_prime_pi.\n\nTo build primesievesubprocess.cpp, I put it into the main primesieve folder.  I ran the primesieve make file.  I removed main.o, ParallelPrimeSieve.o, and test,o from the out folder.  I then ran:\ng++ primesievesubprocess.cpp out/*.o -o primesievesubprocess\n\nSincerely,\nKevin Stueve",
+    "body": "Attachment [table_based_prime_pi_23_July_2011.zip](tarball://root/attachments/some-uuid/ticket7013/table_based_prime_pi_23_July_2011.zip) by kevin.stueve created at 2011-07-24 04:21:35\n\nI have posted new table-based prime counting code in table_based_prime_pi_23_July_2011.zip.  In addition to counting primes, this code can also count twin primes, prime triplets, and prime quadruplets.  Since my last contribution, denser tables of the prime counting function and counts of prime constellations have become available (by a factor of 10 in some intervals), decreasing the amount of sieving needed by such a factor.\n\nThis code fixes the problems in my original contribution.  The sieve I used in my original contribution was Tom\u00e1s Oliveira e Silva's prime_sieve.c, which assumed pointers have 4 bytes.  The sieve I use in my new code is Kim Walisch's primesieve.  Primesieve uses portable c++ and uses Oliveira e Silva's algorithm for large x.\n\nAlthough a lot of work has been done, my code should still be considered a rough draft.  The path to the primesieve package is still hard-coded.  A second person should fix such problems and also go over the code line by line and double-check for off-by-one errors and the like.  I am willing to offer someone who can can get this code in Sage coauthorship of the code.\n\nThis code checks for the presence of prime count tables in SAGE_ROOT/data/prime_counting_tables, and if they are not there, instructs the user to download them from http://sage.math.washington.edu/home/kstueve/prime_pi_tables/.\n\nThe code communicates with primesieve using the subprocess module and primesievesubprocess.cpp, a file I wrote to allow the code to communicate with primesieve over the command line.  It may be desirable to change this arrangement.  For one thing, primesieve has to do its initialization for every call to table_based_prime_pi.\n\nTo build primesievesubprocess.cpp, I put it into the main primesieve folder.  I ran the primesieve make file.  I removed main.o, ParallelPrimeSieve.o, and test,o from the out folder.  I then ran:\ng++ primesievesubprocess.cpp out/*.o -o primesievesubprocess\n\nSincerely,\nKevin Stueve",
     "created_at": "2011-07-24T04:21:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7013",
     "type": "issue_comment",
@@ -1903,7 +1903,7 @@ archive/issue_comments_058049.json:
 }
 ```
 
-Attachment
+Attachment [table_based_prime_pi_23_July_2011.zip](tarball://root/attachments/some-uuid/ticket7013/table_based_prime_pi_23_July_2011.zip) by kevin.stueve created at 2011-07-24 04:21:35
 
 I have posted new table-based prime counting code in table_based_prime_pi_23_July_2011.zip.  In addition to counting primes, this code can also count twin primes, prime triplets, and prime quadruplets.  Since my last contribution, denser tables of the prime counting function and counts of prime constellations have become available (by a factor of 10 in some intervals), decreasing the amount of sieving needed by such a factor.
 
@@ -2002,7 +2002,7 @@ One question for this ticket. In the description you mention the idea of includi
 archive/issue_comments_058053.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac7013_rebased.patch](tarball://root/attachments/some-uuid/ticket7013/trac7013_rebased.patch) by ohanar created at 2012-01-22 15:29:15",
     "created_at": "2012-01-22T15:29:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7013",
     "type": "issue_comment",
@@ -2011,7 +2011,7 @@ archive/issue_comments_058053.json:
 }
 ```
 
-Attachment
+Attachment [trac7013_rebased.patch](tarball://root/attachments/some-uuid/ticket7013/trac7013_rebased.patch) by ohanar created at 2012-01-22 15:29:15
 
 
 

@@ -51,7 +51,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5154
 archive/issue_comments_039450.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5154.patch](tarball://root/attachments/some-uuid/ticket5154/trac_5154.patch) by zimmerma created at 2009-02-02 14:13:48",
     "created_at": "2009-02-02T14:13:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5154",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_039450.json:
 }
 ```
 
-Attachment
+Attachment [trac_5154.patch](tarball://root/attachments/some-uuid/ticket5154/trac_5154.patch) by zimmerma created at 2009-02-02 14:13:48
 
 
 
@@ -69,7 +69,7 @@ Attachment
 archive/issue_comments_039451.json:
 ```json
 {
-    "body": "Attachment\n\nshows that the bug is indeed fixed",
+    "body": "Attachment [trac_5154_doctest.patch](tarball://root/attachments/some-uuid/ticket5154/trac_5154_doctest.patch) by malb created at 2009-02-02 14:24:49\n\nshows that the bug is indeed fixed",
     "created_at": "2009-02-02T14:24:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5154",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_039451.json:
 }
 ```
 
-Attachment
+Attachment [trac_5154_doctest.patch](tarball://root/attachments/some-uuid/ticket5154/trac_5154_doctest.patch) by malb created at 2009-02-02 14:24:49
 
 shows that the bug is indeed fixed
 

@@ -236,7 +236,7 @@ Michael
 archive/issue_comments_020542.json:
 ```json
 {
-    "body": "Attachment\n\nThe spkg at \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.2/alpha0/singular-3-0-4-2-20080405.p2.spkg\n\nfixes this and also #3158.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_2983.patch](tarball://root/attachments/some-uuid/ticket2983/trac_2983.patch) by mabshoff created at 2008-05-11 12:47:35\n\nThe spkg at \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.2/alpha0/singular-3-0-4-2-20080405.p2.spkg\n\nfixes this and also #3158.\n\nCheers,\n\nMichael",
     "created_at": "2008-05-11T12:47:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2983",
     "type": "issue_comment",
@@ -245,7 +245,7 @@ archive/issue_comments_020542.json:
 }
 ```
 
-Attachment
+Attachment [trac_2983.patch](tarball://root/attachments/some-uuid/ticket2983/trac_2983.patch) by mabshoff created at 2008-05-11 12:47:35
 
 The spkg at 
 

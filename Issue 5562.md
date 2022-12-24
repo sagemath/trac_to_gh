@@ -235,7 +235,7 @@ This won't be merged until it's positively reviewed and closed, it's just the ta
 archive/issue_comments_043293.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5562.patch](tarball://root/attachments/some-uuid/ticket5562/5562.patch) by cnassau created at 2013-01-29 18:07:43",
     "created_at": "2013-01-29T18:07:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5562",
     "type": "issue_comment",
@@ -244,7 +244,7 @@ archive/issue_comments_043293.json:
 }
 ```
 
-Attachment
+Attachment [5562.patch](tarball://root/attachments/some-uuid/ticket5562/5562.patch) by cnassau created at 2013-01-29 18:07:43
 
 
 

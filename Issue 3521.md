@@ -79,7 +79,7 @@ sage: M.atkin_lehner_operator(13).matrix()^2
 archive/issue_comments_024816.json:
 ```json
 {
-    "body": "Attachment\n\nWARNING:\n\nThe atkin-lehner operator does *not* leave the space $M_k(N,\\chi)$ invariant unless $\\chi$ is quadratic. Really it sends $M_k(N,\\chi)$ to $M_k(N,\\chibar)$.   So Sage should give an error message when $\\chi$ is not quadratic.",
+    "body": "Attachment [sage-3521.patch](tarball://root/attachments/some-uuid/ticket3521/sage-3521.patch) by was created at 2008-06-27 19:31:12\n\nWARNING:\n\nThe atkin-lehner operator does *not* leave the space $M_k(N,\\chi)$ invariant unless $\\chi$ is quadratic. Really it sends $M_k(N,\\chi)$ to $M_k(N,\\chibar)$.   So Sage should give an error message when $\\chi$ is not quadratic.",
     "created_at": "2008-06-27T19:31:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3521",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_024816.json:
 }
 ```
 
-Attachment
+Attachment [sage-3521.patch](tarball://root/attachments/some-uuid/ticket3521/sage-3521.patch) by was created at 2008-06-27 19:31:12
 
 WARNING:
 
@@ -101,7 +101,7 @@ The atkin-lehner operator does *not* leave the space $M_k(N,\chi)$ invariant unl
 archive/issue_comments_024817.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-3521-touch-ups.patch](tarball://root/attachments/some-uuid/ticket3521/trac-3521-touch-ups.patch) by craigcitro created at 2008-06-29 02:04:50",
     "created_at": "2008-06-29T02:04:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3521",
     "type": "issue_comment",
@@ -110,7 +110,7 @@ archive/issue_comments_024817.json:
 }
 ```
 
-Attachment
+Attachment [trac-3521-touch-ups.patch](tarball://root/attachments/some-uuid/ticket3521/trac-3521-touch-ups.patch) by craigcitro created at 2008-06-29 02:04:50
 
 
 

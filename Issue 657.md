@@ -287,7 +287,7 @@ Changing status from closed to reopened.
 archive/issue_comments_003423.json:
 ```json
 {
-    "body": "Attachment\n\nPatch updated.",
+    "body": "Attachment [657.patch](tarball://root/attachments/some-uuid/ticket657/657.patch) by mhansen created at 2007-10-26 03:55:13\n\nPatch updated.",
     "created_at": "2007-10-26T03:55:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/657",
     "type": "issue_comment",
@@ -296,7 +296,7 @@ archive/issue_comments_003423.json:
 }
 ```
 
-Attachment
+Attachment [657.patch](tarball://root/attachments/some-uuid/ticket657/657.patch) by mhansen created at 2007-10-26 03:55:13
 
 Patch updated.
 

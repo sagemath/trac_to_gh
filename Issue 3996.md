@@ -54,7 +54,7 @@ If those are fixed, I'll give it a positive review.
 archive/issue_comments_028711.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3996.patch](tarball://root/attachments/some-uuid/ticket3996/trac_3996.patch) by mhansen created at 2008-08-29 22:10:14",
     "created_at": "2008-08-29T22:10:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3996",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_028711.json:
 }
 ```
 
-Attachment
+Attachment [trac_3996.patch](tarball://root/attachments/some-uuid/ticket3996/trac_3996.patch) by mhansen created at 2008-08-29 22:10:14
 
 
 
@@ -112,7 +112,7 @@ Michael
 archive/issue_comments_028713.json:
 ```json
 {
-    "body": "Attachment\n\ntrac_3996-rebase.patch should apply cleanly.",
+    "body": "Attachment [trac_3996-rebase.patch](tarball://root/attachments/some-uuid/ticket3996/trac_3996-rebase.patch) by mhansen created at 2008-08-29 22:54:09\n\ntrac_3996-rebase.patch should apply cleanly.",
     "created_at": "2008-08-29T22:54:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3996",
     "type": "issue_comment",
@@ -121,7 +121,7 @@ archive/issue_comments_028713.json:
 }
 ```
 
-Attachment
+Attachment [trac_3996-rebase.patch](tarball://root/attachments/some-uuid/ticket3996/trac_3996-rebase.patch) by mhansen created at 2008-08-29 22:54:09
 
 trac_3996-rebase.patch should apply cleanly.
 

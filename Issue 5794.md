@@ -237,7 +237,7 @@ Changing assignee from joyner to bump.
 archive/issue_comments_045421.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5794-revised.patch](tarball://root/attachments/some-uuid/ticket5794/trac_5794-revised.patch) by bump created at 2009-05-06 20:16:33",
     "created_at": "2009-05-06T20:16:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5794",
     "type": "issue_comment",
@@ -246,7 +246,7 @@ archive/issue_comments_045421.json:
 }
 ```
 
-Attachment
+Attachment [trac_5794-revised.patch](tarball://root/attachments/some-uuid/ticket5794/trac_5794-revised.patch) by bump created at 2009-05-06 20:16:33
 
 
 
@@ -294,7 +294,7 @@ http://sporadic.stanford.edu/bump/branch.sage
 archive/issue_comments_045424.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5794-continued.patch](tarball://root/attachments/some-uuid/ticket5794/trac_5794-continued.patch) by bump created at 2009-05-12 15:27:27",
     "created_at": "2009-05-12T15:27:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5794",
     "type": "issue_comment",
@@ -303,7 +303,7 @@ archive/issue_comments_045424.json:
 }
 ```
 
-Attachment
+Attachment [trac_5794-continued.patch](tarball://root/attachments/some-uuid/ticket5794/trac_5794-continued.patch) by bump created at 2009-05-12 15:27:27
 
 
 
@@ -344,7 +344,7 @@ Dan
 archive/issue_comments_045426.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5794-exceptional.patch](tarball://root/attachments/some-uuid/ticket5794/trac_5794-exceptional.patch) by bump created at 2009-05-16 23:10:50",
     "created_at": "2009-05-16T23:10:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5794",
     "type": "issue_comment",
@@ -353,7 +353,7 @@ archive/issue_comments_045426.json:
 }
 ```
 
-Attachment
+Attachment [trac_5794-exceptional.patch](tarball://root/attachments/some-uuid/ticket5794/trac_5794-exceptional.patch) by bump created at 2009-05-16 23:10:50
 
 
 
@@ -362,7 +362,7 @@ Attachment
 archive/issue_comments_045427.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5794-more-exceptional.patch](tarball://root/attachments/some-uuid/ticket5794/trac_5794-more-exceptional.patch) by bump created at 2009-05-20 20:23:44",
     "created_at": "2009-05-20T20:23:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5794",
     "type": "issue_comment",
@@ -371,7 +371,7 @@ archive/issue_comments_045427.json:
 }
 ```
 
-Attachment
+Attachment [trac_5794-more-exceptional.patch](tarball://root/attachments/some-uuid/ticket5794/trac_5794-more-exceptional.patch) by bump created at 2009-05-20 20:23:44
 
 
 
@@ -474,7 +474,7 @@ The following files are not in the reference manual. You might want to consider 
 archive/issue_comments_045431.json:
 ```json
 {
-    "body": "Attachment\n\nNicolas Thiery wrote the patch `trac_5794-reviewer-nt.patch`.\nIt is in the combinat patch queue. I took the liberty of uploading\nit.\n\nIt addresses at least some of the ReST complaints.\n\nI am changing the title back to [with patch, needs review] since\napart from the issue of the ReST formatting, the patches still\nneeds a technical review. The following remark is addressed\nto whoever does the technical review. (Brant Jones was suggested.)\n\nThe patches as posted differ slightly from the versions in the combinat queue.\nThe reason for the difference is that the meaning of the is_reducible\nCartan type attribute is changed by #4326. After #4326 (which preceed\nthese patches in the queue) the root system D2 is not reducible. See\n\nhttp://groups.google.com/group/sage-combinat-devel/msg/8b3569b4e2f2b7e1?hl=en\n\nand thread for discussion. (Note: the `patch cartan_type_temporary-1.patch` \nmentioned in that message was qfolded shortly afterwards.)",
+    "body": "Attachment [trac_5794-reviewer-nt.patch](tarball://root/attachments/some-uuid/ticket5794/trac_5794-reviewer-nt.patch) by bump created at 2009-07-21 17:08:40\n\nNicolas Thiery wrote the patch `trac_5794-reviewer-nt.patch`.\nIt is in the combinat patch queue. I took the liberty of uploading\nit.\n\nIt addresses at least some of the ReST complaints.\n\nI am changing the title back to [with patch, needs review] since\napart from the issue of the ReST formatting, the patches still\nneeds a technical review. The following remark is addressed\nto whoever does the technical review. (Brant Jones was suggested.)\n\nThe patches as posted differ slightly from the versions in the combinat queue.\nThe reason for the difference is that the meaning of the is_reducible\nCartan type attribute is changed by #4326. After #4326 (which preceed\nthese patches in the queue) the root system D2 is not reducible. See\n\nhttp://groups.google.com/group/sage-combinat-devel/msg/8b3569b4e2f2b7e1?hl=en\n\nand thread for discussion. (Note: the `patch cartan_type_temporary-1.patch` \nmentioned in that message was qfolded shortly afterwards.)",
     "created_at": "2009-07-21T17:08:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5794",
     "type": "issue_comment",
@@ -483,7 +483,7 @@ archive/issue_comments_045431.json:
 }
 ```
 
-Attachment
+Attachment [trac_5794-reviewer-nt.patch](tarball://root/attachments/some-uuid/ticket5794/trac_5794-reviewer-nt.patch) by bump created at 2009-07-21 17:08:40
 
 Nicolas Thiery wrote the patch `trac_5794-reviewer-nt.patch`.
 It is in the combinat patch queue. I took the liberty of uploading
@@ -555,7 +555,7 @@ This depends on #4326.
 archive/issue_comments_045434.json:
 ```json
 {
-    "body": "Attachment\n\nAnnotates the long tests with their time, and disables one which took 160s.",
+    "body": "Attachment [trac_5794-long-time-nt.patch](tarball://root/attachments/some-uuid/ticket5794/trac_5794-long-time-nt.patch) by nthiery created at 2009-11-19 11:25:22\n\nAnnotates the long tests with their time, and disables one which took 160s.",
     "created_at": "2009-11-19T11:25:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5794",
     "type": "issue_comment",
@@ -564,7 +564,7 @@ archive/issue_comments_045434.json:
 }
 ```
 
-Attachment
+Attachment [trac_5794-long-time-nt.patch](tarball://root/attachments/some-uuid/ticket5794/trac_5794-long-time-nt.patch) by nthiery created at 2009-11-19 11:25:22
 
 Annotates the long tests with their time, and disables one which took 160s.
 

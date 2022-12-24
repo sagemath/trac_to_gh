@@ -49,7 +49,7 @@ I need to add doctests.
 archive/issue_comments_025151.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3558.patch](tarball://root/attachments/some-uuid/ticket3558/trac_3558.patch) by mhansen created at 2008-07-06 03:56:20",
     "created_at": "2008-07-06T03:56:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3558",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_025151.json:
 }
 ```
 
-Attachment
+Attachment [trac_3558.patch](tarball://root/attachments/some-uuid/ticket3558/trac_3558.patch) by mhansen created at 2008-07-06 03:56:20
 
 
 

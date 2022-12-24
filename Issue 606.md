@@ -54,7 +54,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/606
 archive/issue_comments_003114.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [606.patch](tarball://root/attachments/some-uuid/ticket606/606.patch) by mhansen created at 2007-09-07 00:32:49",
     "created_at": "2007-09-07T00:32:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/606",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_003114.json:
 }
 ```
 
-Attachment
+Attachment [606.patch](tarball://root/attachments/some-uuid/ticket606/606.patch) by mhansen created at 2007-09-07 00:32:49
 
 
 
@@ -170,7 +170,7 @@ def foo(int n):
 archive/issue_comments_003120.json:
 ```json
 {
-    "body": "Attachment\n\nchanged version that i like",
+    "body": "Attachment [606-2.patch](tarball://root/attachments/some-uuid/ticket606/606-2.patch) by was created at 2007-09-07 02:38:08\n\nchanged version that i like",
     "created_at": "2007-09-07T02:38:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/606",
     "type": "issue_comment",
@@ -179,7 +179,7 @@ archive/issue_comments_003120.json:
 }
 ```
 
-Attachment
+Attachment [606-2.patch](tarball://root/attachments/some-uuid/ticket606/606-2.patch) by was created at 2007-09-07 02:38:08
 
 changed version that i like
 
@@ -208,7 +208,7 @@ Resolution: fixed
 archive/issue_comments_003122.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6199.patch](tarball://root/attachments/some-uuid/ticket606/6199.patch) by was created at 2007-09-07 02:38:16",
     "created_at": "2007-09-07T02:38:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/606",
     "type": "issue_comment",
@@ -217,4 +217,4 @@ archive/issue_comments_003122.json:
 }
 ```
 
-Attachment
+Attachment [6199.patch](tarball://root/attachments/some-uuid/ticket606/6199.patch) by was created at 2007-09-07 02:38:16

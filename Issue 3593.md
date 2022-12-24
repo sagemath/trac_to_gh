@@ -199,7 +199,7 @@ etc.
 archive/issue_comments_025393.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3593.patch](tarball://root/attachments/some-uuid/ticket3593/sage-3593.patch) by was created at 2008-07-08 06:31:39",
     "created_at": "2008-07-08T06:31:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3593",
     "type": "issue_comment",
@@ -208,7 +208,7 @@ archive/issue_comments_025393.json:
 }
 ```
 
-Attachment
+Attachment [sage-3593.patch](tarball://root/attachments/some-uuid/ticket3593/sage-3593.patch) by was created at 2008-07-08 06:31:39
 
 
 
@@ -235,7 +235,7 @@ I was able to reproduce the problem on sage.math by running 4 doctests simultane
 archive/issue_comments_025395.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [tmpdir.patch](tarball://root/attachments/some-uuid/ticket3593/tmpdir.patch) by yi created at 2008-07-08 07:52:37",
     "created_at": "2008-07-08T07:52:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3593",
     "type": "issue_comment",
@@ -244,7 +244,7 @@ archive/issue_comments_025395.json:
 }
 ```
 
-Attachment
+Attachment [tmpdir.patch](tarball://root/attachments/some-uuid/ticket3593/tmpdir.patch) by yi created at 2008-07-08 07:52:37
 
 
 
@@ -253,7 +253,7 @@ Attachment
 archive/issue_comments_025396.json:
 ```json
 {
-    "body": "Attachment\n\nThis will bind to port 0 and the OS will return a valid port to listen on",
+    "body": "Attachment [find_ports.patch](tarball://root/attachments/some-uuid/ticket3593/find_ports.patch) by yi created at 2008-07-08 17:19:38\n\nThis will bind to port 0 and the OS will return a valid port to listen on",
     "created_at": "2008-07-08T17:19:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3593",
     "type": "issue_comment",
@@ -262,7 +262,7 @@ archive/issue_comments_025396.json:
 }
 ```
 
-Attachment
+Attachment [find_ports.patch](tarball://root/attachments/some-uuid/ticket3593/find_ports.patch) by yi created at 2008-07-08 17:19:38
 
 This will bind to port 0 and the OS will return a valid port to listen on
 

@@ -49,7 +49,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2153
 archive/issue_comments_014129.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [group_homs.hg](tarball://root/attachments/some-uuid/ticket2153/group_homs.hg) by mhansen created at 2008-02-14 07:19:14",
     "created_at": "2008-02-14T07:19:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2153",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_014129.json:
 }
 ```
 
-Attachment
+Attachment [group_homs.hg](tarball://root/attachments/some-uuid/ticket2153/group_homs.hg) by mhansen created at 2008-02-14 07:19:14
 
 
 
@@ -151,7 +151,7 @@ Michael
 archive/issue_comments_014134.json:
 ```json
 {
-    "body": "Attachment\n\ntried to create patch based on sage-3.0.alphaa0 from code D Kohel sent",
+    "body": "Attachment [9271.patch](tarball://root/attachments/some-uuid/ticket2153/9271.patch) by wdj created at 2008-04-06 00:56:35\n\ntried to create patch based on sage-3.0.alphaa0 from code D Kohel sent",
     "created_at": "2008-04-06T00:56:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2153",
     "type": "issue_comment",
@@ -160,7 +160,7 @@ archive/issue_comments_014134.json:
 }
 ```
 
-Attachment
+Attachment [9271.patch](tarball://root/attachments/some-uuid/ticket2153/9271.patch) by wdj created at 2008-04-06 00:56:35
 
 tried to create patch based on sage-3.0.alphaa0 from code D Kohel sent
 

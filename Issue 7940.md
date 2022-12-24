@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7940
 archive/issue_comments_069270.json:
 ```json
 {
-    "body": "Attachment\n\nif I put a long enough description here, it will be longer than the patch itself...",
+    "body": "Attachment [trac_7940.patch](tarball://root/attachments/some-uuid/ticket7940/trac_7940.patch) by jhpalmieri created at 2010-01-16 03:19:00\n\nif I put a long enough description here, it will be longer than the patch itself...",
     "created_at": "2010-01-16T03:19:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7940",
     "type": "issue_comment",
@@ -43,7 +43,7 @@ archive/issue_comments_069270.json:
 }
 ```
 
-Attachment
+Attachment [trac_7940.patch](tarball://root/attachments/some-uuid/ticket7940/trac_7940.patch) by jhpalmieri created at 2010-01-16 03:19:00
 
 if I put a long enough description here, it will be longer than the patch itself...
 

@@ -99,7 +99,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4071
 archive/issue_comments_029380.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4071.patch](tarball://root/attachments/some-uuid/ticket4071/trac_4071.patch) by mhansen created at 2008-09-07 18:10:28",
     "created_at": "2008-09-07T18:10:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4071",
     "type": "issue_comment",
@@ -108,7 +108,7 @@ archive/issue_comments_029380.json:
 }
 ```
 
-Attachment
+Attachment [trac_4071.patch](tarball://root/attachments/some-uuid/ticket4071/trac_4071.patch) by mhansen created at 2008-09-07 18:10:28
 
 
 

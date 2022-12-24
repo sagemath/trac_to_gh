@@ -417,7 +417,7 @@ Michael
 archive/issue_comments_012719.json:
 ```json
 {
-    "body": "Attachment\n\n`1964-ncalexan-against-2.10.2.patch` is a single patch against 2.10.2 that should merge cleanly.",
+    "body": "Attachment [1964-ncalexan-against-2.10.2.patch](tarball://root/attachments/some-uuid/ticket1964/1964-ncalexan-against-2.10.2.patch) by ncalexan created at 2008-02-24 22:06:36\n\n`1964-ncalexan-against-2.10.2.patch` is a single patch against 2.10.2 that should merge cleanly.",
     "created_at": "2008-02-24T22:06:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1964",
     "type": "issue_comment",
@@ -426,7 +426,7 @@ archive/issue_comments_012719.json:
 }
 ```
 
-Attachment
+Attachment [1964-ncalexan-against-2.10.2.patch](tarball://root/attachments/some-uuid/ticket1964/1964-ncalexan-against-2.10.2.patch) by ncalexan created at 2008-02-24 22:06:36
 
 `1964-ncalexan-against-2.10.2.patch` is a single patch against 2.10.2 that should merge cleanly.
 
@@ -571,7 +571,7 @@ Michael
 archive/issue_comments_012724.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1964-ncalexan-against-3.0.patch](tarball://root/attachments/some-uuid/ticket1964/1964-ncalexan-against-3.0.patch) by ncalexan created at 2008-05-18 18:20:14",
     "created_at": "2008-05-18T18:20:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1964",
     "type": "issue_comment",
@@ -580,7 +580,7 @@ archive/issue_comments_012724.json:
 }
 ```
 
-Attachment
+Attachment [1964-ncalexan-against-3.0.patch](tarball://root/attachments/some-uuid/ticket1964/1964-ncalexan-against-3.0.patch) by ncalexan created at 2008-05-18 18:20:14
 
 
 
@@ -609,7 +609,7 @@ It does *NOT* address the load/attach in files issue.  I am going to look at tha
 archive/issue_comments_012726.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1964-ncalexan-multiple-files-1.patch](tarball://root/attachments/some-uuid/ticket1964/1964-ncalexan-multiple-files-1.patch) by ncalexan created at 2008-05-19 05:15:52",
     "created_at": "2008-05-19T05:15:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1964",
     "type": "issue_comment",
@@ -618,7 +618,7 @@ archive/issue_comments_012726.json:
 }
 ```
 
-Attachment
+Attachment [1964-ncalexan-multiple-files-1.patch](tarball://root/attachments/some-uuid/ticket1964/1964-ncalexan-multiple-files-1.patch) by ncalexan created at 2008-05-19 05:15:52
 
 
 

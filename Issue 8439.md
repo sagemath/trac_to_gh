@@ -105,7 +105,7 @@ Changing status from new to needs_review.
 archive/issue_comments_075763.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-4.3.3-maxima.patch](tarball://root/attachments/some-uuid/ticket8439/sage-4.3.3-maxima.patch) by mjo created at 2012-01-16 02:55:39",
     "created_at": "2012-01-16T02:55:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8439",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_075763.json:
 }
 ```
 
-Attachment
+Attachment [sage-4.3.3-maxima.patch](tarball://root/attachments/some-uuid/ticket8439/sage-4.3.3-maxima.patch) by mjo created at 2012-01-16 02:55:39
 
 
 

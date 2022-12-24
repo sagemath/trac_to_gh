@@ -299,7 +299,7 @@ Changing status from needs_info to needs_work.
 archive/issue_comments_074430.json:
 ```json
 {
-    "body": "Attachment\n\nWhoops, I didn't realize uploading the patch would end my comments. \u00a0I wanted to say, you didn't like that patch Robert. \u00a0What's the next step?",
+    "body": "Attachment [bug8336-almost-a-patch.txt](tarball://root/attachments/some-uuid/ticket8336/bug8336-almost-a-patch.txt) by donmorrison created at 2010-11-09 22:28:25\n\nWhoops, I didn't realize uploading the patch would end my comments. \u00a0I wanted to say, you didn't like that patch Robert. \u00a0What's the next step?",
     "created_at": "2010-11-09T22:28:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8336",
     "type": "issue_comment",
@@ -308,7 +308,7 @@ archive/issue_comments_074430.json:
 }
 ```
 
-Attachment
+Attachment [bug8336-almost-a-patch.txt](tarball://root/attachments/some-uuid/ticket8336/bug8336-almost-a-patch.txt) by donmorrison created at 2010-11-09 22:28:25
 
 Whoops, I didn't realize uploading the patch would end my comments.  I wanted to say, you didn't like that patch Robert.  What's the next step?
 

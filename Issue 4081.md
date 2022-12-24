@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4081
 archive/issue_comments_029445.json:
 ```json
 {
-    "body": "Attachment\n\nShould fix this:\n\n```\n==5224== 728 bytes in 91 blocks are definitely lost in loss record 6,852 of 13,463\n==5224==    at 0x4A1BDEB: malloc (vg_replace_malloc.c:207)\n==5224==    by 0x20BC8B55: __pyx_f_4sage_6groups_8perm_gps_9partn_ref_17refinement_binary_bitset_init (refinement_binary.c:1757)\n==5224==    by 0x20BCCF24: __pyx_pf_4sage_6groups_8perm_gps_9partn_ref_17refinement_binary_25NonlinearBinaryCodeStruct___new__ (refinement_binary.c:5642)\n==5224==    by 0x20BD9124: __pyx_tp_new_4sage_6groups_8perm_gps_9partn_ref_17refinement_binary_NonlinearBinaryCodeStruct (refinement_binary.c:11409)\n...\n```\n",
+    "body": "Attachment [trac_4081-nonlinear-memleak.patch](tarball://root/attachments/some-uuid/ticket4081/trac_4081-nonlinear-memleak.patch) by rlm created at 2008-09-09 01:19:28\n\nShould fix this:\n\n```\n==5224== 728 bytes in 91 blocks are definitely lost in loss record 6,852 of 13,463\n==5224==    at 0x4A1BDEB: malloc (vg_replace_malloc.c:207)\n==5224==    by 0x20BC8B55: __pyx_f_4sage_6groups_8perm_gps_9partn_ref_17refinement_binary_bitset_init (refinement_binary.c:1757)\n==5224==    by 0x20BCCF24: __pyx_pf_4sage_6groups_8perm_gps_9partn_ref_17refinement_binary_25NonlinearBinaryCodeStruct___new__ (refinement_binary.c:5642)\n==5224==    by 0x20BD9124: __pyx_tp_new_4sage_6groups_8perm_gps_9partn_ref_17refinement_binary_NonlinearBinaryCodeStruct (refinement_binary.c:11409)\n...\n```\n",
     "created_at": "2008-09-09T01:19:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4081",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_029445.json:
 }
 ```
 
-Attachment
+Attachment [trac_4081-nonlinear-memleak.patch](tarball://root/attachments/some-uuid/ticket4081/trac_4081-nonlinear-memleak.patch) by rlm created at 2008-09-09 01:19:28
 
 Should fix this:
 

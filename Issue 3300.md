@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3300
 archive/issue_comments_022833.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ntl-debian-release.patch](tarball://root/attachments/some-uuid/ticket3300/ntl-debian-release.patch) by tabbott created at 2008-05-25 18:57:38",
     "created_at": "2008-05-25T18:57:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3300",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_022833.json:
 }
 ```
 
-Attachment
+Attachment [ntl-debian-release.patch](tarball://root/attachments/some-uuid/ticket3300/ntl-debian-release.patch) by tabbott created at 2008-05-25 18:57:38
 
 
 
@@ -49,7 +49,7 @@ Attachment
 archive/issue_comments_022834.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ntl-forget-version.patch](tarball://root/attachments/some-uuid/ticket3300/ntl-forget-version.patch) by tabbott created at 2008-05-25 22:29:01",
     "created_at": "2008-05-25T22:29:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3300",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_022834.json:
 }
 ```
 
-Attachment
+Attachment [ntl-forget-version.patch](tarball://root/attachments/some-uuid/ticket3300/ntl-forget-version.patch) by tabbott created at 2008-05-25 22:29:01
 
 
 
@@ -103,7 +103,7 @@ I've also attached a patch that changes the ntl priority to optional and makes t
 archive/issue_comments_022837.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ntl-priority.patch](tarball://root/attachments/some-uuid/ticket3300/ntl-priority.patch) by tabbott created at 2008-05-26 04:36:40",
     "created_at": "2008-05-26T04:36:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3300",
     "type": "issue_comment",
@@ -112,7 +112,7 @@ archive/issue_comments_022837.json:
 }
 ```
 
-Attachment
+Attachment [ntl-priority.patch](tarball://root/attachments/some-uuid/ticket3300/ntl-priority.patch) by tabbott created at 2008-05-26 04:36:40
 
 
 

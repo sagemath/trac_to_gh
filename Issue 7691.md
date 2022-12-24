@@ -103,7 +103,7 @@ Resolution: fixed
 archive/issue_comments_065989.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7691.patch](tarball://root/attachments/some-uuid/ticket7691/trac_7691.patch) by mhansen created at 2009-12-16 02:28:54",
     "created_at": "2009-12-16T02:28:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7691",
     "type": "issue_comment",
@@ -112,4 +112,4 @@ archive/issue_comments_065989.json:
 }
 ```
 
-Attachment
+Attachment [trac_7691.patch](tarball://root/attachments/some-uuid/ticket7691/trac_7691.patch) by mhansen created at 2009-12-16 02:28:54

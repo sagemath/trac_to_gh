@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6024
 archive/issue_comments_047975.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6024-doctest-fix.patch](tarball://root/attachments/some-uuid/ticket6024/trac_6024-doctest-fix.patch) by mabshoff created at 2009-05-12 06:14:17",
     "created_at": "2009-05-12T06:14:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6024",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_047975.json:
 }
 ```
 
-Attachment
+Attachment [trac_6024-doctest-fix.patch](tarball://root/attachments/some-uuid/ticket6024/trac_6024-doctest-fix.patch) by mabshoff created at 2009-05-12 06:14:17
 
 
 

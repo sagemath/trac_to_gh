@@ -203,7 +203,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_073784.json:
 ```json
 {
-    "body": "Attachment\n\nI fixed the documentation. Needs review!",
+    "body": "Attachment [trac_8318_overlap_partition-sl.patch](tarball://root/attachments/some-uuid/ticket8318/trac_8318_overlap_partition-sl.patch) by slabbe created at 2010-02-28 18:13:55\n\nI fixed the documentation. Needs review!",
     "created_at": "2010-02-28T18:13:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8318",
     "type": "issue_comment",
@@ -212,7 +212,7 @@ archive/issue_comments_073784.json:
 }
 ```
 
-Attachment
+Attachment [trac_8318_overlap_partition-sl.patch](tarball://root/attachments/some-uuid/ticket8318/trac_8318_overlap_partition-sl.patch) by slabbe created at 2010-02-28 18:13:55
 
 I fixed the documentation. Needs review!
 
@@ -241,7 +241,7 @@ I'm done with the review. All tests passed, I corrected a minor error in the doc
 archive/issue_comments_073786.json:
 ```json
 {
-    "body": "Attachment\n\none-character review -- apply on top of the first patch",
+    "body": "Attachment [trac_8313_review-abm.patch](tarball://root/attachments/some-uuid/ticket8318/trac_8313_review-abm.patch) by abmasse created at 2010-03-01 13:24:50\n\none-character review -- apply on top of the first patch",
     "created_at": "2010-03-01T13:24:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8318",
     "type": "issue_comment",
@@ -250,7 +250,7 @@ archive/issue_comments_073786.json:
 }
 ```
 
-Attachment
+Attachment [trac_8313_review-abm.patch](tarball://root/attachments/some-uuid/ticket8318/trac_8313_review-abm.patch) by abmasse created at 2010-03-01 13:24:50
 
 one-character review -- apply on top of the first patch
 

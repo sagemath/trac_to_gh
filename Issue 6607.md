@@ -105,7 +105,7 @@ fixed old patch... better documentation etc
 archive/issue_comments_054097.json:
 ```json
 {
-    "body": "Attachment\n\nfixed references",
+    "body": "Attachment [quad.patch](tarball://root/attachments/some-uuid/ticket6607/quad.patch) by wakep created at 2009-08-17 21:57:28\n\nfixed references",
     "created_at": "2009-08-17T21:57:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6607",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_054097.json:
 }
 ```
 
-Attachment
+Attachment [quad.patch](tarball://root/attachments/some-uuid/ticket6607/quad.patch) by wakep created at 2009-08-17 21:57:28
 
 fixed references
 

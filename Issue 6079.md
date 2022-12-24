@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6079
 archive/issue_comments_048382.json:
 ```json
 {
-    "body": "Attachment\n\nSecond patch relies on first; might as well be on same ticket.  Adds a subfield_containing that tries to do a bit more than naive trial and error to find the smallest subfield of a number field containing the specified elements.",
+    "body": "Attachment [trac_6079-base-inclusion-morphism.patch](tarball://root/attachments/some-uuid/ticket6079/trac_6079-base-inclusion-morphism.patch) by ncalexan created at 2009-05-19 03:02:11\n\nSecond patch relies on first; might as well be on same ticket.  Adds a subfield_containing that tries to do a bit more than naive trial and error to find the smallest subfield of a number field containing the specified elements.",
     "created_at": "2009-05-19T03:02:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6079",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_048382.json:
 }
 ```
 
-Attachment
+Attachment [trac_6079-base-inclusion-morphism.patch](tarball://root/attachments/some-uuid/ticket6079/trac_6079-base-inclusion-morphism.patch) by ncalexan created at 2009-05-19 03:02:11
 
 Second patch relies on first; might as well be on same ticket.  Adds a subfield_containing that tries to do a bit more than naive trial and error to find the smallest subfield of a number field containing the specified elements.
 

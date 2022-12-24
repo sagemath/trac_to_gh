@@ -66,7 +66,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1371
 archive/issue_comments_008799.json:
 ```json
 {
-    "body": "Attachment\n\nChangesets",
+    "body": "Attachment [push_bundle--Dec_2_2007.hg](tarball://root/attachments/some-uuid/ticket1371/push_bundle--Dec_2_2007.hg) by jonhanke created at 2007-12-02 14:41:35\n\nChangesets",
     "created_at": "2007-12-02T14:41:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1371",
     "type": "issue_comment",
@@ -75,7 +75,7 @@ archive/issue_comments_008799.json:
 }
 ```
 
-Attachment
+Attachment [push_bundle--Dec_2_2007.hg](tarball://root/attachments/some-uuid/ticket1371/push_bundle--Dec_2_2007.hg) by jonhanke created at 2007-12-02 14:41:35
 
 Changesets
 

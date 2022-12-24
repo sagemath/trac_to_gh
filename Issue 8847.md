@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8847
 archive/issue_comments_081330.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8847.patch](tarball://root/attachments/some-uuid/ticket8847/trac_8847.patch) by mhansen created at 2010-05-03 13:22:06",
     "created_at": "2010-05-03T13:22:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8847",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_081330.json:
 }
 ```
 
-Attachment
+Attachment [trac_8847.patch](tarball://root/attachments/some-uuid/ticket8847/trac_8847.patch) by mhansen created at 2010-05-03 13:22:06
 
 
 
@@ -236,7 +236,7 @@ apply only this (not the one below)
 archive/issue_comments_081340.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8847-take3.patch](tarball://root/attachments/some-uuid/ticket8847/trac_8847-take3.patch) by was created at 2010-05-26 02:19:50",
     "created_at": "2010-05-26T02:19:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8847",
     "type": "issue_comment",
@@ -245,7 +245,7 @@ archive/issue_comments_081340.json:
 }
 ```
 
-Attachment
+Attachment [trac_8847-take3.patch](tarball://root/attachments/some-uuid/ticket8847/trac_8847-take3.patch) by was created at 2010-05-26 02:19:50
 
 
 
@@ -254,7 +254,7 @@ Attachment
 archive/issue_comments_081341.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8847-take4.patch](tarball://root/attachments/some-uuid/ticket8847/trac_8847-take4.patch) by mhansen created at 2010-05-26 02:50:13",
     "created_at": "2010-05-26T02:50:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8847",
     "type": "issue_comment",
@@ -263,7 +263,7 @@ archive/issue_comments_081341.json:
 }
 ```
 
-Attachment
+Attachment [trac_8847-take4.patch](tarball://root/attachments/some-uuid/ticket8847/trac_8847-take4.patch) by mhansen created at 2010-05-26 02:50:13
 
 
 

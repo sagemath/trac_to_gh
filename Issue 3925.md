@@ -62,7 +62,7 @@ This is still a work-in-progress. TODO:
 archive/issue_comments_028096.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [primegen-0.97.spkg](tarball://root/attachments/some-uuid/ticket3925/primegen-0.97.spkg) by wjp created at 2009-07-13 21:48:07",
     "created_at": "2009-07-13T21:48:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3925",
     "type": "issue_comment",
@@ -71,7 +71,7 @@ archive/issue_comments_028096.json:
 }
 ```
 
-Attachment
+Attachment [primegen-0.97.spkg](tarball://root/attachments/some-uuid/ticket3925/primegen-0.97.spkg) by wjp created at 2009-07-13 21:48:07
 
 
 
@@ -80,7 +80,7 @@ Attachment
 archive/issue_comments_028097.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-3925-spkg_deps.patch](tarball://root/attachments/some-uuid/ticket3925/trac-3925-spkg_deps.patch) by wjp created at 2009-07-13 21:48:18",
     "created_at": "2009-07-13T21:48:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3925",
     "type": "issue_comment",
@@ -89,7 +89,7 @@ archive/issue_comments_028097.json:
 }
 ```
 
-Attachment
+Attachment [trac-3925-spkg_deps.patch](tarball://root/attachments/some-uuid/ticket3925/trac-3925-spkg_deps.patch) by wjp created at 2009-07-13 21:48:18
 
 
 
@@ -134,7 +134,7 @@ goes from 84.17s (without this spkg+patch) to 20.77s (with spkg+patch) on a 2GHz
 archive/issue_comments_028099.json:
 ```json
 {
-    "body": "Attachment\n\nHello Willem.  I successfully installed the spkg and the second patch but I don't know how to install the first patch as it changes files not in the usual code tree.  If you tell me how, I would like to test this.  -- John",
+    "body": "Attachment [trac-3925-primegen.patch](tarball://root/attachments/some-uuid/ticket3925/trac-3925-primegen.patch) by cremona created at 2009-07-24 21:14:10\n\nHello Willem.  I successfully installed the spkg and the second patch but I don't know how to install the first patch as it changes files not in the usual code tree.  If you tell me how, I would like to test this.  -- John",
     "created_at": "2009-07-24T21:14:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3925",
     "type": "issue_comment",
@@ -143,7 +143,7 @@ archive/issue_comments_028099.json:
 }
 ```
 
-Attachment
+Attachment [trac-3925-primegen.patch](tarball://root/attachments/some-uuid/ticket3925/trac-3925-primegen.patch) by cremona created at 2009-07-24 21:14:10
 
 Hello Willem.  I successfully installed the spkg and the second patch but I don't know how to install the first patch as it changes files not in the usual code tree.  If you tell me how, I would like to test this.  -- John
 

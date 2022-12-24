@@ -95,7 +95,7 @@ So at least it doesn't hang anymore.  I will change the summary.
 archive/issue_comments_013756.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_2109.patch](tarball://root/attachments/some-uuid/ticket2109/trac_2109.patch) by mhansen created at 2010-01-17 04:16:27",
     "created_at": "2010-01-17T04:16:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2109",
     "type": "issue_comment",
@@ -104,7 +104,7 @@ archive/issue_comments_013756.json:
 }
 ```
 
-Attachment
+Attachment [trac_2109.patch](tarball://root/attachments/some-uuid/ticket2109/trac_2109.patch) by mhansen created at 2010-01-17 04:16:27
 
 
 

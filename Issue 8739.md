@@ -59,7 +59,7 @@ I'll upload a patch very soon.
 archive/issue_comments_079932.json:
 ```json
 {
-    "body": "Attachment\n\nAdds a generator of the Kolakoski sequences",
+    "body": "Attachment [trac_8739_kolakoski_word-abm.patch](tarball://root/attachments/some-uuid/ticket8739/trac_8739_kolakoski_word-abm.patch) by abmasse created at 2010-04-23 15:03:09\n\nAdds a generator of the Kolakoski sequences",
     "created_at": "2010-04-23T15:03:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8739",
     "type": "issue_comment",
@@ -68,7 +68,7 @@ archive/issue_comments_079932.json:
 }
 ```
 
-Attachment
+Attachment [trac_8739_kolakoski_word-abm.patch](tarball://root/attachments/some-uuid/ticket8739/trac_8739_kolakoski_word-abm.patch) by abmasse created at 2010-04-23 15:03:09
 
 Adds a generator of the Kolakoski sequences
 
@@ -283,7 +283,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_079942.json:
 ```json
 {
-    "body": "Attachment\n\nI uploaded a patch that applies on top of the main one. It takes into account the three points mentionned by Nathann above. Needs review again! (Sorry for the seven months delay)",
+    "body": "Attachment [trac_8739_after_review-abm.patch](tarball://root/attachments/some-uuid/ticket8739/trac_8739_after_review-abm.patch) by abmasse created at 2010-11-14 03:09:53\n\nI uploaded a patch that applies on top of the main one. It takes into account the three points mentionned by Nathann above. Needs review again! (Sorry for the seven months delay)",
     "created_at": "2010-11-14T03:09:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8739",
     "type": "issue_comment",
@@ -292,7 +292,7 @@ archive/issue_comments_079942.json:
 }
 ```
 
-Attachment
+Attachment [trac_8739_after_review-abm.patch](tarball://root/attachments/some-uuid/ticket8739/trac_8739_after_review-abm.patch) by abmasse created at 2010-11-14 03:09:53
 
 I uploaded a patch that applies on top of the main one. It takes into account the three points mentionned by Nathann above. Needs review again! (Sorry for the seven months delay)
 
@@ -303,7 +303,7 @@ I uploaded a patch that applies on top of the main one. It takes into account th
 archive/issue_comments_079943.json:
 ```json
 {
-    "body": "Attachment\n\nApplies over the precedent 2 patches",
+    "body": "Attachment [trac_8739-review-sl.patch](tarball://root/attachments/some-uuid/ticket8739/trac_8739-review-sl.patch) by slabbe created at 2010-11-14 06:03:22\n\nApplies over the precedent 2 patches",
     "created_at": "2010-11-14T06:03:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8739",
     "type": "issue_comment",
@@ -312,7 +312,7 @@ archive/issue_comments_079943.json:
 }
 ```
 
-Attachment
+Attachment [trac_8739-review-sl.patch](tarball://root/attachments/some-uuid/ticket8739/trac_8739-review-sl.patch) by slabbe created at 2010-11-14 06:03:22
 
 Applies over the precedent 2 patches
 

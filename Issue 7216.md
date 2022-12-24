@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7216
 archive/issue_comments_059866.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [number_fields.rst](tarball://root/attachments/some-uuid/ticket7216/number_fields.rst) by Loufer created at 2009-10-15 02:13:29",
     "created_at": "2009-10-15T02:13:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7216",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_059866.json:
 }
 ```
 
-Attachment
+Attachment [number_fields.rst](tarball://root/attachments/some-uuid/ticket7216/number_fields.rst) by Loufer created at 2009-10-15 02:13:29
 
 
 

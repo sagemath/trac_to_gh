@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7252
 archive/issue_comments_060244.json:
 ```json
 {
-    "body": "Attachment\n\npatch for spkg/install",
+    "body": "Attachment [trac_7252-pil.patch](tarball://root/attachments/some-uuid/ticket7252/trac_7252-pil.patch) by jhpalmieri created at 2009-10-20 05:37:02\n\npatch for spkg/install",
     "created_at": "2009-10-20T05:37:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7252",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_060244.json:
 }
 ```
 
-Attachment
+Attachment [trac_7252-pil.patch](tarball://root/attachments/some-uuid/ticket7252/trac_7252-pil.patch) by jhpalmieri created at 2009-10-20 05:37:02
 
 patch for spkg/install
 

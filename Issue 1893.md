@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1893
 archive/issue_comments_011986.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [probabiity.hg](tarball://root/attachments/some-uuid/ticket1893/probabiity.hg) by mabshoff created at 2008-01-23 23:02:30",
     "created_at": "2008-01-23T23:02:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1893",
     "type": "issue_comment",
@@ -53,7 +53,7 @@ archive/issue_comments_011986.json:
 }
 ```
 
-Attachment
+Attachment [probabiity.hg](tarball://root/attachments/some-uuid/ticket1893/probabiity.hg) by mabshoff created at 2008-01-23 23:02:30
 
 
 

@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8147
 archive/issue_comments_071615.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8147_developer_doc_mq.patch](tarball://root/attachments/some-uuid/ticket8147/trac_8147_developer_doc_mq.patch) by rbeezer created at 2010-02-02 06:27:58",
     "created_at": "2010-02-02T06:27:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8147",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_071615.json:
 }
 ```
 
-Attachment
+Attachment [trac_8147_developer_doc_mq.patch](tarball://root/attachments/some-uuid/ticket8147/trac_8147_developer_doc_mq.patch) by rbeezer created at 2010-02-02 06:27:58
 
 
 
@@ -87,7 +87,7 @@ Changing status from new to needs_review.
 archive/issue_comments_071618.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of previous",
+    "body": "Attachment [trac_8147-reviewer.patch](tarball://root/attachments/some-uuid/ticket8147/trac_8147-reviewer.patch) by mvngu created at 2010-02-02 20:20:36\n\napply on top of previous",
     "created_at": "2010-02-02T20:20:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8147",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_071618.json:
 }
 ```
 
-Attachment
+Attachment [trac_8147-reviewer.patch](tarball://root/attachments/some-uuid/ticket8147/trac_8147-reviewer.patch) by mvngu created at 2010-02-02 20:20:36
 
 apply on top of previous
 

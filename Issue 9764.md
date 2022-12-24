@@ -58,7 +58,7 @@ Changing status from new to needs_review.
 archive/issue_comments_095663.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9765-matrix2-abs.patch](tarball://root/attachments/some-uuid/ticket9765/trac_9765-matrix2-abs.patch) by jhpalmieri created at 2010-08-18 22:16:48",
     "created_at": "2010-08-18T22:16:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9764",
     "type": "issue_comment",
@@ -67,7 +67,7 @@ archive/issue_comments_095663.json:
 }
 ```
 
-Attachment
+Attachment [trac_9765-matrix2-abs.patch](tarball://root/attachments/some-uuid/ticket9765/trac_9765-matrix2-abs.patch) by jhpalmieri created at 2010-08-18 22:16:48
 
 
 

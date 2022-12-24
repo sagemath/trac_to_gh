@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9778
 archive/issue_comments_095953.json:
 ```json
 {
-    "body": "Attachment\n\nAdds `LaTeX` symbols and `SI` prefixes to the units module",
+    "body": "Attachment [trac_9778_latex_prefixes_units.patch](tarball://root/attachments/some-uuid/ticket9778/trac_9778_latex_prefixes_units.patch) by cousteau created at 2010-08-21 20:46:48\n\nAdds `LaTeX` symbols and `SI` prefixes to the units module",
     "created_at": "2010-08-21T20:46:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9777",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_095953.json:
 }
 ```
 
-Attachment
+Attachment [trac_9778_latex_prefixes_units.patch](tarball://root/attachments/some-uuid/ticket9778/trac_9778_latex_prefixes_units.patch) by cousteau created at 2010-08-21 20:46:48
 
 Adds `LaTeX` symbols and `SI` prefixes to the units module
 

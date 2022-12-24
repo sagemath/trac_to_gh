@@ -69,7 +69,7 @@ Changing status from new to needs_review.
 archive/issue_comments_075711.json:
 ```json
 {
-    "body": "Attachment\n\nSelenium Failures",
+    "body": "Attachment [sagenb-0.7.5.2_selenium_fails.log](tarball://root/attachments/some-uuid/ticket8435/sagenb-0.7.5.2_selenium_fails.log) by acleone created at 2010-03-05 17:28:11\n\nSelenium Failures",
     "created_at": "2010-03-05T17:28:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8435",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_075711.json:
 }
 ```
 
-Attachment
+Attachment [sagenb-0.7.5.2_selenium_fails.log](tarball://root/attachments/some-uuid/ticket8435/sagenb-0.7.5.2_selenium_fails.log) by acleone created at 2010-03-05 17:28:11
 
 Selenium Failures
 

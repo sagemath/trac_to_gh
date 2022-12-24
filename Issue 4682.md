@@ -78,7 +78,7 @@ Changing assignee from was to mabshoff.
 archive/issue_comments_035292.json:
 ```json
 {
-    "body": "Attachment\n\nfirst draft of revised devmap",
+    "body": "Attachment [trac_4682.patch](tarball://root/attachments/some-uuid/ticket4682/trac_4682.patch) by mvngu created at 2008-12-04 21:20:31\n\nfirst draft of revised devmap",
     "created_at": "2008-12-04T21:20:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4682",
     "type": "issue_comment",
@@ -87,7 +87,7 @@ archive/issue_comments_035292.json:
 }
 ```
 
-Attachment
+Attachment [trac_4682.patch](tarball://root/attachments/some-uuid/ticket4682/trac_4682.patch) by mvngu created at 2008-12-04 21:20:31
 
 first draft of revised devmap
 

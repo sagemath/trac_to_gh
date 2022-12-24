@@ -261,7 +261,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_054233.json:
 ```json
 {
-    "body": "Attachment\n\nI've rebased this patch and made it so that engine is set to 'pdflatex' if tightpage=True is enabled.",
+    "body": "Attachment [trac_6618_view_viewer_tightpage-followup-nt.patch](tarball://root/attachments/some-uuid/ticket6618/trac_6618_view_viewer_tightpage-followup-nt.patch) by mhansen created at 2012-08-04 04:24:49\n\nI've rebased this patch and made it so that engine is set to 'pdflatex' if tightpage=True is enabled.",
     "created_at": "2012-08-04T04:24:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6618",
     "type": "issue_comment",
@@ -270,7 +270,7 @@ archive/issue_comments_054233.json:
 }
 ```
 
-Attachment
+Attachment [trac_6618_view_viewer_tightpage-followup-nt.patch](tarball://root/attachments/some-uuid/ticket6618/trac_6618_view_viewer_tightpage-followup-nt.patch) by mhansen created at 2012-08-04 04:24:49
 
 I've rebased this patch and made it so that engine is set to 'pdflatex' if tightpage=True is enabled.
 

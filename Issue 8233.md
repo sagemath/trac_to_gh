@@ -97,7 +97,7 @@ Forget about this patch!
 archive/issue_comments_072728.json:
 ```json
 {
-    "body": "Attachment\n\nDepends on #7619.",
+    "body": "Attachment [trac_8233_word_concatenation-sl.2.patch](tarball://root/attachments/some-uuid/ticket8233/trac_8233_word_concatenation-sl.2.patch) by slabbe created at 2010-02-28 14:16:43\n\nDepends on #7619.",
     "created_at": "2010-02-28T14:16:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8233",
     "type": "issue_comment",
@@ -106,7 +106,7 @@ archive/issue_comments_072728.json:
 }
 ```
 
-Attachment
+Attachment [trac_8233_word_concatenation-sl.2.patch](tarball://root/attachments/some-uuid/ticket8233/trac_8233_word_concatenation-sl.2.patch) by slabbe created at 2010-02-28 14:16:43
 
 Depends on #7619.
 
@@ -117,7 +117,7 @@ Depends on #7619.
 archive/issue_comments_072729.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8233_word_concatenation-sl.patch](tarball://root/attachments/some-uuid/ticket8233/trac_8233_word_concatenation-sl.patch) by slabbe created at 2010-03-01 13:21:19",
     "created_at": "2010-03-01T13:21:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8233",
     "type": "issue_comment",
@@ -126,7 +126,7 @@ archive/issue_comments_072729.json:
 }
 ```
 
-Attachment
+Attachment [trac_8233_word_concatenation-sl.patch](tarball://root/attachments/some-uuid/ticket8233/trac_8233_word_concatenation-sl.patch) by slabbe created at 2010-03-01 13:21:19
 
 
 

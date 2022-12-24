@@ -45,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3886
 archive/issue_comments_027726.json:
 ```json
 {
-    "body": "Attachment\n\nFirst example.",
+    "body": "Attachment [sage0.png](tarball://root/attachments/some-uuid/ticket3886/sage0.png) by saliola created at 2008-08-18 03:53:45\n\nFirst example.",
     "created_at": "2008-08-18T03:53:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3886",
     "type": "issue_comment",
@@ -54,7 +54,7 @@ archive/issue_comments_027726.json:
 }
 ```
 
-Attachment
+Attachment [sage0.png](tarball://root/attachments/some-uuid/ticket3886/sage0.png) by saliola created at 2008-08-18 03:53:45
 
 First example.
 
@@ -83,7 +83,7 @@ Second example
 archive/issue_comments_027728.json:
 ```json
 {
-    "body": "Attachment\n\nFranco,\n\nThis is caused by/related to #3877 and #3880.",
+    "body": "Attachment [sage1.png](tarball://root/attachments/some-uuid/ticket3886/sage1.png) by rlm created at 2008-08-18 14:39:24\n\nFranco,\n\nThis is caused by/related to #3877 and #3880.",
     "created_at": "2008-08-18T14:39:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3886",
     "type": "issue_comment",
@@ -92,7 +92,7 @@ archive/issue_comments_027728.json:
 }
 ```
 
-Attachment
+Attachment [sage1.png](tarball://root/attachments/some-uuid/ticket3886/sage1.png) by rlm created at 2008-08-18 14:39:24
 
 Franco,
 

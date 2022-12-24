@@ -73,7 +73,7 @@ Changing status from new to needs_review.
 archive/issue_comments_084388.json:
 ```json
 {
-    "body": "Attachment\n\nNote that this implementation is independent of the related patch #9052 which implements Hasse invariants.  It is also independent of related functions in modular/ssmod.  I am CC'ing David Kohel sine he wrote similar functions for Magma (I believe;  of course the code here has been written completely independently of that!)",
+    "body": "Attachment [trac_9087-supersingular.patch](tarball://root/attachments/some-uuid/ticket9087/trac_9087-supersingular.patch) by cremona created at 2010-05-30 11:29:44\n\nNote that this implementation is independent of the related patch #9052 which implements Hasse invariants.  It is also independent of related functions in modular/ssmod.  I am CC'ing David Kohel sine he wrote similar functions for Magma (I believe;  of course the code here has been written completely independently of that!)",
     "created_at": "2010-05-30T11:29:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9087",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_084388.json:
 }
 ```
 
-Attachment
+Attachment [trac_9087-supersingular.patch](tarball://root/attachments/some-uuid/ticket9087/trac_9087-supersingular.patch) by cremona created at 2010-05-30 11:29:44
 
 Note that this implementation is independent of the related patch #9052 which implements Hasse invariants.  It is also independent of related functions in modular/ssmod.  I am CC'ing David Kohel sine he wrote similar functions for Magma (I believe;  of course the code here has been written completely independently of that!)
 
@@ -168,7 +168,7 @@ Thanks John.
 archive/issue_comments_084393.json:
 ```json
 {
-    "body": "Attachment\n\nVersion without tabs - apply only this patch",
+    "body": "Attachment [trac_9087-supersingular-untabified.patch](tarball://root/attachments/some-uuid/ticket9087/trac_9087-supersingular-untabified.patch) by davidloeffler created at 2010-06-30 17:29:41\n\nVersion without tabs - apply only this patch",
     "created_at": "2010-06-30T17:29:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9087",
     "type": "issue_comment",
@@ -177,7 +177,7 @@ archive/issue_comments_084393.json:
 }
 ```
 
-Attachment
+Attachment [trac_9087-supersingular-untabified.patch](tarball://root/attachments/some-uuid/ticket9087/trac_9087-supersingular-untabified.patch) by davidloeffler created at 2010-06-30 17:29:41
 
 Version without tabs - apply only this patch
 

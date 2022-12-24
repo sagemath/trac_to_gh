@@ -47,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3492
 archive/issue_comments_024593.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-3493.patch](tarball://root/attachments/some-uuid/ticket3492/trac-3493.patch) by fwclarke created at 2008-06-22 22:45:14",
     "created_at": "2008-06-22T22:45:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3492",
     "type": "issue_comment",
@@ -56,7 +56,7 @@ archive/issue_comments_024593.json:
 }
 ```
 
-Attachment
+Attachment [trac-3493.patch](tarball://root/attachments/some-uuid/ticket3492/trac-3493.patch) by fwclarke created at 2008-06-22 22:45:14
 
 
 
@@ -91,7 +91,7 @@ This is a nice patch. Some issues still to address:
 archive/issue_comments_024595.json:
 ```json
 {
-    "body": "Attachment\n\nI've  added several doctests covering the points made by dmharvey.  And \nI've introduced an index function; if you can do `End(GF(27, 'a'))[0]`, \nthen it should also be possible to do the opposite.\n\nAll this is now included in a replacement for the previous patch.  (It has a more appropriate \nname!)",
+    "body": "Attachment [sage-3492-replacement.patch](tarball://root/attachments/some-uuid/ticket3492/sage-3492-replacement.patch) by fwclarke created at 2008-06-25 06:53:20\n\nI've  added several doctests covering the points made by dmharvey.  And \nI've introduced an index function; if you can do `End(GF(27, 'a'))[0]`, \nthen it should also be possible to do the opposite.\n\nAll this is now included in a replacement for the previous patch.  (It has a more appropriate \nname!)",
     "created_at": "2008-06-25T06:53:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3492",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_024595.json:
 }
 ```
 
-Attachment
+Attachment [sage-3492-replacement.patch](tarball://root/attachments/some-uuid/ticket3492/sage-3492-replacement.patch) by fwclarke created at 2008-06-25 06:53:20
 
 I've  added several doctests covering the points made by dmharvey.  And 
 I've introduced an index function; if you can do `End(GF(27, 'a'))[0]`, 

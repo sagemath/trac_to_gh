@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2757
 archive/issue_comments_018957.json:
 ```json
 {
-    "body": "Attachment\n\nPatch looks good to me. Positive review.\n\nCheers,\n\nMichael",
+    "body": "Attachment [scipy-sandbox-debian.patch](tarball://root/attachments/some-uuid/ticket2757/scipy-sandbox-debian.patch) by mabshoff created at 2008-04-01 23:37:23\n\nPatch looks good to me. Positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-01T23:37:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2757",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_018957.json:
 }
 ```
 
-Attachment
+Attachment [scipy-sandbox-debian.patch](tarball://root/attachments/some-uuid/ticket2757/scipy-sandbox-debian.patch) by mabshoff created at 2008-04-01 23:37:23
 
 Patch looks good to me. Positive review.
 

@@ -79,7 +79,7 @@ This causes libcsage to be built again.  What we should do instead is delete the
 archive/issue_comments_051486.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6411.patch](tarball://root/attachments/some-uuid/ticket6411/trac_6411.patch) by mhansen created at 2010-01-17 01:53:22",
     "created_at": "2010-01-17T01:53:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6411",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_051486.json:
 }
 ```
 
-Attachment
+Attachment [trac_6411.patch](tarball://root/attachments/some-uuid/ticket6411/trac_6411.patch) by mhansen created at 2010-01-17 01:53:22
 
 
 

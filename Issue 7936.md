@@ -91,7 +91,7 @@ Stefan
 archive/issue_comments_069174.json:
 ```json
 {
-    "body": "Attachment\n\napply to sage-main; based on Sage 4.3.1.alpha2",
+    "body": "Attachment [trac_7936-constructions.patch](tarball://root/attachments/some-uuid/ticket7936/trac_7936-constructions.patch) by mvngu created at 2010-01-16 05:22:24\n\napply to sage-main; based on Sage 4.3.1.alpha2",
     "created_at": "2010-01-16T05:22:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_069174.json:
 }
 ```
 
-Attachment
+Attachment [trac_7936-constructions.patch](tarball://root/attachments/some-uuid/ticket7936/trac_7936-constructions.patch) by mvngu created at 2010-01-16 05:22:24
 
 apply to sage-main; based on Sage 4.3.1.alpha2
 
@@ -129,7 +129,7 @@ apply to examples/ repository; based on Sage 4.3.1.alpha2
 archive/issue_comments_069176.json:
 ```json
 {
-    "body": "Attachment\n\nHere are two patches, which should fix errors in the calculus chapter of the Constructions document. Apply the patch `trac_7936-constructions.patch` to the repository `sage-main`. The second patch applies to the `examples/` directory, which is separate from `sage-main`. But before applying the second patch, the release manager needs to remove a junk file:\n\n```\n[mvngu@boxen examples]$ pwd\n/dev/shm/mvngu/sage-4.3.1.alpha2-7936-maxima/examples\n[mvngu@boxen examples]$ hg st\n? .hgtags.orig\n[mvngu@boxen examples]$ rm .hgtags.orig \n[mvngu@boxen examples]$ hg st\n```\n",
+    "body": "Attachment [trac_7936-desolvers.patch](tarball://root/attachments/some-uuid/ticket7936/trac_7936-desolvers.patch) by mvngu created at 2010-01-16 05:33:40\n\nHere are two patches, which should fix errors in the calculus chapter of the Constructions document. Apply the patch `trac_7936-constructions.patch` to the repository `sage-main`. The second patch applies to the `examples/` directory, which is separate from `sage-main`. But before applying the second patch, the release manager needs to remove a junk file:\n\n```\n[mvngu@boxen examples]$ pwd\n/dev/shm/mvngu/sage-4.3.1.alpha2-7936-maxima/examples\n[mvngu@boxen examples]$ hg st\n? .hgtags.orig\n[mvngu@boxen examples]$ rm .hgtags.orig \n[mvngu@boxen examples]$ hg st\n```\n",
     "created_at": "2010-01-16T05:33:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
@@ -138,7 +138,7 @@ archive/issue_comments_069176.json:
 }
 ```
 
-Attachment
+Attachment [trac_7936-desolvers.patch](tarball://root/attachments/some-uuid/ticket7936/trac_7936-desolvers.patch) by mvngu created at 2010-01-16 05:33:40
 
 Here are two patches, which should fix errors in the calculus chapter of the Constructions document. Apply the patch `trac_7936-constructions.patch` to the repository `sage-main`. The second patch applies to the `examples/` directory, which is separate from `sage-main`. But before applying the second patch, the release manager needs to remove a junk file:
 
@@ -538,7 +538,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_069193.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7936-no-calc-examples.patch](tarball://root/attachments/some-uuid/ticket7936/trac_7936-no-calc-examples.patch) by kcrisman created at 2010-04-28 02:41:56",
     "created_at": "2010-04-28T02:41:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
@@ -547,7 +547,7 @@ archive/issue_comments_069193.json:
 }
 ```
 
-Attachment
+Attachment [trac_7936-no-calc-examples.patch](tarball://root/attachments/some-uuid/ticket7936/trac_7936-no-calc-examples.patch) by kcrisman created at 2010-04-28 02:41:56
 
 
 

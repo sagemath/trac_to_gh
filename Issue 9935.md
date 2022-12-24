@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9936
 archive/issue_comments_098918.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9936-symbolic-functions.patch](tarball://root/attachments/some-uuid/ticket9936/trac_9936-symbolic-functions.patch) by mvngu created at 2010-09-19 11:31:44",
     "created_at": "2010-09-19T11:31:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9935",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_098918.json:
 }
 ```
 
-Attachment
+Attachment [trac_9936-symbolic-functions.patch](tarball://root/attachments/some-uuid/ticket9936/trac_9936-symbolic-functions.patch) by mvngu created at 2010-09-19 11:31:44
 
 
 

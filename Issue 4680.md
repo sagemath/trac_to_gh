@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4680
 archive/issue_comments_035256.json:
 ```json
 {
-    "body": "Attachment\n\nlooks good to me...",
+    "body": "Attachment [setupext.py.diff](tarball://root/attachments/some-uuid/ticket4680/setupext.py.diff) by was created at 2008-12-04 23:00:08\n\nlooks good to me...",
     "created_at": "2008-12-04T23:00:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4680",
     "type": "issue_comment",
@@ -51,7 +51,7 @@ archive/issue_comments_035256.json:
 }
 ```
 
-Attachment
+Attachment [setupext.py.diff](tarball://root/attachments/some-uuid/ticket4680/setupext.py.diff) by was created at 2008-12-04 23:00:08
 
 looks good to me...
 

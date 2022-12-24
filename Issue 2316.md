@@ -53,7 +53,7 @@ patch which kills dsage server and workers when exiting sage
 archive/issue_comments_015415.json:
 ```json
 {
-    "body": "Attachment\n\nAttached patch which kills the dsage server and worker on exit. This in conjunction with the sage cleaner should fix the zombie issues.",
+    "body": "Attachment [kill_zombies.patch](tarball://root/attachments/some-uuid/ticket2316/kill_zombies.patch) by yi created at 2008-04-01 22:47:28\n\nAttached patch which kills the dsage server and worker on exit. This in conjunction with the sage cleaner should fix the zombie issues.",
     "created_at": "2008-04-01T22:47:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2316",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_015415.json:
 }
 ```
 
-Attachment
+Attachment [kill_zombies.patch](tarball://root/attachments/some-uuid/ticket2316/kill_zombies.patch) by yi created at 2008-04-01 22:47:28
 
 Attached patch which kills the dsage server and worker on exit. This in conjunction with the sage cleaner should fix the zombie issues.
 

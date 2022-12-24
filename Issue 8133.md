@@ -276,7 +276,7 @@ or maybe with () around it. Or we could leave it there as values_on_gens().
 archive/issue_comments_071520.json:
 ```json
 {
-    "body": "Attachment\n\nexported against 4.3.4",
+    "body": "Attachment [trac_8133.patch](tarball://root/attachments/some-uuid/ticket8133/trac_8133.patch) by wuthrich created at 2010-03-27 21:08:47\n\nexported against 4.3.4",
     "created_at": "2010-03-27T21:08:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8133",
     "type": "issue_comment",
@@ -285,7 +285,7 @@ archive/issue_comments_071520.json:
 }
 ```
 
-Attachment
+Attachment [trac_8133.patch](tarball://root/attachments/some-uuid/ticket8133/trac_8133.patch) by wuthrich created at 2010-03-27 21:08:47
 
 exported against 4.3.4
 

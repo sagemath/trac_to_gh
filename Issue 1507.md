@@ -49,7 +49,7 @@ this is *only* a documentation addition -- no code, so should be easy to referee
 archive/issue_comments_009649.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-1507.patch](tarball://root/attachments/some-uuid/ticket1507/trac-1507.patch) by was created at 2007-12-14 17:58:26",
     "created_at": "2007-12-14T17:58:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1507",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_009649.json:
 }
 ```
 
-Attachment
+Attachment [trac-1507.patch](tarball://root/attachments/some-uuid/ticket1507/trac-1507.patch) by was created at 2007-12-14 17:58:26
 
 
 

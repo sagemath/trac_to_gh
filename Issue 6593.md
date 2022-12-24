@@ -68,7 +68,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6593
 archive/issue_comments_053956.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6593-word-morphism-doctest-sl.patch](tarball://root/attachments/some-uuid/ticket6593/trac_6593-word-morphism-doctest-sl.patch) by slabbe created at 2009-07-22 17:08:55",
     "created_at": "2009-07-22T17:08:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6593",
     "type": "issue_comment",
@@ -77,7 +77,7 @@ archive/issue_comments_053956.json:
 }
 ```
 
-Attachment
+Attachment [trac_6593-word-morphism-doctest-sl.patch](tarball://root/attachments/some-uuid/ticket6593/trac_6593-word-morphism-doctest-sl.patch) by slabbe created at 2009-07-22 17:08:55
 
 
 

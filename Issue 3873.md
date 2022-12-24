@@ -46,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3873
 archive/issue_comments_027618.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [doctest-warnings.patch](tarball://root/attachments/some-uuid/ticket3873/doctest-warnings.patch) by mhansen created at 2008-08-15 21:53:49",
     "created_at": "2008-08-15T21:53:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3873",
     "type": "issue_comment",
@@ -55,7 +55,7 @@ archive/issue_comments_027618.json:
 }
 ```
 
-Attachment
+Attachment [doctest-warnings.patch](tarball://root/attachments/some-uuid/ticket3873/doctest-warnings.patch) by mhansen created at 2008-08-15 21:53:49
 
 
 
@@ -100,7 +100,7 @@ This depends on #3940 (which imports the warnings module on sage startup).
 archive/issue_comments_027621.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac3873-sage_scripts.patch](tarball://root/attachments/some-uuid/ticket3873/trac3873-sage_scripts.patch) by cwitty created at 2008-08-24 00:50:41",
     "created_at": "2008-08-24T00:50:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3873",
     "type": "issue_comment",
@@ -109,7 +109,7 @@ archive/issue_comments_027621.json:
 }
 ```
 
-Attachment
+Attachment [trac3873-sage_scripts.patch](tarball://root/attachments/some-uuid/ticket3873/trac3873-sage_scripts.patch) by cwitty created at 2008-08-24 00:50:41
 
 
 
@@ -118,7 +118,7 @@ Attachment
 archive/issue_comments_027622.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac3873-doctest-warnings.patch](tarball://root/attachments/some-uuid/ticket3873/trac3873-doctest-warnings.patch) by cwitty created at 2008-08-24 00:50:59",
     "created_at": "2008-08-24T00:50:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3873",
     "type": "issue_comment",
@@ -127,7 +127,7 @@ archive/issue_comments_027622.json:
 }
 ```
 
-Attachment
+Attachment [trac3873-doctest-warnings.patch](tarball://root/attachments/some-uuid/ticket3873/trac3873-doctest-warnings.patch) by cwitty created at 2008-08-24 00:50:59
 
 
 

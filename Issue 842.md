@@ -161,7 +161,7 @@ a patch for the Singular spkg
 archive/issue_comments_005214.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6720.patch](tarball://root/attachments/some-uuid/ticket842/6720.patch) by cwitty created at 2007-10-10 07:05:28",
     "created_at": "2007-10-10T07:05:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/842",
     "type": "issue_comment",
@@ -170,7 +170,7 @@ archive/issue_comments_005214.json:
 }
 ```
 
-Attachment
+Attachment [6720.patch](tarball://root/attachments/some-uuid/ticket842/6720.patch) by cwitty created at 2007-10-10 07:05:28
 
 
 
@@ -218,7 +218,7 @@ An updated spkg can be found at
 archive/issue_comments_005217.json:
 ```json
 {
-    "body": "Attachment\n\n`multi_polynomial_ideal_singular_ntl_fixes.patch` fixes the doctest failures introduced by the switch to NTL.\n\nTo apply all patches:\n* install the new NTL spkg from http://sage.math.washington.edu/home/mabshoff/ntl-5.4.1.p6.spkg\n* install the new Singular spkg from http://sage.math.washington.edu/home/malb/pkgs/singular-3-0-3-1-20071010.spkg\n* apply `6720.patch` attached above\n* apply `multi_polynomial_ideal_singular_ntl_fixes.patch`",
+    "body": "Attachment [multi_polynomial_ideal_singular_ntl_fixes.patch](tarball://root/attachments/some-uuid/ticket842/multi_polynomial_ideal_singular_ntl_fixes.patch) by malb created at 2007-10-12 10:36:04\n\n`multi_polynomial_ideal_singular_ntl_fixes.patch` fixes the doctest failures introduced by the switch to NTL.\n\nTo apply all patches:\n* install the new NTL spkg from http://sage.math.washington.edu/home/mabshoff/ntl-5.4.1.p6.spkg\n* install the new Singular spkg from http://sage.math.washington.edu/home/malb/pkgs/singular-3-0-3-1-20071010.spkg\n* apply `6720.patch` attached above\n* apply `multi_polynomial_ideal_singular_ntl_fixes.patch`",
     "created_at": "2007-10-12T10:36:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/842",
     "type": "issue_comment",
@@ -227,7 +227,7 @@ archive/issue_comments_005217.json:
 }
 ```
 
-Attachment
+Attachment [multi_polynomial_ideal_singular_ntl_fixes.patch](tarball://root/attachments/some-uuid/ticket842/multi_polynomial_ideal_singular_ntl_fixes.patch) by malb created at 2007-10-12 10:36:04
 
 `multi_polynomial_ideal_singular_ntl_fixes.patch` fixes the doctest failures introduced by the switch to NTL.
 

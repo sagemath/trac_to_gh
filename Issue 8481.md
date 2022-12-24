@@ -69,7 +69,7 @@ Changing status from new to needs_review.
 archive/issue_comments_076436.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8481-lift.patch](tarball://root/attachments/some-uuid/ticket8481/trac_8481-lift.patch) by jhpalmieri created at 2010-03-08 23:55:07",
     "created_at": "2010-03-08T23:55:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8481",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_076436.json:
 }
 ```
 
-Attachment
+Attachment [trac_8481-lift.patch](tarball://root/attachments/some-uuid/ticket8481/trac_8481-lift.patch) by jhpalmieri created at 2010-03-08 23:55:07
 
 
 
@@ -152,7 +152,7 @@ All doctests pass fine.
 archive/issue_comments_076440.json:
 ```json
 {
-    "body": "Attachment\n\nHere's a new patch.  I hope the speed hit isn't too bad with this one.",
+    "body": "Attachment [trac_8481-lift.v2.patch](tarball://root/attachments/some-uuid/ticket8481/trac_8481-lift.v2.patch) by jhpalmieri created at 2010-04-06 00:00:00\n\nHere's a new patch.  I hope the speed hit isn't too bad with this one.",
     "created_at": "2010-04-06T00:00:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8481",
     "type": "issue_comment",
@@ -161,7 +161,7 @@ archive/issue_comments_076440.json:
 }
 ```
 
-Attachment
+Attachment [trac_8481-lift.v2.patch](tarball://root/attachments/some-uuid/ticket8481/trac_8481-lift.v2.patch) by jhpalmieri created at 2010-04-06 00:00:00
 
 Here's a new patch.  I hope the speed hit isn't too bad with this one.
 

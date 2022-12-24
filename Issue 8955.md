@@ -447,7 +447,7 @@ Could someone rebase the patch(es) here against 4.6.alpha1 when it's released (s
 archive/issue_comments_082552.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [random_matrix.patch](tarball://root/attachments/some-uuid/ticket8955/random_matrix.patch) by malb created at 2010-09-20 15:52:26",
     "created_at": "2010-09-20T15:52:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8955",
     "type": "issue_comment",
@@ -456,7 +456,7 @@ archive/issue_comments_082552.json:
 }
 ```
 
-Attachment
+Attachment [random_matrix.patch](tarball://root/attachments/some-uuid/ticket8955/random_matrix.patch) by malb created at 2010-09-20 15:52:26
 
 
 
@@ -537,7 +537,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_082557.json:
 ```json
 {
-    "body": "Attachment\n\nReviewer's patch also updated ;)\nPositive review. (I'm quite sure malb will confirm)",
+    "body": "Attachment [8955_review.patch](tarball://root/attachments/some-uuid/ticket8955/8955_review.patch) by ylchapuy created at 2010-09-27 14:28:36\n\nReviewer's patch also updated ;)\nPositive review. (I'm quite sure malb will confirm)",
     "created_at": "2010-09-27T14:28:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8955",
     "type": "issue_comment",
@@ -546,7 +546,7 @@ archive/issue_comments_082557.json:
 }
 ```
 
-Attachment
+Attachment [8955_review.patch](tarball://root/attachments/some-uuid/ticket8955/8955_review.patch) by ylchapuy created at 2010-09-27 14:28:36
 
 Reviewer's patch also updated ;)
 Positive review. (I'm quite sure malb will confirm)

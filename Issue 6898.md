@@ -49,7 +49,7 @@ based on Sage 4.1.1
 archive/issue_comments_056988.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6898-update-install.patch](tarball://root/attachments/some-uuid/ticket6898/trac_6898-update-install.patch) by mvngu created at 2009-09-06 10:32:29",
     "created_at": "2009-09-06T10:32:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6898",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_056988.json:
 }
 ```
 
-Attachment
+Attachment [trac_6898-update-install.patch](tarball://root/attachments/some-uuid/ticket6898/trac_6898-update-install.patch) by mvngu created at 2009-09-06 10:32:29
 
 
 
@@ -85,7 +85,7 @@ I don't understand the part about running "./sage" first to set up environment v
 archive/issue_comments_056990.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of other patch",
+    "body": "Attachment [trac_6898-part2.patch](tarball://root/attachments/some-uuid/ticket6898/trac_6898-part2.patch) by jhpalmieri created at 2009-09-22 23:35:49\n\napply on top of other patch",
     "created_at": "2009-09-22T23:35:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6898",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_056990.json:
 }
 ```
 
-Attachment
+Attachment [trac_6898-part2.patch](tarball://root/attachments/some-uuid/ticket6898/trac_6898-part2.patch) by jhpalmieri created at 2009-09-22 23:35:49
 
 apply on top of other patch
 

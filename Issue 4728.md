@@ -174,7 +174,7 @@ My least favourite thing is that giving one keyword argument must remain the var
 archive/issue_comments_035693.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4728-symbolic-roots.patch](tarball://root/attachments/some-uuid/ticket4728/trac_4728-symbolic-roots.patch) by ncalexan created at 2009-01-22 09:55:33",
     "created_at": "2009-01-22T09:55:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4728",
     "type": "issue_comment",
@@ -183,7 +183,7 @@ archive/issue_comments_035693.json:
 }
 ```
 
-Attachment
+Attachment [trac_4728-symbolic-roots.patch](tarball://root/attachments/some-uuid/ticket4728/trac_4728-symbolic-roots.patch) by ncalexan created at 2009-01-22 09:55:33
 
 
 
@@ -244,7 +244,7 @@ apply on top of previous patch
 archive/issue_comments_035696.json:
 ```json
 {
-    "body": "Attachment\n\npositive review.  I've posted a small patch for the docs to correct the problem malb pointed out.  All tests pass in calculus.py.",
+    "body": "Attachment [trac_4728-docs.patch](tarball://root/attachments/some-uuid/ticket4728/trac_4728-docs.patch) by jason created at 2009-01-28 17:56:47\n\npositive review.  I've posted a small patch for the docs to correct the problem malb pointed out.  All tests pass in calculus.py.",
     "created_at": "2009-01-28T17:56:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4728",
     "type": "issue_comment",
@@ -253,7 +253,7 @@ archive/issue_comments_035696.json:
 }
 ```
 
-Attachment
+Attachment [trac_4728-docs.patch](tarball://root/attachments/some-uuid/ticket4728/trac_4728-docs.patch) by jason created at 2009-01-28 17:56:47
 
 positive review.  I've posted a small patch for the docs to correct the problem malb pointed out.  All tests pass in calculus.py.
 

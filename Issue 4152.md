@@ -80,7 +80,7 @@ Changing status from new to assigned.
 archive/issue_comments_030151.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4152.patch](tarball://root/attachments/some-uuid/ticket4152/trac_4152.patch) by mhansen created at 2009-01-22 08:27:42",
     "created_at": "2009-01-22T08:27:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4152",
     "type": "issue_comment",
@@ -89,7 +89,7 @@ archive/issue_comments_030151.json:
 }
 ```
 
-Attachment
+Attachment [trac_4152.patch](tarball://root/attachments/some-uuid/ticket4152/trac_4152.patch) by mhansen created at 2009-01-22 08:27:42
 
 
 
@@ -134,7 +134,7 @@ apply on top of previous patch
 archive/issue_comments_030154.json:
 ```json
 {
-    "body": "Attachment\n\npositive review for mhansen's patch.  My patch further adds to the documentation and makes the parametric plot function dispatch the 3d version when needed.  My patch needs to be reviewed.",
+    "body": "Attachment [trac_4152-docs-dispatch.patch](tarball://root/attachments/some-uuid/ticket4152/trac_4152-docs-dispatch.patch) by jason created at 2009-01-22 14:20:59\n\npositive review for mhansen's patch.  My patch further adds to the documentation and makes the parametric plot function dispatch the 3d version when needed.  My patch needs to be reviewed.",
     "created_at": "2009-01-22T14:20:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4152",
     "type": "issue_comment",
@@ -143,7 +143,7 @@ archive/issue_comments_030154.json:
 }
 ```
 
-Attachment
+Attachment [trac_4152-docs-dispatch.patch](tarball://root/attachments/some-uuid/ticket4152/trac_4152-docs-dispatch.patch) by jason created at 2009-01-22 14:20:59
 
 positive review for mhansen's patch.  My patch further adds to the documentation and makes the parametric plot function dispatch the 3d version when needed.  My patch needs to be reviewed.
 

@@ -183,7 +183,7 @@ Changing status from new to needs_review.
 archive/issue_comments_065588.json:
 ```json
 {
-    "body": "Attachment\n\nI updated attachment:trac_7661-maxima_convert_back.patch to remove a doctest fix broken by a previous patch in my queue (#6949, `symbol...` line in sage/symbolic/ring.pyx).\n\nThis patch depends on #7748.",
+    "body": "Attachment [trac_7661-maxima_convert_back.patch](tarball://root/attachments/some-uuid/ticket7661/trac_7661-maxima_convert_back.patch) by burcin created at 2010-04-06 15:42:51\n\nI updated attachment:trac_7661-maxima_convert_back.patch to remove a doctest fix broken by a previous patch in my queue (#6949, `symbol...` line in sage/symbolic/ring.pyx).\n\nThis patch depends on #7748.",
     "created_at": "2010-04-06T15:42:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7661",
     "type": "issue_comment",
@@ -192,7 +192,7 @@ archive/issue_comments_065588.json:
 }
 ```
 
-Attachment
+Attachment [trac_7661-maxima_convert_back.patch](tarball://root/attachments/some-uuid/ticket7661/trac_7661-maxima_convert_back.patch) by burcin created at 2010-04-06 15:42:51
 
 I updated attachment:trac_7661-maxima_convert_back.patch to remove a doctest fix broken by a previous patch in my queue (#6949, `symbol...` line in sage/symbolic/ring.pyx).
 
@@ -364,7 +364,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_065596.json:
 ```json
 {
-    "body": "Attachment\n\napply only this patch",
+    "body": "Attachment [trac_7661-maxima_convert_back.take2.patch](tarball://root/attachments/some-uuid/ticket7661/trac_7661-maxima_convert_back.take2.patch) by burcin created at 2010-04-09 18:54:11\n\napply only this patch",
     "created_at": "2010-04-09T18:54:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7661",
     "type": "issue_comment",
@@ -373,7 +373,7 @@ archive/issue_comments_065596.json:
 }
 ```
 
-Attachment
+Attachment [trac_7661-maxima_convert_back.take2.patch](tarball://root/attachments/some-uuid/ticket7661/trac_7661-maxima_convert_back.take2.patch) by burcin created at 2010-04-09 18:54:11
 
 apply only this patch
 

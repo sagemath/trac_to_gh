@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9686
 archive/issue_comments_094160.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9686.patch](tarball://root/attachments/some-uuid/ticket9686/trac_9686.patch) by rlm created at 2010-08-04 13:39:49",
     "created_at": "2010-08-04T13:39:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9686",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_094160.json:
 }
 ```
 
-Attachment
+Attachment [trac_9686.patch](tarball://root/attachments/some-uuid/ticket9686/trac_9686.patch) by rlm created at 2010-08-04 13:39:49
 
 
 
@@ -67,7 +67,7 @@ Changing status from new to needs_review.
 archive/issue_comments_094162.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9686-reviewer.patch](tarball://root/attachments/some-uuid/ticket9686/trac_9686-reviewer.patch) by mvngu created at 2010-08-04 19:54:42",
     "created_at": "2010-08-04T19:54:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9686",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_094162.json:
 }
 ```
 
-Attachment
+Attachment [trac_9686-reviewer.patch](tarball://root/attachments/some-uuid/ticket9686/trac_9686-reviewer.patch) by mvngu created at 2010-08-04 19:54:42
 
 
 

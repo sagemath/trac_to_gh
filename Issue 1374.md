@@ -206,7 +206,7 @@ Unhandled SIGBUS: A bus error occured in SAGE.
 archive/issue_comments_008817.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-1374.patch](tarball://root/attachments/some-uuid/ticket1374/trac-1374.patch) by was created at 2007-12-02 21:32:57",
     "created_at": "2007-12-02T21:32:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1374",
     "type": "issue_comment",
@@ -215,7 +215,7 @@ archive/issue_comments_008817.json:
 }
 ```
 
-Attachment
+Attachment [trac-1374.patch](tarball://root/attachments/some-uuid/ticket1374/trac-1374.patch) by was created at 2007-12-02 21:32:57
 
 
 
@@ -260,7 +260,7 @@ Resolution: fixed
 archive/issue_comments_008820.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1374-part2.patch](tarball://root/attachments/some-uuid/ticket1374/1374-part2.patch) by cwitty created at 2007-12-02 23:19:18",
     "created_at": "2007-12-02T23:19:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1374",
     "type": "issue_comment",
@@ -269,7 +269,7 @@ archive/issue_comments_008820.json:
 }
 ```
 
-Attachment
+Attachment [1374-part2.patch](tarball://root/attachments/some-uuid/ticket1374/1374-part2.patch) by cwitty created at 2007-12-02 23:19:18
 
 
 

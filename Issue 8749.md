@@ -103,7 +103,7 @@ More specifically, I just saw this on lines 304, 310, 336, and 418.
 archive/issue_comments_080044.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8749.patch](tarball://root/attachments/some-uuid/ticket8749/trac_8749.patch) by rlm created at 2010-04-30 01:44:55",
     "created_at": "2010-04-30T01:44:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8749",
     "type": "issue_comment",
@@ -112,7 +112,7 @@ archive/issue_comments_080044.json:
 }
 ```
 
-Attachment
+Attachment [trac_8749.patch](tarball://root/attachments/some-uuid/ticket8749/trac_8749.patch) by rlm created at 2010-04-30 01:44:55
 
 
 
@@ -194,7 +194,7 @@ The attached patch fixes this by removing a newline in each ...'d test.
 archive/issue_comments_080049.json:
 ```json
 {
-    "body": "Attachment\n\nSecond patch looks good: positive review.",
+    "body": "Attachment [trac_8749-part2.patch](tarball://root/attachments/some-uuid/ticket8749/trac_8749-part2.patch) by rlm created at 2010-05-01 20:30:35\n\nSecond patch looks good: positive review.",
     "created_at": "2010-05-01T20:30:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8749",
     "type": "issue_comment",
@@ -203,7 +203,7 @@ archive/issue_comments_080049.json:
 }
 ```
 
-Attachment
+Attachment [trac_8749-part2.patch](tarball://root/attachments/some-uuid/ticket8749/trac_8749-part2.patch) by rlm created at 2010-05-01 20:30:35
 
 Second patch looks good: positive review.
 

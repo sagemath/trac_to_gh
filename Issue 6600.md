@@ -69,7 +69,7 @@ based on Sage 4.1.1.alpha0
 archive/issue_comments_054027.json:
 ```json
 {
-    "body": "Attachment\n\nmore typo fixes",
+    "body": "Attachment [trac_6600-multiply-typo.patch](tarball://root/attachments/some-uuid/ticket6600/trac_6600-multiply-typo.patch) by mvngu created at 2009-07-24 22:03:02\n\nmore typo fixes",
     "created_at": "2009-07-24T22:03:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6600",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_054027.json:
 }
 ```
 
-Attachment
+Attachment [trac_6600-multiply-typo.patch](tarball://root/attachments/some-uuid/ticket6600/trac_6600-multiply-typo.patch) by mvngu created at 2009-07-24 22:03:02
 
 more typo fixes
 

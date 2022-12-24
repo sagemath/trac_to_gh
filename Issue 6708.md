@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6708
 archive/issue_comments_055084.json:
 ```json
 {
-    "body": "Attachment\n\nbased on Sage 4.1.1.rc2",
+    "body": "Attachment [trac_6708-spell-check-groups.patch](tarball://root/attachments/some-uuid/ticket6708/trac_6708-spell-check-groups.patch) by mvngu created at 2009-08-11 11:36:47\n\nbased on Sage 4.1.1.rc2",
     "created_at": "2009-08-11T11:36:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6708",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_055084.json:
 }
 ```
 
-Attachment
+Attachment [trac_6708-spell-check-groups.patch](tarball://root/attachments/some-uuid/ticket6708/trac_6708-spell-check-groups.patch) by mvngu created at 2009-08-11 11:36:47
 
 based on Sage 4.1.1.rc2
 

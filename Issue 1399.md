@@ -97,7 +97,7 @@ Changing status from new to assigned.
 archive/issue_comments_009015.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1399.patch](tarball://root/attachments/some-uuid/ticket1399/1399.patch) by mhansen created at 2007-12-06 04:47:17",
     "created_at": "2007-12-06T04:47:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1399",
     "type": "issue_comment",
@@ -106,7 +106,7 @@ archive/issue_comments_009015.json:
 }
 ```
 
-Attachment
+Attachment [1399.patch](tarball://root/attachments/some-uuid/ticket1399/1399.patch) by mhansen created at 2007-12-06 04:47:17
 
 
 
@@ -205,7 +205,7 @@ If the change to integer.pyx isn't accepted, then the change to ideal.py needs t
 archive/issue_comments_009019.json:
 ```json
 {
-    "body": "Attachment\n\nRevised patch by John Cremona",
+    "body": "Attachment [1399new.patch](tarball://root/attachments/some-uuid/ticket1399/1399new.patch) by cremona created at 2008-02-16 18:33:04\n\nRevised patch by John Cremona",
     "created_at": "2008-02-16T18:33:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1399",
     "type": "issue_comment",
@@ -214,7 +214,7 @@ archive/issue_comments_009019.json:
 }
 ```
 
-Attachment
+Attachment [1399new.patch](tarball://root/attachments/some-uuid/ticket1399/1399new.patch) by cremona created at 2008-02-16 18:33:04
 
 Revised patch by John Cremona
 
@@ -267,7 +267,7 @@ to be applied after 1399new.patch
 archive/issue_comments_009022.json:
 ```json
 {
-    "body": "Attachment\n\nSmall addendum to previous:  I forgot to return True for the zero ideal (which is prime in a PID!)\nBoth patches 1399new.patch and 1399newextra.patch shold be applied.",
+    "body": "Attachment [1399newextra.patch](tarball://root/attachments/some-uuid/ticket1399/1399newextra.patch) by cremona created at 2008-02-16 18:54:20\n\nSmall addendum to previous:  I forgot to return True for the zero ideal (which is prime in a PID!)\nBoth patches 1399new.patch and 1399newextra.patch shold be applied.",
     "created_at": "2008-02-16T18:54:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1399",
     "type": "issue_comment",
@@ -276,7 +276,7 @@ archive/issue_comments_009022.json:
 }
 ```
 
-Attachment
+Attachment [1399newextra.patch](tarball://root/attachments/some-uuid/ticket1399/1399newextra.patch) by cremona created at 2008-02-16 18:54:20
 
 Small addendum to previous:  I forgot to return True for the zero ideal (which is prime in a PID!)
 Both patches 1399new.patch and 1399newextra.patch shold be applied.
@@ -306,7 +306,7 @@ Very nice. Code looks good to me, all doctests pass after applying 1399new.patch
 archive/issue_comments_009024.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-1399-3_of_3.patch](tarball://root/attachments/some-uuid/ticket1399/sage-1399-3_of_3.patch) by was created at 2008-02-24 21:07:52",
     "created_at": "2008-02-24T21:07:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1399",
     "type": "issue_comment",
@@ -315,7 +315,7 @@ archive/issue_comments_009024.json:
 }
 ```
 
-Attachment
+Attachment [sage-1399-3_of_3.patch](tarball://root/attachments/some-uuid/ticket1399/sage-1399-3_of_3.patch) by was created at 2008-02-24 21:07:52
 
 
 

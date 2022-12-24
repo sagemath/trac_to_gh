@@ -66,7 +66,7 @@ Thanks for reporting it.
 archive/issue_comments_010070.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-1580.patch](tarball://root/attachments/some-uuid/ticket1580/trac-1580.patch) by rlm created at 2007-12-22 21:00:42",
     "created_at": "2007-12-22T21:00:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1580",
     "type": "issue_comment",
@@ -75,7 +75,7 @@ archive/issue_comments_010070.json:
 }
 ```
 
-Attachment
+Attachment [trac-1580.patch](tarball://root/attachments/some-uuid/ticket1580/trac-1580.patch) by rlm created at 2007-12-22 21:00:42
 
 
 

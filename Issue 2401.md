@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2401
 archive/issue_comments_016215.json:
 ```json
 {
-    "body": "Attachment\n\nAdded missing doctests for non-underscore functions in rings/integer_ring.pyx. Current score is now at 75% (27 of 36).",
+    "body": "Attachment [rings.integer_ring.patch](tarball://root/attachments/some-uuid/ticket2401/rings.integer_ring.patch) by cswiercz created at 2008-03-07 23:27:32\n\nAdded missing doctests for non-underscore functions in rings/integer_ring.pyx. Current score is now at 75% (27 of 36).",
     "created_at": "2008-03-07T23:27:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2401",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_016215.json:
 }
 ```
 
-Attachment
+Attachment [rings.integer_ring.patch](tarball://root/attachments/some-uuid/ticket2401/rings.integer_ring.patch) by cswiercz created at 2008-03-07 23:27:32
 
 Added missing doctests for non-underscore functions in rings/integer_ring.pyx. Current score is now at 75% (27 of 36).
 

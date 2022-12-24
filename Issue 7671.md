@@ -123,7 +123,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_065753.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7671.patch](tarball://root/attachments/some-uuid/ticket7671/trac_7671.patch) by ncohen created at 2010-03-02 08:53:26",
     "created_at": "2010-03-02T08:53:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7671",
     "type": "issue_comment",
@@ -132,7 +132,7 @@ archive/issue_comments_065753.json:
 }
 ```
 
-Attachment
+Attachment [trac_7671.patch](tarball://root/attachments/some-uuid/ticket7671/trac_7671.patch) by ncohen created at 2010-03-02 08:53:26
 
 
 

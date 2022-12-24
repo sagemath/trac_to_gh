@@ -315,7 +315,7 @@ Nathann
 archive/issue_comments_062042.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7378.patch](tarball://root/attachments/some-uuid/ticket7378/trac_7378.patch) by ncohen created at 2010-06-20 18:04:14",
     "created_at": "2010-06-20T18:04:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7378",
     "type": "issue_comment",
@@ -324,7 +324,7 @@ archive/issue_comments_062042.json:
 }
 ```
 
-Attachment
+Attachment [trac_7378.patch](tarball://root/attachments/some-uuid/ticket7378/trac_7378.patch) by ncohen created at 2010-06-20 18:04:14
 
 
 
@@ -369,7 +369,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_062045.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:10 ncohen]:\n> I really wanted the edge to be \"split\" into several parts, all bearing the same label. \n\nThanks for clarifying. I've tried to make this clear in the documentation. If you approve of my referee patch, please set the ticket to positive review.",
+    "body": "Attachment [trac_7378-ref.patch](tarball://root/attachments/some-uuid/ticket7378/trac_7378-ref.patch) by rlm created at 2010-06-21 17:40:17\n\nReplying to [comment:10 ncohen]:\n> I really wanted the edge to be \"split\" into several parts, all bearing the same label. \n\nThanks for clarifying. I've tried to make this clear in the documentation. If you approve of my referee patch, please set the ticket to positive review.",
     "created_at": "2010-06-21T17:40:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7378",
     "type": "issue_comment",
@@ -378,7 +378,7 @@ archive/issue_comments_062045.json:
 }
 ```
 
-Attachment
+Attachment [trac_7378-ref.patch](tarball://root/attachments/some-uuid/ticket7378/trac_7378-ref.patch) by rlm created at 2010-06-21 17:40:17
 
 Replying to [comment:10 ncohen]:
 > I really wanted the edge to be "split" into several parts, all bearing the same label. 

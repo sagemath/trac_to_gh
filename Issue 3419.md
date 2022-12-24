@@ -45,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3419
 archive/issue_comments_024067.json:
 ```json
 {
-    "body": "Attachment\n\nThe cpdef patch ought to get merged this week, I am not sure what the current merge status is.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac3419-100_binary_code.patch](tarball://root/attachments/some-uuid/ticket3419/trac3419-100_binary_code.patch) by mabshoff created at 2008-06-13 18:47:06\n\nThe cpdef patch ought to get merged this week, I am not sure what the current merge status is.\n\nCheers,\n\nMichael",
     "created_at": "2008-06-13T18:47:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3419",
     "type": "issue_comment",
@@ -54,7 +54,7 @@ archive/issue_comments_024067.json:
 }
 ```
 
-Attachment
+Attachment [trac3419-100_binary_code.patch](tarball://root/attachments/some-uuid/ticket3419/trac3419-100_binary_code.patch) by mabshoff created at 2008-06-13 18:47:06
 
 The cpdef patch ought to get merged this week, I am not sure what the current merge status is.
 

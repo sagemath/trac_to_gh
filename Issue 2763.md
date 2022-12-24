@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2763
 archive/issue_comments_018979.json:
 ```json
 {
-    "body": "Attachment\n\nPatch is good. Positive review.\n\nCheers,\n\nMichael",
+    "body": "Attachment [rubiks-amd64.patch](tarball://root/attachments/some-uuid/ticket2763/rubiks-amd64.patch) by mabshoff created at 2008-04-01 23:17:30\n\nPatch is good. Positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-01T23:17:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2763",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_018979.json:
 }
 ```
 
-Attachment
+Attachment [rubiks-amd64.patch](tarball://root/attachments/some-uuid/ticket2763/rubiks-amd64.patch) by mabshoff created at 2008-04-01 23:17:30
 
 Patch is good. Positive review.
 

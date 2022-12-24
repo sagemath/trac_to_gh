@@ -84,7 +84,7 @@ Changing status from new to needs_review.
 archive/issue_comments_090045.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated ! There should not be any other trace of the optional GLPK package in Sage :-)\n\nNathann",
+    "body": "Attachment [trac_9432.patch](tarball://root/attachments/some-uuid/ticket9432/trac_9432.patch) by ncohen created at 2010-07-06 09:58:59\n\nUpdated ! There should not be any other trace of the optional GLPK package in Sage :-)\n\nNathann",
     "created_at": "2010-07-06T09:58:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9432",
     "type": "issue_comment",
@@ -93,7 +93,7 @@ archive/issue_comments_090045.json:
 }
 ```
 
-Attachment
+Attachment [trac_9432.patch](tarball://root/attachments/some-uuid/ticket9432/trac_9432.patch) by ncohen created at 2010-07-06 09:58:59
 
 Updated ! There should not be any other trace of the optional GLPK package in Sage :-)
 

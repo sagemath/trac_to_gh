@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6843
 archive/issue_comments_056447.json:
 ```json
 {
-    "body": "Attachment\n\nsws that shows this problem",
+    "body": "Attachment [trac6843.sws](tarball://root/attachments/some-uuid/ticket6843/trac6843.sws) by wjp created at 2009-08-29 17:37:07\n\nsws that shows this problem",
     "created_at": "2009-08-29T17:37:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6843",
     "type": "issue_comment",
@@ -53,7 +53,7 @@ archive/issue_comments_056447.json:
 }
 ```
 
-Attachment
+Attachment [trac6843.sws](tarball://root/attachments/some-uuid/ticket6843/trac6843.sws) by wjp created at 2009-08-29 17:37:07
 
 sws that shows this problem
 
@@ -64,7 +64,7 @@ sws that shows this problem
 archive/issue_comments_056448.json:
 ```json
 {
-    "body": "Attachment\n\nI attached a patch that does a `chmod -R go-rwx,+rwX *` on the untarred sws file, to make the unpacked files match the current umask. (Both in the restrictive and permissive directions.)",
+    "body": "Attachment [trac_6843-sws_permissions.patch](tarball://root/attachments/some-uuid/ticket6843/trac_6843-sws_permissions.patch) by wjp created at 2009-08-31 16:22:43\n\nI attached a patch that does a `chmod -R go-rwx,+rwX *` on the untarred sws file, to make the unpacked files match the current umask. (Both in the restrictive and permissive directions.)",
     "created_at": "2009-08-31T16:22:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6843",
     "type": "issue_comment",
@@ -73,7 +73,7 @@ archive/issue_comments_056448.json:
 }
 ```
 
-Attachment
+Attachment [trac_6843-sws_permissions.patch](tarball://root/attachments/some-uuid/ticket6843/trac_6843-sws_permissions.patch) by wjp created at 2009-08-31 16:22:43
 
 I attached a patch that does a `chmod -R go-rwx,+rwX *` on the untarred sws file, to make the unpacked files match the current umask. (Both in the restrictive and permissive directions.)
 

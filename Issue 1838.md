@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1838
 archive/issue_comments_011634.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [latex-lists-and-tables-with-a-space-after-the-comma.diff](tarball://root/attachments/some-uuid/ticket1838/latex-lists-and-tables-with-a-space-after-the-comma.diff) by schilly created at 2008-01-18 21:45:50",
     "created_at": "2008-01-18T21:45:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1838",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_011634.json:
 }
 ```
 
-Attachment
+Attachment [latex-lists-and-tables-with-a-space-after-the-comma.diff](tarball://root/attachments/some-uuid/ticket1838/latex-lists-and-tables-with-a-space-after-the-comma.diff) by schilly created at 2008-01-18 21:45:50
 
 
 

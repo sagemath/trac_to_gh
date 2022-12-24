@@ -215,7 +215,7 @@ I have a temporary account on John's machine, and have tested the attached patch
 archive/issue_comments_035062.json:
 ```json
 {
-    "body": "Attachment\n\nOK, so William's patch worked for me, but that's not much of a test since I tested on the same machine as he did (after applying to 3.2.1.rc0).  But I also applied it on a 32-bit linux machine and it worked fine there too.  It would be a good idea to test it elsewhere, I think.",
+    "body": "Attachment [trac_4655.patch](tarball://root/attachments/some-uuid/ticket4655/trac_4655.patch) by cremona created at 2008-11-30 20:03:27\n\nOK, so William's patch worked for me, but that's not much of a test since I tested on the same machine as he did (after applying to 3.2.1.rc0).  But I also applied it on a 32-bit linux machine and it worked fine there too.  It would be a good idea to test it elsewhere, I think.",
     "created_at": "2008-11-30T20:03:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4655",
     "type": "issue_comment",
@@ -224,7 +224,7 @@ archive/issue_comments_035062.json:
 }
 ```
 
-Attachment
+Attachment [trac_4655.patch](tarball://root/attachments/some-uuid/ticket4655/trac_4655.patch) by cremona created at 2008-11-30 20:03:27
 
 OK, so William's patch worked for me, but that's not much of a test since I tested on the same machine as he did (after applying to 3.2.1.rc0).  But I also applied it on a 32-bit linux machine and it worked fine there too.  It would be a good idea to test it elsewhere, I think.
 
@@ -292,7 +292,7 @@ Michael
 archive/issue_comments_035065.json:
 ```json
 {
-    "body": "Attachment\n\ntrac_4655.2.patch is a slightly updated version of John's patch that also fixes the varro issue. To test apply that patch only.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_4655.2.patch](tarball://root/attachments/some-uuid/ticket4655/trac_4655.2.patch) by mabshoff created at 2008-12-01 00:24:40\n\ntrac_4655.2.patch is a slightly updated version of John's patch that also fixes the varro issue. To test apply that patch only.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-01T00:24:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4655",
     "type": "issue_comment",
@@ -301,7 +301,7 @@ archive/issue_comments_035065.json:
 }
 ```
 
-Attachment
+Attachment [trac_4655.2.patch](tarball://root/attachments/some-uuid/ticket4655/trac_4655.2.patch) by mabshoff created at 2008-12-01 00:24:40
 
 trac_4655.2.patch is a slightly updated version of John's patch that also fixes the varro issue. To test apply that patch only.
 

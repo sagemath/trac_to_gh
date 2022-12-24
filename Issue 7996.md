@@ -67,7 +67,7 @@ Changing status from new to needs_review.
 archive/issue_comments_069849.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7996-invisible_text.patch](tarball://root/attachments/some-uuid/ticket7996/trac_7996-invisible_text.patch) by acleone created at 2010-01-19 08:37:47",
     "created_at": "2010-01-19T08:37:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7996",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_069849.json:
 }
 ```
 
-Attachment
+Attachment [trac_7996-invisible_text.patch](tarball://root/attachments/some-uuid/ticket7996/trac_7996-invisible_text.patch) by acleone created at 2010-01-19 08:37:47
 
 
 
@@ -233,7 +233,7 @@ Changing status from closed to new.
 archive/issue_comments_069858.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7996-invisible_text.v2.patch](tarball://root/attachments/some-uuid/ticket7996/trac_7996-invisible_text.v2.patch) by acleone created at 2010-01-25 02:43:59",
     "created_at": "2010-01-25T02:43:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7996",
     "type": "issue_comment",
@@ -242,7 +242,7 @@ archive/issue_comments_069858.json:
 }
 ```
 
-Attachment
+Attachment [trac_7996-invisible_text.v2.patch](tarball://root/attachments/some-uuid/ticket7996/trac_7996-invisible_text.v2.patch) by acleone created at 2010-01-25 02:43:59
 
 
 

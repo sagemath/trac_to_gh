@@ -49,7 +49,7 @@ change location of valgrind output
 archive/issue_comments_003097.json:
 ```json
 {
-    "body": "Attachment\n\nOn IRC it was suggested the place should be $HOME/.sage/sage-memcheck.$PID\n\nSep 06 19:25:58 <malb>  I vote for $HOME/.sage/sage-memcheck.PID\nSep 06 19:26:23 <wstein>        #599: +1",
+    "body": "Attachment [sage-valgrind_output_place.patch](tarball://root/attachments/some-uuid/ticket599/sage-valgrind_output_place.patch) by burcin created at 2007-09-06 17:36:02\n\nOn IRC it was suggested the place should be $HOME/.sage/sage-memcheck.$PID\n\nSep 06 19:25:58 <malb>  I vote for $HOME/.sage/sage-memcheck.PID\nSep 06 19:26:23 <wstein>        #599: +1",
     "created_at": "2007-09-06T17:36:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/599",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_003097.json:
 }
 ```
 
-Attachment
+Attachment [sage-valgrind_output_place.patch](tarball://root/attachments/some-uuid/ticket599/sage-valgrind_output_place.patch) by burcin created at 2007-09-06 17:36:02
 
 On IRC it was suggested the place should be $HOME/.sage/sage-memcheck.$PID
 

@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9814
 archive/issue_comments_096773.json:
 ```json
 {
-    "body": "Attachment\n\nSee the thread http://groups.google.com/group/sage-devel/browse_thread/thread/612ea8f2f9d06e37?pli=1",
+    "body": "Attachment [trac-9814.patch](tarball://root/attachments/some-uuid/ticket9814/trac-9814.patch) by roed created at 2010-08-27 05:32:31\n\nSee the thread http://groups.google.com/group/sage-devel/browse_thread/thread/612ea8f2f9d06e37?pli=1",
     "created_at": "2010-08-27T05:32:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9813",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_096773.json:
 }
 ```
 
-Attachment
+Attachment [trac-9814.patch](tarball://root/attachments/some-uuid/ticket9814/trac-9814.patch) by roed created at 2010-08-27 05:32:31
 
 See the thread http://groups.google.com/group/sage-devel/browse_thread/thread/612ea8f2f9d06e37?pli=1
 
@@ -202,7 +202,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_096781.json:
 ```json
 {
-    "body": "Attachment\n\nWell, that was more work than I expected, but it also fixes some problems with non-uniqueness of p-adic parents.",
+    "body": "Attachment [trac_9814-2.patch](tarball://root/attachments/some-uuid/ticket9814/trac_9814-2.patch) by roed created at 2010-09-18 21:29:25\n\nWell, that was more work than I expected, but it also fixes some problems with non-uniqueness of p-adic parents.",
     "created_at": "2010-09-18T21:29:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9813",
     "type": "issue_comment",
@@ -211,7 +211,7 @@ archive/issue_comments_096781.json:
 }
 ```
 
-Attachment
+Attachment [trac_9814-2.patch](tarball://root/attachments/some-uuid/ticket9814/trac_9814-2.patch) by roed created at 2010-09-18 21:29:25
 
 Well, that was more work than I expected, but it also fixes some problems with non-uniqueness of p-adic parents.
 
@@ -312,7 +312,7 @@ Could someone prepend the ticket number to the commit string's first line and re
 archive/issue_comments_096787.json:
 ```json
 {
-    "body": "Attachment\n\nCommit message fixed. Apply only this patch.",
+    "body": "Attachment [trac_9814-3.patch](tarball://root/attachments/some-uuid/ticket9814/trac_9814-3.patch) by davidloeffler created at 2010-09-28 08:21:21\n\nCommit message fixed. Apply only this patch.",
     "created_at": "2010-09-28T08:21:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9813",
     "type": "issue_comment",
@@ -321,7 +321,7 @@ archive/issue_comments_096787.json:
 }
 ```
 
-Attachment
+Attachment [trac_9814-3.patch](tarball://root/attachments/some-uuid/ticket9814/trac_9814-3.patch) by davidloeffler created at 2010-09-28 08:21:21
 
 Commit message fixed. Apply only this patch.
 

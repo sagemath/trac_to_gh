@@ -91,7 +91,7 @@ Jason, please improve the comment "# no ascii art output" to indicate what the n
 archive/issue_comments_016202.json:
 ```json
 {
-    "body": "Attachment\n\nI replaced the patch with an updated one addressing dmharvey's concerns.  The patch is ready to be reviewed again.",
+    "body": "Attachment [keepfloat.patch](tarball://root/attachments/some-uuid/ticket2400/keepfloat.patch) by jason created at 2008-03-06 01:38:50\n\nI replaced the patch with an updated one addressing dmharvey's concerns.  The patch is ready to be reviewed again.",
     "created_at": "2008-03-06T01:38:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2400",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_016202.json:
 }
 ```
 
-Attachment
+Attachment [keepfloat.patch](tarball://root/attachments/some-uuid/ticket2400/keepfloat.patch) by jason created at 2008-03-06 01:38:50
 
 I replaced the patch with an updated one addressing dmharvey's concerns.  The patch is ready to be reviewed again.
 
@@ -398,7 +398,7 @@ I've attached a patch which works around the problems in the matrixexp function 
 archive/issue_comments_016210.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of  keepfloat.patch",
+    "body": "Attachment [matrixexp-keepfloat.patch](tarball://root/attachments/some-uuid/ticket2400/matrixexp-keepfloat.patch) by jason created at 2008-03-10 19:35:09\n\napply on top of  keepfloat.patch",
     "created_at": "2008-03-10T19:35:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2400",
     "type": "issue_comment",
@@ -407,7 +407,7 @@ archive/issue_comments_016210.json:
 }
 ```
 
-Attachment
+Attachment [matrixexp-keepfloat.patch](tarball://root/attachments/some-uuid/ticket2400/matrixexp-keepfloat.patch) by jason created at 2008-03-10 19:35:09
 
 apply on top of  keepfloat.patch
 

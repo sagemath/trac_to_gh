@@ -377,7 +377,7 @@ An untested patch, which makes Numpy build the same was on OS X as it does on So
 archive/issue_comments_096431.json:
 ```json
 {
-    "body": "Attachment\n\nOk - so we still use g95 on some targets. So we need to keep some patches\njust for these - bother.",
+    "body": "Attachment [9808-remove-gcc_fake.patch](tarball://root/attachments/some-uuid/ticket9808/9808-remove-gcc_fake.patch) by fbissey created at 2010-08-30 11:56:18\n\nOk - so we still use g95 on some targets. So we need to keep some patches\njust for these - bother.",
     "created_at": "2010-08-30T11:56:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9807",
     "type": "issue_comment",
@@ -386,7 +386,7 @@ archive/issue_comments_096431.json:
 }
 ```
 
-Attachment
+Attachment [9808-remove-gcc_fake.patch](tarball://root/attachments/some-uuid/ticket9808/9808-remove-gcc_fake.patch) by fbissey created at 2010-08-30 11:56:18
 
 Ok - so we still use g95 on some targets. So we need to keep some patches
 just for these - bother.
@@ -924,7 +924,7 @@ The reason is the size change in some of the numpy functions, and then the .pyx 
 archive/issue_comments_096447.json:
 ```json
 {
-    "body": "Attachment\n\nmodified networkx package (test version)",
+    "body": "Attachment [networkx-1.0.1.p0.spkg](tarball://root/attachments/some-uuid/ticket9808/networkx-1.0.1.p0.spkg) by maldun created at 2010-09-04 01:32:43\n\nmodified networkx package (test version)",
     "created_at": "2010-09-04T01:32:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9807",
     "type": "issue_comment",
@@ -933,7 +933,7 @@ archive/issue_comments_096447.json:
 }
 ```
 
-Attachment
+Attachment [networkx-1.0.1.p0.spkg](tarball://root/attachments/some-uuid/ticket9808/networkx-1.0.1.p0.spkg) by maldun created at 2010-09-04 01:32:43
 
 modified networkx package (test version)
 
@@ -944,7 +944,7 @@ modified networkx package (test version)
 archive/issue_comments_096448.json:
 ```json
 {
-    "body": "Attachment\n\nchanges to networkx, which have to be applied",
+    "body": "Attachment [convert.py.diff](tarball://root/attachments/some-uuid/ticket9808/convert.py.diff) by maldun created at 2010-09-04 01:33:14\n\nchanges to networkx, which have to be applied",
     "created_at": "2010-09-04T01:33:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9807",
     "type": "issue_comment",
@@ -953,7 +953,7 @@ archive/issue_comments_096448.json:
 }
 ```
 
-Attachment
+Attachment [convert.py.diff](tarball://root/attachments/some-uuid/ticket9808/convert.py.diff) by maldun created at 2010-09-04 01:33:14
 
 changes to networkx, which have to be applied
 
@@ -1211,7 +1211,7 @@ it takes more than one week before it is released. If we target 4.5.3 I say we s
 archive/issue_comments_096459.json:
 ```json
 {
-    "body": "Attachment\n\nnewer spkg_install setting FC",
+    "body": "Attachment [spkg-install](tarball://root/attachments/some-uuid/ticket9808/spkg-install) by fbissey created at 2010-09-06 11:40:36\n\nnewer spkg_install setting FC",
     "created_at": "2010-09-06T11:40:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9807",
     "type": "issue_comment",
@@ -1220,7 +1220,7 @@ archive/issue_comments_096459.json:
 }
 ```
 
-Attachment
+Attachment [spkg-install](tarball://root/attachments/some-uuid/ticket9808/spkg-install) by fbissey created at 2010-09-06 11:40:36
 
 newer spkg_install setting FC
 
@@ -2901,7 +2901,7 @@ ok I solved it: You forgot the "-" before the config =)
 archive/issue_comments_096523.json:
 ```json
 {
-    "body": "Attachment\n\nnew replacement for scipy",
+    "body": "Attachment [spkg-install.2](tarball://root/attachments/some-uuid/ticket9808/spkg-install.2) by fbissey created at 2010-09-13 11:29:32\n\nnew replacement for scipy",
     "created_at": "2010-09-13T11:29:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9807",
     "type": "issue_comment",
@@ -2910,7 +2910,7 @@ archive/issue_comments_096523.json:
 }
 ```
 
-Attachment
+Attachment [spkg-install.2](tarball://root/attachments/some-uuid/ticket9808/spkg-install.2) by fbissey created at 2010-09-13 11:29:32
 
 new replacement for scipy
 
@@ -3106,7 +3106,7 @@ Diff of the spkg installs; The lines wich concern config fc are removed due prob
 archive/issue_comments_096533.json:
 ```json
 {
-    "body": "Attachment\n\nWell, that seems to have helped...\n\n```\ngcc: scipy/special/c_misc/gammaincinv.c\n```\n\nand it keeps going!\n\nSo it was the patches for G95 that were the problem.  Which one in particular (which command/line) caused the header confusion, do you think?  I'm just curious, and don't know enough about this to say.\n\nBy the way, I'm seeing things like \n\n```\ncompile options: '-I/Users/student/Desktop/sage-4.5.2/local/lib/python2.6/site-packages/numpy/core/include -I/Users/student/Desktop/sage-4.5.2/local/include/python2.6 -c'\n```\n\nso hopefully that is also a positive sign.",
+    "body": "Attachment [spkg.diff](tarball://root/attachments/some-uuid/ticket9808/spkg.diff) by kcrisman created at 2010-09-14 13:07:25\n\nWell, that seems to have helped...\n\n```\ngcc: scipy/special/c_misc/gammaincinv.c\n```\n\nand it keeps going!\n\nSo it was the patches for G95 that were the problem.  Which one in particular (which command/line) caused the header confusion, do you think?  I'm just curious, and don't know enough about this to say.\n\nBy the way, I'm seeing things like \n\n```\ncompile options: '-I/Users/student/Desktop/sage-4.5.2/local/lib/python2.6/site-packages/numpy/core/include -I/Users/student/Desktop/sage-4.5.2/local/include/python2.6 -c'\n```\n\nso hopefully that is also a positive sign.",
     "created_at": "2010-09-14T13:07:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9807",
     "type": "issue_comment",
@@ -3115,7 +3115,7 @@ archive/issue_comments_096533.json:
 }
 ```
 
-Attachment
+Attachment [spkg.diff](tarball://root/attachments/some-uuid/ticket9808/spkg.diff) by kcrisman created at 2010-09-14 13:07:25
 
 Well, that seems to have helped...
 
@@ -4497,7 +4497,7 @@ And when you compare the two you can see that it is an endianess problem.
 archive/issue_comments_096584.json:
 ```json
 {
-    "body": "Attachment\n\nChanges of the spkg-install from the upgrade to 1.3.x to 1.5.0 (changes that were applied to 1.4.1 are also contained)",
+    "body": "Attachment [numpy-spkg-install.diff](tarball://root/attachments/some-uuid/ticket9808/numpy-spkg-install.diff) by maldun created at 2010-10-02 18:58:44\n\nChanges of the spkg-install from the upgrade to 1.3.x to 1.5.0 (changes that were applied to 1.4.1 are also contained)",
     "created_at": "2010-10-02T18:58:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9807",
     "type": "issue_comment",
@@ -4506,7 +4506,7 @@ archive/issue_comments_096584.json:
 }
 ```
 
-Attachment
+Attachment [numpy-spkg-install.diff](tarball://root/attachments/some-uuid/ticket9808/numpy-spkg-install.diff) by maldun created at 2010-10-02 18:58:44
 
 Changes of the spkg-install from the upgrade to 1.3.x to 1.5.0 (changes that were applied to 1.4.1 are also contained)
 
@@ -4517,7 +4517,7 @@ Changes of the spkg-install from the upgrade to 1.3.x to 1.5.0 (changes that wer
 archive/issue_comments_096585.json:
 ```json
 {
-    "body": "Attachment\n\ndiff of the spkg-install of scipy from 0.7.p5 to 0.8",
+    "body": "Attachment [scipy-spkg-install.diff](tarball://root/attachments/some-uuid/ticket9808/scipy-spkg-install.diff) by maldun created at 2010-10-02 18:59:54\n\ndiff of the spkg-install of scipy from 0.7.p5 to 0.8",
     "created_at": "2010-10-02T18:59:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9807",
     "type": "issue_comment",
@@ -4526,7 +4526,7 @@ archive/issue_comments_096585.json:
 }
 ```
 
-Attachment
+Attachment [scipy-spkg-install.diff](tarball://root/attachments/some-uuid/ticket9808/scipy-spkg-install.diff) by maldun created at 2010-10-02 18:59:54
 
 diff of the spkg-install of scipy from 0.7.p5 to 0.8
 
@@ -5688,7 +5688,7 @@ Dave
 archive/issue_comments_096621.json:
 ```json
 {
-    "body": "Attachment\n\nSets F77, F90 and F95 so SciPy really does use the Fortran compiler we want. Setting FC alone is insufficient.",
+    "body": "Attachment [9808-Fortran-issues-in-SciPy.patch](tarball://root/attachments/some-uuid/ticket9808/9808-Fortran-issues-in-SciPy.patch) by drkirkby created at 2010-10-06 14:43:53\n\nSets F77, F90 and F95 so SciPy really does use the Fortran compiler we want. Setting FC alone is insufficient.",
     "created_at": "2010-10-06T14:43:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9807",
     "type": "issue_comment",
@@ -5697,7 +5697,7 @@ archive/issue_comments_096621.json:
 }
 ```
 
-Attachment
+Attachment [9808-Fortran-issues-in-SciPy.patch](tarball://root/attachments/some-uuid/ticket9808/9808-Fortran-issues-in-SciPy.patch) by drkirkby created at 2010-10-06 14:43:53
 
 Sets F77, F90 and F95 so SciPy really does use the Fortran compiler we want. Setting FC alone is insufficient.
 
@@ -5909,7 +5909,7 @@ Dave
 archive/issue_comments_096629.json:
 ```json
 {
-    "body": "Attachment\n\nThe three new doctest failures which are almost certainly a result of upgrading Numpy and Scipy",
+    "body": "Attachment [probable-Numpy-SciPy-issues-on-OpenSolaris.txt](tarball://root/attachments/some-uuid/ticket9808/probable-Numpy-SciPy-issues-on-OpenSolaris.txt) by drkirkby created at 2010-10-06 17:45:43\n\nThe three new doctest failures which are almost certainly a result of upgrading Numpy and Scipy",
     "created_at": "2010-10-06T17:45:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9807",
     "type": "issue_comment",
@@ -5918,7 +5918,7 @@ archive/issue_comments_096629.json:
 }
 ```
 
-Attachment
+Attachment [probable-Numpy-SciPy-issues-on-OpenSolaris.txt](tarball://root/attachments/some-uuid/ticket9808/probable-Numpy-SciPy-issues-on-OpenSolaris.txt) by drkirkby created at 2010-10-06 17:45:43
 
 The three new doctest failures which are almost certainly a result of upgrading Numpy and Scipy
 
@@ -6321,7 +6321,7 @@ I've prepared a new spkg in [http://sage.math.washington.edu/home/palmieri/SPKG/
 archive/issue_comments_096641.json:
 ```json
 {
-    "body": "Attachment\n\nfor reference only: diff between old numpy 1.5.0 spkg and new one",
+    "body": "Attachment [trac_9808-numpy.patch](tarball://root/attachments/some-uuid/ticket9808/trac_9808-numpy.patch) by jhpalmieri created at 2010-10-06 22:19:59\n\nfor reference only: diff between old numpy 1.5.0 spkg and new one",
     "created_at": "2010-10-06T22:19:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9807",
     "type": "issue_comment",
@@ -6330,7 +6330,7 @@ archive/issue_comments_096641.json:
 }
 ```
 
-Attachment
+Attachment [trac_9808-numpy.patch](tarball://root/attachments/some-uuid/ticket9808/trac_9808-numpy.patch) by jhpalmieri created at 2010-10-06 22:19:59
 
 for reference only: diff between old numpy 1.5.0 spkg and new one
 
@@ -6709,7 +6709,7 @@ A summary of changes to help reviewers - this ticket has got a bit complex, as 3
 archive/issue_comments_096654.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:219 fbissey]:\n> Back from snooze-land via morning teaching.\n> \n> I would have expected that the fortran settings in scipy and numpy would have to match. \n\nThat seems not to the be case. It's probably a good idea if they do, but it looks like setting FC in Numpy is enough. I've just verified with grep by looking at the Numpy log that it only ever uses the GNU compiler when compiling F90 code and does not attempt to use `/usr/bin/f90`\n\n\n```\ndrkirkby@hawk:~/new/sage-4.6.alpha2/spkg/logs$ grep  f90 numpy-1.5.0.log | grep bin\ndrkirkby@hawk:~/new/sage-4.6.alpha2/spkg/logs$ grep  f95 numpy-1.5.0.log | grep bin\ndrkirkby@hawk:~/new/sage-4.6.alpha2/spkg/logs$ \n```\n\n\nIt does not appear to have anything that's obviously using a Fortran 90 target, though it does compile files with the extension .f90. \n\n> I am completely astonished that you had problems with scipy and not numpy. In fact on Gentoo we currently have a bug open because numpy picks up the intel fortran compiler when it shouldn't.\n\nHave you reported that bug upstream to the Numpy developers? If so, do you have the link handy? Do you have a link to the Gentoo bug? You could try exporting F77, F90 and F95 in addition to FC and see if that fixes it. It would be worth opening a bug report in Sage if this is affecting Sage too, which I expect it will. I could try creating a file 'icc' on my Sun and seeing if Numpy uses that, though since the Intel compiler does not run on Solaris, there's less chance of that being an issue. Perhaps someone with Linux can create a file `icc` that simply exits with 1. \n\n\n```/bin/sh\nexit 1\n```\n\n\nand see if that screws up building Numpy. If so, it's a bug. \n\nIn fact, given the issues with Scipy and scipy_sandbox, it might be wise we export all these variables in Numpy. \n\nWhat puzzles me most is why it is now necessary do this in scipy_sandbox, despite there have been no changes to the scipy_sandbox code at all! But checking in the sage-4.6.1.alpha1 code, I see the f90 target is using `sage_fortran` and not `/usr/bin/f90`.\n\n\n```\ndrkirkby@hawk:~/sage-4.6.alpha1/spkg/logs$ grep f90 scipy_sandbox-20071020.p5.log\nFortran f90 compiler: sage_fortran -Wall -fno-second-underscore -fPIC -O3 -funroll-loops\nFortran f90 compiler: sage_fortran -Wall -fno-second-underscore -fPIC -O3 -funroll-loops\n```\n\n\nHence this Numpy or SciPy upgrade has needed some rather surprising changes to be made to scipy_sandbox. \n\nI know when you build gmp, mpfr will be build with the same compiler, as the location of the compiler is actually stored in the gmp header files. I thought Numpy/ScipPy might use some similar technique, but it appears not.",
+    "body": "Attachment [changes.txt](tarball://root/attachments/some-uuid/ticket9808/changes.txt) by drkirkby created at 2010-10-07 09:18:16\n\nReplying to [comment:219 fbissey]:\n> Back from snooze-land via morning teaching.\n> \n> I would have expected that the fortran settings in scipy and numpy would have to match. \n\nThat seems not to the be case. It's probably a good idea if they do, but it looks like setting FC in Numpy is enough. I've just verified with grep by looking at the Numpy log that it only ever uses the GNU compiler when compiling F90 code and does not attempt to use `/usr/bin/f90`\n\n\n```\ndrkirkby@hawk:~/new/sage-4.6.alpha2/spkg/logs$ grep  f90 numpy-1.5.0.log | grep bin\ndrkirkby@hawk:~/new/sage-4.6.alpha2/spkg/logs$ grep  f95 numpy-1.5.0.log | grep bin\ndrkirkby@hawk:~/new/sage-4.6.alpha2/spkg/logs$ \n```\n\n\nIt does not appear to have anything that's obviously using a Fortran 90 target, though it does compile files with the extension .f90. \n\n> I am completely astonished that you had problems with scipy and not numpy. In fact on Gentoo we currently have a bug open because numpy picks up the intel fortran compiler when it shouldn't.\n\nHave you reported that bug upstream to the Numpy developers? If so, do you have the link handy? Do you have a link to the Gentoo bug? You could try exporting F77, F90 and F95 in addition to FC and see if that fixes it. It would be worth opening a bug report in Sage if this is affecting Sage too, which I expect it will. I could try creating a file 'icc' on my Sun and seeing if Numpy uses that, though since the Intel compiler does not run on Solaris, there's less chance of that being an issue. Perhaps someone with Linux can create a file `icc` that simply exits with 1. \n\n\n```/bin/sh\nexit 1\n```\n\n\nand see if that screws up building Numpy. If so, it's a bug. \n\nIn fact, given the issues with Scipy and scipy_sandbox, it might be wise we export all these variables in Numpy. \n\nWhat puzzles me most is why it is now necessary do this in scipy_sandbox, despite there have been no changes to the scipy_sandbox code at all! But checking in the sage-4.6.1.alpha1 code, I see the f90 target is using `sage_fortran` and not `/usr/bin/f90`.\n\n\n```\ndrkirkby@hawk:~/sage-4.6.alpha1/spkg/logs$ grep f90 scipy_sandbox-20071020.p5.log\nFortran f90 compiler: sage_fortran -Wall -fno-second-underscore -fPIC -O3 -funroll-loops\nFortran f90 compiler: sage_fortran -Wall -fno-second-underscore -fPIC -O3 -funroll-loops\n```\n\n\nHence this Numpy or SciPy upgrade has needed some rather surprising changes to be made to scipy_sandbox. \n\nI know when you build gmp, mpfr will be build with the same compiler, as the location of the compiler is actually stored in the gmp header files. I thought Numpy/ScipPy might use some similar technique, but it appears not.",
     "created_at": "2010-10-07T09:18:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9807",
     "type": "issue_comment",
@@ -6718,7 +6718,7 @@ archive/issue_comments_096654.json:
 }
 ```
 
-Attachment
+Attachment [changes.txt](tarball://root/attachments/some-uuid/ticket9808/changes.txt) by drkirkby created at 2010-10-07 09:18:16
 
 Replying to [comment:219 fbissey]:
 > Back from snooze-land via morning teaching.
@@ -8166,7 +8166,7 @@ Patch to src/numpy/distutils/fcompiler/gnu.py
 archive/issue_comments_096701.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:275 kcrisman]:\n> Okay, I went back to John's initial idea and just removed the ppc64 option. I'm still totally mystified as to why that would solve it per se, if the double `-c` option is really a problem, but oh well - ppc64 is the problem.  \n\n\nThere's no reason a double -c should be a problem. There are numerous options that get passed to gcc multiple times. Here's a simple session where I list the files in my directory, and look for the most recent one. \n\n\n```\ndrkirkby@hawk:~$ touch foobar\ndrkirkby@hawk:~$ ls -lrt | tail -1\n-rw-r--r--   1 drkirkby other          8 Oct 14 10:37 foobar\ndrkirkby@hawk:~$ gcc -lm  test.c\ndrkirkby@hawk:~$ ls -lrt | tail -1\n-rwxr-xr-x   1 drkirkby staff       8316 Oct 14 10:38 a.out\ndrkirkby@hawk:~$ gcc -lm -c -c test.c\ndrkirkby@hawk:~$ ls -lrt | tail -1\n-rw-r--r--   1 drkirkby staff       1012 Oct 14 10:38 test.o\ndrkirkby@hawk:~$ \n```\n\n\nWe can see that calling \n\n\n```\ngcc -lm -c -c test.c\n```\n\n\nresulted in the most recent file being an object file (.o) and not an executable a.out. \n\nThe patch you attached is not a Mercurial patch, so could not easily be integrated.",
+    "body": "Attachment [gnu-changes.patch](tarball://root/attachments/some-uuid/ticket9808/gnu-changes.patch) by drkirkby created at 2010-10-14 09:49:00\n\nReplying to [comment:275 kcrisman]:\n> Okay, I went back to John's initial idea and just removed the ppc64 option. I'm still totally mystified as to why that would solve it per se, if the double `-c` option is really a problem, but oh well - ppc64 is the problem.  \n\n\nThere's no reason a double -c should be a problem. There are numerous options that get passed to gcc multiple times. Here's a simple session where I list the files in my directory, and look for the most recent one. \n\n\n```\ndrkirkby@hawk:~$ touch foobar\ndrkirkby@hawk:~$ ls -lrt | tail -1\n-rw-r--r--   1 drkirkby other          8 Oct 14 10:37 foobar\ndrkirkby@hawk:~$ gcc -lm  test.c\ndrkirkby@hawk:~$ ls -lrt | tail -1\n-rwxr-xr-x   1 drkirkby staff       8316 Oct 14 10:38 a.out\ndrkirkby@hawk:~$ gcc -lm -c -c test.c\ndrkirkby@hawk:~$ ls -lrt | tail -1\n-rw-r--r--   1 drkirkby staff       1012 Oct 14 10:38 test.o\ndrkirkby@hawk:~$ \n```\n\n\nWe can see that calling \n\n\n```\ngcc -lm -c -c test.c\n```\n\n\nresulted in the most recent file being an object file (.o) and not an executable a.out. \n\nThe patch you attached is not a Mercurial patch, so could not easily be integrated.",
     "created_at": "2010-10-14T09:49:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9807",
     "type": "issue_comment",
@@ -8175,7 +8175,7 @@ archive/issue_comments_096701.json:
 }
 ```
 
-Attachment
+Attachment [gnu-changes.patch](tarball://root/attachments/some-uuid/ticket9808/gnu-changes.patch) by drkirkby created at 2010-10-14 09:49:00
 
 Replying to [comment:275 kcrisman]:
 > Okay, I went back to John's initial idea and just removed the ppc64 option. I'm still totally mystified as to why that would solve it per se, if the double `-c` option is really a problem, but oh well - ppc64 is the problem.  
@@ -8243,7 +8243,7 @@ Will this ticket reach 300 comments?
 archive/issue_comments_096703.json:
 ```json
 {
-    "body": "Attachment\n\nFor reference only - OS X 10.6 fix in spkg-install",
+    "body": "Attachment [last-spkg-install-changes.patch](tarball://root/attachments/some-uuid/ticket9808/last-spkg-install-changes.patch) by kcrisman created at 2010-10-14 12:19:38\n\nFor reference only - OS X 10.6 fix in spkg-install",
     "created_at": "2010-10-14T12:19:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9807",
     "type": "issue_comment",
@@ -8252,7 +8252,7 @@ archive/issue_comments_096703.json:
 }
 ```
 
-Attachment
+Attachment [last-spkg-install-changes.patch](tarball://root/attachments/some-uuid/ticket9808/last-spkg-install-changes.patch) by kcrisman created at 2010-10-14 12:19:38
 
 For reference only - OS X 10.6 fix in spkg-install
 
@@ -8524,7 +8524,7 @@ Strange I tested the patch out, and it really didn't work. Then I made a new pat
 archive/issue_comments_096710.json:
 ```json
 {
-    "body": "Attachment\n\nChanged doctests for numpy-1.5.0 due to output changes in numpy",
+    "body": "Attachment [trac_9808_numpy_doctest_change.patch](tarball://root/attachments/some-uuid/ticket9808/trac_9808_numpy_doctest_change.patch) by maldun created at 2010-10-14 18:08:16\n\nChanged doctests for numpy-1.5.0 due to output changes in numpy",
     "created_at": "2010-10-14T18:08:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9807",
     "type": "issue_comment",
@@ -8533,7 +8533,7 @@ archive/issue_comments_096710.json:
 }
 ```
 
-Attachment
+Attachment [trac_9808_numpy_doctest_change.patch](tarball://root/attachments/some-uuid/ticket9808/trac_9808_numpy_doctest_change.patch) by maldun created at 2010-10-14 18:08:16
 
 Changed doctests for numpy-1.5.0 due to output changes in numpy
 
@@ -8623,7 +8623,7 @@ New upload of the doctest changes for sage 4.6
 archive/issue_comments_096715.json:
 ```json
 {
-    "body": "Attachment\n\nOk better solution: new name no probs anymore =)",
+    "body": "Attachment [trac_9808_changed_doctests.patch](tarball://root/attachments/some-uuid/ticket9808/trac_9808_changed_doctests.patch) by maldun created at 2010-10-14 18:40:57\n\nOk better solution: new name no probs anymore =)",
     "created_at": "2010-10-14T18:40:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9807",
     "type": "issue_comment",
@@ -8632,7 +8632,7 @@ archive/issue_comments_096715.json:
 }
 ```
 
-Attachment
+Attachment [trac_9808_changed_doctests.patch](tarball://root/attachments/some-uuid/ticket9808/trac_9808_changed_doctests.patch) by maldun created at 2010-10-14 18:40:57
 
 Ok better solution: new name no probs anymore =)
 
@@ -8667,7 +8667,7 @@ I'm leaving this as "needs work" because of the matrix1.pyx issue, but I think t
 archive/issue_comments_096717.json:
 ```json
 {
-    "body": "Attachment\n\nfor reference only: diff between old scipy 0.8 spkg and new one",
+    "body": "Attachment [trac_9808-scipy.patch](tarball://root/attachments/some-uuid/ticket9808/trac_9808-scipy.patch) by jhpalmieri created at 2010-10-14 20:24:36\n\nfor reference only: diff between old scipy 0.8 spkg and new one",
     "created_at": "2010-10-14T20:24:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9807",
     "type": "issue_comment",
@@ -8676,7 +8676,7 @@ archive/issue_comments_096717.json:
 }
 ```
 
-Attachment
+Attachment [trac_9808-scipy.patch](tarball://root/attachments/some-uuid/ticket9808/trac_9808-scipy.patch) by jhpalmieri created at 2010-10-14 20:24:36
 
 for reference only: diff between old scipy 0.8 spkg and new one
 

@@ -149,7 +149,7 @@ Michael
 archive/issue_comments_041941.json:
 ```json
 {
-    "body": "Attachment\n\nI rebased the patch to 3.4.alpha0, but I don't have a built copy yet, so I couldn't test. But I'm pretty sure it should work. What could go wrong?",
+    "body": "Attachment [trac_5421.patch](tarball://root/attachments/some-uuid/ticket5421/trac_5421.patch) by rlm created at 2009-03-02 20:18:49\n\nI rebased the patch to 3.4.alpha0, but I don't have a built copy yet, so I couldn't test. But I'm pretty sure it should work. What could go wrong?",
     "created_at": "2009-03-02T20:18:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5421",
     "type": "issue_comment",
@@ -158,7 +158,7 @@ archive/issue_comments_041941.json:
 }
 ```
 
-Attachment
+Attachment [trac_5421.patch](tarball://root/attachments/some-uuid/ticket5421/trac_5421.patch) by rlm created at 2009-03-02 20:18:49
 
 I rebased the patch to 3.4.alpha0, but I don't have a built copy yet, so I couldn't test. But I'm pretty sure it should work. What could go wrong?
 
@@ -244,7 +244,7 @@ Looks like that second patch is not ready yet...
 archive/issue_comments_041944.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5421-b.patch](tarball://root/attachments/some-uuid/ticket5421/trac_5421-b.patch) by rlm created at 2009-03-04 20:02:41",
     "created_at": "2009-03-04T20:02:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5421",
     "type": "issue_comment",
@@ -253,7 +253,7 @@ archive/issue_comments_041944.json:
 }
 ```
 
-Attachment
+Attachment [trac_5421-b.patch](tarball://root/attachments/some-uuid/ticket5421/trac_5421-b.patch) by rlm created at 2009-03-04 20:02:41
 
 
 

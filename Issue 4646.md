@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4646
 archive/issue_comments_034971.json:
 ```json
 {
-    "body": "Attachment\n\nDraft 1 is based in 3.2.1.rc1, so some things will likely be added in 3.2.1.final",
+    "body": "Attachment [sage-3.2.1-release-notes-draft1.txt](tarball://root/attachments/some-uuid/ticket4646/sage-3.2.1-release-notes-draft1.txt) by mabshoff created at 2008-12-01 11:10:53\n\nDraft 1 is based in 3.2.1.rc1, so some things will likely be added in 3.2.1.final",
     "created_at": "2008-12-01T11:10:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4646",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_034971.json:
 }
 ```
 
-Attachment
+Attachment [sage-3.2.1-release-notes-draft1.txt](tarball://root/attachments/some-uuid/ticket4646/sage-3.2.1-release-notes-draft1.txt) by mabshoff created at 2008-12-01 11:10:53
 
 Draft 1 is based in 3.2.1.rc1, so some things will likely be added in 3.2.1.final
 
@@ -143,7 +143,7 @@ The first draft is good. I'm planning to edit notes for the release tour of Sage
 archive/issue_comments_034976.json:
 ```json
 {
-    "body": "Attachment\n\nthe only change draft1->draft2 was the correct assignment of credit for #4646. Two more small fixes are needed:\n\n* now the list of names is no longer alphabetically sorted\n* It should say \"3.2.1\" in known issues instead of \"3.2\"\n\ndraft3 coming up.\n\nCheers,\n\nMichael",
+    "body": "Attachment [sage-3.2.1-release-notes-draft2.txt](tarball://root/attachments/some-uuid/ticket4646/sage-3.2.1-release-notes-draft2.txt) by mabshoff created at 2008-12-02 06:44:06\n\nthe only change draft1->draft2 was the correct assignment of credit for #4646. Two more small fixes are needed:\n\n* now the list of names is no longer alphabetically sorted\n* It should say \"3.2.1\" in known issues instead of \"3.2\"\n\ndraft3 coming up.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-02T06:44:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4646",
     "type": "issue_comment",
@@ -152,7 +152,7 @@ archive/issue_comments_034976.json:
 }
 ```
 
-Attachment
+Attachment [sage-3.2.1-release-notes-draft2.txt](tarball://root/attachments/some-uuid/ticket4646/sage-3.2.1-release-notes-draft2.txt) by mabshoff created at 2008-12-02 06:44:06
 
 the only change draft1->draft2 was the correct assignment of credit for #4646. Two more small fixes are needed:
 
@@ -172,7 +172,7 @@ Michael
 archive/issue_comments_034977.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3.2.1-release-notes-draft3.txt](tarball://root/attachments/some-uuid/ticket4646/sage-3.2.1-release-notes-draft3.txt) by mabshoff created at 2008-12-02 06:45:45",
     "created_at": "2008-12-02T06:45:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4646",
     "type": "issue_comment",
@@ -181,7 +181,7 @@ archive/issue_comments_034977.json:
 }
 ```
 
-Attachment
+Attachment [sage-3.2.1-release-notes-draft3.txt](tarball://root/attachments/some-uuid/ticket4646/sage-3.2.1-release-notes-draft3.txt) by mabshoff created at 2008-12-02 06:45:45
 
 
 

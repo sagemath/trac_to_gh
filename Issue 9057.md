@@ -73,7 +73,7 @@ Changing status from new to needs_work.
 archive/issue_comments_084039.json:
 ```json
 {
-    "body": "Attachment\n\nInitial patch",
+    "body": "Attachment [trac_9057_ellff.patch](tarball://root/attachments/some-uuid/ticket9057/trac_9057_ellff.patch) by salmanhb created at 2010-05-26 22:55:22\n\nInitial patch",
     "created_at": "2010-05-26T22:55:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9057",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_084039.json:
 }
 ```
 
-Attachment
+Attachment [trac_9057_ellff.patch](tarball://root/attachments/some-uuid/ticket9057/trac_9057_ellff.patch) by salmanhb created at 2010-05-26 22:55:22
 
 Initial patch
 
@@ -93,7 +93,7 @@ Initial patch
 archive/issue_comments_084040.json:
 ```json
 {
-    "body": "Attachment\n\nELLFF now uses FunctionField in #9054",
+    "body": "Attachment [trac_9057_ellff_ff.patch](tarball://root/attachments/some-uuid/ticket9057/trac_9057_ellff_ff.patch) by salmanhb created at 2010-05-28 04:22:14\n\nELLFF now uses FunctionField in #9054",
     "created_at": "2010-05-28T04:22:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9057",
     "type": "issue_comment",
@@ -102,7 +102,7 @@ archive/issue_comments_084040.json:
 }
 ```
 
-Attachment
+Attachment [trac_9057_ellff_ff.patch](tarball://root/attachments/some-uuid/ticket9057/trac_9057_ellff_ff.patch) by salmanhb created at 2010-05-28 04:22:14
 
 ELLFF now uses FunctionField in #9054
 
@@ -131,7 +131,7 @@ merges initial file with FunctionField functionality
 archive/issue_comments_084042.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9057_ellff-part2.patch](tarball://root/attachments/some-uuid/ticket9057/trac_9057_ellff-part2.patch) by salmanhb created at 2010-05-28 20:48:02",
     "created_at": "2010-05-28T20:48:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9057",
     "type": "issue_comment",
@@ -140,7 +140,7 @@ archive/issue_comments_084042.json:
 }
 ```
 
-Attachment
+Attachment [trac_9057_ellff-part2.patch](tarball://root/attachments/some-uuid/ticket9057/trac_9057_ellff-part2.patch) by salmanhb created at 2010-05-28 20:48:02
 
 
 

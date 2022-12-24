@@ -206,7 +206,7 @@ Changing status from new to needs_review.
 archive/issue_comments_057040.json:
 ```json
 {
-    "body": "Attachment\n\nThe problem is due to the fact that with p=2, the change_ring() method \u00a0should not create a matrix_modn_dense but a matrix_mod2_dense (wrapping m4ri).\n\nI added this special case.\n\nMeanwhile, it revealed a conflict in the declaration of ONE (in libs/pari/gens.pyx, and in m4ri). So I renammed the macros in pari/gens.*.",
+    "body": "Attachment [sage-6904.patch](tarball://root/attachments/some-uuid/ticket6904/sage-6904.patch) by cpernet created at 2010-07-07 13:12:16\n\nThe problem is due to the fact that with p=2, the change_ring() method \u00a0should not create a matrix_modn_dense but a matrix_mod2_dense (wrapping m4ri).\n\nI added this special case.\n\nMeanwhile, it revealed a conflict in the declaration of ONE (in libs/pari/gens.pyx, and in m4ri). So I renammed the macros in pari/gens.*.",
     "created_at": "2010-07-07T13:12:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6904",
     "type": "issue_comment",
@@ -215,7 +215,7 @@ archive/issue_comments_057040.json:
 }
 ```
 
-Attachment
+Attachment [sage-6904.patch](tarball://root/attachments/some-uuid/ticket6904/sage-6904.patch) by cpernet created at 2010-07-07 13:12:16
 
 The problem is due to the fact that with p=2, the change_ring() method  should not create a matrix_modn_dense but a matrix_mod2_dense (wrapping m4ri).
 
@@ -288,7 +288,7 @@ Two changes needed:
 archive/issue_comments_057044.json:
 ```json
 {
-    "body": "Attachment\n\ncorrected version following the remarks by was",
+    "body": "Attachment [sage-6904-v2.patch](tarball://root/attachments/some-uuid/ticket6904/sage-6904-v2.patch) by cpernet created at 2010-07-08 12:54:45\n\ncorrected version following the remarks by was",
     "created_at": "2010-07-08T12:54:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6904",
     "type": "issue_comment",
@@ -297,7 +297,7 @@ archive/issue_comments_057044.json:
 }
 ```
 
-Attachment
+Attachment [sage-6904-v2.patch](tarball://root/attachments/some-uuid/ticket6904/sage-6904-v2.patch) by cpernet created at 2010-07-08 12:54:45
 
 corrected version following the remarks by was
 
@@ -344,7 +344,7 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_057047.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-6904-v3.patch](tarball://root/attachments/some-uuid/ticket6904/sage-6904-v3.patch) by was created at 2010-07-08 13:03:45",
     "created_at": "2010-07-08T13:03:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6904",
     "type": "issue_comment",
@@ -353,7 +353,7 @@ archive/issue_comments_057047.json:
 }
 ```
 
-Attachment
+Attachment [sage-6904-v3.patch](tarball://root/attachments/some-uuid/ticket6904/sage-6904-v3.patch) by was created at 2010-07-08 13:03:45
 
 
 

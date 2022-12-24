@@ -56,7 +56,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2057
 archive/issue_comments_013314.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-2057-zero_to_zero.patch](tarball://root/attachments/some-uuid/ticket2057/trac-2057-zero_to_zero.patch) by was created at 2008-02-05 15:27:42",
     "created_at": "2008-02-05T15:27:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2057",
     "type": "issue_comment",
@@ -65,7 +65,7 @@ archive/issue_comments_013314.json:
 }
 ```
 
-Attachment
+Attachment [trac-2057-zero_to_zero.patch](tarball://root/attachments/some-uuid/ticket2057/trac-2057-zero_to_zero.patch) by was created at 2008-02-05 15:27:42
 
 
 

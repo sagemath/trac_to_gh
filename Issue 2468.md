@@ -131,7 +131,7 @@ I've added a patch that, in addition:
 archive/issue_comments_016720.json:
 ```json
 {
-    "body": "Attachment\n\ncorrect a small typo in patch",
+    "body": "Attachment [2468.hg](tarball://root/attachments/some-uuid/ticket2468/2468.hg) by dfdeshom created at 2008-03-14 05:34:49\n\ncorrect a small typo in patch",
     "created_at": "2008-03-14T05:34:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2468",
     "type": "issue_comment",
@@ -140,7 +140,7 @@ archive/issue_comments_016720.json:
 }
 ```
 
-Attachment
+Attachment [2468.hg](tarball://root/attachments/some-uuid/ticket2468/2468.hg) by dfdeshom created at 2008-03-14 05:34:49
 
 correct a small typo in patch
 

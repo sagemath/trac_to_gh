@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6386
 archive/issue_comments_051125.json:
 ```json
 {
-    "body": "Attachment\n\nApplies to 4.0.2",
+    "body": "Attachment [ellexp.patch](tarball://root/attachments/some-uuid/ticket6386/ellexp.patch) by cremona created at 2009-06-22 18:09:33\n\nApplies to 4.0.2",
     "created_at": "2009-06-22T18:09:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6386",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_051125.json:
 }
 ```
 
-Attachment
+Attachment [ellexp.patch](tarball://root/attachments/some-uuid/ticket6386/ellexp.patch) by cremona created at 2009-06-22 18:09:33
 
 Applies to 4.0.2
 
@@ -156,7 +156,7 @@ Apply after previous
 archive/issue_comments_051129.json:
 ```json
 {
-    "body": "Attachment\n\nI have done the first thing requested, delivering a point in E(CC) or E(RR) in cases where it is possible to tell that the point is real.  I had to use \"check=False\" since the returned x,y do not necessarily satisfy the equation to the given precision.  I'm not sure what the problem was in the second point, but I changed the name of the parameter to \"to_curve\" and fixed a typo in the docstring (it said True instead of False, or possibly the other way round, at one point -- this might have caused the confusion).\n\nI have left the third point, with the explanation given above!",
+    "body": "Attachment [trac_6386-post-review.patch](tarball://root/attachments/some-uuid/ticket6386/trac_6386-post-review.patch) by cremona created at 2009-06-25 16:08:13\n\nI have done the first thing requested, delivering a point in E(CC) or E(RR) in cases where it is possible to tell that the point is real.  I had to use \"check=False\" since the returned x,y do not necessarily satisfy the equation to the given precision.  I'm not sure what the problem was in the second point, but I changed the name of the parameter to \"to_curve\" and fixed a typo in the docstring (it said True instead of False, or possibly the other way round, at one point -- this might have caused the confusion).\n\nI have left the third point, with the explanation given above!",
     "created_at": "2009-06-25T16:08:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6386",
     "type": "issue_comment",
@@ -165,7 +165,7 @@ archive/issue_comments_051129.json:
 }
 ```
 
-Attachment
+Attachment [trac_6386-post-review.patch](tarball://root/attachments/some-uuid/ticket6386/trac_6386-post-review.patch) by cremona created at 2009-06-25 16:08:13
 
 I have done the first thing requested, delivering a point in E(CC) or E(RR) in cases where it is possible to tell that the point is real.  I had to use "check=False" since the returned x,y do not necessarily satisfy the equation to the given precision.  I'm not sure what the problem was in the second point, but I changed the name of the parameter to "to_curve" and fixed a typo in the docstring (it said True instead of False, or possibly the other way round, at one point -- this might have caused the confusion).
 
@@ -240,7 +240,7 @@ apply after other two
 archive/issue_comments_051133.json:
 ```json
 {
-    "body": "Attachment\n\nOK, I resolved the issues above, and while I was at it modified antilogarithm to look at the imaginary parts. Now I need a review from you.",
+    "body": "Attachment [6386-referee-fixes.patch](tarball://root/attachments/some-uuid/ticket6386/6386-referee-fixes.patch) by robertwb created at 2009-06-26 05:55:31\n\nOK, I resolved the issues above, and while I was at it modified antilogarithm to look at the imaginary parts. Now I need a review from you.",
     "created_at": "2009-06-26T05:55:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6386",
     "type": "issue_comment",
@@ -249,7 +249,7 @@ archive/issue_comments_051133.json:
 }
 ```
 
-Attachment
+Attachment [6386-referee-fixes.patch](tarball://root/attachments/some-uuid/ticket6386/6386-referee-fixes.patch) by robertwb created at 2009-06-26 05:55:31
 
 OK, I resolved the issues above, and while I was at it modified antilogarithm to look at the imaginary parts. Now I need a review from you.
 
@@ -369,7 +369,7 @@ Yep, this was due to the method I added. I'm changing it back to what it used to
 archive/issue_comments_051139.json:
 ```json
 {
-    "body": "Attachment\n\napply after all others",
+    "body": "Attachment [6386-doctest-fix.patch](tarball://root/attachments/some-uuid/ticket6386/6386-doctest-fix.patch) by robertwb created at 2009-06-27 17:15:57\n\napply after all others",
     "created_at": "2009-06-27T17:15:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6386",
     "type": "issue_comment",
@@ -378,7 +378,7 @@ archive/issue_comments_051139.json:
 }
 ```
 
-Attachment
+Attachment [6386-doctest-fix.patch](tarball://root/attachments/some-uuid/ticket6386/6386-doctest-fix.patch) by robertwb created at 2009-06-27 17:15:57
 
 apply after all others
 

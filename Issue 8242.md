@@ -65,7 +65,7 @@ Changing assignee from mvngu to mmezzarobba.
 archive/issue_comments_072872.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8242_duplicate_citations.patch](tarball://root/attachments/some-uuid/ticket8242/trac_8242_duplicate_citations.patch) by mmezzarobba created at 2010-02-25 17:10:14",
     "created_at": "2010-02-25T17:10:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8242",
     "type": "issue_comment",
@@ -74,7 +74,7 @@ archive/issue_comments_072872.json:
 }
 ```
 
-Attachment
+Attachment [trac_8242_duplicate_citations.patch](tarball://root/attachments/some-uuid/ticket8242/trac_8242_duplicate_citations.patch) by mmezzarobba created at 2010-02-25 17:10:14
 
 
 
@@ -333,7 +333,7 @@ The patches on this ticket needs to be rebased on top of #8037.
 archive/issue_comments_072883.json:
 ```json
 {
-    "body": "Attachment\n\nrebased vs. Sage 4.3.4.alpha1",
+    "body": "Attachment [trac_8242-citations-rebased.patch](tarball://root/attachments/some-uuid/ticket8242/trac_8242-citations-rebased.patch) by mvngu created at 2010-03-12 05:48:11\n\nrebased vs. Sage 4.3.4.alpha1",
     "created_at": "2010-03-12T05:48:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8242",
     "type": "issue_comment",
@@ -342,7 +342,7 @@ archive/issue_comments_072883.json:
 }
 ```
 
-Attachment
+Attachment [trac_8242-citations-rebased.patch](tarball://root/attachments/some-uuid/ticket8242/trac_8242-citations-rebased.patch) by mvngu created at 2010-03-12 05:48:11
 
 rebased vs. Sage 4.3.4.alpha1
 
@@ -389,7 +389,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_072886.json:
 ```json
 {
-    "body": "Attachment\n\nI have rebased Marc's patch against Sage 4.3.4.alpha1. Now apply patches in this order:\n\n1. [trac_8242-citations-rebased.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8242/trac_8242-citations-rebased.patch)\n2. [trac_8242-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8242/trac_8242-reviewer.patch)\n \nBoth the rebased patch and my reviewer patch need reviewing by anyone but me. If they both get a positive review, then the whole ticket is good to go into Sage 4.3.4.rc0.",
+    "body": "Attachment [trac_8242-reviewer.patch](tarball://root/attachments/some-uuid/ticket8242/trac_8242-reviewer.patch) by mvngu created at 2010-03-12 05:51:58\n\nI have rebased Marc's patch against Sage 4.3.4.alpha1. Now apply patches in this order:\n\n1. [trac_8242-citations-rebased.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8242/trac_8242-citations-rebased.patch)\n2. [trac_8242-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8242/trac_8242-reviewer.patch)\n \nBoth the rebased patch and my reviewer patch need reviewing by anyone but me. If they both get a positive review, then the whole ticket is good to go into Sage 4.3.4.rc0.",
     "created_at": "2010-03-12T05:51:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8242",
     "type": "issue_comment",
@@ -398,7 +398,7 @@ archive/issue_comments_072886.json:
 }
 ```
 
-Attachment
+Attachment [trac_8242-reviewer.patch](tarball://root/attachments/some-uuid/ticket8242/trac_8242-reviewer.patch) by mvngu created at 2010-03-12 05:51:58
 
 I have rebased Marc's patch against Sage 4.3.4.alpha1. Now apply patches in this order:
 

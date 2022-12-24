@@ -70,7 +70,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9992
 archive/issue_comments_100404.json:
 ```json
 {
-    "body": "Attachment\n\nAttached only so I can provide a link to this - for most practical purposes this can be ignored.",
+    "body": "Attachment [sage-make_relative](tarball://root/attachments/some-uuid/ticket9992/sage-make_relative) by drkirkby created at 2010-09-23 23:28:27\n\nAttached only so I can provide a link to this - for most practical purposes this can be ignored.",
     "created_at": "2010-09-23T23:28:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9991",
     "type": "issue_comment",
@@ -79,7 +79,7 @@ archive/issue_comments_100404.json:
 }
 ```
 
-Attachment
+Attachment [sage-make_relative](tarball://root/attachments/some-uuid/ticket9992/sage-make_relative) by drkirkby created at 2010-09-23 23:28:27
 
 Attached only so I can provide a link to this - for most practical purposes this can be ignored.
 
@@ -248,7 +248,7 @@ Dave
 archive/issue_comments_100409.json:
 ```json
 {
-    "body": "Attachment\n\nSCRIPTS repo. Changes `sage-spkg` to only run `sage-make_relative` if Sage's Python is already installed. Based on Sage 4.7.2.alpha4.",
+    "body": "Attachment [trac_9992-run_sage-make_relative_conditionally.scripts.patch](tarball://root/attachments/some-uuid/ticket9992/trac_9992-run_sage-make_relative_conditionally.scripts.patch) by leif created at 2011-10-13 12:04:14\n\nSCRIPTS repo. Changes `sage-spkg` to only run `sage-make_relative` if Sage's Python is already installed. Based on Sage 4.7.2.alpha4.",
     "created_at": "2011-10-13T12:04:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9991",
     "type": "issue_comment",
@@ -257,7 +257,7 @@ archive/issue_comments_100409.json:
 }
 ```
 
-Attachment
+Attachment [trac_9992-run_sage-make_relative_conditionally.scripts.patch](tarball://root/attachments/some-uuid/ticket9992/trac_9992-run_sage-make_relative_conditionally.scripts.patch) by leif created at 2011-10-13 12:04:14
 
 SCRIPTS repo. Changes `sage-spkg` to only run `sage-make_relative` if Sage's Python is already installed. Based on Sage 4.7.2.alpha4.
 

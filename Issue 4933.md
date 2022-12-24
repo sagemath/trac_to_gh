@@ -98,7 +98,7 @@ Michael
 archive/issue_comments_037437.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4933-1.patch](tarball://root/attachments/some-uuid/ticket4933/trac_4933-1.patch) by cremona created at 2009-04-15 16:26:46",
     "created_at": "2009-04-15T16:26:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4933",
     "type": "issue_comment",
@@ -107,7 +107,7 @@ archive/issue_comments_037437.json:
 }
 ```
 
-Attachment
+Attachment [trac_4933-1.patch](tarball://root/attachments/some-uuid/ticket4933/trac_4933-1.patch) by cremona created at 2009-04-15 16:26:46
 
 
 
@@ -142,7 +142,7 @@ To review/test the patch (which was based on 3.4.1.rc2), you need to apply it an
 archive/issue_comments_037439.json:
 ```json
 {
-    "body": "Attachment\n\nTwo more;  apply after previous.",
+    "body": "Attachment [trac_4933-2.patch](tarball://root/attachments/some-uuid/ticket4933/trac_4933-2.patch) by cremona created at 2009-04-16 16:35:28\n\nTwo more;  apply after previous.",
     "created_at": "2009-04-16T16:35:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4933",
     "type": "issue_comment",
@@ -151,7 +151,7 @@ archive/issue_comments_037439.json:
 }
 ```
 
-Attachment
+Attachment [trac_4933-2.patch](tarball://root/attachments/some-uuid/ticket4933/trac_4933-2.patch) by cremona created at 2009-04-16 16:35:28
 
 Two more;  apply after previous.
 
@@ -180,7 +180,7 @@ The second patch adds a couple more files (weierstrass_morphism and period_latti
 archive/issue_comments_037441.json:
 ```json
 {
-    "body": "Attachment\n\nIGNORE all previous patches.  This is based on 3.4.1.rc3",
+    "body": "Attachment [trac_4933-3.patch](tarball://root/attachments/some-uuid/ticket4933/trac_4933-3.patch) by cremona created at 2009-04-17 14:02:20\n\nIGNORE all previous patches.  This is based on 3.4.1.rc3",
     "created_at": "2009-04-17T14:02:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4933",
     "type": "issue_comment",
@@ -189,7 +189,7 @@ archive/issue_comments_037441.json:
 }
 ```
 
-Attachment
+Attachment [trac_4933-3.patch](tarball://root/attachments/some-uuid/ticket4933/trac_4933-3.patch) by cremona created at 2009-04-17 14:02:20
 
 IGNORE all previous patches.  This is based on 3.4.1.rc3
 
@@ -359,7 +359,7 @@ Yes!
 archive/issue_comments_037448.json:
 ```json
 {
-    "body": "Attachment\n\nReplaces previous;  based on 3.4.1.rc3 + #5808 patch",
+    "body": "Attachment [trac_4933-3-rebase.patch](tarball://root/attachments/some-uuid/ticket4933/trac_4933-3-rebase.patch) by cremona created at 2009-04-17 15:52:59\n\nReplaces previous;  based on 3.4.1.rc3 + #5808 patch",
     "created_at": "2009-04-17T15:52:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4933",
     "type": "issue_comment",
@@ -368,7 +368,7 @@ archive/issue_comments_037448.json:
 }
 ```
 
-Attachment
+Attachment [trac_4933-3-rebase.patch](tarball://root/attachments/some-uuid/ticket4933/trac_4933-3-rebase.patch) by cremona created at 2009-04-17 15:52:59
 
 Replaces previous;  based on 3.4.1.rc3 + #5808 patch
 
@@ -435,7 +435,7 @@ apply on top of the other patch
 archive/issue_comments_037452.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:12 jhpalmieri]:\n> Code looks good, all tests pass, the reference manual looks nice. I'm attaching a referee's patch with two very small changes.\n\nThanks John -- I am quite happy with your adjustments.",
+    "body": "Attachment [4933-ref.patch](tarball://root/attachments/some-uuid/ticket4933/4933-ref.patch) by cremona created at 2009-04-17 22:17:00\n\nReplying to [comment:12 jhpalmieri]:\n> Code looks good, all tests pass, the reference manual looks nice. I'm attaching a referee's patch with two very small changes.\n\nThanks John -- I am quite happy with your adjustments.",
     "created_at": "2009-04-17T22:17:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4933",
     "type": "issue_comment",
@@ -444,7 +444,7 @@ archive/issue_comments_037452.json:
 }
 ```
 
-Attachment
+Attachment [4933-ref.patch](tarball://root/attachments/some-uuid/ticket4933/4933-ref.patch) by cremona created at 2009-04-17 22:17:00
 
 Replying to [comment:12 jhpalmieri]:
 > Code looks good, all tests pass, the reference manual looks nice. I'm attaching a referee's patch with two very small changes.

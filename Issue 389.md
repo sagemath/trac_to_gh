@@ -113,7 +113,7 @@ Michael
 archive/issue_comments_001909.json:
 ```json
 {
-    "body": "Attachment\n\nThere is a new MPFI spkg at http://sage.math.washington.edu/home/cwitty/mpfi-1.3.4-rc3.p9.spkg that fixes this (it also includes a minor fix from Paul Zimmerman, for mpfi_ui_sub()).\n\nThe attached patch adds a doctest for the new package.  With the old spkg, the doctest will loop forever; with the new spkg, it works.",
+    "body": "Attachment [389.patch](tarball://root/attachments/some-uuid/ticket389/389.patch) by cwitty created at 2007-11-02 06:02:33\n\nThere is a new MPFI spkg at http://sage.math.washington.edu/home/cwitty/mpfi-1.3.4-rc3.p9.spkg that fixes this (it also includes a minor fix from Paul Zimmerman, for mpfi_ui_sub()).\n\nThe attached patch adds a doctest for the new package.  With the old spkg, the doctest will loop forever; with the new spkg, it works.",
     "created_at": "2007-11-02T06:02:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/389",
     "type": "issue_comment",
@@ -122,7 +122,7 @@ archive/issue_comments_001909.json:
 }
 ```
 
-Attachment
+Attachment [389.patch](tarball://root/attachments/some-uuid/ticket389/389.patch) by cwitty created at 2007-11-02 06:02:33
 
 There is a new MPFI spkg at http://sage.math.washington.edu/home/cwitty/mpfi-1.3.4-rc3.p9.spkg that fixes this (it also includes a minor fix from Paul Zimmerman, for mpfi_ui_sub()).
 

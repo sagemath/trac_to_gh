@@ -38,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8566
 archive/issue_comments_077550.json:
 ```json
 {
-    "body": "Attachment\n\nprereq 0.8 tar file - unchanged from 0.7, except directory name",
+    "body": "Attachment [prereq-0.8.tar](tarball://root/attachments/some-uuid/ticket8566/prereq-0.8.tar) by drkirkby created at 2010-04-03 16:56:38\n\nprereq 0.8 tar file - unchanged from 0.7, except directory name",
     "created_at": "2010-04-03T16:56:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8566",
     "type": "issue_comment",
@@ -47,7 +47,7 @@ archive/issue_comments_077550.json:
 }
 ```
 
-Attachment
+Attachment [prereq-0.8.tar](tarball://root/attachments/some-uuid/ticket8566/prereq-0.8.tar) by drkirkby created at 2010-04-03 16:56:38
 
 prereq 0.8 tar file - unchanged from 0.7, except directory name
 
@@ -58,7 +58,7 @@ prereq 0.8 tar file - unchanged from 0.7, except directory name
 archive/issue_comments_077551.json:
 ```json
 {
-    "body": "Attachment\n\nprereq 0.8 script - removes 'm' option to 'tar'",
+    "body": "Attachment [prereq-0.8-install](tarball://root/attachments/some-uuid/ticket8566/prereq-0.8-install) by drkirkby created at 2010-04-03 16:57:33\n\nprereq 0.8 script - removes 'm' option to 'tar'",
     "created_at": "2010-04-03T16:57:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8566",
     "type": "issue_comment",
@@ -67,7 +67,7 @@ archive/issue_comments_077551.json:
 }
 ```
 
-Attachment
+Attachment [prereq-0.8-install](tarball://root/attachments/some-uuid/ticket8566/prereq-0.8-install) by drkirkby created at 2010-04-03 16:57:33
 
 prereq 0.8 script - removes 'm' option to 'tar'
 

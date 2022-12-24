@@ -62,7 +62,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9711
 archive/issue_comments_094644.json:
 ```json
 {
-    "body": "Attachment\n\nWraps the arguments of the write call in an encoded_str() call.",
+    "body": "Attachment [trac_9711-unicode-worksheets.patch](tarball://root/attachments/some-uuid/ticket9711/trac_9711-unicode-worksheets.patch) by timdumol created at 2010-08-19 12:57:35\n\nWraps the arguments of the write call in an encoded_str() call.",
     "created_at": "2010-08-19T12:57:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9711",
     "type": "issue_comment",
@@ -71,7 +71,7 @@ archive/issue_comments_094644.json:
 }
 ```
 
-Attachment
+Attachment [trac_9711-unicode-worksheets.patch](tarball://root/attachments/some-uuid/ticket9711/trac_9711-unicode-worksheets.patch) by timdumol created at 2010-08-19 12:57:35
 
 Wraps the arguments of the write call in an encoded_str() call.
 
@@ -229,7 +229,7 @@ This is now
 archive/issue_comments_094653.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [testdoc3.sws](tarball://root/attachments/some-uuid/ticket9711/testdoc3.sws) by chapoton created at 2017-07-25 07:30:52",
     "created_at": "2017-07-25T07:30:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9711",
     "type": "issue_comment",
@@ -238,7 +238,7 @@ archive/issue_comments_094653.json:
 }
 ```
 
-Attachment
+Attachment [testdoc3.sws](tarball://root/attachments/some-uuid/ticket9711/testdoc3.sws) by chapoton created at 2017-07-25 07:30:52
 
 
 

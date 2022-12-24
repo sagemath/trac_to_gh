@@ -53,7 +53,7 @@ Changing status from new to needs_review.
 archive/issue_comments_078511.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8653-random-order-doctest-doc.patch](tarball://root/attachments/some-uuid/ticket8653/trac_8653-random-order-doctest-doc.patch) by rbeezer created at 2010-04-06 06:02:03",
     "created_at": "2010-04-06T06:02:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8653",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_078511.json:
 }
 ```
 
-Attachment
+Attachment [trac_8653-random-order-doctest-doc.patch](tarball://root/attachments/some-uuid/ticket8653/trac_8653-random-order-doctest-doc.patch) by rbeezer created at 2010-04-06 06:02:03
 
 
 

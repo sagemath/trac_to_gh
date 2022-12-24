@@ -53,7 +53,7 @@ Changing status from new to assigned.
 archive/issue_comments_036607.json:
 ```json
 {
-    "body": "Attachment\n\nPlease comment on needed fixes.\n\nCheers,\n\nMichael",
+    "body": "Attachment [Sage-3.2.2-release-notes-draft1.txt](tarball://root/attachments/some-uuid/ticket4829/Sage-3.2.2-release-notes-draft1.txt) by mabshoff created at 2009-01-10 01:15:50\n\nPlease comment on needed fixes.\n\nCheers,\n\nMichael",
     "created_at": "2009-01-10T01:15:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4829",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_036607.json:
 }
 ```
 
-Attachment
+Attachment [Sage-3.2.2-release-notes-draft1.txt](tarball://root/attachments/some-uuid/ticket4829/Sage-3.2.2-release-notes-draft1.txt) by mabshoff created at 2009-01-10 01:15:50
 
 Please comment on needed fixes.
 
@@ -162,7 +162,7 @@ Resolution: fixed
 archive/issue_comments_036612.json:
 ```json
 {
-    "body": "Attachment\n\nSome bits of the 3.2.3 release notes slipped into the 3.2.2 release notes, so I removed them. This was also merged in **3.2.2**, not **3.2.3**.\n\nCheers,\n\nMichael",
+    "body": "Attachment [Sage-3.2.2-release-notes-final.txt](tarball://root/attachments/some-uuid/ticket4829/Sage-3.2.2-release-notes-final.txt) by mabshoff created at 2009-01-19 05:32:05\n\nSome bits of the 3.2.3 release notes slipped into the 3.2.2 release notes, so I removed them. This was also merged in **3.2.2**, not **3.2.3**.\n\nCheers,\n\nMichael",
     "created_at": "2009-01-19T05:32:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4829",
     "type": "issue_comment",
@@ -171,7 +171,7 @@ archive/issue_comments_036612.json:
 }
 ```
 
-Attachment
+Attachment [Sage-3.2.2-release-notes-final.txt](tarball://root/attachments/some-uuid/ticket4829/Sage-3.2.2-release-notes-final.txt) by mabshoff created at 2009-01-19 05:32:05
 
 Some bits of the 3.2.3 release notes slipped into the 3.2.2 release notes, so I removed them. This was also merged in **3.2.2**, not **3.2.3**.
 

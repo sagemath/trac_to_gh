@@ -86,7 +86,7 @@ This depends on #2818
 archive/issue_comments_019392.json:
 ```json
 {
-    "body": "Attachment\n\nEverything seems to work for me, except I can't hit return when doing tab completion to select an item.",
+    "body": "Attachment [trac-2823.patch](tarball://root/attachments/some-uuid/ticket2823/trac-2823.patch) by robertwb created at 2008-04-06 08:03:05\n\nEverything seems to work for me, except I can't hit return when doing tab completion to select an item.",
     "created_at": "2008-04-06T08:03:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2823",
     "type": "issue_comment",
@@ -95,7 +95,7 @@ archive/issue_comments_019392.json:
 }
 ```
 
-Attachment
+Attachment [trac-2823.patch](tarball://root/attachments/some-uuid/ticket2823/trac-2823.patch) by robertwb created at 2008-04-06 08:03:05
 
 Everything seems to work for me, except I can't hit return when doing tab completion to select an item.
 

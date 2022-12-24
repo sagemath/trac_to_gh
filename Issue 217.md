@@ -135,7 +135,7 @@ optimization relative to #931
 archive/issue_comments_000968.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [patch_trac217.hg](tarball://root/attachments/some-uuid/ticket217/patch_trac217.hg) by jsp created at 2007-10-27 12:44:21",
     "created_at": "2007-10-27T12:44:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/217",
     "type": "issue_comment",
@@ -144,7 +144,7 @@ archive/issue_comments_000968.json:
 }
 ```
 
-Attachment
+Attachment [patch_trac217.hg](tarball://root/attachments/some-uuid/ticket217/patch_trac217.hg) by jsp created at 2007-10-27 12:44:21
 
 
 
@@ -330,7 +330,7 @@ Canged back
 archive/issue_comments_000976.json:
 ```json
 {
-    "body": "Attachment\n\nLesson learned! I hope.\n\nJaap",
+    "body": "Attachment [patch_trac217_2.hg](tarball://root/attachments/some-uuid/ticket217/patch_trac217_2.hg) by jsp created at 2007-10-29 20:06:17\n\nLesson learned! I hope.\n\nJaap",
     "created_at": "2007-10-29T20:06:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/217",
     "type": "issue_comment",
@@ -339,7 +339,7 @@ archive/issue_comments_000976.json:
 }
 ```
 
-Attachment
+Attachment [patch_trac217_2.hg](tarball://root/attachments/some-uuid/ticket217/patch_trac217_2.hg) by jsp created at 2007-10-29 20:06:17
 
 Lesson learned! I hope.
 

@@ -547,7 +547,7 @@ Changing status from new to needs_review.
 archive/issue_comments_097570.json:
 ```json
 {
-    "body": "Attachment\n\nHi Alexander, \n\nI'm not going to suggest you change this, as polybori-0.6.4.p5.spkg has positive review and I don't want to hold that up, as it fixes the main issue here, which is not the linker. \n\nPersonally I would not have returned 'platform' though in the case of a non-GNU linker, as it is a bit inconsistent to return GNU when the GNU linker is used, and sunos, hp-ux or whatever when the GNU linker is not used. \n\nI think using Sun, HP, IBM etc would have been more consistent, or perhaps return the word \"native\" in the case of non-GNU linker. \n\nBut it's a minor point. The main thing is your changes get this working. There are no longer any text relocations to deal with, which only leaves Cliquer, ECL and R which have this problem. Cliquer can be solved easily - R and ECL are less easy, though both are ok if built with the Sun compiler. \n\nDave",
+    "body": "Attachment [polybori-0.6.4.p6.spkg.patch](tarball://root/attachments/some-uuid/ticket9872/polybori-0.6.4.p6.spkg.patch) by drkirkby created at 2010-09-13 15:17:01\n\nHi Alexander, \n\nI'm not going to suggest you change this, as polybori-0.6.4.p5.spkg has positive review and I don't want to hold that up, as it fixes the main issue here, which is not the linker. \n\nPersonally I would not have returned 'platform' though in the case of a non-GNU linker, as it is a bit inconsistent to return GNU when the GNU linker is used, and sunos, hp-ux or whatever when the GNU linker is not used. \n\nI think using Sun, HP, IBM etc would have been more consistent, or perhaps return the word \"native\" in the case of non-GNU linker. \n\nBut it's a minor point. The main thing is your changes get this working. There are no longer any text relocations to deal with, which only leaves Cliquer, ECL and R which have this problem. Cliquer can be solved easily - R and ECL are less easy, though both are ok if built with the Sun compiler. \n\nDave",
     "created_at": "2010-09-13T15:17:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9871",
     "type": "issue_comment",
@@ -556,7 +556,7 @@ archive/issue_comments_097570.json:
 }
 ```
 
-Attachment
+Attachment [polybori-0.6.4.p6.spkg.patch](tarball://root/attachments/some-uuid/ticket9872/polybori-0.6.4.p6.spkg.patch) by drkirkby created at 2010-09-13 15:17:01
 
 Hi Alexander, 
 

@@ -106,7 +106,7 @@ Changing status from new to needs_review.
 archive/issue_comments_055216.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [13638.patch](tarball://root/attachments/some-uuid/ticket6737/13638.patch) by gaer created at 2010-01-18 06:24:29",
     "created_at": "2010-01-18T06:24:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6737",
     "type": "issue_comment",
@@ -115,7 +115,7 @@ archive/issue_comments_055216.json:
 }
 ```
 
-Attachment
+Attachment [13638.patch](tarball://root/attachments/some-uuid/ticket6737/13638.patch) by gaer created at 2010-01-18 06:24:29
 
 
 
@@ -196,7 +196,7 @@ Resolution: fixed
 archive/issue_comments_055221.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6737.patch](tarball://root/attachments/some-uuid/ticket6737/trac_6737.patch) by rlm created at 2010-01-19 00:26:13",
     "created_at": "2010-01-19T00:26:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6737",
     "type": "issue_comment",
@@ -205,4 +205,4 @@ archive/issue_comments_055221.json:
 }
 ```
 
-Attachment
+Attachment [trac_6737.patch](tarball://root/attachments/some-uuid/ticket6737/trac_6737.patch) by rlm created at 2010-01-19 00:26:13

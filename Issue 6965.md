@@ -174,7 +174,7 @@ which is usually more up-to-date than the given URL. The given URL is more speci
 archive/issue_comments_057631.json:
 ```json
 {
-    "body": "Attachment\n\nGood point about the URL.  I've replaced the patch with a new one, changing just the URL to the more permanent one.",
+    "body": "Attachment [trac_6965-manifest.patch](tarball://root/attachments/some-uuid/ticket6965/trac_6965-manifest.patch) by jhpalmieri created at 2009-12-22 16:02:30\n\nGood point about the URL.  I've replaced the patch with a new one, changing just the URL to the more permanent one.",
     "created_at": "2009-12-22T16:02:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6965",
     "type": "issue_comment",
@@ -183,7 +183,7 @@ archive/issue_comments_057631.json:
 }
 ```
 
-Attachment
+Attachment [trac_6965-manifest.patch](tarball://root/attachments/some-uuid/ticket6965/trac_6965-manifest.patch) by jhpalmieri created at 2009-12-22 16:02:30
 
 Good point about the URL.  I've replaced the patch with a new one, changing just the URL to the more permanent one.
 

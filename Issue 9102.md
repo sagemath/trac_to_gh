@@ -53,7 +53,7 @@ Changing status from new to needs_review.
 archive/issue_comments_084570.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9102-docstring-strong-generating-system.patch](tarball://root/attachments/some-uuid/ticket9102/trac_9102-docstring-strong-generating-system.patch) by rbeezer created at 2010-05-31 03:37:29",
     "created_at": "2010-05-31T03:37:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9102",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_084570.json:
 }
 ```
 
-Attachment
+Attachment [trac_9102-docstring-strong-generating-system.patch](tarball://root/attachments/some-uuid/ticket9102/trac_9102-docstring-strong-generating-system.patch) by rbeezer created at 2010-05-31 03:37:29
 
 
 
@@ -107,7 +107,7 @@ Changing priority from trivial to blocker.
 archive/issue_comments_084573.json:
 ```json
 {
-    "body": "Attachment\n\nRevised patch (version 2) addresses the failure to build the PDF version of the reference manual, as described at #8030.  The only difference in the v2 patch is to replace two \"\\leqslant\" by \"\\leq\".  However, there are other documentation changes here that need review (ie, the whole v2 patch)  Both PDF and HTML now build fine and look fine.\n\nLong term, we should see why this AMS symbol is not present for the PDF, while is present for the HTML.\n\nMisha - can you review?\n\nI've marked this as a blocker as part of the 4.4.3 alpha series in hopes of having it make it into the final, since #8030 introduced the failure to build the PDF version and is merged already.\n\nRob",
+    "body": "Attachment [trac_9102-docstring-strong-generating-system-v2.patch](tarball://root/attachments/some-uuid/ticket9102/trac_9102-docstring-strong-generating-system-v2.patch) by rbeezer created at 2010-06-03 15:33:59\n\nRevised patch (version 2) addresses the failure to build the PDF version of the reference manual, as described at #8030.  The only difference in the v2 patch is to replace two \"\\leqslant\" by \"\\leq\".  However, there are other documentation changes here that need review (ie, the whole v2 patch)  Both PDF and HTML now build fine and look fine.\n\nLong term, we should see why this AMS symbol is not present for the PDF, while is present for the HTML.\n\nMisha - can you review?\n\nI've marked this as a blocker as part of the 4.4.3 alpha series in hopes of having it make it into the final, since #8030 introduced the failure to build the PDF version and is merged already.\n\nRob",
     "created_at": "2010-06-03T15:33:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9102",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_084573.json:
 }
 ```
 
-Attachment
+Attachment [trac_9102-docstring-strong-generating-system-v2.patch](tarball://root/attachments/some-uuid/ticket9102/trac_9102-docstring-strong-generating-system-v2.patch) by rbeezer created at 2010-06-03 15:33:59
 
 Revised patch (version 2) addresses the failure to build the PDF version of the reference manual, as described at #8030.  The only difference in the v2 patch is to replace two "\leqslant" by "\leq".  However, there are other documentation changes here that need review (ie, the whole v2 patch)  Both PDF and HTML now build fine and look fine.
 
@@ -479,7 +479,7 @@ Changing status from needs_info to needs_work.
 archive/issue_comments_084587.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9102-docstring-strong-generating-system-v3.patch](tarball://root/attachments/some-uuid/ticket9102/trac_9102-docstring-strong-generating-system-v3.patch) by rbeezer created at 2010-07-06 04:27:04",
     "created_at": "2010-07-06T04:27:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9102",
     "type": "issue_comment",
@@ -488,7 +488,7 @@ archive/issue_comments_084587.json:
 }
 ```
 
-Attachment
+Attachment [trac_9102-docstring-strong-generating-system-v3.patch](tarball://root/attachments/some-uuid/ticket9102/trac_9102-docstring-strong-generating-system-v3.patch) by rbeezer created at 2010-07-06 04:27:04
 
 
 

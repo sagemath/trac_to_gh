@@ -109,7 +109,7 @@ Changing status from new to assigned.
 archive/issue_comments_039720.json:
 ```json
 {
-    "body": "Attachment\n\nOK, that's the right patch (replacing the old one).",
+    "body": "Attachment [congroups.patch](tarball://root/attachments/some-uuid/ticket5180/congroups.patch) by davidloeffler created at 2009-02-04 19:10:27\n\nOK, that's the right patch (replacing the old one).",
     "created_at": "2009-02-04T19:10:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5180",
     "type": "issue_comment",
@@ -118,7 +118,7 @@ archive/issue_comments_039720.json:
 }
 ```
 
-Attachment
+Attachment [congroups.patch](tarball://root/attachments/some-uuid/ticket5180/congroups.patch) by davidloeffler created at 2009-02-04 19:10:27
 
 OK, that's the right patch (replacing the old one).
 
@@ -193,7 +193,7 @@ David
 archive/issue_comments_039723.json:
 ```json
 {
-    "body": "Attachment\n\nreplaces previous patch; rebased to 3.4",
+    "body": "Attachment [5180-arithgroups.patch](tarball://root/attachments/some-uuid/ticket5180/5180-arithgroups.patch) by davidloeffler created at 2009-03-23 17:34:46\n\nreplaces previous patch; rebased to 3.4",
     "created_at": "2009-03-23T17:34:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5180",
     "type": "issue_comment",
@@ -202,7 +202,7 @@ archive/issue_comments_039723.json:
 }
 ```
 
-Attachment
+Attachment [5180-arithgroups.patch](tarball://root/attachments/some-uuid/ticket5180/5180-arithgroups.patch) by davidloeffler created at 2009-03-23 17:34:46
 
 replaces previous patch; rebased to 3.4
 
@@ -249,7 +249,7 @@ For some reason Mercurial seems to be extremely unwilling to accept me adding a 
 archive/issue_comments_039726.json:
 ```json
 {
-    "body": "Attachment\n\nmicro-patch: apply on top of previous patch",
+    "body": "Attachment [5180-patch2.patch](tarball://root/attachments/some-uuid/ticket5180/5180-patch2.patch) by davidloeffler created at 2009-03-23 18:39:24\n\nmicro-patch: apply on top of previous patch",
     "created_at": "2009-03-23T18:39:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5180",
     "type": "issue_comment",
@@ -258,7 +258,7 @@ archive/issue_comments_039726.json:
 }
 ```
 
-Attachment
+Attachment [5180-patch2.patch](tarball://root/attachments/some-uuid/ticket5180/5180-patch2.patch) by davidloeffler created at 2009-03-23 18:39:24
 
 micro-patch: apply on top of previous patch
 
@@ -269,7 +269,7 @@ micro-patch: apply on top of previous patch
 archive/issue_comments_039727.json:
 ```json
 {
-    "body": "Attachment\n\nApply over previous two patches",
+    "body": "Attachment [5180-patch3-unpickling.patch](tarball://root/attachments/some-uuid/ticket5180/5180-patch3-unpickling.patch) by davidloeffler created at 2009-03-25 12:09:34\n\nApply over previous two patches",
     "created_at": "2009-03-25T12:09:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5180",
     "type": "issue_comment",
@@ -278,7 +278,7 @@ archive/issue_comments_039727.json:
 }
 ```
 
-Attachment
+Attachment [5180-patch3-unpickling.patch](tarball://root/attachments/some-uuid/ticket5180/5180-patch3-unpickling.patch) by davidloeffler created at 2009-03-25 12:09:34
 
 Apply over previous two patches
 
@@ -307,7 +307,7 @@ Just realised that this patch has the same problem as my patch for 5159, that un
 archive/issue_comments_039729.json:
 ```json
 {
-    "body": "Attachment\n\nneeded before 5180-arithgroup.patch, only then the latter applies cleanly to Sage-3.4.1.alpha0",
+    "body": "Attachment [5180-patch0.patch](tarball://root/attachments/some-uuid/ticket5180/5180-patch0.patch) by GeorgSWeber created at 2009-03-31 17:53:07\n\nneeded before 5180-arithgroup.patch, only then the latter applies cleanly to Sage-3.4.1.alpha0",
     "created_at": "2009-03-31T17:53:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5180",
     "type": "issue_comment",
@@ -316,7 +316,7 @@ archive/issue_comments_039729.json:
 }
 ```
 
-Attachment
+Attachment [5180-patch0.patch](tarball://root/attachments/some-uuid/ticket5180/5180-patch0.patch) by GeorgSWeber created at 2009-03-31 17:53:07
 
 needed before 5180-arithgroup.patch, only then the latter applies cleanly to Sage-3.4.1.alpha0
 
@@ -379,7 +379,7 @@ Michael
 archive/issue_comments_039732.json:
 ```json
 {
-    "body": "Attachment\n\napply after the other ones and as well after the trac #5520 ones",
+    "body": "Attachment [trac_5180-patch4-extra-doctests.patch](tarball://root/attachments/some-uuid/ticket5180/trac_5180-patch4-extra-doctests.patch) by GeorgSWeber created at 2009-04-01 20:31:28\n\napply after the other ones and as well after the trac #5520 ones",
     "created_at": "2009-04-01T20:31:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5180",
     "type": "issue_comment",
@@ -388,7 +388,7 @@ archive/issue_comments_039732.json:
 }
 ```
 
-Attachment
+Attachment [trac_5180-patch4-extra-doctests.patch](tarball://root/attachments/some-uuid/ticket5180/trac_5180-patch4-extra-doctests.patch) by GeorgSWeber created at 2009-04-01 20:31:28
 
 apply after the other ones and as well after the trac #5520 ones
 
@@ -466,7 +466,7 @@ Georg's patch doesn't change any actual code other than fixing one line to resto
 archive/issue_comments_039736.json:
 ```json
 {
-    "body": "Attachment\n\ntrac_5180-patch5-overconvergent-import-fix.patch is needed to fix the imports for the overconvergent modular forms of genus 0.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_5180-patch5-overconvergent-import-fix.patch](tarball://root/attachments/some-uuid/ticket5180/trac_5180-patch5-overconvergent-import-fix.patch) by mabshoff created at 2009-04-05 01:08:12\n\ntrac_5180-patch5-overconvergent-import-fix.patch is needed to fix the imports for the overconvergent modular forms of genus 0.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-05T01:08:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5180",
     "type": "issue_comment",
@@ -475,7 +475,7 @@ archive/issue_comments_039736.json:
 }
 ```
 
-Attachment
+Attachment [trac_5180-patch5-overconvergent-import-fix.patch](tarball://root/attachments/some-uuid/ticket5180/trac_5180-patch5-overconvergent-import-fix.patch) by mabshoff created at 2009-04-05 01:08:12
 
 trac_5180-patch5-overconvergent-import-fix.patch is needed to fix the imports for the overconvergent modular forms of genus 0.
 

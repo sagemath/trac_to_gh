@@ -261,7 +261,7 @@ Anyway, applying the attached patch would at least make it so we can release sag
 archive/issue_comments_037457.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4934.patch](tarball://root/attachments/some-uuid/ticket4934/trac_4934.patch) by was created at 2009-01-05 05:20:13",
     "created_at": "2009-01-05T05:20:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4934",
     "type": "issue_comment",
@@ -270,7 +270,7 @@ archive/issue_comments_037457.json:
 }
 ```
 
-Attachment
+Attachment [trac_4934.patch](tarball://root/attachments/some-uuid/ticket4934/trac_4934.patch) by was created at 2009-01-05 05:20:13
 
 
 

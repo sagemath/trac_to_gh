@@ -103,7 +103,7 @@ Changing status from new to needs_review.
 archive/issue_comments_073335.json:
 ```json
 {
-    "body": "Attachment\n\nI don't use `sage.rings.integer.LCM_list` because I think it's less readable.",
+    "body": "Attachment [trac_8283-improve_carmichael_lambda.patch](tarball://root/attachments/some-uuid/ticket8283/trac_8283-improve_carmichael_lambda.patch) by ylchapuy created at 2010-03-01 10:10:29\n\nI don't use `sage.rings.integer.LCM_list` because I think it's less readable.",
     "created_at": "2010-03-01T10:10:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8283",
     "type": "issue_comment",
@@ -112,7 +112,7 @@ archive/issue_comments_073335.json:
 }
 ```
 
-Attachment
+Attachment [trac_8283-improve_carmichael_lambda.patch](tarball://root/attachments/some-uuid/ticket8283/trac_8283-improve_carmichael_lambda.patch) by ylchapuy created at 2010-03-01 10:10:29
 
 I don't use `sage.rings.integer.LCM_list` because I think it's less readable.
 
@@ -161,7 +161,7 @@ apply on top of previous one
 archive/issue_comments_073338.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:2 wdj]:\n> Okay with me. Minh, what do you think?\n\nI agree with Yann's rewrite. It's much more compact than the previous version. However, I have attached the reviewer patch [trac_8283-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8283/trac_8283-reviewer.patch), whose changes include:\n\n* Remove the import statements\n {{{\nfrom sage.rings.arith import factor\nfrom sage.structure.element import generic_power\n }}}\n These import statements are no longer required due to Yann's rewrite of the Carmichael lambda function.\n* Move the import statement\n {{{\nimport sage.rings.integer\n }}}\n to the module preamble, so that it now reads\n {{{\nfrom sage.rings.integer import Integer\n }}}\n This has the effect of importing only what is required, i.e. the class `Integer`, instead of importing the whole module `sage.rings.integer`.\n* Some typo fixes.\n* Clean up \u00e0 la [PEP8](http://www.python.org/dev/peps/pep-0008/).\n* Removing a redundant `lambda` construct by replacing\n {{{\nlambda x: int(x)\n }}}\n with the more compact\n {{{\nint\n }}}\n\nOnly my patch needs review by anyone but me. If it's OK, then the whole ticket gets a positive review.",
+    "body": "Attachment [trac_8283-reviewer.patch](tarball://root/attachments/some-uuid/ticket8283/trac_8283-reviewer.patch) by mvngu created at 2010-03-03 13:38:24\n\nReplying to [comment:2 wdj]:\n> Okay with me. Minh, what do you think?\n\nI agree with Yann's rewrite. It's much more compact than the previous version. However, I have attached the reviewer patch [trac_8283-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8283/trac_8283-reviewer.patch), whose changes include:\n\n* Remove the import statements\n {{{\nfrom sage.rings.arith import factor\nfrom sage.structure.element import generic_power\n }}}\n These import statements are no longer required due to Yann's rewrite of the Carmichael lambda function.\n* Move the import statement\n {{{\nimport sage.rings.integer\n }}}\n to the module preamble, so that it now reads\n {{{\nfrom sage.rings.integer import Integer\n }}}\n This has the effect of importing only what is required, i.e. the class `Integer`, instead of importing the whole module `sage.rings.integer`.\n* Some typo fixes.\n* Clean up \u00e0 la [PEP8](http://www.python.org/dev/peps/pep-0008/).\n* Removing a redundant `lambda` construct by replacing\n {{{\nlambda x: int(x)\n }}}\n with the more compact\n {{{\nint\n }}}\n\nOnly my patch needs review by anyone but me. If it's OK, then the whole ticket gets a positive review.",
     "created_at": "2010-03-03T13:38:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8283",
     "type": "issue_comment",
@@ -170,7 +170,7 @@ archive/issue_comments_073338.json:
 }
 ```
 
-Attachment
+Attachment [trac_8283-reviewer.patch](tarball://root/attachments/some-uuid/ticket8283/trac_8283-reviewer.patch) by mvngu created at 2010-03-03 13:38:24
 
 Replying to [comment:2 wdj]:
 > Okay with me. Minh, what do you think?

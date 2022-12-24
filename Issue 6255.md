@@ -164,7 +164,7 @@ Experimental timing patch
 archive/issue_comments_049963.json:
 ```json
 {
-    "body": "Attachment\n\nExperimental parallel doc output patch",
+    "body": "Attachment [timing.patch](tarball://root/attachments/some-uuid/ticket6255/timing.patch) by hivert created at 2012-04-21 16:00:24\n\nExperimental parallel doc output patch",
     "created_at": "2012-04-21T16:00:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6255",
     "type": "issue_comment",
@@ -173,7 +173,7 @@ archive/issue_comments_049963.json:
 }
 ```
 
-Attachment
+Attachment [timing.patch](tarball://root/attachments/some-uuid/ticket6255/timing.patch) by hivert created at 2012-04-21 16:00:24
 
 Experimental parallel doc output patch
 
@@ -184,7 +184,7 @@ Experimental parallel doc output patch
 archive/issue_comments_049964.json:
 ```json
 {
-    "body": "Attachment\n\nHi there,\n\nI just attached two patches. They need to be applied in\n\n```\n$SAGE_ROOT/local/lib/python2.7/site-packages/Sphinx-1.1.2-py2.7.egg/sphinx/\n```\n\n(I didn't regenerate a spkg yet). Those two packages are very experimental and\nthey certainly break a lot of things. The goal of `timing.patch` is to\nimprove Sphinx timning and progress report. The second one uses\n``@`parallel` to parallelize the writing part of the doc generation. This is\nvery raw and could certainly be optimized using Pool, Queue and the\nlike. Still the improvement is allready here:\nOn a intel i7 8 multithreaded core:\n- serie:\n\n```\nreading sources...  Elapsed time = 385.334967136\nwriting output...  Elapsed time = 1903.10733795\n```\n\n- parallel:\n\n```\nreading sources...  Elapsed time = 418.675282001\nwriting output...  Elapsed time = 253.907614946\n```\n\nOn a 24 core server:\n- serie:\n\n```\nreading sources...  Elapsed time = 243.982397079\nwriting output...  Elapsed time = 1366.98643208\n```\n\n- parallel:\n\n```\nreading sources...  Elapsed time = 243.729380131\nwriting output...  Elapsed time = 176.76424408\n```\n\n\nFlorent",
+    "body": "Attachment [paral.patch](tarball://root/attachments/some-uuid/ticket6255/paral.patch) by hivert created at 2012-04-21 16:09:56\n\nHi there,\n\nI just attached two patches. They need to be applied in\n\n```\n$SAGE_ROOT/local/lib/python2.7/site-packages/Sphinx-1.1.2-py2.7.egg/sphinx/\n```\n\n(I didn't regenerate a spkg yet). Those two packages are very experimental and\nthey certainly break a lot of things. The goal of `timing.patch` is to\nimprove Sphinx timning and progress report. The second one uses\n``@`parallel` to parallelize the writing part of the doc generation. This is\nvery raw and could certainly be optimized using Pool, Queue and the\nlike. Still the improvement is allready here:\nOn a intel i7 8 multithreaded core:\n- serie:\n\n```\nreading sources...  Elapsed time = 385.334967136\nwriting output...  Elapsed time = 1903.10733795\n```\n\n- parallel:\n\n```\nreading sources...  Elapsed time = 418.675282001\nwriting output...  Elapsed time = 253.907614946\n```\n\nOn a 24 core server:\n- serie:\n\n```\nreading sources...  Elapsed time = 243.982397079\nwriting output...  Elapsed time = 1366.98643208\n```\n\n- parallel:\n\n```\nreading sources...  Elapsed time = 243.729380131\nwriting output...  Elapsed time = 176.76424408\n```\n\n\nFlorent",
     "created_at": "2012-04-21T16:09:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6255",
     "type": "issue_comment",
@@ -193,7 +193,7 @@ archive/issue_comments_049964.json:
 }
 ```
 
-Attachment
+Attachment [paral.patch](tarball://root/attachments/some-uuid/ticket6255/paral.patch) by hivert created at 2012-04-21 16:09:56
 
 Hi there,
 

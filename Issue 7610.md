@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7610
 archive/issue_comments_064996.json:
 ```json
 {
-    "body": "Attachment\n\nAdds Arch Linux workaround (copies over system library)",
+    "body": "Attachment [trac_7610-readline-arch-workaround.patch](tarball://root/attachments/some-uuid/ticket7610/trac_7610-readline-arch-workaround.patch) by timdumol created at 2009-12-06 02:54:38\n\nAdds Arch Linux workaround (copies over system library)",
     "created_at": "2009-12-06T02:54:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7610",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_064996.json:
 }
 ```
 
-Attachment
+Attachment [trac_7610-readline-arch-workaround.patch](tarball://root/attachments/some-uuid/ticket7610/trac_7610-readline-arch-workaround.patch) by timdumol created at 2009-12-06 02:54:38
 
 Adds Arch Linux workaround (copies over system library)
 

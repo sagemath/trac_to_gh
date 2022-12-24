@@ -185,7 +185,7 @@ except:
 archive/issue_comments_065020.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7614.patch](tarball://root/attachments/some-uuid/ticket7614/trac_7614.patch) by was created at 2009-12-09 16:13:20",
     "created_at": "2009-12-09T16:13:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7614",
     "type": "issue_comment",
@@ -194,7 +194,7 @@ archive/issue_comments_065020.json:
 }
 ```
 
-Attachment
+Attachment [trac_7614.patch](tarball://root/attachments/some-uuid/ticket7614/trac_7614.patch) by was created at 2009-12-09 16:13:20
 
 
 

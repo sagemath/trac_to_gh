@@ -141,7 +141,7 @@ In light of rbeezer's comments at #7123, I need to update the patches on this ti
 archive/issue_comments_059081.json:
 ```json
 {
-    "body": "Attachment\n\nSample output for odd behavior of `brute_force()`",
+    "body": "Attachment [trac_7124_brute_force_output.txt](tarball://root/attachments/some-uuid/ticket7124/trac_7124_brute_force_output.txt) by rbeezer created at 2009-10-15 01:07:11\n\nSample output for odd behavior of `brute_force()`",
     "created_at": "2009-10-15T01:07:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7124",
     "type": "issue_comment",
@@ -150,7 +150,7 @@ archive/issue_comments_059081.json:
 }
 ```
 
-Attachment
+Attachment [trac_7124_brute_force_output.txt](tarball://root/attachments/some-uuid/ticket7124/trac_7124_brute_force_output.txt) by rbeezer created at 2009-10-15 01:07:11
 
 Sample output for odd behavior of `brute_force()`
 
@@ -675,7 +675,7 @@ based on Sage 4.1.2.rc2 and #7123
 archive/issue_comments_059099.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of previous",
+    "body": "Attachment [trac_7124-affine.patch](tarball://root/attachments/some-uuid/ticket7124/trac_7124-affine.patch) by mvngu created at 2009-10-17 06:31:45\n\napply on top of previous",
     "created_at": "2009-10-17T06:31:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7124",
     "type": "issue_comment",
@@ -684,7 +684,7 @@ archive/issue_comments_059099.json:
 }
 ```
 
-Attachment
+Attachment [trac_7124-affine.patch](tarball://root/attachments/some-uuid/ticket7124/trac_7124-affine.patch) by mvngu created at 2009-10-17 06:31:45
 
 apply on top of previous
 
@@ -713,7 +713,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_059101.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:15 rbeezer]:\n> 1.  In `AffineCryptoSystem` there are comments about the list L which can probably be deleted.\n\nFixed.\n\n\n\n\n\n> 2.  In `__call__` the sanity check computes d and checks d == 1.  This could be removed if you trust your `_invertible` list.\n\nI have removed the test. In its place, I added some comments explaining why we don't need to test that each `a` is coprime to `n`, the alphabet size.\n\n\n\n\n\n> 3.  Docstring on `inverse_key` has an odd test about euler_phi=12, a list of invertibles is computed, etc.  Not sure this is really germane.\n\nThat doctest is meant to explain what sort of values that `a` can take on if `(a,b)` is to be a secret key. I have rewritten the doctest to explain this.",
+    "body": "Attachment [trac_7124-cryptanalysis.patch](tarball://root/attachments/some-uuid/ticket7124/trac_7124-cryptanalysis.patch) by mvngu created at 2009-10-17 06:36:45\n\nReplying to [comment:15 rbeezer]:\n> 1.  In `AffineCryptoSystem` there are comments about the list L which can probably be deleted.\n\nFixed.\n\n\n\n\n\n> 2.  In `__call__` the sanity check computes d and checks d == 1.  This could be removed if you trust your `_invertible` list.\n\nI have removed the test. In its place, I added some comments explaining why we don't need to test that each `a` is coprime to `n`, the alphabet size.\n\n\n\n\n\n> 3.  Docstring on `inverse_key` has an odd test about euler_phi=12, a list of invertibles is computed, etc.  Not sure this is really germane.\n\nThat doctest is meant to explain what sort of values that `a` can take on if `(a,b)` is to be a secret key. I have rewritten the doctest to explain this.",
     "created_at": "2009-10-17T06:36:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7124",
     "type": "issue_comment",
@@ -722,7 +722,7 @@ archive/issue_comments_059101.json:
 }
 ```
 
-Attachment
+Attachment [trac_7124-cryptanalysis.patch](tarball://root/attachments/some-uuid/ticket7124/trac_7124-cryptanalysis.patch) by mvngu created at 2009-10-17 06:36:45
 
 Replying to [comment:15 rbeezer]:
 > 1.  In `AffineCryptoSystem` there are comments about the list L which can probably be deleted.

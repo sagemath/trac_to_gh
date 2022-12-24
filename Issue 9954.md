@@ -137,7 +137,7 @@ Then I'll look at it again.
 archive/issue_comments_099300.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9955.patch](tarball://root/attachments/some-uuid/ticket9955/trac_9955.patch) by aapitzsch created at 2011-01-28 08:42:14",
     "created_at": "2011-01-28T08:42:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9954",
     "type": "issue_comment",
@@ -146,7 +146,7 @@ archive/issue_comments_099300.json:
 }
 ```
 
-Attachment
+Attachment [trac_9955.patch](tarball://root/attachments/some-uuid/ticket9955/trac_9955.patch) by aapitzsch created at 2011-01-28 08:42:14
 
 
 

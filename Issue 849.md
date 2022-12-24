@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/849
 archive/issue_comments_005252.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-cython-fixes.hg](tarball://root/attachments/some-uuid/ticket849/sage-cython-fixes.hg) by mabshoff created at 2007-10-11 13:40:14",
     "created_at": "2007-10-11T13:40:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/849",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_005252.json:
 }
 ```
 
-Attachment
+Attachment [sage-cython-fixes.hg](tarball://root/attachments/some-uuid/ticket849/sage-cython-fixes.hg) by mabshoff created at 2007-10-11 13:40:14
 
 
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4661
 archive/issue_comments_035100.json:
 ```json
 {
-    "body": "Attachment\n\nI just posted Craig's patch that he gave to me off-trac. I did nuke the build directory and a sage -ba followed by a -t -long passed, so positive review.\n\nSome commented out extensions might have to be nuked, but that ought to get taken care of via the followup ticket #4663.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_4661.patch](tarball://root/attachments/some-uuid/ticket4661/trac_4661.patch) by mabshoff created at 2008-11-30 10:11:22\n\nI just posted Craig's patch that he gave to me off-trac. I did nuke the build directory and a sage -ba followed by a -t -long passed, so positive review.\n\nSome commented out extensions might have to be nuked, but that ought to get taken care of via the followup ticket #4663.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-30T10:11:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4661",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_035100.json:
 }
 ```
 
-Attachment
+Attachment [trac_4661.patch](tarball://root/attachments/some-uuid/ticket4661/trac_4661.patch) by mabshoff created at 2008-11-30 10:11:22
 
 I just posted Craig's patch that he gave to me off-trac. I did nuke the build directory and a sage -ba followed by a -t -long passed, so positive review.
 

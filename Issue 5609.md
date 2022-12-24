@@ -127,7 +127,7 @@ rebased to 3.4.2
 archive/issue_comments_043788.json:
 ```json
 {
-    "body": "Attachment\n\nrebased the attached patch to 3.4.2",
+    "body": "Attachment [pbori_interred.patch](tarball://root/attachments/some-uuid/ticket5609/pbori_interred.patch) by malb created at 2009-05-12 01:16:24\n\nrebased the attached patch to 3.4.2",
     "created_at": "2009-05-12T01:16:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5609",
     "type": "issue_comment",
@@ -136,7 +136,7 @@ archive/issue_comments_043788.json:
 }
 ```
 
-Attachment
+Attachment [pbori_interred.patch](tarball://root/attachments/some-uuid/ticket5609/pbori_interred.patch) by malb created at 2009-05-12 01:16:24
 
 rebased the attached patch to 3.4.2
 

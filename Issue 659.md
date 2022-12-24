@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/659
 archive/issue_comments_003428.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [zeroinversion1.patch](tarball://root/attachments/some-uuid/ticket659/zeroinversion1.patch) by malb created at 2007-09-15 13:07:15",
     "created_at": "2007-09-15T13:07:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/659",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_003428.json:
 }
 ```
 
-Attachment
+Attachment [zeroinversion1.patch](tarball://root/attachments/some-uuid/ticket659/zeroinversion1.patch) by malb created at 2007-09-15 13:07:15
 
 
 
@@ -49,7 +49,7 @@ Attachment
 archive/issue_comments_003429.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [zeroinversion2.patch](tarball://root/attachments/some-uuid/ticket659/zeroinversion2.patch) by malb created at 2007-09-15 13:07:28",
     "created_at": "2007-09-15T13:07:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/659",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_003429.json:
 }
 ```
 
-Attachment
+Attachment [zeroinversion2.patch](tarball://root/attachments/some-uuid/ticket659/zeroinversion2.patch) by malb created at 2007-09-15 13:07:28
 
 
 

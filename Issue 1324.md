@@ -72,7 +72,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1324
 archive/issue_comments_008484.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch fixes an off-by-one error in RR->RQDF conversion; the bug had the effect that depending on the stack layout chosen by the compiler, `RealField(53)->RQDF` conversion might always return NaN.  (The code read one past the end of an array on the stack, so it depended on what the compiler allocated after the array.)\n\nIt also includes a minor cleanup: \"cdef bint isnan\" was technically wrong, because we weren't using isnan as a boolean.",
+    "body": "Attachment [1324.patch](tarball://root/attachments/some-uuid/ticket1324/1324.patch) by cwitty created at 2007-12-07 02:51:39\n\nThe attached patch fixes an off-by-one error in RR->RQDF conversion; the bug had the effect that depending on the stack layout chosen by the compiler, `RealField(53)->RQDF` conversion might always return NaN.  (The code read one past the end of an array on the stack, so it depended on what the compiler allocated after the array.)\n\nIt also includes a minor cleanup: \"cdef bint isnan\" was technically wrong, because we weren't using isnan as a boolean.",
     "created_at": "2007-12-07T02:51:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1324",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_008484.json:
 }
 ```
 
-Attachment
+Attachment [1324.patch](tarball://root/attachments/some-uuid/ticket1324/1324.patch) by cwitty created at 2007-12-07 02:51:39
 
 The attached patch fixes an off-by-one error in RR->RQDF conversion; the bug had the effect that depending on the stack layout chosen by the compiler, `RealField(53)->RQDF` conversion might always return NaN.  (The code read one past the end of an array on the stack, so it depended on what the compiler allocated after the array.)
 

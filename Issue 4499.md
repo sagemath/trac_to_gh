@@ -69,7 +69,7 @@ Changing assignee from cwitty to mhansen.
 archive/issue_comments_033303.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4499.patch](tarball://root/attachments/some-uuid/ticket4499/trac_4499.patch) by mhansen created at 2008-11-12 01:25:57",
     "created_at": "2008-11-12T01:25:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4499",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_033303.json:
 }
 ```
 
-Attachment
+Attachment [trac_4499.patch](tarball://root/attachments/some-uuid/ticket4499/trac_4499.patch) by mhansen created at 2008-11-12 01:25:57
 
 
 

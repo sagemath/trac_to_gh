@@ -93,7 +93,7 @@ Changing priority from major to blocker.
 archive/issue_comments_012311.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_1940_interred.patch](tarball://root/attachments/some-uuid/ticket1940/trac_1940_interred.patch) by malb created at 2008-01-27 19:53:45",
     "created_at": "2008-01-27T19:53:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1940",
     "type": "issue_comment",
@@ -102,7 +102,7 @@ archive/issue_comments_012311.json:
 }
 ```
 
-Attachment
+Attachment [trac_1940_interred.patch](tarball://root/attachments/some-uuid/ticket1940/trac_1940_interred.patch) by malb created at 2008-01-27 19:53:45
 
 
 

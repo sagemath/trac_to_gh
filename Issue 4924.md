@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4924
 archive/issue_comments_037365.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4924.patch](tarball://root/attachments/some-uuid/ticket4924/trac_4924.patch) by mhansen created at 2009-01-02 02:19:17",
     "created_at": "2009-01-02T02:19:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4924",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_037365.json:
 }
 ```
 
-Attachment
+Attachment [trac_4924.patch](tarball://root/attachments/some-uuid/ticket4924/trac_4924.patch) by mhansen created at 2009-01-02 02:19:17
 
 
 
@@ -49,7 +49,7 @@ Attachment
 archive/issue_comments_037366.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage.probability-final.patch](tarball://root/attachments/some-uuid/ticket4924/sage.probability-final.patch) by mhansen created at 2009-02-21 19:21:39",
     "created_at": "2009-02-21T19:21:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4924",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_037366.json:
 }
 ```
 
-Attachment
+Attachment [sage.probability-final.patch](tarball://root/attachments/some-uuid/ticket4924/sage.probability-final.patch) by mhansen created at 2009-02-21 19:21:39
 
 
 

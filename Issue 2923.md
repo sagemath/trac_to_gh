@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2923
 archive/issue_comments_020129.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [matplotlib-0.91.1-gcc-4.3-build-fix.patch](tarball://root/attachments/some-uuid/ticket2923/matplotlib-0.91.1-gcc-4.3-build-fix.patch) by mabshoff created at 2008-04-14 22:02:12",
     "created_at": "2008-04-14T22:02:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2923",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_020129.json:
 }
 ```
 
-Attachment
+Attachment [matplotlib-0.91.1-gcc-4.3-build-fix.patch](tarball://root/attachments/some-uuid/ticket2923/matplotlib-0.91.1-gcc-4.3-build-fix.patch) by mabshoff created at 2008-04-14 22:02:12
 
 
 

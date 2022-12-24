@@ -97,7 +97,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6643
 archive/issue_comments_054482.json:
 ```json
 {
-    "body": "Attachment\n\nApplies on sage-4.1",
+    "body": "Attachment [trac_6643-vector_from_vector_fix-sl.patch](tarball://root/attachments/some-uuid/ticket6643/trac_6643-vector_from_vector_fix-sl.patch) by slabbe created at 2009-07-27 19:55:37\n\nApplies on sage-4.1",
     "created_at": "2009-07-27T19:55:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6643",
     "type": "issue_comment",
@@ -106,7 +106,7 @@ archive/issue_comments_054482.json:
 }
 ```
 
-Attachment
+Attachment [trac_6643-vector_from_vector_fix-sl.patch](tarball://root/attachments/some-uuid/ticket6643/trac_6643-vector_from_vector_fix-sl.patch) by slabbe created at 2009-07-27 19:55:37
 
 Applies on sage-4.1
 

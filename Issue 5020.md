@@ -67,7 +67,7 @@ As a clarification, #auto seems totally broken for me on an unpatched sage-3.2.3
 archive/issue_comments_038242.json:
 ```json
 {
-    "body": "Attachment\n\nI've add a test to the notebook selenium test suite which tests this.",
+    "body": "Attachment [trac_5020.patch](tarball://root/attachments/some-uuid/ticket5020/trac_5020.patch) by mhansen created at 2009-01-19 05:33:54\n\nI've add a test to the notebook selenium test suite which tests this.",
     "created_at": "2009-01-19T05:33:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5020",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_038242.json:
 }
 ```
 
-Attachment
+Attachment [trac_5020.patch](tarball://root/attachments/some-uuid/ticket5020/trac_5020.patch) by mhansen created at 2009-01-19 05:33:54
 
 I've add a test to the notebook selenium test suite which tests this.
 

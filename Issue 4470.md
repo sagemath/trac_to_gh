@@ -183,7 +183,7 @@ Michael
 archive/issue_comments_033010.json:
 ```json
 {
-    "body": "Attachment\n\nChanges to existing files in Jon's 2.8.14 quadratic forms patch",
+    "body": "Attachment [2.8.14-non-quadratic-forms-U20.patch](tarball://root/attachments/some-uuid/ticket4470/2.8.14-non-quadratic-forms-U20.patch) by tornaria created at 2008-11-09 03:44:47\n\nChanges to existing files in Jon's 2.8.14 quadratic forms patch",
     "created_at": "2008-11-09T03:44:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4470",
     "type": "issue_comment",
@@ -192,7 +192,7 @@ archive/issue_comments_033010.json:
 }
 ```
 
-Attachment
+Attachment [2.8.14-non-quadratic-forms-U20.patch](tarball://root/attachments/some-uuid/ticket4470/2.8.14-non-quadratic-forms-U20.patch) by tornaria created at 2008-11-09 03:44:47
 
 Changes to existing files in Jon's 2.8.14 quadratic forms patch
 
@@ -403,7 +403,7 @@ Initial commit of Jon Hanke's quadratic forms code
 archive/issue_comments_033017.json:
 ```json
 {
-    "body": "Attachment\n\nmany fixes and doctests for quadratic forms code",
+    "body": "Attachment [patch.4470.01-inital_hanke_code](tarball://root/attachments/some-uuid/ticket4470/patch.4470.01-inital_hanke_code) by tornaria created at 2009-02-23 03:36:54\n\nmany fixes and doctests for quadratic forms code",
     "created_at": "2009-02-23T03:36:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4470",
     "type": "issue_comment",
@@ -412,7 +412,7 @@ archive/issue_comments_033017.json:
 }
 ```
 
-Attachment
+Attachment [patch.4470.01-inital_hanke_code](tarball://root/attachments/some-uuid/ticket4470/patch.4470.01-inital_hanke_code) by tornaria created at 2009-02-23 03:36:54
 
 many fixes and doctests for quadratic forms code
 
@@ -423,7 +423,7 @@ many fixes and doctests for quadratic forms code
 archive/issue_comments_033018.json:
 ```json
 {
-    "body": "Attachment\n\nAttached patches:\n\n- attachment:patch.4470.01-inital_hanke_code: applies Jon Hanke's quadratic forms code into sage. The merge is based in mabshoff work during SD Austin, with some minor updates.\n- attachment:patch.4470.02-fixes_and_doctest: fixes and lots of doctests and documentation to be applied on top of the initial patch. This patch raises the doctest coverage from 33% to over 60%.\n\nThe patches apply cleanly on a 3.3 tree, all tests pass in sage.math and my core2 debian/64 laptop.",
+    "body": "Attachment [patch.4470.02-fixes_and_doctest](tarball://root/attachments/some-uuid/ticket4470/patch.4470.02-fixes_and_doctest) by tornaria created at 2009-02-23 03:45:35\n\nAttached patches:\n\n- attachment:patch.4470.01-inital_hanke_code: applies Jon Hanke's quadratic forms code into sage. The merge is based in mabshoff work during SD Austin, with some minor updates.\n- attachment:patch.4470.02-fixes_and_doctest: fixes and lots of doctests and documentation to be applied on top of the initial patch. This patch raises the doctest coverage from 33% to over 60%.\n\nThe patches apply cleanly on a 3.3 tree, all tests pass in sage.math and my core2 debian/64 laptop.",
     "created_at": "2009-02-23T03:45:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4470",
     "type": "issue_comment",
@@ -432,7 +432,7 @@ archive/issue_comments_033018.json:
 }
 ```
 
-Attachment
+Attachment [patch.4470.02-fixes_and_doctest](tarball://root/attachments/some-uuid/ticket4470/patch.4470.02-fixes_and_doctest) by tornaria created at 2009-02-23 03:45:35
 
 Attached patches:
 
@@ -520,7 +520,7 @@ Michael
 archive/issue_comments_033022.json:
 ```json
 {
-    "body": "Attachment\n\nMerged \n\n* patch.4470.01-inital_hanke_code\n* patch.4470.02-fixes_and_doctest \n* trac_4770-reviewer.patch\n\nin Sage 3.4.alpha0.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_4770-reviewer.patch](tarball://root/attachments/some-uuid/ticket4470/trac_4770-reviewer.patch) by mabshoff created at 2009-02-24 21:42:33\n\nMerged \n\n* patch.4470.01-inital_hanke_code\n* patch.4470.02-fixes_and_doctest \n* trac_4770-reviewer.patch\n\nin Sage 3.4.alpha0.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-24T21:42:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4470",
     "type": "issue_comment",
@@ -529,7 +529,7 @@ archive/issue_comments_033022.json:
 }
 ```
 
-Attachment
+Attachment [trac_4770-reviewer.patch](tarball://root/attachments/some-uuid/ticket4470/trac_4770-reviewer.patch) by mabshoff created at 2009-02-24 21:42:33
 
 Merged 
 

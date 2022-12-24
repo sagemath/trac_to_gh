@@ -60,7 +60,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4740
 archive/issue_comments_035790.json:
 ```json
 {
-    "body": "Attachment\n\nPatch by RobertWB, originally from #4639",
+    "body": "Attachment [trac_4740_coerce-leak.patch](tarball://root/attachments/some-uuid/ticket4740/trac_4740_coerce-leak.patch) by mabshoff created at 2008-12-08 11:25:06\n\nPatch by RobertWB, originally from #4639",
     "created_at": "2008-12-08T11:25:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4740",
     "type": "issue_comment",
@@ -69,7 +69,7 @@ archive/issue_comments_035790.json:
 }
 ```
 
-Attachment
+Attachment [trac_4740_coerce-leak.patch](tarball://root/attachments/some-uuid/ticket4740/trac_4740_coerce-leak.patch) by mabshoff created at 2008-12-08 11:25:06
 
 Patch by RobertWB, originally from #4639
 
@@ -399,7 +399,7 @@ Simon -- see any issues here?
 archive/issue_comments_035803.json:
 ```json
 {
-    "body": "Attachment\n\nApply trac_4740.patch",
+    "body": "Attachment [trac_4740.patch](tarball://root/attachments/some-uuid/ticket4740/trac_4740.patch) by mhansen created at 2013-07-22 15:11:42\n\nApply trac_4740.patch",
     "created_at": "2013-07-22T15:11:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4740",
     "type": "issue_comment",
@@ -408,7 +408,7 @@ archive/issue_comments_035803.json:
 }
 ```
 
-Attachment
+Attachment [trac_4740.patch](tarball://root/attachments/some-uuid/ticket4740/trac_4740.patch) by mhansen created at 2013-07-22 15:11:42
 
 Apply trac_4740.patch
 
@@ -896,7 +896,7 @@ This needs to be rebased to sage-5.12.beta0 + #14516 + #14519.
 archive/issue_comments_035825.json:
 ```json
 {
-    "body": "Attachment\n\nCache coercion from self to self",
+    "body": "Attachment [trac4740-cache_coerce_from_self.patch](tarball://root/attachments/some-uuid/ticket4740/trac4740-cache_coerce_from_self.patch) by SimonKing created at 2013-08-17 07:51:54\n\nCache coercion from self to self",
     "created_at": "2013-08-17T07:51:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4740",
     "type": "issue_comment",
@@ -905,7 +905,7 @@ archive/issue_comments_035825.json:
 }
 ```
 
-Attachment
+Attachment [trac4740-cache_coerce_from_self.patch](tarball://root/attachments/some-uuid/ticket4740/trac4740-cache_coerce_from_self.patch) by SimonKing created at 2013-08-17 07:51:54
 
 Cache coercion from self to self
 

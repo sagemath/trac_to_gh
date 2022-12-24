@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8845
 archive/issue_comments_081323.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8845-fix_package.patch](tarball://root/attachments/some-uuid/ticket8845/trac_8845-fix_package.patch) by mhansen created at 2010-05-03 13:24:33",
     "created_at": "2010-05-03T13:24:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8845",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_081323.json:
 }
 ```
 
-Attachment
+Attachment [trac_8845-fix_package.patch](tarball://root/attachments/some-uuid/ticket8845/trac_8845-fix_package.patch) by mhansen created at 2010-05-03 13:24:33
 
 
 
@@ -67,7 +67,7 @@ Changing status from new to needs_review.
 archive/issue_comments_081325.json:
 ```json
 {
-    "body": "Attachment\n\nreferee followup",
+    "body": "Attachment [trac_8845-referee.patch](tarball://root/attachments/some-uuid/ticket8845/trac_8845-referee.patch) by was created at 2010-05-26 00:37:58\n\nreferee followup",
     "created_at": "2010-05-26T00:37:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8845",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_081325.json:
 }
 ```
 
-Attachment
+Attachment [trac_8845-referee.patch](tarball://root/attachments/some-uuid/ticket8845/trac_8845-referee.patch) by was created at 2010-05-26 00:37:58
 
 referee followup
 

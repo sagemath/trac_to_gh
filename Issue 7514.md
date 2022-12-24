@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7514
 archive/issue_comments_063617.json:
 ```json
 {
-    "body": "Attachment\n\napply to the core sage library",
+    "body": "Attachment [sagelib-7514.patch](tarball://root/attachments/some-uuid/ticket7514/sagelib-7514.patch) by was created at 2009-11-22 08:13:56\n\napply to the core sage library",
     "created_at": "2009-11-22T08:13:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_063617.json:
 }
 ```
 
-Attachment
+Attachment [sagelib-7514.patch](tarball://root/attachments/some-uuid/ticket7514/sagelib-7514.patch) by was created at 2009-11-22 08:13:56
 
 apply to the core sage library
 
@@ -53,7 +53,7 @@ apply to the core sage library
 archive/issue_comments_063618.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sagenb-7514.patch](tarball://root/attachments/some-uuid/ticket7514/sagenb-7514.patch) by was created at 2009-11-22 08:16:59",
     "created_at": "2009-11-22T08:16:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_063618.json:
 }
 ```
 
-Attachment
+Attachment [sagenb-7514.patch](tarball://root/attachments/some-uuid/ticket7514/sagenb-7514.patch) by was created at 2009-11-22 08:16:59
 
 
 
@@ -134,7 +134,7 @@ You probably don't understand what attach does.  All it does is execfile the fil
 archive/issue_comments_063622.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sagelib_7514-part2.patch](tarball://root/attachments/some-uuid/ticket7514/sagelib_7514-part2.patch) by was created at 2009-12-02 03:52:21",
     "created_at": "2009-12-02T03:52:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
@@ -143,7 +143,7 @@ archive/issue_comments_063622.json:
 }
 ```
 
-Attachment
+Attachment [sagelib_7514-part2.patch](tarball://root/attachments/some-uuid/ticket7514/sagelib_7514-part2.patch) by was created at 2009-12-02 03:52:21
 
 
 
@@ -196,7 +196,7 @@ Thus for some problems attach works very nicely for library code, and for others
 archive/issue_comments_063625.json:
 ```json
 {
-    "body": "Attachment\n\nCombined *sage* repo patch.  Depends on 4.3.alpha1, SageNB 0.4.6 (#7625), #7483, #7482.",
+    "body": "Attachment [sagelib-7514_combined.patch](tarball://root/attachments/some-uuid/ticket7514/sagelib-7514_combined.patch) by mpatel created at 2009-12-09 23:20:51\n\nCombined *sage* repo patch.  Depends on 4.3.alpha1, SageNB 0.4.6 (#7625), #7483, #7482.",
     "created_at": "2009-12-09T23:20:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
@@ -205,7 +205,7 @@ archive/issue_comments_063625.json:
 }
 ```
 
-Attachment
+Attachment [sagelib-7514_combined.patch](tarball://root/attachments/some-uuid/ticket7514/sagelib-7514_combined.patch) by mpatel created at 2009-12-09 23:20:51
 
 Combined *sage* repo patch.  Depends on 4.3.alpha1, SageNB 0.4.6 (#7625), #7483, #7482.
 
@@ -350,7 +350,7 @@ Disclaimer:  I'm still quite ignorant about Cython.
 archive/issue_comments_063630.json:
 ```json
 {
-    "body": "Attachment\n\nFixed doctest failures.  Replaces previous.",
+    "body": "Attachment [sagenb-7514.2.patch](tarball://root/attachments/some-uuid/ticket7514/sagenb-7514.2.patch) by mpatel created at 2009-12-28 17:10:46\n\nFixed doctest failures.  Replaces previous.",
     "created_at": "2009-12-28T17:10:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
@@ -359,7 +359,7 @@ archive/issue_comments_063630.json:
 }
 ```
 
-Attachment
+Attachment [sagenb-7514.2.patch](tarball://root/attachments/some-uuid/ticket7514/sagenb-7514.2.patch) by mpatel created at 2009-12-28 17:10:46
 
 Fixed doctest failures.  Replaces previous.
 
@@ -388,7 +388,7 @@ Fixed doctest failures.  Depends on Sage 4.3, #7483, #7482.  Replaces previous.
 archive/issue_comments_063632.json:
 ```json
 {
-    "body": "Attachment\n\nThe latest patches should fix the doctests and the `attached_files` problem mentioned above.  I changed `attach t` to `attach(t)`, since the doctesting framework appears to use a Python interpreter, i.e., *not* IPython, to run the examples.  I also weakened [somewhat] the tests for `preparser.modified_attached_files`.  Is there an IPython doctesting mode?\n\nI'm not sure about the Cython file reload problem.  Should we set `use_cache=True` when loading .pyx files explicitly?\n\nOn globals:  I see that a Cython file `foo.pyx` is compiled to a module and loaded via `from foo import *`.\n\nCan someone else please help to review this ticket?",
+    "body": "Attachment [sagelib-7514_combined.2.patch](tarball://root/attachments/some-uuid/ticket7514/sagelib-7514_combined.2.patch) by mpatel created at 2009-12-28 18:22:45\n\nThe latest patches should fix the doctests and the `attached_files` problem mentioned above.  I changed `attach t` to `attach(t)`, since the doctesting framework appears to use a Python interpreter, i.e., *not* IPython, to run the examples.  I also weakened [somewhat] the tests for `preparser.modified_attached_files`.  Is there an IPython doctesting mode?\n\nI'm not sure about the Cython file reload problem.  Should we set `use_cache=True` when loading .pyx files explicitly?\n\nOn globals:  I see that a Cython file `foo.pyx` is compiled to a module and loaded via `from foo import *`.\n\nCan someone else please help to review this ticket?",
     "created_at": "2009-12-28T18:22:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
@@ -397,7 +397,7 @@ archive/issue_comments_063632.json:
 }
 ```
 
-Attachment
+Attachment [sagelib-7514_combined.2.patch](tarball://root/attachments/some-uuid/ticket7514/sagelib-7514_combined.2.patch) by mpatel created at 2009-12-28 18:22:45
 
 The latest patches should fix the doctests and the `attached_files` problem mentioned above.  I changed `attach t` to `attach(t)`, since the doctesting framework appears to use a Python interpreter, i.e., *not* IPython, to run the examples.  I also weakened [somewhat] the tests for `preparser.modified_attached_files`.  Is there an IPython doctesting mode?
 
@@ -450,7 +450,7 @@ Fix(?) loading of .spyx files.  Add preparser.py to reference manual.  Replaces 
 archive/issue_comments_063635.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sagelib-7514_combined.3.patch](tarball://root/attachments/some-uuid/ticket7514/sagelib-7514_combined.3.patch) by was created at 2009-12-31 17:34:42",
     "created_at": "2009-12-31T17:34:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
@@ -459,7 +459,7 @@ archive/issue_comments_063635.json:
 }
 ```
 
-Attachment
+Attachment [sagelib-7514_combined.3.patch](tarball://root/attachments/some-uuid/ticket7514/sagelib-7514_combined.3.patch) by was created at 2009-12-31 17:34:42
 
 
 
@@ -468,7 +468,7 @@ Attachment
 archive/issue_comments_063636.json:
 ```json
 {
-    "body": "Attachment\n\nrebased against sagenb-0.4.8 + trac #7483.",
+    "body": "Attachment [sagenb-7514-rebase.patch](tarball://root/attachments/some-uuid/ticket7514/sagenb-7514-rebase.patch) by was created at 2009-12-31 17:51:05\n\nrebased against sagenb-0.4.8 + trac #7483.",
     "created_at": "2009-12-31T17:51:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
@@ -477,7 +477,7 @@ archive/issue_comments_063636.json:
 }
 ```
 
-Attachment
+Attachment [sagenb-7514-rebase.patch](tarball://root/attachments/some-uuid/ticket7514/sagenb-7514-rebase.patch) by was created at 2009-12-31 17:51:05
 
 rebased against sagenb-0.4.8 + trac #7483.
 
@@ -506,7 +506,7 @@ trac 7514 sagenb-part2: proper tracebacks; make source code introspection of fun
 archive/issue_comments_063638.json:
 ```json
 {
-    "body": "Attachment\n\nRight now the files that one must apply are:\n\n\n```\nTo Sage Library:\n sagelib-7514_combined.3.patch \n\nTo Notebook:\n sagenb-7514-rebase.patch  \n sagenb-7514-rebase-part2.patch\n```\n",
+    "body": "Attachment [sagenb-7514-rebase-part2.patch](tarball://root/attachments/some-uuid/ticket7514/sagenb-7514-rebase-part2.patch) by was created at 2009-12-31 19:35:03\n\nRight now the files that one must apply are:\n\n\n```\nTo Sage Library:\n sagelib-7514_combined.3.patch \n\nTo Notebook:\n sagenb-7514-rebase.patch  \n sagenb-7514-rebase-part2.patch\n```\n",
     "created_at": "2009-12-31T19:35:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
@@ -515,7 +515,7 @@ archive/issue_comments_063638.json:
 }
 ```
 
-Attachment
+Attachment [sagenb-7514-rebase-part2.patch](tarball://root/attachments/some-uuid/ticket7514/sagenb-7514-rebase-part2.patch) by was created at 2009-12-31 19:35:03
 
 Right now the files that one must apply are:
 
@@ -708,7 +708,7 @@ The attached patch (sagenb-7514-rebase-part3.patch) should:
 archive/issue_comments_063646.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sagenb-7514-rebase-part3.patch](tarball://root/attachments/some-uuid/ticket7514/sagenb-7514-rebase-part3.patch) by was created at 2010-01-01 05:36:49",
     "created_at": "2010-01-01T05:36:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
@@ -717,7 +717,7 @@ archive/issue_comments_063646.json:
 }
 ```
 
-Attachment
+Attachment [sagenb-7514-rebase-part3.patch](tarball://root/attachments/some-uuid/ticket7514/sagenb-7514-rebase-part3.patch) by was created at 2010-01-01 05:36:49
 
 
 
@@ -726,7 +726,7 @@ Attachment
 archive/issue_comments_063647.json:
 ```json
 {
-    "body": "Attachment\n\nTrivial docstring tweaks.  Replaces previous.",
+    "body": "Attachment [sagenb-7514-rebase-part3.2.patch](tarball://root/attachments/some-uuid/ticket7514/sagenb-7514-rebase-part3.2.patch) by mpatel created at 2010-01-01 06:12:31\n\nTrivial docstring tweaks.  Replaces previous.",
     "created_at": "2010-01-01T06:12:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
@@ -735,7 +735,7 @@ archive/issue_comments_063647.json:
 }
 ```
 
-Attachment
+Attachment [sagenb-7514-rebase-part3.2.patch](tarball://root/attachments/some-uuid/ticket7514/sagenb-7514-rebase-part3.2.patch) by mpatel created at 2010-01-01 06:12:31
 
 Trivial docstring tweaks.  Replaces previous.
 

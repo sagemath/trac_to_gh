@@ -66,7 +66,7 @@ remove extraneous * in argument to dvipng
 archive/issue_comments_023062.json:
 ```json
 {
-    "body": "Attachment\n\nPatch looks good to me. Positive review. \n\nNice catch John.\n\nCheers,\n\nMichael",
+    "body": "Attachment [dvipng.patch](tarball://root/attachments/some-uuid/ticket3325/dvipng.patch) by mabshoff created at 2008-05-28 23:37:47\n\nPatch looks good to me. Positive review. \n\nNice catch John.\n\nCheers,\n\nMichael",
     "created_at": "2008-05-28T23:37:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3325",
     "type": "issue_comment",
@@ -75,7 +75,7 @@ archive/issue_comments_023062.json:
 }
 ```
 
-Attachment
+Attachment [dvipng.patch](tarball://root/attachments/some-uuid/ticket3325/dvipng.patch) by mabshoff created at 2008-05-28 23:37:47
 
 Patch looks good to me. Positive review. 
 

@@ -59,7 +59,7 @@ Changing assignee from tba to jwmerrill.
 archive/issue_comments_024085.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch fixes the doc to reflect that there is info about 100,000 zeros, but I do not understand how to install this optional package, so can't write documentation regarding that.",
+    "body": "Attachment [3422.patch](tarball://root/attachments/some-uuid/ticket3422/3422.patch) by jwmerrill created at 2008-09-14 03:08:18\n\nThis patch fixes the doc to reflect that there is info about 100,000 zeros, but I do not understand how to install this optional package, so can't write documentation regarding that.",
     "created_at": "2008-09-14T03:08:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3422",
     "type": "issue_comment",
@@ -68,7 +68,7 @@ archive/issue_comments_024085.json:
 }
 ```
 
-Attachment
+Attachment [3422.patch](tarball://root/attachments/some-uuid/ticket3422/3422.patch) by jwmerrill created at 2008-09-14 03:08:18
 
 This patch fixes the doc to reflect that there is info about 100,000 zeros, but I do not understand how to install this optional package, so can't write documentation regarding that.
 
@@ -79,7 +79,7 @@ This patch fixes the doc to reflect that there is info about 100,000 zeros, but 
 archive/issue_comments_024086.json:
 ```json
 {
-    "body": "Attachment\n\nThe second patch adds instructions for installing the optional package necessary to make zeta_zeros() work.  I also changed the unusual seealso section into a REFERENCES: section.  If this is accepted, both patches should be applied.",
+    "body": "Attachment [3422_2.patch](tarball://root/attachments/some-uuid/ticket3422/3422_2.patch) by jwmerrill created at 2008-09-14 03:52:10\n\nThe second patch adds instructions for installing the optional package necessary to make zeta_zeros() work.  I also changed the unusual seealso section into a REFERENCES: section.  If this is accepted, both patches should be applied.",
     "created_at": "2008-09-14T03:52:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3422",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_024086.json:
 }
 ```
 
-Attachment
+Attachment [3422_2.patch](tarball://root/attachments/some-uuid/ticket3422/3422_2.patch) by jwmerrill created at 2008-09-14 03:52:10
 
 The second patch adds instructions for installing the optional package necessary to make zeta_zeros() work.  I also changed the unusual seealso section into a REFERENCES: section.  If this is accepted, both patches should be applied.
 

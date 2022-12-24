@@ -278,7 +278,7 @@ If you can make those changes, this has a reasonable chance of building on Solar
 archive/issue_comments_061789.json:
 ```json
 {
-    "body": "Attachment\n\nChecks the type of C compiler, much more thorougly than using grep on output",
+    "body": "Attachment [testcc](tarball://root/attachments/some-uuid/ticket7375/testcc) by drkirkby created at 2009-11-19 01:56:40\n\nChecks the type of C compiler, much more thorougly than using grep on output",
     "created_at": "2009-11-19T01:56:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7375",
     "type": "issue_comment",
@@ -287,7 +287,7 @@ archive/issue_comments_061789.json:
 }
 ```
 
-Attachment
+Attachment [testcc](tarball://root/attachments/some-uuid/ticket7375/testcc) by drkirkby created at 2009-11-19 01:56:40
 
 Checks the type of C compiler, much more thorougly than using grep on output
 
@@ -316,7 +316,7 @@ Teses the C++ compiler. Not really needed here, but done for completelness.
 archive/issue_comments_061791.json:
 ```json
 {
-    "body": "Attachment\n\nconfig.log showing the -Wall and -fPIC flags are causing problems.",
+    "body": "Attachment [config.log](tarball://root/attachments/some-uuid/ticket7375/config.log) by drkirkby created at 2009-11-19 01:58:53\n\nconfig.log showing the -Wall and -fPIC flags are causing problems.",
     "created_at": "2009-11-19T01:58:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7375",
     "type": "issue_comment",
@@ -325,7 +325,7 @@ archive/issue_comments_061791.json:
 }
 ```
 
-Attachment
+Attachment [config.log](tarball://root/attachments/some-uuid/ticket7375/config.log) by drkirkby created at 2009-11-19 01:58:53
 
 config.log showing the -Wall and -fPIC flags are causing problems.
 
@@ -725,7 +725,7 @@ sqrt() is used in brilliantrussian.c, but the header file math.h is not included
 archive/issue_comments_061797.json:
 ```json
 {
-    "body": "Attachment\n\nResults of running Sun's lint command in the 'src' directory.",
+    "body": "Attachment [lintlog.txt](tarball://root/attachments/some-uuid/ticket7375/lintlog.txt) by drkirkby created at 2009-11-20 11:52:18\n\nResults of running Sun's lint command in the 'src' directory.",
     "created_at": "2009-11-20T11:52:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7375",
     "type": "issue_comment",
@@ -734,7 +734,7 @@ archive/issue_comments_061797.json:
 }
 ```
 
-Attachment
+Attachment [lintlog.txt](tarball://root/attachments/some-uuid/ticket7375/lintlog.txt) by drkirkby created at 2009-11-20 11:52:18
 
 Results of running Sun's lint command in the 'src' directory.
 

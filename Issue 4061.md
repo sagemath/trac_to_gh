@@ -172,7 +172,7 @@ This should be an easy thing for someone to do!
 archive/issue_comments_029292.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-4061.patch](tarball://root/attachments/some-uuid/ticket4061/trac-4061.patch) by cremona created at 2008-11-30 11:56:07",
     "created_at": "2008-11-30T11:56:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4061",
     "type": "issue_comment",
@@ -181,7 +181,7 @@ archive/issue_comments_029292.json:
 }
 ```
 
-Attachment
+Attachment [trac-4061.patch](tarball://root/attachments/some-uuid/ticket4061/trac-4061.patch) by cremona created at 2008-11-30 11:56:07
 
 
 
@@ -210,7 +210,7 @@ The behaviour for trivial torsion groups is not ideal, but is due to a bug in th
 archive/issue_comments_029294.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-4061-2.patch](tarball://root/attachments/some-uuid/ticket4061/trac-4061-2.patch) by cremona created at 2008-11-30 14:44:08",
     "created_at": "2008-11-30T14:44:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4061",
     "type": "issue_comment",
@@ -219,7 +219,7 @@ archive/issue_comments_029294.json:
 }
 ```
 
-Attachment
+Attachment [trac-4061-2.patch](tarball://root/attachments/some-uuid/ticket4061/trac-4061-2.patch) by cremona created at 2008-11-30 14:44:08
 
 
 
@@ -228,7 +228,7 @@ Attachment
 archive/issue_comments_029295.json:
 ```json
 {
-    "body": "Attachment\n\nThe second patch (apply after the first) fixes the behaviour for trivial torsion, by fixing the method list() for abelian groups which are trivial.  The 3rd patch adds a doctest in the Abelian Groups code which I forgot the first time.",
+    "body": "Attachment [trac-4061-3.patch](tarball://root/attachments/some-uuid/ticket4061/trac-4061-3.patch) by cremona created at 2008-11-30 14:44:48\n\nThe second patch (apply after the first) fixes the behaviour for trivial torsion, by fixing the method list() for abelian groups which are trivial.  The 3rd patch adds a doctest in the Abelian Groups code which I forgot the first time.",
     "created_at": "2008-11-30T14:44:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4061",
     "type": "issue_comment",
@@ -237,7 +237,7 @@ archive/issue_comments_029295.json:
 }
 ```
 
-Attachment
+Attachment [trac-4061-3.patch](tarball://root/attachments/some-uuid/ticket4061/trac-4061-3.patch) by cremona created at 2008-11-30 14:44:48
 
 The second patch (apply after the first) fixes the behaviour for trivial torsion, by fixing the method list() for abelian groups which are trivial.  The 3rd patch adds a doctest in the Abelian Groups code which I forgot the first time.
 

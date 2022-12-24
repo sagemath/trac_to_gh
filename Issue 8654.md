@@ -67,7 +67,7 @@ Changing status from new to needs_review.
 archive/issue_comments_078518.json:
 ```json
 {
-    "body": "Attachment\n\nSince #21 probably needs to be rewritten from scratch by now.",
+    "body": "Attachment [trac_8654.patch](tarball://root/attachments/some-uuid/ticket8654/trac_8654.patch) by ohanar created at 2011-09-13 01:51:15\n\nSince #21 probably needs to be rewritten from scratch by now.",
     "created_at": "2011-09-13T01:51:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8654",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_078518.json:
 }
 ```
 
-Attachment
+Attachment [trac_8654.patch](tarball://root/attachments/some-uuid/ticket8654/trac_8654.patch) by ohanar created at 2011-09-13 01:51:15
 
 Since #21 probably needs to be rewritten from scratch by now.
 
@@ -318,7 +318,7 @@ See #21, although that patch will probably need to get rewritten with argparse n
 archive/issue_comments_078528.json:
 ```json
 {
-    "body": "Attachment\n\nAdd test for --sqlite3 command line option",
+    "body": "Attachment [8654_test.patch](tarball://root/attachments/some-uuid/ticket8654/8654_test.patch) by jdemeyer created at 2011-10-30 11:06:14\n\nAdd test for --sqlite3 command line option",
     "created_at": "2011-10-30T11:06:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8654",
     "type": "issue_comment",
@@ -327,7 +327,7 @@ archive/issue_comments_078528.json:
 }
 ```
 
-Attachment
+Attachment [8654_test.patch](tarball://root/attachments/some-uuid/ticket8654/8654_test.patch) by jdemeyer created at 2011-10-30 11:06:14
 
 Add test for --sqlite3 command line option
 

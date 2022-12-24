@@ -862,7 +862,7 @@ UPdated patch fixing conventions.srt problem
 archive/issue_comments_040725.json:
 ```json
 {
-    "body": "Attachment\n\nSorry in all of the excitement I forgot to update the patch on the ticket.",
+    "body": "Attachment [trac_5294--improving_pickle_jar_documentation-am.patch](tarball://root/attachments/some-uuid/ticket5294/trac_5294--improving_pickle_jar_documentation-am.patch) by andrew.mathas created at 2013-01-13 08:55:46\n\nSorry in all of the excitement I forgot to update the patch on the ticket.",
     "created_at": "2013-01-13T08:55:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
@@ -871,7 +871,7 @@ archive/issue_comments_040725.json:
 }
 ```
 
-Attachment
+Attachment [trac_5294--improving_pickle_jar_documentation-am.patch](tarball://root/attachments/some-uuid/ticket5294/trac_5294--improving_pickle_jar_documentation-am.patch) by andrew.mathas created at 2013-01-13 08:55:46
 
 Sorry in all of the excitement I forgot to update the patch on the ticket.
 

@@ -69,7 +69,7 @@ Not all of that was obvious to me, so I hope it helps!
 archive/issue_comments_046225.json:
 ```json
 {
-    "body": "Attachment\n\nto be applied after tickets in #5846 and #5851",
+    "body": "Attachment [trac_5853.patch](tarball://root/attachments/some-uuid/ticket5853/trac_5853.patch) by wuthrich created at 2009-04-24 15:20:21\n\nto be applied after tickets in #5846 and #5851",
     "created_at": "2009-04-24T15:20:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5853",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_046225.json:
 }
 ```
 
-Attachment
+Attachment [trac_5853.patch](tarball://root/attachments/some-uuid/ticket5853/trac_5853.patch) by wuthrich created at 2009-04-24 15:20:21
 
 to be applied after tickets in #5846 and #5851
 
@@ -107,7 +107,7 @@ No no, this patch is not right, do not even look at it. Sorry!!!!
 archive/issue_comments_046227.json:
 ```json
 {
-    "body": "Attachment\n\nReplaces the previous ticket as before this applies to 3.4.1 + #5846 and #5851",
+    "body": "Attachment [trac_5846_prec_2.patch](tarball://root/attachments/some-uuid/ticket5853/trac_5846_prec_2.patch) by wuthrich created at 2009-04-24 15:45:47\n\nReplaces the previous ticket as before this applies to 3.4.1 + #5846 and #5851",
     "created_at": "2009-04-24T15:45:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5853",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_046227.json:
 }
 ```
 
-Attachment
+Attachment [trac_5846_prec_2.patch](tarball://root/attachments/some-uuid/ticket5853/trac_5846_prec_2.patch) by wuthrich created at 2009-04-24 15:45:47
 
 Replaces the previous ticket as before this applies to 3.4.1 + #5846 and #5851
 
@@ -145,7 +145,7 @@ replaces all before.
 archive/issue_comments_046229.json:
 ```json
 {
-    "body": "Attachment\n\nreplaces all before",
+    "body": "Attachment [trac_5853_2.patch](tarball://root/attachments/some-uuid/ticket5853/trac_5853_2.patch) by wuthrich created at 2009-04-24 21:02:58\n\nreplaces all before",
     "created_at": "2009-04-24T21:02:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5853",
     "type": "issue_comment",
@@ -154,7 +154,7 @@ archive/issue_comments_046229.json:
 }
 ```
 
-Attachment
+Attachment [trac_5853_2.patch](tarball://root/attachments/some-uuid/ticket5853/trac_5853_2.patch) by wuthrich created at 2009-04-24 21:02:58
 
 replaces all before
 

@@ -99,7 +99,7 @@ source file
 archive/issue_comments_004545.json:
 ```json
 {
-    "body": "Attachment\n\nattached source is not entirely identical to displayed code. I corrected some bugs, to the attached file is the right one to look at",
+    "body": "Attachment [editsage.sage](tarball://root/attachments/some-uuid/ticket768/editsage.sage) by nbruin created at 2007-10-01 00:27:54\n\nattached source is not entirely identical to displayed code. I corrected some bugs, to the attached file is the right one to look at",
     "created_at": "2007-10-01T00:27:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/768",
     "type": "issue_comment",
@@ -108,7 +108,7 @@ archive/issue_comments_004545.json:
 }
 ```
 
-Attachment
+Attachment [editsage.sage](tarball://root/attachments/some-uuid/ticket768/editsage.sage) by nbruin created at 2007-10-01 00:27:54
 
 attached source is not entirely identical to displayed code. I corrected some bugs, to the attached file is the right one to look at
 
@@ -119,7 +119,7 @@ attached source is not entirely identical to displayed code. I corrected some bu
 archive/issue_comments_004546.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [editmodule.py](tarball://root/attachments/some-uuid/ticket768/editmodule.py) by nbruin created at 2007-10-04 01:20:22",
     "created_at": "2007-10-04T01:20:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/768",
     "type": "issue_comment",
@@ -128,7 +128,7 @@ archive/issue_comments_004546.json:
 }
 ```
 
-Attachment
+Attachment [editmodule.py](tarball://root/attachments/some-uuid/ticket768/editmodule.py) by nbruin created at 2007-10-04 01:20:22
 
 
 
@@ -199,7 +199,7 @@ I'm working on integrating this into sage-2.8.6 (and a proper patch).
 archive/issue_comments_004550.json:
 ```json
 {
-    "body": "Attachment\n\nThis is a proper patch, with a bunch of improvements.",
+    "body": "Attachment [6580.patch](tarball://root/attachments/some-uuid/ticket768/6580.patch) by was created at 2007-10-04 04:46:33\n\nThis is a proper patch, with a bunch of improvements.",
     "created_at": "2007-10-04T04:46:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/768",
     "type": "issue_comment",
@@ -208,7 +208,7 @@ archive/issue_comments_004550.json:
 }
 ```
 
-Attachment
+Attachment [6580.patch](tarball://root/attachments/some-uuid/ticket768/6580.patch) by was created at 2007-10-04 04:46:33
 
 This is a proper patch, with a bunch of improvements.
 
@@ -396,7 +396,7 @@ So far for the rationale of the patch. I think the command in sage (is it there?
 archive/issue_comments_004559.json:
 ```json
 {
-    "body": "Attachment\n\nFixed patch",
+    "body": "Attachment [6581.patch](tarball://root/attachments/some-uuid/ticket768/6581.patch) by nbruin created at 2007-10-23 02:58:31\n\nFixed patch",
     "created_at": "2007-10-23T02:58:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/768",
     "type": "issue_comment",
@@ -405,7 +405,7 @@ archive/issue_comments_004559.json:
 }
 ```
 
-Attachment
+Attachment [6581.patch](tarball://root/attachments/some-uuid/ticket768/6581.patch) by nbruin created at 2007-10-23 02:58:31
 
 Fixed patch
 
@@ -478,7 +478,7 @@ Resolution: fixed
 archive/issue_comments_004563.json:
 ```json
 {
-    "body": "Attachment\n\nupdated patch with bg option added back in",
+    "body": "Attachment [7087.patch](tarball://root/attachments/some-uuid/ticket768/7087.patch) by nbruin created at 2007-10-24 17:49:23\n\nupdated patch with bg option added back in",
     "created_at": "2007-10-24T17:49:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/768",
     "type": "issue_comment",
@@ -487,7 +487,7 @@ archive/issue_comments_004563.json:
 }
 ```
 
-Attachment
+Attachment [7087.patch](tarball://root/attachments/some-uuid/ticket768/7087.patch) by nbruin created at 2007-10-24 17:49:23
 
 updated patch with bg option added back in
 

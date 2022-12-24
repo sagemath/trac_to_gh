@@ -108,7 +108,7 @@ Sorry, my gripe should be that "classmethod" is undocumented.
 archive/issue_comments_057344.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6937-improve_cache_with_defaults.patch](tarball://root/attachments/some-uuid/ticket6937/6937-improve_cache_with_defaults.patch) by boothby created at 2009-09-20 03:44:48",
     "created_at": "2009-09-20T03:44:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6937",
     "type": "issue_comment",
@@ -117,7 +117,7 @@ archive/issue_comments_057344.json:
 }
 ```
 
-Attachment
+Attachment [6937-improve_cache_with_defaults.patch](tarball://root/attachments/some-uuid/ticket6937/6937-improve_cache_with_defaults.patch) by boothby created at 2009-09-20 03:44:48
 
 
 

@@ -158,7 +158,7 @@ Sébastien
 archive/issue_comments_077660.json:
 ```json
 {
-    "body": "Attachment\n\nDepends on #8429.",
+    "body": "Attachment [trac_8574-length-sl.patch](tarball://root/attachments/some-uuid/ticket8574/trac_8574-length-sl.patch) by slabbe created at 2010-03-31 21:40:37\n\nDepends on #8429.",
     "created_at": "2010-03-31T21:40:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8574",
     "type": "issue_comment",
@@ -167,7 +167,7 @@ archive/issue_comments_077660.json:
 }
 ```
 
-Attachment
+Attachment [trac_8574-length-sl.patch](tarball://root/attachments/some-uuid/ticket8574/trac_8574-length-sl.patch) by slabbe created at 2010-03-31 21:40:37
 
 Depends on #8429.
 
@@ -274,7 +274,7 @@ Hence, only the patch attached here should be considered for the review.
 archive/issue_comments_077666.json:
 ```json
 {
-    "body": "Attachment\n\nReview -- correct few typos only, apply on top of S\u00e9bastien's patch",
+    "body": "Attachment [trac_8574_review-abm.patch](tarball://root/attachments/some-uuid/ticket8574/trac_8574_review-abm.patch) by abmasse created at 2010-04-17 02:34:25\n\nReview -- correct few typos only, apply on top of S\u00e9bastien's patch",
     "created_at": "2010-04-17T02:34:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8574",
     "type": "issue_comment",
@@ -283,7 +283,7 @@ archive/issue_comments_077666.json:
 }
 ```
 
-Attachment
+Attachment [trac_8574_review-abm.patch](tarball://root/attachments/some-uuid/ticket8574/trac_8574_review-abm.patch) by abmasse created at 2010-04-17 02:34:25
 
 Review -- correct few typos only, apply on top of Sébastien's patch
 

@@ -187,7 +187,7 @@ OK, I agree that would be better.
 archive/issue_comments_088151.json:
 ```json
 {
-    "body": "Attachment\n\npatch against 4.4.4",
+    "body": "Attachment [trac_9336.patch](tarball://root/attachments/some-uuid/ticket9336/trac_9336.patch) by davidloeffler created at 2010-06-28 08:52:14\n\npatch against 4.4.4",
     "created_at": "2010-06-28T08:52:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9336",
     "type": "issue_comment",
@@ -196,7 +196,7 @@ archive/issue_comments_088151.json:
 }
 ```
 
-Attachment
+Attachment [trac_9336.patch](tarball://root/attachments/some-uuid/ticket9336/trac_9336.patch) by davidloeffler created at 2010-06-28 08:52:14
 
 patch against 4.4.4
 

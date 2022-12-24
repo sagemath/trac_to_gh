@@ -140,7 +140,7 @@ sage: a = [magma('3^100000') for _ in range(1000)]; del a;magma.GetMemoryUsage()
 archive/issue_comments_030828.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-4241.patch](tarball://root/attachments/some-uuid/ticket4241/sage-4241.patch) by was created at 2008-10-23 23:33:55",
     "created_at": "2008-10-23T23:33:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4241",
     "type": "issue_comment",
@@ -149,7 +149,7 @@ archive/issue_comments_030828.json:
 }
 ```
 
-Attachment
+Attachment [sage-4241.patch](tarball://root/attachments/some-uuid/ticket4241/sage-4241.patch) by was created at 2008-10-23 23:33:55
 
 
 

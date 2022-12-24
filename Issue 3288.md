@@ -152,7 +152,7 @@ Michael
 archive/issue_comments_022755.json:
 ```json
 {
-    "body": "Attachment\n\noops!",
+    "body": "Attachment [trac-3288-fix.patch](tarball://root/attachments/some-uuid/ticket3288/trac-3288-fix.patch) by rlm created at 2008-05-24 01:52:42\n\noops!",
     "created_at": "2008-05-24T01:52:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3288",
     "type": "issue_comment",
@@ -161,7 +161,7 @@ archive/issue_comments_022755.json:
 }
 ```
 
-Attachment
+Attachment [trac-3288-fix.patch](tarball://root/attachments/some-uuid/ticket3288/trac-3288-fix.patch) by rlm created at 2008-05-24 01:52:42
 
 oops!
 

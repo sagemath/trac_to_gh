@@ -159,7 +159,7 @@ sage: P.show(ymax=0.01, ymin=0)
 archive/issue_comments_009391.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-1457.patch](tarball://root/attachments/some-uuid/ticket1457/trac-1457.patch) by was created at 2007-12-11 06:00:52",
     "created_at": "2007-12-11T06:00:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1457",
     "type": "issue_comment",
@@ -168,7 +168,7 @@ archive/issue_comments_009391.json:
 }
 ```
 
-Attachment
+Attachment [trac-1457.patch](tarball://root/attachments/some-uuid/ticket1457/trac-1457.patch) by was created at 2007-12-11 06:00:52
 
 
 
@@ -177,7 +177,7 @@ Attachment
 archive/issue_comments_009392.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-1457-part2.patch](tarball://root/attachments/some-uuid/ticket1457/trac-1457-part2.patch) by was created at 2007-12-11 06:28:56",
     "created_at": "2007-12-11T06:28:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1457",
     "type": "issue_comment",
@@ -186,7 +186,7 @@ archive/issue_comments_009392.json:
 }
 ```
 
-Attachment
+Attachment [trac-1457-part2.patch](tarball://root/attachments/some-uuid/ticket1457/trac-1457-part2.patch) by was created at 2007-12-11 06:28:56
 
 
 
@@ -231,7 +231,7 @@ this replaces the previous part 2
 archive/issue_comments_009395.json:
 ```json
 {
-    "body": "Attachment\n\nIt (still) works for me, when merged against rc0.",
+    "body": "Attachment [trac-1457-part2.2.patch](tarball://root/attachments/some-uuid/ticket1457/trac-1457-part2.2.patch) by was created at 2007-12-15 23:53:18\n\nIt (still) works for me, when merged against rc0.",
     "created_at": "2007-12-15T23:53:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1457",
     "type": "issue_comment",
@@ -240,7 +240,7 @@ archive/issue_comments_009395.json:
 }
 ```
 
-Attachment
+Attachment [trac-1457-part2.2.patch](tarball://root/attachments/some-uuid/ticket1457/trac-1457-part2.2.patch) by was created at 2007-12-15 23:53:18
 
 It (still) works for me, when merged against rc0.
 

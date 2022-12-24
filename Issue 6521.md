@@ -50,7 +50,7 @@ Based on 4.1.1
 archive/issue_comments_053165.json:
 ```json
 {
-    "body": "Attachment\n\nThis passed all doctests in sage.matrix, sage.modules, and sage.groups.matrix_gps, so hopefully I got all of them.",
+    "body": "Attachment [trac_6521-copy-matrix.patch](tarball://root/attachments/some-uuid/ticket6521/trac_6521-copy-matrix.patch) by kcrisman created at 2009-08-26 19:42:58\n\nThis passed all doctests in sage.matrix, sage.modules, and sage.groups.matrix_gps, so hopefully I got all of them.",
     "created_at": "2009-08-26T19:42:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6521",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_053165.json:
 }
 ```
 
-Attachment
+Attachment [trac_6521-copy-matrix.patch](tarball://root/attachments/some-uuid/ticket6521/trac_6521-copy-matrix.patch) by kcrisman created at 2009-08-26 19:42:58
 
 This passed all doctests in sage.matrix, sage.modules, and sage.groups.matrix_gps, so hopefully I got all of them.
 
@@ -178,7 +178,7 @@ Ouch, okay.  I'll post a quick patch to this ticket (since I know at least some 
 archive/issue_comments_053171.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of previous patch",
+    "body": "Attachment [trac_6521-deprecation.patch](tarball://root/attachments/some-uuid/ticket6521/trac_6521-deprecation.patch) by jason created at 2009-09-15 16:42:07\n\napply on top of previous patch",
     "created_at": "2009-09-15T16:42:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6521",
     "type": "issue_comment",
@@ -187,7 +187,7 @@ archive/issue_comments_053171.json:
 }
 ```
 
-Attachment
+Attachment [trac_6521-deprecation.patch](tarball://root/attachments/some-uuid/ticket6521/trac_6521-deprecation.patch) by jason created at 2009-09-15 16:42:07
 
 apply on top of previous patch
 
@@ -372,7 +372,7 @@ For whitespace errors, see the file /scratch/mvngu/release/sage-4.1.2.alpha1/tmp
 archive/issue_comments_053175.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of previous patches",
+    "body": "Attachment [trac_6521-deprecation-fixes.patch](tarball://root/attachments/some-uuid/ticket6521/trac_6521-deprecation-fixes.patch) by jason created at 2009-09-17 08:39:32\n\napply on top of previous patches",
     "created_at": "2009-09-17T08:39:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6521",
     "type": "issue_comment",
@@ -381,7 +381,7 @@ archive/issue_comments_053175.json:
 }
 ```
 
-Attachment
+Attachment [trac_6521-deprecation-fixes.patch](tarball://root/attachments/some-uuid/ticket6521/trac_6521-deprecation-fixes.patch) by jason created at 2009-09-17 08:39:32
 
 apply on top of previous patches
 

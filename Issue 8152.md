@@ -128,7 +128,7 @@ For the record, here's a link to the discussion: http://groups.google.com/group/
 archive/issue_comments_071674.json:
 ```json
 {
-    "body": "Attachment\n\nInstall.log showing the failure for python to install properly.",
+    "body": "Attachment [install.log.gz](tarball://root/attachments/some-uuid/ticket8152/install.log.gz) by drkirkby created at 2010-02-12 02:44:32\n\nInstall.log showing the failure for python to install properly.",
     "created_at": "2010-02-12T02:44:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8152",
     "type": "issue_comment",
@@ -137,7 +137,7 @@ archive/issue_comments_071674.json:
 }
 ```
 
-Attachment
+Attachment [install.log.gz](tarball://root/attachments/some-uuid/ticket8152/install.log.gz) by drkirkby created at 2010-02-12 02:44:32
 
 Install.log showing the failure for python to install properly.
 

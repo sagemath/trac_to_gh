@@ -53,7 +53,7 @@ Changing status from new to needs_review.
 archive/issue_comments_082313.json:
 ```json
 {
-    "body": "Attachment\n\nrebased to 4.4.2",
+    "body": "Attachment [trac_8939-matrix_template-4.4.2.patch](tarball://root/attachments/some-uuid/ticket8939/trac_8939-matrix_template-4.4.2.patch) by burcin created at 2010-05-22 10:41:03\n\nrebased to 4.4.2",
     "created_at": "2010-05-22T10:41:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8939",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_082313.json:
 }
 ```
 
-Attachment
+Attachment [trac_8939-matrix_template-4.4.2.patch](tarball://root/attachments/some-uuid/ticket8939/trac_8939-matrix_template-4.4.2.patch) by burcin created at 2010-05-22 10:41:03
 
 rebased to 4.4.2
 
@@ -161,7 +161,7 @@ The patch looks good. However, I'd prefer to have a bit more documentation.
 archive/issue_comments_082318.json:
 ```json
 {
-    "body": "Attachment\n\naddress referee comments",
+    "body": "Attachment [trac_8939-matrix_template-4.4.2-part2.patch](tarball://root/attachments/some-uuid/ticket8939/trac_8939-matrix_template-4.4.2-part2.patch) by burcin created at 2010-09-25 19:52:58\n\naddress referee comments",
     "created_at": "2010-09-25T19:52:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8939",
     "type": "issue_comment",
@@ -170,7 +170,7 @@ archive/issue_comments_082318.json:
 }
 ```
 
-Attachment
+Attachment [trac_8939-matrix_template-4.4.2-part2.patch](tarball://root/attachments/some-uuid/ticket8939/trac_8939-matrix_template-4.4.2-part2.patch) by burcin created at 2010-09-25 19:52:58
 
 address referee comments
 

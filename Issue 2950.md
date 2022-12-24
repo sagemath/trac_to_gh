@@ -81,7 +81,7 @@ Changing assignee from was to shumow.
 archive/issue_comments_020342.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_2950-point3d-arg.patch](tarball://root/attachments/some-uuid/ticket2950/trac_2950-point3d-arg.patch) by shumow created at 2009-01-23 07:28:16",
     "created_at": "2009-01-23T07:28:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2950",
     "type": "issue_comment",
@@ -90,7 +90,7 @@ archive/issue_comments_020342.json:
 }
 ```
 
-Attachment
+Attachment [trac_2950-point3d-arg.patch](tarball://root/attachments/some-uuid/ticket2950/trac_2950-point3d-arg.patch) by shumow created at 2009-01-23 07:28:16
 
 
 
@@ -99,7 +99,7 @@ Attachment
 archive/issue_comments_020343.json:
 ```json
 {
-    "body": "Attachment\n\nI added a doctest to make sure that this works.",
+    "body": "Attachment [trac_2950-2.patch](tarball://root/attachments/some-uuid/ticket2950/trac_2950-2.patch) by mhansen created at 2009-01-24 02:51:25\n\nI added a doctest to make sure that this works.",
     "created_at": "2009-01-24T02:51:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2950",
     "type": "issue_comment",
@@ -108,7 +108,7 @@ archive/issue_comments_020343.json:
 }
 ```
 
-Attachment
+Attachment [trac_2950-2.patch](tarball://root/attachments/some-uuid/ticket2950/trac_2950-2.patch) by mhansen created at 2009-01-24 02:51:25
 
 I added a doctest to make sure that this works.
 

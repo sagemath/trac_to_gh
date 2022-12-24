@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9839
 archive/issue_comments_097106.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9839_add_dual_cone_computation.patch](tarball://root/attachments/some-uuid/ticket9839/trac_9839_add_dual_cone_computation.patch) by novoselt created at 2010-08-30 05:53:15",
     "created_at": "2010-08-30T05:53:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9838",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_097106.json:
 }
 ```
 
-Attachment
+Attachment [trac_9839_add_dual_cone_computation.patch](tarball://root/attachments/some-uuid/ticket9839/trac_9839_add_dual_cone_computation.patch) by novoselt created at 2010-08-30 05:53:15
 
 
 
@@ -179,7 +179,7 @@ Updated patch
 archive/issue_comments_097112.json:
 ```json
 {
-    "body": "Attachment\n\nRenamed to `dual_lattice` and added documentation.",
+    "body": "Attachment [trac_9839_reviewer.patch](tarball://root/attachments/some-uuid/ticket9839/trac_9839_reviewer.patch) by vbraun created at 2010-08-30 21:02:18\n\nRenamed to `dual_lattice` and added documentation.",
     "created_at": "2010-08-30T21:02:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9838",
     "type": "issue_comment",
@@ -188,7 +188,7 @@ archive/issue_comments_097112.json:
 }
 ```
 
-Attachment
+Attachment [trac_9839_reviewer.patch](tarball://root/attachments/some-uuid/ticket9839/trac_9839_reviewer.patch) by vbraun created at 2010-08-30 21:02:18
 
 Renamed to `dual_lattice` and added documentation.
 
@@ -217,7 +217,7 @@ Adjusted version
 archive/issue_comments_097114.json:
 ```json
 {
-    "body": "Attachment\n\nThank you! I caught a broken link and changed a little bit documentation in lines 1743-1749 of the new patch. If it looks OK, please switch to positive review!",
+    "body": "Attachment [trac_9839_reviewer.2.patch](tarball://root/attachments/some-uuid/ticket9839/trac_9839_reviewer.2.patch) by novoselt created at 2010-08-31 00:30:43\n\nThank you! I caught a broken link and changed a little bit documentation in lines 1743-1749 of the new patch. If it looks OK, please switch to positive review!",
     "created_at": "2010-08-31T00:30:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9838",
     "type": "issue_comment",
@@ -226,7 +226,7 @@ archive/issue_comments_097114.json:
 }
 ```
 
-Attachment
+Attachment [trac_9839_reviewer.2.patch](tarball://root/attachments/some-uuid/ticket9839/trac_9839_reviewer.2.patch) by novoselt created at 2010-08-31 00:30:43
 
 Thank you! I caught a broken link and changed a little bit documentation in lines 1743-1749 of the new patch. If it looks OK, please switch to positive review!
 

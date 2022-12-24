@@ -85,7 +85,7 @@ Changing component from algebra to graph theory.
 archive/issue_comments_023870.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac3402-set_edge_label.patch](tarball://root/attachments/some-uuid/ticket3402/trac3402-set_edge_label.patch) by rlm created at 2008-06-12 19:19:09",
     "created_at": "2008-06-12T19:19:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3402",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_023870.json:
 }
 ```
 
-Attachment
+Attachment [trac3402-set_edge_label.patch](tarball://root/attachments/some-uuid/ticket3402/trac3402-set_edge_label.patch) by rlm created at 2008-06-12 19:19:09
 
 
 

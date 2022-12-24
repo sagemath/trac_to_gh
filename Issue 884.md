@@ -128,7 +128,7 @@ Uncommented region that shouldn't have been commented out.
 archive/issue_comments_005461.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac884.patch](tarball://root/attachments/some-uuid/ticket884/trac884.patch) by roed created at 2007-10-14 03:24:34",
     "created_at": "2007-10-14T03:24:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/884",
     "type": "issue_comment",
@@ -137,7 +137,7 @@ archive/issue_comments_005461.json:
 }
 ```
 
-Attachment
+Attachment [trac884.patch](tarball://root/attachments/some-uuid/ticket884/trac884.patch) by roed created at 2007-10-14 03:24:34
 
 
 

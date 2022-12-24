@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5638
 archive/issue_comments_044026.json:
 ```json
 {
-    "body": "Attachment\n\nThis works, looks good, and also works with #5636.",
+    "body": "Attachment [deprecate-jsmath.patch](tarball://root/attachments/some-uuid/ticket5638/deprecate-jsmath.patch) by was created at 2009-03-30 01:22:29\n\nThis works, looks good, and also works with #5636.",
     "created_at": "2009-03-30T01:22:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5638",
     "type": "issue_comment",
@@ -41,7 +41,7 @@ archive/issue_comments_044026.json:
 }
 ```
 
-Attachment
+Attachment [deprecate-jsmath.patch](tarball://root/attachments/some-uuid/ticket5638/deprecate-jsmath.patch) by was created at 2009-03-30 01:22:29
 
 This works, looks good, and also works with #5636.
 

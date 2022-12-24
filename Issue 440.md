@@ -112,7 +112,7 @@ sage: timeit x = L[index]
 archive/issue_comments_002205.json:
 ```json
 {
-    "body": "Attachment\n\nadds new mpz_get_pyintlong function, change some calls in Integer class to use this function",
+    "body": "Attachment [trac-440.hg](tarball://root/attachments/some-uuid/ticket440/trac-440.hg) by dmharvey created at 2007-08-18 20:18:09\n\nadds new mpz_get_pyintlong function, change some calls in Integer class to use this function",
     "created_at": "2007-08-18T20:18:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/440",
     "type": "issue_comment",
@@ -121,7 +121,7 @@ archive/issue_comments_002205.json:
 }
 ```
 
-Attachment
+Attachment [trac-440.hg](tarball://root/attachments/some-uuid/ticket440/trac-440.hg) by dmharvey created at 2007-08-18 20:18:09
 
 adds new mpz_get_pyintlong function, change some calls in Integer class to use this function
 

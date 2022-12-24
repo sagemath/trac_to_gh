@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/885
 archive/issue_comments_005470.json:
 ```json
 {
-    "body": "Attachment\n\nChanged class RingHomomorphism_im_gens to use _cmp_c_impl (this is necessary to make Python subclasses compare correctly).",
+    "body": "Attachment [6931.patch](tarball://root/attachments/some-uuid/ticket885/6931.patch) by cwitty created at 2007-10-13 22:35:26\n\nChanged class RingHomomorphism_im_gens to use _cmp_c_impl (this is necessary to make Python subclasses compare correctly).",
     "created_at": "2007-10-13T22:35:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/885",
     "type": "issue_comment",
@@ -50,7 +50,7 @@ archive/issue_comments_005470.json:
 }
 ```
 
-Attachment
+Attachment [6931.patch](tarball://root/attachments/some-uuid/ticket885/6931.patch) by cwitty created at 2007-10-13 22:35:26
 
 Changed class RingHomomorphism_im_gens to use _cmp_c_impl (this is necessary to make Python subclasses compare correctly).
 

@@ -56,7 +56,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/771
 archive/issue_comments_004580.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [K_vector.patch](tarball://root/attachments/some-uuid/ticket771/K_vector.patch) by malb created at 2007-10-20 21:57:29",
     "created_at": "2007-10-20T21:57:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/771",
     "type": "issue_comment",
@@ -65,7 +65,7 @@ archive/issue_comments_004580.json:
 }
 ```
 
-Attachment
+Attachment [K_vector.patch](tarball://root/attachments/some-uuid/ticket771/K_vector.patch) by malb created at 2007-10-20 21:57:29
 
 
 

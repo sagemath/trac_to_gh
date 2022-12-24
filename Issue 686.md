@@ -347,7 +347,7 @@ Michael
 archive/issue_comments_003569.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [mpolynomial_libsingular_qqa.patch](tarball://root/attachments/some-uuid/ticket686/mpolynomial_libsingular_qqa.patch) by malb created at 2008-08-31 16:10:31",
     "created_at": "2008-08-31T16:10:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/686",
     "type": "issue_comment",
@@ -356,7 +356,7 @@ archive/issue_comments_003569.json:
 }
 ```
 
-Attachment
+Attachment [mpolynomial_libsingular_qqa.patch](tarball://root/attachments/some-uuid/ticket686/mpolynomial_libsingular_qqa.patch) by malb created at 2008-08-31 16:10:31
 
 
 

@@ -204,7 +204,7 @@ OSError: [Errno 2] No such file or directory: '/Applications/sage_builds/sage-3.
 archive/issue_comments_043991.json:
 ```json
 {
-    "body": "Attachment\n\nrebased post #5520, positive review for this patch",
+    "body": "Attachment [quaternion.patch](tarball://root/attachments/some-uuid/ticket5632/quaternion.patch) by jhpalmieri created at 2009-03-31 15:38:05\n\nrebased post #5520, positive review for this patch",
     "created_at": "2009-03-31T15:38:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5632",
     "type": "issue_comment",
@@ -213,7 +213,7 @@ archive/issue_comments_043991.json:
 }
 ```
 
-Attachment
+Attachment [quaternion.patch](tarball://root/attachments/some-uuid/ticket5632/quaternion.patch) by jhpalmieri created at 2009-03-31 15:38:05
 
 rebased post #5520, positive review for this patch
 
@@ -224,7 +224,7 @@ rebased post #5520, positive review for this patch
 archive/issue_comments_043992.json:
 ```json
 {
-    "body": "Attachment\n\nFor the record: positive review quatalg-reference.patch.\n\nCheers,\n\nMichael",
+    "body": "Attachment [quatalg-reference.patch](tarball://root/attachments/some-uuid/ticket5632/quatalg-reference.patch) by mabshoff created at 2009-03-31 19:57:42\n\nFor the record: positive review quatalg-reference.patch.\n\nCheers,\n\nMichael",
     "created_at": "2009-03-31T19:57:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5632",
     "type": "issue_comment",
@@ -233,7 +233,7 @@ archive/issue_comments_043992.json:
 }
 ```
 
-Attachment
+Attachment [quatalg-reference.patch](tarball://root/attachments/some-uuid/ticket5632/quatalg-reference.patch) by mabshoff created at 2009-03-31 19:57:42
 
 For the record: positive review quatalg-reference.patch.
 

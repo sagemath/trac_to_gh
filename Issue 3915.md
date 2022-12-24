@@ -203,7 +203,7 @@ Blocks of degree reverse lex. : reversed in each block, so quite strange
 archive/issue_comments_028005.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [pbori_improvements.patch](tarball://root/attachments/some-uuid/ticket3915/pbori_improvements.patch) by malb created at 2008-08-28 10:35:04",
     "created_at": "2008-08-28T10:35:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3915",
     "type": "issue_comment",
@@ -212,7 +212,7 @@ archive/issue_comments_028005.json:
 }
 ```
 
-Attachment
+Attachment [pbori_improvements.patch](tarball://root/attachments/some-uuid/ticket3915/pbori_improvements.patch) by malb created at 2008-08-28 10:35:04
 
 
 
@@ -388,7 +388,7 @@ rebased patch of malb's - all that needed fixing was plot's parameter list
 archive/issue_comments_028012.json:
 ```json
 {
-    "body": "Attachment\n\nMerged trac_3915_pbori_improvements.patch in Sage 3.1.2.alpha2",
+    "body": "Attachment [trac_3915_pbori_improvements.patch](tarball://root/attachments/some-uuid/ticket3915/trac_3915_pbori_improvements.patch) by mabshoff created at 2008-08-29 01:43:08\n\nMerged trac_3915_pbori_improvements.patch in Sage 3.1.2.alpha2",
     "created_at": "2008-08-29T01:43:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3915",
     "type": "issue_comment",
@@ -397,7 +397,7 @@ archive/issue_comments_028012.json:
 }
 ```
 
-Attachment
+Attachment [trac_3915_pbori_improvements.patch](tarball://root/attachments/some-uuid/ticket3915/trac_3915_pbori_improvements.patch) by mabshoff created at 2008-08-29 01:43:08
 
 Merged trac_3915_pbori_improvements.patch in Sage 3.1.2.alpha2
 

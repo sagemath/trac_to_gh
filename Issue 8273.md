@@ -360,7 +360,7 @@ Also, if you prefer me to break the patch into two smaller ones, just tell me, I
 archive/issue_comments_073231.json:
 ```json
 {
-    "body": "Attachment\n\nNew patch taking into account Nathann's comments",
+    "body": "Attachment [trac_8273_digraphs_cycles_enumerations-abm.patch](tarball://root/attachments/some-uuid/ticket8273/trac_8273_digraphs_cycles_enumerations-abm.patch) by abmasse created at 2010-02-23 14:01:55\n\nNew patch taking into account Nathann's comments",
     "created_at": "2010-02-23T14:01:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8273",
     "type": "issue_comment",
@@ -369,7 +369,7 @@ archive/issue_comments_073231.json:
 }
 ```
 
-Attachment
+Attachment [trac_8273_digraphs_cycles_enumerations-abm.patch](tarball://root/attachments/some-uuid/ticket8273/trac_8273_digraphs_cycles_enumerations-abm.patch) by abmasse created at 2010-02-23 14:01:55
 
 New patch taking into account Nathann's comments
 
@@ -537,7 +537,7 @@ Apply on top of the main patch
 archive/issue_comments_073238.json:
 ```json
 {
-    "body": "Attachment\n\nI uploaded another patch that include your comments. Needs review !",
+    "body": "Attachment [trac_8273_with_heap-abm.patch](tarball://root/attachments/some-uuid/ticket8273/trac_8273_with_heap-abm.patch) by abmasse created at 2010-02-25 17:55:26\n\nI uploaded another patch that include your comments. Needs review !",
     "created_at": "2010-02-25T17:55:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8273",
     "type": "issue_comment",
@@ -546,7 +546,7 @@ archive/issue_comments_073238.json:
 }
 ```
 
-Attachment
+Attachment [trac_8273_with_heap-abm.patch](tarball://root/attachments/some-uuid/ticket8273/trac_8273_with_heap-abm.patch) by abmasse created at 2010-02-25 17:55:26
 
 I uploaded another patch that include your comments. Needs review !
 

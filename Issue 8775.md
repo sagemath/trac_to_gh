@@ -136,7 +136,7 @@ Changing keywords from "" to "pynac".
 archive/issue_comments_080329.json:
 ```json
 {
-    "body": "Attachment\n\nThis is fixed by the new pynac package at #8903. attachment:trac_8775-conjugate.patch contains doctest fixes.\n\nNote that the new pynac version also fixes #8542, #8651, and #8688. Patches from these tickets should be applied before running doctests.",
+    "body": "Attachment [trac_8775-conjugate.patch](tarball://root/attachments/some-uuid/ticket8775/trac_8775-conjugate.patch) by burcin created at 2010-05-06 04:27:18\n\nThis is fixed by the new pynac package at #8903. attachment:trac_8775-conjugate.patch contains doctest fixes.\n\nNote that the new pynac version also fixes #8542, #8651, and #8688. Patches from these tickets should be applied before running doctests.",
     "created_at": "2010-05-06T04:27:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8775",
     "type": "issue_comment",
@@ -145,7 +145,7 @@ archive/issue_comments_080329.json:
 }
 ```
 
-Attachment
+Attachment [trac_8775-conjugate.patch](tarball://root/attachments/some-uuid/ticket8775/trac_8775-conjugate.patch) by burcin created at 2010-05-06 04:27:18
 
 This is fixed by the new pynac package at #8903. attachment:trac_8775-conjugate.patch contains doctest fixes.
 
@@ -287,7 +287,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_080336.json:
 ```json
 {
-    "body": "Attachment\n\nI uploaded a new patch to add doctests for the fixes in Pynac. Only attachment:trac_8775-conjugate.take2.patch should be applied.\n\nThis depends on #9901.",
+    "body": "Attachment [trac_8775-conjugate.take2.patch](tarball://root/attachments/some-uuid/ticket8775/trac_8775-conjugate.take2.patch) by burcin created at 2010-09-12 22:16:08\n\nI uploaded a new patch to add doctests for the fixes in Pynac. Only attachment:trac_8775-conjugate.take2.patch should be applied.\n\nThis depends on #9901.",
     "created_at": "2010-09-12T22:16:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8775",
     "type": "issue_comment",
@@ -296,7 +296,7 @@ archive/issue_comments_080336.json:
 }
 ```
 
-Attachment
+Attachment [trac_8775-conjugate.take2.patch](tarball://root/attachments/some-uuid/ticket8775/trac_8775-conjugate.take2.patch) by burcin created at 2010-09-12 22:16:08
 
 I uploaded a new patch to add doctests for the fixes in Pynac. Only attachment:trac_8775-conjugate.take2.patch should be applied.
 
@@ -418,7 +418,7 @@ Resolution: fixed
 archive/issue_comments_080343.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8775-conjugate-fixed-message.patch](tarball://root/attachments/some-uuid/ticket8775/trac_8775-conjugate-fixed-message.patch) by jdemeyer created at 2010-11-11 13:42:34",
     "created_at": "2010-11-11T13:42:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8775",
     "type": "issue_comment",
@@ -427,4 +427,4 @@ archive/issue_comments_080343.json:
 }
 ```
 
-Attachment
+Attachment [trac_8775-conjugate-fixed-message.patch](tarball://root/attachments/some-uuid/ticket8775/trac_8775-conjugate-fixed-message.patch) by jdemeyer created at 2010-11-11 13:42:34

@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7909
 archive/issue_comments_068778.json:
 ```json
 {
-    "body": "Attachment\n\nA complete copy of the revised sage-env",
+    "body": "Attachment [sage-spkg](tarball://root/attachments/some-uuid/ticket7909/sage-spkg) by drkirkby created at 2010-01-12 16:21:17\n\nA complete copy of the revised sage-env",
     "created_at": "2010-01-12T16:21:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7909",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_068778.json:
 }
 ```
 
-Attachment
+Attachment [sage-spkg](tarball://root/attachments/some-uuid/ticket7909/sage-spkg) by drkirkby created at 2010-01-12 16:21:17
 
 A complete copy of the revised sage-env
 
@@ -73,7 +73,7 @@ Mercurial patch for sage-env
 archive/issue_comments_068780.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-spkg-remove-MKDIR.patch](tarball://root/attachments/some-uuid/ticket7909/sage-spkg-remove-MKDIR.patch) by drkirkby created at 2010-01-12 16:22:15",
     "created_at": "2010-01-12T16:22:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7909",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_068780.json:
 }
 ```
 
-Attachment
+Attachment [sage-spkg-remove-MKDIR.patch](tarball://root/attachments/some-uuid/ticket7909/sage-spkg-remove-MKDIR.patch) by drkirkby created at 2010-01-12 16:22:15
 
 
 

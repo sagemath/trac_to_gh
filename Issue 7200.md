@@ -55,7 +55,7 @@ Changing status from new to needs_review.
 archive/issue_comments_059743.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [permutations_fix_longest_increasing_subsequence_vf.patch](tarball://root/attachments/some-uuid/ticket7200/permutations_fix_longest_increasing_subsequence_vf.patch) by vferay created at 2009-10-13 14:16:19",
     "created_at": "2009-10-13T14:16:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7200",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_059743.json:
 }
 ```
 
-Attachment
+Attachment [permutations_fix_longest_increasing_subsequence_vf.patch](tarball://root/attachments/some-uuid/ticket7200/permutations_fix_longest_increasing_subsequence_vf.patch) by vferay created at 2009-10-13 14:16:19
 
 
 
@@ -182,7 +182,7 @@ Florent
 archive/issue_comments_059749.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [permutations_fix_longest_increasing_subsequence_7200_vf.patch](tarball://root/attachments/some-uuid/ticket7200/permutations_fix_longest_increasing_subsequence_7200_vf.patch) by vferay created at 2009-11-04 17:27:21",
     "created_at": "2009-11-04T17:27:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7200",
     "type": "issue_comment",
@@ -191,7 +191,7 @@ archive/issue_comments_059749.json:
 }
 ```
 
-Attachment
+Attachment [permutations_fix_longest_increasing_subsequence_7200_vf.patch](tarball://root/attachments/some-uuid/ticket7200/permutations_fix_longest_increasing_subsequence_7200_vf.patch) by vferay created at 2009-11-04 17:27:21
 
 
 
@@ -309,7 +309,7 @@ Florent
 archive/issue_comments_059755.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7200.patch](tarball://root/attachments/some-uuid/ticket7200/trac_7200.patch) by mhansen created at 2009-11-05 01:43:03",
     "created_at": "2009-11-05T01:43:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7200",
     "type": "issue_comment",
@@ -318,7 +318,7 @@ archive/issue_comments_059755.json:
 }
 ```
 
-Attachment
+Attachment [trac_7200.patch](tarball://root/attachments/some-uuid/ticket7200/trac_7200.patch) by mhansen created at 2009-11-05 01:43:03
 
 
 

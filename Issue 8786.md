@@ -83,7 +83,7 @@ Changing status from new to needs_review.
 archive/issue_comments_080446.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch should fix the broken links in `graph.py` to Wikipedia. Any URL can be encapsulated using the markup:\n\n```\n`descriptive-name <valid-URL>`_\n```\n",
+    "body": "Attachment [trac_8786-wikipedia-links.patch](tarball://root/attachments/some-uuid/ticket8786/trac_8786-wikipedia-links.patch) by mvngu created at 2010-04-28 06:22:00\n\nThe attached patch should fix the broken links in `graph.py` to Wikipedia. Any URL can be encapsulated using the markup:\n\n```\n`descriptive-name <valid-URL>`_\n```\n",
     "created_at": "2010-04-28T06:22:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8786",
     "type": "issue_comment",
@@ -92,7 +92,7 @@ archive/issue_comments_080446.json:
 }
 ```
 
-Attachment
+Attachment [trac_8786-wikipedia-links.patch](tarball://root/attachments/some-uuid/ticket8786/trac_8786-wikipedia-links.patch) by mvngu created at 2010-04-28 06:22:00
 
 The attached patch should fix the broken links in `graph.py` to Wikipedia. Any URL can be encapsulated using the markup:
 
@@ -143,7 +143,7 @@ Nathann
 archive/issue_comments_080448.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8786-other_fixes.2.patch](tarball://root/attachments/some-uuid/ticket8786/trac_8786-other_fixes.2.patch) by mvngu created at 2010-04-28 11:42:01",
     "created_at": "2010-04-28T11:42:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8786",
     "type": "issue_comment",
@@ -152,7 +152,7 @@ archive/issue_comments_080448.json:
 }
 ```
 
-Attachment
+Attachment [trac_8786-other_fixes.2.patch](tarball://root/attachments/some-uuid/ticket8786/trac_8786-other_fixes.2.patch) by mvngu created at 2010-04-28 11:42:01
 
 
 
@@ -161,7 +161,7 @@ Attachment
 archive/issue_comments_080449.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch [trac_8786-other_fixes.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8786/trac_8786-other_fixes.2.patch) is the same as [trac_8786-other_fixes.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8786/trac_8786-other_fixes.patch), but with the ticket number in its commit message. The reviewer patch [trac_8786-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8786/trac_8786-reviewer.patch) contains the following changes:\n\n* The patch [trac_8786-other_fixes.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8786/trac_8786-other_fixes.2.patch) does some fixes about broken links. But it removes the context about why we need such links. Restore that context.\n* Some links in [trac_8786-other_fixes.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8786/trac_8786-other_fixes.2.patch) do not link to a Wikipedia article. Correct such links to point to Wikipedia articles.\n\nSo only the following patches now need review by anyone but me:\n\n* [trac_8786-wikipedia-links.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8786/trac_8786-wikipedia-links.patch)\n* [trac_8786-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8786/trac_8786-reviewer.patch)",
+    "body": "Attachment [trac_8786-reviewer.patch](tarball://root/attachments/some-uuid/ticket8786/trac_8786-reviewer.patch) by mvngu created at 2010-04-28 12:46:02\n\nThe patch [trac_8786-other_fixes.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8786/trac_8786-other_fixes.2.patch) is the same as [trac_8786-other_fixes.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8786/trac_8786-other_fixes.patch), but with the ticket number in its commit message. The reviewer patch [trac_8786-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8786/trac_8786-reviewer.patch) contains the following changes:\n\n* The patch [trac_8786-other_fixes.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8786/trac_8786-other_fixes.2.patch) does some fixes about broken links. But it removes the context about why we need such links. Restore that context.\n* Some links in [trac_8786-other_fixes.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8786/trac_8786-other_fixes.2.patch) do not link to a Wikipedia article. Correct such links to point to Wikipedia articles.\n\nSo only the following patches now need review by anyone but me:\n\n* [trac_8786-wikipedia-links.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8786/trac_8786-wikipedia-links.patch)\n* [trac_8786-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8786/trac_8786-reviewer.patch)",
     "created_at": "2010-04-28T12:46:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8786",
     "type": "issue_comment",
@@ -170,7 +170,7 @@ archive/issue_comments_080449.json:
 }
 ```
 
-Attachment
+Attachment [trac_8786-reviewer.patch](tarball://root/attachments/some-uuid/ticket8786/trac_8786-reviewer.patch) by mvngu created at 2010-04-28 12:46:02
 
 The patch [trac_8786-other_fixes.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8786/trac_8786-other_fixes.2.patch) is the same as [trac_8786-other_fixes.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8786/trac_8786-other_fixes.patch), but with the ticket number in its commit message. The reviewer patch [trac_8786-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8786/trac_8786-reviewer.patch) contains the following changes:
 

@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7325
 archive/issue_comments_061207.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [inequalities.patch](tarball://root/attachments/some-uuid/ticket7325/inequalities.patch) by robert.marik created at 2009-10-27 21:48:20",
     "created_at": "2009-10-27T21:48:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7325",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_061207.json:
 }
 ```
 
-Attachment
+Attachment [inequalities.patch](tarball://root/attachments/some-uuid/ticket7325/inequalities.patch) by robert.marik created at 2009-10-27 21:48:20
 
 
 
@@ -219,7 +219,7 @@ apply only this patch
 archive/issue_comments_061216.json:
 ```json
 {
-    "body": "Attachment\n\napply only this patch",
+    "body": "Attachment [trac-7325-inequalities-revisited.patch](tarball://root/attachments/some-uuid/ticket7325/trac-7325-inequalities-revisited.patch) by robert.marik created at 2009-11-09 23:34:03\n\napply only this patch",
     "created_at": "2009-11-09T23:34:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7325",
     "type": "issue_comment",
@@ -228,7 +228,7 @@ archive/issue_comments_061216.json:
 }
 ```
 
-Attachment
+Attachment [trac-7325-inequalities-revisited.patch](tarball://root/attachments/some-uuid/ticket7325/trac-7325-inequalities-revisited.patch) by robert.marik created at 2009-11-09 23:34:03
 
 apply only this patch
 
@@ -257,7 +257,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_061218.json:
 ```json
 {
-    "body": "Attachment\n\n#1163 has now been updated to parse not equal, at least hopefully; ideally, this patch would be able to use that - or one could open a new ticket.  \n\nAs for the current patch, it is a vast improvement on the previous one for readability.  There are still a few formatting things - for INPUT and OUTPUT I think only : is needed, not ::, for instance.  For solve_ineq_univar and solve_ineq_fourier, the output should probably be formatted as a list, like the input is.  The input in solve_ineq (one could say, \"an inequality or list of inequalities\" or something like that) should not make it look like one can put in ineq twice.\n\nPerhaps this should come with a new Maxima spkg?  It does not pass tests upon being applied to 4.2.1.alpha0, and this is a prerequisite for inclusion of a patch.  However, probably this only requires a change to the spkg by applying the patch mentioned above - in fact, the current Maxima has a (now unnecessary, as it happens) patch on it too, and so probably one can follow that example for how to get them to apply that way (rather than packaging up a whole new one).  See the [Sage developers' guide](http://www.sagemath.org/doc/developer/), especially the part about [new spkgs](http://www.sagemath.org/doc/developer/producing_spkgs.html#creating-a-new-spkg-file).",
+    "body": "Attachment [trac-7325-inequalities-revisited.2.patch](tarball://root/attachments/some-uuid/ticket7325/trac-7325-inequalities-revisited.2.patch) by kcrisman created at 2009-11-10 03:04:48\n\n#1163 has now been updated to parse not equal, at least hopefully; ideally, this patch would be able to use that - or one could open a new ticket.  \n\nAs for the current patch, it is a vast improvement on the previous one for readability.  There are still a few formatting things - for INPUT and OUTPUT I think only : is needed, not ::, for instance.  For solve_ineq_univar and solve_ineq_fourier, the output should probably be formatted as a list, like the input is.  The input in solve_ineq (one could say, \"an inequality or list of inequalities\" or something like that) should not make it look like one can put in ineq twice.\n\nPerhaps this should come with a new Maxima spkg?  It does not pass tests upon being applied to 4.2.1.alpha0, and this is a prerequisite for inclusion of a patch.  However, probably this only requires a change to the spkg by applying the patch mentioned above - in fact, the current Maxima has a (now unnecessary, as it happens) patch on it too, and so probably one can follow that example for how to get them to apply that way (rather than packaging up a whole new one).  See the [Sage developers' guide](http://www.sagemath.org/doc/developer/), especially the part about [new spkgs](http://www.sagemath.org/doc/developer/producing_spkgs.html#creating-a-new-spkg-file).",
     "created_at": "2009-11-10T03:04:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7325",
     "type": "issue_comment",
@@ -266,7 +266,7 @@ archive/issue_comments_061218.json:
 }
 ```
 
-Attachment
+Attachment [trac-7325-inequalities-revisited.2.patch](tarball://root/attachments/some-uuid/ticket7325/trac-7325-inequalities-revisited.2.patch) by kcrisman created at 2009-11-10 03:04:48
 
 #1163 has now been updated to parse not equal, at least hopefully; ideally, this patch would be able to use that - or one could open a new ticket.  
 
@@ -322,7 +322,7 @@ Apply only this patch
 archive/issue_comments_061221.json:
 ```json
 {
-    "body": "Attachment\n\nApply only thisd patch and update maxima spkg (the link is in discussion, message from November 11 2009)",
+    "body": "Attachment [trac-7325-inequalities-3.patch](tarball://root/attachments/some-uuid/ticket7325/trac-7325-inequalities-3.patch) by robert.marik created at 2009-11-11 13:50:29\n\nApply only thisd patch and update maxima spkg (the link is in discussion, message from November 11 2009)",
     "created_at": "2009-11-11T13:50:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7325",
     "type": "issue_comment",
@@ -331,7 +331,7 @@ archive/issue_comments_061221.json:
 }
 ```
 
-Attachment
+Attachment [trac-7325-inequalities-3.patch](tarball://root/attachments/some-uuid/ticket7325/trac-7325-inequalities-3.patch) by robert.marik created at 2009-11-11 13:50:29
 
 Apply only thisd patch and update maxima spkg (the link is in discussion, message from November 11 2009)
 
@@ -380,7 +380,7 @@ To release manager: apply only 'final' patch.
 archive/issue_comments_061224.json:
 ```json
 {
-    "body": "Attachment\n\nBased on 4.2.1, apply only this patch and the spkg.",
+    "body": "Attachment [trac_7325-final.patch](tarball://root/attachments/some-uuid/ticket7325/trac_7325-final.patch) by kcrisman created at 2009-11-17 19:57:03\n\nBased on 4.2.1, apply only this patch and the spkg.",
     "created_at": "2009-11-17T19:57:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7325",
     "type": "issue_comment",
@@ -389,7 +389,7 @@ archive/issue_comments_061224.json:
 }
 ```
 
-Attachment
+Attachment [trac_7325-final.patch](tarball://root/attachments/some-uuid/ticket7325/trac_7325-final.patch) by kcrisman created at 2009-11-17 19:57:03
 
 Based on 4.2.1, apply only this patch and the spkg.
 
@@ -598,7 +598,7 @@ x>-Infinity
 archive/issue_comments_061231.json:
 ```json
 {
-    "body": "Attachment\n\napply after trac_7325-final.patch",
+    "body": "Attachment [trac_7325-final-2.patch](tarball://root/attachments/some-uuid/ticket7325/trac_7325-final-2.patch) by robert.marik created at 2009-12-05 21:48:09\n\napply after trac_7325-final.patch",
     "created_at": "2009-12-05T21:48:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7325",
     "type": "issue_comment",
@@ -607,7 +607,7 @@ archive/issue_comments_061231.json:
 }
 ```
 
-Attachment
+Attachment [trac_7325-final-2.patch](tarball://root/attachments/some-uuid/ticket7325/trac_7325-final-2.patch) by robert.marik created at 2009-12-05 21:48:09
 
 apply after trac_7325-final.patch
 
@@ -693,7 +693,7 @@ Not tested on Maxima 5.20.1 - this version is not available in Sage and ticket #
 archive/issue_comments_061236.json:
 ```json
 {
-    "body": "Attachment\n\nMerged two final patches and rebased for Sage 4.3. Apply only this patch.",
+    "body": "Attachment [trac_7325_rebased_4.3.patch](tarball://root/attachments/some-uuid/ticket7325/trac_7325_rebased_4.3.patch) by robert.marik created at 2009-12-27 18:07:01\n\nMerged two final patches and rebased for Sage 4.3. Apply only this patch.",
     "created_at": "2009-12-27T18:07:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7325",
     "type": "issue_comment",
@@ -702,7 +702,7 @@ archive/issue_comments_061236.json:
 }
 ```
 
-Attachment
+Attachment [trac_7325_rebased_4.3.patch](tarball://root/attachments/some-uuid/ticket7325/trac_7325_rebased_4.3.patch) by robert.marik created at 2009-12-27 18:07:01
 
 Merged two final patches and rebased for Sage 4.3. Apply only this patch.
 
@@ -713,7 +713,7 @@ Merged two final patches and rebased for Sage 4.3. Apply only this patch.
 archive/issue_comments_061237.json:
 ```json
 {
-    "body": "Attachment\n\nMerged both final patches and rebased for Sage 4.3.",
+    "body": "Attachment [trac_7325_rebased_4.3.2.patch](tarball://root/attachments/some-uuid/ticket7325/trac_7325_rebased_4.3.2.patch) by robert.marik created at 2009-12-27 18:09:52\n\nMerged both final patches and rebased for Sage 4.3.",
     "created_at": "2009-12-27T18:09:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7325",
     "type": "issue_comment",
@@ -722,7 +722,7 @@ archive/issue_comments_061237.json:
 }
 ```
 
-Attachment
+Attachment [trac_7325_rebased_4.3.2.patch](tarball://root/attachments/some-uuid/ticket7325/trac_7325_rebased_4.3.2.patch) by robert.marik created at 2009-12-27 18:09:52
 
 Merged both final patches and rebased for Sage 4.3.
 
@@ -943,7 +943,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_061247.json:
 ```json
 {
-    "body": "Attachment\n\nThe last patch solves (I hope) the problems from above.\n\nI found a Maxima bug when solving x^4+2>0 - the problem is from Maxima (and not related to this ticket) and should be easy to fix. Reported at Maxima forum, will be reported on SF with a solution how to fix (in few days or weeks).",
+    "body": "Attachment [trac_7325_rebased_4.3.1.patch](tarball://root/attachments/some-uuid/ticket7325/trac_7325_rebased_4.3.1.patch) by robert.marik created at 2010-01-22 15:29:57\n\nThe last patch solves (I hope) the problems from above.\n\nI found a Maxima bug when solving x^4+2>0 - the problem is from Maxima (and not related to this ticket) and should be easy to fix. Reported at Maxima forum, will be reported on SF with a solution how to fix (in few days or weeks).",
     "created_at": "2010-01-22T15:29:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7325",
     "type": "issue_comment",
@@ -952,7 +952,7 @@ archive/issue_comments_061247.json:
 }
 ```
 
-Attachment
+Attachment [trac_7325_rebased_4.3.1.patch](tarball://root/attachments/some-uuid/ticket7325/trac_7325_rebased_4.3.1.patch) by robert.marik created at 2010-01-22 15:29:57
 
 The last patch solves (I hope) the problems from above.
 
@@ -1192,7 +1192,7 @@ apply only this patch
 archive/issue_comments_061259.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:29 burcin]:\n> There seems to be something wrong with attachment:trac_7325_2_rebased_for_4.3.1.patch. It contains two similar patches, with distinct headers etc. I didn't check if they are identical copies of the same patch.\n\nFixed, thanks. Robert",
+    "body": "Attachment [trac_7325_2_rebased_for_4.3.1.patch](tarball://root/attachments/some-uuid/ticket7325/trac_7325_2_rebased_for_4.3.1.patch) by robert.marik created at 2010-01-26 18:55:29\n\nReplying to [comment:29 burcin]:\n> There seems to be something wrong with attachment:trac_7325_2_rebased_for_4.3.1.patch. It contains two similar patches, with distinct headers etc. I didn't check if they are identical copies of the same patch.\n\nFixed, thanks. Robert",
     "created_at": "2010-01-26T18:55:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7325",
     "type": "issue_comment",
@@ -1201,7 +1201,7 @@ archive/issue_comments_061259.json:
 }
 ```
 
-Attachment
+Attachment [trac_7325_2_rebased_for_4.3.1.patch](tarball://root/attachments/some-uuid/ticket7325/trac_7325_2_rebased_for_4.3.1.patch) by robert.marik created at 2010-01-26 18:55:29
 
 Replying to [comment:29 burcin]:
 > There seems to be something wrong with attachment:trac_7325_2_rebased_for_4.3.1.patch. It contains two similar patches, with distinct headers etc. I didn't check if they are identical copies of the same patch.
@@ -1302,7 +1302,7 @@ Based on 4.3.1
 archive/issue_comments_061264.json:
 ```json
 {
-    "body": "Attachment\n\nAnd as always, \"apply only this patch\".  :)",
+    "body": "Attachment [trac_7325-final-for-real.patch](tarball://root/attachments/some-uuid/ticket7325/trac_7325-final-for-real.patch) by kcrisman created at 2010-01-29 20:16:54\n\nAnd as always, \"apply only this patch\".  :)",
     "created_at": "2010-01-29T20:16:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7325",
     "type": "issue_comment",
@@ -1311,7 +1311,7 @@ archive/issue_comments_061264.json:
 }
 ```
 
-Attachment
+Attachment [trac_7325-final-for-real.patch](tarball://root/attachments/some-uuid/ticket7325/trac_7325-final-for-real.patch) by kcrisman created at 2010-01-29 20:16:54
 
 And as always, "apply only this patch".  :)
 

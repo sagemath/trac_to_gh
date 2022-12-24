@@ -89,7 +89,7 @@ Changing assignee from mabshoff to gfurnish.
 archive/issue_comments_021201.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3071.patch](tarball://root/attachments/some-uuid/ticket3071/trac_3071.patch) by gfurnish created at 2008-05-02 00:21:33",
     "created_at": "2008-05-02T00:21:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3071",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_021201.json:
 }
 ```
 
-Attachment
+Attachment [trac_3071.patch](tarball://root/attachments/some-uuid/ticket3071/trac_3071.patch) by gfurnish created at 2008-05-02 00:21:33
 
 
 
@@ -107,7 +107,7 @@ Attachment
 archive/issue_comments_021202.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3071_2.patch](tarball://root/attachments/some-uuid/ticket3071/trac_3071_2.patch) by wjp created at 2008-05-02 10:18:40",
     "created_at": "2008-05-02T10:18:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3071",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_021202.json:
 }
 ```
 
-Attachment
+Attachment [trac_3071_2.patch](tarball://root/attachments/some-uuid/ticket3071/trac_3071_2.patch) by wjp created at 2008-05-02 10:18:40
 
 
 

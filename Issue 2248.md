@@ -61,7 +61,7 @@ fixed the failure as suggested by William
 archive/issue_comments_014901.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_2248.patch](tarball://root/attachments/some-uuid/ticket2248/trac_2248.patch) by was created at 2008-02-21 19:21:23",
     "created_at": "2008-02-21T19:21:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2248",
     "type": "issue_comment",
@@ -70,7 +70,7 @@ archive/issue_comments_014901.json:
 }
 ```
 
-Attachment
+Attachment [trac_2248.patch](tarball://root/attachments/some-uuid/ticket2248/trac_2248.patch) by was created at 2008-02-21 19:21:23
 
 
 

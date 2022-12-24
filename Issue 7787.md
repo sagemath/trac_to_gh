@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7787
 archive/issue_comments_067204.json:
 ```json
 {
-    "body": "Attachment\n\nAdds Google's jsmin.py",
+    "body": "Attachment [trac_7787-sagenb-js-minify.patch](tarball://root/attachments/some-uuid/ticket7787/trac_7787-sagenb-js-minify.patch) by timdumol created at 2009-12-29 10:34:02\n\nAdds Google's jsmin.py",
     "created_at": "2009-12-29T10:34:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7787",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_067204.json:
 }
 ```
 
-Attachment
+Attachment [trac_7787-sagenb-js-minify.patch](tarball://root/attachments/some-uuid/ticket7787/trac_7787-sagenb-js-minify.patch) by timdumol created at 2009-12-29 10:34:02
 
 Adds Google's jsmin.py
 
@@ -75,7 +75,7 @@ Changing status from new to needs_review.
 archive/issue_comments_067206.json:
 ```json
 {
-    "body": "Attachment\n\nReplaces JavaScriptCompressor with JavaScriptMinifier",
+    "body": "Attachment [trac_7787-sagenb-js-minify.2.patch](tarball://root/attachments/some-uuid/ticket7787/trac_7787-sagenb-js-minify.2.patch) by timdumol created at 2009-12-29 10:37:45\n\nReplaces JavaScriptCompressor with JavaScriptMinifier",
     "created_at": "2009-12-29T10:37:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7787",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_067206.json:
 }
 ```
 
-Attachment
+Attachment [trac_7787-sagenb-js-minify.2.patch](tarball://root/attachments/some-uuid/ticket7787/trac_7787-sagenb-js-minify.2.patch) by timdumol created at 2009-12-29 10:37:45
 
 Replaces JavaScriptCompressor with JavaScriptMinifier
 
@@ -95,7 +95,7 @@ Replaces JavaScriptCompressor with JavaScriptMinifier
 archive/issue_comments_067207.json:
 ```json
 {
-    "body": "Attachment\n\nAdds Google's jsmin.py. Apply this patch alone.",
+    "body": "Attachment [trac_7787-sagenb-js-minify.3.patch](tarball://root/attachments/some-uuid/ticket7787/trac_7787-sagenb-js-minify.3.patch) by timdumol created at 2009-12-29 10:40:53\n\nAdds Google's jsmin.py. Apply this patch alone.",
     "created_at": "2009-12-29T10:40:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7787",
     "type": "issue_comment",
@@ -104,7 +104,7 @@ archive/issue_comments_067207.json:
 }
 ```
 
-Attachment
+Attachment [trac_7787-sagenb-js-minify.3.patch](tarball://root/attachments/some-uuid/ticket7787/trac_7787-sagenb-js-minify.3.patch) by timdumol created at 2009-12-29 10:40:53
 
 Adds Google's jsmin.py. Apply this patch alone.
 

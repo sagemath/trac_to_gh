@@ -98,7 +98,7 @@ Changing assignee from was to craigcitro.
 archive/issue_comments_010923.json:
 ```json
 {
-    "body": "Attachment\n\nThis fixes the above bug. It also smooths out a few issues to do with the following: at  various places in the modular forms code, it seems that self.prec() is used where self.sturm_bound() is what we really want. There may be more of these that are hard to track down -- for instance, one might use self.basis()[0].prec(), etc.",
+    "body": "Attachment [craigcitro-1724.patch](tarball://root/attachments/some-uuid/ticket1724/craigcitro-1724.patch) by craigcitro created at 2008-01-21 08:46:00\n\nThis fixes the above bug. It also smooths out a few issues to do with the following: at  various places in the modular forms code, it seems that self.prec() is used where self.sturm_bound() is what we really want. There may be more of these that are hard to track down -- for instance, one might use self.basis()[0].prec(), etc.",
     "created_at": "2008-01-21T08:46:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1724",
     "type": "issue_comment",
@@ -107,7 +107,7 @@ archive/issue_comments_010923.json:
 }
 ```
 
-Attachment
+Attachment [craigcitro-1724.patch](tarball://root/attachments/some-uuid/ticket1724/craigcitro-1724.patch) by craigcitro created at 2008-01-21 08:46:00
 
 This fixes the above bug. It also smooths out a few issues to do with the following: at  various places in the modular forms code, it seems that self.prec() is used where self.sturm_bound() is what we really want. There may be more of these that are hard to track down -- for instance, one might use self.basis()[0].prec(), etc.
 

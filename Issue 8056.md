@@ -47,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8056
 archive/issue_comments_070486.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8056-fast_callable.patch](tarball://root/attachments/some-uuid/ticket8056/trac_8056-fast_callable.patch) by burcin created at 2010-01-25 19:09:41",
     "created_at": "2010-01-25T19:09:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8056",
     "type": "issue_comment",
@@ -56,7 +56,7 @@ archive/issue_comments_070486.json:
 }
 ```
 
-Attachment
+Attachment [trac_8056-fast_callable.patch](tarball://root/attachments/some-uuid/ticket8056/trac_8056-fast_callable.patch) by burcin created at 2010-01-25 19:09:41
 
 
 
@@ -206,7 +206,7 @@ AttributeError: 'sage.rings.integer.Integer' object has no attribute
 archive/issue_comments_070489.json:
 ```json
 {
-    "body": "Attachment\n\nsecond try",
+    "body": "Attachment [trac_8056-fast_callable.take2.patch](tarball://root/attachments/some-uuid/ticket8056/trac_8056-fast_callable.take2.patch) by burcin created at 2010-01-31 21:47:44\n\nsecond try",
     "created_at": "2010-01-31T21:47:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8056",
     "type": "issue_comment",
@@ -215,7 +215,7 @@ archive/issue_comments_070489.json:
 }
 ```
 
-Attachment
+Attachment [trac_8056-fast_callable.take2.patch](tarball://root/attachments/some-uuid/ticket8056/trac_8056-fast_callable.take2.patch) by burcin created at 2010-01-31 21:47:44
 
 second try
 

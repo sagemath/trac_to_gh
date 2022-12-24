@@ -106,7 +106,7 @@ Changing component from basic arithmetic to algebraic geometry.
 archive/issue_comments_002643.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [521.patch](tarball://root/attachments/some-uuid/ticket521/521.patch) by dmharvey created at 2008-01-28 01:32:20",
     "created_at": "2008-01-28T01:32:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/521",
     "type": "issue_comment",
@@ -115,7 +115,7 @@ archive/issue_comments_002643.json:
 }
 ```
 
-Attachment
+Attachment [521.patch](tarball://root/attachments/some-uuid/ticket521/521.patch) by dmharvey created at 2008-01-28 01:32:20
 
 
 
@@ -252,7 +252,7 @@ patch rebased on sage-2.10.2.alpha0
 archive/issue_comments_002649.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [521_alt.patch](tarball://root/attachments/some-uuid/ticket521/521_alt.patch) by AlexGhitza created at 2008-02-17 16:56:00",
     "created_at": "2008-02-17T16:56:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/521",
     "type": "issue_comment",
@@ -261,7 +261,7 @@ archive/issue_comments_002649.json:
 }
 ```
 
-Attachment
+Attachment [521_alt.patch](tarball://root/attachments/some-uuid/ticket521/521_alt.patch) by AlexGhitza created at 2008-02-17 16:56:00
 
 
 

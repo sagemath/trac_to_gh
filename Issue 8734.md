@@ -51,7 +51,7 @@ Changing status from new to needs_work.
 archive/issue_comments_079829.json:
 ```json
 {
-    "body": "Attachment\n\nI haven't run doctests on everything, but this patch is a start, if one of you wants to take it from here.",
+    "body": "Attachment [trac-8734-maxima-vars.patch](tarball://root/attachments/some-uuid/ticket8734/trac-8734-maxima-vars.patch) by jason created at 2010-04-21 05:54:17\n\nI haven't run doctests on everything, but this patch is a start, if one of you wants to take it from here.",
     "created_at": "2010-04-21T05:54:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_079829.json:
 }
 ```
 
-Attachment
+Attachment [trac-8734-maxima-vars.patch](tarball://root/attachments/some-uuid/ticket8734/trac-8734-maxima-vars.patch) by jason created at 2010-04-21 05:54:17
 
 I haven't run doctests on everything, but this patch is a start, if one of you wants to take it from here.
 

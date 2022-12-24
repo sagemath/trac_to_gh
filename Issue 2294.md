@@ -61,7 +61,7 @@ Changing assignee from was to cwitty.
 archive/issue_comments_015218.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [fp-interface-init.patch](tarball://root/attachments/some-uuid/ticket2294/fp-interface-init.patch) by cwitty created at 2008-02-24 21:09:54",
     "created_at": "2008-02-24T21:09:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2294",
     "type": "issue_comment",
@@ -70,7 +70,7 @@ archive/issue_comments_015218.json:
 }
 ```
 
-Attachment
+Attachment [fp-interface-init.patch](tarball://root/attachments/some-uuid/ticket2294/fp-interface-init.patch) by cwitty created at 2008-02-24 21:09:54
 
 
 
@@ -144,7 +144,7 @@ Merged in Sage 2.10.3.alpha0
 archive/issue_comments_015222.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch corrects some small issue and has already been merged.",
+    "body": "Attachment [trac_2294_fix_small_grammatical_issues.patch](tarball://root/attachments/some-uuid/ticket2294/trac_2294_fix_small_grammatical_issues.patch) by mabshoff created at 2008-02-24 22:34:49\n\nThe patch corrects some small issue and has already been merged.",
     "created_at": "2008-02-24T22:34:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2294",
     "type": "issue_comment",
@@ -153,6 +153,6 @@ archive/issue_comments_015222.json:
 }
 ```
 
-Attachment
+Attachment [trac_2294_fix_small_grammatical_issues.patch](tarball://root/attachments/some-uuid/ticket2294/trac_2294_fix_small_grammatical_issues.patch) by mabshoff created at 2008-02-24 22:34:49
 
 The patch corrects some small issue and has already been merged.

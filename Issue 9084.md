@@ -49,7 +49,7 @@ Bundle of file renaming.
 archive/issue_comments_084338.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of previous",
+    "body": "Attachment [9084-fix-imports.patch](tarball://root/attachments/some-uuid/ticket9084/9084-fix-imports.patch) by robertwb created at 2010-05-29 17:43:16\n\napply on top of previous",
     "created_at": "2010-05-29T17:43:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9084",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_084338.json:
 }
 ```
 
-Attachment
+Attachment [9084-fix-imports.patch](tarball://root/attachments/some-uuid/ticket9084/9084-fix-imports.patch) by robertwb created at 2010-05-29 17:43:16
 
 apply on top of previous
 

@@ -73,7 +73,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3057
 archive/issue_comments_021111.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3057.patch](tarball://root/attachments/some-uuid/ticket3057/sage-3057.patch) by boothby created at 2008-04-30 00:01:38",
     "created_at": "2008-04-30T00:01:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3057",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_021111.json:
 }
 ```
 
-Attachment
+Attachment [sage-3057.patch](tarball://root/attachments/some-uuid/ticket3057/sage-3057.patch) by boothby created at 2008-04-30 00:01:38
 
 
 

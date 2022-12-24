@@ -51,7 +51,7 @@ based on sage-3.4.2
 archive/issue_comments_047861.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6015-set-doctests.patch](tarball://root/attachments/some-uuid/ticket6015/trac_6015-set-doctests.patch) by mvngu created at 2009-05-11 01:04:15",
     "created_at": "2009-05-11T01:04:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6015",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_047861.json:
 }
 ```
 
-Attachment
+Attachment [trac_6015-set-doctests.patch](tarball://root/attachments/some-uuid/ticket6015/trac_6015-set-doctests.patch) by mvngu created at 2009-05-11 01:04:15
 
 
 

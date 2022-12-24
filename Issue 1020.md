@@ -60,7 +60,7 @@ Changing assignee from mabshoff to cwitty.
 archive/issue_comments_006257.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1020.patch](tarball://root/attachments/some-uuid/ticket1020/1020.patch) by cwitty created at 2007-10-28 17:45:55",
     "created_at": "2007-10-28T17:45:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1020",
     "type": "issue_comment",
@@ -69,7 +69,7 @@ archive/issue_comments_006257.json:
 }
 ```
 
-Attachment
+Attachment [1020.patch](tarball://root/attachments/some-uuid/ticket1020/1020.patch) by cwitty created at 2007-10-28 17:45:55
 
 
 

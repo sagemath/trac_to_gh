@@ -153,7 +153,7 @@ I'm adding `jason`, `cwitty`, and `robertwb` to the ticket, because they're all 
 archive/issue_comments_014941.json:
 ```json
 {
-    "body": "Attachment\n\nThe LU decomposition patch at #3048 may go a long ways towards helping this.  At least the determinant then is much, much better.  Or even better, just examine the U of the LU decomposition and decide if a diagonal entry is zero (which avoids the overhead of a product).\n\nThe LU decomposition patch (#3048) also changes the inverse function to use sove_right (which uses LU decomposition) as in general, that should be faster anyway.\n\nThe real way to do this is to have a rank function which works by looking at the smallest singular value.  That requires having a singular value decomposition...",
+    "body": "Attachment [trac-2256.patch](tarball://root/attachments/some-uuid/ticket2256/trac-2256.patch) by jason created at 2009-06-09 11:01:26\n\nThe LU decomposition patch at #3048 may go a long ways towards helping this.  At least the determinant then is much, much better.  Or even better, just examine the U of the LU decomposition and decide if a diagonal entry is zero (which avoids the overhead of a product).\n\nThe LU decomposition patch (#3048) also changes the inverse function to use sove_right (which uses LU decomposition) as in general, that should be faster anyway.\n\nThe real way to do this is to have a rank function which works by looking at the smallest singular value.  That requires having a singular value decomposition...",
     "created_at": "2009-06-09T11:01:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2256",
     "type": "issue_comment",
@@ -162,7 +162,7 @@ archive/issue_comments_014941.json:
 }
 ```
 
-Attachment
+Attachment [trac-2256.patch](tarball://root/attachments/some-uuid/ticket2256/trac-2256.patch) by jason created at 2009-06-09 11:01:26
 
 The LU decomposition patch at #3048 may go a long ways towards helping this.  At least the determinant then is much, much better.  Or even better, just examine the U of the LU decomposition and decide if a diagonal entry is zero (which avoids the overhead of a product).
 

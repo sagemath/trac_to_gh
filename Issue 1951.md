@@ -64,7 +64,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1951
 archive/issue_comments_012416.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1951-residues.patch](tarball://root/attachments/some-uuid/ticket1951/1951-residues.patch) by cremona created at 2008-09-10 09:32:38",
     "created_at": "2008-09-10T09:32:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1951",
     "type": "issue_comment",
@@ -73,7 +73,7 @@ archive/issue_comments_012416.json:
 }
 ```
 
-Attachment
+Attachment [1951-residues.patch](tarball://root/attachments/some-uuid/ticket1951/1951-residues.patch) by cremona created at 2008-09-10 09:32:38
 
 
 
@@ -124,7 +124,7 @@ Changing keywords from "" to "number field residue field reduction".
 archive/issue_comments_012419.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1951-residues-1.patch](tarball://root/attachments/some-uuid/ticket1951/1951-residues-1.patch) by cremona created at 2008-09-10 10:36:32",
     "created_at": "2008-09-10T10:36:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1951",
     "type": "issue_comment",
@@ -133,7 +133,7 @@ archive/issue_comments_012419.json:
 }
 ```
 
-Attachment
+Attachment [1951-residues-1.patch](tarball://root/attachments/some-uuid/ticket1951/1951-residues-1.patch) by cremona created at 2008-09-10 10:36:32
 
 
 

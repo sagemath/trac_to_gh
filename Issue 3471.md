@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3471
 archive/issue_comments_024473.json:
 ```json
 {
-    "body": "Attachment\n\nReplaces the previous two patches.",
+    "body": "Attachment [trac3471-graph_backends_flat.patch](tarball://root/attachments/some-uuid/ticket3471/trac3471-graph_backends_flat.patch) by rlm created at 2008-06-20 17:35:11\n\nReplaces the previous two patches.",
     "created_at": "2008-06-20T17:35:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3471",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_024473.json:
 }
 ```
 
-Attachment
+Attachment [trac3471-graph_backends_flat.patch](tarball://root/attachments/some-uuid/ticket3471/trac3471-graph_backends_flat.patch) by rlm created at 2008-06-20 17:35:11
 
 Replaces the previous two patches.
 

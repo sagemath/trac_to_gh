@@ -45,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6419
 archive/issue_comments_051544.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me. It's a pity that Sphinx can't handle this a bit better, but anyone who needs to know about nested classes is going to be a pretty hardcore Sage hacker who is more than capable of just reading the docs themselves. Positive review.\n\nDavid",
+    "body": "Attachment [misc_ref_6419.patch](tarball://root/attachments/some-uuid/ticket6419/misc_ref_6419.patch) by davidloeffler created at 2009-07-03 09:48:24\n\nLooks good to me. It's a pity that Sphinx can't handle this a bit better, but anyone who needs to know about nested classes is going to be a pretty hardcore Sage hacker who is more than capable of just reading the docs themselves. Positive review.\n\nDavid",
     "created_at": "2009-07-03T09:48:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6419",
     "type": "issue_comment",
@@ -54,7 +54,7 @@ archive/issue_comments_051544.json:
 }
 ```
 
-Attachment
+Attachment [misc_ref_6419.patch](tarball://root/attachments/some-uuid/ticket6419/misc_ref_6419.patch) by davidloeffler created at 2009-07-03 09:48:24
 
 Looks good to me. It's a pity that Sphinx can't handle this a bit better, but anyone who needs to know about nested classes is going to be a pretty hardcore Sage hacker who is more than capable of just reading the docs themselves. Positive review.
 

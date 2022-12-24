@@ -56,7 +56,7 @@ Patch looks good except there seems to be a 'fullstop' (aka 'period') missing at
 archive/issue_comments_057498.json:
 ```json
 {
-    "body": "Attachment\n\ndepends on #6950",
+    "body": "Attachment [trac_6953-typo-fixes.patch](tarball://root/attachments/some-uuid/ticket6953/trac_6953-typo-fixes.patch) by mvngu created at 2009-09-18 09:05:35\n\ndepends on #6950",
     "created_at": "2009-09-18T09:05:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6953",
     "type": "issue_comment",
@@ -65,7 +65,7 @@ archive/issue_comments_057498.json:
 }
 ```
 
-Attachment
+Attachment [trac_6953-typo-fixes.patch](tarball://root/attachments/some-uuid/ticket6953/trac_6953-typo-fixes.patch) by mvngu created at 2009-09-18 09:05:35
 
 depends on #6950
 

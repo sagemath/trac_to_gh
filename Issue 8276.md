@@ -103,7 +103,7 @@ Thanks for any suggestion.
 archive/issue_comments_073269.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8276-fix_sagelib-fh.2.patch](tarball://root/attachments/some-uuid/ticket8276/trac_8276-fix_sagelib-fh.2.patch) by hivert created at 2010-02-16 23:54:45",
     "created_at": "2010-02-16T23:54:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8276",
     "type": "issue_comment",
@@ -112,7 +112,7 @@ archive/issue_comments_073269.json:
 }
 ```
 
-Attachment
+Attachment [trac_8276-fix_sagelib-fh.2.patch](tarball://root/attachments/some-uuid/ticket8276/trac_8276-fix_sagelib-fh.2.patch) by hivert created at 2010-02-16 23:54:45
 
 
 
@@ -239,7 +239,7 @@ The last improvement patch breaks something...
 archive/issue_comments_073276.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8276-fix_sagelib-fh.patch](tarball://root/attachments/some-uuid/ticket8276/trac_8276-fix_sagelib-fh.patch) by hivert created at 2010-02-17 17:54:54",
     "created_at": "2010-02-17T17:54:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8276",
     "type": "issue_comment",
@@ -248,7 +248,7 @@ archive/issue_comments_073276.json:
 }
 ```
 
-Attachment
+Attachment [trac_8276-fix_sagelib-fh.patch](tarball://root/attachments/some-uuid/ticket8276/trac_8276-fix_sagelib-fh.patch) by hivert created at 2010-02-17 17:54:54
 
 
 
@@ -303,7 +303,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_073279.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8276-fix_zero_matrix_creation-fh.patch](tarball://root/attachments/some-uuid/ticket8276/trac_8276-fix_zero_matrix_creation-fh.patch) by hivert created at 2010-02-20 13:55:21",
     "created_at": "2010-02-20T13:55:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8276",
     "type": "issue_comment",
@@ -312,7 +312,7 @@ archive/issue_comments_073279.json:
 }
 ```
 
-Attachment
+Attachment [trac_8276-fix_zero_matrix_creation-fh.patch](tarball://root/attachments/some-uuid/ticket8276/trac_8276-fix_zero_matrix_creation-fh.patch) by hivert created at 2010-02-20 13:55:21
 
 
 
@@ -583,7 +583,7 @@ Florent
 archive/issue_comments_073285.json:
 ```json
 {
-    "body": "Attachment\n\nFirst reviewed patch",
+    "body": "Attachment [trac-8276-MatrixSpace_one-review.patch](tarball://root/attachments/some-uuid/ticket8276/trac-8276-MatrixSpace_one-review.patch) by mraum created at 2010-02-20 15:21:30\n\nFirst reviewed patch",
     "created_at": "2010-02-20T15:21:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8276",
     "type": "issue_comment",
@@ -592,7 +592,7 @@ archive/issue_comments_073285.json:
 }
 ```
 
-Attachment
+Attachment [trac-8276-MatrixSpace_one-review.patch](tarball://root/attachments/some-uuid/ticket8276/trac-8276-MatrixSpace_one-review.patch) by mraum created at 2010-02-20 15:21:30
 
 First reviewed patch
 
@@ -603,7 +603,7 @@ First reviewed patch
 archive/issue_comments_073286.json:
 ```json
 {
-    "body": "Attachment\n\nSeconded reviewed patch.",
+    "body": "Attachment [trac-8276-fix_sagelib-review.patch](tarball://root/attachments/some-uuid/ticket8276/trac-8276-fix_sagelib-review.patch) by mraum created at 2010-02-20 15:21:50\n\nSeconded reviewed patch.",
     "created_at": "2010-02-20T15:21:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8276",
     "type": "issue_comment",
@@ -612,7 +612,7 @@ archive/issue_comments_073286.json:
 }
 ```
 
-Attachment
+Attachment [trac-8276-fix_sagelib-review.patch](tarball://root/attachments/some-uuid/ticket8276/trac-8276-fix_sagelib-review.patch) by mraum created at 2010-02-20 15:21:50
 
 Seconded reviewed patch.
 
@@ -775,7 +775,7 @@ please see http://groups.google.com/group/sage-devel/browse_frm/thread/1042edd11
 archive/issue_comments_073292.json:
 ```json
 {
-    "body": "Attachment\n\nReplacing old review; now with zero=zero_matrix",
+    "body": "Attachment [trac-8276-fix_zero_matrix_creation-review.patch](tarball://root/attachments/some-uuid/ticket8276/trac-8276-fix_zero_matrix_creation-review.patch) by mraum created at 2010-02-22 11:16:54\n\nReplacing old review; now with zero=zero_matrix",
     "created_at": "2010-02-22T11:16:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8276",
     "type": "issue_comment",
@@ -784,7 +784,7 @@ archive/issue_comments_073292.json:
 }
 ```
 
-Attachment
+Attachment [trac-8276-fix_zero_matrix_creation-review.patch](tarball://root/attachments/some-uuid/ticket8276/trac-8276-fix_zero_matrix_creation-review.patch) by mraum created at 2010-02-22 11:16:54
 
 Replacing old review; now with zero=zero_matrix
 

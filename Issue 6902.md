@@ -76,7 +76,7 @@ Changing status from new to assigned.
 archive/issue_comments_057017.json:
 ```json
 {
-    "body": "Attachment\n\nThis is fixed in my pynac tree. Doctest for Sage is in attachment:trac_6902-log_latex.patch.\n\nI will post a new pynac spkg and review instructions soon.",
+    "body": "Attachment [trac_6902-log_latex.patch](tarball://root/attachments/some-uuid/ticket6902/trac_6902-log_latex.patch) by burcin created at 2009-09-19 15:11:41\n\nThis is fixed in my pynac tree. Doctest for Sage is in attachment:trac_6902-log_latex.patch.\n\nI will post a new pynac spkg and review instructions soon.",
     "created_at": "2009-09-19T15:11:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6902",
     "type": "issue_comment",
@@ -85,7 +85,7 @@ archive/issue_comments_057017.json:
 }
 ```
 
-Attachment
+Attachment [trac_6902-log_latex.patch](tarball://root/attachments/some-uuid/ticket6902/trac_6902-log_latex.patch) by burcin created at 2009-09-19 15:11:41
 
 This is fixed in my pynac tree. Doctest for Sage is in attachment:trac_6902-log_latex.patch.
 

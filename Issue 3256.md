@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3256
 archive/issue_comments_022527.json:
 ```json
 {
-    "body": "Attachment\n\nI added David Harvey to the CC field since he is upstream. I did also do some work to get zn_poly to build in 64 bit mode on OSX [But I think I can limit this to spkg-install], so I will likely merge this in together with that patch into 3.0.2.rc0.\n\nCheers,\n\nMichael",
+    "body": "Attachment [zn-poly-soname-pic.patch](tarball://root/attachments/some-uuid/ticket3256/zn-poly-soname-pic.patch) by mabshoff created at 2008-05-19 19:09:08\n\nI added David Harvey to the CC field since he is upstream. I did also do some work to get zn_poly to build in 64 bit mode on OSX [But I think I can limit this to spkg-install], so I will likely merge this in together with that patch into 3.0.2.rc0.\n\nCheers,\n\nMichael",
     "created_at": "2008-05-19T19:09:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3256",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_022527.json:
 }
 ```
 
-Attachment
+Attachment [zn-poly-soname-pic.patch](tarball://root/attachments/some-uuid/ticket3256/zn-poly-soname-pic.patch) by mabshoff created at 2008-05-19 19:09:08
 
 I added David Harvey to the CC field since he is upstream. I did also do some work to get zn_poly to build in 64 bit mode on OSX [But I think I can limit this to spkg-install], so I will likely merge this in together with that patch into 3.0.2.rc0.
 
@@ -99,7 +99,7 @@ Also, I've attached a patch on top of the last patch that does some trivial impr
 archive/issue_comments_022530.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch as is breaks when using either the Solaris or *BSD linker. I would suggest that for the Debian package we patch in the soname and other options only when building the Debian package.\n\nCheers,\n\nMichael",
+    "body": "Attachment [zn-poly-standards.patch](tarball://root/attachments/some-uuid/ticket3256/zn-poly-standards.patch) by mabshoff created at 2008-06-13 17:43:59\n\nThis patch as is breaks when using either the Solaris or *BSD linker. I would suggest that for the Debian package we patch in the soname and other options only when building the Debian package.\n\nCheers,\n\nMichael",
     "created_at": "2008-06-13T17:43:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3256",
     "type": "issue_comment",
@@ -108,7 +108,7 @@ archive/issue_comments_022530.json:
 }
 ```
 
-Attachment
+Attachment [zn-poly-standards.patch](tarball://root/attachments/some-uuid/ticket3256/zn-poly-standards.patch) by mabshoff created at 2008-06-13 17:43:59
 
 This patch as is breaks when using either the Solaris or *BSD linker. I would suggest that for the Debian package we patch in the soname and other options only when building the Debian package.
 

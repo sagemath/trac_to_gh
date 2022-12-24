@@ -71,7 +71,7 @@ Changing status from new to needs_review.
 archive/issue_comments_066897.json:
 ```json
 {
-    "body": "Attachment\n\nThis is a very naive solution, but hopefully it is sufficient.  Since I was the one who didn't realize that was changing standard behavior (in fact, I thought it was a feature!) on the previous ticket, I figure I should attempt to fix it.",
+    "body": "Attachment [trac_7765-dmg.patch](tarball://root/attachments/some-uuid/ticket7765/trac_7765-dmg.patch) by kcrisman created at 2009-12-28 17:20:50\n\nThis is a very naive solution, but hopefully it is sufficient.  Since I was the one who didn't realize that was changing standard behavior (in fact, I thought it was a feature!) on the previous ticket, I figure I should attempt to fix it.",
     "created_at": "2009-12-28T17:20:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7765",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_066897.json:
 }
 ```
 
-Attachment
+Attachment [trac_7765-dmg.patch](tarball://root/attachments/some-uuid/ticket7765/trac_7765-dmg.patch) by kcrisman created at 2009-12-28 17:20:50
 
 This is a very naive solution, but hopefully it is sufficient.  Since I was the one who didn't realize that was changing standard behavior (in fact, I thought it was a feature!) on the previous ticket, I figure I should attempt to fix it.
 
@@ -286,7 +286,7 @@ Could you update the patch, or should I do it (I didn't because otherwise I coul
 archive/issue_comments_066906.json:
 ```json
 {
-    "body": "Attachment\n\nSorry about that, mabshoff mentioned that making a dmg should be optional since it takes so long e.g. when testing things.  For some reason I took that to mean not the default.  I created a new patch trac_7765-dmg.2.patch so that either of you can referee it.",
+    "body": "Attachment [trac_7765-dmg.2.patch](tarball://root/attachments/some-uuid/ticket7765/trac_7765-dmg.2.patch) by iandrus created at 2010-03-07 15:54:25\n\nSorry about that, mabshoff mentioned that making a dmg should be optional since it takes so long e.g. when testing things.  For some reason I took that to mean not the default.  I created a new patch trac_7765-dmg.2.patch so that either of you can referee it.",
     "created_at": "2010-03-07T15:54:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7765",
     "type": "issue_comment",
@@ -295,7 +295,7 @@ archive/issue_comments_066906.json:
 }
 ```
 
-Attachment
+Attachment [trac_7765-dmg.2.patch](tarball://root/attachments/some-uuid/ticket7765/trac_7765-dmg.2.patch) by iandrus created at 2010-03-07 15:54:25
 
 Sorry about that, mabshoff mentioned that making a dmg should be optional since it takes so long e.g. when testing things.  For some reason I took that to mean not the default.  I created a new patch trac_7765-dmg.2.patch so that either of you can referee it.
 
@@ -395,7 +395,7 @@ However, testing once again showed that default behavior is now .dmg creation (a
 archive/issue_comments_066910.json:
 ```json
 {
-    "body": "Attachment\n\nBased on Sage 4.3.5 - apply only this to scripts repo",
+    "body": "Attachment [trac_7765-dmg-or-tgz.patch](tarball://root/attachments/some-uuid/ticket7765/trac_7765-dmg-or-tgz.patch) by kcrisman created at 2010-04-22 12:52:51\n\nBased on Sage 4.3.5 - apply only this to scripts repo",
     "created_at": "2010-04-22T12:52:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7765",
     "type": "issue_comment",
@@ -404,7 +404,7 @@ archive/issue_comments_066910.json:
 }
 ```
 
-Attachment
+Attachment [trac_7765-dmg-or-tgz.patch](tarball://root/attachments/some-uuid/ticket7765/trac_7765-dmg-or-tgz.patch) by kcrisman created at 2010-04-22 12:52:51
 
 Based on Sage 4.3.5 - apply only this to scripts repo
 

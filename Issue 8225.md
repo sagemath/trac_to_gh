@@ -47,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8225
 archive/issue_comments_072628.json:
 ```json
 {
-    "body": "Attachment\n\nFix `%time` and `%timeit`.  sagenb repo.",
+    "body": "Attachment [trac_8225-timeit_notebook.patch](tarball://root/attachments/some-uuid/ticket8225/trac_8225-timeit_notebook.patch) by mpatel created at 2010-02-14 03:22:26\n\nFix `%time` and `%timeit`.  sagenb repo.",
     "created_at": "2010-02-14T03:22:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8225",
     "type": "issue_comment",
@@ -56,7 +56,7 @@ archive/issue_comments_072628.json:
 }
 ```
 
-Attachment
+Attachment [trac_8225-timeit_notebook.patch](tarball://root/attachments/some-uuid/ticket8225/trac_8225-timeit_notebook.patch) by mpatel created at 2010-02-14 03:22:26
 
 Fix `%time` and `%timeit`.  sagenb repo.
 

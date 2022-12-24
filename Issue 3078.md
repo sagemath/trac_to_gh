@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3078
 archive/issue_comments_021234.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3078_sage_spkg-install.patch](tarball://root/attachments/some-uuid/ticket3078/3078_sage_spkg-install.patch) by gfurnish created at 2008-05-02 11:49:15",
     "created_at": "2008-05-02T11:49:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3078",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_021234.json:
 }
 ```
 
-Attachment
+Attachment [3078_sage_spkg-install.patch](tarball://root/attachments/some-uuid/ticket3078/3078_sage_spkg-install.patch) by gfurnish created at 2008-05-02 11:49:15
 
 
 

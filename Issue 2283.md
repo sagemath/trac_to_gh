@@ -45,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2283
 archive/issue_comments_015145.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [coercion-rmul.patch](tarball://root/attachments/some-uuid/ticket2283/coercion-rmul.patch) by jason created at 2008-02-27 20:56:09",
     "created_at": "2008-02-27T20:56:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2283",
     "type": "issue_comment",
@@ -54,7 +54,7 @@ archive/issue_comments_015145.json:
 }
 ```
 
-Attachment
+Attachment [coercion-rmul.patch](tarball://root/attachments/some-uuid/ticket2283/coercion-rmul.patch) by jason created at 2008-02-27 20:56:09
 
 
 
@@ -109,7 +109,7 @@ disclaimer: I don't know much at all about the coercion system; the above statem
 archive/issue_comments_015148.json:
 ```json
 {
-    "body": "Attachment\n\ncredit goes to gfurnish for noticing and helping track down the segfault that the original patch introduced!\n\nApply coercion-rmul2.patch instead of coercion-rmul.patch",
+    "body": "Attachment [coercion-rmul2.patch](tarball://root/attachments/some-uuid/ticket2283/coercion-rmul2.patch) by jason created at 2008-02-28 04:47:54\n\ncredit goes to gfurnish for noticing and helping track down the segfault that the original patch introduced!\n\nApply coercion-rmul2.patch instead of coercion-rmul.patch",
     "created_at": "2008-02-28T04:47:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2283",
     "type": "issue_comment",
@@ -118,7 +118,7 @@ archive/issue_comments_015148.json:
 }
 ```
 
-Attachment
+Attachment [coercion-rmul2.patch](tarball://root/attachments/some-uuid/ticket2283/coercion-rmul2.patch) by jason created at 2008-02-28 04:47:54
 
 credit goes to gfurnish for noticing and helping track down the segfault that the original patch introduced!
 

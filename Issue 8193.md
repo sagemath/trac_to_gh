@@ -70,7 +70,7 @@ The patch does the enumeration in a more efficient way.
 archive/issue_comments_072258.json:
 ```json
 {
-    "body": "Attachment\n\napplies to 4.3.2",
+    "body": "Attachment [trac_8193-enumerate.patch](tarball://root/attachments/some-uuid/ticket8193/trac_8193-enumerate.patch) by cremona created at 2010-02-07 15:38:44\n\napplies to 4.3.2",
     "created_at": "2010-02-07T15:38:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8193",
     "type": "issue_comment",
@@ -79,7 +79,7 @@ archive/issue_comments_072258.json:
 }
 ```
 
-Attachment
+Attachment [trac_8193-enumerate.patch](tarball://root/attachments/some-uuid/ticket8193/trac_8193-enumerate.patch) by cremona created at 2010-02-07 15:38:44
 
 applies to 4.3.2
 

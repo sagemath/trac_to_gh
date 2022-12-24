@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4084
 archive/issue_comments_029466.json:
 ```json
 {
-    "body": "Attachment\n\nHi,\n\nthis is fixed in 3.1.2.rc1-ish:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2.rc1$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.1.2.rc0, Release Date: 2008-09-06                   |\n| Type notebook() for the GUI, and license() for information.        |\nsage: plot(1/cos,-1,1)\n\nsage: \nExiting SAGE (CPU time 0m0.63s, Wall time 0m4.01s).\nExiting spawned Maxima process.\n```\n\nPlease post a patch that adds only the doctest. There are unrelated changes in the patch.\n\nCheers,\n\nMichael",
+    "body": "Attachment [4804.patch](tarball://root/attachments/some-uuid/ticket4084/4804.patch) by mabshoff created at 2008-09-09 03:50:13\n\nHi,\n\nthis is fixed in 3.1.2.rc1-ish:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2.rc1$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.1.2.rc0, Release Date: 2008-09-06                   |\n| Type notebook() for the GUI, and license() for information.        |\nsage: plot(1/cos,-1,1)\n\nsage: \nExiting SAGE (CPU time 0m0.63s, Wall time 0m4.01s).\nExiting spawned Maxima process.\n```\n\nPlease post a patch that adds only the doctest. There are unrelated changes in the patch.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-09T03:50:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4084",
     "type": "issue_comment",
@@ -51,7 +51,7 @@ archive/issue_comments_029466.json:
 }
 ```
 
-Attachment
+Attachment [4804.patch](tarball://root/attachments/some-uuid/ticket4084/4804.patch) by mabshoff created at 2008-09-09 03:50:13
 
 Hi,
 
@@ -83,7 +83,7 @@ Michael
 archive/issue_comments_029467.json:
 ```json
 {
-    "body": "Attachment\n\n4804_doctest_only.patch adds only doctests.  If accepted, only that patch should be applied.  This should not be accepted until the new doctests actually pass.\n\nThanks for the quick catch mhansen.  \"Unrelated\" might be a little strong, though I was bold in modifying implementation to make this work.  In any case, sounds like problem solved.\n\nCheers,\n\nJM",
+    "body": "Attachment [4804_doctest_only.patch](tarball://root/attachments/some-uuid/ticket4084/4804_doctest_only.patch) by jwmerrill created at 2008-09-09 04:05:46\n\n4804_doctest_only.patch adds only doctests.  If accepted, only that patch should be applied.  This should not be accepted until the new doctests actually pass.\n\nThanks for the quick catch mhansen.  \"Unrelated\" might be a little strong, though I was bold in modifying implementation to make this work.  In any case, sounds like problem solved.\n\nCheers,\n\nJM",
     "created_at": "2008-09-09T04:05:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4084",
     "type": "issue_comment",
@@ -92,7 +92,7 @@ archive/issue_comments_029467.json:
 }
 ```
 
-Attachment
+Attachment [4804_doctest_only.patch](tarball://root/attachments/some-uuid/ticket4084/4804_doctest_only.patch) by jwmerrill created at 2008-09-09 04:05:46
 
 4804_doctest_only.patch adds only doctests.  If accepted, only that patch should be applied.  This should not be accepted until the new doctests actually pass.
 

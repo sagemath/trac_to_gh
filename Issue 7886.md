@@ -51,7 +51,7 @@ Implementation of a python class for conjugacy classes, wrapping some GAP functi
 archive/issue_comments_068536.json:
 ```json
 {
-    "body": "Attachment\n\nConjugacy classes code",
+    "body": "Attachment [trac_7886_conjugacy_classes.patch](tarball://root/attachments/some-uuid/ticket7886/trac_7886_conjugacy_classes.patch) by jlopez created at 2011-12-06 18:01:03\n\nConjugacy classes code",
     "created_at": "2011-12-06T18:01:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7886",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_068536.json:
 }
 ```
 
-Attachment
+Attachment [trac_7886_conjugacy_classes.patch](tarball://root/attachments/some-uuid/ticket7886/trac_7886_conjugacy_classes.patch) by jlopez created at 2011-12-06 18:01:03
 
 Conjugacy classes code
 
@@ -181,7 +181,7 @@ conjugacy_classes.py module with passing Testsuite
 archive/issue_comments_068543.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated the conjugacy_classes.py module with the fixed _cmp_ method so that the testsuite passes. All test pass on my machine, so ready for review.",
+    "body": "Attachment [trac_7886_conjugacy_classes_module.patch](tarball://root/attachments/some-uuid/ticket7886/trac_7886_conjugacy_classes_module.patch) by jlopez created at 2011-12-07 16:46:30\n\nUpdated the conjugacy_classes.py module with the fixed _cmp_ method so that the testsuite passes. All test pass on my machine, so ready for review.",
     "created_at": "2011-12-07T16:46:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7886",
     "type": "issue_comment",
@@ -190,7 +190,7 @@ archive/issue_comments_068543.json:
 }
 ```
 
-Attachment
+Attachment [trac_7886_conjugacy_classes_module.patch](tarball://root/attachments/some-uuid/ticket7886/trac_7886_conjugacy_classes_module.patch) by jlopez created at 2011-12-07 16:46:30
 
 Updated the conjugacy_classes.py module with the fixed _cmp_ method so that the testsuite passes. All test pass on my machine, so ready for review.
 
@@ -313,7 +313,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_068550.json:
 ```json
 {
-    "body": "Attachment\n\nSorry, I thought we were using utf-8 by default. Fixed the encoding in permgroup.py and conjugacy_classes.py\nAlso implemented a more efficient fallback method using TransitiveIdeal.\nNeeds review.",
+    "body": "Attachment [trac_7886_conjugacy_classes_encoding_fix.patch](tarball://root/attachments/some-uuid/ticket7886/trac_7886_conjugacy_classes_encoding_fix.patch) by jlopez created at 2011-12-12 11:51:23\n\nSorry, I thought we were using utf-8 by default. Fixed the encoding in permgroup.py and conjugacy_classes.py\nAlso implemented a more efficient fallback method using TransitiveIdeal.\nNeeds review.",
     "created_at": "2011-12-12T11:51:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7886",
     "type": "issue_comment",
@@ -322,7 +322,7 @@ archive/issue_comments_068550.json:
 }
 ```
 
-Attachment
+Attachment [trac_7886_conjugacy_classes_encoding_fix.patch](tarball://root/attachments/some-uuid/ticket7886/trac_7886_conjugacy_classes_encoding_fix.patch) by jlopez created at 2011-12-12 11:51:23
 
 Sorry, I thought we were using utf-8 by default. Fixed the encoding in permgroup.py and conjugacy_classes.py
 Also implemented a more efficient fallback method using TransitiveIdeal.
@@ -797,7 +797,7 @@ Docstring and whitespaces fixes, rebased for sage 5.7. Apply this patch only.
 archive/issue_comments_068569.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7886_conjugacy_classes_combined.patch](tarball://root/attachments/some-uuid/ticket7886/trac_7886_conjugacy_classes_combined.patch) by tscrim created at 2013-02-22 17:19:01",
     "created_at": "2013-02-22T17:19:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7886",
     "type": "issue_comment",
@@ -806,7 +806,7 @@ archive/issue_comments_068569.json:
 }
 ```
 
-Attachment
+Attachment [trac_7886_conjugacy_classes_combined.patch](tarball://root/attachments/some-uuid/ticket7886/trac_7886_conjugacy_classes_combined.patch) by tscrim created at 2013-02-22 17:19:01
 
 
 
@@ -815,7 +815,7 @@ Attachment
 archive/issue_comments_068570.json:
 ```json
 {
-    "body": "Attachment\n\nHey Javier,\n\nI've attaching a review patch which fixes up the remaining documentation and adds the files to the docbuild (I had to do some extra tweaks in the `categories/finite_groups.py` since it wasn't in the docbuild prior to this patch). If everything works and looks good to you, you go ahead and set this to positive review.\n\nThanks,\n\nTravis\n\nFor patchbot:\n\nApply: trac_7886_conjugacy_classes_combined.patch, trac_7886-conjugacy_classes-review-ts.patch",
+    "body": "Attachment [trac_7886-conjugacy_classes-review-ts.patch](tarball://root/attachments/some-uuid/ticket7886/trac_7886-conjugacy_classes-review-ts.patch) by tscrim created at 2013-02-22 17:24:46\n\nHey Javier,\n\nI've attaching a review patch which fixes up the remaining documentation and adds the files to the docbuild (I had to do some extra tweaks in the `categories/finite_groups.py` since it wasn't in the docbuild prior to this patch). If everything works and looks good to you, you go ahead and set this to positive review.\n\nThanks,\n\nTravis\n\nFor patchbot:\n\nApply: trac_7886_conjugacy_classes_combined.patch, trac_7886-conjugacy_classes-review-ts.patch",
     "created_at": "2013-02-22T17:24:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7886",
     "type": "issue_comment",
@@ -824,7 +824,7 @@ archive/issue_comments_068570.json:
 }
 ```
 
-Attachment
+Attachment [trac_7886-conjugacy_classes-review-ts.patch](tarball://root/attachments/some-uuid/ticket7886/trac_7886-conjugacy_classes-review-ts.patch) by tscrim created at 2013-02-22 17:24:46
 
 Hey Javier,
 

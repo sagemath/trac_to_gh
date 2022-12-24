@@ -52,7 +52,7 @@ Changing assignee from tbd to nthiery.
 archive/issue_comments_072614.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch should fix the issue. That being said, I would love to see a more robust implementation of ``sage.structure.parent.dir_with_other_class``.",
+    "body": "Attachment [trac_8223-fix_dir-nt.patch](tarball://root/attachments/some-uuid/ticket8223/trac_8223-fix_dir-nt.patch) by nthiery created at 2010-02-09 20:56:40\n\nThe attached patch should fix the issue. That being said, I would love to see a more robust implementation of ``sage.structure.parent.dir_with_other_class``.",
     "created_at": "2010-02-09T20:56:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8223",
     "type": "issue_comment",
@@ -61,7 +61,7 @@ archive/issue_comments_072614.json:
 }
 ```
 
-Attachment
+Attachment [trac_8223-fix_dir-nt.patch](tarball://root/attachments/some-uuid/ticket8223/trac_8223-fix_dir-nt.patch) by nthiery created at 2010-02-09 20:56:40
 
 The attached patch should fix the issue. That being said, I would love to see a more robust implementation of ``sage.structure.parent.dir_with_other_class``.
 

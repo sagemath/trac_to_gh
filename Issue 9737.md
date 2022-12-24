@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9737
 archive/issue_comments_095200.json:
 ```json
 {
-    "body": "Attachment\n\nI really have to say: is this example worth it? \n\nIMHO, the graph editor now shipped with Sage makes this example out of order. Use graph_editor on the chosen graph, and double click on a vertex to delete it, and you're showing the same idea, with a more strightforward interface. \n\nThere are loads of awesome things to do with graphs in Sage. With the new patch #8631, we can do much better than this.",
+    "body": "Attachment [show_subgraph.patch](tarball://root/attachments/some-uuid/ticket9737/show_subgraph.patch) by pang created at 2010-11-10 11:35:16\n\nI really have to say: is this example worth it? \n\nIMHO, the graph editor now shipped with Sage makes this example out of order. Use graph_editor on the chosen graph, and double click on a vertex to delete it, and you're showing the same idea, with a more strightforward interface. \n\nThere are loads of awesome things to do with graphs in Sage. With the new patch #8631, we can do much better than this.",
     "created_at": "2010-11-10T11:35:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9737",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_095200.json:
 }
 ```
 
-Attachment
+Attachment [show_subgraph.patch](tarball://root/attachments/some-uuid/ticket9737/show_subgraph.patch) by pang created at 2010-11-10 11:35:16
 
 I really have to say: is this example worth it? 
 

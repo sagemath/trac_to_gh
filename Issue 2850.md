@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2850
 archive/issue_comments_019557.json:
 ```json
 {
-    "body": "Attachment\n\nFINAL SCORE permgroup.py: 98% (71 of 72)",
+    "body": "Attachment [groups.perm_gps.permgroup.patch](tarball://root/attachments/some-uuid/ticket2850/groups.perm_gps.permgroup.patch) by cswiercz created at 2008-04-13 01:29:06\n\nFINAL SCORE permgroup.py: 98% (71 of 72)",
     "created_at": "2008-04-13T01:29:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2850",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_019557.json:
 }
 ```
 
-Attachment
+Attachment [groups.perm_gps.permgroup.patch](tarball://root/attachments/some-uuid/ticket2850/groups.perm_gps.permgroup.patch) by cswiercz created at 2008-04-13 01:29:06
 
 FINAL SCORE permgroup.py: 98% (71 of 72)
 
@@ -71,7 +71,7 @@ Changing status from new to assigned.
 archive/issue_comments_019559.json:
 ```json
 {
-    "body": "Attachment\n\n2850.patch fixes an indentation error in calculus.py and should be the only patch applied.\n\nOther than that, it looks good to me.",
+    "body": "Attachment [2850.patch](tarball://root/attachments/some-uuid/ticket2850/2850.patch) by mhansen created at 2008-04-14 23:12:24\n\n2850.patch fixes an indentation error in calculus.py and should be the only patch applied.\n\nOther than that, it looks good to me.",
     "created_at": "2008-04-14T23:12:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2850",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_019559.json:
 }
 ```
 
-Attachment
+Attachment [2850.patch](tarball://root/attachments/some-uuid/ticket2850/2850.patch) by mhansen created at 2008-04-14 23:12:24
 
 2850.patch fixes an indentation error in calculus.py and should be the only patch applied.
 

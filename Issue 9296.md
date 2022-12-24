@@ -160,7 +160,7 @@ The new patch fixes the `ray_basis()` and moves various methods that don't depen
 archive/issue_comments_087542.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated patch",
+    "body": "Attachment [trac_9296_lattice_computations_for_cones.patch](tarball://root/attachments/some-uuid/ticket9296/trac_9296_lattice_computations_for_cones.patch) by vbraun created at 2010-06-22 11:42:11\n\nUpdated patch",
     "created_at": "2010-06-22T11:42:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9296",
     "type": "issue_comment",
@@ -169,7 +169,7 @@ archive/issue_comments_087542.json:
 }
 ```
 
-Attachment
+Attachment [trac_9296_lattice_computations_for_cones.patch](tarball://root/attachments/some-uuid/ticket9296/trac_9296_lattice_computations_for_cones.patch) by vbraun created at 2010-06-22 11:42:11
 
 Updated patch
 
@@ -244,7 +244,7 @@ archive/issue_comments_087544.json:
 archive/issue_comments_087545.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated patch",
+    "body": "Attachment [trac_9296_lattice_computations_for_cones.2.patch](tarball://root/attachments/some-uuid/ticket9296/trac_9296_lattice_computations_for_cones.2.patch) by vbraun created at 2010-06-23 14:10:56\n\nUpdated patch",
     "created_at": "2010-06-23T14:10:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9296",
     "type": "issue_comment",
@@ -253,7 +253,7 @@ archive/issue_comments_087545.json:
 }
 ```
 
-Attachment
+Attachment [trac_9296_lattice_computations_for_cones.2.patch](tarball://root/attachments/some-uuid/ticket9296/trac_9296_lattice_computations_for_cones.2.patch) by vbraun created at 2010-06-23 14:10:56
 
 Updated patch
 
@@ -264,7 +264,7 @@ Updated patch
 archive/issue_comments_087546.json:
 ```json
 {
-    "body": "Attachment\n\nDocumentation linking fixes",
+    "body": "Attachment [trac_9296_lattice_computations_for_cones.3.patch](tarball://root/attachments/some-uuid/ticket9296/trac_9296_lattice_computations_for_cones.3.patch) by vbraun created at 2010-06-23 14:15:46\n\nDocumentation linking fixes",
     "created_at": "2010-06-23T14:15:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9296",
     "type": "issue_comment",
@@ -273,7 +273,7 @@ archive/issue_comments_087546.json:
 }
 ```
 
-Attachment
+Attachment [trac_9296_lattice_computations_for_cones.3.patch](tarball://root/attachments/some-uuid/ticket9296/trac_9296_lattice_computations_for_cones.3.patch) by vbraun created at 2010-06-23 14:15:46
 
 Documentation linking fixes
 
@@ -356,7 +356,7 @@ archive/issue_comments_087549.json:
 archive/issue_comments_087550.json:
 ```json
 {
-    "body": "Attachment\n\nmisc fixes",
+    "body": "Attachment [trac_9296_lattice_computations_for_cones.4.patch](tarball://root/attachments/some-uuid/ticket9296/trac_9296_lattice_computations_for_cones.4.patch) by vbraun created at 2010-06-24 10:23:55\n\nmisc fixes",
     "created_at": "2010-06-24T10:23:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9296",
     "type": "issue_comment",
@@ -365,7 +365,7 @@ archive/issue_comments_087550.json:
 }
 ```
 
-Attachment
+Attachment [trac_9296_lattice_computations_for_cones.4.patch](tarball://root/attachments/some-uuid/ticket9296/trac_9296_lattice_computations_for_cones.4.patch) by vbraun created at 2010-06-24 10:23:55
 
 misc fixes
 
@@ -463,7 +463,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_087555.json:
 ```json
 {
-    "body": "Attachment\n\nIn the patch above I renamed the methods\n* `N_basis` -> `sublattice_basis`\n* `N_projection` -> `sublattice_projection`\n* `N_complement_basis` -> `sublattice_complement_basis`\n* `N_quotient_basis` -> `sublattice_quotient_basis`\n* `M_basis` -> `perpendicular_sublattice_basis`\n* `M_quotient_basis` -> `perpendicular_quotient_basis`\nand rewrote the documentation.\n\nI dediced on `sublattice` instead of `spanned_lattice` because its shorter and differentiates better the already-existing method `lattice()` (which returns the ambient lattice). Let me know what you think...\n\nI'm not sure if the lattice computations are a used often enough \"by hand\" to warrant the additional `toric_M_N_lattices` interface. Since we can add that always later its not a big priority for me right now.",
+    "body": "Attachment [trac_9296_lattice_computations_for_cones.5.patch](tarball://root/attachments/some-uuid/ticket9296/trac_9296_lattice_computations_for_cones.5.patch) by vbraun created at 2010-06-30 12:58:24\n\nIn the patch above I renamed the methods\n* `N_basis` -> `sublattice_basis`\n* `N_projection` -> `sublattice_projection`\n* `N_complement_basis` -> `sublattice_complement_basis`\n* `N_quotient_basis` -> `sublattice_quotient_basis`\n* `M_basis` -> `perpendicular_sublattice_basis`\n* `M_quotient_basis` -> `perpendicular_quotient_basis`\nand rewrote the documentation.\n\nI dediced on `sublattice` instead of `spanned_lattice` because its shorter and differentiates better the already-existing method `lattice()` (which returns the ambient lattice). Let me know what you think...\n\nI'm not sure if the lattice computations are a used often enough \"by hand\" to warrant the additional `toric_M_N_lattices` interface. Since we can add that always later its not a big priority for me right now.",
     "created_at": "2010-06-30T12:58:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9296",
     "type": "issue_comment",
@@ -472,7 +472,7 @@ archive/issue_comments_087555.json:
 }
 ```
 
-Attachment
+Attachment [trac_9296_lattice_computations_for_cones.5.patch](tarball://root/attachments/some-uuid/ticket9296/trac_9296_lattice_computations_for_cones.5.patch) by vbraun created at 2010-06-30 12:58:24
 
 In the patch above I renamed the methods
 * `N_basis` -> `sublattice_basis`
@@ -562,7 +562,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_087559.json:
 ```json
 {
-    "body": "Attachment\n\nAfter more careful reading of the code and the documentation, I am having second thoughts about the importance of 5) in the first comments - returning `ToricLattice` objects as `sublattice` etc.\n\nBasically, we have two dual lattices and want to decompose each of them into two. After that it seems that there is need to access \"embedded\" basis of each sublattice, matrix of this basis, and work with projections that will be given as elements in a lower dimensional lattice. If each of the four sublattices is an instance of some `ToricSublattice` (analog of `(ZZ^3).submodule(...)`), then there should be only four methods in cones to access them and every single one will have exactly the same methods for basis, basis matrix, and projection. This will be more clear and consistent and will help to avoid code duplication and extremely long names. \n\nRight now I find it confusing for a programmer (at least for me) that `sublattice_basis` and `_sublattice_basis` are, in principle, the same things, but represented quite differently. I also find it confusing for a user that `sublattice_basis` works with sublattice in the embedded representation and `sublattice_projection` in quotient. I also don't quite like the lattice argument to projection functions - it seems to me that all lattices in question should be fixed once they are constructed the first time, since they are closely related to each other and are completely determined by the cone itself and the chosen way of splitting. (It does make sense, however, to have these lattices \"incompatible\" for different cones, but given the way how they work now it is not that easy to create them.)\n\nSorry for dragging so long a relatively simple ticket, but I seems to me that there are two ways to total happiness:\n\n* Implement `ToricSublattice` class and use it.\n\n* Make these methods private untill there is `ToricSublattice` class.\n\nLet me know what you think...",
+    "body": "Attachment [trac_9296_lattice_computations_for_cones.6.patch](tarball://root/attachments/some-uuid/ticket9296/trac_9296_lattice_computations_for_cones.6.patch) by novoselt created at 2010-07-09 22:20:16\n\nAfter more careful reading of the code and the documentation, I am having second thoughts about the importance of 5) in the first comments - returning `ToricLattice` objects as `sublattice` etc.\n\nBasically, we have two dual lattices and want to decompose each of them into two. After that it seems that there is need to access \"embedded\" basis of each sublattice, matrix of this basis, and work with projections that will be given as elements in a lower dimensional lattice. If each of the four sublattices is an instance of some `ToricSublattice` (analog of `(ZZ^3).submodule(...)`), then there should be only four methods in cones to access them and every single one will have exactly the same methods for basis, basis matrix, and projection. This will be more clear and consistent and will help to avoid code duplication and extremely long names. \n\nRight now I find it confusing for a programmer (at least for me) that `sublattice_basis` and `_sublattice_basis` are, in principle, the same things, but represented quite differently. I also find it confusing for a user that `sublattice_basis` works with sublattice in the embedded representation and `sublattice_projection` in quotient. I also don't quite like the lattice argument to projection functions - it seems to me that all lattices in question should be fixed once they are constructed the first time, since they are closely related to each other and are completely determined by the cone itself and the chosen way of splitting. (It does make sense, however, to have these lattices \"incompatible\" for different cones, but given the way how they work now it is not that easy to create them.)\n\nSorry for dragging so long a relatively simple ticket, but I seems to me that there are two ways to total happiness:\n\n* Implement `ToricSublattice` class and use it.\n\n* Make these methods private untill there is `ToricSublattice` class.\n\nLet me know what you think...",
     "created_at": "2010-07-09T22:20:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9296",
     "type": "issue_comment",
@@ -571,7 +571,7 @@ archive/issue_comments_087559.json:
 }
 ```
 
-Attachment
+Attachment [trac_9296_lattice_computations_for_cones.6.patch](tarball://root/attachments/some-uuid/ticket9296/trac_9296_lattice_computations_for_cones.6.patch) by novoselt created at 2010-07-09 22:20:16
 
 After more careful reading of the code and the documentation, I am having second thoughts about the importance of 5) in the first comments - returning `ToricLattice` objects as `sublattice` etc.
 
@@ -813,7 +813,7 @@ Now we always return toric sublattices / quotient lattices. The current interfac
 archive/issue_comments_087568.json:
 ```json
 {
-    "body": "Attachment\n\nswitch to toric sub/quotient lattices instead of handing around bases",
+    "body": "Attachment [trac_9296_lattice_computations_for_cones.7.patch](tarball://root/attachments/some-uuid/ticket9296/trac_9296_lattice_computations_for_cones.7.patch) by vbraun created at 2010-08-09 20:57:35\n\nswitch to toric sub/quotient lattices instead of handing around bases",
     "created_at": "2010-08-09T20:57:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9296",
     "type": "issue_comment",
@@ -822,7 +822,7 @@ archive/issue_comments_087568.json:
 }
 ```
 
-Attachment
+Attachment [trac_9296_lattice_computations_for_cones.7.patch](tarball://root/attachments/some-uuid/ticket9296/trac_9296_lattice_computations_for_cones.7.patch) by vbraun created at 2010-08-09 20:57:35
 
 switch to toric sub/quotient lattices instead of handing around bases
 
@@ -851,7 +851,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_087570.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated patch for changes in ToricLattice_quotient",
+    "body": "Attachment [trac_9296_lattice_computations_for_cones.8.patch](tarball://root/attachments/some-uuid/ticket9296/trac_9296_lattice_computations_for_cones.8.patch) by vbraun created at 2010-08-11 01:44:43\n\nUpdated patch for changes in ToricLattice_quotient",
     "created_at": "2010-08-11T01:44:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9296",
     "type": "issue_comment",
@@ -860,7 +860,7 @@ archive/issue_comments_087570.json:
 }
 ```
 
-Attachment
+Attachment [trac_9296_lattice_computations_for_cones.8.patch](tarball://root/attachments/some-uuid/ticket9296/trac_9296_lattice_computations_for_cones.8.patch) by vbraun created at 2010-08-11 01:44:43
 
 Updated patch for changes in ToricLattice_quotient
 
@@ -931,7 +931,7 @@ On the other hand, there is a clean way to get consistency and avoid extra paren
 archive/issue_comments_087573.json:
 ```json
 {
-    "body": "Attachment\n\nIn addition to other changes, in the new version all arguments to cone related lattices are passed to these lattices, so it is possible to write\n\n```\nsage: sage: c = Cone([(1,0)])\nsage: sage: c.sublattice_quotient(0,1)\nN[0, 1]\n```\n\netc. and it will mean exactly the same as \n\n```\nsage: sage: c = Cone([(1,0)])\nsage: sage: c.sublattice_quotient()(0,1)\nN[0, 1]\n```\n\nThis is done for all sub-/quotient lattice functions except for \"relative\" ones since for those, I think, it is more natural not to mix cone and point arguments. The documentation does not describe what exactly can be passed to these functions, it is just \"something that defines an element\", so those who do need description will have to get a lattice and then check how its elements are constructed.",
+    "body": "Attachment [trac_9296_reviewer.patch](tarball://root/attachments/some-uuid/ticket9296/trac_9296_reviewer.patch) by novoselt created at 2010-08-13 04:42:08\n\nIn addition to other changes, in the new version all arguments to cone related lattices are passed to these lattices, so it is possible to write\n\n```\nsage: sage: c = Cone([(1,0)])\nsage: sage: c.sublattice_quotient(0,1)\nN[0, 1]\n```\n\netc. and it will mean exactly the same as \n\n```\nsage: sage: c = Cone([(1,0)])\nsage: sage: c.sublattice_quotient()(0,1)\nN[0, 1]\n```\n\nThis is done for all sub-/quotient lattice functions except for \"relative\" ones since for those, I think, it is more natural not to mix cone and point arguments. The documentation does not describe what exactly can be passed to these functions, it is just \"something that defines an element\", so those who do need description will have to get a lattice and then check how its elements are constructed.",
     "created_at": "2010-08-13T04:42:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9296",
     "type": "issue_comment",
@@ -940,7 +940,7 @@ archive/issue_comments_087573.json:
 }
 ```
 
-Attachment
+Attachment [trac_9296_reviewer.patch](tarball://root/attachments/some-uuid/ticket9296/trac_9296_reviewer.patch) by novoselt created at 2010-08-13 04:42:08
 
 In addition to other changes, in the new version all arguments to cone related lattices are passed to these lattices, so it is possible to write
 

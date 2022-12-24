@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7991
 archive/issue_comments_069796.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-7991-generic-kernel-testing.patch](tarball://root/attachments/some-uuid/ticket7991/trac-7991-generic-kernel-testing.patch) by jason created at 2010-01-19 03:42:33",
     "created_at": "2010-01-19T03:42:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7991",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_069796.json:
 }
 ```
 
-Attachment
+Attachment [trac-7991-generic-kernel-testing.patch](tarball://root/attachments/some-uuid/ticket7991/trac-7991-generic-kernel-testing.patch) by jason created at 2010-01-19 03:42:33
 
 
 

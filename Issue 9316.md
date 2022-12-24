@@ -266,7 +266,7 @@ I submitted a new patch that uses exit code 6 instead of 5, since it turns out 5
 archive/issue_comments_087791.json:
 ```json
 {
-    "body": "Attachment\n\nrebased after #8641 and #9243",
+    "body": "Attachment [scripts9316_timeout_rebased.patch](tarball://root/attachments/some-uuid/ticket9316/scripts9316_timeout_rebased.patch) by wjp created at 2010-07-06 20:59:47\n\nrebased after #8641 and #9243",
     "created_at": "2010-07-06T20:59:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9316",
     "type": "issue_comment",
@@ -275,7 +275,7 @@ archive/issue_comments_087791.json:
 }
 ```
 
-Attachment
+Attachment [scripts9316_timeout_rebased.patch](tarball://root/attachments/some-uuid/ticket9316/scripts9316_timeout_rebased.patch) by wjp created at 2010-07-06 20:59:47
 
 rebased after #8641 and #9243
 
@@ -286,7 +286,7 @@ rebased after #8641 and #9243
 archive/issue_comments_087792.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [scripts9316_timeout.patch](tarball://root/attachments/some-uuid/ticket9316/scripts9316_timeout.patch) by wjp created at 2010-07-06 21:03:09",
     "created_at": "2010-07-06T21:03:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9316",
     "type": "issue_comment",
@@ -295,7 +295,7 @@ archive/issue_comments_087792.json:
 }
 ```
 
-Attachment
+Attachment [scripts9316_timeout.patch](tarball://root/attachments/some-uuid/ticket9316/scripts9316_timeout.patch) by wjp created at 2010-07-06 21:03:09
 
 
 

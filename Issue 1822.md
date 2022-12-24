@@ -51,7 +51,7 @@ Changing status from new to assigned.
 archive/issue_comments_011527.json:
 ```json
 {
-    "body": "Attachment\n\nSince the spelling issues has been fixed and mhansen explained the second half of the patch to me in IRC: positive review.\n\nCheers,\n\nMichael",
+    "body": "Attachment [1822.patch](tarball://root/attachments/some-uuid/ticket1822/1822.patch) by mabshoff created at 2008-04-06 21:11:18\n\nSince the spelling issues has been fixed and mhansen explained the second half of the patch to me in IRC: positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-06T21:11:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1822",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_011527.json:
 }
 ```
 
-Attachment
+Attachment [1822.patch](tarball://root/attachments/some-uuid/ticket1822/1822.patch) by mabshoff created at 2008-04-06 21:11:18
 
 Since the spelling issues has been fixed and mhansen explained the second half of the patch to me in IRC: positive review.
 
@@ -111,7 +111,7 @@ Resolution: fixed
 archive/issue_comments_011530.json:
 ```json
 {
-    "body": "Attachment\n\n1822_problems.patch fixes the issue with the set partitions.",
+    "body": "Attachment [1822_problems.patch](tarball://root/attachments/some-uuid/ticket1822/1822_problems.patch) by mhansen created at 2008-04-06 21:41:29\n\n1822_problems.patch fixes the issue with the set partitions.",
     "created_at": "2008-04-06T21:41:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1822",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_011530.json:
 }
 ```
 
-Attachment
+Attachment [1822_problems.patch](tarball://root/attachments/some-uuid/ticket1822/1822_problems.patch) by mhansen created at 2008-04-06 21:41:29
 
 1822_problems.patch fixes the issue with the set partitions.
 

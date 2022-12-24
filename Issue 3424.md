@@ -53,7 +53,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3424
 archive/issue_comments_024093.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [jordan_rounding.patch](tarball://root/attachments/some-uuid/ticket3424/jordan_rounding.patch) by johnwilmes created at 2008-06-14 20:17:58",
     "created_at": "2008-06-14T20:17:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3424",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_024093.json:
 }
 ```
 
-Attachment
+Attachment [jordan_rounding.patch](tarball://root/attachments/some-uuid/ticket3424/jordan_rounding.patch) by johnwilmes created at 2008-06-14 20:17:58
 
 
 

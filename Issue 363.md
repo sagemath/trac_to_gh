@@ -78,7 +78,7 @@ the fix
 archive/issue_comments_001763.json:
 ```json
 {
-    "body": "Attachment\n\nFixed.",
+    "body": "Attachment [4434.patch](tarball://root/attachments/some-uuid/ticket363/4434.patch) by was created at 2007-05-18 15:53:41\n\nFixed.",
     "created_at": "2007-05-18T15:53:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/363",
     "type": "issue_comment",
@@ -87,7 +87,7 @@ archive/issue_comments_001763.json:
 }
 ```
 
-Attachment
+Attachment [4434.patch](tarball://root/attachments/some-uuid/ticket363/4434.patch) by was created at 2007-05-18 15:53:41
 
 Fixed.
 

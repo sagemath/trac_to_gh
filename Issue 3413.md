@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3413
 archive/issue_comments_023936.json:
 ```json
 {
-    "body": "Attachment\n\nWe need a review for this patch.\n\nCheers,\n\nMichael",
+    "body": "Attachment [sage-3413.patch](tarball://root/attachments/some-uuid/ticket3413/sage-3413.patch) by mabshoff created at 2008-06-15 19:03:58\n\nWe need a review for this patch.\n\nCheers,\n\nMichael",
     "created_at": "2008-06-15T19:03:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3413",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_023936.json:
 }
 ```
 
-Attachment
+Attachment [sage-3413.patch](tarball://root/attachments/some-uuid/ticket3413/sage-3413.patch) by mabshoff created at 2008-06-15 19:03:58
 
 We need a review for this patch.
 
@@ -91,7 +91,7 @@ adds ",2"; and works.
 archive/issue_comments_023939.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good. It's ready to go.",
+    "body": "Attachment [9840.patch](tarball://root/attachments/some-uuid/ticket3413/9840.patch) by craigcitro created at 2008-06-15 22:41:21\n\nLooks good. It's ready to go.",
     "created_at": "2008-06-15T22:41:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3413",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_023939.json:
 }
 ```
 
-Attachment
+Attachment [9840.patch](tarball://root/attachments/some-uuid/ticket3413/9840.patch) by craigcitro created at 2008-06-15 22:41:21
 
 Looks good. It's ready to go.
 

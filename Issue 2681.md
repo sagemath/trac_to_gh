@@ -36,7 +36,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2681
 archive/issue_comments_018433.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [doctests_gen_pari.patch](tarball://root/attachments/some-uuid/ticket2681/doctests_gen_pari.patch) by AlexGhitza created at 2008-03-27 03:39:15",
     "created_at": "2008-03-27T03:39:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2681",
     "type": "issue_comment",
@@ -45,7 +45,7 @@ archive/issue_comments_018433.json:
 }
 ```
 
-Attachment
+Attachment [doctests_gen_pari.patch](tarball://root/attachments/some-uuid/ticket2681/doctests_gen_pari.patch) by AlexGhitza created at 2008-03-27 03:39:15
 
 
 
@@ -213,7 +213,7 @@ Michael
 archive/issue_comments_018438.json:
 ```json
 {
-    "body": "Attachment\n\n\n```\n[07:10] <mabshoff> #2681 now has the 64 bit pari fix.\n[07:10] <mabshoff> Trivial review anyone?\n[07:11] <wstein> [positive review]\n```\n\n\nMerged the doctest fix patch in 2.11.alpha2\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_2681-64-bit-doctest-fixes.patch](tarball://root/attachments/some-uuid/ticket2681/trac_2681-64-bit-doctest-fixes.patch) by mabshoff created at 2008-03-28 06:42:46\n\n\n```\n[07:10] <mabshoff> #2681 now has the 64 bit pari fix.\n[07:10] <mabshoff> Trivial review anyone?\n[07:11] <wstein> [positive review]\n```\n\n\nMerged the doctest fix patch in 2.11.alpha2\n\nCheers,\n\nMichael",
     "created_at": "2008-03-28T06:42:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2681",
     "type": "issue_comment",
@@ -222,7 +222,7 @@ archive/issue_comments_018438.json:
 }
 ```
 
-Attachment
+Attachment [trac_2681-64-bit-doctest-fixes.patch](tarball://root/attachments/some-uuid/ticket2681/trac_2681-64-bit-doctest-fixes.patch) by mabshoff created at 2008-03-28 06:42:46
 
 
 ```

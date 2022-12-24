@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8577
 archive/issue_comments_077687.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [etuple_eadd_fix.patch](tarball://root/attachments/some-uuid/ticket8577/etuple_eadd_fix.patch) by mjo created at 2012-01-16 03:16:56",
     "created_at": "2012-01-16T03:16:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8577",
     "type": "issue_comment",
@@ -51,7 +51,7 @@ archive/issue_comments_077687.json:
 }
 ```
 
-Attachment
+Attachment [etuple_eadd_fix.patch](tarball://root/attachments/some-uuid/ticket8577/etuple_eadd_fix.patch) by mjo created at 2012-01-16 03:16:56
 
 
 

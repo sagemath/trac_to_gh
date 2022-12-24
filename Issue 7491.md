@@ -66,7 +66,7 @@ Changing status from new to needs_review.
 archive/issue_comments_063272.json:
 ```json
 {
-    "body": "Attachment\n\nattached patch does the following\n\n```\n[marik@um-bc107 /opt/sage]$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: solve\nsage: y=var('y');solve(SR(0),y,solution_dict=True)\n{y: r1}\nsage: y=var('y');solve(SR(0),y,solution_dict=True,multiplicities=True)\n({y: r1}, [])\nsage: solve(x==x,x,multiplicities=True)\n([x == r1], [])\n| Sage Version 4.2.1, Release Date: 2009-11-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n```\n\n\nAll tests in symbolic and calculus passed.",
+    "body": "Attachment [trac-7491-initial.patch](tarball://root/attachments/some-uuid/ticket7491/trac-7491-initial.patch) by robert.marik created at 2009-11-19 08:00:39\n\nattached patch does the following\n\n```\n[marik@um-bc107 /opt/sage]$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: solve\nsage: y=var('y');solve(SR(0),y,solution_dict=True)\n{y: r1}\nsage: y=var('y');solve(SR(0),y,solution_dict=True,multiplicities=True)\n({y: r1}, [])\nsage: solve(x==x,x,multiplicities=True)\n([x == r1], [])\n| Sage Version 4.2.1, Release Date: 2009-11-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n```\n\n\nAll tests in symbolic and calculus passed.",
     "created_at": "2009-11-19T08:00:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7491",
     "type": "issue_comment",
@@ -75,7 +75,7 @@ archive/issue_comments_063272.json:
 }
 ```
 
-Attachment
+Attachment [trac-7491-initial.patch](tarball://root/attachments/some-uuid/ticket7491/trac-7491-initial.patch) by robert.marik created at 2009-11-19 08:00:39
 
 attached patch does the following
 

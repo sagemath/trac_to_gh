@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4912
 archive/issue_comments_037276.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4912.patch](tarball://root/attachments/some-uuid/ticket4912/trac_4912.patch) by mhansen created at 2009-01-02 02:35:11",
     "created_at": "2009-01-02T02:35:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4912",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_037276.json:
 }
 ```
 
-Attachment
+Attachment [trac_4912.patch](tarball://root/attachments/some-uuid/ticket4912/trac_4912.patch) by mhansen created at 2009-01-02 02:35:11
 
 
 
@@ -49,7 +49,7 @@ Attachment
 archive/issue_comments_037277.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage.geometry-final.patch](tarball://root/attachments/some-uuid/ticket4912/sage.geometry-final.patch) by mhansen created at 2009-02-21 19:18:10",
     "created_at": "2009-02-21T19:18:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4912",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_037277.json:
 }
 ```
 
-Attachment
+Attachment [sage.geometry-final.patch](tarball://root/attachments/some-uuid/ticket4912/sage.geometry-final.patch) by mhansen created at 2009-02-21 19:18:10
 
 
 

@@ -126,7 +126,7 @@ Something doesn't work in the above patch.  I need to figure out how to get the 
 archive/issue_comments_039187.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5128-matplotlib-plot.patch](tarball://root/attachments/some-uuid/ticket5128/trac_5128-matplotlib-plot.patch) by jason created at 2009-02-24 09:47:35",
     "created_at": "2009-02-24T09:47:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5128",
     "type": "issue_comment",
@@ -135,7 +135,7 @@ archive/issue_comments_039187.json:
 }
 ```
 
-Attachment
+Attachment [trac_5128-matplotlib-plot.patch](tarball://root/attachments/some-uuid/ticket5128/trac_5128-matplotlib-plot.patch) by jason created at 2009-02-24 09:47:35
 
 
 
@@ -201,7 +201,7 @@ That's correct.  This ticket is the other direction.
 archive/issue_comments_039191.json:
 ```json
 {
-    "body": "Attachment\n\napply instead of previous patch.",
+    "body": "Attachment [trac_5128-matplotlib-plot.2.patch](tarball://root/attachments/some-uuid/ticket5128/trac_5128-matplotlib-plot.2.patch) by jason created at 2009-09-17 19:09:36\n\napply instead of previous patch.",
     "created_at": "2009-09-17T19:09:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5128",
     "type": "issue_comment",
@@ -210,7 +210,7 @@ archive/issue_comments_039191.json:
 }
 ```
 
-Attachment
+Attachment [trac_5128-matplotlib-plot.2.patch](tarball://root/attachments/some-uuid/ticket5128/trac_5128-matplotlib-plot.2.patch) by jason created at 2009-09-17 19:09:36
 
 apply instead of previous patch.
 
@@ -239,7 +239,7 @@ apply instead of previous patches
 archive/issue_comments_039193.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached another iteration.  I've also posted to the matplotlib users mailing list about the problems in the above patch.",
+    "body": "Attachment [trac_5128-matplotlib-plot.3.patch](tarball://root/attachments/some-uuid/ticket5128/trac_5128-matplotlib-plot.3.patch) by jason created at 2009-09-17 19:11:49\n\nI've attached another iteration.  I've also posted to the matplotlib users mailing list about the problems in the above patch.",
     "created_at": "2009-09-17T19:11:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5128",
     "type": "issue_comment",
@@ -248,7 +248,7 @@ archive/issue_comments_039193.json:
 }
 ```
 
-Attachment
+Attachment [trac_5128-matplotlib-plot.3.patch](tarball://root/attachments/some-uuid/ticket5128/trac_5128-matplotlib-plot.3.patch) by jason created at 2009-09-17 19:11:49
 
 I've attached another iteration.  I've also posted to the matplotlib users mailing list about the problems in the above patch.
 

@@ -49,7 +49,7 @@ I think the information about module_list.py is in the paragraph before the one 
 archive/issue_comments_048349.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch applies fine and the command \"/sage -docbuild developer html\" builts the docs without error. The addition clarifies and improves the documentation as advertised.",
+    "body": "Attachment [trac_6073.patch](tarball://root/attachments/some-uuid/ticket6073/trac_6073.patch) by wdj created at 2009-06-19 21:59:46\n\nThis patch applies fine and the command \"/sage -docbuild developer html\" builts the docs without error. The addition clarifies and improves the documentation as advertised.",
     "created_at": "2009-06-19T21:59:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6073",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_048349.json:
 }
 ```
 
-Attachment
+Attachment [trac_6073.patch](tarball://root/attachments/some-uuid/ticket6073/trac_6073.patch) by wdj created at 2009-06-19 21:59:46
 
 This patch applies fine and the command "/sage -docbuild developer html" builts the docs without error. The addition clarifies and improves the documentation as advertised.
 

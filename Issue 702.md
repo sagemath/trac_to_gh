@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/702
 archive/issue_comments_003681.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ellipsis_iterator2.diff](tarball://root/attachments/some-uuid/ticket702/ellipsis_iterator2.diff) by robertwb created at 2007-09-20 11:01:00",
     "created_at": "2007-09-20T11:01:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_003681.json:
 }
 ```
 
-Attachment
+Attachment [ellipsis_iterator2.diff](tarball://root/attachments/some-uuid/ticket702/ellipsis_iterator2.diff) by robertwb created at 2007-09-20 11:01:00
 
 
 
@@ -134,7 +134,7 @@ Changing assignee from was to robertwb.
 archive/issue_comments_003685.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ellipsis_iterator3.diff](tarball://root/attachments/some-uuid/ticket702/ellipsis_iterator3.diff) by robertwb created at 2007-09-20 11:21:33",
     "created_at": "2007-09-20T11:21:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
@@ -143,7 +143,7 @@ archive/issue_comments_003685.json:
 }
 ```
 
-Attachment
+Attachment [ellipsis_iterator3.diff](tarball://root/attachments/some-uuid/ticket702/ellipsis_iterator3.diff) by robertwb created at 2007-09-20 11:21:33
 
 
 
@@ -178,7 +178,7 @@ sage: [A.next() for _ in range(10)]
 archive/issue_comments_003687.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ellipsis_iterator4.diff](tarball://root/attachments/some-uuid/ticket702/ellipsis_iterator4.diff) by robertwb created at 2007-09-20 19:06:10",
     "created_at": "2007-09-20T19:06:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
@@ -187,7 +187,7 @@ archive/issue_comments_003687.json:
 }
 ```
 
-Attachment
+Attachment [ellipsis_iterator4.diff](tarball://root/attachments/some-uuid/ticket702/ellipsis_iterator4.diff) by robertwb created at 2007-09-20 19:06:10
 
 
 
@@ -221,7 +221,7 @@ sage: list(1..5)
 archive/issue_comments_003689.json:
 ```json
 {
-    "body": "Attachment\n\nApplied.  (And I fixed a few bugs.)",
+    "body": "Attachment [ellipsis_iterator1-4.hg](tarball://root/attachments/some-uuid/ticket702/ellipsis_iterator1-4.hg) by was created at 2007-09-20 20:11:03\n\nApplied.  (And I fixed a few bugs.)",
     "created_at": "2007-09-20T20:11:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
@@ -230,7 +230,7 @@ archive/issue_comments_003689.json:
 }
 ```
 
-Attachment
+Attachment [ellipsis_iterator1-4.hg](tarball://root/attachments/some-uuid/ticket702/ellipsis_iterator1-4.hg) by was created at 2007-09-20 20:11:03
 
 Applied.  (And I fixed a few bugs.)
 
@@ -313,7 +313,7 @@ archive/issue_comments_003693.json:
 archive/issue_comments_003694.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ellipsis-empty-range.hg](tarball://root/attachments/some-uuid/ticket702/ellipsis-empty-range.hg) by robertwb created at 2007-09-21 22:58:52",
     "created_at": "2007-09-21T22:58:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
@@ -322,7 +322,7 @@ archive/issue_comments_003694.json:
 }
 ```
 
-Attachment
+Attachment [ellipsis-empty-range.hg](tarball://root/attachments/some-uuid/ticket702/ellipsis-empty-range.hg) by robertwb created at 2007-09-21 22:58:52
 
 
 

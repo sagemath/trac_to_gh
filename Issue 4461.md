@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4461
 archive/issue_comments_032933.json:
 ```json
 {
-    "body": "Attachment\n\ndisable FFI in fricas",
+    "body": "Attachment [disable-ffi.patch](tarball://root/attachments/some-uuid/ticket4461/disable-ffi.patch) by bpage created at 2008-11-07 16:46:29\n\ndisable FFI in fricas",
     "created_at": "2008-11-07T16:46:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4461",
     "type": "issue_comment",
@@ -50,7 +50,7 @@ archive/issue_comments_032933.json:
 }
 ```
 
-Attachment
+Attachment [disable-ffi.patch](tarball://root/attachments/some-uuid/ticket4461/disable-ffi.patch) by bpage created at 2008-11-07 16:46:29
 
 disable FFI in fricas
 

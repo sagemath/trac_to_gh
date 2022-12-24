@@ -320,7 +320,7 @@ and the user does not know, what went wrong. With this patch the user knows, tha
 archive/issue_comments_097042.json:
 ```json
 {
-    "body": "Attachment\n\nrebased for Sage 4.5.3., fixed typo, replaces previous patch with the same name",
+    "body": "Attachment [trac_9835.patch](tarball://root/attachments/some-uuid/ticket9835/trac_9835.patch) by robert.marik created at 2010-09-21 14:43:06\n\nrebased for Sage 4.5.3., fixed typo, replaces previous patch with the same name",
     "created_at": "2010-09-21T14:43:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9834",
     "type": "issue_comment",
@@ -329,7 +329,7 @@ archive/issue_comments_097042.json:
 }
 ```
 
-Attachment
+Attachment [trac_9835.patch](tarball://root/attachments/some-uuid/ticket9835/trac_9835.patch) by robert.marik created at 2010-09-21 14:43:06
 
 rebased for Sage 4.5.3., fixed typo, replaces previous patch with the same name
 
@@ -358,7 +358,7 @@ solves also #9710 and #8931
 archive/issue_comments_097044.json:
 ```json
 {
-    "body": "Attachment\n\nminor change - apply only this patch",
+    "body": "Attachment [trac_9835.take2.patch](tarball://root/attachments/some-uuid/ticket9835/trac_9835.take2.patch) by burcin created at 2010-09-26 13:25:25\n\nminor change - apply only this patch",
     "created_at": "2010-09-26T13:25:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9834",
     "type": "issue_comment",
@@ -367,7 +367,7 @@ archive/issue_comments_097044.json:
 }
 ```
 
-Attachment
+Attachment [trac_9835.take2.patch](tarball://root/attachments/some-uuid/ticket9835/trac_9835.take2.patch) by burcin created at 2010-09-26 13:25:25
 
 minor change - apply only this patch
 

@@ -63,7 +63,7 @@ Proposal of patch for generic power
 archive/issue_comments_040176.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [generic_power_fix_semigroup-5242-submitted.patch](tarball://root/attachments/some-uuid/ticket5242/generic_power_fix_semigroup-5242-submitted.patch) by mabshoff created at 2009-02-12 13:50:42",
     "created_at": "2009-02-12T13:50:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5242",
     "type": "issue_comment",
@@ -72,7 +72,7 @@ archive/issue_comments_040176.json:
 }
 ```
 
-Attachment
+Attachment [generic_power_fix_semigroup-5242-submitted.patch](tarball://root/attachments/some-uuid/ticket5242/generic_power_fix_semigroup-5242-submitted.patch) by mabshoff created at 2009-02-12 13:50:42
 
 
 

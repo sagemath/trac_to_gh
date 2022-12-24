@@ -1543,7 +1543,7 @@ What do you mean?  The doctest is testing code which did not exist before.  So I
 archive/issue_comments_042354.json:
 ```json
 {
-    "body": "Attachment\n\nAdditional patch",
+    "body": "Attachment [5457_long_time.patch](tarball://root/attachments/some-uuid/ticket5457/5457_long_time.patch) by jdemeyer created at 2012-09-01 18:57:22\n\nAdditional patch",
     "created_at": "2012-09-01T18:57:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5457",
     "type": "issue_comment",
@@ -1552,7 +1552,7 @@ archive/issue_comments_042354.json:
 }
 ```
 
-Attachment
+Attachment [5457_long_time.patch](tarball://root/attachments/some-uuid/ticket5457/5457_long_time.patch) by jdemeyer created at 2012-09-01 18:57:22
 
 Additional patch
 
@@ -1563,7 +1563,7 @@ Additional patch
 archive/issue_comments_042355.json:
 ```json
 {
-    "body": "Attachment\n\nI rebased the three patches (there was some fuzz) and made some additional changes to [attachment:5457_long_time.patch] (so that patch needs review again).",
+    "body": "Attachment [trac_5457-symmetric_functions-mz.patch](tarball://root/attachments/some-uuid/ticket5457/trac_5457-symmetric_functions-mz.patch) by jdemeyer created at 2012-09-01 18:58:18\n\nI rebased the three patches (there was some fuzz) and made some additional changes to [attachment:5457_long_time.patch] (so that patch needs review again).",
     "created_at": "2012-09-01T18:58:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5457",
     "type": "issue_comment",
@@ -1572,7 +1572,7 @@ archive/issue_comments_042355.json:
 }
 ```
 
-Attachment
+Attachment [trac_5457-symmetric_functions-mz.patch](tarball://root/attachments/some-uuid/ticket5457/trac_5457-symmetric_functions-mz.patch) by jdemeyer created at 2012-09-01 18:58:18
 
 I rebased the three patches (there was some fuzz) and made some additional changes to [attachment:5457_long_time.patch] (so that patch needs review again).
 
@@ -1894,7 +1894,7 @@ same patch with commit message
 archive/issue_comments_042370.json:
 ```json
 {
-    "body": "Attachment\n\nI think that does it.  Sorry I don't know what the [mq] is or how it got there.",
+    "body": "Attachment [trac_5457_llt_doc_and_bug_fix-mz.2.patch](tarball://root/attachments/some-uuid/ticket5457/trac_5457_llt_doc_and_bug_fix-mz.2.patch) by zabrocki created at 2012-09-03 12:55:03\n\nI think that does it.  Sorry I don't know what the [mq] is or how it got there.",
     "created_at": "2012-09-03T12:55:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5457",
     "type": "issue_comment",
@@ -1903,7 +1903,7 @@ archive/issue_comments_042370.json:
 }
 ```
 
-Attachment
+Attachment [trac_5457_llt_doc_and_bug_fix-mz.2.patch](tarball://root/attachments/some-uuid/ticket5457/trac_5457_llt_doc_and_bug_fix-mz.2.patch) by zabrocki created at 2012-09-03 12:55:03
 
 I think that does it.  Sorry I don't know what the [mq] is or how it got there.
 
@@ -2057,7 +2057,7 @@ Second additional patch
 archive/issue_comments_042378.json:
 ```json
 {
-    "body": "Attachment\n\nMy second additional patch [attachment:5457_long_time_2.patch] needs review (just mention the review in the comments, don't change the status).",
+    "body": "Attachment [5457_long_time_2.patch](tarball://root/attachments/some-uuid/ticket5457/5457_long_time_2.patch) by jdemeyer created at 2012-09-21 09:21:57\n\nMy second additional patch [attachment:5457_long_time_2.patch] needs review (just mention the review in the comments, don't change the status).",
     "created_at": "2012-09-21T09:21:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5457",
     "type": "issue_comment",
@@ -2066,7 +2066,7 @@ archive/issue_comments_042378.json:
 }
 ```
 
-Attachment
+Attachment [5457_long_time_2.patch](tarball://root/attachments/some-uuid/ticket5457/5457_long_time_2.patch) by jdemeyer created at 2012-09-21 09:21:57
 
 My second additional patch [attachment:5457_long_time_2.patch] needs review (just mention the review in the comments, don't change the status).
 
@@ -2228,7 +2228,7 @@ As I said: `assert` is only meant to catch *bugs*, not user errors.  Although, a
 archive/issue_comments_042384.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5457-symmetric_functions-mz.2.patch](tarball://root/attachments/some-uuid/ticket5457/trac_5457-symmetric_functions-mz.2.patch) by aschilling created at 2012-09-25 00:44:24",
     "created_at": "2012-09-25T00:44:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5457",
     "type": "issue_comment",
@@ -2237,7 +2237,7 @@ archive/issue_comments_042384.json:
 }
 ```
 
-Attachment
+Attachment [trac_5457-symmetric_functions-mz.2.patch](tarball://root/attachments/some-uuid/ticket5457/trac_5457-symmetric_functions-mz.2.patch) by aschilling created at 2012-09-25 00:44:24
 
 
 

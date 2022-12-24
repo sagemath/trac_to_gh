@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2795
 archive/issue_comments_019189.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.",
+    "body": "Attachment [qring_2_magma.patch](tarball://root/attachments/some-uuid/ticket2795/qring_2_magma.patch) by mhansen created at 2008-04-04 19:53:01\n\nLooks good to me.",
     "created_at": "2008-04-04T19:53:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2795",
     "type": "issue_comment",
@@ -50,7 +50,7 @@ archive/issue_comments_019189.json:
 }
 ```
 
-Attachment
+Attachment [qring_2_magma.patch](tarball://root/attachments/some-uuid/ticket2795/qring_2_magma.patch) by mhansen created at 2008-04-04 19:53:01
 
 Looks good to me.
 

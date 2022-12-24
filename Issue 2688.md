@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2688
 archive/issue_comments_018506.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2688-kuratowski-isolator.patch](tarball://root/attachments/some-uuid/ticket2688/2688-kuratowski-isolator.patch) by ekirkman created at 2008-03-29 05:56:29",
     "created_at": "2008-03-29T05:56:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2688",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_018506.json:
 }
 ```
 
-Attachment
+Attachment [2688-kuratowski-isolator.patch](tarball://root/attachments/some-uuid/ticket2688/2688-kuratowski-isolator.patch) by ekirkman created at 2008-03-29 05:56:29
 
 
 
@@ -103,7 +103,7 @@ Michael
 archive/issue_comments_018509.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2688-fix.patch](tarball://root/attachments/some-uuid/ticket2688/2688-fix.patch) by rlm created at 2008-03-29 20:45:35",
     "created_at": "2008-03-29T20:45:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2688",
     "type": "issue_comment",
@@ -112,7 +112,7 @@ archive/issue_comments_018509.json:
 }
 ```
 
-Attachment
+Attachment [2688-fix.patch](tarball://root/attachments/some-uuid/ticket2688/2688-fix.patch) by rlm created at 2008-03-29 20:45:35
 
 
 

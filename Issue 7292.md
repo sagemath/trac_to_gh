@@ -139,7 +139,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_060711.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7292.patch](tarball://root/attachments/some-uuid/ticket7292/trac_7292.patch) by rlm created at 2009-12-16 02:56:13",
     "created_at": "2009-12-16T02:56:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7292",
     "type": "issue_comment",
@@ -148,7 +148,7 @@ archive/issue_comments_060711.json:
 }
 ```
 
-Attachment
+Attachment [trac_7292.patch](tarball://root/attachments/some-uuid/ticket7292/trac_7292.patch) by rlm created at 2009-12-16 02:56:13
 
 
 
@@ -339,7 +339,7 @@ Resolution: fixed
 archive/issue_comments_060721.json:
 ```json
 {
-    "body": "Attachment\n\npositive review",
+    "body": "Attachment [trac_7292-2.patch](tarball://root/attachments/some-uuid/ticket7292/trac_7292-2.patch) by rlm created at 2010-01-13 11:39:11\n\npositive review",
     "created_at": "2010-01-13T11:39:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7292",
     "type": "issue_comment",
@@ -348,6 +348,6 @@ archive/issue_comments_060721.json:
 }
 ```
 
-Attachment
+Attachment [trac_7292-2.patch](tarball://root/attachments/some-uuid/ticket7292/trac_7292-2.patch) by rlm created at 2010-01-13 11:39:11
 
 positive review

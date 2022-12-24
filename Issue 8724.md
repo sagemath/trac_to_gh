@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8724
 archive/issue_comments_079691.json:
 ```json
 {
-    "body": "Attachment\n\nChanges status code of redirects to 303. Also fixes a bunch of Selenium tests. Apply to sagenb repo.",
+    "body": "Attachment [trac_8724-sagenb-redirect-code.patch](tarball://root/attachments/some-uuid/ticket8724/trac_8724-sagenb-redirect-code.patch) by timdumol created at 2010-04-20 12:12:41\n\nChanges status code of redirects to 303. Also fixes a bunch of Selenium tests. Apply to sagenb repo.",
     "created_at": "2010-04-20T12:12:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8724",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_079691.json:
 }
 ```
 
-Attachment
+Attachment [trac_8724-sagenb-redirect-code.patch](tarball://root/attachments/some-uuid/ticket8724/trac_8724-sagenb-redirect-code.patch) by timdumol created at 2010-04-20 12:12:41
 
 Changes status code of redirects to 303. Also fixes a bunch of Selenium tests. Apply to sagenb repo.
 
@@ -147,7 +147,7 @@ Apply after first patch
 archive/issue_comments_079697.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8724-doctest-fix.patch](tarball://root/attachments/some-uuid/ticket8724/trac_8724-doctest-fix.patch) by jhpalmieri created at 2010-04-27 14:24:18",
     "created_at": "2010-04-27T14:24:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8724",
     "type": "issue_comment",
@@ -156,7 +156,7 @@ archive/issue_comments_079697.json:
 }
 ```
 
-Attachment
+Attachment [trac_8724-doctest-fix.patch](tarball://root/attachments/some-uuid/ticket8724/trac_8724-doctest-fix.patch) by jhpalmieri created at 2010-04-27 14:24:18
 
 
 

@@ -51,7 +51,7 @@ Can you explain what this means? Do you mean " # optional - requires internet"?
 archive/issue_comments_048547.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [extrep.patch](tarball://root/attachments/some-uuid/ticket6093/extrep.patch) by carlohamalainen created at 2009-06-01 08:09:23",
     "created_at": "2009-06-01T08:09:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6093",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_048547.json:
 }
 ```
 
-Attachment
+Attachment [extrep.patch](tarball://root/attachments/some-uuid/ticket6093/extrep.patch) by carlohamalainen created at 2009-06-01 08:09:23
 
 
 

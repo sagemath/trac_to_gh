@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2992
 archive/issue_comments_020585.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-2992.patch](tarball://root/attachments/some-uuid/ticket2992/sage-2992.patch) by was created at 2008-05-11 05:44:17",
     "created_at": "2008-05-11T05:44:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2992",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_020585.json:
 }
 ```
 
-Attachment
+Attachment [sage-2992.patch](tarball://root/attachments/some-uuid/ticket2992/sage-2992.patch) by was created at 2008-05-11 05:44:17
 
 
 
@@ -107,7 +107,7 @@ I don't know if this is worth a fully negative review, but I think this looks li
 archive/issue_comments_020588.json:
 ```json
 {
-    "body": "Attachment\n\nI completely rewrote help(...) to address the referee remark and to make help(...) vastly more robust when the output is MASSIVE (which it often is).  Try, e.g., \n\n\n```\nimport numpy\nhelp(numpy)\n```\n\n\nwith the new version, and your browser will *not* get killed.  I had my browser\ncrash in class when teaching with the old version.\n\nOf course the issues with help(interact) are also fixed. \n\nApply both patches, in order.",
+    "body": "Attachment [sage-2992-part2.patch](tarball://root/attachments/some-uuid/ticket2992/sage-2992-part2.patch) by was created at 2008-05-15 02:04:36\n\nI completely rewrote help(...) to address the referee remark and to make help(...) vastly more robust when the output is MASSIVE (which it often is).  Try, e.g., \n\n\n```\nimport numpy\nhelp(numpy)\n```\n\n\nwith the new version, and your browser will *not* get killed.  I had my browser\ncrash in class when teaching with the old version.\n\nOf course the issues with help(interact) are also fixed. \n\nApply both patches, in order.",
     "created_at": "2008-05-15T02:04:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2992",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_020588.json:
 }
 ```
 
-Attachment
+Attachment [sage-2992-part2.patch](tarball://root/attachments/some-uuid/ticket2992/sage-2992-part2.patch) by was created at 2008-05-15 02:04:36
 
 I completely rewrote help(...) to address the referee remark and to make help(...) vastly more robust when the output is MASSIVE (which it often is).  Try, e.g., 
 

@@ -71,7 +71,7 @@ I was the referee for this patch, but I also ended up writing a bit of code for 
 archive/issue_comments_006561.json:
 ```json
 {
-    "body": "Attachment\n\nMerged in Sage 2.10.2.alpha0 - if you find additional issues please open another ticket and post patches there.",
+    "body": "Attachment [trac-1085-johns-code.hg](tarball://root/attachments/some-uuid/ticket1085/trac-1085-johns-code.hg) by mabshoff created at 2008-02-13 13:07:09\n\nMerged in Sage 2.10.2.alpha0 - if you find additional issues please open another ticket and post patches there.",
     "created_at": "2008-02-13T13:07:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1085",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_006561.json:
 }
 ```
 
-Attachment
+Attachment [trac-1085-johns-code.hg](tarball://root/attachments/some-uuid/ticket1085/trac-1085-johns-code.hg) by mabshoff created at 2008-02-13 13:07:09
 
 Merged in Sage 2.10.2.alpha0 - if you find additional issues please open another ticket and post patches there.
 
@@ -109,7 +109,7 @@ Resolution: fixed
 archive/issue_comments_006563.json:
 ```json
 {
-    "body": "Attachment\n\nMerged the updated trac-1085-jv-mods.hg in Sage 2.10.2.alpha0",
+    "body": "Attachment [trac-1085-jv-mods.hg](tarball://root/attachments/some-uuid/ticket1085/trac-1085-jv-mods.hg) by mabshoff created at 2008-02-14 10:55:25\n\nMerged the updated trac-1085-jv-mods.hg in Sage 2.10.2.alpha0",
     "created_at": "2008-02-14T10:55:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1085",
     "type": "issue_comment",
@@ -118,7 +118,7 @@ archive/issue_comments_006563.json:
 }
 ```
 
-Attachment
+Attachment [trac-1085-jv-mods.hg](tarball://root/attachments/some-uuid/ticket1085/trac-1085-jv-mods.hg) by mabshoff created at 2008-02-14 10:55:25
 
 Merged the updated trac-1085-jv-mods.hg in Sage 2.10.2.alpha0
 
@@ -197,7 +197,7 @@ Michael
 archive/issue_comments_006565.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-1085-touch-ups.patch](tarball://root/attachments/some-uuid/ticket1085/trac-1085-touch-ups.patch) by craigcitro created at 2008-02-14 12:06:54",
     "created_at": "2008-02-14T12:06:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1085",
     "type": "issue_comment",
@@ -206,7 +206,7 @@ archive/issue_comments_006565.json:
 }
 ```
 
-Attachment
+Attachment [trac-1085-touch-ups.patch](tarball://root/attachments/some-uuid/ticket1085/trac-1085-touch-ups.patch) by craigcitro created at 2008-02-14 12:06:54
 
 
 

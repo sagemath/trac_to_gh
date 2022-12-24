@@ -55,7 +55,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/967
 archive/issue_comments_005903.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [iadd_gfp.patch](tarball://root/attachments/some-uuid/ticket967/iadd_gfp.patch) by malb created at 2007-10-21 22:38:42",
     "created_at": "2007-10-21T22:38:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/967",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_005903.json:
 }
 ```
 
-Attachment
+Attachment [iadd_gfp.patch](tarball://root/attachments/some-uuid/ticket967/iadd_gfp.patch) by malb created at 2007-10-21 22:38:42
 
 
 
@@ -73,7 +73,7 @@ Attachment
 archive/issue_comments_005904.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [iadd_mpoly.patch](tarball://root/attachments/some-uuid/ticket967/iadd_mpoly.patch) by malb created at 2007-10-21 22:38:55",
     "created_at": "2007-10-21T22:38:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/967",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_005904.json:
 }
 ```
 
-Attachment
+Attachment [iadd_mpoly.patch](tarball://root/attachments/some-uuid/ticket967/iadd_mpoly.patch) by malb created at 2007-10-21 22:38:55
 
 
 

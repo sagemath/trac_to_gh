@@ -202,7 +202,7 @@ Alternately, you could try to ask a release manager to close this as a duplicate
 archive/issue_comments_078280.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8632_save_ignores_options_from_plot.patch](tarball://root/attachments/some-uuid/ticket8632/trac_8632_save_ignores_options_from_plot.patch) by novoselt created at 2011-01-13 17:39:10",
     "created_at": "2011-01-13T17:39:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8632",
     "type": "issue_comment",
@@ -211,7 +211,7 @@ archive/issue_comments_078280.json:
 }
 ```
 
-Attachment
+Attachment [trac_8632_save_ignores_options_from_plot.patch](tarball://root/attachments/some-uuid/ticket8632/trac_8632_save_ignores_options_from_plot.patch) by novoselt created at 2011-01-13 17:39:10
 
 
 
@@ -348,7 +348,7 @@ Scratch that.  Need to change the patch a bit so documentation looks ok - a miss
 archive/issue_comments_078288.json:
 ```json
 {
-    "body": "Attachment\n\nreviewer patch",
+    "body": "Attachment [trac_8632-reviewer.patch](tarball://root/attachments/some-uuid/ticket8632/trac_8632-reviewer.patch) by kcrisman created at 2011-01-14 02:41:34\n\nreviewer patch",
     "created_at": "2011-01-14T02:41:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8632",
     "type": "issue_comment",
@@ -357,7 +357,7 @@ archive/issue_comments_078288.json:
 }
 ```
 
-Attachment
+Attachment [trac_8632-reviewer.patch](tarball://root/attachments/some-uuid/ticket8632/trac_8632-reviewer.patch) by kcrisman created at 2011-01-14 02:41:34
 
 reviewer patch
 

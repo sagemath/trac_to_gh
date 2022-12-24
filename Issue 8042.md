@@ -127,7 +127,7 @@ Okay, I'm attaching a patch that amounts to making the fix that I described abov
 archive/issue_comments_070282.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-8042.patch](tarball://root/attachments/some-uuid/ticket8042/trac-8042.patch) by craigcitro created at 2010-01-24 07:43:10",
     "created_at": "2010-01-24T07:43:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8042",
     "type": "issue_comment",
@@ -136,7 +136,7 @@ archive/issue_comments_070282.json:
 }
 ```
 
-Attachment
+Attachment [trac-8042.patch](tarball://root/attachments/some-uuid/ticket8042/trac-8042.patch) by craigcitro created at 2010-01-24 07:43:10
 
 
 

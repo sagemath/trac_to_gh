@@ -49,7 +49,7 @@ this is from david roe
 archive/issue_comments_003703.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [global_proof.hg](tarball://root/attachments/some-uuid/ticket704/global_proof.hg) by was created at 2007-09-20 13:44:43",
     "created_at": "2007-09-20T13:44:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/704",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_003703.json:
 }
 ```
 
-Attachment
+Attachment [global_proof.hg](tarball://root/attachments/some-uuid/ticket704/global_proof.hg) by was created at 2007-09-20 13:44:43
 
 
 
@@ -103,7 +103,7 @@ Resolution: fixed
 archive/issue_comments_003706.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [global_proof2.hg](tarball://root/attachments/some-uuid/ticket704/global_proof2.hg) by was created at 2007-09-21 02:45:38",
     "created_at": "2007-09-21T02:45:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/704",
     "type": "issue_comment",
@@ -112,4 +112,4 @@ archive/issue_comments_003706.json:
 }
 ```
 
-Attachment
+Attachment [global_proof2.hg](tarball://root/attachments/some-uuid/ticket704/global_proof2.hg) by was created at 2007-09-21 02:45:38

@@ -38,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4828
 archive/issue_comments_036602.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4828_doc.patch](tarball://root/attachments/some-uuid/ticket4828/trac_4828_doc.patch) by mabshoff created at 2008-12-19 06:37:01",
     "created_at": "2008-12-19T06:37:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4828",
     "type": "issue_comment",
@@ -47,7 +47,7 @@ archive/issue_comments_036602.json:
 }
 ```
 
-Attachment
+Attachment [trac_4828_doc.patch](tarball://root/attachments/some-uuid/ticket4828/trac_4828_doc.patch) by mabshoff created at 2008-12-19 06:37:01
 
 
 
@@ -56,7 +56,7 @@ Attachment
 archive/issue_comments_036603.json:
 ```json
 {
-    "body": "Attachment\n\nI had to delete the patchlevel.tex hunk to get the doc patch to apply, but otherwise looks good, positive review.",
+    "body": "Attachment [trac_4828_sage.patch](tarball://root/attachments/some-uuid/ticket4828/trac_4828_sage.patch) by ddrake created at 2008-12-19 07:06:53\n\nI had to delete the patchlevel.tex hunk to get the doc patch to apply, but otherwise looks good, positive review.",
     "created_at": "2008-12-19T07:06:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4828",
     "type": "issue_comment",
@@ -65,7 +65,7 @@ archive/issue_comments_036603.json:
 }
 ```
 
-Attachment
+Attachment [trac_4828_sage.patch](tarball://root/attachments/some-uuid/ticket4828/trac_4828_sage.patch) by ddrake created at 2008-12-19 07:06:53
 
 I had to delete the patchlevel.tex hunk to get the doc patch to apply, but otherwise looks good, positive review.
 

@@ -297,7 +297,7 @@ Just add something to the docstring for interact? and this will be done.
 archive/issue_comments_021624.json:
 ```json
 {
-    "body": "Attachment\n\nI updated the patch again; sorry about not catching that typo (I apparently forgot to run sage -b before testing the last patch).  \n\nI also added an is_Matrix check to the automatic controls, so something like:\n\n\n```\n@interact\ndef _(A=matrix(3,3)):\n    print A\n```\n\n\ncreates the appropriate input_grid control.  I made my example in interact? use that method.\n\nThere are two patches above.  They are identical and one can be deleted.",
+    "body": "Attachment [trac-3121-input-grid.patch](tarball://root/attachments/some-uuid/ticket3121/trac-3121-input-grid.patch) by jason created at 2008-05-09 19:50:23\n\nI updated the patch again; sorry about not catching that typo (I apparently forgot to run sage -b before testing the last patch).  \n\nI also added an is_Matrix check to the automatic controls, so something like:\n\n\n```\n@interact\ndef _(A=matrix(3,3)):\n    print A\n```\n\n\ncreates the appropriate input_grid control.  I made my example in interact? use that method.\n\nThere are two patches above.  They are identical and one can be deleted.",
     "created_at": "2008-05-09T19:50:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3121",
     "type": "issue_comment",
@@ -306,7 +306,7 @@ archive/issue_comments_021624.json:
 }
 ```
 
-Attachment
+Attachment [trac-3121-input-grid.patch](tarball://root/attachments/some-uuid/ticket3121/trac-3121-input-grid.patch) by jason created at 2008-05-09 19:50:23
 
 I updated the patch again; sorry about not catching that typo (I apparently forgot to run sage -b before testing the last patch).  
 
@@ -349,7 +349,7 @@ this cleans up the docs a little bit and adds some consistency.  apply after the
 archive/issue_comments_021626.json:
 ```json
 {
-    "body": "Attachment\n\nI'm OK with this if Jason is ok with sage-3121-part2_doc.patch",
+    "body": "Attachment [sage-3121-part2_doc.patch](tarball://root/attachments/some-uuid/ticket3121/sage-3121-part2_doc.patch) by was created at 2008-05-11 02:54:59\n\nI'm OK with this if Jason is ok with sage-3121-part2_doc.patch",
     "created_at": "2008-05-11T02:54:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3121",
     "type": "issue_comment",
@@ -358,7 +358,7 @@ archive/issue_comments_021626.json:
 }
 ```
 
-Attachment
+Attachment [sage-3121-part2_doc.patch](tarball://root/attachments/some-uuid/ticket3121/sage-3121-part2_doc.patch) by was created at 2008-05-11 02:54:59
 
 I'm OK with this if Jason is ok with sage-3121-part2_doc.patch
 

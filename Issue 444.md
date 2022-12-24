@@ -106,7 +106,7 @@ Changing assignee from was to robertwb.
 archive/issue_comments_002220.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [cube-solver.hg](tarball://root/attachments/some-uuid/ticket444/cube-solver.hg) by robertwb created at 2007-09-12 10:00:10",
     "created_at": "2007-09-12T10:00:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/444",
     "type": "issue_comment",
@@ -115,7 +115,7 @@ archive/issue_comments_002220.json:
 }
 ```
 
-Attachment
+Attachment [cube-solver.hg](tarball://root/attachments/some-uuid/ticket444/cube-solver.hg) by robertwb created at 2007-09-12 10:00:10
 
 
 
@@ -170,7 +170,7 @@ I'm removing "[with patch]" from the summary for now; anybody who supplies a rev
 archive/issue_comments_002223.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [rubiks-doctest.patch](tarball://root/attachments/some-uuid/ticket444/rubiks-doctest.patch) by robertwb created at 2007-11-27 11:28:48",
     "created_at": "2007-11-27T11:28:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/444",
     "type": "issue_comment",
@@ -179,7 +179,7 @@ archive/issue_comments_002223.json:
 }
 ```
 
-Attachment
+Attachment [rubiks-doctest.patch](tarball://root/attachments/some-uuid/ticket444/rubiks-doctest.patch) by robertwb created at 2007-11-27 11:28:48
 
 
 
@@ -210,7 +210,7 @@ I did, however, add doctests for the solvers.
 archive/issue_comments_002225.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [cubegroup-cleanup1.patch](tarball://root/attachments/some-uuid/ticket444/cubegroup-cleanup1.patch) by robertwb created at 2007-11-28 20:04:16",
     "created_at": "2007-11-28T20:04:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/444",
     "type": "issue_comment",
@@ -219,7 +219,7 @@ archive/issue_comments_002225.json:
 }
 ```
 
-Attachment
+Attachment [cubegroup-cleanup1.patch](tarball://root/attachments/some-uuid/ticket444/cubegroup-cleanup1.patch) by robertwb created at 2007-11-28 20:04:16
 
 
 
@@ -228,7 +228,7 @@ Attachment
 archive/issue_comments_002226.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [cubegroup-cleanup2.patch](tarball://root/attachments/some-uuid/ticket444/cubegroup-cleanup2.patch) by robertwb created at 2007-11-28 20:06:12",
     "created_at": "2007-11-28T20:06:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/444",
     "type": "issue_comment",
@@ -237,7 +237,7 @@ archive/issue_comments_002226.json:
 }
 ```
 
-Attachment
+Attachment [cubegroup-cleanup2.patch](tarball://root/attachments/some-uuid/ticket444/cubegroup-cleanup2.patch) by robertwb created at 2007-11-28 20:06:12
 
 
 

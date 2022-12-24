@@ -505,7 +505,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_083097.json:
 ```json
 {
-    "body": "Attachment\n\nOK, here are the changes:\n\n* Toric variety `X` is now associated to the normal fan of `Delta`.\n\n* Respectively, \"old\" `delta` was changed to `Delta_polar`.\n\n* The class takes as input and stores inside `Delta_polar`, since that's what is most relevant.\n\n* The factory function accepts either `Delta` or `Delta_polar` (without explicit clarification it is `Delta`, which means that #9245 will break a little bit, the fix is to put `Delta_polar=polytope` on line 180).\n\n* `P_Delta` did not mean \"polar to Delta\", it is `\\mathbb{P}_{\\Delta}`, so it remains the same, except that in the new version `Delta` refers to the polytope in the `M` lattice. (I did not really mention any lattices in the documentation, using normal/face fans to distinguish the relation of `Delta` and `Delta_polar` to `X`.)\n\n* `coordinate_indices` are renamed to `coordinate_name_indices` and have several doctests explaining why there is probably no need to use this parameter (not like I want to remove it, I just hope that usually the defaults will work nicely). \n\n* `coefficient_name_indices` are added to the hypersurface constructor, it was kind of a bug that originally it was not there - the idea is to treat creation of names in the same fashion everywhere. I even think that my `normalize_names` function should replace the one in `Parent`, but the relevant discussion on sage-devel died without responses, so for now it is used in toric varieties only.\n\n* `point_to_variable` is renamed to `coordinate_point_to_coordinate`, despite of discussion above. While working on its documentation, I decided that this is the most natural name given that there are `coordinate_points` and this function takes an element from there and transforms it into a coordinate. If you disagree with this argument and still prefer `Delta_polar_point_to_coordinate`, I'll change it.",
+    "body": "Attachment [trac_8989_add_support_for_fano_toric_varieties.patch](tarball://root/attachments/some-uuid/ticket8989/trac_8989_add_support_for_fano_toric_varieties.patch) by novoselt created at 2010-07-02 06:23:47\n\nOK, here are the changes:\n\n* Toric variety `X` is now associated to the normal fan of `Delta`.\n\n* Respectively, \"old\" `delta` was changed to `Delta_polar`.\n\n* The class takes as input and stores inside `Delta_polar`, since that's what is most relevant.\n\n* The factory function accepts either `Delta` or `Delta_polar` (without explicit clarification it is `Delta`, which means that #9245 will break a little bit, the fix is to put `Delta_polar=polytope` on line 180).\n\n* `P_Delta` did not mean \"polar to Delta\", it is `\\mathbb{P}_{\\Delta}`, so it remains the same, except that in the new version `Delta` refers to the polytope in the `M` lattice. (I did not really mention any lattices in the documentation, using normal/face fans to distinguish the relation of `Delta` and `Delta_polar` to `X`.)\n\n* `coordinate_indices` are renamed to `coordinate_name_indices` and have several doctests explaining why there is probably no need to use this parameter (not like I want to remove it, I just hope that usually the defaults will work nicely). \n\n* `coefficient_name_indices` are added to the hypersurface constructor, it was kind of a bug that originally it was not there - the idea is to treat creation of names in the same fashion everywhere. I even think that my `normalize_names` function should replace the one in `Parent`, but the relevant discussion on sage-devel died without responses, so for now it is used in toric varieties only.\n\n* `point_to_variable` is renamed to `coordinate_point_to_coordinate`, despite of discussion above. While working on its documentation, I decided that this is the most natural name given that there are `coordinate_points` and this function takes an element from there and transforms it into a coordinate. If you disagree with this argument and still prefer `Delta_polar_point_to_coordinate`, I'll change it.",
     "created_at": "2010-07-02T06:23:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8989",
     "type": "issue_comment",
@@ -514,7 +514,7 @@ archive/issue_comments_083097.json:
 }
 ```
 
-Attachment
+Attachment [trac_8989_add_support_for_fano_toric_varieties.patch](tarball://root/attachments/some-uuid/ticket8989/trac_8989_add_support_for_fano_toric_varieties.patch) by novoselt created at 2010-07-02 06:23:47
 
 OK, here are the changes:
 
@@ -658,7 +658,7 @@ It is a bug somewhere. Looking into it.
 archive/issue_comments_083104.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8989_lattice_choice_fix.patch](tarball://root/attachments/some-uuid/ticket8989/trac_8989_lattice_choice_fix.patch) by novoselt created at 2010-07-02 22:03:02",
     "created_at": "2010-07-02T22:03:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8989",
     "type": "issue_comment",
@@ -667,7 +667,7 @@ archive/issue_comments_083104.json:
 }
 ```
 
-Attachment
+Attachment [trac_8989_lattice_choice_fix.patch](tarball://root/attachments/some-uuid/ticket8989/trac_8989_lattice_choice_fix.patch) by novoselt created at 2010-07-02 22:03:02
 
 
 

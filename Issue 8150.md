@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8150
 archive/issue_comments_071640.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [13804.patch](tarball://root/attachments/some-uuid/ticket8150/13804.patch) by dimpase created at 2010-02-02 09:09:22",
     "created_at": "2010-02-02T09:09:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8150",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_071640.json:
 }
 ```
 
-Attachment
+Attachment [13804.patch](tarball://root/attachments/some-uuid/ticket8150/13804.patch) by dimpase created at 2010-02-02 09:09:22
 
 
 
@@ -402,7 +402,7 @@ Let me know when a new patch is available and if I should apply it on top of the
 archive/issue_comments_071651.json:
 ```json
 {
-    "body": "Attachment\n\nupdate patch - apply after 13804",
+    "body": "Attachment [13805.patch](tarball://root/attachments/some-uuid/ticket8150/13805.patch) by dimpase created at 2010-02-03 12:32:12\n\nupdate patch - apply after 13804",
     "created_at": "2010-02-03T12:32:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8150",
     "type": "issue_comment",
@@ -411,7 +411,7 @@ archive/issue_comments_071651.json:
 }
 ```
 
-Attachment
+Attachment [13805.patch](tarball://root/attachments/some-uuid/ticket8150/13805.patch) by dimpase created at 2010-02-03 12:32:12
 
 update patch - apply after 13804
 
@@ -593,7 +593,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_071660.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:11 robertwb]:\n> I think you misunderstood what I was going for. A test like\n[...] \n> \n> is perfectly fine to have in the EXAMPLES section, perfectly illustrating the math > and the implementation. \nI have fixed all this (only one TEST is left, in class_function.py, as I think it's\ntoo ugly to have in EXAMPLES) in just uploaded here cumulative patch named trac-8150. (so it subsumes the previous two that are to be discarded.)\nThe rest are re-done as you suggest.\nPlease take a look.",
+    "body": "Attachment [trac-8150.patch](tarball://root/attachments/some-uuid/ticket8150/trac-8150.patch) by dimpase created at 2010-02-04 05:58:52\n\nReplying to [comment:11 robertwb]:\n> I think you misunderstood what I was going for. A test like\n[...] \n> \n> is perfectly fine to have in the EXAMPLES section, perfectly illustrating the math > and the implementation. \nI have fixed all this (only one TEST is left, in class_function.py, as I think it's\ntoo ugly to have in EXAMPLES) in just uploaded here cumulative patch named trac-8150. (so it subsumes the previous two that are to be discarded.)\nThe rest are re-done as you suggest.\nPlease take a look.",
     "created_at": "2010-02-04T05:58:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8150",
     "type": "issue_comment",
@@ -602,7 +602,7 @@ archive/issue_comments_071660.json:
 }
 ```
 
-Attachment
+Attachment [trac-8150.patch](tarball://root/attachments/some-uuid/ticket8150/trac-8150.patch) by dimpase created at 2010-02-04 05:58:52
 
 Replying to [comment:11 robertwb]:
 > I think you misunderstood what I was going for. A test like

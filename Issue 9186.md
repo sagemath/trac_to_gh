@@ -78,7 +78,7 @@ Changing status from new to needs_review.
 archive/issue_comments_085929.json:
 ```json
 {
-    "body": "Attachment\n\nI've put a new spkg at\n\n* http://sage.math.washington.edu/home/mpatel/trac/9186/r-2.10.1.p2.spkg",
+    "body": "Attachment [trac_9186-r_makeflags.patch](tarball://root/attachments/some-uuid/ticket9186/trac_9186-r_makeflags.patch) by mpatel created at 2010-06-09 02:25:21\n\nI've put a new spkg at\n\n* http://sage.math.washington.edu/home/mpatel/trac/9186/r-2.10.1.p2.spkg",
     "created_at": "2010-06-09T02:25:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9186",
     "type": "issue_comment",
@@ -87,7 +87,7 @@ archive/issue_comments_085929.json:
 }
 ```
 
-Attachment
+Attachment [trac_9186-r_makeflags.patch](tarball://root/attachments/some-uuid/ticket9186/trac_9186-r_makeflags.patch) by mpatel created at 2010-06-09 02:25:21
 
 I've put a new spkg at
 

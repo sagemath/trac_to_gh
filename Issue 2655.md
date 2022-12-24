@@ -36,7 +36,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2655
 archive/issue_comments_018264.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_2655_cython_9612.patch](tarball://root/attachments/some-uuid/ticket2655/trac_2655_cython_9612.patch) by gfurnish created at 2008-03-23 16:10:46",
     "created_at": "2008-03-23T16:10:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2655",
     "type": "issue_comment",
@@ -45,7 +45,7 @@ archive/issue_comments_018264.json:
 }
 ```
 
-Attachment
+Attachment [trac_2655_cython_9612.patch](tarball://root/attachments/some-uuid/ticket2655/trac_2655_cython_9612.patch) by gfurnish created at 2008-03-23 16:10:46
 
 
 
@@ -72,7 +72,7 @@ Changing status from new to assigned.
 archive/issue_comments_018266.json:
 ```json
 {
-    "body": "Attachment\n\nDo not apply 9612.patch, apply 9612.2 patch instead.  It removed several debug printf statements.",
+    "body": "Attachment [trac_2655_cython_9612.2.patch](tarball://root/attachments/some-uuid/ticket2655/trac_2655_cython_9612.2.patch) by gfurnish created at 2008-03-23 16:15:20\n\nDo not apply 9612.patch, apply 9612.2 patch instead.  It removed several debug printf statements.",
     "created_at": "2008-03-23T16:15:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2655",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_018266.json:
 }
 ```
 
-Attachment
+Attachment [trac_2655_cython_9612.2.patch](tarball://root/attachments/some-uuid/ticket2655/trac_2655_cython_9612.2.patch) by gfurnish created at 2008-03-23 16:15:20
 
 Do not apply 9612.patch, apply 9612.2 patch instead.  It removed several debug printf statements.
 
@@ -92,7 +92,7 @@ Do not apply 9612.patch, apply 9612.2 patch instead.  It removed several debug p
 archive/issue_comments_018267.json:
 ```json
 {
-    "body": "Attachment\n\nNew patch, apply this one *only*.  Removes more commented code.",
+    "body": "Attachment [trac_2655_cython_9612.3.patch](tarball://root/attachments/some-uuid/ticket2655/trac_2655_cython_9612.3.patch) by gfurnish created at 2008-03-23 16:19:13\n\nNew patch, apply this one *only*.  Removes more commented code.",
     "created_at": "2008-03-23T16:19:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2655",
     "type": "issue_comment",
@@ -101,7 +101,7 @@ archive/issue_comments_018267.json:
 }
 ```
 
-Attachment
+Attachment [trac_2655_cython_9612.3.patch](tarball://root/attachments/some-uuid/ticket2655/trac_2655_cython_9612.3.patch) by gfurnish created at 2008-03-23 16:19:13
 
 New patch, apply this one *only*.  Removes more commented code.
 
@@ -206,7 +206,7 @@ This wasn't near as scary of a patch as I had first supposed, good work. I merge
 archive/issue_comments_018273.json:
 ```json
 {
-    "body": "Attachment\n\nFix for clear.pyx issue",
+    "body": "Attachment [trac_2655_cython_9612_4.patch](tarball://root/attachments/some-uuid/ticket2655/trac_2655_cython_9612_4.patch) by gfurnish created at 2008-04-04 01:22:33\n\nFix for clear.pyx issue",
     "created_at": "2008-04-04T01:22:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2655",
     "type": "issue_comment",
@@ -215,7 +215,7 @@ archive/issue_comments_018273.json:
 }
 ```
 
-Attachment
+Attachment [trac_2655_cython_9612_4.patch](tarball://root/attachments/some-uuid/ticket2655/trac_2655_cython_9612_4.patch) by gfurnish created at 2008-04-04 01:22:33
 
 Fix for clear.pyx issue
 
@@ -262,7 +262,7 @@ Fixes doctests for cython 0.9.6.13
 archive/issue_comments_018276.json:
 ```json
 {
-    "body": "Attachment\n\n\n```\nThis has the new repository hierarchy, so you won't be able to pull\nfrom the online -devel ones. If no one reports any bugs in then I\nwill release tomorrow.\n\nhttp://sage.math.washington.edu/home/robertwb/cython/\n\n- Robert\n```\n",
+    "body": "Attachment [trac_2655_devel_1.patch](tarball://root/attachments/some-uuid/ticket2655/trac_2655_devel_1.patch) by gfurnish created at 2008-04-04 19:35:09\n\n\n```\nThis has the new repository hierarchy, so you won't be able to pull\nfrom the online -devel ones. If no one reports any bugs in then I\nwill release tomorrow.\n\nhttp://sage.math.washington.edu/home/robertwb/cython/\n\n- Robert\n```\n",
     "created_at": "2008-04-04T19:35:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2655",
     "type": "issue_comment",
@@ -271,7 +271,7 @@ archive/issue_comments_018276.json:
 }
 ```
 
-Attachment
+Attachment [trac_2655_devel_1.patch](tarball://root/attachments/some-uuid/ticket2655/trac_2655_devel_1.patch) by gfurnish created at 2008-04-04 19:35:09
 
 
 ```

@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8764
 archive/issue_comments_080180.json:
 ```json
 {
-    "body": "Attachment\n\noriginal Sage script by Alasdair McAndrew",
+    "body": "Attachment [des.sage](tarball://root/attachments/some-uuid/ticket8764/des.sage) by mvngu created at 2010-04-25 08:05:52\n\noriginal Sage script by Alasdair McAndrew",
     "created_at": "2010-04-25T08:05:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8764",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_080180.json:
 }
 ```
 
-Attachment
+Attachment [des.sage](tarball://root/attachments/some-uuid/ticket8764/des.sage) by mvngu created at 2010-04-25 08:05:52
 
 original Sage script by Alasdair McAndrew
 
@@ -89,7 +89,7 @@ des.sage as a patch against Sage 4.4.rc0
 archive/issue_comments_080183.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch [trac_8764-original-des.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8764/trac_8764-original-des.patch) contains essentially the same code as in [des.sage](http://trac.sagemath.org/sage_trac/attachment/ticket/8764/des.sage), but as a patch against the Sage library. The next task is to clean up that patch and organize the cryptography section of the reference manual in light of this implementation of DES.",
+    "body": "Attachment [trac_8764-original-des.patch](tarball://root/attachments/some-uuid/ticket8764/trac_8764-original-des.patch) by mvngu created at 2010-04-25 09:13:35\n\nThe patch [trac_8764-original-des.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8764/trac_8764-original-des.patch) contains essentially the same code as in [des.sage](http://trac.sagemath.org/sage_trac/attachment/ticket/8764/des.sage), but as a patch against the Sage library. The next task is to clean up that patch and organize the cryptography section of the reference manual in light of this implementation of DES.",
     "created_at": "2010-04-25T09:13:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8764",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_080183.json:
 }
 ```
 
-Attachment
+Attachment [trac_8764-original-des.patch](tarball://root/attachments/some-uuid/ticket8764/trac_8764-original-des.patch) by mvngu created at 2010-04-25 09:13:35
 
 The patch [trac_8764-original-des.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8764/trac_8764-original-des.patch) contains essentially the same code as in [des.sage](http://trac.sagemath.org/sage_trac/attachment/ticket/8764/des.sage), but as a patch against the Sage library. The next task is to clean up that patch and organize the cryptography section of the reference manual in light of this implementation of DES.
 
@@ -149,7 +149,7 @@ apply only trac_8764-original-des_v2.patch
 archive/issue_comments_080186.json:
 ```json
 {
-    "body": "Attachment\n\nclean version",
+    "body": "Attachment [trac_8764-original-des_v2.patch](tarball://root/attachments/some-uuid/ticket8764/trac_8764-original-des_v2.patch) by chapoton created at 2013-08-25 12:43:23\n\nclean version",
     "created_at": "2013-08-25T12:43:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8764",
     "type": "issue_comment",
@@ -158,7 +158,7 @@ archive/issue_comments_080186.json:
 }
 ```
 
-Attachment
+Attachment [trac_8764-original-des_v2.patch](tarball://root/attachments/some-uuid/ticket8764/trac_8764-original-des_v2.patch) by chapoton created at 2013-08-25 12:43:23
 
 clean version
 

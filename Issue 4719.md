@@ -72,7 +72,7 @@ Michael
 archive/issue_comments_035596.json:
 ```json
 {
-    "body": "Attachment\n\nFailing doctests should now fail correctly.",
+    "body": "Attachment [trac_4719_bin.patch](tarball://root/attachments/some-uuid/ticket4719/trac_4719_bin.patch) by gfurnish created at 2008-12-06 03:23:09\n\nFailing doctests should now fail correctly.",
     "created_at": "2008-12-06T03:23:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4719",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_035596.json:
 }
 ```
 
-Attachment
+Attachment [trac_4719_bin.patch](tarball://root/attachments/some-uuid/ticket4719/trac_4719_bin.patch) by gfurnish created at 2008-12-06 03:23:09
 
 Failing doctests should now fail correctly.
 

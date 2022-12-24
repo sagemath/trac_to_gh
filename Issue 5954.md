@@ -54,7 +54,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5954
 archive/issue_comments_047095.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [patch-1__QF_genus_symbols__3.4.1.patch](tarball://root/attachments/some-uuid/ticket5954/patch-1__QF_genus_symbols__3.4.1.patch) by jonhanke created at 2009-05-01 05:59:55",
     "created_at": "2009-05-01T05:59:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5954",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_047095.json:
 }
 ```
 
-Attachment
+Attachment [patch-1__QF_genus_symbols__3.4.1.patch](tarball://root/attachments/some-uuid/ticket5954/patch-1__QF_genus_symbols__3.4.1.patch) by jonhanke created at 2009-05-01 05:59:55
 
 
 

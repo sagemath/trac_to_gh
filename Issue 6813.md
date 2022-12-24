@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6813
 archive/issue_comments_056184.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [graph_world.sobj](tarball://root/attachments/some-uuid/ticket6813/graph_world.sobj) by ncohen created at 2009-08-23 08:44:25",
     "created_at": "2009-08-23T08:44:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6813",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_056184.json:
 }
 ```
 
-Attachment
+Attachment [graph_world.sobj](tarball://root/attachments/some-uuid/ticket6813/graph_world.sobj) by ncohen created at 2009-08-23 08:44:25
 
 
 
@@ -55,7 +55,7 @@ Attachment
 archive/issue_comments_056185.json:
 ```json
 {
-    "body": "Attachment\n\nI get errors.  At the bottom, I copy the md5 digest to check my download:\n\n\n```\nsage: g=graphs.WorldMap() \n---------------------------------------------------------------------------\nUnpicklingError                           Traceback (most recent call last)\n\n/home/jason/.sage/temp/littleone/13542/_home_jason__sage_init_sage_0.py in <module>()\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/graphs/graph_generators.pyc in WorldMap(self)\n   2985         from sage.structure.sage_object import load\n   2986         from sage.misc.misc import SAGE_DATA\n-> 2987         return load(SAGE_DATA+\"graphs/graph_world.sobj\")\n   2988 \n   2989 ################################################################################\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.load (sage/structure/sage_object.c:7173)()\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.loads (sage/structure/sage_object.c:8769)()\n\nUnpicklingError: invalid load key, '<'.\nsage: load sage.misc.misc.SAGE_DATA + 'graphs/graph_world.sobj'\n---------------------------------------------------------------------------\nUnpicklingError                           Traceback (most recent call last)\n\n/home/jason/.sage/temp/littleone/13542/_home_jason__sage_init_sage_0.py in <module>()\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.load (sage/structure/sage_object.c:7173)()\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.loads (sage/structure/sage_object.c:8769)()\n\nUnpicklingError: invalid load key, '<'.\nsage: os.listdir(sage.misc.misc.SAGE_DATA + 'graphs/')\n['graph_world.sobj', 'graphs.db']\nsage: import md5 \nsage: md5.md5(sage.misc.misc.SAGE_DATA + 'graphs/graph_world.sobj').hexdigest()\n'0ae838b9de40596827c6e674b733f489'\n```\n",
+    "body": "Attachment [worldmap.patch](tarball://root/attachments/some-uuid/ticket6813/worldmap.patch) by jason created at 2009-09-22 16:13:35\n\nI get errors.  At the bottom, I copy the md5 digest to check my download:\n\n\n```\nsage: g=graphs.WorldMap() \n---------------------------------------------------------------------------\nUnpicklingError                           Traceback (most recent call last)\n\n/home/jason/.sage/temp/littleone/13542/_home_jason__sage_init_sage_0.py in <module>()\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/graphs/graph_generators.pyc in WorldMap(self)\n   2985         from sage.structure.sage_object import load\n   2986         from sage.misc.misc import SAGE_DATA\n-> 2987         return load(SAGE_DATA+\"graphs/graph_world.sobj\")\n   2988 \n   2989 ################################################################################\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.load (sage/structure/sage_object.c:7173)()\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.loads (sage/structure/sage_object.c:8769)()\n\nUnpicklingError: invalid load key, '<'.\nsage: load sage.misc.misc.SAGE_DATA + 'graphs/graph_world.sobj'\n---------------------------------------------------------------------------\nUnpicklingError                           Traceback (most recent call last)\n\n/home/jason/.sage/temp/littleone/13542/_home_jason__sage_init_sage_0.py in <module>()\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.load (sage/structure/sage_object.c:7173)()\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.loads (sage/structure/sage_object.c:8769)()\n\nUnpicklingError: invalid load key, '<'.\nsage: os.listdir(sage.misc.misc.SAGE_DATA + 'graphs/')\n['graph_world.sobj', 'graphs.db']\nsage: import md5 \nsage: md5.md5(sage.misc.misc.SAGE_DATA + 'graphs/graph_world.sobj').hexdigest()\n'0ae838b9de40596827c6e674b733f489'\n```\n",
     "created_at": "2009-09-22T16:13:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6813",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_056185.json:
 }
 ```
 
-Attachment
+Attachment [worldmap.patch](tarball://root/attachments/some-uuid/ticket6813/worldmap.patch) by jason created at 2009-09-22 16:13:35
 
 I get errors.  At the bottom, I copy the md5 digest to check my download:
 
@@ -231,7 +231,7 @@ applies to sage-4.1.2.rc0
 archive/issue_comments_056190.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6813-worldmap.patch](tarball://root/attachments/some-uuid/ticket6813/6813-worldmap.patch) by awebb created at 2009-10-10 12:00:04",
     "created_at": "2009-10-10T12:00:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6813",
     "type": "issue_comment",
@@ -240,7 +240,7 @@ archive/issue_comments_056190.json:
 }
 ```
 
-Attachment
+Attachment [6813-worldmap.patch](tarball://root/attachments/some-uuid/ticket6813/6813-worldmap.patch) by awebb created at 2009-10-10 12:00:04
 
 
 

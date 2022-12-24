@@ -78,7 +78,7 @@ I have taken the liberty of correcting teh title and description on this ticket!
 archive/issue_comments_080919.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8816-cps-doc.patch](tarball://root/attachments/some-uuid/ticket8816/8816-cps-doc.patch) by robertwb created at 2010-04-29 18:09:51",
     "created_at": "2010-04-29T18:09:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8816",
     "type": "issue_comment",
@@ -87,7 +87,7 @@ archive/issue_comments_080919.json:
 }
 ```
 
-Attachment
+Attachment [8816-cps-doc.patch](tarball://root/attachments/some-uuid/ticket8816/8816-cps-doc.patch) by robertwb created at 2010-04-29 18:09:51
 
 
 

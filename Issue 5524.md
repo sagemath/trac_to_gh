@@ -74,7 +74,7 @@ Changing status from new to needs_review.
 archive/issue_comments_042978.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5524_attrcall_eq.patch](tarball://root/attachments/some-uuid/ticket5524/trac_5524_attrcall_eq.patch) by nthiery created at 2010-01-26 21:30:26",
     "created_at": "2010-01-26T21:30:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5524",
     "type": "issue_comment",
@@ -83,7 +83,7 @@ archive/issue_comments_042978.json:
 }
 ```
 
-Attachment
+Attachment [trac_5524_attrcall_eq.patch](tarball://root/attachments/some-uuid/ticket5524/trac_5524_attrcall_eq.patch) by nthiery created at 2010-01-26 21:30:26
 
 
 

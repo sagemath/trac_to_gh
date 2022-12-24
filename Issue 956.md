@@ -159,7 +159,7 @@ Michael
 archive/issue_comments_005827.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [7069.patch](tarball://root/attachments/some-uuid/ticket956/7069.patch) by mabshoff created at 2007-10-21 13:46:18",
     "created_at": "2007-10-21T13:46:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/956",
     "type": "issue_comment",
@@ -168,7 +168,7 @@ archive/issue_comments_005827.json:
 }
 ```
 
-Attachment
+Attachment [7069.patch](tarball://root/attachments/some-uuid/ticket956/7069.patch) by mabshoff created at 2007-10-21 13:46:18
 
 
 

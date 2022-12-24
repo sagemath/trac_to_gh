@@ -248,7 +248,7 @@ patch for ecl-10.4.1.spkg
 archive/issue_comments_078410.json:
 ```json
 {
-    "body": "Attachment\n\npatch for maxima-5.20.1.p1.spkg",
+    "body": "Attachment [maxima-5.20.1.p1.patch](tarball://root/attachments/some-uuid/ticket8645/maxima-5.20.1.p1.patch) by nbruin created at 2010-04-15 05:41:53\n\npatch for maxima-5.20.1.p1.spkg",
     "created_at": "2010-04-15T05:41:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8645",
     "type": "issue_comment",
@@ -257,7 +257,7 @@ archive/issue_comments_078410.json:
 }
 ```
 
-Attachment
+Attachment [maxima-5.20.1.p1.patch](tarball://root/attachments/some-uuid/ticket8645/maxima-5.20.1.p1.patch) by nbruin created at 2010-04-15 05:41:53
 
 patch for maxima-5.20.1.p1.spkg
 

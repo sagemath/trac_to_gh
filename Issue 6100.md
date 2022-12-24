@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6100
 archive/issue_comments_048665.json:
 ```json
 {
-    "body": "Attachment\n\nmain patch, implementing generators",
+    "body": "Attachment [13222.patch](tarball://root/attachments/some-uuid/ticket6100/13222.patch) by sault created at 2010-01-11 15:31:47\n\nmain patch, implementing generators",
     "created_at": "2010-01-11T15:31:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6100",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_048665.json:
 }
 ```
 
-Attachment
+Attachment [13222.patch](tarball://root/attachments/some-uuid/ticket6100/13222.patch) by sault created at 2010-01-11 15:31:47
 
 main patch, implementing generators
 
@@ -91,7 +91,7 @@ Changing status from new to needs_review.
 archive/issue_comments_048668.json:
 ```json
 {
-    "body": "Attachment\n\nGenerators of homology now computable via generators=true option in the homology() method of chain_complex.\n\nKnown issues:  If S is a simplicial complex, S.homology(generators=true) has not been directly implemented.  Furthermore, S.chain_complex().homology(generators=true) computes the generators based on the order in which simplices are chosen for computing S.chain_complex() -- which is not guaranteed to be the same order in which simplices are listed in S.",
+    "body": "Attachment [13223.patch](tarball://root/attachments/some-uuid/ticket6100/13223.patch) by sault created at 2010-01-11 15:35:42\n\nGenerators of homology now computable via generators=true option in the homology() method of chain_complex.\n\nKnown issues:  If S is a simplicial complex, S.homology(generators=true) has not been directly implemented.  Furthermore, S.chain_complex().homology(generators=true) computes the generators based on the order in which simplices are chosen for computing S.chain_complex() -- which is not guaranteed to be the same order in which simplices are listed in S.",
     "created_at": "2010-01-11T15:35:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6100",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_048668.json:
 }
 ```
 
-Attachment
+Attachment [13223.patch](tarball://root/attachments/some-uuid/ticket6100/13223.patch) by sault created at 2010-01-11 15:35:42
 
 Generators of homology now computable via generators=true option in the homology() method of chain_complex.
 
@@ -258,7 +258,7 @@ Since you're just dealing with generators for chain complexes, I don't know if i
 archive/issue_comments_048673.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6100-basis_homology-ts.patch](tarball://root/attachments/some-uuid/ticket6100/trac_6100-basis_homology-ts.patch) by tscrim created at 2013-04-03 21:04:06",
     "created_at": "2013-04-03T21:04:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6100",
     "type": "issue_comment",
@@ -267,7 +267,7 @@ archive/issue_comments_048673.json:
 }
 ```
 
-Attachment
+Attachment [trac_6100-basis_homology-ts.patch](tarball://root/attachments/some-uuid/ticket6100/trac_6100-basis_homology-ts.patch) by tscrim created at 2013-04-03 21:04:06
 
 
 

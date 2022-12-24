@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5249
 archive/issue_comments_040228.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [implicit-surface.patch](tarball://root/attachments/some-uuid/ticket5249/implicit-surface.patch) by jason created at 2009-02-12 20:36:16",
     "created_at": "2009-02-12T20:36:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_040228.json:
 }
 ```
 
-Attachment
+Attachment [implicit-surface.patch](tarball://root/attachments/some-uuid/ticket5249/implicit-surface.patch) by jason created at 2009-02-12 20:36:16
 
 
 
@@ -389,7 +389,7 @@ what is the status of work on this ticket? I might have some time next week to w
 archive/issue_comments_040240.json:
 ```json
 {
-    "body": "Attachment\n\nI updated trac5249.patch. Apply it on top of implicit-surfaces.patch.\n\nI added 28 examples to the docstring for implicit_plot3d. I also attached many-more-examples.tar, which contains a simple script I used to format the examples. It can output the examples in a Sage notebook format, so if you want to see the examples, you should check it out.\n\nJason: Here's the status. I've done much of the work that Carl described in his original email. Currently, the major thing left to do is fixing bugs.\n\nAside from the two bugs Carl mentioned, which are still outstanding, there is one critical bug that I discovered. If you specify different X, Y or Z ranges, then Jmol rendering is radically wrong (although Tachyon is unaffected). For example, try this:\n\n\n```\nvar('x,y,z')\nimplicit_plot3d(x^2+y^2+z^2-4,(-2,0),(-2,2),(-2,2)).show(viewer='jmol')\n```\n\n\nGood luck, I hope you can make some headway!",
+    "body": "Attachment [many-more-examples.tar](tarball://root/attachments/some-uuid/ticket5249/many-more-examples.tar) by wcauchois created at 2009-03-13 23:11:53\n\nI updated trac5249.patch. Apply it on top of implicit-surfaces.patch.\n\nI added 28 examples to the docstring for implicit_plot3d. I also attached many-more-examples.tar, which contains a simple script I used to format the examples. It can output the examples in a Sage notebook format, so if you want to see the examples, you should check it out.\n\nJason: Here's the status. I've done much of the work that Carl described in his original email. Currently, the major thing left to do is fixing bugs.\n\nAside from the two bugs Carl mentioned, which are still outstanding, there is one critical bug that I discovered. If you specify different X, Y or Z ranges, then Jmol rendering is radically wrong (although Tachyon is unaffected). For example, try this:\n\n\n```\nvar('x,y,z')\nimplicit_plot3d(x^2+y^2+z^2-4,(-2,0),(-2,2),(-2,2)).show(viewer='jmol')\n```\n\n\nGood luck, I hope you can make some headway!",
     "created_at": "2009-03-13T23:11:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
@@ -398,7 +398,7 @@ archive/issue_comments_040240.json:
 }
 ```
 
-Attachment
+Attachment [many-more-examples.tar](tarball://root/attachments/some-uuid/ticket5249/many-more-examples.tar) by wcauchois created at 2009-03-13 23:11:53
 
 I updated trac5249.patch. Apply it on top of implicit-surfaces.patch.
 
@@ -906,7 +906,7 @@ this applies cleanly against 3.4.2
 archive/issue_comments_040262.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5249-flat.patch](tarball://root/attachments/some-uuid/ticket5249/trac_5249-flat.patch) by was created at 2009-05-13 16:03:33",
     "created_at": "2009-05-13T16:03:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
@@ -915,7 +915,7 @@ archive/issue_comments_040262.json:
 }
 ```
 
-Attachment
+Attachment [trac_5249-flat.patch](tarball://root/attachments/some-uuid/ticket5249/trac_5249-flat.patch) by was created at 2009-05-13 16:03:33
 
 
 

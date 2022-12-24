@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5615
 archive/issue_comments_043852.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [preliminary-labels-as-values.patch](tarball://root/attachments/some-uuid/ticket5615/preliminary-labels-as-values.patch) by cwitty created at 2009-03-26 06:55:57",
     "created_at": "2009-03-26T06:55:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5615",
     "type": "issue_comment",
@@ -42,4 +42,4 @@ archive/issue_comments_043852.json:
 }
 ```
 
-Attachment
+Attachment [preliminary-labels-as-values.patch](tarball://root/attachments/some-uuid/ticket5615/preliminary-labels-as-values.patch) by cwitty created at 2009-03-26 06:55:57

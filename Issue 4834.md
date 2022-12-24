@@ -65,7 +65,7 @@ Changing assignee from was to jason.
 archive/issue_comments_036635.json:
 ```json
 {
-    "body": "Attachment\n\nAttached worksheet does a better job of illustrating the problem.  I plan to attack this at Bug Days if it is still open.\n\nCan we naturally coerce vectors from lower-dimensional subspaces into the obvious ambient vector space (the one with same degree, same ring or a common super-ring)?  That might be one other solution.",
+    "body": "Attachment [trac_4834_bug_demo.sws](tarball://root/attachments/some-uuid/ticket4834/trac_4834_bug_demo.sws) by rbeezer created at 2010-12-10 02:14:37\n\nAttached worksheet does a better job of illustrating the problem.  I plan to attack this at Bug Days if it is still open.\n\nCan we naturally coerce vectors from lower-dimensional subspaces into the obvious ambient vector space (the one with same degree, same ring or a common super-ring)?  That might be one other solution.",
     "created_at": "2010-12-10T02:14:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4834",
     "type": "issue_comment",
@@ -74,7 +74,7 @@ archive/issue_comments_036635.json:
 }
 ```
 
-Attachment
+Attachment [trac_4834_bug_demo.sws](tarball://root/attachments/some-uuid/ticket4834/trac_4834_bug_demo.sws) by rbeezer created at 2010-12-10 02:14:37
 
 Attached worksheet does a better job of illustrating the problem.  I plan to attack this at Bug Days if it is still open.
 

@@ -56,7 +56,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1453
 archive/issue_comments_009370.json:
 ```json
 {
-    "body": "Attachment\n\nMerged in 2.9.alpha5.",
+    "body": "Attachment [cython-dependencies.patch](tarball://root/attachments/some-uuid/ticket1453/cython-dependencies.patch) by mabshoff created at 2007-12-10 21:39:42\n\nMerged in 2.9.alpha5.",
     "created_at": "2007-12-10T21:39:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1453",
     "type": "issue_comment",
@@ -65,7 +65,7 @@ archive/issue_comments_009370.json:
 }
 ```
 
-Attachment
+Attachment [cython-dependencies.patch](tarball://root/attachments/some-uuid/ticket1453/cython-dependencies.patch) by mabshoff created at 2007-12-10 21:39:42
 
 Merged in 2.9.alpha5.
 

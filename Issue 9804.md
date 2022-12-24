@@ -49,7 +49,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9805
 archive/issue_comments_096329.json:
 ```json
 {
-    "body": "Attachment\n\n[attachment:trac_9805.patch Example patch] is provided to inform user of the workaround. I don't see how to get the worksheet directory of the user automatically. The DATA variable seems inaccessible from session.pyx.",
+    "body": "Attachment [trac_9805.patch](tarball://root/attachments/some-uuid/ticket9805/trac_9805.patch) by ppurka created at 2013-08-09 17:01:06\n\n[attachment:trac_9805.patch Example patch] is provided to inform user of the workaround. I don't see how to get the worksheet directory of the user automatically. The DATA variable seems inaccessible from session.pyx.",
     "created_at": "2013-08-09T17:01:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9804",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_096329.json:
 }
 ```
 
-Attachment
+Attachment [trac_9805.patch](tarball://root/attachments/some-uuid/ticket9805/trac_9805.patch) by ppurka created at 2013-08-09 17:01:06
 
 [attachment:trac_9805.patch Example patch] is provided to inform user of the workaround. I don't see how to get the worksheet directory of the user automatically. The DATA variable seems inaccessible from session.pyx.
 

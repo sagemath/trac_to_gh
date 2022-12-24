@@ -75,7 +75,7 @@ Initial patch
 archive/issue_comments_096181.json:
 ```json
 {
-    "body": "Attachment\n\nCurrent patch is on top of `trac_9337_toric_divisor_classes.patch` from #9337.",
+    "body": "Attachment [trac_9798_accelerate_Polyhedron.patch](tarball://root/attachments/some-uuid/ticket9798/trac_9798_accelerate_Polyhedron.patch) by vbraun created at 2010-08-24 21:53:01\n\nCurrent patch is on top of `trac_9337_toric_divisor_classes.patch` from #9337.",
     "created_at": "2010-08-24T21:53:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9797",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_096181.json:
 }
 ```
 
-Attachment
+Attachment [trac_9798_accelerate_Polyhedron.patch](tarball://root/attachments/some-uuid/ticket9798/trac_9798_accelerate_Polyhedron.patch) by vbraun created at 2010-08-24 21:53:01
 
 Current patch is on top of `trac_9337_toric_divisor_classes.patch` from #9337.
 
@@ -937,7 +937,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_096215.json:
 ```json
 {
-    "body": "Attachment\n\nI think it would be good to add a little more detail to the SPKG.txt as well about where the code comes from.  \n\nI've tested this on two macs (10.5 and 10.6) and a linux machine (core i7 860, Ubuntu 9.10).  Passed all tests in schemes, rings, and geometry on those platforms.  If David or someone else can test this on Solaris and its OK then I think I can give it a positive review.\n\nNice documentation changes - I've meant to improve the Polyhedron class docstring for a while but I'm glad you beat me to it.",
+    "body": "Attachment [random.c](tarball://root/attachments/some-uuid/ticket9798/random.c) by mhampton created at 2010-09-23 13:02:36\n\nI think it would be good to add a little more detail to the SPKG.txt as well about where the code comes from.  \n\nI've tested this on two macs (10.5 and 10.6) and a linux machine (core i7 860, Ubuntu 9.10).  Passed all tests in schemes, rings, and geometry on those platforms.  If David or someone else can test this on Solaris and its OK then I think I can give it a positive review.\n\nNice documentation changes - I've meant to improve the Polyhedron class docstring for a while but I'm glad you beat me to it.",
     "created_at": "2010-09-23T13:02:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9797",
     "type": "issue_comment",
@@ -946,7 +946,7 @@ archive/issue_comments_096215.json:
 }
 ```
 
-Attachment
+Attachment [random.c](tarball://root/attachments/some-uuid/ticket9798/random.c) by mhampton created at 2010-09-23 13:02:36
 
 I think it would be good to add a little more detail to the SPKG.txt as well about where the code comes from.  
 

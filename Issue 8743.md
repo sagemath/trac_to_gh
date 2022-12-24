@@ -51,7 +51,7 @@ Changing status from new to needs_review.
 archive/issue_comments_079992.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-8743-change_ring.patch](tarball://root/attachments/some-uuid/ticket8743/trac-8743-change_ring.patch) by jason created at 2010-04-22 01:41:00",
     "created_at": "2010-04-22T01:41:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8743",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_079992.json:
 }
 ```
 
-Attachment
+Attachment [trac-8743-change_ring.patch](tarball://root/attachments/some-uuid/ticket8743/trac-8743-change_ring.patch) by jason created at 2010-04-22 01:41:00
 
 
 

@@ -150,7 +150,7 @@ Applies to 4.3.4
 archive/issue_comments_051171.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch implements complex elliptic logs as promised, and makes a few minor improvements to the periods & elliptic log code generally.\n\nThe new code works fine for real embeddings too, and is almost as fast:  for the database curves up to conductor 1000 (and with the optional database installed so that all generators are pre-installed) the new code takes 183 seconds to find all logs of all generators (for the optimal curves) while the old code takes 154s.  The new code is also rather simpler.  I have left in the old code.  Reviewers wishing to test this can do so by switching lines 1243 and 1244 of period_lattice.py: doctests almost all succeed, with a tiny amount of fuzz in some elliptic exponential computations.\n\nI am CC'ing rlm since after installing the optional database of curves (and generators) and testing all of sage/schemes/elliptic_curves, I found that there were some failures in heegner.py, mainly caused by E.gens() sometimes now producing different generators.  I fixed almost all of these (since I think that as a matter of principle these doctests should not be dependent on the database not being installed!) but there are two I cannot fix (lines 1409 and 1415 of heegner.py) and I am hoping that Robert M will be able to.",
+    "body": "Attachment [trac_6390-celog.patch](tarball://root/attachments/some-uuid/ticket6390/trac_6390-celog.patch) by cremona created at 2010-03-20 20:55:27\n\nThe patch implements complex elliptic logs as promised, and makes a few minor improvements to the periods & elliptic log code generally.\n\nThe new code works fine for real embeddings too, and is almost as fast:  for the database curves up to conductor 1000 (and with the optional database installed so that all generators are pre-installed) the new code takes 183 seconds to find all logs of all generators (for the optimal curves) while the old code takes 154s.  The new code is also rather simpler.  I have left in the old code.  Reviewers wishing to test this can do so by switching lines 1243 and 1244 of period_lattice.py: doctests almost all succeed, with a tiny amount of fuzz in some elliptic exponential computations.\n\nI am CC'ing rlm since after installing the optional database of curves (and generators) and testing all of sage/schemes/elliptic_curves, I found that there were some failures in heegner.py, mainly caused by E.gens() sometimes now producing different generators.  I fixed almost all of these (since I think that as a matter of principle these doctests should not be dependent on the database not being installed!) but there are two I cannot fix (lines 1409 and 1415 of heegner.py) and I am hoping that Robert M will be able to.",
     "created_at": "2010-03-20T20:55:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
@@ -159,7 +159,7 @@ archive/issue_comments_051171.json:
 }
 ```
 
-Attachment
+Attachment [trac_6390-celog.patch](tarball://root/attachments/some-uuid/ticket6390/trac_6390-celog.patch) by cremona created at 2010-03-20 20:55:27
 
 The patch implements complex elliptic logs as promised, and makes a few minor improvements to the periods & elliptic log code generally.
 
@@ -210,7 +210,7 @@ Changing status from new to needs_review.
 archive/issue_comments_051174.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6390-doc.patch](tarball://root/attachments/some-uuid/ticket6390/trac_6390-doc.patch) by rlm created at 2010-03-23 15:41:30",
     "created_at": "2010-03-23T15:41:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
@@ -219,7 +219,7 @@ archive/issue_comments_051174.json:
 }
 ```
 
-Attachment
+Attachment [trac_6390-doc.patch](tarball://root/attachments/some-uuid/ticket6390/trac_6390-doc.patch) by rlm created at 2010-03-23 15:41:30
 
 
 
@@ -324,7 +324,7 @@ It is a shame that the tabs are not visible here.
 archive/issue_comments_051179.json:
 ```json
 {
-    "body": "Attachment\n\nexported against 4.3.4, replaces the previous patches",
+    "body": "Attachment [trac_6390.patch](tarball://root/attachments/some-uuid/ticket6390/trac_6390.patch) by wuthrich created at 2010-03-28 19:05:22\n\nexported against 4.3.4, replaces the previous patches",
     "created_at": "2010-03-28T19:05:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
@@ -333,7 +333,7 @@ archive/issue_comments_051179.json:
 }
 ```
 
-Attachment
+Attachment [trac_6390.patch](tarball://root/attachments/some-uuid/ticket6390/trac_6390.patch) by wuthrich created at 2010-03-28 19:05:22
 
 exported against 4.3.4, replaces the previous patches
 

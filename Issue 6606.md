@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6606
 archive/issue_comments_054088.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [gamma.patch](tarball://root/attachments/some-uuid/ticket6606/gamma.patch) by simon created at 2009-07-23 21:13:39",
     "created_at": "2009-07-23T21:13:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6606",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_054088.json:
 }
 ```
 
-Attachment
+Attachment [gamma.patch](tarball://root/attachments/some-uuid/ticket6606/gamma.patch) by simon created at 2009-07-23 21:13:39
 
 
 
@@ -86,7 +86,7 @@ Looks like someone forgot to run sage -t before submitting the patch...
 archive/issue_comments_054090.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [gamma.2.patch](tarball://root/attachments/some-uuid/ticket6606/gamma.2.patch) by simon created at 2009-07-24 21:13:16",
     "created_at": "2009-07-24T21:13:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6606",
     "type": "issue_comment",
@@ -95,7 +95,7 @@ archive/issue_comments_054090.json:
 }
 ```
 
-Attachment
+Attachment [gamma.2.patch](tarball://root/attachments/some-uuid/ticket6606/gamma.2.patch) by simon created at 2009-07-24 21:13:16
 
 
 

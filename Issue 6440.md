@@ -92,7 +92,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6440
 archive/issue_comments_051694.json:
 ```json
 {
-    "body": "Attachment\n\nSee #6906 for apparently the solution (upgrade mercurial)",
+    "body": "Attachment [serve.png](tarball://root/attachments/some-uuid/ticket6440/serve.png) by jason created at 2009-09-15 04:36:22\n\nSee #6906 for apparently the solution (upgrade mercurial)",
     "created_at": "2009-09-15T04:36:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6440",
     "type": "issue_comment",
@@ -101,7 +101,7 @@ archive/issue_comments_051694.json:
 }
 ```
 
-Attachment
+Attachment [serve.png](tarball://root/attachments/some-uuid/ticket6440/serve.png) by jason created at 2009-09-15 04:36:22
 
 See #6906 for apparently the solution (upgrade mercurial)
 

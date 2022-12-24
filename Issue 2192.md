@@ -104,7 +104,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2192
 archive/issue_comments_014385.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-2192-pt2.patch](tarball://root/attachments/some-uuid/ticket2192/trac-2192-pt2.patch) by craigcitro created at 2008-02-17 12:09:26",
     "created_at": "2008-02-17T12:09:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2192",
     "type": "issue_comment",
@@ -113,7 +113,7 @@ archive/issue_comments_014385.json:
 }
 ```
 
-Attachment
+Attachment [trac-2192-pt2.patch](tarball://root/attachments/some-uuid/ticket2192/trac-2192-pt2.patch) by craigcitro created at 2008-02-17 12:09:26
 
 
 
@@ -289,7 +289,7 @@ single patch with all changes
 archive/issue_comments_014392.json:
 ```json
 {
-    "body": "Attachment\n\nI've fixed several things, addressed all the referee's comments, and attached a new patch. Here's a quick description of what went into the new patch:\n\n* Took William's advice, and simply fixed `DirichletGroup(N,R)` to do what one would    expect. Removed the `integral_value` option my previous patch introduced.\n\n* Fixing this, and making it work, involved changing something: \n  {{{\n  sage: CyclotomicField(5).zeta_order()\n  }}}\n  has become\n  {{{\n  sage: CyclotomicField(5).zeta_order()\n  10\n  sage: CyclotomicField(5)._n()\n  5\n  }}}\n  That is, I've made it explicit that adding an `n`th root of unity with `n` odd adds a `2n`th root of unity. I debated not doing this, but it ended up being that if I didn't make this change, then every time someone called `zeta_order()` on a `CyclotomicField`, they had to check to see if the result was odd, and if so, multiply it by two to actually make what they were doing correct. I figured that this was a much better fix, and William agreed, so it seemed like a reasonable plan. \n  This involved making lots of changes all over the place, and introducing the `_n()` method. I've tested it pretty thoroughly, so I don't think there's any craziness left, but I'm happy to fix bugs if I've missed anything.\n  Making `CyclotomicField(3)(CyclotomicField(6).0)` still work correctly with this change took some extra coding. I mention this so that whoever is reviewing this patch doesn't think I was changing things at random.\n\nJust for the sake of completeness, let me address all the comments in William's referee report:\n\n1. Changed all the `pyrex`s to `cython`s.\n2. Actually, this doctests are perfectly fine. Notice that (somewhat counter-intuitively for me, as well as you) it's a method on the *element*, not on the *field*. So if `x` is in a quadratic extension, `x._lift_cyclotomic_element(...)` calls specifically that code. \n3. Yep, took those out. I always feel rude removing other people's comments -- after all, if I leave comments in the code, I think it's for a reason. But these are now gone.\n4. This is similar to (2) -- the issue is that in that case, you know both `self.parent()` and `new_parent` are cyclotomic fields of degree 2 over Q, and that an embedding is possible. Actually, I guess you could also have cf3 and cf3, or cf6 and cf6. The code still works in this case, but I've corrected the comment and I'll add the patch after I finish typing this.\n5. Done. I agree, this is cleaner. I didn't read until the end that you thought it should be on a separate ticket, so I'm including it here (since it's already pretty mixed in with this character code). I also added the `integral` flag.\n\nI think that covers it.",
+    "body": "Attachment [trac-2192-full.patch](tarball://root/attachments/some-uuid/ticket2192/trac-2192-full.patch) by craigcitro created at 2008-03-14 08:02:15\n\nI've fixed several things, addressed all the referee's comments, and attached a new patch. Here's a quick description of what went into the new patch:\n\n* Took William's advice, and simply fixed `DirichletGroup(N,R)` to do what one would    expect. Removed the `integral_value` option my previous patch introduced.\n\n* Fixing this, and making it work, involved changing something: \n  {{{\n  sage: CyclotomicField(5).zeta_order()\n  }}}\n  has become\n  {{{\n  sage: CyclotomicField(5).zeta_order()\n  10\n  sage: CyclotomicField(5)._n()\n  5\n  }}}\n  That is, I've made it explicit that adding an `n`th root of unity with `n` odd adds a `2n`th root of unity. I debated not doing this, but it ended up being that if I didn't make this change, then every time someone called `zeta_order()` on a `CyclotomicField`, they had to check to see if the result was odd, and if so, multiply it by two to actually make what they were doing correct. I figured that this was a much better fix, and William agreed, so it seemed like a reasonable plan. \n  This involved making lots of changes all over the place, and introducing the `_n()` method. I've tested it pretty thoroughly, so I don't think there's any craziness left, but I'm happy to fix bugs if I've missed anything.\n  Making `CyclotomicField(3)(CyclotomicField(6).0)` still work correctly with this change took some extra coding. I mention this so that whoever is reviewing this patch doesn't think I was changing things at random.\n\nJust for the sake of completeness, let me address all the comments in William's referee report:\n\n1. Changed all the `pyrex`s to `cython`s.\n2. Actually, this doctests are perfectly fine. Notice that (somewhat counter-intuitively for me, as well as you) it's a method on the *element*, not on the *field*. So if `x` is in a quadratic extension, `x._lift_cyclotomic_element(...)` calls specifically that code. \n3. Yep, took those out. I always feel rude removing other people's comments -- after all, if I leave comments in the code, I think it's for a reason. But these are now gone.\n4. This is similar to (2) -- the issue is that in that case, you know both `self.parent()` and `new_parent` are cyclotomic fields of degree 2 over Q, and that an embedding is possible. Actually, I guess you could also have cf3 and cf3, or cf6 and cf6. The code still works in this case, but I've corrected the comment and I'll add the patch after I finish typing this.\n5. Done. I agree, this is cleaner. I didn't read until the end that you thought it should be on a separate ticket, so I'm including it here (since it's already pretty mixed in with this character code). I also added the `integral` flag.\n\nI think that covers it.",
     "created_at": "2008-03-14T08:02:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2192",
     "type": "issue_comment",
@@ -298,7 +298,7 @@ archive/issue_comments_014392.json:
 }
 ```
 
-Attachment
+Attachment [trac-2192-full.patch](tarball://root/attachments/some-uuid/ticket2192/trac-2192-full.patch) by craigcitro created at 2008-03-14 08:02:15
 
 I've fixed several things, addressed all the referee's comments, and attached a new patch. Here's a quick description of what went into the new patch:
 
@@ -336,7 +336,7 @@ I think that covers it.
 archive/issue_comments_014393.json:
 ```json
 {
-    "body": "Attachment\n\napply after trac-2192-full.patch",
+    "body": "Attachment [trac-2192-touch-up.patch](tarball://root/attachments/some-uuid/ticket2192/trac-2192-touch-up.patch) by craigcitro created at 2008-03-14 08:03:16\n\napply after trac-2192-full.patch",
     "created_at": "2008-03-14T08:03:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2192",
     "type": "issue_comment",
@@ -345,7 +345,7 @@ archive/issue_comments_014393.json:
 }
 ```
 
-Attachment
+Attachment [trac-2192-touch-up.patch](tarball://root/attachments/some-uuid/ticket2192/trac-2192-touch-up.patch) by craigcitro created at 2008-03-14 08:03:16
 
 apply after trac-2192-full.patch
 

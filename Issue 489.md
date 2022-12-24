@@ -291,7 +291,7 @@ LiE expect interface bundle
 archive/issue_comments_002445.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [lie.py](tarball://root/attachments/some-uuid/ticket489/lie.py) by mhansen created at 2007-08-28 17:21:09",
     "created_at": "2007-08-28T17:21:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/489",
     "type": "issue_comment",
@@ -300,7 +300,7 @@ archive/issue_comments_002445.json:
 }
 ```
 
-Attachment
+Attachment [lie.py](tarball://root/attachments/some-uuid/ticket489/lie.py) by mhansen created at 2007-08-28 17:21:09
 
 
 

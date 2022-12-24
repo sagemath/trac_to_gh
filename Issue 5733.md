@@ -78,7 +78,7 @@ This needs to be implemented, but until then it needs to fail more gracefully. T
 archive/issue_comments_044801.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5733.patch](tarball://root/attachments/some-uuid/ticket5733/trac_5733.patch) by rlm created at 2009-04-10 15:32:37",
     "created_at": "2009-04-10T15:32:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5733",
     "type": "issue_comment",
@@ -87,7 +87,7 @@ archive/issue_comments_044801.json:
 }
 ```
 
-Attachment
+Attachment [trac_5733.patch](tarball://root/attachments/some-uuid/ticket5733/trac_5733.patch) by rlm created at 2009-04-10 15:32:37
 
 
 

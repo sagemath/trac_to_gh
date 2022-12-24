@@ -50,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1071
 archive/issue_comments_006486.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [iv.patch](tarball://root/attachments/some-uuid/ticket1071/iv.patch) by malb created at 2007-11-02 22:49:03",
     "created_at": "2007-11-02T22:49:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1071",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_006486.json:
 }
 ```
 
-Attachment
+Attachment [iv.patch](tarball://root/attachments/some-uuid/ticket1071/iv.patch) by malb created at 2007-11-02 22:49:03
 
 
 
@@ -68,7 +68,7 @@ Attachment
 archive/issue_comments_006487.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1071.patch](tarball://root/attachments/some-uuid/ticket1071/1071.patch) by mhansen created at 2007-11-03 18:29:48",
     "created_at": "2007-11-03T18:29:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1071",
     "type": "issue_comment",
@@ -77,7 +77,7 @@ archive/issue_comments_006487.json:
 }
 ```
 
-Attachment
+Attachment [1071.patch](tarball://root/attachments/some-uuid/ticket1071/1071.patch) by mhansen created at 2007-11-03 18:29:48
 
 
 
@@ -184,7 +184,7 @@ Resolution: fixed
 archive/issue_comments_006492.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1071-final.patch](tarball://root/attachments/some-uuid/ticket1071/1071-final.patch) by mhansen created at 2007-11-06 23:19:27",
     "created_at": "2007-11-06T23:19:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1071",
     "type": "issue_comment",
@@ -193,7 +193,7 @@ archive/issue_comments_006492.json:
 }
 ```
 
-Attachment
+Attachment [1071-final.patch](tarball://root/attachments/some-uuid/ticket1071/1071-final.patch) by mhansen created at 2007-11-06 23:19:27
 
 
 
@@ -202,7 +202,7 @@ Attachment
 archive/issue_comments_006493.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1071-final.2.patch](tarball://root/attachments/some-uuid/ticket1071/1071-final.2.patch) by nthiery created at 2009-04-14 02:23:24",
     "created_at": "2009-04-14T02:23:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1071",
     "type": "issue_comment",
@@ -211,4 +211,4 @@ archive/issue_comments_006493.json:
 }
 ```
 
-Attachment
+Attachment [1071-final.2.patch](tarball://root/attachments/some-uuid/ticket1071/1071-final.2.patch) by nthiery created at 2009-04-14 02:23:24

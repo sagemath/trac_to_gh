@@ -77,7 +77,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6294
 archive/issue_comments_050233.json:
 ```json
 {
-    "body": "Attachment\n\nAll I did was change the clisp command to ecl and the tests passed. The exception is version and I could not find an equivalent for ecl in the manual. For now I just put a string to refer to the console which does print the version number. I did not attempt to fill in any of the \"NotImplemented\" methods.\n\nAdam",
+    "body": "Attachment [trac_6294-lisp_interface.patch](tarball://root/attachments/some-uuid/ticket6294/trac_6294-lisp_interface.patch) by awebb created at 2009-07-12 11:32:24\n\nAll I did was change the clisp command to ecl and the tests passed. The exception is version and I could not find an equivalent for ecl in the manual. For now I just put a string to refer to the console which does print the version number. I did not attempt to fill in any of the \"NotImplemented\" methods.\n\nAdam",
     "created_at": "2009-07-12T11:32:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6294",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_050233.json:
 }
 ```
 
-Attachment
+Attachment [trac_6294-lisp_interface.patch](tarball://root/attachments/some-uuid/ticket6294/trac_6294-lisp_interface.patch) by awebb created at 2009-07-12 11:32:24
 
 All I did was change the clisp command to ecl and the tests passed. The exception is version and I could not find an equivalent for ecl in the manual. For now I just put a string to refer to the console which does print the version number. I did not attempt to fill in any of the "NotImplemented" methods.
 

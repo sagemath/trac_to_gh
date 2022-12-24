@@ -77,7 +77,7 @@ This otherwise deserves a positive review, except that I couldn't verify the cla
 archive/issue_comments_020969.json:
 ```json
 {
-    "body": "Attachment\n\nKiran, I tried to find some examples and couldn't.  I think the point of the warning in the docstring is that we are not guaranteeing that the finite fields code wouldn't change in the future in such a way that other generators would be returned; or, for that matter, that the same version of Sage running on wildly different architectures won't return different generators.  I modified the docstrings a bit to (hopefully) make that more clear.\n\nNote that multiplicative_generator() calls pari's znprimroot(), so whatever fuzziness there is in pari's finding a generator gets automatically inherited by Sage.",
+    "body": "Attachment [trac_3045.patch](tarball://root/attachments/some-uuid/ticket3045/trac_3045.patch) by AlexGhitza created at 2009-01-24 00:47:25\n\nKiran, I tried to find some examples and couldn't.  I think the point of the warning in the docstring is that we are not guaranteeing that the finite fields code wouldn't change in the future in such a way that other generators would be returned; or, for that matter, that the same version of Sage running on wildly different architectures won't return different generators.  I modified the docstrings a bit to (hopefully) make that more clear.\n\nNote that multiplicative_generator() calls pari's znprimroot(), so whatever fuzziness there is in pari's finding a generator gets automatically inherited by Sage.",
     "created_at": "2009-01-24T00:47:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3045",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_020969.json:
 }
 ```
 
-Attachment
+Attachment [trac_3045.patch](tarball://root/attachments/some-uuid/ticket3045/trac_3045.patch) by AlexGhitza created at 2009-01-24 00:47:25
 
 Kiran, I tried to find some examples and couldn't.  I think the point of the warning in the docstring is that we are not guaranteeing that the finite fields code wouldn't change in the future in such a way that other generators would be returned; or, for that matter, that the same version of Sage running on wildly different architectures won't return different generators.  I modified the docstrings a bit to (hopefully) make that more clear.
 

@@ -60,7 +60,7 @@ Changing status from new to assigned.
 archive/issue_comments_029812.json:
 ```json
 {
-    "body": "Attachment\n\nThis is a diff with some work around code",
+    "body": "Attachment [trac_4117.patch](tarball://root/attachments/some-uuid/ticket4117/trac_4117.patch) by mabshoff created at 2008-09-14 09:55:26\n\nThis is a diff with some work around code",
     "created_at": "2008-09-14T09:55:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4117",
     "type": "issue_comment",
@@ -69,7 +69,7 @@ archive/issue_comments_029812.json:
 }
 ```
 
-Attachment
+Attachment [trac_4117.patch](tarball://root/attachments/some-uuid/ticket4117/trac_4117.patch) by mabshoff created at 2008-09-14 09:55:26
 
 This is a diff with some work around code
 
@@ -116,7 +116,7 @@ Resolution: fixed
 archive/issue_comments_029815.json:
 ```json
 {
-    "body": "Attachment\n\nMerged trac-4117.patch in Sage 3.1.2.rc3",
+    "body": "Attachment [trac-4117.patch](tarball://root/attachments/some-uuid/ticket4117/trac-4117.patch) by mabshoff created at 2008-09-14 11:02:46\n\nMerged trac-4117.patch in Sage 3.1.2.rc3",
     "created_at": "2008-09-14T11:02:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4117",
     "type": "issue_comment",
@@ -125,7 +125,7 @@ archive/issue_comments_029815.json:
 }
 ```
 
-Attachment
+Attachment [trac-4117.patch](tarball://root/attachments/some-uuid/ticket4117/trac-4117.patch) by mabshoff created at 2008-09-14 11:02:46
 
 Merged trac-4117.patch in Sage 3.1.2.rc3
 

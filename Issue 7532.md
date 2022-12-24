@@ -262,7 +262,7 @@ Changing status from new to needs_review.
 archive/issue_comments_063858.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch fixes an error in ell_rational_field.py which is the only one I see in that directory after applying the patches at #7535,\n\nJohn (jhpalmieri), can you post the details of the errors you had on the other 3 files in that directory?",
+    "body": "Attachment [trac_7532.patch](tarball://root/attachments/some-uuid/ticket7532/trac_7532.patch) by cremona created at 2010-01-19 12:45:46\n\nThe attached patch fixes an error in ell_rational_field.py which is the only one I see in that directory after applying the patches at #7535,\n\nJohn (jhpalmieri), can you post the details of the errors you had on the other 3 files in that directory?",
     "created_at": "2010-01-19T12:45:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7532",
     "type": "issue_comment",
@@ -271,7 +271,7 @@ archive/issue_comments_063858.json:
 }
 ```
 
-Attachment
+Attachment [trac_7532.patch](tarball://root/attachments/some-uuid/ticket7532/trac_7532.patch) by cremona created at 2010-01-19 12:45:46
 
 The attached patch fixes an error in ell_rational_field.py which is the only one I see in that directory after applying the patches at #7535,
 
@@ -407,7 +407,7 @@ plus 45 more failures in padics.py (too many to include here), and I expect fail
 archive/issue_comments_063860.json:
 ```json
 {
-    "body": "Attachment\n\nfor purposes of illustration only -- causes doctest failures in schemes/elliptic_curves",
+    "body": "Attachment [trac_7532-donotuse.patch](tarball://root/attachments/some-uuid/ticket7532/trac_7532-donotuse.patch) by jhpalmieri created at 2010-01-19 18:24:36\n\nfor purposes of illustration only -- causes doctest failures in schemes/elliptic_curves",
     "created_at": "2010-01-19T18:24:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7532",
     "type": "issue_comment",
@@ -416,7 +416,7 @@ archive/issue_comments_063860.json:
 }
 ```
 
-Attachment
+Attachment [trac_7532-donotuse.patch](tarball://root/attachments/some-uuid/ticket7532/trac_7532-donotuse.patch) by jhpalmieri created at 2010-01-19 18:24:36
 
 for purposes of illustration only -- causes doctest failures in schemes/elliptic_curves
 
@@ -609,7 +609,7 @@ Apply instead of previous one to 4.3.1.rc0 (rings.pyx fix)
 archive/issue_comments_063871.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch trac_7532-rings.patch  fixes the problem in rings.pyx and all the fallout -- I checked the entire library and it is fine.  The diagnosis was exactly as above, and only a few lines needed to be changed!\n\nI am switchingg this to \"needs work\" and then \"needs review\", hoping that it can get in on the back of #7535 (just this once!)",
+    "body": "Attachment [trac_7532-rings.patch](tarball://root/attachments/some-uuid/ticket7532/trac_7532-rings.patch) by cremona created at 2010-01-20 13:10:48\n\nThe patch trac_7532-rings.patch  fixes the problem in rings.pyx and all the fallout -- I checked the entire library and it is fine.  The diagnosis was exactly as above, and only a few lines needed to be changed!\n\nI am switchingg this to \"needs work\" and then \"needs review\", hoping that it can get in on the back of #7535 (just this once!)",
     "created_at": "2010-01-20T13:10:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7532",
     "type": "issue_comment",
@@ -618,7 +618,7 @@ archive/issue_comments_063871.json:
 }
 ```
 
-Attachment
+Attachment [trac_7532-rings.patch](tarball://root/attachments/some-uuid/ticket7532/trac_7532-rings.patch) by cremona created at 2010-01-20 13:10:48
 
 The patch trac_7532-rings.patch  fixes the problem in rings.pyx and all the fallout -- I checked the entire library and it is fine.  The diagnosis was exactly as above, and only a few lines needed to be changed!
 

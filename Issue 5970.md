@@ -48,7 +48,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5970
 archive/issue_comments_047321.json:
 ```json
 {
-    "body": "Attachment\n\nIntroduce Weak Reference to the cache of PolynomialRing",
+    "body": "Attachment [WeakReferences.patch](tarball://root/attachments/some-uuid/ticket5970/WeakReferences.patch) by SimonKing created at 2009-05-03 07:22:11\n\nIntroduce Weak Reference to the cache of PolynomialRing",
     "created_at": "2009-05-03T07:22:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
@@ -57,7 +57,7 @@ archive/issue_comments_047321.json:
 }
 ```
 
-Attachment
+Attachment [WeakReferences.patch](tarball://root/attachments/some-uuid/ticket5970/WeakReferences.patch) by SimonKing created at 2009-05-03 07:22:11
 
 Introduce Weak Reference to the cache of PolynomialRing
 
@@ -153,7 +153,7 @@ sage: test_ec_leak(2^17)
 archive/issue_comments_047324.json:
 ```json
 {
-    "body": "Attachment\n\nsimple-minded test suite",
+    "body": "Attachment [test.sage](tarball://root/attachments/some-uuid/ticket5970/test.sage) by AlexGhitza created at 2009-05-03 08:02:38\n\nsimple-minded test suite",
     "created_at": "2009-05-03T08:02:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
@@ -162,7 +162,7 @@ archive/issue_comments_047324.json:
 }
 ```
 
-Attachment
+Attachment [test.sage](tarball://root/attachments/some-uuid/ticket5970/test.sage) by AlexGhitza created at 2009-05-03 08:02:38
 
 simple-minded test suite
 
@@ -341,7 +341,7 @@ slightly safer weakref patch
 archive/issue_comments_047332.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch uses weakrefs for multivariate polynomials but not for univariate polynomials (we still use the same `_cache` object to hold both though). It seems the SIGSEGV is due to some Pari issue so the patch seems safe at first sight (famous last words). I will post debug info in a minute.",
+    "body": "Attachment [weakref_poly_ring.patch](tarball://root/attachments/some-uuid/ticket5970/weakref_poly_ring.patch) by malb created at 2009-08-25 23:45:38\n\nThe attached patch uses weakrefs for multivariate polynomials but not for univariate polynomials (we still use the same `_cache` object to hold both though). It seems the SIGSEGV is due to some Pari issue so the patch seems safe at first sight (famous last words). I will post debug info in a minute.",
     "created_at": "2009-08-25T23:45:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
@@ -350,7 +350,7 @@ archive/issue_comments_047332.json:
 }
 ```
 
-Attachment
+Attachment [weakref_poly_ring.patch](tarball://root/attachments/some-uuid/ticket5970/weakref_poly_ring.patch) by malb created at 2009-08-25 23:45:38
 
 The attached patch uses weakrefs for multivariate polynomials but not for univariate polynomials (we still use the same `_cache` object to hold both though). It seems the SIGSEGV is due to some Pari issue so the patch seems safe at first sight (famous last words). I will post debug info in a minute.
 

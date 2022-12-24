@@ -185,7 +185,7 @@ ValueError: matrix must have determinant 1
 archive/issue_comments_036095.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4762.patch](tarball://root/attachments/some-uuid/ticket4762/trac_4762.patch) by AlexGhitza created at 2008-12-14 00:00:21",
     "created_at": "2008-12-14T00:00:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4762",
     "type": "issue_comment",
@@ -194,7 +194,7 @@ archive/issue_comments_036095.json:
 }
 ```
 
-Attachment
+Attachment [trac_4762.patch](tarball://root/attachments/some-uuid/ticket4762/trac_4762.patch) by AlexGhitza created at 2008-12-14 00:00:21
 
 
 
@@ -335,7 +335,7 @@ apply after the previous patch
 archive/issue_comments_036100.json:
 ```json
 {
-    "body": "Attachment\n\nThis is fine by me, but the congruence subgroup code really needs to be migrated to the new coercion model -- see #5048.",
+    "body": "Attachment [trac_4762_fix.patch](tarball://root/attachments/some-uuid/ticket4762/trac_4762_fix.patch) by ncalexan created at 2009-01-21 08:00:19\n\nThis is fine by me, but the congruence subgroup code really needs to be migrated to the new coercion model -- see #5048.",
     "created_at": "2009-01-21T08:00:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4762",
     "type": "issue_comment",
@@ -344,7 +344,7 @@ archive/issue_comments_036100.json:
 }
 ```
 
-Attachment
+Attachment [trac_4762_fix.patch](tarball://root/attachments/some-uuid/ticket4762/trac_4762_fix.patch) by ncalexan created at 2009-01-21 08:00:19
 
 This is fine by me, but the congruence subgroup code really needs to be migrated to the new coercion model -- see #5048.
 

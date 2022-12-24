@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5921
 archive/issue_comments_046806.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5921.patch](tarball://root/attachments/some-uuid/ticket5921/trac_5921.patch) by cremona created at 2009-04-28 20:04:25",
     "created_at": "2009-04-28T20:04:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5921",
     "type": "issue_comment",
@@ -50,7 +50,7 @@ archive/issue_comments_046806.json:
 }
 ```
 
-Attachment
+Attachment [trac_5921.patch](tarball://root/attachments/some-uuid/ticket5921/trac_5921.patch) by cremona created at 2009-04-28 20:04:25
 
 
 
@@ -313,7 +313,7 @@ I have replaced my patch with the new version, so one still needs to apply both 
 archive/issue_comments_046818.json:
 ```json
 {
-    "body": "Attachment\n\nWith Alex's new patch (on top of mine all tests in modular/overconvergent/* pass  as well as all in rings/polynomial\n\nI reinstated Positive Review and am keeping my fingers crossed!",
+    "body": "Attachment [trac_5921_fix.patch](tarball://root/attachments/some-uuid/ticket5921/trac_5921_fix.patch) by cremona created at 2009-04-30 08:29:02\n\nWith Alex's new patch (on top of mine all tests in modular/overconvergent/* pass  as well as all in rings/polynomial\n\nI reinstated Positive Review and am keeping my fingers crossed!",
     "created_at": "2009-04-30T08:29:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5921",
     "type": "issue_comment",
@@ -322,7 +322,7 @@ archive/issue_comments_046818.json:
 }
 ```
 
-Attachment
+Attachment [trac_5921_fix.patch](tarball://root/attachments/some-uuid/ticket5921/trac_5921_fix.patch) by cremona created at 2009-04-30 08:29:02
 
 With Alex's new patch (on top of mine all tests in modular/overconvergent/* pass  as well as all in rings/polynomial
 

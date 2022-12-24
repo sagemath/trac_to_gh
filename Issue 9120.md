@@ -51,7 +51,7 @@ Changing status from new to needs_review.
 archive/issue_comments_084817.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-9120-transformation-signature.patch](tarball://root/attachments/some-uuid/ticket9120/trac-9120-transformation-signature.patch) by jason created at 2010-06-03 03:01:23",
     "created_at": "2010-06-03T03:01:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9120",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_084817.json:
 }
 ```
 
-Attachment
+Attachment [trac-9120-transformation-signature.patch](tarball://root/attachments/some-uuid/ticket9120/trac-9120-transformation-signature.patch) by jason created at 2010-06-03 03:01:23
 
 
 
@@ -216,7 +216,7 @@ apply on top of previous patches
 archive/issue_comments_084825.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:5 wcauchois]:\n> Well, this all looks good and it seems to do what you're describing.\n> \n> Do you think it would be good to factor the block of code from line 236 to line 259 into its own function (say, _find_arguments_for_callable) for readability's sake?\n\nOn second thought, that's a really good suggestion and relatively easy to do right now.  I've attached a second patch, to be applied on top of the first one.",
+    "body": "Attachment [trac-9120-refactoring.patch](tarball://root/attachments/some-uuid/ticket9120/trac-9120-refactoring.patch) by jason created at 2010-06-03 15:33:08\n\nReplying to [comment:5 wcauchois]:\n> Well, this all looks good and it seems to do what you're describing.\n> \n> Do you think it would be good to factor the block of code from line 236 to line 259 into its own function (say, _find_arguments_for_callable) for readability's sake?\n\nOn second thought, that's a really good suggestion and relatively easy to do right now.  I've attached a second patch, to be applied on top of the first one.",
     "created_at": "2010-06-03T15:33:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9120",
     "type": "issue_comment",
@@ -225,7 +225,7 @@ archive/issue_comments_084825.json:
 }
 ```
 
-Attachment
+Attachment [trac-9120-refactoring.patch](tarball://root/attachments/some-uuid/ticket9120/trac-9120-refactoring.patch) by jason created at 2010-06-03 15:33:08
 
 Replying to [comment:5 wcauchois]:
 > Well, this all looks good and it seems to do what you're describing.
@@ -281,7 +281,7 @@ Positive review.
 archive/issue_comments_084828.json:
 ```json
 {
-    "body": "Attachment\n\nincorporates all of the patches, based on sage 4.4.2",
+    "body": "Attachment [trac-9120-all.patch](tarball://root/attachments/some-uuid/ticket9120/trac-9120-all.patch) by wcauchois created at 2010-06-05 22:18:56\n\nincorporates all of the patches, based on sage 4.4.2",
     "created_at": "2010-06-05T22:18:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9120",
     "type": "issue_comment",
@@ -290,7 +290,7 @@ archive/issue_comments_084828.json:
 }
 ```
 
-Attachment
+Attachment [trac-9120-all.patch](tarball://root/attachments/some-uuid/ticket9120/trac-9120-all.patch) by wcauchois created at 2010-06-05 22:18:56
 
 incorporates all of the patches, based on sage 4.4.2
 

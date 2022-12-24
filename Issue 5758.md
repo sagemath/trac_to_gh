@@ -143,7 +143,7 @@ I'm attaching a patch which I think fixes the problem, but maybe someone familia
 archive/issue_comments_045005.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.",
+    "body": "Attachment [trac_5758-hello.patch](tarball://root/attachments/some-uuid/ticket5758/trac_5758-hello.patch) by mhansen created at 2009-09-08 23:46:01\n\nLooks good to me.",
     "created_at": "2009-09-08T23:46:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5758",
     "type": "issue_comment",
@@ -152,7 +152,7 @@ archive/issue_comments_045005.json:
 }
 ```
 
-Attachment
+Attachment [trac_5758-hello.patch](tarball://root/attachments/some-uuid/ticket5758/trac_5758-hello.patch) by mhansen created at 2009-09-08 23:46:01
 
 Looks good to me.
 

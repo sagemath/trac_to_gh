@@ -152,7 +152,7 @@ Chopping it up seems like the simplest choice, preferably at a point of maximum 
 archive/issue_comments_011712.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1850-jmol-pointlimit.diff](tarball://root/attachments/some-uuid/ticket1850/1850-jmol-pointlimit.diff) by robertwb created at 2008-01-20 01:06:15",
     "created_at": "2008-01-20T01:06:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1850",
     "type": "issue_comment",
@@ -161,7 +161,7 @@ archive/issue_comments_011712.json:
 }
 ```
 
-Attachment
+Attachment [1850-jmol-pointlimit.diff](tarball://root/attachments/some-uuid/ticket1850/1850-jmol-pointlimit.diff) by robertwb created at 2008-01-20 01:06:15
 
 
 

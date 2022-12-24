@@ -149,7 +149,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_082445.json:
 ```json
 {
-    "body": "Attachment\n\nMercurial patch - removes tmp files, based on latest verison of ecl",
+    "body": "Attachment [clear-ECL-from-tmp.patch](tarball://root/attachments/some-uuid/ticket8951/clear-ECL-from-tmp.patch) by drkirkby created at 2010-05-14 11:39:19\n\nMercurial patch - removes tmp files, based on latest verison of ecl",
     "created_at": "2010-05-14T11:39:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8951",
     "type": "issue_comment",
@@ -158,7 +158,7 @@ archive/issue_comments_082445.json:
 }
 ```
 
-Attachment
+Attachment [clear-ECL-from-tmp.patch](tarball://root/attachments/some-uuid/ticket8951/clear-ECL-from-tmp.patch) by drkirkby created at 2010-05-14 11:39:19
 
 Mercurial patch - removes tmp files, based on latest verison of ecl
 

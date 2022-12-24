@@ -169,7 +169,7 @@ based on sage 4.1.2.alpha0 (needs #6877)
 archive/issue_comments_057481.json:
 ```json
 {
-    "body": "Attachment\n\nThanks for that quick review, and enjoy your holidays!",
+    "body": "Attachment [trac6950_algebraic_immunity.patch](tarball://root/attachments/some-uuid/ticket6950/trac6950_algebraic_immunity.patch) by ylchapuy created at 2009-09-17 22:49:14\n\nThanks for that quick review, and enjoy your holidays!",
     "created_at": "2009-09-17T22:49:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6950",
     "type": "issue_comment",
@@ -178,7 +178,7 @@ archive/issue_comments_057481.json:
 }
 ```
 
-Attachment
+Attachment [trac6950_algebraic_immunity.patch](tarball://root/attachments/some-uuid/ticket6950/trac6950_algebraic_immunity.patch) by ylchapuy created at 2009-09-17 22:49:14
 
 Thanks for that quick review, and enjoy your holidays!
 

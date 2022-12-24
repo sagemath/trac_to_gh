@@ -49,7 +49,7 @@ This needs a small separate patch, on its way...
 archive/issue_comments_027024.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac3801-spring-layout-posets.patch](tarball://root/attachments/some-uuid/ticket3801/trac3801-spring-layout-posets.patch) by rlm created at 2008-08-10 23:07:14",
     "created_at": "2008-08-10T23:07:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3801",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_027024.json:
 }
 ```
 
-Attachment
+Attachment [trac3801-spring-layout-posets.patch](tarball://root/attachments/some-uuid/ticket3801/trac3801-spring-layout-posets.patch) by rlm created at 2008-08-10 23:07:14
 
 
 
@@ -67,7 +67,7 @@ Attachment
 archive/issue_comments_027025.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac3801-oops.patch](tarball://root/attachments/some-uuid/ticket3801/trac3801-oops.patch) by rlm created at 2008-08-10 23:21:58",
     "created_at": "2008-08-10T23:21:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3801",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_027025.json:
 }
 ```
 
-Attachment
+Attachment [trac3801-oops.patch](tarball://root/attachments/some-uuid/ticket3801/trac3801-oops.patch) by rlm created at 2008-08-10 23:21:58
 
 
 

@@ -53,7 +53,7 @@ Changing status from new to assigned.
 archive/issue_comments_022022.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [givaro-3.2.10.rc3.p1-spkg-install-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3182/givaro-3.2.10.rc3.p1-spkg-install-64bit-osx.patch) by mabshoff created at 2008-05-19 03:33:10",
     "created_at": "2008-05-19T03:33:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3182",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_022022.json:
 }
 ```
 
-Attachment
+Attachment [givaro-3.2.10.rc3.p1-spkg-install-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3182/givaro-3.2.10.rc3.p1-spkg-install-64bit-osx.patch) by mabshoff created at 2008-05-19 03:33:10
 
 
 

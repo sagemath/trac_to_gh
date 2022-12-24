@@ -51,7 +51,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3969
 archive/issue_comments_028520.json:
 ```json
 {
-    "body": "Attachment\n\nThis is not as fast as xoring all the matrix entries, but is still very fast, and compatible (as possible) with the all the other matrices. \n\n\n```\nsage: M = random_matrix(GF(2), 3500, 3500)\nsage: M.set_immutable()\nsage: time hash(M)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n1523294\nsage: M = random_matrix(GF(2), 10000, 10000)\nsage: M.set_immutable()\nsage: time hash(M)\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02 s\n37785898\n```\n",
+    "body": "Attachment [3969-fast-matmod2-hash.patch](tarball://root/attachments/some-uuid/ticket3969/3969-fast-matmod2-hash.patch) by robertwb created at 2008-08-31 10:36:46\n\nThis is not as fast as xoring all the matrix entries, but is still very fast, and compatible (as possible) with the all the other matrices. \n\n\n```\nsage: M = random_matrix(GF(2), 3500, 3500)\nsage: M.set_immutable()\nsage: time hash(M)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n1523294\nsage: M = random_matrix(GF(2), 10000, 10000)\nsage: M.set_immutable()\nsage: time hash(M)\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02 s\n37785898\n```\n",
     "created_at": "2008-08-31T10:36:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3969",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_028520.json:
 }
 ```
 
-Attachment
+Attachment [3969-fast-matmod2-hash.patch](tarball://root/attachments/some-uuid/ticket3969/3969-fast-matmod2-hash.patch) by robertwb created at 2008-08-31 10:36:46
 
 This is not as fast as xoring all the matrix entries, but is still very fast, and compatible (as possible) with the all the other matrices. 
 
@@ -88,7 +88,7 @@ Wall time: 0.02 s
 archive/issue_comments_028521.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3969-fast-matmod2-hash-rebased.patch](tarball://root/attachments/some-uuid/ticket3969/3969-fast-matmod2-hash-rebased.patch) by malb created at 2008-08-31 19:33:53",
     "created_at": "2008-08-31T19:33:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3969",
     "type": "issue_comment",
@@ -97,7 +97,7 @@ archive/issue_comments_028521.json:
 }
 ```
 
-Attachment
+Attachment [3969-fast-matmod2-hash-rebased.patch](tarball://root/attachments/some-uuid/ticket3969/3969-fast-matmod2-hash-rebased.patch) by malb created at 2008-08-31 19:33:53
 
 
 

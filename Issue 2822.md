@@ -66,7 +66,7 @@ stripped valgrind session for Sage 3.0.alpha2 + PolyBoRi with SAGE_DEBUG
 archive/issue_comments_019371.json:
 ```json
 {
-    "body": "Attachment\n\nAfter rebuilding PolyBoRi with debugging options (export SAGE_DEBUG=1) I don't get this invalid read anymore. I've attached a the valgrind log for a simple session.\n\nIt might be worth noting that almost all alleged memleaks are due to one call. It might make sense to ask Michael and Alexander about that one.",
+    "body": "Attachment [polybori-valgrind-cleaned](tarball://root/attachments/some-uuid/ticket2822/polybori-valgrind-cleaned) by malb created at 2008-04-07 13:18:37\n\nAfter rebuilding PolyBoRi with debugging options (export SAGE_DEBUG=1) I don't get this invalid read anymore. I've attached a the valgrind log for a simple session.\n\nIt might be worth noting that almost all alleged memleaks are due to one call. It might make sense to ask Michael and Alexander about that one.",
     "created_at": "2008-04-07T13:18:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2822",
     "type": "issue_comment",
@@ -75,7 +75,7 @@ archive/issue_comments_019371.json:
 }
 ```
 
-Attachment
+Attachment [polybori-valgrind-cleaned](tarball://root/attachments/some-uuid/ticket2822/polybori-valgrind-cleaned) by malb created at 2008-04-07 13:18:37
 
 After rebuilding PolyBoRi with debugging options (export SAGE_DEBUG=1) I don't get this invalid read anymore. I've attached a the valgrind log for a simple session.
 
@@ -304,7 +304,7 @@ Maybe it would help just linking them together in one common shared library (as 
 archive/issue_comments_019380.json:
 ```json
 {
-    "body": "Attachment\n\nThanks to Alexander we provide a fixed CCuddCore.h.\nI hope, that will fix the invalid reads (at least it should fix the leaks).",
+    "body": "Attachment [CCuddCore.h](tarball://root/attachments/some-uuid/ticket2822/CCuddCore.h) by PolyBoRi created at 2008-04-11 05:43:13\n\nThanks to Alexander we provide a fixed CCuddCore.h.\nI hope, that will fix the invalid reads (at least it should fix the leaks).",
     "created_at": "2008-04-11T05:43:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2822",
     "type": "issue_comment",
@@ -313,7 +313,7 @@ archive/issue_comments_019380.json:
 }
 ```
 
-Attachment
+Attachment [CCuddCore.h](tarball://root/attachments/some-uuid/ticket2822/CCuddCore.h) by PolyBoRi created at 2008-04-11 05:43:13
 
 Thanks to Alexander we provide a fixed CCuddCore.h.
 I hope, that will fix the invalid reads (at least it should fix the leaks).
@@ -494,7 +494,7 @@ New version, cleaner code
 archive/issue_comments_019388.json:
 ```json
 {
-    "body": "Attachment\n\nHi everybody,\nI've added a new (somehow cleaner) version of CCuddCore.h. Maybe that fixes some of the remaining leaks.\n\nRegards\n  Alexander Dreyer",
+    "body": "Attachment [CCuddCore.2.h](tarball://root/attachments/some-uuid/ticket2822/CCuddCore.2.h) by PolyBoRi created at 2008-04-12 23:09:06\n\nHi everybody,\nI've added a new (somehow cleaner) version of CCuddCore.h. Maybe that fixes some of the remaining leaks.\n\nRegards\n  Alexander Dreyer",
     "created_at": "2008-04-12T23:09:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2822",
     "type": "issue_comment",
@@ -503,7 +503,7 @@ archive/issue_comments_019388.json:
 }
 ```
 
-Attachment
+Attachment [CCuddCore.2.h](tarball://root/attachments/some-uuid/ticket2822/CCuddCore.2.h) by PolyBoRi created at 2008-04-12 23:09:06
 
 Hi everybody,
 I've added a new (somehow cleaner) version of CCuddCore.h. Maybe that fixes some of the remaining leaks.

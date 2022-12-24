@@ -85,7 +85,7 @@ convert strings to mpolynomials using sage_eval
 archive/issue_comments_023581.json:
 ```json
 {
-    "body": "Attachment\n\npatch looks good.",
+    "body": "Attachment [string_to_ZZxy_conversion.patch](tarball://root/attachments/some-uuid/ticket3370/string_to_ZZxy_conversion.patch) by malb created at 2008-06-12 23:02:02\n\npatch looks good.",
     "created_at": "2008-06-12T23:02:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3370",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_023581.json:
 }
 ```
 
-Attachment
+Attachment [string_to_ZZxy_conversion.patch](tarball://root/attachments/some-uuid/ticket3370/string_to_ZZxy_conversion.patch) by malb created at 2008-06-12 23:02:02
 
 patch looks good.
 

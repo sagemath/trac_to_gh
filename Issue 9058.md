@@ -91,7 +91,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_084049.json:
 ```json
 {
-    "body": "Attachment\n\nI verified the patch and I believe it is ok to be merged.",
+    "body": "Attachment [trac_9058.patch](tarball://root/attachments/some-uuid/ticket9058/trac_9058.patch) by lsampaio created at 2010-10-06 12:48:59\n\nI verified the patch and I believe it is ok to be merged.",
     "created_at": "2010-10-06T12:48:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9058",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_084049.json:
 }
 ```
 
-Attachment
+Attachment [trac_9058.patch](tarball://root/attachments/some-uuid/ticket9058/trac_9058.patch) by lsampaio created at 2010-10-06 12:48:59
 
 I verified the patch and I believe it is ok to be merged.
 

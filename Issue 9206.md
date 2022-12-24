@@ -71,7 +71,7 @@ David Harvey: "Maybe not literally forever, but I got sick of waiting. Should be
 archive/issue_comments_086167.json:
 ```json
 {
-    "body": "Attachment\n\nI didn't write the attached patch, but I polished it up, so it would be good if somebody else could sign off on this.  I'm OK with it, as is.",
+    "body": "Attachment [trac_9206.patch](tarball://root/attachments/some-uuid/ticket9206/trac_9206.patch) by was created at 2010-07-07 20:12:53\n\nI didn't write the attached patch, but I polished it up, so it would be good if somebody else could sign off on this.  I'm OK with it, as is.",
     "created_at": "2010-07-07T20:12:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9206",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_086167.json:
 }
 ```
 
-Attachment
+Attachment [trac_9206.patch](tarball://root/attachments/some-uuid/ticket9206/trac_9206.patch) by was created at 2010-07-07 20:12:53
 
 I didn't write the attached patch, but I polished it up, so it would be good if somebody else could sign off on this.  I'm OK with it, as is.
 

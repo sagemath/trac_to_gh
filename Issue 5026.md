@@ -49,7 +49,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5026
 archive/issue_comments_038288.json:
 ```json
 {
-    "body": "Attachment\n\nAttached patch fixes the doctest.",
+    "body": "Attachment [trac-5026.patch](tarball://root/attachments/some-uuid/ticket5026/trac-5026.patch) by craigcitro created at 2009-01-23 13:19:56\n\nAttached patch fixes the doctest.",
     "created_at": "2009-01-23T13:19:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5026",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_038288.json:
 }
 ```
 
-Attachment
+Attachment [trac-5026.patch](tarball://root/attachments/some-uuid/ticket5026/trac-5026.patch) by craigcitro created at 2009-01-23 13:19:56
 
 Attached patch fixes the doctest.
 

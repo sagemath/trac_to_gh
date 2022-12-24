@@ -122,7 +122,7 @@ I just reviewed your patch. Positive review up to the following points:
 archive/issue_comments_060027.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7236-partitions_tableaux_cells_cleanup-fh.patch](tarball://root/attachments/some-uuid/ticket7236/trac_7236-partitions_tableaux_cells_cleanup-fh.patch) by hivert created at 2009-10-18 15:20:37",
     "created_at": "2009-10-18T15:20:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7236",
     "type": "issue_comment",
@@ -131,7 +131,7 @@ archive/issue_comments_060027.json:
 }
 ```
 
-Attachment
+Attachment [trac_7236-partitions_tableaux_cells_cleanup-fh.patch](tarball://root/attachments/some-uuid/ticket7236/trac_7236-partitions_tableaux_cells_cleanup-fh.patch) by hivert created at 2009-10-18 15:20:37
 
 
 

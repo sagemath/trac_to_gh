@@ -157,7 +157,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_082817.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8976-squarefree_part-fix-variant1.patch](tarball://root/attachments/some-uuid/ticket8976/trac_8976-squarefree_part-fix-variant1.patch) by leif created at 2010-05-16 01:27:55",
     "created_at": "2010-05-16T01:27:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8976",
     "type": "issue_comment",
@@ -166,7 +166,7 @@ archive/issue_comments_082817.json:
 }
 ```
 
-Attachment
+Attachment [trac_8976-squarefree_part-fix-variant1.patch](tarball://root/attachments/some-uuid/ticket8976/trac_8976-squarefree_part-fix-variant1.patch) by leif created at 2010-05-16 01:27:55
 
 
 

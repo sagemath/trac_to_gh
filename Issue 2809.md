@@ -56,7 +56,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2809
 archive/issue_comments_019281.json:
 ```json
 {
-    "body": "Attachment\n\nThis is a dupe of #2808, so I am closing it. Dan: once you open a ticket and you hit \"submit\" you should remove the \"preview\" bit from the url before going on. This is a buglet in trac and you aren't the first one who has been bitten by it.\n\nCheers,\n\nMichael",
+    "body": "Attachment [g2.patch](tarball://root/attachments/some-uuid/ticket2809/g2.patch) by mabshoff created at 2008-04-05 16:30:34\n\nThis is a dupe of #2808, so I am closing it. Dan: once you open a ticket and you hit \"submit\" you should remove the \"preview\" bit from the url before going on. This is a buglet in trac and you aren't the first one who has been bitten by it.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-05T16:30:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2809",
     "type": "issue_comment",
@@ -65,7 +65,7 @@ archive/issue_comments_019281.json:
 }
 ```
 
-Attachment
+Attachment [g2.patch](tarball://root/attachments/some-uuid/ticket2809/g2.patch) by mabshoff created at 2008-04-05 16:30:34
 
 This is a dupe of #2808, so I am closing it. Dan: once you open a ticket and you hit "submit" you should remove the "preview" bit from the url before going on. This is a buglet in trac and you aren't the first one who has been bitten by it.
 

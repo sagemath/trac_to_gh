@@ -111,7 +111,7 @@ OK, I'll try and rebase these for 3.4.2
 archive/issue_comments_043581.json:
 ```json
 {
-    "body": "Attachment\n\nRebased against 4.1.1",
+    "body": "Attachment [5596-coerce-exceptions-new.patch](tarball://root/attachments/some-uuid/ticket5596/5596-coerce-exceptions-new.patch) by robertwb created at 2009-09-24 04:25:51\n\nRebased against 4.1.1",
     "created_at": "2009-09-24T04:25:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5596",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_043581.json:
 }
 ```
 
-Attachment
+Attachment [5596-coerce-exceptions-new.patch](tarball://root/attachments/some-uuid/ticket5596/5596-coerce-exceptions-new.patch) by robertwb created at 2009-09-24 04:25:51
 
 Rebased against 4.1.1
 
@@ -582,7 +582,7 @@ apply on top of previous
 archive/issue_comments_043596.json:
 ```json
 {
-    "body": "Attachment\n\nOK, this was one of those weird bugs that was only reproducible in doctests, and an all around pain to track down. Apparently the coercion changes caused some parents to not get garbage collected as eagerly, which exposed a bug when fgp modules are cached and reused. I am still unsure what exactly the bug is (I have a hunch it has to do with parents that are defined in doctests getting reused in other doctests after their environment has been recycled or something) but I have disabled caching for now to get it to work. \n\nI refreshed the exposure-fixes patch, should work fine now.",
+    "body": "Attachment [5596-exposure-fixes.patch](tarball://root/attachments/some-uuid/ticket5596/5596-exposure-fixes.patch) by robertwb created at 2009-10-20 05:31:11\n\nOK, this was one of those weird bugs that was only reproducible in doctests, and an all around pain to track down. Apparently the coercion changes caused some parents to not get garbage collected as eagerly, which exposed a bug when fgp modules are cached and reused. I am still unsure what exactly the bug is (I have a hunch it has to do with parents that are defined in doctests getting reused in other doctests after their environment has been recycled or something) but I have disabled caching for now to get it to work. \n\nI refreshed the exposure-fixes patch, should work fine now.",
     "created_at": "2009-10-20T05:31:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5596",
     "type": "issue_comment",
@@ -591,7 +591,7 @@ archive/issue_comments_043596.json:
 }
 ```
 
-Attachment
+Attachment [5596-exposure-fixes.patch](tarball://root/attachments/some-uuid/ticket5596/5596-exposure-fixes.patch) by robertwb created at 2009-10-20 05:31:11
 
 OK, this was one of those weird bugs that was only reproducible in doctests, and an all around pain to track down. Apparently the coercion changes caused some parents to not get garbage collected as eagerly, which exposed a bug when fgp modules are cached and reused. I am still unsure what exactly the bug is (I have a hunch it has to do with parents that are defined in doctests getting reused in other doctests after their environment has been recycled or something) but I have disabled caching for now to get it to work. 
 
@@ -622,7 +622,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_043598.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5596-minor_doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket5596/trac_5596-minor_doctest_fixes.patch) by mhansen created at 2009-10-21 05:19:43",
     "created_at": "2009-10-21T05:19:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5596",
     "type": "issue_comment",
@@ -631,7 +631,7 @@ archive/issue_comments_043598.json:
 }
 ```
 
-Attachment
+Attachment [trac_5596-minor_doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket5596/trac_5596-minor_doctest_fixes.patch) by mhansen created at 2009-10-21 05:19:43
 
 
 

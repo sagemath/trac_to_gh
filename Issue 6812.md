@@ -297,7 +297,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_056082.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [fast_generating_list_up_to_permgroup-nb.patch](tarball://root/attachments/some-uuid/ticket6812/fast_generating_list_up_to_permgroup-nb.patch) by nborie created at 2010-02-20 11:18:04",
     "created_at": "2010-02-20T11:18:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
@@ -306,7 +306,7 @@ archive/issue_comments_056082.json:
 }
 ```
 
-Attachment
+Attachment [fast_generating_list_up_to_permgroup-nb.patch](tarball://root/attachments/some-uuid/ticket6812/fast_generating_list_up_to_permgroup-nb.patch) by nborie created at 2010-02-20 11:18:04
 
 
 
@@ -1603,7 +1603,7 @@ apply trac_6812_integer_vectors_mod_permgroup.patch
 archive/issue_comments_056141.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6812_integer_vectors_mod_permgroup.patch](tarball://root/attachments/some-uuid/ticket6812/trac_6812_integer_vectors_mod_permgroup.patch) by nborie created at 2012-05-20 10:59:39",
     "created_at": "2012-05-20T10:59:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
@@ -1612,7 +1612,7 @@ archive/issue_comments_056141.json:
 }
 ```
 
-Attachment
+Attachment [trac_6812_integer_vectors_mod_permgroup.patch](tarball://root/attachments/some-uuid/ticket6812/trac_6812_integer_vectors_mod_permgroup.patch) by nborie created at 2012-05-20 10:59:39
 
 
 
@@ -2172,7 +2172,7 @@ I prepare for you some interesting benchmarks. Most of them consists in generati
 archive/issue_comments_056160.json:
 ```json
 {
-    "body": "Attachment\n\nFunction to use for a good k-tests",
+    "body": "Attachment [benchmarks_generating_orbit_sum.py](tarball://root/attachments/some-uuid/ticket6812/benchmarks_generating_orbit_sum.py) by nborie created at 2012-05-25 19:24:21\n\nFunction to use for a good k-tests",
     "created_at": "2012-05-25T19:24:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
@@ -2181,7 +2181,7 @@ archive/issue_comments_056160.json:
 }
 ```
 
-Attachment
+Attachment [benchmarks_generating_orbit_sum.py](tarball://root/attachments/some-uuid/ticket6812/benchmarks_generating_orbit_sum.py) by nborie created at 2012-05-25 19:24:21
 
 Function to use for a good k-tests
 
@@ -2192,7 +2192,7 @@ Function to use for a good k-tests
 archive/issue_comments_056161.json:
 ```json
 {
-    "body": "Attachment\n\nOld results of speed",
+    "body": "Attachment [benchmarks_generation_orbit_sum.txt](tarball://root/attachments/some-uuid/ticket6812/benchmarks_generation_orbit_sum.txt) by nborie created at 2012-05-25 19:24:51\n\nOld results of speed",
     "created_at": "2012-05-25T19:24:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
@@ -2201,7 +2201,7 @@ archive/issue_comments_056161.json:
 }
 ```
 
-Attachment
+Attachment [benchmarks_generation_orbit_sum.txt](tarball://root/attachments/some-uuid/ticket6812/benchmarks_generation_orbit_sum.txt) by nborie created at 2012-05-25 19:24:51
 
 Old results of speed
 
@@ -2623,7 +2623,7 @@ Speed-ups and doc fixes
 archive/issue_comments_056172.json:
 ```json
 {
-    "body": "Attachment\n\nMy patch is posted.\n\nI hesitate to directly give it a positive review, since I somehow think that my patch is not just a reviewer patch (in spite of its name), because it changes the code non-trivially. So, please have a closer look on it!\n\nApart from the code changes, I went through the doc strings and tried to fix some grammar. But I am not a native speaker - take my changes with a grain of salt...\n\nApply trac_6812_integer_vectors_mod_permgroup.patch trac_6812_reviewer.patch]",
+    "body": "Attachment [trac_6812_reviewer.patch](tarball://root/attachments/some-uuid/ticket6812/trac_6812_reviewer.patch) by SimonKing created at 2012-05-25 22:09:35\n\nMy patch is posted.\n\nI hesitate to directly give it a positive review, since I somehow think that my patch is not just a reviewer patch (in spite of its name), because it changes the code non-trivially. So, please have a closer look on it!\n\nApart from the code changes, I went through the doc strings and tried to fix some grammar. But I am not a native speaker - take my changes with a grain of salt...\n\nApply trac_6812_integer_vectors_mod_permgroup.patch trac_6812_reviewer.patch]",
     "created_at": "2012-05-25T22:09:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
@@ -2632,7 +2632,7 @@ archive/issue_comments_056172.json:
 }
 ```
 
-Attachment
+Attachment [trac_6812_reviewer.patch](tarball://root/attachments/some-uuid/ticket6812/trac_6812_reviewer.patch) by SimonKing created at 2012-05-25 22:09:35
 
 My patch is posted.
 
@@ -2687,7 +2687,7 @@ Fixing a corner case, adding a doc test
 archive/issue_comments_056175.json:
 ```json
 {
-    "body": "Attachment\n\nI posted an additional reviewer patch. Namely, in my first patch, I forgot to add a doctest (shame on me), and consequently the code contained a bug: Integer vectores `[1,2,3,1]` and `[1,2,3]` would have compared equal. That' fixed and tested with the second reviewer patch.\n\nFor the record: I give a positive review to Nicolas' patch. My first reviewer patch needs review, I believe. The second patch is trivial enough to be considered a \"real\" reviewer patch.\n\nApply trac_6812_integer_vectors_mod_permgroup.patch trac_6812_reviewer.patch trac_6812_reviewer2.patch",
+    "body": "Attachment [trac_6812_reviewer2.patch](tarball://root/attachments/some-uuid/ticket6812/trac_6812_reviewer2.patch) by SimonKing created at 2012-05-26 07:26:20\n\nI posted an additional reviewer patch. Namely, in my first patch, I forgot to add a doctest (shame on me), and consequently the code contained a bug: Integer vectores `[1,2,3,1]` and `[1,2,3]` would have compared equal. That' fixed and tested with the second reviewer patch.\n\nFor the record: I give a positive review to Nicolas' patch. My first reviewer patch needs review, I believe. The second patch is trivial enough to be considered a \"real\" reviewer patch.\n\nApply trac_6812_integer_vectors_mod_permgroup.patch trac_6812_reviewer.patch trac_6812_reviewer2.patch",
     "created_at": "2012-05-26T07:26:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
@@ -2696,7 +2696,7 @@ archive/issue_comments_056175.json:
 }
 ```
 
-Attachment
+Attachment [trac_6812_reviewer2.patch](tarball://root/attachments/some-uuid/ticket6812/trac_6812_reviewer2.patch) by SimonKing created at 2012-05-26 07:26:20
 
 I posted an additional reviewer patch. Namely, in my first patch, I forgot to add a doctest (shame on me), and consequently the code contained a bug: Integer vectores `[1,2,3,1]` and `[1,2,3]` would have compared equal. That' fixed and tested with the second reviewer patch.
 
@@ -2731,7 +2731,7 @@ As you posted another reviewer patch, once I will test everything, I will perhap
 archive/issue_comments_056177.json:
 ```json
 {
-    "body": "Attachment\n\nI am completely agree with all corrections and improvements provided by the two reviewer patches from Simon. I just merge them into my first proposition.\n\nThe current implementation pass all my corner cases around invariant theory. All tests pass, the documentation seems good to me and the code looks ready to go. I give the patch a positive review.\n\nThis is a three years old wanted improvement (beginning of my PhD thesis) and Sage changed so much these last three years.... Thanks you Simon for the hours you spent on finalizing this and thanks you Karl for English suggestions/corrections (especially those sent by mail 6 month ago...)\n\napply trac_6812_integer_vectors_mod_permgroup-final.patch",
+    "body": "Attachment [trac_6812_integer_vectors_mod_permgroup-final.patch](tarball://root/attachments/some-uuid/ticket6812/trac_6812_integer_vectors_mod_permgroup-final.patch) by nborie created at 2012-05-26 08:41:12\n\nI am completely agree with all corrections and improvements provided by the two reviewer patches from Simon. I just merge them into my first proposition.\n\nThe current implementation pass all my corner cases around invariant theory. All tests pass, the documentation seems good to me and the code looks ready to go. I give the patch a positive review.\n\nThis is a three years old wanted improvement (beginning of my PhD thesis) and Sage changed so much these last three years.... Thanks you Simon for the hours you spent on finalizing this and thanks you Karl for English suggestions/corrections (especially those sent by mail 6 month ago...)\n\napply trac_6812_integer_vectors_mod_permgroup-final.patch",
     "created_at": "2012-05-26T08:41:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
@@ -2740,7 +2740,7 @@ archive/issue_comments_056177.json:
 }
 ```
 
-Attachment
+Attachment [trac_6812_integer_vectors_mod_permgroup-final.patch](tarball://root/attachments/some-uuid/ticket6812/trac_6812_integer_vectors_mod_permgroup-final.patch) by nborie created at 2012-05-26 08:41:12
 
 I am completely agree with all corrections and improvements provided by the two reviewer patches from Simon. I just merge them into my first proposition.
 
@@ -2800,7 +2800,7 @@ Also, can you fix this?
 archive/issue_comments_056180.json:
 ```json
 {
-    "body": "Attachment\n\nPatchbot apply trac_6812_integer_vectors_mod_permgroup-final.patch and trac_6812-reviewer.patch.",
+    "body": "Attachment [trac_6812-reviewer.patch](tarball://root/attachments/some-uuid/ticket6812/trac_6812-reviewer.patch) by kcrisman created at 2012-05-26 15:41:05\n\nPatchbot apply trac_6812_integer_vectors_mod_permgroup-final.patch and trac_6812-reviewer.patch.",
     "created_at": "2012-05-26T15:41:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
@@ -2809,7 +2809,7 @@ archive/issue_comments_056180.json:
 }
 ```
 
-Attachment
+Attachment [trac_6812-reviewer.patch](tarball://root/attachments/some-uuid/ticket6812/trac_6812-reviewer.patch) by kcrisman created at 2012-05-26 15:41:05
 
 Patchbot apply trac_6812_integer_vectors_mod_permgroup-final.patch and trac_6812-reviewer.patch.
 

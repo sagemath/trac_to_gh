@@ -265,7 +265,7 @@ Resolution: invalid
 archive/issue_comments_068003.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [docstring](tarball://root/attachments/some-uuid/ticket7850/docstring) by olazo created at 2010-01-24 19:35:42",
     "created_at": "2010-01-24T19:35:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7850",
     "type": "issue_comment",
@@ -274,4 +274,4 @@ archive/issue_comments_068003.json:
 }
 ```
 
-Attachment
+Attachment [docstring](tarball://root/attachments/some-uuid/ticket7850/docstring) by olazo created at 2010-01-24 19:35:42

@@ -663,7 +663,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_060681.json:
 ```json
 {
-    "body": "Attachment\n\nMinor doc fixes -- apply on top of Nathann's patch",
+    "body": "Attachment [trac_7288_review-abm.patch](tarball://root/attachments/some-uuid/ticket7288/trac_7288_review-abm.patch) by abmasse created at 2010-03-12 23:28:17\n\nMinor doc fixes -- apply on top of Nathann's patch",
     "created_at": "2010-03-12T23:28:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7288",
     "type": "issue_comment",
@@ -672,7 +672,7 @@ archive/issue_comments_060681.json:
 }
 ```
 
-Attachment
+Attachment [trac_7288_review-abm.patch](tarball://root/attachments/some-uuid/ticket7288/trac_7288_review-abm.patch) by abmasse created at 2010-03-12 23:28:17
 
 Minor doc fixes -- apply on top of Nathann's patch
 

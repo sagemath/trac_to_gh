@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9532
 archive/issue_comments_091762.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9532-graphs-randstate.patch](tarball://root/attachments/some-uuid/ticket9532/trac_9532-graphs-randstate.patch) by cwitty created at 2010-07-17 22:47:44",
     "created_at": "2010-07-17T22:47:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9532",
     "type": "issue_comment",
@@ -43,7 +43,7 @@ archive/issue_comments_091762.json:
 }
 ```
 
-Attachment
+Attachment [trac_9532-graphs-randstate.patch](tarball://root/attachments/some-uuid/ticket9532/trac_9532-graphs-randstate.patch) by cwitty created at 2010-07-17 22:47:44
 
 
 

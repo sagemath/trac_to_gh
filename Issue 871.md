@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/871
 archive/issue_comments_005369.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [circulant-graph.patch](tarball://root/attachments/some-uuid/ticket871/circulant-graph.patch) by cwitty created at 2007-10-13 05:27:28",
     "created_at": "2007-10-13T05:27:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/871",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_005369.json:
 }
 ```
 
-Attachment
+Attachment [circulant-graph.patch](tarball://root/attachments/some-uuid/ticket871/circulant-graph.patch) by cwitty created at 2007-10-13 05:27:28
 
 
 

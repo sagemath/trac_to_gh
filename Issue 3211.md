@@ -309,7 +309,7 @@ Also, I've been working (yet again) on a patch...
 archive/issue_comments_022210.json:
 ```json
 {
-    "body": "Attachment\n\nunfinished",
+    "body": "Attachment [echelon-hermite.patch](tarball://root/attachments/some-uuid/ticket3211/echelon-hermite.patch) by jason created at 2009-10-01 08:07:22\n\nunfinished",
     "created_at": "2009-10-01T08:07:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3211",
     "type": "issue_comment",
@@ -318,7 +318,7 @@ archive/issue_comments_022210.json:
 }
 ```
 
-Attachment
+Attachment [echelon-hermite.patch](tarball://root/attachments/some-uuid/ticket3211/echelon-hermite.patch) by jason created at 2009-10-01 08:07:22
 
 unfinished
 
@@ -347,7 +347,7 @@ I'm attaching the work-in-progress so that it's archived somewhere other than my
 archive/issue_comments_022212.json:
 ```json
 {
-    "body": "Attachment\n\napply instead of previous patch.",
+    "body": "Attachment [echelon-hermite-new.patch](tarball://root/attachments/some-uuid/ticket3211/echelon-hermite-new.patch) by jason created at 2009-12-03 14:07:34\n\napply instead of previous patch.",
     "created_at": "2009-12-03T14:07:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3211",
     "type": "issue_comment",
@@ -356,7 +356,7 @@ archive/issue_comments_022212.json:
 }
 ```
 
-Attachment
+Attachment [echelon-hermite-new.patch](tarball://root/attachments/some-uuid/ticket3211/echelon-hermite-new.patch) by jason created at 2009-12-03 14:07:34
 
 apply instead of previous patch.
 
@@ -385,7 +385,7 @@ apply on top of previous patch
 archive/issue_comments_022214.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [echelon-hermite-new2.patch](tarball://root/attachments/some-uuid/ticket3211/echelon-hermite-new2.patch) by jason created at 2009-12-03 14:08:06",
     "created_at": "2009-12-03T14:08:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3211",
     "type": "issue_comment",
@@ -394,7 +394,7 @@ archive/issue_comments_022214.json:
 }
 ```
 
-Attachment
+Attachment [echelon-hermite-new2.patch](tarball://root/attachments/some-uuid/ticket3211/echelon-hermite-new2.patch) by jason created at 2009-12-03 14:08:06
 
 
 
@@ -439,7 +439,7 @@ apply instead of previous patches
 archive/issue_comments_022217.json:
 ```json
 {
-    "body": "Attachment\n\nOkay, I've posted a single rebased patch which applies on top of 4.3.1.rc1.",
+    "body": "Attachment [trac-3211-hermite-form-4.3.1.rc1.patch](tarball://root/attachments/some-uuid/ticket3211/trac-3211-hermite-form-4.3.1.rc1.patch) by jason created at 2010-01-19 18:55:33\n\nOkay, I've posted a single rebased patch which applies on top of 4.3.1.rc1.",
     "created_at": "2010-01-19T18:55:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3211",
     "type": "issue_comment",
@@ -448,7 +448,7 @@ archive/issue_comments_022217.json:
 }
 ```
 
-Attachment
+Attachment [trac-3211-hermite-form-4.3.1.rc1.patch](tarball://root/attachments/some-uuid/ticket3211/trac-3211-hermite-form-4.3.1.rc1.patch) by jason created at 2010-01-19 18:55:33
 
 Okay, I've posted a single rebased patch which applies on top of 4.3.1.rc1.
 

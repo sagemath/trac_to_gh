@@ -49,7 +49,7 @@ Minimal version ripped from #7666. sagenb repo.
 archive/issue_comments_066795.json:
 ```json
 {
-    "body": "Attachment\n\nThe problem seems to be that the auto-indent code \"fires\" too often, e.g., when the shift key comes up before the enter key.  The [attachment:trac_7756-extra_text_shift_enter.patch patch] should fix this in Cr, FF, S, and O.  If it does not, please let me know!\n\nNote: I've extracted the patch here from the patch at #7666.",
+    "body": "Attachment [trac_7756-extra_text_shift_enter.patch](tarball://root/attachments/some-uuid/ticket7756/trac_7756-extra_text_shift_enter.patch) by mpatel created at 2009-12-24 06:32:00\n\nThe problem seems to be that the auto-indent code \"fires\" too often, e.g., when the shift key comes up before the enter key.  The [attachment:trac_7756-extra_text_shift_enter.patch patch] should fix this in Cr, FF, S, and O.  If it does not, please let me know!\n\nNote: I've extracted the patch here from the patch at #7666.",
     "created_at": "2009-12-24T06:32:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7756",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_066795.json:
 }
 ```
 
-Attachment
+Attachment [trac_7756-extra_text_shift_enter.patch](tarball://root/attachments/some-uuid/ticket7756/trac_7756-extra_text_shift_enter.patch) by mpatel created at 2009-12-24 06:32:00
 
 The problem seems to be that the auto-indent code "fires" too often, e.g., when the shift key comes up before the enter key.  The [attachment:trac_7756-extra_text_shift_enter.patch patch] should fix this in Cr, FF, S, and O.  If it does not, please let me know!
 

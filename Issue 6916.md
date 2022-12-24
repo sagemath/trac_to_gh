@@ -95,7 +95,7 @@ by adding a blank line after the first one, it looks a little better (to me) whe
 archive/issue_comments_057111.json:
 ```json
 {
-    "body": "Attachment\n\nbased on Sage 4.1.2.alpha4",
+    "body": "Attachment [trac_6916-typos.patch](tarball://root/attachments/some-uuid/ticket6916/trac_6916-typos.patch) by mvngu created at 2009-09-30 02:54:49\n\nbased on Sage 4.1.2.alpha4",
     "created_at": "2009-09-30T02:54:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6916",
     "type": "issue_comment",
@@ -104,7 +104,7 @@ archive/issue_comments_057111.json:
 }
 ```
 
-Attachment
+Attachment [trac_6916-typos.patch](tarball://root/attachments/some-uuid/ticket6916/trac_6916-typos.patch) by mvngu created at 2009-09-30 02:54:49
 
 based on Sage 4.1.2.alpha4
 

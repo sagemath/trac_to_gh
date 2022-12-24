@@ -55,7 +55,7 @@ Changed "Upload File" to "Upload or Create File"
 archive/issue_comments_058393.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7054-sagenb-upload-create-file.patch](tarball://root/attachments/some-uuid/ticket7054/trac_7054-sagenb-upload-create-file.patch) by mpatel created at 2009-09-28 18:43:36",
     "created_at": "2009-09-28T18:43:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7054",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_058393.json:
 }
 ```
 
-Attachment
+Attachment [trac_7054-sagenb-upload-create-file.patch](tarball://root/attachments/some-uuid/ticket7054/trac_7054-sagenb-upload-create-file.patch) by mpatel created at 2009-09-28 18:43:36
 
 
 

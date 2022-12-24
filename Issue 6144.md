@@ -67,7 +67,7 @@ Burcin
 archive/issue_comments_049049.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6144-exp_simplify.patch](tarball://root/attachments/some-uuid/ticket6144/trac_6144-exp_simplify.patch) by burcin created at 2009-06-04 09:49:49",
     "created_at": "2009-06-04T09:49:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6144",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_049049.json:
 }
 ```
 
-Attachment
+Attachment [trac_6144-exp_simplify.patch](tarball://root/attachments/some-uuid/ticket6144/trac_6144-exp_simplify.patch) by burcin created at 2009-06-04 09:49:49
 
 
 
@@ -85,7 +85,7 @@ Attachment
 archive/issue_comments_049050.json:
 ```json
 {
-    "body": "Attachment\n\nNew pynac package here fixes the exp simplification:\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.8.spkg\n\nAttached patches fix doctests, and change module_list.py to rebuild the sage/symbolic/* modules if the package is updated.\n\nThis package also contains a fix for #6163, so these tickets should be merged together.",
+    "body": "Attachment [trac_6144-pynac_depends.patch](tarball://root/attachments/some-uuid/ticket6144/trac_6144-pynac_depends.patch) by burcin created at 2009-06-04 10:10:03\n\nNew pynac package here fixes the exp simplification:\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.8.spkg\n\nAttached patches fix doctests, and change module_list.py to rebuild the sage/symbolic/* modules if the package is updated.\n\nThis package also contains a fix for #6163, so these tickets should be merged together.",
     "created_at": "2009-06-04T10:10:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6144",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_049050.json:
 }
 ```
 
-Attachment
+Attachment [trac_6144-pynac_depends.patch](tarball://root/attachments/some-uuid/ticket6144/trac_6144-pynac_depends.patch) by burcin created at 2009-06-04 10:10:03
 
 New pynac package here fixes the exp simplification:
 
@@ -111,7 +111,7 @@ This package also contains a fix for #6163, so these tickets should be merged to
 archive/issue_comments_049051.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6144-review.patch](tarball://root/attachments/some-uuid/ticket6144/trac_6144-review.patch) by mhansen created at 2009-06-05 01:52:53",
     "created_at": "2009-06-05T01:52:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6144",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_049051.json:
 }
 ```
 
-Attachment
+Attachment [trac_6144-review.patch](tarball://root/attachments/some-uuid/ticket6144/trac_6144-review.patch) by mhansen created at 2009-06-05 01:52:53
 
 
 

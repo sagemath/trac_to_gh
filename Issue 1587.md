@@ -391,7 +391,7 @@ Adds documentation to the kernel-function and to the kernel-method of rational d
 archive/issue_comments_010108.json:
 ```json
 {
-    "body": "Attachment\n\nI added some words and some examples (including corner cases) to the function `kernel` in `sage/misc/functional.py` and to the `kernel` method in `sage/matrix/matrix_rational_dense.py`. \n\nSince the examples of the `kernel` method for dense integer matrices and for sparse matrices are clear enough, I believe that my patch suffices to clearify the documentation of `kernel`.",
+    "body": "Attachment [kernel_doc.patch](tarball://root/attachments/some-uuid/ticket1587/kernel_doc.patch) by SimonKing created at 2009-01-23 21:39:02\n\nI added some words and some examples (including corner cases) to the function `kernel` in `sage/misc/functional.py` and to the `kernel` method in `sage/matrix/matrix_rational_dense.py`. \n\nSince the examples of the `kernel` method for dense integer matrices and for sparse matrices are clear enough, I believe that my patch suffices to clearify the documentation of `kernel`.",
     "created_at": "2009-01-23T21:39:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1587",
     "type": "issue_comment",
@@ -400,7 +400,7 @@ archive/issue_comments_010108.json:
 }
 ```
 
-Attachment
+Attachment [kernel_doc.patch](tarball://root/attachments/some-uuid/ticket1587/kernel_doc.patch) by SimonKing created at 2009-01-23 21:39:02
 
 I added some words and some examples (including corner cases) to the function `kernel` in `sage/misc/functional.py` and to the `kernel` method in `sage/matrix/matrix_rational_dense.py`. 
 

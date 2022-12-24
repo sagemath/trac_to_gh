@@ -78,7 +78,7 @@ Changing status from new to needs_review.
 archive/issue_comments_072379.json:
 ```json
 {
-    "body": "Attachment\n\nMy first patch on Sage. I hope I've got everything all right.",
+    "body": "Attachment [trac_8207.patch](tarball://root/attachments/some-uuid/ticket8207/trac_8207.patch) by jsyri created at 2010-05-13 19:25:37\n\nMy first patch on Sage. I hope I've got everything all right.",
     "created_at": "2010-05-13T19:25:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8207",
     "type": "issue_comment",
@@ -87,7 +87,7 @@ archive/issue_comments_072379.json:
 }
 ```
 
-Attachment
+Attachment [trac_8207.patch](tarball://root/attachments/some-uuid/ticket8207/trac_8207.patch) by jsyri created at 2010-05-13 19:25:37
 
 My first patch on Sage. I hope I've got everything all right.
 

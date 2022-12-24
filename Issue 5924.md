@@ -106,7 +106,7 @@ patch against 3.4.2.rc0
 archive/issue_comments_046838.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review. The above code works fine for me (modulo a tiny typo fix), so I've made a proper patch for it. Note that although this has my mercurial username on the patch, credit should go to Lloyd.",
+    "body": "Attachment [trac_5924.patch](tarball://root/attachments/some-uuid/ticket5924/trac_5924.patch) by davidloeffler created at 2009-05-01 11:16:36\n\nPositive review. The above code works fine for me (modulo a tiny typo fix), so I've made a proper patch for it. Note that although this has my mercurial username on the patch, credit should go to Lloyd.",
     "created_at": "2009-05-01T11:16:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5924",
     "type": "issue_comment",
@@ -115,7 +115,7 @@ archive/issue_comments_046838.json:
 }
 ```
 
-Attachment
+Attachment [trac_5924.patch](tarball://root/attachments/some-uuid/ticket5924/trac_5924.patch) by davidloeffler created at 2009-05-01 11:16:36
 
 Positive review. The above code works fine for me (modulo a tiny typo fix), so I've made a proper patch for it. Note that although this has my mercurial username on the patch, credit should go to Lloyd.
 

@@ -107,7 +107,7 @@ Michael
 archive/issue_comments_007785.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1243.patch](tarball://root/attachments/some-uuid/ticket1243/1243.patch) by mhansen created at 2007-12-06 02:51:16",
     "created_at": "2007-12-06T02:51:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1243",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_007785.json:
 }
 ```
 
-Attachment
+Attachment [1243.patch](tarball://root/attachments/some-uuid/ticket1243/1243.patch) by mhansen created at 2007-12-06 02:51:16
 
 
 
@@ -125,7 +125,7 @@ Attachment
 archive/issue_comments_007786.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1243-doc.patch](tarball://root/attachments/some-uuid/ticket1243/1243-doc.patch) by mhansen created at 2007-12-06 02:51:26",
     "created_at": "2007-12-06T02:51:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1243",
     "type": "issue_comment",
@@ -134,7 +134,7 @@ archive/issue_comments_007786.json:
 }
 ```
 
-Attachment
+Attachment [1243-doc.patch](tarball://root/attachments/some-uuid/ticket1243/1243-doc.patch) by mhansen created at 2007-12-06 02:51:26
 
 
 

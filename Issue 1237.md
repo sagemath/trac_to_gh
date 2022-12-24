@@ -199,7 +199,7 @@ Changing status from new to assigned.
 archive/issue_comments_007734.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac1237.patch](tarball://root/attachments/some-uuid/ticket1237/trac1237.patch) by roed created at 2007-11-21 22:14:39",
     "created_at": "2007-11-21T22:14:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1237",
     "type": "issue_comment",
@@ -208,7 +208,7 @@ archive/issue_comments_007734.json:
 }
 ```
 
-Attachment
+Attachment [trac1237.patch](tarball://root/attachments/some-uuid/ticket1237/trac1237.patch) by roed created at 2007-11-21 22:14:39
 
 
 
@@ -217,7 +217,7 @@ Attachment
 archive/issue_comments_007735.json:
 ```json
 {
-    "body": "Attachment\n\nthis touches up a bunch of the docs.",
+    "body": "Attachment [trac-1237-part2.patch](tarball://root/attachments/some-uuid/ticket1237/trac-1237-part2.patch) by was created at 2007-12-15 11:39:47\n\nthis touches up a bunch of the docs.",
     "created_at": "2007-12-15T11:39:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1237",
     "type": "issue_comment",
@@ -226,7 +226,7 @@ archive/issue_comments_007735.json:
 }
 ```
 
-Attachment
+Attachment [trac-1237-part2.patch](tarball://root/attachments/some-uuid/ticket1237/trac-1237-part2.patch) by was created at 2007-12-15 11:39:47
 
 this touches up a bunch of the docs.
 

@@ -85,7 +85,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_063920.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7536.patch](tarball://root/attachments/some-uuid/ticket7536/trac_7536.patch) by rlm created at 2009-12-15 17:06:33",
     "created_at": "2009-12-15T17:06:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7536",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_063920.json:
 }
 ```
 
-Attachment
+Attachment [trac_7536.patch](tarball://root/attachments/some-uuid/ticket7536/trac_7536.patch) by rlm created at 2009-12-15 17:06:33
 
 
 

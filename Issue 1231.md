@@ -340,7 +340,7 @@ Michael
 archive/issue_comments_007661.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_1231.hg](tarball://root/attachments/some-uuid/ticket1231/trac_1231.hg) by craigcitro created at 2007-12-02 10:45:13",
     "created_at": "2007-12-02T10:45:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1231",
     "type": "issue_comment",
@@ -349,7 +349,7 @@ archive/issue_comments_007661.json:
 }
 ```
 
-Attachment
+Attachment [trac_1231.hg](tarball://root/attachments/some-uuid/ticket1231/trac_1231.hg) by craigcitro created at 2007-12-02 10:45:13
 
 
 
@@ -432,7 +432,7 @@ I have two issues.  First, the bundle includes the patches for #1129, which I st
 archive/issue_comments_007666.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1231.patch](tarball://root/attachments/some-uuid/ticket1231/1231.patch) by craigcitro created at 2007-12-02 19:12:20",
     "created_at": "2007-12-02T19:12:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1231",
     "type": "issue_comment",
@@ -441,7 +441,7 @@ archive/issue_comments_007666.json:
 }
 ```
 
-Attachment
+Attachment [1231.patch](tarball://root/attachments/some-uuid/ticket1231/1231.patch) by craigcitro created at 2007-12-02 19:12:20
 
 
 

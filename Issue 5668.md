@@ -53,7 +53,7 @@ picture of top and fact that we're saving state.
 archive/issue_comments_044340.json:
 ```json
 {
-    "body": "Attachment\n\npicture of too many open files.",
+    "body": "Attachment [Picture 2.png](tarball://root/attachments/some-uuid/ticket5668/Picture 2.png) by was created at 2009-04-02 20:10:45\n\npicture of too many open files.",
     "created_at": "2009-04-02T20:10:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5668",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_044340.json:
 }
 ```
 
-Attachment
+Attachment [Picture 2.png](tarball://root/attachments/some-uuid/ticket5668/Picture 2.png) by was created at 2009-04-02 20:10:45
 
 picture of too many open files.
 

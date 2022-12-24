@@ -90,7 +90,7 @@ Michael
 archive/issue_comments_042547.json:
 ```json
 {
-    "body": "Attachment\n\nI finally managed to finish writing the doctests (and fixed a few bugs in the process).",
+    "body": "Attachment [trac5483-explain-pickle-v2.patch](tarball://root/attachments/some-uuid/ticket5483/trac5483-explain-pickle-v2.patch) by cwitty created at 2009-05-17 00:29:40\n\nI finally managed to finish writing the doctests (and fixed a few bugs in the process).",
     "created_at": "2009-05-17T00:29:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5483",
     "type": "issue_comment",
@@ -99,7 +99,7 @@ archive/issue_comments_042547.json:
 }
 ```
 
-Attachment
+Attachment [trac5483-explain-pickle-v2.patch](tarball://root/attachments/some-uuid/ticket5483/trac5483-explain-pickle-v2.patch) by cwitty created at 2009-05-17 00:29:40
 
 I finally managed to finish writing the doctests (and fixed a few bugs in the process).
 
@@ -181,7 +181,7 @@ William: what do you think?
 archive/issue_comments_042551.json:
 ```json
 {
-    "body": "Attachment\n\nOral comment by William: no reason not to integrate this. Positive Review.",
+    "body": "Attachment [trac5483-explain-pickle-v2-review.patch](tarball://root/attachments/some-uuid/ticket5483/trac5483-explain-pickle-v2-review.patch) by nthiery created at 2009-05-22 22:53:36\n\nOral comment by William: no reason not to integrate this. Positive Review.",
     "created_at": "2009-05-22T22:53:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5483",
     "type": "issue_comment",
@@ -190,7 +190,7 @@ archive/issue_comments_042551.json:
 }
 ```
 
-Attachment
+Attachment [trac5483-explain-pickle-v2-review.patch](tarball://root/attachments/some-uuid/ticket5483/trac5483-explain-pickle-v2-review.patch) by nthiery created at 2009-05-22 22:53:36
 
 Oral comment by William: no reason not to integrate this. Positive Review.
 

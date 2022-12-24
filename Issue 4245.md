@@ -75,7 +75,7 @@ I can't tell if I'm seeing the same problem or not, so I have a new ticket which
 archive/issue_comments_030854.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4245.patch](tarball://root/attachments/some-uuid/ticket4245/trac_4245.patch) by mhansen created at 2009-01-24 07:33:57",
     "created_at": "2009-01-24T07:33:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4245",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_030854.json:
 }
 ```
 
-Attachment
+Attachment [trac_4245.patch](tarball://root/attachments/some-uuid/ticket4245/trac_4245.patch) by mhansen created at 2009-01-24 07:33:57
 
 
 
@@ -222,7 +222,7 @@ I've attached a patch which fixes the quoting issue for the Edit button.  Basica
 archive/issue_comments_030861.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4245-html-escape.patch](tarball://root/attachments/some-uuid/ticket4245/trac_4245-html-escape.patch) by jason created at 2009-02-06 08:58:23",
     "created_at": "2009-02-06T08:58:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4245",
     "type": "issue_comment",
@@ -231,7 +231,7 @@ archive/issue_comments_030861.json:
 }
 ```
 
-Attachment
+Attachment [trac_4245-html-escape.patch](tarball://root/attachments/some-uuid/ticket4245/trac_4245-html-escape.patch) by jason created at 2009-02-06 08:58:23
 
 
 

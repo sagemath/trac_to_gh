@@ -260,7 +260,7 @@ Oops, I forget to attach the revised spkg/install and spkg/standard/deps. I'll d
 archive/issue_comments_072198.json:
 ```json
 {
-    "body": "Attachment\n\nNew $SAGE_ROOT/spkg/install to add support for the new iconv package",
+    "body": "Attachment [install](tarball://root/attachments/some-uuid/ticket8191/install) by drkirkby created at 2010-02-15 11:51:27\n\nNew $SAGE_ROOT/spkg/install to add support for the new iconv package",
     "created_at": "2010-02-15T11:51:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8191",
     "type": "issue_comment",
@@ -269,7 +269,7 @@ archive/issue_comments_072198.json:
 }
 ```
 
-Attachment
+Attachment [install](tarball://root/attachments/some-uuid/ticket8191/install) by drkirkby created at 2010-02-15 11:51:27
 
 New $SAGE_ROOT/spkg/install to add support for the new iconv package
 
@@ -280,7 +280,7 @@ New $SAGE_ROOT/spkg/install to add support for the new iconv package
 archive/issue_comments_072199.json:
 ```json
 {
-    "body": "Attachment\n\nDiff for for $SAGE_ROOT/spkg/install",
+    "body": "Attachment [install.diff](tarball://root/attachments/some-uuid/ticket8191/install.diff) by drkirkby created at 2010-02-15 11:52:02\n\nDiff for for $SAGE_ROOT/spkg/install",
     "created_at": "2010-02-15T11:52:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8191",
     "type": "issue_comment",
@@ -289,7 +289,7 @@ archive/issue_comments_072199.json:
 }
 ```
 
-Attachment
+Attachment [install.diff](tarball://root/attachments/some-uuid/ticket8191/install.diff) by drkirkby created at 2010-02-15 11:52:02
 
 Diff for for $SAGE_ROOT/spkg/install
 
@@ -318,7 +318,7 @@ New $SAGE_ROOT/spkg/standard/deps
 archive/issue_comments_072201.json:
 ```json
 {
-    "body": "Attachment\n\nDiff file for $SAGE_ROOT/spkg/standard/deps",
+    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket8191/deps) by drkirkby created at 2010-02-15 11:54:31\n\nDiff file for $SAGE_ROOT/spkg/standard/deps",
     "created_at": "2010-02-15T11:54:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8191",
     "type": "issue_comment",
@@ -327,7 +327,7 @@ archive/issue_comments_072201.json:
 }
 ```
 
-Attachment
+Attachment [deps](tarball://root/attachments/some-uuid/ticket8191/deps) by drkirkby created at 2010-02-15 11:54:31
 
 Diff file for $SAGE_ROOT/spkg/standard/deps
 
@@ -338,7 +338,7 @@ Diff file for $SAGE_ROOT/spkg/standard/deps
 archive/issue_comments_072202.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached the following two files, in addition to diffs to their originals. Neither file appear to be are under revision control, so I assume these two files will have to be manually integrated.  \n\n\n```\n$SAGE_ROOT/spkg/standard/deps \n$SAGE_ROOT/spkg/install \n```\n\n\nI've made gdmodule, Python and R all depend on iconv, as all of them check for iconv. \n\n**This is now ready for review!!!**\n\nDave",
+    "body": "Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket8191/deps.diff) by drkirkby created at 2010-02-15 11:59:02\n\nI've attached the following two files, in addition to diffs to their originals. Neither file appear to be are under revision control, so I assume these two files will have to be manually integrated.  \n\n\n```\n$SAGE_ROOT/spkg/standard/deps \n$SAGE_ROOT/spkg/install \n```\n\n\nI've made gdmodule, Python and R all depend on iconv, as all of them check for iconv. \n\n**This is now ready for review!!!**\n\nDave",
     "created_at": "2010-02-15T11:59:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8191",
     "type": "issue_comment",
@@ -347,7 +347,7 @@ archive/issue_comments_072202.json:
 }
 ```
 
-Attachment
+Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket8191/deps.diff) by drkirkby created at 2010-02-15 11:59:02
 
 I've attached the following two files, in addition to diffs to their originals. Neither file appear to be are under revision control, so I assume these two files will have to be manually integrated.  
 
@@ -425,7 +425,7 @@ Mercurial patch
 archive/issue_comments_072206.json:
 ```json
 {
-    "body": "Attachment\n\nI called the Mercurial patch \"R.patch\", which was probably not a very sensible name. It is for the iconv package.",
+    "body": "Attachment [R.patch](tarball://root/attachments/some-uuid/ticket8191/R.patch) by drkirkby created at 2010-02-17 00:21:38\n\nI called the Mercurial patch \"R.patch\", which was probably not a very sensible name. It is for the iconv package.",
     "created_at": "2010-02-17T00:21:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8191",
     "type": "issue_comment",
@@ -434,7 +434,7 @@ archive/issue_comments_072206.json:
 }
 ```
 
-Attachment
+Attachment [R.patch](tarball://root/attachments/some-uuid/ticket8191/R.patch) by drkirkby created at 2010-02-17 00:21:38
 
 I called the Mercurial patch "R.patch", which was probably not a very sensible name. It is for the iconv package.
 
@@ -589,7 +589,7 @@ apply to script repository; depends on #8307
 archive/issue_comments_072214.json:
 ```json
 {
-    "body": "Attachment\n\nThe iconv spkg installs a binary called \"iconv\" to `SAGE_LOCAL/bin`, a directory which is under revision control. Usually, we don't put executable binaries under revision control. After installing the iconv spkg, I get this:\n\n```\n[mvngu@sage bin]$ hg st\n? iconv\n```\n\nThe file `.hgignore` needs to be configured to ignore this file. I have attached [trac_8191-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8191/trac_8191-reviewer.patch) which does this. Apply that patch to the script repository. It depends on the patch at #8307. Only my patch needs review by anyone but me.",
+    "body": "Attachment [trac_8191-reviewer.patch](tarball://root/attachments/some-uuid/ticket8191/trac_8191-reviewer.patch) by mvngu created at 2010-03-02 19:27:57\n\nThe iconv spkg installs a binary called \"iconv\" to `SAGE_LOCAL/bin`, a directory which is under revision control. Usually, we don't put executable binaries under revision control. After installing the iconv spkg, I get this:\n\n```\n[mvngu@sage bin]$ hg st\n? iconv\n```\n\nThe file `.hgignore` needs to be configured to ignore this file. I have attached [trac_8191-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8191/trac_8191-reviewer.patch) which does this. Apply that patch to the script repository. It depends on the patch at #8307. Only my patch needs review by anyone but me.",
     "created_at": "2010-03-02T19:27:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8191",
     "type": "issue_comment",
@@ -598,7 +598,7 @@ archive/issue_comments_072214.json:
 }
 ```
 
-Attachment
+Attachment [trac_8191-reviewer.patch](tarball://root/attachments/some-uuid/ticket8191/trac_8191-reviewer.patch) by mvngu created at 2010-03-02 19:27:57
 
 The iconv spkg installs a binary called "iconv" to `SAGE_LOCAL/bin`, a directory which is under revision control. Usually, we don't put executable binaries under revision control. After installing the iconv spkg, I get this:
 

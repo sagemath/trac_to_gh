@@ -142,7 +142,7 @@ Sébastien
 archive/issue_comments_077944.json:
 ```json
 {
-    "body": "Attachment\n\nDepends on #8429.",
+    "body": "Attachment [trac_8604_nfactor_enumerable-sl.patch](tarball://root/attachments/some-uuid/ticket8604/trac_8604_nfactor_enumerable-sl.patch) by slabbe created at 2010-04-13 18:25:59\n\nDepends on #8429.",
     "created_at": "2010-04-13T18:25:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8604",
     "type": "issue_comment",
@@ -151,7 +151,7 @@ archive/issue_comments_077944.json:
 }
 ```
 
-Attachment
+Attachment [trac_8604_nfactor_enumerable-sl.patch](tarball://root/attachments/some-uuid/ticket8604/trac_8604_nfactor_enumerable-sl.patch) by slabbe created at 2010-04-13 18:25:59
 
 Depends on #8429.
 
@@ -247,7 +247,7 @@ I say yes! I know one of your argument about that was that it would reduce the n
 archive/issue_comments_077948.json:
 ```json
 {
-    "body": "Attachment\n\nApplies over the precedent patch",
+    "body": "Attachment [trac_8604-corrections-sl.patch](tarball://root/attachments/some-uuid/ticket8604/trac_8604-corrections-sl.patch) by slabbe created at 2010-04-18 19:28:21\n\nApplies over the precedent patch",
     "created_at": "2010-04-18T19:28:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8604",
     "type": "issue_comment",
@@ -256,7 +256,7 @@ archive/issue_comments_077948.json:
 }
 ```
 
-Attachment
+Attachment [trac_8604-corrections-sl.patch](tarball://root/attachments/some-uuid/ticket8604/trac_8604-corrections-sl.patch) by slabbe created at 2010-04-18 19:28:21
 
 Applies over the precedent patch
 

@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3967
 archive/issue_comments_028495.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9865.patch](tarball://root/attachments/some-uuid/ticket3967/9865.patch) by jvoight created at 2008-08-27 17:22:02",
     "created_at": "2008-08-27T17:22:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3967",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_028495.json:
 }
 ```
 
-Attachment
+Attachment [9865.patch](tarball://root/attachments/some-uuid/ticket3967/9865.patch) by jvoight created at 2008-08-27 17:22:02
 
 
 
@@ -305,7 +305,7 @@ Rebased John's patch for 3.1.2, depends on trac #4155 (both patches)
 archive/issue_comments_028509.json:
 ```json
 {
-    "body": "Attachment\n\nMerged trac-3967-rebase.patch in Sage 3.1.3.alpha1",
+    "body": "Attachment [trac-3967-rebase.patch](tarball://root/attachments/some-uuid/ticket3967/trac-3967-rebase.patch) by mabshoff created at 2008-09-23 00:09:36\n\nMerged trac-3967-rebase.patch in Sage 3.1.3.alpha1",
     "created_at": "2008-09-23T00:09:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3967",
     "type": "issue_comment",
@@ -314,7 +314,7 @@ archive/issue_comments_028509.json:
 }
 ```
 
-Attachment
+Attachment [trac-3967-rebase.patch](tarball://root/attachments/some-uuid/ticket3967/trac-3967-rebase.patch) by mabshoff created at 2008-09-23 00:09:36
 
 Merged trac-3967-rebase.patch in Sage 3.1.3.alpha1
 

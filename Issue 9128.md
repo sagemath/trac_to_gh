@@ -1007,7 +1007,7 @@ As I already said, I'm not sure if this should enter Sage in the present status 
 archive/issue_comments_084966.json:
 ```json
 {
-    "body": "Attachment\n\n+1 on getting it merged in 5.0, that is as soon as possible! As it is, it already helps much improving the Sage documentation, and it can be improved later. Besides, we want to use it for working with the Sage-Combinat patches, but it's a pain to have it in the queue since it forces recompiling all the documentation.\n\nI have been through the patch, and it looks reasonnable, though I am not by far a Sphinx expert. Just a detail: several of the functions do not have doctests. Now I am not sure if it is anyway really possible to doctest them; if not, I guess that's ok as is.\n\nAndrei or John: would you agree to put a positive review?\n\nCheers,\n                           Nicolas",
+    "body": "Attachment [trac_9128-intersphinx_python_database-fh.patch](tarball://root/attachments/some-uuid/ticket9128/trac_9128-intersphinx_python_database-fh.patch) by nthiery created at 2012-02-18 14:27:20\n\n+1 on getting it merged in 5.0, that is as soon as possible! As it is, it already helps much improving the Sage documentation, and it can be improved later. Besides, we want to use it for working with the Sage-Combinat patches, but it's a pain to have it in the queue since it forces recompiling all the documentation.\n\nI have been through the patch, and it looks reasonnable, though I am not by far a Sphinx expert. Just a detail: several of the functions do not have doctests. Now I am not sure if it is anyway really possible to doctest them; if not, I guess that's ok as is.\n\nAndrei or John: would you agree to put a positive review?\n\nCheers,\n                           Nicolas",
     "created_at": "2012-02-18T14:27:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9128",
     "type": "issue_comment",
@@ -1016,7 +1016,7 @@ archive/issue_comments_084966.json:
 }
 ```
 
-Attachment
+Attachment [trac_9128-intersphinx_python_database-fh.patch](tarball://root/attachments/some-uuid/ticket9128/trac_9128-intersphinx_python_database-fh.patch) by nthiery created at 2012-02-18 14:27:20
 
 +1 on getting it merged in 5.0, that is as soon as possible! As it is, it already helps much improving the Sage documentation, and it can be improved later. Besides, we want to use it for working with the Sage-Combinat patches, but it's a pain to have it in the queue since it forces recompiling all the documentation.
 
@@ -1248,7 +1248,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_084976.json:
 ```json
 {
-    "body": "Attachment\n\nHi there,\n\nI finalized the doc of this patch. I also took the chance to add a extra option 'warn-links' which make Sphinx complains for dangling links. To ease the review, I uploaded my changes in [attachment:trac_9128-doc_option-fh.patch]. Those changes are folded in [attachment:trac_9128-sphinx_links_all-fh.patch] so that you only need to apply this one and the database patch.",
+    "body": "Attachment [trac_9128-doc_option-fh.patch](tarball://root/attachments/some-uuid/ticket9128/trac_9128-doc_option-fh.patch) by hivert created at 2012-02-20 17:00:37\n\nHi there,\n\nI finalized the doc of this patch. I also took the chance to add a extra option 'warn-links' which make Sphinx complains for dangling links. To ease the review, I uploaded my changes in [attachment:trac_9128-doc_option-fh.patch]. Those changes are folded in [attachment:trac_9128-sphinx_links_all-fh.patch] so that you only need to apply this one and the database patch.",
     "created_at": "2012-02-20T17:00:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9128",
     "type": "issue_comment",
@@ -1257,7 +1257,7 @@ archive/issue_comments_084976.json:
 }
 ```
 
-Attachment
+Attachment [trac_9128-doc_option-fh.patch](tarball://root/attachments/some-uuid/ticket9128/trac_9128-doc_option-fh.patch) by hivert created at 2012-02-20 17:00:37
 
 Hi there,
 
@@ -1270,7 +1270,7 @@ I finalized the doc of this patch. I also took the chance to add a extra option 
 archive/issue_comments_084977.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9128-sphinx_links_all-fh.patch](tarball://root/attachments/some-uuid/ticket9128/trac_9128-sphinx_links_all-fh.patch) by nthiery created at 2012-02-20 17:31:06",
     "created_at": "2012-02-20T17:31:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9128",
     "type": "issue_comment",
@@ -1279,7 +1279,7 @@ archive/issue_comments_084977.json:
 }
 ```
 
-Attachment
+Attachment [trac_9128-sphinx_links_all-fh.patch](tarball://root/attachments/some-uuid/ticket9128/trac_9128-sphinx_links_all-fh.patch) by nthiery created at 2012-02-20 17:31:06
 
 
 
@@ -1796,7 +1796,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_084995.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:60 jdemeyer]:\n> The files\n\n```\ndoc/common/python.inv\ndoc/common/update-python-inv.sh\n```\n\n> should be put in `SAGE_ROOT/devel/sage/MANIFEST.in`\n\nThanks for pointing this out. I just added a patch [attachment:trac_9128-MANIFEST-fh.patch] which should do that. Please double check as I don't really know what should be there.\n\nFlorent",
+    "body": "Attachment [trac_9128-MANIFEST-fh.patch](tarball://root/attachments/some-uuid/ticket9128/trac_9128-MANIFEST-fh.patch) by hivert created at 2012-03-04 22:19:19\n\nReplying to [comment:60 jdemeyer]:\n> The files\n\n```\ndoc/common/python.inv\ndoc/common/update-python-inv.sh\n```\n\n> should be put in `SAGE_ROOT/devel/sage/MANIFEST.in`\n\nThanks for pointing this out. I just added a patch [attachment:trac_9128-MANIFEST-fh.patch] which should do that. Please double check as I don't really know what should be there.\n\nFlorent",
     "created_at": "2012-03-04T22:19:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9128",
     "type": "issue_comment",
@@ -1805,7 +1805,7 @@ archive/issue_comments_084995.json:
 }
 ```
 
-Attachment
+Attachment [trac_9128-MANIFEST-fh.patch](tarball://root/attachments/some-uuid/ticket9128/trac_9128-MANIFEST-fh.patch) by hivert created at 2012-03-04 22:19:19
 
 Replying to [comment:60 jdemeyer]:
 > The files

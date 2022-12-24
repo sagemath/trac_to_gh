@@ -83,7 +83,7 @@ If you add a doctest, I'll give this a positive review.
 archive/issue_comments_033549.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4520-cyclo-matrix-segfault.patch](tarball://root/attachments/some-uuid/ticket4520/4520-cyclo-matrix-segfault.patch) by robertwb created at 2008-11-14 07:18:34",
     "created_at": "2008-11-14T07:18:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4520",
     "type": "issue_comment",
@@ -92,7 +92,7 @@ archive/issue_comments_033549.json:
 }
 ```
 
-Attachment
+Attachment [4520-cyclo-matrix-segfault.patch](tarball://root/attachments/some-uuid/ticket4520/4520-cyclo-matrix-segfault.patch) by robertwb created at 2008-11-14 07:18:34
 
 
 

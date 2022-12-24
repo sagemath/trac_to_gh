@@ -70,7 +70,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2391
 archive/issue_comments_016130.json:
 ```json
 {
-    "body": "Attachment\n\nthis fixes the bug and vastly improves the documentation of sage-preparse",
+    "body": "Attachment [scripts-2391.patch](tarball://root/attachments/some-uuid/ticket2391/scripts-2391.patch) by was created at 2008-03-05 01:10:23\n\nthis fixes the bug and vastly improves the documentation of sage-preparse",
     "created_at": "2008-03-05T01:10:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2391",
     "type": "issue_comment",
@@ -79,7 +79,7 @@ archive/issue_comments_016130.json:
 }
 ```
 
-Attachment
+Attachment [scripts-2391.patch](tarball://root/attachments/some-uuid/ticket2391/scripts-2391.patch) by was created at 2008-03-05 01:10:23
 
 this fixes the bug and vastly improves the documentation of sage-preparse
 

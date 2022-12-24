@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3648
 archive/issue_comments_025800.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac3648-gen-complex.patch](tarball://root/attachments/some-uuid/ticket3648/trac3648-gen-complex.patch) by dmharvey created at 2008-07-14 04:44:34",
     "created_at": "2008-07-14T04:44:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3648",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_025800.json:
 }
 ```
 
-Attachment
+Attachment [trac3648-gen-complex.patch](tarball://root/attachments/some-uuid/ticket3648/trac3648-gen-complex.patch) by dmharvey created at 2008-07-14 04:44:34
 
 
 
@@ -49,7 +49,7 @@ Attachment
 archive/issue_comments_025801.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac3648-gen-complex-2.patch](tarball://root/attachments/some-uuid/ticket3648/trac3648-gen-complex-2.patch) by dmharvey created at 2008-07-14 04:54:28",
     "created_at": "2008-07-14T04:54:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3648",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_025801.json:
 }
 ```
 
-Attachment
+Attachment [trac3648-gen-complex-2.patch](tarball://root/attachments/some-uuid/ticket3648/trac3648-gen-complex-2.patch) by dmharvey created at 2008-07-14 04:54:28
 
 
 

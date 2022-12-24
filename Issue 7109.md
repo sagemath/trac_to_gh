@@ -105,7 +105,7 @@ Patch for cddlib-094f.spkg
 archive/issue_comments_058855.json:
 ```json
 {
-    "body": "Attachment\n\nI think your proposal sounds very good.  I have been meaning to do something similar but haven't had time.  When I first started writing the Polyhedron class, I wasn't sure how much should be computed at initialization and how much on demand.  Now it seems clear that its worth it to compute the complementary representation right away.  Things like the face lattice, though, should be computed on-demand, but that is consistent with what you are proposing.\n\nRight now lrs is an optional package but I have been working on preparing to move it to be a standard component.  Then it should be possible to choose to use cddlib or lrs for the representation conversion.  That can wait, but I wanted to mention it so you have it in mind while writing any interface.\n\nAnother refactoring I have been thinking about would compute the dimension during initialization, and then only add methods like render_solid() if the dimension was 1,2, or 3.  At some point it would be good to integrate better with the code that Andrey Novoseltsev has for lattice polytopes (this uses PALP instead of cddlib).\n\nAnyway, go for it and I will be very happy to review.  I'm glad you are interested in improving this functionality in Sage.\n\nCheers,\nMarshall Hampton",
+    "body": "Attachment [cddlib-094f.patch](tarball://root/attachments/some-uuid/ticket7109/cddlib-094f.patch) by mhampton created at 2009-10-04 15:05:48\n\nI think your proposal sounds very good.  I have been meaning to do something similar but haven't had time.  When I first started writing the Polyhedron class, I wasn't sure how much should be computed at initialization and how much on demand.  Now it seems clear that its worth it to compute the complementary representation right away.  Things like the face lattice, though, should be computed on-demand, but that is consistent with what you are proposing.\n\nRight now lrs is an optional package but I have been working on preparing to move it to be a standard component.  Then it should be possible to choose to use cddlib or lrs for the representation conversion.  That can wait, but I wanted to mention it so you have it in mind while writing any interface.\n\nAnother refactoring I have been thinking about would compute the dimension during initialization, and then only add methods like render_solid() if the dimension was 1,2, or 3.  At some point it would be good to integrate better with the code that Andrey Novoseltsev has for lattice polytopes (this uses PALP instead of cddlib).\n\nAnyway, go for it and I will be very happy to review.  I'm glad you are interested in improving this functionality in Sage.\n\nCheers,\nMarshall Hampton",
     "created_at": "2009-10-04T15:05:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_058855.json:
 }
 ```
 
-Attachment
+Attachment [cddlib-094f.patch](tarball://root/attachments/some-uuid/ticket7109/cddlib-094f.patch) by mhampton created at 2009-10-04 15:05:48
 
 I think your proposal sounds very good.  I have been meaning to do something similar but haven't had time.  When I first started writing the Polyhedron class, I wasn't sure how much should be computed at initialization and how much on demand.  Now it seems clear that its worth it to compute the complementary representation right away.  Things like the face lattice, though, should be computed on-demand, but that is consistent with what you are proposing.
 
@@ -172,7 +172,7 @@ Changing status from new to needs_work.
 archive/issue_comments_058858.json:
 ```json
 {
-    "body": "Attachment\n\nRefactored version of polyhedra.py",
+    "body": "Attachment [polyhedra.py](tarball://root/attachments/some-uuid/ticket7109/polyhedra.py) by vbraun created at 2009-10-12 17:08:54\n\nRefactored version of polyhedra.py",
     "created_at": "2009-10-12T17:08:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
@@ -181,7 +181,7 @@ archive/issue_comments_058858.json:
 }
 ```
 
-Attachment
+Attachment [polyhedra.py](tarball://root/attachments/some-uuid/ticket7109/polyhedra.py) by vbraun created at 2009-10-12 17:08:54
 
 Refactored version of polyhedra.py
 
@@ -210,7 +210,7 @@ patch version of polyhedra.py, also touches manual and all.py
 archive/issue_comments_058860.json:
 ```json
 {
-    "body": "Attachment\n\nCurrent revision is final version, all goals accomplished.",
+    "body": "Attachment [polyhedron-v8.patch](tarball://root/attachments/some-uuid/ticket7109/polyhedron-v8.patch) by vbraun created at 2009-10-12 17:16:37\n\nCurrent revision is final version, all goals accomplished.",
     "created_at": "2009-10-12T17:16:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
@@ -219,7 +219,7 @@ archive/issue_comments_058860.json:
 }
 ```
 
-Attachment
+Attachment [polyhedron-v8.patch](tarball://root/attachments/some-uuid/ticket7109/polyhedron-v8.patch) by vbraun created at 2009-10-12 17:16:37
 
 Current revision is final version, all goals accomplished.
 
@@ -549,7 +549,7 @@ About 2/3 of the total time is spent on computing facet adjacencies. This part o
 archive/issue_comments_058873.json:
 ```json
 {
-    "body": "Attachment\n\ncdd_both_reps now reports timing information for individual operations",
+    "body": "Attachment [cddlib-094f.spkg](tarball://root/attachments/some-uuid/ticket7109/cddlib-094f.spkg) by vbraun created at 2009-10-28 17:11:56\n\ncdd_both_reps now reports timing information for individual operations",
     "created_at": "2009-10-28T17:11:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
@@ -558,7 +558,7 @@ archive/issue_comments_058873.json:
 }
 ```
 
-Attachment
+Attachment [cddlib-094f.spkg](tarball://root/attachments/some-uuid/ticket7109/cddlib-094f.spkg) by vbraun created at 2009-10-28 17:11:56
 
 cdd_both_reps now reports timing information for individual operations
 
@@ -840,7 +840,7 @@ OK, I think I am basically happy with everything now.  I am attaching a cumulati
 archive/issue_comments_058886.json:
 ```json
 {
-    "body": "Attachment\n\nBased against 4.2.1, cumulative of all changes except cddlib spkg",
+    "body": "Attachment [trac_7109_mh1.patch](tarball://root/attachments/some-uuid/ticket7109/trac_7109_mh1.patch) by mhampton created at 2009-12-29 23:33:30\n\nBased against 4.2.1, cumulative of all changes except cddlib spkg",
     "created_at": "2009-12-29T23:33:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
@@ -849,7 +849,7 @@ archive/issue_comments_058886.json:
 }
 ```
 
-Attachment
+Attachment [trac_7109_mh1.patch](tarball://root/attachments/some-uuid/ticket7109/trac_7109_mh1.patch) by mhampton created at 2009-12-29 23:33:30
 
 Based against 4.2.1, cumulative of all changes except cddlib spkg
 
@@ -914,7 +914,7 @@ Apply after polyhedron-v8.patch; requires new gfan from 7820 to pass all doctest
 archive/issue_comments_058890.json:
 ```json
 {
-    "body": "Attachment\n\nI added a \"referee\" patch at William Stein's request, to make it easier to see what I did as opposed to Volker (vbraun).  This also updates groebner_fan.py to be in accord with the changes from ticket 7820, the upgrade to gfan-0.4.",
+    "body": "Attachment [trac_7109_referee_patch.patch](tarball://root/attachments/some-uuid/ticket7109/trac_7109_referee_patch.patch) by mhampton created at 2010-01-21 17:50:06\n\nI added a \"referee\" patch at William Stein's request, to make it easier to see what I did as opposed to Volker (vbraun).  This also updates groebner_fan.py to be in accord with the changes from ticket 7820, the upgrade to gfan-0.4.",
     "created_at": "2010-01-21T17:50:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
@@ -923,7 +923,7 @@ archive/issue_comments_058890.json:
 }
 ```
 
-Attachment
+Attachment [trac_7109_referee_patch.patch](tarball://root/attachments/some-uuid/ticket7109/trac_7109_referee_patch.patch) by mhampton created at 2010-01-21 17:50:06
 
 I added a "referee" patch at William Stein's request, to make it easier to see what I did as opposed to Volker (vbraun).  This also updates groebner_fan.py to be in accord with the changes from ticket 7820, the upgrade to gfan-0.4.
 
@@ -952,7 +952,7 @@ Ignore previous referee patch, I didn't do it correctly
 archive/issue_comments_058892.json:
 ```json
 {
-    "body": "Attachment\n\nI looked through the patch and it looks pretty good! Some minor changes:\n\n* Beautified documentation\n* Made clear that ieqs() is an alias for inequalities().\n* Fixed the crash _init_from_cdd_output() for the input\n  sage: p = Polyhedron(ieqs = [[0,1,0,0],[0,0,1,0]]) \n* Renamed the generator for incident V-representation objects from\n  Hrepresentation.facet() to Hrepresentation.incident(). Wrote the\n  analogous Vrepresentation.incident()\n* Added aliases Hrepresentation.adjacent() for\n  Hrepresentation.neighbors() and Vrepresentation.adjacent() for\n  Vrepresentation.neighbors()\n* Hrepresentation now accepts an optional argumment: \n  Hrepresentation(i) now returns Hrepresentation()[i]. same with Vrepresentation\n* Rewrote facial_adjacencies(), facial_incidences(),\n  vertex_adjacencies(), vertex_incidences() to make use of the\n  Hrepresentation/Vrepresentation objects.\n* Equation._repr_() fixed.\n\nAs far as I am concerned, this is now ready for inclusion in sage.",
+    "body": "Attachment [trac_7109_referee2.patch](tarball://root/attachments/some-uuid/ticket7109/trac_7109_referee2.patch) by vbraun created at 2010-01-22 22:51:24\n\nI looked through the patch and it looks pretty good! Some minor changes:\n\n* Beautified documentation\n* Made clear that ieqs() is an alias for inequalities().\n* Fixed the crash _init_from_cdd_output() for the input\n  sage: p = Polyhedron(ieqs = [[0,1,0,0],[0,0,1,0]]) \n* Renamed the generator for incident V-representation objects from\n  Hrepresentation.facet() to Hrepresentation.incident(). Wrote the\n  analogous Vrepresentation.incident()\n* Added aliases Hrepresentation.adjacent() for\n  Hrepresentation.neighbors() and Vrepresentation.adjacent() for\n  Vrepresentation.neighbors()\n* Hrepresentation now accepts an optional argumment: \n  Hrepresentation(i) now returns Hrepresentation()[i]. same with Vrepresentation\n* Rewrote facial_adjacencies(), facial_incidences(),\n  vertex_adjacencies(), vertex_incidences() to make use of the\n  Hrepresentation/Vrepresentation objects.\n* Equation._repr_() fixed.\n\nAs far as I am concerned, this is now ready for inclusion in sage.",
     "created_at": "2010-01-22T22:51:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
@@ -961,7 +961,7 @@ archive/issue_comments_058892.json:
 }
 ```
 
-Attachment
+Attachment [trac_7109_referee2.patch](tarball://root/attachments/some-uuid/ticket7109/trac_7109_referee2.patch) by vbraun created at 2010-01-22 22:51:24
 
 I looked through the patch and it looks pretty good! Some minor changes:
 
@@ -1009,7 +1009,7 @@ Based on trac_7109_mh1.patch together with the (minor) changes outlined in my co
 archive/issue_comments_058894.json:
 ```json
 {
-    "body": "Attachment\n\nIt would help if somebody could write down which spkgs and patches need to be applied and in which order.  Also, since at least one patch depends on #7820, that ticket would need to be reviewed before any of this can be merged into Sage.  (The somewhat ugly alternative would be to make this independent of #7820, merge it, and then put the necessary changes at #7820.)\n\nAnyway, I think we're getting very close with this ticket.",
+    "body": "Attachment [trac_7109_vb1.patch](tarball://root/attachments/some-uuid/ticket7109/trac_7109_vb1.patch) by AlexGhitza created at 2010-01-22 23:35:03\n\nIt would help if somebody could write down which spkgs and patches need to be applied and in which order.  Also, since at least one patch depends on #7820, that ticket would need to be reviewed before any of this can be merged into Sage.  (The somewhat ugly alternative would be to make this independent of #7820, merge it, and then put the necessary changes at #7820.)\n\nAnyway, I think we're getting very close with this ticket.",
     "created_at": "2010-01-22T23:35:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
@@ -1018,7 +1018,7 @@ archive/issue_comments_058894.json:
 }
 ```
 
-Attachment
+Attachment [trac_7109_vb1.patch](tarball://root/attachments/some-uuid/ticket7109/trac_7109_vb1.patch) by AlexGhitza created at 2010-01-22 23:35:03
 
 It would help if somebody could write down which spkgs and patches need to be applied and in which order.  Also, since at least one patch depends on #7820, that ticket would need to be reviewed before any of this can be merged into Sage.  (The somewhat ugly alternative would be to make this independent of #7820, merge it, and then put the necessary changes at #7820.)
 
@@ -1168,7 +1168,7 @@ I am not adding the changes to #7820 this time to keep the two tickets separate.
 archive/issue_comments_058901.json:
 ```json
 {
-    "body": "Attachment\n\nCumulative patch, includes vbraun's latest additions + 2 doctests",
+    "body": "Attachment [trac_7109_mh2.patch](tarball://root/attachments/some-uuid/ticket7109/trac_7109_mh2.patch) by mhampton created at 2010-01-23 21:59:27\n\nCumulative patch, includes vbraun's latest additions + 2 doctests",
     "created_at": "2010-01-23T21:59:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
@@ -1177,7 +1177,7 @@ archive/issue_comments_058901.json:
 }
 ```
 
-Attachment
+Attachment [trac_7109_mh2.patch](tarball://root/attachments/some-uuid/ticket7109/trac_7109_mh2.patch) by mhampton created at 2010-01-23 21:59:27
 
 Cumulative patch, includes vbraun's latest additions + 2 doctests
 
@@ -1280,7 +1280,7 @@ apply after trac_7109_mh2.patch
 archive/issue_comments_058904.json:
 ```json
 {
-    "body": "Attachment\n\nThanks Alex!  Your patch looks good, thanks for that attention to detail.\n\nI screwed up my initial trac_7109_mh2.patch by not including the reference manual changes, then overwrote it with a patch that did have them.  I think you must have downloaded the first one in the small window of time it was up.  Sorry about that!  I deleted polytope.py from the reference manual since the optional polymake package is broken, and even if it did work the interface is totally inferior to what is in polyhedra.py - and of course I added polyhedra.py to the reference manual.  I have tested the reference manual build with those changes.",
+    "body": "Attachment [trac_7109_ag.patch](tarball://root/attachments/some-uuid/ticket7109/trac_7109_ag.patch) by mhampton created at 2010-01-24 02:40:47\n\nThanks Alex!  Your patch looks good, thanks for that attention to detail.\n\nI screwed up my initial trac_7109_mh2.patch by not including the reference manual changes, then overwrote it with a patch that did have them.  I think you must have downloaded the first one in the small window of time it was up.  Sorry about that!  I deleted polytope.py from the reference manual since the optional polymake package is broken, and even if it did work the interface is totally inferior to what is in polyhedra.py - and of course I added polyhedra.py to the reference manual.  I have tested the reference manual build with those changes.",
     "created_at": "2010-01-24T02:40:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
@@ -1289,7 +1289,7 @@ archive/issue_comments_058904.json:
 }
 ```
 
-Attachment
+Attachment [trac_7109_ag.patch](tarball://root/attachments/some-uuid/ticket7109/trac_7109_ag.patch) by mhampton created at 2010-01-24 02:40:47
 
 Thanks Alex!  Your patch looks good, thanks for that attention to detail.
 
@@ -1525,7 +1525,7 @@ Minh, I'll try to rebase on top of #7535 right now.
 archive/issue_comments_058915.json:
 ```json
 {
-    "body": "Attachment\n\ncumulative patch, rebased on top of #7535; apply only this patch",
+    "body": "Attachment [trac_7109-rebase.patch](tarball://root/attachments/some-uuid/ticket7109/trac_7109-rebase.patch) by AlexGhitza created at 2010-01-25 05:34:30\n\ncumulative patch, rebased on top of #7535; apply only this patch",
     "created_at": "2010-01-25T05:34:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
@@ -1534,7 +1534,7 @@ archive/issue_comments_058915.json:
 }
 ```
 
-Attachment
+Attachment [trac_7109-rebase.patch](tarball://root/attachments/some-uuid/ticket7109/trac_7109-rebase.patch) by AlexGhitza created at 2010-01-25 05:34:30
 
 cumulative patch, rebased on top of #7535; apply only this patch
 
@@ -1714,7 +1714,7 @@ Cumulative patch, with 7535, fixes deletions in multi_polynomial.pyx
 archive/issue_comments_058925.json:
 ```json
 {
-    "body": "Attachment\n\nI don't understand what the `Polyhedron().radius_square()` function included in this ticket is trying to do. I've rewritten it at #12492, if anyone wants to take a look.",
+    "body": "Attachment [trac_7109_and_7535.patch](tarball://root/attachments/some-uuid/ticket7109/trac_7109_and_7535.patch) by kini created at 2012-02-10 15:33:39\n\nI don't understand what the `Polyhedron().radius_square()` function included in this ticket is trying to do. I've rewritten it at #12492, if anyone wants to take a look.",
     "created_at": "2012-02-10T15:33:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
@@ -1723,6 +1723,6 @@ archive/issue_comments_058925.json:
 }
 ```
 
-Attachment
+Attachment [trac_7109_and_7535.patch](tarball://root/attachments/some-uuid/ticket7109/trac_7109_and_7535.patch) by kini created at 2012-02-10 15:33:39
 
 I don't understand what the `Polyhedron().radius_square()` function included in this ticket is trying to do. I've rewritten it at #12492, if anyone wants to take a look.

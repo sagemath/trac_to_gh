@@ -113,7 +113,7 @@ Changing status from new to assigned.
 archive/issue_comments_037922.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached a patch for the scripts directory which fixes this.",
+    "body": "Attachment [trac_4975.patch](tarball://root/attachments/some-uuid/ticket4975/trac_4975.patch) by mhansen created at 2009-01-19 10:26:44\n\nI've attached a patch for the scripts directory which fixes this.",
     "created_at": "2009-01-19T10:26:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4975",
     "type": "issue_comment",
@@ -122,7 +122,7 @@ archive/issue_comments_037922.json:
 }
 ```
 
-Attachment
+Attachment [trac_4975.patch](tarball://root/attachments/some-uuid/ticket4975/trac_4975.patch) by mhansen created at 2009-01-19 10:26:44
 
 I've attached a patch for the scripts directory which fixes this.
 
@@ -382,7 +382,7 @@ And here is how I would rewrite those lines:
 archive/issue_comments_037932.json:
 ```json
 {
-    "body": "Attachment\n\nHeh, I didn't even notice that line :-)  I put up a patch which applies on top of the last one.",
+    "body": "Attachment [trac_4975-2.patch](tarball://root/attachments/some-uuid/ticket4975/trac_4975-2.patch) by mhansen created at 2009-01-19 11:01:46\n\nHeh, I didn't even notice that line :-)  I put up a patch which applies on top of the last one.",
     "created_at": "2009-01-19T11:01:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4975",
     "type": "issue_comment",
@@ -391,7 +391,7 @@ archive/issue_comments_037932.json:
 }
 ```
 
-Attachment
+Attachment [trac_4975-2.patch](tarball://root/attachments/some-uuid/ticket4975/trac_4975-2.patch) by mhansen created at 2009-01-19 11:01:46
 
 Heh, I didn't even notice that line :-)  I put up a patch which applies on top of the last one.
 

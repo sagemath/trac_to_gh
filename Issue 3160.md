@@ -50,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3160
 archive/issue_comments_021922.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3160-bool-is-planar.patch](tarball://root/attachments/some-uuid/ticket3160/3160-bool-is-planar.patch) by ekirkman created at 2008-05-12 16:18:44",
     "created_at": "2008-05-12T16:18:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3160",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_021922.json:
 }
 ```
 
-Attachment
+Attachment [3160-bool-is-planar.patch](tarball://root/attachments/some-uuid/ticket3160/3160-bool-is-planar.patch) by ekirkman created at 2008-05-12 16:18:44
 
 
 
@@ -86,7 +86,7 @@ archive/issue_comments_021923.json:
 archive/issue_comments_021924.json:
 ```json
 {
-    "body": "Attachment\n\nMerged both patches in Sage 3.0.2.alpha1",
+    "body": "Attachment [3160-docs.patch](tarball://root/attachments/some-uuid/ticket3160/3160-docs.patch) by mabshoff created at 2008-05-12 18:46:30\n\nMerged both patches in Sage 3.0.2.alpha1",
     "created_at": "2008-05-12T18:46:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3160",
     "type": "issue_comment",
@@ -95,7 +95,7 @@ archive/issue_comments_021924.json:
 }
 ```
 
-Attachment
+Attachment [3160-docs.patch](tarball://root/attachments/some-uuid/ticket3160/3160-docs.patch) by mabshoff created at 2008-05-12 18:46:30
 
 Merged both patches in Sage 3.0.2.alpha1
 

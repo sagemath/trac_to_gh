@@ -90,7 +90,7 @@ patch against 4.1.alpha2
 archive/issue_comments_052225.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6462-order_elt_pickle_bug.patch](tarball://root/attachments/some-uuid/ticket6462/trac_6462-order_elt_pickle_bug.patch) by davidloeffler created at 2009-07-04 15:40:08",
     "created_at": "2009-07-04T15:40:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6462",
     "type": "issue_comment",
@@ -99,7 +99,7 @@ archive/issue_comments_052225.json:
 }
 ```
 
-Attachment
+Attachment [trac_6462-order_elt_pickle_bug.patch](tarball://root/attachments/some-uuid/ticket6462/trac_6462-order_elt_pickle_bug.patch) by davidloeffler created at 2009-07-04 15:40:08
 
 
 

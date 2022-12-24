@@ -119,7 +119,7 @@ Make Ei symbolic.
 archive/issue_comments_066700.json:
 ```json
 {
-    "body": "Attachment\n\nMake incomplete gamma function symbolic.",
+    "body": "Attachment [trac_7748-incomplete_gamma.patch](tarball://root/attachments/some-uuid/ticket7748/trac_7748-incomplete_gamma.patch) by fstan created at 2010-02-07 11:38:07\n\nMake incomplete gamma function symbolic.",
     "created_at": "2010-02-07T11:38:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7748",
     "type": "issue_comment",
@@ -128,7 +128,7 @@ archive/issue_comments_066700.json:
 }
 ```
 
-Attachment
+Attachment [trac_7748-incomplete_gamma.patch](tarball://root/attachments/some-uuid/ticket7748/trac_7748-incomplete_gamma.patch) by fstan created at 2010-02-07 11:38:07
 
 Make incomplete gamma function symbolic.
 
@@ -393,7 +393,7 @@ Flavia, please can you fix the rings/complex_number.pyx issue?
 archive/issue_comments_066711.json:
 ```json
 {
-    "body": "Attachment\n\nAdded derivative method.",
+    "body": "Attachment [trac_7748-exp_integral_ver2.patch](tarball://root/attachments/some-uuid/ticket7748/trac_7748-exp_integral_ver2.patch) by fstan created at 2010-02-15 23:27:28\n\nAdded derivative method.",
     "created_at": "2010-02-15T23:27:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7748",
     "type": "issue_comment",
@@ -402,7 +402,7 @@ archive/issue_comments_066711.json:
 }
 ```
 
-Attachment
+Attachment [trac_7748-exp_integral_ver2.patch](tarball://root/attachments/some-uuid/ticket7748/trac_7748-exp_integral_ver2.patch) by fstan created at 2010-02-15 23:27:28
 
 Added derivative method.
 
@@ -431,7 +431,7 @@ Fixed tests from complex_number.pyx
 archive/issue_comments_066713.json:
 ```json
 {
-    "body": "Attachment\n\nI've uploaded new patches which should fix the docs and the derivative.\n\nGreetings,\n\nFlavia",
+    "body": "Attachment [trac_7748-incomplete_gamma_ver2.patch](tarball://root/attachments/some-uuid/ticket7748/trac_7748-incomplete_gamma_ver2.patch) by fstan created at 2010-02-15 23:34:50\n\nI've uploaded new patches which should fix the docs and the derivative.\n\nGreetings,\n\nFlavia",
     "created_at": "2010-02-15T23:34:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7748",
     "type": "issue_comment",
@@ -440,7 +440,7 @@ archive/issue_comments_066713.json:
 }
 ```
 
-Attachment
+Attachment [trac_7748-incomplete_gamma_ver2.patch](tarball://root/attachments/some-uuid/ticket7748/trac_7748-incomplete_gamma_ver2.patch) by fstan created at 2010-02-15 23:34:50
 
 I've uploaded new patches which should fix the docs and the derivative.
 
@@ -455,7 +455,7 @@ Flavia
 archive/issue_comments_066714.json:
 ```json
 {
-    "body": "Attachment\n\nrebased to 4.3.3.alpha1",
+    "body": "Attachment [trac_7748-exp_integral_ver2.4.3.3.alpha1.patch](tarball://root/attachments/some-uuid/ticket7748/trac_7748-exp_integral_ver2.4.3.3.alpha1.patch) by burcin created at 2010-02-20 17:51:19\n\nrebased to 4.3.3.alpha1",
     "created_at": "2010-02-20T17:51:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7748",
     "type": "issue_comment",
@@ -464,7 +464,7 @@ archive/issue_comments_066714.json:
 }
 ```
 
-Attachment
+Attachment [trac_7748-exp_integral_ver2.4.3.3.alpha1.patch](tarball://root/attachments/some-uuid/ticket7748/trac_7748-exp_integral_ver2.4.3.3.alpha1.patch) by burcin created at 2010-02-20 17:51:19
 
 rebased to 4.3.3.alpha1
 
@@ -493,7 +493,7 @@ rebased to 4.3.3.alpha1
 archive/issue_comments_066716.json:
 ```json
 {
-    "body": "Attachment\n\nwrapper for gamma and incomplete gamma",
+    "body": "Attachment [trac_7748-gamma_wrapper.patch](tarball://root/attachments/some-uuid/ticket7748/trac_7748-gamma_wrapper.patch) by burcin created at 2010-02-20 17:52:27\n\nwrapper for gamma and incomplete gamma",
     "created_at": "2010-02-20T17:52:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7748",
     "type": "issue_comment",
@@ -502,7 +502,7 @@ archive/issue_comments_066716.json:
 }
 ```
 
-Attachment
+Attachment [trac_7748-gamma_wrapper.patch](tarball://root/attachments/some-uuid/ticket7748/trac_7748-gamma_wrapper.patch) by burcin created at 2010-02-20 17:52:27
 
 wrapper for gamma and incomplete gamma
 
@@ -513,7 +513,7 @@ wrapper for gamma and incomplete gamma
 archive/issue_comments_066717.json:
 ```json
 {
-    "body": "Attachment\n\nwrapper for gamma and incomplete gamma",
+    "body": "Attachment [trac_7748-gamma_wrapper.2.patch](tarball://root/attachments/some-uuid/ticket7748/trac_7748-gamma_wrapper.2.patch) by burcin created at 2010-02-20 17:57:02\n\nwrapper for gamma and incomplete gamma",
     "created_at": "2010-02-20T17:57:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7748",
     "type": "issue_comment",
@@ -522,7 +522,7 @@ archive/issue_comments_066717.json:
 }
 ```
 
-Attachment
+Attachment [trac_7748-gamma_wrapper.2.patch](tarball://root/attachments/some-uuid/ticket7748/trac_7748-gamma_wrapper.2.patch) by burcin created at 2010-02-20 17:57:02
 
 wrapper for gamma and incomplete gamma
 
@@ -643,7 +643,7 @@ apart from the above failure, all tests pass with sage 4.3.3 (apart from the Fed
 archive/issue_comments_066723.json:
 ```json
 {
-    "body": "Attachment\n\nfix new doctest failure",
+    "body": "Attachment [trac_7748-gamma_wrapper.3.patch](tarball://root/attachments/some-uuid/ticket7748/trac_7748-gamma_wrapper.3.patch) by burcin created at 2010-03-02 11:33:29\n\nfix new doctest failure",
     "created_at": "2010-03-02T11:33:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7748",
     "type": "issue_comment",
@@ -652,7 +652,7 @@ archive/issue_comments_066723.json:
 }
 ```
 
-Attachment
+Attachment [trac_7748-gamma_wrapper.3.patch](tarball://root/attachments/some-uuid/ticket7748/trac_7748-gamma_wrapper.3.patch) by burcin created at 2010-03-02 11:33:29
 
 fix new doctest failure
 

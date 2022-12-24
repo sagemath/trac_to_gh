@@ -83,7 +83,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7916
 archive/issue_comments_068882.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7916-same_name_method.patch](tarball://root/attachments/some-uuid/ticket7916/trac_7916-same_name_method.patch) by burcin created at 2010-01-17 11:39:25",
     "created_at": "2010-01-17T11:39:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7916",
     "type": "issue_comment",
@@ -92,7 +92,7 @@ archive/issue_comments_068882.json:
 }
 ```
 
-Attachment
+Attachment [trac_7916-same_name_method.patch](tarball://root/attachments/some-uuid/ticket7916/trac_7916-same_name_method.patch) by burcin created at 2010-01-17 11:39:25
 
 
 
@@ -226,7 +226,7 @@ slightly faster - apply only this patch
 archive/issue_comments_068887.json:
 ```json
 {
-    "body": "Attachment\n\nattachment:trac_7916-same_name_method.take2.patch is slightly faster than the previous one.",
+    "body": "Attachment [trac_7916-same_name_method.take2.patch](tarball://root/attachments/some-uuid/ticket7916/trac_7916-same_name_method.take2.patch) by burcin created at 2010-01-19 13:13:00\n\nattachment:trac_7916-same_name_method.take2.patch is slightly faster than the previous one.",
     "created_at": "2010-01-19T13:13:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7916",
     "type": "issue_comment",
@@ -235,7 +235,7 @@ archive/issue_comments_068887.json:
 }
 ```
 
-Attachment
+Attachment [trac_7916-same_name_method.take2.patch](tarball://root/attachments/some-uuid/ticket7916/trac_7916-same_name_method.take2.patch) by burcin created at 2010-01-19 13:13:00
 
 attachment:trac_7916-same_name_method.take2.patch is slightly faster than the previous one.
 

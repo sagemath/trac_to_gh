@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9941
 archive/issue_comments_098973.json:
 ```json
 {
-    "body": "Attachment\n\nI think I got an even faster implementation.\nI'm sorry but I don't have a development Sage handy for the next days, so I just put the code here.\nIf you want to make a clean patch with this, go ahead; otherwise, I will do it in some days when I'm back home.\n\n\n```\ndef multinomial_coefficients(m, n):\n    if m == 2:\n        return binomial_coefficients(n)\n    t = [n] + [0] * (m - 1)\n    r = {tuple(t): 1}\n    if n:\n        p0 = 0 # leftmost nonzero position\n    else:\n        p0 = m\n    # enumerate tuples in co-lex order\n    while p0 < m - 1:\n        # compute next tuple\n        j = p0\n        tj = t[j]\n        t[j+1] += 1\n        if j:\n            t[0] = tj\n            t[j] = 0\n        if tj > 1:\n            p0 = 0\n            start = 1\n        else:\n            p0 += 1\n            start = p0\n        # compute the value\n        v = 0\n        for k in xrange(start, m):\n            if t[k]:\n                t[k] -= 1\n                v += r[tuple(t)]\n                t[k] += 1\n        t[0] -= 1\n        r[tuple(t)] = (v * tj) // (n - t[0])\n    return r\n```\n",
+    "body": "Attachment [trac_9941_faster_multinomial_coefficients.patch](tarball://root/attachments/some-uuid/ticket9941/trac_9941_faster_multinomial_coefficients.patch) by ylchapuy created at 2010-09-21 08:05:04\n\nI think I got an even faster implementation.\nI'm sorry but I don't have a development Sage handy for the next days, so I just put the code here.\nIf you want to make a clean patch with this, go ahead; otherwise, I will do it in some days when I'm back home.\n\n\n```\ndef multinomial_coefficients(m, n):\n    if m == 2:\n        return binomial_coefficients(n)\n    t = [n] + [0] * (m - 1)\n    r = {tuple(t): 1}\n    if n:\n        p0 = 0 # leftmost nonzero position\n    else:\n        p0 = m\n    # enumerate tuples in co-lex order\n    while p0 < m - 1:\n        # compute next tuple\n        j = p0\n        tj = t[j]\n        t[j+1] += 1\n        if j:\n            t[0] = tj\n            t[j] = 0\n        if tj > 1:\n            p0 = 0\n            start = 1\n        else:\n            p0 += 1\n            start = p0\n        # compute the value\n        v = 0\n        for k in xrange(start, m):\n            if t[k]:\n                t[k] -= 1\n                v += r[tuple(t)]\n                t[k] += 1\n        t[0] -= 1\n        r[tuple(t)] = (v * tj) // (n - t[0])\n    return r\n```\n",
     "created_at": "2010-09-21T08:05:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9940",
     "type": "issue_comment",
@@ -51,7 +51,7 @@ archive/issue_comments_098973.json:
 }
 ```
 
-Attachment
+Attachment [trac_9941_faster_multinomial_coefficients.patch](tarball://root/attachments/some-uuid/ticket9941/trac_9941_faster_multinomial_coefficients.patch) by ylchapuy created at 2010-09-21 08:05:04
 
 I think I got an even faster implementation.
 I'm sorry but I don't have a development Sage handy for the next days, so I just put the code here.
@@ -103,7 +103,7 @@ def multinomial_coefficients(m, n):
 archive/issue_comments_098974.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac9941-even_faster_multinomial_coefficients.patch](tarball://root/attachments/some-uuid/ticket9941/trac9941-even_faster_multinomial_coefficients.patch) by ylchapuy created at 2010-09-22 14:17:32",
     "created_at": "2010-09-22T14:17:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9940",
     "type": "issue_comment",
@@ -112,7 +112,7 @@ archive/issue_comments_098974.json:
 }
 ```
 
-Attachment
+Attachment [trac9941-even_faster_multinomial_coefficients.patch](tarball://root/attachments/some-uuid/ticket9941/trac9941-even_faster_multinomial_coefficients.patch) by ylchapuy created at 2010-09-22 14:17:32
 
 
 
@@ -236,7 +236,7 @@ True
 archive/issue_comments_098980.json:
 ```json
 {
-    "body": "Attachment\n\nI attached a patch to be applied after the 'even_faster' one.\n\nIt corrects the behavior for `m=0`. It also change the comment.\nI just wanted to say that the initialization of v (which is part of the computation of the value) is done within the code for enumerating the tuples.\n\nRegarding the modification of `multinomial`, I leave this for another ticket.",
+    "body": "Attachment [trac9941-corrections.patch](tarball://root/attachments/some-uuid/ticket9941/trac9941-corrections.patch) by ylchapuy created at 2010-11-14 23:08:37\n\nI attached a patch to be applied after the 'even_faster' one.\n\nIt corrects the behavior for `m=0`. It also change the comment.\nI just wanted to say that the initialization of v (which is part of the computation of the value) is done within the code for enumerating the tuples.\n\nRegarding the modification of `multinomial`, I leave this for another ticket.",
     "created_at": "2010-11-14T23:08:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9940",
     "type": "issue_comment",
@@ -245,7 +245,7 @@ archive/issue_comments_098980.json:
 }
 ```
 
-Attachment
+Attachment [trac9941-corrections.patch](tarball://root/attachments/some-uuid/ticket9941/trac9941-corrections.patch) by ylchapuy created at 2010-11-14 23:08:37
 
 I attached a patch to be applied after the 'even_faster' one.
 
@@ -333,7 +333,7 @@ You should add an example/test for the last patch, i.e. for the case m = 0.
 archive/issue_comments_098985.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac9941_second_review.patch](tarball://root/attachments/some-uuid/ticket9941/trac9941_second_review.patch) by ylchapuy created at 2010-12-02 19:46:33",
     "created_at": "2010-12-02T19:46:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9940",
     "type": "issue_comment",
@@ -342,7 +342,7 @@ archive/issue_comments_098985.json:
 }
 ```
 
-Attachment
+Attachment [trac9941_second_review.patch](tarball://root/attachments/some-uuid/ticket9941/trac9941_second_review.patch) by ylchapuy created at 2010-12-02 19:46:33
 
 
 

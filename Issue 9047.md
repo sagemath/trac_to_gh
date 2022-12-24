@@ -49,7 +49,7 @@ Apply to sage-scripts.
 archive/issue_comments_083765.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9047-hg-repo-check.patch](tarball://root/attachments/some-uuid/ticket9047/9047-hg-repo-check.patch) by jdemeyer created at 2013-08-13 15:35:53",
     "created_at": "2013-08-13T15:35:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9047",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_083765.json:
 }
 ```
 
-Attachment
+Attachment [9047-hg-repo-check.patch](tarball://root/attachments/some-uuid/ticket9047/9047-hg-repo-check.patch) by jdemeyer created at 2013-08-13 15:35:53
 
 
 

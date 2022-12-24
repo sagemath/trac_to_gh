@@ -174,7 +174,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_041234.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5352_valgrind_log.patch](tarball://root/attachments/some-uuid/ticket5352/trac_5352_valgrind_log.patch) by aapitzsch created at 2011-06-02 15:34:50",
     "created_at": "2011-06-02T15:34:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5352",
     "type": "issue_comment",
@@ -183,7 +183,7 @@ archive/issue_comments_041234.json:
 }
 ```
 
-Attachment
+Attachment [trac_5352_valgrind_log.patch](tarball://root/attachments/some-uuid/ticket5352/trac_5352_valgrind_log.patch) by aapitzsch created at 2011-06-02 15:34:50
 
 
 

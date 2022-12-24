@@ -72,7 +72,7 @@ Changing status from new to needs_review.
 archive/issue_comments_073106.json:
 ```json
 {
-    "body": "Attachment\n\nThere were inconsistent definitions of maxordp.",
+    "body": "Attachment [8260-Qq-valuation.patch](tarball://root/attachments/some-uuid/ticket8260/8260-Qq-valuation.patch) by robertwb created at 2010-02-21 03:40:44\n\nThere were inconsistent definitions of maxordp.",
     "created_at": "2010-02-21T03:40:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8260",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_073106.json:
 }
 ```
 
-Attachment
+Attachment [8260-Qq-valuation.patch](tarball://root/attachments/some-uuid/ticket8260/8260-Qq-valuation.patch) by robertwb created at 2010-02-21 03:40:44
 
 There were inconsistent definitions of maxordp.
 

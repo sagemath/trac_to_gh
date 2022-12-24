@@ -106,7 +106,7 @@ whichever seems more reasonable.
 archive/issue_comments_014730.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8632.patch](tarball://root/attachments/some-uuid/ticket2223/8632.patch) by wdj created at 2008-02-20 23:58:29",
     "created_at": "2008-02-20T23:58:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2223",
     "type": "issue_comment",
@@ -115,7 +115,7 @@ archive/issue_comments_014730.json:
 }
 ```
 
-Attachment
+Attachment [8632.patch](tarball://root/attachments/some-uuid/ticket2223/8632.patch) by wdj created at 2008-02-20 23:58:29
 
 
 
@@ -182,7 +182,7 @@ Sorry. I don't know what I did wrong. I thin this new patch is better.
 archive/issue_comments_014734.json:
 ```json
 {
-    "body": "Attachment\n\nWilliam's pat",
+    "body": "Attachment [8631.patch](tarball://root/attachments/some-uuid/ticket2223/8631.patch) by mabshoff created at 2008-02-21 19:35:51\n\nWilliam's pat",
     "created_at": "2008-02-21T19:35:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2223",
     "type": "issue_comment",
@@ -191,7 +191,7 @@ archive/issue_comments_014734.json:
 }
 ```
 
-Attachment
+Attachment [8631.patch](tarball://root/attachments/some-uuid/ticket2223/8631.patch) by mabshoff created at 2008-02-21 19:35:51
 
 William's pat
 

@@ -174,7 +174,7 @@ Otherwise, the patch is correct (apply, test and doc.). I am not an expert with 
 archive/issue_comments_075754.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8438-skew_partitions_from_rc_lenghts-fh.patch](tarball://root/attachments/some-uuid/ticket8438/trac_8438-skew_partitions_from_rc_lenghts-fh.patch) by hivert created at 2010-03-10 08:33:41",
     "created_at": "2010-03-10T08:33:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8438",
     "type": "issue_comment",
@@ -183,7 +183,7 @@ archive/issue_comments_075754.json:
 }
 ```
 
-Attachment
+Attachment [trac_8438-skew_partitions_from_rc_lenghts-fh.patch](tarball://root/attachments/some-uuid/ticket8438/trac_8438-skew_partitions_from_rc_lenghts-fh.patch) by hivert created at 2010-03-10 08:33:41
 
 
 

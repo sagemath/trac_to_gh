@@ -136,7 +136,7 @@ Converts WeylCharacterRings and WeightRings to use category framework
 archive/issue_comments_068938.json:
 ```json
 {
-    "body": "Attachment\n\nI uploaded a revised version of the patch. The only change is in classical_crystals.py, where the revision of WeylCharacterRings necessitated a revision.",
+    "body": "Attachment [trac_7922.patch](tarball://root/attachments/some-uuid/ticket7922/trac_7922.patch) by bump created at 2010-09-11 15:34:35\n\nI uploaded a revised version of the patch. The only change is in classical_crystals.py, where the revision of WeylCharacterRings necessitated a revision.",
     "created_at": "2010-09-11T15:34:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7922",
     "type": "issue_comment",
@@ -145,7 +145,7 @@ archive/issue_comments_068938.json:
 }
 ```
 
-Attachment
+Attachment [trac_7922.patch](tarball://root/attachments/some-uuid/ticket7922/trac_7922.patch) by bump created at 2010-09-11 15:34:35
 
 I uploaded a revised version of the patch. The only change is in classical_crystals.py, where the revision of WeylCharacterRings necessitated a revision.
 
@@ -174,7 +174,7 @@ Requires rebuilding the pickle jar.
 archive/issue_comments_068940.json:
 ```json
 {
-    "body": "Attachment\n\n#7922: WeylCharacters inherit from CombinatorialFreemodule (substantial speedup)",
+    "body": "Attachment [trac_7922-rebased-4.6.1](tarball://root/attachments/some-uuid/ticket7922/trac_7922-rebased-4.6.1) by bump created at 2010-11-15 19:26:27\n\n#7922: WeylCharacters inherit from CombinatorialFreemodule (substantial speedup)",
     "created_at": "2010-11-15T19:26:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7922",
     "type": "issue_comment",
@@ -183,7 +183,7 @@ archive/issue_comments_068940.json:
 }
 ```
 
-Attachment
+Attachment [trac_7922-rebased-4.6.1](tarball://root/attachments/some-uuid/ticket7922/trac_7922-rebased-4.6.1) by bump created at 2010-11-15 19:26:27
 
 #7922: WeylCharacters inherit from CombinatorialFreemodule (substantial speedup)
 
@@ -232,7 +232,7 @@ archive/issue_comments_068942.json:
 archive/issue_comments_068943.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch slightly conflicts with #8442 which was merged. So I'm posting a second patch trac_7922-doc.patch which revises the thematic tutorial.",
+    "body": "Attachment [trac_7922-doc.patch](tarball://root/attachments/some-uuid/ticket7922/trac_7922-doc.patch) by bump created at 2011-02-08 19:30:18\n\nThis patch slightly conflicts with #8442 which was merged. So I'm posting a second patch trac_7922-doc.patch which revises the thematic tutorial.",
     "created_at": "2011-02-08T19:30:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7922",
     "type": "issue_comment",
@@ -241,7 +241,7 @@ archive/issue_comments_068943.json:
 }
 ```
 
-Attachment
+Attachment [trac_7922-doc.patch](tarball://root/attachments/some-uuid/ticket7922/trac_7922-doc.patch) by bump created at 2011-02-08 19:30:18
 
 This patch slightly conflicts with #8442 which was merged. So I'm posting a second patch trac_7922-doc.patch which revises the thematic tutorial.
 
@@ -252,7 +252,7 @@ This patch slightly conflicts with #8442 which was merged. So I'm posting a seco
 archive/issue_comments_068944.json:
 ```json
 {
-    "body": "Attachment\n\n#7922: Revision of Weyl Character Rings",
+    "body": "Attachment [trac_7922-rebased-4.7.alpha1.patch](tarball://root/attachments/some-uuid/ticket7922/trac_7922-rebased-4.7.alpha1.patch) by bump created at 2011-03-18 12:27:29\n\n#7922: Revision of Weyl Character Rings",
     "created_at": "2011-03-18T12:27:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7922",
     "type": "issue_comment",
@@ -261,7 +261,7 @@ archive/issue_comments_068944.json:
 }
 ```
 
-Attachment
+Attachment [trac_7922-rebased-4.7.alpha1.patch](tarball://root/attachments/some-uuid/ticket7922/trac_7922-rebased-4.7.alpha1.patch) by bump created at 2011-03-18 12:27:29
 
 #7922: Revision of Weyl Character Rings
 
@@ -315,7 +315,7 @@ archive/issue_comments_068946.json:
 archive/issue_comments_068947.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [pickle_jar.tar.bz2](tarball://root/attachments/some-uuid/ticket7922/pickle_jar.tar.bz2) by bump created at 2011-03-18 21:33:59",
     "created_at": "2011-03-18T21:33:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7922",
     "type": "issue_comment",
@@ -324,7 +324,7 @@ archive/issue_comments_068947.json:
 }
 ```
 
-Attachment
+Attachment [pickle_jar.tar.bz2](tarball://root/attachments/some-uuid/ticket7922/pickle_jar.tar.bz2) by bump created at 2011-03-18 21:33:59
 
 
 
@@ -333,7 +333,7 @@ Attachment
 archive/issue_comments_068948.json:
 ```json
 {
-    "body": "Attachment\n\n#7922: explanation of how the pickle jar is remade",
+    "body": "Attachment [pickle-notes](tarball://root/attachments/some-uuid/ticket7922/pickle-notes) by bump created at 2011-03-18 21:36:23\n\n#7922: explanation of how the pickle jar is remade",
     "created_at": "2011-03-18T21:36:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7922",
     "type": "issue_comment",
@@ -342,7 +342,7 @@ archive/issue_comments_068948.json:
 }
 ```
 
-Attachment
+Attachment [pickle-notes](tarball://root/attachments/some-uuid/ticket7922/pickle-notes) by bump created at 2011-03-18 21:36:23
 
 #7922: explanation of how the pickle jar is remade
 
@@ -413,7 +413,7 @@ archive/issue_comments_068951.json:
 archive/issue_comments_068952.json:
 ```json
 {
-    "body": "Attachment\n\n#7922: replacement pickles",
+    "body": "Attachment [trac_7922-rebased-4.7.alpha2.patch](tarball://root/attachments/some-uuid/ticket7922/trac_7922-rebased-4.7.alpha2.patch) by bump created at 2011-03-25 13:09:59\n\n#7922: replacement pickles",
     "created_at": "2011-03-25T13:09:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7922",
     "type": "issue_comment",
@@ -422,7 +422,7 @@ archive/issue_comments_068952.json:
 }
 ```
 
-Attachment
+Attachment [trac_7922-rebased-4.7.alpha2.patch](tarball://root/attachments/some-uuid/ticket7922/trac_7922-rebased-4.7.alpha2.patch) by bump created at 2011-03-25 13:09:59
 
 #7922: replacement pickles
 
@@ -433,7 +433,7 @@ Attachment
 archive/issue_comments_068953.json:
 ```json
 {
-    "body": "Attachment\n\nHi Dan,\n\nI just did a final proofreading, fixed a couple typos, updated coerce_to_sl in the doctests of the thematic tutorials, and removed some trailing white space and tabs.\n\nFor me it is now all good to go. Please check my reviewer's patch on the sage-combinat patch server. If it's ok with you, you can fold/upload and set a positive review here on my behalf.\n\n[http://combinat.sagemath.org/patches/file/tip/trac_7922-final-review-nt.patch](http://combinat.sagemath.org/patches/file/tip/trac_7922-final-review-nt.patch)\n\nCheers,\n                       Nicolas",
+    "body": "Attachment [trac_7922-new_pickles.tar.gz](tarball://root/attachments/some-uuid/ticket7922/trac_7922-new_pickles.tar.gz) by nthiery created at 2011-04-05 08:48:06\n\nHi Dan,\n\nI just did a final proofreading, fixed a couple typos, updated coerce_to_sl in the doctests of the thematic tutorials, and removed some trailing white space and tabs.\n\nFor me it is now all good to go. Please check my reviewer's patch on the sage-combinat patch server. If it's ok with you, you can fold/upload and set a positive review here on my behalf.\n\n[http://combinat.sagemath.org/patches/file/tip/trac_7922-final-review-nt.patch](http://combinat.sagemath.org/patches/file/tip/trac_7922-final-review-nt.patch)\n\nCheers,\n                       Nicolas",
     "created_at": "2011-04-05T08:48:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7922",
     "type": "issue_comment",
@@ -442,7 +442,7 @@ archive/issue_comments_068953.json:
 }
 ```
 
-Attachment
+Attachment [trac_7922-new_pickles.tar.gz](tarball://root/attachments/some-uuid/ticket7922/trac_7922-new_pickles.tar.gz) by nthiery created at 2011-04-05 08:48:06
 
 Hi Dan,
 
@@ -498,7 +498,7 @@ archive/issue_comments_068955.json:
 archive/issue_comments_068956.json:
 ```json
 {
-    "body": "Attachment\n\nHi Dan,\n\nI just checked out your final changes on the Sage-Combinat queue (trac_7922_alpha3-changes.patch), and it looks all good. So the final rebased patch you just posted (and which includes the above) is good to go.\n\nPositive review!",
+    "body": "Attachment [trac_7922-rebased-4.7.alpha3.patch](tarball://root/attachments/some-uuid/ticket7922/trac_7922-rebased-4.7.alpha3.patch) by nthiery created at 2011-04-07 14:29:48\n\nHi Dan,\n\nI just checked out your final changes on the Sage-Combinat queue (trac_7922_alpha3-changes.patch), and it looks all good. So the final rebased patch you just posted (and which includes the above) is good to go.\n\nPositive review!",
     "created_at": "2011-04-07T14:29:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7922",
     "type": "issue_comment",
@@ -507,7 +507,7 @@ archive/issue_comments_068956.json:
 }
 ```
 
-Attachment
+Attachment [trac_7922-rebased-4.7.alpha3.patch](tarball://root/attachments/some-uuid/ticket7922/trac_7922-rebased-4.7.alpha3.patch) by nthiery created at 2011-04-07 14:29:48
 
 Hi Dan,
 

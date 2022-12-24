@@ -144,7 +144,7 @@ Changing status from new to assigned.
 archive/issue_comments_006782.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [libsinggiv.patch](tarball://root/attachments/some-uuid/ticket1122/libsinggiv.patch) by malb created at 2007-11-07 16:30:38",
     "created_at": "2007-11-07T16:30:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1122",
     "type": "issue_comment",
@@ -153,7 +153,7 @@ archive/issue_comments_006782.json:
 }
 ```
 
-Attachment
+Attachment [libsinggiv.patch](tarball://root/attachments/some-uuid/ticket1122/libsinggiv.patch) by malb created at 2007-11-07 16:30:38
 
 
 

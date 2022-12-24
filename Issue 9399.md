@@ -83,7 +83,7 @@ Dave
 archive/issue_comments_089524.json:
 ```json
 {
-    "body": "Attachment\n\nEnsure the header file is included on all systems, not excluding Solaris as before.",
+    "body": "Attachment [9399.patch](tarball://root/attachments/some-uuid/ticket9399/9399.patch) by drkirkby created at 2010-07-01 12:48:30\n\nEnsure the header file is included on all systems, not excluding Solaris as before.",
     "created_at": "2010-07-01T12:48:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9399",
     "type": "issue_comment",
@@ -92,7 +92,7 @@ archive/issue_comments_089524.json:
 }
 ```
 
-Attachment
+Attachment [9399.patch](tarball://root/attachments/some-uuid/ticket9399/9399.patch) by drkirkby created at 2010-07-01 12:48:30
 
 Ensure the header file is included on all systems, not excluding Solaris as before.
 

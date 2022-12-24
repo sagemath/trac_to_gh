@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2594
 archive/issue_comments_017750.json:
 ```json
 {
-    "body": "Attachment\n\nPatch looks good.",
+    "body": "Attachment [mpoly-div-bug.patch](tarball://root/attachments/some-uuid/ticket2594/mpoly-div-bug.patch) by malb created at 2008-03-19 16:07:02\n\nPatch looks good.",
     "created_at": "2008-03-19T16:07:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2594",
     "type": "issue_comment",
@@ -51,7 +51,7 @@ archive/issue_comments_017750.json:
 }
 ```
 
-Attachment
+Attachment [mpoly-div-bug.patch](tarball://root/attachments/some-uuid/ticket2594/mpoly-div-bug.patch) by malb created at 2008-03-19 16:07:02
 
 Patch looks good.
 

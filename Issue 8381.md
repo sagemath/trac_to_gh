@@ -58,7 +58,7 @@ Changing keywords from "" to "beginner".
 archive/issue_comments_074970.json:
 ```json
 {
-    "body": "Attachment\n\nRemove \\mathop and \\mathrm when displaying docs in python",
+    "body": "Attachment [15468.patch](tarball://root/attachments/some-uuid/ticket8381/15468.patch) by fdiebold created at 2011-05-22 20:06:28\n\nRemove \\mathop and \\mathrm when displaying docs in python",
     "created_at": "2011-05-22T20:06:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8381",
     "type": "issue_comment",
@@ -67,7 +67,7 @@ archive/issue_comments_074970.json:
 }
 ```
 
-Attachment
+Attachment [15468.patch](tarball://root/attachments/some-uuid/ticket8381/15468.patch) by fdiebold created at 2011-05-22 20:06:28
 
 Remove \mathop and \mathrm when displaying docs in python
 

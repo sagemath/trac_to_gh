@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5916
 archive/issue_comments_046753.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [mathematica_jsmath.patch](tarball://root/attachments/some-uuid/ticket5916/mathematica_jsmath.patch) by jason created at 2009-05-06 03:28:51",
     "created_at": "2009-05-06T03:28:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5916",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_046753.json:
 }
 ```
 
-Attachment
+Attachment [mathematica_jsmath.patch](tarball://root/attachments/some-uuid/ticket5916/mathematica_jsmath.patch) by jason created at 2009-05-06 03:28:51
 
 
 
@@ -123,7 +123,7 @@ It looks like we can use a screenshot to show the feature this patch introduces.
 archive/issue_comments_046758.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:4 mvngu]:\n> It looks like we can use a screenshot to show the feature this patch introduces. If I'm not mistaken, can someone please upload such a screenshot so it can be put in the release tour.\n\nI attached the image which is produced by:\n\n\n```\nm = mathematica(\"Product[(3/2)^i, {i, 1, n}]\")\nshow(m)\n```\n",
+    "body": "Attachment [mathematica.png](tarball://root/attachments/some-uuid/ticket5916/mathematica.png) by whuss created at 2009-06-04 15:09:03\n\nReplying to [comment:4 mvngu]:\n> It looks like we can use a screenshot to show the feature this patch introduces. If I'm not mistaken, can someone please upload such a screenshot so it can be put in the release tour.\n\nI attached the image which is produced by:\n\n\n```\nm = mathematica(\"Product[(3/2)^i, {i, 1, n}]\")\nshow(m)\n```\n",
     "created_at": "2009-06-04T15:09:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5916",
     "type": "issue_comment",
@@ -132,7 +132,7 @@ archive/issue_comments_046758.json:
 }
 ```
 
-Attachment
+Attachment [mathematica.png](tarball://root/attachments/some-uuid/ticket5916/mathematica.png) by whuss created at 2009-06-04 15:09:03
 
 Replying to [comment:4 mvngu]:
 > It looks like we can use a screenshot to show the feature this patch introduces. If I'm not mistaken, can someone please upload such a screenshot so it can be put in the release tour.

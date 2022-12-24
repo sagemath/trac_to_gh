@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7702
 archive/issue_comments_066075.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [interrupt test.sws](tarball://root/attachments/some-uuid/ticket7702/interrupt test.sws) by boothby created at 2009-12-16 03:17:42",
     "created_at": "2009-12-16T03:17:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7702",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_066075.json:
 }
 ```
 
-Attachment
+Attachment [interrupt test.sws](tarball://root/attachments/some-uuid/ticket7702/interrupt test.sws) by boothby created at 2009-12-16 03:17:42
 
 
 

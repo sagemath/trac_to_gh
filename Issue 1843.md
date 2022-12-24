@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1843
 archive/issue_comments_011667.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-1843.patch](tarball://root/attachments/some-uuid/ticket1843/trac-1843.patch) by was created at 2008-01-19 01:14:26",
     "created_at": "2008-01-19T01:14:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1843",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_011667.json:
 }
 ```
 
-Attachment
+Attachment [trac-1843.patch](tarball://root/attachments/some-uuid/ticket1843/trac-1843.patch) by was created at 2008-01-19 01:14:26
 
 
 
@@ -89,7 +89,7 @@ this adds doctests  (apply both patches)
 archive/issue_comments_011670.json:
 ```json
 {
-    "body": "Attachment\n\nThey both apply and work for me.",
+    "body": "Attachment [trac-1843-part2.patch](tarball://root/attachments/some-uuid/ticket1843/trac-1843-part2.patch) by mhansen created at 2008-01-21 05:52:45\n\nThey both apply and work for me.",
     "created_at": "2008-01-21T05:52:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1843",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_011670.json:
 }
 ```
 
-Attachment
+Attachment [trac-1843-part2.patch](tarball://root/attachments/some-uuid/ticket1843/trac-1843-part2.patch) by mhansen created at 2008-01-21 05:52:45
 
 They both apply and work for me.
 

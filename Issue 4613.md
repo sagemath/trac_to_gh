@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4613
 archive/issue_comments_034637.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good. I particularly like the ability to do \"O(x^10)\" and implicitly create the power series ring -- it feels really natural.",
+    "body": "Attachment [4613-bigO-doctests.patch](tarball://root/attachments/some-uuid/ticket4613/4613-bigO-doctests.patch) by craigcitro created at 2008-11-27 00:36:15\n\nLooks good. I particularly like the ability to do \"O(x^10)\" and implicitly create the power series ring -- it feels really natural.",
     "created_at": "2008-11-27T00:36:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4613",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_034637.json:
 }
 ```
 
-Attachment
+Attachment [4613-bigO-doctests.patch](tarball://root/attachments/some-uuid/ticket4613/4613-bigO-doctests.patch) by craigcitro created at 2008-11-27 00:36:15
 
 Looks good. I particularly like the ability to do "O(x^10)" and implicitly create the power series ring -- it feels really natural.
 

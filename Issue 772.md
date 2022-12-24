@@ -213,7 +213,7 @@ make: *** [opt] Error 1
 archive/issue_comments_004586.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [qepcad.spkg](tarball://root/attachments/some-uuid/ticket772/qepcad.spkg) by jason created at 2008-01-10 07:36:52",
     "created_at": "2008-01-10T07:36:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/772",
     "type": "issue_comment",
@@ -222,7 +222,7 @@ archive/issue_comments_004586.json:
 }
 ```
 
-Attachment
+Attachment [qepcad.spkg](tarball://root/attachments/some-uuid/ticket772/qepcad.spkg) by jason created at 2008-01-10 07:36:52
 
 
 
@@ -526,7 +526,7 @@ Chris Brown emailed me today and told me that he would try to send an email out 
 archive/issue_comments_004598.json:
 ```json
 {
-    "body": "Attachment\n\nUpdate to address the environment variable issues by creating sage-qepcad and sage-cad2d scripts that should be run instead of qepcad and cad2d",
+    "body": "Attachment [qepcad-1.48.spkg](tarball://root/attachments/some-uuid/ticket772/qepcad-1.48.spkg) by jason created at 2008-01-28 17:29:27\n\nUpdate to address the environment variable issues by creating sage-qepcad and sage-cad2d scripts that should be run instead of qepcad and cad2d",
     "created_at": "2008-01-28T17:29:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/772",
     "type": "issue_comment",
@@ -535,7 +535,7 @@ archive/issue_comments_004598.json:
 }
 ```
 
-Attachment
+Attachment [qepcad-1.48.spkg](tarball://root/attachments/some-uuid/ticket772/qepcad-1.48.spkg) by jason created at 2008-01-28 17:29:27
 
 Update to address the environment variable issues by creating sage-qepcad and sage-cad2d scripts that should be run instead of qepcad and cad2d
 

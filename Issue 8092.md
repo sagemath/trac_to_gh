@@ -75,7 +75,7 @@ Changing status from new to needs_review.
 archive/issue_comments_070908.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch seems to work for me.\u00a0 `DOT_SAGE/init.sage` is equivalent to `os.environ['SAGE_STARTUP_FILE']` (see `SAGE_LOCAL/bin/ipy_profile_sage.py`).",
+    "body": "Attachment [trac_8092-init_sage.patch](tarball://root/attachments/some-uuid/ticket8092/trac_8092-init_sage.patch) by mpatel created at 2010-01-27 13:09:54\n\nThe attached patch seems to work for me.\u00a0 `DOT_SAGE/init.sage` is equivalent to `os.environ['SAGE_STARTUP_FILE']` (see `SAGE_LOCAL/bin/ipy_profile_sage.py`).",
     "created_at": "2010-01-27T13:09:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8092",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_070908.json:
 }
 ```
 
-Attachment
+Attachment [trac_8092-init_sage.patch](tarball://root/attachments/some-uuid/ticket8092/trac_8092-init_sage.patch) by mpatel created at 2010-01-27 13:09:54
 
 The attached patch seems to work for me.  `DOT_SAGE/init.sage` is equivalent to `os.environ['SAGE_STARTUP_FILE']` (see `SAGE_LOCAL/bin/ipy_profile_sage.py`).
 
@@ -144,7 +144,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_070911.json:
 ```json
 {
-    "body": "Attachment\n\nFixes Oops!  Replaces previous.",
+    "body": "Attachment [trac_8092-init_sage.2.patch](tarball://root/attachments/some-uuid/ticket8092/trac_8092-init_sage.2.patch) by mpatel created at 2010-01-28 01:47:57\n\nFixes Oops!  Replaces previous.",
     "created_at": "2010-01-28T01:47:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8092",
     "type": "issue_comment",
@@ -153,7 +153,7 @@ archive/issue_comments_070911.json:
 }
 ```
 
-Attachment
+Attachment [trac_8092-init_sage.2.patch](tarball://root/attachments/some-uuid/ticket8092/trac_8092-init_sage.2.patch) by mpatel created at 2010-01-28 01:47:57
 
 Fixes Oops!  Replaces previous.
 

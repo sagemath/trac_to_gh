@@ -55,7 +55,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2849
 archive/issue_comments_019550.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac2849.patch](tarball://root/attachments/some-uuid/ticket2849/trac2849.patch) by cremona created at 2008-04-07 20:49:46",
     "created_at": "2008-04-07T20:49:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2849",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_019550.json:
 }
 ```
 
-Attachment
+Attachment [trac2849.patch](tarball://root/attachments/some-uuid/ticket2849/trac2849.patch) by cremona created at 2008-04-07 20:49:46
 
 
 
@@ -111,7 +111,7 @@ apply after trac2849.patch
 archive/issue_comments_019553.json:
 ```json
 {
-    "body": "Attachment\n\nLooks fine and it fixes the issue.  I've added a mini-patch that puts in a doctest demonstrating the fixed status.\n\nApply both patches.",
+    "body": "Attachment [trac2849_doctest.patch](tarball://root/attachments/some-uuid/ticket2849/trac2849_doctest.patch) by AlexGhitza created at 2008-04-07 22:00:56\n\nLooks fine and it fixes the issue.  I've added a mini-patch that puts in a doctest demonstrating the fixed status.\n\nApply both patches.",
     "created_at": "2008-04-07T22:00:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2849",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_019553.json:
 }
 ```
 
-Attachment
+Attachment [trac2849_doctest.patch](tarball://root/attachments/some-uuid/ticket2849/trac2849_doctest.patch) by AlexGhitza created at 2008-04-07 22:00:56
 
 Looks fine and it fixes the issue.  I've added a mini-patch that puts in a doctest demonstrating the fixed status.
 

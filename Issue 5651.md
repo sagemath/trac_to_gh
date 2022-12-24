@@ -131,7 +131,7 @@ Note that it is the *rightmost* thing that has precedence.   Otherwise positive 
 archive/issue_comments_044127.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac5651.patch](tarball://root/attachments/some-uuid/ticket5651/trac5651.patch) by wcauchois created at 2009-05-14 03:28:27",
     "created_at": "2009-05-14T03:28:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5651",
     "type": "issue_comment",
@@ -140,7 +140,7 @@ archive/issue_comments_044127.json:
 }
 ```
 
-Attachment
+Attachment [trac5651.patch](tarball://root/attachments/some-uuid/ticket5651/trac5651.patch) by wcauchois created at 2009-05-14 03:28:27
 
 
 
@@ -318,7 +318,7 @@ based on sage 4.1.alpha2 (fixed, whoops)
 archive/issue_comments_044136.json:
 ```json
 {
-    "body": "Attachment\n\nThe rebased patch applies fine to my 4.1 tree.  I tried a few examples and ran the doctests in plot/*.py[x] and plot/plot3d/*.py[x] and everything seems fine.  I'm giving a positive review to the rebasing. That combined with William's almost positive review above adds up to a positive review.\n\nI also looked at the code and it looked reasonable.\n\nThanks and good work!",
+    "body": "Attachment [trac5651-rebase.patch](tarball://root/attachments/some-uuid/ticket5651/trac5651-rebase.patch) by jason created at 2009-07-18 23:17:49\n\nThe rebased patch applies fine to my 4.1 tree.  I tried a few examples and ran the doctests in plot/*.py[x] and plot/plot3d/*.py[x] and everything seems fine.  I'm giving a positive review to the rebasing. That combined with William's almost positive review above adds up to a positive review.\n\nI also looked at the code and it looked reasonable.\n\nThanks and good work!",
     "created_at": "2009-07-18T23:17:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5651",
     "type": "issue_comment",
@@ -327,7 +327,7 @@ archive/issue_comments_044136.json:
 }
 ```
 
-Attachment
+Attachment [trac5651-rebase.patch](tarball://root/attachments/some-uuid/ticket5651/trac5651-rebase.patch) by jason created at 2009-07-18 23:17:49
 
 The rebased patch applies fine to my 4.1 tree.  I tried a few examples and ran the doctests in plot/*.py[x] and plot/plot3d/*.py[x] and everything seems fine.  I'm giving a positive review to the rebasing. That combined with William's almost positive review above adds up to a positive review.
 

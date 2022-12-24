@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8682
 archive/issue_comments_079125.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8682_improve_algebraic_subscheme_init.patch](tarball://root/attachments/some-uuid/ticket8682/trac_8682_improve_algebraic_subscheme_init.patch) by novoselt created at 2010-04-13 21:42:12",
     "created_at": "2010-04-13T21:42:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8682",
     "type": "issue_comment",
@@ -51,7 +51,7 @@ archive/issue_comments_079125.json:
 }
 ```
 
-Attachment
+Attachment [trac_8682_improve_algebraic_subscheme_init.patch](tarball://root/attachments/some-uuid/ticket8682/trac_8682_improve_algebraic_subscheme_init.patch) by novoselt created at 2010-04-13 21:42:12
 
 
 

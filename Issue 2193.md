@@ -55,7 +55,7 @@ make sage-doctest search for keywords in comments
 archive/issue_comments_014397.json:
 ```json
 {
-    "body": "Attachment\n\nadd random keyword to tests in doc-main",
+    "body": "Attachment [2193-doctest_keywords_in_comments.patch](tarball://root/attachments/some-uuid/ticket2193/2193-doctest_keywords_in_comments.patch) by burcin created at 2008-02-17 16:31:09\n\nadd random keyword to tests in doc-main",
     "created_at": "2008-02-17T16:31:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2193",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_014397.json:
 }
 ```
 
-Attachment
+Attachment [2193-doctest_keywords_in_comments.patch](tarball://root/attachments/some-uuid/ticket2193/2193-doctest_keywords_in_comments.patch) by burcin created at 2008-02-17 16:31:09
 
 add random keyword to tests in doc-main
 
@@ -75,7 +75,7 @@ add random keyword to tests in doc-main
 archive/issue_comments_014398.json:
 ```json
 {
-    "body": "Attachment\n\nadd random keyword to comments",
+    "body": "Attachment [2193-doc_add_random.patch](tarball://root/attachments/some-uuid/ticket2193/2193-doc_add_random.patch) by burcin created at 2008-02-17 16:31:42\n\nadd random keyword to comments",
     "created_at": "2008-02-17T16:31:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2193",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_014398.json:
 }
 ```
 
-Attachment
+Attachment [2193-doc_add_random.patch](tarball://root/attachments/some-uuid/ticket2193/2193-doc_add_random.patch) by burcin created at 2008-02-17 16:31:42
 
 add random keyword to comments
 
@@ -95,7 +95,7 @@ add random keyword to comments
 archive/issue_comments_014399.json:
 ```json
 {
-    "body": "Attachment\n\nattachment:2193-doctest_keywords_in_comments.patch changes the `sage-doctest` script to search for keywords only in comments. It also changes the way random keyword is handled to match wstein's suggestions in the sage-devel thread mentioned above.\n\nattachment:2193-doc_add_random.patch and attachment:2193-add_random_keyword.patch add the random keyword to comments for tests which relied on the old behavior in the documentation, and the sage library respectively.",
+    "body": "Attachment [2193-add_random_keyword.patch](tarball://root/attachments/some-uuid/ticket2193/2193-add_random_keyword.patch) by burcin created at 2008-02-17 16:37:41\n\nattachment:2193-doctest_keywords_in_comments.patch changes the `sage-doctest` script to search for keywords only in comments. It also changes the way random keyword is handled to match wstein's suggestions in the sage-devel thread mentioned above.\n\nattachment:2193-doc_add_random.patch and attachment:2193-add_random_keyword.patch add the random keyword to comments for tests which relied on the old behavior in the documentation, and the sage library respectively.",
     "created_at": "2008-02-17T16:37:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2193",
     "type": "issue_comment",
@@ -104,7 +104,7 @@ archive/issue_comments_014399.json:
 }
 ```
 
-Attachment
+Attachment [2193-add_random_keyword.patch](tarball://root/attachments/some-uuid/ticket2193/2193-add_random_keyword.patch) by burcin created at 2008-02-17 16:37:41
 
 attachment:2193-doctest_keywords_in_comments.patch changes the `sage-doctest` script to search for keywords only in comments. It also changes the way random keyword is handled to match wstein's suggestions in the sage-devel thread mentioned above.
 

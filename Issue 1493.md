@@ -51,7 +51,7 @@ Resolution: fixed
 archive/issue_comments_009597.json:
 ```json
 {
-    "body": "Attachment\n\nMerged in 2.9.alpha7.",
+    "body": "Attachment [polybori_m4ri_free.hg](tarball://root/attachments/some-uuid/ticket1493/polybori_m4ri_free.hg) by mabshoff created at 2007-12-14 02:28:18\n\nMerged in 2.9.alpha7.",
     "created_at": "2007-12-14T02:28:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1493",
     "type": "issue_comment",
@@ -60,6 +60,6 @@ archive/issue_comments_009597.json:
 }
 ```
 
-Attachment
+Attachment [polybori_m4ri_free.hg](tarball://root/attachments/some-uuid/ticket1493/polybori_m4ri_free.hg) by mabshoff created at 2007-12-14 02:28:18
 
 Merged in 2.9.alpha7.

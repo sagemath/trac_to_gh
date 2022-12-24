@@ -114,7 +114,7 @@ The attached patch deals with the first of these. (I don't have magma, so can't 
 archive/issue_comments_050383.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6312-a.patch](tarball://root/attachments/some-uuid/ticket6312/trac_6312-a.patch) by fwclarke created at 2009-06-16 18:10:56",
     "created_at": "2009-06-16T18:10:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6312",
     "type": "issue_comment",
@@ -123,7 +123,7 @@ archive/issue_comments_050383.json:
 }
 ```
 
-Attachment
+Attachment [trac_6312-a.patch](tarball://root/attachments/some-uuid/ticket6312/trac_6312-a.patch) by fwclarke created at 2009-06-16 18:10:56
 
 
 
@@ -158,7 +158,7 @@ Galois closure.  This has been fixed in the new patch, and a doctest adjusted ap
 archive/issue_comments_050385.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6312-b.patch](tarball://root/attachments/some-uuid/ticket6312/trac_6312-b.patch) by fwclarke created at 2009-06-17 06:53:38",
     "created_at": "2009-06-17T06:53:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6312",
     "type": "issue_comment",
@@ -167,7 +167,7 @@ archive/issue_comments_050385.json:
 }
 ```
 
-Attachment
+Attachment [trac_6312-b.patch](tarball://root/attachments/some-uuid/ticket6312/trac_6312-b.patch) by fwclarke created at 2009-06-17 06:53:38
 
 
 

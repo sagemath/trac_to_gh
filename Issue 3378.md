@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3378
 archive/issue_comments_023651.json:
 ```json
 {
-    "body": "Attachment\n\nI suppose this didn't get caught by doctests because nauty is an optional package. Is it possible to have doctests that actually get run?\n\nAlso, in installing the optional nauty spkg, I notice that there is an interactive do-you-accept-this-license step. This doesn't seem right at all... Mabshoff, thoughts?",
+    "body": "Attachment [3378.patch](tarball://root/attachments/some-uuid/ticket3378/3378.patch) by rlm created at 2008-06-07 15:12:49\n\nI suppose this didn't get caught by doctests because nauty is an optional package. Is it possible to have doctests that actually get run?\n\nAlso, in installing the optional nauty spkg, I notice that there is an interactive do-you-accept-this-license step. This doesn't seem right at all... Mabshoff, thoughts?",
     "created_at": "2008-06-07T15:12:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3378",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_023651.json:
 }
 ```
 
-Attachment
+Attachment [3378.patch](tarball://root/attachments/some-uuid/ticket3378/3378.patch) by rlm created at 2008-06-07 15:12:49
 
 I suppose this didn't get caught by doctests because nauty is an optional package. Is it possible to have doctests that actually get run?
 

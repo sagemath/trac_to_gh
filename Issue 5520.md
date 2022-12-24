@@ -53,7 +53,7 @@ Apply the patch from #5521 for all doctests to pass after applying any patches o
 archive/issue_comments_042915.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5520.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520.patch) by was created at 2009-03-26 19:39:53",
     "created_at": "2009-03-26T19:39:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_042915.json:
 }
 ```
 
-Attachment
+Attachment [trac_5520.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520.patch) by was created at 2009-03-26 19:39:53
 
 
 
@@ -734,7 +734,7 @@ It looks like people are already in the process of reviewing this ticket, but le
 archive/issue_comments_042928.json:
 ```json
 {
-    "body": "Attachment\n\ntrac 5520 -- part 2 -- referee patch and incorporate ideas from gonzalo t., and fixes to pari interface matrix optimization",
+    "body": "Attachment [trac_5520-referee_optimize_bugfix-REDO.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520-referee_optimize_bugfix-REDO.patch) by was created at 2009-03-27 22:38:10\n\ntrac 5520 -- part 2 -- referee patch and incorporate ideas from gonzalo t., and fixes to pari interface matrix optimization",
     "created_at": "2009-03-27T22:38:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
@@ -743,7 +743,7 @@ archive/issue_comments_042928.json:
 }
 ```
 
-Attachment
+Attachment [trac_5520-referee_optimize_bugfix-REDO.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520-referee_optimize_bugfix-REDO.patch) by was created at 2009-03-27 22:38:10
 
 trac 5520 -- part 2 -- referee patch and incorporate ideas from gonzalo t., and fixes to pari interface matrix optimization
 
@@ -772,7 +772,7 @@ from Gonzalo T.
 archive/issue_comments_042930.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5520-ref-2.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520-ref-2.patch) by was created at 2009-03-28 22:28:43",
     "created_at": "2009-03-28T22:28:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
@@ -781,7 +781,7 @@ archive/issue_comments_042930.json:
 }
 ```
 
-Attachment
+Attachment [trac_5520-ref-2.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520-ref-2.patch) by was created at 2009-03-28 22:28:43
 
 
 
@@ -790,7 +790,7 @@ Attachment
 archive/issue_comments_042931.json:
 ```json
 {
-    "body": "Attachment\n\nThis replaces the above three patches and is rebased against 3.4.1.alpha0.",
+    "body": "Attachment [trac_5520-rebase3.4.1.alpha0.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520-rebase3.4.1.alpha0.patch) by was created at 2009-03-28 22:30:46\n\nThis replaces the above three patches and is rebased against 3.4.1.alpha0.",
     "created_at": "2009-03-28T22:30:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
@@ -799,7 +799,7 @@ archive/issue_comments_042931.json:
 }
 ```
 
-Attachment
+Attachment [trac_5520-rebase3.4.1.alpha0.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520-rebase3.4.1.alpha0.patch) by was created at 2009-03-28 22:30:46
 
 This replaces the above three patches and is rebased against 3.4.1.alpha0.
 
@@ -810,7 +810,7 @@ This replaces the above three patches and is rebased against 3.4.1.alpha0.
 archive/issue_comments_042932.json:
 ```json
 {
-    "body": "Attachment\n\ntiny additional patch fixing some randomness in a doctest in matrix2.pyx; I think this fix is fine since the test is only supposed to test the *speed*",
+    "body": "Attachment [trac_5520-rebase3.4.1.alpha0-part2.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520-rebase3.4.1.alpha0-part2.patch) by was created at 2009-03-28 22:54:12\n\ntiny additional patch fixing some randomness in a doctest in matrix2.pyx; I think this fix is fine since the test is only supposed to test the *speed*",
     "created_at": "2009-03-28T22:54:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
@@ -819,7 +819,7 @@ archive/issue_comments_042932.json:
 }
 ```
 
-Attachment
+Attachment [trac_5520-rebase3.4.1.alpha0-part2.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520-rebase3.4.1.alpha0-part2.patch) by was created at 2009-03-28 22:54:12
 
 tiny additional patch fixing some randomness in a doctest in matrix2.pyx; I think this fix is fine since the test is only supposed to test the *speed*
 
@@ -893,7 +893,7 @@ sage: timeit('a._pari_()')
 archive/issue_comments_042934.json:
 ```json
 {
-    "body": "Attachment\n\nSmall patch on top of the rebase to 3.4.1.alpha0; it suggests how to address the first two of my remarks in the last comment",
+    "body": "Attachment [trac_5520-rebase-ref1.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520-rebase-ref1.patch) by tornaria created at 2009-03-29 02:39:42\n\nSmall patch on top of the rebase to 3.4.1.alpha0; it suggests how to address the first two of my remarks in the last comment",
     "created_at": "2009-03-29T02:39:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
@@ -902,7 +902,7 @@ archive/issue_comments_042934.json:
 }
 ```
 
-Attachment
+Attachment [trac_5520-rebase-ref1.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520-rebase-ref1.patch) by tornaria created at 2009-03-29 02:39:42
 
 Small patch on top of the rebase to 3.4.1.alpha0; it suggests how to address the first two of my remarks in the last comment
 
@@ -967,7 +967,7 @@ I'm posting a patch "trac_5520-rebase3.4.1.alpha0-part3.patch" that does *not* m
 archive/issue_comments_042937.json:
 ```json
 {
-    "body": "Attachment\n\napply this *instead* of the previous patch!",
+    "body": "Attachment [trac_5520-rebase3.4.1.alpha0-part3.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520-rebase3.4.1.alpha0-part3.patch) by was created at 2009-03-29 03:25:41\n\napply this *instead* of the previous patch!",
     "created_at": "2009-03-29T03:25:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
@@ -976,7 +976,7 @@ archive/issue_comments_042937.json:
 }
 ```
 
-Attachment
+Attachment [trac_5520-rebase3.4.1.alpha0-part3.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520-rebase3.4.1.alpha0-part3.patch) by was created at 2009-03-29 03:25:41
 
 apply this *instead* of the previous patch!
 

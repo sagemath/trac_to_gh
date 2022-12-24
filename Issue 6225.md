@@ -67,7 +67,7 @@ adds link to help-irc.html on notebook help page / rephrased text
 archive/issue_comments_049695.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [irc_help.diff](tarball://root/attachments/some-uuid/ticket6225/irc_help.diff) by ncalexan created at 2009-06-13 21:39:13",
     "created_at": "2009-06-13T21:39:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6225",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_049695.json:
 }
 ```
 
-Attachment
+Attachment [irc_help.diff](tarball://root/attachments/some-uuid/ticket6225/irc_help.diff) by ncalexan created at 2009-06-13 21:39:13
 
 
 

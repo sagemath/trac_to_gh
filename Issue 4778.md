@@ -221,7 +221,7 @@ patch file, with preliminary E notation fix for doctest
 archive/issue_comments_036213.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me:\n\n\n\n```\n137 tests in 24 items.\n137 passed and 0 failed.\nTest passed.\n\t [8.0 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 8.0 seconds\n\n```\n",
+    "body": "Attachment [trac_11129_Scilab-interface.patch](tarball://root/attachments/some-uuid/ticket4778/trac_11129_Scilab-interface.patch) by jsp created at 2008-12-16 00:40:57\n\nLooks good to me:\n\n\n\n```\n137 tests in 24 items.\n137 passed and 0 failed.\nTest passed.\n\t [8.0 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 8.0 seconds\n\n```\n",
     "created_at": "2008-12-16T00:40:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4778",
     "type": "issue_comment",
@@ -230,7 +230,7 @@ archive/issue_comments_036213.json:
 }
 ```
 
-Attachment
+Attachment [trac_11129_Scilab-interface.patch](tarball://root/attachments/some-uuid/ticket4778/trac_11129_Scilab-interface.patch) by jsp created at 2008-12-16 00:40:57
 
 Looks good to me:
 

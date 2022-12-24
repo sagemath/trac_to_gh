@@ -166,7 +166,7 @@ after creating E and before attempting to create points.
 archive/issue_comments_012801.json:
 ```json
 {
-    "body": "Attachment\n\nApplies to 4.4.1",
+    "body": "Attachment [trac_1975-points-mod-N.patch](tarball://root/attachments/some-uuid/ticket1975/trac_1975-points-mod-N.patch) by cremona created at 2010-05-05 19:27:05\n\nApplies to 4.4.1",
     "created_at": "2010-05-05T19:27:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1975",
     "type": "issue_comment",
@@ -175,7 +175,7 @@ archive/issue_comments_012801.json:
 }
 ```
 
-Attachment
+Attachment [trac_1975-points-mod-N.patch](tarball://root/attachments/some-uuid/ticket1975/trac_1975-points-mod-N.patch) by cremona created at 2010-05-05 19:27:05
 
 Applies to 4.4.1
 

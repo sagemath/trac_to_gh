@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3132
 archive/issue_comments_021752.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac3132.diff](tarball://root/attachments/some-uuid/ticket3132/trac3132.diff) by mabshoff created at 2008-05-08 13:30:41",
     "created_at": "2008-05-08T13:30:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3132",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_021752.json:
 }
 ```
 
-Attachment
+Attachment [trac3132.diff](tarball://root/attachments/some-uuid/ticket3132/trac3132.diff) by mabshoff created at 2008-05-08 13:30:41
 
 
 
@@ -71,7 +71,7 @@ Code looks good, but the doctest fails on a 32-bit platform (due to #3134).  Eit
 archive/issue_comments_021754.json:
 ```json
 {
-    "body": "Attachment\n\nfix doctest not to hit #3134",
+    "body": "Attachment [trac3132-2.diff](tarball://root/attachments/some-uuid/ticket3132/trac3132-2.diff) by gebner created at 2008-05-12 08:58:11\n\nfix doctest not to hit #3134",
     "created_at": "2008-05-12T08:58:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3132",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_021754.json:
 }
 ```
 
-Attachment
+Attachment [trac3132-2.diff](tarball://root/attachments/some-uuid/ticket3132/trac3132-2.diff) by gebner created at 2008-05-12 08:58:11
 
 fix doctest not to hit #3134
 

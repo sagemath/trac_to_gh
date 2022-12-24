@@ -337,7 +337,7 @@ It shouldn't be on by default because it would clutter the interface.
 archive/issue_comments_016559.json:
 ```json
 {
-    "body": "Attachment\n\nOnly apply this *after* #2451, or some of the doctest examples might be very slow.",
+    "body": "Attachment [sage-2449-extra1.patch](tarball://root/attachments/some-uuid/ticket2449/sage-2449-extra1.patch) by was created at 2008-03-10 16:41:07\n\nOnly apply this *after* #2451, or some of the doctest examples might be very slow.",
     "created_at": "2008-03-10T16:41:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2449",
     "type": "issue_comment",
@@ -346,7 +346,7 @@ archive/issue_comments_016559.json:
 }
 ```
 
-Attachment
+Attachment [sage-2449-extra1.patch](tarball://root/attachments/some-uuid/ticket2449/sage-2449-extra1.patch) by was created at 2008-03-10 16:41:07
 
 Only apply this *after* #2451, or some of the doctest examples might be very slow.
 

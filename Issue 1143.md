@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1143
 archive/issue_comments_006947.json:
 ```json
 {
-    "body": "Attachment\n\nDo not apply -- Paul points out that\n\n```\nOf course. It seems to me that **nintegral** calls Maxima and not GSL\n(it is numerical_integral which calls GSL).\n\nYou might want to provide only one interface to numerical quadrature\n(which might call GSL or Maxima or Pari with some options), and also\nallow for arbitrary precision quadrature (it seems only Pari/GP allows this).\n```\n\nand he's right -- it's just calling maxima.  So the above patch would\nactually break the docs!",
+    "body": "Attachment [zimmer.patch](tarball://root/attachments/some-uuid/ticket1143/zimmer.patch) by was created at 2007-11-11 15:32:10\n\nDo not apply -- Paul points out that\n\n```\nOf course. It seems to me that **nintegral** calls Maxima and not GSL\n(it is numerical_integral which calls GSL).\n\nYou might want to provide only one interface to numerical quadrature\n(which might call GSL or Maxima or Pari with some options), and also\nallow for arbitrary precision quadrature (it seems only Pari/GP allows this).\n```\n\nand he's right -- it's just calling maxima.  So the above patch would\nactually break the docs!",
     "created_at": "2007-11-11T15:32:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1143",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_006947.json:
 }
 ```
 
-Attachment
+Attachment [zimmer.patch](tarball://root/attachments/some-uuid/ticket1143/zimmer.patch) by was created at 2007-11-11 15:32:10
 
 Do not apply -- Paul points out that
 
@@ -87,7 +87,7 @@ Michael
 archive/issue_comments_006949.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac1143-part2.patch](tarball://root/attachments/some-uuid/ticket1143/trac1143-part2.patch) by was created at 2007-12-02 19:22:57",
     "created_at": "2007-12-02T19:22:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1143",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_006949.json:
 }
 ```
 
-Attachment
+Attachment [trac1143-part2.patch](tarball://root/attachments/some-uuid/ticket1143/trac1143-part2.patch) by was created at 2007-12-02 19:22:57
 
 
 
@@ -123,7 +123,7 @@ Resolution: fixed
 archive/issue_comments_006951.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac1143-part3.patch](tarball://root/attachments/some-uuid/ticket1143/trac1143-part3.patch) by mabshoff created at 2007-12-02 20:23:23",
     "created_at": "2007-12-02T20:23:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1143",
     "type": "issue_comment",
@@ -132,4 +132,4 @@ archive/issue_comments_006951.json:
 }
 ```
 
-Attachment
+Attachment [trac1143-part3.patch](tarball://root/attachments/some-uuid/ticket1143/trac1143-part3.patch) by mabshoff created at 2007-12-02 20:23:23

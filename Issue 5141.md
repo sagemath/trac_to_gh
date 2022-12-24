@@ -195,7 +195,7 @@ Michel
 archive/issue_comments_039322.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5141-tinymce-published.patch](tarball://root/attachments/some-uuid/ticket5141/trac_5141-tinymce-published.patch) by jason created at 2009-02-02 20:19:36",
     "created_at": "2009-02-02T20:19:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5141",
     "type": "issue_comment",
@@ -204,7 +204,7 @@ archive/issue_comments_039322.json:
 }
 ```
 
-Attachment
+Attachment [trac_5141-tinymce-published.patch](tarball://root/attachments/some-uuid/ticket5141/trac_5141-tinymce-published.patch) by jason created at 2009-02-02 20:19:36
 
 
 

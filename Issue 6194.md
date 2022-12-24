@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6194
 archive/issue_comments_049469.json:
 ```json
 {
-    "body": "Attachment\n\nfix to sage.symbolic.pynac.py_mod",
+    "body": "Attachment [trac_6194-pynac_py_mod.patch](tarball://root/attachments/some-uuid/ticket6194/trac_6194-pynac_py_mod.patch) by burcin created at 2009-06-03 15:17:33\n\nfix to sage.symbolic.pynac.py_mod",
     "created_at": "2009-06-03T15:17:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6194",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_049469.json:
 }
 ```
 
-Attachment
+Attachment [trac_6194-pynac_py_mod.patch](tarball://root/attachments/some-uuid/ticket6194/trac_6194-pynac_py_mod.patch) by burcin created at 2009-06-03 15:17:33
 
 fix to sage.symbolic.pynac.py_mod
 

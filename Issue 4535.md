@@ -154,7 +154,7 @@ Assuming it works, it gets copyright headers, and passes all doctests (in the wh
 archive/issue_comments_033795.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4535.patch](tarball://root/attachments/some-uuid/ticket4535/trac_4535.patch) by mhansen created at 2008-11-27 21:34:37",
     "created_at": "2008-11-27T21:34:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4535",
     "type": "issue_comment",
@@ -163,7 +163,7 @@ archive/issue_comments_033795.json:
 }
 ```
 
-Attachment
+Attachment [trac_4535.patch](tarball://root/attachments/some-uuid/ticket4535/trac_4535.patch) by mhansen created at 2008-11-27 21:34:37
 
 
 
@@ -344,7 +344,7 @@ Michael
 archive/issue_comments_033800.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4535-fixes.patch](tarball://root/attachments/some-uuid/ticket4535/trac_4535-fixes.patch) by mhansen created at 2008-11-28 02:51:32",
     "created_at": "2008-11-28T02:51:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4535",
     "type": "issue_comment",
@@ -353,7 +353,7 @@ archive/issue_comments_033800.json:
 }
 ```
 
-Attachment
+Attachment [trac_4535-fixes.patch](tarball://root/attachments/some-uuid/ticket4535/trac_4535-fixes.patch) by mhansen created at 2008-11-28 02:51:32
 
 
 
@@ -362,7 +362,7 @@ Attachment
 archive/issue_comments_033801.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4535-pickle_jar.patch](tarball://root/attachments/some-uuid/ticket4535/trac_4535-pickle_jar.patch) by mhansen created at 2008-11-28 02:51:44",
     "created_at": "2008-11-28T02:51:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4535",
     "type": "issue_comment",
@@ -371,7 +371,7 @@ archive/issue_comments_033801.json:
 }
 ```
 
-Attachment
+Attachment [trac_4535-pickle_jar.patch](tarball://root/attachments/some-uuid/ticket4535/trac_4535-pickle_jar.patch) by mhansen created at 2008-11-28 02:51:44
 
 
 

@@ -193,7 +193,7 @@ Changing assignee from boothby to robertwb.
 archive/issue_comments_023945.json:
 ```json
 {
-    "body": "Attachment\n\nI knew I was getting into trouble as soon as I tried to write doctests for a live notebook... \n\nThe above patch may not fix the issue, but it will help debut what is going on. It looks like it was unable to open a port to start the notebook (firewall issue?).",
+    "body": "Attachment [3415-simpletwist.patch](tarball://root/attachments/some-uuid/ticket3415/3415-simpletwist.patch) by robertwb created at 2008-06-13 18:29:48\n\nI knew I was getting into trouble as soon as I tried to write doctests for a live notebook... \n\nThe above patch may not fix the issue, but it will help debut what is going on. It looks like it was unable to open a port to start the notebook (firewall issue?).",
     "created_at": "2008-06-13T18:29:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3415",
     "type": "issue_comment",
@@ -202,7 +202,7 @@ archive/issue_comments_023945.json:
 }
 ```
 
-Attachment
+Attachment [3415-simpletwist.patch](tarball://root/attachments/some-uuid/ticket3415/3415-simpletwist.patch) by robertwb created at 2008-06-13 18:29:48
 
 I knew I was getting into trouble as soon as I tried to write doctests for a live notebook... 
 

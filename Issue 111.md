@@ -344,7 +344,7 @@ Changing assignee from was to AlexGhitza.
 archive/issue_comments_000528.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_111.patch](tarball://root/attachments/some-uuid/ticket111/trac_111.patch) by AlexGhitza created at 2009-07-13 10:40:07",
     "created_at": "2009-07-13T10:40:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/111",
     "type": "issue_comment",
@@ -353,7 +353,7 @@ archive/issue_comments_000528.json:
 }
 ```
 
-Attachment
+Attachment [trac_111.patch](tarball://root/attachments/some-uuid/ticket111/trac_111.patch) by AlexGhitza created at 2009-07-13 10:40:07
 
 
 
@@ -416,7 +416,7 @@ apply over previous patch
 archive/issue_comments_000532.json:
 ```json
 {
-    "body": "Attachment\n\nI have uploaded a one-liner patch to deal with the `def copy` in `polynomial_element_generic` that got missed out. All doctests pass, both on sage.math and on my machine, so let's get this one in.",
+    "body": "Attachment [trac_111-reviewer.patch](tarball://root/attachments/some-uuid/ticket111/trac_111-reviewer.patch) by davidloeffler created at 2009-07-14 19:19:29\n\nI have uploaded a one-liner patch to deal with the `def copy` in `polynomial_element_generic` that got missed out. All doctests pass, both on sage.math and on my machine, so let's get this one in.",
     "created_at": "2009-07-14T19:19:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/111",
     "type": "issue_comment",
@@ -425,7 +425,7 @@ archive/issue_comments_000532.json:
 }
 ```
 
-Attachment
+Attachment [trac_111-reviewer.patch](tarball://root/attachments/some-uuid/ticket111/trac_111-reviewer.patch) by davidloeffler created at 2009-07-14 19:19:29
 
 I have uploaded a one-liner patch to deal with the `def copy` in `polynomial_element_generic` that got missed out. All doctests pass, both on sage.math and on my machine, so let's get this one in.
 

@@ -130,7 +130,7 @@ Changing assignee from was to rlm.
 archive/issue_comments_008480.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_1323-subspaces.patch](tarball://root/attachments/some-uuid/ticket1323/trac_1323-subspaces.patch) by rlm created at 2008-10-17 13:40:21",
     "created_at": "2008-10-17T13:40:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1323",
     "type": "issue_comment",
@@ -139,7 +139,7 @@ archive/issue_comments_008480.json:
 }
 ```
 
-Attachment
+Attachment [trac_1323-subspaces.patch](tarball://root/attachments/some-uuid/ticket1323/trac_1323-subspaces.patch) by rlm created at 2008-10-17 13:40:21
 
 
 

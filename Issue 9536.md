@@ -75,7 +75,7 @@ Changing assignee from AlexGhitza to AlexanderDreyer.
 archive/issue_comments_091848.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [setup_py_issue.patch](tarball://root/attachments/some-uuid/ticket9536/setup_py_issue.patch) by AlexanderDreyer created at 2010-07-18 14:46:44",
     "created_at": "2010-07-18T14:46:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_091848.json:
 }
 ```
 
-Attachment
+Attachment [setup_py_issue.patch](tarball://root/attachments/some-uuid/ticket9536/setup_py_issue.patch) by AlexanderDreyer created at 2010-07-18 14:46:44
 
 
 
@@ -284,7 +284,7 @@ patch for sage/spkg/base/sage-env sage/local/bin/sage-env (needs python 2.6.4.p1
 archive/issue_comments_091855.json:
 ```json
 {
-    "body": "Attachment\n\nHi,\nI backported the handling of setup.py --no-user-cfg from  Python 2.7 to Python 2.6.4 and also added the handling of the environment variable `DISTUTILS_NO_USER_CFG` to python's distutils. \n\nThe new spkg can be found here: \nhttp://sage.math.washington.edu/home/dreyer/suse101/python-2.6.4.p10.spkg\n\nThe last patch adds this variable to `sage-env`.\n\nRegards,\n  Alexander",
+    "body": "Attachment [sage-env.patch](tarball://root/attachments/some-uuid/ticket9536/sage-env.patch) by AlexanderDreyer created at 2010-07-19 20:50:41\n\nHi,\nI backported the handling of setup.py --no-user-cfg from  Python 2.7 to Python 2.6.4 and also added the handling of the environment variable `DISTUTILS_NO_USER_CFG` to python's distutils. \n\nThe new spkg can be found here: \nhttp://sage.math.washington.edu/home/dreyer/suse101/python-2.6.4.p10.spkg\n\nThe last patch adds this variable to `sage-env`.\n\nRegards,\n  Alexander",
     "created_at": "2010-07-19T20:50:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
@@ -293,7 +293,7 @@ archive/issue_comments_091855.json:
 }
 ```
 
-Attachment
+Attachment [sage-env.patch](tarball://root/attachments/some-uuid/ticket9536/sage-env.patch) by AlexanderDreyer created at 2010-07-19 20:50:41
 
 Hi,
 I backported the handling of setup.py --no-user-cfg from  Python 2.7 to Python 2.6.4 and also added the handling of the environment variable `DISTUTILS_NO_USER_CFG` to python's distutils. 
@@ -410,7 +410,7 @@ Maybe a misunderstanding: the patch of python is necessary  to fix that issue an
 archive/issue_comments_091861.json:
 ```json
 {
-    "body": "Attachment\n\nAdding handling of environment variable DISTUTILS_NO_USER_CFG to python's distutils",
+    "body": "Attachment [python-2.6.4.p10.patch](tarball://root/attachments/some-uuid/ticket9536/python-2.6.4.p10.patch) by AlexanderDreyer created at 2010-07-21 15:58:15\n\nAdding handling of environment variable DISTUTILS_NO_USER_CFG to python's distutils",
     "created_at": "2010-07-21T15:58:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
@@ -419,7 +419,7 @@ archive/issue_comments_091861.json:
 }
 ```
 
-Attachment
+Attachment [python-2.6.4.p10.patch](tarball://root/attachments/some-uuid/ticket9536/python-2.6.4.p10.patch) by AlexanderDreyer created at 2010-07-21 15:58:15
 
 Adding handling of environment variable DISTUTILS_NO_USER_CFG to python's distutils
 

@@ -85,7 +85,7 @@ This patch looks cleaner(?)
 archive/issue_comments_016007.json:
 ```json
 {
-    "body": "Attachment\n\nSorry for the duplicate! I missed that. But I could not resist to send my patch!\n\nWhat do you think?\n\nCheers,\n\nJaap",
+    "body": "Attachment [trac_2490.patch](tarball://root/attachments/some-uuid/ticket2372/trac_2490.patch) by jsp created at 2008-03-12 13:52:57\n\nSorry for the duplicate! I missed that. But I could not resist to send my patch!\n\nWhat do you think?\n\nCheers,\n\nJaap",
     "created_at": "2008-03-12T13:52:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2372",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_016007.json:
 }
 ```
 
-Attachment
+Attachment [trac_2490.patch](tarball://root/attachments/some-uuid/ticket2372/trac_2490.patch) by jsp created at 2008-03-12 13:52:57
 
 Sorry for the duplicate! I missed that. But I could not resist to send my patch!
 
@@ -209,7 +209,7 @@ All test in deve/sage/sage/matrix passed.
 archive/issue_comments_016010.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2372.patch](tarball://root/attachments/some-uuid/ticket2372/2372.patch) by dfdeshom created at 2008-03-14 14:36:27",
     "created_at": "2008-03-14T14:36:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2372",
     "type": "issue_comment",
@@ -218,7 +218,7 @@ archive/issue_comments_016010.json:
 }
 ```
 
-Attachment
+Attachment [2372.patch](tarball://root/attachments/some-uuid/ticket2372/2372.patch) by dfdeshom created at 2008-03-14 14:36:27
 
 
 

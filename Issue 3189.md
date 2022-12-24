@@ -53,7 +53,7 @@ Changing status from new to assigned.
 archive/issue_comments_022060.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [pycrypto-2.0.1.p1-spkg-install-64bit-osx-patch](tarball://root/attachments/some-uuid/ticket3189/pycrypto-2.0.1.p1-spkg-install-64bit-osx-patch) by mabshoff created at 2008-05-19 04:24:41",
     "created_at": "2008-05-19T04:24:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3189",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_022060.json:
 }
 ```
 
-Attachment
+Attachment [pycrypto-2.0.1.p1-spkg-install-64bit-osx-patch](tarball://root/attachments/some-uuid/ticket3189/pycrypto-2.0.1.p1-spkg-install-64bit-osx-patch) by mabshoff created at 2008-05-19 04:24:41
 
 
 

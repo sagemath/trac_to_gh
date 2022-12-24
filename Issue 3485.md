@@ -45,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3485
 archive/issue_comments_024561.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac3485-sage_input.patch](tarball://root/attachments/some-uuid/ticket3485/trac3485-sage_input.patch) by cwitty created at 2008-06-27 02:55:39",
     "created_at": "2008-06-27T02:55:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3485",
     "type": "issue_comment",
@@ -54,7 +54,7 @@ archive/issue_comments_024561.json:
 }
 ```
 
-Attachment
+Attachment [trac3485-sage_input.patch](tarball://root/attachments/some-uuid/ticket3485/trac3485-sage_input.patch) by cwitty created at 2008-06-27 02:55:39
 
 
 
@@ -63,7 +63,7 @@ Attachment
 archive/issue_comments_024562.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac3485-sage_input-v2.patch](tarball://root/attachments/some-uuid/ticket3485/trac3485-sage_input-v2.patch) by cwitty created at 2008-06-27 02:58:15",
     "created_at": "2008-06-27T02:58:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3485",
     "type": "issue_comment",
@@ -72,7 +72,7 @@ archive/issue_comments_024562.json:
 }
 ```
 
-Attachment
+Attachment [trac3485-sage_input-v2.patch](tarball://root/attachments/some-uuid/ticket3485/trac3485-sage_input-v2.patch) by cwitty created at 2008-06-27 02:58:15
 
 
 
@@ -208,7 +208,7 @@ The patch to ring.pyx only adds a new method, so it should be easy to apply by h
 archive/issue_comments_024568.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac3485-sage_input-review-response.patch](tarball://root/attachments/some-uuid/ticket3485/trac3485-sage_input-review-response.patch) by cwitty created at 2008-08-13 18:19:32",
     "created_at": "2008-08-13T18:19:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3485",
     "type": "issue_comment",
@@ -217,7 +217,7 @@ archive/issue_comments_024568.json:
 }
 ```
 
-Attachment
+Attachment [trac3485-sage_input-review-response.patch](tarball://root/attachments/some-uuid/ticket3485/trac3485-sage_input-review-response.patch) by cwitty created at 2008-08-13 18:19:32
 
 
 

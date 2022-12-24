@@ -81,7 +81,7 @@ Changing assignee from failure to mabshoff.
 archive/issue_comments_013132.json:
 ```json
 {
-    "body": "Attachment\n\nPatch applies cleanly. \nTested that -long, -valgrind work as advertised.",
+    "body": "Attachment [Sage-2.10.1.rc5-raise-doctest-timeouts_trac-2029.patch](tarball://root/attachments/some-uuid/ticket2029/Sage-2.10.1.rc5-raise-doctest-timeouts_trac-2029.patch) by jkantor created at 2008-02-02 04:47:31\n\nPatch applies cleanly. \nTested that -long, -valgrind work as advertised.",
     "created_at": "2008-02-02T04:47:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2029",
     "type": "issue_comment",
@@ -90,7 +90,7 @@ archive/issue_comments_013132.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.10.1.rc5-raise-doctest-timeouts_trac-2029.patch](tarball://root/attachments/some-uuid/ticket2029/Sage-2.10.1.rc5-raise-doctest-timeouts_trac-2029.patch) by jkantor created at 2008-02-02 04:47:31
 
 Patch applies cleanly. 
 Tested that -long, -valgrind work as advertised.

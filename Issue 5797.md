@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5797
 archive/issue_comments_045480.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5797.patch](tarball://root/attachments/some-uuid/ticket5797/trac_5797.patch) by ddrake created at 2009-04-16 04:10:02",
     "created_at": "2009-04-16T04:10:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5797",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_045480.json:
 }
 ```
 
-Attachment
+Attachment [trac_5797.patch](tarball://root/attachments/some-uuid/ticket5797/trac_5797.patch) by ddrake created at 2009-04-16 04:10:02
 
 
 
@@ -93,7 +93,7 @@ The `_singular_` ticket is #5798.
 archive/issue_comments_045483.json:
 ```json
 {
-    "body": "Attachment\n\nreplaces previous",
+    "body": "Attachment [trac_5797-review.patch](tarball://root/attachments/some-uuid/ticket5797/trac_5797-review.patch) by cremona created at 2009-04-18 15:01:51\n\nreplaces previous",
     "created_at": "2009-04-18T15:01:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5797",
     "type": "issue_comment",
@@ -102,7 +102,7 @@ archive/issue_comments_045483.json:
 }
 ```
 
-Attachment
+Attachment [trac_5797-review.patch](tarball://root/attachments/some-uuid/ticket5797/trac_5797-review.patch) by cremona created at 2009-04-18 15:01:51
 
 replaces previous
 
@@ -235,7 +235,7 @@ Michael
 archive/issue_comments_045488.json:
 ```json
 {
-    "body": "Attachment\n\nI moved John's misplaced TESTS block inside the file's header docstring. Coverage is now 97%, with only the missing Singular doctest.",
+    "body": "Attachment [trac_5797-review-fixed.patch](tarball://root/attachments/some-uuid/ticket5797/trac_5797-review-fixed.patch) by ddrake created at 2009-04-22 07:59:36\n\nI moved John's misplaced TESTS block inside the file's header docstring. Coverage is now 97%, with only the missing Singular doctest.",
     "created_at": "2009-04-22T07:59:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5797",
     "type": "issue_comment",
@@ -244,7 +244,7 @@ archive/issue_comments_045488.json:
 }
 ```
 
-Attachment
+Attachment [trac_5797-review-fixed.patch](tarball://root/attachments/some-uuid/ticket5797/trac_5797-review-fixed.patch) by ddrake created at 2009-04-22 07:59:36
 
 I moved John's misplaced TESTS block inside the file's header docstring. Coverage is now 97%, with only the missing Singular doctest.
 

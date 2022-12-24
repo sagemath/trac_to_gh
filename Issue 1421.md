@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1421
 archive/issue_comments_009166.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [7544.patch](tarball://root/attachments/some-uuid/ticket1421/7544.patch) by zimmerma created at 2007-12-07 19:34:50",
     "created_at": "2007-12-07T19:34:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1421",
     "type": "issue_comment",
@@ -41,7 +41,7 @@ archive/issue_comments_009166.json:
 }
 ```
 
-Attachment
+Attachment [7544.patch](tarball://root/attachments/some-uuid/ticket1421/7544.patch) by zimmerma created at 2007-12-07 19:34:50
 
 
 
@@ -86,7 +86,7 @@ Fixed one line in the original patch -- it creates a string to return as the err
 archive/issue_comments_009169.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1421-pt2.patch](tarball://root/attachments/some-uuid/ticket1421/1421-pt2.patch) by craigcitro created at 2007-12-18 01:45:38",
     "created_at": "2007-12-18T01:45:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1421",
     "type": "issue_comment",
@@ -95,7 +95,7 @@ archive/issue_comments_009169.json:
 }
 ```
 
-Attachment
+Attachment [1421-pt2.patch](tarball://root/attachments/some-uuid/ticket1421/1421-pt2.patch) by craigcitro created at 2007-12-18 01:45:38
 
 
 

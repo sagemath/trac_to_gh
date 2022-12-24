@@ -145,7 +145,7 @@ Replying to [comment:2 jason]:
 archive/issue_comments_043414.json:
 ```json
 {
-    "body": "Attachment\n\nThis is a big patch to fast_callable which \n\n* makes it work for lists/tuples like fast_float does\n* adds lots of _fast_callable_ methods to make it work on a lot of different constant objects (integers/rationals/RDF/RR/CDF/CC)\n* refactors the code a bit\n* in general replaces calls to fast_float with calls to fast_callable.\n \nThe patch also breaks some things---it's still a work in progress.",
+    "body": "Attachment [improve_fast_callable.patch](tarball://root/attachments/some-uuid/ticket5572/improve_fast_callable.patch) by jason created at 2010-04-24 11:35:19\n\nThis is a big patch to fast_callable which \n\n* makes it work for lists/tuples like fast_float does\n* adds lots of _fast_callable_ methods to make it work on a lot of different constant objects (integers/rationals/RDF/RR/CDF/CC)\n* refactors the code a bit\n* in general replaces calls to fast_float with calls to fast_callable.\n \nThe patch also breaks some things---it's still a work in progress.",
     "created_at": "2010-04-24T11:35:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5572",
     "type": "issue_comment",
@@ -154,7 +154,7 @@ archive/issue_comments_043414.json:
 }
 ```
 
-Attachment
+Attachment [improve_fast_callable.patch](tarball://root/attachments/some-uuid/ticket5572/improve_fast_callable.patch) by jason created at 2010-04-24 11:35:19
 
 This is a big patch to fast_callable which 
 
@@ -190,7 +190,7 @@ apply on top of previous patch
 archive/issue_comments_043416.json:
 ```json
 {
-    "body": "Attachment\n\nThe second patch is a broken attempt at streamlining the complex support since Cython now supports C99 complex numbers.",
+    "body": "Attachment [fast_callable_complex.patch](tarball://root/attachments/some-uuid/ticket5572/fast_callable_complex.patch) by jason created at 2010-04-24 11:36:40\n\nThe second patch is a broken attempt at streamlining the complex support since Cython now supports C99 complex numbers.",
     "created_at": "2010-04-24T11:36:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5572",
     "type": "issue_comment",
@@ -199,7 +199,7 @@ archive/issue_comments_043416.json:
 }
 ```
 
-Attachment
+Attachment [fast_callable_complex.patch](tarball://root/attachments/some-uuid/ticket5572/fast_callable_complex.patch) by jason created at 2010-04-24 11:36:40
 
 The second patch is a broken attempt at streamlining the complex support since Cython now supports C99 complex numbers.
 
@@ -288,7 +288,7 @@ rebase to 4.4.1
 archive/issue_comments_043421.json:
 ```json
 {
-    "body": "Attachment\n\nI think it might be best just to fix #7512 in this ticket.",
+    "body": "Attachment [improve_fast_callable.2.patch](tarball://root/attachments/some-uuid/ticket5572/improve_fast_callable.2.patch) by jason created at 2010-05-26 19:36:52\n\nI think it might be best just to fix #7512 in this ticket.",
     "created_at": "2010-05-26T19:36:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5572",
     "type": "issue_comment",
@@ -297,7 +297,7 @@ archive/issue_comments_043421.json:
 }
 ```
 
-Attachment
+Attachment [improve_fast_callable.2.patch](tarball://root/attachments/some-uuid/ticket5572/improve_fast_callable.2.patch) by jason created at 2010-05-26 19:36:52
 
 I think it might be best just to fix #7512 in this ticket.
 
@@ -308,7 +308,7 @@ I think it might be best just to fix #7512 in this ticket.
 archive/issue_comments_043422.json:
 ```json
 {
-    "body": "Attachment\n\napply instead of previous patches",
+    "body": "Attachment [improve_fast_callable.3.patch](tarball://root/attachments/some-uuid/ticket5572/improve_fast_callable.3.patch) by jason created at 2010-05-27 07:55:39\n\napply instead of previous patches",
     "created_at": "2010-05-27T07:55:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5572",
     "type": "issue_comment",
@@ -317,7 +317,7 @@ archive/issue_comments_043422.json:
 }
 ```
 
-Attachment
+Attachment [improve_fast_callable.3.patch](tarball://root/attachments/some-uuid/ticket5572/improve_fast_callable.3.patch) by jason created at 2010-05-27 07:55:39
 
 apply instead of previous patches
 
@@ -364,7 +364,7 @@ Also, something should be done to put fast_float back (and its file) as a conven
 archive/issue_comments_043425.json:
 ```json
 {
-    "body": "Attachment\n\napply instead of previous patches (now doctests in plot/*.py[x] pass)",
+    "body": "Attachment [improve_fast_callable.4.patch](tarball://root/attachments/some-uuid/ticket5572/improve_fast_callable.4.patch) by jason created at 2010-05-27 08:27:03\n\napply instead of previous patches (now doctests in plot/*.py[x] pass)",
     "created_at": "2010-05-27T08:27:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5572",
     "type": "issue_comment",
@@ -373,7 +373,7 @@ archive/issue_comments_043425.json:
 }
 ```
 
-Attachment
+Attachment [improve_fast_callable.4.patch](tarball://root/attachments/some-uuid/ticket5572/improve_fast_callable.4.patch) by jason created at 2010-05-27 08:27:03
 
 apply instead of previous patches (now doctests in plot/*.py[x] pass)
 
@@ -402,7 +402,7 @@ apply instead of previous patches (now almost all doctests in plot/plot3d/ pass)
 archive/issue_comments_043427.json:
 ```json
 {
-    "body": "Attachment\n\nI had to rework some of the transformation code because the returned function often did not have the same keyword arguments as the original function, which throws off plotting.",
+    "body": "Attachment [improve_fast_callable.5.patch](tarball://root/attachments/some-uuid/ticket5572/improve_fast_callable.5.patch) by jason created at 2010-05-27 19:31:27\n\nI had to rework some of the transformation code because the returned function often did not have the same keyword arguments as the original function, which throws off plotting.",
     "created_at": "2010-05-27T19:31:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5572",
     "type": "issue_comment",
@@ -411,7 +411,7 @@ archive/issue_comments_043427.json:
 }
 ```
 
-Attachment
+Attachment [improve_fast_callable.5.patch](tarball://root/attachments/some-uuid/ticket5572/improve_fast_callable.5.patch) by jason created at 2010-05-27 19:31:27
 
 I had to rework some of the transformation code because the returned function often did not have the same keyword arguments as the original function, which throws off plotting.
 
@@ -422,7 +422,7 @@ I had to rework some of the transformation code because the returned function of
 archive/issue_comments_043428.json:
 ```json
 {
-    "body": "Attachment\n\napply instead of previous patches (fixed a bunch of stuff so even more doctests pass)",
+    "body": "Attachment [improve_fast_callable.6.patch](tarball://root/attachments/some-uuid/ticket5572/improve_fast_callable.6.patch) by jason created at 2010-05-28 06:20:39\n\napply instead of previous patches (fixed a bunch of stuff so even more doctests pass)",
     "created_at": "2010-05-28T06:20:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5572",
     "type": "issue_comment",
@@ -431,7 +431,7 @@ archive/issue_comments_043428.json:
 }
 ```
 
-Attachment
+Attachment [improve_fast_callable.6.patch](tarball://root/attachments/some-uuid/ticket5572/improve_fast_callable.6.patch) by jason created at 2010-05-28 06:20:39
 
 apply instead of previous patches (fixed a bunch of stuff so even more doctests pass)
 

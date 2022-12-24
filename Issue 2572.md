@@ -103,7 +103,7 @@ Changing assignee from malb to cwitty.
 archive/issue_comments_017578.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch adds the requested method (and .real() as well).  Doctests pass in sage/rings.",
+    "body": "Attachment [trac2572-aa-real-imag.patch](tarball://root/attachments/some-uuid/ticket2572/trac2572-aa-real-imag.patch) by cwitty created at 2008-03-18 02:24:24\n\nThe attached patch adds the requested method (and .real() as well).  Doctests pass in sage/rings.",
     "created_at": "2008-03-18T02:24:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2572",
     "type": "issue_comment",
@@ -112,7 +112,7 @@ archive/issue_comments_017578.json:
 }
 ```
 
-Attachment
+Attachment [trac2572-aa-real-imag.patch](tarball://root/attachments/some-uuid/ticket2572/trac2572-aa-real-imag.patch) by cwitty created at 2008-03-18 02:24:24
 
 The attached patch adds the requested method (and .real() as well).  Doctests pass in sage/rings.
 

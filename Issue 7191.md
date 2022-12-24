@@ -364,7 +364,7 @@ Changing assignee from was to bober.
 archive/issue_comments_059572.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac7191.patch](tarball://root/attachments/some-uuid/ticket7191/trac7191.patch) by bober created at 2011-09-02 10:42:55",
     "created_at": "2011-09-02T10:42:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7191",
     "type": "issue_comment",
@@ -373,7 +373,7 @@ archive/issue_comments_059572.json:
 }
 ```
 
-Attachment
+Attachment [trac7191.patch](tarball://root/attachments/some-uuid/ticket7191/trac7191.patch) by bober created at 2011-09-02 10:42:55
 
 
 
@@ -480,7 +480,7 @@ And now that I've put you back to work anyway, let's remove the C-style brackets
 archive/issue_comments_059577.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7191_v2.patch](tarball://root/attachments/some-uuid/ticket7191/trac_7191_v2.patch) by chapoton created at 2013-10-19 20:50:21",
     "created_at": "2013-10-19T20:50:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7191",
     "type": "issue_comment",
@@ -489,7 +489,7 @@ archive/issue_comments_059577.json:
 }
 ```
 
-Attachment
+Attachment [trac_7191_v2.patch](tarball://root/attachments/some-uuid/ticket7191/trac_7191_v2.patch) by chapoton created at 2013-10-19 20:50:21
 
 
 

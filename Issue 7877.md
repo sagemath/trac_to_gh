@@ -51,7 +51,7 @@ Changing status from new to needs_review.
 archive/issue_comments_068436.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-7877-doc-matrix-indexing.patch](tarball://root/attachments/some-uuid/ticket7877/trac-7877-doc-matrix-indexing.patch) by jason created at 2010-01-20 07:05:49",
     "created_at": "2010-01-20T07:05:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7877",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_068436.json:
 }
 ```
 
-Attachment
+Attachment [trac-7877-doc-matrix-indexing.patch](tarball://root/attachments/some-uuid/ticket7877/trac-7877-doc-matrix-indexing.patch) by jason created at 2010-01-20 07:05:49
 
 
 
@@ -105,7 +105,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_068439.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of previous",
+    "body": "Attachment [trac_7877-reviewer.patch](tarball://root/attachments/some-uuid/ticket7877/trac_7877-reviewer.patch) by mvngu created at 2010-01-20 09:51:11\n\napply on top of previous",
     "created_at": "2010-01-20T09:51:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7877",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_068439.json:
 }
 ```
 
-Attachment
+Attachment [trac_7877-reviewer.patch](tarball://root/attachments/some-uuid/ticket7877/trac_7877-reviewer.patch) by mvngu created at 2010-01-20 09:51:11
 
 apply on top of previous
 
@@ -200,7 +200,7 @@ I have attached patch for this, which needs some review. Otherwise the whole tic
 archive/issue_comments_068443.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-7877-doc-error.patch](tarball://root/attachments/some-uuid/ticket7877/trac-7877-doc-error.patch) by jason created at 2010-01-20 10:11:48",
     "created_at": "2010-01-20T10:11:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7877",
     "type": "issue_comment",
@@ -209,7 +209,7 @@ archive/issue_comments_068443.json:
 }
 ```
 
-Attachment
+Attachment [trac-7877-doc-error.patch](tarball://root/attachments/some-uuid/ticket7877/trac-7877-doc-error.patch) by jason created at 2010-01-20 10:11:48
 
 
 

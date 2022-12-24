@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6077
 archive/issue_comments_048367.json:
 ```json
 {
-    "body": "Attachment\n\nadds a simplicial_complex method to polytopes",
+    "body": "Attachment [trac_6077_polysimpcomplex.patch](tarball://root/attachments/some-uuid/ticket6077/trac_6077_polysimpcomplex.patch) by mhampton created at 2009-05-18 22:07:20\n\nadds a simplicial_complex method to polytopes",
     "created_at": "2009-05-18T22:07:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6077",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_048367.json:
 }
 ```
 
-Attachment
+Attachment [trac_6077_polysimpcomplex.patch](tarball://root/attachments/some-uuid/ticket6077/trac_6077_polysimpcomplex.patch) by mhampton created at 2009-05-18 22:07:20
 
 adds a simplicial_complex method to polytopes
 
@@ -99,7 +99,7 @@ apply on top of other patch
 archive/issue_comments_048370.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6077-referee.patch](tarball://root/attachments/some-uuid/ticket6077/6077-referee.patch) by mhampton created at 2009-05-19 18:50:18",
     "created_at": "2009-05-19T18:50:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6077",
     "type": "issue_comment",
@@ -108,7 +108,7 @@ archive/issue_comments_048370.json:
 }
 ```
 
-Attachment
+Attachment [6077-referee.patch](tarball://root/attachments/some-uuid/ticket6077/6077-referee.patch) by mhampton created at 2009-05-19 18:50:18
 
 
 
@@ -117,7 +117,7 @@ Attachment
 archive/issue_comments_048371.json:
 ```json
 {
-    "body": "Attachment\n\nThanks for looking at this.  Let me apologize for being somewhat confused about it - I have code in development for doing triangulations with lrs, but currently Sage doesn't use this.  So the warning about possibly not working in high dimensions is good, but I can also delete the check for lrs until I merge that code in.\n\nAnyway, I have added a new patch \"6077_v2.patch\" which does not depend on the others and should account for the above comments and corrections.",
+    "body": "Attachment [6077_v2.patch](tarball://root/attachments/some-uuid/ticket6077/6077_v2.patch) by mhampton created at 2009-05-19 19:04:16\n\nThanks for looking at this.  Let me apologize for being somewhat confused about it - I have code in development for doing triangulations with lrs, but currently Sage doesn't use this.  So the warning about possibly not working in high dimensions is good, but I can also delete the check for lrs until I merge that code in.\n\nAnyway, I have added a new patch \"6077_v2.patch\" which does not depend on the others and should account for the above comments and corrections.",
     "created_at": "2009-05-19T19:04:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6077",
     "type": "issue_comment",
@@ -126,7 +126,7 @@ archive/issue_comments_048371.json:
 }
 ```
 
-Attachment
+Attachment [6077_v2.patch](tarball://root/attachments/some-uuid/ticket6077/6077_v2.patch) by mhampton created at 2009-05-19 19:04:16
 
 Thanks for looking at this.  Let me apologize for being somewhat confused about it - I have code in development for doing triangulations with lrs, but currently Sage doesn't use this.  So the warning about possibly not working in high dimensions is good, but I can also delete the check for lrs until I merge that code in.
 

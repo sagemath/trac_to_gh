@@ -91,7 +91,7 @@ This is now fixed, presumably in the Maxima upgrade.
 archive/issue_comments_049708.json:
 ```json
 {
-    "body": "Attachment\n\nBased on 4.1.2.alpha4",
+    "body": "Attachment [trac_6228-multiplicity-maxima.patch](tarball://root/attachments/some-uuid/ticket6228/trac_6228-multiplicity-maxima.patch) by kcrisman created at 2009-09-29 14:49:36\n\nBased on 4.1.2.alpha4",
     "created_at": "2009-09-29T14:49:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6228",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_049708.json:
 }
 ```
 
-Attachment
+Attachment [trac_6228-multiplicity-maxima.patch](tarball://root/attachments/some-uuid/ticket6228/trac_6228-multiplicity-maxima.patch) by kcrisman created at 2009-09-29 14:49:36
 
 Based on 4.1.2.alpha4
 

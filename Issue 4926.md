@@ -111,7 +111,7 @@ I forgot to say:  patch applies ok to 3.2.3.final.  I have not tried editing the
 archive/issue_comments_037378.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4926-2.patch](tarball://root/attachments/some-uuid/ticket4926/trac_4926-2.patch) by mhansen created at 2009-01-11 04:43:49",
     "created_at": "2009-01-11T04:43:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4926",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_037378.json:
 }
 ```
 
-Attachment
+Attachment [trac_4926-2.patch](tarball://root/attachments/some-uuid/ticket4926/trac_4926-2.patch) by mhansen created at 2009-01-11 04:43:49
 
 
 
@@ -165,7 +165,7 @@ Looks good now.  Pass!
 archive/issue_comments_037381.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage.schemes-final.patch](tarball://root/attachments/some-uuid/ticket4926/sage.schemes-final.patch) by mhansen created at 2009-02-21 19:22:08",
     "created_at": "2009-02-21T19:22:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4926",
     "type": "issue_comment",
@@ -174,7 +174,7 @@ archive/issue_comments_037381.json:
 }
 ```
 
-Attachment
+Attachment [sage.schemes-final.patch](tarball://root/attachments/some-uuid/ticket4926/sage.schemes-final.patch) by mhansen created at 2009-02-21 19:22:08
 
 
 

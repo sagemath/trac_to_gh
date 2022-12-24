@@ -108,7 +108,7 @@ Resolution: fixed
 archive/issue_comments_002743.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [c_lib_fixes.hg](tarball://root/attachments/some-uuid/ticket538/c_lib_fixes.hg) by was created at 2007-09-01 17:45:45",
     "created_at": "2007-09-01T17:45:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/538",
     "type": "issue_comment",
@@ -117,4 +117,4 @@ archive/issue_comments_002743.json:
 }
 ```
 
-Attachment
+Attachment [c_lib_fixes.hg](tarball://root/attachments/some-uuid/ticket538/c_lib_fixes.hg) by was created at 2007-09-01 17:45:45

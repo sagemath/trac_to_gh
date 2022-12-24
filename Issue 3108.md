@@ -103,7 +103,7 @@ Changing component from number theory to elliptic curves.
 archive/issue_comments_021479.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3108-additive_order.patch](tarball://root/attachments/some-uuid/ticket3108/trac_3108-additive_order.patch) by cremona created at 2009-07-24 22:21:25",
     "created_at": "2009-07-24T22:21:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3108",
     "type": "issue_comment",
@@ -112,7 +112,7 @@ archive/issue_comments_021479.json:
 }
 ```
 
-Attachment
+Attachment [trac_3108-additive_order.patch](tarball://root/attachments/some-uuid/ticket3108/trac_3108-additive_order.patch) by cremona created at 2009-07-24 22:21:25
 
 
 

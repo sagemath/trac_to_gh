@@ -298,7 +298,7 @@ Thanks, I appreciate it.  I was aware of the incompatibility, just didn't have t
 archive/issue_comments_038000.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4983-subdivisions.patch](tarball://root/attachments/some-uuid/ticket4983/trac_4983-subdivisions.patch) by jhpalmieri created at 2011-03-23 17:51:05",
     "created_at": "2011-03-23T17:51:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4983",
     "type": "issue_comment",
@@ -307,7 +307,7 @@ archive/issue_comments_038000.json:
 }
 ```
 
-Attachment
+Attachment [trac_4983-subdivisions.patch](tarball://root/attachments/some-uuid/ticket4983/trac_4983-subdivisions.patch) by jhpalmieri created at 2011-03-23 17:51:05
 
 
 
@@ -412,7 +412,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_038006.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4983-subdivisions-rebased.patch](tarball://root/attachments/some-uuid/ticket4983/trac_4983-subdivisions-rebased.patch) by jhpalmieri created at 2011-04-04 19:24:10",
     "created_at": "2011-04-04T19:24:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4983",
     "type": "issue_comment",
@@ -421,7 +421,7 @@ archive/issue_comments_038006.json:
 }
 ```
 
-Attachment
+Attachment [trac_4983-subdivisions-rebased.patch](tarball://root/attachments/some-uuid/ticket4983/trac_4983-subdivisions-rebased.patch) by jhpalmieri created at 2011-04-04 19:24:10
 
 
 

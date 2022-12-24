@@ -59,7 +59,7 @@ Changing assignee from cwitty to amhou.
 archive/issue_comments_061142.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [load_standards.py](tarball://root/attachments/some-uuid/ticket7317/load_standards.py) by was created at 2009-12-08 00:08:09",
     "created_at": "2009-12-08T00:08:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7317",
     "type": "issue_comment",
@@ -68,4 +68,4 @@ archive/issue_comments_061142.json:
 }
 ```
 
-Attachment
+Attachment [load_standards.py](tarball://root/attachments/some-uuid/ticket7317/load_standards.py) by was created at 2009-12-08 00:08:09

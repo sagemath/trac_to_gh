@@ -51,7 +51,7 @@ Changing status from new to needs_review.
 archive/issue_comments_073522.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8300-algdep-proof.patch](tarball://root/attachments/some-uuid/ticket8300/8300-algdep-proof.patch) by robertwb created at 2010-02-20 01:05:04",
     "created_at": "2010-02-20T01:05:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8300",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_073522.json:
 }
 ```
 
-Attachment
+Attachment [8300-algdep-proof.patch](tarball://root/attachments/some-uuid/ticket8300/8300-algdep-proof.patch) by robertwb created at 2010-02-20 01:05:04
 
 
 

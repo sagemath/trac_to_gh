@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6684
 archive/issue_comments_054957.json:
 ```json
 {
-    "body": "Attachment\n\nbased on Sage 4.1.1.rc2",
+    "body": "Attachment [trac_6684-docbuild.patch](tarball://root/attachments/some-uuid/ticket6684/trac_6684-docbuild.patch) by mvngu created at 2009-08-07 10:59:02\n\nbased on Sage 4.1.1.rc2",
     "created_at": "2009-08-07T10:59:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6684",
     "type": "issue_comment",
@@ -49,7 +49,7 @@ archive/issue_comments_054957.json:
 }
 ```
 
-Attachment
+Attachment [trac_6684-docbuild.patch](tarball://root/attachments/some-uuid/ticket6684/trac_6684-docbuild.patch) by mvngu created at 2009-08-07 10:59:02
 
 based on Sage 4.1.1.rc2
 

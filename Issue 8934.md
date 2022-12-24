@@ -123,7 +123,7 @@ Also, `p.points()` fails for the same reason. It would be great if you could fix
 archive/issue_comments_082272.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8934_faces_of_nonspanning_lattice_polytopes.patch](tarball://root/attachments/some-uuid/ticket8934/trac_8934_faces_of_nonspanning_lattice_polytopes.patch) by novoselt created at 2010-05-10 19:15:46",
     "created_at": "2010-05-10T19:15:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8934",
     "type": "issue_comment",
@@ -132,7 +132,7 @@ archive/issue_comments_082272.json:
 }
 ```
 
-Attachment
+Attachment [trac_8934_faces_of_nonspanning_lattice_polytopes.patch](tarball://root/attachments/some-uuid/ticket8934/trac_8934_faces_of_nonspanning_lattice_polytopes.patch) by novoselt created at 2010-05-10 19:15:46
 
 
 

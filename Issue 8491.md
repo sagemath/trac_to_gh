@@ -111,7 +111,7 @@ Changing status from new to needs_review.
 archive/issue_comments_076586.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8491-py_numer.patch](tarball://root/attachments/some-uuid/ticket8491/trac_8491-py_numer.patch) by burcin created at 2010-03-10 22:05:10",
     "created_at": "2010-03-10T22:05:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8491",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_076586.json:
 }
 ```
 
-Attachment
+Attachment [trac_8491-py_numer.patch](tarball://root/attachments/some-uuid/ticket8491/trac_8491-py_numer.patch) by burcin created at 2010-03-10 22:05:10
 
 
 

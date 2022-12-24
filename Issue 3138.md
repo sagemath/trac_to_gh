@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3138
 archive/issue_comments_021790.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [no_singular_repr.changeset](tarball://root/attachments/some-uuid/ticket3138/no_singular_repr.changeset) by broune created at 2008-05-09 01:06:22",
     "created_at": "2008-05-09T01:06:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3138",
     "type": "issue_comment",
@@ -43,7 +43,7 @@ archive/issue_comments_021790.json:
 }
 ```
 
-Attachment
+Attachment [no_singular_repr.changeset](tarball://root/attachments/some-uuid/ticket3138/no_singular_repr.changeset) by broune created at 2008-05-09 01:06:22
 
 
 

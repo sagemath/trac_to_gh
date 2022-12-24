@@ -70,7 +70,7 @@ Changing status from new to assigned.
 archive/issue_comments_003311.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [cython-sage-all.patch](tarball://root/attachments/some-uuid/ticket641/cython-sage-all.patch) by robertwb created at 2007-09-12 04:51:10",
     "created_at": "2007-09-12T04:51:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/641",
     "type": "issue_comment",
@@ -79,7 +79,7 @@ archive/issue_comments_003311.json:
 }
 ```
 
-Attachment
+Attachment [cython-sage-all.patch](tarball://root/attachments/some-uuid/ticket641/cython-sage-all.patch) by robertwb created at 2007-09-12 04:51:10
 
 
 

@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7076
 archive/issue_comments_058518.json:
 ```json
 {
-    "body": "Attachment\n\nReimplements introspection.",
+    "body": "Attachment [trac_7076-introspection-reimplementation.patch](tarball://root/attachments/some-uuid/ticket7076/trac_7076-introspection-reimplementation.patch) by timdumol created at 2009-09-29 19:49:59\n\nReimplements introspection.",
     "created_at": "2009-09-29T19:49:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7076",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_058518.json:
 }
 ```
 
-Attachment
+Attachment [trac_7076-introspection-reimplementation.patch](tarball://root/attachments/some-uuid/ticket7076/trac_7076-introspection-reimplementation.patch) by timdumol created at 2009-09-29 19:49:59
 
 Reimplements introspection.
 

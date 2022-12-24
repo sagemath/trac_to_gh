@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1105
 archive/issue_comments_006689.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [libsingular-memleak.patch](tarball://root/attachments/some-uuid/ticket1105/libsingular-memleak.patch) by malb created at 2007-11-05 10:36:40",
     "created_at": "2007-11-05T10:36:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1105",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_006689.json:
 }
 ```
 
-Attachment
+Attachment [libsingular-memleak.patch](tarball://root/attachments/some-uuid/ticket1105/libsingular-memleak.patch) by malb created at 2007-11-05 10:36:40
 
 
 

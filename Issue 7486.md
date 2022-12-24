@@ -135,7 +135,7 @@ f
 archive/issue_comments_063231.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ipauto.py](tarball://root/attachments/some-uuid/ticket7486/ipauto.py) by olazo created at 2010-08-21 23:26:40",
     "created_at": "2010-08-21T23:26:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7486",
     "type": "issue_comment",
@@ -144,7 +144,7 @@ archive/issue_comments_063231.json:
 }
 ```
 
-Attachment
+Attachment [ipauto.py](tarball://root/attachments/some-uuid/ticket7486/ipauto.py) by olazo created at 2010-08-21 23:26:40
 
 
 

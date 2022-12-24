@@ -447,7 +447,7 @@ No, problem, wasn't quite sure of the protocol, here you go.
 archive/issue_comments_092376.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [14602.patch.md5](tarball://root/attachments/some-uuid/ticket9567/14602.patch.md5) by bedwards created at 2010-07-26 16:39:22",
     "created_at": "2010-07-26T16:39:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9567",
     "type": "issue_comment",
@@ -456,7 +456,7 @@ archive/issue_comments_092376.json:
 }
 ```
 
-Attachment
+Attachment [14602.patch.md5](tarball://root/attachments/some-uuid/ticket9567/14602.patch.md5) by bedwards created at 2010-07-26 16:39:22
 
 
 
@@ -746,7 +746,7 @@ Nathann, maybe update yours for sage 4.5.2?
 archive/issue_comments_092390.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9567-networkx-1.2.patch](tarball://root/attachments/some-uuid/ticket9567/trac_9567-networkx-1.2.patch) by bedwards created at 2010-08-09 16:48:03",
     "created_at": "2010-08-09T16:48:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9567",
     "type": "issue_comment",
@@ -755,7 +755,7 @@ archive/issue_comments_092390.json:
 }
 ```
 
-Attachment
+Attachment [trac_9567-networkx-1.2.patch](tarball://root/attachments/some-uuid/ticket9567/trac_9567-networkx-1.2.patch) by bedwards created at 2010-08-09 16:48:03
 
 
 
@@ -806,7 +806,7 @@ Nathann
 archive/issue_comments_092393.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9567-cycle_basis.patch](tarball://root/attachments/some-uuid/ticket9567/trac_9567-cycle_basis.patch) by ncohen created at 2010-08-12 03:33:06",
     "created_at": "2010-08-12T03:33:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9567",
     "type": "issue_comment",
@@ -815,7 +815,7 @@ archive/issue_comments_092393.json:
 }
 ```
 
-Attachment
+Attachment [trac_9567-cycle_basis.patch](tarball://root/attachments/some-uuid/ticket9567/trac_9567-cycle_basis.patch) by ncohen created at 2010-08-12 03:33:06
 
 
 

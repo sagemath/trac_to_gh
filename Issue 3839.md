@@ -68,7 +68,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3839
 archive/issue_comments_027301.json:
 ```json
 {
-    "body": "Attachment\n\nPatch relative to 3.1.alpha0",
+    "body": "Attachment [RElementAccess.patch](tarball://root/attachments/some-uuid/ticket3839/RElementAccess.patch) by SimonKing created at 2008-08-13 17:29:59\n\nPatch relative to 3.1.alpha0",
     "created_at": "2008-08-13T17:29:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3839",
     "type": "issue_comment",
@@ -77,7 +77,7 @@ archive/issue_comments_027301.json:
 }
 ```
 
-Attachment
+Attachment [RElementAccess.patch](tarball://root/attachments/some-uuid/ticket3839/RElementAccess.patch) by SimonKing created at 2008-08-13 17:29:59
 
 Patch relative to 3.1.alpha0
 

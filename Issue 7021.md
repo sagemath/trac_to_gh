@@ -87,7 +87,7 @@ tar file to be installed as $SAGE_HOME/spkg/base
 archive/issue_comments_058127.json:
 ```json
 {
-    "body": "Attachment\n\nexecutable shell script to install as $SAGE_HOME/spkg/base/prereq-0.4-install",
+    "body": "Attachment [prereq-0.4-install](tarball://root/attachments/some-uuid/ticket7021/prereq-0.4-install) by drkirkby created at 2009-09-27 01:39:14\n\nexecutable shell script to install as $SAGE_HOME/spkg/base/prereq-0.4-install",
     "created_at": "2009-09-27T01:39:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7021",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_058127.json:
 }
 ```
 
-Attachment
+Attachment [prereq-0.4-install](tarball://root/attachments/some-uuid/ticket7021/prereq-0.4-install) by drkirkby created at 2009-09-27 01:39:14
 
 executable shell script to install as $SAGE_HOME/spkg/base/prereq-0.4-install
 

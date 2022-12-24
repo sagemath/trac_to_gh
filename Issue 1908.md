@@ -64,7 +64,7 @@ This should be applied after #1869.
 archive/issue_comments_012085.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated patch to fix typo in doctests",
+    "body": "Attachment [show_list.patch](tarball://root/attachments/some-uuid/ticket1908/show_list.patch) by jason created at 2008-01-24 04:46:30\n\nUpdated patch to fix typo in doctests",
     "created_at": "2008-01-24T04:46:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1908",
     "type": "issue_comment",
@@ -73,7 +73,7 @@ archive/issue_comments_012085.json:
 }
 ```
 
-Attachment
+Attachment [show_list.patch](tarball://root/attachments/some-uuid/ticket1908/show_list.patch) by jason created at 2008-01-24 04:46:30
 
 Updated patch to fix typo in doctests
 
@@ -160,7 +160,7 @@ Yes, most of what I did was while I was looking at to_graphics_arrays().  Thanks
 archive/issue_comments_012090.json:
 ```json
 {
-    "body": "Attachment\n\nApply in place of show_list.patch",
+    "body": "Attachment [show_list-updated.patch](tarball://root/attachments/some-uuid/ticket1908/show_list-updated.patch) by jason created at 2008-01-24 22:14:09\n\nApply in place of show_list.patch",
     "created_at": "2008-01-24T22:14:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1908",
     "type": "issue_comment",
@@ -169,7 +169,7 @@ archive/issue_comments_012090.json:
 }
 ```
 
-Attachment
+Attachment [show_list-updated.patch](tarball://root/attachments/some-uuid/ticket1908/show_list-updated.patch) by jason created at 2008-01-24 22:14:09
 
 Apply in place of show_list.patch
 
@@ -222,7 +222,7 @@ I really like the idea of class defaults for list plots being in the classes the
 archive/issue_comments_012093.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [show_list-updated-ref.patch](tarball://root/attachments/some-uuid/ticket1908/show_list-updated-ref.patch) by rlm created at 2008-01-25 10:15:59",
     "created_at": "2008-01-25T10:15:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1908",
     "type": "issue_comment",
@@ -231,7 +231,7 @@ archive/issue_comments_012093.json:
 }
 ```
 
-Attachment
+Attachment [show_list-updated-ref.patch](tarball://root/attachments/some-uuid/ticket1908/show_list-updated-ref.patch) by rlm created at 2008-01-25 10:15:59
 
 
 
@@ -276,7 +276,7 @@ Doctest for Robert's addition.
 archive/issue_comments_012096.json:
 ```json
 {
-    "body": "Attachment\n\nThere are three patches to be applied here, in this order:\n\n1.  show_list-updated.patch\n2.  show_list-updated-ref.patch\n3. show_list-updated-ref-doctest.patch",
+    "body": "Attachment [show_list-updated-ref-doctest.patch](tarball://root/attachments/some-uuid/ticket1908/show_list-updated-ref-doctest.patch) by jason created at 2008-01-28 19:18:11\n\nThere are three patches to be applied here, in this order:\n\n1.  show_list-updated.patch\n2.  show_list-updated-ref.patch\n3. show_list-updated-ref-doctest.patch",
     "created_at": "2008-01-28T19:18:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1908",
     "type": "issue_comment",
@@ -285,7 +285,7 @@ archive/issue_comments_012096.json:
 }
 ```
 
-Attachment
+Attachment [show_list-updated-ref-doctest.patch](tarball://root/attachments/some-uuid/ticket1908/show_list-updated-ref-doctest.patch) by jason created at 2008-01-28 19:18:11
 
 There are three patches to be applied here, in this order:
 

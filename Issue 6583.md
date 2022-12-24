@@ -143,7 +143,7 @@ Changing assignee from davidloeffler to rlm.
 archive/issue_comments_053776.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6583.patch](tarball://root/attachments/some-uuid/ticket6583/trac_6583.patch) by rlm created at 2009-09-18 01:18:43",
     "created_at": "2009-09-18T01:18:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6583",
     "type": "issue_comment",
@@ -152,7 +152,7 @@ archive/issue_comments_053776.json:
 }
 ```
 
-Attachment
+Attachment [trac_6583.patch](tarball://root/attachments/some-uuid/ticket6583/trac_6583.patch) by rlm created at 2009-09-18 01:18:43
 
 
 
@@ -161,7 +161,7 @@ Attachment
 archive/issue_comments_053777.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6583_large_primes.patch](tarball://root/attachments/some-uuid/ticket6583/trac_6583_large_primes.patch) by rlm created at 2009-09-19 03:09:46",
     "created_at": "2009-09-19T03:09:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6583",
     "type": "issue_comment",
@@ -170,7 +170,7 @@ archive/issue_comments_053777.json:
 }
 ```
 
-Attachment
+Attachment [trac_6583_large_primes.patch](tarball://root/attachments/some-uuid/ticket6583/trac_6583_large_primes.patch) by rlm created at 2009-09-19 03:09:46
 
 
 
@@ -298,7 +298,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_053780.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6583-fix.patch](tarball://root/attachments/some-uuid/ticket6583/trac_6583-fix.patch) by rlm created at 2009-10-30 03:01:22",
     "created_at": "2009-10-30T03:01:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6583",
     "type": "issue_comment",
@@ -307,7 +307,7 @@ archive/issue_comments_053780.json:
 }
 ```
 
-Attachment
+Attachment [trac_6583-fix.patch](tarball://root/attachments/some-uuid/ticket6583/trac_6583-fix.patch) by rlm created at 2009-10-30 03:01:22
 
 
 
@@ -649,7 +649,7 @@ I've applied the patches, skimmed them, and run the test suite.  Positive review
 archive/issue_comments_053792.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6583-rebase.patch](tarball://root/attachments/some-uuid/ticket6583/trac_6583-rebase.patch) by was created at 2009-12-09 00:55:51",
     "created_at": "2009-12-09T00:55:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6583",
     "type": "issue_comment",
@@ -658,7 +658,7 @@ archive/issue_comments_053792.json:
 }
 ```
 
-Attachment
+Attachment [trac_6583-rebase.patch](tarball://root/attachments/some-uuid/ticket6583/trac_6583-rebase.patch) by was created at 2009-12-09 00:55:51
 
 
 

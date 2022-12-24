@@ -316,7 +316,7 @@ new version with better error message, as Lief suggested.
 archive/issue_comments_091350.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9507.patch](tarball://root/attachments/some-uuid/ticket9507/trac_9507.patch) by rlm created at 2010-07-19 11:20:34",
     "created_at": "2010-07-19T11:20:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9507",
     "type": "issue_comment",
@@ -325,7 +325,7 @@ archive/issue_comments_091350.json:
 }
 ```
 
-Attachment
+Attachment [trac_9507.patch](tarball://root/attachments/some-uuid/ticket9507/trac_9507.patch) by rlm created at 2010-07-19 11:20:34
 
 
 

@@ -96,7 +96,7 @@ The patch looks good, one thing though: every parent is supposed to provide a `z
 archive/issue_comments_013475.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated patch to use .zero_element()",
+    "body": "Attachment [2081.patch](tarball://root/attachments/some-uuid/ticket2081/2081.patch) by mhansen created at 2008-02-14 23:56:03\n\nUpdated patch to use .zero_element()",
     "created_at": "2008-02-14T23:56:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2081",
     "type": "issue_comment",
@@ -105,7 +105,7 @@ archive/issue_comments_013475.json:
 }
 ```
 
-Attachment
+Attachment [2081.patch](tarball://root/attachments/some-uuid/ticket2081/2081.patch) by mhansen created at 2008-02-14 23:56:03
 
 Updated patch to use .zero_element()
 

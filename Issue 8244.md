@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8244
 archive/issue_comments_072895.json:
 ```json
 {
-    "body": "Attachment\n\nHTML reference manual docbuild warnings for 4.3.3.alpha0.  Not a patch.",
+    "body": "Attachment [refbuild.log](tarball://root/attachments/some-uuid/ticket8244/refbuild.log) by mpatel created at 2010-02-11 21:46:55\n\nHTML reference manual docbuild warnings for 4.3.3.alpha0.  Not a patch.",
     "created_at": "2010-02-11T21:46:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_072895.json:
 }
 ```
 
-Attachment
+Attachment [refbuild.log](tarball://root/attachments/some-uuid/ticket8244/refbuild.log) by mpatel created at 2010-02-11 21:46:55
 
 HTML reference manual docbuild warnings for 4.3.3.alpha0.  Not a patch.
 
@@ -369,7 +369,7 @@ Handle `*.next` methods.  sage repo.
 archive/issue_comments_072906.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch should remove the warnings that end in\n\n```\n.next: arg is not a module, class, method, function, traceback, frame, or code object\n```\n",
+    "body": "Attachment [trac_8244-slot_wrapper_argspec.patch](tarball://root/attachments/some-uuid/ticket8244/trac_8244-slot_wrapper_argspec.patch) by mpatel created at 2010-02-19 03:29:52\n\nThe attached patch should remove the warnings that end in\n\n```\n.next: arg is not a module, class, method, function, traceback, frame, or code object\n```\n",
     "created_at": "2010-02-19T03:29:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
@@ -378,7 +378,7 @@ archive/issue_comments_072906.json:
 }
 ```
 
-Attachment
+Attachment [trac_8244-slot_wrapper_argspec.patch](tarball://root/attachments/some-uuid/ticket8244/trac_8244-slot_wrapper_argspec.patch) by mpatel created at 2010-02-19 03:29:52
 
 The attached patch should remove the warnings that end in
 
@@ -474,7 +474,7 @@ My patch also skips `sagenb.notebook.twist.UserToplevel.userchild_download_works
 archive/issue_comments_072910.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of other patch",
+    "body": "Attachment [trac_8244-conf-autodoc.patch](tarball://root/attachments/some-uuid/ticket8244/trac_8244-conf-autodoc.patch) by jhpalmieri created at 2010-02-19 21:23:27\n\napply on top of other patch",
     "created_at": "2010-02-19T21:23:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
@@ -483,7 +483,7 @@ archive/issue_comments_072910.json:
 }
 ```
 
-Attachment
+Attachment [trac_8244-conf-autodoc.patch](tarball://root/attachments/some-uuid/ticket8244/trac_8244-conf-autodoc.patch) by jhpalmieri created at 2010-02-19 21:23:27
 
 apply on top of other patch
 
@@ -512,7 +512,7 @@ Here's one more patch: this fixes one last warning message about sage.misc.proce
 archive/issue_comments_072912.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of other patches",
+    "body": "Attachment [trac_8244-sagedoc.patch](tarball://root/attachments/some-uuid/ticket8244/trac_8244-sagedoc.patch) by jhpalmieri created at 2010-02-19 22:21:16\n\napply on top of other patches",
     "created_at": "2010-02-19T22:21:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
@@ -521,7 +521,7 @@ archive/issue_comments_072912.json:
 }
 ```
 
-Attachment
+Attachment [trac_8244-sagedoc.patch](tarball://root/attachments/some-uuid/ticket8244/trac_8244-sagedoc.patch) by jhpalmieri created at 2010-02-19 22:21:16
 
 apply on top of other patches
 
@@ -615,7 +615,7 @@ Replaces "conf_autodoc" patch.
 archive/issue_comments_072917.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached a replacement for the \"conf-autodoc\" patch that adds all of `autodoc` (as `sage_autodoc`) and, with some redefinition, avoids the `ExtensionError`.\n\nA self-contained `sage_autodoc` should make it less likely that `sage_autodoc` stops working, when we upgrade or test new versions of Sphinx.  (I was just hit by this during experiments with [a development version](http://bitbucket.org/birkenfeld/sphinx/)).\n\nWhat do you think?",
+    "body": "Attachment [trac_8244-conf-autodoc.2.patch](tarball://root/attachments/some-uuid/ticket8244/trac_8244-conf-autodoc.2.patch) by mpatel created at 2010-02-23 03:29:15\n\nI've attached a replacement for the \"conf-autodoc\" patch that adds all of `autodoc` (as `sage_autodoc`) and, with some redefinition, avoids the `ExtensionError`.\n\nA self-contained `sage_autodoc` should make it less likely that `sage_autodoc` stops working, when we upgrade or test new versions of Sphinx.  (I was just hit by this during experiments with [a development version](http://bitbucket.org/birkenfeld/sphinx/)).\n\nWhat do you think?",
     "created_at": "2010-02-23T03:29:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
@@ -624,7 +624,7 @@ archive/issue_comments_072917.json:
 }
 ```
 
-Attachment
+Attachment [trac_8244-conf-autodoc.2.patch](tarball://root/attachments/some-uuid/ticket8244/trac_8244-conf-autodoc.2.patch) by mpatel created at 2010-02-23 03:29:15
 
 I've attached a replacement for the "conf-autodoc" patch that adds all of `autodoc` (as `sage_autodoc`) and, with some redefinition, avoids the `ExtensionError`.
 

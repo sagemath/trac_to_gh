@@ -81,7 +81,7 @@ Changing assignee from cwitty to burcin.
 archive/issue_comments_022826.json:
 ```json
 {
-    "body": "Attachment\n\nThrough a chain of typedefs the parameter expected by these functions was defined to be int, not the enum declared in the .pxi file. With the attached patch, the warnings go away. :)",
+    "body": "Attachment [trac_3298-pbori_cython_warnings.patch](tarball://root/attachments/some-uuid/ticket3298/trac_3298-pbori_cython_warnings.patch) by burcin created at 2009-01-24 19:07:29\n\nThrough a chain of typedefs the parameter expected by these functions was defined to be int, not the enum declared in the .pxi file. With the attached patch, the warnings go away. :)",
     "created_at": "2009-01-24T19:07:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3298",
     "type": "issue_comment",
@@ -90,7 +90,7 @@ archive/issue_comments_022826.json:
 }
 ```
 
-Attachment
+Attachment [trac_3298-pbori_cython_warnings.patch](tarball://root/attachments/some-uuid/ticket3298/trac_3298-pbori_cython_warnings.patch) by burcin created at 2009-01-24 19:07:29
 
 Through a chain of typedefs the parameter expected by these functions was defined to be int, not the enum declared in the .pxi file. With the attached patch, the warnings go away. :)
 

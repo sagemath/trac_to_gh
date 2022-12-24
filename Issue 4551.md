@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4551
 archive/issue_comments_034108.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-4551.patch](tarball://root/attachments/some-uuid/ticket4551/sage-4551.patch) by TimothyClemans created at 2008-12-03 15:19:39",
     "created_at": "2008-12-03T15:19:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4551",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_034108.json:
 }
 ```
 
-Attachment
+Attachment [sage-4551.patch](tarball://root/attachments/some-uuid/ticket4551/sage-4551.patch) by TimothyClemans created at 2008-12-03 15:19:39
 
 
 
@@ -51,7 +51,7 @@ Attachment
 archive/issue_comments_034109.json:
 ```json
 {
-    "body": "Attachment\n\nDepends on #4135",
+    "body": "Attachment [sage-4551_2.patch](tarball://root/attachments/some-uuid/ticket4551/sage-4551_2.patch) by TimothyClemans created at 2008-12-20 20:05:31\n\nDepends on #4135",
     "created_at": "2008-12-20T20:05:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4551",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_034109.json:
 }
 ```
 
-Attachment
+Attachment [sage-4551_2.patch](tarball://root/attachments/some-uuid/ticket4551/sage-4551_2.patch) by TimothyClemans created at 2008-12-20 20:05:31
 
 Depends on #4135
 
@@ -71,7 +71,7 @@ Depends on #4135
 archive/issue_comments_034110.json:
 ```json
 {
-    "body": "Attachment\n\nfirst two patches folded into one, rebased on 4.1.2.alpha0 + #4550",
+    "body": "Attachment [trac_4551.patch](tarball://root/attachments/some-uuid/ticket4551/trac_4551.patch) by ddrake created at 2009-09-05 01:31:41\n\nfirst two patches folded into one, rebased on 4.1.2.alpha0 + #4550",
     "created_at": "2009-09-05T01:31:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4551",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_034110.json:
 }
 ```
 
-Attachment
+Attachment [trac_4551.patch](tarball://root/attachments/some-uuid/ticket4551/trac_4551.patch) by ddrake created at 2009-09-05 01:31:41
 
 first two patches folded into one, rebased on 4.1.2.alpha0 + #4550
 
@@ -91,7 +91,7 @@ first two patches folded into one, rebased on 4.1.2.alpha0 + #4550
 archive/issue_comments_034111.json:
 ```json
 {
-    "body": "Attachment\n\nRebased for sagenb #6983 + #7110 (including #5447) + #7158 + #4550.",
+    "body": "Attachment [trac_4550+4551-settings_page.patch](tarball://root/attachments/some-uuid/ticket4551/trac_4550+4551-settings_page.patch) by mpatel created at 2009-10-10 07:25:49\n\nRebased for sagenb #6983 + #7110 (including #5447) + #7158 + #4550.",
     "created_at": "2009-10-10T07:25:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4551",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_034111.json:
 }
 ```
 
-Attachment
+Attachment [trac_4550+4551-settings_page.patch](tarball://root/attachments/some-uuid/ticket4551/trac_4550+4551-settings_page.patch) by mpatel created at 2009-10-10 07:25:49
 
 Rebased for sagenb #6983 + #7110 (including #5447) + #7158 + #4550.
 
@@ -129,7 +129,7 @@ I'm working on adding other server settings to the "Notebook Settings" page.
 archive/issue_comments_034113.json:
 ```json
 {
-    "body": "Attachment\n\nSageNB: settings page for all server options.  Depends on #7110, #7158.  Apply only this patch.",
+    "body": "Attachment [trac_4551-settings_page_v2.patch](tarball://root/attachments/some-uuid/ticket4551/trac_4551-settings_page_v2.patch) by mpatel created at 2009-10-10 13:08:10\n\nSageNB: settings page for all server options.  Depends on #7110, #7158.  Apply only this patch.",
     "created_at": "2009-10-10T13:08:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4551",
     "type": "issue_comment",
@@ -138,7 +138,7 @@ archive/issue_comments_034113.json:
 }
 ```
 
-Attachment
+Attachment [trac_4551-settings_page_v2.patch](tarball://root/attachments/some-uuid/ticket4551/trac_4551-settings_page_v2.patch) by mpatel created at 2009-10-10 13:08:10
 
 SageNB: settings page for all server options.  Depends on #7110, #7158.  Apply only this patch.
 
@@ -198,7 +198,7 @@ Reminder: Rebase against the outcomes of #7196, #7158, if the new changes are wo
 archive/issue_comments_034116.json:
 ```json
 {
-    "body": "Attachment\n\nNow uses Farbtastic as a color chooser.  Rebased against #7196 + #7158 v2.  Apply only this patch.",
+    "body": "Attachment [trac_4551-settings_page_v3.patch](tarball://root/attachments/some-uuid/ticket4551/trac_4551-settings_page_v3.patch) by mpatel created at 2009-10-14 10:56:42\n\nNow uses Farbtastic as a color chooser.  Rebased against #7196 + #7158 v2.  Apply only this patch.",
     "created_at": "2009-10-14T10:56:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4551",
     "type": "issue_comment",
@@ -207,7 +207,7 @@ archive/issue_comments_034116.json:
 }
 ```
 
-Attachment
+Attachment [trac_4551-settings_page_v3.patch](tarball://root/attachments/some-uuid/ticket4551/trac_4551-settings_page_v3.patch) by mpatel created at 2009-10-14 10:56:42
 
 Now uses Farbtastic as a color chooser.  Rebased against #7196 + #7158 v2.  Apply only this patch.
 

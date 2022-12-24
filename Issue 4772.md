@@ -95,7 +95,7 @@ sage: 174/(5.48*10^(-3))
 archive/issue_comments_036145.json:
 ```json
 {
-    "body": "Attachment\n\nVery nice speedup!  Positive review.  Doctests pass in the file.",
+    "body": "Attachment [trac_4772.patch](tarball://root/attachments/some-uuid/ticket4772/trac_4772.patch) by jason created at 2008-12-12 21:20:57\n\nVery nice speedup!  Positive review.  Doctests pass in the file.",
     "created_at": "2008-12-12T21:20:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4772",
     "type": "issue_comment",
@@ -104,7 +104,7 @@ archive/issue_comments_036145.json:
 }
 ```
 
-Attachment
+Attachment [trac_4772.patch](tarball://root/attachments/some-uuid/ticket4772/trac_4772.patch) by jason created at 2008-12-12 21:20:57
 
 Very nice speedup!  Positive review.  Doctests pass in the file.
 

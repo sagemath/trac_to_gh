@@ -56,7 +56,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2423
 archive/issue_comments_016395.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [notebook-interface.patch](tarball://root/attachments/some-uuid/ticket2423/notebook-interface.patch) by jason created at 2008-03-07 22:41:54",
     "created_at": "2008-03-07T22:41:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2423",
     "type": "issue_comment",
@@ -65,7 +65,7 @@ archive/issue_comments_016395.json:
 }
 ```
 
-Attachment
+Attachment [notebook-interface.patch](tarball://root/attachments/some-uuid/ticket2423/notebook-interface.patch) by jason created at 2008-03-07 22:41:54
 
 
 

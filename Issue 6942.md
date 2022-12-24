@@ -207,7 +207,7 @@ Changing status from new to needs_review.
 archive/issue_comments_057396.json:
 ```json
 {
-    "body": "Attachment\n\nThe above patch fixes this problem, and also resolves ticket #6932.",
+    "body": "Attachment [trac6942_jordan.patch](tarball://root/attachments/some-uuid/ticket6942/trac6942_jordan.patch) by spancratz created at 2010-01-19 12:28:03\n\nThe above patch fixes this problem, and also resolves ticket #6932.",
     "created_at": "2010-01-19T12:28:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6942",
     "type": "issue_comment",
@@ -216,7 +216,7 @@ archive/issue_comments_057396.json:
 }
 ```
 
-Attachment
+Attachment [trac6942_jordan.patch](tarball://root/attachments/some-uuid/ticket6942/trac6942_jordan.patch) by spancratz created at 2010-01-19 12:28:03
 
 The above patch fixes this problem, and also resolves ticket #6932.
 
@@ -245,7 +245,7 @@ Additional doctests
 archive/issue_comments_057398.json:
 ```json
 {
-    "body": "Attachment\n\nThe second patch adds additional doctests.  There are three of them, all for 10 by 10 matrices over the rationals and with only one eigenvalue.  The Jordan blocks are of sizes (a) 3,3,3,1, (b) 3,3,2,2, and (c) 3,2,2,2,1.\n\nSebastian",
+    "body": "Attachment [trac6942_jordan_tests.patch](tarball://root/attachments/some-uuid/ticket6942/trac6942_jordan_tests.patch) by spancratz created at 2010-01-20 02:19:12\n\nThe second patch adds additional doctests.  There are three of them, all for 10 by 10 matrices over the rationals and with only one eigenvalue.  The Jordan blocks are of sizes (a) 3,3,3,1, (b) 3,3,2,2, and (c) 3,2,2,2,1.\n\nSebastian",
     "created_at": "2010-01-20T02:19:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6942",
     "type": "issue_comment",
@@ -254,7 +254,7 @@ archive/issue_comments_057398.json:
 }
 ```
 
-Attachment
+Attachment [trac6942_jordan_tests.patch](tarball://root/attachments/some-uuid/ticket6942/trac6942_jordan_tests.patch) by spancratz created at 2010-01-20 02:19:12
 
 The second patch adds additional doctests.  There are three of them, all for 10 by 10 matrices over the rationals and with only one eigenvalue.  The Jordan blocks are of sizes (a) 3,3,3,1, (b) 3,3,2,2, and (c) 3,2,2,2,1.
 
@@ -302,7 +302,7 @@ matrix(QQ, [
 archive/issue_comments_057400.json:
 ```json
 {
-    "body": "Attachment\n\nOne-character reviewer doctest fix",
+    "body": "Attachment [trac_6942-reviewer.patch](tarball://root/attachments/some-uuid/ticket6942/trac_6942-reviewer.patch) by rbeezer created at 2010-01-31 07:04:22\n\nOne-character reviewer doctest fix",
     "created_at": "2010-01-31T07:04:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6942",
     "type": "issue_comment",
@@ -311,7 +311,7 @@ archive/issue_comments_057400.json:
 }
 ```
 
-Attachment
+Attachment [trac_6942-reviewer.patch](tarball://root/attachments/some-uuid/ticket6942/trac_6942-reviewer.patch) by rbeezer created at 2010-01-31 07:04:22
 
 One-character reviewer doctest fix
 

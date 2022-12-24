@@ -112,7 +112,7 @@ I took a pristine 2.10.2, applied the patch from #2326, and ran the doctest in q
 archive/issue_comments_016025.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2375-fix.patch](tarball://root/attachments/some-uuid/ticket2375/2375-fix.patch) by rlm created at 2008-03-03 21:36:52",
     "created_at": "2008-03-03T21:36:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2375",
     "type": "issue_comment",
@@ -121,7 +121,7 @@ archive/issue_comments_016025.json:
 }
 ```
 
-Attachment
+Attachment [2375-fix.patch](tarball://root/attachments/some-uuid/ticket2375/2375-fix.patch) by rlm created at 2008-03-03 21:36:52
 
 
 
@@ -148,7 +148,7 @@ apply after 2375-fix.patch
 archive/issue_comments_016027.json:
 ```json
 {
-    "body": "Attachment\n\nlooks good to me.",
+    "body": "Attachment [2375-fix2.patch](tarball://root/attachments/some-uuid/ticket2375/2375-fix2.patch) by jason created at 2008-03-03 23:02:42\n\nlooks good to me.",
     "created_at": "2008-03-03T23:02:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2375",
     "type": "issue_comment",
@@ -157,7 +157,7 @@ archive/issue_comments_016027.json:
 }
 ```
 
-Attachment
+Attachment [2375-fix2.patch](tarball://root/attachments/some-uuid/ticket2375/2375-fix2.patch) by jason created at 2008-03-03 23:02:42
 
 looks good to me.
 

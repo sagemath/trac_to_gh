@@ -87,7 +87,7 @@ Applies to 4.4.4
 archive/issue_comments_089059.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch moves the two functions height_pairing_matrix and regulator_of_points, and adds doctests over number fields.",
+    "body": "Attachment [trac_9372-regulator.patch](tarball://root/attachments/some-uuid/ticket9372/trac_9372-regulator.patch) by cremona created at 2010-06-29 05:56:28\n\nThe patch moves the two functions height_pairing_matrix and regulator_of_points, and adds doctests over number fields.",
     "created_at": "2010-06-29T05:56:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9372",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_089059.json:
 }
 ```
 
-Attachment
+Attachment [trac_9372-regulator.patch](tarball://root/attachments/some-uuid/ticket9372/trac_9372-regulator.patch) by cremona created at 2010-06-29 05:56:28
 
 The patch moves the two functions height_pairing_matrix and regulator_of_points, and adds doctests over number fields.
 
@@ -285,7 +285,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_089067.json:
 ```json
 {
-    "body": "Attachment\n\nIf the only problem was that the doctest called E.gens(), this fixes those doctests and you can give this a positive review.",
+    "body": "Attachment [trac_9372-regulator.2.patch](tarball://root/attachments/some-uuid/ticket9372/trac_9372-regulator.2.patch) by aly.deines created at 2010-06-30 03:35:34\n\nIf the only problem was that the doctest called E.gens(), this fixes those doctests and you can give this a positive review.",
     "created_at": "2010-06-30T03:35:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9372",
     "type": "issue_comment",
@@ -294,7 +294,7 @@ archive/issue_comments_089067.json:
 }
 ```
 
-Attachment
+Attachment [trac_9372-regulator.2.patch](tarball://root/attachments/some-uuid/ticket9372/trac_9372-regulator.2.patch) by aly.deines created at 2010-06-30 03:35:34
 
 If the only problem was that the doctest called E.gens(), this fixes those doctests and you can give this a positive review.
 

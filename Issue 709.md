@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/709
 archive/issue_comments_003723.json:
 ```json
 {
-    "body": "Attachment\n\nThe above patch adds a file that is doctested and tests importing modules from cvxopt and scipy that are known to have problems. This together with the fix for bug 700 should fix the cvxopt problem as well as detect future breakage which is good since cvxopt silently broke when we switched from gfortran to g95.",
+    "body": "Attachment [709_bugfix.hg](tarball://root/attachments/some-uuid/ticket709/709_bugfix.hg) by jkantor created at 2007-09-20 18:18:47\n\nThe above patch adds a file that is doctested and tests importing modules from cvxopt and scipy that are known to have problems. This together with the fix for bug 700 should fix the cvxopt problem as well as detect future breakage which is good since cvxopt silently broke when we switched from gfortran to g95.",
     "created_at": "2007-09-20T18:18:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/709",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_003723.json:
 }
 ```
 
-Attachment
+Attachment [709_bugfix.hg](tarball://root/attachments/some-uuid/ticket709/709_bugfix.hg) by jkantor created at 2007-09-20 18:18:47
 
 The above patch adds a file that is doctested and tests importing modules from cvxopt and scipy that are known to have problems. This together with the fix for bug 700 should fix the cvxopt problem as well as detect future breakage which is good since cvxopt silently broke when we switched from gfortran to g95.
 

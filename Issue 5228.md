@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5228
 archive/issue_comments_040073.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5228-composite-fields.patch](tarball://root/attachments/some-uuid/ticket5228/trac_5228-composite-fields.patch) by ncalexan created at 2009-02-10 18:26:29",
     "created_at": "2009-02-10T18:26:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5228",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_040073.json:
 }
 ```
 
-Attachment
+Attachment [trac_5228-composite-fields.patch](tarball://root/attachments/some-uuid/ticket5228/trac_5228-composite-fields.patch) by ncalexan created at 2009-02-10 18:26:29
 
 
 
@@ -55,7 +55,7 @@ Attachment
 archive/issue_comments_040074.json:
 ```json
 {
-    "body": "Attachment\n\nApply `trac_5228-composite-fields.patch` and then `trac_5228-composite-fields-embeddings.patch`",
+    "body": "Attachment [trac_5228-composite-fields-embeddings.patch](tarball://root/attachments/some-uuid/ticket5228/trac_5228-composite-fields-embeddings.patch) by ncalexan created at 2009-02-10 18:28:56\n\nApply `trac_5228-composite-fields.patch` and then `trac_5228-composite-fields-embeddings.patch`",
     "created_at": "2009-02-10T18:28:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5228",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_040074.json:
 }
 ```
 
-Attachment
+Attachment [trac_5228-composite-fields-embeddings.patch](tarball://root/attachments/some-uuid/ticket5228/trac_5228-composite-fields-embeddings.patch) by ncalexan created at 2009-02-10 18:28:56
 
 Apply `trac_5228-composite-fields.patch` and then `trac_5228-composite-fields-embeddings.patch`
 

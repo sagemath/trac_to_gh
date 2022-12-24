@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4150
 archive/issue_comments_030130.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4150-switchover-graphs.patch](tarball://root/attachments/some-uuid/ticket4150/trac_4150-switchover-graphs.patch) by rlm created at 2008-09-19 07:43:20",
     "created_at": "2008-09-19T07:43:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4150",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_030130.json:
 }
 ```
 
-Attachment
+Attachment [trac_4150-switchover-graphs.patch](tarball://root/attachments/some-uuid/ticket4150/trac_4150-switchover-graphs.patch) by rlm created at 2008-09-19 07:43:20
 
 
 
@@ -145,7 +145,7 @@ Michael
 archive/issue_comments_030136.json:
 ```json
 {
-    "body": "Attachment\n\nPatch fixed.",
+    "body": "Attachment [trac_4150-fixes.patch](tarball://root/attachments/some-uuid/ticket4150/trac_4150-fixes.patch) by rlm created at 2008-09-19 14:54:01\n\nPatch fixed.",
     "created_at": "2008-09-19T14:54:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4150",
     "type": "issue_comment",
@@ -154,7 +154,7 @@ archive/issue_comments_030136.json:
 }
 ```
 
-Attachment
+Attachment [trac_4150-fixes.patch](tarball://root/attachments/some-uuid/ticket4150/trac_4150-fixes.patch) by rlm created at 2008-09-19 14:54:01
 
 Patch fixed.
 

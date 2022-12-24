@@ -139,7 +139,7 @@ sage-combinat/ directory.
 archive/issue_comments_075227.json:
 ```json
 {
-    "body": "Attachment\n\nThanks Nicolas, it is done !",
+    "body": "Attachment [trac_8396_subsets_element_class_fix-sg.patch](tarball://root/attachments/some-uuid/ticket8396/trac_8396_subsets_element_class_fix-sg.patch) by giraudo created at 2010-02-28 21:40:14\n\nThanks Nicolas, it is done !",
     "created_at": "2010-02-28T21:40:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8396",
     "type": "issue_comment",
@@ -148,7 +148,7 @@ archive/issue_comments_075227.json:
 }
 ```
 
-Attachment
+Attachment [trac_8396_subsets_element_class_fix-sg.patch](tarball://root/attachments/some-uuid/ticket8396/trac_8396_subsets_element_class_fix-sg.patch) by giraudo created at 2010-02-28 21:40:14
 
 Thanks Nicolas, it is done !
 

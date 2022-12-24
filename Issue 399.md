@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/399
 archive/issue_comments_001962.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [phc.py](tarball://root/attachments/some-uuid/ticket399/phc.py) by mhampton created at 2007-07-03 16:57:38",
     "created_at": "2007-07-03T16:57:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/399",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_001962.json:
 }
 ```
 
-Attachment
+Attachment [phc.py](tarball://root/attachments/some-uuid/ticket399/phc.py) by mhampton created at 2007-07-03 16:57:38
 
 
 
@@ -51,7 +51,7 @@ Attachment
 archive/issue_comments_001963.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [phc.patch](tarball://root/attachments/some-uuid/ticket399/phc.patch) by mabshoff created at 2007-08-24 12:59:08",
     "created_at": "2007-08-24T12:59:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/399",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_001963.json:
 }
 ```
 
-Attachment
+Attachment [phc.patch](tarball://root/attachments/some-uuid/ticket399/phc.patch) by mabshoff created at 2007-08-24 12:59:08
 
 
 

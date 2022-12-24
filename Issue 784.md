@@ -54,7 +54,7 @@ implementation
 archive/issue_comments_004707.json:
 ```json
 {
-    "body": "Attachment\n\nimplementation",
+    "body": "Attachment [fix.patch](tarball://root/attachments/some-uuid/ticket784/fix.patch) by nbruin created at 2007-10-02 13:40:47\n\nimplementation",
     "created_at": "2007-10-02T13:40:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/784",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_004707.json:
 }
 ```
 
-Attachment
+Attachment [fix.patch](tarball://root/attachments/some-uuid/ticket784/fix.patch) by nbruin created at 2007-10-02 13:40:47
 
 implementation
 

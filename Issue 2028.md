@@ -117,7 +117,7 @@ Changing assignee from was to mhansen.
 archive/issue_comments_013120.json:
 ```json
 {
-    "body": "Attachment\n\nthis replaces 2028.patch; it's rebased against 2.10.1.rc4 since 2028.patch fails to apply.",
+    "body": "Attachment [trac-2028-part1.patch](tarball://root/attachments/some-uuid/ticket2028/trac-2028-part1.patch) by was created at 2008-02-02 09:45:02\n\nthis replaces 2028.patch; it's rebased against 2.10.1.rc4 since 2028.patch fails to apply.",
     "created_at": "2008-02-02T09:45:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2028",
     "type": "issue_comment",
@@ -126,7 +126,7 @@ archive/issue_comments_013120.json:
 }
 ```
 
-Attachment
+Attachment [trac-2028-part1.patch](tarball://root/attachments/some-uuid/ticket2028/trac-2028-part1.patch) by was created at 2008-02-02 09:45:02
 
 this replaces 2028.patch; it's rebased against 2.10.1.rc4 since 2028.patch fails to apply.
 
@@ -178,7 +178,7 @@ sage: matrix(SR, 5, [1..5^2]).fcp()
 archive/issue_comments_013122.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2028.2.patch](tarball://root/attachments/some-uuid/ticket2028/2028.2.patch) by mhansen created at 2008-02-03 04:15:45",
     "created_at": "2008-02-03T04:15:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2028",
     "type": "issue_comment",
@@ -187,7 +187,7 @@ archive/issue_comments_013122.json:
 }
 ```
 
-Attachment
+Attachment [2028.2.patch](tarball://root/attachments/some-uuid/ticket2028/2028.2.patch) by mhansen created at 2008-02-03 04:15:45
 
 
 

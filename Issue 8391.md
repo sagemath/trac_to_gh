@@ -215,7 +215,7 @@ Mercurial patch
 archive/issue_comments_075141.json:
 ```json
 {
-    "body": "Attachment\n\nI'm removing the 'temporary and ugly fix' from the title, as this actually works quite well now.",
+    "body": "Attachment [top-to-prstat.patch](tarball://root/attachments/some-uuid/ticket8391/top-to-prstat.patch) by drkirkby created at 2010-02-28 12:42:57\n\nI'm removing the 'temporary and ugly fix' from the title, as this actually works quite well now.",
     "created_at": "2010-02-28T12:42:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8391",
     "type": "issue_comment",
@@ -224,7 +224,7 @@ archive/issue_comments_075141.json:
 }
 ```
 
-Attachment
+Attachment [top-to-prstat.patch](tarball://root/attachments/some-uuid/ticket8391/top-to-prstat.patch) by drkirkby created at 2010-02-28 12:42:57
 
 I'm removing the 'temporary and ugly fix' from the title, as this actually works quite well now.
 
@@ -253,7 +253,7 @@ Changing status from new to needs_review.
 archive/issue_comments_075143.json:
 ```json
 {
-    "body": "Attachment\n\nUse `prstat` instead of `top` on (Open)Solaris.  Docstring tweaks.",
+    "body": "Attachment [trac_8391-prstat_solaris.patch](tarball://root/attachments/some-uuid/ticket8391/trac_8391-prstat_solaris.patch) by mpatel created at 2010-03-03 08:51:39\n\nUse `prstat` instead of `top` on (Open)Solaris.  Docstring tweaks.",
     "created_at": "2010-03-03T08:51:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8391",
     "type": "issue_comment",
@@ -262,7 +262,7 @@ archive/issue_comments_075143.json:
 }
 ```
 
-Attachment
+Attachment [trac_8391-prstat_solaris.patch](tarball://root/attachments/some-uuid/ticket8391/trac_8391-prstat_solaris.patch) by mpatel created at 2010-03-03 08:51:39
 
 Use `prstat` instead of `top` on (Open)Solaris.  Docstring tweaks.
 
@@ -293,7 +293,7 @@ Just to double check: Is the multiplier / divisor definitely not 1024?
 archive/issue_comments_075145.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated with multipy/divide=1024. I could not overwrite the original",
+    "body": "Attachment [trac_8391-prstat_solaris-multiply-divide=1024.patch](tarball://root/attachments/some-uuid/ticket8391/trac_8391-prstat_solaris-multiply-divide=1024.patch) by drkirkby created at 2010-03-03 11:35:58\n\nUpdated with multipy/divide=1024. I could not overwrite the original",
     "created_at": "2010-03-03T11:35:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8391",
     "type": "issue_comment",
@@ -302,7 +302,7 @@ archive/issue_comments_075145.json:
 }
 ```
 
-Attachment
+Attachment [trac_8391-prstat_solaris-multiply-divide=1024.patch](tarball://root/attachments/some-uuid/ticket8391/trac_8391-prstat_solaris-multiply-divide=1024.patch) by drkirkby created at 2010-03-03 11:35:58
 
 Updated with multipy/divide=1024. I could not overwrite the original
 

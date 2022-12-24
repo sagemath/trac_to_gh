@@ -400,7 +400,7 @@ Gives error message on spaces in $SAGE_ROOT. (Draft, but functional. Slightly mo
 archive/issue_comments_093486.json:
 ```json
 {
-    "body": "Attachment\n\nWe could require people who update/provide new spkgs to at least check if the upstream supports spaces in path names (I really doubt all will), and to harden the corresponding Sage scripts in that way. But I expect this to be a long lasting process, rather than a goal for any release in the nearer future.\n\nAnd I have absolutely no idea which \"inner\" parts of Sage (i.e. Python code) might break on spaces in file or path names.\n\nOf course users that only download and install binaries should somehow get informed, too, e.g. directly on the download page.",
+    "body": "Attachment [trac_9644-first_aid_for_spaces_in_SAGE_ROOT-scripts_repo.patch](tarball://root/attachments/some-uuid/ticket9644/trac_9644-first_aid_for_spaces_in_SAGE_ROOT-scripts_repo.patch) by leif created at 2010-07-30 14:36:07\n\nWe could require people who update/provide new spkgs to at least check if the upstream supports spaces in path names (I really doubt all will), and to harden the corresponding Sage scripts in that way. But I expect this to be a long lasting process, rather than a goal for any release in the nearer future.\n\nAnd I have absolutely no idea which \"inner\" parts of Sage (i.e. Python code) might break on spaces in file or path names.\n\nOf course users that only download and install binaries should somehow get informed, too, e.g. directly on the download page.",
     "created_at": "2010-07-30T14:36:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
@@ -409,7 +409,7 @@ archive/issue_comments_093486.json:
 }
 ```
 
-Attachment
+Attachment [trac_9644-first_aid_for_spaces_in_SAGE_ROOT-scripts_repo.patch](tarball://root/attachments/some-uuid/ticket9644/trac_9644-first_aid_for_spaces_in_SAGE_ROOT-scripts_repo.patch) by leif created at 2010-07-30 14:36:07
 
 We could require people who update/provide new spkgs to at least check if the upstream supports spaces in path names (I really doubt all will), and to harden the corresponding Sage scripts in that way. But I expect this to be a long lasting process, rather than a goal for any release in the nearer future.
 
@@ -996,7 +996,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_093512.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of other scripts patch",
+    "body": "Attachment [trac_9644-scripts-ref.patch](tarball://root/attachments/some-uuid/ticket9644/trac_9644-scripts-ref.patch) by jhpalmieri created at 2010-09-29 16:47:43\n\napply on top of other scripts patch",
     "created_at": "2010-09-29T16:47:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
@@ -1005,7 +1005,7 @@ archive/issue_comments_093512.json:
 }
 ```
 
-Attachment
+Attachment [trac_9644-scripts-ref.patch](tarball://root/attachments/some-uuid/ticket9644/trac_9644-scripts-ref.patch) by jhpalmieri created at 2010-09-29 16:47:43
 
 apply on top of other scripts patch
 

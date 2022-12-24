@@ -222,7 +222,7 @@ does.
 archive/issue_comments_005926.json:
 ```json
 {
-    "body": "Attachment\n\nThere's a new sympy spkg, generated according to the above instructions, at http://sage.math.washington.edu/home/cwitty/sympy-0.5.6.hg\n\nAlso, I've added a patch that does some minor doctesting of the new sympy.",
+    "body": "Attachment [971.patch](tarball://root/attachments/some-uuid/ticket971/971.patch) by cwitty created at 2007-11-01 01:23:17\n\nThere's a new sympy spkg, generated according to the above instructions, at http://sage.math.washington.edu/home/cwitty/sympy-0.5.6.hg\n\nAlso, I've added a patch that does some minor doctesting of the new sympy.",
     "created_at": "2007-11-01T01:23:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/971",
     "type": "issue_comment",
@@ -231,7 +231,7 @@ archive/issue_comments_005926.json:
 }
 ```
 
-Attachment
+Attachment [971.patch](tarball://root/attachments/some-uuid/ticket971/971.patch) by cwitty created at 2007-11-01 01:23:17
 
 There's a new sympy spkg, generated according to the above instructions, at http://sage.math.washington.edu/home/cwitty/sympy-0.5.6.hg
 

@@ -49,7 +49,7 @@ first usable version
 archive/issue_comments_057638.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6967-part1.patch](tarball://root/attachments/some-uuid/ticket6967/trac_6967-part1.patch) by was created at 2009-09-20 11:16:01",
     "created_at": "2009-09-20T11:16:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6967",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_057638.json:
 }
 ```
 
-Attachment
+Attachment [trac_6967-part1.patch](tarball://root/attachments/some-uuid/ticket6967/trac_6967-part1.patch) by was created at 2009-09-20 11:16:01
 
 
 
@@ -157,7 +157,7 @@ This also fixes a very serious bug in sage.interfaces.quit which will lead to zo
 archive/issue_comments_057644.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6967-part2.patch](tarball://root/attachments/some-uuid/ticket6967/trac_6967-part2.patch) by was created at 2010-01-18 12:30:34",
     "created_at": "2010-01-18T12:30:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6967",
     "type": "issue_comment",
@@ -166,7 +166,7 @@ archive/issue_comments_057644.json:
 }
 ```
 
-Attachment
+Attachment [trac_6967-part2.patch](tarball://root/attachments/some-uuid/ticket6967/trac_6967-part2.patch) by was created at 2010-01-18 12:30:34
 
 
 
@@ -175,7 +175,7 @@ Attachment
 archive/issue_comments_057645.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6967-part3.patch](tarball://root/attachments/some-uuid/ticket6967/trac_6967-part3.patch) by was created at 2010-01-18 13:51:42",
     "created_at": "2010-01-18T13:51:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6967",
     "type": "issue_comment",
@@ -184,7 +184,7 @@ archive/issue_comments_057645.json:
 }
 ```
 
-Attachment
+Attachment [trac_6967-part3.patch](tarball://root/attachments/some-uuid/ticket6967/trac_6967-part3.patch) by was created at 2010-01-18 13:51:42
 
 
 

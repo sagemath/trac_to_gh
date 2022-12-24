@@ -228,7 +228,7 @@ True
 archive/issue_comments_009187.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1425.patch](tarball://root/attachments/some-uuid/ticket1425/1425.patch) by mhansen created at 2007-12-14 06:45:36",
     "created_at": "2007-12-14T06:45:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1425",
     "type": "issue_comment",
@@ -237,7 +237,7 @@ archive/issue_comments_009187.json:
 }
 ```
 
-Attachment
+Attachment [1425.patch](tarball://root/attachments/some-uuid/ticket1425/1425.patch) by mhansen created at 2007-12-14 06:45:36
 
 
 
@@ -282,7 +282,7 @@ Oops, I forgot to commit sage/interfaces/r.py .  I've posted a patch with that c
 archive/issue_comments_009190.json:
 ```json
 {
-    "body": "Attachment\n\nI do *not* like 1425-2.patch.  We should *not* set complex domain for *all* maxima interfaces -- only for the one used by the calculus package.",
+    "body": "Attachment [1425-2.patch](tarball://root/attachments/some-uuid/ticket1425/1425-2.patch) by was created at 2007-12-15 10:48:55\n\nI do *not* like 1425-2.patch.  We should *not* set complex domain for *all* maxima interfaces -- only for the one used by the calculus package.",
     "created_at": "2007-12-15T10:48:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1425",
     "type": "issue_comment",
@@ -291,7 +291,7 @@ archive/issue_comments_009190.json:
 }
 ```
 
-Attachment
+Attachment [1425-2.patch](tarball://root/attachments/some-uuid/ticket1425/1425-2.patch) by was created at 2007-12-15 10:48:55
 
 I do *not* like 1425-2.patch.  We should *not* set complex domain for *all* maxima interfaces -- only for the one used by the calculus package.
 
@@ -302,7 +302,7 @@ I do *not* like 1425-2.patch.  We should *not* set complex domain for *all* maxi
 archive/issue_comments_009191.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-1425-referee.patch](tarball://root/attachments/some-uuid/ticket1425/trac-1425-referee.patch) by was created at 2007-12-15 13:41:16",
     "created_at": "2007-12-15T13:41:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1425",
     "type": "issue_comment",
@@ -311,7 +311,7 @@ archive/issue_comments_009191.json:
 }
 ```
 
-Attachment
+Attachment [trac-1425-referee.patch](tarball://root/attachments/some-uuid/ticket1425/trac-1425-referee.patch) by was created at 2007-12-15 13:41:16
 
 
 

@@ -150,7 +150,7 @@ Apply to the doc repository
 archive/issue_comments_010896.json:
 ```json
 {
-    "body": "Attachment\n\nBoy, that was easy.  Adding the appropriate package took care of at least this error for me on Ubuntu Hardy.",
+    "body": "Attachment [cyrillic-doc.patch](tarball://root/attachments/some-uuid/ticket1719/cyrillic-doc.patch) by jason created at 2008-08-13 14:56:20\n\nBoy, that was easy.  Adding the appropriate package took care of at least this error for me on Ubuntu Hardy.",
     "created_at": "2008-08-13T14:56:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1719",
     "type": "issue_comment",
@@ -159,7 +159,7 @@ archive/issue_comments_010896.json:
 }
 ```
 
-Attachment
+Attachment [cyrillic-doc.patch](tarball://root/attachments/some-uuid/ticket1719/cyrillic-doc.patch) by jason created at 2008-08-13 14:56:20
 
 Boy, that was easy.  Adding the appropriate package took care of at least this error for me on Ubuntu Hardy.
 

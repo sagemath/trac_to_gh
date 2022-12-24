@@ -52,7 +52,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3168
 archive/issue_comments_021954.json:
 ```json
 {
-    "body": "Attachment\n\nMinimal example",
+    "body": "Attachment [intro.tgz](tarball://root/attachments/some-uuid/ticket3168/intro.tgz) by dunfield created at 2008-05-12 19:34:46\n\nMinimal example",
     "created_at": "2008-05-12T19:34:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3168",
     "type": "issue_comment",
@@ -61,7 +61,7 @@ archive/issue_comments_021954.json:
 }
 ```
 
-Attachment
+Attachment [intro.tgz](tarball://root/attachments/some-uuid/ticket3168/intro.tgz) by dunfield created at 2008-05-12 19:34:46
 
 Minimal example
 
@@ -90,7 +90,7 @@ Minimal example
 archive/issue_comments_021956.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [intro.2.tgz](tarball://root/attachments/some-uuid/ticket3168/intro.2.tgz) by dunfield created at 2008-05-12 19:36:49",
     "created_at": "2008-05-12T19:36:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3168",
     "type": "issue_comment",
@@ -99,7 +99,7 @@ archive/issue_comments_021956.json:
 }
 ```
 
-Attachment
+Attachment [intro.2.tgz](tarball://root/attachments/some-uuid/ticket3168/intro.2.tgz) by dunfield created at 2008-05-12 19:36:49
 
 
 

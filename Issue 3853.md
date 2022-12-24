@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3853
 archive/issue_comments_027424.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3853.patch](tarball://root/attachments/some-uuid/ticket3853/trac_3853.patch) by mhansen created at 2008-08-14 17:56:50",
     "created_at": "2008-08-14T17:56:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3853",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_027424.json:
 }
 ```
 
-Attachment
+Attachment [trac_3853.patch](tarball://root/attachments/some-uuid/ticket3853/trac_3853.patch) by mhansen created at 2008-08-14 17:56:50
 
 
 
@@ -141,7 +141,7 @@ apply instead of trac_3853.patch
 archive/issue_comments_027430.json:
 ```json
 {
-    "body": "Attachment\n\nExtra things this patch does:\n\n`line([(0,0,0),(1,1,1)])` no longer produces a 3d line, but a 2d line from the first 2 coordinates.  Use line3d to get a 3d line.\n\n`line(object)` no longer tries object.plot() first, which is a very, very good thing, since it is natural to assume that line(object) will be something like a line, but object.plot() could be *anything*.\n\n`line` no longer has a \"coerce\" argument; all input data is always coerced to float.  I've changed this to use numpy to convert to float; currently, that's a bit faster, from some tests that wstein ran.  As wstein mentioned on IRC, we should try to replace the float conversion with a snippet of Cython.\n\n`text` used to make 3d text when a 3d point was passed; now it only makes 2d text.  Use the text3d for 3d text.",
+    "body": "Attachment [trac_3853-rebased-3.1.1-trac_3880.patch](tarball://root/attachments/some-uuid/ticket3853/trac_3853-rebased-3.1.1-trac_3880.patch) by jason created at 2008-08-19 16:48:13\n\nExtra things this patch does:\n\n`line([(0,0,0),(1,1,1)])` no longer produces a 3d line, but a 2d line from the first 2 coordinates.  Use line3d to get a 3d line.\n\n`line(object)` no longer tries object.plot() first, which is a very, very good thing, since it is natural to assume that line(object) will be something like a line, but object.plot() could be *anything*.\n\n`line` no longer has a \"coerce\" argument; all input data is always coerced to float.  I've changed this to use numpy to convert to float; currently, that's a bit faster, from some tests that wstein ran.  As wstein mentioned on IRC, we should try to replace the float conversion with a snippet of Cython.\n\n`text` used to make 3d text when a 3d point was passed; now it only makes 2d text.  Use the text3d for 3d text.",
     "created_at": "2008-08-19T16:48:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3853",
     "type": "issue_comment",
@@ -150,7 +150,7 @@ archive/issue_comments_027430.json:
 }
 ```
 
-Attachment
+Attachment [trac_3853-rebased-3.1.1-trac_3880.patch](tarball://root/attachments/some-uuid/ticket3853/trac_3853-rebased-3.1.1-trac_3880.patch) by jason created at 2008-08-19 16:48:13
 
 Extra things this patch does:
 
@@ -295,7 +295,7 @@ there are still some doctest errors from the referee patch
 archive/issue_comments_027438.json:
 ```json
 {
-    "body": "Attachment\n\nupdated referee patch to fix some more things.",
+    "body": "Attachment [trac_3880-referee.patch](tarball://root/attachments/some-uuid/ticket3853/trac_3880-referee.patch) by jason created at 2008-08-21 21:59:02\n\nupdated referee patch to fix some more things.",
     "created_at": "2008-08-21T21:59:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3853",
     "type": "issue_comment",
@@ -304,7 +304,7 @@ archive/issue_comments_027438.json:
 }
 ```
 
-Attachment
+Attachment [trac_3880-referee.patch](tarball://root/attachments/some-uuid/ticket3853/trac_3880-referee.patch) by jason created at 2008-08-21 21:59:02
 
 updated referee patch to fix some more things.
 
@@ -403,7 +403,7 @@ I suspect I may be overstepping my bounds by changing this from positive review 
 archive/issue_comments_027443.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3853-fixes.2.patch](tarball://root/attachments/some-uuid/ticket3853/trac_3853-fixes.2.patch) by mhansen created at 2008-08-26 03:01:21",
     "created_at": "2008-08-26T03:01:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3853",
     "type": "issue_comment",
@@ -412,7 +412,7 @@ archive/issue_comments_027443.json:
 }
 ```
 
-Attachment
+Attachment [trac_3853-fixes.2.patch](tarball://root/attachments/some-uuid/ticket3853/trac_3853-fixes.2.patch) by mhansen created at 2008-08-26 03:01:21
 
 
 

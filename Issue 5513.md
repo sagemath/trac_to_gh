@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5513
 archive/issue_comments_042821.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [units.patch](tarball://root/attachments/some-uuid/ticket5513/units.patch) by cremona created at 2009-03-14 20:36:22",
     "created_at": "2009-03-14T20:36:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5513",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_042821.json:
 }
 ```
 
-Attachment
+Attachment [units.patch](tarball://root/attachments/some-uuid/ticket5513/units.patch) by cremona created at 2009-03-14 20:36:22
 
 
 
@@ -194,7 +194,7 @@ REPLACES the earlier patch
 archive/issue_comments_042825.json:
 ```json
 {
-    "body": "Attachment\n\nApply after the earlier patch",
+    "body": "Attachment [trac_5513.patch](tarball://root/attachments/some-uuid/ticket5513/trac_5513.patch) by cremona created at 2009-03-16 15:36:08\n\nApply after the earlier patch",
     "created_at": "2009-03-16T15:36:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5513",
     "type": "issue_comment",
@@ -203,7 +203,7 @@ archive/issue_comments_042825.json:
 }
 ```
 
-Attachment
+Attachment [trac_5513.patch](tarball://root/attachments/some-uuid/ticket5513/trac_5513.patch) by cremona created at 2009-03-16 15:36:08
 
 Apply after the earlier patch
 
@@ -214,7 +214,7 @@ Apply after the earlier patch
 archive/issue_comments_042826.json:
 ```json
 {
-    "body": "Attachment\n\nI have fixed all the issues raised in the review in the new patch trac_5513.patch.  I added a doctest in unit_group.py to show that the relative example now works.  I tested all in sage/rings/number_field.\n\nApologies for the confusion:  I thought that my new patch (called trac_5513.patch) replaced the origianl one because I was using mercurial queues, but (as usual) I was wrong.  You need to apply the original units.patch and then the new one (trac_5513.patch) which appear twice on trac, once with the worng message and once with the right one.  I hope that is clear.",
+    "body": "Attachment [trac_5513.2.patch](tarball://root/attachments/some-uuid/ticket5513/trac_5513.2.patch) by cremona created at 2009-03-16 15:38:29\n\nI have fixed all the issues raised in the review in the new patch trac_5513.patch.  I added a doctest in unit_group.py to show that the relative example now works.  I tested all in sage/rings/number_field.\n\nApologies for the confusion:  I thought that my new patch (called trac_5513.patch) replaced the origianl one because I was using mercurial queues, but (as usual) I was wrong.  You need to apply the original units.patch and then the new one (trac_5513.patch) which appear twice on trac, once with the worng message and once with the right one.  I hope that is clear.",
     "created_at": "2009-03-16T15:38:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5513",
     "type": "issue_comment",
@@ -223,7 +223,7 @@ archive/issue_comments_042826.json:
 }
 ```
 
-Attachment
+Attachment [trac_5513.2.patch](tarball://root/attachments/some-uuid/ticket5513/trac_5513.2.patch) by cremona created at 2009-03-16 15:38:29
 
 I have fixed all the issues raised in the review in the new patch trac_5513.patch.  I added a doctest in unit_group.py to show that the relative example now works.  I tested all in sage/rings/number_field.
 
@@ -277,7 +277,7 @@ apply after the other two
 archive/issue_comments_042829.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:5 fwclarke]:\n> A couple more things: \n>    * two more replacements of `defining_polynomial` by `absolute_polynomial` are needed.\n> \n>    * units can have norm -1.\n> \n> With the third patch everything works.\n\nThanks a lot -- for what it's worth, I am (more than) happy with the third patch, also a little red-faced about the norms!",
+    "body": "Attachment [trac_5513_third.patch](tarball://root/attachments/some-uuid/ticket5513/trac_5513_third.patch) by cremona created at 2009-03-16 20:36:08\n\nReplying to [comment:5 fwclarke]:\n> A couple more things: \n>    * two more replacements of `defining_polynomial` by `absolute_polynomial` are needed.\n> \n>    * units can have norm -1.\n> \n> With the third patch everything works.\n\nThanks a lot -- for what it's worth, I am (more than) happy with the third patch, also a little red-faced about the norms!",
     "created_at": "2009-03-16T20:36:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5513",
     "type": "issue_comment",
@@ -286,7 +286,7 @@ archive/issue_comments_042829.json:
 }
 ```
 
-Attachment
+Attachment [trac_5513_third.patch](tarball://root/attachments/some-uuid/ticket5513/trac_5513_third.patch) by cremona created at 2009-03-16 20:36:08
 
 Replying to [comment:5 fwclarke]:
 > A couple more things: 
@@ -398,7 +398,7 @@ Replaces all above, reabsed to 3.4 + sage-5508.3.patch
 archive/issue_comments_042834.json:
 ```json
 {
-    "body": "Attachment\n\nI have attached a single patch which replaces all previous ones and is rebased on 3.4 + sage-5508.3.patch, as requested.",
+    "body": "Attachment [units_rebase.patch](tarball://root/attachments/some-uuid/ticket5513/units_rebase.patch) by cremona created at 2009-03-28 16:33:29\n\nI have attached a single patch which replaces all previous ones and is rebased on 3.4 + sage-5508.3.patch, as requested.",
     "created_at": "2009-03-28T16:33:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5513",
     "type": "issue_comment",
@@ -407,7 +407,7 @@ archive/issue_comments_042834.json:
 }
 ```
 
-Attachment
+Attachment [units_rebase.patch](tarball://root/attachments/some-uuid/ticket5513/units_rebase.patch) by cremona created at 2009-03-28 16:33:29
 
 I have attached a single patch which replaces all previous ones and is rebased on 3.4 + sage-5508.3.patch, as requested.
 
@@ -454,7 +454,7 @@ Alternaitve, rebased to 3.4 + #550 + #5159
 archive/issue_comments_042837.json:
 ```json
 {
-    "body": "Attachment\n\nThanks, Francis.   For ease of merging I have also provided another rebased patch which applies to 3.4 + sage-5508.3.patch + the patches at #5159 since I hope/expect that one to be merged shortly and now the whole lot are compatible.",
+    "body": "Attachment [units_rebased2.patch](tarball://root/attachments/some-uuid/ticket5513/units_rebased2.patch) by cremona created at 2009-03-30 09:05:43\n\nThanks, Francis.   For ease of merging I have also provided another rebased patch which applies to 3.4 + sage-5508.3.patch + the patches at #5159 since I hope/expect that one to be merged shortly and now the whole lot are compatible.",
     "created_at": "2009-03-30T09:05:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5513",
     "type": "issue_comment",
@@ -463,7 +463,7 @@ archive/issue_comments_042837.json:
 }
 ```
 
-Attachment
+Attachment [units_rebased2.patch](tarball://root/attachments/some-uuid/ticket5513/units_rebased2.patch) by cremona created at 2009-03-30 09:05:43
 
 Thanks, Francis.   For ease of merging I have also provided another rebased patch which applies to 3.4 + sage-5508.3.patch + the patches at #5159 since I hope/expect that one to be merged shortly and now the whole lot are compatible.
 
@@ -772,7 +772,7 @@ replace previous
 archive/issue_comments_042848.json:
 ```json
 {
-    "body": "Attachment\n\nok -- see newest patch (units_rebased3.patch, to replace units_rebased2.patch).\n\nI took the lazy way out and added #random to all the outputs which return actual units.  It may be a 32/64 issue, but not just that since when testing this patch on one machine I kept on getting different generating units out of pari.  I seem to remember that there is a way to \"reset\" pari in doctests  to avoid this random-ness.\n\nMathematically this is not so unreasonable since any f.g. abelian group will lots (infinitely many) sets of generators and there is no way to pick one canonically.  (William and I thought about this for elliptic curve generators and came up against an unsolved problem which prevents this being possible even in principle!).",
+    "body": "Attachment [units_rebased3.patch](tarball://root/attachments/some-uuid/ticket5513/units_rebased3.patch) by cremona created at 2009-03-31 10:04:26\n\nok -- see newest patch (units_rebased3.patch, to replace units_rebased2.patch).\n\nI took the lazy way out and added #random to all the outputs which return actual units.  It may be a 32/64 issue, but not just that since when testing this patch on one machine I kept on getting different generating units out of pari.  I seem to remember that there is a way to \"reset\" pari in doctests  to avoid this random-ness.\n\nMathematically this is not so unreasonable since any f.g. abelian group will lots (infinitely many) sets of generators and there is no way to pick one canonically.  (William and I thought about this for elliptic curve generators and came up against an unsolved problem which prevents this being possible even in principle!).",
     "created_at": "2009-03-31T10:04:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5513",
     "type": "issue_comment",
@@ -781,7 +781,7 @@ archive/issue_comments_042848.json:
 }
 ```
 
-Attachment
+Attachment [units_rebased3.patch](tarball://root/attachments/some-uuid/ticket5513/units_rebased3.patch) by cremona created at 2009-03-31 10:04:26
 
 ok -- see newest patch (units_rebased3.patch, to replace units_rebased2.patch).
 

@@ -49,7 +49,7 @@ See comment.
 archive/issue_comments_044078.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch seems to work in Firefox 3 without breaking other functions.  I'm not sure about the purpose of\n\n```\n            if(browser_op) { focus_delay(id,true); }\n```\n\nAlthough I haven't copied this to the new conditional clause, the patch works in Opera 9, too.\n\nBy the way, I think the `halt_introspection();` statement just before the new code is unnecessary, since `handle_replacement_controls()` calls it before returning `true`.  But the patch leaves this alone.",
+    "body": "Attachment [trac_5644_esc_kills_introspect.patch](tarball://root/attachments/some-uuid/ticket5644/trac_5644_esc_kills_introspect.patch) by mpatel created at 2009-04-18 09:17:56\n\nThe attached patch seems to work in Firefox 3 without breaking other functions.  I'm not sure about the purpose of\n\n```\n            if(browser_op) { focus_delay(id,true); }\n```\n\nAlthough I haven't copied this to the new conditional clause, the patch works in Opera 9, too.\n\nBy the way, I think the `halt_introspection();` statement just before the new code is unnecessary, since `handle_replacement_controls()` calls it before returning `true`.  But the patch leaves this alone.",
     "created_at": "2009-04-18T09:17:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5644",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_044078.json:
 }
 ```
 
-Attachment
+Attachment [trac_5644_esc_kills_introspect.patch](tarball://root/attachments/some-uuid/ticket5644/trac_5644_esc_kills_introspect.patch) by mpatel created at 2009-04-18 09:17:56
 
 The attached patch seems to work in Firefox 3 without breaking other functions.  I'm not sure about the purpose of
 

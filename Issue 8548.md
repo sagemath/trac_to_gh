@@ -67,7 +67,7 @@ Resolution: fixed
 archive/issue_comments_077296.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8548_error_msg_permutation-sg.patch](tarball://root/attachments/some-uuid/ticket8548/trac_8548_error_msg_permutation-sg.patch) by giraudo created at 2010-03-16 16:37:33",
     "created_at": "2010-03-16T16:37:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8548",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_077296.json:
 }
 ```
 
-Attachment
+Attachment [trac_8548_error_msg_permutation-sg.patch](tarball://root/attachments/some-uuid/ticket8548/trac_8548_error_msg_permutation-sg.patch) by giraudo created at 2010-03-16 16:37:33
 
 
 

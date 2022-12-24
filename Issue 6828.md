@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6828
 archive/issue_comments_056315.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [random_bipartite.patch](tarball://root/attachments/some-uuid/ticket6828/random_bipartite.patch) by ncohen created at 2009-08-26 13:36:29",
     "created_at": "2009-08-26T13:36:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6828",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_056315.json:
 }
 ```
 
-Attachment
+Attachment [random_bipartite.patch](tarball://root/attachments/some-uuid/ticket6828/random_bipartite.patch) by ncohen created at 2009-08-26 13:36:29
 
 
 
@@ -168,7 +168,7 @@ Nathann
 archive/issue_comments_056320.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6828.patch](tarball://root/attachments/some-uuid/ticket6828/trac_6828.patch) by ncohen created at 2009-09-29 09:51:26",
     "created_at": "2009-09-29T09:51:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6828",
     "type": "issue_comment",
@@ -177,7 +177,7 @@ archive/issue_comments_056320.json:
 }
 ```
 
-Attachment
+Attachment [trac_6828.patch](tarball://root/attachments/some-uuid/ticket6828/trac_6828.patch) by ncohen created at 2009-09-29 09:51:26
 
 
 

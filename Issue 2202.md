@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2202
 archive/issue_comments_014493.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [dietz-makefile.patch](tarball://root/attachments/some-uuid/ticket2202/dietz-makefile.patch) by tabbott created at 2008-02-18 02:05:37",
     "created_at": "2008-02-18T02:05:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2202",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_014493.json:
 }
 ```
 
-Attachment
+Attachment [dietz-makefile.patch](tarball://root/attachments/some-uuid/ticket2202/dietz-makefile.patch) by tabbott created at 2008-02-18 02:05:37
 
 
 
@@ -55,7 +55,7 @@ Attachment
 archive/issue_comments_014494.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [dik-makefile.patch](tarball://root/attachments/some-uuid/ticket2202/dik-makefile.patch) by tabbott created at 2008-02-18 02:05:43",
     "created_at": "2008-02-18T02:05:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2202",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_014494.json:
 }
 ```
 
-Attachment
+Attachment [dik-makefile.patch](tarball://root/attachments/some-uuid/ticket2202/dik-makefile.patch) by tabbott created at 2008-02-18 02:05:43
 
 
 
@@ -73,7 +73,7 @@ Attachment
 archive/issue_comments_014495.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [reid-makefile.patch](tarball://root/attachments/some-uuid/ticket2202/reid-makefile.patch) by tabbott created at 2008-02-18 02:05:52",
     "created_at": "2008-02-18T02:05:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2202",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_014495.json:
 }
 ```
 
-Attachment
+Attachment [reid-makefile.patch](tarball://root/attachments/some-uuid/ticket2202/reid-makefile.patch) by tabbott created at 2008-02-18 02:05:52
 
 
 

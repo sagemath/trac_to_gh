@@ -165,7 +165,7 @@ Changing assignee from malb to was.
 archive/issue_comments_010289.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-1617.patch](tarball://root/attachments/some-uuid/ticket1617/trac-1617.patch) by was created at 2008-01-16 16:58:31",
     "created_at": "2008-01-16T16:58:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1617",
     "type": "issue_comment",
@@ -174,7 +174,7 @@ archive/issue_comments_010289.json:
 }
 ```
 
-Attachment
+Attachment [trac-1617.patch](tarball://root/attachments/some-uuid/ticket1617/trac-1617.patch) by was created at 2008-01-16 16:58:31
 
 
 

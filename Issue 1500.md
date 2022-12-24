@@ -96,7 +96,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1500
 archive/issue_comments_009620.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-1500.patch](tarball://root/attachments/some-uuid/ticket1500/trac-1500.patch) by was created at 2007-12-14 00:38:24",
     "created_at": "2007-12-14T00:38:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1500",
     "type": "issue_comment",
@@ -105,7 +105,7 @@ archive/issue_comments_009620.json:
 }
 ```
 
-Attachment
+Attachment [trac-1500.patch](tarball://root/attachments/some-uuid/ticket1500/trac-1500.patch) by was created at 2007-12-14 00:38:24
 
 
 

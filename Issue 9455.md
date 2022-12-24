@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9455
 archive/issue_comments_090599.json:
 ```json
 {
-    "body": "Attachment\n\nCode to implement dimensions of Atkin-Lehner eigenspaces for the ModularForms class",
+    "body": "Attachment [atkin_lehner_decomposition_dimensions.sage](tarball://root/attachments/some-uuid/ticket9455/atkin_lehner_decomposition_dimensions.sage) by ljpk created at 2010-07-09 19:08:16\n\nCode to implement dimensions of Atkin-Lehner eigenspaces for the ModularForms class",
     "created_at": "2010-07-09T19:08:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9455",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_090599.json:
 }
 ```
 
-Attachment
+Attachment [atkin_lehner_decomposition_dimensions.sage](tarball://root/attachments/some-uuid/ticket9455/atkin_lehner_decomposition_dimensions.sage) by ljpk created at 2010-07-09 19:08:16
 
 Code to implement dimensions of Atkin-Lehner eigenspaces for the ModularForms class
 
@@ -95,7 +95,7 @@ Changing assignee from ljpk to craigcitro.
 archive/issue_comments_090602.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9455_atkin_lehner_dim.patch](tarball://root/attachments/some-uuid/ticket9455/trac_9455_atkin_lehner_dim.patch) by chapoton created at 2013-08-08 19:56:19",
     "created_at": "2013-08-08T19:56:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9455",
     "type": "issue_comment",
@@ -104,7 +104,7 @@ archive/issue_comments_090602.json:
 }
 ```
 
-Attachment
+Attachment [trac_9455_atkin_lehner_dim.patch](tarball://root/attachments/some-uuid/ticket9455/trac_9455_atkin_lehner_dim.patch) by chapoton created at 2013-08-08 19:56:19
 
 
 

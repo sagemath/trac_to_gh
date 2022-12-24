@@ -253,7 +253,7 @@ Michael
 archive/issue_comments_014981.json:
 ```json
 {
-    "body": "Attachment\n\napply to the extcode repo",
+    "body": "Attachment [trac_2262_extcode.patch](tarball://root/attachments/some-uuid/ticket2262/trac_2262_extcode.patch) by mabshoff created at 2008-03-19 09:13:17\n\napply to the extcode repo",
     "created_at": "2008-03-19T09:13:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2262",
     "type": "issue_comment",
@@ -262,7 +262,7 @@ archive/issue_comments_014981.json:
 }
 ```
 
-Attachment
+Attachment [trac_2262_extcode.patch](tarball://root/attachments/some-uuid/ticket2262/trac_2262_extcode.patch) by mabshoff created at 2008-03-19 09:13:17
 
 apply to the extcode repo
 
@@ -291,7 +291,7 @@ apply to the sage repo - removes debian files
 archive/issue_comments_014983.json:
 ```json
 {
-    "body": "Attachment\n\napply to the sage repo - removes debian files from setup.py",
+    "body": "Attachment [trac_2262_sage-removal.patch](tarball://root/attachments/some-uuid/ticket2262/trac_2262_sage-removal.patch) by mabshoff created at 2008-03-19 09:14:17\n\napply to the sage repo - removes debian files from setup.py",
     "created_at": "2008-03-19T09:14:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2262",
     "type": "issue_comment",
@@ -300,7 +300,7 @@ archive/issue_comments_014983.json:
 }
 ```
 
-Attachment
+Attachment [trac_2262_sage-removal.patch](tarball://root/attachments/some-uuid/ticket2262/trac_2262_sage-removal.patch) by mabshoff created at 2008-03-19 09:14:17
 
 apply to the sage repo - removes debian files from setup.py
 
@@ -311,7 +311,7 @@ apply to the sage repo - removes debian files from setup.py
 archive/issue_comments_014984.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_2262_sage-setup.py.patch](tarball://root/attachments/some-uuid/ticket2262/trac_2262_sage-setup.py.patch) by mabshoff created at 2008-03-19 09:14:46",
     "created_at": "2008-03-19T09:14:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2262",
     "type": "issue_comment",
@@ -320,7 +320,7 @@ archive/issue_comments_014984.json:
 }
 ```
 
-Attachment
+Attachment [trac_2262_sage-setup.py.patch](tarball://root/attachments/some-uuid/ticket2262/trac_2262_sage-setup.py.patch) by mabshoff created at 2008-03-19 09:14:46
 
 
 

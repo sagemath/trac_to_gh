@@ -112,7 +112,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3242
 archive/issue_comments_022450.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-3242-graph_relabel.patch](tarball://root/attachments/some-uuid/ticket3242/trac-3242-graph_relabel.patch) by rlm created at 2008-05-22 15:25:40",
     "created_at": "2008-05-22T15:25:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3242",
     "type": "issue_comment",
@@ -121,7 +121,7 @@ archive/issue_comments_022450.json:
 }
 ```
 
-Attachment
+Attachment [trac-3242-graph_relabel.patch](tarball://root/attachments/some-uuid/ticket3242/trac-3242-graph_relabel.patch) by rlm created at 2008-05-22 15:25:40
 
 
 

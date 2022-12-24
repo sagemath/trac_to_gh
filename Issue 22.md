@@ -212,7 +212,7 @@ Changing component from basic arithmetic to build.
 archive/issue_comments_000172.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_22.patch](tarball://root/attachments/some-uuid/ticket22/trac_22.patch) by mabshoff created at 2009-01-16 17:29:08",
     "created_at": "2009-01-16T17:29:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/22",
     "type": "issue_comment",
@@ -221,7 +221,7 @@ archive/issue_comments_000172.json:
 }
 ```
 
-Attachment
+Attachment [trac_22.patch](tarball://root/attachments/some-uuid/ticket22/trac_22.patch) by mabshoff created at 2009-01-16 17:29:08
 
 
 

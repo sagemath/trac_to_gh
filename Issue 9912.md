@@ -254,7 +254,7 @@ sage: print b.imag().n()
 archive/issue_comments_098607.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9913-arctan2_evalf.patch](tarball://root/attachments/some-uuid/ticket9913/trac_9913-arctan2_evalf.patch) by burcin created at 2010-10-10 19:53:51",
     "created_at": "2010-10-10T19:53:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9912",
     "type": "issue_comment",
@@ -263,7 +263,7 @@ archive/issue_comments_098607.json:
 }
 ```
 
-Attachment
+Attachment [trac_9913-arctan2_evalf.patch](tarball://root/attachments/some-uuid/ticket9913/trac_9913-arctan2_evalf.patch) by burcin created at 2010-10-10 19:53:51
 
 
 

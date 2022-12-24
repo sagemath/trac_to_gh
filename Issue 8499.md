@@ -106,7 +106,7 @@ Paul
 archive/issue_comments_076724.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8499.patch](tarball://root/attachments/some-uuid/ticket8499/trac_8499.patch) by zimmerma created at 2013-08-24 11:55:32",
     "created_at": "2013-08-24T11:55:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8499",
     "type": "issue_comment",
@@ -115,7 +115,7 @@ archive/issue_comments_076724.json:
 }
 ```
 
-Attachment
+Attachment [trac_8499.patch](tarball://root/attachments/some-uuid/ticket8499/trac_8499.patch) by zimmerma created at 2013-08-24 11:55:32
 
 
 

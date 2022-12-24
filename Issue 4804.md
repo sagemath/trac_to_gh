@@ -179,7 +179,7 @@ Wilfried
 archive/issue_comments_036417.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4804.patch](tarball://root/attachments/some-uuid/ticket4804/trac_4804.patch) by mhansen created at 2008-12-16 14:53:47",
     "created_at": "2008-12-16T14:53:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4804",
     "type": "issue_comment",
@@ -188,7 +188,7 @@ archive/issue_comments_036417.json:
 }
 ```
 
-Attachment
+Attachment [trac_4804.patch](tarball://root/attachments/some-uuid/ticket4804/trac_4804.patch) by mhansen created at 2008-12-16 14:53:47
 
 
 

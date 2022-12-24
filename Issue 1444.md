@@ -60,7 +60,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1444
 archive/issue_comments_009316.json:
 ```json
 {
-    "body": "Attachment\n\nput this file in spkg/base/   overwriting the one there already.",
+    "body": "Attachment [bzip2-1.0.4-install](tarball://root/attachments/some-uuid/ticket1444/bzip2-1.0.4-install) by was created at 2007-12-10 01:12:42\n\nput this file in spkg/base/   overwriting the one there already.",
     "created_at": "2007-12-10T01:12:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1444",
     "type": "issue_comment",
@@ -69,7 +69,7 @@ archive/issue_comments_009316.json:
 }
 ```
 
-Attachment
+Attachment [bzip2-1.0.4-install](tarball://root/attachments/some-uuid/ticket1444/bzip2-1.0.4-install) by was created at 2007-12-10 01:12:42
 
 put this file in spkg/base/   overwriting the one there already.
 

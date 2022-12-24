@@ -184,7 +184,7 @@ http://groups.google.com/group/sage-devel/browse_thread/thread/26c80b8b90337a1a/
 archive/issue_comments_009541.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1482.hg](tarball://root/attachments/some-uuid/ticket1482/1482.hg) by dmharvey created at 2007-12-26 19:12:08",
     "created_at": "2007-12-26T19:12:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1482",
     "type": "issue_comment",
@@ -193,7 +193,7 @@ archive/issue_comments_009541.json:
 }
 ```
 
-Attachment
+Attachment [1482.hg](tarball://root/attachments/some-uuid/ticket1482/1482.hg) by dmharvey created at 2007-12-26 19:12:08
 
 
 

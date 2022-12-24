@@ -45,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6993
 archive/issue_comments_057838.json:
 ```json
 {
-    "body": "Attachment\n\nThis package includes corresponding changes for the tickets:\n\n* #6948 powers of exp are over simplified\n* #6902 log(x) is typeset as \\ln x\n* #6851 hashes for derivatives of symbolic functions still collide\n* #6524 Ratio of two symbolic expressions involving derivative does not simplify\n* #6992 rename lngamma to log gamma\n\nThe patch attached to this ticket is just an enhancement. It is the first step to cleaning up the interface for symbolic functions. Pynac now evaluates symbolic functions on non-exact input again. This eliminates the need for a separate `__call__` method in `sage.symbolic.function.PrimitiveFunction`.",
+    "body": "Attachment [trac_6993-revert_evalf.patch](tarball://root/attachments/some-uuid/ticket6993/trac_6993-revert_evalf.patch) by burcin created at 2009-09-22 19:26:03\n\nThis package includes corresponding changes for the tickets:\n\n* #6948 powers of exp are over simplified\n* #6902 log(x) is typeset as \\ln x\n* #6851 hashes for derivatives of symbolic functions still collide\n* #6524 Ratio of two symbolic expressions involving derivative does not simplify\n* #6992 rename lngamma to log gamma\n\nThe patch attached to this ticket is just an enhancement. It is the first step to cleaning up the interface for symbolic functions. Pynac now evaluates symbolic functions on non-exact input again. This eliminates the need for a separate `__call__` method in `sage.symbolic.function.PrimitiveFunction`.",
     "created_at": "2009-09-22T19:26:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6993",
     "type": "issue_comment",
@@ -54,7 +54,7 @@ archive/issue_comments_057838.json:
 }
 ```
 
-Attachment
+Attachment [trac_6993-revert_evalf.patch](tarball://root/attachments/some-uuid/ticket6993/trac_6993-revert_evalf.patch) by burcin created at 2009-09-22 19:26:03
 
 This package includes corresponding changes for the tickets:
 

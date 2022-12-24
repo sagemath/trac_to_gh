@@ -62,7 +62,7 @@ Changing status from new to assigned.
 archive/issue_comments_009655.json:
 ```json
 {
-    "body": "Attachment\n\nfixes a mistake in const.tex",
+    "body": "Attachment [doc-trac-1508.patch](tarball://root/attachments/some-uuid/ticket1508/doc-trac-1508.patch) by was created at 2008-01-19 17:46:38\n\nfixes a mistake in const.tex",
     "created_at": "2008-01-19T17:46:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1508",
     "type": "issue_comment",
@@ -71,7 +71,7 @@ archive/issue_comments_009655.json:
 }
 ```
 
-Attachment
+Attachment [doc-trac-1508.patch](tarball://root/attachments/some-uuid/ticket1508/doc-trac-1508.patch) by was created at 2008-01-19 17:46:38
 
 fixes a mistake in const.tex
 
@@ -82,7 +82,7 @@ fixes a mistake in const.tex
 archive/issue_comments_009656.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-1508.patch](tarball://root/attachments/some-uuid/ticket1508/trac-1508.patch) by was created at 2008-01-19 17:50:15",
     "created_at": "2008-01-19T17:50:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1508",
     "type": "issue_comment",
@@ -91,7 +91,7 @@ archive/issue_comments_009656.json:
 }
 ```
 
-Attachment
+Attachment [trac-1508.patch](tarball://root/attachments/some-uuid/ticket1508/trac-1508.patch) by was created at 2008-01-19 17:50:15
 
 
 

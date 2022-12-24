@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8850
 archive/issue_comments_081352.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8850-fix_load_cython.patch](tarball://root/attachments/some-uuid/ticket8850/trac_8850-fix_load_cython.patch) by mhansen created at 2010-05-03 13:16:57",
     "created_at": "2010-05-03T13:16:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8850",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_081352.json:
 }
 ```
 
-Attachment
+Attachment [trac_8850-fix_load_cython.patch](tarball://root/attachments/some-uuid/ticket8850/trac_8850-fix_load_cython.patch) by mhansen created at 2010-05-03 13:16:57
 
 
 

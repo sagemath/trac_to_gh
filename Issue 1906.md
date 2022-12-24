@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1906
 archive/issue_comments_012072.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1906-qexp-field.patch](tarball://root/attachments/some-uuid/ticket1906/1906-qexp-field.patch) by AlexGhitza created at 2008-01-24 03:37:29",
     "created_at": "2008-01-24T03:37:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1906",
     "type": "issue_comment",
@@ -49,7 +49,7 @@ archive/issue_comments_012072.json:
 }
 ```
 
-Attachment
+Attachment [1906-qexp-field.patch](tarball://root/attachments/some-uuid/ticket1906/1906-qexp-field.patch) by AlexGhitza created at 2008-01-24 03:37:29
 
 
 

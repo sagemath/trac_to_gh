@@ -38,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3542
 archive/issue_comments_025045.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [bernmm.patch](tarball://root/attachments/some-uuid/ticket3542/bernmm.patch) by dmharvey created at 2008-07-02 19:23:34",
     "created_at": "2008-07-02T19:23:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3542",
     "type": "issue_comment",
@@ -47,7 +47,7 @@ archive/issue_comments_025045.json:
 }
 ```
 
-Attachment
+Attachment [bernmm.patch](tarball://root/attachments/some-uuid/ticket3542/bernmm.patch) by dmharvey created at 2008-07-02 19:23:34
 
 
 
@@ -226,7 +226,7 @@ The layout and choice contents of the reference manual are done by hand.  If you
 archive/issue_comments_025051.json:
 ```json
 {
-    "body": "Attachment\n\nI've addressed all issues raised by reviewer (see attached patch), except for the reference manual thing.\n\nThe bernoulli number function itself is already in the reference manual, in\n\nhttp://www.sagemath.org/doc/ref/module-sage.rings.arith.html\n\nAre you talking about adding the bernmm.pyx wrapper to the manual? It's not at all clear to me where in the manual it would belong. I already don't really understand why bernoulli() is in rings.arith, that seems pretty random.",
+    "body": "Attachment [bernmm.2.patch](tarball://root/attachments/some-uuid/ticket3542/bernmm.2.patch) by dmharvey created at 2008-08-01 14:35:33\n\nI've addressed all issues raised by reviewer (see attached patch), except for the reference manual thing.\n\nThe bernoulli number function itself is already in the reference manual, in\n\nhttp://www.sagemath.org/doc/ref/module-sage.rings.arith.html\n\nAre you talking about adding the bernmm.pyx wrapper to the manual? It's not at all clear to me where in the manual it would belong. I already don't really understand why bernoulli() is in rings.arith, that seems pretty random.",
     "created_at": "2008-08-01T14:35:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3542",
     "type": "issue_comment",
@@ -235,7 +235,7 @@ archive/issue_comments_025051.json:
 }
 ```
 
-Attachment
+Attachment [bernmm.2.patch](tarball://root/attachments/some-uuid/ticket3542/bernmm.2.patch) by dmharvey created at 2008-08-01 14:35:33
 
 I've addressed all issues raised by reviewer (see attached patch), except for the reference manual thing.
 
@@ -252,7 +252,7 @@ Are you talking about adding the bernmm.pyx wrapper to the manual? It's not at a
 archive/issue_comments_025052.json:
 ```json
 {
-    "body": "Attachment\n\nI think this looks good.  I added a few doctests that verify that your code agrees with the pari code, for a few of the cases that William found did not agree.\n\nApply only `3542-dharvey-bernoulli-numbers-multimodular.patch`.",
+    "body": "Attachment [3542-dharvey-bernoulli-numbers-multimodular.patch](tarball://root/attachments/some-uuid/ticket3542/3542-dharvey-bernoulli-numbers-multimodular.patch) by ncalexan created at 2008-08-10 19:59:10\n\nI think this looks good.  I added a few doctests that verify that your code agrees with the pari code, for a few of the cases that William found did not agree.\n\nApply only `3542-dharvey-bernoulli-numbers-multimodular.patch`.",
     "created_at": "2008-08-10T19:59:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3542",
     "type": "issue_comment",
@@ -261,7 +261,7 @@ archive/issue_comments_025052.json:
 }
 ```
 
-Attachment
+Attachment [3542-dharvey-bernoulli-numbers-multimodular.patch](tarball://root/attachments/some-uuid/ticket3542/3542-dharvey-bernoulli-numbers-multimodular.patch) by ncalexan created at 2008-08-10 19:59:10
 
 I think this looks good.  I added a few doctests that verify that your code agrees with the pari code, for a few of the cases that William found did not agree.
 

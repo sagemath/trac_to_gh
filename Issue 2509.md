@@ -49,7 +49,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2509
 archive/issue_comments_017017.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2509-ncalexan-xgcd.patch](tarball://root/attachments/some-uuid/ticket2509/2509-ncalexan-xgcd.patch) by ncalexan created at 2008-03-13 20:27:27",
     "created_at": "2008-03-13T20:27:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2509",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_017017.json:
 }
 ```
 
-Attachment
+Attachment [2509-ncalexan-xgcd.patch](tarball://root/attachments/some-uuid/ticket2509/2509-ncalexan-xgcd.patch) by ncalexan created at 2008-03-13 20:27:27
 
 
 
@@ -119,7 +119,7 @@ BUT... look more closely at that doctest. WTF? 2 + 2 = 2?
 archive/issue_comments_017020.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2509-ncalexan-xgcd-2.patch](tarball://root/attachments/some-uuid/ticket2509/2509-ncalexan-xgcd-2.patch) by dmharvey created at 2008-03-13 22:16:32",
     "created_at": "2008-03-13T22:16:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2509",
     "type": "issue_comment",
@@ -128,7 +128,7 @@ archive/issue_comments_017020.json:
 }
 ```
 
-Attachment
+Attachment [2509-ncalexan-xgcd-2.patch](tarball://root/attachments/some-uuid/ticket2509/2509-ncalexan-xgcd-2.patch) by dmharvey created at 2008-03-13 22:16:32
 
 
 

@@ -68,7 +68,7 @@ Michael
 archive/issue_comments_044685.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [hide_print_5718.patch](tarball://root/attachments/some-uuid/ticket5718/hide_print_5718.patch) by mpatel created at 2009-04-14 09:15:33",
     "created_at": "2009-04-14T09:15:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5718",
     "type": "issue_comment",
@@ -77,7 +77,7 @@ archive/issue_comments_044685.json:
 }
 ```
 
-Attachment
+Attachment [hide_print_5718.patch](tarball://root/attachments/some-uuid/ticket5718/hide_print_5718.patch) by mpatel created at 2009-04-14 09:15:33
 
 
 

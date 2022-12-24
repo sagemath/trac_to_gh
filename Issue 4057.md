@@ -72,7 +72,7 @@ Resolution: invalid
 archive/issue_comments_029235.json:
 ```json
 {
-    "body": "Attachment\n\nHi,\n\nthis is some laundry list of things and should be first discussed on sage-devel before opening clearly defined tickets. Trac is not a discussion forum :)\n\nInvalid.\n\nCheers,\n\nMichael",
+    "body": "Attachment [underline_trick.patch](tarball://root/attachments/some-uuid/ticket4057/underline_trick.patch) by mabshoff created at 2008-09-04 03:15:50\n\nHi,\n\nthis is some laundry list of things and should be first discussed on sage-devel before opening clearly defined tickets. Trac is not a discussion forum :)\n\nInvalid.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-04T03:15:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4057",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_029235.json:
 }
 ```
 
-Attachment
+Attachment [underline_trick.patch](tarball://root/attachments/some-uuid/ticket4057/underline_trick.patch) by mabshoff created at 2008-09-04 03:15:50
 
 Hi,
 
@@ -262,7 +262,7 @@ better solution to problem
 archive/issue_comments_029245.json:
 ```json
 {
-    "body": "Attachment\n\nI attached better fix of problem, it fixes not only the r.sth? notation but also not fixed by previous - r.help(\"sth\") - also it doesn't add check related to R in generic module so I guess previous was bad",
+    "body": "Attachment [underline_trick.2.patch](tarball://root/attachments/some-uuid/ticket4057/underline_trick.2.patch) by aginiewicz created at 2008-09-15 21:16:22\n\nI attached better fix of problem, it fixes not only the r.sth? notation but also not fixed by previous - r.help(\"sth\") - also it doesn't add check related to R in generic module so I guess previous was bad",
     "created_at": "2008-09-15T21:16:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4057",
     "type": "issue_comment",
@@ -271,7 +271,7 @@ archive/issue_comments_029245.json:
 }
 ```
 
-Attachment
+Attachment [underline_trick.2.patch](tarball://root/attachments/some-uuid/ticket4057/underline_trick.2.patch) by aginiewicz created at 2008-09-15 21:16:22
 
 I attached better fix of problem, it fixes not only the r.sth? notation but also not fixed by previous - r.help("sth") - also it doesn't add check related to R in generic module so I guess previous was bad
 
@@ -300,7 +300,7 @@ apply this and the patch right above this.
 archive/issue_comments_029247.json:
 ```json
 {
-    "body": "Attachment\n\nREFEREE REPORT:\n\nLooks good, but needs to *only* delete the underline in embedded mode.  I've attached a patch to do that.",
+    "body": "Attachment [sage-4057-part2.patch](tarball://root/attachments/some-uuid/ticket4057/sage-4057-part2.patch) by was created at 2008-11-27 18:32:09\n\nREFEREE REPORT:\n\nLooks good, but needs to *only* delete the underline in embedded mode.  I've attached a patch to do that.",
     "created_at": "2008-11-27T18:32:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4057",
     "type": "issue_comment",
@@ -309,7 +309,7 @@ archive/issue_comments_029247.json:
 }
 ```
 
-Attachment
+Attachment [sage-4057-part2.patch](tarball://root/attachments/some-uuid/ticket4057/sage-4057-part2.patch) by was created at 2008-11-27 18:32:09
 
 REFEREE REPORT:
 

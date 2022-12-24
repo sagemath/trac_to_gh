@@ -168,7 +168,7 @@ Applies to 4.3.1.alpha1
 archive/issue_comments_054652.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch sorts this out, with appropriate tests.",
+    "body": "Attachment [trac_6657-elliptic_curveconstructor.patch](tarball://root/attachments/some-uuid/ticket6657/trac_6657-elliptic_curveconstructor.patch) by cremona created at 2010-01-12 20:53:15\n\nThe attached patch sorts this out, with appropriate tests.",
     "created_at": "2010-01-12T20:53:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6657",
     "type": "issue_comment",
@@ -177,7 +177,7 @@ archive/issue_comments_054652.json:
 }
 ```
 
-Attachment
+Attachment [trac_6657-elliptic_curveconstructor.patch](tarball://root/attachments/some-uuid/ticket6657/trac_6657-elliptic_curveconstructor.patch) by cremona created at 2010-01-12 20:53:15
 
 The attached patch sorts this out, with appropriate tests.
 

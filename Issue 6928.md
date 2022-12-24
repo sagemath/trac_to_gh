@@ -127,7 +127,7 @@ Apply with spkg.
 archive/issue_comments_057261.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6928-trac_spkg.patch](tarball://root/attachments/some-uuid/ticket6928/trac_6928-trac_spkg.patch) by mpatel created at 2009-09-22 08:48:32",
     "created_at": "2009-09-22T08:48:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6928",
     "type": "issue_comment",
@@ -136,7 +136,7 @@ archive/issue_comments_057261.json:
 }
 ```
 
-Attachment
+Attachment [trac_6928-trac_spkg.patch](tarball://root/attachments/some-uuid/ticket6928/trac_6928-trac_spkg.patch) by mpatel created at 2009-09-22 08:48:32
 
 
 

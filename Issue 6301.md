@@ -95,7 +95,7 @@ Changing keywords from "Hadamard matrix product" to "elementwise Hadamard matrix
 archive/issue_comments_050268.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6301_elementwise_matrix_product.patch](tarball://root/attachments/some-uuid/ticket6301/trac_6301_elementwise_matrix_product.patch) by rbeezer created at 2009-07-14 22:33:02",
     "created_at": "2009-07-14T22:33:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6301",
     "type": "issue_comment",
@@ -104,7 +104,7 @@ archive/issue_comments_050268.json:
 }
 ```
 
-Attachment
+Attachment [trac_6301_elementwise_matrix_product.patch](tarball://root/attachments/some-uuid/ticket6301/trac_6301_elementwise_matrix_product.patch) by rbeezer created at 2009-07-14 22:33:02
 
 
 

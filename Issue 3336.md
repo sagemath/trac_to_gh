@@ -51,7 +51,7 @@ Patch attached.
 archive/issue_comments_023121.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good.  Thanks for this Dan!  I also added it to 2144.",
+    "body": "Attachment [dyckword-3336.patch](tarball://root/attachments/some-uuid/ticket3336/dyckword-3336.patch) by mhansen created at 2008-05-31 03:53:44\n\nLooks good.  Thanks for this Dan!  I also added it to 2144.",
     "created_at": "2008-05-31T03:53:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3336",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_023121.json:
 }
 ```
 
-Attachment
+Attachment [dyckword-3336.patch](tarball://root/attachments/some-uuid/ticket3336/dyckword-3336.patch) by mhansen created at 2008-05-31 03:53:44
 
 Looks good.  Thanks for this Dan!  I also added it to 2144.
 

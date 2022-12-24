@@ -138,7 +138,7 @@ Renaming this to a more appropriate title.
 archive/issue_comments_044398.json:
 ```json
 {
-    "body": "Attachment\n\nThis sets the hostname to localhost if interface=\"\" when launching the page",
+    "body": "Attachment [trac_5675-address-launch.patch](tarball://root/attachments/some-uuid/ticket5675/trac_5675-address-launch.patch) by timdumol created at 2010-01-19 06:26:15\n\nThis sets the hostname to localhost if interface=\"\" when launching the page",
     "created_at": "2010-01-19T06:26:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5675",
     "type": "issue_comment",
@@ -147,7 +147,7 @@ archive/issue_comments_044398.json:
 }
 ```
 
-Attachment
+Attachment [trac_5675-address-launch.patch](tarball://root/attachments/some-uuid/ticket5675/trac_5675-address-launch.patch) by timdumol created at 2010-01-19 06:26:15
 
 This sets the hostname to localhost if interface="" when launching the page
 

@@ -49,7 +49,7 @@ Scripts repo
 archive/issue_comments_029902.json:
 ```json
 {
-    "body": "Attachment\n\nThanks you, positive review.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_4124-disable-pbuild.patch](tarball://root/attachments/some-uuid/ticket4124/trac_4124-disable-pbuild.patch) by mabshoff created at 2008-09-15 02:02:46\n\nThanks you, positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-15T02:02:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4124",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_029902.json:
 }
 ```
 
-Attachment
+Attachment [trac_4124-disable-pbuild.patch](tarball://root/attachments/some-uuid/ticket4124/trac_4124-disable-pbuild.patch) by mabshoff created at 2008-09-15 02:02:46
 
 Thanks you, positive review.
 

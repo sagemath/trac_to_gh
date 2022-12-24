@@ -82,7 +82,7 @@ Changing status from new to assigned.
 archive/issue_comments_007966.json:
 ```json
 {
-    "body": "Attachment\n\nPatch looks good to me, build testing the new Singular.spkg on OSX.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac1271.patch](tarball://root/attachments/some-uuid/ticket1271/trac1271.patch) by mabshoff created at 2007-12-03 12:47:22\n\nPatch looks good to me, build testing the new Singular.spkg on OSX.\n\nCheers,\n\nMichael",
     "created_at": "2007-12-03T12:47:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1271",
     "type": "issue_comment",
@@ -91,7 +91,7 @@ archive/issue_comments_007966.json:
 }
 ```
 
-Attachment
+Attachment [trac1271.patch](tarball://root/attachments/some-uuid/ticket1271/trac1271.patch) by mabshoff created at 2007-12-03 12:47:22
 
 Patch looks good to me, build testing the new Singular.spkg on OSX.
 

@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9726
 archive/issue_comments_095058.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [srsa.patch](tarball://root/attachments/some-uuid/ticket9726/srsa.patch) by gauravluthra created at 2010-08-11 19:10:35",
     "created_at": "2010-08-11T19:10:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9726",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_095058.json:
 }
 ```
 
-Attachment
+Attachment [srsa.patch](tarball://root/attachments/some-uuid/ticket9726/srsa.patch) by gauravluthra created at 2010-08-11 19:10:35
 
 
 
@@ -137,7 +137,7 @@ PS: There's a simplified version of RSA called Kid RSA that is suitable for teac
 archive/issue_comments_095063.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch [attachment:trac_9726-srsa.patch] is the same as [attachment:srsa.patch], but here are the crucial differences:\n\n* Put the ticket number in the commit message.\n* Get rid of Windows newline convention. Use Unix style end of line characters.",
+    "body": "Attachment [trac_9726-srsa.patch](tarball://root/attachments/some-uuid/ticket9726/trac_9726-srsa.patch) by mvngu created at 2010-08-12 12:35:09\n\nThe patch [attachment:trac_9726-srsa.patch] is the same as [attachment:srsa.patch], but here are the crucial differences:\n\n* Put the ticket number in the commit message.\n* Get rid of Windows newline convention. Use Unix style end of line characters.",
     "created_at": "2010-08-12T12:35:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9726",
     "type": "issue_comment",
@@ -146,7 +146,7 @@ archive/issue_comments_095063.json:
 }
 ```
 
-Attachment
+Attachment [trac_9726-srsa.patch](tarball://root/attachments/some-uuid/ticket9726/trac_9726-srsa.patch) by mvngu created at 2010-08-12 12:35:09
 
 The patch [attachment:trac_9726-srsa.patch] is the same as [attachment:srsa.patch], but here are the crucial differences:
 
@@ -160,7 +160,7 @@ The patch [attachment:trac_9726-srsa.patch] is the same as [attachment:srsa.patc
 archive/issue_comments_095064.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [srsa.2.patch](tarball://root/attachments/some-uuid/ticket9726/srsa.2.patch) by gauravluthra created at 2010-08-12 13:40:45",
     "created_at": "2010-08-12T13:40:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9726",
     "type": "issue_comment",
@@ -169,7 +169,7 @@ archive/issue_comments_095064.json:
 }
 ```
 
-Attachment
+Attachment [srsa.2.patch](tarball://root/attachments/some-uuid/ticket9726/srsa.2.patch) by gauravluthra created at 2010-08-12 13:40:45
 
 
 

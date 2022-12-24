@@ -67,7 +67,7 @@ Changing status from new to needs_work.
 archive/issue_comments_069802.json:
 ```json
 {
-    "body": "Attachment\n\nPatch attached.  As far as I can see this message does not appear in a doctest.  Which means that I should add a doctest for it, hence not ready for review yet.",
+    "body": "Attachment [trac_7992-typo.patch](tarball://root/attachments/some-uuid/ticket7992/trac_7992-typo.patch) by cremona created at 2010-01-19 09:22:05\n\nPatch attached.  As far as I can see this message does not appear in a doctest.  Which means that I should add a doctest for it, hence not ready for review yet.",
     "created_at": "2010-01-19T09:22:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7992",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_069802.json:
 }
 ```
 
-Attachment
+Attachment [trac_7992-typo.patch](tarball://root/attachments/some-uuid/ticket7992/trac_7992-typo.patch) by cremona created at 2010-01-19 09:22:05
 
 Patch attached.  As far as I can see this message does not appear in a doctest.  Which means that I should add a doctest for it, hence not ready for review yet.
 
@@ -105,7 +105,7 @@ replaces previous
 archive/issue_comments_069804.json:
 ```json
 {
-    "body": "Attachment\n\nNew patch adds doctest (one showing failure and one ok).\n\nI don't know why the output of the RuntimeError does not include the string (the one where the typo was fixed).  Maybe the review does?",
+    "body": "Attachment [trac_7992-typo.2.patch](tarball://root/attachments/some-uuid/ticket7992/trac_7992-typo.2.patch) by cremona created at 2010-01-19 09:38:00\n\nNew patch adds doctest (one showing failure and one ok).\n\nI don't know why the output of the RuntimeError does not include the string (the one where the typo was fixed).  Maybe the review does?",
     "created_at": "2010-01-19T09:38:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7992",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_069804.json:
 }
 ```
 
-Attachment
+Attachment [trac_7992-typo.2.patch](tarball://root/attachments/some-uuid/ticket7992/trac_7992-typo.2.patch) by cremona created at 2010-01-19 09:38:00
 
 New patch adds doctest (one showing failure and one ok).
 

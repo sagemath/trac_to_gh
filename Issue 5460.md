@@ -180,7 +180,7 @@ The one doctest involves a Traceback and "...", and I'm guessing that the "..." 
 archive/issue_comments_042402.json:
 ```json
 {
-    "body": "Attachment\n\nHere's a new patch; the only difference is the documentation for 'invert'.",
+    "body": "Attachment [deprecate-invert.patch](tarball://root/attachments/some-uuid/ticket5460/deprecate-invert.patch) by jhpalmieri created at 2009-03-10 18:43:45\n\nHere's a new patch; the only difference is the documentation for 'invert'.",
     "created_at": "2009-03-10T18:43:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5460",
     "type": "issue_comment",
@@ -189,7 +189,7 @@ archive/issue_comments_042402.json:
 }
 ```
 
-Attachment
+Attachment [deprecate-invert.patch](tarball://root/attachments/some-uuid/ticket5460/deprecate-invert.patch) by jhpalmieri created at 2009-03-10 18:43:45
 
 Here's a new patch; the only difference is the documentation for 'invert'.
 

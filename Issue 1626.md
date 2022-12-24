@@ -129,7 +129,7 @@ Michael
 archive/issue_comments_010361.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [lcalc-1.11-constification+solaris.patch](tarball://root/attachments/some-uuid/ticket1626/lcalc-1.11-constification+solaris.patch) by mabshoff created at 2008-03-26 00:08:58",
     "created_at": "2008-03-26T00:08:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1626",
     "type": "issue_comment",
@@ -138,7 +138,7 @@ archive/issue_comments_010361.json:
 }
 ```
 
-Attachment
+Attachment [lcalc-1.11-constification+solaris.patch](tarball://root/attachments/some-uuid/ticket1626/lcalc-1.11-constification+solaris.patch) by mabshoff created at 2008-03-26 00:08:58
 
 
 
@@ -147,7 +147,7 @@ Attachment
 archive/issue_comments_010362.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [lcalc-1.11-memleak-fixes.patch](tarball://root/attachments/some-uuid/ticket1626/lcalc-1.11-memleak-fixes.patch) by mabshoff created at 2008-03-26 00:09:39",
     "created_at": "2008-03-26T00:09:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1626",
     "type": "issue_comment",
@@ -156,7 +156,7 @@ archive/issue_comments_010362.json:
 }
 ```
 
-Attachment
+Attachment [lcalc-1.11-memleak-fixes.patch](tarball://root/attachments/some-uuid/ticket1626/lcalc-1.11-memleak-fixes.patch) by mabshoff created at 2008-03-26 00:09:39
 
 
 
@@ -206,7 +206,7 @@ Michael
 archive/issue_comments_010364.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [lcalc-1.11-gcc-4.3-build.patch](tarball://root/attachments/some-uuid/ticket1626/lcalc-1.11-gcc-4.3-build.patch) by mabshoff created at 2008-04-14 03:25:51",
     "created_at": "2008-04-14T03:25:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1626",
     "type": "issue_comment",
@@ -215,7 +215,7 @@ archive/issue_comments_010364.json:
 }
 ```
 
-Attachment
+Attachment [lcalc-1.11-gcc-4.3-build.patch](tarball://root/attachments/some-uuid/ticket1626/lcalc-1.11-gcc-4.3-build.patch) by mabshoff created at 2008-04-14 03:25:51
 
 
 
@@ -224,7 +224,7 @@ Attachment
 archive/issue_comments_010365.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_1626_lcalc_doctest_fix.patch](tarball://root/attachments/some-uuid/ticket1626/trac_1626_lcalc_doctest_fix.patch) by mabshoff created at 2008-04-14 03:26:19",
     "created_at": "2008-04-14T03:26:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1626",
     "type": "issue_comment",
@@ -233,7 +233,7 @@ archive/issue_comments_010365.json:
 }
 ```
 
-Attachment
+Attachment [trac_1626_lcalc_doctest_fix.patch](tarball://root/attachments/some-uuid/ticket1626/trac_1626_lcalc_doctest_fix.patch) by mabshoff created at 2008-04-14 03:26:19
 
 
 

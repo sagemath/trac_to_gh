@@ -110,7 +110,7 @@ and euler_phi would take for ever, of course. If this is reasonable to you, I'll
 archive/issue_comments_076276.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8469_add_a_space.patch](tarball://root/attachments/some-uuid/ticket8469/trac_8469_add_a_space.patch) by pang created at 2010-05-12 15:37:58",
     "created_at": "2010-05-12T15:37:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8469",
     "type": "issue_comment",
@@ -119,7 +119,7 @@ archive/issue_comments_076276.json:
 }
 ```
 
-Attachment
+Attachment [trac_8469_add_a_space.patch](tarball://root/attachments/some-uuid/ticket8469/trac_8469_add_a_space.patch) by pang created at 2010-05-12 15:37:58
 
 
 
@@ -161,7 +161,7 @@ Also, could you put your real name in the "Reviewer(s):" field? That way, it mak
 archive/issue_comments_076278.json:
 ```json
 {
-    "body": "Attachment\n\nThe last patch includes the previous one (I can't find a wat to delete it).",
+    "body": "Attachment [trac_8469_review.patch](tarball://root/attachments/some-uuid/ticket8469/trac_8469_review.patch) by pang created at 2010-05-15 22:47:28\n\nThe last patch includes the previous one (I can't find a wat to delete it).",
     "created_at": "2010-05-15T22:47:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8469",
     "type": "issue_comment",
@@ -170,7 +170,7 @@ archive/issue_comments_076278.json:
 }
 ```
 
-Attachment
+Attachment [trac_8469_review.patch](tarball://root/attachments/some-uuid/ticket8469/trac_8469_review.patch) by pang created at 2010-05-15 22:47:28
 
 The last patch includes the previous one (I can't find a wat to delete it).
 
@@ -181,7 +181,7 @@ The last patch includes the previous one (I can't find a wat to delete it).
 archive/issue_comments_076279.json:
 ```json
 {
-    "body": "Attachment\n\nOnly the last patch is needed. Sorry for the noise.",
+    "body": "Attachment [trac_8469_review_final.patch](tarball://root/attachments/some-uuid/ticket8469/trac_8469_review_final.patch) by pang created at 2010-05-16 18:56:27\n\nOnly the last patch is needed. Sorry for the noise.",
     "created_at": "2010-05-16T18:56:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8469",
     "type": "issue_comment",
@@ -190,7 +190,7 @@ archive/issue_comments_076279.json:
 }
 ```
 
-Attachment
+Attachment [trac_8469_review_final.patch](tarball://root/attachments/some-uuid/ticket8469/trac_8469_review_final.patch) by pang created at 2010-05-16 18:56:27
 
 Only the last patch is needed. Sorry for the noise.
 
@@ -201,7 +201,7 @@ Only the last patch is needed. Sorry for the noise.
 archive/issue_comments_076280.json:
 ```json
 {
-    "body": "Attachment\n\nbased on Sage 4.5.2.rc0",
+    "body": "Attachment [trac_8469-rsa.patch](tarball://root/attachments/some-uuid/ticket8469/trac_8469-rsa.patch) by mvngu created at 2010-08-03 12:07:44\n\nbased on Sage 4.5.2.rc0",
     "created_at": "2010-08-03T12:07:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8469",
     "type": "issue_comment",
@@ -210,7 +210,7 @@ archive/issue_comments_076280.json:
 }
 ```
 
-Attachment
+Attachment [trac_8469-rsa.patch](tarball://root/attachments/some-uuid/ticket8469/trac_8469-rsa.patch) by mvngu created at 2010-08-03 12:07:44
 
 based on Sage 4.5.2.rc0
 
@@ -221,7 +221,7 @@ based on Sage 4.5.2.rc0
 archive/issue_comments_076281.json:
 ```json
 {
-    "body": "Attachment\n\nWhen applying the previous version of my patch on top of Sage 4.5.2.rc0, I got the following failure:\n\n```sh\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8469/trac_8469-rsa.patch && hg qpush \nadding trac_8469-rsa.patch to series file\napplying trac_8469-rsa.patch\npatching file doc/en/thematic_tutorials/index.rst\nHunk #1 FAILED at 13\n1 out of 1 hunks FAILED -- saving rejects to file doc/en/thematic_tutorials/index.rst.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_8469-rsa.patch\n```\n\nI have rebased my patch against Sage 4.5.2.rc0 in order to resolve the above failure.\n\n\n\nThe content of pang's patch [attachment:trac_8469_review_final.patch] is mostly OK, but the way the patch itself is structured is frowned upon. From the way it looks, I guess that the patch was put together by concatenating many patches together into one file. That's not how you should put patches together. Use Mercurial queue to concatenate patches into one patch. I have done this and uploaded an updated version of pang's patch, which also fixes some typos found in his original patch. For reference, here are the fixed typos:\n\n```diff\n--- a/doc/en/thematic_tutorials/numtheory_rsa.rst\n+++ b/doc/en/thematic_tutorials/numtheory_rsa.rst\n@@ -295,8 +295,8 @@\n pseudo-random integer uniformly distributed within the closed interval\n `[0, n-1]`.  \n \n-We can compute the value `\\varphi(n)` calling the sage function\n-``euler_phi(n)``, but for arbitrary large prime numbers `p` and `q`,\n+We can compute the value `\\varphi(n)` by calling the sage function\n+``euler_phi(n)``, but for arbitrarily large prime numbers `p` and `q`,\n this can take an enormous amount of time. Indeed, the private key\n can be quickly deduced from the public key once you know `\\varphi(n)`,\n so it is an important part of the security of the RSA cryptosystem that\n```\n\nPang's updated patch and the typo fixes are all rolled into one patch. See the ticket description for instructions on applying the relevant patches.\n\n\n\nFor ticket to be closed, the following must happen:\n\n1. Someone needs to sign off on [attachment:trac_8469-rsa.patch]. This is my patch, so it requires a reviewer other than myself.\n2. Someone needs to sign off on [attachment:trac_8469-review-rebased.patch]. This is pang's original patch together with some typo fixes by me. I'm happy with pang's content. But someone other than myself needs to go over the fixes I included in this updated patch.",
+    "body": "Attachment [trac_8469-review-rebased.patch](tarball://root/attachments/some-uuid/ticket8469/trac_8469-review-rebased.patch) by mvngu created at 2010-08-03 12:13:50\n\nWhen applying the previous version of my patch on top of Sage 4.5.2.rc0, I got the following failure:\n\n```sh\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8469/trac_8469-rsa.patch && hg qpush \nadding trac_8469-rsa.patch to series file\napplying trac_8469-rsa.patch\npatching file doc/en/thematic_tutorials/index.rst\nHunk #1 FAILED at 13\n1 out of 1 hunks FAILED -- saving rejects to file doc/en/thematic_tutorials/index.rst.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_8469-rsa.patch\n```\n\nI have rebased my patch against Sage 4.5.2.rc0 in order to resolve the above failure.\n\n\n\nThe content of pang's patch [attachment:trac_8469_review_final.patch] is mostly OK, but the way the patch itself is structured is frowned upon. From the way it looks, I guess that the patch was put together by concatenating many patches together into one file. That's not how you should put patches together. Use Mercurial queue to concatenate patches into one patch. I have done this and uploaded an updated version of pang's patch, which also fixes some typos found in his original patch. For reference, here are the fixed typos:\n\n```diff\n--- a/doc/en/thematic_tutorials/numtheory_rsa.rst\n+++ b/doc/en/thematic_tutorials/numtheory_rsa.rst\n@@ -295,8 +295,8 @@\n pseudo-random integer uniformly distributed within the closed interval\n `[0, n-1]`.  \n \n-We can compute the value `\\varphi(n)` calling the sage function\n-``euler_phi(n)``, but for arbitrary large prime numbers `p` and `q`,\n+We can compute the value `\\varphi(n)` by calling the sage function\n+``euler_phi(n)``, but for arbitrarily large prime numbers `p` and `q`,\n this can take an enormous amount of time. Indeed, the private key\n can be quickly deduced from the public key once you know `\\varphi(n)`,\n so it is an important part of the security of the RSA cryptosystem that\n```\n\nPang's updated patch and the typo fixes are all rolled into one patch. See the ticket description for instructions on applying the relevant patches.\n\n\n\nFor ticket to be closed, the following must happen:\n\n1. Someone needs to sign off on [attachment:trac_8469-rsa.patch]. This is my patch, so it requires a reviewer other than myself.\n2. Someone needs to sign off on [attachment:trac_8469-review-rebased.patch]. This is pang's original patch together with some typo fixes by me. I'm happy with pang's content. But someone other than myself needs to go over the fixes I included in this updated patch.",
     "created_at": "2010-08-03T12:13:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8469",
     "type": "issue_comment",
@@ -230,7 +230,7 @@ archive/issue_comments_076281.json:
 }
 ```
 
-Attachment
+Attachment [trac_8469-review-rebased.patch](tarball://root/attachments/some-uuid/ticket8469/trac_8469-review-rebased.patch) by mvngu created at 2010-08-03 12:13:50
 
 When applying the previous version of my patch on top of Sage 4.5.2.rc0, I got the following failure:
 
@@ -400,7 +400,7 @@ Changing status from needs_work to needs_info.
 archive/issue_comments_076287.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8469-rsa-rebase.patch](tarball://root/attachments/some-uuid/ticket8469/trac_8469-rsa-rebase.patch) by rbeezer created at 2011-08-23 17:52:45",
     "created_at": "2011-08-23T17:52:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8469",
     "type": "issue_comment",
@@ -409,7 +409,7 @@ archive/issue_comments_076287.json:
 }
 ```
 
-Attachment
+Attachment [trac_8469-rsa-rebase.patch](tarball://root/attachments/some-uuid/ticket8469/trac_8469-rsa-rebase.patch) by rbeezer created at 2011-08-23 17:52:45
 
 
 
@@ -418,7 +418,7 @@ Attachment
 archive/issue_comments_076288.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8469-rsa-bibliography.patch](tarball://root/attachments/some-uuid/ticket8469/trac_8469-rsa-bibliography.patch) by rbeezer created at 2011-08-23 17:52:56",
     "created_at": "2011-08-23T17:52:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8469",
     "type": "issue_comment",
@@ -427,7 +427,7 @@ archive/issue_comments_076288.json:
 }
 ```
 
-Attachment
+Attachment [trac_8469-rsa-bibliography.patch](tarball://root/attachments/some-uuid/ticket8469/trac_8469-rsa-bibliography.patch) by rbeezer created at 2011-08-23 17:52:56
 
 
 

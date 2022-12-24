@@ -127,7 +127,7 @@ else:
 archive/issue_comments_017643.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [integerdiv.patch](tarball://root/attachments/some-uuid/ticket2579/integerdiv.patch) by rishi created at 2008-03-19 17:01:18",
     "created_at": "2008-03-19T17:01:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2579",
     "type": "issue_comment",
@@ -136,7 +136,7 @@ archive/issue_comments_017643.json:
 }
 ```
 
-Attachment
+Attachment [integerdiv.patch](tarball://root/attachments/some-uuid/ticket2579/integerdiv.patch) by rishi created at 2008-03-19 17:01:18
 
 
 

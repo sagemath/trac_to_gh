@@ -90,7 +90,7 @@ Changing assignee from mhansen to jbandlow.
 archive/issue_comments_034019.json:
 ```json
 {
-    "body": "Attachment\n\nFixed.  And lots of doctests added.",
+    "body": "Attachment [4541.patch](tarball://root/attachments/some-uuid/ticket4541/4541.patch) by jbandlow created at 2008-11-25 03:50:36\n\nFixed.  And lots of doctests added.",
     "created_at": "2008-11-25T03:50:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4541",
     "type": "issue_comment",
@@ -99,7 +99,7 @@ archive/issue_comments_034019.json:
 }
 ```
 
-Attachment
+Attachment [4541.patch](tarball://root/attachments/some-uuid/ticket4541/4541.patch) by jbandlow created at 2008-11-25 03:50:36
 
 Fixed.  And lots of doctests added.
 

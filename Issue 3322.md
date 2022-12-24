@@ -59,7 +59,7 @@ Michael
 archive/issue_comments_023034.json:
 ```json
 {
-    "body": "Attachment\n\nMerged in Sage 3.0.3.alpha0",
+    "body": "Attachment [trac_3322.patch](tarball://root/attachments/some-uuid/ticket3322/trac_3322.patch) by mabshoff created at 2008-05-28 14:29:42\n\nMerged in Sage 3.0.3.alpha0",
     "created_at": "2008-05-28T14:29:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3322",
     "type": "issue_comment",
@@ -68,7 +68,7 @@ archive/issue_comments_023034.json:
 }
 ```
 
-Attachment
+Attachment [trac_3322.patch](tarball://root/attachments/some-uuid/ticket3322/trac_3322.patch) by mabshoff created at 2008-05-28 14:29:42
 
 Merged in Sage 3.0.3.alpha0
 

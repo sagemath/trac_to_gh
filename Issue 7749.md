@@ -53,7 +53,7 @@ This will require the patch from ticket #7692.
 archive/issue_comments_066733.json:
 ```json
 {
-    "body": "Attachment\n\nI've uploaded a patch that does exactly what the ticket description says.  Note that the names.gz database file remains optional, in the sense that users can choose not to install it (e.g. by \"SloaneEncyclopedia.install(names_url=None)\").  This way, if you apply this patch with the stripped.gz database file already installed the only thing that shouldn't work is SloaneEncyclopedia.sequence_name(), which should raise an error when names.gz is not installed.  The only way to install names.gz is to install stripped.gz from scratch as well, though, to avoid renumbering and other possible incompatibility issues between different versions of the OEIS.",
+    "body": "Attachment [trac_7749.patch](tarball://root/attachments/some-uuid/ticket7749/trac_7749.patch) by ssivek created at 2009-12-23 04:11:39\n\nI've uploaded a patch that does exactly what the ticket description says.  Note that the names.gz database file remains optional, in the sense that users can choose not to install it (e.g. by \"SloaneEncyclopedia.install(names_url=None)\").  This way, if you apply this patch with the stripped.gz database file already installed the only thing that shouldn't work is SloaneEncyclopedia.sequence_name(), which should raise an error when names.gz is not installed.  The only way to install names.gz is to install stripped.gz from scratch as well, though, to avoid renumbering and other possible incompatibility issues between different versions of the OEIS.",
     "created_at": "2009-12-23T04:11:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7749",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_066733.json:
 }
 ```
 
-Attachment
+Attachment [trac_7749.patch](tarball://root/attachments/some-uuid/ticket7749/trac_7749.patch) by ssivek created at 2009-12-23 04:11:39
 
 I've uploaded a patch that does exactly what the ticket description says.  Note that the names.gz database file remains optional, in the sense that users can choose not to install it (e.g. by "SloaneEncyclopedia.install(names_url=None)").  This way, if you apply this patch with the stripped.gz database file already installed the only thing that shouldn't work is SloaneEncyclopedia.sequence_name(), which should raise an error when names.gz is not installed.  The only way to install names.gz is to install stripped.gz from scratch as well, though, to avoid renumbering and other possible incompatibility issues between different versions of the OEIS.
 

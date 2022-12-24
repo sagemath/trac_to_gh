@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4002
 archive/issue_comments_028903.json:
 ```json
 {
-    "body": "Attachment\n\nmhansen will finish `linearextensions.py`, I am now working on the few missing doctests in `graph_generators.py`",
+    "body": "Attachment [trac_4002.patch](tarball://root/attachments/some-uuid/ticket4002/trac_4002.patch) by rlm created at 2008-08-30 18:59:47\n\nmhansen will finish `linearextensions.py`, I am now working on the few missing doctests in `graph_generators.py`",
     "created_at": "2008-08-30T18:59:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4002",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_028903.json:
 }
 ```
 
-Attachment
+Attachment [trac_4002.patch](tarball://root/attachments/some-uuid/ticket4002/trac_4002.patch) by rlm created at 2008-08-30 18:59:47
 
 mhansen will finish `linearextensions.py`, I am now working on the few missing doctests in `graph_generators.py`
 
@@ -51,7 +51,7 @@ mhansen will finish `linearextensions.py`, I am now working on the few missing d
 archive/issue_comments_028904.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4002-ggen.patch](tarball://root/attachments/some-uuid/ticket4002/trac_4002-ggen.patch) by rlm created at 2008-08-30 19:08:01",
     "created_at": "2008-08-30T19:08:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4002",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_028904.json:
 }
 ```
 
-Attachment
+Attachment [trac_4002-ggen.patch](tarball://root/attachments/some-uuid/ticket4002/trac_4002-ggen.patch) by rlm created at 2008-08-30 19:08:01
 
 
 
@@ -69,7 +69,7 @@ Attachment
 archive/issue_comments_028905.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4002-3.patch](tarball://root/attachments/some-uuid/ticket4002/trac_4002-3.patch) by mhansen created at 2008-08-31 03:30:59",
     "created_at": "2008-08-31T03:30:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4002",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_028905.json:
 }
 ```
 
-Attachment
+Attachment [trac_4002-3.patch](tarball://root/attachments/some-uuid/ticket4002/trac_4002-3.patch) by mhansen created at 2008-08-31 03:30:59
 
 
 

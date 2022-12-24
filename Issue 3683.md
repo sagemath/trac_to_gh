@@ -127,7 +127,7 @@ This is a new patch based on sage 3.1.alpha0. Does not require other patches.
 archive/issue_comments_026087.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch 10128 fixes the bug Simon found (thanks Simon!).",
+    "body": "Attachment [10128.patch](tarball://root/attachments/some-uuid/ticket3683/10128.patch) by wdj created at 2008-08-03 02:57:32\n\nThe attached patch 10128 fixes the bug Simon found (thanks Simon!).",
     "created_at": "2008-08-03T02:57:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3683",
     "type": "issue_comment",
@@ -136,7 +136,7 @@ archive/issue_comments_026087.json:
 }
 ```
 
-Attachment
+Attachment [10128.patch](tarball://root/attachments/some-uuid/ticket3683/10128.patch) by wdj created at 2008-08-03 02:57:32
 
 The attached patch 10128 fixes the bug Simon found (thanks Simon!).
 
@@ -207,7 +207,7 @@ Regarding a "better" "smaller" example, they are not so easy to find! I did find
 archive/issue_comments_026090.json:
 ```json
 {
-    "body": "Attachment\n\nbased on 3.1.alpha0",
+    "body": "Attachment [10129.patch](tarball://root/attachments/some-uuid/ticket3683/10129.patch) by wdj created at 2008-08-12 18:36:47\n\nbased on 3.1.alpha0",
     "created_at": "2008-08-12T18:36:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3683",
     "type": "issue_comment",
@@ -216,7 +216,7 @@ archive/issue_comments_026090.json:
 }
 ```
 
-Attachment
+Attachment [10129.patch](tarball://root/attachments/some-uuid/ticket3683/10129.patch) by wdj created at 2008-08-12 18:36:47
 
 based on 3.1.alpha0
 
@@ -364,7 +364,7 @@ based on sage-3.1.alpha0, as the others
 archive/issue_comments_026097.json:
 ```json
 {
-    "body": "Attachment\n\nThe last patch 10130 is a docstring change only. \n\nFollowing Michael Abshoff's suggestion, I emailed sage-devel and mentioned the problem I was having with the random comments. It seems I was using the current_randstate().set_seed_gap() command incorrectly for the situation. I added some set_random_seed(n) statements (where n is chosen in a specific way) and removed the \"# random output\" comments. I did multiple test passes and this seems to work each time now.\n\nHopefully, with 10130, everyone is okay with this now.",
+    "body": "Attachment [10130.patch](tarball://root/attachments/some-uuid/ticket3683/10130.patch) by wdj created at 2008-08-13 20:57:39\n\nThe last patch 10130 is a docstring change only. \n\nFollowing Michael Abshoff's suggestion, I emailed sage-devel and mentioned the problem I was having with the random comments. It seems I was using the current_randstate().set_seed_gap() command incorrectly for the situation. I added some set_random_seed(n) statements (where n is chosen in a specific way) and removed the \"# random output\" comments. I did multiple test passes and this seems to work each time now.\n\nHopefully, with 10130, everyone is okay with this now.",
     "created_at": "2008-08-13T20:57:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3683",
     "type": "issue_comment",
@@ -373,7 +373,7 @@ archive/issue_comments_026097.json:
 }
 ```
 
-Attachment
+Attachment [10130.patch](tarball://root/attachments/some-uuid/ticket3683/10130.patch) by wdj created at 2008-08-13 20:57:39
 
 The last patch 10130 is a docstring change only. 
 

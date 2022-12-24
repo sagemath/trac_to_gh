@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2448
 archive/issue_comments_016543.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2448-ncalexan-doc-quadratic_forms-1.patch](tarball://root/attachments/some-uuid/ticket2448/2448-ncalexan-doc-quadratic_forms-1.patch) by ncalexan created at 2008-03-09 23:35:37",
     "created_at": "2008-03-09T23:35:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2448",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_016543.json:
 }
 ```
 
-Attachment
+Attachment [2448-ncalexan-doc-quadratic_forms-1.patch](tarball://root/attachments/some-uuid/ticket2448/2448-ncalexan-doc-quadratic_forms-1.patch) by ncalexan created at 2008-03-09 23:35:37
 
 
 

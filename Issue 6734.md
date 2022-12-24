@@ -49,7 +49,7 @@ based on Sage 4.1.1.rc2
 archive/issue_comments_055204.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6734-spell-check-stats.patch](tarball://root/attachments/some-uuid/ticket6734/trac_6734-spell-check-stats.patch) by mvngu created at 2009-08-11 08:57:23",
     "created_at": "2009-08-11T08:57:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6734",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_055204.json:
 }
 ```
 
-Attachment
+Attachment [trac_6734-spell-check-stats.patch](tarball://root/attachments/some-uuid/ticket6734/trac_6734-spell-check-stats.patch) by mvngu created at 2009-08-11 08:57:23
 
 
 

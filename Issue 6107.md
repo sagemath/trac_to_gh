@@ -49,7 +49,7 @@ Changing assignee from tbd to mhansen.
 archive/issue_comments_048795.json:
 ```json
 {
-    "body": "Attachment\n\nThis should fix problems with sage/calculus/all.py and the reference manual.",
+    "body": "Attachment [trac_6107.patch](tarball://root/attachments/some-uuid/ticket6107/trac_6107.patch) by mhansen created at 2009-05-21 05:54:39\n\nThis should fix problems with sage/calculus/all.py and the reference manual.",
     "created_at": "2009-05-21T05:54:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6107",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_048795.json:
 }
 ```
 
-Attachment
+Attachment [trac_6107.patch](tarball://root/attachments/some-uuid/ticket6107/trac_6107.patch) by mhansen created at 2009-05-21 05:54:39
 
 This should fix problems with sage/calculus/all.py and the reference manual.
 
@@ -105,7 +105,7 @@ Note that one followup patch is needed.  After that everything works (all long d
 archive/issue_comments_048798.json:
 ```json
 {
-    "body": "Attachment\n\nMerged in Sage 4.0.rc0.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac-6107-part2.patch](tarball://root/attachments/some-uuid/ticket6107/trac-6107-part2.patch) by mabshoff created at 2009-05-21 13:40:49\n\nMerged in Sage 4.0.rc0.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-21T13:40:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6107",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_048798.json:
 }
 ```
 
-Attachment
+Attachment [trac-6107-part2.patch](tarball://root/attachments/some-uuid/ticket6107/trac-6107-part2.patch) by mabshoff created at 2009-05-21 13:40:49
 
 Merged in Sage 4.0.rc0.
 

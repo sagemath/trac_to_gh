@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1701
 archive/issue_comments_010779.json:
 ```json
 {
-    "body": "Attachment\n\nI am under the impression that this patch already got merged, but I will investigate.\n\nCheers,\n\nMichael",
+    "body": "Attachment [currRing.patch](tarball://root/attachments/some-uuid/ticket1701/currRing.patch) by mabshoff created at 2008-01-06 16:10:52\n\nI am under the impression that this patch already got merged, but I will investigate.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-06T16:10:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1701",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_010779.json:
 }
 ```
 
-Attachment
+Attachment [currRing.patch](tarball://root/attachments/some-uuid/ticket1701/currRing.patch) by mabshoff created at 2008-01-06 16:10:52
 
 I am under the impression that this patch already got merged, but I will investigate.
 

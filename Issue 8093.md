@@ -72,7 +72,7 @@ Updated to synchronize with sage-combinat mercurial repository -- should be the 
 archive/issue_comments_070918.json:
 ```json
 {
-    "body": "Attachment\n\nApplies over the precedent patch",
+    "body": "Attachment [trac_8093_palindromes_prefixes-abm.patch](tarball://root/attachments/some-uuid/ticket8093/trac_8093_palindromes_prefixes-abm.patch) by slabbe created at 2010-01-31 23:14:01\n\nApplies over the precedent patch",
     "created_at": "2010-01-31T23:14:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8093",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_070918.json:
 }
 ```
 
-Attachment
+Attachment [trac_8093_palindromes_prefixes-abm.patch](tarball://root/attachments/some-uuid/ticket8093/trac_8093_palindromes_prefixes-abm.patch) by slabbe created at 2010-01-31 23:14:01
 
 Applies over the precedent patch
 
@@ -110,7 +110,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_070920.json:
 ```json
 {
-    "body": "Attachment\n\nAll tests passed in sage/combinat/words. Doc builds fine. Code is good.\n\nI added a small patch that edits the INPUT block and adds a TEST.\n\nPositive review.",
+    "body": "Attachment [trac_8093_doc_fixes-sl.patch](tarball://root/attachments/some-uuid/ticket8093/trac_8093_doc_fixes-sl.patch) by slabbe created at 2010-01-31 23:24:11\n\nAll tests passed in sage/combinat/words. Doc builds fine. Code is good.\n\nI added a small patch that edits the INPUT block and adds a TEST.\n\nPositive review.",
     "created_at": "2010-01-31T23:24:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8093",
     "type": "issue_comment",
@@ -119,7 +119,7 @@ archive/issue_comments_070920.json:
 }
 ```
 
-Attachment
+Attachment [trac_8093_doc_fixes-sl.patch](tarball://root/attachments/some-uuid/ticket8093/trac_8093_doc_fixes-sl.patch) by slabbe created at 2010-01-31 23:24:11
 
 All tests passed in sage/combinat/words. Doc builds fine. Code is good.
 

@@ -327,7 +327,7 @@ Michael
 archive/issue_comments_030425.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4192.patch](tarball://root/attachments/some-uuid/ticket4192/trac_4192.patch) by mhansen created at 2008-09-26 07:02:57",
     "created_at": "2008-09-26T07:02:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4192",
     "type": "issue_comment",
@@ -336,7 +336,7 @@ archive/issue_comments_030425.json:
 }
 ```
 
-Attachment
+Attachment [trac_4192.patch](tarball://root/attachments/some-uuid/ticket4192/trac_4192.patch) by mhansen created at 2008-09-26 07:02:57
 
 
 

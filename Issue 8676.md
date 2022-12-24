@@ -95,7 +95,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_078956.json:
 ```json
 {
-    "body": "Attachment\n\nbased on Sage 4.3.5; require #8513",
+    "body": "Attachment [trac_8676-document-cgraph.patch](tarball://root/attachments/some-uuid/ticket8676/trac_8676-document-cgraph.patch) by mvngu created at 2010-04-13 00:54:00\n\nbased on Sage 4.3.5; require #8513",
     "created_at": "2010-04-13T00:54:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8676",
     "type": "issue_comment",
@@ -104,7 +104,7 @@ archive/issue_comments_078956.json:
 }
 ```
 
-Attachment
+Attachment [trac_8676-document-cgraph.patch](tarball://root/attachments/some-uuid/ticket8676/trac_8676-document-cgraph.patch) by mvngu created at 2010-04-13 00:54:00
 
 based on Sage 4.3.5; require #8513
 

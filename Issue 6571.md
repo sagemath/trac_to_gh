@@ -164,7 +164,7 @@ Changing component from algebra to combinatorics.
 archive/issue_comments_053649.json:
 ```json
 {
-    "body": "Attachment\n\nThis file depends on #6519 as well as on #5600",
+    "body": "Attachment [word_iter_morphism_6571-sl.patch](tarball://root/attachments/some-uuid/ticket6571/word_iter_morphism_6571-sl.patch) by slabbe created at 2009-08-19 17:53:42\n\nThis file depends on #6519 as well as on #5600",
     "created_at": "2009-08-19T17:53:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6571",
     "type": "issue_comment",
@@ -173,7 +173,7 @@ archive/issue_comments_053649.json:
 }
 ```
 
-Attachment
+Attachment [word_iter_morphism_6571-sl.patch](tarball://root/attachments/some-uuid/ticket6571/word_iter_morphism_6571-sl.patch) by slabbe created at 2009-08-19 17:53:42
 
 This file depends on #6519 as well as on #5600
 
@@ -244,7 +244,7 @@ Apply on top of word_iter_morphism_6571-sl.patch
 archive/issue_comments_053653.json:
 ```json
 {
-    "body": "Attachment\n\nIn case it matters: I applied the patches from #5600 before word_iter_morphism_6571-sl.patch.",
+    "body": "Attachment [trac_6571-reviewer.patch](tarball://root/attachments/some-uuid/ticket6571/trac_6571-reviewer.patch) by saliola created at 2009-08-24 20:49:43\n\nIn case it matters: I applied the patches from #5600 before word_iter_morphism_6571-sl.patch.",
     "created_at": "2009-08-24T20:49:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6571",
     "type": "issue_comment",
@@ -253,7 +253,7 @@ archive/issue_comments_053653.json:
 }
 ```
 
-Attachment
+Attachment [trac_6571-reviewer.patch](tarball://root/attachments/some-uuid/ticket6571/trac_6571-reviewer.patch) by saliola created at 2009-08-24 20:49:43
 
 In case it matters: I applied the patches from #5600 before word_iter_morphism_6571-sl.patch.
 
@@ -282,7 +282,7 @@ This patch applies over the precedent two.
 archive/issue_comments_053655.json:
 ```json
 {
-    "body": "Attachment\n\nThanks Franco for your good review. I didn't know about `IntegerListsLex`. Allowing erasing morphism is great as well. I just added a small patch to correct a word in a one-line comment. I am currently building the documentation...",
+    "body": "Attachment [trac_6571-seb-review.patch](tarball://root/attachments/some-uuid/ticket6571/trac_6571-seb-review.patch) by slabbe created at 2009-08-25 18:53:13\n\nThanks Franco for your good review. I didn't know about `IntegerListsLex`. Allowing erasing morphism is great as well. I just added a small patch to correct a word in a one-line comment. I am currently building the documentation...",
     "created_at": "2009-08-25T18:53:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6571",
     "type": "issue_comment",
@@ -291,7 +291,7 @@ archive/issue_comments_053655.json:
 }
 ```
 
-Attachment
+Attachment [trac_6571-seb-review.patch](tarball://root/attachments/some-uuid/ticket6571/trac_6571-seb-review.patch) by slabbe created at 2009-08-25 18:53:13
 
 Thanks Franco for your good review. I didn't know about `IntegerListsLex`. Allowing erasing morphism is great as well. I just added a small patch to correct a word in a one-line comment. I am currently building the documentation...
 
@@ -302,7 +302,7 @@ Thanks Franco for your good review. I didn't know about `IntegerListsLex`. Allow
 archive/issue_comments_053656.json:
 ```json
 {
-    "body": "Attachment\n\nApplies over the precedent three patches.",
+    "body": "Attachment [trac_6571-ReST-bug.patch](tarball://root/attachments/some-uuid/ticket6571/trac_6571-ReST-bug.patch) by slabbe created at 2009-08-25 19:44:25\n\nApplies over the precedent three patches.",
     "created_at": "2009-08-25T19:44:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6571",
     "type": "issue_comment",
@@ -311,7 +311,7 @@ archive/issue_comments_053656.json:
 }
 ```
 
-Attachment
+Attachment [trac_6571-ReST-bug.patch](tarball://root/attachments/some-uuid/ticket6571/trac_6571-ReST-bug.patch) by slabbe created at 2009-08-25 19:44:25
 
 Applies over the precedent three patches.
 

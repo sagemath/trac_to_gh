@@ -200,7 +200,7 @@ archive/issue_comments_018922.json:
 archive/issue_comments_018923.json:
 ```json
 {
-    "body": "Attachment\n\nbased on Sage 4.1.2.alpha4",
+    "body": "Attachment [plot-sin.png](tarball://root/attachments/some-uuid/ticket2754/plot-sin.png) by mvngu created at 2009-09-29 15:57:04\n\nbased on Sage 4.1.2.alpha4",
     "created_at": "2009-09-29T15:57:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2754",
     "type": "issue_comment",
@@ -209,7 +209,7 @@ archive/issue_comments_018923.json:
 }
 ```
 
-Attachment
+Attachment [plot-sin.png](tarball://root/attachments/some-uuid/ticket2754/plot-sin.png) by mvngu created at 2009-09-29 15:57:04
 
 based on Sage 4.1.2.alpha4
 

@@ -80,7 +80,7 @@ trivial patch to rename the binary in DikSolver
 archive/issue_comments_017755.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_2595.patch](tarball://root/attachments/some-uuid/ticket2595/trac_2595.patch) by mabshoff created at 2008-03-21 12:27:49",
     "created_at": "2008-03-21T12:27:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2595",
     "type": "issue_comment",
@@ -89,7 +89,7 @@ archive/issue_comments_017755.json:
 }
 ```
 
-Attachment
+Attachment [trac_2595.patch](tarball://root/attachments/some-uuid/ticket2595/trac_2595.patch) by mabshoff created at 2008-03-21 12:27:49
 
 
 

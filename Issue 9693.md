@@ -236,7 +236,7 @@ Dave
 archive/issue_comments_094212.json:
 ```json
 {
-    "body": "Attachment\n\nMercurial patch which changes computing asinh(1.0) to asinh(2.0)",
+    "body": "Attachment [9693-asinh-1.0-to-asinh-2.0.patch](tarball://root/attachments/some-uuid/ticket9693/9693-asinh-1.0-to-asinh-2.0.patch) by drkirkby created at 2010-08-19 04:11:49\n\nMercurial patch which changes computing asinh(1.0) to asinh(2.0)",
     "created_at": "2010-08-19T04:11:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9693",
     "type": "issue_comment",
@@ -245,7 +245,7 @@ archive/issue_comments_094212.json:
 }
 ```
 
-Attachment
+Attachment [9693-asinh-1.0-to-asinh-2.0.patch](tarball://root/attachments/some-uuid/ticket9693/9693-asinh-1.0-to-asinh-2.0.patch) by drkirkby created at 2010-08-19 04:11:49
 
 Mercurial patch which changes computing asinh(1.0) to asinh(2.0)
 

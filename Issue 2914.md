@@ -89,7 +89,7 @@ Changing assignee from mabshoff to somebody.
 archive/issue_comments_020070.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-2914.patch](tarball://root/attachments/some-uuid/ticket2914/sage-2914.patch) by was created at 2008-04-14 04:42:04",
     "created_at": "2008-04-14T04:42:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2914",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_020070.json:
 }
 ```
 
-Attachment
+Attachment [sage-2914.patch](tarball://root/attachments/some-uuid/ticket2914/sage-2914.patch) by was created at 2008-04-14 04:42:04
 
 
 
@@ -186,7 +186,7 @@ apply this instead of previous version
 archive/issue_comments_020075.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-2914_nuke_em.patch](tarball://root/attachments/some-uuid/ticket2914/sage-2914_nuke_em.patch) by was created at 2008-04-14 14:49:07",
     "created_at": "2008-04-14T14:49:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2914",
     "type": "issue_comment",
@@ -195,7 +195,7 @@ archive/issue_comments_020075.json:
 }
 ```
 
-Attachment
+Attachment [sage-2914_nuke_em.patch](tarball://root/attachments/some-uuid/ticket2914/sage-2914_nuke_em.patch) by was created at 2008-04-14 14:49:07
 
 
 

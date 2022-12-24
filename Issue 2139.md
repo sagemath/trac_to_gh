@@ -75,7 +75,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2139
 archive/issue_comments_014024.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [set_partition.patch](tarball://root/attachments/some-uuid/ticket2139/set_partition.patch) by mhansen created at 2008-02-11 06:40:56",
     "created_at": "2008-02-11T06:40:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2139",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_014024.json:
 }
 ```
 
-Attachment
+Attachment [set_partition.patch](tarball://root/attachments/some-uuid/ticket2139/set_partition.patch) by mhansen created at 2008-02-11 06:40:56
 
 
 

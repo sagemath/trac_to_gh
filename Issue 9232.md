@@ -409,7 +409,7 @@ Changing status from new to needs_work.
 archive/issue_comments_086641.json:
 ```json
 {
-    "body": "Attachment\n\nplot3d/base.pyx fixes to launch Jmol from cmd line",
+    "body": "Attachment [trac_9232_plot3d_base_pyx.patch](tarball://root/attachments/some-uuid/ticket9232/trac_9232_plot3d_base_pyx.patch) by gutow created at 2011-03-22 14:49:28\n\nplot3d/base.pyx fixes to launch Jmol from cmd line",
     "created_at": "2011-03-22T14:49:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
@@ -418,7 +418,7 @@ archive/issue_comments_086641.json:
 }
 ```
 
-Attachment
+Attachment [trac_9232_plot3d_base_pyx.patch](tarball://root/attachments/some-uuid/ticket9232/trac_9232_plot3d_base_pyx.patch) by gutow created at 2011-03-22 14:49:28
 
 plot3d/base.pyx fixes to launch Jmol from cmd line
 
@@ -447,7 +447,7 @@ Notebook fixes for launch Jmol from cmd line
 archive/issue_comments_086643.json:
 ```json
 {
-    "body": "Attachment\n\nThe above patches combined with installation of a newer version of Jmol fix this problem for Sage 4.6.2.  To install the new Jmol\n\n```\n./sage -f \"http://www.uwosh.edu/faculty_staff/gutow/Jmol_for_SageNoteBook-1.1.5.spkg\"\n```\n\n\nNote that my linux and MacOS versions of sage seemed to have slightly different mercurial tracking.  On MacOS you get a warning about the SageMenu.mnu file, when you apply the notebook_fixes patch.  That is OK, the other untracked files are properly added.",
+    "body": "Attachment [trac_9232_notebook_fixes.patch](tarball://root/attachments/some-uuid/ticket9232/trac_9232_notebook_fixes.patch) by gutow created at 2011-03-22 15:09:44\n\nThe above patches combined with installation of a newer version of Jmol fix this problem for Sage 4.6.2.  To install the new Jmol\n\n```\n./sage -f \"http://www.uwosh.edu/faculty_staff/gutow/Jmol_for_SageNoteBook-1.1.5.spkg\"\n```\n\n\nNote that my linux and MacOS versions of sage seemed to have slightly different mercurial tracking.  On MacOS you get a warning about the SageMenu.mnu file, when you apply the notebook_fixes patch.  That is OK, the other untracked files are properly added.",
     "created_at": "2011-03-22T15:09:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
@@ -456,7 +456,7 @@ archive/issue_comments_086643.json:
 }
 ```
 
-Attachment
+Attachment [trac_9232_notebook_fixes.patch](tarball://root/attachments/some-uuid/ticket9232/trac_9232_notebook_fixes.patch) by gutow created at 2011-03-22 15:09:44
 
 The above patches combined with installation of a newer version of Jmol fix this problem for Sage 4.6.2.  To install the new Jmol
 
@@ -835,7 +835,7 @@ Yes, it would be fine to move `trac_10286_call_jmol_correctly.patch` here. Only 
 archive/issue_comments_086658.json:
 ```json
 {
-    "body": "Attachment\n\nApply this second.",
+    "body": "Attachment [trac_9232_call_jmol_correctly.patch](tarball://root/attachments/some-uuid/ticket9232/trac_9232_call_jmol_correctly.patch) by kcrisman created at 2011-03-25 18:44:00\n\nApply this second.",
     "created_at": "2011-03-25T18:44:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
@@ -844,7 +844,7 @@ archive/issue_comments_086658.json:
 }
 ```
 
-Attachment
+Attachment [trac_9232_call_jmol_correctly.patch](tarball://root/attachments/some-uuid/ticket9232/trac_9232_call_jmol_correctly.patch) by kcrisman created at 2011-03-25 18:44:00
 
 Apply this second.
 
@@ -991,7 +991,7 @@ I'm just testing quick, and then I'll post patches.  Since they aren't mine, I f
 archive/issue_comments_086666.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9232-lighting.patch](tarball://root/attachments/some-uuid/ticket9232/trac_9232-lighting.patch) by kcrisman created at 2011-03-29 13:36:54",
     "created_at": "2011-03-29T13:36:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
@@ -1000,7 +1000,7 @@ archive/issue_comments_086666.json:
 }
 ```
 
-Attachment
+Attachment [trac_9232-lighting.patch](tarball://root/attachments/some-uuid/ticket9232/trac_9232-lighting.patch) by kcrisman created at 2011-03-29 13:36:54
 
 
 

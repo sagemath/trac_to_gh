@@ -53,7 +53,7 @@ Changing status from new to assigned.
 archive/issue_comments_041789.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5406-deps.patch](tarball://root/attachments/some-uuid/ticket5406/trac_5406-deps.patch) by mabshoff created at 2009-03-01 05:34:48",
     "created_at": "2009-03-01T05:34:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5406",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_041789.json:
 }
 ```
 
-Attachment
+Attachment [trac_5406-deps.patch](tarball://root/attachments/some-uuid/ticket5406/trac_5406-deps.patch) by mabshoff created at 2009-03-01 05:34:48
 
 
 
@@ -71,7 +71,7 @@ Attachment
 archive/issue_comments_041790.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5406-install.patch](tarball://root/attachments/some-uuid/ticket5406/trac_5406-install.patch) by mabshoff created at 2009-03-01 05:34:56",
     "created_at": "2009-03-01T05:34:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5406",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_041790.json:
 }
 ```
 
-Attachment
+Attachment [trac_5406-install.patch](tarball://root/attachments/some-uuid/ticket5406/trac_5406-install.patch) by mabshoff created at 2009-03-01 05:34:56
 
 
 

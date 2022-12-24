@@ -64,7 +64,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4362
 archive/issue_comments_032044.json:
 ```json
 {
-    "body": "Attachment\n\nFirst of Dan's patches from #4355",
+    "body": "Attachment [tableaux_output.patch](tarball://root/attachments/some-uuid/ticket4362/tableaux_output.patch) by mabshoff created at 2008-10-24 11:40:20\n\nFirst of Dan's patches from #4355",
     "created_at": "2008-10-24T11:40:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4362",
     "type": "issue_comment",
@@ -73,7 +73,7 @@ archive/issue_comments_032044.json:
 }
 ```
 
-Attachment
+Attachment [tableaux_output.patch](tarball://root/attachments/some-uuid/ticket4362/tableaux_output.patch) by mabshoff created at 2008-10-24 11:40:20
 
 First of Dan's patches from #4355
 
@@ -84,7 +84,7 @@ First of Dan's patches from #4355
 archive/issue_comments_032045.json:
 ```json
 {
-    "body": "Attachment\n\nSecond of Dan's patches from #4355",
+    "body": "Attachment [tableaux_output1.patch](tarball://root/attachments/some-uuid/ticket4362/tableaux_output1.patch) by mabshoff created at 2008-10-24 11:40:42\n\nSecond of Dan's patches from #4355",
     "created_at": "2008-10-24T11:40:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4362",
     "type": "issue_comment",
@@ -93,7 +93,7 @@ archive/issue_comments_032045.json:
 }
 ```
 
-Attachment
+Attachment [tableaux_output1.patch](tarball://root/attachments/some-uuid/ticket4362/tableaux_output1.patch) by mabshoff created at 2008-10-24 11:40:42
 
 Second of Dan's patches from #4355
 
@@ -146,7 +146,7 @@ I tested this out on all the examples, and it looks good to me.
 archive/issue_comments_032048.json:
 ```json
 {
-    "body": "Attachment\n\nNicolas suggested that the tests should reflect the problem. As it turns out the existing tests all have square tableaux (in tensor_product.py, tableau.py and output.py) which is a rare case that is not broke for the original code.\n\nhttp://groups.google.com/group/sage-combinat-devel/msg/cd0de81b0e2f0ae5?hl=en\n\nNicolas posted this before Mike reviewed the patch. In view of Nicolas' comment I'm uploading\na third patch tableaux_output2.patch that makes the tests non-rectangular tableaux\nfor which the original code was broke.",
+    "body": "Attachment [tableaux_output2.patch](tarball://root/attachments/some-uuid/ticket4362/tableaux_output2.patch) by bump created at 2008-11-06 23:11:54\n\nNicolas suggested that the tests should reflect the problem. As it turns out the existing tests all have square tableaux (in tensor_product.py, tableau.py and output.py) which is a rare case that is not broke for the original code.\n\nhttp://groups.google.com/group/sage-combinat-devel/msg/cd0de81b0e2f0ae5?hl=en\n\nNicolas posted this before Mike reviewed the patch. In view of Nicolas' comment I'm uploading\na third patch tableaux_output2.patch that makes the tests non-rectangular tableaux\nfor which the original code was broke.",
     "created_at": "2008-11-06T23:11:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4362",
     "type": "issue_comment",
@@ -155,7 +155,7 @@ archive/issue_comments_032048.json:
 }
 ```
 
-Attachment
+Attachment [tableaux_output2.patch](tarball://root/attachments/some-uuid/ticket4362/tableaux_output2.patch) by bump created at 2008-11-06 23:11:54
 
 Nicolas suggested that the tests should reflect the problem. As it turns out the existing tests all have square tableaux (in tensor_product.py, tableau.py and output.py) which is a rare case that is not broke for the original code.
 

@@ -74,7 +74,7 @@ Changing status from new to assigned.
 archive/issue_comments_013770.json:
 ```json
 {
-    "body": "Attachment\n\nCause no problems with -testall on my machine.",
+    "body": "Attachment [2112.patch](tarball://root/attachments/some-uuid/ticket2112/2112.patch) by mhansen created at 2008-02-08 14:21:50\n\nCause no problems with -testall on my machine.",
     "created_at": "2008-02-08T14:21:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2112",
     "type": "issue_comment",
@@ -83,7 +83,7 @@ archive/issue_comments_013770.json:
 }
 ```
 
-Attachment
+Attachment [2112.patch](tarball://root/attachments/some-uuid/ticket2112/2112.patch) by mhansen created at 2008-02-08 14:21:50
 
 Cause no problems with -testall on my machine.
 

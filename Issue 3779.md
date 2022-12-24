@@ -118,7 +118,7 @@ Changing status from new to assigned.
 archive/issue_comments_026872.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me, and fixes the bug. The only question I had is why you wrote tuple([]) rather than (), but I'm OK with that.",
+    "body": "Attachment [trac_3779.patch](tarball://root/attachments/some-uuid/ticket3779/trac_3779.patch) by robertwb created at 2008-08-07 02:02:48\n\nLooks good to me, and fixes the bug. The only question I had is why you wrote tuple([]) rather than (), but I'm OK with that.",
     "created_at": "2008-08-07T02:02:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3779",
     "type": "issue_comment",
@@ -127,7 +127,7 @@ archive/issue_comments_026872.json:
 }
 ```
 
-Attachment
+Attachment [trac_3779.patch](tarball://root/attachments/some-uuid/ticket3779/trac_3779.patch) by robertwb created at 2008-08-07 02:02:48
 
 Looks good to me, and fixes the bug. The only question I had is why you wrote tuple([]) rather than (), but I'm OK with that.
 
@@ -156,7 +156,7 @@ There's no real reason -- it's just what I happened to type :-)
 archive/issue_comments_026874.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3779-2.patch](tarball://root/attachments/some-uuid/ticket3779/trac_3779-2.patch) by mhansen created at 2008-08-10 06:13:37",
     "created_at": "2008-08-10T06:13:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3779",
     "type": "issue_comment",
@@ -165,7 +165,7 @@ archive/issue_comments_026874.json:
 }
 ```
 
-Attachment
+Attachment [trac_3779-2.patch](tarball://root/attachments/some-uuid/ticket3779/trac_3779-2.patch) by mhansen created at 2008-08-10 06:13:37
 
 
 

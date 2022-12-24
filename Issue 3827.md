@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3827
 archive/issue_comments_027226.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-randomize.patch](tarball://root/attachments/some-uuid/ticket3827/sage-randomize.patch) by cswiercz created at 2008-08-12 23:44:22",
     "created_at": "2008-08-12T23:44:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3827",
     "type": "issue_comment",
@@ -53,7 +53,7 @@ archive/issue_comments_027226.json:
 }
 ```
 
-Attachment
+Attachment [sage-randomize.patch](tarball://root/attachments/some-uuid/ticket3827/sage-randomize.patch) by cswiercz created at 2008-08-12 23:44:22
 
 
 

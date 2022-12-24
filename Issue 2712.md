@@ -60,7 +60,7 @@ The patch is against a clean 2.10.4 tree.
 archive/issue_comments_018695.json:
 ```json
 {
-    "body": "Attachment\n\nPatch implementing the element methods described above.",
+    "body": "Attachment [Trac2712.patch](tarball://root/attachments/some-uuid/ticket2712/Trac2712.patch) by justin created at 2008-03-28 23:04:38\n\nPatch implementing the element methods described above.",
     "created_at": "2008-03-28T23:04:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2712",
     "type": "issue_comment",
@@ -69,7 +69,7 @@ archive/issue_comments_018695.json:
 }
 ```
 
-Attachment
+Attachment [Trac2712.patch](tarball://root/attachments/some-uuid/ticket2712/Trac2712.patch) by justin created at 2008-03-28 23:04:38
 
 Patch implementing the element methods described above.
 

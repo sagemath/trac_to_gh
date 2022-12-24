@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2759
 archive/issue_comments_018964.json:
 ```json
 {
-    "body": "Attachment\n\nPatch looks good to me. One problem is that it is against some non-existing repo, i.e. one that should be in `data/extcode/dist`. I don't have one there and all the files are check into the repo in `data/extcode/`. I applied the patch via GNU patch and committed in Tim's name. The applied patch is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0/alpha0/trac_2759_sage-debian-build.patch\n\nCheers,\n\nMichael",
+    "body": "Attachment [sage-debian-build.patch](tarball://root/attachments/some-uuid/ticket2759/sage-debian-build.patch) by mabshoff created at 2008-04-01 19:28:36\n\nPatch looks good to me. One problem is that it is against some non-existing repo, i.e. one that should be in `data/extcode/dist`. I don't have one there and all the files are check into the repo in `data/extcode/`. I applied the patch via GNU patch and committed in Tim's name. The applied patch is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0/alpha0/trac_2759_sage-debian-build.patch\n\nCheers,\n\nMichael",
     "created_at": "2008-04-01T19:28:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2759",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_018964.json:
 }
 ```
 
-Attachment
+Attachment [sage-debian-build.patch](tarball://root/attachments/some-uuid/ticket2759/sage-debian-build.patch) by mabshoff created at 2008-04-01 19:28:36
 
 Patch looks good to me. One problem is that it is against some non-existing repo, i.e. one that should be in `data/extcode/dist`. I don't have one there and all the files are check into the repo in `data/extcode/`. I applied the patch via GNU patch and committed in Tim's name. The applied patch is at
 

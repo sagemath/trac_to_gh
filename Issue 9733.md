@@ -59,7 +59,7 @@ svn diff -r 13112:13110 http://www.singular.uni-kl.de/svn/
 archive/issue_comments_095118.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [SingularSvn13111-13112.patch](tarball://root/attachments/some-uuid/ticket9733/SingularSvn13111-13112.patch) by AlexanderDreyer created at 2010-08-12 12:20:58",
     "created_at": "2010-08-12T12:20:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
@@ -68,7 +68,7 @@ archive/issue_comments_095118.json:
 }
 ```
 
-Attachment
+Attachment [SingularSvn13111-13112.patch](tarball://root/attachments/some-uuid/ticket9733/SingularSvn13111-13112.patch) by AlexanderDreyer created at 2010-08-12 12:20:58
 
 
 
@@ -172,7 +172,7 @@ replace make by ${MAKE} in top Makefile.in
 archive/issue_comments_095124.json:
 ```json
 {
-    "body": "Attachment\n\nBut that's actually not a problem for the spkg, because the `spkg-install` does not call these target from the top-level `Makefile`.",
+    "body": "Attachment [singular-3.1.1.4-MAKE.patch](tarball://root/attachments/some-uuid/ticket9733/singular-3.1.1.4-MAKE.patch) by AlexanderDreyer created at 2010-08-13 11:35:31\n\nBut that's actually not a problem for the spkg, because the `spkg-install` does not call these target from the top-level `Makefile`.",
     "created_at": "2010-08-13T11:35:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
@@ -181,7 +181,7 @@ archive/issue_comments_095124.json:
 }
 ```
 
-Attachment
+Attachment [singular-3.1.1.4-MAKE.patch](tarball://root/attachments/some-uuid/ticket9733/singular-3.1.1.4-MAKE.patch) by AlexanderDreyer created at 2010-08-13 11:35:31
 
 But that's actually not a problem for the spkg, because the `spkg-install` does not call these target from the top-level `Makefile`.
 
@@ -567,7 +567,7 @@ THis patch adresses ranlib issue of comment 21
 archive/issue_comments_095143.json:
 ```json
 {
-    "body": "Attachment\n\n>  * 50 of 50 parallel installs of `singular-3-1-1-4.p1.spkg` succeed on sage.math with [ccache](http://ccache.samba.org/) *enabled*.  However, 5 of the runs (not including the last) have the message `ranlib: 'libkernel_g.a': No such file`.  Is this a problem?  [Here's](http://sage.math.washington.edu/home/mpatel/trac/9733/singular-3-1-1-4-j20.log.6) a sample log file.  After the last run, I ran the long doctests.  They pass.  \nI think I have fixed that issue, see the patche above and the new spkg at http://sage.math.washington.edu/home/dreyer/spkg/singular-3-1-1-4.p1.spkg (same place)\n\n>  * Are the object files for `libcf.a`, `libsingcf_g.a`, `libfac.a`, and `libsingfac.a` built in parallel?\nFrom the Makefiles there's no restriction, so the dependencies of each of which can be build in parallel. But there may be dependencies, that that there is no parallel build in fact.\n\n>  * Is the message `install:  libsingcf_p.a does not exist` harmless?  It's printed three times per install.\n> \n> I did all of the runs above under `/scratch`.\nAs fbissey said, this should not cause problems here.",
+    "body": "Attachment [ranlib_libkernel.patch](tarball://root/attachments/some-uuid/ticket9733/ranlib_libkernel.patch) by AlexanderDreyer created at 2010-09-10 08:18:06\n\n>  * 50 of 50 parallel installs of `singular-3-1-1-4.p1.spkg` succeed on sage.math with [ccache](http://ccache.samba.org/) *enabled*.  However, 5 of the runs (not including the last) have the message `ranlib: 'libkernel_g.a': No such file`.  Is this a problem?  [Here's](http://sage.math.washington.edu/home/mpatel/trac/9733/singular-3-1-1-4-j20.log.6) a sample log file.  After the last run, I ran the long doctests.  They pass.  \nI think I have fixed that issue, see the patche above and the new spkg at http://sage.math.washington.edu/home/dreyer/spkg/singular-3-1-1-4.p1.spkg (same place)\n\n>  * Are the object files for `libcf.a`, `libsingcf_g.a`, `libfac.a`, and `libsingfac.a` built in parallel?\nFrom the Makefiles there's no restriction, so the dependencies of each of which can be build in parallel. But there may be dependencies, that that there is no parallel build in fact.\n\n>  * Is the message `install:  libsingcf_p.a does not exist` harmless?  It's printed three times per install.\n> \n> I did all of the runs above under `/scratch`.\nAs fbissey said, this should not cause problems here.",
     "created_at": "2010-09-10T08:18:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
@@ -576,7 +576,7 @@ archive/issue_comments_095143.json:
 }
 ```
 
-Attachment
+Attachment [ranlib_libkernel.patch](tarball://root/attachments/some-uuid/ticket9733/ranlib_libkernel.patch) by AlexanderDreyer created at 2010-09-10 08:18:06
 
 >  * 50 of 50 parallel installs of `singular-3-1-1-4.p1.spkg` succeed on sage.math with [ccache](http://ccache.samba.org/) *enabled*.  However, 5 of the runs (not including the last) have the message `ranlib: 'libkernel_g.a': No such file`.  Is this a problem?  [Here's](http://sage.math.washington.edu/home/mpatel/trac/9733/singular-3-1-1-4-j20.log.6) a sample log file.  After the last run, I ran the long doctests.  They pass.  
 I think I have fixed that issue, see the patche above and the new spkg at http://sage.math.washington.edu/home/dreyer/spkg/singular-3-1-1-4.p1.spkg (same place)
@@ -1002,7 +1002,7 @@ Dave
 archive/issue_comments_095162.json:
 ```json
 {
-    "body": "Attachment\n\nLog of a failed build on a Sun Ultra 27 (4 cores, hyperthreaded), using MAKKE=\"make -j12\"",
+    "body": "Attachment [singular-3-1-1-4.p1.log](tarball://root/attachments/some-uuid/ticket9733/singular-3-1-1-4.p1.log) by drkirkby created at 2010-09-17 07:28:58\n\nLog of a failed build on a Sun Ultra 27 (4 cores, hyperthreaded), using MAKKE=\"make -j12\"",
     "created_at": "2010-09-17T07:28:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
@@ -1011,7 +1011,7 @@ archive/issue_comments_095162.json:
 }
 ```
 
-Attachment
+Attachment [singular-3-1-1-4.p1.log](tarball://root/attachments/some-uuid/ticket9733/singular-3-1-1-4.p1.log) by drkirkby created at 2010-09-17 07:28:58
 
 Log of a failed build on a Sun Ultra 27 (4 cores, hyperthreaded), using MAKKE="make -j12"
 
@@ -1076,7 +1076,7 @@ The patch I just posted has unforseen issues, so don't use it.
 archive/issue_comments_095166.json:
 ```json
 {
-    "body": "Attachment\n\ntentative patch for the latest parallel make issue (bis repetitas)",
+    "body": "Attachment [singular-3.1.1.4-parrallelmake-2.patch](tarball://root/attachments/some-uuid/ticket9733/singular-3.1.1.4-parrallelmake-2.patch) by fbissey created at 2010-09-17 11:47:09\n\ntentative patch for the latest parallel make issue (bis repetitas)",
     "created_at": "2010-09-17T11:47:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
@@ -1085,7 +1085,7 @@ archive/issue_comments_095166.json:
 }
 ```
 
-Attachment
+Attachment [singular-3.1.1.4-parrallelmake-2.patch](tarball://root/attachments/some-uuid/ticket9733/singular-3.1.1.4-parrallelmake-2.patch) by fbissey created at 2010-09-17 11:47:09
 
 tentative patch for the latest parallel make issue (bis repetitas)
 
@@ -1211,7 +1211,7 @@ Another missing dependency
 archive/issue_comments_095172.json:
 ```json
 {
-    "body": "Attachment\n\nI attached another patch, which should fix this issue.\nThe spkg is here:\nhttp://sage.math.washington.edu/home/dreyer/spkg/singular-3-1-1-4.p2.spkg",
+    "body": "Attachment [factory-GNUmakefile.in.patch](tarball://root/attachments/some-uuid/ticket9733/factory-GNUmakefile.in.patch) by AlexanderDreyer created at 2010-09-17 13:20:41\n\nI attached another patch, which should fix this issue.\nThe spkg is here:\nhttp://sage.math.washington.edu/home/dreyer/spkg/singular-3-1-1-4.p2.spkg",
     "created_at": "2010-09-17T13:20:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
@@ -1220,7 +1220,7 @@ archive/issue_comments_095172.json:
 }
 ```
 
-Attachment
+Attachment [factory-GNUmakefile.in.patch](tarball://root/attachments/some-uuid/ticket9733/factory-GNUmakefile.in.patch) by AlexanderDreyer created at 2010-09-17 13:20:41
 
 I attached another patch, which should fix this issue.
 The spkg is here:
@@ -1507,7 +1507,7 @@ fixing parallel make issue in libfac
 archive/issue_comments_095184.json:
 ```json
 {
-    "body": "Attachment\n\nSo he reported back and the patch worked for him.",
+    "body": "Attachment [singular-3.1.1.4-parrallelmake-3.patch](tarball://root/attachments/some-uuid/ticket9733/singular-3.1.1.4-parrallelmake-3.patch) by fbissey created at 2010-09-19 03:17:47\n\nSo he reported back and the patch worked for him.",
     "created_at": "2010-09-19T03:17:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
@@ -1516,7 +1516,7 @@ archive/issue_comments_095184.json:
 }
 ```
 
-Attachment
+Attachment [singular-3.1.1.4-parrallelmake-3.patch](tarball://root/attachments/some-uuid/ticket9733/singular-3.1.1.4-parrallelmake-3.patch) by fbissey created at 2010-09-19 03:17:47
 
 So he reported back and the patch worked for him.
 

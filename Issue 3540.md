@@ -56,7 +56,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3540
 archive/issue_comments_025019.json:
 ```json
 {
-    "body": "Attachment\n\nfixes SIGSEGV in first patch",
+    "body": "Attachment [trac3540-augment-gf2.patch](tarball://root/attachments/some-uuid/ticket3540/trac3540-augment-gf2.patch) by malb created at 2008-07-02 20:30:51\n\nfixes SIGSEGV in first patch",
     "created_at": "2008-07-02T20:30:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3540",
     "type": "issue_comment",
@@ -65,7 +65,7 @@ archive/issue_comments_025019.json:
 }
 ```
 
-Attachment
+Attachment [trac3540-augment-gf2.patch](tarball://root/attachments/some-uuid/ticket3540/trac3540-augment-gf2.patch) by malb created at 2008-07-02 20:30:51
 
 fixes SIGSEGV in first patch
 
@@ -76,7 +76,7 @@ fixes SIGSEGV in first patch
 archive/issue_comments_025020.json:
 ```json
 {
-    "body": "Attachment\n\nThe original patch introduced a SIGSEGV which I've fixed in `trac-3540-augment-fix.patch`. Together with my fix I'll give it a positive review, so somebody needs to approve my fix.",
+    "body": "Attachment [trac3540-augment-gf2-fix.patch](tarball://root/attachments/some-uuid/ticket3540/trac3540-augment-gf2-fix.patch) by malb created at 2008-07-02 20:31:59\n\nThe original patch introduced a SIGSEGV which I've fixed in `trac-3540-augment-fix.patch`. Together with my fix I'll give it a positive review, so somebody needs to approve my fix.",
     "created_at": "2008-07-02T20:31:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3540",
     "type": "issue_comment",
@@ -85,7 +85,7 @@ archive/issue_comments_025020.json:
 }
 ```
 
-Attachment
+Attachment [trac3540-augment-gf2-fix.patch](tarball://root/attachments/some-uuid/ticket3540/trac3540-augment-gf2-fix.patch) by malb created at 2008-07-02 20:31:59
 
 The original patch introduced a SIGSEGV which I've fixed in `trac-3540-augment-fix.patch`. Together with my fix I'll give it a positive review, so somebody needs to approve my fix.
 

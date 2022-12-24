@@ -63,7 +63,7 @@ Changing status from new to needs_review.
 archive/issue_comments_063234.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7487.patch](tarball://root/attachments/some-uuid/ticket7487/trac_7487.patch) by ncohen created at 2009-11-26 08:02:50",
     "created_at": "2009-11-26T08:02:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7487",
     "type": "issue_comment",
@@ -72,7 +72,7 @@ archive/issue_comments_063234.json:
 }
 ```
 
-Attachment
+Attachment [trac_7487.patch](tarball://root/attachments/some-uuid/ticket7487/trac_7487.patch) by ncohen created at 2009-11-26 08:02:50
 
 
 
@@ -81,7 +81,7 @@ Attachment
 archive/issue_comments_063235.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7487-review.patch](tarball://root/attachments/some-uuid/ticket7487/trac_7487-review.patch) by mhansen created at 2009-12-01 09:45:46",
     "created_at": "2009-12-01T09:45:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7487",
     "type": "issue_comment",
@@ -90,7 +90,7 @@ archive/issue_comments_063235.json:
 }
 ```
 
-Attachment
+Attachment [trac_7487-review.patch](tarball://root/attachments/some-uuid/ticket7487/trac_7487-review.patch) by mhansen created at 2009-12-01 09:45:46
 
 
 

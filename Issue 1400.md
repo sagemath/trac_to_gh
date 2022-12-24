@@ -47,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1400
 archive/issue_comments_009028.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1400-quadratic_field_order.patch](tarball://root/attachments/some-uuid/ticket1400/1400-quadratic_field_order.patch) by AlexGhitza created at 2008-04-25 02:47:55",
     "created_at": "2008-04-25T02:47:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1400",
     "type": "issue_comment",
@@ -56,7 +56,7 @@ archive/issue_comments_009028.json:
 }
 ```
 
-Attachment
+Attachment [1400-quadratic_field_order.patch](tarball://root/attachments/some-uuid/ticket1400/1400-quadratic_field_order.patch) by AlexGhitza created at 2008-04-25 02:47:55
 
 
 

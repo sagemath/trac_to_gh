@@ -263,7 +263,7 @@ apply trac_3103_add_doctest.patch
 archive/issue_comments_021441.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3103_add_doctest.patch](tarball://root/attachments/some-uuid/ticket3103/trac_3103_add_doctest.patch) by Bouillaguet created at 2013-01-20 10:43:23",
     "created_at": "2013-01-20T10:43:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3103",
     "type": "issue_comment",
@@ -272,7 +272,7 @@ archive/issue_comments_021441.json:
 }
 ```
 
-Attachment
+Attachment [trac_3103_add_doctest.patch](tarball://root/attachments/some-uuid/ticket3103/trac_3103_add_doctest.patch) by Bouillaguet created at 2013-01-20 10:43:23
 
 
 

@@ -101,7 +101,7 @@ Let's delay this one for a while.  If #5610 gets in, then I'll need to revise th
 archive/issue_comments_043552.json:
 ```json
 {
-    "body": "Attachment\n\nNow that #5610 is in (as of 3.4.2.alpha0), here's a version of the patch which is ready for review.",
+    "body": "Attachment [developer.patch](tarball://root/attachments/some-uuid/ticket5588/developer.patch) by jhpalmieri created at 2009-04-24 17:11:40\n\nNow that #5610 is in (as of 3.4.2.alpha0), here's a version of the patch which is ready for review.",
     "created_at": "2009-04-24T17:11:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5588",
     "type": "issue_comment",
@@ -110,7 +110,7 @@ archive/issue_comments_043552.json:
 }
 ```
 
-Attachment
+Attachment [developer.patch](tarball://root/attachments/some-uuid/ticket5588/developer.patch) by jhpalmieri created at 2009-04-24 17:11:40
 
 Now that #5610 is in (as of 3.4.2.alpha0), here's a version of the patch which is ready for review.
 

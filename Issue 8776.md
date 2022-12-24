@@ -73,7 +73,7 @@ Depends on #9428. Fixes the given issue.
 archive/issue_comments_080345.json:
 ```json
 {
-    "body": "Attachment\n\nDepends on #9428. Rebase on new #9428. Replaces previous version.",
+    "body": "Attachment [trac_8776-sagenb-undo.2.patch](tarball://root/attachments/some-uuid/ticket8776/trac_8776-sagenb-undo.2.patch) by timdumol created at 2010-09-11 02:50:14\n\nDepends on #9428. Rebase on new #9428. Replaces previous version.",
     "created_at": "2010-09-11T02:50:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8776",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_080345.json:
 }
 ```
 
-Attachment
+Attachment [trac_8776-sagenb-undo.2.patch](tarball://root/attachments/some-uuid/ticket8776/trac_8776-sagenb-undo.2.patch) by timdumol created at 2010-09-11 02:50:14
 
 Depends on #9428. Rebase on new #9428. Replaces previous version.
 

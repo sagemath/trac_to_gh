@@ -76,7 +76,7 @@ Also, `InPlaceLinearPivoting` does not crash if called correctly and is often fa
 archive/issue_comments_003406.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sparsegfp.patch](tarball://root/attachments/some-uuid/ticket655/sparsegfp.patch) by malb created at 2007-09-15 14:28:13",
     "created_at": "2007-09-15T14:28:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/655",
     "type": "issue_comment",
@@ -85,7 +85,7 @@ archive/issue_comments_003406.json:
 }
 ```
 
-Attachment
+Attachment [sparsegfp.patch](tarball://root/attachments/some-uuid/ticket655/sparsegfp.patch) by malb created at 2007-09-15 14:28:13
 
 
 
@@ -112,7 +112,7 @@ archive/issue_comments_003407.json:
 archive/issue_comments_003408.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sparsegfq-solve.patch](tarball://root/attachments/some-uuid/ticket655/sparsegfq-solve.patch) by malb created at 2007-09-15 21:26:25",
     "created_at": "2007-09-15T21:26:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/655",
     "type": "issue_comment",
@@ -121,7 +121,7 @@ archive/issue_comments_003408.json:
 }
 ```
 
-Attachment
+Attachment [sparsegfq-solve.patch](tarball://root/attachments/some-uuid/ticket655/sparsegfq-solve.patch) by malb created at 2007-09-15 21:26:25
 
 
 

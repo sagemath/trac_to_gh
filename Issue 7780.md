@@ -58,7 +58,7 @@ Applies to 4.3
 archive/issue_comments_067082.json:
 ```json
 {
-    "body": "Attachment\n\nPatch attached.  Review is trivial but requires waiting for docs to rebuild...",
+    "body": "Attachment [trac_7780-docstring.patch](tarball://root/attachments/some-uuid/ticket7780/trac_7780-docstring.patch) by cremona created at 2009-12-28 16:58:31\n\nPatch attached.  Review is trivial but requires waiting for docs to rebuild...",
     "created_at": "2009-12-28T16:58:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7780",
     "type": "issue_comment",
@@ -67,7 +67,7 @@ archive/issue_comments_067082.json:
 }
 ```
 
-Attachment
+Attachment [trac_7780-docstring.patch](tarball://root/attachments/some-uuid/ticket7780/trac_7780-docstring.patch) by cremona created at 2009-12-28 16:58:31
 
 Patch attached.  Review is trivial but requires waiting for docs to rebuild...
 

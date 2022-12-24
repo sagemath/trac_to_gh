@@ -57,7 +57,7 @@ Changing status from new to needs_review.
 archive/issue_comments_075934.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8446.patch](tarball://root/attachments/some-uuid/ticket8446/trac_8446.patch) by rlm created at 2010-03-07 19:58:53",
     "created_at": "2010-03-07T19:58:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8446",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_075934.json:
 }
 ```
 
-Attachment
+Attachment [trac_8446.patch](tarball://root/attachments/some-uuid/ticket8446/trac_8446.patch) by rlm created at 2010-03-07 19:58:53
 
 
 
@@ -75,7 +75,7 @@ Attachment
 archive/issue_comments_075935.json:
 ```json
 {
-    "body": "Attachment\n\napply over previous patch",
+    "body": "Attachment [trac_8446_microfix.patch](tarball://root/attachments/some-uuid/ticket8446/trac_8446_microfix.patch) by davidloeffler created at 2010-04-20 09:38:02\n\napply over previous patch",
     "created_at": "2010-04-20T09:38:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8446",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_075935.json:
 }
 ```
 
-Attachment
+Attachment [trac_8446_microfix.patch](tarball://root/attachments/some-uuid/ticket8446/trac_8446_microfix.patch) by davidloeffler created at 2010-04-20 09:38:02
 
 apply over previous patch
 

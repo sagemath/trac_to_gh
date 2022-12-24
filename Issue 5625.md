@@ -94,7 +94,7 @@ Here's a patch.  Skimming through the Sage source code, it seems that in other c
 archive/issue_comments_043923.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5625-cohomology.patch](tarball://root/attachments/some-uuid/ticket5625/trac_5625-cohomology.patch) by jhpalmieri created at 2009-07-22 03:17:22",
     "created_at": "2009-07-22T03:17:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5625",
     "type": "issue_comment",
@@ -103,7 +103,7 @@ archive/issue_comments_043923.json:
 }
 ```
 
-Attachment
+Attachment [trac_5625-cohomology.patch](tarball://root/attachments/some-uuid/ticket5625/trac_5625-cohomology.patch) by jhpalmieri created at 2009-07-22 03:17:22
 
 
 
@@ -148,7 +148,7 @@ reviewer patch; fix typos
 archive/issue_comments_043926.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch `trac_5625-typo-fixes.patch` fixes a number of typos found in John's patch.",
+    "body": "Attachment [trac_5625-typo-fixes.patch](tarball://root/attachments/some-uuid/ticket5625/trac_5625-typo-fixes.patch) by mvngu created at 2009-07-25 20:09:19\n\nThe patch `trac_5625-typo-fixes.patch` fixes a number of typos found in John's patch.",
     "created_at": "2009-07-25T20:09:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5625",
     "type": "issue_comment",
@@ -157,7 +157,7 @@ archive/issue_comments_043926.json:
 }
 ```
 
-Attachment
+Attachment [trac_5625-typo-fixes.patch](tarball://root/attachments/some-uuid/ticket5625/trac_5625-typo-fixes.patch) by mvngu created at 2009-07-25 20:09:19
 
 The patch `trac_5625-typo-fixes.patch` fixes a number of typos found in John's patch.
 

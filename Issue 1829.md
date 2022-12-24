@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1829
 archive/issue_comments_011582.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [term-ordering-doc.patch](tarball://root/attachments/some-uuid/ticket1829/term-ordering-doc.patch) by malb created at 2008-01-18 13:38:50",
     "created_at": "2008-01-18T13:38:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1829",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_011582.json:
 }
 ```
 
-Attachment
+Attachment [term-ordering-doc.patch](tarball://root/attachments/some-uuid/ticket1829/term-ordering-doc.patch) by malb created at 2008-01-18 13:38:50
 
 
 

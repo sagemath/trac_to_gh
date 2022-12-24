@@ -56,7 +56,7 @@ Changing status from new to needs_review.
 archive/issue_comments_069512.json:
 ```json
 {
-    "body": "Attachment\n\nGood job; looks good.",
+    "body": "Attachment [7967_popen3.patch](tarball://root/attachments/some-uuid/ticket7967/7967_popen3.patch) by timdumol created at 2010-01-17 19:19:07\n\nGood job; looks good.",
     "created_at": "2010-01-17T19:19:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7967",
     "type": "issue_comment",
@@ -65,7 +65,7 @@ archive/issue_comments_069512.json:
 }
 ```
 
-Attachment
+Attachment [7967_popen3.patch](tarball://root/attachments/some-uuid/ticket7967/7967_popen3.patch) by timdumol created at 2010-01-17 19:19:07
 
 Good job; looks good.
 

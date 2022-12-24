@@ -46,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1203
 archive/issue_comments_007451.json:
 ```json
 {
-    "body": "Attachment\n\nfix doctest failure",
+    "body": "Attachment [7376.patch](tarball://root/attachments/some-uuid/ticket1203/7376.patch) by mabshoff created at 2007-11-19 23:53:27\n\nfix doctest failure",
     "created_at": "2007-11-19T23:53:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1203",
     "type": "issue_comment",
@@ -55,7 +55,7 @@ archive/issue_comments_007451.json:
 }
 ```
 
-Attachment
+Attachment [7376.patch](tarball://root/attachments/some-uuid/ticket1203/7376.patch) by mabshoff created at 2007-11-19 23:53:27
 
 fix doctest failure
 

@@ -123,7 +123,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_086209.json:
 ```json
 {
-    "body": "Attachment\n\napply to sage-scripts repository",
+    "body": "Attachment [trac-9210-rewrite-sage-location.patch](tarball://root/attachments/some-uuid/ticket9210/trac-9210-rewrite-sage-location.patch) by jason created at 2010-06-11 20:39:14\n\napply to sage-scripts repository",
     "created_at": "2010-06-11T20:39:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9210",
     "type": "issue_comment",
@@ -132,7 +132,7 @@ archive/issue_comments_086209.json:
 }
 ```
 
-Attachment
+Attachment [trac-9210-rewrite-sage-location.patch](tarball://root/attachments/some-uuid/ticket9210/trac-9210-rewrite-sage-location.patch) by jason created at 2010-06-11 20:39:14
 
 apply to sage-scripts repository
 
@@ -408,7 +408,7 @@ After creating a binary distribution and moving it to somewhere else.
 archive/issue_comments_086219.json:
 ```json
 {
-    "body": "Attachment\n\nThe files were Sage was built.",
+    "body": "Attachment [before-moving.tar.gz](tarball://root/attachments/some-uuid/ticket9210/before-moving.tar.gz) by drkirkby created at 2010-06-12 00:54:33\n\nThe files were Sage was built.",
     "created_at": "2010-06-12T00:54:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9210",
     "type": "issue_comment",
@@ -417,7 +417,7 @@ archive/issue_comments_086219.json:
 }
 ```
 
-Attachment
+Attachment [before-moving.tar.gz](tarball://root/attachments/some-uuid/ticket9210/before-moving.tar.gz) by drkirkby created at 2010-06-12 00:54:33
 
 The files were Sage was built.
 
@@ -603,7 +603,7 @@ new sage-location file (after patch) - do not apply; only for reviewing convenie
 archive/issue_comments_086225.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached the full (new) sage-location script, for reviewing convenience.",
+    "body": "Attachment [sage-location](tarball://root/attachments/some-uuid/ticket9210/sage-location) by jason created at 2010-06-12 17:23:42\n\nI've attached the full (new) sage-location script, for reviewing convenience.",
     "created_at": "2010-06-12T17:23:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9210",
     "type": "issue_comment",
@@ -612,7 +612,7 @@ archive/issue_comments_086225.json:
 }
 ```
 
-Attachment
+Attachment [sage-location](tarball://root/attachments/some-uuid/ticket9210/sage-location) by jason created at 2010-06-12 17:23:42
 
 I've attached the full (new) sage-location script, for reviewing convenience.
 

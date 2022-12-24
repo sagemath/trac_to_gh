@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2479
 archive/issue_comments_016799.json:
 ```json
 {
-    "body": "Attachment\n\nAttached patch fixes this problem.",
+    "body": "Attachment [sage-2479.patch](tarball://root/attachments/some-uuid/ticket2479/sage-2479.patch) by was created at 2008-03-12 00:55:17\n\nAttached patch fixes this problem.",
     "created_at": "2008-03-12T00:55:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2479",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_016799.json:
 }
 ```
 
-Attachment
+Attachment [sage-2479.patch](tarball://root/attachments/some-uuid/ticket2479/sage-2479.patch) by was created at 2008-03-12 00:55:17
 
 Attached patch fixes this problem.
 
@@ -115,7 +115,7 @@ Ok, re-based the patch. The name on the commit should get changed to William, si
 archive/issue_comments_016803.json:
 ```json
 {
-    "body": "Attachment\n\nsame patch as above, but applies clean against 2.10.3",
+    "body": "Attachment [trac-2479-v2.patch](tarball://root/attachments/some-uuid/ticket2479/trac-2479-v2.patch) by craigcitro created at 2008-03-12 01:51:46\n\nsame patch as above, but applies clean against 2.10.3",
     "created_at": "2008-03-12T01:51:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2479",
     "type": "issue_comment",
@@ -124,7 +124,7 @@ archive/issue_comments_016803.json:
 }
 ```
 
-Attachment
+Attachment [trac-2479-v2.patch](tarball://root/attachments/some-uuid/ticket2479/trac-2479-v2.patch) by craigcitro created at 2008-03-12 01:51:46
 
 same patch as above, but applies clean against 2.10.3
 

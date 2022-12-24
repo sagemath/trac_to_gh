@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3976
 archive/issue_comments_028565.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3976.patch](tarball://root/attachments/some-uuid/ticket3976/trac_3976.patch) by mhansen created at 2008-08-28 19:39:49",
     "created_at": "2008-08-28T19:39:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3976",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_028565.json:
 }
 ```
 
-Attachment
+Attachment [trac_3976.patch](tarball://root/attachments/some-uuid/ticket3976/trac_3976.patch) by mhansen created at 2008-08-28 19:39:49
 
 
 
@@ -67,7 +67,7 @@ After discussion with mhansen, we decided it would be better to use `os.popen` i
 archive/issue_comments_028567.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3976-2.patch](tarball://root/attachments/some-uuid/ticket3976/trac_3976-2.patch) by mhansen created at 2008-08-28 22:51:29",
     "created_at": "2008-08-28T22:51:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3976",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_028567.json:
 }
 ```
 
-Attachment
+Attachment [trac_3976-2.patch](tarball://root/attachments/some-uuid/ticket3976/trac_3976-2.patch) by mhansen created at 2008-08-28 22:51:29
 
 
 
@@ -85,7 +85,7 @@ Attachment
 archive/issue_comments_028568.json:
 ```json
 {
-    "body": "Attachment\n\nThe patches apply cleanly (with some light fuzz for the first patch), and pass all tests. Apply this.",
+    "body": "Attachment [trac_3976-3.patch](tarball://root/attachments/some-uuid/ticket3976/trac_3976-3.patch) by rlm created at 2008-08-28 22:55:13\n\nThe patches apply cleanly (with some light fuzz for the first patch), and pass all tests. Apply this.",
     "created_at": "2008-08-28T22:55:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3976",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_028568.json:
 }
 ```
 
-Attachment
+Attachment [trac_3976-3.patch](tarball://root/attachments/some-uuid/ticket3976/trac_3976-3.patch) by rlm created at 2008-08-28 22:55:13
 
 The patches apply cleanly (with some light fuzz for the first patch), and pass all tests. Apply this.
 

@@ -570,7 +570,7 @@ Nathann
 archive/issue_comments_065310.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7640.patch](tarball://root/attachments/some-uuid/ticket7640/trac_7640.patch) by ncohen created at 2009-12-12 19:33:46",
     "created_at": "2009-12-12T19:33:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7640",
     "type": "issue_comment",
@@ -579,7 +579,7 @@ archive/issue_comments_065310.json:
 }
 ```
 
-Attachment
+Attachment [trac_7640.patch](tarball://root/attachments/some-uuid/ticket7640/trac_7640.patch) by ncohen created at 2009-12-12 19:33:46
 
 
 

@@ -49,7 +49,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2058
 archive/issue_comments_013318.json:
 ```json
 {
-    "body": "Attachment\n\nBurcin's original __call__ patch",
+    "body": "Attachment [8314.patch](tarball://root/attachments/some-uuid/ticket2058/8314.patch) by malb created at 2008-02-05 17:05:53\n\nBurcin's original __call__ patch",
     "created_at": "2008-02-05T17:05:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2058",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_013318.json:
 }
 ```
 
-Attachment
+Attachment [8314.patch](tarball://root/attachments/some-uuid/ticket2058/8314.patch) by malb created at 2008-02-05 17:05:53
 
 Burcin's original __call__ patch
 
@@ -87,7 +87,7 @@ my doctests/corrections for Burcin's patch
 archive/issue_comments_013320.json:
 ```json
 {
-    "body": "Attachment\n\npatch to be applied on top of the other two to speed up subs method",
+    "body": "Attachment [8315.patch](tarball://root/attachments/some-uuid/ticket2058/8315.patch) by malb created at 2008-02-05 22:08:46\n\npatch to be applied on top of the other two to speed up subs method",
     "created_at": "2008-02-05T22:08:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2058",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_013320.json:
 }
 ```
 
-Attachment
+Attachment [8315.patch](tarball://root/attachments/some-uuid/ticket2058/8315.patch) by malb created at 2008-02-05 22:08:46
 
 patch to be applied on top of the other two to speed up subs method
 
@@ -107,7 +107,7 @@ patch to be applied on top of the other two to speed up subs method
 archive/issue_comments_013321.json:
 ```json
 {
-    "body": "Attachment\n\nyet another patch (to be applied on to of the rest) which speeds up substitution and evalutation",
+    "body": "Attachment [8317.patch](tarball://root/attachments/some-uuid/ticket2058/8317.patch) by malb created at 2008-02-06 14:55:38\n\nyet another patch (to be applied on to of the rest) which speeds up substitution and evalutation",
     "created_at": "2008-02-06T14:55:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2058",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_013321.json:
 }
 ```
 
-Attachment
+Attachment [8317.patch](tarball://root/attachments/some-uuid/ticket2058/8317.patch) by malb created at 2008-02-06 14:55:38
 
 yet another patch (to be applied on to of the rest) which speeds up substitution and evalutation
 
@@ -163,7 +163,7 @@ reintroduces evaluation with aribitrary values again
 archive/issue_comments_013324.json:
 ```json
 {
-    "body": "Attachment\n\nPatch `8318.patch` addresses a concern burcin raised in a private conversation.",
+    "body": "Attachment [8318.patch](tarball://root/attachments/some-uuid/ticket2058/8318.patch) by malb created at 2008-02-06 16:12:40\n\nPatch `8318.patch` addresses a concern burcin raised in a private conversation.",
     "created_at": "2008-02-06T16:12:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2058",
     "type": "issue_comment",
@@ -172,7 +172,7 @@ archive/issue_comments_013324.json:
 }
 ```
 
-Attachment
+Attachment [8318.patch](tarball://root/attachments/some-uuid/ticket2058/8318.patch) by malb created at 2008-02-06 16:12:40
 
 Patch `8318.patch` addresses a concern burcin raised in a private conversation.
 
@@ -201,7 +201,7 @@ Burcin mentioned some issues in a private communication. Don't apply yet.
 archive/issue_comments_013326.json:
 ```json
 {
-    "body": "Attachment\n\nthis patch replaces **all** other patches and should address Burcin's off-record concerns",
+    "body": "Attachment [trac_2058_superpatch.patch](tarball://root/attachments/some-uuid/ticket2058/trac_2058_superpatch.patch) by malb created at 2008-02-26 17:58:19\n\nthis patch replaces **all** other patches and should address Burcin's off-record concerns",
     "created_at": "2008-02-26T17:58:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2058",
     "type": "issue_comment",
@@ -210,7 +210,7 @@ archive/issue_comments_013326.json:
 }
 ```
 
-Attachment
+Attachment [trac_2058_superpatch.patch](tarball://root/attachments/some-uuid/ticket2058/trac_2058_superpatch.patch) by malb created at 2008-02-26 17:58:19
 
 this patch replaces **all** other patches and should address Burcin's off-record concerns
 
@@ -257,7 +257,7 @@ add doctest to _eval
 archive/issue_comments_013329.json:
 ```json
 {
-    "body": "Attachment\n\nMartin's patch looks good, it should be applied.\n\nattachment:booleanmonomial_eval_doctest.patch makes it conform to the \"all functions should have a doctest\" rule. :)",
+    "body": "Attachment [booleanmonomial_eval_doctest.patch](tarball://root/attachments/some-uuid/ticket2058/booleanmonomial_eval_doctest.patch) by burcin created at 2008-02-26 19:55:19\n\nMartin's patch looks good, it should be applied.\n\nattachment:booleanmonomial_eval_doctest.patch makes it conform to the \"all functions should have a doctest\" rule. :)",
     "created_at": "2008-02-26T19:55:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2058",
     "type": "issue_comment",
@@ -266,7 +266,7 @@ archive/issue_comments_013329.json:
 }
 ```
 
-Attachment
+Attachment [booleanmonomial_eval_doctest.patch](tarball://root/attachments/some-uuid/ticket2058/booleanmonomial_eval_doctest.patch) by burcin created at 2008-02-26 19:55:19
 
 Martin's patch looks good, it should be applied.
 

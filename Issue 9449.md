@@ -99,7 +99,7 @@ Results from long doctests on t2.math.washington.edu (Solaris 10, UltraSPARC CPU
 archive/issue_comments_090546.json:
 ```json
 {
-    "body": "Attachment\n\nCould you try with patches #8641, #9243, #9316 to the doctest framework? They clean up and fix parts of the error handling.\n\nIf they don't fix it yet, I can give you a patch which adds some extra debugging info to track this down.",
+    "body": "Attachment [ptestlong.log](tarball://root/attachments/some-uuid/ticket9449/ptestlong.log) by wjp created at 2010-07-07 20:01:44\n\nCould you try with patches #8641, #9243, #9316 to the doctest framework? They clean up and fix parts of the error handling.\n\nIf they don't fix it yet, I can give you a patch which adds some extra debugging info to track this down.",
     "created_at": "2010-07-07T20:01:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_comment",
@@ -108,7 +108,7 @@ archive/issue_comments_090546.json:
 }
 ```
 
-Attachment
+Attachment [ptestlong.log](tarball://root/attachments/some-uuid/ticket9449/ptestlong.log) by wjp created at 2010-07-07 20:01:44
 
 Could you try with patches #8641, #9243, #9316 to the doctest framework? They clean up and fix parts of the error handling.
 
@@ -464,7 +464,7 @@ The log file 'ptestlong.log' after trac items #8641, #9243- and #9316 had been a
 archive/issue_comments_090556.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ptestlong-after-trac-#8641-#9243-#9316.log](tarball://root/attachments/some-uuid/ticket9449/ptestlong-after-trac-#8641-#9243-#9316.log) by leif created at 2010-07-08 15:50:11",
     "created_at": "2010-07-08T15:50:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_comment",
@@ -473,7 +473,7 @@ archive/issue_comments_090556.json:
 }
 ```
 
-Attachment
+Attachment [ptestlong-after-trac-#8641-#9243-#9316.log](tarball://root/attachments/some-uuid/ticket9449/ptestlong-after-trac-#8641-#9243-#9316.log) by leif created at 2010-07-08 15:50:11
 
 
 

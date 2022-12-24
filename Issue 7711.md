@@ -920,7 +920,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_066221.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac7711.patch](tarball://root/attachments/some-uuid/ticket7711/trac7711.patch) by AlexGhitza created at 2012-03-26 21:43:57",
     "created_at": "2012-03-26T21:43:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7711",
     "type": "issue_comment",
@@ -929,7 +929,7 @@ archive/issue_comments_066221.json:
 }
 ```
 
-Attachment
+Attachment [trac7711.patch](tarball://root/attachments/some-uuid/ticket7711/trac7711.patch) by AlexGhitza created at 2012-03-26 21:43:57
 
 
 

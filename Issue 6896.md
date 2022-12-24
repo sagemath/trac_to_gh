@@ -78,7 +78,7 @@ Sage requires GCC >= 4.x.
 archive/issue_comments_056959.json:
 ```json
 {
-    "body": "Attachment\n\ndon't apply this patch",
+    "body": "Attachment [trac_6896-readme.patch](tarball://root/attachments/some-uuid/ticket6896/trac_6896-readme.patch) by mvngu created at 2009-09-06 11:55:40\n\ndon't apply this patch",
     "created_at": "2009-09-06T11:55:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6896",
     "type": "issue_comment",
@@ -87,7 +87,7 @@ archive/issue_comments_056959.json:
 }
 ```
 
-Attachment
+Attachment [trac_6896-readme.patch](tarball://root/attachments/some-uuid/ticket6896/trac_6896-readme.patch) by mvngu created at 2009-09-06 11:55:40
 
 don't apply this patch
 
@@ -116,7 +116,7 @@ New README.txt is up together with corresponding patch file. Don't apply the pat
 archive/issue_comments_056961.json:
 ```json
 {
-    "body": "Attachment\n\nUpdates to Supperted Compilers",
+    "body": "Attachment [README.2.txt](tarball://root/attachments/some-uuid/ticket6896/README.2.txt) by joskarsson created at 2009-09-06 22:41:43\n\nUpdates to Supperted Compilers",
     "created_at": "2009-09-06T22:41:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6896",
     "type": "issue_comment",
@@ -125,7 +125,7 @@ archive/issue_comments_056961.json:
 }
 ```
 
-Attachment
+Attachment [README.2.txt](tarball://root/attachments/some-uuid/ticket6896/README.2.txt) by joskarsson created at 2009-09-06 22:41:43
 
 Updates to Supperted Compilers
 
@@ -154,7 +154,7 @@ Patch to README.txt, changing supported compilers
 archive/issue_comments_056963.json:
 ```json
 {
-    "body": "Attachment\n\nThe relevant lines of the file README.2.txt looks very good to me.",
+    "body": "Attachment [README.txt.trac-6896-1.patch](tarball://root/attachments/some-uuid/ticket6896/README.txt.trac-6896-1.patch) by was created at 2009-09-07 02:07:59\n\nThe relevant lines of the file README.2.txt looks very good to me.",
     "created_at": "2009-09-07T02:07:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6896",
     "type": "issue_comment",
@@ -163,7 +163,7 @@ archive/issue_comments_056963.json:
 }
 ```
 
-Attachment
+Attachment [README.txt.trac-6896-1.patch](tarball://root/attachments/some-uuid/ticket6896/README.txt.trac-6896-1.patch) by was created at 2009-09-07 02:07:59
 
 The relevant lines of the file README.2.txt looks very good to me.
 
@@ -192,7 +192,7 @@ with changes suggested by README.txt.trac-6896-1.patch
 archive/issue_comments_056965.json:
 ```json
 {
-    "body": "Attachment\n\nApplied the changes suggested in `README.txt.trac-6896-1.patch` and the updated README.txt is attached. See `README.txt` as `README.2.txt` doesn't have the changes in `README.txt.trac-6896-1.patch`.\n\n\n\njoskarsson --- Please fill in your real name in the \"Author(s):\" field. That way, your contribution is properly acknowledged.",
+    "body": "Attachment [README.txt](tarball://root/attachments/some-uuid/ticket6896/README.txt) by mvngu created at 2009-09-07 17:58:18\n\nApplied the changes suggested in `README.txt.trac-6896-1.patch` and the updated README.txt is attached. See `README.txt` as `README.2.txt` doesn't have the changes in `README.txt.trac-6896-1.patch`.\n\n\n\njoskarsson --- Please fill in your real name in the \"Author(s):\" field. That way, your contribution is properly acknowledged.",
     "created_at": "2009-09-07T17:58:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6896",
     "type": "issue_comment",
@@ -201,7 +201,7 @@ archive/issue_comments_056965.json:
 }
 ```
 
-Attachment
+Attachment [README.txt](tarball://root/attachments/some-uuid/ticket6896/README.txt) by mvngu created at 2009-09-07 17:58:18
 
 Applied the changes suggested in `README.txt.trac-6896-1.patch` and the updated README.txt is attached. See `README.txt` as `README.2.txt` doesn't have the changes in `README.txt.trac-6896-1.patch`.
 

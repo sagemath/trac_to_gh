@@ -95,7 +95,7 @@ It seems `toy_variety` does not switch to 'lex' when it should?
 archive/issue_comments_047167.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [toy_variety_fix.patch](tarball://root/attachments/some-uuid/ticket5958/toy_variety_fix.patch) by malb created at 2009-05-01 15:29:13",
     "created_at": "2009-05-01T15:29:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5958",
     "type": "issue_comment",
@@ -104,7 +104,7 @@ archive/issue_comments_047167.json:
 }
 ```
 
-Attachment
+Attachment [toy_variety_fix.patch](tarball://root/attachments/some-uuid/ticket5958/toy_variety_fix.patch) by malb created at 2009-05-01 15:29:13
 
 
 
@@ -229,7 +229,7 @@ fix typo
 archive/issue_comments_047172.json:
 ```json
 {
-    "body": "Attachment\n\nI fixed the \"proofable\" vs. \"provable\" typo. However, I am a bit clueless how to deal with the numerical noise. The `...` works for most of it but not for `0.49999999999` vs. {{{0.500000000}}. Ideas?",
+    "body": "Attachment [mpoly_factor_proof.patch](tarball://root/attachments/some-uuid/ticket5958/mpoly_factor_proof.patch) by malb created at 2009-05-07 13:50:45\n\nI fixed the \"proofable\" vs. \"provable\" typo. However, I am a bit clueless how to deal with the numerical noise. The `...` works for most of it but not for `0.49999999999` vs. {{{0.500000000}}. Ideas?",
     "created_at": "2009-05-07T13:50:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5958",
     "type": "issue_comment",
@@ -238,7 +238,7 @@ archive/issue_comments_047172.json:
 }
 ```
 
-Attachment
+Attachment [mpoly_factor_proof.patch](tarball://root/attachments/some-uuid/ticket5958/mpoly_factor_proof.patch) by malb created at 2009-05-07 13:50:45
 
 I fixed the "proofable" vs. "provable" typo. However, I am a bit clueless how to deal with the numerical noise. The `...` works for most of it but not for `0.49999999999` vs. {{{0.500000000}}. Ideas?
 
@@ -460,7 +460,7 @@ Yes, I mean fixed precision floating point numbers. We could just print a warnin
 archive/issue_comments_047181.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [variety_CC.patch](tarball://root/attachments/some-uuid/ticket5958/variety_CC.patch) by john_perry created at 2009-08-26 17:31:53",
     "created_at": "2009-08-26T17:31:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5958",
     "type": "issue_comment",
@@ -469,7 +469,7 @@ archive/issue_comments_047181.json:
 }
 ```
 
-Attachment
+Attachment [variety_CC.patch](tarball://root/attachments/some-uuid/ticket5958/variety_CC.patch) by john_perry created at 2009-08-26 17:31:53
 
 
 
@@ -586,7 +586,7 @@ apply over variety_CC.patch
 archive/issue_comments_047188.json:
 ```json
 {
-    "body": "Attachment\n\nOkay, double colons on that file. They aren't prepended to the example, though; they appear at the end of line 1849 in the same way as at the end of 1831.\n\nPLEASE tell me this is okay now. Fixing this drove me crazy with hg...",
+    "body": "Attachment [variety_CC2.patch](tarball://root/attachments/some-uuid/ticket5958/variety_CC2.patch) by john_perry created at 2009-08-26 20:50:08\n\nOkay, double colons on that file. They aren't prepended to the example, though; they appear at the end of line 1849 in the same way as at the end of 1831.\n\nPLEASE tell me this is okay now. Fixing this drove me crazy with hg...",
     "created_at": "2009-08-26T20:50:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5958",
     "type": "issue_comment",
@@ -595,7 +595,7 @@ archive/issue_comments_047188.json:
 }
 ```
 
-Attachment
+Attachment [variety_CC2.patch](tarball://root/attachments/some-uuid/ticket5958/variety_CC2.patch) by john_perry created at 2009-08-26 20:50:08
 
 Okay, double colons on that file. They aren't prepended to the example, though; they appear at the end of line 1849 in the same way as at the end of 1831.
 

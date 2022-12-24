@@ -105,7 +105,7 @@ Docstrings and doctests for non-underscore functions in rings/quotient_ring.py. 
 archive/issue_comments_016510.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [rings.quotient_ring.patch](tarball://root/attachments/some-uuid/ticket2440/rings.quotient_ring.patch) by cswiercz created at 2008-03-09 19:38:43",
     "created_at": "2008-03-09T19:38:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2440",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_016510.json:
 }
 ```
 
-Attachment
+Attachment [rings.quotient_ring.patch](tarball://root/attachments/some-uuid/ticket2440/rings.quotient_ring.patch) by cswiercz created at 2008-03-09 19:38:43
 
 
 

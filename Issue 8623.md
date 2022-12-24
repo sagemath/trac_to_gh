@@ -77,7 +77,7 @@ sage: L.analytic_rank()
 archive/issue_comments_078170.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8623.patch](tarball://root/attachments/some-uuid/ticket8623/trac_8623.patch) by rishi created at 2010-03-29 13:14:36",
     "created_at": "2010-03-29T13:14:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8623",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_078170.json:
 }
 ```
 
-Attachment
+Attachment [trac_8623.patch](tarball://root/attachments/some-uuid/ticket8623/trac_8623.patch) by rishi created at 2010-03-29 13:14:36
 
 
 

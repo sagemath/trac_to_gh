@@ -95,7 +95,7 @@ Changing status from new to needs_review.
 archive/issue_comments_070732.json:
 ```json
 {
-    "body": "Attachment\n\nPatch applies cleanly, looks good, doctests pass. The only nitpick I have is: shouldn't `:meth:`sage.modules.free_module.VectorSpace`` be `class:...`?\n\nIf that's fixed then this patch gets a positive review.",
+    "body": "Attachment [trac_8071-matrix-kernels-trivially.patch](tarball://root/attachments/some-uuid/ticket8071/trac_8071-matrix-kernels-trivially.patch) by malb created at 2010-04-05 19:25:35\n\nPatch applies cleanly, looks good, doctests pass. The only nitpick I have is: shouldn't `:meth:`sage.modules.free_module.VectorSpace`` be `class:...`?\n\nIf that's fixed then this patch gets a positive review.",
     "created_at": "2010-04-05T19:25:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8071",
     "type": "issue_comment",
@@ -104,7 +104,7 @@ archive/issue_comments_070732.json:
 }
 ```
 
-Attachment
+Attachment [trac_8071-matrix-kernels-trivially.patch](tarball://root/attachments/some-uuid/ticket8071/trac_8071-matrix-kernels-trivially.patch) by malb created at 2010-04-05 19:25:35
 
 Patch applies cleanly, looks good, doctests pass. The only nitpick I have is: shouldn't `:meth:`sage.modules.free_module.VectorSpace`` be `class:...`?
 
@@ -135,7 +135,7 @@ Fixes class/meth in docstring
 archive/issue_comments_070734.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:3 malb]:\n> Patch applies cleanly, looks good, doctests pass. The only nitpick I have is: shouldn't `:meth:`sage.modules.free_module.VectorSpace`` be `class:...`?\n> \n> If that's fixed then this patch gets a positive review.\n\nHi Martin,\n\nThanks for the review on this one.  New patch contains everything, plus two changes in the docstring for `_right_kernel_trivial()` in `sage/matrix/matrix2.py` - both substitute \"class\" for \"meth\".  I am forever making that mistake - thanks for catching these.\n\nRelease manager - apply only the \"dash-2\" patch.\n\nRob",
+    "body": "Attachment [trac_8071-matrix-kernels-trivially-2.patch](tarball://root/attachments/some-uuid/ticket8071/trac_8071-matrix-kernels-trivially-2.patch) by rbeezer created at 2010-04-06 03:13:50\n\nReplying to [comment:3 malb]:\n> Patch applies cleanly, looks good, doctests pass. The only nitpick I have is: shouldn't `:meth:`sage.modules.free_module.VectorSpace`` be `class:...`?\n> \n> If that's fixed then this patch gets a positive review.\n\nHi Martin,\n\nThanks for the review on this one.  New patch contains everything, plus two changes in the docstring for `_right_kernel_trivial()` in `sage/matrix/matrix2.py` - both substitute \"class\" for \"meth\".  I am forever making that mistake - thanks for catching these.\n\nRelease manager - apply only the \"dash-2\" patch.\n\nRob",
     "created_at": "2010-04-06T03:13:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8071",
     "type": "issue_comment",
@@ -144,7 +144,7 @@ archive/issue_comments_070734.json:
 }
 ```
 
-Attachment
+Attachment [trac_8071-matrix-kernels-trivially-2.patch](tarball://root/attachments/some-uuid/ticket8071/trac_8071-matrix-kernels-trivially-2.patch) by rbeezer created at 2010-04-06 03:13:50
 
 Replying to [comment:3 malb]:
 > Patch applies cleanly, looks good, doctests pass. The only nitpick I have is: shouldn't `:meth:`sage.modules.free_module.VectorSpace`` be `class:...`?

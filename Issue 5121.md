@@ -80,7 +80,7 @@ This broke in the commit http://www.sagemath.org/hg/sage-main/diff/ed11b267ec9f/
 archive/issue_comments_039155.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5121.patch](tarball://root/attachments/some-uuid/ticket5121/trac_5121.patch) by was created at 2009-01-28 23:14:17",
     "created_at": "2009-01-28T23:14:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5121",
     "type": "issue_comment",
@@ -89,7 +89,7 @@ archive/issue_comments_039155.json:
 }
 ```
 
-Attachment
+Attachment [trac_5121.patch](tarball://root/attachments/some-uuid/ticket5121/trac_5121.patch) by was created at 2009-01-28 23:14:17
 
 
 

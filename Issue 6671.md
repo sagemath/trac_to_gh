@@ -111,7 +111,7 @@ where `#xxxx` is the ticket number.
 archive/issue_comments_054800.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-6671-victor_miller.patch](tarball://root/attachments/some-uuid/ticket6671/trac-6671-victor_miller.patch) by craigcitro created at 2009-08-06 08:26:59",
     "created_at": "2009-08-06T08:26:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6671",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_054800.json:
 }
 ```
 
-Attachment
+Attachment [trac-6671-victor_miller.patch](tarball://root/attachments/some-uuid/ticket6671/trac-6671-victor_miller.patch) by craigcitro created at 2009-08-06 08:26:59
 
 
 
@@ -147,7 +147,7 @@ This provides an implementation which is twice as fast but now depends on #7474.
 archive/issue_comments_054802.json:
 ```json
 {
-    "body": "Attachment\n\nThis is good code, but a little more work is needed:\n\n- It is **unacceptable** that the function delta_qexp now has no docstring at all -- this must be changed.\n\n- The docstring of delta_poly refers to options from delta_qexp that are not actually accepted by delta_poly, and also the return type it describes is clearly wrong.\n\n- The following comment doesn't seem to match the actual code:\n\n```\n# then use NTL to compute the remaining fourth power\nf = Fmpz_poly(v)\n```\n\n\nSee also #6020, where the NTL/FLINT speed issue was discussed extensively (although without any clear conclusion, since NTL seems to win on some platforms and FLINT on others)\n\nDavid",
+    "body": "Attachment [trac-6671-2-victor-miller.patch](tarball://root/attachments/some-uuid/ticket6671/trac-6671-2-victor-miller.patch) by davidloeffler created at 2010-04-04 15:29:48\n\nThis is good code, but a little more work is needed:\n\n- It is **unacceptable** that the function delta_qexp now has no docstring at all -- this must be changed.\n\n- The docstring of delta_poly refers to options from delta_qexp that are not actually accepted by delta_poly, and also the return type it describes is clearly wrong.\n\n- The following comment doesn't seem to match the actual code:\n\n```\n# then use NTL to compute the remaining fourth power\nf = Fmpz_poly(v)\n```\n\n\nSee also #6020, where the NTL/FLINT speed issue was discussed extensively (although without any clear conclusion, since NTL seems to win on some platforms and FLINT on others)\n\nDavid",
     "created_at": "2010-04-04T15:29:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6671",
     "type": "issue_comment",
@@ -156,7 +156,7 @@ archive/issue_comments_054802.json:
 }
 ```
 
-Attachment
+Attachment [trac-6671-2-victor-miller.patch](tarball://root/attachments/some-uuid/ticket6671/trac-6671-2-victor-miller.patch) by davidloeffler created at 2010-04-04 15:29:48
 
 This is good code, but a little more work is needed:
 
@@ -241,7 +241,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_054806.json:
 ```json
 {
-    "body": "Attachment\n\nSorry, this still isn't up to scratch.\n\n- The \"formatting issues that you don't understand\" are because the old code always returns a Sequence object which prints each entry on a new line, while your new code inconsistently sometimes returns a Sequence and sometimes a list. It would have been wise to try and understand what was happening here, rather than just casually changing all the doctests to match whatever results your code happened to produce.\n\n\n- Docstrings. Docstrings! They are important! Many of your docstrings bear only very scanty resemblance to the actual code, e.g. the docstring for eisenstein_series_poly claims it returns a list whereas in fact it's returning a Fmpz_poly object. Furthermore, the normalisation it uses is not either of the standard ones (i.e. neither the constant nor linear coeffs are 1) so you should document what it is actually doing, and add a doctest to prove it. On a similar note, in the \"authors\" section for the top-level Victor Miller basis function you've put \"Martin Raum (2009-08-02) : Use FLINT, eisenstein_series_list and delta_list\" -- this presumably refers to some previous versions of the functions you've since deleted. \n\n- (Relatively minor quibble): The docstring of `eisenstein_series_poly` doesn't appear in the reference manual, while that of `eisenstein_series_qexp` does, so I think the explanatory note about the algorithm should go in the latter, although the logic it documents is in the former. On a related note, the function `delta_poly` is for internal use only, so it would probably be better to rename it as `_delta_poly` to keep it from appearing in the reference manual.\n\n\n- Before: \n\n```\nsage: time f = eisenstein_series_qexp(300, prec=300)\nCPU times: user 0.08 s, sys: 0.00 s, total: 0.08 s\nWall time: 0.08 s\nsage: f[17]\n80209810833685322547441216640793046418531912652780577247188195636352386970411639577599796091104012101130717894701055491951622698591353123624261645540716464351344232869435068758174405683700539108020074191942626567981338004282490220912228333614228282202627549912059318605175057042490646040306263891324441973189409859729207141378843824365061425627861617456672310716754354\n```\n\nAfter:\n\n```\nsage: f = eisenstein_series_qexp(300, prec=300)\n---------------------------------------------------------------------------\nOverflowError                             Traceback (most recent call last)\n\n/home/david/sage-4.3.5/devel/sage-vmiller/sage/modular/modform/<ipython console> in <module>()\n\n/home/david/sage-4.3.5/local/lib/python2.6/site-packages/sage/modular/modform/eis_series.pyc in eisenstein_series_qexp(k, prec, K, var)\n     76     R = PowerSeriesRing(K, var)\n     77     if K is QQ :\n---> 78         return a0fac*R(eisenstein_series_poly(k, prec).list(), prec=prec, check=False)\n     79     else:\n     80         # this is a temporary fix due to a change in the\n\n/home/david/sage-4.3.5/local/lib/python2.6/site-packages/sage/modular/modform/eis_series_cython.so in sage.modular.modform.eis_series_cython.eisenstein_series_poly (sage/modular/modform/eis_series_cython.c:3931)()\n     12\n     13\n---> 14 cpdef eisenstein_series_poly(int k, int prec = 10) :\n     15     r\"\"\"\n     16     Return the q-expansion up to precision 'prec' of the\n\n/home/david/sage-4.3.5/local/lib/python2.6/site-packages/sage/modular/modform/eis_series_cython.so in sage.modular.modform.eis_series_cython.eisenstein_series_poly (sage/modular/modform/eis_series_cython.c:3490)()\n     62     expt = <unsigned long int>(k - 1)\n     63     a0 = - bernoulli(k) / (2*k)\n---> 64     a0den = a0.denominator()\n     65     #if a0 < 0 : a0den = -a0den\n     66\n\nOverflowError: value too large to convert to int\n```\n\n\nFrankly I think we've now got to the point where it'll be quicker for me to fix the above myself rather than go through a fourth iteration. I'll upload a second patch that fixes the above issues, later today or possibly tomorrow.\n\nDavid",
+    "body": "Attachment [trac-6671-3-victor-miller.patch](tarball://root/attachments/some-uuid/ticket6671/trac-6671-3-victor-miller.patch) by davidloeffler created at 2010-04-07 14:04:08\n\nSorry, this still isn't up to scratch.\n\n- The \"formatting issues that you don't understand\" are because the old code always returns a Sequence object which prints each entry on a new line, while your new code inconsistently sometimes returns a Sequence and sometimes a list. It would have been wise to try and understand what was happening here, rather than just casually changing all the doctests to match whatever results your code happened to produce.\n\n\n- Docstrings. Docstrings! They are important! Many of your docstrings bear only very scanty resemblance to the actual code, e.g. the docstring for eisenstein_series_poly claims it returns a list whereas in fact it's returning a Fmpz_poly object. Furthermore, the normalisation it uses is not either of the standard ones (i.e. neither the constant nor linear coeffs are 1) so you should document what it is actually doing, and add a doctest to prove it. On a similar note, in the \"authors\" section for the top-level Victor Miller basis function you've put \"Martin Raum (2009-08-02) : Use FLINT, eisenstein_series_list and delta_list\" -- this presumably refers to some previous versions of the functions you've since deleted. \n\n- (Relatively minor quibble): The docstring of `eisenstein_series_poly` doesn't appear in the reference manual, while that of `eisenstein_series_qexp` does, so I think the explanatory note about the algorithm should go in the latter, although the logic it documents is in the former. On a related note, the function `delta_poly` is for internal use only, so it would probably be better to rename it as `_delta_poly` to keep it from appearing in the reference manual.\n\n\n- Before: \n\n```\nsage: time f = eisenstein_series_qexp(300, prec=300)\nCPU times: user 0.08 s, sys: 0.00 s, total: 0.08 s\nWall time: 0.08 s\nsage: f[17]\n80209810833685322547441216640793046418531912652780577247188195636352386970411639577599796091104012101130717894701055491951622698591353123624261645540716464351344232869435068758174405683700539108020074191942626567981338004282490220912228333614228282202627549912059318605175057042490646040306263891324441973189409859729207141378843824365061425627861617456672310716754354\n```\n\nAfter:\n\n```\nsage: f = eisenstein_series_qexp(300, prec=300)\n---------------------------------------------------------------------------\nOverflowError                             Traceback (most recent call last)\n\n/home/david/sage-4.3.5/devel/sage-vmiller/sage/modular/modform/<ipython console> in <module>()\n\n/home/david/sage-4.3.5/local/lib/python2.6/site-packages/sage/modular/modform/eis_series.pyc in eisenstein_series_qexp(k, prec, K, var)\n     76     R = PowerSeriesRing(K, var)\n     77     if K is QQ :\n---> 78         return a0fac*R(eisenstein_series_poly(k, prec).list(), prec=prec, check=False)\n     79     else:\n     80         # this is a temporary fix due to a change in the\n\n/home/david/sage-4.3.5/local/lib/python2.6/site-packages/sage/modular/modform/eis_series_cython.so in sage.modular.modform.eis_series_cython.eisenstein_series_poly (sage/modular/modform/eis_series_cython.c:3931)()\n     12\n     13\n---> 14 cpdef eisenstein_series_poly(int k, int prec = 10) :\n     15     r\"\"\"\n     16     Return the q-expansion up to precision 'prec' of the\n\n/home/david/sage-4.3.5/local/lib/python2.6/site-packages/sage/modular/modform/eis_series_cython.so in sage.modular.modform.eis_series_cython.eisenstein_series_poly (sage/modular/modform/eis_series_cython.c:3490)()\n     62     expt = <unsigned long int>(k - 1)\n     63     a0 = - bernoulli(k) / (2*k)\n---> 64     a0den = a0.denominator()\n     65     #if a0 < 0 : a0den = -a0den\n     66\n\nOverflowError: value too large to convert to int\n```\n\n\nFrankly I think we've now got to the point where it'll be quicker for me to fix the above myself rather than go through a fourth iteration. I'll upload a second patch that fixes the above issues, later today or possibly tomorrow.\n\nDavid",
     "created_at": "2010-04-07T14:04:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6671",
     "type": "issue_comment",
@@ -250,7 +250,7 @@ archive/issue_comments_054806.json:
 }
 ```
 
-Attachment
+Attachment [trac-6671-3-victor-miller.patch](tarball://root/attachments/some-uuid/ticket6671/trac-6671-3-victor-miller.patch) by davidloeffler created at 2010-04-07 14:04:08
 
 Sorry, this still isn't up to scratch.
 
@@ -439,7 +439,7 @@ Martin: can you take a quick look at the new patch, in particular at the changes
 archive/issue_comments_054813.json:
 ```json
 {
-    "body": "Attachment\n\nApply over trac-6671-3-victor-miller.patch",
+    "body": "Attachment [trac-6671-reviewer.patch](tarball://root/attachments/some-uuid/ticket6671/trac-6671-reviewer.patch) by davidloeffler created at 2010-04-07 19:41:07\n\nApply over trac-6671-3-victor-miller.patch",
     "created_at": "2010-04-07T19:41:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6671",
     "type": "issue_comment",
@@ -448,7 +448,7 @@ archive/issue_comments_054813.json:
 }
 ```
 
-Attachment
+Attachment [trac-6671-reviewer.patch](tarball://root/attachments/some-uuid/ticket6671/trac-6671-reviewer.patch) by davidloeffler created at 2010-04-07 19:41:07
 
 Apply over trac-6671-3-victor-miller.patch
 
@@ -506,7 +506,7 @@ I think if we merge Martin's patch and mine, that means the patch at #6020 is su
 archive/issue_comments_054816.json:
 ```json
 {
-    "body": "Attachment\n\nFirst apply trac-6671-3-victor-miller.patch, then this one",
+    "body": "Attachment [trac-6671-reviewer-2.patch](tarball://root/attachments/some-uuid/ticket6671/trac-6671-reviewer-2.patch) by mraum created at 2010-04-07 21:32:58\n\nFirst apply trac-6671-3-victor-miller.patch, then this one",
     "created_at": "2010-04-07T21:32:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6671",
     "type": "issue_comment",
@@ -515,7 +515,7 @@ archive/issue_comments_054816.json:
 }
 ```
 
-Attachment
+Attachment [trac-6671-reviewer-2.patch](tarball://root/attachments/some-uuid/ticket6671/trac-6671-reviewer-2.patch) by mraum created at 2010-04-07 21:32:58
 
 First apply trac-6671-3-victor-miller.patch, then this one
 

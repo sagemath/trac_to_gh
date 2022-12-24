@@ -45,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5204
 archive/issue_comments_039872.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5204.patch](tarball://root/attachments/some-uuid/ticket5204/trac_5204.patch) by rlm created at 2009-02-10 20:49:24",
     "created_at": "2009-02-10T20:49:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5204",
     "type": "issue_comment",
@@ -54,7 +54,7 @@ archive/issue_comments_039872.json:
 }
 ```
 
-Attachment
+Attachment [trac_5204.patch](tarball://root/attachments/some-uuid/ticket5204/trac_5204.patch) by rlm created at 2009-02-10 20:49:24
 
 
 
@@ -81,7 +81,7 @@ Apply after previous
 archive/issue_comments_039874.json:
 ```json
 {
-    "body": "Attachment\n\nReview:  I can only deduce that rlm did not actually test this!\n\n```\nsage -t  \"devel/sage-5204/sage/schemes/elliptic_curves/gp_simon.py\"\n**********************************************************************\nFile \"/home/john/sage-3.3.rc0/devel/sage-5204/sage/schemes/elliptic_curves/gp_simon.py\", line 54:\n    sage: sage.schemes.elliptic_curves.gp_simon.simon_two_descent(E)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/john/sage-3.3.rc0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/john/sage-3.3.rc0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/john/sage-3.3.rc0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_2[4]>\", line 1, in <module>\n        sage.schemes.elliptic_curves.gp_simon.simon_two_descent(E)###line 54:\n    sage: sage.schemes.elliptic_curves.gp_simon.simon_two_descent(E)\n      File \"/home/john/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/gp_simon.py\", line 69, in simon_two_descent\n        K = E.base_ring().change_names('a')\n    AttributeError: 'RationalField' object has no attribute 'change_names'\n**********************************************************************\nFile \"/home/john/sage-3.3.rc0/devel/sage-5204/sage/schemes/elliptic_curves/gp_simon.py\", line 56:\n    sage: E.simon_two_descent()\nException raised:\n    Traceback (most recent call last):\n      File \"/home/john/sage-3.3.rc0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/john/sage-3.3.rc0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/john/sage-3.3.rc0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_2[5]>\", line 1, in <module>\n        E.simon_two_descent()###line 56:\n    sage: E.simon_two_descent()\n      File \"/home/john/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 1202, in simon_two_descent\n        maxprob=maxprob, limbigprime=limbigprime)\n      File \"/home/john/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/gp_simon.py\", line 69, in simon_two_descent\n        K = E.base_ring().change_names('a')\n    AttributeError: 'RationalField' object has no attribute 'change_names'\n**********************************************************************\n1 items had failures:\n   2 of   8 in __main__.example_2\n```\n\n\nI have added a second patch (apply after the first one) which checks that K is not QQ before changing names!\n\nIf either rlm or was could review my patch then this can go forward.",
+    "body": "Attachment [trac_5204-a.patch](tarball://root/attachments/some-uuid/ticket5204/trac_5204-a.patch) by cremona created at 2009-02-15 17:40:22\n\nReview:  I can only deduce that rlm did not actually test this!\n\n```\nsage -t  \"devel/sage-5204/sage/schemes/elliptic_curves/gp_simon.py\"\n**********************************************************************\nFile \"/home/john/sage-3.3.rc0/devel/sage-5204/sage/schemes/elliptic_curves/gp_simon.py\", line 54:\n    sage: sage.schemes.elliptic_curves.gp_simon.simon_two_descent(E)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/john/sage-3.3.rc0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/john/sage-3.3.rc0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/john/sage-3.3.rc0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_2[4]>\", line 1, in <module>\n        sage.schemes.elliptic_curves.gp_simon.simon_two_descent(E)###line 54:\n    sage: sage.schemes.elliptic_curves.gp_simon.simon_two_descent(E)\n      File \"/home/john/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/gp_simon.py\", line 69, in simon_two_descent\n        K = E.base_ring().change_names('a')\n    AttributeError: 'RationalField' object has no attribute 'change_names'\n**********************************************************************\nFile \"/home/john/sage-3.3.rc0/devel/sage-5204/sage/schemes/elliptic_curves/gp_simon.py\", line 56:\n    sage: E.simon_two_descent()\nException raised:\n    Traceback (most recent call last):\n      File \"/home/john/sage-3.3.rc0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/john/sage-3.3.rc0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/john/sage-3.3.rc0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_2[5]>\", line 1, in <module>\n        E.simon_two_descent()###line 56:\n    sage: E.simon_two_descent()\n      File \"/home/john/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 1202, in simon_two_descent\n        maxprob=maxprob, limbigprime=limbigprime)\n      File \"/home/john/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/gp_simon.py\", line 69, in simon_two_descent\n        K = E.base_ring().change_names('a')\n    AttributeError: 'RationalField' object has no attribute 'change_names'\n**********************************************************************\n1 items had failures:\n   2 of   8 in __main__.example_2\n```\n\n\nI have added a second patch (apply after the first one) which checks that K is not QQ before changing names!\n\nIf either rlm or was could review my patch then this can go forward.",
     "created_at": "2009-02-15T17:40:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5204",
     "type": "issue_comment",
@@ -90,7 +90,7 @@ archive/issue_comments_039874.json:
 }
 ```
 
-Attachment
+Attachment [trac_5204-a.patch](tarball://root/attachments/some-uuid/ticket5204/trac_5204-a.patch) by cremona created at 2009-02-15 17:40:22
 
 Review:  I can only deduce that rlm did not actually test this!
 
@@ -255,7 +255,7 @@ Apply after previous two
 archive/issue_comments_039879.json:
 ```json
 {
-    "body": "Attachment\n\nThe trouble is that after changing the name of the field's generator (in that example from 'i' to 'a') there is no coercion from the old field to the new one, even though they only differ i nthe name of the gen.\n\nThis could obviously be hacked, and I have done so, but it is not very elegant:   since E's field has changed you have to hack again to get the points found back on the original curve which has the original base field.\n\nI'm sure that there is a better coercion-based way of doing this.  But the tests now pass.  Apply new patch after the other two.",
+    "body": "Attachment [trac_5204-b.patch](tarball://root/attachments/some-uuid/ticket5204/trac_5204-b.patch) by cremona created at 2009-02-20 09:55:02\n\nThe trouble is that after changing the name of the field's generator (in that example from 'i' to 'a') there is no coercion from the old field to the new one, even though they only differ i nthe name of the gen.\n\nThis could obviously be hacked, and I have done so, but it is not very elegant:   since E's field has changed you have to hack again to get the points found back on the original curve which has the original base field.\n\nI'm sure that there is a better coercion-based way of doing this.  But the tests now pass.  Apply new patch after the other two.",
     "created_at": "2009-02-20T09:55:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5204",
     "type": "issue_comment",
@@ -264,7 +264,7 @@ archive/issue_comments_039879.json:
 }
 ```
 
-Attachment
+Attachment [trac_5204-b.patch](tarball://root/attachments/some-uuid/ticket5204/trac_5204-b.patch) by cremona created at 2009-02-20 09:55:02
 
 The trouble is that after changing the name of the field's generator (in that example from 'i' to 'a') there is no coercion from the old field to the new one, even though they only differ i nthe name of the gen.
 

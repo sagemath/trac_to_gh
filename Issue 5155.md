@@ -627,7 +627,7 @@ However, this depends on so many other tickets, so it might be good to postpone 
 archive/issue_comments_039478.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5155_sage_location.patch](tarball://root/attachments/some-uuid/ticket5155/5155_sage_location.patch) by jdemeyer created at 2012-09-16 18:44:12",
     "created_at": "2012-09-16T18:44:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_comment",
@@ -636,7 +636,7 @@ archive/issue_comments_039478.json:
 }
 ```
 
-Attachment
+Attachment [5155_sage_location.patch](tarball://root/attachments/some-uuid/ticket5155/5155_sage_location.patch) by jdemeyer created at 2012-09-16 18:44:12
 
 
 
@@ -717,7 +717,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_039483.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5155_sagelib.patch](tarball://root/attachments/some-uuid/ticket5155/5155_sagelib.patch) by jdemeyer created at 2012-12-19 21:01:28",
     "created_at": "2012-12-19T21:01:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_comment",
@@ -726,7 +726,7 @@ archive/issue_comments_039483.json:
 }
 ```
 
-Attachment
+Attachment [5155_sagelib.patch](tarball://root/attachments/some-uuid/ticket5155/5155_sagelib.patch) by jdemeyer created at 2012-12-19 21:01:28
 
 
 

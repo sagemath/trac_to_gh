@@ -63,7 +63,7 @@ Mockup
 archive/issue_comments_018060.json:
 ```json
 {
-    "body": "Attachment\n\n\"Source\" for mockup",
+    "body": "Attachment [literate_notebook.png](tarball://root/attachments/some-uuid/ticket2628/literate_notebook.png) by dunfield created at 2008-03-21 15:46:54\n\n\"Source\" for mockup",
     "created_at": "2008-03-21T15:46:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2628",
     "type": "issue_comment",
@@ -72,7 +72,7 @@ archive/issue_comments_018060.json:
 }
 ```
 
-Attachment
+Attachment [literate_notebook.png](tarball://root/attachments/some-uuid/ticket2628/literate_notebook.png) by dunfield created at 2008-03-21 15:46:54
 
 "Source" for mockup
 
@@ -83,7 +83,7 @@ Attachment
 archive/issue_comments_018061.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [notebook.txt](tarball://root/attachments/some-uuid/ticket2628/notebook.txt) by gfurnish created at 2008-03-21 16:34:49",
     "created_at": "2008-03-21T16:34:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2628",
     "type": "issue_comment",
@@ -92,7 +92,7 @@ archive/issue_comments_018061.json:
 }
 ```
 
-Attachment
+Attachment [notebook.txt](tarball://root/attachments/some-uuid/ticket2628/notebook.txt) by gfurnish created at 2008-03-21 16:34:49
 
 
 

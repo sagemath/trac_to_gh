@@ -107,7 +107,7 @@ Implements basic arithmetic for MaximaFunction
 archive/issue_comments_000617.json:
 ```json
 {
-    "body": "Attachment\n\nI am surprised that this old ticket was never closed.\n\nI do not claim that i produced high-performance code. However, the following things are now possible:\n\n```\nsage: f=maxima.function('x','sin(x)')\nsage: g=f.integrate('x')\nsage: h=maxima.function('y','cos(y)')\nsage: 2*f\n2*sin(x)\nsage: f*g\n-cos(x)*sin(x)\nsage: g*h\n-cos(x)*cos(y)\nsage: (g*h)(3,4)\n-cos(3)*cos(4)\nsage: (g-f)\n-sin(x)-cos(x)\nsage: g^f\n(-cos(x))^sin(x)\nsage: f^g\n1/sin(x)^cos(x)\n```\n\n\nThere remains the following problem (if it is a problem):\n\n```\nsage: f+x\nsin(x)+x  # works\nsage: 2+f\nsin(x)+2  # works\nsage: x+f\nx + sage0 # doesn't work!\n```\n\nThis is -- i guess -- due to automatic coercion: `x+f` is the same as \n\n```\nsage: x+x.parent()(f)\nx + sage0\n```\n\nwhile `f+x` is the same as\n\n```\nsage: f+f.parent()(x)\nsin(x)+x\n```\n",
+    "body": "Attachment [MaximaFunctionArith.patch](tarball://root/attachments/some-uuid/ticket132/MaximaFunctionArith.patch) by SimonKing created at 2008-08-14 16:47:18\n\nI am surprised that this old ticket was never closed.\n\nI do not claim that i produced high-performance code. However, the following things are now possible:\n\n```\nsage: f=maxima.function('x','sin(x)')\nsage: g=f.integrate('x')\nsage: h=maxima.function('y','cos(y)')\nsage: 2*f\n2*sin(x)\nsage: f*g\n-cos(x)*sin(x)\nsage: g*h\n-cos(x)*cos(y)\nsage: (g*h)(3,4)\n-cos(3)*cos(4)\nsage: (g-f)\n-sin(x)-cos(x)\nsage: g^f\n(-cos(x))^sin(x)\nsage: f^g\n1/sin(x)^cos(x)\n```\n\n\nThere remains the following problem (if it is a problem):\n\n```\nsage: f+x\nsin(x)+x  # works\nsage: 2+f\nsin(x)+2  # works\nsage: x+f\nx + sage0 # doesn't work!\n```\n\nThis is -- i guess -- due to automatic coercion: `x+f` is the same as \n\n```\nsage: x+x.parent()(f)\nx + sage0\n```\n\nwhile `f+x` is the same as\n\n```\nsage: f+f.parent()(x)\nsin(x)+x\n```\n",
     "created_at": "2008-08-14T16:47:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/132",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_000617.json:
 }
 ```
 
-Attachment
+Attachment [MaximaFunctionArith.patch](tarball://root/attachments/some-uuid/ticket132/MaximaFunctionArith.patch) by SimonKing created at 2008-08-14 16:47:18
 
 I am surprised that this old ticket was never closed.
 
@@ -227,7 +227,7 @@ sage: _(2)
 archive/issue_comments_000619.json:
 ```json
 {
-    "body": "Attachment\n\nAdding doctests, taking care of argument order, adding __rpow__, correcting misprint",
+    "body": "Attachment [MaximaFunctionArith2.patch](tarball://root/attachments/some-uuid/ticket132/MaximaFunctionArith2.patch) by SimonKing created at 2008-08-15 07:54:53\n\nAdding doctests, taking care of argument order, adding __rpow__, correcting misprint",
     "created_at": "2008-08-15T07:54:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/132",
     "type": "issue_comment",
@@ -236,7 +236,7 @@ archive/issue_comments_000619.json:
 }
 ```
 
-Attachment
+Attachment [MaximaFunctionArith2.patch](tarball://root/attachments/some-uuid/ticket132/MaximaFunctionArith2.patch) by SimonKing created at 2008-08-15 07:54:53
 
 Adding doctests, taking care of argument order, adding __rpow__, correcting misprint
 
@@ -289,7 +289,7 @@ Simon's original patches subvert the coercion system.  I posted a new patch inst
 archive/issue_comments_000622.json:
 ```json
 {
-    "body": "Attachment\n\nMike's patch looks good. Positive review. If Mike agrees, one can apply my docstring patch too. However, this is optional and to some extend a question of taste/preference.",
+    "body": "Attachment [trac_132.patch](tarball://root/attachments/some-uuid/ticket132/trac_132.patch) by malb created at 2008-08-28 10:40:02\n\nMike's patch looks good. Positive review. If Mike agrees, one can apply my docstring patch too. However, this is optional and to some extend a question of taste/preference.",
     "created_at": "2008-08-28T10:40:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/132",
     "type": "issue_comment",
@@ -298,7 +298,7 @@ archive/issue_comments_000622.json:
 }
 ```
 
-Attachment
+Attachment [trac_132.patch](tarball://root/attachments/some-uuid/ticket132/trac_132.patch) by malb created at 2008-08-28 10:40:02
 
 Mike's patch looks good. Positive review. If Mike agrees, one can apply my docstring patch too. However, this is optional and to some extend a question of taste/preference.
 
@@ -327,7 +327,7 @@ optional
 archive/issue_comments_000624.json:
 ```json
 {
-    "body": "Attachment\n\n+1 to Martin's patch.",
+    "body": "Attachment [trac_132_docstrings.patch](tarball://root/attachments/some-uuid/ticket132/trac_132_docstrings.patch) by mhansen created at 2008-08-28 18:47:38\n\n+1 to Martin's patch.",
     "created_at": "2008-08-28T18:47:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/132",
     "type": "issue_comment",
@@ -336,7 +336,7 @@ archive/issue_comments_000624.json:
 }
 ```
 
-Attachment
+Attachment [trac_132_docstrings.patch](tarball://root/attachments/some-uuid/ticket132/trac_132_docstrings.patch) by mhansen created at 2008-08-28 18:47:38
 
 +1 to Martin's patch.
 

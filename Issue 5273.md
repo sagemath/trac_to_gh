@@ -47,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5273
 archive/issue_comments_040476.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.",
+    "body": "Attachment [5273.patch](tarball://root/attachments/some-uuid/ticket5273/5273.patch) by mhansen created at 2009-02-15 02:24:38\n\nLooks good to me.",
     "created_at": "2009-02-15T02:24:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5273",
     "type": "issue_comment",
@@ -56,7 +56,7 @@ archive/issue_comments_040476.json:
 }
 ```
 
-Attachment
+Attachment [5273.patch](tarball://root/attachments/some-uuid/ticket5273/5273.patch) by mhansen created at 2009-02-15 02:24:38
 
 Looks good to me.
 
@@ -178,7 +178,7 @@ Here's a version based off 3.3.rc0.
 archive/issue_comments_040480.json:
 ```json
 {
-    "body": "Attachment\n\nTo make things 100% sure: the rebased patch applies and doctests fine, so an extra positive review for that patch.\n\nCheers,\n\nMichael",
+    "body": "Attachment [5273-rebased.patch](tarball://root/attachments/some-uuid/ticket5273/5273-rebased.patch) by mabshoff created at 2009-02-16 04:06:35\n\nTo make things 100% sure: the rebased patch applies and doctests fine, so an extra positive review for that patch.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-16T04:06:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5273",
     "type": "issue_comment",
@@ -187,7 +187,7 @@ archive/issue_comments_040480.json:
 }
 ```
 
-Attachment
+Attachment [5273-rebased.patch](tarball://root/attachments/some-uuid/ticket5273/5273-rebased.patch) by mabshoff created at 2009-02-16 04:06:35
 
 To make things 100% sure: the rebased patch applies and doctests fine, so an extra positive review for that patch.
 

@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8174
 archive/issue_comments_072018.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8174-maxima_methods.patch](tarball://root/attachments/some-uuid/ticket8174/trac_8174-maxima_methods.patch) by burcin created at 2010-02-03 14:58:05",
     "created_at": "2010-02-03T14:58:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8174",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_072018.json:
 }
 ```
 
-Attachment
+Attachment [trac_8174-maxima_methods.patch](tarball://root/attachments/some-uuid/ticket8174/trac_8174-maxima_methods.patch) by burcin created at 2010-02-03 14:58:05
 
 
 
@@ -156,7 +156,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_072024.json:
 ```json
 {
-    "body": "Attachment\n\napply only this patch",
+    "body": "Attachment [trac_8174-maxima_methods.take2.patch](tarball://root/attachments/some-uuid/ticket8174/trac_8174-maxima_methods.take2.patch) by burcin created at 2010-02-20 12:29:18\n\napply only this patch",
     "created_at": "2010-02-20T12:29:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8174",
     "type": "issue_comment",
@@ -165,7 +165,7 @@ archive/issue_comments_072024.json:
 }
 ```
 
-Attachment
+Attachment [trac_8174-maxima_methods.take2.patch](tarball://root/attachments/some-uuid/ticket8174/trac_8174-maxima_methods.take2.patch) by burcin created at 2010-02-20 12:29:18
 
 apply only this patch
 

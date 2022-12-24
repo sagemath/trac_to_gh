@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2046
 archive/issue_comments_013250.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-2046.patch](tarball://root/attachments/some-uuid/ticket2046/trac-2046.patch) by cwitty created at 2008-02-05 01:52:48",
     "created_at": "2008-02-05T01:52:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2046",
     "type": "issue_comment",
@@ -53,7 +53,7 @@ archive/issue_comments_013250.json:
 }
 ```
 
-Attachment
+Attachment [trac-2046.patch](tarball://root/attachments/some-uuid/ticket2046/trac-2046.patch) by cwitty created at 2008-02-05 01:52:48
 
 
 

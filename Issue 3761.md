@@ -67,7 +67,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3761
 archive/issue_comments_026720.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [scripts-3761.patch](tarball://root/attachments/some-uuid/ticket3761/scripts-3761.patch) by was created at 2008-08-02 21:24:02",
     "created_at": "2008-08-02T21:24:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3761",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_026720.json:
 }
 ```
 
-Attachment
+Attachment [scripts-3761.patch](tarball://root/attachments/some-uuid/ticket3761/scripts-3761.patch) by was created at 2008-08-02 21:24:02
 
 
 
@@ -329,7 +329,7 @@ Michael
 archive/issue_comments_026729.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [scripts-3761-3.2.alpha3.patch](tarball://root/attachments/some-uuid/ticket3761/scripts-3761-3.2.alpha3.patch) by was created at 2008-11-12 03:51:06",
     "created_at": "2008-11-12T03:51:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3761",
     "type": "issue_comment",
@@ -338,7 +338,7 @@ archive/issue_comments_026729.json:
 }
 ```
 
-Attachment
+Attachment [scripts-3761-3.2.alpha3.patch](tarball://root/attachments/some-uuid/ticket3761/scripts-3761-3.2.alpha3.patch) by was created at 2008-11-12 03:51:06
 
 
 
@@ -513,7 +513,7 @@ apply this after the scripts patch above.  This makes sure that "sage -bdist" ru
 archive/issue_comments_026736.json:
 ```json
 {
-    "body": "Attachment\n\nI attached a patch that makes sure sage runs right when one does \"sage -bdist\".",
+    "body": "Attachment [scripts-3761-PART2-bdist.patch](tarball://root/attachments/some-uuid/ticket3761/scripts-3761-PART2-bdist.patch) by was created at 2008-11-13 01:32:54\n\nI attached a patch that makes sure sage runs right when one does \"sage -bdist\".",
     "created_at": "2008-11-13T01:32:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3761",
     "type": "issue_comment",
@@ -522,7 +522,7 @@ archive/issue_comments_026736.json:
 }
 ```
 
-Attachment
+Attachment [scripts-3761-PART2-bdist.patch](tarball://root/attachments/some-uuid/ticket3761/scripts-3761-PART2-bdist.patch) by was created at 2008-11-13 01:32:54
 
 I attached a patch that makes sure sage runs right when one does "sage -bdist".
 
@@ -610,7 +610,7 @@ apply this after the scripts patch above. This makes sure that "sage -bdist" run
 archive/issue_comments_026740.json:
 ```json
 {
-    "body": "Attachment\n\nOK, here we go:\n\nI give the \"sage-location\" patch of William a positive review (apply only the rebased one) pending an epsilon --- a PART2 patch is needed.\n\nI give the \"sage-bdist\" PART2 patch of William a negative review (reason: see my post above).\n\nI kindly ask for my own \"sage-bdist\" PART2fixed patch (to be applied together with the first patch) to be reviewed, so yet another of the thousands of tickets can finally be closed in O(1) time --- on a positive review of this Part2fixed patch, the remaining epsilon is supplied, thus giving the ticket as such a positive review.\n\nCheers, gsw\n\n(goes off and fetches a beer)",
+    "body": "Attachment [scripts-3761-PART2fixed-bdist.patch](tarball://root/attachments/some-uuid/ticket3761/scripts-3761-PART2fixed-bdist.patch) by GeorgSWeber created at 2008-11-13 20:50:45\n\nOK, here we go:\n\nI give the \"sage-location\" patch of William a positive review (apply only the rebased one) pending an epsilon --- a PART2 patch is needed.\n\nI give the \"sage-bdist\" PART2 patch of William a negative review (reason: see my post above).\n\nI kindly ask for my own \"sage-bdist\" PART2fixed patch (to be applied together with the first patch) to be reviewed, so yet another of the thousands of tickets can finally be closed in O(1) time --- on a positive review of this Part2fixed patch, the remaining epsilon is supplied, thus giving the ticket as such a positive review.\n\nCheers, gsw\n\n(goes off and fetches a beer)",
     "created_at": "2008-11-13T20:50:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3761",
     "type": "issue_comment",
@@ -619,7 +619,7 @@ archive/issue_comments_026740.json:
 }
 ```
 
-Attachment
+Attachment [scripts-3761-PART2fixed-bdist.patch](tarball://root/attachments/some-uuid/ticket3761/scripts-3761-PART2fixed-bdist.patch) by GeorgSWeber created at 2008-11-13 20:50:45
 
 OK, here we go:
 

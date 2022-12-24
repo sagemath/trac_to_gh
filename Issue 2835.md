@@ -84,7 +84,7 @@ The attached patch implements a simple iterator for finding primes of number fie
 archive/issue_comments_019456.json:
 ```json
 {
-    "body": "Attachment\n\nIt's an interesting idea to do it this way.  When I had to do something similar I just looped over primes p and computed x^p mod (p,f(x)).  But I wanted p for which f split completely, which is a lot stronger than what you need.\n\nAs this is a function which will not be used all that much, I suggest putting it in and seeing how it fares in actual use.",
+    "body": "Attachment [2835-ncalexan-primes-of-degree-one-1.patch](tarball://root/attachments/some-uuid/ticket2835/2835-ncalexan-primes-of-degree-one-1.patch) by cremona created at 2008-04-07 08:15:56\n\nIt's an interesting idea to do it this way.  When I had to do something similar I just looped over primes p and computed x^p mod (p,f(x)).  But I wanted p for which f split completely, which is a lot stronger than what you need.\n\nAs this is a function which will not be used all that much, I suggest putting it in and seeing how it fares in actual use.",
     "created_at": "2008-04-07T08:15:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2835",
     "type": "issue_comment",
@@ -93,7 +93,7 @@ archive/issue_comments_019456.json:
 }
 ```
 
-Attachment
+Attachment [2835-ncalexan-primes-of-degree-one-1.patch](tarball://root/attachments/some-uuid/ticket2835/2835-ncalexan-primes-of-degree-one-1.patch) by cremona created at 2008-04-07 08:15:56
 
 It's an interesting idea to do it this way.  When I had to do something similar I just looped over primes p and computed x^p mod (p,f(x)).  But I wanted p for which f split completely, which is a lot stronger than what you need.
 

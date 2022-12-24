@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8417
 archive/issue_comments_075423.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8417.patch](tarball://root/attachments/some-uuid/ticket8417/trac_8417.patch) by ylchapuy created at 2010-03-02 11:02:15",
     "created_at": "2010-03-02T11:02:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8417",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_075423.json:
 }
 ```
 
-Attachment
+Attachment [trac_8417.patch](tarball://root/attachments/some-uuid/ticket8417/trac_8417.patch) by ylchapuy created at 2010-03-02 11:02:15
 
 
 
@@ -178,7 +178,7 @@ apply on top of other patch
 archive/issue_comments_075430.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:3 ylchapuy]:\n> Beware, with your patch applied I get:\n\nThank you for pointing this out. I've reverted that part of the patch.\n\nCan you see any way to make the overhead from checking in this case any better? Also, what do you think about a check=False option in graph construction, more generally?",
+    "body": "Attachment [trac_8417-ref.patch](tarball://root/attachments/some-uuid/ticket8417/trac_8417-ref.patch) by rlm created at 2010-03-09 18:23:57\n\nReplying to [comment:3 ylchapuy]:\n> Beware, with your patch applied I get:\n\nThank you for pointing this out. I've reverted that part of the patch.\n\nCan you see any way to make the overhead from checking in this case any better? Also, what do you think about a check=False option in graph construction, more generally?",
     "created_at": "2010-03-09T18:23:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8417",
     "type": "issue_comment",
@@ -187,7 +187,7 @@ archive/issue_comments_075430.json:
 }
 ```
 
-Attachment
+Attachment [trac_8417-ref.patch](tarball://root/attachments/some-uuid/ticket8417/trac_8417-ref.patch) by rlm created at 2010-03-09 18:23:57
 
 Replying to [comment:3 ylchapuy]:
 > Beware, with your patch applied I get:

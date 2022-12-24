@@ -417,7 +417,7 @@ Cheers
 archive/issue_comments_004801.json:
 ```json
 {
-    "body": "Attachment\n\nChange preparse_ipython so that %timeit results in calling timeit.eval",
+    "body": "Attachment [timeit.patch](tarball://root/attachments/some-uuid/ticket797/timeit.patch) by SimonKing created at 2009-01-21 22:05:18\n\nChange preparse_ipython so that %timeit results in calling timeit.eval",
     "created_at": "2009-01-21T22:05:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/797",
     "type": "issue_comment",
@@ -426,7 +426,7 @@ archive/issue_comments_004801.json:
 }
 ```
 
-Attachment
+Attachment [timeit.patch](tarball://root/attachments/some-uuid/ticket797/timeit.patch) by SimonKing created at 2009-01-21 22:05:18
 
 Change preparse_ipython so that %timeit results in calling timeit.eval
 
@@ -641,7 +641,7 @@ Changing this to "needs work" in light of mhansen's solution above.
 archive/issue_comments_004811.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_797.patch](tarball://root/attachments/some-uuid/ticket797/trac_797.patch) by mhansen created at 2010-01-17 07:31:32",
     "created_at": "2010-01-17T07:31:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/797",
     "type": "issue_comment",
@@ -650,7 +650,7 @@ archive/issue_comments_004811.json:
 }
 ```
 
-Attachment
+Attachment [trac_797.patch](tarball://root/attachments/some-uuid/ticket797/trac_797.patch) by mhansen created at 2010-01-17 07:31:32
 
 
 

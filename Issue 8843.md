@@ -87,7 +87,7 @@ Unfortunately, after applying this, libcsage just doesn't build anymore.
 archive/issue_comments_081295.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8843-c_lib.patch](tarball://root/attachments/some-uuid/ticket8843/trac_8843-c_lib.patch) by mhansen created at 2010-05-25 18:21:15",
     "created_at": "2010-05-25T18:21:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8843",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_081295.json:
 }
 ```
 
-Attachment
+Attachment [trac_8843-c_lib.patch](tarball://root/attachments/some-uuid/ticket8843/trac_8843-c_lib.patch) by mhansen created at 2010-05-25 18:21:15
 
 
 

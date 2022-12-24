@@ -107,7 +107,7 @@ Changing keywords from "t_span" to "ode_solver, ode_solve, t_span".
 archive/issue_comments_064310.json:
 ```json
 {
-    "body": "Attachment\n\nThere are two separate issues here, one of which is clearly a bug:\n\n1. There's an off-by-one in the code for handling the case where t_span specifies all the time points for the solution (len(t_span) > 2).  I put together a patch for this above.  The upper limit of the loop was changed from n-1 to n and the setting of t_end was moved to the beginning of the loop.  I also changed t_span to self.t_span in two spots.\n\n2. num_points specifies the number of points *after* the initial point, so there are num_points + 1 total.  This is not clear one way or the other.  I tend to like the current version, so that, e.g. t_span = [0, 1], num_points = 10, gives points at 0, 0.1, 0.2, ..., 0.9, 1 instead of 0, 0.11111, 0.22222, ..., 0.88888, 1.",
+    "body": "Attachment [trac_7560_ode_off-by-one_fix.patch](tarball://root/attachments/some-uuid/ticket7560/trac_7560_ode_off-by-one_fix.patch) by medlock created at 2010-10-16 02:58:41\n\nThere are two separate issues here, one of which is clearly a bug:\n\n1. There's an off-by-one in the code for handling the case where t_span specifies all the time points for the solution (len(t_span) > 2).  I put together a patch for this above.  The upper limit of the loop was changed from n-1 to n and the setting of t_end was moved to the beginning of the loop.  I also changed t_span to self.t_span in two spots.\n\n2. num_points specifies the number of points *after* the initial point, so there are num_points + 1 total.  This is not clear one way or the other.  I tend to like the current version, so that, e.g. t_span = [0, 1], num_points = 10, gives points at 0, 0.1, 0.2, ..., 0.9, 1 instead of 0, 0.11111, 0.22222, ..., 0.88888, 1.",
     "created_at": "2010-10-16T02:58:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7560",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_064310.json:
 }
 ```
 
-Attachment
+Attachment [trac_7560_ode_off-by-one_fix.patch](tarball://root/attachments/some-uuid/ticket7560/trac_7560_ode_off-by-one_fix.patch) by medlock created at 2010-10-16 02:58:41
 
 There are two separate issues here, one of which is clearly a bug:
 
@@ -363,7 +363,7 @@ For example, this can be useful if someone wants to find solutions on the inters
 archive/issue_comments_064320.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated patch (v3).",
+    "body": "Attachment [trac_7560_ode_off-by-one+doc.patch](tarball://root/attachments/some-uuid/ticket7560/trac_7560_ode_off-by-one+doc.patch) by medlock created at 2013-01-07 04:40:30\n\nUpdated patch (v3).",
     "created_at": "2013-01-07T04:40:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7560",
     "type": "issue_comment",
@@ -372,7 +372,7 @@ archive/issue_comments_064320.json:
 }
 ```
 
-Attachment
+Attachment [trac_7560_ode_off-by-one+doc.patch](tarball://root/attachments/some-uuid/ticket7560/trac_7560_ode_off-by-one+doc.patch) by medlock created at 2013-01-07 04:40:30
 
 Updated patch (v3).
 

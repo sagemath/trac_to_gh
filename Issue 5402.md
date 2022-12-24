@@ -346,7 +346,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_041732.json:
 ```json
 {
-    "body": "Attachment\n\nWith patch applied:\n\n```\nsage: dd = {(0,0):1}\nsage: %timeit matrix(100,dd).det()\n125 loops, best of 3: 7.04 ms per loop\nsage: %timeit matrix(100,dd,sparse = False).det()\n25 loops, best of 3: 16.3 ms per loop\n```\n\n\nSo that now the sparse case is faster! I really don't understand why tough, because it converts the matrix to a dense representation before computing the (dense) det...",
+    "body": "Attachment [5402_faster_dumber_det.patch](tarball://root/attachments/some-uuid/ticket5402/5402_faster_dumber_det.patch) by Bouillaguet created at 2013-01-04 17:26:04\n\nWith patch applied:\n\n```\nsage: dd = {(0,0):1}\nsage: %timeit matrix(100,dd).det()\n125 loops, best of 3: 7.04 ms per loop\nsage: %timeit matrix(100,dd,sparse = False).det()\n25 loops, best of 3: 16.3 ms per loop\n```\n\n\nSo that now the sparse case is faster! I really don't understand why tough, because it converts the matrix to a dense representation before computing the (dense) det...",
     "created_at": "2013-01-04T17:26:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5402",
     "type": "issue_comment",
@@ -355,7 +355,7 @@ archive/issue_comments_041732.json:
 }
 ```
 
-Attachment
+Attachment [5402_faster_dumber_det.patch](tarball://root/attachments/some-uuid/ticket5402/5402_faster_dumber_det.patch) by Bouillaguet created at 2013-01-04 17:26:04
 
 With patch applied:
 

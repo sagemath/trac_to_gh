@@ -81,7 +81,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/845
 archive/issue_comments_005223.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [magma_bool.patch](tarball://root/attachments/some-uuid/ticket845/magma_bool.patch) by malb created at 2007-10-30 16:37:55",
     "created_at": "2007-10-30T16:37:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/845",
     "type": "issue_comment",
@@ -90,7 +90,7 @@ archive/issue_comments_005223.json:
 }
 ```
 
-Attachment
+Attachment [magma_bool.patch](tarball://root/attachments/some-uuid/ticket845/magma_bool.patch) by malb created at 2007-10-30 16:37:55
 
 
 

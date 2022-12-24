@@ -53,7 +53,7 @@ Changing status from new to assigned.
 archive/issue_comments_022113.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [genus2reduction-0.3.p2-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3200/genus2reduction-0.3.p2-64bit-osx.patch) by mabshoff created at 2008-05-19 05:09:14",
     "created_at": "2008-05-19T05:09:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3200",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_022113.json:
 }
 ```
 
-Attachment
+Attachment [genus2reduction-0.3.p2-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3200/genus2reduction-0.3.p2-64bit-osx.patch) by mabshoff created at 2008-05-19 05:09:14
 
 
 

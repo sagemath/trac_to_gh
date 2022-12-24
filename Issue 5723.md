@@ -66,7 +66,7 @@ add doctest
 archive/issue_comments_044720.json:
 ```json
 {
-    "body": "Attachment\n\nThis is fixed with the changes in #5777, attached patch adds the doctest to sage/symbolic/function.pyx.",
+    "body": "Attachment [trac_5723.patch](tarball://root/attachments/some-uuid/ticket5723/trac_5723.patch) by burcin created at 2009-04-13 16:14:55\n\nThis is fixed with the changes in #5777, attached patch adds the doctest to sage/symbolic/function.pyx.",
     "created_at": "2009-04-13T16:14:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5723",
     "type": "issue_comment",
@@ -75,7 +75,7 @@ archive/issue_comments_044720.json:
 }
 ```
 
-Attachment
+Attachment [trac_5723.patch](tarball://root/attachments/some-uuid/ticket5723/trac_5723.patch) by burcin created at 2009-04-13 16:14:55
 
 This is fixed with the changes in #5777, attached patch adds the doctest to sage/symbolic/function.pyx.
 

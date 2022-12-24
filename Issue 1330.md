@@ -84,7 +84,7 @@ Changing assignee from failure to mabshoff.
 archive/issue_comments_008517.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-2.8.14-fix-sympy-doctest-failure-on-Sparc.patch](tarball://root/attachments/some-uuid/ticket1330/Sage-2.8.14-fix-sympy-doctest-failure-on-Sparc.patch) by mabshoff created at 2007-11-28 23:18:26",
     "created_at": "2007-11-28T23:18:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1330",
     "type": "issue_comment",
@@ -93,7 +93,7 @@ archive/issue_comments_008517.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.8.14-fix-sympy-doctest-failure-on-Sparc.patch](tarball://root/attachments/some-uuid/ticket1330/Sage-2.8.14-fix-sympy-doctest-failure-on-Sparc.patch) by mabshoff created at 2007-11-28 23:18:26
 
 
 

@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9066
 archive/issue_comments_084130.json:
 ```json
 {
-    "body": "Attachment\n\nBased on 4.4.2",
+    "body": "Attachment [trac_9066-shapes2-doc.patch](tarball://root/attachments/some-uuid/ticket9066/trac_9066-shapes2-doc.patch) by kcrisman created at 2010-05-27 15:10:46\n\nBased on 4.4.2",
     "created_at": "2010-05-27T15:10:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9066",
     "type": "issue_comment",
@@ -49,7 +49,7 @@ archive/issue_comments_084130.json:
 }
 ```
 
-Attachment
+Attachment [trac_9066-shapes2-doc.patch](tarball://root/attachments/some-uuid/ticket9066/trac_9066-shapes2-doc.patch) by kcrisman created at 2010-05-27 15:10:46
 
 Based on 4.4.2
 
@@ -98,7 +98,7 @@ Changing status from new to needs_review.
 archive/issue_comments_084133.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9066-reviewer.patch](tarball://root/attachments/some-uuid/ticket9066/trac_9066-reviewer.patch) by mvngu created at 2010-06-15 01:46:02",
     "created_at": "2010-06-15T01:46:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9066",
     "type": "issue_comment",
@@ -107,7 +107,7 @@ archive/issue_comments_084133.json:
 }
 ```
 
-Attachment
+Attachment [trac_9066-reviewer.patch](tarball://root/attachments/some-uuid/ticket9066/trac_9066-reviewer.patch) by mvngu created at 2010-06-15 01:46:02
 
 
 
@@ -350,7 +350,7 @@ That's no problem at all.
 archive/issue_comments_084144.json:
 ```json
 {
-    "body": "Attachment\n\nApply this last.",
+    "body": "Attachment [trac_9066-doctest-fix.patch](tarball://root/attachments/some-uuid/ticket9066/trac_9066-doctest-fix.patch) by kcrisman created at 2010-07-22 13:30:38\n\nApply this last.",
     "created_at": "2010-07-22T13:30:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9066",
     "type": "issue_comment",
@@ -359,7 +359,7 @@ archive/issue_comments_084144.json:
 }
 ```
 
-Attachment
+Attachment [trac_9066-doctest-fix.patch](tarball://root/attachments/some-uuid/ticket9066/trac_9066-doctest-fix.patch) by kcrisman created at 2010-07-22 13:30:38
 
 Apply this last.
 

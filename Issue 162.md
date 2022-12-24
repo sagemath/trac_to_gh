@@ -152,7 +152,7 @@ n > 2^23.
 archive/issue_comments_000724.json:
 ```json
 {
-    "body": "Attachment\n\nfix",
+    "body": "Attachment [5762.patch](tarball://root/attachments/some-uuid/ticket162/5762.patch) by was created at 2007-08-16 10:23:27\n\nfix",
     "created_at": "2007-08-16T10:23:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/162",
     "type": "issue_comment",
@@ -161,7 +161,7 @@ archive/issue_comments_000724.json:
 }
 ```
 
-Attachment
+Attachment [5762.patch](tarball://root/attachments/some-uuid/ticket162/5762.patch) by was created at 2007-08-16 10:23:27
 
 fix
 

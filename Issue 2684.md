@@ -67,7 +67,7 @@ See the extensive discussion at http://groups.google.com/group/sage-devel/browse
 archive/issue_comments_018454.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-2684-vertex-colors.patch](tarball://root/attachments/some-uuid/ticket2684/trac-2684-vertex-colors.patch) by jason created at 2008-05-10 15:41:27",
     "created_at": "2008-05-10T15:41:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2684",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_018454.json:
 }
 ```
 
-Attachment
+Attachment [trac-2684-vertex-colors.patch](tarball://root/attachments/some-uuid/ticket2684/trac-2684-vertex-colors.patch) by jason created at 2008-05-10 15:41:27
 
 
 

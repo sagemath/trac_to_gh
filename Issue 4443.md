@@ -87,7 +87,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4443
 archive/issue_comments_032675.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-4443.patch](tarball://root/attachments/some-uuid/ticket4443/trac-4443.patch) by craigcitro created at 2008-11-05 10:14:31",
     "created_at": "2008-11-05T10:14:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_032675.json:
 }
 ```
 
-Attachment
+Attachment [trac-4443.patch](tarball://root/attachments/some-uuid/ticket4443/trac-4443.patch) by craigcitro created at 2008-11-05 10:14:31
 
 
 
@@ -324,7 +324,7 @@ Anyway this is a basically positive review, and I'll be happy to look at it agai
 archive/issue_comments_032685.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-4443-pt2.patch](tarball://root/attachments/some-uuid/ticket4443/trac-4443-pt2.patch) by craigcitro created at 2008-11-06 08:58:37",
     "created_at": "2008-11-06T08:58:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
@@ -333,7 +333,7 @@ archive/issue_comments_032685.json:
 }
 ```
 
-Attachment
+Attachment [trac-4443-pt2.patch](tarball://root/attachments/some-uuid/ticket4443/trac-4443-pt2.patch) by craigcitro created at 2008-11-06 08:58:37
 
 
 
@@ -515,7 +515,7 @@ Michael
 archive/issue_comments_032692.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-4443-rebase.patch](tarball://root/attachments/some-uuid/ticket4443/trac-4443-rebase.patch) by craigcitro created at 2008-11-07 20:02:48",
     "created_at": "2008-11-07T20:02:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
@@ -524,7 +524,7 @@ archive/issue_comments_032692.json:
 }
 ```
 
-Attachment
+Attachment [trac-4443-rebase.patch](tarball://root/attachments/some-uuid/ticket4443/trac-4443-rebase.patch) by craigcitro created at 2008-11-07 20:02:48
 
 
 
@@ -533,7 +533,7 @@ Attachment
 archive/issue_comments_032693.json:
 ```json
 {
-    "body": "Attachment\n\nThis should work. Apply\n\n\n```\ntrac-4443-rebase.patch\ntrac-4443-pt2.patch\ntrac-4443-pt3.patch\n```\n\n\nin that order.",
+    "body": "Attachment [trac-4443-pt3.patch](tarball://root/attachments/some-uuid/ticket4443/trac-4443-pt3.patch) by craigcitro created at 2008-11-07 20:03:47\n\nThis should work. Apply\n\n\n```\ntrac-4443-rebase.patch\ntrac-4443-pt2.patch\ntrac-4443-pt3.patch\n```\n\n\nin that order.",
     "created_at": "2008-11-07T20:03:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
@@ -542,7 +542,7 @@ archive/issue_comments_032693.json:
 }
 ```
 
-Attachment
+Attachment [trac-4443-pt3.patch](tarball://root/attachments/some-uuid/ticket4443/trac-4443-pt3.patch) by craigcitro created at 2008-11-07 20:03:47
 
 This should work. Apply
 

@@ -80,7 +80,7 @@ Changing status from new to needs_review.
 archive/issue_comments_042685.json:
 ```json
 {
-    "body": "Attachment\n\nchanged delegation of is_prime calculation to n.is_prime()",
+    "body": "Attachment [5496.patch](tarball://root/attachments/some-uuid/ticket5496/5496.patch) by kevin.stueve created at 2010-01-17 22:11:58\n\nchanged delegation of is_prime calculation to n.is_prime()",
     "created_at": "2010-01-17T22:11:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5496",
     "type": "issue_comment",
@@ -89,7 +89,7 @@ archive/issue_comments_042685.json:
 }
 ```
 
-Attachment
+Attachment [5496.patch](tarball://root/attachments/some-uuid/ticket5496/5496.patch) by kevin.stueve created at 2010-01-17 22:11:58
 
 changed delegation of is_prime calculation to n.is_prime()
 
@@ -100,7 +100,7 @@ changed delegation of is_prime calculation to n.is_prime()
 archive/issue_comments_042686.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5496.2.patch](tarball://root/attachments/some-uuid/ticket5496/5496.2.patch) by kevin.stueve created at 2010-01-17 23:19:31",
     "created_at": "2010-01-17T23:19:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5496",
     "type": "issue_comment",
@@ -109,7 +109,7 @@ archive/issue_comments_042686.json:
 }
 ```
 
-Attachment
+Attachment [5496.2.patch](tarball://root/attachments/some-uuid/ticket5496/5496.2.patch) by kevin.stueve created at 2010-01-17 23:19:31
 
 
 
@@ -154,7 +154,7 @@ Three small changes throughout the Sage library
 archive/issue_comments_042689.json:
 ```json
 {
-    "body": "Attachment\n\nSecond addendum, for symbolic expressions",
+    "body": "Attachment [trac5496_symbolic_expressions.patch](tarball://root/attachments/some-uuid/ticket5496/trac5496_symbolic_expressions.patch) by spancratz created at 2010-01-18 04:51:18\n\nSecond addendum, for symbolic expressions",
     "created_at": "2010-01-18T04:51:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5496",
     "type": "issue_comment",
@@ -163,7 +163,7 @@ archive/issue_comments_042689.json:
 }
 ```
 
-Attachment
+Attachment [trac5496_symbolic_expressions.patch](tarball://root/attachments/some-uuid/ticket5496/trac5496_symbolic_expressions.patch) by spancratz created at 2010-01-18 04:51:18
 
 Second addendum, for symbolic expressions
 
@@ -292,7 +292,7 @@ Third addendum, for one character change for lucas numbers
 archive/issue_comments_042696.json:
 ```json
 {
-    "body": "Attachment\n\nI've now incorporated the handling of symbolic expressions as suggested by Burcin.  The sequence of patches should be applied in the order\n\n- 5496.2.patch\n- trac5496_rationals_to_int.patch\n- trac5496_symbolic_expressions.patch\n- trac5496_lucas.patch\n- trac5496_symbolic_expressions2.patch\n\nI am running doctests now, but if they pass this should get positive review again.",
+    "body": "Attachment [trac5496_lucas.patch](tarball://root/attachments/some-uuid/ticket5496/trac5496_lucas.patch) by spancratz created at 2010-01-18 06:01:59\n\nI've now incorporated the handling of symbolic expressions as suggested by Burcin.  The sequence of patches should be applied in the order\n\n- 5496.2.patch\n- trac5496_rationals_to_int.patch\n- trac5496_symbolic_expressions.patch\n- trac5496_lucas.patch\n- trac5496_symbolic_expressions2.patch\n\nI am running doctests now, but if they pass this should get positive review again.",
     "created_at": "2010-01-18T06:01:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5496",
     "type": "issue_comment",
@@ -301,7 +301,7 @@ archive/issue_comments_042696.json:
 }
 ```
 
-Attachment
+Attachment [trac5496_lucas.patch](tarball://root/attachments/some-uuid/ticket5496/trac5496_lucas.patch) by spancratz created at 2010-01-18 06:01:59
 
 I've now incorporated the handling of symbolic expressions as suggested by Burcin.  The sequence of patches should be applied in the order
 
@@ -338,7 +338,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_042698.json:
 ```json
 {
-    "body": "Attachment\n\nFourth addendum, for symbolic expressions",
+    "body": "Attachment [trac5496_symbolic_expressions2.patch](tarball://root/attachments/some-uuid/ticket5496/trac5496_symbolic_expressions2.patch) by spancratz created at 2010-01-18 06:06:58\n\nFourth addendum, for symbolic expressions",
     "created_at": "2010-01-18T06:06:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5496",
     "type": "issue_comment",
@@ -347,7 +347,7 @@ archive/issue_comments_042698.json:
 }
 ```
 
-Attachment
+Attachment [trac5496_symbolic_expressions2.patch](tarball://root/attachments/some-uuid/ticket5496/trac5496_symbolic_expressions2.patch) by spancratz created at 2010-01-18 06:06:58
 
 Fourth addendum, for symbolic expressions
 

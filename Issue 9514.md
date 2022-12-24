@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9514
 archive/issue_comments_091475.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch fixes the problem, and also seems to fix the random_tests.py problem with #8988 (as expected).",
+    "body": "Attachment [trac_9514-random-tests-sort-functions.patch](tarball://root/attachments/some-uuid/ticket9514/trac_9514-random-tests-sort-functions.patch) by cwitty created at 2010-07-16 04:32:34\n\nThis patch fixes the problem, and also seems to fix the random_tests.py problem with #8988 (as expected).",
     "created_at": "2010-07-16T04:32:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9514",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_091475.json:
 }
 ```
 
-Attachment
+Attachment [trac_9514-random-tests-sort-functions.patch](tarball://root/attachments/some-uuid/ticket9514/trac_9514-random-tests-sort-functions.patch) by cwitty created at 2010-07-16 04:32:34
 
 This patch fixes the problem, and also seems to fix the random_tests.py problem with #8988 (as expected).
 

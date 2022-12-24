@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7523
 archive/issue_comments_063766.json:
 ```json
 {
-    "body": "Attachment\n\nMAJORERROR: imports numpy and rpy2 into the global namespace. Not sure how to get past this.",
+    "body": "Attachment [trac_7523_patch.patch](tarball://root/attachments/some-uuid/ticket7523/trac_7523_patch.patch) by amhou created at 2009-11-24 06:25:20\n\nMAJORERROR: imports numpy and rpy2 into the global namespace. Not sure how to get past this.",
     "created_at": "2009-11-24T06:25:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7523",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_063766.json:
 }
 ```
 
-Attachment
+Attachment [trac_7523_patch.patch](tarball://root/attachments/some-uuid/ticket7523/trac_7523_patch.patch) by amhou created at 2009-11-24 06:25:20
 
 MAJORERROR: imports numpy and rpy2 into the global namespace. Not sure how to get past this.
 
@@ -150,7 +150,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_063771.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7523-part2.patch](tarball://root/attachments/some-uuid/ticket7523/trac_7523-part2.patch) by was created at 2009-12-08 01:11:45",
     "created_at": "2009-12-08T01:11:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7523",
     "type": "issue_comment",
@@ -159,7 +159,7 @@ archive/issue_comments_063771.json:
 }
 ```
 
-Attachment
+Attachment [trac_7523-part2.patch](tarball://root/attachments/some-uuid/ticket7523/trac_7523-part2.patch) by was created at 2009-12-08 01:11:45
 
 
 

@@ -86,7 +86,7 @@ Changing status from new to needs_review.
 archive/issue_comments_077357.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8553_solve_dictionary_result_fix.patch](tarball://root/attachments/some-uuid/ticket8553/trac_8553_solve_dictionary_result_fix.patch) by leif created at 2010-03-17 16:39:28",
     "created_at": "2010-03-17T16:39:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
@@ -95,7 +95,7 @@ archive/issue_comments_077357.json:
 }
 ```
 
-Attachment
+Attachment [trac_8553_solve_dictionary_result_fix.patch](tarball://root/attachments/some-uuid/ticket8553/trac_8553_solve_dictionary_result_fix.patch) by leif created at 2010-03-17 16:39:28
 
 
 
@@ -465,7 +465,7 @@ I still get the empty **list** for the code above with 4.3.4.rc0 (just built on 
 archive/issue_comments_077372.json:
 ```json
 {
-    "body": "Attachment\n\nApply **either** the first **or** the second patch, **not both**.",
+    "body": "Attachment [trac_8553_solve_dictionary_result_fix-variant2.patch](tarball://root/attachments/some-uuid/ticket8553/trac_8553_solve_dictionary_result_fix-variant2.patch) by leif created at 2010-03-18 00:35:59\n\nApply **either** the first **or** the second patch, **not both**.",
     "created_at": "2010-03-18T00:35:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
@@ -474,7 +474,7 @@ archive/issue_comments_077372.json:
 }
 ```
 
-Attachment
+Attachment [trac_8553_solve_dictionary_result_fix-variant2.patch](tarball://root/attachments/some-uuid/ticket8553/trac_8553_solve_dictionary_result_fix-variant2.patch) by leif created at 2010-03-18 00:35:59
 
 Apply **either** the first **or** the second patch, **not both**.
 
@@ -627,7 +627,7 @@ Can you provide a patch that fixes the `IndexError` problem? If we get this revi
 archive/issue_comments_077379.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8553_solve_fix_IndexError.patch](tarball://root/attachments/some-uuid/ticket8553/trac_8553_solve_fix_IndexError.patch) by leif created at 2010-04-06 04:43:46",
     "created_at": "2010-04-06T04:43:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
@@ -636,7 +636,7 @@ archive/issue_comments_077379.json:
 }
 ```
 
-Attachment
+Attachment [trac_8553_solve_fix_IndexError.patch](tarball://root/attachments/some-uuid/ticket8553/trac_8553_solve_fix_IndexError.patch) by leif created at 2010-04-06 04:43:46
 
 
 
@@ -686,7 +686,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_077382.json:
 ```json
 {
-    "body": "Attachment\n\nRebase on sage-4.4.alpha0.",
+    "body": "Attachment [trac_8553_solve_fix_IndexError.2.patch](tarball://root/attachments/some-uuid/ticket8553/trac_8553_solve_fix_IndexError.2.patch) by timdumol created at 2010-04-18 07:56:00\n\nRebase on sage-4.4.alpha0.",
     "created_at": "2010-04-18T07:56:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
@@ -695,7 +695,7 @@ archive/issue_comments_077382.json:
 }
 ```
 
-Attachment
+Attachment [trac_8553_solve_fix_IndexError.2.patch](tarball://root/attachments/some-uuid/ticket8553/trac_8553_solve_fix_IndexError.2.patch) by timdumol created at 2010-04-18 07:56:00
 
 Rebase on sage-4.4.alpha0.
 
@@ -724,7 +724,7 @@ Works perfectly after this rebase. Positive review, but someone has to review th
 archive/issue_comments_077384.json:
 ```json
 {
-    "body": "Attachment\n\nrevised version of Leif's patch",
+    "body": "Attachment [trac_8553_solve_fix_IndexError.3.patch](tarball://root/attachments/some-uuid/ticket8553/trac_8553_solve_fix_IndexError.3.patch) by burcin created at 2010-05-05 01:23:35\n\nrevised version of Leif's patch",
     "created_at": "2010-05-05T01:23:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
@@ -733,7 +733,7 @@ archive/issue_comments_077384.json:
 }
 ```
 
-Attachment
+Attachment [trac_8553_solve_fix_IndexError.3.patch](tarball://root/attachments/some-uuid/ticket8553/trac_8553_solve_fix_IndexError.3.patch) by burcin created at 2010-05-05 01:23:35
 
 revised version of Leif's patch
 
@@ -762,7 +762,7 @@ reviewer's patch
 archive/issue_comments_077386.json:
 ```json
 {
-    "body": "Attachment\n\nThe doctests for using values that are taken to be True in Leif's patch added a few extra seconds to the time to test `sage/symbolic/relation.py`. I uploaded a revised version of Leif's patch, attachment:trac_8553_solve_fix_IndexError.3.patch, which cuts down on these examples.\n\nattachment:trac_8553-review.patch adds a new test condition to check if the first argument is a list, after the statement that handles a single symbolic expression.\n\nCan someone review my patch?",
+    "body": "Attachment [trac_8553-review.patch](tarball://root/attachments/some-uuid/ticket8553/trac_8553-review.patch) by burcin created at 2010-05-05 01:44:30\n\nThe doctests for using values that are taken to be True in Leif's patch added a few extra seconds to the time to test `sage/symbolic/relation.py`. I uploaded a revised version of Leif's patch, attachment:trac_8553_solve_fix_IndexError.3.patch, which cuts down on these examples.\n\nattachment:trac_8553-review.patch adds a new test condition to check if the first argument is a list, after the statement that handles a single symbolic expression.\n\nCan someone review my patch?",
     "created_at": "2010-05-05T01:44:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
@@ -771,7 +771,7 @@ archive/issue_comments_077386.json:
 }
 ```
 
-Attachment
+Attachment [trac_8553-review.patch](tarball://root/attachments/some-uuid/ticket8553/trac_8553-review.patch) by burcin created at 2010-05-05 01:44:30
 
 The doctests for using values that are taken to be True in Leif's patch added a few extra seconds to the time to test `sage/symbolic/relation.py`. I uploaded a revised version of Leif's patch, attachment:trac_8553_solve_fix_IndexError.3.patch, which cuts down on these examples.
 

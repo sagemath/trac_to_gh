@@ -73,7 +73,7 @@ This isn't just for Stabilizer(), since the group isn't printing either...
 archive/issue_comments_022624.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3268.patch](tarball://root/attachments/some-uuid/ticket3268/trac_3268.patch) by mhansen created at 2009-01-23 09:29:49",
     "created_at": "2009-01-23T09:29:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3268",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_022624.json:
 }
 ```
 
-Attachment
+Attachment [trac_3268.patch](tarball://root/attachments/some-uuid/ticket3268/trac_3268.patch) by mhansen created at 2009-01-23 09:29:49
 
 
 

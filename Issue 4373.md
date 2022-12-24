@@ -89,7 +89,7 @@ Changing priority from major to blocker.
 archive/issue_comments_032155.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4373.patch](tarball://root/attachments/some-uuid/ticket4373/4373.patch) by davidloeffler created at 2008-10-28 13:22:46",
     "created_at": "2008-10-28T13:22:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4373",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_032155.json:
 }
 ```
 
-Attachment
+Attachment [4373.patch](tarball://root/attachments/some-uuid/ticket4373/4373.patch) by davidloeffler created at 2008-10-28 13:22:46
 
 
 
@@ -189,7 +189,7 @@ Michael
 archive/issue_comments_032160.json:
 ```json
 {
-    "body": "Attachment\n\nok, here it is again, with a more informative comment on the doctest.",
+    "body": "Attachment [4373-new.patch](tarball://root/attachments/some-uuid/ticket4373/4373-new.patch) by davidloeffler created at 2008-10-28 14:21:36\n\nok, here it is again, with a more informative comment on the doctest.",
     "created_at": "2008-10-28T14:21:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4373",
     "type": "issue_comment",
@@ -198,7 +198,7 @@ archive/issue_comments_032160.json:
 }
 ```
 
-Attachment
+Attachment [4373-new.patch](tarball://root/attachments/some-uuid/ticket4373/4373-new.patch) by davidloeffler created at 2008-10-28 14:21:36
 
 ok, here it is again, with a more informative comment on the doctest.
 

@@ -202,7 +202,7 @@ Changing assignee from roed to robertwb.
 archive/issue_comments_002522.json:
 ```json
 {
-    "body": "Attachment\n\nFixed remaining instances of __pow__",
+    "body": "Attachment [power503.hg](tarball://root/attachments/some-uuid/ticket503/power503.hg) by robertwb created at 2007-09-07 03:18:27\n\nFixed remaining instances of __pow__",
     "created_at": "2007-09-07T03:18:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/503",
     "type": "issue_comment",
@@ -211,7 +211,7 @@ archive/issue_comments_002522.json:
 }
 ```
 
-Attachment
+Attachment [power503.hg](tarball://root/attachments/some-uuid/ticket503/power503.hg) by robertwb created at 2007-09-07 03:18:27
 
 Fixed remaining instances of __pow__
 

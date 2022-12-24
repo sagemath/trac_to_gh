@@ -87,7 +87,7 @@ Michael
 archive/issue_comments_011098.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-2.10.alpha3-update-license.patch](tarball://root/attachments/some-uuid/ticket1759/Sage-2.10.alpha3-update-license.patch) by mabshoff created at 2008-01-15 04:09:13",
     "created_at": "2008-01-15T04:09:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1759",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_011098.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.10.alpha3-update-license.patch](tarball://root/attachments/some-uuid/ticket1759/Sage-2.10.alpha3-update-license.patch) by mabshoff created at 2008-01-15 04:09:13
 
 
 

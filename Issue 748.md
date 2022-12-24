@@ -1185,7 +1185,7 @@ deleted file mode 100644
 archive/issue_comments_004419.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [iml-1.0.3.p0.diff](tarball://root/attachments/some-uuid/ticket748/iml-1.0.3.p0.diff) by jdemeyer created at 2013-06-14 13:24:37",
     "created_at": "2013-06-14T13:24:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
@@ -1194,7 +1194,7 @@ archive/issue_comments_004419.json:
 }
 ```
 
-Attachment
+Attachment [iml-1.0.3.p0.diff](tarball://root/attachments/some-uuid/ticket748/iml-1.0.3.p0.diff) by jdemeyer created at 2013-06-14 13:24:37
 
 
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4097
 archive/issue_comments_029561.json:
 ```json
 {
-    "body": "Attachment\n\nThis is a very important patch - thanks Robert! \n\nI've started testing it and will report back.",
+    "body": "Attachment [trac_4097-mat-aut.patch](tarball://root/attachments/some-uuid/ticket4097/trac_4097-mat-aut.patch) by wdj created at 2008-09-10 10:55:32\n\nThis is a very important patch - thanks Robert! \n\nI've started testing it and will report back.",
     "created_at": "2008-09-10T10:55:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4097",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_029561.json:
 }
 ```
 
-Attachment
+Attachment [trac_4097-mat-aut.patch](tarball://root/attachments/some-uuid/ticket4097/trac_4097-mat-aut.patch) by wdj created at 2008-09-10 10:55:32
 
 This is a very important patch - thanks Robert! 
 

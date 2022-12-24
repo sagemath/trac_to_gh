@@ -46,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1407
 archive/issue_comments_009080.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac1407.patch](tarball://root/attachments/some-uuid/ticket1407/trac1407.patch) by was created at 2007-12-06 15:30:37",
     "created_at": "2007-12-06T15:30:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1407",
     "type": "issue_comment",
@@ -55,7 +55,7 @@ archive/issue_comments_009080.json:
 }
 ```
 
-Attachment
+Attachment [trac1407.patch](tarball://root/attachments/some-uuid/ticket1407/trac1407.patch) by was created at 2007-12-06 15:30:37
 
 
 
@@ -64,7 +64,7 @@ Attachment
 archive/issue_comments_009081.json:
 ```json
 {
-    "body": "Attachment\n\nMinor doctest touchups.",
+    "body": "Attachment [trac_1407-2.patch](tarball://root/attachments/some-uuid/ticket1407/trac_1407-2.patch) by craigcitro created at 2007-12-15 11:52:34\n\nMinor doctest touchups.",
     "created_at": "2007-12-15T11:52:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1407",
     "type": "issue_comment",
@@ -73,7 +73,7 @@ archive/issue_comments_009081.json:
 }
 ```
 
-Attachment
+Attachment [trac_1407-2.patch](tarball://root/attachments/some-uuid/ticket1407/trac_1407-2.patch) by craigcitro created at 2007-12-15 11:52:34
 
 Minor doctest touchups.
 

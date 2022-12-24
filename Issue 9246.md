@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9246
 archive/issue_comments_087004.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9246-graph-charpoly.patch](tarball://root/attachments/some-uuid/ticket9246/trac_9246-graph-charpoly.patch) by mvngu created at 2010-06-15 16:12:00",
     "created_at": "2010-06-15T16:12:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9246",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_087004.json:
 }
 ```
 
-Attachment
+Attachment [trac_9246-graph-charpoly.patch](tarball://root/attachments/some-uuid/ticket9246/trac_9246-graph-charpoly.patch) by mvngu created at 2010-06-15 16:12:00
 
 
 

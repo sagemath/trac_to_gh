@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6341
 archive/issue_comments_050623.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6341-mestre-extcode.patch](tarball://root/attachments/some-uuid/ticket6341/trac_6341-mestre-extcode.patch) by ncalexan created at 2009-06-16 19:53:15",
     "created_at": "2009-06-16T19:53:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_050623.json:
 }
 ```
 
-Attachment
+Attachment [trac_6341-mestre-extcode.patch](tarball://root/attachments/some-uuid/ticket6341/trac_6341-mestre-extcode.patch) by ncalexan created at 2009-06-16 19:53:15
 
 
 
@@ -53,7 +53,7 @@ Attachment
 archive/issue_comments_050624.json:
 ```json
 {
-    "body": "Attachment\n\nHere's a work in progress version.  The extcode patch\n\n* updates Denis Simon's pari qfsolve program;\n* and incorporates Paul van Wamelen's pari genus 2 package.\n\nThe main devel patch integrates everything, or at least starts to.",
+    "body": "Attachment [trac_6341-mestre.patch](tarball://root/attachments/some-uuid/ticket6341/trac_6341-mestre.patch) by ncalexan created at 2009-06-16 19:55:08\n\nHere's a work in progress version.  The extcode patch\n\n* updates Denis Simon's pari qfsolve program;\n* and incorporates Paul van Wamelen's pari genus 2 package.\n\nThe main devel patch integrates everything, or at least starts to.",
     "created_at": "2009-06-16T19:55:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_050624.json:
 }
 ```
 
-Attachment
+Attachment [trac_6341-mestre.patch](tarball://root/attachments/some-uuid/ticket6341/trac_6341-mestre.patch) by ncalexan created at 2009-06-16 19:55:08
 
 Here's a work in progress version.  The extcode patch
 
@@ -78,7 +78,7 @@ The main devel patch integrates everything, or at least starts to.
 archive/issue_comments_050625.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6341-mestre-without-conic.patch](tarball://root/attachments/some-uuid/ticket6341/trac_6341-mestre-without-conic.patch) by mstreng created at 2009-06-18 18:31:26",
     "created_at": "2009-06-18T18:31:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
@@ -87,7 +87,7 @@ archive/issue_comments_050625.json:
 }
 ```
 
-Attachment
+Attachment [trac_6341-mestre-without-conic.patch](tarball://root/attachments/some-uuid/ticket6341/trac_6341-mestre-without-conic.patch) by mstreng created at 2009-06-18 18:31:26
 
 
 
@@ -96,7 +96,7 @@ Attachment
 archive/issue_comments_050626.json:
 ```json
 {
-    "body": "Attachment\n\nThe files \"-without...\" are the same as ncalexan's files, but with the Conic class removed and put in a separate patch at ticket 727. They still need the Conic class, but it may be better to view this as a separate enhancement.",
+    "body": "Attachment [trac_6341-mestre-extcode-without-qfsolve.patch](tarball://root/attachments/some-uuid/ticket6341/trac_6341-mestre-extcode-without-qfsolve.patch) by mstreng created at 2009-06-18 18:36:09\n\nThe files \"-without...\" are the same as ncalexan's files, but with the Conic class removed and put in a separate patch at ticket 727. They still need the Conic class, but it may be better to view this as a separate enhancement.",
     "created_at": "2009-06-18T18:36:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
@@ -105,7 +105,7 @@ archive/issue_comments_050626.json:
 }
 ```
 
-Attachment
+Attachment [trac_6341-mestre-extcode-without-qfsolve.patch](tarball://root/attachments/some-uuid/ticket6341/trac_6341-mestre-extcode-without-qfsolve.patch) by mstreng created at 2009-06-18 18:36:09
 
 The files "-without..." are the same as ncalexan's files, but with the Conic class removed and put in a separate patch at ticket 727. They still need the Conic class, but it may be better to view this as a separate enhancement.
 
@@ -170,7 +170,7 @@ Code was written by Florian Bouyer in September 2011, it works very nicely. Now 
 archive/issue_comments_050630.json:
 ```json
 {
-    "body": "Attachment\n\nAn implementation of Mestre Algorithm",
+    "body": "Attachment [trac_6341_mestre_algorithm.patch](tarball://root/attachments/some-uuid/ticket6341/trac_6341_mestre_algorithm.patch) by florian created at 2011-12-19 11:47:01\n\nAn implementation of Mestre Algorithm",
     "created_at": "2011-12-19T11:47:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
@@ -179,7 +179,7 @@ archive/issue_comments_050630.json:
 }
 ```
 
-Attachment
+Attachment [trac_6341_mestre_algorithm.patch](tarball://root/attachments/some-uuid/ticket6341/trac_6341_mestre_algorithm.patch) by florian created at 2011-12-19 11:47:01
 
 An implementation of Mestre Algorithm
 
@@ -282,7 +282,7 @@ minor changes to first patch
 archive/issue_comments_050636.json:
 ```json
 {
-    "body": "Attachment\n\nI corrected some typos and wasted white spaces pointed out by Marco",
+    "body": "Attachment [trac_6341_mestre_algoritm_2.patch](tarball://root/attachments/some-uuid/ticket6341/trac_6341_mestre_algoritm_2.patch) by florian created at 2011-12-20 16:07:48\n\nI corrected some typos and wasted white spaces pointed out by Marco",
     "created_at": "2011-12-20T16:07:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
@@ -291,7 +291,7 @@ archive/issue_comments_050636.json:
 }
 ```
 
-Attachment
+Attachment [trac_6341_mestre_algoritm_2.patch](tarball://root/attachments/some-uuid/ticket6341/trac_6341_mestre_algoritm_2.patch) by florian created at 2011-12-20 16:07:48
 
 I corrected some typos and wasted white spaces pointed out by Marco
 
@@ -338,7 +338,7 @@ I'm reviewing and writing a reviewer's patch. Looks very good, but some small ch
 archive/issue_comments_050639.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6341_combined.patch](tarball://root/attachments/some-uuid/ticket6341/6341_combined.patch) by mstreng created at 2011-12-27 10:16:36",
     "created_at": "2011-12-27T10:16:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
@@ -347,7 +347,7 @@ archive/issue_comments_050639.json:
 }
 ```
 
-Attachment
+Attachment [6341_combined.patch](tarball://root/attachments/some-uuid/ticket6341/6341_combined.patch) by mstreng created at 2011-12-27 10:16:36
 
 
 
@@ -420,7 +420,7 @@ With a view towards the future (number fields), it may be a good idea to move th
 archive/issue_comments_050643.json:
 ```json
 {
-    "body": "Attachment\n\nversion under construction, apply on top of previous patch, supposed to work for number fields, requires #11455",
+    "body": "Attachment [mestre.patch](tarball://root/attachments/some-uuid/ticket6341/mestre.patch) by mstreng created at 2012-03-12 10:26:09\n\nversion under construction, apply on top of previous patch, supposed to work for number fields, requires #11455",
     "created_at": "2012-03-12T10:26:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
@@ -429,7 +429,7 @@ archive/issue_comments_050643.json:
 }
 ```
 
-Attachment
+Attachment [mestre.patch](tarball://root/attachments/some-uuid/ticket6341/mestre.patch) by mstreng created at 2012-03-12 10:26:09
 
 version under construction, apply on top of previous patch, supposed to work for number fields, requires #11455
 
@@ -440,7 +440,7 @@ version under construction, apply on top of previous patch, supposed to work for
 archive/issue_comments_050644.json:
 ```json
 {
-    "body": "Attachment\n\non top of previous",
+    "body": "Attachment [6341-transformations.patch](tarball://root/attachments/some-uuid/ticket6341/6341-transformations.patch) by mstreng created at 2012-04-07 14:28:59\n\non top of previous",
     "created_at": "2012-04-07T14:28:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
@@ -449,7 +449,7 @@ archive/issue_comments_050644.json:
 }
 ```
 
-Attachment
+Attachment [6341-transformations.patch](tarball://root/attachments/some-uuid/ticket6341/6341-transformations.patch) by mstreng created at 2012-04-07 14:28:59
 
 on top of previous
 
@@ -460,7 +460,7 @@ on top of previous
 archive/issue_comments_050645.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6341-lifts.patch](tarball://root/attachments/some-uuid/ticket6341/6341-lifts.patch) by mstreng created at 2013-03-20 22:41:16",
     "created_at": "2013-03-20T22:41:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
@@ -469,7 +469,7 @@ archive/issue_comments_050645.json:
 }
 ```
 
-Attachment
+Attachment [6341-lifts.patch](tarball://root/attachments/some-uuid/ticket6341/6341-lifts.patch) by mstreng created at 2013-03-20 22:41:16
 
 
 
@@ -478,7 +478,7 @@ Attachment
 archive/issue_comments_050646.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6341-some_fixes.patch](tarball://root/attachments/some-uuid/ticket6341/6341-some_fixes.patch) by mstreng created at 2013-03-20 23:19:23",
     "created_at": "2013-03-20T23:19:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
@@ -487,7 +487,7 @@ archive/issue_comments_050646.json:
 }
 ```
 
-Attachment
+Attachment [6341-some_fixes.patch](tarball://root/attachments/some-uuid/ticket6341/6341-some_fixes.patch) by mstreng created at 2013-03-20 23:19:23
 
 
 
@@ -496,7 +496,7 @@ Attachment
 archive/issue_comments_050647.json:
 ```json
 {
-    "body": "Attachment\n\nonly Mestre's algorithm",
+    "body": "Attachment [6341-mestre-only.patch](tarball://root/attachments/some-uuid/ticket6341/6341-mestre-only.patch) by mstreng created at 2013-06-17 13:06:23\n\nonly Mestre's algorithm",
     "created_at": "2013-06-17T13:06:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
@@ -505,7 +505,7 @@ archive/issue_comments_050647.json:
 }
 ```
 
-Attachment
+Attachment [6341-mestre-only.patch](tarball://root/attachments/some-uuid/ticket6341/6341-mestre-only.patch) by mstreng created at 2013-06-17 13:06:23
 
 only Mestre's algorithm
 
@@ -574,7 +574,7 @@ apply 6341-mestre-only.patch trac_6341-mestre-only_cleanup.patch
 archive/issue_comments_050651.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6341-mestre-only_cleanup.patch](tarball://root/attachments/some-uuid/ticket6341/trac_6341-mestre-only_cleanup.patch) by chapoton created at 2013-07-17 19:55:55",
     "created_at": "2013-07-17T19:55:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
@@ -583,7 +583,7 @@ archive/issue_comments_050651.json:
 }
 ```
 
-Attachment
+Attachment [trac_6341-mestre-only_cleanup.patch](tarball://root/attachments/some-uuid/ticket6341/trac_6341-mestre-only_cleanup.patch) by chapoton created at 2013-07-17 19:55:55
 
 
 
@@ -610,7 +610,7 @@ Changing keywords from "mestre algorithm genus 2 hyperelliptic curves sd35" to "
 archive/issue_comments_050653.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6341_correcttions.patch](tarball://root/attachments/some-uuid/ticket6341/trac_6341_correcttions.patch) by florian created at 2013-07-23 13:11:12",
     "created_at": "2013-07-23T13:11:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
@@ -619,7 +619,7 @@ archive/issue_comments_050653.json:
 }
 ```
 
-Attachment
+Attachment [trac_6341_correcttions.patch](tarball://root/attachments/some-uuid/ticket6341/trac_6341_correcttions.patch) by florian created at 2013-07-23 13:11:12
 
 
 
@@ -700,7 +700,7 @@ apply after the other three
 archive/issue_comments_050658.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6341-more-corrections.2.patch](tarball://root/attachments/some-uuid/ticket6341/6341-more-corrections.2.patch) by mstreng created at 2013-07-24 20:16:34",
     "created_at": "2013-07-24T20:16:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
@@ -709,7 +709,7 @@ archive/issue_comments_050658.json:
 }
 ```
 
-Attachment
+Attachment [6341-more-corrections.2.patch](tarball://root/attachments/some-uuid/ticket6341/6341-more-corrections.2.patch) by mstreng created at 2013-07-24 20:16:34
 
 
 
@@ -736,7 +736,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_050660.json:
 ```json
 {
-    "body": "Attachment\n\n(testing now)",
+    "body": "Attachment [6341-more-corrections.3.patch](tarball://root/attachments/some-uuid/ticket6341/6341-more-corrections.3.patch) by mstreng created at 2013-07-25 06:44:24\n\n(testing now)",
     "created_at": "2013-07-25T06:44:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
@@ -745,7 +745,7 @@ archive/issue_comments_050660.json:
 }
 ```
 
-Attachment
+Attachment [6341-more-corrections.3.patch](tarball://root/attachments/some-uuid/ticket6341/6341-more-corrections.3.patch) by mstreng created at 2013-07-25 06:44:24
 
 (testing now)
 
@@ -847,7 +847,7 @@ ascii version of what was uploaded earlier this week
 archive/issue_comments_050666.json:
 ```json
 {
-    "body": "Attachment\n\napply only 6341.patch",
+    "body": "Attachment [6341.patch](tarball://root/attachments/some-uuid/ticket6341/6341.patch) by chapoton created at 2013-09-15 19:52:55\n\napply only 6341.patch",
     "created_at": "2013-09-15T19:52:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
@@ -856,7 +856,7 @@ archive/issue_comments_050666.json:
 }
 ```
 
-Attachment
+Attachment [6341.patch](tarball://root/attachments/some-uuid/ticket6341/6341.patch) by chapoton created at 2013-09-15 19:52:55
 
 apply only 6341.patch
 

@@ -447,7 +447,7 @@ Minimal testcase exhibiting the bug
 archive/issue_comments_098389.json:
 ```json
 {
-    "body": "Attachment\n\nCool.  Thanks!",
+    "body": "Attachment [krasner.i](tarball://root/attachments/some-uuid/ticket9897/krasner.i) by mpatel created at 2010-10-16 22:50:38\n\nCool.  Thanks!",
     "created_at": "2010-10-16T22:50:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9896",
     "type": "issue_comment",
@@ -456,7 +456,7 @@ archive/issue_comments_098389.json:
 }
 ```
 
-Attachment
+Attachment [krasner.i](tarball://root/attachments/some-uuid/ticket9897/krasner.i) by mpatel created at 2010-10-16 22:50:38
 
 Cool.  Thanks!
 

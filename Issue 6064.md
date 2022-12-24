@@ -59,7 +59,7 @@ Note: this is needed to fix doctests in quadratic forms (#5954, #6037, #6040).
 archive/issue_comments_048268.json:
 ```json
 {
-    "body": "Attachment\n\nallow rationals in kronecker_symbol and legendre_symbol",
+    "body": "Attachment [trac_6064.patch](tarball://root/attachments/some-uuid/ticket6064/trac_6064.patch) by tornaria created at 2009-05-18 05:41:13\n\nallow rationals in kronecker_symbol and legendre_symbol",
     "created_at": "2009-05-18T05:41:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6064",
     "type": "issue_comment",
@@ -68,7 +68,7 @@ archive/issue_comments_048268.json:
 }
 ```
 
-Attachment
+Attachment [trac_6064.patch](tarball://root/attachments/some-uuid/ticket6064/trac_6064.patch) by tornaria created at 2009-05-18 05:41:13
 
 allow rationals in kronecker_symbol and legendre_symbol
 

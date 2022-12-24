@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6353
 archive/issue_comments_050790.json:
 ```json
 {
-    "body": "Attachment\n\nAppends port number to the cookie names.",
+    "body": "Attachment [trac_6353-cookies-diff-ports.patch](tarball://root/attachments/some-uuid/ticket6353/trac_6353-cookies-diff-ports.patch) by timdumol created at 2010-01-19 11:06:55\n\nAppends port number to the cookie names.",
     "created_at": "2010-01-19T11:06:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6353",
     "type": "issue_comment",
@@ -50,7 +50,7 @@ archive/issue_comments_050790.json:
 }
 ```
 
-Attachment
+Attachment [trac_6353-cookies-diff-ports.patch](tarball://root/attachments/some-uuid/ticket6353/trac_6353-cookies-diff-ports.patch) by timdumol created at 2010-01-19 11:06:55
 
 Appends port number to the cookie names.
 

@@ -98,7 +98,7 @@ which is not a permutation.
 archive/issue_comments_097007.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9831_Permutation_list_check.patch](tarball://root/attachments/some-uuid/ticket9831/trac_9831_Permutation_list_check.patch) by nharris created at 2010-11-07 04:00:29",
     "created_at": "2010-11-07T04:00:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9830",
     "type": "issue_comment",
@@ -107,7 +107,7 @@ archive/issue_comments_097007.json:
 }
 ```
 
-Attachment
+Attachment [trac_9831_Permutation_list_check.patch](tarball://root/attachments/some-uuid/ticket9831/trac_9831_Permutation_list_check.patch) by nharris created at 2010-11-07 04:00:29
 
 
 
@@ -208,7 +208,7 @@ Large portion of the errors was caused by integer_vector_weighted that used perm
 archive/issue_comments_097012.json:
 ```json
 {
-    "body": "Attachment\n\nNow, I would like to send this to review, because I see no more error (maybe I overlooked some?). But the original patch refuses to apply -- I guess it's because codebase shifted somehow in last year. Is this a problem I should correct?",
+    "body": "Attachment [trac_9831_Permutation_input_repair.patch](tarball://root/attachments/some-uuid/ticket9831/trac_9831_Permutation_input_repair.patch) by brunellus created at 2011-12-31 01:55:18\n\nNow, I would like to send this to review, because I see no more error (maybe I overlooked some?). But the original patch refuses to apply -- I guess it's because codebase shifted somehow in last year. Is this a problem I should correct?",
     "created_at": "2011-12-31T01:55:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9830",
     "type": "issue_comment",
@@ -217,7 +217,7 @@ archive/issue_comments_097012.json:
 }
 ```
 
-Attachment
+Attachment [trac_9831_Permutation_input_repair.patch](tarball://root/attachments/some-uuid/ticket9831/trac_9831_Permutation_input_repair.patch) by brunellus created at 2011-12-31 01:55:18
 
 Now, I would like to send this to review, because I see no more error (maybe I overlooked some?). But the original patch refuses to apply -- I guess it's because codebase shifted somehow in last year. Is this a problem I should correct?
 

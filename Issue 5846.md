@@ -47,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5846
 archive/issue_comments_045984.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5846_prec.patch](tarball://root/attachments/some-uuid/ticket5846/trac_5846_prec.patch) by wuthrich created at 2009-04-21 15:04:45",
     "created_at": "2009-04-21T15:04:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5846",
     "type": "issue_comment",
@@ -56,7 +56,7 @@ archive/issue_comments_045984.json:
 }
 ```
 
-Attachment
+Attachment [trac_5846_prec.patch](tarball://root/attachments/some-uuid/ticket5846/trac_5846_prec.patch) by wuthrich created at 2009-04-21 15:04:45
 
 
 
@@ -127,7 +127,7 @@ to apply after the first patch
 archive/issue_comments_045988.json:
 ```json
 {
-    "body": "Attachment\n\nI added the forgotten trac number in the doctest.\n\nChris.",
+    "body": "Attachment [trac_5846_prec_2.patch](tarball://root/attachments/some-uuid/ticket5846/trac_5846_prec_2.patch) by wuthrich created at 2009-04-22 10:39:03\n\nI added the forgotten trac number in the doctest.\n\nChris.",
     "created_at": "2009-04-22T10:39:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5846",
     "type": "issue_comment",
@@ -136,7 +136,7 @@ archive/issue_comments_045988.json:
 }
 ```
 
-Attachment
+Attachment [trac_5846_prec_2.patch](tarball://root/attachments/some-uuid/ticket5846/trac_5846_prec_2.patch) by wuthrich created at 2009-04-22 10:39:03
 
 I added the forgotten trac number in the doctest.
 
@@ -149,7 +149,7 @@ Chris.
 archive/issue_comments_045989.json:
 ```json
 {
-    "body": "Attachment\n\napply only this one",
+    "body": "Attachment [trac_5846_combined.patch](tarball://root/attachments/some-uuid/ticket5846/trac_5846_combined.patch) by GeorgSWeber created at 2009-04-28 19:56:44\n\napply only this one",
     "created_at": "2009-04-28T19:56:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5846",
     "type": "issue_comment",
@@ -158,7 +158,7 @@ archive/issue_comments_045989.json:
 }
 ```
 
-Attachment
+Attachment [trac_5846_combined.patch](tarball://root/attachments/some-uuid/ticket5846/trac_5846_combined.patch) by GeorgSWeber created at 2009-04-28 19:56:44
 
 apply only this one
 

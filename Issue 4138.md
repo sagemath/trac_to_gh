@@ -71,7 +71,7 @@ Changing assignee from tba to mabshoff.
 archive/issue_comments_030041.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4138_doc.patch](tarball://root/attachments/some-uuid/ticket4138/trac_4138_doc.patch) by mabshoff created at 2008-09-17 03:43:26",
     "created_at": "2008-09-17T03:43:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4138",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_030041.json:
 }
 ```
 
-Attachment
+Attachment [trac_4138_doc.patch](tarball://root/attachments/some-uuid/ticket4138/trac_4138_doc.patch) by mabshoff created at 2008-09-17 03:43:26
 
 
 
@@ -89,7 +89,7 @@ Attachment
 archive/issue_comments_030042.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4138_sage.patch](tarball://root/attachments/some-uuid/ticket4138/trac_4138_sage.patch) by mabshoff created at 2008-09-17 03:43:37",
     "created_at": "2008-09-17T03:43:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4138",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_030042.json:
 }
 ```
 
-Attachment
+Attachment [trac_4138_sage.patch](tarball://root/attachments/some-uuid/ticket4138/trac_4138_sage.patch) by mabshoff created at 2008-09-17 03:43:37
 
 
 

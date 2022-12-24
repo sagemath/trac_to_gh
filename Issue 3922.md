@@ -129,7 +129,7 @@ The arrow_line.py should probably be moved to the matplotlib spkg.
 archive/issue_comments_028058.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [arrow_line.patch](tarball://root/attachments/some-uuid/ticket3922/arrow_line.patch) by jason created at 2008-09-03 23:47:30",
     "created_at": "2008-09-03T23:47:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3922",
     "type": "issue_comment",
@@ -138,7 +138,7 @@ archive/issue_comments_028058.json:
 }
 ```
 
-Attachment
+Attachment [arrow_line.patch](tarball://root/attachments/some-uuid/ticket3922/arrow_line.patch) by jason created at 2008-09-03 23:47:30
 
 
 

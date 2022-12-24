@@ -82,7 +82,7 @@ the patch!
 archive/issue_comments_006937.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [nf_poly_pointer.hg](tarball://root/attachments/some-uuid/ticket1141/nf_poly_pointer.hg) by jbmohler created at 2007-11-10 20:55:35",
     "created_at": "2007-11-10T20:55:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1141",
     "type": "issue_comment",
@@ -91,7 +91,7 @@ archive/issue_comments_006937.json:
 }
 ```
 
-Attachment
+Attachment [nf_poly_pointer.hg](tarball://root/attachments/some-uuid/ticket1141/nf_poly_pointer.hg) by jbmohler created at 2007-11-10 20:55:35
 
 
 

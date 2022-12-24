@@ -49,7 +49,7 @@ Looks good.  The only change I would suggest is that the docstring should includ
 archive/issue_comments_038618.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5071-ulp.patch](tarball://root/attachments/some-uuid/ticket5071/5071-ulp.patch) by robertwb created at 2009-01-28 00:06:46",
     "created_at": "2009-01-28T00:06:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5071",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_038618.json:
 }
 ```
 
-Attachment
+Attachment [5071-ulp.patch](tarball://root/attachments/some-uuid/ticket5071/5071-ulp.patch) by robertwb created at 2009-01-28 00:06:46
 
 
 

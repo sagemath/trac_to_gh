@@ -43,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3822
 archive/issue_comments_027184.json:
 ```json
 {
-    "body": "Attachment\n\n1. Changed default step size from 1 to such that there are 500 steps\n   2. `(a, b)` is now equivalent to `slider(a, b)`",
+    "body": "Attachment [sage.patch](tarball://root/attachments/some-uuid/ticket3822/sage.patch) by itolkov created at 2008-08-12 20:31:08\n\n1. Changed default step size from 1 to such that there are 500 steps\n   2. `(a, b)` is now equivalent to `slider(a, b)`",
     "created_at": "2008-08-12T20:31:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3822",
     "type": "issue_comment",
@@ -52,7 +52,7 @@ archive/issue_comments_027184.json:
 }
 ```
 
-Attachment
+Attachment [sage.patch](tarball://root/attachments/some-uuid/ticket3822/sage.patch) by itolkov created at 2008-08-12 20:31:08
 
 1. Changed default step size from 1 to such that there are 500 steps
    2. `(a, b)` is now equivalent to `slider(a, b)`
@@ -111,7 +111,7 @@ Changing component from notebook to interact.
 archive/issue_comments_027187.json:
 ```json
 {
-    "body": "Attachment\n\nApply after sage.patch",
+    "body": "Attachment [sage2.2.patch](tarball://root/attachments/some-uuid/ticket3822/sage2.2.patch) by itolkov created at 2008-08-14 19:06:58\n\nApply after sage.patch",
     "created_at": "2008-08-14T19:06:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3822",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_027187.json:
 }
 ```
 
-Attachment
+Attachment [sage2.2.patch](tarball://root/attachments/some-uuid/ticket3822/sage2.2.patch) by itolkov created at 2008-08-14 19:06:58
 
 Apply after sage.patch
 
@@ -176,7 +176,7 @@ def _(n=[1..10^5]):
 archive/issue_comments_027190.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3822.patch](tarball://root/attachments/some-uuid/ticket3822/sage-3822.patch) by was created at 2008-08-15 10:02:34",
     "created_at": "2008-08-15T10:02:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3822",
     "type": "issue_comment",
@@ -185,7 +185,7 @@ archive/issue_comments_027190.json:
 }
 ```
 
-Attachment
+Attachment [sage-3822.patch](tarball://root/attachments/some-uuid/ticket3822/sage-3822.patch) by was created at 2008-08-15 10:02:34
 
 
 

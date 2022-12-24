@@ -76,7 +76,7 @@ f(5)
 archive/issue_comments_019896.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-2892.patch](tarball://root/attachments/some-uuid/ticket2892/sage-2892.patch) by was created at 2008-04-12 03:56:25",
     "created_at": "2008-04-12T03:56:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2892",
     "type": "issue_comment",
@@ -85,7 +85,7 @@ archive/issue_comments_019896.json:
 }
 ```
 
-Attachment
+Attachment [sage-2892.patch](tarball://root/attachments/some-uuid/ticket2892/sage-2892.patch) by was created at 2008-04-12 03:56:25
 
 
 

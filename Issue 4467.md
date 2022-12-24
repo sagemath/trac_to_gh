@@ -100,7 +100,7 @@ Michael
 archive/issue_comments_032983.json:
 ```json
 {
-    "body": "Attachment\n\n+1 since the code removes dead code only.",
+    "body": "Attachment [trac_4467.patch](tarball://root/attachments/some-uuid/ticket4467/trac_4467.patch) by jonhanke created at 2008-11-10 06:20:23\n\n+1 since the code removes dead code only.",
     "created_at": "2008-11-10T06:20:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4467",
     "type": "issue_comment",
@@ -109,7 +109,7 @@ archive/issue_comments_032983.json:
 }
 ```
 
-Attachment
+Attachment [trac_4467.patch](tarball://root/attachments/some-uuid/ticket4467/trac_4467.patch) by jonhanke created at 2008-11-10 06:20:23
 
 +1 since the code removes dead code only.
 

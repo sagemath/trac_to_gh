@@ -89,7 +89,7 @@ Changing assignee from failure to mabshoff.
 archive/issue_comments_022686.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3279.patch](tarball://root/attachments/some-uuid/ticket3279/trac_3279.patch) by mabshoff created at 2008-05-23 15:39:35",
     "created_at": "2008-05-23T15:39:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3279",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_022686.json:
 }
 ```
 
-Attachment
+Attachment [trac_3279.patch](tarball://root/attachments/some-uuid/ticket3279/trac_3279.patch) by mabshoff created at 2008-05-23 15:39:35
 
 
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5724
 archive/issue_comments_044728.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5724.patch](tarball://root/attachments/some-uuid/ticket5724/trac_5724.patch) by was created at 2009-04-09 07:54:00",
     "created_at": "2009-04-09T07:54:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5724",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_044728.json:
 }
 ```
 
-Attachment
+Attachment [trac_5724.patch](tarball://root/attachments/some-uuid/ticket5724/trac_5724.patch) by was created at 2009-04-09 07:54:00
 
 
 
@@ -85,7 +85,7 @@ You seem to prefer to write doctests which call the method directly rather than 
 archive/issue_comments_044731.json:
 ```json
 {
-    "body": "Attachment\n\nmove some doctests to TESTS:, change others to indirect tests.",
+    "body": "Attachment [trac_5724-part2.patch](tarball://root/attachments/some-uuid/ticket5724/trac_5724-part2.patch) by was created at 2009-04-10 01:15:29\n\nmove some doctests to TESTS:, change others to indirect tests.",
     "created_at": "2009-04-10T01:15:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5724",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_044731.json:
 }
 ```
 
-Attachment
+Attachment [trac_5724-part2.patch](tarball://root/attachments/some-uuid/ticket5724/trac_5724-part2.patch) by was created at 2009-04-10 01:15:29
 
 move some doctests to TESTS:, change others to indirect tests.
 
@@ -129,7 +129,7 @@ A side question: It seems `QuotientRingElement` is exclusively used for quotient
 archive/issue_comments_044733.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5724-part3.patch](tarball://root/attachments/some-uuid/ticket5724/trac_5724-part3.patch) by was created at 2009-04-10 14:43:06",
     "created_at": "2009-04-10T14:43:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5724",
     "type": "issue_comment",
@@ -138,7 +138,7 @@ archive/issue_comments_044733.json:
 }
 ```
 
-Attachment
+Attachment [trac_5724-part3.patch](tarball://root/attachments/some-uuid/ticket5724/trac_5724-part3.patch) by was created at 2009-04-10 14:43:06
 
 
 

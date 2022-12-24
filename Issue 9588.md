@@ -46,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9588
 archive/issue_comments_092709.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [is_prime_power.patch](tarball://root/attachments/some-uuid/ticket9588/is_prime_power.patch) by arminstraub created at 2010-07-23 15:10:58",
     "created_at": "2010-07-23T15:10:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9588",
     "type": "issue_comment",
@@ -55,7 +55,7 @@ archive/issue_comments_092709.json:
 }
 ```
 
-Attachment
+Attachment [is_prime_power.patch](tarball://root/attachments/some-uuid/ticket9588/is_prime_power.patch) by arminstraub created at 2010-07-23 15:10:58
 
 
 
@@ -237,7 +237,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_092719.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9588_is_prime_power.patch](tarball://root/attachments/some-uuid/ticket9588/9588_is_prime_power.patch) by arminstraub created at 2010-07-24 23:48:13",
     "created_at": "2010-07-24T23:48:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9588",
     "type": "issue_comment",
@@ -246,7 +246,7 @@ archive/issue_comments_092719.json:
 }
 ```
 
-Attachment
+Attachment [9588_is_prime_power.patch](tarball://root/attachments/some-uuid/ticket9588/9588_is_prime_power.patch) by arminstraub created at 2010-07-24 23:48:13
 
 
 

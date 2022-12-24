@@ -51,7 +51,7 @@ Changing status from new to assigned.
 archive/issue_comments_014297.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch avoids the problem.  It also patches docstrings that create TeX errors on my laptop, so that I can actually build the refman.",
+    "body": "Attachment [trac-2178.patch](tarball://root/attachments/some-uuid/ticket2178/trac-2178.patch) by cwitty created at 2008-02-16 17:28:00\n\nThe attached patch avoids the problem.  It also patches docstrings that create TeX errors on my laptop, so that I can actually build the refman.",
     "created_at": "2008-02-16T17:28:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2178",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_014297.json:
 }
 ```
 
-Attachment
+Attachment [trac-2178.patch](tarball://root/attachments/some-uuid/ticket2178/trac-2178.patch) by cwitty created at 2008-02-16 17:28:00
 
 The attached patch avoids the problem.  It also patches docstrings that create TeX errors on my laptop, so that I can actually build the refman.
 

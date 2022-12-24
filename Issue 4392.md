@@ -73,7 +73,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4392
 archive/issue_comments_032321.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-trac4392.patch](tarball://root/attachments/some-uuid/ticket4392/sage-trac4392.patch) by cremona created at 2008-10-30 16:52:56",
     "created_at": "2008-10-30T16:52:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4392",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_032321.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac4392.patch](tarball://root/attachments/some-uuid/ticket4392/sage-trac4392.patch) by cremona created at 2008-10-30 16:52:56
 
 
 
@@ -91,7 +91,7 @@ Attachment
 archive/issue_comments_032322.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch sage-trac4392.patch (based on 3.2.alpha1) fixes this by completely reimplementing the function in a simpler way, using linear algebra instead of factorization.  Several new doctests have been added.  All tests in sage.rings.number_field pass.\n\nThe second patch applies after the first and handles the zero ideal properly (with another doctest to prove it!)",
+    "body": "Attachment [sage-trac4392-2.patch](tarball://root/attachments/some-uuid/ticket4392/sage-trac4392-2.patch) by cremona created at 2008-10-30 16:54:13\n\nThe patch sage-trac4392.patch (based on 3.2.alpha1) fixes this by completely reimplementing the function in a simpler way, using linear algebra instead of factorization.  Several new doctests have been added.  All tests in sage.rings.number_field pass.\n\nThe second patch applies after the first and handles the zero ideal properly (with another doctest to prove it!)",
     "created_at": "2008-10-30T16:54:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4392",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_032322.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac4392-2.patch](tarball://root/attachments/some-uuid/ticket4392/sage-trac4392-2.patch) by cremona created at 2008-10-30 16:54:13
 
 The patch sage-trac4392.patch (based on 3.2.alpha1) fixes this by completely reimplementing the function in a simpler way, using linear algebra instead of factorization.  Several new doctests have been added.  All tests in sage.rings.number_field pass.
 
@@ -113,7 +113,7 @@ The second patch applies after the first and handles the zero ideal properly (wi
 archive/issue_comments_032323.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-trac4392-3.patch](tarball://root/attachments/some-uuid/ticket4392/sage-trac4392-3.patch) by cremona created at 2008-10-31 11:35:32",
     "created_at": "2008-10-31T11:35:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4392",
     "type": "issue_comment",
@@ -122,7 +122,7 @@ archive/issue_comments_032323.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac4392-3.patch](tarball://root/attachments/some-uuid/ticket4392/sage-trac4392-3.patch) by cremona created at 2008-10-31 11:35:32
 
 
 
@@ -169,7 +169,7 @@ Replaces the three earlier patches
 archive/issue_comments_032326.json:
 ```json
 {
-    "body": "Attachment\n\nFor ease of reviewing, the patch sage-trac4392-new.patch merges and replaces the three previous ones.  It applies to 3.2.alpha3.",
+    "body": "Attachment [sage-trac4392-new.patch](tarball://root/attachments/some-uuid/ticket4392/sage-trac4392-new.patch) by cremona created at 2008-11-12 21:25:39\n\nFor ease of reviewing, the patch sage-trac4392-new.patch merges and replaces the three previous ones.  It applies to 3.2.alpha3.",
     "created_at": "2008-11-12T21:25:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4392",
     "type": "issue_comment",
@@ -178,7 +178,7 @@ archive/issue_comments_032326.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac4392-new.patch](tarball://root/attachments/some-uuid/ticket4392/sage-trac4392-new.patch) by cremona created at 2008-11-12 21:25:39
 
 For ease of reviewing, the patch sage-trac4392-new.patch merges and replaces the three previous ones.  It applies to 3.2.alpha3.
 
@@ -243,7 +243,7 @@ fixes docstring typo in sage-trac4392-new.patch
 archive/issue_comments_032330.json:
 ```json
 {
-    "body": "Attachment\n\nMerged sage-trac4392-new.patch and sage-4392-typo.patch in Sage 3.2.rc1.\n\nJohn: The folded(?) patch was a diff a not a \"proper\" mercurial patch, so the credit in the log does not reflect your authorship. Please make sure to export patches.\n\nCheers,\n\nMichael",
+    "body": "Attachment [sage-4392-typo.patch](tarball://root/attachments/some-uuid/ticket4392/sage-4392-typo.patch) by mabshoff created at 2008-11-13 19:35:04\n\nMerged sage-trac4392-new.patch and sage-4392-typo.patch in Sage 3.2.rc1.\n\nJohn: The folded(?) patch was a diff a not a \"proper\" mercurial patch, so the credit in the log does not reflect your authorship. Please make sure to export patches.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-13T19:35:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4392",
     "type": "issue_comment",
@@ -252,7 +252,7 @@ archive/issue_comments_032330.json:
 }
 ```
 
-Attachment
+Attachment [sage-4392-typo.patch](tarball://root/attachments/some-uuid/ticket4392/sage-4392-typo.patch) by mabshoff created at 2008-11-13 19:35:04
 
 Merged sage-trac4392-new.patch and sage-4392-typo.patch in Sage 3.2.rc1.
 

@@ -43,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4895
 archive/issue_comments_037115.json:
 ```json
 {
-    "body": "Attachment\n\nThe problem was a simple typo in an initial condition (combined with a bunch of doctests that tested for incorrect behavior).  Warning: I've been travelling and not had an opportunity to upgrade sage recently, so this patch is based off 3.2.1.  I don't expect this to be a problem, but if the patch does not apply, let me know and I will fix it as soon as possible.",
+    "body": "Attachment [4895.patch](tarball://root/attachments/some-uuid/ticket4895/4895.patch) by jbandlow created at 2009-01-15 07:55:44\n\nThe problem was a simple typo in an initial condition (combined with a bunch of doctests that tested for incorrect behavior).  Warning: I've been travelling and not had an opportunity to upgrade sage recently, so this patch is based off 3.2.1.  I don't expect this to be a problem, but if the patch does not apply, let me know and I will fix it as soon as possible.",
     "created_at": "2009-01-15T07:55:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4895",
     "type": "issue_comment",
@@ -52,7 +52,7 @@ archive/issue_comments_037115.json:
 }
 ```
 
-Attachment
+Attachment [4895.patch](tarball://root/attachments/some-uuid/ticket4895/4895.patch) by jbandlow created at 2009-01-15 07:55:44
 
 The problem was a simple typo in an initial condition (combined with a bunch of doctests that tested for incorrect behavior).  Warning: I've been travelling and not had an opportunity to upgrade sage recently, so this patch is based off 3.2.1.  I don't expect this to be a problem, but if the patch does not apply, let me know and I will fix it as soon as possible.
 

@@ -49,7 +49,7 @@ Is this a duplicate of #6987?
 archive/issue_comments_069547.json:
 ```json
 {
-    "body": "Attachment\n\nMercurial documentation simplifications/patches",
+    "body": "Attachment [13639.patch](tarball://root/attachments/some-uuid/ticket7973/13639.patch) by gaer created at 2010-01-18 07:52:15\n\nMercurial documentation simplifications/patches",
     "created_at": "2010-01-18T07:52:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7973",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_069547.json:
 }
 ```
 
-Attachment
+Attachment [13639.patch](tarball://root/attachments/some-uuid/ticket7973/13639.patch) by gaer created at 2010-01-18 07:52:15
 
 Mercurial documentation simplifications/patches
 
@@ -107,7 +107,7 @@ And one probably shouldn't perform the location changes requested in 6987 withou
 archive/issue_comments_069550.json:
 ```json
 {
-    "body": "Attachment\n\nfor reference only; don't apply",
+    "body": "Attachment [13639_01.patch](tarball://root/attachments/some-uuid/ticket7973/13639_01.patch) by mvngu created at 2010-01-18 08:11:34\n\nfor reference only; don't apply",
     "created_at": "2010-01-18T08:11:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7973",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_069550.json:
 }
 ```
 
-Attachment
+Attachment [13639_01.patch](tarball://root/attachments/some-uuid/ticket7973/13639_01.patch) by mvngu created at 2010-01-18 08:11:34
 
 for reference only; don't apply
 
@@ -145,7 +145,7 @@ for reference only; don't apply
 archive/issue_comments_069552.json:
 ```json
 {
-    "body": "Attachment\n\nfor reference only; don't apply",
+    "body": "Attachment [13639_02.patch](tarball://root/attachments/some-uuid/ticket7973/13639_02.patch) by mvngu created at 2010-01-18 08:12:09\n\nfor reference only; don't apply",
     "created_at": "2010-01-18T08:12:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7973",
     "type": "issue_comment",
@@ -154,7 +154,7 @@ archive/issue_comments_069552.json:
 }
 ```
 
-Attachment
+Attachment [13639_02.patch](tarball://root/attachments/some-uuid/ticket7973/13639_02.patch) by mvngu created at 2010-01-18 08:12:09
 
 for reference only; don't apply
 
@@ -183,7 +183,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_069554.json:
 ```json
 {
-    "body": "Attachment\n\nYou're concatenating three different patches into one file. That would result in failures when applying the resulting one file (with the three patches):\n\n```\n[mvngu@mod sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7973/13639.patch && hg qpush\nadding 13639.patch to series file\napplying 13639.patch\npatching file doc/en/developer/producing_patches.rst\nHunk #1 FAILED at 21\nHunk #2 FAILED at 58\n2 out of 2 hunks FAILED -- saving rejects to file doc/en/developer/producing_patches.rst.rej\npatching file doc/en/developer/producing_patches.rst\nHunk #1 FAILED at 21\nHunk #2 FAILED at 58\n2 out of 2 hunks FAILED -- saving rejects to file doc/en/developer/producing_patches.rst.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh 13639.patch\n```\n\nLooking at the attachment [13639.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7973/13639.patch) more closely, I see that the three patches only touch the file\n\n```\ndoc/en/developer/producing_patches.rst\n```\n\nI have split the three different patches into three different files and attached them to this ticket for reference. Applying any one of them individually is OK. But if I then first apply one and then any of the other two, I'd get hunk failures. So of all the changes in your original attachment, which set of changes did you intend to submit for review? Also, one minor nit-pick: please reference the ticket number in your commit message. The general format of a commit message should be:\n\n```\ntrac xxxx: <your-commit-message-here>\n```\n\nwhere \"xxxx\" is the ticket number.",
+    "body": "Attachment [13639_03.patch](tarball://root/attachments/some-uuid/ticket7973/13639_03.patch) by mvngu created at 2010-01-18 08:17:05\n\nYou're concatenating three different patches into one file. That would result in failures when applying the resulting one file (with the three patches):\n\n```\n[mvngu@mod sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7973/13639.patch && hg qpush\nadding 13639.patch to series file\napplying 13639.patch\npatching file doc/en/developer/producing_patches.rst\nHunk #1 FAILED at 21\nHunk #2 FAILED at 58\n2 out of 2 hunks FAILED -- saving rejects to file doc/en/developer/producing_patches.rst.rej\npatching file doc/en/developer/producing_patches.rst\nHunk #1 FAILED at 21\nHunk #2 FAILED at 58\n2 out of 2 hunks FAILED -- saving rejects to file doc/en/developer/producing_patches.rst.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh 13639.patch\n```\n\nLooking at the attachment [13639.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7973/13639.patch) more closely, I see that the three patches only touch the file\n\n```\ndoc/en/developer/producing_patches.rst\n```\n\nI have split the three different patches into three different files and attached them to this ticket for reference. Applying any one of them individually is OK. But if I then first apply one and then any of the other two, I'd get hunk failures. So of all the changes in your original attachment, which set of changes did you intend to submit for review? Also, one minor nit-pick: please reference the ticket number in your commit message. The general format of a commit message should be:\n\n```\ntrac xxxx: <your-commit-message-here>\n```\n\nwhere \"xxxx\" is the ticket number.",
     "created_at": "2010-01-18T08:17:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7973",
     "type": "issue_comment",
@@ -192,7 +192,7 @@ archive/issue_comments_069554.json:
 }
 ```
 
-Attachment
+Attachment [13639_03.patch](tarball://root/attachments/some-uuid/ticket7973/13639_03.patch) by mvngu created at 2010-01-18 08:17:05
 
 You're concatenating three different patches into one file. That would result in failures when applying the resulting one file (with the three patches):
 
@@ -234,7 +234,7 @@ where "xxxx" is the ticket number.
 archive/issue_comments_069555.json:
 ```json
 {
-    "body": "Attachment\n\nRevised patching doc patch",
+    "body": "Attachment [13639.2.patch](tarball://root/attachments/some-uuid/ticket7973/13639.2.patch) by gaer created at 2010-01-18 09:01:41\n\nRevised patching doc patch",
     "created_at": "2010-01-18T09:01:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7973",
     "type": "issue_comment",
@@ -243,7 +243,7 @@ archive/issue_comments_069555.json:
 }
 ```
 
-Attachment
+Attachment [13639.2.patch](tarball://root/attachments/some-uuid/ticket7973/13639.2.patch) by gaer created at 2010-01-18 09:01:41
 
 Revised patching doc patch
 
@@ -290,7 +290,7 @@ reviewer patch
 archive/issue_comments_069558.json:
 ```json
 {
-    "body": "Attachment\n\nI'm OK with the proposed changes in [13639.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7973/13639.2.patch). I have attached a reviewer patch [trac_7973-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7973/trac_7973-reviewer.patch), which fixes some typos. The attachment [13639.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7973/13639.2.patch) contains some tab characters, which don't look good when you view the HTML version of the Developer's Guide, i.e. only the corresponding section in the Developer's Guide. Try to avoid tabs as much as possible in patches. If you're OK with the reviewer patch, then the whole ticket gets a positive review.",
+    "body": "Attachment [trac_7973-reviewer.patch](tarball://root/attachments/some-uuid/ticket7973/trac_7973-reviewer.patch) by mvngu created at 2010-01-18 10:01:38\n\nI'm OK with the proposed changes in [13639.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7973/13639.2.patch). I have attached a reviewer patch [trac_7973-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7973/trac_7973-reviewer.patch), which fixes some typos. The attachment [13639.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7973/13639.2.patch) contains some tab characters, which don't look good when you view the HTML version of the Developer's Guide, i.e. only the corresponding section in the Developer's Guide. Try to avoid tabs as much as possible in patches. If you're OK with the reviewer patch, then the whole ticket gets a positive review.",
     "created_at": "2010-01-18T10:01:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7973",
     "type": "issue_comment",
@@ -299,7 +299,7 @@ archive/issue_comments_069558.json:
 }
 ```
 
-Attachment
+Attachment [trac_7973-reviewer.patch](tarball://root/attachments/some-uuid/ticket7973/trac_7973-reviewer.patch) by mvngu created at 2010-01-18 10:01:38
 
 I'm OK with the proposed changes in [13639.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7973/13639.2.patch). I have attached a reviewer patch [trac_7973-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7973/trac_7973-reviewer.patch), which fixes some typos. The attachment [13639.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7973/13639.2.patch) contains some tab characters, which don't look good when you view the HTML version of the Developer's Guide, i.e. only the corresponding section in the Developer's Guide. Try to avoid tabs as much as possible in patches. If you're OK with the reviewer patch, then the whole ticket gets a positive review.
 

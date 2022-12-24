@@ -107,7 +107,7 @@ fix
 archive/issue_comments_013520.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch fixes the issue for me.",
+    "body": "Attachment [trac_2089.patch](tarball://root/attachments/some-uuid/ticket2089/trac_2089.patch) by malb created at 2008-02-18 15:17:16\n\nThe attached patch fixes the issue for me.",
     "created_at": "2008-02-18T15:17:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2089",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_013520.json:
 }
 ```
 
-Attachment
+Attachment [trac_2089.patch](tarball://root/attachments/some-uuid/ticket2089/trac_2089.patch) by malb created at 2008-02-18 15:17:16
 
 The attached patch fixes the issue for me.
 

@@ -1045,7 +1045,7 @@ Merged sqlite-3.6.19.p0.spkg
 archive/issue_comments_055660.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6759.patch](tarball://root/attachments/some-uuid/ticket6759/trac_6759.patch) by mhansen created at 2009-10-31 09:07:58",
     "created_at": "2009-10-31T09:07:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6759",
     "type": "issue_comment",
@@ -1054,7 +1054,7 @@ archive/issue_comments_055660.json:
 }
 ```
 
-Attachment
+Attachment [trac_6759.patch](tarball://root/attachments/some-uuid/ticket6759/trac_6759.patch) by mhansen created at 2009-10-31 09:07:58
 
 
 

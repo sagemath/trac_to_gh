@@ -173,7 +173,7 @@ Michael
 archive/issue_comments_036060.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4758.patch](tarball://root/attachments/some-uuid/ticket4758/trac_4758.patch) by mhansen created at 2008-12-11 08:19:56",
     "created_at": "2008-12-11T08:19:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4758",
     "type": "issue_comment",
@@ -182,7 +182,7 @@ archive/issue_comments_036060.json:
 }
 ```
 
-Attachment
+Attachment [trac_4758.patch](tarball://root/attachments/some-uuid/ticket4758/trac_4758.patch) by mhansen created at 2008-12-11 08:19:56
 
 
 
@@ -231,7 +231,7 @@ Also, there should probably be a test illustrating that the eigenvalues returned
 archive/issue_comments_036063.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of previous patches",
+    "body": "Attachment [trac_4758_review.patch](tarball://root/attachments/some-uuid/ticket4758/trac_4758_review.patch) by jason created at 2008-12-12 21:04:53\n\napply on top of previous patches",
     "created_at": "2008-12-12T21:04:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4758",
     "type": "issue_comment",
@@ -240,7 +240,7 @@ archive/issue_comments_036063.json:
 }
 ```
 
-Attachment
+Attachment [trac_4758_review.patch](tarball://root/attachments/some-uuid/ticket4758/trac_4758_review.patch) by jason created at 2008-12-12 21:04:53
 
 apply on top of previous patches
 

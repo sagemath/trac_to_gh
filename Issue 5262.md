@@ -140,7 +140,7 @@ patch against 3.4.2.rc0
 archive/issue_comments_040397.json:
 ```json
 {
-    "body": "Attachment\n\nTurns out there were actually two separate bugs: one for level 1 forms (which came up whenever the weight was not a multiple of 4) and one for forms of higher level. I've fixed both, and added doctests to check that they're fixed.",
+    "body": "Attachment [trac_5262.patch](tarball://root/attachments/some-uuid/ticket5262/trac_5262.patch) by davidloeffler created at 2009-05-01 11:24:58\n\nTurns out there were actually two separate bugs: one for level 1 forms (which came up whenever the weight was not a multiple of 4) and one for forms of higher level. I've fixed both, and added doctests to check that they're fixed.",
     "created_at": "2009-05-01T11:24:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5262",
     "type": "issue_comment",
@@ -149,7 +149,7 @@ archive/issue_comments_040397.json:
 }
 ```
 
-Attachment
+Attachment [trac_5262.patch](tarball://root/attachments/some-uuid/ticket5262/trac_5262.patch) by davidloeffler created at 2009-05-01 11:24:58
 
 Turns out there were actually two separate bugs: one for level 1 forms (which came up whenever the weight was not a multiple of 4) and one for forms of higher level. I've fixed both, and added doctests to check that they're fixed.
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8496
 archive/issue_comments_076656.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8496-nf-height.patch](tarball://root/attachments/some-uuid/ticket8496/8496-nf-height.patch) by robertwb created at 2010-03-11 08:16:56",
     "created_at": "2010-03-11T08:16:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8496",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_076656.json:
 }
 ```
 
-Attachment
+Attachment [8496-nf-height.patch](tarball://root/attachments/some-uuid/ticket8496/8496-nf-height.patch) by robertwb created at 2010-03-11 08:16:56
 
 
 
@@ -320,7 +320,7 @@ exported against 4.3.4.alpha1
 archive/issue_comments_076669.json:
 ```json
 {
-    "body": "Attachment\n\nI have put up a rebased patch with a few minor changes. But I have not included yet the documentation on the normalization. You write \"THE BSD formula\", but there is not a unique standard way of stating the conjecture, I fear. Also the question is whether or not you divide the height pairing by two or not. Could you clarify this ?\n\nI deleted the assumption that E was defined over Q. I don't think you will need that. Maybe it is needed that the model is integral, but I do not see where you would require the curve to be defined over Q. Please correct me if I am wrong.\n\nBy the way the diff of our two patches comes mainly from converting tabs to spaces.",
+    "body": "Attachment [trac_8496_rebased.patch](tarball://root/attachments/some-uuid/ticket8496/trac_8496_rebased.patch) by wuthrich created at 2010-03-15 15:30:01\n\nI have put up a rebased patch with a few minor changes. But I have not included yet the documentation on the normalization. You write \"THE BSD formula\", but there is not a unique standard way of stating the conjecture, I fear. Also the question is whether or not you divide the height pairing by two or not. Could you clarify this ?\n\nI deleted the assumption that E was defined over Q. I don't think you will need that. Maybe it is needed that the model is integral, but I do not see where you would require the curve to be defined over Q. Please correct me if I am wrong.\n\nBy the way the diff of our two patches comes mainly from converting tabs to spaces.",
     "created_at": "2010-03-15T15:30:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8496",
     "type": "issue_comment",
@@ -329,7 +329,7 @@ archive/issue_comments_076669.json:
 }
 ```
 
-Attachment
+Attachment [trac_8496_rebased.patch](tarball://root/attachments/some-uuid/ticket8496/trac_8496_rebased.patch) by wuthrich created at 2010-03-15 15:30:01
 
 I have put up a rebased patch with a few minor changes. But I have not included yet the documentation on the normalization. You write "THE BSD formula", but there is not a unique standard way of stating the conjecture, I fear. Also the question is whether or not you divide the height pairing by two or not. Could you clarify this ?
 
@@ -409,7 +409,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_076673.json:
 ```json
 {
-    "body": "Attachment\n\nNew patch applies fine to 4.3.4.alpha1, and all tests in sage/schemes/elliptic_curves pass (tested both 32 and 64 bit).  Good!",
+    "body": "Attachment [8496-nf-height-again.patch](tarball://root/attachments/some-uuid/ticket8496/8496-nf-height-again.patch) by cremona created at 2010-03-15 20:33:06\n\nNew patch applies fine to 4.3.4.alpha1, and all tests in sage/schemes/elliptic_curves pass (tested both 32 and 64 bit).  Good!",
     "created_at": "2010-03-15T20:33:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8496",
     "type": "issue_comment",
@@ -418,7 +418,7 @@ archive/issue_comments_076673.json:
 }
 ```
 
-Attachment
+Attachment [8496-nf-height-again.patch](tarball://root/attachments/some-uuid/ticket8496/8496-nf-height-again.patch) by cremona created at 2010-03-15 20:33:06
 
 New patch applies fine to 4.3.4.alpha1, and all tests in sage/schemes/elliptic_curves pass (tested both 32 and 64 bit).  Good!
 
@@ -465,7 +465,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_076676.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8496-rebased-4.4.alpha0.patch](tarball://root/attachments/some-uuid/ticket8496/8496-rebased-4.4.alpha0.patch) by robertwb created at 2010-04-17 19:28:44",
     "created_at": "2010-04-17T19:28:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8496",
     "type": "issue_comment",
@@ -474,7 +474,7 @@ archive/issue_comments_076676.json:
 }
 ```
 
-Attachment
+Attachment [8496-rebased-4.4.alpha0.patch](tarball://root/attachments/some-uuid/ticket8496/8496-rebased-4.4.alpha0.patch) by robertwb created at 2010-04-17 19:28:44
 
 
 

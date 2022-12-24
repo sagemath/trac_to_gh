@@ -206,7 +206,7 @@ modulus=... options.
 archive/issue_comments_072424.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:4 zimmerma]:\n> great! A few remarks before a complete review: (i) it would be best to write Conway instead of\n> conway (maybe except for the option name, if small letters are mandatory); \n\nAgreed. I modified the docstring, but didn't touch the conway_polynomial functions (and therefore the RuntimeError).\n\n(ii) I get an error\n> for 2<sup>n</sup> for 2 <= n <= 15:\n\nThis is expected, that's why I specified implemented with NTL.\nFor smaller fields, Sage uses Givaro.\nThe options available for creating fields with Givaro, NTL and Pari are different. Another ticket should probably be opened to add some consistency.\n\nYann",
+    "body": "Attachment [trac_8212-minimal_weight_poly_defining_GF2n.patch](tarball://root/attachments/some-uuid/ticket8212/trac_8212-minimal_weight_poly_defining_GF2n.patch) by ylchapuy created at 2010-02-08 16:35:01\n\nReplying to [comment:4 zimmerma]:\n> great! A few remarks before a complete review: (i) it would be best to write Conway instead of\n> conway (maybe except for the option name, if small letters are mandatory); \n\nAgreed. I modified the docstring, but didn't touch the conway_polynomial functions (and therefore the RuntimeError).\n\n(ii) I get an error\n> for 2<sup>n</sup> for 2 <= n <= 15:\n\nThis is expected, that's why I specified implemented with NTL.\nFor smaller fields, Sage uses Givaro.\nThe options available for creating fields with Givaro, NTL and Pari are different. Another ticket should probably be opened to add some consistency.\n\nYann",
     "created_at": "2010-02-08T16:35:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8212",
     "type": "issue_comment",
@@ -215,7 +215,7 @@ archive/issue_comments_072424.json:
 }
 ```
 
-Attachment
+Attachment [trac_8212-minimal_weight_poly_defining_GF2n.patch](tarball://root/attachments/some-uuid/ticket8212/trac_8212-minimal_weight_poly_defining_GF2n.patch) by ylchapuy created at 2010-02-08 16:35:01
 
 Replying to [comment:4 zimmerma]:
 > great! A few remarks before a complete review: (i) it would be best to write Conway instead of

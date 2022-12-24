@@ -453,7 +453,7 @@ Florent
 archive/issue_comments_057336.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-6936-matrix-generic-doctesting.patch](tarball://root/attachments/some-uuid/ticket6936/trac-6936-matrix-generic-doctesting.patch) by jason created at 2010-01-19 02:35:31",
     "created_at": "2010-01-19T02:35:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6936",
     "type": "issue_comment",
@@ -462,7 +462,7 @@ archive/issue_comments_057336.json:
 }
 ```
 
-Attachment
+Attachment [trac-6936-matrix-generic-doctesting.patch](tarball://root/attachments/some-uuid/ticket6936/trac-6936-matrix-generic-doctesting.patch) by jason created at 2010-01-19 02:35:31
 
 
 

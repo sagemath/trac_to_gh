@@ -59,7 +59,7 @@ Patch based on 4.1.1
 archive/issue_comments_056633.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [cusps_nf.patch](tarball://root/attachments/some-uuid/ticket6863/cusps_nf.patch) by mtaranes created at 2009-09-02 17:02:07",
     "created_at": "2009-09-02T17:02:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6863",
     "type": "issue_comment",
@@ -68,7 +68,7 @@ archive/issue_comments_056633.json:
 }
 ```
 
-Attachment
+Attachment [cusps_nf.patch](tarball://root/attachments/some-uuid/ticket6863/cusps_nf.patch) by mtaranes created at 2009-09-02 17:02:07
 
 
 

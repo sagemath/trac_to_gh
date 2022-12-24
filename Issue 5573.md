@@ -95,7 +95,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5573
 archive/issue_comments_043441.json:
 ```json
 {
-    "body": "Attachment\n\nNew spkg here:\n\nhttp://sage.math.washington.edu/home/wstein/patches/genus2reduction-0.3.p5.spkg",
+    "body": "Attachment [trac_5573.patch](tarball://root/attachments/some-uuid/ticket5573/trac_5573.patch) by was created at 2009-04-05 22:30:54\n\nNew spkg here:\n\nhttp://sage.math.washington.edu/home/wstein/patches/genus2reduction-0.3.p5.spkg",
     "created_at": "2009-04-05T22:30:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5573",
     "type": "issue_comment",
@@ -104,7 +104,7 @@ archive/issue_comments_043441.json:
 }
 ```
 
-Attachment
+Attachment [trac_5573.patch](tarball://root/attachments/some-uuid/ticket5573/trac_5573.patch) by was created at 2009-04-05 22:30:54
 
 New spkg here:
 

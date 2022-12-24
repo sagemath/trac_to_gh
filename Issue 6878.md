@@ -125,7 +125,7 @@ Those are the only issues I find; the code other than that works fine.  I have n
 archive/issue_comments_056777.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:3 jason]:\n> Some more comments after examining things more carefully:\n> \n>  * Use \"is not None\" rather than \"!= None\", as the \"is not None\" is way, way faster (it's a pointer comparison)\n\nDone\n \n>  * If I have just a few excluded points, but lots more poles, won't the break during the calculation of the exclusions also jump out of the loop that deals with detecting poles?  That means my poles past the last exclusion point are ignored.\n\nYou are right. I have fixed this.\n\n>  * Can you put a brief comment in about `(x0 < exclusion_point <= x1 or x0 <= exclusion_point < x1)`?  It may be just that it's too late, but this is confusing me a bit.\n\nI don't know anymore why I have written it that way. I have changed it to\n\n`(x0 <= exclusion_point <= x1)`\n \n> Those are the only issues I find; the code other than that works fine.  I have not tested the output (nice doctests, though!).",
+    "body": "Attachment [trac_6878_exclude.patch](tarball://root/attachments/some-uuid/ticket6878/trac_6878_exclude.patch) by whuss created at 2009-10-16 15:52:20\n\nReplying to [comment:3 jason]:\n> Some more comments after examining things more carefully:\n> \n>  * Use \"is not None\" rather than \"!= None\", as the \"is not None\" is way, way faster (it's a pointer comparison)\n\nDone\n \n>  * If I have just a few excluded points, but lots more poles, won't the break during the calculation of the exclusions also jump out of the loop that deals with detecting poles?  That means my poles past the last exclusion point are ignored.\n\nYou are right. I have fixed this.\n\n>  * Can you put a brief comment in about `(x0 < exclusion_point <= x1 or x0 <= exclusion_point < x1)`?  It may be just that it's too late, but this is confusing me a bit.\n\nI don't know anymore why I have written it that way. I have changed it to\n\n`(x0 <= exclusion_point <= x1)`\n \n> Those are the only issues I find; the code other than that works fine.  I have not tested the output (nice doctests, though!).",
     "created_at": "2009-10-16T15:52:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6878",
     "type": "issue_comment",
@@ -134,7 +134,7 @@ archive/issue_comments_056777.json:
 }
 ```
 
-Attachment
+Attachment [trac_6878_exclude.patch](tarball://root/attachments/some-uuid/ticket6878/trac_6878_exclude.patch) by whuss created at 2009-10-16 15:52:20
 
 Replying to [comment:3 jason]:
 > Some more comments after examining things more carefully:

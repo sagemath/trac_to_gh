@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9651
 archive/issue_comments_093622.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch still needs some doctesting (I have not yet done much, but will do more these days) - in particular, I modified CombinatorialFreeModule._apply_module_morphism and .apply_module_endomorphism. The first method is used in the code for symmetric functions: powersum.py, sfa.py and macdonald.py. Would be nice if someone could check if everything there still works well.\n\nThx, Christian",
+    "body": "Attachment [trac_9651_CombinatorialFreeModule_Addition.patch](tarball://root/attachments/some-uuid/ticket9651/trac_9651_CombinatorialFreeModule_Addition.patch) by stumpc5 created at 2010-07-31 18:40:02\n\nThe patch still needs some doctesting (I have not yet done much, but will do more these days) - in particular, I modified CombinatorialFreeModule._apply_module_morphism and .apply_module_endomorphism. The first method is used in the code for symmetric functions: powersum.py, sfa.py and macdonald.py. Would be nice if someone could check if everything there still works well.\n\nThx, Christian",
     "created_at": "2010-07-31T18:40:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9651",
     "type": "issue_comment",
@@ -50,7 +50,7 @@ archive/issue_comments_093622.json:
 }
 ```
 
-Attachment
+Attachment [trac_9651_CombinatorialFreeModule_Addition.patch](tarball://root/attachments/some-uuid/ticket9651/trac_9651_CombinatorialFreeModule_Addition.patch) by stumpc5 created at 2010-07-31 18:40:02
 
 The patch still needs some doctesting (I have not yet done much, but will do more these days) - in particular, I modified CombinatorialFreeModule._apply_module_morphism and .apply_module_endomorphism. The first method is used in the code for symmetric functions: powersum.py, sfa.py and macdonald.py. Would be nice if someone could check if everything there still works well.
 
@@ -99,7 +99,7 @@ The patch doesn't apply cleanly to sage-4.5.3.rc0. Applying #9648 first doesn't 
 archive/issue_comments_093625.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9651_CombinatorialFreeModule_Addition-cs.patch](tarball://root/attachments/some-uuid/ticket9651/trac_9651_CombinatorialFreeModule_Addition-cs.patch) by stumpc5 created at 2010-09-19 23:53:54",
     "created_at": "2010-09-19T23:53:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9651",
     "type": "issue_comment",
@@ -108,7 +108,7 @@ archive/issue_comments_093625.json:
 }
 ```
 
-Attachment
+Attachment [trac_9651_CombinatorialFreeModule_Addition-cs.patch](tarball://root/attachments/some-uuid/ticket9651/trac_9651_CombinatorialFreeModule_Addition-cs.patch) by stumpc5 created at 2010-09-19 23:53:54
 
 
 
@@ -141,7 +141,7 @@ http://groups.google.com/group/sage-combinat-devel/msg/4869cc885ca42bc1
 archive/issue_comments_093627.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9651_CombinatorialFreeModule_Addition-cs.2.patch](tarball://root/attachments/some-uuid/ticket9651/trac_9651_CombinatorialFreeModule_Addition-cs.2.patch) by stumpc5 created at 2010-10-16 22:39:42",
     "created_at": "2010-10-16T22:39:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9651",
     "type": "issue_comment",
@@ -150,7 +150,7 @@ archive/issue_comments_093627.json:
 }
 ```
 
-Attachment
+Attachment [trac_9651_CombinatorialFreeModule_Addition-cs.2.patch](tarball://root/attachments/some-uuid/ticket9651/trac_9651_CombinatorialFreeModule_Addition-cs.2.patch) by stumpc5 created at 2010-10-16 22:39:42
 
 
 
@@ -177,7 +177,7 @@ includes referees suggestions
 archive/issue_comments_093629.json:
 ```json
 {
-    "body": "Attachment\n\nincludes more referees suggestions",
+    "body": "Attachment [trac_9651_CombinatorialFreeModule_Addition-cs.4.patch](tarball://root/attachments/some-uuid/ticket9651/trac_9651_CombinatorialFreeModule_Addition-cs.4.patch) by stumpc5 created at 2010-10-20 18:56:02\n\nincludes more referees suggestions",
     "created_at": "2010-10-20T18:56:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9651",
     "type": "issue_comment",
@@ -186,7 +186,7 @@ archive/issue_comments_093629.json:
 }
 ```
 
-Attachment
+Attachment [trac_9651_CombinatorialFreeModule_Addition-cs.4.patch](tarball://root/attachments/some-uuid/ticket9651/trac_9651_CombinatorialFreeModule_Addition-cs.4.patch) by stumpc5 created at 2010-10-20 18:56:02
 
 includes more referees suggestions
 
@@ -281,7 +281,7 @@ Please remove * * * from the commit message
 archive/issue_comments_093634.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:6 jdemeyer]:\n> Please remove * * * from the commit message\n\ndone!",
+    "body": "Attachment [trac_9651_CombinatorialFreeModule_Addition-cs.5.patch](tarball://root/attachments/some-uuid/ticket9651/trac_9651_CombinatorialFreeModule_Addition-cs.5.patch) by stumpc5 created at 2010-10-23 17:04:22\n\nReplying to [comment:6 jdemeyer]:\n> Please remove * * * from the commit message\n\ndone!",
     "created_at": "2010-10-23T17:04:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9651",
     "type": "issue_comment",
@@ -290,7 +290,7 @@ archive/issue_comments_093634.json:
 }
 ```
 
-Attachment
+Attachment [trac_9651_CombinatorialFreeModule_Addition-cs.5.patch](tarball://root/attachments/some-uuid/ticket9651/trac_9651_CombinatorialFreeModule_Addition-cs.5.patch) by stumpc5 created at 2010-10-23 17:04:22
 
 Replying to [comment:6 jdemeyer]:
 > Please remove * * * from the commit message

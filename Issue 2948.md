@@ -59,7 +59,7 @@ Michael
 archive/issue_comments_020331.json:
 ```json
 {
-    "body": "Attachment\n\nI'm providing a patch. The doctesting that I'm providing is pretty superficial -- it doesn't show any of the limitations of the code, for example. If someone who knows the stuff better wants to add more, please go ahead.",
+    "body": "Attachment [2948.patch](tarball://root/attachments/some-uuid/ticket2948/2948.patch) by jhpalmieri created at 2008-09-26 19:09:29\n\nI'm providing a patch. The doctesting that I'm providing is pretty superficial -- it doesn't show any of the limitations of the code, for example. If someone who knows the stuff better wants to add more, please go ahead.",
     "created_at": "2008-09-26T19:09:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2948",
     "type": "issue_comment",
@@ -68,7 +68,7 @@ archive/issue_comments_020331.json:
 }
 ```
 
-Attachment
+Attachment [2948.patch](tarball://root/attachments/some-uuid/ticket2948/2948.patch) by jhpalmieri created at 2008-09-26 19:09:29
 
 I'm providing a patch. The doctesting that I'm providing is pretty superficial -- it doesn't show any of the limitations of the code, for example. If someone who knows the stuff better wants to add more, please go ahead.
 

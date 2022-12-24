@@ -79,7 +79,7 @@ archive/issue_comments_012954.json:
 archive/issue_comments_012955.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [pretty-print-notebook.patch](tarball://root/attachments/some-uuid/ticket2002/pretty-print-notebook.patch) by jason created at 2008-01-31 21:07:43",
     "created_at": "2008-01-31T21:07:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2002",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_012955.json:
 }
 ```
 
-Attachment
+Attachment [pretty-print-notebook.patch](tarball://root/attachments/some-uuid/ticket2002/pretty-print-notebook.patch) by jason created at 2008-01-31 21:07:43
 
 
 

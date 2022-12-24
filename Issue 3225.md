@@ -53,7 +53,7 @@ Changing status from new to assigned.
 archive/issue_comments_022321.json:
 ```json
 {
-    "body": "Attachment\n\nThe updated spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.2/alpha1/cddlib-094b.p2.spkg\n\nCheers,\n\nMichael",
+    "body": "Attachment [cddlib-094b.p1-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3225/cddlib-094b.p1-64bit-osx.patch) by mabshoff created at 2008-05-18 23:44:30\n\nThe updated spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.2/alpha1/cddlib-094b.p2.spkg\n\nCheers,\n\nMichael",
     "created_at": "2008-05-18T23:44:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3225",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_022321.json:
 }
 ```
 
-Attachment
+Attachment [cddlib-094b.p1-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3225/cddlib-094b.p1-64bit-osx.patch) by mabshoff created at 2008-05-18 23:44:30
 
 The updated spkg is at
 

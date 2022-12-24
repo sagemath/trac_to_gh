@@ -155,7 +155,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_090848.json:
 ```json
 {
-    "body": "Attachment\n\nChanged line 2232 in `fan` (I missed explicit setting of the ambient fan). I have added a doctest for the above case into `Fan_of_toric_variety.__init__`.",
+    "body": "Attachment [trac_9470_toric_variety_fans.patch](tarball://root/attachments/some-uuid/ticket9470/trac_9470_toric_variety_fans.patch) by novoselt created at 2010-07-24 07:28:44\n\nChanged line 2232 in `fan` (I missed explicit setting of the ambient fan). I have added a doctest for the above case into `Fan_of_toric_variety.__init__`.",
     "created_at": "2010-07-24T07:28:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9470",
     "type": "issue_comment",
@@ -164,7 +164,7 @@ archive/issue_comments_090848.json:
 }
 ```
 
-Attachment
+Attachment [trac_9470_toric_variety_fans.patch](tarball://root/attachments/some-uuid/ticket9470/trac_9470_toric_variety_fans.patch) by novoselt created at 2010-07-24 07:28:44
 
 Changed line 2232 in `fan` (I missed explicit setting of the ambient fan). I have added a doctest for the above case into `Fan_of_toric_variety.__init__`.
 

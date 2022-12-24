@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6001
 archive/issue_comments_047733.json:
 ```json
 {
-    "body": "Attachment\n\nNeeds accompanying introspect.js",
+    "body": "Attachment [trac_6001_tearout_docstring_v1.patch](tarball://root/attachments/some-uuid/ticket6001/trac_6001_tearout_docstring_v1.patch) by mpatel created at 2009-05-06 23:19:50\n\nNeeds accompanying introspect.js",
     "created_at": "2009-05-06T23:19:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6001",
     "type": "issue_comment",
@@ -51,7 +51,7 @@ archive/issue_comments_047733.json:
 }
 ```
 
-Attachment
+Attachment [trac_6001_tearout_docstring_v1.patch](tarball://root/attachments/some-uuid/ticket6001/trac_6001_tearout_docstring_v1.patch) by mpatel created at 2009-05-06 23:19:50
 
 Needs accompanying introspect.js
 
@@ -62,7 +62,7 @@ Needs accompanying introspect.js
 archive/issue_comments_047734.json:
 ```json
 {
-    "body": "Attachment\n\nFor now, this should be javascript_local/introspect.js",
+    "body": "Attachment [introspect_v1.js](tarball://root/attachments/some-uuid/ticket6001/introspect_v1.js) by mpatel created at 2009-05-06 23:21:10\n\nFor now, this should be javascript_local/introspect.js",
     "created_at": "2009-05-06T23:21:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6001",
     "type": "issue_comment",
@@ -71,7 +71,7 @@ archive/issue_comments_047734.json:
 }
 ```
 
-Attachment
+Attachment [introspect_v1.js](tarball://root/attachments/some-uuid/ticket6001/introspect_v1.js) by mpatel created at 2009-05-06 23:21:10
 
 For now, this should be javascript_local/introspect.js
 
@@ -162,7 +162,7 @@ Opera 9 Linux snapshot
 archive/issue_comments_047738.json:
 ```json
 {
-    "body": "Attachment\n\nFirefox 3 Linux snapshot of \"torn out\" docstrings",
+    "body": "Attachment [tearout_opera.png](tarball://root/attachments/some-uuid/ticket6001/tearout_opera.png) by mpatel created at 2009-05-07 01:25:46\n\nFirefox 3 Linux snapshot of \"torn out\" docstrings",
     "created_at": "2009-05-07T01:25:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6001",
     "type": "issue_comment",
@@ -171,7 +171,7 @@ archive/issue_comments_047738.json:
 }
 ```
 
-Attachment
+Attachment [tearout_opera.png](tarball://root/attachments/some-uuid/ticket6001/tearout_opera.png) by mpatel created at 2009-05-07 01:25:46
 
 Firefox 3 Linux snapshot of "torn out" docstrings
 
@@ -182,7 +182,7 @@ Firefox 3 Linux snapshot of "torn out" docstrings
 archive/issue_comments_047739.json:
 ```json
 {
-    "body": "Attachment\n\nUnexciting inaction shots:\n\n<img src=\"tearout_opera.png\" width=200px, right>\n<img src=\"tornout_firefox.png\" width=200px, left>\n\nThis ticket could *really* use *your* help.\n\nBy the way, to get rounded [docstring] borders in Firefox 3, put something like\n\n```\ndiv.docstring {\n    -moz-border-radius: 0.5em;\n    -webkit-border-radius: 0.5em;\n}\n```\n\nin `DOT_SAGE/notebook.css` .  I haven't tested this in Safari.",
+    "body": "Attachment [tornout_firefox.png](tarball://root/attachments/some-uuid/ticket6001/tornout_firefox.png) by mpatel created at 2009-05-07 01:49:55\n\nUnexciting inaction shots:\n\n<img src=\"tearout_opera.png\" width=200px, right>\n<img src=\"tornout_firefox.png\" width=200px, left>\n\nThis ticket could *really* use *your* help.\n\nBy the way, to get rounded [docstring] borders in Firefox 3, put something like\n\n```\ndiv.docstring {\n    -moz-border-radius: 0.5em;\n    -webkit-border-radius: 0.5em;\n}\n```\n\nin `DOT_SAGE/notebook.css` .  I haven't tested this in Safari.",
     "created_at": "2009-05-07T01:49:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6001",
     "type": "issue_comment",
@@ -191,7 +191,7 @@ archive/issue_comments_047739.json:
 }
 ```
 
-Attachment
+Attachment [tornout_firefox.png](tarball://root/attachments/some-uuid/ticket6001/tornout_firefox.png) by mpatel created at 2009-05-07 01:49:55
 
 Unexciting inaction shots:
 
@@ -238,7 +238,7 @@ With Firefox, looks great, and I like font-resizing and toggling.
 archive/issue_comments_047741.json:
 ```json
 {
-    "body": "Attachment\n\nAttempted support for WebKit browsers.  Replaces v1.",
+    "body": "Attachment [introspect_v2.js](tarball://root/attachments/some-uuid/ticket6001/introspect_v2.js) by mpatel created at 2009-05-19 15:50:53\n\nAttempted support for WebKit browsers.  Replaces v1.",
     "created_at": "2009-05-19T15:50:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6001",
     "type": "issue_comment",
@@ -247,7 +247,7 @@ archive/issue_comments_047741.json:
 }
 ```
 
-Attachment
+Attachment [introspect_v2.js](tarball://root/attachments/some-uuid/ticket6001/introspect_v2.js) by mpatel created at 2009-05-19 15:50:53
 
 Attempted support for WebKit browsers.  Replaces v1.
 
@@ -314,7 +314,7 @@ Some ideas related to #5653:
 archive/issue_comments_047743.json:
 ```json
 {
-    "body": "Attachment\n\nGoes with layout_v3.html.",
+    "body": "Attachment [introspect_v3.js](tarball://root/attachments/some-uuid/ticket6001/introspect_v3.js) by mpatel created at 2009-05-28 04:02:06\n\nGoes with layout_v3.html.",
     "created_at": "2009-05-28T04:02:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6001",
     "type": "issue_comment",
@@ -323,7 +323,7 @@ archive/issue_comments_047743.json:
 }
 ```
 
-Attachment
+Attachment [introspect_v3.js](tarball://root/attachments/some-uuid/ticket6001/introspect_v3.js) by mpatel created at 2009-05-28 04:02:06
 
 Goes with layout_v3.html.
 
@@ -334,7 +334,7 @@ Goes with layout_v3.html.
 archive/issue_comments_047744.json:
 ```json
 {
-    "body": "Attachment\n\nGoes with introspect_v3.js.",
+    "body": "Attachment [layout_v3.html](tarball://root/attachments/some-uuid/ticket6001/layout_v3.html) by mpatel created at 2009-05-28 04:02:28\n\nGoes with introspect_v3.js.",
     "created_at": "2009-05-28T04:02:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6001",
     "type": "issue_comment",
@@ -343,7 +343,7 @@ archive/issue_comments_047744.json:
 }
 ```
 
-Attachment
+Attachment [layout_v3.html](tarball://root/attachments/some-uuid/ticket6001/layout_v3.html) by mpatel created at 2009-05-28 04:02:28
 
 Goes with introspect_v3.js.
 
@@ -392,7 +392,7 @@ Goes with layout_v4.html.
 archive/issue_comments_047747.json:
 ```json
 {
-    "body": "Attachment\n\nGoes with introspect_v4.js.",
+    "body": "Attachment [layout_v4.html](tarball://root/attachments/some-uuid/ticket6001/layout_v4.html) by mpatel created at 2009-06-04 09:46:24\n\nGoes with introspect_v4.js.",
     "created_at": "2009-06-04T09:46:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6001",
     "type": "issue_comment",
@@ -401,7 +401,7 @@ archive/issue_comments_047747.json:
 }
 ```
 
-Attachment
+Attachment [layout_v4.html](tarball://root/attachments/some-uuid/ticket6001/layout_v4.html) by mpatel created at 2009-06-04 09:46:24
 
 Goes with introspect_v4.js.
 

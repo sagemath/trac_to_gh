@@ -55,7 +55,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3626
 archive/issue_comments_025661.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3626_graphboundary.patch](tarball://root/attachments/some-uuid/ticket3626/3626_graphboundary.patch) by boothby created at 2008-07-09 18:53:37",
     "created_at": "2008-07-09T18:53:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3626",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_025661.json:
 }
 ```
 
-Attachment
+Attachment [3626_graphboundary.patch](tarball://root/attachments/some-uuid/ticket3626/3626_graphboundary.patch) by boothby created at 2008-07-09 18:53:37
 
 
 

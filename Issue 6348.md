@@ -49,7 +49,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6348
 archive/issue_comments_050739.json:
 ```json
 {
-    "body": "Attachment\n\napplies to 4.0.2.rc1",
+    "body": "Attachment [trac_6348.patch](tarball://root/attachments/some-uuid/ticket6348/trac_6348.patch) by wdj created at 2009-06-17 20:29:54\n\napplies to 4.0.2.rc1",
     "created_at": "2009-06-17T20:29:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6348",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_050739.json:
 }
 ```
 
-Attachment
+Attachment [trac_6348.patch](tarball://root/attachments/some-uuid/ticket6348/trac_6348.patch) by wdj created at 2009-06-17 20:29:54
 
 applies to 4.0.2.rc1
 
@@ -311,7 +311,7 @@ apply only this patch
 archive/issue_comments_050753.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:12 awebb]:\n> I installed the spkg and applied a modified patch (removed the graph_isom.pyx part). \n> I ran 'sage -ptest and everything passed. I could not change the patch but otherwise it looks positive.\n\nNew patch (removed the graph_isom.pyx part) seems to solve the problem, passes sage -testall.",
+    "body": "Attachment [trac_6348b.patch](tarball://root/attachments/some-uuid/ticket6348/trac_6348b.patch) by wdj created at 2009-07-16 19:24:55\n\nReplying to [comment:12 awebb]:\n> I installed the spkg and applied a modified patch (removed the graph_isom.pyx part). \n> I ran 'sage -ptest and everything passed. I could not change the patch but otherwise it looks positive.\n\nNew patch (removed the graph_isom.pyx part) seems to solve the problem, passes sage -testall.",
     "created_at": "2009-07-16T19:24:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6348",
     "type": "issue_comment",
@@ -320,7 +320,7 @@ archive/issue_comments_050753.json:
 }
 ```
 
-Attachment
+Attachment [trac_6348b.patch](tarball://root/attachments/some-uuid/ticket6348/trac_6348b.patch) by wdj created at 2009-07-16 19:24:55
 
 Replying to [comment:12 awebb]:
 > I installed the spkg and applied a modified patch (removed the graph_isom.pyx part). 

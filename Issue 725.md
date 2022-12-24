@@ -48,7 +48,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/725
 archive/issue_comments_004227.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [matrix_integer_dense_diagonal_memleak.patch](tarball://root/attachments/some-uuid/ticket725/matrix_integer_dense_diagonal_memleak.patch) by burcin created at 2007-09-21 02:36:24",
     "created_at": "2007-09-21T02:36:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/725",
     "type": "issue_comment",
@@ -57,7 +57,7 @@ archive/issue_comments_004227.json:
 }
 ```
 
-Attachment
+Attachment [matrix_integer_dense_diagonal_memleak.patch](tarball://root/attachments/some-uuid/ticket725/matrix_integer_dense_diagonal_memleak.patch) by burcin created at 2007-09-21 02:36:24
 
 
 

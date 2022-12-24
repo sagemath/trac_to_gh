@@ -72,7 +72,7 @@ Changing status from new to needs_review.
 archive/issue_comments_066807.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sagelib_7758.patch](tarball://root/attachments/some-uuid/ticket7758/sagelib_7758.patch) by was created at 2009-12-24 07:55:47",
     "created_at": "2009-12-24T07:55:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7758",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_066807.json:
 }
 ```
 
-Attachment
+Attachment [sagelib_7758.patch](tarball://root/attachments/some-uuid/ticket7758/sagelib_7758.patch) by was created at 2009-12-24 07:55:47
 
 
 
@@ -108,7 +108,7 @@ I merged this into 4.3.rc2 anyways, since 4.3 is lingering forever.   I'm leavin
 archive/issue_comments_066809.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sagelib_7758-part2.patch](tarball://root/attachments/some-uuid/ticket7758/sagelib_7758-part2.patch) by ncohen created at 2009-12-24 22:26:16",
     "created_at": "2009-12-24T22:26:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7758",
     "type": "issue_comment",
@@ -117,7 +117,7 @@ archive/issue_comments_066809.json:
 }
 ```
 
-Attachment
+Attachment [sagelib_7758-part2.patch](tarball://root/attachments/some-uuid/ticket7758/sagelib_7758-part2.patch) by ncohen created at 2009-12-24 22:26:16
 
 
 

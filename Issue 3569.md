@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3569
 archive/issue_comments_025216.json:
 ```json
 {
-    "body": "Attachment\n\nAFTER\n\n```\nteragon-2:dsage was$ sage -startuptime|grep twisted\n```\n\n\n\n```\nteragon-2:dsage was$ sage -startuptime|grep dsage_interface\n        sage.dsage.interface.dsage_interface: 0.007 (dist_function)\n         sage.dsage.misc.misc: 0.005 (sage.dsage.interface.dsage_interface)\n```\n",
+    "body": "Attachment [sage-3569.patch](tarball://root/attachments/some-uuid/ticket3569/sage-3569.patch) by was created at 2008-07-06 20:26:06\n\nAFTER\n\n```\nteragon-2:dsage was$ sage -startuptime|grep twisted\n```\n\n\n\n```\nteragon-2:dsage was$ sage -startuptime|grep dsage_interface\n        sage.dsage.interface.dsage_interface: 0.007 (dist_function)\n         sage.dsage.misc.misc: 0.005 (sage.dsage.interface.dsage_interface)\n```\n",
     "created_at": "2008-07-06T20:26:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3569",
     "type": "issue_comment",
@@ -53,7 +53,7 @@ archive/issue_comments_025216.json:
 }
 ```
 
-Attachment
+Attachment [sage-3569.patch](tarball://root/attachments/some-uuid/ticket3569/sage-3569.patch) by was created at 2008-07-06 20:26:06
 
 AFTER
 

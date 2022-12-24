@@ -52,7 +52,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7917
 archive/issue_comments_068892.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [gauss_sum_CC.patch](tarball://root/attachments/some-uuid/ticket7917/gauss_sum_CC.patch) by rishi created at 2010-08-02 21:54:23",
     "created_at": "2010-08-02T21:54:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7917",
     "type": "issue_comment",
@@ -61,7 +61,7 @@ archive/issue_comments_068892.json:
 }
 ```
 
-Attachment
+Attachment [gauss_sum_CC.patch](tarball://root/attachments/some-uuid/ticket7917/gauss_sum_CC.patch) by rishi created at 2010-08-02 21:54:23
 
 
 

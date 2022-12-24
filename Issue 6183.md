@@ -121,7 +121,7 @@ See attached patch.
 archive/issue_comments_049367.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6183.patch](tarball://root/attachments/some-uuid/ticket6183/trac_6183.patch) by AlexGhitza created at 2009-07-11 13:12:23",
     "created_at": "2009-07-11T13:12:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6183",
     "type": "issue_comment",
@@ -130,7 +130,7 @@ archive/issue_comments_049367.json:
 }
 ```
 
-Attachment
+Attachment [trac_6183.patch](tarball://root/attachments/some-uuid/ticket6183/trac_6183.patch) by AlexGhitza created at 2009-07-11 13:12:23
 
 
 

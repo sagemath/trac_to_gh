@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6083
 archive/issue_comments_048410.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6083-integer-div.patch](tarball://root/attachments/some-uuid/ticket6083/6083-integer-div.patch) by robertwb created at 2009-05-20 03:53:45",
     "created_at": "2009-05-20T03:53:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6083",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_048410.json:
 }
 ```
 
-Attachment
+Attachment [6083-integer-div.patch](tarball://root/attachments/some-uuid/ticket6083/6083-integer-div.patch) by robertwb created at 2009-05-20 03:53:45
 
 
 
@@ -182,7 +182,7 @@ Tests failed!
 archive/issue_comments_048416.json:
 ```json
 {
-    "body": "Attachment\n\nIt turns out the segfault was coming from an infinite loop in Cython. The issue was that after the first patch above, doing `Integer % IntegerMod_gmp` would call into the `__mod__` on `IntegerMod_gmp`, which tried to check if something was zero by doing something of the form `Integer % IntegerMod_gmp` ... and repeat ad infinitum. \n\nSo the new patch adds a small snippet to fix this, and a doctest.",
+    "body": "Attachment [trac-6083-referee.patch](tarball://root/attachments/some-uuid/ticket6083/trac-6083-referee.patch) by craigcitro created at 2009-06-22 07:45:17\n\nIt turns out the segfault was coming from an infinite loop in Cython. The issue was that after the first patch above, doing `Integer % IntegerMod_gmp` would call into the `__mod__` on `IntegerMod_gmp`, which tried to check if something was zero by doing something of the form `Integer % IntegerMod_gmp` ... and repeat ad infinitum. \n\nSo the new patch adds a small snippet to fix this, and a doctest.",
     "created_at": "2009-06-22T07:45:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6083",
     "type": "issue_comment",
@@ -191,7 +191,7 @@ archive/issue_comments_048416.json:
 }
 ```
 
-Attachment
+Attachment [trac-6083-referee.patch](tarball://root/attachments/some-uuid/ticket6083/trac-6083-referee.patch) by craigcitro created at 2009-06-22 07:45:17
 
 It turns out the segfault was coming from an infinite loop in Cython. The issue was that after the first patch above, doing `Integer % IntegerMod_gmp` would call into the `__mod__` on `IntegerMod_gmp`, which tried to check if something was zero by doing something of the form `Integer % IntegerMod_gmp` ... and repeat ad infinitum. 
 

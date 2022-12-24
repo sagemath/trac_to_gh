@@ -61,7 +61,7 @@ Changing status from new to assigned.
 archive/issue_comments_008840.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1399.patch](tarball://root/attachments/some-uuid/ticket1378/1399.patch) by mhansen created at 2007-12-06 05:44:16",
     "created_at": "2007-12-06T05:44:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1378",
     "type": "issue_comment",
@@ -70,7 +70,7 @@ archive/issue_comments_008840.json:
 }
 ```
 
-Attachment
+Attachment [1399.patch](tarball://root/attachments/some-uuid/ticket1378/1399.patch) by mhansen created at 2007-12-06 05:44:16
 
 
 

@@ -65,7 +65,7 @@ This is related to #188...
 archive/issue_comments_031113.json:
 ```json
 {
-    "body": "Attachment\n\nI assume there is good reason that \"always return an RDF\" is enforced. SR elements should probably implement round() themselves.",
+    "body": "Attachment [4266-sr-round.patch](tarball://root/attachments/some-uuid/ticket4266/4266-sr-round.patch) by robertwb created at 2008-10-30 22:16:29\n\nI assume there is good reason that \"always return an RDF\" is enforced. SR elements should probably implement round() themselves.",
     "created_at": "2008-10-30T22:16:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4266",
     "type": "issue_comment",
@@ -74,7 +74,7 @@ archive/issue_comments_031113.json:
 }
 ```
 
-Attachment
+Attachment [4266-sr-round.patch](tarball://root/attachments/some-uuid/ticket4266/4266-sr-round.patch) by robertwb created at 2008-10-30 22:16:29
 
 I assume there is good reason that "always return an RDF" is enforced. SR elements should probably implement round() themselves.
 

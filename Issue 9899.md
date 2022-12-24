@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9900
 archive/issue_comments_098414.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9900_conjugate_doctests.patch](tarball://root/attachments/some-uuid/ticket9900/trac_9900_conjugate_doctests.patch) by burcin created at 2010-09-12 11:08:12",
     "created_at": "2010-09-12T11:08:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9899",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_098414.json:
 }
 ```
 
-Attachment
+Attachment [trac_9900_conjugate_doctests.patch](tarball://root/attachments/some-uuid/ticket9900/trac_9900_conjugate_doctests.patch) by burcin created at 2010-09-12 11:08:12
 
 
 
@@ -145,7 +145,7 @@ Other than one spot where `arccos` should be `arccosh` in the new doctests, this
 archive/issue_comments_098420.json:
 ```json
 {
-    "body": "Attachment\n\nRebase of original patch with respect to reviewer patches of #9879 and #9881",
+    "body": "Attachment [trac_9900_conjugate_doctests-rebase.patch](tarball://root/attachments/some-uuid/ticket9900/trac_9900_conjugate_doctests-rebase.patch) by kcrisman created at 2010-10-05 01:14:14\n\nRebase of original patch with respect to reviewer patches of #9879 and #9881",
     "created_at": "2010-10-05T01:14:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9899",
     "type": "issue_comment",
@@ -154,7 +154,7 @@ archive/issue_comments_098420.json:
 }
 ```
 
-Attachment
+Attachment [trac_9900_conjugate_doctests-rebase.patch](tarball://root/attachments/some-uuid/ticket9900/trac_9900_conjugate_doctests-rebase.patch) by kcrisman created at 2010-10-05 01:14:14
 
 Rebase of original patch with respect to reviewer patches of #9879 and #9881
 
@@ -203,7 +203,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_098423.json:
 ```json
 {
-    "body": "Attachment\n\nReviewer patch, apply after rebase patch",
+    "body": "Attachment [trac_9900-reviewer.patch](tarball://root/attachments/some-uuid/ticket9900/trac_9900-reviewer.patch) by kcrisman created at 2010-10-05 13:01:38\n\nReviewer patch, apply after rebase patch",
     "created_at": "2010-10-05T13:01:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9899",
     "type": "issue_comment",
@@ -212,7 +212,7 @@ archive/issue_comments_098423.json:
 }
 ```
 
-Attachment
+Attachment [trac_9900-reviewer.patch](tarball://root/attachments/some-uuid/ticket9900/trac_9900-reviewer.patch) by kcrisman created at 2010-10-05 13:01:38
 
 Reviewer patch, apply after rebase patch
 

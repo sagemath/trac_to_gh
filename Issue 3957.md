@@ -78,7 +78,7 @@ I've posted a patch which fixes this issue and have written the corresponding Se
 archive/issue_comments_028426.json:
 ```json
 {
-    "body": "Attachment\n\nI did hand testing of this, and the bug seems to have been resolved.",
+    "body": "Attachment [trac_3957.patch](tarball://root/attachments/some-uuid/ticket3957/trac_3957.patch) by TimothyClemans created at 2008-09-09 14:08:52\n\nI did hand testing of this, and the bug seems to have been resolved.",
     "created_at": "2008-09-09T14:08:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3957",
     "type": "issue_comment",
@@ -87,7 +87,7 @@ archive/issue_comments_028426.json:
 }
 ```
 
-Attachment
+Attachment [trac_3957.patch](tarball://root/attachments/some-uuid/ticket3957/trac_3957.patch) by TimothyClemans created at 2008-09-09 14:08:52
 
 I did hand testing of this, and the bug seems to have been resolved.
 

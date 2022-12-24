@@ -49,7 +49,7 @@ based on Sage 4.1.1.rc2
 archive/issue_comments_055207.json:
 ```json
 {
-    "body": "Attachment\n\nAll these changes look good; as discussed on sage-devel, \"Pyrex\" should be changed to \"Cython\" but that is done on another ticket.  I tested the patch just to be safe, but as expected these changes don't cause any doctesting problems.",
+    "body": "Attachment [trac_6735-spell-check-structure.patch](tarball://root/attachments/some-uuid/ticket6735/trac_6735-spell-check-structure.patch) by mhampton created at 2009-08-11 20:21:44\n\nAll these changes look good; as discussed on sage-devel, \"Pyrex\" should be changed to \"Cython\" but that is done on another ticket.  I tested the patch just to be safe, but as expected these changes don't cause any doctesting problems.",
     "created_at": "2009-08-11T20:21:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6735",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_055207.json:
 }
 ```
 
-Attachment
+Attachment [trac_6735-spell-check-structure.patch](tarball://root/attachments/some-uuid/ticket6735/trac_6735-spell-check-structure.patch) by mhampton created at 2009-08-11 20:21:44
 
 All these changes look good; as discussed on sage-devel, "Pyrex" should be changed to "Cython" but that is done on another ticket.  I tested the patch just to be safe, but as expected these changes don't cause any doctesting problems.
 

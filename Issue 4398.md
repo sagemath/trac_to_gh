@@ -162,7 +162,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4398
 archive/issue_comments_032359.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-4398.patch](tarball://root/attachments/some-uuid/ticket4398/sage-4398.patch) by was created at 2008-10-30 21:12:15",
     "created_at": "2008-10-30T21:12:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4398",
     "type": "issue_comment",
@@ -171,7 +171,7 @@ archive/issue_comments_032359.json:
 }
 ```
 
-Attachment
+Attachment [sage-4398.patch](tarball://root/attachments/some-uuid/ticket4398/sage-4398.patch) by was created at 2008-10-30 21:12:15
 
 
 

@@ -112,7 +112,7 @@ sage: GF(next_prime(10^20))(GF(next_prime(10^20)^2,'a')(1))
 archive/issue_comments_038605.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5068.patch](tarball://root/attachments/some-uuid/ticket5068/trac_5068.patch) by was created at 2009-01-23 12:12:25",
     "created_at": "2009-01-23T12:12:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5068",
     "type": "issue_comment",
@@ -121,7 +121,7 @@ archive/issue_comments_038605.json:
 }
 ```
 
-Attachment
+Attachment [trac_5068.patch](tarball://root/attachments/some-uuid/ticket5068/trac_5068.patch) by was created at 2009-01-23 12:12:25
 
 
 

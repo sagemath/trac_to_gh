@@ -180,7 +180,7 @@ I will now violate that same web page by re-opening it; since it hasn't actually
 archive/issue_comments_082337.json:
 ```json
 {
-    "body": "Attachment\n\nBased on 4.4.2",
+    "body": "Attachment [trac_8942-unsigned-inf.patch](tarball://root/attachments/some-uuid/ticket8942/trac_8942-unsigned-inf.patch) by kcrisman created at 2010-05-27 16:05:19\n\nBased on 4.4.2",
     "created_at": "2010-05-27T16:05:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8942",
     "type": "issue_comment",
@@ -189,7 +189,7 @@ archive/issue_comments_082337.json:
 }
 ```
 
-Attachment
+Attachment [trac_8942-unsigned-inf.patch](tarball://root/attachments/some-uuid/ticket8942/trac_8942-unsigned-inf.patch) by kcrisman created at 2010-05-27 16:05:19
 
 Based on 4.4.2
 

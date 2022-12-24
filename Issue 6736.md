@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6736
 archive/issue_comments_055209.json:
 ```json
 {
-    "body": "Attachment\n\nbased on Sage 4.1.1.rc2",
+    "body": "Attachment [trac_6736-spell-check-symbolic.patch](tarball://root/attachments/some-uuid/ticket6736/trac_6736-spell-check-symbolic.patch) by mvngu created at 2009-08-11 17:38:05\n\nbased on Sage 4.1.1.rc2",
     "created_at": "2009-08-11T17:38:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6736",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_055209.json:
 }
 ```
 
-Attachment
+Attachment [trac_6736-spell-check-symbolic.patch](tarball://root/attachments/some-uuid/ticket6736/trac_6736-spell-check-symbolic.patch) by mvngu created at 2009-08-11 17:38:05
 
 based on Sage 4.1.1.rc2
 

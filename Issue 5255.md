@@ -63,7 +63,7 @@ Patch proposal
 archive/issue_comments_040325.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [combinatorialclass__iter_-5255-submitted.patch](tarball://root/attachments/some-uuid/ticket5255/combinatorialclass__iter_-5255-submitted.patch) by hivert created at 2009-02-13 23:34:01",
     "created_at": "2009-02-13T23:34:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5255",
     "type": "issue_comment",
@@ -72,7 +72,7 @@ archive/issue_comments_040325.json:
 }
 ```
 
-Attachment
+Attachment [combinatorialclass__iter_-5255-submitted.patch](tarball://root/attachments/some-uuid/ticket5255/combinatorialclass__iter_-5255-submitted.patch) by hivert created at 2009-02-13 23:34:01
 
 
 
@@ -115,7 +115,7 @@ i.e. one should avoid calling `__foo__` functions directly.
 archive/issue_comments_040327.json:
 ```json
 {
-    "body": "Attachment\n\nThe original patch looks good.  I made a few updates in the review patch.",
+    "body": "Attachment [trac_5255-review.patch](tarball://root/attachments/some-uuid/ticket5255/trac_5255-review.patch) by mhansen created at 2009-02-14 22:40:44\n\nThe original patch looks good.  I made a few updates in the review patch.",
     "created_at": "2009-02-14T22:40:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5255",
     "type": "issue_comment",
@@ -124,7 +124,7 @@ archive/issue_comments_040327.json:
 }
 ```
 
-Attachment
+Attachment [trac_5255-review.patch](tarball://root/attachments/some-uuid/ticket5255/trac_5255-review.patch) by mhansen created at 2009-02-14 22:40:44
 
 The original patch looks good.  I made a few updates in the review patch.
 

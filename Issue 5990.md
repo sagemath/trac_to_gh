@@ -72,7 +72,7 @@ Here's a new version with a sample .hgignore file.
 archive/issue_comments_047600.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [developer-spkg.patch](tarball://root/attachments/some-uuid/ticket5990/developer-spkg.patch) by jhpalmieri created at 2009-05-05 22:00:50",
     "created_at": "2009-05-05T22:00:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5990",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_047600.json:
 }
 ```
 
-Attachment
+Attachment [developer-spkg.patch](tarball://root/attachments/some-uuid/ticket5990/developer-spkg.patch) by jhpalmieri created at 2009-05-05 22:00:50
 
 
 

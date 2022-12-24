@@ -53,7 +53,7 @@ Changing status from new to assigned.
 archive/issue_comments_022326.json:
 ```json
 {
-    "body": "Attachment\n\nThe updated spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.2/alpha1/gfan-0.3.p4.spkg\n\nCheers,\n\nMichael",
+    "body": "Attachment [gfan-0.3.p3-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3226/gfan-0.3.p3-64bit-osx.patch) by mabshoff created at 2008-05-18 23:51:23\n\nThe updated spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.2/alpha1/gfan-0.3.p4.spkg\n\nCheers,\n\nMichael",
     "created_at": "2008-05-18T23:51:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3226",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_022326.json:
 }
 ```
 
-Attachment
+Attachment [gfan-0.3.p3-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3226/gfan-0.3.p3-64bit-osx.patch) by mabshoff created at 2008-05-18 23:51:23
 
 The updated spkg is at
 

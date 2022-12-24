@@ -69,7 +69,7 @@ Changing status from new to needs_review.
 archive/issue_comments_059801.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7207-sagenb-future-import.patch](tarball://root/attachments/some-uuid/ticket7207/trac_7207-sagenb-future-import.patch) by timdumol created at 2009-10-16 11:03:17",
     "created_at": "2009-10-16T11:03:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7207",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_059801.json:
 }
 ```
 
-Attachment
+Attachment [trac_7207-sagenb-future-import.patch](tarball://root/attachments/some-uuid/ticket7207/trac_7207-sagenb-future-import.patch) by timdumol created at 2009-10-16 11:03:17
 
 
 
@@ -202,7 +202,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_059807.json:
 ```json
 {
-    "body": "Attachment\n\nThis version of the patch uses `ast` (from stdlib). It should prevent errors such as what you described.",
+    "body": "Attachment [trac_7207-sagenb-future-import.2.patch](tarball://root/attachments/some-uuid/ticket7207/trac_7207-sagenb-future-import.2.patch) by timdumol created at 2009-12-10 16:14:30\n\nThis version of the patch uses `ast` (from stdlib). It should prevent errors such as what you described.",
     "created_at": "2009-12-10T16:14:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7207",
     "type": "issue_comment",
@@ -211,7 +211,7 @@ archive/issue_comments_059807.json:
 }
 ```
 
-Attachment
+Attachment [trac_7207-sagenb-future-import.2.patch](tarball://root/attachments/some-uuid/ticket7207/trac_7207-sagenb-future-import.2.patch) by timdumol created at 2009-12-10 16:14:30
 
 This version of the patch uses `ast` (from stdlib). It should prevent errors such as what you described.
 
@@ -222,7 +222,7 @@ This version of the patch uses `ast` (from stdlib). It should prevent errors suc
 archive/issue_comments_059808.json:
 ```json
 {
-    "body": "Attachment\n\nRebased on #7650 and its dependencies.",
+    "body": "Attachment [trac_7207-sagenb-future-import.2.2.patch](tarball://root/attachments/some-uuid/ticket7207/trac_7207-sagenb-future-import.2.2.patch) by timdumol created at 2009-12-16 12:37:59\n\nRebased on #7650 and its dependencies.",
     "created_at": "2009-12-16T12:37:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7207",
     "type": "issue_comment",
@@ -231,7 +231,7 @@ archive/issue_comments_059808.json:
 }
 ```
 
-Attachment
+Attachment [trac_7207-sagenb-future-import.2.2.patch](tarball://root/attachments/some-uuid/ticket7207/trac_7207-sagenb-future-import.2.2.patch) by timdumol created at 2009-12-16 12:37:59
 
 Rebased on #7650 and its dependencies.
 
@@ -242,7 +242,7 @@ Rebased on #7650 and its dependencies.
 archive/issue_comments_059809.json:
 ```json
 {
-    "body": "Attachment\n\nMissed an import on the rebase.",
+    "body": "Attachment [trac_7207-sagenb-future-import.2.3.patch](tarball://root/attachments/some-uuid/ticket7207/trac_7207-sagenb-future-import.2.3.patch) by timdumol created at 2009-12-16 13:01:11\n\nMissed an import on the rebase.",
     "created_at": "2009-12-16T13:01:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7207",
     "type": "issue_comment",
@@ -251,7 +251,7 @@ archive/issue_comments_059809.json:
 }
 ```
 
-Attachment
+Attachment [trac_7207-sagenb-future-import.2.3.patch](tarball://root/attachments/some-uuid/ticket7207/trac_7207-sagenb-future-import.2.3.patch) by timdumol created at 2009-12-16 13:01:11
 
 Missed an import on the rebase.
 
@@ -262,7 +262,7 @@ Missed an import on the rebase.
 archive/issue_comments_059810.json:
 ```json
 {
-    "body": "Attachment\n\nRebased to ~0.60",
+    "body": "Attachment [trac_7207-sagenb-future-import.3.patch](tarball://root/attachments/some-uuid/ticket7207/trac_7207-sagenb-future-import.3.patch) by acleone created at 2010-01-20 07:17:58\n\nRebased to ~0.60",
     "created_at": "2010-01-20T07:17:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7207",
     "type": "issue_comment",
@@ -271,7 +271,7 @@ archive/issue_comments_059810.json:
 }
 ```
 
-Attachment
+Attachment [trac_7207-sagenb-future-import.3.patch](tarball://root/attachments/some-uuid/ticket7207/trac_7207-sagenb-future-import.3.patch) by acleone created at 2010-01-20 07:17:58
 
 Rebased to ~0.60
 
@@ -369,7 +369,7 @@ Rebased for SageNB 0.6 + queue in comment.  Replaces previous.
 archive/issue_comments_059815.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7207-sagenb-future-import.4.patch](tarball://root/attachments/some-uuid/ticket7207/trac_7207-sagenb-future-import.4.patch) by mpatel created at 2010-01-25 00:52:54",
     "created_at": "2010-01-25T00:52:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7207",
     "type": "issue_comment",
@@ -378,7 +378,7 @@ archive/issue_comments_059815.json:
 }
 ```
 
-Attachment
+Attachment [trac_7207-sagenb-future-import.4.patch](tarball://root/attachments/some-uuid/ticket7207/trac_7207-sagenb-future-import.4.patch) by mpatel created at 2010-01-25 00:52:54
 
 
 

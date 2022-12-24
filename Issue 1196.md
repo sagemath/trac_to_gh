@@ -81,7 +81,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1196
 archive/issue_comments_007420.json:
 ```json
 {
-    "body": "Attachment\n\npatch 1 of 2",
+    "body": "Attachment [7330.patch](tarball://root/attachments/some-uuid/ticket1196/7330.patch) by was created at 2007-11-18 04:15:01\n\npatch 1 of 2",
     "created_at": "2007-11-18T04:15:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1196",
     "type": "issue_comment",
@@ -90,7 +90,7 @@ archive/issue_comments_007420.json:
 }
 ```
 
-Attachment
+Attachment [7330.patch](tarball://root/attachments/some-uuid/ticket1196/7330.patch) by was created at 2007-11-18 04:15:01
 
 patch 1 of 2
 
@@ -119,7 +119,7 @@ patch 2 of 2
 archive/issue_comments_007422.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [7332.patch](tarball://root/attachments/some-uuid/ticket1196/7332.patch) by was created at 2007-11-18 04:15:57",
     "created_at": "2007-11-18T04:15:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1196",
     "type": "issue_comment",
@@ -128,7 +128,7 @@ archive/issue_comments_007422.json:
 }
 ```
 
-Attachment
+Attachment [7332.patch](tarball://root/attachments/some-uuid/ticket1196/7332.patch) by was created at 2007-11-18 04:15:57
 
 
 

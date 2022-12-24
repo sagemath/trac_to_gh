@@ -123,7 +123,7 @@ Changing type from enhancement to defect.
 archive/issue_comments_013363.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached a patch uses a modified `inspect.BlockFinder` to recognize the `cdef` and `cpdef` tokens.  This appears to work for me, but I'm not a Cython expert.\n\nCurrently, the notebook has its own `sagenb.misc.sageinspect` and this has diverged in several places from `sage.misc.sageinspect`.  If the approach here is OK, I'll open a separate ticket to reconcile the files and fixes this problem in the notebook.",
+    "body": "Attachment [trac_2064-sage_cpdef_inspect.patch](tarball://root/attachments/some-uuid/ticket2064/trac_2064-sage_cpdef_inspect.patch) by mpatel created at 2010-02-02 04:57:40\n\nI've attached a patch uses a modified `inspect.BlockFinder` to recognize the `cdef` and `cpdef` tokens.  This appears to work for me, but I'm not a Cython expert.\n\nCurrently, the notebook has its own `sagenb.misc.sageinspect` and this has diverged in several places from `sage.misc.sageinspect`.  If the approach here is OK, I'll open a separate ticket to reconcile the files and fixes this problem in the notebook.",
     "created_at": "2010-02-02T04:57:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2064",
     "type": "issue_comment",
@@ -132,7 +132,7 @@ archive/issue_comments_013363.json:
 }
 ```
 
-Attachment
+Attachment [trac_2064-sage_cpdef_inspect.patch](tarball://root/attachments/some-uuid/ticket2064/trac_2064-sage_cpdef_inspect.patch) by mpatel created at 2010-02-02 04:57:40
 
 I've attached a patch uses a modified `inspect.BlockFinder` to recognize the `cdef` and `cpdef` tokens.  This appears to work for me, but I'm not a Cython expert.
 
@@ -239,7 +239,7 @@ Removes "cdef" from keyword list.  Apply only this patch.
 archive/issue_comments_013369.json:
 ```json
 {
-    "body": "Attachment\n\nV2 adds only \"cpdef\" to the token search (or search for tokens).",
+    "body": "Attachment [trac_2064-sage_cpdef_inspect.2.patch](tarball://root/attachments/some-uuid/ticket2064/trac_2064-sage_cpdef_inspect.2.patch) by mpatel created at 2010-02-16 21:23:47\n\nV2 adds only \"cpdef\" to the token search (or search for tokens).",
     "created_at": "2010-02-16T21:23:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2064",
     "type": "issue_comment",
@@ -248,7 +248,7 @@ archive/issue_comments_013369.json:
 }
 ```
 
-Attachment
+Attachment [trac_2064-sage_cpdef_inspect.2.patch](tarball://root/attachments/some-uuid/ticket2064/trac_2064-sage_cpdef_inspect.2.patch) by mpatel created at 2010-02-16 21:23:47
 
 V2 adds only "cpdef" to the token search (or search for tokens).
 

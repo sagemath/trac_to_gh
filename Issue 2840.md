@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2840
 archive/issue_comments_019480.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-2840.patch](tarball://root/attachments/some-uuid/ticket2840/sage-2840.patch) by was created at 2008-04-07 08:01:10",
     "created_at": "2008-04-07T08:01:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2840",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_019480.json:
 }
 ```
 
-Attachment
+Attachment [sage-2840.patch](tarball://root/attachments/some-uuid/ticket2840/sage-2840.patch) by was created at 2008-04-07 08:01:10
 
 
 
@@ -248,7 +248,7 @@ version of was' patch that I merged
 archive/issue_comments_019488.json:
 ```json
 {
-    "body": "Attachment\n\nPatch for the two hunks that I merged manually",
+    "body": "Attachment [trac_2840-manually_merged-hunks.patch](tarball://root/attachments/some-uuid/ticket2840/trac_2840-manually_merged-hunks.patch) by mabshoff created at 2008-04-07 19:46:16\n\nPatch for the two hunks that I merged manually",
     "created_at": "2008-04-07T19:46:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2840",
     "type": "issue_comment",
@@ -257,7 +257,7 @@ archive/issue_comments_019488.json:
 }
 ```
 
-Attachment
+Attachment [trac_2840-manually_merged-hunks.patch](tarball://root/attachments/some-uuid/ticket2840/trac_2840-manually_merged-hunks.patch) by mabshoff created at 2008-04-07 19:46:16
 
 Patch for the two hunks that I merged manually
 
@@ -286,7 +286,7 @@ The diff between the final merged version and he one provided by was as a refere
 archive/issue_comments_019490.json:
 ```json
 {
-    "body": "Attachment\n\nMerged trac_2840-good-hunks.patch and trac_2840-manually_merged-hunks.patch in Sage 3.0.alpha3.",
+    "body": "Attachment [was-mabshoff_post_merge-js.py.diff](tarball://root/attachments/some-uuid/ticket2840/was-mabshoff_post_merge-js.py.diff) by mabshoff created at 2008-04-07 19:47:15\n\nMerged trac_2840-good-hunks.patch and trac_2840-manually_merged-hunks.patch in Sage 3.0.alpha3.",
     "created_at": "2008-04-07T19:47:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2840",
     "type": "issue_comment",
@@ -295,7 +295,7 @@ archive/issue_comments_019490.json:
 }
 ```
 
-Attachment
+Attachment [was-mabshoff_post_merge-js.py.diff](tarball://root/attachments/some-uuid/ticket2840/was-mabshoff_post_merge-js.py.diff) by mabshoff created at 2008-04-07 19:47:15
 
 Merged trac_2840-good-hunks.patch and trac_2840-manually_merged-hunks.patch in Sage 3.0.alpha3.
 

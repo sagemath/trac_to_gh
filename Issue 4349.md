@@ -89,7 +89,7 @@ Changing status from new to assigned.
 archive/issue_comments_031947.json:
 ```json
 {
-    "body": "Attachment\n\nFixes the bug by cleaning up the environment with sage-native-execute before calling jmol.",
+    "body": "Attachment [trac_4349.patch](tarball://root/attachments/some-uuid/ticket4349/trac_4349.patch) by anakha created at 2008-10-23 18:17:26\n\nFixes the bug by cleaning up the environment with sage-native-execute before calling jmol.",
     "created_at": "2008-10-23T18:17:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4349",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_031947.json:
 }
 ```
 
-Attachment
+Attachment [trac_4349.patch](tarball://root/attachments/some-uuid/ticket4349/trac_4349.patch) by anakha created at 2008-10-23 18:17:26
 
 Fixes the bug by cleaning up the environment with sage-native-execute before calling jmol.
 

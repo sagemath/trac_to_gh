@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1023
 archive/issue_comments_006265.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-2.8.10.alpha1-add-basic-omega-support.patch](tarball://root/attachments/some-uuid/ticket1023/Sage-2.8.10.alpha1-add-basic-omega-support.patch) by mabshoff created at 2007-10-28 19:09:51",
     "created_at": "2007-10-28T19:09:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1023",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_006265.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.8.10.alpha1-add-basic-omega-support.patch](tarball://root/attachments/some-uuid/ticket1023/Sage-2.8.10.alpha1-add-basic-omega-support.patch) by mabshoff created at 2007-10-28 19:09:51
 
 
 

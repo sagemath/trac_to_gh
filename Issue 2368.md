@@ -75,7 +75,7 @@ Michael
 archive/issue_comments_015977.json:
 ```json
 {
-    "body": "Attachment\n\nI will also post this patch to the ATLAS tracker to get it merged upstream",
+    "body": "Attachment [atlas-3.8.1-ppc-g4-7447-detect-fix.patch](tarball://root/attachments/some-uuid/ticket2368/atlas-3.8.1-ppc-g4-7447-detect-fix.patch) by mabshoff created at 2008-03-15 23:28:28\n\nI will also post this patch to the ATLAS tracker to get it merged upstream",
     "created_at": "2008-03-15T23:28:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2368",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_015977.json:
 }
 ```
 
-Attachment
+Attachment [atlas-3.8.1-ppc-g4-7447-detect-fix.patch](tarball://root/attachments/some-uuid/ticket2368/atlas-3.8.1-ppc-g4-7447-detect-fix.patch) by mabshoff created at 2008-03-15 23:28:28
 
 I will also post this patch to the ATLAS tracker to get it merged upstream
 

@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3079
 archive/issue_comments_021237.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [spkg-install.patch](tarball://root/attachments/some-uuid/ticket3079/spkg-install.patch) by mabshoff created at 2008-05-02 11:59:25",
     "created_at": "2008-05-02T11:59:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3079",
     "type": "issue_comment",
@@ -49,7 +49,7 @@ archive/issue_comments_021237.json:
 }
 ```
 
-Attachment
+Attachment [spkg-install.patch](tarball://root/attachments/some-uuid/ticket3079/spkg-install.patch) by mabshoff created at 2008-05-02 11:59:25
 
 
 

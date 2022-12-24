@@ -93,7 +93,7 @@ this is already merged into 4.0.2.rc1, but needs to be reviewed.  it's pretty tr
 archive/issue_comments_049847.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6241.patch](tarball://root/attachments/some-uuid/ticket6241/trac_6241.patch) by was created at 2009-06-16 00:07:04",
     "created_at": "2009-06-16T00:07:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6241",
     "type": "issue_comment",
@@ -102,7 +102,7 @@ archive/issue_comments_049847.json:
 }
 ```
 
-Attachment
+Attachment [trac_6241.patch](tarball://root/attachments/some-uuid/ticket6241/trac_6241.patch) by was created at 2009-06-16 00:07:04
 
 
 

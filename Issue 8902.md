@@ -97,7 +97,7 @@ Changing assignee from sage-combinat to hivert.
 archive/issue_comments_081946.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8902-subsets_call_fix-fh.patch](tarball://root/attachments/some-uuid/ticket8902/trac_8902-subsets_call_fix-fh.patch) by hivert created at 2010-05-31 10:28:05",
     "created_at": "2010-05-31T10:28:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8902",
     "type": "issue_comment",
@@ -106,7 +106,7 @@ archive/issue_comments_081946.json:
 }
 ```
 
-Attachment
+Attachment [trac_8902-subsets_call_fix-fh.patch](tarball://root/attachments/some-uuid/ticket8902/trac_8902-subsets_call_fix-fh.patch) by hivert created at 2010-05-31 10:28:05
 
 
 

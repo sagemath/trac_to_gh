@@ -127,7 +127,7 @@ Changing status from new to needs_work.
 archive/issue_comments_076875.json:
 ```json
 {
-    "body": "Attachment\n\nAdds digraph.py and generic_graph.py in the doctree",
+    "body": "Attachment [trac_8513_graph_theory_documentation-abm.patch](tarball://root/attachments/some-uuid/ticket8513/trac_8513_graph_theory_documentation-abm.patch) by abmasse created at 2010-03-22 19:49:21\n\nAdds digraph.py and generic_graph.py in the doctree",
     "created_at": "2010-03-22T19:49:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8513",
     "type": "issue_comment",
@@ -136,7 +136,7 @@ archive/issue_comments_076875.json:
 }
 ```
 
-Attachment
+Attachment [trac_8513_graph_theory_documentation-abm.patch](tarball://root/attachments/some-uuid/ticket8513/trac_8513_graph_theory_documentation-abm.patch) by abmasse created at 2010-03-22 19:49:21
 
 Adds digraph.py and generic_graph.py in the doctree
 
@@ -315,7 +315,7 @@ No idea... Anyway, I'll try it with the sage-combinat queue to look at the docum
 archive/issue_comments_076883.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8513_graph_theory_documentation-smallfixes.patch](tarball://root/attachments/some-uuid/ticket8513/trac_8513_graph_theory_documentation-smallfixes.patch) by mvngu created at 2010-04-12 19:59:48",
     "created_at": "2010-04-12T19:59:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8513",
     "type": "issue_comment",
@@ -324,7 +324,7 @@ archive/issue_comments_076883.json:
 }
 ```
 
-Attachment
+Attachment [trac_8513_graph_theory_documentation-smallfixes.patch](tarball://root/attachments/some-uuid/ticket8513/trac_8513_graph_theory_documentation-smallfixes.patch) by mvngu created at 2010-04-12 19:59:48
 
 
 
@@ -516,7 +516,7 @@ Your patch fixes the problem, but it doesn't really fit in sagedoc.py: the docte
 archive/issue_comments_076891.json:
 ```json
 {
-    "body": "Attachment\n\nreviewer patch",
+    "body": "Attachment [trac_8513-reviewer.patch](tarball://root/attachments/some-uuid/ticket8513/trac_8513-reviewer.patch) by mvngu created at 2010-04-12 23:32:02\n\nreviewer patch",
     "created_at": "2010-04-12T23:32:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8513",
     "type": "issue_comment",
@@ -525,7 +525,7 @@ archive/issue_comments_076891.json:
 }
 ```
 
-Attachment
+Attachment [trac_8513-reviewer.patch](tarball://root/attachments/some-uuid/ticket8513/trac_8513-reviewer.patch) by mvngu created at 2010-04-12 23:32:02
 
 reviewer patch
 

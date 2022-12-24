@@ -668,7 +668,7 @@ Rebase on a new patch set.
 archive/issue_comments_065713.json:
 ```json
 {
-    "body": "Attachment\n\nA few style tweaks.",
+    "body": "Attachment [trac_7666-reviewer.patch](tarball://root/attachments/some-uuid/ticket7666/trac_7666-reviewer.patch) by timdumol created at 2010-01-17 21:34:35\n\nA few style tweaks.",
     "created_at": "2010-01-17T21:34:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7666",
     "type": "issue_comment",
@@ -677,7 +677,7 @@ archive/issue_comments_065713.json:
 }
 ```
 
-Attachment
+Attachment [trac_7666-reviewer.patch](tarball://root/attachments/some-uuid/ticket7666/trac_7666-reviewer.patch) by timdumol created at 2010-01-17 21:34:35
 
 A few style tweaks.
 
@@ -724,7 +724,7 @@ Combined patch.  See comment.  Apply only this patch.
 archive/issue_comments_065716.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached a combined patch that incorporates most of the reviewer patch.  Thanks for further simplifying `handle_introspection`!  If it's OK, I'd like to adhere to [Crockford's one-var-statement-per-function rule (see Scope)](http://www.jslint.com/lint.html), to minimize false positives from JSLint on its \"The Good Parts\" setting.",
+    "body": "Attachment [trac_7666-alphanumeric_cell_ids_B6.patch](tarball://root/attachments/some-uuid/ticket7666/trac_7666-alphanumeric_cell_ids_B6.patch) by mpatel created at 2010-01-18 06:05:59\n\nI've attached a combined patch that incorporates most of the reviewer patch.  Thanks for further simplifying `handle_introspection`!  If it's OK, I'd like to adhere to [Crockford's one-var-statement-per-function rule (see Scope)](http://www.jslint.com/lint.html), to minimize false positives from JSLint on its \"The Good Parts\" setting.",
     "created_at": "2010-01-18T06:05:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7666",
     "type": "issue_comment",
@@ -733,7 +733,7 @@ archive/issue_comments_065716.json:
 }
 ```
 
-Attachment
+Attachment [trac_7666-alphanumeric_cell_ids_B6.patch](tarball://root/attachments/some-uuid/ticket7666/trac_7666-alphanumeric_cell_ids_B6.patch) by mpatel created at 2010-01-18 06:05:59
 
 I've attached a combined patch that incorporates most of the reviewer patch.  Thanks for further simplifying `handle_introspection`!  If it's OK, I'd like to adhere to [Crockford's one-var-statement-per-function rule (see Scope)](http://www.jslint.com/lint.html), to minimize false positives from JSLint on its "The Good Parts" setting.
 
@@ -789,7 +789,7 @@ function bar() {
 archive/issue_comments_065719.json:
 ```json
 {
-    "body": "Attachment\n\nCombined patch.  Apply only this patch.",
+    "body": "Attachment [trac_7666-alphanumeric_cell_ids_B7.patch](tarball://root/attachments/some-uuid/ticket7666/trac_7666-alphanumeric_cell_ids_B7.patch) by mpatel created at 2010-01-18 07:42:43\n\nCombined patch.  Apply only this patch.",
     "created_at": "2010-01-18T07:42:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7666",
     "type": "issue_comment",
@@ -798,7 +798,7 @@ archive/issue_comments_065719.json:
 }
 ```
 
-Attachment
+Attachment [trac_7666-alphanumeric_cell_ids_B7.patch](tarball://root/attachments/some-uuid/ticket7666/trac_7666-alphanumeric_cell_ids_B7.patch) by mpatel created at 2010-01-18 07:42:43
 
 Combined patch.  Apply only this patch.
 

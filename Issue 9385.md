@@ -353,7 +353,7 @@ Fedora 13 x86_64 here on an arrandale (i5) laptop, and ATLAS does not error out 
 archive/issue_comments_089250.json:
 ```json
 {
-    "body": "Attachment\n\nthis is mine",
+    "body": "Attachment [dMMCACHEEDGE.LOG](tarball://root/attachments/some-uuid/ticket9385/dMMCACHEEDGE.LOG) by olazo created at 2010-07-03 15:10:33\n\nthis is mine",
     "created_at": "2010-07-03T15:10:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
@@ -362,7 +362,7 @@ archive/issue_comments_089250.json:
 }
 ```
 
-Attachment
+Attachment [dMMCACHEEDGE.LOG](tarball://root/attachments/some-uuid/ticket9385/dMMCACHEEDGE.LOG) by olazo created at 2010-07-03 15:10:33
 
 this is mine
 
@@ -410,7 +410,7 @@ I'll upload those too.
 archive/issue_comments_089253.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [zMMSEARCH.LOG](tarball://root/attachments/some-uuid/ticket9385/zMMSEARCH.LOG) by olazo created at 2010-07-03 15:29:27",
     "created_at": "2010-07-03T15:29:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
@@ -419,7 +419,7 @@ archive/issue_comments_089253.json:
 }
 ```
 
-Attachment
+Attachment [zMMSEARCH.LOG](tarball://root/attachments/some-uuid/ticket9385/zMMSEARCH.LOG) by olazo created at 2010-07-03 15:29:27
 
 
 
@@ -428,7 +428,7 @@ Attachment
 archive/issue_comments_089254.json:
 ```json
 {
-    "body": "Attachment\n\nThose errors are harmless, that just means that ATLAS tried to compile some assembler optimized code that doesn't work on your particular CPU. Atlas will then use a different code path. \n\nHowever, if atlas would really die in stage 2-1-2 then it would never build zMMSEARCH.LOG, zMVTUNE.LOG. So the real bug must be something else further up in your log. Can you try to rebuild atlas (preferably with LANG=en_US or something like that) and upload the complete log?",
+    "body": "Attachment [zMVTUNE.LOG](tarball://root/attachments/some-uuid/ticket9385/zMVTUNE.LOG) by vbraun created at 2010-07-03 15:45:40\n\nThose errors are harmless, that just means that ATLAS tried to compile some assembler optimized code that doesn't work on your particular CPU. Atlas will then use a different code path. \n\nHowever, if atlas would really die in stage 2-1-2 then it would never build zMMSEARCH.LOG, zMVTUNE.LOG. So the real bug must be something else further up in your log. Can you try to rebuild atlas (preferably with LANG=en_US or something like that) and upload the complete log?",
     "created_at": "2010-07-03T15:45:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
@@ -437,7 +437,7 @@ archive/issue_comments_089254.json:
 }
 ```
 
-Attachment
+Attachment [zMVTUNE.LOG](tarball://root/attachments/some-uuid/ticket9385/zMVTUNE.LOG) by vbraun created at 2010-07-03 15:45:40
 
 Those errors are harmless, that just means that ATLAS tried to compile some assembler optimized code that doesn't work on your particular CPU. Atlas will then use a different code path. 
 
@@ -713,7 +713,7 @@ Sadly, I agree. I'll put the log here, it's not that big once compressed (1.3 Me
 archive/issue_comments_089266.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [install.log.tar.gz](tarball://root/attachments/some-uuid/ticket9385/install.log.tar.gz) by olazo created at 2010-07-04 14:46:52",
     "created_at": "2010-07-04T14:46:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
@@ -722,7 +722,7 @@ archive/issue_comments_089266.json:
 }
 ```
 
-Attachment
+Attachment [install.log.tar.gz](tarball://root/attachments/some-uuid/ticket9385/install.log.tar.gz) by olazo created at 2010-07-04 14:46:52
 
 
 
@@ -977,7 +977,7 @@ I'll set the priority to the default since it seems to be working for most peopl
 archive/issue_comments_089276.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:29 vbraun]:\n> Some questions for the OP:\n>   * Is your CPU trottled?\n\nI guess it is, since the install.log says so (see a pervious message fro drkirkby in this ticket)\n\n>   * Were other applications open/running at build time?\n\nYes, should I try again with no ther applications running?\n\n>   * Upload your `/home/oscar/sage-4.4.4/spkg/build/atlas-3.8.3.p12/ATLAS-build/error_CoreDuo32SSE3.tar`\n\nDone.\n\nAlso, thank you very much for helping me out!",
+    "body": "Attachment [error_CoreDuo32SSE3.tgz](tarball://root/attachments/some-uuid/ticket9385/error_CoreDuo32SSE3.tgz) by olazo created at 2010-07-04 16:52:40\n\nReplying to [comment:29 vbraun]:\n> Some questions for the OP:\n>   * Is your CPU trottled?\n\nI guess it is, since the install.log says so (see a pervious message fro drkirkby in this ticket)\n\n>   * Were other applications open/running at build time?\n\nYes, should I try again with no ther applications running?\n\n>   * Upload your `/home/oscar/sage-4.4.4/spkg/build/atlas-3.8.3.p12/ATLAS-build/error_CoreDuo32SSE3.tar`\n\nDone.\n\nAlso, thank you very much for helping me out!",
     "created_at": "2010-07-04T16:52:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
@@ -986,7 +986,7 @@ archive/issue_comments_089276.json:
 }
 ```
 
-Attachment
+Attachment [error_CoreDuo32SSE3.tgz](tarball://root/attachments/some-uuid/ticket9385/error_CoreDuo32SSE3.tgz) by olazo created at 2010-07-04 16:52:40
 
 Replying to [comment:29 vbraun]:
 > Some questions for the OP:
@@ -1616,7 +1616,7 @@ chris
 archive/issue_comments_089296.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [abrt.log](tarball://root/attachments/some-uuid/ticket9385/abrt.log) by chris created at 2011-08-28 22:49:43",
     "created_at": "2011-08-28T22:49:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
@@ -1625,7 +1625,7 @@ archive/issue_comments_089296.json:
 }
 ```
 
-Attachment
+Attachment [abrt.log](tarball://root/attachments/some-uuid/ticket9385/abrt.log) by chris created at 2011-08-28 22:49:43
 
 
 
@@ -1634,7 +1634,7 @@ Attachment
 archive/issue_comments_089297.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [proc_cpuinfo](tarball://root/attachments/some-uuid/ticket9385/proc_cpuinfo) by chris created at 2011-08-28 22:49:56",
     "created_at": "2011-08-28T22:49:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
@@ -1643,7 +1643,7 @@ archive/issue_comments_089297.json:
 }
 ```
 
-Attachment
+Attachment [proc_cpuinfo](tarball://root/attachments/some-uuid/ticket9385/proc_cpuinfo) by chris created at 2011-08-28 22:49:56
 
 
 
@@ -1652,7 +1652,7 @@ Attachment
 archive/issue_comments_089298.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [proc_meminfo](tarball://root/attachments/some-uuid/ticket9385/proc_meminfo) by chris created at 2011-08-28 22:50:09",
     "created_at": "2011-08-28T22:50:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
@@ -1661,7 +1661,7 @@ archive/issue_comments_089298.json:
 }
 ```
 
-Attachment
+Attachment [proc_meminfo](tarball://root/attachments/some-uuid/ticket9385/proc_meminfo) by chris created at 2011-08-28 22:50:09
 
 
 
@@ -1670,7 +1670,7 @@ Attachment
 archive/issue_comments_089299.json:
 ```json
 {
-    "body": "Attachment\n\nCan you try the new atlas spkg, which is included in Sage-4.7.2.alpha1 or higher? This will at the very least let you use the system-wide atlas install.",
+    "body": "Attachment [install_with_system_atlas.tar.lzma](tarball://root/attachments/some-uuid/ticket9385/install_with_system_atlas.tar.lzma) by vbraun created at 2011-08-28 23:38:40\n\nCan you try the new atlas spkg, which is included in Sage-4.7.2.alpha1 or higher? This will at the very least let you use the system-wide atlas install.",
     "created_at": "2011-08-28T23:38:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
@@ -1679,7 +1679,7 @@ archive/issue_comments_089299.json:
 }
 ```
 
-Attachment
+Attachment [install_with_system_atlas.tar.lzma](tarball://root/attachments/some-uuid/ticket9385/install_with_system_atlas.tar.lzma) by vbraun created at 2011-08-28 23:38:40
 
 Can you try the new atlas spkg, which is included in Sage-4.7.2.alpha1 or higher? This will at the very least let you use the system-wide atlas install.
 

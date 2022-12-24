@@ -427,7 +427,7 @@ new and improved patch
 archive/issue_comments_000770.json:
 ```json
 {
-    "body": "Attachment\n\nNew patch, with lots of added functionality. (I read what all you can do with the `step` parameter to slice.",
+    "body": "Attachment [trac-169.patch](tarball://root/attachments/some-uuid/ticket169/trac-169.patch) by craigcitro created at 2008-11-19 11:23:34\n\nNew patch, with lots of added functionality. (I read what all you can do with the `step` parameter to slice.",
     "created_at": "2008-11-19T11:23:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/169",
     "type": "issue_comment",
@@ -436,7 +436,7 @@ archive/issue_comments_000770.json:
 }
 ```
 
-Attachment
+Attachment [trac-169.patch](tarball://root/attachments/some-uuid/ticket169/trac-169.patch) by craigcitro created at 2008-11-19 11:23:34
 
 New patch, with lots of added functionality. (I read what all you can do with the `step` parameter to slice.
 
@@ -538,7 +538,7 @@ Michael
 archive/issue_comments_000774.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-169-pt2.patch](tarball://root/attachments/some-uuid/ticket169/trac-169-pt2.patch) by craigcitro created at 2008-11-21 05:32:21",
     "created_at": "2008-11-21T05:32:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/169",
     "type": "issue_comment",
@@ -547,7 +547,7 @@ archive/issue_comments_000774.json:
 }
 ```
 
-Attachment
+Attachment [trac-169-pt2.patch](tarball://root/attachments/some-uuid/ticket169/trac-169-pt2.patch) by craigcitro created at 2008-11-21 05:32:21
 
 
 

@@ -38,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9093
 archive/issue_comments_084454.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9093-poly-is_square.patch](tarball://root/attachments/some-uuid/ticket9093/9093-poly-is_square.patch) by robertwb created at 2010-05-30 08:44:15",
     "created_at": "2010-05-30T08:44:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9093",
     "type": "issue_comment",
@@ -47,7 +47,7 @@ archive/issue_comments_084454.json:
 }
 ```
 
-Attachment
+Attachment [9093-poly-is_square.patch](tarball://root/attachments/some-uuid/ticket9093/9093-poly-is_square.patch) by robertwb created at 2010-05-30 08:44:15
 
 
 

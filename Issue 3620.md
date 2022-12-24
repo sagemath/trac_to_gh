@@ -197,7 +197,7 @@ Wall time: 20.51 s
 archive/issue_comments_025554.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3620.patch](tarball://root/attachments/some-uuid/ticket3620/sage-3620.patch) by was created at 2008-07-09 19:53:25",
     "created_at": "2008-07-09T19:53:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3620",
     "type": "issue_comment",
@@ -206,7 +206,7 @@ archive/issue_comments_025554.json:
 }
 ```
 
-Attachment
+Attachment [sage-3620.patch](tarball://root/attachments/some-uuid/ticket3620/sage-3620.patch) by was created at 2008-07-09 19:53:25
 
 
 

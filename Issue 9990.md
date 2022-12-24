@@ -102,7 +102,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9991
 archive/issue_comments_100399.json:
 ```json
 {
-    "body": "Attachment\n\nBuild failure observed on an RS/6000 running AIX 5.3.",
+    "body": "Attachment [rubiks-20070912.p12.log](tarball://root/attachments/some-uuid/ticket9991/rubiks-20070912.p12.log) by drkirkby created at 2010-09-23 22:49:07\n\nBuild failure observed on an RS/6000 running AIX 5.3.",
     "created_at": "2010-09-23T22:49:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9990",
     "type": "issue_comment",
@@ -111,7 +111,7 @@ archive/issue_comments_100399.json:
 }
 ```
 
-Attachment
+Attachment [rubiks-20070912.p12.log](tarball://root/attachments/some-uuid/ticket9991/rubiks-20070912.p12.log) by drkirkby created at 2010-09-23 22:49:07
 
 Build failure observed on an RS/6000 running AIX 5.3.
 

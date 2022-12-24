@@ -62,7 +62,7 @@ Modifies `sage -notebook` to launch a browser window if the notebook is already 
 archive/issue_comments_003602.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch should do the trick. Apply to scripts repository.",
+    "body": "Attachment [trac_693-spawn-browser-start-nb.patch](tarball://root/attachments/some-uuid/ticket693/trac_693-spawn-browser-start-nb.patch) by timdumol created at 2009-11-15 15:35:46\n\nThis patch should do the trick. Apply to scripts repository.",
     "created_at": "2009-11-15T15:35:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/693",
     "type": "issue_comment",
@@ -71,7 +71,7 @@ archive/issue_comments_003602.json:
 }
 ```
 
-Attachment
+Attachment [trac_693-spawn-browser-start-nb.patch](tarball://root/attachments/some-uuid/ticket693/trac_693-spawn-browser-start-nb.patch) by timdumol created at 2009-11-15 15:35:46
 
 This patch should do the trick. Apply to scripts repository.
 
@@ -100,7 +100,7 @@ Changing status from new to needs_review.
 archive/issue_comments_003604.json:
 ```json
 {
-    "body": "Attachment\n\nChecks if the notebook server is running too, instead of just checking if the PID exists.",
+    "body": "Attachment [trac_693-spawn-browser-start-nb.2.patch](tarball://root/attachments/some-uuid/ticket693/trac_693-spawn-browser-start-nb.2.patch) by timdumol created at 2009-11-18 13:33:02\n\nChecks if the notebook server is running too, instead of just checking if the PID exists.",
     "created_at": "2009-11-18T13:33:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/693",
     "type": "issue_comment",
@@ -109,7 +109,7 @@ archive/issue_comments_003604.json:
 }
 ```
 
-Attachment
+Attachment [trac_693-spawn-browser-start-nb.2.patch](tarball://root/attachments/some-uuid/ticket693/trac_693-spawn-browser-start-nb.2.patch) by timdumol created at 2009-11-18 13:33:02
 
 Checks if the notebook server is running too, instead of just checking if the PID exists.
 
@@ -138,7 +138,7 @@ I am not sure which method is preferrable, since checking if the notebook server
 archive/issue_comments_003606.json:
 ```json
 {
-    "body": "Attachment\n\nFixes bug with arguments.",
+    "body": "Attachment [trac_693-spawn-browser-start-nb.3.patch](tarball://root/attachments/some-uuid/ticket693/trac_693-spawn-browser-start-nb.3.patch) by timdumol created at 2009-11-19 19:31:59\n\nFixes bug with arguments.",
     "created_at": "2009-11-19T19:31:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/693",
     "type": "issue_comment",
@@ -147,7 +147,7 @@ archive/issue_comments_003606.json:
 }
 ```
 
-Attachment
+Attachment [trac_693-spawn-browser-start-nb.3.patch](tarball://root/attachments/some-uuid/ticket693/trac_693-spawn-browser-start-nb.3.patch) by timdumol created at 2009-11-19 19:31:59
 
 Fixes bug with arguments.
 
@@ -158,7 +158,7 @@ Fixes bug with arguments.
 archive/issue_comments_003607.json:
 ```json
 {
-    "body": "Attachment\n\nSame thing, without actually checking if the Twistd process is running",
+    "body": "Attachment [trac_693-spawn-browser-start-nb.4.patch](tarball://root/attachments/some-uuid/ticket693/trac_693-spawn-browser-start-nb.4.patch) by timdumol created at 2009-11-19 19:33:52\n\nSame thing, without actually checking if the Twistd process is running",
     "created_at": "2009-11-19T19:33:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/693",
     "type": "issue_comment",
@@ -167,7 +167,7 @@ archive/issue_comments_003607.json:
 }
 ```
 
-Attachment
+Attachment [trac_693-spawn-browser-start-nb.4.patch](tarball://root/attachments/some-uuid/ticket693/trac_693-spawn-browser-start-nb.4.patch) by timdumol created at 2009-11-19 19:33:52
 
 Same thing, without actually checking if the Twistd process is running
 
@@ -277,7 +277,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_003610.json:
 ```json
 {
-    "body": "Attachment\n\nChanges run_notebook.py to launch a browser to the notebook page should an instance in the directory exist. Apply to sagenb repo. Apply this patch only.",
+    "body": "Attachment [trac_693-spawn-nb.patch](tarball://root/attachments/some-uuid/ticket693/trac_693-spawn-nb.patch) by timdumol created at 2009-11-21 01:33:39\n\nChanges run_notebook.py to launch a browser to the notebook page should an instance in the directory exist. Apply to sagenb repo. Apply this patch only.",
     "created_at": "2009-11-21T01:33:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/693",
     "type": "issue_comment",
@@ -286,7 +286,7 @@ archive/issue_comments_003610.json:
 }
 ```
 
-Attachment
+Attachment [trac_693-spawn-nb.patch](tarball://root/attachments/some-uuid/ticket693/trac_693-spawn-nb.patch) by timdumol created at 2009-11-21 01:33:39
 
 Changes run_notebook.py to launch a browser to the notebook page should an instance in the directory exist. Apply to sagenb repo. Apply this patch only.
 
@@ -386,7 +386,7 @@ I don't see "2" printed, i.e., no exception is raised.   That's clear if you rea
 archive/issue_comments_003615.json:
 ```json
 {
-    "body": "Attachment\n\nUses signals only to check if the process exists (as Twisted does)",
+    "body": "Attachment [trac_693-spawn-nb.2.patch](tarball://root/attachments/some-uuid/ticket693/trac_693-spawn-nb.2.patch) by timdumol created at 2009-12-09 12:10:35\n\nUses signals only to check if the process exists (as Twisted does)",
     "created_at": "2009-12-09T12:10:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/693",
     "type": "issue_comment",
@@ -395,7 +395,7 @@ archive/issue_comments_003615.json:
 }
 ```
 
-Attachment
+Attachment [trac_693-spawn-nb.2.patch](tarball://root/attachments/some-uuid/ticket693/trac_693-spawn-nb.2.patch) by timdumol created at 2009-12-09 12:10:35
 
 Uses signals only to check if the process exists (as Twisted does)
 
@@ -478,7 +478,7 @@ Open browser if server running and `open_viewer=True`.  pep8 clean-ups.  Rebased
 archive/issue_comments_003620.json:
 ```json
 {
-    "body": "Attachment\n\nV3:\n\n* If a server is running and `open_viewer=True`, get the settings from the old `twistedconf.tac` and browse to the server's home page.\n* Use `return` instead of `sys.exit`, in case of command-line invocation.\n* Some [pep8](http://pypi.python.org/pypi/pep8/) changes.\n* Rebased for this queue\n\n```\nsagenb-0.7 / #8051\ntrac_7784-hgignore_update.2.patch\ntrac_5712-interrupt-notification.6.patch\ntrac_6069-missing_pub_ws.2.patch\ntrac_8038-email_plus_addressing_v2.patch\ntrac_7506-notebook_object-documentation.2.patch\ntrac_693-spawn_notebook.3.patch\n```\n",
+    "body": "Attachment [trac_693-spawn_notebook.3.patch](tarball://root/attachments/some-uuid/ticket693/trac_693-spawn_notebook.3.patch) by mpatel created at 2010-01-25 06:34:48\n\nV3:\n\n* If a server is running and `open_viewer=True`, get the settings from the old `twistedconf.tac` and browse to the server's home page.\n* Use `return` instead of `sys.exit`, in case of command-line invocation.\n* Some [pep8](http://pypi.python.org/pypi/pep8/) changes.\n* Rebased for this queue\n\n```\nsagenb-0.7 / #8051\ntrac_7784-hgignore_update.2.patch\ntrac_5712-interrupt-notification.6.patch\ntrac_6069-missing_pub_ws.2.patch\ntrac_8038-email_plus_addressing_v2.patch\ntrac_7506-notebook_object-documentation.2.patch\ntrac_693-spawn_notebook.3.patch\n```\n",
     "created_at": "2010-01-25T06:34:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/693",
     "type": "issue_comment",
@@ -487,7 +487,7 @@ archive/issue_comments_003620.json:
 }
 ```
 
-Attachment
+Attachment [trac_693-spawn_notebook.3.patch](tarball://root/attachments/some-uuid/ticket693/trac_693-spawn_notebook.3.patch) by mpatel created at 2010-01-25 06:34:48
 
 V3:
 

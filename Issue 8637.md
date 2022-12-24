@@ -62,7 +62,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8637
 archive/issue_comments_078322.json:
 ```json
 {
-    "body": "Attachment\n\nI made Paul's patch into a proper Mercurial patch and credited him for it. Please review!",
+    "body": "Attachment [trac_8637.patch](tarball://root/attachments/some-uuid/ticket8637/trac_8637.patch) by ddrake created at 2010-03-31 23:47:22\n\nI made Paul's patch into a proper Mercurial patch and credited him for it. Please review!",
     "created_at": "2010-03-31T23:47:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8637",
     "type": "issue_comment",
@@ -71,7 +71,7 @@ archive/issue_comments_078322.json:
 }
 ```
 
-Attachment
+Attachment [trac_8637.patch](tarball://root/attachments/some-uuid/ticket8637/trac_8637.patch) by ddrake created at 2010-03-31 23:47:22
 
 I made Paul's patch into a proper Mercurial patch and credited him for it. Please review!
 

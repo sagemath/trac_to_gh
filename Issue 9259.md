@@ -71,7 +71,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_087126.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9259-combinatorialclass_doc_fix-fh.patch](tarball://root/attachments/some-uuid/ticket9259/trac_9259-combinatorialclass_doc_fix-fh.patch) by hivert created at 2010-06-18 10:12:18",
     "created_at": "2010-06-18T10:12:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9259",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_087126.json:
 }
 ```
 
-Attachment
+Attachment [trac_9259-combinatorialclass_doc_fix-fh.patch](tarball://root/attachments/some-uuid/ticket9259/trac_9259-combinatorialclass_doc_fix-fh.patch) by hivert created at 2010-06-18 10:12:18
 
 
 

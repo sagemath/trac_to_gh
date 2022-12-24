@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3659
 archive/issue_comments_025865.json:
 ```json
 {
-    "body": "Attachment\n\nThe spkg can be found at http://sage.math.washington.edu/home/mhansen/ipython-0.8.4.p0.spkg",
+    "body": "Attachment [scripts_3659.patch](tarball://root/attachments/some-uuid/ticket3659/scripts_3659.patch) by mhansen created at 2008-07-15 21:21:06\n\nThe spkg can be found at http://sage.math.washington.edu/home/mhansen/ipython-0.8.4.p0.spkg",
     "created_at": "2008-07-15T21:21:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3659",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_025865.json:
 }
 ```
 
-Attachment
+Attachment [scripts_3659.patch](tarball://root/attachments/some-uuid/ticket3659/scripts_3659.patch) by mhansen created at 2008-07-15 21:21:06
 
 The spkg can be found at http://sage.math.washington.edu/home/mhansen/ipython-0.8.4.p0.spkg
 
@@ -51,7 +51,7 @@ The spkg can be found at http://sage.math.washington.edu/home/mhansen/ipython-0.
 archive/issue_comments_025866.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review. The scripts repo patch needs the third hunk removed since we no longer have the \"-mpl\" switch.\n\nCheers,\n\nMichael",
+    "body": "Attachment [main_3659.patch](tarball://root/attachments/some-uuid/ticket3659/main_3659.patch) by mabshoff created at 2008-09-28 01:18:06\n\nPositive review. The scripts repo patch needs the third hunk removed since we no longer have the \"-mpl\" switch.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-28T01:18:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3659",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_025866.json:
 }
 ```
 
-Attachment
+Attachment [main_3659.patch](tarball://root/attachments/some-uuid/ticket3659/main_3659.patch) by mabshoff created at 2008-09-28 01:18:06
 
 Positive review. The scripts repo patch needs the third hunk removed since we no longer have the "-mpl" switch.
 

@@ -113,7 +113,7 @@ Applies to 4.3.1.alpha1
 archive/issue_comments_068748.json:
 ```json
 {
-    "body": "Attachment\n\nApplies to 4.3.1.alpha1; replaced previous (wrongly named!)",
+    "body": "Attachment [trac_7906-isogeny.patch](tarball://root/attachments/some-uuid/ticket7907/trac_7906-isogeny.patch) by cremona created at 2010-01-12 12:51:13\n\nApplies to 4.3.1.alpha1; replaced previous (wrongly named!)",
     "created_at": "2010-01-12T12:51:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7907",
     "type": "issue_comment",
@@ -122,7 +122,7 @@ archive/issue_comments_068748.json:
 }
 ```
 
-Attachment
+Attachment [trac_7906-isogeny.patch](tarball://root/attachments/some-uuid/ticket7907/trac_7906-isogeny.patch) by cremona created at 2010-01-12 12:51:13
 
 Applies to 4.3.1.alpha1; replaced previous (wrongly named!)
 
@@ -133,7 +133,7 @@ Applies to 4.3.1.alpha1; replaced previous (wrongly named!)
 archive/issue_comments_068749.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7907-isogeny.patch](tarball://root/attachments/some-uuid/ticket7907/trac_7907-isogeny.patch) by cremona created at 2010-01-12 12:51:43",
     "created_at": "2010-01-12T12:51:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7907",
     "type": "issue_comment",
@@ -142,7 +142,7 @@ archive/issue_comments_068749.json:
 }
 ```
 
-Attachment
+Attachment [trac_7907-isogeny.patch](tarball://root/attachments/some-uuid/ticket7907/trac_7907-isogeny.patch) by cremona created at 2010-01-12 12:51:43
 
 
 

@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9193
 archive/issue_comments_086009.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9193-part1-lfunc.patch](tarball://root/attachments/some-uuid/ticket9193/9193-part1-lfunc.patch) by robertwb created at 2010-06-09 06:13:46",
     "created_at": "2010-06-09T06:13:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9193",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_086009.json:
 }
 ```
 
-Attachment
+Attachment [9193-part1-lfunc.patch](tarball://root/attachments/some-uuid/ticket9193/9193-part1-lfunc.patch) by robertwb created at 2010-06-09 06:13:46
 
 
 
@@ -51,7 +51,7 @@ Attachment
 archive/issue_comments_086010.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9193-part2-incomplete-gamma.patch](tarball://root/attachments/some-uuid/ticket9193/9193-part2-incomplete-gamma.patch) by robertwb created at 2010-06-09 06:14:39",
     "created_at": "2010-06-09T06:14:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9193",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_086010.json:
 }
 ```
 
-Attachment
+Attachment [9193-part2-incomplete-gamma.patch](tarball://root/attachments/some-uuid/ticket9193/9193-part2-incomplete-gamma.patch) by robertwb created at 2010-06-09 06:14:39
 
 
 
@@ -69,7 +69,7 @@ Attachment
 archive/issue_comments_086011.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9193-part3-prec.patch](tarball://root/attachments/some-uuid/ticket9193/9193-part3-prec.patch) by robertwb created at 2010-06-09 06:14:50",
     "created_at": "2010-06-09T06:14:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9193",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_086011.json:
 }
 ```
 
-Attachment
+Attachment [9193-part3-prec.patch](tarball://root/attachments/some-uuid/ticket9193/9193-part3-prec.patch) by robertwb created at 2010-06-09 06:14:50
 
 
 
@@ -213,7 +213,7 @@ archive/issue_comments_086017.json:
 archive/issue_comments_086018.json:
 ```json
 {
-    "body": "Attachment\n\nAll patches apply (with a minor rebase) and mostly work.  However, there is one bug. \n\n\n```\nUnfortunately, this is wrong, since the coefficients of 1 and T have\nto be 0.0000?.  However, the output *is* correct to 10 bits of\nprecision, so the correct fix is just to truncate.::\n\n    sage: L = LFunction(EllipticCurve('389a'))\n    sage: L.taylor_series(RealField(10)(1), 3, proof=True)\n    -0.00002125? + 0.00001204?*T + 0.75933?*T^2 - 0.43032?*T^3 + O(T^4)\n```\n",
+    "body": "Attachment [9193-part4-proveable.patch](tarball://root/attachments/some-uuid/ticket9193/9193-part4-proveable.patch) by was created at 2011-08-25 06:58:42\n\nAll patches apply (with a minor rebase) and mostly work.  However, there is one bug. \n\n\n```\nUnfortunately, this is wrong, since the coefficients of 1 and T have\nto be 0.0000?.  However, the output *is* correct to 10 bits of\nprecision, so the correct fix is just to truncate.::\n\n    sage: L = LFunction(EllipticCurve('389a'))\n    sage: L.taylor_series(RealField(10)(1), 3, proof=True)\n    -0.00002125? + 0.00001204?*T + 0.75933?*T^2 - 0.43032?*T^3 + O(T^4)\n```\n",
     "created_at": "2011-08-25T06:58:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9193",
     "type": "issue_comment",
@@ -222,7 +222,7 @@ archive/issue_comments_086018.json:
 }
 ```
 
-Attachment
+Attachment [9193-part4-proveable.patch](tarball://root/attachments/some-uuid/ticket9193/9193-part4-proveable.patch) by was created at 2011-08-25 06:58:42
 
 All patches apply (with a minor rebase) and mostly work.  However, there is one bug. 
 
@@ -263,7 +263,7 @@ archive/issue_comments_086019.json:
 archive/issue_comments_086020.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9193-part5-docstrings-and-prec-fix.patch](tarball://root/attachments/some-uuid/ticket9193/9193-part5-docstrings-and-prec-fix.patch) by jdemeyer created at 2013-08-13 15:35:53",
     "created_at": "2013-08-13T15:35:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9193",
     "type": "issue_comment",
@@ -272,4 +272,4 @@ archive/issue_comments_086020.json:
 }
 ```
 
-Attachment
+Attachment [9193-part5-docstrings-and-prec-fix.patch](tarball://root/attachments/some-uuid/ticket9193/9193-part5-docstrings-and-prec-fix.patch) by jdemeyer created at 2013-08-13 15:35:53

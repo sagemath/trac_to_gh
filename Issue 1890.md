@@ -52,7 +52,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1890
 archive/issue_comments_011971.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1890.patch](tarball://root/attachments/some-uuid/ticket1890/1890.patch) by rlm created at 2008-01-23 23:46:19",
     "created_at": "2008-01-23T23:46:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1890",
     "type": "issue_comment",
@@ -61,7 +61,7 @@ archive/issue_comments_011971.json:
 }
 ```
 
-Attachment
+Attachment [1890.patch](tarball://root/attachments/some-uuid/ticket1890/1890.patch) by rlm created at 2008-01-23 23:46:19
 
 
 

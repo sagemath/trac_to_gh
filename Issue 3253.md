@@ -200,7 +200,7 @@ This function should not be implemented for `sage.rings.polynomial.multi_polynom
 archive/issue_comments_022509.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3253-jacobian_ideal.patch](tarball://root/attachments/some-uuid/ticket3253/3253-jacobian_ideal.patch) by AlexGhitza created at 2008-08-28 03:39:57",
     "created_at": "2008-08-28T03:39:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3253",
     "type": "issue_comment",
@@ -209,7 +209,7 @@ archive/issue_comments_022509.json:
 }
 ```
 
-Attachment
+Attachment [3253-jacobian_ideal.patch](tarball://root/attachments/some-uuid/ticket3253/3253-jacobian_ideal.patch) by AlexGhitza created at 2008-08-28 03:39:57
 
 
 

@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1230
 archive/issue_comments_007650.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-1230.patch](tarball://root/attachments/some-uuid/ticket1230/sage-1230.patch) by was created at 2008-05-10 21:04:01",
     "created_at": "2008-05-10T21:04:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1230",
     "type": "issue_comment",
@@ -49,7 +49,7 @@ archive/issue_comments_007650.json:
 }
 ```
 
-Attachment
+Attachment [sage-1230.patch](tarball://root/attachments/some-uuid/ticket1230/sage-1230.patch) by was created at 2008-05-10 21:04:01
 
 
 
@@ -110,7 +110,7 @@ Ticket #3147 should probably be closed if this gets accepted, since it solves th
 archive/issue_comments_007653.json:
 ```json
 {
-    "body": "Attachment\n\nQuit --> Stop as recommended by referee",
+    "body": "Attachment [sage-1230-part3.patch](tarball://root/attachments/some-uuid/ticket1230/sage-1230-part3.patch) by was created at 2008-05-11 01:01:54\n\nQuit --> Stop as recommended by referee",
     "created_at": "2008-05-11T01:01:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1230",
     "type": "issue_comment",
@@ -119,7 +119,7 @@ archive/issue_comments_007653.json:
 }
 ```
 
-Attachment
+Attachment [sage-1230-part3.patch](tarball://root/attachments/some-uuid/ticket1230/sage-1230-part3.patch) by was created at 2008-05-11 01:01:54
 
 Quit --> Stop as recommended by referee
 

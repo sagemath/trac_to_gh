@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1605
 archive/issue_comments_010197.json:
 ```json
 {
-    "body": "Attachment\n\nadd support for converting vectors to magma",
+    "body": "Attachment [1605-sage_vectors_to_magma.patch](tarball://root/attachments/some-uuid/ticket1605/1605-sage_vectors_to_magma.patch) by burcin created at 2008-05-12 15:12:00\n\nadd support for converting vectors to magma",
     "created_at": "2008-05-12T15:12:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1605",
     "type": "issue_comment",
@@ -53,7 +53,7 @@ archive/issue_comments_010197.json:
 }
 ```
 
-Attachment
+Attachment [1605-sage_vectors_to_magma.patch](tarball://root/attachments/some-uuid/ticket1605/1605-sage_vectors_to_magma.patch) by burcin created at 2008-05-12 15:12:00
 
 add support for converting vectors to magma
 

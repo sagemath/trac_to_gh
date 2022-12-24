@@ -100,7 +100,7 @@ I believe the failure is caused by a bad version of expr.  I'm attaching a  wrap
 archive/issue_comments_073073.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [expr](tarball://root/attachments/some-uuid/ticket8257/expr) by mhansen created at 2010-04-06 17:40:31",
     "created_at": "2010-04-06T17:40:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8257",
     "type": "issue_comment",
@@ -109,7 +109,7 @@ archive/issue_comments_073073.json:
 }
 ```
 
-Attachment
+Attachment [expr](tarball://root/attachments/some-uuid/ticket8257/expr) by mhansen created at 2010-04-06 17:40:31
 
 
 

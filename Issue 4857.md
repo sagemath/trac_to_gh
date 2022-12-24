@@ -87,7 +87,7 @@ Michael
 archive/issue_comments_036813.json:
 ```json
 {
-    "body": "Attachment\n\na new script \"sage-create-spkg\" to go in the scripts repo /local/bin",
+    "body": "Attachment [4857-scripts.patch](tarball://root/attachments/some-uuid/ticket4857/4857-scripts.patch) by GeorgSWeber created at 2008-12-30 12:31:50\n\na new script \"sage-create-spkg\" to go in the scripts repo /local/bin",
     "created_at": "2008-12-30T12:31:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4857",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_036813.json:
 }
 ```
 
-Attachment
+Attachment [4857-scripts.patch](tarball://root/attachments/some-uuid/ticket4857/4857-scripts.patch) by GeorgSWeber created at 2008-12-30 12:31:50
 
 a new script "sage-create-spkg" to go in the scripts repo /local/bin
 
@@ -107,7 +107,7 @@ a new script "sage-create-spkg" to go in the scripts repo /local/bin
 archive/issue_comments_036814.json:
 ```json
 {
-    "body": "Attachment\n\ntwo example \"upstream src\" packages (sample spkg input) to go in the examples/ repo",
+    "body": "Attachment [4857-examples.patch](tarball://root/attachments/some-uuid/ticket4857/4857-examples.patch) by GeorgSWeber created at 2008-12-30 12:34:29\n\ntwo example \"upstream src\" packages (sample spkg input) to go in the examples/ repo",
     "created_at": "2008-12-30T12:34:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4857",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_036814.json:
 }
 ```
 
-Attachment
+Attachment [4857-examples.patch](tarball://root/attachments/some-uuid/ticket4857/4857-examples.patch) by GeorgSWeber created at 2008-12-30 12:34:29
 
 two example "upstream src" packages (sample spkg input) to go in the examples/ repo
 
@@ -163,7 +163,7 @@ Changing component from experimental package to documentation.
 archive/issue_comments_036817.json:
 ```json
 {
-    "body": "Attachment\n\nThe current documentation in the Sage Developer's Guide says in Chapter 2, subsection 8.1, item (f) about Creating a New spkg: ... Post a copy on the Sage trac server ...\n\nThis is outdated. I took the opportunitiy to rewrite subsection 8.1, add two subsections 8.2 and 8.3, and assemble two live examples (to go under the examples directory) and a script \"sage-create-spkg\" which e.g. creates a template SPKG.txt and the mandatory hg repo. The script called on the examples result in working spkg, that install fine.\n\nWell, at least at the author's Mac. So it would be good if the referee could use and test it on a Linux machine.\n\nThe contents are based on a discussion with Michael Abshoff on sage-devel, half of the credit (at least) goes to him. All the remaining mistakes are mine, of course :-)",
+    "body": "Attachment [4857-doc.patch](tarball://root/attachments/some-uuid/ticket4857/4857-doc.patch) by GeorgSWeber created at 2008-12-30 12:47:53\n\nThe current documentation in the Sage Developer's Guide says in Chapter 2, subsection 8.1, item (f) about Creating a New spkg: ... Post a copy on the Sage trac server ...\n\nThis is outdated. I took the opportunitiy to rewrite subsection 8.1, add two subsections 8.2 and 8.3, and assemble two live examples (to go under the examples directory) and a script \"sage-create-spkg\" which e.g. creates a template SPKG.txt and the mandatory hg repo. The script called on the examples result in working spkg, that install fine.\n\nWell, at least at the author's Mac. So it would be good if the referee could use and test it on a Linux machine.\n\nThe contents are based on a discussion with Michael Abshoff on sage-devel, half of the credit (at least) goes to him. All the remaining mistakes are mine, of course :-)",
     "created_at": "2008-12-30T12:47:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4857",
     "type": "issue_comment",
@@ -172,7 +172,7 @@ archive/issue_comments_036817.json:
 }
 ```
 
-Attachment
+Attachment [4857-doc.patch](tarball://root/attachments/some-uuid/ticket4857/4857-doc.patch) by GeorgSWeber created at 2008-12-30 12:47:53
 
 The current documentation in the Sage Developer's Guide says in Chapter 2, subsection 8.1, item (f) about Creating a New spkg: ... Post a copy on the Sage trac server ...
 

@@ -70,7 +70,7 @@ archive/issue_comments_043392.json:
 archive/issue_comments_043393.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [weil_restriction.patch](tarball://root/attachments/some-uuid/ticket5569/weil_restriction.patch) by malb created at 2009-03-20 00:06:15",
     "created_at": "2009-03-20T00:06:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5569",
     "type": "issue_comment",
@@ -79,7 +79,7 @@ archive/issue_comments_043393.json:
 }
 ```
 
-Attachment
+Attachment [weil_restriction.patch](tarball://root/attachments/some-uuid/ticket5569/weil_restriction.patch) by malb created at 2009-03-20 00:06:15
 
 
 

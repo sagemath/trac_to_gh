@@ -422,7 +422,7 @@ The attached patch to `ffpack_frobenius.inl` checks for that return value explic
 archive/issue_comments_016607.json:
 ```json
 {
-    "body": "Attachment\n\nI fixed the files ffpack_frobenius.inl and ffpack_charpoly.inl, to \n1. remove the verbosity when the preconditionning failed\n2. default to the deterministic algorithm when the probabilistic asumption is likely to be wrong\n3. changed the random generation of the block vector, so that is has rank > 0\n\nThe new linbox spkg is available at\n[http://sage.math.washington.edu/home/pernet/linbox-1.1.5rc2.p5.spkg](http://sage.math.washington.edu/home/pernet/linbox-1.1.5rc2.p5.spkg)\n\nI also attached the diff between rc2.p4 and rc2.p5",
+    "body": "Attachment [ffpack_frobenius.patch](tarball://root/attachments/some-uuid/ticket2453/ffpack_frobenius.patch) by cpernet created at 2008-03-11 21:45:09\n\nI fixed the files ffpack_frobenius.inl and ffpack_charpoly.inl, to \n1. remove the verbosity when the preconditionning failed\n2. default to the deterministic algorithm when the probabilistic asumption is likely to be wrong\n3. changed the random generation of the block vector, so that is has rank > 0\n\nThe new linbox spkg is available at\n[http://sage.math.washington.edu/home/pernet/linbox-1.1.5rc2.p5.spkg](http://sage.math.washington.edu/home/pernet/linbox-1.1.5rc2.p5.spkg)\n\nI also attached the diff between rc2.p4 and rc2.p5",
     "created_at": "2008-03-11T21:45:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2453",
     "type": "issue_comment",
@@ -431,7 +431,7 @@ archive/issue_comments_016607.json:
 }
 ```
 
-Attachment
+Attachment [ffpack_frobenius.patch](tarball://root/attachments/some-uuid/ticket2453/ffpack_frobenius.patch) by cpernet created at 2008-03-11 21:45:09
 
 I fixed the files ffpack_frobenius.inl and ffpack_charpoly.inl, to 
 1. remove the verbosity when the preconditionning failed
@@ -450,7 +450,7 @@ I also attached the diff between rc2.p4 and rc2.p5
 archive/issue_comments_016608.json:
 ```json
 {
-    "body": "Attachment\n\ndiff of linbox-1.1.5rc2.p4 against 1.1.5rc2.p5",
+    "body": "Attachment [charpoly_frobenius_bug.patch](tarball://root/attachments/some-uuid/ticket2453/charpoly_frobenius_bug.patch) by cpernet created at 2008-03-12 02:03:44\n\ndiff of linbox-1.1.5rc2.p4 against 1.1.5rc2.p5",
     "created_at": "2008-03-12T02:03:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2453",
     "type": "issue_comment",
@@ -459,7 +459,7 @@ archive/issue_comments_016608.json:
 }
 ```
 
-Attachment
+Attachment [charpoly_frobenius_bug.patch](tarball://root/attachments/some-uuid/ticket2453/charpoly_frobenius_bug.patch) by cpernet created at 2008-03-12 02:03:44
 
 diff of linbox-1.1.5rc2.p4 against 1.1.5rc2.p5
 

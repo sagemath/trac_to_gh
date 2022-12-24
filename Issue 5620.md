@@ -120,7 +120,7 @@ Reviewer patch to original
 archive/issue_comments_043889.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac5620_digraph_plotting.patch](tarball://root/attachments/some-uuid/ticket5620/trac5620_digraph_plotting.patch) by rlm created at 2009-03-31 23:15:07",
     "created_at": "2009-03-31T23:15:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5620",
     "type": "issue_comment",
@@ -129,7 +129,7 @@ archive/issue_comments_043889.json:
 }
 ```
 
-Attachment
+Attachment [trac5620_digraph_plotting.patch](tarball://root/attachments/some-uuid/ticket5620/trac5620_digraph_plotting.patch) by rlm created at 2009-03-31 23:15:07
 
 
 

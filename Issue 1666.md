@@ -67,7 +67,7 @@ Changing status from new to assigned.
 archive/issue_comments_010588.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1666-jmol-lines.diff](tarball://root/attachments/some-uuid/ticket1666/1666-jmol-lines.diff) by robertwb created at 2008-01-03 12:22:57",
     "created_at": "2008-01-03T12:22:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1666",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_010588.json:
 }
 ```
 
-Attachment
+Attachment [1666-jmol-lines.diff](tarball://root/attachments/some-uuid/ticket1666/1666-jmol-lines.diff) by robertwb created at 2008-01-03 12:22:57
 
 
 

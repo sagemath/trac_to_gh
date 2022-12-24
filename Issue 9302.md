@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9302
 archive/issue_comments_087623.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9302-heegner.patch](tarball://root/attachments/some-uuid/ticket9302/9302-heegner.patch) by robertwb created at 2010-06-23 04:01:50",
     "created_at": "2010-06-23T04:01:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9302",
     "type": "issue_comment",
@@ -53,7 +53,7 @@ archive/issue_comments_087623.json:
 }
 ```
 
-Attachment
+Attachment [9302-heegner.patch](tarball://root/attachments/some-uuid/ticket9302/9302-heegner.patch) by robertwb created at 2010-06-23 04:01:50
 
 
 

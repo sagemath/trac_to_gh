@@ -55,7 +55,7 @@ Michael
 archive/issue_comments_039551.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5160_rename_sagex_ds.patch](tarball://root/attachments/some-uuid/ticket5160/5160_rename_sagex_ds.patch) by jdemeyer created at 2012-09-25 20:44:30",
     "created_at": "2012-09-25T20:44:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5160",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_039551.json:
 }
 ```
 
-Attachment
+Attachment [5160_rename_sagex_ds.patch](tarball://root/attachments/some-uuid/ticket5160/5160_rename_sagex_ds.patch) by jdemeyer created at 2012-09-25 20:44:30
 
 
 

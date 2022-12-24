@@ -156,7 +156,7 @@ Changing status from new to needs_review.
 archive/issue_comments_050240.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6296.patch](tarball://root/attachments/some-uuid/ticket6296/trac_6296.patch) by was created at 2010-01-17 13:14:14",
     "created_at": "2010-01-17T13:14:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6296",
     "type": "issue_comment",
@@ -165,7 +165,7 @@ archive/issue_comments_050240.json:
 }
 ```
 
-Attachment
+Attachment [trac_6296.patch](tarball://root/attachments/some-uuid/ticket6296/trac_6296.patch) by was created at 2010-01-17 13:14:14
 
 
 
@@ -198,7 +198,7 @@ Yann
 archive/issue_comments_050242.json:
 ```json
 {
-    "body": "Attachment\n\nthis is part 2",
+    "body": "Attachment [trac_6296-part2.patch](tarball://root/attachments/some-uuid/ticket6296/trac_6296-part2.patch) by was created at 2010-02-07 07:12:01\n\nthis is part 2",
     "created_at": "2010-02-07T07:12:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6296",
     "type": "issue_comment",
@@ -207,7 +207,7 @@ archive/issue_comments_050242.json:
 }
 ```
 
-Attachment
+Attachment [trac_6296-part2.patch](tarball://root/attachments/some-uuid/ticket6296/trac_6296-part2.patch) by was created at 2010-02-07 07:12:01
 
 this is part 2
 

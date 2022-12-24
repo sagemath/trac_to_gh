@@ -316,7 +316,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_088169.json:
 ```json
 {
-    "body": "Attachment\n\nRenaming `FormalSums_generic` -> `FormalSums` broke the pickle jar and, subsequently, one doctest in `sage_object.pyx`. The updated patch uses `register_unpickle_override` to still allow the unpickling of old pickles.\n\nEverything is tested on Sage 4.5.2.",
+    "body": "Attachment [trac_9337_divisor_superclasses_fixes.patch](tarball://root/attachments/some-uuid/ticket9337/trac_9337_divisor_superclasses_fixes.patch) by vbraun created at 2010-08-09 22:49:52\n\nRenaming `FormalSums_generic` -> `FormalSums` broke the pickle jar and, subsequently, one doctest in `sage_object.pyx`. The updated patch uses `register_unpickle_override` to still allow the unpickling of old pickles.\n\nEverything is tested on Sage 4.5.2.",
     "created_at": "2010-08-09T22:49:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9337",
     "type": "issue_comment",
@@ -325,7 +325,7 @@ archive/issue_comments_088169.json:
 }
 ```
 
-Attachment
+Attachment [trac_9337_divisor_superclasses_fixes.patch](tarball://root/attachments/some-uuid/ticket9337/trac_9337_divisor_superclasses_fixes.patch) by vbraun created at 2010-08-09 22:49:52
 
 Renaming `FormalSums_generic` -> `FormalSums` broke the pickle jar and, subsequently, one doctest in `sage_object.pyx`. The updated patch uses `register_unpickle_override` to still allow the unpickling of old pickles.
 
@@ -651,7 +651,7 @@ Updated patch
 archive/issue_comments_088182.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated patch",
+    "body": "Attachment [trac_9337_toric_divisors.patch](tarball://root/attachments/some-uuid/ticket9337/trac_9337_toric_divisors.patch) by vbraun created at 2010-08-23 21:41:04\n\nUpdated patch",
     "created_at": "2010-08-23T21:41:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9337",
     "type": "issue_comment",
@@ -660,7 +660,7 @@ archive/issue_comments_088182.json:
 }
 ```
 
-Attachment
+Attachment [trac_9337_toric_divisors.patch](tarball://root/attachments/some-uuid/ticket9337/trac_9337_toric_divisors.patch) by vbraun created at 2010-08-23 21:41:04
 
 Updated patch
 
@@ -671,7 +671,7 @@ Updated patch
 archive/issue_comments_088183.json:
 ```json
 {
-    "body": "Attachment\n\nSorry, wrong ticket. Disregard `trac_9713_toric_chow_group.patch`. There is no way to delete an attached patch, is there?",
+    "body": "Attachment [trac_9713_toric_chow_group.patch](tarball://root/attachments/some-uuid/ticket9337/trac_9713_toric_chow_group.patch) by vbraun created at 2010-08-23 21:42:48\n\nSorry, wrong ticket. Disregard `trac_9713_toric_chow_group.patch`. There is no way to delete an attached patch, is there?",
     "created_at": "2010-08-23T21:42:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9337",
     "type": "issue_comment",
@@ -680,7 +680,7 @@ archive/issue_comments_088183.json:
 }
 ```
 
-Attachment
+Attachment [trac_9713_toric_chow_group.patch](tarball://root/attachments/some-uuid/ticket9337/trac_9713_toric_chow_group.patch) by vbraun created at 2010-08-23 21:42:48
 
 Sorry, wrong ticket. Disregard `trac_9713_toric_chow_group.patch`. There is no way to delete an attached patch, is there?
 
@@ -1015,7 +1015,7 @@ archive/issue_comments_088194.json:
 archive/issue_comments_088195.json:
 ```json
 {
-    "body": "Attachment\n\nRebased patch",
+    "body": "Attachment [trac_9337_toric_divisor_classes.2.patch](tarball://root/attachments/some-uuid/ticket9337/trac_9337_toric_divisor_classes.2.patch) by vbraun created at 2010-08-30 15:19:51\n\nRebased patch",
     "created_at": "2010-08-30T15:19:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9337",
     "type": "issue_comment",
@@ -1024,7 +1024,7 @@ archive/issue_comments_088195.json:
 }
 ```
 
-Attachment
+Attachment [trac_9337_toric_divisor_classes.2.patch](tarball://root/attachments/some-uuid/ticket9337/trac_9337_toric_divisor_classes.2.patch) by vbraun created at 2010-08-30 15:19:51
 
 Rebased patch
 
@@ -1035,7 +1035,7 @@ Rebased patch
 archive/issue_comments_088196.json:
 ```json
 {
-    "body": "Attachment\n\nignore the .2 patch above, lets keep the same names...",
+    "body": "Attachment [trac_9337_toric_divisor_classes.patch](tarball://root/attachments/some-uuid/ticket9337/trac_9337_toric_divisor_classes.patch) by vbraun created at 2010-08-30 15:21:25\n\nignore the .2 patch above, lets keep the same names...",
     "created_at": "2010-08-30T15:21:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9337",
     "type": "issue_comment",
@@ -1044,7 +1044,7 @@ archive/issue_comments_088196.json:
 }
 ```
 
-Attachment
+Attachment [trac_9337_toric_divisor_classes.patch](tarball://root/attachments/some-uuid/ticket9337/trac_9337_toric_divisor_classes.patch) by vbraun created at 2010-08-30 15:21:25
 
 ignore the .2 patch above, lets keep the same names...
 
@@ -1055,7 +1055,7 @@ ignore the .2 patch above, lets keep the same names...
 archive/issue_comments_088197.json:
 ```json
 {
-    "body": "Attachment\n\nRebased patch",
+    "body": "Attachment [trac_9337_line_bundle_cohomology.patch](tarball://root/attachments/some-uuid/ticket9337/trac_9337_line_bundle_cohomology.patch) by vbraun created at 2010-08-30 15:21:53\n\nRebased patch",
     "created_at": "2010-08-30T15:21:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9337",
     "type": "issue_comment",
@@ -1064,7 +1064,7 @@ archive/issue_comments_088197.json:
 }
 ```
 
-Attachment
+Attachment [trac_9337_line_bundle_cohomology.patch](tarball://root/attachments/some-uuid/ticket9337/trac_9337_line_bundle_cohomology.patch) by vbraun created at 2010-08-30 15:21:53
 
 Rebased patch
 
@@ -1310,7 +1310,7 @@ archive/issue_comments_088206.json:
 archive/issue_comments_088207.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated version",
+    "body": "Attachment [trac_9337_classes_and_cohomology_reviewer.patch](tarball://root/attachments/some-uuid/ticket9337/trac_9337_classes_and_cohomology_reviewer.patch) by novoselt created at 2010-09-06 17:55:58\n\nUpdated version",
     "created_at": "2010-09-06T17:55:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9337",
     "type": "issue_comment",
@@ -1319,7 +1319,7 @@ archive/issue_comments_088207.json:
 }
 ```
 
-Attachment
+Attachment [trac_9337_classes_and_cohomology_reviewer.patch](tarball://root/attachments/some-uuid/ticket9337/trac_9337_classes_and_cohomology_reviewer.patch) by novoselt created at 2010-09-06 17:55:58
 
 Updated version
 
@@ -1685,7 +1685,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_088222.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated patch",
+    "body": "Attachment [trac_9337_final.patch](tarball://root/attachments/some-uuid/ticket9337/trac_9337_final.patch) by vbraun created at 2010-09-09 11:55:24\n\nUpdated patch",
     "created_at": "2010-09-09T11:55:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9337",
     "type": "issue_comment",
@@ -1694,7 +1694,7 @@ archive/issue_comments_088222.json:
 }
 ```
 
-Attachment
+Attachment [trac_9337_final.patch](tarball://root/attachments/some-uuid/ticket9337/trac_9337_final.patch) by vbraun created at 2010-09-09 11:55:24
 
 Updated patch
 

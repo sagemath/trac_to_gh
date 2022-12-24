@@ -49,7 +49,7 @@ Changing status from new to assigned.
 archive/issue_comments_004462.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [clisp-error.log](tarball://root/attachments/some-uuid/ticket754/clisp-error.log) by mhansen created at 2007-09-25 23:42:21",
     "created_at": "2007-09-25T23:42:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/754",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_004462.json:
 }
 ```
 
-Attachment
+Attachment [clisp-error.log](tarball://root/attachments/some-uuid/ticket754/clisp-error.log) by mhansen created at 2007-09-25 23:42:21
 
 
 
@@ -67,7 +67,7 @@ Attachment
 archive/issue_comments_004463.json:
 ```json
 {
-    "body": "Attachment\n\nclisp build error fixed by installing GNU sed instead of the BusyBox version.",
+    "body": "Attachment [singular-error.log](tarball://root/attachments/some-uuid/ticket754/singular-error.log) by mhansen created at 2007-09-25 23:56:55\n\nclisp build error fixed by installing GNU sed instead of the BusyBox version.",
     "created_at": "2007-09-25T23:56:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/754",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_004463.json:
 }
 ```
 
-Attachment
+Attachment [singular-error.log](tarball://root/attachments/some-uuid/ticket754/singular-error.log) by mhansen created at 2007-09-25 23:56:55
 
 clisp build error fixed by installing GNU sed instead of the BusyBox version.
 

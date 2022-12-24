@@ -62,7 +62,7 @@ archive/issue_comments_027928.json:
 archive/issue_comments_027929.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [prog.patch](tarball://root/attachments/some-uuid/ticket3905/prog.patch) by jhpalmieri created at 2008-08-20 02:40:00",
     "created_at": "2008-08-20T02:40:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3905",
     "type": "issue_comment",
@@ -71,7 +71,7 @@ archive/issue_comments_027929.json:
 }
 ```
 
-Attachment
+Attachment [prog.patch](tarball://root/attachments/some-uuid/ticket3905/prog.patch) by jhpalmieri created at 2008-08-20 02:40:00
 
 
 
@@ -414,7 +414,7 @@ my comments from trac as a patch
 archive/issue_comments_027934.json:
 ```json
 {
-    "body": "Attachment\n\nHi there, I made my comments into a patch which ought to be applied after John's patch. This is not perfect or release quality and it still needs some heavy editing. Maybe someone can get through the new prog.tex and make sure it is not worse than what we currently ship and then we can apply both patches? Then, mhansen can convert the Developer's guide to Sphinx and we can go on editing it afterwards?",
+    "body": "Attachment [prog.2.patch](tarball://root/attachments/some-uuid/ticket3905/prog.2.patch) by malb created at 2008-08-23 22:52:02\n\nHi there, I made my comments into a patch which ought to be applied after John's patch. This is not perfect or release quality and it still needs some heavy editing. Maybe someone can get through the new prog.tex and make sure it is not worse than what we currently ship and then we can apply both patches? Then, mhansen can convert the Developer's guide to Sphinx and we can go on editing it afterwards?",
     "created_at": "2008-08-23T22:52:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3905",
     "type": "issue_comment",
@@ -423,7 +423,7 @@ archive/issue_comments_027934.json:
 }
 ```
 
-Attachment
+Attachment [prog.2.patch](tarball://root/attachments/some-uuid/ticket3905/prog.2.patch) by malb created at 2008-08-23 22:52:02
 
 Hi there, I made my comments into a patch which ought to be applied after John's patch. This is not perfect or release quality and it still needs some heavy editing. Maybe someone can get through the new prog.tex and make sure it is not worse than what we currently ship and then we can apply both patches? Then, mhansen can convert the Developer's guide to Sphinx and we can go on editing it afterwards?
 

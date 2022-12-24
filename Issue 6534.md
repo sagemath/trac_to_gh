@@ -48,7 +48,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6534
 archive/issue_comments_053271.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6534-jacobi_sums_faster-without_6393.patch](tarball://root/attachments/some-uuid/ticket6534/trac_6534-jacobi_sums_faster-without_6393.patch) by davidloeffler created at 2009-07-14 20:28:14",
     "created_at": "2009-07-14T20:28:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6534",
     "type": "issue_comment",
@@ -57,7 +57,7 @@ archive/issue_comments_053271.json:
 }
 ```
 
-Attachment
+Attachment [trac_6534-jacobi_sums_faster-without_6393.patch](tarball://root/attachments/some-uuid/ticket6534/trac_6534-jacobi_sums_faster-without_6393.patch) by davidloeffler created at 2009-07-14 20:28:14
 
 
 
@@ -86,7 +86,7 @@ While I was at it, I couldn't resist doing some streamlining to dirichlet.py by 
 archive/issue_comments_053273.json:
 ```json
 {
-    "body": "Attachment\n\napply over exactly one of the above two patches",
+    "body": "Attachment [trac_6534_fix.patch](tarball://root/attachments/some-uuid/ticket6534/trac_6534_fix.patch) by davidloeffler created at 2009-07-14 20:56:59\n\napply over exactly one of the above two patches",
     "created_at": "2009-07-14T20:56:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6534",
     "type": "issue_comment",
@@ -95,7 +95,7 @@ archive/issue_comments_053273.json:
 }
 ```
 
-Attachment
+Attachment [trac_6534_fix.patch](tarball://root/attachments/some-uuid/ticket6534/trac_6534_fix.patch) by davidloeffler created at 2009-07-14 20:56:59
 
 apply over exactly one of the above two patches
 

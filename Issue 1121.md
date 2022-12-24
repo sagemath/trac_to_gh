@@ -77,7 +77,7 @@ that should be #1120 instead of #1119
 archive/issue_comments_006773.json:
 ```json
 {
-    "body": "Attachment\n\n8312 just corrects minor thing in documentation\n\nThe Documentation said the cardinality was not cached, but in fact the code does cache.",
+    "body": "Attachment [8312.patch](tarball://root/attachments/some-uuid/ticket1121/8312.patch) by gmoose05 created at 2008-02-08 01:23:53\n\n8312 just corrects minor thing in documentation\n\nThe Documentation said the cardinality was not cached, but in fact the code does cache.",
     "created_at": "2008-02-08T01:23:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1121",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_006773.json:
 }
 ```
 
-Attachment
+Attachment [8312.patch](tarball://root/attachments/some-uuid/ticket1121/8312.patch) by gmoose05 created at 2008-02-08 01:23:53
 
 8312 just corrects minor thing in documentation
 

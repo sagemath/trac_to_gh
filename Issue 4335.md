@@ -81,7 +81,7 @@ Thanks for pointing this out!  I guess we only ever tested with 'a'.  This will 
 archive/issue_comments_031787.json:
 ```json
 {
-    "body": "Attachment\n\nSorry, I couldn't wait until Thursday. :) I think William's comment is right -- I probably just never tested this with anything except `a`, since that's the letter I usually use. \n\nHowever, raising an error if no variable name is provided is, in fact, the intended behavior -- basically obeying the rule of \"explicit is better than implicit.\"",
+    "body": "Attachment [trac-4335.patch](tarball://root/attachments/some-uuid/ticket4335/trac-4335.patch) by craigcitro created at 2008-10-22 04:13:57\n\nSorry, I couldn't wait until Thursday. :) I think William's comment is right -- I probably just never tested this with anything except `a`, since that's the letter I usually use. \n\nHowever, raising an error if no variable name is provided is, in fact, the intended behavior -- basically obeying the rule of \"explicit is better than implicit.\"",
     "created_at": "2008-10-22T04:13:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4335",
     "type": "issue_comment",
@@ -90,7 +90,7 @@ archive/issue_comments_031787.json:
 }
 ```
 
-Attachment
+Attachment [trac-4335.patch](tarball://root/attachments/some-uuid/ticket4335/trac-4335.patch) by craigcitro created at 2008-10-22 04:13:57
 
 Sorry, I couldn't wait until Thursday. :) I think William's comment is right -- I probably just never tested this with anything except `a`, since that's the letter I usually use. 
 
@@ -230,7 +230,7 @@ Michael
 archive/issue_comments_031794.json:
 ```json
 {
-    "body": "Attachment\n\nI rebased the patch, and it *should* work -- I don't have a current alpha, but I was pretty sure it was my patch from another ticket that caused the merge troubles. Let me know if this one doesn't work.",
+    "body": "Attachment [trac-4335-rebase.patch](tarball://root/attachments/some-uuid/ticket4335/trac-4335-rebase.patch) by craigcitro created at 2008-10-26 04:53:40\n\nI rebased the patch, and it *should* work -- I don't have a current alpha, but I was pretty sure it was my patch from another ticket that caused the merge troubles. Let me know if this one doesn't work.",
     "created_at": "2008-10-26T04:53:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4335",
     "type": "issue_comment",
@@ -239,7 +239,7 @@ archive/issue_comments_031794.json:
 }
 ```
 
-Attachment
+Attachment [trac-4335-rebase.patch](tarball://root/attachments/some-uuid/ticket4335/trac-4335-rebase.patch) by craigcitro created at 2008-10-26 04:53:40
 
 I rebased the patch, and it *should* work -- I don't have a current alpha, but I was pretty sure it was my patch from another ticket that caused the merge troubles. Let me know if this one doesn't work.
 

@@ -46,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6939
 archive/issue_comments_057364.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-6939-notebook-css-overflow.patch](tarball://root/attachments/some-uuid/ticket6939/trac-6939-notebook-css-overflow.patch) by jason created at 2009-09-15 22:10:13",
     "created_at": "2009-09-15T22:10:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6939",
     "type": "issue_comment",
@@ -55,7 +55,7 @@ archive/issue_comments_057364.json:
 }
 ```
 
-Attachment
+Attachment [trac-6939-notebook-css-overflow.patch](tarball://root/attachments/some-uuid/ticket6939/trac-6939-notebook-css-overflow.patch) by jason created at 2009-09-15 22:10:13
 
 
 
@@ -278,7 +278,7 @@ Changing status from new to assigned.
 archive/issue_comments_057375.json:
 ```json
 {
-    "body": "Attachment\n\nRebased against #6865.  Apply only this patch.",
+    "body": "Attachment [trac-6939-notebook-css-overflow.2.patch](tarball://root/attachments/some-uuid/ticket6939/trac-6939-notebook-css-overflow.2.patch) by mpatel created at 2009-09-21 01:01:48\n\nRebased against #6865.  Apply only this patch.",
     "created_at": "2009-09-21T01:01:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6939",
     "type": "issue_comment",
@@ -287,7 +287,7 @@ archive/issue_comments_057375.json:
 }
 ```
 
-Attachment
+Attachment [trac-6939-notebook-css-overflow.2.patch](tarball://root/attachments/some-uuid/ticket6939/trac-6939-notebook-css-overflow.2.patch) by mpatel created at 2009-09-21 01:01:48
 
 Rebased against #6865.  Apply only this patch.
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4481
 archive/issue_comments_033110.json:
 ```json
 {
-    "body": "Attachment\n\nHi Nicolas,\n\nplease make sure to mark tickets with patches properly, i.e. prepend \"[with patch, needs review]\". That way the automated reports pick up this ticket.\n\nYou should also accept the ticket, so that the patch is properly credited to you in trac.\n\nCheers,\n\nMichael",
+    "body": "Attachment [cachefunc-fix-4481-nt.patch](tarball://root/attachments/some-uuid/ticket4481/cachefunc-fix-4481-nt.patch) by mabshoff created at 2008-11-09 16:22:44\n\nHi Nicolas,\n\nplease make sure to mark tickets with patches properly, i.e. prepend \"[with patch, needs review]\". That way the automated reports pick up this ticket.\n\nYou should also accept the ticket, so that the patch is properly credited to you in trac.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-09T16:22:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4481",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_033110.json:
 }
 ```
 
-Attachment
+Attachment [cachefunc-fix-4481-nt.patch](tarball://root/attachments/some-uuid/ticket4481/cachefunc-fix-4481-nt.patch) by mabshoff created at 2008-11-09 16:22:44
 
 Hi Nicolas,
 

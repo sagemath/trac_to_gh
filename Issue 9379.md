@@ -43,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9379
 archive/issue_comments_089139.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [tachyon-ia64-gcc.patch](tarball://root/attachments/some-uuid/ticket9379/tachyon-ia64-gcc.patch) by mariah created at 2010-06-29 19:19:35",
     "created_at": "2010-06-29T19:19:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9379",
     "type": "issue_comment",
@@ -52,7 +52,7 @@ archive/issue_comments_089139.json:
 }
 ```
 
-Attachment
+Attachment [tachyon-ia64-gcc.patch](tarball://root/attachments/some-uuid/ticket9379/tachyon-ia64-gcc.patch) by mariah created at 2010-06-29 19:19:35
 
 
 
@@ -456,7 +456,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_089158.json:
 ```json
 {
-    "body": "Attachment\n\nPatch to Make.arch that removed CC, AR, RANLIB overrides",
+    "body": "Attachment [Make-arch.patch](tarball://root/attachments/some-uuid/ticket9379/Make-arch.patch) by vbraun created at 2011-01-11 09:06:15\n\nPatch to Make.arch that removed CC, AR, RANLIB overrides",
     "created_at": "2011-01-11T09:06:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9379",
     "type": "issue_comment",
@@ -465,7 +465,7 @@ archive/issue_comments_089158.json:
 }
 ```
 
-Attachment
+Attachment [Make-arch.patch](tarball://root/attachments/some-uuid/ticket9379/Make-arch.patch) by vbraun created at 2011-01-11 09:06:15
 
 Patch to Make.arch that removed CC, AR, RANLIB overrides
 

@@ -38,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7432
 archive/issue_comments_062530.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [hecke_module_doc_improve-fh.patch](tarball://root/attachments/some-uuid/ticket7432/hecke_module_doc_improve-fh.patch) by hivert created at 2009-11-11 21:41:22",
     "created_at": "2009-11-11T21:41:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7432",
     "type": "issue_comment",
@@ -47,7 +47,7 @@ archive/issue_comments_062530.json:
 }
 ```
 
-Attachment
+Attachment [hecke_module_doc_improve-fh.patch](tarball://root/attachments/some-uuid/ticket7432/hecke_module_doc_improve-fh.patch) by hivert created at 2009-11-11 21:41:22
 
 
 

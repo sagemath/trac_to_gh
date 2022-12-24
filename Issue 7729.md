@@ -242,7 +242,7 @@ sage.categories.pushout (import PolynomialRing when needed).
 archive/issue_comments_066413.json:
 ```json
 {
-    "body": "Attachment\n\nIwahori Hecke algebra patch, including revisions from",
+    "body": "Attachment [iwahori.patch](tarball://root/attachments/some-uuid/ticket7729/iwahori.patch) by bump created at 2010-01-06 04:48:14\n\nIwahori Hecke algebra patch, including revisions from",
     "created_at": "2010-01-06T04:48:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7729",
     "type": "issue_comment",
@@ -251,7 +251,7 @@ archive/issue_comments_066413.json:
 }
 ```
 
-Attachment
+Attachment [iwahori.patch](tarball://root/attachments/some-uuid/ticket7729/iwahori.patch) by bump created at 2010-01-06 04:48:14
 
 Iwahori Hecke algebra patch, including revisions from
 
@@ -305,7 +305,7 @@ IwahoriHeckeAlgebraT now takes a Coxeter group + moved method to ModulesWithBasi
 archive/issue_comments_066416.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7729_iwahori-hecke-algebra.patch](tarball://root/attachments/some-uuid/ticket7729/trac_7729_iwahori-hecke-algebra.patch) by nthiery created at 2010-01-06 15:48:47",
     "created_at": "2010-01-06T15:48:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7729",
     "type": "issue_comment",
@@ -314,7 +314,7 @@ archive/issue_comments_066416.json:
 }
 ```
 
-Attachment
+Attachment [trac_7729_iwahori-hecke-algebra.patch](tarball://root/attachments/some-uuid/ticket7729/trac_7729_iwahori-hecke-algebra.patch) by nthiery created at 2010-01-06 15:48:47
 
 
 
@@ -323,7 +323,7 @@ Attachment
 archive/issue_comments_066417.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7729_iwahori-hecke-algebra.2.patch](tarball://root/attachments/some-uuid/ticket7729/trac_7729_iwahori-hecke-algebra.2.patch) by bump created at 2010-01-06 18:14:18",
     "created_at": "2010-01-06T18:14:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7729",
     "type": "issue_comment",
@@ -332,7 +332,7 @@ archive/issue_comments_066417.json:
 }
 ```
 
-Attachment
+Attachment [trac_7729_iwahori-hecke-algebra.2.patch](tarball://root/attachments/some-uuid/ticket7729/trac_7729_iwahori-hecke-algebra.2.patch) by bump created at 2010-01-06 18:14:18
 
 
 
@@ -385,7 +385,7 @@ Dan
 archive/issue_comments_066420.json:
 ```json
 {
-    "body": "Attachment\n\nImplements Iwahori Hecke algebras",
+    "body": "Attachment [trac_7729_iwahori-hecke-algebra.3.patch](tarball://root/attachments/some-uuid/ticket7729/trac_7729_iwahori-hecke-algebra.3.patch) by bump created at 2010-01-07 14:05:05\n\nImplements Iwahori Hecke algebras",
     "created_at": "2010-01-07T14:05:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7729",
     "type": "issue_comment",
@@ -394,7 +394,7 @@ archive/issue_comments_066420.json:
 }
 ```
 
-Attachment
+Attachment [trac_7729_iwahori-hecke-algebra.3.patch](tarball://root/attachments/some-uuid/ticket7729/trac_7729_iwahori-hecke-algebra.3.patch) by bump created at 2010-01-07 14:05:05
 
 Implements Iwahori Hecke algebras
 

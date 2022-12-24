@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6901
 archive/issue_comments_057010.json:
 ```json
 {
-    "body": "Attachment\n\nfix warnings when building reference manual",
+    "body": "Attachment [trac_6901-fix-warnings.patch](tarball://root/attachments/some-uuid/ticket6901/trac_6901-fix-warnings.patch) by mvngu created at 2009-09-08 03:16:34\n\nfix warnings when building reference manual",
     "created_at": "2009-09-08T03:16:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6901",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_057010.json:
 }
 ```
 
-Attachment
+Attachment [trac_6901-fix-warnings.patch](tarball://root/attachments/some-uuid/ticket6901/trac_6901-fix-warnings.patch) by mvngu created at 2009-09-08 03:16:34
 
 fix warnings when building reference manual
 

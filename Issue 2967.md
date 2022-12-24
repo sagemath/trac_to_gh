@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2967
 archive/issue_comments_020454.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [lcalc-debian-cleanup.patch](tarball://root/attachments/some-uuid/ticket2967/lcalc-debian-cleanup.patch) by tabbott created at 2008-04-20 04:06:58",
     "created_at": "2008-04-20T04:06:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2967",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_020454.json:
 }
 ```
 
-Attachment
+Attachment [lcalc-debian-cleanup.patch](tarball://root/attachments/some-uuid/ticket2967/lcalc-debian-cleanup.patch) by tabbott created at 2008-04-20 04:06:58
 
 
 

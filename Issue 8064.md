@@ -58,7 +58,7 @@ Changing status from new to needs_review.
 archive/issue_comments_070678.json:
 ```json
 {
-    "body": "Attachment\n\nThere's not a lot of point writing in 'SPKG.txt' that 'updating SPKG.txt'! \n\nBut I can see you have removed  Michael Abshoff as as maintainer, which is the correct thing to do. Ideally you would have wrote 'Removing Michael Abshoff as a maintainer as agree on ticket #7738\n\nIt would also be desirable if you created a ticket for the defect before fixing it. Then in SPKG.txt you can put the ticket number you are fixing. \n\nBut these are very minor points, to bear in mind for the future",
+    "body": "Attachment [iml-1.0.1.p12.patch](tarball://root/attachments/some-uuid/ticket8064/iml-1.0.1.p12.patch) by drkirkby created at 2010-01-27 13:26:18\n\nThere's not a lot of point writing in 'SPKG.txt' that 'updating SPKG.txt'! \n\nBut I can see you have removed  Michael Abshoff as as maintainer, which is the correct thing to do. Ideally you would have wrote 'Removing Michael Abshoff as a maintainer as agree on ticket #7738\n\nIt would also be desirable if you created a ticket for the defect before fixing it. Then in SPKG.txt you can put the ticket number you are fixing. \n\nBut these are very minor points, to bear in mind for the future",
     "created_at": "2010-01-27T13:26:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8064",
     "type": "issue_comment",
@@ -67,7 +67,7 @@ archive/issue_comments_070678.json:
 }
 ```
 
-Attachment
+Attachment [iml-1.0.1.p12.patch](tarball://root/attachments/some-uuid/ticket8064/iml-1.0.1.p12.patch) by drkirkby created at 2010-01-27 13:26:18
 
 There's not a lot of point writing in 'SPKG.txt' that 'updating SPKG.txt'! 
 

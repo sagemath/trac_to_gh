@@ -119,7 +119,7 @@ William : could you use it for the table, before it goes in ? so that I am sure 
 archive/issue_comments_051973.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6455.patch](tarball://root/attachments/some-uuid/ticket6455/trac_6455.patch) by wuthrich created at 2009-07-21 21:37:33",
     "created_at": "2009-07-21T21:37:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6455",
     "type": "issue_comment",
@@ -128,7 +128,7 @@ archive/issue_comments_051973.json:
 }
 ```
 
-Attachment
+Attachment [trac_6455.patch](tarball://root/attachments/some-uuid/ticket6455/trac_6455.patch) by wuthrich created at 2009-07-21 21:37:33
 
 
 

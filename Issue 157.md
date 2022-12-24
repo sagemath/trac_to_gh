@@ -119,7 +119,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/157
 archive/issue_comments_000706.json:
 ```json
 {
-    "body": "Attachment\n\nLower bound on 64-bit integer_mod and (now working) example in doctest",
+    "body": "Attachment [modint64-bound.diff](tarball://root/attachments/some-uuid/ticket157/modint64-bound.diff) by robertwb created at 2006-10-27 20:52:18\n\nLower bound on 64-bit integer_mod and (now working) example in doctest",
     "created_at": "2006-10-27T20:52:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/157",
     "type": "issue_comment",
@@ -128,7 +128,7 @@ archive/issue_comments_000706.json:
 }
 ```
 
-Attachment
+Attachment [modint64-bound.diff](tarball://root/attachments/some-uuid/ticket157/modint64-bound.diff) by robertwb created at 2006-10-27 20:52:18
 
 Lower bound on 64-bit integer_mod and (now working) example in doctest
 

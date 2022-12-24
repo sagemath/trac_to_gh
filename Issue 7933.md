@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7933
 archive/issue_comments_069129.json:
 ```json
 {
-    "body": "Attachment\n\nREADME.txt with updated copyright years; based on Sage 4.3.1.alpha2",
+    "body": "Attachment [README.txt](tarball://root/attachments/some-uuid/ticket7933/README.txt) by mvngu created at 2010-01-15 10:57:21\n\nREADME.txt with updated copyright years; based on Sage 4.3.1.alpha2",
     "created_at": "2010-01-15T10:57:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7933",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_069129.json:
 }
 ```
 
-Attachment
+Attachment [README.txt](tarball://root/attachments/some-uuid/ticket7933/README.txt) by mvngu created at 2010-01-15 10:57:21
 
 README.txt with updated copyright years; based on Sage 4.3.1.alpha2
 
@@ -69,7 +69,7 @@ differences between the above updated README.txt and the current one in Sage 4.3
 archive/issue_comments_069131.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [README.patch](tarball://root/attachments/some-uuid/ticket7933/README.patch) by mvngu created at 2010-01-15 11:01:07",
     "created_at": "2010-01-15T11:01:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7933",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_069131.json:
 }
 ```
 
-Attachment
+Attachment [README.patch](tarball://root/attachments/some-uuid/ticket7933/README.patch) by mvngu created at 2010-01-15 11:01:07
 
 
 
@@ -87,7 +87,7 @@ Attachment
 archive/issue_comments_069132.json:
 ```json
 {
-    "body": "Attachment\n\nupdated copyright years for the Mac app",
+    "body": "Attachment [trac_7933-mac-app.patch](tarball://root/attachments/some-uuid/ticket7933/trac_7933-mac-app.patch) by mvngu created at 2010-01-15 11:03:22\n\nupdated copyright years for the Mac app",
     "created_at": "2010-01-15T11:03:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7933",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_069132.json:
 }
 ```
 
-Attachment
+Attachment [trac_7933-mac-app.patch](tarball://root/attachments/some-uuid/ticket7933/trac_7933-mac-app.patch) by mvngu created at 2010-01-15 11:03:22
 
 updated copyright years for the Mac app
 
@@ -107,7 +107,7 @@ updated copyright years for the Mac app
 archive/issue_comments_069133.json:
 ```json
 {
-    "body": "Attachment\n\napply to sage-main; based on Sage 4.3.1.alpha2",
+    "body": "Attachment [trac_7933-doc-builder.patch](tarball://root/attachments/some-uuid/ticket7933/trac_7933-doc-builder.patch) by mvngu created at 2010-01-16 07:41:00\n\napply to sage-main; based on Sage 4.3.1.alpha2",
     "created_at": "2010-01-16T07:41:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7933",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_069133.json:
 }
 ```
 
-Attachment
+Attachment [trac_7933-doc-builder.patch](tarball://root/attachments/some-uuid/ticket7933/trac_7933-doc-builder.patch) by mvngu created at 2010-01-16 07:41:00
 
 apply to sage-main; based on Sage 4.3.1.alpha2
 

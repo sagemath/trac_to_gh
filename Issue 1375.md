@@ -92,7 +92,7 @@ Changing assignee from was to cwitty.
 archive/issue_comments_008828.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.",
+    "body": "Attachment [trac1375.patch](tarball://root/attachments/some-uuid/ticket1375/trac1375.patch) by cwitty created at 2007-12-02 20:41:23\n\nLooks good to me.",
     "created_at": "2007-12-02T20:41:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1375",
     "type": "issue_comment",
@@ -101,7 +101,7 @@ archive/issue_comments_008828.json:
 }
 ```
 
-Attachment
+Attachment [trac1375.patch](tarball://root/attachments/some-uuid/ticket1375/trac1375.patch) by cwitty created at 2007-12-02 20:41:23
 
 Looks good to me.
 

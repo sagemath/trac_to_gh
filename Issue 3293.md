@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3293
 archive/issue_comments_022778.json:
 ```json
 {
-    "body": "Attachment\n\nfix for MPolynomialRing_generic.random_element",
+    "body": "Attachment [mpolynomialring_random_element_d0_fix.patch](tarball://root/attachments/some-uuid/ticket3293/mpolynomialring_random_element_d0_fix.patch) by burcin created at 2008-05-24 18:00:50\n\nfix for MPolynomialRing_generic.random_element",
     "created_at": "2008-05-24T18:00:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3293",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_022778.json:
 }
 ```
 
-Attachment
+Attachment [mpolynomialring_random_element_d0_fix.patch](tarball://root/attachments/some-uuid/ticket3293/mpolynomialring_random_element_d0_fix.patch) by burcin created at 2008-05-24 18:00:50
 
 fix for MPolynomialRing_generic.random_element
 

@@ -114,7 +114,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_058102.json:
 ```json
 {
-    "body": "Attachment\n\nThis looks good, works as advertised, and passes all doctests. Positive review.",
+    "body": "Attachment [trac_7018-search.patch](tarball://root/attachments/some-uuid/ticket7018/trac_7018-search.patch) by ddrake created at 2010-01-21 00:09:45\n\nThis looks good, works as advertised, and passes all doctests. Positive review.",
     "created_at": "2010-01-21T00:09:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7018",
     "type": "issue_comment",
@@ -123,7 +123,7 @@ archive/issue_comments_058102.json:
 }
 ```
 
-Attachment
+Attachment [trac_7018-search.patch](tarball://root/attachments/some-uuid/ticket7018/trac_7018-search.patch) by ddrake created at 2010-01-21 00:09:45
 
 This looks good, works as advertised, and passes all doctests. Positive review.
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5053
 archive/issue_comments_038499.json:
 ```json
 {
-    "body": "Attachment\n\nFor being consistent, replace '-' with '_'. This yields a proper cleaning of temp-files",
+    "body": "Attachment [cleaner.patch](tarball://root/attachments/some-uuid/ticket5053/cleaner.patch) by SimonKing created at 2009-01-24 21:02:45\n\nFor being consistent, replace '-' with '_'. This yields a proper cleaning of temp-files",
     "created_at": "2009-01-24T21:02:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5053",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_038499.json:
 }
 ```
 
-Attachment
+Attachment [cleaner.patch](tarball://root/attachments/some-uuid/ticket5053/cleaner.patch) by SimonKing created at 2009-01-24 21:02:45
 
 For being consistent, replace '-' with '_'. This yields a proper cleaning of temp-files
 
@@ -97,7 +97,7 @@ To be applied after the first patch: Allow hostnames containing '/' and '\'
 archive/issue_comments_038502.json:
 ```json
 {
-    "body": "Attachment\n\nTo be applied after the first patch. Allows hostnames that contain '/' or '\\'",
+    "body": "Attachment [hostnameSCRIPTS.patch](tarball://root/attachments/some-uuid/ticket5053/hostnameSCRIPTS.patch) by SimonKing created at 2009-01-25 08:00:14\n\nTo be applied after the first patch. Allows hostnames that contain '/' or '\\'",
     "created_at": "2009-01-25T08:00:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5053",
     "type": "issue_comment",
@@ -106,7 +106,7 @@ archive/issue_comments_038502.json:
 }
 ```
 
-Attachment
+Attachment [hostnameSCRIPTS.patch](tarball://root/attachments/some-uuid/ticket5053/hostnameSCRIPTS.patch) by SimonKing created at 2009-01-25 08:00:14
 
 To be applied after the first patch. Allows hostnames that contain '/' or '\'
 

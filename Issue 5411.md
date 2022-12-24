@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5411
 archive/issue_comments_041833.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [patch.5411.clifford_invariant](tarball://root/attachments/some-uuid/ticket5411/patch.5411.clifford_invariant) by tornaria created at 2009-03-01 15:33:47",
     "created_at": "2009-03-01T15:33:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5411",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_041833.json:
 }
 ```
 
-Attachment
+Attachment [patch.5411.clifford_invariant](tarball://root/attachments/some-uuid/ticket5411/patch.5411.clifford_invariant) by tornaria created at 2009-03-01 15:33:47
 
 
 
@@ -73,7 +73,7 @@ same file with correct name
 archive/issue_comments_041835.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5411.clifford_invariant.patch](tarball://root/attachments/some-uuid/ticket5411/trac_5411.clifford_invariant.patch) by tornaria created at 2009-03-01 16:04:31",
     "created_at": "2009-03-01T16:04:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5411",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_041835.json:
 }
 ```
 
-Attachment
+Attachment [trac_5411.clifford_invariant.patch](tarball://root/attachments/some-uuid/ticket5411/trac_5411.clifford_invariant.patch) by tornaria created at 2009-03-01 16:04:31
 
 
 
@@ -189,7 +189,7 @@ replaces previous patch --- this one doesn't remove hasse_conductor
 archive/issue_comments_041841.json:
 ```json
 {
-    "body": "Attachment\n\nThe new patch (2nd patch) preserves `hasse_conductor` as requested by Jon, and it also fixes the imports in `quadratic_form.py`, so it is meant to be applied on top of #5403.",
+    "body": "Attachment [trac_5411.clifford_invariant.2nd.patch](tarball://root/attachments/some-uuid/ticket5411/trac_5411.clifford_invariant.2nd.patch) by tornaria created at 2009-03-02 04:24:33\n\nThe new patch (2nd patch) preserves `hasse_conductor` as requested by Jon, and it also fixes the imports in `quadratic_form.py`, so it is meant to be applied on top of #5403.",
     "created_at": "2009-03-02T04:24:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5411",
     "type": "issue_comment",
@@ -198,7 +198,7 @@ archive/issue_comments_041841.json:
 }
 ```
 
-Attachment
+Attachment [trac_5411.clifford_invariant.2nd.patch](tarball://root/attachments/some-uuid/ticket5411/trac_5411.clifford_invariant.2nd.patch) by tornaria created at 2009-03-02 04:24:33
 
 The new patch (2nd patch) preserves `hasse_conductor` as requested by Jon, and it also fixes the imports in `quadratic_form.py`, so it is meant to be applied on top of #5403.
 

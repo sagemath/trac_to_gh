@@ -98,7 +98,7 @@ Requires the #5499 patch.
 archive/issue_comments_034878.json:
 ```json
 {
-    "body": "Attachment\n\nI know there are still problems.  But all doctests currently pass, I don't know of remaining bugs, and I wanted to keep this manageable (rather than continuing the tradition of patch-bombs).  I'm going to keep working on adding more documentation.",
+    "body": "Attachment [trac_4637.patch](tarball://root/attachments/some-uuid/ticket4637/trac_4637.patch) by roed created at 2009-03-18 06:17:07\n\nI know there are still problems.  But all doctests currently pass, I don't know of remaining bugs, and I wanted to keep this manageable (rather than continuing the tradition of patch-bombs).  I'm going to keep working on adding more documentation.",
     "created_at": "2009-03-18T06:17:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4637",
     "type": "issue_comment",
@@ -107,7 +107,7 @@ archive/issue_comments_034878.json:
 }
 ```
 
-Attachment
+Attachment [trac_4637.patch](tarball://root/attachments/some-uuid/ticket4637/trac_4637.patch) by roed created at 2009-03-18 06:17:07
 
 I know there are still problems.  But all doctests currently pass, I don't know of remaining bugs, and I wanted to keep this manageable (rather than continuing the tradition of patch-bombs).  I'm going to keep working on adding more documentation.
 

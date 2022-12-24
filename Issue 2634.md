@@ -50,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2634
 archive/issue_comments_018094.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch implements the easy fix and worksforme. However, my installation is FUBAR right now so a referee would have to run `make test` but there should be no surprises. Sorry for the mess.",
+    "body": "Attachment [trac_2634.patch](tarball://root/attachments/some-uuid/ticket2634/trac_2634.patch) by malb created at 2008-03-22 14:18:25\n\nThe attached patch implements the easy fix and worksforme. However, my installation is FUBAR right now so a referee would have to run `make test` but there should be no surprises. Sorry for the mess.",
     "created_at": "2008-03-22T14:18:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2634",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_018094.json:
 }
 ```
 
-Attachment
+Attachment [trac_2634.patch](tarball://root/attachments/some-uuid/ticket2634/trac_2634.patch) by malb created at 2008-03-22 14:18:25
 
 The attached patch implements the easy fix and worksforme. However, my installation is FUBAR right now so a referee would have to run `make test` but there should be no surprises. Sorry for the mess.
 
@@ -173,7 +173,7 @@ fixes the typo reported by Alex.
 archive/issue_comments_018098.json:
 ```json
 {
-    "body": "Attachment\n\nallow 0 gens for multivariate polynomial rings (debatable!)",
+    "body": "Attachment [2634_0gens.patch](tarball://root/attachments/some-uuid/ticket2634/2634_0gens.patch) by malb created at 2008-03-24 00:16:21\n\nallow 0 gens for multivariate polynomial rings (debatable!)",
     "created_at": "2008-03-24T00:16:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2634",
     "type": "issue_comment",
@@ -182,7 +182,7 @@ archive/issue_comments_018098.json:
 }
 ```
 
-Attachment
+Attachment [2634_0gens.patch](tarball://root/attachments/some-uuid/ticket2634/2634_0gens.patch) by malb created at 2008-03-24 00:16:21
 
 allow 0 gens for multivariate polynomial rings (debatable!)
 

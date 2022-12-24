@@ -396,7 +396,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_089314.json:
 ```json
 {
-    "body": "Attachment\n\n*Unsetting* `PATH`? Then nothing will work...",
+    "body": "Attachment [sage_restore.sh](tarball://root/attachments/some-uuid/ticket9386/sage_restore.sh) by jdemeyer created at 2015-02-09 07:36:28\n\n*Unsetting* `PATH`? Then nothing will work...",
     "created_at": "2015-02-09T07:36:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9386",
     "type": "issue_comment",
@@ -405,7 +405,7 @@ archive/issue_comments_089314.json:
 }
 ```
 
-Attachment
+Attachment [sage_restore.sh](tarball://root/attachments/some-uuid/ticket9386/sage_restore.sh) by jdemeyer created at 2015-02-09 07:36:28
 
 *Unsetting* `PATH`? Then nothing will work...
 

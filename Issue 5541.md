@@ -51,7 +51,7 @@ Make quaternion_algebra.py more prettier
 archive/issue_comments_043105.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch **trac_5541-docstring-fixes.patch** fixes some more docstring formatting problems in `sage/algebras/quaternion_algebra.py`. It also resolves this indentation warning:\n\n```\nWARNING: <autodoc>:0: (ERROR/3) Unexpected indentation.\n```\n\nwhich I received after applying the patch for ticket #5531 and building the reference manual.",
+    "body": "Attachment [trac_5541-docstring-fixes.patch](tarball://root/attachments/some-uuid/ticket5541/trac_5541-docstring-fixes.patch) by mvngu created at 2009-03-17 04:46:39\n\nThe patch **trac_5541-docstring-fixes.patch** fixes some more docstring formatting problems in `sage/algebras/quaternion_algebra.py`. It also resolves this indentation warning:\n\n```\nWARNING: <autodoc>:0: (ERROR/3) Unexpected indentation.\n```\n\nwhich I received after applying the patch for ticket #5531 and building the reference manual.",
     "created_at": "2009-03-17T04:46:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5541",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_043105.json:
 }
 ```
 
-Attachment
+Attachment [trac_5541-docstring-fixes.patch](tarball://root/attachments/some-uuid/ticket5541/trac_5541-docstring-fixes.patch) by mvngu created at 2009-03-17 04:46:39
 
 The patch **trac_5541-docstring-fixes.patch** fixes some more docstring formatting problems in `sage/algebras/quaternion_algebra.py`. It also resolves this indentation warning:
 
@@ -115,7 +115,7 @@ Looks good to me except for two very minor issues, which are taken care of in th
 archive/issue_comments_043108.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5541-referee.patch](tarball://root/attachments/some-uuid/ticket5541/5541-referee.patch) by jhpalmieri created at 2009-03-29 16:27:32",
     "created_at": "2009-03-29T16:27:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5541",
     "type": "issue_comment",
@@ -124,7 +124,7 @@ archive/issue_comments_043108.json:
 }
 ```
 
-Attachment
+Attachment [5541-referee.patch](tarball://root/attachments/some-uuid/ticket5541/5541-referee.patch) by jhpalmieri created at 2009-03-29 16:27:32
 
 
 
@@ -254,7 +254,7 @@ Here's a rebased version, plus more.  This includes all of mvngu's work, so he s
 archive/issue_comments_043113.json:
 ```json
 {
-    "body": "Attachment\n\n(this replaces both of the earlier patches)",
+    "body": "Attachment [5541-rebased.patch](tarball://root/attachments/some-uuid/ticket5541/5541-rebased.patch) by jhpalmieri created at 2009-04-01 02:55:19\n\n(this replaces both of the earlier patches)",
     "created_at": "2009-04-01T02:55:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5541",
     "type": "issue_comment",
@@ -263,7 +263,7 @@ archive/issue_comments_043113.json:
 }
 ```
 
-Attachment
+Attachment [5541-rebased.patch](tarball://root/attachments/some-uuid/ticket5541/5541-rebased.patch) by jhpalmieri created at 2009-04-01 02:55:19
 
 (this replaces both of the earlier patches)
 
@@ -398,7 +398,7 @@ doesn't show up in the [HTML version](http://sage.math.washington.edu/home/mvngu
 archive/issue_comments_043117.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of 5541-rebased.patch",
+    "body": "Attachment [5541-second.patch](tarball://root/attachments/some-uuid/ticket5541/5541-second.patch) by jhpalmieri created at 2009-04-17 03:23:56\n\napply on top of 5541-rebased.patch",
     "created_at": "2009-04-17T03:23:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5541",
     "type": "issue_comment",
@@ -407,7 +407,7 @@ archive/issue_comments_043117.json:
 }
 ```
 
-Attachment
+Attachment [5541-second.patch](tarball://root/attachments/some-uuid/ticket5541/5541-second.patch) by jhpalmieri created at 2009-04-17 03:23:56
 
 apply on top of 5541-rebased.patch
 

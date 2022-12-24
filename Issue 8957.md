@@ -69,7 +69,7 @@ Changing status from new to needs_review.
 archive/issue_comments_082568.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8957-matrix_group_word_problem.patch](tarball://root/attachments/some-uuid/ticket8957/trac_8957-matrix_group_word_problem.patch) by davidloeffler created at 2010-05-15 18:54:27",
     "created_at": "2010-05-15T18:54:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8957",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_082568.json:
 }
 ```
 
-Attachment
+Attachment [trac_8957-matrix_group_word_problem.patch](tarball://root/attachments/some-uuid/ticket8957/trac_8957-matrix_group_word_problem.patch) by davidloeffler created at 2010-05-15 18:54:27
 
 
 

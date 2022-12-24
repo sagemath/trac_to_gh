@@ -93,7 +93,7 @@ Add random_element to BooleanPolynomialRing
 archive/issue_comments_014082.json:
 ```json
 {
-    "body": "Attachment\n\nattachment:2146-BooelanPolynomial_random_element.patch adds a `random_element` method to `BooleanPolynomialRing`.\n\nThe doctests for errors work only after applying the patch for `sage-doctest` at ticket:2193.",
+    "body": "Attachment [2146-BooelanPolynomial_random_element.patch](tarball://root/attachments/some-uuid/ticket2146/2146-BooelanPolynomial_random_element.patch) by burcin created at 2008-02-17 16:40:48\n\nattachment:2146-BooelanPolynomial_random_element.patch adds a `random_element` method to `BooleanPolynomialRing`.\n\nThe doctests for errors work only after applying the patch for `sage-doctest` at ticket:2193.",
     "created_at": "2008-02-17T16:40:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2146",
     "type": "issue_comment",
@@ -102,7 +102,7 @@ archive/issue_comments_014082.json:
 }
 ```
 
-Attachment
+Attachment [2146-BooelanPolynomial_random_element.patch](tarball://root/attachments/some-uuid/ticket2146/2146-BooelanPolynomial_random_element.patch) by burcin created at 2008-02-17 16:40:48
 
 attachment:2146-BooelanPolynomial_random_element.patch adds a `random_element` method to `BooleanPolynomialRing`.
 

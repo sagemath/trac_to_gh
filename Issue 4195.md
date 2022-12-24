@@ -43,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4195
 archive/issue_comments_030450.json:
 ```json
 {
-    "body": "Attachment\n\nI'm CCing wdj as he wrote the original plotting code.",
+    "body": "Attachment [mpolynomial_ideal_plot.patch](tarball://root/attachments/some-uuid/ticket4195/mpolynomial_ideal_plot.patch) by malb created at 2008-09-25 12:09:51\n\nI'm CCing wdj as he wrote the original plotting code.",
     "created_at": "2008-09-25T12:09:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4195",
     "type": "issue_comment",
@@ -52,7 +52,7 @@ archive/issue_comments_030450.json:
 }
 ```
 
-Attachment
+Attachment [mpolynomial_ideal_plot.patch](tarball://root/attachments/some-uuid/ticket4195/mpolynomial_ideal_plot.patch) by malb created at 2008-09-25 12:09:51
 
 I'm CCing wdj as he wrote the original plotting code.
 

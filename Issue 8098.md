@@ -220,7 +220,7 @@ Changing status from new to needs_review.
 archive/issue_comments_071054.json:
 ```json
 {
-    "body": "Attachment\n\nSorry for the delay.",
+    "body": "Attachment [trac_8098.patch](tarball://root/attachments/some-uuid/ticket8098/trac_8098.patch) by malb created at 2010-02-09 18:50:54\n\nSorry for the delay.",
     "created_at": "2010-02-09T18:50:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8098",
     "type": "issue_comment",
@@ -229,7 +229,7 @@ archive/issue_comments_071054.json:
 }
 ```
 
-Attachment
+Attachment [trac_8098.patch](tarball://root/attachments/some-uuid/ticket8098/trac_8098.patch) by malb created at 2010-02-09 18:50:54
 
 Sorry for the delay.
 

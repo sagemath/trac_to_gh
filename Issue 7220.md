@@ -49,7 +49,7 @@ Changing keywords from "" to "spanish".
 archive/issue_comments_059891.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [birds_other.rst](tarball://root/attachments/some-uuid/ticket7220/birds_other.rst) by kcrisman created at 2014-11-13 17:11:37",
     "created_at": "2014-11-13T17:11:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7220",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_059891.json:
 }
 ```
 
-Attachment
+Attachment [birds_other.rst](tarball://root/attachments/some-uuid/ticket7220/birds_other.rst) by kcrisman created at 2014-11-13 17:11:37
 
 
 

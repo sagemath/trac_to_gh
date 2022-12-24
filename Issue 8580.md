@@ -127,7 +127,7 @@ Changing assignee from was to malb.
 archive/issue_comments_077714.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [vector_mod2_dense_zero.patch](tarball://root/attachments/some-uuid/ticket8580/vector_mod2_dense_zero.patch) by malb created at 2010-03-22 23:10:42",
     "created_at": "2010-03-22T23:10:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8580",
     "type": "issue_comment",
@@ -136,7 +136,7 @@ archive/issue_comments_077714.json:
 }
 ```
 
-Attachment
+Attachment [vector_mod2_dense_zero.patch](tarball://root/attachments/some-uuid/ticket8580/vector_mod2_dense_zero.patch) by malb created at 2010-03-22 23:10:42
 
 
 

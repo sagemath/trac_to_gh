@@ -67,7 +67,7 @@ Changing status from new to assigned.
 archive/issue_comments_002620.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [mw-indentation.patch](tarball://root/attachments/some-uuid/ticket518/mw-indentation.patch) by dmharvey created at 2007-08-30 12:11:25",
     "created_at": "2007-08-30T12:11:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/518",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_002620.json:
 }
 ```
 
-Attachment
+Attachment [mw-indentation.patch](tarball://root/attachments/some-uuid/ticket518/mw-indentation.patch) by dmharvey created at 2007-08-30 12:11:25
 
 
 
@@ -179,7 +179,7 @@ Resolution: fixed
 archive/issue_comments_002625.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [mw-indentation2.hg](tarball://root/attachments/some-uuid/ticket518/mw-indentation2.hg) by was created at 2007-09-07 04:31:08",
     "created_at": "2007-09-07T04:31:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/518",
     "type": "issue_comment",
@@ -188,4 +188,4 @@ archive/issue_comments_002625.json:
 }
 ```
 
-Attachment
+Attachment [mw-indentation2.hg](tarball://root/attachments/some-uuid/ticket518/mw-indentation2.hg) by was created at 2007-09-07 04:31:08

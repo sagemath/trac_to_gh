@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7622
 archive/issue_comments_065129.json:
 ```json
 {
-    "body": "Attachment\n\nBased on 4.3.alpha1",
+    "body": "Attachment [trac_7622.patch](tarball://root/attachments/some-uuid/ticket7622/trac_7622.patch) by kcrisman created at 2009-12-14 16:57:39\n\nBased on 4.3.alpha1",
     "created_at": "2009-12-14T16:57:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7622",
     "type": "issue_comment",
@@ -53,7 +53,7 @@ archive/issue_comments_065129.json:
 }
 ```
 
-Attachment
+Attachment [trac_7622.patch](tarball://root/attachments/some-uuid/ticket7622/trac_7622.patch) by kcrisman created at 2009-12-14 16:57:39
 
 Based on 4.3.alpha1
 
@@ -100,7 +100,7 @@ I hope this will be good; I have put 2005- rather than 2005-2009 or whatever so 
 archive/issue_comments_065132.json:
 ```json
 {
-    "body": "Attachment\n\nreviewer patch",
+    "body": "Attachment [trac_7622-reviewer.patch](tarball://root/attachments/some-uuid/ticket7622/trac_7622-reviewer.patch) by mvngu created at 2009-12-15 00:29:53\n\nreviewer patch",
     "created_at": "2009-12-15T00:29:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7622",
     "type": "issue_comment",
@@ -109,7 +109,7 @@ archive/issue_comments_065132.json:
 }
 ```
 
-Attachment
+Attachment [trac_7622-reviewer.patch](tarball://root/attachments/some-uuid/ticket7622/trac_7622-reviewer.patch) by mvngu created at 2009-12-15 00:29:53
 
 reviewer patch
 

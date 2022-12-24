@@ -38,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9396
 archive/issue_comments_089472.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [r.20100630.ICU.patch](tarball://root/attachments/some-uuid/ticket9396/r.20100630.ICU.patch) by mariah created at 2010-06-30 17:53:51",
     "created_at": "2010-06-30T17:53:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9396",
     "type": "issue_comment",
@@ -47,7 +47,7 @@ archive/issue_comments_089472.json:
 }
 ```
 
-Attachment
+Attachment [r.20100630.ICU.patch](tarball://root/attachments/some-uuid/ticket9396/r.20100630.ICU.patch) by mariah created at 2010-06-30 17:53:51
 
 
 
@@ -311,7 +311,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_089483.json:
 ```json
 {
-    "body": "Attachment\n\nspkg updated",
+    "body": "Attachment [trac_9396-spkg_txt_edit.patch](tarball://root/attachments/some-uuid/ticket9396/trac_9396-spkg_txt_edit.patch) by rlm created at 2010-07-09 12:10:05\n\nspkg updated",
     "created_at": "2010-07-09T12:10:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9396",
     "type": "issue_comment",
@@ -320,7 +320,7 @@ archive/issue_comments_089483.json:
 }
 ```
 
-Attachment
+Attachment [trac_9396-spkg_txt_edit.patch](tarball://root/attachments/some-uuid/ticket9396/trac_9396-spkg_txt_edit.patch) by rlm created at 2010-07-09 12:10:05
 
 spkg updated
 
@@ -533,7 +533,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_089491.json:
 ```json
 {
-    "body": "Attachment\n\nI'm setting this to positive review, since it builds on Solaris and off.\n\nI'm also removing myself from the author block, since I did virtually nothing.",
+    "body": "Attachment [9396-syntax-error-correction.patch](tarball://root/attachments/some-uuid/ticket9396/9396-syntax-error-correction.patch) by rlm created at 2010-07-18 10:37:50\n\nI'm setting this to positive review, since it builds on Solaris and off.\n\nI'm also removing myself from the author block, since I did virtually nothing.",
     "created_at": "2010-07-18T10:37:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9396",
     "type": "issue_comment",
@@ -542,7 +542,7 @@ archive/issue_comments_089491.json:
 }
 ```
 
-Attachment
+Attachment [9396-syntax-error-correction.patch](tarball://root/attachments/some-uuid/ticket9396/9396-syntax-error-correction.patch) by rlm created at 2010-07-18 10:37:50
 
 I'm setting this to positive review, since it builds on Solaris and off.
 

@@ -106,7 +106,7 @@ Switch to toric lattices.
 archive/issue_comments_082958.json:
 ```json
 {
-    "body": "Attachment\n\nNew version of the patch using toric lattices from #9062. Switch of caching technique to allow efficient extension of class hierarchy is still pending.",
+    "body": "Attachment [trac_8987_add_support_for_rational_polyhedral_fans.patch](tarball://root/attachments/some-uuid/ticket8987/trac_8987_add_support_for_rational_polyhedral_fans.patch) by novoselt created at 2010-05-28 22:29:53\n\nNew version of the patch using toric lattices from #9062. Switch of caching technique to allow efficient extension of class hierarchy is still pending.",
     "created_at": "2010-05-28T22:29:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
@@ -115,7 +115,7 @@ archive/issue_comments_082958.json:
 }
 ```
 
-Attachment
+Attachment [trac_8987_add_support_for_rational_polyhedral_fans.patch](tarball://root/attachments/some-uuid/ticket8987/trac_8987_add_support_for_rational_polyhedral_fans.patch) by novoselt created at 2010-05-28 22:29:53
 
 New version of the patch using toric lattices from #9062. Switch of caching technique to allow efficient extension of class hierarchy is still pending.
 
@@ -205,7 +205,7 @@ The second patch adds classes that will support cones and fans for domain and co
 archive/issue_comments_082963.json:
 ```json
 {
-    "body": "Attachment\n\nApply after the big patch.",
+    "body": "Attachment [trac_8987_add_enhanced_cones_and_fans.patch](tarball://root/attachments/some-uuid/ticket8987/trac_8987_add_enhanced_cones_and_fans.patch) by novoselt created at 2010-06-06 06:07:11\n\nApply after the big patch.",
     "created_at": "2010-06-06T06:07:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
@@ -214,7 +214,7 @@ archive/issue_comments_082963.json:
 }
 ```
 
-Attachment
+Attachment [trac_8987_add_enhanced_cones_and_fans.patch](tarball://root/attachments/some-uuid/ticket8987/trac_8987_add_enhanced_cones_and_fans.patch) by novoselt created at 2010-06-06 06:07:11
 
 Apply after the big patch.
 
@@ -1459,7 +1459,7 @@ Apply last.
 archive/issue_comments_083002.json:
 ```json
 {
-    "body": "Attachment\n\nWell, it seems to me that it is done except for `_repr_` changes which I plan to do tomorrow. Changes will be trivial, but involve a lot of doctest adjustment.\n\nI have renamed `ambient_dim` to `lattice_dim`. That seemed to be very natural, in fact, I didn't even have to change the docstring \"Return the dimension of the ambient lattice.\" The original proposal actually was not working because lattices don't have `dim`, they have `dimension`, and `cone.lattice().dimension()` is a bit long, plus it does not show in <TAB>-completion. I prefer `dim` to `dimension` since it is clear enough, however it seems that many things in Sage stick with the long version. In particular, this is the case for ambient spaces (in the sense of schemes classes), so `ToricVariety` inherits it. I think that actually both versions should exist, but the correct way to do it is to change ambient space class and that better be done in a separate ticket from adding a new module.\n\nI have not switched equality of cones checked by `==` to ignore the order, although containment of cones in fans does not care about it. I agree that \"mathematical equality\" (which is currently available via `is_equivalent`) may be better, although it would be inconsistent with fans, but I am afraid of performance penalty. I do not have currently any benchmarks to support my case and I may very well be wrong. So I propose to leave it as is for the moment and once it is actually possible to do things with toric varieties and we can check it on several \"real projects\" with big fans we can decide on the final behaviour. As I understand, switching from \"computer\" to \"mathematical\" equivalence should not break any well-written code, it may only allow to rewrite it in a more convenient way. On the contrary, if we switch now and later decide to go back it may lead to bugs in unexpected places.",
+    "body": "Attachment [trac_8987_review_changes.patch](tarball://root/attachments/some-uuid/ticket8987/trac_8987_review_changes.patch) by novoselt created at 2010-06-17 06:42:08\n\nWell, it seems to me that it is done except for `_repr_` changes which I plan to do tomorrow. Changes will be trivial, but involve a lot of doctest adjustment.\n\nI have renamed `ambient_dim` to `lattice_dim`. That seemed to be very natural, in fact, I didn't even have to change the docstring \"Return the dimension of the ambient lattice.\" The original proposal actually was not working because lattices don't have `dim`, they have `dimension`, and `cone.lattice().dimension()` is a bit long, plus it does not show in <TAB>-completion. I prefer `dim` to `dimension` since it is clear enough, however it seems that many things in Sage stick with the long version. In particular, this is the case for ambient spaces (in the sense of schemes classes), so `ToricVariety` inherits it. I think that actually both versions should exist, but the correct way to do it is to change ambient space class and that better be done in a separate ticket from adding a new module.\n\nI have not switched equality of cones checked by `==` to ignore the order, although containment of cones in fans does not care about it. I agree that \"mathematical equality\" (which is currently available via `is_equivalent`) may be better, although it would be inconsistent with fans, but I am afraid of performance penalty. I do not have currently any benchmarks to support my case and I may very well be wrong. So I propose to leave it as is for the moment and once it is actually possible to do things with toric varieties and we can check it on several \"real projects\" with big fans we can decide on the final behaviour. As I understand, switching from \"computer\" to \"mathematical\" equivalence should not break any well-written code, it may only allow to rewrite it in a more convenient way. On the contrary, if we switch now and later decide to go back it may lead to bugs in unexpected places.",
     "created_at": "2010-06-17T06:42:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
@@ -1468,7 +1468,7 @@ archive/issue_comments_083002.json:
 }
 ```
 
-Attachment
+Attachment [trac_8987_review_changes.patch](tarball://root/attachments/some-uuid/ticket8987/trac_8987_review_changes.patch) by novoselt created at 2010-06-17 06:42:08
 
 Well, it seems to me that it is done except for `_repr_` changes which I plan to do tomorrow. Changes will be trivial, but involve a lot of doctest adjustment.
 
@@ -1483,7 +1483,7 @@ I have not switched equality of cones checked by `==` to ignore the order, altho
 archive/issue_comments_083003.json:
 ```json
 {
-    "body": "Attachment\n\nApply in the very end...",
+    "body": "Attachment [trac_8987_repr_changes.patch](tarball://root/attachments/some-uuid/ticket8987/trac_8987_repr_changes.patch) by novoselt created at 2010-06-17 19:00:11\n\nApply in the very end...",
     "created_at": "2010-06-17T19:00:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
@@ -1492,7 +1492,7 @@ archive/issue_comments_083003.json:
 }
 ```
 
-Attachment
+Attachment [trac_8987_repr_changes.patch](tarball://root/attachments/some-uuid/ticket8987/trac_8987_repr_changes.patch) by novoselt created at 2010-06-17 19:00:11
 
 Apply in the very end...
 
@@ -1597,7 +1597,7 @@ For the release manager: apply all patches in the order listed in the ticket.
 archive/issue_comments_083009.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8987_cmp_fix.patch](tarball://root/attachments/some-uuid/ticket8987/trac_8987_cmp_fix.patch) by novoselt created at 2010-07-01 16:26:16",
     "created_at": "2010-07-01T16:26:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
@@ -1606,7 +1606,7 @@ archive/issue_comments_083009.json:
 }
 ```
 
-Attachment
+Attachment [trac_8987_cmp_fix.patch](tarball://root/attachments/some-uuid/ticket8987/trac_8987_cmp_fix.patch) by novoselt created at 2010-07-01 16:26:16
 
 
 

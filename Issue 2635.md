@@ -79,7 +79,7 @@ William
 archive/issue_comments_018105.json:
 ```json
 {
-    "body": "Attachment\n\nDANG!  Sorry, guys.  This fixes it.",
+    "body": "Attachment [2635-save-the-plusses.patch](tarball://root/attachments/some-uuid/ticket2635/2635-save-the-plusses.patch) by boothby created at 2008-03-21 20:00:18\n\nDANG!  Sorry, guys.  This fixes it.",
     "created_at": "2008-03-21T20:00:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2635",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_018105.json:
 }
 ```
 
-Attachment
+Attachment [2635-save-the-plusses.patch](tarball://root/attachments/some-uuid/ticket2635/2635-save-the-plusses.patch) by boothby created at 2008-03-21 20:00:18
 
 DANG!  Sorry, guys.  This fixes it.
 

@@ -64,7 +64,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2721
 archive/issue_comments_018759.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good; I tested a couple of things (including my original problem case) and couldn't make it fail.",
+    "body": "Attachment [trac_2721.patch](tarball://root/attachments/some-uuid/ticket2721/trac_2721.patch) by cwitty created at 2008-03-29 21:32:28\n\nLooks good; I tested a couple of things (including my original problem case) and couldn't make it fail.",
     "created_at": "2008-03-29T21:32:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2721",
     "type": "issue_comment",
@@ -73,7 +73,7 @@ archive/issue_comments_018759.json:
 }
 ```
 
-Attachment
+Attachment [trac_2721.patch](tarball://root/attachments/some-uuid/ticket2721/trac_2721.patch) by cwitty created at 2008-03-29 21:32:28
 
 Looks good; I tested a couple of things (including my original problem case) and couldn't make it fail.
 

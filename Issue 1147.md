@@ -84,7 +84,7 @@ At least these should be put in `$HOME/.sage/valgrind-memcheck`, `$HOME/.sage/va
 archive/issue_comments_007002.json:
 ```json
 {
-    "body": "Attachment\n\nApply this to the scripts repo!",
+    "body": "Attachment [trac-1147.patch](tarball://root/attachments/some-uuid/ticket1147/trac-1147.patch) by was created at 2007-12-02 19:53:19\n\nApply this to the scripts repo!",
     "created_at": "2007-12-02T19:53:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1147",
     "type": "issue_comment",
@@ -93,7 +93,7 @@ archive/issue_comments_007002.json:
 }
 ```
 
-Attachment
+Attachment [trac-1147.patch](tarball://root/attachments/some-uuid/ticket1147/trac-1147.patch) by was created at 2007-12-02 19:53:19
 
 Apply this to the scripts repo!
 

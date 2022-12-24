@@ -457,7 +457,7 @@ Florent
 archive/issue_comments_071388.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8120-uniquerep_hash-fh.patch](tarball://root/attachments/some-uuid/ticket8120/trac_8120-uniquerep_hash-fh.patch) by hivert created at 2010-02-08 16:18:18",
     "created_at": "2010-02-08T16:18:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8120",
     "type": "issue_comment",
@@ -466,7 +466,7 @@ archive/issue_comments_071388.json:
 }
 ```
 
-Attachment
+Attachment [trac_8120-uniquerep_hash-fh.patch](tarball://root/attachments/some-uuid/ticket8120/trac_8120-uniquerep_hash-fh.patch) by hivert created at 2010-02-08 16:18:18
 
 
 

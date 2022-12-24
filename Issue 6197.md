@@ -263,7 +263,7 @@ Adding a new function changes the list random_expr uses.  This is actually fixed
 archive/issue_comments_049498.json:
 ```json
 {
-    "body": "Attachment\n\nOkay, this should do it.  Literally the only change is that doctest, so hopefully just testing that should restore positive review.",
+    "body": "Attachment [trac_6197-binomial-maxima.patch](tarball://root/attachments/some-uuid/ticket6197/trac_6197-binomial-maxima.patch) by kcrisman created at 2009-09-08 13:50:58\n\nOkay, this should do it.  Literally the only change is that doctest, so hopefully just testing that should restore positive review.",
     "created_at": "2009-09-08T13:50:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6197",
     "type": "issue_comment",
@@ -272,7 +272,7 @@ archive/issue_comments_049498.json:
 }
 ```
 
-Attachment
+Attachment [trac_6197-binomial-maxima.patch](tarball://root/attachments/some-uuid/ticket6197/trac_6197-binomial-maxima.patch) by kcrisman created at 2009-09-08 13:50:58
 
 Okay, this should do it.  Literally the only change is that doctest, so hopefully just testing that should restore positive review.
 

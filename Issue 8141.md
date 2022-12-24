@@ -55,7 +55,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8141
 archive/issue_comments_071582.json:
 ```json
 {
-    "body": "Attachment\n\nMore consistent use of font stack mixins.  sagenb repository.",
+    "body": "Attachment [trac_8141-font_stacks.patch](tarball://root/attachments/some-uuid/ticket8141/trac_8141-font_stacks.patch) by mpatel created at 2010-02-01 06:26:31\n\nMore consistent use of font stack mixins.  sagenb repository.",
     "created_at": "2010-02-01T06:26:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8141",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_071582.json:
 }
 ```
 
-Attachment
+Attachment [trac_8141-font_stacks.patch](tarball://root/attachments/some-uuid/ticket8141/trac_8141-font_stacks.patch) by mpatel created at 2010-02-01 06:26:31
 
 More consistent use of font stack mixins.  sagenb repository.
 
@@ -125,7 +125,7 @@ Changing status from new to needs_review.
 archive/issue_comments_071585.json:
 ```json
 {
-    "body": "Attachment\n\nDon't override non-compute cells' fonts.  Replaces previous.",
+    "body": "Attachment [trac_8141-font_stacks.2.patch](tarball://root/attachments/some-uuid/ticket8141/trac_8141-font_stacks.2.patch) by mpatel created at 2010-02-21 00:33:16\n\nDon't override non-compute cells' fonts.  Replaces previous.",
     "created_at": "2010-02-21T00:33:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8141",
     "type": "issue_comment",
@@ -134,7 +134,7 @@ archive/issue_comments_071585.json:
 }
 ```
 
-Attachment
+Attachment [trac_8141-font_stacks.2.patch](tarball://root/attachments/some-uuid/ticket8141/trac_8141-font_stacks.2.patch) by mpatel created at 2010-02-21 00:33:16
 
 Don't override non-compute cells' fonts.  Replaces previous.
 

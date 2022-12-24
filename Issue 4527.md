@@ -219,7 +219,7 @@ this should fix it.  the main bug was an off by a factor of two overflow.
 archive/issue_comments_033618.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-4527.patch](tarball://root/attachments/some-uuid/ticket4527/sage-4527.patch) by was created at 2008-11-15 01:32:26",
     "created_at": "2008-11-15T01:32:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4527",
     "type": "issue_comment",
@@ -228,7 +228,7 @@ archive/issue_comments_033618.json:
 }
 ```
 
-Attachment
+Attachment [sage-4527.patch](tarball://root/attachments/some-uuid/ticket4527/sage-4527.patch) by was created at 2008-11-15 01:32:26
 
 
 
@@ -299,7 +299,7 @@ Michael
 archive/issue_comments_033621.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good. I added a doctest based on Soroosh's original example in the extra patch above.",
+    "body": "Attachment [trac-4527-doc.patch](tarball://root/attachments/some-uuid/ticket4527/trac-4527-doc.patch) by craigcitro created at 2008-11-15 09:02:01\n\nLooks good. I added a doctest based on Soroosh's original example in the extra patch above.",
     "created_at": "2008-11-15T09:02:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4527",
     "type": "issue_comment",
@@ -308,7 +308,7 @@ archive/issue_comments_033621.json:
 }
 ```
 
-Attachment
+Attachment [trac-4527-doc.patch](tarball://root/attachments/some-uuid/ticket4527/trac-4527-doc.patch) by craigcitro created at 2008-11-15 09:02:01
 
 Looks good. I added a doctest based on Soroosh's original example in the extra patch above.
 

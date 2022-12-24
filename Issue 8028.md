@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8028
 archive/issue_comments_070124.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8028_element_wrapper-improvement-nt.patch](tarball://root/attachments/some-uuid/ticket8028/trac_8028_element_wrapper-improvement-nt.patch) by nthiery created at 2010-01-21 17:13:25",
     "created_at": "2010-01-21T17:13:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8028",
     "type": "issue_comment",
@@ -51,7 +51,7 @@ archive/issue_comments_070124.json:
 }
 ```
 
-Attachment
+Attachment [trac_8028_element_wrapper-improvement-nt.patch](tarball://root/attachments/some-uuid/ticket8028/trac_8028_element_wrapper-improvement-nt.patch) by nthiery created at 2010-01-21 17:13:25
 
 
 

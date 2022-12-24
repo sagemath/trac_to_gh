@@ -126,7 +126,7 @@ Mercurial patch to force iconv to build on HP-UX  in addition to the Solaris and
 archive/issue_comments_092953.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9603.patch](tarball://root/attachments/some-uuid/ticket9603/9603.patch) by drkirkby created at 2010-07-26 14:11:08",
     "created_at": "2010-07-26T14:11:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9603",
     "type": "issue_comment",
@@ -135,7 +135,7 @@ archive/issue_comments_092953.json:
 }
 ```
 
-Attachment
+Attachment [9603.patch](tarball://root/attachments/some-uuid/ticket9603/9603.patch) by drkirkby created at 2010-07-26 14:11:08
 
 
 
@@ -255,7 +255,7 @@ Improve a message as the package installed, to mention HP-UX too.
 archive/issue_comments_092959.json:
 ```json
 {
-    "body": "Attachment\n\nBuild log from a HP C3600 running HP-UX. Note SAGE_CHECK was set to \"yes\" so the self tests were run. They all pass",
+    "body": "Attachment [9603-informative-message-correction.patch](tarball://root/attachments/some-uuid/ticket9603/9603-informative-message-correction.patch) by drkirkby created at 2010-07-27 17:49:51\n\nBuild log from a HP C3600 running HP-UX. Note SAGE_CHECK was set to \"yes\" so the self tests were run. They all pass",
     "created_at": "2010-07-27T17:49:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9603",
     "type": "issue_comment",
@@ -264,7 +264,7 @@ archive/issue_comments_092959.json:
 }
 ```
 
-Attachment
+Attachment [9603-informative-message-correction.patch](tarball://root/attachments/some-uuid/ticket9603/9603-informative-message-correction.patch) by drkirkby created at 2010-07-27 17:49:51
 
 Build log from a HP C3600 running HP-UX. Note SAGE_CHECK was set to "yes" so the self tests were run. They all pass
 
@@ -275,7 +275,7 @@ Build log from a HP C3600 running HP-UX. Note SAGE_CHECK was set to "yes" so the
 archive/issue_comments_092960.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [HP-UX-install.log](tarball://root/attachments/some-uuid/ticket9603/HP-UX-install.log) by drkirkby created at 2010-07-27 18:23:48",
     "created_at": "2010-07-27T18:23:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9603",
     "type": "issue_comment",
@@ -284,7 +284,7 @@ archive/issue_comments_092960.json:
 }
 ```
 
-Attachment
+Attachment [HP-UX-install.log](tarball://root/attachments/some-uuid/ticket9603/HP-UX-install.log) by drkirkby created at 2010-07-27 18:23:48
 
 
 
@@ -625,7 +625,7 @@ Change the style of the tests, in the light of comments from the reviewer.
 archive/issue_comments_092971.json:
 ```json
 {
-    "body": "Attachment\n\nI've changed the style of the tests somewhat, which will hopefully make the logic clearer. \n\nhttp://boxen.math.washington.edu/home/kirkby/patches/iconv-1.13.1.p3.spkg\n\nI've checked it on Solaris and Linux. It installs and passes the tests on Solaris, but does not install on Linux. On Linux it correctly reports that the tests will not be run. \n\nIs that better? \n\nDave",
+    "body": "Attachment [9603-cleanup.patch](tarball://root/attachments/some-uuid/ticket9603/9603-cleanup.patch) by drkirkby created at 2010-07-28 00:44:02\n\nI've changed the style of the tests somewhat, which will hopefully make the logic clearer. \n\nhttp://boxen.math.washington.edu/home/kirkby/patches/iconv-1.13.1.p3.spkg\n\nI've checked it on Solaris and Linux. It installs and passes the tests on Solaris, but does not install on Linux. On Linux it correctly reports that the tests will not be run. \n\nIs that better? \n\nDave",
     "created_at": "2010-07-28T00:44:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9603",
     "type": "issue_comment",
@@ -634,7 +634,7 @@ archive/issue_comments_092971.json:
 }
 ```
 
-Attachment
+Attachment [9603-cleanup.patch](tarball://root/attachments/some-uuid/ticket9603/9603-cleanup.patch) by drkirkby created at 2010-07-28 00:44:02
 
 I've changed the style of the tests somewhat, which will hopefully make the logic clearer. 
 
@@ -989,7 +989,7 @@ I'd simply clarify that. (And emphasize somehow this is unrelated to the next se
 archive/issue_comments_092982.json:
 ```json
 {
-    "body": "Attachment\n\nCorrect unquoted \"$SAGE_LOCAL\" and a bit of a cosmetic cleanup.",
+    "body": "Attachment [9306-more-cleanup.patch](tarball://root/attachments/some-uuid/ticket9603/9306-more-cleanup.patch) by drkirkby created at 2010-08-10 20:16:32\n\nCorrect unquoted \"$SAGE_LOCAL\" and a bit of a cosmetic cleanup.",
     "created_at": "2010-08-10T20:16:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9603",
     "type": "issue_comment",
@@ -998,7 +998,7 @@ archive/issue_comments_092982.json:
 }
 ```
 
-Attachment
+Attachment [9306-more-cleanup.patch](tarball://root/attachments/some-uuid/ticket9603/9306-more-cleanup.patch) by drkirkby created at 2010-08-10 20:16:32
 
 Correct unquoted "$SAGE_LOCAL" and a bit of a cosmetic cleanup.
 
@@ -1391,7 +1391,7 @@ Replaces 'make' by '$MAKE'. Hopefully the last patch needed!
 archive/issue_comments_092995.json:
 ```json
 {
-    "body": "Attachment\n\nI'm marking this as needs work, since another problem with iconv (#9718) on some 64-bit Solaris systems has been solved by the libtool developer Ralf Wildenhues. It makes sense to fix that issue at the same time. \n\nI'll address this later. \n\nDave",
+    "body": "Attachment [9603-parallel-and-HP-UX.patch](tarball://root/attachments/some-uuid/ticket9603/9603-parallel-and-HP-UX.patch) by drkirkby created at 2010-08-29 11:52:37\n\nI'm marking this as needs work, since another problem with iconv (#9718) on some 64-bit Solaris systems has been solved by the libtool developer Ralf Wildenhues. It makes sense to fix that issue at the same time. \n\nI'll address this later. \n\nDave",
     "created_at": "2010-08-29T11:52:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9603",
     "type": "issue_comment",
@@ -1400,7 +1400,7 @@ archive/issue_comments_092995.json:
 }
 ```
 
-Attachment
+Attachment [9603-parallel-and-HP-UX.patch](tarball://root/attachments/some-uuid/ticket9603/9603-parallel-and-HP-UX.patch) by drkirkby created at 2010-08-29 11:52:37
 
 I'm marking this as needs work, since another problem with iconv (#9718) on some 64-bit Solaris systems has been solved by the libtool developer Ralf Wildenhues. It makes sense to fix that issue at the same time. 
 
@@ -1489,7 +1489,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_093000.json:
 ```json
 {
-    "body": "Attachment\n\nChange the place where the flag for 64-bit builds is inserted from CFLAGS to CC.",
+    "body": "Attachment [9603-move-from-CFLAGS-to-CC.patch](tarball://root/attachments/some-uuid/ticket9603/9603-move-from-CFLAGS-to-CC.patch) by drkirkby created at 2010-08-29 16:18:33\n\nChange the place where the flag for 64-bit builds is inserted from CFLAGS to CC.",
     "created_at": "2010-08-29T16:18:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9603",
     "type": "issue_comment",
@@ -1498,7 +1498,7 @@ archive/issue_comments_093000.json:
 }
 ```
 
-Attachment
+Attachment [9603-move-from-CFLAGS-to-CC.patch](tarball://root/attachments/some-uuid/ticket9603/9603-move-from-CFLAGS-to-CC.patch) by drkirkby created at 2010-08-29 16:18:33
 
 Change the place where the flag for 64-bit builds is inserted from CFLAGS to CC.
 
@@ -1536,7 +1536,7 @@ I'll commit your latest changes in your name...
 archive/issue_comments_093002.json:
 ```json
 {
-    "body": "Attachment\n\nSPKG patch. Apply on top of other patches. (Consistently use `\"$UNAME\"`; clean-up.)",
+    "body": "Attachment [trac_9603-iconv_spkg-first_reviewer.patch](tarball://root/attachments/some-uuid/ticket9603/trac_9603-iconv_spkg-first_reviewer.patch) by leif created at 2010-09-08 16:05:23\n\nSPKG patch. Apply on top of other patches. (Consistently use `\"$UNAME\"`; clean-up.)",
     "created_at": "2010-09-08T16:05:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9603",
     "type": "issue_comment",
@@ -1545,7 +1545,7 @@ archive/issue_comments_093002.json:
 }
 ```
 
-Attachment
+Attachment [trac_9603-iconv_spkg-first_reviewer.patch](tarball://root/attachments/some-uuid/ticket9603/trac_9603-iconv_spkg-first_reviewer.patch) by leif created at 2010-09-08 16:05:23
 
 SPKG patch. Apply on top of other patches. (Consistently use `"$UNAME"`; clean-up.)
 
@@ -1717,7 +1717,7 @@ Optional SPKG patch. Apply on top of first reviewer patch. (Stylistic change.))
 archive/issue_comments_093009.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:42 drkirkby]:\n> I think doing this in practice will be fraught with difficulty. The actual files installed might even depend on platform. (For example, shared libraries on HP-UX are .sl not .so). In general the files might depend on the value of environment variables. I think it's just best to not try to do that.\n\nWell, we have `rm -f` and (not only) filename globbing. In case we later run into problems (e.g. when upstream gets updated), *you* 're to blame (and you'll have to solve it)... So I won't mind omitting it now. ;-)\n\n> I think it was a bad idea of mine, and one not worth revisiting.\n\nMost spkgs do that.\n\n----\n\nI've attached my second reviewer patch which I would really like to see merged, too. :-)\n\n----\n\nI'll set this to \"positive review\" if you (and Peter) are ok with my changes (either both or just my first reviewer patch).",
+    "body": "Attachment [trac_9603-iconv_spkg-optional_second_reviewer.patch](tarball://root/attachments/some-uuid/ticket9603/trac_9603-iconv_spkg-optional_second_reviewer.patch) by leif created at 2010-09-08 18:11:52\n\nReplying to [comment:42 drkirkby]:\n> I think doing this in practice will be fraught with difficulty. The actual files installed might even depend on platform. (For example, shared libraries on HP-UX are .sl not .so). In general the files might depend on the value of environment variables. I think it's just best to not try to do that.\n\nWell, we have `rm -f` and (not only) filename globbing. In case we later run into problems (e.g. when upstream gets updated), *you* 're to blame (and you'll have to solve it)... So I won't mind omitting it now. ;-)\n\n> I think it was a bad idea of mine, and one not worth revisiting.\n\nMost spkgs do that.\n\n----\n\nI've attached my second reviewer patch which I would really like to see merged, too. :-)\n\n----\n\nI'll set this to \"positive review\" if you (and Peter) are ok with my changes (either both or just my first reviewer patch).",
     "created_at": "2010-09-08T18:11:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9603",
     "type": "issue_comment",
@@ -1726,7 +1726,7 @@ archive/issue_comments_093009.json:
 }
 ```
 
-Attachment
+Attachment [trac_9603-iconv_spkg-optional_second_reviewer.patch](tarball://root/attachments/some-uuid/ticket9603/trac_9603-iconv_spkg-optional_second_reviewer.patch) by leif created at 2010-09-08 18:11:52
 
 Replying to [comment:42 drkirkby]:
 > I think doing this in practice will be fraught with difficulty. The actual files installed might even depend on platform. (For example, shared libraries on HP-UX are .sl not .so). In general the files might depend on the value of environment variables. I think it's just best to not try to do that.
@@ -2055,7 +2055,7 @@ Ok, I'll upload a patch fixing that.
 archive/issue_comments_093018.json:
 ```json
 {
-    "body": "Attachment\n\nSPKG patch. Apply on top of second reviewer patch. (Fixes use of `;&`, which old `bash`es don't understand.)",
+    "body": "Attachment [trac_9603-iconv_spkg-fix_old_bash_problem-third_reviewer.patch](tarball://root/attachments/some-uuid/ticket9603/trac_9603-iconv_spkg-fix_old_bash_problem-third_reviewer.patch) by leif created at 2010-09-08 23:11:12\n\nSPKG patch. Apply on top of second reviewer patch. (Fixes use of `;&`, which old `bash`es don't understand.)",
     "created_at": "2010-09-08T23:11:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9603",
     "type": "issue_comment",
@@ -2064,7 +2064,7 @@ archive/issue_comments_093018.json:
 }
 ```
 
-Attachment
+Attachment [trac_9603-iconv_spkg-fix_old_bash_problem-third_reviewer.patch](tarball://root/attachments/some-uuid/ticket9603/trac_9603-iconv_spkg-fix_old_bash_problem-third_reviewer.patch) by leif created at 2010-09-08 23:11:12
 
 SPKG patch. Apply on top of second reviewer patch. (Fixes use of `;&`, which old `bash`es don't understand.)
 

@@ -87,7 +87,7 @@ It's a start at least.
 archive/issue_comments_011755.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-1858.patch](tarball://root/attachments/some-uuid/ticket1858/trac-1858.patch) by was created at 2008-01-20 04:49:54",
     "created_at": "2008-01-20T04:49:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1858",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_011755.json:
 }
 ```
 
-Attachment
+Attachment [trac-1858.patch](tarball://root/attachments/some-uuid/ticket1858/trac-1858.patch) by was created at 2008-01-20 04:49:54
 
 
 
@@ -151,7 +151,7 @@ fixes the typo nick pointed out
 archive/issue_comments_011758.json:
 ```json
 {
-    "body": "Attachment\n\nOk, since was fixed the issue this looks good to merge now.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac-1858-part2.patch](tarball://root/attachments/some-uuid/ticket1858/trac-1858-part2.patch) by mabshoff created at 2008-01-21 02:12:46\n\nOk, since was fixed the issue this looks good to merge now.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-21T02:12:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1858",
     "type": "issue_comment",
@@ -160,7 +160,7 @@ archive/issue_comments_011758.json:
 }
 ```
 
-Attachment
+Attachment [trac-1858-part2.patch](tarball://root/attachments/some-uuid/ticket1858/trac-1858-part2.patch) by mabshoff created at 2008-01-21 02:12:46
 
 Ok, since was fixed the issue this looks good to merge now.
 

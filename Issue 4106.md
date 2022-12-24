@@ -71,7 +71,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4106
 archive/issue_comments_029736.json:
 ```json
 {
-    "body": "Attachment\n\nSee the fairly trivial patch attached.",
+    "body": "Attachment [trac4106-coerce_symbolic_x_into_poly.patch](tarball://root/attachments/some-uuid/ticket4106/trac4106-coerce_symbolic_x_into_poly.patch) by AlexGhitza created at 2008-10-04 09:48:35\n\nSee the fairly trivial patch attached.",
     "created_at": "2008-10-04T09:48:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4106",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_029736.json:
 }
 ```
 
-Attachment
+Attachment [trac4106-coerce_symbolic_x_into_poly.patch](tarball://root/attachments/some-uuid/ticket4106/trac4106-coerce_symbolic_x_into_poly.patch) by AlexGhitza created at 2008-10-04 09:48:35
 
 See the fairly trivial patch attached.
 

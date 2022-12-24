@@ -153,7 +153,7 @@ With patch?
 archive/issue_comments_033128.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4485-implicit-mul.patch](tarball://root/attachments/some-uuid/ticket4485/4485-implicit-mul.patch) by robertwb created at 2008-11-13 22:47:32",
     "created_at": "2008-11-13T22:47:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4485",
     "type": "issue_comment",
@@ -162,7 +162,7 @@ archive/issue_comments_033128.json:
 }
 ```
 
-Attachment
+Attachment [4485-implicit-mul.patch](tarball://root/attachments/some-uuid/ticket4485/4485-implicit-mul.patch) by robertwb created at 2008-11-13 22:47:32
 
 
 

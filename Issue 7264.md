@@ -166,7 +166,7 @@ Changing keywords from "" to "pynac".
 archive/issue_comments_060346.json:
 ```json
 {
-    "body": "Attachment\n\nadd doctests",
+    "body": "Attachment [trac_7264-exp_power_segfault.patch](tarball://root/attachments/some-uuid/ticket7264/trac_7264-exp_power_segfault.patch) by burcin created at 2009-11-22 17:58:49\n\nadd doctests",
     "created_at": "2009-11-22T17:58:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7264",
     "type": "issue_comment",
@@ -175,7 +175,7 @@ archive/issue_comments_060346.json:
 }
 ```
 
-Attachment
+Attachment [trac_7264-exp_power_segfault.patch](tarball://root/attachments/some-uuid/ticket7264/trac_7264-exp_power_segfault.patch) by burcin created at 2009-11-22 17:58:49
 
 add doctests
 
@@ -438,7 +438,7 @@ apply only this patch
 archive/issue_comments_060356.json:
 ```json
 {
-    "body": "Attachment\n\nI put another version at the same place:\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.10.spkg\n\nHopefully this is the last time. :)\n\nCan you try again?",
+    "body": "Attachment [trac_7264-exp_power_segfault.take2.patch](tarball://root/attachments/some-uuid/ticket7264/trac_7264-exp_power_segfault.take2.patch) by burcin created at 2009-12-09 00:03:50\n\nI put another version at the same place:\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.10.spkg\n\nHopefully this is the last time. :)\n\nCan you try again?",
     "created_at": "2009-12-09T00:03:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7264",
     "type": "issue_comment",
@@ -447,7 +447,7 @@ archive/issue_comments_060356.json:
 }
 ```
 
-Attachment
+Attachment [trac_7264-exp_power_segfault.take2.patch](tarball://root/attachments/some-uuid/ticket7264/trac_7264-exp_power_segfault.take2.patch) by burcin created at 2009-12-09 00:03:50
 
 I put another version at the same place:
 

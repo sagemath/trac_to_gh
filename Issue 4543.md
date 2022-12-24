@@ -64,7 +64,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4543
 archive/issue_comments_034032.json:
 ```json
 {
-    "body": "Attachment\n\nattachment:trac_4543.patch removes the `-a` parameter from `basename` in the `sage-sage` script. This fixes the problem on my system.",
+    "body": "Attachment [trac_4543.patch](tarball://root/attachments/some-uuid/ticket4543/trac_4543.patch) by burcin created at 2008-11-18 08:41:35\n\nattachment:trac_4543.patch removes the `-a` parameter from `basename` in the `sage-sage` script. This fixes the problem on my system.",
     "created_at": "2008-11-18T08:41:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4543",
     "type": "issue_comment",
@@ -73,7 +73,7 @@ archive/issue_comments_034032.json:
 }
 ```
 
-Attachment
+Attachment [trac_4543.patch](tarball://root/attachments/some-uuid/ticket4543/trac_4543.patch) by burcin created at 2008-11-18 08:41:35
 
 attachment:trac_4543.patch removes the `-a` parameter from `basename` in the `sage-sage` script. This fixes the problem on my system.
 

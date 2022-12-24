@@ -69,7 +69,7 @@ Changing status from new to needs_review.
 archive/issue_comments_073693.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch\n\n* Fixes `rstrip` problems.\n* Includes pep8-related cleanup and cosmetic changes.\n* Uses [textwrap](http://docs.python.org/library/textwrap.html).\n\nFeel free to make further improvements, or to undo mine!",
+    "body": "Attachment [trac_8307-update_sage-update.patch](tarball://root/attachments/some-uuid/ticket8307/trac_8307-update_sage-update.patch) by mpatel created at 2010-02-19 14:30:01\n\nThe patch\n\n* Fixes `rstrip` problems.\n* Includes pep8-related cleanup and cosmetic changes.\n* Uses [textwrap](http://docs.python.org/library/textwrap.html).\n\nFeel free to make further improvements, or to undo mine!",
     "created_at": "2010-02-19T14:30:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8307",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_073693.json:
 }
 ```
 
-Attachment
+Attachment [trac_8307-update_sage-update.patch](tarball://root/attachments/some-uuid/ticket8307/trac_8307-update_sage-update.patch) by mpatel created at 2010-02-19 14:30:01
 
 The patch
 

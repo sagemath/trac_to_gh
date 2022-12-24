@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4305
 archive/issue_comments_031498.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4305-move-finite-field.patch](tarball://root/attachments/some-uuid/ticket4305/4305-move-finite-field.patch) by robertwb created at 2008-10-15 20:52:02",
     "created_at": "2008-10-15T20:52:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4305",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_031498.json:
 }
 ```
 
-Attachment
+Attachment [4305-move-finite-field.patch](tarball://root/attachments/some-uuid/ticket4305/4305-move-finite-field.patch) by robertwb created at 2008-10-15 20:52:02
 
 
 
@@ -67,7 +67,7 @@ apply to docs repo
 archive/issue_comments_031500.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me - damn the torpedoes :)\n\nCheers,\n\nMichael",
+    "body": "Attachment [4305-ff-docs.patch](tarball://root/attachments/some-uuid/ticket4305/4305-ff-docs.patch) by mabshoff created at 2008-10-15 21:05:44\n\nLooks good to me - damn the torpedoes :)\n\nCheers,\n\nMichael",
     "created_at": "2008-10-15T21:05:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4305",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_031500.json:
 }
 ```
 
-Attachment
+Attachment [4305-ff-docs.patch](tarball://root/attachments/some-uuid/ticket4305/4305-ff-docs.patch) by mabshoff created at 2008-10-15 21:05:44
 
 Looks good to me - damn the torpedoes :)
 
@@ -115,7 +115,7 @@ Michael
 archive/issue_comments_031502.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4305_review.patch](tarball://root/attachments/some-uuid/ticket4305/trac_4305_review.patch) by mabshoff created at 2008-10-16 10:19:27",
     "created_at": "2008-10-16T10:19:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4305",
     "type": "issue_comment",
@@ -124,7 +124,7 @@ archive/issue_comments_031502.json:
 }
 ```
 
-Attachment
+Attachment [trac_4305_review.patch](tarball://root/attachments/some-uuid/ticket4305/trac_4305_review.patch) by mabshoff created at 2008-10-16 10:19:27
 
 
 

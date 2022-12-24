@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2756
 archive/issue_comments_018952.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [guava.patch](tarball://root/attachments/some-uuid/ticket2756/guava.patch) by tabbott created at 2008-04-01 18:41:49",
     "created_at": "2008-04-01T18:41:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2756",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_018952.json:
 }
 ```
 
-Attachment
+Attachment [guava.patch](tarball://root/attachments/some-uuid/ticket2756/guava.patch) by tabbott created at 2008-04-01 18:41:49
 
 
 
@@ -49,7 +49,7 @@ Attachment
 archive/issue_comments_018953.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [gap-spkg-debian.patch](tarball://root/attachments/some-uuid/ticket2756/gap-spkg-debian.patch) by tabbott created at 2008-04-01 18:42:48",
     "created_at": "2008-04-01T18:42:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2756",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_018953.json:
 }
 ```
 
-Attachment
+Attachment [gap-spkg-debian.patch](tarball://root/attachments/some-uuid/ticket2756/gap-spkg-debian.patch) by tabbott created at 2008-04-01 18:42:48
 
 
 

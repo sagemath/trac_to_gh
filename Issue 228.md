@@ -152,7 +152,7 @@ Resolution changed from fixed to
 archive/issue_comments_001017.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch addresses this issue by only considering input examples if it starts with a prompt (sage: or >>>).",
+    "body": "Attachment [ncalexan-228-v2.hg](tarball://root/attachments/some-uuid/ticket228/ncalexan-228-v2.hg) by ncalexan created at 2007-09-20 21:07:07\n\nThe attached patch addresses this issue by only considering input examples if it starts with a prompt (sage: or >>>).",
     "created_at": "2007-09-20T21:07:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/228",
     "type": "issue_comment",
@@ -161,7 +161,7 @@ archive/issue_comments_001017.json:
 }
 ```
 
-Attachment
+Attachment [ncalexan-228-v2.hg](tarball://root/attachments/some-uuid/ticket228/ncalexan-228-v2.hg) by ncalexan created at 2007-09-20 21:07:07
 
 The attached patch addresses this issue by only considering input examples if it starts with a prompt (sage: or >>>).
 

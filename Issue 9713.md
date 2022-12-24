@@ -937,7 +937,7 @@ I have done some documentation prettification, feel free to fold it into your pa
 archive/issue_comments_094703.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9713_reviewer.patch](tarball://root/attachments/some-uuid/ticket9713/trac_9713_reviewer.patch) by novoselt created at 2010-12-16 21:07:38",
     "created_at": "2010-12-16T21:07:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9713",
     "type": "issue_comment",
@@ -946,7 +946,7 @@ archive/issue_comments_094703.json:
 }
 ```
 
-Attachment
+Attachment [trac_9713_reviewer.patch](tarball://root/attachments/some-uuid/ticket9713/trac_9713_reviewer.patch) by novoselt created at 2010-12-16 21:07:38
 
 
 
@@ -1091,7 +1091,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_094710.json:
 ```json
 {
-    "body": "Attachment\n\nRebases trac_9713_fix_fg_pid.patch relative to #10513",
+    "body": "Attachment [trac_9713_fix_fg_pid_relative_10513.patch](tarball://root/attachments/some-uuid/ticket9713/trac_9713_fix_fg_pid_relative_10513.patch) by SimonKing created at 2010-12-22 09:27:59\n\nRebases trac_9713_fix_fg_pid.patch relative to #10513",
     "created_at": "2010-12-22T09:27:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9713",
     "type": "issue_comment",
@@ -1100,7 +1100,7 @@ archive/issue_comments_094710.json:
 }
 ```
 
-Attachment
+Attachment [trac_9713_fix_fg_pid_relative_10513.patch](tarball://root/attachments/some-uuid/ticket9713/trac_9713_fix_fg_pid_relative_10513.patch) by SimonKing created at 2010-12-22 09:27:59
 
 Rebases trac_9713_fix_fg_pid.patch relative to #10513
 
@@ -1213,7 +1213,7 @@ Thank you for the clarification! I thought I had to apply *all* patches mentione
 archive/issue_comments_094716.json:
 ```json
 {
-    "body": "Attachment\n\nRenamed element_class -> Element",
+    "body": "Attachment [trac_9713_fix_fg_pid.patch](tarball://root/attachments/some-uuid/ticket9713/trac_9713_fix_fg_pid.patch) by vbraun created at 2010-12-22 18:16:24\n\nRenamed element_class -> Element",
     "created_at": "2010-12-22T18:16:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9713",
     "type": "issue_comment",
@@ -1222,7 +1222,7 @@ archive/issue_comments_094716.json:
 }
 ```
 
-Attachment
+Attachment [trac_9713_fix_fg_pid.patch](tarball://root/attachments/some-uuid/ticket9713/trac_9713_fix_fg_pid.patch) by vbraun created at 2010-12-22 18:16:24
 
 Renamed element_class -> Element
 
@@ -1566,7 +1566,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_094729.json:
 ```json
 {
-    "body": "Attachment\n\nApply after  trac_9713_fix_fg_pid.patch: Element vs. element_class; indirect doctests",
+    "body": "Attachment [trac_9713_fix_fg_pid_reviewer.patch](tarball://root/attachments/some-uuid/ticket9713/trac_9713_fix_fg_pid_reviewer.patch) by SimonKing created at 2010-12-27 16:35:30\n\nApply after  trac_9713_fix_fg_pid.patch: Element vs. element_class; indirect doctests",
     "created_at": "2010-12-27T16:35:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9713",
     "type": "issue_comment",
@@ -1575,7 +1575,7 @@ archive/issue_comments_094729.json:
 }
 ```
 
-Attachment
+Attachment [trac_9713_fix_fg_pid_reviewer.patch](tarball://root/attachments/some-uuid/ticket9713/trac_9713_fix_fg_pid_reviewer.patch) by SimonKing created at 2010-12-27 16:35:30
 
 Apply after  trac_9713_fix_fg_pid.patch: Element vs. element_class; indirect doctests
 
@@ -1879,7 +1879,7 @@ Rebased against sage-4.6.2.alpha2
 archive/issue_comments_094745.json:
 ```json
 {
-    "body": "Attachment\n\nRebased against sage-4.6.2.alpha2",
+    "body": "Attachment [trac_9713_fix_cardinality.patch](tarball://root/attachments/some-uuid/ticket9713/trac_9713_fix_cardinality.patch) by vbraun created at 2011-01-26 14:08:36\n\nRebased against sage-4.6.2.alpha2",
     "created_at": "2011-01-26T14:08:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9713",
     "type": "issue_comment",
@@ -1888,7 +1888,7 @@ archive/issue_comments_094745.json:
 }
 ```
 
-Attachment
+Attachment [trac_9713_fix_cardinality.patch](tarball://root/attachments/some-uuid/ticket9713/trac_9713_fix_cardinality.patch) by vbraun created at 2011-01-26 14:08:36
 
 Rebased against sage-4.6.2.alpha2
 
@@ -2007,7 +2007,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_094752.json:
 ```json
 {
-    "body": "Attachment\n\nRebased patch.",
+    "body": "Attachment [trac_9713_fix_fg_pid.2.patch](tarball://root/attachments/some-uuid/ticket9713/trac_9713_fix_fg_pid.2.patch) by vbraun created at 2011-01-26 22:37:04\n\nRebased patch.",
     "created_at": "2011-01-26T22:37:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9713",
     "type": "issue_comment",
@@ -2016,7 +2016,7 @@ archive/issue_comments_094752.json:
 }
 ```
 
-Attachment
+Attachment [trac_9713_fix_fg_pid.2.patch](tarball://root/attachments/some-uuid/ticket9713/trac_9713_fix_fg_pid.2.patch) by vbraun created at 2011-01-26 22:37:04
 
 Rebased patch.
 
@@ -2212,7 +2212,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_094762.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9713_hash.patch](tarball://root/attachments/some-uuid/ticket9713/9713_hash.patch) by jdemeyer created at 2011-01-29 09:45:44",
     "created_at": "2011-01-29T09:45:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9713",
     "type": "issue_comment",
@@ -2221,7 +2221,7 @@ archive/issue_comments_094762.json:
 }
 ```
 
-Attachment
+Attachment [9713_hash.patch](tarball://root/attachments/some-uuid/ticket9713/9713_hash.patch) by jdemeyer created at 2011-01-29 09:45:44
 
 
 
@@ -2320,7 +2320,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_094767.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated patch",
+    "body": "Attachment [trac_9713_toric_chow_group.patch](tarball://root/attachments/some-uuid/ticket9713/trac_9713_toric_chow_group.patch) by vbraun created at 2011-02-01 12:08:20\n\nUpdated patch",
     "created_at": "2011-02-01T12:08:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9713",
     "type": "issue_comment",
@@ -2329,7 +2329,7 @@ archive/issue_comments_094767.json:
 }
 ```
 
-Attachment
+Attachment [trac_9713_toric_chow_group.patch](tarball://root/attachments/some-uuid/ticket9713/trac_9713_toric_chow_group.patch) by vbraun created at 2011-02-01 12:08:20
 
 Updated patch
 

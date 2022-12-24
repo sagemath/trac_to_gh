@@ -72,7 +72,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5445
 archive/issue_comments_042102.json:
 ```json
 {
-    "body": "Attachment\n\nNice catch.",
+    "body": "Attachment [coerce-dict-performance-bug.patch](tarball://root/attachments/some-uuid/ticket5445/coerce-dict-performance-bug.patch) by robertwb created at 2009-03-06 12:28:19\n\nNice catch.",
     "created_at": "2009-03-06T12:28:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5445",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_042102.json:
 }
 ```
 
-Attachment
+Attachment [coerce-dict-performance-bug.patch](tarball://root/attachments/some-uuid/ticket5445/coerce-dict-performance-bug.patch) by robertwb created at 2009-03-06 12:28:19
 
 Nice catch.
 

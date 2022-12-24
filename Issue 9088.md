@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9088
 archive/issue_comments_084397.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-9088-line3d-list-copy.2.patch](tarball://root/attachments/some-uuid/ticket9088/trac-9088-line3d-list-copy.2.patch) by jason created at 2010-05-29 19:52:11",
     "created_at": "2010-05-29T19:52:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9088",
     "type": "issue_comment",
@@ -50,7 +50,7 @@ archive/issue_comments_084397.json:
 }
 ```
 
-Attachment
+Attachment [trac-9088-line3d-list-copy.2.patch](tarball://root/attachments/some-uuid/ticket9088/trac-9088-line3d-list-copy.2.patch) by jason created at 2010-05-29 19:52:11
 
 
 

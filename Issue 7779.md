@@ -51,7 +51,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7779
 archive/issue_comments_067074.json:
 ```json
 {
-    "body": "Attachment\n\nbased on Sage 4.3",
+    "body": "Attachment [sage](tarball://root/attachments/some-uuid/ticket7779/sage) by mvngu created at 2009-12-28 15:44:16\n\nbased on Sage 4.3",
     "created_at": "2009-12-28T15:44:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7779",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_067074.json:
 }
 ```
 
-Attachment
+Attachment [sage](tarball://root/attachments/some-uuid/ticket7779/sage) by mvngu created at 2009-12-28 15:44:16
 
 based on Sage 4.3
 
@@ -89,7 +89,7 @@ previous version of sage script
 archive/issue_comments_067076.json:
 ```json
 {
-    "body": "Attachment\n\ndifferences between sage.old and sage",
+    "body": "Attachment [sage.patch](tarball://root/attachments/some-uuid/ticket7779/sage.patch) by mvngu created at 2009-12-28 15:44:57\n\ndifferences between sage.old and sage",
     "created_at": "2009-12-28T15:44:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7779",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_067076.json:
 }
 ```
 
-Attachment
+Attachment [sage.patch](tarball://root/attachments/some-uuid/ticket7779/sage.patch) by mvngu created at 2009-12-28 15:44:57
 
 differences between sage.old and sage
 

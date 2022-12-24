@@ -53,7 +53,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5508
 archive/issue_comments_042767.json:
 ```json
 {
-    "body": "Attachment\n\nReview:  I read through the patch and was impressed by the thoroughness and attention to detail!  I don't know all the formulas for relative different (etc) off the top of my head, but what is tere looks reasonable.\n\nThe patch applies cleanly to 3.4.\n\nDoctesting sage/rings/number_field, the only problem was this:\n\n```\nsage -t  \"local/sage-3.4/devel/sage-5508/sage/rings/number_field//order.py\"\n**********************************************************************\nFile \"/home/masgaj/local/sage-3.4/devel/sage-5508/sage/rings/number_field/order.py\", line 1196:\n    sage: OK(a)\nExpected nothing\nGot:\n    a\n**********************************************************************\nFile \"/home/masgaj/local/sage-3.4/devel/sage-5508/sage/rings/number_field/order.py\", line 1197:\n    sage: a\nExpected nothing\nGot:\n    a\n```\n\nwhich is just a matter of deleting a rogue \"sage: \" prompt in front of one line of output.\n\nFix that and this will ready to go.  (I hope it merges ok with my units code at #5513!)",
+    "body": "Attachment [sage-5508.patch](tarball://root/attachments/some-uuid/ticket5508/sage-5508.patch) by cremona created at 2009-03-16 17:25:42\n\nReview:  I read through the patch and was impressed by the thoroughness and attention to detail!  I don't know all the formulas for relative different (etc) off the top of my head, but what is tere looks reasonable.\n\nThe patch applies cleanly to 3.4.\n\nDoctesting sage/rings/number_field, the only problem was this:\n\n```\nsage -t  \"local/sage-3.4/devel/sage-5508/sage/rings/number_field//order.py\"\n**********************************************************************\nFile \"/home/masgaj/local/sage-3.4/devel/sage-5508/sage/rings/number_field/order.py\", line 1196:\n    sage: OK(a)\nExpected nothing\nGot:\n    a\n**********************************************************************\nFile \"/home/masgaj/local/sage-3.4/devel/sage-5508/sage/rings/number_field/order.py\", line 1197:\n    sage: a\nExpected nothing\nGot:\n    a\n```\n\nwhich is just a matter of deleting a rogue \"sage: \" prompt in front of one line of output.\n\nFix that and this will ready to go.  (I hope it merges ok with my units code at #5513!)",
     "created_at": "2009-03-16T17:25:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5508",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_042767.json:
 }
 ```
 
-Attachment
+Attachment [sage-5508.patch](tarball://root/attachments/some-uuid/ticket5508/sage-5508.patch) by cremona created at 2009-03-16 17:25:42
 
 Review:  I read through the patch and was impressed by the thoroughness and attention to detail!  I don't know all the formulas for relative different (etc) off the top of my head, but what is tere looks reasonable.
 
@@ -115,7 +115,7 @@ This also seems to fix #4193.
 archive/issue_comments_042769.json:
 ```json
 {
-    "body": "Attachment\n\nreplaces previous",
+    "body": "Attachment [sage-5508.2.patch](tarball://root/attachments/some-uuid/ticket5508/sage-5508.2.patch) by cremona created at 2009-03-17 10:34:13\n\nreplaces previous",
     "created_at": "2009-03-17T10:34:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5508",
     "type": "issue_comment",
@@ -124,7 +124,7 @@ archive/issue_comments_042769.json:
 }
 ```
 
-Attachment
+Attachment [sage-5508.2.patch](tarball://root/attachments/some-uuid/ticket5508/sage-5508.2.patch) by cremona created at 2009-03-17 10:34:13
 
 replaces previous
 
@@ -315,7 +315,7 @@ Francis
 archive/issue_comments_042778.json:
 ```json
 {
-    "body": "Attachment\n\nReplaces previous",
+    "body": "Attachment [sage-5508.3.patch](tarball://root/attachments/some-uuid/ticket5508/sage-5508.3.patch) by fwclarke created at 2009-03-25 08:41:52\n\nReplaces previous",
     "created_at": "2009-03-25T08:41:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5508",
     "type": "issue_comment",
@@ -324,7 +324,7 @@ archive/issue_comments_042778.json:
 }
 ```
 
-Attachment
+Attachment [sage-5508.3.patch](tarball://root/attachments/some-uuid/ticket5508/sage-5508.3.patch) by fwclarke created at 2009-03-25 08:41:52
 
 Replaces previous
 

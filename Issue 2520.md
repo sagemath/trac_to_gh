@@ -227,7 +227,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2520
 archive/issue_comments_017195.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2520.patch](tarball://root/attachments/some-uuid/ticket2520/2520.patch) by mhansen created at 2008-03-14 21:25:12",
     "created_at": "2008-03-14T21:25:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2520",
     "type": "issue_comment",
@@ -236,7 +236,7 @@ archive/issue_comments_017195.json:
 }
 ```
 
-Attachment
+Attachment [2520.patch](tarball://root/attachments/some-uuid/ticket2520/2520.patch) by mhansen created at 2008-03-14 21:25:12
 
 
 

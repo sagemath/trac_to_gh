@@ -5466,7 +5466,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_074131.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8327-universal_cyclotomic_field-cs.patch](tarball://root/attachments/some-uuid/ticket8327/trac_8327-universal_cyclotomic_field-cs.patch) by stumpc5 created at 2013-02-01 08:29:46",
     "created_at": "2013-02-01T08:29:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -5475,7 +5475,7 @@ archive/issue_comments_074131.json:
 }
 ```
 
-Attachment
+Attachment [trac_8327-universal_cyclotomic_field-cs.patch](tarball://root/attachments/some-uuid/ticket8327/trac_8327-universal_cyclotomic_field-cs.patch) by stumpc5 created at 2013-02-01 08:29:46
 
 
 

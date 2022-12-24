@@ -71,7 +71,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2224
 archive/issue_comments_014738.json:
 ```json
 {
-    "body": "Attachment\n\nthis fixes the doctest by implemeting new code in plot.py so that rgbcolor='#fffff00' works; i.e., improve the plotting code.",
+    "body": "Attachment [sage-2224.patch](tarball://root/attachments/some-uuid/ticket2224/sage-2224.patch) by was created at 2008-02-21 19:11:00\n\nthis fixes the doctest by implemeting new code in plot.py so that rgbcolor='#fffff00' works; i.e., improve the plotting code.",
     "created_at": "2008-02-21T19:11:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2224",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_014738.json:
 }
 ```
 
-Attachment
+Attachment [sage-2224.patch](tarball://root/attachments/some-uuid/ticket2224/sage-2224.patch) by was created at 2008-02-21 19:11:00
 
 this fixes the doctest by implemeting new code in plot.py so that rgbcolor='#fffff00' works; i.e., improve the plotting code.
 

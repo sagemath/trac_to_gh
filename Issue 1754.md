@@ -52,7 +52,7 @@ What happens when you connect to the notebook server.
 archive/issue_comments_011065.json:
 ```json
 {
-    "body": "Attachment\n\nSecurity dialogue box",
+    "body": "Attachment [firefox_gnutls_1.png](tarball://root/attachments/some-uuid/ticket1754/firefox_gnutls_1.png) by yi created at 2008-01-11 00:45:18\n\nSecurity dialogue box",
     "created_at": "2008-01-11T00:45:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1754",
     "type": "issue_comment",
@@ -61,7 +61,7 @@ archive/issue_comments_011065.json:
 }
 ```
 
-Attachment
+Attachment [firefox_gnutls_1.png](tarball://root/attachments/some-uuid/ticket1754/firefox_gnutls_1.png) by yi created at 2008-01-11 00:45:18
 
 Security dialogue box
 
@@ -72,7 +72,7 @@ Security dialogue box
 archive/issue_comments_011066.json:
 ```json
 {
-    "body": "Attachment\n\nError message",
+    "body": "Attachment [firefox_gnutls_3.png](tarball://root/attachments/some-uuid/ticket1754/firefox_gnutls_3.png) by yi created at 2008-01-11 00:45:45\n\nError message",
     "created_at": "2008-01-11T00:45:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1754",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_011066.json:
 }
 ```
 
-Attachment
+Attachment [firefox_gnutls_3.png](tarball://root/attachments/some-uuid/ticket1754/firefox_gnutls_3.png) by yi created at 2008-01-11 00:45:45
 
 Error message
 

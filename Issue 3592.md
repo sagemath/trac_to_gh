@@ -54,7 +54,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3592
 archive/issue_comments_025379.json:
 ```json
 {
-    "body": "Attachment\n\nThe category of this ticket is packages and please also assign a milestone per default.\n\nCheers,\n\nMichael",
+    "body": "Attachment [sage.patch](tarball://root/attachments/some-uuid/ticket3592/sage.patch) by mabshoff created at 2008-07-07 22:17:06\n\nThe category of this ticket is packages and please also assign a milestone per default.\n\nCheers,\n\nMichael",
     "created_at": "2008-07-07T22:17:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3592",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_025379.json:
 }
 ```
 
-Attachment
+Attachment [sage.patch](tarball://root/attachments/some-uuid/ticket3592/sage.patch) by mabshoff created at 2008-07-07 22:17:06
 
 The category of this ticket is packages and please also assign a milestone per default.
 

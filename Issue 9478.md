@@ -135,7 +135,7 @@ This issue is still present in Sage-4.6.
 archive/issue_comments_090995.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9478_bug_in_LaTeXing_of_iterated_polynomials.patch](tarball://root/attachments/some-uuid/ticket9478/trac_9478_bug_in_LaTeXing_of_iterated_polynomials.patch) by novoselt created at 2011-06-17 22:46:26",
     "created_at": "2011-06-17T22:46:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9478",
     "type": "issue_comment",
@@ -144,7 +144,7 @@ archive/issue_comments_090995.json:
 }
 ```
 
-Attachment
+Attachment [trac_9478_bug_in_LaTeXing_of_iterated_polynomials.patch](tarball://root/attachments/some-uuid/ticket9478/trac_9478_bug_in_LaTeXing_of_iterated_polynomials.patch) by novoselt created at 2011-06-17 22:46:26
 
 
 

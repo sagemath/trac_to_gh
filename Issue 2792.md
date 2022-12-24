@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2792
 archive/issue_comments_019175.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch does the right thing and there is no change in functionality. Compilation and dcotests pass. Positive review.\n\nCheers,\n\nMichael",
+    "body": "Attachment [remove_stupid_workaround.patch](tarball://root/attachments/some-uuid/ticket2792/remove_stupid_workaround.patch) by mabshoff created at 2008-04-03 11:09:22\n\nThe patch does the right thing and there is no change in functionality. Compilation and dcotests pass. Positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-03T11:09:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2792",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_019175.json:
 }
 ```
 
-Attachment
+Attachment [remove_stupid_workaround.patch](tarball://root/attachments/some-uuid/ticket2792/remove_stupid_workaround.patch) by mabshoff created at 2008-04-03 11:09:22
 
 The patch does the right thing and there is no change in functionality. Compilation and dcotests pass. Positive review.
 

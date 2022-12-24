@@ -57,7 +57,7 @@ numpy.2.patch is an update.  RDF matrices seem to work all right, except for 4 d
 archive/issue_comments_024636.json:
 ```json
 {
-    "body": "Attachment\n\nThe numpy-RDF-CDF.patch replaces all previous patches.\n\nBasically, I factored out stuff that was common between RDF and CDF matrices (which turned out to be almost everything except the very initial part), stripped out GSL stuff, and wrote a few more doctests.\n\nOops, I just realized that I didn't delete a few pieces of cruft still hanging around from the GSL implementation.  I'll post a follow-up patch shortly.",
+    "body": "Attachment [numpy-RDF-CDF.patch](tarball://root/attachments/some-uuid/ticket3498/numpy-RDF-CDF.patch) by jason created at 2008-09-26 01:20:47\n\nThe numpy-RDF-CDF.patch replaces all previous patches.\n\nBasically, I factored out stuff that was common between RDF and CDF matrices (which turned out to be almost everything except the very initial part), stripped out GSL stuff, and wrote a few more doctests.\n\nOops, I just realized that I didn't delete a few pieces of cruft still hanging around from the GSL implementation.  I'll post a follow-up patch shortly.",
     "created_at": "2008-09-26T01:20:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_024636.json:
 }
 ```
 
-Attachment
+Attachment [numpy-RDF-CDF.patch](tarball://root/attachments/some-uuid/ticket3498/numpy-RDF-CDF.patch) by jason created at 2008-09-26 01:20:47
 
 The numpy-RDF-CDF.patch replaces all previous patches.
 
@@ -99,7 +99,7 @@ apply on top of previous patch
 archive/issue_comments_024638.json:
 ```json
 {
-    "body": "Attachment\n\nThese patches are for 3.1.3alpha1.  With these patches, sage -t *.py and sage -t *.pyx both pass in the matrix/ directory.",
+    "body": "Attachment [numpy-2.patch](tarball://root/attachments/some-uuid/ticket3498/numpy-2.patch) by jason created at 2008-09-26 01:39:59\n\nThese patches are for 3.1.3alpha1.  With these patches, sage -t *.py and sage -t *.pyx both pass in the matrix/ directory.",
     "created_at": "2008-09-26T01:39:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
@@ -108,7 +108,7 @@ archive/issue_comments_024638.json:
 }
 ```
 
-Attachment
+Attachment [numpy-2.patch](tarball://root/attachments/some-uuid/ticket3498/numpy-2.patch) by jason created at 2008-09-26 01:39:59
 
 These patches are for 3.1.3alpha1.  With these patches, sage -t *.py and sage -t *.pyx both pass in the matrix/ directory.
 
@@ -645,7 +645,7 @@ apply on top of previous patches
 archive/issue_comments_024653.json:
 ```json
 {
-    "body": "Attachment\n\nI added numpy-3.patch (to be applied on top of the previous patches) which makes numpy *not* imported by default (imported lazily, though), and switches several functions from the numpy versions to the more careful/recommended scipy equivalents.\n\nEarlier today, I ran valgrind on several examples and mabshoff indicated that things looked good to him.  He might do additional testing to see if things really are okay to merge.",
+    "body": "Attachment [numpy-3.patch](tarball://root/attachments/some-uuid/ticket3498/numpy-3.patch) by jason created at 2008-10-21 03:23:20\n\nI added numpy-3.patch (to be applied on top of the previous patches) which makes numpy *not* imported by default (imported lazily, though), and switches several functions from the numpy versions to the more careful/recommended scipy equivalents.\n\nEarlier today, I ran valgrind on several examples and mabshoff indicated that things looked good to him.  He might do additional testing to see if things really are okay to merge.",
     "created_at": "2008-10-21T03:23:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
@@ -654,7 +654,7 @@ archive/issue_comments_024653.json:
 }
 ```
 
-Attachment
+Attachment [numpy-3.patch](tarball://root/attachments/some-uuid/ticket3498/numpy-3.patch) by jason created at 2008-10-21 03:23:20
 
 I added numpy-3.patch (to be applied on top of the previous patches) which makes numpy *not* imported by default (imported lazily, though), and switches several functions from the numpy versions to the more careful/recommended scipy equivalents.
 
@@ -807,7 +807,7 @@ I agree it ought to be a separate ticket.
 archive/issue_comments_024660.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of previous patches",
+    "body": "Attachment [remove-gsl-import.patch](tarball://root/attachments/some-uuid/ticket3498/remove-gsl-import.patch) by jason created at 2008-10-24 11:35:03\n\napply on top of previous patches",
     "created_at": "2008-10-24T11:35:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
@@ -816,7 +816,7 @@ archive/issue_comments_024660.json:
 }
 ```
 
-Attachment
+Attachment [remove-gsl-import.patch](tarball://root/attachments/some-uuid/ticket3498/remove-gsl-import.patch) by jason created at 2008-10-24 11:35:03
 
 apply on top of previous patches
 
@@ -1161,7 +1161,7 @@ ignore all previous files; this reverts the relevant parts of #4439 and then #77
 archive/issue_comments_024677.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of revert-trac_4439_778.patch",
+    "body": "Attachment [numpy-RDF-CDF-final.patch](tarball://root/attachments/some-uuid/ticket3498/numpy-RDF-CDF-final.patch) by jason created at 2008-11-08 06:45:05\n\napply on top of revert-trac_4439_778.patch",
     "created_at": "2008-11-08T06:45:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
@@ -1170,7 +1170,7 @@ archive/issue_comments_024677.json:
 }
 ```
 
-Attachment
+Attachment [numpy-RDF-CDF-final.patch](tarball://root/attachments/some-uuid/ticket3498/numpy-RDF-CDF-final.patch) by jason created at 2008-11-08 06:45:05
 
 apply on top of revert-trac_4439_778.patch
 

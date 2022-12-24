@@ -56,7 +56,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5521
 archive/issue_comments_042943.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch causes 20 doctests to fail in extended_rational_field.py starting with:\n\n```\nsage -t -long \"devel/sage/sage/rings/extended_rational_field.py\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.alpha0/devel/sage/sage/rings/extended_rational_field.py\", line 51:\n    sage: loads(dumps(f))\nExpected:\n    Natural morphism:\n      From: Rational Field\n      To:   Extended Rational Field\nGot:\n    Natural endomorphism of Rational Field\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.alpha0/devel/sage/sage/rings/extended_rational_field.py\", line 110:\n    sage: E == loads(dumps(E))\nExpected:\n    True\nGot:\n    False\n**********************************************************************\n<SNIP>\n```\n",
+    "body": "Attachment [trac_5521.patch](tarball://root/attachments/some-uuid/ticket5521/trac_5521.patch) by mabshoff created at 2009-03-23 19:19:42\n\nThis patch causes 20 doctests to fail in extended_rational_field.py starting with:\n\n```\nsage -t -long \"devel/sage/sage/rings/extended_rational_field.py\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.alpha0/devel/sage/sage/rings/extended_rational_field.py\", line 51:\n    sage: loads(dumps(f))\nExpected:\n    Natural morphism:\n      From: Rational Field\n      To:   Extended Rational Field\nGot:\n    Natural endomorphism of Rational Field\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.alpha0/devel/sage/sage/rings/extended_rational_field.py\", line 110:\n    sage: E == loads(dumps(E))\nExpected:\n    True\nGot:\n    False\n**********************************************************************\n<SNIP>\n```\n",
     "created_at": "2009-03-23T19:19:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5521",
     "type": "issue_comment",
@@ -65,7 +65,7 @@ archive/issue_comments_042943.json:
 }
 ```
 
-Attachment
+Attachment [trac_5521.patch](tarball://root/attachments/some-uuid/ticket5521/trac_5521.patch) by mabshoff created at 2009-03-23 19:19:42
 
 This patch causes 20 doctests to fail in extended_rational_field.py starting with:
 

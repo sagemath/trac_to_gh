@@ -224,7 +224,7 @@ I'm sorry for bunching patches together, but I think that the other changes are 
 archive/issue_comments_049648.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [polyhedron-v9.patch](tarball://root/attachments/some-uuid/ticket6214/polyhedron-v9.patch) by vbraun created at 2010-03-11 14:21:22",
     "created_at": "2010-03-11T14:21:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6214",
     "type": "issue_comment",
@@ -233,7 +233,7 @@ archive/issue_comments_049648.json:
 }
 ```
 
-Attachment
+Attachment [polyhedron-v9.patch](tarball://root/attachments/some-uuid/ticket6214/polyhedron-v9.patch) by vbraun created at 2010-03-11 14:21:22
 
 
 

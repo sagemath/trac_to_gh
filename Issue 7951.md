@@ -53,7 +53,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7951
 archive/issue_comments_069377.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7951-zero_variable_poly_coercion.patch](tarball://root/attachments/some-uuid/ticket7951/trac_7951-zero_variable_poly_coercion.patch) by burcin created at 2010-01-17 22:50:27",
     "created_at": "2010-01-17T22:50:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7951",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_069377.json:
 }
 ```
 
-Attachment
+Attachment [trac_7951-zero_variable_poly_coercion.patch](tarball://root/attachments/some-uuid/ticket7951/trac_7951-zero_variable_poly_coercion.patch) by burcin created at 2010-01-17 22:50:27
 
 
 

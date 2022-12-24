@@ -51,7 +51,7 @@ Changing status from new to needs_review.
 archive/issue_comments_094860.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9720-random-echelonizable-matrices.patch](tarball://root/attachments/some-uuid/ticket9720/trac_9720-random-echelonizable-matrices.patch) by bwonderly created at 2010-08-10 19:11:10",
     "created_at": "2010-08-10T19:11:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_094860.json:
 }
 ```
 
-Attachment
+Attachment [trac_9720-random-echelonizable-matrices.patch](tarball://root/attachments/some-uuid/ticket9720/trac_9720-random-echelonizable-matrices.patch) by bwonderly created at 2010-08-10 19:11:10
 
 
 
@@ -99,7 +99,7 @@ the same result either way. Correct?
 archive/issue_comments_094862.json:
 ```json
 {
-    "body": "Attachment\n\nstand-alone version 2 patch, same patch with one revision",
+    "body": "Attachment [trac_9720-random-echelonizable-matrices-v2.patch](tarball://root/attachments/some-uuid/ticket9720/trac_9720-random-echelonizable-matrices-v2.patch) by bwonderly created at 2010-08-11 22:55:31\n\nstand-alone version 2 patch, same patch with one revision",
     "created_at": "2010-08-11T22:55:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
@@ -108,7 +108,7 @@ archive/issue_comments_094862.json:
 }
 ```
 
-Attachment
+Attachment [trac_9720-random-echelonizable-matrices-v2.patch](tarball://root/attachments/some-uuid/ticket9720/trac_9720-random-echelonizable-matrices-v2.patch) by bwonderly created at 2010-08-11 22:55:31
 
 stand-alone version 2 patch, same patch with one revision
 
@@ -321,7 +321,7 @@ stand-alone version 3 of the same patch, with import statement change  and docum
 archive/issue_comments_094870.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:7 jason]:\n> In the first line of the docstring for the second function, you say:\n> \n> Generate a matrix of a desired size and rank, over a desired field,\n> \n> Should that say \"desired ring\"?\n\nAbsolutely, I've made that change and the import statement change, and all tests passed.",
+    "body": "Attachment [trac_9720-random-echelonizable-matrices-v3.patch](tarball://root/attachments/some-uuid/ticket9720/trac_9720-random-echelonizable-matrices-v3.patch) by bwonderly created at 2010-08-12 07:16:38\n\nReplying to [comment:7 jason]:\n> In the first line of the docstring for the second function, you say:\n> \n> Generate a matrix of a desired size and rank, over a desired field,\n> \n> Should that say \"desired ring\"?\n\nAbsolutely, I've made that change and the import statement change, and all tests passed.",
     "created_at": "2010-08-12T07:16:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
@@ -330,7 +330,7 @@ archive/issue_comments_094870.json:
 }
 ```
 
-Attachment
+Attachment [trac_9720-random-echelonizable-matrices-v3.patch](tarball://root/attachments/some-uuid/ticket9720/trac_9720-random-echelonizable-matrices-v3.patch) by bwonderly created at 2010-08-12 07:16:38
 
 Replying to [comment:7 jason]:
 > In the first line of the docstring for the second function, you say:
@@ -683,7 +683,7 @@ I'm a slight -1 on making random_matrix take a ton of options, a lot of which ma
 archive/issue_comments_094886.json:
 ```json
 {
-    "body": "Attachment\n\nSame as v3, but removed routines from global namespace",
+    "body": "Attachment [trac_9720-random-echelonizable-matrices-v4.patch](tarball://root/attachments/some-uuid/ticket9720/trac_9720-random-echelonizable-matrices-v4.patch) by rbeezer created at 2010-08-25 21:33:27\n\nSame as v3, but removed routines from global namespace",
     "created_at": "2010-08-25T21:33:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
@@ -692,7 +692,7 @@ archive/issue_comments_094886.json:
 }
 ```
 
-Attachment
+Attachment [trac_9720-random-echelonizable-matrices-v4.patch](tarball://root/attachments/some-uuid/ticket9720/trac_9720-random-echelonizable-matrices-v4.patch) by rbeezer created at 2010-08-25 21:33:27
 
 Same as v3, but removed routines from global namespace
 

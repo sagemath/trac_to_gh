@@ -68,7 +68,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1573
 archive/issue_comments_010008.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-2.9-wrap.cc-mismatched-free.patch](tarball://root/attachments/some-uuid/ticket1573/Sage-2.9-wrap.cc-mismatched-free.patch) by mabshoff created at 2007-12-20 12:18:30",
     "created_at": "2007-12-20T12:18:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1573",
     "type": "issue_comment",
@@ -77,7 +77,7 @@ archive/issue_comments_010008.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.9-wrap.cc-mismatched-free.patch](tarball://root/attachments/some-uuid/ticket1573/Sage-2.9-wrap.cc-mismatched-free.patch) by mabshoff created at 2007-12-20 12:18:30
 
 
 

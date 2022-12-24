@@ -56,7 +56,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5010
 archive/issue_comments_038192.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5010_real_double_NaN.patch](tarball://root/attachments/some-uuid/ticket5010/trac_5010_real_double_NaN.patch) by mabshoff created at 2009-01-18 06:43:07",
     "created_at": "2009-01-18T06:43:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5010",
     "type": "issue_comment",
@@ -65,7 +65,7 @@ archive/issue_comments_038192.json:
 }
 ```
 
-Attachment
+Attachment [trac_5010_real_double_NaN.patch](tarball://root/attachments/some-uuid/ticket5010/trac_5010_real_double_NaN.patch) by mabshoff created at 2009-01-18 06:43:07
 
 
 

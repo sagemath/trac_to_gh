@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7533
 archive/issue_comments_063880.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7533_distance_graphs.patch](tarball://root/attachments/some-uuid/ticket7533/trac_7533_distance_graphs.patch) by rbeezer created at 2009-11-26 07:05:24",
     "created_at": "2009-11-26T07:05:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7533",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_063880.json:
 }
 ```
 
-Attachment
+Attachment [trac_7533_distance_graphs.patch](tarball://root/attachments/some-uuid/ticket7533/trac_7533_distance_graphs.patch) by rbeezer created at 2009-11-26 07:05:24
 
 
 
@@ -163,7 +163,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_063886.json:
 ```json
 {
-    "body": "Attachment\n\nNew patch addresses two of Nathann's suggestions.\n\n1.  A list of distances, or a single distance, are now possible.  New doctests illustrate this and aslo show how to build the graph with all the distances *less than or equal* to a specified value.\n\n2.  Using `shortest_path_all_pairs()` turns out, surprisingly, to be much slower.  It added about 37 seconds to running the tests for the file (from 80 seconds to 117 seconds).  For the odd graph with parameter 5 (on 126 vertices), the \"all pair\" version took about 20 seconds while the version in the current patch (which uses `.distance()`) takes a bit over 2 seconds.",
+    "body": "Attachment [trac_7533_distance_graphs_2.patch](tarball://root/attachments/some-uuid/ticket7533/trac_7533_distance_graphs_2.patch) by rbeezer created at 2009-11-27 09:01:40\n\nNew patch addresses two of Nathann's suggestions.\n\n1.  A list of distances, or a single distance, are now possible.  New doctests illustrate this and aslo show how to build the graph with all the distances *less than or equal* to a specified value.\n\n2.  Using `shortest_path_all_pairs()` turns out, surprisingly, to be much slower.  It added about 37 seconds to running the tests for the file (from 80 seconds to 117 seconds).  For the odd graph with parameter 5 (on 126 vertices), the \"all pair\" version took about 20 seconds while the version in the current patch (which uses `.distance()`) takes a bit over 2 seconds.",
     "created_at": "2009-11-27T09:01:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7533",
     "type": "issue_comment",
@@ -172,7 +172,7 @@ archive/issue_comments_063886.json:
 }
 ```
 
-Attachment
+Attachment [trac_7533_distance_graphs_2.patch](tarball://root/attachments/some-uuid/ticket7533/trac_7533_distance_graphs_2.patch) by rbeezer created at 2009-11-27 09:01:40
 
 New patch addresses two of Nathann's suggestions.
 

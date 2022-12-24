@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/260
 archive/issue_comments_001208.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch adds a keyword argument `transparency` to `plot.show()`.  The default value is `None`, which makes the image background opaque.  A number between 0 (transparent) and 1 (opaque) determines the degree of transparency.\n\nPlease test and make changes.  I'm new to the plotting code, so it's likely that I've missed and/or broken something.",
+    "body": "Attachment [trac_260-transparent_graphics.patch](tarball://root/attachments/some-uuid/ticket260/trac_260-transparent_graphics.patch) by mpatel created at 2009-08-10 15:25:48\n\nThe attached patch adds a keyword argument `transparency` to `plot.show()`.  The default value is `None`, which makes the image background opaque.  A number between 0 (transparent) and 1 (opaque) determines the degree of transparency.\n\nPlease test and make changes.  I'm new to the plotting code, so it's likely that I've missed and/or broken something.",
     "created_at": "2009-08-10T15:25:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/260",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_001208.json:
 }
 ```
 
-Attachment
+Attachment [trac_260-transparent_graphics.patch](tarball://root/attachments/some-uuid/ticket260/trac_260-transparent_graphics.patch) by mpatel created at 2009-08-10 15:25:48
 
 The attached patch adds a keyword argument `transparency` to `plot.show()`.  The default value is `None`, which makes the image background opaque.  A number between 0 (transparent) and 1 (opaque) determines the degree of transparency.
 
@@ -79,7 +79,7 @@ Added examples.
 archive/issue_comments_001210.json:
 ```json
 {
-    "body": "Attachment\n\nPerhaps `opacity` is a more appropriate keyword (`alpha` gave errors).",
+    "body": "Attachment [trac_260-transparent_graphics_v2.patch](tarball://root/attachments/some-uuid/ticket260/trac_260-transparent_graphics_v2.patch) by mpatel created at 2009-08-17 09:13:52\n\nPerhaps `opacity` is a more appropriate keyword (`alpha` gave errors).",
     "created_at": "2009-08-17T09:13:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/260",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_001210.json:
 }
 ```
 
-Attachment
+Attachment [trac_260-transparent_graphics_v2.patch](tarball://root/attachments/some-uuid/ticket260/trac_260-transparent_graphics_v2.patch) by mpatel created at 2009-08-17 09:13:52
 
 Perhaps `opacity` is a more appropriate keyword (`alpha` gave errors).
 
@@ -313,7 +313,7 @@ Add opacity and background_color plot options.  Apply only this patch.
 archive/issue_comments_001220.json:
 ```json
 {
-    "body": "Attachment\n\nThe [attachment:trac_260-plot_bg_alpha.patch new patch] adds `background_color` and `opacity` keyword options to `plot()`.  Examples:\n\n```python\nsage: plot(x^cos(x^(sin(x))), (0, 30),  fill='axis', fillcolor='yellow', opacity=0.5)\n```\n\n\n```python\nsage: C = 1.0\nsage: a, b = var('a, b')\nsage: lem = contour_plot(2 * C^2 * (b^2 - a^2) - (a^2 + b^2)^2, (a, -2, 2), (b, -2, 2), plot_points=100, transparent=True, contours=25, cmap='Spectral')\nsage: lem.show(aspect_ratio=1.0, background_color='khaki')\n```\n\n\nCan a Sage plotting or matplotlib expert point out how to make the background uniform when *both* `background_color` and `opacity` are given?  Try this:\n\n```python\nsage: plot(x^cos(x^(sin(x))), (0, 30),  fill='axis', fillcolor='yellow', background_color='red', opacity=0.5)\n```\n\nNote how the plot's thick \"border\" has a different apparent transparency level.  Is this an [alpha compositing](http://en.wikipedia.org/wiki/Alpha_compositing) or blending problem?",
+    "body": "Attachment [trac_260-plot_bg_alpha.patch](tarball://root/attachments/some-uuid/ticket260/trac_260-plot_bg_alpha.patch) by mpatel created at 2009-10-23 00:35:44\n\nThe [attachment:trac_260-plot_bg_alpha.patch new patch] adds `background_color` and `opacity` keyword options to `plot()`.  Examples:\n\n```python\nsage: plot(x^cos(x^(sin(x))), (0, 30),  fill='axis', fillcolor='yellow', opacity=0.5)\n```\n\n\n```python\nsage: C = 1.0\nsage: a, b = var('a, b')\nsage: lem = contour_plot(2 * C^2 * (b^2 - a^2) - (a^2 + b^2)^2, (a, -2, 2), (b, -2, 2), plot_points=100, transparent=True, contours=25, cmap='Spectral')\nsage: lem.show(aspect_ratio=1.0, background_color='khaki')\n```\n\n\nCan a Sage plotting or matplotlib expert point out how to make the background uniform when *both* `background_color` and `opacity` are given?  Try this:\n\n```python\nsage: plot(x^cos(x^(sin(x))), (0, 30),  fill='axis', fillcolor='yellow', background_color='red', opacity=0.5)\n```\n\nNote how the plot's thick \"border\" has a different apparent transparency level.  Is this an [alpha compositing](http://en.wikipedia.org/wiki/Alpha_compositing) or blending problem?",
     "created_at": "2009-10-23T00:35:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/260",
     "type": "issue_comment",
@@ -322,7 +322,7 @@ archive/issue_comments_001220.json:
 }
 ```
 
-Attachment
+Attachment [trac_260-plot_bg_alpha.patch](tarball://root/attachments/some-uuid/ticket260/trac_260-plot_bg_alpha.patch) by mpatel created at 2009-10-23 00:35:44
 
 The [attachment:trac_260-plot_bg_alpha.patch new patch] adds `background_color` and `opacity` keyword options to `plot()`.  Examples:
 
@@ -488,7 +488,7 @@ I've [posted to matplotlib-users](http://sourceforge.net/mailarchive/forum.php?t
 archive/issue_comments_001228.json:
 ```json
 {
-    "body": "Attachment\n\nRebased.  Applies cleanly to Sage 4.6.2.",
+    "body": "Attachment [trac_260-plot_bg_alpha_rebased.patch](tarball://root/attachments/some-uuid/ticket260/trac_260-plot_bg_alpha_rebased.patch) by ryan created at 2011-04-16 05:12:44\n\nRebased.  Applies cleanly to Sage 4.6.2.",
     "created_at": "2011-04-16T05:12:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/260",
     "type": "issue_comment",
@@ -497,7 +497,7 @@ archive/issue_comments_001228.json:
 }
 ```
 
-Attachment
+Attachment [trac_260-plot_bg_alpha_rebased.patch](tarball://root/attachments/some-uuid/ticket260/trac_260-plot_bg_alpha_rebased.patch) by ryan created at 2011-04-16 05:12:44
 
 Rebased.  Applies cleanly to Sage 4.6.2.
 

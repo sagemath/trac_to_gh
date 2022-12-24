@@ -285,7 +285,7 @@ rebased
 archive/issue_comments_049879.json:
 ```json
 {
-    "body": "Attachment\n\nI rebased the patch to Sage 4.3.4.  Can you look at it again?",
+    "body": "Attachment [trac-6245-infix-decorator.patch](tarball://root/attachments/some-uuid/ticket6245/trac-6245-infix-decorator.patch) by jason created at 2010-04-15 03:50:57\n\nI rebased the patch to Sage 4.3.4.  Can you look at it again?",
     "created_at": "2010-04-15T03:50:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6245",
     "type": "issue_comment",
@@ -294,7 +294,7 @@ archive/issue_comments_049879.json:
 }
 ```
 
-Attachment
+Attachment [trac-6245-infix-decorator.patch](tarball://root/attachments/some-uuid/ticket6245/trac-6245-infix-decorator.patch) by jason created at 2010-04-15 03:50:57
 
 I rebased the patch to Sage 4.3.4.  Can you look at it again?
 

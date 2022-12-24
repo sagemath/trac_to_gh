@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6608
 archive/issue_comments_054101.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6608-nodetex.patch](tarball://root/attachments/some-uuid/ticket6608/trac_6608-nodetex.patch) by jhpalmieri created at 2009-07-24 00:26:40",
     "created_at": "2009-07-24T00:26:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6608",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_054101.json:
 }
 ```
 
-Attachment
+Attachment [trac_6608-nodetex.patch](tarball://root/attachments/some-uuid/ticket6608/trac_6608-nodetex.patch) by jhpalmieri created at 2009-07-24 00:26:40
 
 
 

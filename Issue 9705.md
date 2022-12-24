@@ -206,7 +206,7 @@ The idea of the fix is simply that for Magma we just evaluate the input block as
 archive/issue_comments_094436.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9705.patch](tarball://root/attachments/some-uuid/ticket9705/trac_9705.patch) by was created at 2011-03-21 22:47:08",
     "created_at": "2011-03-21T22:47:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9705",
     "type": "issue_comment",
@@ -215,7 +215,7 @@ archive/issue_comments_094436.json:
 }
 ```
 
-Attachment
+Attachment [trac_9705.patch](tarball://root/attachments/some-uuid/ticket9705/trac_9705.patch) by was created at 2011-03-21 22:47:08
 
 
 
@@ -338,7 +338,7 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_094443.json:
 ```json
 {
-    "body": "Attachment\n\nI reformated the old part of the function's documentation, that was incorrect. Now everything builds fine with the right output.\n\nSorry for this trouble!",
+    "body": "Attachment [trac-9705-magma_block_evaluation-doc.patch](tarball://root/attachments/some-uuid/ticket9705/trac-9705-magma_block_evaluation-doc.patch) by mraum created at 2011-03-29 06:20:29\n\nI reformated the old part of the function's documentation, that was incorrect. Now everything builds fine with the right output.\n\nSorry for this trouble!",
     "created_at": "2011-03-29T06:20:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9705",
     "type": "issue_comment",
@@ -347,7 +347,7 @@ archive/issue_comments_094443.json:
 }
 ```
 
-Attachment
+Attachment [trac-9705-magma_block_evaluation-doc.patch](tarball://root/attachments/some-uuid/ticket9705/trac-9705-magma_block_evaluation-doc.patch) by mraum created at 2011-03-29 06:20:29
 
 I reformated the old part of the function's documentation, that was incorrect. Now everything builds fine with the right output.
 
@@ -544,7 +544,7 @@ You better do it as I don't know nor have Magma.
 archive/issue_comments_094452.json:
 ```json
 {
-    "body": "Attachment\n\nI removed the linebreaks an the tests pass. The document builds without warnings, but this should be checked by others.",
+    "body": "Attachment [trac-9705-magma_block_evaluation-linebreak.patch](tarball://root/attachments/some-uuid/ticket9705/trac-9705-magma_block_evaluation-linebreak.patch) by mraum created at 2011-04-08 17:11:11\n\nI removed the linebreaks an the tests pass. The document builds without warnings, but this should be checked by others.",
     "created_at": "2011-04-08T17:11:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9705",
     "type": "issue_comment",
@@ -553,7 +553,7 @@ archive/issue_comments_094452.json:
 }
 ```
 
-Attachment
+Attachment [trac-9705-magma_block_evaluation-linebreak.patch](tarball://root/attachments/some-uuid/ticket9705/trac-9705-magma_block_evaluation-linebreak.patch) by mraum created at 2011-04-08 17:11:11
 
 I removed the linebreaks an the tests pass. The document builds without warnings, but this should be checked by others.
 

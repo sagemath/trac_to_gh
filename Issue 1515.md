@@ -45,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1515
 archive/issue_comments_009711.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [parametric-surface.diff](tarball://root/attachments/some-uuid/ticket1515/parametric-surface.diff) by robertwb created at 2007-12-15 02:02:07",
     "created_at": "2007-12-15T02:02:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1515",
     "type": "issue_comment",
@@ -54,7 +54,7 @@ archive/issue_comments_009711.json:
 }
 ```
 
-Attachment
+Attachment [parametric-surface.diff](tarball://root/attachments/some-uuid/ticket1515/parametric-surface.diff) by robertwb created at 2007-12-15 02:02:07
 
 
 

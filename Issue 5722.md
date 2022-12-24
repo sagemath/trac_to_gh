@@ -154,7 +154,7 @@ Michael
 archive/issue_comments_044714.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5722-fast-callable-pow.patch](tarball://root/attachments/some-uuid/ticket5722/5722-fast-callable-pow.patch) by robertwb created at 2009-04-09 07:52:56",
     "created_at": "2009-04-09T07:52:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5722",
     "type": "issue_comment",
@@ -163,7 +163,7 @@ archive/issue_comments_044714.json:
 }
 ```
 
-Attachment
+Attachment [5722-fast-callable-pow.patch](tarball://root/attachments/some-uuid/ticket5722/5722-fast-callable-pow.patch) by robertwb created at 2009-04-09 07:52:56
 
 
 

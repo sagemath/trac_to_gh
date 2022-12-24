@@ -117,7 +117,7 @@ Actually, this won't work if there is a stale constants.cpp file sitting around 
 archive/issue_comments_048860.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6114.patch](tarball://root/attachments/some-uuid/ticket6114/trac_6114.patch) by was created at 2009-05-28 08:01:13",
     "created_at": "2009-05-28T08:01:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6114",
     "type": "issue_comment",
@@ -126,7 +126,7 @@ archive/issue_comments_048860.json:
 }
 ```
 
-Attachment
+Attachment [trac_6114.patch](tarball://root/attachments/some-uuid/ticket6114/trac_6114.patch) by was created at 2009-05-28 08:01:13
 
 
 

@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2810
 archive/issue_comments_019283.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9384.patch](tarball://root/attachments/some-uuid/ticket2810/9384.patch) by cremona created at 2008-04-05 16:49:30",
     "created_at": "2008-04-05T16:49:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2810",
     "type": "issue_comment",
@@ -43,7 +43,7 @@ archive/issue_comments_019283.json:
 }
 ```
 
-Attachment
+Attachment [9384.patch](tarball://root/attachments/some-uuid/ticket2810/9384.patch) by cremona created at 2008-04-05 16:49:30
 
 
 
@@ -187,7 +187,7 @@ archive/issue_comments_019289.json:
 archive/issue_comments_019290.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [fixes_for_trac_2810_generic_code_ell_curve.patch](tarball://root/attachments/some-uuid/ticket2810/fixes_for_trac_2810_generic_code_ell_curve.patch) by malb created at 2008-04-05 22:59:34",
     "created_at": "2008-04-05T22:59:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2810",
     "type": "issue_comment",
@@ -196,7 +196,7 @@ archive/issue_comments_019290.json:
 }
 ```
 
-Attachment
+Attachment [fixes_for_trac_2810_generic_code_ell_curve.patch](tarball://root/attachments/some-uuid/ticket2810/fixes_for_trac_2810_generic_code_ell_curve.patch) by malb created at 2008-04-05 22:59:34
 
 
 

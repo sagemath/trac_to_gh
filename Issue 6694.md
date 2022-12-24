@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6694
 archive/issue_comments_055004.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6694-live_ref_manual.patch](tarball://root/attachments/some-uuid/ticket6694/trac_6694-live_ref_manual.patch) by mpatel created at 2009-08-09 06:10:36",
     "created_at": "2009-08-09T06:10:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6694",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_055004.json:
 }
 ```
 
-Attachment
+Attachment [trac_6694-live_ref_manual.patch](tarball://root/attachments/some-uuid/ticket6694/trac_6694-live_ref_manual.patch) by mpatel created at 2009-08-09 06:10:36
 
 
 
@@ -73,7 +73,7 @@ Actually, the patch is not specific to the manual, so we should be able to add o
 archive/issue_comments_055006.json:
 ```json
 {
-    "body": "Attachment\n\nHandle nonexistent pages better.  Apply only this patch.",
+    "body": "Attachment [trac_6694-live_ref_manual_v2.patch](tarball://root/attachments/some-uuid/ticket6694/trac_6694-live_ref_manual_v2.patch) by mpatel created at 2009-08-09 18:00:30\n\nHandle nonexistent pages better.  Apply only this patch.",
     "created_at": "2009-08-09T18:00:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6694",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_055006.json:
 }
 ```
 
-Attachment
+Attachment [trac_6694-live_ref_manual_v2.patch](tarball://root/attachments/some-uuid/ticket6694/trac_6694-live_ref_manual_v2.patch) by mpatel created at 2009-08-09 18:00:30
 
 Handle nonexistent pages better.  Apply only this patch.
 
@@ -111,7 +111,7 @@ The new version does not throw an exception for, e.g., `http://localhost:8000/do
 archive/issue_comments_055008.json:
 ```json
 {
-    "body": "Attachment\n\nStyle tweaks.  Apply before or after \"live_ref_manual\" patch.",
+    "body": "Attachment [trac_6694-css.patch](tarball://root/attachments/some-uuid/ticket6694/trac_6694-css.patch) by mpatel created at 2009-08-09 19:55:18\n\nStyle tweaks.  Apply before or after \"live_ref_manual\" patch.",
     "created_at": "2009-08-09T19:55:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6694",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_055008.json:
 }
 ```
 
-Attachment
+Attachment [trac_6694-css.patch](tarball://root/attachments/some-uuid/ticket6694/trac_6694-css.patch) by mpatel created at 2009-08-09 19:55:18
 
 Style tweaks.  Apply before or after "live_ref_manual" patch.
 
@@ -213,7 +213,7 @@ Normalize real paths. Apply only this patch.
 archive/issue_comments_055013.json:
 ```json
 {
-    "body": "Attachment\n\nUse os.path.join(). Apply only this patch.",
+    "body": "Attachment [trac_6694-live_ref_manual_v3.patch](tarball://root/attachments/some-uuid/ticket6694/trac_6694-live_ref_manual_v3.patch) by mpatel created at 2009-09-23 00:45:20\n\nUse os.path.join(). Apply only this patch.",
     "created_at": "2009-09-23T00:45:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6694",
     "type": "issue_comment",
@@ -222,7 +222,7 @@ archive/issue_comments_055013.json:
 }
 ```
 
-Attachment
+Attachment [trac_6694-live_ref_manual_v3.patch](tarball://root/attachments/some-uuid/ticket6694/trac_6694-live_ref_manual_v3.patch) by mpatel created at 2009-09-23 00:45:20
 
 Use os.path.join(). Apply only this patch.
 
@@ -233,7 +233,7 @@ Use os.path.join(). Apply only this patch.
 archive/issue_comments_055014.json:
 ```json
 {
-    "body": "Attachment\n\nPlease try [attachment:trac_6694-live_ref_manual_v3.2.patch v3.2].",
+    "body": "Attachment [trac_6694-live_ref_manual_v3.2.patch](tarball://root/attachments/some-uuid/ticket6694/trac_6694-live_ref_manual_v3.2.patch) by mpatel created at 2009-09-23 00:47:04\n\nPlease try [attachment:trac_6694-live_ref_manual_v3.2.patch v3.2].",
     "created_at": "2009-09-23T00:47:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6694",
     "type": "issue_comment",
@@ -242,7 +242,7 @@ archive/issue_comments_055014.json:
 }
 ```
 
-Attachment
+Attachment [trac_6694-live_ref_manual_v3.2.patch](tarball://root/attachments/some-uuid/ticket6694/trac_6694-live_ref_manual_v3.2.patch) by mpatel created at 2009-09-23 00:47:04
 
 Please try [attachment:trac_6694-live_ref_manual_v3.2.patch v3.2].
 

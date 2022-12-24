@@ -76,7 +76,7 @@ We also encounter similar issues with numpy and scipy.
 archive/issue_comments_030437.json:
 ```json
 {
-    "body": "Attachment\n\nTo release manager:\nThis now works, given #5448 (and possibly earlier).\n\n```\nsage: import pylab\nsage: x1 = srange(0,1.1,0.01)\nsage: d1 = [2*x+x^2 for x in x1]\nsage: pylab.clf() # clear the figure first\nsage: pylab.figure(1)\n<matplotlib.figure.Figure object at 0x16d41d0>\nsage: pylab.plot(x1,d1, label=\"d1\")\n[<matplotlib.lines.Line2D object at 0x102ceb0>]\nsage: pylab.ylabel(\"$f(x)$\") # label the axes\n<matplotlib.text.Text object at 0x4413f0>\nsage: pylab.xlabel(\"$x$\")\n<matplotlib.text.Text object at 0x1038890>\nsage: pylab.savefig('foo.png',dpi=72)\n```\n\nfoo.png is attached.",
+    "body": "Attachment [foo.png](tarball://root/attachments/some-uuid/ticket4194/foo.png) by kcrisman created at 2009-09-15 17:34:07\n\nTo release manager:\nThis now works, given #5448 (and possibly earlier).\n\n```\nsage: import pylab\nsage: x1 = srange(0,1.1,0.01)\nsage: d1 = [2*x+x^2 for x in x1]\nsage: pylab.clf() # clear the figure first\nsage: pylab.figure(1)\n<matplotlib.figure.Figure object at 0x16d41d0>\nsage: pylab.plot(x1,d1, label=\"d1\")\n[<matplotlib.lines.Line2D object at 0x102ceb0>]\nsage: pylab.ylabel(\"$f(x)$\") # label the axes\n<matplotlib.text.Text object at 0x4413f0>\nsage: pylab.xlabel(\"$x$\")\n<matplotlib.text.Text object at 0x1038890>\nsage: pylab.savefig('foo.png',dpi=72)\n```\n\nfoo.png is attached.",
     "created_at": "2009-09-15T17:34:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4194",
     "type": "issue_comment",
@@ -85,7 +85,7 @@ archive/issue_comments_030437.json:
 }
 ```
 
-Attachment
+Attachment [foo.png](tarball://root/attachments/some-uuid/ticket4194/foo.png) by kcrisman created at 2009-09-15 17:34:07
 
 To release manager:
 This now works, given #5448 (and possibly earlier).
@@ -261,7 +261,7 @@ Changing status from new to needs_review.
 archive/issue_comments_030445.json:
 ```json
 {
-    "body": "Attachment\n\naccording to the matplotlib-users discussion, the issue arises because the file is not flushed before being closed.  This patch correctly opens, writes and most importantly flush the file before closing.\n\nThe bug still appears to exist upstream.",
+    "body": "Attachment [trac_4196_mpl_workaround.patch](tarball://root/attachments/some-uuid/ticket4194/trac_4196_mpl_workaround.patch) by ryan created at 2011-01-11 05:33:10\n\naccording to the matplotlib-users discussion, the issue arises because the file is not flushed before being closed.  This patch correctly opens, writes and most importantly flush the file before closing.\n\nThe bug still appears to exist upstream.",
     "created_at": "2011-01-11T05:33:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4194",
     "type": "issue_comment",
@@ -270,7 +270,7 @@ archive/issue_comments_030445.json:
 }
 ```
 
-Attachment
+Attachment [trac_4196_mpl_workaround.patch](tarball://root/attachments/some-uuid/ticket4194/trac_4196_mpl_workaround.patch) by ryan created at 2011-01-11 05:33:10
 
 according to the matplotlib-users discussion, the issue arises because the file is not flushed before being closed.  This patch correctly opens, writes and most importantly flush the file before closing.
 

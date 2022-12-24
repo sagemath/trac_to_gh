@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2762
 archive/issue_comments_018975.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [flint-cflags.patch](tarball://root/attachments/some-uuid/ticket2762/flint-cflags.patch) by tabbott created at 2008-04-01 21:31:24",
     "created_at": "2008-04-01T21:31:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2762",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_018975.json:
 }
 ```
 
-Attachment
+Attachment [flint-cflags.patch](tarball://root/attachments/some-uuid/ticket2762/flint-cflags.patch) by tabbott created at 2008-04-01 21:31:24
 
 
 

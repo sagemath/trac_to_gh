@@ -163,7 +163,7 @@ Oops, I forgot to mention that this depends on #8881.
 archive/issue_comments_081740.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8890-free_module-cleanup-nt.patch](tarball://root/attachments/some-uuid/ticket8890/trac_8890-free_module-cleanup-nt.patch) by nthiery created at 2010-06-02 08:30:54",
     "created_at": "2010-06-02T08:30:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8890",
     "type": "issue_comment",
@@ -172,7 +172,7 @@ archive/issue_comments_081740.json:
 }
 ```
 
-Attachment
+Attachment [trac_8890-free_module-cleanup-nt.patch](tarball://root/attachments/some-uuid/ticket8890/trac_8890-free_module-cleanup-nt.patch) by nthiery created at 2010-06-02 08:30:54
 
 
 

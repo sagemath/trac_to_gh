@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8295
 archive/issue_comments_073485.json:
 ```json
 {
-    "body": "Attachment\n\nAdd documentation for new files to reference manual",
+    "body": "Attachment [trac_8295_doc.patch](tarball://root/attachments/some-uuid/ticket8295/trac_8295_doc.patch) by bump created at 2010-02-17 18:26:52\n\nAdd documentation for new files to reference manual",
     "created_at": "2010-02-17T18:26:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8295",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_073485.json:
 }
 ```
 
-Attachment
+Attachment [trac_8295_doc.patch](tarball://root/attachments/some-uuid/ticket8295/trac_8295_doc.patch) by bump created at 2010-02-17 18:26:52
 
 Add documentation for new files to reference manual
 

@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7053
 archive/issue_comments_058390.json:
 ```json
 {
-    "body": "Attachment\n\nFixes bug in template arguments.",
+    "body": "Attachment [trac_7053-sagenb-uploaded-files.patch](tarball://root/attachments/some-uuid/ticket7053/trac_7053-sagenb-uploaded-files.patch) by timdumol created at 2009-09-28 17:28:49\n\nFixes bug in template arguments.",
     "created_at": "2009-09-28T17:28:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7053",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_058390.json:
 }
 ```
 
-Attachment
+Attachment [trac_7053-sagenb-uploaded-files.patch](tarball://root/attachments/some-uuid/ticket7053/trac_7053-sagenb-uploaded-files.patch) by timdumol created at 2009-09-28 17:28:49
 
 Fixes bug in template arguments.
 

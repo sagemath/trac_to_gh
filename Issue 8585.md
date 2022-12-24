@@ -160,7 +160,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_077756.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:4 nborie]:\nOups ! I forgot to reupload the patch after sending my e-mail... Sorry.",
+    "body": "Attachment [trac_8585-permutation_group_on_empty_set-fh.patch](tarball://root/attachments/some-uuid/ticket8585/trac_8585-permutation_group_on_empty_set-fh.patch) by hivert created at 2010-04-16 10:20:09\n\nReplying to [comment:4 nborie]:\nOups ! I forgot to reupload the patch after sending my e-mail... Sorry.",
     "created_at": "2010-04-16T10:20:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8585",
     "type": "issue_comment",
@@ -169,7 +169,7 @@ archive/issue_comments_077756.json:
 }
 ```
 
-Attachment
+Attachment [trac_8585-permutation_group_on_empty_set-fh.patch](tarball://root/attachments/some-uuid/ticket8585/trac_8585-permutation_group_on_empty_set-fh.patch) by hivert created at 2010-04-16 10:20:09
 
 Replying to [comment:4 nborie]:
 Oups ! I forgot to reupload the patch after sending my e-mail... Sorry.

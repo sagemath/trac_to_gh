@@ -62,7 +62,7 @@ Changing status from new to assigned.
 archive/issue_comments_025353.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3588-slowdiv.patch](tarball://root/attachments/some-uuid/ticket3588/3588-slowdiv.patch) by robertwb created at 2008-07-07 21:06:12",
     "created_at": "2008-07-07T21:06:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3588",
     "type": "issue_comment",
@@ -71,7 +71,7 @@ archive/issue_comments_025353.json:
 }
 ```
 
-Attachment
+Attachment [3588-slowdiv.patch](tarball://root/attachments/some-uuid/ticket3588/3588-slowdiv.patch) by robertwb created at 2008-07-07 21:06:12
 
 
 
@@ -174,7 +174,7 @@ Resolution changed from fixed to
 archive/issue_comments_025359.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [quickfix.patch](tarball://root/attachments/some-uuid/ticket3588/quickfix.patch) by was created at 2008-07-11 18:48:11",
     "created_at": "2008-07-11T18:48:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3588",
     "type": "issue_comment",
@@ -183,7 +183,7 @@ archive/issue_comments_025359.json:
 }
 ```
 
-Attachment
+Attachment [quickfix.patch](tarball://root/attachments/some-uuid/ticket3588/quickfix.patch) by was created at 2008-07-11 18:48:11
 
 
 

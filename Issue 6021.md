@@ -222,7 +222,7 @@ I will look into it.
 archive/issue_comments_047947.json:
 ```json
 {
-    "body": "Attachment\n\nReplaces all previous; based on 4.0.alpha0",
+    "body": "Attachment [trac_6021_new.patch](tarball://root/attachments/some-uuid/ticket6021/trac_6021_new.patch) by cremona created at 2009-05-17 16:56:03\n\nReplaces all previous; based on 4.0.alpha0",
     "created_at": "2009-05-17T16:56:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6021",
     "type": "issue_comment",
@@ -231,7 +231,7 @@ archive/issue_comments_047947.json:
 }
 ```
 
-Attachment
+Attachment [trac_6021_new.patch](tarball://root/attachments/some-uuid/ticket6021/trac_6021_new.patch) by cremona created at 2009-05-17 16:56:03
 
 Replaces all previous; based on 4.0.alpha0
 
@@ -329,7 +329,7 @@ I'm headed to bed soon, but I think Pari is involved in the root finding.
 archive/issue_comments_047952.json:
 ```json
 {
-    "body": "Attachment\n\nApply after previous",
+    "body": "Attachment [embed_qqbar.patch](tarball://root/attachments/some-uuid/ticket6021/embed_qqbar.patch) by cremona created at 2009-05-22 15:03:55\n\nApply after previous",
     "created_at": "2009-05-22T15:03:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6021",
     "type": "issue_comment",
@@ -338,7 +338,7 @@ archive/issue_comments_047952.json:
 }
 ```
 
-Attachment
+Attachment [embed_qqbar.patch](tarball://root/attachments/some-uuid/ticket6021/embed_qqbar.patch) by cremona created at 2009-05-22 15:03:55
 
 Apply after previous
 
@@ -367,7 +367,7 @@ apply after previous two
 archive/issue_comments_047954.json:
 ```json
 {
-    "body": "Attachment\n\nOK, so I have added two new patches:  embed_qqbar.patch is independent of the others, and adds functionality to the refine_embedding() function for embeddings of number fields to allow extending any embedding into RR or CC to an embedding into AA or QQbar (choosing the correct root).  Then cperiods.patch uses that to rethink how precision is handled for period lattices (real and complex):  the embedding supplied by the user is only used to determine which embedding is wanted, not its precision (which is ignored).  the lattice converts this (on construction) into an embedding into AA or QQbar, which it keeps.  Then the period-finding functions do as much as they can exactly (i.e. in AA or QQbar), up as far as computing sqrt(ei-ej) where e1,e2,e3 are the roots of the 2-division polynomial (so these expressions may have degree 6* the degree of the field);  only then are they converted into RR or CC (with the correct precision) for the transcendental step of computing AGMs.\n\nTo test this I removed the \"...\" which worried robertwb and reran the doctests -- they now all pass and agree on both 32 and 64-bit machines.\n\nI think this is a good strategy to use for number field embeddings (a.k.a. infinite places): separate the information \"which place\" from the information \"what precision\".\n\nIf this is approved, I will use the same tactic to improve the precision of the elliptic log (since the next thing on this agenda is to implement complex elliptic logs).",
+    "body": "Attachment [cperiods.patch](tarball://root/attachments/some-uuid/ticket6021/cperiods.patch) by cremona created at 2009-05-22 15:13:07\n\nOK, so I have added two new patches:  embed_qqbar.patch is independent of the others, and adds functionality to the refine_embedding() function for embeddings of number fields to allow extending any embedding into RR or CC to an embedding into AA or QQbar (choosing the correct root).  Then cperiods.patch uses that to rethink how precision is handled for period lattices (real and complex):  the embedding supplied by the user is only used to determine which embedding is wanted, not its precision (which is ignored).  the lattice converts this (on construction) into an embedding into AA or QQbar, which it keeps.  Then the period-finding functions do as much as they can exactly (i.e. in AA or QQbar), up as far as computing sqrt(ei-ej) where e1,e2,e3 are the roots of the 2-division polynomial (so these expressions may have degree 6* the degree of the field);  only then are they converted into RR or CC (with the correct precision) for the transcendental step of computing AGMs.\n\nTo test this I removed the \"...\" which worried robertwb and reran the doctests -- they now all pass and agree on both 32 and 64-bit machines.\n\nI think this is a good strategy to use for number field embeddings (a.k.a. infinite places): separate the information \"which place\" from the information \"what precision\".\n\nIf this is approved, I will use the same tactic to improve the precision of the elliptic log (since the next thing on this agenda is to implement complex elliptic logs).",
     "created_at": "2009-05-22T15:13:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6021",
     "type": "issue_comment",
@@ -376,7 +376,7 @@ archive/issue_comments_047954.json:
 }
 ```
 
-Attachment
+Attachment [cperiods.patch](tarball://root/attachments/some-uuid/ticket6021/cperiods.patch) by cremona created at 2009-05-22 15:13:07
 
 OK, so I have added two new patches:  embed_qqbar.patch is independent of the others, and adds functionality to the refine_embedding() function for embeddings of number fields to allow extending any embedding into RR or CC to an embedding into AA or QQbar (choosing the correct root).  Then cperiods.patch uses that to rethink how precision is handled for period lattices (real and complex):  the embedding supplied by the user is only used to determine which embedding is wanted, not its precision (which is ignored).  the lattice converts this (on construction) into an embedding into AA or QQbar, which it keeps.  Then the period-finding functions do as much as they can exactly (i.e. in AA or QQbar), up as far as computing sqrt(ei-ej) where e1,e2,e3 are the roots of the 2-division polynomial (so these expressions may have degree 6* the degree of the field);  only then are they converted into RR or CC (with the correct precision) for the transcendental step of computing AGMs.
 

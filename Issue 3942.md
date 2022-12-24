@@ -159,7 +159,7 @@ rank4:sage-main rlmill$
 archive/issue_comments_028267.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3942_pid-interfaces.patch](tarball://root/attachments/some-uuid/ticket3942/trac_3942_pid-interfaces.patch) by rlm created at 2008-08-24 14:40:24",
     "created_at": "2008-08-24T14:40:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3942",
     "type": "issue_comment",
@@ -168,7 +168,7 @@ archive/issue_comments_028267.json:
 }
 ```
 
-Attachment
+Attachment [trac_3942_pid-interfaces.patch](tarball://root/attachments/some-uuid/ticket3942/trac_3942_pid-interfaces.patch) by rlm created at 2008-08-24 14:40:24
 
 
 

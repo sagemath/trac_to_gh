@@ -112,7 +112,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1790
 archive/issue_comments_011324.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-2.10.alpha3-fix-numerical-doctest-failure-gcc-4.2.2-x86-64.patch](tarball://root/attachments/some-uuid/ticket1790/Sage-2.10.alpha3-fix-numerical-doctest-failure-gcc-4.2.2-x86-64.patch) by mabshoff created at 2008-01-16 03:00:31",
     "created_at": "2008-01-16T03:00:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1790",
     "type": "issue_comment",
@@ -121,7 +121,7 @@ archive/issue_comments_011324.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.10.alpha3-fix-numerical-doctest-failure-gcc-4.2.2-x86-64.patch](tarball://root/attachments/some-uuid/ticket1790/Sage-2.10.alpha3-fix-numerical-doctest-failure-gcc-4.2.2-x86-64.patch) by mabshoff created at 2008-01-16 03:00:31
 
 
 
@@ -304,7 +304,7 @@ Michael
 archive/issue_comments_011334.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-2.10.alpha3-#1790-leftovers.patch](tarball://root/attachments/some-uuid/ticket1790/Sage-2.10.alpha3-#1790-leftovers.patch) by mabshoff created at 2008-01-16 16:23:09",
     "created_at": "2008-01-16T16:23:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1790",
     "type": "issue_comment",
@@ -313,4 +313,4 @@ archive/issue_comments_011334.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.10.alpha3-#1790-leftovers.patch](tarball://root/attachments/some-uuid/ticket1790/Sage-2.10.alpha3-#1790-leftovers.patch) by mabshoff created at 2008-01-16 16:23:09

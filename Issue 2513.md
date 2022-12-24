@@ -89,7 +89,7 @@ So I just happened to glance back at this ticket tonight because I hit this same
 archive/issue_comments_017044.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-2513.patch](tarball://root/attachments/some-uuid/ticket2513/trac-2513.patch) by craigcitro created at 2009-06-14 09:02:59",
     "created_at": "2009-06-14T09:02:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2513",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_017044.json:
 }
 ```
 
-Attachment
+Attachment [trac-2513.patch](tarball://root/attachments/some-uuid/ticket2513/trac-2513.patch) by craigcitro created at 2009-06-14 09:02:59
 
 
 

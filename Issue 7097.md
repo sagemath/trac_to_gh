@@ -391,7 +391,7 @@ Cheers,
 archive/issue_comments_058730.json:
 ```json
 {
-    "body": "Attachment\n\nApplies to 4.3.rc0",
+    "body": "Attachment [trac_7097-nffactor.patch](tarball://root/attachments/some-uuid/ticket7097/trac_7097-nffactor.patch) by cremona created at 2009-12-13 17:52:54\n\nApplies to 4.3.rc0",
     "created_at": "2009-12-13T17:52:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7097",
     "type": "issue_comment",
@@ -400,7 +400,7 @@ archive/issue_comments_058730.json:
 }
 ```
 
-Attachment
+Attachment [trac_7097-nffactor.patch](tarball://root/attachments/some-uuid/ticket7097/trac_7097-nffactor.patch) by cremona created at 2009-12-13 17:52:54
 
 Applies to 4.3.rc0
 

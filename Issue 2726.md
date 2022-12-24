@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2726
 archive/issue_comments_018781.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [build-system.patch](tarball://root/attachments/some-uuid/ticket2726/build-system.patch) by tabbott created at 2008-03-29 22:16:07",
     "created_at": "2008-03-29T22:16:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2726",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_018781.json:
 }
 ```
 
-Attachment
+Attachment [build-system.patch](tarball://root/attachments/some-uuid/ticket2726/build-system.patch) by tabbott created at 2008-03-29 22:16:07
 
 
 
@@ -53,7 +53,7 @@ Attachment
 archive/issue_comments_018782.json:
 ```json
 {
-    "body": "Attachment\n\nmake sure SbuildHack.pm gets copied by -sdist",
+    "body": "Attachment [build-system2.patch](tarball://root/attachments/some-uuid/ticket2726/build-system2.patch) by mabshoff created at 2008-04-01 20:31:58\n\nmake sure SbuildHack.pm gets copied by -sdist",
     "created_at": "2008-04-01T20:31:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2726",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_018782.json:
 }
 ```
 
-Attachment
+Attachment [build-system2.patch](tarball://root/attachments/some-uuid/ticket2726/build-system2.patch) by mabshoff created at 2008-04-01 20:31:58
 
 make sure SbuildHack.pm gets copied by -sdist
 
@@ -73,7 +73,7 @@ make sure SbuildHack.pm gets copied by -sdist
 archive/issue_comments_018783.json:
 ```json
 {
-    "body": "Attachment\n\nPatch looks good to me. My minimal patch makes sure that SbuildHack.pm is copied on `-sdist`\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_2726_sage-SbuildHack.pm-copy.patch](tarball://root/attachments/some-uuid/ticket2726/trac_2726_sage-SbuildHack.pm-copy.patch) by mabshoff created at 2008-04-01 20:32:48\n\nPatch looks good to me. My minimal patch makes sure that SbuildHack.pm is copied on `-sdist`\n\nCheers,\n\nMichael",
     "created_at": "2008-04-01T20:32:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2726",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_018783.json:
 }
 ```
 
-Attachment
+Attachment [trac_2726_sage-SbuildHack.pm-copy.patch](tarball://root/attachments/some-uuid/ticket2726/trac_2726_sage-SbuildHack.pm-copy.patch) by mabshoff created at 2008-04-01 20:32:48
 
 Patch looks good to me. My minimal patch makes sure that SbuildHack.pm is copied on `-sdist`
 

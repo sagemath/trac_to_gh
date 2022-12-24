@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9333
 archive/issue_comments_088060.json:
 ```json
 {
-    "body": "Attachment\n\nfor reference only; do not apply",
+    "body": "Attachment [trac_9333-kash-tar.patch](tarball://root/attachments/some-uuid/ticket9333/trac_9333-kash-tar.patch) by jhpalmieri created at 2011-05-27 04:58:07\n\nfor reference only; do not apply",
     "created_at": "2011-05-27T04:58:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9333",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_088060.json:
 }
 ```
 
-Attachment
+Attachment [trac_9333-kash-tar.patch](tarball://root/attachments/some-uuid/ticket9333/trac_9333-kash-tar.patch) by jhpalmieri created at 2011-05-27 04:58:07
 
 for reference only; do not apply
 
@@ -137,7 +137,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_088065.json:
 ```json
 {
-    "body": "Attachment\n\npatch for sage library",
+    "body": "Attachment [trac_9333-kash-sage-library.patch](tarball://root/attachments/some-uuid/ticket9333/trac_9333-kash-sage-library.patch) by jhpalmieri created at 2011-06-08 21:44:37\n\npatch for sage library",
     "created_at": "2011-06-08T21:44:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9333",
     "type": "issue_comment",
@@ -146,7 +146,7 @@ archive/issue_comments_088065.json:
 }
 ```
 
-Attachment
+Attachment [trac_9333-kash-sage-library.patch](tarball://root/attachments/some-uuid/ticket9333/trac_9333-kash-sage-library.patch) by jhpalmieri created at 2011-06-08 21:44:37
 
 patch for sage library
 

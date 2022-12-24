@@ -67,7 +67,7 @@ Changing status from new to assigned.
 archive/issue_comments_009850.json:
 ```json
 {
-    "body": "Attachment\n\nPosted new version of the patch, which reflects the updated name for the rpy-1.0.1.p0.spkg. (I also added a variable so that the rpy spkg name only appears once, instead of twice, making it less likely that someone would accidentally change one and not the other.)",
+    "body": "Attachment [1542.patch](tarball://root/attachments/some-uuid/ticket1542/1542.patch) by craigcitro created at 2007-12-17 05:01:01\n\nPosted new version of the patch, which reflects the updated name for the rpy-1.0.1.p0.spkg. (I also added a variable so that the rpy spkg name only appears once, instead of twice, making it less likely that someone would accidentally change one and not the other.)",
     "created_at": "2007-12-17T05:01:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1542",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_009850.json:
 }
 ```
 
-Attachment
+Attachment [1542.patch](tarball://root/attachments/some-uuid/ticket1542/1542.patch) by craigcitro created at 2007-12-17 05:01:01
 
 Posted new version of the patch, which reflects the updated name for the rpy-1.0.1.p0.spkg. (I also added a variable so that the rpy spkg name only appears once, instead of twice, making it less likely that someone would accidentally change one and not the other.)
 

@@ -103,7 +103,7 @@ Michael
 archive/issue_comments_045493.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5799_ext_sageicon.patch](tarball://root/attachments/some-uuid/ticket5799/trac_5799_ext_sageicon.patch) by mpatel created at 2009-04-16 07:50:07",
     "created_at": "2009-04-16T07:50:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_comment",
@@ -112,7 +112,7 @@ archive/issue_comments_045493.json:
 }
 ```
 
-Attachment
+Attachment [trac_5799_ext_sageicon.patch](tarball://root/attachments/some-uuid/ticket5799/trac_5799_ext_sageicon.patch) by mpatel created at 2009-04-16 07:50:07
 
 
 
@@ -146,7 +146,7 @@ I'm about to attach an alternative to trac_5799_sage_jsmath_doc.patch.
 archive/issue_comments_045495.json:
 ```json
 {
-    "body": "Attachment\n\nSomewhat less efficient alternative to trac_5799_sage_jsmath_doc.patch.",
+    "body": "Attachment [trac_5799_sage_jsmath_doc_alt.patch](tarball://root/attachments/some-uuid/ticket5799/trac_5799_sage_jsmath_doc_alt.patch) by mpatel created at 2009-04-16 08:23:42\n\nSomewhat less efficient alternative to trac_5799_sage_jsmath_doc.patch.",
     "created_at": "2009-04-16T08:23:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_comment",
@@ -155,7 +155,7 @@ archive/issue_comments_045495.json:
 }
 ```
 
-Attachment
+Attachment [trac_5799_sage_jsmath_doc_alt.patch](tarball://root/attachments/some-uuid/ticket5799/trac_5799_sage_jsmath_doc_alt.patch) by mpatel created at 2009-04-16 08:23:42
 
 Somewhat less efficient alternative to trac_5799_sage_jsmath_doc.patch.
 
@@ -224,7 +224,7 @@ Better cross-browser favicon support. Goes with trac_5799_sage_jsmath_doc_v2.pat
 archive/issue_comments_045499.json:
 ```json
 {
-    "body": "Attachment\n\nBetter cross-browser favicon support, auto relative paths. Apply trac_5799_ext_icons_v2.patch first.",
+    "body": "Attachment [trac_5799_sage_jsmath_doc_v2.patch](tarball://root/attachments/some-uuid/ticket5799/trac_5799_sage_jsmath_doc_v2.patch) by mpatel created at 2009-06-10 09:26:16\n\nBetter cross-browser favicon support, auto relative paths. Apply trac_5799_ext_icons_v2.patch first.",
     "created_at": "2009-06-10T09:26:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_comment",
@@ -233,7 +233,7 @@ archive/issue_comments_045499.json:
 }
 ```
 
-Attachment
+Attachment [trac_5799_sage_jsmath_doc_v2.patch](tarball://root/attachments/some-uuid/ticket5799/trac_5799_sage_jsmath_doc_v2.patch) by mpatel created at 2009-06-10 09:26:16
 
 Better cross-browser favicon support, auto relative paths. Apply trac_5799_ext_icons_v2.patch first.
 
@@ -528,7 +528,7 @@ Resolution changed from fixed to
 archive/issue_comments_045511.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5799_manifest.patch](tarball://root/attachments/some-uuid/ticket5799/trac_5799_manifest.patch) by jhpalmieri created at 2009-07-07 19:40:57",
     "created_at": "2009-07-07T19:40:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_comment",
@@ -537,7 +537,7 @@ archive/issue_comments_045511.json:
 }
 ```
 
-Attachment
+Attachment [trac_5799_manifest.patch](tarball://root/attachments/some-uuid/ticket5799/trac_5799_manifest.patch) by jhpalmieri created at 2009-07-07 19:40:57
 
 
 
@@ -698,7 +698,7 @@ Attempt to get distutils to preserve symbolic links.
 archive/issue_comments_045520.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:21 rlm]:\n> Replying to [comment:20 mpatel]:\n> > Is it possible to include symbolic links in `MANIFEST.in`?\n> I had wondered this myself. The only way to know for sure is to try it, roll a new source tarball (via `sage -sdist`), install the \"new version,\" and see whether the notebook still works...\nThis [attachment:trac_5799-redux_setup_py.patch patch] alters `setup.py` so that it preserves symlinks.  However, I'm far from convinced that it's the right approach.  Is it possible to identify and copy broken links in Python?  In particular:\n\n* In `sage_findall()`, can we refine or avoid using the exception handler?  Perhaps it's better to use [os.walk()](http://markmail.org/message/dcv4g5b2b4exw64u), but the `os.path.is*()` family actually follows symlinks.\n* Is there a Pythonic analogue of `cp --preserve=links --no-dereference`?\n\nPossible alternatives:\n\n* Make a symlink in some `spkg-install`.\n* Have Mercurial reconstitute the link.",
+    "body": "Attachment [trac_5799-redux_setup_py.patch](tarball://root/attachments/some-uuid/ticket5799/trac_5799-redux_setup_py.patch) by mpatel created at 2009-07-21 11:28:30\n\nReplying to [comment:21 rlm]:\n> Replying to [comment:20 mpatel]:\n> > Is it possible to include symbolic links in `MANIFEST.in`?\n> I had wondered this myself. The only way to know for sure is to try it, roll a new source tarball (via `sage -sdist`), install the \"new version,\" and see whether the notebook still works...\nThis [attachment:trac_5799-redux_setup_py.patch patch] alters `setup.py` so that it preserves symlinks.  However, I'm far from convinced that it's the right approach.  Is it possible to identify and copy broken links in Python?  In particular:\n\n* In `sage_findall()`, can we refine or avoid using the exception handler?  Perhaps it's better to use [os.walk()](http://markmail.org/message/dcv4g5b2b4exw64u), but the `os.path.is*()` family actually follows symlinks.\n* Is there a Pythonic analogue of `cp --preserve=links --no-dereference`?\n\nPossible alternatives:\n\n* Make a symlink in some `spkg-install`.\n* Have Mercurial reconstitute the link.",
     "created_at": "2009-07-21T11:28:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_comment",
@@ -707,7 +707,7 @@ archive/issue_comments_045520.json:
 }
 ```
 
-Attachment
+Attachment [trac_5799-redux_setup_py.patch](tarball://root/attachments/some-uuid/ticket5799/trac_5799-redux_setup_py.patch) by mpatel created at 2009-07-21 11:28:30
 
 Replying to [comment:21 rlm]:
 > Replying to [comment:20 mpatel]:

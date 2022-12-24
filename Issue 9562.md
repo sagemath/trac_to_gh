@@ -1796,7 +1796,7 @@ apply to root repository not to normal Sage repository
 archive/issue_comments_092225.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [m4rie_spkg.patch](tarball://root/attachments/some-uuid/ticket9562/m4rie_spkg.patch) by malb created at 2011-07-06 16:48:39",
     "created_at": "2011-07-06T16:48:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9562",
     "type": "issue_comment",
@@ -1805,7 +1805,7 @@ archive/issue_comments_092225.json:
 }
 ```
 
-Attachment
+Attachment [m4rie_spkg.patch](tarball://root/attachments/some-uuid/ticket9562/m4rie_spkg.patch) by malb created at 2011-07-06 16:48:39
 
 
 
@@ -3844,7 +3844,7 @@ rebased to 4.7.3.alpha0
 archive/issue_comments_092309.json:
 ```json
 {
-    "body": "Attachment\n\nokay, rebased.",
+    "body": "Attachment [m4rie_for_sage.patch](tarball://root/attachments/some-uuid/ticket9562/m4rie_for_sage.patch) by malb created at 2011-10-27 17:53:06\n\nokay, rebased.",
     "created_at": "2011-10-27T17:53:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9562",
     "type": "issue_comment",
@@ -3853,7 +3853,7 @@ archive/issue_comments_092309.json:
 }
 ```
 
-Attachment
+Attachment [m4rie_for_sage.patch](tarball://root/attachments/some-uuid/ticket9562/m4rie_for_sage.patch) by malb created at 2011-10-27 17:53:06
 
 okay, rebased.
 

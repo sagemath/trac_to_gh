@@ -68,7 +68,7 @@ One way to implement this though would be in sage-doctest when parsing the docst
 archive/issue_comments_034410.json:
 ```json
 {
-    "body": "Attachment\n\nFallout after applying the patch:\n\n\n```\n----------------------------------------------------------------------\n\nThe following tests failed:\n\n        sage -t  devel/sage/sage/schemes/elliptic_curves/sha_tate.py # 1 doctests failed\n        sage -t  devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py # 1 doctests failed\n        sage -t  devel/sage/sage/interfaces/matlab.py # 1 doctests failed\n        sage -t  devel/sage/sage/interfaces/macaulay2.py # 1 doctests failed\n        sage -t  devel/sage/sage/interfaces/octave.py # 2 doctests failed\n        sage -t  devel/sage/sage/interfaces/scilab.py # 5 doctests failed\n        sage -t  devel/sage/sage/interfaces/lie.py # 1 doctests failed\n        sage -t  devel/sage/sage/interfaces/kash.py # 100 doctests failed\n        sage -t  devel/sage/sage/interfaces/maple.py # 40 doctests failed\n        sage -t  devel/sage/sage/interfaces/mupad.py # 19 doctests failed\n        sage -t  devel/sage/sage/interfaces/qepcad.py # 66 doctests failed\n        sage -t  devel/sage/sage/combinat/designs/incidence_structures.py # 1 doctests failed\n        sage -t  devel/sage/sage/databases/sloane.py # 3 doctests failed\n        sage -t  devel/sage/sage/databases/jones.py # 4 doctests failed\n        sage -t  devel/sage/sage/databases/stein_watkins.py # 21 doctests failed\n        sage -t  devel/sage/sage/groups/perm_gps/permgroup.py # 1 doctests failed\n        sage -t  devel/sage/sage/graphs/graph_database.py # 1 doctests failed\n        sage -t  devel/sage/sage/coding/linear_code.py # 4 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 171.8 seconds\n```\n",
+    "body": "Attachment [trac_4588-scripts.patch](tarball://root/attachments/some-uuid/ticket4588/trac_4588-scripts.patch) by was created at 2009-01-23 01:34:23\n\nFallout after applying the patch:\n\n\n```\n----------------------------------------------------------------------\n\nThe following tests failed:\n\n        sage -t  devel/sage/sage/schemes/elliptic_curves/sha_tate.py # 1 doctests failed\n        sage -t  devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py # 1 doctests failed\n        sage -t  devel/sage/sage/interfaces/matlab.py # 1 doctests failed\n        sage -t  devel/sage/sage/interfaces/macaulay2.py # 1 doctests failed\n        sage -t  devel/sage/sage/interfaces/octave.py # 2 doctests failed\n        sage -t  devel/sage/sage/interfaces/scilab.py # 5 doctests failed\n        sage -t  devel/sage/sage/interfaces/lie.py # 1 doctests failed\n        sage -t  devel/sage/sage/interfaces/kash.py # 100 doctests failed\n        sage -t  devel/sage/sage/interfaces/maple.py # 40 doctests failed\n        sage -t  devel/sage/sage/interfaces/mupad.py # 19 doctests failed\n        sage -t  devel/sage/sage/interfaces/qepcad.py # 66 doctests failed\n        sage -t  devel/sage/sage/combinat/designs/incidence_structures.py # 1 doctests failed\n        sage -t  devel/sage/sage/databases/sloane.py # 3 doctests failed\n        sage -t  devel/sage/sage/databases/jones.py # 4 doctests failed\n        sage -t  devel/sage/sage/databases/stein_watkins.py # 21 doctests failed\n        sage -t  devel/sage/sage/groups/perm_gps/permgroup.py # 1 doctests failed\n        sage -t  devel/sage/sage/graphs/graph_database.py # 1 doctests failed\n        sage -t  devel/sage/sage/coding/linear_code.py # 4 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 171.8 seconds\n```\n",
     "created_at": "2009-01-23T01:34:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4588",
     "type": "issue_comment",
@@ -77,7 +77,7 @@ archive/issue_comments_034410.json:
 }
 ```
 
-Attachment
+Attachment [trac_4588-scripts.patch](tarball://root/attachments/some-uuid/ticket4588/trac_4588-scripts.patch) by was created at 2009-01-23 01:34:23
 
 Fallout after applying the patch:
 
@@ -135,7 +135,7 @@ fix fallout in the core library.
 archive/issue_comments_034412.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4588-sage.patch](tarball://root/attachments/some-uuid/ticket4588/trac_4588-sage.patch) by was created at 2009-01-23 09:28:32",
     "created_at": "2009-01-23T09:28:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4588",
     "type": "issue_comment",
@@ -144,7 +144,7 @@ archive/issue_comments_034412.json:
 }
 ```
 
-Attachment
+Attachment [trac_4588-sage.patch](tarball://root/attachments/some-uuid/ticket4588/trac_4588-sage.patch) by was created at 2009-01-23 09:28:32
 
 
 
@@ -153,7 +153,7 @@ Attachment
 archive/issue_comments_034413.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached sage patches fix all missing # optionals after applying the scripts patch (the first one -- trac_4588-scripts.patch).  I also greatly improve the use of \n\n```\n  # optional -- name_of_package\n```\n\nwhile I was at it.\n\nHowever, note that this revealed some bugs in David Joyner's linear_code.py stuff.  See #5067. Thus I believe this patch should receive a positive review *despite* that after applying it suddenly four doctests will fail.   I've made #5067 a blocker.",
+    "body": "Attachment [trac_4588-part2-sage.patch](tarball://root/attachments/some-uuid/ticket4588/trac_4588-part2-sage.patch) by was created at 2009-01-23 09:30:52\n\nThe attached sage patches fix all missing # optionals after applying the scripts patch (the first one -- trac_4588-scripts.patch).  I also greatly improve the use of \n\n```\n  # optional -- name_of_package\n```\n\nwhile I was at it.\n\nHowever, note that this revealed some bugs in David Joyner's linear_code.py stuff.  See #5067. Thus I believe this patch should receive a positive review *despite* that after applying it suddenly four doctests will fail.   I've made #5067 a blocker.",
     "created_at": "2009-01-23T09:30:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4588",
     "type": "issue_comment",
@@ -162,7 +162,7 @@ archive/issue_comments_034413.json:
 }
 ```
 
-Attachment
+Attachment [trac_4588-part2-sage.patch](tarball://root/attachments/some-uuid/ticket4588/trac_4588-part2-sage.patch) by was created at 2009-01-23 09:30:52
 
 The attached sage patches fix all missing # optionals after applying the scripts patch (the first one -- trac_4588-scripts.patch).  I also greatly improve the use of 
 
@@ -181,7 +181,7 @@ However, note that this revealed some bugs in David Joyner's linear_code.py stuf
 archive/issue_comments_034414.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4588-part3-sage.patch](tarball://root/attachments/some-uuid/ticket4588/trac_4588-part3-sage.patch) by was created at 2009-01-24 00:55:53",
     "created_at": "2009-01-24T00:55:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4588",
     "type": "issue_comment",
@@ -190,7 +190,7 @@ archive/issue_comments_034414.json:
 }
 ```
 
-Attachment
+Attachment [trac_4588-part3-sage.patch](tarball://root/attachments/some-uuid/ticket4588/trac_4588-part3-sage.patch) by was created at 2009-01-24 00:55:53
 
 
 

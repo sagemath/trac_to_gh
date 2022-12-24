@@ -85,7 +85,7 @@ sage: M.elementary_divisors()
 archive/issue_comments_004871.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [806.patch](tarball://root/attachments/some-uuid/ticket806/806.patch) by mhansen created at 2007-10-04 11:50:20",
     "created_at": "2007-10-04T11:50:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/806",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_004871.json:
 }
 ```
 
-Attachment
+Attachment [806.patch](tarball://root/attachments/some-uuid/ticket806/806.patch) by mhansen created at 2007-10-04 11:50:20
 
 
 

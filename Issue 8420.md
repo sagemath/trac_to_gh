@@ -124,7 +124,7 @@ Florent
 archive/issue_comments_075457.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8420_features_perfect_matchings_vf.patch](tarball://root/attachments/some-uuid/ticket8420/trac_8420_features_perfect_matchings_vf.patch) by vferay created at 2010-03-08 09:00:03",
     "created_at": "2010-03-08T09:00:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8420",
     "type": "issue_comment",
@@ -133,7 +133,7 @@ archive/issue_comments_075457.json:
 }
 ```
 
-Attachment
+Attachment [trac_8420_features_perfect_matchings_vf.patch](tarball://root/attachments/some-uuid/ticket8420/trac_8420_features_perfect_matchings_vf.patch) by vferay created at 2010-03-08 09:00:03
 
 
 
@@ -290,7 +290,7 @@ Review patch.
 archive/issue_comments_075463.json:
 ```json
 {
-    "body": "Attachment\n\n2nd version, after Florent's comments",
+    "body": "Attachment [trac_8420_features_perfect_matchings_vf.2.patch](tarball://root/attachments/some-uuid/ticket8420/trac_8420_features_perfect_matchings_vf.2.patch) by vferay created at 2010-03-10 10:32:50\n\n2nd version, after Florent's comments",
     "created_at": "2010-03-10T10:32:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8420",
     "type": "issue_comment",
@@ -299,7 +299,7 @@ archive/issue_comments_075463.json:
 }
 ```
 
-Attachment
+Attachment [trac_8420_features_perfect_matchings_vf.2.patch](tarball://root/attachments/some-uuid/ticket8420/trac_8420_features_perfect_matchings_vf.2.patch) by vferay created at 2010-03-10 10:32:50
 
 2nd version, after Florent's comments
 
@@ -431,7 +431,7 @@ Some tip for the doc:
 archive/issue_comments_075468.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8420_perfect_matchings_review-fh.patch](tarball://root/attachments/some-uuid/ticket8420/trac_8420_perfect_matchings_review-fh.patch) by hivert created at 2010-03-15 16:08:14",
     "created_at": "2010-03-15T16:08:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8420",
     "type": "issue_comment",
@@ -440,7 +440,7 @@ archive/issue_comments_075468.json:
 }
 ```
 
-Attachment
+Attachment [trac_8420_perfect_matchings_review-fh.patch](tarball://root/attachments/some-uuid/ticket8420/trac_8420_perfect_matchings_review-fh.patch) by hivert created at 2010-03-15 16:08:14
 
 
 
@@ -660,7 +660,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_075475.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8420_features_perfect_matchings_review_review_vf.patch](tarball://root/attachments/some-uuid/ticket8420/trac_8420_features_perfect_matchings_review_review_vf.patch) by vferay created at 2010-03-22 09:58:11",
     "created_at": "2010-03-22T09:58:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8420",
     "type": "issue_comment",
@@ -669,7 +669,7 @@ archive/issue_comments_075475.json:
 }
 ```
 
-Attachment
+Attachment [trac_8420_features_perfect_matchings_review_review_vf.patch](tarball://root/attachments/some-uuid/ticket8420/trac_8420_features_perfect_matchings_review_review_vf.patch) by vferay created at 2010-03-22 09:58:11
 
 
 

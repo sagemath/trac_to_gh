@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8781
 archive/issue_comments_080374.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8781.patch](tarball://root/attachments/some-uuid/ticket8781/trac_8781.patch) by ncohen created at 2010-04-27 12:15:49",
     "created_at": "2010-04-27T12:15:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8781",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_080374.json:
 }
 ```
 
-Attachment
+Attachment [trac_8781.patch](tarball://root/attachments/some-uuid/ticket8781/trac_8781.patch) by ncohen created at 2010-04-27 12:15:49
 
 
 
@@ -224,7 +224,7 @@ Nathann
 archive/issue_comments_080382.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8781-fix.patch](tarball://root/attachments/some-uuid/ticket8781/trac_8781-fix.patch) by mvngu created at 2010-05-25 01:09:00",
     "created_at": "2010-05-25T01:09:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8781",
     "type": "issue_comment",
@@ -233,7 +233,7 @@ archive/issue_comments_080382.json:
 }
 ```
 
-Attachment
+Attachment [trac_8781-fix.patch](tarball://root/attachments/some-uuid/ticket8781/trac_8781-fix.patch) by mvngu created at 2010-05-25 01:09:00
 
 
 
@@ -242,7 +242,7 @@ Attachment
 archive/issue_comments_080383.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:5 ncohen]:\n> I noticed an error in the docstrings though... so positive review to your patch, and this ticket is still waiting for review because of mine.\n\nYour fix is OK by me. However, note that it requires GLPK or CBC. (I have only tested with those two spkg's.) Without any of those packages installed, I got the following failure:\n\n```sh\nsage -t -long \"devel/sage-main/sage/graphs/generic_graph.py\"\n**********************************************************************\nFile \"/dev/shm/mvngu/sandbox/sage-4.4.2.sandbox.6/devel/sage-main/sage/graphs/generic_graph.py\", line 1845:\n    sage: edge_coloring(g, value_only=True)\nExpected:\n    3\nGot:\n    4\n**********************************************************************\nFile \"/dev/shm/mvngu/sandbox/sage-4.4.2.sandbox.6/devel/sage-main/sage/graphs/generic_graph.py\", line 4027:\n    sage: g.matching(algorithm=\"LP\", value_only=True)\nException raised:\n    Traceback (most recent call last):\n      File \"/dev/shm/mvngu/sandbox/sage-4.4.2.sandbox.6/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/dev/shm/mvngu/sandbox/sage-4.4.2.sandbox.6/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/dev/shm/mvngu/sandbox/sage-4.4.2.sandbox.6/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_69[5]>\", line 1, in <module>\n        g.matching(algorithm=\"LP\", value_only=True)###line 4027:\n    sage: g.matching(algorithm=\"LP\", value_only=True)\n      File \"/dev/shm/mvngu/sandbox/sage-4.4.2.sandbox.6/local/lib/python/site-packages/sage/graphs/generic_graph.py\", line 4078, in matching\n        return p.solve(objective_only=True, solver=solver, log=verbose)\n      File \"mip.pyx\", line 1051, in sage.numerical.mip.MixedIntegerLinearProgram.solve (sage/numerical/mip.c:7884)\n    ValueError: There does not seem to be any (Mixed) Integer Linear Program solver installed. Please visit http://www.sagemath.org/doc/constructions/linear_programming.html to learn more about the solvers available.\n**********************************************************************\n```\n\nSo I have made the doctest optional. And as I said before: Anyone for a final review of the whole ticket? :-) See the ticket description for instructions on how to apply patches.",
+    "body": "Attachment [trac_8781-reviewer.patch](tarball://root/attachments/some-uuid/ticket8781/trac_8781-reviewer.patch) by mvngu created at 2010-05-25 01:14:45\n\nReplying to [comment:5 ncohen]:\n> I noticed an error in the docstrings though... so positive review to your patch, and this ticket is still waiting for review because of mine.\n\nYour fix is OK by me. However, note that it requires GLPK or CBC. (I have only tested with those two spkg's.) Without any of those packages installed, I got the following failure:\n\n```sh\nsage -t -long \"devel/sage-main/sage/graphs/generic_graph.py\"\n**********************************************************************\nFile \"/dev/shm/mvngu/sandbox/sage-4.4.2.sandbox.6/devel/sage-main/sage/graphs/generic_graph.py\", line 1845:\n    sage: edge_coloring(g, value_only=True)\nExpected:\n    3\nGot:\n    4\n**********************************************************************\nFile \"/dev/shm/mvngu/sandbox/sage-4.4.2.sandbox.6/devel/sage-main/sage/graphs/generic_graph.py\", line 4027:\n    sage: g.matching(algorithm=\"LP\", value_only=True)\nException raised:\n    Traceback (most recent call last):\n      File \"/dev/shm/mvngu/sandbox/sage-4.4.2.sandbox.6/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/dev/shm/mvngu/sandbox/sage-4.4.2.sandbox.6/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/dev/shm/mvngu/sandbox/sage-4.4.2.sandbox.6/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_69[5]>\", line 1, in <module>\n        g.matching(algorithm=\"LP\", value_only=True)###line 4027:\n    sage: g.matching(algorithm=\"LP\", value_only=True)\n      File \"/dev/shm/mvngu/sandbox/sage-4.4.2.sandbox.6/local/lib/python/site-packages/sage/graphs/generic_graph.py\", line 4078, in matching\n        return p.solve(objective_only=True, solver=solver, log=verbose)\n      File \"mip.pyx\", line 1051, in sage.numerical.mip.MixedIntegerLinearProgram.solve (sage/numerical/mip.c:7884)\n    ValueError: There does not seem to be any (Mixed) Integer Linear Program solver installed. Please visit http://www.sagemath.org/doc/constructions/linear_programming.html to learn more about the solvers available.\n**********************************************************************\n```\n\nSo I have made the doctest optional. And as I said before: Anyone for a final review of the whole ticket? :-) See the ticket description for instructions on how to apply patches.",
     "created_at": "2010-05-25T01:14:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8781",
     "type": "issue_comment",
@@ -251,7 +251,7 @@ archive/issue_comments_080383.json:
 }
 ```
 
-Attachment
+Attachment [trac_8781-reviewer.patch](tarball://root/attachments/some-uuid/ticket8781/trac_8781-reviewer.patch) by mvngu created at 2010-05-25 01:14:45
 
 Replying to [comment:5 ncohen]:
 > I noticed an error in the docstrings though... so positive review to your patch, and this ticket is still waiting for review because of mine.
@@ -319,7 +319,7 @@ Nathann
 archive/issue_comments_080385.json:
 ```json
 {
-    "body": "Attachment\n\nI'm OK with `trac_8781.patch` and `trac_8781-fix2.patch`. We now need final approval for my reviewer patch `trac_8781-reviewer.patch`.",
+    "body": "Attachment [trac_8781-fix2.patch](tarball://root/attachments/some-uuid/ticket8781/trac_8781-fix2.patch) by mvngu created at 2010-06-12 08:10:39\n\nI'm OK with `trac_8781.patch` and `trac_8781-fix2.patch`. We now need final approval for my reviewer patch `trac_8781-reviewer.patch`.",
     "created_at": "2010-06-12T08:10:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8781",
     "type": "issue_comment",
@@ -328,7 +328,7 @@ archive/issue_comments_080385.json:
 }
 ```
 
-Attachment
+Attachment [trac_8781-fix2.patch](tarball://root/attachments/some-uuid/ticket8781/trac_8781-fix2.patch) by mvngu created at 2010-06-12 08:10:39
 
 I'm OK with `trac_8781.patch` and `trac_8781-fix2.patch`. We now need final approval for my reviewer patch `trac_8781-reviewer.patch`.
 

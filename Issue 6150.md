@@ -126,7 +126,7 @@ I've attached a patch which fixes the above issues.
 archive/issue_comments_049092.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6150.patch](tarball://root/attachments/some-uuid/ticket6150/trac_6150.patch) by mhansen created at 2009-05-28 16:54:09",
     "created_at": "2009-05-28T16:54:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6150",
     "type": "issue_comment",
@@ -135,7 +135,7 @@ archive/issue_comments_049092.json:
 }
 ```
 
-Attachment
+Attachment [trac_6150.patch](tarball://root/attachments/some-uuid/ticket6150/trac_6150.patch) by mhansen created at 2009-05-28 16:54:09
 
 
 

@@ -49,7 +49,7 @@ Great, do it!
 archive/issue_comments_024737.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3511-laplacian.patch](tarball://root/attachments/some-uuid/ticket3511/3511-laplacian.patch) by jason created at 2008-06-26 11:48:34",
     "created_at": "2008-06-26T11:48:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3511",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_024737.json:
 }
 ```
 
-Attachment
+Attachment [3511-laplacian.patch](tarball://root/attachments/some-uuid/ticket3511/3511-laplacian.patch) by jason created at 2008-06-26 11:48:34
 
 
 

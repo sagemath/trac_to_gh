@@ -102,7 +102,7 @@ I'll post an updated spkg later together with a fix for #6244.
 archive/issue_comments_049972.json:
 ```json
 {
-    "body": "Attachment\n\ndoctests",
+    "body": "Attachment [trac_6256-pynac_mul_compare_tests.patch](tarball://root/attachments/some-uuid/ticket6256/trac_6256-pynac_mul_compare_tests.patch) by burcin created at 2009-06-14 20:51:47\n\ndoctests",
     "created_at": "2009-06-14T20:51:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6256",
     "type": "issue_comment",
@@ -111,7 +111,7 @@ archive/issue_comments_049972.json:
 }
 ```
 
-Attachment
+Attachment [trac_6256-pynac_mul_compare_tests.patch](tarball://root/attachments/some-uuid/ticket6256/trac_6256-pynac_mul_compare_tests.patch) by burcin created at 2009-06-14 20:51:47
 
 doctests
 

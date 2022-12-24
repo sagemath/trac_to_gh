@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4255
 archive/issue_comments_030951.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [jeditable-tinymce.patch](tarball://root/attachments/some-uuid/ticket4255/jeditable-tinymce.patch) by jason created at 2008-10-09 01:50:03",
     "created_at": "2008-10-09T01:50:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4255",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_030951.json:
 }
 ```
 
-Attachment
+Attachment [jeditable-tinymce.patch](tarball://root/attachments/some-uuid/ticket4255/jeditable-tinymce.patch) by jason created at 2008-10-09 01:50:03
 
 
 

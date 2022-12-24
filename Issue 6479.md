@@ -91,7 +91,7 @@ An additional problem is that the syntax for desolve and desolve_laplace are dif
 archive/issue_comments_052368.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6479_marik.patch](tarball://root/attachments/some-uuid/ticket6479/trac_6479_marik.patch) by robert.marik created at 2009-10-06 16:43:27",
     "created_at": "2009-10-06T16:43:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6479",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_052368.json:
 }
 ```
 
-Attachment
+Attachment [trac_6479_marik.patch](tarball://root/attachments/some-uuid/ticket6479/trac_6479_marik.patch) by robert.marik created at 2009-10-06 16:43:27
 
 
 
@@ -184,7 +184,7 @@ Apply only this patch
 archive/issue_comments_052373.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6479_marik_revised.patch](tarball://root/attachments/some-uuid/ticket6479/trac_6479_marik_revised.patch) by robert.marik created at 2009-10-07 13:24:57",
     "created_at": "2009-10-07T13:24:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6479",
     "type": "issue_comment",
@@ -193,7 +193,7 @@ archive/issue_comments_052373.json:
 }
 ```
 
-Attachment
+Attachment [trac_6479_marik_revised.patch](tarball://root/attachments/some-uuid/ticket6479/trac_6479_marik_revised.patch) by robert.marik created at 2009-10-07 13:24:57
 
 
 
@@ -220,7 +220,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_052375.json:
 ```json
 {
-    "body": "Attachment\n\nApply on the top of the patch trac_6479_marik_revised.patch  and on the top pf the patch for Ticket #385 http://trac.sagemath.org/sage_trac/ticket/385",
+    "body": "Attachment [trac_6479_marik_revised_2.patch](tarball://root/attachments/some-uuid/ticket6479/trac_6479_marik_revised_2.patch) by robert.marik created at 2009-10-13 13:48:30\n\nApply on the top of the patch trac_6479_marik_revised.patch  and on the top pf the patch for Ticket #385 http://trac.sagemath.org/sage_trac/ticket/385",
     "created_at": "2009-10-13T13:48:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6479",
     "type": "issue_comment",
@@ -229,7 +229,7 @@ archive/issue_comments_052375.json:
 }
 ```
 
-Attachment
+Attachment [trac_6479_marik_revised_2.patch](tarball://root/attachments/some-uuid/ticket6479/trac_6479_marik_revised_2.patch) by robert.marik created at 2009-10-13 13:48:30
 
 Apply on the top of the patch trac_6479_marik_revised.patch  and on the top pf the patch for Ticket #385 http://trac.sagemath.org/sage_trac/ticket/385
 
@@ -431,7 +431,7 @@ this replaces previous patches and installs on the top of patch for trac #385
 archive/issue_comments_052382.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6479_marik_revision3.patch](tarball://root/attachments/some-uuid/ticket6479/trac_6479_marik_revision3.patch) by robert.marik created at 2009-10-27 20:23:47",
     "created_at": "2009-10-27T20:23:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6479",
     "type": "issue_comment",
@@ -440,7 +440,7 @@ archive/issue_comments_052382.json:
 }
 ```
 
-Attachment
+Attachment [trac_6479_marik_revision3.patch](tarball://root/attachments/some-uuid/ticket6479/trac_6479_marik_revision3.patch) by robert.marik created at 2009-10-27 20:23:47
 
 
 

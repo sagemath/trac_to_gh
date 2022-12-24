@@ -79,7 +79,7 @@ Changing status from new to assigned.
 archive/issue_comments_002921.json:
 ```json
 {
-    "body": "Attachment\n\nThis fixes the memleak in + or - for sparse matrix arithmetic.",
+    "body": "Attachment [6081.patch](tarball://root/attachments/some-uuid/ticket564/6081.patch) by was created at 2007-09-03 15:19:43\n\nThis fixes the memleak in + or - for sparse matrix arithmetic.",
     "created_at": "2007-09-03T15:19:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/564",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_002921.json:
 }
 ```
 
-Attachment
+Attachment [6081.patch](tarball://root/attachments/some-uuid/ticket564/6081.patch) by was created at 2007-09-03 15:19:43
 
 This fixes the memleak in + or - for sparse matrix arithmetic.
 

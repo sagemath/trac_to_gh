@@ -58,7 +58,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3908
 archive/issue_comments_027958.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac3908-fast_float-memleak.patch](tarball://root/attachments/some-uuid/ticket3908/trac3908-fast_float-memleak.patch) by cwitty created at 2008-08-20 02:58:54",
     "created_at": "2008-08-20T02:58:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3908",
     "type": "issue_comment",
@@ -67,7 +67,7 @@ archive/issue_comments_027958.json:
 }
 ```
 
-Attachment
+Attachment [trac3908-fast_float-memleak.patch](tarball://root/attachments/some-uuid/ticket3908/trac3908-fast_float-memleak.patch) by cwitty created at 2008-08-20 02:58:54
 
 
 

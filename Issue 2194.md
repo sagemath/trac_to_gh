@@ -93,7 +93,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2194
 archive/issue_comments_014403.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-2194.patch](tarball://root/attachments/some-uuid/ticket2194/trac-2194.patch) by mabshoff created at 2008-02-17 19:10:54",
     "created_at": "2008-02-17T19:10:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2194",
     "type": "issue_comment",
@@ -102,7 +102,7 @@ archive/issue_comments_014403.json:
 }
 ```
 
-Attachment
+Attachment [trac-2194.patch](tarball://root/attachments/some-uuid/ticket2194/trac-2194.patch) by mabshoff created at 2008-02-17 19:10:54
 
 
 
@@ -174,7 +174,7 @@ Shouldn't we also add a doctest, too? I applied the patch and will close if we a
 archive/issue_comments_014407.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-2194-doctest.patch](tarball://root/attachments/some-uuid/ticket2194/trac-2194-doctest.patch) by was created at 2008-02-17 22:33:32",
     "created_at": "2008-02-17T22:33:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2194",
     "type": "issue_comment",
@@ -183,7 +183,7 @@ archive/issue_comments_014407.json:
 }
 ```
 
-Attachment
+Attachment [trac-2194-doctest.patch](tarball://root/attachments/some-uuid/ticket2194/trac-2194-doctest.patch) by was created at 2008-02-17 22:33:32
 
 
 

@@ -66,7 +66,7 @@ Resolution: duplicate
 archive/issue_comments_027947.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch is found also at #3907.",
+    "body": "Attachment [trac_3906.patch](tarball://root/attachments/some-uuid/ticket3906/trac_3906.patch) by rlm created at 2008-09-05 19:41:46\n\nThis patch is found also at #3907.",
     "created_at": "2008-09-05T19:41:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3906",
     "type": "issue_comment",
@@ -75,6 +75,6 @@ archive/issue_comments_027947.json:
 }
 ```
 
-Attachment
+Attachment [trac_3906.patch](tarball://root/attachments/some-uuid/ticket3906/trac_3906.patch) by rlm created at 2008-09-05 19:41:46
 
 This patch is found also at #3907.

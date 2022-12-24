@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8814
 archive/issue_comments_080899.json:
 ```json
 {
-    "body": "Attachment\n\nBefore: \n\n\n```\nsage: F.<a>=GF(101^3,'a')\nsage: timeit(\"EllipticCurve([2*a^2 + 48*a + 27, 89*a^2 + 76*a + 24]).abelian_group()\")\n5 loops, best of 3: 1.37 s per loop\nsage: timeit(\"EllipticCurve(GF(1009), [2, 1]).abelian_group()\")\n25 loops, best of 3: 21.1 ms per loop\n```\n\n\nAfter:\n\n\n```\nsage: F.<a>=GF(101^3,'a')\nsage: timeit(\"EllipticCurve([2*a^2 + 48*a + 27, 89*a^2 + 76*a + 24]).abelian_group()\")\n5 loops, best of 3: 1.28 s per loop\nsage: timeit(\"EllipticCurve(GF(1009), [2, 1]).abelian_group()\")\n5 loops, best of 3: 15.2 ms per loop\n```\n\n\nOf course, this is just low hanging fruit (I've gotten 40x or more speedup in EC point arithmetic alone via Cython) but every little bit helps.",
+    "body": "Attachment [8814-ec-group-speedup.patch](tarball://root/attachments/some-uuid/ticket8814/8814-ec-group-speedup.patch) by robertwb created at 2010-04-29 04:15:35\n\nBefore: \n\n\n```\nsage: F.<a>=GF(101^3,'a')\nsage: timeit(\"EllipticCurve([2*a^2 + 48*a + 27, 89*a^2 + 76*a + 24]).abelian_group()\")\n5 loops, best of 3: 1.37 s per loop\nsage: timeit(\"EllipticCurve(GF(1009), [2, 1]).abelian_group()\")\n25 loops, best of 3: 21.1 ms per loop\n```\n\n\nAfter:\n\n\n```\nsage: F.<a>=GF(101^3,'a')\nsage: timeit(\"EllipticCurve([2*a^2 + 48*a + 27, 89*a^2 + 76*a + 24]).abelian_group()\")\n5 loops, best of 3: 1.28 s per loop\nsage: timeit(\"EllipticCurve(GF(1009), [2, 1]).abelian_group()\")\n5 loops, best of 3: 15.2 ms per loop\n```\n\n\nOf course, this is just low hanging fruit (I've gotten 40x or more speedup in EC point arithmetic alone via Cython) but every little bit helps.",
     "created_at": "2010-04-29T04:15:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8814",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_080899.json:
 }
 ```
 
-Attachment
+Attachment [8814-ec-group-speedup.patch](tarball://root/attachments/some-uuid/ticket8814/8814-ec-group-speedup.patch) by robertwb created at 2010-04-29 04:15:35
 
 Before: 
 

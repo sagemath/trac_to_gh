@@ -810,7 +810,7 @@ Apply to SAGE_ROOT. Activates RPY in spkg/install and spkg/standard/deps
 archive/issue_comments_098502.json:
 ```json
 {
-    "body": "Attachment\n\nWhy should `R` depend on `PYTHON`?  The old `spkg/standard/deps` claims \"Note that even with a separate RPy spkg (#9906), Sage's R will still depend on \"Python, but I see no reason for this.  So I removed the explicit PYTHON dependency.  But it still indirectly depends on PYTHON via PYTHON->ATLAS->R.",
+    "body": "Attachment [trac_9906-Activate_separate_RPy_spkg.root-repo.patch](tarball://root/attachments/some-uuid/ticket9906/trac_9906-Activate_separate_RPy_spkg.root-repo.patch) by jdemeyer created at 2012-09-04 12:06:03\n\nWhy should `R` depend on `PYTHON`?  The old `spkg/standard/deps` claims \"Note that even with a separate RPy spkg (#9906), Sage's R will still depend on \"Python, but I see no reason for this.  So I removed the explicit PYTHON dependency.  But it still indirectly depends on PYTHON via PYTHON->ATLAS->R.",
     "created_at": "2012-09-04T12:06:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
@@ -819,7 +819,7 @@ archive/issue_comments_098502.json:
 }
 ```
 
-Attachment
+Attachment [trac_9906-Activate_separate_RPy_spkg.root-repo.patch](tarball://root/attachments/some-uuid/ticket9906/trac_9906-Activate_separate_RPy_spkg.root-repo.patch) by jdemeyer created at 2012-09-04 12:06:03
 
 Why should `R` depend on `PYTHON`?  The old `spkg/standard/deps` claims "Note that even with a separate RPy spkg (#9906), Sage's R will still depend on "Python, but I see no reason for this.  So I removed the explicit PYTHON dependency.  But it still indirectly depends on PYTHON via PYTHON->ATLAS->R.
 
@@ -848,7 +848,7 @@ Changing keywords from "r-project" to "r-project spkg".
 archive/issue_comments_098504.json:
 ```json
 {
-    "body": "Attachment\n\nDiff for the R spkg. For reference / review only.",
+    "body": "Attachment [r-2.14.0.p5.diff](tarball://root/attachments/some-uuid/ticket9906/r-2.14.0.p5.diff) by jdemeyer created at 2012-09-04 12:09:29\n\nDiff for the R spkg. For reference / review only.",
     "created_at": "2012-09-04T12:09:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
@@ -857,7 +857,7 @@ archive/issue_comments_098504.json:
 }
 ```
 
-Attachment
+Attachment [r-2.14.0.p5.diff](tarball://root/attachments/some-uuid/ticket9906/r-2.14.0.p5.diff) by jdemeyer created at 2012-09-04 12:09:29
 
 Diff for the R spkg. For reference / review only.
 
@@ -1027,7 +1027,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_098511.json:
 ```json
 {
-    "body": "Attachment\n\nDiff for the rpy2 spkg (w.r.t. to the one in the current R spkg). For reference / review only.",
+    "body": "Attachment [rpy2-2.0.8.p0.diff](tarball://root/attachments/some-uuid/ticket9906/rpy2-2.0.8.p0.diff) by jdemeyer created at 2012-09-04 20:26:08\n\nDiff for the rpy2 spkg (w.r.t. to the one in the current R spkg). For reference / review only.",
     "created_at": "2012-09-04T20:26:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
@@ -1036,7 +1036,7 @@ archive/issue_comments_098511.json:
 }
 ```
 
-Attachment
+Attachment [rpy2-2.0.8.p0.diff](tarball://root/attachments/some-uuid/ticket9906/rpy2-2.0.8.p0.diff) by jdemeyer created at 2012-09-04 20:26:08
 
 Diff for the rpy2 spkg (w.r.t. to the one in the current R spkg). For reference / review only.
 

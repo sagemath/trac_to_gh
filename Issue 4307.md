@@ -109,7 +109,7 @@ Michael
 archive/issue_comments_031528.json:
 ```json
 {
-    "body": "Attachment\n\nYes.  Done, and replaced the patch.",
+    "body": "Attachment [trac4307-ssmod_init.patch](tarball://root/attachments/some-uuid/ticket4307/trac4307-ssmod_init.patch) by AlexGhitza created at 2008-10-20 22:01:28\n\nYes.  Done, and replaced the patch.",
     "created_at": "2008-10-20T22:01:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4307",
     "type": "issue_comment",
@@ -118,7 +118,7 @@ archive/issue_comments_031528.json:
 }
 ```
 
-Attachment
+Attachment [trac4307-ssmod_init.patch](tarball://root/attachments/some-uuid/ticket4307/trac4307-ssmod_init.patch) by AlexGhitza created at 2008-10-20 22:01:28
 
 Yes.  Done, and replaced the patch.
 

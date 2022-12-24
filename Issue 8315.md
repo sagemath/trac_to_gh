@@ -53,7 +53,7 @@ Reference manual toggles and sidebar links.  sage repo.
 archive/issue_comments_073741.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached a first take.  Remarks:\n\n* I haven't tested this extensively.\n* The sticky sidebar doesn't work in the live docs.\n* All of the transformations are done in the browser when it renders the page.\n* Feel free to change the colors or suggest other changes!",
+    "body": "Attachment [trac_8315-doc_sidebar.patch](tarball://root/attachments/some-uuid/ticket8315/trac_8315-doc_sidebar.patch) by mpatel created at 2010-02-21 07:13:01\n\nI've attached a first take.  Remarks:\n\n* I haven't tested this extensively.\n* The sticky sidebar doesn't work in the live docs.\n* All of the transformations are done in the browser when it renders the page.\n* Feel free to change the colors or suggest other changes!",
     "created_at": "2010-02-21T07:13:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8315",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_073741.json:
 }
 ```
 
-Attachment
+Attachment [trac_8315-doc_sidebar.patch](tarball://root/attachments/some-uuid/ticket8315/trac_8315-doc_sidebar.patch) by mpatel created at 2010-02-21 07:13:01
 
 I've attached a first take.  Remarks:
 

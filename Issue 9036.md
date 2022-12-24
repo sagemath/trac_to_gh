@@ -123,7 +123,7 @@ fixed bug in GenericGraph.canonical_label() and updated documentation
 archive/issue_comments_083655.json:
 ```json
 {
-    "body": "Attachment\n\nDone... I hope it is more understandable now.\n\nChristian",
+    "body": "Attachment [trac_9036_canonical_label.patch](tarball://root/attachments/some-uuid/ticket9036/trac_9036_canonical_label.patch) by stumpc5 created at 2010-06-15 13:30:19\n\nDone... I hope it is more understandable now.\n\nChristian",
     "created_at": "2010-06-15T13:30:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9036",
     "type": "issue_comment",
@@ -132,7 +132,7 @@ archive/issue_comments_083655.json:
 }
 ```
 
-Attachment
+Attachment [trac_9036_canonical_label.patch](tarball://root/attachments/some-uuid/ticket9036/trac_9036_canonical_label.patch) by stumpc5 created at 2010-06-15 13:30:19
 
 Done... I hope it is more understandable now.
 

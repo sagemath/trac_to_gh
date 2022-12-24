@@ -313,7 +313,7 @@ Changing status from new to needs_review.
 archive/issue_comments_060555.json:
 ```json
 {
-    "body": "Attachment\n\nI have attached a patch that does what Georg suggested above.  I also added more doctests (i.e., a cubic example) to explain what the mysterius \"C\" is.   With this patch, doctests pass on ppc, itanium, and x86_64 now. \n\nI've also emailed John Voight asking him to get the docs of this file up to snuff.",
+    "body": "Attachment [trac_7276.patch](tarball://root/attachments/some-uuid/ticket7276/trac_7276.patch) by was created at 2009-11-10 06:27:25\n\nI have attached a patch that does what Georg suggested above.  I also added more doctests (i.e., a cubic example) to explain what the mysterius \"C\" is.   With this patch, doctests pass on ppc, itanium, and x86_64 now. \n\nI've also emailed John Voight asking him to get the docs of this file up to snuff.",
     "created_at": "2009-11-10T06:27:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7276",
     "type": "issue_comment",
@@ -322,7 +322,7 @@ archive/issue_comments_060555.json:
 }
 ```
 
-Attachment
+Attachment [trac_7276.patch](tarball://root/attachments/some-uuid/ticket7276/trac_7276.patch) by was created at 2009-11-10 06:27:25
 
 I have attached a patch that does what Georg suggested above.  I also added more doctests (i.e., a cubic example) to explain what the mysterius "C" is.   With this patch, doctests pass on ppc, itanium, and x86_64 now. 
 
@@ -429,7 +429,7 @@ apply instead the first patch from William
 archive/issue_comments_060560.json:
 ```json
 {
-    "body": "Attachment\n\nGrmpf.\n\nThe new patch version 2 tried to address the issues. In the cubic field example, the \"5\" should be in, so I enlarged the epsilon. This works \"as is\" on MacIntel OS X 10.4.11.\n\nHowever, the patch version 2 does *not* work on MacPPC OS X 10.4.11, so this ticket has to stay \"needs work\".",
+    "body": "Attachment [trac_7276_v2.patch](tarball://root/attachments/some-uuid/ticket7276/trac_7276_v2.patch) by GeorgSWeber created at 2009-11-10 20:35:24\n\nGrmpf.\n\nThe new patch version 2 tried to address the issues. In the cubic field example, the \"5\" should be in, so I enlarged the epsilon. This works \"as is\" on MacIntel OS X 10.4.11.\n\nHowever, the patch version 2 does *not* work on MacPPC OS X 10.4.11, so this ticket has to stay \"needs work\".",
     "created_at": "2009-11-10T20:35:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7276",
     "type": "issue_comment",
@@ -438,7 +438,7 @@ archive/issue_comments_060560.json:
 }
 ```
 
-Attachment
+Attachment [trac_7276_v2.patch](tarball://root/attachments/some-uuid/ticket7276/trac_7276_v2.patch) by GeorgSWeber created at 2009-11-10 20:35:24
 
 Grmpf.
 
@@ -471,7 +471,7 @@ ignore georg's patch above.  apply trac_7276.patch and this.
 archive/issue_comments_060562.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7276-part2.patch](tarball://root/attachments/some-uuid/ticket7276/trac_7276-part2.patch) by was created at 2009-11-11 16:43:28",
     "created_at": "2009-11-11T16:43:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7276",
     "type": "issue_comment",
@@ -480,7 +480,7 @@ archive/issue_comments_060562.json:
 }
 ```
 
-Attachment
+Attachment [trac_7276-part2.patch](tarball://root/attachments/some-uuid/ticket7276/trac_7276-part2.patch) by was created at 2009-11-11 16:43:28
 
 
 

@@ -76,7 +76,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6218
 archive/issue_comments_049666.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6218-speedup-jacobian-morphism.patch](tarball://root/attachments/some-uuid/ticket6218/trac_6218-speedup-jacobian-morphism.patch) by ncalexan created at 2009-06-06 04:58:23",
     "created_at": "2009-06-06T04:58:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6218",
     "type": "issue_comment",
@@ -85,7 +85,7 @@ archive/issue_comments_049666.json:
 }
 ```
 
-Attachment
+Attachment [trac_6218-speedup-jacobian-morphism.patch](tarball://root/attachments/some-uuid/ticket6218/trac_6218-speedup-jacobian-morphism.patch) by ncalexan created at 2009-06-06 04:58:23
 
 
 

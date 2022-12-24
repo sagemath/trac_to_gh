@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6166
 archive/issue_comments_049195.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [no-nodetex-ref.patch](tarball://root/attachments/some-uuid/ticket6166/no-nodetex-ref.patch) by jhpalmieri created at 2009-05-31 04:58:59",
     "created_at": "2009-05-31T04:58:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6166",
     "type": "issue_comment",
@@ -43,7 +43,7 @@ archive/issue_comments_049195.json:
 }
 ```
 
-Attachment
+Attachment [no-nodetex-ref.patch](tarball://root/attachments/some-uuid/ticket6166/no-nodetex-ref.patch) by jhpalmieri created at 2009-05-31 04:58:59
 
 
 
@@ -88,7 +88,7 @@ Changing assignee from jhpalmieri to mhansen.
 archive/issue_comments_049198.json:
 ```json
 {
-    "body": "Attachment\n\nThe original patch looks good except it doesn't handle the case when there is an empty docstring.  I've added a patch on top which fixes this.  John, can you review my small patch?",
+    "body": "Attachment [trac_6166-2.patch](tarball://root/attachments/some-uuid/ticket6166/trac_6166-2.patch) by mhansen created at 2009-06-01 05:10:55\n\nThe original patch looks good except it doesn't handle the case when there is an empty docstring.  I've added a patch on top which fixes this.  John, can you review my small patch?",
     "created_at": "2009-06-01T05:10:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6166",
     "type": "issue_comment",
@@ -97,7 +97,7 @@ archive/issue_comments_049198.json:
 }
 ```
 
-Attachment
+Attachment [trac_6166-2.patch](tarball://root/attachments/some-uuid/ticket6166/trac_6166-2.patch) by mhansen created at 2009-06-01 05:10:55
 
 The original patch looks good except it doesn't handle the case when there is an empty docstring.  I've added a patch on top which fixes this.  John, can you review my small patch?
 

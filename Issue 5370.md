@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5370
 archive/issue_comments_041358.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-5370-copy-matrix_double_dense.patch](tarball://root/attachments/some-uuid/ticket5370/trac-5370-copy-matrix_double_dense.patch) by ylchapuy created at 2009-02-25 10:57:29",
     "created_at": "2009-02-25T10:57:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5370",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_041358.json:
 }
 ```
 
-Attachment
+Attachment [trac-5370-copy-matrix_double_dense.patch](tarball://root/attachments/some-uuid/ticket5370/trac-5370-copy-matrix_double_dense.patch) by ylchapuy created at 2009-02-25 10:57:29
 
 
 
@@ -67,7 +67,7 @@ apply patch after #5362
 archive/issue_comments_041360.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-5370-copy-matrix_double_dense.2.patch](tarball://root/attachments/some-uuid/ticket5370/trac-5370-copy-matrix_double_dense.2.patch) by mhansen created at 2009-02-25 18:25:47",
     "created_at": "2009-02-25T18:25:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5370",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_041360.json:
 }
 ```
 
-Attachment
+Attachment [trac-5370-copy-matrix_double_dense.2.patch](tarball://root/attachments/some-uuid/ticket5370/trac-5370-copy-matrix_double_dense.2.patch) by mhansen created at 2009-02-25 18:25:47
 
 
 

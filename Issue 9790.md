@@ -187,7 +187,7 @@ This file is a mess, there is more clean-up to do.
 archive/issue_comments_096128.json:
 ```json
 {
-    "body": "Attachment\n\nReplaces previous patch",
+    "body": "Attachment [9791.patch](tarball://root/attachments/some-uuid/ticket9791/9791.patch) by jdemeyer created at 2011-01-25 17:52:04\n\nReplaces previous patch",
     "created_at": "2011-01-25T17:52:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9790",
     "type": "issue_comment",
@@ -196,7 +196,7 @@ archive/issue_comments_096128.json:
 }
 ```
 
-Attachment
+Attachment [9791.patch](tarball://root/attachments/some-uuid/ticket9791/9791.patch) by jdemeyer created at 2011-01-25 17:52:04
 
 Replaces previous patch
 
@@ -304,7 +304,7 @@ Corrected version
 archive/issue_comments_096133.json:
 ```json
 {
-    "body": "Attachment\n\nCorrected a small error\n\nSo I think we need review again ^^",
+    "body": "Attachment [trac_9791_updatet_blitz_docu.2.patch](tarball://root/attachments/some-uuid/ticket9791/trac_9791_updatet_blitz_docu.2.patch) by maldun created at 2011-01-25 18:13:05\n\nCorrected a small error\n\nSo I think we need review again ^^",
     "created_at": "2011-01-25T18:13:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9790",
     "type": "issue_comment",
@@ -313,7 +313,7 @@ archive/issue_comments_096133.json:
 }
 ```
 
-Attachment
+Attachment [trac_9791_updatet_blitz_docu.2.patch](tarball://root/attachments/some-uuid/ticket9791/trac_9791_updatet_blitz_docu.2.patch) by maldun created at 2011-01-25 18:13:05
 
 Corrected a small error
 
@@ -478,7 +478,7 @@ Ok found some time to do the merge myself. I simply applied your patch and added
 archive/issue_comments_096142.json:
 ```json
 {
-    "body": "Attachment\n\nLatest version that merges all changes together",
+    "body": "Attachment [trac_9791_updatet_blitz_docu.patch](tarball://root/attachments/some-uuid/ticket9791/trac_9791_updatet_blitz_docu.patch) by maldun created at 2011-01-27 11:46:39\n\nLatest version that merges all changes together",
     "created_at": "2011-01-27T11:46:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9790",
     "type": "issue_comment",
@@ -487,7 +487,7 @@ archive/issue_comments_096142.json:
 }
 ```
 
-Attachment
+Attachment [trac_9791_updatet_blitz_docu.patch](tarball://root/attachments/some-uuid/ticket9791/trac_9791_updatet_blitz_docu.patch) by maldun created at 2011-01-27 11:46:39
 
 Latest version that merges all changes together
 
@@ -534,7 +534,7 @@ Fixed commit message, apply only this
 archive/issue_comments_096145.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9791_updatet_blitz_docu.3.patch](tarball://root/attachments/some-uuid/ticket9791/trac_9791_updatet_blitz_docu.3.patch) by jdemeyer created at 2011-01-28 13:47:51",
     "created_at": "2011-01-28T13:47:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9790",
     "type": "issue_comment",
@@ -543,7 +543,7 @@ archive/issue_comments_096145.json:
 }
 ```
 
-Attachment
+Attachment [trac_9791_updatet_blitz_docu.3.patch](tarball://root/attachments/some-uuid/ticket9791/trac_9791_updatet_blitz_docu.3.patch) by jdemeyer created at 2011-01-28 13:47:51
 
 
 

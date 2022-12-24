@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9231
 archive/issue_comments_086623.json:
 ```json
 {
-    "body": "Attachment\n\nAdds basic documentation and doctests",
+    "body": "Attachment [trac_9231_tachyon_interface_docs.patch](tarball://root/attachments/some-uuid/ticket9231/trac_9231_tachyon_interface_docs.patch) by mhampton created at 2010-06-15 00:04:43\n\nAdds basic documentation and doctests",
     "created_at": "2010-06-15T00:04:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9231",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_086623.json:
 }
 ```
 
-Attachment
+Attachment [trac_9231_tachyon_interface_docs.patch](tarball://root/attachments/some-uuid/ticket9231/trac_9231_tachyon_interface_docs.patch) by mhampton created at 2010-06-15 00:04:43
 
 Adds basic documentation and doctests
 

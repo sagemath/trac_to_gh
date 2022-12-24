@@ -98,7 +98,7 @@ Changing assignee from was to mhansen.
 archive/issue_comments_009036.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1401.patch](tarball://root/attachments/some-uuid/ticket1401/1401.patch) by mhansen created at 2007-12-06 23:15:40",
     "created_at": "2007-12-06T23:15:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1401",
     "type": "issue_comment",
@@ -107,7 +107,7 @@ archive/issue_comments_009036.json:
 }
 ```
 
-Attachment
+Attachment [1401.patch](tarball://root/attachments/some-uuid/ticket1401/1401.patch) by mhansen created at 2007-12-06 23:15:40
 
 
 
@@ -154,7 +154,7 @@ That said, the above patch is fine -- using .row(...) all over in code is fine a
 archive/issue_comments_009039.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-1401-part2.patch](tarball://root/attachments/some-uuid/ticket1401/trac-1401-part2.patch) by was created at 2007-12-15 12:57:27",
     "created_at": "2007-12-15T12:57:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1401",
     "type": "issue_comment",
@@ -163,7 +163,7 @@ archive/issue_comments_009039.json:
 }
 ```
 
-Attachment
+Attachment [trac-1401-part2.patch](tarball://root/attachments/some-uuid/ticket1401/trac-1401-part2.patch) by was created at 2007-12-15 12:57:27
 
 
 

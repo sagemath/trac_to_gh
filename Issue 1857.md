@@ -143,7 +143,7 @@ Attached is a patch.
 archive/issue_comments_011750.json:
 ```json
 {
-    "body": "Attachment\n\nPatch looks good to me.\n\nCheers,\n\nMichael",
+    "body": "Attachment [param-plot_18-02-2008.hg](tarball://root/attachments/some-uuid/ticket1857/param-plot_18-02-2008.hg) by mabshoff created at 2008-02-18 19:19:48\n\nPatch looks good to me.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-18T19:19:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1857",
     "type": "issue_comment",
@@ -152,7 +152,7 @@ archive/issue_comments_011750.json:
 }
 ```
 
-Attachment
+Attachment [param-plot_18-02-2008.hg](tarball://root/attachments/some-uuid/ticket1857/param-plot_18-02-2008.hg) by mabshoff created at 2008-02-18 19:19:48
 
 Patch looks good to me.
 

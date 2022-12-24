@@ -43,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2868
 archive/issue_comments_019680.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [weight_fastcrystal.patch](tarball://root/attachments/some-uuid/ticket2868/weight_fastcrystal.patch) by bump created at 2008-04-09 23:50:22",
     "created_at": "2008-04-09T23:50:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2868",
     "type": "issue_comment",
@@ -52,7 +52,7 @@ archive/issue_comments_019680.json:
 }
 ```
 
-Attachment
+Attachment [weight_fastcrystal.patch](tarball://root/attachments/some-uuid/ticket2868/weight_fastcrystal.patch) by bump created at 2008-04-09 23:50:22
 
 
 
@@ -133,7 +133,7 @@ Changing status from assigned to new.
 archive/issue_comments_019685.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2868.patch](tarball://root/attachments/some-uuid/ticket2868/2868.patch) by mhansen created at 2008-04-10 03:14:30",
     "created_at": "2008-04-10T03:14:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2868",
     "type": "issue_comment",
@@ -142,7 +142,7 @@ archive/issue_comments_019685.json:
 }
 ```
 
-Attachment
+Attachment [2868.patch](tarball://root/attachments/some-uuid/ticket2868/2868.patch) by mhansen created at 2008-04-10 03:14:30
 
 
 

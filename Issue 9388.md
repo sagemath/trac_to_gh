@@ -38,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9388
 archive/issue_comments_089355.json:
 ```json
 {
-    "body": "Attachment\n\nPatch for rubiks' \"spkg-install\" script",
+    "body": "Attachment [9388.patch](tarball://root/attachments/some-uuid/ticket9388/9388.patch) by justin created at 2010-06-30 03:57:11\n\nPatch for rubiks' \"spkg-install\" script",
     "created_at": "2010-06-30T03:57:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9388",
     "type": "issue_comment",
@@ -47,7 +47,7 @@ archive/issue_comments_089355.json:
 }
 ```
 
-Attachment
+Attachment [9388.patch](tarball://root/attachments/some-uuid/ticket9388/9388.patch) by justin created at 2010-06-30 03:57:11
 
 Patch for rubiks' "spkg-install" script
 
@@ -76,7 +76,7 @@ Updated spkg (new "spkg-install")
 archive/issue_comments_089357.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch file is just the fix for the file \"spkg-install\".  The \"spkg\" is a new spkg file with the changed \"spkg-install\" script.",
+    "body": "Attachment [rubiks-20070912.p12.spkg](tarball://root/attachments/some-uuid/ticket9388/rubiks-20070912.p12.spkg) by justin created at 2010-06-30 04:01:04\n\nThe patch file is just the fix for the file \"spkg-install\".  The \"spkg\" is a new spkg file with the changed \"spkg-install\" script.",
     "created_at": "2010-06-30T04:01:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9388",
     "type": "issue_comment",
@@ -85,7 +85,7 @@ archive/issue_comments_089357.json:
 }
 ```
 
-Attachment
+Attachment [rubiks-20070912.p12.spkg](tarball://root/attachments/some-uuid/ticket9388/rubiks-20070912.p12.spkg) by justin created at 2010-06-30 04:01:04
 
 The patch file is just the fix for the file "spkg-install".  The "spkg" is a new spkg file with the changed "spkg-install" script.
 
@@ -238,7 +238,7 @@ Mercurial patch which fully solves the rubiks makefile problem using only POSIX 
 archive/issue_comments_089365.json:
 ```json
 {
-    "body": "Attachment\n\nDavid --- While credit for individual patches by definition goes to those who make them, the author block is for credit in the release notes, which should go to anyone who helped move the fix towards its final form. I think that Justin still deserves credit here for helping to hunt down the problem in the first place.\n\nIt might be that we're coming from different contexts, but it strikes me as rude to remove someone from the author block.",
+    "body": "Attachment [9388-fix-Rubiks-portably.patch](tarball://root/attachments/some-uuid/ticket9388/9388-fix-Rubiks-portably.patch) by rlm created at 2010-07-01 17:50:23\n\nDavid --- While credit for individual patches by definition goes to those who make them, the author block is for credit in the release notes, which should go to anyone who helped move the fix towards its final form. I think that Justin still deserves credit here for helping to hunt down the problem in the first place.\n\nIt might be that we're coming from different contexts, but it strikes me as rude to remove someone from the author block.",
     "created_at": "2010-07-01T17:50:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9388",
     "type": "issue_comment",
@@ -247,7 +247,7 @@ archive/issue_comments_089365.json:
 }
 ```
 
-Attachment
+Attachment [9388-fix-Rubiks-portably.patch](tarball://root/attachments/some-uuid/ticket9388/9388-fix-Rubiks-portably.patch) by rlm created at 2010-07-01 17:50:23
 
 David --- While credit for individual patches by definition goes to those who make them, the author block is for credit in the release notes, which should go to anyone who helped move the fix towards its final form. I think that Justin still deserves credit here for helping to hunt down the problem in the first place.
 

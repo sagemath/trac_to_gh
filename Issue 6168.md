@@ -88,7 +88,7 @@ Changing component from algebra to basic arithmetic.
 archive/issue_comments_049207.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [zmod_poly_set_fix.patch](tarball://root/attachments/some-uuid/ticket6168/zmod_poly_set_fix.patch) by was created at 2009-05-31 20:51:33",
     "created_at": "2009-05-31T20:51:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6168",
     "type": "issue_comment",
@@ -97,7 +97,7 @@ archive/issue_comments_049207.json:
 }
 ```
 
-Attachment
+Attachment [zmod_poly_set_fix.patch](tarball://root/attachments/some-uuid/ticket6168/zmod_poly_set_fix.patch) by was created at 2009-05-31 20:51:33
 
 
 

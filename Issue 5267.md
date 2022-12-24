@@ -111,7 +111,7 @@ The fix is quite trivial, so should be easy to review.
 archive/issue_comments_040436.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5267-const_mpoly.patch](tarball://root/attachments/some-uuid/ticket5267/trac_5267-const_mpoly.patch) by AlexGhitza created at 2009-02-14 11:53:00",
     "created_at": "2009-02-14T11:53:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5267",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_040436.json:
 }
 ```
 
-Attachment
+Attachment [trac_5267-const_mpoly.patch](tarball://root/attachments/some-uuid/ticket5267/trac_5267-const_mpoly.patch) by AlexGhitza created at 2009-02-14 11:53:00
 
 
 

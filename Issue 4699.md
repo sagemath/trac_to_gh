@@ -200,7 +200,7 @@ apply instead of other patches
 archive/issue_comments_035402.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4699_new_bin.patch](tarball://root/attachments/some-uuid/ticket4699/trac_4699_new_bin.patch) by gfurnish created at 2008-12-11 13:14:20",
     "created_at": "2008-12-11T13:14:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4699",
     "type": "issue_comment",
@@ -209,7 +209,7 @@ archive/issue_comments_035402.json:
 }
 ```
 
-Attachment
+Attachment [trac_4699_new_bin.patch](tarball://root/attachments/some-uuid/ticket4699/trac_4699_new_bin.patch) by gfurnish created at 2008-12-11 13:14:20
 
 
 
@@ -218,7 +218,7 @@ Attachment
 archive/issue_comments_035403.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4699_fix.patch](tarball://root/attachments/some-uuid/ticket4699/trac_4699_fix.patch) by gfurnish created at 2008-12-11 14:07:34",
     "created_at": "2008-12-11T14:07:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4699",
     "type": "issue_comment",
@@ -227,7 +227,7 @@ archive/issue_comments_035403.json:
 }
 ```
 
-Attachment
+Attachment [trac_4699_fix.patch](tarball://root/attachments/some-uuid/ticket4699/trac_4699_fix.patch) by gfurnish created at 2008-12-11 14:07:34
 
 
 

@@ -243,7 +243,7 @@ a preliminary package
 archive/issue_comments_005884.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [smalljac.spkg](tarball://root/attachments/some-uuid/ticket965/smalljac.spkg) by ncalexan created at 2009-07-09 03:16:57",
     "created_at": "2009-07-09T03:16:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/965",
     "type": "issue_comment",
@@ -252,7 +252,7 @@ archive/issue_comments_005884.json:
 }
 ```
 
-Attachment
+Attachment [smalljac.spkg](tarball://root/attachments/some-uuid/ticket965/smalljac.spkg) by ncalexan created at 2009-07-09 03:16:57
 
 
 
@@ -261,7 +261,7 @@ Attachment
 archive/issue_comments_005885.json:
 ```json
 {
-    "body": "Attachment\n\nHere's a patch and a new (very preliminary!) spkg.  It builds for me on sage.math but won't work most other places, since Drew's code assumes a 64-bit `unsigned long`.",
+    "body": "Attachment [smalljac.patch](tarball://root/attachments/some-uuid/ticket965/smalljac.patch) by ncalexan created at 2009-07-09 03:20:38\n\nHere's a patch and a new (very preliminary!) spkg.  It builds for me on sage.math but won't work most other places, since Drew's code assumes a 64-bit `unsigned long`.",
     "created_at": "2009-07-09T03:20:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/965",
     "type": "issue_comment",
@@ -270,7 +270,7 @@ archive/issue_comments_005885.json:
 }
 ```
 
-Attachment
+Attachment [smalljac.patch](tarball://root/attachments/some-uuid/ticket965/smalljac.patch) by ncalexan created at 2009-07-09 03:20:38
 
 Here's a patch and a new (very preliminary!) spkg.  It builds for me on sage.math but won't work most other places, since Drew's code assumes a 64-bit `unsigned long`.
 
@@ -299,7 +299,7 @@ Changing keywords from "" to "drew sutherland smalljac point counting hyperellip
 archive/issue_comments_005887.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [smalljac_v3.spkg](tarball://root/attachments/some-uuid/ticket965/smalljac_v3.spkg) by jdemeyer created at 2013-08-13 15:34:36",
     "created_at": "2013-08-13T15:34:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/965",
     "type": "issue_comment",
@@ -308,7 +308,7 @@ archive/issue_comments_005887.json:
 }
 ```
 
-Attachment
+Attachment [smalljac_v3.spkg](tarball://root/attachments/some-uuid/ticket965/smalljac_v3.spkg) by jdemeyer created at 2013-08-13 15:34:36
 
 
 

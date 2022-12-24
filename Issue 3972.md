@@ -85,7 +85,7 @@ Got:
 archive/issue_comments_028541.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3972.patch](tarball://root/attachments/some-uuid/ticket3972/trac_3972.patch) by mabshoff created at 2008-08-29 09:10:33",
     "created_at": "2008-08-29T09:10:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3972",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_028541.json:
 }
 ```
 
-Attachment
+Attachment [trac_3972.patch](tarball://root/attachments/some-uuid/ticket3972/trac_3972.patch) by mabshoff created at 2008-08-29 09:10:33
 
 
 

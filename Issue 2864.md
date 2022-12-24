@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2864
 archive/issue_comments_019643.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [weylgroup3.patch](tarball://root/attachments/some-uuid/ticket2864/weylgroup3.patch) by mabshoff created at 2008-04-09 17:17:33",
     "created_at": "2008-04-09T17:17:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2864",
     "type": "issue_comment",
@@ -51,7 +51,7 @@ archive/issue_comments_019643.json:
 }
 ```
 
-Attachment
+Attachment [weylgroup3.patch](tarball://root/attachments/some-uuid/ticket2864/weylgroup3.patch) by mabshoff created at 2008-04-09 17:17:33
 
 
 
@@ -264,7 +264,7 @@ Changing status from new to assigned.
 archive/issue_comments_019650.json:
 ```json
 {
-    "body": "Attachment\n\nI've done some work on the the patch (for example, caching the Weyl group, adding doctests to all the functions, etc.)  I've also put all the root_system code in  combinat/root_system/ which will be necessary as it grows.  This patch is made against 3.0.alpha3.",
+    "body": "Attachment [2864.patch](tarball://root/attachments/some-uuid/ticket2864/2864.patch) by mhansen created at 2008-04-10 03:11:37\n\nI've done some work on the the patch (for example, caching the Weyl group, adding doctests to all the functions, etc.)  I've also put all the root_system code in  combinat/root_system/ which will be necessary as it grows.  This patch is made against 3.0.alpha3.",
     "created_at": "2008-04-10T03:11:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2864",
     "type": "issue_comment",
@@ -273,7 +273,7 @@ archive/issue_comments_019650.json:
 }
 ```
 
-Attachment
+Attachment [2864.patch](tarball://root/attachments/some-uuid/ticket2864/2864.patch) by mhansen created at 2008-04-10 03:11:37
 
 I've done some work on the the patch (for example, caching the Weyl group, adding doctests to all the functions, etc.)  I've also put all the root_system code in  combinat/root_system/ which will be necessary as it grows.  This patch is made against 3.0.alpha3.
 
@@ -304,7 +304,7 @@ Maybe Justin Walker should be added to the copyright in one file since he did a 
 archive/issue_comments_019652.json:
 ```json
 {
-    "body": "Attachment\n\nAlthough the patch appears large, it is mostly reorganization. Apart from moving files around, a hash method is added to CartanType_simple and Weyl Groups are cached in improvement over the original patch. \n\nTwo minor problems:\n\n(1) the G2 patch (track #2808) was accidentally reverted.\n(2) Some words about how to get the character table were lost.\n\nThese are addressed by 2864a.patch which goes on top of 2864.patch.\n\nMy recommendation would be to merge 2864.patch + 2864a.patch.\n\nDan",
+    "body": "Attachment [2864a.patch](tarball://root/attachments/some-uuid/ticket2864/2864a.patch) by bump created at 2008-04-10 17:07:51\n\nAlthough the patch appears large, it is mostly reorganization. Apart from moving files around, a hash method is added to CartanType_simple and Weyl Groups are cached in improvement over the original patch. \n\nTwo minor problems:\n\n(1) the G2 patch (track #2808) was accidentally reverted.\n(2) Some words about how to get the character table were lost.\n\nThese are addressed by 2864a.patch which goes on top of 2864.patch.\n\nMy recommendation would be to merge 2864.patch + 2864a.patch.\n\nDan",
     "created_at": "2008-04-10T17:07:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2864",
     "type": "issue_comment",
@@ -313,7 +313,7 @@ archive/issue_comments_019652.json:
 }
 ```
 
-Attachment
+Attachment [2864a.patch](tarball://root/attachments/some-uuid/ticket2864/2864a.patch) by bump created at 2008-04-10 17:07:51
 
 Although the patch appears large, it is mostly reorganization. Apart from moving files around, a hash method is added to CartanType_simple and Weyl Groups are cached in improvement over the original patch. 
 
@@ -335,7 +335,7 @@ Dan
 archive/issue_comments_019653.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2864.2.patch](tarball://root/attachments/some-uuid/ticket2864/2864.2.patch) by mhansen created at 2008-04-10 20:30:10",
     "created_at": "2008-04-10T20:30:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2864",
     "type": "issue_comment",
@@ -344,7 +344,7 @@ archive/issue_comments_019653.json:
 }
 ```
 
-Attachment
+Attachment [2864.2.patch](tarball://root/attachments/some-uuid/ticket2864/2864.2.patch) by mhansen created at 2008-04-10 20:30:10
 
 
 
@@ -353,7 +353,7 @@ Attachment
 archive/issue_comments_019654.json:
 ```json
 {
-    "body": "Attachment\n\nMerged 2864.patch, 2864a.patch and 2864b.patch in Sage 3.0.alpha4",
+    "body": "Attachment [2864b.patch](tarball://root/attachments/some-uuid/ticket2864/2864b.patch) by mabshoff created at 2008-04-10 20:31:14\n\nMerged 2864.patch, 2864a.patch and 2864b.patch in Sage 3.0.alpha4",
     "created_at": "2008-04-10T20:31:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2864",
     "type": "issue_comment",
@@ -362,7 +362,7 @@ archive/issue_comments_019654.json:
 }
 ```
 
-Attachment
+Attachment [2864b.patch](tarball://root/attachments/some-uuid/ticket2864/2864b.patch) by mabshoff created at 2008-04-10 20:31:14
 
 Merged 2864.patch, 2864a.patch and 2864b.patch in Sage 3.0.alpha4
 

@@ -73,7 +73,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/931
 archive/issue_comments_005688.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [patch_trac931.hg](tarball://root/attachments/some-uuid/ticket931/patch_trac931.hg) by jsp created at 2007-10-25 20:57:22",
     "created_at": "2007-10-25T20:57:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/931",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_005688.json:
 }
 ```
 
-Attachment
+Attachment [patch_trac931.hg](tarball://root/attachments/some-uuid/ticket931/patch_trac931.hg) by jsp created at 2007-10-25 20:57:22
 
 
 
@@ -91,7 +91,7 @@ Attachment
 archive/issue_comments_005689.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [patch_trac931.2.hg](tarball://root/attachments/some-uuid/ticket931/patch_trac931.2.hg) by jsp created at 2007-10-25 21:00:24",
     "created_at": "2007-10-25T21:00:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/931",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_005689.json:
 }
 ```
 
-Attachment
+Attachment [patch_trac931.2.hg](tarball://root/attachments/some-uuid/ticket931/patch_trac931.2.hg) by jsp created at 2007-10-25 21:00:24
 
 
 

@@ -45,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5199
 archive/issue_comments_039840.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch looks good. \n\nWe might think about optimizing this function for speed later. Specialcasing Integer and Rational, and using the _parent attribute should help here.",
+    "body": "Attachment [pynac_is_integer.patch](tarball://root/attachments/some-uuid/ticket5199/pynac_is_integer.patch) by burcin created at 2009-02-08 13:24:32\n\nThe patch looks good. \n\nWe might think about optimizing this function for speed later. Specialcasing Integer and Rational, and using the _parent attribute should help here.",
     "created_at": "2009-02-08T13:24:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5199",
     "type": "issue_comment",
@@ -54,7 +54,7 @@ archive/issue_comments_039840.json:
 }
 ```
 
-Attachment
+Attachment [pynac_is_integer.patch](tarball://root/attachments/some-uuid/ticket5199/pynac_is_integer.patch) by burcin created at 2009-02-08 13:24:32
 
 The patch looks good. 
 

@@ -81,7 +81,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/862
 archive/issue_comments_005326.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-2.8.6-fix-memleak-in-Matrix_modn_sparse.patch](tarball://root/attachments/some-uuid/ticket862/Sage-2.8.6-fix-memleak-in-Matrix_modn_sparse.patch) by mabshoff created at 2007-10-13 00:05:39",
     "created_at": "2007-10-13T00:05:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/862",
     "type": "issue_comment",
@@ -90,7 +90,7 @@ archive/issue_comments_005326.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.8.6-fix-memleak-in-Matrix_modn_sparse.patch](tarball://root/attachments/some-uuid/ticket862/Sage-2.8.6-fix-memleak-in-Matrix_modn_sparse.patch) by mabshoff created at 2007-10-13 00:05:39
 
 
 

@@ -217,7 +217,7 @@ Also, in the square-free case, since it is *theorem* that the modular degree equ
 archive/issue_comments_035891.json:
 ```json
 {
-    "body": "Attachment\n\nOK, I've updated the patch again.",
+    "body": "Attachment [4744-congruence-number.patch](tarball://root/attachments/some-uuid/ticket4744/4744-congruence-number.patch) by robertwb created at 2008-12-12 01:29:22\n\nOK, I've updated the patch again.",
     "created_at": "2008-12-12T01:29:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4744",
     "type": "issue_comment",
@@ -226,7 +226,7 @@ archive/issue_comments_035891.json:
 }
 ```
 
-Attachment
+Attachment [4744-congruence-number.patch](tarball://root/attachments/some-uuid/ticket4744/4744-congruence-number.patch) by robertwb created at 2008-12-12 01:29:22
 
 OK, I've updated the patch again.
 
@@ -259,7 +259,7 @@ Once that typo is fixed, "positive review"!
 archive/issue_comments_035893.json:
 ```json
 {
-    "body": "Attachment\n\nThe only change to this patch vs. Robert's is fixing the typo. All credit still goes to RobertWB",
+    "body": "Attachment [4744-congruence-number.2.patch](tarball://root/attachments/some-uuid/ticket4744/4744-congruence-number.2.patch) by mabshoff created at 2008-12-12 17:45:04\n\nThe only change to this patch vs. Robert's is fixing the typo. All credit still goes to RobertWB",
     "created_at": "2008-12-12T17:45:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4744",
     "type": "issue_comment",
@@ -268,7 +268,7 @@ archive/issue_comments_035893.json:
 }
 ```
 
-Attachment
+Attachment [4744-congruence-number.2.patch](tarball://root/attachments/some-uuid/ticket4744/4744-congruence-number.2.patch) by mabshoff created at 2008-12-12 17:45:04
 
 The only change to this patch vs. Robert's is fixing the typo. All credit still goes to RobertWB
 
@@ -373,7 +373,7 @@ Typo fix by Craig Citro
 archive/issue_comments_035899.json:
 ```json
 {
-    "body": "Attachment\n\nMerged trac_4744-typo-fix.patch in Sage 3.2.2 to fix the typo pointed out by Craig Citro.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_4744-typo-fix.patch](tarball://root/attachments/some-uuid/ticket4744/trac_4744-typo-fix.patch) by mabshoff created at 2008-12-13 10:34:13\n\nMerged trac_4744-typo-fix.patch in Sage 3.2.2 to fix the typo pointed out by Craig Citro.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-13T10:34:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4744",
     "type": "issue_comment",
@@ -382,7 +382,7 @@ archive/issue_comments_035899.json:
 }
 ```
 
-Attachment
+Attachment [trac_4744-typo-fix.patch](tarball://root/attachments/some-uuid/ticket4744/trac_4744-typo-fix.patch) by mabshoff created at 2008-12-13 10:34:13
 
 Merged trac_4744-typo-fix.patch in Sage 3.2.2 to fix the typo pointed out by Craig Citro.
 

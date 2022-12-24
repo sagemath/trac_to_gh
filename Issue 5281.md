@@ -695,7 +695,7 @@ Sure. If the HP-UX and / or AIX builds do not fully work, we can still open a fo
 archive/issue_comments_040567.json:
 ```json
 {
-    "body": "Attachment\n\nPatch to add AIX and HP-UX support.",
+    "body": "Attachment [5281-add-AIX-and-HP-UX-support.patch](tarball://root/attachments/some-uuid/ticket5281/5281-add-AIX-and-HP-UX-support.patch) by drkirkby created at 2010-09-25 10:59:54\n\nPatch to add AIX and HP-UX support.",
     "created_at": "2010-09-25T10:59:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
@@ -704,7 +704,7 @@ archive/issue_comments_040567.json:
 }
 ```
 
-Attachment
+Attachment [5281-add-AIX-and-HP-UX-support.patch](tarball://root/attachments/some-uuid/ticket5281/5281-add-AIX-and-HP-UX-support.patch) by drkirkby created at 2010-09-25 10:59:54
 
 Patch to add AIX and HP-UX support.
 
@@ -798,7 +798,7 @@ While we are at it, can we add the patch to build a shared library? Debian and F
 archive/issue_comments_040571.json:
 ```json
 {
-    "body": "Attachment\n\nDebian shared library patch for reference",
+    "body": "Attachment [tachyon-shared-library.patch](tarball://root/attachments/some-uuid/ticket5281/tachyon-shared-library.patch) by vbraun created at 2010-09-26 14:47:23\n\nDebian shared library patch for reference",
     "created_at": "2010-09-26T14:47:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
@@ -807,7 +807,7 @@ archive/issue_comments_040571.json:
 }
 ```
 
-Attachment
+Attachment [tachyon-shared-library.patch](tarball://root/attachments/some-uuid/ticket5281/tachyon-shared-library.patch) by vbraun created at 2010-09-26 14:47:23
 
 Debian shared library patch for reference
 
@@ -1324,7 +1324,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_040589.json:
 ```json
 {
-    "body": "Attachment\n\nDiff of Make-arch for review purposes",
+    "body": "Attachment [Make-arch.patch](tarball://root/attachments/some-uuid/ticket5281/Make-arch.patch) by vbraun created at 2011-01-11 10:10:58\n\nDiff of Make-arch for review purposes",
     "created_at": "2011-01-11T10:10:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
@@ -1333,7 +1333,7 @@ archive/issue_comments_040589.json:
 }
 ```
 
-Attachment
+Attachment [Make-arch.patch](tarball://root/attachments/some-uuid/ticket5281/Make-arch.patch) by vbraun created at 2011-01-11 10:10:58
 
 Diff of Make-arch for review purposes
 
@@ -1362,7 +1362,7 @@ Diff of Make-config for review purposes
 archive/issue_comments_040591.json:
 ```json
 {
-    "body": "Attachment\n\nGreat, I will review this today.",
+    "body": "Attachment [Make-config.patch](tarball://root/attachments/some-uuid/ticket5281/Make-config.patch) by mhampton created at 2011-01-11 16:58:37\n\nGreat, I will review this today.",
     "created_at": "2011-01-11T16:58:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
@@ -1371,7 +1371,7 @@ archive/issue_comments_040591.json:
 }
 ```
 
-Attachment
+Attachment [Make-config.patch](tarball://root/attachments/some-uuid/ticket5281/Make-config.patch) by mhampton created at 2011-01-11 16:58:37
 
 Great, I will review this today.
 

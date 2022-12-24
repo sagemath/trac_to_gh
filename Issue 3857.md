@@ -55,7 +55,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3857
 archive/issue_comments_027469.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [new_patch.patch](tarball://root/attachments/some-uuid/ticket3857/new_patch.patch) by choldsworth created at 2008-08-14 21:08:34",
     "created_at": "2008-08-14T21:08:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3857",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_027469.json:
 }
 ```
 
-Attachment
+Attachment [new_patch.patch](tarball://root/attachments/some-uuid/ticket3857/new_patch.patch) by choldsworth created at 2008-08-14 21:08:34
 
 
 
@@ -119,7 +119,7 @@ Patch implementing a superior BinaryQF_reduced_representatives method.
 archive/issue_comments_027472.json:
 ```json
 {
-    "body": "Attachment\n\nI have submitted a new patch (superseding my first patch), re-implementing the BinaryQF_reduced_representatives method, and addressing your point 3.\n\nI agree the other points need fixing but feel they should have their own ticket, or at least separate patches.\n\nHere are some timings from the new method.\n\nOld code:\n\n```\nsage: timeit(\"BinaryQF_reduced_representatives(-4004)\")\n5 loops, best of 3: 29.6 s per loop\n```\n\n\nNew code:\n\n```\nsage: timeit(\"BinaryQF_reduced_representatives(-4004)\")\n5 loops, best of 3: 38.9 ms per loop\n```\n",
+    "body": "Attachment [3857.patch](tarball://root/attachments/some-uuid/ticket3857/3857.patch) by choldsworth created at 2008-08-25 00:41:40\n\nI have submitted a new patch (superseding my first patch), re-implementing the BinaryQF_reduced_representatives method, and addressing your point 3.\n\nI agree the other points need fixing but feel they should have their own ticket, or at least separate patches.\n\nHere are some timings from the new method.\n\nOld code:\n\n```\nsage: timeit(\"BinaryQF_reduced_representatives(-4004)\")\n5 loops, best of 3: 29.6 s per loop\n```\n\n\nNew code:\n\n```\nsage: timeit(\"BinaryQF_reduced_representatives(-4004)\")\n5 loops, best of 3: 38.9 ms per loop\n```\n",
     "created_at": "2008-08-25T00:41:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3857",
     "type": "issue_comment",
@@ -128,7 +128,7 @@ archive/issue_comments_027472.json:
 }
 ```
 
-Attachment
+Attachment [3857.patch](tarball://root/attachments/some-uuid/ticket3857/3857.patch) by choldsworth created at 2008-08-25 00:41:40
 
 I have submitted a new patch (superseding my first patch), re-implementing the BinaryQF_reduced_representatives method, and addressing your point 3.
 
@@ -177,7 +177,7 @@ Apply after the previous patch (ignore the first one)
 archive/issue_comments_027474.json:
 ```json
 {
-    "body": "Attachment\n\nThat is some speedup!  When I tested the same myself I noticed that during the (long) test of the old code the machine was running lisp, meaning that something was happening using maxima, which it should not.  But that is now in the past.\n\nI have simplified the code a bit more, using xsrange() for the a and b loops, and letting b only loop from 0 (or 1) to a, adding in the form with -b if needed.  This gives another speedup factor of about 2.\n\nThis should now have a new independent review -- as far as I am concerned it is ok!  \n\nI'll now review the other patches you made in response to my first two points.",
+    "body": "Attachment [sage-trac3857.patch](tarball://root/attachments/some-uuid/ticket3857/sage-trac3857.patch) by cremona created at 2008-08-25 10:34:23\n\nThat is some speedup!  When I tested the same myself I noticed that during the (long) test of the old code the machine was running lisp, meaning that something was happening using maxima, which it should not.  But that is now in the past.\n\nI have simplified the code a bit more, using xsrange() for the a and b loops, and letting b only loop from 0 (or 1) to a, adding in the form with -b if needed.  This gives another speedup factor of about 2.\n\nThis should now have a new independent review -- as far as I am concerned it is ok!  \n\nI'll now review the other patches you made in response to my first two points.",
     "created_at": "2008-08-25T10:34:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3857",
     "type": "issue_comment",
@@ -186,7 +186,7 @@ archive/issue_comments_027474.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac3857.patch](tarball://root/attachments/some-uuid/ticket3857/sage-trac3857.patch) by cremona created at 2008-08-25 10:34:23
 
 That is some speedup!  When I tested the same myself I noticed that during the (long) test of the old code the machine was running lisp, meaning that something was happening using maxima, which it should not.  But that is now in the past.
 
@@ -203,7 +203,7 @@ I'll now review the other patches you made in response to my first two points.
 archive/issue_comments_027475.json:
 ```json
 {
-    "body": "Attachment\n\nApply after the previous two patches (ignore the first one)",
+    "body": "Attachment [3857-nils-1.patch](tarball://root/attachments/some-uuid/ticket3857/3857-nils-1.patch) by NilsSkoruppa created at 2008-09-06 14:39:50\n\nApply after the previous two patches (ignore the first one)",
     "created_at": "2008-09-06T14:39:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3857",
     "type": "issue_comment",
@@ -212,7 +212,7 @@ archive/issue_comments_027475.json:
 }
 ```
 
-Attachment
+Attachment [3857-nils-1.patch](tarball://root/attachments/some-uuid/ticket3857/3857-nils-1.patch) by NilsSkoruppa created at 2008-09-06 14:39:50
 
 Apply after the previous two patches (ignore the first one)
 

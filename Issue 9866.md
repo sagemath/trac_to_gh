@@ -38,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9867
 archive/issue_comments_097481.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9876_gap_MT_endianness.patch](tarball://root/attachments/some-uuid/ticket9867/trac_9876_gap_MT_endianness.patch) by dimpase created at 2010-09-07 13:36:11",
     "created_at": "2010-09-07T13:36:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9866",
     "type": "issue_comment",
@@ -47,7 +47,7 @@ archive/issue_comments_097481.json:
 }
 ```
 
-Attachment
+Attachment [trac_9876_gap_MT_endianness.patch](tarball://root/attachments/some-uuid/ticket9867/trac_9876_gap_MT_endianness.patch) by dimpase created at 2010-09-07 13:36:11
 
 
 

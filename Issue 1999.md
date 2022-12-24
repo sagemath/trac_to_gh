@@ -97,7 +97,7 @@ Changing assignee from was to mabshoff.
 archive/issue_comments_012931.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-1999-part2.patch](tarball://root/attachments/some-uuid/ticket1999/trac-1999-part2.patch) by was created at 2008-02-02 07:52:04",
     "created_at": "2008-02-02T07:52:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1999",
     "type": "issue_comment",
@@ -106,7 +106,7 @@ archive/issue_comments_012931.json:
 }
 ```
 
-Attachment
+Attachment [trac-1999-part2.patch](tarball://root/attachments/some-uuid/ticket1999/trac-1999-part2.patch) by was created at 2008-02-02 07:52:04
 
 
 

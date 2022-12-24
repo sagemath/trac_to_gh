@@ -80,7 +80,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1728
 archive/issue_comments_010940.json:
 ```json
 {
-    "body": "Attachment\n\nI don't like the part about\n\n```\n             sage: x = CC['x'].0\n             sage: i = CC.0\n             sage: f = (x - 1)*(x - i)\n             sage: f.roots(multiplicities=False)\n-            [1.00000000000000 - ...*I,... 1.00000000000000*I]\n+            [...1.00000000000000*I, 1.00000000000000...*I]\n```\n\nbut I don't see any viable alternative.\n\nCheers,\n\nMichael",
+    "body": "Attachment [Sage-2.10.alpha2-fix-numerical-noise-doctest-failure-from-numpy-1.0.4.patch](tarball://root/attachments/some-uuid/ticket1728/Sage-2.10.alpha2-fix-numerical-noise-doctest-failure-from-numpy-1.0.4.patch) by mabshoff created at 2008-01-09 01:49:51\n\nI don't like the part about\n\n```\n             sage: x = CC['x'].0\n             sage: i = CC.0\n             sage: f = (x - 1)*(x - i)\n             sage: f.roots(multiplicities=False)\n-            [1.00000000000000 - ...*I,... 1.00000000000000*I]\n+            [...1.00000000000000*I, 1.00000000000000...*I]\n```\n\nbut I don't see any viable alternative.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-09T01:49:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1728",
     "type": "issue_comment",
@@ -89,7 +89,7 @@ archive/issue_comments_010940.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.10.alpha2-fix-numerical-noise-doctest-failure-from-numpy-1.0.4.patch](tarball://root/attachments/some-uuid/ticket1728/Sage-2.10.alpha2-fix-numerical-noise-doctest-failure-from-numpy-1.0.4.patch) by mabshoff created at 2008-01-09 01:49:51
 
 I don't like the part about
 
@@ -151,7 +151,7 @@ Merged in Sage 2.10.alpha1.
 archive/issue_comments_010943.json:
 ```json
 {
-    "body": "Attachment\n\nAnother patch was needed to quiet the same doctest on OSX. I am inclient to either add `#random` to that test or alternatively change it to something that leads to something numerically more stable. Oh well.\n\nCheers,\n\nMichael",
+    "body": "Attachment [Sage-2.10.alpha1-fix-more-numerical-doctest-noise-from-numpy-merge.patch](tarball://root/attachments/some-uuid/ticket1728/Sage-2.10.alpha1-fix-more-numerical-doctest-noise-from-numpy-merge.patch) by mabshoff created at 2008-01-11 16:21:02\n\nAnother patch was needed to quiet the same doctest on OSX. I am inclient to either add `#random` to that test or alternatively change it to something that leads to something numerically more stable. Oh well.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-11T16:21:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1728",
     "type": "issue_comment",
@@ -160,7 +160,7 @@ archive/issue_comments_010943.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.10.alpha1-fix-more-numerical-doctest-noise-from-numpy-merge.patch](tarball://root/attachments/some-uuid/ticket1728/Sage-2.10.alpha1-fix-more-numerical-doctest-noise-from-numpy-merge.patch) by mabshoff created at 2008-01-11 16:21:02
 
 Another patch was needed to quiet the same doctest on OSX. I am inclient to either add `#random` to that test or alternatively change it to something that leads to something numerically more stable. Oh well.
 

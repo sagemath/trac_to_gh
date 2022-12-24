@@ -82,7 +82,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1702
 archive/issue_comments_010783.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_1702.patch](tarball://root/attachments/some-uuid/ticket1702/trac_1702.patch) by malb created at 2008-01-06 16:45:25",
     "created_at": "2008-01-06T16:45:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1702",
     "type": "issue_comment",
@@ -91,7 +91,7 @@ archive/issue_comments_010783.json:
 }
 ```
 
-Attachment
+Attachment [trac_1702.patch](tarball://root/attachments/some-uuid/ticket1702/trac_1702.patch) by malb created at 2008-01-06 16:45:25
 
 
 

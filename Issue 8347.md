@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8347
 archive/issue_comments_074519.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [test_positivity_cyclotomic_field-nb.patch](tarball://root/attachments/some-uuid/ticket8347/test_positivity_cyclotomic_field-nb.patch) by nborie created at 2010-02-24 15:42:52",
     "created_at": "2010-02-24T15:42:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8347",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_074519.json:
 }
 ```
 
-Attachment
+Attachment [test_positivity_cyclotomic_field-nb.patch](tarball://root/attachments/some-uuid/ticket8347/test_positivity_cyclotomic_field-nb.patch) by nborie created at 2010-02-24 15:42:52
 
 
 
@@ -91,7 +91,7 @@ I am clearly not a speciallist for this kind of job. There is two propositions t
 archive/issue_comments_074522.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [test_positivity_cyclotomic_field_2-nb.patch](tarball://root/attachments/some-uuid/ticket8347/test_positivity_cyclotomic_field_2-nb.patch) by nborie created at 2010-02-24 16:20:47",
     "created_at": "2010-02-24T16:20:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8347",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_074522.json:
 }
 ```
 
-Attachment
+Attachment [test_positivity_cyclotomic_field_2-nb.patch](tarball://root/attachments/some-uuid/ticket8347/test_positivity_cyclotomic_field_2-nb.patch) by nborie created at 2010-02-24 16:20:47
 
 
 
@@ -360,7 +360,7 @@ Paul
 archive/issue_comments_074535.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [test_positivity_cyclotomic_field_3-nb.patch](tarball://root/attachments/some-uuid/ticket8347/test_positivity_cyclotomic_field_3-nb.patch) by nborie created at 2010-02-28 20:11:08",
     "created_at": "2010-02-28T20:11:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8347",
     "type": "issue_comment",
@@ -369,7 +369,7 @@ archive/issue_comments_074535.json:
 }
 ```
 
-Attachment
+Attachment [test_positivity_cyclotomic_field_3-nb.patch](tarball://root/attachments/some-uuid/ticket8347/test_positivity_cyclotomic_field_3-nb.patch) by nborie created at 2010-02-28 20:11:08
 
 
 

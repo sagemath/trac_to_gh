@@ -126,7 +126,7 @@ In the above example it should be
 archive/issue_comments_011027.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1746.patch](tarball://root/attachments/some-uuid/ticket1746/1746.patch) by AlexGhitza created at 2008-01-10 15:05:33",
     "created_at": "2008-01-10T15:05:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1746",
     "type": "issue_comment",
@@ -135,7 +135,7 @@ archive/issue_comments_011027.json:
 }
 ```
 
-Attachment
+Attachment [1746.patch](tarball://root/attachments/some-uuid/ticket1746/1746.patch) by AlexGhitza created at 2008-01-10 15:05:33
 
 
 

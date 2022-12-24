@@ -89,7 +89,7 @@ Version: 2.0
 archive/issue_comments_002833.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [bernoulli_single.patch](tarball://root/attachments/some-uuid/ticket550/bernoulli_single.patch) by dmharvey created at 2007-09-01 17:05:56",
     "created_at": "2007-09-01T17:05:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/550",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_002833.json:
 }
 ```
 
-Attachment
+Attachment [bernoulli_single.patch](tarball://root/attachments/some-uuid/ticket550/bernoulli_single.patch) by dmharvey created at 2007-09-01 17:05:56
 
 
 

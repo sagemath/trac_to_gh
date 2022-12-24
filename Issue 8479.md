@@ -152,7 +152,7 @@ The patch looks really good and addresses an important problem. I have a few min
 archive/issue_comments_076422.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-8479-numpy_functions.patch](tarball://root/attachments/some-uuid/ticket8479/trac-8479-numpy_functions.patch) by whuss created at 2010-05-07 09:13:49",
     "created_at": "2010-05-07T09:13:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8479",
     "type": "issue_comment",
@@ -161,7 +161,7 @@ archive/issue_comments_076422.json:
 }
 ```
 
-Attachment
+Attachment [trac-8479-numpy_functions.patch](tarball://root/attachments/some-uuid/ticket8479/trac-8479-numpy_functions.patch) by whuss created at 2010-05-07 09:13:49
 
 
 
@@ -254,7 +254,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_076427.json:
 ```json
 {
-    "body": "Attachment\n\nThanks for the quick response.\n\nReplying to [comment:5 whuss]:\n> Replying to [comment:4 burcin]:\n> \n> > * Can we change the test in sage.functions.other.sqrt() to work without importing numpy?\n> \n> done in the new patch\n\nThanks!\n\n> > * All the examples in the doctests are for functions with a single argument. Is there any reason to move the check in `sage.symbolic.function.Function.__call__()` to try all arguments?\n> \n> In the original patch I forgot to add tests for atan2, which also didn't work with numpy before. The tests are now included.\n\nFair enough.\n\n> > We should also consider moving this check to `sage.symbolic.function.BuiltinFunction.__call__()`.\n> \n> Why would this be better? \n\nThis code path is speed critical since it gets called thousands of times for many applications like plotting. Checking the type of each argument introduces a penalty for functions with a single argument.\n\n> It currently does not have a `__call__` method.\n\nSorry about that. I confused it with the `__call__()` method of `GinacFunction`, which also checks if there is only one argument, and it has a method with the same name as the function. Now I wonder why isn't that in `BuiltinFunction`...\n\n\nYour patch was missing an empty line after line 165 in `sage/functions/other.py`. attachment:trac-8479-numpy_functions.take2.patch fixes this. Only attachment:trac-8479-numpy_functions.take2.patch should be applied.\n\n\nGreat work!",
+    "body": "Attachment [trac-8479-numpy_functions.take2.patch](tarball://root/attachments/some-uuid/ticket8479/trac-8479-numpy_functions.take2.patch) by burcin created at 2010-05-07 14:53:45\n\nThanks for the quick response.\n\nReplying to [comment:5 whuss]:\n> Replying to [comment:4 burcin]:\n> \n> > * Can we change the test in sage.functions.other.sqrt() to work without importing numpy?\n> \n> done in the new patch\n\nThanks!\n\n> > * All the examples in the doctests are for functions with a single argument. Is there any reason to move the check in `sage.symbolic.function.Function.__call__()` to try all arguments?\n> \n> In the original patch I forgot to add tests for atan2, which also didn't work with numpy before. The tests are now included.\n\nFair enough.\n\n> > We should also consider moving this check to `sage.symbolic.function.BuiltinFunction.__call__()`.\n> \n> Why would this be better? \n\nThis code path is speed critical since it gets called thousands of times for many applications like plotting. Checking the type of each argument introduces a penalty for functions with a single argument.\n\n> It currently does not have a `__call__` method.\n\nSorry about that. I confused it with the `__call__()` method of `GinacFunction`, which also checks if there is only one argument, and it has a method with the same name as the function. Now I wonder why isn't that in `BuiltinFunction`...\n\n\nYour patch was missing an empty line after line 165 in `sage/functions/other.py`. attachment:trac-8479-numpy_functions.take2.patch fixes this. Only attachment:trac-8479-numpy_functions.take2.patch should be applied.\n\n\nGreat work!",
     "created_at": "2010-05-07T14:53:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8479",
     "type": "issue_comment",
@@ -263,7 +263,7 @@ archive/issue_comments_076427.json:
 }
 ```
 
-Attachment
+Attachment [trac-8479-numpy_functions.take2.patch](tarball://root/attachments/some-uuid/ticket8479/trac-8479-numpy_functions.take2.patch) by burcin created at 2010-05-07 14:53:45
 
 Thanks for the quick response.
 

@@ -72,7 +72,7 @@ add doctests
 archive/issue_comments_077545.json:
 ```json
 {
-    "body": "Attachment\n\nThe pynac package at #8644 includes the patches that were merged in `GiNaC` to fix this problem. attachment:trac_8565-neg_pi.patch adds doctests for the fix.\n\nThis ticket now depends on #8644.",
+    "body": "Attachment [trac_8565-neg_pi.patch](tarball://root/attachments/some-uuid/ticket8565/trac_8565-neg_pi.patch) by burcin created at 2010-04-02 14:52:12\n\nThe pynac package at #8644 includes the patches that were merged in `GiNaC` to fix this problem. attachment:trac_8565-neg_pi.patch adds doctests for the fix.\n\nThis ticket now depends on #8644.",
     "created_at": "2010-04-02T14:52:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8565",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_077545.json:
 }
 ```
 
-Attachment
+Attachment [trac_8565-neg_pi.patch](tarball://root/attachments/some-uuid/ticket8565/trac_8565-neg_pi.patch) by burcin created at 2010-04-02 14:52:12
 
 The pynac package at #8644 includes the patches that were merged in `GiNaC` to fix this problem. attachment:trac_8565-neg_pi.patch adds doctests for the fix.
 

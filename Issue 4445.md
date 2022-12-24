@@ -62,7 +62,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4445
 archive/issue_comments_032702.json:
 ```json
 {
-    "body": "Attachment\n\nThis does indeed seem to fix the problem.  Thanks for the speedy work!  doctests in graph.py pass.\n\nPositive review.",
+    "body": "Attachment [trac_4445-is_isom_fail.patch](tarball://root/attachments/some-uuid/ticket4445/trac_4445-is_isom_fail.patch) by jason created at 2008-11-05 20:31:35\n\nThis does indeed seem to fix the problem.  Thanks for the speedy work!  doctests in graph.py pass.\n\nPositive review.",
     "created_at": "2008-11-05T20:31:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4445",
     "type": "issue_comment",
@@ -71,7 +71,7 @@ archive/issue_comments_032702.json:
 }
 ```
 
-Attachment
+Attachment [trac_4445-is_isom_fail.patch](tarball://root/attachments/some-uuid/ticket4445/trac_4445-is_isom_fail.patch) by jason created at 2008-11-05 20:31:35
 
 This does indeed seem to fix the problem.  Thanks for the speedy work!  doctests in graph.py pass.
 

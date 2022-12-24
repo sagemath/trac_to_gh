@@ -53,7 +53,7 @@ Patch
 archive/issue_comments_032129.json:
 ```json
 {
-    "body": "Attachment\n\nIn case I did not make myself clear: this patch is *not* ready for insertion in sage.\nIt's more of a request for comments!",
+    "body": "Attachment [lazy_attributes-4371-nt.patch](tarball://root/attachments/some-uuid/ticket4371/lazy_attributes-4371-nt.patch) by nthiery created at 2008-10-26 13:35:59\n\nIn case I did not make myself clear: this patch is *not* ready for insertion in sage.\nIt's more of a request for comments!",
     "created_at": "2008-10-26T13:35:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4371",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_032129.json:
 }
 ```
 
-Attachment
+Attachment [lazy_attributes-4371-nt.patch](tarball://root/attachments/some-uuid/ticket4371/lazy_attributes-4371-nt.patch) by nthiery created at 2008-10-26 13:35:59
 
 In case I did not make myself clear: this patch is *not* ready for insertion in sage.
 It's more of a request for comments!
@@ -271,7 +271,7 @@ Not all desired features are implemented, but we need the bulk for upcoming patc
 archive/issue_comments_032138.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [lazy_attributes-4371-nt.2.patch](tarball://root/attachments/some-uuid/ticket4371/lazy_attributes-4371-nt.2.patch) by nthiery created at 2009-02-13 16:12:26",
     "created_at": "2009-02-13T16:12:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4371",
     "type": "issue_comment",
@@ -280,7 +280,7 @@ archive/issue_comments_032138.json:
 }
 ```
 
-Attachment
+Attachment [lazy_attributes-4371-nt.2.patch](tarball://root/attachments/some-uuid/ticket4371/lazy_attributes-4371-nt.2.patch) by nthiery created at 2009-02-13 16:12:26
 
 
 

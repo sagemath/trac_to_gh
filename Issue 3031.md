@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3031
 archive/issue_comments_020860.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9610.patch](tarball://root/attachments/some-uuid/ticket3031/9610.patch) by kedlaya created at 2008-04-26 15:43:28",
     "created_at": "2008-04-26T15:43:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3031",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_020860.json:
 }
 ```
 
-Attachment
+Attachment [9610.patch](tarball://root/attachments/some-uuid/ticket3031/9610.patch) by kedlaya created at 2008-04-26 15:43:28
 
 
 
@@ -55,7 +55,7 @@ Attachment
 archive/issue_comments_020861.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-3031-pt2.patch](tarball://root/attachments/some-uuid/ticket3031/trac-3031-pt2.patch) by craigcitro created at 2008-04-27 00:52:34",
     "created_at": "2008-04-27T00:52:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3031",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_020861.json:
 }
 ```
 
-Attachment
+Attachment [trac-3031-pt2.patch](tarball://root/attachments/some-uuid/ticket3031/trac-3031-pt2.patch) by craigcitro created at 2008-04-27 00:52:34
 
 
 
@@ -214,7 +214,7 @@ Changing status from closed to reopened.
 archive/issue_comments_020869.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-3031-pt3.patch](tarball://root/attachments/some-uuid/ticket3031/trac-3031-pt3.patch) by craigcitro created at 2008-04-28 03:35:17",
     "created_at": "2008-04-28T03:35:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3031",
     "type": "issue_comment",
@@ -223,7 +223,7 @@ archive/issue_comments_020869.json:
 }
 ```
 
-Attachment
+Attachment [trac-3031-pt3.patch](tarball://root/attachments/some-uuid/ticket3031/trac-3031-pt3.patch) by craigcitro created at 2008-04-28 03:35:17
 
 
 

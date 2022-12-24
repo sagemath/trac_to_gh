@@ -51,7 +51,7 @@ Changing status from new to needs_review.
 archive/issue_comments_086707.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9236_doc_sage_timeit-sl.patch](tarball://root/attachments/some-uuid/ticket9236/trac_9236_doc_sage_timeit-sl.patch) by slabbe created at 2010-06-14 11:10:10",
     "created_at": "2010-06-14T11:10:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9236",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_086707.json:
 }
 ```
 
-Attachment
+Attachment [trac_9236_doc_sage_timeit-sl.patch](tarball://root/attachments/some-uuid/ticket9236/trac_9236_doc_sage_timeit-sl.patch) by slabbe created at 2010-06-14 11:10:10
 
 
 
@@ -69,7 +69,7 @@ Attachment
 archive/issue_comments_086708.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9236-reviewer.patch](tarball://root/attachments/some-uuid/ticket9236/trac_9236-reviewer.patch) by mvngu created at 2010-06-15 02:12:48",
     "created_at": "2010-06-15T02:12:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9236",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_086708.json:
 }
 ```
 
-Attachment
+Attachment [trac_9236-reviewer.patch](tarball://root/attachments/some-uuid/ticket9236/trac_9236-reviewer.patch) by mvngu created at 2010-06-15 02:12:48
 
 
 

@@ -100,7 +100,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4468
 archive/issue_comments_032986.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [cmap_4468.patch](tarball://root/attachments/some-uuid/ticket4468/cmap_4468.patch) by slabbe created at 2008-11-08 06:41:30",
     "created_at": "2008-11-08T06:41:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4468",
     "type": "issue_comment",
@@ -109,7 +109,7 @@ archive/issue_comments_032986.json:
 }
 ```
 
-Attachment
+Attachment [cmap_4468.patch](tarball://root/attachments/some-uuid/ticket4468/cmap_4468.patch) by slabbe created at 2008-11-08 06:41:30
 
 
 
@@ -178,7 +178,7 @@ This patch replace the precedent.
 archive/issue_comments_032990.json:
 ```json
 {
-    "body": "Attachment\n\nI just added two doctests in a second patch (witch replace the precedent). I tested those doctests in another and smaller file because sage -t plot.py takes a while. On my computer, I am not able to end it...\n\n\n```\n***sage/plot$ sage -t all.py axes.py\nsage -t  devel/sage-word/sage/plot/all.py                   \n\t [2.9 s]\nsage -t  devel/sage-word/sage/plot/axes.py                  \n\t [8.3 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 11.2 seconds\n***sage/plot$ sage -t plot.py\nsage -t  sage/plot/plot.py                  *** *** Error: TIMED OUT! *** ***\n*** *** Error: TIMED OUT! *** ***\n\t [602.3 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  devel/sage-word/sage/plot/plot.py\nTotal time for all tests: 602.3 seconds\n```\n",
+    "body": "Attachment [cmap_4468-2.patch](tarball://root/attachments/some-uuid/ticket4468/cmap_4468-2.patch) by slabbe created at 2008-11-08 22:39:47\n\nI just added two doctests in a second patch (witch replace the precedent). I tested those doctests in another and smaller file because sage -t plot.py takes a while. On my computer, I am not able to end it...\n\n\n```\n***sage/plot$ sage -t all.py axes.py\nsage -t  devel/sage-word/sage/plot/all.py                   \n\t [2.9 s]\nsage -t  devel/sage-word/sage/plot/axes.py                  \n\t [8.3 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 11.2 seconds\n***sage/plot$ sage -t plot.py\nsage -t  sage/plot/plot.py                  *** *** Error: TIMED OUT! *** ***\n*** *** Error: TIMED OUT! *** ***\n\t [602.3 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  devel/sage-word/sage/plot/plot.py\nTotal time for all tests: 602.3 seconds\n```\n",
     "created_at": "2008-11-08T22:39:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4468",
     "type": "issue_comment",
@@ -187,7 +187,7 @@ archive/issue_comments_032990.json:
 }
 ```
 
-Attachment
+Attachment [cmap_4468-2.patch](tarball://root/attachments/some-uuid/ticket4468/cmap_4468-2.patch) by slabbe created at 2008-11-08 22:39:47
 
 I just added two doctests in a second patch (witch replace the precedent). I tested those doctests in another and smaller file because sage -t plot.py takes a while. On my computer, I am not able to end it...
 

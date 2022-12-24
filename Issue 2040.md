@@ -68,7 +68,7 @@ add axes_labels to documentation to show
 archive/issue_comments_013210.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached a patch for point 1.  I don't know anything about point 2.",
+    "body": "Attachment [plot.patch](tarball://root/attachments/some-uuid/ticket2040/plot.patch) by jhpalmieri created at 2008-05-13 21:54:26\n\nI've attached a patch for point 1.  I don't know anything about point 2.",
     "created_at": "2008-05-13T21:54:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2040",
     "type": "issue_comment",
@@ -77,7 +77,7 @@ archive/issue_comments_013210.json:
 }
 ```
 
-Attachment
+Attachment [plot.patch](tarball://root/attachments/some-uuid/ticket2040/plot.patch) by jhpalmieri created at 2008-05-13 21:54:26
 
 I've attached a patch for point 1.  I don't know anything about point 2.
 
@@ -88,7 +88,7 @@ I've attached a patch for point 1.  I don't know anything about point 2.
 archive/issue_comments_013211.json:
 ```json
 {
-    "body": "Attachment\n\nshow axes_labels when called from command line",
+    "body": "Attachment [plot2.patch](tarball://root/attachments/some-uuid/ticket2040/plot2.patch) by jhpalmieri created at 2008-05-13 21:57:34\n\nshow axes_labels when called from command line",
     "created_at": "2008-05-13T21:57:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2040",
     "type": "issue_comment",
@@ -97,7 +97,7 @@ archive/issue_comments_013211.json:
 }
 ```
 
-Attachment
+Attachment [plot2.patch](tarball://root/attachments/some-uuid/ticket2040/plot2.patch) by jhpalmieri created at 2008-05-13 21:57:34
 
 show axes_labels when called from command line
 

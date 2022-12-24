@@ -160,7 +160,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_035181.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch above includes left overs from another patch.  I'll upload a new one now.",
+    "body": "Attachment [4670.patch](tarball://root/attachments/some-uuid/ticket4670/4670.patch) by spancratz created at 2010-01-18 03:55:52\n\nThe patch above includes left overs from another patch.  I'll upload a new one now.",
     "created_at": "2010-01-18T03:55:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4670",
     "type": "issue_comment",
@@ -169,7 +169,7 @@ archive/issue_comments_035181.json:
 }
 ```
 
-Attachment
+Attachment [4670.patch](tarball://root/attachments/some-uuid/ticket4670/4670.patch) by spancratz created at 2010-01-18 03:55:52
 
 The patch above includes left overs from another patch.  I'll upload a new one now.
 
@@ -180,7 +180,7 @@ The patch above includes left overs from another patch.  I'll upload a new one n
 archive/issue_comments_035182.json:
 ```json
 {
-    "body": "Attachment\n\nOnly the relevant lines from Kevin's patch",
+    "body": "Attachment [trac4670.patch](tarball://root/attachments/some-uuid/ticket4670/trac4670.patch) by spancratz created at 2010-01-18 03:56:41\n\nOnly the relevant lines from Kevin's patch",
     "created_at": "2010-01-18T03:56:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4670",
     "type": "issue_comment",
@@ -189,7 +189,7 @@ archive/issue_comments_035182.json:
 }
 ```
 
-Attachment
+Attachment [trac4670.patch](tarball://root/attachments/some-uuid/ticket4670/trac4670.patch) by spancratz created at 2010-01-18 03:56:41
 
 Only the relevant lines from Kevin's patch
 

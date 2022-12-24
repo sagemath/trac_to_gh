@@ -51,7 +51,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3364
 archive/issue_comments_023535.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3364_randstate_fix_gap.patch](tarball://root/attachments/some-uuid/ticket3364/3364_randstate_fix_gap.patch) by cwitty created at 2008-06-08 14:07:22",
     "created_at": "2008-06-08T14:07:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3364",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_023535.json:
 }
 ```
 
-Attachment
+Attachment [3364_randstate_fix_gap.patch](tarball://root/attachments/some-uuid/ticket3364/3364_randstate_fix_gap.patch) by cwitty created at 2008-06-08 14:07:22
 
 
 
@@ -234,7 +234,7 @@ Patch with fixed permgroup.py doctests
 archive/issue_comments_023543.json:
 ```json
 {
-    "body": "Attachment\n\nMerged in Sage 3.0.3.alpha2",
+    "body": "Attachment [trac_3364_randstate_fix_gap-rebased.patch](tarball://root/attachments/some-uuid/ticket3364/trac_3364_randstate_fix_gap-rebased.patch) by mabshoff created at 2008-06-09 18:47:46\n\nMerged in Sage 3.0.3.alpha2",
     "created_at": "2008-06-09T18:47:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3364",
     "type": "issue_comment",
@@ -243,7 +243,7 @@ archive/issue_comments_023543.json:
 }
 ```
 
-Attachment
+Attachment [trac_3364_randstate_fix_gap-rebased.patch](tarball://root/attachments/some-uuid/ticket3364/trac_3364_randstate_fix_gap-rebased.patch) by mabshoff created at 2008-06-09 18:47:46
 
 Merged in Sage 3.0.3.alpha2
 

@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7305
 archive/issue_comments_061008.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7305_higman_sims_graph.patch](tarball://root/attachments/some-uuid/ticket7305/trac_7305_higman_sims_graph.patch) by rbeezer created at 2009-10-26 04:18:36",
     "created_at": "2009-10-26T04:18:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7305",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_061008.json:
 }
 ```
 
-Attachment
+Attachment [trac_7305_higman_sims_graph.patch](tarball://root/attachments/some-uuid/ticket7305/trac_7305_higman_sims_graph.patch) by rbeezer created at 2009-10-26 04:18:36
 
 
 
@@ -116,7 +116,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_061012.json:
 ```json
 {
-    "body": "Attachment\n\nHi Nathann,\n\nNice catch, on both counts.  Thanks for the review.\n\nThe \"_2\" patch is self-contained (ie apply just the single revised patch on a fresh install) and addresses both your comments.\n\nRob",
+    "body": "Attachment [trac_7305_higman_sims_graph_2.patch](tarball://root/attachments/some-uuid/ticket7305/trac_7305_higman_sims_graph_2.patch) by rbeezer created at 2009-11-08 22:21:14\n\nHi Nathann,\n\nNice catch, on both counts.  Thanks for the review.\n\nThe \"_2\" patch is self-contained (ie apply just the single revised patch on a fresh install) and addresses both your comments.\n\nRob",
     "created_at": "2009-11-08T22:21:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7305",
     "type": "issue_comment",
@@ -125,7 +125,7 @@ archive/issue_comments_061012.json:
 }
 ```
 
-Attachment
+Attachment [trac_7305_higman_sims_graph_2.patch](tarball://root/attachments/some-uuid/ticket7305/trac_7305_higman_sims_graph_2.patch) by rbeezer created at 2009-11-08 22:21:14
 
 Hi Nathann,
 

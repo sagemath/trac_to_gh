@@ -744,7 +744,7 @@ Use weak references in the coercion cache
 archive/issue_comments_003773.json:
 ```json
 {
-    "body": "Attachment\n\nI have slightly updated some of the new examples: In the old patch version, I had created `TripleDict(10)`, but meanwhile I learnt that the given parameter should better be odd (actually a prime). So, in the new patch version, it is `TripleDict(11)`.",
+    "body": "Attachment [trac715_weak_coercion_cache.patch](tarball://root/attachments/some-uuid/ticket715/trac715_weak_coercion_cache.patch) by SimonKing created at 2011-12-29 22:28:31\n\nI have slightly updated some of the new examples: In the old patch version, I had created `TripleDict(10)`, but meanwhile I learnt that the given parameter should better be odd (actually a prime). So, in the new patch version, it is `TripleDict(11)`.",
     "created_at": "2011-12-29T22:28:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/715",
     "type": "issue_comment",
@@ -753,7 +753,7 @@ archive/issue_comments_003773.json:
 }
 ```
 
-Attachment
+Attachment [trac715_weak_coercion_cache.patch](tarball://root/attachments/some-uuid/ticket715/trac715_weak_coercion_cache.patch) by SimonKing created at 2011-12-29 22:28:31
 
 I have slightly updated some of the new examples: In the old patch version, I had created `TripleDict(10)`, but meanwhile I learnt that the given parameter should better be odd (actually a prime). So, in the new patch version, it is `TripleDict(11)`.
 
@@ -1557,7 +1557,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_003804.json:
 ```json
 {
-    "body": "Attachment\n\nSee the updated patch:\n\nApply trac715_two_tripledicts.patch",
+    "body": "Attachment [trac715_two_tripledicts.patch](tarball://root/attachments/some-uuid/ticket715/trac715_two_tripledicts.patch) by SimonKing created at 2012-01-03 10:34:29\n\nSee the updated patch:\n\nApply trac715_two_tripledicts.patch",
     "created_at": "2012-01-03T10:34:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/715",
     "type": "issue_comment",
@@ -1566,7 +1566,7 @@ archive/issue_comments_003804.json:
 }
 ```
 
-Attachment
+Attachment [trac715_two_tripledicts.patch](tarball://root/attachments/some-uuid/ticket715/trac715_two_tripledicts.patch) by SimonKing created at 2012-01-03 10:34:29
 
 See the updated patch:
 
@@ -2091,7 +2091,7 @@ Experimental patch using weak references on domain and codomain of functors
 archive/issue_comments_003825.json:
 ```json
 {
-    "body": "Attachment\n\nI have posted an [attachment:test_orphan_functor experimental patch], that has to be applied on top of [attachment:trac715_two_tripledicts.patch].\n\nWith the experimental patch, the coercion model stores strong references to the actions (hence, it restores the original behaviour), but functors will only store weak references to their domains and codomains.\n\nUnfortunately, this does *not* fix the memory leak. But perhaps you want to play with it...\n\nAh! And I just see that \"sage.categories.functor\" was the wrong location to do the change.",
+    "body": "Attachment [test_orphan_functor](tarball://root/attachments/some-uuid/ticket715/test_orphan_functor) by SimonKing created at 2012-01-03 15:56:40\n\nI have posted an [attachment:test_orphan_functor experimental patch], that has to be applied on top of [attachment:trac715_two_tripledicts.patch].\n\nWith the experimental patch, the coercion model stores strong references to the actions (hence, it restores the original behaviour), but functors will only store weak references to their domains and codomains.\n\nUnfortunately, this does *not* fix the memory leak. But perhaps you want to play with it...\n\nAh! And I just see that \"sage.categories.functor\" was the wrong location to do the change.",
     "created_at": "2012-01-03T15:56:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/715",
     "type": "issue_comment",
@@ -2100,7 +2100,7 @@ archive/issue_comments_003825.json:
 }
 ```
 
-Attachment
+Attachment [test_orphan_functor](tarball://root/attachments/some-uuid/ticket715/test_orphan_functor) by SimonKing created at 2012-01-03 15:56:40
 
 I have posted an [attachment:test_orphan_functor experimental patch], that has to be applied on top of [attachment:trac715_two_tripledicts.patch].
 
@@ -2911,7 +2911,7 @@ There is one thing, related with regressions, that I didn't do: The `TripleDict`
 archive/issue_comments_003853.json:
 ```json
 {
-    "body": "Attachment\n\nUse weak references to the underlying set of an action. Use `TripleDictById` to store actions in parents. Disregard the orphan_functor patch!",
+    "body": "Attachment [trac715_weak_action.patch](tarball://root/attachments/some-uuid/ticket715/trac715_weak_action.patch) by SimonKing created at 2012-01-04 20:18:15\n\nUse weak references to the underlying set of an action. Use `TripleDictById` to store actions in parents. Disregard the orphan_functor patch!",
     "created_at": "2012-01-04T20:18:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/715",
     "type": "issue_comment",
@@ -2920,7 +2920,7 @@ archive/issue_comments_003853.json:
 }
 ```
 
-Attachment
+Attachment [trac715_weak_action.patch](tarball://root/attachments/some-uuid/ticket715/trac715_weak_action.patch) by SimonKing created at 2012-01-04 20:18:15
 
 Use weak references to the underlying set of an action. Use `TripleDictById` to store actions in parents. Disregard the orphan_functor patch!
 
@@ -3569,7 +3569,7 @@ Introduce weak references to coercion dicts, and refactor the hashtables.
 archive/issue_comments_003877.json:
 ```json
 {
-    "body": "Attachment\n\nI have posted a new patch version.\n\nRecall that we want a dictionary whose keys are triples; we want to compare all three key items by identity, and we want that there is only a weak reference to the first two key items (the third my have a strong reference).\n\nThe `TripleDictById` is now based on the following idea:\n\n* There is one list that stores the memory addresses of the first two key items and the third key item. In particular, I don't need to decref the key items, since we only store their addresses.\n* There is another list that stores the value corresponding to the key triple, and stores weak references with a callback function to the first two key items.\n* When accessing the dictionary, the address of the first two key items is compared with the stored address, and the third is compared by identity with the stored data.\n* Only when iterating over the `TripleDictById`, the weak references are called (of course: iteritems is supposed to return the keys, not just the address of the keys).\n* There are two reasons for storing the weak references (and not only the addresses): The callback function of the weak references removes unused entries of the dictionary, and we also need it for iteration over the dictionary.\n\n__Status of the patch__\n\n* The \"raw\" speed seems to be almost as good as in the unpatched version, the speed of doctests seems to be OK, and I don't observe segfaults.\n* The memleak is fixed.\n* The documentation of sage/structure/coerce_dict.pyx needs more polishing, and last but not least I did not run the doctests yet.\n\nThe patch still contains both `TripleDict` (which compares weak keys by equality) and `TripleDictById` (which compares keys by identity, similar to what `TripleDict` does in unpatched Sage, but using weak references).\n\nWhat do you think: Should comparison by equality be provided in the patch?\n\nContra:\n\n We don't use it in the rest of Sage, so, why should we add it?\n\nPro:\n\n A \"triple dict by comparison\" is slower than a usual (strong) dictionary, but on the other hand `weakref.WeakKeyDictionary` does not work if the keys are tuples - hence, \"triple dict by comparison\" adds a new feature.",
+    "body": "Attachment [trac715_tripledict_combined.patch](tarball://root/attachments/some-uuid/ticket715/trac715_tripledict_combined.patch) by SimonKing created at 2012-01-09 00:23:01\n\nI have posted a new patch version.\n\nRecall that we want a dictionary whose keys are triples; we want to compare all three key items by identity, and we want that there is only a weak reference to the first two key items (the third my have a strong reference).\n\nThe `TripleDictById` is now based on the following idea:\n\n* There is one list that stores the memory addresses of the first two key items and the third key item. In particular, I don't need to decref the key items, since we only store their addresses.\n* There is another list that stores the value corresponding to the key triple, and stores weak references with a callback function to the first two key items.\n* When accessing the dictionary, the address of the first two key items is compared with the stored address, and the third is compared by identity with the stored data.\n* Only when iterating over the `TripleDictById`, the weak references are called (of course: iteritems is supposed to return the keys, not just the address of the keys).\n* There are two reasons for storing the weak references (and not only the addresses): The callback function of the weak references removes unused entries of the dictionary, and we also need it for iteration over the dictionary.\n\n__Status of the patch__\n\n* The \"raw\" speed seems to be almost as good as in the unpatched version, the speed of doctests seems to be OK, and I don't observe segfaults.\n* The memleak is fixed.\n* The documentation of sage/structure/coerce_dict.pyx needs more polishing, and last but not least I did not run the doctests yet.\n\nThe patch still contains both `TripleDict` (which compares weak keys by equality) and `TripleDictById` (which compares keys by identity, similar to what `TripleDict` does in unpatched Sage, but using weak references).\n\nWhat do you think: Should comparison by equality be provided in the patch?\n\nContra:\n\n We don't use it in the rest of Sage, so, why should we add it?\n\nPro:\n\n A \"triple dict by comparison\" is slower than a usual (strong) dictionary, but on the other hand `weakref.WeakKeyDictionary` does not work if the keys are tuples - hence, \"triple dict by comparison\" adds a new feature.",
     "created_at": "2012-01-09T00:23:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/715",
     "type": "issue_comment",
@@ -3578,7 +3578,7 @@ archive/issue_comments_003877.json:
 }
 ```
 
-Attachment
+Attachment [trac715_tripledict_combined.patch](tarball://root/attachments/some-uuid/ticket715/trac715_tripledict_combined.patch) by SimonKing created at 2012-01-09 00:23:01
 
 I have posted a new patch version.
 
@@ -3755,7 +3755,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_003881.json:
 ```json
 {
-    "body": "Attachment\n\nDrop the distinction of `TripleDict` versus `TripleDictById`. Use the memory addresses as dictionary keys",
+    "body": "Attachment [trac715_one_triple_dict.patch](tarball://root/attachments/some-uuid/ticket715/trac715_one_triple_dict.patch) by SimonKing created at 2012-01-09 20:13:06\n\nDrop the distinction of `TripleDict` versus `TripleDictById`. Use the memory addresses as dictionary keys",
     "created_at": "2012-01-09T20:13:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/715",
     "type": "issue_comment",
@@ -3764,7 +3764,7 @@ archive/issue_comments_003881.json:
 }
 ```
 
-Attachment
+Attachment [trac715_one_triple_dict.patch](tarball://root/attachments/some-uuid/ticket715/trac715_one_triple_dict.patch) by SimonKing created at 2012-01-09 20:13:06
 
 Drop the distinction of `TripleDict` versus `TripleDictById`. Use the memory addresses as dictionary keys
 
@@ -4420,7 +4420,7 @@ Maybe using weakrefs all the time, even though objects can become unusable is go
 archive/issue_comments_003904.json:
 ```json
 {
-    "body": "Attachment\n\nMake use of weakrefs optional: off by default, on for coercion",
+    "body": "Attachment [trac715_optional_weakref.patch](tarball://root/attachments/some-uuid/ticket715/trac715_optional_weakref.patch) by jpflori created at 2012-02-10 16:58:07\n\nMake use of weakrefs optional: off by default, on for coercion",
     "created_at": "2012-02-10T16:58:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/715",
     "type": "issue_comment",
@@ -4429,7 +4429,7 @@ archive/issue_comments_003904.json:
 }
 ```
 
-Attachment
+Attachment [trac715_optional_weakref.patch](tarball://root/attachments/some-uuid/ticket715/trac715_optional_weakref.patch) by jpflori created at 2012-02-10 16:58:07
 
 Make use of weakrefs optional: off by default, on for coercion
 
@@ -4522,7 +4522,7 @@ Reviewer patch; added doc
 archive/issue_comments_003909.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_715-reviewer.patch](tarball://root/attachments/some-uuid/ticket715/trac_715-reviewer.patch) by jpflori created at 2012-03-09 12:19:46",
     "created_at": "2012-03-09T12:19:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/715",
     "type": "issue_comment",
@@ -4531,7 +4531,7 @@ archive/issue_comments_003909.json:
 }
 ```
 
-Attachment
+Attachment [trac_715-reviewer.patch](tarball://root/attachments/some-uuid/ticket715/trac_715-reviewer.patch) by jpflori created at 2012-03-09 12:19:46
 
 
 
@@ -4844,7 +4844,7 @@ Rebase on top of #11599, now circularly depends on #11521
 archive/issue_comments_003923.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_715-rebase_11599.patch](tarball://root/attachments/some-uuid/ticket715/trac_715-rebase_11599.patch) by jpflori created at 2012-03-20 17:46:24",
     "created_at": "2012-03-20T17:46:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/715",
     "type": "issue_comment",
@@ -4853,7 +4853,7 @@ archive/issue_comments_003923.json:
 }
 ```
 
-Attachment
+Attachment [trac_715-rebase_11599.patch](tarball://root/attachments/some-uuid/ticket715/trac_715-rebase_11599.patch) by jpflori created at 2012-03-20 17:46:24
 
 
 
@@ -5213,7 +5213,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_003940.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_715-modulo.patch](tarball://root/attachments/some-uuid/ticket715/trac_715-modulo.patch) by jpflori created at 2012-04-11 14:38:59",
     "created_at": "2012-04-11T14:38:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/715",
     "type": "issue_comment",
@@ -5222,7 +5222,7 @@ archive/issue_comments_003940.json:
 }
 ```
 
-Attachment
+Attachment [trac_715-modulo.patch](tarball://root/attachments/some-uuid/ticket715/trac_715-modulo.patch) by jpflori created at 2012-04-11 14:38:59
 
 
 
@@ -5335,7 +5335,7 @@ There is no Py_size_t, but I guess that using plain C size_t is ok (the point of
 archive/issue_comments_003946.json:
 ```json
 {
-    "body": "Attachment\n\nVersion without fuzz",
+    "body": "Attachment [trac_715-one_triple_dict-take2.patch](tarball://root/attachments/some-uuid/ticket715/trac_715-one_triple_dict-take2.patch) by jpflori created at 2012-04-12 13:47:31\n\nVersion without fuzz",
     "created_at": "2012-04-12T13:47:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/715",
     "type": "issue_comment",
@@ -5344,7 +5344,7 @@ archive/issue_comments_003946.json:
 }
 ```
 
-Attachment
+Attachment [trac_715-one_triple_dict-take2.patch](tarball://root/attachments/some-uuid/ticket715/trac_715-one_triple_dict-take2.patch) by jpflori created at 2012-04-12 13:47:31
 
 Version without fuzz
 
@@ -5355,7 +5355,7 @@ Version without fuzz
 archive/issue_comments_003947.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_715-reviewer-take2.patch](tarball://root/attachments/some-uuid/ticket715/trac_715-reviewer-take2.patch) by jpflori created at 2012-04-12 13:48:01",
     "created_at": "2012-04-12T13:48:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/715",
     "type": "issue_comment",
@@ -5364,7 +5364,7 @@ archive/issue_comments_003947.json:
 }
 ```
 
-Attachment
+Attachment [trac_715-reviewer-take2.patch](tarball://root/attachments/some-uuid/ticket715/trac_715-reviewer-take2.patch) by jpflori created at 2012-04-12 13:48:01
 
 
 
@@ -5373,7 +5373,7 @@ Attachment
 archive/issue_comments_003948.json:
 ```json
 {
-    "body": "Attachment\n\nUse size_t instead of Py_ssize_t for indices used by PyList_GET_ITEM",
+    "body": "Attachment [trac_715-rebase_11599-take2.patch](tarball://root/attachments/some-uuid/ticket715/trac_715-rebase_11599-take2.patch) by jpflori created at 2012-04-12 13:49:07\n\nUse size_t instead of Py_ssize_t for indices used by PyList_GET_ITEM",
     "created_at": "2012-04-12T13:49:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/715",
     "type": "issue_comment",
@@ -5382,7 +5382,7 @@ archive/issue_comments_003948.json:
 }
 ```
 
-Attachment
+Attachment [trac_715-rebase_11599-take2.patch](tarball://root/attachments/some-uuid/ticket715/trac_715-rebase_11599-take2.patch) by jpflori created at 2012-04-12 13:49:07
 
 Use size_t instead of Py_ssize_t for indices used by PyList_GET_ITEM
 
@@ -5411,7 +5411,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_003950.json:
 ```json
 {
-    "body": "Attachment\n\nThe current patches seem ok both on my 64 bits system and on the virtual 32 bits system running within it.\nAt least Sage does start and computes correctly 1+1.\nI'm currently running \"make ptest\" on both system.\nOn the latter, this will take an awfully long time.\n\nI've also taken the liberty to modify the \"reviewer\" patch to fix formatting issues (and rebase patches of #12313 on top of that).",
+    "body": "Attachment [trac_715-size_t-take2.patch](tarball://root/attachments/some-uuid/ticket715/trac_715-size_t-take2.patch) by jpflori created at 2012-04-12 13:51:55\n\nThe current patches seem ok both on my 64 bits system and on the virtual 32 bits system running within it.\nAt least Sage does start and computes correctly 1+1.\nI'm currently running \"make ptest\" on both system.\nOn the latter, this will take an awfully long time.\n\nI've also taken the liberty to modify the \"reviewer\" patch to fix formatting issues (and rebase patches of #12313 on top of that).",
     "created_at": "2012-04-12T13:51:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/715",
     "type": "issue_comment",
@@ -5420,7 +5420,7 @@ archive/issue_comments_003950.json:
 }
 ```
 
-Attachment
+Attachment [trac_715-size_t-take2.patch](tarball://root/attachments/some-uuid/ticket715/trac_715-size_t-take2.patch) by jpflori created at 2012-04-12 13:51:55
 
 The current patches seem ok both on my 64 bits system and on the virtual 32 bits system running within it.
 At least Sage does start and computes correctly 1+1.
@@ -6282,7 +6282,7 @@ are plain python classes anyway, so they are weakreffable.
 archive/issue_comments_003980.json:
 ```json
 {
-    "body": "Attachment\n\nDocument the specifications of `TripleDict`",
+    "body": "Attachment [trac_715_specification.patch](tarball://root/attachments/some-uuid/ticket715/trac_715_specification.patch) by SimonKing created at 2012-08-16 18:24:18\n\nDocument the specifications of `TripleDict`",
     "created_at": "2012-08-16T18:24:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/715",
     "type": "issue_comment",
@@ -6291,7 +6291,7 @@ archive/issue_comments_003980.json:
 }
 ```
 
-Attachment
+Attachment [trac_715_specification.patch](tarball://root/attachments/some-uuid/ticket715/trac_715_specification.patch) by SimonKing created at 2012-08-16 18:24:18
 
 Document the specifications of `TripleDict`
 
@@ -6506,7 +6506,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_003992.json:
 ```json
 {
-    "body": "Attachment\n\nOK, the second patch is updated again. Changes: The `get()` method now tests whether the stored weak references to the keys are still active, before returning a value.\n\nApply trac_715_combined.patch trac_715_local_refcache.patch trac_715_specification.patch #11521",
+    "body": "Attachment [trac_715_local_refcache.patch](tarball://root/attachments/some-uuid/ticket715/trac_715_local_refcache.patch) by SimonKing created at 2012-08-21 08:55:31\n\nOK, the second patch is updated again. Changes: The `get()` method now tests whether the stored weak references to the keys are still active, before returning a value.\n\nApply trac_715_combined.patch trac_715_local_refcache.patch trac_715_specification.patch #11521",
     "created_at": "2012-08-21T08:55:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/715",
     "type": "issue_comment",
@@ -6515,7 +6515,7 @@ archive/issue_comments_003992.json:
 }
 ```
 
-Attachment
+Attachment [trac_715_local_refcache.patch](tarball://root/attachments/some-uuid/ticket715/trac_715_local_refcache.patch) by SimonKing created at 2012-08-21 08:55:31
 
 OK, the second patch is updated again. Changes: The `get()` method now tests whether the stored weak references to the keys are still active, before returning a value.
 
@@ -6643,7 +6643,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_003999.json:
 ```json
 {
-    "body": "Attachment\n\nNow it should work! Needs review - this time for real...\n\nApply trac_715_combined.patch trac_715_local_refcache.patch trac_715_safer.patch trac_715_specification.patch\n\nAnd then #11521",
+    "body": "Attachment [trac_715_safer.patch](tarball://root/attachments/some-uuid/ticket715/trac_715_safer.patch) by SimonKing created at 2012-08-23 10:49:05\n\nNow it should work! Needs review - this time for real...\n\nApply trac_715_combined.patch trac_715_local_refcache.patch trac_715_safer.patch trac_715_specification.patch\n\nAnd then #11521",
     "created_at": "2012-08-23T10:49:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/715",
     "type": "issue_comment",
@@ -6652,7 +6652,7 @@ archive/issue_comments_003999.json:
 }
 ```
 
-Attachment
+Attachment [trac_715_safer.patch](tarball://root/attachments/some-uuid/ticket715/trac_715_safer.patch) by SimonKing created at 2012-08-23 10:49:05
 
 Now it should work! Needs review - this time for real...
 
@@ -6810,7 +6810,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_004004.json:
 ```json
 {
-    "body": "Attachment\n\nIntroduce weak references to coercion dicts, and refactor the hashtables.",
+    "body": "Attachment [trac_715_combined.patch](tarball://root/attachments/some-uuid/ticket715/trac_715_combined.patch) by SimonKing created at 2012-09-03 09:30:10\n\nIntroduce weak references to coercion dicts, and refactor the hashtables.",
     "created_at": "2012-09-03T09:30:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/715",
     "type": "issue_comment",
@@ -6819,7 +6819,7 @@ archive/issue_comments_004004.json:
 }
 ```
 
-Attachment
+Attachment [trac_715_combined.patch](tarball://root/attachments/some-uuid/ticket715/trac_715_combined.patch) by SimonKing created at 2012-09-03 09:30:10
 
 Introduce weak references to coercion dicts, and refactor the hashtables.
 
@@ -7906,7 +7906,7 @@ Temporary file created by sage -t on a test that fails with gdb
 archive/issue_comments_004042.json:
 ```json
 {
-    "body": "Attachment\n\nI am not totally sure if I understand what you mean: You say it would be interesting to see the temporary file that is created by `sage -t`? Then: see [attachment:failing_test_under_gdb.py].\n\nThe original file was as in comment:251. It passes when running `sage -t`, but fails when running `sage -t -gdb`.",
+    "body": "Attachment [failing_test_under_gdb.py](tarball://root/attachments/some-uuid/ticket715/failing_test_under_gdb.py) by SimonKing created at 2012-09-07 16:26:15\n\nI am not totally sure if I understand what you mean: You say it would be interesting to see the temporary file that is created by `sage -t`? Then: see [attachment:failing_test_under_gdb.py].\n\nThe original file was as in comment:251. It passes when running `sage -t`, but fails when running `sage -t -gdb`.",
     "created_at": "2012-09-07T16:26:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/715",
     "type": "issue_comment",
@@ -7915,7 +7915,7 @@ archive/issue_comments_004042.json:
 }
 ```
 
-Attachment
+Attachment [failing_test_under_gdb.py](tarball://root/attachments/some-uuid/ticket715/failing_test_under_gdb.py) by SimonKing created at 2012-09-07 16:26:15
 
 I am not totally sure if I understand what you mean: You say it would be interesting to see the temporary file that is created by `sage -t`? Then: see [attachment:failing_test_under_gdb.py].
 
@@ -8416,7 +8416,7 @@ Temporary file created by sage -t that gives signal 11
 archive/issue_comments_004058.json:
 ```json
 {
-    "body": "Attachment\n\nWith [attachment:cachefunc_94107.py], I get:\n\n```\n(sage-sh) SimonKing@bsd:sage$ python -t ~/SAGE/work/signal11/cachefunc_94107.py \n\n------------------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occurred in Sage.\nThis probably occurred because a *compiled* component of Sage has a bug\nin it and is not properly wrapped with sig_on(), sig_off(). You might\nwant to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate.\n------------------------------------------------------------------------\nSegmentation fault\n```\n\n\nSo, that looks much more expressive than what sage -t reports!\n\nHowever, setting ulimit -c unlimited did not result in a dumped core:\n\n```\n(sage-sh) SimonKing@bsd:sage$ ulimit -c unlimited\n(sage-sh) SimonKing@bsd:sage$ python -t ~/SAGE/work/signal11/cachefunc_94107.py \n...\nSegmentation fault\n(sage-sh) SimonKing@bsd:sage$ ls /cores/\n(sage-sh) SimonKing@bsd:sage$ \n```\n\n\nSo, can you explain how I could get a core dump?\n\nApply trac_715_combined.patch trac_715_local_refcache.patch trac_715_safer.patch trac_715_specification.patch\n\nAnd then #11521",
+    "body": "Attachment [cachefunc_94107.py](tarball://root/attachments/some-uuid/ticket715/cachefunc_94107.py) by SimonKing created at 2012-09-08 06:32:20\n\nWith [attachment:cachefunc_94107.py], I get:\n\n```\n(sage-sh) SimonKing@bsd:sage$ python -t ~/SAGE/work/signal11/cachefunc_94107.py \n\n------------------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occurred in Sage.\nThis probably occurred because a *compiled* component of Sage has a bug\nin it and is not properly wrapped with sig_on(), sig_off(). You might\nwant to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate.\n------------------------------------------------------------------------\nSegmentation fault\n```\n\n\nSo, that looks much more expressive than what sage -t reports!\n\nHowever, setting ulimit -c unlimited did not result in a dumped core:\n\n```\n(sage-sh) SimonKing@bsd:sage$ ulimit -c unlimited\n(sage-sh) SimonKing@bsd:sage$ python -t ~/SAGE/work/signal11/cachefunc_94107.py \n...\nSegmentation fault\n(sage-sh) SimonKing@bsd:sage$ ls /cores/\n(sage-sh) SimonKing@bsd:sage$ \n```\n\n\nSo, can you explain how I could get a core dump?\n\nApply trac_715_combined.patch trac_715_local_refcache.patch trac_715_safer.patch trac_715_specification.patch\n\nAnd then #11521",
     "created_at": "2012-09-08T06:32:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/715",
     "type": "issue_comment",
@@ -8425,7 +8425,7 @@ archive/issue_comments_004058.json:
 }
 ```
 
-Attachment
+Attachment [cachefunc_94107.py](tarball://root/attachments/some-uuid/ticket715/cachefunc_94107.py) by SimonKing created at 2012-09-08 06:32:20
 
 With [attachment:cachefunc_94107.py], I get:
 
@@ -9401,7 +9401,7 @@ Fix segfault on bsd
 archive/issue_comments_004085.json:
 ```json
 {
-    "body": "Attachment\n\nNils, I find this very interesting! Note that some libsingular refcounting problem was enough to fix a segfault created by #13370, but in that case the refcounting concerned non-commutative rings - see #13145.\n\nI lost track: Did we already test whether #13145 fixes the segfault here as well?",
+    "body": "Attachment [trac_715_osx64-dealloc.patch](tarball://root/attachments/some-uuid/ticket715/trac_715_osx64-dealloc.patch) by SimonKing created at 2012-09-11 05:58:51\n\nNils, I find this very interesting! Note that some libsingular refcounting problem was enough to fix a segfault created by #13370, but in that case the refcounting concerned non-commutative rings - see #13145.\n\nI lost track: Did we already test whether #13145 fixes the segfault here as well?",
     "created_at": "2012-09-11T05:58:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/715",
     "type": "issue_comment",
@@ -9410,7 +9410,7 @@ archive/issue_comments_004085.json:
 }
 ```
 
-Attachment
+Attachment [trac_715_osx64-dealloc.patch](tarball://root/attachments/some-uuid/ticket715/trac_715_osx64-dealloc.patch) by SimonKing created at 2012-09-11 05:58:51
 
 Nils, I find this very interesting! Note that some libsingular refcounting problem was enough to fix a segfault created by #13370, but in that case the refcounting concerned non-commutative rings - see #13145.
 
@@ -10121,7 +10121,7 @@ SInce these tickets have caused some trouble in the past, I prefer to merge them
 archive/issue_comments_004112.json:
 ```json
 {
-    "body": "Attachment\n\nI combined all the patches in one patch.",
+    "body": "Attachment [715_all.patch](tarball://root/attachments/some-uuid/ticket715/715_all.patch) by jdemeyer created at 2012-10-05 13:59:05\n\nI combined all the patches in one patch.",
     "created_at": "2012-10-05T13:59:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/715",
     "type": "issue_comment",
@@ -10130,7 +10130,7 @@ archive/issue_comments_004112.json:
 }
 ```
 
-Attachment
+Attachment [715_all.patch](tarball://root/attachments/some-uuid/ticket715/715_all.patch) by jdemeyer created at 2012-10-05 13:59:05
 
 I combined all the patches in one patch.
 

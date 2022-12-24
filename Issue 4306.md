@@ -79,7 +79,7 @@ The attached patch doesn't implement elements of supersingular modules -- that i
 archive/issue_comments_031514.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4306.patch](tarball://root/attachments/some-uuid/ticket4306/trac_4306.patch) by was created at 2010-01-19 13:09:23",
     "created_at": "2010-01-19T13:09:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4306",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_031514.json:
 }
 ```
 
-Attachment
+Attachment [trac_4306.patch](tarball://root/attachments/some-uuid/ticket4306/trac_4306.patch) by was created at 2010-01-19 13:09:23
 
 
 
@@ -252,7 +252,7 @@ I am adding a reviewer patch that doctests this.
 archive/issue_comments_031518.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4306-doctest.patch](tarball://root/attachments/some-uuid/ticket4306/trac_4306-doctest.patch) by AlexGhitza created at 2013-07-22 17:26:58",
     "created_at": "2013-07-22T17:26:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4306",
     "type": "issue_comment",
@@ -261,7 +261,7 @@ archive/issue_comments_031518.json:
 }
 ```
 
-Attachment
+Attachment [trac_4306-doctest.patch](tarball://root/attachments/some-uuid/ticket4306/trac_4306-doctest.patch) by AlexGhitza created at 2013-07-22 17:26:58
 
 
 
@@ -324,7 +324,7 @@ Alex's patch with a better commit message
 archive/issue_comments_031522.json:
 ```json
 {
-    "body": "Attachment\n\nI edited Alex's patch to add a better commit message. Other than that I think this is fine.",
+    "body": "Attachment [trac_4306-doctest.2.patch](tarball://root/attachments/some-uuid/ticket4306/trac_4306-doctest.2.patch) by davidloeffler created at 2013-07-25 11:08:38\n\nI edited Alex's patch to add a better commit message. Other than that I think this is fine.",
     "created_at": "2013-07-25T11:08:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4306",
     "type": "issue_comment",
@@ -333,7 +333,7 @@ archive/issue_comments_031522.json:
 }
 ```
 
-Attachment
+Attachment [trac_4306-doctest.2.patch](tarball://root/attachments/some-uuid/ticket4306/trac_4306-doctest.2.patch) by davidloeffler created at 2013-07-25 11:08:38
 
 I edited Alex's patch to add a better commit message. Other than that I think this is fine.
 

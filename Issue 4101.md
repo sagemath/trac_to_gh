@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4101
 archive/issue_comments_029591.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4101-cpdef-fix.patch](tarball://root/attachments/some-uuid/ticket4101/4101-cpdef-fix.patch) by robertwb created at 2008-09-11 17:15:19",
     "created_at": "2008-09-11T17:15:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4101",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_029591.json:
 }
 ```
 
-Attachment
+Attachment [4101-cpdef-fix.patch](tarball://root/attachments/some-uuid/ticket4101/4101-cpdef-fix.patch) by robertwb created at 2008-09-11 17:15:19
 
 
 

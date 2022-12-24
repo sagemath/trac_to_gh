@@ -479,7 +479,7 @@ I wasn't able to include a doctest for `EllipticCurve('1014g1').prove_BSD(verbos
 archive/issue_comments_064529.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7576-flat.patch](tarball://root/attachments/some-uuid/ticket7576/trac_7576-flat.patch) by rlm created at 2010-01-19 01:56:54",
     "created_at": "2010-01-19T01:56:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7576",
     "type": "issue_comment",
@@ -488,7 +488,7 @@ archive/issue_comments_064529.json:
 }
 ```
 
-Attachment
+Attachment [trac_7576-flat.patch](tarball://root/attachments/some-uuid/ticket7576/trac_7576-flat.patch) by rlm created at 2010-01-19 01:56:54
 
 
 

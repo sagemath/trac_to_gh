@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8253
 archive/issue_comments_073012.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8253-search.patch](tarball://root/attachments/some-uuid/ticket8253/trac_8253-search.patch) by jhpalmieri created at 2010-02-12 22:22:52",
     "created_at": "2010-02-12T22:22:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8253",
     "type": "issue_comment",
@@ -49,7 +49,7 @@ archive/issue_comments_073012.json:
 }
 ```
 
-Attachment
+Attachment [trac_8253-search.patch](tarball://root/attachments/some-uuid/ticket8253/trac_8253-search.patch) by jhpalmieri created at 2010-02-12 22:22:52
 
 
 
@@ -112,7 +112,7 @@ Changing status from new to needs_review.
 archive/issue_comments_073016.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8253-search.v2.patch](tarball://root/attachments/some-uuid/ticket8253/trac_8253-search.v2.patch) by jhpalmieri created at 2010-02-17 20:58:13",
     "created_at": "2010-02-17T20:58:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8253",
     "type": "issue_comment",
@@ -121,7 +121,7 @@ archive/issue_comments_073016.json:
 }
 ```
 
-Attachment
+Attachment [trac_8253-search.v2.patch](tarball://root/attachments/some-uuid/ticket8253/trac_8253-search.v2.patch) by jhpalmieri created at 2010-02-17 20:58:13
 
 
 

@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4684
 archive/issue_comments_035306.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [makefile](tarball://root/attachments/some-uuid/ticket4684/makefile) by ddrake created at 2008-12-03 05:53:44",
     "created_at": "2008-12-03T05:53:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4684",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_035306.json:
 }
 ```
 
-Attachment
+Attachment [makefile](tarball://root/attachments/some-uuid/ticket4684/makefile) by ddrake created at 2008-12-03 05:53:44
 
 
 
@@ -77,7 +77,7 @@ Michael
 archive/issue_comments_035308.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me. I posted a diff between the current and the patched version for the record.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_4684_makefile.patch](tarball://root/attachments/some-uuid/ticket4684/trac_4684_makefile.patch) by mabshoff created at 2008-12-03 06:54:47\n\nLooks good to me. I posted a diff between the current and the patched version for the record.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-03T06:54:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4684",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_035308.json:
 }
 ```
 
-Attachment
+Attachment [trac_4684_makefile.patch](tarball://root/attachments/some-uuid/ticket4684/trac_4684_makefile.patch) by mabshoff created at 2008-12-03 06:54:47
 
 Looks good to me. I posted a diff between the current and the patched version for the record.
 

@@ -584,7 +584,7 @@ Rado
 archive/issue_comments_008425.json:
 ```json
 {
-    "body": "Attachment\n\nRado's graph editor.  Apply this patch to the **sagenb** repo.  Apply this patch only.",
+    "body": "Attachment [trac_1321-sagenb_graphed.patch](tarball://root/attachments/some-uuid/ticket1321/trac_1321-sagenb_graphed.patch) by mpatel created at 2009-11-24 03:45:01\n\nRado's graph editor.  Apply this patch to the **sagenb** repo.  Apply this patch only.",
     "created_at": "2009-11-24T03:45:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1321",
     "type": "issue_comment",
@@ -593,7 +593,7 @@ archive/issue_comments_008425.json:
 }
 ```
 
-Attachment
+Attachment [trac_1321-sagenb_graphed.patch](tarball://root/attachments/some-uuid/ticket1321/trac_1321-sagenb_graphed.patch) by mpatel created at 2009-11-24 03:45:01
 
 Rado's graph editor.  Apply this patch to the **sagenb** repo.  Apply this patch only.
 
@@ -736,7 +736,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_008432.json:
 ```json
 {
-    "body": "Attachment\n\nVersion 3, somewhat experimental:\n\n* Adds a keyword option `graph_name` (the default is `None`).  By default, the function attempts to guess the name of the graph.  But it can be useful to be explicit.\n\n* Adds a keyword option `replace_input` (the default is `True`).  If this is `False`, clicking \"Save\" quietly evaluates the current cell with the updated `Graph`, but it preserves the cell's input (as of when \"Save\" was clicked).  Currently, we do this by temporarily replacing the input, evaluating the cell, restoring the input, resaving the input, and resizing the cell.  We definitely need a more direct way to do this (even more direct than calling `async_request(worksheet_command('eval'),...)`).\n\nAn example:\n\n```\ng5 = graphs.TetrahedralGraph()\ngraph_editor(g5, replace_input=False, graph_name='g5_mod')\n```\n\nAfter clicking \"Save\", we can evaluate, e.g.,\n\n```\nshow(g5_mod)\n```\n\nin another cell.",
+    "body": "Attachment [trac_1321-sage_graphed_v3.patch](tarball://root/attachments/some-uuid/ticket1321/trac_1321-sage_graphed_v3.patch) by mpatel created at 2009-11-24 07:28:14\n\nVersion 3, somewhat experimental:\n\n* Adds a keyword option `graph_name` (the default is `None`).  By default, the function attempts to guess the name of the graph.  But it can be useful to be explicit.\n\n* Adds a keyword option `replace_input` (the default is `True`).  If this is `False`, clicking \"Save\" quietly evaluates the current cell with the updated `Graph`, but it preserves the cell's input (as of when \"Save\" was clicked).  Currently, we do this by temporarily replacing the input, evaluating the cell, restoring the input, resaving the input, and resizing the cell.  We definitely need a more direct way to do this (even more direct than calling `async_request(worksheet_command('eval'),...)`).\n\nAn example:\n\n```\ng5 = graphs.TetrahedralGraph()\ngraph_editor(g5, replace_input=False, graph_name='g5_mod')\n```\n\nAfter clicking \"Save\", we can evaluate, e.g.,\n\n```\nshow(g5_mod)\n```\n\nin another cell.",
     "created_at": "2009-11-24T07:28:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1321",
     "type": "issue_comment",
@@ -745,7 +745,7 @@ archive/issue_comments_008432.json:
 }
 ```
 
-Attachment
+Attachment [trac_1321-sage_graphed_v3.patch](tarball://root/attachments/some-uuid/ticket1321/trac_1321-sage_graphed_v3.patch) by mpatel created at 2009-11-24 07:28:14
 
 Version 3, somewhat experimental:
 

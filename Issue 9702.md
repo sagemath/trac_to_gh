@@ -87,7 +87,7 @@ Replaces trac_9702-{1, 2, 3 and 4}.patch
 archive/issue_comments_094345.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9702-flat.patch](tarball://root/attachments/some-uuid/ticket9702/trac_9702-flat.patch) by rlm created at 2010-10-30 11:49:43",
     "created_at": "2010-10-30T11:49:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_094345.json:
 }
 ```
 
-Attachment
+Attachment [trac_9702-flat.patch](tarball://root/attachments/some-uuid/ticket9702/trac_9702-flat.patch) by rlm created at 2010-10-30 11:49:43
 
 
 
@@ -171,7 +171,7 @@ Nathann
 archive/issue_comments_094349.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9702-smallfixes.patch](tarball://root/attachments/some-uuid/ticket9702/trac_9702-smallfixes.patch) by rlm created at 2010-11-26 16:42:19",
     "created_at": "2010-11-26T16:42:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
@@ -180,7 +180,7 @@ archive/issue_comments_094349.json:
 }
 ```
 
-Attachment
+Attachment [trac_9702-smallfixes.patch](tarball://root/attachments/some-uuid/ticket9702/trac_9702-smallfixes.patch) by rlm created at 2010-11-26 16:42:19
 
 
 
@@ -336,7 +336,7 @@ Nathann
 archive/issue_comments_094357.json:
 ```json
 {
-    "body": "Attachment\n\nPatch updated !\n\nNathann",
+    "body": "Attachment [trac_9702-smallfixes.2.patch](tarball://root/attachments/some-uuid/ticket9702/trac_9702-smallfixes.2.patch) by ncohen created at 2010-12-06 17:17:00\n\nPatch updated !\n\nNathann",
     "created_at": "2010-12-06T17:17:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
@@ -345,7 +345,7 @@ archive/issue_comments_094357.json:
 }
 ```
 
-Attachment
+Attachment [trac_9702-smallfixes.2.patch](tarball://root/attachments/some-uuid/ticket9702/trac_9702-smallfixes.2.patch) by ncohen created at 2010-12-06 17:17:00
 
 Patch updated !
 

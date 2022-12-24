@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/737
 archive/issue_comments_004319.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [inrange.hg](tarball://root/attachments/some-uuid/ticket737/inrange.hg) by jsp created at 2007-09-22 19:23:05",
     "created_at": "2007-09-22T19:23:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/737",
     "type": "issue_comment",
@@ -50,7 +50,7 @@ archive/issue_comments_004319.json:
 }
 ```
 
-Attachment
+Attachment [inrange.hg](tarball://root/attachments/some-uuid/ticket737/inrange.hg) by jsp created at 2007-09-22 19:23:05
 
 
 

@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4553
 archive/issue_comments_034128.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [finitefieldelement.patch](tarball://root/attachments/some-uuid/ticket4553/finitefieldelement.patch) by jhpalmieri created at 2008-11-19 18:05:19",
     "created_at": "2008-11-19T18:05:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4553",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_034128.json:
 }
 ```
 
-Attachment
+Attachment [finitefieldelement.patch](tarball://root/attachments/some-uuid/ticket4553/finitefieldelement.patch) by jhpalmieri created at 2008-11-19 18:05:19
 
 
 
@@ -153,7 +153,7 @@ this replaces the other patch
 archive/issue_comments_034132.json:
 ```json
 {
-    "body": "Attachment\n\nSorry about my silly comment about q'th power against p'th power, I was not thinking.\n\nThe linear algebra approach will have to wait until we have a common interface for all finite fields -- currently the functions available depend on q since they differ according to whether we use givaro or NTL or pari.  (e.g. an element a in GF(q) sometimes has a._coordinates() but not always.  So it's fine to go ahead with this one for now, perhaps with a note that a better implementation might be possible in future.\n\nI hope to review this properly, but Monday morning calls...",
+    "body": "Attachment [finitefieldelement_new.patch](tarball://root/attachments/some-uuid/ticket4553/finitefieldelement_new.patch) by cremona created at 2008-11-24 08:58:04\n\nSorry about my silly comment about q'th power against p'th power, I was not thinking.\n\nThe linear algebra approach will have to wait until we have a common interface for all finite fields -- currently the functions available depend on q since they differ according to whether we use givaro or NTL or pari.  (e.g. an element a in GF(q) sometimes has a._coordinates() but not always.  So it's fine to go ahead with this one for now, perhaps with a note that a better implementation might be possible in future.\n\nI hope to review this properly, but Monday morning calls...",
     "created_at": "2008-11-24T08:58:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4553",
     "type": "issue_comment",
@@ -162,7 +162,7 @@ archive/issue_comments_034132.json:
 }
 ```
 
-Attachment
+Attachment [finitefieldelement_new.patch](tarball://root/attachments/some-uuid/ticket4553/finitefieldelement_new.patch) by cremona created at 2008-11-24 08:58:04
 
 Sorry about my silly comment about q'th power against p'th power, I was not thinking.
 

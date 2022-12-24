@@ -57,7 +57,7 @@ use color scheme of sagemath.org
 archive/issue_comments_097204.json:
 ```json
 {
-    "body": "Attachment\n\nA first version is now attached.  It simply sets some new colors using the customization options for the Sphinx default theme:\n\nhttp://sphinx.pocoo.org/theming.html\n\nThe second attachment shows a screenshot of what this patch does.",
+    "body": "Attachment [trac_9850_doc_style.patch](tarball://root/attachments/some-uuid/ticket9850/trac_9850_doc_style.patch) by niles created at 2010-09-02 19:09:02\n\nA first version is now attached.  It simply sets some new colors using the customization options for the Sphinx default theme:\n\nhttp://sphinx.pocoo.org/theming.html\n\nThe second attachment shows a screenshot of what this patch does.",
     "created_at": "2010-09-02T19:09:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9849",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_097204.json:
 }
 ```
 
-Attachment
+Attachment [trac_9850_doc_style.patch](tarball://root/attachments/some-uuid/ticket9850/trac_9850_doc_style.patch) by niles created at 2010-09-02 19:09:02
 
 A first version is now attached.  It simply sets some new colors using the customization options for the Sphinx default theme:
 
@@ -295,7 +295,7 @@ I agree with this comment.  I'm attaching a patch (intended to replace the other
 archive/issue_comments_097212.json:
 ```json
 {
-    "body": "Attachment\n\nuse in place of all other patches",
+    "body": "Attachment [trac_9850-theme-conf.patch](tarball://root/attachments/some-uuid/ticket9850/trac_9850-theme-conf.patch) by jhpalmieri created at 2010-09-11 18:01:32\n\nuse in place of all other patches",
     "created_at": "2010-09-11T18:01:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9849",
     "type": "issue_comment",
@@ -304,7 +304,7 @@ archive/issue_comments_097212.json:
 }
 ```
 
-Attachment
+Attachment [trac_9850-theme-conf.patch](tarball://root/attachments/some-uuid/ticket9850/trac_9850-theme-conf.patch) by jhpalmieri created at 2010-09-11 18:01:32
 
 use in place of all other patches
 
@@ -380,7 +380,7 @@ This looks great -- thanks for the help.  I do think the logo could look better 
 archive/issue_comments_097216.json:
 ```json
 {
-    "body": "Attachment\n\nThe transparent background for the Sage logo looks nice. It works fine for me both in Firefox and Chrome. We need someone to test on a Mac with Safari. I have attached the patch [attachment:trac_9850-logo.patch] produced in niles' name that puts niles' logo under revision control. See the ticket description for instructions on how to apply patches and for relevant screenshots. Positive review from me. See this [sage-devel thread](http://groups.google.com/group/sage-devel/browse_thread/thread/b94df222f7c84620) for my invitation to more people to look over the new style to ensure that it's pleasing to the eyes.",
+    "body": "Attachment [trac_9850-logo.patch](tarball://root/attachments/some-uuid/ticket9850/trac_9850-logo.patch) by mvngu created at 2010-09-12 15:15:40\n\nThe transparent background for the Sage logo looks nice. It works fine for me both in Firefox and Chrome. We need someone to test on a Mac with Safari. I have attached the patch [attachment:trac_9850-logo.patch] produced in niles' name that puts niles' logo under revision control. See the ticket description for instructions on how to apply patches and for relevant screenshots. Positive review from me. See this [sage-devel thread](http://groups.google.com/group/sage-devel/browse_thread/thread/b94df222f7c84620) for my invitation to more people to look over the new style to ensure that it's pleasing to the eyes.",
     "created_at": "2010-09-12T15:15:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9849",
     "type": "issue_comment",
@@ -389,7 +389,7 @@ archive/issue_comments_097216.json:
 }
 ```
 
-Attachment
+Attachment [trac_9850-logo.patch](tarball://root/attachments/some-uuid/ticket9850/trac_9850-logo.patch) by mvngu created at 2010-09-12 15:15:40
 
 The transparent background for the Sage logo looks nice. It works fine for me both in Firefox and Chrome. We need someone to test on a Mac with Safari. I have attached the patch [attachment:trac_9850-logo.patch] produced in niles' name that puts niles' logo under revision control. See the ticket description for instructions on how to apply patches and for relevant screenshots. Positive review from me. See this [sage-devel thread](http://groups.google.com/group/sage-devel/browse_thread/thread/b94df222f7c84620) for my invitation to more people to look over the new style to ensure that it's pleasing to the eyes.
 
@@ -445,7 +445,7 @@ probably none of these are show-stoppers, but worth mentioning I think.
 archive/issue_comments_097219.json:
 ```json
 {
-    "body": "Attachment\n\nI have attached the reviewer patch [attachment:trac_9850-reviewer.patch] that addresses the comments on this [sage-devel message](http://groups.google.com/group/sage-devel/msg/784c039090fddc6c). The documentation generated using this new style can be found [here](http://sage.math.washington.edu/home/mvngu/patch/9850-docstyle/doc/). See the ticket description for instructions on how to apply patches.",
+    "body": "Attachment [trac_9850-reviewer.patch](tarball://root/attachments/some-uuid/ticket9850/trac_9850-reviewer.patch) by mvngu created at 2010-09-13 09:22:39\n\nI have attached the reviewer patch [attachment:trac_9850-reviewer.patch] that addresses the comments on this [sage-devel message](http://groups.google.com/group/sage-devel/msg/784c039090fddc6c). The documentation generated using this new style can be found [here](http://sage.math.washington.edu/home/mvngu/patch/9850-docstyle/doc/). See the ticket description for instructions on how to apply patches.",
     "created_at": "2010-09-13T09:22:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9849",
     "type": "issue_comment",
@@ -454,7 +454,7 @@ archive/issue_comments_097219.json:
 }
 ```
 
-Attachment
+Attachment [trac_9850-reviewer.patch](tarball://root/attachments/some-uuid/ticket9850/trac_9850-reviewer.patch) by mvngu created at 2010-09-13 09:22:39
 
 I have attached the reviewer patch [attachment:trac_9850-reviewer.patch] that addresses the comments on this [sage-devel message](http://groups.google.com/group/sage-devel/msg/784c039090fddc6c). The documentation generated using this new style can be found [here](http://sage.math.washington.edu/home/mvngu/patch/9850-docstyle/doc/). See the ticket description for instructions on how to apply patches.
 
@@ -465,7 +465,7 @@ I have attached the reviewer patch [attachment:trac_9850-reviewer.patch] that ad
 archive/issue_comments_097220.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [doc-home.png](tarball://root/attachments/some-uuid/ticket9850/doc-home.png) by mvngu created at 2010-09-13 09:34:17",
     "created_at": "2010-09-13T09:34:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9849",
     "type": "issue_comment",
@@ -474,7 +474,7 @@ archive/issue_comments_097220.json:
 }
 ```
 
-Attachment
+Attachment [doc-home.png](tarball://root/attachments/some-uuid/ticket9850/doc-home.png) by mvngu created at 2010-09-13 09:34:17
 
 
 
@@ -483,7 +483,7 @@ Attachment
 archive/issue_comments_097221.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [inline-code.png](tarball://root/attachments/some-uuid/ticket9850/inline-code.png) by mvngu created at 2010-09-13 09:34:53",
     "created_at": "2010-09-13T09:34:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9849",
     "type": "issue_comment",
@@ -492,7 +492,7 @@ archive/issue_comments_097221.json:
 }
 ```
 
-Attachment
+Attachment [inline-code.png](tarball://root/attachments/some-uuid/ticket9850/inline-code.png) by mvngu created at 2010-09-13 09:34:53
 
 
 
@@ -501,7 +501,7 @@ Attachment
 archive/issue_comments_097222.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [reference-home.png](tarball://root/attachments/some-uuid/ticket9850/reference-home.png) by mvngu created at 2010-09-13 09:36:52",
     "created_at": "2010-09-13T09:36:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9849",
     "type": "issue_comment",
@@ -510,7 +510,7 @@ archive/issue_comments_097222.json:
 }
 ```
 
-Attachment
+Attachment [reference-home.png](tarball://root/attachments/some-uuid/ticket9850/reference-home.png) by mvngu created at 2010-09-13 09:36:52
 
 
 

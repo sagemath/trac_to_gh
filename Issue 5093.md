@@ -77,7 +77,7 @@ Changing status from new to assigned.
 archive/issue_comments_038816.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac5093-fast-callable.patch](tarball://root/attachments/some-uuid/ticket5093/trac5093-fast-callable.patch) by cwitty created at 2009-03-01 05:30:13",
     "created_at": "2009-03-01T05:30:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5093",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_038816.json:
 }
 ```
 
-Attachment
+Attachment [trac5093-fast-callable.patch](tarball://root/attachments/some-uuid/ticket5093/trac5093-fast-callable.patch) by cwitty created at 2009-03-01 05:30:13
 
 
 
@@ -638,7 +638,7 @@ I'm hoping the reviewers will agree that the unfixed issues can wait until later
 archive/issue_comments_038834.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac5093-fast-callable-cleanup.patch](tarball://root/attachments/some-uuid/ticket5093/trac5093-fast-callable-cleanup.patch) by cwitty created at 2009-03-18 17:22:23",
     "created_at": "2009-03-18T17:22:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5093",
     "type": "issue_comment",
@@ -647,7 +647,7 @@ archive/issue_comments_038834.json:
 }
 ```
 
-Attachment
+Attachment [trac5093-fast-callable-cleanup.patch](tarball://root/attachments/some-uuid/ticket5093/trac5093-fast-callable-cleanup.patch) by cwitty created at 2009-03-18 17:22:23
 
 
 
@@ -753,7 +753,7 @@ I think your list of unfixed issues are fine postponing 'till later, though perh
 archive/issue_comments_038838.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac5093-fast-callable-api.patch](tarball://root/attachments/some-uuid/ticket5093/trac5093-fast-callable-api.patch) by cwitty created at 2009-03-19 04:06:19",
     "created_at": "2009-03-19T04:06:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5093",
     "type": "issue_comment",
@@ -762,7 +762,7 @@ archive/issue_comments_038838.json:
 }
 ```
 
-Attachment
+Attachment [trac5093-fast-callable-api.patch](tarball://root/attachments/some-uuid/ticket5093/trac5093-fast-callable-api.patch) by cwitty created at 2009-03-19 04:06:19
 
 
 

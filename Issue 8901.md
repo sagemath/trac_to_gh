@@ -377,7 +377,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_081940.json:
 ```json
 {
-    "body": "Attachment\n\nCorrected.",
+    "body": "Attachment [trac_8901-integer_vectors_docstrings_fix-ts.patch](tarball://root/attachments/some-uuid/ticket8901/trac_8901-integer_vectors_docstrings_fix-ts.patch) by tscrim created at 2012-05-19 16:13:36\n\nCorrected.",
     "created_at": "2012-05-19T16:13:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8901",
     "type": "issue_comment",
@@ -386,7 +386,7 @@ archive/issue_comments_081940.json:
 }
 ```
 
-Attachment
+Attachment [trac_8901-integer_vectors_docstrings_fix-ts.patch](tarball://root/attachments/some-uuid/ticket8901/trac_8901-integer_vectors_docstrings_fix-ts.patch) by tscrim created at 2012-05-19 16:13:36
 
 Corrected.
 

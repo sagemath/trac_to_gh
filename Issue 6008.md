@@ -192,7 +192,7 @@ Michael
 archive/issue_comments_047811.json:
 ```json
 {
-    "body": "Attachment\n\nReplace previous one with this",
+    "body": "Attachment [ectorsion.2.patch](tarball://root/attachments/some-uuid/ticket6008/ectorsion.2.patch) by cremona created at 2009-05-10 08:07:17\n\nReplace previous one with this",
     "created_at": "2009-05-10T08:07:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6008",
     "type": "issue_comment",
@@ -201,7 +201,7 @@ archive/issue_comments_047811.json:
 }
 ```
 
-Attachment
+Attachment [ectorsion.2.patch](tarball://root/attachments/some-uuid/ticket6008/ectorsion.2.patch) by cremona created at 2009-05-10 08:07:17
 
 Replace previous one with this
 

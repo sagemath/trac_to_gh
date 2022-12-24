@@ -71,7 +71,7 @@ timothy clemans wrote this example, which seems to be a good idea -- it uses jav
 archive/issue_comments_003319.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [example.html](tarball://root/attachments/some-uuid/ticket643/example.html) by mhansen created at 2007-09-21 03:54:13",
     "created_at": "2007-09-21T03:54:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/643",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_003319.json:
 }
 ```
 
-Attachment
+Attachment [example.html](tarball://root/attachments/some-uuid/ticket643/example.html) by mhansen created at 2007-09-21 03:54:13
 
 
 
@@ -89,7 +89,7 @@ Attachment
 archive/issue_comments_003320.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [643.patch](tarball://root/attachments/some-uuid/ticket643/643.patch) by mhansen created at 2007-09-21 03:54:40",
     "created_at": "2007-09-21T03:54:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/643",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_003320.json:
 }
 ```
 
-Attachment
+Attachment [643.patch](tarball://root/attachments/some-uuid/ticket643/643.patch) by mhansen created at 2007-09-21 03:54:40
 
 
 
@@ -199,7 +199,7 @@ http://sage.math.washington.edu/tmp/snapshot1.png
 archive/issue_comments_003326.json:
 ```json
 {
-    "body": "Attachment\n\nadded resize fix",
+    "body": "Attachment [643.2.patch](tarball://root/attachments/some-uuid/ticket643/643.2.patch) by TimothyClemans created at 2007-09-21 15:38:46\n\nadded resize fix",
     "created_at": "2007-09-21T15:38:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/643",
     "type": "issue_comment",
@@ -208,7 +208,7 @@ archive/issue_comments_003326.json:
 }
 ```
 
-Attachment
+Attachment [643.2.patch](tarball://root/attachments/some-uuid/ticket643/643.2.patch) by TimothyClemans created at 2007-09-21 15:38:46
 
 added resize fix
 
@@ -276,7 +276,7 @@ Changing assignee from boothby to was.
 archive/issue_comments_003330.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [643.3.patch](tarball://root/attachments/some-uuid/ticket643/643.3.patch) by was created at 2007-09-21 18:56:54",
     "created_at": "2007-09-21T18:56:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/643",
     "type": "issue_comment",
@@ -285,7 +285,7 @@ archive/issue_comments_003330.json:
 }
 ```
 
-Attachment
+Attachment [643.3.patch](tarball://root/attachments/some-uuid/ticket643/643.3.patch) by was created at 2007-09-21 18:56:54
 
 
 
@@ -314,7 +314,7 @@ It looks like there is a fair amount of cleaning up to do.
 archive/issue_comments_003332.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [css.patch](tarball://root/attachments/some-uuid/ticket643/css.patch) by mhansen created at 2007-10-03 06:50:29",
     "created_at": "2007-10-03T06:50:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/643",
     "type": "issue_comment",
@@ -323,7 +323,7 @@ archive/issue_comments_003332.json:
 }
 ```
 
-Attachment
+Attachment [css.patch](tarball://root/attachments/some-uuid/ticket643/css.patch) by mhansen created at 2007-10-03 06:50:29
 
 
 
@@ -332,7 +332,7 @@ Attachment
 archive/issue_comments_003333.json:
 ```json
 {
-    "body": "Attachment\n\nAccidental upload",
+    "body": "Attachment [toggle.2.patch](tarball://root/attachments/some-uuid/ticket643/toggle.2.patch) by mhansen created at 2007-10-04 06:57:24\n\nAccidental upload",
     "created_at": "2007-10-04T06:57:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/643",
     "type": "issue_comment",
@@ -341,7 +341,7 @@ archive/issue_comments_003333.json:
 }
 ```
 
-Attachment
+Attachment [toggle.2.patch](tarball://root/attachments/some-uuid/ticket643/toggle.2.patch) by mhansen created at 2007-10-04 06:57:24
 
 Accidental upload
 
@@ -352,7 +352,7 @@ Accidental upload
 archive/issue_comments_003334.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [toggle.patch](tarball://root/attachments/some-uuid/ticket643/toggle.patch) by was created at 2007-10-04 19:02:45",
     "created_at": "2007-10-04T19:02:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/643",
     "type": "issue_comment",
@@ -361,7 +361,7 @@ archive/issue_comments_003334.json:
 }
 ```
 
-Attachment
+Attachment [toggle.patch](tarball://root/attachments/some-uuid/ticket643/toggle.patch) by was created at 2007-10-04 19:02:45
 
 
 

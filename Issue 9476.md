@@ -60,7 +60,7 @@ The new spkg is here: http://www.warwick.ac.uk/staff/J.E.Cremona/eclib-20100711.
 archive/issue_comments_090960.json:
 ```json
 {
-    "body": "Attachment\n\nApplies after eclib-20100711.patch and trac_9441-atkin-lehner.patch",
+    "body": "Attachment [trac_9476-eclib.patch](tarball://root/attachments/some-uuid/ticket9476/trac_9476-eclib.patch) by cremona created at 2010-07-11 21:25:10\n\nApplies after eclib-20100711.patch and trac_9441-atkin-lehner.patch",
     "created_at": "2010-07-11T21:25:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9476",
     "type": "issue_comment",
@@ -69,7 +69,7 @@ archive/issue_comments_090960.json:
 }
 ```
 
-Attachment
+Attachment [trac_9476-eclib.patch](tarball://root/attachments/some-uuid/ticket9476/trac_9476-eclib.patch) by cremona created at 2010-07-11 21:25:10
 
 Applies after eclib-20100711.patch and trac_9441-atkin-lehner.patch
 
@@ -325,7 +325,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_090973.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9476-remove-not-implemented-error.patch](tarball://root/attachments/some-uuid/ticket9476/trac_9476-remove-not-implemented-error.patch) by rlm created at 2010-07-17 14:31:49",
     "created_at": "2010-07-17T14:31:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9476",
     "type": "issue_comment",
@@ -334,7 +334,7 @@ archive/issue_comments_090973.json:
 }
 ```
 
-Attachment
+Attachment [trac_9476-remove-not-implemented-error.patch](tarball://root/attachments/some-uuid/ticket9476/trac_9476-remove-not-implemented-error.patch) by rlm created at 2010-07-17 14:31:49
 
 
 

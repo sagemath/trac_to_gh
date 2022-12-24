@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1239
 archive/issue_comments_007742.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [extcode_simon_code.patch](tarball://root/attachments/some-uuid/ticket1239/extcode_simon_code.patch) by robertwb created at 2007-11-21 19:46:18",
     "created_at": "2007-11-21T19:46:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1239",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_007742.json:
 }
 ```
 
-Attachment
+Attachment [extcode_simon_code.patch](tarball://root/attachments/some-uuid/ticket1239/extcode_simon_code.patch) by robertwb created at 2007-11-21 19:46:18
 
 
 
@@ -51,7 +51,7 @@ Attachment
 archive/issue_comments_007743.json:
 ```json
 {
-    "body": "Attachment\n\nJohn Cremona and I worked on this during Sage Days 6. \n\nThe attached patches have the new version of the code (to be applied to extcode) and a revised interface. \n\nThis also includes an implementation of transformations between different Weierstrass models.",
+    "body": "Attachment [simon-interface.hg](tarball://root/attachments/some-uuid/ticket1239/simon-interface.hg) by robertwb created at 2007-11-21 19:48:48\n\nJohn Cremona and I worked on this during Sage Days 6. \n\nThe attached patches have the new version of the code (to be applied to extcode) and a revised interface. \n\nThis also includes an implementation of transformations between different Weierstrass models.",
     "created_at": "2007-11-21T19:48:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1239",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_007743.json:
 }
 ```
 
-Attachment
+Attachment [simon-interface.hg](tarball://root/attachments/some-uuid/ticket1239/simon-interface.hg) by robertwb created at 2007-11-21 19:48:48
 
 John Cremona and I worked on this during Sage Days 6. 
 
@@ -187,7 +187,7 @@ archive/issue_comments_007747.json:
 archive/issue_comments_007748.json:
 ```json
 {
-    "body": "Attachment\n\ntentative_trac-1239.patch",
+    "body": "Attachment [trac-1239.patch](tarball://root/attachments/some-uuid/ticket1239/trac-1239.patch) by was created at 2007-12-15 07:22:15\n\ntentative_trac-1239.patch",
     "created_at": "2007-12-15T07:22:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1239",
     "type": "issue_comment",
@@ -196,7 +196,7 @@ archive/issue_comments_007748.json:
 }
 ```
 
-Attachment
+Attachment [trac-1239.patch](tarball://root/attachments/some-uuid/ticket1239/trac-1239.patch) by was created at 2007-12-15 07:22:15
 
 tentative_trac-1239.patch
 
@@ -225,7 +225,7 @@ archive/issue_comments_007749.json:
 archive/issue_comments_007750.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1239-docstring-issues.patch](tarball://root/attachments/some-uuid/ticket1239/1239-docstring-issues.patch) by robertwb created at 2007-12-15 07:51:31",
     "created_at": "2007-12-15T07:51:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1239",
     "type": "issue_comment",
@@ -234,7 +234,7 @@ archive/issue_comments_007750.json:
 }
 ```
 
-Attachment
+Attachment [1239-docstring-issues.patch](tarball://root/attachments/some-uuid/ticket1239/1239-docstring-issues.patch) by robertwb created at 2007-12-15 07:51:31
 
 
 
@@ -281,7 +281,7 @@ Changing status from new to assigned.
 archive/issue_comments_007753.json:
 ```json
 {
-    "body": "Attachment\n\nTurned out to be an indentation issue. Also added another doctest. \n\nShould be ready to go in now.",
+    "body": "Attachment [1239-integrality-issues.patch](tarball://root/attachments/some-uuid/ticket1239/1239-integrality-issues.patch) by robertwb created at 2007-12-15 08:32:27\n\nTurned out to be an indentation issue. Also added another doctest. \n\nShould be ready to go in now.",
     "created_at": "2007-12-15T08:32:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1239",
     "type": "issue_comment",
@@ -290,7 +290,7 @@ archive/issue_comments_007753.json:
 }
 ```
 
-Attachment
+Attachment [1239-integrality-issues.patch](tarball://root/attachments/some-uuid/ticket1239/1239-integrality-issues.patch) by robertwb created at 2007-12-15 08:32:27
 
 Turned out to be an indentation issue. Also added another doctest. 
 

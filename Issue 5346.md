@@ -159,7 +159,7 @@ Apply to 3.4.1
 archive/issue_comments_041196.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch cahnges taht example to the one with condictor 234446 as I suggested.\n\nIt also make another doctest work ok with & without the database (at line 4941) by hard-wiring in some points instead of getting the gens.\n\nI tested this on sage-3.4.1 with & without the database installed.",
+    "body": "Attachment [trac_5346.patch](tarball://root/attachments/some-uuid/ticket5346/trac_5346.patch) by cremona created at 2009-04-23 09:22:06\n\nThe patch cahnges taht example to the one with condictor 234446 as I suggested.\n\nIt also make another doctest work ok with & without the database (at line 4941) by hard-wiring in some points instead of getting the gens.\n\nI tested this on sage-3.4.1 with & without the database installed.",
     "created_at": "2009-04-23T09:22:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5346",
     "type": "issue_comment",
@@ -168,7 +168,7 @@ archive/issue_comments_041196.json:
 }
 ```
 
-Attachment
+Attachment [trac_5346.patch](tarball://root/attachments/some-uuid/ticket5346/trac_5346.patch) by cremona created at 2009-04-23 09:22:06
 
 The patch cahnges taht example to the one with condictor 234446 as I suggested.
 

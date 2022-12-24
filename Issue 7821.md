@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7821
 archive/issue_comments_067701.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [7821-readline.patch](tarball://root/attachments/some-uuid/ticket7821/7821-readline.patch) by pjeremy created at 2010-01-03 00:55:37",
     "created_at": "2010-01-03T00:55:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7821",
     "type": "issue_comment",
@@ -53,7 +53,7 @@ archive/issue_comments_067701.json:
 }
 ```
 
-Attachment
+Attachment [7821-readline.patch](tarball://root/attachments/some-uuid/ticket7821/7821-readline.patch) by pjeremy created at 2010-01-03 00:55:37
 
 
 

@@ -81,7 +81,7 @@ Changing assignee from was to davidloeffler.
 archive/issue_comments_013704.json:
 ```json
 {
-    "body": "Attachment\n\npatch against 3.1.2",
+    "body": "Attachment [2103.patch](tarball://root/attachments/some-uuid/ticket2103/2103.patch) by davidloeffler created at 2008-09-22 18:25:18\n\npatch against 3.1.2",
     "created_at": "2008-09-22T18:25:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2103",
     "type": "issue_comment",
@@ -90,7 +90,7 @@ archive/issue_comments_013704.json:
 }
 ```
 
-Attachment
+Attachment [2103.patch](tarball://root/attachments/some-uuid/ticket2103/2103.patch) by davidloeffler created at 2008-09-22 18:25:18
 
 patch against 3.1.2
 
@@ -243,7 +243,7 @@ My guess is that the code for giving a complete set of cusp representatives is n
 archive/issue_comments_013709.json:
 ```json
 {
-    "body": "Attachment\n\nrebased to 3.1.4 (also works in 3.2.alpha1)",
+    "body": "Attachment [2103-rebased.patch](tarball://root/attachments/some-uuid/ticket2103/2103-rebased.patch) by davidloeffler created at 2008-10-28 11:14:51\n\nrebased to 3.1.4 (also works in 3.2.alpha1)",
     "created_at": "2008-10-28T11:14:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2103",
     "type": "issue_comment",
@@ -252,7 +252,7 @@ archive/issue_comments_013709.json:
 }
 ```
 
-Attachment
+Attachment [2103-rebased.patch](tarball://root/attachments/some-uuid/ticket2103/2103-rebased.patch) by davidloeffler created at 2008-10-28 11:14:51
 
 rebased to 3.1.4 (also works in 3.2.alpha1)
 
@@ -328,7 +328,7 @@ Michael
 archive/issue_comments_013713.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2103-new.patch](tarball://root/attachments/some-uuid/ticket2103/2103-new.patch) by davidloeffler created at 2008-10-28 18:32:02",
     "created_at": "2008-10-28T18:32:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2103",
     "type": "issue_comment",
@@ -337,7 +337,7 @@ archive/issue_comments_013713.json:
 }
 ```
 
-Attachment
+Attachment [2103-new.patch](tarball://root/attachments/some-uuid/ticket2103/2103-new.patch) by davidloeffler created at 2008-10-28 18:32:02
 
 
 
@@ -382,7 +382,7 @@ Ok, I'm in the process of reviewing this -- I'll have it done in a little bit.
 archive/issue_comments_013716.json:
 ```json
 {
-    "body": "Attachment\n\nThis is an excellent patch. \n\nIn addition to adding the requested functionality, this patch performs some long-needed cleanup to the class hierarchy in `congroup.py`. In particular, `Gamma0` and `Gamma1` now inherit from `GammaH`, as makes sense. I should note that it might be a good project for someone to look at the code in `congroup.py`, and see how much of the code for `Gamma0` and `Gamma1` could be moved up to/unified with code in `GammaH`. \n\nI've added a small patch to apply on top of `2103-new.patch` which cleans up a few things. Most of it is documentation touch-ups. I replaced the `__cmp__` methods for `Gamma0` and `Gamma1` which the original patch removed, and rewrote them to do comparison without ever generating the corresponding lists of elements. \n\nSomeone should look over my additional patch, but after that, this is ready to go.",
+    "body": "Attachment [trac-2103-pt2.patch](tarball://root/attachments/some-uuid/ticket2103/trac-2103-pt2.patch) by craigcitro created at 2008-10-29 09:41:52\n\nThis is an excellent patch. \n\nIn addition to adding the requested functionality, this patch performs some long-needed cleanup to the class hierarchy in `congroup.py`. In particular, `Gamma0` and `Gamma1` now inherit from `GammaH`, as makes sense. I should note that it might be a good project for someone to look at the code in `congroup.py`, and see how much of the code for `Gamma0` and `Gamma1` could be moved up to/unified with code in `GammaH`. \n\nI've added a small patch to apply on top of `2103-new.patch` which cleans up a few things. Most of it is documentation touch-ups. I replaced the `__cmp__` methods for `Gamma0` and `Gamma1` which the original patch removed, and rewrote them to do comparison without ever generating the corresponding lists of elements. \n\nSomeone should look over my additional patch, but after that, this is ready to go.",
     "created_at": "2008-10-29T09:41:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2103",
     "type": "issue_comment",
@@ -391,7 +391,7 @@ archive/issue_comments_013716.json:
 }
 ```
 
-Attachment
+Attachment [trac-2103-pt2.patch](tarball://root/attachments/some-uuid/ticket2103/trac-2103-pt2.patch) by craigcitro created at 2008-10-29 09:41:52
 
 This is an excellent patch. 
 

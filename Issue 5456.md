@@ -53,7 +53,7 @@ don't use (preliminary only)
 archive/issue_comments_042284.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5456_preliminary.patch](tarball://root/attachments/some-uuid/ticket5456/trac_5456_preliminary.patch) by GeorgSWeber created at 2009-03-08 10:15:08",
     "created_at": "2009-03-08T10:15:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5456",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_042284.json:
 }
 ```
 
-Attachment
+Attachment [trac_5456_preliminary.patch](tarball://root/attachments/some-uuid/ticket5456/trac_5456_preliminary.patch) by GeorgSWeber created at 2009-03-08 10:15:08
 
 
 

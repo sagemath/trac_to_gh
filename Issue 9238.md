@@ -47,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9238
 archive/issue_comments_086715.json:
 ```json
 {
-    "body": "Attachment\n\njmol notebook javascript updates",
+    "body": "Attachment [Jmol javascript updates.zip](tarball://root/attachments/some-uuid/ticket9238/Jmol javascript updates.zip) by gutow created at 2010-06-14 16:08:52\n\njmol notebook javascript updates",
     "created_at": "2010-06-14T16:08:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -56,7 +56,7 @@ archive/issue_comments_086715.json:
 }
 ```
 
-Attachment
+Attachment [Jmol javascript updates.zip](tarball://root/attachments/some-uuid/ticket9238/Jmol javascript updates.zip) by gutow created at 2010-06-14 16:08:52
 
 jmol notebook javascript updates
 
@@ -1297,7 +1297,7 @@ For review purposes only!  Diffs with previous files, apparently.
 archive/issue_comments_086762.json:
 ```json
 {
-    "body": "Attachment\n\n>aware of.  Also, for some reason the way that I dropped the new files in did something weird, so that `sagenb/data/sage/js/jmol_lib.js` ends up only having +, not -, in its diff.\n\nNot true, ignore this statement.",
+    "body": "Attachment [trac_9238-jmol-for-review-only.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9238-jmol-for-review-only.patch) by kcrisman created at 2011-02-22 17:52:38\n\n>aware of.  Also, for some reason the way that I dropped the new files in did something weird, so that `sagenb/data/sage/js/jmol_lib.js` ends up only having +, not -, in its diff.\n\nNot true, ignore this statement.",
     "created_at": "2011-02-22T17:52:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -1306,7 +1306,7 @@ archive/issue_comments_086762.json:
 }
 ```
 
-Attachment
+Attachment [trac_9238-jmol-for-review-only.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9238-jmol-for-review-only.patch) by kcrisman created at 2011-02-22 17:52:38
 
 >aware of.  Also, for some reason the way that I dropped the new files in did something weird, so that `sagenb/data/sage/js/jmol_lib.js` ends up only having +, not -, in its diff.
 
@@ -1506,7 +1506,7 @@ produces an image like the attached "index.jpg" image (see attached files above)
 archive/issue_comments_086770.json:
 ```json
 {
-    "body": "Attachment\n\nThose little white sparkles (artifacts in the mesh) seem to only happen at the intersection of mesh lines, if that helps diagnose what is going on.",
+    "body": "Attachment [index.jpg](tarball://root/attachments/some-uuid/ticket9238/index.jpg) by jason created at 2011-02-26 08:36:25\n\nThose little white sparkles (artifacts in the mesh) seem to only happen at the intersection of mesh lines, if that helps diagnose what is going on.",
     "created_at": "2011-02-26T08:36:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -1515,7 +1515,7 @@ archive/issue_comments_086770.json:
 }
 ```
 
-Attachment
+Attachment [index.jpg](tarball://root/attachments/some-uuid/ticket9238/index.jpg) by jason created at 2011-02-26 08:36:25
 
 Those little white sparkles (artifacts in the mesh) seem to only happen at the intersection of mesh lines, if that helps diagnose what is going on.
 
@@ -1718,7 +1718,7 @@ apply after installing jmol spkg.  Apply to sagenb repository
 archive/issue_comments_086779.json:
 ```json
 {
-    "body": "Attachment\n\nI attached a patch which adds an \"Advanced Controls\" button under the 3d applet which toggles the controls to the right.",
+    "body": "Attachment [hide-advanced-jmol-controls.patch](tarball://root/attachments/some-uuid/ticket9238/hide-advanced-jmol-controls.patch) by jason created at 2011-03-01 04:35:01\n\nI attached a patch which adds an \"Advanced Controls\" button under the 3d applet which toggles the controls to the right.",
     "created_at": "2011-03-01T04:35:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -1727,7 +1727,7 @@ archive/issue_comments_086779.json:
 }
 ```
 
-Attachment
+Attachment [hide-advanced-jmol-controls.patch](tarball://root/attachments/some-uuid/ticket9238/hide-advanced-jmol-controls.patch) by jason created at 2011-03-01 04:35:01
 
 I attached a patch which adds an "Advanced Controls" button under the 3d applet which toggles the controls to the right.
 
@@ -2452,7 +2452,7 @@ I tried something like this, and it had the same response, except of course with
 archive/issue_comments_086805.json:
 ```json
 {
-    "body": "Attachment\n\nFor reference only - do not apply.",
+    "body": "Attachment [spt-attempt.diff](tarball://root/attachments/some-uuid/ticket9238/spt-attempt.diff) by kcrisman created at 2011-03-15 15:15:53\n\nFor reference only - do not apply.",
     "created_at": "2011-03-15T15:15:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -2461,7 +2461,7 @@ archive/issue_comments_086805.json:
 }
 ```
 
-Attachment
+Attachment [spt-attempt.diff](tarball://root/attachments/some-uuid/ticket9238/spt-attempt.diff) by kcrisman created at 2011-03-15 15:15:53
 
 For reference only - do not apply.
 
@@ -2579,7 +2579,7 @@ plot3d/base.pyx fixes to launch Jmol from cmd line
 archive/issue_comments_086811.json:
 ```json
 {
-    "body": "Attachment\n\n> Probably still won't work because of some problems with Jmol and the launch shell script.  I need help because I've got it working, but don't know how to make a patch that includes binary files (the necessary updated .jar files).  I've got a good patch for the updates to plot3d/base.pyx, but it doesn't fix everything without updates to the Jmol and its support files.  I'll upload the base.pyx patch below, but actually intended to add it to ticket 9232, which is about Jmol from the command line.  Do I need to build an .spkg for the Jmol stuff?\n\nHmm, those files are not being tracked by HG.  Otherwise any changes would be recorded, even binary ones.   But I think that we try not to track them because they are all binaries and we can't directly access them - hence the new spkg.\n\nIf the `isosurface fullylit; pmesh o* fullylit; set antialiasdisplay on;` stuff is just to fix the lighting in general, we could get that in a lot more quickly by simply opening another ticket, since it doesn't require a new SageNB package.  I *have* noticed that the top of surfaces was not well lit, as opposed to the bottom... but only in the notebook, not the command line, weirdly.  That part of this patch fixes that.  Any ideas as to what was going on with that?\n\nBut anything that is about changing those jmol files would have to be another package, though, I guess, because we don't track those files.  Why doesn't changing the extension just work 'out of the box'?",
+    "body": "Attachment [trac_9232_plot3d_base_pyx.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9232_plot3d_base_pyx.patch) by kcrisman created at 2011-03-21 15:30:00\n\n> Probably still won't work because of some problems with Jmol and the launch shell script.  I need help because I've got it working, but don't know how to make a patch that includes binary files (the necessary updated .jar files).  I've got a good patch for the updates to plot3d/base.pyx, but it doesn't fix everything without updates to the Jmol and its support files.  I'll upload the base.pyx patch below, but actually intended to add it to ticket 9232, which is about Jmol from the command line.  Do I need to build an .spkg for the Jmol stuff?\n\nHmm, those files are not being tracked by HG.  Otherwise any changes would be recorded, even binary ones.   But I think that we try not to track them because they are all binaries and we can't directly access them - hence the new spkg.\n\nIf the `isosurface fullylit; pmesh o* fullylit; set antialiasdisplay on;` stuff is just to fix the lighting in general, we could get that in a lot more quickly by simply opening another ticket, since it doesn't require a new SageNB package.  I *have* noticed that the top of surfaces was not well lit, as opposed to the bottom... but only in the notebook, not the command line, weirdly.  That part of this patch fixes that.  Any ideas as to what was going on with that?\n\nBut anything that is about changing those jmol files would have to be another package, though, I guess, because we don't track those files.  Why doesn't changing the extension just work 'out of the box'?",
     "created_at": "2011-03-21T15:30:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -2588,7 +2588,7 @@ archive/issue_comments_086811.json:
 }
 ```
 
-Attachment
+Attachment [trac_9232_plot3d_base_pyx.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9232_plot3d_base_pyx.patch) by kcrisman created at 2011-03-21 15:30:00
 
 > Probably still won't work because of some problems with Jmol and the launch shell script.  I need help because I've got it working, but don't know how to make a patch that includes binary files (the necessary updated .jar files).  I've got a good patch for the updates to plot3d/base.pyx, but it doesn't fix everything without updates to the Jmol and its support files.  I'll upload the base.pyx patch below, but actually intended to add it to ticket 9232, which is about Jmol from the command line.  Do I need to build an .spkg for the Jmol stuff?
 
@@ -2713,7 +2713,7 @@ Patch of notebook_lib.js and jmol_lib.js for interactive enhancements to Jmol in
 archive/issue_comments_086817.json:
 ```json
 {
-    "body": "Attachment\n\nReady for testing, but requires two steps.  Starting with a clean Sage 4.6.2:\n\n1. patch for Jmol at the command line. See [#9232](http://trac.sagemath.org/sage_trac/ticket/9232).\n2. Apply the patch trac_9238_interactive_js.patch above.\n\nI have addressed the following issues (let me know if I've missed anything):\n\n* Addition of the ability to hide the \"advanced controls\".\n* Fix so that the advanced controls are hidden when the applet is asleep (no accidental calls to nonexistent applets).\n* Fix to issue of not properly loading all applets when a worksheet with a lot of applets is reopened (please check this one carefully).\n* Fixes to vocabulary and labels to make things clearer. \n* Hidden the div with the State in it.  (Still there b/c I hope to be able to recreate the way the user left it on close, rather than starting fresh each time.)\n\nHappy testing and thank you to those who do test!",
+    "body": "Attachment [trac_9238_interactive_js.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9238_interactive_js.patch) by gutow created at 2011-03-22 22:41:32\n\nReady for testing, but requires two steps.  Starting with a clean Sage 4.6.2:\n\n1. patch for Jmol at the command line. See [#9232](http://trac.sagemath.org/sage_trac/ticket/9232).\n2. Apply the patch trac_9238_interactive_js.patch above.\n\nI have addressed the following issues (let me know if I've missed anything):\n\n* Addition of the ability to hide the \"advanced controls\".\n* Fix so that the advanced controls are hidden when the applet is asleep (no accidental calls to nonexistent applets).\n* Fix to issue of not properly loading all applets when a worksheet with a lot of applets is reopened (please check this one carefully).\n* Fixes to vocabulary and labels to make things clearer. \n* Hidden the div with the State in it.  (Still there b/c I hope to be able to recreate the way the user left it on close, rather than starting fresh each time.)\n\nHappy testing and thank you to those who do test!",
     "created_at": "2011-03-22T22:41:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -2722,7 +2722,7 @@ archive/issue_comments_086817.json:
 }
 ```
 
-Attachment
+Attachment [trac_9238_interactive_js.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9238_interactive_js.patch) by gutow created at 2011-03-22 22:41:32
 
 Ready for testing, but requires two steps.  Starting with a clean Sage 4.6.2:
 
@@ -2878,7 +2878,7 @@ For reference only - do not apply, at least not until it's fixed!
 archive/issue_comments_086824.json:
 ```json
 {
-    "body": "Attachment\n\nThis [attachment:trac_9238-sagemenu-test.patch] is the offending change.  See line 361 and following where the weirdness begins.  But like I said, I don't think we actually need to add this to the repo; this is the vanilla version of this file already in Sage.",
+    "body": "Attachment [trac_9238-sagemenu-test.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9238-sagemenu-test.patch) by kcrisman created at 2011-03-23 20:20:37\n\nThis [attachment:trac_9238-sagemenu-test.patch] is the offending change.  See line 361 and following where the weirdness begins.  But like I said, I don't think we actually need to add this to the repo; this is the vanilla version of this file already in Sage.",
     "created_at": "2011-03-23T20:20:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -2887,7 +2887,7 @@ archive/issue_comments_086824.json:
 }
 ```
 
-Attachment
+Attachment [trac_9238-sagemenu-test.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9238-sagemenu-test.patch) by kcrisman created at 2011-03-23 20:20:37
 
 This [attachment:trac_9238-sagemenu-test.patch] is the offending change.  See line 361 and following where the weirdness begins.  But like I said, I don't think we actually need to add this to the repo; this is the vanilla version of this file already in Sage.
 
@@ -2934,7 +2934,7 @@ And I've now checked, and there is NO difference between the files.  So maybe Jo
 archive/issue_comments_086827.json:
 ```json
 {
-    "body": "Attachment\n\nApply this as well",
+    "body": "Attachment [trac_9238-add-help.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9238-add-help.patch) by kcrisman created at 2011-03-23 20:52:27\n\nApply this as well",
     "created_at": "2011-03-23T20:52:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -2943,7 +2943,7 @@ archive/issue_comments_086827.json:
 }
 ```
 
-Attachment
+Attachment [trac_9238-add-help.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9238-add-help.patch) by kcrisman created at 2011-03-23 20:52:27
 
 Apply this as well
 
@@ -3461,7 +3461,7 @@ I've sort of reproduced the Safari problem.  I've traced it to a js call in the
 archive/issue_comments_086848.json:
 ```json
 {
-    "body": "Attachment\n\nfix to async load of many jmols and workaround for Safari bug (memory leak?)",
+    "body": "Attachment [trac_9238_jmol_lib_async.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9238_jmol_lib_async.patch) by gutow created at 2011-03-28 00:55:15\n\nfix to async load of many jmols and workaround for Safari bug (memory leak?)",
     "created_at": "2011-03-28T00:55:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -3470,7 +3470,7 @@ archive/issue_comments_086848.json:
 }
 ```
 
-Attachment
+Attachment [trac_9238_jmol_lib_async.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9238_jmol_lib_async.patch) by gutow created at 2011-03-28 00:55:15
 
 fix to async load of many jmols and workaround for Safari bug (memory leak?)
 
@@ -3660,7 +3660,7 @@ reduce Jmol memory usage try to make advanced toggle work in IE
 archive/issue_comments_086858.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9238_memory_IE.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9238_memory_IE.patch) by gutow created at 2011-03-29 07:03:57",
     "created_at": "2011-03-29T07:03:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -3669,7 +3669,7 @@ archive/issue_comments_086858.json:
 }
 ```
 
-Attachment
+Attachment [trac_9238_memory_IE.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9238_memory_IE.patch) by gutow created at 2011-03-29 07:03:57
 
 
 
@@ -3778,7 +3778,7 @@ Nice warnings for IE
 archive/issue_comments_086864.json:
 ```json
 {
-    "body": "Attachment\n\nFix to script file extension to work with new Jmol from command line",
+    "body": "Attachment [Trac_9238_script_extension.patch](tarball://root/attachments/some-uuid/ticket9238/Trac_9238_script_extension.patch) by gutow created at 2011-04-02 19:26:41\n\nFix to script file extension to work with new Jmol from command line",
     "created_at": "2011-04-02T19:26:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -3787,7 +3787,7 @@ archive/issue_comments_086864.json:
 }
 ```
 
-Attachment
+Attachment [Trac_9238_script_extension.patch](tarball://root/attachments/some-uuid/ticket9238/Trac_9238_script_extension.patch) by gutow created at 2011-04-02 19:26:41
 
 Fix to script file extension to work with new Jmol from command line
 

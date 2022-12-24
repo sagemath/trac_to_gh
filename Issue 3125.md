@@ -60,7 +60,7 @@ Changing assignee from mhansen to rlm.
 archive/issue_comments_021656.json:
 ```json
 {
-    "body": "Attachment\n\nAfter attached patch:\n\n```\nsage: graphs.CubeGraph(5).chromatic_polynomial()\n^C---------------------------------------------------------------------------\n<type 'exceptions.KeyboardInterrupt'>     Traceback (most recent call last)\n\n/Users/rlmill/sage-3.0.1/<ipython console> in <module>()\n\n/Users/rlmill/sage-3.0.1/local/lib/python/site-packages/sage/graphs/graph.py in chromatic_polynomial(self)\n   7099         \"\"\"\n   7100         from sage.graphs.chrompoly import chromatic_polynomial\n-> 7101         return chromatic_polynomial(self)\n   7102 \n   7103     def chromatic_number(self):\n\n<type 'exceptions.KeyboardInterrupt'>: \n```\n",
+    "body": "Attachment [trac3125-chrompoly_sig.patch](tarball://root/attachments/some-uuid/ticket3125/trac3125-chrompoly_sig.patch) by rlm created at 2008-05-07 23:22:01\n\nAfter attached patch:\n\n```\nsage: graphs.CubeGraph(5).chromatic_polynomial()\n^C---------------------------------------------------------------------------\n<type 'exceptions.KeyboardInterrupt'>     Traceback (most recent call last)\n\n/Users/rlmill/sage-3.0.1/<ipython console> in <module>()\n\n/Users/rlmill/sage-3.0.1/local/lib/python/site-packages/sage/graphs/graph.py in chromatic_polynomial(self)\n   7099         \"\"\"\n   7100         from sage.graphs.chrompoly import chromatic_polynomial\n-> 7101         return chromatic_polynomial(self)\n   7102 \n   7103     def chromatic_number(self):\n\n<type 'exceptions.KeyboardInterrupt'>: \n```\n",
     "created_at": "2008-05-07T23:22:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3125",
     "type": "issue_comment",
@@ -69,7 +69,7 @@ archive/issue_comments_021656.json:
 }
 ```
 
-Attachment
+Attachment [trac3125-chrompoly_sig.patch](tarball://root/attachments/some-uuid/ticket3125/trac3125-chrompoly_sig.patch) by rlm created at 2008-05-07 23:22:01
 
 After attached patch:
 

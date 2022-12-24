@@ -67,7 +67,7 @@ Changing status from new to needs_review.
 archive/issue_comments_088956.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch is longer than necessary because it also strips some whitespaces at EOL.",
+    "body": "Attachment [trac9364-BooleanFunction_is_symmetric.patch](tarball://root/attachments/some-uuid/ticket9364/trac9364-BooleanFunction_is_symmetric.patch) by ylchapuy created at 2010-06-28 20:19:15\n\nThe patch is longer than necessary because it also strips some whitespaces at EOL.",
     "created_at": "2010-06-28T20:19:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9364",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_088956.json:
 }
 ```
 
-Attachment
+Attachment [trac9364-BooleanFunction_is_symmetric.patch](tarball://root/attachments/some-uuid/ticket9364/trac9364-BooleanFunction_is_symmetric.patch) by ylchapuy created at 2010-06-28 20:19:15
 
 The patch is longer than necessary because it also strips some whitespaces at EOL.
 
@@ -123,7 +123,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_088959.json:
 ```json
 {
-    "body": "Attachment\n\nVersion without tabs - apply only this patch",
+    "body": "Attachment [trac9364-BooleanFunction_is_symmetric-untabified.patch](tarball://root/attachments/some-uuid/ticket9364/trac9364-BooleanFunction_is_symmetric-untabified.patch) by davidloeffler created at 2010-06-30 17:23:20\n\nVersion without tabs - apply only this patch",
     "created_at": "2010-06-30T17:23:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9364",
     "type": "issue_comment",
@@ -132,7 +132,7 @@ archive/issue_comments_088959.json:
 }
 ```
 
-Attachment
+Attachment [trac9364-BooleanFunction_is_symmetric-untabified.patch](tarball://root/attachments/some-uuid/ticket9364/trac9364-BooleanFunction_is_symmetric-untabified.patch) by davidloeffler created at 2010-06-30 17:23:20
 
 Version without tabs - apply only this patch
 

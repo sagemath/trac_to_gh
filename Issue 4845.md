@@ -51,7 +51,7 @@ Changing status from new to assigned.
 archive/issue_comments_036738.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-4845.patch](tarball://root/attachments/some-uuid/ticket4845/trac-4845.patch) by craigcitro created at 2008-12-21 09:16:12",
     "created_at": "2008-12-21T09:16:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4845",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_036738.json:
 }
 ```
 
-Attachment
+Attachment [trac-4845.patch](tarball://root/attachments/some-uuid/ticket4845/trac-4845.patch) by craigcitro created at 2008-12-21 09:16:12
 
 
 
@@ -176,7 +176,7 @@ for future reference:
 archive/issue_comments_036744.json:
 ```json
 {
-    "body": "Attachment\n\nI like the cleaner v2.patch. Merged in Sage 3.2.3.alpha0.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac-4845-v2.patch](tarball://root/attachments/some-uuid/ticket4845/trac-4845-v2.patch) by mabshoff created at 2008-12-24 04:09:54\n\nI like the cleaner v2.patch. Merged in Sage 3.2.3.alpha0.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-24T04:09:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4845",
     "type": "issue_comment",
@@ -185,7 +185,7 @@ archive/issue_comments_036744.json:
 }
 ```
 
-Attachment
+Attachment [trac-4845-v2.patch](tarball://root/attachments/some-uuid/ticket4845/trac-4845-v2.patch) by mabshoff created at 2008-12-24 04:09:54
 
 I like the cleaner v2.patch. Merged in Sage 3.2.3.alpha0.
 

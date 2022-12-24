@@ -86,7 +86,7 @@ Fixed
 archive/issue_comments_047047.json:
 ```json
 {
-    "body": "Attachment\n\nMerged in Sage 3.4.2.rc0.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_5946.patch](tarball://root/attachments/some-uuid/ticket5946/trac_5946.patch) by mabshoff created at 2009-04-30 08:52:22\n\nMerged in Sage 3.4.2.rc0.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-30T08:52:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5946",
     "type": "issue_comment",
@@ -95,7 +95,7 @@ archive/issue_comments_047047.json:
 }
 ```
 
-Attachment
+Attachment [trac_5946.patch](tarball://root/attachments/some-uuid/ticket5946/trac_5946.patch) by mabshoff created at 2009-04-30 08:52:22
 
 Merged in Sage 3.4.2.rc0.
 

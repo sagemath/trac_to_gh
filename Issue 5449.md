@@ -57,7 +57,7 @@ Changing keywords from "" to "cached_method, cache".
 archive/issue_comments_042189.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [cached_in_parent_method-5449-submitted.patch](tarball://root/attachments/some-uuid/ticket5449/cached_in_parent_method-5449-submitted.patch) by nthiery created at 2009-05-02 00:41:31",
     "created_at": "2009-05-02T00:41:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5449",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_042189.json:
 }
 ```
 
-Attachment
+Attachment [cached_in_parent_method-5449-submitted.patch](tarball://root/attachments/some-uuid/ticket5449/cached_in_parent_method-5449-submitted.patch) by nthiery created at 2009-05-02 00:41:31
 
 
 

@@ -363,7 +363,7 @@ Apply sage-4135_3.patch and sage-4135_4.patch
 archive/issue_comments_030005.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4135.patch](tarball://root/attachments/some-uuid/ticket4135/trac_4135.patch) by mhansen created at 2009-01-19 07:19:54",
     "created_at": "2009-01-19T07:19:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4135",
     "type": "issue_comment",
@@ -372,7 +372,7 @@ archive/issue_comments_030005.json:
 }
 ```
 
-Attachment
+Attachment [trac_4135.patch](tarball://root/attachments/some-uuid/ticket4135/trac_4135.patch) by mhansen created at 2009-01-19 07:19:54
 
 
 
@@ -427,7 +427,7 @@ Right now, this patch seems to need work. Am I doing something wrong?
 archive/issue_comments_030008.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4135.2.patch](tarball://root/attachments/some-uuid/ticket4135/trac_4135.2.patch) by TimothyClemans created at 2009-03-16 19:41:09",
     "created_at": "2009-03-16T19:41:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4135",
     "type": "issue_comment",
@@ -436,7 +436,7 @@ archive/issue_comments_030008.json:
 }
 ```
 
-Attachment
+Attachment [trac_4135.2.patch](tarball://root/attachments/some-uuid/ticket4135/trac_4135.2.patch) by TimothyClemans created at 2009-03-16 19:41:09
 
 
 
@@ -481,7 +481,7 @@ I've applied the patch to a 3.4 tree and all the bits seem to work.
 archive/issue_comments_030011.json:
 ```json
 {
-    "body": "Attachment\n\ntrac_4135.2.patch rebased for 3.4.1.rc2",
+    "body": "Attachment [trac_4135.3.patch](tarball://root/attachments/some-uuid/ticket4135/trac_4135.3.patch) by ddrake created at 2009-04-14 01:03:08\n\ntrac_4135.2.patch rebased for 3.4.1.rc2",
     "created_at": "2009-04-14T01:03:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4135",
     "type": "issue_comment",
@@ -490,7 +490,7 @@ archive/issue_comments_030011.json:
 }
 ```
 
-Attachment
+Attachment [trac_4135.3.patch](tarball://root/attachments/some-uuid/ticket4135/trac_4135.3.patch) by ddrake created at 2009-04-14 01:03:08
 
 trac_4135.2.patch rebased for 3.4.1.rc2
 
@@ -683,7 +683,7 @@ rebased against 4.1.1 + #6568
 archive/issue_comments_030021.json:
 ```json
 {
-    "body": "Attachment\n\nRebased patch up. This should apply cleanly to the release manager's 4.1.2.alpha tree. I am going to change this to a positive review and open a new ticket for the temporary password business.\n\nRelease manager: apply only attachment:trac_4135.4.patch.",
+    "body": "Attachment [trac_4135.4.patch](tarball://root/attachments/some-uuid/ticket4135/trac_4135.4.patch) by ddrake created at 2009-09-03 03:15:24\n\nRebased patch up. This should apply cleanly to the release manager's 4.1.2.alpha tree. I am going to change this to a positive review and open a new ticket for the temporary password business.\n\nRelease manager: apply only attachment:trac_4135.4.patch.",
     "created_at": "2009-09-03T03:15:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4135",
     "type": "issue_comment",
@@ -692,7 +692,7 @@ archive/issue_comments_030021.json:
 }
 ```
 
-Attachment
+Attachment [trac_4135.4.patch](tarball://root/attachments/some-uuid/ticket4135/trac_4135.4.patch) by ddrake created at 2009-09-03 03:15:24
 
 Rebased patch up. This should apply cleanly to the release manager's 4.1.2.alpha tree. I am going to change this to a positive review and open a new ticket for the temporary password business.
 
@@ -781,7 +781,7 @@ I tried applying the patch here on top of a 4.1.1 tree that already had the patc
 archive/issue_comments_030025.json:
 ```json
 {
-    "body": "Attachment\n\nrebased against mvngu's 4.1.2.alpha0 merge tree",
+    "body": "Attachment [trac_4135.5.patch](tarball://root/attachments/some-uuid/ticket4135/trac_4135.5.patch) by ddrake created at 2009-09-03 08:42:51\n\nrebased against mvngu's 4.1.2.alpha0 merge tree",
     "created_at": "2009-09-03T08:42:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4135",
     "type": "issue_comment",
@@ -790,7 +790,7 @@ archive/issue_comments_030025.json:
 }
 ```
 
-Attachment
+Attachment [trac_4135.5.patch](tarball://root/attachments/some-uuid/ticket4135/trac_4135.5.patch) by ddrake created at 2009-09-03 08:42:51
 
 rebased against mvngu's 4.1.2.alpha0 merge tree
 

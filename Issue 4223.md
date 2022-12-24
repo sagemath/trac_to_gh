@@ -533,7 +533,7 @@ Michael
 archive/issue_comments_030692.json:
 ```json
 {
-    "body": "Attachment\n\nWorkaround patch - jointly done with Bill Hart",
+    "body": "Attachment [matrix.cpp.patch](tarball://root/attachments/some-uuid/ticket4223/matrix.cpp.patch) by mabshoff created at 2009-05-07 11:56:06\n\nWorkaround patch - jointly done with Bill Hart",
     "created_at": "2009-05-07T11:56:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4223",
     "type": "issue_comment",
@@ -542,7 +542,7 @@ archive/issue_comments_030692.json:
 }
 ```
 
-Attachment
+Attachment [matrix.cpp.patch](tarball://root/attachments/some-uuid/ticket4223/matrix.cpp.patch) by mabshoff created at 2009-05-07 11:56:06
 
 Workaround patch - jointly done with Bill Hart
 
@@ -579,7 +579,7 @@ Michael
 archive/issue_comments_030694.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4223.patch](tarball://root/attachments/some-uuid/ticket4223/trac_4223.patch) by mabshoff created at 2009-05-12 16:24:59",
     "created_at": "2009-05-12T16:24:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4223",
     "type": "issue_comment",
@@ -588,7 +588,7 @@ archive/issue_comments_030694.json:
 }
 ```
 
-Attachment
+Attachment [trac_4223.patch](tarball://root/attachments/some-uuid/ticket4223/trac_4223.patch) by mabshoff created at 2009-05-12 16:24:59
 
 
 

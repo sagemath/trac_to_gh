@@ -91,7 +91,7 @@ My guess is that we somewhere forget to set the global ring maybe?
 archive/issue_comments_022725.json:
 ```json
 {
-    "body": "Attachment\n\nthis patch is supposed to work",
+    "body": "Attachment [pbori_weakref.patch](tarball://root/attachments/some-uuid/ticket3284/pbori_weakref.patch) by malb created at 2008-05-25 16:09:12\n\nthis patch is supposed to work",
     "created_at": "2008-05-25T16:09:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3284",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_022725.json:
 }
 ```
 
-Attachment
+Attachment [pbori_weakref.patch](tarball://root/attachments/some-uuid/ticket3284/pbori_weakref.patch) by malb created at 2008-05-25 16:09:12
 
 this patch is supposed to work
 
@@ -221,7 +221,7 @@ BooleanPolynomialRing user friendly names
 archive/issue_comments_022732.json:
 ```json
 {
-    "body": "Attachment\n\n`BooleanPolynomialRing_constructor` in malb's original patch fails when only names are provided, attachment:trac3284_BooleanPolynomialRing_normalize_names.patch fixes this case.\n\nI give malb's patch (followed by mine) a positive review. Someone should review my patch, especially the change to `normalize_names`.",
+    "body": "Attachment [trac3284_BooleanPolynomialRing_normalize_names.patch](tarball://root/attachments/some-uuid/ticket3284/trac3284_BooleanPolynomialRing_normalize_names.patch) by burcin created at 2008-06-20 03:53:34\n\n`BooleanPolynomialRing_constructor` in malb's original patch fails when only names are provided, attachment:trac3284_BooleanPolynomialRing_normalize_names.patch fixes this case.\n\nI give malb's patch (followed by mine) a positive review. Someone should review my patch, especially the change to `normalize_names`.",
     "created_at": "2008-06-20T03:53:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3284",
     "type": "issue_comment",
@@ -230,7 +230,7 @@ archive/issue_comments_022732.json:
 }
 ```
 
-Attachment
+Attachment [trac3284_BooleanPolynomialRing_normalize_names.patch](tarball://root/attachments/some-uuid/ticket3284/trac3284_BooleanPolynomialRing_normalize_names.patch) by burcin created at 2008-06-20 03:53:34
 
 `BooleanPolynomialRing_constructor` in malb's original patch fails when only names are provided, attachment:trac3284_BooleanPolynomialRing_normalize_names.patch fixes this case.
 

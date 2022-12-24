@@ -56,7 +56,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5986
 archive/issue_comments_047569.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [cPickle-5986-nested-classes-submitted.patch](tarball://root/attachments/some-uuid/ticket5986/cPickle-5986-nested-classes-submitted.patch) by nthiery created at 2009-05-06 06:56:46",
     "created_at": "2009-05-06T06:56:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5986",
     "type": "issue_comment",
@@ -65,7 +65,7 @@ archive/issue_comments_047569.json:
 }
 ```
 
-Attachment
+Attachment [cPickle-5986-nested-classes-submitted.patch](tarball://root/attachments/some-uuid/ticket5986/cPickle-5986-nested-classes-submitted.patch) by nthiery created at 2009-05-06 06:56:46
 
 
 
@@ -156,7 +156,7 @@ See discussion on Sage devel.
 archive/issue_comments_047574.json:
 ```json
 {
-    "body": "Attachment\n\nApply only this one",
+    "body": "Attachment [trac_5986-use-nested_class_metaclass.patch](tarball://root/attachments/some-uuid/ticket5986/trac_5986-use-nested_class_metaclass.patch) by nthiery created at 2009-10-11 08:47:16\n\nApply only this one",
     "created_at": "2009-10-11T08:47:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5986",
     "type": "issue_comment",
@@ -165,7 +165,7 @@ archive/issue_comments_047574.json:
 }
 ```
 
-Attachment
+Attachment [trac_5986-use-nested_class_metaclass.patch](tarball://root/attachments/some-uuid/ticket5986/trac_5986-use-nested_class_metaclass.patch) by nthiery created at 2009-10-11 08:47:16
 
 Apply only this one
 

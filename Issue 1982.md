@@ -158,7 +158,7 @@ This has to be made part of the matplotlib spkg
 archive/issue_comments_012845.json:
 ```json
 {
-    "body": "Attachment\n\nI think there is also a need version of matplotlib, so probably when looking into this patch, one should also upgrade matplotlib, and see if this change is still needed. \n\nThe changed cbook.py try except calling some locale function in the standard Python library, because on REAL LIFE computers often that function often blows up (!), even\nthough it probably \"shouldn't\" if everybody's computers were setup perfectly.  Honestely, I've even had related problems on my office mac pro, which is pretty weird since it's fairly plain vanilla.",
+    "body": "Attachment [cbook.py](tarball://root/attachments/some-uuid/ticket1982/cbook.py) by was created at 2008-01-30 12:35:18\n\nI think there is also a need version of matplotlib, so probably when looking into this patch, one should also upgrade matplotlib, and see if this change is still needed. \n\nThe changed cbook.py try except calling some locale function in the standard Python library, because on REAL LIFE computers often that function often blows up (!), even\nthough it probably \"shouldn't\" if everybody's computers were setup perfectly.  Honestely, I've even had related problems on my office mac pro, which is pretty weird since it's fairly plain vanilla.",
     "created_at": "2008-01-30T12:35:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1982",
     "type": "issue_comment",
@@ -167,7 +167,7 @@ archive/issue_comments_012845.json:
 }
 ```
 
-Attachment
+Attachment [cbook.py](tarball://root/attachments/some-uuid/ticket1982/cbook.py) by was created at 2008-01-30 12:35:18
 
 I think there is also a need version of matplotlib, so probably when looking into this patch, one should also upgrade matplotlib, and see if this change is still needed. 
 

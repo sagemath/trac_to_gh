@@ -227,7 +227,7 @@ Incidentally, we might as well upgrade now too - see http://www.r-project.org/, 
 archive/issue_comments_053249.json:
 ```json
 {
-    "body": "Attachment\n\nBased on 4.3",
+    "body": "Attachment [trac_6532-r-upgrade.patch](tarball://root/attachments/some-uuid/ticket6532/trac_6532-r-upgrade.patch) by kcrisman created at 2009-12-27 01:51:18\n\nBased on 4.3",
     "created_at": "2009-12-27T01:51:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6532",
     "type": "issue_comment",
@@ -236,7 +236,7 @@ archive/issue_comments_053249.json:
 }
 ```
 
-Attachment
+Attachment [trac_6532-r-upgrade.patch](tarball://root/attachments/some-uuid/ticket6532/trac_6532-r-upgrade.patch) by kcrisman created at 2009-12-27 01:51:18
 
 Based on 4.3
 

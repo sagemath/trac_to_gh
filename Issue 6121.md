@@ -81,7 +81,7 @@ Authorship credit should go to nthiery as well.
 archive/issue_comments_048917.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6121-nested-pickle-meta.patch](tarball://root/attachments/some-uuid/ticket6121/6121-nested-pickle-meta.patch) by robertwb created at 2009-06-10 09:04:06",
     "created_at": "2009-06-10T09:04:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6121",
     "type": "issue_comment",
@@ -90,7 +90,7 @@ archive/issue_comments_048917.json:
 }
 ```
 
-Attachment
+Attachment [6121-nested-pickle-meta.patch](tarball://root/attachments/some-uuid/ticket6121/6121-nested-pickle-meta.patch) by robertwb created at 2009-06-10 09:04:06
 
 
 

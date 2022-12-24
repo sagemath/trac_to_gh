@@ -68,7 +68,7 @@ Encode just once, if it's necessary.  Apply to **sage** repository.
 archive/issue_comments_071466.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch uses the recently added (cf. #7249, #8051) `sagenb.misc.encoded_str` to avoid attempting to re-encode encoded strings.\n\nI haven't tested this extensively, but it appears to fix the problem above.",
+    "body": "Attachment [trac_8128-latex_cell_unicode.patch](tarball://root/attachments/some-uuid/ticket8128/trac_8128-latex_cell_unicode.patch) by mpatel created at 2010-01-30 03:00:55\n\nThe patch uses the recently added (cf. #7249, #8051) `sagenb.misc.encoded_str` to avoid attempting to re-encode encoded strings.\n\nI haven't tested this extensively, but it appears to fix the problem above.",
     "created_at": "2010-01-30T03:00:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8128",
     "type": "issue_comment",
@@ -77,7 +77,7 @@ archive/issue_comments_071466.json:
 }
 ```
 
-Attachment
+Attachment [trac_8128-latex_cell_unicode.patch](tarball://root/attachments/some-uuid/ticket8128/trac_8128-latex_cell_unicode.patch) by mpatel created at 2010-01-30 03:00:55
 
 The patch uses the recently added (cf. #7249, #8051) `sagenb.misc.encoded_str` to avoid attempting to re-encode encoded strings.
 

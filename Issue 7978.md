@@ -51,7 +51,7 @@ Changing status from new to needs_work.
 archive/issue_comments_069600.json:
 ```json
 {
-    "body": "Attachment\n\nOops.  This patch depends on some patches in the combinat stack.  (I suspect the 'crystal-cleanup' patches.)  The change is trivial, but I'll coordinate with the sage-combinat list before marking this ready for review.",
+    "body": "Attachment [trac_7978_fix_tabs_in_affine_py-jb.patch](tarball://root/attachments/some-uuid/ticket7978/trac_7978_fix_tabs_in_affine_py-jb.patch) by jbandlow created at 2010-01-18 15:17:51\n\nOops.  This patch depends on some patches in the combinat stack.  (I suspect the 'crystal-cleanup' patches.)  The change is trivial, but I'll coordinate with the sage-combinat list before marking this ready for review.",
     "created_at": "2010-01-18T15:17:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7978",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_069600.json:
 }
 ```
 
-Attachment
+Attachment [trac_7978_fix_tabs_in_affine_py-jb.patch](tarball://root/attachments/some-uuid/ticket7978/trac_7978_fix_tabs_in_affine_py-jb.patch) by jbandlow created at 2010-01-18 15:17:51
 
 Oops.  This patch depends on some patches in the combinat stack.  (I suspect the 'crystal-cleanup' patches.)  The change is trivial, but I'll coordinate with the sage-combinat list before marking this ready for review.
 
@@ -71,7 +71,7 @@ Oops.  This patch depends on some patches in the combinat stack.  (I suspect the
 archive/issue_comments_069601.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7978_crystal_cleanup-as.patch](tarball://root/attachments/some-uuid/ticket7978/trac_7978_crystal_cleanup-as.patch) by aschilling created at 2010-01-25 06:27:16",
     "created_at": "2010-01-25T06:27:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7978",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_069601.json:
 }
 ```
 
-Attachment
+Attachment [trac_7978_crystal_cleanup-as.patch](tarball://root/attachments/some-uuid/ticket7978/trac_7978_crystal_cleanup-as.patch) by aschilling created at 2010-01-25 06:27:16
 
 
 
@@ -179,7 +179,7 @@ Updated patch updates one doctest.
 archive/issue_comments_069607.json:
 ```json
 {
-    "body": "Attachment\n\nI checked that the patch passes sage --testall, either with or without #8028.\n\nI checked that it does not break latex method for classical crystals or metapost method for fastcrystals. I think the latex changes are specific to\naffine crystals.\n\nThe patch does not seem to break anything, and fixes some problems. I recommend merging it.",
+    "body": "Attachment [trac_7978_crystal_cleanup-as.2.patch](tarball://root/attachments/some-uuid/ticket7978/trac_7978_crystal_cleanup-as.2.patch) by bump created at 2010-02-02 14:45:40\n\nI checked that the patch passes sage --testall, either with or without #8028.\n\nI checked that it does not break latex method for classical crystals or metapost method for fastcrystals. I think the latex changes are specific to\naffine crystals.\n\nThe patch does not seem to break anything, and fixes some problems. I recommend merging it.",
     "created_at": "2010-02-02T14:45:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7978",
     "type": "issue_comment",
@@ -188,7 +188,7 @@ archive/issue_comments_069607.json:
 }
 ```
 
-Attachment
+Attachment [trac_7978_crystal_cleanup-as.2.patch](tarball://root/attachments/some-uuid/ticket7978/trac_7978_crystal_cleanup-as.2.patch) by bump created at 2010-02-02 14:45:40
 
 I checked that the patch passes sage --testall, either with or without #8028.
 

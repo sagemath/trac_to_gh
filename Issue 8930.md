@@ -111,7 +111,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_082255.json:
 ```json
 {
-    "body": "Attachment\n\nSimple patch; does what it claims, and what it claims is good; pass tests; positive review!",
+    "body": "Attachment [trac_8930-enumerated_set_deprecate-fh.patch](tarball://root/attachments/some-uuid/ticket8930/trac_8930-enumerated_set_deprecate-fh.patch) by nthiery created at 2010-05-31 11:51:09\n\nSimple patch; does what it claims, and what it claims is good; pass tests; positive review!",
     "created_at": "2010-05-31T11:51:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8930",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_082255.json:
 }
 ```
 
-Attachment
+Attachment [trac_8930-enumerated_set_deprecate-fh.patch](tarball://root/attachments/some-uuid/ticket8930/trac_8930-enumerated_set_deprecate-fh.patch) by nthiery created at 2010-05-31 11:51:09
 
 Simple patch; does what it claims, and what it claims is good; pass tests; positive review!
 

@@ -47,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5637
 archive/issue_comments_044021.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [html-math-delimiters.patch](tarball://root/attachments/some-uuid/ticket5637/html-math-delimiters.patch) by jhpalmieri created at 2009-03-30 00:58:05",
     "created_at": "2009-03-30T00:58:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5637",
     "type": "issue_comment",
@@ -56,7 +56,7 @@ archive/issue_comments_044021.json:
 }
 ```
 
-Attachment
+Attachment [html-math-delimiters.patch](tarball://root/attachments/some-uuid/ticket5637/html-math-delimiters.patch) by jhpalmieri created at 2009-03-30 00:58:05
 
 
 

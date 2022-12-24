@@ -113,7 +113,7 @@ If we insist on having an arrow, it seems to make more sense to do a \mapsto arr
 archive/issue_comments_057506.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6954-latex_dict.patch](tarball://root/attachments/some-uuid/ticket6954/trac_6954-latex_dict.patch) by whuss created at 2009-09-23 07:57:36",
     "created_at": "2009-09-23T07:57:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6954",
     "type": "issue_comment",
@@ -122,7 +122,7 @@ archive/issue_comments_057506.json:
 }
 ```
 
-Attachment
+Attachment [trac_6954-latex_dict.patch](tarball://root/attachments/some-uuid/ticket6954/trac_6954-latex_dict.patch) by whuss created at 2009-09-23 07:57:36
 
 
 
@@ -195,7 +195,7 @@ apply on top of the other patch
 archive/issue_comments_057510.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.  Apply both patches.",
+    "body": "Attachment [trac_6954-part2.patch](tarball://root/attachments/some-uuid/ticket6954/trac_6954-part2.patch) by mhansen created at 2009-09-26 04:43:54\n\nLooks good to me.  Apply both patches.",
     "created_at": "2009-09-26T04:43:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6954",
     "type": "issue_comment",
@@ -204,7 +204,7 @@ archive/issue_comments_057510.json:
 }
 ```
 
-Attachment
+Attachment [trac_6954-part2.patch](tarball://root/attachments/some-uuid/ticket6954/trac_6954-part2.patch) by mhansen created at 2009-09-26 04:43:54
 
 Looks good to me.  Apply both patches.
 

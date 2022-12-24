@@ -88,7 +88,7 @@ Changing status from new to needs_review.
 archive/issue_comments_088726.json:
 ```json
 {
-    "body": "Attachment\n\nBy the way, this spkg is not compressed, so if you want to manually extract it, type \"tar xf ...\" rather than \"tar jxf ...\".  (The uncompressed version ended up being a little smaller than the compressed one, and is faster to create and to uncompress.)",
+    "body": "Attachment [fortran20100626.patch](tarball://root/attachments/some-uuid/ticket9346/fortran20100626.patch) by jhpalmieri created at 2010-06-26 23:24:39\n\nBy the way, this spkg is not compressed, so if you want to manually extract it, type \"tar xf ...\" rather than \"tar jxf ...\".  (The uncompressed version ended up being a little smaller than the compressed one, and is faster to create and to uncompress.)",
     "created_at": "2010-06-26T23:24:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9346",
     "type": "issue_comment",
@@ -97,7 +97,7 @@ archive/issue_comments_088726.json:
 }
 ```
 
-Attachment
+Attachment [fortran20100626.patch](tarball://root/attachments/some-uuid/ticket9346/fortran20100626.patch) by jhpalmieri created at 2010-06-26 23:24:39
 
 By the way, this spkg is not compressed, so if you want to manually extract it, type "tar xf ..." rather than "tar jxf ...".  (The uncompressed version ended up being a little smaller than the compressed one, and is faster to create and to uncompress.)
 

@@ -202,7 +202,7 @@ rebased on 4.3.rc0
 archive/issue_comments_064771.json:
 ```json
 {
-    "body": "Attachment\n\nJust caught a doctest failure in sage/rings/arith.py. Oops!",
+    "body": "Attachment [trac_7595.patch](tarball://root/attachments/some-uuid/ticket7595/trac_7595.patch) by rlm created at 2009-12-15 23:16:31\n\nJust caught a doctest failure in sage/rings/arith.py. Oops!",
     "created_at": "2009-12-15T23:16:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7595",
     "type": "issue_comment",
@@ -211,7 +211,7 @@ archive/issue_comments_064771.json:
 }
 ```
 
-Attachment
+Attachment [trac_7595.patch](tarball://root/attachments/some-uuid/ticket7595/trac_7595.patch) by rlm created at 2009-12-15 23:16:31
 
 Just caught a doctest failure in sage/rings/arith.py. Oops!
 
@@ -473,7 +473,7 @@ Exception raised:
 archive/issue_comments_064782.json:
 ```json
 {
-    "body": "Attachment\n\nShould fix the issues in quadratic_form__ternary_Tornaria.py",
+    "body": "Attachment [trac_7595-failures.patch](tarball://root/attachments/some-uuid/ticket7595/trac_7595-failures.patch) by rlm created at 2010-01-04 15:37:39\n\nShould fix the issues in quadratic_form__ternary_Tornaria.py",
     "created_at": "2010-01-04T15:37:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7595",
     "type": "issue_comment",
@@ -482,7 +482,7 @@ archive/issue_comments_064782.json:
 }
 ```
 
-Attachment
+Attachment [trac_7595-failures.patch](tarball://root/attachments/some-uuid/ticket7595/trac_7595-failures.patch) by rlm created at 2010-01-04 15:37:39
 
 Should fix the issues in quadratic_form__ternary_Tornaria.py
 

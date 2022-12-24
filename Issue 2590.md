@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2590
 archive/issue_comments_017724.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [zero-point-line.patch](tarball://root/attachments/some-uuid/ticket2590/zero-point-line.patch) by jason created at 2008-03-19 01:38:48",
     "created_at": "2008-03-19T01:38:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2590",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_017724.json:
 }
 ```
 
-Attachment
+Attachment [zero-point-line.patch](tarball://root/attachments/some-uuid/ticket2590/zero-point-line.patch) by jason created at 2008-03-19 01:38:48
 
 
 
@@ -53,7 +53,7 @@ Attachment
 archive/issue_comments_017725.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [plot_use_data.patch](tarball://root/attachments/some-uuid/ticket2590/plot_use_data.patch) by jason created at 2008-03-19 01:43:06",
     "created_at": "2008-03-19T01:43:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2590",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_017725.json:
 }
 ```
 
-Attachment
+Attachment [plot_use_data.patch](tarball://root/attachments/some-uuid/ticket2590/plot_use_data.patch) by jason created at 2008-03-19 01:43:06
 
 
 
@@ -124,7 +124,7 @@ Michael
 archive/issue_comments_017727.json:
 ```json
 {
-    "body": "Attachment\n\napply instead of plot_use_data.patch",
+    "body": "Attachment [plot_use_data-2.patch](tarball://root/attachments/some-uuid/ticket2590/plot_use_data-2.patch) by jason created at 2008-03-19 15:41:21\n\napply instead of plot_use_data.patch",
     "created_at": "2008-03-19T15:41:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2590",
     "type": "issue_comment",
@@ -133,7 +133,7 @@ archive/issue_comments_017727.json:
 }
 ```
 
-Attachment
+Attachment [plot_use_data-2.patch](tarball://root/attachments/some-uuid/ticket2590/plot_use_data-2.patch) by jason created at 2008-03-19 15:41:21
 
 apply instead of plot_use_data.patch
 
@@ -188,7 +188,7 @@ Michael
 archive/issue_comments_017730.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-2590-rebased.patch](tarball://root/attachments/some-uuid/ticket2590/trac-2590-rebased.patch) by jason created at 2008-04-09 04:22:31",
     "created_at": "2008-04-09T04:22:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2590",
     "type": "issue_comment",
@@ -197,7 +197,7 @@ archive/issue_comments_017730.json:
 }
 ```
 
-Attachment
+Attachment [trac-2590-rebased.patch](tarball://root/attachments/some-uuid/ticket2590/trac-2590-rebased.patch) by jason created at 2008-04-09 04:22:31
 
 
 

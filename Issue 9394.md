@@ -78,7 +78,7 @@ Changing status from new to needs_review.
 archive/issue_comments_089436.json:
 ```json
 {
-    "body": "Attachment\n\nWith the new pynac package at #9901, we have:\n\n\n```\nsage: var('n')\nn\nsage: t = 2*I*n*pi*x - 2*I*n*pi\nsage: latex(t)\n2 i \\, \\pi n x - 2 i \\, \\pi n\n```\n\n\nattachment:trac_9394-leading_minus.patch contains the doctest changes. The fixes in the printing of rational functions (for #9834) are also included in this patch.\n\nThe pynac package includes patches for #9834, #9878, #9879, #9881, #9900 as well as this ticket. See the ticket description of #9901 for the list (and order) of patches associated to the new version.",
+    "body": "Attachment [trac_9394-leading_minus.patch](tarball://root/attachments/some-uuid/ticket9394/trac_9394-leading_minus.patch) by burcin created at 2010-09-12 11:54:10\n\nWith the new pynac package at #9901, we have:\n\n\n```\nsage: var('n')\nn\nsage: t = 2*I*n*pi*x - 2*I*n*pi\nsage: latex(t)\n2 i \\, \\pi n x - 2 i \\, \\pi n\n```\n\n\nattachment:trac_9394-leading_minus.patch contains the doctest changes. The fixes in the printing of rational functions (for #9834) are also included in this patch.\n\nThe pynac package includes patches for #9834, #9878, #9879, #9881, #9900 as well as this ticket. See the ticket description of #9901 for the list (and order) of patches associated to the new version.",
     "created_at": "2010-09-12T11:54:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9394",
     "type": "issue_comment",
@@ -87,7 +87,7 @@ archive/issue_comments_089436.json:
 }
 ```
 
-Attachment
+Attachment [trac_9394-leading_minus.patch](tarball://root/attachments/some-uuid/ticket9394/trac_9394-leading_minus.patch) by burcin created at 2010-09-12 11:54:10
 
 With the new pynac package at #9901, we have:
 

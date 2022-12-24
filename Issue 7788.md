@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7788
 archive/issue_comments_067213.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [minor_change_lcalc-1.patch](tarball://root/attachments/some-uuid/ticket7788/minor_change_lcalc-1.patch) by rishi created at 2009-12-29 16:45:42",
     "created_at": "2009-12-29T16:45:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7788",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_067213.json:
 }
 ```
 
-Attachment
+Attachment [minor_change_lcalc-1.patch](tarball://root/attachments/some-uuid/ticket7788/minor_change_lcalc-1.patch) by rishi created at 2009-12-29 16:45:42
 
 
 
@@ -51,7 +51,7 @@ Attachment
 archive/issue_comments_067214.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [minor_change_lcalc-combined.patch](tarball://root/attachments/some-uuid/ticket7788/minor_change_lcalc-combined.patch) by rishi created at 2009-12-29 18:24:14",
     "created_at": "2009-12-29T18:24:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7788",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_067214.json:
 }
 ```
 
-Attachment
+Attachment [minor_change_lcalc-combined.patch](tarball://root/attachments/some-uuid/ticket7788/minor_change_lcalc-combined.patch) by rishi created at 2009-12-29 18:24:14
 
 
 

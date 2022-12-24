@@ -50,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7318
 archive/issue_comments_061143.json:
 ```json
 {
-    "body": "Attachment\n\nPreserve doc/en/introspect in sphinxify.  Apply to sagenb repository.",
+    "body": "Attachment [trac_7318-sphinxify_confdir.patch](tarball://root/attachments/some-uuid/ticket7318/trac_7318-sphinxify_confdir.patch) by mpatel created at 2009-10-27 03:22:14\n\nPreserve doc/en/introspect in sphinxify.  Apply to sagenb repository.",
     "created_at": "2009-10-27T03:22:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7318",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_061143.json:
 }
 ```
 
-Attachment
+Attachment [trac_7318-sphinxify_confdir.patch](tarball://root/attachments/some-uuid/ticket7318/trac_7318-sphinxify_confdir.patch) by mpatel created at 2009-10-27 03:22:14
 
 Preserve doc/en/introspect in sphinxify.  Apply to sagenb repository.
 

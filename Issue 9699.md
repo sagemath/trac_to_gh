@@ -69,7 +69,7 @@ Updated patch, it includes an example.
 archive/issue_comments_094296.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9699.patch](tarball://root/attachments/some-uuid/ticket9699/trac_9699.patch) by rlm created at 2010-08-07 11:58:53",
     "created_at": "2010-08-07T11:58:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9699",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_094296.json:
 }
 ```
 
-Attachment
+Attachment [trac_9699.patch](tarball://root/attachments/some-uuid/ticket9699/trac_9699.patch) by rlm created at 2010-08-07 11:58:53
 
 
 
@@ -105,7 +105,7 @@ I wonder if the default for `barycentric` shouldn't be True instead of False. It
 archive/issue_comments_094298.json:
 ```json
 {
-    "body": "Attachment\n\nPlease apply instead of trac_9699.patch.",
+    "body": "Attachment [trac_9699_2.patch](tarball://root/attachments/some-uuid/ticket9699/trac_9699_2.patch) by fidelbarrera created at 2010-08-08 01:59:45\n\nPlease apply instead of trac_9699.patch.",
     "created_at": "2010-08-08T01:59:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9699",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_094298.json:
 }
 ```
 
-Attachment
+Attachment [trac_9699_2.patch](tarball://root/attachments/some-uuid/ticket9699/trac_9699_2.patch) by fidelbarrera created at 2010-08-08 01:59:45
 
 Please apply instead of trac_9699.patch.
 
@@ -282,7 +282,7 @@ Nathann
 archive/issue_comments_094306.json:
 ```json
 {
-    "body": "Attachment\n\nPlease apply instead of previous patches.",
+    "body": "Attachment [trac_9699_3.patch](tarball://root/attachments/some-uuid/ticket9699/trac_9699_3.patch) by fidelbarrera created at 2010-09-22 04:06:46\n\nPlease apply instead of previous patches.",
     "created_at": "2010-09-22T04:06:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9699",
     "type": "issue_comment",
@@ -291,7 +291,7 @@ archive/issue_comments_094306.json:
 }
 ```
 
-Attachment
+Attachment [trac_9699_3.patch](tarball://root/attachments/some-uuid/ticket9699/trac_9699_3.patch) by fidelbarrera created at 2010-09-22 04:06:46
 
 Please apply instead of previous patches.
 
@@ -357,7 +357,7 @@ Nathann
 archive/issue_comments_094309.json:
 ```json
 {
-    "body": "Attachment\n\nDoctest fail:\n\n\n```\nsage -t -long ./sage/graphs/generic_graph.py\n**********************************************************************\nFile \"/home/rlmill/sage-4.6/devel/sage-main/sage/graphs/generic_graph.py\", line 2620:\n    sage: g.layout(layout = \"planar\", save_pos = True)\nExpected:\n    {0: [1, 1], 1: [2, 2], 2: [3, 2], 3: [1, 4], 4: [5, 1], 5: [0, 5], 6: [1, 0]}\nGot:\n    {0: (-0.433012701892, -0.25), 1: (1.11022302463e-16, -7.40148683083e-17), 2: (0.144337567297, 0.25), 3: (0.433012701892, -0.25), 4: [0.0, 1.0], 5: [0.866025403784, -0.5], 6: [-0.866025403784, -0.5]}\n**********************************************************************\n```\n\n\nAlso, all of the positions should be the same format: here some are tuples and others are lists.",
+    "body": "Attachment [trac_9699 - docstring fixes.patch](tarball://root/attachments/some-uuid/ticket9699/trac_9699 - docstring fixes.patch) by rlm created at 2010-11-11 13:15:42\n\nDoctest fail:\n\n\n```\nsage -t -long ./sage/graphs/generic_graph.py\n**********************************************************************\nFile \"/home/rlmill/sage-4.6/devel/sage-main/sage/graphs/generic_graph.py\", line 2620:\n    sage: g.layout(layout = \"planar\", save_pos = True)\nExpected:\n    {0: [1, 1], 1: [2, 2], 2: [3, 2], 3: [1, 4], 4: [5, 1], 5: [0, 5], 6: [1, 0]}\nGot:\n    {0: (-0.433012701892, -0.25), 1: (1.11022302463e-16, -7.40148683083e-17), 2: (0.144337567297, 0.25), 3: (0.433012701892, -0.25), 4: [0.0, 1.0], 5: [0.866025403784, -0.5], 6: [-0.866025403784, -0.5]}\n**********************************************************************\n```\n\n\nAlso, all of the positions should be the same format: here some are tuples and others are lists.",
     "created_at": "2010-11-11T13:15:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9699",
     "type": "issue_comment",
@@ -366,7 +366,7 @@ archive/issue_comments_094309.json:
 }
 ```
 
-Attachment
+Attachment [trac_9699 - docstring fixes.patch](tarball://root/attachments/some-uuid/ticket9699/trac_9699 - docstring fixes.patch) by rlm created at 2010-11-11 13:15:42
 
 Doctest fail:
 
@@ -411,7 +411,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_094311.json:
 ```json
 {
-    "body": "Attachment\n\nPlease apply instead of previous patches.",
+    "body": "Attachment [trac_9699_4.patch](tarball://root/attachments/some-uuid/ticket9699/trac_9699_4.patch) by fidelbarrera created at 2010-11-21 04:01:01\n\nPlease apply instead of previous patches.",
     "created_at": "2010-11-21T04:01:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9699",
     "type": "issue_comment",
@@ -420,7 +420,7 @@ archive/issue_comments_094311.json:
 }
 ```
 
-Attachment
+Attachment [trac_9699_4.patch](tarball://root/attachments/some-uuid/ticket9699/trac_9699_4.patch) by fidelbarrera created at 2010-11-21 04:01:01
 
 Please apply instead of previous patches.
 
@@ -636,7 +636,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_094322.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:17 rlm]: \n> Jeroen is right. You should replace things like `0.866025403784` with `0.86...` so that numerical issues don't crop up. \n\nReplaced things like `0.866025403784` with `0.86...`.\n\nPlease see trac_9699_5.patch instead of previous versions.",
+    "body": "Attachment [trac_9699_5.patch](tarball://root/attachments/some-uuid/ticket9699/trac_9699_5.patch) by fidelbarrera created at 2010-11-27 04:33:49\n\nReplying to [comment:17 rlm]: \n> Jeroen is right. You should replace things like `0.866025403784` with `0.86...` so that numerical issues don't crop up. \n\nReplaced things like `0.866025403784` with `0.86...`.\n\nPlease see trac_9699_5.patch instead of previous versions.",
     "created_at": "2010-11-27T04:33:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9699",
     "type": "issue_comment",
@@ -645,7 +645,7 @@ archive/issue_comments_094322.json:
 }
 ```
 
-Attachment
+Attachment [trac_9699_5.patch](tarball://root/attachments/some-uuid/ticket9699/trac_9699_5.patch) by fidelbarrera created at 2010-11-27 04:33:49
 
 Replying to [comment:17 rlm]: 
 > Jeroen is right. You should replace things like `0.866025403784` with `0.86...` so that numerical issues don't crop up. 

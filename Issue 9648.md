@@ -114,7 +114,7 @@ Changing status from new to needs_review.
 archive/issue_comments_093556.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9648_modulemorphism_codomain_extension.patch](tarball://root/attachments/some-uuid/ticket9648/trac_9648_modulemorphism_codomain_extension.patch) by stumpc5 created at 2010-07-30 18:24:09",
     "created_at": "2010-07-30T18:24:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9648",
     "type": "issue_comment",
@@ -123,7 +123,7 @@ archive/issue_comments_093556.json:
 }
 ```
 
-Attachment
+Attachment [trac_9648_modulemorphism_codomain_extension.patch](tarball://root/attachments/some-uuid/ticket9648/trac_9648_modulemorphism_codomain_extension.patch) by stumpc5 created at 2010-07-30 18:24:09
 
 
 
@@ -168,7 +168,7 @@ I did the review with Christian here at FPSAC. Patch ready to go up to a final p
 archive/issue_comments_093559.json:
 ```json
 {
-    "body": "Attachment\n\nAdded a test after request by Florent. Apply only this one.",
+    "body": "Attachment [trac_9648_modulemorphism_codomain_extension.2.patch](tarball://root/attachments/some-uuid/ticket9648/trac_9648_modulemorphism_codomain_extension.2.patch) by nthiery created at 2010-08-06 00:04:52\n\nAdded a test after request by Florent. Apply only this one.",
     "created_at": "2010-08-06T00:04:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9648",
     "type": "issue_comment",
@@ -177,7 +177,7 @@ archive/issue_comments_093559.json:
 }
 ```
 
-Attachment
+Attachment [trac_9648_modulemorphism_codomain_extension.2.patch](tarball://root/attachments/some-uuid/ticket9648/trac_9648_modulemorphism_codomain_extension.2.patch) by nthiery created at 2010-08-06 00:04:52
 
 Added a test after request by Florent. Apply only this one.
 
@@ -311,7 +311,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_093565.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9648_modulemorphism_codomain_extension-cs.patch](tarball://root/attachments/some-uuid/ticket9648/trac_9648_modulemorphism_codomain_extension-cs.patch) by stumpc5 created at 2010-11-01 00:30:37",
     "created_at": "2010-11-01T00:30:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9648",
     "type": "issue_comment",
@@ -320,7 +320,7 @@ archive/issue_comments_093565.json:
 }
 ```
 
-Attachment
+Attachment [trac_9648_modulemorphism_codomain_extension-cs.patch](tarball://root/attachments/some-uuid/ticket9648/trac_9648_modulemorphism_codomain_extension-cs.patch) by stumpc5 created at 2010-11-01 00:30:37
 
 
 
@@ -403,7 +403,7 @@ Resolution: fixed
 archive/issue_comments_093570.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9648_doc_fixes.patch](tarball://root/attachments/some-uuid/ticket9648/9648_doc_fixes.patch) by jdemeyer created at 2010-11-01 21:43:38",
     "created_at": "2010-11-01T21:43:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9648",
     "type": "issue_comment",
@@ -412,4 +412,4 @@ archive/issue_comments_093570.json:
 }
 ```
 
-Attachment
+Attachment [9648_doc_fixes.patch](tarball://root/attachments/some-uuid/ticket9648/9648_doc_fixes.patch) by jdemeyer created at 2010-11-01 21:43:38

@@ -69,7 +69,7 @@ Changing status from new to needs_review.
 archive/issue_comments_072385.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8208-publish_buttons.patch](tarball://root/attachments/some-uuid/ticket8208/trac_8208-publish_buttons.patch) by mpatel created at 2010-02-07 16:22:37",
     "created_at": "2010-02-07T16:22:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8208",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_072385.json:
 }
 ```
 
-Attachment
+Attachment [trac_8208-publish_buttons.patch](tarball://root/attachments/some-uuid/ticket8208/trac_8208-publish_buttons.patch) by mpatel created at 2010-02-07 16:22:37
 
 
 
@@ -282,7 +282,7 @@ OK
 archive/issue_comments_072393.json:
 ```json
 {
-    "body": "Attachment\n\nChanges buttons to inputs and adds a Selenium test",
+    "body": "Attachment [trac_8208-no-publish.patch](tarball://root/attachments/some-uuid/ticket8208/trac_8208-no-publish.patch) by acleone created at 2010-02-07 23:14:46\n\nChanges buttons to inputs and adds a Selenium test",
     "created_at": "2010-02-07T23:14:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8208",
     "type": "issue_comment",
@@ -291,7 +291,7 @@ archive/issue_comments_072393.json:
 }
 ```
 
-Attachment
+Attachment [trac_8208-no-publish.patch](tarball://root/attachments/some-uuid/ticket8208/trac_8208-no-publish.patch) by acleone created at 2010-02-07 23:14:46
 
 Changes buttons to inputs and adds a Selenium test
 

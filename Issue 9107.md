@@ -468,7 +468,7 @@ Actually here it is even worse. The text is documentation of a functorial constr
 archive/issue_comments_084635.json:
 ```json
 {
-    "body": "Attachment\n\nFix a cross reference in some functorial construction",
+    "body": "Attachment [trac_9107_fix_cross_reference.patch](tarball://root/attachments/some-uuid/ticket9107/trac_9107_fix_cross_reference.patch) by SimonKing created at 2013-01-19 21:12:29\n\nFix a cross reference in some functorial construction",
     "created_at": "2013-01-19T21:12:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -477,7 +477,7 @@ archive/issue_comments_084635.json:
 }
 ```
 
-Attachment
+Attachment [trac_9107_fix_cross_reference.patch](tarball://root/attachments/some-uuid/ticket9107/trac_9107_fix_cross_reference.patch) by SimonKing created at 2013-01-19 21:12:29
 
 Fix a cross reference in some functorial construction
 
@@ -658,7 +658,7 @@ However, there is continuation by `...` that needs fixing.
 archive/issue_comments_084645.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac9107_nesting_nested_classes.patch](tarball://root/attachments/some-uuid/ticket9107/trac9107_nesting_nested_classes.patch) by SimonKing created at 2013-05-22 12:56:57",
     "created_at": "2013-05-22T12:56:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -667,7 +667,7 @@ archive/issue_comments_084645.json:
 }
 ```
 
-Attachment
+Attachment [trac9107_nesting_nested_classes.patch](tarball://root/attachments/some-uuid/ticket9107/trac9107_nesting_nested_classes.patch) by SimonKing created at 2013-05-22 12:56:57
 
 
 
@@ -1342,7 +1342,7 @@ Cheers,
 archive/issue_comments_084667.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [test-deep-itemize-nesting.tex](tarball://root/attachments/some-uuid/ticket9107/test-deep-itemize-nesting.tex) by nthiery created at 2013-08-23 08:53:11",
     "created_at": "2013-08-23T08:53:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -1351,7 +1351,7 @@ archive/issue_comments_084667.json:
 }
 ```
 
-Attachment
+Attachment [test-deep-itemize-nesting.tex](tarball://root/attachments/some-uuid/ticket9107/test-deep-itemize-nesting.tex) by nthiery created at 2013-08-23 08:53:11
 
 
 
@@ -1527,7 +1527,7 @@ For the record: someone else got a similar issue when using sphinx [1], and sugg
 archive/issue_comments_084676.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [categories.tex](tarball://root/attachments/some-uuid/ticket9107/categories.tex) by nthiery created at 2013-08-27 11:05:54",
     "created_at": "2013-08-27T11:05:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -1536,7 +1536,7 @@ archive/issue_comments_084676.json:
 }
 ```
 
-Attachment
+Attachment [categories.tex](tarball://root/attachments/some-uuid/ticket9107/categories.tex) by nthiery created at 2013-08-27 11:05:54
 
 
 
@@ -1863,7 +1863,7 @@ Output of pdflatex after doing setlistdept(10) in categories.tex
 archive/issue_comments_084688.json:
 ```json
 {
-    "body": "Attachment\n\nWell, it does compile, but it does not work. Look at the ugly output in [attachment:categories.pdf].",
+    "body": "Attachment [categories.pdf](tarball://root/attachments/some-uuid/ticket9107/categories.pdf) by SimonKing created at 2013-08-28 10:45:27\n\nWell, it does compile, but it does not work. Look at the ugly output in [attachment:categories.pdf].",
     "created_at": "2013-08-28T10:45:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -1872,7 +1872,7 @@ archive/issue_comments_084688.json:
 }
 ```
 
-Attachment
+Attachment [categories.pdf](tarball://root/attachments/some-uuid/ticket9107/categories.pdf) by SimonKing created at 2013-08-28 10:45:27
 
 Well, it does compile, but it does not work. Look at the ugly output in [attachment:categories.pdf].
 

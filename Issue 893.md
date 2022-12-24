@@ -87,7 +87,7 @@ Now one does L = E.Lseries(), and there is a method
 archive/issue_comments_005500.json:
 ```json
 {
-    "body": "Attachment\n\nText patch fixing the doctest",
+    "body": "Attachment [trac893.patch](tarball://root/attachments/some-uuid/ticket893/trac893.patch) by roed created at 2007-10-14 03:08:13\n\nText patch fixing the doctest",
     "created_at": "2007-10-14T03:08:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/893",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_005500.json:
 }
 ```
 
-Attachment
+Attachment [trac893.patch](tarball://root/attachments/some-uuid/ticket893/trac893.patch) by roed created at 2007-10-14 03:08:13
 
 Text patch fixing the doctest
 

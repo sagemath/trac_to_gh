@@ -53,7 +53,7 @@ When using this on the server, are the temp files properly cleaned up?  But this
 archive/issue_comments_049987.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-6259.patch](tarball://root/attachments/some-uuid/ticket6259/trac-6259.patch) by craigcitro created at 2009-06-12 07:54:38",
     "created_at": "2009-06-12T07:54:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6259",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_049987.json:
 }
 ```
 
-Attachment
+Attachment [trac-6259.patch](tarball://root/attachments/some-uuid/ticket6259/trac-6259.patch) by craigcitro created at 2009-06-12 07:54:38
 
 
 

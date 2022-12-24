@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8038
 archive/issue_comments_070217.json:
 ```json
 {
-    "body": "Attachment\n\nPatch up, please review. I tested this in a separate script, as I don't know how to run doctests for the notebook. But it's just running a regexp test on a string, so It Should Work.\n\nOne issue is that we are still rejecting a lot of valid email addresses: http://tools.ietf.org/html/rfc3696#section-3. But we are accepting some invalid addresses, since we're not checking for maximum length, or two consective periods, or beginning with a period, or...\n\nPersonally, coming up a regexp that exactly captures the RFC's requirements is a rabbit hole I don't want to go down, but if anyone else wants to try, feel free to upload a patch!",
+    "body": "Attachment [trac_8038.patch](tarball://root/attachments/some-uuid/ticket8038/trac_8038.patch) by ddrake created at 2010-01-22 07:32:03\n\nPatch up, please review. I tested this in a separate script, as I don't know how to run doctests for the notebook. But it's just running a regexp test on a string, so It Should Work.\n\nOne issue is that we are still rejecting a lot of valid email addresses: http://tools.ietf.org/html/rfc3696#section-3. But we are accepting some invalid addresses, since we're not checking for maximum length, or two consective periods, or beginning with a period, or...\n\nPersonally, coming up a regexp that exactly captures the RFC's requirements is a rabbit hole I don't want to go down, but if anyone else wants to try, feel free to upload a patch!",
     "created_at": "2010-01-22T07:32:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8038",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_070217.json:
 }
 ```
 
-Attachment
+Attachment [trac_8038.patch](tarball://root/attachments/some-uuid/ticket8038/trac_8038.patch) by ddrake created at 2010-01-22 07:32:03
 
 Patch up, please review. I tested this in a separate script, as I don't know how to run doctests for the notebook. But it's just running a regexp test on a string, so It Should Work.
 
@@ -145,7 +145,7 @@ It seems the main remaining sources of false negatives in `is_valid_email` are
 archive/issue_comments_070222.json:
 ```json
 {
-    "body": "Attachment\n\nUnquoted local-parts, no `..`, short domains.  Replaces previous.",
+    "body": "Attachment [trac_8038-email_plus_addressing.patch](tarball://root/attachments/some-uuid/ticket8038/trac_8038-email_plus_addressing.patch) by mpatel created at 2010-01-23 19:47:46\n\nUnquoted local-parts, no `..`, short domains.  Replaces previous.",
     "created_at": "2010-01-23T19:47:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8038",
     "type": "issue_comment",
@@ -154,7 +154,7 @@ archive/issue_comments_070222.json:
 }
 ```
 
-Attachment
+Attachment [trac_8038-email_plus_addressing.patch](tarball://root/attachments/some-uuid/ticket8038/trac_8038-email_plus_addressing.patch) by mpatel created at 2010-01-23 19:47:46
 
 Unquoted local-parts, no `..`, short domains.  Replaces previous.
 
@@ -286,7 +286,7 @@ More tests.  Replaces previous.
 archive/issue_comments_070227.json:
 ```json
 {
-    "body": "Attachment\n\nThanks for the explanation about the period (\"`\\.`\"). I see that you are preventing two periods in a row.\n\nYour changes look good. I applied the most recent patch and it passes doctests. Somehow I feel like a reviewer now, although I filed this ticket, so I think we need someone else to review it!",
+    "body": "Attachment [trac_8038-email_plus_addressing_v2.patch](tarball://root/attachments/some-uuid/ticket8038/trac_8038-email_plus_addressing_v2.patch) by ddrake created at 2010-01-24 05:41:44\n\nThanks for the explanation about the period (\"`\\.`\"). I see that you are preventing two periods in a row.\n\nYour changes look good. I applied the most recent patch and it passes doctests. Somehow I feel like a reviewer now, although I filed this ticket, so I think we need someone else to review it!",
     "created_at": "2010-01-24T05:41:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8038",
     "type": "issue_comment",
@@ -295,7 +295,7 @@ archive/issue_comments_070227.json:
 }
 ```
 
-Attachment
+Attachment [trac_8038-email_plus_addressing_v2.patch](tarball://root/attachments/some-uuid/ticket8038/trac_8038-email_plus_addressing_v2.patch) by ddrake created at 2010-01-24 05:41:44
 
 Thanks for the explanation about the period ("`\.`"). I see that you are preventing two periods in a row.
 
@@ -387,7 +387,7 @@ Changing assignee from was to ddrake.
 archive/issue_comments_070232.json:
 ```json
 {
-    "body": "Attachment\n\nAdd custom test from notebook settings.  Replaces previous.",
+    "body": "Attachment [trac_8038-email_plus_addressing_v3.patch](tarball://root/attachments/some-uuid/ticket8038/trac_8038-email_plus_addressing_v3.patch) by mpatel created at 2010-01-27 12:13:17\n\nAdd custom test from notebook settings.  Replaces previous.",
     "created_at": "2010-01-27T12:13:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8038",
     "type": "issue_comment",
@@ -396,7 +396,7 @@ archive/issue_comments_070232.json:
 }
 ```
 
-Attachment
+Attachment [trac_8038-email_plus_addressing_v3.patch](tarball://root/attachments/some-uuid/ticket8038/trac_8038-email_plus_addressing_v3.patch) by mpatel created at 2010-01-27 12:13:17
 
 Add custom test from notebook settings.  Replaces previous.
 

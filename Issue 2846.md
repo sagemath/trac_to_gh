@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2846
 archive/issue_comments_019530.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2846-bitset-no-h.patch](tarball://root/attachments/some-uuid/ticket2846/2846-bitset-no-h.patch) by robertwb created at 2008-04-07 18:37:41",
     "created_at": "2008-04-07T18:37:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2846",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_019530.json:
 }
 ```
 
-Attachment
+Attachment [2846-bitset-no-h.patch](tarball://root/attachments/some-uuid/ticket2846/2846-bitset-no-h.patch) by robertwb created at 2008-04-07 18:37:41
 
 
 

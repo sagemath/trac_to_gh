@@ -163,7 +163,7 @@ I like the new design and class/function names.
 archive/issue_comments_050691.json:
 ```json
 {
-    "body": "Attachment\n\nOops, the doctests were broken (I had forgotten to rename stuff in there)",
+    "body": "Attachment [trac_6343-sage_object-test-nt.patch](tarball://root/attachments/some-uuid/ticket6343/trac_6343-sage_object-test-nt.patch) by nthiery created at 2009-07-10 22:27:48\n\nOops, the doctests were broken (I had forgotten to rename stuff in there)",
     "created_at": "2009-07-10T22:27:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6343",
     "type": "issue_comment",
@@ -172,7 +172,7 @@ archive/issue_comments_050691.json:
 }
 ```
 
-Attachment
+Attachment [trac_6343-sage_object-test-nt.patch](tarball://root/attachments/some-uuid/ticket6343/trac_6343-sage_object-test-nt.patch) by nthiery created at 2009-07-10 22:27:48
 
 Oops, the doctests were broken (I had forgotten to rename stuff in there)
 
@@ -256,7 +256,7 @@ reviewer patch; fixes typos and docstring formatting
 archive/issue_comments_050696.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch `trac_6343-reviewer.patch` fixes some typos and copy the docstring for `__init__()` in the class `InstanceTester` to the class itself. This is necessary as docstring in methods whose names begin with an underscore (i.e. `_`) would not show up in the reference manual.\n\n\n\nApart from that, here's a small issue. Can you provide examples and/or tests for the function `_test_pickling()` in `sage/structure/sage_object.pyx`? The doctest coverage for `sage/structure/sage_object.pyx` is very short of 50% and we don't want to make it more difficult to reach 100% coverage.",
+    "body": "Attachment [trac_6343-reviewer.patch](tarball://root/attachments/some-uuid/ticket6343/trac_6343-reviewer.patch) by mvngu created at 2009-07-16 23:59:47\n\nThe patch `trac_6343-reviewer.patch` fixes some typos and copy the docstring for `__init__()` in the class `InstanceTester` to the class itself. This is necessary as docstring in methods whose names begin with an underscore (i.e. `_`) would not show up in the reference manual.\n\n\n\nApart from that, here's a small issue. Can you provide examples and/or tests for the function `_test_pickling()` in `sage/structure/sage_object.pyx`? The doctest coverage for `sage/structure/sage_object.pyx` is very short of 50% and we don't want to make it more difficult to reach 100% coverage.",
     "created_at": "2009-07-16T23:59:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6343",
     "type": "issue_comment",
@@ -265,7 +265,7 @@ archive/issue_comments_050696.json:
 }
 ```
 
-Attachment
+Attachment [trac_6343-reviewer.patch](tarball://root/attachments/some-uuid/ticket6343/trac_6343-reviewer.patch) by mvngu created at 2009-07-16 23:59:47
 
 The patch `trac_6343-reviewer.patch` fixes some typos and copy the docstring for `__init__()` in the class `InstanceTester` to the class itself. This is necessary as docstring in methods whose names begin with an underscore (i.e. `_`) would not show up in the reference manual.
 
@@ -280,7 +280,7 @@ Apart from that, here's a small issue. Can you provide examples and/or tests for
 archive/issue_comments_050697.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:13 mvngu]:\n> The patch `trac_6343-reviewer.patch` fixes some typos and copy the docstring for `__init__()` in the class `InstanceTester` to the class itself. This is necessary as docstring in methods whose names begin with an underscore (i.e. `_`) would not show up in the reference manual.\n\nAgreed, that's better (but not for that argument: my opinion is that _* methods, or at least _*_ and __*__ methods should show up in the manual; but that's another discussion).\n\nThanks for your doc fixes! I double checked them.\n\n> Apart from that, here's a small issue. Can you provide examples and/or tests for the function `_test_pickling()` in `sage/structure/sage_object.pyx`? The doctest coverage for `sage/structure/sage_object.pyx` is very short of 50% and we don't want to make it more difficult to reach 100% coverage.\n\nThanks also for spotting the missing doctest. The attached patch fixes this.",
+    "body": "Attachment [trac_6343-reviewer-nt.patch](tarball://root/attachments/some-uuid/ticket6343/trac_6343-reviewer-nt.patch) by nthiery created at 2009-07-20 23:23:40\n\nReplying to [comment:13 mvngu]:\n> The patch `trac_6343-reviewer.patch` fixes some typos and copy the docstring for `__init__()` in the class `InstanceTester` to the class itself. This is necessary as docstring in methods whose names begin with an underscore (i.e. `_`) would not show up in the reference manual.\n\nAgreed, that's better (but not for that argument: my opinion is that _* methods, or at least _*_ and __*__ methods should show up in the manual; but that's another discussion).\n\nThanks for your doc fixes! I double checked them.\n\n> Apart from that, here's a small issue. Can you provide examples and/or tests for the function `_test_pickling()` in `sage/structure/sage_object.pyx`? The doctest coverage for `sage/structure/sage_object.pyx` is very short of 50% and we don't want to make it more difficult to reach 100% coverage.\n\nThanks also for spotting the missing doctest. The attached patch fixes this.",
     "created_at": "2009-07-20T23:23:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6343",
     "type": "issue_comment",
@@ -289,7 +289,7 @@ archive/issue_comments_050697.json:
 }
 ```
 
-Attachment
+Attachment [trac_6343-reviewer-nt.patch](tarball://root/attachments/some-uuid/ticket6343/trac_6343-reviewer-nt.patch) by nthiery created at 2009-07-20 23:23:40
 
 Replying to [comment:13 mvngu]:
 > The patch `trac_6343-reviewer.patch` fixes some typos and copy the docstring for `__init__()` in the class `InstanceTester` to the class itself. This is necessary as docstring in methods whose names begin with an underscore (i.e. `_`) would not show up in the reference manual.

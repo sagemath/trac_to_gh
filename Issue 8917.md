@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8917
 archive/issue_comments_082131.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8917_docfix_magmas_produc_from_element_class_mul.patch](tarball://root/attachments/some-uuid/ticket8917/8917_docfix_magmas_produc_from_element_class_mul.patch) by mrobado created at 2010-05-07 16:34:59",
     "created_at": "2010-05-07T16:34:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8917",
     "type": "issue_comment",
@@ -53,7 +53,7 @@ archive/issue_comments_082131.json:
 }
 ```
 
-Attachment
+Attachment [8917_docfix_magmas_produc_from_element_class_mul.patch](tarball://root/attachments/some-uuid/ticket8917/8917_docfix_magmas_produc_from_element_class_mul.patch) by mrobado created at 2010-05-07 16:34:59
 
 
 

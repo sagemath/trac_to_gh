@@ -247,7 +247,7 @@ Screenshot of double integral
 archive/issue_comments_095801.json:
 ```json
 {
-    "body": "Attachment\n\nScreenshot of matrix",
+    "body": "Attachment [mathjax-matrix-20110322.png](tarball://root/attachments/some-uuid/ticket9774/mathjax-matrix-20110322.png) by rbeezer created at 2011-03-22 22:49:31\n\nScreenshot of matrix",
     "created_at": "2011-03-22T22:49:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
@@ -256,7 +256,7 @@ archive/issue_comments_095801.json:
 }
 ```
 
-Attachment
+Attachment [mathjax-matrix-20110322.png](tarball://root/attachments/some-uuid/ticket9774/mathjax-matrix-20110322.png) by rbeezer created at 2011-03-22 22:49:31
 
 Screenshot of matrix
 
@@ -375,7 +375,7 @@ I'm attaching a draft of a patch for the Sage library.  The integration with Sph
 archive/issue_comments_095804.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9774-mathjax-flask-notebook.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-flask-notebook.patch) by rbeezer created at 2011-06-16 03:25:09",
     "created_at": "2011-06-16T03:25:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
@@ -384,7 +384,7 @@ archive/issue_comments_095804.json:
 }
 ```
 
-Attachment
+Attachment [trac_9774-mathjax-flask-notebook.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-flask-notebook.patch) by rbeezer created at 2011-06-16 03:25:09
 
 
 
@@ -498,7 +498,7 @@ Don't we need the actual MathJax spkg or files somewhere?  Rob: do you have inst
 archive/issue_comments_095809.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9774-mathjax-flask-notebook-file-add.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-flask-notebook-file-add.patch) by rbeezer created at 2011-06-16 05:30:09",
     "created_at": "2011-06-16T05:30:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
@@ -507,7 +507,7 @@ archive/issue_comments_095809.json:
 }
 ```
 
-Attachment
+Attachment [trac_9774-mathjax-flask-notebook-file-add.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-flask-notebook-file-add.patch) by rbeezer created at 2011-06-16 05:30:09
 
 
 
@@ -627,7 +627,7 @@ I get an error from the line: `response = make_response(render_template('js/math
 archive/issue_comments_095815.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9774-mathjax-flask-notebook-file-add-two.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-flask-notebook-file-add-two.patch) by rbeezer created at 2011-06-16 06:33:03",
     "created_at": "2011-06-16T06:33:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
@@ -636,7 +636,7 @@ archive/issue_comments_095815.json:
 }
 ```
 
-Attachment
+Attachment [trac_9774-mathjax-flask-notebook-file-add-two.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-flask-notebook-file-add-two.patch) by rbeezer created at 2011-06-16 06:33:03
 
 
 
@@ -708,7 +708,7 @@ apply to sagenb repository; apply on top of previous patches
 archive/issue_comments_095819.json:
 ```json
 {
-    "body": "Attachment\n\nThe problem with the Sage notebook code intercepting (and evaluating) the contents of `<script>,</script>` tags can probably be rectified in one, or both, of the functions of the Flask notebook:\n\n\n```\nIn sagenb/data/sage/js/notebook_lib.js:\n\neval_script_tags\nseparate_script_tags\n```\n",
+    "body": "Attachment [trac_9774-mathjax-flask-eval-script.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-flask-eval-script.patch) by rbeezer created at 2011-06-17 17:37:44\n\nThe problem with the Sage notebook code intercepting (and evaluating) the contents of `<script>,</script>` tags can probably be rectified in one, or both, of the functions of the Flask notebook:\n\n\n```\nIn sagenb/data/sage/js/notebook_lib.js:\n\neval_script_tags\nseparate_script_tags\n```\n",
     "created_at": "2011-06-17T17:37:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
@@ -717,7 +717,7 @@ archive/issue_comments_095819.json:
 }
 ```
 
-Attachment
+Attachment [trac_9774-mathjax-flask-eval-script.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-flask-eval-script.patch) by rbeezer created at 2011-06-17 17:37:44
 
 The problem with the Sage notebook code intercepting (and evaluating) the contents of `<script>,</script>` tags can probably be rectified in one, or both, of the functions of the Flask notebook:
 
@@ -916,7 +916,7 @@ Here's a new version of my patch.  With a locally installed version of MathJax, 
 archive/issue_comments_095827.json:
 ```json
 {
-    "body": "Attachment\n\n(experimental) patch for Sage library",
+    "body": "Attachment [mathjax.patch](tarball://root/attachments/some-uuid/ticket9774/mathjax.patch) by jhpalmieri created at 2011-07-01 02:22:35\n\n(experimental) patch for Sage library",
     "created_at": "2011-07-01T02:22:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
@@ -925,7 +925,7 @@ archive/issue_comments_095827.json:
 }
 ```
 
-Attachment
+Attachment [mathjax.patch](tarball://root/attachments/some-uuid/ticket9774/mathjax.patch) by jhpalmieri created at 2011-07-01 02:22:35
 
 (experimental) patch for Sage library
 
@@ -1100,7 +1100,7 @@ I'm attaching another version ("v2") of my patch; this one writes the MathJax lo
 archive/issue_comments_095834.json:
 ```json
 {
-    "body": "Attachment\n\n(experimental) patch for Sage library, alternate version",
+    "body": "Attachment [mathjax.v2.patch](tarball://root/attachments/some-uuid/ticket9774/mathjax.v2.patch) by jhpalmieri created at 2011-07-01 06:12:32\n\n(experimental) patch for Sage library, alternate version",
     "created_at": "2011-07-01T06:12:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
@@ -1109,7 +1109,7 @@ archive/issue_comments_095834.json:
 }
 ```
 
-Attachment
+Attachment [mathjax.v2.patch](tarball://root/attachments/some-uuid/ticket9774/mathjax.v2.patch) by jhpalmieri created at 2011-07-01 06:12:32
 
 (experimental) patch for Sage library, alternate version
 
@@ -1178,7 +1178,7 @@ Rebased version of comprehensive mathjax patch to 4.8.alpha4
 archive/issue_comments_095838.json:
 ```json
 {
-    "body": "Attachment\n\nApply only this patch",
+    "body": "Attachment [mathjax-try2.patch](tarball://root/attachments/some-uuid/ticket9774/mathjax-try2.patch) by jason created at 2012-01-12 23:16:31\n\nApply only this patch",
     "created_at": "2012-01-12T23:16:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
@@ -1187,7 +1187,7 @@ archive/issue_comments_095838.json:
 }
 ```
 
-Attachment
+Attachment [mathjax-try2.patch](tarball://root/attachments/some-uuid/ticket9774/mathjax-try2.patch) by jason created at 2012-01-12 23:16:31
 
 Apply only this patch
 
@@ -1234,7 +1234,7 @@ apply to **scripts** repository
 archive/issue_comments_095841.json:
 ```json
 {
-    "body": "Attachment\n\napply to **sage** repository",
+    "body": "Attachment [trac_9774-scripts-mathjax.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-scripts-mathjax.patch) by jason created at 2012-01-13 22:30:18\n\napply to **sage** repository",
     "created_at": "2012-01-13T22:30:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
@@ -1243,7 +1243,7 @@ archive/issue_comments_095841.json:
 }
 ```
 
-Attachment
+Attachment [trac_9774-scripts-mathjax.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-scripts-mathjax.patch) by jason created at 2012-01-13 22:30:18
 
 apply to **sage** repository
 
@@ -1254,7 +1254,7 @@ apply to **sage** repository
 archive/issue_comments_095842.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9774-mathjax-try3.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-try3.patch) by jason created at 2012-01-13 22:42:12",
     "created_at": "2012-01-13T22:42:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
@@ -1263,7 +1263,7 @@ archive/issue_comments_095842.json:
 }
 ```
 
-Attachment
+Attachment [trac_9774-mathjax-try3.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-try3.patch) by jason created at 2012-01-13 22:42:12
 
 
 
@@ -1344,7 +1344,7 @@ apply to $SAGE_ROOT/devel/sage
 archive/issue_comments_095847.json:
 ```json
 {
-    "body": "Attachment\n\nThe try3 patches were against alpha4.  Late last night I patched 5.0.beta1, and realized there were some patch failures, which I fixed.  I'll compare your rebase with mine.\n\nI also realized last night during dinner that I hadn't run doctests, so those should be run on sage and sagenb.  Thanks for checking this.",
+    "body": "Attachment [trac_9774-mathjax-try4.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-try4.patch) by jason created at 2012-01-14 14:42:49\n\nThe try3 patches were against alpha4.  Late last night I patched 5.0.beta1, and realized there were some patch failures, which I fixed.  I'll compare your rebase with mine.\n\nI also realized last night during dinner that I hadn't run doctests, so those should be run on sage and sagenb.  Thanks for checking this.",
     "created_at": "2012-01-14T14:42:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
@@ -1353,7 +1353,7 @@ archive/issue_comments_095847.json:
 }
 ```
 
-Attachment
+Attachment [trac_9774-mathjax-try4.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-try4.patch) by jason created at 2012-01-14 14:42:49
 
 The try3 patches were against alpha4.  Late last night I patched 5.0.beta1, and realized there were some patch failures, which I fixed.  I'll compare your rebase with mine.
 
@@ -1675,7 +1675,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_095861.json:
 ```json
 {
-    "body": "Attachment\n\nrebased patch to sage-5.1beta2.\n\nThere is however a very weird problem with mathjax, both 1.0 and 2.0 branches. The math is not rendered as long as the sagenb directory is under `DOT_SAGE`. To reproduce, try the steps below. Use any branch (mathjax-1 or mathjax-2) for instance jasongrout/mathjax (mathjax-1) in github.\n1. `mkdir /tmp/a`\n2. `DOT_SAGE=/tmp/a sage -n`.\n3. First, note that the above command launches the nb in port 8000 instead of 8080. But if we use some other command such as the one below, then it does open in port 8080.\n\n```\nsage -n directory=/tmp/a.sagenb\n```\n\n4. Open a new worksheet, and try to print latex, for instance run the command `view('?')`. You will get a js error popup saying (in Opera 12.00RC, and Opera-11.64)\n\n```\nSyntaxError: at index 0 in \"\\newcommand{\\Bold}[1]{\\mathbf{#1}}?\": invalid character escape sequence\n```\n\n\nIn firefox-10.0.4 I simply get the error: `SyntaxError: illegal character`. This error is not present if I run sage instead as `sage -n directory=/tmp/a.sagenb`, and the mathjax output is all good.",
+    "body": "Attachment [trac_9774-mathjax-try5.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-try5.patch) by ppurka created at 2012-06-09 10:05:13\n\nrebased patch to sage-5.1beta2.\n\nThere is however a very weird problem with mathjax, both 1.0 and 2.0 branches. The math is not rendered as long as the sagenb directory is under `DOT_SAGE`. To reproduce, try the steps below. Use any branch (mathjax-1 or mathjax-2) for instance jasongrout/mathjax (mathjax-1) in github.\n1. `mkdir /tmp/a`\n2. `DOT_SAGE=/tmp/a sage -n`.\n3. First, note that the above command launches the nb in port 8000 instead of 8080. But if we use some other command such as the one below, then it does open in port 8080.\n\n```\nsage -n directory=/tmp/a.sagenb\n```\n\n4. Open a new worksheet, and try to print latex, for instance run the command `view('?')`. You will get a js error popup saying (in Opera 12.00RC, and Opera-11.64)\n\n```\nSyntaxError: at index 0 in \"\\newcommand{\\Bold}[1]{\\mathbf{#1}}?\": invalid character escape sequence\n```\n\n\nIn firefox-10.0.4 I simply get the error: `SyntaxError: illegal character`. This error is not present if I run sage instead as `sage -n directory=/tmp/a.sagenb`, and the mathjax output is all good.",
     "created_at": "2012-06-09T10:05:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
@@ -1684,7 +1684,7 @@ archive/issue_comments_095861.json:
 }
 ```
 
-Attachment
+Attachment [trac_9774-mathjax-try5.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-try5.patch) by ppurka created at 2012-06-09 10:05:13
 
 rebased patch to sage-5.1beta2.
 
@@ -1903,7 +1903,7 @@ I wonder why the other tutorial versions don't cause problems?  In particular, t
 archive/issue_comments_095871.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9774-doctests.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-doctests.patch) by jhpalmieri created at 2012-06-13 05:50:25",
     "created_at": "2012-06-13T05:50:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
@@ -1912,7 +1912,7 @@ archive/issue_comments_095871.json:
 }
 ```
 
-Attachment
+Attachment [trac_9774-doctests.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-doctests.patch) by jhpalmieri created at 2012-06-13 05:50:25
 
 
 
@@ -2363,7 +2363,7 @@ Sage library
 archive/issue_comments_095894.json:
 ```json
 {
-    "body": "Attachment\n\nI rebased [attachment:trac_9774-mathjax-try6.patch] to sage 5.1beta6",
+    "body": "Attachment [trac_9774-mathjax-try6.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-try6.patch) by jason created at 2012-06-25 16:54:32\n\nI rebased [attachment:trac_9774-mathjax-try6.patch] to sage 5.1beta6",
     "created_at": "2012-06-25T16:54:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
@@ -2372,7 +2372,7 @@ archive/issue_comments_095894.json:
 }
 ```
 
-Attachment
+Attachment [trac_9774-mathjax-try6.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-try6.patch) by jason created at 2012-06-25 16:54:32
 
 I rebased [attachment:trac_9774-mathjax-try6.patch] to sage 5.1beta6
 
@@ -2687,7 +2687,7 @@ Fixed.
 archive/issue_comments_095910.json:
 ```json
 {
-    "body": "Attachment\n\napply to $SAGE_ROOT/devel/sage",
+    "body": "Attachment [trac_9774-mathjax-try7.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-try7.patch) by kini created at 2012-08-22 07:02:28\n\napply to $SAGE_ROOT/devel/sage",
     "created_at": "2012-08-22T07:02:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
@@ -2696,7 +2696,7 @@ archive/issue_comments_095910.json:
 }
 ```
 
-Attachment
+Attachment [trac_9774-mathjax-try7.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-try7.patch) by kini created at 2012-08-22 07:02:28
 
 apply to $SAGE_ROOT/devel/sage
 

@@ -216,7 +216,7 @@ because of it."
 archive/issue_comments_027143.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3815.patch](tarball://root/attachments/some-uuid/ticket3815/sage-3815.patch) by was created at 2008-08-13 03:45:08",
     "created_at": "2008-08-13T03:45:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3815",
     "type": "issue_comment",
@@ -225,7 +225,7 @@ archive/issue_comments_027143.json:
 }
 ```
 
-Attachment
+Attachment [sage-3815.patch](tarball://root/attachments/some-uuid/ticket3815/sage-3815.patch) by was created at 2008-08-13 03:45:08
 
 
 

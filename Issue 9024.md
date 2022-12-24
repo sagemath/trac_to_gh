@@ -144,7 +144,7 @@ Changing status from new to needs_review.
 archive/issue_comments_083494.json:
 ```json
 {
-    "body": "Attachment\n\nMercurial patch to allow to build 64-bit on Solaris (both SPARC and x64)",
+    "body": "Attachment [tachyon-64-bit-Solaris-fix.patch](tarball://root/attachments/some-uuid/ticket9024/tachyon-64-bit-Solaris-fix.patch) by drkirkby created at 2010-05-23 22:27:23\n\nMercurial patch to allow to build 64-bit on Solaris (both SPARC and x64)",
     "created_at": "2010-05-23T22:27:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9024",
     "type": "issue_comment",
@@ -153,7 +153,7 @@ archive/issue_comments_083494.json:
 }
 ```
 
-Attachment
+Attachment [tachyon-64-bit-Solaris-fix.patch](tarball://root/attachments/some-uuid/ticket9024/tachyon-64-bit-Solaris-fix.patch) by drkirkby created at 2010-05-23 22:27:23
 
 Mercurial patch to allow to build 64-bit on Solaris (both SPARC and x64)
 

@@ -105,7 +105,7 @@ Changing status from new to needs_review.
 archive/issue_comments_072712.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch should restore the earlier behavior and fix the cursor-wraps-around-the-last-compute-cell problem.  If not, let me know.",
+    "body": "Attachment [trac_8231-cursor_AWOL.patch](tarball://root/attachments/some-uuid/ticket8231/trac_8231-cursor_AWOL.patch) by mpatel created at 2010-02-14 02:01:48\n\nThe patch should restore the earlier behavior and fix the cursor-wraps-around-the-last-compute-cell problem.  If not, let me know.",
     "created_at": "2010-02-14T02:01:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8231",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_072712.json:
 }
 ```
 
-Attachment
+Attachment [trac_8231-cursor_AWOL.patch](tarball://root/attachments/some-uuid/ticket8231/trac_8231-cursor_AWOL.patch) by mpatel created at 2010-02-14 02:01:48
 
 The patch should restore the earlier behavior and fix the cursor-wraps-around-the-last-compute-cell problem.  If not, let me know.
 

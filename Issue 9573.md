@@ -121,7 +121,7 @@ Out of curiosity: Does it help to replace `r"""` with `ur"""` for the relevant d
 archive/issue_comments_092456.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:3 mpatel]:\n> Out of curiosity: Does it help to replace `r\"\"\"` with `ur\"\"\"` for the relevant docstring?\n\nI don't know, but I think using \"`@`\" here as an example of an unacceptable character is more robust and appropriate.\n\nI apologize for the caused problem.",
+    "body": "Attachment [trac_9573_fix_cyrillic_character_in_docstring_problem.patch](tarball://root/attachments/some-uuid/ticket9573/trac_9573_fix_cyrillic_character_in_docstring_problem.patch) by novoselt created at 2010-07-22 05:25:39\n\nReplying to [comment:3 mpatel]:\n> Out of curiosity: Does it help to replace `r\"\"\"` with `ur\"\"\"` for the relevant docstring?\n\nI don't know, but I think using \"`@`\" here as an example of an unacceptable character is more robust and appropriate.\n\nI apologize for the caused problem.",
     "created_at": "2010-07-22T05:25:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9573",
     "type": "issue_comment",
@@ -130,7 +130,7 @@ archive/issue_comments_092456.json:
 }
 ```
 
-Attachment
+Attachment [trac_9573_fix_cyrillic_character_in_docstring_problem.patch](tarball://root/attachments/some-uuid/ticket9573/trac_9573_fix_cyrillic_character_in_docstring_problem.patch) by novoselt created at 2010-07-22 05:25:39
 
 Replying to [comment:3 mpatel]:
 > Out of curiosity: Does it help to replace `r"""` with `ur"""` for the relevant docstring?

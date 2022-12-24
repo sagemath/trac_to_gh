@@ -68,7 +68,7 @@ starts to settle into knoboo, because, (as you would probably agree), this only 
 archive/issue_comments_021007.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [extcode-3050.patch](tarball://root/attachments/some-uuid/ticket3050/extcode-3050.patch) by TimothyClemans created at 2008-05-17 15:42:00",
     "created_at": "2008-05-17T15:42:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3050",
     "type": "issue_comment",
@@ -77,7 +77,7 @@ archive/issue_comments_021007.json:
 }
 ```
 
-Attachment
+Attachment [extcode-3050.patch](tarball://root/attachments/some-uuid/ticket3050/extcode-3050.patch) by TimothyClemans created at 2008-05-17 15:42:00
 
 
 
@@ -258,7 +258,7 @@ new and includes sage-3050.patch and sage-3050_2.patch
 archive/issue_comments_021017.json:
 ```json
 {
-    "body": "Attachment\n\nI changed the cookie name to the static name \"nb_session\" in both the render for UserToplevel and in the function get_our_cookie in guard.py. I don't know if doing this fixes the problem.",
+    "body": "Attachment [trac_3050-revised-sage-3050.patch](tarball://root/attachments/some-uuid/ticket3050/trac_3050-revised-sage-3050.patch) by TimothyClemans created at 2008-05-19 03:37:53\n\nI changed the cookie name to the static name \"nb_session\" in both the render for UserToplevel and in the function get_our_cookie in guard.py. I don't know if doing this fixes the problem.",
     "created_at": "2008-05-19T03:37:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3050",
     "type": "issue_comment",
@@ -267,7 +267,7 @@ archive/issue_comments_021017.json:
 }
 ```
 
-Attachment
+Attachment [trac_3050-revised-sage-3050.patch](tarball://root/attachments/some-uuid/ticket3050/trac_3050-revised-sage-3050.patch) by TimothyClemans created at 2008-05-19 03:37:53
 
 I changed the cookie name to the static name "nb_session" in both the render for UserToplevel and in the function get_our_cookie in guard.py. I don't know if doing this fixes the problem.
 

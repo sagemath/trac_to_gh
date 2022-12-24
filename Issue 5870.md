@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5870
 archive/issue_comments_046364.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [linbox-1.1.6.patch](tarball://root/attachments/some-uuid/ticket5870/linbox-1.1.6.patch) by pjeremy created at 2009-04-23 07:12:14",
     "created_at": "2009-04-23T07:12:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5870",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_046364.json:
 }
 ```
 
-Attachment
+Attachment [linbox-1.1.6.patch](tarball://root/attachments/some-uuid/ticket5870/linbox-1.1.6.patch) by pjeremy created at 2009-04-23 07:12:14
 
 
 

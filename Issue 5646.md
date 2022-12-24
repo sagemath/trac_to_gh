@@ -93,7 +93,7 @@ False
 archive/issue_comments_044092.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5646.patch](tarball://root/attachments/some-uuid/ticket5646/trac_5646.patch) by was created at 2010-01-18 13:44:04",
     "created_at": "2010-01-18T13:44:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5646",
     "type": "issue_comment",
@@ -102,7 +102,7 @@ archive/issue_comments_044092.json:
 }
 ```
 
-Attachment
+Attachment [trac_5646.patch](tarball://root/attachments/some-uuid/ticket5646/trac_5646.patch) by was created at 2010-01-18 13:44:04
 
 
 
@@ -185,7 +185,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_044097.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5646_rebased.patch](tarball://root/attachments/some-uuid/ticket5646/trac_5646_rebased.patch) by jdemeyer created at 2012-03-23 16:33:35",
     "created_at": "2012-03-23T16:33:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5646",
     "type": "issue_comment",
@@ -194,7 +194,7 @@ archive/issue_comments_044097.json:
 }
 ```
 
-Attachment
+Attachment [trac_5646_rebased.patch](tarball://root/attachments/some-uuid/ticket5646/trac_5646_rebased.patch) by jdemeyer created at 2012-03-23 16:33:35
 
 
 

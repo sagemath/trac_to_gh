@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4831
 archive/issue_comments_036617.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-4831.patch](tarball://root/attachments/some-uuid/ticket4831/trac-4831.patch) by cremona created at 2008-12-19 16:39:11",
     "created_at": "2008-12-19T16:39:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4831",
     "type": "issue_comment",
@@ -51,7 +51,7 @@ archive/issue_comments_036617.json:
 }
 ```
 
-Attachment
+Attachment [trac-4831.patch](tarball://root/attachments/some-uuid/ticket4831/trac-4831.patch) by cremona created at 2008-12-19 16:39:11
 
 
 

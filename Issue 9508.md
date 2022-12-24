@@ -761,7 +761,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_091370.json:
 ```json
 {
-    "body": "Attachment\n\nI'm happy this ok now. \n\nNeeds review.",
+    "body": "Attachment [9508.patch](tarball://root/attachments/some-uuid/ticket9508/9508.patch) by drkirkby created at 2010-08-12 15:47:23\n\nI'm happy this ok now. \n\nNeeds review.",
     "created_at": "2010-08-12T15:47:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9508",
     "type": "issue_comment",
@@ -770,7 +770,7 @@ archive/issue_comments_091370.json:
 }
 ```
 
-Attachment
+Attachment [9508.patch](tarball://root/attachments/some-uuid/ticket9508/9508.patch) by drkirkby created at 2010-08-12 15:47:23
 
 I'm happy this ok now. 
 

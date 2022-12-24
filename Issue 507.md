@@ -55,7 +55,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/507
 archive/issue_comments_002540.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached a work-around for this bug (6116.patch). It is probably best to understand the behaviour first, but the attached patch works around it for now.",
+    "body": "Attachment [6116.patch](tarball://root/attachments/some-uuid/ticket507/6116.patch) by malb created at 2007-09-04 10:18:18\n\nI've attached a work-around for this bug (6116.patch). It is probably best to understand the behaviour first, but the attached patch works around it for now.",
     "created_at": "2007-09-04T10:18:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/507",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_002540.json:
 }
 ```
 
-Attachment
+Attachment [6116.patch](tarball://root/attachments/some-uuid/ticket507/6116.patch) by malb created at 2007-09-04 10:18:18
 
 I've attached a work-around for this bug (6116.patch). It is probably best to understand the behaviour first, but the attached patch works around it for now.
 

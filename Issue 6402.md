@@ -51,7 +51,7 @@ patch against 4.0.2
 archive/issue_comments_051418.json:
 ```json
 {
-    "body": "Attachment\n\nHere's a patch.",
+    "body": "Attachment [trac_6402-overconvergent_fixes.patch](tarball://root/attachments/some-uuid/ticket6402/trac_6402-overconvergent_fixes.patch) by davidloeffler created at 2009-06-25 12:15:35\n\nHere's a patch.",
     "created_at": "2009-06-25T12:15:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6402",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_051418.json:
 }
 ```
 
-Attachment
+Attachment [trac_6402-overconvergent_fixes.patch](tarball://root/attachments/some-uuid/ticket6402/trac_6402-overconvergent_fixes.patch) by davidloeffler created at 2009-06-25 12:15:35
 
 Here's a patch.
 
@@ -111,7 +111,7 @@ apply after the previous patch
 archive/issue_comments_051421.json:
 ```json
 {
-    "body": "Attachment\n\nFine by me.",
+    "body": "Attachment [trac_6402-referee.patch](tarball://root/attachments/some-uuid/ticket6402/trac_6402-referee.patch) by davidloeffler created at 2009-08-19 09:52:05\n\nFine by me.",
     "created_at": "2009-08-19T09:52:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6402",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_051421.json:
 }
 ```
 
-Attachment
+Attachment [trac_6402-referee.patch](tarball://root/attachments/some-uuid/ticket6402/trac_6402-referee.patch) by davidloeffler created at 2009-08-19 09:52:05
 
 Fine by me.
 
@@ -149,7 +149,7 @@ reviewer patch: more typo fixes
 archive/issue_comments_051423.json:
 ```json
 {
-    "body": "Attachment\n\nThe reviewer patch `trac_6402-typos.patch` fixes some typos left over from the previous two patches. If that is OK, then the whole ticket can be merged.",
+    "body": "Attachment [trac_6402-typos.patch](tarball://root/attachments/some-uuid/ticket6402/trac_6402-typos.patch) by mvngu created at 2009-08-23 13:29:55\n\nThe reviewer patch `trac_6402-typos.patch` fixes some typos left over from the previous two patches. If that is OK, then the whole ticket can be merged.",
     "created_at": "2009-08-23T13:29:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6402",
     "type": "issue_comment",
@@ -158,7 +158,7 @@ archive/issue_comments_051423.json:
 }
 ```
 
-Attachment
+Attachment [trac_6402-typos.patch](tarball://root/attachments/some-uuid/ticket6402/trac_6402-typos.patch) by mvngu created at 2009-08-23 13:29:55
 
 The reviewer patch `trac_6402-typos.patch` fixes some typos left over from the previous two patches. If that is OK, then the whole ticket can be merged.
 

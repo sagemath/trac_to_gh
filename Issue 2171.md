@@ -38,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2171
 archive/issue_comments_014249.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [extcode-trac2171.patch](tarball://root/attachments/some-uuid/ticket2171/extcode-trac2171.patch) by was created at 2008-02-15 08:12:21",
     "created_at": "2008-02-15T08:12:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2171",
     "type": "issue_comment",
@@ -47,7 +47,7 @@ archive/issue_comments_014249.json:
 }
 ```
 
-Attachment
+Attachment [extcode-trac2171.patch](tarball://root/attachments/some-uuid/ticket2171/extcode-trac2171.patch) by was created at 2008-02-15 08:12:21
 
 
 
@@ -56,7 +56,7 @@ Attachment
 archive/issue_comments_014250.json:
 ```json
 {
-    "body": "Attachment\n\nApply all the attached files -- the sage- ones to hg_sage and the extcode ones to hg_extcode.",
+    "body": "Attachment [extcode-trac2171-part2.patch](tarball://root/attachments/some-uuid/ticket2171/extcode-trac2171-part2.patch) by was created at 2008-02-15 09:57:41\n\nApply all the attached files -- the sage- ones to hg_sage and the extcode ones to hg_extcode.",
     "created_at": "2008-02-15T09:57:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2171",
     "type": "issue_comment",
@@ -65,7 +65,7 @@ archive/issue_comments_014250.json:
 }
 ```
 
-Attachment
+Attachment [extcode-trac2171-part2.patch](tarball://root/attachments/some-uuid/ticket2171/extcode-trac2171-part2.patch) by was created at 2008-02-15 09:57:41
 
 Apply all the attached files -- the sage- ones to hg_sage and the extcode ones to hg_extcode.
 
@@ -186,7 +186,7 @@ Michael
 archive/issue_comments_014255.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-trac2171-part1.patch](tarball://root/attachments/some-uuid/ticket2171/sage-trac2171-part1.patch) by was created at 2008-10-24 03:27:53",
     "created_at": "2008-10-24T03:27:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2171",
     "type": "issue_comment",
@@ -195,7 +195,7 @@ archive/issue_comments_014255.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac2171-part1.patch](tarball://root/attachments/some-uuid/ticket2171/sage-trac2171-part1.patch) by was created at 2008-10-24 03:27:53
 
 
 
@@ -204,7 +204,7 @@ Attachment
 archive/issue_comments_014256.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-trac2171-part2.patch](tarball://root/attachments/some-uuid/ticket2171/sage-trac2171-part2.patch) by was created at 2008-10-24 03:28:02",
     "created_at": "2008-10-24T03:28:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2171",
     "type": "issue_comment",
@@ -213,7 +213,7 @@ archive/issue_comments_014256.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac2171-part2.patch](tarball://root/attachments/some-uuid/ticket2171/sage-trac2171-part2.patch) by was created at 2008-10-24 03:28:02
 
 
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1207
 archive/issue_comments_007473.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ctrl-c-libsingular.patch](tarball://root/attachments/some-uuid/ticket1207/ctrl-c-libsingular.patch) by malb created at 2007-11-19 11:58:34",
     "created_at": "2007-11-19T11:58:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1207",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_007473.json:
 }
 ```
 
-Attachment
+Attachment [ctrl-c-libsingular.patch](tarball://root/attachments/some-uuid/ticket1207/ctrl-c-libsingular.patch) by malb created at 2007-11-19 11:58:34
 
 
 

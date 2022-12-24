@@ -69,7 +69,7 @@ I hope it has been fixed by the attached patch.
 archive/issue_comments_062938.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-7472-taylor.patch](tarball://root/attachments/some-uuid/ticket7472/trac-7472-taylor.patch) by robert.marik created at 2009-11-16 09:32:27",
     "created_at": "2009-11-16T09:32:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7472",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_062938.json:
 }
 ```
 
-Attachment
+Attachment [trac-7472-taylor.patch](tarball://root/attachments/some-uuid/ticket7472/trac-7472-taylor.patch) by robert.marik created at 2009-11-16 09:32:27
 
 
 
@@ -105,7 +105,7 @@ this patch should be installed on the top of previous patch and improves documen
 archive/issue_comments_062940.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-7472-taylor-fixed_doc.patch](tarball://root/attachments/some-uuid/ticket7472/trac-7472-taylor-fixed_doc.patch) by robert.marik created at 2009-11-16 10:32:02",
     "created_at": "2009-11-16T10:32:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7472",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_062940.json:
 }
 ```
 
-Attachment
+Attachment [trac-7472-taylor-fixed_doc.patch](tarball://root/attachments/some-uuid/ticket7472/trac-7472-taylor-fixed_doc.patch) by robert.marik created at 2009-11-16 10:32:02
 
 
 
@@ -250,7 +250,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_062947.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-7472-taylor-experimental.patch](tarball://root/attachments/some-uuid/ticket7472/trac-7472-taylor-experimental.patch) by robert.marik created at 2009-11-23 19:31:08",
     "created_at": "2009-11-23T19:31:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7472",
     "type": "issue_comment",
@@ -259,7 +259,7 @@ archive/issue_comments_062947.json:
 }
 ```
 
-Attachment
+Attachment [trac-7472-taylor-experimental.patch](tarball://root/attachments/some-uuid/ticket7472/trac-7472-taylor-experimental.patch) by robert.marik created at 2009-11-23 19:31:08
 
 
 
@@ -304,7 +304,7 @@ New patch, replaces all previous patches. Notation is more Sage like.
 archive/issue_comments_062950.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-7472.patch](tarball://root/attachments/some-uuid/ticket7472/trac-7472.patch) by robert.marik created at 2010-01-05 20:19:53",
     "created_at": "2010-01-05T20:19:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7472",
     "type": "issue_comment",
@@ -313,7 +313,7 @@ archive/issue_comments_062950.json:
 }
 ```
 
-Attachment
+Attachment [trac-7472.patch](tarball://root/attachments/some-uuid/ticket7472/trac-7472.patch) by robert.marik created at 2010-01-05 20:19:53
 
 
 
@@ -535,7 +535,7 @@ Resolution: fixed
 archive/issue_comments_062959.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-7472-review.patch](tarball://root/attachments/some-uuid/ticket7472/trac-7472-review.patch) by rlm created at 2010-01-18 22:57:36",
     "created_at": "2010-01-18T22:57:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7472",
     "type": "issue_comment",
@@ -544,4 +544,4 @@ archive/issue_comments_062959.json:
 }
 ```
 
-Attachment
+Attachment [trac-7472-review.patch](tarball://root/attachments/some-uuid/ticket7472/trac-7472-review.patch) by rlm created at 2010-01-18 22:57:36

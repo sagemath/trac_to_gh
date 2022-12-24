@@ -92,7 +92,7 @@ Actually, the bug is in the list_function in latex.py in the case where the list
 archive/issue_comments_017685.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [list-print-extra-comma.patch](tarball://root/attachments/some-uuid/ticket2584/list-print-extra-comma.patch) by jason created at 2008-03-18 18:58:00",
     "created_at": "2008-03-18T18:58:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2584",
     "type": "issue_comment",
@@ -101,7 +101,7 @@ archive/issue_comments_017685.json:
 }
 ```
 
-Attachment
+Attachment [list-print-extra-comma.patch](tarball://root/attachments/some-uuid/ticket2584/list-print-extra-comma.patch) by jason created at 2008-03-18 18:58:00
 
 
 
@@ -173,7 +173,7 @@ Michael
 archive/issue_comments_017689.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2584.patch](tarball://root/attachments/some-uuid/ticket2584/2584.patch) by mhansen created at 2008-03-18 22:53:58",
     "created_at": "2008-03-18T22:53:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2584",
     "type": "issue_comment",
@@ -182,7 +182,7 @@ archive/issue_comments_017689.json:
 }
 ```
 
-Attachment
+Attachment [2584.patch](tarball://root/attachments/some-uuid/ticket2584/2584.patch) by mhansen created at 2008-03-18 22:53:58
 
 
 

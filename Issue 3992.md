@@ -201,7 +201,7 @@ Changing status from new to assigned.
 archive/issue_comments_028692.json:
 ```json
 {
-    "body": "Attachment\n\nJohn,\n\nsince you hit this can you do the (trivial) review?\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_3992.patch](tarball://root/attachments/some-uuid/ticket3992/trac_3992.patch) by mabshoff created at 2008-08-29 17:22:27\n\nJohn,\n\nsince you hit this can you do the (trivial) review?\n\nCheers,\n\nMichael",
     "created_at": "2008-08-29T17:22:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3992",
     "type": "issue_comment",
@@ -210,7 +210,7 @@ archive/issue_comments_028692.json:
 }
 ```
 
-Attachment
+Attachment [trac_3992.patch](tarball://root/attachments/some-uuid/ticket3992/trac_3992.patch) by mabshoff created at 2008-08-29 17:22:27
 
 John,
 

@@ -102,7 +102,7 @@ I'd rather it looked for `__name__ == '__main__'` than `wiki_create_instance`.
 archive/issue_comments_067045.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7776-inject_variable-nt.patch](tarball://root/attachments/some-uuid/ticket7776/trac_7776-inject_variable-nt.patch) by nthiery created at 2010-01-03 16:15:15",
     "created_at": "2010-01-03T16:15:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7776",
     "type": "issue_comment",
@@ -111,7 +111,7 @@ archive/issue_comments_067045.json:
 }
 ```
 
-Attachment
+Attachment [trac_7776-inject_variable-nt.patch](tarball://root/attachments/some-uuid/ticket7776/trac_7776-inject_variable-nt.patch) by nthiery created at 2010-01-03 16:15:15
 
 
 

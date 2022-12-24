@@ -99,7 +99,7 @@ Resolution: fixed
 archive/issue_comments_034358.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch should satisfy the requierement",
+    "body": "Attachment [patch_polynomial.txt](tarball://root/attachments/some-uuid/ticket4582/patch_polynomial.txt) by gmoroz created at 2008-11-27 00:04:54\n\nThe attached patch should satisfy the requierement",
     "created_at": "2008-11-27T00:04:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4582",
     "type": "issue_comment",
@@ -108,7 +108,7 @@ archive/issue_comments_034358.json:
 }
 ```
 
-Attachment
+Attachment [patch_polynomial.txt](tarball://root/attachments/some-uuid/ticket4582/patch_polynomial.txt) by gmoroz created at 2008-11-27 00:04:54
 
 The attached patch should satisfy the requierement
 
@@ -270,7 +270,7 @@ Standard mercurial patch
 archive/issue_comments_034366.json:
 ```json
 {
-    "body": "Attachment\n\nPatch applies cleanly against 3.2, doctests in `sage.rings` pass, patch contains doctest.",
+    "body": "Attachment [fraction_field.patch](tarball://root/attachments/some-uuid/ticket4582/fraction_field.patch) by malb created at 2008-11-30 21:53:53\n\nPatch applies cleanly against 3.2, doctests in `sage.rings` pass, patch contains doctest.",
     "created_at": "2008-11-30T21:53:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4582",
     "type": "issue_comment",
@@ -279,7 +279,7 @@ archive/issue_comments_034366.json:
 }
 ```
 
-Attachment
+Attachment [fraction_field.patch](tarball://root/attachments/some-uuid/ticket4582/fraction_field.patch) by malb created at 2008-11-30 21:53:53
 
 Patch applies cleanly against 3.2, doctests in `sage.rings` pass, patch contains doctest.
 

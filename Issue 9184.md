@@ -49,7 +49,7 @@ Changing status from new to needs_review.
 archive/issue_comments_085910.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9184-interval-gamma.patch](tarball://root/attachments/some-uuid/ticket9184/9184-interval-gamma.patch) by was created at 2010-07-08 14:53:16",
     "created_at": "2010-07-08T14:53:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9184",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_085910.json:
 }
 ```
 
-Attachment
+Attachment [9184-interval-gamma.patch](tarball://root/attachments/some-uuid/ticket9184/9184-interval-gamma.patch) by was created at 2010-07-08 14:53:16
 
 
 

@@ -150,7 +150,7 @@ Changing status from new to assigned.
 archive/issue_comments_017211.json:
 ```json
 {
-    "body": "Attachment\n\nThere are some typos, namely `specfically` in at least two places.\n\nI'm worried about the lack of `t==-1` doctest as well, but this looks good to me anyway.",
+    "body": "Attachment [trac-2523.patch](tarball://root/attachments/some-uuid/ticket2523/trac-2523.patch) by ncalexan created at 2008-04-26 17:20:23\n\nThere are some typos, namely `specfically` in at least two places.\n\nI'm worried about the lack of `t==-1` doctest as well, but this looks good to me anyway.",
     "created_at": "2008-04-26T17:20:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2523",
     "type": "issue_comment",
@@ -159,7 +159,7 @@ archive/issue_comments_017211.json:
 }
 ```
 
-Attachment
+Attachment [trac-2523.patch](tarball://root/attachments/some-uuid/ticket2523/trac-2523.patch) by ncalexan created at 2008-04-26 17:20:23
 
 There are some typos, namely `specfically` in at least two places.
 
@@ -196,7 +196,7 @@ Having said this, I think we should be grateful for point (1) and merge, and fig
 archive/issue_comments_017213.json:
 ```json
 {
-    "body": "Attachment\n\nAdded a small patch fixing the typos ncalexan pointed out. Also, I'm closing #2938 as fixed.",
+    "body": "Attachment [trac-2523-pt2.patch](tarball://root/attachments/some-uuid/ticket2523/trac-2523-pt2.patch) by craigcitro created at 2008-04-26 18:26:50\n\nAdded a small patch fixing the typos ncalexan pointed out. Also, I'm closing #2938 as fixed.",
     "created_at": "2008-04-26T18:26:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2523",
     "type": "issue_comment",
@@ -205,7 +205,7 @@ archive/issue_comments_017213.json:
 }
 ```
 
-Attachment
+Attachment [trac-2523-pt2.patch](tarball://root/attachments/some-uuid/ticket2523/trac-2523-pt2.patch) by craigcitro created at 2008-04-26 18:26:50
 
 Added a small patch fixing the typos ncalexan pointed out. Also, I'm closing #2938 as fixed.
 

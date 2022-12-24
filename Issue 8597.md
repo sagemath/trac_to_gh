@@ -154,7 +154,7 @@ archive/issue_comments_077836.json:
 archive/issue_comments_077837.json:
 ```json
 {
-    "body": "Attachment\n\nfixes point for 3d vectors",
+    "body": "Attachment [trac_8597_point_vector.patch](tarball://root/attachments/some-uuid/ticket8597/trac_8597_point_vector.patch) by ryan created at 2011-01-09 06:18:04\n\nfixes point for 3d vectors",
     "created_at": "2011-01-09T06:18:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8597",
     "type": "issue_comment",
@@ -163,7 +163,7 @@ archive/issue_comments_077837.json:
 }
 ```
 
-Attachment
+Attachment [trac_8597_point_vector.patch](tarball://root/attachments/some-uuid/ticket8597/trac_8597_point_vector.patch) by ryan created at 2011-01-09 06:18:04
 
 fixes point for 3d vectors
 
@@ -228,7 +228,7 @@ adds a doctest
 archive/issue_comments_077841.json:
 ```json
 {
-    "body": "Attachment\n\nThe second patch does not apply on top of the first.\n\nOnly the second patch with doctest should be applied.  Otherwise, it's all good.",
+    "body": "Attachment [trac_8597_point_vector.2.patch](tarball://root/attachments/some-uuid/ticket8597/trac_8597_point_vector.2.patch) by jthurber created at 2011-01-10 11:25:11\n\nThe second patch does not apply on top of the first.\n\nOnly the second patch with doctest should be applied.  Otherwise, it's all good.",
     "created_at": "2011-01-10T11:25:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8597",
     "type": "issue_comment",
@@ -237,7 +237,7 @@ archive/issue_comments_077841.json:
 }
 ```
 
-Attachment
+Attachment [trac_8597_point_vector.2.patch](tarball://root/attachments/some-uuid/ticket8597/trac_8597_point_vector.2.patch) by jthurber created at 2011-01-10 11:25:11
 
 The second patch does not apply on top of the first.
 

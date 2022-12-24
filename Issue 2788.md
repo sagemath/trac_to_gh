@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2788
 archive/issue_comments_019151.json:
 ```json
 {
-    "body": "Attachment\n\nPatch looks good to me, applies cleanly. I understood all the trivial changes, but I am no expert on the finer details toward the end of the patch. So what I want to express is that somebody with a more detailed understanding ought to give this a second look. After updating to `zn_poly-0.8.spkg` and touching the right files all doctests pass.\n\nCheers,\n\nMichael",
+    "body": "Attachment [hypellfrob.patch](tarball://root/attachments/some-uuid/ticket2788/hypellfrob.patch) by mabshoff created at 2008-04-03 18:28:38\n\nPatch looks good to me, applies cleanly. I understood all the trivial changes, but I am no expert on the finer details toward the end of the patch. So what I want to express is that somebody with a more detailed understanding ought to give this a second look. After updating to `zn_poly-0.8.spkg` and touching the right files all doctests pass.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-03T18:28:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2788",
     "type": "issue_comment",
@@ -43,7 +43,7 @@ archive/issue_comments_019151.json:
 }
 ```
 
-Attachment
+Attachment [hypellfrob.patch](tarball://root/attachments/some-uuid/ticket2788/hypellfrob.patch) by mabshoff created at 2008-04-03 18:28:38
 
 Patch looks good to me, applies cleanly. I understood all the trivial changes, but I am no expert on the finer details toward the end of the patch. So what I want to express is that somebody with a more detailed understanding ought to give this a second look. After updating to `zn_poly-0.8.spkg` and touching the right files all doctests pass.
 

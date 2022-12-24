@@ -48,7 +48,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1276
 archive/issue_comments_007994.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [recodefordoctesttiming.zip](tarball://root/attachments/some-uuid/ticket1276/recodefordoctesttiming.zip) by was created at 2007-11-26 04:19:12",
     "created_at": "2007-11-26T04:19:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1276",
     "type": "issue_comment",
@@ -57,7 +57,7 @@ archive/issue_comments_007994.json:
 }
 ```
 
-Attachment
+Attachment [recodefordoctesttiming.zip](tarball://root/attachments/some-uuid/ticket1276/recodefordoctesttiming.zip) by was created at 2007-11-26 04:19:12
 
 
 
@@ -160,7 +160,7 @@ Changing priority from major to blocker.
 archive/issue_comments_008000.json:
 ```json
 {
-    "body": "Attachment\n\nrebased & fixed devel repo patch for this.",
+    "body": "Attachment [trac_1276.patch](tarball://root/attachments/some-uuid/ticket1276/trac_1276.patch) by gfurnish created at 2008-05-24 22:42:44\n\nrebased & fixed devel repo patch for this.",
     "created_at": "2008-05-24T22:42:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1276",
     "type": "issue_comment",
@@ -169,7 +169,7 @@ archive/issue_comments_008000.json:
 }
 ```
 
-Attachment
+Attachment [trac_1276.patch](tarball://root/attachments/some-uuid/ticket1276/trac_1276.patch) by gfurnish created at 2008-05-24 22:42:44
 
 rebased & fixed devel repo patch for this.
 
@@ -198,7 +198,7 @@ rebased & fixed scripts repo patch for this.
 archive/issue_comments_008002.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_1276_scripts.patch](tarball://root/attachments/some-uuid/ticket1276/trac_1276_scripts.patch) by gfurnish created at 2008-05-24 22:45:05",
     "created_at": "2008-05-24T22:45:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1276",
     "type": "issue_comment",
@@ -207,7 +207,7 @@ archive/issue_comments_008002.json:
 }
 ```
 
-Attachment
+Attachment [trac_1276_scripts.patch](tarball://root/attachments/some-uuid/ticket1276/trac_1276_scripts.patch) by gfurnish created at 2008-05-24 22:45:05
 
 
 

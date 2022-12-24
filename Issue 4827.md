@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4827
 archive/issue_comments_036596.json:
 ```json
 {
-    "body": "Attachment\n\nadds lbfgsb to minimize_constraint",
+    "body": "Attachment [lbfgsb-v1.patch](tarball://root/attachments/some-uuid/ticket4827/lbfgsb-v1.patch) by schilly created at 2008-12-18 17:32:43\n\nadds lbfgsb to minimize_constraint",
     "created_at": "2008-12-18T17:32:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4827",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_036596.json:
 }
 ```
 
-Attachment
+Attachment [lbfgsb-v1.patch](tarball://root/attachments/some-uuid/ticket4827/lbfgsb-v1.patch) by schilly created at 2008-12-18 17:32:43
 
 adds lbfgsb to minimize_constraint
 
@@ -51,7 +51,7 @@ adds lbfgsb to minimize_constraint
 archive/issue_comments_036597.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of previous patch",
+    "body": "Attachment [trac_4827-optimize-doc.patch](tarball://root/attachments/some-uuid/ticket4827/trac_4827-optimize-doc.patch) by jason created at 2009-01-28 19:32:32\n\napply on top of previous patch",
     "created_at": "2009-01-28T19:32:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4827",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_036597.json:
 }
 ```
 
-Attachment
+Attachment [trac_4827-optimize-doc.patch](tarball://root/attachments/some-uuid/ticket4827/trac_4827-optimize-doc.patch) by jason created at 2009-01-28 19:32:32
 
 apply on top of previous patch
 

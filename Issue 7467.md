@@ -69,7 +69,7 @@ This should do it.
 archive/issue_comments_062885.json:
 ```json
 {
-    "body": "Attachment\n\nMakes `setup.py` use `setuptools` instead of `distutils`. Depends on #7402 for things to work properly.",
+    "body": "Attachment [trac_7467-setuptools.patch](tarball://root/attachments/some-uuid/ticket7467/trac_7467-setuptools.patch) by timdumol created at 2009-11-15 05:45:48\n\nMakes `setup.py` use `setuptools` instead of `distutils`. Depends on #7402 for things to work properly.",
     "created_at": "2009-11-15T05:45:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7467",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_062885.json:
 }
 ```
 
-Attachment
+Attachment [trac_7467-setuptools.patch](tarball://root/attachments/some-uuid/ticket7467/trac_7467-setuptools.patch) by timdumol created at 2009-11-15 05:45:48
 
 Makes `setup.py` use `setuptools` instead of `distutils`. Depends on #7402 for things to work properly.
 
@@ -89,7 +89,7 @@ Makes `setup.py` use `setuptools` instead of `distutils`. Depends on #7402 for t
 archive/issue_comments_062886.json:
 ```json
 {
-    "body": "Attachment\n\nAdded necessary .hgignore lines.",
+    "body": "Attachment [trac_7467-setuptools.2.patch](tarball://root/attachments/some-uuid/ticket7467/trac_7467-setuptools.2.patch) by timdumol created at 2009-11-15 06:09:57\n\nAdded necessary .hgignore lines.",
     "created_at": "2009-11-15T06:09:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7467",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_062886.json:
 }
 ```
 
-Attachment
+Attachment [trac_7467-setuptools.2.patch](tarball://root/attachments/some-uuid/ticket7467/trac_7467-setuptools.2.patch) by timdumol created at 2009-11-15 06:09:57
 
 Added necessary .hgignore lines.
 

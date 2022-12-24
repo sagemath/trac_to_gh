@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1461
 archive/issue_comments_009411.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-1461.patch](tarball://root/attachments/some-uuid/ticket1461/trac-1461.patch) by was created at 2007-12-11 20:11:54",
     "created_at": "2007-12-11T20:11:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1461",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_009411.json:
 }
 ```
 
-Attachment
+Attachment [trac-1461.patch](tarball://root/attachments/some-uuid/ticket1461/trac-1461.patch) by was created at 2007-12-11 20:11:54
 
 
 
@@ -49,7 +49,7 @@ Attachment
 archive/issue_comments_009412.json:
 ```json
 {
-    "body": "Attachment\n\nI updated the patch with fixes to some docstrings.",
+    "body": "Attachment [trac-1461-part2.patch](tarball://root/attachments/some-uuid/ticket1461/trac-1461-part2.patch) by was created at 2007-12-11 20:59:48\n\nI updated the patch with fixes to some docstrings.",
     "created_at": "2007-12-11T20:59:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1461",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_009412.json:
 }
 ```
 
-Attachment
+Attachment [trac-1461-part2.patch](tarball://root/attachments/some-uuid/ticket1461/trac-1461-part2.patch) by was created at 2007-12-11 20:59:48
 
 I updated the patch with fixes to some docstrings.
 

@@ -196,7 +196,7 @@ Michael
 archive/issue_comments_044956.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5751-rebased-3.4.1.rc4.patch](tarball://root/attachments/some-uuid/ticket5751/trac_5751-rebased-3.4.1.rc4.patch) by bump created at 2009-04-20 14:01:06",
     "created_at": "2009-04-20T14:01:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5751",
     "type": "issue_comment",
@@ -205,7 +205,7 @@ archive/issue_comments_044956.json:
 }
 ```
 
-Attachment
+Attachment [trac_5751-rebased-3.4.1.rc4.patch](tarball://root/attachments/some-uuid/ticket5751/trac_5751-rebased-3.4.1.rc4.patch) by bump created at 2009-04-20 14:01:06
 
 
 

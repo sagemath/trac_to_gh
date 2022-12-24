@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8452
 archive/issue_comments_076046.json:
 ```json
 {
-    "body": "Attachment\n\nAdd `sage -docbuild` option `--check-nested` to check picklability",
+    "body": "Attachment [trac_8452-nested_class_check.patch](tarball://root/attachments/some-uuid/ticket8452/trac_8452-nested_class_check.patch) by mpatel created at 2010-03-06 09:44:12\n\nAdd `sage -docbuild` option `--check-nested` to check picklability",
     "created_at": "2010-03-06T09:44:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8452",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_076046.json:
 }
 ```
 
-Attachment
+Attachment [trac_8452-nested_class_check.patch](tarball://root/attachments/some-uuid/ticket8452/trac_8452-nested_class_check.patch) by mpatel created at 2010-03-06 09:44:12
 
 Add `sage -docbuild` option `--check-nested` to check picklability
 

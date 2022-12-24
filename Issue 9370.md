@@ -423,7 +423,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_089026.json:
 ```json
 {
-    "body": "Attachment\n\nHi,\n\nI will fold #10852 in here, if that's okay.\n\nI like the multiple options! I gonna have a more detailed look for a review; here are two first comments:\n\n1. Why do you handle the old prefix option extra? Wouldn't it be enough to keep the prefix method and return to print_options()[\\'prefix\\'], rather thank keeping _prefix. A complete doctest provided by the buildbot can then check if _prefix is used anywhere.\n\n2. in lines 155p, multiplication is set to ast. Isn't there a way to give this argument to the repr_lincomb method? Otherwise, we get the following:\n\n```\nsage: A = CombinatorialFreeModule(QQ,['+','*'],scalar_mult='@@')\nsage: A.an_element()\n2@@B['@@'] + 2@@B['+']\n```\n\n\nBest, Christian",
+    "body": "Attachment [trac_9370-module-elt-repr.patch](tarball://root/attachments/some-uuid/ticket9370/trac_9370-module-elt-repr.patch) by stumpc5 created at 2011-02-26 00:51:50\n\nHi,\n\nI will fold #10852 in here, if that's okay.\n\nI like the multiple options! I gonna have a more detailed look for a review; here are two first comments:\n\n1. Why do you handle the old prefix option extra? Wouldn't it be enough to keep the prefix method and return to print_options()[\\'prefix\\'], rather thank keeping _prefix. A complete doctest provided by the buildbot can then check if _prefix is used anywhere.\n\n2. in lines 155p, multiplication is set to ast. Isn't there a way to give this argument to the repr_lincomb method? Otherwise, we get the following:\n\n```\nsage: A = CombinatorialFreeModule(QQ,['+','*'],scalar_mult='@@')\nsage: A.an_element()\n2@@B['@@'] + 2@@B['+']\n```\n\n\nBest, Christian",
     "created_at": "2011-02-26T00:51:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9370",
     "type": "issue_comment",
@@ -432,7 +432,7 @@ archive/issue_comments_089026.json:
 }
 ```
 
-Attachment
+Attachment [trac_9370-module-elt-repr.patch](tarball://root/attachments/some-uuid/ticket9370/trac_9370-module-elt-repr.patch) by stumpc5 created at 2011-02-26 00:51:50
 
 Hi,
 
@@ -542,7 +542,7 @@ Apply trac_9370-module-elt-repr.patch, trac_9370-module-elt-repr-suggestions-cs.
 archive/issue_comments_089030.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9370-module-elt-repr-suggestions-cs.patch](tarball://root/attachments/some-uuid/ticket9370/trac_9370-module-elt-repr-suggestions-cs.patch) by stumpc5 created at 2011-03-03 14:17:41",
     "created_at": "2011-03-03T14:17:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9370",
     "type": "issue_comment",
@@ -551,7 +551,7 @@ archive/issue_comments_089030.json:
 }
 ```
 
-Attachment
+Attachment [trac_9370-module-elt-repr-suggestions-cs.patch](tarball://root/attachments/some-uuid/ticket9370/trac_9370-module-elt-repr-suggestions-cs.patch) by stumpc5 created at 2011-03-03 14:17:41
 
 
 
@@ -590,7 +590,7 @@ Ideally, everyone would set latex_prefix when they set prefix, but if they don't
 archive/issue_comments_089032.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of other two patches",
+    "body": "Attachment [trac_9370-module-elt-repr-third.patch](tarball://root/attachments/some-uuid/ticket9370/trac_9370-module-elt-repr-third.patch) by jhpalmieri created at 2011-03-07 23:26:38\n\napply on top of other two patches",
     "created_at": "2011-03-07T23:26:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9370",
     "type": "issue_comment",
@@ -599,7 +599,7 @@ archive/issue_comments_089032.json:
 }
 ```
 
-Attachment
+Attachment [trac_9370-module-elt-repr-third.patch](tarball://root/attachments/some-uuid/ticket9370/trac_9370-module-elt-repr-third.patch) by jhpalmieri created at 2011-03-07 23:26:38
 
 apply on top of other two patches
 
@@ -693,7 +693,7 @@ Apply only
 archive/issue_comments_089036.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of other two patches instead of ...-third.patch",
+    "body": "Attachment [trac_9370-module-elt-repr-third.v2.patch](tarball://root/attachments/some-uuid/ticket9370/trac_9370-module-elt-repr-third.v2.patch) by jhpalmieri created at 2011-03-11 05:56:28\n\napply on top of other two patches instead of ...-third.patch",
     "created_at": "2011-03-11T05:56:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9370",
     "type": "issue_comment",
@@ -702,7 +702,7 @@ archive/issue_comments_089036.json:
 }
 ```
 
-Attachment
+Attachment [trac_9370-module-elt-repr-third.v2.patch](tarball://root/attachments/some-uuid/ticket9370/trac_9370-module-elt-repr-third.v2.patch) by jhpalmieri created at 2011-03-11 05:56:28
 
 apply on top of other two patches instead of ...-third.patch
 
@@ -745,7 +745,7 @@ so it only does the replacement if the length `l` of `ast_replace` is positive. 
 archive/issue_comments_089038.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of first 3 patches, for review only",
+    "body": "Attachment [trac_9370-module-elt-repr-fourth.patch](tarball://root/attachments/some-uuid/ticket9370/trac_9370-module-elt-repr-fourth.patch) by jhpalmieri created at 2011-03-11 22:36:24\n\napply on top of first 3 patches, for review only",
     "created_at": "2011-03-11T22:36:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9370",
     "type": "issue_comment",
@@ -754,7 +754,7 @@ archive/issue_comments_089038.json:
 }
 ```
 
-Attachment
+Attachment [trac_9370-module-elt-repr-fourth.patch](tarball://root/attachments/some-uuid/ticket9370/trac_9370-module-elt-repr-fourth.patch) by jhpalmieri created at 2011-03-11 22:36:24
 
 apply on top of first 3 patches, for review only
 
@@ -765,7 +765,7 @@ apply on top of first 3 patches, for review only
 archive/issue_comments_089039.json:
 ```json
 {
-    "body": "Attachment\n\napply only this patch",
+    "body": "Attachment [trac_9370-module-elt-repr-all-in-one.patch](tarball://root/attachments/some-uuid/ticket9370/trac_9370-module-elt-repr-all-in-one.patch) by jhpalmieri created at 2011-03-11 22:37:08\n\napply only this patch",
     "created_at": "2011-03-11T22:37:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9370",
     "type": "issue_comment",
@@ -774,7 +774,7 @@ archive/issue_comments_089039.json:
 }
 ```
 
-Attachment
+Attachment [trac_9370-module-elt-repr-all-in-one.patch](tarball://root/attachments/some-uuid/ticket9370/trac_9370-module-elt-repr-all-in-one.patch) by jhpalmieri created at 2011-03-11 22:37:08
 
 apply only this patch
 

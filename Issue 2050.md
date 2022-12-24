@@ -68,7 +68,7 @@ See #1706 for a related ticket.
 archive/issue_comments_013276.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2050-ncalexan-eigenspaces-1.patch](tarball://root/attachments/some-uuid/ticket2050/2050-ncalexan-eigenspaces-1.patch) by ncalexan created at 2008-02-17 00:45:53",
     "created_at": "2008-02-17T00:45:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2050",
     "type": "issue_comment",
@@ -77,7 +77,7 @@ archive/issue_comments_013276.json:
 }
 ```
 
-Attachment
+Attachment [2050-ncalexan-eigenspaces-1.patch](tarball://root/attachments/some-uuid/ticket2050/2050-ncalexan-eigenspaces-1.patch) by ncalexan created at 2008-02-17 00:45:53
 
 
 
@@ -119,7 +119,7 @@ abort: patch failed to apply
 archive/issue_comments_013278.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2050.patch](tarball://root/attachments/some-uuid/ticket2050/2050.patch) by mhansen created at 2008-02-27 22:57:55",
     "created_at": "2008-02-27T22:57:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2050",
     "type": "issue_comment",
@@ -128,7 +128,7 @@ archive/issue_comments_013278.json:
 }
 ```
 
-Attachment
+Attachment [2050.patch](tarball://root/attachments/some-uuid/ticket2050/2050.patch) by mhansen created at 2008-02-27 22:57:55
 
 
 

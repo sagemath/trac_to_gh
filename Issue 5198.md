@@ -51,7 +51,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5198
 archive/issue_comments_039836.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch fixes the problem, and adds a sparse=True/False argument to apply_map that may be useful if you know that the result will have a different sparsity than the input.\n\nI also fixed a bug along the way: apply_map didn't preserve subdivisions for sparse matrices.  Sorry, reviewer, whoever you are.",
+    "body": "Attachment [trac5198_apply_map_sparse.patch](tarball://root/attachments/some-uuid/ticket5198/trac5198_apply_map_sparse.patch) by cwitty created at 2009-02-07 04:49:38\n\nThe attached patch fixes the problem, and adds a sparse=True/False argument to apply_map that may be useful if you know that the result will have a different sparsity than the input.\n\nI also fixed a bug along the way: apply_map didn't preserve subdivisions for sparse matrices.  Sorry, reviewer, whoever you are.",
     "created_at": "2009-02-07T04:49:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5198",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_039836.json:
 }
 ```
 
-Attachment
+Attachment [trac5198_apply_map_sparse.patch](tarball://root/attachments/some-uuid/ticket5198/trac5198_apply_map_sparse.patch) by cwitty created at 2009-02-07 04:49:38
 
 The attached patch fixes the problem, and adds a sparse=True/False argument to apply_map that may be useful if you know that the result will have a different sparsity than the input.
 

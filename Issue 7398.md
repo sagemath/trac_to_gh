@@ -65,7 +65,7 @@ Changing status from new to needs_review.
 archive/issue_comments_062201.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7398_iter_detect-fh.patch](tarball://root/attachments/some-uuid/ticket7398/trac_7398_iter_detect-fh.patch) by hivert created at 2009-11-05 22:47:31",
     "created_at": "2009-11-05T22:47:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7398",
     "type": "issue_comment",
@@ -74,7 +74,7 @@ archive/issue_comments_062201.json:
 }
 ```
 
-Attachment
+Attachment [trac_7398_iter_detect-fh.patch](tarball://root/attachments/some-uuid/ticket7398/trac_7398_iter_detect-fh.patch) by hivert created at 2009-11-05 22:47:31
 
 
 
@@ -83,7 +83,7 @@ Attachment
 archive/issue_comments_062202.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated patch after review by Nicolas (uses itertools to simplify further  sage.server.interact.list_of_first_n)",
+    "body": "Attachment [trac_7398_iter_detect-fh.2.patch](tarball://root/attachments/some-uuid/ticket7398/trac_7398_iter_detect-fh.2.patch) by nthiery created at 2009-11-06 13:58:11\n\nUpdated patch after review by Nicolas (uses itertools to simplify further  sage.server.interact.list_of_first_n)",
     "created_at": "2009-11-06T13:58:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7398",
     "type": "issue_comment",
@@ -92,7 +92,7 @@ archive/issue_comments_062202.json:
 }
 ```
 
-Attachment
+Attachment [trac_7398_iter_detect-fh.2.patch](tarball://root/attachments/some-uuid/ticket7398/trac_7398_iter_detect-fh.2.patch) by nthiery created at 2009-11-06 13:58:11
 
 Updated patch after review by Nicolas (uses itertools to simplify further  sage.server.interact.list_of_first_n)
 
@@ -213,7 +213,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_062209.json:
 ```json
 {
-    "body": "Attachment\n\nNicolas : can you re-review this patch...\nI commented out some line saying that it was never user and actually is was quite a lot... I don't understand why we didn't caught it by the tests. Anyway, Massena did.\n\nSorry for the mess,\n\nFlorent",
+    "body": "Attachment [trac_7398_iter_detect-fh.3.patch](tarball://root/attachments/some-uuid/ticket7398/trac_7398_iter_detect-fh.3.patch) by hivert created at 2009-11-06 21:15:51\n\nNicolas : can you re-review this patch...\nI commented out some line saying that it was never user and actually is was quite a lot... I don't understand why we didn't caught it by the tests. Anyway, Massena did.\n\nSorry for the mess,\n\nFlorent",
     "created_at": "2009-11-06T21:15:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7398",
     "type": "issue_comment",
@@ -222,7 +222,7 @@ archive/issue_comments_062209.json:
 }
 ```
 
-Attachment
+Attachment [trac_7398_iter_detect-fh.3.patch](tarball://root/attachments/some-uuid/ticket7398/trac_7398_iter_detect-fh.3.patch) by hivert created at 2009-11-06 21:15:51
 
 Nicolas : can you re-review this patch...
 I commented out some line saying that it was never user and actually is was quite a lot... I don't understand why we didn't caught it by the tests. Anyway, Massena did.
@@ -238,7 +238,7 @@ Florent
 archive/issue_comments_062210.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7398_combclass_set_compat-fh.patch](tarball://root/attachments/some-uuid/ticket7398/trac_7398_combclass_set_compat-fh.patch) by hivert created at 2009-11-09 16:30:11",
     "created_at": "2009-11-09T16:30:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7398",
     "type": "issue_comment",
@@ -247,7 +247,7 @@ archive/issue_comments_062210.json:
 }
 ```
 
-Attachment
+Attachment [trac_7398_combclass_set_compat-fh.patch](tarball://root/attachments/some-uuid/ticket7398/trac_7398_combclass_set_compat-fh.patch) by hivert created at 2009-11-09 16:30:11
 
 
 

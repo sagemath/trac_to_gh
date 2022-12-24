@@ -133,7 +133,7 @@ Patch attached is based on sage-3.2.alpha1 and pases sage -t.
 archive/issue_comments_032246.json:
 ```json
 {
-    "body": "Attachment\n\nbased on 3.2.alpha1",
+    "body": "Attachment [trac_4383-order-trivial-permgp.patch](tarball://root/attachments/some-uuid/ticket4383/trac_4383-order-trivial-permgp.patch) by wdj created at 2008-10-30 19:15:43\n\nbased on 3.2.alpha1",
     "created_at": "2008-10-30T19:15:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4383",
     "type": "issue_comment",
@@ -142,7 +142,7 @@ archive/issue_comments_032246.json:
 }
 ```
 
-Attachment
+Attachment [trac_4383-order-trivial-permgp.patch](tarball://root/attachments/some-uuid/ticket4383/trac_4383-order-trivial-permgp.patch) by wdj created at 2008-10-30 19:15:43
 
 based on 3.2.alpha1
 
@@ -195,7 +195,7 @@ Sorry - I added a doctest in the 2nd patch. I could not figure out what I did wr
 archive/issue_comments_032249.json:
 ```json
 {
-    "body": "Attachment\n\nbased on 3.2.alpha1 - apply after the first patch",
+    "body": "Attachment [trac_4383-order-trivial-permgp2.patch](tarball://root/attachments/some-uuid/ticket4383/trac_4383-order-trivial-permgp2.patch) by wdj created at 2008-10-30 19:55:50\n\nbased on 3.2.alpha1 - apply after the first patch",
     "created_at": "2008-10-30T19:55:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4383",
     "type": "issue_comment",
@@ -204,7 +204,7 @@ archive/issue_comments_032249.json:
 }
 ```
 
-Attachment
+Attachment [trac_4383-order-trivial-permgp2.patch](tarball://root/attachments/some-uuid/ticket4383/trac_4383-order-trivial-permgp2.patch) by wdj created at 2008-10-30 19:55:50
 
 based on 3.2.alpha1 - apply after the first patch
 
@@ -373,7 +373,7 @@ Please clarify and ping me.
 archive/issue_comments_032256.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4383-order-trivial-permgp3.patch](tarball://root/attachments/some-uuid/ticket4383/trac_4383-order-trivial-permgp3.patch) by wdj created at 2008-11-28 22:56:25",
     "created_at": "2008-11-28T22:56:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4383",
     "type": "issue_comment",
@@ -382,7 +382,7 @@ archive/issue_comments_032256.json:
 }
 ```
 
-Attachment
+Attachment [trac_4383-order-trivial-permgp3.patch](tarball://root/attachments/some-uuid/ticket4383/trac_4383-order-trivial-permgp3.patch) by wdj created at 2008-11-28 22:56:25
 
 
 
@@ -419,7 +419,7 @@ trac_4383-order-trivial-permgp3-REBASE.patch
 archive/issue_comments_032258.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4383-order-trivial-permgp3-REBASE.patch](tarball://root/attachments/some-uuid/ticket4383/trac_4383-order-trivial-permgp3-REBASE.patch) by was created at 2008-11-29 01:50:12",
     "created_at": "2008-11-29T01:50:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4383",
     "type": "issue_comment",
@@ -428,7 +428,7 @@ archive/issue_comments_032258.json:
 }
 ```
 
-Attachment
+Attachment [trac_4383-order-trivial-permgp3-REBASE.patch](tarball://root/attachments/some-uuid/ticket4383/trac_4383-order-trivial-permgp3-REBASE.patch) by was created at 2008-11-29 01:50:12
 
 
 
@@ -495,7 +495,7 @@ Got:
 archive/issue_comments_032261.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4383-order-trivial-permgp4.patch](tarball://root/attachments/some-uuid/ticket4383/trac_4383-order-trivial-permgp4.patch) by mabshoff created at 2008-11-29 03:30:51",
     "created_at": "2008-11-29T03:30:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4383",
     "type": "issue_comment",
@@ -504,7 +504,7 @@ archive/issue_comments_032261.json:
 }
 ```
 
-Attachment
+Attachment [trac_4383-order-trivial-permgp4.patch](tarball://root/attachments/some-uuid/ticket4383/trac_4383-order-trivial-permgp4.patch) by mabshoff created at 2008-11-29 03:30:51
 
 
 

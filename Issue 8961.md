@@ -87,7 +87,7 @@ Changing status from new to needs_review.
 archive/issue_comments_082601.json:
 ```json
 {
-    "body": "Attachment\n\nNow only Twisted (and its zope.interface, which is included in the Twisted spkg) is required by SageNB.",
+    "body": "Attachment [trac_8961-remove-zope.testbrowser.patch](tarball://root/attachments/some-uuid/ticket8961/trac_8961-remove-zope.testbrowser.patch) by timdumol created at 2010-07-06 13:23:04\n\nNow only Twisted (and its zope.interface, which is included in the Twisted spkg) is required by SageNB.",
     "created_at": "2010-07-06T13:23:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8961",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_082601.json:
 }
 ```
 
-Attachment
+Attachment [trac_8961-remove-zope.testbrowser.patch](tarball://root/attachments/some-uuid/ticket8961/trac_8961-remove-zope.testbrowser.patch) by timdumol created at 2010-07-06 13:23:04
 
 Now only Twisted (and its zope.interface, which is included in the Twisted spkg) is required by SageNB.
 
@@ -125,7 +125,7 @@ Removes an extra line.
 archive/issue_comments_082603.json:
 ```json
 {
-    "body": "Attachment\n\nThe package is at http://sage.math.washington.edu/home/timdumol/sagenb-0.8.1.spkg, and is the tentative package for #9430.",
+    "body": "Attachment [trac_8961-remove-zope.testbrowser.2.patch](tarball://root/attachments/some-uuid/ticket8961/trac_8961-remove-zope.testbrowser.2.patch) by timdumol created at 2010-07-06 17:09:19\n\nThe package is at http://sage.math.washington.edu/home/timdumol/sagenb-0.8.1.spkg, and is the tentative package for #9430.",
     "created_at": "2010-07-06T17:09:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8961",
     "type": "issue_comment",
@@ -134,7 +134,7 @@ archive/issue_comments_082603.json:
 }
 ```
 
-Attachment
+Attachment [trac_8961-remove-zope.testbrowser.2.patch](tarball://root/attachments/some-uuid/ticket8961/trac_8961-remove-zope.testbrowser.2.patch) by timdumol created at 2010-07-06 17:09:19
 
 The package is at http://sage.math.washington.edu/home/timdumol/sagenb-0.8.1.spkg, and is the tentative package for #9430.
 

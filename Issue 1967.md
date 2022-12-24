@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1967
 archive/issue_comments_012738.json:
 ```json
 {
-    "body": "Attachment\n\nThe spkg at \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.10.1/rc4/matplotlib-0.91.1.p3.spkg\n\nfixes this issue as well as #2014\n\nCheers,\n\nMichael",
+    "body": "Attachment [cbook.py](tarball://root/attachments/some-uuid/ticket1967/cbook.py) by mabshoff created at 2008-02-01 00:42:04\n\nThe spkg at \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.10.1/rc4/matplotlib-0.91.1.p3.spkg\n\nfixes this issue as well as #2014\n\nCheers,\n\nMichael",
     "created_at": "2008-02-01T00:42:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1967",
     "type": "issue_comment",
@@ -50,7 +50,7 @@ archive/issue_comments_012738.json:
 }
 ```
 
-Attachment
+Attachment [cbook.py](tarball://root/attachments/some-uuid/ticket1967/cbook.py) by mabshoff created at 2008-02-01 00:42:04
 
 The spkg at 
 

@@ -83,7 +83,7 @@ patch for dimension() to work in fields of large prime characteristic
 archive/issue_comments_014175.json:
 ```json
 {
-    "body": "Attachment\n\nI'll submit a separate patch for variety, hopefully tomorrow.",
+    "body": "Attachment [dimension_mods.patch](tarball://root/attachments/some-uuid/ticket2159/dimension_mods.patch) by john_perry created at 2009-01-24 10:59:53\n\nI'll submit a separate patch for variety, hopefully tomorrow.",
     "created_at": "2009-01-24T10:59:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2159",
     "type": "issue_comment",
@@ -92,7 +92,7 @@ archive/issue_comments_014175.json:
 }
 ```
 
-Attachment
+Attachment [dimension_mods.patch](tarball://root/attachments/some-uuid/ticket2159/dimension_mods.patch) by john_perry created at 2009-01-24 10:59:53
 
 I'll submit a separate patch for variety, hopefully tomorrow.
 
@@ -147,7 +147,7 @@ Sorry, addressed all the issues you raised now. I was very surprised to learn th
 archive/issue_comments_014178.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [dimension_mods.2.patch](tarball://root/attachments/some-uuid/ticket2159/dimension_mods.2.patch) by john_perry created at 2009-01-24 18:06:16",
     "created_at": "2009-01-24T18:06:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2159",
     "type": "issue_comment",
@@ -156,7 +156,7 @@ archive/issue_comments_014178.json:
 }
 ```
 
-Attachment
+Attachment [dimension_mods.2.patch](tarball://root/attachments/some-uuid/ticket2159/dimension_mods.2.patch) by john_perry created at 2009-01-24 18:06:16
 
 
 

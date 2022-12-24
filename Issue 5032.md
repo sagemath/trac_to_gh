@@ -89,7 +89,7 @@ It should read
 archive/issue_comments_038325.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5032-sparce-matrix.patch](tarball://root/attachments/some-uuid/ticket5032/5032-sparce-matrix.patch) by robertwb created at 2009-01-23 04:19:53",
     "created_at": "2009-01-23T04:19:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5032",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_038325.json:
 }
 ```
 
-Attachment
+Attachment [5032-sparce-matrix.patch](tarball://root/attachments/some-uuid/ticket5032/5032-sparce-matrix.patch) by robertwb created at 2009-01-23 04:19:53
 
 
 

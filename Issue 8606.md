@@ -158,7 +158,7 @@ It seems like we should fix pow, rather than change Integer(53.0).  In pow, it s
 archive/issue_comments_077965.json:
 ```json
 {
-    "body": "Attachment\n\nJason,\n> It seems like just deleting the Integer(n) try clause might be the right thing to do.\n\nthanks, that did the trick! I am attaching a patch to review.",
+    "body": "Attachment [trac_8606.patch](tarball://root/attachments/some-uuid/ticket8606/trac_8606.patch) by zimmerma created at 2010-03-29 13:12:29\n\nJason,\n> It seems like just deleting the Integer(n) try clause might be the right thing to do.\n\nthanks, that did the trick! I am attaching a patch to review.",
     "created_at": "2010-03-29T13:12:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8606",
     "type": "issue_comment",
@@ -167,7 +167,7 @@ archive/issue_comments_077965.json:
 }
 ```
 
-Attachment
+Attachment [trac_8606.patch](tarball://root/attachments/some-uuid/ticket8606/trac_8606.patch) by zimmerma created at 2010-03-29 13:12:29
 
 Jason,
 > It seems like just deleting the Integer(n) try clause might be the right thing to do.
@@ -320,7 +320,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_077973.json:
 ```json
 {
-    "body": "Attachment\n\nthank you Burcin for your review. I have attached a new patch following your proposal.\nHowever we still get the same (unhelpful) error message for `5^('a')`.\nAll doctests still pass.",
+    "body": "Attachment [trac_8606_2.patch](tarball://root/attachments/some-uuid/ticket8606/trac_8606_2.patch) by zimmerma created at 2010-05-24 18:47:17\n\nthank you Burcin for your review. I have attached a new patch following your proposal.\nHowever we still get the same (unhelpful) error message for `5^('a')`.\nAll doctests still pass.",
     "created_at": "2010-05-24T18:47:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8606",
     "type": "issue_comment",
@@ -329,7 +329,7 @@ archive/issue_comments_077973.json:
 }
 ```
 
-Attachment
+Attachment [trac_8606_2.patch](tarball://root/attachments/some-uuid/ticket8606/trac_8606_2.patch) by zimmerma created at 2010-05-24 18:47:17
 
 thank you Burcin for your review. I have attached a new patch following your proposal.
 However we still get the same (unhelpful) error message for `5^('a')`.

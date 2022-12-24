@@ -227,7 +227,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9899
 archive/issue_comments_098409.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [linear-sta.dif](tarball://root/attachments/some-uuid/ticket9899/linear-sta.dif) by leif created at 2010-09-11 22:37:54",
     "created_at": "2010-09-11T22:37:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9898",
     "type": "issue_comment",
@@ -236,7 +236,7 @@ archive/issue_comments_098409.json:
 }
 ```
 
-Attachment
+Attachment [linear-sta.dif](tarball://root/attachments/some-uuid/ticket9899/linear-sta.dif) by leif created at 2010-09-11 22:37:54
 
 
 

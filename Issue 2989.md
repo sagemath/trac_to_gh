@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2989
 archive/issue_comments_020575.json:
 ```json
 {
-    "body": "Attachment\n\nfails to apply against alpha5 :(",
+    "body": "Attachment [sage-2989.patch](tarball://root/attachments/some-uuid/ticket2989/sage-2989.patch) by boothby created at 2008-04-21 20:42:30\n\nfails to apply against alpha5 :(",
     "created_at": "2008-04-21T20:42:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2989",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_020575.json:
 }
 ```
 
-Attachment
+Attachment [sage-2989.patch](tarball://root/attachments/some-uuid/ticket2989/sage-2989.patch) by boothby created at 2008-04-21 20:42:30
 
 fails to apply against alpha5 :(
 
@@ -53,7 +53,7 @@ fails to apply against alpha5 :(
 archive/issue_comments_020576.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-2989_rebased_part2.patch](tarball://root/attachments/some-uuid/ticket2989/sage-2989_rebased_part2.patch) by was created at 2008-04-22 04:14:03",
     "created_at": "2008-04-22T04:14:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2989",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_020576.json:
 }
 ```
 
-Attachment
+Attachment [sage-2989_rebased_part2.patch](tarball://root/attachments/some-uuid/ticket2989/sage-2989_rebased_part2.patch) by was created at 2008-04-22 04:14:03
 
 
 

@@ -54,7 +54,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6766
 archive/issue_comments_055730.json:
 ```json
 {
-    "body": "Attachment\n\nHi Francis. After uploading a patch for a ticket, you should change the subject to \"[with patch, needs review]\". That way, the ticket can be picked up by the relevant trac report as needing review.",
+    "body": "Attachment [trac_6766.patch](tarball://root/attachments/some-uuid/ticket6766/trac_6766.patch) by mvngu created at 2009-08-16 22:36:52\n\nHi Francis. After uploading a patch for a ticket, you should change the subject to \"[with patch, needs review]\". That way, the ticket can be picked up by the relevant trac report as needing review.",
     "created_at": "2009-08-16T22:36:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6766",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_055730.json:
 }
 ```
 
-Attachment
+Attachment [trac_6766.patch](tarball://root/attachments/some-uuid/ticket6766/trac_6766.patch) by mvngu created at 2009-08-16 22:36:52
 
 Hi Francis. After uploading a patch for a ticket, you should change the subject to "[with patch, needs review]". That way, the ticket can be picked up by the relevant trac report as needing review.
 

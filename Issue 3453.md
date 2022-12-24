@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3453
 archive/issue_comments_024349.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [fpickle.patch](tarball://root/attachments/some-uuid/ticket3453/fpickle.patch) by was created at 2008-06-18 00:24:55",
     "created_at": "2008-06-18T00:24:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3453",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_024349.json:
 }
 ```
 
-Attachment
+Attachment [fpickle.patch](tarball://root/attachments/some-uuid/ticket3453/fpickle.patch) by was created at 2008-06-18 00:24:55
 
 
 
@@ -49,7 +49,7 @@ Attachment
 archive/issue_comments_024350.json:
 ```json
 {
-    "body": "Attachment\n\npart 2 of 2  -- this adds full doctests.",
+    "body": "Attachment [sage-3453-part2.patch](tarball://root/attachments/some-uuid/ticket3453/sage-3453-part2.patch) by was created at 2008-06-18 06:16:33\n\npart 2 of 2  -- this adds full doctests.",
     "created_at": "2008-06-18T06:16:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3453",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_024350.json:
 }
 ```
 
-Attachment
+Attachment [sage-3453-part2.patch](tarball://root/attachments/some-uuid/ticket3453/sage-3453-part2.patch) by was created at 2008-06-18 06:16:33
 
 part 2 of 2  -- this adds full doctests.
 

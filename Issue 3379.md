@@ -98,7 +98,7 @@ Changing status from new to assigned.
 archive/issue_comments_023657.json:
 ```json
 {
-    "body": "Attachment\n\nAddresses problem found by Mike Hansen",
+    "body": "Attachment [trac_3379_simple_fix.patch](tarball://root/attachments/some-uuid/ticket3379/trac_3379_simple_fix.patch) by mhampton created at 2008-06-08 14:52:13\n\nAddresses problem found by Mike Hansen",
     "created_at": "2008-06-08T14:52:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3379",
     "type": "issue_comment",
@@ -107,7 +107,7 @@ archive/issue_comments_023657.json:
 }
 ```
 
-Attachment
+Attachment [trac_3379_simple_fix.patch](tarball://root/attachments/some-uuid/ticket3379/trac_3379_simple_fix.patch) by mhampton created at 2008-06-08 14:52:13
 
 Addresses problem found by Mike Hansen
 
@@ -190,7 +190,7 @@ Changing keywords from "" to "editor_mhansen".
 archive/issue_comments_023662.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3379.patch](tarball://root/attachments/some-uuid/ticket3379/3379.patch) by mhansen created at 2008-06-19 20:18:58",
     "created_at": "2008-06-19T20:18:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3379",
     "type": "issue_comment",
@@ -199,7 +199,7 @@ archive/issue_comments_023662.json:
 }
 ```
 
-Attachment
+Attachment [3379.patch](tarball://root/attachments/some-uuid/ticket3379/3379.patch) by mhansen created at 2008-06-19 20:18:58
 
 
 

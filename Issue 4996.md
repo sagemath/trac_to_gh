@@ -62,7 +62,7 @@ Changing status from new to assigned.
 archive/issue_comments_038118.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4996-OSX64-libcsage.patch](tarball://root/attachments/some-uuid/ticket4996/trac_4996-OSX64-libcsage.patch) by mabshoff created at 2009-01-22 19:07:34",
     "created_at": "2009-01-22T19:07:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4996",
     "type": "issue_comment",
@@ -71,7 +71,7 @@ archive/issue_comments_038118.json:
 }
 ```
 
-Attachment
+Attachment [trac_4996-OSX64-libcsage.patch](tarball://root/attachments/some-uuid/ticket4996/trac_4996-OSX64-libcsage.patch) by mabshoff created at 2009-01-22 19:07:34
 
 
 

@@ -315,7 +315,7 @@ Okok :-)
 archive/issue_comments_085349.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-9141-cospectral_graphs.patch](tarball://root/attachments/some-uuid/ticket9141/trac-9141-cospectral_graphs.patch) by jason created at 2010-06-04 21:52:29",
     "created_at": "2010-06-04T21:52:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9141",
     "type": "issue_comment",
@@ -324,7 +324,7 @@ archive/issue_comments_085349.json:
 }
 ```
 
-Attachment
+Attachment [trac-9141-cospectral_graphs.patch](tarball://root/attachments/some-uuid/ticket9141/trac-9141-cospectral_graphs.patch) by jason created at 2010-06-04 21:52:29
 
 
 
@@ -425,7 +425,7 @@ Thanks for the review!  If you change "ommitted" to "omitted" (http://www.merria
 archive/issue_comments_085355.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9141-smallfixes.patch](tarball://root/attachments/some-uuid/ticket9141/trac_9141-smallfixes.patch) by ncohen created at 2010-07-09 06:50:14",
     "created_at": "2010-07-09T06:50:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9141",
     "type": "issue_comment",
@@ -434,7 +434,7 @@ archive/issue_comments_085355.json:
 }
 ```
 
-Attachment
+Attachment [trac_9141-smallfixes.patch](tarball://root/attachments/some-uuid/ticket9141/trac_9141-smallfixes.patch) by ncohen created at 2010-07-09 06:50:14
 
 
 
@@ -515,7 +515,7 @@ Please check and let me know if there are any problems.
 archive/issue_comments_085359.json:
 ```json
 {
-    "body": "Attachment\n\nRebased for queue in comment 15.  Replaces previous version.",
+    "body": "Attachment [trac-9141-cospectral_graphs.2.patch](tarball://root/attachments/some-uuid/ticket9141/trac-9141-cospectral_graphs.2.patch) by mpatel created at 2010-07-21 02:18:33\n\nRebased for queue in comment 15.  Replaces previous version.",
     "created_at": "2010-07-21T02:18:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9141",
     "type": "issue_comment",
@@ -524,7 +524,7 @@ archive/issue_comments_085359.json:
 }
 ```
 
-Attachment
+Attachment [trac-9141-cospectral_graphs.2.patch](tarball://root/attachments/some-uuid/ticket9141/trac-9141-cospectral_graphs.2.patch) by mpatel created at 2010-07-21 02:18:33
 
 Rebased for queue in comment 15.  Replaces previous version.
 

@@ -43,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2001
 archive/issue_comments_012942.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [testlong.log](tarball://root/attachments/some-uuid/ticket2001/testlong.log) by was created at 2008-01-31 06:38:38",
     "created_at": "2008-01-31T06:38:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2001",
     "type": "issue_comment",
@@ -52,7 +52,7 @@ archive/issue_comments_012942.json:
 }
 ```
 
-Attachment
+Attachment [testlong.log](tarball://root/attachments/some-uuid/ticket2001/testlong.log) by was created at 2008-01-31 06:38:38
 
 
 
@@ -113,7 +113,7 @@ Michael
 archive/issue_comments_012945.json:
 ```json
 {
-    "body": "Attachment\n\n`schemes/elliptic_curves/sha.py` also works fine, it just timed out with the 3 minute default timeout value. There is also a patch up for the `groups/matrix_gps/matrix_group.py` doctest failure.\n\nCheers,\n\nMichael",
+    "body": "Attachment [Sage-2.10.1.rc4-matrix_group.py-long-doctest-failure.patch](tarball://root/attachments/some-uuid/ticket2001/Sage-2.10.1.rc4-matrix_group.py-long-doctest-failure.patch) by mabshoff created at 2008-01-31 08:17:25\n\n`schemes/elliptic_curves/sha.py` also works fine, it just timed out with the 3 minute default timeout value. There is also a patch up for the `groups/matrix_gps/matrix_group.py` doctest failure.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-31T08:17:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2001",
     "type": "issue_comment",
@@ -122,7 +122,7 @@ archive/issue_comments_012945.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.10.1.rc4-matrix_group.py-long-doctest-failure.patch](tarball://root/attachments/some-uuid/ticket2001/Sage-2.10.1.rc4-matrix_group.py-long-doctest-failure.patch) by mabshoff created at 2008-01-31 08:17:25
 
 `schemes/elliptic_curves/sha.py` also works fine, it just timed out with the 3 minute default timeout value. There is also a patch up for the `groups/matrix_gps/matrix_group.py` doctest failure.
 
@@ -137,7 +137,7 @@ Michael
 archive/issue_comments_012946.json:
 ```json
 {
-    "body": "Attachment\n\nThe fix might be needed due to the pari 2.3.3 update.",
+    "body": "Attachment [Sage-2.10.1.rc4-gen.pyx-long-doctest-failure.patch](tarball://root/attachments/some-uuid/ticket2001/Sage-2.10.1.rc4-gen.pyx-long-doctest-failure.patch) by mabshoff created at 2008-01-31 08:32:31\n\nThe fix might be needed due to the pari 2.3.3 update.",
     "created_at": "2008-01-31T08:32:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2001",
     "type": "issue_comment",
@@ -146,7 +146,7 @@ archive/issue_comments_012946.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.10.1.rc4-gen.pyx-long-doctest-failure.patch](tarball://root/attachments/some-uuid/ticket2001/Sage-2.10.1.rc4-gen.pyx-long-doctest-failure.patch) by mabshoff created at 2008-01-31 08:32:31
 
 The fix might be needed due to the pari 2.3.3 update.
 
@@ -260,7 +260,7 @@ this fixes all remaining problems (I claim, and have tested fairly carefully)
 archive/issue_comments_012950.json:
 ```json
 {
-    "body": "Attachment\n\nAll three patches look good, i.e. was reviewed mine and the other way around.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac-2001-rest_of_problems.patch](tarball://root/attachments/some-uuid/ticket2001/trac-2001-rest_of_problems.patch) by mabshoff created at 2008-02-02 09:51:39\n\nAll three patches look good, i.e. was reviewed mine and the other way around.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-02T09:51:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2001",
     "type": "issue_comment",
@@ -269,7 +269,7 @@ archive/issue_comments_012950.json:
 }
 ```
 
-Attachment
+Attachment [trac-2001-rest_of_problems.patch](tarball://root/attachments/some-uuid/ticket2001/trac-2001-rest_of_problems.patch) by mabshoff created at 2008-02-02 09:51:39
 
 All three patches look good, i.e. was reviewed mine and the other way around.
 

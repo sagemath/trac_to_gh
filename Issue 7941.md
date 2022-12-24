@@ -108,7 +108,7 @@ Changing status from new to needs_review.
 archive/issue_comments_069277.json:
 ```json
 {
-    "body": "Attachment\n\napply to scripts repo",
+    "body": "Attachment [trac_7941.patch](tarball://root/attachments/some-uuid/ticket7941/trac_7941.patch) by rlm created at 2010-01-19 03:40:40\n\napply to scripts repo",
     "created_at": "2010-01-19T03:40:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7941",
     "type": "issue_comment",
@@ -117,7 +117,7 @@ archive/issue_comments_069277.json:
 }
 ```
 
-Attachment
+Attachment [trac_7941.patch](tarball://root/attachments/some-uuid/ticket7941/trac_7941.patch) by rlm created at 2010-01-19 03:40:40
 
 apply to scripts repo
 

@@ -89,7 +89,7 @@ Changing keywords from "" to "editor_mabshoff".
 archive/issue_comments_023804.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3399_2.patch](tarball://root/attachments/some-uuid/ticket3399/trac_3399_2.patch) by gfurnish created at 2008-07-01 16:47:03",
     "created_at": "2008-07-01T16:47:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3399",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_023804.json:
 }
 ```
 
-Attachment
+Attachment [trac_3399_2.patch](tarball://root/attachments/some-uuid/ticket3399/trac_3399_2.patch) by gfurnish created at 2008-07-01 16:47:03
 
 
 
@@ -107,7 +107,7 @@ Attachment
 archive/issue_comments_023805.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3399_2_extcode.patch](tarball://root/attachments/some-uuid/ticket3399/trac_3399_2_extcode.patch) by gfurnish created at 2008-07-01 16:47:19",
     "created_at": "2008-07-01T16:47:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3399",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_023805.json:
 }
 ```
 
-Attachment
+Attachment [trac_3399_2_extcode.patch](tarball://root/attachments/some-uuid/ticket3399/trac_3399_2_extcode.patch) by gfurnish created at 2008-07-01 16:47:19
 
 
 
@@ -125,7 +125,7 @@ Attachment
 archive/issue_comments_023806.json:
 ```json
 {
-    "body": "Attachment\n\nPlease remove the old patches, apply the new patches, and rereview.  This patch also adds documentation on how to add files to pbuild: see devel/sage/sagebuild.py",
+    "body": "Attachment [trac_3399_2_scripts.patch](tarball://root/attachments/some-uuid/ticket3399/trac_3399_2_scripts.patch) by gfurnish created at 2008-07-01 16:48:14\n\nPlease remove the old patches, apply the new patches, and rereview.  This patch also adds documentation on how to add files to pbuild: see devel/sage/sagebuild.py",
     "created_at": "2008-07-01T16:48:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3399",
     "type": "issue_comment",
@@ -134,7 +134,7 @@ archive/issue_comments_023806.json:
 }
 ```
 
-Attachment
+Attachment [trac_3399_2_scripts.patch](tarball://root/attachments/some-uuid/ticket3399/trac_3399_2_scripts.patch) by gfurnish created at 2008-07-01 16:48:14
 
 Please remove the old patches, apply the new patches, and rereview.  This patch also adds documentation on how to add files to pbuild: see devel/sage/sagebuild.py
 

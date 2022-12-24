@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1958
 archive/issue_comments_012640.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1958-sage0-fix.patch](tarball://root/attachments/some-uuid/ticket1958/1958-sage0-fix.patch) by craigcitro created at 2008-01-28 04:39:53",
     "created_at": "2008-01-28T04:39:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1958",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_012640.json:
 }
 ```
 
-Attachment
+Attachment [1958-sage0-fix.patch](tarball://root/attachments/some-uuid/ticket1958/1958-sage0-fix.patch) by craigcitro created at 2008-01-28 04:39:53
 
 
 
@@ -91,7 +91,7 @@ Michael
 archive/issue_comments_012643.json:
 ```json
 {
-    "body": "Attachment\n\nAttached a better band-aid for this, at wstein's suggestion.",
+    "body": "Attachment [1958-bandaid-v2.patch](tarball://root/attachments/some-uuid/ticket1958/1958-bandaid-v2.patch) by craigcitro created at 2008-01-28 06:50:16\n\nAttached a better band-aid for this, at wstein's suggestion.",
     "created_at": "2008-01-28T06:50:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1958",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_012643.json:
 }
 ```
 
-Attachment
+Attachment [1958-bandaid-v2.patch](tarball://root/attachments/some-uuid/ticket1958/1958-bandaid-v2.patch) by craigcitro created at 2008-01-28 06:50:16
 
 Attached a better band-aid for this, at wstein's suggestion.
 

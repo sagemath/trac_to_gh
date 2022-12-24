@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2690
 archive/issue_comments_018516.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2690-circular-genus.patch](tarball://root/attachments/some-uuid/ticket2690/2690-circular-genus.patch) by rlm created at 2008-03-28 00:01:40",
     "created_at": "2008-03-28T00:01:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2690",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_018516.json:
 }
 ```
 
-Attachment
+Attachment [2690-circular-genus.patch](tarball://root/attachments/some-uuid/ticket2690/2690-circular-genus.patch) by rlm created at 2008-03-28 00:01:40
 
 
 

@@ -198,7 +198,7 @@ Note that this patch also fixes a NASTY hang error with negative integer CDF inp
 archive/issue_comments_043236.json:
 ```json
 {
-    "body": "Attachment\n\nBased on 4.1.2.alpha4",
+    "body": "Attachment [trac_5556-gamma-fix.patch](tarball://root/attachments/some-uuid/ticket5556/trac_5556-gamma-fix.patch) by kcrisman created at 2009-09-30 17:00:51\n\nBased on 4.1.2.alpha4",
     "created_at": "2009-09-30T17:00:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5556",
     "type": "issue_comment",
@@ -207,7 +207,7 @@ archive/issue_comments_043236.json:
 }
 ```
 
-Attachment
+Attachment [trac_5556-gamma-fix.patch](tarball://root/attachments/some-uuid/ticket5556/trac_5556-gamma-fix.patch) by kcrisman created at 2009-09-30 17:00:51
 
 Based on 4.1.2.alpha4
 
@@ -218,7 +218,7 @@ Based on 4.1.2.alpha4
 archive/issue_comments_043237.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5556-reviewer.patch](tarball://root/attachments/some-uuid/ticket5556/trac_5556-reviewer.patch) by mhansen created at 2009-10-05 06:00:15",
     "created_at": "2009-10-05T06:00:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5556",
     "type": "issue_comment",
@@ -227,7 +227,7 @@ archive/issue_comments_043237.json:
 }
 ```
 
-Attachment
+Attachment [trac_5556-reviewer.patch](tarball://root/attachments/some-uuid/ticket5556/trac_5556-reviewer.patch) by mhansen created at 2009-10-05 06:00:15
 
 
 

@@ -53,7 +53,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_078120.json:
 ```json
 {
-    "body": "Attachment\n\nI have added two new functions\n\n```\nsage: from sage.libs.lcalc.lcalc_Lfunction import (Lfunction_from_character, Lfunction_from_elliptic_curve)\nsage: chi=DirichletGroup(123)[31]\nsage: L1=Lfunction_from_character(chi)\nsage: L1.hardy_z_function(.5+5*I)\n-0.462453973892362 - 7.93526871565814e-15*I\nsage: L1.compute_rank()\n0\nsage: L2=Lfunction_from_elliptic_curve(EllipticCurve('37a'))\nsage: L2.compute_rank()\n1\nsage: L2.hardy_z_function(.5+6*I)\n-2.17184689048993 - 1.76053169785863e-15*I\nsage: L2.hardy_z_function(-.5+6*I)\n4.17981266933977 + 36.9688966864015*I\n```\n\n\nAlthough for elliptic curves, other programs will be better for analytic rank, I have added this because here it works for any L function",
+    "body": "Attachment [trac_8621.patch](tarball://root/attachments/some-uuid/ticket8621/trac_8621.patch) by rishi created at 2010-03-29 00:44:13\n\nI have added two new functions\n\n```\nsage: from sage.libs.lcalc.lcalc_Lfunction import (Lfunction_from_character, Lfunction_from_elliptic_curve)\nsage: chi=DirichletGroup(123)[31]\nsage: L1=Lfunction_from_character(chi)\nsage: L1.hardy_z_function(.5+5*I)\n-0.462453973892362 - 7.93526871565814e-15*I\nsage: L1.compute_rank()\n0\nsage: L2=Lfunction_from_elliptic_curve(EllipticCurve('37a'))\nsage: L2.compute_rank()\n1\nsage: L2.hardy_z_function(.5+6*I)\n-2.17184689048993 - 1.76053169785863e-15*I\nsage: L2.hardy_z_function(-.5+6*I)\n4.17981266933977 + 36.9688966864015*I\n```\n\n\nAlthough for elliptic curves, other programs will be better for analytic rank, I have added this because here it works for any L function",
     "created_at": "2010-03-29T00:44:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8621",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_078120.json:
 }
 ```
 
-Attachment
+Attachment [trac_8621.patch](tarball://root/attachments/some-uuid/ticket8621/trac_8621.patch) by rishi created at 2010-03-29 00:44:13
 
 I have added two new functions
 
@@ -93,7 +93,7 @@ Although for elliptic curves, other programs will be better for analytic rank, I
 archive/issue_comments_078121.json:
 ```json
 {
-    "body": "Attachment\n\nrebase of rishi's patch",
+    "body": "Attachment [trac_8621.2.patch](tarball://root/attachments/some-uuid/ticket8621/trac_8621.2.patch) by bober created at 2011-09-06 11:05:27\n\nrebase of rishi's patch",
     "created_at": "2011-09-06T11:05:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8621",
     "type": "issue_comment",
@@ -102,7 +102,7 @@ archive/issue_comments_078121.json:
 }
 ```
 
-Attachment
+Attachment [trac_8621.2.patch](tarball://root/attachments/some-uuid/ticket8621/trac_8621.2.patch) by bober created at 2011-09-06 11:05:27
 
 rebase of rishi's patch
 
@@ -305,7 +305,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_078130.json:
 ```json
 {
-    "body": "Attachment\n\nI am attaching a patch to deal with this.",
+    "body": "Attachment [trac_8621-review.patch](tarball://root/attachments/some-uuid/ticket8621/trac_8621-review.patch) by fbissey created at 2011-09-15 22:25:11\n\nI am attaching a patch to deal with this.",
     "created_at": "2011-09-15T22:25:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8621",
     "type": "issue_comment",
@@ -314,7 +314,7 @@ archive/issue_comments_078130.json:
 }
 ```
 
-Attachment
+Attachment [trac_8621-review.patch](tarball://root/attachments/some-uuid/ticket8621/trac_8621-review.patch) by fbissey created at 2011-09-15 22:25:11
 
 I am attaching a patch to deal with this.
 
@@ -365,7 +365,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_078133.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac8621.patch](tarball://root/attachments/some-uuid/ticket8621/trac8621.patch) by rishi created at 2012-04-15 20:00:46",
     "created_at": "2012-04-15T20:00:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8621",
     "type": "issue_comment",
@@ -374,7 +374,7 @@ archive/issue_comments_078133.json:
 }
 ```
 
-Attachment
+Attachment [trac8621.patch](tarball://root/attachments/some-uuid/ticket8621/trac8621.patch) by rishi created at 2012-04-15 20:00:46
 
 
 
@@ -441,7 +441,7 @@ The anaytic rank computation using Dokchitser's program is superior to lcalc's.
 archive/issue_comments_078137.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac8621_review.patch](tarball://root/attachments/some-uuid/ticket8621/trac8621_review.patch) by bober created at 2012-05-29 04:32:50",
     "created_at": "2012-05-29T04:32:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8621",
     "type": "issue_comment",
@@ -450,7 +450,7 @@ archive/issue_comments_078137.json:
 }
 ```
 
-Attachment
+Attachment [trac8621_review.patch](tarball://root/attachments/some-uuid/ticket8621/trac8621_review.patch) by bober created at 2012-05-29 04:32:50
 
 
 
@@ -576,7 +576,7 @@ replace previous (rebased for 5.11.rc1)
 archive/issue_comments_078144.json:
 ```json
 {
-    "body": "Attachment\n\nI replaced the review patch with one which applies to 5.11.rc1.  The only change was in the index entry to the reference manual, which has since been rearranged.",
+    "body": "Attachment [trac8621_review_rebase.patch](tarball://root/attachments/some-uuid/ticket8621/trac8621_review_rebase.patch) by cremona created at 2013-08-11 16:18:49\n\nI replaced the review patch with one which applies to 5.11.rc1.  The only change was in the index entry to the reference manual, which has since been rearranged.",
     "created_at": "2013-08-11T16:18:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8621",
     "type": "issue_comment",
@@ -585,7 +585,7 @@ archive/issue_comments_078144.json:
 }
 ```
 
-Attachment
+Attachment [trac8621_review_rebase.patch](tarball://root/attachments/some-uuid/ticket8621/trac8621_review_rebase.patch) by cremona created at 2013-08-11 16:18:49
 
 I replaced the review patch with one which applies to 5.11.rc1.  The only change was in the index entry to the reference manual, which has since been rearranged.
 

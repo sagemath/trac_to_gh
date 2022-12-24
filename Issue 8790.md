@@ -98,7 +98,7 @@ Add docstring to functions `combine`, `simplify` and `prove`.
 archive/issue_comments_080485.json:
 ```json
 {
-    "body": "Attachment\n\nFunctions `simplify`, `combine` and `prove` are actually not implemented: the code is a stub. Patch ` sage-issue-8790-not-implemented.diff` provides a docstring stating that.\n\nI'm not sure how doctests should be provided here: one could probably change the code to raise a `NotImplemented` exception and look for that in the doctest.",
+    "body": "Attachment [sage-issue-8790-not-implemented.diff](tarball://root/attachments/some-uuid/ticket8790/sage-issue-8790-not-implemented.diff) by riccardomurri created at 2013-08-25 11:45:19\n\nFunctions `simplify`, `combine` and `prove` are actually not implemented: the code is a stub. Patch ` sage-issue-8790-not-implemented.diff` provides a docstring stating that.\n\nI'm not sure how doctests should be provided here: one could probably change the code to raise a `NotImplemented` exception and look for that in the doctest.",
     "created_at": "2013-08-25T11:45:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8790",
     "type": "issue_comment",
@@ -107,7 +107,7 @@ archive/issue_comments_080485.json:
 }
 ```
 
-Attachment
+Attachment [sage-issue-8790-not-implemented.diff](tarball://root/attachments/some-uuid/ticket8790/sage-issue-8790-not-implemented.diff) by riccardomurri created at 2013-08-25 11:45:19
 
 Functions `simplify`, `combine` and `prove` are actually not implemented: the code is a stub. Patch ` sage-issue-8790-not-implemented.diff` provides a docstring stating that.
 
@@ -138,7 +138,7 @@ Rename internal functions to start with an underscore
 archive/issue_comments_080487.json:
 ```json
 {
-    "body": "Attachment\n\nThe `get_bits`, `eval_*`, `reduce_*` and `tokenize` functions are\nexplictly described as \"for internal use only\".  It is inconvenient to\nprovide a doctest for them, as arguments are the internal\ndata structures used in the `SymbolicLogic` class.  \n\nPatch ` sage-issue-8790-module-private-funcs.diff\u200b`\nrenames the functions to begin with an underscore to make their\nnon-public nature more evident, in the hope to silence the coverage\nwarning.",
+    "body": "Attachment [sage-issue-8790-module-private-funcs.diff](tarball://root/attachments/some-uuid/ticket8790/sage-issue-8790-module-private-funcs.diff) by riccardomurri created at 2013-08-25 11:51:49\n\nThe `get_bits`, `eval_*`, `reduce_*` and `tokenize` functions are\nexplictly described as \"for internal use only\".  It is inconvenient to\nprovide a doctest for them, as arguments are the internal\ndata structures used in the `SymbolicLogic` class.  \n\nPatch ` sage-issue-8790-module-private-funcs.diff\u200b`\nrenames the functions to begin with an underscore to make their\nnon-public nature more evident, in the hope to silence the coverage\nwarning.",
     "created_at": "2013-08-25T11:51:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8790",
     "type": "issue_comment",
@@ -147,7 +147,7 @@ archive/issue_comments_080487.json:
 }
 ```
 
-Attachment
+Attachment [sage-issue-8790-module-private-funcs.diff](tarball://root/attachments/some-uuid/ticket8790/sage-issue-8790-module-private-funcs.diff) by riccardomurri created at 2013-08-25 11:51:49
 
 The `get_bits`, `eval_*`, `reduce_*` and `tokenize` functions are
 explictly described as "for internal use only".  It is inconvenient to

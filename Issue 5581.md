@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5581
 archive/issue_comments_043506.json:
 ```json
 {
-    "body": "Attachment\n\nadds face lattices and f-vectors to polytopes",
+    "body": "Attachment [trac_5581_face_lattice.patch](tarball://root/attachments/some-uuid/ticket5581/trac_5581_face_lattice.patch) by mhampton created at 2009-03-21 17:15:00\n\nadds face lattices and f-vectors to polytopes",
     "created_at": "2009-03-21T17:15:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5581",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_043506.json:
 }
 ```
 
-Attachment
+Attachment [trac_5581_face_lattice.patch](tarball://root/attachments/some-uuid/ticket5581/trac_5581_face_lattice.patch) by mhampton created at 2009-03-21 17:15:00
 
 adds face lattices and f-vectors to polytopes
 
@@ -71,7 +71,7 @@ rebased against 3.4.2 and improved doctests.
 archive/issue_comments_043508.json:
 ```json
 {
-    "body": "Attachment\n\nI applied trac_5581_rebase.patch to Sage Version 4.0.alpha0, Release Date: 2009-05-15.  All doctests in sage/geometry passed, and I tried several other examples.  \n\nThis patch works with trac_4875_1.patch: the two work together regardless of the order in which they are applied.",
+    "body": "Attachment [trac_5581_rebase.patch](tarball://root/attachments/some-uuid/ticket5581/trac_5581_rebase.patch) by dperkinson created at 2009-05-20 19:22:38\n\nI applied trac_5581_rebase.patch to Sage Version 4.0.alpha0, Release Date: 2009-05-15.  All doctests in sage/geometry passed, and I tried several other examples.  \n\nThis patch works with trac_4875_1.patch: the two work together regardless of the order in which they are applied.",
     "created_at": "2009-05-20T19:22:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5581",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_043508.json:
 }
 ```
 
-Attachment
+Attachment [trac_5581_rebase.patch](tarball://root/attachments/some-uuid/ticket5581/trac_5581_rebase.patch) by dperkinson created at 2009-05-20 19:22:38
 
 I applied trac_5581_rebase.patch to Sage Version 4.0.alpha0, Release Date: 2009-05-15.  All doctests in sage/geometry passed, and I tried several other examples.  
 

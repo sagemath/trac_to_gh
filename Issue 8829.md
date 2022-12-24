@@ -95,7 +95,7 @@ Another point which might be useful over number fields:  it suffices to use degr
 archive/issue_comments_081120.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8829-ec-nf-sat.patch](tarball://root/attachments/some-uuid/ticket8829/8829-ec-nf-sat.patch) by robertwb created at 2010-04-30 08:39:16",
     "created_at": "2010-04-30T08:39:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8829",
     "type": "issue_comment",
@@ -104,7 +104,7 @@ archive/issue_comments_081120.json:
 }
 ```
 
-Attachment
+Attachment [8829-ec-nf-sat.patch](tarball://root/attachments/some-uuid/ticket8829/8829-ec-nf-sat.patch) by robertwb created at 2010-04-30 08:39:16
 
 
 

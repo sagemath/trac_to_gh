@@ -91,7 +91,7 @@ sage: v = maxima.vandermonde_matrix([x,y,1/2])
 archive/issue_comments_032558.json:
 ```json
 {
-    "body": "Attachment\n\nI updated the patch with some doctests.",
+    "body": "Attachment [maxima_matrix.patch](tarball://root/attachments/some-uuid/ticket4431/maxima_matrix.patch) by whuss created at 2008-11-05 15:58:30\n\nI updated the patch with some doctests.",
     "created_at": "2008-11-05T15:58:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4431",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_032558.json:
 }
 ```
 
-Attachment
+Attachment [maxima_matrix.patch](tarball://root/attachments/some-uuid/ticket4431/maxima_matrix.patch) by whuss created at 2008-11-05 15:58:30
 
 I updated the patch with some doctests.
 

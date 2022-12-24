@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3048
 archive/issue_comments_020985.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3048.patch](tarball://root/attachments/some-uuid/ticket3048/3048.patch) by mhansen created at 2008-04-27 21:41:19",
     "created_at": "2008-04-27T21:41:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3048",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_020985.json:
 }
 ```
 
-Attachment
+Attachment [3048.patch](tarball://root/attachments/some-uuid/ticket3048/3048.patch) by mhansen created at 2008-04-27 21:41:19
 
 
 
@@ -444,7 +444,7 @@ Things to do:
 archive/issue_comments_021000.json:
 ```json
 {
-    "body": "Attachment\n\napply instead of previous patch",
+    "body": "Attachment [lu_decomposition.patch](tarball://root/attachments/some-uuid/ticket3048/lu_decomposition.patch) by jason created at 2010-04-22 02:57:47\n\napply instead of previous patch",
     "created_at": "2010-04-22T02:57:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3048",
     "type": "issue_comment",
@@ -453,7 +453,7 @@ archive/issue_comments_021000.json:
 }
 ```
 
-Attachment
+Attachment [lu_decomposition.patch](tarball://root/attachments/some-uuid/ticket3048/lu_decomposition.patch) by jason created at 2010-04-22 02:57:47
 
 apply instead of previous patch
 

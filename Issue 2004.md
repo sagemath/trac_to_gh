@@ -79,7 +79,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2004
 archive/issue_comments_012967.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [height_via_multiply1.patch](tarball://root/attachments/some-uuid/ticket2004/height_via_multiply1.patch) by dmharvey created at 2008-01-31 20:35:54",
     "created_at": "2008-01-31T20:35:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2004",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_012967.json:
 }
 ```
 
-Attachment
+Attachment [height_via_multiply1.patch](tarball://root/attachments/some-uuid/ticket2004/height_via_multiply1.patch) by dmharvey created at 2008-01-31 20:35:54
 
 
 
@@ -97,7 +97,7 @@ Attachment
 archive/issue_comments_012968.json:
 ```json
 {
-    "body": "Attachment\n\nyou need to apply both patch files",
+    "body": "Attachment [height_via_multiply2.patch](tarball://root/attachments/some-uuid/ticket2004/height_via_multiply2.patch) by dmharvey created at 2008-01-31 20:36:40\n\nyou need to apply both patch files",
     "created_at": "2008-01-31T20:36:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2004",
     "type": "issue_comment",
@@ -106,7 +106,7 @@ archive/issue_comments_012968.json:
 }
 ```
 
-Attachment
+Attachment [height_via_multiply2.patch](tarball://root/attachments/some-uuid/ticket2004/height_via_multiply2.patch) by dmharvey created at 2008-01-31 20:36:40
 
 you need to apply both patch files
 

@@ -52,7 +52,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6300
 archive/issue_comments_050261.json:
 ```json
 {
-    "body": "Attachment\n\nPatch depends on hotfix at #6051.",
+    "body": "Attachment [trac_6300.patch](tarball://root/attachments/some-uuid/ticket6300/trac_6300.patch) by malb created at 2009-06-15 15:58:25\n\nPatch depends on hotfix at #6051.",
     "created_at": "2009-06-15T15:58:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6300",
     "type": "issue_comment",
@@ -61,7 +61,7 @@ archive/issue_comments_050261.json:
 }
 ```
 
-Attachment
+Attachment [trac_6300.patch](tarball://root/attachments/some-uuid/ticket6300/trac_6300.patch) by malb created at 2009-06-15 15:58:25
 
 Patch depends on hotfix at #6051.
 

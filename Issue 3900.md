@@ -69,7 +69,7 @@ Changing component from algebra to build.
 archive/issue_comments_027901.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3900.patch](tarball://root/attachments/some-uuid/ticket3900/sage-3900.patch) by was created at 2008-10-23 21:25:50",
     "created_at": "2008-10-23T21:25:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3900",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_027901.json:
 }
 ```
 
-Attachment
+Attachment [sage-3900.patch](tarball://root/attachments/some-uuid/ticket3900/sage-3900.patch) by was created at 2008-10-23 21:25:50
 
 
 
@@ -105,7 +105,7 @@ You must place this tarball in SAGE_ROOT/data and *leave* it compressed.
 archive/issue_comments_027903.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [pickle_jar.tar.bz2](tarball://root/attachments/some-uuid/ticket3900/pickle_jar.tar.bz2) by was created at 2008-10-23 21:27:11",
     "created_at": "2008-10-23T21:27:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3900",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_027903.json:
 }
 ```
 
-Attachment
+Attachment [pickle_jar.tar.bz2](tarball://root/attachments/some-uuid/ticket3900/pickle_jar.tar.bz2) by was created at 2008-10-23 21:27:11
 
 
 

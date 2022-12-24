@@ -62,7 +62,7 @@ Old patch for reference
 archive/issue_comments_093425.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9640old.patch](tarball://root/attachments/some-uuid/ticket9640/9640old.patch) by jdemeyer created at 2010-10-17 18:32:31",
     "created_at": "2010-10-17T18:32:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
@@ -71,7 +71,7 @@ archive/issue_comments_093425.json:
 }
 ```
 
-Attachment
+Attachment [9640old.patch](tarball://root/attachments/some-uuid/ticket9640/9640old.patch) by jdemeyer created at 2010-10-17 18:32:31
 
 
 
@@ -127,7 +127,7 @@ This may make #14894 redundant, although that ticket could be used for general t
 archive/issue_comments_093428.json:
 ```json
 {
-    "body": "Attachment\n\nbased on 5.12.beta4 + #15124",
+    "body": "Attachment [9640-pari_error_handling.patch](tarball://root/attachments/some-uuid/ticket9640/9640-pari_error_handling.patch) by pbruin created at 2013-09-11 15:22:35\n\nbased on 5.12.beta4 + #15124",
     "created_at": "2013-09-11T15:22:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
@@ -136,7 +136,7 @@ archive/issue_comments_093428.json:
 }
 ```
 
-Attachment
+Attachment [9640-pari_error_handling.patch](tarball://root/attachments/some-uuid/ticket9640/9640-pari_error_handling.patch) by pbruin created at 2013-09-11 15:22:35
 
 based on 5.12.beta4 + #15124
 
@@ -520,7 +520,7 @@ Working/thinking about this...
 archive/issue_comments_093448.json:
 ```json
 {
-    "body": "Attachment\n\nbased on 5.12.beta4 + #15124",
+    "body": "Attachment [9640-pari_error_callbacks.patch](tarball://root/attachments/some-uuid/ticket9640/9640-pari_error_callbacks.patch) by jdemeyer created at 2013-11-01 10:32:30\n\nbased on 5.12.beta4 + #15124",
     "created_at": "2013-11-01T10:32:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
@@ -529,7 +529,7 @@ archive/issue_comments_093448.json:
 }
 ```
 
-Attachment
+Attachment [9640-pari_error_callbacks.patch](tarball://root/attachments/some-uuid/ticket9640/9640-pari_error_callbacks.patch) by jdemeyer created at 2013-11-01 10:32:30
 
 based on 5.12.beta4 + #15124
 
@@ -639,7 +639,7 @@ For the time being (at least until we switch to PARI 2.6) or unless someone real
 archive/issue_comments_093453.json:
 ```json
 {
-    "body": "Attachment\n\nRemoved `PariError.parimessage()` method and moved the `cdef extern from \"misc.h\":` block to the top of `gen.pyx`.",
+    "body": "Attachment [9640-pari_error_callbacks_v2.patch](tarball://root/attachments/some-uuid/ticket9640/9640-pari_error_callbacks_v2.patch) by jdemeyer created at 2013-11-03 08:11:00\n\nRemoved `PariError.parimessage()` method and moved the `cdef extern from \"misc.h\":` block to the top of `gen.pyx`.",
     "created_at": "2013-11-03T08:11:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
@@ -648,7 +648,7 @@ archive/issue_comments_093453.json:
 }
 ```
 
-Attachment
+Attachment [9640-pari_error_callbacks_v2.patch](tarball://root/attachments/some-uuid/ticket9640/9640-pari_error_callbacks_v2.patch) by jdemeyer created at 2013-11-03 08:11:00
 
 Removed `PariError.parimessage()` method and moved the `cdef extern from "misc.h":` block to the top of `gen.pyx`.
 

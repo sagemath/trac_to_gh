@@ -65,7 +65,7 @@ sage -testall log, with tracebacks.
 archive/issue_comments_087442.json:
 ```json
 {
-    "body": "Attachment\n\nRecompiled sage - no more problems.",
+    "body": "Attachment [test.log](tarball://root/attachments/some-uuid/ticket9282/test.log) by retry created at 2010-06-22 07:45:38\n\nRecompiled sage - no more problems.",
     "created_at": "2010-06-22T07:45:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9282",
     "type": "issue_comment",
@@ -74,7 +74,7 @@ archive/issue_comments_087442.json:
 }
 ```
 
-Attachment
+Attachment [test.log](tarball://root/attachments/some-uuid/ticket9282/test.log) by retry created at 2010-06-22 07:45:38
 
 Recompiled sage - no more problems.
 

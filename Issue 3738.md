@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3738
 archive/issue_comments_026530.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3738-1-new_parent.patch](tarball://root/attachments/some-uuid/ticket3738/3738-1-new_parent.patch) by robertwb created at 2008-07-29 09:18:58",
     "created_at": "2008-07-29T09:18:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3738",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_026530.json:
 }
 ```
 
-Attachment
+Attachment [3738-1-new_parent.patch](tarball://root/attachments/some-uuid/ticket3738/3738-1-new_parent.patch) by robertwb created at 2008-07-29 09:18:58
 
 
 
@@ -51,7 +51,7 @@ Attachment
 archive/issue_comments_026531.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3738-2-new_parent_fixes.patch](tarball://root/attachments/some-uuid/ticket3738/3738-2-new_parent_fixes.patch) by robertwb created at 2008-07-29 09:19:11",
     "created_at": "2008-07-29T09:19:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3738",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_026531.json:
 }
 ```
 
-Attachment
+Attachment [3738-2-new_parent_fixes.patch](tarball://root/attachments/some-uuid/ticket3738/3738-2-new_parent_fixes.patch) by robertwb created at 2008-07-29 09:19:11
 
 
 
@@ -69,7 +69,7 @@ Attachment
 archive/issue_comments_026532.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3738-3-new_coercion_model.patch](tarball://root/attachments/some-uuid/ticket3738/3738-3-new_coercion_model.patch) by robertwb created at 2008-07-29 09:19:47",
     "created_at": "2008-07-29T09:19:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3738",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_026532.json:
 }
 ```
 
-Attachment
+Attachment [3738-3-new_coercion_model.patch](tarball://root/attachments/some-uuid/ticket3738/3738-3-new_coercion_model.patch) by robertwb created at 2008-07-29 09:19:47
 
 
 
@@ -87,7 +87,7 @@ Attachment
 archive/issue_comments_026533.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3738-4-coerce_name_fixes.patch](tarball://root/attachments/some-uuid/ticket3738/3738-4-coerce_name_fixes.patch) by robertwb created at 2008-07-29 09:20:00",
     "created_at": "2008-07-29T09:20:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3738",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_026533.json:
 }
 ```
 
-Attachment
+Attachment [3738-4-coerce_name_fixes.patch](tarball://root/attachments/some-uuid/ticket3738/3738-4-coerce_name_fixes.patch) by robertwb created at 2008-07-29 09:20:00
 
 
 
@@ -105,7 +105,7 @@ Attachment
 archive/issue_comments_026534.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3738-5-coerce_compat_layer.patch](tarball://root/attachments/some-uuid/ticket3738/3738-5-coerce_compat_layer.patch) by robertwb created at 2008-07-29 09:20:12",
     "created_at": "2008-07-29T09:20:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3738",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_026534.json:
 }
 ```
 
-Attachment
+Attachment [3738-5-coerce_compat_layer.patch](tarball://root/attachments/some-uuid/ticket3738/3738-5-coerce_compat_layer.patch) by robertwb created at 2008-07-29 09:20:12
 
 
 
@@ -123,7 +123,7 @@ Attachment
 archive/issue_comments_026535.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3738-6-coerce_tests_pass.patch](tarball://root/attachments/some-uuid/ticket3738/3738-6-coerce_tests_pass.patch) by robertwb created at 2008-07-29 09:20:35",
     "created_at": "2008-07-29T09:20:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3738",
     "type": "issue_comment",
@@ -132,7 +132,7 @@ archive/issue_comments_026535.json:
 }
 ```
 
-Attachment
+Attachment [3738-6-coerce_tests_pass.patch](tarball://root/attachments/some-uuid/ticket3738/3738-6-coerce_tests_pass.patch) by robertwb created at 2008-07-29 09:20:35
 
 
 
@@ -141,7 +141,7 @@ Attachment
 archive/issue_comments_026536.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3738-8-old_check.patch](tarball://root/attachments/some-uuid/ticket3738/3738-8-old_check.patch) by robertwb created at 2008-07-29 09:20:58",
     "created_at": "2008-07-29T09:20:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3738",
     "type": "issue_comment",
@@ -150,7 +150,7 @@ archive/issue_comments_026536.json:
 }
 ```
 
-Attachment
+Attachment [3738-8-old_check.patch](tarball://root/attachments/some-uuid/ticket3738/3738-8-old_check.patch) by robertwb created at 2008-07-29 09:20:58
 
 
 
@@ -159,7 +159,7 @@ Attachment
 archive/issue_comments_026537.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3738-9-ccallmap.patch](tarball://root/attachments/some-uuid/ticket3738/3738-9-ccallmap.patch) by robertwb created at 2008-07-29 09:21:11",
     "created_at": "2008-07-29T09:21:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3738",
     "type": "issue_comment",
@@ -168,7 +168,7 @@ archive/issue_comments_026537.json:
 }
 ```
 
-Attachment
+Attachment [3738-9-ccallmap.patch](tarball://root/attachments/some-uuid/ticket3738/3738-9-ccallmap.patch) by robertwb created at 2008-07-29 09:21:11
 
 
 
@@ -177,7 +177,7 @@ Attachment
 archive/issue_comments_026538.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3738-10-coerce_docs.patch](tarball://root/attachments/some-uuid/ticket3738/3738-10-coerce_docs.patch) by robertwb created at 2008-07-29 09:22:05",
     "created_at": "2008-07-29T09:22:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3738",
     "type": "issue_comment",
@@ -186,7 +186,7 @@ archive/issue_comments_026538.json:
 }
 ```
 
-Attachment
+Attachment [3738-10-coerce_docs.patch](tarball://root/attachments/some-uuid/ticket3738/3738-10-coerce_docs.patch) by robertwb created at 2008-07-29 09:22:05
 
 
 
@@ -195,7 +195,7 @@ Attachment
 archive/issue_comments_026539.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3738-7-maps.patch](tarball://root/attachments/some-uuid/ticket3738/3738-7-maps.patch) by robertwb created at 2008-07-30 04:23:37",
     "created_at": "2008-07-30T04:23:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3738",
     "type": "issue_comment",
@@ -204,7 +204,7 @@ archive/issue_comments_026539.json:
 }
 ```
 
-Attachment
+Attachment [3738-7-maps.patch](tarball://root/attachments/some-uuid/ticket3738/3738-7-maps.patch) by robertwb created at 2008-07-30 04:23:37
 
 
 
@@ -213,7 +213,7 @@ Attachment
 archive/issue_comments_026540.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3738-12-explain-div.patch](tarball://root/attachments/some-uuid/ticket3738/3738-12-explain-div.patch) by robertwb created at 2008-07-30 05:53:43",
     "created_at": "2008-07-30T05:53:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3738",
     "type": "issue_comment",
@@ -222,7 +222,7 @@ archive/issue_comments_026540.json:
 }
 ```
 
-Attachment
+Attachment [3738-12-explain-div.patch](tarball://root/attachments/some-uuid/ticket3738/3738-12-explain-div.patch) by robertwb created at 2008-07-30 05:53:43
 
 
 
@@ -231,7 +231,7 @@ Attachment
 archive/issue_comments_026541.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3738-11-constructor.patch](tarball://root/attachments/some-uuid/ticket3738/3738-11-constructor.patch) by robertwb created at 2008-07-30 06:18:17",
     "created_at": "2008-07-30T06:18:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3738",
     "type": "issue_comment",
@@ -240,7 +240,7 @@ archive/issue_comments_026541.json:
 }
 ```
 
-Attachment
+Attachment [3738-11-constructor.patch](tarball://root/attachments/some-uuid/ticket3738/3738-11-constructor.patch) by robertwb created at 2008-07-30 06:18:17
 
 
 
@@ -249,7 +249,7 @@ Attachment
 archive/issue_comments_026542.json:
 ```json
 {
-    "body": "Attachment\n\nA remark about doctest coverage:\n\n```\nOn Jul 30, 2008, at 9:49 AM, William Stein wrote:\n\n>> I think this is probably something that it would be good for multiple\n>> people could look at. (Both those previously involved in coercion,\n>> and those not). It could help spread the work around too.\n>>\n>\n> Michael Abshoff commented to me that the new coercion code you've\n> posted introduces new functions that have no doctests.  Any comment?\n\n\nThat is a true accusation, though I feel there is some justification\nas many of the functions are not actually being used yet so it is\nhard to test them (they were being used in the coercion branch, so\nit's not completely untested code, they're just not used until\nParents are converted.) Also, a lot of them are generic helper\nfunctions that are supposed to be overridden. And a third point is\nthat much of this was written before the 100% doctest rule, and there\nis a significant portion that is renaming/re-factoring old code.\n\nThat being said, I have strived for better coverage (and\ndocumentation, not just tests). Currently in terms of new (or heavily\nmodified) code we have:\n\nsage/structure/coerce.pyx\nSCORE sage/structure/coerce.pyx: 100% (20 of 20)\n\nsage/structure/coerce_actions.pyx\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE sage/structure/coerce_actions.pyx: 66% (10 of 15)\n\nMissing documentation:\n         * __init__(self, G, S)\n         * Element _call_(self, g, a)\n         * __init__(self, G, S)\n         * Element _call_(self, a, g)\n         * __cinit__(self)\n\nThe first 4 are methods of the RAction and LAction classes that are\nnot yet used anywhere in the Sage library (but code exists to\ninstantiate them if _l_action or _r_action is defined on the\nelements). I'm not sure if/how __cinit__ should be tested.\n\nsage/structure/coerce_dict.pyx\nSCORE sage/structure/coerce_dict.pyx: 100% (14 of 14)\n\nsage/structure/coerce_maps.pyx\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE sage/structure/coerce_maps.pyx: 28% (7 of 25)\n\nMostly __init__ and _call_ methods, but since no Parents have been\nconverted over they are never used (and some can't even be used until\nwe have converted Parents). There still some room for improvement\nhere, and I will write some more documentation for this file.\nBoilerplate __init__ functions are particularly unenlightening to\ndoctest.\n\nsage/structure/generators.pyx\nSCORE sage/structure/generators.pyx: 11% (5 of 45)\n\n[we don't use this yet, other then the fact that there's a cdef'd\nslot to put the generators object. If coverage on this file is a\nproblem, I would go ahead and delete much of this file, and only put\nback things as they are needed]\n\n\nThat is where things stand. I will go add more doctests to\ncoerce_maps.pyx (though I know I can't hit 100% until it's actually\nused) but I think it would be good to start reviewing it, and I would\nadvocate that for this particular project it be grandfathered in to\nsome extent for practicalities sake. (This is not the case for future\ncoercion tickets, which should meet the 100% coverage standard.)\n```\n",
+    "body": "Attachment [coerce.hg](tarball://root/attachments/some-uuid/ticket3738/coerce.hg) by was created at 2008-07-31 16:48:36\n\nA remark about doctest coverage:\n\n```\nOn Jul 30, 2008, at 9:49 AM, William Stein wrote:\n\n>> I think this is probably something that it would be good for multiple\n>> people could look at. (Both those previously involved in coercion,\n>> and those not). It could help spread the work around too.\n>>\n>\n> Michael Abshoff commented to me that the new coercion code you've\n> posted introduces new functions that have no doctests.  Any comment?\n\n\nThat is a true accusation, though I feel there is some justification\nas many of the functions are not actually being used yet so it is\nhard to test them (they were being used in the coercion branch, so\nit's not completely untested code, they're just not used until\nParents are converted.) Also, a lot of them are generic helper\nfunctions that are supposed to be overridden. And a third point is\nthat much of this was written before the 100% doctest rule, and there\nis a significant portion that is renaming/re-factoring old code.\n\nThat being said, I have strived for better coverage (and\ndocumentation, not just tests). Currently in terms of new (or heavily\nmodified) code we have:\n\nsage/structure/coerce.pyx\nSCORE sage/structure/coerce.pyx: 100% (20 of 20)\n\nsage/structure/coerce_actions.pyx\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE sage/structure/coerce_actions.pyx: 66% (10 of 15)\n\nMissing documentation:\n         * __init__(self, G, S)\n         * Element _call_(self, g, a)\n         * __init__(self, G, S)\n         * Element _call_(self, a, g)\n         * __cinit__(self)\n\nThe first 4 are methods of the RAction and LAction classes that are\nnot yet used anywhere in the Sage library (but code exists to\ninstantiate them if _l_action or _r_action is defined on the\nelements). I'm not sure if/how __cinit__ should be tested.\n\nsage/structure/coerce_dict.pyx\nSCORE sage/structure/coerce_dict.pyx: 100% (14 of 14)\n\nsage/structure/coerce_maps.pyx\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE sage/structure/coerce_maps.pyx: 28% (7 of 25)\n\nMostly __init__ and _call_ methods, but since no Parents have been\nconverted over they are never used (and some can't even be used until\nwe have converted Parents). There still some room for improvement\nhere, and I will write some more documentation for this file.\nBoilerplate __init__ functions are particularly unenlightening to\ndoctest.\n\nsage/structure/generators.pyx\nSCORE sage/structure/generators.pyx: 11% (5 of 45)\n\n[we don't use this yet, other then the fact that there's a cdef'd\nslot to put the generators object. If coverage on this file is a\nproblem, I would go ahead and delete much of this file, and only put\nback things as they are needed]\n\n\nThat is where things stand. I will go add more doctests to\ncoerce_maps.pyx (though I know I can't hit 100% until it's actually\nused) but I think it would be good to start reviewing it, and I would\nadvocate that for this particular project it be grandfathered in to\nsome extent for practicalities sake. (This is not the case for future\ncoercion tickets, which should meet the 100% coverage standard.)\n```\n",
     "created_at": "2008-07-31T16:48:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3738",
     "type": "issue_comment",
@@ -258,7 +258,7 @@ archive/issue_comments_026542.json:
 }
 ```
 
-Attachment
+Attachment [coerce.hg](tarball://root/attachments/some-uuid/ticket3738/coerce.hg) by was created at 2008-07-31 16:48:36
 
 A remark about doctest coverage:
 
@@ -345,7 +345,7 @@ coercion tickets, which should meet the 100% coverage standard.)
 archive/issue_comments_026543.json:
 ```json
 {
-    "body": "Attachment\n\nAdded a bunch of doctests to `parent.pyx` and `coerce_maps.pyx`.",
+    "body": "Attachment [3738-13-docs.patch](tarball://root/attachments/some-uuid/ticket3738/3738-13-docs.patch) by robertwb created at 2008-08-03 09:30:15\n\nAdded a bunch of doctests to `parent.pyx` and `coerce_maps.pyx`.",
     "created_at": "2008-08-03T09:30:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3738",
     "type": "issue_comment",
@@ -354,7 +354,7 @@ archive/issue_comments_026543.json:
 }
 ```
 
-Attachment
+Attachment [3738-13-docs.patch](tarball://root/attachments/some-uuid/ticket3738/3738-13-docs.patch) by robertwb created at 2008-08-03 09:30:15
 
 Added a bunch of doctests to `parent.pyx` and `coerce_maps.pyx`.
 
@@ -365,7 +365,7 @@ Added a bunch of doctests to `parent.pyx` and `coerce_maps.pyx`.
 archive/issue_comments_026544.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3738-fix-1.patch](tarball://root/attachments/some-uuid/ticket3738/3738-fix-1.patch) by robertwb created at 2008-08-06 05:55:16",
     "created_at": "2008-08-06T05:55:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3738",
     "type": "issue_comment",
@@ -374,7 +374,7 @@ archive/issue_comments_026544.json:
 }
 ```
 
-Attachment
+Attachment [3738-fix-1.patch](tarball://root/attachments/some-uuid/ticket3738/3738-fix-1.patch) by robertwb created at 2008-08-06 05:55:16
 
 
 
@@ -516,7 +516,7 @@ Thanks Nick and Robert for looking at this. Craig Citro has been reviewing it as
 archive/issue_comments_026548.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3738-cardinality.patch](tarball://root/attachments/some-uuid/ticket3738/3738-cardinality.patch) by robertwb created at 2008-08-14 04:38:25",
     "created_at": "2008-08-14T04:38:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3738",
     "type": "issue_comment",
@@ -525,7 +525,7 @@ archive/issue_comments_026548.json:
 }
 ```
 
-Attachment
+Attachment [3738-cardinality.patch](tarball://root/attachments/some-uuid/ticket3738/3738-cardinality.patch) by robertwb created at 2008-08-14 04:38:25
 
 
 
@@ -560,7 +560,7 @@ I support applying this patch and moving forward with the conversion process 'in
 archive/issue_comments_026550.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [coercion_comments1.txt](tarball://root/attachments/some-uuid/ticket3738/coercion_comments1.txt) by rlm created at 2008-08-14 05:15:32",
     "created_at": "2008-08-14T05:15:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3738",
     "type": "issue_comment",
@@ -569,7 +569,7 @@ archive/issue_comments_026550.json:
 }
 ```
 
-Attachment
+Attachment [coercion_comments1.txt](tarball://root/attachments/some-uuid/ticket3738/coercion_comments1.txt) by rlm created at 2008-08-14 05:15:32
 
 
 
@@ -596,7 +596,7 @@ I also support moving forward with these patches applied. It seems much more fea
 archive/issue_comments_026552.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3738-referee-comments.patch](tarball://root/attachments/some-uuid/ticket3738/3738-referee-comments.patch) by robertwb created at 2008-08-14 06:13:16",
     "created_at": "2008-08-14T06:13:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3738",
     "type": "issue_comment",
@@ -605,7 +605,7 @@ archive/issue_comments_026552.json:
 }
 ```
 
-Attachment
+Attachment [3738-referee-comments.patch](tarball://root/attachments/some-uuid/ticket3738/3738-referee-comments.patch) by robertwb created at 2008-08-14 06:13:16
 
 
 

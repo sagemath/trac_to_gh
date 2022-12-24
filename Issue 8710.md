@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8710
 archive/issue_comments_079476.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8710-eigenvector-doctest.patch](tarball://root/attachments/some-uuid/ticket8710/trac_8710-eigenvector-doctest.patch) by rbeezer created at 2010-04-19 04:48:19",
     "created_at": "2010-04-19T04:48:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8710",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_079476.json:
 }
 ```
 
-Attachment
+Attachment [trac_8710-eigenvector-doctest.patch](tarball://root/attachments/some-uuid/ticket8710/trac_8710-eigenvector-doctest.patch) by rbeezer created at 2010-04-19 04:48:19
 
 
 

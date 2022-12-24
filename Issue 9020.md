@@ -71,7 +71,7 @@ Changing status from new to needs_review.
 archive/issue_comments_083463.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9020-random_polynomial_degree.patch](tarball://root/attachments/some-uuid/ticket9020/trac_9020-random_polynomial_degree.patch) by burcin created at 2010-05-22 22:00:09",
     "created_at": "2010-05-22T22:00:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9020",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_083463.json:
 }
 ```
 
-Attachment
+Attachment [trac_9020-random_polynomial_degree.patch](tarball://root/attachments/some-uuid/ticket9020/trac_9020-random_polynomial_degree.patch) by burcin created at 2010-05-22 22:00:09
 
 
 

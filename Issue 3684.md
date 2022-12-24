@@ -165,7 +165,7 @@ Wall time: 3.95 s
 archive/issue_comments_026106.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.",
+    "body": "Attachment [mzd_kernel.patch](tarball://root/attachments/some-uuid/ticket3684/mzd_kernel.patch) by mhansen created at 2009-12-19 21:32:46\n\nLooks good to me.",
     "created_at": "2009-12-19T21:32:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3684",
     "type": "issue_comment",
@@ -174,7 +174,7 @@ archive/issue_comments_026106.json:
 }
 ```
 
-Attachment
+Attachment [mzd_kernel.patch](tarball://root/attachments/some-uuid/ticket3684/mzd_kernel.patch) by mhansen created at 2009-12-19 21:32:46
 
 Looks good to me.
 

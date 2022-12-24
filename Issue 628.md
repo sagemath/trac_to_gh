@@ -51,7 +51,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/628
 archive/issue_comments_003226.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [binomial_symbolic.patch](tarball://root/attachments/some-uuid/ticket628/binomial_symbolic.patch) by pdenapo created at 2007-09-09 14:59:41",
     "created_at": "2007-09-09T14:59:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/628",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_003226.json:
 }
 ```
 
-Attachment
+Attachment [binomial_symbolic.patch](tarball://root/attachments/some-uuid/ticket628/binomial_symbolic.patch) by pdenapo created at 2007-09-09 14:59:41
 
 
 
@@ -233,7 +233,7 @@ sage: binomial(5/2,3/2)
 archive/issue_comments_003233.json:
 ```json
 {
-    "body": "Attachment\n\nhg bundle including the patch file and my doc-string revisions",
+    "body": "Attachment [binomial_patch.hg](tarball://root/attachments/some-uuid/ticket628/binomial_patch.hg) by jbmohler created at 2007-09-10 20:34:58\n\nhg bundle including the patch file and my doc-string revisions",
     "created_at": "2007-09-10T20:34:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/628",
     "type": "issue_comment",
@@ -242,7 +242,7 @@ archive/issue_comments_003233.json:
 }
 ```
 
-Attachment
+Attachment [binomial_patch.hg](tarball://root/attachments/some-uuid/ticket628/binomial_patch.hg) by jbmohler created at 2007-09-10 20:34:58
 
 hg bundle including the patch file and my doc-string revisions
 

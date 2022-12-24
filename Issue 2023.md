@@ -483,7 +483,7 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_013081.json:
 ```json
 {
-    "body": "Attachment\n\nMinor doc tweak",
+    "body": "Attachment [trac_2023-dynkin_graphs-ts.patch](tarball://root/attachments/some-uuid/ticket2023/trac_2023-dynkin_graphs-ts.patch) by nthiery created at 2013-05-09 01:41:11\n\nMinor doc tweak",
     "created_at": "2013-05-09T01:41:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2023",
     "type": "issue_comment",
@@ -492,7 +492,7 @@ archive/issue_comments_013081.json:
 }
 ```
 
-Attachment
+Attachment [trac_2023-dynkin_graphs-ts.patch](tarball://root/attachments/some-uuid/ticket2023/trac_2023-dynkin_graphs-ts.patch) by nthiery created at 2013-05-09 01:41:11
 
 Minor doc tweak
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4537
 archive/issue_comments_033819.json:
 ```json
 {
-    "body": "Attachment\n\nI've uploaded a patch. Should work under 3.2.rc1 with the patch for #4536 installed (as it uses the coordinates() method of orders). \n\nI've implemented quadratic fields and general absolute fields; it would be trivial to implement for relative orders too, but there is so much general brokenness for relative orders that there doesn't seem much point (we don't even have is_integral() for relative orders yet).",
+    "body": "Attachment [4537-inversemod.patch](tarball://root/attachments/some-uuid/ticket4537/4537-inversemod.patch) by davidloeffler created at 2008-11-17 07:58:40\n\nI've uploaded a patch. Should work under 3.2.rc1 with the patch for #4536 installed (as it uses the coordinates() method of orders). \n\nI've implemented quadratic fields and general absolute fields; it would be trivial to implement for relative orders too, but there is so much general brokenness for relative orders that there doesn't seem much point (we don't even have is_integral() for relative orders yet).",
     "created_at": "2008-11-17T07:58:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4537",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_033819.json:
 }
 ```
 
-Attachment
+Attachment [4537-inversemod.patch](tarball://root/attachments/some-uuid/ticket4537/4537-inversemod.patch) by davidloeffler created at 2008-11-17 07:58:40
 
 I've uploaded a patch. Should work under 3.2.rc1 with the patch for #4536 installed (as it uses the coordinates() method of orders). 
 

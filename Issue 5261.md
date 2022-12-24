@@ -130,7 +130,7 @@ Michael
 archive/issue_comments_040382.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [spaces-5261.patch](tarball://root/attachments/some-uuid/ticket5261/spaces-5261.patch) by iandrus created at 2009-11-28 09:05:20",
     "created_at": "2009-11-28T09:05:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5261",
     "type": "issue_comment",
@@ -139,7 +139,7 @@ archive/issue_comments_040382.json:
 }
 ```
 
-Attachment
+Attachment [spaces-5261.patch](tarball://root/attachments/some-uuid/ticket5261/spaces-5261.patch) by iandrus created at 2009-11-28 09:05:20
 
 
 

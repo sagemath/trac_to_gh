@@ -56,7 +56,7 @@ Class sage.numerical.mip
 archive/issue_comments_052884.json:
 ```json
 {
-    "body": "Attachment\n\nIf you want to try this code, you will find a short example there :\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/7c13a0a4ba3d87b6",
+    "body": "Attachment [12428.patch](tarball://root/attachments/some-uuid/ticket6502/12428.patch) by ncohen created at 2009-07-09 16:43:21\n\nIf you want to try this code, you will find a short example there :\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/7c13a0a4ba3d87b6",
     "created_at": "2009-07-09T16:43:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6502",
     "type": "issue_comment",
@@ -65,7 +65,7 @@ archive/issue_comments_052884.json:
 }
 ```
 
-Attachment
+Attachment [12428.patch](tarball://root/attachments/some-uuid/ticket6502/12428.patch) by ncohen created at 2009-07-09 16:43:21
 
 If you want to try this code, you will find a short example there :
 
@@ -173,7 +173,7 @@ I hope you will like it !! I spent a lot of time on this LP for SAGE ! ;-)
 archive/issue_comments_052888.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [numerical.mip-2.patch](tarball://root/attachments/some-uuid/ticket6502/numerical.mip-2.patch) by ncohen created at 2009-07-23 14:22:42",
     "created_at": "2009-07-23T14:22:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6502",
     "type": "issue_comment",
@@ -182,7 +182,7 @@ archive/issue_comments_052888.json:
 }
 ```
 
-Attachment
+Attachment [numerical.mip-2.patch](tarball://root/attachments/some-uuid/ticket6502/numerical.mip-2.patch) by ncohen created at 2009-07-23 14:22:42
 
 
 
@@ -209,7 +209,7 @@ A small mistake in the detection of COIN -- fixed ! ;-)
 archive/issue_comments_052890.json:
 ```json
 {
-    "body": "Attachment\n\nOnce this ticket has positive review, the SPKG at #6602 should also be merged in the standard packages repository. So in a sense, that SPKG is dependent on this ticket.",
+    "body": "Attachment [numerical.mip-3.patch](tarball://root/attachments/some-uuid/ticket6502/numerical.mip-3.patch) by mvngu created at 2009-07-26 02:16:50\n\nOnce this ticket has positive review, the SPKG at #6602 should also be merged in the standard packages repository. So in a sense, that SPKG is dependent on this ticket.",
     "created_at": "2009-07-26T02:16:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6502",
     "type": "issue_comment",
@@ -218,7 +218,7 @@ archive/issue_comments_052890.json:
 }
 ```
 
-Attachment
+Attachment [numerical.mip-3.patch](tarball://root/attachments/some-uuid/ticket6502/numerical.mip-3.patch) by mvngu created at 2009-07-26 02:16:50
 
 Once this ticket has positive review, the SPKG at #6602 should also be merged in the standard packages repository. So in a sense, that SPKG is dependent on this ticket.
 
@@ -310,7 +310,7 @@ New patch including all the previously announced features and probably a bit mor
 archive/issue_comments_052894.json:
 ```json
 {
-    "body": "Attachment\n\nThis was applied to 4.1.1.a0 and the following test failed:\n\n\n```\nzeus:~/sagefiles/sage-4.1.1.alpha0 davidjoyner$ ./sage -t  \"devel/sage/sage/numerical/mip.pyx\"\nsage -t  \"devel/sage/sage/numerical/mip.pyx\"                \nsh: line 1: kpsewhich: command not found\nsh: line 1: kpsewhich: command not found\n**********************************************************************\nFile \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/devel/sage/sage/numerical/mip.pyx\", line 37:\n    sage: p=MIP(sense=1)\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[3]>\", line 1, in <module>\n        p=MIP(sense=Integer(1))###line 37:\n    sage: p=MIP(sense=1)\n    NameError: name 'MIP' is not defined\n**********************************************************************\nFile \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/devel/sage/sage/numerical/mip.pyx\", line 39:\n    sage: for i in g.vertices():\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[5]>\", line 1\n         for i in g.vertices():###line 39:\n    sage: for i in g.vertices():\n                                                                             \n    ^\n     SyntaxError: unexpected EOF while parsing\n**********************************************************************\nFile \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/devel/sage/sage/numerical/mip.pyx\", line 40:\n    sage:     obj[i]=1\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[6]>\", line 1\n         obj[i]=Integer(1)###line 40:\n    sage:     obj[i]=1\n        ^\n     IndentationError: unexpected indent\n**********************************************************************\nFile \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/devel/sage/sage/numerical/mip.pyx\", line 41:\n    sage:     p.setinteger(i)\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[7]>\", line 1\n         p.setinteger(i)###line 41:\n    sage:     p.setinteger(i)\n        ^\n     IndentationError: unexpected indent\n**********************************************************************\nFile \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/devel/sage/sage/numerical/mip.pyx\", line 42:\n    sage: p.setobj(obj)\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[8]>\", line 1, in <module>\n        p.setobj(obj)###line 42:\n    sage: p.setobj(obj)\n    NameError: name 'p' is not defined\n**********************************************************************\nFile \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/devel/sage/sage/numerical/mip.pyx\", line 43:\n    sage: for (a,b,c) in g.edges():\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[9]>\", line 1\n         for (a,b,c) in g.edges():###line 43:\n    sage: for (a,b,c) in g.edges():\n                                                                                   \n    ^\n     SyntaxError: unexpected EOF while parsing\n**********************************************************************\nFile \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/devel/sage/sage/numerical/mip.pyx\", line 44:\n    sage:     cons={}\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[10]>\", line 1\n         cons={}###line 44:\n    sage:     cons={}\n        ^\n     IndentationError: unexpected indent\n**********************************************************************\nFile \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/devel/sage/sage/numerical/mip.pyx\", line 45:\n    sage:     cons[a]=1\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[11]>\", line 1\n         cons[a]=Integer(1)###line 45:\n    sage:     cons[a]=1\n        ^\n     IndentationError: unexpected indent\n**********************************************************************\nFile \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/devel/sage/sage/numerical/mip.pyx\", line 46:\n    sage:     cons[b]=1\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[12]>\", line 1\n         cons[b]=Integer(1)###line 46:\n    sage:     cons[b]=1\n        ^\n     IndentationError: unexpected indent\n**********************************************************************\nFile \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/devel/sage/sage/numerical/mip.pyx\", line 47:\n    sage:     p.addconstraint(cons,max=1)\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[13]>\", line 1\n         p.addconstraint(cons,max=Integer(1))###line 47:\n    sage:     p.addconstraint(cons,max=1)\n        ^\n     IndentationError: unexpected indent\n**********************************************************************\nFile \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/devel/sage/sage/numerical/mip.pyx\", line 48:\n    sage: p.solve()\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[14]>\", line 1, in <module>\n        p.solve()###line 48:\n    sage: p.solve()\n    NameError: name 'p' is not defined\n**********************************************************************\n1 items had failures:\n  11 of  15 in __main__.example_0\n***Test Failed*** 11 failures.\nFor whitespace errors, see the file /Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/tmp/.doctest_mip.py\n         [4.9 s]\nexit code: 1024\n \n```\n\n\nDoes this make sense?",
+    "body": "Attachment [MIP-1.patch](tarball://root/attachments/some-uuid/ticket6502/MIP-1.patch) by wdj created at 2009-07-31 01:28:11\n\nThis was applied to 4.1.1.a0 and the following test failed:\n\n\n```\nzeus:~/sagefiles/sage-4.1.1.alpha0 davidjoyner$ ./sage -t  \"devel/sage/sage/numerical/mip.pyx\"\nsage -t  \"devel/sage/sage/numerical/mip.pyx\"                \nsh: line 1: kpsewhich: command not found\nsh: line 1: kpsewhich: command not found\n**********************************************************************\nFile \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/devel/sage/sage/numerical/mip.pyx\", line 37:\n    sage: p=MIP(sense=1)\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[3]>\", line 1, in <module>\n        p=MIP(sense=Integer(1))###line 37:\n    sage: p=MIP(sense=1)\n    NameError: name 'MIP' is not defined\n**********************************************************************\nFile \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/devel/sage/sage/numerical/mip.pyx\", line 39:\n    sage: for i in g.vertices():\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[5]>\", line 1\n         for i in g.vertices():###line 39:\n    sage: for i in g.vertices():\n                                                                             \n    ^\n     SyntaxError: unexpected EOF while parsing\n**********************************************************************\nFile \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/devel/sage/sage/numerical/mip.pyx\", line 40:\n    sage:     obj[i]=1\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[6]>\", line 1\n         obj[i]=Integer(1)###line 40:\n    sage:     obj[i]=1\n        ^\n     IndentationError: unexpected indent\n**********************************************************************\nFile \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/devel/sage/sage/numerical/mip.pyx\", line 41:\n    sage:     p.setinteger(i)\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[7]>\", line 1\n         p.setinteger(i)###line 41:\n    sage:     p.setinteger(i)\n        ^\n     IndentationError: unexpected indent\n**********************************************************************\nFile \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/devel/sage/sage/numerical/mip.pyx\", line 42:\n    sage: p.setobj(obj)\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[8]>\", line 1, in <module>\n        p.setobj(obj)###line 42:\n    sage: p.setobj(obj)\n    NameError: name 'p' is not defined\n**********************************************************************\nFile \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/devel/sage/sage/numerical/mip.pyx\", line 43:\n    sage: for (a,b,c) in g.edges():\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[9]>\", line 1\n         for (a,b,c) in g.edges():###line 43:\n    sage: for (a,b,c) in g.edges():\n                                                                                   \n    ^\n     SyntaxError: unexpected EOF while parsing\n**********************************************************************\nFile \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/devel/sage/sage/numerical/mip.pyx\", line 44:\n    sage:     cons={}\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[10]>\", line 1\n         cons={}###line 44:\n    sage:     cons={}\n        ^\n     IndentationError: unexpected indent\n**********************************************************************\nFile \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/devel/sage/sage/numerical/mip.pyx\", line 45:\n    sage:     cons[a]=1\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[11]>\", line 1\n         cons[a]=Integer(1)###line 45:\n    sage:     cons[a]=1\n        ^\n     IndentationError: unexpected indent\n**********************************************************************\nFile \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/devel/sage/sage/numerical/mip.pyx\", line 46:\n    sage:     cons[b]=1\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[12]>\", line 1\n         cons[b]=Integer(1)###line 46:\n    sage:     cons[b]=1\n        ^\n     IndentationError: unexpected indent\n**********************************************************************\nFile \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/devel/sage/sage/numerical/mip.pyx\", line 47:\n    sage:     p.addconstraint(cons,max=1)\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[13]>\", line 1\n         p.addconstraint(cons,max=Integer(1))###line 47:\n    sage:     p.addconstraint(cons,max=1)\n        ^\n     IndentationError: unexpected indent\n**********************************************************************\nFile \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/devel/sage/sage/numerical/mip.pyx\", line 48:\n    sage: p.solve()\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[14]>\", line 1, in <module>\n        p.solve()###line 48:\n    sage: p.solve()\n    NameError: name 'p' is not defined\n**********************************************************************\n1 items had failures:\n  11 of  15 in __main__.example_0\n***Test Failed*** 11 failures.\nFor whitespace errors, see the file /Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/tmp/.doctest_mip.py\n         [4.9 s]\nexit code: 1024\n \n```\n\n\nDoes this make sense?",
     "created_at": "2009-07-31T01:28:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6502",
     "type": "issue_comment",
@@ -319,7 +319,7 @@ archive/issue_comments_052894.json:
 }
 ```
 
-Attachment
+Attachment [MIP-1.patch](tarball://root/attachments/some-uuid/ticket6502/MIP-1.patch) by wdj created at 2009-07-31 01:28:11
 
 This was applied to 4.1.1.a0 and the following test failed:
 
@@ -562,7 +562,7 @@ As a sidenote, this ranks as the least interesting debugging I ever did, and I j
 archive/issue_comments_052897.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [MIP-2.patch](tarball://root/attachments/some-uuid/ticket6502/MIP-2.patch) by ncohen created at 2009-07-31 06:52:32",
     "created_at": "2009-07-31T06:52:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6502",
     "type": "issue_comment",
@@ -571,7 +571,7 @@ archive/issue_comments_052897.json:
 }
 ```
 
-Attachment
+Attachment [MIP-2.patch](tarball://root/attachments/some-uuid/ticket6502/MIP-2.patch) by ncohen created at 2009-07-31 06:52:32
 
 
 
@@ -774,7 +774,7 @@ You were right about the typo. And I hope you will find in MIP-3.patch all the d
 archive/issue_comments_052902.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:9 mvngu]:\n> Once this ticket has positive review, the SPKG at #6602 should also be merged in the standard packages repository. \n**Correction:** Once this ticket has positive review, the SPKG at #6602 should also be merged in the **optional** packages repository.",
+    "body": "Attachment [MIP-3.patch](tarball://root/attachments/some-uuid/ticket6502/MIP-3.patch) by mvngu created at 2009-07-31 23:39:14\n\nReplying to [comment:9 mvngu]:\n> Once this ticket has positive review, the SPKG at #6602 should also be merged in the standard packages repository. \n**Correction:** Once this ticket has positive review, the SPKG at #6602 should also be merged in the **optional** packages repository.",
     "created_at": "2009-07-31T23:39:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6502",
     "type": "issue_comment",
@@ -783,7 +783,7 @@ archive/issue_comments_052902.json:
 }
 ```
 
-Attachment
+Attachment [MIP-3.patch](tarball://root/attachments/some-uuid/ticket6502/MIP-3.patch) by mvngu created at 2009-07-31 23:39:14
 
 Replying to [comment:9 mvngu]:
 > Once this ticket has positive review, the SPKG at #6602 should also be merged in the standard packages repository. 
@@ -1371,7 +1371,7 @@ Patch MIP-4 available ;-)
 archive/issue_comments_052908.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [MIP-4.patch](tarball://root/attachments/some-uuid/ticket6502/MIP-4.patch) by ncohen created at 2009-08-01 08:33:19",
     "created_at": "2009-08-01T08:33:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6502",
     "type": "issue_comment",
@@ -1380,7 +1380,7 @@ archive/issue_comments_052908.json:
 }
 ```
 
-Attachment
+Attachment [MIP-4.patch](tarball://root/attachments/some-uuid/ticket6502/MIP-4.patch) by ncohen created at 2009-08-01 08:33:19
 
 
 
@@ -1435,7 +1435,7 @@ Thank you so much again !!!
 archive/issue_comments_052911.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [MIP-5.patch](tarball://root/attachments/some-uuid/ticket6502/MIP-5.patch) by ncohen created at 2009-08-02 08:24:33",
     "created_at": "2009-08-02T08:24:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6502",
     "type": "issue_comment",
@@ -1444,7 +1444,7 @@ archive/issue_comments_052911.json:
 }
 ```
 
-Attachment
+Attachment [MIP-5.patch](tarball://root/attachments/some-uuid/ticket6502/MIP-5.patch) by ncohen created at 2009-08-02 08:24:33
 
 
 
@@ -1732,7 +1732,7 @@ All patches up to MIP-5
 archive/issue_comments_052924.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [AllMIP.patch](tarball://root/attachments/some-uuid/ticket6502/AllMIP.patch) by ncohen created at 2009-08-14 11:23:10",
     "created_at": "2009-08-14T11:23:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6502",
     "type": "issue_comment",
@@ -1741,7 +1741,7 @@ archive/issue_comments_052924.json:
 }
 ```
 
-Attachment
+Attachment [AllMIP.patch](tarball://root/attachments/some-uuid/ticket6502/AllMIP.patch) by ncohen created at 2009-08-14 11:23:10
 
 
 
@@ -1922,7 +1922,7 @@ This spkg being currently reviewed at #6817 ( it should be pretty quick, there i
 archive/issue_comments_052932.json:
 ```json
 {
-    "body": "Attachment\n\nNow **without** solveGlpk !",
+    "body": "Attachment [AllMIP-2.patch](tarball://root/attachments/some-uuid/ticket6502/AllMIP-2.patch) by ncohen created at 2009-08-24 09:47:37\n\nNow **without** solveGlpk !",
     "created_at": "2009-08-24T09:47:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6502",
     "type": "issue_comment",
@@ -1931,7 +1931,7 @@ archive/issue_comments_052932.json:
 }
 ```
 
-Attachment
+Attachment [AllMIP-2.patch](tarball://root/attachments/some-uuid/ticket6502/AllMIP-2.patch) by ncohen created at 2009-08-24 09:47:37
 
 Now **without** solveGlpk !
 
@@ -2084,7 +2084,7 @@ Just to be sure, I upload a flattened version of patch named AllMIP-2-flattened.
 archive/issue_comments_052938.json:
 ```json
 {
-    "body": "Attachment\n\nBTW, the ALLMIP2 patch applied fine for me, as before, and passes sage -testall (mod the known unrelated failures already described). So, positive review from me, but I am testing on a clone of Sage which has glpk installed.",
+    "body": "Attachment [AllMIP-2-flattened.patch](tarball://root/attachments/some-uuid/ticket6502/AllMIP-2-flattened.patch) by wdj created at 2009-08-25 22:06:12\n\nBTW, the ALLMIP2 patch applied fine for me, as before, and passes sage -testall (mod the known unrelated failures already described). So, positive review from me, but I am testing on a clone of Sage which has glpk installed.",
     "created_at": "2009-08-25T22:06:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6502",
     "type": "issue_comment",
@@ -2093,7 +2093,7 @@ archive/issue_comments_052938.json:
 }
 ```
 
-Attachment
+Attachment [AllMIP-2-flattened.patch](tarball://root/attachments/some-uuid/ticket6502/AllMIP-2-flattened.patch) by wdj created at 2009-08-25 22:06:12
 
 BTW, the ALLMIP2 patch applied fine for me, as before, and passes sage -testall (mod the known unrelated failures already described). So, positive review from me, but I am testing on a clone of Sage which has glpk installed.
 

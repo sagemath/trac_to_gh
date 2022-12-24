@@ -335,7 +335,7 @@ Some of these are due to new symbolics printing differently, others may be due t
 archive/issue_comments_048150.json:
 ```json
 {
-    "body": "Attachment\n\nOK, I fixed the patch. As well as the symbolics printing changes, I had moved some doctests around and got some of them associated with the wrong output. Based on 4.0.2, ready to be looked at again.",
+    "body": "Attachment [6045-heegner.patch](tarball://root/attachments/some-uuid/ticket6045/6045-heegner.patch) by robertwb created at 2009-06-23 08:58:57\n\nOK, I fixed the patch. As well as the symbolics printing changes, I had moved some doctests around and got some of them associated with the wrong output. Based on 4.0.2, ready to be looked at again.",
     "created_at": "2009-06-23T08:58:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6045",
     "type": "issue_comment",
@@ -344,7 +344,7 @@ archive/issue_comments_048150.json:
 }
 ```
 
-Attachment
+Attachment [6045-heegner.patch](tarball://root/attachments/some-uuid/ticket6045/6045-heegner.patch) by robertwb created at 2009-06-23 08:58:57
 
 OK, I fixed the patch. As well as the symbolics printing changes, I had moved some doctests around and got some of them associated with the wrong output. Based on 4.0.2, ready to be looked at again.
 
@@ -448,7 +448,7 @@ apply on top of previous
 archive/issue_comments_048156.json:
 ```json
 {
-    "body": "Attachment\n\nNB this requires #6386.  Applies fine to 4.1.alpha2 + the four patches there.  Tests in ell_rational_field pass.\n\nModular param: type \"and and\" in a comment.\n\nHeegner:  typo \"give\" -> \"given\" in 2 or 3 places in docstrings.  Why\ndo you reverse the order of summation of a_n/n?  Can you sum the\nseries using an iterator for the an instead of forming the whole list?\n\n _heegner_forms_list: (this only depends on N and D so could perhaps be\n factored out of the class to a stand-alone function).\n\nMore seriously, this function is *wrong*!  (Though in a way which does\nnot matter for the use which is made of it here so far.)  The point is\nthis:  To get a complete set of forms you need to choose *one* sqrt of\nD mod 4*N and use the same b for all the forms.  Otherwise the points\nyou get are not Galois conjugate.  [Changing b to another sqrt amounts\nto applying to the point in the upper half plane one of the\nAtkin-Lehner involutions.  This has two effects: firstly, it may\nchange the sign of the integral (depending on the A-L eigenvalue;\nsecondly, it maps \\infty to another cusp, hence adds a torsion point\nto the Heegner point.  So instead of getting come conjugate point P\nyou get either P+T or -P+T with T torsion.  The reason that this does\nnot make the rest of the code wrong here is that you only actually use\none of the forms (the one with smallest a to get best accuracy) and\nthen use algdep.  But we should have code that could in principal\ndeliver a set of Galois conjugate points.\n\nTo get around this:  try all the sqrt of D mod 4*N;  for each, try to\nfind a complete set of forms with that same b.  If that fails, either\nlook at another b, or choose a different lift of b from Z/2N to Z\n(since larger b's will give more possible forms).  I implemented this\nin gp ages ago, so I have gp code which does this!\n\nFuture work: one useful application of Heegner points is to find\nrational points on curves of rank 1.   I have been doing this\nsuccessfully for years, and in 2005 work of Delaunay and Watkins made\nit vastly more efficient.  That excellent efficient version found its\nway into Magma (thanks for Mark) and it would be good to get something\nas good in Sage.  The idea is to compute all the complex z (mod period\nlattice L) for a complete set of forms, then take the trace by adding\nthose up (as complex numbers) before mapping to the curve, at which\npoint you only need to recognise the coordinates as rational numbers.\nYou can use the action of complex conjugation on the forms to halve\nthe number of evaluations (and in each pair can choose the smallest\na).  The Delaunay-Watkins improvement allows to use even smaller a,\nand I can explain further if asked!\n\nLastly:  I tried 873b1 and D=-11, which works fine, though the point constructed has height 14.785 but the heegner_point_height function returns double that.  This might need a different ticket.",
+    "body": "Attachment [6045-heegner2.patch](tarball://root/attachments/some-uuid/ticket6045/6045-heegner2.patch) by cremona created at 2009-06-28 16:29:33\n\nNB this requires #6386.  Applies fine to 4.1.alpha2 + the four patches there.  Tests in ell_rational_field pass.\n\nModular param: type \"and and\" in a comment.\n\nHeegner:  typo \"give\" -> \"given\" in 2 or 3 places in docstrings.  Why\ndo you reverse the order of summation of a_n/n?  Can you sum the\nseries using an iterator for the an instead of forming the whole list?\n\n _heegner_forms_list: (this only depends on N and D so could perhaps be\n factored out of the class to a stand-alone function).\n\nMore seriously, this function is *wrong*!  (Though in a way which does\nnot matter for the use which is made of it here so far.)  The point is\nthis:  To get a complete set of forms you need to choose *one* sqrt of\nD mod 4*N and use the same b for all the forms.  Otherwise the points\nyou get are not Galois conjugate.  [Changing b to another sqrt amounts\nto applying to the point in the upper half plane one of the\nAtkin-Lehner involutions.  This has two effects: firstly, it may\nchange the sign of the integral (depending on the A-L eigenvalue;\nsecondly, it maps \\infty to another cusp, hence adds a torsion point\nto the Heegner point.  So instead of getting come conjugate point P\nyou get either P+T or -P+T with T torsion.  The reason that this does\nnot make the rest of the code wrong here is that you only actually use\none of the forms (the one with smallest a to get best accuracy) and\nthen use algdep.  But we should have code that could in principal\ndeliver a set of Galois conjugate points.\n\nTo get around this:  try all the sqrt of D mod 4*N;  for each, try to\nfind a complete set of forms with that same b.  If that fails, either\nlook at another b, or choose a different lift of b from Z/2N to Z\n(since larger b's will give more possible forms).  I implemented this\nin gp ages ago, so I have gp code which does this!\n\nFuture work: one useful application of Heegner points is to find\nrational points on curves of rank 1.   I have been doing this\nsuccessfully for years, and in 2005 work of Delaunay and Watkins made\nit vastly more efficient.  That excellent efficient version found its\nway into Magma (thanks for Mark) and it would be good to get something\nas good in Sage.  The idea is to compute all the complex z (mod period\nlattice L) for a complete set of forms, then take the trace by adding\nthose up (as complex numbers) before mapping to the curve, at which\npoint you only need to recognise the coordinates as rational numbers.\nYou can use the action of complex conjugation on the forms to halve\nthe number of evaluations (and in each pair can choose the smallest\na).  The Delaunay-Watkins improvement allows to use even smaller a,\nand I can explain further if asked!\n\nLastly:  I tried 873b1 and D=-11, which works fine, though the point constructed has height 14.785 but the heegner_point_height function returns double that.  This might need a different ticket.",
     "created_at": "2009-06-28T16:29:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6045",
     "type": "issue_comment",
@@ -457,7 +457,7 @@ archive/issue_comments_048156.json:
 }
 ```
 
-Attachment
+Attachment [6045-heegner2.patch](tarball://root/attachments/some-uuid/ticket6045/6045-heegner2.patch) by cremona created at 2009-06-28 16:29:33
 
 NB this requires #6386.  Applies fine to 4.1.alpha2 + the four patches there.  Tests in ell_rational_field pass.
 
@@ -582,7 +582,7 @@ We're interested in computing Heegner points for rank >= 2 elliptic curves, and 
 archive/issue_comments_048160.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6045-heegner-fixes.patch](tarball://root/attachments/some-uuid/ticket6045/6045-heegner-fixes.patch) by robertwb created at 2009-07-01 08:31:14",
     "created_at": "2009-07-01T08:31:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6045",
     "type": "issue_comment",
@@ -591,7 +591,7 @@ archive/issue_comments_048160.json:
 }
 ```
 
-Attachment
+Attachment [6045-heegner-fixes.patch](tarball://root/attachments/some-uuid/ticket6045/6045-heegner-fixes.patch) by robertwb created at 2009-07-01 08:31:14
 
 
 
@@ -698,7 +698,7 @@ Otherwise I am happy.
 archive/issue_comments_048163.json:
 ```json
 {
-    "body": "Attachment\n\nApply all four patches.",
+    "body": "Attachment [6045-heegner-more-fixes.patch](tarball://root/attachments/some-uuid/ticket6045/6045-heegner-more-fixes.patch) by robertwb created at 2009-07-04 22:15:38\n\nApply all four patches.",
     "created_at": "2009-07-04T22:15:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6045",
     "type": "issue_comment",
@@ -707,7 +707,7 @@ archive/issue_comments_048163.json:
 }
 ```
 
-Attachment
+Attachment [6045-heegner-more-fixes.patch](tarball://root/attachments/some-uuid/ticket6045/6045-heegner-more-fixes.patch) by robertwb created at 2009-07-04 22:15:38
 
 Apply all four patches.
 
@@ -784,7 +784,7 @@ Total time for all tests: 504.7 seconds
 archive/issue_comments_048166.json:
 ```json
 {
-    "body": "Attachment\n\nNoise issue fixed.",
+    "body": "Attachment [6045-heegner-doctest-noise.patch](tarball://root/attachments/some-uuid/ticket6045/6045-heegner-doctest-noise.patch) by robertwb created at 2009-07-20 15:16:36\n\nNoise issue fixed.",
     "created_at": "2009-07-20T15:16:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6045",
     "type": "issue_comment",
@@ -793,7 +793,7 @@ archive/issue_comments_048166.json:
 }
 ```
 
-Attachment
+Attachment [6045-heegner-doctest-noise.patch](tarball://root/attachments/some-uuid/ticket6045/6045-heegner-doctest-noise.patch) by robertwb created at 2009-07-20 15:16:36
 
 Noise issue fixed.
 

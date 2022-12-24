@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4408
 archive/issue_comments_032412.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-4408.patch](tarball://root/attachments/some-uuid/ticket4408/sage-4408.patch) by mabshoff created at 2008-10-31 04:08:23",
     "created_at": "2008-10-31T04:08:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4408",
     "type": "issue_comment",
@@ -50,7 +50,7 @@ archive/issue_comments_032412.json:
 }
 ```
 
-Attachment
+Attachment [sage-4408.patch](tarball://root/attachments/some-uuid/ticket4408/sage-4408.patch) by mabshoff created at 2008-10-31 04:08:23
 
 
 
@@ -77,7 +77,7 @@ I've decided caching is not the default, since I don't want to blatantly introdu
 archive/issue_comments_032414.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-4408-part2.patch](tarball://root/attachments/some-uuid/ticket4408/sage-4408-part2.patch) by was created at 2008-11-04 05:33:02",
     "created_at": "2008-11-04T05:33:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4408",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_032414.json:
 }
 ```
 
-Attachment
+Attachment [sage-4408-part2.patch](tarball://root/attachments/some-uuid/ticket4408/sage-4408-part2.patch) by was created at 2008-11-04 05:33:02
 
 
 
@@ -95,7 +95,7 @@ Attachment
 archive/issue_comments_032415.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-4408-part3.patch](tarball://root/attachments/some-uuid/ticket4408/sage-4408-part3.patch) by was created at 2008-11-14 00:53:32",
     "created_at": "2008-11-14T00:53:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4408",
     "type": "issue_comment",
@@ -104,7 +104,7 @@ archive/issue_comments_032415.json:
 }
 ```
 
-Attachment
+Attachment [sage-4408-part3.patch](tarball://root/attachments/some-uuid/ticket4408/sage-4408-part3.patch) by was created at 2008-11-14 00:53:32
 
 
 

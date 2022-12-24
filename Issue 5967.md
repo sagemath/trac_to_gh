@@ -338,7 +338,7 @@ where it probably should be "does not."
 archive/issue_comments_047291.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [element_wrapper-5967-submitted.patch](tarball://root/attachments/some-uuid/ticket5967/element_wrapper-5967-submitted.patch) by nthiery created at 2009-05-23 15:40:38",
     "created_at": "2009-05-23T15:40:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5967",
     "type": "issue_comment",
@@ -347,7 +347,7 @@ archive/issue_comments_047291.json:
 }
 ```
 
-Attachment
+Attachment [element_wrapper-5967-submitted.patch](tarball://root/attachments/some-uuid/ticket5967/element_wrapper-5967-submitted.patch) by nthiery created at 2009-05-23 15:40:38
 
 
 

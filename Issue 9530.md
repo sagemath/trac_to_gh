@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9530
 archive/issue_comments_091697.json:
 ```json
 {
-    "body": "Attachment\n\nIs it actually worth fixing the workarounds?  It seems like upgrading readline (#9523) wouldn't be much more work, and then we could probably just remove the workarounds.",
+    "body": "Attachment [readline-6.0.p2.spkg.patch](tarball://root/attachments/some-uuid/ticket9530/readline-6.0.p2.spkg.patch) by cwitty created at 2010-07-17 21:36:55\n\nIs it actually worth fixing the workarounds?  It seems like upgrading readline (#9523) wouldn't be much more work, and then we could probably just remove the workarounds.",
     "created_at": "2010-07-17T21:36:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9530",
     "type": "issue_comment",
@@ -50,7 +50,7 @@ archive/issue_comments_091697.json:
 }
 ```
 
-Attachment
+Attachment [readline-6.0.p2.spkg.patch](tarball://root/attachments/some-uuid/ticket9530/readline-6.0.p2.spkg.patch) by cwitty created at 2010-07-17 21:36:55
 
 Is it actually worth fixing the workarounds?  It seems like upgrading readline (#9523) wouldn't be much more work, and then we could probably just remove the workarounds.
 
@@ -621,7 +621,7 @@ SPKG Mercurial patch of changes from p2 to p3
 archive/issue_comments_091721.json:
 ```json
 {
-    "body": "Attachment\n\nThis should work at least through openSUSE 11.4.  The earliest it could be broken is an openSUSE release labeled 12.0.  That will not happen until at least 8 months after the release of 11.4, which is in March, so at least a year total.",
+    "body": "Attachment [trac_9530-spkg_update_openSUSE_Arch_workarounds.patch](tarball://root/attachments/some-uuid/ticket9530/trac_9530-spkg_update_openSUSE_Arch_workarounds.patch) by TheBlackCat created at 2010-10-25 02:41:30\n\nThis should work at least through openSUSE 11.4.  The earliest it could be broken is an openSUSE release labeled 12.0.  That will not happen until at least 8 months after the release of 11.4, which is in March, so at least a year total.",
     "created_at": "2010-10-25T02:41:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9530",
     "type": "issue_comment",
@@ -630,7 +630,7 @@ archive/issue_comments_091721.json:
 }
 ```
 
-Attachment
+Attachment [trac_9530-spkg_update_openSUSE_Arch_workarounds.patch](tarball://root/attachments/some-uuid/ticket9530/trac_9530-spkg_update_openSUSE_Arch_workarounds.patch) by TheBlackCat created at 2010-10-25 02:41:30
 
 This should work at least through openSUSE 11.4.  The earliest it could be broken is an openSUSE release labeled 12.0.  That will not happen until at least 8 months after the release of 11.4, which is in March, so at least a year total.
 
@@ -969,7 +969,7 @@ Use `uname -m` and `ln -snf` but leave `cp -a`.  Updated SPKG patch.  Replaces p
 archive/issue_comments_091735.json:
 ```json
 {
-    "body": "Attachment\n\nI've updated the patch to use `uname -m` and `ln -snf`.  I've left `cp -a` in it, since the enclosing block is Linux-specific.\n\nThe new spkg is at the same link in the description.  Florent and Thomas, could you please tell us if it works for you?\n\nAlso, Thomas, could you add yourself to the [account name-real name map](http://trac.sagemath.org/sage_trac/wiki/WikiStart#AccountNamesmappedtoRealNames)?",
+    "body": "Attachment [trac_9530-spkg_update_openSUSE_Arch_workarounds.2.patch](tarball://root/attachments/some-uuid/ticket9530/trac_9530-spkg_update_openSUSE_Arch_workarounds.2.patch) by mpatel created at 2010-10-28 02:28:56\n\nI've updated the patch to use `uname -m` and `ln -snf`.  I've left `cp -a` in it, since the enclosing block is Linux-specific.\n\nThe new spkg is at the same link in the description.  Florent and Thomas, could you please tell us if it works for you?\n\nAlso, Thomas, could you add yourself to the [account name-real name map](http://trac.sagemath.org/sage_trac/wiki/WikiStart#AccountNamesmappedtoRealNames)?",
     "created_at": "2010-10-28T02:28:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9530",
     "type": "issue_comment",
@@ -978,7 +978,7 @@ archive/issue_comments_091735.json:
 }
 ```
 
-Attachment
+Attachment [trac_9530-spkg_update_openSUSE_Arch_workarounds.2.patch](tarball://root/attachments/some-uuid/ticket9530/trac_9530-spkg_update_openSUSE_Arch_workarounds.2.patch) by mpatel created at 2010-10-28 02:28:56
 
 I've updated the patch to use `uname -m` and `ln -snf`.  I've left `cp -a` in it, since the enclosing block is Linux-specific.
 
@@ -1034,7 +1034,7 @@ SPKG reviewer patch, based on the **previous** p3. (The new, perhaps now alterna
 archive/issue_comments_091738.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:38 mpatel]:\n> I've updated the patch to use `uname -m` and `ln -snf`.  I've left `cp -a` in it, since the enclosing block is Linux-specific.\n\nNote also that the '`n`' option to '`ln`' is not portable either. \n\nhttp://www.opengroup.org/onlinepubs/009695399/utilities/ln.html\n\nI'd be very weary of using non-portable options, even on Linux, as there have been reports of some of the cut-down linux distributions failing to recognise some of the unportable options. See for example #8566, where the '`m`' option to  '`tar`' is failing on a minimal linux distribution. I should remove that option, as it is totally unnecessary in the bit of code that uses it. \n\nI would at least comment any such non-portable code. \n\n> The new spkg is at the same link in the description.  Florent and Thomas, could you please tell us if it works for you?\n> \n> Also, Thomas, could you add yourself to the [account name-real name map](http://trac.sagemath.org/sage_trac/wiki/WikiStart#AccountNamesmappedtoRealNames)?\n\nI've installed openSUSE 11.3, but hit a problem in that g++ is called g++-4.5. Since I know setting CXX is unreliable in Sage, I need to mess around creating links to call it g++. I wish Sage would respect values for CC and CXX. Currently setting those will work for some packages, but not all of them. \n\nDave",
+    "body": "Attachment [trac_9530-old_p3_vs_p4_reviewer.patch](tarball://root/attachments/some-uuid/ticket9530/trac_9530-old_p3_vs_p4_reviewer.patch) by drkirkby created at 2010-10-28 03:45:53\n\nReplying to [comment:38 mpatel]:\n> I've updated the patch to use `uname -m` and `ln -snf`.  I've left `cp -a` in it, since the enclosing block is Linux-specific.\n\nNote also that the '`n`' option to '`ln`' is not portable either. \n\nhttp://www.opengroup.org/onlinepubs/009695399/utilities/ln.html\n\nI'd be very weary of using non-portable options, even on Linux, as there have been reports of some of the cut-down linux distributions failing to recognise some of the unportable options. See for example #8566, where the '`m`' option to  '`tar`' is failing on a minimal linux distribution. I should remove that option, as it is totally unnecessary in the bit of code that uses it. \n\nI would at least comment any such non-portable code. \n\n> The new spkg is at the same link in the description.  Florent and Thomas, could you please tell us if it works for you?\n> \n> Also, Thomas, could you add yourself to the [account name-real name map](http://trac.sagemath.org/sage_trac/wiki/WikiStart#AccountNamesmappedtoRealNames)?\n\nI've installed openSUSE 11.3, but hit a problem in that g++ is called g++-4.5. Since I know setting CXX is unreliable in Sage, I need to mess around creating links to call it g++. I wish Sage would respect values for CC and CXX. Currently setting those will work for some packages, but not all of them. \n\nDave",
     "created_at": "2010-10-28T03:45:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9530",
     "type": "issue_comment",
@@ -1043,7 +1043,7 @@ archive/issue_comments_091738.json:
 }
 ```
 
-Attachment
+Attachment [trac_9530-old_p3_vs_p4_reviewer.patch](tarball://root/attachments/some-uuid/ticket9530/trac_9530-old_p3_vs_p4_reviewer.patch) by drkirkby created at 2010-10-28 03:45:53
 
 Replying to [comment:38 mpatel]:
 > I've updated the patch to use `uname -m` and `ln -snf`.  I've left `cp -a` in it, since the enclosing block is Linux-specific.

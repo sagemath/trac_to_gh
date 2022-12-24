@@ -104,7 +104,7 @@ Jason is right, this is orthogonal to #3877. Shame on Alex for using such a stup
 archive/issue_comments_027683.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3880-arrows.patch](tarball://root/attachments/some-uuid/ticket3880/trac_3880-arrows.patch) by rlm created at 2008-08-19 01:28:41",
     "created_at": "2008-08-19T01:28:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3880",
     "type": "issue_comment",
@@ -113,7 +113,7 @@ archive/issue_comments_027683.json:
 }
 ```
 
-Attachment
+Attachment [trac_3880-arrows.patch](tarball://root/attachments/some-uuid/ticket3880/trac_3880-arrows.patch) by rlm created at 2008-08-19 01:28:41
 
 
 
@@ -180,7 +180,7 @@ Merged in Sage 3.1.2.alpha0
 archive/issue_comments_027687.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3880_referee.patch](tarball://root/attachments/some-uuid/ticket3880/trac_3880_referee.patch) by mabshoff created at 2008-08-19 02:32:21",
     "created_at": "2008-08-19T02:32:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3880",
     "type": "issue_comment",
@@ -189,4 +189,4 @@ archive/issue_comments_027687.json:
 }
 ```
 
-Attachment
+Attachment [trac_3880_referee.patch](tarball://root/attachments/some-uuid/ticket3880/trac_3880_referee.patch) by mabshoff created at 2008-08-19 02:32:21

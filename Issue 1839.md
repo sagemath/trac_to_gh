@@ -131,7 +131,7 @@ See http://8tb.us/home/boothby/crap.patch
 archive/issue_comments_011644.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch integrates sage-crap, and works on my machines. (debian xeon / ubuntu 32bit)",
+    "body": "Attachment [crap.patch](tarball://root/attachments/some-uuid/ticket1839/crap.patch) by boothby created at 2008-04-06 19:32:12\n\nThe attached patch integrates sage-crap, and works on my machines. (debian xeon / ubuntu 32bit)",
     "created_at": "2008-04-06T19:32:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1839",
     "type": "issue_comment",
@@ -140,7 +140,7 @@ archive/issue_comments_011644.json:
 }
 ```
 
-Attachment
+Attachment [crap.patch](tarball://root/attachments/some-uuid/ticket1839/crap.patch) by boothby created at 2008-04-06 19:32:12
 
 The attached patch integrates sage-crap, and works on my machines. (debian xeon / ubuntu 32bit)
 
@@ -250,7 +250,7 @@ cddlibman.toc: LaTeX  table of contents
 archive/issue_comments_011649.json:
 ```json
 {
-    "body": "Attachment\n\npart 2 of the patch",
+    "body": "Attachment [scripts-1839.patch](tarball://root/attachments/some-uuid/ticket1839/scripts-1839.patch) by was created at 2008-06-16 00:15:29\n\npart 2 of the patch",
     "created_at": "2008-06-16T00:15:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1839",
     "type": "issue_comment",
@@ -259,7 +259,7 @@ archive/issue_comments_011649.json:
 }
 ```
 
-Attachment
+Attachment [scripts-1839.patch](tarball://root/attachments/some-uuid/ticket1839/scripts-1839.patch) by was created at 2008-06-16 00:15:29
 
 part 2 of the patch
 

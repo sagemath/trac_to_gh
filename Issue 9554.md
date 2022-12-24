@@ -106,7 +106,7 @@ I can make the SageNB patch a bit later this week and try to ensure it's merged 
 archive/issue_comments_092090.json:
 ```json
 {
-    "body": "Attachment\n\nSageNB repo patch - logically same as http://trac.sagemath.org/sage_trac/attachment/ticket/8988/trac_8988-sageinspect_doctest_fix.patch",
+    "body": "Attachment [trac_9554-fix_order_of_var_names-SageNB-repo.patch](tarball://root/attachments/some-uuid/ticket9554/trac_9554-fix_order_of_var_names-SageNB-repo.patch) by leif created at 2010-07-22 15:40:42\n\nSageNB repo patch - logically same as http://trac.sagemath.org/sage_trac/attachment/ticket/8988/trac_8988-sageinspect_doctest_fix.patch",
     "created_at": "2010-07-22T15:40:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9554",
     "type": "issue_comment",
@@ -115,7 +115,7 @@ archive/issue_comments_092090.json:
 }
 ```
 
-Attachment
+Attachment [trac_9554-fix_order_of_var_names-SageNB-repo.patch](tarball://root/attachments/some-uuid/ticket9554/trac_9554-fix_order_of_var_names-SageNB-repo.patch) by leif created at 2010-07-22 15:40:42
 
 SageNB repo patch - logically same as http://trac.sagemath.org/sage_trac/attachment/ticket/8988/trac_8988-sageinspect_doctest_fix.patch
 

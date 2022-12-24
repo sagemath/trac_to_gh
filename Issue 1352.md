@@ -57,7 +57,7 @@ Resolution: fixed
 archive/issue_comments_008663.json:
 ```json
 {
-    "body": "Attachment\n\nMerged in 2.8.15.alpha1.",
+    "body": "Attachment [1352.patch](tarball://root/attachments/some-uuid/ticket1352/1352.patch) by mabshoff created at 2007-12-01 19:05:15\n\nMerged in 2.8.15.alpha1.",
     "created_at": "2007-12-01T19:05:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1352",
     "type": "issue_comment",
@@ -66,6 +66,6 @@ archive/issue_comments_008663.json:
 }
 ```
 
-Attachment
+Attachment [1352.patch](tarball://root/attachments/some-uuid/ticket1352/1352.patch) by mabshoff created at 2007-12-01 19:05:15
 
 Merged in 2.8.15.alpha1.

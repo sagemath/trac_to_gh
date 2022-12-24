@@ -105,7 +105,7 @@ There is a typo of 'primitve' in `plot/plot.py`.  Does this still apply to 4.6.a
 archive/issue_comments_095444.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:4 kcrisman]:\n> There is a typo of 'primitve' in `plot/plot.py`.  Does this still apply to 4.6.alpha1?  \n\nYes.  I also refreshed the patch to correct the typo.  This depends on #9740.  Do you have time to review that and this patch?",
+    "body": "Attachment [trac-9746-plot-doc-improvements.patch](tarball://root/attachments/some-uuid/ticket9746/trac-9746-plot-doc-improvements.patch) by jason created at 2010-09-28 16:01:41\n\nReplying to [comment:4 kcrisman]:\n> There is a typo of 'primitve' in `plot/plot.py`.  Does this still apply to 4.6.alpha1?  \n\nYes.  I also refreshed the patch to correct the typo.  This depends on #9740.  Do you have time to review that and this patch?",
     "created_at": "2010-09-28T16:01:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9746",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_095444.json:
 }
 ```
 
-Attachment
+Attachment [trac-9746-plot-doc-improvements.patch](tarball://root/attachments/some-uuid/ticket9746/trac-9746-plot-doc-improvements.patch) by jason created at 2010-09-28 16:01:41
 
 Replying to [comment:4 kcrisman]:
 > There is a typo of 'primitve' in `plot/plot.py`.  Does this still apply to 4.6.alpha1?  
@@ -296,7 +296,7 @@ apply on top of previous patches
 archive/issue_comments_095453.json:
 ```json
 {
-    "body": "Attachment\n\nptestlong in 4.6.alpha1 (Ubuntu 10.04 64-bit) passes with the following tickets applied in order: #9221 (and new spkg), #9740, #9746, #4342.",
+    "body": "Attachment [9746-review.patch](tarball://root/attachments/some-uuid/ticket9746/9746-review.patch) by jason created at 2010-09-28 19:08:27\n\nptestlong in 4.6.alpha1 (Ubuntu 10.04 64-bit) passes with the following tickets applied in order: #9221 (and new spkg), #9740, #9746, #4342.",
     "created_at": "2010-09-28T19:08:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9746",
     "type": "issue_comment",
@@ -305,7 +305,7 @@ archive/issue_comments_095453.json:
 }
 ```
 
-Attachment
+Attachment [9746-review.patch](tarball://root/attachments/some-uuid/ticket9746/9746-review.patch) by jason created at 2010-09-28 19:08:27
 
 ptestlong in 4.6.alpha1 (Ubuntu 10.04 64-bit) passes with the following tickets applied in order: #9221 (and new spkg), #9740, #9746, #4342.
 

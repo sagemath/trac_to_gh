@@ -38,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2842
 archive/issue_comments_019501.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [pylint_polynomial_unused.patch](tarball://root/attachments/some-uuid/ticket2842/pylint_polynomial_unused.patch) by malb created at 2008-04-07 13:10:39",
     "created_at": "2008-04-07T13:10:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2842",
     "type": "issue_comment",
@@ -47,7 +47,7 @@ archive/issue_comments_019501.json:
 }
 ```
 
-Attachment
+Attachment [pylint_polynomial_unused.patch](tarball://root/attachments/some-uuid/ticket2842/pylint_polynomial_unused.patch) by malb created at 2008-04-07 13:10:39
 
 
 
@@ -56,7 +56,7 @@ Attachment
 archive/issue_comments_019502.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.  Apply just 2842.patch after #2844 .",
+    "body": "Attachment [2842.patch](tarball://root/attachments/some-uuid/ticket2842/2842.patch) by mhansen created at 2008-04-07 22:55:03\n\nLooks good to me.  Apply just 2842.patch after #2844 .",
     "created_at": "2008-04-07T22:55:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2842",
     "type": "issue_comment",
@@ -65,7 +65,7 @@ archive/issue_comments_019502.json:
 }
 ```
 
-Attachment
+Attachment [2842.patch](tarball://root/attachments/some-uuid/ticket2842/2842.patch) by mhansen created at 2008-04-07 22:55:03
 
 Looks good to me.  Apply just 2842.patch after #2844 .
 

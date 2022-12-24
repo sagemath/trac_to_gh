@@ -205,7 +205,7 @@ this patch fixes the OSX build issue
 archive/issue_comments_011130.json:
 ```json
 {
-    "body": "Attachment\n\nThe updated optional spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.2//rc0/graphviz-2.16.1.p0.spkg\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_1762_cleanup.patch](tarball://root/attachments/some-uuid/ticket1762/trac_1762_cleanup.patch) by mabshoff created at 2008-05-23 01:09:46\n\nThe updated optional spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.2//rc0/graphviz-2.16.1.p0.spkg\n\nCheers,\n\nMichael",
     "created_at": "2008-05-23T01:09:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1762",
     "type": "issue_comment",
@@ -214,7 +214,7 @@ archive/issue_comments_011130.json:
 }
 ```
 
-Attachment
+Attachment [trac_1762_cleanup.patch](tarball://root/attachments/some-uuid/ticket1762/trac_1762_cleanup.patch) by mabshoff created at 2008-05-23 01:09:46
 
 The updated optional spkg is at
 

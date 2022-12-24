@@ -53,7 +53,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5482
 archive/issue_comments_042532.json:
 ```json
 {
-    "body": "Attachment\n\nThe fix is to require the generator name at creation time, not when the ring is used.",
+    "body": "Attachment [sage-5482.patch](tarball://root/attachments/some-uuid/ticket5482/sage-5482.patch) by justin created at 2009-03-11 07:42:22\n\nThe fix is to require the generator name at creation time, not when the ring is used.",
     "created_at": "2009-03-11T07:42:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5482",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_042532.json:
 }
 ```
 
-Attachment
+Attachment [sage-5482.patch](tarball://root/attachments/some-uuid/ticket5482/sage-5482.patch) by justin created at 2009-03-11 07:42:22
 
 The fix is to require the generator name at creation time, not when the ring is used.
 
@@ -232,7 +232,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_042541.json:
 ```json
 {
-    "body": "Attachment\n\napply this patch only",
+    "body": "Attachment [trac_5482.patch](tarball://root/attachments/some-uuid/ticket5482/trac_5482.patch) by AlexGhitza created at 2009-11-15 12:36:20\n\napply this patch only",
     "created_at": "2009-11-15T12:36:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5482",
     "type": "issue_comment",
@@ -241,7 +241,7 @@ archive/issue_comments_042541.json:
 }
 ```
 
-Attachment
+Attachment [trac_5482.patch](tarball://root/attachments/some-uuid/ticket5482/trac_5482.patch) by AlexGhitza created at 2009-11-15 12:36:20
 
 apply this patch only
 

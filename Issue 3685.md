@@ -147,7 +147,7 @@ That said, it's a smallish patch I made in 30 minutes.  So it's not crazy compli
 archive/issue_comments_026110.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch causes some problems on my machine.\n\n1) Sage segfaults at exit.\n\n2) When doing sage -t, I get the following problem for every file:\n\n```\nsage -t  devel/sage-combinat/sage/combinat/root_system/all.pyTraceback (most recent call last):\n  File \"/opt/sage/tmp/.doctest_all.py\", line 2, in <module>\n    from sage.all_cmdline import *; \n  File \"/opt/sage/local/lib/python2.5/site-packages/sage/all_cmdline.py\", line 14, in <module>\n    from sage.all import *\n  File \"/opt/sage/local/lib/python2.5/site-packages/sage/all.py\", line 72, in <module>\n    from sage.rings.all      import *\n  File \"/opt/sage/local/lib/python2.5/site-packages/sage/rings/all.py\", line 94, in <module>\n    from qqbar import (AlgebraicRealField, is_AlgebraicRealField, AA,\n  File \"/opt/sage/local/lib/python2.5/site-packages/sage/rings/qqbar.py\", line 1163, in <module>\n    QQxy = QQ['x', 'y']\n  File \"ring.pyx\", line 146, in sage.rings.ring.Ring.__getitem__ (sage/rings/ring.c:1851)\n  File \"/opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring_constructor.py\", line 303, in PolynomialRing\n    R = _multi_variate(base_ring, names, n, sparse, order)        \n  File \"/opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring_constructor.py\", line 409, in _multi_variate\n    from sage.rings.polynomial.multi_polynomial_libsingular import MPolynomialRing_libsingular\n```\n",
+    "body": "Attachment [sage-3685.patch](tarball://root/attachments/some-uuid/ticket3685/sage-3685.patch) by mhansen created at 2008-08-04 09:01:54\n\nThis patch causes some problems on my machine.\n\n1) Sage segfaults at exit.\n\n2) When doing sage -t, I get the following problem for every file:\n\n```\nsage -t  devel/sage-combinat/sage/combinat/root_system/all.pyTraceback (most recent call last):\n  File \"/opt/sage/tmp/.doctest_all.py\", line 2, in <module>\n    from sage.all_cmdline import *; \n  File \"/opt/sage/local/lib/python2.5/site-packages/sage/all_cmdline.py\", line 14, in <module>\n    from sage.all import *\n  File \"/opt/sage/local/lib/python2.5/site-packages/sage/all.py\", line 72, in <module>\n    from sage.rings.all      import *\n  File \"/opt/sage/local/lib/python2.5/site-packages/sage/rings/all.py\", line 94, in <module>\n    from qqbar import (AlgebraicRealField, is_AlgebraicRealField, AA,\n  File \"/opt/sage/local/lib/python2.5/site-packages/sage/rings/qqbar.py\", line 1163, in <module>\n    QQxy = QQ['x', 'y']\n  File \"ring.pyx\", line 146, in sage.rings.ring.Ring.__getitem__ (sage/rings/ring.c:1851)\n  File \"/opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring_constructor.py\", line 303, in PolynomialRing\n    R = _multi_variate(base_ring, names, n, sparse, order)        \n  File \"/opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring_constructor.py\", line 409, in _multi_variate\n    from sage.rings.polynomial.multi_polynomial_libsingular import MPolynomialRing_libsingular\n```\n",
     "created_at": "2008-08-04T09:01:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3685",
     "type": "issue_comment",
@@ -156,7 +156,7 @@ archive/issue_comments_026110.json:
 }
 ```
 
-Attachment
+Attachment [sage-3685.patch](tarball://root/attachments/some-uuid/ticket3685/sage-3685.patch) by mhansen created at 2008-08-04 09:01:54
 
 This patch causes some problems on my machine.
 
@@ -273,7 +273,7 @@ Changing priority from blocker to major.
 archive/issue_comments_026115.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3685.patch](tarball://root/attachments/some-uuid/ticket3685/trac_3685.patch) by mhansen created at 2013-07-22 14:22:45",
     "created_at": "2013-07-22T14:22:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3685",
     "type": "issue_comment",
@@ -282,7 +282,7 @@ archive/issue_comments_026115.json:
 }
 ```
 
-Attachment
+Attachment [trac_3685.patch](tarball://root/attachments/some-uuid/ticket3685/trac_3685.patch) by mhansen created at 2013-07-22 14:22:45
 
 
 
@@ -401,7 +401,7 @@ Changing keywords from "" to "startup time and imports".
 archive/issue_comments_026122.json:
 ```json
 {
-    "body": "Attachment\n\nI have found the problem, it seems ! Here is the patch solving the issue.\n\nNeeds review !",
+    "body": "Attachment [trac_3685_remove_tab.patch](tarball://root/attachments/some-uuid/ticket3685/trac_3685_remove_tab.patch) by chapoton created at 2013-08-25 16:14:57\n\nI have found the problem, it seems ! Here is the patch solving the issue.\n\nNeeds review !",
     "created_at": "2013-08-25T16:14:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3685",
     "type": "issue_comment",
@@ -410,7 +410,7 @@ archive/issue_comments_026122.json:
 }
 ```
 
-Attachment
+Attachment [trac_3685_remove_tab.patch](tarball://root/attachments/some-uuid/ticket3685/trac_3685_remove_tab.patch) by chapoton created at 2013-08-25 16:14:57
 
 I have found the problem, it seems ! Here is the patch solving the issue.
 

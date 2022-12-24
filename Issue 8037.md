@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8037
 archive/issue_comments_070208.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8037_sagetex_french_tutorial.patch](tarball://root/attachments/some-uuid/ticket8037/trac_8037_sagetex_french_tutorial.patch) by mmezzarobba created at 2010-02-25 22:53:42",
     "created_at": "2010-02-25T22:53:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8037",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_070208.json:
 }
 ```
 
-Attachment
+Attachment [trac_8037_sagetex_french_tutorial.patch](tarball://root/attachments/some-uuid/ticket8037/trac_8037_sagetex_french_tutorial.patch) by mmezzarobba created at 2010-02-25 22:53:42
 
 
 
@@ -123,7 +123,7 @@ fix a small reject in introduction.rst
 archive/issue_comments_070213.json:
 ```json
 {
-    "body": "Attachment\n\nBy the way, the documentation builds fine and appears as it should. (I'm using 4.3.3.) I think this can be a positive review, although I would prefer to have a French speaker (or at least someone who knows more than I do!) look over the patch.",
+    "body": "Attachment [trac_8037_sagetex_french_tutorial.2.patch](tarball://root/attachments/some-uuid/ticket8037/trac_8037_sagetex_french_tutorial.2.patch) by ddrake created at 2010-02-26 02:21:25\n\nBy the way, the documentation builds fine and appears as it should. (I'm using 4.3.3.) I think this can be a positive review, although I would prefer to have a French speaker (or at least someone who knows more than I do!) look over the patch.",
     "created_at": "2010-02-26T02:21:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8037",
     "type": "issue_comment",
@@ -132,7 +132,7 @@ archive/issue_comments_070213.json:
 }
 ```
 
-Attachment
+Attachment [trac_8037_sagetex_french_tutorial.2.patch](tarball://root/attachments/some-uuid/ticket8037/trac_8037_sagetex_french_tutorial.2.patch) by ddrake created at 2010-02-26 02:21:25
 
 By the way, the documentation builds fine and appears as it should. (I'm using 4.3.3.) I think this can be a positive review, although I would prefer to have a French speaker (or at least someone who knows more than I do!) look over the patch.
 

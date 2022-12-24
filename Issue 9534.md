@@ -107,7 +107,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_091830.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9534-permgroup_base.patch](tarball://root/attachments/some-uuid/ticket9534/trac_9534-permgroup_base.patch) by jdemeyer created at 2011-06-01 12:12:30",
     "created_at": "2011-06-01T12:12:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9534",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_091830.json:
 }
 ```
 
-Attachment
+Attachment [trac_9534-permgroup_base.patch](tarball://root/attachments/some-uuid/ticket9534/trac_9534-permgroup_base.patch) by jdemeyer created at 2011-06-01 12:12:30
 
 
 

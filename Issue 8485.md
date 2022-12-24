@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8485
 archive/issue_comments_076469.json:
 ```json
 {
-    "body": "Attachment\n\nAdds an attempt to use this from BSD.py",
+    "body": "Attachment [trac_8485.patch](tarball://root/attachments/some-uuid/ticket8485/trac_8485.patch) by rlm created at 2010-07-18 09:24:40\n\nAdds an attempt to use this from BSD.py",
     "created_at": "2010-07-18T09:24:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8485",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_076469.json:
 }
 ```
 
-Attachment
+Attachment [trac_8485.patch](tarball://root/attachments/some-uuid/ticket8485/trac_8485.patch) by rlm created at 2010-07-18 09:24:40
 
 Adds an attempt to use this from BSD.py
 
@@ -53,7 +53,7 @@ Adds an attempt to use this from BSD.py
 archive/issue_comments_076470.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8485-BSD.patch](tarball://root/attachments/some-uuid/ticket8485/trac_8485-BSD.patch) by jdemeyer created at 2013-08-13 15:35:53",
     "created_at": "2013-08-13T15:35:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8485",
     "type": "issue_comment",
@@ -62,4 +62,4 @@ archive/issue_comments_076470.json:
 }
 ```
 
-Attachment
+Attachment [trac_8485-BSD.patch](tarball://root/attachments/some-uuid/ticket8485/trac_8485-BSD.patch) by jdemeyer created at 2013-08-13 15:35:53

@@ -294,7 +294,7 @@ fpLLL-2.1.3 64-bit patch
 archive/issue_comments_007348.json:
 ```json
 {
-    "body": "Attachment\n\nA new spkg is available at:\n\nhttp://sage.math.washington.edu/home/malb/pkgs/libfplll-2.1.4-20071119.spkg\n\nmalb will add a doctest to verify this issue has really been fixed. Once that is merged we can hopefully close this ticket.\n\nCheers,\n\nMichael",
+    "body": "Attachment [fplll_64bit.patch](tarball://root/attachments/some-uuid/ticket1188/fplll_64bit.patch) by mabshoff created at 2007-11-19 08:57:57\n\nA new spkg is available at:\n\nhttp://sage.math.washington.edu/home/malb/pkgs/libfplll-2.1.4-20071119.spkg\n\nmalb will add a doctest to verify this issue has really been fixed. Once that is merged we can hopefully close this ticket.\n\nCheers,\n\nMichael",
     "created_at": "2007-11-19T08:57:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1188",
     "type": "issue_comment",
@@ -303,7 +303,7 @@ archive/issue_comments_007348.json:
 }
 ```
 
-Attachment
+Attachment [fplll_64bit.patch](tarball://root/attachments/some-uuid/ticket1188/fplll_64bit.patch) by mabshoff created at 2007-11-19 08:57:57
 
 A new spkg is available at:
 
@@ -340,7 +340,7 @@ doctests + documentation update
 archive/issue_comments_007350.json:
 ```json
 {
-    "body": "Attachment\n\nmalb: The error codes from LLL() are positive when an error occurs. Attaching an updated (non-hg) patch that replaces the ret < 0 checks by ret != 0.",
+    "body": "Attachment [fplll.patch](tarball://root/attachments/some-uuid/ticket1188/fplll.patch) by wjp created at 2007-11-19 11:41:47\n\nmalb: The error codes from LLL() are positive when an error occurs. Attaching an updated (non-hg) patch that replaces the ret < 0 checks by ret != 0.",
     "created_at": "2007-11-19T11:41:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1188",
     "type": "issue_comment",
@@ -349,7 +349,7 @@ archive/issue_comments_007350.json:
 }
 ```
 
-Attachment
+Attachment [fplll.patch](tarball://root/attachments/some-uuid/ticket1188/fplll.patch) by wjp created at 2007-11-19 11:41:47
 
 malb: The error codes from LLL() are positive when an error occurs. Attaching an updated (non-hg) patch that replaces the ret < 0 checks by ret != 0.
 
@@ -360,7 +360,7 @@ malb: The error codes from LLL() are positive when an error occurs. Attaching an
 archive/issue_comments_007351.json:
 ```json
 {
-    "body": "Attachment\n\nupdated fplll.patch",
+    "body": "Attachment [fplll2.patch](tarball://root/attachments/some-uuid/ticket1188/fplll2.patch) by wjp created at 2007-11-19 11:42:13\n\nupdated fplll.patch",
     "created_at": "2007-11-19T11:42:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1188",
     "type": "issue_comment",
@@ -369,7 +369,7 @@ archive/issue_comments_007351.json:
 }
 ```
 
-Attachment
+Attachment [fplll2.patch](tarball://root/attachments/some-uuid/ticket1188/fplll2.patch) by wjp created at 2007-11-19 11:42:13
 
 updated fplll.patch
 

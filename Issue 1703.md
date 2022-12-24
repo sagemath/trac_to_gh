@@ -55,7 +55,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1703
 archive/issue_comments_010787.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch isn't against the latest spkg, but I will post an updated spkg with this patch shortly",
+    "body": "Attachment [Sage-2.9.3-fix-singular-memleak-in-longrat.cc.patch](tarball://root/attachments/some-uuid/ticket1703/Sage-2.9.3-fix-singular-memleak-in-longrat.cc.patch) by mabshoff created at 2008-01-06 22:25:17\n\nThis patch isn't against the latest spkg, but I will post an updated spkg with this patch shortly",
     "created_at": "2008-01-06T22:25:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1703",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_010787.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.9.3-fix-singular-memleak-in-longrat.cc.patch](tarball://root/attachments/some-uuid/ticket1703/Sage-2.9.3-fix-singular-memleak-in-longrat.cc.patch) by mabshoff created at 2008-01-06 22:25:17
 
 This patch isn't against the latest spkg, but I will post an updated spkg with this patch shortly
 
@@ -150,7 +150,7 @@ which looks good to me.
 archive/issue_comments_010790.json:
 ```json
 {
-    "body": "Attachment\n\nThis is the actual patch against the Singular codebase",
+    "body": "Attachment [Singular-3-0-4-2-fix-longrat.cc-mpz-leak.patch](tarball://root/attachments/some-uuid/ticket1703/Singular-3-0-4-2-fix-longrat.cc-mpz-leak.patch) by mabshoff created at 2008-01-07 11:53:21\n\nThis is the actual patch against the Singular codebase",
     "created_at": "2008-01-07T11:53:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1703",
     "type": "issue_comment",
@@ -159,7 +159,7 @@ archive/issue_comments_010790.json:
 }
 ```
 
-Attachment
+Attachment [Singular-3-0-4-2-fix-longrat.cc-mpz-leak.patch](tarball://root/attachments/some-uuid/ticket1703/Singular-3-0-4-2-fix-longrat.cc-mpz-leak.patch) by mabshoff created at 2008-01-07 11:53:21
 
 This is the actual patch against the Singular codebase
 

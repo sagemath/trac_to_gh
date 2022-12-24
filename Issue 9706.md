@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9706
 archive/issue_comments_094456.json:
 ```json
 {
-    "body": "Attachment\n\nA new version of the orthogonal_polys.py file.",
+    "body": "Attachment [orthogonal_polys.py](tarball://root/attachments/some-uuid/ticket9706/orthogonal_polys.py) by maldun created at 2010-08-09 00:13:02\n\nA new version of the orthogonal_polys.py file.",
     "created_at": "2010-08-09T00:13:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -50,7 +50,7 @@ archive/issue_comments_094456.json:
 }
 ```
 
-Attachment
+Attachment [orthogonal_polys.py](tarball://root/attachments/some-uuid/ticket9706/orthogonal_polys.py) by maldun created at 2010-08-09 00:13:02
 
 A new version of the orthogonal_polys.py file.
 
@@ -79,7 +79,7 @@ Newer version, with legendre_P, and faster evaluation of symbolic expressions
 archive/issue_comments_094458.json:
 ```json
 {
-    "body": "Attachment\n\nVersion from 10. August 2010",
+    "body": "Attachment [orthogonal_polys.3.py](tarball://root/attachments/some-uuid/ticket9706/orthogonal_polys.3.py) by maldun created at 2010-08-10 16:57:34\n\nVersion from 10. August 2010",
     "created_at": "2010-08-10T16:57:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_094458.json:
 }
 ```
 
-Attachment
+Attachment [orthogonal_polys.3.py](tarball://root/attachments/some-uuid/ticket9706/orthogonal_polys.3.py) by maldun created at 2010-08-10 16:57:34
 
 Version from 10. August 2010
 
@@ -117,7 +117,7 @@ Latest version. It holds classes of all polys (but not all completed yet)
 archive/issue_comments_094460.json:
 ```json
 {
-    "body": "Attachment\n\nAll Polys now have their own class.\nMuch faster evaluation is added.\nNumerical evaluation is provided. \nExcept for legendre_Q, gen_legendre_P, and gen_legendre_Q these aren't ready yet",
+    "body": "Attachment [orthogonal_polys.4.py](tarball://root/attachments/some-uuid/ticket9706/orthogonal_polys.4.py) by maldun created at 2010-08-11 00:09:36\n\nAll Polys now have their own class.\nMuch faster evaluation is added.\nNumerical evaluation is provided. \nExcept for legendre_Q, gen_legendre_P, and gen_legendre_Q these aren't ready yet",
     "created_at": "2010-08-11T00:09:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -126,7 +126,7 @@ archive/issue_comments_094460.json:
 }
 ```
 
-Attachment
+Attachment [orthogonal_polys.4.py](tarball://root/attachments/some-uuid/ticket9706/orthogonal_polys.4.py) by maldun created at 2010-08-11 00:09:36
 
 All Polys now have their own class.
 Much faster evaluation is added.
@@ -276,7 +276,7 @@ Care to elaborate?
 archive/issue_comments_094464.json:
 ```json
 {
-    "body": "Attachment\n\nLatest version from 12. August 2010 (with bugfix in legendre_P)",
+    "body": "Attachment [orthogonal_polys.5.py](tarball://root/attachments/some-uuid/ticket9706/orthogonal_polys.5.py) by maldun created at 2010-08-12 11:16:04\n\nLatest version from 12. August 2010 (with bugfix in legendre_P)",
     "created_at": "2010-08-12T11:16:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -285,7 +285,7 @@ archive/issue_comments_094464.json:
 }
 ```
 
-Attachment
+Attachment [orthogonal_polys.5.py](tarball://root/attachments/some-uuid/ticket9706/orthogonal_polys.5.py) by maldun created at 2010-08-12 11:16:04
 
 Latest version from 12. August 2010 (with bugfix in legendre_P)
 
@@ -524,7 +524,7 @@ Version from 19. August 2010
 archive/issue_comments_094471.json:
 ```json
 {
-    "body": "Attachment\n\nSo now a \"beta\" is ready with full support of all classes.\n\nOnly the Legendre functions are still using Maxima.\n\nsome advances for the future:\n\n-Zernike polys (this should be done in the next time, since explicit formulas are available)\n-support for numpy_eval. (But this will be done, when the scipy package is updated to 0.8, else it has no sense, because the current version of scipy does not support ortho polys well, but the newer can handle them)\n\nNow I need some people for testing this out =)",
+    "body": "Attachment [orthogonal_polys.6.py](tarball://root/attachments/some-uuid/ticket9706/orthogonal_polys.6.py) by maldun created at 2010-08-19 16:30:43\n\nSo now a \"beta\" is ready with full support of all classes.\n\nOnly the Legendre functions are still using Maxima.\n\nsome advances for the future:\n\n-Zernike polys (this should be done in the next time, since explicit formulas are available)\n-support for numpy_eval. (But this will be done, when the scipy package is updated to 0.8, else it has no sense, because the current version of scipy does not support ortho polys well, but the newer can handle them)\n\nNow I need some people for testing this out =)",
     "created_at": "2010-08-19T16:30:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -533,7 +533,7 @@ archive/issue_comments_094471.json:
 }
 ```
 
-Attachment
+Attachment [orthogonal_polys.6.py](tarball://root/attachments/some-uuid/ticket9706/orthogonal_polys.6.py) by maldun created at 2010-08-19 16:30:43
 
 So now a "beta" is ready with full support of all classes.
 
@@ -611,7 +611,7 @@ Added numpy support, eliminated some bugs (19.08.2010)
 archive/issue_comments_094475.json:
 ```json
 {
-    "body": "Attachment\n\n> -support for numpy_eval. (But this will be done, when the scipy package is updated to 0.8, else it has no sense, because the current version of scipy does not support ortho polys well, but the newer can handle them)\n\nI decided to give at least some numpy support for compability reasons.\nBut this is a bad hack...when scipy 0.8 comes I use scipy itself, I change this to a better version :)",
+    "body": "Attachment [orthogonal_polys.7.py](tarball://root/attachments/some-uuid/ticket9706/orthogonal_polys.7.py) by maldun created at 2010-08-19 20:09:59\n\n> -support for numpy_eval. (But this will be done, when the scipy package is updated to 0.8, else it has no sense, because the current version of scipy does not support ortho polys well, but the newer can handle them)\n\nI decided to give at least some numpy support for compability reasons.\nBut this is a bad hack...when scipy 0.8 comes I use scipy itself, I change this to a better version :)",
     "created_at": "2010-08-19T20:09:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -620,7 +620,7 @@ archive/issue_comments_094475.json:
 }
 ```
 
-Attachment
+Attachment [orthogonal_polys.7.py](tarball://root/attachments/some-uuid/ticket9706/orthogonal_polys.7.py) by maldun created at 2010-08-19 20:09:59
 
 > -support for numpy_eval. (But this will be done, when the scipy package is updated to 0.8, else it has no sense, because the current version of scipy does not support ortho polys well, but the newer can handle them)
 
@@ -673,7 +673,7 @@ see: http://trac.sagemath.org/sage_trac/ticket/9769
 archive/issue_comments_094478.json:
 ```json
 {
-    "body": "Attachment\n\nLatest version with some code cleanup (no program changes)",
+    "body": "Attachment [orthogonal_polys.8.py](tarball://root/attachments/some-uuid/ticket9706/orthogonal_polys.8.py) by maldun created at 2010-08-24 21:31:01\n\nLatest version with some code cleanup (no program changes)",
     "created_at": "2010-08-24T21:31:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -682,7 +682,7 @@ archive/issue_comments_094478.json:
 }
 ```
 
-Attachment
+Attachment [orthogonal_polys.8.py](tarball://root/attachments/some-uuid/ticket9706/orthogonal_polys.8.py) by maldun created at 2010-08-24 21:31:01
 
 Latest version with some code cleanup (no program changes)
 
@@ -753,7 +753,7 @@ Patch for latest version with some code cleanup (no program changes)
 archive/issue_comments_094482.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:20 burcin]:\n> Hi Stefan,\n> \n> can you post a patch corresponding to attachment:orthogonal_polys.8.py for review?\n> \n> Thanks,\n\n> Burcin\n\nDone!",
+    "body": "Attachment [trac_9706_ortho_polys.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706_ortho_polys.patch) by maldun created at 2010-08-28 16:50:33\n\nReplying to [comment:20 burcin]:\n> Hi Stefan,\n> \n> can you post a patch corresponding to attachment:orthogonal_polys.8.py for review?\n> \n> Thanks,\n\n> Burcin\n\nDone!",
     "created_at": "2010-08-28T16:50:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -762,7 +762,7 @@ archive/issue_comments_094482.json:
 }
 ```
 
-Attachment
+Attachment [trac_9706_ortho_polys.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706_ortho_polys.patch) by maldun created at 2010-08-28 16:50:33
 
 Replying to [comment:20 burcin]:
 > Hi Stefan,
@@ -1052,7 +1052,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_094489.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [orthogonal_polys.9.py](tarball://root/attachments/some-uuid/ticket9706/orthogonal_polys.9.py) by maldun created at 2010-10-03 00:49:32",
     "created_at": "2010-10-03T00:49:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -1061,7 +1061,7 @@ archive/issue_comments_094489.json:
 }
 ```
 
-Attachment
+Attachment [orthogonal_polys.9.py](tarball://root/attachments/some-uuid/ticket9706/orthogonal_polys.9.py) by maldun created at 2010-10-03 00:49:32
 
 
 
@@ -1193,7 +1193,7 @@ Latest version of orthogonal polys with scipy support, and changed doctests. Tes
 archive/issue_comments_094496.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:30 kcrisman]:\n> I don't have time to review this for a while, but did take a quick look - thanks for polishing that patch!  I don't think we are allowed to import numpy or scipy like that anymore, but rather have to do it in an individual function (lest startup times get huge).  I don't quite understand exactly how that works, but anyway such a blanket import statement probably isn't appropriate, the way I understand what others have said.  \n\nBut thanks for giving feedback! I know that this patch isn't easy for review because the code grew from 650 to about 2300 lines of code. But I'm happy to get at least some info.\n\nYou are right the imports didn't change since I started this ticket and importing the whole numpy and scipy packages is to much. This isn't a very good Idea if one thinks about performance either.  I changed that now so that only functions that are really needed are importet. I did this also for mpmath but the problem with the global import remains.\n(see above). Also changed some errors in the discription I missed and repaired a wrong doctest.\n\nPS: If diffs or more changelogs are needed let me know. I'm keeping track with git on my machine of the changes.",
+    "body": "Attachment [trac_9706_orthogonal_polys.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706_orthogonal_polys.patch) by maldun created at 2010-10-16 13:04:50\n\nReplying to [comment:30 kcrisman]:\n> I don't have time to review this for a while, but did take a quick look - thanks for polishing that patch!  I don't think we are allowed to import numpy or scipy like that anymore, but rather have to do it in an individual function (lest startup times get huge).  I don't quite understand exactly how that works, but anyway such a blanket import statement probably isn't appropriate, the way I understand what others have said.  \n\nBut thanks for giving feedback! I know that this patch isn't easy for review because the code grew from 650 to about 2300 lines of code. But I'm happy to get at least some info.\n\nYou are right the imports didn't change since I started this ticket and importing the whole numpy and scipy packages is to much. This isn't a very good Idea if one thinks about performance either.  I changed that now so that only functions that are really needed are importet. I did this also for mpmath but the problem with the global import remains.\n(see above). Also changed some errors in the discription I missed and repaired a wrong doctest.\n\nPS: If diffs or more changelogs are needed let me know. I'm keeping track with git on my machine of the changes.",
     "created_at": "2010-10-16T13:04:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -1202,7 +1202,7 @@ archive/issue_comments_094496.json:
 }
 ```
 
-Attachment
+Attachment [trac_9706_orthogonal_polys.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706_orthogonal_polys.patch) by maldun created at 2010-10-16 13:04:50
 
 Replying to [comment:30 kcrisman]:
 > I don't have time to review this for a while, but did take a quick look - thanks for polishing that patch!  I don't think we are allowed to import numpy or scipy like that anymore, but rather have to do it in an individual function (lest startup times get huge).  I don't quite understand exactly how that works, but anyway such a blanket import statement probably isn't appropriate, the way I understand what others have said.  
@@ -2336,7 +2336,7 @@ new fixes and patches
 archive/issue_comments_094535.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:68 maldun]:\n> would work for that problem and some others. But how to catch such things correctly?\n\nI think there are only two cases: the \"symbolic\" case and the \"algebraic\" case. The latter means that we really consider the polynomial as a polynomial, not a symbolic function. In `chebyshev(n,x)`, if either `n` or `x` is symbolic, we are in the symbolic case, otherwise we're in the algebraic case. In the algebraic case, the index `n` must be a concrete integer and we use the iterative algorithm.",
+    "body": "Attachment [trac_9706_new_clenshaw.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706_new_clenshaw.patch) by jdemeyer created at 2013-12-04 23:51:34\n\nReplying to [comment:68 maldun]:\n> would work for that problem and some others. But how to catch such things correctly?\n\nI think there are only two cases: the \"symbolic\" case and the \"algebraic\" case. The latter means that we really consider the polynomial as a polynomial, not a symbolic function. In `chebyshev(n,x)`, if either `n` or `x` is symbolic, we are in the symbolic case, otherwise we're in the algebraic case. In the algebraic case, the index `n` must be a concrete integer and we use the iterative algorithm.",
     "created_at": "2013-12-04T23:51:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -2345,7 +2345,7 @@ archive/issue_comments_094535.json:
 }
 ```
 
-Attachment
+Attachment [trac_9706_new_clenshaw.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706_new_clenshaw.patch) by jdemeyer created at 2013-12-04 23:51:34
 
 Replying to [comment:68 maldun]:
 > would work for that problem and some others. But how to catch such things correctly?
@@ -2566,7 +2566,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_094544.json:
 ```json
 {
-    "body": "Attachment\n\nNew patch attached. I incorporated all changes discussed.\n\n`@`Pari I tried the evaluation with pari, but with Fredericks recursion, there is no gain in speed, due to the type checks beforehand. And the recursion in sage avoid type conversions.",
+    "body": "Attachment [trac_9706_chebyshev_patch_new.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706_chebyshev_patch_new.patch) by maldun created at 2013-12-05 19:14:23\n\nNew patch attached. I incorporated all changes discussed.\n\n`@`Pari I tried the evaluation with pari, but with Fredericks recursion, there is no gain in speed, due to the type checks beforehand. And the recursion in sage avoid type conversions.",
     "created_at": "2013-12-05T19:14:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -2575,7 +2575,7 @@ archive/issue_comments_094544.json:
 }
 ```
 
-Attachment
+Attachment [trac_9706_chebyshev_patch_new.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706_chebyshev_patch_new.patch) by maldun created at 2013-12-05 19:14:23
 
 New patch attached. I incorporated all changes discussed.
 
@@ -2606,7 +2606,7 @@ meldun: please adjust the "apply" section in the ticket description so it's clea
 archive/issue_comments_094546.json:
 ```json
 {
-    "body": "Attachment\n\ncheby changes",
+    "body": "Attachment [trac_9706_chebyshev.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706_chebyshev.patch) by jdemeyer created at 2013-12-05 19:46:19\n\ncheby changes",
     "created_at": "2013-12-05T19:46:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -2615,7 +2615,7 @@ archive/issue_comments_094546.json:
 }
 ```
 
-Attachment
+Attachment [trac_9706_chebyshev.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706_chebyshev.patch) by jdemeyer created at 2013-12-05 19:46:19
 
 cheby changes
 
@@ -2808,7 +2808,7 @@ It's annoying since I already had fixed it ...
 archive/issue_comments_094554.json:
 ```json
 {
-    "body": "Attachment\n\nincorporated things that were already been done ...",
+    "body": "Attachment [trac_9706_bugfixes_and_doctests.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706_bugfixes_and_doctests.patch) by maldun created at 2013-12-05 23:55:09\n\nincorporated things that were already been done ...",
     "created_at": "2013-12-05T23:55:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -2817,7 +2817,7 @@ archive/issue_comments_094554.json:
 }
 ```
 
-Attachment
+Attachment [trac_9706_bugfixes_and_doctests.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706_bugfixes_and_doctests.patch) by maldun created at 2013-12-05 23:55:09
 
 incorporated things that were already been done ...
 
@@ -3308,7 +3308,7 @@ Bunch of corrections and new doctests
 archive/issue_comments_094570.json:
 ```json
 {
-    "body": "Attachment\n\nI incorporated now the things you wished for, except things for ducumentation.\nI also added many new doctests.\n\nI also cleaned up the evaluation methods.",
+    "body": "Attachment [trac_9707_chebyshev_corrections.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9707_chebyshev_corrections.patch) by maldun created at 2013-12-08 21:06:41\n\nI incorporated now the things you wished for, except things for ducumentation.\nI also added many new doctests.\n\nI also cleaned up the evaluation methods.",
     "created_at": "2013-12-08T21:06:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -3317,7 +3317,7 @@ archive/issue_comments_094570.json:
 }
 ```
 
-Attachment
+Attachment [trac_9707_chebyshev_corrections.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9707_chebyshev_corrections.patch) by maldun created at 2013-12-08 21:06:41
 
 I incorporated now the things you wished for, except things for ducumentation.
 I also added many new doctests.
@@ -3331,7 +3331,7 @@ I also cleaned up the evaluation methods.
 archive/issue_comments_094571.json:
 ```json
 {
-    "body": "Attachment\n\ncorrected name of file",
+    "body": "Attachment [trac_9706_chebyshev_corrections.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706_chebyshev_corrections.patch) by maldun created at 2013-12-08 22:22:18\n\ncorrected name of file",
     "created_at": "2013-12-08T22:22:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -3340,7 +3340,7 @@ archive/issue_comments_094571.json:
 }
 ```
 
-Attachment
+Attachment [trac_9706_chebyshev_corrections.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706_chebyshev_corrections.patch) by maldun created at 2013-12-08 22:22:18
 
 corrected name of file
 
@@ -3351,7 +3351,7 @@ corrected name of file
 archive/issue_comments_094572.json:
 ```json
 {
-    "body": "Attachment\n\ndocu changes",
+    "body": "Attachment [trac_9706_chebyshev_docu.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706_chebyshev_docu.patch) by maldun created at 2013-12-08 22:22:39\n\ndocu changes",
     "created_at": "2013-12-08T22:22:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -3360,7 +3360,7 @@ archive/issue_comments_094572.json:
 }
 ```
 
-Attachment
+Attachment [trac_9706_chebyshev_docu.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706_chebyshev_docu.patch) by maldun created at 2013-12-08 22:22:39
 
 docu changes
 
@@ -3407,7 +3407,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_094575.json:
 ```json
 {
-    "body": "Attachment\n\nadded changes in docu.\n\nStill one bug to fix",
+    "body": "Attachment [trac_9706_chebyshev_docu.2.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706_chebyshev_docu.2.patch) by maldun created at 2013-12-08 22:24:27\n\nadded changes in docu.\n\nStill one bug to fix",
     "created_at": "2013-12-08T22:24:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -3416,7 +3416,7 @@ archive/issue_comments_094575.json:
 }
 ```
 
-Attachment
+Attachment [trac_9706_chebyshev_docu.2.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706_chebyshev_docu.2.patch) by maldun created at 2013-12-08 22:24:27
 
 added changes in docu.
 
@@ -3465,7 +3465,7 @@ fixed bugs with chebyshev_U(-1,...)
 archive/issue_comments_094578.json:
 ```json
 {
-    "body": "Attachment\n\nFinally fixed the chebyshev_U(-1,...) issue",
+    "body": "Attachment [trac_9706_chebyshev_U-1.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706_chebyshev_U-1.patch) by maldun created at 2013-12-08 22:41:58\n\nFinally fixed the chebyshev_U(-1,...) issue",
     "created_at": "2013-12-08T22:41:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -3474,7 +3474,7 @@ archive/issue_comments_094578.json:
 }
 ```
 
-Attachment
+Attachment [trac_9706_chebyshev_U-1.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706_chebyshev_U-1.patch) by maldun created at 2013-12-08 22:41:58
 
 Finally fixed the chebyshev_U(-1,...) issue
 
@@ -3521,7 +3521,7 @@ collection of all patches
 archive/issue_comments_094581.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9706_chebyshev_collection.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706_chebyshev_collection.patch) by maldun created at 2013-12-08 23:06:46",
     "created_at": "2013-12-08T23:06:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -3530,7 +3530,7 @@ archive/issue_comments_094581.json:
 }
 ```
 
-Attachment
+Attachment [trac_9706_chebyshev_collection.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706_chebyshev_collection.patch) by maldun created at 2013-12-08 23:06:46
 
 
 
@@ -3620,7 +3620,7 @@ but there is some reasoning behind this =)
 archive/issue_comments_094586.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:110 maldun]:\n> Is it really a good idea to replace *args and **kwds in the OrthogonalPolynomial class?\n> \n> Since not all ortho polys only have 2 arguments, e.g. Gegenbauer polynomials [http://en.wikipedia.org/wiki/Gegenbauer_polynomials](http://en.wikipedia.org/wiki/Gegenbauer_polynomials) which have an additional parameter alpha\n> It makes perfect sense for the chebyshev polys though\nOk, it's always difficult to design an interface for something you don't have an implementation for, but I made the change such that the Gegenbauer polynomials should (in theory) work.",
+    "body": "Attachment [9706_review.patch](tarball://root/attachments/some-uuid/ticket9706/9706_review.patch) by jdemeyer created at 2013-12-09 18:43:51\n\nReplying to [comment:110 maldun]:\n> Is it really a good idea to replace *args and **kwds in the OrthogonalPolynomial class?\n> \n> Since not all ortho polys only have 2 arguments, e.g. Gegenbauer polynomials [http://en.wikipedia.org/wiki/Gegenbauer_polynomials](http://en.wikipedia.org/wiki/Gegenbauer_polynomials) which have an additional parameter alpha\n> It makes perfect sense for the chebyshev polys though\nOk, it's always difficult to design an interface for something you don't have an implementation for, but I made the change such that the Gegenbauer polynomials should (in theory) work.",
     "created_at": "2013-12-09T18:43:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -3629,7 +3629,7 @@ archive/issue_comments_094586.json:
 }
 ```
 
-Attachment
+Attachment [9706_review.patch](tarball://root/attachments/some-uuid/ticket9706/9706_review.patch) by jdemeyer created at 2013-12-09 18:43:51
 
 Replying to [comment:110 maldun]:
 > Is it really a good idea to replace *args and **kwds in the OrthogonalPolynomial class?
@@ -3850,7 +3850,7 @@ I propose the following
 archive/issue_comments_094594.json:
 ```json
 {
-    "body": "Attachment\n\nproposed new structure",
+    "body": "Attachment [trac_9706_new_base_classes.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706_new_base_classes.patch) by maldun created at 2013-12-09 22:02:25\n\nproposed new structure",
     "created_at": "2013-12-09T22:02:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -3859,7 +3859,7 @@ archive/issue_comments_094594.json:
 }
 ```
 
-Attachment
+Attachment [trac_9706_new_base_classes.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706_new_base_classes.patch) by maldun created at 2013-12-09 22:02:25
 
 proposed new structure
 
@@ -4121,7 +4121,7 @@ Changing status from positive_review to needs_info.
 archive/issue_comments_094605.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9706-review-ts.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706-review-ts.patch) by tscrim created at 2013-12-16 15:07:19",
     "created_at": "2013-12-16T15:07:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -4130,7 +4130,7 @@ archive/issue_comments_094605.json:
 }
 ```
 
-Attachment
+Attachment [trac_9706-review-ts.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706-review-ts.patch) by tscrim created at 2013-12-16 15:07:19
 
 
 

@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5078
 archive/issue_comments_038669.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5078-preparse-const.patch](tarball://root/attachments/some-uuid/ticket5078/5078-preparse-const.patch) by robertwb created at 2009-01-24 02:05:15",
     "created_at": "2009-01-24T02:05:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5078",
     "type": "issue_comment",
@@ -50,7 +50,7 @@ archive/issue_comments_038669.json:
 }
 ```
 
-Attachment
+Attachment [5078-preparse-const.patch](tarball://root/attachments/some-uuid/ticket5078/5078-preparse-const.patch) by robertwb created at 2009-01-24 02:05:15
 
 
 

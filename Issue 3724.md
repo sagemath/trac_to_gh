@@ -53,7 +53,7 @@ implements faster hashing
 archive/issue_comments_026413.json:
 ```json
 {
-    "body": "Attachment\n\nit seems, the patch is independent of the PNG fix.",
+    "body": "Attachment [m4ri_hash.patch](tarball://root/attachments/some-uuid/ticket3724/m4ri_hash.patch) by malb created at 2008-08-06 16:32:32\n\nit seems, the patch is independent of the PNG fix.",
     "created_at": "2008-08-06T16:32:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3724",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_026413.json:
 }
 ```
 
-Attachment
+Attachment [m4ri_hash.patch](tarball://root/attachments/some-uuid/ticket3724/m4ri_hash.patch) by malb created at 2008-08-06 16:32:32
 
 it seems, the patch is independent of the PNG fix.
 
@@ -350,7 +350,7 @@ address review
 archive/issue_comments_026424.json:
 ```json
 {
-    "body": "Attachment\n\nYou're right, good catch. The attached patch addresses that issue.",
+    "body": "Attachment [m4ri_hash2.patch](tarball://root/attachments/some-uuid/ticket3724/m4ri_hash2.patch) by malb created at 2008-08-26 13:25:29\n\nYou're right, good catch. The attached patch addresses that issue.",
     "created_at": "2008-08-26T13:25:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3724",
     "type": "issue_comment",
@@ -359,7 +359,7 @@ archive/issue_comments_026424.json:
 }
 ```
 
-Attachment
+Attachment [m4ri_hash2.patch](tarball://root/attachments/some-uuid/ticket3724/m4ri_hash2.patch) by malb created at 2008-08-26 13:25:29
 
 You're right, good catch. The attached patch addresses that issue.
 

@@ -75,7 +75,7 @@ based on Sage 4.1.1.alpha0
 archive/issue_comments_053677.json:
 ```json
 {
-    "body": "Attachment\n\nDavid: Can I ask you to review this?",
+    "body": "Attachment [trac_6573-docstring-fix.patch](tarball://root/attachments/some-uuid/ticket6573/trac_6573-docstring-fix.patch) by mvngu created at 2009-07-21 14:28:47\n\nDavid: Can I ask you to review this?",
     "created_at": "2009-07-21T14:28:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6573",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_053677.json:
 }
 ```
 
-Attachment
+Attachment [trac_6573-docstring-fix.patch](tarball://root/attachments/some-uuid/ticket6573/trac_6573-docstring-fix.patch) by mvngu created at 2009-07-21 14:28:47
 
 David: Can I ask you to review this?
 
@@ -95,7 +95,7 @@ David: Can I ask you to review this?
 archive/issue_comments_053678.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6573-review.patch](tarball://root/attachments/some-uuid/ticket6573/trac_6573-review.patch) by davidloeffler created at 2009-07-21 14:59:11",
     "created_at": "2009-07-21T14:59:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6573",
     "type": "issue_comment",
@@ -104,7 +104,7 @@ archive/issue_comments_053678.json:
 }
 ```
 
-Attachment
+Attachment [trac_6573-review.patch](tarball://root/attachments/some-uuid/ticket6573/trac_6573-review.patch) by davidloeffler created at 2009-07-21 14:59:11
 
 
 

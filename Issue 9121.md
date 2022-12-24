@@ -81,7 +81,7 @@ Changing status from new to needs_review.
 archive/issue_comments_084832.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9121.patch](tarball://root/attachments/some-uuid/ticket9121/trac_9121.patch) by was created at 2010-06-03 03:29:06",
     "created_at": "2010-06-03T03:29:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9121",
     "type": "issue_comment",
@@ -90,7 +90,7 @@ archive/issue_comments_084832.json:
 }
 ```
 
-Attachment
+Attachment [trac_9121.patch](tarball://root/attachments/some-uuid/ticket9121/trac_9121.patch) by was created at 2010-06-03 03:29:06
 
 
 
@@ -121,7 +121,7 @@ I think you should have a look at it and mark one of them a duplicate.
 archive/issue_comments_084834.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9121-part2.patch](tarball://root/attachments/some-uuid/ticket9121/trac_9121-part2.patch) by was created at 2010-06-03 16:00:16",
     "created_at": "2010-06-03T16:00:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9121",
     "type": "issue_comment",
@@ -130,7 +130,7 @@ archive/issue_comments_084834.json:
 }
 ```
 
-Attachment
+Attachment [trac_9121-part2.patch](tarball://root/attachments/some-uuid/ticket9121/trac_9121-part2.patch) by was created at 2010-06-03 16:00:16
 
 
 

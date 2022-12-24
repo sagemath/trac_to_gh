@@ -533,7 +533,7 @@ Cython copies a buggy chunk of C code into target files; the bug would be trigge
 archive/issue_comments_005155.json:
 ```json
 {
-    "body": "Attachment\n\nThis is the patch I applied to the Cython spkg (to the inner hg repository).  I'm only posting this for completeness; you want to download the spkg instead.",
+    "body": "Attachment [cython-fix.patch](tarball://root/attachments/some-uuid/ticket833/cython-fix.patch) by cwitty created at 2007-10-14 07:01:18\n\nThis is the patch I applied to the Cython spkg (to the inner hg repository).  I'm only posting this for completeness; you want to download the spkg instead.",
     "created_at": "2007-10-14T07:01:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/833",
     "type": "issue_comment",
@@ -542,7 +542,7 @@ archive/issue_comments_005155.json:
 }
 ```
 
-Attachment
+Attachment [cython-fix.patch](tarball://root/attachments/some-uuid/ticket833/cython-fix.patch) by cwitty created at 2007-10-14 07:01:18
 
 This is the patch I applied to the Cython spkg (to the inner hg repository).  I'm only posting this for completeness; you want to download the spkg instead.
 

@@ -242,7 +242,7 @@ this fixes the bug
 archive/issue_comments_016189.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached a patch that fixes the problem.  It was actually potentially fairly\nserious, though something one wouldn't see much on \"random\" input.\n\nThe fix involves changing one line (the patch is longer, but only for cosmetic reasons and because of adding a doctest).\n\nI ran the sanity check scripts and this code still works after the patch, by the way.  So that one tiny patch, which is clearly right, doesn't break things.",
+    "body": "Attachment [sage-2398.patch](tarball://root/attachments/some-uuid/ticket2398/sage-2398.patch) by was created at 2008-03-06 02:49:23\n\nI've attached a patch that fixes the problem.  It was actually potentially fairly\nserious, though something one wouldn't see much on \"random\" input.\n\nThe fix involves changing one line (the patch is longer, but only for cosmetic reasons and because of adding a doctest).\n\nI ran the sanity check scripts and this code still works after the patch, by the way.  So that one tiny patch, which is clearly right, doesn't break things.",
     "created_at": "2008-03-06T02:49:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2398",
     "type": "issue_comment",
@@ -251,7 +251,7 @@ archive/issue_comments_016189.json:
 }
 ```
 
-Attachment
+Attachment [sage-2398.patch](tarball://root/attachments/some-uuid/ticket2398/sage-2398.patch) by was created at 2008-03-06 02:49:23
 
 I've attached a patch that fixes the problem.  It was actually potentially fairly
 serious, though something one wouldn't see much on "random" input.

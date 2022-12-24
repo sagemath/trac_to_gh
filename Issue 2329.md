@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2329
 archive/issue_comments_015503.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-2329.patch](tarball://root/attachments/some-uuid/ticket2329/trac-2329.patch) by craigcitro created at 2008-02-27 09:04:30",
     "created_at": "2008-02-27T09:04:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_015503.json:
 }
 ```
 
-Attachment
+Attachment [trac-2329.patch](tarball://root/attachments/some-uuid/ticket2329/trac-2329.patch) by craigcitro created at 2008-02-27 09:04:30
 
 
 
@@ -171,7 +171,7 @@ Added a second patch that addresses all of the above issues.
 archive/issue_comments_015510.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-2329-pt2.patch](tarball://root/attachments/some-uuid/ticket2329/trac-2329-pt2.patch) by craigcitro created at 2008-04-06 23:09:23",
     "created_at": "2008-04-06T23:09:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
@@ -180,7 +180,7 @@ archive/issue_comments_015510.json:
 }
 ```
 
-Attachment
+Attachment [trac-2329-pt2.patch](tarball://root/attachments/some-uuid/ticket2329/trac-2329-pt2.patch) by craigcitro created at 2008-04-06 23:09:23
 
 
 
@@ -189,7 +189,7 @@ Attachment
 archive/issue_comments_015511.json:
 ```json
 {
-    "body": "Attachment\n\nThe last patch separates out very useful fixes to the pari/gen.pyx that should be applied now.\n\nThe remainder of the functionality requires some more substantial changes and is a work in progress.",
+    "body": "Attachment [2329-ccitro-pari-indexing-fixes-1.patch](tarball://root/attachments/some-uuid/ticket2329/2329-ccitro-pari-indexing-fixes-1.patch) by ncalexan created at 2008-04-15 06:23:00\n\nThe last patch separates out very useful fixes to the pari/gen.pyx that should be applied now.\n\nThe remainder of the functionality requires some more substantial changes and is a work in progress.",
     "created_at": "2008-04-15T06:23:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
@@ -198,7 +198,7 @@ archive/issue_comments_015511.json:
 }
 ```
 
-Attachment
+Attachment [2329-ccitro-pari-indexing-fixes-1.patch](tarball://root/attachments/some-uuid/ticket2329/2329-ccitro-pari-indexing-fixes-1.patch) by ncalexan created at 2008-04-15 06:23:00
 
 The last patch separates out very useful fixes to the pari/gen.pyx that should be applied now.
 
@@ -329,7 +329,7 @@ The output of is_norm is True or False. With element=True, it also gives an elem
 archive/issue_comments_015518.json:
 ```json
 {
-    "body": "Attachment\n\napply only this latest file",
+    "body": "Attachment [trac_2329_rnfisnorm.patch](tarball://root/attachments/some-uuid/ticket2329/trac_2329_rnfisnorm.patch) by mstreng created at 2010-08-18 14:09:34\n\napply only this latest file",
     "created_at": "2010-08-18T14:09:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
@@ -338,7 +338,7 @@ archive/issue_comments_015518.json:
 }
 ```
 
-Attachment
+Attachment [trac_2329_rnfisnorm.patch](tarball://root/attachments/some-uuid/ticket2329/trac_2329_rnfisnorm.patch) by mstreng created at 2010-08-18 14:09:34
 
 apply only this latest file
 
@@ -695,7 +695,7 @@ The bugs have been reported to pari [http://pari.math.u-bordeaux.fr/cgi-bin/bugr
 archive/issue_comments_015529.json:
 ```json
 {
-    "body": "Attachment\n\napply only this latest file (works on sage 4.6.1.alpha2)",
+    "body": "Attachment [trac_2329_rnfisnorm2.patch](tarball://root/attachments/some-uuid/ticket2329/trac_2329_rnfisnorm2.patch) by mstreng created at 2010-12-03 15:28:43\n\napply only this latest file (works on sage 4.6.1.alpha2)",
     "created_at": "2010-12-03T15:28:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
@@ -704,7 +704,7 @@ archive/issue_comments_015529.json:
 }
 ```
 
-Attachment
+Attachment [trac_2329_rnfisnorm2.patch](tarball://root/attachments/some-uuid/ticket2329/trac_2329_rnfisnorm2.patch) by mstreng created at 2010-12-03 15:28:43
 
 apply only this latest file (works on sage 4.6.1.alpha2)
 
@@ -853,7 +853,7 @@ I will post a patch for this in the next couple of days, and suggest other chang
 archive/issue_comments_015536.json:
 ```json
 {
-    "body": "Attachment\n\napply only this latest file (works on sage 4.6.1.alpha2)",
+    "body": "Attachment [trac_2329_rnfisnorm3.patch](tarball://root/attachments/some-uuid/ticket2329/trac_2329_rnfisnorm3.patch) by mstreng created at 2010-12-08 13:48:58\n\napply only this latest file (works on sage 4.6.1.alpha2)",
     "created_at": "2010-12-08T13:48:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
@@ -862,7 +862,7 @@ archive/issue_comments_015536.json:
 }
 ```
 
-Attachment
+Attachment [trac_2329_rnfisnorm3.patch](tarball://root/attachments/some-uuid/ticket2329/trac_2329_rnfisnorm3.patch) by mstreng created at 2010-12-08 13:48:58
 
 apply only this latest file (works on sage 4.6.1.alpha2)
 
@@ -1078,7 +1078,7 @@ apply only this latest file (works on sage 4.6.1.alpha3)
 archive/issue_comments_015547.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:37 fwclarke]:\n\n> ... This all seems to work with 4.6.1.alpha3.\n\nAnd with 4.6.1.rc0.",
+    "body": "Attachment [trac_2329_rnfisnorm4.patch](tarball://root/attachments/some-uuid/ticket2329/trac_2329_rnfisnorm4.patch) by fwclarke created at 2010-12-28 13:03:41\n\nReplying to [comment:37 fwclarke]:\n\n> ... This all seems to work with 4.6.1.alpha3.\n\nAnd with 4.6.1.rc0.",
     "created_at": "2010-12-28T13:03:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
@@ -1087,7 +1087,7 @@ archive/issue_comments_015547.json:
 }
 ```
 
-Attachment
+Attachment [trac_2329_rnfisnorm4.patch](tarball://root/attachments/some-uuid/ticket2329/trac_2329_rnfisnorm4.patch) by fwclarke created at 2010-12-28 13:03:41
 
 Replying to [comment:37 fwclarke]:
 
@@ -1174,7 +1174,7 @@ I moved the PARI part of this patch to #10677, so this patch now depends on #106
 archive/issue_comments_015552.json:
 ```json
 {
-    "body": "Attachment\n\nApply only this, rebased to sage-4.6.2.alpha1 + #10677",
+    "body": "Attachment [trac_2329_rnfisnorm5.2.patch](tarball://root/attachments/some-uuid/ticket2329/trac_2329_rnfisnorm5.2.patch) by jdemeyer created at 2011-01-23 18:13:51\n\nApply only this, rebased to sage-4.6.2.alpha1 + #10677",
     "created_at": "2011-01-23T18:13:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
@@ -1183,7 +1183,7 @@ archive/issue_comments_015552.json:
 }
 ```
 
-Attachment
+Attachment [trac_2329_rnfisnorm5.2.patch](tarball://root/attachments/some-uuid/ticket2329/trac_2329_rnfisnorm5.2.patch) by jdemeyer created at 2011-01-23 18:13:51
 
 Apply only this, rebased to sage-4.6.2.alpha1 + #10677
 
@@ -1194,7 +1194,7 @@ Apply only this, rebased to sage-4.6.2.alpha1 + #10677
 archive/issue_comments_015553.json:
 ```json
 {
-    "body": "Attachment\n\nApply only this, rebased to sage-4.6.2.alpha1 + #10677",
+    "body": "Attachment [trac_2329_rnfisnorm5.patch](tarball://root/attachments/some-uuid/ticket2329/trac_2329_rnfisnorm5.patch) by jdemeyer created at 2011-01-23 18:16:25\n\nApply only this, rebased to sage-4.6.2.alpha1 + #10677",
     "created_at": "2011-01-23T18:16:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
@@ -1203,7 +1203,7 @@ archive/issue_comments_015553.json:
 }
 ```
 
-Attachment
+Attachment [trac_2329_rnfisnorm5.patch](tarball://root/attachments/some-uuid/ticket2329/trac_2329_rnfisnorm5.patch) by jdemeyer created at 2011-01-23 18:16:25
 
 Apply only this, rebased to sage-4.6.2.alpha1 + #10677
 
@@ -1293,7 +1293,7 @@ Apply on top of previous patch
 archive/issue_comments_015558.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:45 davidloeffler]:\n> Is that supposed to be `(\"y\")` or `(\"'y'\")` perhaps?\n\nNo, `'y` is correct.  I have added some comments to that code in the patch.\n\nBasically, the `'y` syntax is PARI's way of refering to a *variable* (as opposed to the *value* of a variable).  See the following `gp` session:\n\n\n```\ngp> y = 42\n%1 = 42\ngp> y\n%2 = 42\ngp> 'y\n%3 = y\ngp> subst(x^3, x, y)\n%4 = 74088\ngp> subst(x^3, x, 'y)\n%5 = y^3\n```\n",
+    "body": "Attachment [2329_reviewer.patch](tarball://root/attachments/some-uuid/ticket2329/2329_reviewer.patch) by jdemeyer created at 2011-02-11 08:29:25\n\nReplying to [comment:45 davidloeffler]:\n> Is that supposed to be `(\"y\")` or `(\"'y'\")` perhaps?\n\nNo, `'y` is correct.  I have added some comments to that code in the patch.\n\nBasically, the `'y` syntax is PARI's way of refering to a *variable* (as opposed to the *value* of a variable).  See the following `gp` session:\n\n\n```\ngp> y = 42\n%1 = 42\ngp> y\n%2 = 42\ngp> 'y\n%3 = y\ngp> subst(x^3, x, y)\n%4 = 74088\ngp> subst(x^3, x, 'y)\n%5 = y^3\n```\n",
     "created_at": "2011-02-11T08:29:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
@@ -1302,7 +1302,7 @@ archive/issue_comments_015558.json:
 }
 ```
 
-Attachment
+Attachment [2329_reviewer.patch](tarball://root/attachments/some-uuid/ticket2329/2329_reviewer.patch) by jdemeyer created at 2011-02-11 08:29:25
 
 Replying to [comment:45 davidloeffler]:
 > Is that supposed to be `("y")` or `("'y'")` perhaps?
@@ -1533,7 +1533,7 @@ I will test this patch on a 32-bit system and see what needs to be fixed.
 archive/issue_comments_015569.json:
 ```json
 {
-    "body": "Attachment\n\nAdditional patch",
+    "body": "Attachment [2329_selmer.patch](tarball://root/attachments/some-uuid/ticket2329/2329_selmer.patch) by jdemeyer created at 2011-03-11 12:53:51\n\nAdditional patch",
     "created_at": "2011-03-11T12:53:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
@@ -1542,7 +1542,7 @@ archive/issue_comments_015569.json:
 }
 ```
 
-Attachment
+Attachment [2329_selmer.patch](tarball://root/attachments/some-uuid/ticket2329/2329_selmer.patch) by jdemeyer created at 2011-03-11 12:53:51
 
 Additional patch
 

@@ -96,7 +96,7 @@ f
 archive/issue_comments_013297.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [scripts_2054.patch](tarball://root/attachments/some-uuid/ticket2054/scripts_2054.patch) by mhansen created at 2010-02-02 19:53:15",
     "created_at": "2010-02-02T19:53:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2054",
     "type": "issue_comment",
@@ -105,7 +105,7 @@ archive/issue_comments_013297.json:
 }
 ```
 
-Attachment
+Attachment [scripts_2054.patch](tarball://root/attachments/some-uuid/ticket2054/scripts_2054.patch) by mhansen created at 2010-02-02 19:53:15
 
 
 

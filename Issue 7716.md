@@ -174,7 +174,7 @@ Changes behavior for functions with underscores beginning and ending the name.  
 archive/issue_comments_066272.json:
 ```json
 {
-    "body": "Attachment\n\nI'm declaring a total feature freeze on sage-4.3.",
+    "body": "Attachment [7716_underscores.patch](tarball://root/attachments/some-uuid/ticket7716/7716_underscores.patch) by was created at 2009-12-24 07:05:01\n\nI'm declaring a total feature freeze on sage-4.3.",
     "created_at": "2009-12-24T07:05:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7716",
     "type": "issue_comment",
@@ -183,7 +183,7 @@ archive/issue_comments_066272.json:
 }
 ```
 
-Attachment
+Attachment [7716_underscores.patch](tarball://root/attachments/some-uuid/ticket7716/7716_underscores.patch) by was created at 2009-12-24 07:05:01
 
 I'm declaring a total feature freeze on sage-4.3.
 
@@ -294,7 +294,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_066275.json:
 ```json
 {
-    "body": "Attachment\n\nYeah, I don't know what that was.  Here's a new patch (against 4.3.rc0) that gets rid of the weird double header problem.  7716_coverage.patch should be applied first, then 7716_underscores.patch\n\nIt doesn't need to be rebased against 4.3, since there are no changes to sage-coverage or sage-coverageall since 4.3.rc0.  William, are you up for reviewing this now that it should apply?",
+    "body": "Attachment [7716_coverage.patch](tarball://root/attachments/some-uuid/ticket7716/7716_coverage.patch) by roed created at 2010-01-01 00:34:20\n\nYeah, I don't know what that was.  Here's a new patch (against 4.3.rc0) that gets rid of the weird double header problem.  7716_coverage.patch should be applied first, then 7716_underscores.patch\n\nIt doesn't need to be rebased against 4.3, since there are no changes to sage-coverage or sage-coverageall since 4.3.rc0.  William, are you up for reviewing this now that it should apply?",
     "created_at": "2010-01-01T00:34:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7716",
     "type": "issue_comment",
@@ -303,7 +303,7 @@ archive/issue_comments_066275.json:
 }
 ```
 
-Attachment
+Attachment [7716_coverage.patch](tarball://root/attachments/some-uuid/ticket7716/7716_coverage.patch) by roed created at 2010-01-01 00:34:20
 
 Yeah, I don't know what that was.  Here's a new patch (against 4.3.rc0) that gets rid of the weird double header problem.  7716_coverage.patch should be applied first, then 7716_underscores.patch
 
@@ -366,7 +366,7 @@ I'm attaching a "diff" which makes these changes.  I haven't looked at the rest 
 archive/issue_comments_066278.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of other patches",
+    "body": "Attachment [trac_7716-ref.patch](tarball://root/attachments/some-uuid/ticket7716/trac_7716-ref.patch) by jhpalmieri created at 2011-10-13 16:59:40\n\napply on top of other patches",
     "created_at": "2011-10-13T16:59:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7716",
     "type": "issue_comment",
@@ -375,7 +375,7 @@ archive/issue_comments_066278.json:
 }
 ```
 
-Attachment
+Attachment [trac_7716-ref.patch](tarball://root/attachments/some-uuid/ticket7716/trac_7716-ref.patch) by jhpalmieri created at 2011-10-13 16:59:40
 
 apply on top of other patches
 

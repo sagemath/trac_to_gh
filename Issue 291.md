@@ -168,7 +168,7 @@ Michael
 archive/issue_comments_001375.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [mpoly-str.patch](tarball://root/attachments/some-uuid/ticket291/mpoly-str.patch) by jbmohler created at 2008-03-20 12:01:47",
     "created_at": "2008-03-20T12:01:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/291",
     "type": "issue_comment",
@@ -177,7 +177,7 @@ archive/issue_comments_001375.json:
 }
 ```
 
-Attachment
+Attachment [mpoly-str.patch](tarball://root/attachments/some-uuid/ticket291/mpoly-str.patch) by jbmohler created at 2008-03-20 12:01:47
 
 
 
@@ -300,7 +300,7 @@ fixes two trivial doctest failures in const.tex
 archive/issue_comments_001381.json:
 ```json
 {
-    "body": "Attachment\n\nMerged trac_291-doctest-failures.patch in Sage 2.11.alpha1 - if anybody does want to review this patch feel free to do so.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_291-doctest-failures.patch](tarball://root/attachments/some-uuid/ticket291/trac_291-doctest-failures.patch) by mabshoff created at 2008-03-22 00:05:37\n\nMerged trac_291-doctest-failures.patch in Sage 2.11.alpha1 - if anybody does want to review this patch feel free to do so.\n\nCheers,\n\nMichael",
     "created_at": "2008-03-22T00:05:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/291",
     "type": "issue_comment",
@@ -309,7 +309,7 @@ archive/issue_comments_001381.json:
 }
 ```
 
-Attachment
+Attachment [trac_291-doctest-failures.patch](tarball://root/attachments/some-uuid/ticket291/trac_291-doctest-failures.patch) by mabshoff created at 2008-03-22 00:05:37
 
 Merged trac_291-doctest-failures.patch in Sage 2.11.alpha1 - if anybody does want to review this patch feel free to do so.
 

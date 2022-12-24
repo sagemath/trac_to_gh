@@ -49,7 +49,7 @@ Changing status from new to needs_review.
 archive/issue_comments_060728.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7294.patch](tarball://root/attachments/some-uuid/ticket7294/trac_7294.patch) by ncohen created at 2009-11-01 17:08:53",
     "created_at": "2009-11-01T17:08:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7294",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_060728.json:
 }
 ```
 
-Attachment
+Attachment [trac_7294.patch](tarball://root/attachments/some-uuid/ticket7294/trac_7294.patch) by ncohen created at 2009-11-01 17:08:53
 
 
 
@@ -103,7 +103,7 @@ This looks good to me. I should note that you can use `if bounds is None`, since
 archive/issue_comments_060731.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7294-fix.patch](tarball://root/attachments/some-uuid/ticket7294/trac_7294-fix.patch) by mhansen created at 2009-12-15 17:52:21",
     "created_at": "2009-12-15T17:52:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7294",
     "type": "issue_comment",
@@ -112,7 +112,7 @@ archive/issue_comments_060731.json:
 }
 ```
 
-Attachment
+Attachment [trac_7294-fix.patch](tarball://root/attachments/some-uuid/ticket7294/trac_7294-fix.patch) by mhansen created at 2009-12-15 17:52:21
 
 
 

@@ -63,7 +63,7 @@ sorry modified the wrong ticket, i meant to edit #9414 which is a duplicate of t
 archive/issue_comments_064790.json:
 ```json
 {
-    "body": "Attachment\n\nhere is already a ticket for the easy part : a method \"places\" for QQ",
+    "body": "Attachment [trac_7596_places_for_QQ.patch](tarball://root/attachments/some-uuid/ticket7596/trac_7596_places_for_QQ.patch) by chapoton created at 2013-07-25 14:17:23\n\nhere is already a ticket for the easy part : a method \"places\" for QQ",
     "created_at": "2013-07-25T14:17:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7596",
     "type": "issue_comment",
@@ -72,7 +72,7 @@ archive/issue_comments_064790.json:
 }
 ```
 
-Attachment
+Attachment [trac_7596_places_for_QQ.patch](tarball://root/attachments/some-uuid/ticket7596/trac_7596_places_for_QQ.patch) by chapoton created at 2013-07-25 14:17:23
 
 here is already a ticket for the easy part : a method "places" for QQ
 
@@ -109,7 +109,7 @@ but this breaks the lcm and gcd in a bad way..
 archive/issue_comments_064792.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7596_number_fields_are_quotient_fields.patch](tarball://root/attachments/some-uuid/ticket7596/trac_7596_number_fields_are_quotient_fields.patch) by chapoton created at 2013-07-26 12:23:42",
     "created_at": "2013-07-26T12:23:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7596",
     "type": "issue_comment",
@@ -118,7 +118,7 @@ archive/issue_comments_064792.json:
 }
 ```
 
-Attachment
+Attachment [trac_7596_number_fields_are_quotient_fields.patch](tarball://root/attachments/some-uuid/ticket7596/trac_7596_number_fields_are_quotient_fields.patch) by chapoton created at 2013-07-26 12:23:42
 
 
 

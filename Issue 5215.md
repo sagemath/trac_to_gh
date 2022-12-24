@@ -55,7 +55,7 @@ Changing status from new to assigned.
 archive/issue_comments_039956.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5215_deps.patch](tarball://root/attachments/some-uuid/ticket5215/trac_5215_deps.patch) by mabshoff created at 2009-02-11 04:37:53",
     "created_at": "2009-02-11T04:37:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5215",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_039956.json:
 }
 ```
 
-Attachment
+Attachment [trac_5215_deps.patch](tarball://root/attachments/some-uuid/ticket5215/trac_5215_deps.patch) by mabshoff created at 2009-02-11 04:37:53
 
 
 
@@ -73,7 +73,7 @@ Attachment
 archive/issue_comments_039957.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good.  Hurray for removing cruft!",
+    "body": "Attachment [trac_5215_install.patch](tarball://root/attachments/some-uuid/ticket5215/trac_5215_install.patch) by mhansen created at 2009-02-11 05:48:38\n\nLooks good.  Hurray for removing cruft!",
     "created_at": "2009-02-11T05:48:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5215",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_039957.json:
 }
 ```
 
-Attachment
+Attachment [trac_5215_install.patch](tarball://root/attachments/some-uuid/ticket5215/trac_5215_install.patch) by mhansen created at 2009-02-11 05:48:38
 
 Looks good.  Hurray for removing cruft!
 

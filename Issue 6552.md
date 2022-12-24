@@ -89,7 +89,7 @@ in `depth_first_search` and everything looks good!
 archive/issue_comments_053433.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-6552-graph-traversal.patch](tarball://root/attachments/some-uuid/ticket6552/trac-6552-graph-traversal.patch) by jason created at 2009-07-18 19:15:39",
     "created_at": "2009-07-18T19:15:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6552",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_053433.json:
 }
 ```
 
-Attachment
+Attachment [trac-6552-graph-traversal.patch](tarball://root/attachments/some-uuid/ticket6552/trac-6552-graph-traversal.patch) by jason created at 2009-07-18 19:15:39
 
 
 

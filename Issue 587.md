@@ -96,7 +96,7 @@ patch for calculus.py
 archive/issue_comments_003028.json:
 ```json
 {
-    "body": "Attachment\n\npatch for constants.py",
+    "body": "Attachment [587-2.patch](tarball://root/attachments/some-uuid/ticket587/587-2.patch) by mhansen created at 2007-09-04 19:37:42\n\npatch for constants.py",
     "created_at": "2007-09-04T19:37:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/587",
     "type": "issue_comment",
@@ -105,7 +105,7 @@ archive/issue_comments_003028.json:
 }
 ```
 
-Attachment
+Attachment [587-2.patch](tarball://root/attachments/some-uuid/ticket587/587-2.patch) by mhansen created at 2007-09-04 19:37:42
 
 patch for constants.py
 

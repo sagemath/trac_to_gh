@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3085
 archive/issue_comments_021302.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [identity-matrix.patch](tarball://root/attachments/some-uuid/ticket3085/identity-matrix.patch) by jason created at 2008-05-02 22:09:00",
     "created_at": "2008-05-02T22:09:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3085",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_021302.json:
 }
 ```
 
-Attachment
+Attachment [identity-matrix.patch](tarball://root/attachments/some-uuid/ticket3085/identity-matrix.patch) by jason created at 2008-05-02 22:09:00
 
 
 

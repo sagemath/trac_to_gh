@@ -60,7 +60,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3935
 archive/issue_comments_028200.json:
 ```json
 {
-    "body": "Attachment\n\nAdds a doctest and fixes the __init__ method",
+    "body": "Attachment [ode_solver_patch.patch](tarball://root/attachments/some-uuid/ticket3935/ode_solver_patch.patch) by jwmerrill created at 2008-08-23 18:39:15\n\nAdds a doctest and fixes the __init__ method",
     "created_at": "2008-08-23T18:39:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3935",
     "type": "issue_comment",
@@ -69,7 +69,7 @@ archive/issue_comments_028200.json:
 }
 ```
 
-Attachment
+Attachment [ode_solver_patch.patch](tarball://root/attachments/some-uuid/ticket3935/ode_solver_patch.patch) by jwmerrill created at 2008-08-23 18:39:15
 
 Adds a doctest and fixes the __init__ method
 
@@ -116,7 +116,7 @@ This seems to work and doctests pass.  However, the given example is not the sam
 archive/issue_comments_028203.json:
 ```json
 {
-    "body": "Attachment\n\njwmerrill, related to the docs of ode_solver, could you review #3966?  Thanks.",
+    "body": "Attachment [ode_solver_patch-referee.patch](tarball://root/attachments/some-uuid/ticket3935/ode_solver_patch-referee.patch) by jason created at 2008-08-27 15:49:49\n\njwmerrill, related to the docs of ode_solver, could you review #3966?  Thanks.",
     "created_at": "2008-08-27T15:49:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3935",
     "type": "issue_comment",
@@ -125,7 +125,7 @@ archive/issue_comments_028203.json:
 }
 ```
 
-Attachment
+Attachment [ode_solver_patch-referee.patch](tarball://root/attachments/some-uuid/ticket3935/ode_solver_patch-referee.patch) by jason created at 2008-08-27 15:49:49
 
 jwmerrill, related to the docs of ode_solver, could you review #3966?  Thanks.
 

@@ -51,7 +51,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1960
 archive/issue_comments_012655.json:
 ```json
 {
-    "body": "Attachment\n\nIn fact, the behaviour was correct in the sense that the specification (documentation) and the code agreed. However, this was at least counter intuitive. This method returned the vector space dimension of the ring modulo the leading terms of the generators of the ideal rather than modulo the ideal. This makes sense in the context of Singular where an ideal is identified with its generators but it doesn't make sense in the context of Sage where this identification is not true. Thus, now allways the vector space dimension of ring modulo the ideal is returned.",
+    "body": "Attachment [trac_1960_vdim.patch](tarball://root/attachments/some-uuid/ticket1960/trac_1960_vdim.patch) by malb created at 2008-01-28 15:10:20\n\nIn fact, the behaviour was correct in the sense that the specification (documentation) and the code agreed. However, this was at least counter intuitive. This method returned the vector space dimension of the ring modulo the leading terms of the generators of the ideal rather than modulo the ideal. This makes sense in the context of Singular where an ideal is identified with its generators but it doesn't make sense in the context of Sage where this identification is not true. Thus, now allways the vector space dimension of ring modulo the ideal is returned.",
     "created_at": "2008-01-28T15:10:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1960",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_012655.json:
 }
 ```
 
-Attachment
+Attachment [trac_1960_vdim.patch](tarball://root/attachments/some-uuid/ticket1960/trac_1960_vdim.patch) by malb created at 2008-01-28 15:10:20
 
 In fact, the behaviour was correct in the sense that the specification (documentation) and the code agreed. However, this was at least counter intuitive. This method returned the vector space dimension of the ring modulo the leading terms of the generators of the ideal rather than modulo the ideal. This makes sense in the context of Singular where an ideal is identified with its generators but it doesn't make sense in the context of Sage where this identification is not true. Thus, now allways the vector space dimension of ring modulo the ideal is returned.
 

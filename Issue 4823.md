@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4823
 archive/issue_comments_036568.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4823-faster-fix.patch](tarball://root/attachments/some-uuid/ticket4823/4823-faster-fix.patch) by robertwb created at 2008-12-18 00:27:01",
     "created_at": "2008-12-18T00:27:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4823",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_036568.json:
 }
 ```
 
-Attachment
+Attachment [4823-faster-fix.patch](tarball://root/attachments/some-uuid/ticket4823/4823-faster-fix.patch) by robertwb created at 2008-12-18 00:27:01
 
 
 

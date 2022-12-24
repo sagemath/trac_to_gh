@@ -133,7 +133,7 @@ I'm not sure if Minh is already reviewing these tickets.  To the extent it count
 archive/issue_comments_074891.json:
 ```json
 {
-    "body": "Attachment\n\nWith grammer/spelling corrections.",
+    "body": "Attachment [numerical-noise-on-SPARC.patch](tarball://root/attachments/some-uuid/ticket8375/numerical-noise-on-SPARC.patch) by drkirkby created at 2010-03-03 11:45:14\n\nWith grammer/spelling corrections.",
     "created_at": "2010-03-03T11:45:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8375",
     "type": "issue_comment",
@@ -142,7 +142,7 @@ archive/issue_comments_074891.json:
 }
 ```
 
-Attachment
+Attachment [numerical-noise-on-SPARC.patch](tarball://root/attachments/some-uuid/ticket8375/numerical-noise-on-SPARC.patch) by drkirkby created at 2010-03-03 11:45:14
 
 With grammer/spelling corrections.
 

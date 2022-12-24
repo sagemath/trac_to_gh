@@ -441,7 +441,7 @@ Diff between the p9 and the p10. For reference / review only.
 archive/issue_comments_097326.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached a diff between the p9 and the p10 spkg for review.",
+    "body": "Attachment [flint-1.5.0.p9-p10.diff](tarball://root/attachments/some-uuid/ticket9858/flint-1.5.0.p9-p10.diff) by leif created at 2011-10-11 19:41:10\n\nI've attached a diff between the p9 and the p10 spkg for review.",
     "created_at": "2011-10-11T19:41:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9857",
     "type": "issue_comment",
@@ -450,7 +450,7 @@ archive/issue_comments_097326.json:
 }
 ```
 
-Attachment
+Attachment [flint-1.5.0.p9-p10.diff](tarball://root/attachments/some-uuid/ticket9858/flint-1.5.0.p9-p10.diff) by leif created at 2011-10-11 19:41:10
 
 I've attached a diff between the p9 and the p10 spkg for review.
 

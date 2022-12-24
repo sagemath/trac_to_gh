@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7118
 archive/issue_comments_058987.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7118.patch](tarball://root/attachments/some-uuid/ticket7118/trac_7118.patch) by was created at 2009-10-04 23:12:23",
     "created_at": "2009-10-04T23:12:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7118",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_058987.json:
 }
 ```
 
-Attachment
+Attachment [trac_7118.patch](tarball://root/attachments/some-uuid/ticket7118/trac_7118.patch) by was created at 2009-10-04 23:12:23
 
 
 
@@ -49,7 +49,7 @@ Attachment
 archive/issue_comments_058988.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7118-part2.patch](tarball://root/attachments/some-uuid/ticket7118/trac_7118-part2.patch) by was created at 2009-10-05 02:54:18",
     "created_at": "2009-10-05T02:54:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7118",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_058988.json:
 }
 ```
 
-Attachment
+Attachment [trac_7118-part2.patch](tarball://root/attachments/some-uuid/ticket7118/trac_7118-part2.patch) by was created at 2009-10-05 02:54:18
 
 
 
@@ -251,7 +251,7 @@ install log on sage.math
 archive/issue_comments_058996.json:
 ```json
 {
-    "body": "Attachment\n\nApplied patches in this order to Sage 4.1.2.rc0:\n\n1. `trac_7118.patch`\n2. `trac_7118-part2.patch`\n \nThen uncompressed the file `SAGE_ROOT/data/extcode/pickle_jar/pickle_jar.tar.bz2` and removed the following files from the directory `SAGE_ROOT/data/extcode/pickle_jar/pickle_jar`:\n\n1. `_type__sage_rings_real_rqdf_QuadDoubleElement__.sobj`\n2. `_type__sage_rings_real_rqdf_QuadDoubleElement__.txt`\n \nWith these files removed, the directory `SAGE_ROOT/data/extcode/pickle_jar/pickle_jar` is compressed into a tarball again and replaced the previous version of the same tarball. From Mercurial's point of view, this would result in a change to a file it tracks, i.e. the pickle_jar.tar.bz2 has changed and all changes should be checked in. Now edit the file `SAGE_ROOT/spkg/install` to comment out the line related to quaddouble. The commented lines should be:\n\n```\n# See ticket #7118: remove quaddouble from sage                                 \n# QUADDOUBLE=`$newest quaddouble`                                               \n# export QUADDOUBLE\n```\n\nThe file `SAGE_ROOT/spkg/install` is not tracked by Mercurial, so no need to check in changes. Also, edit the file `SAGE_ROOT/spkg/standard/deps` to comment out all lines related to quaddouble. The commented lines should be:\n\n```\n# See ticket #7118: remove quaddouble from sage\n# $(INST)/$(QUADDOUBLE): $(BASE) $(INST)/$(MPIR) $(INST)/$(MPFR)\n#       $(SAGE_SPKG) $(QUADDOUBLE) 2>&1\n\n<SNIP>\n\n                  # See ticket #7118: remove quaddouble from sage\n                  # $(INST)/$(QUADDOUBLE) \\\n```\n\nThis file is also not tracked by Mercurial, so no need to check in changes. Finally, remove the package quaddouble-2.2.p9.spkg from the directory `SAGE_ROOT/spkg/standard` of standard Sage packages. With these changes, I made a new source tarball called \"sage-4.1.2.rc1-7118-quaddouble\". After unpacking that tarball and compiling from scratch, I got the following error. The full install log is attached.\n\n```\ng++ -o libcsage.so -shared src/convert.os src/interrupt.os src/mpn_pylong.os src/mpz_pylong.os src/mpz_longlong.os src/stdsage.os src/gmp_globals.os src/ZZ_pylong.os src/ntl_wrap.os -L/scratch/mvngu/release/sandbox/sage-4.1.2.rc1-7118-quaddouble/local/lib -lntl -lgmp -lpari\n*** TOUCHING ALL CYTHON (.pyx) FILES ***\nscons: `install' is up to date.\n\n----------------------------------------------------------\nsage: Building and installing modified Sage library files.\n\n\nInstalling c_lib\nscons: `install' is up to date.\nTraceback (most recent call last):\n  File \"setup.py\", line 16, in <module>\n    from module_list import ext_modules\n  File \"/scratch/mvngu/release/sandbox/sage-4.1.2.rc1-7118-quaddouble/devel/sage-main/module_list.py\", line 84, in <module>\n    for line in open(SAGE_LOCAL + \"/share/polybori/flags.conf\"):\nIOError: [Errno 2] No such file or directory: '/scratch/mvngu/release/sandbox/sage-4.1.2.rc1-7118-quaddouble/local//share/polybori/flags.conf'\nsage: There was an error installing modified sage library code.\n\nERROR installing SAGE\n\nreal    0m4.375s\nuser    0m3.050s\nsys     0m1.290s\nsage: An error occurred while installing sage-4.1.2.rc1-7118-quaddouble\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /scratch/mvngu/release/sandbox/sage-4.1.2.rc1-7118-quaddouble/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem yourself, *don't* just cd to\n/scratch/mvngu/release/sandbox/sage-4.1.2.rc1-7118-quaddouble/spkg/build/sage-4.1.2.rc1-7118-quaddouble and type 'make'.\nInstead type \"/scratch/mvngu/release/sandbox/sage-4.1.2.rc1-7118-quaddouble/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/scratch/mvngu/release/sandbox/sage-4.1.2.rc1-7118-quaddouble/spkg/build/sage-4.1.2.rc1-7118-quaddouble\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\nmake[1]: *** [installed/sage-4.1.2.rc1-7118-quaddouble] Error 1\nmake[1]: Leaving directory `/scratch/mvngu/release/sandbox/sage-4.1.2.rc1-7118-quaddouble/spkg'\n\nreal    50m13.360s\nuser    42m20.520s\nsys     7m27.370s\nError building Sage.\n```\n",
+    "body": "Attachment [install-7118-quaddouble.log.bz2](tarball://root/attachments/some-uuid/ticket7118/install-7118-quaddouble.log.bz2) by mvngu created at 2009-10-11 02:05:30\n\nApplied patches in this order to Sage 4.1.2.rc0:\n\n1. `trac_7118.patch`\n2. `trac_7118-part2.patch`\n \nThen uncompressed the file `SAGE_ROOT/data/extcode/pickle_jar/pickle_jar.tar.bz2` and removed the following files from the directory `SAGE_ROOT/data/extcode/pickle_jar/pickle_jar`:\n\n1. `_type__sage_rings_real_rqdf_QuadDoubleElement__.sobj`\n2. `_type__sage_rings_real_rqdf_QuadDoubleElement__.txt`\n \nWith these files removed, the directory `SAGE_ROOT/data/extcode/pickle_jar/pickle_jar` is compressed into a tarball again and replaced the previous version of the same tarball. From Mercurial's point of view, this would result in a change to a file it tracks, i.e. the pickle_jar.tar.bz2 has changed and all changes should be checked in. Now edit the file `SAGE_ROOT/spkg/install` to comment out the line related to quaddouble. The commented lines should be:\n\n```\n# See ticket #7118: remove quaddouble from sage                                 \n# QUADDOUBLE=`$newest quaddouble`                                               \n# export QUADDOUBLE\n```\n\nThe file `SAGE_ROOT/spkg/install` is not tracked by Mercurial, so no need to check in changes. Also, edit the file `SAGE_ROOT/spkg/standard/deps` to comment out all lines related to quaddouble. The commented lines should be:\n\n```\n# See ticket #7118: remove quaddouble from sage\n# $(INST)/$(QUADDOUBLE): $(BASE) $(INST)/$(MPIR) $(INST)/$(MPFR)\n#       $(SAGE_SPKG) $(QUADDOUBLE) 2>&1\n\n<SNIP>\n\n                  # See ticket #7118: remove quaddouble from sage\n                  # $(INST)/$(QUADDOUBLE) \\\n```\n\nThis file is also not tracked by Mercurial, so no need to check in changes. Finally, remove the package quaddouble-2.2.p9.spkg from the directory `SAGE_ROOT/spkg/standard` of standard Sage packages. With these changes, I made a new source tarball called \"sage-4.1.2.rc1-7118-quaddouble\". After unpacking that tarball and compiling from scratch, I got the following error. The full install log is attached.\n\n```\ng++ -o libcsage.so -shared src/convert.os src/interrupt.os src/mpn_pylong.os src/mpz_pylong.os src/mpz_longlong.os src/stdsage.os src/gmp_globals.os src/ZZ_pylong.os src/ntl_wrap.os -L/scratch/mvngu/release/sandbox/sage-4.1.2.rc1-7118-quaddouble/local/lib -lntl -lgmp -lpari\n*** TOUCHING ALL CYTHON (.pyx) FILES ***\nscons: `install' is up to date.\n\n----------------------------------------------------------\nsage: Building and installing modified Sage library files.\n\n\nInstalling c_lib\nscons: `install' is up to date.\nTraceback (most recent call last):\n  File \"setup.py\", line 16, in <module>\n    from module_list import ext_modules\n  File \"/scratch/mvngu/release/sandbox/sage-4.1.2.rc1-7118-quaddouble/devel/sage-main/module_list.py\", line 84, in <module>\n    for line in open(SAGE_LOCAL + \"/share/polybori/flags.conf\"):\nIOError: [Errno 2] No such file or directory: '/scratch/mvngu/release/sandbox/sage-4.1.2.rc1-7118-quaddouble/local//share/polybori/flags.conf'\nsage: There was an error installing modified sage library code.\n\nERROR installing SAGE\n\nreal    0m4.375s\nuser    0m3.050s\nsys     0m1.290s\nsage: An error occurred while installing sage-4.1.2.rc1-7118-quaddouble\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /scratch/mvngu/release/sandbox/sage-4.1.2.rc1-7118-quaddouble/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem yourself, *don't* just cd to\n/scratch/mvngu/release/sandbox/sage-4.1.2.rc1-7118-quaddouble/spkg/build/sage-4.1.2.rc1-7118-quaddouble and type 'make'.\nInstead type \"/scratch/mvngu/release/sandbox/sage-4.1.2.rc1-7118-quaddouble/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/scratch/mvngu/release/sandbox/sage-4.1.2.rc1-7118-quaddouble/spkg/build/sage-4.1.2.rc1-7118-quaddouble\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\nmake[1]: *** [installed/sage-4.1.2.rc1-7118-quaddouble] Error 1\nmake[1]: Leaving directory `/scratch/mvngu/release/sandbox/sage-4.1.2.rc1-7118-quaddouble/spkg'\n\nreal    50m13.360s\nuser    42m20.520s\nsys     7m27.370s\nError building Sage.\n```\n",
     "created_at": "2009-10-11T02:05:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7118",
     "type": "issue_comment",
@@ -260,7 +260,7 @@ archive/issue_comments_058996.json:
 }
 ```
 
-Attachment
+Attachment [install-7118-quaddouble.log.bz2](tarball://root/attachments/some-uuid/ticket7118/install-7118-quaddouble.log.bz2) by mvngu created at 2009-10-11 02:05:30
 
 Applied patches in this order to Sage 4.1.2.rc0:
 
@@ -424,7 +424,7 @@ doctest on bsd.math
 archive/issue_comments_059000.json:
 ```json
 {
-    "body": "Attachment\n\ndoctest on cicero on SkyNet",
+    "body": "Attachment [doctest-cicero.log](tarball://root/attachments/some-uuid/ticket7118/doctest-cicero.log) by mvngu created at 2009-10-12 03:24:29\n\ndoctest on cicero on SkyNet",
     "created_at": "2009-10-12T03:24:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7118",
     "type": "issue_comment",
@@ -433,7 +433,7 @@ archive/issue_comments_059000.json:
 }
 ```
 
-Attachment
+Attachment [doctest-cicero.log](tarball://root/attachments/some-uuid/ticket7118/doctest-cicero.log) by mvngu created at 2009-10-12 03:24:29
 
 doctest on cicero on SkyNet
 
@@ -462,7 +462,7 @@ doctest on eno on SkyNet
 archive/issue_comments_059002.json:
 ```json
 {
-    "body": "Attachment\n\ndoctest on mandriva2009-64 on boxen.math",
+    "body": "Attachment [doctest-eno.log](tarball://root/attachments/some-uuid/ticket7118/doctest-eno.log) by mvngu created at 2009-10-12 03:41:01\n\ndoctest on mandriva2009-64 on boxen.math",
     "created_at": "2009-10-12T03:41:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7118",
     "type": "issue_comment",
@@ -471,7 +471,7 @@ archive/issue_comments_059002.json:
 }
 ```
 
-Attachment
+Attachment [doctest-eno.log](tarball://root/attachments/some-uuid/ticket7118/doctest-eno.log) by mvngu created at 2009-10-12 03:41:01
 
 doctest on mandriva2009-64 on boxen.math
 
@@ -482,7 +482,7 @@ doctest on mandriva2009-64 on boxen.math
 archive/issue_comments_059003.json:
 ```json
 {
-    "body": "Attachment\n\ndoctest on cento53-64 on boxen.math",
+    "body": "Attachment [doctest-cento53-64-boxen.log](tarball://root/attachments/some-uuid/ticket7118/doctest-cento53-64-boxen.log) by mvngu created at 2009-10-12 03:46:23\n\ndoctest on cento53-64 on boxen.math",
     "created_at": "2009-10-12T03:46:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7118",
     "type": "issue_comment",
@@ -491,7 +491,7 @@ archive/issue_comments_059003.json:
 }
 ```
 
-Attachment
+Attachment [doctest-cento53-64-boxen.log](tarball://root/attachments/some-uuid/ticket7118/doctest-cento53-64-boxen.log) by mvngu created at 2009-10-12 03:46:23
 
 doctest on cento53-64 on boxen.math
 
@@ -502,7 +502,7 @@ doctest on cento53-64 on boxen.math
 archive/issue_comments_059004.json:
 ```json
 {
-    "body": "Attachment\n\ndoctest on opensuse32 on boxen.math",
+    "body": "Attachment [doctest-opensuse32-boxen.log](tarball://root/attachments/some-uuid/ticket7118/doctest-opensuse32-boxen.log) by mvngu created at 2009-10-12 03:51:33\n\ndoctest on opensuse32 on boxen.math",
     "created_at": "2009-10-12T03:51:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7118",
     "type": "issue_comment",
@@ -511,7 +511,7 @@ archive/issue_comments_059004.json:
 }
 ```
 
-Attachment
+Attachment [doctest-opensuse32-boxen.log](tarball://root/attachments/some-uuid/ticket7118/doctest-opensuse32-boxen.log) by mvngu created at 2009-10-12 03:51:33
 
 doctest on opensuse32 on boxen.math
 
@@ -540,7 +540,7 @@ doctest on opensuse64 on boxen.math
 archive/issue_comments_059006.json:
 ```json
 {
-    "body": "Attachment\n\nThis time, I really deleted the following lines from the file `SAGE_ROOT/spkg/standard/deps`:\n\n```\n$(INST)/$(QUADDOUBLE): $(BASE) $(INST)/$(MPIR) $(INST)/$(MPFR)\n      $(SAGE_SPKG) $(QUADDOUBLE) 2>&1\n\n<SNIP>\n\n                  See ticket #7118: remove quaddouble from sage\n                  $(INST)/$(QUADDOUBLE) \\\n```\n\nI made a new source tarball called \"sage-4.1.2.rc1-7118-quaddouble\" that incorporates the cliquer spkg at #6681. The new source tarball was tested on the following platforms:\n\n* sage.math: 64-bit Ubuntu 8.04.3 LTS, GCC 4.2.4 --- compile OK; all doctests pass.\n* rosemary.math: 64-bit Red Hat Enterprise Linux Server 5.4, GCC 4.1.2 --- compile OK; all doctests pass.\n* bsd.math: Mac OS X 10.6.1, GCC 4.2.1 --- compile OK; some doctest failures:\n {{{\nsage -t -long \"rc1-7118-6681/devel/sage/sage/calculus/calculus.py\"\nsage -t -long \"rc1-7118-6681/devel/sage/sage/calculus/tests.py\"\nsage -t -long \"rc1-7118-6681/devel/sage/sage/calculus/wester.py\"\nsage -t -long \"rc1-7118-6681/devel/sage/sage/ext/fast_eval.pyx\"\nsage -t -long \"rc1-7118-6681/devel/sage/sage/functions/hyperbolic.py\"\nsage -t -long \"rc1-7118-6681/devel/sage/sage/functions/other.py\"\nsage -t -long \"rc1-7118-6681/devel/sage/sage/functions/trig.py\"\nsage -t -long \"rc1-7118-6681/devel/sage/sage/gsl/interpolation.pyx\"\nsage -t -long \"rc1-7118-6681/devel/sage/sage/matrix/matrix_symbolic_dense.pyx\"\nsage -t -long \"rc1-7118-6681/devel/sage/sage/rings/polynomial/pbori.pyx\"\nsage -t -long \"rc1-7118-6681/devel/sage/sage/symbolic/constants.py\"\nsage -t -long \"rc1-7118-6681/devel/sage/sage/symbolic/expression.pyx\"\nsage -t -long \"rc1-7118-6681/devel/sage/sage/symbolic/function.pyx\"\n }}}\n Full doctest log is attached; see the attachment `doctest-bsd.math.log`.\n* cicero on SkyNet: 32-bit Fedora 9, GCC 4.4.1 --- compile OK; some doctest failures:\n {{{\nsage -t -long \"devel/sage/sage/misc/randstate.pyx\"\nsage -t -long \"devel/sage/sage/interfaces/expect.py\"\nsage -t -long \"devel/sage/sage/interfaces/sage0.py\"\nsage -t -long \"devel/sage/sage/server/simple/twist.py\"\n }}}\n Full doctest log is attached; see the attachment `doctest-cicero.log`.\n* eno on SkyNet: 64-bit Fedora 9, GCC 4.4.1 --- compile OK; some doctest failures:\n {{{\nsage -t -long \"devel/sage/sage/rings/fast_arith.pyx\"\nsage -t -long \"devel/sage/sage/rings/tests.py\"\n }}}\n Full doctest log is attached; see the attachment `doctest-eno.log`.\n* lena on SkyNet: 64-bit Red Hat Enterprise Linux Server 5.3, GCC 4.4.1 --- compile OK; all doctests pass.\n* menas on SkyNet: 64-bit openSUSE 11.1, GCC 4.4.1 --- compile OK; all doctests pass.\n* cento53-64 on boxen.math: 64-bit CentOS 5.3, GCC 4.1.2 --- compile OK; one doctest failure:\n {{{\nsage -t -long \"devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx\"\n }}}\n Full doctest log is attached; see the attachment `doctest-cento53-64-boxen.log`.\n* debian5-32 on boxen.math: 32-bit Debian 5.0, GCC 4.3.2 --- compile OK; all doctests pass.\n* debian5-64 on boxen.math: 64-bit Debian 5.0, GCC 4.3.2 --- compile OK; all doctests pass.\n* mandriva2009.1-32 on boxen.math: 32-bit Mandriva Linux 2009.1, GCC 4.3.2 --- compile OK; all doctests pass.\n* mandriva2009.1-64 on boxen.math: 64-bit Mandriva Linux 2009.1, GCC 4.3.2 --- compile OK; one doctest failure:\n {{{\nsage -t -long \"devel/sage/sage/server/simple/twist.py\"\n }}}\n Full doctest log is attached; see the attachment `doctest-mandriva2009-64.boxen.log`.\n* opensuse-11.1-32 on boxen.math: 32-bit openSUSE 11.1, GCC 4.3.2 --- compile OK; one doctest failure:\n {{{\nsage -t -long \"devel/sage/sage/server/simple/twist.py\"\n }}}\n Full doctest log is attached; see the attachment `doctest-opensuse32-boxen.log`.\n* opensuse-11.1-64 on boxen.math: 64-bit openSUSE 11.1, GCC 4.3.2 --- compile OK; one doctest failure:\n {{{\nsage -t -long \"devel/sage/sage/graphs/graph_plot.py\"\n }}}\n Full doctest log is attached; see the attachment `doctest-opensuse64-boxen.log`.\n* ubuntu9.04-32: 32-bit Ubuntu 9.04, GCC 4.3.3 --- compile OK; all doctests pass.\n* ubuntu9.04-64: 64-bit Ubuntu 9.04, GCC 4.3.3 --- compile OK; all doctests pass.",
+    "body": "Attachment [doctest-opensuse64-boxen.log](tarball://root/attachments/some-uuid/ticket7118/doctest-opensuse64-boxen.log) by mvngu created at 2009-10-12 05:17:10\n\nThis time, I really deleted the following lines from the file `SAGE_ROOT/spkg/standard/deps`:\n\n```\n$(INST)/$(QUADDOUBLE): $(BASE) $(INST)/$(MPIR) $(INST)/$(MPFR)\n      $(SAGE_SPKG) $(QUADDOUBLE) 2>&1\n\n<SNIP>\n\n                  See ticket #7118: remove quaddouble from sage\n                  $(INST)/$(QUADDOUBLE) \\\n```\n\nI made a new source tarball called \"sage-4.1.2.rc1-7118-quaddouble\" that incorporates the cliquer spkg at #6681. The new source tarball was tested on the following platforms:\n\n* sage.math: 64-bit Ubuntu 8.04.3 LTS, GCC 4.2.4 --- compile OK; all doctests pass.\n* rosemary.math: 64-bit Red Hat Enterprise Linux Server 5.4, GCC 4.1.2 --- compile OK; all doctests pass.\n* bsd.math: Mac OS X 10.6.1, GCC 4.2.1 --- compile OK; some doctest failures:\n {{{\nsage -t -long \"rc1-7118-6681/devel/sage/sage/calculus/calculus.py\"\nsage -t -long \"rc1-7118-6681/devel/sage/sage/calculus/tests.py\"\nsage -t -long \"rc1-7118-6681/devel/sage/sage/calculus/wester.py\"\nsage -t -long \"rc1-7118-6681/devel/sage/sage/ext/fast_eval.pyx\"\nsage -t -long \"rc1-7118-6681/devel/sage/sage/functions/hyperbolic.py\"\nsage -t -long \"rc1-7118-6681/devel/sage/sage/functions/other.py\"\nsage -t -long \"rc1-7118-6681/devel/sage/sage/functions/trig.py\"\nsage -t -long \"rc1-7118-6681/devel/sage/sage/gsl/interpolation.pyx\"\nsage -t -long \"rc1-7118-6681/devel/sage/sage/matrix/matrix_symbolic_dense.pyx\"\nsage -t -long \"rc1-7118-6681/devel/sage/sage/rings/polynomial/pbori.pyx\"\nsage -t -long \"rc1-7118-6681/devel/sage/sage/symbolic/constants.py\"\nsage -t -long \"rc1-7118-6681/devel/sage/sage/symbolic/expression.pyx\"\nsage -t -long \"rc1-7118-6681/devel/sage/sage/symbolic/function.pyx\"\n }}}\n Full doctest log is attached; see the attachment `doctest-bsd.math.log`.\n* cicero on SkyNet: 32-bit Fedora 9, GCC 4.4.1 --- compile OK; some doctest failures:\n {{{\nsage -t -long \"devel/sage/sage/misc/randstate.pyx\"\nsage -t -long \"devel/sage/sage/interfaces/expect.py\"\nsage -t -long \"devel/sage/sage/interfaces/sage0.py\"\nsage -t -long \"devel/sage/sage/server/simple/twist.py\"\n }}}\n Full doctest log is attached; see the attachment `doctest-cicero.log`.\n* eno on SkyNet: 64-bit Fedora 9, GCC 4.4.1 --- compile OK; some doctest failures:\n {{{\nsage -t -long \"devel/sage/sage/rings/fast_arith.pyx\"\nsage -t -long \"devel/sage/sage/rings/tests.py\"\n }}}\n Full doctest log is attached; see the attachment `doctest-eno.log`.\n* lena on SkyNet: 64-bit Red Hat Enterprise Linux Server 5.3, GCC 4.4.1 --- compile OK; all doctests pass.\n* menas on SkyNet: 64-bit openSUSE 11.1, GCC 4.4.1 --- compile OK; all doctests pass.\n* cento53-64 on boxen.math: 64-bit CentOS 5.3, GCC 4.1.2 --- compile OK; one doctest failure:\n {{{\nsage -t -long \"devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx\"\n }}}\n Full doctest log is attached; see the attachment `doctest-cento53-64-boxen.log`.\n* debian5-32 on boxen.math: 32-bit Debian 5.0, GCC 4.3.2 --- compile OK; all doctests pass.\n* debian5-64 on boxen.math: 64-bit Debian 5.0, GCC 4.3.2 --- compile OK; all doctests pass.\n* mandriva2009.1-32 on boxen.math: 32-bit Mandriva Linux 2009.1, GCC 4.3.2 --- compile OK; all doctests pass.\n* mandriva2009.1-64 on boxen.math: 64-bit Mandriva Linux 2009.1, GCC 4.3.2 --- compile OK; one doctest failure:\n {{{\nsage -t -long \"devel/sage/sage/server/simple/twist.py\"\n }}}\n Full doctest log is attached; see the attachment `doctest-mandriva2009-64.boxen.log`.\n* opensuse-11.1-32 on boxen.math: 32-bit openSUSE 11.1, GCC 4.3.2 --- compile OK; one doctest failure:\n {{{\nsage -t -long \"devel/sage/sage/server/simple/twist.py\"\n }}}\n Full doctest log is attached; see the attachment `doctest-opensuse32-boxen.log`.\n* opensuse-11.1-64 on boxen.math: 64-bit openSUSE 11.1, GCC 4.3.2 --- compile OK; one doctest failure:\n {{{\nsage -t -long \"devel/sage/sage/graphs/graph_plot.py\"\n }}}\n Full doctest log is attached; see the attachment `doctest-opensuse64-boxen.log`.\n* ubuntu9.04-32: 32-bit Ubuntu 9.04, GCC 4.3.3 --- compile OK; all doctests pass.\n* ubuntu9.04-64: 64-bit Ubuntu 9.04, GCC 4.3.3 --- compile OK; all doctests pass.",
     "created_at": "2009-10-12T05:17:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7118",
     "type": "issue_comment",
@@ -549,7 +549,7 @@ archive/issue_comments_059006.json:
 }
 ```
 
-Attachment
+Attachment [doctest-opensuse64-boxen.log](tarball://root/attachments/some-uuid/ticket7118/doctest-opensuse64-boxen.log) by mvngu created at 2009-10-12 05:17:10
 
 This time, I really deleted the following lines from the file `SAGE_ROOT/spkg/standard/deps`:
 

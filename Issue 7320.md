@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7320
 archive/issue_comments_061166.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7320-case-sensitive.patch](tarball://root/attachments/some-uuid/ticket7320/trac_7320-case-sensitive.patch) by jhpalmieri created at 2009-10-27 05:15:54",
     "created_at": "2009-10-27T05:15:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7320",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_061166.json:
 }
 ```
 
-Attachment
+Attachment [trac_7320-case-sensitive.patch](tarball://root/attachments/some-uuid/ticket7320/trac_7320-case-sensitive.patch) by jhpalmieri created at 2009-10-27 05:15:54
 
 
 
@@ -127,7 +127,7 @@ Fixes a few things, adds doctest - use this
 archive/issue_comments_061171.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:2 kcrisman]:\n> Just out of curiosity, is it possible to change the behavior?  Obviously that would be a different ticket.  That could be useful (or not).  Maybe a function that is, and another one that isn't...\n\nI think so: I think we can add a flag to the regular expression search to make it case-insensitive.  We could add a flag (like `ignore_case=False`) to the search functions so people could toggle this.  Of course, I haven't actually tried this, but the documentation for regular expression searches in Python suggests that it should be possible...",
+    "body": "Attachment [trac_7320-case-sensitive.2.patch](tarball://root/attachments/some-uuid/ticket7320/trac_7320-case-sensitive.2.patch) by jhpalmieri created at 2009-10-29 19:01:50\n\nReplying to [comment:2 kcrisman]:\n> Just out of curiosity, is it possible to change the behavior?  Obviously that would be a different ticket.  That could be useful (or not).  Maybe a function that is, and another one that isn't...\n\nI think so: I think we can add a flag to the regular expression search to make it case-insensitive.  We could add a flag (like `ignore_case=False`) to the search functions so people could toggle this.  Of course, I haven't actually tried this, but the documentation for regular expression searches in Python suggests that it should be possible...",
     "created_at": "2009-10-29T19:01:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7320",
     "type": "issue_comment",
@@ -136,7 +136,7 @@ archive/issue_comments_061171.json:
 }
 ```
 
-Attachment
+Attachment [trac_7320-case-sensitive.2.patch](tarball://root/attachments/some-uuid/ticket7320/trac_7320-case-sensitive.2.patch) by jhpalmieri created at 2009-10-29 19:01:50
 
 Replying to [comment:2 kcrisman]:
 > Just out of curiosity, is it possible to change the behavior?  Obviously that would be a different ticket.  That could be useful (or not).  Maybe a function that is, and another one that isn't...

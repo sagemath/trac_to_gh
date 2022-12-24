@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3458
 archive/issue_comments_024379.json:
 ```json
 {
-    "body": "Attachment\n\nThis depends on #3453.",
+    "body": "Attachment [sage-3458.patch](tarball://root/attachments/some-uuid/ticket3458/sage-3458.patch) by was created at 2008-06-18 03:15:04\n\nThis depends on #3453.",
     "created_at": "2008-06-18T03:15:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_024379.json:
 }
 ```
 
-Attachment
+Attachment [sage-3458.patch](tarball://root/attachments/some-uuid/ticket3458/sage-3458.patch) by was created at 2008-06-18 03:15:04
 
 This depends on #3453.
 
@@ -51,7 +51,7 @@ This depends on #3453.
 archive/issue_comments_024380.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3458-part2.patch](tarball://root/attachments/some-uuid/ticket3458/sage-3458-part2.patch) by was created at 2008-06-18 06:30:09",
     "created_at": "2008-06-18T06:30:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_024380.json:
 }
 ```
 
-Attachment
+Attachment [sage-3458-part2.patch](tarball://root/attachments/some-uuid/ticket3458/sage-3458-part2.patch) by was created at 2008-06-18 06:30:09
 
 
 
@@ -69,7 +69,7 @@ Attachment
 archive/issue_comments_024381.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3458-part3.patch](tarball://root/attachments/some-uuid/ticket3458/sage-3458-part3.patch) by was created at 2008-06-18 08:52:06",
     "created_at": "2008-06-18T08:52:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_024381.json:
 }
 ```
 
-Attachment
+Attachment [sage-3458-part3.patch](tarball://root/attachments/some-uuid/ticket3458/sage-3458-part3.patch) by was created at 2008-06-18 08:52:06
 
 
 
@@ -105,7 +105,7 @@ first three patches have positive review
 archive/issue_comments_024383.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3458-part4.patch](tarball://root/attachments/some-uuid/ticket3458/sage-3458-part4.patch) by mhansen created at 2008-06-19 01:33:45",
     "created_at": "2008-06-19T01:33:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_024383.json:
 }
 ```
 
-Attachment
+Attachment [sage-3458-part4.patch](tarball://root/attachments/some-uuid/ticket3458/sage-3458-part4.patch) by mhansen created at 2008-06-19 01:33:45
 
 
 
@@ -155,7 +155,7 @@ time v = MS1([(250,2), (11,2), (37,2)])
 archive/issue_comments_024385.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3458-processing.patch](tarball://root/attachments/some-uuid/ticket3458/sage-3458-processing.patch) by mhansen created at 2008-06-19 02:47:09",
     "created_at": "2008-06-19T02:47:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
@@ -164,7 +164,7 @@ archive/issue_comments_024385.json:
 }
 ```
 
-Attachment
+Attachment [sage-3458-processing.patch](tarball://root/attachments/some-uuid/ticket3458/sage-3458-processing.patch) by mhansen created at 2008-06-19 02:47:09
 
 
 
@@ -214,7 +214,7 @@ patch 3 should still be applied since it changes things other then dsage.
 archive/issue_comments_024388.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3458-part6.patch](tarball://root/attachments/some-uuid/ticket3458/sage-3458-part6.patch) by was created at 2008-06-20 01:30:36",
     "created_at": "2008-06-20T01:30:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
@@ -223,7 +223,7 @@ archive/issue_comments_024388.json:
 }
 ```
 
-Attachment
+Attachment [sage-3458-part6.patch](tarball://root/attachments/some-uuid/ticket3458/sage-3458-part6.patch) by was created at 2008-06-20 01:30:36
 
 
 
@@ -268,7 +268,7 @@ This is a clean bundle that one can apply instead of all the patches.
 archive/issue_comments_024391.json:
 ```json
 {
-    "body": "Attachment\n\nYi: bundle posted.",
+    "body": "Attachment [sage-3458.hg](tarball://root/attachments/some-uuid/ticket3458/sage-3458.hg) by was created at 2008-06-21 23:53:56\n\nYi: bundle posted.",
     "created_at": "2008-06-21T23:53:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
@@ -277,7 +277,7 @@ archive/issue_comments_024391.json:
 }
 ```
 
-Attachment
+Attachment [sage-3458.hg](tarball://root/attachments/some-uuid/ticket3458/sage-3458.hg) by was created at 2008-06-21 23:53:56
 
 Yi: bundle posted.
 
@@ -306,7 +306,7 @@ Updated bundle which uses sage.dsage.interface.dsage_interface.BlockingDSage's p
 archive/issue_comments_024393.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3458-fixed.hg](tarball://root/attachments/some-uuid/ticket3458/sage-3458-fixed.hg) by was created at 2008-06-24 03:04:45",
     "created_at": "2008-06-24T03:04:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
@@ -315,7 +315,7 @@ archive/issue_comments_024393.json:
 }
 ```
 
-Attachment
+Attachment [sage-3458-fixed.hg](tarball://root/attachments/some-uuid/ticket3458/sage-3458-fixed.hg) by was created at 2008-06-24 03:04:45
 
 
 

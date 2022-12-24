@@ -190,7 +190,7 @@ for i in range(100):
 archive/issue_comments_011822.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_1867.patch](tarball://root/attachments/some-uuid/ticket1867/trac_1867.patch) by was created at 2009-01-23 15:51:51",
     "created_at": "2009-01-23T15:51:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1867",
     "type": "issue_comment",
@@ -199,7 +199,7 @@ archive/issue_comments_011822.json:
 }
 ```
 
-Attachment
+Attachment [trac_1867.patch](tarball://root/attachments/some-uuid/ticket1867/trac_1867.patch) by was created at 2009-01-23 15:51:51
 
 
 
@@ -232,7 +232,7 @@ fails a few doctests when I try it because of missing `proof=False` arguments. S
 archive/issue_comments_011824.json:
 ```json
 {
-    "body": "Attachment\n\nthis fixes the other problems in the doctests",
+    "body": "Attachment [trac_1867-part2.patch](tarball://root/attachments/some-uuid/ticket1867/trac_1867-part2.patch) by was created at 2009-01-24 06:43:33\n\nthis fixes the other problems in the doctests",
     "created_at": "2009-01-24T06:43:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1867",
     "type": "issue_comment",
@@ -241,7 +241,7 @@ archive/issue_comments_011824.json:
 }
 ```
 
-Attachment
+Attachment [trac_1867-part2.patch](tarball://root/attachments/some-uuid/ticket1867/trac_1867-part2.patch) by was created at 2009-01-24 06:43:33
 
 this fixes the other problems in the doctests
 

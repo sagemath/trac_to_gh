@@ -70,7 +70,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5500
 archive/issue_comments_042722.json:
 ```json
 {
-    "body": "Attachment\n\nI've incorporated the suggestions at \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/5dd8364a8b069d6c/ebc01381136f476d\n\ninto a patch.",
+    "body": "Attachment [5500-tut.patch](tarball://root/attachments/some-uuid/ticket5500/5500-tut.patch) by robertwb created at 2009-03-19 05:09:56\n\nI've incorporated the suggestions at \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/5dd8364a8b069d6c/ebc01381136f476d\n\ninto a patch.",
     "created_at": "2009-03-19T05:09:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5500",
     "type": "issue_comment",
@@ -79,7 +79,7 @@ archive/issue_comments_042722.json:
 }
 ```
 
-Attachment
+Attachment [5500-tut.patch](tarball://root/attachments/some-uuid/ticket5500/5500-tut.patch) by robertwb created at 2009-03-19 05:09:56
 
 I've incorporated the suggestions at 
 
@@ -112,7 +112,7 @@ Fix doctest failure
 archive/issue_comments_042724.json:
 ```json
 {
-    "body": "Attachment\n\nREFEREE REPORT\n\n\n\nThe patch **5500-tut.patch** mostly looks good: it applies OK against Sage 3.4, but with one doctest failure:\n\n```\n[mvngu@sage ~]$ sage -t -long scratch/sage-3.4/devel/sage-5500/doc/en/tutorial/tour_help.rst\nsage -t -long \"devel/sage-5500/doc/en/tutorial/tour_help.rst\"\nTraceback (most recent call last):\n  File \"/home/mvngu/scratch/sage-3.4/tmp/tour_help.py\", line 296, in <module>\n    runner=runner)\n  File \"/home/mvngu/scratch/sage-3.4/local/bin/sagedoctest.py\", line 54, in testmod_returning_runner\n    runner=runner)\n  File \"/home/mvngu/scratch/sage-3.4/local/bin/ncadoctest.py\", line 1819, in testmod_returning_runner\n    for test in finder.find(m, name, globs=globs, extraglobs=extraglobs):\n  File \"/home/mvngu/scratch/sage-3.4/local/bin/ncadoctest.py\", line 839, in find\n    self._find(tests, obj, name, module, source_lines, globs, {})\n  File \"/home/mvngu/scratch/sage-3.4/local/bin/ncadoctest.py\", line 893, in _find\n    globs, seen)\n  File \"/home/mvngu/scratch/sage-3.4/local/bin/ncadoctest.py\", line 881, in _find\n    test = self._get_test(obj, name, module, globs, source_lines)\n  File \"/home/mvngu/scratch/sage-3.4/local/bin/ncadoctest.py\", line 965, in _get_test\n    filename, lineno)\n  File \"/home/mvngu/scratch/sage-3.4/local/bin/ncadoctest.py\", line 594, in get_doctest\n    return DocTest(self.get_examples(string, name), globs,\n  File \"/home/mvngu/scratch/sage-3.4/local/bin/ncadoctest.py\", line 608, in get_examples\n    return [x for x in self.parse(string, name)\n  File \"/home/mvngu/scratch/sage-3.4/local/bin/ncadoctest.py\", line 570, in parse\n    self._parse_example(m, name, lineno)\n  File \"/home/mvngu/scratch/sage-3.4/local/bin/ncadoctest.py\", line 628, in _parse_example\n    self._check_prompt_blank(source_lines, indent, name, lineno)\n  File \"/home/mvngu/scratch/sage-3.4/local/bin/ncadoctest.py\", line 715, in _check_prompt_blank\n    line[indent:indent+3], line))\nValueError: line 9 of the docstring for __main__.example_0 lacks blank after ...: '    ...:      return n%Integer(2) == Integer(0)'\n\n\t [3.3 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long \"devel/sage-5500/doc/en/tutorial/tour_help.rst\"\nTotal time for all tests: 3.3 seconds\n```\n\nThis is caused by the following lines in the patch:\n\n```\n-    ...       return n%2 == 0\n+    ...:      return n%2 == 0\n+    ...:\n```\n\nThe other patch **trac_5500-referee.patch** should fix the above doctest failure.",
+    "body": "Attachment [trac_5500-referee.patch](tarball://root/attachments/some-uuid/ticket5500/trac_5500-referee.patch) by mvngu created at 2009-03-19 06:54:27\n\nREFEREE REPORT\n\n\n\nThe patch **5500-tut.patch** mostly looks good: it applies OK against Sage 3.4, but with one doctest failure:\n\n```\n[mvngu@sage ~]$ sage -t -long scratch/sage-3.4/devel/sage-5500/doc/en/tutorial/tour_help.rst\nsage -t -long \"devel/sage-5500/doc/en/tutorial/tour_help.rst\"\nTraceback (most recent call last):\n  File \"/home/mvngu/scratch/sage-3.4/tmp/tour_help.py\", line 296, in <module>\n    runner=runner)\n  File \"/home/mvngu/scratch/sage-3.4/local/bin/sagedoctest.py\", line 54, in testmod_returning_runner\n    runner=runner)\n  File \"/home/mvngu/scratch/sage-3.4/local/bin/ncadoctest.py\", line 1819, in testmod_returning_runner\n    for test in finder.find(m, name, globs=globs, extraglobs=extraglobs):\n  File \"/home/mvngu/scratch/sage-3.4/local/bin/ncadoctest.py\", line 839, in find\n    self._find(tests, obj, name, module, source_lines, globs, {})\n  File \"/home/mvngu/scratch/sage-3.4/local/bin/ncadoctest.py\", line 893, in _find\n    globs, seen)\n  File \"/home/mvngu/scratch/sage-3.4/local/bin/ncadoctest.py\", line 881, in _find\n    test = self._get_test(obj, name, module, globs, source_lines)\n  File \"/home/mvngu/scratch/sage-3.4/local/bin/ncadoctest.py\", line 965, in _get_test\n    filename, lineno)\n  File \"/home/mvngu/scratch/sage-3.4/local/bin/ncadoctest.py\", line 594, in get_doctest\n    return DocTest(self.get_examples(string, name), globs,\n  File \"/home/mvngu/scratch/sage-3.4/local/bin/ncadoctest.py\", line 608, in get_examples\n    return [x for x in self.parse(string, name)\n  File \"/home/mvngu/scratch/sage-3.4/local/bin/ncadoctest.py\", line 570, in parse\n    self._parse_example(m, name, lineno)\n  File \"/home/mvngu/scratch/sage-3.4/local/bin/ncadoctest.py\", line 628, in _parse_example\n    self._check_prompt_blank(source_lines, indent, name, lineno)\n  File \"/home/mvngu/scratch/sage-3.4/local/bin/ncadoctest.py\", line 715, in _check_prompt_blank\n    line[indent:indent+3], line))\nValueError: line 9 of the docstring for __main__.example_0 lacks blank after ...: '    ...:      return n%Integer(2) == Integer(0)'\n\n\t [3.3 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long \"devel/sage-5500/doc/en/tutorial/tour_help.rst\"\nTotal time for all tests: 3.3 seconds\n```\n\nThis is caused by the following lines in the patch:\n\n```\n-    ...       return n%2 == 0\n+    ...:      return n%2 == 0\n+    ...:\n```\n\nThe other patch **trac_5500-referee.patch** should fix the above doctest failure.",
     "created_at": "2009-03-19T06:54:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5500",
     "type": "issue_comment",
@@ -121,7 +121,7 @@ archive/issue_comments_042724.json:
 }
 ```
 
-Attachment
+Attachment [trac_5500-referee.patch](tarball://root/attachments/some-uuid/ticket5500/trac_5500-referee.patch) by mvngu created at 2009-03-19 06:54:27
 
 REFEREE REPORT
 

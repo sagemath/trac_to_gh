@@ -53,7 +53,7 @@ First installment, implements item 1.
 archive/issue_comments_010696.json:
 ```json
 {
-    "body": "Attachment\n\nPatch ruins IE compatability, do not use.  :(",
+    "body": "Attachment [1684.1.hg](tarball://root/attachments/some-uuid/ticket1684/1684.1.hg) by boothby created at 2008-01-05 08:40:31\n\nPatch ruins IE compatability, do not use.  :(",
     "created_at": "2008-01-05T08:40:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1684",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_010696.json:
 }
 ```
 
-Attachment
+Attachment [1684.1.hg](tarball://root/attachments/some-uuid/ticket1684/1684.1.hg) by boothby created at 2008-01-05 08:40:31
 
 Patch ruins IE compatability, do not use.  :(
 

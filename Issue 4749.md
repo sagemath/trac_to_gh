@@ -88,7 +88,7 @@ Changing status from new to assigned.
 archive/issue_comments_035939.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4749.patch](tarball://root/attachments/some-uuid/ticket4749/4749.patch) by cswiercz created at 2008-12-16 05:23:09",
     "created_at": "2008-12-16T05:23:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4749",
     "type": "issue_comment",
@@ -97,7 +97,7 @@ archive/issue_comments_035939.json:
 }
 ```
 
-Attachment
+Attachment [4749.patch](tarball://root/attachments/some-uuid/ticket4749/4749.patch) by cswiercz created at 2008-12-16 05:23:09
 
 
 
@@ -142,7 +142,7 @@ Change "This functionality is implemented in the \code{__call__} method. " to "T
 archive/issue_comments_035942.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4749-part2.patch](tarball://root/attachments/some-uuid/ticket4749/4749-part2.patch) by cswiercz created at 2008-12-16 19:05:12",
     "created_at": "2008-12-16T19:05:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4749",
     "type": "issue_comment",
@@ -151,7 +151,7 @@ archive/issue_comments_035942.json:
 }
 ```
 
-Attachment
+Attachment [4749-part2.patch](tarball://root/attachments/some-uuid/ticket4749/4749-part2.patch) by cswiercz created at 2008-12-16 19:05:12
 
 
 
@@ -216,7 +216,7 @@ I expect that I will post an alternative patch here before long.
 archive/issue_comments_035944.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4749-part3.patch](tarball://root/attachments/some-uuid/ticket4749/4749-part3.patch) by cremona created at 2008-12-19 17:23:11",
     "created_at": "2008-12-19T17:23:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4749",
     "type": "issue_comment",
@@ -225,7 +225,7 @@ archive/issue_comments_035944.json:
 }
 ```
 
-Attachment
+Attachment [4749-part3.patch](tarball://root/attachments/some-uuid/ticket4749/4749-part3.patch) by cremona created at 2008-12-19 17:23:11
 
 
 

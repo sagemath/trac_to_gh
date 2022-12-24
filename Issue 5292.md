@@ -99,7 +99,7 @@ is still wrong. There are better ways of going about this but at least it doesn'
 archive/issue_comments_040670.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5292-parsing-fix.patch](tarball://root/attachments/some-uuid/ticket5292/5292-parsing-fix.patch) by robertwb created at 2009-02-17 08:19:01",
     "created_at": "2009-02-17T08:19:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5292",
     "type": "issue_comment",
@@ -108,7 +108,7 @@ archive/issue_comments_040670.json:
 }
 ```
 
-Attachment
+Attachment [5292-parsing-fix.patch](tarball://root/attachments/some-uuid/ticket5292/5292-parsing-fix.patch) by robertwb created at 2009-02-17 08:19:01
 
 
 
@@ -205,7 +205,7 @@ fixed the previous very broken patch.
 archive/issue_comments_040674.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached a patch addressing all my remarks.  Somebody review this.  Mabshoff -- apply both patches in order.",
+    "body": "Attachment [trac_5292-part2.patch](tarball://root/attachments/some-uuid/ticket5292/trac_5292-part2.patch) by was created at 2009-02-17 23:46:41\n\nI've attached a patch addressing all my remarks.  Somebody review this.  Mabshoff -- apply both patches in order.",
     "created_at": "2009-02-17T23:46:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5292",
     "type": "issue_comment",
@@ -214,7 +214,7 @@ archive/issue_comments_040674.json:
 }
 ```
 
-Attachment
+Attachment [trac_5292-part2.patch](tarball://root/attachments/some-uuid/ticket5292/trac_5292-part2.patch) by was created at 2009-02-17 23:46:41
 
 I've attached a patch addressing all my remarks.  Somebody review this.  Mabshoff -- apply both patches in order.
 

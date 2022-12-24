@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8660
 archive/issue_comments_078599.json:
 ```json
 {
-    "body": "Attachment\n\nODF document of the German translation",
+    "body": "Attachment [InstallationSage_german.odt](tarball://root/attachments/some-uuid/ticket8660/InstallationSage_german.odt) by mvngu created at 2010-04-08 15:13:24\n\nODF document of the German translation",
     "created_at": "2010-04-08T15:13:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8660",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_078599.json:
 }
 ```
 
-Attachment
+Attachment [InstallationSage_german.odt](tarball://root/attachments/some-uuid/ticket8660/InstallationSage_german.odt) by mvngu created at 2010-04-08 15:13:24
 
 ODF document of the German translation
 
@@ -71,7 +71,7 @@ PDF version of the previous document
 archive/issue_comments_078601.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [InstallationSage_german.pdf](tarball://root/attachments/some-uuid/ticket8660/InstallationSage_german.pdf) by mvngu created at 2010-04-08 15:14:57",
     "created_at": "2010-04-08T15:14:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8660",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_078601.json:
 }
 ```
 
-Attachment
+Attachment [InstallationSage_german.pdf](tarball://root/attachments/some-uuid/ticket8660/InstallationSage_german.pdf) by mvngu created at 2010-04-08 15:14:57
 
 
 
@@ -89,7 +89,7 @@ Attachment
 archive/issue_comments_078602.json:
 ```json
 {
-    "body": "Attachment\n\nHTML code for Unicode characters",
+    "body": "Attachment [InstallationSageHTML.odt](tarball://root/attachments/some-uuid/ticket8660/InstallationSageHTML.odt) by mvngu created at 2010-04-08 15:51:50\n\nHTML code for Unicode characters",
     "created_at": "2010-04-08T15:51:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8660",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_078602.json:
 }
 ```
 
-Attachment
+Attachment [InstallationSageHTML.odt](tarball://root/attachments/some-uuid/ticket8660/InstallationSageHTML.odt) by mvngu created at 2010-04-08 15:51:50
 
 HTML code for Unicode characters
 
@@ -162,7 +162,7 @@ based on Sage 4.3.5
 archive/issue_comments_078605.json:
 ```json
 {
-    "body": "Attachment\n\nI have attached a patch to integrate the German translation into the Sage documentation. The patch needs to be reviewed by someone other than Bernhard and me. My knowledge of the German language is next to nothing. I relied on Google Translate while converting the document from ODT to Sphinx.",
+    "body": "Attachment [trac_8660-installation-de.patch](tarball://root/attachments/some-uuid/ticket8660/trac_8660-installation-de.patch) by mvngu created at 2010-04-13 02:44:04\n\nI have attached a patch to integrate the German translation into the Sage documentation. The patch needs to be reviewed by someone other than Bernhard and me. My knowledge of the German language is next to nothing. I relied on Google Translate while converting the document from ODT to Sphinx.",
     "created_at": "2010-04-13T02:44:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8660",
     "type": "issue_comment",
@@ -171,7 +171,7 @@ archive/issue_comments_078605.json:
 }
 ```
 
-Attachment
+Attachment [trac_8660-installation-de.patch](tarball://root/attachments/some-uuid/ticket8660/trac_8660-installation-de.patch) by mvngu created at 2010-04-13 02:44:04
 
 I have attached a patch to integrate the German translation into the Sage documentation. The patch needs to be reviewed by someone other than Bernhard and me. My knowledge of the German language is next to nothing. I relied on Google Translate while converting the document from ODT to Sphinx.
 
@@ -357,7 +357,7 @@ Simon
 archive/issue_comments_078613.json:
 ```json
 {
-    "body": "Attachment\n\nReviewer patch, to apply after ``trac_8660-installation-de.patch``",
+    "body": "Attachment [trac_8660-installation-de_reviewer.patch](tarball://root/attachments/some-uuid/ticket8660/trac_8660-installation-de_reviewer.patch) by SimonKing created at 2010-04-18 12:01:26\n\nReviewer patch, to apply after ``trac_8660-installation-de.patch``",
     "created_at": "2010-04-18T12:01:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8660",
     "type": "issue_comment",
@@ -366,7 +366,7 @@ archive/issue_comments_078613.json:
 }
 ```
 
-Attachment
+Attachment [trac_8660-installation-de_reviewer.patch](tarball://root/attachments/some-uuid/ticket8660/trac_8660-installation-de_reviewer.patch) by SimonKing created at 2010-04-18 12:01:26
 
 Reviewer patch, to apply after ``trac_8660-installation-de.patch``
 
@@ -847,7 +847,7 @@ I don't speak German so I can't help with the real review, but I would say this:
 archive/issue_comments_078633.json:
 ```json
 {
-    "body": "Attachment\n\nrestarted the translation. use this instead of all former patches.",
+    "body": "Attachment [trac_8660_restart.patch](tarball://root/attachments/some-uuid/ticket8660/trac_8660_restart.patch) by hedtke created at 2011-07-18 21:53:42\n\nrestarted the translation. use this instead of all former patches.",
     "created_at": "2011-07-18T21:53:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8660",
     "type": "issue_comment",
@@ -856,7 +856,7 @@ archive/issue_comments_078633.json:
 }
 ```
 
-Attachment
+Attachment [trac_8660_restart.patch](tarball://root/attachments/some-uuid/ticket8660/trac_8660_restart.patch) by hedtke created at 2011-07-18 21:53:42
 
 restarted the translation. use this instead of all former patches.
 
@@ -944,7 +944,7 @@ apply after trac_8660_restart.patch
 archive/issue_comments_078638.json:
 ```json
 {
-    "body": "Attachment\n\nDie \"Eingabezeile\" ist jetzt raus ;-)\n\n**BITTE BEACHTEN**: Wegen dem fehlerhaften ersten Patch, habe ich einen kompletten **NEUSTART** gemacht. Bitte zuerst #9725 anwenden (eine **Abh\u00e4ngigkeit**). Dann trac_8660_restart.patch und danach trac_8660_restart_p1.patch. Alle anderen Patches sind in meinem NEUSTART enthalten.",
+    "body": "Attachment [trac_8660_restart_p1.patch](tarball://root/attachments/some-uuid/ticket8660/trac_8660_restart_p1.patch) by hedtke created at 2011-07-19 20:50:02\n\nDie \"Eingabezeile\" ist jetzt raus ;-)\n\n**BITTE BEACHTEN**: Wegen dem fehlerhaften ersten Patch, habe ich einen kompletten **NEUSTART** gemacht. Bitte zuerst #9725 anwenden (eine **Abh\u00e4ngigkeit**). Dann trac_8660_restart.patch und danach trac_8660_restart_p1.patch. Alle anderen Patches sind in meinem NEUSTART enthalten.",
     "created_at": "2011-07-19T20:50:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8660",
     "type": "issue_comment",
@@ -953,7 +953,7 @@ archive/issue_comments_078638.json:
 }
 ```
 
-Attachment
+Attachment [trac_8660_restart_p1.patch](tarball://root/attachments/some-uuid/ticket8660/trac_8660_restart_p1.patch) by hedtke created at 2011-07-19 20:50:02
 
 Die "Eingabezeile" ist jetzt raus ;-)
 
@@ -1007,7 +1007,7 @@ apply after trac_8660_restart_p1.patch
 archive/issue_comments_078641.json:
 ```json
 {
-    "body": "Attachment\n\nVielen lieben Dank. Diese Datei produziert keinen Output in der PDF und in der HTML. Daher habe ich das nicht gesehen und leider auch vergessen zu korrigieren. Ist damit geschehen ;-)",
+    "body": "Attachment [trac_8660_restart_p2.patch](tarball://root/attachments/some-uuid/ticket8660/trac_8660_restart_p2.patch) by hedtke created at 2011-07-19 21:25:11\n\nVielen lieben Dank. Diese Datei produziert keinen Output in der PDF und in der HTML. Daher habe ich das nicht gesehen und leider auch vergessen zu korrigieren. Ist damit geschehen ;-)",
     "created_at": "2011-07-19T21:25:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8660",
     "type": "issue_comment",
@@ -1016,7 +1016,7 @@ archive/issue_comments_078641.json:
 }
 ```
 
-Attachment
+Attachment [trac_8660_restart_p2.patch](tarball://root/attachments/some-uuid/ticket8660/trac_8660_restart_p2.patch) by hedtke created at 2011-07-19 21:25:11
 
 Vielen lieben Dank. Diese Datei produziert keinen Output in der PDF und in der HTML. Daher habe ich das nicht gesehen und leider auch vergessen zu korrigieren. Ist damit geschehen ;-)
 
@@ -1295,7 +1295,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_078654.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8660_restart_p1.2.patch](tarball://root/attachments/some-uuid/ticket8660/trac_8660_restart_p1.2.patch) by kcrisman created at 2013-01-17 13:59:20",
     "created_at": "2013-01-17T13:59:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8660",
     "type": "issue_comment",
@@ -1304,7 +1304,7 @@ archive/issue_comments_078654.json:
 }
 ```
 
-Attachment
+Attachment [trac_8660_restart_p1.2.patch](tarball://root/attachments/some-uuid/ticket8660/trac_8660_restart_p1.2.patch) by kcrisman created at 2013-01-17 13:59:20
 
 
 
@@ -1313,7 +1313,7 @@ Attachment
 archive/issue_comments_078655.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8660_restart_p2.2.patch](tarball://root/attachments/some-uuid/ticket8660/trac_8660_restart_p2.2.patch) by kcrisman created at 2013-01-17 13:59:29",
     "created_at": "2013-01-17T13:59:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8660",
     "type": "issue_comment",
@@ -1322,7 +1322,7 @@ archive/issue_comments_078655.json:
 }
 ```
 
-Attachment
+Attachment [trac_8660_restart_p2.2.patch](tarball://root/attachments/some-uuid/ticket8660/trac_8660_restart_p2.2.patch) by kcrisman created at 2013-01-17 13:59:29
 
 
 

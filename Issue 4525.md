@@ -63,7 +63,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4525
 archive/issue_comments_033583.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [10902.patch](tarball://root/attachments/some-uuid/ticket4525/10902.patch) by cremona created at 2008-11-14 17:37:04",
     "created_at": "2008-11-14T17:37:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4525",
     "type": "issue_comment",
@@ -72,7 +72,7 @@ archive/issue_comments_033583.json:
 }
 ```
 
-Attachment
+Attachment [10902.patch](tarball://root/attachments/some-uuid/ticket4525/10902.patch) by cremona created at 2008-11-14 17:37:04
 
 
 
@@ -149,7 +149,7 @@ You are 100% right. Sorry for the noise, I should have checked.
 archive/issue_comments_033587.json:
 ```json
 {
-    "body": "Attachment\n\nThe second patch 10903.patch implements another speedup, in the function integral_points_with_bounded_mw_coefficients(), which I have moved outside the integral_points() function (mainly for ease of testing).  We still loop through all relevant linear combinations as real points, but instead of computing each linear combo from scratch we do so in a more incremental way, since most of the time we get the next combo by adding a single point.\n\nApply after the previous patch.  Timings:\n\nrank 3 [0,0,1,-7,6] : old 0.33s, new 0.16s\n\nrank 4 [0,0,1,-7,36]: old 15.4s, new 4.24s\n\nrank 5 [0,0,1,-79,342]: old 273s, new 64s\n\nwith presumably even better factors for larger examples.  (I still have not completed a rank 8 example, but one day I will!).\n\nBy the way, for that rank 5 example I had to find the gens first with \"proof=False\" and then manually use E._set_rank() and E._set_gens().  We might want to add the proof flag to integral points, just to apply to the MW basis part of the computation.\n\nPS Since I moved the function it is not so easy to see what has changed, sorry.  Basically the old lines 4228-4242 are replaced by the new lines 4491-4526.",
+    "body": "Attachment [10903.patch](tarball://root/attachments/some-uuid/ticket4525/10903.patch) by cremona created at 2008-11-17 17:42:02\n\nThe second patch 10903.patch implements another speedup, in the function integral_points_with_bounded_mw_coefficients(), which I have moved outside the integral_points() function (mainly for ease of testing).  We still loop through all relevant linear combinations as real points, but instead of computing each linear combo from scratch we do so in a more incremental way, since most of the time we get the next combo by adding a single point.\n\nApply after the previous patch.  Timings:\n\nrank 3 [0,0,1,-7,6] : old 0.33s, new 0.16s\n\nrank 4 [0,0,1,-7,36]: old 15.4s, new 4.24s\n\nrank 5 [0,0,1,-79,342]: old 273s, new 64s\n\nwith presumably even better factors for larger examples.  (I still have not completed a rank 8 example, but one day I will!).\n\nBy the way, for that rank 5 example I had to find the gens first with \"proof=False\" and then manually use E._set_rank() and E._set_gens().  We might want to add the proof flag to integral points, just to apply to the MW basis part of the computation.\n\nPS Since I moved the function it is not so easy to see what has changed, sorry.  Basically the old lines 4228-4242 are replaced by the new lines 4491-4526.",
     "created_at": "2008-11-17T17:42:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4525",
     "type": "issue_comment",
@@ -158,7 +158,7 @@ archive/issue_comments_033587.json:
 }
 ```
 
-Attachment
+Attachment [10903.patch](tarball://root/attachments/some-uuid/ticket4525/10903.patch) by cremona created at 2008-11-17 17:42:02
 
 The second patch 10903.patch implements another speedup, in the function integral_points_with_bounded_mw_coefficients(), which I have moved outside the integral_points() function (mainly for ease of testing).  We still loop through all relevant linear combinations as real points, but instead of computing each linear combo from scratch we do so in a more incremental way, since most of the time we get the next combo by adding a single point.
 
@@ -183,7 +183,7 @@ PS Since I moved the function it is not so easy to see what has changed, sorry. 
 archive/issue_comments_033588.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [10984.patch](tarball://root/attachments/some-uuid/ticket4525/10984.patch) by cremona created at 2008-11-22 17:10:46",
     "created_at": "2008-11-22T17:10:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4525",
     "type": "issue_comment",
@@ -192,7 +192,7 @@ archive/issue_comments_033588.json:
 }
 ```
 
-Attachment
+Attachment [10984.patch](tarball://root/attachments/some-uuid/ticket4525/10984.patch) by cremona created at 2008-11-22 17:10:46
 
 
 
@@ -256,7 +256,7 @@ I guess this should have been a new ticket, but all three patches affect the sam
 archive/issue_comments_033591.json:
 ```json
 {
-    "body": "Attachment\n\nthis should replace the patch right above this one, which wouldn't apply cleanly for me.",
+    "body": "Attachment [sage-4525-patch3-rebased-3.2.patch](tarball://root/attachments/some-uuid/ticket4525/sage-4525-patch3-rebased-3.2.patch) by was created at 2008-11-23 07:51:15\n\nthis should replace the patch right above this one, which wouldn't apply cleanly for me.",
     "created_at": "2008-11-23T07:51:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4525",
     "type": "issue_comment",
@@ -265,7 +265,7 @@ archive/issue_comments_033591.json:
 }
 ```
 
-Attachment
+Attachment [sage-4525-patch3-rebased-3.2.patch](tarball://root/attachments/some-uuid/ticket4525/sage-4525-patch3-rebased-3.2.patch) by was created at 2008-11-23 07:51:15
 
 this should replace the patch right above this one, which wouldn't apply cleanly for me.
 
@@ -317,7 +317,7 @@ fix some numerical noise issues (part of refereeing)
 archive/issue_comments_033594.json:
 ```json
 {
-    "body": "Attachment\n\nOK, this looks good, but it introduces a *BUG*:\nWe have in sage-3.2 released:\n\n```\nwas@sage:~/www/talks$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| Sage Version 3.2, Release Date: 2008-11-20                         |\n| Type notebook() for the GUI, and license() for information.        |\nsage: EllipticCurve('91b1').integral_points()\n[(-1 : 3 : 1), (1 : 0 : 1), (3 : 4 : 1)]\n```\n\n\nHowever, after applying these patches, I get:\n\n```\nEllipticCurve('91b1').integral_points()\nTraceback (click to the left for traceback)\n...\nValueError: No point with x-coordinate 0 on Elliptic Curve defined by\ny^2 + y = x^3 + x^2 - 7*x + 5 over Rational Field\n```\n\n\nI found with the following handy script, which anybody who ever works on the integral points code should always consider running:\n\n```\nfor e in cremona_curves([1..100]):\n    t = cputime(); i = len(e.integral_points()); t = cputime(t)\n    t2 = magma.cputime(); j = len(magma(e).IntegralPoints()); t2 = magma.cputime(t2)\n    print e.cremona_label(), i, j, t, t2\n    assert i == j\n```\n\n\nAlso, the curve 112a2 also gives the same error.\n\n\n** One weird thing I noticed using the script is that for the elliptic curve 102b5, magma takes 3.88 seconds to find all the integral points, and sage takes 0.004\n102b5 0 0 0.004 3.88.",
+    "body": "Attachment [sage-4525-referee_numerical_noise.patch](tarball://root/attachments/some-uuid/ticket4525/sage-4525-referee_numerical_noise.patch) by was created at 2008-11-23 08:34:53\n\nOK, this looks good, but it introduces a *BUG*:\nWe have in sage-3.2 released:\n\n```\nwas@sage:~/www/talks$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| Sage Version 3.2, Release Date: 2008-11-20                         |\n| Type notebook() for the GUI, and license() for information.        |\nsage: EllipticCurve('91b1').integral_points()\n[(-1 : 3 : 1), (1 : 0 : 1), (3 : 4 : 1)]\n```\n\n\nHowever, after applying these patches, I get:\n\n```\nEllipticCurve('91b1').integral_points()\nTraceback (click to the left for traceback)\n...\nValueError: No point with x-coordinate 0 on Elliptic Curve defined by\ny^2 + y = x^3 + x^2 - 7*x + 5 over Rational Field\n```\n\n\nI found with the following handy script, which anybody who ever works on the integral points code should always consider running:\n\n```\nfor e in cremona_curves([1..100]):\n    t = cputime(); i = len(e.integral_points()); t = cputime(t)\n    t2 = magma.cputime(); j = len(magma(e).IntegralPoints()); t2 = magma.cputime(t2)\n    print e.cremona_label(), i, j, t, t2\n    assert i == j\n```\n\n\nAlso, the curve 112a2 also gives the same error.\n\n\n** One weird thing I noticed using the script is that for the elliptic curve 102b5, magma takes 3.88 seconds to find all the integral points, and sage takes 0.004\n102b5 0 0 0.004 3.88.",
     "created_at": "2008-11-23T08:34:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4525",
     "type": "issue_comment",
@@ -326,7 +326,7 @@ archive/issue_comments_033594.json:
 }
 ```
 
-Attachment
+Attachment [sage-4525-referee_numerical_noise.patch](tarball://root/attachments/some-uuid/ticket4525/sage-4525-referee_numerical_noise.patch) by was created at 2008-11-23 08:34:53
 
 OK, this looks good, but it introduces a *BUG*:
 We have in sage-3.2 released:
@@ -450,7 +450,7 @@ Michael
 archive/issue_comments_033598.json:
 ```json
 {
-    "body": "Attachment\n\nReplaces ALL earlier patches combined",
+    "body": "Attachment [trac-4525-combined.patch](tarball://root/attachments/some-uuid/ticket4525/trac-4525-combined.patch) by cremona created at 2008-11-23 15:49:04\n\nReplaces ALL earlier patches combined",
     "created_at": "2008-11-23T15:49:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4525",
     "type": "issue_comment",
@@ -459,7 +459,7 @@ archive/issue_comments_033598.json:
 }
 ```
 
-Attachment
+Attachment [trac-4525-combined.patch](tarball://root/attachments/some-uuid/ticket4525/trac-4525-combined.patch) by cremona created at 2008-11-23 15:49:04
 
 Replaces ALL earlier patches combined
 
@@ -535,7 +535,7 @@ Positive review (but please add the above doctest).
 archive/issue_comments_033602.json:
 ```json
 {
-    "body": "Attachment\n\nReplace previous one with this",
+    "body": "Attachment [trac-4525-combined-2.patch](tarball://root/attachments/some-uuid/ticket4525/trac-4525-combined-2.patch) by cremona created at 2008-11-23 21:09:55\n\nReplace previous one with this",
     "created_at": "2008-11-23T21:09:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4525",
     "type": "issue_comment",
@@ -544,7 +544,7 @@ archive/issue_comments_033602.json:
 }
 ```
 
-Attachment
+Attachment [trac-4525-combined-2.patch](tarball://root/attachments/some-uuid/ticket4525/trac-4525-combined-2.patch) by cremona created at 2008-11-23 21:09:55
 
 Replace previous one with this
 

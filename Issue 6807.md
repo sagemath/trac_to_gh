@@ -65,7 +65,7 @@ Patch to fix bug in blocks_and_cut_vertices() in graph.py where cut vertices are
 archive/issue_comments_056041.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [blocks_and_cut_vertices-6807.patch](tarball://root/attachments/some-uuid/ticket6807/blocks_and_cut_vertices-6807.patch) by hartke created at 2009-08-22 21:36:24",
     "created_at": "2009-08-22T21:36:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6807",
     "type": "issue_comment",
@@ -74,7 +74,7 @@ archive/issue_comments_056041.json:
 }
 ```
 
-Attachment
+Attachment [blocks_and_cut_vertices-6807.patch](tarball://root/attachments/some-uuid/ticket6807/blocks_and_cut_vertices-6807.patch) by hartke created at 2009-08-22 21:36:24
 
 
 

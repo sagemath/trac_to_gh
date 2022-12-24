@@ -57,7 +57,7 @@ folded patch
 archive/issue_comments_055714.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch `trac_6765-tutorial-lp-folded.patch` folds all three patches in `tutorial_lp.patch`. With the folded patch, changes are easier to review. Only `trac_6765-tutorial-lp-folded.patch` should be reviewed.",
+    "body": "Attachment [trac_6765-tutorial-lp-folded.patch](tarball://root/attachments/some-uuid/ticket6765/trac_6765-tutorial-lp-folded.patch) by mvngu created at 2009-08-22 23:47:34\n\nThe patch `trac_6765-tutorial-lp-folded.patch` folds all three patches in `tutorial_lp.patch`. With the folded patch, changes are easier to review. Only `trac_6765-tutorial-lp-folded.patch` should be reviewed.",
     "created_at": "2009-08-22T23:47:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6765",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_055714.json:
 }
 ```
 
-Attachment
+Attachment [trac_6765-tutorial-lp-folded.patch](tarball://root/attachments/some-uuid/ticket6765/trac_6765-tutorial-lp-folded.patch) by mvngu created at 2009-08-22 23:47:34
 
 The patch `trac_6765-tutorial-lp-folded.patch` folds all three patches in `tutorial_lp.patch`. With the folded patch, changes are easier to review. Only `trac_6765-tutorial-lp-folded.patch` should be reviewed.
 
@@ -214,7 +214,7 @@ Nathann
 archive/issue_comments_055720.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [tutorial_lp.patch](tarball://root/attachments/some-uuid/ticket6765/tutorial_lp.patch) by ncohen created at 2009-09-29 12:53:03",
     "created_at": "2009-09-29T12:53:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6765",
     "type": "issue_comment",
@@ -223,7 +223,7 @@ archive/issue_comments_055720.json:
 }
 ```
 
-Attachment
+Attachment [tutorial_lp.patch](tarball://root/attachments/some-uuid/ticket6765/tutorial_lp.patch) by ncohen created at 2009-09-29 12:53:03
 
 
 

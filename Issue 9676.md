@@ -373,7 +373,7 @@ Cosmetics on top of Edward's patch
 archive/issue_comments_094058.json:
 ```json
 {
-    "body": "Attachment\n\nHi Nathann, I tested the new code and am satisfied with the results. I think this is fine to incorporate into the next Sage release. Thanks for the help!!!  -Ed",
+    "body": "Attachment [trac_9676-cosmetics.patch](tarball://root/attachments/some-uuid/ticket9676/trac_9676-cosmetics.patch) by edward.scheinerman created at 2010-08-24 22:59:09\n\nHi Nathann, I tested the new code and am satisfied with the results. I think this is fine to incorporate into the next Sage release. Thanks for the help!!!  -Ed",
     "created_at": "2010-08-24T22:59:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9676",
     "type": "issue_comment",
@@ -382,7 +382,7 @@ archive/issue_comments_094058.json:
 }
 ```
 
-Attachment
+Attachment [trac_9676-cosmetics.patch](tarball://root/attachments/some-uuid/ticket9676/trac_9676-cosmetics.patch) by edward.scheinerman created at 2010-08-24 22:59:09
 
 Hi Nathann, I tested the new code and am satisfied with the results. I think this is fine to incorporate into the next Sage release. Thanks for the help!!!  -Ed
 
@@ -489,7 +489,7 @@ New, improved, repaired [RandomTree](RandomTree) graph constructor
 archive/issue_comments_094064.json:
 ```json
 {
-    "body": "Attachment\n\nCommit string edited as requested.",
+    "body": "Attachment [trac_9676.patch](tarball://root/attachments/some-uuid/ticket9676/trac_9676.patch) by edward.scheinerman created at 2010-09-06 00:42:07\n\nCommit string edited as requested.",
     "created_at": "2010-09-06T00:42:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9676",
     "type": "issue_comment",
@@ -498,7 +498,7 @@ archive/issue_comments_094064.json:
 }
 ```
 
-Attachment
+Attachment [trac_9676.patch](tarball://root/attachments/some-uuid/ticket9676/trac_9676.patch) by edward.scheinerman created at 2010-09-06 00:42:07
 
 Commit string edited as requested.
 

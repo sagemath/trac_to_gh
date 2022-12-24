@@ -53,7 +53,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5431
 archive/issue_comments_042025.json:
 ```json
 {
-    "body": "Attachment\n\nThis was fixed by the preparser rewrite work by robertwb.",
+    "body": "Attachment [trac_5431.patch](tarball://root/attachments/some-uuid/ticket5431/trac_5431.patch) by mhansen created at 2009-06-05 01:32:59\n\nThis was fixed by the preparser rewrite work by robertwb.",
     "created_at": "2009-06-05T01:32:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5431",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_042025.json:
 }
 ```
 
-Attachment
+Attachment [trac_5431.patch](tarball://root/attachments/some-uuid/ticket5431/trac_5431.patch) by mhansen created at 2009-06-05 01:32:59
 
 This was fixed by the preparser rewrite work by robertwb.
 

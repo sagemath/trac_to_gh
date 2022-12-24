@@ -122,7 +122,7 @@ add doctests
 archive/issue_comments_068425.json:
 ```json
 {
-    "body": "Attachment\n\nadd one more doctest fix - apply only this patch",
+    "body": "Attachment [trac_7876-pynac_print.patch](tarball://root/attachments/some-uuid/ticket7876/trac_7876-pynac_print.patch) by burcin created at 2010-01-17 11:14:43\n\nadd one more doctest fix - apply only this patch",
     "created_at": "2010-01-17T11:14:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7876",
     "type": "issue_comment",
@@ -131,7 +131,7 @@ archive/issue_comments_068425.json:
 }
 ```
 
-Attachment
+Attachment [trac_7876-pynac_print.patch](tarball://root/attachments/some-uuid/ticket7876/trac_7876-pynac_print.patch) by burcin created at 2010-01-17 11:14:43
 
 add one more doctest fix - apply only this patch
 
@@ -142,7 +142,7 @@ add one more doctest fix - apply only this patch
 archive/issue_comments_068426.json:
 ```json
 {
-    "body": "Attachment\n\nNew pynac package available here:\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.11.spkg\n\nThe package contains fixes for #7822, #6961, #7876, #7363, #6465 and #6559. Apart from this ticket, #7363 contains printing changes. Doctests should be run with the patch from that ticket applied as well.",
+    "body": "Attachment [trac_7876-pynac_print.take2.patch](tarball://root/attachments/some-uuid/ticket7876/trac_7876-pynac_print.take2.patch) by burcin created at 2010-01-19 14:09:15\n\nNew pynac package available here:\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.11.spkg\n\nThe package contains fixes for #7822, #6961, #7876, #7363, #6465 and #6559. Apart from this ticket, #7363 contains printing changes. Doctests should be run with the patch from that ticket applied as well.",
     "created_at": "2010-01-19T14:09:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7876",
     "type": "issue_comment",
@@ -151,7 +151,7 @@ archive/issue_comments_068426.json:
 }
 ```
 
-Attachment
+Attachment [trac_7876-pynac_print.take2.patch](tarball://root/attachments/some-uuid/ticket7876/trac_7876-pynac_print.take2.patch) by burcin created at 2010-01-19 14:09:15
 
 New pynac package available here:
 

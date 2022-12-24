@@ -58,7 +58,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4899
 archive/issue_comments_037161.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4899.patch](tarball://root/attachments/some-uuid/ticket4899/trac_4899.patch) by cremona created at 2009-01-01 12:22:26",
     "created_at": "2009-01-01T12:22:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4899",
     "type": "issue_comment",
@@ -67,7 +67,7 @@ archive/issue_comments_037161.json:
 }
 ```
 
-Attachment
+Attachment [trac_4899.patch](tarball://root/attachments/some-uuid/ticket4899/trac_4899.patch) by cremona created at 2009-01-01 12:22:26
 
 
 
@@ -76,7 +76,7 @@ Attachment
 archive/issue_comments_037162.json:
 ```json
 {
-    "body": "Attachment\n\napply this after trac_4899.patch",
+    "body": "Attachment [trac_4899-referee.patch](tarball://root/attachments/some-uuid/ticket4899/trac_4899-referee.patch) by was created at 2009-01-03 05:00:39\n\napply this after trac_4899.patch",
     "created_at": "2009-01-03T05:00:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4899",
     "type": "issue_comment",
@@ -85,7 +85,7 @@ archive/issue_comments_037162.json:
 }
 ```
 
-Attachment
+Attachment [trac_4899-referee.patch](tarball://root/attachments/some-uuid/ticket4899/trac_4899-referee.patch) by was created at 2009-01-03 05:00:39
 
 apply this after trac_4899.patch
 

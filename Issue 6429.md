@@ -79,7 +79,7 @@ This looks good, but I do have two notes:
 archive/issue_comments_051634.json:
 ```json
 {
-    "body": "Attachment\n\nOkay, this new patch just adds my name to the AUTHORS block.  Line numbers would be nice -- good luck!",
+    "body": "Attachment [sagedoc_6429.patch](tarball://root/attachments/some-uuid/ticket6429/sagedoc_6429.patch) by jhpalmieri created at 2009-06-29 04:31:13\n\nOkay, this new patch just adds my name to the AUTHORS block.  Line numbers would be nice -- good luck!",
     "created_at": "2009-06-29T04:31:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6429",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_051634.json:
 }
 ```
 
-Attachment
+Attachment [sagedoc_6429.patch](tarball://root/attachments/some-uuid/ticket6429/sagedoc_6429.patch) by jhpalmieri created at 2009-06-29 04:31:13
 
 Okay, this new patch just adds my name to the AUTHORS block.  Line numbers would be nice -- good luck!
 
@@ -135,7 +135,7 @@ Your patch gets a positive review, although I've only tested it on sage.math and
 archive/issue_comments_051636.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6429_line_numbers.patch](tarball://root/attachments/some-uuid/ticket6429/trac_6429_line_numbers.patch) by ddrake created at 2009-06-29 23:50:59",
     "created_at": "2009-06-29T23:50:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6429",
     "type": "issue_comment",
@@ -144,7 +144,7 @@ archive/issue_comments_051636.json:
 }
 ```
 
-Attachment
+Attachment [trac_6429_line_numbers.patch](tarball://root/attachments/some-uuid/ticket6429/trac_6429_line_numbers.patch) by ddrake created at 2009-06-29 23:50:59
 
 
 
@@ -171,7 +171,7 @@ Okay, trac was restarted and now the patch is available here.
 archive/issue_comments_051638.json:
 ```json
 {
-    "body": "Attachment\n\n> What do you think of the line numbers patch?\n\nLooks good except that line numbers are indexed starting at 0, and I think the first line of a file should be line 1, not line 0.  I've added a referee's patch to fix this.\n\nApply all three patches in this order: sagedoc_6429.patch, trac_6429_line_numbers.patch, trac_6429_ref.patch.",
+    "body": "Attachment [trac_6429_ref.patch](tarball://root/attachments/some-uuid/ticket6429/trac_6429_ref.patch) by jhpalmieri created at 2009-06-30 00:18:21\n\n> What do you think of the line numbers patch?\n\nLooks good except that line numbers are indexed starting at 0, and I think the first line of a file should be line 1, not line 0.  I've added a referee's patch to fix this.\n\nApply all three patches in this order: sagedoc_6429.patch, trac_6429_line_numbers.patch, trac_6429_ref.patch.",
     "created_at": "2009-06-30T00:18:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6429",
     "type": "issue_comment",
@@ -180,7 +180,7 @@ archive/issue_comments_051638.json:
 }
 ```
 
-Attachment
+Attachment [trac_6429_ref.patch](tarball://root/attachments/some-uuid/ticket6429/trac_6429_ref.patch) by jhpalmieri created at 2009-06-30 00:18:21
 
 > What do you think of the line numbers patch?
 

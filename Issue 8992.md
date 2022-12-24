@@ -264,7 +264,7 @@ A side remark: I just noticed that univariate quotient rings have no representat
 archive/issue_comments_083128.json:
 ```json
 {
-    "body": "Attachment\n\n_element_constructor_ and _coerce_map_from_ for polynomial quotient rings; may depend on #8800",
+    "body": "Attachment [8992_coercion_for_polynomial_quotient_rings.patch](tarball://root/attachments/some-uuid/ticket8992/8992_coercion_for_polynomial_quotient_rings.patch) by SimonKing created at 2010-05-19 13:36:43\n\n_element_constructor_ and _coerce_map_from_ for polynomial quotient rings; may depend on #8800",
     "created_at": "2010-05-19T13:36:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8992",
     "type": "issue_comment",
@@ -273,7 +273,7 @@ archive/issue_comments_083128.json:
 }
 ```
 
-Attachment
+Attachment [8992_coercion_for_polynomial_quotient_rings.patch](tarball://root/attachments/some-uuid/ticket8992/8992_coercion_for_polynomial_quotient_rings.patch) by SimonKing created at 2010-05-19 13:36:43
 
 _element_constructor_ and _coerce_map_from_ for polynomial quotient rings; may depend on #8800
 
@@ -365,7 +365,7 @@ I just realise that I forgot to provide a doc test for _coerce_map_from_. I will
 archive/issue_comments_083130.json:
 ```json
 {
-    "body": "Attachment\n\nAdditional doc test; to be applied after the previous patch",
+    "body": "Attachment [8992_test_for_coerce_map_from.patch](tarball://root/attachments/some-uuid/ticket8992/8992_test_for_coerce_map_from.patch) by SimonKing created at 2010-05-19 14:07:20\n\nAdditional doc test; to be applied after the previous patch",
     "created_at": "2010-05-19T14:07:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8992",
     "type": "issue_comment",
@@ -374,7 +374,7 @@ archive/issue_comments_083130.json:
 }
 ```
 
-Attachment
+Attachment [8992_test_for_coerce_map_from.patch](tarball://root/attachments/some-uuid/ticket8992/8992_test_for_coerce_map_from.patch) by SimonKing created at 2010-05-19 14:07:20
 
 Additional doc test; to be applied after the previous patch
 
@@ -924,7 +924,7 @@ Integer Ring
 archive/issue_comments_083151.json:
 ```json
 {
-    "body": "Attachment\n\nNew patch, replacing the old patches",
+    "body": "Attachment [trac8992_conversion_polynomial_quotient_ring.patch](tarball://root/attachments/some-uuid/ticket8992/trac8992_conversion_polynomial_quotient_ring.patch) by SimonKing created at 2012-05-31 08:39:25\n\nNew patch, replacing the old patches",
     "created_at": "2012-05-31T08:39:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8992",
     "type": "issue_comment",
@@ -933,7 +933,7 @@ archive/issue_comments_083151.json:
 }
 ```
 
-Attachment
+Attachment [trac8992_conversion_polynomial_quotient_ring.patch](tarball://root/attachments/some-uuid/ticket8992/trac8992_conversion_polynomial_quotient_ring.patch) by SimonKing created at 2012-05-31 08:39:25
 
 New patch, replacing the old patches
 

@@ -104,7 +104,7 @@ And I'm making this a blocker, since it is a situation where one can silently ge
 archive/issue_comments_036201.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4777.patch](tarball://root/attachments/some-uuid/ticket4777/trac_4777.patch) by was created at 2008-12-13 02:41:24",
     "created_at": "2008-12-13T02:41:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4777",
     "type": "issue_comment",
@@ -113,7 +113,7 @@ archive/issue_comments_036201.json:
 }
 ```
 
-Attachment
+Attachment [trac_4777.patch](tarball://root/attachments/some-uuid/ticket4777/trac_4777.patch) by was created at 2008-12-13 02:41:24
 
 
 

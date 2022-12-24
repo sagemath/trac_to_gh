@@ -383,7 +383,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/698
 archive/issue_comments_003649.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Combinatorica-Compare.ods](tarball://root/attachments/some-uuid/ticket698/Combinatorica-Compare.ods) by jason created at 2007-09-19 21:22:18",
     "created_at": "2007-09-19T21:22:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/698",
     "type": "issue_comment",
@@ -392,7 +392,7 @@ archive/issue_comments_003649.json:
 }
 ```
 
-Attachment
+Attachment [Combinatorica-Compare.ods](tarball://root/attachments/some-uuid/ticket698/Combinatorica-Compare.ods) by jason created at 2007-09-19 21:22:18
 
 
 
@@ -455,7 +455,7 @@ I noticed this is now a documentation component ticket.  I'm planning on whittli
 archive/issue_comments_003653.json:
 ```json
 {
-    "body": "Attachment\n\nImplements to_simple, equivalent to the Combinatorica MakeSimple",
+    "body": "Attachment [graphs_to_simple.hg](tarball://root/attachments/some-uuid/ticket698/graphs_to_simple.hg) by jason created at 2007-09-20 19:11:35\n\nImplements to_simple, equivalent to the Combinatorica MakeSimple",
     "created_at": "2007-09-20T19:11:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/698",
     "type": "issue_comment",
@@ -464,7 +464,7 @@ archive/issue_comments_003653.json:
 }
 ```
 
-Attachment
+Attachment [graphs_to_simple.hg](tarball://root/attachments/some-uuid/ticket698/graphs_to_simple.hg) by jason created at 2007-09-20 19:11:35
 
 Implements to_simple, equivalent to the Combinatorica MakeSimple
 

@@ -50,7 +50,7 @@ Changing type from defect to task.
 archive/issue_comments_000434.json:
 ```json
 {
-    "body": "Attachment\n\nHere's a work in progress that is relevant...",
+    "body": "Attachment [pyrex_guide.tex](tarball://root/attachments/some-uuid/ticket88/pyrex_guide.tex) by was created at 2006-09-27 17:34:26\n\nHere's a work in progress that is relevant...",
     "created_at": "2006-09-27T17:34:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/88",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_000434.json:
 }
 ```
 
-Attachment
+Attachment [pyrex_guide.tex](tarball://root/attachments/some-uuid/ticket88/pyrex_guide.tex) by was created at 2006-09-27 17:34:26
 
 Here's a work in progress that is relevant...
 

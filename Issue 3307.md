@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3307
 archive/issue_comments_022877.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [genus2reduction-lib.patch](tarball://root/attachments/some-uuid/ticket3307/genus2reduction-lib.patch) by tabbott created at 2008-05-26 04:25:03",
     "created_at": "2008-05-26T04:25:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3307",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_022877.json:
 }
 ```
 
-Attachment
+Attachment [genus2reduction-lib.patch](tarball://root/attachments/some-uuid/ticket3307/genus2reduction-lib.patch) by tabbott created at 2008-05-26 04:25:03
 
 
 

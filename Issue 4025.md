@@ -210,7 +210,7 @@ Michael
 archive/issue_comments_029028.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4025.patch](tarball://root/attachments/some-uuid/ticket4025/trac_4025.patch) by mhansen created at 2008-09-01 01:42:20",
     "created_at": "2008-09-01T01:42:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4025",
     "type": "issue_comment",
@@ -219,7 +219,7 @@ archive/issue_comments_029028.json:
 }
 ```
 
-Attachment
+Attachment [trac_4025.patch](tarball://root/attachments/some-uuid/ticket4025/trac_4025.patch) by mhansen created at 2008-09-01 01:42:20
 
 
 

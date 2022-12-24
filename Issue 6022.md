@@ -124,7 +124,7 @@ That is, it won't work before applying that patch: I get no output from this.  W
 archive/issue_comments_047964.json:
 ```json
 {
-    "body": "Attachment\n\nLooks real good - this greatly expands the possibilities for latex packages that can be employed, and the resulting possibilities for latex output.  Works as advertised - tested with various combinations of %latex, %pdflatex, missing dvipng, missing convert, and various types of input.  Passes tests on sage/misc/latex.py.\n\nApply after the patch at #6012.",
+    "body": "Attachment [trac_6022.patch](tarball://root/attachments/some-uuid/ticket6022/trac_6022.patch) by rbeezer created at 2009-05-12 05:02:25\n\nLooks real good - this greatly expands the possibilities for latex packages that can be employed, and the resulting possibilities for latex output.  Works as advertised - tested with various combinations of %latex, %pdflatex, missing dvipng, missing convert, and various types of input.  Passes tests on sage/misc/latex.py.\n\nApply after the patch at #6012.",
     "created_at": "2009-05-12T05:02:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6022",
     "type": "issue_comment",
@@ -133,7 +133,7 @@ archive/issue_comments_047964.json:
 }
 ```
 
-Attachment
+Attachment [trac_6022.patch](tarball://root/attachments/some-uuid/ticket6022/trac_6022.patch) by rbeezer created at 2009-05-12 05:02:25
 
 Looks real good - this greatly expands the possibilities for latex packages that can be employed, and the resulting possibilities for latex output.  Works as advertised - tested with various combinations of %latex, %pdflatex, missing dvipng, missing convert, and various types of input.  Passes tests on sage/misc/latex.py.
 

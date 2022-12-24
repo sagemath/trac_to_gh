@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6719
 archive/issue_comments_055139.json:
 ```json
 {
-    "body": "Attachment\n\nPatch produced from a modified file in CVS, retrived on August 10th 2009",
+    "body": "Attachment [sysfun.lsp.patch](tarball://root/attachments/some-uuid/ticket6719/sysfun.lsp.patch) by drkirkby created at 2009-08-11 06:42:29\n\nPatch produced from a modified file in CVS, retrived on August 10th 2009",
     "created_at": "2009-08-11T06:42:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6719",
     "type": "issue_comment",
@@ -51,7 +51,7 @@ archive/issue_comments_055139.json:
 }
 ```
 
-Attachment
+Attachment [sysfun.lsp.patch](tarball://root/attachments/some-uuid/ticket6719/sysfun.lsp.patch) by drkirkby created at 2009-08-11 06:42:29
 
 Patch produced from a modified file in CVS, retrived on August 10th 2009
 

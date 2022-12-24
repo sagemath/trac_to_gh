@@ -90,7 +90,7 @@ Applies to 4.3.3
 archive/issue_comments_075557.json:
 ```json
 {
-    "body": "Attachment\n\nApplies to 4.3.3",
+    "body": "Attachment [trac_8428_rational_points_iterator.2.patch](tarball://root/attachments/some-uuid/ticket8428/trac_8428_rational_points_iterator.2.patch) by cturner created at 2010-03-04 10:25:46\n\nApplies to 4.3.3",
     "created_at": "2010-03-04T10:25:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8428",
     "type": "issue_comment",
@@ -99,7 +99,7 @@ archive/issue_comments_075557.json:
 }
 ```
 
-Attachment
+Attachment [trac_8428_rational_points_iterator.2.patch](tarball://root/attachments/some-uuid/ticket8428/trac_8428_rational_points_iterator.2.patch) by cturner created at 2010-03-04 10:25:46
 
 Applies to 4.3.3
 
@@ -128,7 +128,7 @@ Changing status from new to needs_review.
 archive/issue_comments_075559.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8428_rational_points_iterator.patch](tarball://root/attachments/some-uuid/ticket8428/trac_8428_rational_points_iterator.patch) by cturner created at 2010-03-04 10:27:11",
     "created_at": "2010-03-04T10:27:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8428",
     "type": "issue_comment",
@@ -137,7 +137,7 @@ archive/issue_comments_075559.json:
 }
 ```
 
-Attachment
+Attachment [trac_8428_rational_points_iterator.patch](tarball://root/attachments/some-uuid/ticket8428/trac_8428_rational_points_iterator.patch) by cturner created at 2010-03-04 10:27:11
 
 
 

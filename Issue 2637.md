@@ -62,7 +62,7 @@ Find an use encoding hints in the first line of a sage script.
 archive/issue_comments_018116.json:
 ```json
 {
-    "body": "Attachment\n\nI do not see a patch attached. Where is it?\n\nCheers,\n\nMichael",
+    "body": "Attachment [encoding.hg](tarball://root/attachments/some-uuid/ticket2637/encoding.hg) by mabshoff created at 2008-03-21 21:46:32\n\nI do not see a patch attached. Where is it?\n\nCheers,\n\nMichael",
     "created_at": "2008-03-21T21:46:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2637",
     "type": "issue_comment",
@@ -71,7 +71,7 @@ archive/issue_comments_018116.json:
 }
 ```
 
-Attachment
+Attachment [encoding.hg](tarball://root/attachments/some-uuid/ticket2637/encoding.hg) by mabshoff created at 2008-03-21 21:46:32
 
 I do not see a patch attached. Where is it?
 
@@ -189,7 +189,7 @@ Find and use encoding hints in the first line of a sage script. Replace the prev
 archive/issue_comments_018121.json:
 ```json
 {
-    "body": "Attachment\n\nHi Lars,\n\nafter thinking about the issue some more I changed my mind and now believe that this is a good idea. Patch looks good to me. Positive review.\n\nCheers,\n\nMichael",
+    "body": "Attachment [encoding.hg.patch](tarball://root/attachments/some-uuid/ticket2637/encoding.hg.patch) by mabshoff created at 2008-04-13 17:57:49\n\nHi Lars,\n\nafter thinking about the issue some more I changed my mind and now believe that this is a good idea. Patch looks good to me. Positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-13T17:57:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2637",
     "type": "issue_comment",
@@ -198,7 +198,7 @@ archive/issue_comments_018121.json:
 }
 ```
 
-Attachment
+Attachment [encoding.hg.patch](tarball://root/attachments/some-uuid/ticket2637/encoding.hg.patch) by mabshoff created at 2008-04-13 17:57:49
 
 Hi Lars,
 
@@ -439,7 +439,7 @@ Michael
 archive/issue_comments_018129.json:
 ```json
 {
-    "body": "Attachment\n\naddresses mabshoff's review, sort of",
+    "body": "Attachment [trac2637_fixes.patch](tarball://root/attachments/some-uuid/ticket2637/trac2637_fixes.patch) by malb created at 2008-06-24 13:41:06\n\naddresses mabshoff's review, sort of",
     "created_at": "2008-06-24T13:41:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2637",
     "type": "issue_comment",
@@ -448,7 +448,7 @@ archive/issue_comments_018129.json:
 }
 ```
 
-Attachment
+Attachment [trac2637_fixes.patch](tarball://root/attachments/some-uuid/ticket2637/trac2637_fixes.patch) by malb created at 2008-06-24 13:41:06
 
 addresses mabshoff's review, sort of
 

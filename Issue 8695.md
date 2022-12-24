@@ -289,7 +289,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_079220.json:
 ```json
 {
-    "body": "Attachment\n\n> We discussed with Florent over the phone. He will remove the inheritance from object, reupload the patch, and set a positive review on my behalf.\n\nDone !",
+    "body": "Attachment [trac_8695-uniquerep_missing__ne__-fh.patch](tarball://root/attachments/some-uuid/ticket8695/trac_8695-uniquerep_missing__ne__-fh.patch) by hivert created at 2010-04-17 20:45:09\n\n> We discussed with Florent over the phone. He will remove the inheritance from object, reupload the patch, and set a positive review on my behalf.\n\nDone !",
     "created_at": "2010-04-17T20:45:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8695",
     "type": "issue_comment",
@@ -298,7 +298,7 @@ archive/issue_comments_079220.json:
 }
 ```
 
-Attachment
+Attachment [trac_8695-uniquerep_missing__ne__-fh.patch](tarball://root/attachments/some-uuid/ticket8695/trac_8695-uniquerep_missing__ne__-fh.patch) by hivert created at 2010-04-17 20:45:09
 
 > We discussed with Florent over the phone. He will remove the inheritance from object, reupload the patch, and set a positive review on my behalf.
 

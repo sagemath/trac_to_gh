@@ -129,7 +129,7 @@ This was easy enough -- somewhere someone uses u,v instead of uu,vv.
 archive/issue_comments_012878.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me. Nice catch.",
+    "body": "Attachment [trac-1988-1989.patch](tarball://root/attachments/some-uuid/ticket1988/trac-1988-1989.patch) by mabshoff created at 2008-01-31 06:20:38\n\nLooks good to me. Nice catch.",
     "created_at": "2008-01-31T06:20:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1988",
     "type": "issue_comment",
@@ -138,7 +138,7 @@ archive/issue_comments_012878.json:
 }
 ```
 
-Attachment
+Attachment [trac-1988-1989.patch](tarball://root/attachments/some-uuid/ticket1988/trac-1988-1989.patch) by mabshoff created at 2008-01-31 06:20:38
 
 Looks good to me. Nice catch.
 

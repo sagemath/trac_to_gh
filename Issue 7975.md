@@ -59,7 +59,7 @@ Reminder to anyone who wants to deal with this: in addition to removing any actu
 archive/issue_comments_069571.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sagelib-7975-part2-DOCUMENTATION.patch](tarball://root/attachments/some-uuid/ticket7975/sagelib-7975-part2-DOCUMENTATION.patch) by was created at 2010-01-19 06:27:38",
     "created_at": "2010-01-19T06:27:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7975",
     "type": "issue_comment",
@@ -68,7 +68,7 @@ archive/issue_comments_069571.json:
 }
 ```
 
-Attachment
+Attachment [sagelib-7975-part2-DOCUMENTATION.patch](tarball://root/attachments/some-uuid/ticket7975/sagelib-7975-part2-DOCUMENTATION.patch) by was created at 2010-01-19 06:27:38
 
 
 
@@ -95,7 +95,7 @@ This is the new deps file, which is fine assuming you didn't change the deps fil
 archive/issue_comments_069573.json:
 ```json
 {
-    "body": "Attachment\n\nThis is the new spkg/install file, which is fine assuming you didn't change the install file in making the 4.3.1.rc1 release (I just took 4.3.1.rc0's install and fixed it).",
+    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket7975/deps) by was created at 2010-01-19 06:40:31\n\nThis is the new spkg/install file, which is fine assuming you didn't change the install file in making the 4.3.1.rc1 release (I just took 4.3.1.rc0's install and fixed it).",
     "created_at": "2010-01-19T06:40:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7975",
     "type": "issue_comment",
@@ -104,7 +104,7 @@ archive/issue_comments_069573.json:
 }
 ```
 
-Attachment
+Attachment [deps](tarball://root/attachments/some-uuid/ticket7975/deps) by was created at 2010-01-19 06:40:31
 
 This is the new spkg/install file, which is fine assuming you didn't change the install file in making the 4.3.1.rc1 release (I just took 4.3.1.rc0's install and fixed it).
 
@@ -115,7 +115,7 @@ This is the new spkg/install file, which is fine assuming you didn't change the 
 archive/issue_comments_069574.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [install](tarball://root/attachments/some-uuid/ticket7975/install) by was created at 2010-01-19 07:17:21",
     "created_at": "2010-01-19T07:17:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7975",
     "type": "issue_comment",
@@ -124,7 +124,7 @@ archive/issue_comments_069574.json:
 }
 ```
 
-Attachment
+Attachment [install](tarball://root/attachments/some-uuid/ticket7975/install) by was created at 2010-01-19 07:17:21
 
 
 
@@ -133,7 +133,7 @@ Attachment
 archive/issue_comments_069575.json:
 ```json
 {
-    "body": "Attachment\n\nSee http://boxen.math.washington.edu/home/wstein/patches/sagenb/sagenb-0.6.spkg for the new sagenb spkg.",
+    "body": "Attachment [sagenb-7975.patch](tarball://root/attachments/some-uuid/ticket7975/sagenb-7975.patch) by was created at 2010-01-19 07:20:24\n\nSee http://boxen.math.washington.edu/home/wstein/patches/sagenb/sagenb-0.6.spkg for the new sagenb spkg.",
     "created_at": "2010-01-19T07:20:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7975",
     "type": "issue_comment",
@@ -142,7 +142,7 @@ archive/issue_comments_069575.json:
 }
 ```
 
-Attachment
+Attachment [sagenb-7975.patch](tarball://root/attachments/some-uuid/ticket7975/sagenb-7975.patch) by was created at 2010-01-19 07:20:24
 
 See http://boxen.math.washington.edu/home/wstein/patches/sagenb/sagenb-0.6.spkg for the new sagenb spkg.
 
@@ -171,7 +171,7 @@ Changing status from new to needs_review.
 archive/issue_comments_069577.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [scripts-7975.patch](tarball://root/attachments/some-uuid/ticket7975/scripts-7975.patch) by was created at 2010-01-19 07:29:35",
     "created_at": "2010-01-19T07:29:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7975",
     "type": "issue_comment",
@@ -180,7 +180,7 @@ archive/issue_comments_069577.json:
 }
 ```
 
-Attachment
+Attachment [scripts-7975.patch](tarball://root/attachments/some-uuid/ticket7975/scripts-7975.patch) by was created at 2010-01-19 07:29:35
 
 
 

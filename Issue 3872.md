@@ -243,7 +243,7 @@ I don't have more time to investigate.
 archive/issue_comments_027603.json:
 ```json
 {
-    "body": "Attachment\n\nattachment:pynac.2.hg (and also pynac.2.2.hg, thanks to trac) has a clean version of William's bundle, plus two changesets (one trivial).\n\nI give a positive review to William's patch, someone should review mine.\n\nThere is also a new package file here:\n\nhttp://www.risc.jku.at/people/berocal/sage/pynac-0.1.spkg\n\nThe only difference is a new SPKG.txt and an environment check on top of spkg-install.\n\nAs the ticket description states, these should go in after my changes are reviewed. I'll open new tickets for further additions to the pynac interface.",
+    "body": "Attachment [pynac.2.hg](tarball://root/attachments/some-uuid/ticket3872/pynac.2.hg) by burcin created at 2008-09-19 11:17:24\n\nattachment:pynac.2.hg (and also pynac.2.2.hg, thanks to trac) has a clean version of William's bundle, plus two changesets (one trivial).\n\nI give a positive review to William's patch, someone should review mine.\n\nThere is also a new package file here:\n\nhttp://www.risc.jku.at/people/berocal/sage/pynac-0.1.spkg\n\nThe only difference is a new SPKG.txt and an environment check on top of spkg-install.\n\nAs the ticket description states, these should go in after my changes are reviewed. I'll open new tickets for further additions to the pynac interface.",
     "created_at": "2008-09-19T11:17:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3872",
     "type": "issue_comment",
@@ -252,7 +252,7 @@ archive/issue_comments_027603.json:
 }
 ```
 
-Attachment
+Attachment [pynac.2.hg](tarball://root/attachments/some-uuid/ticket3872/pynac.2.hg) by burcin created at 2008-09-19 11:17:24
 
 attachment:pynac.2.hg (and also pynac.2.2.hg, thanks to trac) has a clean version of William's bundle, plus two changesets (one trivial).
 
@@ -453,7 +453,7 @@ Michael
 archive/issue_comments_027610.json:
 ```json
 {
-    "body": "Attachment\n\npynac bundle against 3.1.3.alpha2",
+    "body": "Attachment [pynac_3.1.3.alpha2.hg](tarball://root/attachments/some-uuid/ticket3872/pynac_3.1.3.alpha2.hg) by burcin created at 2008-10-01 17:29:15\n\npynac bundle against 3.1.3.alpha2",
     "created_at": "2008-10-01T17:29:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3872",
     "type": "issue_comment",
@@ -462,7 +462,7 @@ archive/issue_comments_027610.json:
 }
 ```
 
-Attachment
+Attachment [pynac_3.1.3.alpha2.hg](tarball://root/attachments/some-uuid/ticket3872/pynac_3.1.3.alpha2.hg) by burcin created at 2008-10-01 17:29:15
 
 pynac bundle against 3.1.3.alpha2
 

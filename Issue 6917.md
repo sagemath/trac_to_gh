@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6917
 archive/issue_comments_057114.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [mink_sum.patch](tarball://root/attachments/some-uuid/ticket6917/mink_sum.patch) by sbarthelemy created at 2009-09-10 12:49:17",
     "created_at": "2009-09-10T12:49:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6917",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_057114.json:
 }
 ```
 
-Attachment
+Attachment [mink_sum.patch](tarball://root/attachments/some-uuid/ticket6917/mink_sum.patch) by sbarthelemy created at 2009-09-10 12:49:17
 
 
 

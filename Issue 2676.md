@@ -53,7 +53,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2676
 archive/issue_comments_018411.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2676-equitable-flatten.patch](tarball://root/attachments/some-uuid/ticket2676/2676-equitable-flatten.patch) by rlm created at 2008-03-26 17:43:42",
     "created_at": "2008-03-26T17:43:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2676",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_018411.json:
 }
 ```
 
-Attachment
+Attachment [2676-equitable-flatten.patch](tarball://root/attachments/some-uuid/ticket2676/2676-equitable-flatten.patch) by rlm created at 2008-03-26 17:43:42
 
 
 
@@ -71,7 +71,7 @@ Attachment
 archive/issue_comments_018412.json:
 ```json
 {
-    "body": "Attachment\n\nApply this as well. Fixes a related problem in the next function down. Also reported by Chris Godsil.",
+    "body": "Attachment [2676-equitable-refinement.patch](tarball://root/attachments/some-uuid/ticket2676/2676-equitable-refinement.patch) by rlm created at 2008-03-26 19:57:47\n\nApply this as well. Fixes a related problem in the next function down. Also reported by Chris Godsil.",
     "created_at": "2008-03-26T19:57:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2676",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_018412.json:
 }
 ```
 
-Attachment
+Attachment [2676-equitable-refinement.patch](tarball://root/attachments/some-uuid/ticket2676/2676-equitable-refinement.patch) by rlm created at 2008-03-26 19:57:47
 
 Apply this as well. Fixes a related problem in the next function down. Also reported by Chris Godsil.
 
@@ -91,7 +91,7 @@ Apply this as well. Fixes a related problem in the next function down. Also repo
 archive/issue_comments_018413.json:
 ```json
 {
-    "body": "Attachment\n\nOops. Apply this one too. Fixes the original problem in the other function.",
+    "body": "Attachment [2676-equitable-refinement-flatten.patch](tarball://root/attachments/some-uuid/ticket2676/2676-equitable-refinement-flatten.patch) by rlm created at 2008-03-26 20:08:14\n\nOops. Apply this one too. Fixes the original problem in the other function.",
     "created_at": "2008-03-26T20:08:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2676",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_018413.json:
 }
 ```
 
-Attachment
+Attachment [2676-equitable-refinement-flatten.patch](tarball://root/attachments/some-uuid/ticket2676/2676-equitable-refinement-flatten.patch) by rlm created at 2008-03-26 20:08:14
 
 Oops. Apply this one too. Fixes the original problem in the other function.
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8333
 archive/issue_comments_074208.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8333_parent_init.patch](tarball://root/attachments/some-uuid/ticket8333/8333_parent_init.patch) by roed created at 2010-02-23 15:10:25",
     "created_at": "2010-02-23T15:10:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8333",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_074208.json:
 }
 ```
 
-Attachment
+Attachment [8333_parent_init.patch](tarball://root/attachments/some-uuid/ticket8333/8333_parent_init.patch) by roed created at 2010-02-23 15:10:25
 
 
 
@@ -49,7 +49,7 @@ Attachment
 archive/issue_comments_074209.json:
 ```json
 {
-    "body": "Attachment\n\nThe two patches can be applied in either order.",
+    "body": "Attachment [8333_finite_fields_to_new_coercion.patch](tarball://root/attachments/some-uuid/ticket8333/8333_finite_fields_to_new_coercion.patch) by roed created at 2010-02-23 17:37:44\n\nThe two patches can be applied in either order.",
     "created_at": "2010-02-23T17:37:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8333",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_074209.json:
 }
 ```
 
-Attachment
+Attachment [8333_finite_fields_to_new_coercion.patch](tarball://root/attachments/some-uuid/ticket8333/8333_finite_fields_to_new_coercion.patch) by roed created at 2010-02-23 17:37:44
 
 The two patches can be applied in either order.
 
@@ -363,7 +363,7 @@ Rebased against 4.5.3
 archive/issue_comments_074221.json:
 ```json
 {
-    "body": "Attachment\n\nOops.  Try this one.",
+    "body": "Attachment [8333_finite_fields_to_new_coercion.2.patch](tarball://root/attachments/some-uuid/ticket8333/8333_finite_fields_to_new_coercion.2.patch) by roed created at 2010-09-20 05:37:03\n\nOops.  Try this one.",
     "created_at": "2010-09-20T05:37:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8333",
     "type": "issue_comment",
@@ -372,7 +372,7 @@ archive/issue_comments_074221.json:
 }
 ```
 
-Attachment
+Attachment [8333_finite_fields_to_new_coercion.2.patch](tarball://root/attachments/some-uuid/ticket8333/8333_finite_fields_to_new_coercion.2.patch) by roed created at 2010-09-20 05:37:03
 
 Oops.  Try this one.
 
@@ -461,7 +461,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_074226.json:
 ```json
 {
-    "body": "Attachment\n\nFolded patch. Apply only this patch. Applies to 4.6.alpha1 + trac_7883-ideals-folded.patch.",
+    "body": "Attachment [trac_8333-finite_fields_coercion_folded.patch](tarball://root/attachments/some-uuid/ticket8333/trac_8333-finite_fields_coercion_folded.patch) by davidloeffler created at 2010-09-24 14:26:31\n\nFolded patch. Apply only this patch. Applies to 4.6.alpha1 + trac_7883-ideals-folded.patch.",
     "created_at": "2010-09-24T14:26:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8333",
     "type": "issue_comment",
@@ -470,7 +470,7 @@ archive/issue_comments_074226.json:
 }
 ```
 
-Attachment
+Attachment [trac_8333-finite_fields_coercion_folded.patch](tarball://root/attachments/some-uuid/ticket8333/trac_8333-finite_fields_coercion_folded.patch) by davidloeffler created at 2010-09-24 14:26:31
 
 Folded patch. Apply only this patch. Applies to 4.6.alpha1 + trac_7883-ideals-folded.patch.
 

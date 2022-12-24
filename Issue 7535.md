@@ -159,7 +159,7 @@ Makes all remaining returns of exceptions into raising.
 archive/issue_comments_063910.json:
 ```json
 {
-    "body": "Attachment\n\nI'm not sure what you mean by \"remaining\", since there is no patch at #7532 (or elsewhere?) fixing any other instances of this.  I'm attaching a patch dealing with two more of these, leaving, I think, just the one in rings.pyx.  See #7532 for that one.\n\nPositive review for timdumol's patch, so if mine is okay, this whole ticket can get a positive review.",
+    "body": "Attachment [trac_7535-errors-raise.patch](tarball://root/attachments/some-uuid/ticket7535/trac_7535-errors-raise.patch) by jhpalmieri created at 2010-01-19 00:44:35\n\nI'm not sure what you mean by \"remaining\", since there is no patch at #7532 (or elsewhere?) fixing any other instances of this.  I'm attaching a patch dealing with two more of these, leaving, I think, just the one in rings.pyx.  See #7532 for that one.\n\nPositive review for timdumol's patch, so if mine is okay, this whole ticket can get a positive review.",
     "created_at": "2010-01-19T00:44:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7535",
     "type": "issue_comment",
@@ -168,7 +168,7 @@ archive/issue_comments_063910.json:
 }
 ```
 
-Attachment
+Attachment [trac_7535-errors-raise.patch](tarball://root/attachments/some-uuid/ticket7535/trac_7535-errors-raise.patch) by jhpalmieri created at 2010-01-19 00:44:35
 
 I'm not sure what you mean by "remaining", since there is no patch at #7532 (or elsewhere?) fixing any other instances of this.  I'm attaching a patch dealing with two more of these, leaving, I think, just the one in rings.pyx.  See #7532 for that one.
 
@@ -199,7 +199,7 @@ apply on top of the other patch
 archive/issue_comments_063912.json:
 ```json
 {
-    "body": "Attachment\n\nI am about to add a patch to #7532 which fixes (for me) the remaining issue in schemes/elliptic_curves.",
+    "body": "Attachment [trac_7535-part2.patch](tarball://root/attachments/some-uuid/ticket7535/trac_7535-part2.patch) by cremona created at 2010-01-19 12:43:09\n\nI am about to add a patch to #7532 which fixes (for me) the remaining issue in schemes/elliptic_curves.",
     "created_at": "2010-01-19T12:43:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7535",
     "type": "issue_comment",
@@ -208,7 +208,7 @@ archive/issue_comments_063912.json:
 }
 ```
 
-Attachment
+Attachment [trac_7535-part2.patch](tarball://root/attachments/some-uuid/ticket7535/trac_7535-part2.patch) by cremona created at 2010-01-19 12:43:09
 
 I am about to add a patch to #7532 which fixes (for me) the remaining issue in schemes/elliptic_curves.
 

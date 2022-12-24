@@ -67,7 +67,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_071699.json:
 ```json
 {
-    "body": "Attachment\n\nI applied the patch successfully to 4.3.2 with the spkg and patches at #8184 already applied, with no problem.\n\nTesting the whole library (without -long):  all test pass.   Positive review!",
+    "body": "Attachment [trac_8155.patch](tarball://root/attachments/some-uuid/ticket8155/trac_8155.patch) by cremona created at 2010-02-06 17:27:19\n\nI applied the patch successfully to 4.3.2 with the spkg and patches at #8184 already applied, with no problem.\n\nTesting the whole library (without -long):  all test pass.   Positive review!",
     "created_at": "2010-02-06T17:27:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8155",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_071699.json:
 }
 ```
 
-Attachment
+Attachment [trac_8155.patch](tarball://root/attachments/some-uuid/ticket8155/trac_8155.patch) by cremona created at 2010-02-06 17:27:19
 
 I applied the patch successfully to 4.3.2 with the spkg and patches at #8184 already applied, with no problem.
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8365
 archive/issue_comments_074769.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8365_PolynomialRings_doc.patch](tarball://root/attachments/some-uuid/ticket8365/trac_8365_PolynomialRings_doc.patch) by mmezzarobba created at 2010-02-25 16:30:16",
     "created_at": "2010-02-25T16:30:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8365",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_074769.json:
 }
 ```
 
-Attachment
+Attachment [trac_8365_PolynomialRings_doc.patch](tarball://root/attachments/some-uuid/ticket8365/trac_8365_PolynomialRings_doc.patch) by mmezzarobba created at 2010-02-25 16:30:16
 
 
 
@@ -85,7 +85,7 @@ apply on top of previous
 archive/issue_comments_074772.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch [trac_8365_PolynomialRings_doc.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8365/trac_8365_PolynomialRings_doc.patch) does some much needed re-organization of the chapter on polynomial rings. It re-organizes the stuff relating to infinite polynomial rings into a new section, but doesn't provide a link to get to that new section. The patch [trac_8365-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8365/trac_8365-reviewer.patch) provides such a link. Only the latter patch needs review by anyone but me. If it gets a positive review, then the whole ticket gets a positive review.",
+    "body": "Attachment [trac_8365-reviewer.patch](tarball://root/attachments/some-uuid/ticket8365/trac_8365-reviewer.patch) by mvngu created at 2010-02-26 00:25:15\n\nThe patch [trac_8365_PolynomialRings_doc.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8365/trac_8365_PolynomialRings_doc.patch) does some much needed re-organization of the chapter on polynomial rings. It re-organizes the stuff relating to infinite polynomial rings into a new section, but doesn't provide a link to get to that new section. The patch [trac_8365-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8365/trac_8365-reviewer.patch) provides such a link. Only the latter patch needs review by anyone but me. If it gets a positive review, then the whole ticket gets a positive review.",
     "created_at": "2010-02-26T00:25:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8365",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_074772.json:
 }
 ```
 
-Attachment
+Attachment [trac_8365-reviewer.patch](tarball://root/attachments/some-uuid/ticket8365/trac_8365-reviewer.patch) by mvngu created at 2010-02-26 00:25:15
 
 The patch [trac_8365_PolynomialRings_doc.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8365/trac_8365_PolynomialRings_doc.patch) does some much needed re-organization of the chapter on polynomial rings. It re-organizes the stuff relating to infinite polynomial rings into a new section, but doesn't provide a link to get to that new section. The patch [trac_8365-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8365/trac_8365-reviewer.patch) provides such a link. Only the latter patch needs review by anyone but me. If it gets a positive review, then the whole ticket gets a positive review.
 

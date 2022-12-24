@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/699
 archive/issue_comments_003662.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [winding_elem.hg](tarball://root/attachments/some-uuid/ticket699/winding_elem.hg) by was created at 2007-09-20 00:00:04",
     "created_at": "2007-09-20T00:00:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/699",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_003662.json:
 }
 ```
 
-Attachment
+Attachment [winding_elem.hg](tarball://root/attachments/some-uuid/ticket699/winding_elem.hg) by was created at 2007-09-20 00:00:04
 
 
 

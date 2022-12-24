@@ -192,7 +192,7 @@ Dave
 archive/issue_comments_088766.json:
 ```json
 {
-    "body": "Attachment\n\nthe file SAGE_ROOT/spkg/standard/deps",
+    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket9351/deps) by jhpalmieri created at 2010-07-03 17:39:43\n\nthe file SAGE_ROOT/spkg/standard/deps",
     "created_at": "2010-07-03T17:39:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9351",
     "type": "issue_comment",
@@ -201,7 +201,7 @@ archive/issue_comments_088766.json:
 }
 ```
 
-Attachment
+Attachment [deps](tarball://root/attachments/some-uuid/ticket9351/deps) by jhpalmieri created at 2010-07-03 17:39:43
 
 the file SAGE_ROOT/spkg/standard/deps
 
@@ -230,7 +230,7 @@ diff between original deps and new one
 archive/issue_comments_088768.json:
 ```json
 {
-    "body": "Attachment\n\nI'll say again:  various calls in Sage end up calling gap in the background -- not explicitly, but in the background.  I haven't looked at the tests in sagetex to know if they use any group theory, for example, but if they do, they could very well try to use gap.  I think other components of Sage use gap as well.\n\n```\n## Dependencies\n\nTo install, nothing more than a standard Sage install.\n```\n\nAnd a standard Sage install includes gap.  That is, there are plenty of doctests in Sage which would fail if gap were not installed.  I don't know what would happen for the tests in sagetex if gap were not installed.\n\nWe could list both Sage and gap as dependencies for sagetex, and also put in a comment about it if you think that's necessary.  What I would really like to guarantee is that all of the other Sage spkgs have been installed before sagetex is, in order to guarantee a \"standard Sage install\", but I don't know how to do that.\n\nI'm attaching new versions.",
+    "body": "Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket9351/deps.diff) by jhpalmieri created at 2010-07-03 17:40:46\n\nI'll say again:  various calls in Sage end up calling gap in the background -- not explicitly, but in the background.  I haven't looked at the tests in sagetex to know if they use any group theory, for example, but if they do, they could very well try to use gap.  I think other components of Sage use gap as well.\n\n```\n## Dependencies\n\nTo install, nothing more than a standard Sage install.\n```\n\nAnd a standard Sage install includes gap.  That is, there are plenty of doctests in Sage which would fail if gap were not installed.  I don't know what would happen for the tests in sagetex if gap were not installed.\n\nWe could list both Sage and gap as dependencies for sagetex, and also put in a comment about it if you think that's necessary.  What I would really like to guarantee is that all of the other Sage spkgs have been installed before sagetex is, in order to guarantee a \"standard Sage install\", but I don't know how to do that.\n\nI'm attaching new versions.",
     "created_at": "2010-07-03T17:40:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9351",
     "type": "issue_comment",
@@ -239,7 +239,7 @@ archive/issue_comments_088768.json:
 }
 ```
 
-Attachment
+Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket9351/deps.diff) by jhpalmieri created at 2010-07-03 17:40:46
 
 I'll say again:  various calls in Sage end up calling gap in the background -- not explicitly, but in the background.  I haven't looked at the tests in sagetex to know if they use any group theory, for example, but if they do, they could very well try to use gap.  I think other components of Sage use gap as well.
 

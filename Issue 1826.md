@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1826
 archive/issue_comments_011563.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [update-stdsage-cdefs.diff](tarball://root/attachments/some-uuid/ticket1826/update-stdsage-cdefs.diff) by robertwb created at 2008-01-18 05:26:09",
     "created_at": "2008-01-18T05:26:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1826",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_011563.json:
 }
 ```
 
-Attachment
+Attachment [update-stdsage-cdefs.diff](tarball://root/attachments/some-uuid/ticket1826/update-stdsage-cdefs.diff) by robertwb created at 2008-01-18 05:26:09
 
 
 
@@ -67,7 +67,7 @@ While we're at it...
 archive/issue_comments_011565.json:
 ```json
 {
-    "body": "Attachment\n\nPS - testall passes with these two patches",
+    "body": "Attachment [more_cdefs.patch](tarball://root/attachments/some-uuid/ticket1826/more_cdefs.patch) by rlm created at 2008-01-19 23:43:13\n\nPS - testall passes with these two patches",
     "created_at": "2008-01-19T23:43:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1826",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_011565.json:
 }
 ```
 
-Attachment
+Attachment [more_cdefs.patch](tarball://root/attachments/some-uuid/ticket1826/more_cdefs.patch) by rlm created at 2008-01-19 23:43:13
 
 PS - testall passes with these two patches
 

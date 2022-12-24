@@ -98,7 +98,7 @@ Changing component from build to pbuild.
 archive/issue_comments_021377.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3097.patch](tarball://root/attachments/some-uuid/ticket3097/trac_3097.patch) by gfurnish created at 2008-05-04 11:55:06",
     "created_at": "2008-05-04T11:55:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3097",
     "type": "issue_comment",
@@ -107,7 +107,7 @@ archive/issue_comments_021377.json:
 }
 ```
 
-Attachment
+Attachment [trac_3097.patch](tarball://root/attachments/some-uuid/ticket3097/trac_3097.patch) by gfurnish created at 2008-05-04 11:55:06
 
 
 
@@ -116,7 +116,7 @@ Attachment
 archive/issue_comments_021378.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3097_scripts.patch](tarball://root/attachments/some-uuid/ticket3097/trac_3097_scripts.patch) by gfurnish created at 2008-05-04 11:55:40",
     "created_at": "2008-05-04T11:55:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3097",
     "type": "issue_comment",
@@ -125,7 +125,7 @@ archive/issue_comments_021378.json:
 }
 ```
 
-Attachment
+Attachment [trac_3097_scripts.patch](tarball://root/attachments/some-uuid/ticket3097/trac_3097_scripts.patch) by gfurnish created at 2008-05-04 11:55:40
 
 
 
@@ -218,7 +218,7 @@ I haven't been able to test this set of patches yet but from speaking with gfurn
 archive/issue_comments_021383.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3097-hgignore.patch](tarball://root/attachments/some-uuid/ticket3097/trac_3097-hgignore.patch) by mabshoff created at 2008-05-23 02:37:23",
     "created_at": "2008-05-23T02:37:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3097",
     "type": "issue_comment",
@@ -227,7 +227,7 @@ archive/issue_comments_021383.json:
 }
 ```
 
-Attachment
+Attachment [trac_3097-hgignore.patch](tarball://root/attachments/some-uuid/ticket3097/trac_3097-hgignore.patch) by mabshoff created at 2008-05-23 02:37:23
 
 
 
@@ -236,7 +236,7 @@ Attachment
 archive/issue_comments_021384.json:
 ```json
 {
-    "body": "Attachment\n\nthis  is a slightly updated version of the original patch by Gary",
+    "body": "Attachment [trac_3097_extcode.patch](tarball://root/attachments/some-uuid/ticket3097/trac_3097_extcode.patch) by mabshoff created at 2008-05-23 02:48:46\n\nthis  is a slightly updated version of the original patch by Gary",
     "created_at": "2008-05-23T02:48:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3097",
     "type": "issue_comment",
@@ -245,7 +245,7 @@ archive/issue_comments_021384.json:
 }
 ```
 
-Attachment
+Attachment [trac_3097_extcode.patch](tarball://root/attachments/some-uuid/ticket3097/trac_3097_extcode.patch) by mabshoff created at 2008-05-23 02:48:46
 
 this  is a slightly updated version of the original patch by Gary
 
@@ -256,7 +256,7 @@ this  is a slightly updated version of the original patch by Gary
 archive/issue_comments_021385.json:
 ```json
 {
-    "body": "Attachment\n\noops - this ought to fix the issue",
+    "body": "Attachment [trac_3097-sdist-fix-part2.patch](tarball://root/attachments/some-uuid/ticket3097/trac_3097-sdist-fix-part2.patch) by mabshoff created at 2008-05-23 05:38:03\n\noops - this ought to fix the issue",
     "created_at": "2008-05-23T05:38:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3097",
     "type": "issue_comment",
@@ -265,7 +265,7 @@ archive/issue_comments_021385.json:
 }
 ```
 
-Attachment
+Attachment [trac_3097-sdist-fix-part2.patch](tarball://root/attachments/some-uuid/ticket3097/trac_3097-sdist-fix-part2.patch) by mabshoff created at 2008-05-23 05:38:03
 
 oops - this ought to fix the issue
 

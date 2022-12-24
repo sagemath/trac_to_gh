@@ -207,7 +207,7 @@ Negation bug at #5947
 archive/issue_comments_047056.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5948-coleman-reduce-forms.patch](tarball://root/attachments/some-uuid/ticket5948/5948-coleman-reduce-forms.patch) by robertwb created at 2009-05-20 07:43:06",
     "created_at": "2009-05-20T07:43:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5948",
     "type": "issue_comment",
@@ -216,7 +216,7 @@ archive/issue_comments_047056.json:
 }
 ```
 
-Attachment
+Attachment [5948-coleman-reduce-forms.patch](tarball://root/attachments/some-uuid/ticket5948/5948-coleman-reduce-forms.patch) by robertwb created at 2009-05-20 07:43:06
 
 
 
@@ -345,7 +345,7 @@ This is unrelated to the new symbolics, and the doctest should be changed. (Here
 archive/issue_comments_047062.json:
 ```json
 {
-    "body": "Attachment\n\nHere's a new patch adding the one-line fix to the doctest.",
+    "body": "Attachment [5948-v2.patch](tarball://root/attachments/some-uuid/ticket5948/5948-v2.patch) by kedlaya created at 2009-05-22 20:48:44\n\nHere's a new patch adding the one-line fix to the doctest.",
     "created_at": "2009-05-22T20:48:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5948",
     "type": "issue_comment",
@@ -354,7 +354,7 @@ archive/issue_comments_047062.json:
 }
 ```
 
-Attachment
+Attachment [5948-v2.patch](tarball://root/attachments/some-uuid/ticket5948/5948-v2.patch) by kedlaya created at 2009-05-22 20:48:44
 
 Here's a new patch adding the one-line fix to the doctest.
 

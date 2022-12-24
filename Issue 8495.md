@@ -380,7 +380,7 @@ I also realised that the documentation for _sage_ won't get into Sage's HTML doc
 archive/issue_comments_076629.json:
 ```json
 {
-    "body": "Attachment\n\nWhat's changed since burcin's review",
+    "body": "Attachment [diff_with_previous_review.patch](tarball://root/attachments/some-uuid/ticket8495/diff_with_previous_review.patch) by flawrence created at 2010-11-03 04:50:02\n\nWhat's changed since burcin's review",
     "created_at": "2010-11-03T04:50:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
@@ -389,7 +389,7 @@ archive/issue_comments_076629.json:
 }
 ```
 
-Attachment
+Attachment [diff_with_previous_review.patch](tarball://root/attachments/some-uuid/ticket8495/diff_with_previous_review.patch) by flawrence created at 2010-11-03 04:50:02
 
 What's changed since burcin's review
 
@@ -975,7 +975,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_076650.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8495-rewrite-_sage_.patch](tarball://root/attachments/some-uuid/ticket8495/trac_8495-rewrite-_sage_.patch) by flawrence created at 2011-03-23 14:15:20",
     "created_at": "2011-03-23T14:15:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
@@ -984,7 +984,7 @@ archive/issue_comments_076650.json:
 }
 ```
 
-Attachment
+Attachment [trac_8495-rewrite-_sage_.patch](tarball://root/attachments/some-uuid/ticket8495/trac_8495-rewrite-_sage_.patch) by flawrence created at 2011-03-23 14:15:20
 
 
 
@@ -993,7 +993,7 @@ Attachment
 archive/issue_comments_076651.json:
 ```json
 {
-    "body": "Attachment\n\nI made some minor formatting changes to the documentation to avoid the above problems.  The documentation now builds without errors and looks OK on my machine.\n\nI forgot to tick the 'replace attachment' box; please disregard the older (non \".2.\") patch.",
+    "body": "Attachment [trac_8495-rewrite-_sage_.2.patch](tarball://root/attachments/some-uuid/ticket8495/trac_8495-rewrite-_sage_.2.patch) by flawrence created at 2011-03-23 14:27:23\n\nI made some minor formatting changes to the documentation to avoid the above problems.  The documentation now builds without errors and looks OK on my machine.\n\nI forgot to tick the 'replace attachment' box; please disregard the older (non \".2.\") patch.",
     "created_at": "2011-03-23T14:27:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
@@ -1002,7 +1002,7 @@ archive/issue_comments_076651.json:
 }
 ```
 
-Attachment
+Attachment [trac_8495-rewrite-_sage_.2.patch](tarball://root/attachments/some-uuid/ticket8495/trac_8495-rewrite-_sage_.2.patch) by flawrence created at 2011-03-23 14:27:23
 
 I made some minor formatting changes to the documentation to avoid the above problems.  The documentation now builds without errors and looks OK on my machine.
 

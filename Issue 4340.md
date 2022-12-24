@@ -131,7 +131,7 @@ I'd actually change the name of F62.
 archive/issue_comments_031838.json:
 ```json
 {
-    "body": "Attachment\n\nNew patch with the name changed.",
+    "body": "Attachment [trac-4340.patch](tarball://root/attachments/some-uuid/ticket4340/trac-4340.patch) by craigcitro created at 2008-10-30 21:43:17\n\nNew patch with the name changed.",
     "created_at": "2008-10-30T21:43:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4340",
     "type": "issue_comment",
@@ -140,7 +140,7 @@ archive/issue_comments_031838.json:
 }
 ```
 
-Attachment
+Attachment [trac-4340.patch](tarball://root/attachments/some-uuid/ticket4340/trac-4340.patch) by craigcitro created at 2008-10-30 21:43:17
 
 New patch with the name changed.
 
@@ -209,7 +209,7 @@ Michael
 archive/issue_comments_031841.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-4340-pt2.patch](tarball://root/attachments/some-uuid/ticket4340/trac-4340-pt2.patch) by craigcitro created at 2008-10-31 03:23:44",
     "created_at": "2008-10-31T03:23:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4340",
     "type": "issue_comment",
@@ -218,7 +218,7 @@ archive/issue_comments_031841.json:
 }
 ```
 
-Attachment
+Attachment [trac-4340-pt2.patch](tarball://root/attachments/some-uuid/ticket4340/trac-4340-pt2.patch) by craigcitro created at 2008-10-31 03:23:44
 
 
 

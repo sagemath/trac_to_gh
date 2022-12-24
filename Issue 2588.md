@@ -77,7 +77,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2588
 archive/issue_comments_017711.json:
 ```json
 {
-    "body": "Attachment\n\nReview:  this looks like an excellent job with a lot of useful explanations and examples.  I successfully applied the patch to 2.10.4.rc0.  Testing all files in sage/schemes/hyperelliptic/ resulted in one error:\n\n```\n**********************************************************************\nFile \"jacobian_morphism.py\", line 382:\n    sage: print latex(Q + Q)\nExpected:\n    \\left(x^{2} + 5x + 1, y + 3\\alpha x + 6\\alpha + 2\\right) # known failure (trac #2586)\nGot:\n    \\left(x^{2} + 5x + 1, y + 3\\alphax + 6\\alpha + 2\\right)\n**********************************************************************\n```\n",
+    "body": "Attachment [2588-ncalexan-jacobian-morphism1.patch](tarball://root/attachments/some-uuid/ticket2588/2588-ncalexan-jacobian-morphism1.patch) by cremona created at 2008-03-18 21:39:59\n\nReview:  this looks like an excellent job with a lot of useful explanations and examples.  I successfully applied the patch to 2.10.4.rc0.  Testing all files in sage/schemes/hyperelliptic/ resulted in one error:\n\n```\n**********************************************************************\nFile \"jacobian_morphism.py\", line 382:\n    sage: print latex(Q + Q)\nExpected:\n    \\left(x^{2} + 5x + 1, y + 3\\alpha x + 6\\alpha + 2\\right) # known failure (trac #2586)\nGot:\n    \\left(x^{2} + 5x + 1, y + 3\\alphax + 6\\alpha + 2\\right)\n**********************************************************************\n```\n",
     "created_at": "2008-03-18T21:39:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2588",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_017711.json:
 }
 ```
 
-Attachment
+Attachment [2588-ncalexan-jacobian-morphism1.patch](tarball://root/attachments/some-uuid/ticket2588/2588-ncalexan-jacobian-morphism1.patch) by cremona created at 2008-03-18 21:39:59
 
 Review:  this looks like an excellent job with a lot of useful explanations and examples.  I successfully applied the patch to 2.10.4.rc0.  Testing all files in sage/schemes/hyperelliptic/ resulted in one error:
 
@@ -239,7 +239,7 @@ Resolution: fixed
 archive/issue_comments_017718.json:
 ```json
 {
-    "body": "Attachment\n\nthis patch actually fixes the stupid mistake I introduces in the changed doctest",
+    "body": "Attachment [trac_2588_fix-doctest.patch](tarball://root/attachments/some-uuid/ticket2588/trac_2588_fix-doctest.patch) by mabshoff created at 2008-03-20 02:01:55\n\nthis patch actually fixes the stupid mistake I introduces in the changed doctest",
     "created_at": "2008-03-20T02:01:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2588",
     "type": "issue_comment",
@@ -248,6 +248,6 @@ archive/issue_comments_017718.json:
 }
 ```
 
-Attachment
+Attachment [trac_2588_fix-doctest.patch](tarball://root/attachments/some-uuid/ticket2588/trac_2588_fix-doctest.patch) by mabshoff created at 2008-03-20 02:01:55
 
 this patch actually fixes the stupid mistake I introduces in the changed doctest

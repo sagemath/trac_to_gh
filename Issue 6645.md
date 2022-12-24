@@ -103,7 +103,7 @@ Apply to scripts repository.
 archive/issue_comments_054492.json:
 ```json
 {
-    "body": "Attachment\n\nOn the failed tests:  The attached patch may help.  [os.path.realpath()](http://docs.python.org/library/os.path.html#os.path.realpath) expands all symbolic links.\n\nShould `sage-bdist` set `SAGE_ROOT=\".....\"` in `SAGE_ROOT/sage`?  **Lots** of tests fail, if `SAGE_ROOT` points to the original source distribution, at least for me.\n\nOn rebuilding the docs:  Is it enough to remove just the `rm -rf` lines?",
+    "body": "Attachment [trac_6645-scripts_doctest.patch](tarball://root/attachments/some-uuid/ticket6645/trac_6645-scripts_doctest.patch) by mpatel created at 2009-07-28 14:07:38\n\nOn the failed tests:  The attached patch may help.  [os.path.realpath()](http://docs.python.org/library/os.path.html#os.path.realpath) expands all symbolic links.\n\nShould `sage-bdist` set `SAGE_ROOT=\".....\"` in `SAGE_ROOT/sage`?  **Lots** of tests fail, if `SAGE_ROOT` points to the original source distribution, at least for me.\n\nOn rebuilding the docs:  Is it enough to remove just the `rm -rf` lines?",
     "created_at": "2009-07-28T14:07:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6645",
     "type": "issue_comment",
@@ -112,7 +112,7 @@ archive/issue_comments_054492.json:
 }
 ```
 
-Attachment
+Attachment [trac_6645-scripts_doctest.patch](tarball://root/attachments/some-uuid/ticket6645/trac_6645-scripts_doctest.patch) by mpatel created at 2009-07-28 14:07:38
 
 On the failed tests:  The attached patch may help.  [os.path.realpath()](http://docs.python.org/library/os.path.html#os.path.realpath) expands all symbolic links.
 
@@ -213,7 +213,7 @@ Non-Mercurial patch for SAGE_ROOT/spkg/install
 archive/issue_comments_054496.json:
 ```json
 {
-    "body": "Attachment\n\nTo apply the new **non-Mercurial** patch, save it to `SAGE_ROOT/spkg`.  In that directory, run `patch < trac_6645-spkg_install.patch`.\n\nBoth patches together appear to solve the problems described in this ticket's description, at least for me.  But let me know, if they're not enough.\n\nWhy were the `rm -rf` lines first added to `spkg/install`?",
+    "body": "Attachment [trac_6645-spkg_install.patch](tarball://root/attachments/some-uuid/ticket6645/trac_6645-spkg_install.patch) by mpatel created at 2009-08-07 23:09:02\n\nTo apply the new **non-Mercurial** patch, save it to `SAGE_ROOT/spkg`.  In that directory, run `patch < trac_6645-spkg_install.patch`.\n\nBoth patches together appear to solve the problems described in this ticket's description, at least for me.  But let me know, if they're not enough.\n\nWhy were the `rm -rf` lines first added to `spkg/install`?",
     "created_at": "2009-08-07T23:09:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6645",
     "type": "issue_comment",
@@ -222,7 +222,7 @@ archive/issue_comments_054496.json:
 }
 ```
 
-Attachment
+Attachment [trac_6645-spkg_install.patch](tarball://root/attachments/some-uuid/ticket6645/trac_6645-spkg_install.patch) by mpatel created at 2009-08-07 23:09:02
 
 To apply the new **non-Mercurial** patch, save it to `SAGE_ROOT/spkg`.  In that directory, run `patch < trac_6645-spkg_install.patch`.
 

@@ -230,7 +230,7 @@ diff -r fd89fee664d8 -r 82f9583a45ee sage/interfaces/cleaner.py
 archive/issue_comments_048957.json:
 ```json
 {
-    "body": "Attachment\n\ncleaner.patch",
+    "body": "Attachment [12339.patch](tarball://root/attachments/some-uuid/ticket6128/12339.patch) by adavid created at 2009-06-02 05:15:07\n\ncleaner.patch",
     "created_at": "2009-06-02T05:15:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6128",
     "type": "issue_comment",
@@ -239,7 +239,7 @@ archive/issue_comments_048957.json:
 }
 ```
 
-Attachment
+Attachment [12339.patch](tarball://root/attachments/some-uuid/ticket6128/12339.patch) by adavid created at 2009-06-02 05:15:07
 
 cleaner.patch
 
@@ -250,7 +250,7 @@ cleaner.patch
 archive/issue_comments_048958.json:
 ```json
 {
-    "body": "Attachment\n\nPlease ignore 12339.patch. Uploaded second patch (trac_6128.patch) to conform to patch name standards.",
+    "body": "Attachment [trac_6128.patch](tarball://root/attachments/some-uuid/ticket6128/trac_6128.patch) by adavid created at 2009-06-02 05:23:41\n\nPlease ignore 12339.patch. Uploaded second patch (trac_6128.patch) to conform to patch name standards.",
     "created_at": "2009-06-02T05:23:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6128",
     "type": "issue_comment",
@@ -259,7 +259,7 @@ archive/issue_comments_048958.json:
 }
 ```
 
-Attachment
+Attachment [trac_6128.patch](tarball://root/attachments/some-uuid/ticket6128/trac_6128.patch) by adavid created at 2009-06-02 05:23:41
 
 Please ignore 12339.patch. Uploaded second patch (trac_6128.patch) to conform to patch name standards.
 

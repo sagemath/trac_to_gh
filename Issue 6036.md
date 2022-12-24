@@ -92,7 +92,7 @@ Changing component from algebra to basic arithmetic.
 archive/issue_comments_048071.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [12159.patch](tarball://root/attachments/some-uuid/ticket6036/12159.patch) by klee created at 2009-05-14 06:38:55",
     "created_at": "2009-05-14T06:38:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6036",
     "type": "issue_comment",
@@ -101,7 +101,7 @@ archive/issue_comments_048071.json:
 }
 ```
 
-Attachment
+Attachment [12159.patch](tarball://root/attachments/some-uuid/ticket6036/12159.patch) by klee created at 2009-05-14 06:38:55
 
 
 
@@ -110,7 +110,7 @@ Attachment
 archive/issue_comments_048072.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [12160.patch](tarball://root/attachments/some-uuid/ticket6036/12160.patch) by klee created at 2009-05-14 06:39:07",
     "created_at": "2009-05-14T06:39:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6036",
     "type": "issue_comment",
@@ -119,7 +119,7 @@ archive/issue_comments_048072.json:
 }
 ```
 
-Attachment
+Attachment [12160.patch](tarball://root/attachments/some-uuid/ticket6036/12160.patch) by klee created at 2009-05-14 06:39:07
 
 
 
@@ -128,7 +128,7 @@ Attachment
 archive/issue_comments_048073.json:
 ```json
 {
-    "body": "Attachment\n\nI attached a folded patch -- it should be applied instead of the other two.\n\nLooks good to me.",
+    "body": "Attachment [trac_6036.patch](tarball://root/attachments/some-uuid/ticket6036/trac_6036.patch) by mhansen created at 2009-05-19 05:13:19\n\nI attached a folded patch -- it should be applied instead of the other two.\n\nLooks good to me.",
     "created_at": "2009-05-19T05:13:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6036",
     "type": "issue_comment",
@@ -137,7 +137,7 @@ archive/issue_comments_048073.json:
 }
 ```
 
-Attachment
+Attachment [trac_6036.patch](tarball://root/attachments/some-uuid/ticket6036/trac_6036.patch) by mhansen created at 2009-05-19 05:13:19
 
 I attached a folded patch -- it should be applied instead of the other two.
 

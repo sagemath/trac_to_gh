@@ -146,7 +146,7 @@ A patch showing the required modifications to spkg-install in pari package
 archive/issue_comments_001158.json:
 ```json
 {
-    "body": "Attachment\n\nspkg-install file for gp2c",
+    "body": "Attachment [spkg-install.patch](tarball://root/attachments/some-uuid/ticket258/spkg-install.patch) by pdenapo created at 2008-01-08 04:30:17\n\nspkg-install file for gp2c",
     "created_at": "2008-01-08T04:30:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
@@ -155,7 +155,7 @@ archive/issue_comments_001158.json:
 }
 ```
 
-Attachment
+Attachment [spkg-install.patch](tarball://root/attachments/some-uuid/ticket258/spkg-install.patch) by pdenapo created at 2008-01-08 04:30:17
 
 spkg-install file for gp2c
 
@@ -166,7 +166,7 @@ spkg-install file for gp2c
 archive/issue_comments_001159.json:
 ```json
 {
-    "body": "Attachment\n\nMy second version of the attachment corrects a minor bash syntax-error (the packages worked either way, but fails to report an error message if pari.cfg was not there)",
+    "body": "Attachment [spkg-install](tarball://root/attachments/some-uuid/ticket258/spkg-install) by pdenapo created at 2008-01-08 04:31:36\n\nMy second version of the attachment corrects a minor bash syntax-error (the packages worked either way, but fails to report an error message if pari.cfg was not there)",
     "created_at": "2008-01-08T04:31:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
@@ -175,7 +175,7 @@ archive/issue_comments_001159.json:
 }
 ```
 
-Attachment
+Attachment [spkg-install](tarball://root/attachments/some-uuid/ticket258/spkg-install) by pdenapo created at 2008-01-08 04:31:36
 
 My second version of the attachment corrects a minor bash syntax-error (the packages worked either way, but fails to report an error message if pari.cfg was not there)
 
@@ -213,7 +213,7 @@ I also have included a README.Sage file explaning this.
 archive/issue_comments_001161.json:
 ```json
 {
-    "body": "Attachment\n\nspkg-install file for the unified pari/gp2c package",
+    "body": "Attachment [spkg-install-unified-package.patch](tarball://root/attachments/some-uuid/ticket258/spkg-install-unified-package.patch) by pdenapo created at 2008-01-15 15:21:14\n\nspkg-install file for the unified pari/gp2c package",
     "created_at": "2008-01-15T15:21:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
@@ -222,7 +222,7 @@ archive/issue_comments_001161.json:
 }
 ```
 
-Attachment
+Attachment [spkg-install-unified-package.patch](tarball://root/attachments/some-uuid/ticket258/spkg-install-unified-package.patch) by pdenapo created at 2008-01-15 15:21:14
 
 spkg-install file for the unified pari/gp2c package
 
@@ -251,7 +251,7 @@ Readme file for the unified pari/gp2c package
 archive/issue_comments_001163.json:
 ```json
 {
-    "body": "Attachment\n\nI submit a patch for the integration of gp2c into sage\n\nThis patch implements two functions for the Gp object:  gp2c_compile_file and gp2c\n\nThe first one compiles a file using gp2c-run and load its into the instance \nof the Gp intepreter asociated to the Gp object.\n(is like the ceval function proposed in the description at the begining, but I think that\ngp2c would be a better name). Also note that you cannot use it to evaluate arbitrary gp\nexpressions, just to define functions (in a syntax valid for gp2c, for example: avoid C identifiers)\n\nYou can use it to do something like:\n\nG=Gp()\nG.gp2c('f(x)=2*x')\nG.eval('f(2)')\n'4'\n\nThe second one takes a string, save it to a temporary file and compiles it using \ngp2c_compile_file\n\nThe temporary files are deleted when the Gp object is destroyed.\n\n(This patch also generalizes the function delete_tmpfiles() from misc/misc.py\nsince I need it to delete the temporary files that gp2c patch creates)",
+    "body": "Attachment [README.Sage](tarball://root/attachments/some-uuid/ticket258/README.Sage) by pdenapo created at 2008-01-15 15:34:54\n\nI submit a patch for the integration of gp2c into sage\n\nThis patch implements two functions for the Gp object:  gp2c_compile_file and gp2c\n\nThe first one compiles a file using gp2c-run and load its into the instance \nof the Gp intepreter asociated to the Gp object.\n(is like the ceval function proposed in the description at the begining, but I think that\ngp2c would be a better name). Also note that you cannot use it to evaluate arbitrary gp\nexpressions, just to define functions (in a syntax valid for gp2c, for example: avoid C identifiers)\n\nYou can use it to do something like:\n\nG=Gp()\nG.gp2c('f(x)=2*x')\nG.eval('f(2)')\n'4'\n\nThe second one takes a string, save it to a temporary file and compiles it using \ngp2c_compile_file\n\nThe temporary files are deleted when the Gp object is destroyed.\n\n(This patch also generalizes the function delete_tmpfiles() from misc/misc.py\nsince I need it to delete the temporary files that gp2c patch creates)",
     "created_at": "2008-01-15T15:34:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
@@ -260,7 +260,7 @@ archive/issue_comments_001163.json:
 }
 ```
 
-Attachment
+Attachment [README.Sage](tarball://root/attachments/some-uuid/ticket258/README.Sage) by pdenapo created at 2008-01-15 15:34:54
 
 I submit a patch for the integration of gp2c into sage
 
@@ -294,7 +294,7 @@ since I need it to delete the temporary files that gp2c patch creates)
 archive/issue_comments_001164.json:
 ```json
 {
-    "body": "Attachment\n\npatch: gp2c integration into sage",
+    "body": "Attachment [gp2c_integration.patch](tarball://root/attachments/some-uuid/ticket258/gp2c_integration.patch) by pdenapo created at 2008-01-15 15:35:42\n\npatch: gp2c integration into sage",
     "created_at": "2008-01-15T15:35:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
@@ -303,7 +303,7 @@ archive/issue_comments_001164.json:
 }
 ```
 
-Attachment
+Attachment [gp2c_integration.patch](tarball://root/attachments/some-uuid/ticket258/gp2c_integration.patch) by pdenapo created at 2008-01-15 15:35:42
 
 patch: gp2c integration into sage
 

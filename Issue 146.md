@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/146
 archive/issue_comments_000669.json:
 ```json
 {
-    "body": "Attachment\n\nBuild log for soya build",
+    "body": "Attachment [Soya.errlog](tarball://root/attachments/some-uuid/ticket146/Soya.errlog) by justin created at 2006-10-21 20:50:36\n\nBuild log for soya build",
     "created_at": "2006-10-21T20:50:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/146",
     "type": "issue_comment",
@@ -51,7 +51,7 @@ archive/issue_comments_000669.json:
 }
 ```
 
-Attachment
+Attachment [Soya.errlog](tarball://root/attachments/some-uuid/ticket146/Soya.errlog) by justin created at 2006-10-21 20:50:36
 
 Build log for soya build
 

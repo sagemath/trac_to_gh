@@ -46,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8378
 archive/issue_comments_074904.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8378.patch](tarball://root/attachments/some-uuid/ticket8378/trac_8378.patch) by zimmerma created at 2010-04-23 10:31:47",
     "created_at": "2010-04-23T10:31:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8378",
     "type": "issue_comment",
@@ -55,7 +55,7 @@ archive/issue_comments_074904.json:
 }
 ```
 
-Attachment
+Attachment [trac_8378.patch](tarball://root/attachments/some-uuid/ticket8378/trac_8378.patch) by zimmerma created at 2010-04-23 10:31:47
 
 
 
@@ -171,7 +171,7 @@ will be happy with that.
 archive/issue_comments_074909.json:
 ```json
 {
-    "body": "Attachment\n\nreplaces previous;  applies to 4.4.rc0",
+    "body": "Attachment [trac_8378-crt.patch](tarball://root/attachments/some-uuid/ticket8378/trac_8378-crt.patch) by cremona created at 2010-04-25 10:39:39\n\nreplaces previous;  applies to 4.4.rc0",
     "created_at": "2010-04-25T10:39:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8378",
     "type": "issue_comment",
@@ -180,7 +180,7 @@ archive/issue_comments_074909.json:
 }
 ```
 
-Attachment
+Attachment [trac_8378-crt.patch](tarball://root/attachments/some-uuid/ticket8378/trac_8378-crt.patch) by cremona created at 2010-04-25 10:39:39
 
 replaces previous;  applies to 4.4.rc0
 
@@ -250,7 +250,7 @@ By the way, I notice that the way `crt([a1,a2,a3],[m1,m2,m3])` is not documented
 archive/issue_comments_074913.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8378-reviewer.patch](tarball://root/attachments/some-uuid/ticket8378/trac_8378-reviewer.patch) by mvngu created at 2010-04-28 11:31:21",
     "created_at": "2010-04-28T11:31:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8378",
     "type": "issue_comment",
@@ -259,7 +259,7 @@ archive/issue_comments_074913.json:
 }
 ```
 
-Attachment
+Attachment [trac_8378-reviewer.patch](tarball://root/attachments/some-uuid/ticket8378/trac_8378-reviewer.patch) by mvngu created at 2010-04-28 11:31:21
 
 
 

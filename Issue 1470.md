@@ -599,7 +599,7 @@ Got:
 archive/issue_comments_009463.json:
 ```json
 {
-    "body": "Attachment\n\nThe new spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.1.2/alpha0/maxima-5.16.2.spkg\n\nCheers,\n\nMichael",
+    "body": "Attachment [doc_1470.patch](tarball://root/attachments/some-uuid/ticket1470/doc_1470.patch) by mabshoff created at 2008-08-21 23:30:39\n\nThe new spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.1.2/alpha0/maxima-5.16.2.spkg\n\nCheers,\n\nMichael",
     "created_at": "2008-08-21T23:30:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1470",
     "type": "issue_comment",
@@ -608,7 +608,7 @@ archive/issue_comments_009463.json:
 }
 ```
 
-Attachment
+Attachment [doc_1470.patch](tarball://root/attachments/some-uuid/ticket1470/doc_1470.patch) by mabshoff created at 2008-08-21 23:30:39
 
 The new spkg is at
 

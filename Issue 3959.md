@@ -75,7 +75,7 @@ Changing status from new to assigned.
 archive/issue_comments_028434.json:
 ```json
 {
-    "body": "Attachment\n\n(The above hg changeset bundle works fine for me but the trac browser doesn't seem to like it -- not sure what's going on there.)",
+    "body": "Attachment [group_algebras.hg](tarball://root/attachments/some-uuid/ticket3959/group_algebras.hg) by davidloeffler created at 2008-08-26 17:57:17\n\n(The above hg changeset bundle works fine for me but the trac browser doesn't seem to like it -- not sure what's going on there.)",
     "created_at": "2008-08-26T17:57:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3959",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_028434.json:
 }
 ```
 
-Attachment
+Attachment [group_algebras.hg](tarball://root/attachments/some-uuid/ticket3959/group_algebras.hg) by davidloeffler created at 2008-08-26 17:57:17
 
 (The above hg changeset bundle works fine for me but the trac browser doesn't seem to like it -- not sure what's going on there.)
 
@@ -133,7 +133,7 @@ Also, if R is a ring and G is a group then R[G] is a group ring and (in general)
 archive/issue_comments_028437.json:
 ```json
 {
-    "body": "Attachment\n\nOK, here's a single patch. \n\nAs for the naming convention: I thought an algebra over a ring R was any ring S with a fixed homomorphism R->S. This is what Sage's generic Algebra class does -- it doesn't require that its base_ring is a field. My class derives from that. Compare the existing FreeAlgebra class, which also derives from Algebra and also can be defined over any ring (one of the FreeAlgebra doctest examples is over ZZ).",
+    "body": "Attachment [group_algebras_v1.patch](tarball://root/attachments/some-uuid/ticket3959/group_algebras_v1.patch) by davidloeffler created at 2008-08-27 14:10:36\n\nOK, here's a single patch. \n\nAs for the naming convention: I thought an algebra over a ring R was any ring S with a fixed homomorphism R->S. This is what Sage's generic Algebra class does -- it doesn't require that its base_ring is a field. My class derives from that. Compare the existing FreeAlgebra class, which also derives from Algebra and also can be defined over any ring (one of the FreeAlgebra doctest examples is over ZZ).",
     "created_at": "2008-08-27T14:10:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3959",
     "type": "issue_comment",
@@ -142,7 +142,7 @@ archive/issue_comments_028437.json:
 }
 ```
 
-Attachment
+Attachment [group_algebras_v1.patch](tarball://root/attachments/some-uuid/ticket3959/group_algebras_v1.patch) by davidloeffler created at 2008-08-27 14:10:36
 
 OK, here's a single patch. 
 

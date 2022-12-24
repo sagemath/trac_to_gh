@@ -224,7 +224,7 @@ I've updated the SPKG and I'll attach the diff.
 archive/issue_comments_060400.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [glpk_sage_free.patch](tarball://root/attachments/some-uuid/ticket7268/glpk_sage_free.patch) by malb created at 2009-12-01 17:43:57",
     "created_at": "2009-12-01T17:43:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7268",
     "type": "issue_comment",
@@ -233,7 +233,7 @@ archive/issue_comments_060400.json:
 }
 ```
 
-Attachment
+Attachment [glpk_sage_free.patch](tarball://root/attachments/some-uuid/ticket7268/glpk_sage_free.patch) by malb created at 2009-12-01 17:43:57
 
 
 

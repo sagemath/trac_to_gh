@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8360
 archive/issue_comments_074698.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Semigroupe-2.0.spkg](tarball://root/attachments/some-uuid/ticket8360/Semigroupe-2.0.spkg) by nthiery created at 2010-03-16 13:04:44",
     "created_at": "2010-03-16T13:04:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8360",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_074698.json:
 }
 ```
 
-Attachment
+Attachment [Semigroupe-2.0.spkg](tarball://root/attachments/some-uuid/ticket8360/Semigroupe-2.0.spkg) by nthiery created at 2010-03-16 13:04:44
 
 
 
@@ -93,7 +93,7 @@ Superceedes the previous spkg
 archive/issue_comments_074701.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [semigroupe-2.0.spkg](tarball://root/attachments/some-uuid/ticket8360/semigroupe-2.0.spkg) by nthiery created at 2010-03-17 20:26:28",
     "created_at": "2010-03-17T20:26:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8360",
     "type": "issue_comment",
@@ -102,7 +102,7 @@ archive/issue_comments_074701.json:
 }
 ```
 
-Attachment
+Attachment [semigroupe-2.0.spkg](tarball://root/attachments/some-uuid/ticket8360/semigroupe-2.0.spkg) by nthiery created at 2010-03-17 20:26:28
 
 
 
@@ -266,7 +266,7 @@ Those are little self contained test programs we had written with Florent to und
 archive/issue_comments_074706.json:
 ```json
 {
-    "body": "Attachment\n\nSame as previous one, working on both 32bits and 64bits, but managing the patches on the semigroupe sources in a mercurial queue",
+    "body": "Attachment [semigroupe-2.0-2.spkg](tarball://root/attachments/some-uuid/ticket8360/semigroupe-2.0-2.spkg) by nthiery created at 2011-03-02 11:53:17\n\nSame as previous one, working on both 32bits and 64bits, but managing the patches on the semigroupe sources in a mercurial queue",
     "created_at": "2011-03-02T11:53:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8360",
     "type": "issue_comment",
@@ -275,7 +275,7 @@ archive/issue_comments_074706.json:
 }
 ```
 
-Attachment
+Attachment [semigroupe-2.0-2.spkg](tarball://root/attachments/some-uuid/ticket8360/semigroupe-2.0-2.spkg) by nthiery created at 2011-03-02 11:53:17
 
 Same as previous one, working on both 32bits and 64bits, but managing the patches on the semigroupe sources in a mercurial queue
 
@@ -430,7 +430,7 @@ Cheers,
 archive/issue_comments_074711.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8360_semigroupe-interface-nt.patch](tarball://root/attachments/some-uuid/ticket8360/trac_8360_semigroupe-interface-nt.patch) by nthiery created at 2016-12-05 20:46:03",
     "created_at": "2016-12-05T20:46:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8360",
     "type": "issue_comment",
@@ -439,4 +439,4 @@ archive/issue_comments_074711.json:
 }
 ```
 
-Attachment
+Attachment [trac_8360_semigroupe-interface-nt.patch](tarball://root/attachments/some-uuid/ticket8360/trac_8360_semigroupe-interface-nt.patch) by nthiery created at 2016-12-05 20:46:03

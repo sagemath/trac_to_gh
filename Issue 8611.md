@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8611
 archive/issue_comments_078006.json:
 ```json
 {
-    "body": "Attachment\n\nBEFORE PATCH:\n\n\n```\nsage: def g(i=15):\n...       return sum(range(2**i))\n...\nsage: @cached_function\nsage: def cached_g(i=15):\n...       return sum(range(2**i))\n...\nsage: class A:\n...       @cached_method\n...       def decorator_cache(self, i=15):\n...           return sum(range(2**i))\n...       def fast_cache(self, i=15):\n...           try:\n...               return self._fast_cache\n...           except AttributeError:\n...               self._fast_cache=sum(range(2**i))\n...               return self._fast_cache\nsage: timeit('g()')\n125 loops, best of 3: 2.02 ms per loop\nsage: timeit('cached_g()')\n625 loops, best of 3: 37.9 \u00b5s per loop\nsage: timeit('cached_g()')\n625 loops, best of 3: 41.8 \u00b5s per loop\nsage: c=A()\nsage: timeit('c.decorator_cache()')\n625 loops, best of 3: 64.8 \u00b5s per loop\nsage: timeit('c.fast_cache()')\n625 loops, best of 3: 1.06 \u00b5s per loop\n```\n\n\n\nAFTER PATCH\n\n\n```\n\nsage: def g(i=15):\n...       return sum(range(2**i))\n...\nsage: @cached_function\nsage: def cached_g(i=15):\n...       return sum(range(2**i))\n...\nsage: class A:\n...       @cached_method\n...       def decorator_cache(self, i=15):\n...           return sum(range(2**i))\n...       def fast_cache(self, i=15):\n...           try:\n...               return self._fast_cache\n...           except AttributeError:\n...               self._fast_cache=sum(range(2**i))\n...               return self._fast_cache\nsage: timeit('g()')\n125 loops, best of 3: 2.94 ms per loop\nsage: timeit('cached_g()')\n625 loops, best of 3: 1.64 \u00b5s per loop\nsage: c=A()\nsage: timeit('c.decorator_cache()')\n625 loops, best of 3: 22 \u00b5s per loop\nsage: timeit('c.fast_cache()')\n625 loops, best of 3: 678 ns per loop\n```\n",
+    "body": "Attachment [trac-8611-speed-up-cached-decorators.patch](tarball://root/attachments/some-uuid/ticket8611/trac-8611-speed-up-cached-decorators.patch) by jason created at 2010-03-26 03:54:03\n\nBEFORE PATCH:\n\n\n```\nsage: def g(i=15):\n...       return sum(range(2**i))\n...\nsage: @cached_function\nsage: def cached_g(i=15):\n...       return sum(range(2**i))\n...\nsage: class A:\n...       @cached_method\n...       def decorator_cache(self, i=15):\n...           return sum(range(2**i))\n...       def fast_cache(self, i=15):\n...           try:\n...               return self._fast_cache\n...           except AttributeError:\n...               self._fast_cache=sum(range(2**i))\n...               return self._fast_cache\nsage: timeit('g()')\n125 loops, best of 3: 2.02 ms per loop\nsage: timeit('cached_g()')\n625 loops, best of 3: 37.9 \u00b5s per loop\nsage: timeit('cached_g()')\n625 loops, best of 3: 41.8 \u00b5s per loop\nsage: c=A()\nsage: timeit('c.decorator_cache()')\n625 loops, best of 3: 64.8 \u00b5s per loop\nsage: timeit('c.fast_cache()')\n625 loops, best of 3: 1.06 \u00b5s per loop\n```\n\n\n\nAFTER PATCH\n\n\n```\n\nsage: def g(i=15):\n...       return sum(range(2**i))\n...\nsage: @cached_function\nsage: def cached_g(i=15):\n...       return sum(range(2**i))\n...\nsage: class A:\n...       @cached_method\n...       def decorator_cache(self, i=15):\n...           return sum(range(2**i))\n...       def fast_cache(self, i=15):\n...           try:\n...               return self._fast_cache\n...           except AttributeError:\n...               self._fast_cache=sum(range(2**i))\n...               return self._fast_cache\nsage: timeit('g()')\n125 loops, best of 3: 2.94 ms per loop\nsage: timeit('cached_g()')\n625 loops, best of 3: 1.64 \u00b5s per loop\nsage: c=A()\nsage: timeit('c.decorator_cache()')\n625 loops, best of 3: 22 \u00b5s per loop\nsage: timeit('c.fast_cache()')\n625 loops, best of 3: 678 ns per loop\n```\n",
     "created_at": "2010-03-26T03:54:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8611",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_078006.json:
 }
 ```
 
-Attachment
+Attachment [trac-8611-speed-up-cached-decorators.patch](tarball://root/attachments/some-uuid/ticket8611/trac-8611-speed-up-cached-decorators.patch) by jason created at 2010-03-26 03:54:03
 
 BEFORE PATCH:
 
@@ -799,7 +799,7 @@ Improved performance for cached methods; add documentation to reference manual; 
 archive/issue_comments_078020.json:
 ```json
 {
-    "body": "Attachment\n\nI slightly changed the patch. But the small change has in fact a big impact:\n\nThe method `sage.categories.category.Category.is_subcategory` is used to test whether something is an object of a given category. Due to the omnipresence of categories in Sage, this test occurs very often. So, it should be optimised!\n\nI suggest that `is_subcategory` should be cached. I.e., the new patch version differs from the old one only in the line \"`@`cached_method\" in front of that method.\n\nI believe that the additional memory consumption is affordable: When starting Sage, there are precisely 55 categories, so, in the worst case, caching `is_subcategory` adds 55 cache dictionaries with 55 entries.\n\nThe impact on the overall performance is obvious:\nOn my machine, `sage -tp 4 sage` takes 1721.2 seconds without my patch, but 1643.8 seconds with my patch.\n\nHence, the average improvement is about 4.5%.",
+    "body": "Attachment [trac8611_cached_method_overhaul.patch](tarball://root/attachments/some-uuid/ticket8611/trac8611_cached_method_overhaul.patch) by SimonKing created at 2011-01-12 17:20:28\n\nI slightly changed the patch. But the small change has in fact a big impact:\n\nThe method `sage.categories.category.Category.is_subcategory` is used to test whether something is an object of a given category. Due to the omnipresence of categories in Sage, this test occurs very often. So, it should be optimised!\n\nI suggest that `is_subcategory` should be cached. I.e., the new patch version differs from the old one only in the line \"`@`cached_method\" in front of that method.\n\nI believe that the additional memory consumption is affordable: When starting Sage, there are precisely 55 categories, so, in the worst case, caching `is_subcategory` adds 55 cache dictionaries with 55 entries.\n\nThe impact on the overall performance is obvious:\nOn my machine, `sage -tp 4 sage` takes 1721.2 seconds without my patch, but 1643.8 seconds with my patch.\n\nHence, the average improvement is about 4.5%.",
     "created_at": "2011-01-12T17:20:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8611",
     "type": "issue_comment",
@@ -808,7 +808,7 @@ archive/issue_comments_078020.json:
 }
 ```
 
-Attachment
+Attachment [trac8611_cached_method_overhaul.patch](tarball://root/attachments/some-uuid/ticket8611/trac8611_cached_method_overhaul.patch) by SimonKing created at 2011-01-12 17:20:28
 
 I slightly changed the patch. But the small change has in fact a big impact:
 
@@ -1001,7 +1001,7 @@ Apply only this patch
 archive/issue_comments_078029.json:
 ```json
 {
-    "body": "Attachment\n\nDone.",
+    "body": "Attachment [trac8611_cached_method_overhaul-fixed.patch](tarball://root/attachments/some-uuid/ticket8611/trac8611_cached_method_overhaul-fixed.patch) by davidloeffler created at 2011-01-23 15:17:01\n\nDone.",
     "created_at": "2011-01-23T15:17:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8611",
     "type": "issue_comment",
@@ -1010,7 +1010,7 @@ archive/issue_comments_078029.json:
 }
 ```
 
-Attachment
+Attachment [trac8611_cached_method_overhaul-fixed.patch](tarball://root/attachments/some-uuid/ticket8611/trac8611_cached_method_overhaul-fixed.patch) by davidloeffler created at 2011-01-23 15:17:01
 
 Done.
 

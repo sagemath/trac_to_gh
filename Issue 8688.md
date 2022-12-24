@@ -56,7 +56,7 @@ Changing keywords from "" to "pynac".
 archive/issue_comments_079162.json:
 ```json
 {
-    "body": "Attachment\n\nThis is fixed by the pynac package in #8903. attachment:trac_8688-typeset_fraction.patch contains doctests.\n\nNote that #8542, #8651 and #8775 is also fixed by the new pynac version. Patches from these tickets should be applied before doctesting.",
+    "body": "Attachment [trac_8688-typeset_fraction.patch](tarball://root/attachments/some-uuid/ticket8688/trac_8688-typeset_fraction.patch) by burcin created at 2010-05-06 04:24:37\n\nThis is fixed by the pynac package in #8903. attachment:trac_8688-typeset_fraction.patch contains doctests.\n\nNote that #8542, #8651 and #8775 is also fixed by the new pynac version. Patches from these tickets should be applied before doctesting.",
     "created_at": "2010-05-06T04:24:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8688",
     "type": "issue_comment",
@@ -65,7 +65,7 @@ archive/issue_comments_079162.json:
 }
 ```
 
-Attachment
+Attachment [trac_8688-typeset_fraction.patch](tarball://root/attachments/some-uuid/ticket8688/trac_8688-typeset_fraction.patch) by burcin created at 2010-05-06 04:24:37
 
 This is fixed by the pynac package in #8903. attachment:trac_8688-typeset_fraction.patch contains doctests.
 

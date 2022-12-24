@@ -50,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1066
 archive/issue_comments_006467.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [wikiconfig.py](tarball://root/attachments/some-uuid/ticket1066/wikiconfig.py) by was created at 2007-11-02 18:21:30",
     "created_at": "2007-11-02T18:21:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1066",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_006467.json:
 }
 ```
 
-Attachment
+Attachment [wikiconfig.py](tarball://root/attachments/some-uuid/ticket1066/wikiconfig.py) by was created at 2007-11-02 18:21:30
 
 
 

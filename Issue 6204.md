@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6204
 archive/issue_comments_049567.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6204-degree-1-relative-norms.patch](tarball://root/attachments/some-uuid/ticket6204/trac_6204-degree-1-relative-norms.patch) by ncalexan created at 2009-06-04 03:38:03",
     "created_at": "2009-06-04T03:38:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6204",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_049567.json:
 }
 ```
 
-Attachment
+Attachment [trac_6204-degree-1-relative-norms.patch](tarball://root/attachments/some-uuid/ticket6204/trac_6204-degree-1-relative-norms.patch) by ncalexan created at 2009-06-04 03:38:03
 
 
 

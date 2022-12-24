@@ -245,7 +245,7 @@ Even it is now an Infinite Enumerated Set, the test still need around 20 seconds
 archive/issue_comments_076747.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8500_number_transitive_group-nb.patch](tarball://root/attachments/some-uuid/ticket8500/trac_8500_number_transitive_group-nb.patch) by nborie created at 2010-03-15 15:02:07",
     "created_at": "2010-03-15T15:02:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8500",
     "type": "issue_comment",
@@ -254,7 +254,7 @@ archive/issue_comments_076747.json:
 }
 ```
 
-Attachment
+Attachment [trac_8500_number_transitive_group-nb.patch](tarball://root/attachments/some-uuid/ticket8500/trac_8500_number_transitive_group-nb.patch) by nborie created at 2010-03-15 15:02:07
 
 
 
@@ -281,7 +281,7 @@ I just update the patch : I forgot some # optional. Done..
 archive/issue_comments_076749.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8500_number_transitive_group-review-nt.patch](tarball://root/attachments/some-uuid/ticket8500/trac_8500_number_transitive_group-review-nt.patch) by nthiery created at 2010-04-18 20:00:19",
     "created_at": "2010-04-18T20:00:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8500",
     "type": "issue_comment",
@@ -290,7 +290,7 @@ archive/issue_comments_076749.json:
 }
 ```
 
-Attachment
+Attachment [trac_8500_number_transitive_group-review-nt.patch](tarball://root/attachments/some-uuid/ticket8500/trac_8500_number_transitive_group-review-nt.patch) by nthiery created at 2010-04-18 20:00:19
 
 
 
@@ -347,7 +347,7 @@ That's my fault from my patch... Who fix that ? modulo the two letter "in" befor
 archive/issue_comments_076752.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8500_number_transitive_group-review-nb.patch](tarball://root/attachments/some-uuid/ticket8500/trac_8500_number_transitive_group-review-nb.patch) by nborie created at 2010-04-19 08:06:22",
     "created_at": "2010-04-19T08:06:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8500",
     "type": "issue_comment",
@@ -356,7 +356,7 @@ archive/issue_comments_076752.json:
 }
 ```
 
-Attachment
+Attachment [trac_8500_number_transitive_group-review-nb.patch](tarball://root/attachments/some-uuid/ticket8500/trac_8500_number_transitive_group-review-nb.patch) by nborie created at 2010-04-19 08:06:22
 
 
 
@@ -495,7 +495,7 @@ Changing keywords from "transitive group" to "transitive groups".
 archive/issue_comments_076758.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8500_transitive_groups-final.patch](tarball://root/attachments/some-uuid/ticket8500/trac_8500_transitive_groups-final.patch) by nthiery created at 2010-04-19 17:33:14",
     "created_at": "2010-04-19T17:33:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8500",
     "type": "issue_comment",
@@ -504,7 +504,7 @@ archive/issue_comments_076758.json:
 }
 ```
 
-Attachment
+Attachment [trac_8500_transitive_groups-final.patch](tarball://root/attachments/some-uuid/ticket8500/trac_8500_transitive_groups-final.patch) by nthiery created at 2010-04-19 17:33:14
 
 
 

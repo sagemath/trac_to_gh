@@ -89,7 +89,7 @@ Changing assignee from was to mhansen.
 archive/issue_comments_020081.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2915.patch](tarball://root/attachments/some-uuid/ticket2915/2915.patch) by mhansen created at 2008-04-14 20:44:53",
     "created_at": "2008-04-14T20:44:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2915",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_020081.json:
 }
 ```
 
-Attachment
+Attachment [2915.patch](tarball://root/attachments/some-uuid/ticket2915/2915.patch) by mhansen created at 2008-04-14 20:44:53
 
 
 
@@ -107,7 +107,7 @@ Attachment
 archive/issue_comments_020082.json:
 ```json
 {
-    "body": "Attachment\n\nREFEREE REPORT:\n\n* Excellent!\n \n* I've reformatted the doctest a little and added computing the actual integral, since it's a good example to have in our system.",
+    "body": "Attachment [sage-2915-followup.patch](tarball://root/attachments/some-uuid/ticket2915/sage-2915-followup.patch) by was created at 2008-04-14 23:56:00\n\nREFEREE REPORT:\n\n* Excellent!\n \n* I've reformatted the doctest a little and added computing the actual integral, since it's a good example to have in our system.",
     "created_at": "2008-04-14T23:56:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2915",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_020082.json:
 }
 ```
 
-Attachment
+Attachment [sage-2915-followup.patch](tarball://root/attachments/some-uuid/ticket2915/sage-2915-followup.patch) by was created at 2008-04-14 23:56:00
 
 REFEREE REPORT:
 

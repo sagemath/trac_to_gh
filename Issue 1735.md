@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1735
 archive/issue_comments_010981.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-2.10.alpha2-do-not-mark-a-spkg-as-installed-if-sage-check-fails.patch](tarball://root/attachments/some-uuid/ticket1735/Sage-2.10.alpha2-do-not-mark-a-spkg-as-installed-if-sage-check-fails.patch) by mabshoff created at 2008-01-13 01:37:15",
     "created_at": "2008-01-13T01:37:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1735",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_010981.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.10.alpha2-do-not-mark-a-spkg-as-installed-if-sage-check-fails.patch](tarball://root/attachments/some-uuid/ticket1735/Sage-2.10.alpha2-do-not-mark-a-spkg-as-installed-if-sage-check-fails.patch) by mabshoff created at 2008-01-13 01:37:15
 
 
 

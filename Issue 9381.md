@@ -38,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9381
 archive/issue_comments_089167.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [libm4ri-FAT-remove-sse3-usage.patch](tarball://root/attachments/some-uuid/ticket9381/libm4ri-FAT-remove-sse3-usage.patch) by mariah created at 2010-06-29 20:02:12",
     "created_at": "2010-06-29T20:02:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9381",
     "type": "issue_comment",
@@ -47,7 +47,7 @@ archive/issue_comments_089167.json:
 }
 ```
 
-Attachment
+Attachment [libm4ri-FAT-remove-sse3-usage.patch](tarball://root/attachments/some-uuid/ticket9381/libm4ri-FAT-remove-sse3-usage.patch) by mariah created at 2010-06-29 20:02:12
 
 
 

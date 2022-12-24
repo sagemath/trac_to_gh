@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6827
 archive/issue_comments_056311.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [probability_distribution.patch](tarball://root/attachments/some-uuid/ticket6827/probability_distribution.patch) by carlohamalainen created at 2009-08-26 08:28:28",
     "created_at": "2009-08-26T08:28:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6827",
     "type": "issue_comment",
@@ -53,7 +53,7 @@ archive/issue_comments_056311.json:
 }
 ```
 
-Attachment
+Attachment [probability_distribution.patch](tarball://root/attachments/some-uuid/ticket6827/probability_distribution.patch) by carlohamalainen created at 2009-08-26 08:28:28
 
 
 
@@ -62,7 +62,7 @@ Attachment
 archive/issue_comments_056312.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.  I added a one character change to get the docs to build without warning.  Both patches should be applied.\n\nIt would probably be good to factor each of the RealDistributions out into their own classes so we don't have to have the massive if/elif/else statements.  It might be a good easy project if someone is working on stats stuff this fall.",
+    "body": "Attachment [trac_6827_review.patch](tarball://root/attachments/some-uuid/ticket6827/trac_6827_review.patch) by mhansen created at 2009-09-07 21:22:28\n\nLooks good to me.  I added a one character change to get the docs to build without warning.  Both patches should be applied.\n\nIt would probably be good to factor each of the RealDistributions out into their own classes so we don't have to have the massive if/elif/else statements.  It might be a good easy project if someone is working on stats stuff this fall.",
     "created_at": "2009-09-07T21:22:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6827",
     "type": "issue_comment",
@@ -71,7 +71,7 @@ archive/issue_comments_056312.json:
 }
 ```
 
-Attachment
+Attachment [trac_6827_review.patch](tarball://root/attachments/some-uuid/ticket6827/trac_6827_review.patch) by mhansen created at 2009-09-07 21:22:28
 
 Looks good to me.  I added a one character change to get the docs to build without warning.  Both patches should be applied.
 

@@ -45,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6393
 archive/issue_comments_051366.json:
 ```json
 {
-    "body": "Attachment\n\napplies to 4.0.2.rc3 passes sage -testall",
+    "body": "Attachment [trac_6393-jacobi-sum.patch](tarball://root/attachments/some-uuid/ticket6393/trac_6393-jacobi-sum.patch) by wdj created at 2009-06-24 14:41:07\n\napplies to 4.0.2.rc3 passes sage -testall",
     "created_at": "2009-06-24T14:41:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6393",
     "type": "issue_comment",
@@ -54,7 +54,7 @@ archive/issue_comments_051366.json:
 }
 ```
 
-Attachment
+Attachment [trac_6393-jacobi-sum.patch](tarball://root/attachments/some-uuid/ticket6393/trac_6393-jacobi-sum.patch) by wdj created at 2009-06-24 14:41:07
 
 applies to 4.0.2.rc3 passes sage -testall
 

@@ -181,7 +181,7 @@ Okay, here's a new patch.  I think that this tests everything, although there is
 archive/issue_comments_044678.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5716.patch](tarball://root/attachments/some-uuid/ticket5716/trac_5716.patch) by jason created at 2009-05-30 05:02:11",
     "created_at": "2009-05-30T05:02:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5716",
     "type": "issue_comment",
@@ -190,7 +190,7 @@ archive/issue_comments_044678.json:
 }
 ```
 
-Attachment
+Attachment [trac_5716.patch](tarball://root/attachments/some-uuid/ticket5716/trac_5716.patch) by jason created at 2009-05-30 05:02:11
 
 
 

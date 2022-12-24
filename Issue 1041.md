@@ -57,7 +57,7 @@ Resolution: fixed
 archive/issue_comments_006347.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac1041.patch](tarball://root/attachments/some-uuid/ticket1041/trac1041.patch) by was created at 2007-11-03 23:18:49",
     "created_at": "2007-11-03T23:18:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1041",
     "type": "issue_comment",
@@ -66,4 +66,4 @@ archive/issue_comments_006347.json:
 }
 ```
 
-Attachment
+Attachment [trac1041.patch](tarball://root/attachments/some-uuid/ticket1041/trac1041.patch) by was created at 2007-11-03 23:18:49

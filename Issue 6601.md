@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6601
 archive/issue_comments_054029.json:
 ```json
 {
-    "body": "Attachment\n\nIt looks like you're using Sage 3.4.1. Would it be possible to try your script with a more recent version of Sage (like 4.1, the most recent as of now) and see whether you still get an error?",
+    "body": "Attachment [Sage_crash_report.txt](tarball://root/attachments/some-uuid/ticket6601/Sage_crash_report.txt) by wcauchois created at 2009-07-29 00:12:30\n\nIt looks like you're using Sage 3.4.1. Would it be possible to try your script with a more recent version of Sage (like 4.1, the most recent as of now) and see whether you still get an error?",
     "created_at": "2009-07-29T00:12:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6601",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_054029.json:
 }
 ```
 
-Attachment
+Attachment [Sage_crash_report.txt](tarball://root/attachments/some-uuid/ticket6601/Sage_crash_report.txt) by wcauchois created at 2009-07-29 00:12:30
 
 It looks like you're using Sage 3.4.1. Would it be possible to try your script with a more recent version of Sage (like 4.1, the most recent as of now) and see whether you still get an error?
 

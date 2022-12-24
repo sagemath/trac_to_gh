@@ -267,7 +267,7 @@ and make clear in the documentation which argument types are allowed.
 archive/issue_comments_034791.json:
 ```json
 {
-    "body": "Attachment\n\nFixed.",
+    "body": "Attachment [trac_4626-bessel_J_ints.patch](tarball://root/attachments/some-uuid/ticket4626/trac_4626-bessel_J_ints.patch) by rlm created at 2009-01-22 16:40:18\n\nFixed.",
     "created_at": "2009-01-22T16:40:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4626",
     "type": "issue_comment",
@@ -276,7 +276,7 @@ archive/issue_comments_034791.json:
 }
 ```
 
-Attachment
+Attachment [trac_4626-bessel_J_ints.patch](tarball://root/attachments/some-uuid/ticket4626/trac_4626-bessel_J_ints.patch) by rlm created at 2009-01-22 16:40:18
 
 Fixed.
 

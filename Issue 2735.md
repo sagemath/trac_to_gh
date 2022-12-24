@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2735
 archive/issue_comments_018812.json:
 ```json
 {
-    "body": "Attachment\n\nPatch is good. Positive review.\n\nJohn: the patch has been merged in eclib-20080310.p1.spkg which will be part of Sage 3.0.alpha0. It only touches code inside the dist/debian directory.\n\nCheers,\n\nMichael",
+    "body": "Attachment [eclib-debian-build-fixes.patch](tarball://root/attachments/some-uuid/ticket2735/eclib-debian-build-fixes.patch) by mabshoff created at 2008-04-01 21:09:46\n\nPatch is good. Positive review.\n\nJohn: the patch has been merged in eclib-20080310.p1.spkg which will be part of Sage 3.0.alpha0. It only touches code inside the dist/debian directory.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-01T21:09:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2735",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_018812.json:
 }
 ```
 
-Attachment
+Attachment [eclib-debian-build-fixes.patch](tarball://root/attachments/some-uuid/ticket2735/eclib-debian-build-fixes.patch) by mabshoff created at 2008-04-01 21:09:46
 
 Patch is good. Positive review.
 

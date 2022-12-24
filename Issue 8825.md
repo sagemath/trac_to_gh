@@ -90,7 +90,7 @@ Changing status from new to needs_review.
 archive/issue_comments_081035.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8825_norm_docstring.patch](tarball://root/attachments/some-uuid/ticket8825/trac_8825_norm_docstring.patch) by mvngu created at 2010-04-29 20:05:21",
     "created_at": "2010-04-29T20:05:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8825",
     "type": "issue_comment",
@@ -99,7 +99,7 @@ archive/issue_comments_081035.json:
 }
 ```
 
-Attachment
+Attachment [trac_8825_norm_docstring.patch](tarball://root/attachments/some-uuid/ticket8825/trac_8825_norm_docstring.patch) by mvngu created at 2010-04-29 20:05:21
 
 
 
@@ -126,7 +126,7 @@ I'm happy with the patch [trac_8825_norm_docstring.patch](http://trac.sagemath.o
 archive/issue_comments_081037.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [weirddoc.png](tarball://root/attachments/some-uuid/ticket8825/weirddoc.png) by pang created at 2010-05-12 08:36:33",
     "created_at": "2010-05-12T08:36:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8825",
     "type": "issue_comment",
@@ -135,7 +135,7 @@ archive/issue_comments_081037.json:
 }
 ```
 
-Attachment
+Attachment [weirddoc.png](tarball://root/attachments/some-uuid/ticket8825/weirddoc.png) by pang created at 2010-05-12 08:36:33
 
 
 
@@ -224,7 +224,7 @@ would change to a link to that method.
 archive/issue_comments_081041.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:4 pang]:\n> Maybe instead of norm it could say sage.matrix.matrix2.Matrix.norm, etcetera. \nMy updated patch takes care of this. As for the weirdness in the notebook, I don't know how to fix that.",
+    "body": "Attachment [trac_8825-more-norm-doc.patch](tarball://root/attachments/some-uuid/ticket8825/trac_8825-more-norm-doc.patch) by mvngu created at 2010-06-15 04:24:29\n\nReplying to [comment:4 pang]:\n> Maybe instead of norm it could say sage.matrix.matrix2.Matrix.norm, etcetera. \nMy updated patch takes care of this. As for the weirdness in the notebook, I don't know how to fix that.",
     "created_at": "2010-06-15T04:24:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8825",
     "type": "issue_comment",
@@ -233,7 +233,7 @@ archive/issue_comments_081041.json:
 }
 ```
 
-Attachment
+Attachment [trac_8825-more-norm-doc.patch](tarball://root/attachments/some-uuid/ticket8825/trac_8825-more-norm-doc.patch) by mvngu created at 2010-06-15 04:24:29
 
 Replying to [comment:4 pang]:
 > Maybe instead of norm it could say sage.matrix.matrix2.Matrix.norm, etcetera. 

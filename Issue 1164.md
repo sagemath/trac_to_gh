@@ -88,7 +88,7 @@ Apply #1348 first.
 archive/issue_comments_007143.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.\n\nCheers,\n\nMichael",
+    "body": "Attachment [1164-doc.patch](tarball://root/attachments/some-uuid/ticket1164/1164-doc.patch) by mabshoff created at 2007-12-09 11:57:51\n\nLooks good to me.\n\nCheers,\n\nMichael",
     "created_at": "2007-12-09T11:57:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1164",
     "type": "issue_comment",
@@ -97,7 +97,7 @@ archive/issue_comments_007143.json:
 }
 ```
 
-Attachment
+Attachment [1164-doc.patch](tarball://root/attachments/some-uuid/ticket1164/1164-doc.patch) by mabshoff created at 2007-12-09 11:57:51
 
 Looks good to me.
 

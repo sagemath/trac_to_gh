@@ -151,7 +151,7 @@ Note -- there is one way to defeat the attached patch: (1) hit control c during 
 archive/issue_comments_044492.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5689.patch](tarball://root/attachments/some-uuid/ticket5689/trac_5689.patch) by was created at 2009-04-05 19:25:33",
     "created_at": "2009-04-05T19:25:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5689",
     "type": "issue_comment",
@@ -160,7 +160,7 @@ archive/issue_comments_044492.json:
 }
 ```
 
-Attachment
+Attachment [trac_5689.patch](tarball://root/attachments/some-uuid/ticket5689/trac_5689.patch) by was created at 2009-04-05 19:25:33
 
 
 
@@ -214,7 +214,7 @@ William
 archive/issue_comments_044495.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5689-part2.patch](tarball://root/attachments/some-uuid/ticket5689/trac_5689-part2.patch) by was created at 2009-04-06 16:53:55",
     "created_at": "2009-04-06T16:53:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5689",
     "type": "issue_comment",
@@ -223,7 +223,7 @@ archive/issue_comments_044495.json:
 }
 ```
 
-Attachment
+Attachment [trac_5689-part2.patch](tarball://root/attachments/some-uuid/ticket5689/trac_5689-part2.patch) by was created at 2009-04-06 16:53:55
 
 
 

@@ -121,7 +121,7 @@ Michael
 archive/issue_comments_027219.json:
 ```json
 {
-    "body": "Attachment\n\n\n```\njavascript: encode64(\"\")\n```\n\nAA==\n\n\n```\nsage.server.notebook.interact.standard_b64decode(\"AA==\")\n```\n\n'\\x00'\n\nMy patch adds a check in the interact() function. However, encode64() and decode64() seem to be buggy. In particular, they are not inverses. For example,\n\n```\njavascript: encode64(decode64(\"\"))\n```\n\nAAAA",
+    "body": "Attachment [sage.patch](tarball://root/attachments/some-uuid/ticket3826/sage.patch) by itolkov created at 2008-08-13 21:19:06\n\n\n```\njavascript: encode64(\"\")\n```\n\nAA==\n\n\n```\nsage.server.notebook.interact.standard_b64decode(\"AA==\")\n```\n\n'\\x00'\n\nMy patch adds a check in the interact() function. However, encode64() and decode64() seem to be buggy. In particular, they are not inverses. For example,\n\n```\njavascript: encode64(decode64(\"\"))\n```\n\nAAAA",
     "created_at": "2008-08-13T21:19:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3826",
     "type": "issue_comment",
@@ -130,7 +130,7 @@ archive/issue_comments_027219.json:
 }
 ```
 
-Attachment
+Attachment [sage.patch](tarball://root/attachments/some-uuid/ticket3826/sage.patch) by itolkov created at 2008-08-13 21:19:06
 
 
 ```
@@ -161,7 +161,7 @@ AAAA
 archive/issue_comments_027220.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac3826-javascript-base64.patch](tarball://root/attachments/some-uuid/ticket3826/trac3826-javascript-base64.patch) by cwitty created at 2008-08-23 18:22:13",
     "created_at": "2008-08-23T18:22:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3826",
     "type": "issue_comment",
@@ -170,7 +170,7 @@ archive/issue_comments_027220.json:
 }
 ```
 
-Attachment
+Attachment [trac3826-javascript-base64.patch](tarball://root/attachments/some-uuid/ticket3826/trac3826-javascript-base64.patch) by cwitty created at 2008-08-23 18:22:13
 
 
 

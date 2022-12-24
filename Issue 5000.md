@@ -116,7 +116,7 @@ Changing status from new to assigned.
 archive/issue_comments_038136.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5000_ell_rational_field-noise.patch](tarball://root/attachments/some-uuid/ticket5000/trac_5000_ell_rational_field-noise.patch) by mabshoff created at 2009-01-18 06:18:41",
     "created_at": "2009-01-18T06:18:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5000",
     "type": "issue_comment",
@@ -125,7 +125,7 @@ archive/issue_comments_038136.json:
 }
 ```
 
-Attachment
+Attachment [trac_5000_ell_rational_field-noise.patch](tarball://root/attachments/some-uuid/ticket5000/trac_5000_ell_rational_field-noise.patch) by mabshoff created at 2009-01-18 06:18:41
 
 
 

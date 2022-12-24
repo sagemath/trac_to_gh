@@ -86,7 +86,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/856
 archive/issue_comments_005303.json:
 ```json
 {
-    "body": "Attachment\n\npatch needs testing on 32-bit machines",
+    "body": "Attachment [856.patch](tarball://root/attachments/some-uuid/ticket856/856.patch) by mhansen created at 2007-10-12 04:47:45\n\npatch needs testing on 32-bit machines",
     "created_at": "2007-10-12T04:47:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/856",
     "type": "issue_comment",
@@ -95,7 +95,7 @@ archive/issue_comments_005303.json:
 }
 ```
 
-Attachment
+Attachment [856.patch](tarball://root/attachments/some-uuid/ticket856/856.patch) by mhansen created at 2007-10-12 04:47:45
 
 patch needs testing on 32-bit machines
 

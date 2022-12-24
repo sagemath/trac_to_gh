@@ -197,7 +197,7 @@ Changing assignee from somebody to mhansen.
 archive/issue_comments_021651.json:
 ```json
 {
-    "body": "Attachment\n\nAnd by #3125, I mean #3135.",
+    "body": "Attachment [trac_3124.patch](tarball://root/attachments/some-uuid/ticket3124/trac_3124.patch) by mhansen created at 2009-01-21 21:04:01\n\nAnd by #3125, I mean #3135.",
     "created_at": "2009-01-21T21:04:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3124",
     "type": "issue_comment",
@@ -206,7 +206,7 @@ archive/issue_comments_021651.json:
 }
 ```
 
-Attachment
+Attachment [trac_3124.patch](tarball://root/attachments/some-uuid/ticket3124/trac_3124.patch) by mhansen created at 2009-01-21 21:04:01
 
 And by #3125, I mean #3135.
 

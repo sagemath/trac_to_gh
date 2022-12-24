@@ -216,7 +216,7 @@ Michael
 archive/issue_comments_006684.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1104-Ideal_args.patch](tarball://root/attachments/some-uuid/ticket1104/1104-Ideal_args.patch) by AlexGhitza created at 2008-09-29 23:17:56",
     "created_at": "2008-09-29T23:17:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1104",
     "type": "issue_comment",
@@ -225,7 +225,7 @@ archive/issue_comments_006684.json:
 }
 ```
 
-Attachment
+Attachment [1104-Ideal_args.patch](tarball://root/attachments/some-uuid/ticket1104/1104-Ideal_args.patch) by AlexGhitza created at 2008-09-29 23:17:56
 
 
 

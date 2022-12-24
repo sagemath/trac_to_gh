@@ -348,7 +348,7 @@ archive/issue_comments_077087.json:
 archive/issue_comments_077088.json:
 ```json
 {
-    "body": "Attachment\n\nok...updated patch (with documentation).\n\nThanks jason for the reminder add the documentation.  This patch passed the doctests.",
+    "body": "Attachment [trac_8529_color_implicit_plot.patch](tarball://root/attachments/some-uuid/ticket8529/trac_8529_color_implicit_plot.patch) by ryan created at 2010-08-01 01:22:54\n\nok...updated patch (with documentation).\n\nThanks jason for the reminder add the documentation.  This patch passed the doctests.",
     "created_at": "2010-08-01T01:22:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8529",
     "type": "issue_comment",
@@ -357,7 +357,7 @@ archive/issue_comments_077088.json:
 }
 ```
 
-Attachment
+Attachment [trac_8529_color_implicit_plot.patch](tarball://root/attachments/some-uuid/ticket8529/trac_8529_color_implicit_plot.patch) by ryan created at 2010-08-01 01:22:54
 
 ok...updated patch (with documentation).
 
@@ -446,7 +446,7 @@ Apply after initial patch
 archive/issue_comments_077093.json:
 ```json
 {
-    "body": "Attachment\n\nSuper-cool example picture of this patch working",
+    "body": "Attachment [trac_8529-reviewer.patch](tarball://root/attachments/some-uuid/ticket8529/trac_8529-reviewer.patch) by kcrisman created at 2010-08-10 16:07:40\n\nSuper-cool example picture of this patch working",
     "created_at": "2010-08-10T16:07:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8529",
     "type": "issue_comment",
@@ -455,7 +455,7 @@ archive/issue_comments_077093.json:
 }
 ```
 
-Attachment
+Attachment [trac_8529-reviewer.patch](tarball://root/attachments/some-uuid/ticket8529/trac_8529-reviewer.patch) by kcrisman created at 2010-08-10 16:07:40
 
 Super-cool example picture of this patch working
 
@@ -466,7 +466,7 @@ Super-cool example picture of this patch working
 archive/issue_comments_077094.json:
 ```json
 {
-    "body": "Attachment\n\nThis solves #9654 too.",
+    "body": "Attachment [ColorfulCircles.png](tarball://root/attachments/some-uuid/ticket8529/ColorfulCircles.png) by jason created at 2010-08-14 08:40:34\n\nThis solves #9654 too.",
     "created_at": "2010-08-14T08:40:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8529",
     "type": "issue_comment",
@@ -475,7 +475,7 @@ archive/issue_comments_077094.json:
 }
 ```
 
-Attachment
+Attachment [ColorfulCircles.png](tarball://root/attachments/some-uuid/ticket8529/ColorfulCircles.png) by jason created at 2010-08-14 08:40:34
 
 This solves #9654 too.
 
@@ -650,7 +650,7 @@ apply on top of previous patches
 archive/issue_comments_077101.json:
 ```json
 {
-    "body": "Attachment\n\nI rebased the reviewer-reviewer patch for 4.6.alpha3.  In fact, that reviewer-reviewer patch was so picky, it probably would have been okay to just ignore it anyway.",
+    "body": "Attachment [trac-8529-reviewer-reviewer.patch](tarball://root/attachments/some-uuid/ticket8529/trac-8529-reviewer-reviewer.patch) by jason created at 2010-10-19 06:26:26\n\nI rebased the reviewer-reviewer patch for 4.6.alpha3.  In fact, that reviewer-reviewer patch was so picky, it probably would have been okay to just ignore it anyway.",
     "created_at": "2010-10-19T06:26:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8529",
     "type": "issue_comment",
@@ -659,7 +659,7 @@ archive/issue_comments_077101.json:
 }
 ```
 
-Attachment
+Attachment [trac-8529-reviewer-reviewer.patch](tarball://root/attachments/some-uuid/ticket8529/trac-8529-reviewer-reviewer.patch) by jason created at 2010-10-19 06:26:26
 
 I rebased the reviewer-reviewer patch for 4.6.alpha3.  In fact, that reviewer-reviewer patch was so picky, it probably would have been okay to just ignore it anyway.
 

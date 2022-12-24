@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7238
 archive/issue_comments_060041.json:
 ```json
 {
-    "body": "Attachment\n\npart 1",
+    "body": "Attachment [trac_7238.patch](tarball://root/attachments/some-uuid/ticket7238/trac_7238.patch) by was created at 2009-10-18 09:22:16\n\npart 1",
     "created_at": "2009-10-18T09:22:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7238",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_060041.json:
 }
 ```
 
-Attachment
+Attachment [trac_7238.patch](tarball://root/attachments/some-uuid/ticket7238/trac_7238.patch) by was created at 2009-10-18 09:22:16
 
 part 1
 
@@ -72,7 +72,7 @@ deleting then everything is fine.
 archive/issue_comments_060043.json:
 ```json
 {
-    "body": "Attachment\n\nthis fixes moving between cells",
+    "body": "Attachment [trac_7238-part2.patch](tarball://root/attachments/some-uuid/ticket7238/trac_7238-part2.patch) by was created at 2009-10-19 17:35:30\n\nthis fixes moving between cells",
     "created_at": "2009-10-19T17:35:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7238",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_060043.json:
 }
 ```
 
-Attachment
+Attachment [trac_7238-part2.patch](tarball://root/attachments/some-uuid/ticket7238/trac_7238-part2.patch) by was created at 2009-10-19 17:35:30
 
 this fixes moving between cells
 
@@ -211,7 +211,7 @@ Part 3.  Various small fixes.  Apply on top of other patches.
 archive/issue_comments_060050.json:
 ```json
 {
-    "body": "Attachment\n\n> A potential annoyance: Reopening (or editing) a worksheet fuses consecutive \n> text cells. Should we have \"special\" delimiters for text cells? \n\nThis has been the case since there first were text cells.  Some people consider it good (a feature), and others find it confusing.",
+    "body": "Attachment [trac_7238-insert_above_text_cell.patch](tarball://root/attachments/some-uuid/ticket7238/trac_7238-insert_above_text_cell.patch) by was created at 2009-10-20 18:07:25\n\n> A potential annoyance: Reopening (or editing) a worksheet fuses consecutive \n> text cells. Should we have \"special\" delimiters for text cells? \n\nThis has been the case since there first were text cells.  Some people consider it good (a feature), and others find it confusing.",
     "created_at": "2009-10-20T18:07:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7238",
     "type": "issue_comment",
@@ -220,7 +220,7 @@ archive/issue_comments_060050.json:
 }
 ```
 
-Attachment
+Attachment [trac_7238-insert_above_text_cell.patch](tarball://root/attachments/some-uuid/ticket7238/trac_7238-insert_above_text_cell.patch) by was created at 2009-10-20 18:07:25
 
 > A potential annoyance: Reopening (or editing) a worksheet fuses consecutive 
 > text cells. Should we have "special" delimiters for text cells? 

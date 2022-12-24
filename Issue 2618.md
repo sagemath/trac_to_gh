@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2618
 archive/issue_comments_017988.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [quotient_ring_element_doc.patch](tarball://root/attachments/some-uuid/ticket2618/quotient_ring_element_doc.patch) by malb created at 2008-03-20 21:55:22",
     "created_at": "2008-03-20T21:55:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2618",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_017988.json:
 }
 ```
 
-Attachment
+Attachment [quotient_ring_element_doc.patch](tarball://root/attachments/some-uuid/ticket2618/quotient_ring_element_doc.patch) by malb created at 2008-03-20 21:55:22
 
 
 

@@ -46,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9283
 archive/issue_comments_087444.json:
 ```json
 {
-    "body": "Attachment\n\nfull notebook log.",
+    "body": "Attachment [notebook.log](tarball://root/attachments/some-uuid/ticket9283/notebook.log) by retry created at 2010-06-20 13:06:55\n\nfull notebook log.",
     "created_at": "2010-06-20T13:06:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9283",
     "type": "issue_comment",
@@ -55,7 +55,7 @@ archive/issue_comments_087444.json:
 }
 ```
 
-Attachment
+Attachment [notebook.log](tarball://root/attachments/some-uuid/ticket9283/notebook.log) by retry created at 2010-06-20 13:06:55
 
 full notebook log.
 

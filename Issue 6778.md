@@ -49,7 +49,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6778
 archive/issue_comments_055828.json:
 ```json
 {
-    "body": "Attachment\n\nThis is a simple patch for a simple bug.  I filed a duplicate ticket for this at #6991 which should be closed as well.",
+    "body": "Attachment [trac_6778_nfacets_bug_in_lattice_polytope.patch](tarball://root/attachments/some-uuid/ticket6778/trac_6778_nfacets_bug_in_lattice_polytope.patch) by mhampton created at 2009-09-22 20:53:19\n\nThis is a simple patch for a simple bug.  I filed a duplicate ticket for this at #6991 which should be closed as well.",
     "created_at": "2009-09-22T20:53:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6778",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_055828.json:
 }
 ```
 
-Attachment
+Attachment [trac_6778_nfacets_bug_in_lattice_polytope.patch](tarball://root/attachments/some-uuid/ticket6778/trac_6778_nfacets_bug_in_lattice_polytope.patch) by mhampton created at 2009-09-22 20:53:19
 
 This is a simple patch for a simple bug.  I filed a duplicate ticket for this at #6991 which should be closed as well.
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2761
 archive/issue_comments_018971.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [tachyon-amd64.patch](tarball://root/attachments/some-uuid/ticket2761/tachyon-amd64.patch) by tabbott created at 2008-04-01 21:30:15",
     "created_at": "2008-04-01T21:30:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2761",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_018971.json:
 }
 ```
 
-Attachment
+Attachment [tachyon-amd64.patch](tarball://root/attachments/some-uuid/ticket2761/tachyon-amd64.patch) by tabbott created at 2008-04-01 21:30:15
 
 
 

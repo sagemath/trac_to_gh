@@ -130,7 +130,7 @@ I'll put up a patch for this in a minute.
 archive/issue_comments_036513.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-4816.patch](tarball://root/attachments/some-uuid/ticket4816/trac-4816.patch) by cremona created at 2008-12-16 17:00:11",
     "created_at": "2008-12-16T17:00:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4816",
     "type": "issue_comment",
@@ -139,7 +139,7 @@ archive/issue_comments_036513.json:
 }
 ```
 
-Attachment
+Attachment [trac-4816.patch](tarball://root/attachments/some-uuid/ticket4816/trac-4816.patch) by cremona created at 2008-12-16 17:00:11
 
 
 

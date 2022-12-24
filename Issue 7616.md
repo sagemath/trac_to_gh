@@ -445,7 +445,7 @@ I'm not sure what the best plan is -- if RLM is happy with my patch, I'm happy t
 archive/issue_comments_065052.json:
 ```json
 {
-    "body": "Attachment\n\n(New version of my patch -- identical except for formatting and grammar in a long comment block.)",
+    "body": "Attachment [trac_7616_alt.patch](tarball://root/attachments/some-uuid/ticket7616/trac_7616_alt.patch) by craigcitro created at 2009-12-22 07:44:09\n\n(New version of my patch -- identical except for formatting and grammar in a long comment block.)",
     "created_at": "2009-12-22T07:44:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7616",
     "type": "issue_comment",
@@ -454,7 +454,7 @@ archive/issue_comments_065052.json:
 }
 ```
 
-Attachment
+Attachment [trac_7616_alt.patch](tarball://root/attachments/some-uuid/ticket7616/trac_7616_alt.patch) by craigcitro created at 2009-12-22 07:44:09
 
 (New version of my patch -- identical except for formatting and grammar in a long comment block.)
 

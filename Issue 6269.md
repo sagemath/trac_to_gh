@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6269
 archive/issue_comments_050074.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch does several closely related things:\n\n1. Takes all coloring functions from plot.plot, plot.misc, and plot.tachyon and puts them in new file plot.colors\n2. Writes most of these in Cython, for anywhere between a 3 and 10 times speedup.  This is not so crucial, given that most are called only once or some number of times less than 100 in a given plot, but is still nice.\n3. Changes complex_plot.pyx in two ways:\n   a. Makes the coloring conform with documentation, in that roygbiv goes from positive real axis counterclockwise (increasing argument) instead of the other way around\n   b. Changes the function mag_to_lightness to use log(sqrt(r)+1) instead of log(r+1)\n\nNone of these need explanation except the last subpoint. Previous behavior was so dark as to obscure tick marks even on the doctest plots, and so light as to make plotting even z squared look pretty vague.  This only adds about .02 ms on average to plots, which means that complex_plot(sqrt) takes a little bit longer but complex_plot(zeta) is indistinguishable from before in timing.  One can quibble about it, but this makes zeros still recognizable for polynomials while not allowing them to drown out for zeta, and makes anything yielding high moduli easier to view, while incurring a very modest performance hit, which seems in line with the pedagogical point of complex_plot.",
+    "body": "Attachment [colors.patch](tarball://root/attachments/some-uuid/ticket6269/colors.patch) by kcrisman created at 2009-06-12 17:43:56\n\nThis patch does several closely related things:\n\n1. Takes all coloring functions from plot.plot, plot.misc, and plot.tachyon and puts them in new file plot.colors\n2. Writes most of these in Cython, for anywhere between a 3 and 10 times speedup.  This is not so crucial, given that most are called only once or some number of times less than 100 in a given plot, but is still nice.\n3. Changes complex_plot.pyx in two ways:\n   a. Makes the coloring conform with documentation, in that roygbiv goes from positive real axis counterclockwise (increasing argument) instead of the other way around\n   b. Changes the function mag_to_lightness to use log(sqrt(r)+1) instead of log(r+1)\n\nNone of these need explanation except the last subpoint. Previous behavior was so dark as to obscure tick marks even on the doctest plots, and so light as to make plotting even z squared look pretty vague.  This only adds about .02 ms on average to plots, which means that complex_plot(sqrt) takes a little bit longer but complex_plot(zeta) is indistinguishable from before in timing.  One can quibble about it, but this makes zeros still recognizable for polynomials while not allowing them to drown out for zeta, and makes anything yielding high moduli easier to view, while incurring a very modest performance hit, which seems in line with the pedagogical point of complex_plot.",
     "created_at": "2009-06-12T17:43:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6269",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_050074.json:
 }
 ```
 
-Attachment
+Attachment [colors.patch](tarball://root/attachments/some-uuid/ticket6269/colors.patch) by kcrisman created at 2009-06-12 17:43:56
 
 This patch does several closely related things:
 
@@ -401,7 +401,7 @@ Changing status from new to assigned.
 archive/issue_comments_050083.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6269.patch](tarball://root/attachments/some-uuid/ticket6269/trac_6269.patch) by kcrisman created at 2009-06-16 14:19:28",
     "created_at": "2009-06-16T14:19:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6269",
     "type": "issue_comment",
@@ -410,7 +410,7 @@ archive/issue_comments_050083.json:
 }
 ```
 
-Attachment
+Attachment [trac_6269.patch](tarball://root/attachments/some-uuid/ticket6269/trac_6269.patch) by kcrisman created at 2009-06-16 14:19:28
 
 
 
@@ -592,7 +592,7 @@ rebased against Sage 4.1.alpha1
 archive/issue_comments_050091.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch `trac_6269-rebased.patch` is rebased against Sage 4.1.alpha1. It also touches those graph theory modules that `trac_6269.patch` touches. For all files that `trac_6269-rebased.patch` touches, testing passed with options `-t -long`. I'm re-instating Nick Alexander's positive review, unless there's a reason not to.",
+    "body": "Attachment [trac_6269-rebased.patch](tarball://root/attachments/some-uuid/ticket6269/trac_6269-rebased.patch) by mvngu created at 2009-06-25 21:46:54\n\nThe patch `trac_6269-rebased.patch` is rebased against Sage 4.1.alpha1. It also touches those graph theory modules that `trac_6269.patch` touches. For all files that `trac_6269-rebased.patch` touches, testing passed with options `-t -long`. I'm re-instating Nick Alexander's positive review, unless there's a reason not to.",
     "created_at": "2009-06-25T21:46:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6269",
     "type": "issue_comment",
@@ -601,7 +601,7 @@ archive/issue_comments_050091.json:
 }
 ```
 
-Attachment
+Attachment [trac_6269-rebased.patch](tarball://root/attachments/some-uuid/ticket6269/trac_6269-rebased.patch) by mvngu created at 2009-06-25 21:46:54
 
 The patch `trac_6269-rebased.patch` is rebased against Sage 4.1.alpha1. It also touches those graph theory modules that `trac_6269.patch` touches. For all files that `trac_6269-rebased.patch` touches, testing passed with options `-t -long`. I'm re-instating Nick Alexander's positive review, unless there's a reason not to.
 

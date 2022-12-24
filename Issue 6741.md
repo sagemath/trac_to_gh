@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6741
 archive/issue_comments_055230.json:
 ```json
 {
-    "body": "Attachment\n\nrequires pil-1.1.6, applies to 4.1.1.rc2",
+    "body": "Attachment [trac_6741-pil.patch](tarball://root/attachments/some-uuid/ticket6741/trac_6741-pil.patch) by wdj created at 2009-08-13 23:20:20\n\nrequires pil-1.1.6, applies to 4.1.1.rc2",
     "created_at": "2009-08-13T23:20:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6741",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_055230.json:
 }
 ```
 
-Attachment
+Attachment [trac_6741-pil.patch](tarball://root/attachments/some-uuid/ticket6741/trac_6741-pil.patch) by wdj created at 2009-08-13 23:20:20
 
 requires pil-1.1.6, applies to 4.1.1.rc2
 
@@ -234,7 +234,7 @@ Bad news: Now I can't even get the code to work. I've tried on an imac (which re
 archive/issue_comments_055240.json:
 ```json
 {
-    "body": "Attachment\n\nok, here is a cleanup patch.\n\nThere is an issue with fontmanager that I do not understand",
+    "body": "Attachment [trac_6741_cleanup1.patch](tarball://root/attachments/some-uuid/ticket6741/trac_6741_cleanup1.patch) by chapoton created at 2013-08-22 20:11:42\n\nok, here is a cleanup patch.\n\nThere is an issue with fontmanager that I do not understand",
     "created_at": "2013-08-22T20:11:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6741",
     "type": "issue_comment",
@@ -243,7 +243,7 @@ archive/issue_comments_055240.json:
 }
 ```
 
-Attachment
+Attachment [trac_6741_cleanup1.patch](tarball://root/attachments/some-uuid/ticket6741/trac_6741_cleanup1.patch) by chapoton created at 2013-08-22 20:11:42
 
 ok, here is a cleanup patch.
 

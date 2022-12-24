@@ -166,7 +166,7 @@ Michael
 archive/issue_comments_028375.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached a new patch which fixes the issue.",
+    "body": "Attachment [trac_3952.patch](tarball://root/attachments/some-uuid/ticket3952/trac_3952.patch) by mhansen created at 2008-08-26 21:26:57\n\nI've attached a new patch which fixes the issue.",
     "created_at": "2008-08-26T21:26:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3952",
     "type": "issue_comment",
@@ -175,7 +175,7 @@ archive/issue_comments_028375.json:
 }
 ```
 
-Attachment
+Attachment [trac_3952.patch](tarball://root/attachments/some-uuid/ticket3952/trac_3952.patch) by mhansen created at 2008-08-26 21:26:57
 
 I've attached a new patch which fixes the issue.
 

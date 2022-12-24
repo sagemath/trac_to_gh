@@ -73,7 +73,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7597
 archive/issue_comments_064801.json:
 ```json
 {
-    "body": "Attachment\n\nDoctest from the test case.",
+    "body": "Attachment [sage-trac_7597.patch](tarball://root/attachments/some-uuid/ticket7597/sage-trac_7597.patch) by mjo created at 2012-01-10 14:22:47\n\nDoctest from the test case.",
     "created_at": "2012-01-10T14:22:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7597",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_064801.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac_7597.patch](tarball://root/attachments/some-uuid/ticket7597/sage-trac_7597.patch) by mjo created at 2012-01-10 14:22:47
 
 Doctest from the test case.
 

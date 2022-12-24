@@ -80,7 +80,7 @@ good.
 archive/issue_comments_091895.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9537-fast_trial_division.patch](tarball://root/attachments/some-uuid/ticket9537/trac_9537-fast_trial_division.patch) by spancratz created at 2010-07-18 20:13:31",
     "created_at": "2010-07-18T20:13:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9537",
     "type": "issue_comment",
@@ -89,7 +89,7 @@ archive/issue_comments_091895.json:
 }
 ```
 
-Attachment
+Attachment [trac_9537-fast_trial_division.patch](tarball://root/attachments/some-uuid/ticket9537/trac_9537-fast_trial_division.patch) by spancratz created at 2010-07-18 20:13:31
 
 
 

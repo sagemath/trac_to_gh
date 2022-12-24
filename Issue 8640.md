@@ -74,7 +74,7 @@ These warnings must be resolved before we could add the bipartite graph class to
 archive/issue_comments_078343.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8640-bipartite.patch](tarball://root/attachments/some-uuid/ticket8640/trac_8640-bipartite.patch) by mvngu created at 2010-04-30 22:53:06",
     "created_at": "2010-04-30T22:53:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8640",
     "type": "issue_comment",
@@ -83,7 +83,7 @@ archive/issue_comments_078343.json:
 }
 ```
 
-Attachment
+Attachment [trac_8640-bipartite.patch](tarball://root/attachments/some-uuid/ticket8640/trac_8640-bipartite.patch) by mvngu created at 2010-04-30 22:53:06
 
 
 

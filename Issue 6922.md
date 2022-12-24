@@ -535,7 +535,7 @@ Ok.
 archive/issue_comments_057155.json:
 ```json
 {
-    "body": "Attachment\n\nreplaced",
+    "body": "Attachment [trac#6922.patch](tarball://root/attachments/some-uuid/ticket6922/trac#6922.patch) by klee created at 2010-06-04 01:35:55\n\nreplaced",
     "created_at": "2010-06-04T01:35:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6922",
     "type": "issue_comment",
@@ -544,7 +544,7 @@ archive/issue_comments_057155.json:
 }
 ```
 
-Attachment
+Attachment [trac#6922.patch](tarball://root/attachments/some-uuid/ticket6922/trac#6922.patch) by klee created at 2010-06-04 01:35:55
 
 replaced
 
@@ -679,7 +679,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_057161.json:
 ```json
 {
-    "body": "Attachment\n\nThe new patch supports also the Singular version.  Now \"M(...)\" is the official string representation of matrix  orderings.",
+    "body": "Attachment [trac#6922.2.patch](tarball://root/attachments/some-uuid/ticket6922/trac#6922.2.patch) by klee created at 2010-06-25 04:58:21\n\nThe new patch supports also the Singular version.  Now \"M(...)\" is the official string representation of matrix  orderings.",
     "created_at": "2010-06-25T04:58:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6922",
     "type": "issue_comment",
@@ -688,7 +688,7 @@ archive/issue_comments_057161.json:
 }
 ```
 
-Attachment
+Attachment [trac#6922.2.patch](tarball://root/attachments/some-uuid/ticket6922/trac#6922.2.patch) by klee created at 2010-06-25 04:58:21
 
 The new patch supports also the Singular version.  Now "M(...)" is the official string representation of matrix  orderings.
 
@@ -771,7 +771,7 @@ I've attached a small referee patch which Kwankyu or someone else has to sign of
 archive/issue_comments_057164.json:
 ```json
 {
-    "body": "Attachment\n\napply after klee's patch",
+    "body": "Attachment [trac_6922_referee.patch](tarball://root/attachments/some-uuid/ticket6922/trac_6922_referee.patch) by malb created at 2010-06-25 09:07:23\n\napply after klee's patch",
     "created_at": "2010-06-25T09:07:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6922",
     "type": "issue_comment",
@@ -780,7 +780,7 @@ archive/issue_comments_057164.json:
 }
 ```
 
-Attachment
+Attachment [trac_6922_referee.patch](tarball://root/attachments/some-uuid/ticket6922/trac_6922_referee.patch) by malb created at 2010-06-25 09:07:23
 
 apply after klee's patch
 
@@ -791,7 +791,7 @@ apply after klee's patch
 archive/issue_comments_057165.json:
 ```json
 {
-    "body": "Attachment\n\ncombined with referee's patch",
+    "body": "Attachment [trac#6922_final.patch](tarball://root/attachments/some-uuid/ticket6922/trac#6922_final.patch) by klee created at 2010-06-25 10:44:58\n\ncombined with referee's patch",
     "created_at": "2010-06-25T10:44:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6922",
     "type": "issue_comment",
@@ -800,7 +800,7 @@ archive/issue_comments_057165.json:
 }
 ```
 
-Attachment
+Attachment [trac#6922_final.patch](tarball://root/attachments/some-uuid/ticket6922/trac#6922_final.patch) by klee created at 2010-06-25 10:44:58
 
 combined with referee's patch
 

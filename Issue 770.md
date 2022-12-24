@@ -94,7 +94,7 @@ Proposed patch to fix this issue
 archive/issue_comments_004578.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [patch.770](tarball://root/attachments/some-uuid/ticket770/patch.770) by mabshoff created at 2007-10-01 11:51:23",
     "created_at": "2007-10-01T11:51:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/770",
     "type": "issue_comment",
@@ -103,7 +103,7 @@ archive/issue_comments_004578.json:
 }
 ```
 
-Attachment
+Attachment [patch.770](tarball://root/attachments/some-uuid/ticket770/patch.770) by mabshoff created at 2007-10-01 11:51:23
 
 
 

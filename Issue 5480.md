@@ -64,7 +64,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5480
 archive/issue_comments_042512.json:
 ```json
 {
-    "body": "Attachment\n\nThe fix is to permit both a polynomial (for backward compatibility) and an ideal as the argument.  Doctested the rings/polynomial directory w/o problems.",
+    "body": "Attachment [sage-5480.patch](tarball://root/attachments/some-uuid/ticket5480/sage-5480.patch) by justin created at 2009-03-11 07:01:18\n\nThe fix is to permit both a polynomial (for backward compatibility) and an ideal as the argument.  Doctested the rings/polynomial directory w/o problems.",
     "created_at": "2009-03-11T07:01:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5480",
     "type": "issue_comment",
@@ -73,7 +73,7 @@ archive/issue_comments_042512.json:
 }
 ```
 
-Attachment
+Attachment [sage-5480.patch](tarball://root/attachments/some-uuid/ticket5480/sage-5480.patch) by justin created at 2009-03-11 07:01:18
 
 The fix is to permit both a polynomial (for backward compatibility) and an ideal as the argument.  Doctested the rings/polynomial directory w/o problems.
 
@@ -254,7 +254,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_042522.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.",
+    "body": "Attachment [trac_5480.patch](tarball://root/attachments/some-uuid/ticket5480/trac_5480.patch) by mhansen created at 2009-11-17 08:04:35\n\nLooks good to me.",
     "created_at": "2009-11-17T08:04:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5480",
     "type": "issue_comment",
@@ -263,7 +263,7 @@ archive/issue_comments_042522.json:
 }
 ```
 
-Attachment
+Attachment [trac_5480.patch](tarball://root/attachments/some-uuid/ticket5480/trac_5480.patch) by mhansen created at 2009-11-17 08:04:35
 
 Looks good to me.
 

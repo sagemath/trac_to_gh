@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3143
 archive/issue_comments_021813.json:
 ```json
 {
-    "body": "Attachment\n\nPatch looks good to me. Positive review.\n\nCheers,\n\nMichael",
+    "body": "Attachment [home_was_remove.patch](tarball://root/attachments/some-uuid/ticket3143/home_was_remove.patch) by mabshoff created at 2008-05-11 10:50:16\n\nPatch looks good to me. Positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-05-11T10:50:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3143",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_021813.json:
 }
 ```
 
-Attachment
+Attachment [home_was_remove.patch](tarball://root/attachments/some-uuid/ticket3143/home_was_remove.patch) by mabshoff created at 2008-05-11 10:50:16
 
 Patch looks good to me. Positive review.
 

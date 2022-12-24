@@ -172,7 +172,7 @@ and similarly for the `png` doctest.  Do you think that's good enough?  It now p
 archive/issue_comments_045142.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5771.patch](tarball://root/attachments/some-uuid/ticket5771/trac_5771.patch) by jhpalmieri created at 2009-06-11 19:55:40",
     "created_at": "2009-06-11T19:55:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5771",
     "type": "issue_comment",
@@ -181,7 +181,7 @@ archive/issue_comments_045142.json:
 }
 ```
 
-Attachment
+Attachment [trac_5771.patch](tarball://root/attachments/some-uuid/ticket5771/trac_5771.patch) by jhpalmieri created at 2009-06-11 19:55:40
 
 
 

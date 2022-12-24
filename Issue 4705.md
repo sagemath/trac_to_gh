@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4705
 archive/issue_comments_035454.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [tinymce-editable.patch](tarball://root/attachments/some-uuid/ticket4705/tinymce-editable.patch) by jason created at 2008-12-05 01:13:43",
     "created_at": "2008-12-05T01:13:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4705",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_035454.json:
 }
 ```
 
-Attachment
+Attachment [tinymce-editable.patch](tarball://root/attachments/some-uuid/ticket4705/tinymce-editable.patch) by jason created at 2008-12-05 01:13:43
 
 
 
@@ -251,7 +251,7 @@ http://zeta-puppis.com/2006/03/07/javascript-script-execution-in-innerhtml-the-r
 archive/issue_comments_035465.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of previous patch",
+    "body": "Attachment [safari-fix.patch](tarball://root/attachments/some-uuid/ticket4705/safari-fix.patch) by jason created at 2008-12-22 23:06:03\n\napply on top of previous patch",
     "created_at": "2008-12-22T23:06:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4705",
     "type": "issue_comment",
@@ -260,7 +260,7 @@ archive/issue_comments_035465.json:
 }
 ```
 
-Attachment
+Attachment [safari-fix.patch](tarball://root/attachments/some-uuid/ticket4705/safari-fix.patch) by jason created at 2008-12-22 23:06:03
 
 apply on top of previous patch
 
@@ -863,7 +863,7 @@ I most certainly second the comment that Jason will be very happy to see this fi
 archive/issue_comments_035491.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ghost-text.patch](tarball://root/attachments/some-uuid/ticket4705/ghost-text.patch) by jason created at 2009-01-16 17:53:16",
     "created_at": "2009-01-16T17:53:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4705",
     "type": "issue_comment",
@@ -872,7 +872,7 @@ archive/issue_comments_035491.json:
 }
 ```
 
-Attachment
+Attachment [ghost-text.patch](tarball://root/attachments/some-uuid/ticket4705/ghost-text.patch) by jason created at 2009-01-16 17:53:16
 
 
 

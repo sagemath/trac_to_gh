@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6655
 archive/issue_comments_054625.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6655_partition_newfeature-ny.patch](tarball://root/attachments/some-uuid/ticket6655/trac_6655_partition_newfeature-ny.patch) by numata created at 2009-07-29 15:54:35",
     "created_at": "2009-07-29T15:54:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6655",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_054625.json:
 }
 ```
 
-Attachment
+Attachment [trac_6655_partition_newfeature-ny.patch](tarball://root/attachments/some-uuid/ticket6655/trac_6655_partition_newfeature-ny.patch) by numata created at 2009-07-29 15:54:35
 
 
 
@@ -228,7 +228,7 @@ Anne
 archive/issue_comments_054635.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6655_partition_corner_cells-fh.patch](tarball://root/attachments/some-uuid/ticket6655/trac_6655_partition_corner_cells-fh.patch) by hivert created at 2010-05-04 23:20:32",
     "created_at": "2010-05-04T23:20:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6655",
     "type": "issue_comment",
@@ -237,7 +237,7 @@ archive/issue_comments_054635.json:
 }
 ```
 
-Attachment
+Attachment [trac_6655_partition_corner_cells-fh.patch](tarball://root/attachments/some-uuid/ticket6655/trac_6655_partition_corner_cells-fh.patch) by hivert created at 2010-05-04 23:20:32
 
 
 
@@ -271,7 +271,7 @@ Except for `cells` which I just added, they are all accessible through `l.outer(
 archive/issue_comments_054637.json:
 ```json
 {
-    "body": "Attachment\n\nI reviewed the patch. It cleans up several features in partitions. In addition it fixes the slide method in skew_tableaux and adds the cell method to skew_partitions as requested. All tests pass. Positive review!\n\nRelease manager, please apply only\ntrac_6655_partition_corner_cells-fh.patch and \ntrac_6655_partition_corner_cells-review-as.patch (in this order).",
+    "body": "Attachment [trac_6655_partition_corner_cells-review-as.patch](tarball://root/attachments/some-uuid/ticket6655/trac_6655_partition_corner_cells-review-as.patch) by aschilling created at 2010-05-05 23:34:17\n\nI reviewed the patch. It cleans up several features in partitions. In addition it fixes the slide method in skew_tableaux and adds the cell method to skew_partitions as requested. All tests pass. Positive review!\n\nRelease manager, please apply only\ntrac_6655_partition_corner_cells-fh.patch and \ntrac_6655_partition_corner_cells-review-as.patch (in this order).",
     "created_at": "2010-05-05T23:34:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6655",
     "type": "issue_comment",
@@ -280,7 +280,7 @@ archive/issue_comments_054637.json:
 }
 ```
 
-Attachment
+Attachment [trac_6655_partition_corner_cells-review-as.patch](tarball://root/attachments/some-uuid/ticket6655/trac_6655_partition_corner_cells-review-as.patch) by aschilling created at 2010-05-05 23:34:17
 
 I reviewed the patch. It cleans up several features in partitions. In addition it fixes the slide method in skew_tableaux and adds the cell method to skew_partitions as requested. All tests pass. Positive review!
 

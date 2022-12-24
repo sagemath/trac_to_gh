@@ -197,7 +197,7 @@ Michael
 archive/issue_comments_015320.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2303-scipy-bessel.patch](tarball://root/attachments/some-uuid/ticket2303/2303-scipy-bessel.patch) by robertwb created at 2008-07-08 23:55:51",
     "created_at": "2008-07-08T23:55:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2303",
     "type": "issue_comment",
@@ -206,7 +206,7 @@ archive/issue_comments_015320.json:
 }
 ```
 
-Attachment
+Attachment [2303-scipy-bessel.patch](tarball://root/attachments/some-uuid/ticket2303/2303-scipy-bessel.patch) by robertwb created at 2008-07-08 23:55:51
 
 
 

@@ -65,7 +65,7 @@ Changing status from new to needs_review.
 archive/issue_comments_067867.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [RDF_conjugate.patch](tarball://root/attachments/some-uuid/ticket7834/RDF_conjugate.patch) by dagss created at 2010-01-03 18:53:52",
     "created_at": "2010-01-03T18:53:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7834",
     "type": "issue_comment",
@@ -74,7 +74,7 @@ archive/issue_comments_067867.json:
 }
 ```
 
-Attachment
+Attachment [RDF_conjugate.patch](tarball://root/attachments/some-uuid/ticket7834/RDF_conjugate.patch) by dagss created at 2010-01-03 18:53:52
 
 
 

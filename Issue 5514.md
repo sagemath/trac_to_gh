@@ -78,7 +78,7 @@ I will not be able to work on this until after March 30th.
 archive/issue_comments_042855.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac5514.patch](tarball://root/attachments/some-uuid/ticket5514/trac5514.patch) by wcauchois created at 2009-04-03 00:38:49",
     "created_at": "2009-04-03T00:38:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5514",
     "type": "issue_comment",
@@ -87,7 +87,7 @@ archive/issue_comments_042855.json:
 }
 ```
 
-Attachment
+Attachment [trac5514.patch](tarball://root/attachments/some-uuid/ticket5514/trac5514.patch) by wcauchois created at 2009-04-03 00:38:49
 
 
 
@@ -119,7 +119,7 @@ Bill
 archive/issue_comments_042857.json:
 ```json
 {
-    "body": "Attachment\n\napply instead of previous patch.",
+    "body": "Attachment [trac-5514-region-function.patch](tarball://root/attachments/some-uuid/ticket5514/trac-5514-region-function.patch) by jason created at 2009-04-22 19:36:55\n\napply instead of previous patch.",
     "created_at": "2009-04-22T19:36:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5514",
     "type": "issue_comment",
@@ -128,7 +128,7 @@ archive/issue_comments_042857.json:
 }
 ```
 
-Attachment
+Attachment [trac-5514-region-function.patch](tarball://root/attachments/some-uuid/ticket5514/trac-5514-region-function.patch) by jason created at 2009-04-22 19:36:55
 
 apply instead of previous patch.
 
@@ -380,7 +380,7 @@ I'm uploading a patch that makes some cosmetic changes, including renaming "clip
 archive/issue_comments_042865.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-5514-cosmetic-changes.patch](tarball://root/attachments/some-uuid/ticket5514/trac-5514-cosmetic-changes.patch) by wcauchois created at 2009-05-11 22:22:28",
     "created_at": "2009-05-11T22:22:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5514",
     "type": "issue_comment",
@@ -389,7 +389,7 @@ archive/issue_comments_042865.json:
 }
 ```
 
-Attachment
+Attachment [trac-5514-cosmetic-changes.patch](tarball://root/attachments/some-uuid/ticket5514/trac-5514-cosmetic-changes.patch) by wcauchois created at 2009-05-11 22:22:28
 
 
 
@@ -470,7 +470,7 @@ One concern I have about implementing this is, have you seen ParametricSurface.e
 archive/issue_comments_042868.json:
 ```json
 {
-    "body": "Attachment\n\nbased on sage 4.0.rc0",
+    "body": "Attachment [trac5514-new.patch](tarball://root/attachments/some-uuid/ticket5514/trac5514-new.patch) by wcauchois created at 2009-05-28 08:43:09\n\nbased on sage 4.0.rc0",
     "created_at": "2009-05-28T08:43:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5514",
     "type": "issue_comment",
@@ -479,7 +479,7 @@ archive/issue_comments_042868.json:
 }
 ```
 
-Attachment
+Attachment [trac5514-new.patch](tarball://root/attachments/some-uuid/ticket5514/trac5514-new.patch) by wcauchois created at 2009-05-28 08:43:09
 
 based on sage 4.0.rc0
 

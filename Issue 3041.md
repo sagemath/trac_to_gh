@@ -49,7 +49,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3041
 archive/issue_comments_020924.json:
 ```json
 {
-    "body": "Attachment\n\nThe spkg at \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.1/alpha1/linbox-1.1.5.p4.spkg\n\ncontains the fix in form of the above patch. It builds fine for me on sage.math and bsd.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_3041.patch](tarball://root/attachments/some-uuid/ticket3041/trac_3041.patch) by mabshoff created at 2008-04-27 05:03:17\n\nThe spkg at \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.1/alpha1/linbox-1.1.5.p4.spkg\n\ncontains the fix in form of the above patch. It builds fine for me on sage.math and bsd.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-27T05:03:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3041",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_020924.json:
 }
 ```
 
-Attachment
+Attachment [trac_3041.patch](tarball://root/attachments/some-uuid/ticket3041/trac_3041.patch) by mabshoff created at 2008-04-27 05:03:17
 
 The spkg at 
 

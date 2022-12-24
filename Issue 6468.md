@@ -229,7 +229,7 @@ FiniteField.__call__ should raise an error rather than return an error
 archive/issue_comments_052296.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:5 SimonKing]:\n> OK, done, there is a new patch including doc tests.\n\nPS: I did the doc tests for the patched version of sage/rings/integer_mod_ring.py, and they passed. However, as I have only sage-4.0.2, it'd be better if someone else runs the tests as well.\n\nCheers,\n  Simon",
+    "body": "Attachment [GF_call_.patch](tarball://root/attachments/some-uuid/ticket6468/GF_call_.patch) by SimonKing created at 2009-07-07 13:19:26\n\nReplying to [comment:5 SimonKing]:\n> OK, done, there is a new patch including doc tests.\n\nPS: I did the doc tests for the patched version of sage/rings/integer_mod_ring.py, and they passed. However, as I have only sage-4.0.2, it'd be better if someone else runs the tests as well.\n\nCheers,\n  Simon",
     "created_at": "2009-07-07T13:19:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6468",
     "type": "issue_comment",
@@ -238,7 +238,7 @@ archive/issue_comments_052296.json:
 }
 ```
 
-Attachment
+Attachment [GF_call_.patch](tarball://root/attachments/some-uuid/ticket6468/GF_call_.patch) by SimonKing created at 2009-07-07 13:19:26
 
 Replying to [comment:5 SimonKing]:
 > OK, done, there is a new patch including doc tests.

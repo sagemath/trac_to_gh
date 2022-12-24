@@ -57,7 +57,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9985
 archive/issue_comments_100327.json:
 ```json
 {
-    "body": "Attachment\n\nBuild failure observed on an RS/6000 running AIX 5.3",
+    "body": "Attachment [freetype-2.3.5.p2.log](tarball://root/attachments/some-uuid/ticket9985/freetype-2.3.5.p2.log) by drkirkby created at 2010-09-23 20:53:49\n\nBuild failure observed on an RS/6000 running AIX 5.3",
     "created_at": "2010-09-23T20:53:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9984",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_100327.json:
 }
 ```
 
-Attachment
+Attachment [freetype-2.3.5.p2.log](tarball://root/attachments/some-uuid/ticket9985/freetype-2.3.5.p2.log) by drkirkby created at 2010-09-23 20:53:49
 
 Build failure observed on an RS/6000 running AIX 5.3
 

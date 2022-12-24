@@ -49,7 +49,7 @@ This is not a duplicate of #857; the reference is in the second line of the docu
 archive/issue_comments_038849.json:
 ```json
 {
-    "body": "Attachment\n\nThis is a one-word change of SageX to Cython from the 3.3.alpha0 version of this file.",
+    "body": "Attachment [COPYING.txt](tarball://root/attachments/some-uuid/ticket5094/COPYING.txt) by kcrisman created at 2009-01-29 15:35:06\n\nThis is a one-word change of SageX to Cython from the 3.3.alpha0 version of this file.",
     "created_at": "2009-01-29T15:35:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5094",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_038849.json:
 }
 ```
 
-Attachment
+Attachment [COPYING.txt](tarball://root/attachments/some-uuid/ticket5094/COPYING.txt) by kcrisman created at 2009-01-29 15:35:06
 
 This is a one-word change of SageX to Cython from the 3.3.alpha0 version of this file.
 
@@ -160,7 +160,7 @@ Based on 3.3.alpha0
 archive/issue_comments_038852.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5094.patch](tarball://root/attachments/some-uuid/ticket5094/trac_5094.patch) by kcrisman created at 2009-02-02 16:40:07",
     "created_at": "2009-02-02T16:40:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5094",
     "type": "issue_comment",
@@ -169,7 +169,7 @@ archive/issue_comments_038852.json:
 }
 ```
 
-Attachment
+Attachment [trac_5094.patch](tarball://root/attachments/some-uuid/ticket5094/trac_5094.patch) by kcrisman created at 2009-02-02 16:40:07
 
 
 

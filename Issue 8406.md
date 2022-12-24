@@ -140,7 +140,7 @@ Changing status from new to needs_review.
 archive/issue_comments_075313.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8406.patch](tarball://root/attachments/some-uuid/ticket8406/trac_8406.patch) by ylchapuy created at 2010-03-02 08:53:27",
     "created_at": "2010-03-02T08:53:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8406",
     "type": "issue_comment",
@@ -149,7 +149,7 @@ archive/issue_comments_075313.json:
 }
 ```
 
-Attachment
+Attachment [trac_8406.patch](tarball://root/attachments/some-uuid/ticket8406/trac_8406.patch) by ylchapuy created at 2010-03-02 08:53:27
 
 
 
@@ -212,7 +212,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_075317.json:
 ```json
 {
-    "body": "Attachment\n\napply both patches in order.",
+    "body": "Attachment [trac_8406-doctests.patch](tarball://root/attachments/some-uuid/ticket8406/trac_8406-doctests.patch) by ylchapuy created at 2010-03-09 15:08:28\n\napply both patches in order.",
     "created_at": "2010-03-09T15:08:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8406",
     "type": "issue_comment",
@@ -221,7 +221,7 @@ archive/issue_comments_075317.json:
 }
 ```
 
-Attachment
+Attachment [trac_8406-doctests.patch](tarball://root/attachments/some-uuid/ticket8406/trac_8406-doctests.patch) by ylchapuy created at 2010-03-09 15:08:28
 
 apply both patches in order.
 

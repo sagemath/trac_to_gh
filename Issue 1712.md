@@ -174,7 +174,7 @@ Changing status from new to assigned.
 archive/issue_comments_010855.json:
 ```json
 {
-    "body": "Attachment\n\nAs of 2.9.10.alpha0, `BooleanPolynomialRing` doesn't support coercion from strings. Approximating the test case with\n\n\n```\nP(a) == R(a)\n```\n\n\ngives a similar error. The real culprit is here:\n\n\n```\nP(a)\n```\n\n\nWhen trying to coerce an element from a ring that compares equal to self, the coercion model goes into an infinite recursion, because of the following lines  in `sage/structure/parent.pyx` (starting from line 349)\n\n\n```\ncdef _coerce_c(self, x):          # DO NOT OVERRIDE THIS (call it)\n    try:\n        P = x.parent()   # todo -- optimize\n        if P is self:\n            return x\n        elif P == self:      # canonically isomorphic parents in same category.\n            return self(x)   \n\n```\n\n\nIf `x` has a \"canonically isomorphic parent\", then the coerce function of `self` should handle the conversion, which is called by the code that follows the segment above. Calling `self(x)` leads to `self.__call__` trying `self._coerce_c`, which results in the infinite recursion.\n\nattachment:trac_1712.patch removes the offending lines, fixing the error. All tests pass after the patch.",
+    "body": "Attachment [trac_1712.patch](tarball://root/attachments/some-uuid/ticket1712/trac_1712.patch) by burcin created at 2008-01-11 10:41:11\n\nAs of 2.9.10.alpha0, `BooleanPolynomialRing` doesn't support coercion from strings. Approximating the test case with\n\n\n```\nP(a) == R(a)\n```\n\n\ngives a similar error. The real culprit is here:\n\n\n```\nP(a)\n```\n\n\nWhen trying to coerce an element from a ring that compares equal to self, the coercion model goes into an infinite recursion, because of the following lines  in `sage/structure/parent.pyx` (starting from line 349)\n\n\n```\ncdef _coerce_c(self, x):          # DO NOT OVERRIDE THIS (call it)\n    try:\n        P = x.parent()   # todo -- optimize\n        if P is self:\n            return x\n        elif P == self:      # canonically isomorphic parents in same category.\n            return self(x)   \n\n```\n\n\nIf `x` has a \"canonically isomorphic parent\", then the coerce function of `self` should handle the conversion, which is called by the code that follows the segment above. Calling `self(x)` leads to `self.__call__` trying `self._coerce_c`, which results in the infinite recursion.\n\nattachment:trac_1712.patch removes the offending lines, fixing the error. All tests pass after the patch.",
     "created_at": "2008-01-11T10:41:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1712",
     "type": "issue_comment",
@@ -183,7 +183,7 @@ archive/issue_comments_010855.json:
 }
 ```
 
-Attachment
+Attachment [trac_1712.patch](tarball://root/attachments/some-uuid/ticket1712/trac_1712.patch) by burcin created at 2008-01-11 10:41:11
 
 As of 2.9.10.alpha0, `BooleanPolynomialRing` doesn't support coercion from strings. Approximating the test case with
 
@@ -227,7 +227,7 @@ attachment:trac_1712.patch removes the offending lines, fixing the error. All te
 archive/issue_comments_010856.json:
 ```json
 {
-    "body": "Attachment\n\nadd testcase to BooleanPolynomialRing._coerce_c_impl to catch this error",
+    "body": "Attachment [coercion_test.patch](tarball://root/attachments/some-uuid/ticket1712/coercion_test.patch) by burcin created at 2008-01-11 10:48:26\n\nadd testcase to BooleanPolynomialRing._coerce_c_impl to catch this error",
     "created_at": "2008-01-11T10:48:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1712",
     "type": "issue_comment",
@@ -236,7 +236,7 @@ archive/issue_comments_010856.json:
 }
 ```
 
-Attachment
+Attachment [coercion_test.patch](tarball://root/attachments/some-uuid/ticket1712/coercion_test.patch) by burcin created at 2008-01-11 10:48:26
 
 add testcase to BooleanPolynomialRing._coerce_c_impl to catch this error
 

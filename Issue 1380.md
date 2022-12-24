@@ -245,7 +245,7 @@ Michael
 archive/issue_comments_008855.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac1380.patch](tarball://root/attachments/some-uuid/ticket1380/trac1380.patch) by rlm created at 2007-12-18 21:09:00",
     "created_at": "2007-12-18T21:09:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1380",
     "type": "issue_comment",
@@ -254,7 +254,7 @@ archive/issue_comments_008855.json:
 }
 ```
 
-Attachment
+Attachment [trac1380.patch](tarball://root/attachments/some-uuid/ticket1380/trac1380.patch) by rlm created at 2007-12-18 21:09:00
 
 
 

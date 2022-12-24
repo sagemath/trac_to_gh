@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4477
 archive/issue_comments_033061.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4477.patch](tarball://root/attachments/some-uuid/ticket4477/trac_4477.patch) by sengupta created at 2008-11-09 08:03:08",
     "created_at": "2008-11-09T08:03:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4477",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_033061.json:
 }
 ```
 
-Attachment
+Attachment [trac_4477.patch](tarball://root/attachments/some-uuid/ticket4477/trac_4477.patch) by sengupta created at 2008-11-09 08:03:08
 
 
 
@@ -223,7 +223,7 @@ ok, fair enough. At some point it starts getting kind of cluttered though, and c
 archive/issue_comments_033070.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4477-2.patch](tarball://root/attachments/some-uuid/ticket4477/trac_4477-2.patch) by dmharvey created at 2008-12-05 03:39:07",
     "created_at": "2008-12-05T03:39:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4477",
     "type": "issue_comment",
@@ -232,7 +232,7 @@ archive/issue_comments_033070.json:
 }
 ```
 
-Attachment
+Attachment [trac_4477-2.patch](tarball://root/attachments/some-uuid/ticket4477/trac_4477-2.patch) by dmharvey created at 2008-12-05 03:39:07
 
 
 

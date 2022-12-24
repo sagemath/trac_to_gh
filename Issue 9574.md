@@ -108,7 +108,7 @@ Changing status from new to needs_review.
 archive/issue_comments_092469.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached a patch that adds all the above files to the .hgignore file.",
+    "body": "Attachment [trac_9574_add_files_to_scripts_hgignore.patch](tarball://root/attachments/some-uuid/ticket9574/trac_9574_add_files_to_scripts_hgignore.patch) by ddrake created at 2010-07-23 03:13:55\n\nI've attached a patch that adds all the above files to the .hgignore file.",
     "created_at": "2010-07-23T03:13:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9574",
     "type": "issue_comment",
@@ -117,7 +117,7 @@ archive/issue_comments_092469.json:
 }
 ```
 
-Attachment
+Attachment [trac_9574_add_files_to_scripts_hgignore.patch](tarball://root/attachments/some-uuid/ticket9574/trac_9574_add_files_to_scripts_hgignore.patch) by ddrake created at 2010-07-23 03:13:55
 
 I've attached a patch that adds all the above files to the .hgignore file.
 

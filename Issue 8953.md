@@ -403,7 +403,7 @@ Nathann
 archive/issue_comments_082521.json:
 ```json
 {
-    "body": "Attachment\n\nIt was probably the other patch causing conflict.",
+    "body": "Attachment [trac_8953.patch](tarball://root/attachments/some-uuid/ticket8953/trac_8953.patch) by rlm created at 2010-07-19 08:34:02\n\nIt was probably the other patch causing conflict.",
     "created_at": "2010-07-19T08:34:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8953",
     "type": "issue_comment",
@@ -412,7 +412,7 @@ archive/issue_comments_082521.json:
 }
 ```
 
-Attachment
+Attachment [trac_8953.patch](tarball://root/attachments/some-uuid/ticket8953/trac_8953.patch) by rlm created at 2010-07-19 08:34:02
 
 It was probably the other patch causing conflict.
 

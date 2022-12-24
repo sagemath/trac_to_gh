@@ -55,7 +55,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6864
 archive/issue_comments_056644.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage.png](tarball://root/attachments/some-uuid/ticket6864/sage.png) by kcrisman created at 2009-09-02 14:19:17",
     "created_at": "2009-09-02T14:19:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6864",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_056644.json:
 }
 ```
 
-Attachment
+Attachment [sage.png](tarball://root/attachments/some-uuid/ticket6864/sage.png) by kcrisman created at 2009-09-02 14:19:17
 
 
 
@@ -73,7 +73,7 @@ Attachment
 archive/issue_comments_056645.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage0.png](tarball://root/attachments/some-uuid/ticket6864/sage0.png) by kcrisman created at 2009-09-02 14:19:29",
     "created_at": "2009-09-02T14:19:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6864",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_056645.json:
 }
 ```
 
-Attachment
+Attachment [sage0.png](tarball://root/attachments/some-uuid/ticket6864/sage0.png) by kcrisman created at 2009-09-02 14:19:29
 
 
 
@@ -91,7 +91,7 @@ Attachment
 archive/issue_comments_056646.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [0.png](tarball://root/attachments/some-uuid/ticket6864/0.png) by kcrisman created at 2009-09-02 14:19:58",
     "created_at": "2009-09-02T14:19:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6864",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_056646.json:
 }
 ```
 
-Attachment
+Attachment [0.png](tarball://root/attachments/some-uuid/ticket6864/0.png) by kcrisman created at 2009-09-02 14:19:58
 
 
 
@@ -109,7 +109,7 @@ Attachment
 archive/issue_comments_056647.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [zz.png](tarball://root/attachments/some-uuid/ticket6864/zz.png) by kcrisman created at 2009-09-02 14:23:08",
     "created_at": "2009-09-02T14:23:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6864",
     "type": "issue_comment",
@@ -118,7 +118,7 @@ archive/issue_comments_056647.json:
 }
 ```
 
-Attachment
+Attachment [zz.png](tarball://root/attachments/some-uuid/ticket6864/zz.png) by kcrisman created at 2009-09-02 14:23:08
 
 
 
@@ -281,7 +281,7 @@ Here's a patch.  I couldn't figure out how to fix the one in database.py, so it 
 archive/issue_comments_056654.json:
 ```json
 {
-    "body": "Attachment\n\nGreat!  Thanks.   This passes all relevant doctests and nothing appears in my home directory.  I think not testing that example will be okay.",
+    "body": "Attachment [trac_6864-SAGETMP.patch](tarball://root/attachments/some-uuid/ticket6864/trac_6864-SAGETMP.patch) by kcrisman created at 2009-09-14 21:18:33\n\nGreat!  Thanks.   This passes all relevant doctests and nothing appears in my home directory.  I think not testing that example will be okay.",
     "created_at": "2009-09-14T21:18:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6864",
     "type": "issue_comment",
@@ -290,7 +290,7 @@ archive/issue_comments_056654.json:
 }
 ```
 
-Attachment
+Attachment [trac_6864-SAGETMP.patch](tarball://root/attachments/some-uuid/ticket6864/trac_6864-SAGETMP.patch) by kcrisman created at 2009-09-14 21:18:33
 
 Great!  Thanks.   This passes all relevant doctests and nothing appears in my home directory.  I think not testing that example will be okay.
 

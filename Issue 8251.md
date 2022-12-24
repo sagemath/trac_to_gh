@@ -292,7 +292,7 @@ There was also a new polynomial on John Jones' webpage, so the contents of this 
 archive/issue_comments_072996.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8251_Jones_pickle.patch](tarball://root/attachments/some-uuid/ticket8251/8251_Jones_pickle.patch) by wjp created at 2011-01-09 06:35:27",
     "created_at": "2011-01-09T06:35:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8251",
     "type": "issue_comment",
@@ -301,7 +301,7 @@ archive/issue_comments_072996.json:
 }
 ```
 
-Attachment
+Attachment [8251_Jones_pickle.patch](tarball://root/attachments/some-uuid/ticket8251/8251_Jones_pickle.patch) by wjp created at 2011-01-09 06:35:27
 
 
 
@@ -310,7 +310,7 @@ Attachment
 archive/issue_comments_072997.json:
 ```json
 {
-    "body": "Attachment\n\nIt would also be possible to fix unpickling the old sobj (and any other potentially broken old pickles) by creating an empty `RationalField.__setstate__(state)`.",
+    "body": "Attachment [jones.sobj](tarball://root/attachments/some-uuid/ticket8251/jones.sobj) by wjp created at 2011-01-09 23:00:38\n\nIt would also be possible to fix unpickling the old sobj (and any other potentially broken old pickles) by creating an empty `RationalField.__setstate__(state)`.",
     "created_at": "2011-01-09T23:00:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8251",
     "type": "issue_comment",
@@ -319,7 +319,7 @@ archive/issue_comments_072997.json:
 }
 ```
 
-Attachment
+Attachment [jones.sobj](tarball://root/attachments/some-uuid/ticket8251/jones.sobj) by wjp created at 2011-01-09 23:00:38
 
 It would also be possible to fix unpickling the old sobj (and any other potentially broken old pickles) by creating an empty `RationalField.__setstate__(state)`.
 

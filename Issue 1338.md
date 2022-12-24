@@ -167,7 +167,7 @@ Michael
 archive/issue_comments_008579.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_1338.patch](tarball://root/attachments/some-uuid/ticket1338/trac_1338.patch) by mabshoff created at 2009-05-15 11:41:16",
     "created_at": "2009-05-15T11:41:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1338",
     "type": "issue_comment",
@@ -176,7 +176,7 @@ archive/issue_comments_008579.json:
 }
 ```
 
-Attachment
+Attachment [trac_1338.patch](tarball://root/attachments/some-uuid/ticket1338/trac_1338.patch) by mabshoff created at 2009-05-15 11:41:16
 
 
 

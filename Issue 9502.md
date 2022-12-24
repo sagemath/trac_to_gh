@@ -83,7 +83,7 @@ Changing status from new to needs_review.
 archive/issue_comments_091260.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9502_basis_parent_bug_in_FreeModule.patch](tarball://root/attachments/some-uuid/ticket9502/trac_9502_basis_parent_bug_in_FreeModule.patch) by vbraun created at 2010-07-21 00:28:12",
     "created_at": "2010-07-21T00:28:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9502",
     "type": "issue_comment",
@@ -92,7 +92,7 @@ archive/issue_comments_091260.json:
 }
 ```
 
-Attachment
+Attachment [trac_9502_basis_parent_bug_in_FreeModule.patch](tarball://root/attachments/some-uuid/ticket9502/trac_9502_basis_parent_bug_in_FreeModule.patch) by vbraun created at 2010-07-21 00:28:12
 
 
 
@@ -223,7 +223,7 @@ which is changed.   And #8562 in alpha0 did change the behavior of Fields, thoug
 archive/issue_comments_091267.json:
 ```json
 {
-    "body": "Attachment\n\nReverted change to symbolic/ring.pyx",
+    "body": "Attachment [trac_9502_basis_parent_bug_in_FreeModule.2.patch](tarball://root/attachments/some-uuid/ticket9502/trac_9502_basis_parent_bug_in_FreeModule.2.patch) by novoselt created at 2010-07-24 07:40:27\n\nReverted change to symbolic/ring.pyx",
     "created_at": "2010-07-24T07:40:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9502",
     "type": "issue_comment",
@@ -232,7 +232,7 @@ archive/issue_comments_091267.json:
 }
 ```
 
-Attachment
+Attachment [trac_9502_basis_parent_bug_in_FreeModule.2.patch](tarball://root/attachments/some-uuid/ticket9502/trac_9502_basis_parent_bug_in_FreeModule.2.patch) by novoselt created at 2010-07-24 07:40:27
 
 Reverted change to symbolic/ring.pyx
 

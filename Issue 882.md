@@ -62,7 +62,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/882
 archive/issue_comments_005455.json:
 ```json
 {
-    "body": "Attachment\n\nI have attached a patch to change RR->ZZ coercion failure from ValueError to TypeError.  This fixes the doctest errors in sets/set.py and matrix/matrix_integer_dense.py.",
+    "body": "Attachment [6928.patch](tarball://root/attachments/some-uuid/ticket882/6928.patch) by cwitty created at 2007-10-13 19:58:41\n\nI have attached a patch to change RR->ZZ coercion failure from ValueError to TypeError.  This fixes the doctest errors in sets/set.py and matrix/matrix_integer_dense.py.",
     "created_at": "2007-10-13T19:58:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/882",
     "type": "issue_comment",
@@ -71,7 +71,7 @@ archive/issue_comments_005455.json:
 }
 ```
 
-Attachment
+Attachment [6928.patch](tarball://root/attachments/some-uuid/ticket882/6928.patch) by cwitty created at 2007-10-13 19:58:41
 
 I have attached a patch to change RR->ZZ coercion failure from ValueError to TypeError.  This fixes the doctest errors in sets/set.py and matrix/matrix_integer_dense.py.
 

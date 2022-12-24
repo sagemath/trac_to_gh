@@ -127,7 +127,7 @@ and have i assigned to 1.
 archive/issue_comments_018237.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2653-integral-norms.patch](tarball://root/attachments/some-uuid/ticket2653/2653-integral-norms.patch) by robertwb created at 2008-03-26 04:34:09",
     "created_at": "2008-03-26T04:34:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2653",
     "type": "issue_comment",
@@ -136,7 +136,7 @@ archive/issue_comments_018237.json:
 }
 ```
 
-Attachment
+Attachment [2653-integral-norms.patch](tarball://root/attachments/some-uuid/ticket2653/2653-integral-norms.patch) by robertwb created at 2008-03-26 04:34:09
 
 
 

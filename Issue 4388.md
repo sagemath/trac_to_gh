@@ -141,7 +141,7 @@ sage: L.complex_area()
 archive/issue_comments_032301.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-trac4388.patch](tarball://root/attachments/some-uuid/ticket4388/sage-trac4388.patch) by cremona created at 2008-10-30 18:46:03",
     "created_at": "2008-10-30T18:46:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4388",
     "type": "issue_comment",
@@ -150,7 +150,7 @@ archive/issue_comments_032301.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac4388.patch](tarball://root/attachments/some-uuid/ticket4388/sage-trac4388.patch) by cremona created at 2008-10-30 18:46:03
 
 
 

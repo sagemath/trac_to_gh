@@ -170,7 +170,7 @@ Nathann
 archive/issue_comments_084067.json:
 ```json
 {
-    "body": "Attachment\n\nHello, Nathann!\n\nDid you rebase it on sage-4.4.3? It seems so because it doesn't apply on sage-4.4.4. Since it touches many parts of the code, I don't know what would be the best strategy to make sure it is correctly based and it does not raise any problem with other patches.\n\nHaving looked at the code, it will probably be a fast review, as soon as I have checked for the improved efficiency.",
+    "body": "Attachment [trac_9061.patch](tarball://root/attachments/some-uuid/ticket9061/trac_9061.patch) by abmasse created at 2010-07-05 13:19:17\n\nHello, Nathann!\n\nDid you rebase it on sage-4.4.3? It seems so because it doesn't apply on sage-4.4.4. Since it touches many parts of the code, I don't know what would be the best strategy to make sure it is correctly based and it does not raise any problem with other patches.\n\nHaving looked at the code, it will probably be a fast review, as soon as I have checked for the improved efficiency.",
     "created_at": "2010-07-05T13:19:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9061",
     "type": "issue_comment",
@@ -179,7 +179,7 @@ archive/issue_comments_084067.json:
 }
 ```
 
-Attachment
+Attachment [trac_9061.patch](tarball://root/attachments/some-uuid/ticket9061/trac_9061.patch) by abmasse created at 2010-07-05 13:19:17
 
 Hello, Nathann!
 

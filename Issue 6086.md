@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6086
 archive/issue_comments_048492.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6086_laplacian.patch](tarball://root/attachments/some-uuid/ticket6086/trac_6086_laplacian.patch) by dperkinson created at 2009-05-19 19:53:48",
     "created_at": "2009-05-19T19:53:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6086",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_048492.json:
 }
 ```
 
-Attachment
+Attachment [trac_6086_laplacian.patch](tarball://root/attachments/some-uuid/ticket6086/trac_6086_laplacian.patch) by dperkinson created at 2009-05-19 19:53:48
 
 
 

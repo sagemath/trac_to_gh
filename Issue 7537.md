@@ -222,7 +222,7 @@ This patch depends on #9989 (not in terms of functionality, but it will fail to 
 archive/issue_comments_063929.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7537-iterator.patch](tarball://root/attachments/some-uuid/ticket7537/trac_7537-iterator.patch) by burcin created at 2011-03-23 12:08:20",
     "created_at": "2011-03-23T12:08:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7537",
     "type": "issue_comment",
@@ -231,7 +231,7 @@ archive/issue_comments_063929.json:
 }
 ```
 
-Attachment
+Attachment [trac_7537-iterator.patch](tarball://root/attachments/some-uuid/ticket7537/trac_7537-iterator.patch) by burcin created at 2011-03-23 12:08:20
 
 
 

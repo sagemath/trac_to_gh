@@ -51,7 +51,7 @@ I'll actually upload the patches when I'm on a stable enough connection to do so
 archive/issue_comments_031226.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4276-nf-coerce1.patch](tarball://root/attachments/some-uuid/ticket4276/4276-nf-coerce1.patch) by robertwb created at 2008-10-14 10:57:24",
     "created_at": "2008-10-14T10:57:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4276",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_031226.json:
 }
 ```
 
-Attachment
+Attachment [4276-nf-coerce1.patch](tarball://root/attachments/some-uuid/ticket4276/4276-nf-coerce1.patch) by robertwb created at 2008-10-14 10:57:24
 
 
 
@@ -69,7 +69,7 @@ Attachment
 archive/issue_comments_031227.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4276-nf-coerce2.patch](tarball://root/attachments/some-uuid/ticket4276/4276-nf-coerce2.patch) by robertwb created at 2008-10-14 10:57:48",
     "created_at": "2008-10-14T10:57:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4276",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_031227.json:
 }
 ```
 
-Attachment
+Attachment [4276-nf-coerce2.patch](tarball://root/attachments/some-uuid/ticket4276/4276-nf-coerce2.patch) by robertwb created at 2008-10-14 10:57:48
 
 
 
@@ -87,7 +87,7 @@ Attachment
 archive/issue_comments_031228.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4276-nf-coerce3.patch](tarball://root/attachments/some-uuid/ticket4276/4276-nf-coerce3.patch) by robertwb created at 2008-10-14 10:58:23",
     "created_at": "2008-10-14T10:58:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4276",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_031228.json:
 }
 ```
 
-Attachment
+Attachment [4276-nf-coerce3.patch](tarball://root/attachments/some-uuid/ticket4276/4276-nf-coerce3.patch) by robertwb created at 2008-10-14 10:58:23
 
 
 
@@ -105,7 +105,7 @@ Attachment
 archive/issue_comments_031229.json:
 ```json
 {
-    "body": "Attachment\n\nTo help possible reviewers of what looks like very useful and good stuff, would it be possible to write a few words about what is going on here?\n\nBy the way, the second patch does not view properly whan I click on it.  I don't know why.",
+    "body": "Attachment [4276-nf-coerce4.patch](tarball://root/attachments/some-uuid/ticket4276/4276-nf-coerce4.patch) by cremona created at 2008-10-22 20:04:07\n\nTo help possible reviewers of what looks like very useful and good stuff, would it be possible to write a few words about what is going on here?\n\nBy the way, the second patch does not view properly whan I click on it.  I don't know why.",
     "created_at": "2008-10-22T20:04:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4276",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_031229.json:
 }
 ```
 
-Attachment
+Attachment [4276-nf-coerce4.patch](tarball://root/attachments/some-uuid/ticket4276/4276-nf-coerce4.patch) by cremona created at 2008-10-22 20:04:07
 
 To help possible reviewers of what looks like very useful and good stuff, would it be possible to write a few words about what is going on here?
 
@@ -238,7 +238,7 @@ I am saying I want the number filed defined by `x^5-x+1` *with* the embedding in
 archive/issue_comments_031233.json:
 ```json
 {
-    "body": "Attachment\n\nOK, I've attached some more documentation on embeddings. Also, since this is a coercion ticket, one of the main points of testing it is to make sure things still work like they used to.",
+    "body": "Attachment [4276-nf-embedding-docs.patch](tarball://root/attachments/some-uuid/ticket4276/4276-nf-embedding-docs.patch) by robertwb created at 2008-11-16 00:16:48\n\nOK, I've attached some more documentation on embeddings. Also, since this is a coercion ticket, one of the main points of testing it is to make sure things still work like they used to.",
     "created_at": "2008-11-16T00:16:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4276",
     "type": "issue_comment",
@@ -247,7 +247,7 @@ archive/issue_comments_031233.json:
 }
 ```
 
-Attachment
+Attachment [4276-nf-embedding-docs.patch](tarball://root/attachments/some-uuid/ticket4276/4276-nf-embedding-docs.patch) by robertwb created at 2008-11-16 00:16:48
 
 OK, I've attached some more documentation on embeddings. Also, since this is a coercion ticket, one of the main points of testing it is to make sure things still work like they used to.
 
@@ -692,7 +692,7 @@ sage:
 archive/issue_comments_031237.json:
 ```json
 {
-    "body": "Attachment\n\n`4276-ncalexan.patch` applies to 3.2.1.alpha2 and aggregates all robertwb's patches.",
+    "body": "Attachment [4276-ncalexan.patch](tarball://root/attachments/some-uuid/ticket4276/4276-ncalexan.patch) by ncalexan created at 2008-12-01 04:26:05\n\n`4276-ncalexan.patch` applies to 3.2.1.alpha2 and aggregates all robertwb's patches.",
     "created_at": "2008-12-01T04:26:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4276",
     "type": "issue_comment",
@@ -701,7 +701,7 @@ archive/issue_comments_031237.json:
 }
 ```
 
-Attachment
+Attachment [4276-ncalexan.patch](tarball://root/attachments/some-uuid/ticket4276/4276-ncalexan.patch) by ncalexan created at 2008-12-01 04:26:05
 
 `4276-ncalexan.patch` applies to 3.2.1.alpha2 and aggregates all robertwb's patches.
 
@@ -760,7 +760,7 @@ I agree these tracebacks are bad, but it's having trouble deciding which of I*sq
 archive/issue_comments_031240.json:
 ```json
 {
-    "body": "Attachment\n\nEverything rebased against 3.2.1",
+    "body": "Attachment [4276-nf-coerce-all.patch](tarball://root/attachments/some-uuid/ticket4276/4276-nf-coerce-all.patch) by robertwb created at 2008-12-02 13:01:04\n\nEverything rebased against 3.2.1",
     "created_at": "2008-12-02T13:01:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4276",
     "type": "issue_comment",
@@ -769,7 +769,7 @@ archive/issue_comments_031240.json:
 }
 ```
 
-Attachment
+Attachment [4276-nf-coerce-all.patch](tarball://root/attachments/some-uuid/ticket4276/4276-nf-coerce-all.patch) by robertwb created at 2008-12-02 13:01:04
 
 Everything rebased against 3.2.1
 
@@ -845,7 +845,7 @@ apply after the latest rebase
 archive/issue_comments_031244.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch should address the issues.",
+    "body": "Attachment [4276-nf-coerce-fixes.patch](tarball://root/attachments/some-uuid/ticket4276/4276-nf-coerce-fixes.patch) by robertwb created at 2008-12-02 21:50:57\n\nThe attached patch should address the issues.",
     "created_at": "2008-12-02T21:50:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4276",
     "type": "issue_comment",
@@ -854,7 +854,7 @@ archive/issue_comments_031244.json:
 }
 ```
 
-Attachment
+Attachment [4276-nf-coerce-fixes.patch](tarball://root/attachments/some-uuid/ticket4276/4276-nf-coerce-fixes.patch) by robertwb created at 2008-12-02 21:50:57
 
 The attached patch should address the issues.
 
@@ -1261,7 +1261,7 @@ AttributeError: 'NoneType' object has no attribute 'polynomial'
 archive/issue_comments_031248.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of the others",
+    "body": "Attachment [4276-nf-coerce-fixes2.patch](tarball://root/attachments/some-uuid/ticket4276/4276-nf-coerce-fixes2.patch) by robertwb created at 2008-12-04 07:41:13\n\napply on top of the others",
     "created_at": "2008-12-04T07:41:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4276",
     "type": "issue_comment",
@@ -1270,7 +1270,7 @@ archive/issue_comments_031248.json:
 }
 ```
 
-Attachment
+Attachment [4276-nf-coerce-fixes2.patch](tarball://root/attachments/some-uuid/ticket4276/4276-nf-coerce-fixes2.patch) by robertwb created at 2008-12-04 07:41:13
 
 apply on top of the others
 
@@ -1486,7 +1486,7 @@ apply on top of fixes2
 archive/issue_comments_031256.json:
 ```json
 {
-    "body": "Attachment\n\nOK, the issue found by Nick has been resolved.",
+    "body": "Attachment [4276-nf-coerce-fixes3.patch](tarball://root/attachments/some-uuid/ticket4276/4276-nf-coerce-fixes3.patch) by robertwb created at 2008-12-09 19:30:08\n\nOK, the issue found by Nick has been resolved.",
     "created_at": "2008-12-09T19:30:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4276",
     "type": "issue_comment",
@@ -1495,7 +1495,7 @@ archive/issue_comments_031256.json:
 }
 ```
 
-Attachment
+Attachment [4276-nf-coerce-fixes3.patch](tarball://root/attachments/some-uuid/ticket4276/4276-nf-coerce-fixes3.patch) by robertwb created at 2008-12-09 19:30:08
 
 OK, the issue found by Nick has been resolved.
 

@@ -123,7 +123,7 @@ The symbolic versions are significantly slower than Python's builtin `min()` and
 archive/issue_comments_057458.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6949-symbolic_min_max.patch](tarball://root/attachments/some-uuid/ticket6949/trac_6949-symbolic_min_max.patch) by burcin created at 2010-04-06 15:24:18",
     "created_at": "2010-04-06T15:24:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6949",
     "type": "issue_comment",
@@ -132,7 +132,7 @@ archive/issue_comments_057458.json:
 }
 ```
 
-Attachment
+Attachment [trac_6949-symbolic_min_max.patch](tarball://root/attachments/some-uuid/ticket6949/trac_6949-symbolic_min_max.patch) by burcin created at 2010-04-06 15:24:18
 
 
 
@@ -281,7 +281,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_057465.json:
 ```json
 {
-    "body": "Attachment\n\nThanks for the review.\n\nThe new patch attachment:trac_6949-symbolic_min_max.take2.patch replaces the previous one, and implements `_evalf_()` methods for numeric evaluation. I also created a base class with the common code from `__call__()` and `_eval_()` methods.\n\nCan you take another look?",
+    "body": "Attachment [trac_6949-symbolic_min_max.take2.patch](tarball://root/attachments/some-uuid/ticket6949/trac_6949-symbolic_min_max.take2.patch) by burcin created at 2010-05-05 04:23:30\n\nThanks for the review.\n\nThe new patch attachment:trac_6949-symbolic_min_max.take2.patch replaces the previous one, and implements `_evalf_()` methods for numeric evaluation. I also created a base class with the common code from `__call__()` and `_eval_()` methods.\n\nCan you take another look?",
     "created_at": "2010-05-05T04:23:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6949",
     "type": "issue_comment",
@@ -290,7 +290,7 @@ archive/issue_comments_057465.json:
 }
 ```
 
-Attachment
+Attachment [trac_6949-symbolic_min_max.take2.patch](tarball://root/attachments/some-uuid/ticket6949/trac_6949-symbolic_min_max.take2.patch) by burcin created at 2010-05-05 04:23:30
 
 Thanks for the review.
 
@@ -386,7 +386,7 @@ I don't know if the problem is with integrate or max_symbolic.
 archive/issue_comments_057467.json:
 ```json
 {
-    "body": "Attachment\n\napply only this patch",
+    "body": "Attachment [trac_6949-symbolic_min_max.take3.patch](tarball://root/attachments/some-uuid/ticket6949/trac_6949-symbolic_min_max.take3.patch) by burcin created at 2010-05-05 15:28:49\n\napply only this patch",
     "created_at": "2010-05-05T15:28:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6949",
     "type": "issue_comment",
@@ -395,7 +395,7 @@ archive/issue_comments_057467.json:
 }
 ```
 
-Attachment
+Attachment [trac_6949-symbolic_min_max.take3.patch](tarball://root/attachments/some-uuid/ticket6949/trac_6949-symbolic_min_max.take3.patch) by burcin created at 2010-05-05 15:28:49
 
 apply only this patch
 

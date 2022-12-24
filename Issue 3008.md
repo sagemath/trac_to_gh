@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3008
 archive/issue_comments_020684.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch:\n\n```\nFix trac #3008 -- Fix delete first cell bug. Also:\n  2. Make deleting/merging cells via control-backspace feel slightly snappier\n  3. Improve the documentation in js.py for the join_cell function.\n```\n",
+    "body": "Attachment [sage-3008.patch](tarball://root/attachments/some-uuid/ticket3008/sage-3008.patch) by was created at 2008-05-10 23:13:03\n\nThis patch:\n\n```\nFix trac #3008 -- Fix delete first cell bug. Also:\n  2. Make deleting/merging cells via control-backspace feel slightly snappier\n  3. Improve the documentation in js.py for the join_cell function.\n```\n",
     "created_at": "2008-05-10T23:13:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3008",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_020684.json:
 }
 ```
 
-Attachment
+Attachment [sage-3008.patch](tarball://root/attachments/some-uuid/ticket3008/sage-3008.patch) by was created at 2008-05-10 23:13:03
 
 This patch:
 

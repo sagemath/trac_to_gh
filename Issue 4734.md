@@ -152,7 +152,7 @@ should be recovered, until a better solution be found. The original code seems b
 archive/issue_comments_035737.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4734.patch](tarball://root/attachments/some-uuid/ticket4734/trac_4734.patch) by was created at 2009-01-24 15:49:38",
     "created_at": "2009-01-24T15:49:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4734",
     "type": "issue_comment",
@@ -161,7 +161,7 @@ archive/issue_comments_035737.json:
 }
 ```
 
-Attachment
+Attachment [trac_4734.patch](tarball://root/attachments/some-uuid/ticket4734/trac_4734.patch) by was created at 2009-01-24 15:49:38
 
 
 

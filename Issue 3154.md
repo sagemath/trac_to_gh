@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3154
 archive/issue_comments_021867.json:
 ```json
 {
-    "body": "Attachment\n\nUses base64.b64en/decode instead.",
+    "body": "Attachment [trac_3154-spurious-u0027-output.patch](tarball://root/attachments/some-uuid/ticket3154/trac_3154-spurious-u0027-output.patch) by timdumol created at 2010-01-17 00:30:44\n\nUses base64.b64en/decode instead.",
     "created_at": "2010-01-17T00:30:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3154",
     "type": "issue_comment",
@@ -51,7 +51,7 @@ archive/issue_comments_021867.json:
 }
 ```
 
-Attachment
+Attachment [trac_3154-spurious-u0027-output.patch](tarball://root/attachments/some-uuid/ticket3154/trac_3154-spurious-u0027-output.patch) by timdumol created at 2010-01-17 00:30:44
 
 Uses base64.b64en/decode instead.
 
@@ -98,7 +98,7 @@ I think using %r to handle escaping quotes would be cleaner than using intermedi
 archive/issue_comments_021870.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3154_escaping_quotes.patch](tarball://root/attachments/some-uuid/ticket3154/3154_escaping_quotes.patch) by wjp created at 2010-01-17 21:45:10",
     "created_at": "2010-01-17T21:45:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3154",
     "type": "issue_comment",
@@ -107,7 +107,7 @@ archive/issue_comments_021870.json:
 }
 ```
 
-Attachment
+Attachment [3154_escaping_quotes.patch](tarball://root/attachments/some-uuid/ticket3154/3154_escaping_quotes.patch) by wjp created at 2010-01-17 21:45:10
 
 
 
@@ -241,7 +241,7 @@ Fixes a few doctests and a unicode encoding issue.
 archive/issue_comments_021876.json:
 ```json
 {
-    "body": "Attachment\n\nRebase for minor \"hunk\" failure.  Replaces previous.",
+    "body": "Attachment [3154_escaping_quotes.2.patch](tarball://root/attachments/some-uuid/ticket3154/3154_escaping_quotes.2.patch) by mpatel created at 2010-01-20 01:54:58\n\nRebase for minor \"hunk\" failure.  Replaces previous.",
     "created_at": "2010-01-20T01:54:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3154",
     "type": "issue_comment",
@@ -250,7 +250,7 @@ archive/issue_comments_021876.json:
 }
 ```
 
-Attachment
+Attachment [3154_escaping_quotes.2.patch](tarball://root/attachments/some-uuid/ticket3154/3154_escaping_quotes.2.patch) by mpatel created at 2010-01-20 01:54:58
 
 Rebase for minor "hunk" failure.  Replaces previous.
 
@@ -279,7 +279,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_021878.json:
 ```json
 {
-    "body": "Attachment\n\nNice work!  V3 is just a rebase of V2.",
+    "body": "Attachment [3154_escaping_quotes.3.patch](tarball://root/attachments/some-uuid/ticket3154/3154_escaping_quotes.3.patch) by mpatel created at 2010-01-20 01:57:40\n\nNice work!  V3 is just a rebase of V2.",
     "created_at": "2010-01-20T01:57:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3154",
     "type": "issue_comment",
@@ -288,7 +288,7 @@ archive/issue_comments_021878.json:
 }
 ```
 
-Attachment
+Attachment [3154_escaping_quotes.3.patch](tarball://root/attachments/some-uuid/ticket3154/3154_escaping_quotes.3.patch) by mpatel created at 2010-01-20 01:57:40
 
 Nice work!  V3 is just a rebase of V2.
 
@@ -335,7 +335,7 @@ Rebased vs. SageNB 0.7.4.  Replaces previous.
 archive/issue_comments_021881.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3154_escaping_quotes.4.patch](tarball://root/attachments/some-uuid/ticket3154/3154_escaping_quotes.4.patch) by mpatel created at 2010-02-06 19:27:11",
     "created_at": "2010-02-06T19:27:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3154",
     "type": "issue_comment",
@@ -344,7 +344,7 @@ archive/issue_comments_021881.json:
 }
 ```
 
-Attachment
+Attachment [3154_escaping_quotes.4.patch](tarball://root/attachments/some-uuid/ticket3154/3154_escaping_quotes.4.patch) by mpatel created at 2010-02-06 19:27:11
 
 
 
@@ -425,7 +425,7 @@ Doctest fixes.  Replaces all previous.
 archive/issue_comments_021886.json:
 ```json
 {
-    "body": "Attachment\n\nV5 is rebased for SageNB 0.7.4 and it includes several new doctest fixes.  Can someone review my changes?",
+    "body": "Attachment [3154_escaping_quotes.5.patch](tarball://root/attachments/some-uuid/ticket3154/3154_escaping_quotes.5.patch) by mpatel created at 2010-02-09 05:24:16\n\nV5 is rebased for SageNB 0.7.4 and it includes several new doctest fixes.  Can someone review my changes?",
     "created_at": "2010-02-09T05:24:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3154",
     "type": "issue_comment",
@@ -434,7 +434,7 @@ archive/issue_comments_021886.json:
 }
 ```
 
-Attachment
+Attachment [3154_escaping_quotes.5.patch](tarball://root/attachments/some-uuid/ticket3154/3154_escaping_quotes.5.patch) by mpatel created at 2010-02-09 05:24:16
 
 V5 is rebased for SageNB 0.7.4 and it includes several new doctest fixes.  Can someone review my changes?
 

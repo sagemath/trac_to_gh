@@ -78,7 +78,7 @@ Changing status from new to needs_review.
 archive/issue_comments_061303.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch allows now for non-split multiplicative reduction and for p=3 when the rank is 0. (As we do not need p-adic heights in this case)",
+    "body": "Attachment [trac_7331.patch](tarball://root/attachments/some-uuid/ticket7331/trac_7331.patch) by wuthrich created at 2009-10-28 13:02:44\n\nThis patch allows now for non-split multiplicative reduction and for p=3 when the rank is 0. (As we do not need p-adic heights in this case)",
     "created_at": "2009-10-28T13:02:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7331",
     "type": "issue_comment",
@@ -87,7 +87,7 @@ archive/issue_comments_061303.json:
 }
 ```
 
-Attachment
+Attachment [trac_7331.patch](tarball://root/attachments/some-uuid/ticket7331/trac_7331.patch) by wuthrich created at 2009-10-28 13:02:44
 
 This patch allows now for non-split multiplicative reduction and for p=3 when the rank is 0. (As we do not need p-adic heights in this case)
 
@@ -242,7 +242,7 @@ But I can not reproduce your second issue. This should have been solved by #6455
 archive/issue_comments_061308.json:
 ```json
 {
-    "body": "Attachment\n\nto be applied after teh first patch",
+    "body": "Attachment [trac_7331_2.patch](tarball://root/attachments/some-uuid/ticket7331/trac_7331_2.patch) by wuthrich created at 2009-10-28 18:50:28\n\nto be applied after teh first patch",
     "created_at": "2009-10-28T18:50:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7331",
     "type": "issue_comment",
@@ -251,7 +251,7 @@ archive/issue_comments_061308.json:
 }
 ```
 
-Attachment
+Attachment [trac_7331_2.patch](tarball://root/attachments/some-uuid/ticket7331/trac_7331_2.patch) by wuthrich created at 2009-10-28 18:50:28
 
 to be applied after teh first patch
 

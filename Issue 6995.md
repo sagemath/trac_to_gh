@@ -61,7 +61,7 @@ I wonder if #5221 fixes this.  I don't have an up-to-date alpha to test this, th
 archive/issue_comments_057857.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-6995-contour-extremes.patch](tarball://root/attachments/some-uuid/ticket6995/trac-6995-contour-extremes.patch) by jason created at 2009-11-10 17:28:26",
     "created_at": "2009-11-10T17:28:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6995",
     "type": "issue_comment",
@@ -70,7 +70,7 @@ archive/issue_comments_057857.json:
 }
 ```
 
-Attachment
+Attachment [trac-6995-contour-extremes.patch](tarball://root/attachments/some-uuid/ticket6995/trac-6995-contour-extremes.patch) by jason created at 2009-11-10 17:28:26
 
 
 

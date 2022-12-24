@@ -118,7 +118,7 @@ I agree.
 archive/issue_comments_015001.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_2264.patch](tarball://root/attachments/some-uuid/ticket2264/trac_2264.patch) by mabshoff created at 2008-02-22 21:16:55",
     "created_at": "2008-02-22T21:16:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2264",
     "type": "issue_comment",
@@ -127,7 +127,7 @@ archive/issue_comments_015001.json:
 }
 ```
 
-Attachment
+Attachment [trac_2264.patch](tarball://root/attachments/some-uuid/ticket2264/trac_2264.patch) by mabshoff created at 2008-02-22 21:16:55
 
 
 

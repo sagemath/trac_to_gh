@@ -74,7 +74,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1488
 archive/issue_comments_009579.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-1488.patch](tarball://root/attachments/some-uuid/ticket1488/trac-1488.patch) by was created at 2007-12-13 18:11:18",
     "created_at": "2007-12-13T18:11:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1488",
     "type": "issue_comment",
@@ -83,7 +83,7 @@ archive/issue_comments_009579.json:
 }
 ```
 
-Attachment
+Attachment [trac-1488.patch](tarball://root/attachments/some-uuid/ticket1488/trac-1488.patch) by was created at 2007-12-13 18:11:18
 
 
 

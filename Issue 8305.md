@@ -91,7 +91,7 @@ Changing assignee from cremona to kedlaya.
 archive/issue_comments_073587.json:
 ```json
 {
-    "body": "Attachment\n\nfirst patch, with coverage reaching 67%",
+    "body": "Attachment [trac_8305_monsky_doc.patch](tarball://root/attachments/some-uuid/ticket8305/trac_8305_monsky_doc.patch) by chapoton created at 2013-07-09 09:35:24\n\nfirst patch, with coverage reaching 67%",
     "created_at": "2013-07-09T09:35:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8305",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_073587.json:
 }
 ```
 
-Attachment
+Attachment [trac_8305_monsky_doc.patch](tarball://root/attachments/some-uuid/ticket8305/trac_8305_monsky_doc.patch) by chapoton created at 2013-07-09 09:35:24
 
 first patch, with coverage reaching 67%
 
@@ -147,7 +147,7 @@ after some more work, coverage is now 83%
 archive/issue_comments_073590.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8305_monsky_doc_step2.patch](tarball://root/attachments/some-uuid/ticket8305/trac_8305_monsky_doc_step2.patch) by chapoton created at 2013-10-14 19:33:14",
     "created_at": "2013-10-14T19:33:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8305",
     "type": "issue_comment",
@@ -156,7 +156,7 @@ archive/issue_comments_073590.json:
 }
 ```
 
-Attachment
+Attachment [trac_8305_monsky_doc_step2.patch](tarball://root/attachments/some-uuid/ticket8305/trac_8305_monsky_doc_step2.patch) by chapoton created at 2013-10-14 19:33:14
 
 
 

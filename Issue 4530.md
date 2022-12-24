@@ -97,7 +97,7 @@ Resolution: duplicate
 archive/issue_comments_033747.json:
 ```json
 {
-    "body": "Attachment\n\nDuplicate of bug #4529 (Submitted two times)",
+    "body": "Attachment [sage0.png](tarball://root/attachments/some-uuid/ticket4530/sage0.png) by ronanpaixao created at 2008-11-15 19:03:48\n\nDuplicate of bug #4529 (Submitted two times)",
     "created_at": "2008-11-15T19:03:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4530",
     "type": "issue_comment",
@@ -106,6 +106,6 @@ archive/issue_comments_033747.json:
 }
 ```
 
-Attachment
+Attachment [sage0.png](tarball://root/attachments/some-uuid/ticket4530/sage0.png) by ronanpaixao created at 2008-11-15 19:03:48
 
 Duplicate of bug #4529 (Submitted two times)

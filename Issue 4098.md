@@ -72,7 +72,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4098
 archive/issue_comments_029572.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-4098.patch](tarball://root/attachments/some-uuid/ticket4098/trac-4098.patch) by was created at 2008-09-10 21:10:49",
     "created_at": "2008-09-10T21:10:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4098",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_029572.json:
 }
 ```
 
-Attachment
+Attachment [trac-4098.patch](tarball://root/attachments/some-uuid/ticket4098/trac-4098.patch) by was created at 2008-09-10 21:10:49
 
 
 

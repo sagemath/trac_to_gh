@@ -49,7 +49,7 @@ patch to sagenb repo to fix this problem
 archive/issue_comments_060275.json:
 ```json
 {
-    "body": "Attachment\n\nReset doesn't touch _ names, so the fix is easy -- just use `import sagenb.notebook.interact as _interact_` then everywhere in code refer to `_interact_` instead of `sagenb.notebook.interact`.  This is better on many levels.",
+    "body": "Attachment [trac_sagenb_7255.patch](tarball://root/attachments/some-uuid/ticket7255/trac_sagenb_7255.patch) by was created at 2009-10-20 22:11:26\n\nReset doesn't touch _ names, so the fix is easy -- just use `import sagenb.notebook.interact as _interact_` then everywhere in code refer to `_interact_` instead of `sagenb.notebook.interact`.  This is better on many levels.",
     "created_at": "2009-10-20T22:11:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7255",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_060275.json:
 }
 ```
 
-Attachment
+Attachment [trac_sagenb_7255.patch](tarball://root/attachments/some-uuid/ticket7255/trac_sagenb_7255.patch) by was created at 2009-10-20 22:11:26
 
 Reset doesn't touch _ names, so the fix is easy -- just use `import sagenb.notebook.interact as _interact_` then everywhere in code refer to `_interact_` instead of `sagenb.notebook.interact`.  This is better on many levels.
 

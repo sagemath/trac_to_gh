@@ -93,7 +93,7 @@ I am not sure why jsmath does not pick up the $$s in this case.
 archive/issue_comments_061271.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-7326-html-table-math.patch](tarball://root/attachments/some-uuid/ticket7326/trac-7326-html-table-math.patch) by jason created at 2009-10-28 08:43:35",
     "created_at": "2009-10-28T08:43:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7326",
     "type": "issue_comment",
@@ -102,7 +102,7 @@ archive/issue_comments_061271.json:
 }
 ```
 
-Attachment
+Attachment [trac-7326-html-table-math.patch](tarball://root/attachments/some-uuid/ticket7326/trac-7326-html-table-math.patch) by jason created at 2009-10-28 08:43:35
 
 
 

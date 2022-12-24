@@ -154,7 +154,7 @@ The updated patch is supposed to fix it. Florent: please review!
 archive/issue_comments_059823.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7208_family_enumset.patch](tarball://root/attachments/some-uuid/ticket7208/trac_7208_family_enumset.patch) by nthiery created at 2009-10-16 15:01:00",
     "created_at": "2009-10-16T15:01:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7208",
     "type": "issue_comment",
@@ -163,7 +163,7 @@ archive/issue_comments_059823.json:
 }
 ```
 
-Attachment
+Attachment [trac_7208_family_enumset.patch](tarball://root/attachments/some-uuid/ticket7208/trac_7208_family_enumset.patch) by nthiery created at 2009-10-16 15:01:00
 
 
 

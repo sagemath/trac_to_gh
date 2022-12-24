@@ -90,7 +90,7 @@ Michael
 archive/issue_comments_022032.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3184.patch](tarball://root/attachments/some-uuid/ticket3184/3184.patch) by roed created at 2009-01-24 08:41:39",
     "created_at": "2009-01-24T08:41:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3184",
     "type": "issue_comment",
@@ -99,7 +99,7 @@ archive/issue_comments_022032.json:
 }
 ```
 
-Attachment
+Attachment [3184.patch](tarball://root/attachments/some-uuid/ticket3184/3184.patch) by roed created at 2009-01-24 08:41:39
 
 
 

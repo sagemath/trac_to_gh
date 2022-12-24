@@ -144,7 +144,7 @@ Got:
 archive/issue_comments_038599.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-5067.patch](tarball://root/attachments/some-uuid/ticket5067/trac-5067.patch) by rlm created at 2009-01-24 04:12:29",
     "created_at": "2009-01-24T04:12:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5067",
     "type": "issue_comment",
@@ -153,7 +153,7 @@ archive/issue_comments_038599.json:
 }
 ```
 
-Attachment
+Attachment [trac-5067.patch](tarball://root/attachments/some-uuid/ticket5067/trac-5067.patch) by rlm created at 2009-01-24 04:12:29
 
 
 

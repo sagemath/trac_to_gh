@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3470
 archive/issue_comments_024465.json:
 ```json
 {
-    "body": "Attachment\n\nspkg contains spkg-check, SPKG.txt, hg repo.  Works on debian/xeon.  Needs testing on other platforms.",
+    "body": "Attachment [processing-0.52.spkg](tarball://root/attachments/some-uuid/ticket3470/processing-0.52.spkg) by boothby created at 2008-06-19 18:01:51\n\nspkg contains spkg-check, SPKG.txt, hg repo.  Works on debian/xeon.  Needs testing on other platforms.",
     "created_at": "2008-06-19T18:01:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3470",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_024465.json:
 }
 ```
 
-Attachment
+Attachment [processing-0.52.spkg](tarball://root/attachments/some-uuid/ticket3470/processing-0.52.spkg) by boothby created at 2008-06-19 18:01:51
 
 spkg contains spkg-check, SPKG.txt, hg repo.  Works on debian/xeon.  Needs testing on other platforms.
 

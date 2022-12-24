@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7881
 archive/issue_comments_068499.json:
 ```json
 {
-    "body": "Attachment\n\nI'm all for using the coercion model more, but I don't like the fact that this hides the important docstrings about ZZ[x] and RR[x] in the underscore methods.",
+    "body": "Attachment [7585_6_gcd.patch](tarball://root/attachments/some-uuid/ticket7881/7585_6_gcd.patch) by robertwb created at 2010-01-09 19:58:56\n\nI'm all for using the coercion model more, but I don't like the fact that this hides the important docstrings about ZZ[x] and RR[x] in the underscore methods.",
     "created_at": "2010-01-09T19:58:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7881",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_068499.json:
 }
 ```
 
-Attachment
+Attachment [7585_6_gcd.patch](tarball://root/attachments/some-uuid/ticket7881/7585_6_gcd.patch) by robertwb created at 2010-01-09 19:58:56
 
 I'm all for using the coercion model more, but I don't like the fact that this hides the important docstrings about ZZ[x] and RR[x] in the underscore methods.
 

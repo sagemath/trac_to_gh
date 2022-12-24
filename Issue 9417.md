@@ -103,7 +103,7 @@ See #11055
 archive/issue_comments_089749.json:
 ```json
 {
-    "body": "Attachment\n\nApplies to 4.7.alpha2",
+    "body": "Attachment [trac_9417-tamagawa.patch](tarball://root/attachments/some-uuid/ticket9417/trac_9417-tamagawa.patch) by cremona created at 2011-03-27 19:13:32\n\nApplies to 4.7.alpha2",
     "created_at": "2011-03-27T19:13:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9417",
     "type": "issue_comment",
@@ -112,7 +112,7 @@ archive/issue_comments_089749.json:
 }
 ```
 
-Attachment
+Attachment [trac_9417-tamagawa.patch](tarball://root/attachments/some-uuid/ticket9417/trac_9417-tamagawa.patch) by cremona created at 2011-03-27 19:13:32
 
 Applies to 4.7.alpha2
 

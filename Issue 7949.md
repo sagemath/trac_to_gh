@@ -95,7 +95,7 @@ Finally, in the previous code the doctests with modulus `2^{31}-1` did not test 
 archive/issue_comments_069358.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac7949.patch](tarball://root/attachments/some-uuid/ticket7949/trac7949.patch) by spancratz created at 2010-01-16 18:55:12",
     "created_at": "2010-01-16T18:55:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7949",
     "type": "issue_comment",
@@ -104,7 +104,7 @@ archive/issue_comments_069358.json:
 }
 ```
 
-Attachment
+Attachment [trac7949.patch](tarball://root/attachments/some-uuid/ticket7949/trac7949.patch) by spancratz created at 2010-01-16 18:55:12
 
 
 
@@ -131,7 +131,7 @@ Changing status from new to needs_review.
 archive/issue_comments_069360.json:
 ```json
 {
-    "body": "Attachment\n\nAdditional patch (more doctests)",
+    "body": "Attachment [trac7949_doc.patch](tarball://root/attachments/some-uuid/ticket7949/trac7949_doc.patch) by spancratz created at 2010-01-19 02:59:21\n\nAdditional patch (more doctests)",
     "created_at": "2010-01-19T02:59:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7949",
     "type": "issue_comment",
@@ -140,7 +140,7 @@ archive/issue_comments_069360.json:
 }
 ```
 
-Attachment
+Attachment [trac7949_doc.patch](tarball://root/attachments/some-uuid/ticket7949/trac7949_doc.patch) by spancratz created at 2010-01-19 02:59:21
 
 Additional patch (more doctests)
 

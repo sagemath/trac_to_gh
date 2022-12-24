@@ -96,7 +96,7 @@ In the  ipython `displayhook` it checks to see if underscore was set explicitly 
 archive/issue_comments_094132.json:
 ```json
 {
-    "body": "Attachment\n\nI've posted a patch.  It doesn't have a test for this problem. I could make one, but it's slightly annoying since you have to do everything indirectly through an IPython shell object.",
+    "body": "Attachment [trac_9683.patch](tarball://root/attachments/some-uuid/ticket9683/trac_9683.patch) by mhansen created at 2013-07-24 16:09:34\n\nI've posted a patch.  It doesn't have a test for this problem. I could make one, but it's slightly annoying since you have to do everything indirectly through an IPython shell object.",
     "created_at": "2013-07-24T16:09:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9683",
     "type": "issue_comment",
@@ -105,7 +105,7 @@ archive/issue_comments_094132.json:
 }
 ```
 
-Attachment
+Attachment [trac_9683.patch](tarball://root/attachments/some-uuid/ticket9683/trac_9683.patch) by mhansen created at 2013-07-24 16:09:34
 
 I've posted a patch.  It doesn't have a test for this problem. I could make one, but it's slightly annoying since you have to do everything indirectly through an IPython shell object.
 

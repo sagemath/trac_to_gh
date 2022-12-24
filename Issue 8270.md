@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8270
 archive/issue_comments_073208.json:
 ```json
 {
-    "body": "Attachment\n\nThe file spkg/install  The iconv package is added.",
+    "body": "Attachment [install](tarball://root/attachments/some-uuid/ticket8270/install) by drkirkby created at 2010-02-15 11:46:21\n\nThe file spkg/install  The iconv package is added.",
     "created_at": "2010-02-15T11:46:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8270",
     "type": "issue_comment",
@@ -51,7 +51,7 @@ archive/issue_comments_073208.json:
 }
 ```
 
-Attachment
+Attachment [install](tarball://root/attachments/some-uuid/ticket8270/install) by drkirkby created at 2010-02-15 11:46:21
 
 The file spkg/install  The iconv package is added.
 
@@ -62,7 +62,7 @@ The file spkg/install  The iconv package is added.
 archive/issue_comments_073209.json:
 ```json
 {
-    "body": "Attachment\n\nDiff between the old spkg/install and the updated spkg/install for iconv support",
+    "body": "Attachment [install.diff](tarball://root/attachments/some-uuid/ticket8270/install.diff) by drkirkby created at 2010-02-15 11:47:06\n\nDiff between the old spkg/install and the updated spkg/install for iconv support",
     "created_at": "2010-02-15T11:47:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8270",
     "type": "issue_comment",
@@ -71,7 +71,7 @@ archive/issue_comments_073209.json:
 }
 ```
 
-Attachment
+Attachment [install.diff](tarball://root/attachments/some-uuid/ticket8270/install.diff) by drkirkby created at 2010-02-15 11:47:06
 
 Diff between the old spkg/install and the updated spkg/install for iconv support
 
@@ -100,7 +100,7 @@ spkg/standard/deps to show packages which depend on iconv.
 archive/issue_comments_073211.json:
 ```json
 {
-    "body": "Attachment\n\nDiff between the old spkg/standard/deps and the new one with iconv",
+    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket8270/deps) by drkirkby created at 2010-02-15 11:48:36\n\nDiff between the old spkg/standard/deps and the new one with iconv",
     "created_at": "2010-02-15T11:48:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8270",
     "type": "issue_comment",
@@ -109,7 +109,7 @@ archive/issue_comments_073211.json:
 }
 ```
 
-Attachment
+Attachment [deps](tarball://root/attachments/some-uuid/ticket8270/deps) by drkirkby created at 2010-02-15 11:48:36
 
 Diff between the old spkg/standard/deps and the new one with iconv
 
@@ -120,7 +120,7 @@ Diff between the old spkg/standard/deps and the new one with iconv
 archive/issue_comments_073212.json:
 ```json
 {
-    "body": "Attachment\n\nIgnore all these file - they were attached to the wrong ticket!! \nSorry about that.",
+    "body": "Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket8270/deps.diff) by drkirkby created at 2010-02-15 11:49:49\n\nIgnore all these file - they were attached to the wrong ticket!! \nSorry about that.",
     "created_at": "2010-02-15T11:49:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8270",
     "type": "issue_comment",
@@ -129,7 +129,7 @@ archive/issue_comments_073212.json:
 }
 ```
 
-Attachment
+Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket8270/deps.diff) by drkirkby created at 2010-02-15 11:49:49
 
 Ignore all these file - they were attached to the wrong ticket!! 
 Sorry about that.

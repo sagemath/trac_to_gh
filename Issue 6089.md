@@ -103,7 +103,7 @@ Of course, the typeset button won't handle any of these yet, but I have hope tha
 archive/issue_comments_048507.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [avoid-jsmath.patch](tarball://root/attachments/some-uuid/ticket6089/avoid-jsmath.patch) by jhpalmieri created at 2009-05-21 05:31:26",
     "created_at": "2009-05-21T05:31:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6089",
     "type": "issue_comment",
@@ -112,7 +112,7 @@ archive/issue_comments_048507.json:
 }
 ```
 
-Attachment
+Attachment [avoid-jsmath.patch](tarball://root/attachments/some-uuid/ticket6089/avoid-jsmath.patch) by jhpalmieri created at 2009-05-21 05:31:26
 
 
 
@@ -311,7 +311,7 @@ apply only this patch
 archive/issue_comments_048514.json:
 ```json
 {
-    "body": "Attachment\n\nHi John,\n\nI've been putting this all through the paces, though I'm not sure I've covered every possible scenario.  ;-) Just one hitch that I have found.\n\n(a) Open a new worksheet, tick the typeset button, type `x<sup>2+y</sup>2` in a cell, and output is the appropriate jsMath rendering.\n\n(b) Mess around with some of the `latex_examples` - add preamble information, and add a string to the jsmath-avoid-list, and `view()` or evaluate with typeset ticked.\n\n(c) Now repeat part (a).  I get a graphic out (not jsMath) and the x is missing (but the exponent of 2 on x is there and in the right place).\n\nIts like the `jsMathOkay` boolean is still set to `False`, but I couldn't track down where in the code there might be a problem.  Certainly it shouldn't be a graphic, but I'm also getting the missing character problem when I try to view lists of objects.  For example, suppose `var('x y z')` and `k` and `g` are variables and the knot and graph examples and all the preamble/avoid setup is in place, then in the notebook\n\n`view([k, z<sup>2+x</sup>2+y^2, gr])`\n\nis a nice run of three graphics, but the x is missing from the expression, so this is after Sage has reordered the terms of the expression.\n\nA couple minor comments.\n\n1.  In latex _examples, the docstring might benefit from including \"\\\\usepackage{tkz-berge}\" in the preamble addition suggestion.  This package is not needed for the example, but will be needed for the more general latex code for graphs being built.  If somebody goes to get the one package, they might as well get the other one while they are at it.  Can you tell I made two trips to get the packages a while ago after being very confused for the need for the second one?  ;-)\n\n2.  I ran `_run_latex_on_file()` on a six-page test file I've been using for debugging lots of this.  It creates several PNG's (numbered) if you run it this way.  Maybe that can go in the doc_string.  Each page of my test file has one image that gets created by the PGF/tikz/tkz-graph stuff, and the pages seem to get clipped on the left/right sides appropriately, but are all 1293 pixels tall.  Not a big deal, but maybe a switch would control this better?  My test file is at http://sage.pastebin.com/m540bee4f\n\nGreat stuff - I'll keep looking at this and we can get it reviewed soon.\n\nRob",
+    "body": "Attachment [avoid-jsmath-version2.patch](tarball://root/attachments/some-uuid/ticket6089/avoid-jsmath-version2.patch) by rbeezer created at 2009-05-24 00:21:57\n\nHi John,\n\nI've been putting this all through the paces, though I'm not sure I've covered every possible scenario.  ;-) Just one hitch that I have found.\n\n(a) Open a new worksheet, tick the typeset button, type `x<sup>2+y</sup>2` in a cell, and output is the appropriate jsMath rendering.\n\n(b) Mess around with some of the `latex_examples` - add preamble information, and add a string to the jsmath-avoid-list, and `view()` or evaluate with typeset ticked.\n\n(c) Now repeat part (a).  I get a graphic out (not jsMath) and the x is missing (but the exponent of 2 on x is there and in the right place).\n\nIts like the `jsMathOkay` boolean is still set to `False`, but I couldn't track down where in the code there might be a problem.  Certainly it shouldn't be a graphic, but I'm also getting the missing character problem when I try to view lists of objects.  For example, suppose `var('x y z')` and `k` and `g` are variables and the knot and graph examples and all the preamble/avoid setup is in place, then in the notebook\n\n`view([k, z<sup>2+x</sup>2+y^2, gr])`\n\nis a nice run of three graphics, but the x is missing from the expression, so this is after Sage has reordered the terms of the expression.\n\nA couple minor comments.\n\n1.  In latex _examples, the docstring might benefit from including \"\\\\usepackage{tkz-berge}\" in the preamble addition suggestion.  This package is not needed for the example, but will be needed for the more general latex code for graphs being built.  If somebody goes to get the one package, they might as well get the other one while they are at it.  Can you tell I made two trips to get the packages a while ago after being very confused for the need for the second one?  ;-)\n\n2.  I ran `_run_latex_on_file()` on a six-page test file I've been using for debugging lots of this.  It creates several PNG's (numbered) if you run it this way.  Maybe that can go in the doc_string.  Each page of my test file has one image that gets created by the PGF/tikz/tkz-graph stuff, and the pages seem to get clipped on the left/right sides appropriately, but are all 1293 pixels tall.  Not a big deal, but maybe a switch would control this better?  My test file is at http://sage.pastebin.com/m540bee4f\n\nGreat stuff - I'll keep looking at this and we can get it reviewed soon.\n\nRob",
     "created_at": "2009-05-24T00:21:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6089",
     "type": "issue_comment",
@@ -320,7 +320,7 @@ archive/issue_comments_048514.json:
 }
 ```
 
-Attachment
+Attachment [avoid-jsmath-version2.patch](tarball://root/attachments/some-uuid/ticket6089/avoid-jsmath-version2.patch) by rbeezer created at 2009-05-24 00:21:57
 
 Hi John,
 
@@ -479,7 +479,7 @@ I have not experimented with the scenarios where some of the tools (like convert
 archive/issue_comments_048521.json:
 ```json
 {
-    "body": "Attachment\n\napply only this patch",
+    "body": "Attachment [avoid-jsmath-version3.patch](tarball://root/attachments/some-uuid/ticket6089/avoid-jsmath-version3.patch) by jhpalmieri created at 2009-05-30 15:35:46\n\napply only this patch",
     "created_at": "2009-05-30T15:35:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6089",
     "type": "issue_comment",
@@ -488,7 +488,7 @@ archive/issue_comments_048521.json:
 }
 ```
 
-Attachment
+Attachment [avoid-jsmath-version3.patch](tarball://root/attachments/some-uuid/ticket6089/avoid-jsmath-version3.patch) by jhpalmieri created at 2009-05-30 15:35:46
 
 apply only this patch
 
@@ -617,7 +617,7 @@ apply only this patch
 archive/issue_comments_048526.json:
 ```json
 {
-    "body": "Attachment\n\ndo not apply: for reference only",
+    "body": "Attachment [avoid-jsmath-version4.patch](tarball://root/attachments/some-uuid/ticket6089/avoid-jsmath-version4.patch) by jhpalmieri created at 2009-06-08 05:36:40\n\ndo not apply: for reference only",
     "created_at": "2009-06-08T05:36:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6089",
     "type": "issue_comment",
@@ -626,7 +626,7 @@ archive/issue_comments_048526.json:
 }
 ```
 
-Attachment
+Attachment [avoid-jsmath-version4.patch](tarball://root/attachments/some-uuid/ticket6089/avoid-jsmath-version4.patch) by jhpalmieri created at 2009-06-08 05:36:40
 
 do not apply: for reference only
 
@@ -637,7 +637,7 @@ do not apply: for reference only
 archive/issue_comments_048527.json:
 ```json
 {
-    "body": "Attachment\n\nPasses all tests (sage -testall) and documentation builds cleanly.\n\nWorks well as designed, and I'm getting much more sensible behavior (fallbacks and error messages) when I simulate dvipng or convert missing.  The extra comments and rearrangements in the code make it easier to understand what's happening.\n\nI meant to say a while back that it makes sense to not work too hard on the lists of objects - if you want a nice graphic of just a single object, you can just view it all by itself.  And then simple lists should/can behave rationally.\n\nDocumentation looks real good, plus its great to see doctests getting very close to 100%.\n\nI applied #5975 on top of this, and then it works well for displaying any graph.\n\nNice work!",
+    "body": "Attachment [avoid-delta34.patch](tarball://root/attachments/some-uuid/ticket6089/avoid-delta34.patch) by rbeezer created at 2009-06-08 06:56:58\n\nPasses all tests (sage -testall) and documentation builds cleanly.\n\nWorks well as designed, and I'm getting much more sensible behavior (fallbacks and error messages) when I simulate dvipng or convert missing.  The extra comments and rearrangements in the code make it easier to understand what's happening.\n\nI meant to say a while back that it makes sense to not work too hard on the lists of objects - if you want a nice graphic of just a single object, you can just view it all by itself.  And then simple lists should/can behave rationally.\n\nDocumentation looks real good, plus its great to see doctests getting very close to 100%.\n\nI applied #5975 on top of this, and then it works well for displaying any graph.\n\nNice work!",
     "created_at": "2009-06-08T06:56:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6089",
     "type": "issue_comment",
@@ -646,7 +646,7 @@ archive/issue_comments_048527.json:
 }
 ```
 
-Attachment
+Attachment [avoid-delta34.patch](tarball://root/attachments/some-uuid/ticket6089/avoid-delta34.patch) by rbeezer created at 2009-06-08 06:56:58
 
 Passes all tests (sage -testall) and documentation builds cleanly.
 

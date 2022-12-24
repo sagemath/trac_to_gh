@@ -135,7 +135,7 @@ archive/issue_comments_088273.json:
 archive/issue_comments_088274.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9343-part1-builds.patch](tarball://root/attachments/some-uuid/ticket9343/9343-part1-builds.patch) by robertwb created at 2010-06-26 19:49:14",
     "created_at": "2010-06-26T19:49:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -144,7 +144,7 @@ archive/issue_comments_088274.json:
 }
 ```
 
-Attachment
+Attachment [9343-part1-builds.patch](tarball://root/attachments/some-uuid/ticket9343/9343-part1-builds.patch) by robertwb created at 2010-06-26 19:49:14
 
 
 
@@ -173,7 +173,7 @@ My spkg is here:
 archive/issue_comments_088276.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9343-part2.patch](tarball://root/attachments/some-uuid/ticket9343/trac_9343-part2.patch) by was created at 2010-06-26 20:23:09",
     "created_at": "2010-06-26T20:23:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -182,7 +182,7 @@ archive/issue_comments_088276.json:
 }
 ```
 
-Attachment
+Attachment [trac_9343-part2.patch](tarball://root/attachments/some-uuid/ticket9343/trac_9343-part2.patch) by was created at 2010-06-26 20:23:09
 
 
 
@@ -191,7 +191,7 @@ Attachment
 archive/issue_comments_088277.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9343-part3-algdep.patch](tarball://root/attachments/some-uuid/ticket9343/9343-part3-algdep.patch) by robertwb created at 2010-06-26 21:12:27",
     "created_at": "2010-06-26T21:12:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -200,7 +200,7 @@ archive/issue_comments_088277.json:
 }
 ```
 
-Attachment
+Attachment [9343-part3-algdep.patch](tarball://root/attachments/some-uuid/ticket9343/9343-part3-algdep.patch) by robertwb created at 2010-06-26 21:12:27
 
 
 
@@ -246,7 +246,7 @@ It is a svn snapshot so we really want to know when it has been taken.
 archive/issue_comments_088280.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9343-part5.patch](tarball://root/attachments/some-uuid/ticket9343/trac_9343-part5.patch) by robertwb created at 2010-06-26 23:18:06",
     "created_at": "2010-06-26T23:18:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -255,7 +255,7 @@ archive/issue_comments_088280.json:
 }
 ```
 
-Attachment
+Attachment [trac_9343-part5.patch](tarball://root/attachments/some-uuid/ticket9343/trac_9343-part5.patch) by robertwb created at 2010-06-26 23:18:06
 
 
 
@@ -264,7 +264,7 @@ Attachment
 archive/issue_comments_088281.json:
 ```json
 {
-    "body": "Attachment\n\nNew spkg location:\n\n   http://sage.math.washington.edu/home/wstein/build/sd22/pari/pari-2.4.3.svn.spkg",
+    "body": "Attachment [9343-part6-symbols.patch](tarball://root/attachments/some-uuid/ticket9343/9343-part6-symbols.patch) by was created at 2010-06-27 00:16:52\n\nNew spkg location:\n\n   http://sage.math.washington.edu/home/wstein/build/sd22/pari/pari-2.4.3.svn.spkg",
     "created_at": "2010-06-27T00:16:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -273,7 +273,7 @@ archive/issue_comments_088281.json:
 }
 ```
 
-Attachment
+Attachment [9343-part6-symbols.patch](tarball://root/attachments/some-uuid/ticket9343/9343-part6-symbols.patch) by was created at 2010-06-27 00:16:52
 
 New spkg location:
 
@@ -304,7 +304,7 @@ New spkg at http://sage.math.washington.edu/home/robertwb/pari-2.4.3.svn.p1.spkg
 archive/issue_comments_088283.json:
 ```json
 {
-    "body": "Attachment\n\nSuspiciousness when installing pari-2.4.3.svn.p1.spkg:\n\n```\n\n0 --with-gxx-include-dir=/include/c++/4.2.1\nThread model: posix\ngcc version 4.2.1 (Apple Inc. build 5659)\n****************************************************\n./spkg-install: line 1: B1: command not found\n./spkg-install: line 1: 2000: command not found\n./spkg-install: line 1: 0c#!/bin/sh: No such file or directory\nConfiguring pari-2.4.3 (DEVELOPMENT VERSION) \nChecking echo to see how to suppress newlines...\n...using \\c\nLooking for some tools first ...\n```\n",
+    "body": "Attachment [trac_9343-part7-fix_signals.patch](tarball://root/attachments/some-uuid/ticket9343/trac_9343-part7-fix_signals.patch) by was created at 2010-06-27 02:56:06\n\nSuspiciousness when installing pari-2.4.3.svn.p1.spkg:\n\n```\n\n0 --with-gxx-include-dir=/include/c++/4.2.1\nThread model: posix\ngcc version 4.2.1 (Apple Inc. build 5659)\n****************************************************\n./spkg-install: line 1: B1: command not found\n./spkg-install: line 1: 2000: command not found\n./spkg-install: line 1: 0c#!/bin/sh: No such file or directory\nConfiguring pari-2.4.3 (DEVELOPMENT VERSION) \nChecking echo to see how to suppress newlines...\n...using \\c\nLooking for some tools first ...\n```\n",
     "created_at": "2010-06-27T02:56:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -313,7 +313,7 @@ archive/issue_comments_088283.json:
 }
 ```
 
-Attachment
+Attachment [trac_9343-part7-fix_signals.patch](tarball://root/attachments/some-uuid/ticket9343/trac_9343-part7-fix_signals.patch) by was created at 2010-06-27 02:56:06
 
 Suspiciousness when installing pari-2.4.3.svn.p1.spkg:
 
@@ -486,7 +486,7 @@ NOTE: pari-2.4.3.svn.p3.spkg fixes the polynomial factorization bug mentioned ab
 archive/issue_comments_088290.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9343-part8.patch](tarball://root/attachments/some-uuid/ticket9343/9343-part8.patch) by robertwb created at 2010-06-27 06:38:28",
     "created_at": "2010-06-27T06:38:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -495,7 +495,7 @@ archive/issue_comments_088290.json:
 }
 ```
 
-Attachment
+Attachment [9343-part8.patch](tarball://root/attachments/some-uuid/ticket9343/9343-part8.patch) by robertwb created at 2010-06-27 06:38:28
 
 
 
@@ -522,7 +522,7 @@ I've updated http://sage.math.washington.edu/home/robertwb/scratch/robertwb/sage
 archive/issue_comments_088292.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9343-extcode-delete_sea_directory.patch](tarball://root/attachments/some-uuid/ticket9343/trac_9343-extcode-delete_sea_directory.patch) by was created at 2010-06-27 07:33:00",
     "created_at": "2010-06-27T07:33:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -531,7 +531,7 @@ archive/issue_comments_088292.json:
 }
 ```
 
-Attachment
+Attachment [trac_9343-extcode-delete_sea_directory.patch](tarball://root/attachments/some-uuid/ticket9343/trac_9343-extcode-delete_sea_directory.patch) by was created at 2010-06-27 07:33:00
 
 
 
@@ -540,7 +540,7 @@ Attachment
 archive/issue_comments_088293.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9343-part9-get_rid_of_sea.patch](tarball://root/attachments/some-uuid/ticket9343/trac_9343-part9-get_rid_of_sea.patch) by was created at 2010-06-27 07:36:44",
     "created_at": "2010-06-27T07:36:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -549,7 +549,7 @@ archive/issue_comments_088293.json:
 }
 ```
 
-Attachment
+Attachment [trac_9343-part9-get_rid_of_sea.patch](tarball://root/attachments/some-uuid/ticket9343/trac_9343-part9-get_rid_of_sea.patch) by was created at 2010-06-27 07:36:44
 
 
 
@@ -558,7 +558,7 @@ Attachment
 archive/issue_comments_088294.json:
 ```json
 {
-    "body": "Attachment\n\na couple more doctest fixes",
+    "body": "Attachment [9343-part10.patch](tarball://root/attachments/some-uuid/ticket9343/9343-part10.patch) by robertwb created at 2010-06-27 08:29:28\n\na couple more doctest fixes",
     "created_at": "2010-06-27T08:29:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -567,7 +567,7 @@ archive/issue_comments_088294.json:
 }
 ```
 
-Attachment
+Attachment [9343-part10.patch](tarball://root/attachments/some-uuid/ticket9343/9343-part10.patch) by robertwb created at 2010-06-27 08:29:28
 
 a couple more doctest fixes
 
@@ -621,7 +621,7 @@ I had to make one chenge to extcode/pari/simon/ell.gp (removing one comma!) and 
 archive/issue_comments_088297.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9343-part11-fixing_misc_tests.patch](tarball://root/attachments/some-uuid/ticket9343/trac_9343-part11-fixing_misc_tests.patch) by was created at 2010-06-28 21:45:51",
     "created_at": "2010-06-28T21:45:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -630,7 +630,7 @@ archive/issue_comments_088297.json:
 }
 ```
 
-Attachment
+Attachment [trac_9343-part11-fixing_misc_tests.patch](tarball://root/attachments/some-uuid/ticket9343/trac_9343-part11-fixing_misc_tests.patch) by was created at 2010-06-28 21:45:51
 
 
 
@@ -668,7 +668,7 @@ As of right now, you can install this into 4.4.4 by doing:
 archive/issue_comments_088299.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9343-extcode-delete-cremona.patch](tarball://root/attachments/some-uuid/ticket9343/trac_9343-extcode-delete-cremona.patch) by cremona created at 2010-06-28 22:03:41",
     "created_at": "2010-06-28T22:03:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -677,7 +677,7 @@ archive/issue_comments_088299.json:
 }
 ```
 
-Attachment
+Attachment [trac_9343-extcode-delete-cremona.patch](tarball://root/attachments/some-uuid/ticket9343/trac_9343-extcode-delete-cremona.patch) by cremona created at 2010-06-28 22:03:41
 
 
 
@@ -686,7 +686,7 @@ Attachment
 archive/issue_comments_088300.json:
 ```json
 {
-    "body": "Attachment\n\nthis flattens all extcode patches above",
+    "body": "Attachment [extcode_9343.patch](tarball://root/attachments/some-uuid/ticket9343/extcode_9343.patch) by was created at 2010-06-28 22:16:53\n\nthis flattens all extcode patches above",
     "created_at": "2010-06-28T22:16:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -695,7 +695,7 @@ archive/issue_comments_088300.json:
 }
 ```
 
-Attachment
+Attachment [extcode_9343.patch](tarball://root/attachments/some-uuid/ticket9343/extcode_9343.patch) by was created at 2010-06-28 22:16:53
 
 this flattens all extcode patches above
 
@@ -724,7 +724,7 @@ flattening of *all* sagelib patches above.
 archive/issue_comments_088302.json:
 ```json
 {
-    "body": "Attachment\n\nThanks!",
+    "body": "Attachment [sagelib_9343.patch](tarball://root/attachments/some-uuid/ticket9343/sagelib_9343.patch) by cremona created at 2010-06-29 01:30:31\n\nThanks!",
     "created_at": "2010-06-29T01:30:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -733,7 +733,7 @@ archive/issue_comments_088302.json:
 }
 ```
 
-Attachment
+Attachment [sagelib_9343.patch](tarball://root/attachments/some-uuid/ticket9343/sagelib_9343.patch) by cremona created at 2010-06-29 01:30:31
 
 Thanks!
 
@@ -1220,7 +1220,7 @@ Please don't move stuff to sage-5.0.     There will be a sage between sage-4.5 a
 archive/issue_comments_088322.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9343_discrete_log.patch](tarball://root/attachments/some-uuid/ticket9343/9343_discrete_log.patch) by jdemeyer created at 2010-07-11 10:26:18",
     "created_at": "2010-07-11T10:26:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -1229,7 +1229,7 @@ archive/issue_comments_088322.json:
 }
 ```
 
-Attachment
+Attachment [9343_discrete_log.patch](tarball://root/attachments/some-uuid/ticket9343/9343_discrete_log.patch) by jdemeyer created at 2010-07-11 10:26:18
 
 
 
@@ -1479,7 +1479,7 @@ This changes $HOME and makes a .gprc file in it which disables the break loop.  
 archive/issue_comments_088332.json:
 ```json
 {
-    "body": "Attachment\n\nJeroen:  I was surprised to see your dokchitser patch since I thought I was working on that -- and I have been in correspondence with Tim D all morning trying to sort out the use of global variables.  So, does you patch sort out all those issues (as well as the easy defult() ones)?  If so, I clearly have wasted a lot of time today.  This example makes it clear how extremely important it is that people say clearly what tey are working on.  And I DID say clearly that I was working on everythin the elliptic_curves directory, which includes all the code which calls the Dokchiter script.\n\nOn your other point, well spotted.  But would it not be simpler to send to the gp process on initialization the command gp._eval_line('breakloop=0;') ?\n\nNow I will go out and enjoy my Sunday, since my efforts seem to be not needed.",
+    "body": "Attachment [9343_extcode_dokchitser.patch](tarball://root/attachments/some-uuid/ticket9343/9343_extcode_dokchitser.patch) by cremona created at 2010-07-11 14:13:56\n\nJeroen:  I was surprised to see your dokchitser patch since I thought I was working on that -- and I have been in correspondence with Tim D all morning trying to sort out the use of global variables.  So, does you patch sort out all those issues (as well as the easy defult() ones)?  If so, I clearly have wasted a lot of time today.  This example makes it clear how extremely important it is that people say clearly what tey are working on.  And I DID say clearly that I was working on everythin the elliptic_curves directory, which includes all the code which calls the Dokchiter script.\n\nOn your other point, well spotted.  But would it not be simpler to send to the gp process on initialization the command gp._eval_line('breakloop=0;') ?\n\nNow I will go out and enjoy my Sunday, since my efforts seem to be not needed.",
     "created_at": "2010-07-11T14:13:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -1488,7 +1488,7 @@ archive/issue_comments_088332.json:
 }
 ```
 
-Attachment
+Attachment [9343_extcode_dokchitser.patch](tarball://root/attachments/some-uuid/ticket9343/9343_extcode_dokchitser.patch) by cremona created at 2010-07-11 14:13:56
 
 Jeroen:  I was surprised to see your dokchitser patch since I thought I was working on that -- and I have been in correspondence with Tim D all morning trying to sort out the use of global variables.  So, does you patch sort out all those issues (as well as the easy defult() ones)?  If so, I clearly have wasted a lot of time today.  This example makes it clear how extremely important it is that people say clearly what tey are working on.  And I DID say clearly that I was working on everythin the elliptic_curves directory, which includes all the code which calls the Dokchiter script.
 
@@ -1593,7 +1593,7 @@ One thing which I looked at but did not manage to fix was factorization of polyn
 archive/issue_comments_088337.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9343_number_field_part1.patch](tarball://root/attachments/some-uuid/ticket9343/9343_number_field_part1.patch) by jdemeyer created at 2010-07-11 16:33:54",
     "created_at": "2010-07-11T16:33:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -1602,7 +1602,7 @@ archive/issue_comments_088337.json:
 }
 ```
 
-Attachment
+Attachment [9343_number_field_part1.patch](tarball://root/attachments/some-uuid/ticket9343/9343_number_field_part1.patch) by jdemeyer created at 2010-07-11 16:33:54
 
 
 
@@ -1712,7 +1712,7 @@ apply instead of previous extcode-dokchitser patch
 archive/issue_comments_088342.json:
 ```json
 {
-    "body": "Attachment\n\nI replaced Jeroen's 9343_extcode-dokchitser.patch with a new one which also fixes the test scripts in extcode/pari/dokchitser;  and fixes one line in extcode/pari/simon/ellQ.gp which is all that is required for that set of scripts.",
+    "body": "Attachment [9343_extcode_dokchitser-1.patch](tarball://root/attachments/some-uuid/ticket9343/9343_extcode_dokchitser-1.patch) by cremona created at 2010-07-12 09:58:09\n\nI replaced Jeroen's 9343_extcode-dokchitser.patch with a new one which also fixes the test scripts in extcode/pari/dokchitser;  and fixes one line in extcode/pari/simon/ellQ.gp which is all that is required for that set of scripts.",
     "created_at": "2010-07-12T09:58:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -1721,7 +1721,7 @@ archive/issue_comments_088342.json:
 }
 ```
 
-Attachment
+Attachment [9343_extcode_dokchitser-1.patch](tarball://root/attachments/some-uuid/ticket9343/9343_extcode_dokchitser-1.patch) by cremona created at 2010-07-12 09:58:09
 
 I replaced Jeroen's 9343_extcode-dokchitser.patch with a new one which also fixes the test scripts in extcode/pari/dokchitser;  and fixes one line in extcode/pari/simon/ellQ.gp which is all that is required for that set of scripts.
 
@@ -1843,7 +1843,7 @@ fixes most doctests in elliptic_curves and interfaces/gp
 archive/issue_comments_088348.json:
 ```json
 {
-    "body": "Attachment\n\ntrac_9343-elliptic-curve.patch + http://www.warwick.ac.uk/staff/J.E.Cremona/pari-2.4.3.svn.p4.spkg  (which upgrades to svn 12533)   do the following:\n\n1. All doctests in schemes/elliptic_curves pass except heegner.py\n2. All doctests in interfaces/* pass except for two issues in gp.py marked not tested\" for now\n3. All in libs/ pass except some remaining issues in gen.pyx, mostly just fuzz but including one SIGSEGV\n\n I thought this worth posting despite there still being issues in some of the files it touches.",
+    "body": "Attachment [trac_9343-elliptic-curve.patch](tarball://root/attachments/some-uuid/ticket9343/trac_9343-elliptic-curve.patch) by cremona created at 2010-07-16 16:29:08\n\ntrac_9343-elliptic-curve.patch + http://www.warwick.ac.uk/staff/J.E.Cremona/pari-2.4.3.svn.p4.spkg  (which upgrades to svn 12533)   do the following:\n\n1. All doctests in schemes/elliptic_curves pass except heegner.py\n2. All doctests in interfaces/* pass except for two issues in gp.py marked not tested\" for now\n3. All in libs/ pass except some remaining issues in gen.pyx, mostly just fuzz but including one SIGSEGV\n\n I thought this worth posting despite there still being issues in some of the files it touches.",
     "created_at": "2010-07-16T16:29:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -1852,7 +1852,7 @@ archive/issue_comments_088348.json:
 }
 ```
 
-Attachment
+Attachment [trac_9343-elliptic-curve.patch](tarball://root/attachments/some-uuid/ticket9343/trac_9343-elliptic-curve.patch) by cremona created at 2010-07-16 16:29:08
 
 trac_9343-elliptic-curve.patch + http://www.warwick.ac.uk/staff/J.E.Cremona/pari-2.4.3.svn.p4.spkg  (which upgrades to svn 12533)   do the following:
 
@@ -1895,7 +1895,7 @@ Dave
 archive/issue_comments_088350.json:
 ```json
 {
-    "body": "Attachment\n\nspkg-check for Pari",
+    "body": "Attachment [spkg-check](tarball://root/attachments/some-uuid/ticket9343/spkg-check) by drkirkby created at 2010-07-16 18:09:28\n\nspkg-check for Pari",
     "created_at": "2010-07-16T18:09:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -1904,7 +1904,7 @@ archive/issue_comments_088350.json:
 }
 ```
 
-Attachment
+Attachment [spkg-check](tarball://root/attachments/some-uuid/ticket9343/spkg-check) by drkirkby created at 2010-07-16 18:09:28
 
 spkg-check for Pari
 
@@ -2454,7 +2454,7 @@ Failure of Pari source code to build outside of Sage on an OpenSolaris machine
 archive/issue_comments_088365.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:83 drkirkby]:\n\n> There are similar issues on Solaris 10 SPARC. I can attach a log if needed, or someone can just try to build on 't2' outside of Pari. You will see very similar. \n> \n> I believe this should be applied on all platforms, as it will be more reliable. The code should be position independent if you are building shared libraries. \n> \n> Dave \n\nI mean someone could try this on 't2.math.washington.edu' without using Sage. I'm sure William would set up an account for a Pari developer. They only need the Pari source - no Sage code to reproduce this error. \n\nDave",
+    "body": "Attachment [Pari-trunk-failure-on-OpenSolaris_x64.log.txt](tarball://root/attachments/some-uuid/ticket9343/Pari-trunk-failure-on-OpenSolaris_x64.log.txt) by drkirkby created at 2010-07-20 10:31:37\n\nReplying to [comment:83 drkirkby]:\n\n> There are similar issues on Solaris 10 SPARC. I can attach a log if needed, or someone can just try to build on 't2' outside of Pari. You will see very similar. \n> \n> I believe this should be applied on all platforms, as it will be more reliable. The code should be position independent if you are building shared libraries. \n> \n> Dave \n\nI mean someone could try this on 't2.math.washington.edu' without using Sage. I'm sure William would set up an account for a Pari developer. They only need the Pari source - no Sage code to reproduce this error. \n\nDave",
     "created_at": "2010-07-20T10:31:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -2463,7 +2463,7 @@ archive/issue_comments_088365.json:
 }
 ```
 
-Attachment
+Attachment [Pari-trunk-failure-on-OpenSolaris_x64.log.txt](tarball://root/attachments/some-uuid/ticket9343/Pari-trunk-failure-on-OpenSolaris_x64.log.txt) by drkirkby created at 2010-07-20 10:31:37
 
 Replying to [comment:83 drkirkby]:
 
@@ -2704,7 +2704,7 @@ Good work!  I am down to 10 files (only!) in sage library with failing doctests,
 archive/issue_comments_088374.json:
 ```json
 {
-    "body": "Attachment\n\nApply to 4.5: replaces ALL previous sagelib patches",
+    "body": "Attachment [sagelib_9343-combined-new.patch](tarball://root/attachments/some-uuid/ticket9343/sagelib_9343-combined-new.patch) by cremona created at 2010-07-20 14:44:03\n\nApply to 4.5: replaces ALL previous sagelib patches",
     "created_at": "2010-07-20T14:44:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -2713,7 +2713,7 @@ archive/issue_comments_088374.json:
 }
 ```
 
-Attachment
+Attachment [sagelib_9343-combined-new.patch](tarball://root/attachments/some-uuid/ticket9343/sagelib_9343-combined-new.patch) by cremona created at 2010-07-20 14:44:03
 
 Apply to 4.5: replaces ALL previous sagelib patches
 
@@ -2943,7 +2943,7 @@ Well I hope someone is, but I'm busy with other things for the next 2 days and t
 archive/issue_comments_088381.json:
 ```json
 {
-    "body": "Attachment\n\nSome fixes in sage/rings/number_fields and doctest changes in sage/rings/polynomial/polynomial_element.pyx",
+    "body": "Attachment [9343_number_field_part2.patch](tarball://root/attachments/some-uuid/ticket9343/9343_number_field_part2.patch) by jdemeyer created at 2010-07-21 00:34:00\n\nSome fixes in sage/rings/number_fields and doctest changes in sage/rings/polynomial/polynomial_element.pyx",
     "created_at": "2010-07-21T00:34:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -2952,7 +2952,7 @@ archive/issue_comments_088381.json:
 }
 ```
 
-Attachment
+Attachment [9343_number_field_part2.patch](tarball://root/attachments/some-uuid/ticket9343/9343_number_field_part2.patch) by jdemeyer created at 2010-07-21 00:34:00
 
 Some fixes in sage/rings/number_fields and doctest changes in sage/rings/polynomial/polynomial_element.pyx
 
@@ -3028,7 +3028,7 @@ Fixes all doctests in sage/rings/number_fields (except for PARI bug 1079)
 archive/issue_comments_088384.json:
 ```json
 {
-    "body": "Attachment\n\nAll doctests are now fixed, except for some which hit [PARI bug 1079](http://pari.math.u-bordeaux.fr/cgi-bin/bugreport.cgi?bug=1079) and some in sage/schemes/elliptic_curves.  Apparently, the PARI update increased the memory requirements of some of the doctests, making them fail on my machine with 3GB RAM.  However, these doctests already take a lot of memory with the vanilla sage 4.5.1, see also [my post at sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/4d4b9a8203b13f22).",
+    "body": "Attachment [9343_number_field_part3.patch](tarball://root/attachments/some-uuid/ticket9343/9343_number_field_part3.patch) by jdemeyer created at 2010-07-21 15:21:21\n\nAll doctests are now fixed, except for some which hit [PARI bug 1079](http://pari.math.u-bordeaux.fr/cgi-bin/bugreport.cgi?bug=1079) and some in sage/schemes/elliptic_curves.  Apparently, the PARI update increased the memory requirements of some of the doctests, making them fail on my machine with 3GB RAM.  However, these doctests already take a lot of memory with the vanilla sage 4.5.1, see also [my post at sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/4d4b9a8203b13f22).",
     "created_at": "2010-07-21T15:21:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -3037,7 +3037,7 @@ archive/issue_comments_088384.json:
 }
 ```
 
-Attachment
+Attachment [9343_number_field_part3.patch](tarball://root/attachments/some-uuid/ticket9343/9343_number_field_part3.patch) by jdemeyer created at 2010-07-21 15:21:21
 
 All doctests are now fixed, except for some which hit [PARI bug 1079](http://pari.math.u-bordeaux.fr/cgi-bin/bugreport.cgi?bug=1079) and some in sage/schemes/elliptic_curves.  Apparently, the PARI update increased the memory requirements of some of the doctests, making them fail on my machine with 3GB RAM.  However, these doctests already take a lot of memory with the vanilla sage 4.5.1, see also [my post at sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/4d4b9a8203b13f22).
 
@@ -3559,7 +3559,7 @@ Dave
 archive/issue_comments_088399.json:
 ```json
 {
-    "body": "Attachment\n\nCombined sagelib patch against sage-4.5.2.alpha0, removes discrete log patch",
+    "body": "Attachment [sagelib_9343_combined3.patch](tarball://root/attachments/some-uuid/ticket9343/sagelib_9343_combined3.patch) by jdemeyer created at 2010-07-23 08:28:12\n\nCombined sagelib patch against sage-4.5.2.alpha0, removes discrete log patch",
     "created_at": "2010-07-23T08:28:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -3568,7 +3568,7 @@ archive/issue_comments_088399.json:
 }
 ```
 
-Attachment
+Attachment [sagelib_9343_combined3.patch](tarball://root/attachments/some-uuid/ticket9343/sagelib_9343_combined3.patch) by jdemeyer created at 2010-07-23 08:28:12
 
 Combined sagelib patch against sage-4.5.2.alpha0, removes discrete log patch
 
@@ -3749,7 +3749,7 @@ There's one test failure in ell_rational_field (extraneous warning output from e
 archive/issue_comments_088406.json:
 ```json
 {
-    "body": "Attachment\n\nfixes doctests in elliptic_curves/ell_number_field",
+    "body": "Attachment [trac_9343-enf-doctest.patch](tarball://root/attachments/some-uuid/ticket9343/trac_9343-enf-doctest.patch) by cremona created at 2010-07-24 08:59:31\n\nfixes doctests in elliptic_curves/ell_number_field",
     "created_at": "2010-07-24T08:59:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -3758,7 +3758,7 @@ archive/issue_comments_088406.json:
 }
 ```
 
-Attachment
+Attachment [trac_9343-enf-doctest.patch](tarball://root/attachments/some-uuid/ticket9343/trac_9343-enf-doctest.patch) by cremona created at 2010-07-24 08:59:31
 
 fixes doctests in elliptic_curves/ell_number_field
 
@@ -4010,7 +4010,7 @@ Allows GMP and Readline to be found on 64-bit OpenSolaris. Also allows one to tu
 archive/issue_comments_088417.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9343-improved-64-bit-support-on-Solaris.patch](tarball://root/attachments/some-uuid/ticket9343/9343-improved-64-bit-support-on-Solaris.patch) by drkirkby created at 2010-07-24 13:51:31",
     "created_at": "2010-07-24T13:51:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -4019,7 +4019,7 @@ archive/issue_comments_088417.json:
 }
 ```
 
-Attachment
+Attachment [9343-improved-64-bit-support-on-Solaris.patch](tarball://root/attachments/some-uuid/ticket9343/9343-improved-64-bit-support-on-Solaris.patch) by drkirkby created at 2010-07-24 13:51:31
 
 
 
@@ -4124,7 +4124,7 @@ Dave
 archive/issue_comments_088421.json:
 ```json
 {
-    "body": "Attachment\n\nMinor improvements to spkg-check. Correct list of dependancies in SPKG.txt - they are MPIR, readline and termcap.",
+    "body": "Attachment [9343-improved-spkg-check-and-SPKG.txt](tarball://root/attachments/some-uuid/ticket9343/9343-improved-spkg-check-and-SPKG.txt) by drkirkby created at 2010-07-24 21:55:16\n\nMinor improvements to spkg-check. Correct list of dependancies in SPKG.txt - they are MPIR, readline and termcap.",
     "created_at": "2010-07-24T21:55:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -4133,7 +4133,7 @@ archive/issue_comments_088421.json:
 }
 ```
 
-Attachment
+Attachment [9343-improved-spkg-check-and-SPKG.txt](tarball://root/attachments/some-uuid/ticket9343/9343-improved-spkg-check-and-SPKG.txt) by drkirkby created at 2010-07-24 21:55:16
 
 Minor improvements to spkg-check. Correct list of dependancies in SPKG.txt - they are MPIR, readline and termcap.
 
@@ -4184,7 +4184,7 @@ Flattening of all extcode patches against sage-4.5.2.alpha0
 archive/issue_comments_088424.json:
 ```json
 {
-    "body": "Attachment\n\ndrkirkby: is there a reason you always put the \"-g\" flag with CFLAGS?  I assume it is a mistake, but I'm asking just in case it isn't.",
+    "body": "Attachment [extcode_9343_combined3.patch](tarball://root/attachments/some-uuid/ticket9343/extcode_9343_combined3.patch) by jdemeyer created at 2010-07-24 22:04:46\n\ndrkirkby: is there a reason you always put the \"-g\" flag with CFLAGS?  I assume it is a mistake, but I'm asking just in case it isn't.",
     "created_at": "2010-07-24T22:04:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -4193,7 +4193,7 @@ archive/issue_comments_088424.json:
 }
 ```
 
-Attachment
+Attachment [extcode_9343_combined3.patch](tarball://root/attachments/some-uuid/ticket9343/extcode_9343_combined3.patch) by jdemeyer created at 2010-07-24 22:04:46
 
 drkirkby: is there a reason you always put the "-g" flag with CFLAGS?  I assume it is a mistake, but I'm asking just in case it isn't.
 
@@ -4406,7 +4406,7 @@ Fix RR(0.0), clean up
 archive/issue_comments_088433.json:
 ```json
 {
-    "body": "Attachment\n\nThe last patch fixes the tanh() issue, it was caused by RR(0.0)._pari_() creating an invalid GEN (it took me a very long time to figure this out).\n\nI added a debug() function to gen objects calling dbgGEN() from the pari library, example:\n\n```\nsage: pari('[1/2, 1.0*I]').debug()  # random addresses\n[&=0000000004c5f010] VEC(lg=3):2200000000000003 0000000004c5eff8 0000000004c5efb0\n  1st component = [&=0000000004c5eff8] FRAC(lg=3):0800000000000003 0000000004c5efe0 0000000004c5efc8\n    num = [&=0000000004c5efe0] INT(lg=3):0200000000000003 (+,lgefint=3):4000000000000003 0000000000000001\n    den = [&=0000000004c5efc8] INT(lg=3):0200000000000003 (+,lgefint=3):4000000000000003 0000000000000002\n  2nd component = [&=0000000004c5efb0] COMPLEX(lg=3):0c00000000000003 00007fae8a2eb840 0000000004c5ef90\n    real = gen_0\n    imag = [&=0000000004c5ef90] REAL(lg=4):0400000000000004 (+,expo=0):6000000000000000 8000000000000000 0000000000000000\n```\n\n\nApart from that, a lot of cleanups, and some more doctests.\n\nAs far as I can tell, everything works now on my system, apart from some doctest failures in elliptic_curves (again, I do not plan to look at this).",
+    "body": "Attachment [9343_various1.patch](tarball://root/attachments/some-uuid/ticket9343/9343_various1.patch) by jdemeyer created at 2010-07-26 18:00:25\n\nThe last patch fixes the tanh() issue, it was caused by RR(0.0)._pari_() creating an invalid GEN (it took me a very long time to figure this out).\n\nI added a debug() function to gen objects calling dbgGEN() from the pari library, example:\n\n```\nsage: pari('[1/2, 1.0*I]').debug()  # random addresses\n[&=0000000004c5f010] VEC(lg=3):2200000000000003 0000000004c5eff8 0000000004c5efb0\n  1st component = [&=0000000004c5eff8] FRAC(lg=3):0800000000000003 0000000004c5efe0 0000000004c5efc8\n    num = [&=0000000004c5efe0] INT(lg=3):0200000000000003 (+,lgefint=3):4000000000000003 0000000000000001\n    den = [&=0000000004c5efc8] INT(lg=3):0200000000000003 (+,lgefint=3):4000000000000003 0000000000000002\n  2nd component = [&=0000000004c5efb0] COMPLEX(lg=3):0c00000000000003 00007fae8a2eb840 0000000004c5ef90\n    real = gen_0\n    imag = [&=0000000004c5ef90] REAL(lg=4):0400000000000004 (+,expo=0):6000000000000000 8000000000000000 0000000000000000\n```\n\n\nApart from that, a lot of cleanups, and some more doctests.\n\nAs far as I can tell, everything works now on my system, apart from some doctest failures in elliptic_curves (again, I do not plan to look at this).",
     "created_at": "2010-07-26T18:00:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -4415,7 +4415,7 @@ archive/issue_comments_088433.json:
 }
 ```
 
-Attachment
+Attachment [9343_various1.patch](tarball://root/attachments/some-uuid/ticket9343/9343_various1.patch) by jdemeyer created at 2010-07-26 18:00:25
 
 The last patch fixes the tanh() issue, it was caused by RR(0.0)._pari_() creating an invalid GEN (it took me a very long time to figure this out).
 
@@ -4444,7 +4444,7 @@ As far as I can tell, everything works now on my system, apart from some doctest
 archive/issue_comments_088434.json:
 ```json
 {
-    "body": "Attachment\n\nDisables failing doctests in elliptic_curves",
+    "body": "Attachment [9343_remove_ell_doctests.patch](tarball://root/attachments/some-uuid/ticket9343/9343_remove_ell_doctests.patch) by jdemeyer created at 2010-07-26 21:09:32\n\nDisables failing doctests in elliptic_curves",
     "created_at": "2010-07-26T21:09:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -4453,7 +4453,7 @@ archive/issue_comments_088434.json:
 }
 ```
 
-Attachment
+Attachment [9343_remove_ell_doctests.patch](tarball://root/attachments/some-uuid/ticket9343/9343_remove_ell_doctests.patch) by jdemeyer created at 2010-07-26 21:09:32
 
 Disables failing doctests in elliptic_curves
 
@@ -4526,7 +4526,7 @@ Fix pari(...).sizebyte(), add pari(...).sizeword()
 archive/issue_comments_088438.json:
 ```json
 {
-    "body": "Attachment\n\nFlattening of all the above sagelib patches",
+    "body": "Attachment [sagelib_9343_combined4.patch](tarball://root/attachments/some-uuid/ticket9343/sagelib_9343_combined4.patch) by jdemeyer created at 2010-07-27 07:58:05\n\nFlattening of all the above sagelib patches",
     "created_at": "2010-07-27T07:58:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -4535,7 +4535,7 @@ archive/issue_comments_088438.json:
 }
 ```
 
-Attachment
+Attachment [sagelib_9343_combined4.patch](tarball://root/attachments/some-uuid/ticket9343/sagelib_9343_combined4.patch) by jdemeyer created at 2010-07-27 07:58:05
 
 Flattening of all the above sagelib patches
 
@@ -4682,7 +4682,7 @@ Total time for all tests: 6622.9 seconds
 archive/issue_comments_088444.json:
 ```json
 {
-    "body": "Attachment\n\nFailures observed on a Sun T5240 (SPARC processors) running Solaris 10 update 7.",
+    "body": "Attachment [Solaris-10-SPARC-ptestlong-failures.log](tarball://root/attachments/some-uuid/ticket9343/Solaris-10-SPARC-ptestlong-failures.log) by drkirkby created at 2010-07-27 15:28:13\n\nFailures observed on a Sun T5240 (SPARC processors) running Solaris 10 update 7.",
     "created_at": "2010-07-27T15:28:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -4691,7 +4691,7 @@ archive/issue_comments_088444.json:
 }
 ```
 
-Attachment
+Attachment [Solaris-10-SPARC-ptestlong-failures.log](tarball://root/attachments/some-uuid/ticket9343/Solaris-10-SPARC-ptestlong-failures.log) by drkirkby created at 2010-07-27 15:28:13
 
 Failures observed on a Sun T5240 (SPARC processors) running Solaris 10 update 7.
 
@@ -4801,7 +4801,7 @@ New version to be tested: [http://cage.ugent.be/~jdemeyer/sage/sage-4.5.2.alpha1
 archive/issue_comments_088449.json:
 ```json
 {
-    "body": "Attachment\n\nFixes doctest failures on 32-bit machines",
+    "body": "Attachment [9343_fix32bit.patch](tarball://root/attachments/some-uuid/ticket9343/9343_fix32bit.patch) by jdemeyer created at 2010-07-29 21:39:16\n\nFixes doctest failures on 32-bit machines",
     "created_at": "2010-07-29T21:39:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -4810,7 +4810,7 @@ archive/issue_comments_088449.json:
 }
 ```
 
-Attachment
+Attachment [9343_fix32bit.patch](tarball://root/attachments/some-uuid/ticket9343/9343_fix32bit.patch) by jdemeyer created at 2010-07-29 21:39:16
 
 Fixes doctest failures on 32-bit machines
 
@@ -4942,7 +4942,7 @@ OK, so apart from heegner.py there's just one other thing.  A different LLL redu
 archive/issue_comments_088456.json:
 ```json
 {
-    "body": "Attachment\n\nCombined patch against sage-4.5.2.rc1",
+    "body": "Attachment [sagelib_9343_combined5.patch](tarball://root/attachments/some-uuid/ticket9343/sagelib_9343_combined5.patch) by jdemeyer created at 2010-08-05 20:23:54\n\nCombined patch against sage-4.5.2.rc1",
     "created_at": "2010-08-05T20:23:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -4951,7 +4951,7 @@ archive/issue_comments_088456.json:
 }
 ```
 
-Attachment
+Attachment [sagelib_9343_combined5.patch](tarball://root/attachments/some-uuid/ticket9343/sagelib_9343_combined5.patch) by jdemeyer created at 2010-08-05 20:23:54
 
 Combined patch against sage-4.5.2.rc1
 
@@ -4998,7 +4998,7 @@ Needed to fix doctests appearing because of PARI svn-12577
 archive/issue_comments_088459.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:167 jdemeyer]:\n> I updated to PARI svn 12577 (some more bugs have been fixed), did a long doctest on a 32-bit and a 64-bit Intel Linux system.  There were a few failures appearing, I will add a patch soon (this patch is not included in the sage distribution [http://cage.ugent.be/~jdemeyer/sage/sage-4.5.2.rc1.newpari.v0.tar](http://cage.ugent.be/~jdemeyer/sage/sage-4.5.2.rc1.newpari.v0.tar))\n\nWith the [Weber patch](http://trac.sagemath.org/sage_trac/attachment/ticket/9343/9343_weber.patch) applied, all long tests pass on Ubuntu 9.04 x86 (Pentium 4 Prescott, gcc 4.3.3, native code; parallel build from scratch; no explicit/extra optimization specified).\n\n(Note that trac does *not* send notifications for file uploads.)",
+    "body": "Attachment [9343_weber.patch](tarball://root/attachments/some-uuid/ticket9343/9343_weber.patch) by leif created at 2010-08-06 12:24:24\n\nReplying to [comment:167 jdemeyer]:\n> I updated to PARI svn 12577 (some more bugs have been fixed), did a long doctest on a 32-bit and a 64-bit Intel Linux system.  There were a few failures appearing, I will add a patch soon (this patch is not included in the sage distribution [http://cage.ugent.be/~jdemeyer/sage/sage-4.5.2.rc1.newpari.v0.tar](http://cage.ugent.be/~jdemeyer/sage/sage-4.5.2.rc1.newpari.v0.tar))\n\nWith the [Weber patch](http://trac.sagemath.org/sage_trac/attachment/ticket/9343/9343_weber.patch) applied, all long tests pass on Ubuntu 9.04 x86 (Pentium 4 Prescott, gcc 4.3.3, native code; parallel build from scratch; no explicit/extra optimization specified).\n\n(Note that trac does *not* send notifications for file uploads.)",
     "created_at": "2010-08-06T12:24:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -5007,7 +5007,7 @@ archive/issue_comments_088459.json:
 }
 ```
 
-Attachment
+Attachment [9343_weber.patch](tarball://root/attachments/some-uuid/ticket9343/9343_weber.patch) by leif created at 2010-08-06 12:24:24
 
 Replying to [comment:167 jdemeyer]:
 > I updated to PARI svn 12577 (some more bugs have been fixed), did a long doctest on a 32-bit and a 64-bit Intel Linux system.  There were a few failures appearing, I will add a patch soon (this patch is not included in the sage distribution [http://cage.ugent.be/~jdemeyer/sage/sage-4.5.2.rc1.newpari.v0.tar](http://cage.ugent.be/~jdemeyer/sage/sage-4.5.2.rc1.newpari.v0.tar))
@@ -5248,7 +5248,7 @@ Flattening of the above sagelib patches against sage-4.5.3.alpha0
 archive/issue_comments_088469.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:176 cremona]:\n> Could someone who is up to date on this post a list of which patches now need applying, and a link to the latest spkg?  The list at the top is just too long, and I don't have a recent working version of this.  Also, does what we have so far apply to 4.5.2?  or 4.5.3.alpha0?  If not, it should...\n\nI rebased the patch to sage-4.5.3.alpha0, but I did not yet have time to test it.  I also tried to clarify the instructions in the ticket description, hope it clears things up...",
+    "body": "Attachment [sagelib_9343_combined6.patch](tarball://root/attachments/some-uuid/ticket9343/sagelib_9343_combined6.patch) by jdemeyer created at 2010-08-12 21:38:54\n\nReplying to [comment:176 cremona]:\n> Could someone who is up to date on this post a list of which patches now need applying, and a link to the latest spkg?  The list at the top is just too long, and I don't have a recent working version of this.  Also, does what we have so far apply to 4.5.2?  or 4.5.3.alpha0?  If not, it should...\n\nI rebased the patch to sage-4.5.3.alpha0, but I did not yet have time to test it.  I also tried to clarify the instructions in the ticket description, hope it clears things up...",
     "created_at": "2010-08-12T21:38:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -5257,7 +5257,7 @@ archive/issue_comments_088469.json:
 }
 ```
 
-Attachment
+Attachment [sagelib_9343_combined6.patch](tarball://root/attachments/some-uuid/ticket9343/sagelib_9343_combined6.patch) by jdemeyer created at 2010-08-12 21:38:54
 
 Replying to [comment:176 cremona]:
 > Could someone who is up to date on this post a list of which patches now need applying, and a link to the latest spkg?  The list at the top is just too long, and I don't have a recent working version of this.  Also, does what we have so far apply to 4.5.2?  or 4.5.3.alpha0?  If not, it should...
@@ -5337,7 +5337,7 @@ apply to sagelib after sagelib_9343_combined6.patch
 archive/issue_comments_088473.json:
 ```json
 {
-    "body": "Attachment\n\nPS to review just above: I also tested with \"make ptestlong\" and there were no problems.",
+    "body": "Attachment [trac_9343-review.patch](tarball://root/attachments/some-uuid/ticket9343/trac_9343-review.patch) by cremona created at 2010-08-13 11:25:18\n\nPS to review just above: I also tested with \"make ptestlong\" and there were no problems.",
     "created_at": "2010-08-13T11:25:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -5346,7 +5346,7 @@ archive/issue_comments_088473.json:
 }
 ```
 
-Attachment
+Attachment [trac_9343-review.patch](tarball://root/attachments/some-uuid/ticket9343/trac_9343-review.patch) by cremona created at 2010-08-13 11:25:18
 
 PS to review just above: I also tested with "make ptestlong" and there were no problems.
 
@@ -5761,7 +5761,7 @@ I've taken the liberty of posting a patch that fixes the heegner.py tests, and a
 archive/issue_comments_088489.json:
 ```json
 {
-    "body": "Attachment\n\nthis fixes the issues with heegner.py and ell_rational_field.py, which were the last remaining after sagelib_9343_combined6.patch",
+    "body": "Attachment [sagelib_9343-heegner_ell_ratioanal.patch](tarball://root/attachments/some-uuid/ticket9343/sagelib_9343-heegner_ell_ratioanal.patch) by was created at 2010-08-14 03:39:51\n\nthis fixes the issues with heegner.py and ell_rational_field.py, which were the last remaining after sagelib_9343_combined6.patch",
     "created_at": "2010-08-14T03:39:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -5770,7 +5770,7 @@ archive/issue_comments_088489.json:
 }
 ```
 
-Attachment
+Attachment [sagelib_9343-heegner_ell_ratioanal.patch](tarball://root/attachments/some-uuid/ticket9343/sagelib_9343-heegner_ell_ratioanal.patch) by was created at 2010-08-14 03:39:51
 
 this fixes the issues with heegner.py and ell_rational_field.py, which were the last remaining after sagelib_9343_combined6.patch
 
@@ -6097,7 +6097,7 @@ I am now doing a fresh test of everything and will report back on Sunday.
 archive/issue_comments_088504.json:
 ```json
 {
-    "body": "Attachment\n\nVarious fixes, remove gp_cremona.py",
+    "body": "Attachment [9343_jd_review.patch](tarball://root/attachments/some-uuid/ticket9343/9343_jd_review.patch) by jdemeyer created at 2010-08-14 22:25:41\n\nVarious fixes, remove gp_cremona.py",
     "created_at": "2010-08-14T22:25:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -6106,7 +6106,7 @@ archive/issue_comments_088504.json:
 }
 ```
 
-Attachment
+Attachment [9343_jd_review.patch](tarball://root/attachments/some-uuid/ticket9343/9343_jd_review.patch) by jdemeyer created at 2010-08-14 22:25:41
 
 Various fixes, remove gp_cremona.py
 
@@ -6624,7 +6624,7 @@ I see.  Simply removing the file is not good enough...
 archive/issue_comments_088520.json:
 ```json
 {
-    "body": "Attachment\n\nFixes Sphinx warning from PariInstance.read() docstring. Apply to Sage library.",
+    "body": "Attachment [trac_9343-sagelib-fix_sphinx_warning-reviewer.patch](tarball://root/attachments/some-uuid/ticket9343/trac_9343-sagelib-fix_sphinx_warning-reviewer.patch) by leif created at 2010-08-15 22:33:48\n\nFixes Sphinx warning from PariInstance.read() docstring. Apply to Sage library.",
     "created_at": "2010-08-15T22:33:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -6633,7 +6633,7 @@ archive/issue_comments_088520.json:
 }
 ```
 
-Attachment
+Attachment [trac_9343-sagelib-fix_sphinx_warning-reviewer.patch](tarball://root/attachments/some-uuid/ticket9343/trac_9343-sagelib-fix_sphinx_warning-reviewer.patch) by leif created at 2010-08-15 22:33:48
 
 Fixes Sphinx warning from PariInstance.read() docstring. Apply to Sage library.
 
@@ -7057,7 +7057,7 @@ I meant to say imaginary part zero.
 archive/issue_comments_088533.json:
 ```json
 {
-    "body": "Attachment\n\nHopefully fixes problem with polynomial_quotient_ring.py",
+    "body": "Attachment [9343_complex_embeddings.patch](tarball://root/attachments/some-uuid/ticket9343/9343_complex_embeddings.patch) by jdemeyer created at 2010-08-16 13:06:19\n\nHopefully fixes problem with polynomial_quotient_ring.py",
     "created_at": "2010-08-16T13:06:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -7066,7 +7066,7 @@ archive/issue_comments_088533.json:
 }
 ```
 
-Attachment
+Attachment [9343_complex_embeddings.patch](tarball://root/attachments/some-uuid/ticket9343/9343_complex_embeddings.patch) by jdemeyer created at 2010-08-16 13:06:19
 
 Hopefully fixes problem with polynomial_quotient_ring.py
 
@@ -7116,7 +7116,7 @@ Flattening of the above sagelib patches against sage-4.5.3.alpha1
 archive/issue_comments_088536.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sagelib_9343_combined7.patch](tarball://root/attachments/some-uuid/ticket9343/sagelib_9343_combined7.patch) by jdemeyer created at 2010-08-16 13:50:01",
     "created_at": "2010-08-16T13:50:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -7125,7 +7125,7 @@ archive/issue_comments_088536.json:
 }
 ```
 
-Attachment
+Attachment [sagelib_9343_combined7.patch](tarball://root/attachments/some-uuid/ticket9343/sagelib_9343_combined7.patch) by jdemeyer created at 2010-08-16 13:50:01
 
 
 
@@ -7336,7 +7336,7 @@ But perhaps something for a follow-up ticket, cleaning up other docstrings as we
 archive/issue_comments_088546.json:
 ```json
 {
-    "body": "Attachment\n\nDoctest coverage of sage/libs/pari/gen.pyx (Sage 4.6.prealpha0)",
+    "body": "Attachment [pari-gen.pyx-coverage.txt](tarball://root/attachments/some-uuid/ticket9343/pari-gen.pyx-coverage.txt) by leif created at 2010-08-16 19:51:59\n\nDoctest coverage of sage/libs/pari/gen.pyx (Sage 4.6.prealpha0)",
     "created_at": "2010-08-16T19:51:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -7345,7 +7345,7 @@ archive/issue_comments_088546.json:
 }
 ```
 
-Attachment
+Attachment [pari-gen.pyx-coverage.txt](tarball://root/attachments/some-uuid/ticket9343/pari-gen.pyx-coverage.txt) by leif created at 2010-08-16 19:51:59
 
 Doctest coverage of sage/libs/pari/gen.pyx (Sage 4.6.prealpha0)
 
@@ -8334,7 +8334,7 @@ Dave
 archive/issue_comments_088579.json:
 ```json
 {
-    "body": "Attachment\n\nPrint information about how to use SAGE_TUNE_pari and the risks it has.",
+    "body": "Attachment [9343-Issues-warnings-about-SAGE_TUNE_pari.patch](tarball://root/attachments/some-uuid/ticket9343/9343-Issues-warnings-about-SAGE_TUNE_pari.patch) by drkirkby created at 2010-08-17 21:01:12\n\nPrint information about how to use SAGE_TUNE_pari and the risks it has.",
     "created_at": "2010-08-17T21:01:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -8343,7 +8343,7 @@ archive/issue_comments_088579.json:
 }
 ```
 
-Attachment
+Attachment [9343-Issues-warnings-about-SAGE_TUNE_pari.patch](tarball://root/attachments/some-uuid/ticket9343/9343-Issues-warnings-about-SAGE_TUNE_pari.patch) by drkirkby created at 2010-08-17 21:01:12
 
 Print information about how to use SAGE_TUNE_pari and the risks it has.
 
@@ -8988,7 +8988,7 @@ Since Sage assumes the existence of `bash`, we might as well apply the first sol
 archive/issue_comments_088601.json:
 ```json
 {
-    "body": "Attachment\n\nComplete spkg patch (for reference)",
+    "body": "Attachment [pari_spkg.patch](tarball://root/attachments/some-uuid/ticket9343/pari_spkg.patch) by jdemeyer created at 2010-08-22 19:31:14\n\nComplete spkg patch (for reference)",
     "created_at": "2010-08-22T19:31:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -8997,7 +8997,7 @@ archive/issue_comments_088601.json:
 }
 ```
 
-Attachment
+Attachment [pari_spkg.patch](tarball://root/attachments/some-uuid/ticket9343/pari_spkg.patch) by jdemeyer created at 2010-08-22 19:31:14
 
 Complete spkg patch (for reference)
 
@@ -11397,7 +11397,7 @@ Mitesh Patel wrote on sage-release ("4.6 sketch" thread):
 archive/issue_comments_088690.json:
 ```json
 {
-    "body": "Attachment\n\nUpdate commit string for combined extcode patch.",
+    "body": "Attachment [extcode_9343_combined4.patch](tarball://root/attachments/some-uuid/ticket9343/extcode_9343_combined4.patch) by mpatel created at 2010-09-10 06:30:28\n\nUpdate commit string for combined extcode patch.",
     "created_at": "2010-09-10T06:30:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -11406,7 +11406,7 @@ archive/issue_comments_088690.json:
 }
 ```
 
-Attachment
+Attachment [extcode_9343_combined4.patch](tarball://root/attachments/some-uuid/ticket9343/extcode_9343_combined4.patch) by mpatel created at 2010-09-10 06:30:28
 
 Update commit string for combined extcode patch.
 

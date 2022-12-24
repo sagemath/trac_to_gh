@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2246
 archive/issue_comments_014891.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [doc-2246.patch](tarball://root/attachments/some-uuid/ticket2246/doc-2246.patch) by was created at 2008-02-21 16:22:46",
     "created_at": "2008-02-21T16:22:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2246",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_014891.json:
 }
 ```
 
-Attachment
+Attachment [doc-2246.patch](tarball://root/attachments/some-uuid/ticket2246/doc-2246.patch) by was created at 2008-02-21 16:22:46
 
 
 
@@ -53,7 +53,7 @@ Attachment
 archive/issue_comments_014892.json:
 ```json
 {
-    "body": "Attachment\n\nBoth patches look good, the doctest failures are fixed. Positive review.\n\nCheers,\n\nMichael",
+    "body": "Attachment [sage-2246.patch](tarball://root/attachments/some-uuid/ticket2246/sage-2246.patch) by mabshoff created at 2008-02-21 17:01:25\n\nBoth patches look good, the doctest failures are fixed. Positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-21T17:01:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2246",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_014892.json:
 }
 ```
 
-Attachment
+Attachment [sage-2246.patch](tarball://root/attachments/some-uuid/ticket2246/sage-2246.patch) by mabshoff created at 2008-02-21 17:01:25
 
 Both patches look good, the doctest failures are fixed. Positive review.
 

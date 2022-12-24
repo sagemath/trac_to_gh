@@ -278,7 +278,7 @@ Michael
 archive/issue_comments_042210.json:
 ```json
 {
-    "body": "Attachment\n\nadd doctest",
+    "body": "Attachment [trac_5451-ratfun_doctest.patch](tarball://root/attachments/some-uuid/ticket5451/trac_5451-ratfun_doctest.patch) by burcin created at 2009-03-25 20:31:08\n\nadd doctest",
     "created_at": "2009-03-25T20:31:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5451",
     "type": "issue_comment",
@@ -287,7 +287,7 @@ archive/issue_comments_042210.json:
 }
 ```
 
-Attachment
+Attachment [trac_5451-ratfun_doctest.patch](tarball://root/attachments/some-uuid/ticket5451/trac_5451-ratfun_doctest.patch) by burcin created at 2009-03-25 20:31:08
 
 add doctest
 

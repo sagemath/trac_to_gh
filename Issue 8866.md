@@ -111,7 +111,7 @@ Right now, all the docs are wrong or missing for the added functionality.
 archive/issue_comments_081475.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-8866-preparse-vector-functions-derivatives.patch](tarball://root/attachments/some-uuid/ticket8866/trac-8866-preparse-vector-functions-derivatives.patch) by jason created at 2010-05-04 03:57:15",
     "created_at": "2010-05-04T03:57:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8866",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_081475.json:
 }
 ```
 
-Attachment
+Attachment [trac-8866-preparse-vector-functions-derivatives.patch](tarball://root/attachments/some-uuid/ticket8866/trac-8866-preparse-vector-functions-derivatives.patch) by jason created at 2010-05-04 03:57:15
 
 
 
@@ -381,7 +381,7 @@ Resolution: fixed
 archive/issue_comments_081486.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-8866-preparse-vector-functions-derivatives.2.patch](tarball://root/attachments/some-uuid/ticket8866/trac-8866-preparse-vector-functions-derivatives.2.patch) by mvngu created at 2010-05-08 22:14:17",
     "created_at": "2010-05-08T22:14:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8866",
     "type": "issue_comment",
@@ -390,4 +390,4 @@ archive/issue_comments_081486.json:
 }
 ```
 
-Attachment
+Attachment [trac-8866-preparse-vector-functions-derivatives.2.patch](tarball://root/attachments/some-uuid/ticket8866/trac-8866-preparse-vector-functions-derivatives.2.patch) by mvngu created at 2010-05-08 22:14:17

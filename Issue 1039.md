@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1039
 archive/issue_comments_006338.json:
 ```json
 {
-    "body": "Attachment\n\nI will take a look at this soon.",
+    "body": "Attachment [patch.hg](tarball://root/attachments/some-uuid/ticket1039/patch.hg) by was created at 2007-10-31 17:43:21\n\nI will take a look at this soon.",
     "created_at": "2007-10-31T17:43:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1039",
     "type": "issue_comment",
@@ -49,7 +49,7 @@ archive/issue_comments_006338.json:
 }
 ```
 
-Attachment
+Attachment [patch.hg](tarball://root/attachments/some-uuid/ticket1039/patch.hg) by was created at 2007-10-31 17:43:21
 
 I will take a look at this soon.
 
@@ -78,7 +78,7 @@ Apply this patch instead.
 archive/issue_comments_006340.json:
 ```json
 {
-    "body": "Attachment\n\napplied to 2.8.11.alpha0",
+    "body": "Attachment [trac1039.patch](tarball://root/attachments/some-uuid/ticket1039/trac1039.patch) by mabshoff created at 2007-11-01 09:27:01\n\napplied to 2.8.11.alpha0",
     "created_at": "2007-11-01T09:27:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1039",
     "type": "issue_comment",
@@ -87,7 +87,7 @@ archive/issue_comments_006340.json:
 }
 ```
 
-Attachment
+Attachment [trac1039.patch](tarball://root/attachments/some-uuid/ticket1039/trac1039.patch) by mabshoff created at 2007-11-01 09:27:01
 
 applied to 2.8.11.alpha0
 

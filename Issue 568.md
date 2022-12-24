@@ -160,7 +160,7 @@ Resolution: fixed
 archive/issue_comments_002948.json:
 ```json
 {
-    "body": "Attachment\n\nThis works.",
+    "body": "Attachment [coding-trac568fix-20070905.hg](tarball://root/attachments/some-uuid/ticket568/coding-trac568fix-20070905.hg) by was created at 2007-09-06 17:21:03\n\nThis works.",
     "created_at": "2007-09-06T17:21:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/568",
     "type": "issue_comment",
@@ -169,6 +169,6 @@ archive/issue_comments_002948.json:
 }
 ```
 
-Attachment
+Attachment [coding-trac568fix-20070905.hg](tarball://root/attachments/some-uuid/ticket568/coding-trac568fix-20070905.hg) by was created at 2007-09-06 17:21:03
 
 This works.

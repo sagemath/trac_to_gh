@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2443
 archive/issue_comments_016523.json:
 ```json
 {
-    "body": "Attachment\n\nPatch looks good to me. Positive review.",
+    "body": "Attachment [cas-macros.patch](tarball://root/attachments/some-uuid/ticket2443/cas-macros.patch) by mabshoff created at 2008-03-09 21:07:21\n\nPatch looks good to me. Positive review.",
     "created_at": "2008-03-09T21:07:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2443",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_016523.json:
 }
 ```
 
-Attachment
+Attachment [cas-macros.patch](tarball://root/attachments/some-uuid/ticket2443/cas-macros.patch) by mabshoff created at 2008-03-09 21:07:21
 
 Patch looks good to me. Positive review.
 
@@ -87,7 +87,7 @@ Merged in Sage 2.10.3.rc4
 archive/issue_comments_016526.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [magma-fix.patch](tarball://root/attachments/some-uuid/ticket2443/magma-fix.patch) by malb created at 2008-03-09 21:36:02",
     "created_at": "2008-03-09T21:36:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2443",
     "type": "issue_comment",
@@ -96,4 +96,4 @@ archive/issue_comments_016526.json:
 }
 ```
 
-Attachment
+Attachment [magma-fix.patch](tarball://root/attachments/some-uuid/ticket2443/magma-fix.patch) by malb created at 2008-03-09 21:36:02

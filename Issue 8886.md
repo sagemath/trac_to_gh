@@ -71,7 +71,7 @@ Florent
 archive/issue_comments_081683.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8886-config.patch](tarball://root/attachments/some-uuid/ticket8886/trac_8886-config.patch) by mvngu created at 2010-05-05 14:02:16",
     "created_at": "2010-05-05T14:02:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8886",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_081683.json:
 }
 ```
 
-Attachment
+Attachment [trac_8886-config.patch](tarball://root/attachments/some-uuid/ticket8886/trac_8886-config.patch) by mvngu created at 2010-05-05 14:02:16
 
 
 
@@ -183,7 +183,7 @@ Changing status from new to needs_review.
 archive/issue_comments_081689.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8886-objects-classes_tutorial-fh.patch](tarball://root/attachments/some-uuid/ticket8886/trac_8886-objects-classes_tutorial-fh.patch) by hivert created at 2011-06-28 12:51:38",
     "created_at": "2011-06-28T12:51:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8886",
     "type": "issue_comment",
@@ -192,7 +192,7 @@ archive/issue_comments_081689.json:
 }
 ```
 
-Attachment
+Attachment [trac_8886-objects-classes_tutorial-fh.patch](tarball://root/attachments/some-uuid/ticket8886/trac_8886-objects-classes_tutorial-fh.patch) by hivert created at 2011-06-28 12:51:38
 
 
 
@@ -221,7 +221,7 @@ I've fixed some typos and grammatical errors.  See the "delta" patch for the dif
 archive/issue_comments_081691.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8886-delta.patch](tarball://root/attachments/some-uuid/ticket8886/trac_8886-delta.patch) by jhpalmieri created at 2011-07-26 23:28:28",
     "created_at": "2011-07-26T23:28:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8886",
     "type": "issue_comment",
@@ -230,7 +230,7 @@ archive/issue_comments_081691.json:
 }
 ```
 
-Attachment
+Attachment [trac_8886-delta.patch](tarball://root/attachments/some-uuid/ticket8886/trac_8886-delta.patch) by jhpalmieri created at 2011-07-26 23:28:28
 
 
 
@@ -257,7 +257,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_081693.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:9 jhpalmieri]:\n> There is a mistake in thematic_tutorials/conf.py which prevents math like\n> `\\QQ` from being rendered properly.  This is fixed in #11632, so I've made\n> that a dependency for this ticket.  (Please review it!)\n\nI'll do it. \n\n\n> I've fixed some typos and grammatical errors.  See the \"delta\" patch for the\n> differences between my patch and the previous one.  I'm happy with what\n> you've done, so if you're happy with my changes, give the ticket a positive\n> review.\n\nThanks for correcting my bad English. I'm mostly happy with your change. The\nonly remark I have is the removal of the link\n`:ref:`tutorial-programming-python``. It is an up coming tutorial which is\nnot yet fully finished. I'm creating a new ticket (#11633) and reinstating the pointer\nthere.\n\nThanks for your careful review.\n\nFlorent",
+    "body": "Attachment [trac_8886-objects-classes_tutorial-jhp.patch](tarball://root/attachments/some-uuid/ticket8886/trac_8886-objects-classes_tutorial-jhp.patch) by hivert created at 2011-07-28 08:24:19\n\nReplying to [comment:9 jhpalmieri]:\n> There is a mistake in thematic_tutorials/conf.py which prevents math like\n> `\\QQ` from being rendered properly.  This is fixed in #11632, so I've made\n> that a dependency for this ticket.  (Please review it!)\n\nI'll do it. \n\n\n> I've fixed some typos and grammatical errors.  See the \"delta\" patch for the\n> differences between my patch and the previous one.  I'm happy with what\n> you've done, so if you're happy with my changes, give the ticket a positive\n> review.\n\nThanks for correcting my bad English. I'm mostly happy with your change. The\nonly remark I have is the removal of the link\n`:ref:`tutorial-programming-python``. It is an up coming tutorial which is\nnot yet fully finished. I'm creating a new ticket (#11633) and reinstating the pointer\nthere.\n\nThanks for your careful review.\n\nFlorent",
     "created_at": "2011-07-28T08:24:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8886",
     "type": "issue_comment",
@@ -266,7 +266,7 @@ archive/issue_comments_081693.json:
 }
 ```
 
-Attachment
+Attachment [trac_8886-objects-classes_tutorial-jhp.patch](tarball://root/attachments/some-uuid/ticket8886/trac_8886-objects-classes_tutorial-jhp.patch) by hivert created at 2011-07-28 08:24:19
 
 Replying to [comment:9 jhpalmieri]:
 > There is a mistake in thematic_tutorials/conf.py which prevents math like
@@ -341,7 +341,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_081696.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8886-objects-classes_tutorial-fh-jhp.patch](tarball://root/attachments/some-uuid/ticket8886/trac_8886-objects-classes_tutorial-fh-jhp.patch) by hivert created at 2011-08-31 09:40:51",
     "created_at": "2011-08-31T09:40:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8886",
     "type": "issue_comment",
@@ -350,7 +350,7 @@ archive/issue_comments_081696.json:
 }
 ```
 
-Attachment
+Attachment [trac_8886-objects-classes_tutorial-fh-jhp.patch](tarball://root/attachments/some-uuid/ticket8886/trac_8886-objects-classes_tutorial-fh-jhp.patch) by hivert created at 2011-08-31 09:40:51
 
 
 
@@ -464,7 +464,7 @@ I suggested that tiny change, so positive review on it :-)
 archive/issue_comments_081701.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8886-objects-classes_tutorial-fh-jhp-rebased.patch](tarball://root/attachments/some-uuid/ticket8886/trac_8886-objects-classes_tutorial-fh-jhp-rebased.patch) by jdemeyer created at 2011-10-06 11:54:40",
     "created_at": "2011-10-06T11:54:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8886",
     "type": "issue_comment",
@@ -473,7 +473,7 @@ archive/issue_comments_081701.json:
 }
 ```
 
-Attachment
+Attachment [trac_8886-objects-classes_tutorial-fh-jhp-rebased.patch](tarball://root/attachments/some-uuid/ticket8886/trac_8886-objects-classes_tutorial-fh-jhp-rebased.patch) by jdemeyer created at 2011-10-06 11:54:40
 
 
 

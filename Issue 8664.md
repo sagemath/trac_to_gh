@@ -777,7 +777,7 @@ $ time make ptestlong NUM_THREADS=N    # Use N threads instead of the default nu
 archive/issue_comments_078709.json:
 ```json
 {
-    "body": "Attachment\n\nSPKG patch, based on Mike's 2.1.1. For reference/review.",
+    "body": "Attachment [trac_8664-mpir-2.1.1_vs._2.1.3.p0-spkg.patch](tarball://root/attachments/some-uuid/ticket8664/trac_8664-mpir-2.1.1_vs._2.1.3.p0-spkg.patch) by leif created at 2010-11-04 06:47:36\n\nSPKG patch, based on Mike's 2.1.1. For reference/review.",
     "created_at": "2010-11-04T06:47:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8664",
     "type": "issue_comment",
@@ -786,7 +786,7 @@ archive/issue_comments_078709.json:
 }
 ```
 
-Attachment
+Attachment [trac_8664-mpir-2.1.1_vs._2.1.3.p0-spkg.patch](tarball://root/attachments/some-uuid/ticket8664/trac_8664-mpir-2.1.1_vs._2.1.3.p0-spkg.patch) by leif created at 2010-11-04 06:47:36
 
 SPKG patch, based on Mike's 2.1.1. For reference/review.
 
@@ -833,7 +833,7 @@ Built and tested on sage.math.washington.edu without problems.
 archive/issue_comments_078712.json:
 ```json
 {
-    "body": "Attachment\n\nSage library patch. Fixes extension modules not getting rebuilt though depending on MPIR. Based on Sage 4.6.1.alpha0.",
+    "body": "Attachment [trac_8664-fix_extmod_deps_for_MPIR_generically-sagelib.patch](tarball://root/attachments/some-uuid/ticket8664/trac_8664-fix_extmod_deps_for_MPIR_generically-sagelib.patch) by leif created at 2010-11-04 19:58:26\n\nSage library patch. Fixes extension modules not getting rebuilt though depending on MPIR. Based on Sage 4.6.1.alpha0.",
     "created_at": "2010-11-04T19:58:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8664",
     "type": "issue_comment",
@@ -842,7 +842,7 @@ archive/issue_comments_078712.json:
 }
 ```
 
-Attachment
+Attachment [trac_8664-fix_extmod_deps_for_MPIR_generically-sagelib.patch](tarball://root/attachments/some-uuid/ticket8664/trac_8664-fix_extmod_deps_for_MPIR_generically-sagelib.patch) by leif created at 2010-11-04 19:58:26
 
 Sage library patch. Fixes extension modules not getting rebuilt though depending on MPIR. Based on Sage 4.6.1.alpha0.
 
@@ -1854,7 +1854,7 @@ Well, POWER<sup>TM</sup> is IBMs; the PowerPC was a later joint venture of Apple
 archive/issue_comments_078747.json:
 ```json
 {
-    "body": "Attachment\n\nSPKG patch. Apply to MPIR 2.1.3.p0 to get the p1. Fixes Darwin assembler error, corrects hint; some improvements.",
+    "body": "Attachment [trac_8664-mpir-2.1.3.p0-p1.spkg.patch](tarball://root/attachments/some-uuid/ticket8664/trac_8664-mpir-2.1.3.p0-p1.spkg.patch) by leif created at 2010-11-06 06:45:51\n\nSPKG patch. Apply to MPIR 2.1.3.p0 to get the p1. Fixes Darwin assembler error, corrects hint; some improvements.",
     "created_at": "2010-11-06T06:45:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8664",
     "type": "issue_comment",
@@ -1863,7 +1863,7 @@ archive/issue_comments_078747.json:
 }
 ```
 
-Attachment
+Attachment [trac_8664-mpir-2.1.3.p0-p1.spkg.patch](tarball://root/attachments/some-uuid/ticket8664/trac_8664-mpir-2.1.3.p0-p1.spkg.patch) by leif created at 2010-11-06 06:45:51
 
 SPKG patch. Apply to MPIR 2.1.3.p0 to get the p1. Fixes Darwin assembler error, corrects hint; some improvements.
 
@@ -3096,7 +3096,7 @@ Sage library patch. Fixes extension modules not getting rebuilt though depending
 archive/issue_comments_078793.json:
 ```json
 {
-    "body": "Attachment\n\nMPIR 2.4.0 has now been out over a month:  http://mpir.org/\nWe really, really need to get this upgraded.",
+    "body": "Attachment [trac_8664-fix_extmod_deps_for_MPIR_generically-sagelib-rebased_to_4.7.1.alpha4.patch](tarball://root/attachments/some-uuid/ticket8664/trac_8664-fix_extmod_deps_for_MPIR_generically-sagelib-rebased_to_4.7.1.alpha4.patch) by was created at 2011-07-18 05:21:21\n\nMPIR 2.4.0 has now been out over a month:  http://mpir.org/\nWe really, really need to get this upgraded.",
     "created_at": "2011-07-18T05:21:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8664",
     "type": "issue_comment",
@@ -3105,7 +3105,7 @@ archive/issue_comments_078793.json:
 }
 ```
 
-Attachment
+Attachment [trac_8664-fix_extmod_deps_for_MPIR_generically-sagelib-rebased_to_4.7.1.alpha4.patch](tarball://root/attachments/some-uuid/ticket8664/trac_8664-fix_extmod_deps_for_MPIR_generically-sagelib-rebased_to_4.7.1.alpha4.patch) by was created at 2011-07-18 05:21:21
 
 MPIR 2.4.0 has now been out over a month:  http://mpir.org/
 We really, really need to get this upgraded.
@@ -3163,7 +3163,7 @@ Preliminary "preview" diff between the p1 and the upcoming p2 with improved opti
 archive/issue_comments_078796.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached a \"preview\" diff of the p2 in case that makes anyone happy...",
+    "body": "Attachment [mpir-2.1.3.p1-mpir-2.1.3.p2.diff](tarball://root/attachments/some-uuid/ticket8664/mpir-2.1.3.p1-mpir-2.1.3.p2.diff) by leif created at 2011-07-18 08:33:17\n\nI've attached a \"preview\" diff of the p2 in case that makes anyone happy...",
     "created_at": "2011-07-18T08:33:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8664",
     "type": "issue_comment",
@@ -3172,7 +3172,7 @@ archive/issue_comments_078796.json:
 }
 ```
 
-Attachment
+Attachment [mpir-2.1.3.p1-mpir-2.1.3.p2.diff](tarball://root/attachments/some-uuid/ticket8664/mpir-2.1.3.p1-mpir-2.1.3.p2.diff) by leif created at 2011-07-18 08:33:17
 
 I've attached a "preview" diff of the p2 in case that makes anyone happy...
 
@@ -3211,7 +3211,7 @@ I'll update the MPIR spkg again to not delete its old shared libraries as a quic
 archive/issue_comments_078798.json:
 ```json
 {
-    "body": "Attachment\n\nDiff between the formerly positively reviewed p1 and the p4. For reference / review.",
+    "body": "Attachment [mpir-2.1.3.p1-mpir-2.1.3.p4.diff](tarball://root/attachments/some-uuid/ticket8664/mpir-2.1.3.p1-mpir-2.1.3.p4.diff) by leif created at 2011-07-20 04:16:11\n\nDiff between the formerly positively reviewed p1 and the p4. For reference / review.",
     "created_at": "2011-07-20T04:16:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8664",
     "type": "issue_comment",
@@ -3220,7 +3220,7 @@ archive/issue_comments_078798.json:
 }
 ```
 
-Attachment
+Attachment [mpir-2.1.3.p1-mpir-2.1.3.p4.diff](tarball://root/attachments/some-uuid/ticket8664/mpir-2.1.3.p1-mpir-2.1.3.p4.diff) by leif created at 2011-07-20 04:16:11
 
 Diff between the formerly positively reviewed p1 and the p4. For reference / review.
 
@@ -3629,7 +3629,7 @@ Sage library patch. Fixes extension modules not getting rebuilt though depending
 archive/issue_comments_078814.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8664-fix_extmod_deps_for_MPIR_generically-sagelib-rebased_to_4.7.2.alpha2.patch](tarball://root/attachments/some-uuid/ticket8664/trac_8664-fix_extmod_deps_for_MPIR_generically-sagelib-rebased_to_4.7.2.alpha2.patch) by leif created at 2011-08-31 21:49:09",
     "created_at": "2011-08-31T21:49:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8664",
     "type": "issue_comment",
@@ -3638,7 +3638,7 @@ archive/issue_comments_078814.json:
 }
 ```
 
-Attachment
+Attachment [trac_8664-fix_extmod_deps_for_MPIR_generically-sagelib-rebased_to_4.7.2.alpha2.patch](tarball://root/attachments/some-uuid/ticket8664/trac_8664-fix_extmod_deps_for_MPIR_generically-sagelib-rebased_to_4.7.2.alpha2.patch) by leif created at 2011-08-31 21:49:09
 
 
 

@@ -71,7 +71,7 @@ a temporary workaround for linux only by William
 archive/issue_comments_010692.json:
 ```json
 {
-    "body": "Attachment\n\nI merged trac-1683-partial.patch into Sage 2.9.2.rc1. But the ticket remains open for now since the workaround doesn't work on OSX.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac-1683-partial.patch](tarball://root/attachments/some-uuid/ticket1683/trac-1683-partial.patch) by mabshoff created at 2008-01-04 23:29:14\n\nI merged trac-1683-partial.patch into Sage 2.9.2.rc1. But the ticket remains open for now since the workaround doesn't work on OSX.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-04T23:29:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1683",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_010692.json:
 }
 ```
 
-Attachment
+Attachment [trac-1683-partial.patch](tarball://root/attachments/some-uuid/ticket1683/trac-1683-partial.patch) by mabshoff created at 2008-01-04 23:29:14
 
 I merged trac-1683-partial.patch into Sage 2.9.2.rc1. But the ticket remains open for now since the workaround doesn't work on OSX.
 

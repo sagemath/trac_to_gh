@@ -244,7 +244,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_094012.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac9674_fix_Sbox_init.patch](tarball://root/attachments/some-uuid/ticket9674/trac9674_fix_Sbox_init.patch) by ylchapuy created at 2010-08-15 11:22:30",
     "created_at": "2010-08-15T11:22:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9674",
     "type": "issue_comment",
@@ -253,7 +253,7 @@ archive/issue_comments_094012.json:
 }
 ```
 
-Attachment
+Attachment [trac9674_fix_Sbox_init.patch](tarball://root/attachments/some-uuid/ticket9674/trac9674_fix_Sbox_init.patch) by ylchapuy created at 2010-08-15 11:22:30
 
 
 

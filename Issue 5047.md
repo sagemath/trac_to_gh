@@ -101,7 +101,7 @@ raise a proper error message when using cmp on non-real constants
 archive/issue_comments_038437.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:1 SimonKing]:\n> In Python, one gets\n> {{{\n> >>> cmp(1j,0)\n> Traceback (most recent call last):\n>   File \"<stdin>\", line 1, in <module>\n> TypeError: no ordering relation is defined for complex numbers\n> }}}\n\nWith the patch, one gets\n\n```\nsage: cmp(i,0)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/king/.sage/temp/mpc739/25379/_home_king__sage_init_sage_0.py in <module>()\n----> 1 \n      2 \n      3 \n      4 \n      5 \n\n/home/king/SAGE/devel/sage-3.2.1/local/lib/python2.5/site-packages/sage/functions/functions.pyc in __cmp__(self, right)\n    270             c = cmp(R(self), R(right))\n    271         except TypeError:\n--> 272             raise TypeError, \"these objects are not comparable\"\n    273         if c: return c\n    274         try:\n\nTypeError: these objects are not comparable\n```\n\nwhich, I believe, is consistent with python.\n\nOther comparisons still work:\n\n```\nsage: cmp(i^2,0)\n-1\nsage: cmp(e,0)\n1\n```\n",
+    "body": "Attachment [cmp_imaginary.patch](tarball://root/attachments/some-uuid/ticket5047/cmp_imaginary.patch) by SimonKing created at 2009-01-23 20:27:37\n\nReplying to [comment:1 SimonKing]:\n> In Python, one gets\n> {{{\n> >>> cmp(1j,0)\n> Traceback (most recent call last):\n>   File \"<stdin>\", line 1, in <module>\n> TypeError: no ordering relation is defined for complex numbers\n> }}}\n\nWith the patch, one gets\n\n```\nsage: cmp(i,0)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/king/.sage/temp/mpc739/25379/_home_king__sage_init_sage_0.py in <module>()\n----> 1 \n      2 \n      3 \n      4 \n      5 \n\n/home/king/SAGE/devel/sage-3.2.1/local/lib/python2.5/site-packages/sage/functions/functions.pyc in __cmp__(self, right)\n    270             c = cmp(R(self), R(right))\n    271         except TypeError:\n--> 272             raise TypeError, \"these objects are not comparable\"\n    273         if c: return c\n    274         try:\n\nTypeError: these objects are not comparable\n```\n\nwhich, I believe, is consistent with python.\n\nOther comparisons still work:\n\n```\nsage: cmp(i^2,0)\n-1\nsage: cmp(e,0)\n1\n```\n",
     "created_at": "2009-01-23T20:27:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5047",
     "type": "issue_comment",
@@ -110,7 +110,7 @@ archive/issue_comments_038437.json:
 }
 ```
 
-Attachment
+Attachment [cmp_imaginary.patch](tarball://root/attachments/some-uuid/ticket5047/cmp_imaginary.patch) by SimonKing created at 2009-01-23 20:27:37
 
 Replying to [comment:1 SimonKing]:
 > In Python, one gets
@@ -199,7 +199,7 @@ I give the attached patch a positive review, provided that doctests are added to
 archive/issue_comments_038439.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [cmp_doc.patch](tarball://root/attachments/some-uuid/ticket5047/cmp_doc.patch) by SimonKing created at 2009-01-23 22:34:18",
     "created_at": "2009-01-23T22:34:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5047",
     "type": "issue_comment",
@@ -208,7 +208,7 @@ archive/issue_comments_038439.json:
 }
 ```
 
-Attachment
+Attachment [cmp_doc.patch](tarball://root/attachments/some-uuid/ticket5047/cmp_doc.patch) by SimonKing created at 2009-01-23 22:34:18
 
 
 

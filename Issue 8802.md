@@ -51,7 +51,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8802
 archive/issue_comments_080749.json:
 ```json
 {
-    "body": "Attachment\n\nAdd all and extend parameters to sqrt for QQbar and AA",
+    "body": "Attachment [trac_8802-sqrt-qqbar.patch](tarball://root/attachments/some-uuid/ticket8802/trac_8802-sqrt-qqbar.patch) by barinder created at 2010-06-07 15:17:16\n\nAdd all and extend parameters to sqrt for QQbar and AA",
     "created_at": "2010-06-07T15:17:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8802",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_080749.json:
 }
 ```
 
-Attachment
+Attachment [trac_8802-sqrt-qqbar.patch](tarball://root/attachments/some-uuid/ticket8802/trac_8802-sqrt-qqbar.patch) by barinder created at 2010-06-07 15:17:16
 
 Add all and extend parameters to sqrt for QQbar and AA
 
@@ -147,7 +147,7 @@ Mostly looks good. Some minor comments:
 archive/issue_comments_080753.json:
 ```json
 {
-    "body": "Attachment\n\nAs before, but addresses the ordering issue raised by robertwb",
+    "body": "Attachment [trac_8802-sqrt-qqbar-v2.patch](tarball://root/attachments/some-uuid/ticket8802/trac_8802-sqrt-qqbar-v2.patch) by barinder created at 2010-06-07 17:33:01\n\nAs before, but addresses the ordering issue raised by robertwb",
     "created_at": "2010-06-07T17:33:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8802",
     "type": "issue_comment",
@@ -156,7 +156,7 @@ archive/issue_comments_080753.json:
 }
 ```
 
-Attachment
+Attachment [trac_8802-sqrt-qqbar-v2.patch](tarball://root/attachments/some-uuid/ticket8802/trac_8802-sqrt-qqbar-v2.patch) by barinder created at 2010-06-07 17:33:01
 
 As before, but addresses the ordering issue raised by robertwb
 
@@ -185,7 +185,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_080755.json:
 ```json
 {
-    "body": "Attachment\n\nFixed docstring format issues and simplified: applies to 4.4.4.alpha0",
+    "body": "Attachment [trac_8802-sqrt-qqbar-v3.patch](tarball://root/attachments/some-uuid/ticket8802/trac_8802-sqrt-qqbar-v3.patch) by cremona created at 2010-06-09 14:50:51\n\nFixed docstring format issues and simplified: applies to 4.4.4.alpha0",
     "created_at": "2010-06-09T14:50:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8802",
     "type": "issue_comment",
@@ -194,7 +194,7 @@ archive/issue_comments_080755.json:
 }
 ```
 
-Attachment
+Attachment [trac_8802-sqrt-qqbar-v3.patch](tarball://root/attachments/some-uuid/ticket8802/trac_8802-sqrt-qqbar-v3.patch) by cremona created at 2010-06-09 14:50:51
 
 Fixed docstring format issues and simplified: applies to 4.4.4.alpha0
 

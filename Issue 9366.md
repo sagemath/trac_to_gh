@@ -69,7 +69,7 @@ Changing status from new to needs_review.
 archive/issue_comments_088968.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac9366_fix_SBox_init.patch](tarball://root/attachments/some-uuid/ticket9366/trac9366_fix_SBox_init.patch) by ylchapuy created at 2010-06-28 21:47:41",
     "created_at": "2010-06-28T21:47:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9366",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_088968.json:
 }
 ```
 
-Attachment
+Attachment [trac9366_fix_SBox_init.patch](tarball://root/attachments/some-uuid/ticket9366/trac9366_fix_SBox_init.patch) by ylchapuy created at 2010-06-28 21:47:41
 
 
 

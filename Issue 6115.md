@@ -210,7 +210,7 @@ apply on top of previous patches
 archive/issue_comments_048868.json:
 ```json
 {
-    "body": "Attachment\n\nthe trac-6115-symbolic-eigenvalues.patch  patch needs to be reviewed as well.",
+    "body": "Attachment [trac-6115-symbolic-eigenvalues.patch](tarball://root/attachments/some-uuid/ticket6115/trac-6115-symbolic-eigenvalues.patch) by jason created at 2009-05-26 21:04:51\n\nthe trac-6115-symbolic-eigenvalues.patch  patch needs to be reviewed as well.",
     "created_at": "2009-05-26T21:04:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6115",
     "type": "issue_comment",
@@ -219,7 +219,7 @@ archive/issue_comments_048868.json:
 }
 ```
 
-Attachment
+Attachment [trac-6115-symbolic-eigenvalues.patch](tarball://root/attachments/some-uuid/ticket6115/trac-6115-symbolic-eigenvalues.patch) by jason created at 2009-05-26 21:04:51
 
 the trac-6115-symbolic-eigenvalues.patch  patch needs to be reviewed as well.
 
@@ -304,7 +304,7 @@ Yep, and Mike's change looks good to me and makes tests.py pass doctests, so pos
 archive/issue_comments_048873.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6115.patch](tarball://root/attachments/some-uuid/ticket6115/trac_6115.patch) by mhansen created at 2009-05-28 05:30:18",
     "created_at": "2009-05-28T05:30:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6115",
     "type": "issue_comment",
@@ -313,7 +313,7 @@ archive/issue_comments_048873.json:
 }
 ```
 
-Attachment
+Attachment [trac_6115.patch](tarball://root/attachments/some-uuid/ticket6115/trac_6115.patch) by mhansen created at 2009-05-28 05:30:18
 
 
 

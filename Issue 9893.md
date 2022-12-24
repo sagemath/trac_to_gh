@@ -1451,7 +1451,7 @@ Do I need to be concerned about these?
 archive/issue_comments_098122.json:
 ```json
 {
-    "body": "Attachment\n\ndoctest failures, sage.math.washington.edu",
+    "body": "Attachment [sage-math.log](tarball://root/attachments/some-uuid/ticket9894/sage-math.log) by jhpalmieri created at 2011-07-20 00:32:38\n\ndoctest failures, sage.math.washington.edu",
     "created_at": "2011-07-20T00:32:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9893",
     "type": "issue_comment",
@@ -1460,7 +1460,7 @@ archive/issue_comments_098122.json:
 }
 ```
 
-Attachment
+Attachment [sage-math.log](tarball://root/attachments/some-uuid/ticket9894/sage-math.log) by jhpalmieri created at 2011-07-20 00:32:38
 
 doctest failures, sage.math.washington.edu
 
@@ -1489,7 +1489,7 @@ doctest failures, OS X box
 archive/issue_comments_098124.json:
 ```json
 {
-    "body": "Attachment\n\ndoctest failures, OpenSolaris",
+    "body": "Attachment [fulvia-opensolaris.log](tarball://root/attachments/some-uuid/ticket9894/fulvia-opensolaris.log) by jhpalmieri created at 2011-07-20 00:33:29\n\ndoctest failures, OpenSolaris",
     "created_at": "2011-07-20T00:33:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9893",
     "type": "issue_comment",
@@ -1498,7 +1498,7 @@ archive/issue_comments_098124.json:
 }
 ```
 
-Attachment
+Attachment [fulvia-opensolaris.log](tarball://root/attachments/some-uuid/ticket9894/fulvia-opensolaris.log) by jhpalmieri created at 2011-07-20 00:33:29
 
 doctest failures, OpenSolaris
 
@@ -2689,7 +2689,7 @@ Diff of the latest changes in the spkg. For reviewing only
 archive/issue_comments_098167.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:66 jhpalmieri]:\n> I can run the test suite in the next day or two, once you update the spkg. So it's fine with me if you want to update it. If you do, could you also post a diff here, so I can see the changes?\n\nI have updated my spkg (old location) and have attache a diff with respect to the version that you have reviewed earlier.\n\nHere are the changes:\n\n* The `useSlimgb` resp. `useStd` options had been used only in one location: There were several places where the default 'groebner'  method of Singular would be used, regardless of the options. That has changed in the last revision.\n* The protocol output of some methods (e.g., `dependent_parameters()`) are now providing protocol output *before* a potentially time-consuming Gr\u00f6bner basis computation is started. Background: When I computed the cohomology of `SmallGroup(128,836)` with the previous revision, I thought that it hangs in the computation of the Gr\u00f6bner basis of the relation ideal - but in fact the problem was in `dependent_parameters()`, which has not been clear from the protocoll output.\n* In Symonds' criterion, parameters in degree one won't contribute to the degree in which the criterion detects completeness. Hence, adding all degree one generators to a given list of parameters will not change the degree bound -- but it may make the computation easier, because killing degree one generators greatly reduces the difficulty of Gr\u00f6bner basis computations. Thus my changes in `dependent_parameters`",
+    "body": "Attachment [cohomology-pkg.diff](tarball://root/attachments/some-uuid/ticket9894/cohomology-pkg.diff) by SimonKing created at 2012-03-30 00:14:39\n\nReplying to [comment:66 jhpalmieri]:\n> I can run the test suite in the next day or two, once you update the spkg. So it's fine with me if you want to update it. If you do, could you also post a diff here, so I can see the changes?\n\nI have updated my spkg (old location) and have attache a diff with respect to the version that you have reviewed earlier.\n\nHere are the changes:\n\n* The `useSlimgb` resp. `useStd` options had been used only in one location: There were several places where the default 'groebner'  method of Singular would be used, regardless of the options. That has changed in the last revision.\n* The protocol output of some methods (e.g., `dependent_parameters()`) are now providing protocol output *before* a potentially time-consuming Gr\u00f6bner basis computation is started. Background: When I computed the cohomology of `SmallGroup(128,836)` with the previous revision, I thought that it hangs in the computation of the Gr\u00f6bner basis of the relation ideal - but in fact the problem was in `dependent_parameters()`, which has not been clear from the protocoll output.\n* In Symonds' criterion, parameters in degree one won't contribute to the degree in which the criterion detects completeness. Hence, adding all degree one generators to a given list of parameters will not change the degree bound -- but it may make the computation easier, because killing degree one generators greatly reduces the difficulty of Gr\u00f6bner basis computations. Thus my changes in `dependent_parameters`",
     "created_at": "2012-03-30T00:14:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9893",
     "type": "issue_comment",
@@ -2698,7 +2698,7 @@ archive/issue_comments_098167.json:
 }
 ```
 
-Attachment
+Attachment [cohomology-pkg.diff](tarball://root/attachments/some-uuid/ticket9894/cohomology-pkg.diff) by SimonKing created at 2012-03-30 00:14:39
 
 Replying to [comment:66 jhpalmieri]:
 > I can run the test suite in the next day or two, once you update the spkg. So it's fine with me if you want to update it. If you do, could you also post a diff here, so I can see the changes?

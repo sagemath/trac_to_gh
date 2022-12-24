@@ -125,7 +125,7 @@ Resolution: fixed
 archive/issue_comments_063996.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7541.patch](tarball://root/attachments/some-uuid/ticket7541/trac_7541.patch) by mhansen created at 2009-12-19 21:26:33",
     "created_at": "2009-12-19T21:26:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7541",
     "type": "issue_comment",
@@ -134,4 +134,4 @@ archive/issue_comments_063996.json:
 }
 ```
 
-Attachment
+Attachment [trac_7541.patch](tarball://root/attachments/some-uuid/ticket7541/trac_7541.patch) by mhansen created at 2009-12-19 21:26:33

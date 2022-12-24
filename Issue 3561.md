@@ -55,7 +55,7 @@ The attached patch gets rid of a bunch of numpy imports.  However, according to
 archive/issue_comments_025169.json:
 ```json
 {
-    "body": "Attachment\n\nPatch looks good to me. Positive review.",
+    "body": "Attachment [sage-3561.patch](tarball://root/attachments/some-uuid/ticket3561/sage-3561.patch) by mabshoff created at 2008-07-06 09:25:53\n\nPatch looks good to me. Positive review.",
     "created_at": "2008-07-06T09:25:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3561",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_025169.json:
 }
 ```
 
-Attachment
+Attachment [sage-3561.patch](tarball://root/attachments/some-uuid/ticket3561/sage-3561.patch) by mabshoff created at 2008-07-06 09:25:53
 
 Patch looks good to me. Positive review.
 

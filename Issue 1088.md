@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1088
 archive/issue_comments_006584.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [minspantree.patch](tarball://root/attachments/some-uuid/ticket1088/minspantree.patch) by jason created at 2007-11-03 20:45:18",
     "created_at": "2007-11-03T20:45:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1088",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_006584.json:
 }
 ```
 
-Attachment
+Attachment [minspantree.patch](tarball://root/attachments/some-uuid/ticket1088/minspantree.patch) by jason created at 2007-11-03 20:45:18
 
 
 
@@ -51,7 +51,7 @@ Attachment
 archive/issue_comments_006585.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [doc_1088.patch](tarball://root/attachments/some-uuid/ticket1088/doc_1088.patch) by rlm created at 2007-11-03 23:20:23",
     "created_at": "2007-11-03T23:20:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1088",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_006585.json:
 }
 ```
 
-Attachment
+Attachment [doc_1088.patch](tarball://root/attachments/some-uuid/ticket1088/doc_1088.patch) by rlm created at 2007-11-03 23:20:23
 
 
 
@@ -143,7 +143,7 @@ The third doctest should be applied after the first two doctests.
 archive/issue_comments_006590.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1088-correct-bugs-improve-doctests.patch](tarball://root/attachments/some-uuid/ticket1088/1088-correct-bugs-improve-doctests.patch) by jason created at 2007-11-06 22:37:16",
     "created_at": "2007-11-06T22:37:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1088",
     "type": "issue_comment",
@@ -152,7 +152,7 @@ archive/issue_comments_006590.json:
 }
 ```
 
-Attachment
+Attachment [1088-correct-bugs-improve-doctests.patch](tarball://root/attachments/some-uuid/ticket1088/1088-correct-bugs-improve-doctests.patch) by jason created at 2007-11-06 22:37:16
 
 
 

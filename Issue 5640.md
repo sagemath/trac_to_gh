@@ -75,7 +75,7 @@ Depends on #6269, at least potentially
 archive/issue_comments_044056.json:
 ```json
 {
-    "body": "Attachment\n\nThis should take care of the issue on the description.  Patch may depend on #6269; even though I can't find any specific instances where they overlap on code hunks, they do overlap in files, so better to be safe.  Note that this patch does not take care of #5083.  I have also added/improved documentation on the files in question.",
+    "body": "Attachment [trac_5640.patch](tarball://root/attachments/some-uuid/ticket5640/trac_5640.patch) by kcrisman created at 2009-06-20 01:16:31\n\nThis should take care of the issue on the description.  Patch may depend on #6269; even though I can't find any specific instances where they overlap on code hunks, they do overlap in files, so better to be safe.  Note that this patch does not take care of #5083.  I have also added/improved documentation on the files in question.",
     "created_at": "2009-06-20T01:16:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5640",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_044056.json:
 }
 ```
 
-Attachment
+Attachment [trac_5640.patch](tarball://root/attachments/some-uuid/ticket5640/trac_5640.patch) by kcrisman created at 2009-06-20 01:16:31
 
 This should take care of the issue on the description.  Patch may depend on #6269; even though I can't find any specific instances where they overlap on code hunks, they do overlap in files, so better to be safe.  Note that this patch does not take care of #5083.  I have also added/improved documentation on the files in question.
 
@@ -215,7 +215,7 @@ rebased against Sage 4.1.alpha1
 archive/issue_comments_044062.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch `trac_5640-rebased.patch` is rebased against Sage 4.1.alpha1 and depends on #6269. Thus patches should be applied in the following order:\n1. the rebased patch at #6269\n2. the rebased patch on this ticket",
+    "body": "Attachment [trac_5640-rebased.patch](tarball://root/attachments/some-uuid/ticket5640/trac_5640-rebased.patch) by mvngu created at 2009-06-26 00:10:25\n\nThe patch `trac_5640-rebased.patch` is rebased against Sage 4.1.alpha1 and depends on #6269. Thus patches should be applied in the following order:\n1. the rebased patch at #6269\n2. the rebased patch on this ticket",
     "created_at": "2009-06-26T00:10:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5640",
     "type": "issue_comment",
@@ -224,7 +224,7 @@ archive/issue_comments_044062.json:
 }
 ```
 
-Attachment
+Attachment [trac_5640-rebased.patch](tarball://root/attachments/some-uuid/ticket5640/trac_5640-rebased.patch) by mvngu created at 2009-06-26 00:10:25
 
 The patch `trac_5640-rebased.patch` is rebased against Sage 4.1.alpha1 and depends on #6269. Thus patches should be applied in the following order:
 1. the rebased patch at #6269

@@ -117,7 +117,7 @@ will do
 archive/issue_comments_032092.json:
 ```json
 {
-    "body": "Attachment\n\nTrivial doctest patch up.",
+    "body": "Attachment [4367-gamma-plot.patch](tarball://root/attachments/some-uuid/ticket4367/4367-gamma-plot.patch) by robertwb created at 2008-12-19 07:48:34\n\nTrivial doctest patch up.",
     "created_at": "2008-12-19T07:48:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4367",
     "type": "issue_comment",
@@ -126,7 +126,7 @@ archive/issue_comments_032092.json:
 }
 ```
 
-Attachment
+Attachment [4367-gamma-plot.patch](tarball://root/attachments/some-uuid/ticket4367/4367-gamma-plot.patch) by robertwb created at 2008-12-19 07:48:34
 
 Trivial doctest patch up.
 

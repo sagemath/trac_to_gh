@@ -47,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6619
 archive/issue_comments_054242.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6619_integer_vector_inner-fix-nt.patch](tarball://root/attachments/some-uuid/ticket6619/trac_6619_integer_vector_inner-fix-nt.patch) by nthiery created at 2009-07-25 15:03:16",
     "created_at": "2009-07-25T15:03:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6619",
     "type": "issue_comment",
@@ -56,7 +56,7 @@ archive/issue_comments_054242.json:
 }
 ```
 
-Attachment
+Attachment [trac_6619_integer_vector_inner-fix-nt.patch](tarball://root/attachments/some-uuid/ticket6619/trac_6619_integer_vector_inner-fix-nt.patch) by nthiery created at 2009-07-25 15:03:16
 
 
 

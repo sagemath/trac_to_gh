@@ -189,7 +189,7 @@ Adam
 archive/issue_comments_028532.json:
 ```json
 {
-    "body": "Attachment\n\nI forgot to remove the pari doctest.  It should also be removed since these parents should not have coercions going in both directions.\n\nThis is taken care of in the new patch.",
+    "body": "Attachment [trac_3970.patch](tarball://root/attachments/some-uuid/ticket3970/trac_3970.patch) by mhansen created at 2009-10-07 04:20:59\n\nI forgot to remove the pari doctest.  It should also be removed since these parents should not have coercions going in both directions.\n\nThis is taken care of in the new patch.",
     "created_at": "2009-10-07T04:20:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3970",
     "type": "issue_comment",
@@ -198,7 +198,7 @@ archive/issue_comments_028532.json:
 }
 ```
 
-Attachment
+Attachment [trac_3970.patch](tarball://root/attachments/some-uuid/ticket3970/trac_3970.patch) by mhansen created at 2009-10-07 04:20:59
 
 I forgot to remove the pari doctest.  It should also be removed since these parents should not have coercions going in both directions.
 

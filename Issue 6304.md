@@ -508,7 +508,7 @@ main (int argc, char* argv[])
 archive/issue_comments_050320.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6304.patch](tarball://root/attachments/some-uuid/ticket6304/6304.patch) by dmharvey created at 2009-08-20 14:57:42",
     "created_at": "2009-08-20T14:57:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6304",
     "type": "issue_comment",
@@ -517,7 +517,7 @@ archive/issue_comments_050320.json:
 }
 ```
 
-Attachment
+Attachment [6304.patch](tarball://root/attachments/some-uuid/ticket6304/6304.patch) by dmharvey created at 2009-08-20 14:57:42
 
 
 

@@ -51,7 +51,7 @@ Yep, we should be able to delete it.
 archive/issue_comments_092323.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9563.patch](tarball://root/attachments/some-uuid/ticket9563/trac_9563.patch) by mhansen created at 2012-03-29 07:22:23",
     "created_at": "2012-03-29T07:22:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9563",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_092323.json:
 }
 ```
 
-Attachment
+Attachment [trac_9563.patch](tarball://root/attachments/some-uuid/ticket9563/trac_9563.patch) by mhansen created at 2012-03-29 07:22:23
 
 
 

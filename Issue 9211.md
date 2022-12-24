@@ -71,7 +71,7 @@ show(K, vertex_size=800)
 archive/issue_comments_086277.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-9211-graph-vertices-cut.patch](tarball://root/attachments/some-uuid/ticket9211/trac-9211-graph-vertices-cut.patch) by jason created at 2010-06-12 21:22:33",
     "created_at": "2010-06-12T21:22:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_086277.json:
 }
 ```
 
-Attachment
+Attachment [trac-9211-graph-vertices-cut.patch](tarball://root/attachments/some-uuid/ticket9211/trac-9211-graph-vertices-cut.patch) by jason created at 2010-06-12 21:22:33
 
 
 
@@ -235,7 +235,7 @@ archive/issue_comments_086285.json:
 archive/issue_comments_086286.json:
 ```json
 {
-    "body": "Attachment\n\n( Add additional padding to graphs ) Apply to devel/sage",
+    "body": "Attachment [trac-9211-add_padding_to_graphs.patch](tarball://root/attachments/some-uuid/ticket9211/trac-9211-add_padding_to_graphs.patch) by ppurka created at 2011-10-11 09:45:33\n\n( Add additional padding to graphs ) Apply to devel/sage",
     "created_at": "2011-10-11T09:45:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
@@ -244,7 +244,7 @@ archive/issue_comments_086286.json:
 }
 ```
 
-Attachment
+Attachment [trac-9211-add_padding_to_graphs.patch](tarball://root/attachments/some-uuid/ticket9211/trac-9211-add_padding_to_graphs.patch) by ppurka created at 2011-10-11 09:45:33
 
 ( Add additional padding to graphs ) Apply to devel/sage
 
@@ -273,7 +273,7 @@ Output with only the earlier patch (modified for 4.7.2)
 archive/issue_comments_086288.json:
 ```json
 {
-    "body": "Attachment\n\nOutput with patch for additional padding",
+    "body": "Attachment [with-earlier-patch-modified-for-4.7.2.png](tarball://root/attachments/some-uuid/ticket9211/with-earlier-patch-modified-for-4.7.2.png) by ppurka created at 2011-10-11 09:46:37\n\nOutput with patch for additional padding",
     "created_at": "2011-10-11T09:46:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
@@ -282,7 +282,7 @@ archive/issue_comments_086288.json:
 }
 ```
 
-Attachment
+Attachment [with-earlier-patch-modified-for-4.7.2.png](tarball://root/attachments/some-uuid/ticket9211/with-earlier-patch-modified-for-4.7.2.png) by ppurka created at 2011-10-11 09:46:37
 
 Output with patch for additional padding
 
@@ -311,7 +311,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_086290.json:
 ```json
 {
-    "body": "Attachment\n\nAdded two patches. The [attachment:trac-9211-fix_cut_vertices_in_graphs.patch first one] is essentially the patch by jason redone to work with 4.7.2_alpha3.\n\nThe [attachment:trac-9211-add_padding_to_graphs.patch second patch] adds extra padding to all graphs. The two pngs attached are the output of\n\n\n```\nM = matrix(RDF, [[1/3, 1/3, 1/3], [0, 1/4, 3/4], [1/2, 1/4, 1/4]])\nG=DiGraph(M, format='weighted_adjacency_matrix')\nG.show(vertex_size=800, edge_labels=True)\n```\n\n\nThe file [attachment:with-additional-padding.png] is the result of both the patches being applied.\n\nGraphs currently look really bad without either of the two patches. The second patch is not a panacea for all cut off graph plots since it doesn't fix all cases. But my hope is that it fixes most commonly used cases.",
+    "body": "Attachment [with-additional-padding.png](tarball://root/attachments/some-uuid/ticket9211/with-additional-padding.png) by ppurka created at 2011-10-11 09:57:32\n\nAdded two patches. The [attachment:trac-9211-fix_cut_vertices_in_graphs.patch first one] is essentially the patch by jason redone to work with 4.7.2_alpha3.\n\nThe [attachment:trac-9211-add_padding_to_graphs.patch second patch] adds extra padding to all graphs. The two pngs attached are the output of\n\n\n```\nM = matrix(RDF, [[1/3, 1/3, 1/3], [0, 1/4, 3/4], [1/2, 1/4, 1/4]])\nG=DiGraph(M, format='weighted_adjacency_matrix')\nG.show(vertex_size=800, edge_labels=True)\n```\n\n\nThe file [attachment:with-additional-padding.png] is the result of both the patches being applied.\n\nGraphs currently look really bad without either of the two patches. The second patch is not a panacea for all cut off graph plots since it doesn't fix all cases. But my hope is that it fixes most commonly used cases.",
     "created_at": "2011-10-11T09:57:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
@@ -320,7 +320,7 @@ archive/issue_comments_086290.json:
 }
 ```
 
-Attachment
+Attachment [with-additional-padding.png](tarball://root/attachments/some-uuid/ticket9211/with-additional-padding.png) by ppurka created at 2011-10-11 09:57:32
 
 Added two patches. The [attachment:trac-9211-fix_cut_vertices_in_graphs.patch first one] is essentially the patch by jason redone to work with 4.7.2_alpha3.
 
@@ -403,7 +403,7 @@ Ah, right, because the first patch only fixes undirected graphs.  You are plotti
 archive/issue_comments_086294.json:
 ```json
 {
-    "body": "Attachment\n\napply after trac-9211-fix_cut_vertices_in_graphs.patch",
+    "body": "Attachment [trac_9211_digraph_clipping.patch](tarball://root/attachments/some-uuid/ticket9211/trac_9211_digraph_clipping.patch) by jason created at 2011-10-11 14:16:20\n\napply after trac-9211-fix_cut_vertices_in_graphs.patch",
     "created_at": "2011-10-11T14:16:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
@@ -412,7 +412,7 @@ archive/issue_comments_086294.json:
 }
 ```
 
-Attachment
+Attachment [trac_9211_digraph_clipping.patch](tarball://root/attachments/some-uuid/ticket9211/trac_9211_digraph_clipping.patch) by jason created at 2011-10-11 14:16:20
 
 apply after trac-9211-fix_cut_vertices_in_graphs.patch
 
@@ -621,7 +621,7 @@ I wonder if you are aware of `sage -fixdoctests`, which does basically exactly w
 archive/issue_comments_086305.json:
 ```json
 {
-    "body": "Attachment\n\nFix doctests for 3d plots (re-uploaded)",
+    "body": "Attachment [trac_9211-fix_doctests.patch](tarball://root/attachments/some-uuid/ticket9211/trac_9211-fix_doctests.patch) by ppurka created at 2011-10-12 09:09:57\n\nFix doctests for 3d plots (re-uploaded)",
     "created_at": "2011-10-12T09:09:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
@@ -630,7 +630,7 @@ archive/issue_comments_086305.json:
 }
 ```
 
-Attachment
+Attachment [trac_9211-fix_doctests.patch](tarball://root/attachments/some-uuid/ticket9211/trac_9211-fix_doctests.patch) by ppurka created at 2011-10-12 09:09:57
 
 Fix doctests for 3d plots (re-uploaded)
 

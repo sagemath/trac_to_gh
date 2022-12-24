@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3975
 archive/issue_comments_028561.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3975.patch](tarball://root/attachments/some-uuid/ticket3975/trac_3975.patch) by anakha created at 2008-08-28 14:49:41",
     "created_at": "2008-08-28T14:49:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3975",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_028561.json:
 }
 ```
 
-Attachment
+Attachment [trac_3975.patch](tarball://root/attachments/some-uuid/ticket3975/trac_3975.patch) by anakha created at 2008-08-28 14:49:41
 
 
 
@@ -53,7 +53,7 @@ Attachment
 archive/issue_comments_028562.json:
 ```json
 {
-    "body": "Attachment\n\nI posted a rebased patch which should apply with all of the new plotting patches applied.\n\nPositive review.",
+    "body": "Attachment [trac_3975.2.patch](tarball://root/attachments/some-uuid/ticket3975/trac_3975.2.patch) by mhansen created at 2008-08-28 19:31:34\n\nI posted a rebased patch which should apply with all of the new plotting patches applied.\n\nPositive review.",
     "created_at": "2008-08-28T19:31:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3975",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_028562.json:
 }
 ```
 
-Attachment
+Attachment [trac_3975.2.patch](tarball://root/attachments/some-uuid/ticket3975/trac_3975.2.patch) by mhansen created at 2008-08-28 19:31:34
 
 I posted a rebased patch which should apply with all of the new plotting patches applied.
 

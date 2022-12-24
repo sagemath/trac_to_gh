@@ -67,7 +67,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_053230.json:
 ```json
 {
-    "body": "Attachment\n\nAttached patch has functions from ticket #6509 in it as well.  \n\nI deleted the optional argument \"k=1\" from Euler_Phi, since it didn't seem to be there for any reason.",
+    "body": "Attachment [trac_6529_arith_doctests.patch](tarball://root/attachments/some-uuid/ticket6529/trac_6529_arith_doctests.patch) by mhampton created at 2009-07-14 19:07:33\n\nAttached patch has functions from ticket #6509 in it as well.  \n\nI deleted the optional argument \"k=1\" from Euler_Phi, since it didn't seem to be there for any reason.",
     "created_at": "2009-07-14T19:07:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6529",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_053230.json:
 }
 ```
 
-Attachment
+Attachment [trac_6529_arith_doctests.patch](tarball://root/attachments/some-uuid/ticket6529/trac_6529_arith_doctests.patch) by mhampton created at 2009-07-14 19:07:33
 
 Attached patch has functions from ticket #6509 in it as well.  
 
@@ -89,7 +89,7 @@ I deleted the optional argument "k=1" from Euler_Phi, since it didn't seem to be
 archive/issue_comments_053231.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6529_reviewer.patch](tarball://root/attachments/some-uuid/ticket6529/trac_6529_reviewer.patch) by davidloeffler created at 2009-07-16 16:55:27",
     "created_at": "2009-07-16T16:55:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6529",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_053231.json:
 }
 ```
 
-Attachment
+Attachment [trac_6529_reviewer.patch](tarball://root/attachments/some-uuid/ticket6529/trac_6529_reviewer.patch) by davidloeffler created at 2009-07-16 16:55:27
 
 
 

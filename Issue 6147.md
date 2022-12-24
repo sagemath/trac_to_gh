@@ -53,7 +53,7 @@ apply to repo in $SAGE_LOCAL/bin
 archive/issue_comments_049068.json:
 ```json
 {
-    "body": "Attachment\n\nI'm adding some potential referees to the `cc` field ...",
+    "body": "Attachment [trac-6147-bin.patch](tarball://root/attachments/some-uuid/ticket6147/trac-6147-bin.patch) by craigcitro created at 2009-05-28 08:10:44\n\nI'm adding some potential referees to the `cc` field ...",
     "created_at": "2009-05-28T08:10:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6147",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_049068.json:
 }
 ```
 
-Attachment
+Attachment [trac-6147-bin.patch](tarball://root/attachments/some-uuid/ticket6147/trac-6147-bin.patch) by craigcitro created at 2009-05-28 08:10:44
 
 I'm adding some potential referees to the `cc` field ...
 

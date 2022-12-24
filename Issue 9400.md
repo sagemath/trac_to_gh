@@ -217,7 +217,7 @@ apply only this patch (which also addresses the referees issue with __hash__)
 archive/issue_comments_089536.json:
 ```json
 {
-    "body": "Attachment\n\nOK, new patch up that changes __hash__.  It passes all doctests on sage.math.",
+    "body": "Attachment [trac_9400.patch](tarball://root/attachments/some-uuid/ticket9400/trac_9400.patch) by was created at 2010-08-14 00:58:06\n\nOK, new patch up that changes __hash__.  It passes all doctests on sage.math.",
     "created_at": "2010-08-14T00:58:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
@@ -226,7 +226,7 @@ archive/issue_comments_089536.json:
 }
 ```
 
-Attachment
+Attachment [trac_9400.patch](tarball://root/attachments/some-uuid/ticket9400/trac_9400.patch) by was created at 2010-08-14 00:58:06
 
 OK, new patch up that changes __hash__.  It passes all doctests on sage.math.
 
@@ -464,7 +464,7 @@ Patch for the "maximize at primes" part, rebased to sage-4.6.prealpha1 (see #934
 archive/issue_comments_089545.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9400_maximize_at_primes.patch](tarball://root/attachments/some-uuid/ticket9400/9400_maximize_at_primes.patch) by jdemeyer created at 2010-08-18 22:03:39",
     "created_at": "2010-08-18T22:03:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
@@ -473,7 +473,7 @@ archive/issue_comments_089545.json:
 }
 ```
 
-Attachment
+Attachment [9400_maximize_at_primes.patch](tarball://root/attachments/some-uuid/ticket9400/9400_maximize_at_primes.patch) by jdemeyer created at 2010-08-18 22:03:39
 
 
 
@@ -524,7 +524,7 @@ Apply on top of 9400_maximize_at_primes.patc
 archive/issue_comments_089548.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9400_jd_review.patch](tarball://root/attachments/some-uuid/ticket9400/9400_jd_review.patch) by jdemeyer created at 2010-08-24 19:34:30",
     "created_at": "2010-08-24T19:34:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
@@ -533,7 +533,7 @@ archive/issue_comments_089548.json:
 }
 ```
 
-Attachment
+Attachment [9400_jd_review.patch](tarball://root/attachments/some-uuid/ticket9400/9400_jd_review.patch) by jdemeyer created at 2010-08-24 19:34:30
 
 
 
@@ -697,7 +697,7 @@ Thanks John, I will take care of these issues when I have time.
 archive/issue_comments_089555.json:
 ```json
 {
-    "body": "Attachment\n\nApply on top of previous 2 patches, small documentation fixes",
+    "body": "Attachment [9400_docfix.patch](tarball://root/attachments/some-uuid/ticket9400/9400_docfix.patch) by jdemeyer created at 2010-09-05 12:41:26\n\nApply on top of previous 2 patches, small documentation fixes",
     "created_at": "2010-09-05T12:41:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
@@ -706,7 +706,7 @@ archive/issue_comments_089555.json:
 }
 ```
 
-Attachment
+Attachment [9400_docfix.patch](tarball://root/attachments/some-uuid/ticket9400/9400_docfix.patch) by jdemeyer created at 2010-09-05 12:41:26
 
 Apply on top of previous 2 patches, small documentation fixes
 
@@ -735,7 +735,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_089557.json:
 ```json
 {
-    "body": "Attachment\n\nAll 3 patches combined (apply only this patch)",
+    "body": "Attachment [9400_combined.patch](tarball://root/attachments/some-uuid/ticket9400/9400_combined.patch) by jdemeyer created at 2010-09-05 16:34:45\n\nAll 3 patches combined (apply only this patch)",
     "created_at": "2010-09-05T16:34:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
@@ -744,7 +744,7 @@ archive/issue_comments_089557.json:
 }
 ```
 
-Attachment
+Attachment [9400_combined.patch](tarball://root/attachments/some-uuid/ticket9400/9400_combined.patch) by jdemeyer created at 2010-09-05 16:34:45
 
 All 3 patches combined (apply only this patch)
 

@@ -152,7 +152,7 @@ Don't worry about what David Roe is doing -- this ticket has been idle for nearl
 archive/issue_comments_026626.json:
 ```json
 {
-    "body": "Attachment\n\nbased on 3.2.2.alpha1",
+    "body": "Attachment [trac_3749-is_cyclic.patch](tarball://root/attachments/some-uuid/ticket3749/trac_3749-is_cyclic.patch) by wdj created at 2008-12-11 13:35:28\n\nbased on 3.2.2.alpha1",
     "created_at": "2008-12-11T13:35:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3749",
     "type": "issue_comment",
@@ -161,7 +161,7 @@ archive/issue_comments_026626.json:
 }
 ```
 
-Attachment
+Attachment [trac_3749-is_cyclic.patch](tarball://root/attachments/some-uuid/ticket3749/trac_3749-is_cyclic.patch) by wdj created at 2008-12-11 13:35:28
 
 based on 3.2.2.alpha1
 
@@ -325,7 +325,7 @@ Just factor the numbers a_i that define the abelian group.  Then the biggest d_i
 archive/issue_comments_026630.json:
 ```json
 {
-    "body": "Attachment\n\nApply other patch first. Based on 3.2.2.alpha1",
+    "body": "Attachment [trac_3749-is_cyclic2.patch](tarball://root/attachments/some-uuid/ticket3749/trac_3749-is_cyclic2.patch) by wdj created at 2008-12-12 02:07:25\n\nApply other patch first. Based on 3.2.2.alpha1",
     "created_at": "2008-12-12T02:07:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3749",
     "type": "issue_comment",
@@ -334,7 +334,7 @@ archive/issue_comments_026630.json:
 }
 ```
 
-Attachment
+Attachment [trac_3749-is_cyclic2.patch](tarball://root/attachments/some-uuid/ticket3749/trac_3749-is_cyclic2.patch) by wdj created at 2008-12-12 02:07:25
 
 Apply other patch first. Based on 3.2.2.alpha1
 
@@ -472,7 +472,7 @@ The others should be applied first. Based on 3.2.2.alpha1
 archive/issue_comments_026635.json:
 ```json
 {
-    "body": "Attachment\n\nI think this last patch fixes things the way you suggested. Also, both abelian_groups.py and dual_abelian_groups.py pass sage -t now.",
+    "body": "Attachment [trac_3749-is_cyclic3.patch](tarball://root/attachments/some-uuid/ticket3749/trac_3749-is_cyclic3.patch) by wdj created at 2008-12-12 23:53:34\n\nI think this last patch fixes things the way you suggested. Also, both abelian_groups.py and dual_abelian_groups.py pass sage -t now.",
     "created_at": "2008-12-12T23:53:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3749",
     "type": "issue_comment",
@@ -481,7 +481,7 @@ archive/issue_comments_026635.json:
 }
 ```
 
-Attachment
+Attachment [trac_3749-is_cyclic3.patch](tarball://root/attachments/some-uuid/ticket3749/trac_3749-is_cyclic3.patch) by wdj created at 2008-12-12 23:53:34
 
 I think this last patch fixes things the way you suggested. Also, both abelian_groups.py and dual_abelian_groups.py pass sage -t now.
 

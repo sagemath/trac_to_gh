@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3136
 archive/issue_comments_021781.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [scripts-3136.patch](tarball://root/attachments/some-uuid/ticket3136/scripts-3136.patch) by was created at 2008-05-10 23:21:19",
     "created_at": "2008-05-10T23:21:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3136",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_021781.json:
 }
 ```
 
-Attachment
+Attachment [scripts-3136.patch](tarball://root/attachments/some-uuid/ticket3136/scripts-3136.patch) by was created at 2008-05-10 23:21:19
 
 
 

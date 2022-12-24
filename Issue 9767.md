@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9768
 archive/issue_comments_095710.json:
 ```json
 {
-    "body": "Attachment\n\nDiffs of the new package",
+    "body": "Attachment [polybori-0.6.4.p5.spkg.patch](tarball://root/attachments/some-uuid/ticket9768/polybori-0.6.4.p5.spkg.patch) by AlexanderDreyer created at 2010-08-19 20:25:51\n\nDiffs of the new package",
     "created_at": "2010-08-19T20:25:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9767",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_095710.json:
 }
 ```
 
-Attachment
+Attachment [polybori-0.6.4.p5.spkg.patch](tarball://root/attachments/some-uuid/ticket9768/polybori-0.6.4.p5.spkg.patch) by AlexanderDreyer created at 2010-08-19 20:25:51
 
 Diffs of the new package
 

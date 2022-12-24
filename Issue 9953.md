@@ -375,7 +375,7 @@ Updated patch
 archive/issue_comments_099293.json:
 ```json
 {
-    "body": "Attachment\n\nGreat! Positive review!",
+    "body": "Attachment [trac_9954_fix_face_lattice.patch](tarball://root/attachments/some-uuid/ticket9954/trac_9954_fix_face_lattice.patch) by novoselt created at 2010-11-08 21:33:17\n\nGreat! Positive review!",
     "created_at": "2010-11-08T21:33:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9953",
     "type": "issue_comment",
@@ -384,7 +384,7 @@ archive/issue_comments_099293.json:
 }
 ```
 
-Attachment
+Attachment [trac_9954_fix_face_lattice.patch](tarball://root/attachments/some-uuid/ticket9954/trac_9954_fix_face_lattice.patch) by novoselt created at 2010-11-08 21:33:17
 
 Great! Positive review!
 

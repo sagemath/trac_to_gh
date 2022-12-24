@@ -68,7 +68,7 @@ Changing assignee from tbd to boothby.
 archive/issue_comments_032554.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4330.patch](tarball://root/attachments/some-uuid/ticket4430/trac_4330.patch) by mhansen created at 2008-11-21 21:39:20",
     "created_at": "2008-11-21T21:39:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4430",
     "type": "issue_comment",
@@ -77,7 +77,7 @@ archive/issue_comments_032554.json:
 }
 ```
 
-Attachment
+Attachment [trac_4330.patch](tarball://root/attachments/some-uuid/ticket4430/trac_4330.patch) by mhansen created at 2008-11-21 21:39:20
 
 
 

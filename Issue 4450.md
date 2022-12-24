@@ -51,7 +51,7 @@ Is this still a problem?
 archive/issue_comments_032810.json:
 ```json
 {
-    "body": "Attachment\n\nPrevents the cursor from wrapping aroundat last cell.",
+    "body": "Attachment [trac_4450-cursor-wrap-last-cell.patch](tarball://root/attachments/some-uuid/ticket4450/trac_4450-cursor-wrap-last-cell.patch) by timdumol created at 2010-01-19 11:14:00\n\nPrevents the cursor from wrapping aroundat last cell.",
     "created_at": "2010-01-19T11:14:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4450",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_032810.json:
 }
 ```
 
-Attachment
+Attachment [trac_4450-cursor-wrap-last-cell.patch](tarball://root/attachments/some-uuid/ticket4450/trac_4450-cursor-wrap-last-cell.patch) by timdumol created at 2010-01-19 11:14:00
 
 Prevents the cursor from wrapping aroundat last cell.
 

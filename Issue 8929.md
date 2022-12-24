@@ -36,7 +36,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8929
 archive/issue_comments_082247.json:
 ```json
 {
-    "body": "Attachment\n\nsame as original, with changes made to examples under is_regular()",
+    "body": "Attachment [trac-8929.patch](tarball://root/attachments/some-uuid/ticket8929/trac-8929.patch) by jasonbhill created at 2010-05-17 19:41:21\n\nsame as original, with changes made to examples under is_regular()",
     "created_at": "2010-05-17T19:41:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8929",
     "type": "issue_comment",
@@ -45,7 +45,7 @@ archive/issue_comments_082247.json:
 }
 ```
 
-Attachment
+Attachment [trac-8929.patch](tarball://root/attachments/some-uuid/ticket8929/trac-8929.patch) by jasonbhill created at 2010-05-17 19:41:21
 
 same as original, with changes made to examples under is_regular()
 

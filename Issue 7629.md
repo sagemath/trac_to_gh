@@ -107,7 +107,7 @@ Changing status from new to needs_review.
 archive/issue_comments_065183.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch is from #8038's V3.",
+    "body": "Attachment [trac_7629-validate_email_custom.patch](tarball://root/attachments/some-uuid/ticket7629/trac_7629-validate_email_custom.patch) by mpatel created at 2010-01-28 06:28:57\n\nThe patch is from #8038's V3.",
     "created_at": "2010-01-28T06:28:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7629",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_065183.json:
 }
 ```
 
-Attachment
+Attachment [trac_7629-validate_email_custom.patch](tarball://root/attachments/some-uuid/ticket7629/trac_7629-validate_email_custom.patch) by mpatel created at 2010-01-28 06:28:57
 
 The patch is from #8038's V3.
 

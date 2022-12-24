@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7354
 archive/issue_comments_061596.json:
 ```json
 {
-    "body": "Attachment\n\nInvoke jsMath for worksheet \"undo\" revisions.",
+    "body": "Attachment [trac_7354-jsmath_undo_revision.patch](tarball://root/attachments/some-uuid/ticket7354/trac_7354-jsmath_undo_revision.patch) by mpatel created at 2009-10-31 09:36:18\n\nInvoke jsMath for worksheet \"undo\" revisions.",
     "created_at": "2009-10-31T09:36:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7354",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_061596.json:
 }
 ```
 
-Attachment
+Attachment [trac_7354-jsmath_undo_revision.patch](tarball://root/attachments/some-uuid/ticket7354/trac_7354-jsmath_undo_revision.patch) by mpatel created at 2009-10-31 09:36:18
 
 Invoke jsMath for worksheet "undo" revisions.
 

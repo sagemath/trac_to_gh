@@ -173,7 +173,7 @@ Milestone sage-4.4.5 deleted
 archive/issue_comments_087279.json:
 ```json
 {
-    "body": "Attachment\n\nexported against 4.4.4.alpha0",
+    "body": "Attachment [trac_9266.patch](tarball://root/attachments/some-uuid/ticket9266/trac_9266.patch) by wuthrich created at 2010-06-22 23:19:26\n\nexported against 4.4.4.alpha0",
     "created_at": "2010-06-22T23:19:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9266",
     "type": "issue_comment",
@@ -182,7 +182,7 @@ archive/issue_comments_087279.json:
 }
 ```
 
-Attachment
+Attachment [trac_9266.patch](tarball://root/attachments/some-uuid/ticket9266/trac_9266.patch) by wuthrich created at 2010-06-22 23:19:26
 
 exported against 4.4.4.alpha0
 

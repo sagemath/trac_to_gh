@@ -494,7 +494,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_094035.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [brian-1.2.1.p0.spkg](tarball://root/attachments/some-uuid/ticket9675/brian-1.2.1.p0.spkg) by mpatel created at 2010-09-01 09:36:14",
     "created_at": "2010-09-01T09:36:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9675",
     "type": "issue_comment",
@@ -503,7 +503,7 @@ archive/issue_comments_094035.json:
 }
 ```
 
-Attachment
+Attachment [brian-1.2.1.p0.spkg](tarball://root/attachments/some-uuid/ticket9675/brian-1.2.1.p0.spkg) by mpatel created at 2010-09-01 09:36:14
 
 
 

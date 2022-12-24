@@ -43,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8001
 archive/issue_comments_069918.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8001-categories_testsuite-nt.patch](tarball://root/attachments/some-uuid/ticket8001/trac_8001-categories_testsuite-nt.patch) by nthiery created at 2010-01-19 18:29:31",
     "created_at": "2010-01-19T18:29:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8001",
     "type": "issue_comment",
@@ -52,7 +52,7 @@ archive/issue_comments_069918.json:
 }
 ```
 
-Attachment
+Attachment [trac_8001-categories_testsuite-nt.patch](tarball://root/attachments/some-uuid/ticket8001/trac_8001-categories_testsuite-nt.patch) by nthiery created at 2010-01-19 18:29:31
 
 
 
@@ -122,7 +122,7 @@ Nicolas: You can add positive review once you had a look on my review patch.
 archive/issue_comments_069922.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8001-categories_testsuite-review-fh.patch](tarball://root/attachments/some-uuid/ticket8001/trac_8001-categories_testsuite-review-fh.patch) by hivert created at 2010-01-23 11:00:09",
     "created_at": "2010-01-23T11:00:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8001",
     "type": "issue_comment",
@@ -131,7 +131,7 @@ archive/issue_comments_069922.json:
 }
 ```
 
-Attachment
+Attachment [trac_8001-categories_testsuite-review-fh.patch](tarball://root/attachments/some-uuid/ticket8001/trac_8001-categories_testsuite-review-fh.patch) by hivert created at 2010-01-23 11:00:09
 
 
 

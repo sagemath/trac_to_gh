@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4532
 archive/issue_comments_033759.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4523-typo-theta.patch](tarball://root/attachments/some-uuid/ticket4532/4523-typo-theta.patch) by robertwb created at 2008-11-16 07:22:57",
     "created_at": "2008-11-16T07:22:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4532",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_033759.json:
 }
 ```
 
-Attachment
+Attachment [4523-typo-theta.patch](tarball://root/attachments/some-uuid/ticket4532/4523-typo-theta.patch) by robertwb created at 2008-11-16 07:22:57
 
 
 

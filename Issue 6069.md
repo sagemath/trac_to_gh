@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6069
 archive/issue_comments_048294.json:
 ```json
 {
-    "body": "Attachment\n\nThis says that \"There is no published worksheet with name '%s'\" instead.",
+    "body": "Attachment [trac_6069-missing-published-worksheet.patch](tarball://root/attachments/some-uuid/ticket6069/trac_6069-missing-published-worksheet.patch) by timdumol created at 2010-01-18 19:53:09\n\nThis says that \"There is no published worksheet with name '%s'\" instead.",
     "created_at": "2010-01-18T19:53:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6069",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_048294.json:
 }
 ```
 
-Attachment
+Attachment [trac_6069-missing-published-worksheet.patch](tarball://root/attachments/some-uuid/ticket6069/trac_6069-missing-published-worksheet.patch) by timdumol created at 2010-01-18 19:53:09
 
 This says that "There is no published worksheet with name '%s'" instead.
 
@@ -113,7 +113,7 @@ Redirect to `pub/` after delay.  Apply only this patch.  sagenb repo.
 archive/issue_comments_048298.json:
 ```json
 {
-    "body": "Attachment\n\nV2 is an attempt to set up redirection.  It should also ensure for `guest` users that the error page does not include the full top bar (Settings, Log, etc.).\n\nFeel free to make changes.",
+    "body": "Attachment [trac_6069-missing_pub_ws.2.patch](tarball://root/attachments/some-uuid/ticket6069/trac_6069-missing_pub_ws.2.patch) by mpatel created at 2010-01-20 03:15:34\n\nV2 is an attempt to set up redirection.  It should also ensure for `guest` users that the error page does not include the full top bar (Settings, Log, etc.).\n\nFeel free to make changes.",
     "created_at": "2010-01-20T03:15:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6069",
     "type": "issue_comment",
@@ -122,7 +122,7 @@ archive/issue_comments_048298.json:
 }
 ```
 
-Attachment
+Attachment [trac_6069-missing_pub_ws.2.patch](tarball://root/attachments/some-uuid/ticket6069/trac_6069-missing_pub_ws.2.patch) by mpatel created at 2010-01-20 03:15:34
 
 V2 is an attempt to set up redirection.  It should also ensure for `guest` users that the error page does not include the full top bar (Settings, Log, etc.).
 
@@ -171,7 +171,7 @@ Better titles for non-Error pages.  Apply only this patch.
 archive/issue_comments_048301.json:
 ```json
 {
-    "body": "Attachment\n\nV3 should\n\n* Fix #8234.\n* Use a title more appropriate than `Error` for certain non-Error pages (see the patch).\n* Make \"Sign Out\" redirect to \"/\" when `require_login=False`.  This is better than returning a page whose header refers to a user named \"None\" and has a broken \"Home\" link!",
+    "body": "Attachment [trac_6069-missing_pub_ws.3.patch](tarball://root/attachments/some-uuid/ticket6069/trac_6069-missing_pub_ws.3.patch) by mpatel created at 2010-02-14 01:31:08\n\nV3 should\n\n* Fix #8234.\n* Use a title more appropriate than `Error` for certain non-Error pages (see the patch).\n* Make \"Sign Out\" redirect to \"/\" when `require_login=False`.  This is better than returning a page whose header refers to a user named \"None\" and has a broken \"Home\" link!",
     "created_at": "2010-02-14T01:31:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6069",
     "type": "issue_comment",
@@ -180,7 +180,7 @@ archive/issue_comments_048301.json:
 }
 ```
 
-Attachment
+Attachment [trac_6069-missing_pub_ws.3.patch](tarball://root/attachments/some-uuid/ticket6069/trac_6069-missing_pub_ws.3.patch) by mpatel created at 2010-02-14 01:31:08
 
 V3 should
 

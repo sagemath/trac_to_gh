@@ -85,7 +85,7 @@ Update:  the solution above works well for single equations in one variable, but
 archive/issue_comments_053076.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6515-solve-assume.patch](tarball://root/attachments/some-uuid/ticket6515/6515-solve-assume.patch) by robertwb created at 2010-01-19 21:14:31",
     "created_at": "2010-01-19T21:14:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6515",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_053076.json:
 }
 ```
 
-Attachment
+Attachment [6515-solve-assume.patch](tarball://root/attachments/some-uuid/ticket6515/6515-solve-assume.patch) by robertwb created at 2010-01-19 21:14:31
 
 
 
@@ -139,7 +139,7 @@ It doesn't catch everything, but is better than what we have now.
 archive/issue_comments_053079.json:
 ```json
 {
-    "body": "Attachment\n\nminor documentation fixes",
+    "body": "Attachment [trac_6515-referee.patch](tarball://root/attachments/some-uuid/ticket6515/trac_6515-referee.patch) by burcin created at 2010-02-03 16:50:53\n\nminor documentation fixes",
     "created_at": "2010-02-03T16:50:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6515",
     "type": "issue_comment",
@@ -148,7 +148,7 @@ archive/issue_comments_053079.json:
 }
 ```
 
-Attachment
+Attachment [trac_6515-referee.patch](tarball://root/attachments/some-uuid/ticket6515/trac_6515-referee.patch) by burcin created at 2010-02-03 16:50:53
 
 minor documentation fixes
 

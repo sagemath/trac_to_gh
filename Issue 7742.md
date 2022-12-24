@@ -270,7 +270,7 @@ But perhaps the function "compose" should be a method of these symbolic callable
 archive/issue_comments_066550.json:
 ```json
 {
-    "body": "Attachment\n\nAdds the compose function.",
+    "body": "Attachment [compose.patch](tarball://root/attachments/some-uuid/ticket7742/compose.patch) by colah created at 2010-03-14 04:00:29\n\nAdds the compose function.",
     "created_at": "2010-03-14T04:00:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7742",
     "type": "issue_comment",
@@ -279,7 +279,7 @@ archive/issue_comments_066550.json:
 }
 ```
 
-Attachment
+Attachment [compose.patch](tarball://root/attachments/some-uuid/ticket7742/compose.patch) by colah created at 2010-03-14 04:00:29
 
 Adds the compose function.
 
@@ -455,7 +455,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_066559.json:
 ```json
 {
-    "body": "Attachment\n\nadds compose, self_compose and nest functions. actually replaces previous patch this time",
+    "body": "Attachment [trac_7742-add-compose-etc.patch](tarball://root/attachments/some-uuid/ticket7742/trac_7742-add-compose-etc.patch) by flawrence created at 2010-11-17 04:40:32\n\nadds compose, self_compose and nest functions. actually replaces previous patch this time",
     "created_at": "2010-11-17T04:40:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7742",
     "type": "issue_comment",
@@ -464,7 +464,7 @@ archive/issue_comments_066559.json:
 }
 ```
 
-Attachment
+Attachment [trac_7742-add-compose-etc.patch](tarball://root/attachments/some-uuid/ticket7742/trac_7742-add-compose-etc.patch) by flawrence created at 2010-11-17 04:40:32
 
 adds compose, self_compose and nest functions. actually replaces previous patch this time
 
@@ -808,7 +808,7 @@ Special treatment of symbolic functions.
 archive/issue_comments_066571.json:
 ```json
 {
-    "body": "Attachment\n\nI realized that what really matters is the type of the first function in the composition - i.e., the type of g in compose(f,g).",
+    "body": "Attachment [trac_7742-symbolics.patch](tarball://root/attachments/some-uuid/ticket7742/trac_7742-symbolics.patch) by jrp created at 2010-11-18 19:11:30\n\nI realized that what really matters is the type of the first function in the composition - i.e., the type of g in compose(f,g).",
     "created_at": "2010-11-18T19:11:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7742",
     "type": "issue_comment",
@@ -817,7 +817,7 @@ archive/issue_comments_066571.json:
 }
 ```
 
-Attachment
+Attachment [trac_7742-symbolics.patch](tarball://root/attachments/some-uuid/ticket7742/trac_7742-symbolics.patch) by jrp created at 2010-11-18 19:11:30
 
 I realized that what really matters is the type of the first function in the composition - i.e., the type of g in compose(f,g).
 
@@ -1048,7 +1048,7 @@ Let's move the powers of two, and the symbolics handling, into a method of symbo
 archive/issue_comments_066579.json:
 ```json
 {
-    "body": "Attachment\n\nadds compose, self_compose and nest functions. self_compose is a wrapper for nest.  a self-contained patch.",
+    "body": "Attachment [trac_7742-add-compose-etc_v2.patch](tarball://root/attachments/some-uuid/ticket7742/trac_7742-add-compose-etc_v2.patch) by flawrence created at 2010-11-23 04:57:51\n\nadds compose, self_compose and nest functions. self_compose is a wrapper for nest.  a self-contained patch.",
     "created_at": "2010-11-23T04:57:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7742",
     "type": "issue_comment",
@@ -1057,7 +1057,7 @@ archive/issue_comments_066579.json:
 }
 ```
 
-Attachment
+Attachment [trac_7742-add-compose-etc_v2.patch](tarball://root/attachments/some-uuid/ticket7742/trac_7742-add-compose-etc_v2.patch) by flawrence created at 2010-11-23 04:57:51
 
 adds compose, self_compose and nest functions. self_compose is a wrapper for nest.  a self-contained patch.
 
@@ -1368,7 +1368,7 @@ Anybody wants to look at this?...
 archive/issue_comments_066594.json:
 ```json
 {
-    "body": "Attachment\n\nRebased for 4.6.2.rc0",
+    "body": "Attachment [trac_7742-add-compose-etc_v2_rebased.patch](tarball://root/attachments/some-uuid/ticket7742/trac_7742-add-compose-etc_v2_rebased.patch) by flawrence created at 2011-02-19 07:13:33\n\nRebased for 4.6.2.rc0",
     "created_at": "2011-02-19T07:13:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7742",
     "type": "issue_comment",
@@ -1377,7 +1377,7 @@ archive/issue_comments_066594.json:
 }
 ```
 
-Attachment
+Attachment [trac_7742-add-compose-etc_v2_rebased.patch](tarball://root/attachments/some-uuid/ticket7742/trac_7742-add-compose-etc_v2_rebased.patch) by flawrence created at 2011-02-19 07:13:33
 
 Rebased for 4.6.2.rc0
 
@@ -1472,7 +1472,7 @@ Paul
 archive/issue_comments_066599.json:
 ```json
 {
-    "body": "Attachment\n\nchecks that n is a nonnegative integer",
+    "body": "Attachment [trac_7742-add-compose-etc_v2.1.patch](tarball://root/attachments/some-uuid/ticket7742/trac_7742-add-compose-etc_v2.1.patch) by flawrence created at 2011-02-19 10:35:52\n\nchecks that n is a nonnegative integer",
     "created_at": "2011-02-19T10:35:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7742",
     "type": "issue_comment",
@@ -1481,7 +1481,7 @@ archive/issue_comments_066599.json:
 }
 ```
 
-Attachment
+Attachment [trac_7742-add-compose-etc_v2.1.patch](tarball://root/attachments/some-uuid/ticket7742/trac_7742-add-compose-etc_v2.1.patch) by flawrence created at 2011-02-19 10:35:52
 
 checks that n is a nonnegative integer
 

@@ -147,7 +147,7 @@ Changing priority from minor to major.
 archive/issue_comments_056366.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6836.patch](tarball://root/attachments/some-uuid/ticket6836/trac_6836.patch) by AlexGhitza created at 2010-01-03 11:59:55",
     "created_at": "2010-01-03T11:59:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6836",
     "type": "issue_comment",
@@ -156,7 +156,7 @@ archive/issue_comments_056366.json:
 }
 ```
 
-Attachment
+Attachment [trac_6836.patch](tarball://root/attachments/some-uuid/ticket6836/trac_6836.patch) by AlexGhitza created at 2010-01-03 11:59:55
 
 
 
@@ -201,7 +201,7 @@ Looks fine to me, and tests pass on 4.3.5 (with all the other patches in the pos
 archive/issue_comments_056369.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6836-trivial-doc.patch](tarball://root/attachments/some-uuid/ticket6836/trac_6836-trivial-doc.patch) by jhpalmieri created at 2010-04-15 05:34:07",
     "created_at": "2010-04-15T05:34:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6836",
     "type": "issue_comment",
@@ -210,7 +210,7 @@ archive/issue_comments_056369.json:
 }
 ```
 
-Attachment
+Attachment [trac_6836-trivial-doc.patch](tarball://root/attachments/some-uuid/ticket6836/trac_6836-trivial-doc.patch) by jhpalmieri created at 2010-04-15 05:34:07
 
 
 

@@ -81,7 +81,7 @@ Basically the filename option to SaveWorkspace seems to be randomly corrupted.
 archive/issue_comments_042277.json:
 ```json
 {
-    "body": "Attachment\n\nI've posted a patch that just disables the workspace caching optimization completely for Itanium.    I wrote workspace caching for gap (long ago) and it is 100% just an optimization -- things should be functionally equivalent but just the first time one does \"gap(...)\" it is slower.  \n\n\nNOTE: I also tried compiling gap with -O0 and that didn't fix this problem.",
+    "body": "Attachment [trac_5455.patch](tarball://root/attachments/some-uuid/ticket5455/trac_5455.patch) by was created at 2009-03-08 06:13:18\n\nI've posted a patch that just disables the workspace caching optimization completely for Itanium.    I wrote workspace caching for gap (long ago) and it is 100% just an optimization -- things should be functionally equivalent but just the first time one does \"gap(...)\" it is slower.  \n\n\nNOTE: I also tried compiling gap with -O0 and that didn't fix this problem.",
     "created_at": "2009-03-08T06:13:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5455",
     "type": "issue_comment",
@@ -90,7 +90,7 @@ archive/issue_comments_042277.json:
 }
 ```
 
-Attachment
+Attachment [trac_5455.patch](tarball://root/attachments/some-uuid/ticket5455/trac_5455.patch) by was created at 2009-03-08 06:13:18
 
 I've posted a patch that just disables the workspace caching optimization completely for Itanium.    I wrote workspace caching for gap (long ago) and it is 100% just an optimization -- things should be functionally equivalent but just the first time one does "gap(...)" it is slower.  
 

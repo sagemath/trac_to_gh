@@ -85,7 +85,7 @@ Patch
 archive/issue_comments_046287.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [octave-native-execute.patch](tarball://root/attachments/some-uuid/ticket5858/octave-native-execute.patch) by jjh created at 2009-09-11 04:46:47",
     "created_at": "2009-09-11T04:46:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5858",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_046287.json:
 }
 ```
 
-Attachment
+Attachment [octave-native-execute.patch](tarball://root/attachments/some-uuid/ticket5858/octave-native-execute.patch) by jjh created at 2009-09-11 04:46:47
 
 
 

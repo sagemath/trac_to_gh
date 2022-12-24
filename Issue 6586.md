@@ -492,7 +492,7 @@ Example inheritance diagram for "The Steenrod algebra".  This is just for fun.
 archive/issue_comments_053823.json:
 ```json
 {
-    "body": "Attachment\n\nThe new [inheritance diagram](http://sphinx.pocoo.org/ext/inheritance.html?highlight=inheritance#module-sphinx.ext.inheritance_diagram) extension has potential.  I've attached a minimal example.  **Please do not merge it.**\n\nThe options are limited, however.  For example, I could not find a directive that auto-generates a diagram for each module.  Also, it seems there's no way to color-code the nodes/classes, e.g., to indicate their modular provenance.  Maybe it's possible to do one or more of these ourselves, in `builder.py`, `conf.py`, or by patching Sphinx.",
+    "body": "Attachment [inheritance_example.patch](tarball://root/attachments/some-uuid/ticket6586/inheritance_example.patch) by mpatel created at 2009-08-02 21:24:44\n\nThe new [inheritance diagram](http://sphinx.pocoo.org/ext/inheritance.html?highlight=inheritance#module-sphinx.ext.inheritance_diagram) extension has potential.  I've attached a minimal example.  **Please do not merge it.**\n\nThe options are limited, however.  For example, I could not find a directive that auto-generates a diagram for each module.  Also, it seems there's no way to color-code the nodes/classes, e.g., to indicate their modular provenance.  Maybe it's possible to do one or more of these ourselves, in `builder.py`, `conf.py`, or by patching Sphinx.",
     "created_at": "2009-08-02T21:24:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6586",
     "type": "issue_comment",
@@ -501,7 +501,7 @@ archive/issue_comments_053823.json:
 }
 ```
 
-Attachment
+Attachment [inheritance_example.patch](tarball://root/attachments/some-uuid/ticket6586/inheritance_example.patch) by mpatel created at 2009-08-02 21:24:44
 
 The new [inheritance diagram](http://sphinx.pocoo.org/ext/inheritance.html?highlight=inheritance#module-sphinx.ext.inheritance_diagram) extension has potential.  I've attached a minimal example.  **Please do not merge it.**
 
@@ -1221,7 +1221,7 @@ Otherwise all went well and (from the point of view of an ordinary user/develope
 archive/issue_comments_053856.json:
 ```json
 {
-    "body": "Attachment\n\nnew version the file spkg/install (incorporating jinja2)",
+    "body": "Attachment [install](tarball://root/attachments/some-uuid/ticket6586/install) by jhpalmieri created at 2009-09-06 22:00:17\n\nnew version the file spkg/install (incorporating jinja2)",
     "created_at": "2009-09-06T22:00:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6586",
     "type": "issue_comment",
@@ -1230,7 +1230,7 @@ archive/issue_comments_053856.json:
 }
 ```
 
-Attachment
+Attachment [install](tarball://root/attachments/some-uuid/ticket6586/install) by jhpalmieri created at 2009-09-06 22:00:17
 
 new version the file spkg/install (incorporating jinja2)
 
@@ -1259,7 +1259,7 @@ new version of the file spkg/standard/deps (incorporating jinja2)
 archive/issue_comments_053858.json:
 ```json
 {
-    "body": "Attachment\n\ndiff between old and new install",
+    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket6586/deps) by jhpalmieri created at 2009-09-06 22:01:03\n\ndiff between old and new install",
     "created_at": "2009-09-06T22:01:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6586",
     "type": "issue_comment",
@@ -1268,7 +1268,7 @@ archive/issue_comments_053858.json:
 }
 ```
 
-Attachment
+Attachment [deps](tarball://root/attachments/some-uuid/ticket6586/deps) by jhpalmieri created at 2009-09-06 22:01:03
 
 diff between old and new install
 
@@ -1279,7 +1279,7 @@ diff between old and new install
 archive/issue_comments_053859.json:
 ```json
 {
-    "body": "Attachment\n\ndiff between old and new deps",
+    "body": "Attachment [deps.patch](tarball://root/attachments/some-uuid/ticket6586/deps.patch) by jhpalmieri created at 2009-09-06 22:01:16\n\ndiff between old and new deps",
     "created_at": "2009-09-06T22:01:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6586",
     "type": "issue_comment",
@@ -1288,7 +1288,7 @@ archive/issue_comments_053859.json:
 }
 ```
 
-Attachment
+Attachment [deps.patch](tarball://root/attachments/some-uuid/ticket6586/deps.patch) by jhpalmieri created at 2009-09-06 22:01:16
 
 diff between old and new deps
 

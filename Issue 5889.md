@@ -81,7 +81,7 @@ Okay, this patch is identical to the first one, but without "#random".  It passe
 archive/issue_comments_046563.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [random-complex.patch](tarball://root/attachments/some-uuid/ticket5889/random-complex.patch) by jhpalmieri created at 2009-04-30 20:52:18",
     "created_at": "2009-04-30T20:52:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5889",
     "type": "issue_comment",
@@ -90,7 +90,7 @@ archive/issue_comments_046563.json:
 }
 ```
 
-Attachment
+Attachment [random-complex.patch](tarball://root/attachments/some-uuid/ticket5889/random-complex.patch) by jhpalmieri created at 2009-04-30 20:52:18
 
 
 

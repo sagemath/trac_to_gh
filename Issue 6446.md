@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6446
 archive/issue_comments_051797.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6446-memleak_coarsest_eq_refn.patch](tarball://root/attachments/some-uuid/ticket6446/trac_6446-memleak_coarsest_eq_refn.patch) by rlm created at 2009-06-29 17:38:40",
     "created_at": "2009-06-29T17:38:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6446",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_051797.json:
 }
 ```
 
-Attachment
+Attachment [trac_6446-memleak_coarsest_eq_refn.patch](tarball://root/attachments/some-uuid/ticket6446/trac_6446-memleak_coarsest_eq_refn.patch) by rlm created at 2009-06-29 17:38:40
 
 
 

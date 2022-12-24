@@ -71,7 +71,7 @@ Changing assignee from cwitty to mabshoff.
 archive/issue_comments_038180.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5007_bashism.patch](tarball://root/attachments/some-uuid/ticket5007/trac_5007_bashism.patch) by craigcitro created at 2009-01-18 06:25:56",
     "created_at": "2009-01-18T06:25:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5007",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_038180.json:
 }
 ```
 
-Attachment
+Attachment [trac_5007_bashism.patch](tarball://root/attachments/some-uuid/ticket5007/trac_5007_bashism.patch) by craigcitro created at 2009-01-18 06:25:56
 
 
 

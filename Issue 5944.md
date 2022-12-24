@@ -65,7 +65,7 @@ add doctests for the fix
 archive/issue_comments_046996.json:
 ```json
 {
-    "body": "Attachment\n\nThe package for pynac 0.1.6 at #5777 has a fix for this. Attached patch adds doctests.",
+    "body": "Attachment [trac_5944-doctest.patch](tarball://root/attachments/some-uuid/ticket5944/trac_5944-doctest.patch) by burcin created at 2009-05-05 23:22:20\n\nThe package for pynac 0.1.6 at #5777 has a fix for this. Attached patch adds doctests.",
     "created_at": "2009-05-05T23:22:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5944",
     "type": "issue_comment",
@@ -74,7 +74,7 @@ archive/issue_comments_046996.json:
 }
 ```
 
-Attachment
+Attachment [trac_5944-doctest.patch](tarball://root/attachments/some-uuid/ticket5944/trac_5944-doctest.patch) by burcin created at 2009-05-05 23:22:20
 
 The package for pynac 0.1.6 at #5777 has a fix for this. Attached patch adds doctests.
 

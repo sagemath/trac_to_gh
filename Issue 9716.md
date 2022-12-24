@@ -75,7 +75,7 @@ first example
 archive/issue_comments_094796.json:
 ```json
 {
-    "body": "Attachment\n\nsecond example",
+    "body": "Attachment [plot2.png](tarball://root/attachments/some-uuid/ticket9716/plot2.png) by jason created at 2010-09-03 20:43:33\n\nsecond example",
     "created_at": "2010-09-03T20:43:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9716",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_094796.json:
 }
 ```
 
-Attachment
+Attachment [plot2.png](tarball://root/attachments/some-uuid/ticket9716/plot2.png) by jason created at 2010-09-03 20:43:33
 
 second example
 

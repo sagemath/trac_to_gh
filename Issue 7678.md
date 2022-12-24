@@ -50,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7678
 archive/issue_comments_065854.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7678.patch](tarball://root/attachments/some-uuid/ticket7678/trac_7678.patch) by AlexGhitza created at 2009-12-13 22:34:17",
     "created_at": "2009-12-13T22:34:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7678",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_065854.json:
 }
 ```
 
-Attachment
+Attachment [trac_7678.patch](tarball://root/attachments/some-uuid/ticket7678/trac_7678.patch) by AlexGhitza created at 2009-12-13 22:34:17
 
 
 
@@ -237,7 +237,7 @@ Actually, the splitting into range(2, 2255) including 'gap' and range(2256, 5000
 archive/issue_comments_065864.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7678.2.patch](tarball://root/attachments/some-uuid/ticket7678/trac_7678.2.patch) by AlexGhitza created at 2009-12-14 21:30:33",
     "created_at": "2009-12-14T21:30:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7678",
     "type": "issue_comment",
@@ -246,7 +246,7 @@ archive/issue_comments_065864.json:
 }
 ```
 
-Attachment
+Attachment [trac_7678.2.patch](tarball://root/attachments/some-uuid/ticket7678/trac_7678.2.patch) by AlexGhitza created at 2009-12-14 21:30:33
 
 
 

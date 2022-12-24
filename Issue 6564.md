@@ -97,7 +97,7 @@ Changing assignee from tbd to drkirkby.
 archive/issue_comments_053532.json:
 ```json
 {
-    "body": "Attachment\n\ninstall.log showing ecl failure due to missing config.h",
+    "body": "Attachment [install.log](tarball://root/attachments/some-uuid/ticket6564/install.log) by drkirkby created at 2009-07-25 12:15:52\n\ninstall.log showing ecl failure due to missing config.h",
     "created_at": "2009-07-25T12:15:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6564",
     "type": "issue_comment",
@@ -106,7 +106,7 @@ archive/issue_comments_053532.json:
 }
 ```
 
-Attachment
+Attachment [install.log](tarball://root/attachments/some-uuid/ticket6564/install.log) by drkirkby created at 2009-07-25 12:15:52
 
 install.log showing ecl failure due to missing config.h
 
@@ -214,7 +214,7 @@ Unknown symbol: si::pretty-print-format
 archive/issue_comments_053534.json:
 ```json
 {
-    "body": "Attachment\n\nA second attampt after touching the missing file. The build stops earlier, which is odd",
+    "body": "Attachment [install.2.log](tarball://root/attachments/some-uuid/ticket6564/install.2.log) by drkirkby created at 2009-07-25 13:30:10\n\nA second attampt after touching the missing file. The build stops earlier, which is odd",
     "created_at": "2009-07-25T13:30:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6564",
     "type": "issue_comment",
@@ -223,7 +223,7 @@ archive/issue_comments_053534.json:
 }
 ```
 
-Attachment
+Attachment [install.2.log](tarball://root/attachments/some-uuid/ticket6564/install.2.log) by drkirkby created at 2009-07-25 13:30:10
 
 A second attampt after touching the missing file. The build stops earlier, which is odd
 
@@ -540,7 +540,7 @@ Adam
 archive/issue_comments_053549.json:
 ```json
 {
-    "body": "Attachment\n\nfull log of doctest failures due to new ecl + maxima",
+    "body": "Attachment [doctest-mvngu.log](tarball://root/attachments/some-uuid/ticket6564/doctest-mvngu.log) by mvngu created at 2009-08-31 16:18:08\n\nfull log of doctest failures due to new ecl + maxima",
     "created_at": "2009-08-31T16:18:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6564",
     "type": "issue_comment",
@@ -549,7 +549,7 @@ archive/issue_comments_053549.json:
 }
 ```
 
-Attachment
+Attachment [doctest-mvngu.log](tarball://root/attachments/some-uuid/ticket6564/doctest-mvngu.log) by mvngu created at 2009-08-31 16:18:08
 
 full log of doctest failures due to new ecl + maxima
 

@@ -209,7 +209,7 @@ Patch will be attached in a minute
 archive/issue_comments_075779.json:
 ```json
 {
-    "body": "Attachment\n\nMercurial patch",
+    "body": "Attachment [8440-python.patch](tarball://root/attachments/some-uuid/ticket8440/8440-python.patch) by drkirkby created at 2010-03-05 03:28:03\n\nMercurial patch",
     "created_at": "2010-03-05T03:28:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8440",
     "type": "issue_comment",
@@ -218,7 +218,7 @@ archive/issue_comments_075779.json:
 }
 ```
 
-Attachment
+Attachment [8440-python.patch](tarball://root/attachments/some-uuid/ticket8440/8440-python.patch) by drkirkby created at 2010-03-05 03:28:03
 
 Mercurial patch
 

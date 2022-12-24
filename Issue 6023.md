@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6023
 archive/issue_comments_047967.json:
 ```json
 {
-    "body": "Attachment\n\nAlso improves plot3d function.\n\nSee [http://groups.google.com/group/sage-devel/browse_thread/thread/1adac4035031b140/c36f1f8a7c8a9b43#c36f1f8a7c8a9b43](http://groups.google.com/group/sage-devel/browse_thread/thread/1adac4035031b140/c36f1f8a7c8a9b43#c36f1f8a7c8a9b43) for why there is no loads(dumps()) doctest.",
+    "body": "Attachment [trac_6023.patch](tarball://root/attachments/some-uuid/ticket6023/trac_6023.patch) by kcrisman created at 2009-05-12 00:28:25\n\nAlso improves plot3d function.\n\nSee [http://groups.google.com/group/sage-devel/browse_thread/thread/1adac4035031b140/c36f1f8a7c8a9b43#c36f1f8a7c8a9b43](http://groups.google.com/group/sage-devel/browse_thread/thread/1adac4035031b140/c36f1f8a7c8a9b43#c36f1f8a7c8a9b43) for why there is no loads(dumps()) doctest.",
     "created_at": "2009-05-12T00:28:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6023",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_047967.json:
 }
 ```
 
-Attachment
+Attachment [trac_6023.patch](tarball://root/attachments/some-uuid/ticket6023/trac_6023.patch) by kcrisman created at 2009-05-12 00:28:25
 
 Also improves plot3d function.
 
@@ -129,7 +129,7 @@ Changing status from new to assigned.
 archive/issue_comments_047972.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review! Apply patches in the following order:\n1. `trac_6023.patch`\n2. `trac_6023-fix.patch`",
+    "body": "Attachment [trac_6023-fix.patch](tarball://root/attachments/some-uuid/ticket6023/trac_6023-fix.patch) by mvngu created at 2009-05-15 06:40:41\n\nPositive review! Apply patches in the following order:\n1. `trac_6023.patch`\n2. `trac_6023-fix.patch`",
     "created_at": "2009-05-15T06:40:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6023",
     "type": "issue_comment",
@@ -138,7 +138,7 @@ archive/issue_comments_047972.json:
 }
 ```
 
-Attachment
+Attachment [trac_6023-fix.patch](tarball://root/attachments/some-uuid/ticket6023/trac_6023-fix.patch) by mvngu created at 2009-05-15 06:40:41
 
 Positive review! Apply patches in the following order:
 1. `trac_6023.patch`

@@ -67,7 +67,7 @@ Changing status from new to needs_review.
 archive/issue_comments_070815.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8080-install.patch](tarball://root/attachments/some-uuid/ticket8080/trac_8080-install.patch) by mvngu created at 2010-02-15 04:25:25",
     "created_at": "2010-02-15T04:25:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8080",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_070815.json:
 }
 ```
 
-Attachment
+Attachment [trac_8080-install.patch](tarball://root/attachments/some-uuid/ticket8080/trac_8080-install.patch) by mvngu created at 2010-02-15 04:25:25
 
 
 

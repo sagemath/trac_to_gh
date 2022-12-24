@@ -106,7 +106,7 @@ I will post a patch when I get a chance to code it up.
 archive/issue_comments_038686.json:
 ```json
 {
-    "body": "Attachment\n\napply after #5736, #4357 and #5787",
+    "body": "Attachment [trac_5080.patch](tarball://root/attachments/some-uuid/ticket5080/trac_5080.patch) by davidloeffler created at 2009-05-14 11:42:41\n\napply after #5736, #4357 and #5787",
     "created_at": "2009-05-14T11:42:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5080",
     "type": "issue_comment",
@@ -115,7 +115,7 @@ archive/issue_comments_038686.json:
 }
 ```
 
-Attachment
+Attachment [trac_5080.patch](tarball://root/attachments/some-uuid/ticket5080/trac_5080.patch) by davidloeffler created at 2009-05-14 11:42:41
 
 apply after #5736, #4357 and #5787
 
@@ -220,7 +220,7 @@ Patch looks good, applies fine to 4.0.alpha0 and fixes the bug.  My only quibble
 archive/issue_comments_038691.json:
 ```json
 {
-    "body": "Attachment\n\napply after previous patch",
+    "body": "Attachment [trac_5080_doctest.patch](tarball://root/attachments/some-uuid/ticket5080/trac_5080_doctest.patch) by davidloeffler created at 2009-05-18 15:49:12\n\napply after previous patch",
     "created_at": "2009-05-18T15:49:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5080",
     "type": "issue_comment",
@@ -229,7 +229,7 @@ archive/issue_comments_038691.json:
 }
 ```
 
-Attachment
+Attachment [trac_5080_doctest.patch](tarball://root/attachments/some-uuid/ticket5080/trac_5080_doctest.patch) by davidloeffler created at 2009-05-18 15:49:12
 
 apply after previous patch
 
@@ -395,7 +395,7 @@ replaces all previous patches
 archive/issue_comments_038699.json:
 ```json
 {
-    "body": "Attachment\n\nHere's a new patch, which causes no speed regression at all in the p-adic analytic sha for 858k1, and still solves the original 128a congruence number problem.",
+    "body": "Attachment [trac_5080_new.patch](tarball://root/attachments/some-uuid/ticket5080/trac_5080_new.patch) by davidloeffler created at 2009-05-25 19:19:58\n\nHere's a new patch, which causes no speed regression at all in the p-adic analytic sha for 858k1, and still solves the original 128a congruence number problem.",
     "created_at": "2009-05-25T19:19:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5080",
     "type": "issue_comment",
@@ -404,7 +404,7 @@ archive/issue_comments_038699.json:
 }
 ```
 
-Attachment
+Attachment [trac_5080_new.patch](tarball://root/attachments/some-uuid/ticket5080/trac_5080_new.patch) by davidloeffler created at 2009-05-25 19:19:58
 
 Here's a new patch, which causes no speed regression at all in the p-adic analytic sha for 858k1, and still solves the original 128a congruence number problem.
 
@@ -552,7 +552,7 @@ apply over trac_5080_new.patch
 archive/issue_comments_038707.json:
 ```json
 {
-    "body": "Attachment\n\nFor the first time I can remember, I wrote a fix and it worked first time. Here is a patch which removes all instances of \"hasattr\".\n\n(There is potential for cleaning up elsewhere in sage/modular/hecke/submodule.py using cached_method -- the is_new, is_old, new_submodule, old_submodule calls have their own caching code which we can now get rid of -- but that is for another ticket.)\n\nDavid",
+    "body": "Attachment [trac_5080_cachefix.patch](tarball://root/attachments/some-uuid/ticket5080/trac_5080_cachefix.patch) by davidloeffler created at 2009-06-20 10:12:20\n\nFor the first time I can remember, I wrote a fix and it worked first time. Here is a patch which removes all instances of \"hasattr\".\n\n(There is potential for cleaning up elsewhere in sage/modular/hecke/submodule.py using cached_method -- the is_new, is_old, new_submodule, old_submodule calls have their own caching code which we can now get rid of -- but that is for another ticket.)\n\nDavid",
     "created_at": "2009-06-20T10:12:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5080",
     "type": "issue_comment",
@@ -561,7 +561,7 @@ archive/issue_comments_038707.json:
 }
 ```
 
-Attachment
+Attachment [trac_5080_cachefix.patch](tarball://root/attachments/some-uuid/ticket5080/trac_5080_cachefix.patch) by davidloeffler created at 2009-06-20 10:12:20
 
 For the first time I can remember, I wrote a fix and it worked first time. Here is a patch which removes all instances of "hasattr".
 
@@ -709,7 +709,7 @@ Changing priority from major to blocker.
 archive/issue_comments_038714.json:
 ```json
 {
-    "body": "Attachment\n\nApply to 4.1.alpha2",
+    "body": "Attachment [trac_5080_repair.patch](tarball://root/attachments/some-uuid/ticket5080/trac_5080_repair.patch) by davidloeffler created at 2009-06-28 17:32:10\n\nApply to 4.1.alpha2",
     "created_at": "2009-06-28T17:32:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5080",
     "type": "issue_comment",
@@ -718,7 +718,7 @@ archive/issue_comments_038714.json:
 }
 ```
 
-Attachment
+Attachment [trac_5080_repair.patch](tarball://root/attachments/some-uuid/ticket5080/trac_5080_repair.patch) by davidloeffler created at 2009-06-28 17:32:10
 
 Apply to 4.1.alpha2
 

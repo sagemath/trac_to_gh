@@ -64,7 +64,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8004
 archive/issue_comments_069943.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-8004-region_plot.patch](tarball://root/attachments/some-uuid/ticket8004/trac-8004-region_plot.patch) by jason created at 2010-01-20 00:12:51",
     "created_at": "2010-01-20T00:12:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8004",
     "type": "issue_comment",
@@ -73,7 +73,7 @@ archive/issue_comments_069943.json:
 }
 ```
 
-Attachment
+Attachment [trac-8004-region_plot.patch](tarball://root/attachments/some-uuid/ticket8004/trac-8004-region_plot.patch) by jason created at 2010-01-20 00:12:51
 
 
 

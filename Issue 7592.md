@@ -208,7 +208,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_064733.json:
 ```json
 {
-    "body": "Attachment\n\nI corrected the documentation as I finally thought returning a graph would be much more useful :-)\n\nI also added a more interesting example of what one can do with flows :-)\n\nNathann",
+    "body": "Attachment [trac_7592.patch](tarball://root/attachments/some-uuid/ticket7592/trac_7592.patch) by ncohen created at 2009-12-16 00:44:53\n\nI corrected the documentation as I finally thought returning a graph would be much more useful :-)\n\nI also added a more interesting example of what one can do with flows :-)\n\nNathann",
     "created_at": "2009-12-16T00:44:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7592",
     "type": "issue_comment",
@@ -217,7 +217,7 @@ archive/issue_comments_064733.json:
 }
 ```
 
-Attachment
+Attachment [trac_7592.patch](tarball://root/attachments/some-uuid/ticket7592/trac_7592.patch) by ncohen created at 2009-12-16 00:44:53
 
 I corrected the documentation as I finally thought returning a graph would be much more useful :-)
 

@@ -84,7 +84,7 @@ Got:
 archive/issue_comments_028970.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4016-doctest_scheme.patch](tarball://root/attachments/some-uuid/ticket4016/4016-doctest_scheme.patch) by AlexGhitza created at 2008-08-31 12:08:04",
     "created_at": "2008-08-31T12:08:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4016",
     "type": "issue_comment",
@@ -93,7 +93,7 @@ archive/issue_comments_028970.json:
 }
 ```
 
-Attachment
+Attachment [4016-doctest_scheme.patch](tarball://root/attachments/some-uuid/ticket4016/4016-doctest_scheme.patch) by AlexGhitza created at 2008-08-31 12:08:04
 
 
 

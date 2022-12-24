@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9218
 archive/issue_comments_086376.json:
 ```json
 {
-    "body": "Attachment\n\nThe first patch adds the documentation.  However the docstrings are all pre-rest, so look like crap.  E.g., see \n\n    http://sage.math.washington.edu/home/wstein/build/sage-4.4.4.alpha0/devel/sage/doc/output/html/en/reference/finance.html\n\nor just apply the patch, then do `sage -docbuild reference html` and look at `output/html/en/reference/` for yourself.\n\nA second patch will fix all the formatting.",
+    "body": "Attachment [trac_9218-finance_doc.patch](tarball://root/attachments/some-uuid/ticket9218/trac_9218-finance_doc.patch) by was created at 2010-06-11 18:44:06\n\nThe first patch adds the documentation.  However the docstrings are all pre-rest, so look like crap.  E.g., see \n\n    http://sage.math.washington.edu/home/wstein/build/sage-4.4.4.alpha0/devel/sage/doc/output/html/en/reference/finance.html\n\nor just apply the patch, then do `sage -docbuild reference html` and look at `output/html/en/reference/` for yourself.\n\nA second patch will fix all the formatting.",
     "created_at": "2010-06-11T18:44:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9218",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_086376.json:
 }
 ```
 
-Attachment
+Attachment [trac_9218-finance_doc.patch](tarball://root/attachments/some-uuid/ticket9218/trac_9218-finance_doc.patch) by was created at 2010-06-11 18:44:06
 
 The first patch adds the documentation.  However the docstrings are all pre-rest, so look like crap.  E.g., see 
 
@@ -57,7 +57,7 @@ A second patch will fix all the formatting.
 archive/issue_comments_086377.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9218-reviewer.patch](tarball://root/attachments/some-uuid/ticket9218/trac_9218-reviewer.patch) by mvngu created at 2010-06-12 21:55:16",
     "created_at": "2010-06-12T21:55:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9218",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_086377.json:
 }
 ```
 
-Attachment
+Attachment [trac_9218-reviewer.patch](tarball://root/attachments/some-uuid/ticket9218/trac_9218-reviewer.patch) by mvngu created at 2010-06-12 21:55:16
 
 
 
@@ -121,7 +121,7 @@ Changing status from new to needs_review.
 archive/issue_comments_086380.json:
 ```json
 {
-    "body": "Attachment\n\nApply this last.",
+    "body": "Attachment [trac_9218-typo.patch](tarball://root/attachments/some-uuid/ticket9218/trac_9218-typo.patch) by kcrisman created at 2010-06-18 18:15:58\n\nApply this last.",
     "created_at": "2010-06-18T18:15:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9218",
     "type": "issue_comment",
@@ -130,7 +130,7 @@ archive/issue_comments_086380.json:
 }
 ```
 
-Attachment
+Attachment [trac_9218-typo.patch](tarball://root/attachments/some-uuid/ticket9218/trac_9218-typo.patch) by kcrisman created at 2010-06-18 18:15:58
 
 Apply this last.
 

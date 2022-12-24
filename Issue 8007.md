@@ -168,7 +168,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_069972.json:
 ```json
 {
-    "body": "Attachment\n\nNeeds to be rebased against 4.3.2...",
+    "body": "Attachment [trac_8007.patch](tarball://root/attachments/some-uuid/ticket8007/trac_8007.patch) by roed created at 2010-02-11 20:45:13\n\nNeeds to be rebased against 4.3.2...",
     "created_at": "2010-02-11T20:45:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8007",
     "type": "issue_comment",
@@ -177,7 +177,7 @@ archive/issue_comments_069972.json:
 }
 ```
 
-Attachment
+Attachment [trac_8007.patch](tarball://root/attachments/some-uuid/ticket8007/trac_8007.patch) by roed created at 2010-02-11 20:45:13
 
 Needs to be rebased against 4.3.2...
 
@@ -188,7 +188,7 @@ Needs to be rebased against 4.3.2...
 archive/issue_comments_069973.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8007_rebase.patch](tarball://root/attachments/some-uuid/ticket8007/trac_8007_rebase.patch) by craigcitro created at 2010-02-12 20:15:21",
     "created_at": "2010-02-12T20:15:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8007",
     "type": "issue_comment",
@@ -197,7 +197,7 @@ archive/issue_comments_069973.json:
 }
 ```
 
-Attachment
+Attachment [trac_8007_rebase.patch](tarball://root/attachments/some-uuid/ticket8007/trac_8007_rebase.patch) by craigcitro created at 2010-02-12 20:15:21
 
 
 

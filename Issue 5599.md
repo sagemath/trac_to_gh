@@ -114,7 +114,7 @@ Michael
 archive/issue_comments_043652.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-5599-plot-center.patch](tarball://root/attachments/some-uuid/ticket5599/trac-5599-plot-center.patch) by jason created at 2009-05-30 08:23:33",
     "created_at": "2009-05-30T08:23:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5599",
     "type": "issue_comment",
@@ -123,7 +123,7 @@ archive/issue_comments_043652.json:
 }
 ```
 
-Attachment
+Attachment [trac-5599-plot-center.patch](tarball://root/attachments/some-uuid/ticket5599/trac-5599-plot-center.patch) by jason created at 2009-05-30 08:23:33
 
 
 

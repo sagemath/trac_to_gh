@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6418
 archive/issue_comments_051540.json:
 ```json
 {
-    "body": "Attachment\n\nI still get about 5 warnings when building the reference manual. That's better than 10 warnings.",
+    "body": "Attachment [ref_manual_6418.patch](tarball://root/attachments/some-uuid/ticket6418/ref_manual_6418.patch) by mvngu created at 2009-06-26 00:59:34\n\nI still get about 5 warnings when building the reference manual. That's better than 10 warnings.",
     "created_at": "2009-06-26T00:59:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6418",
     "type": "issue_comment",
@@ -41,7 +41,7 @@ archive/issue_comments_051540.json:
 }
 ```
 
-Attachment
+Attachment [ref_manual_6418.patch](tarball://root/attachments/some-uuid/ticket6418/ref_manual_6418.patch) by mvngu created at 2009-06-26 00:59:34
 
 I still get about 5 warnings when building the reference manual. That's better than 10 warnings.
 

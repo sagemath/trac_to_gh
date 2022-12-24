@@ -171,7 +171,7 @@ After applying the patches at #2085, and setting use_indicator_function to False
 archive/issue_comments_012664.json:
 ```json
 {
-    "body": "Attachment\n\nAfter three weeks, the problem is solved. The patch should apply on top of #2186, which depends on a few things...",
+    "body": "Attachment [1961-only_update_qzb_if_zero.patch](tarball://root/attachments/some-uuid/ticket1961/1961-only_update_qzb_if_zero.patch) by rlm created at 2008-02-17 02:41:22\n\nAfter three weeks, the problem is solved. The patch should apply on top of #2186, which depends on a few things...",
     "created_at": "2008-02-17T02:41:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1961",
     "type": "issue_comment",
@@ -180,7 +180,7 @@ archive/issue_comments_012664.json:
 }
 ```
 
-Attachment
+Attachment [1961-only_update_qzb_if_zero.patch](tarball://root/attachments/some-uuid/ticket1961/1961-only_update_qzb_if_zero.patch) by rlm created at 2008-02-17 02:41:22
 
 After three weeks, the problem is solved. The patch should apply on top of #2186, which depends on a few things...
 

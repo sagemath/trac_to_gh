@@ -520,7 +520,7 @@ I'm attaching a new patch.
 archive/issue_comments_099692.json:
 ```json
 {
-    "body": "Attachment\n\nscripts repo: depends on #9644",
+    "body": "Attachment [trac_9960-scripts-SAGE_CHECK.patch](tarball://root/attachments/some-uuid/ticket9960/trac_9960-scripts-SAGE_CHECK.patch) by jhpalmieri created at 2010-09-21 21:14:35\n\nscripts repo: depends on #9644",
     "created_at": "2010-09-21T21:14:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
@@ -529,7 +529,7 @@ archive/issue_comments_099692.json:
 }
 ```
 
-Attachment
+Attachment [trac_9960-scripts-SAGE_CHECK.patch](tarball://root/attachments/some-uuid/ticket9960/trac_9960-scripts-SAGE_CHECK.patch) by jhpalmieri created at 2010-09-21 21:14:35
 
 scripts repo: depends on #9644
 
@@ -975,7 +975,7 @@ Uploading the patch with the correct name **again**.
 archive/issue_comments_099711.json:
 ```json
 {
-    "body": "Attachment\n\nSCRIPTS REPO. Apply on top of John's patch.",
+    "body": "Attachment [trac_9960-additional_fixes_to_sage-spkg--scripts-repo.patch](tarball://root/attachments/some-uuid/ticket9960/trac_9960-additional_fixes_to_sage-spkg--scripts-repo.patch) by leif created at 2010-09-22 23:09:09\n\nSCRIPTS REPO. Apply on top of John's patch.",
     "created_at": "2010-09-22T23:09:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
@@ -984,7 +984,7 @@ archive/issue_comments_099711.json:
 }
 ```
 
-Attachment
+Attachment [trac_9960-additional_fixes_to_sage-spkg--scripts-repo.patch](tarball://root/attachments/some-uuid/ticket9960/trac_9960-additional_fixes_to_sage-spkg--scripts-repo.patch) by leif created at 2010-09-22 23:09:09
 
 SCRIPTS REPO. Apply on top of John's patch.
 
@@ -1130,7 +1130,7 @@ abort: patch failed to apply
 archive/issue_comments_099718.json:
 ```json
 {
-    "body": "Attachment\n\nSCRIPTS REPO. (Just) John's patch rebased to Sage 4.6.1.rc0.",
+    "body": "Attachment [trac_9960-scripts-SAGE_CHECK_rebased_to_4.6.1.rc0.patch](tarball://root/attachments/some-uuid/ticket9960/trac_9960-scripts-SAGE_CHECK_rebased_to_4.6.1.rc0.patch) by leif created at 2010-12-30 17:11:55\n\nSCRIPTS REPO. (Just) John's patch rebased to Sage 4.6.1.rc0.",
     "created_at": "2010-12-30T17:11:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
@@ -1139,7 +1139,7 @@ archive/issue_comments_099718.json:
 }
 ```
 
-Attachment
+Attachment [trac_9960-scripts-SAGE_CHECK_rebased_to_4.6.1.rc0.patch](tarball://root/attachments/some-uuid/ticket9960/trac_9960-scripts-SAGE_CHECK_rebased_to_4.6.1.rc0.patch) by leif created at 2010-12-30 17:11:55
 
 SCRIPTS REPO. (Just) John's patch rebased to Sage 4.6.1.rc0.
 
@@ -1168,7 +1168,7 @@ I've attached a rebased version of John's patch; still have to rebase mine.
 archive/issue_comments_099720.json:
 ```json
 {
-    "body": "Attachment\n\nSCRIPTS REPO. My previous patch rebased to Sage 4.6.1.rc0, with some more changes. Apply on top of John's (rebased one).",
+    "body": "Attachment [trac_9960-additional_fixes_to_sage-spkg_rebased_to_4.6.1.rc0-scripts-repo.patch](tarball://root/attachments/some-uuid/ticket9960/trac_9960-additional_fixes_to_sage-spkg_rebased_to_4.6.1.rc0-scripts-repo.patch) by leif created at 2010-12-31 03:53:52\n\nSCRIPTS REPO. My previous patch rebased to Sage 4.6.1.rc0, with some more changes. Apply on top of John's (rebased one).",
     "created_at": "2010-12-31T03:53:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
@@ -1177,7 +1177,7 @@ archive/issue_comments_099720.json:
 }
 ```
 
-Attachment
+Attachment [trac_9960-additional_fixes_to_sage-spkg_rebased_to_4.6.1.rc0-scripts-repo.patch](tarball://root/attachments/some-uuid/ticket9960/trac_9960-additional_fixes_to_sage-spkg_rebased_to_4.6.1.rc0-scripts-repo.patch) by leif created at 2010-12-31 03:53:52
 
 SCRIPTS REPO. My previous patch rebased to Sage 4.6.1.rc0, with some more changes. Apply on top of John's (rebased one).
 
@@ -1313,7 +1313,7 @@ Dave
 archive/issue_comments_099726.json:
 ```json
 {
-    "body": "Attachment\n\nreplaces all previous patches",
+    "body": "Attachment [trac_9960-scripts-SAGE_CHECK.v2.patch](tarball://root/attachments/some-uuid/ticket9960/trac_9960-scripts-SAGE_CHECK.v2.patch) by jhpalmieri created at 2011-03-24 23:38:35\n\nreplaces all previous patches",
     "created_at": "2011-03-24T23:38:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
@@ -1322,7 +1322,7 @@ archive/issue_comments_099726.json:
 }
 ```
 
-Attachment
+Attachment [trac_9960-scripts-SAGE_CHECK.v2.patch](tarball://root/attachments/some-uuid/ticket9960/trac_9960-scripts-SAGE_CHECK.v2.patch) by jhpalmieri created at 2011-03-24 23:38:35
 
 replaces all previous patches
 

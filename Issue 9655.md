@@ -69,7 +69,7 @@ Changing priority from major to minor.
 archive/issue_comments_093706.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-9655_spherical-harmonic-example.patch](tarball://root/attachments/some-uuid/ticket9655/trac-9655_spherical-harmonic-example.patch) by mvngu created at 2010-11-02 09:07:36",
     "created_at": "2010-11-02T09:07:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9655",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_093706.json:
 }
 ```
 
-Attachment
+Attachment [trac-9655_spherical-harmonic-example.patch](tarball://root/attachments/some-uuid/ticket9655/trac-9655_spherical-harmonic-example.patch) by mvngu created at 2010-11-02 09:07:36
 
 
 
@@ -87,7 +87,7 @@ Attachment
 archive/issue_comments_093707.json:
 ```json
 {
-    "body": "Attachment\n\nHere are some issues with olazo's patch:\n\n* The \"User\" should be filled with your real name and preferred contact email address. I have fixed this in my update of olazo's patch; see [attachment:trac-9655_spherical-harmonic-example.patch].\n* The code in olazo's patch does not conform to Python coding conventions. In particular, see [PEP 8](http://www.python.org/dev/peps/pep-0008/). This is fixed in my reviewer patch; see [attachment:trac-9655_reviewer.patch]. Someone other than me needs to review that. If my patch gets a positive review, the whole ticket gets a positive review.",
+    "body": "Attachment [trac-9655_reviewer.patch](tarball://root/attachments/some-uuid/ticket9655/trac-9655_reviewer.patch) by mvngu created at 2010-11-02 09:13:38\n\nHere are some issues with olazo's patch:\n\n* The \"User\" should be filled with your real name and preferred contact email address. I have fixed this in my update of olazo's patch; see [attachment:trac-9655_spherical-harmonic-example.patch].\n* The code in olazo's patch does not conform to Python coding conventions. In particular, see [PEP 8](http://www.python.org/dev/peps/pep-0008/). This is fixed in my reviewer patch; see [attachment:trac-9655_reviewer.patch]. Someone other than me needs to review that. If my patch gets a positive review, the whole ticket gets a positive review.",
     "created_at": "2010-11-02T09:13:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9655",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_093707.json:
 }
 ```
 
-Attachment
+Attachment [trac-9655_reviewer.patch](tarball://root/attachments/some-uuid/ticket9655/trac-9655_reviewer.patch) by mvngu created at 2010-11-02 09:13:38
 
 Here are some issues with olazo's patch:
 

@@ -84,7 +84,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3118
 archive/issue_comments_021582.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3118_gcd.patch](tarball://root/attachments/some-uuid/ticket3118/trac_3118_gcd.patch) by zimmerma created at 2008-10-19 13:34:50",
     "created_at": "2008-10-19T13:34:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3118",
     "type": "issue_comment",
@@ -93,7 +93,7 @@ archive/issue_comments_021582.json:
 }
 ```
 
-Attachment
+Attachment [trac_3118_gcd.patch](tarball://root/attachments/some-uuid/ticket3118/trac_3118_gcd.patch) by zimmerma created at 2008-10-19 13:34:50
 
 
 
@@ -130,7 +130,7 @@ bash-3.00$ find . -type f -name "*.py" -exec grep \-iw GCD {} \; | wc -l
 archive/issue_comments_021584.json:
 ```json
 {
-    "body": "Attachment\n\nMy patch applies _instead_ of the previous two.  It implements Paul's suggested behaviour.\n\nThere's one problem left (I tested all of sage.rings and had to make one change in the multiploynomial polynomial code which actually used the integers=True flag which is now redundant).  But:\n\n```\nsage: P.<x,y,z> = ZZ[]\nsage: gcd(2*(x+y),3*y)\n2\n```\n\nwhich of course should give 1.  This leads to one doctest failure, but I cannot track it down at the moment.\n\nI (or someone) should also doctest all the rest of Sage as there are ceratinly places where gcd/lcm are used outside of sage/rings.",
+    "body": "Attachment [sage-trac_3118.patch](tarball://root/attachments/some-uuid/ticket3118/sage-trac_3118.patch) by cremona created at 2008-10-21 21:54:00\n\nMy patch applies _instead_ of the previous two.  It implements Paul's suggested behaviour.\n\nThere's one problem left (I tested all of sage.rings and had to make one change in the multiploynomial polynomial code which actually used the integers=True flag which is now redundant).  But:\n\n```\nsage: P.<x,y,z> = ZZ[]\nsage: gcd(2*(x+y),3*y)\n2\n```\n\nwhich of course should give 1.  This leads to one doctest failure, but I cannot track it down at the moment.\n\nI (or someone) should also doctest all the rest of Sage as there are ceratinly places where gcd/lcm are used outside of sage/rings.",
     "created_at": "2008-10-21T21:54:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3118",
     "type": "issue_comment",
@@ -139,7 +139,7 @@ archive/issue_comments_021584.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac_3118.patch](tarball://root/attachments/some-uuid/ticket3118/sage-trac_3118.patch) by cremona created at 2008-10-21 21:54:00
 
 My patch applies _instead_ of the previous two.  It implements Paul's suggested behaviour.
 
@@ -180,7 +180,7 @@ Apply after previous one
 archive/issue_comments_021586.json:
 ```json
 {
-    "body": "Attachment\n\nThe second patch does three things:\n\n1. After running -testall a couple of small things elsewhere needed fixing;\n2. Fixed a bug in integer.pyx introduced in 3.1.2.alpha0 (in #4286)\n3. Cleaner use of sequences as a method of coercing a list to have a coherent universe.\n\nIn view of item 2, which corrected this:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.2.alpha0, Release Date: 2008-10-20                  |\n| Type notebook() for the GUI, and license() for information.        |\nsage: sage.rings.integer.GCD_list([2,2,3])\n2\n```\n\nand the fact that I really did do a -testall, I am hoping for a quick positive review!  I think that Paul Z is eligible to do that although the initial patches here were his.",
+    "body": "Attachment [sage-trac_3118-2.patch](tarball://root/attachments/some-uuid/ticket3118/sage-trac_3118-2.patch) by cremona created at 2008-10-22 14:20:13\n\nThe second patch does three things:\n\n1. After running -testall a couple of small things elsewhere needed fixing;\n2. Fixed a bug in integer.pyx introduced in 3.1.2.alpha0 (in #4286)\n3. Cleaner use of sequences as a method of coercing a list to have a coherent universe.\n\nIn view of item 2, which corrected this:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.2.alpha0, Release Date: 2008-10-20                  |\n| Type notebook() for the GUI, and license() for information.        |\nsage: sage.rings.integer.GCD_list([2,2,3])\n2\n```\n\nand the fact that I really did do a -testall, I am hoping for a quick positive review!  I think that Paul Z is eligible to do that although the initial patches here were his.",
     "created_at": "2008-10-22T14:20:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3118",
     "type": "issue_comment",
@@ -189,7 +189,7 @@ archive/issue_comments_021586.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac_3118-2.patch](tarball://root/attachments/some-uuid/ticket3118/sage-trac_3118-2.patch) by cremona created at 2008-10-22 14:20:13
 
 The second patch does three things:
 

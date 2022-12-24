@@ -51,7 +51,7 @@ Craig Citro's first pass
 archive/issue_comments_004489.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ntl_zz_pX.hg](tarball://root/attachments/some-uuid/ticket757/ntl_zz_pX.hg) by robertwb created at 2007-09-28 11:48:37",
     "created_at": "2007-09-28T11:48:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/757",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_004489.json:
 }
 ```
 
-Attachment
+Attachment [ntl_zz_pX.hg](tarball://root/attachments/some-uuid/ticket757/ntl_zz_pX.hg) by robertwb created at 2007-09-28 11:48:37
 
 
 
@@ -69,7 +69,7 @@ Attachment
 archive/issue_comments_004490.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ntl_zz_pX-work.hg](tarball://root/attachments/some-uuid/ticket757/ntl_zz_pX-work.hg) by mhansen created at 2007-09-29 18:37:08",
     "created_at": "2007-09-29T18:37:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/757",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_004490.json:
 }
 ```
 
-Attachment
+Attachment [ntl_zz_pX-work.hg](tarball://root/attachments/some-uuid/ticket757/ntl_zz_pX-work.hg) by mhansen created at 2007-09-29 18:37:08
 
 
 

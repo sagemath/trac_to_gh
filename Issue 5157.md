@@ -79,7 +79,7 @@ It seems to be okay, but do we really want the "print '*'*1000" in there?
 archive/issue_comments_039508.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5157.patch](tarball://root/attachments/some-uuid/ticket5157/trac_5157.patch) by was created at 2009-02-02 07:31:03",
     "created_at": "2009-02-02T07:31:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5157",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_039508.json:
 }
 ```
 
-Attachment
+Attachment [trac_5157.patch](tarball://root/attachments/some-uuid/ticket5157/trac_5157.patch) by was created at 2009-02-02 07:31:03
 
 
 

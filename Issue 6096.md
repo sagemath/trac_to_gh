@@ -50,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6096
 archive/issue_comments_048602.json:
 ```json
 {
-    "body": "Attachment\n\nThe module `refinement_list` was written by Nicolas Borie, and I just cleaned it up a bit. He and Nicolas Thiery found the bug and reported it to me. The fix was mine.",
+    "body": "Attachment [trac_6096-partition_refinement_lists.patch](tarball://root/attachments/some-uuid/ticket6096/trac_6096-partition_refinement_lists.patch) by rlm created at 2009-05-20 21:35:24\n\nThe module `refinement_list` was written by Nicolas Borie, and I just cleaned it up a bit. He and Nicolas Thiery found the bug and reported it to me. The fix was mine.",
     "created_at": "2009-05-20T21:35:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6096",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_048602.json:
 }
 ```
 
-Attachment
+Attachment [trac_6096-partition_refinement_lists.patch](tarball://root/attachments/some-uuid/ticket6096/trac_6096-partition_refinement_lists.patch) by rlm created at 2009-05-20 21:35:24
 
 The module `refinement_list` was written by Nicolas Borie, and I just cleaned it up a bit. He and Nicolas Thiery found the bug and reported it to me. The fix was mine.
 

@@ -89,7 +89,7 @@ I don't know when I'll have time to work on this again, so I think we should at 
 archive/issue_comments_045104.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5767-plot3d-base-doctests.patch](tarball://root/attachments/some-uuid/ticket5767/5767-plot3d-base-doctests.patch) by jason created at 2009-04-16 08:44:41",
     "created_at": "2009-04-16T08:44:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5767",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_045104.json:
 }
 ```
 
-Attachment
+Attachment [5767-plot3d-base-doctests.patch](tarball://root/attachments/some-uuid/ticket5767/5767-plot3d-base-doctests.patch) by jason created at 2009-04-16 08:44:41
 
 
 
@@ -107,7 +107,7 @@ Attachment
 archive/issue_comments_045105.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5767-referee.patch](tarball://root/attachments/some-uuid/ticket5767/5767-referee.patch) by wcauchois created at 2009-05-04 05:47:55",
     "created_at": "2009-05-04T05:47:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5767",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_045105.json:
 }
 ```
 
-Attachment
+Attachment [5767-referee.patch](tarball://root/attachments/some-uuid/ticket5767/5767-referee.patch) by wcauchois created at 2009-05-04 05:47:55
 
 
 
@@ -264,7 +264,7 @@ apply after other two
 archive/issue_comments_045112.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5767-plot3d-base-doctests-whitespace.patch](tarball://root/attachments/some-uuid/ticket5767/5767-plot3d-base-doctests-whitespace.patch) by robertwb created at 2009-05-05 20:55:11",
     "created_at": "2009-05-05T20:55:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5767",
     "type": "issue_comment",
@@ -273,7 +273,7 @@ archive/issue_comments_045112.json:
 }
 ```
 
-Attachment
+Attachment [5767-plot3d-base-doctests-whitespace.patch](tarball://root/attachments/some-uuid/ticket5767/5767-plot3d-base-doctests-whitespace.patch) by robertwb created at 2009-05-05 20:55:11
 
 
 
@@ -328,7 +328,7 @@ Yep, I meant preamble. Fixed.
 archive/issue_comments_045114.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5767-referee2.patch](tarball://root/attachments/some-uuid/ticket5767/5767-referee2.patch) by wcauchois created at 2009-05-06 06:39:44",
     "created_at": "2009-05-06T06:39:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5767",
     "type": "issue_comment",
@@ -337,7 +337,7 @@ archive/issue_comments_045114.json:
 }
 ```
 
-Attachment
+Attachment [5767-referee2.patch](tarball://root/attachments/some-uuid/ticket5767/5767-referee2.patch) by wcauchois created at 2009-05-06 06:39:44
 
 
 
@@ -386,7 +386,7 @@ Note that your 5767-all.patch lost all authorship information...
 archive/issue_comments_045117.json:
 ```json
 {
-    "body": "Attachment\n\nthis patch incorporates ALL of the changes; apply to sage 3.4.2",
+    "body": "Attachment [5767-all.patch](tarball://root/attachments/some-uuid/ticket5767/5767-all.patch) by wcauchois created at 2009-05-06 06:59:46\n\nthis patch incorporates ALL of the changes; apply to sage 3.4.2",
     "created_at": "2009-05-06T06:59:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5767",
     "type": "issue_comment",
@@ -395,7 +395,7 @@ archive/issue_comments_045117.json:
 }
 ```
 
-Attachment
+Attachment [5767-all.patch](tarball://root/attachments/some-uuid/ticket5767/5767-all.patch) by wcauchois created at 2009-05-06 06:59:46
 
 this patch incorporates ALL of the changes; apply to sage 3.4.2
 

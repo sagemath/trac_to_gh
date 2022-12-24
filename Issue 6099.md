@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6099
 archive/issue_comments_048634.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch implements the chain complex morphisms part of this trac ticket.",
+    "body": "Attachment [12335.patch](tarball://root/attachments/some-uuid/ticket6099/12335.patch) by bantieau created at 2009-06-01 23:10:24\n\nThis patch implements the chain complex morphisms part of this trac ticket.",
     "created_at": "2009-06-01T23:10:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6099",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_048634.json:
 }
 ```
 
-Attachment
+Attachment [12335.patch](tarball://root/attachments/some-uuid/ticket6099/12335.patch) by bantieau created at 2009-06-01 23:10:24
 
 This patch implements the chain complex morphisms part of this trac ticket.
 
@@ -53,7 +53,7 @@ This patch implements the chain complex morphisms part of this trac ticket.
 archive/issue_comments_048635.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch implements the chain complex morphisms part of this trac ticket.",
+    "body": "Attachment [6099-1.patch](tarball://root/attachments/some-uuid/ticket6099/6099-1.patch) by bantieau created at 2009-06-01 23:14:34\n\nThis patch implements the chain complex morphisms part of this trac ticket.",
     "created_at": "2009-06-01T23:14:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6099",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_048635.json:
 }
 ```
 
-Attachment
+Attachment [6099-1.patch](tarball://root/attachments/some-uuid/ticket6099/6099-1.patch) by bantieau created at 2009-06-01 23:14:34
 
 This patch implements the chain complex morphisms part of this trac ticket.
 
@@ -91,7 +91,7 @@ Ignore 12335.patch. I would take it off, but I do not know how.
 archive/issue_comments_048637.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6099-2.patch](tarball://root/attachments/some-uuid/ticket6099/6099-2.patch) by bantieau created at 2009-06-16 06:21:12",
     "created_at": "2009-06-16T06:21:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6099",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_048637.json:
 }
 ```
 
-Attachment
+Attachment [6099-2.patch](tarball://root/attachments/some-uuid/ticket6099/6099-2.patch) by bantieau created at 2009-06-16 06:21:12
 
 
 
@@ -109,7 +109,7 @@ Attachment
 archive/issue_comments_048638.json:
 ```json
 {
-    "body": "Attachment\n\ntweak to be compatibe with #6141, which changes facets to facets().",
+    "body": "Attachment [6099-3.patch](tarball://root/attachments/some-uuid/ticket6099/6099-3.patch) by bantieau created at 2009-06-17 00:50:46\n\ntweak to be compatibe with #6141, which changes facets to facets().",
     "created_at": "2009-06-17T00:50:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6099",
     "type": "issue_comment",
@@ -118,7 +118,7 @@ archive/issue_comments_048638.json:
 }
 ```
 
-Attachment
+Attachment [6099-3.patch](tarball://root/attachments/some-uuid/ticket6099/6099-3.patch) by bantieau created at 2009-06-17 00:50:46
 
 tweak to be compatibe with #6141, which changes facets to facets().
 
@@ -184,7 +184,7 @@ sage: type(S.effective_vertices())
 archive/issue_comments_048640.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ref_6099.patch](tarball://root/attachments/some-uuid/ticket6099/ref_6099.patch) by jhpalmieri created at 2009-06-17 18:19:40",
     "created_at": "2009-06-17T18:19:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6099",
     "type": "issue_comment",
@@ -193,7 +193,7 @@ archive/issue_comments_048640.json:
 }
 ```
 
-Attachment
+Attachment [ref_6099.patch](tarball://root/attachments/some-uuid/ticket6099/ref_6099.patch) by jhpalmieri created at 2009-06-17 18:19:40
 
 
 
@@ -220,7 +220,7 @@ Hopefully final merged patch.
 archive/issue_comments_048642.json:
 ```json
 {
-    "body": "Attachment\n\nOK. I've uploaded a patch that includes all of the patches above, and also includes all of your recommendations, except for inheriting from ModuleElement. Perhaps that can be another ticket, if someone wants that. Coverage and doctest are %100.",
+    "body": "Attachment [6099-merged.patch](tarball://root/attachments/some-uuid/ticket6099/6099-merged.patch) by bantieau created at 2009-11-06 21:20:28\n\nOK. I've uploaded a patch that includes all of the patches above, and also includes all of your recommendations, except for inheriting from ModuleElement. Perhaps that can be another ticket, if someone wants that. Coverage and doctest are %100.",
     "created_at": "2009-11-06T21:20:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6099",
     "type": "issue_comment",
@@ -229,7 +229,7 @@ archive/issue_comments_048642.json:
 }
 ```
 
-Attachment
+Attachment [6099-merged.patch](tarball://root/attachments/some-uuid/ticket6099/6099-merged.patch) by bantieau created at 2009-11-06 21:20:28
 
 OK. I've uploaded a patch that includes all of the patches above, and also includes all of your recommendations, except for inheriting from ModuleElement. Perhaps that can be another ticket, if someone wants that. Coverage and doctest are %100.
 
@@ -322,7 +322,7 @@ I'm giving your patch a positive review.  If you're happy with my new patch, cha
 archive/issue_comments_048645.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of 6099-merged.patch",
+    "body": "Attachment [trac_6099-part2.patch](tarball://root/attachments/some-uuid/ticket6099/trac_6099-part2.patch) by jhpalmieri created at 2009-11-10 23:38:12\n\napply on top of 6099-merged.patch",
     "created_at": "2009-11-10T23:38:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6099",
     "type": "issue_comment",
@@ -331,7 +331,7 @@ archive/issue_comments_048645.json:
 }
 ```
 
-Attachment
+Attachment [trac_6099-part2.patch](tarball://root/attachments/some-uuid/ticket6099/trac_6099-part2.patch) by jhpalmieri created at 2009-11-10 23:38:12
 
 apply on top of 6099-merged.patch
 
@@ -704,7 +704,7 @@ Resolution: fixed
 archive/issue_comments_048664.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6099-rebased.patch](tarball://root/attachments/some-uuid/ticket6099/trac_6099-rebased.patch) by mhansen created at 2009-11-29 04:55:49",
     "created_at": "2009-11-29T04:55:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6099",
     "type": "issue_comment",
@@ -713,4 +713,4 @@ archive/issue_comments_048664.json:
 }
 ```
 
-Attachment
+Attachment [trac_6099-rebased.patch](tarball://root/attachments/some-uuid/ticket6099/trac_6099-rebased.patch) by mhansen created at 2009-11-29 04:55:49

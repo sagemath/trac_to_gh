@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8361
 archive/issue_comments_074712.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [iter_method_for_integer_vectors-nb.patch](tarball://root/attachments/some-uuid/ticket8361/iter_method_for_integer_vectors-nb.patch) by nborie created at 2010-02-25 13:18:46",
     "created_at": "2010-02-25T13:18:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8361",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_074712.json:
 }
 ```
 
-Attachment
+Attachment [iter_method_for_integer_vectors-nb.patch](tarball://root/attachments/some-uuid/ticket8361/iter_method_for_integer_vectors-nb.patch) by nborie created at 2010-02-25 13:18:46
 
 
 

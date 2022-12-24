@@ -373,7 +373,7 @@ The first two use `MeatAxe`. I think that `random_element` enumerates all group 
 archive/issue_comments_087686.json:
 ```json
 {
-    "body": "Attachment\n\nInitial patch",
+    "body": "Attachment [trac_9310_matrix_group_random_doctest_failure.patch](tarball://root/attachments/some-uuid/ticket9310/trac_9310_matrix_group_random_doctest_failure.patch) by vbraun created at 2011-02-21 19:05:34\n\nInitial patch",
     "created_at": "2011-02-21T19:05:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9310",
     "type": "issue_comment",
@@ -382,7 +382,7 @@ archive/issue_comments_087686.json:
 }
 ```
 
-Attachment
+Attachment [trac_9310_matrix_group_random_doctest_failure.patch](tarball://root/attachments/some-uuid/ticket9310/trac_9310_matrix_group_random_doctest_failure.patch) by vbraun created at 2011-02-21 19:05:34
 
 Initial patch
 

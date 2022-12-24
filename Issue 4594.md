@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4594
 archive/issue_comments_034457.json:
 ```json
 {
-    "body": "Attachment\n\ntypos in files under directory sage/algebras",
+    "body": "Attachment [trac_4594.patch](tarball://root/attachments/some-uuid/ticket4594/trac_4594.patch) by mvngu created at 2008-11-23 06:21:15\n\ntypos in files under directory sage/algebras",
     "created_at": "2008-11-23T06:21:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4594",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_034457.json:
 }
 ```
 
-Attachment
+Attachment [trac_4594.patch](tarball://root/attachments/some-uuid/ticket4594/trac_4594.patch) by mvngu created at 2008-11-23 06:21:15
 
 typos in files under directory sage/algebras
 

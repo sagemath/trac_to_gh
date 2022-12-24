@@ -89,7 +89,7 @@ The parameters F and P work differently as I expected.
 archive/issue_comments_067253.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [povray.py](tarball://root/attachments/some-uuid/ticket7792/povray.py) by slosoi created at 2009-12-30 04:23:55",
     "created_at": "2009-12-30T04:23:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7792",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_067253.json:
 }
 ```
 
-Attachment
+Attachment [povray.py](tarball://root/attachments/some-uuid/ticket7792/povray.py) by slosoi created at 2009-12-30 04:23:55
 
 
 
@@ -129,7 +129,7 @@ The patch -file is old one. I will submit a new one after the compilation of Sag
 archive/issue_comments_067255.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [povray_doc.2.patch](tarball://root/attachments/some-uuid/ticket7792/povray_doc.2.patch) by slosoi created at 2009-12-30 19:09:36",
     "created_at": "2009-12-30T19:09:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7792",
     "type": "issue_comment",
@@ -138,7 +138,7 @@ archive/issue_comments_067255.json:
 }
 ```
 
-Attachment
+Attachment [povray_doc.2.patch](tarball://root/attachments/some-uuid/ticket7792/povray_doc.2.patch) by slosoi created at 2009-12-30 19:09:36
 
 
 
@@ -147,7 +147,7 @@ Attachment
 archive/issue_comments_067256.json:
 ```json
 {
-    "body": "Attachment\n\nWhy are you removing the docstring from the class definition?",
+    "body": "Attachment [povray_doc.patch](tarball://root/attachments/some-uuid/ticket7792/povray_doc.patch) by mhampton created at 2010-02-07 23:34:21\n\nWhy are you removing the docstring from the class definition?",
     "created_at": "2010-02-07T23:34:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7792",
     "type": "issue_comment",
@@ -156,7 +156,7 @@ archive/issue_comments_067256.json:
 }
 ```
 
-Attachment
+Attachment [povray_doc.patch](tarball://root/attachments/some-uuid/ticket7792/povray_doc.patch) by mhampton created at 2010-02-07 23:34:21
 
 Why are you removing the docstring from the class definition?
 

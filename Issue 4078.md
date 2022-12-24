@@ -46,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4078
 archive/issue_comments_029432.json:
 ```json
 {
-    "body": "Attachment\n\nSee this thread: http://groups.google.com/group/sage-support/browse_thread/thread/2bb639b190728393/50bf3da4522eaa63?lnk=gst&q=%22evaluate+all%22#50bf3da4522eaa63",
+    "body": "Attachment [trac_4078.patch](tarball://root/attachments/some-uuid/ticket4078/trac_4078.patch) by mhansen created at 2008-09-08 17:30:23\n\nSee this thread: http://groups.google.com/group/sage-support/browse_thread/thread/2bb639b190728393/50bf3da4522eaa63?lnk=gst&q=%22evaluate+all%22#50bf3da4522eaa63",
     "created_at": "2008-09-08T17:30:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4078",
     "type": "issue_comment",
@@ -55,7 +55,7 @@ archive/issue_comments_029432.json:
 }
 ```
 
-Attachment
+Attachment [trac_4078.patch](tarball://root/attachments/some-uuid/ticket4078/trac_4078.patch) by mhansen created at 2008-09-08 17:30:23
 
 See this thread: http://groups.google.com/group/sage-support/browse_thread/thread/2bb639b190728393/50bf3da4522eaa63?lnk=gst&q=%22evaluate+all%22#50bf3da4522eaa63
 

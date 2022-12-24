@@ -83,7 +83,7 @@ I'm looking into our authentication code now.
 archive/issue_comments_010117.json:
 ```json
 {
-    "body": "Attachment\n\nGNUTLS provides two options for client-side certificates, CERT_REQUEST and CERT_REQUIRE, both of which request a certificate. I found the place in the source that uses these constants, and if one sets the value to 0 (unexposed via in the api) a certificate won't be requested. \n\nThe least intrusive change was to spoof CERT_REQUEST=0 in the notebook run script. This finally gets rid of that dialog that's been haunting me for almost a year now (was there with the other java 3d viewers as well).",
+    "body": "Attachment [1589-gnutls-cert.diff](tarball://root/attachments/some-uuid/ticket1589/1589-gnutls-cert.diff) by robertwb created at 2008-01-03 08:43:00\n\nGNUTLS provides two options for client-side certificates, CERT_REQUEST and CERT_REQUIRE, both of which request a certificate. I found the place in the source that uses these constants, and if one sets the value to 0 (unexposed via in the api) a certificate won't be requested. \n\nThe least intrusive change was to spoof CERT_REQUEST=0 in the notebook run script. This finally gets rid of that dialog that's been haunting me for almost a year now (was there with the other java 3d viewers as well).",
     "created_at": "2008-01-03T08:43:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1589",
     "type": "issue_comment",
@@ -92,7 +92,7 @@ archive/issue_comments_010117.json:
 }
 ```
 
-Attachment
+Attachment [1589-gnutls-cert.diff](tarball://root/attachments/some-uuid/ticket1589/1589-gnutls-cert.diff) by robertwb created at 2008-01-03 08:43:00
 
 GNUTLS provides two options for client-side certificates, CERT_REQUEST and CERT_REQUIRE, both of which request a certificate. I found the place in the source that uses these constants, and if one sets the value to 0 (unexposed via in the api) a certificate won't be requested. 
 

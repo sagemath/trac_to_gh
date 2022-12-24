@@ -55,7 +55,7 @@ Fixed in the attached patch.
 archive/issue_comments_013565.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [aspect.patch](tarball://root/attachments/some-uuid/ticket2097/aspect.patch) by moretti created at 2008-02-08 02:10:00",
     "created_at": "2008-02-08T02:10:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2097",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_013565.json:
 }
 ```
 
-Attachment
+Attachment [aspect.patch](tarball://root/attachments/some-uuid/ticket2097/aspect.patch) by moretti created at 2008-02-08 02:10:00
 
 
 
@@ -113,7 +113,7 @@ Resolution: fixed
 archive/issue_comments_013568.json:
 ```json
 {
-    "body": "Attachment\n\nMerged both patches in Sage 2.10.2.alpha0",
+    "body": "Attachment [aspect_fixtest.patch](tarball://root/attachments/some-uuid/ticket2097/aspect_fixtest.patch) by mabshoff created at 2008-02-12 18:29:06\n\nMerged both patches in Sage 2.10.2.alpha0",
     "created_at": "2008-02-12T18:29:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2097",
     "type": "issue_comment",
@@ -122,6 +122,6 @@ archive/issue_comments_013568.json:
 }
 ```
 
-Attachment
+Attachment [aspect_fixtest.patch](tarball://root/attachments/some-uuid/ticket2097/aspect_fixtest.patch) by mabshoff created at 2008-02-12 18:29:06
 
 Merged both patches in Sage 2.10.2.alpha0

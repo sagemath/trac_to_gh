@@ -116,7 +116,7 @@ The phrase "if the latter is absent" is a bit confusing; the first time I read i
 archive/issue_comments_004472.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [756-derivative-wrt.patch](tarball://root/attachments/some-uuid/ticket756/756-derivative-wrt.patch) by AlexGhitza created at 2008-02-18 02:06:03",
     "created_at": "2008-02-18T02:06:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/756",
     "type": "issue_comment",
@@ -125,7 +125,7 @@ archive/issue_comments_004472.json:
 }
 ```
 
-Attachment
+Attachment [756-derivative-wrt.patch](tarball://root/attachments/some-uuid/ticket756/756-derivative-wrt.patch) by AlexGhitza created at 2008-02-18 02:06:03
 
 
 
@@ -152,7 +152,7 @@ Excellent points from David.  I've made the changes and uploaded a new patch.
 archive/issue_comments_004474.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [756-doctests.patch](tarball://root/attachments/some-uuid/ticket756/756-doctests.patch) by dmharvey created at 2008-02-18 03:21:53",
     "created_at": "2008-02-18T03:21:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/756",
     "type": "issue_comment",
@@ -161,7 +161,7 @@ archive/issue_comments_004474.json:
 }
 ```
 
-Attachment
+Attachment [756-doctests.patch](tarball://root/attachments/some-uuid/ticket756/756-doctests.patch) by dmharvey created at 2008-02-18 03:21:53
 
 
 
@@ -188,7 +188,7 @@ I've attached a patch (should be applied on top of alex's patch) which adds some
 archive/issue_comments_004476.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [756-derivative-wrt-new.patch](tarball://root/attachments/some-uuid/ticket756/756-derivative-wrt-new.patch) by AlexGhitza created at 2008-02-18 13:40:26",
     "created_at": "2008-02-18T13:40:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/756",
     "type": "issue_comment",
@@ -197,7 +197,7 @@ archive/issue_comments_004476.json:
 }
 ```
 
-Attachment
+Attachment [756-derivative-wrt-new.patch](tarball://root/attachments/some-uuid/ticket756/756-derivative-wrt-new.patch) by AlexGhitza created at 2008-02-18 13:40:26
 
 
 

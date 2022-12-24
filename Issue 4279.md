@@ -92,7 +92,7 @@ Got:
 archive/issue_comments_031303.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4279.patch](tarball://root/attachments/some-uuid/ticket4279/trac_4279.patch) by mabshoff created at 2008-10-14 11:57:19",
     "created_at": "2008-10-14T11:57:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4279",
     "type": "issue_comment",
@@ -101,7 +101,7 @@ archive/issue_comments_031303.json:
 }
 ```
 
-Attachment
+Attachment [trac_4279.patch](tarball://root/attachments/some-uuid/ticket4279/trac_4279.patch) by mabshoff created at 2008-10-14 11:57:19
 
 
 

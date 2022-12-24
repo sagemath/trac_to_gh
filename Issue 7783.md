@@ -127,7 +127,7 @@ Changing status from new to needs_review.
 archive/issue_comments_067116.json:
 ```json
 {
-    "body": "Attachment\n\nApply this patch alone to the sagenb repo. Updates scripts to use pkg_resources to look for sagenb.",
+    "body": "Attachment [sagenb_7783.patch](tarball://root/attachments/some-uuid/ticket7783/sagenb_7783.patch) by timdumol created at 2009-12-29 08:40:50\n\nApply this patch alone to the sagenb repo. Updates scripts to use pkg_resources to look for sagenb.",
     "created_at": "2009-12-29T08:40:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7783",
     "type": "issue_comment",
@@ -136,7 +136,7 @@ archive/issue_comments_067116.json:
 }
 ```
 
-Attachment
+Attachment [sagenb_7783.patch](tarball://root/attachments/some-uuid/ticket7783/sagenb_7783.patch) by timdumol created at 2009-12-29 08:40:50
 
 Apply this patch alone to the sagenb repo. Updates scripts to use pkg_resources to look for sagenb.
 
@@ -147,7 +147,7 @@ Apply this patch alone to the sagenb repo. Updates scripts to use pkg_resources 
 archive/issue_comments_067117.json:
 ```json
 {
-    "body": "Attachment\n\nApply this patch alone to the sage scripts repo. Adds a script that uses pkg_resources to find the location of a given package.",
+    "body": "Attachment [trac_7783-sage-scripts.patch](tarball://root/attachments/some-uuid/ticket7783/trac_7783-sage-scripts.patch) by timdumol created at 2009-12-29 08:41:26\n\nApply this patch alone to the sage scripts repo. Adds a script that uses pkg_resources to find the location of a given package.",
     "created_at": "2009-12-29T08:41:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7783",
     "type": "issue_comment",
@@ -156,7 +156,7 @@ archive/issue_comments_067117.json:
 }
 ```
 
-Attachment
+Attachment [trac_7783-sage-scripts.patch](tarball://root/attachments/some-uuid/ticket7783/trac_7783-sage-scripts.patch) by timdumol created at 2009-12-29 08:41:26
 
 Apply this patch alone to the sage scripts repo. Adds a script that uses pkg_resources to find the location of a given package.
 

@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9656
 archive/issue_comments_093715.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ugly_help.png](tarball://root/attachments/some-uuid/ticket9656/ugly_help.png) by olazo created at 2010-08-01 02:33:10",
     "created_at": "2010-08-01T02:33:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9656",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_093715.json:
 }
 ```
 
-Attachment
+Attachment [ugly_help.png](tarball://root/attachments/some-uuid/ticket9656/ugly_help.png) by olazo created at 2010-08-01 02:33:10
 
 
 
@@ -51,7 +51,7 @@ Attachment
 archive/issue_comments_093716.json:
 ```json
 {
-    "body": "Attachment\n\nForces Firefox to recompute span width after jsMath text processing.",
+    "body": "Attachment [trac_9556-code-blocks-kerning.patch](tarball://root/attachments/some-uuid/ticket9656/trac_9556-code-blocks-kerning.patch) by timdumol created at 2010-08-19 12:56:27\n\nForces Firefox to recompute span width after jsMath text processing.",
     "created_at": "2010-08-19T12:56:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9656",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_093716.json:
 }
 ```
 
-Attachment
+Attachment [trac_9556-code-blocks-kerning.patch](tarball://root/attachments/some-uuid/ticket9656/trac_9556-code-blocks-kerning.patch) by timdumol created at 2010-08-19 12:56:27
 
 Forces Firefox to recompute span width after jsMath text processing.
 
@@ -163,7 +163,7 @@ Note white background example code blocks
 archive/issue_comments_093722.json:
 ```json
 {
-    "body": "Attachment\n\nNow only a trailing white background piece within code block.",
+    "body": "Attachment [afterpatch.png](tarball://root/attachments/some-uuid/ticket9656/afterpatch.png) by mhampton created at 2010-09-17 11:32:31\n\nNow only a trailing white background piece within code block.",
     "created_at": "2010-09-17T11:32:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9656",
     "type": "issue_comment",
@@ -172,7 +172,7 @@ archive/issue_comments_093722.json:
 }
 ```
 
-Attachment
+Attachment [afterpatch.png](tarball://root/attachments/some-uuid/ticket9656/afterpatch.png) by mhampton created at 2010-09-17 11:32:31
 
 Now only a trailing white background piece within code block.
 
@@ -219,7 +219,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_093725.json:
 ```json
 {
-    "body": "Attachment\n\nThanks for noting that. I didn't notice. Here's another, simpler, patch.",
+    "body": "Attachment [trac_9556-code-blocks-kerning.2.patch](tarball://root/attachments/some-uuid/ticket9656/trac_9556-code-blocks-kerning.2.patch) by timdumol created at 2010-09-18 02:44:41\n\nThanks for noting that. I didn't notice. Here's another, simpler, patch.",
     "created_at": "2010-09-18T02:44:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9656",
     "type": "issue_comment",
@@ -228,7 +228,7 @@ archive/issue_comments_093725.json:
 }
 ```
 
-Attachment
+Attachment [trac_9556-code-blocks-kerning.2.patch](tarball://root/attachments/some-uuid/ticket9656/trac_9556-code-blocks-kerning.2.patch) by timdumol created at 2010-09-18 02:44:41
 
 Thanks for noting that. I didn't notice. Here's another, simpler, patch.
 

@@ -83,7 +83,7 @@ From sage-release:
 archive/issue_comments_093108.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9615.patch](tarball://root/attachments/some-uuid/ticket9615/9615.patch) by rishi created at 2010-07-28 12:00:01",
     "created_at": "2010-07-28T12:00:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9615",
     "type": "issue_comment",
@@ -92,7 +92,7 @@ archive/issue_comments_093108.json:
 }
 ```
 
-Attachment
+Attachment [9615.patch](tarball://root/attachments/some-uuid/ticket9615/9615.patch) by rishi created at 2010-07-28 12:00:01
 
 
 
@@ -175,7 +175,7 @@ Changing status from new to needs_review.
 archive/issue_comments_093113.json:
 ```json
 {
-    "body": "Attachment\n\nTicket number and somewhat more general comment in commit string.  Apply only this patch.",
+    "body": "Attachment [9615.2.patch](tarball://root/attachments/some-uuid/ticket9615/9615.2.patch) by mpatel created at 2010-07-28 23:08:06\n\nTicket number and somewhat more general comment in commit string.  Apply only this patch.",
     "created_at": "2010-07-28T23:08:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9615",
     "type": "issue_comment",
@@ -184,7 +184,7 @@ archive/issue_comments_093113.json:
 }
 ```
 
-Attachment
+Attachment [9615.2.patch](tarball://root/attachments/some-uuid/ticket9615/9615.2.patch) by mpatel created at 2010-07-28 23:08:06
 
 Ticket number and somewhat more general comment in commit string.  Apply only this patch.
 
@@ -400,7 +400,7 @@ Add a note with the ticket number.  Apply on top of [attachment:9615.2.patch]
 archive/issue_comments_093122.json:
 ```json
 {
-    "body": "Attachment\n\nUnless anyone objects, I'm changing the status to *positive_review* and merging\n\n* [attachment:9615.2.patch]\n* [attachment:trac_9615-lcalc_doctest_note.patch]\n\nin 4.5.2.rc0.  The latter, which someone should review, follows up on [comment:7 Leif's suggestion].  Or should I exclude it?",
+    "body": "Attachment [trac_9615-lcalc_doctest_note.patch](tarball://root/attachments/some-uuid/ticket9615/trac_9615-lcalc_doctest_note.patch) by mpatel created at 2010-07-29 05:56:50\n\nUnless anyone objects, I'm changing the status to *positive_review* and merging\n\n* [attachment:9615.2.patch]\n* [attachment:trac_9615-lcalc_doctest_note.patch]\n\nin 4.5.2.rc0.  The latter, which someone should review, follows up on [comment:7 Leif's suggestion].  Or should I exclude it?",
     "created_at": "2010-07-29T05:56:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9615",
     "type": "issue_comment",
@@ -409,7 +409,7 @@ archive/issue_comments_093122.json:
 }
 ```
 
-Attachment
+Attachment [trac_9615-lcalc_doctest_note.patch](tarball://root/attachments/some-uuid/ticket9615/trac_9615-lcalc_doctest_note.patch) by mpatel created at 2010-07-29 05:56:50
 
 Unless anyone objects, I'm changing the status to *positive_review* and merging
 
@@ -521,7 +521,7 @@ But now it's too late...
 archive/issue_comments_093127.json:
 ```json
 {
-    "body": "Attachment\n\nUse Leif's better note.  Replaces previous version.  Apply on top of [attachment:9615.2.patch]",
+    "body": "Attachment [trac_9615-lcalc_doctest_note.2.patch](tarball://root/attachments/some-uuid/ticket9615/trac_9615-lcalc_doctest_note.2.patch) by mpatel created at 2010-08-01 08:12:23\n\nUse Leif's better note.  Replaces previous version.  Apply on top of [attachment:9615.2.patch]",
     "created_at": "2010-08-01T08:12:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9615",
     "type": "issue_comment",
@@ -530,7 +530,7 @@ archive/issue_comments_093127.json:
 }
 ```
 
-Attachment
+Attachment [trac_9615-lcalc_doctest_note.2.patch](tarball://root/attachments/some-uuid/ticket9615/trac_9615-lcalc_doctest_note.2.patch) by mpatel created at 2010-08-01 08:12:23
 
 Use Leif's better note.  Replaces previous version.  Apply on top of [attachment:9615.2.patch]
 

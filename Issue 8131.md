@@ -51,7 +51,7 @@ Changing status from new to needs_review.
 archive/issue_comments_071489.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8131.patch](tarball://root/attachments/some-uuid/ticket8131/trac_8131.patch) by fwclarke created at 2010-01-30 09:42:37",
     "created_at": "2010-01-30T09:42:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8131",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_071489.json:
 }
 ```
 
-Attachment
+Attachment [trac_8131.patch](tarball://root/attachments/some-uuid/ticket8131/trac_8131.patch) by fwclarke created at 2010-01-30 09:42:37
 
 
 
@@ -192,7 +192,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_071496.json:
 ```json
 {
-    "body": "Attachment\n\nIt's look good for code, test and applying. I give this patch a positive review.",
+    "body": "Attachment [trac_8131-replacement.patch](tarball://root/attachments/some-uuid/ticket8131/trac_8131-replacement.patch) by nborie created at 2010-02-23 23:09:08\n\nIt's look good for code, test and applying. I give this patch a positive review.",
     "created_at": "2010-02-23T23:09:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8131",
     "type": "issue_comment",
@@ -201,7 +201,7 @@ archive/issue_comments_071496.json:
 }
 ```
 
-Attachment
+Attachment [trac_8131-replacement.patch](tarball://root/attachments/some-uuid/ticket8131/trac_8131-replacement.patch) by nborie created at 2010-02-23 23:09:08
 
 It's look good for code, test and applying. I give this patch a positive review.
 

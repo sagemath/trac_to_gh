@@ -47,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9443
 archive/issue_comments_090471.json:
 ```json
 {
-    "body": "Attachment\n\nadd argument 'proof' with default value False to is_field and is_integral_domain",
+    "body": "Attachment [trac_9943_default_arguments.patch](tarball://root/attachments/some-uuid/ticket9443/trac_9943_default_arguments.patch) by niles created at 2010-07-07 02:58:33\n\nadd argument 'proof' with default value False to is_field and is_integral_domain",
     "created_at": "2010-07-07T02:58:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9443",
     "type": "issue_comment",
@@ -56,7 +56,7 @@ archive/issue_comments_090471.json:
 }
 ```
 
-Attachment
+Attachment [trac_9943_default_arguments.patch](tarball://root/attachments/some-uuid/ticket9443/trac_9943_default_arguments.patch) by niles created at 2010-07-07 02:58:33
 
 add argument 'proof' with default value False to is_field and is_integral_domain
 
@@ -121,7 +121,7 @@ Changing priority from trivial to major.
 archive/issue_comments_090475.json:
 ```json
 {
-    "body": "Attachment\n\nThank you for working on Infinite Polynomial Rings! Why didn't you add me (as original author) to Cc? I think I am a natural candidate for being reviewer...\n\nFirst of all, the patches apply cleanly, and `sage -b` does not complain.\n\nSecond, I think the patches provide a clean solution. I am sorry that I didn't use `*args` and `**kwds` in the first place.\n\nThird, it is a formal requirement that the commit message of each patch must point to the relevant ticket. So, could you please add \"#9443: \" or so to the commit messages? Moreover, the attachments name a wrong ticket number (9943 rather than 9443).\n\nFourth, I am now running `make ptestlong` and report back whether it has worked.\n\nFifth, since you fix a bug, I believe the priority is certainly not \"trivial\". I am promoting it to \"major\".",
+    "body": "Attachment [trac_9943_default_arguments_doctests.patch](tarball://root/attachments/some-uuid/ticket9443/trac_9943_default_arguments_doctests.patch) by SimonKing created at 2010-07-30 16:53:56\n\nThank you for working on Infinite Polynomial Rings! Why didn't you add me (as original author) to Cc? I think I am a natural candidate for being reviewer...\n\nFirst of all, the patches apply cleanly, and `sage -b` does not complain.\n\nSecond, I think the patches provide a clean solution. I am sorry that I didn't use `*args` and `**kwds` in the first place.\n\nThird, it is a formal requirement that the commit message of each patch must point to the relevant ticket. So, could you please add \"#9443: \" or so to the commit messages? Moreover, the attachments name a wrong ticket number (9943 rather than 9443).\n\nFourth, I am now running `make ptestlong` and report back whether it has worked.\n\nFifth, since you fix a bug, I believe the priority is certainly not \"trivial\". I am promoting it to \"major\".",
     "created_at": "2010-07-30T16:53:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9443",
     "type": "issue_comment",
@@ -130,7 +130,7 @@ archive/issue_comments_090475.json:
 }
 ```
 
-Attachment
+Attachment [trac_9943_default_arguments_doctests.patch](tarball://root/attachments/some-uuid/ticket9443/trac_9943_default_arguments_doctests.patch) by SimonKing created at 2010-07-30 16:53:56
 
 Thank you for working on Infinite Polynomial Rings! Why didn't you add me (as original author) to Cc? I think I am a natural candidate for being reviewer...
 
@@ -237,7 +237,7 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_090480.json:
 ```json
 {
-    "body": "Attachment\n\ncompined patch replacing the previous two; patch name and commit message fixed",
+    "body": "Attachment [trac_9443_default_arguments_combined.patch](tarball://root/attachments/some-uuid/ticket9443/trac_9443_default_arguments_combined.patch) by niles created at 2010-08-01 15:09:47\n\ncompined patch replacing the previous two; patch name and commit message fixed",
     "created_at": "2010-08-01T15:09:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9443",
     "type": "issue_comment",
@@ -246,7 +246,7 @@ archive/issue_comments_090480.json:
 }
 ```
 
-Attachment
+Attachment [trac_9443_default_arguments_combined.patch](tarball://root/attachments/some-uuid/ticket9443/trac_9443_default_arguments_combined.patch) by niles created at 2010-08-01 15:09:47
 
 compined patch replacing the previous two; patch name and commit message fixed
 
@@ -350,7 +350,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_090484.json:
 ```json
 {
-    "body": "Attachment\n\nrebased against #9114 (for 4.5.2); apply only this patch.",
+    "body": "Attachment [trac_9443_default_arguments_combined_rebased.patch](tarball://root/attachments/some-uuid/ticket9443/trac_9443_default_arguments_combined_rebased.patch) by niles created at 2010-08-10 20:54:24\n\nrebased against #9114 (for 4.5.2); apply only this patch.",
     "created_at": "2010-08-10T20:54:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9443",
     "type": "issue_comment",
@@ -359,7 +359,7 @@ archive/issue_comments_090484.json:
 }
 ```
 
-Attachment
+Attachment [trac_9443_default_arguments_combined_rebased.patch](tarball://root/attachments/some-uuid/ticket9443/trac_9443_default_arguments_combined_rebased.patch) by niles created at 2010-08-10 20:54:24
 
 rebased against #9114 (for 4.5.2); apply only this patch.
 
@@ -406,7 +406,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_090487.json:
 ```json
 {
-    "body": "Attachment\n\nRestore commit string.  Apply only this patch.",
+    "body": "Attachment [trac_9443_default_arguments_combined_rebased.2.patch](tarball://root/attachments/some-uuid/ticket9443/trac_9443_default_arguments_combined_rebased.2.patch) by mpatel created at 2010-08-10 22:39:15\n\nRestore commit string.  Apply only this patch.",
     "created_at": "2010-08-10T22:39:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9443",
     "type": "issue_comment",
@@ -415,7 +415,7 @@ archive/issue_comments_090487.json:
 }
 ```
 
-Attachment
+Attachment [trac_9443_default_arguments_combined_rebased.2.patch](tarball://root/attachments/some-uuid/ticket9443/trac_9443_default_arguments_combined_rebased.2.patch) by mpatel created at 2010-08-10 22:39:15
 
 Restore commit string.  Apply only this patch.
 

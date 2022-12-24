@@ -100,7 +100,7 @@ Michael
 archive/issue_comments_004175.json:
 ```json
 {
-    "body": "Attachment\n\nThis code enables timeouts.",
+    "body": "Attachment [trac_717_bin.patch](tarball://root/attachments/some-uuid/ticket717/trac_717_bin.patch) by gfurnish created at 2008-12-05 06:24:56\n\nThis code enables timeouts.",
     "created_at": "2008-12-05T06:24:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/717",
     "type": "issue_comment",
@@ -109,7 +109,7 @@ archive/issue_comments_004175.json:
 }
 ```
 
-Attachment
+Attachment [trac_717_bin.patch](tarball://root/attachments/some-uuid/ticket717/trac_717_bin.patch) by gfurnish created at 2008-12-05 06:24:56
 
 This code enables timeouts.
 

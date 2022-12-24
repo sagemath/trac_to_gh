@@ -234,7 +234,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_064467.json:
 ```json
 {
-    "body": "Attachment\n\ndone",
+    "body": "Attachment [glpk_crash.patch](tarball://root/attachments/some-uuid/ticket7573/glpk_crash.patch) by malb created at 2009-12-01 17:38:51\n\ndone",
     "created_at": "2009-12-01T17:38:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7573",
     "type": "issue_comment",
@@ -243,7 +243,7 @@ archive/issue_comments_064467.json:
 }
 ```
 
-Attachment
+Attachment [glpk_crash.patch](tarball://root/attachments/some-uuid/ticket7573/glpk_crash.patch) by malb created at 2009-12-01 17:38:51
 
 done
 

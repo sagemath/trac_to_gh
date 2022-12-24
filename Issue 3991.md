@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3991
 archive/issue_comments_028687.json:
 ```json
 {
-    "body": "Attachment\n\nJohn,\n\ncan you verify that this patch fixes the issue for you on your 32 bit box? Otherwise this is an \"obvious\" positive review.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_3991_matrix_mod2_dense_hash_32_bit.patch](tarball://root/attachments/some-uuid/ticket3991/trac_3991_matrix_mod2_dense_hash_32_bit.patch) by mabshoff created at 2008-08-30 01:43:22\n\nJohn,\n\ncan you verify that this patch fixes the issue for you on your 32 bit box? Otherwise this is an \"obvious\" positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-30T01:43:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3991",
     "type": "issue_comment",
@@ -51,7 +51,7 @@ archive/issue_comments_028687.json:
 }
 ```
 
-Attachment
+Attachment [trac_3991_matrix_mod2_dense_hash_32_bit.patch](tarball://root/attachments/some-uuid/ticket3991/trac_3991_matrix_mod2_dense_hash_32_bit.patch) by mabshoff created at 2008-08-30 01:43:22
 
 John,
 

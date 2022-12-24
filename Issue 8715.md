@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8715
 archive/issue_comments_079542.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [fortran-20100118_diff](tarball://root/attachments/some-uuid/ticket8715/fortran-20100118_diff) by logix created at 2010-04-19 13:15:50",
     "created_at": "2010-04-19T13:15:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8715",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_079542.json:
 }
 ```
 
-Attachment
+Attachment [fortran-20100118_diff](tarball://root/attachments/some-uuid/ticket8715/fortran-20100118_diff) by logix created at 2010-04-19 13:15:50
 
 
 

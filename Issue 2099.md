@@ -53,7 +53,7 @@ Mike Abshoff suggested a short document explaining how the current doctesting sy
 archive/issue_comments_013580.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-doctesting.tex](tarball://root/attachments/some-uuid/ticket2099/sage-doctesting.tex) by ncalexan created at 2008-02-08 04:42:45",
     "created_at": "2008-02-08T04:42:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2099",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_013580.json:
 }
 ```
 
-Attachment
+Attachment [sage-doctesting.tex](tarball://root/attachments/some-uuid/ticket2099/sage-doctesting.tex) by ncalexan created at 2008-02-08 04:42:45
 
 
 
@@ -71,7 +71,7 @@ Attachment
 archive/issue_comments_013581.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ncalexan-parallel-testing-1.hg](tarball://root/attachments/some-uuid/ticket2099/ncalexan-parallel-testing-1.hg) by ncalexan created at 2008-02-09 02:36:00",
     "created_at": "2008-02-09T02:36:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2099",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_013581.json:
 }
 ```
 
-Attachment
+Attachment [ncalexan-parallel-testing-1.hg](tarball://root/attachments/some-uuid/ticket2099/ncalexan-parallel-testing-1.hg) by ncalexan created at 2008-02-09 02:36:00
 
 
 
@@ -107,7 +107,7 @@ The patch `ncalexan-parallel-testing-1.hg` applies to `hg_scripts` in `local/bin
 archive/issue_comments_013583.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2099-ncalexan-parallel-testing-2.hg](tarball://root/attachments/some-uuid/ticket2099/2099-ncalexan-parallel-testing-2.hg) by ncalexan created at 2008-02-10 11:05:16",
     "created_at": "2008-02-10T11:05:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2099",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_013583.json:
 }
 ```
 
-Attachment
+Attachment [2099-ncalexan-parallel-testing-2.hg](tarball://root/attachments/some-uuid/ticket2099/2099-ncalexan-parallel-testing-2.hg) by ncalexan created at 2008-02-10 11:05:16
 
 
 
@@ -149,7 +149,7 @@ Output is not yet collated.  Timeouts are not yet implemented.
 archive/issue_comments_013585.json:
 ```json
 {
-    "body": "Attachment\n\n`2099-ncalexan-parallel-testing-3.hg` should not depend on earlier bundles.\n\nThis is a work in progress bundle that adds\n* working per-test timeouts\n* parsing SAGE_DOCTEST_OPTIONAL, _LONG, _TIMEOUT from the environment\n* output via -o OUTFILE\n* improves handling of sage-doctest crashing\n\n\n```\n[5:25pm] ncalexan: mabshoff: I have parallel testing with output and timeout working, or mostly working.\n[5:25pm] mabshoff: ncalexan: cool\n[5:26pm] ncalexan: mabshoff: I can't think of a way to get partial output correct.  You can display it while it comes, but if you don't wait until the entire test is done, you won't get the sorted output.\n[5:26pm] ncalexan: I'll post another bundle.\n[5:26pm] ncalexan: Use -v for verbose, -q for quiet, -o OUTFILE.\n[5:26pm] ncalexan: (All to sage-test or sage -t)\n```\n",
+    "body": "Attachment [2099-ncalexan-parallel-testing-3.hg](tarball://root/attachments/some-uuid/ticket2099/2099-ncalexan-parallel-testing-3.hg) by ncalexan created at 2008-02-15 01:36:35\n\n`2099-ncalexan-parallel-testing-3.hg` should not depend on earlier bundles.\n\nThis is a work in progress bundle that adds\n* working per-test timeouts\n* parsing SAGE_DOCTEST_OPTIONAL, _LONG, _TIMEOUT from the environment\n* output via -o OUTFILE\n* improves handling of sage-doctest crashing\n\n\n```\n[5:25pm] ncalexan: mabshoff: I have parallel testing with output and timeout working, or mostly working.\n[5:25pm] mabshoff: ncalexan: cool\n[5:26pm] ncalexan: mabshoff: I can't think of a way to get partial output correct.  You can display it while it comes, but if you don't wait until the entire test is done, you won't get the sorted output.\n[5:26pm] ncalexan: I'll post another bundle.\n[5:26pm] ncalexan: Use -v for verbose, -q for quiet, -o OUTFILE.\n[5:26pm] ncalexan: (All to sage-test or sage -t)\n```\n",
     "created_at": "2008-02-15T01:36:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2099",
     "type": "issue_comment",
@@ -158,7 +158,7 @@ archive/issue_comments_013585.json:
 }
 ```
 
-Attachment
+Attachment [2099-ncalexan-parallel-testing-3.hg](tarball://root/attachments/some-uuid/ticket2099/2099-ncalexan-parallel-testing-3.hg) by ncalexan created at 2008-02-15 01:36:35
 
 `2099-ncalexan-parallel-testing-3.hg` should not depend on earlier bundles.
 
@@ -258,7 +258,7 @@ sage-ptest
 archive/issue_comments_013590.json:
 ```json
 {
-    "body": "Attachment\n\ntrac_2999.patch replaces all the other patches (with the exception of a minimal fix to `sage -test`. I give it a positive review.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_2999.patch](tarball://root/attachments/some-uuid/ticket2099/trac_2999.patch) by mabshoff created at 2008-03-03 04:53:22\n\ntrac_2999.patch replaces all the other patches (with the exception of a minimal fix to `sage -test`. I give it a positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-03-03T04:53:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2099",
     "type": "issue_comment",
@@ -267,7 +267,7 @@ archive/issue_comments_013590.json:
 }
 ```
 
-Attachment
+Attachment [trac_2999.patch](tarball://root/attachments/some-uuid/ticket2099/trac_2999.patch) by mabshoff created at 2008-03-03 04:53:22
 
 trac_2999.patch replaces all the other patches (with the exception of a minimal fix to `sage -test`. I give it a positive review.
 

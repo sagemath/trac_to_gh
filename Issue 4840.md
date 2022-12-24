@@ -196,7 +196,7 @@ Michael
 archive/issue_comments_036712.json:
 ```json
 {
-    "body": "Attachment\n\nNew patch fixes merge failure.",
+    "body": "Attachment [trac_4840-flint_free.patch](tarball://root/attachments/some-uuid/ticket4840/trac_4840-flint_free.patch) by burcin created at 2009-01-24 17:34:06\n\nNew patch fixes merge failure.",
     "created_at": "2009-01-24T17:34:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4840",
     "type": "issue_comment",
@@ -205,7 +205,7 @@ archive/issue_comments_036712.json:
 }
 ```
 
-Attachment
+Attachment [trac_4840-flint_free.patch](tarball://root/attachments/some-uuid/ticket4840/trac_4840-flint_free.patch) by burcin created at 2009-01-24 17:34:06
 
 New patch fixes merge failure.
 

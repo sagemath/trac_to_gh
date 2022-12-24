@@ -53,7 +53,7 @@ desolvers.py to go in sage/calculus group
 archive/issue_comments_001958.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached file already seems to be part of Sage. David: can you confirm?\n\nCheers,\n\nMichael",
+    "body": "Attachment [desolvers.py](tarball://root/attachments/some-uuid/ticket398/desolvers.py) by mabshoff created at 2008-01-26 15:01:24\n\nThe attached file already seems to be part of Sage. David: can you confirm?\n\nCheers,\n\nMichael",
     "created_at": "2008-01-26T15:01:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/398",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_001958.json:
 }
 ```
 
-Attachment
+Attachment [desolvers.py](tarball://root/attachments/some-uuid/ticket398/desolvers.py) by mabshoff created at 2008-01-26 15:01:24
 
 The attached file already seems to be part of Sage. David: can you confirm?
 

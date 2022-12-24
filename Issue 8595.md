@@ -69,7 +69,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8595
 archive/issue_comments_077826.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8595_fixed_point-sl.patch](tarball://root/attachments/some-uuid/ticket8595/trac_8595_fixed_point-sl.patch) by slabbe created at 2010-03-25 10:34:39",
     "created_at": "2010-03-25T10:34:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8595",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_077826.json:
 }
 ```
 
-Attachment
+Attachment [trac_8595_fixed_point-sl.patch](tarball://root/attachments/some-uuid/ticket8595/trac_8595_fixed_point-sl.patch) by slabbe created at 2010-03-25 10:34:39
 
 
 

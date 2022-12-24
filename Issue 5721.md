@@ -56,7 +56,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5721
 archive/issue_comments_044695.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5721.patch](tarball://root/attachments/some-uuid/ticket5721/trac_5721.patch) by mhansen created at 2009-04-09 02:08:01",
     "created_at": "2009-04-09T02:08:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5721",
     "type": "issue_comment",
@@ -65,7 +65,7 @@ archive/issue_comments_044695.json:
 }
 ```
 
-Attachment
+Attachment [trac_5721.patch](tarball://root/attachments/some-uuid/ticket5721/trac_5721.patch) by mhansen created at 2009-04-09 02:08:01
 
 
 
@@ -298,7 +298,7 @@ Is this a concern?
 archive/issue_comments_044703.json:
 ```json
 {
-    "body": "Attachment\n\nI have uploaded an abridgment to Mike's patch.\n\n`trac_5721-part.patch` is a subset of the original patch.\n\nIt applies cleanly to rc2, introduces no new failures on\n`sage --testall` and it is about a 3-fold speedup.\n\nI took out the changes to `free-module.py`. I also\ntook down all calls to cached_method partly since\nMichael Abshoff expressed a reservation, and partly\nbecause my testing shows that these don't help.",
+    "body": "Attachment [trac_5721-part.patch](tarball://root/attachments/some-uuid/ticket5721/trac_5721-part.patch) by bump created at 2009-04-12 13:42:44\n\nI have uploaded an abridgment to Mike's patch.\n\n`trac_5721-part.patch` is a subset of the original patch.\n\nIt applies cleanly to rc2, introduces no new failures on\n`sage --testall` and it is about a 3-fold speedup.\n\nI took out the changes to `free-module.py`. I also\ntook down all calls to cached_method partly since\nMichael Abshoff expressed a reservation, and partly\nbecause my testing shows that these don't help.",
     "created_at": "2009-04-12T13:42:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5721",
     "type": "issue_comment",
@@ -307,7 +307,7 @@ archive/issue_comments_044703.json:
 }
 ```
 
-Attachment
+Attachment [trac_5721-part.patch](tarball://root/attachments/some-uuid/ticket5721/trac_5721-part.patch) by bump created at 2009-04-12 13:42:44
 
 I have uploaded an abridgment to Mike's patch.
 
@@ -328,7 +328,7 @@ because my testing shows that these don't help.
 archive/issue_comments_044704.json:
 ```json
 {
-    "body": "Attachment\n\nI have factored the patch trac_5721-part, and changed the doctests to be deterministic.\n\nThe first patch, trac_5721-a.patch contains *only* docstring revision.   The output of `.mlist()` is sorted in three places to make the test deterministic.\n\nThe second patch, trac_5721-b.patch contains only code revision. These changes are the same as in trac_5721-part.patch, and are a subset of Mike's original patch.\n\nWith the docstring changes, the tests pass either before or after the second patch. But after the second patch, there is a better than 3-fold speed improvement.\n\nDan",
+    "body": "Attachment [trac_5721-a.patch](tarball://root/attachments/some-uuid/ticket5721/trac_5721-a.patch) by bump created at 2009-04-13 17:52:23\n\nI have factored the patch trac_5721-part, and changed the doctests to be deterministic.\n\nThe first patch, trac_5721-a.patch contains *only* docstring revision.   The output of `.mlist()` is sorted in three places to make the test deterministic.\n\nThe second patch, trac_5721-b.patch contains only code revision. These changes are the same as in trac_5721-part.patch, and are a subset of Mike's original patch.\n\nWith the docstring changes, the tests pass either before or after the second patch. But after the second patch, there is a better than 3-fold speed improvement.\n\nDan",
     "created_at": "2009-04-13T17:52:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5721",
     "type": "issue_comment",
@@ -337,7 +337,7 @@ archive/issue_comments_044704.json:
 }
 ```
 
-Attachment
+Attachment [trac_5721-a.patch](tarball://root/attachments/some-uuid/ticket5721/trac_5721-a.patch) by bump created at 2009-04-13 17:52:23
 
 I have factored the patch trac_5721-part, and changed the doctests to be deterministic.
 
@@ -447,7 +447,7 @@ This is a slightly  fixed up version of Dan and Mike's patch that adds the 32 bi
 archive/issue_comments_044709.json:
 ```json
 {
-    "body": "Attachment\n\nMerged  trac_5721-a.patch and trac_5721-b.patch in Sage 3.4.1.rc3.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_5721-b.patch](tarball://root/attachments/some-uuid/ticket5721/trac_5721-b.patch) by mabshoff created at 2009-04-16 09:35:29\n\nMerged  trac_5721-a.patch and trac_5721-b.patch in Sage 3.4.1.rc3.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-16T09:35:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5721",
     "type": "issue_comment",
@@ -456,7 +456,7 @@ archive/issue_comments_044709.json:
 }
 ```
 
-Attachment
+Attachment [trac_5721-b.patch](tarball://root/attachments/some-uuid/ticket5721/trac_5721-b.patch) by mabshoff created at 2009-04-16 09:35:29
 
 Merged  trac_5721-a.patch and trac_5721-b.patch in Sage 3.4.1.rc3.
 

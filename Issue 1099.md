@@ -106,7 +106,7 @@ Changing keywords from "graphs" to "".
 archive/issue_comments_006644.json:
 ```json
 {
-    "body": "Attachment\n\nDefines the delete function, but does not remove any other functions",
+    "body": "Attachment [delete.patch](tarball://root/attachments/some-uuid/ticket1099/delete.patch) by rlm created at 2008-01-27 03:11:02\n\nDefines the delete function, but does not remove any other functions",
     "created_at": "2008-01-27T03:11:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1099",
     "type": "issue_comment",
@@ -115,7 +115,7 @@ archive/issue_comments_006644.json:
 }
 ```
 
-Attachment
+Attachment [delete.patch](tarball://root/attachments/some-uuid/ticket1099/delete.patch) by rlm created at 2008-01-27 03:11:02
 
 Defines the delete function, but does not remove any other functions
 
@@ -214,7 +214,7 @@ I propose the following:
 archive/issue_comments_006649.json:
 ```json
 {
-    "body": "Attachment\n\nOn top of delete.patch",
+    "body": "Attachment [delete-2.patch](tarball://root/attachments/some-uuid/ticket1099/delete-2.patch) by rlm created at 2008-01-28 19:08:56\n\nOn top of delete.patch",
     "created_at": "2008-01-28T19:08:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1099",
     "type": "issue_comment",
@@ -223,7 +223,7 @@ archive/issue_comments_006649.json:
 }
 ```
 
-Attachment
+Attachment [delete-2.patch](tarball://root/attachments/some-uuid/ticket1099/delete-2.patch) by rlm created at 2008-01-28 19:08:56
 
 On top of delete.patch
 
@@ -234,7 +234,7 @@ On top of delete.patch
 archive/issue_comments_006650.json:
 ```json
 {
-    "body": "Attachment\n\nOn top of delete-2.patch",
+    "body": "Attachment [delete-3.patch](tarball://root/attachments/some-uuid/ticket1099/delete-3.patch) by rlm created at 2008-01-28 19:09:34\n\nOn top of delete-2.patch",
     "created_at": "2008-01-28T19:09:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1099",
     "type": "issue_comment",
@@ -243,7 +243,7 @@ archive/issue_comments_006650.json:
 }
 ```
 
-Attachment
+Attachment [delete-3.patch](tarball://root/attachments/some-uuid/ticket1099/delete-3.patch) by rlm created at 2008-01-28 19:09:34
 
 On top of delete-2.patch
 
@@ -254,7 +254,7 @@ On top of delete-2.patch
 archive/issue_comments_006651.json:
 ```json
 {
-    "body": "Attachment\n\non top of delete-3.patch",
+    "body": "Attachment [delete-4.patch](tarball://root/attachments/some-uuid/ticket1099/delete-4.patch) by jason created at 2008-01-28 20:59:36\n\non top of delete-3.patch",
     "created_at": "2008-01-28T20:59:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1099",
     "type": "issue_comment",
@@ -263,7 +263,7 @@ archive/issue_comments_006651.json:
 }
 ```
 
-Attachment
+Attachment [delete-4.patch](tarball://root/attachments/some-uuid/ticket1099/delete-4.patch) by jason created at 2008-01-28 20:59:36
 
 on top of delete-3.patch
 

@@ -49,7 +49,7 @@ apply this to hg_doc
 archive/issue_comments_011561.json:
 ```json
 {
-    "body": "Attachment\n\nThis will make people editing and adding to the reference manual vastly easier.",
+    "body": "Attachment [doc-trac1825.patch](tarball://root/attachments/some-uuid/ticket1825/doc-trac1825.patch) by was created at 2008-01-18 06:03:38\n\nThis will make people editing and adding to the reference manual vastly easier.",
     "created_at": "2008-01-18T06:03:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1825",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_011561.json:
 }
 ```
 
-Attachment
+Attachment [doc-trac1825.patch](tarball://root/attachments/some-uuid/ticket1825/doc-trac1825.patch) by was created at 2008-01-18 06:03:38
 
 This will make people editing and adding to the reference manual vastly easier.
 

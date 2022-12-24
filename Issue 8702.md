@@ -231,7 +231,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_079317.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [diff-8702](tarball://root/attachments/some-uuid/ticket8702/diff-8702) by hivert created at 2010-11-19 08:53:09",
     "created_at": "2010-11-19T08:53:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8702",
     "type": "issue_comment",
@@ -240,7 +240,7 @@ archive/issue_comments_079317.json:
 }
 ```
 
-Attachment
+Attachment [diff-8702](tarball://root/attachments/some-uuid/ticket8702/diff-8702) by hivert created at 2010-11-19 08:53:09
 
 
 
@@ -298,7 +298,7 @@ Only apply [trac_8702-list_clone-fh.patch](http://trac.sagemath.org/sage_trac/at
 archive/issue_comments_079320.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8702-list_clone-fh.2.patch](tarball://root/attachments/some-uuid/ticket8702/trac_8702-list_clone-fh.2.patch) by hivert created at 2010-11-19 09:56:33",
     "created_at": "2010-11-19T09:56:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8702",
     "type": "issue_comment",
@@ -307,7 +307,7 @@ archive/issue_comments_079320.json:
 }
 ```
 
-Attachment
+Attachment [trac_8702-list_clone-fh.2.patch](tarball://root/attachments/some-uuid/ticket8702/trac_8702-list_clone-fh.2.patch) by hivert created at 2010-11-19 09:56:33
 
 
 
@@ -336,7 +336,7 @@ Apply only [trac_8702-list_clone-fh.2.patch](http://trac.sagemath.org/sage_trac/
 archive/issue_comments_079322.json:
 ```json
 {
-    "body": "Attachment\n\nOops ! I forgot to add Copyright notices... Sorry for the mess.\n\nApply only [trac_8702-list_clone-fh.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8702/trac_8702-list_clone-fh.patch)",
+    "body": "Attachment [trac_8702-list_clone-fh.patch](tarball://root/attachments/some-uuid/ticket8702/trac_8702-list_clone-fh.patch) by hivert created at 2010-11-19 10:04:17\n\nOops ! I forgot to add Copyright notices... Sorry for the mess.\n\nApply only [trac_8702-list_clone-fh.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8702/trac_8702-list_clone-fh.patch)",
     "created_at": "2010-11-19T10:04:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8702",
     "type": "issue_comment",
@@ -345,7 +345,7 @@ archive/issue_comments_079322.json:
 }
 ```
 
-Attachment
+Attachment [trac_8702-list_clone-fh.patch](tarball://root/attachments/some-uuid/ticket8702/trac_8702-list_clone-fh.patch) by hivert created at 2010-11-19 10:04:17
 
 Oops ! I forgot to add Copyright notices... Sorry for the mess.
 

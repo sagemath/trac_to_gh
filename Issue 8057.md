@@ -56,7 +56,7 @@ Changing status from new to needs_review.
 archive/issue_comments_070495.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [boehm_gc-7.1.p3.patch](tarball://root/attachments/some-uuid/ticket8057/boehm_gc-7.1.p3.patch) by jsp created at 2010-01-26 17:24:39",
     "created_at": "2010-01-26T17:24:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8057",
     "type": "issue_comment",
@@ -65,7 +65,7 @@ archive/issue_comments_070495.json:
 }
 ```
 
-Attachment
+Attachment [boehm_gc-7.1.p3.patch](tarball://root/attachments/some-uuid/ticket8057/boehm_gc-7.1.p3.patch) by jsp created at 2010-01-26 17:24:39
 
 
 

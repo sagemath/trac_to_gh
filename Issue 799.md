@@ -156,7 +156,7 @@ This is not evident from the inline help & the interface doesn't complain when i
 archive/issue_comments_004820.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac799-part1.patch](tarball://root/attachments/some-uuid/ticket799/trac799-part1.patch) by was created at 2007-12-02 06:05:24",
     "created_at": "2007-12-02T06:05:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/799",
     "type": "issue_comment",
@@ -165,7 +165,7 @@ archive/issue_comments_004820.json:
 }
 ```
 
-Attachment
+Attachment [trac799-part1.patch](tarball://root/attachments/some-uuid/ticket799/trac799-part1.patch) by was created at 2007-12-02 06:05:24
 
 
 
@@ -174,7 +174,7 @@ Attachment
 archive/issue_comments_004821.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac799-part2.patch](tarball://root/attachments/some-uuid/ticket799/trac799-part2.patch) by was created at 2007-12-02 06:09:17",
     "created_at": "2007-12-02T06:09:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/799",
     "type": "issue_comment",
@@ -183,7 +183,7 @@ archive/issue_comments_004821.json:
 }
 ```
 
-Attachment
+Attachment [trac799-part2.patch](tarball://root/attachments/some-uuid/ticket799/trac799-part2.patch) by was created at 2007-12-02 06:09:17
 
 
 

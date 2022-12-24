@@ -846,7 +846,7 @@ However, that is the docstring that you want to be returned for a symbolic expre
 archive/issue_comments_083621.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9032.patch](tarball://root/attachments/some-uuid/ticket9032/trac_9032.patch) by gagansekhon created at 2011-01-16 22:10:17",
     "created_at": "2011-01-16T22:10:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9032",
     "type": "issue_comment",
@@ -855,7 +855,7 @@ archive/issue_comments_083621.json:
 }
 ```
 
-Attachment
+Attachment [trac_9032.patch](tarball://root/attachments/some-uuid/ticket9032/trac_9032.patch) by gagansekhon created at 2011-01-16 22:10:17
 
 
 

@@ -76,7 +76,7 @@ Changing assignee from tba to mabshoff.
 archive/issue_comments_032378.json:
 ```json
 {
-    "body": "Attachment\n\nfixes documentation on compiler support",
+    "body": "Attachment [4403_compiler-support.patch](tarball://root/attachments/some-uuid/ticket4403/4403_compiler-support.patch) by mvngu created at 2008-11-06 07:38:51\n\nfixes documentation on compiler support",
     "created_at": "2008-11-06T07:38:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4403",
     "type": "issue_comment",
@@ -85,7 +85,7 @@ archive/issue_comments_032378.json:
 }
 ```
 
-Attachment
+Attachment [4403_compiler-support.patch](tarball://root/attachments/some-uuid/ticket4403/4403_compiler-support.patch) by mvngu created at 2008-11-06 07:38:51
 
 fixes documentation on compiler support
 

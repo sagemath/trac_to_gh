@@ -281,7 +281,7 @@ archive/issue_comments_015287.json:
 archive/issue_comments_015288.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:8 malb]:\n> **Referee Report**:\n>  * Could you add doctests to `sage_structured_str_list` like the examples in the description of the ticket?\n\nDone.\n\n>  * Does `make test` still pass after the change? In particular does `sage -t schemes/plane_curves/projective_curve.py` still pass? This seems to be the only place this method is called.\n\nI'm afraid this test fails.\n\nBut i believe the function `riemann_roch_basis` only works because it expects a behaviour of `sage_structured_str_list` *that does not fit to its specification*.\n\nTo be precise: Taking the example of `riemann_roch_basis`, the function internally computes `LG = G.BrillNoether(X2)`, which is printed as\n\n```\n[1]:\n   _[1]=x\n   _[2]=y\n[2]:\n   _[1]=1\n   _[2]=1\n[3]:\n   _[1]=z\n   _[2]=y\n[4]:\n   _[1]=z^2\n   _[2]=y^2\n[5]:\n   _[1]=z\n   _[2]=x\n[6]:\n   _[1]=z^2\n   _[2]=x*y\n```\n\n\nThen, `sage_structured_str_list` is applied to this thing, and yields\n\n```\n[['x', 'y'], ['1', '1'], ['z', 'y'], ['z^2', 'y^2'], ['z', 'x'], ['z^2', 'x*y']]\n```\n\n\nI believe this output is wrong, since `LG[1]` is not a singular list, hence, must be represented as a string and not as a sage list.\n\nI see two ways to resolve it:\n\n1. Change `riemann_roch_basis`, since it relies on getting a *wrong* answer from `sage_structured_str_list`\n\n2. Change `sage_structured_str_list` so that not only singular lists are turned into a sage list, but also singular ideals and intvecs are turned into lists.\n\nI prefer the first option, since the second option clearly violates the specification of `sage_structured_str_list`.\n\nAnyway, i think we will only be able to fix the bug later.",
+    "body": "Attachment [sage_structured_str_list.patch](tarball://root/attachments/some-uuid/ticket2301/sage_structured_str_list.patch) by SimonKing created at 2008-02-26 23:55:39\n\nReplying to [comment:8 malb]:\n> **Referee Report**:\n>  * Could you add doctests to `sage_structured_str_list` like the examples in the description of the ticket?\n\nDone.\n\n>  * Does `make test` still pass after the change? In particular does `sage -t schemes/plane_curves/projective_curve.py` still pass? This seems to be the only place this method is called.\n\nI'm afraid this test fails.\n\nBut i believe the function `riemann_roch_basis` only works because it expects a behaviour of `sage_structured_str_list` *that does not fit to its specification*.\n\nTo be precise: Taking the example of `riemann_roch_basis`, the function internally computes `LG = G.BrillNoether(X2)`, which is printed as\n\n```\n[1]:\n   _[1]=x\n   _[2]=y\n[2]:\n   _[1]=1\n   _[2]=1\n[3]:\n   _[1]=z\n   _[2]=y\n[4]:\n   _[1]=z^2\n   _[2]=y^2\n[5]:\n   _[1]=z\n   _[2]=x\n[6]:\n   _[1]=z^2\n   _[2]=x*y\n```\n\n\nThen, `sage_structured_str_list` is applied to this thing, and yields\n\n```\n[['x', 'y'], ['1', '1'], ['z', 'y'], ['z^2', 'y^2'], ['z', 'x'], ['z^2', 'x*y']]\n```\n\n\nI believe this output is wrong, since `LG[1]` is not a singular list, hence, must be represented as a string and not as a sage list.\n\nI see two ways to resolve it:\n\n1. Change `riemann_roch_basis`, since it relies on getting a *wrong* answer from `sage_structured_str_list`\n\n2. Change `sage_structured_str_list` so that not only singular lists are turned into a sage list, but also singular ideals and intvecs are turned into lists.\n\nI prefer the first option, since the second option clearly violates the specification of `sage_structured_str_list`.\n\nAnyway, i think we will only be able to fix the bug later.",
     "created_at": "2008-02-26T23:55:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2301",
     "type": "issue_comment",
@@ -290,7 +290,7 @@ archive/issue_comments_015288.json:
 }
 ```
 
-Attachment
+Attachment [sage_structured_str_list.patch](tarball://root/attachments/some-uuid/ticket2301/sage_structured_str_list.patch) by SimonKing created at 2008-02-26 23:55:39
 
 Replying to [comment:8 malb]:
 > **Referee Report**:
@@ -382,7 +382,7 @@ Until we have figured this one out I think we shouldn't merge the patch. However
 archive/issue_comments_015290.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage_structured_str_list.2.patch](tarball://root/attachments/some-uuid/ticket2301/sage_structured_str_list.2.patch) by SimonKing created at 2008-02-27 08:54:20",
     "created_at": "2008-02-27T08:54:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2301",
     "type": "issue_comment",
@@ -391,7 +391,7 @@ archive/issue_comments_015290.json:
 }
 ```
 
-Attachment
+Attachment [sage_structured_str_list.2.patch](tarball://root/attachments/some-uuid/ticket2301/sage_structured_str_list.2.patch) by SimonKing created at 2008-02-27 08:54:20
 
 
 
@@ -400,7 +400,7 @@ Attachment
 archive/issue_comments_015291.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [riemann_roch_basis.2.patch](tarball://root/attachments/some-uuid/ticket2301/riemann_roch_basis.2.patch) by SimonKing created at 2008-02-27 08:55:03",
     "created_at": "2008-02-27T08:55:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2301",
     "type": "issue_comment",
@@ -409,7 +409,7 @@ archive/issue_comments_015291.json:
 }
 ```
 
-Attachment
+Attachment [riemann_roch_basis.2.patch](tarball://root/attachments/some-uuid/ticket2301/riemann_roch_basis.2.patch) by SimonKing created at 2008-02-27 08:55:03
 
 
 
@@ -662,7 +662,7 @@ replaces all other patches attached to this ticket
 archive/issue_comments_015300.json:
 ```json
 {
-    "body": "Attachment\n\nmabshoff, please apply `trac_2301_superpatch.patch` it contains **exactly** the same code as Simon's patches. Credits go to Simon King. `make test` passes.",
+    "body": "Attachment [trac_2301_superpatch.patch](tarball://root/attachments/some-uuid/ticket2301/trac_2301_superpatch.patch) by malb created at 2008-02-27 13:02:31\n\nmabshoff, please apply `trac_2301_superpatch.patch` it contains **exactly** the same code as Simon's patches. Credits go to Simon King. `make test` passes.",
     "created_at": "2008-02-27T13:02:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2301",
     "type": "issue_comment",
@@ -671,7 +671,7 @@ archive/issue_comments_015300.json:
 }
 ```
 
-Attachment
+Attachment [trac_2301_superpatch.patch](tarball://root/attachments/some-uuid/ticket2301/trac_2301_superpatch.patch) by malb created at 2008-02-27 13:02:31
 
 mabshoff, please apply `trac_2301_superpatch.patch` it contains **exactly** the same code as Simon's patches. Credits go to Simon King. `make test` passes.
 

@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4037
 archive/issue_comments_029128.json:
 ```json
 {
-    "body": "Attachment\n\nOk, a simple out-by-one bug.  Patch applies cleanly to 3.1.2.alpha3 and doctests in sage.server.notebook all pass.\n\nOK by me, though I usually steer clear of notebook patches as I rarely use the notebook!",
+    "body": "Attachment [4037-interact_list_of_first_n.patch](tarball://root/attachments/some-uuid/ticket4037/4037-interact_list_of_first_n.patch) by cremona created at 2008-09-02 08:24:07\n\nOk, a simple out-by-one bug.  Patch applies cleanly to 3.1.2.alpha3 and doctests in sage.server.notebook all pass.\n\nOK by me, though I usually steer clear of notebook patches as I rarely use the notebook!",
     "created_at": "2008-09-02T08:24:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4037",
     "type": "issue_comment",
@@ -41,7 +41,7 @@ archive/issue_comments_029128.json:
 }
 ```
 
-Attachment
+Attachment [4037-interact_list_of_first_n.patch](tarball://root/attachments/some-uuid/ticket4037/4037-interact_list_of_first_n.patch) by cremona created at 2008-09-02 08:24:07
 
 Ok, a simple out-by-one bug.  Patch applies cleanly to 3.1.2.alpha3 and doctests in sage.server.notebook all pass.
 

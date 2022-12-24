@@ -80,7 +80,7 @@ Changing status from new to needs_review.
 archive/issue_comments_075521.json:
 ```json
 {
-    "body": "Attachment\n\nNew patch fixes one doctest.  Robert (either one! :), feel free to review this.\n\ndrkirkby: I use the INFINITY constant and the isfinite macro from math.h.  Does this pose a problem on Solaris?",
+    "body": "Attachment [trac-8424-bounding-boxes.patch](tarball://root/attachments/some-uuid/ticket8424/trac-8424-bounding-boxes.patch) by jason created at 2010-03-04 02:25:39\n\nNew patch fixes one doctest.  Robert (either one! :), feel free to review this.\n\ndrkirkby: I use the INFINITY constant and the isfinite macro from math.h.  Does this pose a problem on Solaris?",
     "created_at": "2010-03-04T02:25:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8424",
     "type": "issue_comment",
@@ -89,7 +89,7 @@ archive/issue_comments_075521.json:
 }
 ```
 
-Attachment
+Attachment [trac-8424-bounding-boxes.patch](tarball://root/attachments/some-uuid/ticket8424/trac-8424-bounding-boxes.patch) by jason created at 2010-03-04 02:25:39
 
 New patch fixes one doctest.  Robert (either one! :), feel free to review this.
 

@@ -77,7 +77,7 @@ and should draw a 3d arrow.
 archive/issue_comments_081257.json:
 ```json
 {
-    "body": "Attachment\n\nmake arrow() behave more like line()",
+    "body": "Attachment [trac_8838_arrow2d_3d.patch](tarball://root/attachments/some-uuid/ticket8838/trac_8838_arrow2d_3d.patch) by ryan created at 2010-08-28 02:53:45\n\nmake arrow() behave more like line()",
     "created_at": "2010-08-28T02:53:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8838",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_081257.json:
 }
 ```
 
-Attachment
+Attachment [trac_8838_arrow2d_3d.patch](tarball://root/attachments/some-uuid/ticket8838/trac_8838_arrow2d_3d.patch) by ryan created at 2010-08-28 02:53:45
 
 make arrow() behave more like line()
 
@@ -197,7 +197,7 @@ Updated patch (with Sage 4.5.3)
 archive/issue_comments_081263.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8838_arrow2d_arrow3d.patch](tarball://root/attachments/some-uuid/ticket8838/trac_8838_arrow2d_arrow3d.patch) by ryan created at 2010-09-11 05:25:40",
     "created_at": "2010-09-11T05:25:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8838",
     "type": "issue_comment",
@@ -206,7 +206,7 @@ archive/issue_comments_081263.json:
 }
 ```
 
-Attachment
+Attachment [trac_8838_arrow2d_arrow3d.patch](tarball://root/attachments/some-uuid/ticket8838/trac_8838_arrow2d_arrow3d.patch) by ryan created at 2010-09-11 05:25:40
 
 
 

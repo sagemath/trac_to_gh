@@ -124,7 +124,7 @@ SyntaxError: invalid syntax
 archive/issue_comments_002546.json:
 ```json
 {
-    "body": "Attachment\n\nFixes the problem by emulating load and attach.\n\nIt won't work with files that have spaces in their name because sage, sage-sage, sage-run, and various other are not ready to deal with that, yet.",
+    "body": "Attachment [trac_508.patch](tarball://root/attachments/some-uuid/ticket508/trac_508.patch) by anakha created at 2008-10-24 00:37:26\n\nFixes the problem by emulating load and attach.\n\nIt won't work with files that have spaces in their name because sage, sage-sage, sage-run, and various other are not ready to deal with that, yet.",
     "created_at": "2008-10-24T00:37:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/508",
     "type": "issue_comment",
@@ -133,7 +133,7 @@ archive/issue_comments_002546.json:
 }
 ```
 
-Attachment
+Attachment [trac_508.patch](tarball://root/attachments/some-uuid/ticket508/trac_508.patch) by anakha created at 2008-10-24 00:37:26
 
 Fixes the problem by emulating load and attach.
 
@@ -176,7 +176,7 @@ Hi
 archive/issue_comments_002548.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_508v2.patch](tarball://root/attachments/some-uuid/ticket508/trac_508v2.patch) by abergeron created at 2008-12-24 04:55:20",
     "created_at": "2008-12-24T04:55:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/508",
     "type": "issue_comment",
@@ -185,7 +185,7 @@ archive/issue_comments_002548.json:
 }
 ```
 
-Attachment
+Attachment [trac_508v2.patch](tarball://root/attachments/some-uuid/ticket508/trac_508v2.patch) by abergeron created at 2008-12-24 04:55:20
 
 
 

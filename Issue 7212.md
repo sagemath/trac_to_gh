@@ -87,7 +87,7 @@ Changing status from new to needs_review.
 archive/issue_comments_059845.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7212-steenrod.patch](tarball://root/attachments/some-uuid/ticket7212/trac_7212-steenrod.patch) by jason created at 2009-10-14 21:20:35",
     "created_at": "2009-10-14T21:20:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7212",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_059845.json:
 }
 ```
 
-Attachment
+Attachment [trac_7212-steenrod.patch](tarball://root/attachments/some-uuid/ticket7212/trac_7212-steenrod.patch) by jason created at 2009-10-14 21:20:35
 
 
 

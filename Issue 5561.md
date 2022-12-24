@@ -182,7 +182,7 @@ Changing assignee from tbd to rhinton.
 archive/issue_comments_043281.json:
 ```json
 {
-    "body": "Attachment\n\nThe new patch compiles and passes the doctests, but it has no tests for the new ring functionality.  John, can you provide any good examples (that will work)?  Do you want to report the integer mod ring ideal problem, or shall I?",
+    "body": "Attachment [trac_5561_is_primitive_ring_field.patch](tarball://root/attachments/some-uuid/ticket5561/trac_5561_is_primitive_ring_field.patch) by rhinton created at 2009-04-01 20:02:02\n\nThe new patch compiles and passes the doctests, but it has no tests for the new ring functionality.  John, can you provide any good examples (that will work)?  Do you want to report the integer mod ring ideal problem, or shall I?",
     "created_at": "2009-04-01T20:02:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5561",
     "type": "issue_comment",
@@ -191,7 +191,7 @@ archive/issue_comments_043281.json:
 }
 ```
 
-Attachment
+Attachment [trac_5561_is_primitive_ring_field.patch](tarball://root/attachments/some-uuid/ticket5561/trac_5561_is_primitive_ring_field.patch) by rhinton created at 2009-04-01 20:02:02
 
 The new patch compiles and passes the doctests, but it has no tests for the new ring functionality.  John, can you provide any good examples (that will work)?  Do you want to report the integer mod ring ideal problem, or shall I?
 
@@ -202,7 +202,7 @@ The new patch compiles and passes the doctests, but it has no tests for the new 
 archive/issue_comments_043282.json:
 ```json
 {
-    "body": "Attachment\n\nreplaces previous",
+    "body": "Attachment [trac_5561.patch](tarball://root/attachments/some-uuid/ticket5561/trac_5561.patch) by cremona created at 2009-04-02 08:05:21\n\nreplaces previous",
     "created_at": "2009-04-02T08:05:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5561",
     "type": "issue_comment",
@@ -211,7 +211,7 @@ archive/issue_comments_043282.json:
 }
 ```
 
-Attachment
+Attachment [trac_5561.patch](tarball://root/attachments/some-uuid/ticket5561/trac_5561.patch) by cremona created at 2009-04-02 08:05:21
 
 replaces previous
 

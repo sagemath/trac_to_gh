@@ -140,7 +140,7 @@ The obvious patch would be to add a newline automatically before passing the inp
 archive/issue_comments_088934.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9363_exec_newline.patch](tarball://root/attachments/some-uuid/ticket9363/9363_exec_newline.patch) by wjp created at 2011-01-07 23:25:24",
     "created_at": "2011-01-07T23:25:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9363",
     "type": "issue_comment",
@@ -149,7 +149,7 @@ archive/issue_comments_088934.json:
 }
 ```
 
-Attachment
+Attachment [9363_exec_newline.patch](tarball://root/attachments/some-uuid/ticket9363/9363_exec_newline.patch) by wjp created at 2011-01-07 23:25:24
 
 
 

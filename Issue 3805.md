@@ -119,7 +119,7 @@ sage: float(expand(tt1 + t2))
 archive/issue_comments_027038.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [expand.patch](tarball://root/attachments/some-uuid/ticket3805/expand.patch) by jwmerrill created at 2008-08-31 22:55:00",
     "created_at": "2008-08-31T22:55:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3805",
     "type": "issue_comment",
@@ -128,7 +128,7 @@ archive/issue_comments_027038.json:
 }
 ```
 
-Attachment
+Attachment [expand.patch](tarball://root/attachments/some-uuid/ticket3805/expand.patch) by jwmerrill created at 2008-08-31 22:55:00
 
 
 
@@ -173,7 +173,7 @@ The is an updated patcj of jwmerrill's patch with the numerical noise accounted 
 archive/issue_comments_027041.json:
 ```json
 {
-    "body": "Attachment\n\nI have attached a patch that accounts for some numerical noise on Linux 64 bit. It also passes doctest on 32 bit Intel OSX.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_3805_expand.patch](tarball://root/attachments/some-uuid/ticket3805/trac_3805_expand.patch) by mabshoff created at 2008-09-01 01:55:38\n\nI have attached a patch that accounts for some numerical noise on Linux 64 bit. It also passes doctest on 32 bit Intel OSX.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-01T01:55:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3805",
     "type": "issue_comment",
@@ -182,7 +182,7 @@ archive/issue_comments_027041.json:
 }
 ```
 
-Attachment
+Attachment [trac_3805_expand.patch](tarball://root/attachments/some-uuid/ticket3805/trac_3805_expand.patch) by mabshoff created at 2008-09-01 01:55:38
 
 I have attached a patch that accounts for some numerical noise on Linux 64 bit. It also passes doctest on 32 bit Intel OSX.
 

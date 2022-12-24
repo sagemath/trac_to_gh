@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4745
 archive/issue_comments_035900.json:
 ```json
 {
-    "body": "Attachment\n\nApply on top of first patch.",
+    "body": "Attachment [trac_4745_2.patch](tarball://root/attachments/some-uuid/ticket4745/trac_4745_2.patch) by gfurnish created at 2008-12-09 08:43:17\n\nApply on top of first patch.",
     "created_at": "2008-12-09T08:43:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4745",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_035900.json:
 }
 ```
 
-Attachment
+Attachment [trac_4745_2.patch](tarball://root/attachments/some-uuid/ticket4745/trac_4745_2.patch) by gfurnish created at 2008-12-09 08:43:17
 
 Apply on top of first patch.
 
@@ -107,7 +107,7 @@ Fix for doctest failure upon reenabling.
 archive/issue_comments_035904.json:
 ```json
 {
-    "body": "Attachment\n\nMike,\n\ncan you put this on your to review list? It would be nice if this went into 3.2.2.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_4745_3.patch](tarball://root/attachments/some-uuid/ticket4745/trac_4745_3.patch) by mabshoff created at 2008-12-10 09:22:56\n\nMike,\n\ncan you put this on your to review list? It would be nice if this went into 3.2.2.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-10T09:22:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4745",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_035904.json:
 }
 ```
 
-Attachment
+Attachment [trac_4745_3.patch](tarball://root/attachments/some-uuid/ticket4745/trac_4745_3.patch) by mabshoff created at 2008-12-10 09:22:56
 
 Mike,
 
@@ -133,7 +133,7 @@ Michael
 archive/issue_comments_035905.json:
 ```json
 {
-    "body": "Attachment\n\nI attached a folded patch since I wanted one for the review.  Really good work on this!  It make DSage way more useable.\n\nJust merge the -combined patch.",
+    "body": "Attachment [trac_4745-combined.patch](tarball://root/attachments/some-uuid/ticket4745/trac_4745-combined.patch) by mhansen created at 2008-12-11 14:47:52\n\nI attached a folded patch since I wanted one for the review.  Really good work on this!  It make DSage way more useable.\n\nJust merge the -combined patch.",
     "created_at": "2008-12-11T14:47:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4745",
     "type": "issue_comment",
@@ -142,7 +142,7 @@ archive/issue_comments_035905.json:
 }
 ```
 
-Attachment
+Attachment [trac_4745-combined.patch](tarball://root/attachments/some-uuid/ticket4745/trac_4745-combined.patch) by mhansen created at 2008-12-11 14:47:52
 
 I attached a folded patch since I wanted one for the review.  Really good work on this!  It make DSage way more useable.
 

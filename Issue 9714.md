@@ -89,7 +89,7 @@ elif len(NZ) != 2:
 archive/issue_comments_094772.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9714_incidence_checking.patch](tarball://root/attachments/some-uuid/ticket9714/trac_9714_incidence_checking.patch) by brunellus created at 2012-01-23 19:53:08",
     "created_at": "2012-01-23T19:53:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9714",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_094772.json:
 }
 ```
 
-Attachment
+Attachment [trac_9714_incidence_checking.patch](tarball://root/attachments/some-uuid/ticket9714/trac_9714_incidence_checking.patch) by brunellus created at 2012-01-23 19:53:08
 
 
 
@@ -341,7 +341,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_094785.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9714_review.patch](tarball://root/attachments/some-uuid/ticket9714/trac_9714_review.patch) by ncohen created at 2012-02-15 10:59:27",
     "created_at": "2012-02-15T10:59:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9714",
     "type": "issue_comment",
@@ -350,7 +350,7 @@ archive/issue_comments_094785.json:
 }
 ```
 
-Attachment
+Attachment [trac_9714_review.patch](tarball://root/attachments/some-uuid/ticket9714/trac_9714_review.patch) by ncohen created at 2012-02-15 10:59:27
 
 
 
@@ -359,7 +359,7 @@ Attachment
 archive/issue_comments_094786.json:
 ```json
 {
-    "body": "Attachment\n\nFixed too `:-)`\n\nNathann",
+    "body": "Attachment [trac_9714_review_review.patch](tarball://root/attachments/some-uuid/ticket9714/trac_9714_review_review.patch) by ncohen created at 2012-02-15 10:59:53\n\nFixed too `:-)`\n\nNathann",
     "created_at": "2012-02-15T10:59:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9714",
     "type": "issue_comment",
@@ -368,7 +368,7 @@ archive/issue_comments_094786.json:
 }
 ```
 
-Attachment
+Attachment [trac_9714_review_review.patch](tarball://root/attachments/some-uuid/ticket9714/trac_9714_review_review.patch) by ncohen created at 2012-02-15 10:59:53
 
 Fixed too `:-)`
 

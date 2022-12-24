@@ -142,7 +142,7 @@ If 3.0.6 comes out few days after August 1st then instead of copying this out I'
 archive/issue_comments_025809.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [extcode-3649_1.patch](tarball://root/attachments/some-uuid/ticket3649/extcode-3649_1.patch) by TimothyClemans created at 2008-08-03 22:10:21",
     "created_at": "2008-08-03T22:10:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3649",
     "type": "issue_comment",
@@ -151,7 +151,7 @@ archive/issue_comments_025809.json:
 }
 ```
 
-Attachment
+Attachment [extcode-3649_1.patch](tarball://root/attachments/some-uuid/ticket3649/extcode-3649_1.patch) by TimothyClemans created at 2008-08-03 22:10:21
 
 
 
@@ -178,7 +178,7 @@ Point #1 addressed by extcode-3649_1.patch. I'm starting to address #2. I will m
 archive/issue_comments_025811.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3649.patch](tarball://root/attachments/some-uuid/ticket3649/sage-3649.patch) by TimothyClemans created at 2008-08-04 20:16:02",
     "created_at": "2008-08-04T20:16:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3649",
     "type": "issue_comment",
@@ -187,7 +187,7 @@ archive/issue_comments_025811.json:
 }
 ```
 
-Attachment
+Attachment [sage-3649.patch](tarball://root/attachments/some-uuid/ticket3649/sage-3649.patch) by TimothyClemans created at 2008-08-04 20:16:02
 
 
 

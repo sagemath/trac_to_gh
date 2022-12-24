@@ -106,7 +106,7 @@ Looks good. Works fine on my MacBook Pro, and also seems to work fine on sage.ma
 archive/issue_comments_053401.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6549.patch](tarball://root/attachments/some-uuid/ticket6549/trac_6549.patch) by AlexGhitza created at 2009-08-17 12:04:27",
     "created_at": "2009-08-17T12:04:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6549",
     "type": "issue_comment",
@@ -115,7 +115,7 @@ archive/issue_comments_053401.json:
 }
 ```
 
-Attachment
+Attachment [trac_6549.patch](tarball://root/attachments/some-uuid/ticket6549/trac_6549.patch) by AlexGhitza created at 2009-08-17 12:04:27
 
 
 

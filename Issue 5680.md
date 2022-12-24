@@ -127,7 +127,7 @@ Changing status from new to needs_review.
 archive/issue_comments_044424.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5680-flint_zmod_poly_enhancements.patch](tarball://root/attachments/some-uuid/ticket5680/trac_5680-flint_zmod_poly_enhancements.patch) by burcin created at 2009-10-20 14:44:26",
     "created_at": "2009-10-20T14:44:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5680",
     "type": "issue_comment",
@@ -136,7 +136,7 @@ archive/issue_comments_044424.json:
 }
 ```
 
-Attachment
+Attachment [trac_5680-flint_zmod_poly_enhancements.patch](tarball://root/attachments/some-uuid/ticket5680/trac_5680-flint_zmod_poly_enhancements.patch) by burcin created at 2009-10-20 14:44:26
 
 
 
@@ -193,7 +193,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_044427.json:
 ```json
 {
-    "body": "Attachment\n\nOops, I hadn't run doctests on `schemes`, and it was a genuine bug with scalar multiplication.\n\nNew patch attachment:trac_5680-flint_zmod_poly_enhancements.take2.patch should fix all problems.",
+    "body": "Attachment [trac_5680-flint_zmod_poly_enhancements.take2.patch](tarball://root/attachments/some-uuid/ticket5680/trac_5680-flint_zmod_poly_enhancements.take2.patch) by burcin created at 2009-10-21 17:13:17\n\nOops, I hadn't run doctests on `schemes`, and it was a genuine bug with scalar multiplication.\n\nNew patch attachment:trac_5680-flint_zmod_poly_enhancements.take2.patch should fix all problems.",
     "created_at": "2009-10-21T17:13:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5680",
     "type": "issue_comment",
@@ -202,7 +202,7 @@ archive/issue_comments_044427.json:
 }
 ```
 
-Attachment
+Attachment [trac_5680-flint_zmod_poly_enhancements.take2.patch](tarball://root/attachments/some-uuid/ticket5680/trac_5680-flint_zmod_poly_enhancements.take2.patch) by burcin created at 2009-10-21 17:13:17
 
 Oops, I hadn't run doctests on `schemes`, and it was a genuine bug with scalar multiplication.
 

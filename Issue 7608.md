@@ -249,7 +249,7 @@ based on 4.3.alpha1
 archive/issue_comments_064910.json:
 ```json
 {
-    "body": "Attachment\n\npatch updated, now based on 4.3alpha1.",
+    "body": "Attachment [trac_7608-Networkx_1.0rc1.patch](tarball://root/attachments/some-uuid/ticket7608/trac_7608-Networkx_1.0rc1.patch) by ylchapuy created at 2009-12-06 01:54:58\n\npatch updated, now based on 4.3alpha1.",
     "created_at": "2009-12-06T01:54:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7608",
     "type": "issue_comment",
@@ -258,7 +258,7 @@ archive/issue_comments_064910.json:
 }
 ```
 
-Attachment
+Attachment [trac_7608-Networkx_1.0rc1.patch](tarball://root/attachments/some-uuid/ticket7608/trac_7608-Networkx_1.0rc1.patch) by ylchapuy created at 2009-12-06 01:54:58
 
 patch updated, now based on 4.3alpha1.
 
@@ -631,7 +631,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_064917.json:
 ```json
 {
-    "body": "Attachment\n\nSmall patch to remove the failure in species.py and symmetric_group_representations.py.\n\nI'm not sure about copy vs deepcopy though (see http://groups.google.com/group/sage-devel/browse_thread/thread/a7d9f2e0138c5757)",
+    "body": "Attachment [trac_7608-Networkx_1.0rc1-bugs.patch](tarball://root/attachments/some-uuid/ticket7608/trac_7608-Networkx_1.0rc1-bugs.patch) by ylchapuy created at 2009-12-06 14:19:16\n\nSmall patch to remove the failure in species.py and symmetric_group_representations.py.\n\nI'm not sure about copy vs deepcopy though (see http://groups.google.com/group/sage-devel/browse_thread/thread/a7d9f2e0138c5757)",
     "created_at": "2009-12-06T14:19:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7608",
     "type": "issue_comment",
@@ -640,7 +640,7 @@ archive/issue_comments_064917.json:
 }
 ```
 
-Attachment
+Attachment [trac_7608-Networkx_1.0rc1-bugs.patch](tarball://root/attachments/some-uuid/ticket7608/trac_7608-Networkx_1.0rc1-bugs.patch) by ylchapuy created at 2009-12-06 14:19:16
 
 Small patch to remove the failure in species.py and symmetric_group_representations.py.
 
@@ -731,7 +731,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_064920.json:
 ```json
 {
-    "body": "Attachment\n\nThe tree patches must be applied.\n\nThe only doctest failure remaining for me is\n\n```\nsage -t  \"devel/sage/sage/structure/sage_object.pyx\"\n```\n\nIt's  a backward compatibility problem: we can't unpickle graphs pickled in the old format as the NetworkX format changed. I must admit I don't really know how to deal with this.",
+    "body": "Attachment [trac_7608-Networkx_1.0rc1-bugs2.patch](tarball://root/attachments/some-uuid/ticket7608/trac_7608-Networkx_1.0rc1-bugs2.patch) by ylchapuy created at 2009-12-06 21:21:39\n\nThe tree patches must be applied.\n\nThe only doctest failure remaining for me is\n\n```\nsage -t  \"devel/sage/sage/structure/sage_object.pyx\"\n```\n\nIt's  a backward compatibility problem: we can't unpickle graphs pickled in the old format as the NetworkX format changed. I must admit I don't really know how to deal with this.",
     "created_at": "2009-12-06T21:21:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7608",
     "type": "issue_comment",
@@ -740,7 +740,7 @@ archive/issue_comments_064920.json:
 }
 ```
 
-Attachment
+Attachment [trac_7608-Networkx_1.0rc1-bugs2.patch](tarball://root/attachments/some-uuid/ticket7608/trac_7608-Networkx_1.0rc1-bugs2.patch) by ylchapuy created at 2009-12-06 21:21:39
 
 The tree patches must be applied.
 
@@ -958,7 +958,7 @@ Also attaching a patch that almost passes all the tests (with some slight correc
 archive/issue_comments_064929.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7608_networkx-1.0.1_fixes.patch](tarball://root/attachments/some-uuid/ticket7608/trac_7608_networkx-1.0.1_fixes.patch) by gsmcwhirter created at 2010-01-30 05:35:28",
     "created_at": "2010-01-30T05:35:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7608",
     "type": "issue_comment",
@@ -967,7 +967,7 @@ archive/issue_comments_064929.json:
 }
 ```
 
-Attachment
+Attachment [trac_7608_networkx-1.0.1_fixes.patch](tarball://root/attachments/some-uuid/ticket7608/trac_7608_networkx-1.0.1_fixes.patch) by gsmcwhirter created at 2010-01-30 05:35:28
 
 
 
@@ -976,7 +976,7 @@ Attachment
 archive/issue_comments_064930.json:
 ```json
 {
-    "body": "Attachment\n\nAdded second patch on top of the previous one that should resolve unpickling issues in a correct way.",
+    "body": "Attachment [trac_7608_networkx-1.0.1_fixes.p1.patch](tarball://root/attachments/some-uuid/ticket7608/trac_7608_networkx-1.0.1_fixes.p1.patch) by gsmcwhirter created at 2010-01-30 05:36:36\n\nAdded second patch on top of the previous one that should resolve unpickling issues in a correct way.",
     "created_at": "2010-01-30T05:36:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7608",
     "type": "issue_comment",
@@ -985,7 +985,7 @@ archive/issue_comments_064930.json:
 }
 ```
 
-Attachment
+Attachment [trac_7608_networkx-1.0.1_fixes.p1.patch](tarball://root/attachments/some-uuid/ticket7608/trac_7608_networkx-1.0.1_fixes.p1.patch) by gsmcwhirter created at 2010-01-30 05:36:36
 
 Added second patch on top of the previous one that should resolve unpickling issues in a correct way.
 
@@ -996,7 +996,7 @@ Added second patch on top of the previous one that should resolve unpickling iss
 archive/issue_comments_064931.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7608_networkx-1.0.1_fixes.p2.patch](tarball://root/attachments/some-uuid/ticket7608/trac_7608_networkx-1.0.1_fixes.p2.patch) by gsmcwhirter created at 2010-01-30 05:49:03",
     "created_at": "2010-01-30T05:49:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7608",
     "type": "issue_comment",
@@ -1005,7 +1005,7 @@ archive/issue_comments_064931.json:
 }
 ```
 
-Attachment
+Attachment [trac_7608_networkx-1.0.1_fixes.p2.patch](tarball://root/attachments/some-uuid/ticket7608/trac_7608_networkx-1.0.1_fixes.p2.patch) by gsmcwhirter created at 2010-01-30 05:49:03
 
 
 
@@ -1496,7 +1496,7 @@ The right place to store these (they're in binary format, of course), would be i
 archive/issue_comments_064945.json:
 ```json
 {
-    "body": "Attachment\n\nfolding the previous three patches into one; rebased vs. Sage 4.3.4.alpha1; only apply this one",
+    "body": "Attachment [trac_7608-networkx-folded.patch](tarball://root/attachments/some-uuid/ticket7608/trac_7608-networkx-folded.patch) by mvngu created at 2010-03-10 22:55:04\n\nfolding the previous three patches into one; rebased vs. Sage 4.3.4.alpha1; only apply this one",
     "created_at": "2010-03-10T22:55:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7608",
     "type": "issue_comment",
@@ -1505,7 +1505,7 @@ archive/issue_comments_064945.json:
 }
 ```
 
-Attachment
+Attachment [trac_7608-networkx-folded.patch](tarball://root/attachments/some-uuid/ticket7608/trac_7608-networkx-folded.patch) by mvngu created at 2010-03-10 22:55:04
 
 folding the previous three patches into one; rebased vs. Sage 4.3.4.alpha1; only apply this one
 
@@ -1768,7 +1768,7 @@ Rob
 archive/issue_comments_064955.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7608_networkx_doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket7608/trac_7608_networkx_doctest_fixes.patch) by rbeezer created at 2010-03-16 06:04:57",
     "created_at": "2010-03-16T06:04:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7608",
     "type": "issue_comment",
@@ -1777,7 +1777,7 @@ archive/issue_comments_064955.json:
 }
 ```
 
-Attachment
+Attachment [trac_7608_networkx_doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket7608/trac_7608_networkx_doctest_fixes.patch) by rbeezer created at 2010-03-16 06:04:57
 
 
 
@@ -2086,7 +2086,7 @@ Exception raised:
 archive/issue_comments_064964.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of previous patches",
+    "body": "Attachment [trac-7608-doctest-fixes.patch](tarball://root/attachments/some-uuid/ticket7608/trac-7608-doctest-fixes.patch) by jason created at 2010-04-20 14:28:01\n\napply on top of previous patches",
     "created_at": "2010-04-20T14:28:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7608",
     "type": "issue_comment",
@@ -2095,7 +2095,7 @@ archive/issue_comments_064964.json:
 }
 ```
 
-Attachment
+Attachment [trac-7608-doctest-fixes.patch](tarball://root/attachments/some-uuid/ticket7608/trac-7608-doctest-fixes.patch) by jason created at 2010-04-20 14:28:01
 
 apply on top of previous patches
 
@@ -2189,7 +2189,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_064969.json:
 ```json
 {
-    "body": "Attachment\n\nFor information only, to be folded into rebased patch",
+    "body": "Attachment [trac_7608-edge-label-fixes.patch](tarball://root/attachments/some-uuid/ticket7608/trac_7608-edge-label-fixes.patch) by rbeezer created at 2010-04-21 04:58:31\n\nFor information only, to be folded into rebased patch",
     "created_at": "2010-04-21T04:58:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7608",
     "type": "issue_comment",
@@ -2198,7 +2198,7 @@ archive/issue_comments_064969.json:
 }
 ```
 
-Attachment
+Attachment [trac_7608-edge-label-fixes.patch](tarball://root/attachments/some-uuid/ticket7608/trac_7608-edge-label-fixes.patch) by rbeezer created at 2010-04-21 04:58:31
 
 For information only, to be folded into rebased patch
 
@@ -2329,7 +2329,7 @@ Rebased, folded
 archive/issue_comments_064976.json:
 ```json
 {
-    "body": "Attachment\n\nAuthorship credit goes to Gregory McWhirter, so I have updated rbeezer's mega patch to set the username to Gregory McWhirter.",
+    "body": "Attachment [trac_7608-networkx-mega.patch](tarball://root/attachments/some-uuid/ticket7608/trac_7608-networkx-mega.patch) by mvngu created at 2010-04-23 06:09:26\n\nAuthorship credit goes to Gregory McWhirter, so I have updated rbeezer's mega patch to set the username to Gregory McWhirter.",
     "created_at": "2010-04-23T06:09:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7608",
     "type": "issue_comment",
@@ -2338,7 +2338,7 @@ archive/issue_comments_064976.json:
 }
 ```
 
-Attachment
+Attachment [trac_7608-networkx-mega.patch](tarball://root/attachments/some-uuid/ticket7608/trac_7608-networkx-mega.patch) by mvngu created at 2010-04-23 06:09:26
 
 Authorship credit goes to Gregory McWhirter, so I have updated rbeezer's mega patch to set the username to Gregory McWhirter.
 
@@ -2349,7 +2349,7 @@ Authorship credit goes to Gregory McWhirter, so I have updated rbeezer's mega pa
 archive/issue_comments_064977.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7608-more-doctest-fixes.patch](tarball://root/attachments/some-uuid/ticket7608/trac_7608-more-doctest-fixes.patch) by mvngu created at 2010-04-25 08:58:32",
     "created_at": "2010-04-25T08:58:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7608",
     "type": "issue_comment",
@@ -2358,7 +2358,7 @@ archive/issue_comments_064977.json:
 }
 ```
 
-Attachment
+Attachment [trac_7608-more-doctest-fixes.patch](tarball://root/attachments/some-uuid/ticket7608/trac_7608-more-doctest-fixes.patch) by mvngu created at 2010-04-25 08:58:32
 
 
 
@@ -2367,7 +2367,7 @@ Attachment
 archive/issue_comments_064978.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7608-networkx-mega.2.patch](tarball://root/attachments/some-uuid/ticket7608/trac_7608-networkx-mega.2.patch) by mvngu created at 2010-04-25 08:58:51",
     "created_at": "2010-04-25T08:58:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7608",
     "type": "issue_comment",
@@ -2376,7 +2376,7 @@ archive/issue_comments_064978.json:
 }
 ```
 
-Attachment
+Attachment [trac_7608-networkx-mega.2.patch](tarball://root/attachments/some-uuid/ticket7608/trac_7608-networkx-mega.2.patch) by mvngu created at 2010-04-25 08:58:51
 
 
 

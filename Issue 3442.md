@@ -119,7 +119,7 @@ docstring patch bases on 3.0.3.rc0
 archive/issue_comments_024284.json:
 ```json
 {
-    "body": "Attachment\n\nA patch for this docstring error is posted which is based on sage-3.0.3.rc0. \n\nInstall and sage -testall passed for sage-3.0.3.rc0. Also, this patch passed using sage -t. However, running sage -testall on this patch resulted in a lock-up on padic_lseries.py. I'll try again but think this is an unrelated issue.\n\nI could create another patch which does reordering of the methods alphabetically (as was done earlier). However, it seems I'm the only one who cares, so unless someone yells, I'll drop that idea.",
+    "body": "Attachment [9860.patch](tarball://root/attachments/some-uuid/ticket3442/9860.patch) by wdj created at 2008-06-17 17:46:07\n\nA patch for this docstring error is posted which is based on sage-3.0.3.rc0. \n\nInstall and sage -testall passed for sage-3.0.3.rc0. Also, this patch passed using sage -t. However, running sage -testall on this patch resulted in a lock-up on padic_lseries.py. I'll try again but think this is an unrelated issue.\n\nI could create another patch which does reordering of the methods alphabetically (as was done earlier). However, it seems I'm the only one who cares, so unless someone yells, I'll drop that idea.",
     "created_at": "2008-06-17T17:46:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3442",
     "type": "issue_comment",
@@ -128,7 +128,7 @@ archive/issue_comments_024284.json:
 }
 ```
 
-Attachment
+Attachment [9860.patch](tarball://root/attachments/some-uuid/ticket3442/9860.patch) by wdj created at 2008-06-17 17:46:07
 
 A patch for this docstring error is posted which is based on sage-3.0.3.rc0. 
 
@@ -245,7 +245,7 @@ again, based on 3.0.3.rc0. Should be applied after 9860.
 archive/issue_comments_024290.json:
 ```json
 {
-    "body": "Attachment\n\nDone. Please apply 9860 then 9861 to sage-3.0.3.rc0 to get the behavior you requested.",
+    "body": "Attachment [9861.patch](tarball://root/attachments/some-uuid/ticket3442/9861.patch) by wdj created at 2008-06-19 11:06:53\n\nDone. Please apply 9860 then 9861 to sage-3.0.3.rc0 to get the behavior you requested.",
     "created_at": "2008-06-19T11:06:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3442",
     "type": "issue_comment",
@@ -254,7 +254,7 @@ archive/issue_comments_024290.json:
 }
 ```
 
-Attachment
+Attachment [9861.patch](tarball://root/attachments/some-uuid/ticket3442/9861.patch) by wdj created at 2008-06-19 11:06:53
 
 Done. Please apply 9860 then 9861 to sage-3.0.3.rc0 to get the behavior you requested.
 
@@ -283,7 +283,7 @@ Changing keywords from "" to "editor_mhansen".
 archive/issue_comments_024292.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3442_swap_arguments.patch](tarball://root/attachments/some-uuid/ticket3442/trac_3442_swap_arguments.patch) by wjp created at 2008-06-20 19:16:53",
     "created_at": "2008-06-20T19:16:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3442",
     "type": "issue_comment",
@@ -292,7 +292,7 @@ archive/issue_comments_024292.json:
 }
 ```
 
-Attachment
+Attachment [trac_3442_swap_arguments.patch](tarball://root/attachments/some-uuid/ticket3442/trac_3442_swap_arguments.patch) by wjp created at 2008-06-20 19:16:53
 
 
 

@@ -49,7 +49,7 @@ I was looking in the logs and found a serious bug introduced by me in the patch 
 archive/issue_comments_044572.json:
 ```json
 {
-    "body": "Attachment\n\nLooking at the code this patch looks ok.\n\nIt applies cleanly.\n\nTested this on my Fedora installs. Don't know whether this qualifies as a positive review :)\n\nJaap",
+    "body": "Attachment [trac_5703.patch](tarball://root/attachments/some-uuid/ticket5703/trac_5703.patch) by jsp created at 2009-04-07 17:18:52\n\nLooking at the code this patch looks ok.\n\nIt applies cleanly.\n\nTested this on my Fedora installs. Don't know whether this qualifies as a positive review :)\n\nJaap",
     "created_at": "2009-04-07T17:18:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5703",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_044572.json:
 }
 ```
 
-Attachment
+Attachment [trac_5703.patch](tarball://root/attachments/some-uuid/ticket5703/trac_5703.patch) by jsp created at 2009-04-07 17:18:52
 
 Looking at the code this patch looks ok.
 

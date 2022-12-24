@@ -177,7 +177,7 @@ New version with a corrected typo (thanks Jason)
 archive/issue_comments_040337.json:
 ```json
 {
-    "body": "Attachment\n\n**Review**\npatch looks good except\n* typo: \"seld\" -> \"self\" (2402)\n* docstring INPUT block of `test_trivial_matrices_inverse` does not conform to Sage's conventions\n* \"TODO: must be adapted to Nicolas check framework (see trac FIXME).\" The FIXME should probably be addressed\n\ni.e. all issues are trivial.\n\nI didn't run doctests yet, will do now.",
+    "body": "Attachment [empty_matrix_inverse-fh.patch](tarball://root/attachments/some-uuid/ticket5256/empty_matrix_inverse-fh.patch) by malb created at 2009-02-14 16:34:10\n\n**Review**\npatch looks good except\n* typo: \"seld\" -> \"self\" (2402)\n* docstring INPUT block of `test_trivial_matrices_inverse` does not conform to Sage's conventions\n* \"TODO: must be adapted to Nicolas check framework (see trac FIXME).\" The FIXME should probably be addressed\n\ni.e. all issues are trivial.\n\nI didn't run doctests yet, will do now.",
     "created_at": "2009-02-14T16:34:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5256",
     "type": "issue_comment",
@@ -186,7 +186,7 @@ archive/issue_comments_040337.json:
 }
 ```
 
-Attachment
+Attachment [empty_matrix_inverse-fh.patch](tarball://root/attachments/some-uuid/ticket5256/empty_matrix_inverse-fh.patch) by malb created at 2009-02-14 16:34:10
 
 **Review**
 patch looks good except
@@ -271,7 +271,7 @@ Reupped after malb request on irc.
 archive/issue_comments_040341.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review on trivial_matrices_inverse-5256-submitted.patch.",
+    "body": "Attachment [trivial_matrices_inverse-5256-submitted.patch](tarball://root/attachments/some-uuid/ticket5256/trivial_matrices_inverse-5256-submitted.patch) by mhansen created at 2009-02-14 23:37:21\n\nPositive review on trivial_matrices_inverse-5256-submitted.patch.",
     "created_at": "2009-02-14T23:37:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5256",
     "type": "issue_comment",
@@ -280,7 +280,7 @@ archive/issue_comments_040341.json:
 }
 ```
 
-Attachment
+Attachment [trivial_matrices_inverse-5256-submitted.patch](tarball://root/attachments/some-uuid/ticket5256/trivial_matrices_inverse-5256-submitted.patch) by mhansen created at 2009-02-14 23:37:21
 
 Positive review on trivial_matrices_inverse-5256-submitted.patch.
 

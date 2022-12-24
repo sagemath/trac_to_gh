@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7887
 archive/issue_comments_068578.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [7887-FpT.patch](tarball://root/attachments/some-uuid/ticket7887/7887-FpT.patch) by robertwb created at 2010-01-10 00:13:04",
     "created_at": "2010-01-10T00:13:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7887",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_068578.json:
 }
 ```
 
-Attachment
+Attachment [7887-FpT.patch](tarball://root/attachments/some-uuid/ticket7887/7887-FpT.patch) by robertwb created at 2010-01-10 00:13:04
 
 
 
@@ -53,7 +53,7 @@ Attachment
 archive/issue_comments_068579.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of previous",
+    "body": "Attachment [7887-FpT-update.patch](tarball://root/attachments/some-uuid/ticket7887/7887-FpT-update.patch) by robertwb created at 2010-01-10 00:13:43\n\napply on top of previous",
     "created_at": "2010-01-10T00:13:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7887",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_068579.json:
 }
 ```
 
-Attachment
+Attachment [7887-FpT-update.patch](tarball://root/attachments/some-uuid/ticket7887/7887-FpT-update.patch) by robertwb created at 2010-01-10 00:13:43
 
 apply on top of previous
 

@@ -279,7 +279,7 @@ Applies to 4.6.2.alpha0
 archive/issue_comments_086605.json:
 ```json
 {
-    "body": "Attachment\n\nThe new version of the patch does what I suggested, i.e. replaces all tabs in mwrank output by three spaces;  the doctest which failed before has been adjusted accordingly.\n\nI could not find any other doctest which would be affected by this, and tested all sage/interfaces and sage/schemes/elliptic_curves.",
+    "body": "Attachment [trac_9228-mwrank-doctest.patch](tarball://root/attachments/some-uuid/ticket9228/trac_9228-mwrank-doctest.patch) by cremona created at 2011-01-20 11:22:00\n\nThe new version of the patch does what I suggested, i.e. replaces all tabs in mwrank output by three spaces;  the doctest which failed before has been adjusted accordingly.\n\nI could not find any other doctest which would be affected by this, and tested all sage/interfaces and sage/schemes/elliptic_curves.",
     "created_at": "2011-01-20T11:22:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9228",
     "type": "issue_comment",
@@ -288,7 +288,7 @@ archive/issue_comments_086605.json:
 }
 ```
 
-Attachment
+Attachment [trac_9228-mwrank-doctest.patch](tarball://root/attachments/some-uuid/ticket9228/trac_9228-mwrank-doctest.patch) by cremona created at 2011-01-20 11:22:00
 
 The new version of the patch does what I suggested, i.e. replaces all tabs in mwrank output by three spaces;  the doctest which failed before has been adjusted accordingly.
 

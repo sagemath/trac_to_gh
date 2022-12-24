@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9091
 archive/issue_comments_084439.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9091-latex-check-file.patch](tarball://root/attachments/some-uuid/ticket9091/trac_9091-latex-check-file.patch) by rbeezer created at 2010-05-30 02:26:18",
     "created_at": "2010-05-30T02:26:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9091",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_084439.json:
 }
 ```
 
-Attachment
+Attachment [trac_9091-latex-check-file.patch](tarball://root/attachments/some-uuid/ticket9091/trac_9091-latex-check-file.patch) by rbeezer created at 2010-05-30 02:26:18
 
 
 
@@ -140,7 +140,7 @@ Rob
 archive/issue_comments_084444.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9091-latex-check-file-v2.patch](tarball://root/attachments/some-uuid/ticket9091/trac_9091-latex-check-file-v2.patch) by rbeezer created at 2010-06-01 21:33:12",
     "created_at": "2010-06-01T21:33:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9091",
     "type": "issue_comment",
@@ -149,7 +149,7 @@ archive/issue_comments_084444.json:
 }
 ```
 
-Attachment
+Attachment [trac_9091-latex-check-file-v2.patch](tarball://root/attachments/some-uuid/ticket9091/trac_9091-latex-check-file-v2.patch) by rbeezer created at 2010-06-01 21:33:12
 
 
 

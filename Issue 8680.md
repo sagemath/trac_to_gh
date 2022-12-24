@@ -244,7 +244,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_079087.json:
 ```json
 {
-    "body": "Attachment\n\nSage repo",
+    "body": "Attachment [trac_8680-untabify.patch](tarball://root/attachments/some-uuid/ticket8680/trac_8680-untabify.patch) by jhpalmieri created at 2010-04-13 18:56:40\n\nSage repo",
     "created_at": "2010-04-13T18:56:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8680",
     "type": "issue_comment",
@@ -253,7 +253,7 @@ archive/issue_comments_079087.json:
 }
 ```
 
-Attachment
+Attachment [trac_8680-untabify.patch](tarball://root/attachments/some-uuid/ticket8680/trac_8680-untabify.patch) by jhpalmieri created at 2010-04-13 18:56:40
 
 Sage repo
 
@@ -264,7 +264,7 @@ Sage repo
 archive/issue_comments_079088.json:
 ```json
 {
-    "body": "Attachment\n\nscripts repo",
+    "body": "Attachment [trac_8680-doctest.patch](tarball://root/attachments/some-uuid/ticket8680/trac_8680-doctest.patch) by jhpalmieri created at 2010-04-13 18:56:54\n\nscripts repo",
     "created_at": "2010-04-13T18:56:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8680",
     "type": "issue_comment",
@@ -273,7 +273,7 @@ archive/issue_comments_079088.json:
 }
 ```
 
-Attachment
+Attachment [trac_8680-doctest.patch](tarball://root/attachments/some-uuid/ticket8680/trac_8680-doctest.patch) by jhpalmieri created at 2010-04-13 18:56:54
 
 scripts repo
 
@@ -351,7 +351,7 @@ See #9319.
 archive/issue_comments_079092.json:
 ```json
 {
-    "body": "Attachment\n\nSage repo; rebased to 4.5.alpha1",
+    "body": "Attachment [trac_8680-untabify-4.5.alpha1.patch](tarball://root/attachments/some-uuid/ticket8680/trac_8680-untabify-4.5.alpha1.patch) by davidloeffler created at 2010-06-30 17:51:40\n\nSage repo; rebased to 4.5.alpha1",
     "created_at": "2010-06-30T17:51:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8680",
     "type": "issue_comment",
@@ -360,7 +360,7 @@ archive/issue_comments_079092.json:
 }
 ```
 
-Attachment
+Attachment [trac_8680-untabify-4.5.alpha1.patch](tarball://root/attachments/some-uuid/ticket8680/trac_8680-untabify-4.5.alpha1.patch) by davidloeffler created at 2010-06-30 17:51:40
 
 Sage repo; rebased to 4.5.alpha1
 
@@ -530,7 +530,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_079100.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8680-tinyfix.patch](tarball://root/attachments/some-uuid/ticket8680/trac_8680-tinyfix.patch) by davidloeffler created at 2010-07-01 17:31:09",
     "created_at": "2010-07-01T17:31:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8680",
     "type": "issue_comment",
@@ -539,7 +539,7 @@ archive/issue_comments_079100.json:
 }
 ```
 
-Attachment
+Attachment [trac_8680-tinyfix.patch](tarball://root/attachments/some-uuid/ticket8680/trac_8680-tinyfix.patch) by davidloeffler created at 2010-07-01 17:31:09
 
 
 

@@ -204,7 +204,7 @@ Changing status from new to needs_review.
 archive/issue_comments_062746.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sagelib_7449.patch](tarball://root/attachments/some-uuid/ticket7449/sagelib_7449.patch) by was created at 2009-11-16 17:26:32",
     "created_at": "2009-11-16T17:26:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7449",
     "type": "issue_comment",
@@ -213,7 +213,7 @@ archive/issue_comments_062746.json:
 }
 ```
 
-Attachment
+Attachment [sagelib_7449.patch](tarball://root/attachments/some-uuid/ticket7449/sagelib_7449.patch) by was created at 2009-11-16 17:26:32
 
 
 

@@ -280,7 +280,7 @@ All doctests in `modular/` pass -- I didn't run anything beyond that.
 archive/issue_comments_007579.json:
 ```json
 {
-    "body": "Attachment\n\nOne side note: the patch is against 3.1.alpha0 -- I don't yet have an alpha1 build to test it against. I suspect there should be no issues, but I did touch `modular/modsym/boundary.py`, which I modified a lot in #3800. I think it shouldn't cause any issue (based on the specific changes), but just let me know if someone runs into merge troubles.",
+    "body": "Attachment [trac-1220.patch](tarball://root/attachments/some-uuid/ticket1220/trac-1220.patch) by craigcitro created at 2008-08-11 10:55:06\n\nOne side note: the patch is against 3.1.alpha0 -- I don't yet have an alpha1 build to test it against. I suspect there should be no issues, but I did touch `modular/modsym/boundary.py`, which I modified a lot in #3800. I think it shouldn't cause any issue (based on the specific changes), but just let me know if someone runs into merge troubles.",
     "created_at": "2008-08-11T10:55:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1220",
     "type": "issue_comment",
@@ -289,7 +289,7 @@ archive/issue_comments_007579.json:
 }
 ```
 
-Attachment
+Attachment [trac-1220.patch](tarball://root/attachments/some-uuid/ticket1220/trac-1220.patch) by craigcitro created at 2008-08-11 10:55:06
 
 One side note: the patch is against 3.1.alpha0 -- I don't yet have an alpha1 build to test it against. I suspect there should be no issues, but I did touch `modular/modsym/boundary.py`, which I modified a lot in #3800. I think it shouldn't cause any issue (based on the specific changes), but just let me know if someone runs into merge troubles.
 
@@ -427,7 +427,7 @@ Michael
 archive/issue_comments_007583.json:
 ```json
 {
-    "body": "Attachment\n\nYep, those are definitely issues with 32 vs. 64 bit. New patch fixes both of these doctests.",
+    "body": "Attachment [trac-1220-pt2.patch](tarball://root/attachments/some-uuid/ticket1220/trac-1220-pt2.patch) by craigcitro created at 2008-08-12 08:09:39\n\nYep, those are definitely issues with 32 vs. 64 bit. New patch fixes both of these doctests.",
     "created_at": "2008-08-12T08:09:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1220",
     "type": "issue_comment",
@@ -436,7 +436,7 @@ archive/issue_comments_007583.json:
 }
 ```
 
-Attachment
+Attachment [trac-1220-pt2.patch](tarball://root/attachments/some-uuid/ticket1220/trac-1220-pt2.patch) by craigcitro created at 2008-08-12 08:09:39
 
 Yep, those are definitely issues with 32 vs. 64 bit. New patch fixes both of these doctests.
 

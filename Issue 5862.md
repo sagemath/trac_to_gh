@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5862
 archive/issue_comments_046305.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5862.patch](tarball://root/attachments/some-uuid/ticket5862/trac_5862.patch) by was created at 2009-04-23 04:56:46",
     "created_at": "2009-04-23T04:56:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5862",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_046305.json:
 }
 ```
 
-Attachment
+Attachment [trac_5862.patch](tarball://root/attachments/some-uuid/ticket5862/trac_5862.patch) by was created at 2009-04-23 04:56:46
 
 
 
@@ -270,7 +270,7 @@ x^20 + y
 archive/issue_comments_046314.json:
 ```json
 {
-    "body": "Attachment\n\nremoves linking in static libraries",
+    "body": "Attachment [libsingular_osx64.patch](tarball://root/attachments/some-uuid/ticket5862/libsingular_osx64.patch) by malb created at 2009-05-11 19:02:33\n\nremoves linking in static libraries",
     "created_at": "2009-05-11T19:02:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5862",
     "type": "issue_comment",
@@ -279,7 +279,7 @@ archive/issue_comments_046314.json:
 }
 ```
 
-Attachment
+Attachment [libsingular_osx64.patch](tarball://root/attachments/some-uuid/ticket5862/libsingular_osx64.patch) by malb created at 2009-05-11 19:02:33
 
 removes linking in static libraries
 

@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7390
 archive/issue_comments_062149.json:
 ```json
 {
-    "body": "Attachment\n\nHTML test report.  Part A.  Apply to sagenb repo.",
+    "body": "Attachment [trac_7390-sagenb_test_report_A.patch](tarball://root/attachments/some-uuid/ticket7390/trac_7390-sagenb_test_report_A.patch) by mpatel created at 2009-11-06 14:32:18\n\nHTML test report.  Part A.  Apply to sagenb repo.",
     "created_at": "2009-11-06T14:32:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7390",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_062149.json:
 }
 ```
 
-Attachment
+Attachment [trac_7390-sagenb_test_report_A.patch](tarball://root/attachments/some-uuid/ticket7390/trac_7390-sagenb_test_report_A.patch) by mpatel created at 2009-11-06 14:32:18
 
 HTML test report.  Part A.  Apply to sagenb repo.
 
@@ -55,7 +55,7 @@ HTML test report.  Part A.  Apply to sagenb repo.
 archive/issue_comments_062150.json:
 ```json
 {
-    "body": "Attachment\n\nHTML test report.  Part B.  Apply to sagenb repo after part A.",
+    "body": "Attachment [trac_7390-sagenb_test_report_B.patch](tarball://root/attachments/some-uuid/ticket7390/trac_7390-sagenb_test_report_B.patch) by mpatel created at 2009-11-06 14:36:48\n\nHTML test report.  Part B.  Apply to sagenb repo after part A.",
     "created_at": "2009-11-06T14:36:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7390",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_062150.json:
 }
 ```
 
-Attachment
+Attachment [trac_7390-sagenb_test_report_B.patch](tarball://root/attachments/some-uuid/ticket7390/trac_7390-sagenb_test_report_B.patch) by mpatel created at 2009-11-06 14:36:48
 
 HTML test report.  Part B.  Apply to sagenb repo after part A.
 
@@ -194,7 +194,7 @@ HTML test report. Part B **Version 2**. Apply to sagenb repo after part A.
 archive/issue_comments_062156.json:
 ```json
 {
-    "body": "Attachment\n\nVersion 2 (of part B):\n\n* Solves the table width problem for Cr3, FF3.5, IE8, O10, S4 on Windows XP and Cr4, FF3.5, O10 on Linux.\n* Works around a jQuery / IE8 toggle bug.\n* Fixes `run_and_report`'s docstring.",
+    "body": "Attachment [trac_7390-sagenb_test_report_B_v2.patch](tarball://root/attachments/some-uuid/ticket7390/trac_7390-sagenb_test_report_B_v2.patch) by mpatel created at 2009-11-10 07:01:41\n\nVersion 2 (of part B):\n\n* Solves the table width problem for Cr3, FF3.5, IE8, O10, S4 on Windows XP and Cr4, FF3.5, O10 on Linux.\n* Works around a jQuery / IE8 toggle bug.\n* Fixes `run_and_report`'s docstring.",
     "created_at": "2009-11-10T07:01:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7390",
     "type": "issue_comment",
@@ -203,7 +203,7 @@ archive/issue_comments_062156.json:
 }
 ```
 
-Attachment
+Attachment [trac_7390-sagenb_test_report_B_v2.patch](tarball://root/attachments/some-uuid/ticket7390/trac_7390-sagenb_test_report_B_v2.patch) by mpatel created at 2009-11-10 07:01:41
 
 Version 2 (of part B):
 
@@ -297,7 +297,7 @@ Feel free.
 archive/issue_comments_062161.json:
 ```json
 {
-    "body": "Attachment\n\nRemoves unicode characters from the documentation. Restyles color scheme to a lighter layout.",
+    "body": "Attachment [trac_7390-sagenb_test_report_referee.patch](tarball://root/attachments/some-uuid/ticket7390/trac_7390-sagenb_test_report_referee.patch) by timdumol created at 2009-11-15 08:50:08\n\nRemoves unicode characters from the documentation. Restyles color scheme to a lighter layout.",
     "created_at": "2009-11-15T08:50:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7390",
     "type": "issue_comment",
@@ -306,7 +306,7 @@ archive/issue_comments_062161.json:
 }
 ```
 
-Attachment
+Attachment [trac_7390-sagenb_test_report_referee.patch](tarball://root/attachments/some-uuid/ticket7390/trac_7390-sagenb_test_report_referee.patch) by timdumol created at 2009-11-15 08:50:08
 
 Removes unicode characters from the documentation. Restyles color scheme to a lighter layout.
 
@@ -337,7 +337,7 @@ Things look great. The only thing I might want added are timings for each indivi
 archive/issue_comments_062163.json:
 ```json
 {
-    "body": "Attachment\n\nUpdate TODO list.  **Version 2** of referee patch.",
+    "body": "Attachment [trac_7390-sagenb_test_report_referee_v2.patch](tarball://root/attachments/some-uuid/ticket7390/trac_7390-sagenb_test_report_referee_v2.patch) by mpatel created at 2009-11-15 09:11:28\n\nUpdate TODO list.  **Version 2** of referee patch.",
     "created_at": "2009-11-15T09:11:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7390",
     "type": "issue_comment",
@@ -346,7 +346,7 @@ archive/issue_comments_062163.json:
 }
 ```
 
-Attachment
+Attachment [trac_7390-sagenb_test_report_referee_v2.patch](tarball://root/attachments/some-uuid/ticket7390/trac_7390-sagenb_test_report_referee_v2.patch) by mpatel created at 2009-11-15 09:11:28
 
 Update TODO list.  **Version 2** of referee patch.
 

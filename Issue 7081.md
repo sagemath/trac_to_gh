@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7081
 archive/issue_comments_058542.json:
 ```json
 {
-    "body": "Attachment\n\nApply to scripts repo.",
+    "body": "Attachment [trac_7081-chdir-fix.patch](tarball://root/attachments/some-uuid/ticket7081/trac_7081-chdir-fix.patch) by timdumol created at 2009-09-30 09:16:43\n\nApply to scripts repo.",
     "created_at": "2009-09-30T09:16:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7081",
     "type": "issue_comment",
@@ -51,7 +51,7 @@ archive/issue_comments_058542.json:
 }
 ```
 
-Attachment
+Attachment [trac_7081-chdir-fix.patch](tarball://root/attachments/some-uuid/ticket7081/trac_7081-chdir-fix.patch) by timdumol created at 2009-09-30 09:16:43
 
 Apply to scripts repo.
 

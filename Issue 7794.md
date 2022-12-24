@@ -710,7 +710,7 @@ Can you update your patch, so that the attribute error is caught? Then I'll run 
 archive/issue_comments_067290.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [7794_get_cparent.patch](tarball://root/attachments/some-uuid/ticket7794/7794_get_cparent.patch) by jdemeyer created at 2011-05-21 06:23:19",
     "created_at": "2011-05-21T06:23:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7794",
     "type": "issue_comment",
@@ -719,7 +719,7 @@ archive/issue_comments_067290.json:
 }
 ```
 
-Attachment
+Attachment [7794_get_cparent.patch](tarball://root/attachments/some-uuid/ticket7794/7794_get_cparent.patch) by jdemeyer created at 2011-05-21 06:23:19
 
 
 

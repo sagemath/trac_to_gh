@@ -49,7 +49,7 @@ Changing keywords from "" to "phcpack, interfaces, optional packages".
 archive/issue_comments_020960.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3044_phcpack.patch](tarball://root/attachments/some-uuid/ticket3044/trac_3044_phcpack.patch) by mhampton created at 2008-04-27 14:11:23",
     "created_at": "2008-04-27T14:11:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3044",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_020960.json:
 }
 ```
 
-Attachment
+Attachment [trac_3044_phcpack.patch](tarball://root/attachments/some-uuid/ticket3044/trac_3044_phcpack.patch) by mhampton created at 2008-04-27 14:11:23
 
 
 
@@ -103,7 +103,7 @@ Changing keywords from "phcpack, interfaces, optional packages" to "phcpack, int
 archive/issue_comments_020963.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [phcpack-optional.patch](tarball://root/attachments/some-uuid/ticket3044/phcpack-optional.patch) by cwitty created at 2008-06-18 02:03:54",
     "created_at": "2008-06-18T02:03:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3044",
     "type": "issue_comment",
@@ -112,7 +112,7 @@ archive/issue_comments_020963.json:
 }
 ```
 
-Attachment
+Attachment [phcpack-optional.patch](tarball://root/attachments/some-uuid/ticket3044/phcpack-optional.patch) by cwitty created at 2008-06-18 02:03:54
 
 
 

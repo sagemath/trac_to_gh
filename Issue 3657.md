@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3657
 archive/issue_comments_025850.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [chlatin.patch](tarball://root/attachments/some-uuid/ticket3657/chlatin.patch) by carlohamalainen created at 2008-07-15 12:17:04",
     "created_at": "2008-07-15T12:17:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3657",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_025850.json:
 }
 ```
 
-Attachment
+Attachment [chlatin.patch](tarball://root/attachments/some-uuid/ticket3657/chlatin.patch) by carlohamalainen created at 2008-07-15 12:17:04
 
 
 
@@ -51,7 +51,7 @@ Attachment
 archive/issue_comments_025851.json:
 ```json
 {
-    "body": "Attachment\n\nCarlo,\n\nI have nuked the bundles. Not knowing the subject at hand I will not comment on chlatin.patch, but chlatindocs.patch looks good. The first hunk in the last patch will be removed when applying it, so don't worry about that for now.\n\nMike: Can you be the editor for this?\n\nCheers,\n\nMichael",
+    "body": "Attachment [chlatindocs.patch](tarball://root/attachments/some-uuid/ticket3657/chlatindocs.patch) by mabshoff created at 2008-07-15 23:34:25\n\nCarlo,\n\nI have nuked the bundles. Not knowing the subject at hand I will not comment on chlatin.patch, but chlatindocs.patch looks good. The first hunk in the last patch will be removed when applying it, so don't worry about that for now.\n\nMike: Can you be the editor for this?\n\nCheers,\n\nMichael",
     "created_at": "2008-07-15T23:34:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3657",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_025851.json:
 }
 ```
 
-Attachment
+Attachment [chlatindocs.patch](tarball://root/attachments/some-uuid/ticket3657/chlatindocs.patch) by mabshoff created at 2008-07-15 23:34:25
 
 Carlo,
 

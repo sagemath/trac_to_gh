@@ -113,7 +113,7 @@ Nathann
 archive/issue_comments_098777.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9923.patch](tarball://root/attachments/some-uuid/ticket9923/trac_9923.patch) by mvngu created at 2010-11-04 11:12:21",
     "created_at": "2010-11-04T11:12:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9922",
     "type": "issue_comment",
@@ -122,7 +122,7 @@ archive/issue_comments_098777.json:
 }
 ```
 
-Attachment
+Attachment [trac_9923.patch](tarball://root/attachments/some-uuid/ticket9923/trac_9923.patch) by mvngu created at 2010-11-04 11:12:21
 
 
 
@@ -226,7 +226,7 @@ Nathann
 archive/issue_comments_098782.json:
 ```json
 {
-    "body": "Attachment\n\nThanks for explaining Nathann, that greatly clarifies things.",
+    "body": "Attachment [trac_9923-python.patch](tarball://root/attachments/some-uuid/ticket9923/trac_9923-python.patch) by gbe created at 2011-01-12 20:00:56\n\nThanks for explaining Nathann, that greatly clarifies things.",
     "created_at": "2011-01-12T20:00:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9922",
     "type": "issue_comment",
@@ -235,7 +235,7 @@ archive/issue_comments_098782.json:
 }
 ```
 
-Attachment
+Attachment [trac_9923-python.patch](tarball://root/attachments/some-uuid/ticket9923/trac_9923-python.patch) by gbe created at 2011-01-12 20:00:56
 
 Thanks for explaining Nathann, that greatly clarifies things.
 

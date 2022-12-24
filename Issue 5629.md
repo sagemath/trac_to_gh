@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5629
 archive/issue_comments_043957.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5629.patch](tarball://root/attachments/some-uuid/ticket5629/trac_5629.patch) by AlexGhitza created at 2009-03-29 03:59:51",
     "created_at": "2009-03-29T03:59:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5629",
     "type": "issue_comment",
@@ -43,7 +43,7 @@ archive/issue_comments_043957.json:
 }
 ```
 
-Attachment
+Attachment [trac_5629.patch](tarball://root/attachments/some-uuid/ticket5629/trac_5629.patch) by AlexGhitza created at 2009-03-29 03:59:51
 
 
 
@@ -155,7 +155,7 @@ rebased against 3.4.1.alpha0 and added a missing doctst
 archive/issue_comments_043963.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5629-rebase.patch](tarball://root/attachments/some-uuid/ticket5629/trac_5629-rebase.patch) by was created at 2009-03-29 17:27:04",
     "created_at": "2009-03-29T17:27:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5629",
     "type": "issue_comment",
@@ -164,7 +164,7 @@ archive/issue_comments_043963.json:
 }
 ```
 
-Attachment
+Attachment [trac_5629-rebase.patch](tarball://root/attachments/some-uuid/ticket5629/trac_5629-rebase.patch) by was created at 2009-03-29 17:27:04
 
 
 

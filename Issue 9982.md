@@ -61,7 +61,7 @@ Log of a failed build on an RS/6000 running AIX 5.3
 archive/issue_comments_100314.json:
 ```json
 {
-    "body": "Attachment\n\nEOL for AIX 5.3 was four years ago, and nobody seems to care about this ticket. So I suggest we close this as wontfix.",
+    "body": "Attachment [boehm_gc-7.1.p6.log](tarball://root/attachments/some-uuid/ticket9983/boehm_gc-7.1.p6.log) by jmantysalo created at 2016-08-30 04:43:09\n\nEOL for AIX 5.3 was four years ago, and nobody seems to care about this ticket. So I suggest we close this as wontfix.",
     "created_at": "2016-08-30T04:43:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9982",
     "type": "issue_comment",
@@ -70,7 +70,7 @@ archive/issue_comments_100314.json:
 }
 ```
 
-Attachment
+Attachment [boehm_gc-7.1.p6.log](tarball://root/attachments/some-uuid/ticket9983/boehm_gc-7.1.p6.log) by jmantysalo created at 2016-08-30 04:43:09
 
 EOL for AIX 5.3 was four years ago, and nobody seems to care about this ticket. So I suggest we close this as wontfix.
 

@@ -53,7 +53,7 @@ Resolution: fixed
 archive/issue_comments_011401.json:
 ```json
 {
-    "body": "Attachment\n\nMerged in Sage 2.10.alpha4",
+    "body": "Attachment [HISTORY.txt](tarball://root/attachments/some-uuid/ticket1803/HISTORY.txt) by mabshoff created at 2008-01-17 20:26:14\n\nMerged in Sage 2.10.alpha4",
     "created_at": "2008-01-17T20:26:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1803",
     "type": "issue_comment",
@@ -62,6 +62,6 @@ archive/issue_comments_011401.json:
 }
 ```
 
-Attachment
+Attachment [HISTORY.txt](tarball://root/attachments/some-uuid/ticket1803/HISTORY.txt) by mabshoff created at 2008-01-17 20:26:14
 
 Merged in Sage 2.10.alpha4

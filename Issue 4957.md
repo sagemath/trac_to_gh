@@ -180,7 +180,7 @@ Darn :(. The first two may be OK (we need to see what hash(int(n)) is, but the s
 archive/issue_comments_037683.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-4957.patch](tarball://root/attachments/some-uuid/ticket4957/trac-4957.patch) by craigcitro created at 2009-01-24 23:24:15",
     "created_at": "2009-01-24T23:24:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4957",
     "type": "issue_comment",
@@ -189,7 +189,7 @@ archive/issue_comments_037683.json:
 }
 ```
 
-Attachment
+Attachment [trac-4957.patch](tarball://root/attachments/some-uuid/ticket4957/trac-4957.patch) by craigcitro created at 2009-01-24 23:24:15
 
 
 

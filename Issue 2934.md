@@ -161,7 +161,7 @@ apply this to the hg_scripts repo.
 archive/issue_comments_020211.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch scripts-2934.patch enables doctesting in hidden directories.  This used to be disabled since we kept lots of temp data in ./doctest -- but now we don't do to some nice changes\nmade by Timothy Abbot.",
+    "body": "Attachment [scripts-2934.patch](tarball://root/attachments/some-uuid/ticket2934/scripts-2934.patch) by was created at 2008-04-20 17:19:22\n\nThe attached patch scripts-2934.patch enables doctesting in hidden directories.  This used to be disabled since we kept lots of temp data in ./doctest -- but now we don't do to some nice changes\nmade by Timothy Abbot.",
     "created_at": "2008-04-20T17:19:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2934",
     "type": "issue_comment",
@@ -170,7 +170,7 @@ archive/issue_comments_020211.json:
 }
 ```
 
-Attachment
+Attachment [scripts-2934.patch](tarball://root/attachments/some-uuid/ticket2934/scripts-2934.patch) by was created at 2008-04-20 17:19:22
 
 The attached patch scripts-2934.patch enables doctesting in hidden directories.  This used to be disabled since we kept lots of temp data in ./doctest -- but now we don't do to some nice changes
 made by Timothy Abbot.

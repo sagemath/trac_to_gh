@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4922
 archive/issue_comments_037353.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4922.patch](tarball://root/attachments/some-uuid/ticket4922/trac_4922.patch) by mhansen created at 2009-01-02 02:20:14",
     "created_at": "2009-01-02T02:20:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4922",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_037353.json:
 }
 ```
 
-Attachment
+Attachment [trac_4922.patch](tarball://root/attachments/some-uuid/ticket4922/trac_4922.patch) by mhansen created at 2009-01-02 02:20:14
 
 
 
@@ -91,7 +91,7 @@ Resolution: fixed
 archive/issue_comments_037356.json:
 ```json
 {
-    "body": "Attachment\n\nMerged in Sage 3.4.alpha0.\n\nCheers,\n\nMichael",
+    "body": "Attachment [sage.monoids-final.patch](tarball://root/attachments/some-uuid/ticket4922/sage.monoids-final.patch) by mabshoff created at 2009-02-24 18:45:38\n\nMerged in Sage 3.4.alpha0.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-24T18:45:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4922",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_037356.json:
 }
 ```
 
-Attachment
+Attachment [sage.monoids-final.patch](tarball://root/attachments/some-uuid/ticket4922/sage.monoids-final.patch) by mabshoff created at 2009-02-24 18:45:38
 
 Merged in Sage 3.4.alpha0.
 

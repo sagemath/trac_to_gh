@@ -151,7 +151,7 @@ new version with doctest
 archive/issue_comments_068125.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7859.patch](tarball://root/attachments/some-uuid/ticket7859/trac_7859.patch) by hgranath created at 2010-01-06 21:48:32",
     "created_at": "2010-01-06T21:48:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7859",
     "type": "issue_comment",
@@ -160,7 +160,7 @@ archive/issue_comments_068125.json:
 }
 ```
 
-Attachment
+Attachment [trac_7859.patch](tarball://root/attachments/some-uuid/ticket7859/trac_7859.patch) by hgranath created at 2010-01-06 21:48:32
 
 
 
@@ -307,7 +307,7 @@ I agree.  This is fixed.  Possibly the doctest should be added, though.
 archive/issue_comments_068132.json:
 ```json
 {
-    "body": "Attachment\n\napply only this patch",
+    "body": "Attachment [trac_7859-qqbar_sqrt_doctest.patch](tarball://root/attachments/some-uuid/ticket7859/trac_7859-qqbar_sqrt_doctest.patch) by davidloeffler created at 2010-06-29 09:23:16\n\napply only this patch",
     "created_at": "2010-06-29T09:23:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7859",
     "type": "issue_comment",
@@ -316,7 +316,7 @@ archive/issue_comments_068132.json:
 }
 ```
 
-Attachment
+Attachment [trac_7859-qqbar_sqrt_doctest.patch](tarball://root/attachments/some-uuid/ticket7859/trac_7859-qqbar_sqrt_doctest.patch) by davidloeffler created at 2010-06-29 09:23:16
 
 apply only this patch
 

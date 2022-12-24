@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4083
 archive/issue_comments_029454.json:
 ```json
 {
-    "body": "Attachment\n\nInitial implementation of the Option class.",
+    "body": "Attachment [sage-4083-part1.patch](tarball://root/attachments/some-uuid/ticket4083/sage-4083-part1.patch) by cswiercz created at 2008-09-09 02:17:33\n\nInitial implementation of the Option class.",
     "created_at": "2008-09-09T02:17:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4083",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_029454.json:
 }
 ```
 
-Attachment
+Attachment [sage-4083-part1.patch](tarball://root/attachments/some-uuid/ticket4083/sage-4083-part1.patch) by cswiercz created at 2008-09-09 02:17:33
 
 Initial implementation of the Option class.
 

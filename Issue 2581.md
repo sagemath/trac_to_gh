@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2581
 archive/issue_comments_017654.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-2581.patch](tarball://root/attachments/some-uuid/ticket2581/sage-2581.patch) by was created at 2008-03-18 02:31:22",
     "created_at": "2008-03-18T02:31:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2581",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_017654.json:
 }
 ```
 
-Attachment
+Attachment [sage-2581.patch](tarball://root/attachments/some-uuid/ticket2581/sage-2581.patch) by was created at 2008-03-18 02:31:22
 
 
 
@@ -85,7 +85,7 @@ this provides the extra restrict_codomain functionality.
 archive/issue_comments_017657.json:
 ```json
 {
-    "body": "Attachment\n\nLooks great. Merge this right away!",
+    "body": "Attachment [sage-2581_part2-restrict_codomain.patch](tarball://root/attachments/some-uuid/ticket2581/sage-2581_part2-restrict_codomain.patch) by craigcitro created at 2008-03-18 07:46:24\n\nLooks great. Merge this right away!",
     "created_at": "2008-03-18T07:46:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2581",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_017657.json:
 }
 ```
 
-Attachment
+Attachment [sage-2581_part2-restrict_codomain.patch](tarball://root/attachments/some-uuid/ticket2581/sage-2581_part2-restrict_codomain.patch) by craigcitro created at 2008-03-18 07:46:24
 
 Looks great. Merge this right away!
 
@@ -268,7 +268,7 @@ I'm attaching a patch that:
 archive/issue_comments_017666.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-2581_part3.patch](tarball://root/attachments/some-uuid/ticket2581/sage-2581_part3.patch) by was created at 2008-03-19 01:07:54",
     "created_at": "2008-03-19T01:07:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2581",
     "type": "issue_comment",
@@ -277,7 +277,7 @@ archive/issue_comments_017666.json:
 }
 ```
 
-Attachment
+Attachment [sage-2581_part3.patch](tarball://root/attachments/some-uuid/ticket2581/sage-2581_part3.patch) by was created at 2008-03-19 01:07:54
 
 
 

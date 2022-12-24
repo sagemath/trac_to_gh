@@ -51,7 +51,7 @@ Hrm, with this spkg in 4.1.2.alpha1 there seems to be no  lighting on the top of
 archive/issue_comments_057901.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [jmol-lighting-screenshot.png](tarball://root/attachments/some-uuid/ticket7003/jmol-lighting-screenshot.png) by mhansen created at 2009-11-05 01:56:03",
     "created_at": "2009-11-05T01:56:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7003",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_057901.json:
 }
 ```
 
-Attachment
+Attachment [jmol-lighting-screenshot.png](tarball://root/attachments/some-uuid/ticket7003/jmol-lighting-screenshot.png) by mhansen created at 2009-11-05 01:56:03
 
 
 

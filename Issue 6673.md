@@ -53,7 +53,7 @@ Depends on #6614.
 archive/issue_comments_054828.json:
 ```json
 {
-    "body": "Attachment\n\nNote: Depending on the outcome of this ticket, we may need to update the \"scripts\" patch at #6187.",
+    "body": "Attachment [trac_6673-jsmath_macros_docs.patch](tarball://root/attachments/some-uuid/ticket6673/trac_6673-jsmath_macros_docs.patch) by mpatel created at 2009-08-04 07:07:27\n\nNote: Depending on the outcome of this ticket, we may need to update the \"scripts\" patch at #6187.",
     "created_at": "2009-08-04T07:07:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6673",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_054828.json:
 }
 ```
 
-Attachment
+Attachment [trac_6673-jsmath_macros_docs.patch](tarball://root/attachments/some-uuid/ticket6673/trac_6673-jsmath_macros_docs.patch) by mpatel created at 2009-08-04 07:07:27
 
 Note: Depending on the outcome of this ticket, we may need to update the "scripts" patch at #6187.
 
@@ -105,7 +105,7 @@ For the file jsmath_sage.js, it looks like a modified version of easy/load.js, b
 archive/issue_comments_054830.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of the other patch",
+    "body": "Attachment [trac_6673-referee.patch](tarball://root/attachments/some-uuid/ticket6673/trac_6673-referee.patch) by jhpalmieri created at 2009-08-20 21:48:13\n\napply on top of the other patch",
     "created_at": "2009-08-20T21:48:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6673",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_054830.json:
 }
 ```
 
-Attachment
+Attachment [trac_6673-referee.patch](tarball://root/attachments/some-uuid/ticket6673/trac_6673-referee.patch) by jhpalmieri created at 2009-08-20 21:48:13
 
 apply on top of the other patch
 
@@ -218,7 +218,7 @@ The forthcoming alternative patch inserts macros on-the-fly.  It
 archive/issue_comments_054835.json:
 ```json
 {
-    "body": "Attachment\n\nTemplate version. Depends on #6187, #6586. Apply only this patch.",
+    "body": "Attachment [trac_6673-jsmath_macros_docs_v2.patch](tarball://root/attachments/some-uuid/ticket6673/trac_6673-jsmath_macros_docs_v2.patch) by mpatel created at 2009-08-23 06:26:08\n\nTemplate version. Depends on #6187, #6586. Apply only this patch.",
     "created_at": "2009-08-23T06:26:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6673",
     "type": "issue_comment",
@@ -227,7 +227,7 @@ archive/issue_comments_054835.json:
 }
 ```
 
-Attachment
+Attachment [trac_6673-jsmath_macros_docs_v2.patch](tarball://root/attachments/some-uuid/ticket6673/trac_6673-jsmath_macros_docs_v2.patch) by mpatel created at 2009-08-23 06:26:08
 
 Template version. Depends on #6187, #6586. Apply only this patch.
 
@@ -350,7 +350,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_054842.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated template version.  Added 'sage' theme.  Apply only this patch.",
+    "body": "Attachment [trac_6673-jsmath_macros_docs_v3.patch](tarball://root/attachments/some-uuid/ticket6673/trac_6673-jsmath_macros_docs_v3.patch) by mpatel created at 2009-10-21 18:44:34\n\nUpdated template version.  Added 'sage' theme.  Apply only this patch.",
     "created_at": "2009-10-21T18:44:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6673",
     "type": "issue_comment",
@@ -359,7 +359,7 @@ archive/issue_comments_054842.json:
 }
 ```
 
-Attachment
+Attachment [trac_6673-jsmath_macros_docs_v3.patch](tarball://root/attachments/some-uuid/ticket6673/trac_6673-jsmath_macros_docs_v3.patch) by mpatel created at 2009-10-21 18:44:34
 
 Updated template version.  Added 'sage' theme.  Apply only this patch.
 

@@ -72,7 +72,7 @@ Changing status from new to needs_review.
 archive/issue_comments_054755.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-6669-matrix_hom.patch](tarball://root/attachments/some-uuid/ticket6669/trac-6669-matrix_hom.patch) by mraum created at 2009-10-22 16:50:07",
     "created_at": "2009-10-22T16:50:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6669",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_054755.json:
 }
 ```
 
-Attachment
+Attachment [trac-6669-matrix_hom.patch](tarball://root/attachments/some-uuid/ticket6669/trac-6669-matrix_hom.patch) by mraum created at 2009-10-22 16:50:07
 
 
 
@@ -128,7 +128,7 @@ One thing needs to be fixed: please add some doctests with examples of homomorph
 archive/issue_comments_054758.json:
 ```json
 {
-    "body": "Attachment\n\nPatch with doctests.",
+    "body": "Attachment [trac-6669-2-matrix_hom.patch](tarball://root/attachments/some-uuid/ticket6669/trac-6669-2-matrix_hom.patch) by mraum created at 2009-11-16 13:31:53\n\nPatch with doctests.",
     "created_at": "2009-11-16T13:31:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6669",
     "type": "issue_comment",
@@ -137,7 +137,7 @@ archive/issue_comments_054758.json:
 }
 ```
 
-Attachment
+Attachment [trac-6669-2-matrix_hom.patch](tarball://root/attachments/some-uuid/ticket6669/trac-6669-2-matrix_hom.patch) by mraum created at 2009-11-16 13:31:53
 
 Patch with doctests.
 

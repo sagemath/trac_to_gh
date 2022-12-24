@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7728
 archive/issue_comments_066395.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7728-immutablefactors.patch](tarball://root/attachments/some-uuid/ticket7728/trac_7728-immutablefactors.patch) by dagss created at 2009-12-17 21:25:05",
     "created_at": "2009-12-17T21:25:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7728",
     "type": "issue_comment",
@@ -51,7 +51,7 @@ archive/issue_comments_066395.json:
 }
 ```
 
-Attachment
+Attachment [trac_7728-immutablefactors.patch](tarball://root/attachments/some-uuid/ticket7728/trac_7728-immutablefactors.patch) by dagss created at 2009-12-17 21:25:05
 
 
 
@@ -114,7 +114,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_066399.json:
 ```json
 {
-    "body": "Attachment\n\nLast attachment contains the same changes + a little more docs.\n\nLU was previously cached, so this just makes things more consistent by caching all decompositions -- easier to remember.\n\nI also plan to make use of the caching if I get around to fixing #4932, see my comment there, short story: `solve_left` should be able to use the results of a call to `LU()`, which makes caching a lot more important.",
+    "body": "Attachment [trac_7728-immutablefactors.2.patch](tarball://root/attachments/some-uuid/ticket7728/trac_7728-immutablefactors.2.patch) by dagss created at 2009-12-21 15:12:06\n\nLast attachment contains the same changes + a little more docs.\n\nLU was previously cached, so this just makes things more consistent by caching all decompositions -- easier to remember.\n\nI also plan to make use of the caching if I get around to fixing #4932, see my comment there, short story: `solve_left` should be able to use the results of a call to `LU()`, which makes caching a lot more important.",
     "created_at": "2009-12-21T15:12:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7728",
     "type": "issue_comment",
@@ -123,7 +123,7 @@ archive/issue_comments_066399.json:
 }
 ```
 
-Attachment
+Attachment [trac_7728-immutablefactors.2.patch](tarball://root/attachments/some-uuid/ticket7728/trac_7728-immutablefactors.2.patch) by dagss created at 2009-12-21 15:12:06
 
 Last attachment contains the same changes + a little more docs.
 

@@ -257,7 +257,7 @@ Resolution: fixed
 archive/issue_comments_037976.json:
 ```json
 {
-    "body": "Attachment\n\nMerged polynomial_ring.py (take 4) in Sage 3.3.alpha2",
+    "body": "Attachment [polynomial_ring.patch](tarball://root/attachments/some-uuid/ticket4981/polynomial_ring.patch) by mabshoff created at 2009-01-24 17:45:36\n\nMerged polynomial_ring.py (take 4) in Sage 3.3.alpha2",
     "created_at": "2009-01-24T17:45:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4981",
     "type": "issue_comment",
@@ -266,6 +266,6 @@ archive/issue_comments_037976.json:
 }
 ```
 
-Attachment
+Attachment [polynomial_ring.patch](tarball://root/attachments/some-uuid/ticket4981/polynomial_ring.patch) by mabshoff created at 2009-01-24 17:45:36
 
 Merged polynomial_ring.py (take 4) in Sage 3.3.alpha2

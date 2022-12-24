@@ -75,7 +75,7 @@ trac #n: <put commit message here>
 archive/issue_comments_052870.json:
 ```json
 {
-    "body": "Attachment\n\nWell spotted -- I have uploaded another patch (overwriting the previous one) that has my username and a commit message on it. Thanks for the quick response.",
+    "body": "Attachment [trac_6500-polynomial_docstrings.patch](tarball://root/attachments/some-uuid/ticket6500/trac_6500-polynomial_docstrings.patch) by davidloeffler created at 2009-07-09 15:22:57\n\nWell spotted -- I have uploaded another patch (overwriting the previous one) that has my username and a commit message on it. Thanks for the quick response.",
     "created_at": "2009-07-09T15:22:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6500",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_052870.json:
 }
 ```
 
-Attachment
+Attachment [trac_6500-polynomial_docstrings.patch](tarball://root/attachments/some-uuid/ticket6500/trac_6500-polynomial_docstrings.patch) by davidloeffler created at 2009-07-09 15:22:57
 
 Well spotted -- I have uploaded another patch (overwriting the previous one) that has my username and a commit message on it. Thanks for the quick response.
 
@@ -113,7 +113,7 @@ apply over previous patch
 archive/issue_comments_052872.json:
 ```json
 {
-    "body": "Attachment\n\nHere's another patch in the same vein, covering multivariate polynomial rings.",
+    "body": "Attachment [trac_6500-polynomial_docstrings_2.patch](tarball://root/attachments/some-uuid/ticket6500/trac_6500-polynomial_docstrings_2.patch) by davidloeffler created at 2009-07-10 14:32:18\n\nHere's another patch in the same vein, covering multivariate polynomial rings.",
     "created_at": "2009-07-10T14:32:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6500",
     "type": "issue_comment",
@@ -122,7 +122,7 @@ archive/issue_comments_052872.json:
 }
 ```
 
-Attachment
+Attachment [trac_6500-polynomial_docstrings_2.patch](tarball://root/attachments/some-uuid/ticket6500/trac_6500-polynomial_docstrings_2.patch) by davidloeffler created at 2009-07-10 14:32:18
 
 Here's another patch in the same vein, covering multivariate polynomial rings.
 
@@ -153,7 +153,7 @@ I don't think my patch needs much review, but I'll keep this marked as "needs re
 archive/issue_comments_052874.json:
 ```json
 {
-    "body": "Attachment\n\napply over previous patches",
+    "body": "Attachment [trac_6500_ref.patch](tarball://root/attachments/some-uuid/ticket6500/trac_6500_ref.patch) by jhpalmieri created at 2009-07-20 02:33:37\n\napply over previous patches",
     "created_at": "2009-07-20T02:33:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6500",
     "type": "issue_comment",
@@ -162,7 +162,7 @@ archive/issue_comments_052874.json:
 }
 ```
 
-Attachment
+Attachment [trac_6500_ref.patch](tarball://root/attachments/some-uuid/ticket6500/trac_6500_ref.patch) by jhpalmieri created at 2009-07-20 02:33:37
 
 apply over previous patches
 

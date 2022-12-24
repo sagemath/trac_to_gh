@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7452
 archive/issue_comments_062760.json:
 ```json
 {
-    "body": "Attachment\n\nMake debugging instructions copy/pastable",
+    "body": "Attachment [trac7452.patch](tarball://root/attachments/some-uuid/ticket7452/trac7452.patch) by iandrus created at 2009-11-13 17:28:36\n\nMake debugging instructions copy/pastable",
     "created_at": "2009-11-13T17:28:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7452",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_062760.json:
 }
 ```
 
-Attachment
+Attachment [trac7452.patch](tarball://root/attachments/some-uuid/ticket7452/trac7452.patch) by iandrus created at 2009-11-13 17:28:36
 
 Make debugging instructions copy/pastable
 
@@ -123,7 +123,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_062765.json:
 ```json
 {
-    "body": "Attachment\n\nbased on Sage 4.3.alpha1",
+    "body": "Attachment [trac_7452-rebased.patch](tarball://root/attachments/some-uuid/ticket7452/trac_7452-rebased.patch) by mvngu created at 2009-12-08 22:08:26\n\nbased on Sage 4.3.alpha1",
     "created_at": "2009-12-08T22:08:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7452",
     "type": "issue_comment",
@@ -132,7 +132,7 @@ archive/issue_comments_062765.json:
 }
 ```
 
-Attachment
+Attachment [trac_7452-rebased.patch](tarball://root/attachments/some-uuid/ticket7452/trac_7452-rebased.patch) by mvngu created at 2009-12-08 22:08:26
 
 based on Sage 4.3.alpha1
 

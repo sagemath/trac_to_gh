@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3416
 archive/issue_comments_023949.json:
 ```json
 {
-    "body": "Attachment\n\nSince y^2 = quartic is also genus 1, I'm curious if there is a corresponding function planned to compute the Weierstrass form of a quartic hyperelliptic.",
+    "body": "Attachment [weier.patch](tarball://root/attachments/some-uuid/ticket3416/weier.patch) by wdj created at 2008-06-13 17:04:27\n\nSince y^2 = quartic is also genus 1, I'm curious if there is a corresponding function planned to compute the Weierstrass form of a quartic hyperelliptic.",
     "created_at": "2008-06-13T17:04:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3416",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_023949.json:
 }
 ```
 
-Attachment
+Attachment [weier.patch](tarball://root/attachments/some-uuid/ticket3416/weier.patch) by wdj created at 2008-06-13 17:04:27
 
 Since y^2 = quartic is also genus 1, I'm curious if there is a corresponding function planned to compute the Weierstrass form of a quartic hyperelliptic.
 
@@ -95,7 +95,7 @@ Changing keywords from "nagell, weierstrass, cubic, elliptic curves" to "nagell,
 archive/issue_comments_023952.json:
 ```json
 {
-    "body": "Attachment\n\nAlgorithm 7.4.10 of GTM 138",
+    "body": "Attachment [Weierstrass.sage](tarball://root/attachments/some-uuid/ticket3416/Weierstrass.sage) by syazdani created at 2009-04-30 22:06:58\n\nAlgorithm 7.4.10 of GTM 138",
     "created_at": "2009-04-30T22:06:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3416",
     "type": "issue_comment",
@@ -104,7 +104,7 @@ archive/issue_comments_023952.json:
 }
 ```
 
-Attachment
+Attachment [Weierstrass.sage](tarball://root/attachments/some-uuid/ticket3416/Weierstrass.sage) by syazdani created at 2009-04-30 22:06:58
 
 Algorithm 7.4.10 of GTM 138
 
@@ -278,7 +278,7 @@ If I have more time I will try some quartics and see whether I can get the nicer
 archive/issue_comments_023959.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [14532.patch](tarball://root/attachments/some-uuid/ticket3416/14532.patch) by Niels created at 2010-10-24 13:50:05",
     "created_at": "2010-10-24T13:50:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3416",
     "type": "issue_comment",
@@ -287,7 +287,7 @@ archive/issue_comments_023959.json:
 }
 ```
 
-Attachment
+Attachment [14532.patch](tarball://root/attachments/some-uuid/ticket3416/14532.patch) by Niels created at 2010-10-24 13:50:05
 
 
 
@@ -314,7 +314,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_023961.json:
 ```json
 {
-    "body": "Attachment\n\nHere is my first ever Sage patch: 14532.patch. It creates an elliptic curve from any homogeneous cubic. The cubic is transformed to Weierstrass, and birational maps between the equations are given. The case y<sup>2</sup> = quartic is not covered.\n\nThe patch is based upon Sage 4.4.4.\n\nThe used transformations are from Section 4.4 of the course notes: \"G1CRPC: Rational Points on Curves\", which I uploaded as cnotes.pdf.\n\nPlease review my patch, and provide extensive feedback.",
+    "body": "Attachment [cnotes.pdf](tarball://root/attachments/some-uuid/ticket3416/cnotes.pdf) by Niels created at 2010-10-24 13:56:58\n\nHere is my first ever Sage patch: 14532.patch. It creates an elliptic curve from any homogeneous cubic. The cubic is transformed to Weierstrass, and birational maps between the equations are given. The case y<sup>2</sup> = quartic is not covered.\n\nThe patch is based upon Sage 4.4.4.\n\nThe used transformations are from Section 4.4 of the course notes: \"G1CRPC: Rational Points on Curves\", which I uploaded as cnotes.pdf.\n\nPlease review my patch, and provide extensive feedback.",
     "created_at": "2010-10-24T13:56:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3416",
     "type": "issue_comment",
@@ -323,7 +323,7 @@ archive/issue_comments_023961.json:
 }
 ```
 
-Attachment
+Attachment [cnotes.pdf](tarball://root/attachments/some-uuid/ticket3416/cnotes.pdf) by Niels created at 2010-10-24 13:56:58
 
 Here is my first ever Sage patch: 14532.patch. It creates an elliptic curve from any homogeneous cubic. The cubic is transformed to Weierstrass, and birational maps between the equations are given. The case y<sup>2</sup> = quartic is not covered.
 
@@ -552,7 +552,7 @@ I suggest that I include the morphisms as an optional tuple of strings. Does any
 archive/issue_comments_023969.json:
 ```json
 {
-    "body": "Attachment\n\npatch_2011_04_26",
+    "body": "Attachment [trac_3416_elliptic_curve_from_cubic.patch](tarball://root/attachments/some-uuid/ticket3416/trac_3416_elliptic_curve_from_cubic.patch) by Niels created at 2011-04-26 08:09:53\n\npatch_2011_04_26",
     "created_at": "2011-04-26T08:09:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3416",
     "type": "issue_comment",
@@ -561,7 +561,7 @@ archive/issue_comments_023969.json:
 }
 ```
 
-Attachment
+Attachment [trac_3416_elliptic_curve_from_cubic.patch](tarball://root/attachments/some-uuid/ticket3416/trac_3416_elliptic_curve_from_cubic.patch) by Niels created at 2011-04-26 08:09:53
 
 patch_2011_04_26
 
@@ -648,7 +648,7 @@ I think I spotted a minor error in my patch. When P is not a flex, the program f
 archive/issue_comments_023974.json:
 ```json
 {
-    "body": "Attachment\n\npatch_2011_04_27 with the fix for when P2 is a flex",
+    "body": "Attachment [trac_3416_elliptic_curve_from_cubic2.patch](tarball://root/attachments/some-uuid/ticket3416/trac_3416_elliptic_curve_from_cubic2.patch) by Niels created at 2011-04-27 09:47:44\n\npatch_2011_04_27 with the fix for when P2 is a flex",
     "created_at": "2011-04-27T09:47:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3416",
     "type": "issue_comment",
@@ -657,7 +657,7 @@ archive/issue_comments_023974.json:
 }
 ```
 
-Attachment
+Attachment [trac_3416_elliptic_curve_from_cubic2.patch](tarball://root/attachments/some-uuid/ticket3416/trac_3416_elliptic_curve_from_cubic2.patch) by Niels created at 2011-04-27 09:47:44
 
 patch_2011_04_27 with the fix for when P2 is a flex
 
@@ -704,7 +704,7 @@ patch_2011_04_29 with additional fix
 archive/issue_comments_023977.json:
 ```json
 {
-    "body": "Attachment\n\nThe documentation is also up now. Comments on the documentation are welcome.\n\nPlease review my patch (trac_3416_elliptic_curve_from_cubic3.patch), and suggest any improvements it may need. The documentation describes how the patch works.",
+    "body": "Attachment [trac_3416_elliptic_curve_from_cubic3.patch](tarball://root/attachments/some-uuid/ticket3416/trac_3416_elliptic_curve_from_cubic3.patch) by Niels created at 2011-04-29 10:41:38\n\nThe documentation is also up now. Comments on the documentation are welcome.\n\nPlease review my patch (trac_3416_elliptic_curve_from_cubic3.patch), and suggest any improvements it may need. The documentation describes how the patch works.",
     "created_at": "2011-04-29T10:41:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3416",
     "type": "issue_comment",
@@ -713,7 +713,7 @@ archive/issue_comments_023977.json:
 }
 ```
 
-Attachment
+Attachment [trac_3416_elliptic_curve_from_cubic3.patch](tarball://root/attachments/some-uuid/ticket3416/trac_3416_elliptic_curve_from_cubic3.patch) by Niels created at 2011-04-29 10:41:38
 
 The documentation is also up now. Comments on the documentation are welcome.
 
@@ -780,7 +780,7 @@ Changing component from number theory to elliptic curves.
 archive/issue_comments_023981.json:
 ```json
 {
-    "body": "Attachment\n\nDid I understand correctly that one should apply trac_3416_elliptic_curve_from_cubic3.patch only?",
+    "body": "Attachment [cubic_to_weierstrass_documentation.pdf](tarball://root/attachments/some-uuid/ticket3416/cubic_to_weierstrass_documentation.pdf) by mstreng created at 2011-07-04 21:56:20\n\nDid I understand correctly that one should apply trac_3416_elliptic_curve_from_cubic3.patch only?",
     "created_at": "2011-07-04T21:56:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3416",
     "type": "issue_comment",
@@ -789,7 +789,7 @@ archive/issue_comments_023981.json:
 }
 ```
 
-Attachment
+Attachment [cubic_to_weierstrass_documentation.pdf](tarball://root/attachments/some-uuid/ticket3416/cubic_to_weierstrass_documentation.pdf) by mstreng created at 2011-07-04 21:56:20
 
 Did I understand correctly that one should apply trac_3416_elliptic_curve_from_cubic3.patch only?
 
@@ -2047,7 +2047,7 @@ This is precisely what `Jacobian()` does, for the record.
 archive/issue_comments_024028.json:
 ```json
 {
-    "body": "Attachment\n\nImproved patch",
+    "body": "Attachment [trac_3416_jacobians.patch](tarball://root/attachments/some-uuid/ticket3416/trac_3416_jacobians.patch) by vbraun created at 2013-02-24 03:01:30\n\nImproved patch",
     "created_at": "2013-02-24T03:01:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3416",
     "type": "issue_comment",
@@ -2056,7 +2056,7 @@ archive/issue_comments_024028.json:
 }
 ```
 
-Attachment
+Attachment [trac_3416_jacobians.patch](tarball://root/attachments/some-uuid/ticket3416/trac_3416_jacobians.patch) by vbraun created at 2013-02-24 03:01:30
 
 Improved patch
 
@@ -2087,7 +2087,7 @@ I've also removed any attempt at explaining what a genus-one curve is in the jac
 archive/issue_comments_024030.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated patch",
+    "body": "Attachment [trac_3416_elliptic_curve_from_cubic_vb.patch](tarball://root/attachments/some-uuid/ticket3416/trac_3416_elliptic_curve_from_cubic_vb.patch) by vbraun created at 2013-05-17 17:34:14\n\nUpdated patch",
     "created_at": "2013-05-17T17:34:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3416",
     "type": "issue_comment",
@@ -2096,7 +2096,7 @@ archive/issue_comments_024030.json:
 }
 ```
 
-Attachment
+Attachment [trac_3416_elliptic_curve_from_cubic_vb.patch](tarball://root/attachments/some-uuid/ticket3416/trac_3416_elliptic_curve_from_cubic_vb.patch) by vbraun created at 2013-05-17 17:34:14
 
 Updated patch
 
@@ -2335,7 +2335,7 @@ The `transformation` keyword argument is from #13458, which is listed as a depen
 archive/issue_comments_024037.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated patch",
+    "body": "Attachment [trac_3416_fixes.patch](tarball://root/attachments/some-uuid/ticket3416/trac_3416_fixes.patch) by vbraun created at 2013-06-26 17:04:32\n\nUpdated patch",
     "created_at": "2013-06-26T17:04:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3416",
     "type": "issue_comment",
@@ -2344,7 +2344,7 @@ archive/issue_comments_024037.json:
 }
 ```
 
-Attachment
+Attachment [trac_3416_fixes.patch](tarball://root/attachments/some-uuid/ticket3416/trac_3416_fixes.patch) by vbraun created at 2013-06-26 17:04:32
 
 Updated patch
 
@@ -2682,7 +2682,7 @@ The next function `Jacobian_magma_from_plane_curve` needs a minor fix in the las
 archive/issue_comments_024051.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated patch",
+    "body": "Attachment [trac_3416_magma.patch](tarball://root/attachments/some-uuid/ticket3416/trac_3416_magma.patch) by vbraun created at 2013-08-13 14:57:00\n\nUpdated patch",
     "created_at": "2013-08-13T14:57:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3416",
     "type": "issue_comment",
@@ -2691,7 +2691,7 @@ archive/issue_comments_024051.json:
 }
 ```
 
-Attachment
+Attachment [trac_3416_magma.patch](tarball://root/attachments/some-uuid/ticket3416/trac_3416_magma.patch) by vbraun created at 2013-08-13 14:57:00
 
 Updated patch
 

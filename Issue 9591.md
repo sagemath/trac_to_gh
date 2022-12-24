@@ -493,7 +493,7 @@ Changing priority from major to blocker.
 archive/issue_comments_092763.json:
 ```json
 {
-    "body": "Attachment\n\nComplete spkg patch (for reference)",
+    "body": "Attachment [genus2reduction-spkg.patch](tarball://root/attachments/some-uuid/ticket9591/genus2reduction-spkg.patch) by jdemeyer created at 2010-08-21 12:44:14\n\nComplete spkg patch (for reference)",
     "created_at": "2010-08-21T12:44:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9591",
     "type": "issue_comment",
@@ -502,7 +502,7 @@ archive/issue_comments_092763.json:
 }
 ```
 
-Attachment
+Attachment [genus2reduction-spkg.patch](tarball://root/attachments/some-uuid/ticket9591/genus2reduction-spkg.patch) by jdemeyer created at 2010-08-21 12:44:14
 
 Complete spkg patch (for reference)
 
@@ -628,7 +628,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_092770.json:
 ```json
 {
-    "body": "Attachment\n\nRemove `dist/`.  spkg patch.  Apply on top of \"complete\" patch.",
+    "body": "Attachment [trac_9591-g2red_remove_dist.patch](tarball://root/attachments/some-uuid/ticket9591/trac_9591-g2red_remove_dist.patch) by mpatel created at 2010-09-04 07:22:44\n\nRemove `dist/`.  spkg patch.  Apply on top of \"complete\" patch.",
     "created_at": "2010-09-04T07:22:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9591",
     "type": "issue_comment",
@@ -637,7 +637,7 @@ archive/issue_comments_092770.json:
 }
 ```
 
-Attachment
+Attachment [trac_9591-g2red_remove_dist.patch](tarball://root/attachments/some-uuid/ticket9591/trac_9591-g2red_remove_dist.patch) by mpatel created at 2010-09-04 07:22:44
 
 Remove `dist/`.  spkg patch.  Apply on top of "complete" patch.
 
@@ -749,7 +749,7 @@ Done.
 archive/issue_comments_092776.json:
 ```json
 {
-    "body": "Attachment\n\nNew complete patch including trac_9591-g2red_remove_dist.patch",
+    "body": "Attachment [genus2reduction-spkg.2.patch](tarball://root/attachments/some-uuid/ticket9591/genus2reduction-spkg.2.patch) by jdemeyer created at 2010-09-05 13:36:53\n\nNew complete patch including trac_9591-g2red_remove_dist.patch",
     "created_at": "2010-09-05T13:36:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9591",
     "type": "issue_comment",
@@ -758,7 +758,7 @@ archive/issue_comments_092776.json:
 }
 ```
 
-Attachment
+Attachment [genus2reduction-spkg.2.patch](tarball://root/attachments/some-uuid/ticket9591/genus2reduction-spkg.2.patch) by jdemeyer created at 2010-09-05 13:36:53
 
 New complete patch including trac_9591-g2red_remove_dist.patch
 

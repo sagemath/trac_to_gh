@@ -186,7 +186,7 @@ Resolution: fixed
 archive/issue_comments_040687.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5293.patch](tarball://root/attachments/some-uuid/ticket5293/5293.patch) by boothby created at 2009-02-19 20:39:45",
     "created_at": "2009-02-19T20:39:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5293",
     "type": "issue_comment",
@@ -195,7 +195,7 @@ archive/issue_comments_040687.json:
 }
 ```
 
-Attachment
+Attachment [5293.patch](tarball://root/attachments/some-uuid/ticket5293/5293.patch) by boothby created at 2009-02-19 20:39:45
 
 
 

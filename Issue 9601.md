@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9601
 archive/issue_comments_092921.json:
 ```json
 {
-    "body": "Attachment\n\nhi, i think this should be coordinated with #6456",
+    "body": "Attachment [cvxopt-0.9.p8.patch](tarball://root/attachments/some-uuid/ticket9601/cvxopt-0.9.p8.patch) by schilly created at 2010-07-27 13:53:48\n\nhi, i think this should be coordinated with #6456",
     "created_at": "2010-07-27T13:53:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9601",
     "type": "issue_comment",
@@ -43,7 +43,7 @@ archive/issue_comments_092921.json:
 }
 ```
 
-Attachment
+Attachment [cvxopt-0.9.p8.patch](tarball://root/attachments/some-uuid/ticket9601/cvxopt-0.9.p8.patch) by schilly created at 2010-07-27 13:53:48
 
 hi, i think this should be coordinated with #6456
 

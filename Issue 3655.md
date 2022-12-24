@@ -65,7 +65,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3655
 archive/issue_comments_025842.json:
 ```json
 {
-    "body": "Attachment\n\nbased on 3.0.4",
+    "body": "Attachment [10058.patch](tarball://root/attachments/some-uuid/ticket3655/10058.patch) by wdj created at 2008-07-15 10:48:19\n\nbased on 3.0.4",
     "created_at": "2008-07-15T10:48:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3655",
     "type": "issue_comment",
@@ -74,7 +74,7 @@ archive/issue_comments_025842.json:
 }
 ```
 
-Attachment
+Attachment [10058.patch](tarball://root/attachments/some-uuid/ticket3655/10058.patch) by wdj created at 2008-07-15 10:48:19
 
 based on 3.0.4
 
@@ -103,7 +103,7 @@ I added a patch implementing the suggestion above. It is just a few lines. Passe
 archive/issue_comments_025844.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3655.patch](tarball://root/attachments/some-uuid/ticket3655/trac_3655.patch) by mhansen created at 2008-08-26 22:12:14",
     "created_at": "2008-08-26T22:12:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3655",
     "type": "issue_comment",
@@ -112,7 +112,7 @@ archive/issue_comments_025844.json:
 }
 ```
 
-Attachment
+Attachment [trac_3655.patch](tarball://root/attachments/some-uuid/ticket3655/trac_3655.patch) by mhansen created at 2008-08-26 22:12:14
 
 
 

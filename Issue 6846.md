@@ -70,7 +70,7 @@ fix docstring warnings
 archive/issue_comments_056463.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch `trac_6846-docstring.patch` should fix the reported warnings. It depends on #6751.",
+    "body": "Attachment [trac_6846-docstring.patch](tarball://root/attachments/some-uuid/ticket6846/trac_6846-docstring.patch) by mvngu created at 2009-08-30 09:54:26\n\nThe patch `trac_6846-docstring.patch` should fix the reported warnings. It depends on #6751.",
     "created_at": "2009-08-30T09:54:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6846",
     "type": "issue_comment",
@@ -79,7 +79,7 @@ archive/issue_comments_056463.json:
 }
 ```
 
-Attachment
+Attachment [trac_6846-docstring.patch](tarball://root/attachments/some-uuid/ticket6846/trac_6846-docstring.patch) by mvngu created at 2009-08-30 09:54:26
 
 The patch `trac_6846-docstring.patch` should fix the reported warnings. It depends on #6751.
 

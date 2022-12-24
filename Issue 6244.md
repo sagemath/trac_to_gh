@@ -113,7 +113,7 @@ Set assignee to burcin.
 archive/issue_comments_049867.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6244-conjugate.patch](tarball://root/attachments/some-uuid/ticket6244/trac_6244-conjugate.patch) by burcin created at 2009-06-14 20:52:43",
     "created_at": "2009-06-14T20:52:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6244",
     "type": "issue_comment",
@@ -122,7 +122,7 @@ archive/issue_comments_049867.json:
 }
 ```
 
-Attachment
+Attachment [trac_6244-conjugate.patch](tarball://root/attachments/some-uuid/ticket6244/trac_6244-conjugate.patch) by burcin created at 2009-06-14 20:52:43
 
 
 

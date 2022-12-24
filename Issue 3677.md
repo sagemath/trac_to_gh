@@ -75,7 +75,7 @@ Changing status from new to assigned.
 archive/issue_comments_026039.json:
 ```json
 {
-    "body": "Attachment\n\nThis fixes this issue for sage -tp but not for sage -t.",
+    "body": "Attachment [trac_3677_bin.patch](tarball://root/attachments/some-uuid/ticket3677/trac_3677_bin.patch) by gfurnish created at 2008-12-11 15:17:28\n\nThis fixes this issue for sage -tp but not for sage -t.",
     "created_at": "2008-12-11T15:17:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3677",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_026039.json:
 }
 ```
 
-Attachment
+Attachment [trac_3677_bin.patch](tarball://root/attachments/some-uuid/ticket3677/trac_3677_bin.patch) by gfurnish created at 2008-12-11 15:17:28
 
 This fixes this issue for sage -tp but not for sage -t.
 

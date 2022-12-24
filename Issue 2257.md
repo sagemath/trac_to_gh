@@ -135,7 +135,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2257
 archive/issue_comments_014944.json:
 ```json
 {
-    "body": "Attachment\n\nI agree entirely with the above analysis, except that I don't think it's a 32/64 problem (my machine is 32 bit but gave the generator -w).\n\nI give the patch a positive review now so 2.10.2 can hit the streets.  For the future, doctest writers should remember to be careful when there's more than one mathematically correct output and algorithms are not always deterministic.",
+    "body": "Attachment [trac-2257.patch](tarball://root/attachments/some-uuid/ticket2257/trac-2257.patch) by cremona created at 2008-02-22 22:43:47\n\nI agree entirely with the above analysis, except that I don't think it's a 32/64 problem (my machine is 32 bit but gave the generator -w).\n\nI give the patch a positive review now so 2.10.2 can hit the streets.  For the future, doctest writers should remember to be careful when there's more than one mathematically correct output and algorithms are not always deterministic.",
     "created_at": "2008-02-22T22:43:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2257",
     "type": "issue_comment",
@@ -144,7 +144,7 @@ archive/issue_comments_014944.json:
 }
 ```
 
-Attachment
+Attachment [trac-2257.patch](tarball://root/attachments/some-uuid/ticket2257/trac-2257.patch) by cremona created at 2008-02-22 22:43:47
 
 I agree entirely with the above analysis, except that I don't think it's a 32/64 problem (my machine is 32 bit but gave the generator -w).
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6210
 archive/issue_comments_049614.json:
 ```json
 {
-    "body": "Attachment\n\nI just got bitten by this..",
+    "body": "Attachment [trac_6210_clarify_graphs_property_argument.patch](tarball://root/attachments/some-uuid/ticket6210/trac_6210_clarify_graphs_property_argument.patch) by dsm created at 2011-03-10 05:06:00\n\nI just got bitten by this..",
     "created_at": "2011-03-10T05:06:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6210",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_049614.json:
 }
 ```
 
-Attachment
+Attachment [trac_6210_clarify_graphs_property_argument.patch](tarball://root/attachments/some-uuid/ticket6210/trac_6210_clarify_graphs_property_argument.patch) by dsm created at 2011-03-10 05:06:00
 
 I just got bitten by this..
 

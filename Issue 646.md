@@ -59,7 +59,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/646
 archive/issue_comments_003352.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [itanium-atan2.patch](tarball://root/attachments/some-uuid/ticket646/itanium-atan2.patch) by robertwb created at 2007-09-13 05:43:35",
     "created_at": "2007-09-13T05:43:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/646",
     "type": "issue_comment",
@@ -68,7 +68,7 @@ archive/issue_comments_003352.json:
 }
 ```
 
-Attachment
+Attachment [itanium-atan2.patch](tarball://root/attachments/some-uuid/ticket646/itanium-atan2.patch) by robertwb created at 2007-09-13 05:43:35
 
 
 
@@ -231,7 +231,7 @@ Changing status from closed to reopened.
 archive/issue_comments_003360.json:
 ```json
 {
-    "body": "Attachment\n\nHopefully this is not fixed (it's in 2.8.4.2)",
+    "body": "Attachment [better-plot3d-rot.patch](tarball://root/attachments/some-uuid/ticket646/better-plot3d-rot.patch) by was created at 2007-09-13 18:20:18\n\nHopefully this is not fixed (it's in 2.8.4.2)",
     "created_at": "2007-09-13T18:20:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/646",
     "type": "issue_comment",
@@ -240,7 +240,7 @@ archive/issue_comments_003360.json:
 }
 ```
 
-Attachment
+Attachment [better-plot3d-rot.patch](tarball://root/attachments/some-uuid/ticket646/better-plot3d-rot.patch) by was created at 2007-09-13 18:20:18
 
 Hopefully this is not fixed (it's in 2.8.4.2)
 

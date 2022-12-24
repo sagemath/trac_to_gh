@@ -126,7 +126,7 @@ I think this second thing is a separate issue. I created ticket #5499 to address
 archive/issue_comments_038659.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5076.patch](tarball://root/attachments/some-uuid/ticket5076/trac_5076.patch) by roed created at 2009-03-17 05:31:50",
     "created_at": "2009-03-17T05:31:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5076",
     "type": "issue_comment",
@@ -135,7 +135,7 @@ archive/issue_comments_038659.json:
 }
 ```
 
-Attachment
+Attachment [trac_5076.patch](tarball://root/attachments/some-uuid/ticket5076/trac_5076.patch) by roed created at 2009-03-17 05:31:50
 
 
 

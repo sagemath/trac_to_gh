@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5163
 archive/issue_comments_039568.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5163-jsmath-extensions-published.patch](tarball://root/attachments/some-uuid/ticket5163/trac_5163-jsmath-extensions-published.patch) by jason created at 2009-02-03 05:10:45",
     "created_at": "2009-02-03T05:10:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5163",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_039568.json:
 }
 ```
 
-Attachment
+Attachment [trac_5163-jsmath-extensions-published.patch](tarball://root/attachments/some-uuid/ticket5163/trac_5163-jsmath-extensions-published.patch) by jason created at 2009-02-03 05:10:45
 
 
 

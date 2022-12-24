@@ -217,7 +217,7 @@ Changing assignee from was to boothby.
 archive/issue_comments_070974.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8096-new_matrix.patch](tarball://root/attachments/some-uuid/ticket8096/8096-new_matrix.patch) by boothby created at 2010-01-28 01:03:44",
     "created_at": "2010-01-28T01:03:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
@@ -226,7 +226,7 @@ archive/issue_comments_070974.json:
 }
 ```
 
-Attachment
+Attachment [8096-new_matrix.patch](tarball://root/attachments/some-uuid/ticket8096/8096-new_matrix.patch) by boothby created at 2010-01-28 01:03:44
 
 
 
@@ -475,7 +475,7 @@ I complained, and things did improve: hash and copy is alright. But with the abo
 archive/issue_comments_070982.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of previous",
+    "body": "Attachment [8096-zero-matrix.patch](tarball://root/attachments/some-uuid/ticket8096/8096-zero-matrix.patch) by robertwb created at 2010-01-31 13:05:19\n\napply on top of previous",
     "created_at": "2010-01-31T13:05:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
@@ -484,7 +484,7 @@ archive/issue_comments_070982.json:
 }
 ```
 
-Attachment
+Attachment [8096-zero-matrix.patch](tarball://root/attachments/some-uuid/ticket8096/8096-zero-matrix.patch) by robertwb created at 2010-01-31 13:05:19
 
 apply on top of previous
 
@@ -1891,7 +1891,7 @@ Replaces the previous patches, rebased rel sage-5.0.beta7
 archive/issue_comments_071029.json:
 ```json
 {
-    "body": "Attachment\n\nArrgh! There was another trailing whitespace in the patch!\n\nIt should now be fixed.\n\nBy the way: Am I entitled to review the patch, even though rebasing the two original patches has not been totally mechanic? I still think that Tom and Robert are the authors, so that I could be reviewer. Agreed?",
+    "body": "Attachment [trac8096_speedup_matrix_parent.patch](tarball://root/attachments/some-uuid/ticket8096/trac8096_speedup_matrix_parent.patch) by SimonKing created at 2012-03-11 14:30:17\n\nArrgh! There was another trailing whitespace in the patch!\n\nIt should now be fixed.\n\nBy the way: Am I entitled to review the patch, even though rebasing the two original patches has not been totally mechanic? I still think that Tom and Robert are the authors, so that I could be reviewer. Agreed?",
     "created_at": "2012-03-11T14:30:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
@@ -1900,7 +1900,7 @@ archive/issue_comments_071029.json:
 }
 ```
 
-Attachment
+Attachment [trac8096_speedup_matrix_parent.patch](tarball://root/attachments/some-uuid/ticket8096/trac8096_speedup_matrix_parent.patch) by SimonKing created at 2012-03-11 14:30:17
 
 Arrgh! There was another trailing whitespace in the patch!
 

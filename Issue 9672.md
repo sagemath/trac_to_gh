@@ -36,7 +36,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9672
 archive/issue_comments_093985.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9672-genus_improvements.patch](tarball://root/attachments/some-uuid/ticket9672/9672-genus_improvements.patch) by boothby created at 2010-08-05 14:45:52",
     "created_at": "2010-08-05T14:45:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9672",
     "type": "issue_comment",
@@ -45,7 +45,7 @@ archive/issue_comments_093985.json:
 }
 ```
 
-Attachment
+Attachment [9672-genus_improvements.patch](tarball://root/attachments/some-uuid/ticket9672/9672-genus_improvements.patch) by boothby created at 2010-08-05 14:45:52
 
 
 

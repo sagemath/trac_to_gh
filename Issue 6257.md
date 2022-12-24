@@ -49,7 +49,7 @@ Based on 4.0.rc0 but should work with 4.0.1
 archive/issue_comments_049977.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch also addresses several very minor documentation issues in the same file.",
+    "body": "Attachment [trac_6257.patch](tarball://root/attachments/some-uuid/ticket6257/trac_6257.patch) by kcrisman created at 2009-06-10 13:38:28\n\nThis patch also addresses several very minor documentation issues in the same file.",
     "created_at": "2009-06-10T13:38:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6257",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_049977.json:
 }
 ```
 
-Attachment
+Attachment [trac_6257.patch](tarball://root/attachments/some-uuid/ticket6257/trac_6257.patch) by kcrisman created at 2009-06-10 13:38:28
 
 This patch also addresses several very minor documentation issues in the same file.
 

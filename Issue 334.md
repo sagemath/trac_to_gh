@@ -50,7 +50,7 @@ Changing component from algebraic geometry to user interface.
 archive/issue_comments_001644.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [334.patch](tarball://root/attachments/some-uuid/ticket334/334.patch) by mhansen created at 2007-09-06 21:48:39",
     "created_at": "2007-09-06T21:48:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/334",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_001644.json:
 }
 ```
 
-Attachment
+Attachment [334.patch](tarball://root/attachments/some-uuid/ticket334/334.patch) by mhansen created at 2007-09-06 21:48:39
 
 
 

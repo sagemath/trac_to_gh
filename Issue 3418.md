@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3418
 archive/issue_comments_024060.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [promotion_reflection_for_trac.patch](tarball://root/attachments/some-uuid/ticket3418/promotion_reflection_for_trac.patch) by aschilling created at 2008-06-13 18:32:22",
     "created_at": "2008-06-13T18:32:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3418",
     "type": "issue_comment",
@@ -49,7 +49,7 @@ archive/issue_comments_024060.json:
 }
 ```
 
-Attachment
+Attachment [promotion_reflection_for_trac.patch](tarball://root/attachments/some-uuid/ticket3418/promotion_reflection_for_trac.patch) by aschilling created at 2008-06-13 18:32:22
 
 
 
@@ -129,7 +129,7 @@ fixed the issues that Mike raised
 archive/issue_comments_024064.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [promotion_reflection-3418-submitted.patch](tarball://root/attachments/some-uuid/ticket3418/promotion_reflection-3418-submitted.patch) by mhansen created at 2008-06-13 22:37:32",
     "created_at": "2008-06-13T22:37:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3418",
     "type": "issue_comment",
@@ -138,7 +138,7 @@ archive/issue_comments_024064.json:
 }
 ```
 
-Attachment
+Attachment [promotion_reflection-3418-submitted.patch](tarball://root/attachments/some-uuid/ticket3418/promotion_reflection-3418-submitted.patch) by mhansen created at 2008-06-13 22:37:32
 
 
 

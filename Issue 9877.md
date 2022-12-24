@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9878
 archive/issue_comments_097790.json:
 ```json
 {
-    "body": "Attachment\n\nWith the new pynac package at #9201, we have:\n\n\n```\nsage: zeta(1)\nInfinity\n```\n\n\nattachment:trac_9878-zeta_infinity.patch adds doctests for this change.\n\nThe pynac package includes patches for #9394, #9834, #9879, #9881, #9900 as well as this ticket. See the ticket description of #9901 for the list (and order) of patches associated to the new version.",
+    "body": "Attachment [trac_9878-zeta_infinity.patch](tarball://root/attachments/some-uuid/ticket9878/trac_9878-zeta_infinity.patch) by burcin created at 2010-09-12 12:15:07\n\nWith the new pynac package at #9201, we have:\n\n\n```\nsage: zeta(1)\nInfinity\n```\n\n\nattachment:trac_9878-zeta_infinity.patch adds doctests for this change.\n\nThe pynac package includes patches for #9394, #9834, #9879, #9881, #9900 as well as this ticket. See the ticket description of #9901 for the list (and order) of patches associated to the new version.",
     "created_at": "2010-09-12T12:15:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9877",
     "type": "issue_comment",
@@ -53,7 +53,7 @@ archive/issue_comments_097790.json:
 }
 ```
 
-Attachment
+Attachment [trac_9878-zeta_infinity.patch](tarball://root/attachments/some-uuid/ticket9878/trac_9878-zeta_infinity.patch) by burcin created at 2010-09-12 12:15:07
 
 With the new pynac package at #9201, we have:
 

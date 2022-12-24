@@ -120,7 +120,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_023819.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Li(x).patch](tarball://root/attachments/some-uuid/ticket3401/Li(x).patch) by myurko created at 2009-10-29 23:21:47",
     "created_at": "2009-10-29T23:21:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
@@ -129,7 +129,7 @@ archive/issue_comments_023819.json:
 }
 ```
 
-Attachment
+Attachment [Li(x).patch](tarball://root/attachments/some-uuid/ticket3401/Li(x).patch) by myurko created at 2009-10-29 23:21:47
 
 
 
@@ -138,7 +138,7 @@ Attachment
 archive/issue_comments_023820.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Lix_2.patch](tarball://root/attachments/some-uuid/ticket3401/Lix_2.patch) by myurko created at 2009-10-29 23:21:56",
     "created_at": "2009-10-29T23:21:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
@@ -147,7 +147,7 @@ archive/issue_comments_023820.json:
 }
 ```
 
-Attachment
+Attachment [Lix_2.patch](tarball://root/attachments/some-uuid/ticket3401/Lix_2.patch) by myurko created at 2009-10-29 23:21:56
 
 
 
@@ -174,7 +174,7 @@ Changing status from new to needs_review.
 archive/issue_comments_023822.json:
 ```json
 {
-    "body": "Attachment\n\nSorry in advance to the reviewer and release manager, but I couldn't figure out how to flatten the patches without applying them.",
+    "body": "Attachment [Lix_3.patch](tarball://root/attachments/some-uuid/ticket3401/Lix_3.patch) by myurko created at 2009-10-29 23:23:52\n\nSorry in advance to the reviewer and release manager, but I couldn't figure out how to flatten the patches without applying them.",
     "created_at": "2009-10-29T23:23:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
@@ -183,7 +183,7 @@ archive/issue_comments_023822.json:
 }
 ```
 
-Attachment
+Attachment [Lix_3.patch](tarball://root/attachments/some-uuid/ticket3401/Lix_3.patch) by myurko created at 2009-10-29 23:23:52
 
 Sorry in advance to the reviewer and release manager, but I couldn't figure out how to flatten the patches without applying them.
 
@@ -269,7 +269,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_023826.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3401.patch](tarball://root/attachments/some-uuid/ticket3401/trac_3401.patch) by mhansen created at 2010-01-16 17:57:25",
     "created_at": "2010-01-16T17:57:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
@@ -278,7 +278,7 @@ archive/issue_comments_023826.json:
 }
 ```
 
-Attachment
+Attachment [trac_3401.patch](tarball://root/attachments/some-uuid/ticket3401/trac_3401.patch) by mhansen created at 2010-01-16 17:57:25
 
 
 
@@ -323,7 +323,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_023829.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good - sometimes slower, sometimes faster, but it's much better to have the complex functionality than worry about the rest.  I removed an auxiliary function which only existed to allow the previous implementation.  Positive review!",
+    "body": "Attachment [trac_3401-reviewed.patch](tarball://root/attachments/some-uuid/ticket3401/trac_3401-reviewed.patch) by kcrisman created at 2010-01-18 16:48:18\n\nLooks good - sometimes slower, sometimes faster, but it's much better to have the complex functionality than worry about the rest.  I removed an auxiliary function which only existed to allow the previous implementation.  Positive review!",
     "created_at": "2010-01-18T16:48:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
@@ -332,7 +332,7 @@ archive/issue_comments_023829.json:
 }
 ```
 
-Attachment
+Attachment [trac_3401-reviewed.patch](tarball://root/attachments/some-uuid/ticket3401/trac_3401-reviewed.patch) by kcrisman created at 2010-01-18 16:48:18
 
 Looks good - sometimes slower, sometimes faster, but it's much better to have the complex functionality than worry about the rest.  I removed an auxiliary function which only existed to allow the previous implementation.  Positive review!
 
@@ -576,7 +576,7 @@ I'm changing this to make the (offset) Li symbolic and to work with complex inpu
 archive/issue_comments_023841.json:
 ```json
 {
-    "body": "Attachment\n\nSymbolic Li",
+    "body": "Attachment [trac_3401_Li.patch](tarball://root/attachments/some-uuid/ticket3401/trac_3401_Li.patch) by martinx created at 2012-07-28 21:29:32\n\nSymbolic Li",
     "created_at": "2012-07-28T21:29:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
@@ -585,7 +585,7 @@ archive/issue_comments_023841.json:
 }
 ```
 
-Attachment
+Attachment [trac_3401_Li.patch](tarball://root/attachments/some-uuid/ticket3401/trac_3401_Li.patch) by martinx created at 2012-07-28 21:29:32
 
 Symbolic Li
 
@@ -659,7 +659,7 @@ I wonder if we really need three aliases at the top level for this function. Hav
 archive/issue_comments_023845.json:
 ```json
 {
-    "body": "Attachment\n\nreviewer patch",
+    "body": "Attachment [trac_3401_review.patch](tarball://root/attachments/some-uuid/ticket3401/trac_3401_review.patch) by benjaminfjones created at 2012-08-03 20:43:33\n\nreviewer patch",
     "created_at": "2012-08-03T20:43:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
@@ -668,7 +668,7 @@ archive/issue_comments_023845.json:
 }
 ```
 
-Attachment
+Attachment [trac_3401_review.patch](tarball://root/attachments/some-uuid/ticket3401/trac_3401_review.patch) by benjaminfjones created at 2012-08-03 20:43:33
 
 reviewer patch
 
@@ -1096,7 +1096,7 @@ Revised Li including reviewer patch
 archive/issue_comments_023858.json:
 ```json
 {
-    "body": "Attachment\n\nI think v2 addresses all comments made so far and includes reviewer patch.  ptestlong passes I think;  I had some issues with sagedoc.py but that now passes all tests.  Too tired to run ptestlong yet again...........",
+    "body": "Attachment [trac_3401.v2.patch](tarball://root/attachments/some-uuid/ticket3401/trac_3401.v2.patch) by martinx created at 2012-08-05 01:02:46\n\nI think v2 addresses all comments made so far and includes reviewer patch.  ptestlong passes I think;  I had some issues with sagedoc.py but that now passes all tests.  Too tired to run ptestlong yet again...........",
     "created_at": "2012-08-05T01:02:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
@@ -1105,7 +1105,7 @@ archive/issue_comments_023858.json:
 }
 ```
 
-Attachment
+Attachment [trac_3401.v2.patch](tarball://root/attachments/some-uuid/ticket3401/trac_3401.v2.patch) by martinx created at 2012-08-05 01:02:46
 
 I think v2 addresses all comments made so far and includes reviewer patch.  ptestlong passes I think;  I had some issues with sagedoc.py but that now passes all tests.  Too tired to run ptestlong yet again...........
 

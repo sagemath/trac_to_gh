@@ -55,7 +55,7 @@ Changing type from enhancement to defect.
 archive/issue_comments_090537.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9448.patch](tarball://root/attachments/some-uuid/ticket9448/9448.patch) by jdemeyer created at 2010-11-12 21:23:32",
     "created_at": "2010-11-12T21:23:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9448",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_090537.json:
 }
 ```
 
-Attachment
+Attachment [9448.patch](tarball://root/attachments/some-uuid/ticket9448/9448.patch) by jdemeyer created at 2010-11-12 21:23:32
 
 
 
@@ -127,7 +127,7 @@ Changing status from new to needs_review.
 archive/issue_comments_090541.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-9448_reviewer.patch](tarball://root/attachments/some-uuid/ticket9448/trac-9448_reviewer.patch) by mvngu created at 2010-11-13 08:39:38",
     "created_at": "2010-11-13T08:39:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9448",
     "type": "issue_comment",
@@ -136,7 +136,7 @@ archive/issue_comments_090541.json:
 }
 ```
 
-Attachment
+Attachment [trac-9448_reviewer.patch](tarball://root/attachments/some-uuid/ticket9448/trac-9448_reviewer.patch) by mvngu created at 2010-11-13 08:39:38
 
 
 

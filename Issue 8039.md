@@ -231,7 +231,7 @@ Dave
 archive/issue_comments_070248.json:
 ```json
 {
-    "body": "Attachment\n\nMostly done as you wrote above.\n\nReported upstream:\n[https://sourceforge.net/tracker/?func=detail&aid=2941029&group_id=23725&atid=379483](https://sourceforge.net/tracker/?func=detail&aid=2941029&group_id=23725&atid=379483)\n\nJaap",
+    "body": "Attachment [atlas-3.8.3.p11.patch](tarball://root/attachments/some-uuid/ticket8039/atlas-3.8.3.p11.patch) by jsp created at 2010-01-27 15:02:55\n\nMostly done as you wrote above.\n\nReported upstream:\n[https://sourceforge.net/tracker/?func=detail&aid=2941029&group_id=23725&atid=379483](https://sourceforge.net/tracker/?func=detail&aid=2941029&group_id=23725&atid=379483)\n\nJaap",
     "created_at": "2010-01-27T15:02:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8039",
     "type": "issue_comment",
@@ -240,7 +240,7 @@ archive/issue_comments_070248.json:
 }
 ```
 
-Attachment
+Attachment [atlas-3.8.3.p11.patch](tarball://root/attachments/some-uuid/ticket8039/atlas-3.8.3.p11.patch) by jsp created at 2010-01-27 15:02:55
 
 Mostly done as you wrote above.
 
@@ -609,7 +609,7 @@ Yes, I've already those.
 archive/issue_comments_070264.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated patch",
+    "body": "Attachment [atlas-3.8.3.p12.patch](tarball://root/attachments/some-uuid/ticket8039/atlas-3.8.3.p12.patch) by jsp created at 2010-02-22 21:39:10\n\nUpdated patch",
     "created_at": "2010-02-22T21:39:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8039",
     "type": "issue_comment",
@@ -618,7 +618,7 @@ archive/issue_comments_070264.json:
 }
 ```
 
-Attachment
+Attachment [atlas-3.8.3.p12.patch](tarball://root/attachments/some-uuid/ticket8039/atlas-3.8.3.p12.patch) by jsp created at 2010-02-22 21:39:10
 
 Updated patch
 

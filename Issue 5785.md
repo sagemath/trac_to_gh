@@ -123,7 +123,7 @@ Does #5782 fix this?
 archive/issue_comments_045284.json:
 ```json
 {
-    "body": "Attachment\n\nAdded a doctest.",
+    "body": "Attachment [5785-cdf-norm.patch](tarball://root/attachments/some-uuid/ticket5785/5785-cdf-norm.patch) by robertwb created at 2009-04-16 19:12:23\n\nAdded a doctest.",
     "created_at": "2009-04-16T19:12:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5785",
     "type": "issue_comment",
@@ -132,7 +132,7 @@ archive/issue_comments_045284.json:
 }
 ```
 
-Attachment
+Attachment [5785-cdf-norm.patch](tarball://root/attachments/some-uuid/ticket5785/5785-cdf-norm.patch) by robertwb created at 2009-04-16 19:12:23
 
 Added a doctest.
 

@@ -60,7 +60,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_034766.json:
 ```json
 {
-    "body": "Attachment\n\nThe attachment fixes that problem, and adds some doctest examples.\n\nFor the reviewer:\n* I'm not sure divmod is the best way to test if a number is even\n* I'm not sure .abs() is the best way to force the lower bound to 0\n\nNote also that x^0 returns 1, which is not an interval (but that was already the case before\nthat patch).",
+    "body": "Attachment [11285.patch](tarball://root/attachments/some-uuid/ticket4623/11285.patch) by zimmerma created at 2009-01-22 21:14:17\n\nThe attachment fixes that problem, and adds some doctest examples.\n\nFor the reviewer:\n* I'm not sure divmod is the best way to test if a number is even\n* I'm not sure .abs() is the best way to force the lower bound to 0\n\nNote also that x^0 returns 1, which is not an interval (but that was already the case before\nthat patch).",
     "created_at": "2009-01-22T21:14:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4623",
     "type": "issue_comment",
@@ -69,7 +69,7 @@ archive/issue_comments_034766.json:
 }
 ```
 
-Attachment
+Attachment [11285.patch](tarball://root/attachments/some-uuid/ticket4623/11285.patch) by zimmerma created at 2009-01-22 21:14:17
 
 The attachment fixes that problem, and adds some doctest examples.
 
@@ -87,7 +87,7 @@ that patch).
 archive/issue_comments_034767.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of the previous patch",
+    "body": "Attachment [trac_4623.patch](tarball://root/attachments/some-uuid/ticket4623/trac_4623.patch) by AlexGhitza created at 2009-01-24 07:05:15\n\napply on top of the previous patch",
     "created_at": "2009-01-24T07:05:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4623",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_034767.json:
 }
 ```
 
-Attachment
+Attachment [trac_4623.patch](tarball://root/attachments/some-uuid/ticket4623/trac_4623.patch) by AlexGhitza created at 2009-01-24 07:05:15
 
 apply on top of the previous patch
 
@@ -191,7 +191,7 @@ Merged in Sage 3.3.alpha2
 archive/issue_comments_034772.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4623_2.patch](tarball://root/attachments/some-uuid/ticket4623/trac_4623_2.patch) by zimmerma created at 2009-01-24 19:34:33",
     "created_at": "2009-01-24T19:34:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4623",
     "type": "issue_comment",
@@ -200,7 +200,7 @@ archive/issue_comments_034772.json:
 }
 ```
 
-Attachment
+Attachment [trac_4623_2.patch](tarball://root/attachments/some-uuid/ticket4623/trac_4623_2.patch) by zimmerma created at 2009-01-24 19:34:33
 
 
 

@@ -49,7 +49,7 @@ Adds a wrapper to LinBox/FFPACK Det, for dense modular matrices
 archive/issue_comments_013947.json:
 ```json
 {
-    "body": "Attachment\n\nChange the wrapper for linbox rank and det to use Modular<double> (fixes a bug) and add appropriate delete.",
+    "body": "Attachment [linboxdet.2.patch](tarball://root/attachments/some-uuid/ticket2127/linboxdet.2.patch) by cpernet created at 2008-02-09 15:00:40\n\nChange the wrapper for linbox rank and det to use Modular<double> (fixes a bug) and add appropriate delete.",
     "created_at": "2008-02-09T15:00:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2127",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_013947.json:
 }
 ```
 
-Attachment
+Attachment [linboxdet.2.patch](tarball://root/attachments/some-uuid/ticket2127/linboxdet.2.patch) by cpernet created at 2008-02-09 15:00:40
 
 Change the wrapper for linbox rank and det to use Modular<double> (fixes a bug) and add appropriate delete.
 
@@ -149,7 +149,7 @@ Fix the wrong url of spkg
 archive/issue_comments_013952.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated patch for rank/det wrapping of ffpack",
+    "body": "Attachment [linboxdet.3.patch](tarball://root/attachments/some-uuid/ticket2127/linboxdet.3.patch) by cpernet created at 2008-02-16 23:26:39\n\nUpdated patch for rank/det wrapping of ffpack",
     "created_at": "2008-02-16T23:26:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2127",
     "type": "issue_comment",
@@ -158,7 +158,7 @@ archive/issue_comments_013952.json:
 }
 ```
 
-Attachment
+Attachment [linboxdet.3.patch](tarball://root/attachments/some-uuid/ticket2127/linboxdet.3.patch) by cpernet created at 2008-02-16 23:26:39
 
 Updated patch for rank/det wrapping of ffpack
 
@@ -328,7 +328,7 @@ Fix the doctest failure due to linboxdet.1.patch
 archive/issue_comments_013957.json:
 ```json
 {
-    "body": "Attachment\n\nfix the last doctest failure with det over nonprime modular rings.",
+    "body": "Attachment [8338.patch](tarball://root/attachments/some-uuid/ticket2127/8338.patch) by cpernet created at 2008-02-17 02:07:24\n\nfix the last doctest failure with det over nonprime modular rings.",
     "created_at": "2008-02-17T02:07:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2127",
     "type": "issue_comment",
@@ -337,7 +337,7 @@ archive/issue_comments_013957.json:
 }
 ```
 
-Attachment
+Attachment [8338.patch](tarball://root/attachments/some-uuid/ticket2127/8338.patch) by cpernet created at 2008-02-17 02:07:24
 
 fix the last doctest failure with det over nonprime modular rings.
 
@@ -348,7 +348,7 @@ fix the last doctest failure with det over nonprime modular rings.
 archive/issue_comments_013958.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8339.patch](tarball://root/attachments/some-uuid/ticket2127/8339.patch) by cpernet created at 2008-02-17 02:18:02",
     "created_at": "2008-02-17T02:18:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2127",
     "type": "issue_comment",
@@ -357,7 +357,7 @@ archive/issue_comments_013958.json:
 }
 ```
 
-Attachment
+Attachment [8339.patch](tarball://root/attachments/some-uuid/ticket2127/8339.patch) by cpernet created at 2008-02-17 02:18:02
 
 
 

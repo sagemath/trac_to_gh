@@ -85,7 +85,7 @@ I will only be able to look at this after next weekend.
 archive/issue_comments_084369.json:
 ```json
 {
-    "body": "Attachment\n\napply to sage library",
+    "body": "Attachment [trac_9086.patch](tarball://root/attachments/some-uuid/ticket9086/trac_9086.patch) by was created at 2010-06-03 01:25:17\n\napply to sage library",
     "created_at": "2010-06-03T01:25:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9086",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_084369.json:
 }
 ```
 
-Attachment
+Attachment [trac_9086.patch](tarball://root/attachments/some-uuid/ticket9086/trac_9086.patch) by was created at 2010-06-03 01:25:17
 
 apply to sage library
 
@@ -105,7 +105,7 @@ apply to sage library
 archive/issue_comments_084370.json:
 ```json
 {
-    "body": "Attachment\n\napply to src/ repo in pynac spkg",
+    "body": "Attachment [trac_9086-apply_to_pynac.patch](tarball://root/attachments/some-uuid/ticket9086/trac_9086-apply_to_pynac.patch) by was created at 2010-06-03 01:25:34\n\napply to src/ repo in pynac spkg",
     "created_at": "2010-06-03T01:25:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9086",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_084370.json:
 }
 ```
 
-Attachment
+Attachment [trac_9086-apply_to_pynac.patch](tarball://root/attachments/some-uuid/ticket9086/trac_9086-apply_to_pynac.patch) by was created at 2010-06-03 01:25:34
 
 apply to src/ repo in pynac spkg
 

@@ -403,7 +403,7 @@ Jaap
 archive/issue_comments_071226.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [flint-1.5.0.p4.patch](tarball://root/attachments/some-uuid/ticket8112/flint-1.5.0.p4.patch) by jsp created at 2010-02-23 16:07:25",
     "created_at": "2010-02-23T16:07:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8112",
     "type": "issue_comment",
@@ -412,7 +412,7 @@ archive/issue_comments_071226.json:
 }
 ```
 
-Attachment
+Attachment [flint-1.5.0.p4.patch](tarball://root/attachments/some-uuid/ticket8112/flint-1.5.0.p4.patch) by jsp created at 2010-02-23 16:07:25
 
 
 

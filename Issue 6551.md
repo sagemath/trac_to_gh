@@ -53,7 +53,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6551
 archive/issue_comments_053415.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6551.patch](tarball://root/attachments/some-uuid/ticket6551/trac_6551.patch) by AlexGhitza created at 2009-07-18 00:26:09",
     "created_at": "2009-07-18T00:26:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6551",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_053415.json:
 }
 ```
 
-Attachment
+Attachment [trac_6551.patch](tarball://root/attachments/some-uuid/ticket6551/trac_6551.patch) by AlexGhitza created at 2009-07-18 00:26:09
 
 
 
@@ -125,7 +125,7 @@ Bad news: this conflicts quite severely with my patches at #6500. I feel a bit g
 archive/issue_comments_053419.json:
 ```json
 {
-    "body": "Attachment\n\napply after the three patches at #6500",
+    "body": "Attachment [trac_6551-rebased_for_6500.patch](tarball://root/attachments/some-uuid/ticket6551/trac_6551-rebased_for_6500.patch) by davidloeffler created at 2009-07-20 09:05:14\n\napply after the three patches at #6500",
     "created_at": "2009-07-20T09:05:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6551",
     "type": "issue_comment",
@@ -134,7 +134,7 @@ archive/issue_comments_053419.json:
 }
 ```
 
-Attachment
+Attachment [trac_6551-rebased_for_6500.patch](tarball://root/attachments/some-uuid/ticket6551/trac_6551-rebased_for_6500.patch) by davidloeffler created at 2009-07-20 09:05:14
 
 apply after the three patches at #6500
 
@@ -238,7 +238,7 @@ Thanks for reviewing, and for the work you put in rebasing the patch.
 archive/issue_comments_053423.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6551_fix.patch](tarball://root/attachments/some-uuid/ticket6551/trac_6551_fix.patch) by AlexGhitza created at 2009-07-21 00:54:03",
     "created_at": "2009-07-21T00:54:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6551",
     "type": "issue_comment",
@@ -247,7 +247,7 @@ archive/issue_comments_053423.json:
 }
 ```
 
-Attachment
+Attachment [trac_6551_fix.patch](tarball://root/attachments/some-uuid/ticket6551/trac_6551_fix.patch) by AlexGhitza created at 2009-07-21 00:54:03
 
 
 

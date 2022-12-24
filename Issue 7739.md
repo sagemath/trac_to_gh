@@ -72,7 +72,7 @@ Changing status from new to needs_review.
 archive/issue_comments_066506.json:
 ```json
 {
-    "body": "Attachment\n\nGood idea, I added some degenerate tests and refreshed the patch.",
+    "body": "Attachment [7739-cdfrdf-agm.patch](tarball://root/attachments/some-uuid/ticket7739/7739-cdfrdf-agm.patch) by robertwb created at 2010-01-07 10:50:46\n\nGood idea, I added some degenerate tests and refreshed the patch.",
     "created_at": "2010-01-07T10:50:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7739",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_066506.json:
 }
 ```
 
-Attachment
+Attachment [7739-cdfrdf-agm.patch](tarball://root/attachments/some-uuid/ticket7739/7739-cdfrdf-agm.patch) by robertwb created at 2010-01-07 10:50:46
 
 Good idea, I added some degenerate tests and refreshed the patch.
 
@@ -92,7 +92,7 @@ Good idea, I added some degenerate tests and refreshed the patch.
 archive/issue_comments_066507.json:
 ```json
 {
-    "body": "Attachment\n\ncorrects typo in previous patch (which it replaces)",
+    "body": "Attachment [7739-cdfrdf-agm.2.patch](tarball://root/attachments/some-uuid/ticket7739/7739-cdfrdf-agm.2.patch) by cremona created at 2010-01-07 15:47:39\n\ncorrects typo in previous patch (which it replaces)",
     "created_at": "2010-01-07T15:47:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7739",
     "type": "issue_comment",
@@ -101,7 +101,7 @@ archive/issue_comments_066507.json:
 }
 ```
 
-Attachment
+Attachment [7739-cdfrdf-agm.2.patch](tarball://root/attachments/some-uuid/ticket7739/7739-cdfrdf-agm.2.patch) by cremona created at 2010-01-07 15:47:39
 
 corrects typo in previous patch (which it replaces)
 

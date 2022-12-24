@@ -92,7 +92,7 @@ Based on 4.5.2
 archive/issue_comments_085879.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me. Positive review.",
+    "body": "Attachment [trac_8179-disk-docs.patch](tarball://root/attachments/some-uuid/ticket9179/trac_8179-disk-docs.patch) by mvngu created at 2010-08-12 12:06:44\n\nLooks good to me. Positive review.",
     "created_at": "2010-08-12T12:06:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9179",
     "type": "issue_comment",
@@ -101,7 +101,7 @@ archive/issue_comments_085879.json:
 }
 ```
 
-Attachment
+Attachment [trac_8179-disk-docs.patch](tarball://root/attachments/some-uuid/ticket9179/trac_8179-disk-docs.patch) by mvngu created at 2010-08-12 12:06:44
 
 Looks good to me. Positive review.
 

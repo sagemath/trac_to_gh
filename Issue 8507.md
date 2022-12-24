@@ -36,7 +36,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8507
 archive/issue_comments_076821.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8507-sqrt-all.patch](tarball://root/attachments/some-uuid/ticket8507/8507-sqrt-all.patch) by robertwb created at 2010-03-12 06:00:45",
     "created_at": "2010-03-12T06:00:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8507",
     "type": "issue_comment",
@@ -45,7 +45,7 @@ archive/issue_comments_076821.json:
 }
 ```
 
-Attachment
+Attachment [8507-sqrt-all.patch](tarball://root/attachments/some-uuid/ticket8507/8507-sqrt-all.patch) by robertwb created at 2010-03-12 06:00:45
 
 
 

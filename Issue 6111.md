@@ -100,7 +100,7 @@ I read through the first 2500 lines of expression.pyx earlier today, and it's lo
 archive/issue_comments_048820.json:
 ```json
 {
-    "body": "Attachment\n\nFinished reading expression.pyx, it looks good. Should this work:\n\n\n```\nsage: ((x+y)^9).polynomial(None, ring=ZZ['x']['y']).list()\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"expression.pyx\", line 3616, in sage.symbolic.expression.Expression.polynomial (sage/symbolic/expression.cpp:17320)\n  File \"/home/robertwb/sage-4.0.rc0-x86_64-Linux/local/lib/python2.5/site-packages/sage/symbolic/expression_conversions.py\", line 975, in polynomial\n    converter = PolynomialConverter(ex, base_ring=base_ring, ring=ring)\n  File \"/home/robertwb/sage-4.0.rc0-x86_64-Linux/local/lib/python2.5/site-packages/sage/symbolic/expression_conversions.py\", line 833, in __init__\n    raise TypeError, \"%s is not a variable of %s\" %(v, ring)\nTypeError: y is not a variable of Univariate Polynomial Ring in y over Univariate Polynomial Ring in x over Integer Ring\n```\n\n\nAlso, there are a lot (too many IMHO) aliases for simplify_radical\n\n\n```\n    radical_simplify = simplify_log = log_simplify = simplify_radical\n    simplify_exp = exp_simplify = simplify_radical\n```\n",
+    "body": "Attachment [6111-expression-referee.patch](tarball://root/attachments/some-uuid/ticket6111/6111-expression-referee.patch) by robertwb created at 2009-05-23 07:06:21\n\nFinished reading expression.pyx, it looks good. Should this work:\n\n\n```\nsage: ((x+y)^9).polynomial(None, ring=ZZ['x']['y']).list()\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"expression.pyx\", line 3616, in sage.symbolic.expression.Expression.polynomial (sage/symbolic/expression.cpp:17320)\n  File \"/home/robertwb/sage-4.0.rc0-x86_64-Linux/local/lib/python2.5/site-packages/sage/symbolic/expression_conversions.py\", line 975, in polynomial\n    converter = PolynomialConverter(ex, base_ring=base_ring, ring=ring)\n  File \"/home/robertwb/sage-4.0.rc0-x86_64-Linux/local/lib/python2.5/site-packages/sage/symbolic/expression_conversions.py\", line 833, in __init__\n    raise TypeError, \"%s is not a variable of %s\" %(v, ring)\nTypeError: y is not a variable of Univariate Polynomial Ring in y over Univariate Polynomial Ring in x over Integer Ring\n```\n\n\nAlso, there are a lot (too many IMHO) aliases for simplify_radical\n\n\n```\n    radical_simplify = simplify_log = log_simplify = simplify_radical\n    simplify_exp = exp_simplify = simplify_radical\n```\n",
     "created_at": "2009-05-23T07:06:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6111",
     "type": "issue_comment",
@@ -109,7 +109,7 @@ archive/issue_comments_048820.json:
 }
 ```
 
-Attachment
+Attachment [6111-expression-referee.patch](tarball://root/attachments/some-uuid/ticket6111/6111-expression-referee.patch) by robertwb created at 2009-05-23 07:06:21
 
 Finished reading expression.pyx, it looks good. Should this work:
 
@@ -207,7 +207,7 @@ Burcin
 archive/issue_comments_048823.json:
 ```json
 {
-    "body": "Attachment\n\nI like it!  I quickly read through all of sage/symbolic except for expression.pyx, and attached a patch fixing the issues I found.  Technically somebody else should review sage/symbolic/random_tests.py, since I wrote the original version; but if you do, be sure to review rc0+my reviewer patch, since the reviewer patch adds doctests.\n\nSo: positive review for sage/symbolic/* except for expression.pyx (which I didn't look at) and random_tests.py (which I can't review since I wrote it).",
+    "body": "Attachment [trac6111-reviewer-cwitty.patch](tarball://root/attachments/some-uuid/ticket6111/trac6111-reviewer-cwitty.patch) by cwitty created at 2009-05-24 22:13:33\n\nI like it!  I quickly read through all of sage/symbolic except for expression.pyx, and attached a patch fixing the issues I found.  Technically somebody else should review sage/symbolic/random_tests.py, since I wrote the original version; but if you do, be sure to review rc0+my reviewer patch, since the reviewer patch adds doctests.\n\nSo: positive review for sage/symbolic/* except for expression.pyx (which I didn't look at) and random_tests.py (which I can't review since I wrote it).",
     "created_at": "2009-05-24T22:13:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6111",
     "type": "issue_comment",
@@ -216,7 +216,7 @@ archive/issue_comments_048823.json:
 }
 ```
 
-Attachment
+Attachment [trac6111-reviewer-cwitty.patch](tarball://root/attachments/some-uuid/ticket6111/trac6111-reviewer-cwitty.patch) by cwitty created at 2009-05-24 22:13:33
 
 I like it!  I quickly read through all of sage/symbolic except for expression.pyx, and attached a patch fixing the issues I found.  Technically somebody else should review sage/symbolic/random_tests.py, since I wrote the original version; but if you do, be sure to review rc0+my reviewer patch, since the reviewer patch adds doctests.
 
@@ -229,7 +229,7 @@ So: positive review for sage/symbolic/* except for expression.pyx (which I didn'
 archive/issue_comments_048824.json:
 ```json
 {
-    "body": "Attachment\n\nI read through most everything outside of symbolics/ and made a few little touchups in my attached patch.  Positive review for this part as well.",
+    "body": "Attachment [trac_6111-stein_referee.patch](tarball://root/attachments/some-uuid/ticket6111/trac_6111-stein_referee.patch) by was created at 2009-05-25 04:28:55\n\nI read through most everything outside of symbolics/ and made a few little touchups in my attached patch.  Positive review for this part as well.",
     "created_at": "2009-05-25T04:28:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6111",
     "type": "issue_comment",
@@ -238,7 +238,7 @@ archive/issue_comments_048824.json:
 }
 ```
 
-Attachment
+Attachment [trac_6111-stein_referee.patch](tarball://root/attachments/some-uuid/ticket6111/trac_6111-stein_referee.patch) by was created at 2009-05-25 04:28:55
 
 I read through most everything outside of symbolics/ and made a few little touchups in my attached patch.  Positive review for this part as well.
 
@@ -249,7 +249,7 @@ I read through most everything outside of symbolics/ and made a few little touch
 archive/issue_comments_048825.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6111-sympy_oo.patch](tarball://root/attachments/some-uuid/ticket6111/trac_6111-sympy_oo.patch) by mhansen created at 2009-05-28 02:41:40",
     "created_at": "2009-05-28T02:41:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6111",
     "type": "issue_comment",
@@ -258,7 +258,7 @@ archive/issue_comments_048825.json:
 }
 ```
 
-Attachment
+Attachment [trac_6111-sympy_oo.patch](tarball://root/attachments/some-uuid/ticket6111/trac_6111-sympy_oo.patch) by mhansen created at 2009-05-28 02:41:40
 
 
 

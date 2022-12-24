@@ -102,7 +102,7 @@ which hangs.
 archive/issue_comments_007095.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-1160.patch](tarball://root/attachments/some-uuid/ticket1160/trac-1160.patch) by was created at 2007-12-02 05:28:10",
     "created_at": "2007-12-02T05:28:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1160",
     "type": "issue_comment",
@@ -111,7 +111,7 @@ archive/issue_comments_007095.json:
 }
 ```
 
-Attachment
+Attachment [trac-1160.patch](tarball://root/attachments/some-uuid/ticket1160/trac-1160.patch) by was created at 2007-12-02 05:28:10
 
 
 
@@ -156,7 +156,7 @@ Merged in 2.8.15.alpha2.
 archive/issue_comments_007098.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac1160-fix.patch](tarball://root/attachments/some-uuid/ticket1160/trac1160-fix.patch) by was created at 2007-12-02 07:03:51",
     "created_at": "2007-12-02T07:03:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1160",
     "type": "issue_comment",
@@ -165,7 +165,7 @@ archive/issue_comments_007098.json:
 }
 ```
 
-Attachment
+Attachment [trac1160-fix.patch](tarball://root/attachments/some-uuid/ticket1160/trac1160-fix.patch) by was created at 2007-12-02 07:03:51
 
 
 
@@ -174,7 +174,7 @@ Attachment
 archive/issue_comments_007099.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac1160-maxima-fix.patch](tarball://root/attachments/some-uuid/ticket1160/trac1160-maxima-fix.patch) by was created at 2007-12-02 18:49:47",
     "created_at": "2007-12-02T18:49:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1160",
     "type": "issue_comment",
@@ -183,7 +183,7 @@ archive/issue_comments_007099.json:
 }
 ```
 
-Attachment
+Attachment [trac1160-maxima-fix.patch](tarball://root/attachments/some-uuid/ticket1160/trac1160-maxima-fix.patch) by was created at 2007-12-02 18:49:47
 
 
 

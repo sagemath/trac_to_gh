@@ -87,7 +87,7 @@ Changing status from new to assigned.
 archive/issue_comments_011765.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1859-2d-3d.diff](tarball://root/attachments/some-uuid/ticket1859/1859-2d-3d.diff) by robertwb created at 2008-01-20 04:15:03",
     "created_at": "2008-01-20T04:15:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1859",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_011765.json:
 }
 ```
 
-Attachment
+Attachment [1859-2d-3d.diff](tarball://root/attachments/some-uuid/ticket1859/1859-2d-3d.diff) by robertwb created at 2008-01-20 04:15:03
 
 
 

@@ -251,7 +251,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_057723.json:
 ```json
 {
-    "body": "Attachment\n\nbased on 4.5.3",
+    "body": "Attachment [trac_6979_sparse_matrix_vector_product.patch](tarball://root/attachments/some-uuid/ticket6979/trac_6979_sparse_matrix_vector_product.patch) by ylchapuy created at 2010-09-26 20:28:45\n\nbased on 4.5.3",
     "created_at": "2010-09-26T20:28:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6979",
     "type": "issue_comment",
@@ -260,7 +260,7 @@ archive/issue_comments_057723.json:
 }
 ```
 
-Attachment
+Attachment [trac_6979_sparse_matrix_vector_product.patch](tarball://root/attachments/some-uuid/ticket6979/trac_6979_sparse_matrix_vector_product.patch) by ylchapuy created at 2010-09-26 20:28:45
 
 based on 4.5.3
 

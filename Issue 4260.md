@@ -193,7 +193,7 @@ These are the files in `sage/matrix` with failures:
 archive/issue_comments_031007.json:
 ```json
 {
-    "body": "Attachment\n\nmake matrix space constructor use the new classes",
+    "body": "Attachment [trac_4260-linbox_default.patch](tarball://root/attachments/some-uuid/ticket4260/trac_4260-linbox_default.patch) by malb created at 2011-08-23 19:15:15\n\nmake matrix space constructor use the new classes",
     "created_at": "2011-08-23T19:15:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4260",
     "type": "issue_comment",
@@ -202,7 +202,7 @@ archive/issue_comments_031007.json:
 }
 ```
 
-Attachment
+Attachment [trac_4260-linbox_default.patch](tarball://root/attachments/some-uuid/ticket4260/trac_4260-linbox_default.patch) by malb created at 2011-08-23 19:15:15
 
 make matrix space constructor use the new classes
 
@@ -462,7 +462,7 @@ Changing keywords from "linbox, linear algebra" to "linbox, linear algebra, sd32
 archive/issue_comments_031016.json:
 ```json
 {
-    "body": "Attachment\n\nadd templated classes for float and double representation",
+    "body": "Attachment [trac_4260-dense_ctypes_template.patch](tarball://root/attachments/some-uuid/ticket4260/trac_4260-dense_ctypes_template.patch) by malb created at 2011-08-25 07:13:53\n\nadd templated classes for float and double representation",
     "created_at": "2011-08-25T07:13:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4260",
     "type": "issue_comment",
@@ -471,7 +471,7 @@ archive/issue_comments_031016.json:
 }
 ```
 
-Attachment
+Attachment [trac_4260-dense_ctypes_template.patch](tarball://root/attachments/some-uuid/ticket4260/trac_4260-dense_ctypes_template.patch) by malb created at 2011-08-25 07:13:53
 
 add templated classes for float and double representation
 
@@ -579,7 +579,7 @@ Wall time: 1.92 s
 archive/issue_comments_031019.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4260_more_doctests.patch](tarball://root/attachments/some-uuid/ticket4260/trac_4260_more_doctests.patch) by malb created at 2011-08-26 12:42:27",
     "created_at": "2011-08-26T12:42:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4260",
     "type": "issue_comment",
@@ -588,7 +588,7 @@ archive/issue_comments_031019.json:
 }
 ```
 
-Attachment
+Attachment [trac_4260_more_doctests.patch](tarball://root/attachments/some-uuid/ticket4260/trac_4260_more_doctests.patch) by malb created at 2011-08-26 12:42:27
 
 
 
@@ -767,7 +767,7 @@ The additional patch makes us use the old EchelonFormDomain interface which is t
 archive/issue_comments_031026.json:
 ```json
 {
-    "body": "Attachment\n\nminor fixes",
+    "body": "Attachment [trac_4260-minor_fixes.patch](tarball://root/attachments/some-uuid/ticket4260/trac_4260-minor_fixes.patch) by burcin created at 2011-09-29 16:08:30\n\nminor fixes",
     "created_at": "2011-09-29T16:08:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4260",
     "type": "issue_comment",
@@ -776,7 +776,7 @@ archive/issue_comments_031026.json:
 }
 ```
 
-Attachment
+Attachment [trac_4260-minor_fixes.patch](tarball://root/attachments/some-uuid/ticket4260/trac_4260-minor_fixes.patch) by burcin created at 2011-09-29 16:08:30
 
 minor fixes
 
@@ -1323,7 +1323,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_031048.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch fixes the issue on the machine in question. We forgot to deal with 32-bit systems in setting elements while we did it for getting elements.",
+    "body": "Attachment [trac_4260_bugfix.patch](tarball://root/attachments/some-uuid/ticket4260/trac_4260_bugfix.patch) by malb created at 2011-11-09 12:40:36\n\nThe attached patch fixes the issue on the machine in question. We forgot to deal with 32-bit systems in setting elements while we did it for getting elements.",
     "created_at": "2011-11-09T12:40:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4260",
     "type": "issue_comment",
@@ -1332,7 +1332,7 @@ archive/issue_comments_031048.json:
 }
 ```
 
-Attachment
+Attachment [trac_4260_bugfix.patch](tarball://root/attachments/some-uuid/ticket4260/trac_4260_bugfix.patch) by malb created at 2011-11-09 12:40:36
 
 The attached patch fixes the issue on the machine in question. We forgot to deal with 32-bit systems in setting elements while we did it for getting elements.
 

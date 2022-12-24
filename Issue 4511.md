@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4511
 archive/issue_comments_033455.json:
 ```json
 {
-    "body": "Attachment\n\npatch against version 3.2.rc0",
+    "body": "Attachment [sage-combinat-script-4511.patch](tarball://root/attachments/some-uuid/ticket4511/sage-combinat-script-4511.patch) by saliola created at 2008-11-13 10:53:24\n\npatch against version 3.2.rc0",
     "created_at": "2008-11-13T10:53:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4511",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_033455.json:
 }
 ```
 
-Attachment
+Attachment [sage-combinat-script-4511.patch](tarball://root/attachments/some-uuid/ticket4511/sage-combinat-script-4511.patch) by saliola created at 2008-11-13 10:53:24
 
 patch against version 3.2.rc0
 
@@ -157,7 +157,7 @@ Updating guards
 archive/issue_comments_033459.json:
 ```json
 {
-    "body": "Attachment\n\napply only this patch",
+    "body": "Attachment [sage-combinat-script-4511-patch2.patch](tarball://root/attachments/some-uuid/ticket4511/sage-combinat-script-4511-patch2.patch) by saliola created at 2008-11-14 19:29:13\n\napply only this patch",
     "created_at": "2008-11-14T19:29:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4511",
     "type": "issue_comment",
@@ -166,7 +166,7 @@ archive/issue_comments_033459.json:
 }
 ```
 
-Attachment
+Attachment [sage-combinat-script-4511-patch2.patch](tarball://root/attachments/some-uuid/ticket4511/sage-combinat-script-4511-patch2.patch) by saliola created at 2008-11-14 19:29:13
 
 apply only this patch
 

@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3306
 archive/issue_comments_022865.json:
 ```json
 {
-    "body": "Attachment\n\nThe only problem I see here is that \"install\" is generally not guaranteed to be available, i.e. on Solaris it is commonly called ginstall. I will fix this, but other than that positive review. I am also not quite sure if the Solaris ld can handle this as is, but as I am porting Sage to use the Sun Forte compiler suite I will fix those issues anyway.\n\nCheers,\n\nMichael",
+    "body": "Attachment [symmetrica-shared-library.patch](tarball://root/attachments/some-uuid/ticket3306/symmetrica-shared-library.patch) by mabshoff created at 2008-05-26 03:54:59\n\nThe only problem I see here is that \"install\" is generally not guaranteed to be available, i.e. on Solaris it is commonly called ginstall. I will fix this, but other than that positive review. I am also not quite sure if the Solaris ld can handle this as is, but as I am porting Sage to use the Sun Forte compiler suite I will fix those issues anyway.\n\nCheers,\n\nMichael",
     "created_at": "2008-05-26T03:54:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3306",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_022865.json:
 }
 ```
 
-Attachment
+Attachment [symmetrica-shared-library.patch](tarball://root/attachments/some-uuid/ticket3306/symmetrica-shared-library.patch) by mabshoff created at 2008-05-26 03:54:59
 
 The only problem I see here is that "install" is generally not guaranteed to be available, i.e. on Solaris it is commonly called ginstall. I will fix this, but other than that positive review. I am also not quite sure if the Solaris ld can handle this as is, but as I am porting Sage to use the Sun Forte compiler suite I will fix those issues anyway.
 

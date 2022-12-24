@@ -121,7 +121,7 @@ Suppress `CODE_PY` symlinks.  sagenb repo.
 archive/issue_comments_067962.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch should work for copying and re-publishing worksheets --- both use `Notebook._initialize_worksheet`.  But we should cover\n\n```python\nfname = 'foo.txt'\nfd = open(fname, 'w')\nfd.write('bar')\nfd.close()\nprint os.listdir('.')\nimport time; time.sleep(3)\nos.unlink(fname)\nprint os.listdir('.')\n```\n\ntoo...",
+    "body": "Attachment [trac_7846-no_CODE_PY_symlinks.patch](tarball://root/attachments/some-uuid/ticket7846/trac_7846-no_CODE_PY_symlinks.patch) by mpatel created at 2010-01-05 06:35:09\n\nThe attached patch should work for copying and re-publishing worksheets --- both use `Notebook._initialize_worksheet`.  But we should cover\n\n```python\nfname = 'foo.txt'\nfd = open(fname, 'w')\nfd.write('bar')\nfd.close()\nprint os.listdir('.')\nimport time; time.sleep(3)\nos.unlink(fname)\nprint os.listdir('.')\n```\n\ntoo...",
     "created_at": "2010-01-05T06:35:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7846",
     "type": "issue_comment",
@@ -130,7 +130,7 @@ archive/issue_comments_067962.json:
 }
 ```
 
-Attachment
+Attachment [trac_7846-no_CODE_PY_symlinks.patch](tarball://root/attachments/some-uuid/ticket7846/trac_7846-no_CODE_PY_symlinks.patch) by mpatel created at 2010-01-05 06:35:09
 
 The attached patch should work for copying and re-publishing worksheets --- both use `Notebook._initialize_worksheet`.  But we should cover
 
@@ -190,7 +190,7 @@ shutil.copytree('foo', 'bar', symlinks=True)
 archive/issue_comments_067964.json:
 ```json
 {
-    "body": "Attachment\n\nAlso ignore non-existent files.  Replaces previous.",
+    "body": "Attachment [trac_7846-no_CODE_PY_symlinks_v2.patch](tarball://root/attachments/some-uuid/ticket7846/trac_7846-no_CODE_PY_symlinks_v2.patch) by mpatel created at 2010-01-05 08:13:45\n\nAlso ignore non-existent files.  Replaces previous.",
     "created_at": "2010-01-05T08:13:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7846",
     "type": "issue_comment",
@@ -199,7 +199,7 @@ archive/issue_comments_067964.json:
 }
 ```
 
-Attachment
+Attachment [trac_7846-no_CODE_PY_symlinks_v2.patch](tarball://root/attachments/some-uuid/ticket7846/trac_7846-no_CODE_PY_symlinks_v2.patch) by mpatel created at 2010-01-05 08:13:45
 
 Also ignore non-existent files.  Replaces previous.
 

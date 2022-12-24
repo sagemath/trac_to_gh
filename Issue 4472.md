@@ -66,7 +66,7 @@ patch against Sage 3.2.rc1
 archive/issue_comments_033035.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4472-wester.patch](tarball://root/attachments/some-uuid/ticket4472/4472-wester.patch) by GeorgSWeber created at 2008-11-16 08:21:57",
     "created_at": "2008-11-16T08:21:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4472",
     "type": "issue_comment",
@@ -75,7 +75,7 @@ archive/issue_comments_033035.json:
 }
 ```
 
-Attachment
+Attachment [4472-wester.patch](tarball://root/attachments/some-uuid/ticket4472/4472-wester.patch) by GeorgSWeber created at 2008-11-16 08:21:57
 
 
 

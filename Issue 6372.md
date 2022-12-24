@@ -49,7 +49,7 @@ Depends on #6269
 archive/issue_comments_051005.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch also makes necessary changes in a few other files to allow this, including in the plot3d rest documentation.",
+    "body": "Attachment [trac_6372.patch](tarball://root/attachments/some-uuid/ticket6372/trac_6372.patch) by kcrisman created at 2009-06-20 19:16:26\n\nThis patch also makes necessary changes in a few other files to allow this, including in the plot3d rest documentation.",
     "created_at": "2009-06-20T19:16:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6372",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_051005.json:
 }
 ```
 
-Attachment
+Attachment [trac_6372.patch](tarball://root/attachments/some-uuid/ticket6372/trac_6372.patch) by kcrisman created at 2009-06-20 19:16:26
 
 This patch also makes necessary changes in a few other files to allow this, including in the plot3d rest documentation.
 
@@ -105,7 +105,7 @@ kcrisman: Can you rebase the patch?
 archive/issue_comments_051008.json:
 ```json
 {
-    "body": "Attachment\n\nrebased against Sage 4.1.alpha1",
+    "body": "Attachment [trac_6372-rebased.patch](tarball://root/attachments/some-uuid/ticket6372/trac_6372-rebased.patch) by mvngu created at 2009-06-26 01:48:23\n\nrebased against Sage 4.1.alpha1",
     "created_at": "2009-06-26T01:48:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6372",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_051008.json:
 }
 ```
 
-Attachment
+Attachment [trac_6372-rebased.patch](tarball://root/attachments/some-uuid/ticket6372/trac_6372-rebased.patch) by mvngu created at 2009-06-26 01:48:23
 
 rebased against Sage 4.1.alpha1
 

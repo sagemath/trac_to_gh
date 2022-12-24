@@ -51,7 +51,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5648
 archive/issue_comments_044100.json:
 ```json
 {
-    "body": "Attachment\n\npatch against 3.4.1.alpha0",
+    "body": "Attachment [modform_product.patch](tarball://root/attachments/some-uuid/ticket5648/modform_product.patch) by davidloeffler created at 2009-03-31 12:25:36\n\npatch against 3.4.1.alpha0",
     "created_at": "2009-03-31T12:25:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5648",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_044100.json:
 }
 ```
 
-Attachment
+Attachment [modform_product.patch](tarball://root/attachments/some-uuid/ticket5648/modform_product.patch) by davidloeffler created at 2009-03-31 12:25:36
 
 patch against 3.4.1.alpha0
 

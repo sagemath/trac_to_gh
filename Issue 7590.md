@@ -147,7 +147,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_064713.json:
 ```json
 {
-    "body": "Attachment\n\nAdded # optional to some doctests.",
+    "body": "Attachment [trac_7590.patch](tarball://root/attachments/some-uuid/ticket7590/trac_7590.patch) by rlm created at 2009-12-16 03:01:01\n\nAdded # optional to some doctests.",
     "created_at": "2009-12-16T03:01:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7590",
     "type": "issue_comment",
@@ -156,7 +156,7 @@ archive/issue_comments_064713.json:
 }
 ```
 
-Attachment
+Attachment [trac_7590.patch](tarball://root/attachments/some-uuid/ticket7590/trac_7590.patch) by rlm created at 2009-12-16 03:01:01
 
 Added # optional to some doctests.
 

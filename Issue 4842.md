@@ -65,7 +65,7 @@ Oh, I should handle the case of 2m -> m for m odd.
 archive/issue_comments_036721.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4842-cyclo-coerce.patch](tarball://root/attachments/some-uuid/ticket4842/4842-cyclo-coerce.patch) by robertwb created at 2008-12-21 13:10:22",
     "created_at": "2008-12-21T13:10:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4842",
     "type": "issue_comment",
@@ -74,7 +74,7 @@ archive/issue_comments_036721.json:
 }
 ```
 
-Attachment
+Attachment [4842-cyclo-coerce.patch](tarball://root/attachments/some-uuid/ticket4842/4842-cyclo-coerce.patch) by robertwb created at 2008-12-21 13:10:22
 
 
 

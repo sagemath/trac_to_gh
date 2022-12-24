@@ -69,7 +69,7 @@ x^-3 * y^-2
 archive/issue_comments_011403.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ncalexan-1804.patch](tarball://root/attachments/some-uuid/ticket1804/ncalexan-1804.patch) by ncalexan created at 2008-01-20 00:35:07",
     "created_at": "2008-01-20T00:35:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1804",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_011403.json:
 }
 ```
 
-Attachment
+Attachment [ncalexan-1804.patch](tarball://root/attachments/some-uuid/ticket1804/ncalexan-1804.patch) by ncalexan created at 2008-01-20 00:35:07
 
 
 

@@ -93,7 +93,7 @@ I have a fix for this, but cannot get the Cython generated code to compile.
 archive/issue_comments_017279.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2534.patch](tarball://root/attachments/some-uuid/ticket2534/2534.patch) by mhansen created at 2008-03-16 03:32:25",
     "created_at": "2008-03-16T03:32:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2534",
     "type": "issue_comment",
@@ -102,7 +102,7 @@ archive/issue_comments_017279.json:
 }
 ```
 
-Attachment
+Attachment [2534.patch](tarball://root/attachments/some-uuid/ticket2534/2534.patch) by mhansen created at 2008-03-16 03:32:25
 
 
 
@@ -111,7 +111,7 @@ Attachment
 archive/issue_comments_017280.json:
 ```json
 {
-    "body": "Attachment\n\nOnly apply 2534.2.patch which was made against 2.10.4.alpha0.",
+    "body": "Attachment [2534.2.patch](tarball://root/attachments/some-uuid/ticket2534/2534.2.patch) by mhansen created at 2008-03-16 04:23:24\n\nOnly apply 2534.2.patch which was made against 2.10.4.alpha0.",
     "created_at": "2008-03-16T04:23:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2534",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_017280.json:
 }
 ```
 
-Attachment
+Attachment [2534.2.patch](tarball://root/attachments/some-uuid/ticket2534/2534.2.patch) by mhansen created at 2008-03-16 04:23:24
 
 Only apply 2534.2.patch which was made against 2.10.4.alpha0.
 

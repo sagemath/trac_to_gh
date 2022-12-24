@@ -91,7 +91,7 @@ oops, wrong ticket
 archive/issue_comments_030592.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4209.patch](tarball://root/attachments/some-uuid/ticket4209/trac_4209.patch) by mabshoff created at 2008-09-27 21:13:30",
     "created_at": "2008-09-27T21:13:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4209",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_030592.json:
 }
 ```
 
-Attachment
+Attachment [trac_4209.patch](tarball://root/attachments/some-uuid/ticket4209/trac_4209.patch) by mabshoff created at 2008-09-27 21:13:30
 
 
 

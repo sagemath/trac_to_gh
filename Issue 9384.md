@@ -89,7 +89,7 @@ Note: This function does not yet work when j = 0, 1728.
 archive/issue_comments_089228.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9384.patch](tarball://root/attachments/some-uuid/ticket9384/trac_9384.patch) by ebeyerstedt created at 2010-06-30 03:00:59",
     "created_at": "2010-06-30T03:00:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9384",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_089228.json:
 }
 ```
 
-Attachment
+Attachment [trac_9384.patch](tarball://root/attachments/some-uuid/ticket9384/trac_9384.patch) by ebeyerstedt created at 2010-06-30 03:00:59
 
 
 
@@ -234,7 +234,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_089235.json:
 ```json
 {
-    "body": "Attachment\n\nReplaces previous patch.",
+    "body": "Attachment [trac_9384_update.patch](tarball://root/attachments/some-uuid/ticket9384/trac_9384_update.patch) by ebeyerstedt created at 2010-07-02 18:49:43\n\nReplaces previous patch.",
     "created_at": "2010-07-02T18:49:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9384",
     "type": "issue_comment",
@@ -243,7 +243,7 @@ archive/issue_comments_089235.json:
 }
 ```
 
-Attachment
+Attachment [trac_9384_update.patch](tarball://root/attachments/some-uuid/ticket9384/trac_9384_update.patch) by ebeyerstedt created at 2010-07-02 18:49:43
 
 Replaces previous patch.
 

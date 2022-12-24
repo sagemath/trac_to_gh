@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9822
 archive/issue_comments_096838.json:
 ```json
 {
-    "body": "Attachment\n\nSageNB. Attempted fix for Safari (setting cookie path to '/')",
+    "body": "Attachment [trac_9822-cookie-path-fix.patch](tarball://root/attachments/some-uuid/ticket9822/trac_9822-cookie-path-fix.patch) by timdumol created at 2010-08-27 15:30:01\n\nSageNB. Attempted fix for Safari (setting cookie path to '/')",
     "created_at": "2010-08-27T15:30:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_096838.json:
 }
 ```
 
-Attachment
+Attachment [trac_9822-cookie-path-fix.patch](tarball://root/attachments/some-uuid/ticket9822/trac_9822-cookie-path-fix.patch) by timdumol created at 2010-08-27 15:30:01
 
 SageNB. Attempted fix for Safari (setting cookie path to '/')
 
@@ -200,7 +200,7 @@ Replaces all others. Includes Jason Grout's fix ( http://groups.google.com/group
 archive/issue_comments_096847.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9822-cookie-fix.patch](tarball://root/attachments/some-uuid/ticket9822/trac_9822-cookie-fix.patch) by timdumol created at 2010-09-10 04:20:23",
     "created_at": "2010-09-10T04:20:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
@@ -209,7 +209,7 @@ archive/issue_comments_096847.json:
 }
 ```
 
-Attachment
+Attachment [trac_9822-cookie-fix.patch](tarball://root/attachments/some-uuid/ticket9822/trac_9822-cookie-fix.patch) by timdumol created at 2010-09-10 04:20:23
 
 
 
@@ -254,7 +254,7 @@ Gets the port number from the HTTP header instead (this fixes the issue given by
 archive/issue_comments_096850.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:8 jason]:\n> Setting the port for the cookie worries me.  How does that play with using a proxy server (where Sage thinks it is running on a certain port, like 8000, but the web browser thinks it is running on port 80)?\n\nGood point. I've added a new patch that fixes that issue.",
+    "body": "Attachment [trac_9822-cookie-fix.2.patch](tarball://root/attachments/some-uuid/ticket9822/trac_9822-cookie-fix.2.patch) by timdumol created at 2010-09-10 04:41:55\n\nReplying to [comment:8 jason]:\n> Setting the port for the cookie worries me.  How does that play with using a proxy server (where Sage thinks it is running on a certain port, like 8000, but the web browser thinks it is running on port 80)?\n\nGood point. I've added a new patch that fixes that issue.",
     "created_at": "2010-09-10T04:41:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
@@ -263,7 +263,7 @@ archive/issue_comments_096850.json:
 }
 ```
 
-Attachment
+Attachment [trac_9822-cookie-fix.2.patch](tarball://root/attachments/some-uuid/ticket9822/trac_9822-cookie-fix.2.patch) by timdumol created at 2010-09-10 04:41:55
 
 Replying to [comment:8 jason]:
 > Setting the port for the cookie worries me.  How does that play with using a proxy server (where Sage thinks it is running on a certain port, like 8000, but the web browser thinks it is running on port 80)?
@@ -303,7 +303,7 @@ if request.headers.hasHeader('cookie'):
 archive/issue_comments_096852.json:
 ```json
 {
-    "body": "Attachment\n\nMakes the default port 443 if the connection is HTTPS.",
+    "body": "Attachment [trac_9822-cookie-fix.3.patch](tarball://root/attachments/some-uuid/ticket9822/trac_9822-cookie-fix.3.patch) by timdumol created at 2010-09-10 10:49:53\n\nMakes the default port 443 if the connection is HTTPS.",
     "created_at": "2010-09-10T10:49:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
@@ -312,7 +312,7 @@ archive/issue_comments_096852.json:
 }
 ```
 
-Attachment
+Attachment [trac_9822-cookie-fix.3.patch](tarball://root/attachments/some-uuid/ticket9822/trac_9822-cookie-fix.3.patch) by timdumol created at 2010-09-10 10:49:53
 
 Makes the default port 443 if the connection is HTTPS.
 
@@ -343,7 +343,7 @@ It is insecure to let any site under the domain to access the cookie (cross-site
 archive/issue_comments_096854.json:
 ```json
 {
-    "body": "Attachment\n\nFixes a bug.",
+    "body": "Attachment [trac_9822-cookie-fix.4.patch](tarball://root/attachments/some-uuid/ticket9822/trac_9822-cookie-fix.4.patch) by timdumol created at 2010-09-16 17:00:53\n\nFixes a bug.",
     "created_at": "2010-09-16T17:00:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
@@ -352,7 +352,7 @@ archive/issue_comments_096854.json:
 }
 ```
 
-Attachment
+Attachment [trac_9822-cookie-fix.4.patch](tarball://root/attachments/some-uuid/ticket9822/trac_9822-cookie-fix.4.patch) by timdumol created at 2010-09-16 17:00:53
 
 Fixes a bug.
 
@@ -515,7 +515,7 @@ I've split Tim's changes to cookies out to #10029, since they don't seem to be q
 archive/issue_comments_096863.json:
 ```json
 {
-    "body": "Attachment\n\napply instead of previous patches",
+    "body": "Attachment [9822-multiple-cookies.patch](tarball://root/attachments/some-uuid/ticket9822/9822-multiple-cookies.patch) by jason created at 2010-09-29 01:06:00\n\napply instead of previous patches",
     "created_at": "2010-09-29T01:06:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
@@ -524,7 +524,7 @@ archive/issue_comments_096863.json:
 }
 ```
 
-Attachment
+Attachment [9822-multiple-cookies.patch](tarball://root/attachments/some-uuid/ticket9822/9822-multiple-cookies.patch) by jason created at 2010-09-29 01:06:00
 
 apply instead of previous patches
 

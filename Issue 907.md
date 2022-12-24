@@ -83,7 +83,7 @@ Changing status from new to assigned.
 archive/issue_comments_005581.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-2.8.7.rc1-fix-small-memleaks-in_modn_sparse_lift.patch](tarball://root/attachments/some-uuid/ticket907/sage-2.8.7.rc1-fix-small-memleaks-in_modn_sparse_lift.patch) by mabshoff created at 2007-10-16 04:55:44",
     "created_at": "2007-10-16T04:55:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/907",
     "type": "issue_comment",
@@ -92,7 +92,7 @@ archive/issue_comments_005581.json:
 }
 ```
 
-Attachment
+Attachment [sage-2.8.7.rc1-fix-small-memleaks-in_modn_sparse_lift.patch](tarball://root/attachments/some-uuid/ticket907/sage-2.8.7.rc1-fix-small-memleaks-in_modn_sparse_lift.patch) by mabshoff created at 2007-10-16 04:55:44
 
 
 

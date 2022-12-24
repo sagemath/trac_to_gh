@@ -47,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4813
 archive/issue_comments_036487.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [arxiv_0812_2725_code.patch](tarball://root/attachments/some-uuid/ticket4813/arxiv_0812_2725_code.patch) by ddrake created at 2008-12-16 13:49:13",
     "created_at": "2008-12-16T13:49:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4813",
     "type": "issue_comment",
@@ -56,7 +56,7 @@ archive/issue_comments_036487.json:
 }
 ```
 
-Attachment
+Attachment [arxiv_0812_2725_code.patch](tarball://root/attachments/some-uuid/ticket4813/arxiv_0812_2725_code.patch) by ddrake created at 2008-12-16 13:49:13
 
 
 
@@ -110,7 +110,7 @@ Either way, I would like this code to get put into the tests/ directory; William
 archive/issue_comments_036490.json:
 ```json
 {
-    "body": "Attachment\n\nI think this is good to go in.  I've added a patch which does some minor formatting issues.  \n\nDan: Could you just give my little patch a positive review?",
+    "body": "Attachment [trac_4813-2.patch](tarball://root/attachments/some-uuid/ticket4813/trac_4813-2.patch) by mhansen created at 2009-01-24 03:00:48\n\nI think this is good to go in.  I've added a patch which does some minor formatting issues.  \n\nDan: Could you just give my little patch a positive review?",
     "created_at": "2009-01-24T03:00:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4813",
     "type": "issue_comment",
@@ -119,7 +119,7 @@ archive/issue_comments_036490.json:
 }
 ```
 
-Attachment
+Attachment [trac_4813-2.patch](tarball://root/attachments/some-uuid/ticket4813/trac_4813-2.patch) by mhansen created at 2009-01-24 03:00:48
 
 I think this is good to go in.  I've added a patch which does some minor formatting issues.  
 

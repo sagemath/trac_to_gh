@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6839
 archive/issue_comments_056405.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6839-crystal-E7-as.patch](tarball://root/attachments/some-uuid/ticket6839/trac_6839-crystal-E7-as.patch) by aschilling created at 2009-08-29 06:48:41",
     "created_at": "2009-08-29T06:48:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6839",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_056405.json:
 }
 ```
 
-Attachment
+Attachment [trac_6839-crystal-E7-as.patch](tarball://root/attachments/some-uuid/ticket6839/trac_6839-crystal-E7-as.patch) by aschilling created at 2009-08-29 06:48:41
 
 
 

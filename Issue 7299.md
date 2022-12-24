@@ -43,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7299
 archive/issue_comments_060836.json:
 ```json
 {
-    "body": "Attachment\n\nTriangle graph in 4.1.1",
+    "body": "Attachment [Triangle-sage_4.1.1.png](tarball://root/attachments/some-uuid/ticket7299/Triangle-sage_4.1.1.png) by AJonsson created at 2009-10-25 18:27:11\n\nTriangle graph in 4.1.1",
     "created_at": "2009-10-25T18:27:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7299",
     "type": "issue_comment",
@@ -52,7 +52,7 @@ archive/issue_comments_060836.json:
 }
 ```
 
-Attachment
+Attachment [Triangle-sage_4.1.1.png](tarball://root/attachments/some-uuid/ticket7299/Triangle-sage_4.1.1.png) by AJonsson created at 2009-10-25 18:27:11
 
 Triangle graph in 4.1.1
 
@@ -63,7 +63,7 @@ Triangle graph in 4.1.1
 archive/issue_comments_060837.json:
 ```json
 {
-    "body": "Attachment\n\nTriangle graph in 4.1.2",
+    "body": "Attachment [Triangle-Sage_4.1.2.png](tarball://root/attachments/some-uuid/ticket7299/Triangle-Sage_4.1.2.png) by AJonsson created at 2009-10-25 18:27:32\n\nTriangle graph in 4.1.2",
     "created_at": "2009-10-25T18:27:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7299",
     "type": "issue_comment",
@@ -72,7 +72,7 @@ archive/issue_comments_060837.json:
 }
 ```
 
-Attachment
+Attachment [Triangle-Sage_4.1.2.png](tarball://root/attachments/some-uuid/ticket7299/Triangle-Sage_4.1.2.png) by AJonsson created at 2009-10-25 18:27:32
 
 Triangle graph in 4.1.2
 
@@ -83,7 +83,7 @@ Triangle graph in 4.1.2
 archive/issue_comments_060838.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-7299-graph-pad.patch](tarball://root/attachments/some-uuid/ticket7299/trac-7299-graph-pad.patch) by jason created at 2010-01-20 10:54:19",
     "created_at": "2010-01-20T10:54:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7299",
     "type": "issue_comment",
@@ -92,7 +92,7 @@ archive/issue_comments_060838.json:
 }
 ```
 
-Attachment
+Attachment [trac-7299-graph-pad.patch](tarball://root/attachments/some-uuid/ticket7299/trac-7299-graph-pad.patch) by jason created at 2010-01-20 10:54:19
 
 
 

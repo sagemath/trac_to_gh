@@ -112,7 +112,7 @@ Changing keywords from "" to "numerical noise, number_field_morphism".
 archive/issue_comments_035605.json:
 ```json
 {
-    "body": "Attachment\n\nFine by me.",
+    "body": "Attachment [4720.patch](tarball://root/attachments/some-uuid/ticket4720/4720.patch) by ncalexan created at 2008-12-09 19:07:21\n\nFine by me.",
     "created_at": "2008-12-09T19:07:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4720",
     "type": "issue_comment",
@@ -121,7 +121,7 @@ archive/issue_comments_035605.json:
 }
 ```
 
-Attachment
+Attachment [4720.patch](tarball://root/attachments/some-uuid/ticket4720/4720.patch) by ncalexan created at 2008-12-09 19:07:21
 
 Fine by me.
 
@@ -163,7 +163,7 @@ Michael
 archive/issue_comments_035607.json:
 ```json
 {
-    "body": "Attachment\n\nrebased version of John's patch",
+    "body": "Attachment [trac_4720.patch](tarball://root/attachments/some-uuid/ticket4720/trac_4720.patch) by mabshoff created at 2008-12-10 09:17:57\n\nrebased version of John's patch",
     "created_at": "2008-12-10T09:17:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4720",
     "type": "issue_comment",
@@ -172,7 +172,7 @@ archive/issue_comments_035607.json:
 }
 ```
 
-Attachment
+Attachment [trac_4720.patch](tarball://root/attachments/some-uuid/ticket4720/trac_4720.patch) by mabshoff created at 2008-12-10 09:17:57
 
 rebased version of John's patch
 

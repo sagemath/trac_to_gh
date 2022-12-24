@@ -98,7 +98,7 @@ Changing status from new to needs_review.
 archive/issue_comments_065174.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch should prevent the error.  It does not activate the email system.\n\nIn the future, we could auto-generate the user settings page, with drop-down menus for key-bindings, a la the notebook settings page.  From `todo.txt`:\n\n```\n[ ] move is_valid_username (etc.) out of twist.py, which is definitely *not* where it belongs\n```\n\nHow about a `validate.py`, with functions for other fields, too?",
+    "body": "Attachment [trac_7628-user_settings_page_error.patch](tarball://root/attachments/some-uuid/ticket7628/trac_7628-user_settings_page_error.patch) by mpatel created at 2009-12-09 01:09:29\n\nThe patch should prevent the error.  It does not activate the email system.\n\nIn the future, we could auto-generate the user settings page, with drop-down menus for key-bindings, a la the notebook settings page.  From `todo.txt`:\n\n```\n[ ] move is_valid_username (etc.) out of twist.py, which is definitely *not* where it belongs\n```\n\nHow about a `validate.py`, with functions for other fields, too?",
     "created_at": "2009-12-09T01:09:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7628",
     "type": "issue_comment",
@@ -107,7 +107,7 @@ archive/issue_comments_065174.json:
 }
 ```
 
-Attachment
+Attachment [trac_7628-user_settings_page_error.patch](tarball://root/attachments/some-uuid/ticket7628/trac_7628-user_settings_page_error.patch) by mpatel created at 2009-12-09 01:09:29
 
 The patch should prevent the error.  It does not activate the email system.
 

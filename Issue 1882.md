@@ -325,7 +325,7 @@ The file phc.py at http://www.d.umn.edu/~mhampton/phc.py has been changed to add
 archive/issue_comments_011916.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_1882_phc-interface.patch](tarball://root/attachments/some-uuid/ticket1882/trac_1882_phc-interface.patch) by mhampton created at 2008-03-18 18:24:01",
     "created_at": "2008-03-18T18:24:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1882",
     "type": "issue_comment",
@@ -334,7 +334,7 @@ archive/issue_comments_011916.json:
 }
 ```
 
-Attachment
+Attachment [trac_1882_phc-interface.patch](tarball://root/attachments/some-uuid/ticket1882/trac_1882_phc-interface.patch) by mhampton created at 2008-03-18 18:24:01
 
 
 
@@ -365,7 +365,7 @@ http://www.d.umn.edu/~mhampton/phc-2.3.39.spkg
 archive/issue_comments_011918.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_1882_phc-referee.patch](tarball://root/attachments/some-uuid/ticket1882/trac_1882_phc-referee.patch) by cwitty created at 2008-03-29 15:02:35",
     "created_at": "2008-03-29T15:02:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1882",
     "type": "issue_comment",
@@ -374,7 +374,7 @@ archive/issue_comments_011918.json:
 }
 ```
 
-Attachment
+Attachment [trac_1882_phc-referee.patch](tarball://root/attachments/some-uuid/ticket1882/trac_1882_phc-referee.patch) by cwitty created at 2008-03-29 15:02:35
 
 
 

@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8442
 archive/issue_comments_075812.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch adds a tutorial about Lie Methods and Related Combinatorics to Sage.\n\nApply the patch and also copy the file wcf1.png into $SAGE_ROOT/devel/sage-queue/doc/en/lie/. Then you can build the documentation with the commands:\n\nsage -docbuild lie html\n\nsage -docbuild lie pdf\n\nThere is supposed to be a chapter on Crystals but that is not written yet.",
+    "body": "Attachment [wcf1.png](tarball://root/attachments/some-uuid/ticket8442/wcf1.png) by bump created at 2010-03-05 03:16:00\n\nThis patch adds a tutorial about Lie Methods and Related Combinatorics to Sage.\n\nApply the patch and also copy the file wcf1.png into $SAGE_ROOT/devel/sage-queue/doc/en/lie/. Then you can build the documentation with the commands:\n\nsage -docbuild lie html\n\nsage -docbuild lie pdf\n\nThere is supposed to be a chapter on Crystals but that is not written yet.",
     "created_at": "2010-03-05T03:16:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_075812.json:
 }
 ```
 
-Attachment
+Attachment [wcf1.png](tarball://root/attachments/some-uuid/ticket8442/wcf1.png) by bump created at 2010-03-05 03:16:00
 
 This patch adds a tutorial about Lie Methods and Related Combinatorics to Sage.
 
@@ -79,7 +79,7 @@ Changing assignee from mvngu to bump.
 archive/issue_comments_075814.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [a2rho.png](tarball://root/attachments/some-uuid/ticket8442/a2rho.png) by bump created at 2010-03-09 04:27:57",
     "created_at": "2010-03-09T04:27:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_075814.json:
 }
 ```
 
-Attachment
+Attachment [a2rho.png](tarball://root/attachments/some-uuid/ticket8442/a2rho.png) by bump created at 2010-03-09 04:27:57
 
 
 
@@ -97,7 +97,7 @@ Attachment
 archive/issue_comments_075815.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [standard1.png](tarball://root/attachments/some-uuid/ticket8442/standard1.png) by bump created at 2010-03-09 04:28:41",
     "created_at": "2010-03-09T04:28:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
@@ -106,7 +106,7 @@ archive/issue_comments_075815.json:
 }
 ```
 
-Attachment
+Attachment [standard1.png](tarball://root/attachments/some-uuid/ticket8442/standard1.png) by bump created at 2010-03-09 04:28:41
 
 
 
@@ -151,7 +151,7 @@ Lie methods and related combinatorics tutorial
 archive/issue_comments_075818.json:
 ```json
 {
-    "body": "Attachment\n\nRevised to take into account changes in #8414.",
+    "body": "Attachment [trac_8442_lie_documentation.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442_lie_documentation.patch) by bump created at 2010-03-11 18:17:31\n\nRevised to take into account changes in #8414.",
     "created_at": "2010-03-11T18:17:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
@@ -160,7 +160,7 @@ archive/issue_comments_075818.json:
 }
 ```
 
-Attachment
+Attachment [trac_8442_lie_documentation.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442_lie_documentation.patch) by bump created at 2010-03-11 18:17:31
 
 Revised to take into account changes in #8414.
 
@@ -207,7 +207,7 @@ I'm rebasing [trac_8442_lie_documentation.patch](http://trac.sagemath.org/sage_t
 archive/issue_comments_075821.json:
 ```json
 {
-    "body": "Attachment\n\nrebased Lie tutorial",
+    "body": "Attachment [trac_8442-lie-rebased.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-lie-rebased.patch) by mvngu created at 2010-03-13 07:28:08\n\nrebased Lie tutorial",
     "created_at": "2010-03-13T07:28:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
@@ -216,7 +216,7 @@ archive/issue_comments_075821.json:
 }
 ```
 
-Attachment
+Attachment [trac_8442-lie-rebased.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-lie-rebased.patch) by mvngu created at 2010-03-13 07:28:08
 
 rebased Lie tutorial
 
@@ -227,7 +227,7 @@ rebased Lie tutorial
 archive/issue_comments_075822.json:
 ```json
 {
-    "body": "Attachment\n\nreviewer patch",
+    "body": "Attachment [trac_8442-reviewer.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-reviewer.patch) by mvngu created at 2010-03-13 07:28:34\n\nreviewer patch",
     "created_at": "2010-03-13T07:28:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
@@ -236,7 +236,7 @@ archive/issue_comments_075822.json:
 }
 ```
 
-Attachment
+Attachment [trac_8442-reviewer.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-reviewer.patch) by mvngu created at 2010-03-13 07:28:34
 
 reviewer patch
 
@@ -318,7 +318,7 @@ changing the patch status since I am the author of the original patch.
 archive/issue_comments_075826.json:
 ```json
 {
-    "body": "Attachment\n\nAdditional patch taking into account changes in #8414",
+    "body": "Attachment [trac_8442-weyl_groups-revision.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-weyl_groups-revision.patch) by bump created at 2010-03-24 22:15:30\n\nAdditional patch taking into account changes in #8414",
     "created_at": "2010-03-24T22:15:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
@@ -327,7 +327,7 @@ archive/issue_comments_075826.json:
 }
 ```
 
-Attachment
+Attachment [trac_8442-weyl_groups-revision.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-weyl_groups-revision.patch) by bump created at 2010-03-24 22:15:30
 
 Additional patch taking into account changes in #8414
 
@@ -412,7 +412,7 @@ Tested with Sage Version 4.4.2.alpha0, Release Date: 2010-05-08 and index.rst un
 archive/issue_comments_075831.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8442-lie-rebased-to-4.4.2.alpha0](tarball://root/attachments/some-uuid/ticket8442/trac_8442-lie-rebased-to-4.4.2.alpha0) by bump created at 2010-05-15 03:55:16",
     "created_at": "2010-05-15T03:55:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
@@ -421,7 +421,7 @@ archive/issue_comments_075831.json:
 }
 ```
 
-Attachment
+Attachment [trac_8442-lie-rebased-to-4.4.2.alpha0](tarball://root/attachments/some-uuid/ticket8442/trac_8442-lie-rebased-to-4.4.2.alpha0) by bump created at 2010-05-15 03:55:16
 
 
 
@@ -484,7 +484,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_075834.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8442-config.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-config.patch) by mvngu created at 2010-05-15 06:59:18",
     "created_at": "2010-05-15T06:59:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
@@ -493,7 +493,7 @@ archive/issue_comments_075834.json:
 }
 ```
 
-Attachment
+Attachment [trac_8442-config.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-config.patch) by mvngu created at 2010-05-15 06:59:18
 
 
 
@@ -502,7 +502,7 @@ Attachment
 archive/issue_comments_075835.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8442-lie-rebased-4.4.2.rc0.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-lie-rebased-4.4.2.rc0.patch) by mvngu created at 2010-05-15 06:59:35",
     "created_at": "2010-05-15T06:59:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
@@ -511,7 +511,7 @@ archive/issue_comments_075835.json:
 }
 ```
 
-Attachment
+Attachment [trac_8442-lie-rebased-4.4.2.rc0.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-lie-rebased-4.4.2.rc0.patch) by mvngu created at 2010-05-15 06:59:35
 
 
 
@@ -660,7 +660,7 @@ If #8465 gets merged, then trac_8442-config.patch will not be needed.
 archive/issue_comments_075841.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8442-lie-rebased-4.5.2.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-lie-rebased-4.5.2.patch) by bump created at 2010-08-22 15:53:52",
     "created_at": "2010-08-22T15:53:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
@@ -669,7 +669,7 @@ archive/issue_comments_075841.json:
 }
 ```
 
-Attachment
+Attachment [trac_8442-lie-rebased-4.5.2.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-lie-rebased-4.5.2.patch) by bump created at 2010-08-22 15:53:52
 
 
 
@@ -678,7 +678,7 @@ Attachment
 archive/issue_comments_075842.json:
 ```json
 {
-    "body": "Attachment\n\nI have added two revised patches:\n\n\n```\ntrac_8442-lie-rebased-4.5.2.patch\ntrac_8442-png-files.patch\n```\n\n\nBy mistake I added the first patch twice.\n\nThese address most of the problems found by rbeezer and jhpalmieri.\n\n* Now passes `sage -t`\n\n* New `doc/en/thematic_tutorials/media/*png`\n\n* `doc/en/thematic_tutorials/*png` added to MANIFEST.in\n\n* `.png` files are in a patch.\n\nThe one matter I did not try to address is the problem with jsMath. Is there a jsMath way to get fraktur fonts?",
+    "body": "Attachment [trac_8442-lie-rebased-4.5.2.2.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-lie-rebased-4.5.2.2.patch) by bump created at 2010-08-22 16:04:48\n\nI have added two revised patches:\n\n\n```\ntrac_8442-lie-rebased-4.5.2.patch\ntrac_8442-png-files.patch\n```\n\n\nBy mistake I added the first patch twice.\n\nThese address most of the problems found by rbeezer and jhpalmieri.\n\n* Now passes `sage -t`\n\n* New `doc/en/thematic_tutorials/media/*png`\n\n* `doc/en/thematic_tutorials/*png` added to MANIFEST.in\n\n* `.png` files are in a patch.\n\nThe one matter I did not try to address is the problem with jsMath. Is there a jsMath way to get fraktur fonts?",
     "created_at": "2010-08-22T16:04:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
@@ -687,7 +687,7 @@ archive/issue_comments_075842.json:
 }
 ```
 
-Attachment
+Attachment [trac_8442-lie-rebased-4.5.2.2.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-lie-rebased-4.5.2.2.patch) by bump created at 2010-08-22 16:04:48
 
 I have added two revised patches:
 
@@ -955,7 +955,7 @@ Wait, here's an idea: we can add a jsMath macro (as [described here](http://www.
 archive/issue_comments_075853.json:
 ```json
 {
-    "body": "Attachment\n\navoid jsmath errors about mathfrak",
+    "body": "Attachment [trac_8442-mathfrak.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-mathfrak.patch) by jhpalmieri created at 2010-09-09 04:41:59\n\navoid jsmath errors about mathfrak",
     "created_at": "2010-09-09T04:41:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
@@ -964,7 +964,7 @@ archive/issue_comments_075853.json:
 }
 ```
 
-Attachment
+Attachment [trac_8442-mathfrak.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-mathfrak.patch) by jhpalmieri created at 2010-09-09 04:41:59
 
 avoid jsmath errors about mathfrak
 
@@ -1069,7 +1069,7 @@ Thematic tutorial: Lie methods and related combinatorics
 archive/issue_comments_075858.json:
 ```json
 {
-    "body": "Attachment\n\nI uploaded a new version with minor polishing here and there.",
+    "body": "Attachment [trac_8442-rebased-4.5.3.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-rebased-4.5.3.patch) by bump created at 2010-09-10 23:18:17\n\nI uploaded a new version with minor polishing here and there.",
     "created_at": "2010-09-10T23:18:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
@@ -1078,7 +1078,7 @@ archive/issue_comments_075858.json:
 }
 ```
 
-Attachment
+Attachment [trac_8442-rebased-4.5.3.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-rebased-4.5.3.patch) by bump created at 2010-09-10 23:18:17
 
 I uploaded a new version with minor polishing here and there.
 
@@ -1128,7 +1128,7 @@ Thematic Tutorial: Lie methods and related combinatorics
 archive/issue_comments_075861.json:
 ```json
 {
-    "body": "Attachment\n\nWith sage-4.6.alpha1 the patch needed rebasing. I did this, then made a couple of other changes which I think are improvements. I removed the material about intertwining operators, which seems too specialized for a document like this.  I will make available this elsewhere. I added a new section called Integration showing how to compute some integrals over Lie groups.\n\nI updated the links at:\n\nhttp://match.stanford.edu/bump/thematic_tutorials/lie.html  \n\nhttp://match.stanford.edu/bump/thematic_tutorials-js/lie.html",
+    "body": "Attachment [trac_8442-rebased-4.6.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-rebased-4.6.patch) by bump created at 2010-09-26 17:52:39\n\nWith sage-4.6.alpha1 the patch needed rebasing. I did this, then made a couple of other changes which I think are improvements. I removed the material about intertwining operators, which seems too specialized for a document like this.  I will make available this elsewhere. I added a new section called Integration showing how to compute some integrals over Lie groups.\n\nI updated the links at:\n\nhttp://match.stanford.edu/bump/thematic_tutorials/lie.html  \n\nhttp://match.stanford.edu/bump/thematic_tutorials-js/lie.html",
     "created_at": "2010-09-26T17:52:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
@@ -1137,7 +1137,7 @@ archive/issue_comments_075861.json:
 }
 ```
 
-Attachment
+Attachment [trac_8442-rebased-4.6.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-rebased-4.6.patch) by bump created at 2010-09-26 17:52:39
 
 With sage-4.6.alpha1 the patch needed rebasing. I did this, then made a couple of other changes which I think are improvements. I removed the material about intertwining operators, which seems too specialized for a document like this.  I will make available this elsewhere. I added a new section called Integration showing how to compute some integrals over Lie groups.
 
@@ -1265,7 +1265,7 @@ archive/issue_comments_075864.json:
 archive/issue_comments_075865.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8442-rebased-4.6.1.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-rebased-4.6.1.patch) by bump created at 2010-11-03 00:00:49",
     "created_at": "2010-11-03T00:00:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
@@ -1274,7 +1274,7 @@ archive/issue_comments_075865.json:
 }
 ```
 
-Attachment
+Attachment [trac_8442-rebased-4.6.1.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-rebased-4.6.1.patch) by bump created at 2010-11-03 00:00:49
 
 
 
@@ -1357,7 +1357,7 @@ apply on top of other patches
 archive/issue_comments_075870.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8442-ref-spacing.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-ref-spacing.patch) by jhpalmieri created at 2010-11-06 22:12:14",
     "created_at": "2010-11-06T22:12:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
@@ -1366,7 +1366,7 @@ archive/issue_comments_075870.json:
 }
 ```
 
-Attachment
+Attachment [trac_8442-ref-spacing.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-ref-spacing.patch) by jhpalmieri created at 2010-11-06 22:12:14
 
 
 
@@ -1850,7 +1850,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_075891.json:
 ```json
 {
-    "body": "Attachment\n\n8442: png files",
+    "body": "Attachment [trac_8442-png-files.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-png-files.patch) by bump created at 2011-01-23 19:21:49\n\n8442: png files",
     "created_at": "2011-01-23T19:21:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
@@ -1859,7 +1859,7 @@ archive/issue_comments_075891.json:
 }
 ```
 
-Attachment
+Attachment [trac_8442-png-files.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-png-files.patch) by bump created at 2011-01-23 19:21:49
 
 8442: png files
 
@@ -1908,7 +1908,7 @@ Done.
 archive/issue_comments_075894.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8442_manifest.patch](tarball://root/attachments/some-uuid/ticket8442/8442_manifest.patch) by jdemeyer created at 2011-01-27 13:57:45",
     "created_at": "2011-01-27T13:57:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
@@ -1917,7 +1917,7 @@ archive/issue_comments_075894.json:
 }
 ```
 
-Attachment
+Attachment [8442_manifest.patch](tarball://root/attachments/some-uuid/ticket8442/8442_manifest.patch) by jdemeyer created at 2011-01-27 13:57:45
 
 
 

@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1568
 archive/issue_comments_009990.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [hypellfrob.hg](tarball://root/attachments/some-uuid/ticket1568/hypellfrob.hg) by dmharvey created at 2007-12-19 15:20:59",
     "created_at": "2007-12-19T15:20:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1568",
     "type": "issue_comment",
@@ -43,7 +43,7 @@ archive/issue_comments_009990.json:
 }
 ```
 
-Attachment
+Attachment [hypellfrob.hg](tarball://root/attachments/some-uuid/ticket1568/hypellfrob.hg) by dmharvey created at 2007-12-19 15:20:59
 
 
 
@@ -70,7 +70,7 @@ Everything applies, builds, and passes tests for me.
 archive/issue_comments_009992.json:
 ```json
 {
-    "body": "Attachment\n\nthis patch fixes a bunch of merge issues and doctest failures",
+    "body": "Attachment [trac_1568_merge-fixes.patch](tarball://root/attachments/some-uuid/ticket1568/trac_1568_merge-fixes.patch) by mabshoff created at 2008-03-20 04:19:20\n\nthis patch fixes a bunch of merge issues and doctest failures",
     "created_at": "2008-03-20T04:19:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1568",
     "type": "issue_comment",
@@ -79,7 +79,7 @@ archive/issue_comments_009992.json:
 }
 ```
 
-Attachment
+Attachment [trac_1568_merge-fixes.patch](tarball://root/attachments/some-uuid/ticket1568/trac_1568_merge-fixes.patch) by mabshoff created at 2008-03-20 04:19:20
 
 this patch fixes a bunch of merge issues and doctest failures
 

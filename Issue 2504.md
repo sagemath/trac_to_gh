@@ -57,7 +57,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2504
 archive/issue_comments_016963.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch fixes this and adds doctests illustrating the correct behavior.",
+    "body": "Attachment [2504-units_cache.patch](tarball://root/attachments/some-uuid/ticket2504/2504-units_cache.patch) by AlexGhitza created at 2008-04-13 02:27:55\n\nThe attached patch fixes this and adds doctests illustrating the correct behavior.",
     "created_at": "2008-04-13T02:27:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2504",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_016963.json:
 }
 ```
 
-Attachment
+Attachment [2504-units_cache.patch](tarball://root/attachments/some-uuid/ticket2504/2504-units_cache.patch) by AlexGhitza created at 2008-04-13 02:27:55
 
 The attached patch fixes this and adds doctests illustrating the correct behavior.
 
@@ -95,7 +95,7 @@ Wait -- if you ask for units with proof, the value is cached.  If you then ask f
 archive/issue_comments_016965.json:
 ```json
 {
-    "body": "Attachment\n\nYou are completely right.  I've replaced the patch and reorganized the code so it looks a bit cleaner.",
+    "body": "Attachment [2504-units_cache.2.patch](tarball://root/attachments/some-uuid/ticket2504/2504-units_cache.2.patch) by AlexGhitza created at 2008-04-15 20:18:32\n\nYou are completely right.  I've replaced the patch and reorganized the code so it looks a bit cleaner.",
     "created_at": "2008-04-15T20:18:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2504",
     "type": "issue_comment",
@@ -104,7 +104,7 @@ archive/issue_comments_016965.json:
 }
 ```
 
-Attachment
+Attachment [2504-units_cache.2.patch](tarball://root/attachments/some-uuid/ticket2504/2504-units_cache.2.patch) by AlexGhitza created at 2008-04-15 20:18:32
 
 You are completely right.  I've replaced the patch and reorganized the code so it looks a bit cleaner.
 

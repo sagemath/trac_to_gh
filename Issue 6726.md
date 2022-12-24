@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6726
 archive/issue_comments_055169.json:
 ```json
 {
-    "body": "Attachment\n\nbased on Sage 4.1.1.rc2",
+    "body": "Attachment [trac_6726-spell-check-numerical.patch](tarball://root/attachments/some-uuid/ticket6726/trac_6726-spell-check-numerical.patch) by mvngu created at 2009-08-10 08:56:47\n\nbased on Sage 4.1.1.rc2",
     "created_at": "2009-08-10T08:56:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6726",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_055169.json:
 }
 ```
 
-Attachment
+Attachment [trac_6726-spell-check-numerical.patch](tarball://root/attachments/some-uuid/ticket6726/trac_6726-spell-check-numerical.patch) by mvngu created at 2009-08-10 08:56:47
 
 based on Sage 4.1.1.rc2
 

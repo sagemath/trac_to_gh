@@ -70,7 +70,7 @@ Changing status from new to assigned.
 archive/issue_comments_002534.json:
 ```json
 {
-    "body": "Attachment\n\nIn addition to adding the requested functionality there is now a command timeit that one can also use from the command line, which correctly uses the preparser.",
+    "body": "Attachment [trac-506_timeit.patch](tarball://root/attachments/some-uuid/ticket506/trac-506_timeit.patch) by was created at 2008-02-15 06:34:47\n\nIn addition to adding the requested functionality there is now a command timeit that one can also use from the command line, which correctly uses the preparser.",
     "created_at": "2008-02-15T06:34:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/506",
     "type": "issue_comment",
@@ -79,7 +79,7 @@ archive/issue_comments_002534.json:
 }
 ```
 
-Attachment
+Attachment [trac-506_timeit.patch](tarball://root/attachments/some-uuid/ticket506/trac-506_timeit.patch) by was created at 2008-02-15 06:34:47
 
 In addition to adding the requested functionality there is now a command timeit that one can also use from the command line, which correctly uses the preparser.
 
@@ -90,7 +90,7 @@ In addition to adding the requested functionality there is now a command timeit 
 archive/issue_comments_002535.json:
 ```json
 {
-    "body": "Attachment\n\napply both this and trac-506.ptch",
+    "body": "Attachment [trac-506-part2_of_2.patch](tarball://root/attachments/some-uuid/ticket506/trac-506-part2_of_2.patch) by was created at 2008-02-15 06:39:33\n\napply both this and trac-506.ptch",
     "created_at": "2008-02-15T06:39:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/506",
     "type": "issue_comment",
@@ -99,7 +99,7 @@ archive/issue_comments_002535.json:
 }
 ```
 
-Attachment
+Attachment [trac-506-part2_of_2.patch](tarball://root/attachments/some-uuid/ticket506/trac-506-part2_of_2.patch) by was created at 2008-02-15 06:39:33
 
 apply both this and trac-506.ptch
 

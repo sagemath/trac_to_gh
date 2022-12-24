@@ -105,7 +105,7 @@ Makes evaluated (S-Enter, eval link, etc.) introspection show up in print while 
 archive/issue_comments_021274.json:
 ```json
 {
-    "body": "Attachment\n\nBig +1 to this design approach.",
+    "body": "Attachment [trac_3083-print-documentation.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-print-documentation.patch) by was created at 2010-01-17 08:50:35\n\nBig +1 to this design approach.",
     "created_at": "2010-01-17T08:50:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3083",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_021274.json:
 }
 ```
 
-Attachment
+Attachment [trac_3083-print-documentation.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-print-documentation.patch) by was created at 2010-01-17 08:50:35
 
 Big +1 to this design approach.
 
@@ -143,7 +143,7 @@ Rebase on a new patch set.
 archive/issue_comments_021276.json:
 ```json
 {
-    "body": "Attachment\n\nThe new patch set is:\n\n\n```\ntrac_7650-sagenb_doctesting_v6.patch\ntrac_7650-reviewer.patch\ntrac_7648-missing_indent.patch\ntrac_7663-rstrip_prompt.patch\ntrac_7847-empty-trash-no-referer.patch\ntrac_7786-template-jinja-idiomatic.patch\ntrac_7863-declare_vars_aux_js_v2.patch\ntrac_7874-typeset_interact_labels.patch\ntrac_7858-key_binding_vars_v2.patch\ntrac_7666-alphanumeric_cell_ids_B5.patch\ntrac_7666-reviewer.patch\ntrac_7835-preparsing-unicode_v2.patch\ntrac_7249_jinja2_v5.patch\ntrac_2779-sagenb-error-message.patch\n2779_2_banner.patch\ntrac_3154-spurious-u0027-output.patch\ntrac_7969-escaped-backslash.patch\ntrac_7937-sass_manifest.patch\ntrac_4217-html-system-formatting.patch\ntrac_3083-print-documentation.patch\n```\n\n\nSorry for the immense patch queue.",
+    "body": "Attachment [trac_3083-print-documentation.2.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-print-documentation.2.patch) by timdumol created at 2010-01-17 22:04:25\n\nThe new patch set is:\n\n\n```\ntrac_7650-sagenb_doctesting_v6.patch\ntrac_7650-reviewer.patch\ntrac_7648-missing_indent.patch\ntrac_7663-rstrip_prompt.patch\ntrac_7847-empty-trash-no-referer.patch\ntrac_7786-template-jinja-idiomatic.patch\ntrac_7863-declare_vars_aux_js_v2.patch\ntrac_7874-typeset_interact_labels.patch\ntrac_7858-key_binding_vars_v2.patch\ntrac_7666-alphanumeric_cell_ids_B5.patch\ntrac_7666-reviewer.patch\ntrac_7835-preparsing-unicode_v2.patch\ntrac_7249_jinja2_v5.patch\ntrac_2779-sagenb-error-message.patch\n2779_2_banner.patch\ntrac_3154-spurious-u0027-output.patch\ntrac_7969-escaped-backslash.patch\ntrac_7937-sass_manifest.patch\ntrac_4217-html-system-formatting.patch\ntrac_3083-print-documentation.patch\n```\n\n\nSorry for the immense patch queue.",
     "created_at": "2010-01-17T22:04:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3083",
     "type": "issue_comment",
@@ -152,7 +152,7 @@ archive/issue_comments_021276.json:
 }
 ```
 
-Attachment
+Attachment [trac_3083-print-documentation.2.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-print-documentation.2.patch) by timdumol created at 2010-01-17 22:04:25
 
 The new patch set is:
 
@@ -272,7 +272,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_021281.json:
 ```json
 {
-    "body": "Attachment\n\nThanks for catching all of that, especially the last point. That was what I intended, and William and others here agreed with it, so it seems to be ok to implement. This patch should implement everything. I have opened a new patch to include sagenb.notebook.tutorial into the ReST documentation too: #8011.",
+    "body": "Attachment [trac_3083-print-documentation.3.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-print-documentation.3.patch) by timdumol created at 2010-01-20 08:36:44\n\nThanks for catching all of that, especially the last point. That was what I intended, and William and others here agreed with it, so it seems to be ok to implement. This patch should implement everything. I have opened a new patch to include sagenb.notebook.tutorial into the ReST documentation too: #8011.",
     "created_at": "2010-01-20T08:36:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3083",
     "type": "issue_comment",
@@ -281,7 +281,7 @@ archive/issue_comments_021281.json:
 }
 ```
 
-Attachment
+Attachment [trac_3083-print-documentation.3.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-print-documentation.3.patch) by timdumol created at 2010-01-20 08:36:44
 
 Thanks for catching all of that, especially the last point. That was what I intended, and William and others here agreed with it, so it seems to be ok to implement. This patch should implement everything. I have opened a new patch to include sagenb.notebook.tutorial into the ReST documentation too: #8011.
 
@@ -310,7 +310,7 @@ Various fixes, small enhancements.  See comment.  Replaces previous.
 archive/issue_comments_021283.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3083-print-documentation.4.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-print-documentation.4.patch) by mpatel created at 2010-01-21 12:55:33",
     "created_at": "2010-01-21T12:55:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3083",
     "type": "issue_comment",
@@ -319,7 +319,7 @@ archive/issue_comments_021283.json:
 }
 ```
 
-Attachment
+Attachment [trac_3083-print-documentation.4.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-print-documentation.4.patch) by mpatel created at 2010-01-21 12:55:33
 
 
 
@@ -328,7 +328,7 @@ Attachment
 archive/issue_comments_021284.json:
 ```json
 {
-    "body": "Attachment\n\nV4.2\n\n* Implements the \"last point\" above in a different way.  With V3, the output formatting didn't persist --- docstrings in restarted/reopened and published worksheets were escaped.  Docstrings also appeared twice in each output cell.\n\n* Popping now\n  * Resets the cell's introspection state.\n  * Puts the object's name in the dialog title, with a bit of color.\n  * Destroys just that dialog on close.  The previous query was broad enough that it could close multiple dialogs.\n\n* Moves `\"\"\"nodoctest\\n\"\"\"` back to the top of `notebook_object.py`.\n\nAgain, great work!  My review is positive, but someone should review my changes.",
+    "body": "Attachment [trac_3083-print-documentation.4.2.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-print-documentation.4.2.patch) by mpatel created at 2010-01-21 13:15:43\n\nV4.2\n\n* Implements the \"last point\" above in a different way.  With V3, the output formatting didn't persist --- docstrings in restarted/reopened and published worksheets were escaped.  Docstrings also appeared twice in each output cell.\n\n* Popping now\n  * Resets the cell's introspection state.\n  * Puts the object's name in the dialog title, with a bit of color.\n  * Destroys just that dialog on close.  The previous query was broad enough that it could close multiple dialogs.\n\n* Moves `\"\"\"nodoctest\\n\"\"\"` back to the top of `notebook_object.py`.\n\nAgain, great work!  My review is positive, but someone should review my changes.",
     "created_at": "2010-01-21T13:15:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3083",
     "type": "issue_comment",
@@ -337,7 +337,7 @@ archive/issue_comments_021284.json:
 }
 ```
 
-Attachment
+Attachment [trac_3083-print-documentation.4.2.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-print-documentation.4.2.patch) by mpatel created at 2010-01-21 13:15:43
 
 V4.2
 
@@ -395,7 +395,7 @@ Moves the module docstring to the top as well.
 archive/issue_comments_021287.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review for your changes, but I've added a new patch that moves the module docstring of `notebook_object.py` to the top of the file, otherwise documentation won't build (the notebook must be `setup.py instal`ed for the updated documentation to build).",
+    "body": "Attachment [trac_3083-print-documentation.5.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-print-documentation.5.patch) by timdumol created at 2010-01-22 23:34:36\n\nPositive review for your changes, but I've added a new patch that moves the module docstring of `notebook_object.py` to the top of the file, otherwise documentation won't build (the notebook must be `setup.py instal`ed for the updated documentation to build).",
     "created_at": "2010-01-22T23:34:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3083",
     "type": "issue_comment",
@@ -404,7 +404,7 @@ archive/issue_comments_021287.json:
 }
 ```
 
-Attachment
+Attachment [trac_3083-print-documentation.5.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-print-documentation.5.patch) by timdumol created at 2010-01-22 23:34:36
 
 Positive review for your changes, but I've added a new patch that moves the module docstring of `notebook_object.py` to the top of the file, otherwise documentation won't build (the notebook must be `setup.py instal`ed for the updated documentation to build).
 
@@ -451,7 +451,7 @@ Don't truncate long docstrings.  Apply on top of previous patch, e.g., #8051's s
 archive/issue_comments_021290.json:
 ```json
 {
-    "body": "Attachment\n\nI've added a \"notruncate\" patch that blocks #8051.",
+    "body": "Attachment [trac_3083-notruncate.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-notruncate.patch) by mpatel created at 2010-01-30 05:53:41\n\nI've added a \"notruncate\" patch that blocks #8051.",
     "created_at": "2010-01-30T05:53:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3083",
     "type": "issue_comment",
@@ -460,7 +460,7 @@ archive/issue_comments_021290.json:
 }
 ```
 
-Attachment
+Attachment [trac_3083-notruncate.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-notruncate.patch) by mpatel created at 2010-01-30 05:53:41
 
 I've added a "notruncate" patch that blocks #8051.
 

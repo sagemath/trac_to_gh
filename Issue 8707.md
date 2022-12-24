@@ -62,7 +62,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8707
 archive/issue_comments_079418.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8707-5x_faster_latex-nt.patch](tarball://root/attachments/some-uuid/ticket8707/trac_8707-5x_faster_latex-nt.patch) by nthiery created at 2010-04-17 22:10:27",
     "created_at": "2010-04-17T22:10:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8707",
     "type": "issue_comment",
@@ -71,7 +71,7 @@ archive/issue_comments_079418.json:
 }
 ```
 
-Attachment
+Attachment [trac_8707-5x_faster_latex-nt.patch](tarball://root/attachments/some-uuid/ticket8707/trac_8707-5x_faster_latex-nt.patch) by nthiery created at 2010-04-17 22:10:27
 
 
 

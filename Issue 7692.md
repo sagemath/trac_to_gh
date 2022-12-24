@@ -69,7 +69,7 @@ Steven
 archive/issue_comments_065991.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [update-sloane](tarball://root/attachments/some-uuid/ticket7692/update-sloane) by was created at 2009-12-18 01:14:33",
     "created_at": "2009-12-18T01:14:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7692",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_065991.json:
 }
 ```
 
-Attachment
+Attachment [update-sloane](tarball://root/attachments/some-uuid/ticket7692/update-sloane) by was created at 2009-12-18 01:14:33
 
 
 
@@ -309,7 +309,7 @@ Jaap
 archive/issue_comments_065999.json:
 ```json
 {
-    "body": "Attachment\n\nPatch to databases/sloane.py",
+    "body": "Attachment [12063.patch](tarball://root/attachments/some-uuid/ticket7692/12063.patch) by ssivek created at 2009-12-21 21:53:19\n\nPatch to databases/sloane.py",
     "created_at": "2009-12-21T21:53:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7692",
     "type": "issue_comment",
@@ -318,7 +318,7 @@ archive/issue_comments_065999.json:
 }
 ```
 
-Attachment
+Attachment [12063.patch](tarball://root/attachments/some-uuid/ticket7692/12063.patch) by ssivek created at 2009-12-21 21:53:19
 
 Patch to databases/sloane.py
 
@@ -458,7 +458,7 @@ Jaap
 archive/issue_comments_066005.json:
 ```json
 {
-    "body": "Attachment\n\nIdentical patch, but with the right naming convention",
+    "body": "Attachment [trac_7692.patch](tarball://root/attachments/some-uuid/ticket7692/trac_7692.patch) by ssivek created at 2009-12-22 18:07:44\n\nIdentical patch, but with the right naming convention",
     "created_at": "2009-12-22T18:07:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7692",
     "type": "issue_comment",
@@ -467,7 +467,7 @@ archive/issue_comments_066005.json:
 }
 ```
 
-Attachment
+Attachment [trac_7692.patch](tarball://root/attachments/some-uuid/ticket7692/trac_7692.patch) by ssivek created at 2009-12-22 18:07:44
 
 Identical patch, but with the right naming convention
 

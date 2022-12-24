@@ -67,7 +67,7 @@ This patch applies cleanly on sage-4.0 and is part of the sage-combinat tree.
 archive/issue_comments_050016.json:
 ```json
 {
-    "body": "Attachment\n\nI just reloaded the patch. There was a similar ReST problem a few lines above in the same file.",
+    "body": "Attachment [graphs_doc_fix_6264-sl.patch](tarball://root/attachments/some-uuid/ticket6264/graphs_doc_fix_6264-sl.patch) by slabbe created at 2009-06-12 04:06:08\n\nI just reloaded the patch. There was a similar ReST problem a few lines above in the same file.",
     "created_at": "2009-06-12T04:06:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6264",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_050016.json:
 }
 ```
 
-Attachment
+Attachment [graphs_doc_fix_6264-sl.patch](tarball://root/attachments/some-uuid/ticket6264/graphs_doc_fix_6264-sl.patch) by slabbe created at 2009-06-12 04:06:08
 
 I just reloaded the patch. There was a similar ReST problem a few lines above in the same file.
 

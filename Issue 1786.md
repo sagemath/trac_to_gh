@@ -110,7 +110,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1786
 archive/issue_comments_011304.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1786.patch](tarball://root/attachments/some-uuid/ticket1786/1786.patch) by mhansen created at 2008-01-16 01:19:19",
     "created_at": "2008-01-16T01:19:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1786",
     "type": "issue_comment",
@@ -119,7 +119,7 @@ archive/issue_comments_011304.json:
 }
 ```
 
-Attachment
+Attachment [1786.patch](tarball://root/attachments/some-uuid/ticket1786/1786.patch) by mhansen created at 2008-01-16 01:19:19
 
 
 

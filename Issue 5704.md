@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5704
 archive/issue_comments_044576.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [egros.patch](tarball://root/attachments/some-uuid/ticket5704/egros.patch) by cremona created at 2009-04-07 09:41:04",
     "created_at": "2009-04-07T09:41:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5704",
     "type": "issue_comment",
@@ -49,7 +49,7 @@ archive/issue_comments_044576.json:
 }
 ```
 
-Attachment
+Attachment [egros.patch](tarball://root/attachments/some-uuid/ticket5704/egros.patch) by cremona created at 2009-04-07 09:41:04
 
 
 

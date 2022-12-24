@@ -174,7 +174,7 @@ I'm just running a testall, I'll check out any errors in the morning.
 archive/issue_comments_029514.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-4091.patch](tarball://root/attachments/some-uuid/ticket4091/trac-4091.patch) by craigcitro created at 2008-09-11 08:24:25",
     "created_at": "2008-09-11T08:24:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4091",
     "type": "issue_comment",
@@ -183,7 +183,7 @@ archive/issue_comments_029514.json:
 }
 ```
 
-Attachment
+Attachment [trac-4091.patch](tarball://root/attachments/some-uuid/ticket4091/trac-4091.patch) by craigcitro created at 2008-09-11 08:24:25
 
 
 
@@ -228,7 +228,7 @@ Indeed, I should have added more documentation about this. I've added some docum
 archive/issue_comments_029517.json:
 ```json
 {
-    "body": "Attachment\n\nI am happy with the second patch. Any followup should be dealt with via a new ticket since this one is holding up 3.1.2.rc2 :)\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac-4091-doc.patch](tarball://root/attachments/some-uuid/ticket4091/trac-4091-doc.patch) by mabshoff created at 2008-09-11 14:49:23\n\nI am happy with the second patch. Any followup should be dealt with via a new ticket since this one is holding up 3.1.2.rc2 :)\n\nCheers,\n\nMichael",
     "created_at": "2008-09-11T14:49:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4091",
     "type": "issue_comment",
@@ -237,7 +237,7 @@ archive/issue_comments_029517.json:
 }
 ```
 
-Attachment
+Attachment [trac-4091-doc.patch](tarball://root/attachments/some-uuid/ticket4091/trac-4091-doc.patch) by mabshoff created at 2008-09-11 14:49:23
 
 I am happy with the second patch. Any followup should be dealt with via a new ticket since this one is holding up 3.1.2.rc2 :)
 

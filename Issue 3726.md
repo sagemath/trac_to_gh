@@ -38,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3726
 archive/issue_comments_026437.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3726-part1.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part1.patch) by was created at 2008-07-25 16:22:51",
     "created_at": "2008-07-25T16:22:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3726",
     "type": "issue_comment",
@@ -47,7 +47,7 @@ archive/issue_comments_026437.json:
 }
 ```
 
-Attachment
+Attachment [sage-3726-part1.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part1.patch) by was created at 2008-07-25 16:22:51
 
 
 
@@ -56,7 +56,7 @@ Attachment
 archive/issue_comments_026438.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3726-part2.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part2.patch) by was created at 2008-07-26 09:49:49",
     "created_at": "2008-07-26T09:49:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3726",
     "type": "issue_comment",
@@ -65,7 +65,7 @@ archive/issue_comments_026438.json:
 }
 ```
 
-Attachment
+Attachment [sage-3726-part2.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part2.patch) by was created at 2008-07-26 09:49:49
 
 
 
@@ -74,7 +74,7 @@ Attachment
 archive/issue_comments_026439.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3726-part3.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part3.patch) by was created at 2008-07-30 01:33:06",
     "created_at": "2008-07-30T01:33:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3726",
     "type": "issue_comment",
@@ -83,7 +83,7 @@ archive/issue_comments_026439.json:
 }
 ```
 
-Attachment
+Attachment [sage-3726-part3.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part3.patch) by was created at 2008-07-30 01:33:06
 
 
 
@@ -92,7 +92,7 @@ Attachment
 archive/issue_comments_026440.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3726-part4.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part4.patch) by was created at 2008-08-02 07:06:10",
     "created_at": "2008-08-02T07:06:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3726",
     "type": "issue_comment",
@@ -101,7 +101,7 @@ archive/issue_comments_026440.json:
 }
 ```
 
-Attachment
+Attachment [sage-3726-part4.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part4.patch) by was created at 2008-08-02 07:06:10
 
 
 
@@ -110,7 +110,7 @@ Attachment
 archive/issue_comments_026441.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3726-part6.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part6.patch) by was created at 2008-08-03 04:07:39",
     "created_at": "2008-08-03T04:07:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3726",
     "type": "issue_comment",
@@ -119,7 +119,7 @@ archive/issue_comments_026441.json:
 }
 ```
 
-Attachment
+Attachment [sage-3726-part6.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part6.patch) by was created at 2008-08-03 04:07:39
 
 
 
@@ -128,7 +128,7 @@ Attachment
 archive/issue_comments_026442.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patches bring the coverage of this code to 100% and cleanly wrap a solid set of functionality.",
+    "body": "Attachment [sage-3726-part7.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part7.patch) by was created at 2008-08-04 01:38:13\n\nThe attached patches bring the coverage of this code to 100% and cleanly wrap a solid set of functionality.",
     "created_at": "2008-08-04T01:38:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3726",
     "type": "issue_comment",
@@ -137,7 +137,7 @@ archive/issue_comments_026442.json:
 }
 ```
 
-Attachment
+Attachment [sage-3726-part7.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part7.patch) by was created at 2008-08-04 01:38:13
 
 The attached patches bring the coverage of this code to 100% and cleanly wrap a solid set of functionality.
 
@@ -148,7 +148,7 @@ The attached patches bring the coverage of this code to 100% and cleanly wrap a 
 archive/issue_comments_026443.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3726-part8.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part8.patch) by was created at 2008-08-04 12:33:02",
     "created_at": "2008-08-04T12:33:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3726",
     "type": "issue_comment",
@@ -157,7 +157,7 @@ archive/issue_comments_026443.json:
 }
 ```
 
-Attachment
+Attachment [sage-3726-part8.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part8.patch) by was created at 2008-08-04 12:33:02
 
 
 
@@ -166,7 +166,7 @@ Attachment
 archive/issue_comments_026444.json:
 ```json
 {
-    "body": "Attachment\n\npatches 1 - 8 in a clean bundle against 3.0.5",
+    "body": "Attachment [sage-3726-part9.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part9.patch) by was created at 2008-08-04 12:34:03\n\npatches 1 - 8 in a clean bundle against 3.0.5",
     "created_at": "2008-08-04T12:34:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3726",
     "type": "issue_comment",
@@ -175,7 +175,7 @@ archive/issue_comments_026444.json:
 }
 ```
 
-Attachment
+Attachment [sage-3726-part9.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part9.patch) by was created at 2008-08-04 12:34:03
 
 patches 1 - 8 in a clean bundle against 3.0.5
 
@@ -186,7 +186,7 @@ patches 1 - 8 in a clean bundle against 3.0.5
 archive/issue_comments_026445.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [hmm-bundle-3.0.5.hg](tarball://root/attachments/some-uuid/ticket3726/hmm-bundle-3.0.5.hg) by was created at 2008-08-05 01:05:49",
     "created_at": "2008-08-05T01:05:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3726",
     "type": "issue_comment",
@@ -195,7 +195,7 @@ archive/issue_comments_026445.json:
 }
 ```
 
-Attachment
+Attachment [hmm-bundle-3.0.5.hg](tarball://root/attachments/some-uuid/ticket3726/hmm-bundle-3.0.5.hg) by was created at 2008-08-05 01:05:49
 
 
 

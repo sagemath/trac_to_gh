@@ -151,7 +151,7 @@ Changing status from new to assigned.
 archive/issue_comments_003043.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [590.patch](tarball://root/attachments/some-uuid/ticket590/590.patch) by mhansen created at 2008-02-29 07:34:31",
     "created_at": "2008-02-29T07:34:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/590",
     "type": "issue_comment",
@@ -160,7 +160,7 @@ archive/issue_comments_003043.json:
 }
 ```
 
-Attachment
+Attachment [590.patch](tarball://root/attachments/some-uuid/ticket590/590.patch) by mhansen created at 2008-02-29 07:34:31
 
 
 
@@ -327,7 +327,7 @@ Yep.  Python like to be able to compare everything.  With the new coercion stuff
 archive/issue_comments_003051.json:
 ```json
 {
-    "body": "Attachment\n\nokay, I'm happy now.",
+    "body": "Attachment [590-referee.patch](tarball://root/attachments/some-uuid/ticket590/590-referee.patch) by dmharvey created at 2008-03-04 00:56:22\n\nokay, I'm happy now.",
     "created_at": "2008-03-04T00:56:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/590",
     "type": "issue_comment",
@@ -336,7 +336,7 @@ archive/issue_comments_003051.json:
 }
 ```
 
-Attachment
+Attachment [590-referee.patch](tarball://root/attachments/some-uuid/ticket590/590-referee.patch) by dmharvey created at 2008-03-04 00:56:22
 
 okay, I'm happy now.
 

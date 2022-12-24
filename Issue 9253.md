@@ -51,7 +51,7 @@ Changing status from new to needs_work.
 archive/issue_comments_087085.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9253.patch](tarball://root/attachments/some-uuid/ticket9253/trac_9253.patch) by rlm created at 2010-06-17 19:05:56",
     "created_at": "2010-06-17T19:05:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9253",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_087085.json:
 }
 ```
 
-Attachment
+Attachment [trac_9253.patch](tarball://root/attachments/some-uuid/ticket9253/trac_9253.patch) by rlm created at 2010-06-17 19:05:56
 
 
 

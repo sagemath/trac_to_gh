@@ -123,7 +123,7 @@ rebased against 4.5.alpha4 + #9456
 archive/issue_comments_090053.json:
 ```json
 {
-    "body": "Attachment\n\nNew approach, after a [discussion on sage-devel](http://groups.google.com/group/sage-devel/t/3ba410046ae641f8): create a new repo at the top level tracking the appropriate files.  I'm attaching a new version of the patch for the scripts repo.  Someone -- the release manager, I guess -- also needs to create the top level repo, because I don't know how to do this in such a way that it can be posted on a ticket.  Here are the instructions:\n\n- move the attached file \"hgignore\" to SAGE_ROOT/.hgignore\n- cd $SAGE_ROOT\n- hg init .\n- hg add .hgignore COPYING.txt README.txt makefile sage sage-python\n- cd spkg\n- hg add README.txt gen_html install pipestatus \n- cd standard\n- hg add README.txt deps libdist_filelist newest_version\n- hg add notes.txt numeric-24.2.txt\n\n(I don't know if we really need these last two files, but this is probably not the ticket for making such decisions.)  Finally, do\n\n- hg commit\n\nWhen you run \"sage -sdist ...\" it should add a tag for the new version of Sage.\n\nThis does not create a new spkg for the files in SAGE_ROOT, since those files have to be in place when you unpack the sage tar file.  But it creates the repository so that people can post patches to the trac server, etc.",
+    "body": "Attachment [trac_9433-scripts.2.patch](tarball://root/attachments/some-uuid/ticket9433/trac_9433-scripts.2.patch) by jhpalmieri created at 2010-07-08 22:17:57\n\nNew approach, after a [discussion on sage-devel](http://groups.google.com/group/sage-devel/t/3ba410046ae641f8): create a new repo at the top level tracking the appropriate files.  I'm attaching a new version of the patch for the scripts repo.  Someone -- the release manager, I guess -- also needs to create the top level repo, because I don't know how to do this in such a way that it can be posted on a ticket.  Here are the instructions:\n\n- move the attached file \"hgignore\" to SAGE_ROOT/.hgignore\n- cd $SAGE_ROOT\n- hg init .\n- hg add .hgignore COPYING.txt README.txt makefile sage sage-python\n- cd spkg\n- hg add README.txt gen_html install pipestatus \n- cd standard\n- hg add README.txt deps libdist_filelist newest_version\n- hg add notes.txt numeric-24.2.txt\n\n(I don't know if we really need these last two files, but this is probably not the ticket for making such decisions.)  Finally, do\n\n- hg commit\n\nWhen you run \"sage -sdist ...\" it should add a tag for the new version of Sage.\n\nThis does not create a new spkg for the files in SAGE_ROOT, since those files have to be in place when you unpack the sage tar file.  But it creates the repository so that people can post patches to the trac server, etc.",
     "created_at": "2010-07-08T22:17:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9433",
     "type": "issue_comment",
@@ -132,7 +132,7 @@ archive/issue_comments_090053.json:
 }
 ```
 
-Attachment
+Attachment [trac_9433-scripts.2.patch](tarball://root/attachments/some-uuid/ticket9433/trac_9433-scripts.2.patch) by jhpalmieri created at 2010-07-08 22:17:57
 
 New approach, after a [discussion on sage-devel](http://groups.google.com/group/sage-devel/t/3ba410046ae641f8): create a new repo at the top level tracking the appropriate files.  I'm attaching a new version of the patch for the scripts repo.  Someone -- the release manager, I guess -- also needs to create the top level repo, because I don't know how to do this in such a way that it can be posted on a ticket.  Here are the instructions:
 
@@ -197,7 +197,7 @@ main repo: add "hg_root" command to Sage
 archive/issue_comments_090056.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:5 was]:\n> The test would be to take a clean Sage, do the above, then do \"sage -sdist ...\" and make sure that in the sdist the above is all still there. \n\nThis works for me, but other people should definitely look at it carefully.",
+    "body": "Attachment [trac_9433-sage-repo.patch](tarball://root/attachments/some-uuid/ticket9433/trac_9433-sage-repo.patch) by jhpalmieri created at 2010-07-09 04:42:31\n\nReplying to [comment:5 was]:\n> The test would be to take a clean Sage, do the above, then do \"sage -sdist ...\" and make sure that in the sdist the above is all still there. \n\nThis works for me, but other people should definitely look at it carefully.",
     "created_at": "2010-07-09T04:42:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9433",
     "type": "issue_comment",
@@ -206,7 +206,7 @@ archive/issue_comments_090056.json:
 }
 ```
 
-Attachment
+Attachment [trac_9433-sage-repo.patch](tarball://root/attachments/some-uuid/ticket9433/trac_9433-sage-repo.patch) by jhpalmieri created at 2010-07-09 04:42:31
 
 Replying to [comment:5 was]:
 > The test would be to take a clean Sage, do the above, then do "sage -sdist ..." and make sure that in the sdist the above is all still there. 
@@ -351,7 +351,7 @@ new version, using "hg clone". apply to scripts repo.
 archive/issue_comments_090063.json:
 ```json
 {
-    "body": "Attachment\n\nnew version, using \"hg clone\". apply to scripts repo.",
+    "body": "Attachment [trac_9433-scripts.3.patch](tarball://root/attachments/some-uuid/ticket9433/trac_9433-scripts.3.patch) by jhpalmieri created at 2010-07-28 17:38:26\n\nnew version, using \"hg clone\". apply to scripts repo.",
     "created_at": "2010-07-28T17:38:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9433",
     "type": "issue_comment",
@@ -360,7 +360,7 @@ archive/issue_comments_090063.json:
 }
 ```
 
-Attachment
+Attachment [trac_9433-scripts.3.patch](tarball://root/attachments/some-uuid/ticket9433/trac_9433-scripts.3.patch) by jhpalmieri created at 2010-07-28 17:38:26
 
 new version, using "hg clone". apply to scripts repo.
 
@@ -371,7 +371,7 @@ new version, using "hg clone". apply to scripts repo.
 archive/issue_comments_090064.json:
 ```json
 {
-    "body": "Attachment\n\nNote that if you use \"hg clone ...\" to copy the repo, you have to do it earlier in the process: it apparently needs to be done with an empty directory, so in sage-sdist it is now done right after creating $TMP.",
+    "body": "Attachment [trac_9433-scripts.patch](tarball://root/attachments/some-uuid/ticket9433/trac_9433-scripts.patch) by jhpalmieri created at 2010-07-28 17:39:55\n\nNote that if you use \"hg clone ...\" to copy the repo, you have to do it earlier in the process: it apparently needs to be done with an empty directory, so in sage-sdist it is now done right after creating $TMP.",
     "created_at": "2010-07-28T17:39:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9433",
     "type": "issue_comment",
@@ -380,7 +380,7 @@ archive/issue_comments_090064.json:
 }
 ```
 
-Attachment
+Attachment [trac_9433-scripts.patch](tarball://root/attachments/some-uuid/ticket9433/trac_9433-scripts.patch) by jhpalmieri created at 2010-07-28 17:39:55
 
 Note that if you use "hg clone ..." to copy the repo, you have to do it earlier in the process: it apparently needs to be done with an empty directory, so in sage-sdist it is now done right after creating $TMP.
 
@@ -1058,7 +1058,7 @@ fixes problems found by mpatel. apply to scripts repo
 archive/issue_comments_090093.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9433-scripts.v2.patch](tarball://root/attachments/some-uuid/ticket9433/trac_9433-scripts.v2.patch) by jhpalmieri created at 2010-09-24 17:14:21",
     "created_at": "2010-09-24T17:14:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9433",
     "type": "issue_comment",
@@ -1067,7 +1067,7 @@ archive/issue_comments_090093.json:
 }
 ```
 
-Attachment
+Attachment [trac_9433-scripts.v2.patch](tarball://root/attachments/some-uuid/ticket9433/trac_9433-scripts.v2.patch) by jhpalmieri created at 2010-09-24 17:14:21
 
 
 
@@ -1350,7 +1350,7 @@ I'm attaching new versions of `root-spkg-install` and `hg_script` which omit the
 archive/issue_comments_090105.json:
 ```json
 {
-    "body": "Attachment\n\nscript to initialize repository. for use by the release manager.",
+    "body": "Attachment [hg_script](tarball://root/attachments/some-uuid/ticket9433/hg_script) by jhpalmieri created at 2010-09-24 22:20:51\n\nscript to initialize repository. for use by the release manager.",
     "created_at": "2010-09-24T22:20:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9433",
     "type": "issue_comment",
@@ -1359,7 +1359,7 @@ archive/issue_comments_090105.json:
 }
 ```
 
-Attachment
+Attachment [hg_script](tarball://root/attachments/some-uuid/ticket9433/hg_script) by jhpalmieri created at 2010-09-24 22:20:51
 
 script to initialize repository. for use by the release manager.
 
@@ -1370,7 +1370,7 @@ script to initialize repository. for use by the release manager.
 archive/issue_comments_090106.json:
 ```json
 {
-    "body": "Attachment\n\nthe file SAGE_ROOT/spkg/root-spkg-install",
+    "body": "Attachment [root-spkg-install](tarball://root/attachments/some-uuid/ticket9433/root-spkg-install) by jhpalmieri created at 2010-09-24 22:21:10\n\nthe file SAGE_ROOT/spkg/root-spkg-install",
     "created_at": "2010-09-24T22:21:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9433",
     "type": "issue_comment",
@@ -1379,7 +1379,7 @@ archive/issue_comments_090106.json:
 }
 ```
 
-Attachment
+Attachment [root-spkg-install](tarball://root/attachments/some-uuid/ticket9433/root-spkg-install) by jhpalmieri created at 2010-09-24 22:21:10
 
 the file SAGE_ROOT/spkg/root-spkg-install
 
@@ -1615,7 +1615,7 @@ apply to scripts repo
 archive/issue_comments_090114.json:
 ```json
 {
-    "body": "Attachment\n\nfor reference only: diff between v2 and v3 patches.",
+    "body": "Attachment [trac_9433-scripts.v3.patch](tarball://root/attachments/some-uuid/ticket9433/trac_9433-scripts.v3.patch) by jhpalmieri created at 2010-09-25 02:17:51\n\nfor reference only: diff between v2 and v3 patches.",
     "created_at": "2010-09-25T02:17:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9433",
     "type": "issue_comment",
@@ -1624,7 +1624,7 @@ archive/issue_comments_090114.json:
 }
 ```
 
-Attachment
+Attachment [trac_9433-scripts.v3.patch](tarball://root/attachments/some-uuid/ticket9433/trac_9433-scripts.v3.patch) by jhpalmieri created at 2010-09-25 02:17:51
 
 for reference only: diff between v2 and v3 patches.
 
@@ -1635,7 +1635,7 @@ for reference only: diff between v2 and v3 patches.
 archive/issue_comments_090115.json:
 ```json
 {
-    "body": "Attachment\n\nHere are new versions; the only difference with any content (i.e., other than capitalization, I think) is from sage-upgrade:\n\n```diff\n-./pipestatus \"sage-spkg $ROOT_REPO 2>&1\" \"tee -a $SAGE_ROOT/spkg/logs/$ROOT_REPO.log\"\n+./pipestatus \"sage-spkg $ROOT_REPO 2>&1\" \"tee -a '$SAGE_ROOT'/spkg/logs/$ROOT_REPO.log\"\n+\n+if [ $? -ne 0 ]; then\n+    echo \"Error installing Sage root repository.\"\n+    exit 1\n+fi\n```\n\n\nI don't know why base packages don't get upgraded.  That's for another ticket.\n\n> Should I create an upgrade path on sage.math?\n\nI meant so that people could test \"sage -upgrade\".   I'll do this pretty soon.",
+    "body": "Attachment [trac_9433-scripts.v2-to-v3.patch](tarball://root/attachments/some-uuid/ticket9433/trac_9433-scripts.v2-to-v3.patch) by jhpalmieri created at 2010-09-25 02:21:05\n\nHere are new versions; the only difference with any content (i.e., other than capitalization, I think) is from sage-upgrade:\n\n```diff\n-./pipestatus \"sage-spkg $ROOT_REPO 2>&1\" \"tee -a $SAGE_ROOT/spkg/logs/$ROOT_REPO.log\"\n+./pipestatus \"sage-spkg $ROOT_REPO 2>&1\" \"tee -a '$SAGE_ROOT'/spkg/logs/$ROOT_REPO.log\"\n+\n+if [ $? -ne 0 ]; then\n+    echo \"Error installing Sage root repository.\"\n+    exit 1\n+fi\n```\n\n\nI don't know why base packages don't get upgraded.  That's for another ticket.\n\n> Should I create an upgrade path on sage.math?\n\nI meant so that people could test \"sage -upgrade\".   I'll do this pretty soon.",
     "created_at": "2010-09-25T02:21:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9433",
     "type": "issue_comment",
@@ -1644,7 +1644,7 @@ archive/issue_comments_090115.json:
 }
 ```
 
-Attachment
+Attachment [trac_9433-scripts.v2-to-v3.patch](tarball://root/attachments/some-uuid/ticket9433/trac_9433-scripts.v2-to-v3.patch) by jhpalmieri created at 2010-09-25 02:21:05
 
 Here are new versions; the only difference with any content (i.e., other than capitalization, I think) is from sage-upgrade:
 
@@ -1672,7 +1672,7 @@ I meant so that people could test "sage -upgrade".   I'll do this pretty soon.
 archive/issue_comments_090116.json:
 ```json
 {
-    "body": "Attachment\n\nrebased for 4.6.1.alpha0",
+    "body": "Attachment [trac_9433-sage-repo.2.patch](tarball://root/attachments/some-uuid/ticket9433/trac_9433-sage-repo.2.patch) by ddrake created at 2010-11-05 11:24:51\n\nrebased for 4.6.1.alpha0",
     "created_at": "2010-11-05T11:24:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9433",
     "type": "issue_comment",
@@ -1681,7 +1681,7 @@ archive/issue_comments_090116.json:
 }
 ```
 
-Attachment
+Attachment [trac_9433-sage-repo.2.patch](tarball://root/attachments/some-uuid/ticket9433/trac_9433-sage-repo.2.patch) by ddrake created at 2010-11-05 11:24:51
 
 rebased for 4.6.1.alpha0
 
@@ -1692,7 +1692,7 @@ rebased for 4.6.1.alpha0
 archive/issue_comments_090117.json:
 ```json
 {
-    "body": "Attachment\n\nrebased for 4.6.1.alpha0",
+    "body": "Attachment [trac_9433-scripts.v3-rebased.patch](tarball://root/attachments/some-uuid/ticket9433/trac_9433-scripts.v3-rebased.patch) by ddrake created at 2010-11-05 11:25:15\n\nrebased for 4.6.1.alpha0",
     "created_at": "2010-11-05T11:25:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9433",
     "type": "issue_comment",
@@ -1701,7 +1701,7 @@ archive/issue_comments_090117.json:
 }
 ```
 
-Attachment
+Attachment [trac_9433-scripts.v3-rebased.patch](tarball://root/attachments/some-uuid/ticket9433/trac_9433-scripts.v3-rebased.patch) by ddrake created at 2010-11-05 11:25:15
 
 rebased for 4.6.1.alpha0
 
@@ -1811,7 +1811,7 @@ I'm posting a "v4" patch including this and the above change in sage-sdist (quot
 archive/issue_comments_090121.json:
 ```json
 {
-    "body": "Attachment\n\nrebased for 4.6.1.alpha0",
+    "body": "Attachment [trac_9433-scripts.v4.patch](tarball://root/attachments/some-uuid/ticket9433/trac_9433-scripts.v4.patch) by jhpalmieri created at 2010-11-05 21:53:11\n\nrebased for 4.6.1.alpha0",
     "created_at": "2010-11-05T21:53:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9433",
     "type": "issue_comment",
@@ -1820,7 +1820,7 @@ archive/issue_comments_090121.json:
 }
 ```
 
-Attachment
+Attachment [trac_9433-scripts.v4.patch](tarball://root/attachments/some-uuid/ticket9433/trac_9433-scripts.v4.patch) by jhpalmieri created at 2010-11-05 21:53:11
 
 rebased for 4.6.1.alpha0
 
@@ -2193,7 +2193,7 @@ the file SAGE_ROOT/spkg/install
 archive/issue_comments_090134.json:
 ```json
 {
-    "body": "Attachment\n\ndiff between current install and new one; for reference only",
+    "body": "Attachment [install.patch](tarball://root/attachments/some-uuid/ticket9433/install.patch) by jhpalmieri created at 2010-11-06 17:55:53\n\ndiff between current install and new one; for reference only",
     "created_at": "2010-11-06T17:55:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9433",
     "type": "issue_comment",
@@ -2202,7 +2202,7 @@ archive/issue_comments_090134.json:
 }
 ```
 
-Attachment
+Attachment [install.patch](tarball://root/attachments/some-uuid/ticket9433/install.patch) by jhpalmieri created at 2010-11-06 17:55:53
 
 diff between current install and new one; for reference only
 
@@ -2213,7 +2213,7 @@ diff between current install and new one; for reference only
 archive/issue_comments_090135.json:
 ```json
 {
-    "body": "Attachment\n\nthe file SAGE_ROOT/spkg/root-spkg-install",
+    "body": "Attachment [root-spkg-install.v2](tarball://root/attachments/some-uuid/ticket9433/root-spkg-install.v2) by jhpalmieri created at 2010-11-06 17:57:26\n\nthe file SAGE_ROOT/spkg/root-spkg-install",
     "created_at": "2010-11-06T17:57:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9433",
     "type": "issue_comment",
@@ -2222,7 +2222,7 @@ archive/issue_comments_090135.json:
 }
 ```
 
-Attachment
+Attachment [root-spkg-install.v2](tarball://root/attachments/some-uuid/ticket9433/root-spkg-install.v2) by jhpalmieri created at 2010-11-06 17:57:26
 
 the file SAGE_ROOT/spkg/root-spkg-install
 
@@ -2233,7 +2233,7 @@ the file SAGE_ROOT/spkg/root-spkg-install
 archive/issue_comments_090136.json:
 ```json
 {
-    "body": "Attachment\n\npatch for scripts repo",
+    "body": "Attachment [trac_9433-scripts.v5.patch](tarball://root/attachments/some-uuid/ticket9433/trac_9433-scripts.v5.patch) by jhpalmieri created at 2010-11-06 17:58:05\n\npatch for scripts repo",
     "created_at": "2010-11-06T17:58:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9433",
     "type": "issue_comment",
@@ -2242,7 +2242,7 @@ archive/issue_comments_090136.json:
 }
 ```
 
-Attachment
+Attachment [trac_9433-scripts.v5.patch](tarball://root/attachments/some-uuid/ticket9433/trac_9433-scripts.v5.patch) by jhpalmieri created at 2010-11-06 17:58:05
 
 patch for scripts repo
 
@@ -2271,7 +2271,7 @@ the file SAGE_ROOT/spkg/standard/deps
 archive/issue_comments_090138.json:
 ```json
 {
-    "body": "Attachment\n\ndiff between current deps and new one; for reference only",
+    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket9433/deps) by jhpalmieri created at 2010-11-06 18:47:42\n\ndiff between current deps and new one; for reference only",
     "created_at": "2010-11-06T18:47:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9433",
     "type": "issue_comment",
@@ -2280,7 +2280,7 @@ archive/issue_comments_090138.json:
 }
 ```
 
-Attachment
+Attachment [deps](tarball://root/attachments/some-uuid/ticket9433/deps) by jhpalmieri created at 2010-11-06 18:47:42
 
 diff between current deps and new one; for reference only
 
@@ -2291,7 +2291,7 @@ diff between current deps and new one; for reference only
 archive/issue_comments_090139.json:
 ```json
 {
-    "body": "Attachment\n\nFor what it's worth, I've done the following successfully with the current versions:\n\n- build from scratch (\"./sage -sdist ...\" produced the tar file [http://sage.math.washington.edu/home/palmieri/misc/9433/sage-4.6.1.9433.alpha0.tar](http://sage.math.washington.edu/home/palmieri/misc/9433/sage-4.6.1.9433.alpha0.tar))\n- upgrade from 4.6.1.alpha0, and then upgrade again to the version with a modified root repo\n- same, but started from 4.4\n\nThis was all on sage.math.  I also tested 4.6.1.alpha0 on OS X 10.6 with no problems.\n\nI'm testing \"./sage -bdist ...\", which I forgot to do earlier.  I'm also testing a build from scratch on another platform.",
+    "body": "Attachment [deps.patch](tarball://root/attachments/some-uuid/ticket9433/deps.patch) by jhpalmieri created at 2010-11-07 00:03:30\n\nFor what it's worth, I've done the following successfully with the current versions:\n\n- build from scratch (\"./sage -sdist ...\" produced the tar file [http://sage.math.washington.edu/home/palmieri/misc/9433/sage-4.6.1.9433.alpha0.tar](http://sage.math.washington.edu/home/palmieri/misc/9433/sage-4.6.1.9433.alpha0.tar))\n- upgrade from 4.6.1.alpha0, and then upgrade again to the version with a modified root repo\n- same, but started from 4.4\n\nThis was all on sage.math.  I also tested 4.6.1.alpha0 on OS X 10.6 with no problems.\n\nI'm testing \"./sage -bdist ...\", which I forgot to do earlier.  I'm also testing a build from scratch on another platform.",
     "created_at": "2010-11-07T00:03:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9433",
     "type": "issue_comment",
@@ -2300,7 +2300,7 @@ archive/issue_comments_090139.json:
 }
 ```
 
-Attachment
+Attachment [deps.patch](tarball://root/attachments/some-uuid/ticket9433/deps.patch) by jhpalmieri created at 2010-11-07 00:03:30
 
 For what it's worth, I've done the following successfully with the current versions:
 
@@ -2653,7 +2653,7 @@ I just added "VERSION.txt" to the .hgignore file, for compatibility with #9434.
 archive/issue_comments_090155.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated spkg/install",
+    "body": "Attachment [install.2](tarball://root/attachments/some-uuid/ticket9433/install.2) by vbraun created at 2011-01-13 07:13:22\n\nUpdated spkg/install",
     "created_at": "2011-01-13T07:13:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9433",
     "type": "issue_comment",
@@ -2662,7 +2662,7 @@ archive/issue_comments_090155.json:
 }
 ```
 
-Attachment
+Attachment [install.2](tarball://root/attachments/some-uuid/ticket9433/install.2) by vbraun created at 2011-01-13 07:13:22
 
 Updated spkg/install
 
@@ -2709,7 +2709,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_090158.json:
 ```json
 {
-    "body": "Attachment\n\nAfter some rediffing I built it successfully on top of Sage-4.6.1.rc1 (identical to the Sage-4.6.1 release) with the following updated files:\n\n* `trac_9433-scripts.v5.patch` -> `trac_9433-scripts.v5.2.patch`\n* `install` -> `install.2`\n* `deps` -> `deps.2`\n\nI've changed the main ticket documentation accordingly. \n\nFor reference, here is a list of files in the root repository:\n\n```\n[vbraun@volker-two sage-4.6.1.vb2]$ hg st --all | grep -v '^I'\nC .hgignore\nC .hgtags\nC COPYING.txt\nC Makefile\nC README.txt\nC ipython/ipy_profile_sh.py\nC ipython/ipy_user_conf.py\nC ipython/ipythonrc\nC ipython/ipythonrc-math\nC ipython/ipythonrc-numeric\nC ipython/ipythonrc-physics\nC ipython/ipythonrc-pysh\nC ipython/ipythonrc-scipy\nC ipython/ipythonrc-tutorial\nC sage\nC spkg/README.txt\nC spkg/gen_html\nC spkg/install\nC spkg/pipestatus\nC spkg/root-spkg-install\nC spkg/standard/README.txt\nC spkg/standard/deps\nC spkg/standard/libdist_filelist\nC spkg/standard/newest_version\n```\n\n\nReally, any kind of root repository would be better than the caveman technology we have in place right now. I read through all the scripts and they do make sense to me. I built my private release using `sage -sdist <version>` and it compiled fine. You guys put a lot of effort into this ticket to make sure that nothing breaks, and I think it really is the time to integrate this with Sage. \n\nPositive review.\n\nJeroen, can you plug this into 4.6.2.alpha as soon as possible to give it as much exposure as possible?",
+    "body": "Attachment [deps.2](tarball://root/attachments/some-uuid/ticket9433/deps.2) by vbraun created at 2011-01-13 07:38:33\n\nAfter some rediffing I built it successfully on top of Sage-4.6.1.rc1 (identical to the Sage-4.6.1 release) with the following updated files:\n\n* `trac_9433-scripts.v5.patch` -> `trac_9433-scripts.v5.2.patch`\n* `install` -> `install.2`\n* `deps` -> `deps.2`\n\nI've changed the main ticket documentation accordingly. \n\nFor reference, here is a list of files in the root repository:\n\n```\n[vbraun@volker-two sage-4.6.1.vb2]$ hg st --all | grep -v '^I'\nC .hgignore\nC .hgtags\nC COPYING.txt\nC Makefile\nC README.txt\nC ipython/ipy_profile_sh.py\nC ipython/ipy_user_conf.py\nC ipython/ipythonrc\nC ipython/ipythonrc-math\nC ipython/ipythonrc-numeric\nC ipython/ipythonrc-physics\nC ipython/ipythonrc-pysh\nC ipython/ipythonrc-scipy\nC ipython/ipythonrc-tutorial\nC sage\nC spkg/README.txt\nC spkg/gen_html\nC spkg/install\nC spkg/pipestatus\nC spkg/root-spkg-install\nC spkg/standard/README.txt\nC spkg/standard/deps\nC spkg/standard/libdist_filelist\nC spkg/standard/newest_version\n```\n\n\nReally, any kind of root repository would be better than the caveman technology we have in place right now. I read through all the scripts and they do make sense to me. I built my private release using `sage -sdist <version>` and it compiled fine. You guys put a lot of effort into this ticket to make sure that nothing breaks, and I think it really is the time to integrate this with Sage. \n\nPositive review.\n\nJeroen, can you plug this into 4.6.2.alpha as soon as possible to give it as much exposure as possible?",
     "created_at": "2011-01-13T07:38:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9433",
     "type": "issue_comment",
@@ -2718,7 +2718,7 @@ archive/issue_comments_090158.json:
 }
 ```
 
-Attachment
+Attachment [deps.2](tarball://root/attachments/some-uuid/ticket9433/deps.2) by vbraun created at 2011-01-13 07:38:33
 
 After some rediffing I built it successfully on top of Sage-4.6.1.rc1 (identical to the Sage-4.6.1 release) with the following updated files:
 
@@ -2808,7 +2808,7 @@ Changing status from positive_review to needs_info.
 archive/issue_comments_090161.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9433_install.diff](tarball://root/attachments/some-uuid/ticket9433/9433_install.diff) by jdemeyer created at 2011-01-19 09:02:08",
     "created_at": "2011-01-19T09:02:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9433",
     "type": "issue_comment",
@@ -2817,7 +2817,7 @@ archive/issue_comments_090161.json:
 }
 ```
 
-Attachment
+Attachment [9433_install.diff](tarball://root/attachments/some-uuid/ticket9433/9433_install.diff) by jdemeyer created at 2011-01-19 09:02:08
 
 
 
@@ -3325,7 +3325,7 @@ Upon closer investigation I found that the ipython directory is in the `sage_scr
 archive/issue_comments_090182.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated patch",
+    "body": "Attachment [trac_9433-scripts.v5.2.patch](tarball://root/attachments/some-uuid/ticket9433/trac_9433-scripts.v5.2.patch) by vbraun created at 2011-01-20 17:07:39\n\nUpdated patch",
     "created_at": "2011-01-20T17:07:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9433",
     "type": "issue_comment",
@@ -3334,7 +3334,7 @@ archive/issue_comments_090182.json:
 }
 ```
 
-Attachment
+Attachment [trac_9433-scripts.v5.2.patch](tarball://root/attachments/some-uuid/ticket9433/trac_9433-scripts.v5.2.patch) by vbraun created at 2011-01-20 17:07:39
 
 Updated patch
 
@@ -3381,7 +3381,7 @@ That was probably my typo in rebasing the patch to Sage-4.6.1 ;-)
 archive/issue_comments_090185.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9433-scripts.v6.patch](tarball://root/attachments/some-uuid/ticket9433/trac_9433-scripts.v6.patch) by jdemeyer created at 2011-01-20 17:25:31",
     "created_at": "2011-01-20T17:25:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9433",
     "type": "issue_comment",
@@ -3390,7 +3390,7 @@ archive/issue_comments_090185.json:
 }
 ```
 
-Attachment
+Attachment [trac_9433-scripts.v6.patch](tarball://root/attachments/some-uuid/ticket9433/trac_9433-scripts.v6.patch) by jdemeyer created at 2011-01-20 17:25:31
 
 
 
@@ -3399,7 +3399,7 @@ Attachment
 archive/issue_comments_090186.json:
 ```json
 {
-    "body": "Attachment\n\nI'm fine with all changes.",
+    "body": "Attachment [9433_hg_script.sh](tarball://root/attachments/some-uuid/ticket9433/9433_hg_script.sh) by vbraun created at 2011-01-20 23:20:37\n\nI'm fine with all changes.",
     "created_at": "2011-01-20T23:20:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9433",
     "type": "issue_comment",
@@ -3408,7 +3408,7 @@ archive/issue_comments_090186.json:
 }
 ```
 
-Attachment
+Attachment [9433_hg_script.sh](tarball://root/attachments/some-uuid/ticket9433/9433_hg_script.sh) by vbraun created at 2011-01-20 23:20:37
 
 I'm fine with all changes.
 
@@ -3550,7 +3550,7 @@ patch for scripts repo
 archive/issue_comments_090192.json:
 ```json
 {
-    "body": "Attachment\n\nHere's a new patch for the scripts repo.",
+    "body": "Attachment [trac_9433-scripts.v7.patch](tarball://root/attachments/some-uuid/ticket9433/trac_9433-scripts.v7.patch) by jhpalmieri created at 2011-01-21 05:33:47\n\nHere's a new patch for the scripts repo.",
     "created_at": "2011-01-21T05:33:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9433",
     "type": "issue_comment",
@@ -3559,7 +3559,7 @@ archive/issue_comments_090192.json:
 }
 ```
 
-Attachment
+Attachment [trac_9433-scripts.v7.patch](tarball://root/attachments/some-uuid/ticket9433/trac_9433-scripts.v7.patch) by jhpalmieri created at 2011-01-21 05:33:47
 
 Here's a new patch for the scripts repo.
 
@@ -3642,7 +3642,7 @@ For the record: I successfully upgraded a Sage-4.6.1 installation to Sage-4.6.2.
 archive/issue_comments_090197.json:
 ```json
 {
-    "body": "Attachment\n\nSAGEROOT patch for testing, DO NOT APPLY",
+    "body": "Attachment [9433_testing.patch](tarball://root/attachments/some-uuid/ticket9433/9433_testing.patch) by jdemeyer created at 2011-01-22 20:07:46\n\nSAGEROOT patch for testing, DO NOT APPLY",
     "created_at": "2011-01-22T20:07:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9433",
     "type": "issue_comment",
@@ -3651,7 +3651,7 @@ archive/issue_comments_090197.json:
 }
 ```
 
-Attachment
+Attachment [9433_testing.patch](tarball://root/attachments/some-uuid/ticket9433/9433_testing.patch) by jdemeyer created at 2011-01-22 20:07:46
 
 SAGEROOT patch for testing, DO NOT APPLY
 
@@ -3680,7 +3680,7 @@ Changing priority from major to blocker.
 archive/issue_comments_090199.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9433_deps.diff](tarball://root/attachments/some-uuid/ticket9433/9433_deps.diff) by jdemeyer created at 2011-01-26 22:07:20",
     "created_at": "2011-01-26T22:07:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9433",
     "type": "issue_comment",
@@ -3689,7 +3689,7 @@ archive/issue_comments_090199.json:
 }
 ```
 
-Attachment
+Attachment [9433_deps.diff](tarball://root/attachments/some-uuid/ticket9433/9433_deps.diff) by jdemeyer created at 2011-01-26 22:07:20
 
 
 
@@ -3802,7 +3802,7 @@ The file $SAGE_ROOT/spkg/root-spkg-install
 archive/issue_comments_090205.json:
 ```json
 {
-    "body": "Attachment\n\ncreate root repository without dotencode",
+    "body": "Attachment [root-spkg-install.v3](tarball://root/attachments/some-uuid/ticket9433/root-spkg-install.v3) by vbraun created at 2011-02-16 10:04:32\n\ncreate root repository without dotencode",
     "created_at": "2011-02-16T10:04:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9433",
     "type": "issue_comment",
@@ -3811,7 +3811,7 @@ archive/issue_comments_090205.json:
 }
 ```
 
-Attachment
+Attachment [root-spkg-install.v3](tarball://root/attachments/some-uuid/ticket9433/root-spkg-install.v3) by vbraun created at 2011-02-16 10:04:32
 
 create root repository without dotencode
 
@@ -3822,7 +3822,7 @@ create root repository without dotencode
 archive/issue_comments_090206.json:
 ```json
 {
-    "body": "Attachment\n\nI'm pretty sure that the `root-spkg-install` ought to be under revision control. I'm travelling right now, so I can't test it out myself.",
+    "body": "Attachment [9433_hg_script.2.sh](tarball://root/attachments/some-uuid/ticket9433/9433_hg_script.2.sh) by vbraun created at 2011-02-16 10:08:29\n\nI'm pretty sure that the `root-spkg-install` ought to be under revision control. I'm travelling right now, so I can't test it out myself.",
     "created_at": "2011-02-16T10:08:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9433",
     "type": "issue_comment",
@@ -3831,7 +3831,7 @@ archive/issue_comments_090206.json:
 }
 ```
 
-Attachment
+Attachment [9433_hg_script.2.sh](tarball://root/attachments/some-uuid/ticket9433/9433_hg_script.2.sh) by vbraun created at 2011-02-16 10:08:29
 
 I'm pretty sure that the `root-spkg-install` ought to be under revision control. I'm travelling right now, so I can't test it out myself.
 
@@ -3924,7 +3924,7 @@ the file SAGE_ROOT/.hgignore, now including spkg-install
 archive/issue_comments_090211.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:127 jdemeyer]:\n> The file `spkg-install` from the root repo is not under revision control.  Is there a reason for this?\n\nI now realize that you're talking about the file `spkg-install` in the actual spkg file.  This is just a copy of `root-spkg-install` made by `sage-make_devel_packages`, so we don't need to track it.  I'm going to add it to the `.hgignore` file (by adding `^spkg-install$`, so it only matches a file with exactly that name at the top level).  This change requires review.\n\nMeanwhile, I'm giving Volker's change to the hg_script a positive review: for me, it makes any errors about dotencode go away when I use an older version of Mercurial to access the repo.",
+    "body": "Attachment [hgignore](tarball://root/attachments/some-uuid/ticket9433/hgignore) by jhpalmieri created at 2011-02-16 21:06:38\n\nReplying to [comment:127 jdemeyer]:\n> The file `spkg-install` from the root repo is not under revision control.  Is there a reason for this?\n\nI now realize that you're talking about the file `spkg-install` in the actual spkg file.  This is just a copy of `root-spkg-install` made by `sage-make_devel_packages`, so we don't need to track it.  I'm going to add it to the `.hgignore` file (by adding `^spkg-install$`, so it only matches a file with exactly that name at the top level).  This change requires review.\n\nMeanwhile, I'm giving Volker's change to the hg_script a positive review: for me, it makes any errors about dotencode go away when I use an older version of Mercurial to access the repo.",
     "created_at": "2011-02-16T21:06:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9433",
     "type": "issue_comment",
@@ -3933,7 +3933,7 @@ archive/issue_comments_090211.json:
 }
 ```
 
-Attachment
+Attachment [hgignore](tarball://root/attachments/some-uuid/ticket9433/hgignore) by jhpalmieri created at 2011-02-16 21:06:38
 
 Replying to [comment:127 jdemeyer]:
 > The file `spkg-install` from the root repo is not under revision control.  Is there a reason for this?
@@ -4043,7 +4043,7 @@ We can add `--config format.dotencode=0` at various places in sage-sdist and sag
 archive/issue_comments_090217.json:
 ```json
 {
-    "body": "Attachment\n\npatch for scripts repo",
+    "body": "Attachment [trac_9433-scripts.v8.patch](tarball://root/attachments/some-uuid/ticket9433/trac_9433-scripts.v8.patch) by jhpalmieri created at 2011-02-18 01:16:49\n\npatch for scripts repo",
     "created_at": "2011-02-18T01:16:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9433",
     "type": "issue_comment",
@@ -4052,7 +4052,7 @@ archive/issue_comments_090217.json:
 }
 ```
 
-Attachment
+Attachment [trac_9433-scripts.v8.patch](tarball://root/attachments/some-uuid/ticket9433/trac_9433-scripts.v8.patch) by jhpalmieri created at 2011-02-18 01:16:49
 
 patch for scripts repo
 
@@ -4523,7 +4523,7 @@ patch for scripts repo
 archive/issue_comments_090238.json:
 ```json
 {
-    "body": "Attachment\n\nThe file $SAGE_ROOT/spkg/root-spkg-install",
+    "body": "Attachment [trac_9433-scripts.v9.patch](tarball://root/attachments/some-uuid/ticket9433/trac_9433-scripts.v9.patch) by jhpalmieri created at 2011-02-25 05:45:43\n\nThe file $SAGE_ROOT/spkg/root-spkg-install",
     "created_at": "2011-02-25T05:45:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9433",
     "type": "issue_comment",
@@ -4532,7 +4532,7 @@ archive/issue_comments_090238.json:
 }
 ```
 
-Attachment
+Attachment [trac_9433-scripts.v9.patch](tarball://root/attachments/some-uuid/ticket9433/trac_9433-scripts.v9.patch) by jhpalmieri created at 2011-02-25 05:45:43
 
 The file $SAGE_ROOT/spkg/root-spkg-install
 
@@ -4543,7 +4543,7 @@ The file $SAGE_ROOT/spkg/root-spkg-install
 archive/issue_comments_090239.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:153 vbraun]:\n> I think there is still one problem: If the user has no .hgrc (like many non-developers trying to upgrade), then mercurial will fail\n\nI wouldn't have spotted this.  Good catch.  I have new patches which add \"-u ...\" to various commit commands: in sage-update and in root-spkg-install.  I haven't bothered with sage-sdist or sage-make_devel_packages, since these are done by the release manager who had better have a .hgrc file.  (Besides, there are already other \"hg commit\" commands in those scripts.)\n\nI've also updated my versions (4.6.2.X0 etc.) for testing upgrades with these changes.",
+    "body": "Attachment [root-spkg-install.v4](tarball://root/attachments/some-uuid/ticket9433/root-spkg-install.v4) by jhpalmieri created at 2011-02-25 05:49:49\n\nReplying to [comment:153 vbraun]:\n> I think there is still one problem: If the user has no .hgrc (like many non-developers trying to upgrade), then mercurial will fail\n\nI wouldn't have spotted this.  Good catch.  I have new patches which add \"-u ...\" to various commit commands: in sage-update and in root-spkg-install.  I haven't bothered with sage-sdist or sage-make_devel_packages, since these are done by the release manager who had better have a .hgrc file.  (Besides, there are already other \"hg commit\" commands in those scripts.)\n\nI've also updated my versions (4.6.2.X0 etc.) for testing upgrades with these changes.",
     "created_at": "2011-02-25T05:49:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9433",
     "type": "issue_comment",
@@ -4552,7 +4552,7 @@ archive/issue_comments_090239.json:
 }
 ```
 
-Attachment
+Attachment [root-spkg-install.v4](tarball://root/attachments/some-uuid/ticket9433/root-spkg-install.v4) by jhpalmieri created at 2011-02-25 05:49:49
 
 Replying to [comment:153 vbraun]:
 > I think there is still one problem: If the user has no .hgrc (like many non-developers trying to upgrade), then mercurial will fail

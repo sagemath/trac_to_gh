@@ -85,7 +85,7 @@ Changing status from new to needs_review.
 archive/issue_comments_078486.json:
 ```json
 {
-    "body": "Attachment\n\nOK, I think the attached patch corrects things.",
+    "body": "Attachment [trac_8650_patch0.patch](tarball://root/attachments/some-uuid/ticket8650/trac_8650_patch0.patch) by mhampton created at 2010-04-04 22:20:54\n\nOK, I think the attached patch corrects things.",
     "created_at": "2010-04-04T22:20:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8650",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_078486.json:
 }
 ```
 
-Attachment
+Attachment [trac_8650_patch0.patch](tarball://root/attachments/some-uuid/ticket8650/trac_8650_patch0.patch) by mhampton created at 2010-04-04 22:20:54
 
 OK, I think the attached patch corrects things.
 
@@ -105,7 +105,7 @@ OK, I think the attached patch corrects things.
 archive/issue_comments_078487.json:
 ```json
 {
-    "body": "Attachment\n\nApply this patch only",
+    "body": "Attachment [trac_8650_fix_face_lattice_in_polyhedra.patch](tarball://root/attachments/some-uuid/ticket8650/trac_8650_fix_face_lattice_in_polyhedra.patch) by novoselt created at 2010-04-05 03:15:30\n\nApply this patch only",
     "created_at": "2010-04-05T03:15:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8650",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_078487.json:
 }
 ```
 
-Attachment
+Attachment [trac_8650_fix_face_lattice_in_polyhedra.patch](tarball://root/attachments/some-uuid/ticket8650/trac_8650_fix_face_lattice_in_polyhedra.patch) by novoselt created at 2010-04-05 03:15:30
 
 Apply this patch only
 

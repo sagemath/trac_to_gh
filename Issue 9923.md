@@ -120,7 +120,7 @@ By the way, the unofficial, trial 4.6.alpha1 is in `/home/release/sage-4.6.alpha
 archive/issue_comments_098791.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9924.patch](tarball://root/attachments/some-uuid/ticket9924/trac_9924.patch) by AlexGhitza created at 2010-09-17 01:39:58",
     "created_at": "2010-09-17T01:39:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9923",
     "type": "issue_comment",
@@ -129,7 +129,7 @@ archive/issue_comments_098791.json:
 }
 ```
 
-Attachment
+Attachment [trac_9924.patch](tarball://root/attachments/some-uuid/ticket9924/trac_9924.patch) by AlexGhitza created at 2010-09-17 01:39:58
 
 
 

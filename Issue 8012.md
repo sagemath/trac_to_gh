@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8012
 archive/issue_comments_070036.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8012-RIF-doc.patch](tarball://root/attachments/some-uuid/ticket8012/8012-RIF-doc.patch) by robertwb created at 2010-01-20 10:49:19",
     "created_at": "2010-01-20T10:49:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8012",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_070036.json:
 }
 ```
 
-Attachment
+Attachment [8012-RIF-doc.patch](tarball://root/attachments/some-uuid/ticket8012/8012-RIF-doc.patch) by robertwb created at 2010-01-20 10:49:19
 
 
 

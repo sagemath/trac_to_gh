@@ -55,7 +55,7 @@ Changing status from new to needs_review.
 archive/issue_comments_074593.json:
 ```json
 {
-    "body": "Attachment\n\nThe new spkg can be found here:\n\n[http://boxen.math.washington.edu/home/jsp/ports/twisted-8.2.0.p2.spkg](http://boxen.math.washington.edu/home/jsp/ports/twisted-8.2.0.p2.spkg)\n\nJaap",
+    "body": "Attachment [twisted-8.2.0.p2.patch](tarball://root/attachments/some-uuid/ticket8352/twisted-8.2.0.p2.patch) by jsp created at 2010-02-24 21:17:04\n\nThe new spkg can be found here:\n\n[http://boxen.math.washington.edu/home/jsp/ports/twisted-8.2.0.p2.spkg](http://boxen.math.washington.edu/home/jsp/ports/twisted-8.2.0.p2.spkg)\n\nJaap",
     "created_at": "2010-02-24T21:17:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8352",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_074593.json:
 }
 ```
 
-Attachment
+Attachment [twisted-8.2.0.p2.patch](tarball://root/attachments/some-uuid/ticket8352/twisted-8.2.0.p2.patch) by jsp created at 2010-02-24 21:17:04
 
 The new spkg can be found here:
 

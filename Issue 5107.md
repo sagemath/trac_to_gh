@@ -100,7 +100,7 @@ sage: timeit("CFF(continued_fraction_list(x))")
 archive/issue_comments_039018.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5107.patch](tarball://root/attachments/some-uuid/ticket5107/trac_5107.patch) by was created at 2010-01-18 09:20:59",
     "created_at": "2010-01-18T09:20:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5107",
     "type": "issue_comment",
@@ -109,7 +109,7 @@ archive/issue_comments_039018.json:
 }
 ```
 
-Attachment
+Attachment [trac_5107.patch](tarball://root/attachments/some-uuid/ticket5107/trac_5107.patch) by was created at 2010-01-18 09:20:59
 
 
 
@@ -189,7 +189,7 @@ Positive review, except for two minor typos which I'm adding a separate patch fo
 archive/issue_comments_039022.json:
 ```json
 {
-    "body": "Attachment\n\nI find it surprising that `continued_fraction(x)`, where x is symbolic, or even an exact rational, would only give me the continued fraction of a numerical approximation to some number of bits. I guess what would be ideal would be an ideal, lazy continued fraction class. What I would find more useful than bits would be an nterms parameter that specified the (minimum?) number of terms to give, and it would work with sufficient precision to deduce all nterms coefficients correctly (e.g. using interval arithmetic). \n\nThe fact that it's not documented is a huge step forward, so +1 to that.",
+    "body": "Attachment [5107_contfrac_typo.patch](tarball://root/attachments/some-uuid/ticket5107/5107_contfrac_typo.patch) by robertwb created at 2010-01-18 19:08:45\n\nI find it surprising that `continued_fraction(x)`, where x is symbolic, or even an exact rational, would only give me the continued fraction of a numerical approximation to some number of bits. I guess what would be ideal would be an ideal, lazy continued fraction class. What I would find more useful than bits would be an nterms parameter that specified the (minimum?) number of terms to give, and it would work with sufficient precision to deduce all nterms coefficients correctly (e.g. using interval arithmetic). \n\nThe fact that it's not documented is a huge step forward, so +1 to that.",
     "created_at": "2010-01-18T19:08:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5107",
     "type": "issue_comment",
@@ -198,7 +198,7 @@ archive/issue_comments_039022.json:
 }
 ```
 
-Attachment
+Attachment [5107_contfrac_typo.patch](tarball://root/attachments/some-uuid/ticket5107/5107_contfrac_typo.patch) by robertwb created at 2010-01-18 19:08:45
 
 I find it surprising that `continued_fraction(x)`, where x is symbolic, or even an exact rational, would only give me the continued fraction of a numerical approximation to some number of bits. I guess what would be ideal would be an ideal, lazy continued fraction class. What I would find more useful than bits would be an nterms parameter that specified the (minimum?) number of terms to give, and it would work with sufficient precision to deduce all nterms coefficients correctly (e.g. using interval arithmetic). 
 

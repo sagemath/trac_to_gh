@@ -223,7 +223,7 @@ Anne
 archive/issue_comments_073096.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8259-from_poly_to_sym-as.patch](tarball://root/attachments/some-uuid/ticket8259/trac_8259-from_poly_to_sym-as.patch) by aschilling created at 2010-02-23 18:49:25",
     "created_at": "2010-02-23T18:49:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8259",
     "type": "issue_comment",
@@ -232,7 +232,7 @@ archive/issue_comments_073096.json:
 }
 ```
 
-Attachment
+Attachment [trac_8259-from_poly_to_sym-as.patch](tarball://root/attachments/some-uuid/ticket8259/trac_8259-from_poly_to_sym-as.patch) by aschilling created at 2010-02-23 18:49:25
 
 
 
@@ -334,7 +334,7 @@ Thanks!
 archive/issue_comments_073101.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:11 nthiery]:\n> Just two tiny remarks:\n> \n>  - One can write `assert a==b` instead of `assert(a==b)`\n>  - One could be a bit more specific:  `assert a==b, \"not a symmetric polynomial\"\n>  - Assertion are not *always* checked (see http://docs.python.org/reference/simple_stmts.html).\n>    So I am not sure it is the appropriate idiom here.\n> \n> That's minor, so I let you see if you want to add a quick review patch, or just leave things as is.\n> \n> Thanks!\n\nDone! Please review the review of the review of the review ... oops! Infinite loop!",
+    "body": "Attachment [trac_8259-from_poly_to_sym-review-as.patch](tarball://root/attachments/some-uuid/ticket8259/trac_8259-from_poly_to_sym-review-as.patch) by aschilling created at 2010-02-25 18:00:10\n\nReplying to [comment:11 nthiery]:\n> Just two tiny remarks:\n> \n>  - One can write `assert a==b` instead of `assert(a==b)`\n>  - One could be a bit more specific:  `assert a==b, \"not a symmetric polynomial\"\n>  - Assertion are not *always* checked (see http://docs.python.org/reference/simple_stmts.html).\n>    So I am not sure it is the appropriate idiom here.\n> \n> That's minor, so I let you see if you want to add a quick review patch, or just leave things as is.\n> \n> Thanks!\n\nDone! Please review the review of the review of the review ... oops! Infinite loop!",
     "created_at": "2010-02-25T18:00:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8259",
     "type": "issue_comment",
@@ -343,7 +343,7 @@ archive/issue_comments_073101.json:
 }
 ```
 
-Attachment
+Attachment [trac_8259-from_poly_to_sym-review-as.patch](tarball://root/attachments/some-uuid/ticket8259/trac_8259-from_poly_to_sym-review-as.patch) by aschilling created at 2010-02-25 18:00:10
 
 Replying to [comment:11 nthiery]:
 > Just two tiny remarks:

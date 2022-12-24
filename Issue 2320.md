@@ -54,7 +54,7 @@ patch for SAGE_ROOT/local/bin/sage-sage
 archive/issue_comments_015429.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached the patch, after applying it make sure to chmod +x sage-dsage-*. This is against the hg_scripts repository.",
+    "body": "Attachment [sage-sage.patch](tarball://root/attachments/some-uuid/ticket2320/sage-sage.patch) by yi created at 2008-02-29 06:40:21\n\nI've attached the patch, after applying it make sure to chmod +x sage-dsage-*. This is against the hg_scripts repository.",
     "created_at": "2008-02-29T06:40:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2320",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_015429.json:
 }
 ```
 
-Attachment
+Attachment [sage-sage.patch](tarball://root/attachments/some-uuid/ticket2320/sage-sage.patch) by yi created at 2008-02-29 06:40:21
 
 I've attached the patch, after applying it make sure to chmod +x sage-dsage-*. This is against the hg_scripts repository.
 

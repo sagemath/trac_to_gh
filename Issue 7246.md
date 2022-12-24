@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7246
 archive/issue_comments_060161.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7246.patch](tarball://root/attachments/some-uuid/ticket7246/trac_7246.patch) by ncohen created at 2009-10-19 07:00:33",
     "created_at": "2009-10-19T07:00:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7246",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_060161.json:
 }
 ```
 
-Attachment
+Attachment [trac_7246.patch](tarball://root/attachments/some-uuid/ticket7246/trac_7246.patch) by ncohen created at 2009-10-19 07:00:33
 
 
 
@@ -95,7 +95,7 @@ I am giving a positive review to your patch pending a solution for the case k=0.
 archive/issue_comments_060164.json:
 ```json
 {
-    "body": "Attachment\n\nI think your patch is perfect, including the case k=0... I did not think about empty words, though it can not hurt :-)\n\nPositive review !\n\nNathann",
+    "body": "Attachment [trac_7246_review.patch](tarball://root/attachments/some-uuid/ticket7246/trac_7246_review.patch) by ncohen created at 2009-10-19 16:55:35\n\nI think your patch is perfect, including the case k=0... I did not think about empty words, though it can not hurt :-)\n\nPositive review !\n\nNathann",
     "created_at": "2009-10-19T16:55:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7246",
     "type": "issue_comment",
@@ -104,7 +104,7 @@ archive/issue_comments_060164.json:
 }
 ```
 
-Attachment
+Attachment [trac_7246_review.patch](tarball://root/attachments/some-uuid/ticket7246/trac_7246_review.patch) by ncohen created at 2009-10-19 16:55:35
 
 I think your patch is perfect, including the case k=0... I did not think about empty words, though it can not hurt :-)
 

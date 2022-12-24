@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2162
 archive/issue_comments_014196.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-2162-Pari_stack.patch](tarball://root/attachments/some-uuid/ticket2162/trac-2162-Pari_stack.patch) by was created at 2008-02-14 22:21:46",
     "created_at": "2008-02-14T22:21:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2162",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_014196.json:
 }
 ```
 
-Attachment
+Attachment [trac-2162-Pari_stack.patch](tarball://root/attachments/some-uuid/ticket2162/trac-2162-Pari_stack.patch) by was created at 2008-02-14 22:21:46
 
 
 

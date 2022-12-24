@@ -90,7 +90,7 @@ Nice how trac interprets long decimal fractions of floats. :D
 archive/issue_comments_081789.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8896-highprec-zero.patch](tarball://root/attachments/some-uuid/ticket8896/8896-highprec-zero.patch) by robertwb created at 2010-05-15 22:36:34",
     "created_at": "2010-05-15T22:36:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8896",
     "type": "issue_comment",
@@ -99,7 +99,7 @@ archive/issue_comments_081789.json:
 }
 ```
 
-Attachment
+Attachment [8896-highprec-zero.patch](tarball://root/attachments/some-uuid/ticket8896/8896-highprec-zero.patch) by robertwb created at 2010-05-15 22:36:34
 
 
 
@@ -294,7 +294,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_081798.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:6 leif]:\n> No, the `else` belongs to the `for` statement.\n\nExactly. \n\n> But currently, *leading* zeros contribute to the precision, too: :)\n> {{{\n> sage: RealNumber(0.000000000000000000).prec()\n> 67\n> sage: RealNumber(00.000000000000000000).prec()\n> 70\n> sage: RealNumber(.000000000000000000).prec()\n> 64\n> }}}\n> I'm not sure if this is intentional, it's at least uncommon.\n\nThat's the point of this ticket. For 0, all zeros are leading. \n\n> (And a leading `+` also increases the precision.)\n> \n> It looks as if a decimal point is counted as a significant digit.\n\nGood catch, fixed. That required some adjustment to keep the input/str in sync. \n\n> And, sorry, the code is extremely ugly (not due to the patch) and inefficient.\n> Examples and parameter description can be improved as well.\n> \n> I'm not quite sure what kind of strings actually get in (i.e., where/if illegal syntax is catched, it seems all is left to `RealNumber._set()` if not already handled by the parser), this should perhaps be documented, too. \n\nUpdated the docstring a bit. This is mostly for use by the preparser, though of course it gets used directly as well.",
+    "body": "Attachment [8896-part2.patch](tarball://root/attachments/some-uuid/ticket8896/8896-part2.patch) by robertwb created at 2010-05-27 18:51:01\n\nReplying to [comment:6 leif]:\n> No, the `else` belongs to the `for` statement.\n\nExactly. \n\n> But currently, *leading* zeros contribute to the precision, too: :)\n> {{{\n> sage: RealNumber(0.000000000000000000).prec()\n> 67\n> sage: RealNumber(00.000000000000000000).prec()\n> 70\n> sage: RealNumber(.000000000000000000).prec()\n> 64\n> }}}\n> I'm not sure if this is intentional, it's at least uncommon.\n\nThat's the point of this ticket. For 0, all zeros are leading. \n\n> (And a leading `+` also increases the precision.)\n> \n> It looks as if a decimal point is counted as a significant digit.\n\nGood catch, fixed. That required some adjustment to keep the input/str in sync. \n\n> And, sorry, the code is extremely ugly (not due to the patch) and inefficient.\n> Examples and parameter description can be improved as well.\n> \n> I'm not quite sure what kind of strings actually get in (i.e., where/if illegal syntax is catched, it seems all is left to `RealNumber._set()` if not already handled by the parser), this should perhaps be documented, too. \n\nUpdated the docstring a bit. This is mostly for use by the preparser, though of course it gets used directly as well.",
     "created_at": "2010-05-27T18:51:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8896",
     "type": "issue_comment",
@@ -303,7 +303,7 @@ archive/issue_comments_081798.json:
 }
 ```
 
-Attachment
+Attachment [8896-part2.patch](tarball://root/attachments/some-uuid/ticket8896/8896-part2.patch) by robertwb created at 2010-05-27 18:51:01
 
 Replying to [comment:6 leif]:
 > No, the `else` belongs to the `for` statement.
@@ -655,7 +655,7 @@ Of course it's pretty ok to return `RR` in that case, too. (If someone really wa
 archive/issue_comments_081810.json:
 ```json
 {
-    "body": "Attachment\n\nDoctest fixes for 4.6.1.",
+    "body": "Attachment [8896-doctests.patch](tarball://root/attachments/some-uuid/ticket8896/8896-doctests.patch) by robertwb created at 2011-01-26 06:44:11\n\nDoctest fixes for 4.6.1.",
     "created_at": "2011-01-26T06:44:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8896",
     "type": "issue_comment",
@@ -664,7 +664,7 @@ archive/issue_comments_081810.json:
 }
 ```
 
-Attachment
+Attachment [8896-doctests.patch](tarball://root/attachments/some-uuid/ticket8896/8896-doctests.patch) by robertwb created at 2011-01-26 06:44:11
 
 Doctest fixes for 4.6.1.
 
@@ -711,7 +711,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_081813.json:
 ```json
 {
-    "body": "Attachment\n\nPatch fixes problem.  Ran 'make testlong'.  All tests passed.  Positive review!",
+    "body": "Attachment [8896-rebased.patch](tarball://root/attachments/some-uuid/ticket8896/8896-rebased.patch) by mariah created at 2011-06-06 17:38:28\n\nPatch fixes problem.  Ran 'make testlong'.  All tests passed.  Positive review!",
     "created_at": "2011-06-06T17:38:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8896",
     "type": "issue_comment",
@@ -720,7 +720,7 @@ archive/issue_comments_081813.json:
 }
 ```
 
-Attachment
+Attachment [8896-rebased.patch](tarball://root/attachments/some-uuid/ticket8896/8896-rebased.patch) by mariah created at 2011-06-06 17:38:28
 
 Patch fixes problem.  Ran 'make testlong'.  All tests passed.  Positive review!
 

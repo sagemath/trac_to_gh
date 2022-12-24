@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9509
 archive/issue_comments_091375.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9509-graph_gen.patch](tarball://root/attachments/some-uuid/ticket9509/trac_9509-graph_gen.patch) by rlm created at 2010-07-15 14:46:06",
     "created_at": "2010-07-15T14:46:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9509",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_091375.json:
 }
 ```
 
-Attachment
+Attachment [trac_9509-graph_gen.patch](tarball://root/attachments/some-uuid/ticket9509/trac_9509-graph_gen.patch) by rlm created at 2010-07-15 14:46:06
 
 
 
@@ -142,7 +142,7 @@ Please check and let me know if there are problems.
 archive/issue_comments_091380.json:
 ```json
 {
-    "body": "Attachment\n\nRebased for queue in comment 3.  Apply only this patch.",
+    "body": "Attachment [trac_9509-graph_gen.2.patch](tarball://root/attachments/some-uuid/ticket9509/trac_9509-graph_gen.2.patch) by mpatel created at 2010-07-21 02:37:51\n\nRebased for queue in comment 3.  Apply only this patch.",
     "created_at": "2010-07-21T02:37:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9509",
     "type": "issue_comment",
@@ -151,7 +151,7 @@ archive/issue_comments_091380.json:
 }
 ```
 
-Attachment
+Attachment [trac_9509-graph_gen.2.patch](tarball://root/attachments/some-uuid/ticket9509/trac_9509-graph_gen.2.patch) by mpatel created at 2010-07-21 02:37:51
 
 Rebased for queue in comment 3.  Apply only this patch.
 

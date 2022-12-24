@@ -64,7 +64,7 @@ How about just calling it K.factor()?
 archive/issue_comments_012389.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac1948.patch](tarball://root/attachments/some-uuid/ticket1948/trac1948.patch) by cremona created at 2008-04-05 14:26:01",
     "created_at": "2008-04-05T14:26:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1948",
     "type": "issue_comment",
@@ -73,7 +73,7 @@ archive/issue_comments_012389.json:
 }
 ```
 
-Attachment
+Attachment [trac1948.patch](tarball://root/attachments/some-uuid/ticket1948/trac1948.patch) by cremona created at 2008-04-05 14:26:01
 
 
 
@@ -120,7 +120,7 @@ Looks good to me.
 archive/issue_comments_012392.json:
 ```json
 {
-    "body": "Attachment\n\napply after trac1948.patch",
+    "body": "Attachment [trac1948-doctests.patch](tarball://root/attachments/some-uuid/ticket1948/trac1948-doctests.patch) by AlexGhitza created at 2008-04-13 00:59:18\n\napply after trac1948.patch",
     "created_at": "2008-04-13T00:59:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1948",
     "type": "issue_comment",
@@ -129,7 +129,7 @@ archive/issue_comments_012392.json:
 }
 ```
 
-Attachment
+Attachment [trac1948-doctests.patch](tarball://root/attachments/some-uuid/ticket1948/trac1948-doctests.patch) by AlexGhitza created at 2008-04-13 00:59:18
 
 apply after trac1948.patch
 
@@ -194,7 +194,7 @@ Resolution: fixed
 archive/issue_comments_012396.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac1948-ell_finite_field.patch](tarball://root/attachments/some-uuid/ticket1948/trac1948-ell_finite_field.patch) by AlexGhitza created at 2008-04-13 14:45:43",
     "created_at": "2008-04-13T14:45:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1948",
     "type": "issue_comment",
@@ -203,7 +203,7 @@ archive/issue_comments_012396.json:
 }
 ```
 
-Attachment
+Attachment [trac1948-ell_finite_field.patch](tarball://root/attachments/some-uuid/ticket1948/trac1948-ell_finite_field.patch) by AlexGhitza created at 2008-04-13 14:45:43
 
 
 

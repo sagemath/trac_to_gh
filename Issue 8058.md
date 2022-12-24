@@ -59,7 +59,7 @@ Changing status from new to needs_review.
 archive/issue_comments_070501.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ecm-6.2.1.p2.patch](tarball://root/attachments/some-uuid/ticket8058/ecm-6.2.1.p2.patch) by jsp created at 2010-01-26 17:29:34",
     "created_at": "2010-01-26T17:29:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8058",
     "type": "issue_comment",
@@ -68,7 +68,7 @@ archive/issue_comments_070501.json:
 }
 ```
 
-Attachment
+Attachment [ecm-6.2.1.p2.patch](tarball://root/attachments/some-uuid/ticket8058/ecm-6.2.1.p2.patch) by jsp created at 2010-01-26 17:29:34
 
 
 

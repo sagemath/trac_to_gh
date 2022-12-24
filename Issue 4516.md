@@ -51,7 +51,7 @@ To test this, apply the patch, do "./sage -bdist" then look in the SAGE_ROOT/dis
 archive/issue_comments_033524.json:
 ```json
 {
-    "body": "Attachment\n\nBy chance, I had experimented with \"sage -bdist\" on Sage 3.2.alpha2, so I could verify that indeed, without this patch the \"devel/doc-main\" directory is missing.\n\nWith this patch applied, it is there after \"sage-bdist\".",
+    "body": "Attachment [scripts-4516.patch](tarball://root/attachments/some-uuid/ticket4516/scripts-4516.patch) by GeorgSWeber created at 2008-11-14 22:39:43\n\nBy chance, I had experimented with \"sage -bdist\" on Sage 3.2.alpha2, so I could verify that indeed, without this patch the \"devel/doc-main\" directory is missing.\n\nWith this patch applied, it is there after \"sage-bdist\".",
     "created_at": "2008-11-14T22:39:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4516",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_033524.json:
 }
 ```
 
-Attachment
+Attachment [scripts-4516.patch](tarball://root/attachments/some-uuid/ticket4516/scripts-4516.patch) by GeorgSWeber created at 2008-11-14 22:39:43
 
 By chance, I had experimented with "sage -bdist" on Sage 3.2.alpha2, so I could verify that indeed, without this patch the "devel/doc-main" directory is missing.
 

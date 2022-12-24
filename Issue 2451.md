@@ -85,7 +85,7 @@ part 1.  there may be a part 2...
 archive/issue_comments_016568.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-2451.patch](tarball://root/attachments/some-uuid/ticket2451/sage-2451.patch) by was created at 2008-03-10 06:23:09",
     "created_at": "2008-03-10T06:23:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2451",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_016568.json:
 }
 ```
 
-Attachment
+Attachment [sage-2451.patch](tarball://root/attachments/some-uuid/ticket2451/sage-2451.patch) by was created at 2008-03-10 06:23:09
 
 
 

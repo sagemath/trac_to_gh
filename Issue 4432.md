@@ -128,7 +128,7 @@ I added a patch which I think presents a cleaner solution for #4432 _and_ #4433.
 archive/issue_comments_032568.json:
 ```json
 {
-    "body": "Attachment\n\nimprovements to gamma, apply after Mike's trac_4432.patch",
+    "body": "Attachment [trac_4432-gamma.patch](tarball://root/attachments/some-uuid/ticket4432/trac_4432-gamma.patch) by burcin created at 2008-11-15 11:54:53\n\nimprovements to gamma, apply after Mike's trac_4432.patch",
     "created_at": "2008-11-15T11:54:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4432",
     "type": "issue_comment",
@@ -137,7 +137,7 @@ archive/issue_comments_032568.json:
 }
 ```
 
-Attachment
+Attachment [trac_4432-gamma.patch](tarball://root/attachments/some-uuid/ticket4432/trac_4432-gamma.patch) by burcin created at 2008-11-15 11:54:53
 
 improvements to gamma, apply after Mike's trac_4432.patch
 
@@ -375,7 +375,7 @@ make plotting of the gamma function work, fix doctests, apply after burchin's tr
 archive/issue_comments_032575.json:
 ```json
 {
-    "body": "Attachment\n\nI fixed the doctests and the plotting of the gamma function, with\nattachment:trac_4432-plot-doc.patch.\n\nAlso\n\n\n```\nsage: timeit('h(10^4)')\n5 loops, best of 3: 1.68 s per loop\n```\n\n\nGreetings,\n\nWilfried",
+    "body": "Attachment [trac_4432-plot-doc.patch](tarball://root/attachments/some-uuid/ticket4432/trac_4432-plot-doc.patch) by whuss created at 2008-11-24 16:18:56\n\nI fixed the doctests and the plotting of the gamma function, with\nattachment:trac_4432-plot-doc.patch.\n\nAlso\n\n\n```\nsage: timeit('h(10^4)')\n5 loops, best of 3: 1.68 s per loop\n```\n\n\nGreetings,\n\nWilfried",
     "created_at": "2008-11-24T16:18:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4432",
     "type": "issue_comment",
@@ -384,7 +384,7 @@ archive/issue_comments_032575.json:
 }
 ```
 
-Attachment
+Attachment [trac_4432-plot-doc.patch](tarball://root/attachments/some-uuid/ticket4432/trac_4432-plot-doc.patch) by whuss created at 2008-11-24 16:18:56
 
 I fixed the doctests and the plotting of the gamma function, with
 attachment:trac_4432-plot-doc.patch.

@@ -51,7 +51,7 @@ See this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/th
 archive/issue_comments_056262.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6822-root.patch](tarball://root/attachments/some-uuid/ticket6822/trac_6822-root.patch) by jhpalmieri created at 2012-10-05 23:58:36",
     "created_at": "2012-10-05T23:58:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6822",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_056262.json:
 }
 ```
 
-Attachment
+Attachment [trac_6822-root.patch](tarball://root/attachments/some-uuid/ticket6822/trac_6822-root.patch) by jhpalmieri created at 2012-10-05 23:58:36
 
 
 
@@ -69,7 +69,7 @@ Attachment
 archive/issue_comments_056263.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6822-scripts.patch](tarball://root/attachments/some-uuid/ticket6822/trac_6822-scripts.patch) by jhpalmieri created at 2012-10-05 23:58:44",
     "created_at": "2012-10-05T23:58:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6822",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_056263.json:
 }
 ```
 
-Attachment
+Attachment [trac_6822-scripts.patch](tarball://root/attachments/some-uuid/ticket6822/trac_6822-scripts.patch) by jhpalmieri created at 2012-10-05 23:58:44
 
 
 

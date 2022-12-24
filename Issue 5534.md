@@ -183,7 +183,7 @@ Michael
 archive/issue_comments_043027.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [subwords_fix-5534-submitted.patch](tarball://root/attachments/some-uuid/ticket5534/subwords_fix-5534-submitted.patch) by hivert created at 2009-03-28 18:42:54",
     "created_at": "2009-03-28T18:42:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5534",
     "type": "issue_comment",
@@ -192,7 +192,7 @@ archive/issue_comments_043027.json:
 }
 ```
 
-Attachment
+Attachment [subwords_fix-5534-submitted.patch](tarball://root/attachments/some-uuid/ticket5534/subwords_fix-5534-submitted.patch) by hivert created at 2009-03-28 18:42:54
 
 
 

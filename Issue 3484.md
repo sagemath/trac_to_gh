@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3484
 archive/issue_comments_024554.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac3484-sage_eval.patch](tarball://root/attachments/some-uuid/ticket3484/trac3484-sage_eval.patch) by cwitty created at 2008-06-20 08:02:44",
     "created_at": "2008-06-20T08:02:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3484",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_024554.json:
 }
 ```
 
-Attachment
+Attachment [trac3484-sage_eval.patch](tarball://root/attachments/some-uuid/ticket3484/trac3484-sage_eval.patch) by cwitty created at 2008-06-20 08:02:44
 
 
 
@@ -168,7 +168,7 @@ a doctest illustrating a syntax error.
 archive/issue_comments_024558.json:
 ```json
 {
-    "body": "Attachment\n\nAWESOME.",
+    "body": "Attachment [trac3484-sage_eval-review-response.patch](tarball://root/attachments/some-uuid/ticket3484/trac3484-sage_eval-review-response.patch) by was created at 2008-08-10 06:28:37\n\nAWESOME.",
     "created_at": "2008-08-10T06:28:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3484",
     "type": "issue_comment",
@@ -177,7 +177,7 @@ archive/issue_comments_024558.json:
 }
 ```
 
-Attachment
+Attachment [trac3484-sage_eval-review-response.patch](tarball://root/attachments/some-uuid/ticket3484/trac3484-sage_eval-review-response.patch) by was created at 2008-08-10 06:28:37
 
 AWESOME.
 

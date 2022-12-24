@@ -95,7 +95,7 @@ The failures are okay, since they just have redundant information.  I tested thi
 archive/issue_comments_010050.json:
 ```json
 {
-    "body": "Attachment\n\nThis should be the final version; use this over the two earlier bundles and one earlier patch.",
+    "body": "Attachment [ncalexan-mpoly-diff-times-updated.patch](tarball://root/attachments/some-uuid/ticket1578/ncalexan-mpoly-diff-times-updated.patch) by ncalexan created at 2008-01-13 02:01:27\n\nThis should be the final version; use this over the two earlier bundles and one earlier patch.",
     "created_at": "2008-01-13T02:01:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1578",
     "type": "issue_comment",
@@ -104,7 +104,7 @@ archive/issue_comments_010050.json:
 }
 ```
 
-Attachment
+Attachment [ncalexan-mpoly-diff-times-updated.patch](tarball://root/attachments/some-uuid/ticket1578/ncalexan-mpoly-diff-times-updated.patch) by ncalexan created at 2008-01-13 02:01:27
 
 This should be the final version; use this over the two earlier bundles and one earlier patch.
 

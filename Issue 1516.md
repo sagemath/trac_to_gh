@@ -67,7 +67,7 @@ Changing status from new to assigned.
 archive/issue_comments_009719.json:
 ```json
 {
-    "body": "Attachment\n\nSee spkg at http://sage.math.washington.edu/home/robertwb/3d/jmol-11.2.14.spkg\n\nNote, this is 14MB, but it is just the full Jmol bundle which has about 4MB docs, 6MB source, and 3M redundant applet binaries, not all of which we may want to include. \n\nI realize the bundle has other patches from other tickets (e.g. #1533), but these are needed.",
+    "body": "Attachment [jmol-cmdline.hg](tarball://root/attachments/some-uuid/ticket1516/jmol-cmdline.hg) by robertwb created at 2007-12-16 10:08:10\n\nSee spkg at http://sage.math.washington.edu/home/robertwb/3d/jmol-11.2.14.spkg\n\nNote, this is 14MB, but it is just the full Jmol bundle which has about 4MB docs, 6MB source, and 3M redundant applet binaries, not all of which we may want to include. \n\nI realize the bundle has other patches from other tickets (e.g. #1533), but these are needed.",
     "created_at": "2007-12-16T10:08:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1516",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_009719.json:
 }
 ```
 
-Attachment
+Attachment [jmol-cmdline.hg](tarball://root/attachments/some-uuid/ticket1516/jmol-cmdline.hg) by robertwb created at 2007-12-16 10:08:10
 
 See spkg at http://sage.math.washington.edu/home/robertwb/3d/jmol-11.2.14.spkg
 

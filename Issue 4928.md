@@ -75,7 +75,7 @@ Changing status from new to assigned.
 archive/issue_comments_037389.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-3.2.3-release-notes-draft1.txt](tarball://root/attachments/some-uuid/ticket4928/Sage-3.2.3-release-notes-draft1.txt) by mabshoff created at 2009-01-10 01:16:23",
     "created_at": "2009-01-10T01:16:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4928",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_037389.json:
 }
 ```
 
-Attachment
+Attachment [Sage-3.2.3-release-notes-draft1.txt](tarball://root/attachments/some-uuid/ticket4928/Sage-3.2.3-release-notes-draft1.txt) by mabshoff created at 2009-01-10 01:16:23
 
 
 
@@ -180,7 +180,7 @@ Michael
 archive/issue_comments_037393.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-3.2.3-release-notes-final.txt](tarball://root/attachments/some-uuid/ticket4928/Sage-3.2.3-release-notes-final.txt) by mabshoff created at 2009-01-19 04:57:42",
     "created_at": "2009-01-19T04:57:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4928",
     "type": "issue_comment",
@@ -189,7 +189,7 @@ archive/issue_comments_037393.json:
 }
 ```
 
-Attachment
+Attachment [Sage-3.2.3-release-notes-final.txt](tarball://root/attachments/some-uuid/ticket4928/Sage-3.2.3-release-notes-final.txt) by mabshoff created at 2009-01-19 04:57:42
 
 
 

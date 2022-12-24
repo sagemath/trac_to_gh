@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9080
 archive/issue_comments_084290.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch adds F-distribution.",
+    "body": "Attachment [trac#9080.patch](tarball://root/attachments/some-uuid/ticket9080/trac#9080.patch) by klee created at 2010-05-29 03:59:00\n\nThe patch adds F-distribution.",
     "created_at": "2010-05-29T03:59:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9080",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_084290.json:
 }
 ```
 
-Attachment
+Attachment [trac#9080.patch](tarball://root/attachments/some-uuid/ticket9080/trac#9080.patch) by klee created at 2010-05-29 03:59:00
 
 The patch adds F-distribution.
 
@@ -159,7 +159,7 @@ revised according to the reviewer's comments
 archive/issue_comments_084297.json:
 ```json
 {
-    "body": "Attachment\n\nThere is a slight inconsistency even in the developer manual. In the section \"Producing Patches with Mercurial\", \"trac xxxx: ...\" is suggested while \"Trac xxxx: ...\" seems to be the official standard.",
+    "body": "Attachment [trac_9080.patch](tarball://root/attachments/some-uuid/ticket9080/trac_9080.patch) by klee created at 2010-09-25 01:41:06\n\nThere is a slight inconsistency even in the developer manual. In the section \"Producing Patches with Mercurial\", \"trac xxxx: ...\" is suggested while \"Trac xxxx: ...\" seems to be the official standard.",
     "created_at": "2010-09-25T01:41:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9080",
     "type": "issue_comment",
@@ -168,7 +168,7 @@ archive/issue_comments_084297.json:
 }
 ```
 
-Attachment
+Attachment [trac_9080.patch](tarball://root/attachments/some-uuid/ticket9080/trac_9080.patch) by klee created at 2010-09-25 01:41:06
 
 There is a slight inconsistency even in the developer manual. In the section "Producing Patches with Mercurial", "trac xxxx: ..." is suggested while "Trac xxxx: ..." seems to be the official standard.
 
@@ -199,7 +199,7 @@ You could ask on sage-devel about this - for me, it's not so crucial, but mvngu 
 archive/issue_comments_084299.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9080-rebased.patch](tarball://root/attachments/some-uuid/ticket9080/trac_9080-rebased.patch) by kcrisman created at 2011-06-16 23:58:51",
     "created_at": "2011-06-16T23:58:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9080",
     "type": "issue_comment",
@@ -208,7 +208,7 @@ archive/issue_comments_084299.json:
 }
 ```
 
-Attachment
+Attachment [trac_9080-rebased.patch](tarball://root/attachments/some-uuid/ticket9080/trac_9080-rebased.patch) by kcrisman created at 2011-06-16 23:58:51
 
 
 

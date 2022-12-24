@@ -145,7 +145,7 @@ Useable version of file
 archive/issue_comments_008263.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:4 mvngu]:\n> Replying to [comment:3 jason]:\n> > We should merge the code written at http://wiki.wstein.org/2008/480a/theprojects by  \t\n> > Michael Rutherford \n> With Sage 3.4.2, I can't seem to (up)load Michael Rutherford's worksheet. Some investigation with the Linux command `file` shows that it's compressed using the RAR format. Can someone confirm this? If so, then can someone upload a Sage-friendly worksheet?",
+    "body": "Attachment [Final_Project_by_Michael_Rutherford.sws](tarball://root/attachments/some-uuid/ticket1312/Final_Project_by_Michael_Rutherford.sws) by myurko created at 2009-07-11 21:46:26\n\nReplying to [comment:4 mvngu]:\n> Replying to [comment:3 jason]:\n> > We should merge the code written at http://wiki.wstein.org/2008/480a/theprojects by  \t\n> > Michael Rutherford \n> With Sage 3.4.2, I can't seem to (up)load Michael Rutherford's worksheet. Some investigation with the Linux command `file` shows that it's compressed using the RAR format. Can someone confirm this? If so, then can someone upload a Sage-friendly worksheet?",
     "created_at": "2009-07-11T21:46:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1312",
     "type": "issue_comment",
@@ -154,7 +154,7 @@ archive/issue_comments_008263.json:
 }
 ```
 
-Attachment
+Attachment [Final_Project_by_Michael_Rutherford.sws](tarball://root/attachments/some-uuid/ticket1312/Final_Project_by_Michael_Rutherford.sws) by myurko created at 2009-07-11 21:46:26
 
 Replying to [comment:4 mvngu]:
 > Replying to [comment:3 jason]:

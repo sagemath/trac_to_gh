@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9027
 archive/issue_comments_083525.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9027_tutorial_latex_v1.patch](tarball://root/attachments/some-uuid/ticket9027/trac_9027_tutorial_latex_v1.patch) by rbeezer created at 2010-05-24 05:48:10",
     "created_at": "2010-05-24T05:48:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9027",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_083525.json:
 }
 ```
 
-Attachment
+Attachment [trac_9027_tutorial_latex_v1.patch](tarball://root/attachments/some-uuid/ticket9027/trac_9027_tutorial_latex_v1.patch) by rbeezer created at 2010-05-24 05:48:10
 
 
 
@@ -89,7 +89,7 @@ Version 1 patch is incomplete, but should build with just a handful of errors, a
 archive/issue_comments_083528.json:
 ```json
 {
-    "body": "Attachment\n\nVersion 2 patch has about 80% of the content I'd like to add.  So general comments about direction or scope are welcome.  I'll then be adding the missing sections, filling in doctests, links to methods, etc.",
+    "body": "Attachment [trac_9027_tutorial_latex_v2.patch](tarball://root/attachments/some-uuid/ticket9027/trac_9027_tutorial_latex_v2.patch) by rbeezer created at 2010-05-25 04:33:15\n\nVersion 2 patch has about 80% of the content I'd like to add.  So general comments about direction or scope are welcome.  I'll then be adding the missing sections, filling in doctests, links to methods, etc.",
     "created_at": "2010-05-25T04:33:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9027",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_083528.json:
 }
 ```
 
-Attachment
+Attachment [trac_9027_tutorial_latex_v2.patch](tarball://root/attachments/some-uuid/ticket9027/trac_9027_tutorial_latex_v2.patch) by rbeezer created at 2010-05-25 04:33:15
 
 Version 2 patch has about 80% of the content I'd like to add.  So general comments about direction or scope are welcome.  I'll then be adding the missing sections, filling in doctests, links to methods, etc.
 
@@ -183,7 +183,7 @@ Rob
 archive/issue_comments_083531.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9027_tutorial_latex_v3.patch](tarball://root/attachments/some-uuid/ticket9027/trac_9027_tutorial_latex_v3.patch) by rbeezer created at 2010-06-17 04:49:39",
     "created_at": "2010-06-17T04:49:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9027",
     "type": "issue_comment",
@@ -192,7 +192,7 @@ archive/issue_comments_083531.json:
 }
 ```
 
-Attachment
+Attachment [trac_9027_tutorial_latex_v3.patch](tarball://root/attachments/some-uuid/ticket9027/trac_9027_tutorial_latex_v3.patch) by rbeezer created at 2010-06-17 04:49:39
 
 
 
@@ -261,7 +261,7 @@ Also, if you do `sage -docbuild tutorial html -j` to build using jsMath, then js
 archive/issue_comments_083535.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of v3 patch",
+    "body": "Attachment [trac_9027-reviewer.patch](tarball://root/attachments/some-uuid/ticket9027/trac_9027-reviewer.patch) by jhpalmieri created at 2010-06-21 21:48:09\n\napply on top of v3 patch",
     "created_at": "2010-06-21T21:48:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9027",
     "type": "issue_comment",
@@ -270,7 +270,7 @@ archive/issue_comments_083535.json:
 }
 ```
 
-Attachment
+Attachment [trac_9027-reviewer.patch](tarball://root/attachments/some-uuid/ticket9027/trac_9027-reviewer.patch) by jhpalmieri created at 2010-06-21 21:48:09
 
 apply on top of v3 patch
 
@@ -366,7 +366,7 @@ Stand-alone, apply before reviewer patch
 archive/issue_comments_083540.json:
 ```json
 {
-    "body": "Attachment\n\nApply after reviewer patch",
+    "body": "Attachment [trac_9074-tkz-graph-latex-v4.patch](tarball://root/attachments/some-uuid/ticket9027/trac_9074-tkz-graph-latex-v4.patch) by rbeezer created at 2010-07-17 05:20:06\n\nApply after reviewer patch",
     "created_at": "2010-07-17T05:20:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9027",
     "type": "issue_comment",
@@ -375,7 +375,7 @@ archive/issue_comments_083540.json:
 }
 ```
 
-Attachment
+Attachment [trac_9074-tkz-graph-latex-v4.patch](tarball://root/attachments/some-uuid/ticket9027/trac_9074-tkz-graph-latex-v4.patch) by rbeezer created at 2010-07-17 05:20:06
 
 Apply after reviewer patch
 
@@ -386,7 +386,7 @@ Apply after reviewer patch
 archive/issue_comments_083541.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:7 jhpalmieri]:\n\nv4 patch removes the changes to macros.tex so will now apply cleanly.\n\nreviewer patch looks good to me, so that's a positive review on that.\n\ndoctesting patch makes a few more changes to make random-order doctesting work properly.  The general strategy is to clean-up on finishing a block (rather than always initializing on starting a block).  There are a few report of macros, preamble etc on starting a block, but that is to illustrate, rather than check.\n\nApply three patches in this order:  v4, reviewer, doctesting.  This all applies, builds (documentation) and passes tests (in random order!).  I'll make a mega-patch once final.\n\n> Oh, there were also a few doctest failures: I think the examples don't get run in order, so the latex preamble was not empty when it was supposed to be, for example.  My patch fixes those (I think).",
+    "body": "Attachment [trac_9027_doctesting.patch](tarball://root/attachments/some-uuid/ticket9027/trac_9027_doctesting.patch) by rbeezer created at 2010-07-17 05:40:32\n\nReplying to [comment:7 jhpalmieri]:\n\nv4 patch removes the changes to macros.tex so will now apply cleanly.\n\nreviewer patch looks good to me, so that's a positive review on that.\n\ndoctesting patch makes a few more changes to make random-order doctesting work properly.  The general strategy is to clean-up on finishing a block (rather than always initializing on starting a block).  There are a few report of macros, preamble etc on starting a block, but that is to illustrate, rather than check.\n\nApply three patches in this order:  v4, reviewer, doctesting.  This all applies, builds (documentation) and passes tests (in random order!).  I'll make a mega-patch once final.\n\n> Oh, there were also a few doctest failures: I think the examples don't get run in order, so the latex preamble was not empty when it was supposed to be, for example.  My patch fixes those (I think).",
     "created_at": "2010-07-17T05:40:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9027",
     "type": "issue_comment",
@@ -395,7 +395,7 @@ archive/issue_comments_083541.json:
 }
 ```
 
-Attachment
+Attachment [trac_9027_doctesting.patch](tarball://root/attachments/some-uuid/ticket9027/trac_9027_doctesting.patch) by rbeezer created at 2010-07-17 05:40:32
 
 Replying to [comment:7 jhpalmieri]:
 
@@ -454,7 +454,7 @@ Stand-alone v4 patch, apply before reviewer patch
 archive/issue_comments_083544.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:11 jhpalmieri]:\n> Hi Rob,\n> \n> It looks like trac_9074-tkz-graph-latex-v4.patch belongs on #9074 instead of here. Can you move it there?  Is there a new version of the patch for this ticket?\n\nOoh, that's bad.  The #9074 patch is already there where it belongs.  These two v4 patches were next to each other in my local storage, thus......\n\nThe real 9027 v4 patch is here now, sorry for the confusion.  I've never been able to delete files.  Do I need some extra privileges, or can you trash 9074-v4 for me?  Thanks.\n\nRob",
+    "body": "Attachment [trac_9027_tutorial_latex_v4.patch](tarball://root/attachments/some-uuid/ticket9027/trac_9027_tutorial_latex_v4.patch) by rbeezer created at 2010-07-22 23:35:02\n\nReplying to [comment:11 jhpalmieri]:\n> Hi Rob,\n> \n> It looks like trac_9074-tkz-graph-latex-v4.patch belongs on #9074 instead of here. Can you move it there?  Is there a new version of the patch for this ticket?\n\nOoh, that's bad.  The #9074 patch is already there where it belongs.  These two v4 patches were next to each other in my local storage, thus......\n\nThe real 9027 v4 patch is here now, sorry for the confusion.  I've never been able to delete files.  Do I need some extra privileges, or can you trash 9074-v4 for me?  Thanks.\n\nRob",
     "created_at": "2010-07-22T23:35:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9027",
     "type": "issue_comment",
@@ -463,7 +463,7 @@ archive/issue_comments_083544.json:
 }
 ```
 
-Attachment
+Attachment [trac_9027_tutorial_latex_v4.patch](tarball://root/attachments/some-uuid/ticket9027/trac_9027_tutorial_latex_v4.patch) by rbeezer created at 2010-07-22 23:35:02
 
 Replying to [comment:11 jhpalmieri]:
 > Hi Rob,

@@ -110,7 +110,7 @@ http://www.math.utexas.edu/pipermail/maxima/2007/009327.html
 archive/issue_comments_008096.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1289.patch](tarball://root/attachments/some-uuid/ticket1289/1289.patch) by mhansen created at 2008-01-17 01:20:56",
     "created_at": "2008-01-17T01:20:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1289",
     "type": "issue_comment",
@@ -119,7 +119,7 @@ archive/issue_comments_008096.json:
 }
 ```
 
-Attachment
+Attachment [1289.patch](tarball://root/attachments/some-uuid/ticket1289/1289.patch) by mhansen created at 2008-01-17 01:20:56
 
 
 
@@ -214,7 +214,7 @@ Then Carl Witty comes to the rescue:
 archive/issue_comments_008098.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1289.2.patch](tarball://root/attachments/some-uuid/ticket1289/1289.2.patch) by mhansen created at 2008-01-17 05:44:08",
     "created_at": "2008-01-17T05:44:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1289",
     "type": "issue_comment",
@@ -223,7 +223,7 @@ archive/issue_comments_008098.json:
 }
 ```
 
-Attachment
+Attachment [1289.2.patch](tarball://root/attachments/some-uuid/ticket1289/1289.2.patch) by mhansen created at 2008-01-17 05:44:08
 
 
 

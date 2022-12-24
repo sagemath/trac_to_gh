@@ -72,7 +72,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4786
 archive/issue_comments_036278.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-4786.patch](tarball://root/attachments/some-uuid/ticket4786/trac-4786.patch) by jason created at 2009-01-22 18:27:12",
     "created_at": "2009-01-22T18:27:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4786",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_036278.json:
 }
 ```
 
-Attachment
+Attachment [trac-4786.patch](tarball://root/attachments/some-uuid/ticket4786/trac-4786.patch) by jason created at 2009-01-22 18:27:12
 
 
 
@@ -145,7 +145,7 @@ Got:
 archive/issue_comments_036281.json:
 ```json
 {
-    "body": "Attachment\n\nBased on 4.1.1",
+    "body": "Attachment [trac_4786-solution_dict.patch](tarball://root/attachments/some-uuid/ticket4786/trac_4786-solution_dict.patch) by kcrisman created at 2009-08-26 15:25:42\n\nBased on 4.1.1",
     "created_at": "2009-08-26T15:25:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4786",
     "type": "issue_comment",
@@ -154,7 +154,7 @@ archive/issue_comments_036281.json:
 }
 ```
 
-Attachment
+Attachment [trac_4786-solution_dict.patch](tarball://root/attachments/some-uuid/ticket4786/trac_4786-solution_dict.patch) by kcrisman created at 2009-08-26 15:25:42
 
 Based on 4.1.1
 
@@ -201,7 +201,7 @@ new version of kcrisman's patch
 archive/issue_comments_036284.json:
 ```json
 {
-    "body": "Attachment\n\nHi Karl-Dieter,\n\nI uploaded a new version of your patch at attachment:trac_4786-solution_dict.take2.patch. The changes are:\n* used `sorted( d.items() )` to print a dictionary in a doctest\n* changed the block:\n {{{\n            try:\n                sol_dict=[dict([[eq.left(),eq.right()] for eq in solution]) for solution in sol_list]\n            except TypeError:\n                if not isinstance(sol_list[0],list):\n                    sol_list = [[i] for i in sol_list]\n                    sol_dict=[dict([[eq.left(),eq.right()] for eq in solution]) for solution in sol_list]\n }}}\n to\n {{{\n            if isinstance(sol_list[0], list):\n                sol_dict=[dict([[eq.left(),eq.right()] for eq in solution])\n                        for solution in sol_list]\n            else:\n                sol_dict=[{eq.left():eq.right()} for eq in sol_list]\n }}}\n\nPlease give this ticket a positive review if you're ok with my changes.\n\n----\n\nMinh, only apply: attachment:trac_4786-solution_dict.take2.patch",
+    "body": "Attachment [trac_4786-solution_dict.take2.patch](tarball://root/attachments/some-uuid/ticket4786/trac_4786-solution_dict.take2.patch) by burcin created at 2009-09-10 12:48:12\n\nHi Karl-Dieter,\n\nI uploaded a new version of your patch at attachment:trac_4786-solution_dict.take2.patch. The changes are:\n* used `sorted( d.items() )` to print a dictionary in a doctest\n* changed the block:\n {{{\n            try:\n                sol_dict=[dict([[eq.left(),eq.right()] for eq in solution]) for solution in sol_list]\n            except TypeError:\n                if not isinstance(sol_list[0],list):\n                    sol_list = [[i] for i in sol_list]\n                    sol_dict=[dict([[eq.left(),eq.right()] for eq in solution]) for solution in sol_list]\n }}}\n to\n {{{\n            if isinstance(sol_list[0], list):\n                sol_dict=[dict([[eq.left(),eq.right()] for eq in solution])\n                        for solution in sol_list]\n            else:\n                sol_dict=[{eq.left():eq.right()} for eq in sol_list]\n }}}\n\nPlease give this ticket a positive review if you're ok with my changes.\n\n----\n\nMinh, only apply: attachment:trac_4786-solution_dict.take2.patch",
     "created_at": "2009-09-10T12:48:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4786",
     "type": "issue_comment",
@@ -210,7 +210,7 @@ archive/issue_comments_036284.json:
 }
 ```
 
-Attachment
+Attachment [trac_4786-solution_dict.take2.patch](tarball://root/attachments/some-uuid/ticket4786/trac_4786-solution_dict.take2.patch) by burcin created at 2009-09-10 12:48:12
 
 Hi Karl-Dieter,
 
@@ -280,7 +280,7 @@ So I fixed that in the latest version, and hopefully now you can give it positiv
 archive/issue_comments_036286.json:
 ```json
 {
-    "body": "Attachment\n\nApply only take3.",
+    "body": "Attachment [trac_4786-solution_dict.take3.patch](tarball://root/attachments/some-uuid/ticket4786/trac_4786-solution_dict.take3.patch) by kcrisman created at 2009-09-10 14:14:34\n\nApply only take3.",
     "created_at": "2009-09-10T14:14:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4786",
     "type": "issue_comment",
@@ -289,7 +289,7 @@ archive/issue_comments_036286.json:
 }
 ```
 
-Attachment
+Attachment [trac_4786-solution_dict.take3.patch](tarball://root/attachments/some-uuid/ticket4786/trac_4786-solution_dict.take3.patch) by kcrisman created at 2009-09-10 14:14:34
 
 Apply only take3.
 
@@ -300,7 +300,7 @@ Apply only take3.
 archive/issue_comments_036287.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4786-solution_dict.take4.patch](tarball://root/attachments/some-uuid/ticket4786/trac_4786-solution_dict.take4.patch) by burcin created at 2009-09-12 13:13:20",
     "created_at": "2009-09-12T13:13:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4786",
     "type": "issue_comment",
@@ -309,7 +309,7 @@ archive/issue_comments_036287.json:
 }
 ```
 
-Attachment
+Attachment [trac_4786-solution_dict.take4.patch](tarball://root/attachments/some-uuid/ticket4786/trac_4786-solution_dict.take4.patch) by burcin created at 2009-09-12 13:13:20
 
 
 

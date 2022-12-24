@@ -68,7 +68,7 @@ simple fixes
 archive/issue_comments_032278.json:
 ```json
 {
-    "body": "Attachment\n\nThis is very simple, those optional tests just hadn't been hit in a while and the output needed to be changed.  The \"vertices\" to \"vertex\" was just a grammatical fix.  The 4 vertices to 3 is because Polyhedron objects now remove redundant vertices immediately.",
+    "body": "Attachment [trac_4385.patch](tarball://root/attachments/some-uuid/ticket4385/trac_4385.patch) by mhampton created at 2008-10-31 12:38:56\n\nThis is very simple, those optional tests just hadn't been hit in a while and the output needed to be changed.  The \"vertices\" to \"vertex\" was just a grammatical fix.  The 4 vertices to 3 is because Polyhedron objects now remove redundant vertices immediately.",
     "created_at": "2008-10-31T12:38:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4385",
     "type": "issue_comment",
@@ -77,7 +77,7 @@ archive/issue_comments_032278.json:
 }
 ```
 
-Attachment
+Attachment [trac_4385.patch](tarball://root/attachments/some-uuid/ticket4385/trac_4385.patch) by mhampton created at 2008-10-31 12:38:56
 
 This is very simple, those optional tests just hadn't been hit in a while and the output needed to be changed.  The "vertices" to "vertex" was just a grammatical fix.  The 4 vertices to 3 is because Polyhedron objects now remove redundant vertices immediately.
 

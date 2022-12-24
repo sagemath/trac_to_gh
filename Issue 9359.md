@@ -282,7 +282,7 @@ Apart from that, the patch applies fine and doctests fine, even with #9753 and #
 archive/issue_comments_088865.json:
 ```json
 {
-    "body": "Attachment\n\nNew version without change to \"ideal_below\"",
+    "body": "Attachment [trac_9359.patch](tarball://root/attachments/some-uuid/ticket9359/trac_9359.patch) by davidloeffler created at 2010-09-23 10:21:51\n\nNew version without change to \"ideal_below\"",
     "created_at": "2010-09-23T10:21:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
@@ -291,7 +291,7 @@ archive/issue_comments_088865.json:
 }
 ```
 
-Attachment
+Attachment [trac_9359.patch](tarball://root/attachments/some-uuid/ticket9359/trac_9359.patch) by davidloeffler created at 2010-09-23 10:21:51
 
 New version without change to "ideal_below"
 
@@ -449,7 +449,7 @@ There are a few conflicts with #8334. I will rebase this patch.
 archive/issue_comments_088873.json:
 ```json
 {
-    "body": "Attachment\n\nApply on top of #7883, #9898, #9753, #9764, #8334 and trac_9359.patch",
+    "body": "Attachment [9359_rebase_to_8334.patch](tarball://root/attachments/some-uuid/ticket9359/9359_rebase_to_8334.patch) by jdemeyer created at 2010-09-27 21:04:06\n\nApply on top of #7883, #9898, #9753, #9764, #8334 and trac_9359.patch",
     "created_at": "2010-09-27T21:04:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
@@ -458,7 +458,7 @@ archive/issue_comments_088873.json:
 }
 ```
 
-Attachment
+Attachment [9359_rebase_to_8334.patch](tarball://root/attachments/some-uuid/ticket9359/9359_rebase_to_8334.patch) by jdemeyer created at 2010-09-27 21:04:06
 
 Apply on top of #7883, #9898, #9753, #9764, #8334 and trac_9359.patch
 
@@ -595,7 +595,7 @@ Could someone update the commit string of the patch so its first line is a < 80 
 archive/issue_comments_088881.json:
 ```json
 {
-    "body": "Attachment\n\nQfolded patch with better commit string. Apply only this patch.",
+    "body": "Attachment [trac_9359-fixed.patch](tarball://root/attachments/some-uuid/ticket9359/trac_9359-fixed.patch) by davidloeffler created at 2010-09-28 10:13:47\n\nQfolded patch with better commit string. Apply only this patch.",
     "created_at": "2010-09-28T10:13:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
@@ -604,7 +604,7 @@ archive/issue_comments_088881.json:
 }
 ```
 
-Attachment
+Attachment [trac_9359-fixed.patch](tarball://root/attachments/some-uuid/ticket9359/trac_9359-fixed.patch) by davidloeffler created at 2010-09-28 10:13:47
 
 Qfolded patch with better commit string. Apply only this patch.
 
@@ -715,7 +715,7 @@ fix duplicate citation
 archive/issue_comments_088887.json:
 ```json
 {
-    "body": "Attachment\n\nDocfix patch as requested. We should really have a single table of citations for the whole reference manual -- one of the conflicts here was with another file citing 'the same textbook' -- but this'll do for now.",
+    "body": "Attachment [trac_9359-docfix.patch](tarball://root/attachments/some-uuid/ticket9359/trac_9359-docfix.patch) by davidloeffler created at 2010-09-28 11:18:58\n\nDocfix patch as requested. We should really have a single table of citations for the whole reference manual -- one of the conflicts here was with another file citing 'the same textbook' -- but this'll do for now.",
     "created_at": "2010-09-28T11:18:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
@@ -724,7 +724,7 @@ archive/issue_comments_088887.json:
 }
 ```
 
-Attachment
+Attachment [trac_9359-docfix.patch](tarball://root/attachments/some-uuid/ticket9359/trac_9359-docfix.patch) by davidloeffler created at 2010-09-28 11:18:58
 
 Docfix patch as requested. We should really have a single table of citations for the whole reference manual -- one of the conflicts here was with another file citing 'the same textbook' -- but this'll do for now.
 

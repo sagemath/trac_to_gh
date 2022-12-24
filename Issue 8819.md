@@ -58,7 +58,7 @@ Changing status from new to needs_review.
 archive/issue_comments_080944.json:
 ```json
 {
-    "body": "Attachment\n\nbased on Sage 4.4.1.alpha2",
+    "body": "Attachment [trac_8819-doc-warnings.patch](tarball://root/attachments/some-uuid/ticket8819/trac_8819-doc-warnings.patch) by mvngu created at 2010-04-30 20:37:19\n\nbased on Sage 4.4.1.alpha2",
     "created_at": "2010-04-30T20:37:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8819",
     "type": "issue_comment",
@@ -67,7 +67,7 @@ archive/issue_comments_080944.json:
 }
 ```
 
-Attachment
+Attachment [trac_8819-doc-warnings.patch](tarball://root/attachments/some-uuid/ticket8819/trac_8819-doc-warnings.patch) by mvngu created at 2010-04-30 20:37:19
 
 based on Sage 4.4.1.alpha2
 

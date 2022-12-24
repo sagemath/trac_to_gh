@@ -302,7 +302,7 @@ Oops, please ignore the updated patch for a second
 archive/issue_comments_046799.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [view_as_pdf-5920-final.patch](tarball://root/attachments/some-uuid/ticket5920/view_as_pdf-5920-final.patch) by nthiery created at 2009-04-30 17:41:40",
     "created_at": "2009-04-30T17:41:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5920",
     "type": "issue_comment",
@@ -311,7 +311,7 @@ archive/issue_comments_046799.json:
 }
 ```
 
-Attachment
+Attachment [view_as_pdf-5920-final.patch](tarball://root/attachments/some-uuid/ticket5920/view_as_pdf-5920-final.patch) by nthiery created at 2009-04-30 17:41:40
 
 
 

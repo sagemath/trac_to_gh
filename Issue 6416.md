@@ -46,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6416
 archive/issue_comments_051522.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [cython_frobby_library.patch](tarball://root/attachments/some-uuid/ticket6416/cython_frobby_library.patch) by broune created at 2009-06-25 21:38:38",
     "created_at": "2009-06-25T21:38:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6416",
     "type": "issue_comment",
@@ -55,7 +55,7 @@ archive/issue_comments_051522.json:
 }
 ```
 
-Attachment
+Attachment [cython_frobby_library.patch](tarball://root/attachments/some-uuid/ticket6416/cython_frobby_library.patch) by broune created at 2009-06-25 21:38:38
 
 
 

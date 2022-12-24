@@ -262,7 +262,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_082663.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review.",
+    "body": "Attachment [trac_8969_allow_neq_maxima_strings_v2.patch](tarball://root/attachments/some-uuid/ticket8969/trac_8969_allow_neq_maxima_strings_v2.patch) by kcrisman created at 2012-05-26 06:36:26\n\nPositive review.",
     "created_at": "2012-05-26T06:36:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8969",
     "type": "issue_comment",
@@ -271,7 +271,7 @@ archive/issue_comments_082663.json:
 }
 ```
 
-Attachment
+Attachment [trac_8969_allow_neq_maxima_strings_v2.patch](tarball://root/attachments/some-uuid/ticket8969/trac_8969_allow_neq_maxima_strings_v2.patch) by kcrisman created at 2012-05-26 06:36:26
 
 Positive review.
 

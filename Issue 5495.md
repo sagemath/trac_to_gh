@@ -95,7 +95,7 @@ Changing assignee from cwitty to jhpalmieri.
 archive/issue_comments_042677.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5495.patch](tarball://root/attachments/some-uuid/ticket5495/5495.patch) by jhpalmieri created at 2009-03-22 22:12:33",
     "created_at": "2009-03-22T22:12:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5495",
     "type": "issue_comment",
@@ -104,7 +104,7 @@ archive/issue_comments_042677.json:
 }
 ```
 
-Attachment
+Attachment [5495.patch](tarball://root/attachments/some-uuid/ticket5495/5495.patch) by jhpalmieri created at 2009-03-22 22:12:33
 
 
 

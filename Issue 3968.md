@@ -128,7 +128,7 @@ Updated patch to escape strings rather than hoping they don't contain triple quo
 archive/issue_comments_028513.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [parser.patch](tarball://root/attachments/some-uuid/ticket3968/parser.patch) by jason created at 2008-08-27 19:27:32",
     "created_at": "2008-08-27T19:27:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3968",
     "type": "issue_comment",
@@ -137,7 +137,7 @@ archive/issue_comments_028513.json:
 }
 ```
 
-Attachment
+Attachment [parser.patch](tarball://root/attachments/some-uuid/ticket3968/parser.patch) by jason created at 2008-08-27 19:27:32
 
 
 

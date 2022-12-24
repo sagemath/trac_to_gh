@@ -63,7 +63,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4901
 archive/issue_comments_037181.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [elllog-2.patch](tarball://root/attachments/some-uuid/ticket4901/elllog-2.patch) by cremona created at 2009-01-01 18:41:00",
     "created_at": "2009-01-01T18:41:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4901",
     "type": "issue_comment",
@@ -72,7 +72,7 @@ archive/issue_comments_037181.json:
 }
 ```
 
-Attachment
+Attachment [elllog-2.patch](tarball://root/attachments/some-uuid/ticket4901/elllog-2.patch) by cremona created at 2009-01-01 18:41:00
 
 
 

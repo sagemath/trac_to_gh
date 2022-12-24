@@ -54,7 +54,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9590
 archive/issue_comments_092734.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9590_doctest_failures_in_toric_modules.patch](tarball://root/attachments/some-uuid/ticket9590/trac_9590_doctest_failures_in_toric_modules.patch) by novoselt created at 2010-07-24 05:19:48",
     "created_at": "2010-07-24T05:19:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9590",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_092734.json:
 }
 ```
 
-Attachment
+Attachment [trac_9590_doctest_failures_in_toric_modules.patch](tarball://root/attachments/some-uuid/ticket9590/trac_9590_doctest_failures_in_toric_modules.patch) by novoselt created at 2010-07-24 05:19:48
 
 
 

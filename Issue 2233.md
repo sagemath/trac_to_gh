@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2233
 archive/issue_comments_014793.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac2233_padics.patch](tarball://root/attachments/some-uuid/ticket2233/trac2233_padics.patch) by wjp created at 2008-02-20 15:02:34",
     "created_at": "2008-02-20T15:02:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2233",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_014793.json:
 }
 ```
 
-Attachment
+Attachment [trac2233_padics.patch](tarball://root/attachments/some-uuid/ticket2233/trac2233_padics.patch) by wjp created at 2008-02-20 15:02:34
 
 
 
@@ -57,7 +57,7 @@ Attachment
 archive/issue_comments_014794.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac2233_padics2.patch](tarball://root/attachments/some-uuid/ticket2233/trac2233_padics2.patch) by wjp created at 2008-02-20 15:58:47",
     "created_at": "2008-02-20T15:58:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2233",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_014794.json:
 }
 ```
 
-Attachment
+Attachment [trac2233_padics2.patch](tarball://root/attachments/some-uuid/ticket2233/trac2233_padics2.patch) by wjp created at 2008-02-20 15:58:47
 
 
 
@@ -93,7 +93,7 @@ Resolution: fixed
 archive/issue_comments_014796.json:
 ```json
 {
-    "body": "Attachment\n\nMerged all three patches in Sage 2.10.2.alpha2",
+    "body": "Attachment [trac2233_padics3.patch](tarball://root/attachments/some-uuid/ticket2233/trac2233_padics3.patch) by mabshoff created at 2008-02-20 17:20:03\n\nMerged all three patches in Sage 2.10.2.alpha2",
     "created_at": "2008-02-20T17:20:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2233",
     "type": "issue_comment",
@@ -102,6 +102,6 @@ archive/issue_comments_014796.json:
 }
 ```
 
-Attachment
+Attachment [trac2233_padics3.patch](tarball://root/attachments/some-uuid/ticket2233/trac2233_padics3.patch) by mabshoff created at 2008-02-20 17:20:03
 
 Merged all three patches in Sage 2.10.2.alpha2

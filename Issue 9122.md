@@ -132,7 +132,7 @@ Oh, I think it's partly the fault of the patch: the docstrings should start with
 archive/issue_comments_084846.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9122-cubical-simplicial.patch](tarball://root/attachments/some-uuid/ticket9122/trac_9122-cubical-simplicial.patch) by jhpalmieri created at 2011-03-29 03:56:45",
     "created_at": "2011-03-29T03:56:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9122",
     "type": "issue_comment",
@@ -141,7 +141,7 @@ archive/issue_comments_084846.json:
 }
 ```
 
-Attachment
+Attachment [trac_9122-cubical-simplicial.patch](tarball://root/attachments/some-uuid/ticket9122/trac_9122-cubical-simplicial.patch) by jhpalmieri created at 2011-03-29 03:56:45
 
 
 

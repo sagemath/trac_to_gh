@@ -49,7 +49,7 @@ This replaces the previously posted patch.  It does not include the directory wa
 archive/issue_comments_012973.json:
 ```json
 {
-    "body": "Attachment\n\nThe revised path looks good to me.",
+    "body": "Attachment [trac-2005.patch](tarball://root/attachments/some-uuid/ticket2005/trac-2005.patch) by mabshoff created at 2008-02-01 02:33:53\n\nThe revised path looks good to me.",
     "created_at": "2008-02-01T02:33:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2005",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_012973.json:
 }
 ```
 
-Attachment
+Attachment [trac-2005.patch](tarball://root/attachments/some-uuid/ticket2005/trac-2005.patch) by mabshoff created at 2008-02-01 02:33:53
 
 The revised path looks good to me.
 

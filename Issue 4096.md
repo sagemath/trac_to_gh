@@ -139,7 +139,7 @@ doc patch, apply to 3.1.2
 archive/issue_comments_029549.json:
 ```json
 {
-    "body": "Attachment\n\nJohn and I agree that it is time for this to be reviewed.\n\nTo make this easier, I have put everything into one patch 4096-pari_real_precision_all.patch, which applies to 3.1.2.  There is also a small doc patch 4096-doc_const.patch which fixes a related issue in const.tex, and also applies to 3.1.2.\n\nNote to the reviewer: it would be best to start by scrolling down in the main patch until you hit the top of gen.pyx; there we have inserted a doc section called \"Guide to real precision and the Pari library\", which documents the correct behavior which is implemented by the patch.",
+    "body": "Attachment [4096-doc_const.patch](tarball://root/attachments/some-uuid/ticket4096/4096-doc_const.patch) by AlexGhitza created at 2008-09-19 23:43:27\n\nJohn and I agree that it is time for this to be reviewed.\n\nTo make this easier, I have put everything into one patch 4096-pari_real_precision_all.patch, which applies to 3.1.2.  There is also a small doc patch 4096-doc_const.patch which fixes a related issue in const.tex, and also applies to 3.1.2.\n\nNote to the reviewer: it would be best to start by scrolling down in the main patch until you hit the top of gen.pyx; there we have inserted a doc section called \"Guide to real precision and the Pari library\", which documents the correct behavior which is implemented by the patch.",
     "created_at": "2008-09-19T23:43:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4096",
     "type": "issue_comment",
@@ -148,7 +148,7 @@ archive/issue_comments_029549.json:
 }
 ```
 
-Attachment
+Attachment [4096-doc_const.patch](tarball://root/attachments/some-uuid/ticket4096/4096-doc_const.patch) by AlexGhitza created at 2008-09-19 23:43:27
 
 John and I agree that it is time for this to be reviewed.
 
@@ -241,7 +241,7 @@ It was fine with alpha0.  Thanks, Alex.
 archive/issue_comments_029553.json:
 ```json
 {
-    "body": "Attachment\n\napply to 3.1.3.alpha1",
+    "body": "Attachment [4096-pari_real_precision_all.patch](tarball://root/attachments/some-uuid/ticket4096/4096-pari_real_precision_all.patch) by AlexGhitza created at 2008-09-25 13:30:22\n\napply to 3.1.3.alpha1",
     "created_at": "2008-09-25T13:30:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4096",
     "type": "issue_comment",
@@ -250,7 +250,7 @@ archive/issue_comments_029553.json:
 }
 ```
 
-Attachment
+Attachment [4096-pari_real_precision_all.patch](tarball://root/attachments/some-uuid/ticket4096/4096-pari_real_precision_all.patch) by AlexGhitza created at 2008-09-25 13:30:22
 
 apply to 3.1.3.alpha1
 
@@ -340,7 +340,7 @@ This is the patch that was actually merged in 3.1.3.a2. It is slightly rebased a
 archive/issue_comments_029558.json:
 ```json
 {
-    "body": "Attachment\n\nI read over the patch and it looks good to me. I am certainly no expert, so this positive review should be taken with a grain of salt. Since the patch did bitrot twice and was written by two experts I merged it into 3.1.3.alpha2. Should anything come up during subsequent review please open a new ticket so we can deal with that problem. The situation with the patch is certainly much improved over the old situation, so I consider this a worthy tradeoff. This patch also fixes #4199 and all doctests pass which is the main reason I merged it.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_4096-pari_real_precision_all.patch](tarball://root/attachments/some-uuid/ticket4096/trac_4096-pari_real_precision_all.patch) by mabshoff created at 2008-09-26 04:06:48\n\nI read over the patch and it looks good to me. I am certainly no expert, so this positive review should be taken with a grain of salt. Since the patch did bitrot twice and was written by two experts I merged it into 3.1.3.alpha2. Should anything come up during subsequent review please open a new ticket so we can deal with that problem. The situation with the patch is certainly much improved over the old situation, so I consider this a worthy tradeoff. This patch also fixes #4199 and all doctests pass which is the main reason I merged it.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-26T04:06:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4096",
     "type": "issue_comment",
@@ -349,7 +349,7 @@ archive/issue_comments_029558.json:
 }
 ```
 
-Attachment
+Attachment [trac_4096-pari_real_precision_all.patch](tarball://root/attachments/some-uuid/ticket4096/trac_4096-pari_real_precision_all.patch) by mabshoff created at 2008-09-26 04:06:48
 
 I read over the patch and it looks good to me. I am certainly no expert, so this positive review should be taken with a grain of salt. Since the patch did bitrot twice and was written by two experts I merged it into 3.1.3.alpha2. Should anything come up during subsequent review please open a new ticket so we can deal with that problem. The situation with the patch is certainly much improved over the old situation, so I consider this a worthy tradeoff. This patch also fixes #4199 and all doctests pass which is the main reason I merged it.
 

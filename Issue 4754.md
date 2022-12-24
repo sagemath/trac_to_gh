@@ -231,7 +231,7 @@ Jason Smith also verbally gave me permission to license the code GPLv2 or later.
 archive/issue_comments_036006.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of previous patch",
+    "body": "Attachment [trac-4754-minrank.patch](tarball://root/attachments/some-uuid/ticket4754/trac-4754-minrank.patch) by jason created at 2010-02-02 10:09:25\n\napply on top of previous patch",
     "created_at": "2010-02-02T10:09:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4754",
     "type": "issue_comment",
@@ -240,7 +240,7 @@ archive/issue_comments_036006.json:
 }
 ```
 
-Attachment
+Attachment [trac-4754-minrank.patch](tarball://root/attachments/some-uuid/ticket4754/trac-4754-minrank.patch) by jason created at 2010-02-02 10:09:25
 
 apply on top of previous patch
 
@@ -251,7 +251,7 @@ apply on top of previous patch
 archive/issue_comments_036007.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of previous patches",
+    "body": "Attachment [trac-4754-minrank2.patch](tarball://root/attachments/some-uuid/ticket4754/trac-4754-minrank2.patch) by jason created at 2010-02-02 10:20:06\n\napply on top of previous patches",
     "created_at": "2010-02-02T10:20:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4754",
     "type": "issue_comment",
@@ -260,7 +260,7 @@ archive/issue_comments_036007.json:
 }
 ```
 
-Attachment
+Attachment [trac-4754-minrank2.patch](tarball://root/attachments/some-uuid/ticket4754/trac-4754-minrank2.patch) by jason created at 2010-02-02 10:20:06
 
 apply on top of previous patches
 
@@ -271,7 +271,7 @@ apply on top of previous patches
 archive/issue_comments_036008.json:
 ```json
 {
-    "body": "Attachment\n\nAdded rough versions of patches.",
+    "body": "Attachment [trac-4754-cython-zeroforcing.patch](tarball://root/attachments/some-uuid/ticket4754/trac-4754-cython-zeroforcing.patch) by jason created at 2010-02-02 10:21:18\n\nAdded rough versions of patches.",
     "created_at": "2010-02-02T10:21:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4754",
     "type": "issue_comment",
@@ -280,7 +280,7 @@ archive/issue_comments_036008.json:
 }
 ```
 
-Attachment
+Attachment [trac-4754-cython-zeroforcing.patch](tarball://root/attachments/some-uuid/ticket4754/trac-4754-cython-zeroforcing.patch) by jason created at 2010-02-02 10:21:18
 
 Added rough versions of patches.
 

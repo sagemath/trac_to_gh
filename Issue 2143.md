@@ -62,7 +62,7 @@ Of course, I could fix that since I'm root on that machine... but I'm too busy a
 archive/issue_comments_014051.json:
 ```json
 {
-    "body": "Attachment\n\nAttaching the patch on trac for convenience...",
+    "body": "Attachment [optimize.patch](tarball://root/attachments/some-uuid/ticket2143/optimize.patch) by dfdeshom created at 2008-03-03 21:05:13\n\nAttaching the patch on trac for convenience...",
     "created_at": "2008-03-03T21:05:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2143",
     "type": "issue_comment",
@@ -71,7 +71,7 @@ archive/issue_comments_014051.json:
 }
 ```
 
-Attachment
+Attachment [optimize.patch](tarball://root/attachments/some-uuid/ticket2143/optimize.patch) by dfdeshom created at 2008-03-03 21:05:13
 
 Attaching the patch on trac for convenience...
 
@@ -102,7 +102,7 @@ Doctests were failing due to either missing imports or unsuppressed output. I'm 
 archive/issue_comments_014053.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2143.patch](tarball://root/attachments/some-uuid/ticket2143/2143.patch) by dfdeshom created at 2008-03-05 05:58:02",
     "created_at": "2008-03-05T05:58:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2143",
     "type": "issue_comment",
@@ -111,7 +111,7 @@ archive/issue_comments_014053.json:
 }
 ```
 
-Attachment
+Attachment [2143.patch](tarball://root/attachments/some-uuid/ticket2143/2143.patch) by dfdeshom created at 2008-03-05 05:58:02
 
 
 
@@ -120,7 +120,7 @@ Attachment
 archive/issue_comments_014054.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2143-2.patch](tarball://root/attachments/some-uuid/ticket2143/2143-2.patch) by mhansen created at 2008-03-15 23:08:43",
     "created_at": "2008-03-15T23:08:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2143",
     "type": "issue_comment",
@@ -129,7 +129,7 @@ archive/issue_comments_014054.json:
 }
 ```
 
-Attachment
+Attachment [2143-2.patch](tarball://root/attachments/some-uuid/ticket2143/2143-2.patch) by mhansen created at 2008-03-15 23:08:43
 
 
 

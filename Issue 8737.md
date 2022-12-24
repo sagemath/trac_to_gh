@@ -189,7 +189,7 @@ I'm having the same problem with the file chmm.pyx, with the same solution.  So 
 archive/issue_comments_079917.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8737-std-c99.patch](tarball://root/attachments/some-uuid/ticket8737/trac_8737-std-c99.patch) by jhpalmieri created at 2010-04-22 02:18:49",
     "created_at": "2010-04-22T02:18:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8737",
     "type": "issue_comment",
@@ -198,7 +198,7 @@ archive/issue_comments_079917.json:
 }
 ```
 
-Attachment
+Attachment [trac_8737-std-c99.patch](tarball://root/attachments/some-uuid/ticket8737/trac_8737-std-c99.patch) by jhpalmieri created at 2010-04-22 02:18:49
 
 
 

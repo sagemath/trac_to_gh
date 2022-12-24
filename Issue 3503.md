@@ -263,7 +263,7 @@ Great work tracking this down Michael!!
 archive/issue_comments_024708.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-3503.patch](tarball://root/attachments/some-uuid/ticket3503/trac-3503.patch) by craigcitro created at 2008-06-24 22:24:17",
     "created_at": "2008-06-24T22:24:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3503",
     "type": "issue_comment",
@@ -272,7 +272,7 @@ archive/issue_comments_024708.json:
 }
 ```
 
-Attachment
+Attachment [trac-3503.patch](tarball://root/attachments/some-uuid/ticket3503/trac-3503.patch) by craigcitro created at 2008-06-24 22:24:17
 
 
 

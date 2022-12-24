@@ -53,7 +53,7 @@ Passes all tests except for known issues in sage-3.0.2.rc0.
 archive/issue_comments_013924.json:
 ```json
 {
-    "body": "Attachment\n\nthis is rlm's patch, but properly attached ;)",
+    "body": "Attachment [trac-2121-libecm.patch](tarball://root/attachments/some-uuid/ticket2121/trac-2121-libecm.patch) by mabshoff created at 2008-05-23 01:11:13\n\nthis is rlm's patch, but properly attached ;)",
     "created_at": "2008-05-23T01:11:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2121",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_013924.json:
 }
 ```
 
-Attachment
+Attachment [trac-2121-libecm.patch](tarball://root/attachments/some-uuid/ticket2121/trac-2121-libecm.patch) by mabshoff created at 2008-05-23 01:11:13
 
 this is rlm's patch, but properly attached ;)
 

@@ -126,7 +126,7 @@ Changing status from new to needs_review.
 archive/issue_comments_063894.json:
 ```json
 {
-    "body": "Attachment\n\nThis should do the job.",
+    "body": "Attachment [trac_7534-deprecation-message](tarball://root/attachments/some-uuid/ticket7534/trac_7534-deprecation-message) by timdumol created at 2009-11-30 06:26:20\n\nThis should do the job.",
     "created_at": "2009-11-30T06:26:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7534",
     "type": "issue_comment",
@@ -135,7 +135,7 @@ archive/issue_comments_063894.json:
 }
 ```
 
-Attachment
+Attachment [trac_7534-deprecation-message](tarball://root/attachments/some-uuid/ticket7534/trac_7534-deprecation-message) by timdumol created at 2009-11-30 06:26:20
 
 This should do the job.
 
@@ -244,7 +244,7 @@ Adds `nodoctest.py` files.  Replacement patch.
 archive/issue_comments_063900.json:
 ```json
 {
-    "body": "Attachment\n\nV2 suppresses doctesting for the \"deprecated\" files.",
+    "body": "Attachment [trac_7534-deprecation-message_v2.patch](tarball://root/attachments/some-uuid/ticket7534/trac_7534-deprecation-message_v2.patch) by mpatel created at 2009-12-10 12:17:29\n\nV2 suppresses doctesting for the \"deprecated\" files.",
     "created_at": "2009-12-10T12:17:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7534",
     "type": "issue_comment",
@@ -253,7 +253,7 @@ archive/issue_comments_063900.json:
 }
 ```
 
-Attachment
+Attachment [trac_7534-deprecation-message_v2.patch](tarball://root/attachments/some-uuid/ticket7534/trac_7534-deprecation-message_v2.patch) by mpatel created at 2009-12-10 12:17:29
 
 V2 suppresses doctesting for the "deprecated" files.
 

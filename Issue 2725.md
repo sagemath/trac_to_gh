@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2725
 archive/issue_comments_018775.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [etuple2.patch](tarball://root/attachments/some-uuid/ticket2725/etuple2.patch) by jbmohler created at 2008-03-29 19:55:22",
     "created_at": "2008-03-29T19:55:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2725",
     "type": "issue_comment",
@@ -49,7 +49,7 @@ archive/issue_comments_018775.json:
 }
 ```
 
-Attachment
+Attachment [etuple2.patch](tarball://root/attachments/some-uuid/ticket2725/etuple2.patch) by jbmohler created at 2008-03-29 19:55:22
 
 
 
@@ -58,7 +58,7 @@ Attachment
 archive/issue_comments_018776.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2725.patch](tarball://root/attachments/some-uuid/ticket2725/2725.patch) by mhansen created at 2008-03-29 20:08:16",
     "created_at": "2008-03-29T20:08:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2725",
     "type": "issue_comment",
@@ -67,7 +67,7 @@ archive/issue_comments_018776.json:
 }
 ```
 
-Attachment
+Attachment [2725.patch](tarball://root/attachments/some-uuid/ticket2725/2725.patch) by mhansen created at 2008-03-29 20:08:16
 
 
 

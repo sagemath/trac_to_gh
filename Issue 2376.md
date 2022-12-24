@@ -80,7 +80,7 @@ Changing status from new to assigned.
 archive/issue_comments_016032.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_2376.patch](tarball://root/attachments/some-uuid/ticket2376/trac_2376.patch) by mabshoff created at 2008-03-03 17:01:31",
     "created_at": "2008-03-03T17:01:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2376",
     "type": "issue_comment",
@@ -89,7 +89,7 @@ archive/issue_comments_016032.json:
 }
 ```
 
-Attachment
+Attachment [trac_2376.patch](tarball://root/attachments/some-uuid/ticket2376/trac_2376.patch) by mabshoff created at 2008-03-03 17:01:31
 
 
 
@@ -152,7 +152,7 @@ Merged in Sage 2.10.3.rc1
 archive/issue_comments_016036.json:
 ```json
 {
-    "body": "Attachment\n\nI just attached another trivial, \"obviously\" correct doctest fix related to trac-2245-lseries.patch to this ticket. It has already been merged, but feel free to review it.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_2376-2.patch](tarball://root/attachments/some-uuid/ticket2376/trac_2376-2.patch) by mabshoff created at 2008-03-03 19:21:56\n\nI just attached another trivial, \"obviously\" correct doctest fix related to trac-2245-lseries.patch to this ticket. It has already been merged, but feel free to review it.\n\nCheers,\n\nMichael",
     "created_at": "2008-03-03T19:21:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2376",
     "type": "issue_comment",
@@ -161,7 +161,7 @@ archive/issue_comments_016036.json:
 }
 ```
 
-Attachment
+Attachment [trac_2376-2.patch](tarball://root/attachments/some-uuid/ticket2376/trac_2376-2.patch) by mabshoff created at 2008-03-03 19:21:56
 
 I just attached another trivial, "obviously" correct doctest fix related to trac-2245-lseries.patch to this ticket. It has already been merged, but feel free to review it.
 

@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8332
 archive/issue_comments_074195.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8332_givaro_python.patch](tarball://root/attachments/some-uuid/ticket8332/trac_8332_givaro_python.patch) by roed created at 2010-02-23 14:50:58",
     "created_at": "2010-02-23T14:50:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8332",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_074195.json:
 }
 ```
 
-Attachment
+Attachment [trac_8332_givaro_python.patch](tarball://root/attachments/some-uuid/ticket8332/trac_8332_givaro_python.patch) by roed created at 2010-02-23 14:50:58
 
 
 
@@ -147,7 +147,7 @@ apply over previous patch
 archive/issue_comments_074201.json:
 ```json
 {
-    "body": "Attachment\n\nHere is a tiny patch to fix that failure. With this patch installed, all tests (including long) pass on selmer.warwick.ac.uk (Ubuntu x86_64), except an unrelated existing problem in sage/schemes/elliptic_curves/heegner.py; and a selection of tests in sage/rings/finite_rings pass on t2.math.washington.edu (Solaris) as well.",
+    "body": "Attachment [trac_8332_fix.patch](tarball://root/attachments/some-uuid/ticket8332/trac_8332_fix.patch) by davidloeffler created at 2010-04-04 14:33:38\n\nHere is a tiny patch to fix that failure. With this patch installed, all tests (including long) pass on selmer.warwick.ac.uk (Ubuntu x86_64), except an unrelated existing problem in sage/schemes/elliptic_curves/heegner.py; and a selection of tests in sage/rings/finite_rings pass on t2.math.washington.edu (Solaris) as well.",
     "created_at": "2010-04-04T14:33:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8332",
     "type": "issue_comment",
@@ -156,7 +156,7 @@ archive/issue_comments_074201.json:
 }
 ```
 
-Attachment
+Attachment [trac_8332_fix.patch](tarball://root/attachments/some-uuid/ticket8332/trac_8332_fix.patch) by davidloeffler created at 2010-04-04 14:33:38
 
 Here is a tiny patch to fix that failure. With this patch installed, all tests (including long) pass on selmer.warwick.ac.uk (Ubuntu x86_64), except an unrelated existing problem in sage/schemes/elliptic_curves/heegner.py; and a selection of tests in sage/rings/finite_rings pass on t2.math.washington.edu (Solaris) as well.
 

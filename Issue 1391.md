@@ -69,7 +69,7 @@ Michael
 archive/issue_comments_008949.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_1391.patch](tarball://root/attachments/some-uuid/ticket1391/trac_1391.patch) by malb created at 2008-01-16 17:09:12",
     "created_at": "2008-01-16T17:09:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1391",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_008949.json:
 }
 ```
 
-Attachment
+Attachment [trac_1391.patch](tarball://root/attachments/some-uuid/ticket1391/trac_1391.patch) by malb created at 2008-01-16 17:09:12
 
 
 
@@ -153,7 +153,7 @@ Michael
 archive/issue_comments_008953.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-1391-apply_after_patch_rej_from_other_patch.patch](tarball://root/attachments/some-uuid/ticket1391/trac-1391-apply_after_patch_rej_from_other_patch.patch) by was created at 2008-01-20 02:15:35",
     "created_at": "2008-01-20T02:15:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1391",
     "type": "issue_comment",
@@ -162,7 +162,7 @@ archive/issue_comments_008953.json:
 }
 ```
 
-Attachment
+Attachment [trac-1391-apply_after_patch_rej_from_other_patch.patch](tarball://root/attachments/some-uuid/ticket1391/trac-1391-apply_after_patch_rej_from_other_patch.patch) by was created at 2008-01-20 02:15:35
 
 
 

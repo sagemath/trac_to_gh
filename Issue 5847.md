@@ -239,7 +239,7 @@ Same for Fedora 13 x86 (Pentium 4 Prescott, gcc 4.4.4, parallel build with 6 job
 archive/issue_comments_045999.json:
 ```json
 {
-    "body": "Attachment\n\nSuggested changes - NOT (yet) a Mercurial patch. (Minor fixes, some comments added, some clean-up.)",
+    "body": "Attachment [trac_5847-GMP-ECM-6.3_spkg_update-reviewer.patch](tarball://root/attachments/some-uuid/ticket5847/trac_5847-GMP-ECM-6.3_spkg_update-reviewer.patch) by leif created at 2010-09-03 03:12:15\n\nSuggested changes - NOT (yet) a Mercurial patch. (Minor fixes, some comments added, some clean-up.)",
     "created_at": "2010-09-03T03:12:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
@@ -248,7 +248,7 @@ archive/issue_comments_045999.json:
 }
 ```
 
-Attachment
+Attachment [trac_5847-GMP-ECM-6.3_spkg_update-reviewer.patch](tarball://root/attachments/some-uuid/ticket5847/trac_5847-GMP-ECM-6.3_spkg_update-reviewer.patch) by leif created at 2010-09-03 03:12:15
 
 Suggested changes - NOT (yet) a Mercurial patch. (Minor fixes, some comments added, some clean-up.)
 
@@ -350,7 +350,7 @@ SPKG "reviewer" patch, based on Mike's, i.e. ecm-6.3 vs. ecm-6.3.p0. For referen
 archive/issue_comments_046004.json:
 ```json
 {
-    "body": "Attachment\n\nBuilt and tested on sage.math.washington.edu without problems.",
+    "body": "Attachment [trac_5847-ecm-6.3_vs._ecm-6.3.p0-spkg.patch](tarball://root/attachments/some-uuid/ticket5847/trac_5847-ecm-6.3_vs._ecm-6.3.p0-spkg.patch) by jdemeyer created at 2010-11-04 15:50:23\n\nBuilt and tested on sage.math.washington.edu without problems.",
     "created_at": "2010-11-04T15:50:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
@@ -359,7 +359,7 @@ archive/issue_comments_046004.json:
 }
 ```
 
-Attachment
+Attachment [trac_5847-ecm-6.3_vs._ecm-6.3.p0-spkg.patch](tarball://root/attachments/some-uuid/ticket5847/trac_5847-ecm-6.3_vs._ecm-6.3.p0-spkg.patch) by jdemeyer created at 2010-11-04 15:50:23
 
 Built and tested on sage.math.washington.edu without problems.
 
@@ -472,7 +472,7 @@ Log file for failed build on OS X 10.4 powerpc G5
 archive/issue_comments_046008.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ecm-6.3.p0.log](tarball://root/attachments/some-uuid/ticket5847/ecm-6.3.p0.log) by jdemeyer created at 2010-11-04 19:58:41",
     "created_at": "2010-11-04T19:58:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
@@ -481,7 +481,7 @@ archive/issue_comments_046008.json:
 }
 ```
 
-Attachment
+Attachment [ecm-6.3.p0.log](tarball://root/attachments/some-uuid/ticket5847/ecm-6.3.p0.log) by jdemeyer created at 2010-11-04 19:58:41
 
 
 
@@ -1302,7 +1302,7 @@ macosx 10.5 ppc G4 failure of ./configure
 archive/issue_comments_046035.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:33 leif]:\n> Replying to [comment:32 dimpase]:\n> > on MacOSX 10.5 PPC (G4) I get\n> > \n\n```\n checking what assembly label suffix to use... :\n checking if globals are prefixed by underscore... configure: error: Test program links neither with nor without underscore.\n Error configuring GMP-ECM.\n```\n\n \n> Can you attach the `config.log`?\n\ndone\n\n> \n> (Maybe weird `CFLAGS` etc. settings in your environment?)\nno, it's rather prosaic\n\n```\n$ gcc -g conftes1.o conftes2.o \ncollect2: ld terminated with signal 10 [Bus error]\nld warning: can't find atom for stabs FUN at 00000000 in conftes2.o\n```\n",
+    "body": "Attachment [config.log](tarball://root/attachments/some-uuid/ticket5847/config.log) by dimpase created at 2010-11-07 05:01:14\n\nReplying to [comment:33 leif]:\n> Replying to [comment:32 dimpase]:\n> > on MacOSX 10.5 PPC (G4) I get\n> > \n\n```\n checking what assembly label suffix to use... :\n checking if globals are prefixed by underscore... configure: error: Test program links neither with nor without underscore.\n Error configuring GMP-ECM.\n```\n\n \n> Can you attach the `config.log`?\n\ndone\n\n> \n> (Maybe weird `CFLAGS` etc. settings in your environment?)\nno, it's rather prosaic\n\n```\n$ gcc -g conftes1.o conftes2.o \ncollect2: ld terminated with signal 10 [Bus error]\nld warning: can't find atom for stabs FUN at 00000000 in conftes2.o\n```\n",
     "created_at": "2010-11-07T05:01:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
@@ -1311,7 +1311,7 @@ archive/issue_comments_046035.json:
 }
 ```
 
-Attachment
+Attachment [config.log](tarball://root/attachments/some-uuid/ticket5847/config.log) by dimpase created at 2010-11-07 05:01:14
 
 Replying to [comment:33 leif]:
 > Replying to [comment:32 dimpase]:
@@ -1509,7 +1509,7 @@ I'll attach config.log, just in case.
 archive/issue_comments_046040.json:
 ```json
 {
-    "body": "Attachment\n\nmacosx 10.5 ppc G4 with tweaked ./configure --disable-asm-redc (adding extra command in conftes2.s)",
+    "body": "Attachment [c.log](tarball://root/attachments/some-uuid/ticket5847/c.log) by dimpase created at 2010-11-07 06:46:34\n\nmacosx 10.5 ppc G4 with tweaked ./configure --disable-asm-redc (adding extra command in conftes2.s)",
     "created_at": "2010-11-07T06:46:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
@@ -1518,7 +1518,7 @@ archive/issue_comments_046040.json:
 }
 ```
 
-Attachment
+Attachment [c.log](tarball://root/attachments/some-uuid/ticket5847/c.log) by dimpase created at 2010-11-07 06:46:34
 
 macosx 10.5 ppc G4 with tweaked ./configure --disable-asm-redc (adding extra command in conftes2.s)
 
@@ -2173,7 +2173,7 @@ patch from p0 to p1, for review
 archive/issue_comments_046059.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ecm-6.3.p1.patch](tarball://root/attachments/some-uuid/ticket5847/ecm-6.3.p1.patch) by jdemeyer created at 2010-11-11 13:14:26",
     "created_at": "2010-11-11T13:14:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
@@ -2182,7 +2182,7 @@ archive/issue_comments_046059.json:
 }
 ```
 
-Attachment
+Attachment [ecm-6.3.p1.patch](tarball://root/attachments/some-uuid/ticket5847/ecm-6.3.p1.patch) by jdemeyer created at 2010-11-11 13:14:26
 
 
 
@@ -3161,7 +3161,7 @@ A new MPIR (2.1.3.p2) spkg which handles `CFLAGS` better (allowing us to use pro
 archive/issue_comments_046096.json:
 ```json
 {
-    "body": "Attachment\n\nDiff between the p1 and the p2 spkg. For reference / review.",
+    "body": "Attachment [trac_5847-ecm-6.3.p1-p2.diff](tarball://root/attachments/some-uuid/ticket5847/trac_5847-ecm-6.3.p1-p2.diff) by leif created at 2010-11-25 14:55:13\n\nDiff between the p1 and the p2 spkg. For reference / review.",
     "created_at": "2010-11-25T14:55:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
@@ -3170,7 +3170,7 @@ archive/issue_comments_046096.json:
 }
 ```
 
-Attachment
+Attachment [trac_5847-ecm-6.3.p1-p2.diff](tarball://root/attachments/some-uuid/ticket5847/trac_5847-ecm-6.3.p1-p2.diff) by leif created at 2010-11-25 14:55:13
 
 Diff between the p1 and the p2 spkg. For reference / review.
 
@@ -3181,7 +3181,7 @@ Diff between the p1 and the p2 spkg. For reference / review.
 archive/issue_comments_046097.json:
 ```json
 {
-    "body": "Attachment\n\nMercurial patch to get the p2 from the p1 spkg. Except for the commit messages perhaps less readable. (6 changesets.)",
+    "body": "Attachment [trac_5847-ecm-6.3.p1-p2.patch](tarball://root/attachments/some-uuid/ticket5847/trac_5847-ecm-6.3.p1-p2.patch) by leif created at 2010-11-25 15:44:15\n\nMercurial patch to get the p2 from the p1 spkg. Except for the commit messages perhaps less readable. (6 changesets.)",
     "created_at": "2010-11-25T15:44:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
@@ -3190,7 +3190,7 @@ archive/issue_comments_046097.json:
 }
 ```
 
-Attachment
+Attachment [trac_5847-ecm-6.3.p1-p2.patch](tarball://root/attachments/some-uuid/ticket5847/trac_5847-ecm-6.3.p1-p2.patch) by leif created at 2010-11-25 15:44:15
 
 Mercurial patch to get the p2 from the p1 spkg. Except for the commit messages perhaps less readable. (6 changesets.)
 
@@ -3894,7 +3894,7 @@ May take 1-2 hours until I upload a Mercurial patch.
 archive/issue_comments_046121.json:
 ```json
 {
-    "body": "Attachment\n\nSage library patch. Fixes 'execstack' issue on Fedora with GCC 4.6.0. Based on Sage 4.7.rc2.",
+    "body": "Attachment [trac_5847-module_list-fix_execstack-sagelib.patch](tarball://root/attachments/some-uuid/ticket5847/trac_5847-module_list-fix_execstack-sagelib.patch) by leif created at 2011-06-02 19:50:04\n\nSage library patch. Fixes 'execstack' issue on Fedora with GCC 4.6.0. Based on Sage 4.7.rc2.",
     "created_at": "2011-06-02T19:50:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
@@ -3903,7 +3903,7 @@ archive/issue_comments_046121.json:
 }
 ```
 
-Attachment
+Attachment [trac_5847-module_list-fix_execstack-sagelib.patch](tarball://root/attachments/some-uuid/ticket5847/trac_5847-module_list-fix_execstack-sagelib.patch) by leif created at 2011-06-02 19:50:04
 
 Sage library patch. Fixes 'execstack' issue on Fedora with GCC 4.6.0. Based on Sage 4.7.rc2.
 
@@ -4150,7 +4150,7 @@ Though positively reviewed (and independent of other tickets / spkgs), this tick
 archive/issue_comments_046133.json:
 ```json
 {
-    "body": "Attachment\n\nSage library patch. Fixes 'execstack' issue on Fedora with GCC 4.6.0. Rebased to Sage 4.7.1.alpha4. (Cf. #11377)",
+    "body": "Attachment [trac_5847-module_list-fix_execstack-sagelib-rebased_to_4.7.1.alpha4.patch](tarball://root/attachments/some-uuid/ticket5847/trac_5847-module_list-fix_execstack-sagelib-rebased_to_4.7.1.alpha4.patch) by leif created at 2011-07-05 10:54:38\n\nSage library patch. Fixes 'execstack' issue on Fedora with GCC 4.6.0. Rebased to Sage 4.7.1.alpha4. (Cf. #11377)",
     "created_at": "2011-07-05T10:54:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
@@ -4159,7 +4159,7 @@ archive/issue_comments_046133.json:
 }
 ```
 
-Attachment
+Attachment [trac_5847-module_list-fix_execstack-sagelib-rebased_to_4.7.1.alpha4.patch](tarball://root/attachments/some-uuid/ticket5847/trac_5847-module_list-fix_execstack-sagelib-rebased_to_4.7.1.alpha4.patch) by leif created at 2011-07-05 10:54:38
 
 Sage library patch. Fixes 'execstack' issue on Fedora with GCC 4.6.0. Rebased to Sage 4.7.1.alpha4. (Cf. #11377)
 

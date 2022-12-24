@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4044
 archive/issue_comments_029163.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sr_polybori.patch](tarball://root/attachments/some-uuid/ticket4044/sr_polybori.patch) by malb created at 2008-09-03 13:36:33",
     "created_at": "2008-09-03T13:36:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4044",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_029163.json:
 }
 ```
 
-Attachment
+Attachment [sr_polybori.patch](tarball://root/attachments/some-uuid/ticket4044/sr_polybori.patch) by malb created at 2008-09-03 13:36:33
 
 
 
@@ -49,7 +49,7 @@ Attachment
 archive/issue_comments_029164.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sr_polybori.2.patch](tarball://root/attachments/some-uuid/ticket4044/sr_polybori.2.patch) by malb created at 2008-09-03 14:04:17",
     "created_at": "2008-09-03T14:04:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4044",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_029164.json:
 }
 ```
 
-Attachment
+Attachment [sr_polybori.2.patch](tarball://root/attachments/some-uuid/ticket4044/sr_polybori.2.patch) by malb created at 2008-09-03 14:04:17
 
 
 
@@ -85,7 +85,7 @@ archive/issue_comments_029165.json:
 archive/issue_comments_029166.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sr_polybori.3.patch](tarball://root/attachments/some-uuid/ticket4044/sr_polybori.3.patch) by malb created at 2008-09-03 15:37:37",
     "created_at": "2008-09-03T15:37:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4044",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_029166.json:
 }
 ```
 
-Attachment
+Attachment [sr_polybori.3.patch](tarball://root/attachments/some-uuid/ticket4044/sr_polybori.3.patch) by malb created at 2008-09-03 15:37:37
 
 
 

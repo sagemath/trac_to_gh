@@ -102,7 +102,7 @@ fixes the doctest issues in ell_...
 archive/issue_comments_023890.json:
 ```json
 {
-    "body": "Attachment\n\nThe updated patch fixes the doctest issue. Elliptic curves used an unknown term ordering and the old -- buggy! -- code fell back to 'lex' silently. Now it is 'lex' explicitly, please speak up if that is not what is wanted.",
+    "body": "Attachment [term_order_misc.patch](tarball://root/attachments/some-uuid/ticket3406/term_order_misc.patch) by malb created at 2008-06-23 17:42:09\n\nThe updated patch fixes the doctest issue. Elliptic curves used an unknown term ordering and the old -- buggy! -- code fell back to 'lex' silently. Now it is 'lex' explicitly, please speak up if that is not what is wanted.",
     "created_at": "2008-06-23T17:42:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3406",
     "type": "issue_comment",
@@ -111,7 +111,7 @@ archive/issue_comments_023890.json:
 }
 ```
 
-Attachment
+Attachment [term_order_misc.patch](tarball://root/attachments/some-uuid/ticket3406/term_order_misc.patch) by malb created at 2008-06-23 17:42:09
 
 The updated patch fixes the doctest issue. Elliptic curves used an unknown term ordering and the old -- buggy! -- code fell back to 'lex' silently. Now it is 'lex' explicitly, please speak up if that is not what is wanted.
 

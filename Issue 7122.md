@@ -84,7 +84,7 @@ I've attached a patch which fixes the error you get.  However, I don't think tha
 archive/issue_comments_059035.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7122.patch](tarball://root/attachments/some-uuid/ticket7122/trac_7122.patch) by mhansen created at 2009-10-05 17:27:49",
     "created_at": "2009-10-05T17:27:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7122",
     "type": "issue_comment",
@@ -93,7 +93,7 @@ archive/issue_comments_059035.json:
 }
 ```
 
-Attachment
+Attachment [trac_7122.patch](tarball://root/attachments/some-uuid/ticket7122/trac_7122.patch) by mhansen created at 2009-10-05 17:27:49
 
 
 

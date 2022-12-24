@@ -51,7 +51,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_007357.json:
 ```json
 {
-    "body": "Attachment\n\nHere is the link to the new sympy spkg:\n\nhttp://dakol.fsik.cvut.cz/~ondra/sympy-0.5.7.spkg\n\nPlease update this first, only then use the patch above.",
+    "body": "Attachment [sympy.patch](tarball://root/attachments/some-uuid/ticket1189/sympy.patch) by certik created at 2007-11-17 00:18:56\n\nHere is the link to the new sympy spkg:\n\nhttp://dakol.fsik.cvut.cz/~ondra/sympy-0.5.7.spkg\n\nPlease update this first, only then use the patch above.",
     "created_at": "2007-11-17T00:18:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1189",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_007357.json:
 }
 ```
 
-Attachment
+Attachment [sympy.patch](tarball://root/attachments/some-uuid/ticket1189/sympy.patch) by certik created at 2007-11-17 00:18:56
 
 Here is the link to the new sympy spkg:
 
@@ -368,7 +368,7 @@ Yeah, I am still learning how to properly contribute to SAGE. :)
 archive/issue_comments_007370.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch was fixed, now it passes all tests:\n\nhttp://sagetrac.org/sage_trac/attachment/ticket/1189/sympy2.patch\n\nBut probably needs some review before committing.",
+    "body": "Attachment [sympy2.patch](tarball://root/attachments/some-uuid/ticket1189/sympy2.patch) by certik created at 2007-11-26 01:19:11\n\nThe patch was fixed, now it passes all tests:\n\nhttp://sagetrac.org/sage_trac/attachment/ticket/1189/sympy2.patch\n\nBut probably needs some review before committing.",
     "created_at": "2007-11-26T01:19:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1189",
     "type": "issue_comment",
@@ -377,7 +377,7 @@ archive/issue_comments_007370.json:
 }
 ```
 
-Attachment
+Attachment [sympy2.patch](tarball://root/attachments/some-uuid/ticket1189/sympy2.patch) by certik created at 2007-11-26 01:19:11
 
 The patch was fixed, now it passes all tests:
 
@@ -419,7 +419,7 @@ x + 1
 archive/issue_comments_007372.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sympy-coerce.patch](tarball://root/attachments/some-uuid/ticket1189/sympy-coerce.patch) by robertwb created at 2007-11-27 03:43:53",
     "created_at": "2007-11-27T03:43:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1189",
     "type": "issue_comment",
@@ -428,7 +428,7 @@ archive/issue_comments_007372.json:
 }
 ```
 
-Attachment
+Attachment [sympy-coerce.patch](tarball://root/attachments/some-uuid/ticket1189/sympy-coerce.patch) by robertwb created at 2007-11-27 03:43:53
 
 
 

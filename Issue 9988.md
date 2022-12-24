@@ -69,7 +69,7 @@ Changing status from new to needs_review.
 archive/issue_comments_100353.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9989-operands.patch](tarball://root/attachments/some-uuid/ticket9989/trac_9989-operands.patch) by burcin created at 2010-09-23 22:09:59",
     "created_at": "2010-09-23T22:09:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_100353.json:
 }
 ```
 
-Attachment
+Attachment [trac_9989-operands.patch](tarball://root/attachments/some-uuid/ticket9989/trac_9989-operands.patch) by burcin created at 2010-09-23 22:09:59
 
 
 
@@ -278,7 +278,7 @@ I think that the part in expression.pyx still has this syntax, and I agree that 
 archive/issue_comments_100362.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9989-operands.take2.patch](tarball://root/attachments/some-uuid/ticket9989/trac_9989-operands.take2.patch) by burcin created at 2011-03-23 12:05:07",
     "created_at": "2011-03-23T12:05:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
@@ -287,7 +287,7 @@ archive/issue_comments_100362.json:
 }
 ```
 
-Attachment
+Attachment [trac_9989-operands.take2.patch](tarball://root/attachments/some-uuid/ticket9989/trac_9989-operands.take2.patch) by burcin created at 2011-03-23 12:05:07
 
 
 
@@ -585,7 +585,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_100372.json:
 ```json
 {
-    "body": "Attachment\n\n\n```\nHunk #2 succeeded at 2476 with fuzz 1 (offset -32 lines).\n```\n\n\nI certainly don't have time to reread this whole patch again, so *assuming* that the only changes are the ones mentioned, then tests pass, changes are good, explanation of second point is sufficient, good to go.",
+    "body": "Attachment [trac_9989-operands.take3.patch](tarball://root/attachments/some-uuid/ticket9989/trac_9989-operands.take3.patch) by kcrisman created at 2011-06-08 20:28:19\n\n\n```\nHunk #2 succeeded at 2476 with fuzz 1 (offset -32 lines).\n```\n\n\nI certainly don't have time to reread this whole patch again, so *assuming* that the only changes are the ones mentioned, then tests pass, changes are good, explanation of second point is sufficient, good to go.",
     "created_at": "2011-06-08T20:28:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
@@ -594,7 +594,7 @@ archive/issue_comments_100372.json:
 }
 ```
 
-Attachment
+Attachment [trac_9989-operands.take3.patch](tarball://root/attachments/some-uuid/ticket9989/trac_9989-operands.take3.patch) by kcrisman created at 2011-06-08 20:28:19
 
 
 ```
@@ -685,7 +685,7 @@ Actually you could have used the ginac_depends variable. But your suggestion is 
 archive/issue_comments_100376.json:
 ```json
 {
-    "body": "Attachment\n\nApply trac_9989-operands.take4.patch",
+    "body": "Attachment [trac_9989-operands.take4.patch](tarball://root/attachments/some-uuid/ticket9989/trac_9989-operands.take4.patch) by burcin created at 2011-06-14 00:15:44\n\nApply trac_9989-operands.take4.patch",
     "created_at": "2011-06-14T00:15:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
@@ -694,7 +694,7 @@ archive/issue_comments_100376.json:
 }
 ```
 
-Attachment
+Attachment [trac_9989-operands.take4.patch](tarball://root/attachments/some-uuid/ticket9989/trac_9989-operands.take4.patch) by burcin created at 2011-06-14 00:15:44
 
 Apply trac_9989-operands.take4.patch
 

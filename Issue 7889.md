@@ -151,7 +151,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_068594.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [revolution_plot3d.patch](tarball://root/attachments/some-uuid/ticket7889/revolution_plot3d.patch) by olazo created at 2010-01-30 16:26:48",
     "created_at": "2010-01-30T16:26:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7889",
     "type": "issue_comment",
@@ -160,7 +160,7 @@ archive/issue_comments_068594.json:
 }
 ```
 
-Attachment
+Attachment [revolution_plot3d.patch](tarball://root/attachments/some-uuid/ticket7889/revolution_plot3d.patch) by olazo created at 2010-01-30 16:26:48
 
 
 
@@ -169,7 +169,7 @@ Attachment
 archive/issue_comments_068595.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [torus.png](tarball://root/attachments/some-uuid/ticket7889/torus.png) by olazo created at 2010-01-30 16:28:23",
     "created_at": "2010-01-30T16:28:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7889",
     "type": "issue_comment",
@@ -178,7 +178,7 @@ archive/issue_comments_068595.json:
 }
 ```
 
-Attachment
+Attachment [torus.png](tarball://root/attachments/some-uuid/ticket7889/torus.png) by olazo created at 2010-01-30 16:28:23
 
 
 
@@ -187,7 +187,7 @@ Attachment
 archive/issue_comments_068596.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [deformed torus.png](tarball://root/attachments/some-uuid/ticket7889/deformed torus.png) by olazo created at 2010-01-30 16:28:42",
     "created_at": "2010-01-30T16:28:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7889",
     "type": "issue_comment",
@@ -196,7 +196,7 @@ archive/issue_comments_068596.json:
 }
 ```
 
-Attachment
+Attachment [deformed torus.png](tarball://root/attachments/some-uuid/ticket7889/deformed torus.png) by olazo created at 2010-01-30 16:28:42
 
 
 
@@ -205,7 +205,7 @@ Attachment
 archive/issue_comments_068597.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [goblet.png](tarball://root/attachments/some-uuid/ticket7889/goblet.png) by olazo created at 2010-01-30 16:29:00",
     "created_at": "2010-01-30T16:29:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7889",
     "type": "issue_comment",
@@ -214,7 +214,7 @@ archive/issue_comments_068597.json:
 }
 ```
 
-Attachment
+Attachment [goblet.png](tarball://root/attachments/some-uuid/ticket7889/goblet.png) by olazo created at 2010-01-30 16:29:00
 
 
 
@@ -390,7 +390,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_068603.json:
 ```json
 {
-    "body": "Attachment\n\nI just uploaded another patch. It rewrites a lot of things.\n\nReplying to [comment:6 kcrisman]:\n> Trivial typos:\n\nTaken care of.\n\n\n\n> I am uncomfortable with\n> {{{\n>     def findvar(expr):#find the dependent variable of the curve\n>         try:\n>             vart=curve.args()[0]\n>         except:\n>             vart=var('t')\n>         return vart\n> }}}\n> because even if there isn't a default choice, t could conceivably mean something else, but var() injects it into the global namespace (I think?).\n> I think that using isinstance is generally preferred, also.  The timing isn't really that important here, but I think it is more \"Pythonic\" and:\n> {{{\n> sage: %timeit str(type(curve)) == \"<type 'tuple'>\"\n> 625 loops, best of 3: 869 ns per loop\n> sage: %timeit isinstance(curve,tuple)\n> 625 loops, best of 3: 264 ns per loop\n> }}}\n> \n\nAll of that has been taken care of\n\n> Just curious - why the xz-plane and not the xy-plane for the default location of the axis of rotation?  Obviously it doesn't \"really\" matter, but at least in the US most texts start rotating from there, so if this is intended for pedagogical purposes it could be confusing.  I don't know what Mathematica does, though, nor whether this is standard for industrial or non-US uses of revolution plots.\n\nActually, the xy plane is where the axis used to be by default (I left that unchanged). But I've added the posibility to choose to which coordinate axis the revolution axis will be parallel.\n\n> Next,\n> {{{\n>     from sage.symbolic.constants import pi\n>     from sage.functions.other import sqrt\n>     from sage.functions.trig import sin\n>     from sage.functions.trig import cos\n> }}}\n> It looks like you probably need sin and cos to be symbolic, though I'm not sure whether you need to import them.  But I think your use of pi and sqrt would be sufficient to import from the Python/C library math, since they are only being used to compute actual numbers, not symbolics, correct?  Like this\n> {{{\n> from math import pi, sqrt\n> }}}\n\nI tried that, but it produced errors\n\n> Please document phirange with examples - they are so cool!  You should probably also allow a tuple like (-pi,pi/2) in phirange, since there is absolutely no ambiguity (check len(phirange)==2 or ==3 to do this) and then people don't have to create a new variable\n> {{{\n> sage: var('phi')\n> sage: revolution_plot3d...(phi,-pi,pi/2)...\n> }}}\n> which would be quite annoying, as I just discovered when trying to get a phirange other than 0 to 2*pi.\n\nphirange now takes a 2-tuple. I had quite a hard time making that work propper.\n\n> You may also want 'curve' to be able to be a Vector object (symbolic), but I am not quite sure whether/how that is supported in such cases. Jason will know, since he has done stuff with this.\n\nIt should be enough to use revolution_plot3d(tuple(your_vector),...).\n\nI'll upload some screenshots once my connection recovers a reasonable speed.",
+    "body": "Attachment [revolution_plot3d_2.patch](tarball://root/attachments/some-uuid/ticket7889/revolution_plot3d_2.patch) by olazo created at 2010-02-06 21:38:07\n\nI just uploaded another patch. It rewrites a lot of things.\n\nReplying to [comment:6 kcrisman]:\n> Trivial typos:\n\nTaken care of.\n\n\n\n> I am uncomfortable with\n> {{{\n>     def findvar(expr):#find the dependent variable of the curve\n>         try:\n>             vart=curve.args()[0]\n>         except:\n>             vart=var('t')\n>         return vart\n> }}}\n> because even if there isn't a default choice, t could conceivably mean something else, but var() injects it into the global namespace (I think?).\n> I think that using isinstance is generally preferred, also.  The timing isn't really that important here, but I think it is more \"Pythonic\" and:\n> {{{\n> sage: %timeit str(type(curve)) == \"<type 'tuple'>\"\n> 625 loops, best of 3: 869 ns per loop\n> sage: %timeit isinstance(curve,tuple)\n> 625 loops, best of 3: 264 ns per loop\n> }}}\n> \n\nAll of that has been taken care of\n\n> Just curious - why the xz-plane and not the xy-plane for the default location of the axis of rotation?  Obviously it doesn't \"really\" matter, but at least in the US most texts start rotating from there, so if this is intended for pedagogical purposes it could be confusing.  I don't know what Mathematica does, though, nor whether this is standard for industrial or non-US uses of revolution plots.\n\nActually, the xy plane is where the axis used to be by default (I left that unchanged). But I've added the posibility to choose to which coordinate axis the revolution axis will be parallel.\n\n> Next,\n> {{{\n>     from sage.symbolic.constants import pi\n>     from sage.functions.other import sqrt\n>     from sage.functions.trig import sin\n>     from sage.functions.trig import cos\n> }}}\n> It looks like you probably need sin and cos to be symbolic, though I'm not sure whether you need to import them.  But I think your use of pi and sqrt would be sufficient to import from the Python/C library math, since they are only being used to compute actual numbers, not symbolics, correct?  Like this\n> {{{\n> from math import pi, sqrt\n> }}}\n\nI tried that, but it produced errors\n\n> Please document phirange with examples - they are so cool!  You should probably also allow a tuple like (-pi,pi/2) in phirange, since there is absolutely no ambiguity (check len(phirange)==2 or ==3 to do this) and then people don't have to create a new variable\n> {{{\n> sage: var('phi')\n> sage: revolution_plot3d...(phi,-pi,pi/2)...\n> }}}\n> which would be quite annoying, as I just discovered when trying to get a phirange other than 0 to 2*pi.\n\nphirange now takes a 2-tuple. I had quite a hard time making that work propper.\n\n> You may also want 'curve' to be able to be a Vector object (symbolic), but I am not quite sure whether/how that is supported in such cases. Jason will know, since he has done stuff with this.\n\nIt should be enough to use revolution_plot3d(tuple(your_vector),...).\n\nI'll upload some screenshots once my connection recovers a reasonable speed.",
     "created_at": "2010-02-06T21:38:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7889",
     "type": "issue_comment",
@@ -399,7 +399,7 @@ archive/issue_comments_068603.json:
 }
 ```
 
-Attachment
+Attachment [revolution_plot3d_2.patch](tarball://root/attachments/some-uuid/ticket7889/revolution_plot3d_2.patch) by olazo created at 2010-02-06 21:38:07
 
 I just uploaded another patch. It rewrites a lot of things.
 
@@ -471,7 +471,7 @@ I'll upload some screenshots once my connection recovers a reasonable speed.
 archive/issue_comments_068604.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [revolution_solid.png](tarball://root/attachments/some-uuid/ticket7889/revolution_solid.png) by olazo created at 2010-02-07 00:48:47",
     "created_at": "2010-02-07T00:48:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7889",
     "type": "issue_comment",
@@ -480,7 +480,7 @@ archive/issue_comments_068604.json:
 }
 ```
 
-Attachment
+Attachment [revolution_solid.png](tarball://root/attachments/some-uuid/ticket7889/revolution_solid.png) by olazo created at 2010-02-07 00:48:47
 
 
 
@@ -489,7 +489,7 @@ Attachment
 archive/issue_comments_068605.json:
 ```json
 {
-    "body": "Attachment\n\nJust a few more small things; since this will be a nice new file and functionality, we can afford to start off being very picky.\n\nThe optional parameters should be clearly marked as optional, as well as the defaults - again, other docstrings should have good examples.\n\nPlease make sure the docstring lines are only a given length.  For whatever reason, we don't let them wrap around (except with error messages or very long output, of course).  I think 80 characters?\n\nDon't need a double colon in line 38 since the examples come later.\n\nLine 33 is confusing, and perhaps contradicts the opening statements of usage (maybe I'm just confused on that, though):\n\n```\n - ``axis`` - A 2-tuple that specifies the position of the revolution axis given that it is parallel to parallel_axis. If parallel_axis is 'z' then axis the a point in which the revolution axis intersects the  `x y` plane. If parallel_axis is 'x' axis is a point in the `y z` plane. And if parallel_axis is 'y' axis is a point in the `x z` plane. \n```\n\nIn fact, one thing people often do is like\n\n```\n- ``axis`` - (default: 'z') Specifies position of...\n\n   - 'z': The axis is parallel to the `z` axis, intersecting the `x y` plane at the specified point\n\n   - etc.\n```\n\nNotice the spaces between the options for readability.  This might even be required in the Sage developer guidelines, I'm not sure.\n\nLines 65 and 69 should be capitalized?\n\nLook at the plot3d files to see what we decided the convention was for 3d - I can't remember if it's \"3D\" or \"3d\" or \"3-D\" or ...\n\nOne should of course be able to input a 2 OR 3 tuple for phirange; I didn't mean you should completely get rid of that option, since it's an option in parametric_plot3d.    But it still bothers me that we are creating random new variables called 'phi' or 'fi'...  the fix makes sense, but what if phi meant something *else* in the current Sage session?  Maybe you can avoid this using lambda functions (check timings, hopefully would be similar or better... look at the documentation for the third way to call parametric_plot3d:\n\n```\n        #. We draw a parametric surface using 3 Python functions (defined\n           using lambda):\n        \n           ::\n        \n               sage: f = (lambda u,v: cos(u), lambda u,v: sin(u)+cos(v), lambda u,v: sin(v))\n               sage: parametric_plot3d(f, (0, 2*pi), (-pi, pi))\n        \n```\n\nSo here we do not need to have a three-tuple for phirange, or indeed trange.  Of course, they now have to be Python or 'callable' functions.\n\nStylistically you could (optionally, obviously not necessary but does improve readability) \n\n```\nfrom sage.plot.plot3d.parametric_plot3d import parametric_plot3d\n...\ncurveplot = parametric_plot3d...\n```\n\n\nAnd feel free to disagree with any comments; after all, you wrote it!  I think these all make sense, though.",
+    "body": "Attachment [curvy curve.png](tarball://root/attachments/some-uuid/ticket7889/curvy curve.png) by kcrisman created at 2010-02-12 19:38:31\n\nJust a few more small things; since this will be a nice new file and functionality, we can afford to start off being very picky.\n\nThe optional parameters should be clearly marked as optional, as well as the defaults - again, other docstrings should have good examples.\n\nPlease make sure the docstring lines are only a given length.  For whatever reason, we don't let them wrap around (except with error messages or very long output, of course).  I think 80 characters?\n\nDon't need a double colon in line 38 since the examples come later.\n\nLine 33 is confusing, and perhaps contradicts the opening statements of usage (maybe I'm just confused on that, though):\n\n```\n - ``axis`` - A 2-tuple that specifies the position of the revolution axis given that it is parallel to parallel_axis. If parallel_axis is 'z' then axis the a point in which the revolution axis intersects the  `x y` plane. If parallel_axis is 'x' axis is a point in the `y z` plane. And if parallel_axis is 'y' axis is a point in the `x z` plane. \n```\n\nIn fact, one thing people often do is like\n\n```\n- ``axis`` - (default: 'z') Specifies position of...\n\n   - 'z': The axis is parallel to the `z` axis, intersecting the `x y` plane at the specified point\n\n   - etc.\n```\n\nNotice the spaces between the options for readability.  This might even be required in the Sage developer guidelines, I'm not sure.\n\nLines 65 and 69 should be capitalized?\n\nLook at the plot3d files to see what we decided the convention was for 3d - I can't remember if it's \"3D\" or \"3d\" or \"3-D\" or ...\n\nOne should of course be able to input a 2 OR 3 tuple for phirange; I didn't mean you should completely get rid of that option, since it's an option in parametric_plot3d.    But it still bothers me that we are creating random new variables called 'phi' or 'fi'...  the fix makes sense, but what if phi meant something *else* in the current Sage session?  Maybe you can avoid this using lambda functions (check timings, hopefully would be similar or better... look at the documentation for the third way to call parametric_plot3d:\n\n```\n        #. We draw a parametric surface using 3 Python functions (defined\n           using lambda):\n        \n           ::\n        \n               sage: f = (lambda u,v: cos(u), lambda u,v: sin(u)+cos(v), lambda u,v: sin(v))\n               sage: parametric_plot3d(f, (0, 2*pi), (-pi, pi))\n        \n```\n\nSo here we do not need to have a three-tuple for phirange, or indeed trange.  Of course, they now have to be Python or 'callable' functions.\n\nStylistically you could (optionally, obviously not necessary but does improve readability) \n\n```\nfrom sage.plot.plot3d.parametric_plot3d import parametric_plot3d\n...\ncurveplot = parametric_plot3d...\n```\n\n\nAnd feel free to disagree with any comments; after all, you wrote it!  I think these all make sense, though.",
     "created_at": "2010-02-12T19:38:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7889",
     "type": "issue_comment",
@@ -498,7 +498,7 @@ archive/issue_comments_068605.json:
 }
 ```
 
-Attachment
+Attachment [curvy curve.png](tarball://root/attachments/some-uuid/ticket7889/curvy curve.png) by kcrisman created at 2010-02-12 19:38:31
 
 Just a few more small things; since this will be a nice new file and functionality, we can afford to start off being very picky.
 
@@ -581,7 +581,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_068607.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [revolution_plot3d_3.patch](tarball://root/attachments/some-uuid/ticket7889/revolution_plot3d_3.patch) by olazo created at 2010-02-14 19:33:12",
     "created_at": "2010-02-14T19:33:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7889",
     "type": "issue_comment",
@@ -590,7 +590,7 @@ archive/issue_comments_068607.json:
 }
 ```
 
-Attachment
+Attachment [revolution_plot3d_3.patch](tarball://root/attachments/some-uuid/ticket7889/revolution_plot3d_3.patch) by olazo created at 2010-02-14 19:33:12
 
 
 
@@ -1001,7 +1001,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_068625.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [revolution_plot3d_4.patch](tarball://root/attachments/some-uuid/ticket7889/revolution_plot3d_4.patch) by olazo created at 2010-05-29 21:24:41",
     "created_at": "2010-05-29T21:24:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7889",
     "type": "issue_comment",
@@ -1010,7 +1010,7 @@ archive/issue_comments_068625.json:
 }
 ```
 
-Attachment
+Attachment [revolution_plot3d_4.patch](tarball://root/attachments/some-uuid/ticket7889/revolution_plot3d_4.patch) by olazo created at 2010-05-29 21:24:41
 
 
 
@@ -1091,7 +1091,7 @@ I'm attaching a reviewer patch which should *replace* the original one.  This in
 archive/issue_comments_068630.json:
 ```json
 {
-    "body": "Attachment\n\napply only this patch",
+    "body": "Attachment [trac_7889-revolution-plot3d.v5.patch](tarball://root/attachments/some-uuid/ticket7889/trac_7889-revolution-plot3d.v5.patch) by jhpalmieri created at 2010-06-22 22:25:07\n\napply only this patch",
     "created_at": "2010-06-22T22:25:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7889",
     "type": "issue_comment",
@@ -1100,7 +1100,7 @@ archive/issue_comments_068630.json:
 }
 ```
 
-Attachment
+Attachment [trac_7889-revolution-plot3d.v5.patch](tarball://root/attachments/some-uuid/ticket7889/trac_7889-revolution-plot3d.v5.patch) by jhpalmieri created at 2010-06-22 22:25:07
 
 apply only this patch
 

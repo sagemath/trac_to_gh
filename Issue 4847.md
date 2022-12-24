@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4847
 archive/issue_comments_036752.json:
 ```json
 {
-    "body": "Attachment\n\nAfter applying the patch, deleting the build directory followed by a \"sage -ba\" all doctests pass.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_4847.patch](tarball://root/attachments/some-uuid/ticket4847/trac_4847.patch) by mabshoff created at 2008-12-21 15:52:31\n\nAfter applying the patch, deleting the build directory followed by a \"sage -ba\" all doctests pass.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-21T15:52:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4847",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_036752.json:
 }
 ```
 
-Attachment
+Attachment [trac_4847.patch](tarball://root/attachments/some-uuid/ticket4847/trac_4847.patch) by mabshoff created at 2008-12-21 15:52:31
 
 After applying the patch, deleting the build directory followed by a "sage -ba" all doctests pass.
 

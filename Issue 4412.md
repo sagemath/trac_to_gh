@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4412
 archive/issue_comments_032456.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-localdata.patch](tarball://root/attachments/some-uuid/ticket4412/sage-localdata.patch) by cremona created at 2008-10-31 16:47:02",
     "created_at": "2008-10-31T16:47:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4412",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_032456.json:
 }
 ```
 
-Attachment
+Attachment [sage-localdata.patch](tarball://root/attachments/some-uuid/ticket4412/sage-localdata.patch) by cremona created at 2008-10-31 16:47:02
 
 
 
@@ -75,7 +75,7 @@ fix typos found after applying cremona's patch
 archive/issue_comments_032458.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch **4412-typo-localdata.patch** was produced under sage-3.1.4. It fixes various typos that were found after applying cremona's patch **sage-localdata.patch**. That is, **4412-typo-localdata.patch** should be applied on top of **sage-localdata.patch**.",
+    "body": "Attachment [4412-typo-localdata.patch](tarball://root/attachments/some-uuid/ticket4412/4412-typo-localdata.patch) by mvngu created at 2008-11-01 07:38:13\n\nThe patch **4412-typo-localdata.patch** was produced under sage-3.1.4. It fixes various typos that were found after applying cremona's patch **sage-localdata.patch**. That is, **4412-typo-localdata.patch** should be applied on top of **sage-localdata.patch**.",
     "created_at": "2008-11-01T07:38:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4412",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_032458.json:
 }
 ```
 
-Attachment
+Attachment [4412-typo-localdata.patch](tarball://root/attachments/some-uuid/ticket4412/4412-typo-localdata.patch) by mvngu created at 2008-11-01 07:38:13
 
 The patch **4412-typo-localdata.patch** was produced under sage-3.1.4. It fixes various typos that were found after applying cremona's patch **sage-localdata.patch**. That is, **4412-typo-localdata.patch** should be applied on top of **sage-localdata.patch**.
 
@@ -145,7 +145,7 @@ I've attached the rebased patch.
 archive/issue_comments_032461.json:
 ```json
 {
-    "body": "Attachment\n\nREFEREE REPORT:\n\nThis is an extremely good patch, with about a 10:1 ratio of documentation to code, and it really really needs to get in.  Here are a few minor issues that need to get fixed.  When they are all fixed, I'll give this a positive review.\n\n1. Please add a doctest to illustrate the algorithm= option to EllipticCurveLocalData, since all the doctests look like this, and none illustrate that new parameter. \n\n```\nEllipticCurveLocalData(E,7)\n```\n\n\n2. Once you do 1, you'll find it doesn't work, at least in the only example I tried:\n\n```\nsage: E = EllipticCurve('14a1') \nsage: from sage.schemes.elliptic_curves.ell_local_data import EllipticCurveLocalData \nsage: EllipticCurveLocalData(E,2, algorithm='generic')\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/was/build/sage-3.2.1.alpha1/<ipython console> in <module>()\n\n/home/was/build/sage-3.2.1.alpha1/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_local_data.pyc in __init__(self, E, P, proof, algorithm)\n    110             self._Emin, ch, self._val_disc, self._fp, self._KS, self._cp, self._split = self._tate(proof)\n    111             if self._fp>0:\n--> 112                 if self._Emin.c4().valuation(p)>0:\n    113                     self._reduction_type = 0\n    114                 elif self._split:    \n\n/home/was/build/sage-3.2.1.alpha1/local/lib/python2.5/site-packages/sage/rings/rational.so in sage.rings.rational.Rational.valuation (sage/rings/rational.c:6338)()\n\n/home/was/build/sage-3.2.1.alpha1/local/lib/python2.5/site-packages/sage/rings/integer.so in sage.rings.integer.Integer.valuation (sage/rings/integer.c:14944)()\n\n/home/was/build/sage-3.2.1.alpha1/local/lib/python2.5/site-packages/sage/rings/integer.so in sage.rings.integer.Integer.__init__ (sage/rings/integer.c:6054)()\n\nTypeError: unable to coerce <class 'sage.rings.ideal.Ideal_pid'> to an integer\n```\n\n\n3. Giving a meaningless algorithm option should raise a ValueError:\n\n```\nsage: EllipticCurveLocalData(E,2, algorithm='foo bar')\n```\n\n\n4. This line (line 240)\n\n```\nif not cp==4: \n```\n\nlooks silly.  How about \"if cp != 4:\"?\n\n5. For consistency in your docstrings in the assignments could you put spaces\naround =?  For example, you have\n\n```\n        476\t            sage: K.<a>=NumberField(x^3-2) \n \t477\t            sage: P17a, P17b = [P for P,e in K.factor(17)] \n \t478\t            sage: E = EllipticCurve([0,0,0,0,2*a+1]) \n```\n\nso sometimes there is space (which I really like!) and sometimes there isn't.",
+    "body": "Attachment [trac_sage-4412_typos-rebased.patch](tarball://root/attachments/some-uuid/ticket4412/trac_sage-4412_typos-rebased.patch) by was created at 2008-11-28 23:32:57\n\nREFEREE REPORT:\n\nThis is an extremely good patch, with about a 10:1 ratio of documentation to code, and it really really needs to get in.  Here are a few minor issues that need to get fixed.  When they are all fixed, I'll give this a positive review.\n\n1. Please add a doctest to illustrate the algorithm= option to EllipticCurveLocalData, since all the doctests look like this, and none illustrate that new parameter. \n\n```\nEllipticCurveLocalData(E,7)\n```\n\n\n2. Once you do 1, you'll find it doesn't work, at least in the only example I tried:\n\n```\nsage: E = EllipticCurve('14a1') \nsage: from sage.schemes.elliptic_curves.ell_local_data import EllipticCurveLocalData \nsage: EllipticCurveLocalData(E,2, algorithm='generic')\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/was/build/sage-3.2.1.alpha1/<ipython console> in <module>()\n\n/home/was/build/sage-3.2.1.alpha1/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_local_data.pyc in __init__(self, E, P, proof, algorithm)\n    110             self._Emin, ch, self._val_disc, self._fp, self._KS, self._cp, self._split = self._tate(proof)\n    111             if self._fp>0:\n--> 112                 if self._Emin.c4().valuation(p)>0:\n    113                     self._reduction_type = 0\n    114                 elif self._split:    \n\n/home/was/build/sage-3.2.1.alpha1/local/lib/python2.5/site-packages/sage/rings/rational.so in sage.rings.rational.Rational.valuation (sage/rings/rational.c:6338)()\n\n/home/was/build/sage-3.2.1.alpha1/local/lib/python2.5/site-packages/sage/rings/integer.so in sage.rings.integer.Integer.valuation (sage/rings/integer.c:14944)()\n\n/home/was/build/sage-3.2.1.alpha1/local/lib/python2.5/site-packages/sage/rings/integer.so in sage.rings.integer.Integer.__init__ (sage/rings/integer.c:6054)()\n\nTypeError: unable to coerce <class 'sage.rings.ideal.Ideal_pid'> to an integer\n```\n\n\n3. Giving a meaningless algorithm option should raise a ValueError:\n\n```\nsage: EllipticCurveLocalData(E,2, algorithm='foo bar')\n```\n\n\n4. This line (line 240)\n\n```\nif not cp==4: \n```\n\nlooks silly.  How about \"if cp != 4:\"?\n\n5. For consistency in your docstrings in the assignments could you put spaces\naround =?  For example, you have\n\n```\n        476\t            sage: K.<a>=NumberField(x^3-2) \n \t477\t            sage: P17a, P17b = [P for P,e in K.factor(17)] \n \t478\t            sage: E = EllipticCurve([0,0,0,0,2*a+1]) \n```\n\nso sometimes there is space (which I really like!) and sometimes there isn't.",
     "created_at": "2008-11-28T23:32:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4412",
     "type": "issue_comment",
@@ -154,7 +154,7 @@ archive/issue_comments_032461.json:
 }
 ```
 
-Attachment
+Attachment [trac_sage-4412_typos-rebased.patch](tarball://root/attachments/some-uuid/ticket4412/trac_sage-4412_typos-rebased.patch) by was created at 2008-11-28 23:32:57
 
 REFEREE REPORT:
 
@@ -228,7 +228,7 @@ so sometimes there is space (which I really like!) and sometimes there isn't.
 archive/issue_comments_032462.json:
 ```json
 {
-    "body": "Attachment\n\nThanks for the detailed review.  The latest patch addresses all of those:\n1. Extra tests added\n2. Fixed (really a logic error)\n3. A ValueError is now raised (see extra doctest)\n4. Changed\n5. Changed (I agree with the convention but some always slip through!)\n\nTested on 3.2.1.rc0, all tests in elliptic_curves/ pass.",
+    "body": "Attachment [trac_sage-4412_post-review.patch](tarball://root/attachments/some-uuid/ticket4412/trac_sage-4412_post-review.patch) by cremona created at 2008-11-29 16:59:59\n\nThanks for the detailed review.  The latest patch addresses all of those:\n1. Extra tests added\n2. Fixed (really a logic error)\n3. A ValueError is now raised (see extra doctest)\n4. Changed\n5. Changed (I agree with the convention but some always slip through!)\n\nTested on 3.2.1.rc0, all tests in elliptic_curves/ pass.",
     "created_at": "2008-11-29T16:59:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4412",
     "type": "issue_comment",
@@ -237,7 +237,7 @@ archive/issue_comments_032462.json:
 }
 ```
 
-Attachment
+Attachment [trac_sage-4412_post-review.patch](tarball://root/attachments/some-uuid/ticket4412/trac_sage-4412_post-review.patch) by cremona created at 2008-11-29 16:59:59
 
 Thanks for the detailed review.  The latest patch addresses all of those:
 1. Extra tests added

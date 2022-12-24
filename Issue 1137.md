@@ -115,7 +115,7 @@ and the output is all white.
 archive/issue_comments_006902.json:
 ```json
 {
-    "body": "Attachment\n\nI can't get this to work at all on OS X 10.4 (intel)\n\n\n```\nsage: sage: M.visualize_structure()\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"matrix2.pyx\", line 2853, in sage.matrix.matrix2.Matrix.visualize_structure\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/gd.py\", line 10, in <module>\n    import _gd\n<type 'exceptions.ImportError'>: dlopen(/Users/robert/sage/current/local/lib/python2.5/site-packages/_gd.so, 2): Symbol not found: _png_get_rowbytes\n  Referenced from: /Users/robert/sage/current/local/lib//libgd.2.dylib\n  Expected in: flat namespace\n```\n",
+    "body": "Attachment [vis.patch](tarball://root/attachments/some-uuid/ticket1137/vis.patch) by robertwb created at 2007-12-02 02:22:39\n\nI can't get this to work at all on OS X 10.4 (intel)\n\n\n```\nsage: sage: M.visualize_structure()\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"matrix2.pyx\", line 2853, in sage.matrix.matrix2.Matrix.visualize_structure\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/gd.py\", line 10, in <module>\n    import _gd\n<type 'exceptions.ImportError'>: dlopen(/Users/robert/sage/current/local/lib/python2.5/site-packages/_gd.so, 2): Symbol not found: _png_get_rowbytes\n  Referenced from: /Users/robert/sage/current/local/lib//libgd.2.dylib\n  Expected in: flat namespace\n```\n",
     "created_at": "2007-12-02T02:22:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1137",
     "type": "issue_comment",
@@ -124,7 +124,7 @@ archive/issue_comments_006902.json:
 }
 ```
 
-Attachment
+Attachment [vis.patch](tarball://root/attachments/some-uuid/ticket1137/vis.patch) by robertwb created at 2007-12-02 02:22:39
 
 I can't get this to work at all on OS X 10.4 (intel)
 

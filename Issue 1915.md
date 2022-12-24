@@ -117,7 +117,7 @@ Perhaps this could be fixed by:
 archive/issue_comments_012132.json:
 ```json
 {
-    "body": "Attachment\n\nThanks for catching the bug involving unsigned infinity.  I have replaced the patch with one that hopefully addresses the (very justified!) objections.  I chose to explain how oo relates to InfinityRing.0 and to UnsignedInfinity.0, and to replace oo by unsigned_oo in the docstrings related to the unsigned infinity ring.",
+    "body": "Attachment [1915-infinity.patch](tarball://root/attachments/some-uuid/ticket1915/1915-infinity.patch) by AlexGhitza created at 2008-09-12 05:25:52\n\nThanks for catching the bug involving unsigned infinity.  I have replaced the patch with one that hopefully addresses the (very justified!) objections.  I chose to explain how oo relates to InfinityRing.0 and to UnsignedInfinity.0, and to replace oo by unsigned_oo in the docstrings related to the unsigned infinity ring.",
     "created_at": "2008-09-12T05:25:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1915",
     "type": "issue_comment",
@@ -126,7 +126,7 @@ archive/issue_comments_012132.json:
 }
 ```
 
-Attachment
+Attachment [1915-infinity.patch](tarball://root/attachments/some-uuid/ticket1915/1915-infinity.patch) by AlexGhitza created at 2008-09-12 05:25:52
 
 Thanks for catching the bug involving unsigned infinity.  I have replaced the patch with one that hopefully addresses the (very justified!) objections.  I chose to explain how oo relates to InfinityRing.0 and to UnsignedInfinity.0, and to replace oo by unsigned_oo in the docstrings related to the unsigned infinity ring.
 

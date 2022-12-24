@@ -101,7 +101,7 @@ Changing status from new to assigned.
 archive/issue_comments_027162.json:
 ```json
 {
-    "body": "Attachment\n\nOops, adding John to the CC would help a lot when asking for his review :)\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_3819.patch](tarball://root/attachments/some-uuid/ticket3819/trac_3819.patch) by mabshoff created at 2008-08-12 17:23:00\n\nOops, adding John to the CC would help a lot when asking for his review :)\n\nCheers,\n\nMichael",
     "created_at": "2008-08-12T17:23:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3819",
     "type": "issue_comment",
@@ -110,7 +110,7 @@ archive/issue_comments_027162.json:
 }
 ```
 
-Attachment
+Attachment [trac_3819.patch](tarball://root/attachments/some-uuid/ticket3819/trac_3819.patch) by mabshoff created at 2008-08-12 17:23:00
 
 Oops, adding John to the CC would help a lot when asking for his review :)
 

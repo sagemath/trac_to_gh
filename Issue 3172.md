@@ -49,7 +49,7 @@ Changing status from new to assigned.
 archive/issue_comments_021977.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [prereq-0.3-install-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3172/prereq-0.3-install-64bit-osx.patch) by mabshoff created at 2008-05-19 00:03:08",
     "created_at": "2008-05-19T00:03:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3172",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_021977.json:
 }
 ```
 
-Attachment
+Attachment [prereq-0.3-install-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3172/prereq-0.3-install-64bit-osx.patch) by mabshoff created at 2008-05-19 00:03:08
 
 
 
@@ -67,7 +67,7 @@ Attachment
 archive/issue_comments_021978.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [bzip2-1.0.4-install-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3172/bzip2-1.0.4-install-64bit-osx.patch) by mabshoff created at 2008-05-19 00:03:28",
     "created_at": "2008-05-19T00:03:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3172",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_021978.json:
 }
 ```
 
-Attachment
+Attachment [bzip2-1.0.4-install-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3172/bzip2-1.0.4-install-64bit-osx.patch) by mabshoff created at 2008-05-19 00:03:28
 
 
 

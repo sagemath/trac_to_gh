@@ -77,7 +77,7 @@ Add a doctest for the fix.
 archive/issue_comments_089429.json:
 ```json
 {
-    "body": "Attachment\n\nThis is fixed, so I've added a doctest for it.",
+    "body": "Attachment [sage-trac_9393.patch](tarball://root/attachments/some-uuid/ticket9393/sage-trac_9393.patch) by mjo created at 2012-01-09 04:28:53\n\nThis is fixed, so I've added a doctest for it.",
     "created_at": "2012-01-09T04:28:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9393",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_089429.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac_9393.patch](tarball://root/attachments/some-uuid/ticket9393/sage-trac_9393.patch) by mjo created at 2012-01-09 04:28:53
 
 This is fixed, so I've added a doctest for it.
 

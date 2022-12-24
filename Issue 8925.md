@@ -246,7 +246,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_082227.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:8 hivert]:\n> Replying to [comment:7 jason]:\n> > Extremely picky, minor, minor thing, but these words: \"For now, list's, tuple's, set's, Set's are coerced into finite\" shouldn't have apostrophes in them, since the words are not possessive, but just plural.\n> \n> I reuploaded a new patche with the following diff folded:\n\nActually there where another occurrence in another file\n\n```\ndiff --git a/trac_8925-call_set_enumset-fh.patch b/trac_8925-call_set_enumset-fh.patch\n--- a/trac_8925-call_set_enumset-fh.patch\n+++ b/trac_8925-call_set_enumset-fh.patch\n@@ -83,7 +83,7 @@ diff --git a/sage/categories/finite_enum\n +            sage: FiniteEnumeratedSets()(Partitions(3)) # todo: not implemented: Partitions\n +            Partitions of 3\n +\n-+        For now, list's, tuple's, set's, Set's are coerced into finite\n++        For now, lists, tuples, sets, Sets are coerced into finite\n +        enumerated sets::\n +\n +            sage: FiniteEnumeratedSets()([1, 2, 3])\n```\n\nAgain I folded this change and resubmitted the patch. Please review.",
+    "body": "Attachment [trac_8925-call_set_enumset-fh.patch](tarball://root/attachments/some-uuid/ticket8925/trac_8925-call_set_enumset-fh.patch) by hivert created at 2010-11-27 18:41:25\n\nReplying to [comment:8 hivert]:\n> Replying to [comment:7 jason]:\n> > Extremely picky, minor, minor thing, but these words: \"For now, list's, tuple's, set's, Set's are coerced into finite\" shouldn't have apostrophes in them, since the words are not possessive, but just plural.\n> \n> I reuploaded a new patche with the following diff folded:\n\nActually there where another occurrence in another file\n\n```\ndiff --git a/trac_8925-call_set_enumset-fh.patch b/trac_8925-call_set_enumset-fh.patch\n--- a/trac_8925-call_set_enumset-fh.patch\n+++ b/trac_8925-call_set_enumset-fh.patch\n@@ -83,7 +83,7 @@ diff --git a/sage/categories/finite_enum\n +            sage: FiniteEnumeratedSets()(Partitions(3)) # todo: not implemented: Partitions\n +            Partitions of 3\n +\n-+        For now, list's, tuple's, set's, Set's are coerced into finite\n++        For now, lists, tuples, sets, Sets are coerced into finite\n +        enumerated sets::\n +\n +            sage: FiniteEnumeratedSets()([1, 2, 3])\n```\n\nAgain I folded this change and resubmitted the patch. Please review.",
     "created_at": "2010-11-27T18:41:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8925",
     "type": "issue_comment",
@@ -255,7 +255,7 @@ archive/issue_comments_082227.json:
 }
 ```
 
-Attachment
+Attachment [trac_8925-call_set_enumset-fh.patch](tarball://root/attachments/some-uuid/ticket8925/trac_8925-call_set_enumset-fh.patch) by hivert created at 2010-11-27 18:41:25
 
 Replying to [comment:8 hivert]:
 > Replying to [comment:7 jason]:

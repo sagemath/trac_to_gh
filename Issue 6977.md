@@ -319,7 +319,7 @@ For whitespace errors, see the file /home/mvngu/.sage//tmp/.doctest_mupad.py
 archive/issue_comments_057703.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6977_mupad_len.patch](tarball://root/attachments/some-uuid/ticket6977/trac_6977_mupad_len.patch) by nthiery created at 2009-09-30 10:19:15",
     "created_at": "2009-09-30T10:19:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6977",
     "type": "issue_comment",
@@ -328,7 +328,7 @@ archive/issue_comments_057703.json:
 }
 ```
 
-Attachment
+Attachment [trac_6977_mupad_len.patch](tarball://root/attachments/some-uuid/ticket6977/trac_6977_mupad_len.patch) by nthiery created at 2009-09-30 10:19:15
 
 
 

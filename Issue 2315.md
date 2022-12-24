@@ -87,7 +87,7 @@ Whenever I hear "union", I think "disjoint union" (at least as far as graphs go)
 archive/issue_comments_015406.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [graph_union.patch](tarball://root/attachments/some-uuid/ticket2315/graph_union.patch) by jason created at 2008-02-26 22:51:59",
     "created_at": "2008-02-26T22:51:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2315",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_015406.json:
 }
 ```
 
-Attachment
+Attachment [graph_union.patch](tarball://root/attachments/some-uuid/ticket2315/graph_union.patch) by jason created at 2008-02-26 22:51:59
 
 
 
@@ -209,7 +209,7 @@ apply on top of the first patch
 archive/issue_comments_015411.json:
 ```json
 {
-    "body": "Attachment\n\nThe graph-union2.patch takes care of the recommendations.  This now depends on the patch at #2283 to work correctly (otherwise 3*G will still return an error because 3 == Integer(3) at the Sage command line).",
+    "body": "Attachment [graph-union2.patch](tarball://root/attachments/some-uuid/ticket2315/graph-union2.patch) by jason created at 2008-02-27 20:55:42\n\nThe graph-union2.patch takes care of the recommendations.  This now depends on the patch at #2283 to work correctly (otherwise 3*G will still return an error because 3 == Integer(3) at the Sage command line).",
     "created_at": "2008-02-27T20:55:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2315",
     "type": "issue_comment",
@@ -218,7 +218,7 @@ archive/issue_comments_015411.json:
 }
 ```
 
-Attachment
+Attachment [graph-union2.patch](tarball://root/attachments/some-uuid/ticket2315/graph-union2.patch) by jason created at 2008-02-27 20:55:42
 
 The graph-union2.patch takes care of the recommendations.  This now depends on the patch at #2283 to work correctly (otherwise 3*G will still return an error because 3 == Integer(3) at the Sage command line).
 

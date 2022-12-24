@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2286
 archive/issue_comments_015164.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [fp-rank.patch](tarball://root/attachments/some-uuid/ticket2286/fp-rank.patch) by cwitty created at 2008-02-24 01:08:57",
     "created_at": "2008-02-24T01:08:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2286",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_015164.json:
 }
 ```
 
-Attachment
+Attachment [fp-rank.patch](tarball://root/attachments/some-uuid/ticket2286/fp-rank.patch) by cwitty created at 2008-02-24 01:08:57
 
 
 

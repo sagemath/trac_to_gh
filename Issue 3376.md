@@ -272,7 +272,7 @@ since I don't know the answer. Though, quite likely Sage doesn't implement it. T
 archive/issue_comments_023616.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch requires\n\n   http://sage.math.washington.edu/home/malb/spkgs/libm4ri-20080601.spkg",
+    "body": "Attachment [m4ri_strassen_standard.patch](tarball://root/attachments/some-uuid/ticket3376/m4ri_strassen_standard.patch) by malb created at 2008-08-06 16:31:42\n\nThe patch requires\n\n   http://sage.math.washington.edu/home/malb/spkgs/libm4ri-20080601.spkg",
     "created_at": "2008-08-06T16:31:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3376",
     "type": "issue_comment",
@@ -281,7 +281,7 @@ archive/issue_comments_023616.json:
 }
 ```
 
-Attachment
+Attachment [m4ri_strassen_standard.patch](tarball://root/attachments/some-uuid/ticket3376/m4ri_strassen_standard.patch) by malb created at 2008-08-06 16:31:42
 
 The patch requires
 
@@ -294,7 +294,7 @@ The patch requires
 archive/issue_comments_023617.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [m4ri_20080620.patch](tarball://root/attachments/some-uuid/ticket3376/m4ri_20080620.patch) by malb created at 2008-08-06 16:38:52",
     "created_at": "2008-08-06T16:38:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3376",
     "type": "issue_comment",
@@ -303,7 +303,7 @@ archive/issue_comments_023617.json:
 }
 ```
 
-Attachment
+Attachment [m4ri_20080620.patch](tarball://root/attachments/some-uuid/ticket3376/m4ri_20080620.patch) by malb created at 2008-08-06 16:38:52
 
 
 

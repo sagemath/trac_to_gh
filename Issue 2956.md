@@ -260,7 +260,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_020391.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated patch, should also work on x32.",
+    "body": "Attachment [sage-trac_2956.patch](tarball://root/attachments/some-uuid/ticket2956/sage-trac_2956.patch) by mjo created at 2012-01-09 01:54:18\n\nUpdated patch, should also work on x32.",
     "created_at": "2012-01-09T01:54:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2956",
     "type": "issue_comment",
@@ -269,7 +269,7 @@ archive/issue_comments_020391.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac_2956.patch](tarball://root/attachments/some-uuid/ticket2956/sage-trac_2956.patch) by mjo created at 2012-01-09 01:54:18
 
 Updated patch, should also work on x32.
 

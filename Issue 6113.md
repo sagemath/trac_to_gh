@@ -150,7 +150,7 @@ That in addition to the fact that the code for factoring a univariate polynomial
 archive/issue_comments_048845.json:
 ```json
 {
-    "body": "Attachment\n\nA run of identical jobs, one in gp which succeeds and one in sage which results in a SegFault",
+    "body": "Attachment [ProblematicPari.txt](tarball://root/attachments/some-uuid/ticket6113/ProblematicPari.txt) by stankewicz created at 2009-06-23 15:31:11\n\nA run of identical jobs, one in gp which succeeds and one in sage which results in a SegFault",
     "created_at": "2009-06-23T15:31:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6113",
     "type": "issue_comment",
@@ -159,7 +159,7 @@ archive/issue_comments_048845.json:
 }
 ```
 
-Attachment
+Attachment [ProblematicPari.txt](tarball://root/attachments/some-uuid/ticket6113/ProblematicPari.txt) by stankewicz created at 2009-06-23 15:31:11
 
 A run of identical jobs, one in gp which succeeds and one in sage which results in a SegFault
 
@@ -170,7 +170,7 @@ A run of identical jobs, one in gp which succeeds and one in sage which results 
 archive/issue_comments_048846.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:4 stankewicz]:\n\nAh ha!. The problem is nonexistent with factornf, but that uses a different algorithm than nffactor, which is the pari command that sage uses for factoring. This is indeed a problem with Pari and will be reported.\n\nWould it be possible to call factornf through gp and pull the factorization back to sage?",
+    "body": "Attachment [nffactorsegfault.txt](tarball://root/attachments/some-uuid/ticket6113/nffactorsegfault.txt) by stankewicz created at 2009-06-25 19:59:10\n\nReplying to [comment:4 stankewicz]:\n\nAh ha!. The problem is nonexistent with factornf, but that uses a different algorithm than nffactor, which is the pari command that sage uses for factoring. This is indeed a problem with Pari and will be reported.\n\nWould it be possible to call factornf through gp and pull the factorization back to sage?",
     "created_at": "2009-06-25T19:59:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6113",
     "type": "issue_comment",
@@ -179,7 +179,7 @@ archive/issue_comments_048846.json:
 }
 ```
 
-Attachment
+Attachment [nffactorsegfault.txt](tarball://root/attachments/some-uuid/ticket6113/nffactorsegfault.txt) by stankewicz created at 2009-06-25 19:59:10
 
 Replying to [comment:4 stankewicz]:
 

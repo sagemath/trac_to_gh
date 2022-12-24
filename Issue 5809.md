@@ -38,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5809
 archive/issue_comments_045624.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5809.patch](tarball://root/attachments/some-uuid/ticket5809/trac_5809.patch) by AlexGhitza created at 2009-04-17 10:46:27",
     "created_at": "2009-04-17T10:46:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5809",
     "type": "issue_comment",
@@ -47,7 +47,7 @@ archive/issue_comments_045624.json:
 }
 ```
 
-Attachment
+Attachment [trac_5809.patch](tarball://root/attachments/some-uuid/ticket5809/trac_5809.patch) by AlexGhitza created at 2009-04-17 10:46:27
 
 
 
@@ -92,7 +92,7 @@ apply after the main patch
 archive/issue_comments_045627.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review!\n\nI added this to the reference manual which required a little tweaking (the EXAMPLES in an __init__ docstring are excluded from the manual since the function name starts with an underscore;  what works well is to copy the same examples into the class's own docstring, then they get into the manual).\n\nI tested that the docs now build ok and look ok in the html ref manual.\n\nI guess Alex should ok the extra patch.",
+    "body": "Attachment [trac_5809-review.patch](tarball://root/attachments/some-uuid/ticket5809/trac_5809-review.patch) by cremona created at 2009-04-18 16:12:11\n\nPositive review!\n\nI added this to the reference manual which required a little tweaking (the EXAMPLES in an __init__ docstring are excluded from the manual since the function name starts with an underscore;  what works well is to copy the same examples into the class's own docstring, then they get into the manual).\n\nI tested that the docs now build ok and look ok in the html ref manual.\n\nI guess Alex should ok the extra patch.",
     "created_at": "2009-04-18T16:12:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5809",
     "type": "issue_comment",
@@ -101,7 +101,7 @@ archive/issue_comments_045627.json:
 }
 ```
 
-Attachment
+Attachment [trac_5809-review.patch](tarball://root/attachments/some-uuid/ticket5809/trac_5809-review.patch) by cremona created at 2009-04-18 16:12:11
 
 Positive review!
 

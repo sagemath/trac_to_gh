@@ -53,7 +53,7 @@ Changing status from new to needs_review.
 archive/issue_comments_087064.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9251-lazy_attribute_cython-fh.patch](tarball://root/attachments/some-uuid/ticket9251/trac_9251-lazy_attribute_cython-fh.patch) by hivert created at 2010-06-16 23:39:45",
     "created_at": "2010-06-16T23:39:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9251",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_087064.json:
 }
 ```
 
-Attachment
+Attachment [trac_9251-lazy_attribute_cython-fh.patch](tarball://root/attachments/some-uuid/ticket9251/trac_9251-lazy_attribute_cython-fh.patch) by hivert created at 2010-06-16 23:39:45
 
 
 
@@ -71,7 +71,7 @@ Attachment
 archive/issue_comments_087065.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9251-lazy_attribute_cython-fh.2.patch](tarball://root/attachments/some-uuid/ticket9251/trac_9251-lazy_attribute_cython-fh.2.patch) by hivert created at 2010-06-16 23:41:36",
     "created_at": "2010-06-16T23:41:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9251",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_087065.json:
 }
 ```
 
-Attachment
+Attachment [trac_9251-lazy_attribute_cython-fh.2.patch](tarball://root/attachments/some-uuid/ticket9251/trac_9251-lazy_attribute_cython-fh.2.patch) by hivert created at 2010-06-16 23:41:36
 
 
 

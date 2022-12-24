@@ -169,7 +169,7 @@ See #2437 (not 2347)
 archive/issue_comments_016150.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2394-newforms.patch](tarball://root/attachments/some-uuid/ticket2394/2394-newforms.patch) by boothby created at 2008-03-13 06:45:34",
     "created_at": "2008-03-13T06:45:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2394",
     "type": "issue_comment",
@@ -178,7 +178,7 @@ archive/issue_comments_016150.json:
 }
 ```
 
-Attachment
+Attachment [2394-newforms.patch](tarball://root/attachments/some-uuid/ticket2394/2394-newforms.patch) by boothby created at 2008-03-13 06:45:34
 
 
 
@@ -228,7 +228,7 @@ Since this patch has required a little tinkering with eclib itself, I think I ne
 archive/issue_comments_016153.json:
 ```json
 {
-    "body": "Attachment\n\n2394-license.patch adds a copyright statement.  File-level documentation would be redundant since the file only has a single class, and the class is documented.  Also, ECModularSymbol has doctests on every function.  Should we add more?  If so, what?  Modulo any further complaints, we should add this in to avoid bitrot.",
+    "body": "Attachment [2394-license.patch](tarball://root/attachments/some-uuid/ticket2394/2394-license.patch) by boothby created at 2008-04-11 21:03:46\n\n2394-license.patch adds a copyright statement.  File-level documentation would be redundant since the file only has a single class, and the class is documented.  Also, ECModularSymbol has doctests on every function.  Should we add more?  If so, what?  Modulo any further complaints, we should add this in to avoid bitrot.",
     "created_at": "2008-04-11T21:03:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2394",
     "type": "issue_comment",
@@ -237,7 +237,7 @@ archive/issue_comments_016153.json:
 }
 ```
 
-Attachment
+Attachment [2394-license.patch](tarball://root/attachments/some-uuid/ticket2394/2394-license.patch) by boothby created at 2008-04-11 21:03:46
 
 2394-license.patch adds a copyright statement.  File-level documentation would be redundant since the file only has a single class, and the class is documented.  Also, ECModularSymbol has doctests on every function.  Should we add more?  If so, what?  Modulo any further complaints, we should add this in to avoid bitrot.
 

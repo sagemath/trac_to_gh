@@ -136,7 +136,7 @@ Changing keywords from "" to "modular form twist character".
 archive/issue_comments_056376.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6837.patch](tarball://root/attachments/some-uuid/ticket6837/trac_6837.patch) by AlexGhitza created at 2010-01-03 11:27:50",
     "created_at": "2010-01-03T11:27:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6837",
     "type": "issue_comment",
@@ -145,7 +145,7 @@ archive/issue_comments_056376.json:
 }
 ```
 
-Attachment
+Attachment [trac_6837.patch](tarball://root/attachments/some-uuid/ticket6837/trac_6837.patch) by AlexGhitza created at 2010-01-03 11:27:50
 
 
 

@@ -257,7 +257,7 @@ Changing status from new to assigned.
 archive/issue_comments_011733.json:
 ```json
 {
-    "body": "Attachment\n\nThe only functional change is that the default plot_points is now [40,40] instead of [15,15].  It's clear when doing a lot of plots that [15,15] is not enough -- it was just copied from Mathematica and was probably a good convention back in the stone age (1990s).",
+    "body": "Attachment [trac-1854.patch](tarball://root/attachments/some-uuid/ticket1854/trac-1854.patch) by was created at 2008-01-19 23:10:52\n\nThe only functional change is that the default plot_points is now [40,40] instead of [15,15].  It's clear when doing a lot of plots that [15,15] is not enough -- it was just copied from Mathematica and was probably a good convention back in the stone age (1990s).",
     "created_at": "2008-01-19T23:10:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1854",
     "type": "issue_comment",
@@ -266,7 +266,7 @@ archive/issue_comments_011733.json:
 }
 ```
 
-Attachment
+Attachment [trac-1854.patch](tarball://root/attachments/some-uuid/ticket1854/trac-1854.patch) by was created at 2008-01-19 23:10:52
 
 The only functional change is that the default plot_points is now [40,40] instead of [15,15].  It's clear when doing a lot of plots that [15,15] is not enough -- it was just copied from Mathematica and was probably a good convention back in the stone age (1990s).
 
@@ -277,7 +277,7 @@ The only functional change is that the default plot_points is now [40,40] instea
 archive/issue_comments_011734.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1854.patch](tarball://root/attachments/some-uuid/ticket1854/1854.patch) by mhansen created at 2008-01-21 03:41:37",
     "created_at": "2008-01-21T03:41:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1854",
     "type": "issue_comment",
@@ -286,7 +286,7 @@ archive/issue_comments_011734.json:
 }
 ```
 
-Attachment
+Attachment [1854.patch](tarball://root/attachments/some-uuid/ticket1854/1854.patch) by mhansen created at 2008-01-21 03:41:37
 
 
 

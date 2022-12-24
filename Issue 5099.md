@@ -113,7 +113,7 @@ Changing status from new to assigned.
 archive/issue_comments_038923.json:
 ```json
 {
-    "body": "Attachment\n\nPatch proposal",
+    "body": "Attachment [matrix_fix_again-fh.patch](tarball://root/attachments/some-uuid/ticket5099/matrix_fix_again-fh.patch) by hivert created at 2009-03-01 22:09:20\n\nPatch proposal",
     "created_at": "2009-03-01T22:09:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5099",
     "type": "issue_comment",
@@ -122,7 +122,7 @@ archive/issue_comments_038923.json:
 }
 ```
 
-Attachment
+Attachment [matrix_fix_again-fh.patch](tarball://root/attachments/some-uuid/ticket5099/matrix_fix_again-fh.patch) by hivert created at 2009-03-01 22:09:20
 
 Patch proposal
 

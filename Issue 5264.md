@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5264
 archive/issue_comments_040415.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5264-perm-speed.patch](tarball://root/attachments/some-uuid/ticket5264/5264-perm-speed.patch) by robertwb created at 2009-02-14 06:50:11",
     "created_at": "2009-02-14T06:50:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5264",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_040415.json:
 }
 ```
 
-Attachment
+Attachment [5264-perm-speed.patch](tarball://root/attachments/some-uuid/ticket5264/5264-perm-speed.patch) by robertwb created at 2009-02-14 06:50:11
 
 
 

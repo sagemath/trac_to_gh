@@ -51,7 +51,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7112
 archive/issue_comments_058942.json:
 ```json
 {
-    "body": "Attachment\n\nwith this patch applied all doctest pass for me on OS X 10.5 PPC",
+    "body": "Attachment [trac_7112.patch](tarball://root/attachments/some-uuid/ticket7112/trac_7112.patch) by was created at 2009-10-07 12:15:31\n\nwith this patch applied all doctest pass for me on OS X 10.5 PPC",
     "created_at": "2009-10-07T12:15:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7112",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_058942.json:
 }
 ```
 
-Attachment
+Attachment [trac_7112.patch](tarball://root/attachments/some-uuid/ticket7112/trac_7112.patch) by was created at 2009-10-07 12:15:31
 
 with this patch applied all doctest pass for me on OS X 10.5 PPC
 
@@ -119,7 +119,7 @@ needed so that all tests also pass on sage.math.
 archive/issue_comments_058945.json:
 ```json
 {
-    "body": "Attachment\n\n(Note that I already merged this in sage-4.1.2.rc1.alpha3.  However, it awaits review before I'll release sage-4.1.2.)",
+    "body": "Attachment [trac_7112-part2.patch](tarball://root/attachments/some-uuid/ticket7112/trac_7112-part2.patch) by was created at 2009-10-07 12:57:20\n\n(Note that I already merged this in sage-4.1.2.rc1.alpha3.  However, it awaits review before I'll release sage-4.1.2.)",
     "created_at": "2009-10-07T12:57:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7112",
     "type": "issue_comment",
@@ -128,7 +128,7 @@ archive/issue_comments_058945.json:
 }
 ```
 
-Attachment
+Attachment [trac_7112-part2.patch](tarball://root/attachments/some-uuid/ticket7112/trac_7112-part2.patch) by was created at 2009-10-07 12:57:20
 
 (Note that I already merged this in sage-4.1.2.rc1.alpha3.  However, it awaits review before I'll release sage-4.1.2.)
 

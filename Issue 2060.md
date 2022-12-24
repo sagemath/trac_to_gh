@@ -61,7 +61,7 @@ Michael
 archive/issue_comments_013341.json:
 ```json
 {
-    "body": "Attachment\n\nupdate polybori interface to version 0.3.1",
+    "body": "Attachment [2060-polybori_interface_update_0.3.1.patch](tarball://root/attachments/some-uuid/ticket2060/2060-polybori_interface_update_0.3.1.patch) by burcin created at 2008-03-25 20:36:44\n\nupdate polybori interface to version 0.3.1",
     "created_at": "2008-03-25T20:36:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2060",
     "type": "issue_comment",
@@ -70,7 +70,7 @@ archive/issue_comments_013341.json:
 }
 ```
 
-Attachment
+Attachment [2060-polybori_interface_update_0.3.1.patch](tarball://root/attachments/some-uuid/ticket2060/2060-polybori_interface_update_0.3.1.patch) by burcin created at 2008-03-25 20:36:44
 
 update polybori interface to version 0.3.1
 
@@ -162,7 +162,7 @@ Hunk #1 succeeded at 148 with fuzz 1 (offset 100 lines).
 archive/issue_comments_013346.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch (`polybori_0.3.1_doctest_coverage_48.patch`) which is to be applied on top of `2060-polybori_interface_update_0.3.1.patch` increases the doctest coverage to 47%.\n\n\n```\npbori.pyx\nSCORE pbori.pyx: 47% (98 of 205)\n```\n\n\nBefore both patches the coverage was at:\n\n\n```\npbori.pyx\nSCORE pbori.pyx: 33% (52 of 157)\n```\n\n\nand thus this is an improvement over vanilla 2.11 too.\n\n* I give Burcin's patch a positive review: doctests pass and we **need** `PolyBoRi` 0.3.1\n* someone should review my patch\n* if my patch gets a positive review both patches should be applied, since then not only is the functionality improved but also the doctest coverage which should make the everything-new-needs-doctest faction happy.\n* Burcin's patch was also doctested with the `PolyBoRi` test suite by him, so there is even an undocumented extra level of assurance.\n* In any case: We'll be working on getting the coverage close to 100% in the very near future.",
+    "body": "Attachment [polybori_0.3.1_doctest_coverage_48.patch](tarball://root/attachments/some-uuid/ticket2060/polybori_0.3.1_doctest_coverage_48.patch) by malb created at 2008-04-01 16:15:45\n\nThe attached patch (`polybori_0.3.1_doctest_coverage_48.patch`) which is to be applied on top of `2060-polybori_interface_update_0.3.1.patch` increases the doctest coverage to 47%.\n\n\n```\npbori.pyx\nSCORE pbori.pyx: 47% (98 of 205)\n```\n\n\nBefore both patches the coverage was at:\n\n\n```\npbori.pyx\nSCORE pbori.pyx: 33% (52 of 157)\n```\n\n\nand thus this is an improvement over vanilla 2.11 too.\n\n* I give Burcin's patch a positive review: doctests pass and we **need** `PolyBoRi` 0.3.1\n* someone should review my patch\n* if my patch gets a positive review both patches should be applied, since then not only is the functionality improved but also the doctest coverage which should make the everything-new-needs-doctest faction happy.\n* Burcin's patch was also doctested with the `PolyBoRi` test suite by him, so there is even an undocumented extra level of assurance.\n* In any case: We'll be working on getting the coverage close to 100% in the very near future.",
     "created_at": "2008-04-01T16:15:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2060",
     "type": "issue_comment",
@@ -171,7 +171,7 @@ archive/issue_comments_013346.json:
 }
 ```
 
-Attachment
+Attachment [polybori_0.3.1_doctest_coverage_48.patch](tarball://root/attachments/some-uuid/ticket2060/polybori_0.3.1_doctest_coverage_48.patch) by malb created at 2008-04-01 16:15:45
 
 The attached patch (`polybori_0.3.1_doctest_coverage_48.patch`) which is to be applied on top of `2060-polybori_interface_update_0.3.1.patch` increases the doctest coverage to 47%.
 

@@ -73,7 +73,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5876
 archive/issue_comments_046413.json:
 ```json
 {
-    "body": "Attachment\n\nBased on 3.4.1",
+    "body": "Attachment [p1list.patch](tarball://root/attachments/some-uuid/ticket5876/p1list.patch) by cremona created at 2009-04-23 16:24:46\n\nBased on 3.4.1",
     "created_at": "2009-04-23T16:24:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5876",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_046413.json:
 }
 ```
 
-Attachment
+Attachment [p1list.patch](tarball://root/attachments/some-uuid/ticket5876/p1list.patch) by cremona created at 2009-04-23 16:24:46
 
 Based on 3.4.1
 
@@ -194,7 +194,7 @@ replaces previous
 archive/issue_comments_046418.json:
 ```json
 {
-    "body": "Attachment\n\nNew patch replaces previous and implements suggestions.  Hard to compare times as I'm on a different machine.",
+    "body": "Attachment [trac_5876.patch](tarball://root/attachments/some-uuid/ticket5876/trac_5876.patch) by cremona created at 2009-04-23 20:03:13\n\nNew patch replaces previous and implements suggestions.  Hard to compare times as I'm on a different machine.",
     "created_at": "2009-04-23T20:03:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5876",
     "type": "issue_comment",
@@ -203,7 +203,7 @@ archive/issue_comments_046418.json:
 }
 ```
 
-Attachment
+Attachment [trac_5876.patch](tarball://root/attachments/some-uuid/ticket5876/trac_5876.patch) by cremona created at 2009-04-23 20:03:13
 
 New patch replaces previous and implements suggestions.  Hard to compare times as I'm on a different machine.
 

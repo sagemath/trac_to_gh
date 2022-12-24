@@ -212,7 +212,7 @@ The patch introduces option to_poly_solve='force'. Perhaps, could be done automa
 archive/issue_comments_075134.json:
 ```json
 {
-    "body": "Attachment\n\nrebased for Sage 4.3.5",
+    "body": "Attachment [trac-8390.patch](tarball://root/attachments/some-uuid/ticket8390/trac-8390.patch) by robert.marik created at 2010-04-06 20:51:20\n\nrebased for Sage 4.3.5",
     "created_at": "2010-04-06T20:51:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8390",
     "type": "issue_comment",
@@ -221,7 +221,7 @@ archive/issue_comments_075134.json:
 }
 ```
 
-Attachment
+Attachment [trac-8390.patch](tarball://root/attachments/some-uuid/ticket8390/trac-8390.patch) by robert.marik created at 2010-04-06 20:51:20
 
 rebased for Sage 4.3.5
 

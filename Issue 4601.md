@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4601
 archive/issue_comments_034493.json:
 ```json
 {
-    "body": "Attachment\n\nthis patch should be applied to sage-3.2.1.alpha0.  it should fix *all* optional doctest failures related to the magma interface!  Note that there is a problem with -only_optional=magma (#4600) so doctesting with that will still show a few false errors.",
+    "body": "Attachment [sage-4601.patch](tarball://root/attachments/some-uuid/ticket4601/sage-4601.patch) by was created at 2008-11-24 03:39:44\n\nthis patch should be applied to sage-3.2.1.alpha0.  it should fix *all* optional doctest failures related to the magma interface!  Note that there is a problem with -only_optional=magma (#4600) so doctesting with that will still show a few false errors.",
     "created_at": "2008-11-24T03:39:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4601",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_034493.json:
 }
 ```
 
-Attachment
+Attachment [sage-4601.patch](tarball://root/attachments/some-uuid/ticket4601/sage-4601.patch) by was created at 2008-11-24 03:39:44
 
 this patch should be applied to sage-3.2.1.alpha0.  it should fix *all* optional doctest failures related to the magma interface!  Note that there is a problem with -only_optional=magma (#4600) so doctesting with that will still show a few false errors.
 

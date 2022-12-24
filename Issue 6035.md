@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6035
 archive/issue_comments_048067.json:
 ```json
 {
-    "body": "Attachment\n\nThis seems to work pretty well, and since its an optional argument I don't see it interfering with any existing code.  The added documentation looks good.",
+    "body": "Attachment [detect_poles.patch](tarball://root/attachments/some-uuid/ticket6035/detect_poles.patch) by mhampton created at 2009-05-20 05:11:54\n\nThis seems to work pretty well, and since its an optional argument I don't see it interfering with any existing code.  The added documentation looks good.",
     "created_at": "2009-05-20T05:11:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6035",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_048067.json:
 }
 ```
 
-Attachment
+Attachment [detect_poles.patch](tarball://root/attachments/some-uuid/ticket6035/detect_poles.patch) by mhampton created at 2009-05-20 05:11:54
 
 This seems to work pretty well, and since its an optional argument I don't see it interfering with any existing code.  The added documentation looks good.
 

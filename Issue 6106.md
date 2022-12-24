@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6106
 archive/issue_comments_048777.json:
 ```json
 {
-    "body": "Attachment\n\nadded missing doctests",
+    "body": "Attachment [6106binaryQuadraticPT2.patch](tarball://root/attachments/some-uuid/ticket6106/6106binaryQuadraticPT2.patch) by aliashamieh created at 2009-05-21 05:57:26\n\nadded missing doctests",
     "created_at": "2009-05-21T05:57:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6106",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_048777.json:
 }
 ```
 
-Attachment
+Attachment [6106binaryQuadraticPT2.patch](tarball://root/attachments/some-uuid/ticket6106/6106binaryQuadraticPT2.patch) by aliashamieh created at 2009-05-21 05:57:26
 
 added missing doctests
 
@@ -142,7 +142,7 @@ Alia and I are going to work on this in the next few days.
 archive/issue_comments_048781.json:
 ```json
 {
-    "body": "Attachment\n\n[with patch, needs review] Additional functions for Indefinite Binary Quadratic Forms",
+    "body": "Attachment [6106BinaryQF.patch](tarball://root/attachments/some-uuid/ticket6106/6106BinaryQF.patch) by aliashamieh created at 2009-07-17 19:07:05\n\n[with patch, needs review] Additional functions for Indefinite Binary Quadratic Forms",
     "created_at": "2009-07-17T19:07:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6106",
     "type": "issue_comment",
@@ -151,7 +151,7 @@ archive/issue_comments_048781.json:
 }
 ```
 
-Attachment
+Attachment [6106BinaryQF.patch](tarball://root/attachments/some-uuid/ticket6106/6106BinaryQF.patch) by aliashamieh created at 2009-07-17 19:07:05
 
 [with patch, needs review] Additional functions for Indefinite Binary Quadratic Forms
 

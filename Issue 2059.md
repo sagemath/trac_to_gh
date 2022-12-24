@@ -126,7 +126,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2059
 archive/issue_comments_013332.json:
 ```json
 {
-    "body": "Attachment\n\nthis fixes the attribute error but is not enough to make the calculation given above work",
+    "body": "Attachment [trac_2059_1.patch](tarball://root/attachments/some-uuid/ticket2059/trac_2059_1.patch) by malb created at 2008-02-05 17:25:29\n\nthis fixes the attribute error but is not enough to make the calculation given above work",
     "created_at": "2008-02-05T17:25:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2059",
     "type": "issue_comment",
@@ -135,7 +135,7 @@ archive/issue_comments_013332.json:
 }
 ```
 
-Attachment
+Attachment [trac_2059_1.patch](tarball://root/attachments/some-uuid/ticket2059/trac_2059_1.patch) by malb created at 2008-02-05 17:25:29
 
 this fixes the attribute error but is not enough to make the calculation given above work
 

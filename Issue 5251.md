@@ -82,7 +82,7 @@ Changing assignee from cwitty to mhansen.
 archive/issue_comments_040289.json:
 ```json
 {
-    "body": "Attachment\n\nI posted a patch which fixes this, but I don't completely understand the intention behind the stopping condition in question.  I'm not sure what the '/' in the list of characters was meant to prevent.",
+    "body": "Attachment [trac_5251.patch](tarball://root/attachments/some-uuid/ticket5251/trac_5251.patch) by mhansen created at 2009-02-15 03:23:50\n\nI posted a patch which fixes this, but I don't completely understand the intention behind the stopping condition in question.  I'm not sure what the '/' in the list of characters was meant to prevent.",
     "created_at": "2009-02-15T03:23:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5251",
     "type": "issue_comment",
@@ -91,7 +91,7 @@ archive/issue_comments_040289.json:
 }
 ```
 
-Attachment
+Attachment [trac_5251.patch](tarball://root/attachments/some-uuid/ticket5251/trac_5251.patch) by mhansen created at 2009-02-15 03:23:50
 
 I posted a patch which fixes this, but I don't completely understand the intention behind the stopping condition in question.  I'm not sure what the '/' in the list of characters was meant to prevent.
 
@@ -394,7 +394,7 @@ I thought I had taken care of this case, but I guess not. I'll look into this af
 archive/issue_comments_040297.json:
 ```json
 {
-    "body": "Attachment\n\nOK, a better patch is attached. I see what the error was now--it's worked on all the examples and files I've tested, but I'm doing a -testall now, but things look good so far.",
+    "body": "Attachment [5251-backslash.patch](tarball://root/attachments/some-uuid/ticket5251/5251-backslash.patch) by robertwb created at 2009-02-18 01:57:55\n\nOK, a better patch is attached. I see what the error was now--it's worked on all the examples and files I've tested, but I'm doing a -testall now, but things look good so far.",
     "created_at": "2009-02-18T01:57:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5251",
     "type": "issue_comment",
@@ -403,7 +403,7 @@ archive/issue_comments_040297.json:
 }
 ```
 
-Attachment
+Attachment [5251-backslash.patch](tarball://root/attachments/some-uuid/ticket5251/5251-backslash.patch) by robertwb created at 2009-02-18 01:57:55
 
 OK, a better patch is attached. I see what the error was now--it's worked on all the examples and files I've tested, but I'm doing a -testall now, but things look good so far.
 

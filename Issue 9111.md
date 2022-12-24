@@ -204,7 +204,7 @@ Nathann
 archive/issue_comments_084754.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9111-doc-edits.patch](tarball://root/attachments/some-uuid/ticket9111/trac_9111-doc-edits.patch) by rlm created at 2010-06-21 21:27:25",
     "created_at": "2010-06-21T21:27:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9111",
     "type": "issue_comment",
@@ -213,7 +213,7 @@ archive/issue_comments_084754.json:
 }
 ```
 
-Attachment
+Attachment [trac_9111-doc-edits.patch](tarball://root/attachments/some-uuid/ticket9111/trac_9111-doc-edits.patch) by rlm created at 2010-06-21 21:27:25
 
 
 
@@ -269,7 +269,7 @@ Nathann
 archive/issue_comments_084757.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9111-doc_addition.patch](tarball://root/attachments/some-uuid/ticket9111/trac_9111-doc_addition.patch) by ncohen created at 2010-06-22 07:16:33",
     "created_at": "2010-06-22T07:16:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9111",
     "type": "issue_comment",
@@ -278,7 +278,7 @@ archive/issue_comments_084757.json:
 }
 ```
 
-Attachment
+Attachment [trac_9111-doc_addition.patch](tarball://root/attachments/some-uuid/ticket9111/trac_9111-doc_addition.patch) by ncohen created at 2010-06-22 07:16:33
 
 
 
@@ -369,7 +369,7 @@ Nathann
 archive/issue_comments_084762.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9111.patch](tarball://root/attachments/some-uuid/ticket9111/trac_9111.patch) by ncohen created at 2010-07-19 01:54:29",
     "created_at": "2010-07-19T01:54:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9111",
     "type": "issue_comment",
@@ -378,7 +378,7 @@ archive/issue_comments_084762.json:
 }
 ```
 
-Attachment
+Attachment [trac_9111.patch](tarball://root/attachments/some-uuid/ticket9111/trac_9111.patch) by ncohen created at 2010-07-19 01:54:29
 
 
 

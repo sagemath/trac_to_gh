@@ -51,7 +51,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5623
 archive/issue_comments_043908.json:
 ```json
 {
-    "body": "Attachment\n\nWorks for me.  I'd like to see the test.sage file be reworked into a Test class for randomized testing.  search_src('class Test') for examples.",
+    "body": "Attachment [test.sage](tarball://root/attachments/some-uuid/ticket5623/test.sage) by boothby created at 2009-03-29 03:35:35\n\nWorks for me.  I'd like to see the test.sage file be reworked into a Test class for randomized testing.  search_src('class Test') for examples.",
     "created_at": "2009-03-29T03:35:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5623",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_043908.json:
 }
 ```
 
-Attachment
+Attachment [test.sage](tarball://root/attachments/some-uuid/ticket5623/test.sage) by boothby created at 2009-03-29 03:35:35
 
 Works for me.  I'd like to see the test.sage file be reworked into a Test class for randomized testing.  search_src('class Test') for examples.
 
@@ -105,7 +105,7 @@ SAGE will now terminate (sorry).
 archive/issue_comments_043910.json:
 ```json
 {
-    "body": "Attachment\n\nThe attachment 'graphcoloring_5623_test.patch' implements a Test class that does randomized testing.  Fix the segfault, and I'll be happy with it.",
+    "body": "Attachment [graphcoloring_5623_test.patch](tarball://root/attachments/some-uuid/ticket5623/graphcoloring_5623_test.patch) by boothby created at 2009-03-30 06:22:05\n\nThe attachment 'graphcoloring_5623_test.patch' implements a Test class that does randomized testing.  Fix the segfault, and I'll be happy with it.",
     "created_at": "2009-03-30T06:22:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5623",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_043910.json:
 }
 ```
 
-Attachment
+Attachment [graphcoloring_5623_test.patch](tarball://root/attachments/some-uuid/ticket5623/graphcoloring_5623_test.patch) by boothby created at 2009-03-30 06:22:05
 
 The attachment 'graphcoloring_5623_test.patch' implements a Test class that does randomized testing.  Fix the segfault, and I'll be happy with it.
 
@@ -125,7 +125,7 @@ The attachment 'graphcoloring_5623_test.patch' implements a Test class that does
 archive/issue_comments_043911.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [graphcolouring.patch](tarball://root/attachments/some-uuid/ticket5623/graphcolouring.patch) by carlohamalainen created at 2009-03-30 08:00:34",
     "created_at": "2009-03-30T08:00:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5623",
     "type": "issue_comment",
@@ -134,7 +134,7 @@ archive/issue_comments_043911.json:
 }
 ```
 
-Attachment
+Attachment [graphcolouring.patch](tarball://root/attachments/some-uuid/ticket5623/graphcolouring.patch) by carlohamalainen created at 2009-03-30 08:00:34
 
 
 
@@ -143,7 +143,7 @@ Attachment
 archive/issue_comments_043912.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [dlxcpp.patch](tarball://root/attachments/some-uuid/ticket5623/dlxcpp.patch) by carlohamalainen created at 2009-03-30 08:00:47",
     "created_at": "2009-03-30T08:00:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5623",
     "type": "issue_comment",
@@ -152,7 +152,7 @@ archive/issue_comments_043912.json:
 }
 ```
 
-Attachment
+Attachment [dlxcpp.patch](tarball://root/attachments/some-uuid/ticket5623/dlxcpp.patch) by carlohamalainen created at 2009-03-30 08:00:47
 
 
 
@@ -252,7 +252,7 @@ The final patch is new and I guess should be reviewed (it's just a one-liner).
 archive/issue_comments_043917.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [graphcoloring_5623_doctests.patch](tarball://root/attachments/some-uuid/ticket5623/graphcoloring_5623_doctests.patch) by boothby created at 2009-03-31 18:19:55",
     "created_at": "2009-03-31T18:19:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5623",
     "type": "issue_comment",
@@ -261,7 +261,7 @@ archive/issue_comments_043917.json:
 }
 ```
 
-Attachment
+Attachment [graphcoloring_5623_doctests.patch](tarball://root/attachments/some-uuid/ticket5623/graphcoloring_5623_doctests.patch) by boothby created at 2009-03-31 18:19:55
 
 
 

@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5627
 archive/issue_comments_043931.json:
 ```json
 {
-    "body": "Attachment\n\nBased on 3.4",
+    "body": "Attachment [quad-nonres.patch](tarball://root/attachments/some-uuid/ticket5627/quad-nonres.patch) by kcrisman created at 2009-03-29 02:59:08\n\nBased on 3.4",
     "created_at": "2009-03-29T02:59:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5627",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_043931.json:
 }
 ```
 
-Attachment
+Attachment [quad-nonres.patch](tarball://root/attachments/some-uuid/ticket5627/quad-nonres.patch) by kcrisman created at 2009-03-29 02:59:08
 
 Based on 3.4
 
@@ -188,7 +188,7 @@ Then you should open a different ticket for the performance issue and implement 
 archive/issue_comments_043935.json:
 ```json
 {
-    "body": "Attachment\n\nreferee patch",
+    "body": "Attachment [trac_5627-referee.patch](tarball://root/attachments/some-uuid/ticket5627/trac_5627-referee.patch) by mvngu created at 2009-04-02 05:25:45\n\nreferee patch",
     "created_at": "2009-04-02T05:25:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5627",
     "type": "issue_comment",
@@ -197,7 +197,7 @@ archive/issue_comments_043935.json:
 }
 ```
 
-Attachment
+Attachment [trac_5627-referee.patch](tarball://root/attachments/some-uuid/ticket5627/trac_5627-referee.patch) by mvngu created at 2009-04-02 05:25:45
 
 referee patch
 

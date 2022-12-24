@@ -85,7 +85,7 @@ This should go on top of #5330.
 archive/issue_comments_041109.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5336.patch](tarball://root/attachments/some-uuid/ticket5336/trac_5336.patch) by mhansen created at 2009-02-24 14:06:25",
     "created_at": "2009-02-24T14:06:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5336",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_041109.json:
 }
 ```
 
-Attachment
+Attachment [trac_5336.patch](tarball://root/attachments/some-uuid/ticket5336/trac_5336.patch) by mhansen created at 2009-02-24 14:06:25
 
 
 

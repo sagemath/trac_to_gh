@@ -49,7 +49,7 @@ Resolution: fixed
 archive/issue_comments_015129.json:
 ```json
 {
-    "body": "Attachment\n\nApplied the patch, thanks!",
+    "body": "Attachment [2280A.patch](tarball://root/attachments/some-uuid/ticket2280/2280A.patch) by yi created at 2008-02-24 00:57:31\n\nApplied the patch, thanks!",
     "created_at": "2008-02-24T00:57:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2280",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_015129.json:
 }
 ```
 
-Attachment
+Attachment [2280A.patch](tarball://root/attachments/some-uuid/ticket2280/2280A.patch) by yi created at 2008-02-24 00:57:31
 
 Applied the patch, thanks!
 

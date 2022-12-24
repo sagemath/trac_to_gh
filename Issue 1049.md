@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1049
 archive/issue_comments_006386.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [transitive_reduction.patch](tarball://root/attachments/some-uuid/ticket1049/transitive_reduction.patch) by jason created at 2007-11-01 03:08:26",
     "created_at": "2007-11-01T03:08:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1049",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_006386.json:
 }
 ```
 
-Attachment
+Attachment [transitive_reduction.patch](tarball://root/attachments/some-uuid/ticket1049/transitive_reduction.patch) by jason created at 2007-11-01 03:08:26
 
 
 
@@ -51,7 +51,7 @@ Attachment
 archive/issue_comments_006387.json:
 ```json
 {
-    "body": "Attachment\n\nFixes a doctest",
+    "body": "Attachment [docfix.patch](tarball://root/attachments/some-uuid/ticket1049/docfix.patch) by rlm created at 2007-11-01 06:57:32\n\nFixes a doctest",
     "created_at": "2007-11-01T06:57:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1049",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_006387.json:
 }
 ```
 
-Attachment
+Attachment [docfix.patch](tarball://root/attachments/some-uuid/ticket1049/docfix.patch) by rlm created at 2007-11-01 06:57:32
 
 Fixes a doctest
 

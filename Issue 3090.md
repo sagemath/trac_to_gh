@@ -255,7 +255,7 @@ test-case setup for one of two variants of bug
 archive/issue_comments_021333.json:
 ```json
 {
-    "body": "Attachment\n\nI guess I should add this:\n\n$ uname -a\nLinux vinegar-pot 2.6.24.5 #1 SMP Sun Apr 20 05:23:49 UTC 2008 i686 GNU/Linux",
+    "body": "Attachment [hessian.sage](tarball://root/attachments/some-uuid/ticket3090/hessian.sage) by gnprice created at 2008-05-03 07:36:29\n\nI guess I should add this:\n\n$ uname -a\nLinux vinegar-pot 2.6.24.5 #1 SMP Sun Apr 20 05:23:49 UTC 2008 i686 GNU/Linux",
     "created_at": "2008-05-03T07:36:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3090",
     "type": "issue_comment",
@@ -264,7 +264,7 @@ archive/issue_comments_021333.json:
 }
 ```
 
-Attachment
+Attachment [hessian.sage](tarball://root/attachments/some-uuid/ticket3090/hessian.sage) by gnprice created at 2008-05-03 07:36:29
 
 I guess I should add this:
 

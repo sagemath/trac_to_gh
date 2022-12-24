@@ -193,7 +193,7 @@ $\mathbb{R}$
 archive/issue_comments_043821.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [jsmath-amssymbols.patch](tarball://root/attachments/some-uuid/ticket5611/jsmath-amssymbols.patch) by jhpalmieri created at 2009-04-14 21:06:35",
     "created_at": "2009-04-14T21:06:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5611",
     "type": "issue_comment",
@@ -202,7 +202,7 @@ archive/issue_comments_043821.json:
 }
 ```
 
-Attachment
+Attachment [jsmath-amssymbols.patch](tarball://root/attachments/some-uuid/ticket5611/jsmath-amssymbols.patch) by jhpalmieri created at 2009-04-14 21:06:35
 
 
 

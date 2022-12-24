@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7961
 archive/issue_comments_069470.json:
 ```json
 {
-    "body": "Attachment\n\nmaking misc.edit_module pathname mangling more robust",
+    "body": "Attachment [edit_module.patch](tarball://root/attachments/some-uuid/ticket7961/edit_module.patch) by nbruin created at 2010-01-17 02:46:14\n\nmaking misc.edit_module pathname mangling more robust",
     "created_at": "2010-01-17T02:46:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7961",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_069470.json:
 }
 ```
 
-Attachment
+Attachment [edit_module.patch](tarball://root/attachments/some-uuid/ticket7961/edit_module.patch) by nbruin created at 2010-01-17 02:46:14
 
 making misc.edit_module pathname mangling more robust
 

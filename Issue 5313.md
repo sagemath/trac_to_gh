@@ -179,7 +179,7 @@ I submitted this upstream to Hans Schoenemann
 archive/issue_comments_040923.json:
 ```json
 {
-    "body": "Attachment\n\nNOTE to future self:\n\nTo work on singular:\n\n1. sage -f -m singular-x.y.z.spkg\n2. cd spkg/build/singular-x.y.z\n3. Make changes\n4. Type `make install-libsingular`",
+    "body": "Attachment [Singular_error.patch](tarball://root/attachments/some-uuid/ticket5313/Singular_error.patch) by was created at 2010-07-14 20:53:05\n\nNOTE to future self:\n\nTo work on singular:\n\n1. sage -f -m singular-x.y.z.spkg\n2. cd spkg/build/singular-x.y.z\n3. Make changes\n4. Type `make install-libsingular`",
     "created_at": "2010-07-14T20:53:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5313",
     "type": "issue_comment",
@@ -188,7 +188,7 @@ archive/issue_comments_040923.json:
 }
 ```
 
-Attachment
+Attachment [Singular_error.patch](tarball://root/attachments/some-uuid/ticket5313/Singular_error.patch) by was created at 2010-07-14 20:53:05
 
 NOTE to future self:
 
@@ -288,7 +288,7 @@ This is all on sage.math.
 archive/issue_comments_040925.json:
 ```json
 {
-    "body": "Attachment\n\nThis makes it so errors during arithmetic can be handled.   This won't do anything though unless the singular library is patched to call abort() before exit, as explained in a comment on this ticket.",
+    "body": "Attachment [trac_5313-sigon_sigoff.patch](tarball://root/attachments/some-uuid/ticket5313/trac_5313-sigon_sigoff.patch) by was created at 2010-07-14 21:28:49\n\nThis makes it so errors during arithmetic can be handled.   This won't do anything though unless the singular library is patched to call abort() before exit, as explained in a comment on this ticket.",
     "created_at": "2010-07-14T21:28:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5313",
     "type": "issue_comment",
@@ -297,7 +297,7 @@ archive/issue_comments_040925.json:
 }
 ```
 
-Attachment
+Attachment [trac_5313-sigon_sigoff.patch](tarball://root/attachments/some-uuid/ticket5313/trac_5313-sigon_sigoff.patch) by was created at 2010-07-14 21:28:49
 
 This makes it so errors during arithmetic can be handled.   This won't do anything though unless the singular library is patched to call abort() before exit, as explained in a comment on this ticket.
 
@@ -308,7 +308,7 @@ This makes it so errors during arithmetic can be handled.   This won't do anythi
 archive/issue_comments_040926.json:
 ```json
 {
-    "body": "Attachment\n\nthis is a patch to the singular spkg.  It patches a patch file.",
+    "body": "Attachment [singular-spkg_add_abort.patch](tarball://root/attachments/some-uuid/ticket5313/singular-spkg_add_abort.patch) by was created at 2010-07-14 21:36:57\n\nthis is a patch to the singular spkg.  It patches a patch file.",
     "created_at": "2010-07-14T21:36:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5313",
     "type": "issue_comment",
@@ -317,7 +317,7 @@ archive/issue_comments_040926.json:
 }
 ```
 
-Attachment
+Attachment [singular-spkg_add_abort.patch](tarball://root/attachments/some-uuid/ticket5313/singular-spkg_add_abort.patch) by was created at 2010-07-14 21:36:57
 
 this is a patch to the singular spkg.  It patches a patch file.
 

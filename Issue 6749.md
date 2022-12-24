@@ -298,7 +298,7 @@ This will have to wait until #6502 is resolved. Which patch is to be merged? Mos
 archive/issue_comments_055532.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [knapsack.patch](tarball://root/attachments/some-uuid/ticket6749/knapsack.patch) by ncohen created at 2009-08-25 06:55:31",
     "created_at": "2009-08-25T06:55:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6749",
     "type": "issue_comment",
@@ -307,7 +307,7 @@ archive/issue_comments_055532.json:
 }
 ```
 
-Attachment
+Attachment [knapsack.patch](tarball://root/attachments/some-uuid/ticket6749/knapsack.patch) by ncohen created at 2009-08-25 06:55:31
 
 
 
@@ -316,7 +316,7 @@ Attachment
 archive/issue_comments_055533.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated. And you can apply any one of them, they're both the same ( I uploaded two by mistake the first time, then updated both )",
+    "body": "Attachment [knapsack.2.patch](tarball://root/attachments/some-uuid/ticket6749/knapsack.2.patch) by ncohen created at 2009-08-25 06:56:21\n\nUpdated. And you can apply any one of them, they're both the same ( I uploaded two by mistake the first time, then updated both )",
     "created_at": "2009-08-25T06:56:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6749",
     "type": "issue_comment",
@@ -325,7 +325,7 @@ archive/issue_comments_055533.json:
 }
 ```
 
-Attachment
+Attachment [knapsack.2.patch](tarball://root/attachments/some-uuid/ticket6749/knapsack.2.patch) by ncohen created at 2009-08-25 06:56:21
 
 Updated. And you can apply any one of them, they're both the same ( I uploaded two by mistake the first time, then updated both )
 
@@ -453,7 +453,7 @@ Here is the new version, slightly modified to use the symbolics from #6869 ( the
 archive/issue_comments_055540.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [knapsack-symbolics.patch](tarball://root/attachments/some-uuid/ticket6749/knapsack-symbolics.patch) by ncohen created at 2009-09-03 09:44:24",
     "created_at": "2009-09-03T09:44:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6749",
     "type": "issue_comment",
@@ -462,7 +462,7 @@ archive/issue_comments_055540.json:
 }
 ```
 
-Attachment
+Attachment [knapsack-symbolics.patch](tarball://root/attachments/some-uuid/ticket6749/knapsack-symbolics.patch) by ncohen created at 2009-09-03 09:44:24
 
 
 

@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5288
 archive/issue_comments_040640.json:
 ```json
 {
-    "body": "Attachment\n\nHi Dan,\n\nany ticket in trac should result in an indicator for the ticket that there is a patch together with its current review status. In this case it seems to be not ready for review.\n\nThis makes it much easier to find tickets with patches for example. \n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_5288.patch](tarball://root/attachments/some-uuid/ticket5288/trac_5288.patch) by mabshoff created at 2009-02-17 02:36:12\n\nHi Dan,\n\nany ticket in trac should result in an indicator for the ticket that there is a patch together with its current review status. In this case it seems to be not ready for review.\n\nThis makes it much easier to find tickets with patches for example. \n\nCheers,\n\nMichael",
     "created_at": "2009-02-17T02:36:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5288",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_040640.json:
 }
 ```
 
-Attachment
+Attachment [trac_5288.patch](tarball://root/attachments/some-uuid/ticket5288/trac_5288.patch) by mabshoff created at 2009-02-17 02:36:12
 
 Hi Dan,
 

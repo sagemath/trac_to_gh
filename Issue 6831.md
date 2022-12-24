@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6831
 archive/issue_comments_056338.json:
 ```json
 {
-    "body": "Attachment\n\nCan you rebase this against sage-4.2?  I reviewed some of your patches previously, and some made them in, which means this doesn't apply against the current version.  Sorry about that, I'm hoping to finish up reviewing your patches for 4.2.1.\n\n-Marshall",
+    "body": "Attachment [trac_6831_allow_non_full_dimensional_lattice_polytopes.patch](tarball://root/attachments/some-uuid/ticket6831/trac_6831_allow_non_full_dimensional_lattice_polytopes.patch) by mhampton created at 2009-10-29 18:47:19\n\nCan you rebase this against sage-4.2?  I reviewed some of your patches previously, and some made them in, which means this doesn't apply against the current version.  Sorry about that, I'm hoping to finish up reviewing your patches for 4.2.1.\n\n-Marshall",
     "created_at": "2009-10-29T18:47:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6831",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_056338.json:
 }
 ```
 
-Attachment
+Attachment [trac_6831_allow_non_full_dimensional_lattice_polytopes.patch](tarball://root/attachments/some-uuid/ticket6831/trac_6831_allow_non_full_dimensional_lattice_polytopes.patch) by mhampton created at 2009-10-29 18:47:19
 
 Can you rebase this against sage-4.2?  I reviewed some of your patches previously, and some made them in, which means this doesn't apply against the current version.  Sorry about that, I'm hoping to finish up reviewing your patches for 4.2.1.
 
@@ -116,7 +116,7 @@ Rebased patch, also includes patches for tickets 6779, 6780, and 6805
 archive/issue_comments_056342.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch should work on 4.2 without any prior requirements, it includes changes made in 3 other small tickets which you have already given a positive review - I will put comments in those tickets. Let me know if I should do anything else.\n\nAndrey",
+    "body": "Attachment [trac_6831_allow_non_full_dimensional_lattice_polytopes-4.2-rebase.patch](tarball://root/attachments/some-uuid/ticket6831/trac_6831_allow_non_full_dimensional_lattice_polytopes-4.2-rebase.patch) by novoselt created at 2009-10-30 05:33:08\n\nThis patch should work on 4.2 without any prior requirements, it includes changes made in 3 other small tickets which you have already given a positive review - I will put comments in those tickets. Let me know if I should do anything else.\n\nAndrey",
     "created_at": "2009-10-30T05:33:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6831",
     "type": "issue_comment",
@@ -125,7 +125,7 @@ archive/issue_comments_056342.json:
 }
 ```
 
-Attachment
+Attachment [trac_6831_allow_non_full_dimensional_lattice_polytopes-4.2-rebase.patch](tarball://root/attachments/some-uuid/ticket6831/trac_6831_allow_non_full_dimensional_lattice_polytopes-4.2-rebase.patch) by novoselt created at 2009-10-30 05:33:08
 
 This patch should work on 4.2 without any prior requirements, it includes changes made in 3 other small tickets which you have already given a positive review - I will put comments in those tickets. Let me know if I should do anything else.
 

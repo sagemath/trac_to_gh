@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4417
 archive/issue_comments_032485.json:
 ```json
 {
-    "body": "Attachment\n\nHi John,\n\nthis one was a really strange doctest failure and I am glad you fixed it.\n\nOne thing I noticed while looking at the file was that you use constructs like\n\n```\nsage: B = SteenrodAlgebra(2, 'adem')\n```\n\nwhich seem very un-Sagish, i.e. one would use some (optional) keyword in the constructor like\n\n```\nsage: B = SteenrodAlgebra(2, foo=adem)\n```\n\nThis certainly should not addressed via this ticket, but might be something that should be discussed on [sage-devel].\n\nCheers,\n\nMichael\n\nPS: I will test and review this patch shortly.",
+    "body": "Attachment [steenrod-optional.patch](tarball://root/attachments/some-uuid/ticket4417/steenrod-optional.patch) by mabshoff created at 2008-11-01 02:47:34\n\nHi John,\n\nthis one was a really strange doctest failure and I am glad you fixed it.\n\nOne thing I noticed while looking at the file was that you use constructs like\n\n```\nsage: B = SteenrodAlgebra(2, 'adem')\n```\n\nwhich seem very un-Sagish, i.e. one would use some (optional) keyword in the constructor like\n\n```\nsage: B = SteenrodAlgebra(2, foo=adem)\n```\n\nThis certainly should not addressed via this ticket, but might be something that should be discussed on [sage-devel].\n\nCheers,\n\nMichael\n\nPS: I will test and review this patch shortly.",
     "created_at": "2008-11-01T02:47:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4417",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_032485.json:
 }
 ```
 
-Attachment
+Attachment [steenrod-optional.patch](tarball://root/attachments/some-uuid/ticket4417/steenrod-optional.patch) by mabshoff created at 2008-11-01 02:47:34
 
 Hi John,
 

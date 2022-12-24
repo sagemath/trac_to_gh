@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3308
 archive/issue_comments_022881.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sbuildhack-apt-update.patch](tarball://root/attachments/some-uuid/ticket3308/sbuildhack-apt-update.patch) by tabbott created at 2008-05-26 05:16:21",
     "created_at": "2008-05-26T05:16:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3308",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_022881.json:
 }
 ```
 
-Attachment
+Attachment [sbuildhack-apt-update.patch](tarball://root/attachments/some-uuid/ticket3308/sbuildhack-apt-update.patch) by tabbott created at 2008-05-26 05:16:21
 
 
 

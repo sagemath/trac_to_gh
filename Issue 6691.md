@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6691
 archive/issue_comments_054998.json:
 ```json
 {
-    "body": "Attachment\n\nbased on Sage 4.1.1.rc2",
+    "body": "Attachment [trac_6691-spell-check-combinat.patch](tarball://root/attachments/some-uuid/ticket6691/trac_6691-spell-check-combinat.patch) by mvngu created at 2009-08-11 11:13:01\n\nbased on Sage 4.1.1.rc2",
     "created_at": "2009-08-11T11:13:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6691",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_054998.json:
 }
 ```
 
-Attachment
+Attachment [trac_6691-spell-check-combinat.patch](tarball://root/attachments/some-uuid/ticket6691/trac_6691-spell-check-combinat.patch) by mvngu created at 2009-08-11 11:13:01
 
 based on Sage 4.1.1.rc2
 

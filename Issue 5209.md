@@ -212,7 +212,7 @@ Michael
 archive/issue_comments_039913.json:
 ```json
 {
-    "body": "Attachment\n\nStandard sort of minimal fix for this type of issue; I did not test it directly but it seems clear that this is OK based on other similar problems.  Only affects the doctest.  Positive review.",
+    "body": "Attachment [trac_5209_numerical_noise.patch](tarball://root/attachments/some-uuid/ticket5209/trac_5209_numerical_noise.patch) by mhampton created at 2009-02-09 14:52:30\n\nStandard sort of minimal fix for this type of issue; I did not test it directly but it seems clear that this is OK based on other similar problems.  Only affects the doctest.  Positive review.",
     "created_at": "2009-02-09T14:52:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5209",
     "type": "issue_comment",
@@ -221,7 +221,7 @@ archive/issue_comments_039913.json:
 }
 ```
 
-Attachment
+Attachment [trac_5209_numerical_noise.patch](tarball://root/attachments/some-uuid/ticket5209/trac_5209_numerical_noise.patch) by mhampton created at 2009-02-09 14:52:30
 
 Standard sort of minimal fix for this type of issue; I did not test it directly but it seems clear that this is OK based on other similar problems.  Only affects the doctest.  Positive review.
 

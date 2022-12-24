@@ -51,7 +51,7 @@ Changing status from new to needs_review.
 archive/issue_comments_084463.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9094-sqrt.patch](tarball://root/attachments/some-uuid/ticket9094/9094-sqrt.patch) by robertwb created at 2010-05-30 09:28:20",
     "created_at": "2010-05-30T09:28:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_084463.json:
 }
 ```
 
-Attachment
+Attachment [9094-sqrt.patch](tarball://root/attachments/some-uuid/ticket9094/9094-sqrt.patch) by robertwb created at 2010-05-30 09:28:20
 
 
 
@@ -680,7 +680,7 @@ where 4 is replaced by the number of cores you are willing to use.
 archive/issue_comments_084488.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9094-sqrt-mderickx.2.patch](tarball://root/attachments/some-uuid/ticket9094/trac_9094-sqrt-mderickx.2.patch) by mderickx created at 2011-03-22 01:09:54",
     "created_at": "2011-03-22T01:09:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
@@ -689,7 +689,7 @@ archive/issue_comments_084488.json:
 }
 ```
 
-Attachment
+Attachment [trac_9094-sqrt-mderickx.2.patch](tarball://root/attachments/some-uuid/ticket9094/trac_9094-sqrt-mderickx.2.patch) by mderickx created at 2011-03-22 01:09:54
 
 
 
@@ -973,7 +973,7 @@ A patch instead of the other one, which I ofcourse think is better ;)
 archive/issue_comments_084501.json:
 ```json
 {
-    "body": "Attachment\n\nDone :)",
+    "body": "Attachment [trac_9094-sqrt-mderickx.patch](tarball://root/attachments/some-uuid/ticket9094/trac_9094-sqrt-mderickx.patch) by mderickx created at 2011-03-22 17:26:53\n\nDone :)",
     "created_at": "2011-03-22T17:26:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
@@ -982,7 +982,7 @@ archive/issue_comments_084501.json:
 }
 ```
 
-Attachment
+Attachment [trac_9094-sqrt-mderickx.patch](tarball://root/attachments/some-uuid/ticket9094/trac_9094-sqrt-mderickx.patch) by mderickx created at 2011-03-22 17:26:53
 
 Done :)
 

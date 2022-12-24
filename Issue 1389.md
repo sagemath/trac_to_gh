@@ -526,7 +526,7 @@ Minh Van Nguyen
 archive/issue_comments_008910.json:
 ```json
 {
-    "body": "Attachment\n\nThis attachment fixes citations of Sage in the file \"<sage-home-dir>/COPYING.txt\".",
+    "body": "Attachment [copying.patch](tarball://root/attachments/some-uuid/ticket1389/copying.patch) by mvngu created at 2008-10-02 02:12:54\n\nThis attachment fixes citations of Sage in the file \"<sage-home-dir>/COPYING.txt\".",
     "created_at": "2008-10-02T02:12:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1389",
     "type": "issue_comment",
@@ -535,7 +535,7 @@ archive/issue_comments_008910.json:
 }
 ```
 
-Attachment
+Attachment [copying.patch](tarball://root/attachments/some-uuid/ticket1389/copying.patch) by mvngu created at 2008-10-02 02:12:54
 
 This attachment fixes citations of Sage in the file "<sage-home-dir>/COPYING.txt".
 
@@ -546,7 +546,7 @@ This attachment fixes citations of Sage in the file "<sage-home-dir>/COPYING.txt
 archive/issue_comments_008911.json:
 ```json
 {
-    "body": "Attachment\n\nFixes citations of Sage in the file \"<sage-home-dir>/README.txt\".",
+    "body": "Attachment [readme.patch](tarball://root/attachments/some-uuid/ticket1389/readme.patch) by mvngu created at 2008-10-02 02:20:06\n\nFixes citations of Sage in the file \"<sage-home-dir>/README.txt\".",
     "created_at": "2008-10-02T02:20:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1389",
     "type": "issue_comment",
@@ -555,7 +555,7 @@ archive/issue_comments_008911.json:
 }
 ```
 
-Attachment
+Attachment [readme.patch](tarball://root/attachments/some-uuid/ticket1389/readme.patch) by mvngu created at 2008-10-02 02:20:06
 
 Fixes citations of Sage in the file "<sage-home-dir>/README.txt".
 
@@ -566,7 +566,7 @@ Fixes citations of Sage in the file "<sage-home-dir>/README.txt".
 archive/issue_comments_008912.json:
 ```json
 {
-    "body": "Attachment\n\nFixes citations of Sage in the file \"sage-3.1.2/sage-README-osx.txt\".",
+    "body": "Attachment [readmeOSX.patch](tarball://root/attachments/some-uuid/ticket1389/readmeOSX.patch) by mvngu created at 2008-10-02 02:22:41\n\nFixes citations of Sage in the file \"sage-3.1.2/sage-README-osx.txt\".",
     "created_at": "2008-10-02T02:22:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1389",
     "type": "issue_comment",
@@ -575,7 +575,7 @@ archive/issue_comments_008912.json:
 }
 ```
 
-Attachment
+Attachment [readmeOSX.patch](tarball://root/attachments/some-uuid/ticket1389/readmeOSX.patch) by mvngu created at 2008-10-02 02:22:41
 
 Fixes citations of Sage in the file "sage-3.1.2/sage-README-osx.txt".
 
@@ -604,7 +604,7 @@ Fixes SAGE to Sage in version() etc.
 archive/issue_comments_008914.json:
 ```json
 {
-    "body": "Attachment\n\nMost patches here should be trivial to review, though some *may* require rebasing. \n\nThis ticket perhaps should have an ongoing existence - as patches are merged, new ones could still be added.",
+    "body": "Attachment [10737.patch](tarball://root/attachments/some-uuid/ticket1389/10737.patch) by kcrisman created at 2008-10-17 20:36:02\n\nMost patches here should be trivial to review, though some *may* require rebasing. \n\nThis ticket perhaps should have an ongoing existence - as patches are merged, new ones could still be added.",
     "created_at": "2008-10-17T20:36:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1389",
     "type": "issue_comment",
@@ -613,7 +613,7 @@ archive/issue_comments_008914.json:
 }
 ```
 
-Attachment
+Attachment [10737.patch](tarball://root/attachments/some-uuid/ticket1389/10737.patch) by kcrisman created at 2008-10-17 20:36:02
 
 Most patches here should be trivial to review, though some *may* require rebasing. 
 
@@ -726,7 +726,7 @@ I'm beginning to agree with kcrisman that we maybe should merge some of these wh
 archive/issue_comments_008918.json:
 ```json
 {
-    "body": "Attachment\n\npatch misc.py, changing SAGE to Sage",
+    "body": "Attachment [1389-misc.patch](tarball://root/attachments/some-uuid/ticket1389/1389-misc.patch) by jhpalmieri created at 2008-10-20 23:48:51\n\npatch misc.py, changing SAGE to Sage",
     "created_at": "2008-10-20T23:48:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1389",
     "type": "issue_comment",
@@ -735,7 +735,7 @@ archive/issue_comments_008918.json:
 }
 ```
 
-Attachment
+Attachment [1389-misc.patch](tarball://root/attachments/some-uuid/ticket1389/1389-misc.patch) by jhpalmieri created at 2008-10-20 23:48:51
 
 patch misc.py, changing SAGE to Sage
 
@@ -764,7 +764,7 @@ change SAGE to Sage in various scripts (e.g. sage-banner)
 archive/issue_comments_008920.json:
 ```json
 {
-    "body": "Attachment\n\nI would comment that I don't know how to easily check (e.g., doctest) the changes that I made to the scripts.  Please referee carefully.",
+    "body": "Attachment [1389-scripts.patch](tarball://root/attachments/some-uuid/ticket1389/1389-scripts.patch) by jhpalmieri created at 2008-10-20 23:50:51\n\nI would comment that I don't know how to easily check (e.g., doctest) the changes that I made to the scripts.  Please referee carefully.",
     "created_at": "2008-10-20T23:50:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1389",
     "type": "issue_comment",
@@ -773,7 +773,7 @@ archive/issue_comments_008920.json:
 }
 ```
 
-Attachment
+Attachment [1389-scripts.patch](tarball://root/attachments/some-uuid/ticket1389/1389-scripts.patch) by jhpalmieri created at 2008-10-20 23:50:51
 
 I would comment that I don't know how to easily check (e.g., doctest) the changes that I made to the scripts.  Please referee carefully.
 
@@ -1125,7 +1125,7 @@ change citation in tutorial to match sagemath.org (revised revised version)
 archive/issue_comments_008930.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:21 mvngu]:\n> Replying to [comment:17 jhpalmieri]:\n> > There is a new version of the tut patch, taking the comments into consideration.\n> \n> The revised patch `1389-tut.patch` looks good. Here's another change to that patch:\n\n> -where you should change x.y.z. to the version of Sage that you used\n\n> +where you should change x.y.z to the version of \\SAGE that you used\n\nFixed in the newest patch.",
+    "body": "Attachment [1389-tut.patch](tarball://root/attachments/some-uuid/ticket1389/1389-tut.patch) by jhpalmieri created at 2008-10-22 02:58:16\n\nReplying to [comment:21 mvngu]:\n> Replying to [comment:17 jhpalmieri]:\n> > There is a new version of the tut patch, taking the comments into consideration.\n> \n> The revised patch `1389-tut.patch` looks good. Here's another change to that patch:\n\n> -where you should change x.y.z. to the version of Sage that you used\n\n> +where you should change x.y.z to the version of \\SAGE that you used\n\nFixed in the newest patch.",
     "created_at": "2008-10-22T02:58:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1389",
     "type": "issue_comment",
@@ -1134,7 +1134,7 @@ archive/issue_comments_008930.json:
 }
 ```
 
-Attachment
+Attachment [1389-tut.patch](tarball://root/attachments/some-uuid/ticket1389/1389-tut.patch) by jhpalmieri created at 2008-10-22 02:58:16
 
 Replying to [comment:21 mvngu]:
 > Replying to [comment:17 jhpalmieri]:
@@ -1274,7 +1274,7 @@ Michael
 archive/issue_comments_008934.json:
 ```json
 {
-    "body": "Attachment\n\nChange \"SAGE\" to \"Sage\" in sage-3.1.4/devel/sage-main/sage/misc/all.py.",
+    "body": "Attachment [1389-all.py.patch](tarball://root/attachments/some-uuid/ticket1389/1389-all.py.patch) by mvngu created at 2008-10-26 11:55:35\n\nChange \"SAGE\" to \"Sage\" in sage-3.1.4/devel/sage-main/sage/misc/all.py.",
     "created_at": "2008-10-26T11:55:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1389",
     "type": "issue_comment",
@@ -1283,7 +1283,7 @@ archive/issue_comments_008934.json:
 }
 ```
 
-Attachment
+Attachment [1389-all.py.patch](tarball://root/attachments/some-uuid/ticket1389/1389-all.py.patch) by mvngu created at 2008-10-26 11:55:35
 
 Change "SAGE" to "Sage" in sage-3.1.4/devel/sage-main/sage/misc/all.py.
 
@@ -1312,7 +1312,7 @@ Change "SAGE" to "Sage" in sage-3.1.4/devel/sage-main/sage/misc/misc.py
 archive/issue_comments_008936.json:
 ```json
 {
-    "body": "Attachment\n\nFor the patches **1389-all.py.patch** and **1389-misc.py.patch**, please also see #4368. The patch **trac_4368.patch** from #4368 also deals with the same files that **1389-all.py.patch** and **1389-misc.py.patch** are dealing with.",
+    "body": "Attachment [1389-misc.py.patch](tarball://root/attachments/some-uuid/ticket1389/1389-misc.py.patch) by mvngu created at 2008-10-26 12:02:21\n\nFor the patches **1389-all.py.patch** and **1389-misc.py.patch**, please also see #4368. The patch **trac_4368.patch** from #4368 also deals with the same files that **1389-all.py.patch** and **1389-misc.py.patch** are dealing with.",
     "created_at": "2008-10-26T12:02:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1389",
     "type": "issue_comment",
@@ -1321,7 +1321,7 @@ archive/issue_comments_008936.json:
 }
 ```
 
-Attachment
+Attachment [1389-misc.py.patch](tarball://root/attachments/some-uuid/ticket1389/1389-misc.py.patch) by mvngu created at 2008-10-26 12:02:21
 
 For the patches **1389-all.py.patch** and **1389-misc.py.patch**, please also see #4368. The patch **trac_4368.patch** from #4368 also deals with the same files that **1389-all.py.patch** and **1389-misc.py.patch** are dealing with.
 

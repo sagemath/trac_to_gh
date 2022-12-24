@@ -55,7 +55,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_019873.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [inline_fortran.py](tarball://root/attachments/some-uuid/ticket2891/inline_fortran.py) by was created at 2008-04-12 03:17:57",
     "created_at": "2008-04-12T03:17:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2891",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_019873.json:
 }
 ```
 
-Attachment
+Attachment [inline_fortran.py](tarball://root/attachments/some-uuid/ticket2891/inline_fortran.py) by was created at 2008-04-12 03:17:57
 
 
 

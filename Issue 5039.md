@@ -139,7 +139,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_038378.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5039-disjoint_set-ts.patch](tarball://root/attachments/some-uuid/ticket5039/trac_5039-disjoint_set-ts.patch) by tscrim created at 2013-03-27 23:30:01",
     "created_at": "2013-03-27T23:30:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5039",
     "type": "issue_comment",
@@ -148,7 +148,7 @@ archive/issue_comments_038378.json:
 }
 ```
 
-Attachment
+Attachment [trac_5039-disjoint_set-ts.patch](tarball://root/attachments/some-uuid/ticket5039/trac_5039-disjoint_set-ts.patch) by tscrim created at 2013-03-27 23:30:01
 
 
 

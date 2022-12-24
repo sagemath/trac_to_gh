@@ -269,7 +269,7 @@ Changing status from new to needs_review.
 archive/issue_comments_083576.json:
 ```json
 {
-    "body": "Attachment\n\nMercurial patch to ensure all files build 64-bit on OpenSolaris",
+    "body": "Attachment [rubiks-64-bit.patch](tarball://root/attachments/some-uuid/ticket9030/rubiks-64-bit.patch) by drkirkby created at 2010-05-30 22:58:47\n\nMercurial patch to ensure all files build 64-bit on OpenSolaris",
     "created_at": "2010-05-30T22:58:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9030",
     "type": "issue_comment",
@@ -278,7 +278,7 @@ archive/issue_comments_083576.json:
 }
 ```
 
-Attachment
+Attachment [rubiks-64-bit.patch](tarball://root/attachments/some-uuid/ticket9030/rubiks-64-bit.patch) by drkirkby created at 2010-05-30 22:58:47
 
 Mercurial patch to ensure all files build 64-bit on OpenSolaris
 

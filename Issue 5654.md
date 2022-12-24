@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5654
 archive/issue_comments_044221.json:
 ```json
 {
-    "body": "Attachment\n\nThis passes doctests, and is a simple change that makes sense to me.",
+    "body": "Attachment [11804.patch](tarball://root/attachments/some-uuid/ticket5654/11804.patch) by mhampton created at 2009-04-13 19:21:40\n\nThis passes doctests, and is a simple change that makes sense to me.",
     "created_at": "2009-04-13T19:21:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5654",
     "type": "issue_comment",
@@ -49,7 +49,7 @@ archive/issue_comments_044221.json:
 }
 ```
 
-Attachment
+Attachment [11804.patch](tarball://root/attachments/some-uuid/ticket5654/11804.patch) by mhampton created at 2009-04-13 19:21:40
 
 This passes doctests, and is a simple change that makes sense to me.
 

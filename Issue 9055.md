@@ -458,7 +458,7 @@ Programming no-nos:
 archive/issue_comments_083998.json:
 ```json
 {
-    "body": "Attachment\n\nApply last",
+    "body": "Attachment [trac_9055_reviewer.patch](tarball://root/attachments/some-uuid/ticket9055/trac_9055_reviewer.patch) by novoselt created at 2010-12-01 17:34:12\n\nApply last",
     "created_at": "2010-12-01T17:34:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9055",
     "type": "issue_comment",
@@ -467,7 +467,7 @@ archive/issue_comments_083998.json:
 }
 ```
 
-Attachment
+Attachment [trac_9055_reviewer.patch](tarball://root/attachments/some-uuid/ticket9055/trac_9055_reviewer.patch) by novoselt created at 2010-12-01 17:34:12
 
 Apply last
 
@@ -561,7 +561,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_084003.json:
 ```json
 {
-    "body": "Attachment\n\nrebased on sage-4.6.1.alpha2 + #6094",
+    "body": "Attachment [trac_9055-rebased.patch](tarball://root/attachments/some-uuid/ticket9055/trac_9055-rebased.patch) by rlm created at 2010-12-05 10:40:29\n\nrebased on sage-4.6.1.alpha2 + #6094",
     "created_at": "2010-12-05T10:40:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9055",
     "type": "issue_comment",
@@ -570,7 +570,7 @@ archive/issue_comments_084003.json:
 }
 ```
 
-Attachment
+Attachment [trac_9055-rebased.patch](tarball://root/attachments/some-uuid/ticket9055/trac_9055-rebased.patch) by rlm created at 2010-12-05 10:40:29
 
 rebased on sage-4.6.1.alpha2 + #6094
 

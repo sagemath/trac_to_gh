@@ -154,7 +154,7 @@ add <link rel="alternate"... stuff to published worksheets
 archive/issue_comments_062645.json:
 ```json
 {
-    "body": "Attachment\n\nadd support to \"upload a worksheet\" page for parsing <link rel=\"alternate\"... links",
+    "body": "Attachment [trac_7441_link_rel.patch](tarball://root/attachments/some-uuid/ticket7441/trac_7441_link_rel.patch) by ddrake created at 2010-05-20 02:37:51\n\nadd support to \"upload a worksheet\" page for parsing <link rel=\"alternate\"... links",
     "created_at": "2010-05-20T02:37:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7441",
     "type": "issue_comment",
@@ -163,7 +163,7 @@ archive/issue_comments_062645.json:
 }
 ```
 
-Attachment
+Attachment [trac_7441_link_rel.patch](tarball://root/attachments/some-uuid/ticket7441/trac_7441_link_rel.patch) by ddrake created at 2010-05-20 02:37:51
 
 add support to "upload a worksheet" page for parsing <link rel="alternate"... links
 
@@ -174,7 +174,7 @@ add support to "upload a worksheet" page for parsing <link rel="alternate"... li
 archive/issue_comments_062646.json:
 ```json
 {
-    "body": "Attachment\n\nThese two patches are a mostly-working implementation of these ideas. The \"link_rel\" patch simply adds the appropriate link into the head of published worksheets; the \"upload\" patch adds support to the \"upload a worksheet\" stuff so that it parses and downloads associated worksheets.\n\nRight now, however, it runs into a strange error that I don't understand. Try applying these patches, publishing a worksheet, and then using the worksheet's public URL in the upload box. You'll get a strange twisted error, the user's session will get messed up, but if you log back in, you'll see that the worksheet did get imported.\n\n(It's likely that it won't work at all with https URLs; we'll work on that later.)\n\nAny ideas?",
+    "body": "Attachment [trac_7441_upload.patch](tarball://root/attachments/some-uuid/ticket7441/trac_7441_upload.patch) by ddrake created at 2010-05-20 02:43:09\n\nThese two patches are a mostly-working implementation of these ideas. The \"link_rel\" patch simply adds the appropriate link into the head of published worksheets; the \"upload\" patch adds support to the \"upload a worksheet\" stuff so that it parses and downloads associated worksheets.\n\nRight now, however, it runs into a strange error that I don't understand. Try applying these patches, publishing a worksheet, and then using the worksheet's public URL in the upload box. You'll get a strange twisted error, the user's session will get messed up, but if you log back in, you'll see that the worksheet did get imported.\n\n(It's likely that it won't work at all with https URLs; we'll work on that later.)\n\nAny ideas?",
     "created_at": "2010-05-20T02:43:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7441",
     "type": "issue_comment",
@@ -183,7 +183,7 @@ archive/issue_comments_062646.json:
 }
 ```
 
-Attachment
+Attachment [trac_7441_upload.patch](tarball://root/attachments/some-uuid/ticket7441/trac_7441_upload.patch) by ddrake created at 2010-05-20 02:43:09
 
 These two patches are a mostly-working implementation of these ideas. The "link_rel" patch simply adds the appropriate link into the head of published worksheets; the "upload" patch adds support to the "upload a worksheet" stuff so that it parses and downloads associated worksheets.
 

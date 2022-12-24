@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/988
 archive/issue_comments_006034.json:
 ```json
 {
-    "body": "Attachment\n\nbundle to add in bg option",
+    "body": "Attachment [edit.hg](tarball://root/attachments/some-uuid/ticket988/edit.hg) by nbruin created at 2007-10-25 01:09:42\n\nbundle to add in bg option",
     "created_at": "2007-10-25T01:09:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/988",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_006034.json:
 }
 ```
 
-Attachment
+Attachment [edit.hg](tarball://root/attachments/some-uuid/ticket988/edit.hg) by nbruin created at 2007-10-25 01:09:42
 
 bundle to add in bg option
 

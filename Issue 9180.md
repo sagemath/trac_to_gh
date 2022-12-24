@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9180
 archive/issue_comments_085882.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9180-abs-interval.patch](tarball://root/attachments/some-uuid/ticket9180/9180-abs-interval.patch) by robertwb created at 2010-06-07 21:27:04",
     "created_at": "2010-06-07T21:27:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9180",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_085882.json:
 }
 ```
 
-Attachment
+Attachment [9180-abs-interval.patch](tarball://root/attachments/some-uuid/ticket9180/9180-abs-interval.patch) by robertwb created at 2010-06-07 21:27:04
 
 
 
@@ -87,7 +87,7 @@ apply on top of previous
 archive/issue_comments_085885.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9180-real-mpfi-conversion.patch](tarball://root/attachments/some-uuid/ticket9180/9180-real-mpfi-conversion.patch) by rishi created at 2010-08-08 02:47:42",
     "created_at": "2010-08-08T02:47:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9180",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_085885.json:
 }
 ```
 
-Attachment
+Attachment [9180-real-mpfi-conversion.patch](tarball://root/attachments/some-uuid/ticket9180/9180-real-mpfi-conversion.patch) by rishi created at 2010-08-08 02:47:42
 
 
 
@@ -123,7 +123,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_085887.json:
 ```json
 {
-    "body": "Attachment\n\nApplies against 4.7, no long doctest failures. Looks fine to me.",
+    "body": "Attachment [9180-bitrot.patch](tarball://root/attachments/some-uuid/ticket9180/9180-bitrot.patch) by kedlaya created at 2011-06-18 13:32:44\n\nApplies against 4.7, no long doctest failures. Looks fine to me.",
     "created_at": "2011-06-18T13:32:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9180",
     "type": "issue_comment",
@@ -132,7 +132,7 @@ archive/issue_comments_085887.json:
 }
 ```
 
-Attachment
+Attachment [9180-bitrot.patch](tarball://root/attachments/some-uuid/ticket9180/9180-bitrot.patch) by kedlaya created at 2011-06-18 13:32:44
 
 Applies against 4.7, no long doctest failures. Looks fine to me.
 

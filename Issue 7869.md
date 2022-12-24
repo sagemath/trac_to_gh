@@ -84,7 +84,7 @@ Changing status from new to needs_work.
 archive/issue_comments_068267.json:
 ```json
 {
-    "body": "Attachment\n\na proposal for a docstring",
+    "body": "Attachment [docstring](tarball://root/attachments/some-uuid/ticket7869/docstring) by olazo created at 2010-01-17 21:09:34\n\na proposal for a docstring",
     "created_at": "2010-01-17T21:09:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7869",
     "type": "issue_comment",
@@ -93,7 +93,7 @@ archive/issue_comments_068267.json:
 }
 ```
 
-Attachment
+Attachment [docstring](tarball://root/attachments/some-uuid/ticket7869/docstring) by olazo created at 2010-01-17 21:09:34
 
 a proposal for a docstring
 
@@ -122,7 +122,7 @@ some corrections made
 archive/issue_comments_068269.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [docstring.2](tarball://root/attachments/some-uuid/ticket7869/docstring.2) by olazo created at 2010-01-24 19:36:29",
     "created_at": "2010-01-24T19:36:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7869",
     "type": "issue_comment",
@@ -131,7 +131,7 @@ archive/issue_comments_068269.json:
 }
 ```
 
-Attachment
+Attachment [docstring.2](tarball://root/attachments/some-uuid/ticket7869/docstring.2) by olazo created at 2010-01-24 19:36:29
 
 
 

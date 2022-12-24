@@ -444,7 +444,7 @@ Sorry, I didn't think of that.  I created this patch on a PPC Mac, and it's one 
 archive/issue_comments_083251.json:
 ```json
 {
-    "body": "Attachment\n\nBased on 4.5.1",
+    "body": "Attachment [trac_9002-ppc-noise.patch](tarball://root/attachments/some-uuid/ticket9002/trac_9002-ppc-noise.patch) by kcrisman created at 2010-07-22 12:36:18\n\nBased on 4.5.1",
     "created_at": "2010-07-22T12:36:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9002",
     "type": "issue_comment",
@@ -453,7 +453,7 @@ archive/issue_comments_083251.json:
 }
 ```
 
-Attachment
+Attachment [trac_9002-ppc-noise.patch](tarball://root/attachments/some-uuid/ticket9002/trac_9002-ppc-noise.patch) by kcrisman created at 2010-07-22 12:36:18
 
 Based on 4.5.1
 

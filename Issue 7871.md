@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7871
 archive/issue_comments_068328.json:
 ```json
 {
-    "body": "Attachment\n\nFix CSS color.  sagenb repo.",
+    "body": "Attachment [trac_7871-interact_bgcolor.patch](tarball://root/attachments/some-uuid/ticket7871/trac_7871-interact_bgcolor.patch) by mpatel created at 2010-01-08 09:31:15\n\nFix CSS color.  sagenb repo.",
     "created_at": "2010-01-08T09:31:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7871",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_068328.json:
 }
 ```
 
-Attachment
+Attachment [trac_7871-interact_bgcolor.patch](tarball://root/attachments/some-uuid/ticket7871/trac_7871-interact_bgcolor.patch) by mpatel created at 2010-01-08 09:31:15
 
 Fix CSS color.  sagenb repo.
 

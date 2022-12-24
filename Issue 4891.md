@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4891
 archive/issue_comments_037085.json:
 ```json
 {
-    "body": "Attachment\n\nFor the record, when I run this on sage.math it takes a total of a half hour (pretty fast!) and finishes with the following:\n\n```\n...\nSuccessfully installed valgrind_3.3.1\nNow cleaning up tmp files.\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing valgrind_3.3.1.spkg\nCPU times: user 0.03 s, sys: 1.54 s, total: 1.57 s\nWall time: 1925.36 s\n['boehm_gc-7.1.p0', 'mpi4py-0.3.1']\n```\n\n\nSo boehm and mpi4py failed to install.  But everything else in optional succeeded.  Note that there is  an inconsistency, since according to the output of optional_packages() in fact mpi4py and fricas failed but everything else succeeded:\n\n```\n ['fricas-1.0.3.p0', 'mpi4py-0.3.1'])\n```\n\nThis I think points to bugs in the package install system, not in this patch.",
+    "body": "Attachment [trac_4891.patch](tarball://root/attachments/some-uuid/ticket4891/trac_4891.patch) by was created at 2008-12-30 07:54:50\n\nFor the record, when I run this on sage.math it takes a total of a half hour (pretty fast!) and finishes with the following:\n\n```\n...\nSuccessfully installed valgrind_3.3.1\nNow cleaning up tmp files.\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing valgrind_3.3.1.spkg\nCPU times: user 0.03 s, sys: 1.54 s, total: 1.57 s\nWall time: 1925.36 s\n['boehm_gc-7.1.p0', 'mpi4py-0.3.1']\n```\n\n\nSo boehm and mpi4py failed to install.  But everything else in optional succeeded.  Note that there is  an inconsistency, since according to the output of optional_packages() in fact mpi4py and fricas failed but everything else succeeded:\n\n```\n ['fricas-1.0.3.p0', 'mpi4py-0.3.1'])\n```\n\nThis I think points to bugs in the package install system, not in this patch.",
     "created_at": "2008-12-30T07:54:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4891",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_037085.json:
 }
 ```
 
-Attachment
+Attachment [trac_4891.patch](tarball://root/attachments/some-uuid/ticket4891/trac_4891.patch) by was created at 2008-12-30 07:54:50
 
 For the record, when I run this on sage.math it takes a total of a half hour (pretty fast!) and finishes with the following:
 

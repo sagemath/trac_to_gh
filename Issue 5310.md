@@ -59,7 +59,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5310
 archive/issue_comments_040863.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [msieve.patch](tarball://root/attachments/some-uuid/ticket5310/msieve.patch) by jblakeslee created at 2009-02-19 04:26:15",
     "created_at": "2009-02-19T04:26:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5310",
     "type": "issue_comment",
@@ -68,7 +68,7 @@ archive/issue_comments_040863.json:
 }
 ```
 
-Attachment
+Attachment [msieve.patch](tarball://root/attachments/some-uuid/ticket5310/msieve.patch) by jblakeslee created at 2009-02-19 04:26:15
 
 
 
@@ -454,7 +454,7 @@ If it fails again can you give os type and error info.  Thank you.
 archive/issue_comments_040875.json:
 ```json
 {
-    "body": "Attachment\n\nI attached a patch for the msieve interface updated to version 1.47.\n\nSomeone has to check whether msieve can be compiled on every relevant system and if necessary update the spkg-file.\nIt works on x86_64.",
+    "body": "Attachment [msieve-1.47.spkg](tarball://root/attachments/some-uuid/ticket5310/msieve-1.47.spkg) by aapitzsch created at 2010-10-27 14:16:05\n\nI attached a patch for the msieve interface updated to version 1.47.\n\nSomeone has to check whether msieve can be compiled on every relevant system and if necessary update the spkg-file.\nIt works on x86_64.",
     "created_at": "2010-10-27T14:16:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5310",
     "type": "issue_comment",
@@ -463,7 +463,7 @@ archive/issue_comments_040875.json:
 }
 ```
 
-Attachment
+Attachment [msieve-1.47.spkg](tarball://root/attachments/some-uuid/ticket5310/msieve-1.47.spkg) by aapitzsch created at 2010-10-27 14:16:05
 
 I attached a patch for the msieve interface updated to version 1.47.
 
@@ -513,7 +513,7 @@ Remove assignee mabshoff.
 archive/issue_comments_040878.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [msieve1.47.patch](tarball://root/attachments/some-uuid/ticket5310/msieve1.47.patch) by aapitzsch created at 2010-11-03 08:38:45",
     "created_at": "2010-11-03T08:38:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5310",
     "type": "issue_comment",
@@ -522,7 +522,7 @@ archive/issue_comments_040878.json:
 }
 ```
 
-Attachment
+Attachment [msieve1.47.patch](tarball://root/attachments/some-uuid/ticket5310/msieve1.47.patch) by aapitzsch created at 2010-11-03 08:38:45
 
 
 
@@ -531,7 +531,7 @@ Attachment
 archive/issue_comments_040879.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5310_msieve_148.patch](tarball://root/attachments/some-uuid/ticket5310/trac_5310_msieve_148.patch) by aapitzsch created at 2011-01-17 17:13:18",
     "created_at": "2011-01-17T17:13:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5310",
     "type": "issue_comment",
@@ -540,7 +540,7 @@ archive/issue_comments_040879.json:
 }
 ```
 
-Attachment
+Attachment [trac_5310_msieve_148.patch](tarball://root/attachments/some-uuid/ticket5310/trac_5310_msieve_148.patch) by aapitzsch created at 2011-01-17 17:13:18
 
 
 
@@ -663,7 +663,7 @@ see also #6232
 archive/issue_comments_040885.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [msieve-1.49.p0.spkg](tarball://root/attachments/some-uuid/ticket5310/msieve-1.49.p0.spkg) by aapitzsch created at 2011-11-01 18:36:22",
     "created_at": "2011-11-01T18:36:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5310",
     "type": "issue_comment",
@@ -672,7 +672,7 @@ archive/issue_comments_040885.json:
 }
 ```
 
-Attachment
+Attachment [msieve-1.49.p0.spkg](tarball://root/attachments/some-uuid/ticket5310/msieve-1.49.p0.spkg) by aapitzsch created at 2011-11-01 18:36:22
 
 
 
@@ -848,7 +848,7 @@ The `TMPDIR` environment variable must not be modified globally; if there's no o
 archive/issue_comments_040893.json:
 ```json
 {
-    "body": "Attachment\n\nPatch updated.\n\nReplying to [comment:27 leif]:\n> Replying to [comment:25 aapitzsch]:\n> > [...] in case msieve isn't installed there is warning.\n> \n> How about printing that message and raising `NotImplementedError` (or `RuntimeError`)?\n> \nNow `NotImplementedError` is raised.\n> \n> *SAGE* should be *Sage* btw.\n> \nDone.\n> \n> The `TMPDIR` environment variable must not be modified globally; if there's no other way to tell `msieve` where it should put temporary files, a modified environment has to be passed to `msieve`.\n\nFixed.",
+    "body": "Attachment [trac_5310_msieve_149.patch](tarball://root/attachments/some-uuid/ticket5310/trac_5310_msieve_149.patch) by aapitzsch created at 2011-11-12 15:40:36\n\nPatch updated.\n\nReplying to [comment:27 leif]:\n> Replying to [comment:25 aapitzsch]:\n> > [...] in case msieve isn't installed there is warning.\n> \n> How about printing that message and raising `NotImplementedError` (or `RuntimeError`)?\n> \nNow `NotImplementedError` is raised.\n> \n> *SAGE* should be *Sage* btw.\n> \nDone.\n> \n> The `TMPDIR` environment variable must not be modified globally; if there's no other way to tell `msieve` where it should put temporary files, a modified environment has to be passed to `msieve`.\n\nFixed.",
     "created_at": "2011-11-12T15:40:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5310",
     "type": "issue_comment",
@@ -857,7 +857,7 @@ archive/issue_comments_040893.json:
 }
 ```
 
-Attachment
+Attachment [trac_5310_msieve_149.patch](tarball://root/attachments/some-uuid/ticket5310/trac_5310_msieve_149.patch) by aapitzsch created at 2011-11-12 15:40:36
 
 Patch updated.
 

@@ -78,7 +78,7 @@ Doctests need to be fixed up.
 archive/issue_comments_082369.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-8947-callable-SR-vectors-print.patch](tarball://root/attachments/some-uuid/ticket8947/trac-8947-callable-SR-vectors-print.patch) by jason created at 2010-05-11 18:03:00",
     "created_at": "2010-05-11T18:03:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8947",
     "type": "issue_comment",
@@ -87,7 +87,7 @@ archive/issue_comments_082369.json:
 }
 ```
 
-Attachment
+Attachment [trac-8947-callable-SR-vectors-print.patch](tarball://root/attachments/some-uuid/ticket8947/trac-8947-callable-SR-vectors-print.patch) by jason created at 2010-05-11 18:03:00
 
 
 
@@ -327,7 +327,7 @@ The following tests failed:
 archive/issue_comments_082379.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of previous patches",
+    "body": "Attachment [trac-8947-doctest-fix.patch](tarball://root/attachments/some-uuid/ticket8947/trac-8947-doctest-fix.patch) by jason created at 2010-06-01 22:08:08\n\napply on top of previous patches",
     "created_at": "2010-06-01T22:08:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8947",
     "type": "issue_comment",
@@ -336,7 +336,7 @@ archive/issue_comments_082379.json:
 }
 ```
 
-Attachment
+Attachment [trac-8947-doctest-fix.patch](tarball://root/attachments/some-uuid/ticket8947/trac-8947-doctest-fix.patch) by jason created at 2010-06-01 22:08:08
 
 apply on top of previous patches
 

@@ -197,7 +197,7 @@ To reviewer or merger: feel free to change patch. I won't be touching the code a
 archive/issue_comments_086397.json:
 ```json
 {
-    "body": "Attachment\n\nadd instead of previous",
+    "body": "Attachment [9220-poly-evaluation-coerce.patch](tarball://root/attachments/some-uuid/ticket9220/9220-poly-evaluation-coerce.patch) by robertwb created at 2010-06-22 23:43:58\n\nadd instead of previous",
     "created_at": "2010-06-22T23:43:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9220",
     "type": "issue_comment",
@@ -206,7 +206,7 @@ archive/issue_comments_086397.json:
 }
 ```
 
-Attachment
+Attachment [9220-poly-evaluation-coerce.patch](tarball://root/attachments/some-uuid/ticket9220/9220-poly-evaluation-coerce.patch) by robertwb created at 2010-06-22 23:43:58
 
 add instead of previous
 
@@ -337,7 +337,7 @@ errors during apply, please fix and refresh 9220-poly-evaluation-coerce.patch
 archive/issue_comments_086404.json:
 ```json
 {
-    "body": "Attachment\n\nRebased on sage-5.4.rc2, apply only this patch.",
+    "body": "Attachment [9220-poly-evaluation-coerce-5.4.rebase.patch](tarball://root/attachments/some-uuid/ticket9220/9220-poly-evaluation-coerce-5.4.rebase.patch) by robertwb created at 2012-10-24 07:01:35\n\nRebased on sage-5.4.rc2, apply only this patch.",
     "created_at": "2012-10-24T07:01:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9220",
     "type": "issue_comment",
@@ -346,7 +346,7 @@ archive/issue_comments_086404.json:
 }
 ```
 
-Attachment
+Attachment [9220-poly-evaluation-coerce-5.4.rebase.patch](tarball://root/attachments/some-uuid/ticket9220/9220-poly-evaluation-coerce-5.4.rebase.patch) by robertwb created at 2012-10-24 07:01:35
 
 Rebased on sage-5.4.rc2, apply only this patch.
 
@@ -435,7 +435,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_086408.json:
 ```json
 {
-    "body": "Attachment\n\nminor docstring fixes",
+    "body": "Attachment [13933-doctests.patch](tarball://root/attachments/some-uuid/ticket9220/13933-doctests.patch) by robertwb created at 2013-01-22 05:24:15\n\nminor docstring fixes",
     "created_at": "2013-01-22T05:24:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9220",
     "type": "issue_comment",
@@ -444,7 +444,7 @@ archive/issue_comments_086408.json:
 }
 ```
 
-Attachment
+Attachment [13933-doctests.patch](tarball://root/attachments/some-uuid/ticket9220/13933-doctests.patch) by robertwb created at 2013-01-22 05:24:15
 
 minor docstring fixes
 
@@ -491,7 +491,7 @@ Minor fixes to docstrings
 archive/issue_comments_086411.json:
 ```json
 {
-    "body": "Attachment\n\nThe rebased version worked for me. I've attached a small reviewer patch which just does the minor tweaks to the docstrings. Jeroen, I hope you don't mind me setting this back to a positive review.\n\nBest,\n\nTravis\n\nFor patchbot:\n\nApply only: 9220-poly-evaluation-coerce-5.4.rebase.patch, trac_9220-poly_evaluation-review-ts.patch",
+    "body": "Attachment [trac_9220-poly_evaluation-review-ts.patch](tarball://root/attachments/some-uuid/ticket9220/trac_9220-poly_evaluation-review-ts.patch) by tscrim created at 2013-01-31 17:12:04\n\nThe rebased version worked for me. I've attached a small reviewer patch which just does the minor tweaks to the docstrings. Jeroen, I hope you don't mind me setting this back to a positive review.\n\nBest,\n\nTravis\n\nFor patchbot:\n\nApply only: 9220-poly-evaluation-coerce-5.4.rebase.patch, trac_9220-poly_evaluation-review-ts.patch",
     "created_at": "2013-01-31T17:12:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9220",
     "type": "issue_comment",
@@ -500,7 +500,7 @@ archive/issue_comments_086411.json:
 }
 ```
 
-Attachment
+Attachment [trac_9220-poly_evaluation-review-ts.patch](tarball://root/attachments/some-uuid/ticket9220/trac_9220-poly_evaluation-review-ts.patch) by tscrim created at 2013-01-31 17:12:04
 
 The rebased version worked for me. I've attached a small reviewer patch which just does the minor tweaks to the docstrings. Jeroen, I hope you don't mind me setting this back to a positive review.
 

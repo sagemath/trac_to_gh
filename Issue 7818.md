@@ -579,7 +579,7 @@ Dave
 archive/issue_comments_067656.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated sage-env, much improved, but added back LN, MKIDR etc, to avoid risk of breakage",
+    "body": "Attachment [sage-env](tarball://root/attachments/some-uuid/ticket7818/sage-env) by drkirkby created at 2010-01-12 19:13:39\n\nUpdated sage-env, much improved, but added back LN, MKIDR etc, to avoid risk of breakage",
     "created_at": "2010-01-12T19:13:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
@@ -588,7 +588,7 @@ archive/issue_comments_067656.json:
 }
 ```
 
-Attachment
+Attachment [sage-env](tarball://root/attachments/some-uuid/ticket7818/sage-env) by drkirkby created at 2010-01-12 19:13:39
 
 Updated sage-env, much improved, but added back LN, MKIDR etc, to avoid risk of breakage
 
@@ -693,7 +693,7 @@ Ok so far. Positive review.
 archive/issue_comments_067660.json:
 ```json
 {
-    "body": "Attachment\n\nPatch file which should hopefully commit, as Robert  Miller said the previous one had a problem.",
+    "body": "Attachment [sage-env.patch](tarball://root/attachments/some-uuid/ticket7818/sage-env.patch) by drkirkby created at 2010-01-13 23:33:16\n\nPatch file which should hopefully commit, as Robert  Miller said the previous one had a problem.",
     "created_at": "2010-01-13T23:33:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
@@ -702,7 +702,7 @@ archive/issue_comments_067660.json:
 }
 ```
 
-Attachment
+Attachment [sage-env.patch](tarball://root/attachments/some-uuid/ticket7818/sage-env.patch) by drkirkby created at 2010-01-13 23:33:16
 
 Patch file which should hopefully commit, as Robert  Miller said the previous one had a problem.
 

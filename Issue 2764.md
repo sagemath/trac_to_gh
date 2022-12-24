@@ -107,7 +107,7 @@ Michael
 archive/issue_comments_018986.json:
 ```json
 {
-    "body": "Attachment\n\nI'm 99.9% sure that the patch is correct as is.  If you can give me a specific instance of something that's in the wrong place and where it should go, I'll stand corrected.",
+    "body": "Attachment [2764.patch](tarball://root/attachments/some-uuid/ticket2764/2764.patch) by mhansen created at 2008-04-02 05:36:08\n\nI'm 99.9% sure that the patch is correct as is.  If you can give me a specific instance of something that's in the wrong place and where it should go, I'll stand corrected.",
     "created_at": "2008-04-02T05:36:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2764",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_018986.json:
 }
 ```
 
-Attachment
+Attachment [2764.patch](tarball://root/attachments/some-uuid/ticket2764/2764.patch) by mhansen created at 2008-04-02 05:36:08
 
 I'm 99.9% sure that the patch is correct as is.  If you can give me a specific instance of something that's in the wrong place and where it should go, I'll stand corrected.
 

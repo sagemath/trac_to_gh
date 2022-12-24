@@ -124,7 +124,7 @@ Changing component from algebra to combinatorics.
 archive/issue_comments_040618.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5285.patch](tarball://root/attachments/some-uuid/ticket5285/5285.patch) by jbandlow created at 2009-02-16 14:45:12",
     "created_at": "2009-02-16T14:45:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5285",
     "type": "issue_comment",
@@ -133,7 +133,7 @@ archive/issue_comments_040618.json:
 }
 ```
 
-Attachment
+Attachment [5285.patch](tarball://root/attachments/some-uuid/ticket5285/5285.patch) by jbandlow created at 2009-02-16 14:45:12
 
 
 

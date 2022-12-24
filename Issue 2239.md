@@ -257,7 +257,7 @@ I followed Will's advice to fix the memleak.  Please review--it worked for me.  
 archive/issue_comments_014832.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8685.patch](tarball://root/attachments/some-uuid/ticket2239/8685.patch) by jvoight created at 2008-02-29 20:04:46",
     "created_at": "2008-02-29T20:04:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2239",
     "type": "issue_comment",
@@ -266,7 +266,7 @@ archive/issue_comments_014832.json:
 }
 ```
 
-Attachment
+Attachment [8685.patch](tarball://root/attachments/some-uuid/ticket2239/8685.patch) by jvoight created at 2008-02-29 20:04:46
 
 
 

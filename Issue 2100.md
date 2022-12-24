@@ -384,7 +384,7 @@ So, in short, things are good to go for finishing this patch and getting it into
 archive/issue_comments_013609.json:
 ```json
 {
-    "body": "Attachment\n\napply instead of previous patch",
+    "body": "Attachment [2100-aspect_ratio.2.patch](tarball://root/attachments/some-uuid/ticket2100/2100-aspect_ratio.2.patch) by jason created at 2010-10-07 07:08:23\n\napply instead of previous patch",
     "created_at": "2010-10-07T07:08:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
@@ -393,7 +393,7 @@ archive/issue_comments_013609.json:
 }
 ```
 
-Attachment
+Attachment [2100-aspect_ratio.2.patch](tarball://root/attachments/some-uuid/ticket2100/2100-aspect_ratio.2.patch) by jason created at 2010-10-07 07:08:23
 
 apply instead of previous patch
 
@@ -698,7 +698,7 @@ I doubt this will be hard to resolve.  Anyway, just status updates...
 archive/issue_comments_013624.json:
 ```json
 {
-    "body": "Attachment\n\nRebase to 4.6.1/4.6.2.alpha0",
+    "body": "Attachment [trac_2100-aspect-ratio-rebase.patch](tarball://root/attachments/some-uuid/ticket2100/trac_2100-aspect-ratio-rebase.patch) by kcrisman created at 2011-01-17 20:06:30\n\nRebase to 4.6.1/4.6.2.alpha0",
     "created_at": "2011-01-17T20:06:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
@@ -707,7 +707,7 @@ archive/issue_comments_013624.json:
 }
 ```
 
-Attachment
+Attachment [trac_2100-aspect-ratio-rebase.patch](tarball://root/attachments/some-uuid/ticket2100/trac_2100-aspect-ratio-rebase.patch) by kcrisman created at 2011-01-17 20:06:30
 
 Rebase to 4.6.1/4.6.2.alpha0
 
@@ -1305,7 +1305,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_013645.json:
 ```json
 {
-    "body": "Attachment\n\nreviewer patch",
+    "body": "Attachment [trac_2100-3d-vector.patch](tarball://root/attachments/some-uuid/ticket2100/trac_2100-3d-vector.patch) by kcrisman created at 2011-01-19 20:38:49\n\nreviewer patch",
     "created_at": "2011-01-19T20:38:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
@@ -1314,7 +1314,7 @@ archive/issue_comments_013645.json:
 }
 ```
 
-Attachment
+Attachment [trac_2100-3d-vector.patch](tarball://root/attachments/some-uuid/ticket2100/trac_2100-3d-vector.patch) by kcrisman created at 2011-01-19 20:38:49
 
 reviewer patch
 
@@ -1687,7 +1687,7 @@ What this plot looks like before #2100
 archive/issue_comments_013664.json:
 ```json
 {
-    "body": "Attachment\n\nWhat this plot looks like after #2100",
+    "body": "Attachment [After.png](tarball://root/attachments/some-uuid/ticket2100/After.png) by kcrisman created at 2011-02-19 04:21:54\n\nWhat this plot looks like after #2100",
     "created_at": "2011-02-19T04:21:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
@@ -1696,7 +1696,7 @@ archive/issue_comments_013664.json:
 }
 ```
 
-Attachment
+Attachment [After.png](tarball://root/attachments/some-uuid/ticket2100/After.png) by kcrisman created at 2011-02-19 04:21:54
 
 What this plot looks like after #2100
 
@@ -2011,7 +2011,7 @@ But no point crying over spilt milk.  Sigh... patches coming up.
 archive/issue_comments_013681.json:
 ```json
 {
-    "body": "Attachment\n\nApply after rebase patch",
+    "body": "Attachment [trac_2100-auto-automatic-and-vector.patch](tarball://root/attachments/some-uuid/ticket2100/trac_2100-auto-automatic-and-vector.patch) by kcrisman created at 2011-06-20 14:45:44\n\nApply after rebase patch",
     "created_at": "2011-06-20T14:45:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
@@ -2020,7 +2020,7 @@ archive/issue_comments_013681.json:
 }
 ```
 
-Attachment
+Attachment [trac_2100-auto-automatic-and-vector.patch](tarball://root/attachments/some-uuid/ticket2100/trac_2100-auto-automatic-and-vector.patch) by kcrisman created at 2011-06-20 14:45:44
 
 Apply after rebase patch
 

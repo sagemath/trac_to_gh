@@ -345,7 +345,7 @@ Mercurial patch to allow a 64-bit build of 'lcalc' if SAGE64=yes
 archive/issue_comments_083726.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:1 rishi]:\n> I do not have access to opensolaris machine. \n\nYou can install it as a virtual machine on Windows or Linux if you wanted. \n\n> I am busy with other things also. \n\nI understand.\n\n> Can you make appropriate changes to Makefile.sage in patches directory and see if things work.\n\nSure, I've done that. The package now builds 64-bit on OpenSolaris when SAGE64 is set to yes. I've also tested this on Linux (sage.math) and OS X (bsd.math). It builds fine on all platforms. \n\nDave",
+    "body": "Attachment [lcalc-64-bit-fix.patch](tarball://root/attachments/some-uuid/ticket9043/lcalc-64-bit-fix.patch) by drkirkby created at 2010-05-28 21:18:46\n\nReplying to [comment:1 rishi]:\n> I do not have access to opensolaris machine. \n\nYou can install it as a virtual machine on Windows or Linux if you wanted. \n\n> I am busy with other things also. \n\nI understand.\n\n> Can you make appropriate changes to Makefile.sage in patches directory and see if things work.\n\nSure, I've done that. The package now builds 64-bit on OpenSolaris when SAGE64 is set to yes. I've also tested this on Linux (sage.math) and OS X (bsd.math). It builds fine on all platforms. \n\nDave",
     "created_at": "2010-05-28T21:18:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9043",
     "type": "issue_comment",
@@ -354,7 +354,7 @@ archive/issue_comments_083726.json:
 }
 ```
 
-Attachment
+Attachment [lcalc-64-bit-fix.patch](tarball://root/attachments/some-uuid/ticket9043/lcalc-64-bit-fix.patch) by drkirkby created at 2010-05-28 21:18:46
 
 Replying to [comment:1 rishi]:
 > I do not have access to opensolaris machine. 

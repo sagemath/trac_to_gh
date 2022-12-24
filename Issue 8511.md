@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8511
 archive/issue_comments_076851.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8511-subs.patch](tarball://root/attachments/some-uuid/ticket8511/trac_8511-subs.patch) by jhpalmieri created at 2010-03-12 20:25:59",
     "created_at": "2010-03-12T20:25:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8511",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_076851.json:
 }
 ```
 
-Attachment
+Attachment [trac_8511-subs.patch](tarball://root/attachments/some-uuid/ticket8511/trac_8511-subs.patch) by jhpalmieri created at 2010-03-12 20:25:59
 
 
 
@@ -103,7 +103,7 @@ apply only this patch
 archive/issue_comments_076855.json:
 ```json
 {
-    "body": "Attachment\n\nreviewer patch; apply on top of previous",
+    "body": "Attachment [trac_8511-unexpected-indentation.patch](tarball://root/attachments/some-uuid/ticket8511/trac_8511-unexpected-indentation.patch) by mvngu created at 2010-03-13 00:22:05\n\nreviewer patch; apply on top of previous",
     "created_at": "2010-03-13T00:22:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8511",
     "type": "issue_comment",
@@ -112,7 +112,7 @@ archive/issue_comments_076855.json:
 }
 ```
 
-Attachment
+Attachment [trac_8511-unexpected-indentation.patch](tarball://root/attachments/some-uuid/ticket8511/trac_8511-unexpected-indentation.patch) by mvngu created at 2010-03-13 00:22:05
 
 reviewer patch; apply on top of previous
 
@@ -123,7 +123,7 @@ reviewer patch; apply on top of previous
 archive/issue_comments_076856.json:
 ```json
 {
-    "body": "Attachment\n\nWith this patch, plus the ones at #8457 and #8492, the reference manual builds with no warnings.",
+    "body": "Attachment [trac_8511-reviewer.patch](tarball://root/attachments/some-uuid/ticket8511/trac_8511-reviewer.patch) by jhpalmieri created at 2010-03-13 00:22:50\n\nWith this patch, plus the ones at #8457 and #8492, the reference manual builds with no warnings.",
     "created_at": "2010-03-13T00:22:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8511",
     "type": "issue_comment",
@@ -132,7 +132,7 @@ archive/issue_comments_076856.json:
 }
 ```
 
-Attachment
+Attachment [trac_8511-reviewer.patch](tarball://root/attachments/some-uuid/ticket8511/trac_8511-reviewer.patch) by jhpalmieri created at 2010-03-13 00:22:50
 
 With this patch, plus the ones at #8457 and #8492, the reference manual builds with no warnings.
 

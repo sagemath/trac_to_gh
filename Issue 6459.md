@@ -85,7 +85,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6459
 archive/issue_comments_052197.json:
 ```json
 {
-    "body": "Attachment\n\nTested in Cr3, FF3.5, and O9 on Linux and Cr2, FF3.5, IE8, O9, and S4 on XP.",
+    "body": "Attachment [trac_6459_tinymce_line_break.patch](tarball://root/attachments/some-uuid/ticket6459/trac_6459_tinymce_line_break.patch) by mpatel created at 2009-07-11 11:33:51\n\nTested in Cr3, FF3.5, and O9 on Linux and Cr2, FF3.5, IE8, O9, and S4 on XP.",
     "created_at": "2009-07-11T11:33:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6459",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_052197.json:
 }
 ```
 
-Attachment
+Attachment [trac_6459_tinymce_line_break.patch](tarball://root/attachments/some-uuid/ticket6459/trac_6459_tinymce_line_break.patch) by mpatel created at 2009-07-11 11:33:51
 
 Tested in Cr3, FF3.5, and O9 on Linux and Cr2, FF3.5, IE8, O9, and S4 on XP.
 
@@ -184,7 +184,7 @@ Tweaked and rebased against #6568. Apply only this patch.
 archive/issue_comments_052202.json:
 ```json
 {
-    "body": "Attachment\n\nVersion 2:\n* Applies to #6568.\n* Fixes a problem with inserting a blank line when text is selected.  I noticed this problem in Safari on Windows XP.  This also fixes a related problem in Opera on Windows XP and Linux.\n* Adds a few comments and dedents/indents.\n\nI think this ticket should be reviewed again (sorry!), since I don't have access to a Mac machine.",
+    "body": "Attachment [trac_6459_tinymce_line_break_v2.patch](tarball://root/attachments/some-uuid/ticket6459/trac_6459_tinymce_line_break_v2.patch) by mpatel created at 2009-08-30 17:46:40\n\nVersion 2:\n* Applies to #6568.\n* Fixes a problem with inserting a blank line when text is selected.  I noticed this problem in Safari on Windows XP.  This also fixes a related problem in Opera on Windows XP and Linux.\n* Adds a few comments and dedents/indents.\n\nI think this ticket should be reviewed again (sorry!), since I don't have access to a Mac machine.",
     "created_at": "2009-08-30T17:46:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6459",
     "type": "issue_comment",
@@ -193,7 +193,7 @@ archive/issue_comments_052202.json:
 }
 ```
 
-Attachment
+Attachment [trac_6459_tinymce_line_break_v2.patch](tarball://root/attachments/some-uuid/ticket6459/trac_6459_tinymce_line_break_v2.patch) by mpatel created at 2009-08-30 17:46:40
 
 Version 2:
 * Applies to #6568.
@@ -245,7 +245,7 @@ Initialization code moved to tinymce.js.  Rebased for #7196.  Apply only this pa
 archive/issue_comments_052205.json:
 ```json
 {
-    "body": "Attachment\n\nRemark:  The TinyMCE developers are [emphatic](http://wiki.moxiecode.com/index.php/TinyMCE:FAQ#TinyMCE_produce_BR_elements_on_enter.2Freturn_instead_of_P_elements.3F) about using P elements instead of BR elements.  If the `control-shift-enter` feature is broken, breaks, or otherwise causes problems, we might instead follow their CSS suggestion, `p {margin:0; padding: 0;}`, inside rich text cells.",
+    "body": "Attachment [trac_6459_tinymce_line_break_v3.patch](tarball://root/attachments/some-uuid/ticket6459/trac_6459_tinymce_line_break_v3.patch) by mpatel created at 2009-10-15 20:23:53\n\nRemark:  The TinyMCE developers are [emphatic](http://wiki.moxiecode.com/index.php/TinyMCE:FAQ#TinyMCE_produce_BR_elements_on_enter.2Freturn_instead_of_P_elements.3F) about using P elements instead of BR elements.  If the `control-shift-enter` feature is broken, breaks, or otherwise causes problems, we might instead follow their CSS suggestion, `p {margin:0; padding: 0;}`, inside rich text cells.",
     "created_at": "2009-10-15T20:23:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6459",
     "type": "issue_comment",
@@ -254,7 +254,7 @@ archive/issue_comments_052205.json:
 }
 ```
 
-Attachment
+Attachment [trac_6459_tinymce_line_break_v3.patch](tarball://root/attachments/some-uuid/ticket6459/trac_6459_tinymce_line_break_v3.patch) by mpatel created at 2009-10-15 20:23:53
 
 Remark:  The TinyMCE developers are [emphatic](http://wiki.moxiecode.com/index.php/TinyMCE:FAQ#TinyMCE_produce_BR_elements_on_enter.2Freturn_instead_of_P_elements.3F) about using P elements instead of BR elements.  If the `control-shift-enter` feature is broken, breaks, or otherwise causes problems, we might instead follow their CSS suggestion, `p {margin:0; padding: 0;}`, inside rich text cells.
 

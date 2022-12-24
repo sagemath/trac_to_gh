@@ -92,7 +92,7 @@ Changing assignee from was to mhansen.
 archive/issue_comments_011205.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1772.patch](tarball://root/attachments/some-uuid/ticket1772/1772.patch) by mhansen created at 2008-01-18 21:02:31",
     "created_at": "2008-01-18T21:02:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1772",
     "type": "issue_comment",
@@ -101,7 +101,7 @@ archive/issue_comments_011205.json:
 }
 ```
 
-Attachment
+Attachment [1772.patch](tarball://root/attachments/some-uuid/ticket1772/1772.patch) by mhansen created at 2008-01-18 21:02:31
 
 
 
@@ -130,7 +130,7 @@ I have not fully reviewed the patch yet, though I've looked it over by eye and i
 archive/issue_comments_011207.json:
 ```json
 {
-    "body": "Attachment\n\nFixes the one doctest failure in constant.py",
+    "body": "Attachment [1772-bug.patch](tarball://root/attachments/some-uuid/ticket1772/1772-bug.patch) by rlm created at 2008-01-20 00:37:31\n\nFixes the one doctest failure in constant.py",
     "created_at": "2008-01-20T00:37:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1772",
     "type": "issue_comment",
@@ -139,7 +139,7 @@ archive/issue_comments_011207.json:
 }
 ```
 
-Attachment
+Attachment [1772-bug.patch](tarball://root/attachments/some-uuid/ticket1772/1772-bug.patch) by rlm created at 2008-01-20 00:37:31
 
 Fixes the one doctest failure in constant.py
 

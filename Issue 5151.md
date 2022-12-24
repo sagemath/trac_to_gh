@@ -51,7 +51,7 @@ to be applied to 3.3.alpha3
 archive/issue_comments_039410.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-5151-decoder.patch](tarball://root/attachments/some-uuid/ticket5151/trac-5151-decoder.patch) by wdj created at 2009-02-01 21:37:47",
     "created_at": "2009-02-01T21:37:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5151",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_039410.json:
 }
 ```
 
-Attachment
+Attachment [trac-5151-decoder.patch](tarball://root/attachments/some-uuid/ticket5151/trac-5151-decoder.patch) by wdj created at 2009-02-01 21:37:47
 
 
 
@@ -122,7 +122,7 @@ to be applied to 3.3.alpha3. Ignore previous patch.
 archive/issue_comments_039413.json:
 ```json
 {
-    "body": "Attachment\n\nOkay, I redid the patch following these instructions.\n\nIt will now not pass sage -t because now it gets lots of print statements \"Warning: this should never happen\" (from gap.py I think), followed by the correct answer. So the gap interface seems to be printing this message but the code I wrote is returning the correct answer. (After building guava \"manually\", sage -t -long has the same problem.)",
+    "body": "Attachment [trac-5151-decoder2.patch](tarball://root/attachments/some-uuid/ticket5151/trac-5151-decoder2.patch) by wdj created at 2009-02-04 23:51:35\n\nOkay, I redid the patch following these instructions.\n\nIt will now not pass sage -t because now it gets lots of print statements \"Warning: this should never happen\" (from gap.py I think), followed by the correct answer. So the gap interface seems to be printing this message but the code I wrote is returning the correct answer. (After building guava \"manually\", sage -t -long has the same problem.)",
     "created_at": "2009-02-04T23:51:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5151",
     "type": "issue_comment",
@@ -131,7 +131,7 @@ archive/issue_comments_039413.json:
 }
 ```
 
-Attachment
+Attachment [trac-5151-decoder2.patch](tarball://root/attachments/some-uuid/ticket5151/trac-5151-decoder2.patch) by wdj created at 2009-02-04 23:51:35
 
 Okay, I redid the patch following these instructions.
 
@@ -162,7 +162,7 @@ Apply after other patch
 archive/issue_comments_039415.json:
 ```json
 {
-    "body": "Attachment\n\nI can't reproduce those errors, so positive review.",
+    "body": "Attachment [trac-5151-fix.patch](tarball://root/attachments/some-uuid/ticket5151/trac-5151-fix.patch) by rlm created at 2009-02-05 23:14:20\n\nI can't reproduce those errors, so positive review.",
     "created_at": "2009-02-05T23:14:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5151",
     "type": "issue_comment",
@@ -171,7 +171,7 @@ archive/issue_comments_039415.json:
 }
 ```
 
-Attachment
+Attachment [trac-5151-fix.patch](tarball://root/attachments/some-uuid/ticket5151/trac-5151-fix.patch) by rlm created at 2009-02-05 23:14:20
 
 I can't reproduce those errors, so positive review.
 

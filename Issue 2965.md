@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2965
 archive/issue_comments_020446.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [extcode-debian.patch](tarball://root/attachments/some-uuid/ticket2965/extcode-debian.patch) by tabbott created at 2008-04-20 04:07:25",
     "created_at": "2008-04-20T04:07:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2965",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_020446.json:
 }
 ```
 
-Attachment
+Attachment [extcode-debian.patch](tarball://root/attachments/some-uuid/ticket2965/extcode-debian.patch) by tabbott created at 2008-04-20 04:07:25
 
 
 

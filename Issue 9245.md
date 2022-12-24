@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9245
 archive/issue_comments_086967.json:
 ```json
 {
-    "body": "Attachment\n\nInitial patch",
+    "body": "Attachment [named_toric_varieties.py](tarball://root/attachments/some-uuid/ticket9245/named_toric_varieties.py) by vbraun created at 2010-06-15 15:22:55\n\nInitial patch",
     "created_at": "2010-06-15T15:22:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_086967.json:
 }
 ```
 
-Attachment
+Attachment [named_toric_varieties.py](tarball://root/attachments/some-uuid/ticket9245/named_toric_varieties.py) by vbraun created at 2010-06-15 15:22:55
 
 Initial patch
 
@@ -240,7 +240,7 @@ Now with commit message. What is the recommended way of extracting a patch from 
 archive/issue_comments_086976.json:
 ```json
 {
-    "body": "Attachment\n\nImproved patch",
+    "body": "Attachment [trac_9245_named_toric_varieties.py](tarball://root/attachments/some-uuid/ticket9245/trac_9245_named_toric_varieties.py) by vbraun created at 2010-06-25 15:58:20\n\nImproved patch",
     "created_at": "2010-06-25T15:58:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
@@ -249,7 +249,7 @@ archive/issue_comments_086976.json:
 }
 ```
 
-Attachment
+Attachment [trac_9245_named_toric_varieties.py](tarball://root/attachments/some-uuid/ticket9245/trac_9245_named_toric_varieties.py) by vbraun created at 2010-06-25 15:58:20
 
 Improved patch
 
@@ -459,7 +459,7 @@ Refreshed patch to work correctly with the final version of the `CPRFanoToricVar
 archive/issue_comments_086987.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated patch",
+    "body": "Attachment [trac_9245_named_toric_varieties.patch](tarball://root/attachments/some-uuid/ticket9245/trac_9245_named_toric_varieties.patch) by vbraun created at 2010-07-02 10:41:44\n\nUpdated patch",
     "created_at": "2010-07-02T10:41:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
@@ -468,7 +468,7 @@ archive/issue_comments_086987.json:
 }
 ```
 
-Attachment
+Attachment [trac_9245_named_toric_varieties.patch](tarball://root/attachments/some-uuid/ticket9245/trac_9245_named_toric_varieties.patch) by vbraun created at 2010-07-02 10:41:44
 
 Updated patch
 
@@ -636,7 +636,7 @@ Updated patch follows.
 archive/issue_comments_086993.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated patch",
+    "body": "Attachment [trac_9245_named_toric_varieties.2.patch](tarball://root/attachments/some-uuid/ticket9245/trac_9245_named_toric_varieties.2.patch) by vbraun created at 2010-07-02 21:56:18\n\nUpdated patch",
     "created_at": "2010-07-02T21:56:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
@@ -645,7 +645,7 @@ archive/issue_comments_086993.json:
 }
 ```
 
-Attachment
+Attachment [trac_9245_named_toric_varieties.2.patch](tarball://root/attachments/some-uuid/ticket9245/trac_9245_named_toric_varieties.2.patch) by vbraun created at 2010-07-02 21:56:18
 
 Updated patch
 
@@ -739,7 +739,7 @@ I settled on "INPUT: A toric variety" since I like articles... I also beautified
 archive/issue_comments_086997.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated patch",
+    "body": "Attachment [trac_9245_named_toric_varieties.3.patch](tarball://root/attachments/some-uuid/ticket9245/trac_9245_named_toric_varieties.3.patch) by vbraun created at 2010-07-03 12:22:54\n\nUpdated patch",
     "created_at": "2010-07-03T12:22:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
@@ -748,7 +748,7 @@ archive/issue_comments_086997.json:
 }
 ```
 
-Attachment
+Attachment [trac_9245_named_toric_varieties.3.patch](tarball://root/attachments/some-uuid/ticket9245/trac_9245_named_toric_varieties.3.patch) by vbraun created at 2010-07-03 12:22:54
 
 Updated patch
 
@@ -759,7 +759,7 @@ Updated patch
 archive/issue_comments_086998.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9245_toric_library_reviewer.patch](tarball://root/attachments/some-uuid/ticket9245/trac_9245_toric_library_reviewer.patch) by novoselt created at 2010-07-03 18:50:10",
     "created_at": "2010-07-03T18:50:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
@@ -768,7 +768,7 @@ archive/issue_comments_086998.json:
 }
 ```
 
-Attachment
+Attachment [trac_9245_toric_library_reviewer.patch](tarball://root/attachments/some-uuid/ticket9245/trac_9245_toric_library_reviewer.patch) by novoselt created at 2010-07-03 18:50:10
 
 
 

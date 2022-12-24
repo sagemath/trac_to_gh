@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1973
 archive/issue_comments_012770.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [conjugate-partition.patch](tarball://root/attachments/some-uuid/ticket1973/conjugate-partition.patch) by mabshoff created at 2008-01-29 16:21:35",
     "created_at": "2008-01-29T16:21:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1973",
     "type": "issue_comment",
@@ -43,7 +43,7 @@ archive/issue_comments_012770.json:
 }
 ```
 
-Attachment
+Attachment [conjugate-partition.patch](tarball://root/attachments/some-uuid/ticket1973/conjugate-partition.patch) by mabshoff created at 2008-01-29 16:21:35
 
 
 
@@ -175,7 +175,7 @@ So I'll post a minor patch to Mike's code.
 archive/issue_comments_012775.json:
 ```json
 {
-    "body": "Attachment\n\napply instead of first patch.",
+    "body": "Attachment [conjugate-partition.2.patch](tarball://root/attachments/some-uuid/ticket1973/conjugate-partition.2.patch) by jason created at 2008-01-29 22:00:45\n\napply instead of first patch.",
     "created_at": "2008-01-29T22:00:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1973",
     "type": "issue_comment",
@@ -184,7 +184,7 @@ archive/issue_comments_012775.json:
 }
 ```
 
-Attachment
+Attachment [conjugate-partition.2.patch](tarball://root/attachments/some-uuid/ticket1973/conjugate-partition.2.patch) by jason created at 2008-01-29 22:00:45
 
 apply instead of first patch.
 
@@ -213,7 +213,7 @@ apply instead of first two patches.
 archive/issue_comments_012777.json:
 ```json
 {
-    "body": "Attachment\n\nYet again, apply this instead of the previous patches.",
+    "body": "Attachment [conjugate-partition.3.patch](tarball://root/attachments/some-uuid/ticket1973/conjugate-partition.3.patch) by jason created at 2008-01-29 22:17:05\n\nYet again, apply this instead of the previous patches.",
     "created_at": "2008-01-29T22:17:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1973",
     "type": "issue_comment",
@@ -222,7 +222,7 @@ archive/issue_comments_012777.json:
 }
 ```
 
-Attachment
+Attachment [conjugate-partition.3.patch](tarball://root/attachments/some-uuid/ticket1973/conjugate-partition.3.patch) by jason created at 2008-01-29 22:17:05
 
 Yet again, apply this instead of the previous patches.
 
@@ -233,7 +233,7 @@ Yet again, apply this instead of the previous patches.
 archive/issue_comments_012778.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.",
+    "body": "Attachment [conjugate-partition.4.patch](tarball://root/attachments/some-uuid/ticket1973/conjugate-partition.4.patch) by mhansen created at 2008-01-29 22:18:28\n\nLooks good to me.",
     "created_at": "2008-01-29T22:18:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1973",
     "type": "issue_comment",
@@ -242,7 +242,7 @@ archive/issue_comments_012778.json:
 }
 ```
 
-Attachment
+Attachment [conjugate-partition.4.patch](tarball://root/attachments/some-uuid/ticket1973/conjugate-partition.4.patch) by mhansen created at 2008-01-29 22:18:28
 
 Looks good to me.
 
@@ -402,7 +402,7 @@ Mike, do you know what is going on?
 archive/issue_comments_012786.json:
 ```json
 {
-    "body": "Attachment\n\nI posted a new patch which should take care of this issue (although I never experienced the -ba issue on my machine).",
+    "body": "Attachment [conjugate-partition.5.patch](tarball://root/attachments/some-uuid/ticket1973/conjugate-partition.5.patch) by mhansen created at 2008-01-31 06:35:15\n\nI posted a new patch which should take care of this issue (although I never experienced the -ba issue on my machine).",
     "created_at": "2008-01-31T06:35:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1973",
     "type": "issue_comment",
@@ -411,7 +411,7 @@ archive/issue_comments_012786.json:
 }
 ```
 
-Attachment
+Attachment [conjugate-partition.5.patch](tarball://root/attachments/some-uuid/ticket1973/conjugate-partition.5.patch) by mhansen created at 2008-01-31 06:35:15
 
 I posted a new patch which should take care of this issue (although I never experienced the -ba issue on my machine).
 
@@ -422,7 +422,7 @@ I posted a new patch which should take care of this issue (although I never expe
 archive/issue_comments_012787.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1973.patch](tarball://root/attachments/some-uuid/ticket1973/1973.patch) by mhansen created at 2008-02-01 04:19:42",
     "created_at": "2008-02-01T04:19:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1973",
     "type": "issue_comment",
@@ -431,7 +431,7 @@ archive/issue_comments_012787.json:
 }
 ```
 
-Attachment
+Attachment [1973.patch](tarball://root/attachments/some-uuid/ticket1973/1973.patch) by mhansen created at 2008-02-01 04:19:42
 
 
 

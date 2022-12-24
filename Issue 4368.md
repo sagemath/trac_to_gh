@@ -153,7 +153,7 @@ Positive review, pending the (presumably just a typo) fix from mvngu above. BTW,
 archive/issue_comments_032101.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4368.patch](tarball://root/attachments/some-uuid/ticket4368/trac_4368.patch) by mhansen created at 2008-10-30 22:32:43",
     "created_at": "2008-10-30T22:32:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4368",
     "type": "issue_comment",
@@ -162,7 +162,7 @@ archive/issue_comments_032101.json:
 }
 ```
 
-Attachment
+Attachment [trac_4368.patch](tarball://root/attachments/some-uuid/ticket4368/trac_4368.patch) by mhansen created at 2008-10-30 22:32:43
 
 
 

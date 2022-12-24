@@ -36,7 +36,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8165
 archive/issue_comments_071841.json:
 ```json
 {
-    "body": "Attachment\n\nDon't use `rstrip` to chop `'.sws'`.  sagenb repo.",
+    "body": "Attachment [trac_8165-download_ws_name.patch](tarball://root/attachments/some-uuid/ticket8165/trac_8165-download_ws_name.patch) by mpatel created at 2010-02-03 06:17:36\n\nDon't use `rstrip` to chop `'.sws'`.  sagenb repo.",
     "created_at": "2010-02-03T06:17:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8165",
     "type": "issue_comment",
@@ -45,7 +45,7 @@ archive/issue_comments_071841.json:
 }
 ```
 
-Attachment
+Attachment [trac_8165-download_ws_name.patch](tarball://root/attachments/some-uuid/ticket8165/trac_8165-download_ws_name.patch) by mpatel created at 2010-02-03 06:17:36
 
 Don't use `rstrip` to chop `'.sws'`.  sagenb repo.
 

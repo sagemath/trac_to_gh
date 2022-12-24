@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4570
 archive/issue_comments_034236.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [numpy-proper-include.patch](tarball://root/attachments/some-uuid/ticket4570/numpy-proper-include.patch) by jason created at 2008-11-20 21:55:17",
     "created_at": "2008-11-20T21:55:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4570",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_034236.json:
 }
 ```
 
-Attachment
+Attachment [numpy-proper-include.patch](tarball://root/attachments/some-uuid/ticket4570/numpy-proper-include.patch) by jason created at 2008-11-20 21:55:17
 
 
 

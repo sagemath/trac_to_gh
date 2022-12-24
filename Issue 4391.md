@@ -105,7 +105,7 @@ Michael
 archive/issue_comments_032318.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4391.patch](tarball://root/attachments/some-uuid/ticket4391/trac_4391.patch) by mabshoff created at 2008-10-30 07:42:24",
     "created_at": "2008-10-30T07:42:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4391",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_032318.json:
 }
 ```
 
-Attachment
+Attachment [trac_4391.patch](tarball://root/attachments/some-uuid/ticket4391/trac_4391.patch) by mabshoff created at 2008-10-30 07:42:24
 
 
 

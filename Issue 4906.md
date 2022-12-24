@@ -293,7 +293,7 @@ Ok, so if you want to do some of those tonigh, by memory, I would tell you to lo
 archive/issue_comments_037233.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage.combinat-final.patch](tarball://root/attachments/some-uuid/ticket4906/sage.combinat-final.patch) by mhansen created at 2009-02-21 19:16:11",
     "created_at": "2009-02-21T19:16:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4906",
     "type": "issue_comment",
@@ -302,7 +302,7 @@ archive/issue_comments_037233.json:
 }
 ```
 
-Attachment
+Attachment [sage.combinat-final.patch](tarball://root/attachments/some-uuid/ticket4906/sage.combinat-final.patch) by mhansen created at 2009-02-21 19:16:11
 
 
 
@@ -311,7 +311,7 @@ Attachment
 archive/issue_comments_037234.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac4906-tiny-fix.patch](tarball://root/attachments/some-uuid/ticket4906/trac4906-tiny-fix.patch) by cwitty created at 2009-02-22 03:38:06",
     "created_at": "2009-02-22T03:38:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4906",
     "type": "issue_comment",
@@ -320,7 +320,7 @@ archive/issue_comments_037234.json:
 }
 ```
 
-Attachment
+Attachment [trac4906-tiny-fix.patch](tarball://root/attachments/some-uuid/ticket4906/trac4906-tiny-fix.patch) by cwitty created at 2009-02-22 03:38:06
 
 
 
@@ -662,7 +662,7 @@ Comments on the patch by Nicolas
 archive/issue_comments_037240.json:
 ```json
 {
-    "body": "Attachment\n\nNew corrections concerning set_partition.py and set_partition_ordered.py:\n\n## File set_partition.py\n\n* function less: missing <\n\n```\n-    Returns True if s < t otherwise it returns False.\n+    Returns True if s t otherwise it returns False.\n```\n \n\n == File ordered_set_partition.py ==\n\n* main doc: missing brackets (twice):\n\n```\n-EXAMPLES:\n-  There are 13 ordered set partitions of {1,2,3}.\n+EXAMPLES: There are 13 ordered set partitions of 1,2,3.\n \n-  There are 12 ordered set partitions of {1,2,3,4} whose underlying\n+There are 12 ordered set partitions of 1,2,3,4 whose underlying\n```\n",
+    "body": "Attachment [comments](tarball://root/attachments/some-uuid/ticket4906/comments) by hivert created at 2009-02-24 09:38:57\n\nNew corrections concerning set_partition.py and set_partition_ordered.py:\n\n## File set_partition.py\n\n* function less: missing <\n\n```\n-    Returns True if s < t otherwise it returns False.\n+    Returns True if s t otherwise it returns False.\n```\n \n\n == File ordered_set_partition.py ==\n\n* main doc: missing brackets (twice):\n\n```\n-EXAMPLES:\n-  There are 13 ordered set partitions of {1,2,3}.\n+EXAMPLES: There are 13 ordered set partitions of 1,2,3.\n \n-  There are 12 ordered set partitions of {1,2,3,4} whose underlying\n+There are 12 ordered set partitions of 1,2,3,4 whose underlying\n```\n",
     "created_at": "2009-02-24T09:38:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4906",
     "type": "issue_comment",
@@ -671,7 +671,7 @@ archive/issue_comments_037240.json:
 }
 ```
 
-Attachment
+Attachment [comments](tarball://root/attachments/some-uuid/ticket4906/comments) by hivert created at 2009-02-24 09:38:57
 
 New corrections concerning set_partition.py and set_partition_ordered.py:
 
@@ -912,7 +912,7 @@ Michael
 archive/issue_comments_037244.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [combinat-fixes.patch](tarball://root/attachments/some-uuid/ticket4906/combinat-fixes.patch) by mhansen created at 2009-02-24 16:41:58",
     "created_at": "2009-02-24T16:41:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4906",
     "type": "issue_comment",
@@ -921,7 +921,7 @@ archive/issue_comments_037244.json:
 }
 ```
 
-Attachment
+Attachment [combinat-fixes.patch](tarball://root/attachments/some-uuid/ticket4906/combinat-fixes.patch) by mhansen created at 2009-02-24 16:41:58
 
 
 

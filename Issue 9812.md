@@ -125,7 +125,7 @@ Oh, and I should point out that I expect this patch will work as advertised!  Co
 archive/issue_comments_096767.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-9813-parametric-aspect.patch](tarball://root/attachments/some-uuid/ticket9813/trac-9813-parametric-aspect.patch) by jason created at 2010-09-05 03:00:39",
     "created_at": "2010-09-05T03:00:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9812",
     "type": "issue_comment",
@@ -134,7 +134,7 @@ archive/issue_comments_096767.json:
 }
 ```
 
-Attachment
+Attachment [trac-9813-parametric-aspect.patch](tarball://root/attachments/some-uuid/ticket9813/trac-9813-parametric-aspect.patch) by jason created at 2010-09-05 03:00:39
 
 
 
@@ -161,7 +161,7 @@ tiny reviewer patch
 archive/issue_comments_096769.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good. I've added a little reviewer patch that adds in hyperlinks for the polar_plot docstring.",
+    "body": "Attachment [trac_9813_reviewer.patch](tarball://root/attachments/some-uuid/ticket9813/trac_9813_reviewer.patch) by ddrake created at 2010-09-06 04:24:12\n\nLooks good. I've added a little reviewer patch that adds in hyperlinks for the polar_plot docstring.",
     "created_at": "2010-09-06T04:24:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9812",
     "type": "issue_comment",
@@ -170,7 +170,7 @@ archive/issue_comments_096769.json:
 }
 ```
 
-Attachment
+Attachment [trac_9813_reviewer.patch](tarball://root/attachments/some-uuid/ticket9813/trac_9813_reviewer.patch) by ddrake created at 2010-09-06 04:24:12
 
 Looks good. I've added a little reviewer patch that adds in hyperlinks for the polar_plot docstring.
 

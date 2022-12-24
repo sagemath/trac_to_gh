@@ -138,7 +138,7 @@ This will be very helpful, though, when complete, so thanks for the work!
 archive/issue_comments_014369.json:
 ```json
 {
-    "body": "Attachment\n\nrebased for sage-3.3.alpha1",
+    "body": "Attachment [trac_2189.patch](tarball://root/attachments/some-uuid/ticket2189/trac_2189.patch) by whuss created at 2009-01-23 14:28:24\n\nrebased for sage-3.3.alpha1",
     "created_at": "2009-01-23T14:28:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2189",
     "type": "issue_comment",
@@ -147,7 +147,7 @@ archive/issue_comments_014369.json:
 }
 ```
 
-Attachment
+Attachment [trac_2189.patch](tarball://root/attachments/some-uuid/ticket2189/trac_2189.patch) by whuss created at 2009-01-23 14:28:24
 
 rebased for sage-3.3.alpha1
 

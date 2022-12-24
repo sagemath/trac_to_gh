@@ -71,7 +71,7 @@ bugs in initialization and update of initial state are fixed
 archive/issue_comments_044320.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [stream_cipher.py](tarball://root/attachments/some-uuid/ticket5665/stream_cipher.py) by mabshoff created at 2009-04-23 08:06:02",
     "created_at": "2009-04-23T08:06:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5665",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_044320.json:
 }
 ```
 
-Attachment
+Attachment [stream_cipher.py](tarball://root/attachments/some-uuid/ticket5665/stream_cipher.py) by mabshoff created at 2009-04-23 08:06:02
 
 
 
@@ -307,7 +307,7 @@ Michael
 archive/issue_comments_044330.json:
 ```json
 {
-    "body": "Attachment\n\nbased on Sage 4.1.alpha1",
+    "body": "Attachment [trac_5665.patch](tarball://root/attachments/some-uuid/ticket5665/trac_5665.patch) by mvngu created at 2009-06-26 04:35:29\n\nbased on Sage 4.1.alpha1",
     "created_at": "2009-06-26T04:35:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5665",
     "type": "issue_comment",
@@ -316,7 +316,7 @@ archive/issue_comments_044330.json:
 }
 ```
 
-Attachment
+Attachment [trac_5665.patch](tarball://root/attachments/some-uuid/ticket5665/trac_5665.patch) by mvngu created at 2009-06-26 04:35:29
 
 based on Sage 4.1.alpha1
 

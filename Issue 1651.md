@@ -92,7 +92,7 @@ patch for bug fix of decode in linear_code.py
 archive/issue_comments_010506.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [linear_code20080102.hg](tarball://root/attachments/some-uuid/ticket1651/linear_code20080102.hg) by mhansen created at 2008-01-13 13:44:40",
     "created_at": "2008-01-13T13:44:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1651",
     "type": "issue_comment",
@@ -101,7 +101,7 @@ archive/issue_comments_010506.json:
 }
 ```
 
-Attachment
+Attachment [linear_code20080102.hg](tarball://root/attachments/some-uuid/ticket1651/linear_code20080102.hg) by mhansen created at 2008-01-13 13:44:40
 
 
 
@@ -110,7 +110,7 @@ Attachment
 archive/issue_comments_010507.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1651-doctest.patch](tarball://root/attachments/some-uuid/ticket1651/1651-doctest.patch) by mhansen created at 2008-01-15 06:41:55",
     "created_at": "2008-01-15T06:41:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1651",
     "type": "issue_comment",
@@ -119,7 +119,7 @@ archive/issue_comments_010507.json:
 }
 ```
 
-Attachment
+Attachment [1651-doctest.patch](tarball://root/attachments/some-uuid/ticket1651/1651-doctest.patch) by mhansen created at 2008-01-15 06:41:55
 
 
 
@@ -146,7 +146,7 @@ Seems reasonable, I say apply.  The formatting on the 1651-doctest patch is not 
 archive/issue_comments_010509.json:
 ```json
 {
-    "body": "Attachment\n\nI added an attachment which includes (1) my fix of the H Schilly bug, (2) M Hansen's docstring addition (reformatted, as the referee suggested), (3) an additional doctest (as suggested by the referee).",
+    "body": "Attachment [linear_code20080127.hg](tarball://root/attachments/some-uuid/ticket1651/linear_code20080127.hg) by wdj created at 2008-01-27 17:07:45\n\nI added an attachment which includes (1) my fix of the H Schilly bug, (2) M Hansen's docstring addition (reformatted, as the referee suggested), (3) an additional doctest (as suggested by the referee).",
     "created_at": "2008-01-27T17:07:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1651",
     "type": "issue_comment",
@@ -155,7 +155,7 @@ archive/issue_comments_010509.json:
 }
 ```
 
-Attachment
+Attachment [linear_code20080127.hg](tarball://root/attachments/some-uuid/ticket1651/linear_code20080127.hg) by wdj created at 2008-01-27 17:07:45
 
 I added an attachment which includes (1) my fix of the H Schilly bug, (2) M Hansen's docstring addition (reformatted, as the referee suggested), (3) an additional doctest (as suggested by the referee).
 

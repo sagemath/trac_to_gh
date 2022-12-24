@@ -53,7 +53,7 @@ Changing status from new to needs_work.
 archive/issue_comments_091113.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch was done in a rush, so there may be bugs in it.",
+    "body": "Attachment [trac-9491-contour-alpha.patch](tarball://root/attachments/some-uuid/ticket9491/trac-9491-contour-alpha.patch) by jason created at 2010-07-13 14:46:35\n\nThis patch was done in a rush, so there may be bugs in it.",
     "created_at": "2010-07-13T14:46:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9491",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_091113.json:
 }
 ```
 
-Attachment
+Attachment [trac-9491-contour-alpha.patch](tarball://root/attachments/some-uuid/ticket9491/trac-9491-contour-alpha.patch) by jason created at 2010-07-13 14:46:35
 
 This patch was done in a rush, so there may be bugs in it.
 

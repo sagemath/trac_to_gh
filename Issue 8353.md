@@ -188,7 +188,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_074611.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8353_square_grid_word_paths_height_width-abm.patch](tarball://root/attachments/some-uuid/ticket8353/trac_8353_square_grid_word_paths_height_width-abm.patch) by abmasse created at 2010-03-01 15:37:23",
     "created_at": "2010-03-01T15:37:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8353",
     "type": "issue_comment",
@@ -197,7 +197,7 @@ archive/issue_comments_074611.json:
 }
 ```
 
-Attachment
+Attachment [trac_8353_square_grid_word_paths_height_width-abm.patch](tarball://root/attachments/some-uuid/ticket8353/trac_8353_square_grid_word_paths_height_width-abm.patch) by abmasse created at 2010-03-01 15:37:23
 
 
 
@@ -206,7 +206,7 @@ Attachment
 archive/issue_comments_074612.json:
 ```json
 {
-    "body": "Attachment\n\nApplies over the precedent patch",
+    "body": "Attachment [trac_8353_review-sl.patch](tarball://root/attachments/some-uuid/ticket8353/trac_8353_review-sl.patch) by slabbe created at 2010-03-03 17:45:05\n\nApplies over the precedent patch",
     "created_at": "2010-03-03T17:45:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8353",
     "type": "issue_comment",
@@ -215,7 +215,7 @@ archive/issue_comments_074612.json:
 }
 ```
 
-Attachment
+Attachment [trac_8353_review-sl.patch](tarball://root/attachments/some-uuid/ticket8353/trac_8353_review-sl.patch) by slabbe created at 2010-03-03 17:45:05
 
 Applies over the precedent patch
 

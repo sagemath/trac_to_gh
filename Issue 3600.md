@@ -50,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3600
 archive/issue_comments_025435.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [dsage_process_pool.patch](tarball://root/attachments/some-uuid/ticket3600/dsage_process_pool.patch) by yi created at 2008-07-08 01:29:25",
     "created_at": "2008-07-08T01:29:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3600",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_025435.json:
 }
 ```
 
-Attachment
+Attachment [dsage_process_pool.patch](tarball://root/attachments/some-uuid/ticket3600/dsage_process_pool.patch) by yi created at 2008-07-08 01:29:25
 
 
 
@@ -86,7 +86,7 @@ all the patches split up and whitespace only patches are in the whitespace sub d
 archive/issue_comments_025437.json:
 ```json
 {
-    "body": "Attachment\n\nall the patches split up and whitespace only patches are in the whitespace sub directory",
+    "body": "Attachment [dsage_process_pool_patches.tar.2.gz](tarball://root/attachments/some-uuid/ticket3600/dsage_process_pool_patches.tar.2.gz) by yi created at 2008-07-08 06:23:34\n\nall the patches split up and whitespace only patches are in the whitespace sub directory",
     "created_at": "2008-07-08T06:23:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3600",
     "type": "issue_comment",
@@ -95,7 +95,7 @@ archive/issue_comments_025437.json:
 }
 ```
 
-Attachment
+Attachment [dsage_process_pool_patches.tar.2.gz](tarball://root/attachments/some-uuid/ticket3600/dsage_process_pool_patches.tar.2.gz) by yi created at 2008-07-08 06:23:34
 
 all the patches split up and whitespace only patches are in the whitespace sub directory
 
@@ -422,7 +422,7 @@ New version which fixes the reactor left in an unclean state errors.
 archive/issue_comments_025445.json:
 ```json
 {
-    "body": "Attachment\n\nbundle to be applied against 3.0.4",
+    "body": "Attachment [ppool_unit_tests.patch](tarball://root/attachments/some-uuid/ticket3600/ppool_unit_tests.patch) by yi created at 2008-07-13 18:40:42\n\nbundle to be applied against 3.0.4",
     "created_at": "2008-07-13T18:40:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3600",
     "type": "issue_comment",
@@ -431,7 +431,7 @@ archive/issue_comments_025445.json:
 }
 ```
 
-Attachment
+Attachment [ppool_unit_tests.patch](tarball://root/attachments/some-uuid/ticket3600/ppool_unit_tests.patch) by yi created at 2008-07-13 18:40:42
 
 bundle to be applied against 3.0.4
 
@@ -442,7 +442,7 @@ bundle to be applied against 3.0.4
 archive/issue_comments_025446.json:
 ```json
 {
-    "body": "Attachment\n\nbundle to be applied against 3.0.4",
+    "body": "Attachment [dsage_ppool.2.hg](tarball://root/attachments/some-uuid/ticket3600/dsage_ppool.2.hg) by yi created at 2008-07-13 18:40:45\n\nbundle to be applied against 3.0.4",
     "created_at": "2008-07-13T18:40:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3600",
     "type": "issue_comment",
@@ -451,7 +451,7 @@ archive/issue_comments_025446.json:
 }
 ```
 
-Attachment
+Attachment [dsage_ppool.2.hg](tarball://root/attachments/some-uuid/ticket3600/dsage_ppool.2.hg) by yi created at 2008-07-13 18:40:45
 
 bundle to be applied against 3.0.4
 

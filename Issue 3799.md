@@ -51,7 +51,7 @@ this patch inspired a full graph database re-write.  Coming soon!
 archive/issue_comments_027010.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3799-databases.patch](tarball://root/attachments/some-uuid/ticket3799/3799-databases.patch) by ekirkman created at 2008-09-22 10:39:54",
     "created_at": "2008-09-22T10:39:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3799",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_027010.json:
 }
 ```
 
-Attachment
+Attachment [3799-databases.patch](tarball://root/attachments/some-uuid/ticket3799/3799-databases.patch) by ekirkman created at 2008-09-22 10:39:54
 
 
 
@@ -87,7 +87,7 @@ This patch should be stable for review, and it includes some definite improvemen
 archive/issue_comments_027012.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3799-doctest.patch](tarball://root/attachments/some-uuid/ticket3799/3799-doctest.patch) by ekirkman created at 2008-09-22 11:28:08",
     "created_at": "2008-09-22T11:28:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3799",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_027012.json:
 }
 ```
 
-Attachment
+Attachment [3799-doctest.patch](tarball://root/attachments/some-uuid/ticket3799/3799-doctest.patch) by ekirkman created at 2008-09-22 11:28:08
 
 
 
@@ -135,7 +135,7 @@ Why was the copyright statement removed from `graph_database.py`? Remember that 
 archive/issue_comments_027014.json:
 ```json
 {
-    "body": "Attachment\n\nAttached another patch to address the problems mentioned.",
+    "body": "Attachment [3799-coverage.patch](tarball://root/attachments/some-uuid/ticket3799/3799-coverage.patch) by ekirkman created at 2008-09-29 21:50:43\n\nAttached another patch to address the problems mentioned.",
     "created_at": "2008-09-29T21:50:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3799",
     "type": "issue_comment",
@@ -144,7 +144,7 @@ archive/issue_comments_027014.json:
 }
 ```
 
-Attachment
+Attachment [3799-coverage.patch](tarball://root/attachments/some-uuid/ticket3799/3799-coverage.patch) by ekirkman created at 2008-09-29 21:50:43
 
 Attached another patch to address the problems mentioned.
 
@@ -155,7 +155,7 @@ Attached another patch to address the problems mentioned.
 archive/issue_comments_027015.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3799-oops.patch](tarball://root/attachments/some-uuid/ticket3799/3799-oops.patch) by ekirkman created at 2008-09-29 22:05:14",
     "created_at": "2008-09-29T22:05:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3799",
     "type": "issue_comment",
@@ -164,7 +164,7 @@ archive/issue_comments_027015.json:
 }
 ```
 
-Attachment
+Attachment [3799-oops.patch](tarball://root/attachments/some-uuid/ticket3799/3799-oops.patch) by ekirkman created at 2008-09-29 22:05:14
 
 
 

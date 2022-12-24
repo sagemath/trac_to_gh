@@ -243,7 +243,7 @@ array([ 0.5,  0.6,  0.7,  0.8,  0.9,  1. ,  1.1])
 archive/issue_comments_035913.json:
 ```json
 {
-    "body": "Attachment\n\nBetter documentation, and hopefully a bit easier to follow.",
+    "body": "Attachment [4746-srange.patch](tarball://root/attachments/some-uuid/ticket4746/4746-srange.patch) by robertwb created at 2009-01-23 10:43:39\n\nBetter documentation, and hopefully a bit easier to follow.",
     "created_at": "2009-01-23T10:43:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4746",
     "type": "issue_comment",
@@ -252,7 +252,7 @@ archive/issue_comments_035913.json:
 }
 ```
 
-Attachment
+Attachment [4746-srange.patch](tarball://root/attachments/some-uuid/ticket4746/4746-srange.patch) by robertwb created at 2009-01-23 10:43:39
 
 Better documentation, and hopefully a bit easier to follow.
 
@@ -263,7 +263,7 @@ Better documentation, and hopefully a bit easier to follow.
 archive/issue_comments_035914.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4746-srange-rebased.patch](tarball://root/attachments/some-uuid/ticket4746/4746-srange-rebased.patch) by cwitty created at 2009-02-20 03:15:28",
     "created_at": "2009-02-20T03:15:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4746",
     "type": "issue_comment",
@@ -272,7 +272,7 @@ archive/issue_comments_035914.json:
 }
 ```
 
-Attachment
+Attachment [4746-srange-rebased.patch](tarball://root/attachments/some-uuid/ticket4746/4746-srange-rebased.patch) by cwitty created at 2009-02-20 03:15:28
 
 
 
@@ -281,7 +281,7 @@ Attachment
 archive/issue_comments_035915.json:
 ```json
 {
-    "body": "Attachment\n\nI had to rebase the patch (the added/removed lines are unchanged).  Also, three doctests failed in interact.py; William said in IRC to change the expected results:\n\n```\n Should I just change the expected result?\n<wstein> The Got definitely looks more sensible.\n So yes, do change the expected result.\n```\n\n\nCode looks good, all doctests pass.  Positive review.  Apply 4746-srange-rebased.patch and 4746-referee.patch.",
+    "body": "Attachment [4746-referee.patch](tarball://root/attachments/some-uuid/ticket4746/4746-referee.patch) by cwitty created at 2009-02-20 03:19:52\n\nI had to rebase the patch (the added/removed lines are unchanged).  Also, three doctests failed in interact.py; William said in IRC to change the expected results:\n\n```\n Should I just change the expected result?\n<wstein> The Got definitely looks more sensible.\n So yes, do change the expected result.\n```\n\n\nCode looks good, all doctests pass.  Positive review.  Apply 4746-srange-rebased.patch and 4746-referee.patch.",
     "created_at": "2009-02-20T03:19:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4746",
     "type": "issue_comment",
@@ -290,7 +290,7 @@ archive/issue_comments_035915.json:
 }
 ```
 
-Attachment
+Attachment [4746-referee.patch](tarball://root/attachments/some-uuid/ticket4746/4746-referee.patch) by cwitty created at 2009-02-20 03:19:52
 
 I had to rebase the patch (the added/removed lines are unchanged).  Also, three doctests failed in interact.py; William said in IRC to change the expected results:
 

@@ -50,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7120
 archive/issue_comments_059024.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7120-developer.patch](tarball://root/attachments/some-uuid/ticket7120/trac_7120-developer.patch) by jhpalmieri created at 2009-10-05 05:20:41",
     "created_at": "2009-10-05T05:20:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7120",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_059024.json:
 }
 ```
 
-Attachment
+Attachment [trac_7120-developer.patch](tarball://root/attachments/some-uuid/ticket7120/trac_7120-developer.patch) by jhpalmieri created at 2009-10-05 05:20:41
 
 
 
@@ -86,7 +86,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_059026.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch looks good to me and -docbuild works. I take it that is just an introduction and some information and not a conversion. I like the style though. Is the intent to slowly convert or to have both styles? ~Adam",
+    "body": "Attachment [trac_7120-simplicial.patch](tarball://root/attachments/some-uuid/ticket7120/trac_7120-simplicial.patch) by awebb created at 2009-10-10 10:44:14\n\nThe patch looks good to me and -docbuild works. I take it that is just an introduction and some information and not a conversion. I like the style though. Is the intent to slowly convert or to have both styles? ~Adam",
     "created_at": "2009-10-10T10:44:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7120",
     "type": "issue_comment",
@@ -95,7 +95,7 @@ archive/issue_comments_059026.json:
 }
 ```
 
-Attachment
+Attachment [trac_7120-simplicial.patch](tarball://root/attachments/some-uuid/ticket7120/trac_7120-simplicial.patch) by awebb created at 2009-10-10 10:44:14
 
 The patch looks good to me and -docbuild works. I take it that is just an introduction and some information and not a conversion. I like the style though. Is the intent to slowly convert or to have both styles? ~Adam
 

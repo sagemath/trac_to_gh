@@ -178,7 +178,7 @@ This patch should be applied after #644.
 archive/issue_comments_003344.json:
 ```json
 {
-    "body": "Attachment\n\nMerged in 2.8.15.alpha1.",
+    "body": "Attachment [644.patch](tarball://root/attachments/some-uuid/ticket644/644.patch) by mabshoff created at 2007-12-01 16:16:45\n\nMerged in 2.8.15.alpha1.",
     "created_at": "2007-12-01T16:16:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/644",
     "type": "issue_comment",
@@ -187,7 +187,7 @@ archive/issue_comments_003344.json:
 }
 ```
 
-Attachment
+Attachment [644.patch](tarball://root/attachments/some-uuid/ticket644/644.patch) by mabshoff created at 2007-12-01 16:16:45
 
 Merged in 2.8.15.alpha1.
 

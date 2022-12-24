@@ -140,7 +140,7 @@ Make the methods of BooleanPolynomial in __getattr__ directly available.
 archive/issue_comments_009840.json:
 ```json
 {
-    "body": "Attachment\n\nFollowing Martin's comments on the slowdown caused by using `__getattr__` in `BooleanPolynomial`, attached patch with file name `polybori_booleanpolynomial_getattr.patch` makes the methods directly available.\n\nSome timings (using random polynomials in each case might not be a good idea, but it still demonstrates the point):\n\nWithout the patch:\n\n\n```\nsage: P = BooleanPolynomialRing(100,'x')\nsage: from polybori.randompoly import gen_random_poly\nsage: p = gen_random_poly(int(100))\nsage: %timeit s = p.set()\n100000 loops, best of 3: 2.85 \u00b5s per loop\nsage: %timeit d = p.deg()\n100000 loops, best of 3: 2.26 \u00b5s per loop\nsage: %timeit m = p.lead()\n100000 loops, best of 3: 6.7 \u00b5s per loop\nsage: %timeit n = p.navigation()\n100000 loops, best of 3: 2.82 \u00b5s per loop\nsage: %timeit c = p.constant()\n100000 loops, best of 3: 2.02 \u00b5s per loop\n```\n\n\nWith the patch:\n\n\n```\nsage: %timeit s = p.set()\n1000000 loops, best of 3: 540 ns per loop\nsage: %timeit d = p.deg()\n1000000 loops, best of 3: 382 ns per loop\nsage: %timeit m = p.lead()\n100000 loops, best of 3: 3.76 \u00b5s per loop\nsage: %timeit n = p.navigation()\n1000000 loops, best of 3: 453 ns per loop\nsage: %timeit c = p.constant()\n1000000 loops, best of 3: 305 ns per loop\n```\n",
+    "body": "Attachment [polybori_booleanpolynomial_getattr.patch](tarball://root/attachments/some-uuid/ticket1541/polybori_booleanpolynomial_getattr.patch) by burcin created at 2007-12-27 13:52:29\n\nFollowing Martin's comments on the slowdown caused by using `__getattr__` in `BooleanPolynomial`, attached patch with file name `polybori_booleanpolynomial_getattr.patch` makes the methods directly available.\n\nSome timings (using random polynomials in each case might not be a good idea, but it still demonstrates the point):\n\nWithout the patch:\n\n\n```\nsage: P = BooleanPolynomialRing(100,'x')\nsage: from polybori.randompoly import gen_random_poly\nsage: p = gen_random_poly(int(100))\nsage: %timeit s = p.set()\n100000 loops, best of 3: 2.85 \u00b5s per loop\nsage: %timeit d = p.deg()\n100000 loops, best of 3: 2.26 \u00b5s per loop\nsage: %timeit m = p.lead()\n100000 loops, best of 3: 6.7 \u00b5s per loop\nsage: %timeit n = p.navigation()\n100000 loops, best of 3: 2.82 \u00b5s per loop\nsage: %timeit c = p.constant()\n100000 loops, best of 3: 2.02 \u00b5s per loop\n```\n\n\nWith the patch:\n\n\n```\nsage: %timeit s = p.set()\n1000000 loops, best of 3: 540 ns per loop\nsage: %timeit d = p.deg()\n1000000 loops, best of 3: 382 ns per loop\nsage: %timeit m = p.lead()\n100000 loops, best of 3: 3.76 \u00b5s per loop\nsage: %timeit n = p.navigation()\n1000000 loops, best of 3: 453 ns per loop\nsage: %timeit c = p.constant()\n1000000 loops, best of 3: 305 ns per loop\n```\n",
     "created_at": "2007-12-27T13:52:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1541",
     "type": "issue_comment",
@@ -149,7 +149,7 @@ archive/issue_comments_009840.json:
 }
 ```
 
-Attachment
+Attachment [polybori_booleanpolynomial_getattr.patch](tarball://root/attachments/some-uuid/ticket1541/polybori_booleanpolynomial_getattr.patch) by burcin created at 2007-12-27 13:52:29
 
 Following Martin's comments on the slowdown caused by using `__getattr__` in `BooleanPolynomial`, attached patch with file name `polybori_booleanpolynomial_getattr.patch` makes the methods directly available.
 

@@ -73,7 +73,7 @@ which gives a better algorithm for computing group orders
 archive/issue_comments_001316.json:
 ```json
 {
-    "body": "Attachment\n\npatch applies to 2.10.3.rc0 after 8682.patch in #2356",
+    "body": "Attachment [8758.patch](tarball://root/attachments/some-uuid/ticket277/8758.patch) by cremona created at 2008-03-02 22:31:12\n\npatch applies to 2.10.3.rc0 after 8682.patch in #2356",
     "created_at": "2008-03-02T22:31:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/277",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_001316.json:
 }
 ```
 
-Attachment
+Attachment [8758.patch](tarball://root/attachments/some-uuid/ticket277/8758.patch) by cremona created at 2008-03-02 22:31:12
 
 patch applies to 2.10.3.rc0 after 8682.patch in #2356
 
@@ -187,7 +187,7 @@ apply after 8758.patch
 archive/issue_comments_001321.json:
 ```json
 {
-    "body": "Attachment\n\nI liked the suggestion of using operators: 8759.patch does that (needs to be applied after 8758.patch).  At the same time it adds some more doctests, and makes a couple of minor efficiency savings.\n\nIf there are going to be more generic functions like this (and I hope there are) we need a better place for them than rings/arith.py.  I see that in structure/element.pyx there are also some generic things, including generic powering.  Perhaps this function should be moved to a new .py file under structures?  Or at least renamed generic.py.",
+    "body": "Attachment [8759.patch](tarball://root/attachments/some-uuid/ticket277/8759.patch) by cremona created at 2008-03-04 09:26:20\n\nI liked the suggestion of using operators: 8759.patch does that (needs to be applied after 8758.patch).  At the same time it adds some more doctests, and makes a couple of minor efficiency savings.\n\nIf there are going to be more generic functions like this (and I hope there are) we need a better place for them than rings/arith.py.  I see that in structure/element.pyx there are also some generic things, including generic powering.  Perhaps this function should be moved to a new .py file under structures?  Or at least renamed generic.py.",
     "created_at": "2008-03-04T09:26:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/277",
     "type": "issue_comment",
@@ -196,7 +196,7 @@ archive/issue_comments_001321.json:
 }
 ```
 
-Attachment
+Attachment [8759.patch](tarball://root/attachments/some-uuid/ticket277/8759.patch) by cremona created at 2008-03-04 09:26:20
 
 I liked the suggestion of using operators: 8759.patch does that (needs to be applied after 8758.patch).  At the same time it adds some more doctests, and makes a couple of minor efficiency savings.
 

@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4313
 archive/issue_comments_031578.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-cremona-matrices.patch](tarball://root/attachments/some-uuid/ticket4313/sage-cremona-matrices.patch) by cremona created at 2008-10-17 17:12:10",
     "created_at": "2008-10-17T17:12:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4313",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_031578.json:
 }
 ```
 
-Attachment
+Attachment [sage-cremona-matrices.patch](tarball://root/attachments/some-uuid/ticket4313/sage-cremona-matrices.patch) by cremona created at 2008-10-17 17:12:10
 
 
 
@@ -77,7 +77,7 @@ Code looks good. Only thing needed are some doctests on `__getitem__` in `mat.py
 archive/issue_comments_031580.json:
 ```json
 {
-    "body": "Attachment\n\nReplace previous one with this",
+    "body": "Attachment [sage-cremona-matrices.2.patch](tarball://root/attachments/some-uuid/ticket4313/sage-cremona-matrices.2.patch) by cremona created at 2009-05-30 15:42:07\n\nReplace previous one with this",
     "created_at": "2009-05-30T15:42:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4313",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_031580.json:
 }
 ```
 
-Attachment
+Attachment [sage-cremona-matrices.2.patch](tarball://root/attachments/some-uuid/ticket4313/sage-cremona-matrices.2.patch) by cremona created at 2009-05-30 15:42:07
 
 Replace previous one with this
 

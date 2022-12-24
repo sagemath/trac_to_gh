@@ -122,7 +122,7 @@ I've been quite busy, but I'll send a new patch in the very next few days...
 archive/issue_comments_053065.json:
 ```json
 {
-    "body": "Attachment\n\nbased on 4.1.1",
+    "body": "Attachment [trac_6514_BooleanFunction.patch](tarball://root/attachments/some-uuid/ticket6514/trac_6514_BooleanFunction.patch) by ylchapuy created at 2009-08-28 13:54:48\n\nbased on 4.1.1",
     "created_at": "2009-08-28T13:54:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6514",
     "type": "issue_comment",
@@ -131,7 +131,7 @@ archive/issue_comments_053065.json:
 }
 ```
 
-Attachment
+Attachment [trac_6514_BooleanFunction.patch](tarball://root/attachments/some-uuid/ticket6514/trac_6514_BooleanFunction.patch) by ylchapuy created at 2009-08-28 13:54:48
 
 based on 4.1.1
 
@@ -214,7 +214,7 @@ Yann
 archive/issue_comments_053069.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6514_review.patch](tarball://root/attachments/some-uuid/ticket6514/trac_6514_review.patch) by ylchapuy created at 2009-09-01 19:15:58",
     "created_at": "2009-09-01T19:15:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6514",
     "type": "issue_comment",
@@ -223,7 +223,7 @@ archive/issue_comments_053069.json:
 }
 ```
 
-Attachment
+Attachment [trac_6514_review.patch](tarball://root/attachments/some-uuid/ticket6514/trac_6514_review.patch) by ylchapuy created at 2009-09-01 19:15:58
 
 
 
@@ -250,7 +250,7 @@ Great! Positive review.
 archive/issue_comments_053071.json:
 ```json
 {
-    "body": "Attachment\n\nfull log of doctest failures",
+    "body": "Attachment [doctest-6514.log](tarball://root/attachments/some-uuid/ticket6514/doctest-6514.log) by mvngu created at 2009-09-02 08:01:06\n\nfull log of doctest failures",
     "created_at": "2009-09-02T08:01:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6514",
     "type": "issue_comment",
@@ -259,7 +259,7 @@ archive/issue_comments_053071.json:
 }
 ```
 
-Attachment
+Attachment [doctest-6514.log](tarball://root/attachments/some-uuid/ticket6514/doctest-6514.log) by mvngu created at 2009-09-02 08:01:06
 
 full log of doctest failures
 

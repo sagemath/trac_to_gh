@@ -262,7 +262,7 @@ Looks good to me! Aside from this typo:
 archive/issue_comments_066521.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7740.patch](tarball://root/attachments/some-uuid/ticket7740/trac_7740.patch) by ncohen created at 2010-01-09 08:16:31",
     "created_at": "2010-01-09T08:16:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7740",
     "type": "issue_comment",
@@ -271,7 +271,7 @@ archive/issue_comments_066521.json:
 }
 ```
 
-Attachment
+Attachment [trac_7740.patch](tarball://root/attachments/some-uuid/ticket7740/trac_7740.patch) by ncohen created at 2010-01-09 08:16:31
 
 
 

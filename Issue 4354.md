@@ -92,7 +92,7 @@ Changing component from algebra to misc.
 archive/issue_comments_031972.json:
 ```json
 {
-    "body": "Attachment\n\nWith the above patch and replacement sage script the example given should work and print 'ok'.\n\nBe aware that if you copied the sage script somewhere (like /usr/local/bin) for convenience you need to modify that copy too.  The line near the end that reads \n\n```\n\"$SAGE_ROOT/local/bin/sage-sage\" $*\n```\n\nneeds to be replaced by\n\n```\n\"$SAGE_ROOT/local/bin/sage-sage\" \"$@\"\n```\n",
+    "body": "Attachment [trac_4354.patch](tarball://root/attachments/some-uuid/ticket4354/trac_4354.patch) by anakha created at 2008-10-24 01:01:34\n\nWith the above patch and replacement sage script the example given should work and print 'ok'.\n\nBe aware that if you copied the sage script somewhere (like /usr/local/bin) for convenience you need to modify that copy too.  The line near the end that reads \n\n```\n\"$SAGE_ROOT/local/bin/sage-sage\" $*\n```\n\nneeds to be replaced by\n\n```\n\"$SAGE_ROOT/local/bin/sage-sage\" \"$@\"\n```\n",
     "created_at": "2008-10-24T01:01:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4354",
     "type": "issue_comment",
@@ -101,7 +101,7 @@ archive/issue_comments_031972.json:
 }
 ```
 
-Attachment
+Attachment [trac_4354.patch](tarball://root/attachments/some-uuid/ticket4354/trac_4354.patch) by anakha created at 2008-10-24 01:01:34
 
 With the above patch and replacement sage script the example given should work and print 'ok'.
 
@@ -241,7 +241,7 @@ wait about 2 or 3 weeks.  If nobody does it before then, I'll do it.
 archive/issue_comments_031976.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage.2](tarball://root/attachments/some-uuid/ticket4354/sage.2) by abergeron created at 2008-12-24 04:18:31",
     "created_at": "2008-12-24T04:18:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4354",
     "type": "issue_comment",
@@ -250,7 +250,7 @@ archive/issue_comments_031976.json:
 }
 ```
 
-Attachment
+Attachment [sage.2](tarball://root/attachments/some-uuid/ticket4354/sage.2) by abergeron created at 2008-12-24 04:18:31
 
 
 
@@ -354,7 +354,7 @@ It is obvious how to rebase it, though (sigh).
 archive/issue_comments_031982.json:
 ```json
 {
-    "body": "Attachment\n\nRebase against 3.3.alpha1",
+    "body": "Attachment [trac_4354_rebase.patch](tarball://root/attachments/some-uuid/ticket4354/trac_4354_rebase.patch) by abergeron created at 2009-01-24 02:47:56\n\nRebase against 3.3.alpha1",
     "created_at": "2009-01-24T02:47:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4354",
     "type": "issue_comment",
@@ -363,7 +363,7 @@ archive/issue_comments_031982.json:
 }
 ```
 
-Attachment
+Attachment [trac_4354_rebase.patch](tarball://root/attachments/some-uuid/ticket4354/trac_4354_rebase.patch) by abergeron created at 2009-01-24 02:47:56
 
 Rebase against 3.3.alpha1
 
@@ -392,7 +392,7 @@ Changing status from new to assigned.
 archive/issue_comments_031984.json:
 ```json
 {
-    "body": "Attachment\n\nrebase against 3.3.rc0 (you'll need also to put \"sage.2\" as \"sage\" into $SAGE_ROOT )",
+    "body": "Attachment [trac_4354_rebase_3.3.rc0.patch](tarball://root/attachments/some-uuid/ticket4354/trac_4354_rebase_3.3.rc0.patch) by GeorgSWeber created at 2009-02-14 21:47:20\n\nrebase against 3.3.rc0 (you'll need also to put \"sage.2\" as \"sage\" into $SAGE_ROOT )",
     "created_at": "2009-02-14T21:47:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4354",
     "type": "issue_comment",
@@ -401,7 +401,7 @@ archive/issue_comments_031984.json:
 }
 ```
 
-Attachment
+Attachment [trac_4354_rebase_3.3.rc0.patch](tarball://root/attachments/some-uuid/ticket4354/trac_4354_rebase_3.3.rc0.patch) by GeorgSWeber created at 2009-02-14 21:47:20
 
 rebase against 3.3.rc0 (you'll need also to put "sage.2" as "sage" into $SAGE_ROOT )
 

@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2147
 archive/issue_comments_014088.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2147-ncalexan-cyclotomic-polynomial-1.patch](tarball://root/attachments/some-uuid/ticket2147/2147-ncalexan-cyclotomic-polynomial-1.patch) by ncalexan created at 2008-02-13 04:11:49",
     "created_at": "2008-02-13T04:11:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2147",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_014088.json:
 }
 ```
 
-Attachment
+Attachment [2147-ncalexan-cyclotomic-polynomial-1.patch](tarball://root/attachments/some-uuid/ticket2147/2147-ncalexan-cyclotomic-polynomial-1.patch) by ncalexan created at 2008-02-13 04:11:49
 
 
 

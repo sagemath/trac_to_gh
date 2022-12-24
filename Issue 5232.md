@@ -79,7 +79,7 @@ Changing priority from major to critical.
 archive/issue_comments_040099.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good.",
+    "body": "Attachment [trac_5232.patch](tarball://root/attachments/some-uuid/ticket5232/trac_5232.patch) by mhansen created at 2009-02-11 05:52:15\n\nLooks good.",
     "created_at": "2009-02-11T05:52:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5232",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_040099.json:
 }
 ```
 
-Attachment
+Attachment [trac_5232.patch](tarball://root/attachments/some-uuid/ticket5232/trac_5232.patch) by mhansen created at 2009-02-11 05:52:15
 
 Looks good.
 

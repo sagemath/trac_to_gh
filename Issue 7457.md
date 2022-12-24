@@ -164,7 +164,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_062811.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7457.patch](tarball://root/attachments/some-uuid/ticket7457/trac_7457.patch) by AlexGhitza created at 2009-11-22 11:26:15",
     "created_at": "2009-11-22T11:26:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7457",
     "type": "issue_comment",
@@ -173,7 +173,7 @@ archive/issue_comments_062811.json:
 }
 ```
 
-Attachment
+Attachment [trac_7457.patch](tarball://root/attachments/some-uuid/ticket7457/trac_7457.patch) by AlexGhitza created at 2009-11-22 11:26:15
 
 
 
@@ -285,7 +285,7 @@ Here's a referee's patch to fix these two issues.  See #7532 for a follow-up.
 archive/issue_comments_062816.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of the other patch",
+    "body": "Attachment [trac_7457-ref.patch](tarball://root/attachments/some-uuid/ticket7457/trac_7457-ref.patch) by jhpalmieri created at 2009-11-26 15:36:03\n\napply on top of the other patch",
     "created_at": "2009-11-26T15:36:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7457",
     "type": "issue_comment",
@@ -294,7 +294,7 @@ archive/issue_comments_062816.json:
 }
 ```
 
-Attachment
+Attachment [trac_7457-ref.patch](tarball://root/attachments/some-uuid/ticket7457/trac_7457-ref.patch) by jhpalmieri created at 2009-11-26 15:36:03
 
 apply on top of the other patch
 

@@ -148,7 +148,7 @@ Sage builds and passes all tests (vanilla 4.2 + attached patch)
 archive/issue_comments_060499.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [7272-cython-0.12.patch](tarball://root/attachments/some-uuid/ticket7272/7272-cython-0.12.patch) by robertwb created at 2009-10-30 06:17:29",
     "created_at": "2009-10-30T06:17:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7272",
     "type": "issue_comment",
@@ -157,7 +157,7 @@ archive/issue_comments_060499.json:
 }
 ```
 
-Attachment
+Attachment [7272-cython-0.12.patch](tarball://root/attachments/some-uuid/ticket7272/7272-cython-0.12.patch) by robertwb created at 2009-10-30 06:17:29
 
 
 

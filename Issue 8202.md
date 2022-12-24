@@ -53,7 +53,7 @@ Disable jsMath's `safeHBoxes` option.  sagenb repo.
 archive/issue_comments_072346.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached a patch that only disables jsMath's safe `\\hbox{}` setting.  Feel free to ignore it!",
+    "body": "Attachment [trac_8202-jsmath_hboxes.patch](tarball://root/attachments/some-uuid/ticket8202/trac_8202-jsmath_hboxes.patch) by mpatel created at 2010-02-06 20:03:34\n\nI've attached a patch that only disables jsMath's safe `\\hbox{}` setting.  Feel free to ignore it!",
     "created_at": "2010-02-06T20:03:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8202",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_072346.json:
 }
 ```
 
-Attachment
+Attachment [trac_8202-jsmath_hboxes.patch](tarball://root/attachments/some-uuid/ticket8202/trac_8202-jsmath_hboxes.patch) by mpatel created at 2010-02-06 20:03:34
 
 I've attached a patch that only disables jsMath's safe `\hbox{}` setting.  Feel free to ignore it!
 

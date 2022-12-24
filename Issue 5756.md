@@ -113,7 +113,7 @@ sage: f(x)
 archive/issue_comments_044991.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5756.patch](tarball://root/attachments/some-uuid/ticket5756/trac_5756.patch) by was created at 2009-04-11 23:29:09",
     "created_at": "2009-04-11T23:29:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5756",
     "type": "issue_comment",
@@ -122,7 +122,7 @@ archive/issue_comments_044991.json:
 }
 ```
 
-Attachment
+Attachment [trac_5756.patch](tarball://root/attachments/some-uuid/ticket5756/trac_5756.patch) by was created at 2009-04-11 23:29:09
 
 
 

@@ -72,7 +72,7 @@ So far I have dealt with
 archive/issue_comments_087473.json:
 ```json
 {
-    "body": "Attachment\n\nexported against 4.4.4.alpha0",
+    "body": "Attachment [trac_9287.coverage_for_elliptic_curves_part1.patch](tarball://root/attachments/some-uuid/ticket9287/trac_9287.coverage_for_elliptic_curves_part1.patch) by wuthrich created at 2010-06-20 23:45:24\n\nexported against 4.4.4.alpha0",
     "created_at": "2010-06-20T23:45:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9287",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_087473.json:
 }
 ```
 
-Attachment
+Attachment [trac_9287.coverage_for_elliptic_curves_part1.patch](tarball://root/attachments/some-uuid/ticket9287/trac_9287.coverage_for_elliptic_curves_part1.patch) by wuthrich created at 2010-06-20 23:45:24
 
 exported against 4.4.4.alpha0
 
@@ -128,7 +128,7 @@ Changing status from new to needs_review.
 archive/issue_comments_087476.json:
 ```json
 {
-    "body": "Attachment\n\nThe second patch (indep of the first) takes care of\n\n* ell_modular_symbol\n* sha_tate\n* ell_torsion\n\nSee trac ticket #9313 of how to take care of padic_height.py\n\nThat is how far I will do improve the documentation so far. If someone else would like to improve it further either put it back to needs_work and continue the work here or (prefered by me) open a new ticket.",
+    "body": "Attachment [trac_9287.coverage_for_elliptic_curves_part2.patch](tarball://root/attachments/some-uuid/ticket9287/trac_9287.coverage_for_elliptic_curves_part2.patch) by wuthrich created at 2010-06-22 17:52:15\n\nThe second patch (indep of the first) takes care of\n\n* ell_modular_symbol\n* sha_tate\n* ell_torsion\n\nSee trac ticket #9313 of how to take care of padic_height.py\n\nThat is how far I will do improve the documentation so far. If someone else would like to improve it further either put it back to needs_work and continue the work here or (prefered by me) open a new ticket.",
     "created_at": "2010-06-22T17:52:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9287",
     "type": "issue_comment",
@@ -137,7 +137,7 @@ archive/issue_comments_087476.json:
 }
 ```
 
-Attachment
+Attachment [trac_9287.coverage_for_elliptic_curves_part2.patch](tarball://root/attachments/some-uuid/ticket9287/trac_9287.coverage_for_elliptic_curves_part2.patch) by wuthrich created at 2010-06-22 17:52:15
 
 The second patch (indep of the first) takes care of
 

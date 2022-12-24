@@ -74,7 +74,7 @@ done before when the doctesting framework couldn't handle plotting.
 archive/issue_comments_024945.json:
 ```json
 {
-    "body": "Attachment\n\nIt would be better to patch against the new version of the tutorial (the one in 3.0.4.alpha1): see\n[http://trac.sagemath.org/sage_trac/ticket/3347](http://trac.sagemath.org/sage_trac/ticket/3347).",
+    "body": "Attachment [doc-3534.patch](tarball://root/attachments/some-uuid/ticket3534/doc-3534.patch) by jhpalmieri created at 2008-06-30 02:07:01\n\nIt would be better to patch against the new version of the tutorial (the one in 3.0.4.alpha1): see\n[http://trac.sagemath.org/sage_trac/ticket/3347](http://trac.sagemath.org/sage_trac/ticket/3347).",
     "created_at": "2008-06-30T02:07:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3534",
     "type": "issue_comment",
@@ -83,7 +83,7 @@ archive/issue_comments_024945.json:
 }
 ```
 
-Attachment
+Attachment [doc-3534.patch](tarball://root/attachments/some-uuid/ticket3534/doc-3534.patch) by jhpalmieri created at 2008-06-30 02:07:01
 
 It would be better to patch against the new version of the tutorial (the one in 3.0.4.alpha1): see
 [http://trac.sagemath.org/sage_trac/ticket/3347](http://trac.sagemath.org/sage_trac/ticket/3347).
@@ -131,7 +131,7 @@ I'll be an editor for this since I did #3347.
 archive/issue_comments_024948.json:
 ```json
 {
-    "body": "Attachment\n\nHere's a new patch, based on William's but done against the new version of the tutorial.  (This means that the details are different, but I've tried to preserve the ideas behind his changes.)",
+    "body": "Attachment [3534-new.patch](tarball://root/attachments/some-uuid/ticket3534/3534-new.patch) by jhpalmieri created at 2008-07-15 18:49:50\n\nHere's a new patch, based on William's but done against the new version of the tutorial.  (This means that the details are different, but I've tried to preserve the ideas behind his changes.)",
     "created_at": "2008-07-15T18:49:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3534",
     "type": "issue_comment",
@@ -140,7 +140,7 @@ archive/issue_comments_024948.json:
 }
 ```
 
-Attachment
+Attachment [3534-new.patch](tarball://root/attachments/some-uuid/ticket3534/3534-new.patch) by jhpalmieri created at 2008-07-15 18:49:50
 
 Here's a new patch, based on William's but done against the new version of the tutorial.  (This means that the details are different, but I've tried to preserve the ideas behind his changes.)
 

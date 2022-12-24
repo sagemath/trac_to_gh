@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3034
 archive/issue_comments_020880.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [cddlib-clean.patch](tarball://root/attachments/some-uuid/ticket3034/cddlib-clean.patch) by tabbott created at 2008-04-26 22:23:31",
     "created_at": "2008-04-26T22:23:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3034",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_020880.json:
 }
 ```
 
-Attachment
+Attachment [cddlib-clean.patch](tarball://root/attachments/some-uuid/ticket3034/cddlib-clean.patch) by tabbott created at 2008-04-26 22:23:31
 
 
 
@@ -51,7 +51,7 @@ Attachment
 archive/issue_comments_020881.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [debian-clean.patch](tarball://root/attachments/some-uuid/ticket3034/debian-clean.patch) by tabbott created at 2008-04-26 22:23:37",
     "created_at": "2008-04-26T22:23:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3034",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_020881.json:
 }
 ```
 
-Attachment
+Attachment [debian-clean.patch](tarball://root/attachments/some-uuid/ticket3034/debian-clean.patch) by tabbott created at 2008-04-26 22:23:37
 
 
 
@@ -69,7 +69,7 @@ Attachment
 archive/issue_comments_020882.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [debian-clean-tarballs.patch](tarball://root/attachments/some-uuid/ticket3034/debian-clean-tarballs.patch) by tabbott created at 2008-04-26 22:33:13",
     "created_at": "2008-04-26T22:33:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3034",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_020882.json:
 }
 ```
 
-Attachment
+Attachment [debian-clean-tarballs.patch](tarball://root/attachments/some-uuid/ticket3034/debian-clean-tarballs.patch) by tabbott created at 2008-04-26 22:33:13
 
 
 

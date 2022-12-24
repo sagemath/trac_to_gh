@@ -456,7 +456,7 @@ Changing status from new to needs_review.
 archive/issue_comments_005042.json:
 ```json
 {
-    "body": "Attachment\n\nI think I was able to solve the problem. With my patch applied on top of sage-4.7.1.rc1, all tests seem to pass, and one can do\n\n```\n            sage: P = QQ['x','y']\n            sage: Q = Frac(QQ['x'])['y']\n            sage: Q.has_coerce_map_from(P)\n            True\n            sage: P.0+Q.0\n            y + x\n```\n\n\nIn order to avoid bidirectional coercions (that would break a lot of tests), I have\n\n```\n            sage: Q = QQ['x']['y']\n            sage: Q.has_coerce_map_from(P)\n            False\n            sage: Q.base_ring() is P.remove_var(Q.variable_name())\n            True\n```\n\n\nThe rule is: If `Q.base_ring() is P.remove_var(Q.variable_name())` then there can not be a coercion from the multivariate ring P to the univariate ring Q; in fact, there is a coercion in the opposite direction. But otherwise, there is a coercion if `Q.base_ring()` has a coercion from `P.remove_var(Q.variable_name())`.",
+    "body": "Attachment [trac813_univariate_coerce_from_multivariate.patch](tarball://root/attachments/some-uuid/ticket813/trac813_univariate_coerce_from_multivariate.patch) by SimonKing created at 2011-08-02 17:11:41\n\nI think I was able to solve the problem. With my patch applied on top of sage-4.7.1.rc1, all tests seem to pass, and one can do\n\n```\n            sage: P = QQ['x','y']\n            sage: Q = Frac(QQ['x'])['y']\n            sage: Q.has_coerce_map_from(P)\n            True\n            sage: P.0+Q.0\n            y + x\n```\n\n\nIn order to avoid bidirectional coercions (that would break a lot of tests), I have\n\n```\n            sage: Q = QQ['x']['y']\n            sage: Q.has_coerce_map_from(P)\n            False\n            sage: Q.base_ring() is P.remove_var(Q.variable_name())\n            True\n```\n\n\nThe rule is: If `Q.base_ring() is P.remove_var(Q.variable_name())` then there can not be a coercion from the multivariate ring P to the univariate ring Q; in fact, there is a coercion in the opposite direction. But otherwise, there is a coercion if `Q.base_ring()` has a coercion from `P.remove_var(Q.variable_name())`.",
     "created_at": "2011-08-02T17:11:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/813",
     "type": "issue_comment",
@@ -465,7 +465,7 @@ archive/issue_comments_005042.json:
 }
 ```
 
-Attachment
+Attachment [trac813_univariate_coerce_from_multivariate.patch](tarball://root/attachments/some-uuid/ticket813/trac813_univariate_coerce_from_multivariate.patch) by SimonKing created at 2011-08-02 17:11:41
 
 I think I was able to solve the problem. With my patch applied on top of sage-4.7.1.rc1, all tests seem to pass, and one can do
 
@@ -827,7 +827,7 @@ Resolution: fixed
 archive/issue_comments_005060.json:
 ```json
 {
-    "body": "Attachment\n\nsmall changes to docstrings",
+    "body": "Attachment [trac_813_review.patch](tarball://root/attachments/some-uuid/ticket813/trac_813_review.patch) by jdemeyer created at 2011-10-04 10:11:48\n\nsmall changes to docstrings",
     "created_at": "2011-10-04T10:11:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/813",
     "type": "issue_comment",
@@ -836,6 +836,6 @@ archive/issue_comments_005060.json:
 }
 ```
 
-Attachment
+Attachment [trac_813_review.patch](tarball://root/attachments/some-uuid/ticket813/trac_813_review.patch) by jdemeyer created at 2011-10-04 10:11:48
 
 small changes to docstrings

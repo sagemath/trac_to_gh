@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2995
 archive/issue_comments_020601.json:
 ```json
 {
-    "body": "Attachment\n\nI've replaced the previous patch with one that also has the changes listed above for the groups Gamma_H.",
+    "body": "Attachment [congroup.patch](tarball://root/attachments/some-uuid/ticket2995/congroup.patch) by AlexGhitza created at 2008-04-23 02:06:10\n\nI've replaced the previous patch with one that also has the changes listed above for the groups Gamma_H.",
     "created_at": "2008-04-23T02:06:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2995",
     "type": "issue_comment",
@@ -53,7 +53,7 @@ archive/issue_comments_020601.json:
 }
 ```
 
-Attachment
+Attachment [congroup.patch](tarball://root/attachments/some-uuid/ticket2995/congroup.patch) by AlexGhitza created at 2008-04-23 02:06:10
 
 I've replaced the previous patch with one that also has the changes listed above for the groups Gamma_H.
 

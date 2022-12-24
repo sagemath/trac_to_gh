@@ -111,7 +111,7 @@ using the line3d command instead of the arrow3d command I think would be more in
 archive/issue_comments_042198.json:
 ```json
 {
-    "body": "Attachment\n\nThis should make plotting lots of 3d vector arrows or points significantly faster.",
+    "body": "Attachment [trac-5450-vector_plot_fast3d.patch](tarball://root/attachments/some-uuid/ticket5450/trac-5450-vector_plot_fast3d.patch) by jason created at 2009-04-03 21:25:51\n\nThis should make plotting lots of 3d vector arrows or points significantly faster.",
     "created_at": "2009-04-03T21:25:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5450",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_042198.json:
 }
 ```
 
-Attachment
+Attachment [trac-5450-vector_plot_fast3d.patch](tarball://root/attachments/some-uuid/ticket5450/trac-5450-vector_plot_fast3d.patch) by jason created at 2009-04-03 21:25:51
 
 This should make plotting lots of 3d vector arrows or points significantly faster.
 

@@ -53,7 +53,7 @@ The package is here: http://yann.laiglechapuy.net/spkg/cunningham_tables-1.0.spk
 archive/issue_comments_060054.json:
 ```json
 {
-    "body": "Attachment\n\nbased on 4.1.2",
+    "body": "Attachment [trac7239_Cunningham_factorization.patch](tarball://root/attachments/some-uuid/ticket7239/trac7239_Cunningham_factorization.patch) by ylchapuy created at 2009-10-18 11:32:35\n\nbased on 4.1.2",
     "created_at": "2009-10-18T11:32:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7239",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_060054.json:
 }
 ```
 
-Attachment
+Attachment [trac7239_Cunningham_factorization.patch](tarball://root/attachments/some-uuid/ticket7239/trac7239_Cunningham_factorization.patch) by ylchapuy created at 2009-10-18 11:32:35
 
 based on 4.1.2
 

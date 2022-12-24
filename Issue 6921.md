@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6921
 archive/issue_comments_057133.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [matlab-native-execute.patch](tarball://root/attachments/some-uuid/ticket6921/matlab-native-execute.patch) by jjh created at 2009-09-11 04:33:51",
     "created_at": "2009-09-11T04:33:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6921",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_057133.json:
 }
 ```
 
-Attachment
+Attachment [matlab-native-execute.patch](tarball://root/attachments/some-uuid/ticket6921/matlab-native-execute.patch) by jjh created at 2009-09-11 04:33:51
 
 
 

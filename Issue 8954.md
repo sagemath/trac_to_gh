@@ -180,7 +180,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_082530.json:
 ```json
 {
-    "body": "Attachment\n\nAnne,\n\nThanks for making the changes I suggested.  I'm happy with the code now, and I've run the tests on sage-4.4.2 and they all pass. Positive review!",
+    "body": "Attachment [trac_8954-nilTemperley-as.patch](tarball://root/attachments/some-uuid/ticket8954/trac_8954-nilTemperley-as.patch) by jbandlow created at 2010-05-21 14:06:40\n\nAnne,\n\nThanks for making the changes I suggested.  I'm happy with the code now, and I've run the tests on sage-4.4.2 and they all pass. Positive review!",
     "created_at": "2010-05-21T14:06:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8954",
     "type": "issue_comment",
@@ -189,7 +189,7 @@ archive/issue_comments_082530.json:
 }
 ```
 
-Attachment
+Attachment [trac_8954-nilTemperley-as.patch](tarball://root/attachments/some-uuid/ticket8954/trac_8954-nilTemperley-as.patch) by jbandlow created at 2010-05-21 14:06:40
 
 Anne,
 

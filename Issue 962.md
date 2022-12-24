@@ -100,7 +100,7 @@ Changing status from new to assigned.
 archive/issue_comments_005861.json:
 ```json
 {
-    "body": "Attachment\n\nInitial version",
+    "body": "Attachment [962.patch](tarball://root/attachments/some-uuid/ticket962/962.patch) by mhansen created at 2007-11-13 03:20:25\n\nInitial version",
     "created_at": "2007-11-13T03:20:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/962",
     "type": "issue_comment",
@@ -109,7 +109,7 @@ archive/issue_comments_005861.json:
 }
 ```
 
-Attachment
+Attachment [962.patch](tarball://root/attachments/some-uuid/ticket962/962.patch) by mhansen created at 2007-11-13 03:20:25
 
 Initial version
 
@@ -240,7 +240,7 @@ sage: sage: sage: (00000000.0000000000000000000000001).prec()
 archive/issue_comments_005867.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me!  Thank you for making so many changes at my request.",
+    "body": "Attachment [962-2.patch](tarball://root/attachments/some-uuid/ticket962/962-2.patch) by cwitty created at 2007-12-01 21:54:33\n\nLooks good to me!  Thank you for making so many changes at my request.",
     "created_at": "2007-12-01T21:54:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/962",
     "type": "issue_comment",
@@ -249,7 +249,7 @@ archive/issue_comments_005867.json:
 }
 ```
 
-Attachment
+Attachment [962-2.patch](tarball://root/attachments/some-uuid/ticket962/962-2.patch) by cwitty created at 2007-12-01 21:54:33
 
 Looks good to me!  Thank you for making so many changes at my request.
 
@@ -355,7 +355,7 @@ The patches should be applied in this order:
 archive/issue_comments_005871.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [962-doctests.patch](tarball://root/attachments/some-uuid/ticket962/962-doctests.patch) by mhansen created at 2007-12-02 02:48:04",
     "created_at": "2007-12-02T02:48:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/962",
     "type": "issue_comment",
@@ -364,7 +364,7 @@ archive/issue_comments_005871.json:
 }
 ```
 
-Attachment
+Attachment [962-doctests.patch](tarball://root/attachments/some-uuid/ticket962/962-doctests.patch) by mhansen created at 2007-12-02 02:48:04
 
 
 

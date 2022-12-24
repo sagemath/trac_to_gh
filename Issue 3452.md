@@ -69,7 +69,7 @@ Changing status from new to assigned.
 archive/issue_comments_024344.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [extcode-3452.patch](tarball://root/attachments/some-uuid/ticket3452/extcode-3452.patch) by TimothyClemans created at 2008-06-18 00:28:55",
     "created_at": "2008-06-18T00:28:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3452",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_024344.json:
 }
 ```
 
-Attachment
+Attachment [extcode-3452.patch](tarball://root/attachments/some-uuid/ticket3452/extcode-3452.patch) by TimothyClemans created at 2008-06-18 00:28:55
 
 
 
@@ -87,7 +87,7 @@ Attachment
 archive/issue_comments_024345.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3452.patch](tarball://root/attachments/some-uuid/ticket3452/sage-3452.patch) by TimothyClemans created at 2008-06-18 00:29:09",
     "created_at": "2008-06-18T00:29:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3452",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_024345.json:
 }
 ```
 
-Attachment
+Attachment [sage-3452.patch](tarball://root/attachments/some-uuid/ticket3452/sage-3452.patch) by TimothyClemans created at 2008-06-18 00:29:09
 
 
 

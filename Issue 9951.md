@@ -335,7 +335,7 @@ is also more explicit, though I'd add (escaped) double quotes around the variabl
 archive/issue_comments_099261.json:
 ```json
 {
-    "body": "Attachment\n\nfor reference only: the diff between the old spkg and the new one",
+    "body": "Attachment [atlas-p16.patch](tarball://root/attachments/some-uuid/ticket9952/atlas-p16.patch) by jhpalmieri created at 2010-09-20 15:06:30\n\nfor reference only: the diff between the old spkg and the new one",
     "created_at": "2010-09-20T15:06:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9951",
     "type": "issue_comment",
@@ -344,7 +344,7 @@ archive/issue_comments_099261.json:
 }
 ```
 
-Attachment
+Attachment [atlas-p16.patch](tarball://root/attachments/some-uuid/ticket9952/atlas-p16.patch) by jhpalmieri created at 2010-09-20 15:06:30
 
 for reference only: the diff between the old spkg and the new one
 

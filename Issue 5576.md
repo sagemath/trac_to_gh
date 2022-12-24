@@ -191,7 +191,7 @@ I rebased the patch.
 archive/issue_comments_043483.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [mpolynomialsystem_rest.patch](tarball://root/attachments/some-uuid/ticket5576/mpolynomialsystem_rest.patch) by malb created at 2009-05-12 00:34:04",
     "created_at": "2009-05-12T00:34:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5576",
     "type": "issue_comment",
@@ -200,7 +200,7 @@ archive/issue_comments_043483.json:
 }
 ```
 
-Attachment
+Attachment [mpolynomialsystem_rest.patch](tarball://root/attachments/some-uuid/ticket5576/mpolynomialsystem_rest.patch) by malb created at 2009-05-12 00:34:04
 
 
 

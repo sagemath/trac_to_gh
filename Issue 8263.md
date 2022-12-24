@@ -686,7 +686,7 @@ By the way, another potentially useful GNU Make option is `-l`.  For example, `m
 archive/issue_comments_073153.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8263-installation.patch](tarball://root/attachments/some-uuid/ticket8263/trac_8263-installation.patch) by jhpalmieri created at 2010-06-28 02:32:48",
     "created_at": "2010-06-28T02:32:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8263",
     "type": "issue_comment",
@@ -695,7 +695,7 @@ archive/issue_comments_073153.json:
 }
 ```
 
-Attachment
+Attachment [trac_8263-installation.patch](tarball://root/attachments/some-uuid/ticket8263/trac_8263-installation.patch) by jhpalmieri created at 2010-06-28 02:32:48
 
 
 

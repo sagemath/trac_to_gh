@@ -81,7 +81,7 @@ Changing keywords from "" to "editor_craigcitro".
 archive/issue_comments_024154.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [univariate_poly_quo_rem_zero.patch](tarball://root/attachments/some-uuid/ticket3428/univariate_poly_quo_rem_zero.patch) by craigcitro created at 2008-06-15 21:55:42",
     "created_at": "2008-06-15T21:55:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3428",
     "type": "issue_comment",
@@ -90,7 +90,7 @@ archive/issue_comments_024154.json:
 }
 ```
 
-Attachment
+Attachment [univariate_poly_quo_rem_zero.patch](tarball://root/attachments/some-uuid/ticket3428/univariate_poly_quo_rem_zero.patch) by craigcitro created at 2008-06-15 21:55:42
 
 
 
@@ -245,7 +245,7 @@ Resolution: fixed
 archive/issue_comments_024163.json:
 ```json
 {
-    "body": "Attachment\n\nMerged in Sage 3.0.4.alpha0",
+    "body": "Attachment [trac-3428-doctest.patch](tarball://root/attachments/some-uuid/ticket3428/trac-3428-doctest.patch) by mabshoff created at 2008-06-23 10:00:53\n\nMerged in Sage 3.0.4.alpha0",
     "created_at": "2008-06-23T10:00:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3428",
     "type": "issue_comment",
@@ -254,6 +254,6 @@ archive/issue_comments_024163.json:
 }
 ```
 
-Attachment
+Attachment [trac-3428-doctest.patch](tarball://root/attachments/some-uuid/ticket3428/trac-3428-doctest.patch) by mabshoff created at 2008-06-23 10:00:53
 
 Merged in Sage 3.0.4.alpha0

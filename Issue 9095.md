@@ -51,7 +51,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_084506.json:
 ```json
 {
-    "body": "Attachment\n\nelliptic curve function field class",
+    "body": "Attachment [9095-ec-function-fields.patch](tarball://root/attachments/some-uuid/ticket9095/9095-ec-function-fields.patch) by robertwb created at 2010-05-30 10:17:55\n\nelliptic curve function field class",
     "created_at": "2010-05-30T10:17:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9095",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_084506.json:
 }
 ```
 
-Attachment
+Attachment [9095-ec-function-fields.patch](tarball://root/attachments/some-uuid/ticket9095/9095-ec-function-fields.patch) by robertwb created at 2010-05-30 10:17:55
 
 elliptic curve function field class
 
@@ -71,7 +71,7 @@ elliptic curve function field class
 archive/issue_comments_084507.json:
 ```json
 {
-    "body": "Attachment\n\nheights, apply on top of previous",
+    "body": "Attachment [9095-ec-ff-heights.patch](tarball://root/attachments/some-uuid/ticket9095/9095-ec-ff-heights.patch) by robertwb created at 2010-05-30 10:18:31\n\nheights, apply on top of previous",
     "created_at": "2010-05-30T10:18:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9095",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_084507.json:
 }
 ```
 
-Attachment
+Attachment [9095-ec-ff-heights.patch](tarball://root/attachments/some-uuid/ticket9095/9095-ec-ff-heights.patch) by robertwb created at 2010-05-30 10:18:31
 
 heights, apply on top of previous
 

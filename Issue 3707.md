@@ -102,7 +102,7 @@ Looking at those should get you started.
 archive/issue_comments_026309.json:
 ```json
 {
-    "body": "Attachment\n\napply this together with sympy-0.6.2.spkg",
+    "body": "Attachment [sympy0.6.2fix.patch](tarball://root/attachments/some-uuid/ticket3707/sympy0.6.2fix.patch) by certik created at 2008-08-17 20:37:07\n\napply this together with sympy-0.6.2.spkg",
     "created_at": "2008-08-17T20:37:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3707",
     "type": "issue_comment",
@@ -111,7 +111,7 @@ archive/issue_comments_026309.json:
 }
 ```
 
-Attachment
+Attachment [sympy0.6.2fix.patch](tarball://root/attachments/some-uuid/ticket3707/sympy0.6.2fix.patch) by certik created at 2008-08-17 20:37:07
 
 apply this together with sympy-0.6.2.spkg
 
@@ -122,7 +122,7 @@ apply this together with sympy-0.6.2.spkg
 archive/issue_comments_026310.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage_sympy.patch](tarball://root/attachments/some-uuid/ticket3707/sage_sympy.patch) by certik created at 2008-08-17 20:37:32",
     "created_at": "2008-08-17T20:37:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3707",
     "type": "issue_comment",
@@ -131,7 +131,7 @@ archive/issue_comments_026310.json:
 }
 ```
 
-Attachment
+Attachment [sage_sympy.patch](tarball://root/attachments/some-uuid/ticket3707/sage_sympy.patch) by certik created at 2008-08-17 20:37:32
 
 
 
@@ -164,7 +164,7 @@ malb: I wrote docstrings and doctests. I didn't use late_import(), as I think in
 archive/issue_comments_026312.json:
 ```json
 {
-    "body": "Attachment\n\napply after the other patches",
+    "body": "Attachment [trac_3707_fixup.patch](tarball://root/attachments/some-uuid/ticket3707/trac_3707_fixup.patch) by malb created at 2008-08-18 10:07:56\n\napply after the other patches",
     "created_at": "2008-08-18T10:07:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3707",
     "type": "issue_comment",
@@ -173,7 +173,7 @@ archive/issue_comments_026312.json:
 }
 ```
 
-Attachment
+Attachment [trac_3707_fixup.patch](tarball://root/attachments/some-uuid/ticket3707/trac_3707_fixup.patch) by malb created at 2008-08-18 10:07:56
 
 apply after the other patches
 
@@ -226,7 +226,7 @@ Oops, thanks you did so much work with it, this is weird, all tests passed for m
 archive/issue_comments_026315.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3707_fixup.2.patch](tarball://root/attachments/some-uuid/ticket3707/trac_3707_fixup.2.patch) by certik created at 2008-08-19 22:23:31",
     "created_at": "2008-08-19T22:23:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3707",
     "type": "issue_comment",
@@ -235,7 +235,7 @@ archive/issue_comments_026315.json:
 }
 ```
 
-Attachment
+Attachment [trac_3707_fixup.2.patch](tarball://root/attachments/some-uuid/ticket3707/trac_3707_fixup.2.patch) by certik created at 2008-08-19 22:23:31
 
 
 

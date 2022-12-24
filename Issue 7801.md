@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7801
 archive/issue_comments_067496.json:
 ```json
 {
-    "body": "Attachment\n\nFixed interrupt handler to stop the twisted server instead of in save_notebook",
+    "body": "Attachment [trac_7801-save_notebook_twice.patch](tarball://root/attachments/some-uuid/ticket7801/trac_7801-save_notebook_twice.patch) by acleone created at 2010-01-19 01:36:26\n\nFixed interrupt handler to stop the twisted server instead of in save_notebook",
     "created_at": "2010-01-19T01:36:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7801",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_067496.json:
 }
 ```
 
-Attachment
+Attachment [trac_7801-save_notebook_twice.patch](tarball://root/attachments/some-uuid/ticket7801/trac_7801-save_notebook_twice.patch) by acleone created at 2010-01-19 01:36:26
 
 Fixed interrupt handler to stop the twisted server instead of in save_notebook
 

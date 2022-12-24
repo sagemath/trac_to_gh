@@ -78,7 +78,7 @@ summary:     Make sure . is not in user's path.
 archive/issue_comments_004617.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_773-sage.patch](tarball://root/attachments/some-uuid/ticket773/trac_773-sage.patch) by was created at 2009-01-23 10:13:44",
     "created_at": "2009-01-23T10:13:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/773",
     "type": "issue_comment",
@@ -87,7 +87,7 @@ archive/issue_comments_004617.json:
 }
 ```
 
-Attachment
+Attachment [trac_773-sage.patch](tarball://root/attachments/some-uuid/ticket773/trac_773-sage.patch) by was created at 2009-01-23 10:13:44
 
 
 

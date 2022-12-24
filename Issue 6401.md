@@ -49,7 +49,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6401
 archive/issue_comments_051407.json:
 ```json
 {
-    "body": "Attachment\n\ndoctest fixes for typesetting changes in pynac",
+    "body": "Attachment [trac_6401-real_imag_typesetting.patch](tarball://root/attachments/some-uuid/ticket6401/trac_6401-real_imag_typesetting.patch) by burcin created at 2009-07-28 12:44:48\n\ndoctest fixes for typesetting changes in pynac",
     "created_at": "2009-07-28T12:44:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6401",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_051407.json:
 }
 ```
 
-Attachment
+Attachment [trac_6401-real_imag_typesetting.patch](tarball://root/attachments/some-uuid/ticket6401/trac_6401-real_imag_typesetting.patch) by burcin created at 2009-07-28 12:44:48
 
 doctest fixes for typesetting changes in pynac
 

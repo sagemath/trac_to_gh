@@ -65,7 +65,7 @@ the unit part.  Though it looks dumb in this case.
 archive/issue_comments_011900.json:
 ```json
 {
-    "body": "Attachment\n\nYou are right, it does look dumb, but this seems to be fallout from #1391, i.e. \"bug in unit part of factorizations of multivariate polynomials\". At least malb did fix a doctest in that patch in the same fashion. Care to review this trivial patch?\n\nCheers,\n\nMichael",
+    "body": "Attachment [Sage-2.10.1.alpha0-fix-doctest-1881.patch](tarball://root/attachments/some-uuid/ticket1881/Sage-2.10.1.alpha0-fix-doctest-1881.patch) by mabshoff created at 2008-01-21 22:25:25\n\nYou are right, it does look dumb, but this seems to be fallout from #1391, i.e. \"bug in unit part of factorizations of multivariate polynomials\". At least malb did fix a doctest in that patch in the same fashion. Care to review this trivial patch?\n\nCheers,\n\nMichael",
     "created_at": "2008-01-21T22:25:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1881",
     "type": "issue_comment",
@@ -74,7 +74,7 @@ archive/issue_comments_011900.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.10.1.alpha0-fix-doctest-1881.patch](tarball://root/attachments/some-uuid/ticket1881/Sage-2.10.1.alpha0-fix-doctest-1881.patch) by mabshoff created at 2008-01-21 22:25:25
 
 You are right, it does look dumb, but this seems to be fallout from #1391, i.e. "bug in unit part of factorizations of multivariate polynomials". At least malb did fix a doctest in that patch in the same fashion. Care to review this trivial patch?
 

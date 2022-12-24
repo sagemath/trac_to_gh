@@ -87,7 +87,7 @@ Changing status from new to needs_review.
 archive/issue_comments_032428.json:
 ```json
 {
-    "body": "Attachment\n\nHere's an example for testing:\n\n```\nR1.<t> = PolynomialRing(QQ)\nstart_sys1 = [t^15-t-1]             \nsol = phc.blackbox(start_sys1, R1, verbose=False)        \nlen(sol.solutions())\n```\n\nshould give 15.",
+    "body": "Attachment [trac_4411_fix_phc_1_variable.patch](tarball://root/attachments/some-uuid/ticket4411/trac_4411_fix_phc_1_variable.patch) by mhampton created at 2011-01-11 23:09:22\n\nHere's an example for testing:\n\n```\nR1.<t> = PolynomialRing(QQ)\nstart_sys1 = [t^15-t-1]             \nsol = phc.blackbox(start_sys1, R1, verbose=False)        \nlen(sol.solutions())\n```\n\nshould give 15.",
     "created_at": "2011-01-11T23:09:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4411",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_032428.json:
 }
 ```
 
-Attachment
+Attachment [trac_4411_fix_phc_1_variable.patch](tarball://root/attachments/some-uuid/ticket4411/trac_4411_fix_phc_1_variable.patch) by mhampton created at 2011-01-11 23:09:22
 
 Here's an example for testing:
 
@@ -312,7 +312,7 @@ You've changed the functions `get_solution_dicts` and `get_classified_solution_d
 archive/issue_comments_032439.json:
 ```json
 {
-    "body": "Attachment\n\nupdated patch for both 4411 and 10607",
+    "body": "Attachment [trac_4411_and_10607_phc_fixes.patch](tarball://root/attachments/some-uuid/ticket4411/trac_4411_and_10607_phc_fixes.patch) by mhampton created at 2011-08-05 03:02:51\n\nupdated patch for both 4411 and 10607",
     "created_at": "2011-08-05T03:02:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4411",
     "type": "issue_comment",
@@ -321,7 +321,7 @@ archive/issue_comments_032439.json:
 }
 ```
 
-Attachment
+Attachment [trac_4411_and_10607_phc_fixes.patch](tarball://root/attachments/some-uuid/ticket4411/trac_4411_and_10607_phc_fixes.patch) by mhampton created at 2011-08-05 03:02:51
 
 updated patch for both 4411 and 10607
 
@@ -368,7 +368,7 @@ patch doesn't apply to sage-5.0, I get a rejected hunk.
 archive/issue_comments_032442.json:
 ```json
 {
-    "body": "Attachment\n\nrebased cumulative patch for #4411 and #10607, for sage-5.0",
+    "body": "Attachment [trac_4411_and_10607_phc_fixes_5.0.patch](tarball://root/attachments/some-uuid/ticket4411/trac_4411_and_10607_phc_fixes_5.0.patch) by mhampton created at 2012-05-28 20:19:45\n\nrebased cumulative patch for #4411 and #10607, for sage-5.0",
     "created_at": "2012-05-28T20:19:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4411",
     "type": "issue_comment",
@@ -377,7 +377,7 @@ archive/issue_comments_032442.json:
 }
 ```
 
-Attachment
+Attachment [trac_4411_and_10607_phc_fixes_5.0.patch](tarball://root/attachments/some-uuid/ticket4411/trac_4411_and_10607_phc_fixes_5.0.patch) by mhampton created at 2012-05-28 20:19:45
 
 rebased cumulative patch for #4411 and #10607, for sage-5.0
 
@@ -567,7 +567,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_032451.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4411-tmpfilename.patch](tarball://root/attachments/some-uuid/ticket4411/trac_4411-tmpfilename.patch) by jhpalmieri created at 2012-10-25 20:27:29",
     "created_at": "2012-10-25T20:27:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4411",
     "type": "issue_comment",
@@ -576,7 +576,7 @@ archive/issue_comments_032451.json:
 }
 ```
 
-Attachment
+Attachment [trac_4411-tmpfilename.patch](tarball://root/attachments/some-uuid/ticket4411/trac_4411-tmpfilename.patch) by jhpalmieri created at 2012-10-25 20:27:29
 
 
 

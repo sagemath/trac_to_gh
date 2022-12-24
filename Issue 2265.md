@@ -134,7 +134,7 @@ I added a default_weight option which will be applied when an edge doesn't have 
 archive/issue_comments_015007.json:
 ```json
 {
-    "body": "Attachment\n\nI also added a by_weight option as vgermrk suggested to be consistent with the other shortest path functions.",
+    "body": "Attachment [shortest-paths.patch](tarball://root/attachments/some-uuid/ticket2265/shortest-paths.patch) by jason created at 2008-02-22 20:21:42\n\nI also added a by_weight option as vgermrk suggested to be consistent with the other shortest path functions.",
     "created_at": "2008-02-22T20:21:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2265",
     "type": "issue_comment",
@@ -143,7 +143,7 @@ archive/issue_comments_015007.json:
 }
 ```
 
-Attachment
+Attachment [shortest-paths.patch](tarball://root/attachments/some-uuid/ticket2265/shortest-paths.patch) by jason created at 2008-02-22 20:21:42
 
 I also added a by_weight option as vgermrk suggested to be consistent with the other shortest path functions.
 

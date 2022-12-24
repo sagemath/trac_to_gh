@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5194
 archive/issue_comments_039811.json:
 ```json
 {
-    "body": "Attachment\n\na patch that adds a checkbox to control automatic updating",
+    "body": "Attachment [update_interact.patch](tarball://root/attachments/some-uuid/ticket5194/update_interact.patch) by john_perry created at 2009-02-06 03:39:33\n\na patch that adds a checkbox to control automatic updating",
     "created_at": "2009-02-06T03:39:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5194",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_039811.json:
 }
 ```
 
-Attachment
+Attachment [update_interact.patch](tarball://root/attachments/some-uuid/ticket5194/update_interact.patch) by john_perry created at 2009-02-06 03:39:33
 
 a patch that adds a checkbox to control automatic updating
 
@@ -119,7 +119,7 @@ Michael
 archive/issue_comments_039815.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5194.patch](tarball://root/attachments/some-uuid/ticket5194/trac_5194.patch) by mhansen created at 2009-02-07 05:35:29",
     "created_at": "2009-02-07T05:35:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5194",
     "type": "issue_comment",
@@ -128,7 +128,7 @@ archive/issue_comments_039815.json:
 }
 ```
 
-Attachment
+Attachment [trac_5194.patch](tarball://root/attachments/some-uuid/ticket5194/trac_5194.patch) by mhansen created at 2009-02-07 05:35:29
 
 
 

@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7546
 archive/issue_comments_064079.json:
 ```json
 {
-    "body": "Attachment\n\nchange the tar file for an app bundle",
+    "body": "Attachment [app-bundle-7546.patch](tarball://root/attachments/some-uuid/ticket7546/app-bundle-7546.patch) by iandrus created at 2009-11-27 20:48:20\n\nchange the tar file for an app bundle",
     "created_at": "2009-11-27T20:48:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7546",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_064079.json:
 }
 ```
 
-Attachment
+Attachment [app-bundle-7546.patch](tarball://root/attachments/some-uuid/ticket7546/app-bundle-7546.patch) by iandrus created at 2009-11-27 20:48:20
 
 change the tar file for an app bundle
 
@@ -327,7 +327,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_064093.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [bdist-7546.patch](tarball://root/attachments/some-uuid/ticket7546/bdist-7546.patch) by iandrus created at 2009-12-07 22:17:32",
     "created_at": "2009-12-07T22:17:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7546",
     "type": "issue_comment",
@@ -336,7 +336,7 @@ archive/issue_comments_064093.json:
 }
 ```
 
-Attachment
+Attachment [bdist-7546.patch](tarball://root/attachments/some-uuid/ticket7546/bdist-7546.patch) by iandrus created at 2009-12-07 22:17:32
 
 
 

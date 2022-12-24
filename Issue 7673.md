@@ -164,7 +164,7 @@ rebased on 4.3.rc0 + #7640
 archive/issue_comments_065766.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:4 rlm]:\n> This is going to conflict with the patch at #7640. Can you rebase this patch on 4.3.rc0 + #7640?\n\nOK, I've posted a new patch.",
+    "body": "Attachment [trac_7673.patch](tarball://root/attachments/some-uuid/ticket7673/trac_7673.patch) by rlm created at 2009-12-14 02:54:06\n\nReplying to [comment:4 rlm]:\n> This is going to conflict with the patch at #7640. Can you rebase this patch on 4.3.rc0 + #7640?\n\nOK, I've posted a new patch.",
     "created_at": "2009-12-14T02:54:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7673",
     "type": "issue_comment",
@@ -173,7 +173,7 @@ archive/issue_comments_065766.json:
 }
 ```
 
-Attachment
+Attachment [trac_7673.patch](tarball://root/attachments/some-uuid/ticket7673/trac_7673.patch) by rlm created at 2009-12-14 02:54:06
 
 Replying to [comment:4 rlm]:
 > This is going to conflict with the patch at #7640. Can you rebase this patch on 4.3.rc0 + #7640?
@@ -406,7 +406,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_065776.json:
 ```json
 {
-    "body": "Attachment\n\nI do not think so, this bug just came from the fact that this version of dijkstra is bidirectional, and I wrongly assumed that as in the simple version of it, the first path found was the correct path. Obviously ( see your example ) it is not, and I expect this version of the algorithm to be correct :-)\n\nNathann",
+    "body": "Attachment [trac_7673.2.patch](tarball://root/attachments/some-uuid/ticket7673/trac_7673.2.patch) by ncohen created at 2009-12-14 12:33:00\n\nI do not think so, this bug just came from the fact that this version of dijkstra is bidirectional, and I wrongly assumed that as in the simple version of it, the first path found was the correct path. Obviously ( see your example ) it is not, and I expect this version of the algorithm to be correct :-)\n\nNathann",
     "created_at": "2009-12-14T12:33:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7673",
     "type": "issue_comment",
@@ -415,7 +415,7 @@ archive/issue_comments_065776.json:
 }
 ```
 
-Attachment
+Attachment [trac_7673.2.patch](tarball://root/attachments/some-uuid/ticket7673/trac_7673.2.patch) by ncohen created at 2009-12-14 12:33:00
 
 I do not think so, this bug just came from the fact that this version of dijkstra is bidirectional, and I wrongly assumed that as in the simple version of it, the first path found was the correct path. Obviously ( see your example ) it is not, and I expect this version of the algorithm to be correct :-)
 

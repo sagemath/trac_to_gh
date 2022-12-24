@@ -114,7 +114,7 @@ Nathann
 archive/issue_comments_071851.json:
 ```json
 {
-    "body": "Attachment\n\nI have attached a rebase of ncohen's patch, rebased on top of #8364. Based upon that, I did some clean-ups of the changes proposed by ncohen. My changes are mainly cosmetic clean-ups along the lines of PEP 008. Both ncohen's patch and my changes are folded into one patch to make it easier for anyone to give a final review.",
+    "body": "Attachment [trac_8166.patch](tarball://root/attachments/some-uuid/ticket8166/trac_8166.patch) by mvngu created at 2010-05-21 15:45:14\n\nI have attached a rebase of ncohen's patch, rebased on top of #8364. Based upon that, I did some clean-ups of the changes proposed by ncohen. My changes are mainly cosmetic clean-ups along the lines of PEP 008. Both ncohen's patch and my changes are folded into one patch to make it easier for anyone to give a final review.",
     "created_at": "2010-05-21T15:45:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8166",
     "type": "issue_comment",
@@ -123,7 +123,7 @@ archive/issue_comments_071851.json:
 }
 ```
 
-Attachment
+Attachment [trac_8166.patch](tarball://root/attachments/some-uuid/ticket8166/trac_8166.patch) by mvngu created at 2010-05-21 15:45:14
 
 I have attached a rebase of ncohen's patch, rebased on top of #8364. Based upon that, I did some clean-ups of the changes proposed by ncohen. My changes are mainly cosmetic clean-ups along the lines of PEP 008. Both ncohen's patch and my changes are folded into one patch to make it easier for anyone to give a final review.
 
@@ -172,7 +172,7 @@ archive/issue_comments_071853.json:
 archive/issue_comments_071854.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8166-rebase.patch](tarball://root/attachments/some-uuid/ticket8166/trac_8166-rebase.patch) by mvngu created at 2010-05-21 18:40:49",
     "created_at": "2010-05-21T18:40:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8166",
     "type": "issue_comment",
@@ -181,7 +181,7 @@ archive/issue_comments_071854.json:
 }
 ```
 
-Attachment
+Attachment [trac_8166-rebase.patch](tarball://root/attachments/some-uuid/ticket8166/trac_8166-rebase.patch) by mvngu created at 2010-05-21 18:40:49
 
 
 
@@ -190,7 +190,7 @@ Attachment
 archive/issue_comments_071855.json:
 ```json
 {
-    "body": "Attachment\n\ndiff patch showing changes proposed by reviewer",
+    "body": "Attachment [reviewer.diff](tarball://root/attachments/some-uuid/ticket8166/reviewer.diff) by mvngu created at 2010-05-21 18:41:02\n\ndiff patch showing changes proposed by reviewer",
     "created_at": "2010-05-21T18:41:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8166",
     "type": "issue_comment",
@@ -199,7 +199,7 @@ archive/issue_comments_071855.json:
 }
 ```
 
-Attachment
+Attachment [reviewer.diff](tarball://root/attachments/some-uuid/ticket8166/reviewer.diff) by mvngu created at 2010-05-21 18:41:02
 
 diff patch showing changes proposed by reviewer
 

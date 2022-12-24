@@ -109,7 +109,7 @@ The fix for `exp()` needs to go into pynac. I don't know what other functions ar
 archive/issue_comments_051031.json:
 ```json
 {
-    "body": "Attachment\n\ndoctests for the fix",
+    "body": "Attachment [trac_6377-exp_infinity.patch](tarball://root/attachments/some-uuid/ticket6377/trac_6377-exp_infinity.patch) by burcin created at 2009-07-31 23:52:10\n\ndoctests for the fix",
     "created_at": "2009-07-31T23:52:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6377",
     "type": "issue_comment",
@@ -118,7 +118,7 @@ archive/issue_comments_051031.json:
 }
 ```
 
-Attachment
+Attachment [trac_6377-exp_infinity.patch](tarball://root/attachments/some-uuid/ticket6377/trac_6377-exp_infinity.patch) by burcin created at 2009-07-31 23:52:10
 
 doctests for the fix
 

@@ -140,7 +140,7 @@ second try at fixing Expression.__init__
 archive/issue_comments_051563.json:
 ```json
 {
-    "body": "Attachment\n\nI attached a new patch which sets `self._parent` first, fixing the doctest problems above. I also added a new test for the problem reported by Nicolas in his initial message.",
+    "body": "Attachment [trac_6422-expression_init.patch](tarball://root/attachments/some-uuid/ticket6422/trac_6422-expression_init.patch) by burcin created at 2009-06-27 15:24:53\n\nI attached a new patch which sets `self._parent` first, fixing the doctest problems above. I also added a new test for the problem reported by Nicolas in his initial message.",
     "created_at": "2009-06-27T15:24:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6422",
     "type": "issue_comment",
@@ -149,7 +149,7 @@ archive/issue_comments_051563.json:
 }
 ```
 
-Attachment
+Attachment [trac_6422-expression_init.patch](tarball://root/attachments/some-uuid/ticket6422/trac_6422-expression_init.patch) by burcin created at 2009-06-27 15:24:53
 
 I attached a new patch which sets `self._parent` first, fixing the doctest problems above. I also added a new test for the problem reported by Nicolas in his initial message.
 

@@ -52,7 +52,7 @@ Changing status from new to needs_review.
 archive/issue_comments_063829.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7530.patch](tarball://root/attachments/some-uuid/ticket7530/trac_7530.patch) by fwclarke created at 2009-11-25 13:16:14",
     "created_at": "2009-11-25T13:16:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7530",
     "type": "issue_comment",
@@ -61,7 +61,7 @@ archive/issue_comments_063829.json:
 }
 ```
 
-Attachment
+Attachment [trac_7530.patch](tarball://root/attachments/some-uuid/ticket7530/trac_7530.patch) by fwclarke created at 2009-11-25 13:16:14
 
 
 
@@ -151,7 +151,7 @@ As it happens, the Laurent polynomial constructor currently restricts the base r
 archive/issue_comments_063834.json:
 ```json
 {
-    "body": "Attachment\n\nreplaces previous patch",
+    "body": "Attachment [trac_7530_replacement.patch](tarball://root/attachments/some-uuid/ticket7530/trac_7530_replacement.patch) by fwclarke created at 2009-12-18 09:14:31\n\nreplaces previous patch",
     "created_at": "2009-12-18T09:14:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7530",
     "type": "issue_comment",
@@ -160,7 +160,7 @@ archive/issue_comments_063834.json:
 }
 ```
 
-Attachment
+Attachment [trac_7530_replacement.patch](tarball://root/attachments/some-uuid/ticket7530/trac_7530_replacement.patch) by fwclarke created at 2009-12-18 09:14:31
 
 replaces previous patch
 

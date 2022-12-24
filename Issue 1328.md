@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1328
 archive/issue_comments_008500.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-2.8.14-partitions_c.h-on-Solaris-unclean.patch](tarball://root/attachments/some-uuid/ticket1328/Sage-2.8.14-partitions_c.h-on-Solaris-unclean.patch) by mabshoff created at 2007-11-28 22:26:44",
     "created_at": "2007-11-28T22:26:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1328",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_008500.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.8.14-partitions_c.h-on-Solaris-unclean.patch](tarball://root/attachments/some-uuid/ticket1328/Sage-2.8.14-partitions_c.h-on-Solaris-unclean.patch) by mabshoff created at 2007-11-28 22:26:44
 
 
 

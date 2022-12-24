@@ -119,7 +119,7 @@ Mercurial patch
 archive/issue_comments_074833.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Solaris-specific-patch-for-pyprocessing.patch](tarball://root/attachments/some-uuid/ticket8371/Solaris-specific-patch-for-pyprocessing.patch) by drkirkby created at 2010-03-01 15:21:56",
     "created_at": "2010-03-01T15:21:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8371",
     "type": "issue_comment",
@@ -128,7 +128,7 @@ archive/issue_comments_074833.json:
 }
 ```
 
-Attachment
+Attachment [Solaris-specific-patch-for-pyprocessing.patch](tarball://root/attachments/some-uuid/ticket8371/Solaris-specific-patch-for-pyprocessing.patch) by drkirkby created at 2010-03-01 15:21:56
 
 
 

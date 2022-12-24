@@ -246,7 +246,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_097092.json:
 ```json
 {
-    "body": "Attachment\n\n#9838: bugfix in WeylCharac terRing call method",
+    "body": "Attachment [trac_9838.patch](tarball://root/attachments/some-uuid/ticket9838/trac_9838.patch) by bump created at 2010-10-27 16:25:02\n\n#9838: bugfix in WeylCharac terRing call method",
     "created_at": "2010-10-27T16:25:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9837",
     "type": "issue_comment",
@@ -255,7 +255,7 @@ archive/issue_comments_097092.json:
 }
 ```
 
-Attachment
+Attachment [trac_9838.patch](tarball://root/attachments/some-uuid/ticket9838/trac_9838.patch) by bump created at 2010-10-27 16:25:02
 
 #9838: bugfix in WeylCharac terRing call method
 

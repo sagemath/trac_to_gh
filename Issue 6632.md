@@ -48,7 +48,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6632
 archive/issue_comments_054350.json:
 ```json
 {
-    "body": "Attachment\n\nPatch to fix bug in blocks_and_cut_vertices() in graph.py",
+    "body": "Attachment [blocks_and_cut_vertices-6632.patch](tarball://root/attachments/some-uuid/ticket6632/blocks_and_cut_vertices-6632.patch) by hartke created at 2009-07-26 22:13:21\n\nPatch to fix bug in blocks_and_cut_vertices() in graph.py",
     "created_at": "2009-07-26T22:13:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6632",
     "type": "issue_comment",
@@ -57,7 +57,7 @@ archive/issue_comments_054350.json:
 }
 ```
 
-Attachment
+Attachment [blocks_and_cut_vertices-6632.patch](tarball://root/attachments/some-uuid/ticket6632/blocks_and_cut_vertices-6632.patch) by hartke created at 2009-07-26 22:13:21
 
 Patch to fix bug in blocks_and_cut_vertices() in graph.py
 
@@ -185,7 +185,7 @@ sage: g.blocks_and_cut_vertices() # your implementation
 archive/issue_comments_054355.json:
 ```json
 {
-    "body": "Attachment\n\nApply both patches.",
+    "body": "Attachment [trac_6632-ref.patch](tarball://root/attachments/some-uuid/ticket6632/trac_6632-ref.patch) by rlm created at 2009-08-03 01:14:39\n\nApply both patches.",
     "created_at": "2009-08-03T01:14:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6632",
     "type": "issue_comment",
@@ -194,7 +194,7 @@ archive/issue_comments_054355.json:
 }
 ```
 
-Attachment
+Attachment [trac_6632-ref.patch](tarball://root/attachments/some-uuid/ticket6632/trac_6632-ref.patch) by rlm created at 2009-08-03 01:14:39
 
 Apply both patches.
 

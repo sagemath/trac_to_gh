@@ -125,7 +125,7 @@ This does not fix the final example, because that is a bug in _tasteless_ticks a
 archive/issue_comments_044111.json:
 ```json
 {
-    "body": "Attachment\n\nI would like to review this patch, but I don't understand how to reproduce the bug. What is \"P\" from the examples in the ticket description?",
+    "body": "Attachment [trac_5649-small-number-plot.patch](tarball://root/attachments/some-uuid/ticket5649/trac_5649-small-number-plot.patch) by wcauchois created at 2009-07-16 18:46:24\n\nI would like to review this patch, but I don't understand how to reproduce the bug. What is \"P\" from the examples in the ticket description?",
     "created_at": "2009-07-16T18:46:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5649",
     "type": "issue_comment",
@@ -134,7 +134,7 @@ archive/issue_comments_044111.json:
 }
 ```
 
-Attachment
+Attachment [trac_5649-small-number-plot.patch](tarball://root/attachments/some-uuid/ticket5649/trac_5649-small-number-plot.patch) by wcauchois created at 2009-07-16 18:46:24
 
 I would like to review this patch, but I don't understand how to reproduce the bug. What is "P" from the examples in the ticket description?
 

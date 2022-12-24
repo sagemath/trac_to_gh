@@ -54,7 +54,7 @@ Steenrod algebra calculations
 archive/issue_comments_023786.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3397.patch](tarball://root/attachments/some-uuid/ticket3397/3397.patch) by craigcitro created at 2008-06-15 21:17:11",
     "created_at": "2008-06-15T21:17:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3397",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_023786.json:
 }
 ```
 
-Attachment
+Attachment [3397.patch](tarball://root/attachments/some-uuid/ticket3397/3397.patch) by craigcitro created at 2008-06-15 21:17:11
 
 
 
@@ -90,7 +90,7 @@ Changing keywords from "steenrod algebra" to "steenrod algebra, editor_craigcitr
 archive/issue_comments_023788.json:
 ```json
 {
-    "body": "Attachment\n\nHi David,\n\nI don't know how far the review has gone, but I have the odd primary Steenrod algebras working now.  This patch replaces the old one.  There are a few other small changes, too, such as adding a 'Sq' method and a 'pst' method to the `SteenrodAlgebra` class, so you can do things like `A = SteenrodAlgebra(2); A.Sq(5,1)` to define elements.  Also, there were minor fixes and some coercion issues which I've more or less straightened out -- see the discussion here:\n[http://groups.google.com/group/sage-support/browse_frm/thread/991cc3d21feddcf4/38b6e42d29b0f3d8?lnk=gst&q=coercion#38b6e42d29b0f3d8](http://groups.google.com/group/sage-support/browse_frm/thread/991cc3d21feddcf4/38b6e42d29b0f3d8?lnk=gst&q=coercion#38b6e42d29b0f3d8)\n\nIf you've made a lot of progress on changes, etc., then ignore this, and I'll work on incorporating my changes into your version when it's ready.\n\nIf I recall our conversation from late June correctly, the main thing still to be done here is to incorporate the default basis into the definition of a Steenrod algebra, so you would say \n\n\n```\n  A = SteenrodAlgebra(2, 'milnor')\n```\n\n\nand then all elements of A will print in the Milnor basis (and similarly for other choices of basis).  Then the 'basis' method (which right now just prints a string) would be rewritten to coerce the element into a `SteenrodAlgebra` with the chosen basis, hence returning an actual element, not just printing a string. I can work on this, if you don't have the time right now.",
+    "body": "Attachment [3397-with-odd-primes.patch](tarball://root/attachments/some-uuid/ticket3397/3397-with-odd-primes.patch) by jhpalmieri created at 2008-07-15 18:01:56\n\nHi David,\n\nI don't know how far the review has gone, but I have the odd primary Steenrod algebras working now.  This patch replaces the old one.  There are a few other small changes, too, such as adding a 'Sq' method and a 'pst' method to the `SteenrodAlgebra` class, so you can do things like `A = SteenrodAlgebra(2); A.Sq(5,1)` to define elements.  Also, there were minor fixes and some coercion issues which I've more or less straightened out -- see the discussion here:\n[http://groups.google.com/group/sage-support/browse_frm/thread/991cc3d21feddcf4/38b6e42d29b0f3d8?lnk=gst&q=coercion#38b6e42d29b0f3d8](http://groups.google.com/group/sage-support/browse_frm/thread/991cc3d21feddcf4/38b6e42d29b0f3d8?lnk=gst&q=coercion#38b6e42d29b0f3d8)\n\nIf you've made a lot of progress on changes, etc., then ignore this, and I'll work on incorporating my changes into your version when it's ready.\n\nIf I recall our conversation from late June correctly, the main thing still to be done here is to incorporate the default basis into the definition of a Steenrod algebra, so you would say \n\n\n```\n  A = SteenrodAlgebra(2, 'milnor')\n```\n\n\nand then all elements of A will print in the Milnor basis (and similarly for other choices of basis).  Then the 'basis' method (which right now just prints a string) would be rewritten to coerce the element into a `SteenrodAlgebra` with the chosen basis, hence returning an actual element, not just printing a string. I can work on this, if you don't have the time right now.",
     "created_at": "2008-07-15T18:01:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3397",
     "type": "issue_comment",
@@ -99,7 +99,7 @@ archive/issue_comments_023788.json:
 }
 ```
 
-Attachment
+Attachment [3397-with-odd-primes.patch](tarball://root/attachments/some-uuid/ticket3397/3397-with-odd-primes.patch) by jhpalmieri created at 2008-07-15 18:01:56
 
 Hi David,
 
@@ -171,7 +171,7 @@ Other than that, I have some more changes in mind, but they are for some time in
 archive/issue_comments_023790.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3397-2008-07-18.patch](tarball://root/attachments/some-uuid/ticket3397/3397-2008-07-18.patch) by jhpalmieri created at 2008-07-18 15:49:29",
     "created_at": "2008-07-18T15:49:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3397",
     "type": "issue_comment",
@@ -180,7 +180,7 @@ archive/issue_comments_023790.json:
 }
 ```
 
-Attachment
+Attachment [3397-2008-07-18.patch](tarball://root/attachments/some-uuid/ticket3397/3397-2008-07-18.patch) by jhpalmieri created at 2008-07-18 15:49:29
 
 
 
@@ -567,7 +567,7 @@ doc patch: add Steenrod algebra stuff to reference manual
 archive/issue_comments_023796.json:
 ```json
 {
-    "body": "Attachment\n\nnew version of Steenrod algebra package, incorporating changes suggested by was",
+    "body": "Attachment [3397-2008-07-30-doc.patch](tarball://root/attachments/some-uuid/ticket3397/3397-2008-07-30-doc.patch) by jhpalmieri created at 2008-07-31 03:25:33\n\nnew version of Steenrod algebra package, incorporating changes suggested by was",
     "created_at": "2008-07-31T03:25:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3397",
     "type": "issue_comment",
@@ -576,7 +576,7 @@ archive/issue_comments_023796.json:
 }
 ```
 
-Attachment
+Attachment [3397-2008-07-30-doc.patch](tarball://root/attachments/some-uuid/ticket3397/3397-2008-07-30-doc.patch) by jhpalmieri created at 2008-07-31 03:25:33
 
 new version of Steenrod algebra package, incorporating changes suggested by was
 
@@ -587,7 +587,7 @@ new version of Steenrod algebra package, incorporating changes suggested by was
 archive/issue_comments_023797.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3397-2008-07-30-main.patch](tarball://root/attachments/some-uuid/ticket3397/3397-2008-07-30-main.patch) by was created at 2008-08-10 04:27:02",
     "created_at": "2008-08-10T04:27:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3397",
     "type": "issue_comment",
@@ -596,7 +596,7 @@ archive/issue_comments_023797.json:
 }
 ```
 
-Attachment
+Attachment [3397-2008-07-30-main.patch](tarball://root/attachments/some-uuid/ticket3397/3397-2008-07-30-main.patch) by was created at 2008-08-10 04:27:02
 
 
 
@@ -605,7 +605,7 @@ Attachment
 archive/issue_comments_023798.json:
 ```json
 {
-    "body": "Attachment\n\nExcellent.  Positive review.  This is ready to go in!\n\nI added a small patch that changes LaTeX to latex, and fixes a few latex typos. \n\nMabshoff, to apply this apply:\n\n* 3397-2008-07-30-doc.patch \n* 3397-2008-07-30-main.patch\n* sage-3397-apply_after-3397-2008-07-30-main.patch",
+    "body": "Attachment [sage-3397-apply_after-3397-2008-07-30-main.patch](tarball://root/attachments/some-uuid/ticket3397/sage-3397-apply_after-3397-2008-07-30-main.patch) by was created at 2008-08-10 04:45:53\n\nExcellent.  Positive review.  This is ready to go in!\n\nI added a small patch that changes LaTeX to latex, and fixes a few latex typos. \n\nMabshoff, to apply this apply:\n\n* 3397-2008-07-30-doc.patch \n* 3397-2008-07-30-main.patch\n* sage-3397-apply_after-3397-2008-07-30-main.patch",
     "created_at": "2008-08-10T04:45:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3397",
     "type": "issue_comment",
@@ -614,7 +614,7 @@ archive/issue_comments_023798.json:
 }
 ```
 
-Attachment
+Attachment [sage-3397-apply_after-3397-2008-07-30-main.patch](tarball://root/attachments/some-uuid/ticket3397/sage-3397-apply_after-3397-2008-07-30-main.patch) by was created at 2008-08-10 04:45:53
 
 Excellent.  Positive review.  This is ready to go in!
 

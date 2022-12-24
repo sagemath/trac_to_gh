@@ -85,7 +85,7 @@ fixes this problem.
 archive/issue_comments_006031.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [987.patch](tarball://root/attachments/some-uuid/ticket987/987.patch) by was created at 2007-10-25 01:49:34",
     "created_at": "2007-10-25T01:49:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/987",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_006031.json:
 }
 ```
 
-Attachment
+Attachment [987.patch](tarball://root/attachments/some-uuid/ticket987/987.patch) by was created at 2007-10-25 01:49:34
 
 
 
@@ -103,7 +103,7 @@ Attachment
 archive/issue_comments_006032.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [987b.patch](tarball://root/attachments/some-uuid/ticket987/987b.patch) by was created at 2007-10-25 02:34:53",
     "created_at": "2007-10-25T02:34:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/987",
     "type": "issue_comment",
@@ -112,7 +112,7 @@ archive/issue_comments_006032.json:
 }
 ```
 
-Attachment
+Attachment [987b.patch](tarball://root/attachments/some-uuid/ticket987/987b.patch) by was created at 2007-10-25 02:34:53
 
 
 

@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3382
 archive/issue_comments_023674.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3382_newton_polytope.patch](tarball://root/attachments/some-uuid/ticket3382/trac_3382_newton_polytope.patch) by mabshoff created at 2008-06-08 19:14:00",
     "created_at": "2008-06-08T19:14:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3382",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_023674.json:
 }
 ```
 
-Attachment
+Attachment [trac_3382_newton_polytope.patch](tarball://root/attachments/some-uuid/ticket3382/trac_3382_newton_polytope.patch) by mabshoff created at 2008-06-08 19:14:00
 
 
 

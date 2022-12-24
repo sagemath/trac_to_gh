@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4121
 archive/issue_comments_029887.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.  Good catch.",
+    "body": "Attachment [trac_4121-translation-edge-labels.patch](tarball://root/attachments/some-uuid/ticket4121/trac_4121-translation-edge-labels.patch) by mhansen created at 2008-09-15 00:00:12\n\nLooks good to me.  Good catch.",
     "created_at": "2008-09-15T00:00:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4121",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_029887.json:
 }
 ```
 
-Attachment
+Attachment [trac_4121-translation-edge-labels.patch](tarball://root/attachments/some-uuid/ticket4121/trac_4121-translation-edge-labels.patch) by mhansen created at 2008-09-15 00:00:12
 
 Looks good to me.  Good catch.
 

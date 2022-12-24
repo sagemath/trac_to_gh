@@ -517,7 +517,7 @@ Changing status from new to assigned.
 archive/issue_comments_039149.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [unique_representation-5120-submitted.patch](tarball://root/attachments/some-uuid/ticket5120/unique_representation-5120-submitted.patch) by nthiery created at 2009-05-19 07:10:50",
     "created_at": "2009-05-19T07:10:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5120",
     "type": "issue_comment",
@@ -526,7 +526,7 @@ archive/issue_comments_039149.json:
 }
 ```
 
-Attachment
+Attachment [unique_representation-5120-submitted.patch](tarball://root/attachments/some-uuid/ticket5120/unique_representation-5120-submitted.patch) by nthiery created at 2009-05-19 07:10:50
 
 
 

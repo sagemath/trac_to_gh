@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2098
 archive/issue_comments_013569.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [debian1.patch](tarball://root/attachments/some-uuid/ticket2098/debian1.patch) by tabbott created at 2008-02-08 03:52:53",
     "created_at": "2008-02-08T03:52:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2098",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_013569.json:
 }
 ```
 
-Attachment
+Attachment [debian1.patch](tarball://root/attachments/some-uuid/ticket2098/debian1.patch) by tabbott created at 2008-02-08 03:52:53
 
 
 
@@ -49,7 +49,7 @@ Attachment
 archive/issue_comments_013570.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [debian2.patch](tarball://root/attachments/some-uuid/ticket2098/debian2.patch) by tabbott created at 2008-02-08 21:40:07",
     "created_at": "2008-02-08T21:40:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2098",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_013570.json:
 }
 ```
 
-Attachment
+Attachment [debian2.patch](tarball://root/attachments/some-uuid/ticket2098/debian2.patch) by tabbott created at 2008-02-08 21:40:07
 
 
 
@@ -67,7 +67,7 @@ Attachment
 archive/issue_comments_013571.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [debian4.patch](tarball://root/attachments/some-uuid/ticket2098/debian4.patch) by tabbott created at 2008-02-10 02:07:43",
     "created_at": "2008-02-10T02:07:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2098",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_013571.json:
 }
 ```
 
-Attachment
+Attachment [debian4.patch](tarball://root/attachments/some-uuid/ticket2098/debian4.patch) by tabbott created at 2008-02-10 02:07:43
 
 
 
@@ -135,7 +135,7 @@ The 5th patch is to the sage spkg, not sage_scripts.
 archive/issue_comments_013574.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [debian5.patch](tarball://root/attachments/some-uuid/ticket2098/debian5.patch) by tabbott created at 2008-02-10 03:21:32",
     "created_at": "2008-02-10T03:21:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2098",
     "type": "issue_comment",
@@ -144,7 +144,7 @@ archive/issue_comments_013574.json:
 }
 ```
 
-Attachment
+Attachment [debian5.patch](tarball://root/attachments/some-uuid/ticket2098/debian5.patch) by tabbott created at 2008-02-10 03:21:32
 
 
 
@@ -211,7 +211,7 @@ Merged debian1.patch-debian5.patch in Sage 2.10.2.alpha0
 archive/issue_comments_013578.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch is needed to make the non-Debianized build work again",
+    "body": "Attachment [Sage-2.10.2.alpha2-fix-rudimentatry-Debian-support.patch](tarball://root/attachments/some-uuid/ticket2098/Sage-2.10.2.alpha2-fix-rudimentatry-Debian-support.patch) by mabshoff created at 2008-02-14 17:10:51\n\nThis patch is needed to make the non-Debianized build work again",
     "created_at": "2008-02-14T17:10:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2098",
     "type": "issue_comment",
@@ -220,6 +220,6 @@ archive/issue_comments_013578.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.10.2.alpha2-fix-rudimentatry-Debian-support.patch](tarball://root/attachments/some-uuid/ticket2098/Sage-2.10.2.alpha2-fix-rudimentatry-Debian-support.patch) by mabshoff created at 2008-02-14 17:10:51
 
 This patch is needed to make the non-Debianized build work again

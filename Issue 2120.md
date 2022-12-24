@@ -715,7 +715,7 @@ Changing status from new to assigned.
 archive/issue_comments_013904.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch trac-2120-maple_interface.patch completely fixes all these problems on Maple with OS X.   It may partly break things on Linux, maybe. (?)  I don't have a good net connection with access to Linux Maple right now for testing, but will someday and then post a followup patch that fixes any issues.\n\nNOTE: This patch *vastly* improves the robustness of the Maple interface, to put it mildly.",
+    "body": "Attachment [trac-2120-maple_interface.patch](tarball://root/attachments/some-uuid/ticket2120/trac-2120-maple_interface.patch) by was created at 2008-02-09 02:06:03\n\nThe attached patch trac-2120-maple_interface.patch completely fixes all these problems on Maple with OS X.   It may partly break things on Linux, maybe. (?)  I don't have a good net connection with access to Linux Maple right now for testing, but will someday and then post a followup patch that fixes any issues.\n\nNOTE: This patch *vastly* improves the robustness of the Maple interface, to put it mildly.",
     "created_at": "2008-02-09T02:06:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2120",
     "type": "issue_comment",
@@ -724,7 +724,7 @@ archive/issue_comments_013904.json:
 }
 ```
 
-Attachment
+Attachment [trac-2120-maple_interface.patch](tarball://root/attachments/some-uuid/ticket2120/trac-2120-maple_interface.patch) by was created at 2008-02-09 02:06:03
 
 The attached patch trac-2120-maple_interface.patch completely fixes all these problems on Maple with OS X.   It may partly break things on Linux, maybe. (?)  I don't have a good net connection with access to Linux Maple right now for testing, but will someday and then post a followup patch that fixes any issues.
 
@@ -900,7 +900,7 @@ Hunk #6 FAILED at 606
 archive/issue_comments_013910.json:
 ```json
 {
-    "body": "Attachment\n\nThe second patch rebases the *much* earlier patch.  It makes doctests and the command line work for me on sage.math, but not having maple I need testers on consumer linux distros and especially Mac OS X.",
+    "body": "Attachment [trac-2120-maple_interface-2.patch](tarball://root/attachments/some-uuid/ticket2120/trac-2120-maple_interface-2.patch) by ncalexan created at 2009-04-01 01:48:24\n\nThe second patch rebases the *much* earlier patch.  It makes doctests and the command line work for me on sage.math, but not having maple I need testers on consumer linux distros and especially Mac OS X.",
     "created_at": "2009-04-01T01:48:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2120",
     "type": "issue_comment",
@@ -909,7 +909,7 @@ archive/issue_comments_013910.json:
 }
 ```
 
-Attachment
+Attachment [trac-2120-maple_interface-2.patch](tarball://root/attachments/some-uuid/ticket2120/trac-2120-maple_interface-2.patch) by ncalexan created at 2009-04-01 01:48:24
 
 The second patch rebases the *much* earlier patch.  It makes doctests and the command line work for me on sage.math, but not having maple I need testers on consumer linux distros and especially Mac OS X.
 

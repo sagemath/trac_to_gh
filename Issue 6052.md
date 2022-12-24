@@ -46,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6052
 archive/issue_comments_048213.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.  I just updated some minor Sphinx formatting issues in the patch.\n\nOther than that, all tests pass and things look good to me.",
+    "body": "Attachment [trac_6052.patch](tarball://root/attachments/some-uuid/ticket6052/trac_6052.patch) by mhansen created at 2009-05-19 04:59:21\n\nLooks good to me.  I just updated some minor Sphinx formatting issues in the patch.\n\nOther than that, all tests pass and things look good to me.",
     "created_at": "2009-05-19T04:59:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6052",
     "type": "issue_comment",
@@ -55,7 +55,7 @@ archive/issue_comments_048213.json:
 }
 ```
 
-Attachment
+Attachment [trac_6052.patch](tarball://root/attachments/some-uuid/ticket6052/trac_6052.patch) by mhansen created at 2009-05-19 04:59:21
 
 Looks good to me.  I just updated some minor Sphinx formatting issues in the patch.
 

@@ -74,7 +74,7 @@ Changing assignee from was to aginiewicz.
 archive/issue_comments_026333.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [test.dat](tarball://root/attachments/some-uuid/ticket3710/test.dat) by aginiewicz created at 2008-07-23 00:20:15",
     "created_at": "2008-07-23T00:20:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3710",
     "type": "issue_comment",
@@ -83,7 +83,7 @@ archive/issue_comments_026333.json:
 }
 ```
 
-Attachment
+Attachment [test.dat](tarball://root/attachments/some-uuid/ticket3710/test.dat) by aginiewicz created at 2008-07-23 00:20:15
 
 
 

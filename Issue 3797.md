@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3797
 archive/issue_comments_026999.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac3797-graph_generator_improvements.patch](tarball://root/attachments/some-uuid/ticket3797/trac3797-graph_generator_improvements.patch) by rlm created at 2008-08-09 23:15:47",
     "created_at": "2008-08-09T23:15:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3797",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_026999.json:
 }
 ```
 
-Attachment
+Attachment [trac3797-graph_generator_improvements.patch](tarball://root/attachments/some-uuid/ticket3797/trac3797-graph_generator_improvements.patch) by rlm created at 2008-08-09 23:15:47
 
 
 
@@ -75,7 +75,7 @@ Depends on #3789.
 archive/issue_comments_027001.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac3797-augment_by_verts.patch](tarball://root/attachments/some-uuid/ticket3797/trac3797-augment_by_verts.patch) by rlm created at 2008-08-10 03:22:38",
     "created_at": "2008-08-10T03:22:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3797",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_027001.json:
 }
 ```
 
-Attachment
+Attachment [trac3797-augment_by_verts.patch](tarball://root/attachments/some-uuid/ticket3797/trac3797-augment_by_verts.patch) by rlm created at 2008-08-10 03:22:38
 
 
 
@@ -152,7 +152,7 @@ Is that even clearer?
 archive/issue_comments_027003.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good!",
+    "body": "Attachment [trac3797-docs.patch](tarball://root/attachments/some-uuid/ticket3797/trac3797-docs.patch) by ncalexan created at 2008-08-10 06:20:13\n\nLooks good!",
     "created_at": "2008-08-10T06:20:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3797",
     "type": "issue_comment",
@@ -161,7 +161,7 @@ archive/issue_comments_027003.json:
 }
 ```
 
-Attachment
+Attachment [trac3797-docs.patch](tarball://root/attachments/some-uuid/ticket3797/trac3797-docs.patch) by ncalexan created at 2008-08-10 06:20:13
 
 Looks good!
 

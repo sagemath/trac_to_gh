@@ -521,7 +521,7 @@ Patch attached.
 archive/issue_comments_005806.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [axiom.patch](tarball://root/attachments/some-uuid/ticket953/axiom.patch) by mhansen created at 2007-10-21 02:16:51",
     "created_at": "2007-10-21T02:16:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/953",
     "type": "issue_comment",
@@ -530,7 +530,7 @@ archive/issue_comments_005806.json:
 }
 ```
 
-Attachment
+Attachment [axiom.patch](tarball://root/attachments/some-uuid/ticket953/axiom.patch) by mhansen created at 2007-10-21 02:16:51
 
 
 

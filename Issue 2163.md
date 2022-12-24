@@ -200,7 +200,7 @@ Changing status from closed to reopened.
 archive/issue_comments_014208.json:
 ```json
 {
-    "body": "Attachment\n\nI had already fixed some problems caused by removing the 'nodoctest' at the top before realizing there's no good way to test the function which I added.\n\nThe thing which addresses this ticket is the last hunk at the bottom of the patch.",
+    "body": "Attachment [trac_2163.patch](tarball://root/attachments/some-uuid/ticket2163/trac_2163.patch) by mhansen created at 2008-12-02 08:44:34\n\nI had already fixed some problems caused by removing the 'nodoctest' at the top before realizing there's no good way to test the function which I added.\n\nThe thing which addresses this ticket is the last hunk at the bottom of the patch.",
     "created_at": "2008-12-02T08:44:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2163",
     "type": "issue_comment",
@@ -209,7 +209,7 @@ archive/issue_comments_014208.json:
 }
 ```
 
-Attachment
+Attachment [trac_2163.patch](tarball://root/attachments/some-uuid/ticket2163/trac_2163.patch) by mhansen created at 2008-12-02 08:44:34
 
 I had already fixed some problems caused by removing the 'nodoctest' at the top before realizing there's no good way to test the function which I added.
 

@@ -189,7 +189,7 @@ gens = kwds.pop('gens', args)
 archive/issue_comments_016813.json:
 ```json
 {
-    "body": "Attachment\n\nNice. New patch with Mike's suggestion incorporated posted.",
+    "body": "Attachment [trac_2480.patch](tarball://root/attachments/some-uuid/ticket2480/trac_2480.patch) by craigcitro created at 2010-01-20 07:07:39\n\nNice. New patch with Mike's suggestion incorporated posted.",
     "created_at": "2010-01-20T07:07:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2480",
     "type": "issue_comment",
@@ -198,7 +198,7 @@ archive/issue_comments_016813.json:
 }
 ```
 
-Attachment
+Attachment [trac_2480.patch](tarball://root/attachments/some-uuid/ticket2480/trac_2480.patch) by craigcitro created at 2010-01-20 07:07:39
 
 Nice. New patch with Mike's suggestion incorporated posted.
 

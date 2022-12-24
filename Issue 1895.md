@@ -49,7 +49,7 @@ deal with passed through GB kwds
 archive/issue_comments_011997.json:
 ```json
 {
-    "body": "Attachment\n\nPatch looks good to me.",
+    "body": "Attachment [trac_1895_gb_kwds.patch](tarball://root/attachments/some-uuid/ticket1895/trac_1895_gb_kwds.patch) by mabshoff created at 2008-01-23 22:09:01\n\nPatch looks good to me.",
     "created_at": "2008-01-23T22:09:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1895",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_011997.json:
 }
 ```
 
-Attachment
+Attachment [trac_1895_gb_kwds.patch](tarball://root/attachments/some-uuid/ticket1895/trac_1895_gb_kwds.patch) by mabshoff created at 2008-01-23 22:09:01
 
 Patch looks good to me.
 

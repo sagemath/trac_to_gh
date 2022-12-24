@@ -77,7 +77,7 @@ http://sage.math.washington.edu/home/was/tmp/screenshot-comment.png
 archive/issue_comments_011805.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-1864.patch](tarball://root/attachments/some-uuid/ticket1864/sage-1864.patch) by was created at 2008-05-11 06:06:32",
     "created_at": "2008-05-11T06:06:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1864",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_011805.json:
 }
 ```
 
-Attachment
+Attachment [sage-1864.patch](tarball://root/attachments/some-uuid/ticket1864/sage-1864.patch) by was created at 2008-05-11 06:06:32
 
 
 

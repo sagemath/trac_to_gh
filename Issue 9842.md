@@ -98,7 +98,7 @@ Changing priority from major to minor.
 archive/issue_comments_097140.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9843.patch](tarball://root/attachments/some-uuid/ticket9843/trac_9843.patch) by AlexGhitza created at 2010-09-01 02:43:28",
     "created_at": "2010-09-01T02:43:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9842",
     "type": "issue_comment",
@@ -107,7 +107,7 @@ archive/issue_comments_097140.json:
 }
 ```
 
-Attachment
+Attachment [trac_9843.patch](tarball://root/attachments/some-uuid/ticket9843/trac_9843.patch) by AlexGhitza created at 2010-09-01 02:43:28
 
 
 

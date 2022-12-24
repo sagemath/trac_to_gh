@@ -239,7 +239,7 @@ The SPKG is available at:
 archive/issue_comments_060485.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [polybori_fixes.patch](tarball://root/attachments/some-uuid/ticket7271/polybori_fixes.patch) by malb created at 2009-10-28 16:28:09",
     "created_at": "2009-10-28T16:28:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7271",
     "type": "issue_comment",
@@ -248,7 +248,7 @@ archive/issue_comments_060485.json:
 }
 ```
 
-Attachment
+Attachment [polybori_fixes.patch](tarball://root/attachments/some-uuid/ticket7271/polybori_fixes.patch) by malb created at 2009-10-28 16:28:09
 
 
 
@@ -295,7 +295,7 @@ I am attaching a new deps file to this ticket, to address
 archive/issue_comments_060488.json:
 ```json
 {
-    "body": "Attachment\n\nThe only thing changed in the deps file (which isn't under revision control) is that PolyBoRi now depends on M4RI",
+    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket7271/deps) by malb created at 2009-11-02 10:43:07\n\nThe only thing changed in the deps file (which isn't under revision control) is that PolyBoRi now depends on M4RI",
     "created_at": "2009-11-02T10:43:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7271",
     "type": "issue_comment",
@@ -304,7 +304,7 @@ archive/issue_comments_060488.json:
 }
 ```
 
-Attachment
+Attachment [deps](tarball://root/attachments/some-uuid/ticket7271/deps) by malb created at 2009-11-02 10:43:07
 
 The only thing changed in the deps file (which isn't under revision control) is that PolyBoRi now depends on M4RI
 

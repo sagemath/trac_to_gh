@@ -210,7 +210,7 @@ Works perfectly, but it may be worth adding a short docstring for `_process_view
 archive/issue_comments_019712.json:
 ```json
 {
-    "body": "Attachment\n\nbased on sage 4.3.1.rc0",
+    "body": "Attachment [trac_2872.patch](tarball://root/attachments/some-uuid/ticket2872/trac_2872.patch) by wcauchois created at 2010-01-19 00:00:51\n\nbased on sage 4.3.1.rc0",
     "created_at": "2010-01-19T00:00:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2872",
     "type": "issue_comment",
@@ -219,7 +219,7 @@ archive/issue_comments_019712.json:
 }
 ```
 
-Attachment
+Attachment [trac_2872.patch](tarball://root/attachments/some-uuid/ticket2872/trac_2872.patch) by wcauchois created at 2010-01-19 00:00:51
 
 based on sage 4.3.1.rc0
 

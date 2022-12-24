@@ -120,7 +120,7 @@ Remove assignee mabshoff.
 archive/issue_comments_044778.json:
 ```json
 {
-    "body": "Attachment\n\nThis works for me with all long tests.",
+    "body": "Attachment [ntl-5.5.2.p1.spkg](tarball://root/attachments/some-uuid/ticket5731/ntl-5.5.2.p1.spkg) by mraum created at 2011-03-21 23:30:25\n\nThis works for me with all long tests.",
     "created_at": "2011-03-21T23:30:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5731",
     "type": "issue_comment",
@@ -129,7 +129,7 @@ archive/issue_comments_044778.json:
 }
 ```
 
-Attachment
+Attachment [ntl-5.5.2.p1.spkg](tarball://root/attachments/some-uuid/ticket5731/ntl-5.5.2.p1.spkg) by mraum created at 2011-03-21 23:30:25
 
 This works for me with all long tests.
 

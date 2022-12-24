@@ -105,7 +105,7 @@ patch for file qrank/getcurve.cc which fixes the problem
 archive/issue_comments_009051.json:
 ```json
 {
-    "body": "Attachment\n\nI have fixed this.  Patch attached.  JEC",
+    "body": "Attachment [getcurve.patch](tarball://root/attachments/some-uuid/ticket1403/getcurve.patch) by cremona created at 2007-12-05 20:23:15\n\nI have fixed this.  Patch attached.  JEC",
     "created_at": "2007-12-05T20:23:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1403",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_009051.json:
 }
 ```
 
-Attachment
+Attachment [getcurve.patch](tarball://root/attachments/some-uuid/ticket1403/getcurve.patch) by cremona created at 2007-12-05 20:23:15
 
 I have fixed this.  Patch attached.  JEC
 
@@ -293,7 +293,7 @@ Changing status from closed to reopened.
 archive/issue_comments_009061.json:
 ```json
 {
-    "body": "Attachment\n\nSecond patch file reader.h.patch to be applied to qcurves/reader.h will stop the same happening for other binaries (e.g. tate, conductor etc) built in the qcurves directory.",
+    "body": "Attachment [reader.h.patch](tarball://root/attachments/some-uuid/ticket1403/reader.h.patch) by cremona created at 2007-12-06 09:09:08\n\nSecond patch file reader.h.patch to be applied to qcurves/reader.h will stop the same happening for other binaries (e.g. tate, conductor etc) built in the qcurves directory.",
     "created_at": "2007-12-06T09:09:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1403",
     "type": "issue_comment",
@@ -302,7 +302,7 @@ archive/issue_comments_009061.json:
 }
 ```
 
-Attachment
+Attachment [reader.h.patch](tarball://root/attachments/some-uuid/ticket1403/reader.h.patch) by cremona created at 2007-12-06 09:09:08
 
 Second patch file reader.h.patch to be applied to qcurves/reader.h will stop the same happening for other binaries (e.g. tate, conductor etc) built in the qcurves directory.
 

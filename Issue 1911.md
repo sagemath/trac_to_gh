@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1911
 archive/issue_comments_012105.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me, except for a very minor point: you changed the description of the output from \"an interval that contains the index\" to \"an Integer\", but the function is indeed returning an interval, not an integer.",
+    "body": "Attachment [trac-1911-heegner_index.patch](tarball://root/attachments/some-uuid/ticket1911/trac-1911-heegner_index.patch) by AlexGhitza created at 2008-01-26 03:28:26\n\nLooks good to me, except for a very minor point: you changed the description of the output from \"an interval that contains the index\" to \"an Integer\", but the function is indeed returning an interval, not an integer.",
     "created_at": "2008-01-26T03:28:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1911",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_012105.json:
 }
 ```
 
-Attachment
+Attachment [trac-1911-heegner_index.patch](tarball://root/attachments/some-uuid/ticket1911/trac-1911-heegner_index.patch) by AlexGhitza created at 2008-01-26 03:28:26
 
 Looks good to me, except for a very minor point: you changed the description of the output from "an interval that contains the index" to "an Integer", but the function is indeed returning an interval, not an integer.
 
@@ -81,7 +81,7 @@ Several comments, but positive review with the additional patch:
 archive/issue_comments_012107.json:
 ```json
 {
-    "body": "Attachment\n\nMerged in Sage 2.10.1.rc0",
+    "body": "Attachment [1911-pt2.patch](tarball://root/attachments/some-uuid/ticket1911/1911-pt2.patch) by mabshoff created at 2008-01-26 11:21:14\n\nMerged in Sage 2.10.1.rc0",
     "created_at": "2008-01-26T11:21:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1911",
     "type": "issue_comment",
@@ -90,7 +90,7 @@ archive/issue_comments_012107.json:
 }
 ```
 
-Attachment
+Attachment [1911-pt2.patch](tarball://root/attachments/some-uuid/ticket1911/1911-pt2.patch) by mabshoff created at 2008-01-26 11:21:14
 
 Merged in Sage 2.10.1.rc0
 

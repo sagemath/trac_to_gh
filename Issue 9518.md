@@ -168,7 +168,7 @@ spkg-check for Pari
 archive/issue_comments_091504.json:
 ```json
 {
-    "body": "Attachment\n\nI note there is an error in `spkg-install` The very first line has some unwanted characters, with what displays as \"B1;2000;0c\". \n\nI leave you to sort that out!\n\n \n\n\n```\ndrkirkby@hawk:~/sage-4.5/spkg/standard/pari-2.3.5.p1$ head  spkg-install\nB1;2000;0c#!/bin/sh\n###########################################\n## PARI\n###########################################\n\nTOP=`pwd`\n\n# As of PARI 2.3.3, the compiler flag -fPIC is not added on Solaris, but it\n# needs to be if using gcc. I assume the equivalent will be needed on \n# other compilers. \ndrkirkby@hawk:~/sage-4.5/spkg/standard/pari-2.3.5.p1$ \n```\n",
+    "body": "Attachment [spkg-check](tarball://root/attachments/some-uuid/ticket9518/spkg-check) by drkirkby created at 2010-07-16 17:56:48\n\nI note there is an error in `spkg-install` The very first line has some unwanted characters, with what displays as \"B1;2000;0c\". \n\nI leave you to sort that out!\n\n \n\n\n```\ndrkirkby@hawk:~/sage-4.5/spkg/standard/pari-2.3.5.p1$ head  spkg-install\nB1;2000;0c#!/bin/sh\n###########################################\n## PARI\n###########################################\n\nTOP=`pwd`\n\n# As of PARI 2.3.3, the compiler flag -fPIC is not added on Solaris, but it\n# needs to be if using gcc. I assume the equivalent will be needed on \n# other compilers. \ndrkirkby@hawk:~/sage-4.5/spkg/standard/pari-2.3.5.p1$ \n```\n",
     "created_at": "2010-07-16T17:56:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9518",
     "type": "issue_comment",
@@ -177,7 +177,7 @@ archive/issue_comments_091504.json:
 }
 ```
 
-Attachment
+Attachment [spkg-check](tarball://root/attachments/some-uuid/ticket9518/spkg-check) by drkirkby created at 2010-07-16 17:56:48
 
 I note there is an error in `spkg-install` The very first line has some unwanted characters, with what displays as "B1;2000;0c". 
 

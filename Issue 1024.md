@@ -128,7 +128,7 @@ Changing status from new to assigned.
 archive/issue_comments_006269.json:
 ```json
 {
-    "body": "Attachment\n\nBefore the patch:\n\n```\n==15486== LEAK SUMMARY:\n==15486==    definitely lost: 3,945 bytes in 127 blocks.\n==15486==    indirectly lost: 27,744 bytes in 132 blocks.\n==15486==      possibly lost: 467,222 bytes in 875 blocks.\n==15486==    still reachable: 58,288,646 bytes in 841,344 blocks.\n==15486==         suppressed: 0 bytes in 0 blocks.\n```\n\nAfter the patch:\n\n```\n==15692== LEAK SUMMARY:\n==15692==    definitely lost: 3,865 bytes in 117 blocks.\n==15692==    indirectly lost: 129,896 bytes in 133 blocks.\n==15692==      possibly lost: 364,606 bytes in 873 blocks.\n==15692==    still reachable: 58,288,534 bytes in 841,340 blocks.\n==15692==         suppressed: 0 bytes in 0 blocks.\n```\n\nNotice that \"indirectly lost\" goes up, but that is due to some memory that was \"possibly lost\" being accounted for now is indirectly lost. That memory is lost inside LinBox.\n\nCheers,\n\nMichael",
+    "body": "Attachment [Sage-2.8.10.alpha1-fix-memleak-in-matrix_rational_sparse_mpq_vector_set_entry.patch](tarball://root/attachments/some-uuid/ticket1024/Sage-2.8.10.alpha1-fix-memleak-in-matrix_rational_sparse_mpq_vector_set_entry.patch) by mabshoff created at 2007-10-28 20:10:20\n\nBefore the patch:\n\n```\n==15486== LEAK SUMMARY:\n==15486==    definitely lost: 3,945 bytes in 127 blocks.\n==15486==    indirectly lost: 27,744 bytes in 132 blocks.\n==15486==      possibly lost: 467,222 bytes in 875 blocks.\n==15486==    still reachable: 58,288,646 bytes in 841,344 blocks.\n==15486==         suppressed: 0 bytes in 0 blocks.\n```\n\nAfter the patch:\n\n```\n==15692== LEAK SUMMARY:\n==15692==    definitely lost: 3,865 bytes in 117 blocks.\n==15692==    indirectly lost: 129,896 bytes in 133 blocks.\n==15692==      possibly lost: 364,606 bytes in 873 blocks.\n==15692==    still reachable: 58,288,534 bytes in 841,340 blocks.\n==15692==         suppressed: 0 bytes in 0 blocks.\n```\n\nNotice that \"indirectly lost\" goes up, but that is due to some memory that was \"possibly lost\" being accounted for now is indirectly lost. That memory is lost inside LinBox.\n\nCheers,\n\nMichael",
     "created_at": "2007-10-28T20:10:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1024",
     "type": "issue_comment",
@@ -137,7 +137,7 @@ archive/issue_comments_006269.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.8.10.alpha1-fix-memleak-in-matrix_rational_sparse_mpq_vector_set_entry.patch](tarball://root/attachments/some-uuid/ticket1024/Sage-2.8.10.alpha1-fix-memleak-in-matrix_rational_sparse_mpq_vector_set_entry.patch) by mabshoff created at 2007-10-28 20:10:20
 
 Before the patch:
 

@@ -51,7 +51,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5597
 archive/issue_comments_043602.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5597-coerce-actions.patch](tarball://root/attachments/some-uuid/ticket5597/5597-coerce-actions.patch) by robertwb created at 2009-03-24 05:17:58",
     "created_at": "2009-03-24T05:17:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5597",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_043602.json:
 }
 ```
 
-Attachment
+Attachment [5597-coerce-actions.patch](tarball://root/attachments/some-uuid/ticket5597/5597-coerce-actions.patch) by robertwb created at 2009-03-24 05:17:58
 
 
 
@@ -146,7 +146,7 @@ rebased against 4.1.1
 archive/issue_comments_043607.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5597-coerce-actions-new.patch](tarball://root/attachments/some-uuid/ticket5597/5597-coerce-actions-new.patch) by robertwb created at 2009-09-25 08:40:50",
     "created_at": "2009-09-25T08:40:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5597",
     "type": "issue_comment",
@@ -155,7 +155,7 @@ archive/issue_comments_043607.json:
 }
 ```
 
-Attachment
+Attachment [5597-coerce-actions-new.patch](tarball://root/attachments/some-uuid/ticket5597/5597-coerce-actions-new.patch) by robertwb created at 2009-09-25 08:40:50
 
 
 
@@ -164,7 +164,7 @@ Attachment
 archive/issue_comments_043608.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5597-coerce-actions-examples.patch](tarball://root/attachments/some-uuid/ticket5597/5597-coerce-actions-examples.patch) by robertwb created at 2009-09-25 08:41:36",
     "created_at": "2009-09-25T08:41:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5597",
     "type": "issue_comment",
@@ -173,7 +173,7 @@ archive/issue_comments_043608.json:
 }
 ```
 
-Attachment
+Attachment [5597-coerce-actions-examples.patch](tarball://root/attachments/some-uuid/ticket5597/5597-coerce-actions-examples.patch) by robertwb created at 2009-09-25 08:41:36
 
 
 
@@ -182,7 +182,7 @@ Attachment
 archive/issue_comments_043609.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5597-referee-comments.patch](tarball://root/attachments/some-uuid/ticket5597/5597-referee-comments.patch) by robertwb created at 2009-09-29 18:27:10",
     "created_at": "2009-09-29T18:27:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5597",
     "type": "issue_comment",
@@ -191,7 +191,7 @@ archive/issue_comments_043609.json:
 }
 ```
 
-Attachment
+Attachment [5597-referee-comments.patch](tarball://root/attachments/some-uuid/ticket5597/5597-referee-comments.patch) by robertwb created at 2009-09-29 18:27:10
 
 
 
@@ -386,7 +386,7 @@ Changing keywords from "" to "actions, left actions, right actions".
 archive/issue_comments_043618.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5597-infinite_polynomial_ring.patch](tarball://root/attachments/some-uuid/ticket5597/trac_5597-infinite_polynomial_ring.patch) by mhansen created at 2009-10-21 06:03:57",
     "created_at": "2009-10-21T06:03:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5597",
     "type": "issue_comment",
@@ -395,7 +395,7 @@ archive/issue_comments_043618.json:
 }
 ```
 
-Attachment
+Attachment [trac_5597-infinite_polynomial_ring.patch](tarball://root/attachments/some-uuid/ticket5597/trac_5597-infinite_polynomial_ring.patch) by mhansen created at 2009-10-21 06:03:57
 
 
 

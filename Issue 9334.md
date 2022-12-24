@@ -600,7 +600,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_088099.json:
 ```json
 {
-    "body": "Attachment\n\nOk, I checked at P.uniformizer() is just wrapping K.uniformizer(P).  So assuming K.uniformizer(P) is correct (which it appears to be), I've fixed the documentation for P.uniformizer().",
+    "body": "Attachment [trac_9334-hilbert.patch](tarball://root/attachments/some-uuid/ticket9334/trac_9334-hilbert.patch) by aly.deines created at 2010-08-20 01:20:53\n\nOk, I checked at P.uniformizer() is just wrapping K.uniformizer(P).  So assuming K.uniformizer(P) is correct (which it appears to be), I've fixed the documentation for P.uniformizer().",
     "created_at": "2010-08-20T01:20:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
@@ -609,7 +609,7 @@ archive/issue_comments_088099.json:
 }
 ```
 
-Attachment
+Attachment [trac_9334-hilbert.patch](tarball://root/attachments/some-uuid/ticket9334/trac_9334-hilbert.patch) by aly.deines created at 2010-08-20 01:20:53
 
 Ok, I checked at P.uniformizer() is just wrapping K.uniformizer(P).  So assuming K.uniformizer(P) is correct (which it appears to be), I've fixed the documentation for P.uniformizer().
 
@@ -782,7 +782,7 @@ interface to pari's nfhilbert, apply only this file
 archive/issue_comments_088106.json:
 ```json
 {
-    "body": "Attachment\n\nAll that needed to be done was wrap pari's nfhilbert function and copy Aly's doctests, but...\n\nOne of those doctests revealed yet another bug introduced by the pari upgrade. See [http://pari.math.u-bordeaux.fr/cgi-bin/bugreport.cgi?bug=1147](http://pari.math.u-bordeaux.fr/cgi-bin/bugreport.cgi?bug=1147)\n\nApply trac_9334_nfhilbert.patch once pari bug 1147 is fixed and that fix reaches Sage.\n\nPossible future improvements:\n\n* implement also for relative number fields by simply delegating to the absolute case\n\n* implement also for QQ by wrapping the global function hilbert_symbol as a member of QQ",
+    "body": "Attachment [trac_9334_nfhilbert.patch](tarball://root/attachments/some-uuid/ticket9334/trac_9334_nfhilbert.patch) by mstreng created at 2010-12-08 09:57:51\n\nAll that needed to be done was wrap pari's nfhilbert function and copy Aly's doctests, but...\n\nOne of those doctests revealed yet another bug introduced by the pari upgrade. See [http://pari.math.u-bordeaux.fr/cgi-bin/bugreport.cgi?bug=1147](http://pari.math.u-bordeaux.fr/cgi-bin/bugreport.cgi?bug=1147)\n\nApply trac_9334_nfhilbert.patch once pari bug 1147 is fixed and that fix reaches Sage.\n\nPossible future improvements:\n\n* implement also for relative number fields by simply delegating to the absolute case\n\n* implement also for QQ by wrapping the global function hilbert_symbol as a member of QQ",
     "created_at": "2010-12-08T09:57:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
@@ -791,7 +791,7 @@ archive/issue_comments_088106.json:
 }
 ```
 
-Attachment
+Attachment [trac_9334_nfhilbert.patch](tarball://root/attachments/some-uuid/ticket9334/trac_9334_nfhilbert.patch) by mstreng created at 2010-12-08 09:57:51
 
 All that needed to be done was wrap pari's nfhilbert function and copy Aly's doctests, but...
 
@@ -1347,7 +1347,7 @@ if not (a in self and b in self):
 archive/issue_comments_088129.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9334_review_jdemeyer.patch](tarball://root/attachments/some-uuid/ticket9334/9334_review_jdemeyer.patch) by jdemeyer created at 2011-09-29 10:24:54",
     "created_at": "2011-09-29T10:24:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
@@ -1356,7 +1356,7 @@ archive/issue_comments_088129.json:
 }
 ```
 
-Attachment
+Attachment [9334_review_jdemeyer.patch](tarball://root/attachments/some-uuid/ticket9334/9334_review_jdemeyer.patch) by jdemeyer created at 2011-09-29 10:24:54
 
 
 

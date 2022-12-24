@@ -379,7 +379,7 @@ Changing status from new to needs_review.
 archive/issue_comments_001565.json:
 ```json
 {
-    "body": "Attachment\n\nI've uploaded two patches which add in support for using cksum to do spkg integrity verification. There's a new sage-spkg-integrity-check script which gets called by sage-spkg, and a convenience script, sage-add-integrity-check-to-spkg, which can be used to easily add the required cksum file to a spkg. Once you have a built spkg, you can just do\n\n```\nsage-add-integrity-check-to-spkg foo.spkg\n```\n\nand the correct file gets added in.\n\nI've done some simple testing and it seems to work properly. One test is to apply these patches, make a source tarball, and then deliberately truncate the file and see if things fail. (I think an aborted download is a common way to get invalid spkg files.) One can also corrupt a spkg file to see if it's detected.\n\nOnce these scripts are in, we can easily go through all the spkgs in the optional and experimental repos and add in integrity checks for them.\n\nRight now, a missing cksum file is not considered an error, but that can be changed easily. Doing cksum verifications for every spkg in 4.3.4.alpha0 takes a bit under 6 minutes on my computer. If that seems too long, it would be easy to add in an environment variable (and document it! See #8263) that would turn these verifications off.\n\nPlease review!",
+    "body": "Attachment [trac_329_spkg_base.patch](tarball://root/attachments/some-uuid/ticket329/trac_329_spkg_base.patch) by ddrake created at 2010-03-08 12:27:33\n\nI've uploaded two patches which add in support for using cksum to do spkg integrity verification. There's a new sage-spkg-integrity-check script which gets called by sage-spkg, and a convenience script, sage-add-integrity-check-to-spkg, which can be used to easily add the required cksum file to a spkg. Once you have a built spkg, you can just do\n\n```\nsage-add-integrity-check-to-spkg foo.spkg\n```\n\nand the correct file gets added in.\n\nI've done some simple testing and it seems to work properly. One test is to apply these patches, make a source tarball, and then deliberately truncate the file and see if things fail. (I think an aborted download is a common way to get invalid spkg files.) One can also corrupt a spkg file to see if it's detected.\n\nOnce these scripts are in, we can easily go through all the spkgs in the optional and experimental repos and add in integrity checks for them.\n\nRight now, a missing cksum file is not considered an error, but that can be changed easily. Doing cksum verifications for every spkg in 4.3.4.alpha0 takes a bit under 6 minutes on my computer. If that seems too long, it would be easy to add in an environment variable (and document it! See #8263) that would turn these verifications off.\n\nPlease review!",
     "created_at": "2010-03-08T12:27:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/329",
     "type": "issue_comment",
@@ -388,7 +388,7 @@ archive/issue_comments_001565.json:
 }
 ```
 
-Attachment
+Attachment [trac_329_spkg_base.patch](tarball://root/attachments/some-uuid/ticket329/trac_329_spkg_base.patch) by ddrake created at 2010-03-08 12:27:33
 
 I've uploaded two patches which add in support for using cksum to do spkg integrity verification. There's a new sage-spkg-integrity-check script which gets called by sage-spkg, and a convenience script, sage-add-integrity-check-to-spkg, which can be used to easily add the required cksum file to a spkg. Once you have a built spkg, you can just do
 
@@ -549,7 +549,7 @@ apply to sage_scripts repo
 archive/issue_comments_001569.json:
 ```json
 {
-    "body": "Attachment\n\nTar on OS X does not like \"-O\" at the end. I forgot to check the \"overwrite attachment\" button; please ignore trac_329_sage_scripts.2.patch.",
+    "body": "Attachment [trac_329_sage_scripts.2.patch](tarball://root/attachments/some-uuid/ticket329/trac_329_sage_scripts.2.patch) by ddrake created at 2010-03-09 08:00:25\n\nTar on OS X does not like \"-O\" at the end. I forgot to check the \"overwrite attachment\" button; please ignore trac_329_sage_scripts.2.patch.",
     "created_at": "2010-03-09T08:00:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/329",
     "type": "issue_comment",
@@ -558,7 +558,7 @@ archive/issue_comments_001569.json:
 }
 ```
 
-Attachment
+Attachment [trac_329_sage_scripts.2.patch](tarball://root/attachments/some-uuid/ticket329/trac_329_sage_scripts.2.patch) by ddrake created at 2010-03-09 08:00:25
 
 Tar on OS X does not like "-O" at the end. I forgot to check the "overwrite attachment" button; please ignore trac_329_sage_scripts.2.patch.
 
@@ -659,7 +659,7 @@ apply to sage_scripts repo
 archive/issue_comments_001573.json:
 ```json
 {
-    "body": "Attachment\n\nNew patch fixes adds a \"then\" which should follow an \"elif\" in sage-spkg.\n\nAlso, I once again uploaded a mis-named patch. Please ignore trac_329.patch; only attachment:trac_329_sage_scripts.patch and attachment:trac_329_spkg_base.patch are necessary.",
+    "body": "Attachment [trac_329.patch](tarball://root/attachments/some-uuid/ticket329/trac_329.patch) by ddrake created at 2010-03-14 09:12:20\n\nNew patch fixes adds a \"then\" which should follow an \"elif\" in sage-spkg.\n\nAlso, I once again uploaded a mis-named patch. Please ignore trac_329.patch; only attachment:trac_329_sage_scripts.patch and attachment:trac_329_spkg_base.patch are necessary.",
     "created_at": "2010-03-14T09:12:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/329",
     "type": "issue_comment",
@@ -668,7 +668,7 @@ archive/issue_comments_001573.json:
 }
 ```
 
-Attachment
+Attachment [trac_329.patch](tarball://root/attachments/some-uuid/ticket329/trac_329.patch) by ddrake created at 2010-03-14 09:12:20
 
 New patch fixes adds a "then" which should follow an "elif" in sage-spkg.
 
@@ -1038,7 +1038,7 @@ apply only this patch to the scripts repo.
 archive/issue_comments_001585.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_329_sage_scripts.patch](tarball://root/attachments/some-uuid/ticket329/trac_329_sage_scripts.patch) by ddrake created at 2011-08-18 04:47:26",
     "created_at": "2011-08-18T04:47:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/329",
     "type": "issue_comment",
@@ -1047,7 +1047,7 @@ archive/issue_comments_001585.json:
 }
 ```
 
-Attachment
+Attachment [trac_329_sage_scripts.patch](tarball://root/attachments/some-uuid/ticket329/trac_329_sage_scripts.patch) by ddrake created at 2011-08-18 04:47:26
 
 
 
@@ -1149,7 +1149,7 @@ What do you think?
 archive/issue_comments_001589.json:
 ```json
 {
-    "body": "Attachment\n\nscripts repo",
+    "body": "Attachment [trac_329-ref.patch](tarball://root/attachments/some-uuid/ticket329/trac_329-ref.patch) by jhpalmieri created at 2011-09-10 01:42:51\n\nscripts repo",
     "created_at": "2011-09-10T01:42:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/329",
     "type": "issue_comment",
@@ -1158,7 +1158,7 @@ archive/issue_comments_001589.json:
 }
 ```
 
-Attachment
+Attachment [trac_329-ref.patch](tarball://root/attachments/some-uuid/ticket329/trac_329-ref.patch) by jhpalmieri created at 2011-09-10 01:42:51
 
 scripts repo
 

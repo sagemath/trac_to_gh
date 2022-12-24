@@ -88,7 +88,7 @@ Patch relative to 3.1.alpha0
 archive/issue_comments_027290.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [RElementAccess.patch](tarball://root/attachments/some-uuid/ticket3838/RElementAccess.patch) by mabshoff created at 2008-08-13 17:29:16",
     "created_at": "2008-08-13T17:29:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3838",
     "type": "issue_comment",
@@ -97,7 +97,7 @@ archive/issue_comments_027290.json:
 }
 ```
 
-Attachment
+Attachment [RElementAccess.patch](tarball://root/attachments/some-uuid/ticket3838/RElementAccess.patch) by mabshoff created at 2008-08-13 17:29:16
 
 
 
@@ -106,7 +106,7 @@ Attachment
 archive/issue_comments_027291.json:
 ```json
 {
-    "body": "Attachment\n\nCorrection for the first patch",
+    "body": "Attachment [RElementAccess2.patch](tarball://root/attachments/some-uuid/ticket3838/RElementAccess2.patch) by SimonKing created at 2008-08-13 20:00:50\n\nCorrection for the first patch",
     "created_at": "2008-08-13T20:00:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3838",
     "type": "issue_comment",
@@ -115,7 +115,7 @@ archive/issue_comments_027291.json:
 }
 ```
 
-Attachment
+Attachment [RElementAccess2.patch](tarball://root/attachments/some-uuid/ticket3838/RElementAccess2.patch) by SimonKing created at 2008-08-13 20:00:50
 
 Correction for the first patch
 
@@ -190,7 +190,7 @@ hi, I like the second approach, but just for the sake of completeness and with t
 archive/issue_comments_027294.json:
 ```json
 {
-    "body": "Attachment\n\nTo be applied after the two previous patches",
+    "body": "Attachment [RElementAccess3.patch](tarball://root/attachments/some-uuid/ticket3838/RElementAccess3.patch) by SimonKing created at 2008-08-14 06:53:45\n\nTo be applied after the two previous patches",
     "created_at": "2008-08-14T06:53:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3838",
     "type": "issue_comment",
@@ -199,7 +199,7 @@ archive/issue_comments_027294.json:
 }
 ```
 
-Attachment
+Attachment [RElementAccess3.patch](tarball://root/attachments/some-uuid/ticket3838/RElementAccess3.patch) by SimonKing created at 2008-08-14 06:53:45
 
 To be applied after the two previous patches
 
@@ -266,7 +266,7 @@ I'll work on this problem.
 archive/issue_comments_027296.json:
 ```json
 {
-    "body": "Attachment\n\nReplaces all previous patches",
+    "body": "Attachment [RElementAccessNew.patch](tarball://root/attachments/some-uuid/ticket3838/RElementAccessNew.patch) by SimonKing created at 2008-08-14 07:17:12\n\nReplaces all previous patches",
     "created_at": "2008-08-14T07:17:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3838",
     "type": "issue_comment",
@@ -275,7 +275,7 @@ archive/issue_comments_027296.json:
 }
 ```
 
-Attachment
+Attachment [RElementAccessNew.patch](tarball://root/attachments/some-uuid/ticket3838/RElementAccessNew.patch) by SimonKing created at 2008-08-14 07:17:12
 
 Replaces all previous patches
 

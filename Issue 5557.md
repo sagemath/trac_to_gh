@@ -461,7 +461,7 @@ Please rebase this against 3.4.1.rc*
 archive/issue_comments_043257.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5557-rebase.patch](tarball://root/attachments/some-uuid/ticket5557/5557-rebase.patch) by boothby created at 2009-04-15 18:57:48",
     "created_at": "2009-04-15T18:57:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5557",
     "type": "issue_comment",
@@ -470,7 +470,7 @@ archive/issue_comments_043257.json:
 }
 ```
 
-Attachment
+Attachment [5557-rebase.patch](tarball://root/attachments/some-uuid/ticket5557/5557-rebase.patch) by boothby created at 2009-04-15 18:57:48
 
 
 
@@ -517,7 +517,7 @@ There are no doctests for the new code, so I have added fairly trivial indirect 
 archive/issue_comments_043260.json:
 ```json
 {
-    "body": "Attachment\n\napply after the first patch",
+    "body": "Attachment [trac_5557_review.patch](tarball://root/attachments/some-uuid/ticket5557/trac_5557_review.patch) by AlexGhitza created at 2009-04-30 11:56:38\n\napply after the first patch",
     "created_at": "2009-04-30T11:56:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5557",
     "type": "issue_comment",
@@ -526,7 +526,7 @@ archive/issue_comments_043260.json:
 }
 ```
 
-Attachment
+Attachment [trac_5557_review.patch](tarball://root/attachments/some-uuid/ticket5557/trac_5557_review.patch) by AlexGhitza created at 2009-04-30 11:56:38
 
 apply after the first patch
 

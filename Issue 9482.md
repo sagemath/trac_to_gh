@@ -89,7 +89,7 @@ Changing status from new to needs_review.
 archive/issue_comments_091039.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch prevents the above error, all doctests pass.\n\nJMOL doesn't like the resulting file; it gives errors about #faces must be positive, or something.  My vote would be to fix that error when we try to create the JMOL-formatted file.  (We could raise an error here, but then sum([implicit_plot3d(...) for i in range(10)]) might break unnecessarily.)",
+    "body": "Attachment [trac_9482-implicit-plot-out-of-memory.patch](tarball://root/attachments/some-uuid/ticket9482/trac_9482-implicit-plot-out-of-memory.patch) by cwitty created at 2010-07-18 02:51:34\n\nThe patch prevents the above error, all doctests pass.\n\nJMOL doesn't like the resulting file; it gives errors about #faces must be positive, or something.  My vote would be to fix that error when we try to create the JMOL-formatted file.  (We could raise an error here, but then sum([implicit_plot3d(...) for i in range(10)]) might break unnecessarily.)",
     "created_at": "2010-07-18T02:51:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9482",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_091039.json:
 }
 ```
 
-Attachment
+Attachment [trac_9482-implicit-plot-out-of-memory.patch](tarball://root/attachments/some-uuid/ticket9482/trac_9482-implicit-plot-out-of-memory.patch) by cwitty created at 2010-07-18 02:51:34
 
 The patch prevents the above error, all doctests pass.
 

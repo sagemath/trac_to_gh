@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4549
 archive/issue_comments_034077.json:
 ```json
 {
-    "body": "Attachment\n\nReworked the integer lists lexicographic generator into a full featured combinatorial class IntegerListsLex\nUse it systematically in Partitions to get constant amortized time iterators.\nAlso implements horizontal_border_strip.\n\nNote: the attached patch does not contain the commit messages!",
+    "body": "Attachment [integer_lists_lex-4549-nt.patch](tarball://root/attachments/some-uuid/ticket4549/integer_lists_lex-4549-nt.patch) by nthiery created at 2009-02-13 16:34:51\n\nReworked the integer lists lexicographic generator into a full featured combinatorial class IntegerListsLex\nUse it systematically in Partitions to get constant amortized time iterators.\nAlso implements horizontal_border_strip.\n\nNote: the attached patch does not contain the commit messages!",
     "created_at": "2009-02-13T16:34:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4549",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_034077.json:
 }
 ```
 
-Attachment
+Attachment [integer_lists_lex-4549-nt.patch](tarball://root/attachments/some-uuid/ticket4549/integer_lists_lex-4549-nt.patch) by nthiery created at 2009-02-13 16:34:51
 
 Reworked the integer lists lexicographic generator into a full featured combinatorial class IntegerListsLex
 Use it systematically in Partitions to get constant amortized time iterators.
@@ -96,7 +96,7 @@ Changing assignee from mhansen to nthiery.
 archive/issue_comments_034080.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4549-review.patch](tarball://root/attachments/some-uuid/ticket4549/trac_4549-review.patch) by mhansen created at 2009-02-14 23:26:56",
     "created_at": "2009-02-14T23:26:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4549",
     "type": "issue_comment",
@@ -105,7 +105,7 @@ archive/issue_comments_034080.json:
 }
 ```
 
-Attachment
+Attachment [trac_4549-review.patch](tarball://root/attachments/some-uuid/ticket4549/trac_4549-review.patch) by mhansen created at 2009-02-14 23:26:56
 
 
 
@@ -282,7 +282,7 @@ Michael
 archive/issue_comments_034087.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [integer_lists_lex-4549-submitted.patch](tarball://root/attachments/some-uuid/ticket4549/integer_lists_lex-4549-submitted.patch) by nthiery created at 2009-04-02 05:27:50",
     "created_at": "2009-04-02T05:27:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4549",
     "type": "issue_comment",
@@ -291,7 +291,7 @@ archive/issue_comments_034087.json:
 }
 ```
 
-Attachment
+Attachment [integer_lists_lex-4549-submitted.patch](tarball://root/attachments/some-uuid/ticket4549/integer_lists_lex-4549-submitted.patch) by nthiery created at 2009-04-02 05:27:50
 
 
 
@@ -396,7 +396,7 @@ Fix for the remaining broken pickle + tests for the other one.
 archive/issue_comments_034092.json:
 ```json
 {
-    "body": "Attachment\n\nDear All,\n\n> The patch looks good to me. However, though I'm not 100% sure I launched the correct check, it seems that one of the old pickle is still broken:\n\nI added a review patch which should fix this remaining pickle problem. If someone reread it I'm ready to give a positive review. \n\nFlorent",
+    "body": "Attachment [integer_lists_lex-4549-review.patch](tarball://root/attachments/some-uuid/ticket4549/integer_lists_lex-4549-review.patch) by hivert created at 2009-04-03 16:36:02\n\nDear All,\n\n> The patch looks good to me. However, though I'm not 100% sure I launched the correct check, it seems that one of the old pickle is still broken:\n\nI added a review patch which should fix this remaining pickle problem. If someone reread it I'm ready to give a positive review. \n\nFlorent",
     "created_at": "2009-04-03T16:36:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4549",
     "type": "issue_comment",
@@ -405,7 +405,7 @@ archive/issue_comments_034092.json:
 }
 ```
 
-Attachment
+Attachment [integer_lists_lex-4549-review.patch](tarball://root/attachments/some-uuid/ticket4549/integer_lists_lex-4549-review.patch) by hivert created at 2009-04-03 16:36:02
 
 Dear All,
 

@@ -91,7 +91,7 @@ Patch against sage-4.5.3.alpha0
 archive/issue_comments_095655.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9764_ideal_repr.patch](tarball://root/attachments/some-uuid/ticket9764/9764_ideal_repr.patch) by jdemeyer created at 2010-09-16 09:14:28",
     "created_at": "2010-09-16T09:14:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9763",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_095655.json:
 }
 ```
 
-Attachment
+Attachment [9764_ideal_repr.patch](tarball://root/attachments/some-uuid/ticket9764/9764_ideal_repr.patch) by jdemeyer created at 2010-09-16 09:14:28
 
 
 
@@ -181,7 +181,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_095660.json:
 ```json
 {
-    "body": "Attachment\n\nI applied this to sage-4.6.alpha1 with #9898 and #9753 installed. Changes look sensible, patch applies fine, and all doctests pass. Positive review.",
+    "body": "Attachment [9764_ideal_repr_new.patch](tarball://root/attachments/some-uuid/ticket9764/9764_ideal_repr_new.patch) by davidloeffler created at 2010-09-23 11:18:15\n\nI applied this to sage-4.6.alpha1 with #9898 and #9753 installed. Changes look sensible, patch applies fine, and all doctests pass. Positive review.",
     "created_at": "2010-09-23T11:18:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9763",
     "type": "issue_comment",
@@ -190,7 +190,7 @@ archive/issue_comments_095660.json:
 }
 ```
 
-Attachment
+Attachment [9764_ideal_repr_new.patch](tarball://root/attachments/some-uuid/ticket9764/9764_ideal_repr_new.patch) by davidloeffler created at 2010-09-23 11:18:15
 
 I applied this to sage-4.6.alpha1 with #9898 and #9753 installed. Changes look sensible, patch applies fine, and all doctests pass. Positive review.
 

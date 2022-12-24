@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4035
 archive/issue_comments_029107.json:
 ```json
 {
-    "body": "Attachment\n\nGary, can you review this (I'm asking you since it involves M2)",
+    "body": "Attachment [m2_optional_doctests.patch](tarball://root/attachments/some-uuid/ticket4035/m2_optional_doctests.patch) by malb created at 2008-09-01 09:56:22\n\nGary, can you review this (I'm asking you since it involves M2)",
     "created_at": "2008-09-01T09:56:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4035",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_029107.json:
 }
 ```
 
-Attachment
+Attachment [m2_optional_doctests.patch](tarball://root/attachments/some-uuid/ticket4035/m2_optional_doctests.patch) by malb created at 2008-09-01 09:56:22
 
 Gary, can you review this (I'm asking you since it involves M2)
 

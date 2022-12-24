@@ -294,7 +294,7 @@ sage: preparse("valuation(1r,1r)")
 archive/issue_comments_093644.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [smallfix1-arith_valuation.patch](tarball://root/attachments/some-uuid/ticket9652/smallfix1-arith_valuation.patch) by mderickx created at 2010-08-02 18:57:05",
     "created_at": "2010-08-02T18:57:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
@@ -303,7 +303,7 @@ archive/issue_comments_093644.json:
 }
 ```
 
-Attachment
+Attachment [smallfix1-arith_valuation.patch](tarball://root/attachments/some-uuid/ticket9652/smallfix1-arith_valuation.patch) by mderickx created at 2010-08-02 18:57:05
 
 
 
@@ -845,7 +845,7 @@ Use this one, the other is an old version
 archive/issue_comments_093667.json:
 ```json
 {
-    "body": "Attachment\n\nOk, I moved the code, and the integer mod classes now also have a valuation attribute. All doctest should pass now when patching against 4.4.4 (sorry haven't updated in a while).",
+    "body": "Attachment [smallfix1-arith_valuation.2.patch](tarball://root/attachments/some-uuid/ticket9652/smallfix1-arith_valuation.2.patch) by mderickx created at 2010-09-11 08:56:48\n\nOk, I moved the code, and the integer mod classes now also have a valuation attribute. All doctest should pass now when patching against 4.4.4 (sorry haven't updated in a while).",
     "created_at": "2010-09-11T08:56:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
@@ -854,7 +854,7 @@ archive/issue_comments_093667.json:
 }
 ```
 
-Attachment
+Attachment [smallfix1-arith_valuation.2.patch](tarball://root/attachments/some-uuid/ticket9652/smallfix1-arith_valuation.2.patch) by mderickx created at 2010-09-11 08:56:48
 
 Ok, I moved the code, and the integer mod classes now also have a valuation attribute. All doctest should pass now when patching against 4.4.4 (sorry haven't updated in a while).
 
@@ -883,7 +883,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_093669.json:
 ```json
 {
-    "body": "Attachment\n\nUse this one, the other is an old version",
+    "body": "Attachment [smallfix1-arith_valuation.2.2.patch](tarball://root/attachments/some-uuid/ticket9652/smallfix1-arith_valuation.2.2.patch) by mderickx created at 2010-09-12 10:52:26\n\nUse this one, the other is an old version",
     "created_at": "2010-09-12T10:52:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
@@ -892,7 +892,7 @@ archive/issue_comments_093669.json:
 }
 ```
 
-Attachment
+Attachment [smallfix1-arith_valuation.2.2.patch](tarball://root/attachments/some-uuid/ticket9652/smallfix1-arith_valuation.2.2.patch) by mderickx created at 2010-09-12 10:52:26
 
 Use this one, the other is an old version
 
@@ -921,7 +921,7 @@ previous patch with clenaer comment in the header
 archive/issue_comments_093671.json:
 ```json
 {
-    "body": "Attachment\n\nadditional doctest",
+    "body": "Attachment [smallfix1-arith_valuation-doctest.2.3.patch](tarball://root/attachments/some-uuid/ticket9652/smallfix1-arith_valuation-doctest.2.3.patch) by lftabera created at 2010-09-14 11:27:08\n\nadditional doctest",
     "created_at": "2010-09-14T11:27:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
@@ -930,7 +930,7 @@ archive/issue_comments_093671.json:
 }
 ```
 
-Attachment
+Attachment [smallfix1-arith_valuation-doctest.2.3.patch](tarball://root/attachments/some-uuid/ticket9652/smallfix1-arith_valuation-doctest.2.3.patch) by lftabera created at 2010-09-14 11:27:08
 
 additional doctest
 

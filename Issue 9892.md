@@ -359,7 +359,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_098068.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9893_pari_init.patch](tarball://root/attachments/some-uuid/ticket9893/9893_pari_init.patch) by jdemeyer created at 2010-10-22 11:59:56",
     "created_at": "2010-10-22T11:59:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9892",
     "type": "issue_comment",
@@ -368,7 +368,7 @@ archive/issue_comments_098068.json:
 }
 ```
 
-Attachment
+Attachment [9893_pari_init.patch](tarball://root/attachments/some-uuid/ticket9893/9893_pari_init.patch) by jdemeyer created at 2010-10-22 11:59:56
 
 
 

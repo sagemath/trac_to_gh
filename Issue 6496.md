@@ -422,7 +422,7 @@ Could you attach your new patch instead of inlining it?
 archive/issue_comments_052848.json:
 ```json
 {
-    "body": "Attachment\n\nTested with sage 4.2",
+    "body": "Attachment [13222.patch](tarball://root/attachments/some-uuid/ticket6496/13222.patch) by lftabera created at 2009-11-09 22:32:22\n\nTested with sage 4.2",
     "created_at": "2009-11-09T22:32:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6496",
     "type": "issue_comment",
@@ -431,7 +431,7 @@ archive/issue_comments_052848.json:
 }
 ```
 
-Attachment
+Attachment [13222.patch](tarball://root/attachments/some-uuid/ticket6496/13222.patch) by lftabera created at 2009-11-09 22:32:22
 
 Tested with sage 4.2
 
@@ -442,7 +442,7 @@ Tested with sage 4.2
 archive/issue_comments_052849.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of other",
+    "body": "Attachment [multi-poly-denom-referee.patch](tarball://root/attachments/some-uuid/ticket6496/multi-poly-denom-referee.patch) by robertwb created at 2009-11-20 04:29:12\n\napply on top of other",
     "created_at": "2009-11-20T04:29:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6496",
     "type": "issue_comment",
@@ -451,7 +451,7 @@ archive/issue_comments_052849.json:
 }
 ```
 
-Attachment
+Attachment [multi-poly-denom-referee.patch](tarball://root/attachments/some-uuid/ticket6496/multi-poly-denom-referee.patch) by robertwb created at 2009-11-20 04:29:12
 
 apply on top of other
 

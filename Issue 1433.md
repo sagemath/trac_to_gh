@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1433
 archive/issue_comments_009266.json:
 ```json
 {
-    "body": "Attachment\n\napply this to the doc repo",
+    "body": "Attachment [doc-trac-1433.patch](tarball://root/attachments/some-uuid/ticket1433/doc-trac-1433.patch) by was created at 2007-12-09 06:54:33\n\napply this to the doc repo",
     "created_at": "2007-12-09T06:54:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1433",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_009266.json:
 }
 ```
 
-Attachment
+Attachment [doc-trac-1433.patch](tarball://root/attachments/some-uuid/ticket1433/doc-trac-1433.patch) by was created at 2007-12-09 06:54:33
 
 apply this to the doc repo
 
@@ -69,7 +69,7 @@ apply this to the main sage repo
 archive/issue_comments_009268.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-trac-1433.patch](tarball://root/attachments/some-uuid/ticket1433/sage-trac-1433.patch) by mhansen created at 2007-12-09 17:19:04",
     "created_at": "2007-12-09T17:19:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1433",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_009268.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac-1433.patch](tarball://root/attachments/some-uuid/ticket1433/sage-trac-1433.patch) by mhansen created at 2007-12-09 17:19:04
 
 
 

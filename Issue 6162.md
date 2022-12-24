@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6162
 archive/issue_comments_049144.json:
 ```json
 {
-    "body": "Attachment\n\nbased on 4.0.rc1",
+    "body": "Attachment [trac_6162-histogram.patch](tarball://root/attachments/some-uuid/ticket6162/trac_6162-histogram.patch) by wdj created at 2009-05-30 22:20:45\n\nbased on 4.0.rc1",
     "created_at": "2009-05-30T22:20:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6162",
     "type": "issue_comment",
@@ -43,7 +43,7 @@ archive/issue_comments_049144.json:
 }
 ```
 
-Attachment
+Attachment [trac_6162-histogram.patch](tarball://root/attachments/some-uuid/ticket6162/trac_6162-histogram.patch) by wdj created at 2009-05-30 22:20:45
 
 based on 4.0.rc1
 
@@ -164,7 +164,7 @@ Changing keywords from "" to "plot histogram".
 archive/issue_comments_049151.json:
 ```json
 {
-    "body": "Attachment\n\nThanks Nick!\n\nShould I review your patches or does someone other than the 2 of us review both patches?",
+    "body": "Attachment [trac_6162-plotting.patch](tarball://root/attachments/some-uuid/ticket6162/trac_6162-plotting.patch) by wdj created at 2009-06-15 20:35:28\n\nThanks Nick!\n\nShould I review your patches or does someone other than the 2 of us review both patches?",
     "created_at": "2009-06-15T20:35:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6162",
     "type": "issue_comment",
@@ -173,7 +173,7 @@ archive/issue_comments_049151.json:
 }
 ```
 
-Attachment
+Attachment [trac_6162-plotting.patch](tarball://root/attachments/some-uuid/ticket6162/trac_6162-plotting.patch) by wdj created at 2009-06-15 20:35:28
 
 Thanks Nick!
 

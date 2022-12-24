@@ -125,7 +125,7 @@ I don't see anything in SPKG.txt that needs changing--the changelog would be pre
 archive/issue_comments_051686.json:
 ```json
 {
-    "body": "Attachment\n\nAll tests pass with the above spkg and patch.",
+    "body": "Attachment [6438-cython.patch](tarball://root/attachments/some-uuid/ticket6438/6438-cython.patch) by robertwb created at 2009-07-22 14:19:27\n\nAll tests pass with the above spkg and patch.",
     "created_at": "2009-07-22T14:19:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6438",
     "type": "issue_comment",
@@ -134,7 +134,7 @@ archive/issue_comments_051686.json:
 }
 ```
 
-Attachment
+Attachment [6438-cython.patch](tarball://root/attachments/some-uuid/ticket6438/6438-cython.patch) by robertwb created at 2009-07-22 14:19:27
 
 All tests pass with the above spkg and patch.
 

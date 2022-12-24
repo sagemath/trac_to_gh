@@ -218,7 +218,7 @@ sage/libs/mpmath/ext_impl.pxd at least as been changed since this patch has been
 archive/issue_comments_081833.json:
 ```json
 {
-    "body": "Attachment\n\nupdate of the patch based on sage-4.6",
+    "body": "Attachment [trac_8898-unix-endlines.2.patch](tarball://root/attachments/some-uuid/ticket8898/trac_8898-unix-endlines.2.patch) by fbissey created at 2010-11-11 09:48:47\n\nupdate of the patch based on sage-4.6",
     "created_at": "2010-11-11T09:48:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8898",
     "type": "issue_comment",
@@ -227,7 +227,7 @@ archive/issue_comments_081833.json:
 }
 ```
 
-Attachment
+Attachment [trac_8898-unix-endlines.2.patch](tarball://root/attachments/some-uuid/ticket8898/trac_8898-unix-endlines.2.patch) by fbissey created at 2010-11-11 09:48:47
 
 update of the patch based on sage-4.6
 
@@ -295,7 +295,7 @@ I have tested the patch with python-2.6.6 and sage-on-gentoo - everything fine h
 archive/issue_comments_081837.json:
 ```json
 {
-    "body": "Attachment\n\nHere are some problems with [attachment:trac_8898-unix-endlines.2.patch]:\n\n* It fails to apply on Sage 4.6.1.alpha0; I got the following failure:\n {{{\n[mvngu`@`sage sage-main]$ pwd\n/dev/shm/mvngu/sage-4.6.1.alpha0/devel/sage-main\n[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8898/trac_8898-unix-endlines.2.patch && hg qpush \nadding trac_8898-unix-endlines.2.patch to series file\napplying trac_8898-unix-endlines.2.patch\npatching file sage/libs/mpmath/ext_main.pyx\nHunk #1 FAILED at 0\n1 out of 1 hunks FAILED -- saving rejects to file sage/libs/mpmath/ext_main.pyx.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_8898-unix-endlines.2.patch\n }}}\n\n* The attachment [attachment:trac_8898-unix-endlines.2.patch] doesn't convert the file `sage/logic/booleval.py` to use Unix line ending.\n\nMy rebased patch should take care of the above issues for Sage 4.6.1.alpha0. See the ticket description for which patch to apply.",
+    "body": "Attachment [trac-8898_unix-endlines.patch](tarball://root/attachments/some-uuid/ticket8898/trac-8898_unix-endlines.patch) by mvngu created at 2010-11-11 10:57:57\n\nHere are some problems with [attachment:trac_8898-unix-endlines.2.patch]:\n\n* It fails to apply on Sage 4.6.1.alpha0; I got the following failure:\n {{{\n[mvngu`@`sage sage-main]$ pwd\n/dev/shm/mvngu/sage-4.6.1.alpha0/devel/sage-main\n[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8898/trac_8898-unix-endlines.2.patch && hg qpush \nadding trac_8898-unix-endlines.2.patch to series file\napplying trac_8898-unix-endlines.2.patch\npatching file sage/libs/mpmath/ext_main.pyx\nHunk #1 FAILED at 0\n1 out of 1 hunks FAILED -- saving rejects to file sage/libs/mpmath/ext_main.pyx.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_8898-unix-endlines.2.patch\n }}}\n\n* The attachment [attachment:trac_8898-unix-endlines.2.patch] doesn't convert the file `sage/logic/booleval.py` to use Unix line ending.\n\nMy rebased patch should take care of the above issues for Sage 4.6.1.alpha0. See the ticket description for which patch to apply.",
     "created_at": "2010-11-11T10:57:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8898",
     "type": "issue_comment",
@@ -304,7 +304,7 @@ archive/issue_comments_081837.json:
 }
 ```
 
-Attachment
+Attachment [trac-8898_unix-endlines.patch](tarball://root/attachments/some-uuid/ticket8898/trac-8898_unix-endlines.patch) by mvngu created at 2010-11-11 10:57:57
 
 Here are some problems with [attachment:trac_8898-unix-endlines.2.patch]:
 
@@ -433,7 +433,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_081843.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8898.sh](tarball://root/attachments/some-uuid/ticket8898/8898.sh) by jdemeyer created at 2010-11-13 16:23:16",
     "created_at": "2010-11-13T16:23:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8898",
     "type": "issue_comment",
@@ -442,7 +442,7 @@ archive/issue_comments_081843.json:
 }
 ```
 
-Attachment
+Attachment [8898.sh](tarball://root/attachments/some-uuid/ticket8898/8898.sh) by jdemeyer created at 2010-11-13 16:23:16
 
 
 

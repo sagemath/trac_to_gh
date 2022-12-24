@@ -136,7 +136,7 @@ PolyDict with representation {(-2,): 1}
 archive/issue_comments_051623.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6428.patch](tarball://root/attachments/some-uuid/ticket6428/trac_6428.patch) by was created at 2010-01-18 10:19:17",
     "created_at": "2010-01-18T10:19:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6428",
     "type": "issue_comment",
@@ -145,7 +145,7 @@ archive/issue_comments_051623.json:
 }
 ```
 
-Attachment
+Attachment [trac_6428.patch](tarball://root/attachments/some-uuid/ticket6428/trac_6428.patch) by was created at 2010-01-18 10:19:17
 
 
 
@@ -242,7 +242,7 @@ y^(y + 1125899906842624)
 archive/issue_comments_051628.json:
 ```json
 {
-    "body": "Attachment\n\nI added a new patch (to be applied instead of the old one) that also handles negative exponents. (The previous patch broke LaurentPolynomials).",
+    "body": "Attachment [6428_ETuple_overflow.patch](tarball://root/attachments/some-uuid/ticket6428/6428_ETuple_overflow.patch) by wjp created at 2010-01-21 00:32:37\n\nI added a new patch (to be applied instead of the old one) that also handles negative exponents. (The previous patch broke LaurentPolynomials).",
     "created_at": "2010-01-21T00:32:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6428",
     "type": "issue_comment",
@@ -251,7 +251,7 @@ archive/issue_comments_051628.json:
 }
 ```
 
-Attachment
+Attachment [6428_ETuple_overflow.patch](tarball://root/attachments/some-uuid/ticket6428/6428_ETuple_overflow.patch) by wjp created at 2010-01-21 00:32:37
 
 I added a new patch (to be applied instead of the old one) that also handles negative exponents. (The previous patch broke LaurentPolynomials).
 

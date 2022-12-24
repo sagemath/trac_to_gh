@@ -68,7 +68,7 @@ applies to 4.0.2.rc1
 archive/issue_comments_050438.json:
 ```json
 {
-    "body": "Attachment\n\nPasses sage -tp 1 SAGE_ROOT/devel/sage/doc/en/constructions/. Also the builds sage -docbuild  constructions html (resp., pdf) went fine.",
+    "body": "Attachment [trac_6319.patch](tarball://root/attachments/some-uuid/ticket6319/trac_6319.patch) by wdj created at 2009-06-16 23:26:40\n\nPasses sage -tp 1 SAGE_ROOT/devel/sage/doc/en/constructions/. Also the builds sage -docbuild  constructions html (resp., pdf) went fine.",
     "created_at": "2009-06-16T23:26:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6319",
     "type": "issue_comment",
@@ -77,7 +77,7 @@ archive/issue_comments_050438.json:
 }
 ```
 
-Attachment
+Attachment [trac_6319.patch](tarball://root/attachments/some-uuid/ticket6319/trac_6319.patch) by wdj created at 2009-06-16 23:26:40
 
 Passes sage -tp 1 SAGE_ROOT/devel/sage/doc/en/constructions/. Also the builds sage -docbuild  constructions html (resp., pdf) went fine.
 

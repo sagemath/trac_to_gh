@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7433
 archive/issue_comments_062535.json:
 ```json
 {
-    "body": "Attachment\n\nFixes template bug.",
+    "body": "Attachment [trac_7433-published-ws-rename.patch](tarball://root/attachments/some-uuid/ticket7433/trac_7433-published-ws-rename.patch) by timdumol created at 2009-11-14 13:16:02\n\nFixes template bug.",
     "created_at": "2009-11-14T13:16:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7433",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_062535.json:
 }
 ```
 
-Attachment
+Attachment [trac_7433-published-ws-rename.patch](tarball://root/attachments/some-uuid/ticket7433/trac_7433-published-ws-rename.patch) by timdumol created at 2009-11-14 13:16:02
 
 Fixes template bug.
 
@@ -75,7 +75,7 @@ The problem was with a template bug referencing the original worksheet's title i
 archive/issue_comments_062537.json:
 ```json
 {
-    "body": "Attachment\n\nFixes template bug and adds Selenium tests.",
+    "body": "Attachment [trac_7433-published-ws-rename.2.patch](tarball://root/attachments/some-uuid/ticket7433/trac_7433-published-ws-rename.2.patch) by timdumol created at 2009-11-14 16:49:02\n\nFixes template bug and adds Selenium tests.",
     "created_at": "2009-11-14T16:49:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7433",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_062537.json:
 }
 ```
 
-Attachment
+Attachment [trac_7433-published-ws-rename.2.patch](tarball://root/attachments/some-uuid/ticket7433/trac_7433-published-ws-rename.2.patch) by timdumol created at 2009-11-14 16:49:02
 
 Fixes template bug and adds Selenium tests.
 
@@ -131,7 +131,7 @@ Changing status from new to needs_review.
 archive/issue_comments_062540.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sagenb_7433-rebase.patch](tarball://root/attachments/some-uuid/ticket7433/sagenb_7433-rebase.patch) by was created at 2009-12-08 20:55:07",
     "created_at": "2009-12-08T20:55:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7433",
     "type": "issue_comment",
@@ -140,7 +140,7 @@ archive/issue_comments_062540.json:
 }
 ```
 
-Attachment
+Attachment [sagenb_7433-rebase.patch](tarball://root/attachments/some-uuid/ticket7433/sagenb_7433-rebase.patch) by was created at 2009-12-08 20:55:07
 
 
 

@@ -91,7 +91,7 @@ The above code hasn't been tested, but should be a good start.
 archive/issue_comments_032638.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [identation.patch](tarball://root/attachments/some-uuid/ticket4440/identation.patch) by ahupfer created at 2008-11-21 13:45:46",
     "created_at": "2008-11-21T13:45:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4440",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_032638.json:
 }
 ```
 
-Attachment
+Attachment [identation.patch](tarball://root/attachments/some-uuid/ticket4440/identation.patch) by ahupfer created at 2008-11-21 13:45:46
 
 
 
@@ -181,7 +181,7 @@ It would however by nice if there were a way to turn it off.  That will have to 
 archive/issue_comments_032641.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4440.2.patch](tarball://root/attachments/some-uuid/ticket4440/4440.2.patch) by boothby created at 2009-01-21 23:56:24",
     "created_at": "2009-01-21T23:56:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4440",
     "type": "issue_comment",
@@ -190,7 +190,7 @@ archive/issue_comments_032641.json:
 }
 ```
 
-Attachment
+Attachment [4440.2.patch](tarball://root/attachments/some-uuid/ticket4440/4440.2.patch) by boothby created at 2009-01-21 23:56:24
 
 
 
@@ -291,7 +291,7 @@ Replaces previous two patches
 archive/issue_comments_032647.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4440-indentation.patch](tarball://root/attachments/some-uuid/ticket4440/4440-indentation.patch) by boothby created at 2009-01-23 09:29:36",
     "created_at": "2009-01-23T09:29:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4440",
     "type": "issue_comment",
@@ -300,7 +300,7 @@ archive/issue_comments_032647.json:
 }
 ```
 
-Attachment
+Attachment [4440-indentation.patch](tarball://root/attachments/some-uuid/ticket4440/4440-indentation.patch) by boothby created at 2009-01-23 09:29:36
 
 
 

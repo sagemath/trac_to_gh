@@ -88,7 +88,7 @@ CC/CXX patch
 archive/issue_comments_020617.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [pbori-custom_py.patch](tarball://root/attachments/some-uuid/ticket2999/pbori-custom_py.patch) by mabshoff created at 2008-04-26 10:45:37",
     "created_at": "2008-04-26T10:45:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2999",
     "type": "issue_comment",
@@ -97,7 +97,7 @@ archive/issue_comments_020617.json:
 }
 ```
 
-Attachment
+Attachment [pbori-custom_py.patch](tarball://root/attachments/some-uuid/ticket2999/pbori-custom_py.patch) by mabshoff created at 2008-04-26 10:45:37
 
 
 

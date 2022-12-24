@@ -99,7 +99,7 @@ Patch implements change.  It sits on my MQ stack on top of #8331 and #8329, but 
 archive/issue_comments_075484.json:
 ```json
 {
-    "body": "Attachment\n\nupdated commit message",
+    "body": "Attachment [trac_8421-bipartite-partition-sets.patch](tarball://root/attachments/some-uuid/ticket8421/trac_8421-bipartite-partition-sets.patch) by rhinton created at 2010-03-05 02:05:46\n\nupdated commit message",
     "created_at": "2010-03-05T02:05:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8421",
     "type": "issue_comment",
@@ -108,7 +108,7 @@ archive/issue_comments_075484.json:
 }
 ```
 
-Attachment
+Attachment [trac_8421-bipartite-partition-sets.patch](tarball://root/attachments/some-uuid/ticket8421/trac_8421-bipartite-partition-sets.patch) by rhinton created at 2010-03-05 02:05:46
 
 updated commit message
 

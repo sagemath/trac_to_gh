@@ -201,7 +201,7 @@ Changing assignee from mhampton to mabshoff.
 archive/issue_comments_006171.json:
 ```json
 {
-    "body": "Attachment\n\nI tried to remove the OS X junk referred to by cwitty.  I am also attaching a patch for sage/interfaces/gfan.py and sage/rings/polynomial/groebner_fan.py.  Some functionality has changed, some has been added: most notably the tropical intersection command and changes to the render method so that it uses Sage graphics.  Things remain to be done, but this now passes tests with gfan-0.3 and I am happy to respond to review comments.",
+    "body": "Attachment [trac_1010_gfan-0.3.patch](tarball://root/attachments/some-uuid/ticket1010/trac_1010_gfan-0.3.patch) by mhampton created at 2008-03-19 15:39:08\n\nI tried to remove the OS X junk referred to by cwitty.  I am also attaching a patch for sage/interfaces/gfan.py and sage/rings/polynomial/groebner_fan.py.  Some functionality has changed, some has been added: most notably the tropical intersection command and changes to the render method so that it uses Sage graphics.  Things remain to be done, but this now passes tests with gfan-0.3 and I am happy to respond to review comments.",
     "created_at": "2008-03-19T15:39:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1010",
     "type": "issue_comment",
@@ -210,7 +210,7 @@ archive/issue_comments_006171.json:
 }
 ```
 
-Attachment
+Attachment [trac_1010_gfan-0.3.patch](tarball://root/attachments/some-uuid/ticket1010/trac_1010_gfan-0.3.patch) by mhampton created at 2008-03-19 15:39:08
 
 I tried to remove the OS X junk referred to by cwitty.  I am also attaching a patch for sage/interfaces/gfan.py and sage/rings/polynomial/groebner_fan.py.  Some functionality has changed, some has been added: most notably the tropical intersection command and changes to the render method so that it uses Sage graphics.  Things remain to be done, but this now passes tests with gfan-0.3 and I am happy to respond to review comments.
 
@@ -345,7 +345,7 @@ Some more comments (some repetitions):
 archive/issue_comments_006177.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_1010_post_review.patch](tarball://root/attachments/some-uuid/ticket1010/trac_1010_post_review.patch) by mhampton created at 2008-03-25 02:01:49",
     "created_at": "2008-03-25T02:01:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1010",
     "type": "issue_comment",
@@ -354,7 +354,7 @@ archive/issue_comments_006177.json:
 }
 ```
 
-Attachment
+Attachment [trac_1010_post_review.patch](tarball://root/attachments/some-uuid/ticket1010/trac_1010_post_review.patch) by mhampton created at 2008-03-25 02:01:49
 
 
 
@@ -412,7 +412,7 @@ In any case, this is directly related to this ticket (sorry for going OT) and I'
 archive/issue_comments_006180.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [gfan_docstyle.patch](tarball://root/attachments/some-uuid/ticket1010/gfan_docstyle.patch) by malb created at 2008-03-25 19:49:58",
     "created_at": "2008-03-25T19:49:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1010",
     "type": "issue_comment",
@@ -421,7 +421,7 @@ archive/issue_comments_006180.json:
 }
 ```
 
-Attachment
+Attachment [gfan_docstyle.patch](tarball://root/attachments/some-uuid/ticket1010/gfan_docstyle.patch) by malb created at 2008-03-25 19:49:58
 
 
 
@@ -430,7 +430,7 @@ Attachment
 archive/issue_comments_006181.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [coverage_before.txt](tarball://root/attachments/some-uuid/ticket1010/coverage_before.txt) by malb created at 2008-03-25 19:50:29",
     "created_at": "2008-03-25T19:50:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1010",
     "type": "issue_comment",
@@ -439,7 +439,7 @@ archive/issue_comments_006181.json:
 }
 ```
 
-Attachment
+Attachment [coverage_before.txt](tarball://root/attachments/some-uuid/ticket1010/coverage_before.txt) by malb created at 2008-03-25 19:50:29
 
 
 
@@ -448,7 +448,7 @@ Attachment
 archive/issue_comments_006182.json:
 ```json
 {
-    "body": "Attachment\n\nReview of the `post_review` patch:\n* The docstrings don't obey Sage's style conventions (indentation\n  etc.), I've attached a patch for that (`gfan_docstyle.patch`).\n* man newly introduced methods/functions still don't have any\n  documentation and no doctests. Sage now has a\n  nothing-new-without-doctests policy, so this needs to be addressed\n  before this can go in.\n* I've also attached `coverage_before.txt` and `coverage_after.txt`\n  with coverage information before and after the patch was applied.\n* I'm not sure if this is related to the rewrite:\n\n```\nsage: P = PolynomialRing(GF(127),10,'x')\nsage: I = sage.rings.ideal.FieldIdeal(P)\nsage: gf = I.groebner_fan()\nsage: gb = gf.reduced_groebner_bases()\n[[x9^127 - x9, x8^127 - x8, x7^127 - x7, x6^127 - x6, x5^127 - x5, x4^127 - x4, x3^127 - x3, x2^127 - x2, x1^127 - x1, x0^127 - x0]]\n\nsage: P = PolynomialRing(GF(127),11,'x')\nsage: I = sage.rings.ideal.FieldIdeal(P)\nsage: gf = I.groebner_fan()\nsage: gf.reduced_groebner_bases()\n<type 'exceptions.RuntimeError'>          Traceback (most recent call last)\n...\n<type 'exceptions.RuntimeError'>: gfan: parser.cpp:405: PolynomialSet CharacterBasedParser::parsePolynomialSet(const PolynomialRing&): Assertion `isRightBracket(c)' failed.\n```\n\n* Also, some methods do have examples but no explanation what they do. IMHO this should be addressed too.",
+    "body": "Attachment [coverage_after.txt](tarball://root/attachments/some-uuid/ticket1010/coverage_after.txt) by malb created at 2008-03-25 19:51:53\n\nReview of the `post_review` patch:\n* The docstrings don't obey Sage's style conventions (indentation\n  etc.), I've attached a patch for that (`gfan_docstyle.patch`).\n* man newly introduced methods/functions still don't have any\n  documentation and no doctests. Sage now has a\n  nothing-new-without-doctests policy, so this needs to be addressed\n  before this can go in.\n* I've also attached `coverage_before.txt` and `coverage_after.txt`\n  with coverage information before and after the patch was applied.\n* I'm not sure if this is related to the rewrite:\n\n```\nsage: P = PolynomialRing(GF(127),10,'x')\nsage: I = sage.rings.ideal.FieldIdeal(P)\nsage: gf = I.groebner_fan()\nsage: gb = gf.reduced_groebner_bases()\n[[x9^127 - x9, x8^127 - x8, x7^127 - x7, x6^127 - x6, x5^127 - x5, x4^127 - x4, x3^127 - x3, x2^127 - x2, x1^127 - x1, x0^127 - x0]]\n\nsage: P = PolynomialRing(GF(127),11,'x')\nsage: I = sage.rings.ideal.FieldIdeal(P)\nsage: gf = I.groebner_fan()\nsage: gf.reduced_groebner_bases()\n<type 'exceptions.RuntimeError'>          Traceback (most recent call last)\n...\n<type 'exceptions.RuntimeError'>: gfan: parser.cpp:405: PolynomialSet CharacterBasedParser::parsePolynomialSet(const PolynomialRing&): Assertion `isRightBracket(c)' failed.\n```\n\n* Also, some methods do have examples but no explanation what they do. IMHO this should be addressed too.",
     "created_at": "2008-03-25T19:51:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1010",
     "type": "issue_comment",
@@ -457,7 +457,7 @@ archive/issue_comments_006182.json:
 }
 ```
 
-Attachment
+Attachment [coverage_after.txt](tarball://root/attachments/some-uuid/ticket1010/coverage_after.txt) by malb created at 2008-03-25 19:51:53
 
 Review of the `post_review` patch:
 * The docstrings don't obey Sage's style conventions (indentation
@@ -513,7 +513,7 @@ patch against 2.10.4 addressing almost all review comments
 archive/issue_comments_006184.json:
 ```json
 {
-    "body": "Attachment\n\nThe latest patch addresses almost all of the review comments.  Coverage is now 100%; the doctest on the \"interactive\" command is bogus because of the nature of the command.  Documentation and doctests should conform to Sage's style conventions - (btw where is this laid out precisely?).  More explanation has been added, although I'm sure more could be, but I feel that really anyone interested should read the gfan manual and maybe even Anders Jensen's thesis if they want serious explanation. \n\nI have also addressed the bug pointed out by Martin - this arises because gfan cannot handle variables whose names are prefixes of other variables, and the variables names are not remapped anymore.  So I raise an explicit error and explanation for that case.  This could be fixed, but I think it is acceptable for the moment.  \n\nI have working prototype code for 3D rendering of Groebner fans, but I would like this work included in Sage as soon as possible, and then I will prepare another enhancement ticket, probably for Sage-3.0.",
+    "body": "Attachment [trac_1010_post_review_2.patch](tarball://root/attachments/some-uuid/ticket1010/trac_1010_post_review_2.patch) by mhampton created at 2008-03-27 03:07:13\n\nThe latest patch addresses almost all of the review comments.  Coverage is now 100%; the doctest on the \"interactive\" command is bogus because of the nature of the command.  Documentation and doctests should conform to Sage's style conventions - (btw where is this laid out precisely?).  More explanation has been added, although I'm sure more could be, but I feel that really anyone interested should read the gfan manual and maybe even Anders Jensen's thesis if they want serious explanation. \n\nI have also addressed the bug pointed out by Martin - this arises because gfan cannot handle variables whose names are prefixes of other variables, and the variables names are not remapped anymore.  So I raise an explicit error and explanation for that case.  This could be fixed, but I think it is acceptable for the moment.  \n\nI have working prototype code for 3D rendering of Groebner fans, but I would like this work included in Sage as soon as possible, and then I will prepare another enhancement ticket, probably for Sage-3.0.",
     "created_at": "2008-03-27T03:07:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1010",
     "type": "issue_comment",
@@ -522,7 +522,7 @@ archive/issue_comments_006184.json:
 }
 ```
 
-Attachment
+Attachment [trac_1010_post_review_2.patch](tarball://root/attachments/some-uuid/ticket1010/trac_1010_post_review_2.patch) by mhampton created at 2008-03-27 03:07:13
 
 The latest patch addresses almost all of the review comments.  Coverage is now 100%; the doctest on the "interactive" command is bogus because of the nature of the command.  Documentation and doctests should conform to Sage's style conventions - (btw where is this laid out precisely?).  More explanation has been added, although I'm sure more could be, but I feel that really anyone interested should read the gfan manual and maybe even Anders Jensen's thesis if they want serious explanation. 
 
@@ -555,7 +555,7 @@ some (whitespace) improvements for the docstrings in groebner_fan.py
 archive/issue_comments_006186.json:
 ```json
 {
-    "body": "Attachment\n\n**Review of `trac_1010_post_review_2.patch`**:\n* as said before almost all concerns were addressed and also the coverage was raised to 100% (more than could be asked for)\n* I've got one doctest failure in `sage -t  devel/doc-main/tut/tut.tex`. It wasn't immediately clear to me how to fix this:\n\n```\nFile \"tut.py\", line 2362:\n    : F.fvector()\nException raised:\n    Traceback (most recent call last):\n      File \"/usr/local/sage-2.10.3.rc2/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_103[4]>\", line 1, in <module>\n        F.fvector()###line 2362:\n    : F.fvector()\n    AttributeError: 'GroebnerFan' object has no attribute 'fvector'\n```\n\n* I've attached a tiny patch which adds a reference to the GFan website and some trivial whitespace changes (if the author doesn't like it, it can be left out)\n* Once the `tut.tex` doctest passed (and there is word on whether my proposed fixes shall go in) I'd happily give it a positive review.\n* **Good job mhampton**!",
+    "body": "Attachment [gfan_docstrings.patch](tarball://root/attachments/some-uuid/ticket1010/gfan_docstrings.patch) by malb created at 2008-03-27 14:02:44\n\n**Review of `trac_1010_post_review_2.patch`**:\n* as said before almost all concerns were addressed and also the coverage was raised to 100% (more than could be asked for)\n* I've got one doctest failure in `sage -t  devel/doc-main/tut/tut.tex`. It wasn't immediately clear to me how to fix this:\n\n```\nFile \"tut.py\", line 2362:\n    : F.fvector()\nException raised:\n    Traceback (most recent call last):\n      File \"/usr/local/sage-2.10.3.rc2/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_103[4]>\", line 1, in <module>\n        F.fvector()###line 2362:\n    : F.fvector()\n    AttributeError: 'GroebnerFan' object has no attribute 'fvector'\n```\n\n* I've attached a tiny patch which adds a reference to the GFan website and some trivial whitespace changes (if the author doesn't like it, it can be left out)\n* Once the `tut.tex` doctest passed (and there is word on whether my proposed fixes shall go in) I'd happily give it a positive review.\n* **Good job mhampton**!",
     "created_at": "2008-03-27T14:02:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1010",
     "type": "issue_comment",
@@ -564,7 +564,7 @@ archive/issue_comments_006186.json:
 }
 ```
 
-Attachment
+Attachment [gfan_docstrings.patch](tarball://root/attachments/some-uuid/ticket1010/gfan_docstrings.patch) by malb created at 2008-03-27 14:02:44
 
 **Review of `trac_1010_post_review_2.patch`**:
 * as said before almost all concerns were addressed and also the coverage was raised to 100% (more than could be asked for)
@@ -697,7 +697,7 @@ This might be totally wrong, but we will see :)
 archive/issue_comments_006191.json:
 ```json
 {
-    "body": "Attachment\n\nMerged trac_1010_post_review_2.patch, gfan_docstrings.patch and trac_1010-tut.tex-doctest-fix.patch in Sage 2.11.alpha0. There are two potential issues left to fix:\n \n* What happened to fvector? polyhedralfan certainly has nothing to do with fvector - it just happens to be in the former location of fvector.\n* a clean Makefile in src in the gfan.spkg\n\nBoth the issues should be addressed in follow up tickets.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_1010-tut.tex-doctest-fix.patch](tarball://root/attachments/some-uuid/ticket1010/trac_1010-tut.tex-doctest-fix.patch) by mabshoff created at 2008-03-28 10:13:49\n\nMerged trac_1010_post_review_2.patch, gfan_docstrings.patch and trac_1010-tut.tex-doctest-fix.patch in Sage 2.11.alpha0. There are two potential issues left to fix:\n \n* What happened to fvector? polyhedralfan certainly has nothing to do with fvector - it just happens to be in the former location of fvector.\n* a clean Makefile in src in the gfan.spkg\n\nBoth the issues should be addressed in follow up tickets.\n\nCheers,\n\nMichael",
     "created_at": "2008-03-28T10:13:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1010",
     "type": "issue_comment",
@@ -706,7 +706,7 @@ archive/issue_comments_006191.json:
 }
 ```
 
-Attachment
+Attachment [trac_1010-tut.tex-doctest-fix.patch](tarball://root/attachments/some-uuid/ticket1010/trac_1010-tut.tex-doctest-fix.patch) by mabshoff created at 2008-03-28 10:13:49
 
 Merged trac_1010_post_review_2.patch, gfan_docstrings.patch and trac_1010-tut.tex-doctest-fix.patch in Sage 2.11.alpha0. There are two potential issues left to fix:
  

@@ -69,7 +69,7 @@ Changing assignee from tbd to anovocin.
 archive/issue_comments_031347.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ntlfactor.patch](tarball://root/attachments/some-uuid/ticket4283/ntlfactor.patch) by anovocin created at 2008-10-14 15:21:47",
     "created_at": "2008-10-14T15:21:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4283",
     "type": "issue_comment",
@@ -78,4 +78,4 @@ archive/issue_comments_031347.json:
 }
 ```
 
-Attachment
+Attachment [ntlfactor.patch](tarball://root/attachments/some-uuid/ticket4283/ntlfactor.patch) by anovocin created at 2008-10-14 15:21:47

@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7274
 archive/issue_comments_060529.json:
 ```json
 {
-    "body": "Attachment\n\nMaximum flow algorithms",
+    "body": "Attachment [maxflowsolver.patch](tarball://root/attachments/some-uuid/ticket7274/maxflowsolver.patch) by tombuc created at 2009-10-23 21:15:50\n\nMaximum flow algorithms",
     "created_at": "2009-10-23T21:15:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7274",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_060529.json:
 }
 ```
 
-Attachment
+Attachment [maxflowsolver.patch](tarball://root/attachments/some-uuid/ticket7274/maxflowsolver.patch) by tombuc created at 2009-10-23 21:15:50
 
 Maximum flow algorithms
 
@@ -57,7 +57,7 @@ Maximum flow algorithms
 archive/issue_comments_060530.json:
 ```json
 {
-    "body": "Attachment\n\nMaximum matching in bipartite graphs",
+    "body": "Attachment [marriage.patch](tarball://root/attachments/some-uuid/ticket7274/marriage.patch) by tombuc created at 2009-10-23 21:16:27\n\nMaximum matching in bipartite graphs",
     "created_at": "2009-10-23T21:16:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7274",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_060530.json:
 }
 ```
 
-Attachment
+Attachment [marriage.patch](tarball://root/attachments/some-uuid/ticket7274/marriage.patch) by tombuc created at 2009-10-23 21:16:27
 
 Maximum matching in bipartite graphs
 
@@ -77,7 +77,7 @@ Maximum matching in bipartite graphs
 archive/issue_comments_060531.json:
 ```json
 {
-    "body": "Attachment\n\nExample usage",
+    "body": "Attachment [MaxflowTest.sws](tarball://root/attachments/some-uuid/ticket7274/MaxflowTest.sws) by tombuc created at 2009-10-23 21:17:00\n\nExample usage",
     "created_at": "2009-10-23T21:17:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7274",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_060531.json:
 }
 ```
 
-Attachment
+Attachment [MaxflowTest.sws](tarball://root/attachments/some-uuid/ticket7274/MaxflowTest.sws) by tombuc created at 2009-10-23 21:17:00
 
 Example usage
 

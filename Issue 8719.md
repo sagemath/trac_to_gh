@@ -135,7 +135,7 @@ Rob
 archive/issue_comments_079596.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8719-numpy-conversion.patch](tarball://root/attachments/some-uuid/ticket8719/trac_8719-numpy-conversion.patch) by jason created at 2010-05-04 05:11:23",
     "created_at": "2010-05-04T05:11:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8719",
     "type": "issue_comment",
@@ -144,7 +144,7 @@ archive/issue_comments_079596.json:
 }
 ```
 
-Attachment
+Attachment [trac_8719-numpy-conversion.patch](tarball://root/attachments/some-uuid/ticket8719/trac_8719-numpy-conversion.patch) by jason created at 2010-05-04 05:11:23
 
 
 

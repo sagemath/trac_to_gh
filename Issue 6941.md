@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6941
 archive/issue_comments_057386.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch looks good, applies cleanly and doctests pass. However, do we really need to mimic the old behaviour?",
+    "body": "Attachment [trac_6941_monicgcd.patch](tarball://root/attachments/some-uuid/ticket6941/trac_6941_monicgcd.patch) by malb created at 2009-09-17 19:54:06\n\nThe patch looks good, applies cleanly and doctests pass. However, do we really need to mimic the old behaviour?",
     "created_at": "2009-09-17T19:54:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6941",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_057386.json:
 }
 ```
 
-Attachment
+Attachment [trac_6941_monicgcd.patch](tarball://root/attachments/some-uuid/ticket6941/trac_6941_monicgcd.patch) by malb created at 2009-09-17 19:54:06
 
 The patch looks good, applies cleanly and doctests pass. However, do we really need to mimic the old behaviour?
 

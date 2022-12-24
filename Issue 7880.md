@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7880
 archive/issue_comments_068483.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [7585_4_sets_with_partial_maps.patch](tarball://root/attachments/some-uuid/ticket7880/7585_4_sets_with_partial_maps.patch) by robertwb created at 2010-01-09 19:41:21",
     "created_at": "2010-01-09T19:41:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7880",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_068483.json:
 }
 ```
 
-Attachment
+Attachment [7585_4_sets_with_partial_maps.patch](tarball://root/attachments/some-uuid/ticket7880/7585_4_sets_with_partial_maps.patch) by robertwb created at 2010-01-09 19:41:21
 
 
 
@@ -217,7 +217,7 @@ I tried to make each of these mostly self contained, with doctests passing after
 archive/issue_comments_068493.json:
 ```json
 {
-    "body": "Attachment\n\nreplaces previous patch",
+    "body": "Attachment [trac_7880-sets_with_partial_maps.patch](tarball://root/attachments/some-uuid/ticket7880/trac_7880-sets_with_partial_maps.patch) by davidloeffler created at 2010-03-17 21:41:32\n\nreplaces previous patch",
     "created_at": "2010-03-17T21:41:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7880",
     "type": "issue_comment",
@@ -226,7 +226,7 @@ archive/issue_comments_068493.json:
 }
 ```
 
-Attachment
+Attachment [trac_7880-sets_with_partial_maps.patch](tarball://root/attachments/some-uuid/ticket7880/trac_7880-sets_with_partial_maps.patch) by davidloeffler created at 2010-03-17 21:41:32
 
 replaces previous patch
 

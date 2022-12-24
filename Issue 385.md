@@ -233,7 +233,7 @@ Based on 4.1.2.alpha4
 archive/issue_comments_001891.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:6 robert.marik]:\n> Attachment 'trac_385-at-evaluate.patch' not found :(\n\nIt must have gotten lost somewhere during the latest Trac outage.   This should work now.",
+    "body": "Attachment [trac_385-at-evaluate.patch](tarball://root/attachments/some-uuid/ticket385/trac_385-at-evaluate.patch) by kcrisman created at 2009-10-12 16:49:04\n\nReplying to [comment:6 robert.marik]:\n> Attachment 'trac_385-at-evaluate.patch' not found :(\n\nIt must have gotten lost somewhere during the latest Trac outage.   This should work now.",
     "created_at": "2009-10-12T16:49:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/385",
     "type": "issue_comment",
@@ -242,7 +242,7 @@ archive/issue_comments_001891.json:
 }
 ```
 
-Attachment
+Attachment [trac_385-at-evaluate.patch](tarball://root/attachments/some-uuid/ticket385/trac_385-at-evaluate.patch) by kcrisman created at 2009-10-12 16:49:04
 
 Replying to [comment:6 robert.marik]:
 > Attachment 'trac_385-at-evaluate.patch' not found :(

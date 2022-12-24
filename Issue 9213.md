@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9213
 archive/issue_comments_086336.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9213-doc_poset_elements-sl.patch](tarball://root/attachments/some-uuid/ticket9213/trac_9213-doc_poset_elements-sl.patch) by slabbe created at 2010-06-11 11:52:17",
     "created_at": "2010-06-11T11:52:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9213",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_086336.json:
 }
 ```
 
-Attachment
+Attachment [trac_9213-doc_poset_elements-sl.patch](tarball://root/attachments/some-uuid/ticket9213/trac_9213-doc_poset_elements-sl.patch) by slabbe created at 2010-06-11 11:52:17
 
 
 

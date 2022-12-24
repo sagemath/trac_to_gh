@@ -45,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9451
 archive/issue_comments_090575.json:
 ```json
 {
-    "body": "Attachment\n\nbased on 4.4.4",
+    "body": "Attachment [sieve_of_atkin.patch](tarball://root/attachments/some-uuid/ticket9451/sieve_of_atkin.patch) by ohanar created at 2010-07-08 02:02:09\n\nbased on 4.4.4",
     "created_at": "2010-07-08T02:02:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9451",
     "type": "issue_comment",
@@ -54,7 +54,7 @@ archive/issue_comments_090575.json:
 }
 ```
 
-Attachment
+Attachment [sieve_of_atkin.patch](tarball://root/attachments/some-uuid/ticket9451/sieve_of_atkin.patch) by ohanar created at 2010-07-08 02:02:09
 
 based on 4.4.4
 

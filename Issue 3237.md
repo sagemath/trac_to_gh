@@ -175,7 +175,7 @@ enter find_factor, n= 251951573867253012259144010843 B1= 2399
 archive/issue_comments_022419.json:
 ```json
 {
-    "body": "Attachment\n\nThe spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.2.3/alpha0/ecm-6.2.1.spkg\n\nupdates to lates upstream. The growth of the spkg is caused by upstream and there is no obvious far to cut. The patch attached to this ticket makes the ecm extension depend on ecm.h, so the next -b will automatically rebuild the ecm extension after the upgrade.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_3237.patch](tarball://root/attachments/some-uuid/ticket3237/trac_3237.patch) by mabshoff created at 2008-12-23 23:13:46\n\nThe spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.2.3/alpha0/ecm-6.2.1.spkg\n\nupdates to lates upstream. The growth of the spkg is caused by upstream and there is no obvious far to cut. The patch attached to this ticket makes the ecm extension depend on ecm.h, so the next -b will automatically rebuild the ecm extension after the upgrade.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-23T23:13:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3237",
     "type": "issue_comment",
@@ -184,7 +184,7 @@ archive/issue_comments_022419.json:
 }
 ```
 
-Attachment
+Attachment [trac_3237.patch](tarball://root/attachments/some-uuid/ticket3237/trac_3237.patch) by mabshoff created at 2008-12-23 23:13:46
 
 The spkg at
 

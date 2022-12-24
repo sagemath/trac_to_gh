@@ -268,7 +268,7 @@ This is a separate issue, see #5080. The patch fixes the issue that was raised.
 archive/issue_comments_006817.json:
 ```json
 {
-    "body": "Attachment\n\nMerged in Sage 3.3.alpha2\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_1127.patch](tarball://root/attachments/some-uuid/ticket1127/trac_1127.patch) by mabshoff created at 2009-01-24 19:30:30\n\nMerged in Sage 3.3.alpha2\n\nCheers,\n\nMichael",
     "created_at": "2009-01-24T19:30:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1127",
     "type": "issue_comment",
@@ -277,7 +277,7 @@ archive/issue_comments_006817.json:
 }
 ```
 
-Attachment
+Attachment [trac_1127.patch](tarball://root/attachments/some-uuid/ticket1127/trac_1127.patch) by mabshoff created at 2009-01-24 19:30:30
 
 Merged in Sage 3.3.alpha2
 

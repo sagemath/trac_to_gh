@@ -169,7 +169,7 @@ Tim... I don't understand now why you have *two* EXAMPLES blocks, and moreover o
 archive/issue_comments_021143.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3062_flatten.patch](tarball://root/attachments/some-uuid/ticket3062/3062_flatten.patch) by TimothyClemans created at 2008-05-01 06:30:01",
     "created_at": "2008-05-01T06:30:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3062",
     "type": "issue_comment",
@@ -178,7 +178,7 @@ archive/issue_comments_021143.json:
 }
 ```
 
-Attachment
+Attachment [3062_flatten.patch](tarball://root/attachments/some-uuid/ticket3062/3062_flatten.patch) by TimothyClemans created at 2008-05-01 06:30:01
 
 
 

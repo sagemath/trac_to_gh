@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4904
 archive/issue_comments_037206.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4904.patch](tarball://root/attachments/some-uuid/ticket4904/trac_4904.patch) by mhansen created at 2009-01-02 02:28:14",
     "created_at": "2009-01-02T02:28:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4904",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_037206.json:
 }
 ```
 
-Attachment
+Attachment [trac_4904.patch](tarball://root/attachments/some-uuid/ticket4904/trac_4904.patch) by mhansen created at 2009-01-02 02:28:14
 
 
 
@@ -111,7 +111,7 @@ Resolution: fixed
 archive/issue_comments_037210.json:
 ```json
 {
-    "body": "Attachment\n\nMerged in Sage 3.4.alpha0.\n\nCheers,\n\nMichael",
+    "body": "Attachment [sage.categories-final.patch](tarball://root/attachments/some-uuid/ticket4904/sage.categories-final.patch) by mabshoff created at 2009-02-24 18:43:20\n\nMerged in Sage 3.4.alpha0.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-24T18:43:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4904",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_037210.json:
 }
 ```
 
-Attachment
+Attachment [sage.categories-final.patch](tarball://root/attachments/some-uuid/ticket4904/sage.categories-final.patch) by mabshoff created at 2009-02-24 18:43:20
 
 Merged in Sage 3.4.alpha0.
 

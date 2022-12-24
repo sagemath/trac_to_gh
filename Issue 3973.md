@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3973
 archive/issue_comments_028545.json:
 ```json
 {
-    "body": "Attachment\n\ncorrecting the behaviour of short_weierstrass_model in characteristic 3",
+    "body": "Attachment [sage_trac3973.patch](tarball://root/attachments/some-uuid/ticket3973/sage_trac3973.patch) by wuthrich created at 2008-08-28 11:56:33\n\ncorrecting the behaviour of short_weierstrass_model in characteristic 3",
     "created_at": "2008-08-28T11:56:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3973",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_028545.json:
 }
 ```
 
-Attachment
+Attachment [sage_trac3973.patch](tarball://root/attachments/some-uuid/ticket3973/sage_trac3973.patch) by wuthrich created at 2008-08-28 11:56:33
 
 correcting the behaviour of short_weierstrass_model in characteristic 3
 
@@ -106,7 +106,7 @@ Michael
 archive/issue_comments_028548.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage_trac3973a.patch](tarball://root/attachments/some-uuid/ticket3973/sage_trac3973a.patch) by cremona created at 2008-08-28 13:36:25",
     "created_at": "2008-08-28T13:36:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3973",
     "type": "issue_comment",
@@ -115,7 +115,7 @@ archive/issue_comments_028548.json:
 }
 ```
 
-Attachment
+Attachment [sage_trac3973a.patch](tarball://root/attachments/some-uuid/ticket3973/sage_trac3973a.patch) by cremona created at 2008-08-28 13:36:25
 
 
 

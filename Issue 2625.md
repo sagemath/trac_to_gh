@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2625
 archive/issue_comments_018038.json:
 ```json
 {
-    "body": "Attachment\n\nI wasn't able to apply this to 2.10.4\n\n\n```\npatching file sage/rings/polynomial/pbori.pyx\nHunk #1 FAILED at 120\nHunk #2 FAILED at 148\n2 out of 11 hunks FAILED -- saving rejects to file sage/rings/polynomial/pbori.pyx.rej\nabort: patch failed to apply\n```\n\n\nare there other dependancies? \n\nLooking at the patch, it looks pretty good. The only comment I have is that __interface shouldn't have to be declared in `pbori.pxd`--it should already be there from ring.pxd",
+    "body": "Attachment [pb_singular.patch](tarball://root/attachments/some-uuid/ticket2625/pb_singular.patch) by robertwb created at 2008-03-26 06:27:18\n\nI wasn't able to apply this to 2.10.4\n\n\n```\npatching file sage/rings/polynomial/pbori.pyx\nHunk #1 FAILED at 120\nHunk #2 FAILED at 148\n2 out of 11 hunks FAILED -- saving rejects to file sage/rings/polynomial/pbori.pyx.rej\nabort: patch failed to apply\n```\n\n\nare there other dependancies? \n\nLooking at the patch, it looks pretty good. The only comment I have is that __interface shouldn't have to be declared in `pbori.pxd`--it should already be there from ring.pxd",
     "created_at": "2008-03-26T06:27:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2625",
     "type": "issue_comment",
@@ -53,7 +53,7 @@ archive/issue_comments_018038.json:
 }
 ```
 
-Attachment
+Attachment [pb_singular.patch](tarball://root/attachments/some-uuid/ticket2625/pb_singular.patch) by robertwb created at 2008-03-26 06:27:18
 
 I wasn't able to apply this to 2.10.4
 

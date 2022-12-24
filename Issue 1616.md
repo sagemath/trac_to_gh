@@ -125,7 +125,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1616
 archive/issue_comments_010273.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [calculus20080102.hg](tarball://root/attachments/some-uuid/ticket1616/calculus20080102.hg) by wdj created at 2008-01-02 19:55:26",
     "created_at": "2008-01-02T19:55:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1616",
     "type": "issue_comment",
@@ -134,7 +134,7 @@ archive/issue_comments_010273.json:
 }
 ```
 
-Attachment
+Attachment [calculus20080102.hg](tarball://root/attachments/some-uuid/ticket1616/calculus20080102.hg) by wdj created at 2008-01-02 19:55:26
 
 
 
@@ -200,7 +200,7 @@ Changing status from new to assigned.
 archive/issue_comments_010277.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1616-2.patch](tarball://root/attachments/some-uuid/ticket1616/1616-2.patch) by mhansen created at 2008-01-17 00:01:02",
     "created_at": "2008-01-17T00:01:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1616",
     "type": "issue_comment",
@@ -209,7 +209,7 @@ archive/issue_comments_010277.json:
 }
 ```
 
-Attachment
+Attachment [1616-2.patch](tarball://root/attachments/some-uuid/ticket1616/1616-2.patch) by mhansen created at 2008-01-17 00:01:02
 
 
 
@@ -218,7 +218,7 @@ Attachment
 archive/issue_comments_010278.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1616-3.patch](tarball://root/attachments/some-uuid/ticket1616/1616-3.patch) by mhansen created at 2008-01-17 00:01:10",
     "created_at": "2008-01-17T00:01:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1616",
     "type": "issue_comment",
@@ -227,7 +227,7 @@ archive/issue_comments_010278.json:
 }
 ```
 
-Attachment
+Attachment [1616-3.patch](tarball://root/attachments/some-uuid/ticket1616/1616-3.patch) by mhansen created at 2008-01-17 00:01:10
 
 
 

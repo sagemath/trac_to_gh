@@ -71,7 +71,7 @@ Michael
 archive/issue_comments_029897.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4123.patch](tarball://root/attachments/some-uuid/ticket4123/trac_4123.patch) by mabshoff created at 2008-09-15 11:43:42",
     "created_at": "2008-09-15T11:43:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4123",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_029897.json:
 }
 ```
 
-Attachment
+Attachment [trac_4123.patch](tarball://root/attachments/some-uuid/ticket4123/trac_4123.patch) by mabshoff created at 2008-09-15 11:43:42
 
 
 

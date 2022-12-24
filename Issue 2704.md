@@ -191,7 +191,7 @@ Michael
 archive/issue_comments_018652.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_2704_poly_lcm.patch](tarball://root/attachments/some-uuid/ticket2704/trac_2704_poly_lcm.patch) by malb created at 2008-04-15 09:02:58",
     "created_at": "2008-04-15T09:02:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2704",
     "type": "issue_comment",
@@ -200,7 +200,7 @@ archive/issue_comments_018652.json:
 }
 ```
 
-Attachment
+Attachment [trac_2704_poly_lcm.patch](tarball://root/attachments/some-uuid/ticket2704/trac_2704_poly_lcm.patch) by malb created at 2008-04-15 09:02:58
 
 
 

@@ -66,7 +66,7 @@ Other than that, I approve.
 archive/issue_comments_013943.json:
 ```json
 {
-    "body": "Attachment\n\nI've incorporated Robert's suggested change and resubmitted the patch.",
+    "body": "Attachment [2126-eisenstein_series_qexp.patch](tarball://root/attachments/some-uuid/ticket2126/2126-eisenstein_series_qexp.patch) by AlexGhitza created at 2008-02-17 00:17:59\n\nI've incorporated Robert's suggested change and resubmitted the patch.",
     "created_at": "2008-02-17T00:17:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2126",
     "type": "issue_comment",
@@ -75,7 +75,7 @@ archive/issue_comments_013943.json:
 }
 ```
 
-Attachment
+Attachment [2126-eisenstein_series_qexp.patch](tarball://root/attachments/some-uuid/ticket2126/2126-eisenstein_series_qexp.patch) by AlexGhitza created at 2008-02-17 00:17:59
 
 I've incorporated Robert's suggested change and resubmitted the patch.
 

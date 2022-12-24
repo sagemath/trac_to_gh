@@ -369,7 +369,7 @@ apply only this patch
 archive/issue_comments_037817.json:
 ```json
 {
-    "body": "Attachment\n\nI've squashed this into just changing matrix_modn_dense directly, which should make it both easier to see the changes and avoid adding a (modified) second copy of everything.",
+    "body": "Attachment [4968-squashed.patch](tarball://root/attachments/some-uuid/ticket4968/4968-squashed.patch) by robertwb created at 2012-04-19 08:37:41\n\nI've squashed this into just changing matrix_modn_dense directly, which should make it both easier to see the changes and avoid adding a (modified) second copy of everything.",
     "created_at": "2012-04-19T08:37:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4968",
     "type": "issue_comment",
@@ -378,7 +378,7 @@ archive/issue_comments_037817.json:
 }
 ```
 
-Attachment
+Attachment [4968-squashed.patch](tarball://root/attachments/some-uuid/ticket4968/4968-squashed.patch) by robertwb created at 2012-04-19 08:37:41
 
 I've squashed this into just changing matrix_modn_dense directly, which should make it both easier to see the changes and avoid adding a (modified) second copy of everything.
 
@@ -927,7 +927,7 @@ Wall time: 76.67 s
 archive/issue_comments_037835.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4968-review.patch](tarball://root/attachments/some-uuid/ticket4968/4968-review.patch) by mraum created at 2012-05-01 09:35:09",
     "created_at": "2012-05-01T09:35:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4968",
     "type": "issue_comment",
@@ -936,7 +936,7 @@ archive/issue_comments_037835.json:
 }
 ```
 
-Attachment
+Attachment [4968-review.patch](tarball://root/attachments/some-uuid/ticket4968/4968-review.patch) by mraum created at 2012-05-01 09:35:09
 
 
 

@@ -49,7 +49,7 @@ Adds a few code blocks, and marks variables as code.
 archive/issue_comments_065004.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7611-rest-notebook-object.patch](tarball://root/attachments/some-uuid/ticket7611/trac_7611-rest-notebook-object.patch) by timdumol created at 2009-12-06 07:38:34",
     "created_at": "2009-12-06T07:38:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7611",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_065004.json:
 }
 ```
 
-Attachment
+Attachment [trac_7611-rest-notebook-object.patch](tarball://root/attachments/some-uuid/ticket7611/trac_7611-rest-notebook-object.patch) by timdumol created at 2009-12-06 07:38:34
 
 
 

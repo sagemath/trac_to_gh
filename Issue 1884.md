@@ -278,7 +278,7 @@ It's making a new parent for the constant in the loop, and adding it to the coer
 archive/issue_comments_011935.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1884-real-memleak.diff](tarball://root/attachments/some-uuid/ticket1884/1884-real-memleak.diff) by robertwb created at 2008-01-29 20:52:32",
     "created_at": "2008-01-29T20:52:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1884",
     "type": "issue_comment",
@@ -287,7 +287,7 @@ archive/issue_comments_011935.json:
 }
 ```
 
-Attachment
+Attachment [1884-real-memleak.diff](tarball://root/attachments/some-uuid/ticket1884/1884-real-memleak.diff) by robertwb created at 2008-01-29 20:52:32
 
 
 
@@ -296,7 +296,7 @@ Attachment
 archive/issue_comments_011936.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1884-real-memleak2.diff](tarball://root/attachments/some-uuid/ticket1884/1884-real-memleak2.diff) by robertwb created at 2008-01-29 20:53:04",
     "created_at": "2008-01-29T20:53:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1884",
     "type": "issue_comment",
@@ -305,7 +305,7 @@ archive/issue_comments_011936.json:
 }
 ```
 
-Attachment
+Attachment [1884-real-memleak2.diff](tarball://root/attachments/some-uuid/ticket1884/1884-real-memleak2.diff) by robertwb created at 2008-01-29 20:53:04
 
 
 

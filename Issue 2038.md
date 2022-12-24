@@ -98,7 +98,7 @@ See also #2045.
 archive/issue_comments_013189.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [plot.patch](tarball://root/attachments/some-uuid/ticket2038/plot.patch) by moretti created at 2008-02-08 00:03:20",
     "created_at": "2008-02-08T00:03:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2038",
     "type": "issue_comment",
@@ -107,7 +107,7 @@ archive/issue_comments_013189.json:
 }
 ```
 
-Attachment
+Attachment [plot.patch](tarball://root/attachments/some-uuid/ticket2038/plot.patch) by moretti created at 2008-02-08 00:03:20
 
 
 

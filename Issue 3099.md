@@ -51,7 +51,7 @@ Sage source file
 archive/issue_comments_021399.json:
 ```json
 {
-    "body": "Attachment\n\nCrash log",
+    "body": "Attachment [crash.txt](tarball://root/attachments/some-uuid/ticket3099/crash.txt) by jxxcarlson created at 2008-05-03 21:03:16\n\nCrash log",
     "created_at": "2008-05-03T21:03:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3099",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_021399.json:
 }
 ```
 
-Attachment
+Attachment [crash.txt](tarball://root/attachments/some-uuid/ticket3099/crash.txt) by jxxcarlson created at 2008-05-03 21:03:16
 
 Crash log
 

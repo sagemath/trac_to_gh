@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2541
 archive/issue_comments_017327.json:
 ```json
 {
-    "body": "Attachment\n\nThis may fix one of the issues mentioned in #2514. At the very least it adds doctests that show that if there still is a problem, it isn't in `binary_code.pyx`.",
+    "body": "Attachment [2541-binary_code.patch](tarball://root/attachments/some-uuid/ticket2541/2541-binary_code.patch) by rlm created at 2008-03-16 03:23:03\n\nThis may fix one of the issues mentioned in #2514. At the very least it adds doctests that show that if there still is a problem, it isn't in `binary_code.pyx`.",
     "created_at": "2008-03-16T03:23:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2541",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_017327.json:
 }
 ```
 
-Attachment
+Attachment [2541-binary_code.patch](tarball://root/attachments/some-uuid/ticket2541/2541-binary_code.patch) by rlm created at 2008-03-16 03:23:03
 
 This may fix one of the issues mentioned in #2514. At the very least it adds doctests that show that if there still is a problem, it isn't in `binary_code.pyx`.
 

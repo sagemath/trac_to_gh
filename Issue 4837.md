@@ -162,7 +162,7 @@ John
 archive/issue_comments_036674.json:
 ```json
 {
-    "body": "Attachment\n\ndepends on the patch at #4218",
+    "body": "Attachment [trac_4837.patch](tarball://root/attachments/some-uuid/ticket4837/trac_4837.patch) by AlexGhitza created at 2008-12-23 11:12:15\n\ndepends on the patch at #4218",
     "created_at": "2008-12-23T11:12:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4837",
     "type": "issue_comment",
@@ -171,7 +171,7 @@ archive/issue_comments_036674.json:
 }
 ```
 
-Attachment
+Attachment [trac_4837.patch](tarball://root/attachments/some-uuid/ticket4837/trac_4837.patch) by AlexGhitza created at 2008-12-23 11:12:15
 
 depends on the patch at #4218
 

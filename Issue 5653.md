@@ -348,7 +348,7 @@ Email exchange with Evan Fosmark
 archive/issue_comments_044154.json:
 ```json
 {
-    "body": "Attachment\n\nAttachment to Evan Fosmark's email.",
+    "body": "Attachment [bsd.txt](tarball://root/attachments/some-uuid/ticket5653/bsd.txt) by mpatel created at 2009-04-16 07:25:05\n\nAttachment to Evan Fosmark's email.",
     "created_at": "2009-04-16T07:25:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
@@ -357,7 +357,7 @@ archive/issue_comments_044154.json:
 }
 ```
 
-Attachment
+Attachment [bsd.txt](tarball://root/attachments/some-uuid/ticket5653/bsd.txt) by mpatel created at 2009-04-16 07:25:05
 
 Attachment to Evan Fosmark's email.
 
@@ -473,7 +473,7 @@ The other questions are good ones, and I don't have answers for them, but I thin
 archive/issue_comments_044159.json:
 ```json
 {
-    "body": "Attachment\n\nApply only this patch, as it's cumulative. Rebased against 3.4.1.rc4",
+    "body": "Attachment [docstring.4.patch](tarball://root/attachments/some-uuid/ticket5653/docstring.4.patch) by jhpalmieri created at 2009-04-21 18:54:02\n\nApply only this patch, as it's cumulative. Rebased against 3.4.1.rc4",
     "created_at": "2009-04-21T18:54:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
@@ -482,7 +482,7 @@ archive/issue_comments_044159.json:
 }
 ```
 
-Attachment
+Attachment [docstring.4.patch](tarball://root/attachments/some-uuid/ticket5653/docstring.4.patch) by jhpalmieri created at 2009-04-21 18:54:02
 
 Apply only this patch, as it's cumulative. Rebased against 3.4.1.rc4
 
@@ -671,7 +671,7 @@ Please see the comment
 archive/issue_comments_044167.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached a sample `doc/introspect/templates/layout.html` with \"pop out\" and \"close\" links.  When testing it, be sure clear the doc cache, since the MD5 hash is applied only to the source.\n\nNote:  The JavaScript code may well be atrocious.",
+    "body": "Attachment [layout.html.pop](tarball://root/attachments/some-uuid/ticket5653/layout.html.pop) by mpatel created at 2009-04-22 09:46:26\n\nI've attached a sample `doc/introspect/templates/layout.html` with \"pop out\" and \"close\" links.  When testing it, be sure clear the doc cache, since the MD5 hash is applied only to the source.\n\nNote:  The JavaScript code may well be atrocious.",
     "created_at": "2009-04-22T09:46:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
@@ -680,7 +680,7 @@ archive/issue_comments_044167.json:
 }
 ```
 
-Attachment
+Attachment [layout.html.pop](tarball://root/attachments/some-uuid/ticket5653/layout.html.pop) by mpatel created at 2009-04-22 09:46:26
 
 I've attached a sample `doc/introspect/templates/layout.html` with "pop out" and "close" links.  When testing it, be sure clear the doc cache, since the MD5 hash is applied only to the source.
 
@@ -897,7 +897,7 @@ A comment from mhansen: we shouldn't reproduce the files builder.py and conf.py.
 archive/issue_comments_044177.json:
 ```json
 {
-    "body": "Attachment\n\nConform to docbuild setup.  This patch should be cumulative, against 3.4.2.",
+    "body": "Attachment [5653-cleanup.patch](tarball://root/attachments/some-uuid/ticket5653/5653-cleanup.patch) by mpatel created at 2009-05-19 10:05:47\n\nConform to docbuild setup.  This patch should be cumulative, against 3.4.2.",
     "created_at": "2009-05-19T10:05:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
@@ -906,7 +906,7 @@ archive/issue_comments_044177.json:
 }
 ```
 
-Attachment
+Attachment [5653-cleanup.patch](tarball://root/attachments/some-uuid/ticket5653/5653-cleanup.patch) by mpatel created at 2009-05-19 10:05:47
 
 Conform to docbuild setup.  This patch should be cumulative, against 3.4.2.
 
@@ -917,7 +917,7 @@ Conform to docbuild setup.  This patch should be cumulative, against 3.4.2.
 archive/issue_comments_044178.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:29 jhpalmieri]:\n> A comment from mhansen: we shouldn't reproduce the files builder.py and conf.py.  Instead, we should use the existing builder.py (in doc/common), and we should use doc/common/conf.py, putting modifications in introspect/conf.py (as with tutorial/conf.py, etc.).  I couldn't figure out how to run Sphinx and tell it to do all of this, so mpatel, can you fix it?\n\nI think so.  Please see [attachment:trac_5653_pretty_docstrings.patch this patch], which should be inclusive.  (I just exported changesets 12155-7 to the same file, in succession.  Let me know if this is wrong.)",
+    "body": "Attachment [trac_5653_pretty_docstrings.patch](tarball://root/attachments/some-uuid/ticket5653/trac_5653_pretty_docstrings.patch) by mpatel created at 2009-05-19 10:22:08\n\nReplying to [comment:29 jhpalmieri]:\n> A comment from mhansen: we shouldn't reproduce the files builder.py and conf.py.  Instead, we should use the existing builder.py (in doc/common), and we should use doc/common/conf.py, putting modifications in introspect/conf.py (as with tutorial/conf.py, etc.).  I couldn't figure out how to run Sphinx and tell it to do all of this, so mpatel, can you fix it?\n\nI think so.  Please see [attachment:trac_5653_pretty_docstrings.patch this patch], which should be inclusive.  (I just exported changesets 12155-7 to the same file, in succession.  Let me know if this is wrong.)",
     "created_at": "2009-05-19T10:22:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
@@ -926,7 +926,7 @@ archive/issue_comments_044178.json:
 }
 ```
 
-Attachment
+Attachment [trac_5653_pretty_docstrings.patch](tarball://root/attachments/some-uuid/ticket5653/trac_5653_pretty_docstrings.patch) by mpatel created at 2009-05-19 10:22:08
 
 Replying to [comment:29 jhpalmieri]:
 > A comment from mhansen: we shouldn't reproduce the files builder.py and conf.py.  Instead, we should use the existing builder.py (in doc/common), and we should use doc/common/conf.py, putting modifications in introspect/conf.py (as with tutorial/conf.py, etc.).  I couldn't figure out how to run Sphinx and tell it to do all of this, so mpatel, can you fix it?
@@ -972,7 +972,7 @@ This produced an all-in-one patch.
 archive/issue_comments_044180.json:
 ```json
 {
-    "body": "Attachment\n\ncumulative against 4.0.alpha0.  Apply only this patch.",
+    "body": "Attachment [docstring.5.patch](tarball://root/attachments/some-uuid/ticket5653/docstring.5.patch) by jhpalmieri created at 2009-05-19 21:31:26\n\ncumulative against 4.0.alpha0.  Apply only this patch.",
     "created_at": "2009-05-19T21:31:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
@@ -981,7 +981,7 @@ archive/issue_comments_044180.json:
 }
 ```
 
-Attachment
+Attachment [docstring.5.patch](tarball://root/attachments/some-uuid/ticket5653/docstring.5.patch) by jhpalmieri created at 2009-05-19 21:31:26
 
 cumulative against 4.0.alpha0.  Apply only this patch.
 
@@ -1032,7 +1032,7 @@ As far as the verbosity issue, I don't think it can be fixed cleanly now, so I p
 archive/issue_comments_044183.json:
 ```json
 {
-    "body": "Attachment\n\napply ontop of docstring.5.patch",
+    "body": "Attachment [css.patch](tarball://root/attachments/some-uuid/ticket5653/css.patch) by whuss created at 2009-05-28 08:02:15\n\napply ontop of docstring.5.patch",
     "created_at": "2009-05-28T08:02:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
@@ -1041,7 +1041,7 @@ archive/issue_comments_044183.json:
 }
 ```
 
-Attachment
+Attachment [css.patch](tarball://root/attachments/some-uuid/ticket5653/css.patch) by whuss created at 2009-05-28 08:02:15
 
 apply ontop of docstring.5.patch
 
@@ -1110,7 +1110,7 @@ apply on top of docstring.5.patch -- this replaces css.patch
 archive/issue_comments_044187.json:
 ```json
 {
-    "body": "Attachment\n\nThe [CSS overflow property](http://www.w3schools.com/Css/pr_pos_overflow.asp) can activate \"inline\" scrollbars:\n\n```\ndiv.docstring {\n  overflow: auto;\n}\n```\n",
+    "body": "Attachment [css-new.patch](tarball://root/attachments/some-uuid/ticket5653/css-new.patch) by mpatel created at 2009-05-30 00:46:23\n\nThe [CSS overflow property](http://www.w3schools.com/Css/pr_pos_overflow.asp) can activate \"inline\" scrollbars:\n\n```\ndiv.docstring {\n  overflow: auto;\n}\n```\n",
     "created_at": "2009-05-30T00:46:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
@@ -1119,7 +1119,7 @@ archive/issue_comments_044187.json:
 }
 ```
 
-Attachment
+Attachment [css-new.patch](tarball://root/attachments/some-uuid/ticket5653/css-new.patch) by mpatel created at 2009-05-30 00:46:23
 
 The [CSS overflow property](http://www.w3schools.com/Css/pr_pos_overflow.asp) can activate "inline" scrollbars:
 
@@ -1194,7 +1194,7 @@ Rebase of docstring.5.patch + css-new.patch against v4.0.2 + #6307's 6307bis.pat
 archive/issue_comments_044190.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:38 jason]:\n> However, this may not be an issue with this patch. The directories above are the directories in which I built sage.  However, I moved Sage since then, so the directories above no longer exist.  Why are the directory paths not updated when I move the Sage directory (and start up Sage)?\n\nI've experienced something similar after upgrading and moving the installation to a new home.  I think this directory path issue is important but orthogonal to this ticket.",
+    "body": "Attachment [docstring.6.patch](tarball://root/attachments/some-uuid/ticket5653/docstring.6.patch) by mpatel created at 2009-06-20 16:21:11\n\nReplying to [comment:38 jason]:\n> However, this may not be an issue with this patch. The directories above are the directories in which I built sage.  However, I moved Sage since then, so the directories above no longer exist.  Why are the directory paths not updated when I move the Sage directory (and start up Sage)?\n\nI've experienced something similar after upgrading and moving the installation to a new home.  I think this directory path issue is important but orthogonal to this ticket.",
     "created_at": "2009-06-20T16:21:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
@@ -1203,7 +1203,7 @@ archive/issue_comments_044190.json:
 }
 ```
 
-Attachment
+Attachment [docstring.6.patch](tarball://root/attachments/some-uuid/ticket5653/docstring.6.patch) by mpatel created at 2009-06-20 16:21:11
 
 Replying to [comment:38 jason]:
 > However, this may not be an issue with this patch. The directories above are the directories in which I built sage.  However, I moved Sage since then, so the directories above no longer exist.  Why are the directory paths not updated when I move the Sage directory (and start up Sage)?
@@ -1290,7 +1290,7 @@ summary:     ref manual fixes
 archive/issue_comments_044192.json:
 ```json
 {
-    "body": "Attachment\n\nRe-base against v4.1 + #6307's \"bis\" and \"reviewer\" patches. Apply only this patch.",
+    "body": "Attachment [trac_5653_pretty_docstrings_v7.patch](tarball://root/attachments/some-uuid/ticket5653/trac_5653_pretty_docstrings_v7.patch) by mpatel created at 2009-07-19 05:44:50\n\nRe-base against v4.1 + #6307's \"bis\" and \"reviewer\" patches. Apply only this patch.",
     "created_at": "2009-07-19T05:44:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
@@ -1299,7 +1299,7 @@ archive/issue_comments_044192.json:
 }
 ```
 
-Attachment
+Attachment [trac_5653_pretty_docstrings_v7.patch](tarball://root/attachments/some-uuid/ticket5653/trac_5653_pretty_docstrings_v7.patch) by mpatel created at 2009-07-19 05:44:50
 
 Re-base against v4.1 + #6307's "bis" and "reviewer" patches. Apply only this patch.
 
@@ -1590,7 +1590,7 @@ For whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1.alpha0/tmp
 archive/issue_comments_044204.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of the other patch",
+    "body": "Attachment [trac_5653-doc.patch](tarball://root/attachments/some-uuid/ticket5653/trac_5653-doc.patch) by jhpalmieri created at 2009-07-23 15:24:49\n\napply on top of the other patch",
     "created_at": "2009-07-23T15:24:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
@@ -1599,7 +1599,7 @@ archive/issue_comments_044204.json:
 }
 ```
 
-Attachment
+Attachment [trac_5653-doc.patch](tarball://root/attachments/some-uuid/ticket5653/trac_5653-doc.patch) by jhpalmieri created at 2009-07-23 15:24:49
 
 apply on top of the other patch
 
@@ -1779,7 +1779,7 @@ I think it contains just a newline character.  Thanks very much for making a pat
 archive/issue_comments_044214.json:
 ```json
 {
-    "body": "Attachment\n\nfix MANIFEST.in",
+    "body": "Attachment [trac_5653-manifest.patch](tarball://root/attachments/some-uuid/ticket5653/trac_5653-manifest.patch) by mvngu created at 2009-07-28 17:54:04\n\nfix MANIFEST.in",
     "created_at": "2009-07-28T17:54:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
@@ -1788,7 +1788,7 @@ archive/issue_comments_044214.json:
 }
 ```
 
-Attachment
+Attachment [trac_5653-manifest.patch](tarball://root/attachments/some-uuid/ticket5653/trac_5653-manifest.patch) by mvngu created at 2009-07-28 17:54:04
 
 fix MANIFEST.in
 

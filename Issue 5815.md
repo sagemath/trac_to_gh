@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5815
 archive/issue_comments_045687.json:
 ```json
 {
-    "body": "Attachment\n\nSee the comment.",
+    "body": "Attachment [trac_5815_tinymce_live_doc.patch](tarball://root/attachments/some-uuid/ticket5815/trac_5815_tinymce_live_doc.patch) by mpatel created at 2009-04-18 09:34:34\n\nSee the comment.",
     "created_at": "2009-04-18T09:34:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5815",
     "type": "issue_comment",
@@ -43,7 +43,7 @@ archive/issue_comments_045687.json:
 }
 ```
 
-Attachment
+Attachment [trac_5815_tinymce_live_doc.patch](tarball://root/attachments/some-uuid/ticket5815/trac_5815_tinymce_live_doc.patch) by mpatel created at 2009-04-18 09:34:34
 
 See the comment.
 
@@ -110,7 +110,7 @@ apply instead of previous patch.
 archive/issue_comments_045691.json:
 ```json
 {
-    "body": "Attachment\n\ntrac-5815-docs-and-tinymce.patch takes care of this issue by implementing the idea from the comment above (i.e., don't put the TinyMCE trigger in when you are looking at a doc page).\n\nmpatel, can you review this patch?",
+    "body": "Attachment [trac-5815-docs-and-tinymce.patch](tarball://root/attachments/some-uuid/ticket5815/trac-5815-docs-and-tinymce.patch) by jason created at 2009-04-22 02:22:35\n\ntrac-5815-docs-and-tinymce.patch takes care of this issue by implementing the idea from the comment above (i.e., don't put the TinyMCE trigger in when you are looking at a doc page).\n\nmpatel, can you review this patch?",
     "created_at": "2009-04-22T02:22:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5815",
     "type": "issue_comment",
@@ -119,7 +119,7 @@ archive/issue_comments_045691.json:
 }
 ```
 
-Attachment
+Attachment [trac-5815-docs-and-tinymce.patch](tarball://root/attachments/some-uuid/ticket5815/trac-5815-docs-and-tinymce.patch) by jason created at 2009-04-22 02:22:35
 
 trac-5815-docs-and-tinymce.patch takes care of this issue by implementing the idea from the comment above (i.e., don't put the TinyMCE trigger in when you are looking at a doc page).
 

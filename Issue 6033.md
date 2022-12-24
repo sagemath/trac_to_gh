@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6033
 archive/issue_comments_048033.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6033.patch](tarball://root/attachments/some-uuid/ticket6033/trac_6033.patch) by kcrisman created at 2009-05-13 01:40:12",
     "created_at": "2009-05-13T01:40:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6033",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_048033.json:
 }
 ```
 
-Attachment
+Attachment [trac_6033.patch](tarball://root/attachments/some-uuid/ticket6033/trac_6033.patch) by kcrisman created at 2009-05-13 01:40:12
 
 
 
@@ -145,7 +145,7 @@ Both depend on #6023
 archive/issue_comments_048039.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of previous patches",
+    "body": "Attachment [trac_6033-fix.patch](tarball://root/attachments/some-uuid/ticket6033/trac_6033-fix.patch) by jason created at 2009-05-30 03:57:40\n\napply on top of previous patches",
     "created_at": "2009-05-30T03:57:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6033",
     "type": "issue_comment",
@@ -154,7 +154,7 @@ archive/issue_comments_048039.json:
 }
 ```
 
-Attachment
+Attachment [trac_6033-fix.patch](tarball://root/attachments/some-uuid/ticket6033/trac_6033-fix.patch) by jason created at 2009-05-30 03:57:40
 
 apply on top of previous patches
 
@@ -165,7 +165,7 @@ apply on top of previous patches
 archive/issue_comments_048040.json:
 ```json
 {
-    "body": "Attachment\n\nI added the 'color' synonym to rgbcolor and changed the docs accordingly.  I also added another sentence.\n\nPositive review for kcrisman's patches.  kcrisman: can you review my patch?",
+    "body": "Attachment [trac_6033-referee.patch](tarball://root/attachments/some-uuid/ticket6033/trac_6033-referee.patch) by jason created at 2009-05-30 03:58:32\n\nI added the 'color' synonym to rgbcolor and changed the docs accordingly.  I also added another sentence.\n\nPositive review for kcrisman's patches.  kcrisman: can you review my patch?",
     "created_at": "2009-05-30T03:58:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6033",
     "type": "issue_comment",
@@ -174,7 +174,7 @@ archive/issue_comments_048040.json:
 }
 ```
 
-Attachment
+Attachment [trac_6033-referee.patch](tarball://root/attachments/some-uuid/ticket6033/trac_6033-referee.patch) by jason created at 2009-05-30 03:58:32
 
 I added the 'color' synonym to rgbcolor and changed the docs accordingly.  I also added another sentence.
 
@@ -187,7 +187,7 @@ Positive review for kcrisman's patches.  kcrisman: can you review my patch?
 archive/issue_comments_048041.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review of referee patch; jason, can you review this final patch which makes a couple things more clear (e.g. if someone tried to plot the first example without using thickness and then view it, they might get confused, 2nd example should keep color since that is part of the subplot rendering, etc.)?  \n\nThen apply all four patches once reviewed.  I had some trouble attaching the last one, so if there are two identical ones with the same name only use one of them!",
+    "body": "Attachment [trac_6033-ref-of-ref.2.patch](tarball://root/attachments/some-uuid/ticket6033/trac_6033-ref-of-ref.2.patch) by kcrisman created at 2009-06-01 14:18:32\n\nPositive review of referee patch; jason, can you review this final patch which makes a couple things more clear (e.g. if someone tried to plot the first example without using thickness and then view it, they might get confused, 2nd example should keep color since that is part of the subplot rendering, etc.)?  \n\nThen apply all four patches once reviewed.  I had some trouble attaching the last one, so if there are two identical ones with the same name only use one of them!",
     "created_at": "2009-06-01T14:18:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6033",
     "type": "issue_comment",
@@ -196,7 +196,7 @@ archive/issue_comments_048041.json:
 }
 ```
 
-Attachment
+Attachment [trac_6033-ref-of-ref.2.patch](tarball://root/attachments/some-uuid/ticket6033/trac_6033-ref-of-ref.2.patch) by kcrisman created at 2009-06-01 14:18:32
 
 Positive review of referee patch; jason, can you review this final patch which makes a couple things more clear (e.g. if someone tried to plot the first example without using thickness and then view it, they might get confused, 2nd example should keep color since that is part of the subplot rendering, etc.)?  
 

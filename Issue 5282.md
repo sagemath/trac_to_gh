@@ -49,7 +49,7 @@ OK, I'm posting a patch that fixes this problem.  I improved syseval by getting 
 archive/issue_comments_040598.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5282.patch](tarball://root/attachments/some-uuid/ticket5282/trac_5282.patch) by was created at 2009-02-16 07:00:30",
     "created_at": "2009-02-16T07:00:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5282",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_040598.json:
 }
 ```
 
-Attachment
+Attachment [trac_5282.patch](tarball://root/attachments/some-uuid/ticket5282/trac_5282.patch) by was created at 2009-02-16 07:00:30
 
 
 

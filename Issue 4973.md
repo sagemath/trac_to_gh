@@ -73,7 +73,7 @@ Changing assignee from craigcitro to jason.
 archive/issue_comments_037876.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [matrix-getitem.patch](tarball://root/attachments/some-uuid/ticket4973/matrix-getitem.patch) by jason created at 2009-01-14 12:05:17",
     "created_at": "2009-01-14T12:05:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4973",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_037876.json:
 }
 ```
 
-Attachment
+Attachment [matrix-getitem.patch](tarball://root/attachments/some-uuid/ticket4973/matrix-getitem.patch) by jason created at 2009-01-14 12:05:17
 
 
 
@@ -109,7 +109,7 @@ I didn't mean to mark this as needs review.  There are a few additions to the ge
 archive/issue_comments_037878.json:
 ```json
 {
-    "body": "Attachment\n\nApply matrix-getitem.2.patch only.  This eliminates the C API calls, but keeps the speed, approximately (some cases are a bit slower, some are a bit faster).  This patch also adds more standard slicing functionality to getitem, which actually changes a few behaviors which went against python convention.  See the changed docstrings, for example.",
+    "body": "Attachment [matrix-getitem.2.patch](tarball://root/attachments/some-uuid/ticket4973/matrix-getitem.2.patch) by jason created at 2009-01-15 04:05:55\n\nApply matrix-getitem.2.patch only.  This eliminates the C API calls, but keeps the speed, approximately (some cases are a bit slower, some are a bit faster).  This patch also adds more standard slicing functionality to getitem, which actually changes a few behaviors which went against python convention.  See the changed docstrings, for example.",
     "created_at": "2009-01-15T04:05:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4973",
     "type": "issue_comment",
@@ -118,7 +118,7 @@ archive/issue_comments_037878.json:
 }
 ```
 
-Attachment
+Attachment [matrix-getitem.2.patch](tarball://root/attachments/some-uuid/ticket4973/matrix-getitem.2.patch) by jason created at 2009-01-15 04:05:55
 
 Apply matrix-getitem.2.patch only.  This eliminates the C API calls, but keeps the speed, approximately (some cases are a bit slower, some are a bit faster).  This patch also adds more standard slicing functionality to getitem, which actually changes a few behaviors which went against python convention.  See the changed docstrings, for example.
 
@@ -129,7 +129,7 @@ Apply matrix-getitem.2.patch only.  This eliminates the C API calls, but keeps t
 archive/issue_comments_037879.json:
 ```json
 {
-    "body": "Attachment\n\napply only matrix-getitem.3.patch.  This patch replaces the call to normalize_slice with a standard python idiom for the same functionality.",
+    "body": "Attachment [matrix-getitem.3.patch](tarball://root/attachments/some-uuid/ticket4973/matrix-getitem.3.patch) by jason created at 2009-01-15 06:19:59\n\napply only matrix-getitem.3.patch.  This patch replaces the call to normalize_slice with a standard python idiom for the same functionality.",
     "created_at": "2009-01-15T06:19:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4973",
     "type": "issue_comment",
@@ -138,7 +138,7 @@ archive/issue_comments_037879.json:
 }
 ```
 
-Attachment
+Attachment [matrix-getitem.3.patch](tarball://root/attachments/some-uuid/ticket4973/matrix-getitem.3.patch) by jason created at 2009-01-15 06:19:59
 
 apply only matrix-getitem.3.patch.  This patch replaces the call to normalize_slice with a standard python idiom for the same functionality.
 
@@ -171,7 +171,7 @@ Cython doesn't quite do everything we want to get maximal speed out of this call
 archive/issue_comments_037881.json:
 ```json
 {
-    "body": "Attachment\n\nNew version of the patch. So this adds one additional Python/C API call, but gets a 10% speedup for the case of `M[i,j]`, which I think is worthwhile. Furthermore, it's only necessary because this is a case where Cython doesn't do enough specific optimization for us -- one day, when Cython gets smarter, we can clean this up more.\n\nAlso fixed a bug in matrix indexing with tuples, and added a doctest for that case.",
+    "body": "Attachment [trac-4973-pt2.patch](tarball://root/attachments/some-uuid/ticket4973/trac-4973-pt2.patch) by craigcitro created at 2009-01-15 22:50:03\n\nNew version of the patch. So this adds one additional Python/C API call, but gets a 10% speedup for the case of `M[i,j]`, which I think is worthwhile. Furthermore, it's only necessary because this is a case where Cython doesn't do enough specific optimization for us -- one day, when Cython gets smarter, we can clean this up more.\n\nAlso fixed a bug in matrix indexing with tuples, and added a doctest for that case.",
     "created_at": "2009-01-15T22:50:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4973",
     "type": "issue_comment",
@@ -180,7 +180,7 @@ archive/issue_comments_037881.json:
 }
 ```
 
-Attachment
+Attachment [trac-4973-pt2.patch](tarball://root/attachments/some-uuid/ticket4973/trac-4973-pt2.patch) by craigcitro created at 2009-01-15 22:50:03
 
 New version of the patch. So this adds one additional Python/C API call, but gets a 10% speedup for the case of `M[i,j]`, which I think is worthwhile. Furthermore, it's only necessary because this is a case where Cython doesn't do enough specific optimization for us -- one day, when Cython gets smarter, we can clean this up more.
 
@@ -260,7 +260,7 @@ So, positive review if this regression is fixed.
 archive/issue_comments_037884.json:
 ```json
 {
-    "body": "Attachment\n\nPatch attached that fixes the regression (at least on my machine).",
+    "body": "Attachment [trac-4973-pt3.patch](tarball://root/attachments/some-uuid/ticket4973/trac-4973-pt3.patch) by craigcitro created at 2009-01-16 02:13:06\n\nPatch attached that fixes the regression (at least on my machine).",
     "created_at": "2009-01-16T02:13:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4973",
     "type": "issue_comment",
@@ -269,7 +269,7 @@ archive/issue_comments_037884.json:
 }
 ```
 
-Attachment
+Attachment [trac-4973-pt3.patch](tarball://root/attachments/some-uuid/ticket4973/trac-4973-pt3.patch) by craigcitro created at 2009-01-16 02:13:06
 
 Patch attached that fixes the regression (at least on my machine).
 
@@ -345,7 +345,7 @@ apply on top of previous patch
 archive/issue_comments_037887.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [doctest-fix.patch](tarball://root/attachments/some-uuid/ticket4973/doctest-fix.patch) by jason created at 2009-01-16 02:24:52",
     "created_at": "2009-01-16T02:24:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4973",
     "type": "issue_comment",
@@ -354,7 +354,7 @@ archive/issue_comments_037887.json:
 }
 ```
 
-Attachment
+Attachment [doctest-fix.patch](tarball://root/attachments/some-uuid/ticket4973/doctest-fix.patch) by jason created at 2009-01-16 02:24:52
 
 
 

@@ -675,7 +675,7 @@ But that command works fine from the command line, and I'm not flushing any buff
 archive/issue_comments_092646.json:
 ```json
 {
-    "body": "Attachment\n\nAs the name says... Apply to scripts repo.",
+    "body": "Attachment [TICKET_UNRELATED-ncadoctest-flush_output_in_verbose_mode-scripts_repo.patch](tarball://root/attachments/some-uuid/ticket9584/TICKET_UNRELATED-ncadoctest-flush_output_in_verbose_mode-scripts_repo.patch) by leif created at 2010-07-24 20:28:38\n\nAs the name says... Apply to scripts repo.",
     "created_at": "2010-07-24T20:28:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9584",
     "type": "issue_comment",
@@ -684,7 +684,7 @@ archive/issue_comments_092646.json:
 }
 ```
 
-Attachment
+Attachment [TICKET_UNRELATED-ncadoctest-flush_output_in_verbose_mode-scripts_repo.patch](tarball://root/attachments/some-uuid/ticket9584/TICKET_UNRELATED-ncadoctest-flush_output_in_verbose_mode-scripts_repo.patch) by leif created at 2010-07-24 20:28:38
 
 As the name says... Apply to scripts repo.
 
@@ -1364,7 +1364,7 @@ Just for the record: I've verified that the random graph is exactly the same on 
 archive/issue_comments_092667.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9584-generic_graph.patch](tarball://root/attachments/some-uuid/ticket9584/trac_9584-generic_graph.patch) by jhpalmieri created at 2010-07-26 20:58:16",
     "created_at": "2010-07-26T20:58:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9584",
     "type": "issue_comment",
@@ -1373,7 +1373,7 @@ archive/issue_comments_092667.json:
 }
 ```
 
-Attachment
+Attachment [trac_9584-generic_graph.patch](tarball://root/attachments/some-uuid/ticket9584/trac_9584-generic_graph.patch) by jhpalmieri created at 2010-07-26 20:58:16
 
 
 

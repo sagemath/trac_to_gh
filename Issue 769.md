@@ -211,7 +211,7 @@ Resolution: fixed
 archive/issue_comments_004575.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [strassen-fix.patch](tarball://root/attachments/some-uuid/ticket769/strassen-fix.patch) by was created at 2007-10-05 02:16:07",
     "created_at": "2007-10-05T02:16:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/769",
     "type": "issue_comment",
@@ -220,7 +220,7 @@ archive/issue_comments_004575.json:
 }
 ```
 
-Attachment
+Attachment [strassen-fix.patch](tarball://root/attachments/some-uuid/ticket769/strassen-fix.patch) by was created at 2007-10-05 02:16:07
 
 
 

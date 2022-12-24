@@ -171,7 +171,7 @@ This patch provides very useful functionality, and in a very efficient way.  It 
 archive/issue_comments_017912.json:
 ```json
 {
-    "body": "Attachment\n\nMerged in Sage 2.11.alpha2",
+    "body": "Attachment [cong_subgp_gens.patch](tarball://root/attachments/some-uuid/ticket2609/cong_subgp_gens.patch) by mabshoff created at 2008-03-23 20:35:53\n\nMerged in Sage 2.11.alpha2",
     "created_at": "2008-03-23T20:35:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2609",
     "type": "issue_comment",
@@ -180,7 +180,7 @@ archive/issue_comments_017912.json:
 }
 ```
 
-Attachment
+Attachment [cong_subgp_gens.patch](tarball://root/attachments/some-uuid/ticket2609/cong_subgp_gens.patch) by mabshoff created at 2008-03-23 20:35:53
 
 Merged in Sage 2.11.alpha2
 

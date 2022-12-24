@@ -72,7 +72,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2024
 archive/issue_comments_013083.json:
 ```json
 {
-    "body": "Attachment\n\nhuh? does gcd even make sense over this ring? `Z_N[x]` doesn't even have unique factorisation if N is composite.",
+    "body": "Attachment [trac_2024_gcd.patch](tarball://root/attachments/some-uuid/ticket2024/trac_2024_gcd.patch) by dmharvey created at 2008-02-01 23:55:10\n\nhuh? does gcd even make sense over this ring? `Z_N[x]` doesn't even have unique factorisation if N is composite.",
     "created_at": "2008-02-01T23:55:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2024",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_013083.json:
 }
 ```
 
-Attachment
+Attachment [trac_2024_gcd.patch](tarball://root/attachments/some-uuid/ticket2024/trac_2024_gcd.patch) by dmharvey created at 2008-02-01 23:55:10
 
 huh? does gcd even make sense over this ring? `Z_N[x]` doesn't even have unique factorisation if N is composite.
 
@@ -151,7 +151,7 @@ replacement patch gcd -> common_divisor
 archive/issue_comments_013087.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch renames `gcd` to `common_divisor` and adds some documentation. Also, some `_sig_on`/{{{_sig_off}}s were added to avoid zero divisions.",
+    "body": "Attachment [trac_2024_gcd.2.patch](tarball://root/attachments/some-uuid/ticket2024/trac_2024_gcd.2.patch) by malb created at 2008-02-02 14:33:10\n\nThe attached patch renames `gcd` to `common_divisor` and adds some documentation. Also, some `_sig_on`/{{{_sig_off}}s were added to avoid zero divisions.",
     "created_at": "2008-02-02T14:33:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2024",
     "type": "issue_comment",
@@ -160,7 +160,7 @@ archive/issue_comments_013087.json:
 }
 ```
 
-Attachment
+Attachment [trac_2024_gcd.2.patch](tarball://root/attachments/some-uuid/ticket2024/trac_2024_gcd.2.patch) by malb created at 2008-02-02 14:33:10
 
 The attached patch renames `gcd` to `common_divisor` and adds some documentation. Also, some `_sig_on`/{{{_sig_off}}s were added to avoid zero divisions.
 

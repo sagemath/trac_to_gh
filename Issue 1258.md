@@ -160,7 +160,7 @@ http://sage.math.washington.edu/home/wdj/patches/linear_code.py
 archive/issue_comments_007867.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [codes.hg](tarball://root/attachments/some-uuid/ticket1258/codes.hg) by rlm created at 2007-12-11 18:44:53",
     "created_at": "2007-12-11T18:44:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1258",
     "type": "issue_comment",
@@ -169,7 +169,7 @@ archive/issue_comments_007867.json:
 }
 ```
 
-Attachment
+Attachment [codes.hg](tarball://root/attachments/some-uuid/ticket1258/codes.hg) by rlm created at 2007-12-11 18:44:53
 
 
 
@@ -198,7 +198,7 @@ should apply cleanly to sage-2.9.alpha5
 archive/issue_comments_007869.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-1258-ref.patch](tarball://root/attachments/some-uuid/ticket1258/trac-1258-ref.patch) by was created at 2007-12-15 23:24:58",
     "created_at": "2007-12-15T23:24:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1258",
     "type": "issue_comment",
@@ -207,7 +207,7 @@ archive/issue_comments_007869.json:
 }
 ```
 
-Attachment
+Attachment [trac-1258-ref.patch](tarball://root/attachments/some-uuid/ticket1258/trac-1258-ref.patch) by was created at 2007-12-15 23:24:58
 
 
 

@@ -90,7 +90,7 @@ Now we're starting to make some sense!?
 archive/issue_comments_006460.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-1064.patch](tarball://root/attachments/some-uuid/ticket1064/trac-1064.patch) by rlm created at 2007-12-19 06:39:33",
     "created_at": "2007-12-19T06:39:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1064",
     "type": "issue_comment",
@@ -99,7 +99,7 @@ archive/issue_comments_006460.json:
 }
 ```
 
-Attachment
+Attachment [trac-1064.patch](tarball://root/attachments/some-uuid/ticket1064/trac-1064.patch) by rlm created at 2007-12-19 06:39:33
 
 
 

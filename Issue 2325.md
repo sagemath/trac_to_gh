@@ -272,7 +272,7 @@ The fix for 2928 fixes this as well.
 archive/issue_comments_015477.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9596.patch](tarball://root/attachments/some-uuid/ticket2325/9596.patch) by kedlaya created at 2008-04-21 19:06:52",
     "created_at": "2008-04-21T19:06:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2325",
     "type": "issue_comment",
@@ -281,7 +281,7 @@ archive/issue_comments_015477.json:
 }
 ```
 
-Attachment
+Attachment [9596.patch](tarball://root/attachments/some-uuid/ticket2325/9596.patch) by kedlaya created at 2008-04-21 19:06:52
 
 
 

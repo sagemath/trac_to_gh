@@ -380,7 +380,7 @@ I found one problem in the above patch.  I'm posting an updated patch soon.
 archive/issue_comments_038278.json:
 ```json
 {
-    "body": "Attachment\n\nOkay, the bug should be fixed.  The only change is on line 3354 or so, where when inserting a text cell after all other cells, the previous patch called insert_new_cell_after, but should have called insert_new_text_cell_after.  The refreshed patch corrects this.",
+    "body": "Attachment [trac_5025-tinymce_bugfix.patch](tarball://root/attachments/some-uuid/ticket5025/trac_5025-tinymce_bugfix.patch) by jason created at 2009-01-28 17:09:57\n\nOkay, the bug should be fixed.  The only change is on line 3354 or so, where when inserting a text cell after all other cells, the previous patch called insert_new_cell_after, but should have called insert_new_text_cell_after.  The refreshed patch corrects this.",
     "created_at": "2009-01-28T17:09:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5025",
     "type": "issue_comment",
@@ -389,7 +389,7 @@ archive/issue_comments_038278.json:
 }
 ```
 
-Attachment
+Attachment [trac_5025-tinymce_bugfix.patch](tarball://root/attachments/some-uuid/ticket5025/trac_5025-tinymce_bugfix.patch) by jason created at 2009-01-28 17:09:57
 
 Okay, the bug should be fixed.  The only change is on line 3354 or so, where when inserting a text cell after all other cells, the previous patch called insert_new_cell_after, but should have called insert_new_text_cell_after.  The refreshed patch corrects this.
 

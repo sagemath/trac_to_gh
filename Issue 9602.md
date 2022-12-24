@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9602
 archive/issue_comments_092938.json:
 ```json
 {
-    "body": "Attachment\n\nStephen Montgomery-Smith has successfully compiled with a very similar (identical?) patch, attached.",
+    "body": "Attachment [gap-4.4.12.p4.patch](tarball://root/attachments/some-uuid/ticket9602/gap-4.4.12.p4.patch) by kcrisman created at 2012-01-31 01:48:26\n\nStephen Montgomery-Smith has successfully compiled with a very similar (identical?) patch, attached.",
     "created_at": "2012-01-31T01:48:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9602",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_092938.json:
 }
 ```
 
-Attachment
+Attachment [gap-4.4.12.p4.patch](tarball://root/attachments/some-uuid/ticket9602/gap-4.4.12.p4.patch) by kcrisman created at 2012-01-31 01:48:26
 
 Stephen Montgomery-Smith has successfully compiled with a very similar (identical?) patch, attached.
 
@@ -53,7 +53,7 @@ Stephen Montgomery-Smith has successfully compiled with a very similar (identica
 archive/issue_comments_092939.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [spkg-patch-gap-4.4.12.p6](tarball://root/attachments/some-uuid/ticket9602/spkg-patch-gap-4.4.12.p6) by kcrisman created at 2012-01-31 01:48:41",
     "created_at": "2012-01-31T01:48:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9602",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_092939.json:
 }
 ```
 
-Attachment
+Attachment [spkg-patch-gap-4.4.12.p6](tarball://root/attachments/some-uuid/ticket9602/spkg-patch-gap-4.4.12.p6) by kcrisman created at 2012-01-31 01:48:41
 
 
 

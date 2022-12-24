@@ -93,7 +93,7 @@ Changing status from new to needs_review.
 archive/issue_comments_053638.json:
 ```json
 {
-    "body": "Attachment\n\nSome invalid indices weren't being caught in the general matrix[foo] accessor; the fact that non-sparse matrices failed with an error was an implementation detail.\n\nI think I've fixed them all, and doctested that sparse/dense behave the same way now.",
+    "body": "Attachment [sage-trac_6569.patch](tarball://root/attachments/some-uuid/ticket6569/sage-trac_6569.patch) by mjo created at 2012-01-22 19:38:14\n\nSome invalid indices weren't being caught in the general matrix[foo] accessor; the fact that non-sparse matrices failed with an error was an implementation detail.\n\nI think I've fixed them all, and doctested that sparse/dense behave the same way now.",
     "created_at": "2012-01-22T19:38:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6569",
     "type": "issue_comment",
@@ -102,7 +102,7 @@ archive/issue_comments_053638.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac_6569.patch](tarball://root/attachments/some-uuid/ticket6569/sage-trac_6569.patch) by mjo created at 2012-01-22 19:38:14
 
 Some invalid indices weren't being caught in the general matrix[foo] accessor; the fact that non-sparse matrices failed with an error was an implementation detail.
 

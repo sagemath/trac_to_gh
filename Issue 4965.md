@@ -51,7 +51,7 @@ apply this first
 archive/issue_comments_037747.json:
 ```json
 {
-    "body": "Attachment\n\n## Speed-Up on sage.math\n\n### Old\n\n\n```\nsage: P.<x> = PolynomialRing(GF(7))\nsage: type(x)\n<type 'sage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_mod_p'>\nsage: f = P.random_element(100)\nsage: g = P.random_element(100)\nsage: %timeit f*g\n1000 loops, best of 3: 445 \u00b5s per loop\n```\n\n\n### New\n\n\n```\nsage: P.<x> = PolynomialRing(GF(7))\nsage: type(x)\n<type 'sage.rings.polynomial.polynomial_zmod_flint.Polynomial_zmod_flint'>\nsage: f = P.random_element(100)\nsage: g = P.random_element(100)\nsage: %timeit f*g\n100000 loops, best of 3: 7.92 \u00b5s per loop\n```\n",
+    "body": "Attachment [polynomial_template.patch](tarball://root/attachments/some-uuid/ticket4965/polynomial_template.patch) by malb created at 2009-01-11 22:06:12\n\n## Speed-Up on sage.math\n\n### Old\n\n\n```\nsage: P.<x> = PolynomialRing(GF(7))\nsage: type(x)\n<type 'sage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_mod_p'>\nsage: f = P.random_element(100)\nsage: g = P.random_element(100)\nsage: %timeit f*g\n1000 loops, best of 3: 445 \u00b5s per loop\n```\n\n\n### New\n\n\n```\nsage: P.<x> = PolynomialRing(GF(7))\nsage: type(x)\n<type 'sage.rings.polynomial.polynomial_zmod_flint.Polynomial_zmod_flint'>\nsage: f = P.random_element(100)\nsage: g = P.random_element(100)\nsage: %timeit f*g\n100000 loops, best of 3: 7.92 \u00b5s per loop\n```\n",
     "created_at": "2009-01-11T22:06:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_037747.json:
 }
 ```
 
-Attachment
+Attachment [polynomial_template.patch](tarball://root/attachments/some-uuid/ticket4965/polynomial_template.patch) by malb created at 2009-01-11 22:06:12
 
 ## Speed-Up on sage.math
 
@@ -652,7 +652,7 @@ I'm still looking into why the doctest failure above, and nothing obvious is com
 archive/issue_comments_037763.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4965-shift-fix.patch](tarball://root/attachments/some-uuid/ticket4965/4965-shift-fix.patch) by robertwb created at 2009-01-15 05:29:22",
     "created_at": "2009-01-15T05:29:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_comment",
@@ -661,7 +661,7 @@ archive/issue_comments_037763.json:
 }
 ```
 
-Attachment
+Attachment [4965-shift-fix.patch](tarball://root/attachments/some-uuid/ticket4965/4965-shift-fix.patch) by robertwb created at 2009-01-15 05:29:22
 
 
 
@@ -931,7 +931,7 @@ move pxi declarations to pxd
 archive/issue_comments_037776.json:
 ```json
 {
-    "body": "Attachment\n\nOK, I attached a patch. This should probably be folded into zmod_poly.patch",
+    "body": "Attachment [4965-pxi-to-pxd.patch](tarball://root/attachments/some-uuid/ticket4965/4965-pxi-to-pxd.patch) by robertwb created at 2009-01-15 21:20:59\n\nOK, I attached a patch. This should probably be folded into zmod_poly.patch",
     "created_at": "2009-01-15T21:20:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_comment",
@@ -940,7 +940,7 @@ archive/issue_comments_037776.json:
 }
 ```
 
-Attachment
+Attachment [4965-pxi-to-pxd.patch](tarball://root/attachments/some-uuid/ticket4965/4965-pxi-to-pxd.patch) by robertwb created at 2009-01-15 21:20:59
 
 OK, I attached a patch. This should probably be folded into zmod_poly.patch
 
@@ -1150,7 +1150,7 @@ Personally, I think it's a bad idea to impose a 32-b it cutoff for 64-bit platfo
 archive/issue_comments_037785.json:
 ```json
 {
-    "body": "Attachment\n\ngoing down to 2^30",
+    "body": "Attachment [zmod_poly.patch](tarball://root/attachments/some-uuid/ticket4965/zmod_poly.patch) by malb created at 2009-01-20 06:26:22\n\ngoing down to 2^30",
     "created_at": "2009-01-20T06:26:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_comment",
@@ -1159,7 +1159,7 @@ archive/issue_comments_037785.json:
 }
 ```
 
-Attachment
+Attachment [zmod_poly.patch](tarball://root/attachments/some-uuid/ticket4965/zmod_poly.patch) by malb created at 2009-01-20 06:26:22
 
 going down to 2^30
 

@@ -187,7 +187,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_066129.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7705.patch](tarball://root/attachments/some-uuid/ticket7705/trac_7705.patch) by rlm created at 2009-12-17 21:39:38",
     "created_at": "2009-12-17T21:39:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7705",
     "type": "issue_comment",
@@ -196,7 +196,7 @@ archive/issue_comments_066129.json:
 }
 ```
 
-Attachment
+Attachment [trac_7705.patch](tarball://root/attachments/some-uuid/ticket7705/trac_7705.patch) by rlm created at 2009-12-17 21:39:38
 
 
 
@@ -205,7 +205,7 @@ Attachment
 archive/issue_comments_066130.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7705-docs.patch](tarball://root/attachments/some-uuid/ticket7705/trac_7705-docs.patch) by rlm created at 2009-12-17 21:40:03",
     "created_at": "2009-12-17T21:40:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7705",
     "type": "issue_comment",
@@ -214,7 +214,7 @@ archive/issue_comments_066130.json:
 }
 ```
 
-Attachment
+Attachment [trac_7705-docs.patch](tarball://root/attachments/some-uuid/ticket7705/trac_7705-docs.patch) by rlm created at 2009-12-17 21:40:03
 
 
 

@@ -61,7 +61,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6486
 archive/issue_comments_052455.json:
 ```json
 {
-    "body": "Attachment\n\nAdds some documentation and handles the min distance problem",
+    "body": "Attachment [trac6486.patch](tarball://root/attachments/some-uuid/ticket6486/trac6486.patch) by spancratz created at 2010-01-19 23:46:38\n\nAdds some documentation and handles the min distance problem",
     "created_at": "2010-01-19T23:46:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6486",
     "type": "issue_comment",
@@ -70,7 +70,7 @@ archive/issue_comments_052455.json:
 }
 ```
 
-Attachment
+Attachment [trac6486.patch](tarball://root/attachments/some-uuid/ticket6486/trac6486.patch) by spancratz created at 2010-01-19 23:46:38
 
 Adds some documentation and handles the min distance problem
 

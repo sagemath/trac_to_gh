@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6809
 archive/issue_comments_056046.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6809_abstract_methods_of_class.patch](tarball://root/attachments/some-uuid/ticket6809/trac_6809_abstract_methods_of_class.patch) by nthiery created at 2009-10-16 11:03:12",
     "created_at": "2009-10-16T11:03:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6809",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_056046.json:
 }
 ```
 
-Attachment
+Attachment [trac_6809_abstract_methods_of_class.patch](tarball://root/attachments/some-uuid/ticket6809/trac_6809_abstract_methods_of_class.patch) by nthiery created at 2009-10-16 11:03:12
 
 
 
@@ -91,7 +91,7 @@ Changing status from new to needs_review.
 archive/issue_comments_056049.json:
 ```json
 {
-    "body": "Attachment\n\nI'm done reviewing this patch. It is good upto a small detail: the code access to a private attribute. I've added an accessor method. \n\nI just uploaded a new version of the patch after review which add a is_optional method for better encapsulation (as suggested by former comment in the code).\n\nNicolas: please add a positive review when you finished reviewing my changes.\n\nCheers,\n\nFlorent",
+    "body": "Attachment [trac_6809_abstract_methods_of_class.2.patch](tarball://root/attachments/some-uuid/ticket6809/trac_6809_abstract_methods_of_class.2.patch) by hivert created at 2009-10-16 11:41:13\n\nI'm done reviewing this patch. It is good upto a small detail: the code access to a private attribute. I've added an accessor method. \n\nI just uploaded a new version of the patch after review which add a is_optional method for better encapsulation (as suggested by former comment in the code).\n\nNicolas: please add a positive review when you finished reviewing my changes.\n\nCheers,\n\nFlorent",
     "created_at": "2009-10-16T11:41:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6809",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_056049.json:
 }
 ```
 
-Attachment
+Attachment [trac_6809_abstract_methods_of_class.2.patch](tarball://root/attachments/some-uuid/ticket6809/trac_6809_abstract_methods_of_class.2.patch) by hivert created at 2009-10-16 11:41:13
 
 I'm done reviewing this patch. It is good upto a small detail: the code access to a private attribute. I've added an accessor method. 
 
@@ -159,7 +159,7 @@ Added missing blank line
 archive/issue_comments_056052.json:
 ```json
 {
-    "body": "Attachment\n\nAfter Blank line added, Nicolas allows me to put the positive review. \n\nOnly apply the last trac_6809_abstract_methods_of_class.3.patch\n\nFlorent",
+    "body": "Attachment [trac_6809_abstract_methods_of_class.3.patch](tarball://root/attachments/some-uuid/ticket6809/trac_6809_abstract_methods_of_class.3.patch) by hivert created at 2009-10-16 11:58:03\n\nAfter Blank line added, Nicolas allows me to put the positive review. \n\nOnly apply the last trac_6809_abstract_methods_of_class.3.patch\n\nFlorent",
     "created_at": "2009-10-16T11:58:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6809",
     "type": "issue_comment",
@@ -168,7 +168,7 @@ archive/issue_comments_056052.json:
 }
 ```
 
-Attachment
+Attachment [trac_6809_abstract_methods_of_class.3.patch](tarball://root/attachments/some-uuid/ticket6809/trac_6809_abstract_methods_of_class.3.patch) by hivert created at 2009-10-16 11:58:03
 
 After Blank line added, Nicolas allows me to put the positive review. 
 

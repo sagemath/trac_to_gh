@@ -91,7 +91,7 @@ Patch preparses .sage files to temporary .py files in a temp directory.
 archive/issue_comments_003393.json:
 ```json
 {
-    "body": "Attachment\n\nDO NOT APPLY, THIS HAS TROUBLE WITH DIRECTORIES",
+    "body": "Attachment [ncalexan-652.patch](tarball://root/attachments/some-uuid/ticket652/ncalexan-652.patch) by ncalexan created at 2008-01-23 02:23:51\n\nDO NOT APPLY, THIS HAS TROUBLE WITH DIRECTORIES",
     "created_at": "2008-01-23T02:23:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/652",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_003393.json:
 }
 ```
 
-Attachment
+Attachment [ncalexan-652.patch](tarball://root/attachments/some-uuid/ticket652/ncalexan-652.patch) by ncalexan created at 2008-01-23 02:23:51
 
 DO NOT APPLY, THIS HAS TROUBLE WITH DIRECTORIES
 
@@ -111,7 +111,7 @@ DO NOT APPLY, THIS HAS TROUBLE WITH DIRECTORIES
 archive/issue_comments_003394.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ncalexan-652-updated.patch](tarball://root/attachments/some-uuid/ticket652/ncalexan-652-updated.patch) by ncalexan created at 2008-01-23 02:53:16",
     "created_at": "2008-01-23T02:53:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/652",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_003394.json:
 }
 ```
 
-Attachment
+Attachment [ncalexan-652-updated.patch](tarball://root/attachments/some-uuid/ticket652/ncalexan-652-updated.patch) by ncalexan created at 2008-01-23 02:53:16
 
 
 

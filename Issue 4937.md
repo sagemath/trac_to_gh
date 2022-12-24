@@ -137,7 +137,7 @@ Michael
 archive/issue_comments_037481.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch is the rebased version of John's patch.",
+    "body": "Attachment [trac_4937.patch](tarball://root/attachments/some-uuid/ticket4937/trac_4937.patch) by mabshoff created at 2009-01-28 17:41:27\n\nThis patch is the rebased version of John's patch.",
     "created_at": "2009-01-28T17:41:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4937",
     "type": "issue_comment",
@@ -146,7 +146,7 @@ archive/issue_comments_037481.json:
 }
 ```
 
-Attachment
+Attachment [trac_4937.patch](tarball://root/attachments/some-uuid/ticket4937/trac_4937.patch) by mabshoff created at 2009-01-28 17:41:27
 
 This patch is the rebased version of John's patch.
 

@@ -64,7 +64,7 @@ Uses `pkg_resources` to locate the DATA directory.
 archive/issue_comments_062281.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch should do it.\n\nAs a note, we won't even need to restart the server if all we edit are template files. A big plus in ease of development, IMHO.",
+    "body": "Attachment [trac_7402-pkg_resources.patch](tarball://root/attachments/some-uuid/ticket7402/trac_7402-pkg_resources.patch) by timdumol created at 2009-11-06 11:31:18\n\nThis patch should do it.\n\nAs a note, we won't even need to restart the server if all we edit are template files. A big plus in ease of development, IMHO.",
     "created_at": "2009-11-06T11:31:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7402",
     "type": "issue_comment",
@@ -73,7 +73,7 @@ archive/issue_comments_062281.json:
 }
 ```
 
-Attachment
+Attachment [trac_7402-pkg_resources.patch](tarball://root/attachments/some-uuid/ticket7402/trac_7402-pkg_resources.patch) by timdumol created at 2009-11-06 11:31:18
 
 This patch should do it.
 

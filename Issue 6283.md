@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6283
 archive/issue_comments_050162.json:
 ```json
 {
-    "body": "Attachment\n\napply to scripts repository.  depends on #2624.",
+    "body": "Attachment [trac_6283-numthreads.patch](tarball://root/attachments/some-uuid/ticket6283/trac_6283-numthreads.patch) by jhpalmieri created at 2009-09-21 23:08:42\n\napply to scripts repository.  depends on #2624.",
     "created_at": "2009-09-21T23:08:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6283",
     "type": "issue_comment",
@@ -50,7 +50,7 @@ archive/issue_comments_050162.json:
 }
 ```
 
-Attachment
+Attachment [trac_6283-numthreads.patch](tarball://root/attachments/some-uuid/ticket6283/trac_6283-numthreads.patch) by jhpalmieri created at 2009-09-21 23:08:42
 
 apply to scripts repository.  depends on #2624.
 
@@ -79,7 +79,7 @@ patch for SAGE_ROOT/makefile
 archive/issue_comments_050164.json:
 ```json
 {
-    "body": "Attachment\n\nthe file SAGE_ROOT/makefile",
+    "body": "Attachment [makefile](tarball://root/attachments/some-uuid/ticket6283/makefile) by jhpalmieri created at 2009-09-21 23:12:51\n\nthe file SAGE_ROOT/makefile",
     "created_at": "2009-09-21T23:12:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6283",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_050164.json:
 }
 ```
 
-Attachment
+Attachment [makefile](tarball://root/attachments/some-uuid/ticket6283/makefile) by jhpalmieri created at 2009-09-21 23:12:51
 
 the file SAGE_ROOT/makefile
 
@@ -234,7 +234,7 @@ Release manager: merge attachment:trac_6283-numthreads.patch and also patch the 
 archive/issue_comments_050172.json:
 ```json
 {
-    "body": "Attachment\n\nadds warning about setting the number of threads to 0",
+    "body": "Attachment [trac_6283-warning.patch](tarball://root/attachments/some-uuid/ticket6283/trac_6283-warning.patch) by mvngu created at 2009-09-25 04:55:48\n\nadds warning about setting the number of threads to 0",
     "created_at": "2009-09-25T04:55:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6283",
     "type": "issue_comment",
@@ -243,7 +243,7 @@ archive/issue_comments_050172.json:
 }
 ```
 
-Attachment
+Attachment [trac_6283-warning.patch](tarball://root/attachments/some-uuid/ticket6283/trac_6283-warning.patch) by mvngu created at 2009-09-25 04:55:48
 
 adds warning about setting the number of threads to 0
 

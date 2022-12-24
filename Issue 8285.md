@@ -102,7 +102,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8285
 archive/issue_comments_073366.json:
 ```json
 {
-    "body": "Attachment\n\nMercurial patch",
+    "body": "Attachment [Solaris-fixes-for-R.patch](tarball://root/attachments/some-uuid/ticket8285/Solaris-fixes-for-R.patch) by drkirkby created at 2010-02-17 00:24:23\n\nMercurial patch",
     "created_at": "2010-02-17T00:24:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8285",
     "type": "issue_comment",
@@ -111,7 +111,7 @@ archive/issue_comments_073366.json:
 }
 ```
 
-Attachment
+Attachment [Solaris-fixes-for-R.patch](tarball://root/attachments/some-uuid/ticket8285/Solaris-fixes-for-R.patch) by drkirkby created at 2010-02-17 00:24:23
 
 Mercurial patch
 

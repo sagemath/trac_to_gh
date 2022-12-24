@@ -64,7 +64,7 @@ sage: latex(FormalSum([(1,2), (5, 8/9), (-3, 7)]))
 archive/issue_comments_045088.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5766.patch](tarball://root/attachments/some-uuid/ticket5766/trac_5766.patch) by was created at 2009-04-12 01:40:24",
     "created_at": "2009-04-12T01:40:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5766",
     "type": "issue_comment",
@@ -73,7 +73,7 @@ archive/issue_comments_045088.json:
 }
 ```
 
-Attachment
+Attachment [trac_5766.patch](tarball://root/attachments/some-uuid/ticket5766/trac_5766.patch) by was created at 2009-04-12 01:40:24
 
 
 
@@ -142,7 +142,7 @@ Michael
 archive/issue_comments_045091.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5766-doctest_fix.patch](tarball://root/attachments/some-uuid/ticket5766/trac_5766-doctest_fix.patch) by was created at 2009-04-13 14:15:35",
     "created_at": "2009-04-13T14:15:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5766",
     "type": "issue_comment",
@@ -151,7 +151,7 @@ archive/issue_comments_045091.json:
 }
 ```
 
-Attachment
+Attachment [trac_5766-doctest_fix.patch](tarball://root/attachments/some-uuid/ticket5766/trac_5766-doctest_fix.patch) by was created at 2009-04-13 14:15:35
 
 
 
@@ -219,7 +219,7 @@ They are sorted.  That's why the doctests failed for you -- because sort is not 
 archive/issue_comments_045094.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5766-part3.patch](tarball://root/attachments/some-uuid/ticket5766/trac_5766-part3.patch) by was created at 2009-04-28 14:10:30",
     "created_at": "2009-04-28T14:10:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5766",
     "type": "issue_comment",
@@ -228,7 +228,7 @@ archive/issue_comments_045094.json:
 }
 ```
 
-Attachment
+Attachment [trac_5766-part3.patch](tarball://root/attachments/some-uuid/ticket5766/trac_5766-part3.patch) by was created at 2009-04-28 14:10:30
 
 
 
@@ -369,7 +369,7 @@ Resolution: fixed
 archive/issue_comments_045101.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.\n\nMerged trac_5766-rebased.patch in 4.0.1.rc1.",
+    "body": "Attachment [trac_5766-rebased.patch](tarball://root/attachments/some-uuid/ticket5766/trac_5766-rebased.patch) by mhansen created at 2009-06-04 18:33:58\n\nLooks good to me.\n\nMerged trac_5766-rebased.patch in 4.0.1.rc1.",
     "created_at": "2009-06-04T18:33:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5766",
     "type": "issue_comment",
@@ -378,7 +378,7 @@ archive/issue_comments_045101.json:
 }
 ```
 
-Attachment
+Attachment [trac_5766-rebased.patch](tarball://root/attachments/some-uuid/ticket5766/trac_5766-rebased.patch) by mhansen created at 2009-06-04 18:33:58
 
 Looks good to me.
 

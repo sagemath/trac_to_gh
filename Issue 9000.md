@@ -112,7 +112,7 @@ I think you may have accidentally changed the wrong function (`html_color_select
 archive/issue_comments_083225.json:
 ```json
 {
-    "body": "Attachment\n\nnew version that fixes the (valid) issue that tim pointed out.",
+    "body": "Attachment [trac_9000-interact_color.patch](tarball://root/attachments/some-uuid/ticket9000/trac_9000-interact_color.patch) by was created at 2010-08-14 02:22:56\n\nnew version that fixes the (valid) issue that tim pointed out.",
     "created_at": "2010-08-14T02:22:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9000",
     "type": "issue_comment",
@@ -121,7 +121,7 @@ archive/issue_comments_083225.json:
 }
 ```
 
-Attachment
+Attachment [trac_9000-interact_color.patch](tarball://root/attachments/some-uuid/ticket9000/trac_9000-interact_color.patch) by was created at 2010-08-14 02:22:56
 
 new version that fixes the (valid) issue that tim pointed out.
 

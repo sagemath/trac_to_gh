@@ -102,7 +102,7 @@ Argh, that's  #9499 and not#4499.
 archive/issue_comments_091333.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch depends on\u00a0#8059.",
+    "body": "Attachment [trac_9506_error_msg.patch](tarball://root/attachments/some-uuid/ticket9506/trac_9506_error_msg.patch) by malb created at 2010-07-15 17:20:42\n\nThis patch depends on\u00a0#8059.",
     "created_at": "2010-07-15T17:20:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9506",
     "type": "issue_comment",
@@ -111,7 +111,7 @@ archive/issue_comments_091333.json:
 }
 ```
 
-Attachment
+Attachment [trac_9506_error_msg.patch](tarball://root/attachments/some-uuid/ticket9506/trac_9506_error_msg.patch) by malb created at 2010-07-15 17:20:42
 
 This patch depends on #8059.
 

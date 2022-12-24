@@ -111,7 +111,7 @@ I compiled 2.10.2.rc0 from source (4h5m) and had exactly the same problem. The b
 archive/issue_comments_013182.json:
 ```json
 {
-    "body": "Attachment\n\nSorry, this made it too late for 2.10.2. It will hopefully go right into 2.10.3.alpha0 :(\n\nCheers,\n\nMichael",
+    "body": "Attachment [tut2008-22-02.hg](tarball://root/attachments/some-uuid/ticket2037/tut2008-22-02.hg) by mabshoff created at 2008-02-23 00:07:32\n\nSorry, this made it too late for 2.10.2. It will hopefully go right into 2.10.3.alpha0 :(\n\nCheers,\n\nMichael",
     "created_at": "2008-02-23T00:07:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2037",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_013182.json:
 }
 ```
 
-Attachment
+Attachment [tut2008-22-02.hg](tarball://root/attachments/some-uuid/ticket2037/tut2008-22-02.hg) by mabshoff created at 2008-02-23 00:07:32
 
 Sorry, this made it too late for 2.10.2. It will hopefully go right into 2.10.3.alpha0 :(
 
@@ -155,7 +155,7 @@ I ran sage -t tut.tex and it succeeded, and ./build_pdf and looked at the result
 archive/issue_comments_013184.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2037-tut-fixes.patch](tarball://root/attachments/some-uuid/ticket2037/2037-tut-fixes.patch) by AlexGhitza created at 2008-02-23 03:00:46",
     "created_at": "2008-02-23T03:00:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2037",
     "type": "issue_comment",
@@ -164,7 +164,7 @@ archive/issue_comments_013184.json:
 }
 ```
 
-Attachment
+Attachment [2037-tut-fixes.patch](tarball://root/attachments/some-uuid/ticket2037/2037-tut-fixes.patch) by AlexGhitza created at 2008-02-23 03:00:46
 
 
 
@@ -173,7 +173,7 @@ Attachment
 archive/issue_comments_013185.json:
 ```json
 {
-    "body": "Attachment\n\nThe last patch ( 2037.patch ) applies cleanly after #2323.",
+    "body": "Attachment [2037.patch](tarball://root/attachments/some-uuid/ticket2037/2037.patch) by mhansen created at 2008-02-27 23:49:31\n\nThe last patch ( 2037.patch ) applies cleanly after #2323.",
     "created_at": "2008-02-27T23:49:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2037",
     "type": "issue_comment",
@@ -182,7 +182,7 @@ archive/issue_comments_013185.json:
 }
 ```
 
-Attachment
+Attachment [2037.patch](tarball://root/attachments/some-uuid/ticket2037/2037.patch) by mhansen created at 2008-02-27 23:49:31
 
 The last patch ( 2037.patch ) applies cleanly after #2323.
 

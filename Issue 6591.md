@@ -107,7 +107,7 @@ I have no idea how to doctest this, by the way...
 archive/issue_comments_053940.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of the other patch",
+    "body": "Attachment [trac_6591-doc.patch](tarball://root/attachments/some-uuid/ticket6591/trac_6591-doc.patch) by jhpalmieri created at 2009-07-22 21:48:49\n\napply on top of the other patch",
     "created_at": "2009-07-22T21:48:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6591",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_053940.json:
 }
 ```
 
-Attachment
+Attachment [trac_6591-doc.patch](tarball://root/attachments/some-uuid/ticket6591/trac_6591-doc.patch) by jhpalmieri created at 2009-07-22 21:48:49
 
 apply on top of the other patch
 
@@ -189,7 +189,7 @@ Apply only this one (it includes the doc patch)
 archive/issue_comments_053944.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of the other patch",
+    "body": "Attachment [trac_6591_view_viewer_tightpage-nt.patch](tarball://root/attachments/some-uuid/ticket6591/trac_6591_view_viewer_tightpage-nt.patch) by jhpalmieri created at 2009-07-23 23:49:33\n\napply on top of the other patch",
     "created_at": "2009-07-23T23:49:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6591",
     "type": "issue_comment",
@@ -198,7 +198,7 @@ archive/issue_comments_053944.json:
 }
 ```
 
-Attachment
+Attachment [trac_6591_view_viewer_tightpage-nt.patch](tarball://root/attachments/some-uuid/ticket6591/trac_6591_view_viewer_tightpage-nt.patch) by jhpalmieri created at 2009-07-23 23:49:33
 
 apply on top of the other patch
 
@@ -209,7 +209,7 @@ apply on top of the other patch
 archive/issue_comments_053945.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review.  A few very minor doc fixes added (for the change from `\\LaTeX` to `LaTeX`, it seems that jsMath doesn't know about this command, so it doesn't look good in the notebook with #5653 applied).\n\nApply patches trac_6591_view_viewer_tightpage-nt.patch and trac_6591-doc2.patch.\n\nI think it's fine to leave the description of notebook mode second; it would take actual thought to change it at this point.  When I worked on this docstring a while ago, my feeling was that since most of the options are ignored in notebook mode, command-line mode should come first.",
+    "body": "Attachment [trac_6591-doc2.patch](tarball://root/attachments/some-uuid/ticket6591/trac_6591-doc2.patch) by jhpalmieri created at 2009-07-23 23:53:01\n\nPositive review.  A few very minor doc fixes added (for the change from `\\LaTeX` to `LaTeX`, it seems that jsMath doesn't know about this command, so it doesn't look good in the notebook with #5653 applied).\n\nApply patches trac_6591_view_viewer_tightpage-nt.patch and trac_6591-doc2.patch.\n\nI think it's fine to leave the description of notebook mode second; it would take actual thought to change it at this point.  When I worked on this docstring a while ago, my feeling was that since most of the options are ignored in notebook mode, command-line mode should come first.",
     "created_at": "2009-07-23T23:53:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6591",
     "type": "issue_comment",
@@ -218,7 +218,7 @@ archive/issue_comments_053945.json:
 }
 ```
 
-Attachment
+Attachment [trac_6591-doc2.patch](tarball://root/attachments/some-uuid/ticket6591/trac_6591-doc2.patch) by jhpalmieri created at 2009-07-23 23:53:01
 
 Positive review.  A few very minor doc fixes added (for the change from `\LaTeX` to `LaTeX`, it seems that jsMath doesn't know about this command, so it doesn't look good in the notebook with #5653 applied).
 

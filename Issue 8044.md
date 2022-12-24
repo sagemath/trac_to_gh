@@ -155,7 +155,7 @@ Applies over the precedent patch.
 archive/issue_comments_070303.json:
 ```json
 {
-    "body": "Attachment\n\nI just added a patch which adds some examples of cayley graphs.\n\nIt also adds `FiniteGroup` to the base classes of `MatrixGroup_gap_finite_field`.",
+    "body": "Attachment [trac_8044_cayley_graph-sl.patch](tarball://root/attachments/some-uuid/ticket8044/trac_8044_cayley_graph-sl.patch) by slabbe created at 2010-01-29 16:09:52\n\nI just added a patch which adds some examples of cayley graphs.\n\nIt also adds `FiniteGroup` to the base classes of `MatrixGroup_gap_finite_field`.",
     "created_at": "2010-01-29T16:09:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8044",
     "type": "issue_comment",
@@ -164,7 +164,7 @@ archive/issue_comments_070303.json:
 }
 ```
 
-Attachment
+Attachment [trac_8044_cayley_graph-sl.patch](tarball://root/attachments/some-uuid/ticket8044/trac_8044_cayley_graph-sl.patch) by slabbe created at 2010-01-29 16:09:52
 
 I just added a patch which adds some examples of cayley graphs.
 
@@ -336,7 +336,7 @@ For the rest, assuming that the doctest pass (it might be something with my sage
 archive/issue_comments_070309.json:
 ```json
 {
-    "body": "Attachment\n\nApply only this one",
+    "body": "Attachment [trac_8044-categories_finite_groups-nt.patch](tarball://root/attachments/some-uuid/ticket8044/trac_8044-categories_finite_groups-nt.patch) by nthiery created at 2010-02-01 10:02:28\n\nApply only this one",
     "created_at": "2010-02-01T10:02:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8044",
     "type": "issue_comment",
@@ -345,7 +345,7 @@ archive/issue_comments_070309.json:
 }
 ```
 
-Attachment
+Attachment [trac_8044-categories_finite_groups-nt.patch](tarball://root/attachments/some-uuid/ticket8044/trac_8044-categories_finite_groups-nt.patch) by nthiery created at 2010-02-01 10:02:28
 
 Apply only this one
 

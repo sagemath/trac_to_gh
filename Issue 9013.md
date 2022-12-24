@@ -116,7 +116,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_083373.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [out](tarball://root/attachments/some-uuid/ticket9013/out) by boothby created at 2010-05-22 04:52:57",
     "created_at": "2010-05-22T04:52:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9013",
     "type": "issue_comment",
@@ -125,7 +125,7 @@ archive/issue_comments_083373.json:
 }
 ```
 
-Attachment
+Attachment [out](tarball://root/attachments/some-uuid/ticket9013/out) by boothby created at 2010-05-22 04:52:57
 
 
 
@@ -170,7 +170,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_083376.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9013.patch](tarball://root/attachments/some-uuid/ticket9013/trac_9013.patch) by rlm created at 2010-05-25 23:44:59",
     "created_at": "2010-05-25T23:44:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9013",
     "type": "issue_comment",
@@ -179,7 +179,7 @@ archive/issue_comments_083376.json:
 }
 ```
 
-Attachment
+Attachment [trac_9013.patch](tarball://root/attachments/some-uuid/ticket9013/trac_9013.patch) by rlm created at 2010-05-25 23:44:59
 
 
 

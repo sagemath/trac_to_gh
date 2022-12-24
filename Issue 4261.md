@@ -53,7 +53,7 @@ Forgot to mention: this was reported by David Kohel in Nancy during SD10.
 archive/issue_comments_031073.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac4261_sympow_Configure.patch](tarball://root/attachments/some-uuid/ticket4261/trac4261_sympow_Configure.patch) by wjp created at 2008-10-12 11:51:16",
     "created_at": "2008-10-12T11:51:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4261",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_031073.json:
 }
 ```
 
-Attachment
+Attachment [trac4261_sympow_Configure.patch](tarball://root/attachments/some-uuid/ticket4261/trac4261_sympow_Configure.patch) by wjp created at 2008-10-12 11:51:16
 
 
 

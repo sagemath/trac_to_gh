@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8008
 archive/issue_comments_069980.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-8008-rref.patch](tarball://root/attachments/some-uuid/ticket8008/trac-8008-rref.patch) by jason created at 2010-01-20 05:04:42",
     "created_at": "2010-01-20T05:04:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8008",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_069980.json:
 }
 ```
 
-Attachment
+Attachment [trac-8008-rref.patch](tarball://root/attachments/some-uuid/ticket8008/trac-8008-rref.patch) by jason created at 2010-01-20 05:04:42
 
 
 
@@ -134,7 +134,7 @@ apply on top of previous patch
 archive/issue_comments_069985.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-8008-fixes.patch](tarball://root/attachments/some-uuid/ticket8008/trac-8008-fixes.patch) by jason created at 2010-01-20 10:02:48",
     "created_at": "2010-01-20T10:02:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8008",
     "type": "issue_comment",
@@ -143,7 +143,7 @@ archive/issue_comments_069985.json:
 }
 ```
 
-Attachment
+Attachment [trac-8008-fixes.patch](tarball://root/attachments/some-uuid/ticket8008/trac-8008-fixes.patch) by jason created at 2010-01-20 10:02:48
 
 
 
@@ -319,7 +319,7 @@ rebase of trac-8008-fixes.patch against Sage 4.3.1
 archive/issue_comments_069993.json:
 ```json
 {
-    "body": "Attachment\n\nThe attachment [trac_8008-fixes-rebase.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8008/trac_8008-fixes-rebase.patch) is a rebase of [trac-8008-fixes.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8008/trac-8008-fixes.patch) against Sage 4.3.1. So my rebase needs some review to ensure I didn't mess up anything. Only apply [trac-8008-rref.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8008/trac-8008-rref.patch) and [trac_8008-fixes-rebase.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8008/trac_8008-fixes-rebase.patch).",
+    "body": "Attachment [trac_8008-fixes-rebase.patch](tarball://root/attachments/some-uuid/ticket8008/trac_8008-fixes-rebase.patch) by mvngu created at 2010-01-24 12:20:31\n\nThe attachment [trac_8008-fixes-rebase.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8008/trac_8008-fixes-rebase.patch) is a rebase of [trac-8008-fixes.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8008/trac-8008-fixes.patch) against Sage 4.3.1. So my rebase needs some review to ensure I didn't mess up anything. Only apply [trac-8008-rref.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8008/trac-8008-rref.patch) and [trac_8008-fixes-rebase.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8008/trac_8008-fixes-rebase.patch).",
     "created_at": "2010-01-24T12:20:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8008",
     "type": "issue_comment",
@@ -328,7 +328,7 @@ archive/issue_comments_069993.json:
 }
 ```
 
-Attachment
+Attachment [trac_8008-fixes-rebase.patch](tarball://root/attachments/some-uuid/ticket8008/trac_8008-fixes-rebase.patch) by mvngu created at 2010-01-24 12:20:31
 
 The attachment [trac_8008-fixes-rebase.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8008/trac_8008-fixes-rebase.patch) is a rebase of [trac-8008-fixes.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8008/trac-8008-fixes.patch) against Sage 4.3.1. So my rebase needs some review to ensure I didn't mess up anything. Only apply [trac-8008-rref.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8008/trac-8008-rref.patch) and [trac_8008-fixes-rebase.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8008/trac_8008-fixes-rebase.patch).
 
@@ -375,7 +375,7 @@ I think the rebase is fine.  But I wanted to add some doctests for more complica
 archive/issue_comments_069996.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8008-rebase-plus-more.patch](tarball://root/attachments/some-uuid/ticket8008/trac_8008-rebase-plus-more.patch) by kcrisman created at 2010-02-04 04:33:21",
     "created_at": "2010-02-04T04:33:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8008",
     "type": "issue_comment",
@@ -384,7 +384,7 @@ archive/issue_comments_069996.json:
 }
 ```
 
-Attachment
+Attachment [trac_8008-rebase-plus-more.patch](tarball://root/attachments/some-uuid/ticket8008/trac_8008-rebase-plus-more.patch) by kcrisman created at 2010-02-04 04:33:21
 
 
 

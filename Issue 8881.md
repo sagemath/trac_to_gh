@@ -156,7 +156,7 @@ Renames TensorFunctor to TensorProductFunctor
 archive/issue_comments_081622.json:
 ```json
 {
-    "body": "Attachment\n\nDiff to previous version of the patch",
+    "body": "Attachment [diff](tarball://root/attachments/some-uuid/ticket8881/diff) by nthiery created at 2010-06-02 08:46:07\n\nDiff to previous version of the patch",
     "created_at": "2010-06-02T08:46:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8881",
     "type": "issue_comment",
@@ -165,7 +165,7 @@ archive/issue_comments_081622.json:
 }
 ```
 
-Attachment
+Attachment [diff](tarball://root/attachments/some-uuid/ticket8881/diff) by nthiery created at 2010-06-02 08:46:07
 
 Diff to previous version of the patch
 

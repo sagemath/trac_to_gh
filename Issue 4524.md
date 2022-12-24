@@ -54,7 +54,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4524
 archive/issue_comments_033574.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4524.patch](tarball://root/attachments/some-uuid/ticket4524/trac_4524.patch) by mhansen created at 2009-01-23 08:10:46",
     "created_at": "2009-01-23T08:10:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4524",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_033574.json:
 }
 ```
 
-Attachment
+Attachment [trac_4524.patch](tarball://root/attachments/some-uuid/ticket4524/trac_4524.patch) by mhansen created at 2009-01-23 08:10:46
 
 
 
@@ -175,7 +175,7 @@ You could have posted a patch and then asked me to review your portion of the pa
 archive/issue_comments_033579.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review.",
+    "body": "Attachment [trac_4524-2.patch](tarball://root/attachments/some-uuid/ticket4524/trac_4524-2.patch) by slabbe created at 2009-01-24 16:58:35\n\nPositive review.",
     "created_at": "2009-01-24T16:58:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4524",
     "type": "issue_comment",
@@ -184,7 +184,7 @@ archive/issue_comments_033579.json:
 }
 ```
 
-Attachment
+Attachment [trac_4524-2.patch](tarball://root/attachments/some-uuid/ticket4524/trac_4524-2.patch) by slabbe created at 2009-01-24 16:58:35
 
 Positive review.
 

@@ -104,7 +104,7 @@ fix
 archive/issue_comments_013728.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_2105.patch](tarball://root/attachments/some-uuid/ticket2105/trac_2105.patch) by malb created at 2008-02-18 15:34:20",
     "created_at": "2008-02-18T15:34:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2105",
     "type": "issue_comment",
@@ -113,7 +113,7 @@ archive/issue_comments_013728.json:
 }
 ```
 
-Attachment
+Attachment [trac_2105.patch](tarball://root/attachments/some-uuid/ticket2105/trac_2105.patch) by malb created at 2008-02-18 15:34:20
 
 
 

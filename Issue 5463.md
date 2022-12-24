@@ -98,7 +98,7 @@ Sorry about the ReST output.  I was trying to balance two things, and failed.  G
 archive/issue_comments_042419.json:
 ```json
 {
-    "body": "Attachment\n\nMerged in Sage 3.4.final.\n\nCheers,\n\nMichael",
+    "body": "Attachment [tutorial-functions.patch](tarball://root/attachments/some-uuid/ticket5463/tutorial-functions.patch) by mabshoff created at 2009-03-10 20:58:25\n\nMerged in Sage 3.4.final.\n\nCheers,\n\nMichael",
     "created_at": "2009-03-10T20:58:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5463",
     "type": "issue_comment",
@@ -107,7 +107,7 @@ archive/issue_comments_042419.json:
 }
 ```
 
-Attachment
+Attachment [tutorial-functions.patch](tarball://root/attachments/some-uuid/ticket5463/tutorial-functions.patch) by mabshoff created at 2009-03-10 20:58:25
 
 Merged in Sage 3.4.final.
 

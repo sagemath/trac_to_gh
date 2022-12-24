@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2291
 archive/issue_comments_015194.json:
 ```json
 {
-    "body": "Attachment\n\nInitial implementation",
+    "body": "Attachment [laurent-poly.patch](tarball://root/attachments/some-uuid/ticket2291/laurent-poly.patch) by roed created at 2008-02-24 10:26:11\n\nInitial implementation",
     "created_at": "2008-02-24T10:26:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2291",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_015194.json:
 }
 ```
 
-Attachment
+Attachment [laurent-poly.patch](tarball://root/attachments/some-uuid/ticket2291/laurent-poly.patch) by roed created at 2008-02-24 10:26:11
 
 Initial implementation
 
@@ -125,7 +125,7 @@ second patch, on top of first.
 archive/issue_comments_015199.json:
 ```json
 {
-    "body": "Attachment\n\nthird patch, on top of second.",
+    "body": "Attachment [laurent-poly2.patch](tarball://root/attachments/some-uuid/ticket2291/laurent-poly2.patch) by roed created at 2008-02-26 10:58:42\n\nthird patch, on top of second.",
     "created_at": "2008-02-26T10:58:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2291",
     "type": "issue_comment",
@@ -134,7 +134,7 @@ archive/issue_comments_015199.json:
 }
 ```
 
-Attachment
+Attachment [laurent-poly2.patch](tarball://root/attachments/some-uuid/ticket2291/laurent-poly2.patch) by roed created at 2008-02-26 10:58:42
 
 third patch, on top of second.
 
@@ -145,7 +145,7 @@ third patch, on top of second.
 archive/issue_comments_015200.json:
 ```json
 {
-    "body": "Attachment\n\nSimple fix to exponent(); mostly just making sure i understand the patch process",
+    "body": "Attachment [laurent-poly3.patch](tarball://root/attachments/some-uuid/ticket2291/laurent-poly3.patch) by jbandlow created at 2008-02-27 19:13:14\n\nSimple fix to exponent(); mostly just making sure i understand the patch process",
     "created_at": "2008-02-27T19:13:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2291",
     "type": "issue_comment",
@@ -154,7 +154,7 @@ archive/issue_comments_015200.json:
 }
 ```
 
-Attachment
+Attachment [laurent-poly3.patch](tarball://root/attachments/some-uuid/ticket2291/laurent-poly3.patch) by jbandlow created at 2008-02-27 19:13:14
 
 Simple fix to exponent(); mostly just making sure i understand the patch process
 
@@ -165,7 +165,7 @@ Simple fix to exponent(); mostly just making sure i understand the patch process
 archive/issue_comments_015201.json:
 ```json
 {
-    "body": "Attachment\n\nimproved init and coefficient, added doctests",
+    "body": "Attachment [laurent-poly5.patch](tarball://root/attachments/some-uuid/ticket2291/laurent-poly5.patch) by jbandlow created at 2008-02-29 00:06:59\n\nimproved init and coefficient, added doctests",
     "created_at": "2008-02-29T00:06:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2291",
     "type": "issue_comment",
@@ -174,7 +174,7 @@ archive/issue_comments_015201.json:
 }
 ```
 
-Attachment
+Attachment [laurent-poly5.patch](tarball://root/attachments/some-uuid/ticket2291/laurent-poly5.patch) by jbandlow created at 2008-02-29 00:06:59
 
 improved init and coefficient, added doctests
 

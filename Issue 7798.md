@@ -36,7 +36,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7798
 archive/issue_comments_067474.json:
 ```json
 {
-    "body": "Attachment\n\nNot working attempt: trying to get some text initially to the plot",
+    "body": "Attachment [plot.patch](tarball://root/attachments/some-uuid/ticket7798/plot.patch) by slosoi created at 2009-12-31 01:11:28\n\nNot working attempt: trying to get some text initially to the plot",
     "created_at": "2009-12-31T01:11:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7798",
     "type": "issue_comment",
@@ -45,7 +45,7 @@ archive/issue_comments_067474.json:
 }
 ```
 
-Attachment
+Attachment [plot.patch](tarball://root/attachments/some-uuid/ticket7798/plot.patch) by slosoi created at 2009-12-31 01:11:28
 
 Not working attempt: trying to get some text initially to the plot
 
@@ -92,7 +92,7 @@ To recompute line first to get coordinates right
 archive/issue_comments_067477.json:
 ```json
 {
-    "body": "Attachment\n\nI get the error in running the patch. There is somewhere a bug which prevents the loading of the module.",
+    "body": "Attachment [recomputing_line.patch](tarball://root/attachments/some-uuid/ticket7798/recomputing_line.patch) by slosoi created at 2009-12-31 23:36:57\n\nI get the error in running the patch. There is somewhere a bug which prevents the loading of the module.",
     "created_at": "2009-12-31T23:36:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7798",
     "type": "issue_comment",
@@ -101,7 +101,7 @@ archive/issue_comments_067477.json:
 }
 ```
 
-Attachment
+Attachment [recomputing_line.patch](tarball://root/attachments/some-uuid/ticket7798/recomputing_line.patch) by slosoi created at 2009-12-31 23:36:57
 
 I get the error in running the patch. There is somewhere a bug which prevents the loading of the module.
 
@@ -112,7 +112,7 @@ I get the error in running the patch. There is somewhere a bug which prevents th
 archive/issue_comments_067478.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [error_for_recomputing_line](tarball://root/attachments/some-uuid/ticket7798/error_for_recomputing_line) by slosoi created at 2009-12-31 23:42:10",
     "created_at": "2009-12-31T23:42:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7798",
     "type": "issue_comment",
@@ -121,7 +121,7 @@ archive/issue_comments_067478.json:
 }
 ```
 
-Attachment
+Attachment [error_for_recomputing_line](tarball://root/attachments/some-uuid/ticket7798/error_for_recomputing_line) by slosoi created at 2009-12-31 23:42:10
 
 
 

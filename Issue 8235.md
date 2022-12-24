@@ -49,7 +49,7 @@ based on sage 4.3.1
 archive/issue_comments_072745.json:
 ```json
 {
-    "body": "Attachment\n\nIts not terribly pretty, but this should fix it.",
+    "body": "Attachment [trac_8235.patch](tarball://root/attachments/some-uuid/ticket8235/trac_8235.patch) by wcauchois created at 2010-02-11 01:10:51\n\nIts not terribly pretty, but this should fix it.",
     "created_at": "2010-02-11T01:10:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8235",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_072745.json:
 }
 ```
 
-Attachment
+Attachment [trac_8235.patch](tarball://root/attachments/some-uuid/ticket8235/trac_8235.patch) by wcauchois created at 2010-02-11 01:10:51
 
 Its not terribly pretty, but this should fix it.
 

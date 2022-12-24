@@ -67,7 +67,7 @@ based on Sage 4.3.4.alpha0
 archive/issue_comments_076432.json:
 ```json
 {
-    "body": "Attachment\n\nChanges in [trac_8480-clean-up.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8480/trac_8480-clean-up.patch) include:\n\n* Clearly comment where each type of document is found.\n* Don't use tab characters.\n* Typo fixes.",
+    "body": "Attachment [trac_8480-clean-up.patch](tarball://root/attachments/some-uuid/ticket8480/trac_8480-clean-up.patch) by mvngu created at 2010-03-07 22:52:05\n\nChanges in [trac_8480-clean-up.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8480/trac_8480-clean-up.patch) include:\n\n* Clearly comment where each type of document is found.\n* Don't use tab characters.\n* Typo fixes.",
     "created_at": "2010-03-07T22:52:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8480",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_076432.json:
 }
 ```
 
-Attachment
+Attachment [trac_8480-clean-up.patch](tarball://root/attachments/some-uuid/ticket8480/trac_8480-clean-up.patch) by mvngu created at 2010-03-07 22:52:05
 
 Changes in [trac_8480-clean-up.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8480/trac_8480-clean-up.patch) include:
 

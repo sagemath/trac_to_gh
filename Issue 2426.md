@@ -67,7 +67,7 @@ Changing assignee from tba to mabshoff.
 archive/issue_comments_016427.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_2426.patch](tarball://root/attachments/some-uuid/ticket2426/trac_2426.patch) by mabshoff created at 2008-03-20 05:58:03",
     "created_at": "2008-03-20T05:58:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2426",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_016427.json:
 }
 ```
 
-Attachment
+Attachment [trac_2426.patch](tarball://root/attachments/some-uuid/ticket2426/trac_2426.patch) by mabshoff created at 2008-03-20 05:58:03
 
 
 

@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8083
 archive/issue_comments_070834.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [latex_T1_fonts.patch](tarball://root/attachments/some-uuid/ticket8083/latex_T1_fonts.patch) by robert.marik created at 2010-01-26 20:53:34",
     "created_at": "2010-01-26T20:53:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8083",
     "type": "issue_comment",
@@ -49,7 +49,7 @@ archive/issue_comments_070834.json:
 }
 ```
 
-Attachment
+Attachment [latex_T1_fonts.patch](tarball://root/attachments/some-uuid/ticket8083/latex_T1_fonts.patch) by robert.marik created at 2010-01-26 20:53:34
 
 
 
@@ -142,7 +142,7 @@ do not merge: for illustration and testing only
 archive/issue_comments_070839.json:
 ```json
 {
-    "body": "Attachment\n\nOut of curiosity: Do other font encodings ever conflict with `T1`?  Other alphabets may require a different one, e.g., for\n\n\n```\n%latex\n\u0422\u0435\u043e\u0440\u0438\u044f \u0447\u0438\u0441\u0435\u043b\n```\n\none can use\n\n\n```python\nsage.misc.latex.latex.extra_preamble('\\\\usepackage[T2A]{fontenc}')\n```\n",
+    "body": "Attachment [trac_8083-experimental.patch](tarball://root/attachments/some-uuid/ticket8083/trac_8083-experimental.patch) by mpatel created at 2010-01-30 11:36:34\n\nOut of curiosity: Do other font encodings ever conflict with `T1`?  Other alphabets may require a different one, e.g., for\n\n\n```\n%latex\n\u0422\u0435\u043e\u0440\u0438\u044f \u0447\u0438\u0441\u0435\u043b\n```\n\none can use\n\n\n```python\nsage.misc.latex.latex.extra_preamble('\\\\usepackage[T2A]{fontenc}')\n```\n",
     "created_at": "2010-01-30T11:36:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8083",
     "type": "issue_comment",
@@ -151,7 +151,7 @@ archive/issue_comments_070839.json:
 }
 ```
 
-Attachment
+Attachment [trac_8083-experimental.patch](tarball://root/attachments/some-uuid/ticket8083/trac_8083-experimental.patch) by mpatel created at 2010-01-30 11:36:34
 
 Out of curiosity: Do other font encodings ever conflict with `T1`?  Other alphabets may require a different one, e.g., for
 

@@ -73,7 +73,7 @@ Even though it's apparent I know very few about groups in Sage as I had to build
 archive/issue_comments_056556.json:
 ```json
 {
-    "body": "Attachment\n\nOK, this new patch should do the trick.",
+    "body": "Attachment [trac_6858.patch](tarball://root/attachments/some-uuid/ticket6858/trac_6858.patch) by rlm created at 2009-09-09 03:30:17\n\nOK, this new patch should do the trick.",
     "created_at": "2009-09-09T03:30:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6858",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_056556.json:
 }
 ```
 
-Attachment
+Attachment [trac_6858.patch](tarball://root/attachments/some-uuid/ticket6858/trac_6858.patch) by rlm created at 2009-09-09 03:30:17
 
 OK, this new patch should do the trick.
 

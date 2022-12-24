@@ -51,7 +51,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_086385.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9219_stats_doc.patch](tarball://root/attachments/some-uuid/ticket9219/trac_9219_stats_doc.patch) by was created at 2010-06-11 18:53:11",
     "created_at": "2010-06-11T18:53:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9219",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_086385.json:
 }
 ```
 
-Attachment
+Attachment [trac_9219_stats_doc.patch](tarball://root/attachments/some-uuid/ticket9219/trac_9219_stats_doc.patch) by was created at 2010-06-11 18:53:11
 
 
 
@@ -87,7 +87,7 @@ Changing status from new to needs_review.
 archive/issue_comments_086387.json:
 ```json
 {
-    "body": "Attachment\n\nApply after initial patch and #9218's initial patch",
+    "body": "Attachment [trac_9219-reviewer.patch](tarball://root/attachments/some-uuid/ticket9219/trac_9219-reviewer.patch) by kcrisman created at 2010-06-18 17:59:41\n\nApply after initial patch and #9218's initial patch",
     "created_at": "2010-06-18T17:59:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9219",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_086387.json:
 }
 ```
 
-Attachment
+Attachment [trac_9219-reviewer.patch](tarball://root/attachments/some-uuid/ticket9219/trac_9219-reviewer.patch) by kcrisman created at 2010-06-18 17:59:41
 
 Apply after initial patch and #9218's initial patch
 

@@ -53,7 +53,7 @@ apply versus 3.1.2; conflicts with #4164 patches
 archive/issue_comments_030971.json:
 ```json
 {
-    "body": "Attachment\n\nApply to a vanilla 3.1.2 or 3.1.3; supercedes previous patch",
+    "body": "Attachment [trac_4256_v2.patch](tarball://root/attachments/some-uuid/ticket4256/trac_4256_v2.patch) by mhampton created at 2008-10-15 23:02:12\n\nApply to a vanilla 3.1.2 or 3.1.3; supercedes previous patch",
     "created_at": "2008-10-15T23:02:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4256",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_030971.json:
 }
 ```
 
-Attachment
+Attachment [trac_4256_v2.patch](tarball://root/attachments/some-uuid/ticket4256/trac_4256_v2.patch) by mhampton created at 2008-10-15 23:02:12
 
 Apply to a vanilla 3.1.2 or 3.1.3; supercedes previous patch
 
@@ -109,7 +109,7 @@ improved and re-based against 3.1.4
 archive/issue_comments_030974.json:
 ```json
 {
-    "body": "Attachment\n\nThe trac_4256_v3.patch also incorporates the changes in #4164.  Polyhedra can now be multiplied, scaled, translated, and the polar (dual) constructed.  Several standard polytope families have been added.",
+    "body": "Attachment [trac_4256_v3.patch](tarball://root/attachments/some-uuid/ticket4256/trac_4256_v3.patch) by mhampton created at 2008-10-21 21:50:10\n\nThe trac_4256_v3.patch also incorporates the changes in #4164.  Polyhedra can now be multiplied, scaled, translated, and the polar (dual) constructed.  Several standard polytope families have been added.",
     "created_at": "2008-10-21T21:50:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4256",
     "type": "issue_comment",
@@ -118,7 +118,7 @@ archive/issue_comments_030974.json:
 }
 ```
 
-Attachment
+Attachment [trac_4256_v3.patch](tarball://root/attachments/some-uuid/ticket4256/trac_4256_v3.patch) by mhampton created at 2008-10-21 21:50:10
 
 The trac_4256_v3.patch also incorporates the changes in #4164.  Polyhedra can now be multiplied, scaled, translated, and the polar (dual) constructed.  Several standard polytope families have been added.
 
@@ -185,7 +185,7 @@ supercedes previous patches, addresses review
 archive/issue_comments_030977.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4256_v4.patch](tarball://root/attachments/some-uuid/ticket4256/trac_4256_v4.patch) by mhampton created at 2008-10-24 04:05:35",
     "created_at": "2008-10-24T04:05:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4256",
     "type": "issue_comment",
@@ -194,7 +194,7 @@ archive/issue_comments_030977.json:
 }
 ```
 
-Attachment
+Attachment [trac_4256_v4.patch](tarball://root/attachments/some-uuid/ticket4256/trac_4256_v4.patch) by mhampton created at 2008-10-24 04:05:35
 
 
 
@@ -223,7 +223,7 @@ Anyway, apart from that, positive review
 archive/issue_comments_030979.json:
 ```json
 {
-    "body": "Attachment\n\nsupercedes previous patches, addresses final review (optional tests)",
+    "body": "Attachment [4256_v5.patch](tarball://root/attachments/some-uuid/ticket4256/4256_v5.patch) by mhampton created at 2008-10-24 19:06:21\n\nsupercedes previous patches, addresses final review (optional tests)",
     "created_at": "2008-10-24T19:06:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4256",
     "type": "issue_comment",
@@ -232,7 +232,7 @@ archive/issue_comments_030979.json:
 }
 ```
 
-Attachment
+Attachment [4256_v5.patch](tarball://root/attachments/some-uuid/ticket4256/4256_v5.patch) by mhampton created at 2008-10-24 19:06:21
 
 supercedes previous patches, addresses final review (optional tests)
 

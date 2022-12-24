@@ -738,7 +738,7 @@ Please write a proper commit message for your patch, use `hg qrefresh -e` for th
 archive/issue_comments_053756.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6581_enable_more_ideals_for_toy_buchberger.patch](tarball://root/attachments/some-uuid/ticket6581/trac_6581_enable_more_ideals_for_toy_buchberger.patch) by john_perry created at 2012-02-11 15:23:15",
     "created_at": "2012-02-11T15:23:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6581",
     "type": "issue_comment",
@@ -747,7 +747,7 @@ archive/issue_comments_053756.json:
 }
 ```
 
-Attachment
+Attachment [trac_6581_enable_more_ideals_for_toy_buchberger.patch](tarball://root/attachments/some-uuid/ticket6581/trac_6581_enable_more_ideals_for_toy_buchberger.patch) by john_perry created at 2012-02-11 15:23:15
 
 
 

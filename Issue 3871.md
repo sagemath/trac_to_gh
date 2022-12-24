@@ -63,7 +63,7 @@ I didn't testlong, but I did a full test, and found that /rings/polynomial/polyn
 archive/issue_comments_027591.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patches just fix all the cases of saving images to a file that I could find using search_src('...').  I applied it and ran --long doctests, and everything passes.",
+    "body": "Attachment [trac_3871.patch](tarball://root/attachments/some-uuid/ticket3871/trac_3871.patch) by was created at 2009-01-24 08:33:30\n\nThe attached patches just fix all the cases of saving images to a file that I could find using search_src('...').  I applied it and ran --long doctests, and everything passes.",
     "created_at": "2009-01-24T08:33:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3871",
     "type": "issue_comment",
@@ -72,7 +72,7 @@ archive/issue_comments_027591.json:
 }
 ```
 
-Attachment
+Attachment [trac_3871.patch](tarball://root/attachments/some-uuid/ticket3871/trac_3871.patch) by was created at 2009-01-24 08:33:30
 
 The attached patches just fix all the cases of saving images to a file that I could find using search_src('...').  I applied it and ran --long doctests, and everything passes.
 
@@ -83,7 +83,7 @@ The attached patches just fix all the cases of saving images to a file that I co
 archive/issue_comments_027592.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3871-part2.patch](tarball://root/attachments/some-uuid/ticket3871/trac_3871-part2.patch) by was created at 2009-01-24 08:35:30",
     "created_at": "2009-01-24T08:35:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3871",
     "type": "issue_comment",
@@ -92,7 +92,7 @@ archive/issue_comments_027592.json:
 }
 ```
 
-Attachment
+Attachment [trac_3871-part2.patch](tarball://root/attachments/some-uuid/ticket3871/trac_3871-part2.patch) by was created at 2009-01-24 08:35:30
 
 
 

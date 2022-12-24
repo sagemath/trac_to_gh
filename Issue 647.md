@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/647
 archive/issue_comments_003362.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [quatalgelm.hg](tarball://root/attachments/some-uuid/ticket647/quatalgelm.hg) by was created at 2007-09-13 14:07:24",
     "created_at": "2007-09-13T14:07:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/647",
     "type": "issue_comment",
@@ -51,7 +51,7 @@ archive/issue_comments_003362.json:
 }
 ```
 
-Attachment
+Attachment [quatalgelm.hg](tarball://root/attachments/some-uuid/ticket647/quatalgelm.hg) by was created at 2007-09-13 14:07:24
 
 
 
@@ -97,7 +97,7 @@ OK, I just looked at it, and it *has* no doctests at all for the new functions i
 archive/issue_comments_003365.json:
 ```json
 {
-    "body": "Attachment\n\nI inserted doctests and attached the new version newquatalgelm.hg.",
+    "body": "Attachment [newquatalgelm.hg](tarball://root/attachments/some-uuid/ticket647/newquatalgelm.hg) by AlexGhitza created at 2007-09-20 15:39:17\n\nI inserted doctests and attached the new version newquatalgelm.hg.",
     "created_at": "2007-09-20T15:39:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/647",
     "type": "issue_comment",
@@ -106,7 +106,7 @@ archive/issue_comments_003365.json:
 }
 ```
 
-Attachment
+Attachment [newquatalgelm.hg](tarball://root/attachments/some-uuid/ticket647/newquatalgelm.hg) by AlexGhitza created at 2007-09-20 15:39:17
 
 I inserted doctests and attached the new version newquatalgelm.hg.
 

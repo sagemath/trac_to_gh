@@ -87,7 +87,7 @@ Changing keywords from "graphs" to "".
 archive/issue_comments_008388.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [eigenspaces_graphs.patch](tarball://root/attachments/some-uuid/ticket1318/eigenspaces_graphs.patch) by rlm created at 2007-12-17 21:36:39",
     "created_at": "2007-12-17T21:36:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1318",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_008388.json:
 }
 ```
 
-Attachment
+Attachment [eigenspaces_graphs.patch](tarball://root/attachments/some-uuid/ticket1318/eigenspaces_graphs.patch) by rlm created at 2007-12-17 21:36:39
 
 
 

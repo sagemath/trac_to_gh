@@ -233,7 +233,7 @@ Changing status from new to needs_review.
 archive/issue_comments_073030.json:
 ```json
 {
-    "body": "Attachment\n\nI talked to Robert today and he told me thought he had marked this \"needs review\", but he hadn't.  So I am.",
+    "body": "Attachment [8254-lazy-schemes-import.patch](tarball://root/attachments/some-uuid/ticket8254/8254-lazy-schemes-import.patch) by was created at 2010-11-03 04:38:43\n\nI talked to Robert today and he told me thought he had marked this \"needs review\", but he hadn't.  So I am.",
     "created_at": "2010-11-03T04:38:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8254",
     "type": "issue_comment",
@@ -242,7 +242,7 @@ archive/issue_comments_073030.json:
 }
 ```
 
-Attachment
+Attachment [8254-lazy-schemes-import.patch](tarball://root/attachments/some-uuid/ticket8254/8254-lazy-schemes-import.patch) by was created at 2010-11-03 04:38:43
 
 I talked to Robert today and he told me thought he had marked this "needs review", but he hadn't.  So I am.
 

@@ -65,7 +65,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6122
 archive/issue_comments_048922.json:
 ```json
 {
-    "body": "Attachment\n\nApplies cleanly to 4.0, works as advertised at command-line and in the notebook.\n\nPasses  sage -t -rand sage/misc/sagedoc.py\n\nIt would be nice if these directives were cleaned out prior to building the PDF and HTML versions of the documentation.  This patch seems to only apply to the \"interactive\" documentation.   I'm still seeing nodetex directives in the PDF anyway, and in a sense they are worse, as they lead off a line and then the real beginning follows with no line break (as it used to look in the ASCII versions).  \n\nPositive review.",
+    "body": "Attachment [no-nodetex.patch](tarball://root/attachments/some-uuid/ticket6122/no-nodetex.patch) by rbeezer created at 2009-05-31 00:49:15\n\nApplies cleanly to 4.0, works as advertised at command-line and in the notebook.\n\nPasses  sage -t -rand sage/misc/sagedoc.py\n\nIt would be nice if these directives were cleaned out prior to building the PDF and HTML versions of the documentation.  This patch seems to only apply to the \"interactive\" documentation.   I'm still seeing nodetex directives in the PDF anyway, and in a sense they are worse, as they lead off a line and then the real beginning follows with no line break (as it used to look in the ASCII versions).  \n\nPositive review.",
     "created_at": "2009-05-31T00:49:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6122",
     "type": "issue_comment",
@@ -74,7 +74,7 @@ archive/issue_comments_048922.json:
 }
 ```
 
-Attachment
+Attachment [no-nodetex.patch](tarball://root/attachments/some-uuid/ticket6122/no-nodetex.patch) by rbeezer created at 2009-05-31 00:49:15
 
 Applies cleanly to 4.0, works as advertised at command-line and in the notebook.
 

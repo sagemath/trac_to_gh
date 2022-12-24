@@ -115,7 +115,7 @@ Michael
 archive/issue_comments_039370.json:
 ```json
 {
-    "body": "Attachment\n\nNew version of the patch:\n* Separated functions related to triangularization into a new file, `toy_variety.py`\n\n* Completely rewrote two subalgorithms that check for and express linear dependence between polynomials. Lazard did not specify the details, and I implemented the previous versions in a manner that in no way could be described as intelligent. (Ironically, I'm scheduled to teach introductory linear algebra this summer.) The present version uses basic linear algebra to answer these questions.\n\n* Removed some doctests on the same two functions, because they are now nested. If there is a way to doctest nested functions, let me know, and I'll restore the doctests.",
+    "body": "Attachment [variety_patch.patch](tarball://root/attachments/some-uuid/ticket5146/variety_patch.patch) by john_perry created at 2009-02-25 03:18:57\n\nNew version of the patch:\n* Separated functions related to triangularization into a new file, `toy_variety.py`\n\n* Completely rewrote two subalgorithms that check for and express linear dependence between polynomials. Lazard did not specify the details, and I implemented the previous versions in a manner that in no way could be described as intelligent. (Ironically, I'm scheduled to teach introductory linear algebra this summer.) The present version uses basic linear algebra to answer these questions.\n\n* Removed some doctests on the same two functions, because they are now nested. If there is a way to doctest nested functions, let me know, and I'll restore the doctests.",
     "created_at": "2009-02-25T03:18:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5146",
     "type": "issue_comment",
@@ -124,7 +124,7 @@ archive/issue_comments_039370.json:
 }
 ```
 
-Attachment
+Attachment [variety_patch.patch](tarball://root/attachments/some-uuid/ticket5146/variety_patch.patch) by john_perry created at 2009-02-25 03:18:57
 
 New version of the patch:
 * Separated functions related to triangularization into a new file, `toy_variety.py`
@@ -158,7 +158,7 @@ rebased to 3.4
 archive/issue_comments_039372.json:
 ```json
 {
-    "body": "Attachment\n\nI rebased the attached patch against 3.4 and changed the docstrings to the new ReST format. I think actually that the nested functions shouldn't be nested and should get proper examples/doctests. \n\n(Btw. there is a `coefficient_matrix()` function in `mq.MPolynomialSystem` but that is the material of another ticket)",
+    "body": "Attachment [variety_patch.2.patch](tarball://root/attachments/some-uuid/ticket5146/variety_patch.2.patch) by malb created at 2009-03-16 12:08:39\n\nI rebased the attached patch against 3.4 and changed the docstrings to the new ReST format. I think actually that the nested functions shouldn't be nested and should get proper examples/doctests. \n\n(Btw. there is a `coefficient_matrix()` function in `mq.MPolynomialSystem` but that is the material of another ticket)",
     "created_at": "2009-03-16T12:08:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5146",
     "type": "issue_comment",
@@ -167,7 +167,7 @@ archive/issue_comments_039372.json:
 }
 ```
 
-Attachment
+Attachment [variety_patch.2.patch](tarball://root/attachments/some-uuid/ticket5146/variety_patch.2.patch) by malb created at 2009-03-16 12:08:39
 
 I rebased the attached patch against 3.4 and changed the docstrings to the new ReST format. I think actually that the nested functions shouldn't be nested and should get proper examples/doctests. 
 
@@ -198,7 +198,7 @@ also: I'm sorry to have let bitrot this patch for so long, I know the ball was i
 archive/issue_comments_039374.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated with some of Martin's comments",
+    "body": "Attachment [variety_patch.3.patch](tarball://root/attachments/some-uuid/ticket5146/variety_patch.3.patch) by john_perry created at 2009-03-18 00:12:58\n\nUpdated with some of Martin's comments",
     "created_at": "2009-03-18T00:12:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5146",
     "type": "issue_comment",
@@ -207,7 +207,7 @@ archive/issue_comments_039374.json:
 }
 ```
 
-Attachment
+Attachment [variety_patch.3.patch](tarball://root/attachments/some-uuid/ticket5146/variety_patch.3.patch) by john_perry created at 2009-03-18 00:12:58
 
 Updated with some of Martin's comments
 
@@ -258,7 +258,7 @@ John, I guess you don't run 3.4 because your new patch does break the same stuff
 archive/issue_comments_039377.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [toy_variety.patch](tarball://root/attachments/some-uuid/ticket5146/toy_variety.patch) by malb created at 2009-03-20 14:16:15",
     "created_at": "2009-03-20T14:16:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5146",
     "type": "issue_comment",
@@ -267,7 +267,7 @@ archive/issue_comments_039377.json:
 }
 ```
 
-Attachment
+Attachment [toy_variety.patch](tarball://root/attachments/some-uuid/ticket5146/toy_variety.patch) by malb created at 2009-03-20 14:16:15
 
 
 

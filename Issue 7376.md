@@ -134,7 +134,7 @@ Search by publisher. Apply to sagenb repo.
 archive/issue_comments_061812.json:
 ```json
 {
-    "body": "Attachment\n\nAlternate version: Search by owner and publisher.  Apply only this patch to sagenb repo.",
+    "body": "Attachment [trac_7376-search_by_username.patch](tarball://root/attachments/some-uuid/ticket7376/trac_7376-search_by_username.patch) by mpatel created at 2009-11-12 15:49:44\n\nAlternate version: Search by owner and publisher.  Apply only this patch to sagenb repo.",
     "created_at": "2009-11-12T15:49:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7376",
     "type": "issue_comment",
@@ -143,7 +143,7 @@ archive/issue_comments_061812.json:
 }
 ```
 
-Attachment
+Attachment [trac_7376-search_by_username.patch](tarball://root/attachments/some-uuid/ticket7376/trac_7376-search_by_username.patch) by mpatel created at 2009-11-12 15:49:44
 
 Alternate version: Search by owner and publisher.  Apply only this patch to sagenb repo.
 
@@ -172,7 +172,7 @@ Changing status from new to needs_review.
 archive/issue_comments_061814.json:
 ```json
 {
-    "body": "Attachment\n\nShould we do more with this ticket?",
+    "body": "Attachment [trac_7376-search_by_username_v2.patch](tarball://root/attachments/some-uuid/ticket7376/trac_7376-search_by_username_v2.patch) by mpatel created at 2009-11-12 15:50:54\n\nShould we do more with this ticket?",
     "created_at": "2009-11-12T15:50:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7376",
     "type": "issue_comment",
@@ -181,7 +181,7 @@ archive/issue_comments_061814.json:
 }
 ```
 
-Attachment
+Attachment [trac_7376-search_by_username_v2.patch](tarball://root/attachments/some-uuid/ticket7376/trac_7376-search_by_username_v2.patch) by mpatel created at 2009-11-12 15:50:54
 
 Should we do more with this ticket?
 

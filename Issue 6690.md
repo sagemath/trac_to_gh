@@ -51,7 +51,7 @@ based on Sage 4.1.1.rc2
 archive/issue_comments_054996.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6690-spell-check-coding.patch](tarball://root/attachments/some-uuid/ticket6690/trac_6690-spell-check-coding.patch) by was created at 2009-08-11 18:09:32",
     "created_at": "2009-08-11T18:09:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6690",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_054996.json:
 }
 ```
 
-Attachment
+Attachment [trac_6690-spell-check-coding.patch](tarball://root/attachments/some-uuid/ticket6690/trac_6690-spell-check-coding.patch) by was created at 2009-08-11 18:09:32
 
 
 

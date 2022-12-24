@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4702
 archive/issue_comments_035421.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4702-extcode-magma.patch](tarball://root/attachments/some-uuid/ticket4702/4702-extcode-magma.patch) by ncalexan created at 2008-12-05 00:40:15",
     "created_at": "2008-12-05T00:40:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4702",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_035421.json:
 }
 ```
 
-Attachment
+Attachment [4702-extcode-magma.patch](tarball://root/attachments/some-uuid/ticket4702/4702-extcode-magma.patch) by ncalexan created at 2008-12-05 00:40:15
 
 
 
@@ -53,7 +53,7 @@ Attachment
 archive/issue_comments_035422.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4702-magma.patch](tarball://root/attachments/some-uuid/ticket4702/4702-magma.patch) by ncalexan created at 2008-12-05 00:41:27",
     "created_at": "2008-12-05T00:41:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4702",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_035422.json:
 }
 ```
 
-Attachment
+Attachment [4702-magma.patch](tarball://root/attachments/some-uuid/ticket4702/4702-magma.patch) by ncalexan created at 2008-12-05 00:41:27
 
 
 
@@ -128,7 +128,7 @@ William
 archive/issue_comments_035424.json:
 ```json
 {
-    "body": "Attachment\n\ni made this since for doctesting purposes I wanted to (1) leave nick's code in place and (2) have a clean doctesting slate.  It's his patch rebased to apply after my #4701 and with all his doctests \"fixed\" to give the output they give.  Obviously after reading my referee report it's possible nick will change his mind about his implementation, and not want that output.",
+    "body": "Attachment [trac_4702-rebase_and_fix_doctests.patch](tarball://root/attachments/some-uuid/ticket4702/trac_4702-rebase_and_fix_doctests.patch) by was created at 2008-12-05 02:21:37\n\ni made this since for doctesting purposes I wanted to (1) leave nick's code in place and (2) have a clean doctesting slate.  It's his patch rebased to apply after my #4701 and with all his doctests \"fixed\" to give the output they give.  Obviously after reading my referee report it's possible nick will change his mind about his implementation, and not want that output.",
     "created_at": "2008-12-05T02:21:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4702",
     "type": "issue_comment",
@@ -137,7 +137,7 @@ archive/issue_comments_035424.json:
 }
 ```
 
-Attachment
+Attachment [trac_4702-rebase_and_fix_doctests.patch](tarball://root/attachments/some-uuid/ticket4702/trac_4702-rebase_and_fix_doctests.patch) by was created at 2008-12-05 02:21:37
 
 i made this since for doctesting purposes I wanted to (1) leave nick's code in place and (2) have a clean doctesting slate.  It's his patch rebased to apply after my #4701 and with all his doctests "fixed" to give the output they give.  Obviously after reading my referee report it's possible nick will change his mind about his implementation, and not want that output.
 
@@ -148,7 +148,7 @@ i made this since for doctesting purposes I wanted to (1) leave nick's code in p
 archive/issue_comments_035425.json:
 ```json
 {
-    "body": "Attachment\n\nI wasn't testing free_module.py correctly, so that's fixed.\n\nI have made sure we lose no precision in the rings.  I talked to Carl Witty about truncating; we shouldn't do it, but Magma seems to do it anyway:\n\n\n```\nsage: a = 61/3.0; a\n20.3333333333333\nsage: a.str(truncate=False)\n'20.333333333333332'\nsage: magma(a).sage()\n20.3333333333333\nsage: magma(a).sage().str(truncate=False)\n'20.333333333333300'\nsage: magma('RealField(53 : Bits := true)!20.333333333333332')\n20.3333333333333\nsage: magma('RealField(53 : Bits := true)!20.333333333333332').sage().str(truncate=False)\n'20.333333333333300'\nsage: magma('RealField(53 : Bits := true)!20.333333333333332').Sage()\nRealField(53)(20.3333333333333)\n```\n\n\nIt's coming back from Magma truncated, and I have no idea how to make Magma print it without truncation.  I say we leave it as is -- losing a bit or three at the end is not a huge concern for me.",
+    "body": "Attachment [4702-ncalexan-magma-updates-2.patch](tarball://root/attachments/some-uuid/ticket4702/4702-ncalexan-magma-updates-2.patch) by ncalexan created at 2008-12-05 05:38:34\n\nI wasn't testing free_module.py correctly, so that's fixed.\n\nI have made sure we lose no precision in the rings.  I talked to Carl Witty about truncating; we shouldn't do it, but Magma seems to do it anyway:\n\n\n```\nsage: a = 61/3.0; a\n20.3333333333333\nsage: a.str(truncate=False)\n'20.333333333333332'\nsage: magma(a).sage()\n20.3333333333333\nsage: magma(a).sage().str(truncate=False)\n'20.333333333333300'\nsage: magma('RealField(53 : Bits := true)!20.333333333333332')\n20.3333333333333\nsage: magma('RealField(53 : Bits := true)!20.333333333333332').sage().str(truncate=False)\n'20.333333333333300'\nsage: magma('RealField(53 : Bits := true)!20.333333333333332').Sage()\nRealField(53)(20.3333333333333)\n```\n\n\nIt's coming back from Magma truncated, and I have no idea how to make Magma print it without truncation.  I say we leave it as is -- losing a bit or three at the end is not a huge concern for me.",
     "created_at": "2008-12-05T05:38:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4702",
     "type": "issue_comment",
@@ -157,7 +157,7 @@ archive/issue_comments_035425.json:
 }
 ```
 
-Attachment
+Attachment [4702-ncalexan-magma-updates-2.patch](tarball://root/attachments/some-uuid/ticket4702/4702-ncalexan-magma-updates-2.patch) by ncalexan created at 2008-12-05 05:38:34
 
 I wasn't testing free_module.py correctly, so that's fixed.
 
@@ -191,7 +191,7 @@ It's coming back from Magma truncated, and I have no idea how to make Magma prin
 archive/issue_comments_035426.json:
 ```json
 {
-    "body": "Attachment\n\nBoth 4702-ncalexan-magma-updates-2.patch and 4702-extcode-magma.2.patch apply fresh.",
+    "body": "Attachment [4702-extcode-magma.2.patch](tarball://root/attachments/some-uuid/ticket4702/4702-extcode-magma.2.patch) by ncalexan created at 2008-12-05 05:39:45\n\nBoth 4702-ncalexan-magma-updates-2.patch and 4702-extcode-magma.2.patch apply fresh.",
     "created_at": "2008-12-05T05:39:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4702",
     "type": "issue_comment",
@@ -200,7 +200,7 @@ archive/issue_comments_035426.json:
 }
 ```
 
-Attachment
+Attachment [4702-extcode-magma.2.patch](tarball://root/attachments/some-uuid/ticket4702/4702-extcode-magma.2.patch) by ncalexan created at 2008-12-05 05:39:45
 
 Both 4702-ncalexan-magma-updates-2.patch and 4702-extcode-magma.2.patch apply fresh.
 
@@ -211,7 +211,7 @@ Both 4702-ncalexan-magma-updates-2.patch and 4702-extcode-magma.2.patch apply fr
 archive/issue_comments_035427.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review!\n\nMabshoff, apply exactly these two patches:\n\n```\n4702-ncalexan-magma-updates-2.patch\n4702-extcode-ncalexan-magma.patch\n```\n",
+    "body": "Attachment [4702-extcode-ncalexan-magma.patch](tarball://root/attachments/some-uuid/ticket4702/4702-extcode-ncalexan-magma.patch) by was created at 2008-12-05 06:16:09\n\nPositive review!\n\nMabshoff, apply exactly these two patches:\n\n```\n4702-ncalexan-magma-updates-2.patch\n4702-extcode-ncalexan-magma.patch\n```\n",
     "created_at": "2008-12-05T06:16:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4702",
     "type": "issue_comment",
@@ -220,7 +220,7 @@ archive/issue_comments_035427.json:
 }
 ```
 
-Attachment
+Attachment [4702-extcode-ncalexan-magma.patch](tarball://root/attachments/some-uuid/ticket4702/4702-extcode-ncalexan-magma.patch) by was created at 2008-12-05 06:16:09
 
 Positive review!
 

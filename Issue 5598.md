@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5598
 archive/issue_comments_043625.json:
 ```json
 {
-    "body": "Attachment\n\nDepends on #5597.",
+    "body": "Attachment [5598-coerce-declare.patch](tarball://root/attachments/some-uuid/ticket5598/5598-coerce-declare.patch) by robertwb created at 2009-03-24 05:20:25\n\nDepends on #5597.",
     "created_at": "2009-03-24T05:20:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5598",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_043625.json:
 }
 ```
 
-Attachment
+Attachment [5598-coerce-declare.patch](tarball://root/attachments/some-uuid/ticket5598/5598-coerce-declare.patch) by robertwb created at 2009-03-24 05:20:25
 
 Depends on #5597.
 
@@ -126,7 +126,7 @@ Hence I'm physically incapable of giving this a positive review.  Sorry.
 archive/issue_comments_043629.json:
 ```json
 {
-    "body": "Attachment\n\nI have been using this patch (or actually a plain python version of it; see the sage-combinat patch queue) relatively intensively, and it does its job well. However it's hard to extract any interesting unitary test from those uses, since they all rely on the rest of the category stuff.\n\nI have just attached a stupid test instead ... It just plays with register_coercion, but should be easy to adapt to the others.\n\nBtw: robert: would it be possible to have register_coercion just raise a warning if coercions have readily been used? There are cases where it can be handy to abuse the system a bit from the interpreter.",
+    "body": "Attachment [test-coercion.py](tarball://root/attachments/some-uuid/ticket5598/test-coercion.py) by nthiery created at 2009-04-14 00:35:13\n\nI have been using this patch (or actually a plain python version of it; see the sage-combinat patch queue) relatively intensively, and it does its job well. However it's hard to extract any interesting unitary test from those uses, since they all rely on the rest of the category stuff.\n\nI have just attached a stupid test instead ... It just plays with register_coercion, but should be easy to adapt to the others.\n\nBtw: robert: would it be possible to have register_coercion just raise a warning if coercions have readily been used? There are cases where it can be handy to abuse the system a bit from the interpreter.",
     "created_at": "2009-04-14T00:35:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5598",
     "type": "issue_comment",
@@ -135,7 +135,7 @@ archive/issue_comments_043629.json:
 }
 ```
 
-Attachment
+Attachment [test-coercion.py](tarball://root/attachments/some-uuid/ticket5598/test-coercion.py) by nthiery created at 2009-04-14 00:35:13
 
 I have been using this patch (or actually a plain python version of it; see the sage-combinat patch queue) relatively intensively, and it does its job well. However it's hard to extract any interesting unitary test from those uses, since they all rely on the rest of the category stuff.
 
@@ -276,7 +276,7 @@ Yes, I just haven't had time to work on any coercion-related stuff for a while. 
 archive/issue_comments_043635.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5598-ncalexan-fixes-and-tests.patch](tarball://root/attachments/some-uuid/ticket5598/5598-ncalexan-fixes-and-tests.patch) by ncalexan created at 2009-05-08 23:04:25",
     "created_at": "2009-05-08T23:04:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5598",
     "type": "issue_comment",
@@ -285,7 +285,7 @@ archive/issue_comments_043635.json:
 }
 ```
 
-Attachment
+Attachment [5598-ncalexan-fixes-and-tests.patch](tarball://root/attachments/some-uuid/ticket5598/5598-ncalexan-fixes-and-tests.patch) by ncalexan created at 2009-05-08 23:04:25
 
 
 
@@ -330,7 +330,7 @@ archive/issue_comments_043637.json:
 archive/issue_comments_043638.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5598-ncalexan-fixes-and-tests.2.patch](tarball://root/attachments/some-uuid/ticket5598/5598-ncalexan-fixes-and-tests.2.patch) by ncalexan created at 2009-05-17 21:14:08",
     "created_at": "2009-05-17T21:14:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5598",
     "type": "issue_comment",
@@ -339,7 +339,7 @@ archive/issue_comments_043638.json:
 }
 ```
 
-Attachment
+Attachment [5598-ncalexan-fixes-and-tests.2.patch](tarball://root/attachments/some-uuid/ticket5598/5598-ncalexan-fixes-and-tests.2.patch) by ncalexan created at 2009-05-17 21:14:08
 
 
 
@@ -348,7 +348,7 @@ Attachment
 archive/issue_comments_043639.json:
 ```json
 {
-    "body": "Attachment\n\nAh, the mystery of the malformed patches.  hg export -o *DOESN'T* overwrite an existing file, it appends!  I think this is totally wrong, but I can work around it.  This has been biting me for weeks, I now realize.  Anyway, only tests.3.patch should be applied.",
+    "body": "Attachment [5598-ncalexan-fixes-and-tests.3.patch](tarball://root/attachments/some-uuid/ticket5598/5598-ncalexan-fixes-and-tests.3.patch) by ncalexan created at 2009-05-17 21:21:52\n\nAh, the mystery of the malformed patches.  hg export -o *DOESN'T* overwrite an existing file, it appends!  I think this is totally wrong, but I can work around it.  This has been biting me for weeks, I now realize.  Anyway, only tests.3.patch should be applied.",
     "created_at": "2009-05-17T21:21:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5598",
     "type": "issue_comment",
@@ -357,7 +357,7 @@ archive/issue_comments_043639.json:
 }
 ```
 
-Attachment
+Attachment [5598-ncalexan-fixes-and-tests.3.patch](tarball://root/attachments/some-uuid/ticket5598/5598-ncalexan-fixes-and-tests.3.patch) by ncalexan created at 2009-05-17 21:21:52
 
 Ah, the mystery of the malformed patches.  hg export -o *DOESN'T* overwrite an existing file, it appends!  I think this is totally wrong, but I can work around it.  This has been biting me for weeks, I now realize.  Anyway, only tests.3.patch should be applied.
 
@@ -368,7 +368,7 @@ Ah, the mystery of the malformed patches.  hg export -o *DOESN'T* overwrite an e
 archive/issue_comments_043640.json:
 ```json
 {
-    "body": "Attachment\n\nI made a patch out of test-coercion. Apply, in order\n\n* 5598-coerce-declare.patch\n* 5598-ncalexan-fixes-and-tests.3.patch\n* 5598-test-coercion.patch (1.9 KB)\n\nI give the tests/documentation a positive review, if someone is willing to give a +1 on the original patch we can get this ticket in.",
+    "body": "Attachment [5598-test-coercion.patch](tarball://root/attachments/some-uuid/ticket5598/5598-test-coercion.patch) by robertwb created at 2009-05-23 06:47:24\n\nI made a patch out of test-coercion. Apply, in order\n\n* 5598-coerce-declare.patch\n* 5598-ncalexan-fixes-and-tests.3.patch\n* 5598-test-coercion.patch (1.9 KB)\n\nI give the tests/documentation a positive review, if someone is willing to give a +1 on the original patch we can get this ticket in.",
     "created_at": "2009-05-23T06:47:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5598",
     "type": "issue_comment",
@@ -377,7 +377,7 @@ archive/issue_comments_043640.json:
 }
 ```
 
-Attachment
+Attachment [5598-test-coercion.patch](tarball://root/attachments/some-uuid/ticket5598/5598-test-coercion.patch) by robertwb created at 2009-05-23 06:47:24
 
 I made a patch out of test-coercion. Apply, in order
 
@@ -748,7 +748,7 @@ Got:
 archive/issue_comments_043644.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached trac_5598.patch which folds the above three together and is rebased for 4.2.  I believe this should pass all tests.",
+    "body": "Attachment [trac_5598.patch](tarball://root/attachments/some-uuid/ticket5598/trac_5598.patch) by mhansen created at 2009-10-19 13:20:46\n\nI've attached trac_5598.patch which folds the above three together and is rebased for 4.2.  I believe this should pass all tests.",
     "created_at": "2009-10-19T13:20:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5598",
     "type": "issue_comment",
@@ -757,7 +757,7 @@ archive/issue_comments_043644.json:
 }
 ```
 
-Attachment
+Attachment [trac_5598.patch](tarball://root/attachments/some-uuid/ticket5598/trac_5598.patch) by mhansen created at 2009-10-19 13:20:46
 
 I've attached trac_5598.patch which folds the above three together and is rebased for 4.2.  I believe this should pass all tests.
 

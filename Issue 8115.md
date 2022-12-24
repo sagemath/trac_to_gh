@@ -145,7 +145,7 @@ Changes:
 archive/issue_comments_071250.json:
 ```json
 {
-    "body": "Attachment\n\nspkg-install from cddlib-094f.p4.spkg",
+    "body": "Attachment [spkg-install](tarball://root/attachments/some-uuid/ticket8115/spkg-install) by vbraun created at 2010-01-29 16:34:00\n\nspkg-install from cddlib-094f.p4.spkg",
     "created_at": "2010-01-29T16:34:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8115",
     "type": "issue_comment",
@@ -154,7 +154,7 @@ archive/issue_comments_071250.json:
 }
 ```
 
-Attachment
+Attachment [spkg-install](tarball://root/attachments/some-uuid/ticket8115/spkg-install) by vbraun created at 2010-01-29 16:34:00
 
 spkg-install from cddlib-094f.p4.spkg
 
@@ -538,7 +538,7 @@ http://www.stp.dias.ie/~vbraun/cddlib-094f.p4.spkg
 archive/issue_comments_071266.json:
 ```json
 {
-    "body": "Attachment\n\ninstall log for cddlib-094f.p4.spkg",
+    "body": "Attachment [cddlib.log.bz2](tarball://root/attachments/some-uuid/ticket8115/cddlib.log.bz2) by mvngu created at 2010-02-01 19:10:56\n\ninstall log for cddlib-094f.p4.spkg",
     "created_at": "2010-02-01T19:10:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8115",
     "type": "issue_comment",
@@ -547,7 +547,7 @@ archive/issue_comments_071266.json:
 }
 ```
 
-Attachment
+Attachment [cddlib.log.bz2](tarball://root/attachments/some-uuid/ticket8115/cddlib.log.bz2) by mvngu created at 2010-02-01 19:10:56
 
 install log for cddlib-094f.p4.spkg
 
@@ -690,7 +690,7 @@ Jaap
 archive/issue_comments_071271.json:
 ```json
 {
-    "body": "Attachment\n\nAdd cdd_both_reps/cdd_both_reps_gmp binaries to .hgignore.",
+    "body": "Attachment [cddlib-local-bin-hgignore.patch](tarball://root/attachments/some-uuid/ticket8115/cddlib-local-bin-hgignore.patch) by vbraun created at 2010-02-03 19:32:30\n\nAdd cdd_both_reps/cdd_both_reps_gmp binaries to .hgignore.",
     "created_at": "2010-02-03T19:32:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8115",
     "type": "issue_comment",
@@ -699,7 +699,7 @@ archive/issue_comments_071271.json:
 }
 ```
 
-Attachment
+Attachment [cddlib-local-bin-hgignore.patch](tarball://root/attachments/some-uuid/ticket8115/cddlib-local-bin-hgignore.patch) by vbraun created at 2010-02-03 19:32:30
 
 Add cdd_both_reps/cdd_both_reps_gmp binaries to .hgignore.
 

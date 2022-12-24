@@ -82,7 +82,7 @@ This patch also moves plot3d_adaptive into plot3d (i.e., as an option), and depr
 archive/issue_comments_011603.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-1833.patch](tarball://root/attachments/some-uuid/ticket1833/trac-1833.patch) by was created at 2008-01-18 16:24:23",
     "created_at": "2008-01-18T16:24:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1833",
     "type": "issue_comment",
@@ -91,7 +91,7 @@ archive/issue_comments_011603.json:
 }
 ```
 
-Attachment
+Attachment [trac-1833.patch](tarball://root/attachments/some-uuid/ticket1833/trac-1833.patch) by was created at 2008-01-18 16:24:23
 
 
 

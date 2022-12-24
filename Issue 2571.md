@@ -51,7 +51,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2571
 archive/issue_comments_017566.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8950.patch](tarball://root/attachments/some-uuid/ticket2571/8950.patch) by cremona created at 2008-03-17 14:24:28",
     "created_at": "2008-03-17T14:24:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2571",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_017566.json:
 }
 ```
 
-Attachment
+Attachment [8950.patch](tarball://root/attachments/some-uuid/ticket2571/8950.patch) by cremona created at 2008-03-17 14:24:28
 
 
 
@@ -159,7 +159,7 @@ apply after 8950.patch
 archive/issue_comments_017572.json:
 ```json
 {
-    "body": "Attachment\n\nAs suggested, a few doctests have been added, in the second patch.",
+    "body": "Attachment [8951.patch](tarball://root/attachments/some-uuid/ticket2571/8951.patch) by cremona created at 2008-03-17 16:56:39\n\nAs suggested, a few doctests have been added, in the second patch.",
     "created_at": "2008-03-17T16:56:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2571",
     "type": "issue_comment",
@@ -168,7 +168,7 @@ archive/issue_comments_017572.json:
 }
 ```
 
-Attachment
+Attachment [8951.patch](tarball://root/attachments/some-uuid/ticket2571/8951.patch) by cremona created at 2008-03-17 16:56:39
 
 As suggested, a few doctests have been added, in the second patch.
 

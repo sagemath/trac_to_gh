@@ -51,7 +51,7 @@ Changing status from new to needs_review.
 archive/issue_comments_095482.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good (apart from one Sphinx warning which my reviewer patch fixes).\n\nIs there a good reference, say in the PARI reference manual, for the GRH assumptions?",
+    "body": "Attachment [9750.patch](tarball://root/attachments/some-uuid/ticket9750/9750.patch) by cremona created at 2010-08-15 17:17:39\n\nLooks good (apart from one Sphinx warning which my reviewer patch fixes).\n\nIs there a good reference, say in the PARI reference manual, for the GRH assumptions?",
     "created_at": "2010-08-15T17:17:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9750",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_095482.json:
 }
 ```
 
-Attachment
+Attachment [9750.patch](tarball://root/attachments/some-uuid/ticket9750/9750.patch) by cremona created at 2010-08-15 17:17:39
 
 Looks good (apart from one Sphinx warning which my reviewer patch fixes).
 
@@ -73,7 +73,7 @@ Is there a good reference, say in the PARI reference manual, for the GRH assumpt
 archive/issue_comments_095483.json:
 ```json
 {
-    "body": "Attachment\n\nApply after previous (and both depend on #9343)",
+    "body": "Attachment [trac_9750-review.patch](tarball://root/attachments/some-uuid/ticket9750/trac_9750-review.patch) by cremona created at 2010-08-15 17:18:22\n\nApply after previous (and both depend on #9343)",
     "created_at": "2010-08-15T17:18:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9750",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_095483.json:
 }
 ```
 
-Attachment
+Attachment [trac_9750-review.patch](tarball://root/attachments/some-uuid/ticket9750/trac_9750-review.patch) by cremona created at 2010-08-15 17:18:22
 
 Apply after previous (and both depend on #9343)
 
@@ -222,7 +222,7 @@ Resolution: fixed
 archive/issue_comments_095491.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9750_v2.patch](tarball://root/attachments/some-uuid/ticket9750/9750_v2.patch) by mpatel created at 2010-09-10 10:44:27",
     "created_at": "2010-09-10T10:44:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9750",
     "type": "issue_comment",
@@ -231,4 +231,4 @@ archive/issue_comments_095491.json:
 }
 ```
 
-Attachment
+Attachment [9750_v2.patch](tarball://root/attachments/some-uuid/ticket9750/9750_v2.patch) by mpatel created at 2010-09-10 10:44:27

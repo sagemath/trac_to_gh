@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5148
 archive/issue_comments_039387.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch `trac_5148.patch` makes some corrections to the details of Andrey Novoseltsev in the Sage [dev-map](http://www.sagemath.org/development-map.html). The diff was generated against this XML file:\n\n\n\nhttp://www.sagemath.org/res/contributors.xml",
+    "body": "Attachment [trac_5148.patch](tarball://root/attachments/some-uuid/ticket5148/trac_5148.patch) by mvngu created at 2009-02-01 06:00:12\n\nThe patch `trac_5148.patch` makes some corrections to the details of Andrey Novoseltsev in the Sage [dev-map](http://www.sagemath.org/development-map.html). The diff was generated against this XML file:\n\n\n\nhttp://www.sagemath.org/res/contributors.xml",
     "created_at": "2009-02-01T06:00:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5148",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_039387.json:
 }
 ```
 
-Attachment
+Attachment [trac_5148.patch](tarball://root/attachments/some-uuid/ticket5148/trac_5148.patch) by mvngu created at 2009-02-01 06:00:12
 
 The patch `trac_5148.patch` makes some corrections to the details of Andrey Novoseltsev in the Sage [dev-map](http://www.sagemath.org/development-map.html). The diff was generated against this XML file:
 

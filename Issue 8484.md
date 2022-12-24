@@ -67,7 +67,7 @@ Changing component from algebra to elliptic curves.
 archive/issue_comments_076460.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8484.patch](tarball://root/attachments/some-uuid/ticket8484/trac_8484.patch) by rlm created at 2010-03-11 01:17:43",
     "created_at": "2010-03-11T01:17:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8484",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_076460.json:
 }
 ```
 
-Attachment
+Attachment [trac_8484.patch](tarball://root/attachments/some-uuid/ticket8484/trac_8484.patch) by rlm created at 2010-03-11 01:17:43
 
 
 
@@ -132,7 +132,7 @@ That was entirely for my own convenience in doing my research. I didn't want to 
 archive/issue_comments_076463.json:
 ```json
 {
-    "body": "Attachment\n\nSame as other patch, minus small_rank_curves function",
+    "body": "Attachment [trac_8484-wo-src.patch](tarball://root/attachments/some-uuid/ticket8484/trac_8484-wo-src.patch) by rlm created at 2010-03-13 19:19:59\n\nSame as other patch, minus small_rank_curves function",
     "created_at": "2010-03-13T19:19:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8484",
     "type": "issue_comment",
@@ -141,7 +141,7 @@ archive/issue_comments_076463.json:
 }
 ```
 
-Attachment
+Attachment [trac_8484-wo-src.patch](tarball://root/attachments/some-uuid/ticket8484/trac_8484-wo-src.patch) by rlm created at 2010-03-13 19:19:59
 
 Same as other patch, minus small_rank_curves function
 

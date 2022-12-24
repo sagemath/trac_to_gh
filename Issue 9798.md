@@ -131,7 +131,7 @@ Changing status from new to needs_review.
 archive/issue_comments_096257.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [makefile.diff](tarball://root/attachments/some-uuid/ticket9799/makefile.diff) by jhpalmieri created at 2010-09-13 05:45:38",
     "created_at": "2010-09-13T05:45:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9798",
     "type": "issue_comment",
@@ -140,7 +140,7 @@ archive/issue_comments_096257.json:
 }
 ```
 
-Attachment
+Attachment [makefile.diff](tarball://root/attachments/some-uuid/ticket9799/makefile.diff) by jhpalmieri created at 2010-09-13 05:45:38
 
 
 
@@ -191,7 +191,7 @@ Some changes we should also make:
 archive/issue_comments_096259.json:
 ```json
 {
-    "body": "Attachment\n\nRevised version of John's Makefile, with many of the other changes I mentioned.",
+    "body": "Attachment [makefile.9799-ll-v2](tarball://root/attachments/some-uuid/ticket9799/makefile.9799-ll-v2) by leif created at 2010-09-13 15:05:32\n\nRevised version of John's Makefile, with many of the other changes I mentioned.",
     "created_at": "2010-09-13T15:05:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9798",
     "type": "issue_comment",
@@ -200,7 +200,7 @@ archive/issue_comments_096259.json:
 }
 ```
 
-Attachment
+Attachment [makefile.9799-ll-v2](tarball://root/attachments/some-uuid/ticket9799/makefile.9799-ll-v2) by leif created at 2010-09-13 15:05:32
 
 Revised version of John's Makefile, with many of the other changes I mentioned.
 
@@ -229,7 +229,7 @@ Diff between John's and my Makefile.
 archive/issue_comments_096261.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached a modified version of John's Makefile, and a corresponding diff.\n\nNot yet *very much* tested, but *should* work... ;-)\n\nCeterum censeo makefile esse renominandum[?] (i.e. **M**akefile)",
+    "body": "Attachment [makefile.jhp-ll-v2.diff](tarball://root/attachments/some-uuid/ticket9799/makefile.jhp-ll-v2.diff) by leif created at 2010-09-13 15:43:50\n\nI've attached a modified version of John's Makefile, and a corresponding diff.\n\nNot yet *very much* tested, but *should* work... ;-)\n\nCeterum censeo makefile esse renominandum[?] (i.e. **M**akefile)",
     "created_at": "2010-09-13T15:43:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9798",
     "type": "issue_comment",
@@ -238,7 +238,7 @@ archive/issue_comments_096261.json:
 }
 ```
 
-Attachment
+Attachment [makefile.jhp-ll-v2.diff](tarball://root/attachments/some-uuid/ticket9799/makefile.jhp-ll-v2.diff) by leif created at 2010-09-13 15:43:50
 
 I've attached a modified version of John's Makefile, and a corresponding diff.
 
@@ -426,7 +426,7 @@ version 3 of the makefile (or Makefile)
 archive/issue_comments_096269.json:
 ```json
 {
-    "body": "Attachment\n\nDiff between v2 and v3",
+    "body": "Attachment [makefile.v3.diff](tarball://root/attachments/some-uuid/ticket9799/makefile.v3.diff) by jhpalmieri created at 2010-09-13 19:41:37\n\nDiff between v2 and v3",
     "created_at": "2010-09-13T19:41:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9798",
     "type": "issue_comment",
@@ -435,7 +435,7 @@ archive/issue_comments_096269.json:
 }
 ```
 
-Attachment
+Attachment [makefile.v3.diff](tarball://root/attachments/some-uuid/ticket9799/makefile.v3.diff) by jhpalmieri created at 2010-09-13 19:41:37
 
 Diff between v2 and v3
 
@@ -601,7 +601,7 @@ Changing keywords from "" to "makefile".
 archive/issue_comments_096277.json:
 ```json
 {
-    "body": "Attachment\n\nI have read the patch and it looks okay to me, but perhaps somebody who is more familiar with the Sage build process should have a second look.  I am currently doing a full build from scratch with the new `Makefile` (with capital).  I have a few comments (which you're free to ignore...).\n\nWhy not leave\n\n```\nall: build doc \n```\n\nas it is?  I agree that \"build\" is superfluous, but I think it adds clarity.  It is also more robust in case other parts of the makefile are changed.\n\nthe same for\n\n```\ndoc-html: build # (already) indirectly depends on $(PIPE)\n```\n\n\nAbout the comments: I think it more common to put them outside the make rules, so instead of\n\n```\nbuild:  $(PIPE)\n    @# Note that (currently) \"tee\" will be run in the directory cd'ed to \n    @# in pipestatus' first argument, i.e. \"spkg/\":  \n    $(PIPE) \"cd spkg && ./install all 2>&1\" \"tee -a ../install.log\" \n```\n\nwhy not write\n\n```\n# Note that (currently) \"tee\" will be run in the directory cd'ed to\n# in pipestatus' first argument, i.e. \"spkg/\":\nbuild:  $(PIPE)\n    $(PIPE) \"cd spkg && ./install all 2>&1\" \"tee -a ../install.log\" \n```\n",
+    "body": "Attachment [9799_makefile.patch](tarball://root/attachments/some-uuid/ticket9799/9799_makefile.patch) by jdemeyer created at 2010-10-19 21:11:02\n\nI have read the patch and it looks okay to me, but perhaps somebody who is more familiar with the Sage build process should have a second look.  I am currently doing a full build from scratch with the new `Makefile` (with capital).  I have a few comments (which you're free to ignore...).\n\nWhy not leave\n\n```\nall: build doc \n```\n\nas it is?  I agree that \"build\" is superfluous, but I think it adds clarity.  It is also more robust in case other parts of the makefile are changed.\n\nthe same for\n\n```\ndoc-html: build # (already) indirectly depends on $(PIPE)\n```\n\n\nAbout the comments: I think it more common to put them outside the make rules, so instead of\n\n```\nbuild:  $(PIPE)\n    @# Note that (currently) \"tee\" will be run in the directory cd'ed to \n    @# in pipestatus' first argument, i.e. \"spkg/\":  \n    $(PIPE) \"cd spkg && ./install all 2>&1\" \"tee -a ../install.log\" \n```\n\nwhy not write\n\n```\n# Note that (currently) \"tee\" will be run in the directory cd'ed to\n# in pipestatus' first argument, i.e. \"spkg/\":\nbuild:  $(PIPE)\n    $(PIPE) \"cd spkg && ./install all 2>&1\" \"tee -a ../install.log\" \n```\n",
     "created_at": "2010-10-19T21:11:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9798",
     "type": "issue_comment",
@@ -610,7 +610,7 @@ archive/issue_comments_096277.json:
 }
 ```
 
-Attachment
+Attachment [9799_makefile.patch](tarball://root/attachments/some-uuid/ticket9799/9799_makefile.patch) by jdemeyer created at 2010-10-19 21:11:02
 
 I have read the patch and it looks okay to me, but perhaps somebody who is more familiar with the Sage build process should have a second look.  I am currently doing a full build from scratch with the new `Makefile` (with capital).  I have a few comments (which you're free to ignore...).
 

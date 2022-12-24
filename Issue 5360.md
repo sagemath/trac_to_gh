@@ -130,7 +130,7 @@ sage.server.notebook.notebook.Notebook.import_worksheet?
 archive/issue_comments_041300.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5360-sage_server_docstrings.patch](tarball://root/attachments/some-uuid/ticket5360/trac_5360-sage_server_docstrings.patch) by mpatel created at 2009-08-10 10:16:36",
     "created_at": "2009-08-10T10:16:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5360",
     "type": "issue_comment",
@@ -139,7 +139,7 @@ archive/issue_comments_041300.json:
 }
 ```
 
-Attachment
+Attachment [trac_5360-sage_server_docstrings.patch](tarball://root/attachments/some-uuid/ticket5360/trac_5360-sage_server_docstrings.patch) by mpatel created at 2009-08-10 10:16:36
 
 
 
@@ -177,7 +177,7 @@ Feel free to make further changes.
 archive/issue_comments_041302.json:
 ```json
 {
-    "body": "Attachment\n\nNew version.  Apply only this patch.",
+    "body": "Attachment [trac_5360-sage_server_docstrings_v2.patch](tarball://root/attachments/some-uuid/ticket5360/trac_5360-sage_server_docstrings_v2.patch) by mpatel created at 2009-08-10 13:58:45\n\nNew version.  Apply only this patch.",
     "created_at": "2009-08-10T13:58:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5360",
     "type": "issue_comment",
@@ -186,7 +186,7 @@ archive/issue_comments_041302.json:
 }
 ```
 
-Attachment
+Attachment [trac_5360-sage_server_docstrings_v2.patch](tarball://root/attachments/some-uuid/ticket5360/trac_5360-sage_server_docstrings_v2.patch) by mpatel created at 2009-08-10 13:58:45
 
 New version.  Apply only this patch.
 

@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5715
 archive/issue_comments_044658.json:
 ```json
 {
-    "body": "Attachment\n\nThis is a duplicate of #5714.",
+    "body": "Attachment [5715-subdivisions.patch](tarball://root/attachments/some-uuid/ticket5715/5715-subdivisions.patch) by jhpalmieri created at 2009-04-08 19:24:40\n\nThis is a duplicate of #5714.",
     "created_at": "2009-04-08T19:24:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5715",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_044658.json:
 }
 ```
 
-Attachment
+Attachment [5715-subdivisions.patch](tarball://root/attachments/some-uuid/ticket5715/5715-subdivisions.patch) by jhpalmieri created at 2009-04-08 19:24:40
 
 This is a duplicate of #5714.
 
@@ -107,7 +107,7 @@ Wall time: 5.89 s
 archive/issue_comments_044661.json:
 ```json
 {
-    "body": "Attachment\n\napply only this patch",
+    "body": "Attachment [5715-mat2-subdiv.patch](tarball://root/attachments/some-uuid/ticket5715/5715-mat2-subdiv.patch) by robertwb created at 2009-04-09 07:21:46\n\napply only this patch",
     "created_at": "2009-04-09T07:21:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5715",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_044661.json:
 }
 ```
 
-Attachment
+Attachment [5715-mat2-subdiv.patch](tarball://root/attachments/some-uuid/ticket5715/5715-mat2-subdiv.patch) by robertwb created at 2009-04-09 07:21:46
 
 apply only this patch
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5423
 archive/issue_comments_041970.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5423-coerce-calc.patch](tarball://root/attachments/some-uuid/ticket5423/5423-coerce-calc.patch) by robertwb created at 2009-03-03 22:10:43",
     "created_at": "2009-03-03T22:10:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5423",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_041970.json:
 }
 ```
 
-Attachment
+Attachment [5423-coerce-calc.patch](tarball://root/attachments/some-uuid/ticket5423/5423-coerce-calc.patch) by robertwb created at 2009-03-03 22:10:43
 
 
 
@@ -49,7 +49,7 @@ Attachment
 archive/issue_comments_041971.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5423.patch](tarball://root/attachments/some-uuid/ticket5423/trac_5423.patch) by mhansen created at 2009-03-07 22:01:31",
     "created_at": "2009-03-07T22:01:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5423",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_041971.json:
 }
 ```
 
-Attachment
+Attachment [trac_5423.patch](tarball://root/attachments/some-uuid/ticket5423/trac_5423.patch) by mhansen created at 2009-03-07 22:01:31
 
 
 

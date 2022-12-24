@@ -79,7 +79,7 @@ Changing status from new to needs_review.
 archive/issue_comments_072084.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8179-cddlib-local-bin-hgignore.patch](tarball://root/attachments/some-uuid/ticket8179/trac_8179-cddlib-local-bin-hgignore.patch) by mvngu created at 2010-02-03 19:45:00",
     "created_at": "2010-02-03T19:45:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8179",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_072084.json:
 }
 ```
 
-Attachment
+Attachment [trac_8179-cddlib-local-bin-hgignore.patch](tarball://root/attachments/some-uuid/ticket8179/trac_8179-cddlib-local-bin-hgignore.patch) by mvngu created at 2010-02-03 19:45:00
 
 
 

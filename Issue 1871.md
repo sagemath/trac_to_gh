@@ -244,7 +244,7 @@ change "needs review" -> "needs work" since it seems that the second patch shoul
 archive/issue_comments_011853.json:
 ```json
 {
-    "body": "Attachment\n\nApply only this patch",
+    "body": "Attachment [trac_1871-rebased-and-flat.patch](tarball://root/attachments/some-uuid/ticket1871/trac_1871-rebased-and-flat.patch) by rlm created at 2009-06-19 22:57:31\n\nApply only this patch",
     "created_at": "2009-06-19T22:57:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1871",
     "type": "issue_comment",
@@ -253,7 +253,7 @@ archive/issue_comments_011853.json:
 }
 ```
 
-Attachment
+Attachment [trac_1871-rebased-and-flat.patch](tarball://root/attachments/some-uuid/ticket1871/trac_1871-rebased-and-flat.patch) by rlm created at 2009-06-19 22:57:31
 
 Apply only this patch
 

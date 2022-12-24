@@ -58,7 +58,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7947
 archive/issue_comments_069335.json:
 ```json
 {
-    "body": "Attachment\n\nfix iteration error in QuadraticForm.vectors_by_length()",
+    "body": "Attachment [trac_7947.patch](tarball://root/attachments/some-uuid/ticket7947/trac_7947.patch) by tornaria created at 2010-01-16 14:35:14\n\nfix iteration error in QuadraticForm.vectors_by_length()",
     "created_at": "2010-01-16T14:35:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7947",
     "type": "issue_comment",
@@ -67,7 +67,7 @@ archive/issue_comments_069335.json:
 }
 ```
 
-Attachment
+Attachment [trac_7947.patch](tarball://root/attachments/some-uuid/ticket7947/trac_7947.patch) by tornaria created at 2010-01-16 14:35:14
 
 fix iteration error in QuadraticForm.vectors_by_length()
 

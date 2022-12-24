@@ -96,7 +96,7 @@ Well, the fix was embarrassingly trivial.  Patch is attached.
 archive/issue_comments_064117.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7548.patch](tarball://root/attachments/some-uuid/ticket7548/trac_7548.patch) by AlexGhitza created at 2010-01-03 07:23:57",
     "created_at": "2010-01-03T07:23:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7548",
     "type": "issue_comment",
@@ -105,7 +105,7 @@ archive/issue_comments_064117.json:
 }
 ```
 
-Attachment
+Attachment [trac_7548.patch](tarball://root/attachments/some-uuid/ticket7548/trac_7548.patch) by AlexGhitza created at 2010-01-03 07:23:57
 
 
 

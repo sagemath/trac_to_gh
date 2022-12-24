@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7322
 archive/issue_comments_061184.json:
 ```json
 {
-    "body": "Attachment\n\nUpgrade to jsMath 3.6c.",
+    "body": "Attachment [trac_7322-jsmath_upgrade.patch](tarball://root/attachments/some-uuid/ticket7322/trac_7322-jsmath_upgrade.patch) by mpatel created at 2009-10-29 07:19:11\n\nUpgrade to jsMath 3.6c.",
     "created_at": "2009-10-29T07:19:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7322",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_061184.json:
 }
 ```
 
-Attachment
+Attachment [trac_7322-jsmath_upgrade.patch](tarball://root/attachments/some-uuid/ticket7322/trac_7322-jsmath_upgrade.patch) by mpatel created at 2009-10-29 07:19:11
 
 Upgrade to jsMath 3.6c.
 

@@ -83,7 +83,7 @@ Changing status from new to needs_review.
 archive/issue_comments_067261.json:
 ```json
 {
-    "body": "Attachment\n\nWould be open to suggestions as to how to handle the issues raised in [this](http://groups.google.com/group/sage-devel/browse_thread/thread/ec30de67075e116f) thread, but for now this is up for review.",
+    "body": "Attachment [trac_7793-zorder-disk.patch](tarball://root/attachments/some-uuid/ticket7793/trac_7793-zorder-disk.patch) by kcrisman created at 2009-12-30 03:44:03\n\nWould be open to suggestions as to how to handle the issues raised in [this](http://groups.google.com/group/sage-devel/browse_thread/thread/ec30de67075e116f) thread, but for now this is up for review.",
     "created_at": "2009-12-30T03:44:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7793",
     "type": "issue_comment",
@@ -92,7 +92,7 @@ archive/issue_comments_067261.json:
 }
 ```
 
-Attachment
+Attachment [trac_7793-zorder-disk.patch](tarball://root/attachments/some-uuid/ticket7793/trac_7793-zorder-disk.patch) by kcrisman created at 2009-12-30 03:44:03
 
 Would be open to suggestions as to how to handle the issues raised in [this](http://groups.google.com/group/sage-devel/browse_thread/thread/ec30de67075e116f) thread, but for now this is up for review.
 

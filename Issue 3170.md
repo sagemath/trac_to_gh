@@ -53,7 +53,7 @@ Changing status from new to assigned.
 archive/issue_comments_021967.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [readline-5.2.p1-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3170/readline-5.2.p1-64bit-osx.patch) by mabshoff created at 2008-05-19 00:01:02",
     "created_at": "2008-05-19T00:01:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3170",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_021967.json:
 }
 ```
 
-Attachment
+Attachment [readline-5.2.p1-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3170/readline-5.2.p1-64bit-osx.patch) by mabshoff created at 2008-05-19 00:01:02
 
 
 

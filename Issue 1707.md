@@ -178,7 +178,7 @@ Dancing links C++
 archive/issue_comments_010819.json:
 ```json
 {
-    "body": "Attachment\n\nDancing links C++ wrapper",
+    "body": "Attachment [dancing_links.spyx](tarball://root/attachments/some-uuid/ticket1707/dancing_links.spyx) by carlohamalainen created at 2008-03-21 07:53:40\n\nDancing links C++ wrapper",
     "created_at": "2008-03-21T07:53:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1707",
     "type": "issue_comment",
@@ -187,7 +187,7 @@ archive/issue_comments_010819.json:
 }
 ```
 
-Attachment
+Attachment [dancing_links.spyx](tarball://root/attachments/some-uuid/ticket1707/dancing_links.spyx) by carlohamalainen created at 2008-03-21 07:53:40
 
 Dancing links C++ wrapper
 
@@ -216,7 +216,7 @@ Updated latin squares code (lots of doctests), replaces latin.sage
 archive/issue_comments_010821.json:
 ```json
 {
-    "body": "Attachment\n\n* The file dfs_latin.spyx can be removed, all functionality has been superseded by the C++ dancing links solver.\n\n* Many doctests/docstrings added to latin.sage (see latin.2.sage attachment)",
+    "body": "Attachment [latin.2.sage](tarball://root/attachments/some-uuid/ticket1707/latin.2.sage) by carlohamalainen created at 2008-03-21 07:57:30\n\n* The file dfs_latin.spyx can be removed, all functionality has been superseded by the C++ dancing links solver.\n\n* Many doctests/docstrings added to latin.sage (see latin.2.sage attachment)",
     "created_at": "2008-03-21T07:57:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1707",
     "type": "issue_comment",
@@ -225,7 +225,7 @@ archive/issue_comments_010821.json:
 }
 ```
 
-Attachment
+Attachment [latin.2.sage](tarball://root/attachments/some-uuid/ticket1707/latin.2.sage) by carlohamalainen created at 2008-03-21 07:57:30
 
 * The file dfs_latin.spyx can be removed, all functionality has been superseded by the C++ dancing links solver.
 
@@ -307,7 +307,7 @@ Michael
 archive/issue_comments_010825.json:
 ```json
 {
-    "body": "Attachment\n\npatch against 2.11.alpha1, needs review",
+    "body": "Attachment [trac1707-combinat-matrices.patch](tarball://root/attachments/some-uuid/ticket1707/trac1707-combinat-matrices.patch) by carlohamalainen created at 2008-03-23 18:12:36\n\npatch against 2.11.alpha1, needs review",
     "created_at": "2008-03-23T18:12:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1707",
     "type": "issue_comment",
@@ -316,7 +316,7 @@ archive/issue_comments_010825.json:
 }
 ```
 
-Attachment
+Attachment [trac1707-combinat-matrices.patch](tarball://root/attachments/some-uuid/ticket1707/trac1707-combinat-matrices.patch) by carlohamalainen created at 2008-03-23 18:12:36
 
 patch against 2.11.alpha1, needs review
 
@@ -378,7 +378,7 @@ I'll post a more in-depth review in awhile, but one thing that needs to be done 
 archive/issue_comments_010828.json:
 ```json
 {
-    "body": "Attachment\n\nApply the last two patches: trac1707-combinat-matrices.patch and 1707-referee.patch",
+    "body": "Attachment [1707-referee.patch](tarball://root/attachments/some-uuid/ticket1707/1707-referee.patch) by mhansen created at 2008-03-25 14:07:19\n\nApply the last two patches: trac1707-combinat-matrices.patch and 1707-referee.patch",
     "created_at": "2008-03-25T14:07:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1707",
     "type": "issue_comment",
@@ -387,7 +387,7 @@ archive/issue_comments_010828.json:
 }
 ```
 
-Attachment
+Attachment [1707-referee.patch](tarball://root/attachments/some-uuid/ticket1707/1707-referee.patch) by mhansen created at 2008-03-25 14:07:19
 
 Apply the last two patches: trac1707-combinat-matrices.patch and 1707-referee.patch
 
@@ -452,7 +452,7 @@ set file to C++ in pbuild
 archive/issue_comments_010832.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_1707-dancing_links.pyx-doctestfix.patch](tarball://root/attachments/some-uuid/ticket1707/trac_1707-dancing_links.pyx-doctestfix.patch) by mabshoff created at 2008-03-26 15:35:14",
     "created_at": "2008-03-26T15:35:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1707",
     "type": "issue_comment",
@@ -461,7 +461,7 @@ archive/issue_comments_010832.json:
 }
 ```
 
-Attachment
+Attachment [trac_1707-dancing_links.pyx-doctestfix.patch](tarball://root/attachments/some-uuid/ticket1707/trac_1707-dancing_links.pyx-doctestfix.patch) by mabshoff created at 2008-03-26 15:35:14
 
 
 

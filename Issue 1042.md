@@ -99,7 +99,7 @@ G never the key 'sage_mode' so none of the custom imports in all_cmdline and all
 archive/issue_comments_006349.json:
 ```json
 {
-    "body": "Attachment\n\nfixed by Mike Hansen and I.",
+    "body": "Attachment [trac1042.patch](tarball://root/attachments/some-uuid/ticket1042/trac1042.patch) by was created at 2007-11-03 21:02:18\n\nfixed by Mike Hansen and I.",
     "created_at": "2007-11-03T21:02:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1042",
     "type": "issue_comment",
@@ -108,7 +108,7 @@ archive/issue_comments_006349.json:
 }
 ```
 
-Attachment
+Attachment [trac1042.patch](tarball://root/attachments/some-uuid/ticket1042/trac1042.patch) by was created at 2007-11-03 21:02:18
 
 fixed by Mike Hansen and I.
 

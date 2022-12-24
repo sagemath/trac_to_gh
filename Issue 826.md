@@ -49,7 +49,7 @@ the patch!
 archive/issue_comments_005122.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [symbolic_coercion.hg](tarball://root/attachments/some-uuid/ticket826/symbolic_coercion.hg) by mabshoff created at 2007-10-04 19:30:06",
     "created_at": "2007-10-04T19:30:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/826",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_005122.json:
 }
 ```
 
-Attachment
+Attachment [symbolic_coercion.hg](tarball://root/attachments/some-uuid/ticket826/symbolic_coercion.hg) by mabshoff created at 2007-10-04 19:30:06
 
 
 

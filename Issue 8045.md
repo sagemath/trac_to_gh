@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8045
 archive/issue_comments_070314.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8045-elliptic.patch](tarball://root/attachments/some-uuid/ticket8045/trac_8045-elliptic.patch) by jhpalmieri created at 2010-01-23 17:19:43",
     "created_at": "2010-01-23T17:19:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8045",
     "type": "issue_comment",
@@ -41,7 +41,7 @@ archive/issue_comments_070314.json:
 }
 ```
 
-Attachment
+Attachment [trac_8045-elliptic.patch](tarball://root/attachments/some-uuid/ticket8045/trac_8045-elliptic.patch) by jhpalmieri created at 2010-01-23 17:19:43
 
 
 
@@ -86,7 +86,7 @@ Some cleanups.  Replaces previous.
 archive/issue_comments_070317.json:
 ```json
 {
-    "body": "Attachment\n\nV2 makes the docstrings more consistent and fixes a mistake (I think) in `elliptic_pi`'s docstring.  For comparison, see [Maxima's documentation](http://maxima.sourceforge.net/docs/manual/en/maxima_17.html#SEC68) and [MathWorld](http://mathworld.wolfram.com/EllipticIntegraloftheThirdKind.html).\n\nPositive review, if my changes are OK.",
+    "body": "Attachment [trac_8045-elliptic.2.patch](tarball://root/attachments/some-uuid/ticket8045/trac_8045-elliptic.2.patch) by mpatel created at 2010-01-31 01:26:27\n\nV2 makes the docstrings more consistent and fixes a mistake (I think) in `elliptic_pi`'s docstring.  For comparison, see [Maxima's documentation](http://maxima.sourceforge.net/docs/manual/en/maxima_17.html#SEC68) and [MathWorld](http://mathworld.wolfram.com/EllipticIntegraloftheThirdKind.html).\n\nPositive review, if my changes are OK.",
     "created_at": "2010-01-31T01:26:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8045",
     "type": "issue_comment",
@@ -95,7 +95,7 @@ archive/issue_comments_070317.json:
 }
 ```
 
-Attachment
+Attachment [trac_8045-elliptic.2.patch](tarball://root/attachments/some-uuid/ticket8045/trac_8045-elliptic.2.patch) by mpatel created at 2010-01-31 01:26:27
 
 V2 makes the docstrings more consistent and fixes a mistake (I think) in `elliptic_pi`'s docstring.  For comparison, see [Maxima's documentation](http://maxima.sourceforge.net/docs/manual/en/maxima_17.html#SEC68) and [MathWorld](http://mathworld.wolfram.com/EllipticIntegraloftheThirdKind.html).
 
@@ -144,7 +144,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_070320.json:
 ```json
 {
-    "body": "Attachment\n\nreplaces all previous patches",
+    "body": "Attachment [trac_8045-elliptic-v3.patch](tarball://root/attachments/some-uuid/ticket8045/trac_8045-elliptic-v3.patch) by jhpalmieri created at 2010-01-31 03:09:35\n\nreplaces all previous patches",
     "created_at": "2010-01-31T03:09:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8045",
     "type": "issue_comment",
@@ -153,7 +153,7 @@ archive/issue_comments_070320.json:
 }
 ```
 
-Attachment
+Attachment [trac_8045-elliptic-v3.patch](tarball://root/attachments/some-uuid/ticket8045/trac_8045-elliptic-v3.patch) by jhpalmieri created at 2010-01-31 03:09:35
 
 replaces all previous patches
 
@@ -164,7 +164,7 @@ replaces all previous patches
 archive/issue_comments_070321.json:
 ```json
 {
-    "body": "Attachment\n\ndifference between versions 2 and 3, for reference purposes only. don't merge.",
+    "body": "Attachment [trac_8045-delta.patch](tarball://root/attachments/some-uuid/ticket8045/trac_8045-delta.patch) by jhpalmieri created at 2010-01-31 03:13:59\n\ndifference between versions 2 and 3, for reference purposes only. don't merge.",
     "created_at": "2010-01-31T03:13:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8045",
     "type": "issue_comment",
@@ -173,7 +173,7 @@ archive/issue_comments_070321.json:
 }
 ```
 
-Attachment
+Attachment [trac_8045-delta.patch](tarball://root/attachments/some-uuid/ticket8045/trac_8045-delta.patch) by jhpalmieri created at 2010-01-31 03:13:59
 
 difference between versions 2 and 3, for reference purposes only. don't merge.
 

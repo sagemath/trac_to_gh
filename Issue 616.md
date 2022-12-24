@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/616
 archive/issue_comments_003158.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_616.hg](tarball://root/attachments/some-uuid/ticket616/trac_616.hg) by craigcitro created at 2007-09-07 06:23:41",
     "created_at": "2007-09-07T06:23:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/616",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_003158.json:
 }
 ```
 
-Attachment
+Attachment [trac_616.hg](tarball://root/attachments/some-uuid/ticket616/trac_616.hg) by craigcitro created at 2007-09-07 06:23:41
 
 
 
@@ -71,7 +71,7 @@ Yeah, I just got bit by trac formatting. In the above, it says that if the funct
 archive/issue_comments_003160.json:
 ```json
 {
-    "body": "Attachment\n\ntrac_616_pt2.hg makes sage -coverage just a bit smarter.",
+    "body": "Attachment [trac_616_pt2.hg](tarball://root/attachments/some-uuid/ticket616/trac_616_pt2.hg) by craigcitro created at 2007-09-07 08:12:47\n\ntrac_616_pt2.hg makes sage -coverage just a bit smarter.",
     "created_at": "2007-09-07T08:12:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/616",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_003160.json:
 }
 ```
 
-Attachment
+Attachment [trac_616_pt2.hg](tarball://root/attachments/some-uuid/ticket616/trac_616_pt2.hg) by craigcitro created at 2007-09-07 08:12:47
 
 trac_616_pt2.hg makes sage -coverage just a bit smarter.
 
@@ -149,7 +149,7 @@ Actually, I'm adding one more patch, that's a combination of the previous two. I
 archive/issue_comments_003164.json:
 ```json
 {
-    "body": "Attachment\n\nI should have mentioned that in addition, the previous two patches made some modifications to the scons/c_lib stuff that no longer applies, so definitely use sage-coverage.hg. This is a patch against $SAGE_ROOT/local/bin.",
+    "body": "Attachment [sage-coverage.hg](tarball://root/attachments/some-uuid/ticket616/sage-coverage.hg) by craigcitro created at 2007-10-12 21:46:36\n\nI should have mentioned that in addition, the previous two patches made some modifications to the scons/c_lib stuff that no longer applies, so definitely use sage-coverage.hg. This is a patch against $SAGE_ROOT/local/bin.",
     "created_at": "2007-10-12T21:46:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/616",
     "type": "issue_comment",
@@ -158,7 +158,7 @@ archive/issue_comments_003164.json:
 }
 ```
 
-Attachment
+Attachment [sage-coverage.hg](tarball://root/attachments/some-uuid/ticket616/sage-coverage.hg) by craigcitro created at 2007-10-12 21:46:36
 
 I should have mentioned that in addition, the previous two patches made some modifications to the scons/c_lib stuff that no longer applies, so definitely use sage-coverage.hg. This is a patch against $SAGE_ROOT/local/bin.
 

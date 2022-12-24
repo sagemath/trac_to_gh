@@ -114,7 +114,7 @@ Improved performance of has_element and thus of is_subgroup
 archive/issue_comments_045960.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [PermutationGroup_has_element.patch](tarball://root/attachments/some-uuid/ticket5844/PermutationGroup_has_element.patch) by SimonKing created at 2009-04-21 09:45:02",
     "created_at": "2009-04-21T09:45:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5844",
     "type": "issue_comment",
@@ -123,7 +123,7 @@ archive/issue_comments_045960.json:
 }
 ```
 
-Attachment
+Attachment [PermutationGroup_has_element.patch](tarball://root/attachments/some-uuid/ticket5844/PermutationGroup_has_element.patch) by SimonKing created at 2009-04-21 09:45:02
 
 
 
@@ -234,7 +234,7 @@ If both are just tests for containment then `has_element` should be removed, res
 archive/issue_comments_045965.json:
 ```json
 {
-    "body": "Attachment\n\nReplace has_element by __contains__",
+    "body": "Attachment [PermutationGroup_has_element2.patch](tarball://root/attachments/some-uuid/ticket5844/PermutationGroup_has_element2.patch) by SimonKing created at 2009-04-22 07:50:52\n\nReplace has_element by __contains__",
     "created_at": "2009-04-22T07:50:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5844",
     "type": "issue_comment",
@@ -243,7 +243,7 @@ archive/issue_comments_045965.json:
 }
 ```
 
-Attachment
+Attachment [PermutationGroup_has_element2.patch](tarball://root/attachments/some-uuid/ticket5844/PermutationGroup_has_element2.patch) by SimonKing created at 2009-04-22 07:50:52
 
 Replace has_element by __contains__
 

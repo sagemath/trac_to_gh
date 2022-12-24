@@ -287,7 +287,7 @@ Resolution changed from fixed to
 archive/issue_comments_007495.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1209.patch](tarball://root/attachments/some-uuid/ticket1209/1209.patch) by mhansen created at 2008-02-27 19:51:16",
     "created_at": "2008-02-27T19:51:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1209",
     "type": "issue_comment",
@@ -296,7 +296,7 @@ archive/issue_comments_007495.json:
 }
 ```
 
-Attachment
+Attachment [1209.patch](tarball://root/attachments/some-uuid/ticket1209/1209.patch) by mhansen created at 2008-02-27 19:51:16
 
 
 
@@ -360,7 +360,7 @@ Michael
 archive/issue_comments_007498.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1209.2.patch](tarball://root/attachments/some-uuid/ticket1209/1209.2.patch) by mhansen created at 2008-02-28 00:37:16",
     "created_at": "2008-02-28T00:37:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1209",
     "type": "issue_comment",
@@ -369,7 +369,7 @@ archive/issue_comments_007498.json:
 }
 ```
 
-Attachment
+Attachment [1209.2.patch](tarball://root/attachments/some-uuid/ticket1209/1209.2.patch) by mhansen created at 2008-02-28 00:37:16
 
 
 
@@ -427,7 +427,7 @@ Michael
 archive/issue_comments_007501.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1209.3.patch](tarball://root/attachments/some-uuid/ticket1209/1209.3.patch) by mhansen created at 2008-02-28 01:15:18",
     "created_at": "2008-02-28T01:15:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1209",
     "type": "issue_comment",
@@ -436,7 +436,7 @@ archive/issue_comments_007501.json:
 }
 ```
 
-Attachment
+Attachment [1209.3.patch](tarball://root/attachments/some-uuid/ticket1209/1209.3.patch) by mhansen created at 2008-02-28 01:15:18
 
 
 

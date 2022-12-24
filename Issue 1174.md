@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1174
 archive/issue_comments_007256.json:
 ```json
 {
-    "body": "Attachment\n\nI noticed this very slight mistake recently...",
+    "body": "Attachment [7349.patch](tarball://root/attachments/some-uuid/ticket1174/7349.patch) by was created at 2007-11-15 07:47:21\n\nI noticed this very slight mistake recently...",
     "created_at": "2007-11-15T07:47:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1174",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_007256.json:
 }
 ```
 
-Attachment
+Attachment [7349.patch](tarball://root/attachments/some-uuid/ticket1174/7349.patch) by was created at 2007-11-15 07:47:21
 
 I noticed this very slight mistake recently...
 
@@ -123,7 +123,7 @@ apply this after applying the other patch
 archive/issue_comments_007261.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-1174-part2.patch](tarball://root/attachments/some-uuid/ticket1174/trac-1174-part2.patch) by was created at 2007-12-02 20:25:48",
     "created_at": "2007-12-02T20:25:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1174",
     "type": "issue_comment",
@@ -132,7 +132,7 @@ archive/issue_comments_007261.json:
 }
 ```
 
-Attachment
+Attachment [trac-1174-part2.patch](tarball://root/attachments/some-uuid/ticket1174/trac-1174-part2.patch) by was created at 2007-12-02 20:25:48
 
 
 
@@ -141,7 +141,7 @@ Attachment
 archive/issue_comments_007262.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me; doctests pass in sage/calculus and sage/rings.  (Apply all three patches, in order.)",
+    "body": "Attachment [trac-1174-part3.patch](tarball://root/attachments/some-uuid/ticket1174/trac-1174-part3.patch) by cwitty created at 2007-12-02 21:39:11\n\nLooks good to me; doctests pass in sage/calculus and sage/rings.  (Apply all three patches, in order.)",
     "created_at": "2007-12-02T21:39:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1174",
     "type": "issue_comment",
@@ -150,7 +150,7 @@ archive/issue_comments_007262.json:
 }
 ```
 
-Attachment
+Attachment [trac-1174-part3.patch](tarball://root/attachments/some-uuid/ticket1174/trac-1174-part3.patch) by cwitty created at 2007-12-02 21:39:11
 
 Looks good to me; doctests pass in sage/calculus and sage/rings.  (Apply all three patches, in order.)
 

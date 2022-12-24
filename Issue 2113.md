@@ -50,7 +50,7 @@ This needs to be optional; for local notebooks (where the notebook and web brows
 archive/issue_comments_013775.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [gzip.patch](tarball://root/attachments/some-uuid/ticket2113/gzip.patch) by jason created at 2008-10-19 05:07:25",
     "created_at": "2008-10-19T05:07:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2113",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_013775.json:
 }
 ```
 
-Attachment
+Attachment [gzip.patch](tarball://root/attachments/some-uuid/ticket2113/gzip.patch) by jason created at 2008-10-19 05:07:25
 
 
 

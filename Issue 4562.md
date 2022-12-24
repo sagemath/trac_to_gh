@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4562
 archive/issue_comments_034172.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [matrix-CDF-RDF-cleanup-imports.patch](tarball://root/attachments/some-uuid/ticket4562/matrix-CDF-RDF-cleanup-imports.patch) by jason created at 2008-11-20 06:23:36",
     "created_at": "2008-11-20T06:23:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4562",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_034172.json:
 }
 ```
 
-Attachment
+Attachment [matrix-CDF-RDF-cleanup-imports.patch](tarball://root/attachments/some-uuid/ticket4562/matrix-CDF-RDF-cleanup-imports.patch) by jason created at 2008-11-20 06:23:36
 
 
 

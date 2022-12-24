@@ -84,7 +84,7 @@ Uncommenting the appropriate line does indeed give a mesh in JMOL.  So now the q
 archive/issue_comments_018846.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-2741.patch](tarball://root/attachments/some-uuid/ticket2741/sage-2741.patch) by was created at 2008-04-30 04:24:33",
     "created_at": "2008-04-30T04:24:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2741",
     "type": "issue_comment",
@@ -93,7 +93,7 @@ archive/issue_comments_018846.json:
 }
 ```
 
-Attachment
+Attachment [sage-2741.patch](tarball://root/attachments/some-uuid/ticket2741/sage-2741.patch) by was created at 2008-04-30 04:24:33
 
 
 
@@ -120,7 +120,7 @@ fixes doctest failures
 archive/issue_comments_018848.json:
 ```json
 {
-    "body": "Attachment\n\nImpressive plots with mesh lines! There were two doctest failures I fixed them and uploaded a patch.",
+    "body": "Attachment [2741-doctest.patch](tarball://root/attachments/some-uuid/ticket2741/2741-doctest.patch) by TimothyClemans created at 2008-04-30 05:41:09\n\nImpressive plots with mesh lines! There were two doctest failures I fixed them and uploaded a patch.",
     "created_at": "2008-04-30T05:41:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2741",
     "type": "issue_comment",
@@ -129,7 +129,7 @@ archive/issue_comments_018848.json:
 }
 ```
 
-Attachment
+Attachment [2741-doctest.patch](tarball://root/attachments/some-uuid/ticket2741/2741-doctest.patch) by TimothyClemans created at 2008-04-30 05:41:09
 
 Impressive plots with mesh lines! There were two doctest failures I fixed them and uploaded a patch.
 

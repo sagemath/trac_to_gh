@@ -49,7 +49,7 @@ Resolution: fixed
 archive/issue_comments_009179.json:
 ```json
 {
-    "body": "Attachment\n\nmerged in 29.1. alpha2",
+    "body": "Attachment [trac-1424.patch](tarball://root/attachments/some-uuid/ticket1424/trac-1424.patch) by rlm created at 2007-12-21 00:58:43\n\nmerged in 29.1. alpha2",
     "created_at": "2007-12-21T00:58:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1424",
     "type": "issue_comment",
@@ -58,6 +58,6 @@ archive/issue_comments_009179.json:
 }
 ```
 
-Attachment
+Attachment [trac-1424.patch](tarball://root/attachments/some-uuid/ticket1424/trac-1424.patch) by rlm created at 2007-12-21 00:58:43
 
 merged in 29.1. alpha2

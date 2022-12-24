@@ -54,7 +54,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2340
 archive/issue_comments_015661.json:
 ```json
 {
-    "body": "Attachment\n\nMissing doctests for most of the non underscore functions in rings/ring.pyx (Need to finish.)",
+    "body": "Attachment [rings.ring.patch](tarball://root/attachments/some-uuid/ticket2340/rings.ring.patch) by cswiercz created at 2008-03-04 01:25:56\n\nMissing doctests for most of the non underscore functions in rings/ring.pyx (Need to finish.)",
     "created_at": "2008-03-04T01:25:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2340",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_015661.json:
 }
 ```
 
-Attachment
+Attachment [rings.ring.patch](tarball://root/attachments/some-uuid/ticket2340/rings.ring.patch) by cswiercz created at 2008-03-04 01:25:56
 
 Missing doctests for most of the non underscore functions in rings/ring.pyx (Need to finish.)
 
@@ -74,7 +74,7 @@ Missing doctests for most of the non underscore functions in rings/ring.pyx (Nee
 archive/issue_comments_015662.json:
 ```json
 {
-    "body": "Attachment\n\nAdditional doctest for rings/ring.pyx. There are still some doctests leftover for some non-underscore functions. I don't know enough about them to make a decent doctest.",
+    "body": "Attachment [rings.ring.additional.patch](tarball://root/attachments/some-uuid/ticket2340/rings.ring.additional.patch) by cswiercz created at 2008-03-06 01:00:51\n\nAdditional doctest for rings/ring.pyx. There are still some doctests leftover for some non-underscore functions. I don't know enough about them to make a decent doctest.",
     "created_at": "2008-03-06T01:00:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2340",
     "type": "issue_comment",
@@ -83,7 +83,7 @@ archive/issue_comments_015662.json:
 }
 ```
 
-Attachment
+Attachment [rings.ring.additional.patch](tarball://root/attachments/some-uuid/ticket2340/rings.ring.additional.patch) by cswiercz created at 2008-03-06 01:00:51
 
 Additional doctest for rings/ring.pyx. There are still some doctests leftover for some non-underscore functions. I don't know enough about them to make a decent doctest.
 
@@ -136,7 +136,7 @@ I suspect that this needs better documentation.  As it stands, it is certainly c
 archive/issue_comments_015665.json:
 ```json
 {
-    "body": "Attachment\n\nClarification of QQ.gcd in rings/ring.pyx. Also includes doctests for several basic functions in rings/integer_ring.pyx.",
+    "body": "Attachment [rings.ring_integer_ring.patch](tarball://root/attachments/some-uuid/ticket2340/rings.ring_integer_ring.patch) by cswiercz created at 2008-03-07 22:39:19\n\nClarification of QQ.gcd in rings/ring.pyx. Also includes doctests for several basic functions in rings/integer_ring.pyx.",
     "created_at": "2008-03-07T22:39:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2340",
     "type": "issue_comment",
@@ -145,7 +145,7 @@ archive/issue_comments_015665.json:
 }
 ```
 
-Attachment
+Attachment [rings.ring_integer_ring.patch](tarball://root/attachments/some-uuid/ticket2340/rings.ring_integer_ring.patch) by cswiercz created at 2008-03-07 22:39:19
 
 Clarification of QQ.gcd in rings/ring.pyx. Also includes doctests for several basic functions in rings/integer_ring.pyx.
 
@@ -185,7 +185,7 @@ It's just that Python displays 1-tuples with a trailing comma.
 archive/issue_comments_015667.json:
 ```json
 {
-    "body": "Attachment\n\nto be applied after thre previous 3 patches",
+    "body": "Attachment [8812.patch](tarball://root/attachments/some-uuid/ticket2340/8812.patch) by cremona created at 2008-03-08 22:25:26\n\nto be applied after thre previous 3 patches",
     "created_at": "2008-03-08T22:25:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2340",
     "type": "issue_comment",
@@ -194,7 +194,7 @@ archive/issue_comments_015667.json:
 }
 ```
 
-Attachment
+Attachment [8812.patch](tarball://root/attachments/some-uuid/ticket2340/8812.patch) by cremona created at 2008-03-08 22:25:26
 
 to be applied after thre previous 3 patches
 

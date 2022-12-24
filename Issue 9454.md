@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9454
 archive/issue_comments_090591.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sagenb_account_tokens.patch](tarball://root/attachments/some-uuid/ticket9454/sagenb_account_tokens.patch) by wjp created at 2010-07-08 14:58:26",
     "created_at": "2010-07-08T14:58:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9454",
     "type": "issue_comment",
@@ -51,7 +51,7 @@ archive/issue_comments_090591.json:
 }
 ```
 
-Attachment
+Attachment [sagenb_account_tokens.patch](tarball://root/attachments/some-uuid/ticket9454/sagenb_account_tokens.patch) by wjp created at 2010-07-08 14:58:26
 
 
 

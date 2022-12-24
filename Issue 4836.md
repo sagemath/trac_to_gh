@@ -429,7 +429,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_036664.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4836_pari_getattr.patch](tarball://root/attachments/some-uuid/ticket4836/4836_pari_getattr.patch) by jdemeyer created at 2010-09-28 10:56:15",
     "created_at": "2010-09-28T10:56:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4836",
     "type": "issue_comment",
@@ -438,7 +438,7 @@ archive/issue_comments_036664.json:
 }
 ```
 
-Attachment
+Attachment [4836_pari_getattr.patch](tarball://root/attachments/some-uuid/ticket4836/4836_pari_getattr.patch) by jdemeyer created at 2010-09-28 10:56:15
 
 
 

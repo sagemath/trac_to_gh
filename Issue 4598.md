@@ -84,7 +84,7 @@ mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/spkg/standard/sa
 archive/issue_comments_034477.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4598.patch](tarball://root/attachments/some-uuid/ticket4598/trac_4598.patch) by mabshoff created at 2008-11-25 11:12:20",
     "created_at": "2008-11-25T11:12:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4598",
     "type": "issue_comment",
@@ -93,7 +93,7 @@ archive/issue_comments_034477.json:
 }
 ```
 
-Attachment
+Attachment [trac_4598.patch](tarball://root/attachments/some-uuid/ticket4598/trac_4598.patch) by mabshoff created at 2008-11-25 11:12:20
 
 
 

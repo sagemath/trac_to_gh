@@ -79,7 +79,7 @@ Changing status from new to needs_review.
 archive/issue_comments_070705.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [mpfr-2.4.1.p1.patch](tarball://root/attachments/some-uuid/ticket8068/mpfr-2.4.1.p1.patch) by jsp created at 2010-01-26 18:49:34",
     "created_at": "2010-01-26T18:49:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8068",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_070705.json:
 }
 ```
 
-Attachment
+Attachment [mpfr-2.4.1.p1.patch](tarball://root/attachments/some-uuid/ticket8068/mpfr-2.4.1.p1.patch) by jsp created at 2010-01-26 18:49:34
 
 
 

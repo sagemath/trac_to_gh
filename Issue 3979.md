@@ -157,7 +157,7 @@ Changing component from basic arithmetic to algebra.
 archive/issue_comments_028586.json:
 ```json
 {
-    "body": "Attachment\n\nIn the attached patch I have completely rewritten `sage.rings.power_series_poly.__call__`.  Several errors in the old version have been corrected.  The new version more closely follows the corresponding function for polynomials, in particular referring to variables by name is now possible.\n\nIn order to make the `__call__` function work correctly it was necessary to change the behaviour of `sage.rings.power_series_poly.valuation`.  At the moment\n\n\n```\nsage: R.<x> = QQ[]\nsage: O(x^3).valuation()\n+Infinity\n```\n\nIf we interpret `O(x^3)` as `x^3` times an unknown power series, then the valuation could be anywhere between 3 and infinity, but 3 is a much better, and more cautious, estimate than infinity.  It is also very strange to have a series whose valuation is greater than its precision.  The new convention is also consistent with what happens for p-adic integers:\n\n\n```\nsage: O(7^3).valuation()\n3\n```\n\nIn the course of checking the power series code, a minor mistake in the polynomial code has been found and corrected.\n\nA doctest in `sage/rings/morphism.pyx` needed adjusting.\n\nI have also deleted the doctest in `sage.rings.power_series_mpoly.__call__` for two reason's : (1) it doesn't use this function; (2) it makes no sense anyway.  Besides the first line of the file is\n\n\n```\n# NOT ready to be used -- possibly should be deleted.\n```\n",
+    "body": "Attachment [trac_3979_power_series_substitution.patch](tarball://root/attachments/some-uuid/ticket3979/trac_3979_power_series_substitution.patch) by fwclarke created at 2011-07-18 12:11:24\n\nIn the attached patch I have completely rewritten `sage.rings.power_series_poly.__call__`.  Several errors in the old version have been corrected.  The new version more closely follows the corresponding function for polynomials, in particular referring to variables by name is now possible.\n\nIn order to make the `__call__` function work correctly it was necessary to change the behaviour of `sage.rings.power_series_poly.valuation`.  At the moment\n\n\n```\nsage: R.<x> = QQ[]\nsage: O(x^3).valuation()\n+Infinity\n```\n\nIf we interpret `O(x^3)` as `x^3` times an unknown power series, then the valuation could be anywhere between 3 and infinity, but 3 is a much better, and more cautious, estimate than infinity.  It is also very strange to have a series whose valuation is greater than its precision.  The new convention is also consistent with what happens for p-adic integers:\n\n\n```\nsage: O(7^3).valuation()\n3\n```\n\nIn the course of checking the power series code, a minor mistake in the polynomial code has been found and corrected.\n\nA doctest in `sage/rings/morphism.pyx` needed adjusting.\n\nI have also deleted the doctest in `sage.rings.power_series_mpoly.__call__` for two reason's : (1) it doesn't use this function; (2) it makes no sense anyway.  Besides the first line of the file is\n\n\n```\n# NOT ready to be used -- possibly should be deleted.\n```\n",
     "created_at": "2011-07-18T12:11:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3979",
     "type": "issue_comment",
@@ -166,7 +166,7 @@ archive/issue_comments_028586.json:
 }
 ```
 
-Attachment
+Attachment [trac_3979_power_series_substitution.patch](tarball://root/attachments/some-uuid/ticket3979/trac_3979_power_series_substitution.patch) by fwclarke created at 2011-07-18 12:11:24
 
 In the attached patch I have completely rewritten `sage.rings.power_series_poly.__call__`.  Several errors in the old version have been corrected.  The new version more closely follows the corresponding function for polynomials, in particular referring to variables by name is now possible.
 
@@ -334,7 +334,7 @@ Apply only this file
 archive/issue_comments_028592.json:
 ```json
 {
-    "body": "Attachment\n\nI have attached a revised patch.  All the previous failures have been dealt with.  Some changes were essentially trivial, but more major were:\n\n1. Formal groups for elliptic curves have been rewritten to exploit the multi-variable power series code available since 4.7.1\n\n2. `local_coordinates_at_weierstrass` in `sage/schemes/hyperelliptic_curves/hyperelliptic_generic.py` has been substantially simplified.\n\n3. At several places in `sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.py` substitution in a power series has had to be replaced by substitution in the underlying polynomial.  This works for now because in these instances the p-adic radius of convergence is known.",
+    "body": "Attachment [trac_3979_power_series_substitution_rev1.patch](tarball://root/attachments/some-uuid/ticket3979/trac_3979_power_series_substitution_rev1.patch) by fwclarke created at 2011-09-21 17:53:07\n\nI have attached a revised patch.  All the previous failures have been dealt with.  Some changes were essentially trivial, but more major were:\n\n1. Formal groups for elliptic curves have been rewritten to exploit the multi-variable power series code available since 4.7.1\n\n2. `local_coordinates_at_weierstrass` in `sage/schemes/hyperelliptic_curves/hyperelliptic_generic.py` has been substantially simplified.\n\n3. At several places in `sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.py` substitution in a power series has had to be replaced by substitution in the underlying polynomial.  This works for now because in these instances the p-adic radius of convergence is known.",
     "created_at": "2011-09-21T17:53:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3979",
     "type": "issue_comment",
@@ -343,7 +343,7 @@ archive/issue_comments_028592.json:
 }
 ```
 
-Attachment
+Attachment [trac_3979_power_series_substitution_rev1.patch](tarball://root/attachments/some-uuid/ticket3979/trac_3979_power_series_substitution_rev1.patch) by fwclarke created at 2011-09-21 17:53:07
 
 I have attached a revised patch.  All the previous failures have been dealt with.  Some changes were essentially trivial, but more major were:
 
@@ -552,7 +552,7 @@ Replaces previous revised patch
 archive/issue_comments_028599.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:8 lftabera]:\n\nFinally I have a revised patch.  I have applied all your suggestions with two exceptions.  Comments on some of them follow:\n\n> On file laurent_series_ring_element.pyx `@`446 \n\nRather than changing the documentation I have changed the code, so it does now return a Laurent polynomial.\n\n> On file multi_power_series_ring  `@`964,989\n\nI've left this for another ticket, as you suggested.\n\n> On file power_series_mpoly `@`74 \n\nI've left this unchanged, for reasons explained [comment:9 above]. \n\n> On file scheme.py `@`178\n\nI've undone this change.  It belongs in another ticket.",
+    "body": "Attachment [trac_3979_power_series_substitution_rev2.patch](tarball://root/attachments/some-uuid/ticket3979/trac_3979_power_series_substitution_rev2.patch) by fwclarke created at 2012-05-13 09:56:54\n\nReplying to [comment:8 lftabera]:\n\nFinally I have a revised patch.  I have applied all your suggestions with two exceptions.  Comments on some of them follow:\n\n> On file laurent_series_ring_element.pyx `@`446 \n\nRather than changing the documentation I have changed the code, so it does now return a Laurent polynomial.\n\n> On file multi_power_series_ring  `@`964,989\n\nI've left this for another ticket, as you suggested.\n\n> On file power_series_mpoly `@`74 \n\nI've left this unchanged, for reasons explained [comment:9 above]. \n\n> On file scheme.py `@`178\n\nI've undone this change.  It belongs in another ticket.",
     "created_at": "2012-05-13T09:56:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3979",
     "type": "issue_comment",
@@ -561,7 +561,7 @@ archive/issue_comments_028599.json:
 }
 ```
 
-Attachment
+Attachment [trac_3979_power_series_substitution_rev2.patch](tarball://root/attachments/some-uuid/ticket3979/trac_3979_power_series_substitution_rev2.patch) by fwclarke created at 2012-05-13 09:56:54
 
 Replying to [comment:8 lftabera]:
 
@@ -718,7 +718,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_028607.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:15 chapoton]:\n> The patch must be rebased on a recent version.\n\nI've attached new patch.  \n\nI hope it can be reviewed before this has to be done again.",
+    "body": "Attachment [trac_3979_power_series_substitution_rev3.patch](tarball://root/attachments/some-uuid/ticket3979/trac_3979_power_series_substitution_rev3.patch) by fwclarke created at 2012-08-26 21:51:30\n\nReplying to [comment:15 chapoton]:\n> The patch must be rebased on a recent version.\n\nI've attached new patch.  \n\nI hope it can be reviewed before this has to be done again.",
     "created_at": "2012-08-26T21:51:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3979",
     "type": "issue_comment",
@@ -727,7 +727,7 @@ archive/issue_comments_028607.json:
 }
 ```
 
-Attachment
+Attachment [trac_3979_power_series_substitution_rev3.patch](tarball://root/attachments/some-uuid/ticket3979/trac_3979_power_series_substitution_rev3.patch) by fwclarke created at 2012-08-26 21:51:30
 
 Replying to [comment:15 chapoton]:
 > The patch must be rebased on a recent version.
@@ -821,7 +821,7 @@ apply after trac_3979_power_series_substitution_rev4.patch
 archive/issue_comments_028612.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:21 chapoton]:\n> I would like to see, when possible, a more specific error instead of\n> {{{\n> raise ValueError, \"Cannot substitute this value\" \n> }}}\n> In particular, when this is because of negative valuation, one should say it.\n\nA good point.  The new patch (to be applied after trac_3979_power_series_substitution_rev4.patch) gives a more explicit error message.",
+    "body": "Attachment [trac_3979_power_series_substitution_rev4_extra.patch](tarball://root/attachments/some-uuid/ticket3979/trac_3979_power_series_substitution_rev4_extra.patch) by fwclarke created at 2012-08-27 21:45:46\n\nReplying to [comment:21 chapoton]:\n> I would like to see, when possible, a more specific error instead of\n> {{{\n> raise ValueError, \"Cannot substitute this value\" \n> }}}\n> In particular, when this is because of negative valuation, one should say it.\n\nA good point.  The new patch (to be applied after trac_3979_power_series_substitution_rev4.patch) gives a more explicit error message.",
     "created_at": "2012-08-27T21:45:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3979",
     "type": "issue_comment",
@@ -830,7 +830,7 @@ archive/issue_comments_028612.json:
 }
 ```
 
-Attachment
+Attachment [trac_3979_power_series_substitution_rev4_extra.patch](tarball://root/attachments/some-uuid/ticket3979/trac_3979_power_series_substitution_rev4_extra.patch) by fwclarke created at 2012-08-27 21:45:46
 
 Replying to [comment:21 chapoton]:
 > I would like to see, when possible, a more specific error instead of
@@ -848,7 +848,7 @@ A good point.  The new patch (to be applied after trac_3979_power_series_substit
 archive/issue_comments_028613.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3979_power_series_substitution_rev4.patch](tarball://root/attachments/some-uuid/ticket3979/trac_3979_power_series_substitution_rev4.patch) by chapoton created at 2012-09-24 18:56:24",
     "created_at": "2012-09-24T18:56:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3979",
     "type": "issue_comment",
@@ -857,7 +857,7 @@ archive/issue_comments_028613.json:
 }
 ```
 
-Attachment
+Attachment [trac_3979_power_series_substitution_rev4.patch](tarball://root/attachments/some-uuid/ticket3979/trac_3979_power_series_substitution_rev4.patch) by chapoton created at 2012-09-24 18:56:24
 
 
 
@@ -1013,7 +1013,7 @@ Apply after trac_3979_power_series_substitution_rev4_extra.patch
 archive/issue_comments_028619.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3979_power_series_substitution_rev4_supplementary.patch](tarball://root/attachments/some-uuid/ticket3979/trac_3979_power_series_substitution_rev4_supplementary.patch) by fwclarke created at 2012-09-26 17:38:05",
     "created_at": "2012-09-26T17:38:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3979",
     "type": "issue_comment",
@@ -1022,7 +1022,7 @@ archive/issue_comments_028619.json:
 }
 ```
 
-Attachment
+Attachment [trac_3979_power_series_substitution_rev4_supplementary.patch](tarball://root/attachments/some-uuid/ticket3979/trac_3979_power_series_substitution_rev4_supplementary.patch) by fwclarke created at 2012-09-26 17:38:05
 
 
 
@@ -1049,7 +1049,7 @@ Apply only this patch
 archive/issue_comments_028621.json:
 ```json
 {
-    "body": "Attachment\n\nThe patchbot tried (and failed) to apply only patches 2 and 3 out of three\n\nSo I have merged them all into one patch.  Hope this works.",
+    "body": "Attachment [trac_3979_power_series_substitution_rev5.patch](tarball://root/attachments/some-uuid/ticket3979/trac_3979_power_series_substitution_rev5.patch) by fwclarke created at 2012-09-27 12:10:29\n\nThe patchbot tried (and failed) to apply only patches 2 and 3 out of three\n\nSo I have merged them all into one patch.  Hope this works.",
     "created_at": "2012-09-27T12:10:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3979",
     "type": "issue_comment",
@@ -1058,7 +1058,7 @@ archive/issue_comments_028621.json:
 }
 ```
 
-Attachment
+Attachment [trac_3979_power_series_substitution_rev5.patch](tarball://root/attachments/some-uuid/ticket3979/trac_3979_power_series_substitution_rev5.patch) by fwclarke created at 2012-09-27 12:10:29
 
 The patchbot tried (and failed) to apply only patches 2 and 3 out of three
 

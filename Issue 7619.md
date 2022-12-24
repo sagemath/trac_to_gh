@@ -168,7 +168,7 @@ Forget about this patch!
 archive/issue_comments_065114.json:
 ```json
 {
-    "body": "Attachment\n\nDepends on #7520.",
+    "body": "Attachment [trac_7619_pickle_for_FiniteWord_iter_callable-sl.patch](tarball://root/attachments/some-uuid/ticket7619/trac_7619_pickle_for_FiniteWord_iter_callable-sl.patch) by slabbe created at 2010-02-25 10:59:01\n\nDepends on #7520.",
     "created_at": "2010-02-25T10:59:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7619",
     "type": "issue_comment",
@@ -177,7 +177,7 @@ archive/issue_comments_065114.json:
 }
 ```
 
-Attachment
+Attachment [trac_7619_pickle_for_FiniteWord_iter_callable-sl.patch](tarball://root/attachments/some-uuid/ticket7619/trac_7619_pickle_for_FiniteWord_iter_callable-sl.patch) by slabbe created at 2010-02-25 10:59:01
 
 Depends on #7520.
 

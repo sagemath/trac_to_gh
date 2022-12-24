@@ -46,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6804
 archive/issue_comments_056025.json:
 ```json
 {
-    "body": "Attachment\n\nFix the docstring.",
+    "body": "Attachment [sage-trac_6804.patch](tarball://root/attachments/some-uuid/ticket6804/sage-trac_6804.patch) by mjo created at 2012-01-09 05:24:49\n\nFix the docstring.",
     "created_at": "2012-01-09T05:24:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6804",
     "type": "issue_comment",
@@ -55,7 +55,7 @@ archive/issue_comments_056025.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac_6804.patch](tarball://root/attachments/some-uuid/ticket6804/sage-trac_6804.patch) by mjo created at 2012-01-09 05:24:49
 
 Fix the docstring.
 

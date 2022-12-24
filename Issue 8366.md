@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8366
 archive/issue_comments_074777.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-8366-label-filled-contours.patch](tarball://root/attachments/some-uuid/ticket8366/trac-8366-label-filled-contours.patch) by jason created at 2010-02-25 17:25:45",
     "created_at": "2010-02-25T17:25:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8366",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_074777.json:
 }
 ```
 
-Attachment
+Attachment [trac-8366-label-filled-contours.patch](tarball://root/attachments/some-uuid/ticket8366/trac-8366-label-filled-contours.patch) by jason created at 2010-02-25 17:25:45
 
 
 
@@ -105,7 +105,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_074781.json:
 ```json
 {
-    "body": "Attachment\n\nWorks as advertaised, but region_plot gives error after installing this patch.\n\n```\nsage: x,y=var('x y')\nsage: region_plot(cos(x^2+y^2) <= 0, (x, -3, 3), (y, -3, 3))\n\nTraceback (click to the left of this block for traceback)\n...\nKeyError: 'linewidths'\n```\n\n\ndid you try this?\n\n```\n./sage -t devel/sage/sage/plot/contour_plot.py\n```\n\n\nMy patch fixes long lines (which make help for contour_plot too wide for typical screen) and split contour_plot exmaples into groups (this allows to try commands immediatelly when reading live reference manual).\n\nOne suggestion: could we set label_colors to something resonable (gray? red? blue?) when both fill and labels are True, but label_color is not specified?",
+    "body": "Attachment [trac-8366-fixed-docstrings.patch](tarball://root/attachments/some-uuid/ticket8366/trac-8366-fixed-docstrings.patch) by robert.marik created at 2010-03-04 16:33:22\n\nWorks as advertaised, but region_plot gives error after installing this patch.\n\n```\nsage: x,y=var('x y')\nsage: region_plot(cos(x^2+y^2) <= 0, (x, -3, 3), (y, -3, 3))\n\nTraceback (click to the left of this block for traceback)\n...\nKeyError: 'linewidths'\n```\n\n\ndid you try this?\n\n```\n./sage -t devel/sage/sage/plot/contour_plot.py\n```\n\n\nMy patch fixes long lines (which make help for contour_plot too wide for typical screen) and split contour_plot exmaples into groups (this allows to try commands immediatelly when reading live reference manual).\n\nOne suggestion: could we set label_colors to something resonable (gray? red? blue?) when both fill and labels are True, but label_color is not specified?",
     "created_at": "2010-03-04T16:33:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8366",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_074781.json:
 }
 ```
 
-Attachment
+Attachment [trac-8366-fixed-docstrings.patch](tarball://root/attachments/some-uuid/ticket8366/trac-8366-fixed-docstrings.patch) by robert.marik created at 2010-03-04 16:33:22
 
 Works as advertaised, but region_plot gives error after installing this patch.
 
@@ -185,7 +185,7 @@ I'm afraid I would get in trouble with our (wonderfully!) picky release manager 
 archive/issue_comments_074784.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of previous patches",
+    "body": "Attachment [trac-8366-fix-code.patch](tarball://root/attachments/some-uuid/ticket8366/trac-8366-fix-code.patch) by jason created at 2010-04-15 03:26:51\n\napply on top of previous patches",
     "created_at": "2010-04-15T03:26:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8366",
     "type": "issue_comment",
@@ -194,7 +194,7 @@ archive/issue_comments_074784.json:
 }
 ```
 
-Attachment
+Attachment [trac-8366-fix-code.patch](tarball://root/attachments/some-uuid/ticket8366/trac-8366-fix-code.patch) by jason created at 2010-04-15 03:26:51
 
 apply on top of previous patches
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4104
 archive/issue_comments_029717.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [plot_slope_field.patch](tarball://root/attachments/some-uuid/ticket4104/plot_slope_field.patch) by jason created at 2008-09-12 04:16:01",
     "created_at": "2008-09-12T04:16:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4104",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_029717.json:
 }
 ```
 
-Attachment
+Attachment [plot_slope_field.patch](tarball://root/attachments/some-uuid/ticket4104/plot_slope_field.patch) by jason created at 2008-09-12 04:16:01
 
 
 

@@ -88,7 +88,7 @@ Argument types given: RngIntElt, BoolElt
 archive/issue_comments_006195.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:2 cwitty]:\n> Wouldn't that break `magma(25).is_zero()`?\n\nYou are right and thus I updated the patch:\n\n\n```\nsage: magma(9).is_zero()\nFalse\nsage: magma(0).is_zero()\nTrue\nsage: magma('false').bool()\nFalse\nsage: bool(magma(9).IsPrime())\nFalse\nsage: bool(magma(7).IsPrime())\nTrue\n```\n",
+    "body": "Attachment [magma_nonzero.patch](tarball://root/attachments/some-uuid/ticket1011/magma_nonzero.patch) by malb created at 2007-10-30 16:28:25\n\nReplying to [comment:2 cwitty]:\n> Wouldn't that break `magma(25).is_zero()`?\n\nYou are right and thus I updated the patch:\n\n\n```\nsage: magma(9).is_zero()\nFalse\nsage: magma(0).is_zero()\nTrue\nsage: magma('false').bool()\nFalse\nsage: bool(magma(9).IsPrime())\nFalse\nsage: bool(magma(7).IsPrime())\nTrue\n```\n",
     "created_at": "2007-10-30T16:28:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1011",
     "type": "issue_comment",
@@ -97,7 +97,7 @@ archive/issue_comments_006195.json:
 }
 ```
 
-Attachment
+Attachment [magma_nonzero.patch](tarball://root/attachments/some-uuid/ticket1011/magma_nonzero.patch) by malb created at 2007-10-30 16:28:25
 
 Replying to [comment:2 cwitty]:
 > Wouldn't that break `magma(25).is_zero()`?

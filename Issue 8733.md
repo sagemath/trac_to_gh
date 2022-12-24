@@ -67,7 +67,7 @@ Changing status from new to needs_review.
 archive/issue_comments_079823.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8733-cgraph-cleanup.patch](tarball://root/attachments/some-uuid/ticket8733/trac_8733-cgraph-cleanup.patch) by mvngu created at 2010-04-23 02:57:28",
     "created_at": "2010-04-23T02:57:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8733",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_079823.json:
 }
 ```
 
-Attachment
+Attachment [trac_8733-cgraph-cleanup.patch](tarball://root/attachments/some-uuid/ticket8733/trac_8733-cgraph-cleanup.patch) by mvngu created at 2010-04-23 02:57:28
 
 
 

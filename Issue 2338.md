@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2338
 archive/issue_comments_015630.json:
 ```json
 {
-    "body": "Attachment\n\nA doctest needs to be added to this.",
+    "body": "Attachment [lexLmDeg.patch](tarball://root/attachments/some-uuid/ticket2338/lexLmDeg.patch) by mhansen created at 2008-02-27 23:44:32\n\nA doctest needs to be added to this.",
     "created_at": "2008-02-27T23:44:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2338",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_015630.json:
 }
 ```
 
-Attachment
+Attachment [lexLmDeg.patch](tarball://root/attachments/some-uuid/ticket2338/lexLmDeg.patch) by mhansen created at 2008-02-27 23:44:32
 
 A doctest needs to be added to this.
 
@@ -53,7 +53,7 @@ A doctest needs to be added to this.
 archive/issue_comments_015631.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [lexLmDeg_doctest.patch](tarball://root/attachments/some-uuid/ticket2338/lexLmDeg_doctest.patch) by malb created at 2008-02-28 00:17:24",
     "created_at": "2008-02-28T00:17:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2338",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_015631.json:
 }
 ```
 
-Attachment
+Attachment [lexLmDeg_doctest.patch](tarball://root/attachments/some-uuid/ticket2338/lexLmDeg_doctest.patch) by malb created at 2008-02-28 00:17:24
 
 
 

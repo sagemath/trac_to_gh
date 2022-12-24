@@ -126,7 +126,7 @@ Changing status from new to assigned.
 archive/issue_comments_006046.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch fixes this issue for me.",
+    "body": "Attachment [trac_991.patch](tarball://root/attachments/some-uuid/ticket991/trac_991.patch) by malb created at 2007-11-17 17:21:29\n\nThe attached patch fixes this issue for me.",
     "created_at": "2007-11-17T17:21:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/991",
     "type": "issue_comment",
@@ -135,7 +135,7 @@ archive/issue_comments_006046.json:
 }
 ```
 
-Attachment
+Attachment [trac_991.patch](tarball://root/attachments/some-uuid/ticket991/trac_991.patch) by malb created at 2007-11-17 17:21:29
 
 The attached patch fixes this issue for me.
 
@@ -164,7 +164,7 @@ Changing assignee from was to malb.
 archive/issue_comments_006048.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me, probably.  It's just a format issue anyways.",
+    "body": "Attachment [trac_991_doctest.patch](tarball://root/attachments/some-uuid/ticket991/trac_991_doctest.patch) by was created at 2007-11-20 15:33:24\n\nLooks good to me, probably.  It's just a format issue anyways.",
     "created_at": "2007-11-20T15:33:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/991",
     "type": "issue_comment",
@@ -173,7 +173,7 @@ archive/issue_comments_006048.json:
 }
 ```
 
-Attachment
+Attachment [trac_991_doctest.patch](tarball://root/attachments/some-uuid/ticket991/trac_991_doctest.patch) by was created at 2007-11-20 15:33:24
 
 Looks good to me, probably.  It's just a format issue anyways.
 

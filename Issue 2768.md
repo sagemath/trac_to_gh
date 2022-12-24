@@ -149,7 +149,7 @@ sage: sage: %timeit f(xin,yin)
 archive/issue_comments_019016.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-2768-fast-float-cmp.patch](tarball://root/attachments/some-uuid/ticket2768/trac-2768-fast-float-cmp.patch) by jason created at 2008-04-02 06:53:15",
     "created_at": "2008-04-02T06:53:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2768",
     "type": "issue_comment",
@@ -158,7 +158,7 @@ archive/issue_comments_019016.json:
 }
 ```
 
-Attachment
+Attachment [trac-2768-fast-float-cmp.patch](tarball://root/attachments/some-uuid/ticket2768/trac-2768-fast-float-cmp.patch) by jason created at 2008-04-02 06:53:15
 
 
 
@@ -295,7 +295,7 @@ Apply instead of the previous patch
 archive/issue_comments_019023.json:
 ```json
 {
-    "body": "Attachment\n\nI updated the patch to remove the code in equations.py, per Robert's request.  Eventually it would be nice to have a SymbolicProposition class or something like that that would allow for easy characteristic functions (using this code to efficiently test for set membership up to certain numerical precision).",
+    "body": "Attachment [trac-2768-fast-float-cmp-2.patch](tarball://root/attachments/some-uuid/ticket2768/trac-2768-fast-float-cmp-2.patch) by jason created at 2008-05-06 23:45:37\n\nI updated the patch to remove the code in equations.py, per Robert's request.  Eventually it would be nice to have a SymbolicProposition class or something like that that would allow for easy characteristic functions (using this code to efficiently test for set membership up to certain numerical precision).",
     "created_at": "2008-05-06T23:45:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2768",
     "type": "issue_comment",
@@ -304,7 +304,7 @@ archive/issue_comments_019023.json:
 }
 ```
 
-Attachment
+Attachment [trac-2768-fast-float-cmp-2.patch](tarball://root/attachments/some-uuid/ticket2768/trac-2768-fast-float-cmp-2.patch) by jason created at 2008-05-06 23:45:37
 
 I updated the patch to remove the code in equations.py, per Robert's request.  Eventually it would be nice to have a SymbolicProposition class or something like that that would allow for easy characteristic functions (using this code to efficiently test for set membership up to certain numerical precision).
 

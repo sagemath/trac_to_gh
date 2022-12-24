@@ -56,7 +56,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8029
 archive/issue_comments_070129.json:
 ```json
 {
-    "body": "Attachment\n\nAdd a doctest from the description",
+    "body": "Attachment [sage-trac_8029.patch](tarball://root/attachments/some-uuid/ticket8029/sage-trac_8029.patch) by mjo created at 2011-12-16 06:15:48\n\nAdd a doctest from the description",
     "created_at": "2011-12-16T06:15:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8029",
     "type": "issue_comment",
@@ -65,7 +65,7 @@ archive/issue_comments_070129.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac_8029.patch](tarball://root/attachments/some-uuid/ticket8029/sage-trac_8029.patch) by mjo created at 2011-12-16 06:15:48
 
 Add a doctest from the description
 

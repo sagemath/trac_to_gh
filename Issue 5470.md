@@ -85,7 +85,7 @@ Michael
 archive/issue_comments_042451.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-5470.patch](tarball://root/attachments/some-uuid/ticket5470/sage-5470.patch) by cswiercz created at 2009-03-10 21:39:11",
     "created_at": "2009-03-10T21:39:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5470",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_042451.json:
 }
 ```
 
-Attachment
+Attachment [sage-5470.patch](tarball://root/attachments/some-uuid/ticket5470/sage-5470.patch) by cswiercz created at 2009-03-10 21:39:11
 
 
 
@@ -150,7 +150,7 @@ one only does this if one is making an new package (directory).
 archive/issue_comments_042454.json:
 ```json
 {
-    "body": "Attachment\n\nApply in the following order:\n\n`sage-5470.patch`\n\n`sage-5470-part2.patch`",
+    "body": "Attachment [sage-5470-part2.patch](tarball://root/attachments/some-uuid/ticket5470/sage-5470-part2.patch) by cswiercz created at 2009-03-30 21:29:50\n\nApply in the following order:\n\n`sage-5470.patch`\n\n`sage-5470-part2.patch`",
     "created_at": "2009-03-30T21:29:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5470",
     "type": "issue_comment",
@@ -159,7 +159,7 @@ archive/issue_comments_042454.json:
 }
 ```
 
-Attachment
+Attachment [sage-5470-part2.patch](tarball://root/attachments/some-uuid/ticket5470/sage-5470-part2.patch) by cswiercz created at 2009-03-30 21:29:50
 
 Apply in the following order:
 

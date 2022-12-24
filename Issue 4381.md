@@ -192,7 +192,7 @@ After applying the patch to sage-3.2.1.alpha0:
 archive/issue_comments_032237.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4381.patch](tarball://root/attachments/some-uuid/ticket4381/trac_4381.patch) by mhansen created at 2008-11-26 00:19:37",
     "created_at": "2008-11-26T00:19:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4381",
     "type": "issue_comment",
@@ -201,7 +201,7 @@ archive/issue_comments_032237.json:
 }
 ```
 
-Attachment
+Attachment [trac_4381.patch](tarball://root/attachments/some-uuid/ticket4381/trac_4381.patch) by mhansen created at 2008-11-26 00:19:37
 
 
 

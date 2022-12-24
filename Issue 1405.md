@@ -55,7 +55,7 @@ Resolution: fixed
 archive/issue_comments_009069.json:
 ```json
 {
-    "body": "Attachment\n\nMerged in 2.9.alpha0.",
+    "body": "Attachment [cremona-20071124.p2-gcc-4.3-build-fixes.patch](tarball://root/attachments/some-uuid/ticket1405/cremona-20071124.p2-gcc-4.3-build-fixes.patch) by mabshoff created at 2007-12-06 02:07:59\n\nMerged in 2.9.alpha0.",
     "created_at": "2007-12-06T02:07:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1405",
     "type": "issue_comment",
@@ -64,6 +64,6 @@ archive/issue_comments_009069.json:
 }
 ```
 
-Attachment
+Attachment [cremona-20071124.p2-gcc-4.3-build-fixes.patch](tarball://root/attachments/some-uuid/ticket1405/cremona-20071124.p2-gcc-4.3-build-fixes.patch) by mabshoff created at 2007-12-06 02:07:59
 
 Merged in 2.9.alpha0.

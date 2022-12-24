@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3591
 archive/issue_comments_025375.json:
 ```json
 {
-    "body": "Attachment\n\nAlso removed \"child_logout = Logout()\" from Toplevel resource because it's already in UserToplevel and anonymous users can't logout anyways.",
+    "body": "Attachment [sage-3591.patch](tarball://root/attachments/some-uuid/ticket3591/sage-3591.patch) by TimothyClemans created at 2008-07-07 22:01:41\n\nAlso removed \"child_logout = Logout()\" from Toplevel resource because it's already in UserToplevel and anonymous users can't logout anyways.",
     "created_at": "2008-07-07T22:01:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3591",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_025375.json:
 }
 ```
 
-Attachment
+Attachment [sage-3591.patch](tarball://root/attachments/some-uuid/ticket3591/sage-3591.patch) by TimothyClemans created at 2008-07-07 22:01:41
 
 Also removed "child_logout = Logout()" from Toplevel resource because it's already in UserToplevel and anonymous users can't logout anyways.
 

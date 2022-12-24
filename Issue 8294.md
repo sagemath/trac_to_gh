@@ -50,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8294
 archive/issue_comments_073478.json:
 ```json
 {
-    "body": "Attachment\n\nShould be ready for review.\n\nFlorent",
+    "body": "Attachment [trac_8294-matrix_2x2_copy_mutability_fix-fh.patch](tarball://root/attachments/some-uuid/ticket8294/trac_8294-matrix_2x2_copy_mutability_fix-fh.patch) by hivert created at 2010-02-17 15:41:33\n\nShould be ready for review.\n\nFlorent",
     "created_at": "2010-02-17T15:41:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8294",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_073478.json:
 }
 ```
 
-Attachment
+Attachment [trac_8294-matrix_2x2_copy_mutability_fix-fh.patch](tarball://root/attachments/some-uuid/ticket8294/trac_8294-matrix_2x2_copy_mutability_fix-fh.patch) by hivert created at 2010-02-17 15:41:33
 
 Should be ready for review.
 

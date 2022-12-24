@@ -189,7 +189,7 @@ Michael
 archive/issue_comments_040350.json:
 ```json
 {
-    "body": "Attachment\n\nI've posted a rebased patch against 3.3.rc1.",
+    "body": "Attachment [trac_5257.patch](tarball://root/attachments/some-uuid/ticket5257/trac_5257.patch) by mhansen created at 2009-02-19 11:42:32\n\nI've posted a rebased patch against 3.3.rc1.",
     "created_at": "2009-02-19T11:42:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5257",
     "type": "issue_comment",
@@ -198,7 +198,7 @@ archive/issue_comments_040350.json:
 }
 ```
 
-Attachment
+Attachment [trac_5257.patch](tarball://root/attachments/some-uuid/ticket5257/trac_5257.patch) by mhansen created at 2009-02-19 11:42:32
 
 I've posted a rebased patch against 3.3.rc1.
 

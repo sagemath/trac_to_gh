@@ -788,7 +788,7 @@ Anne
 archive/issue_comments_053891.json:
 ```json
 {
-    "body": "Attachment\n\nThis contains the user-readable diff. Do not apply!",
+    "body": "Attachment [trac_6588-categories-root_systems-nt-before-reindentation.patch](tarball://root/attachments/some-uuid/ticket6588/trac_6588-categories-root_systems-nt-before-reindentation.patch) by nthiery created at 2012-03-12 22:15:36\n\nThis contains the user-readable diff. Do not apply!",
     "created_at": "2012-03-12T22:15:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6588",
     "type": "issue_comment",
@@ -797,7 +797,7 @@ archive/issue_comments_053891.json:
 }
 ```
 
-Attachment
+Attachment [trac_6588-categories-root_systems-nt-before-reindentation.patch](tarball://root/attachments/some-uuid/ticket6588/trac_6588-categories-root_systems-nt-before-reindentation.patch) by nthiery created at 2012-03-12 22:15:36
 
 This contains the user-readable diff. Do not apply!
 
@@ -1478,7 +1478,7 @@ Ok, it was in root_lattice_realizations. At this occasion, Anne and myself spott
 archive/issue_comments_053918.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [latest_change.patch](tarball://root/attachments/some-uuid/ticket6588/latest_change.patch) by nthiery created at 2012-03-19 20:41:58",
     "created_at": "2012-03-19T20:41:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6588",
     "type": "issue_comment",
@@ -1487,7 +1487,7 @@ archive/issue_comments_053918.json:
 }
 ```
 
-Attachment
+Attachment [latest_change.patch](tarball://root/attachments/some-uuid/ticket6588/latest_change.patch) by nthiery created at 2012-03-19 20:41:58
 
 
 
@@ -1534,7 +1534,7 @@ I finished my patch on \NN: this is #12717
 archive/issue_comments_053921.json:
 ```json
 {
-    "body": "Attachment\n\nApply this one (identical to the other, but renames and reindents two files; thus unreadable)",
+    "body": "Attachment [trac_6588-categories-root_systems-nt.patch](tarball://root/attachments/some-uuid/ticket6588/trac_6588-categories-root_systems-nt.patch) by jdemeyer created at 2012-03-23 13:11:06\n\nApply this one (identical to the other, but renames and reindents two files; thus unreadable)",
     "created_at": "2012-03-23T13:11:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6588",
     "type": "issue_comment",
@@ -1543,7 +1543,7 @@ archive/issue_comments_053921.json:
 }
 ```
 
-Attachment
+Attachment [trac_6588-categories-root_systems-nt.patch](tarball://root/attachments/some-uuid/ticket6588/trac_6588-categories-root_systems-nt.patch) by jdemeyer created at 2012-03-23 13:11:06
 
 Apply this one (identical to the other, but renames and reindents two files; thus unreadable)
 

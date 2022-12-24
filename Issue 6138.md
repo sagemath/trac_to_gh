@@ -55,7 +55,7 @@ Changing status from new to needs_review.
 archive/issue_comments_049015.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [categories-symmetric_group_algebra-6138-nt.patch](tarball://root/attachments/some-uuid/ticket6138/categories-symmetric_group_algebra-6138-nt.patch) by hivert created at 2009-10-16 11:10:33",
     "created_at": "2009-10-16T11:10:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6138",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_049015.json:
 }
 ```
 
-Attachment
+Attachment [categories-symmetric_group_algebra-6138-nt.patch](tarball://root/attachments/some-uuid/ticket6138/categories-symmetric_group_algebra-6138-nt.patch) by hivert created at 2009-10-16 11:10:33
 
 
 
@@ -166,7 +166,7 @@ Resolution: fixed
 archive/issue_comments_049021.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6138-categories-symmetric_group_algebra-6138-nt.patch](tarball://root/attachments/some-uuid/ticket6138/trac_6138-categories-symmetric_group_algebra-6138-nt.patch) by mhansen created at 2009-11-19 17:00:03",
     "created_at": "2009-11-19T17:00:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6138",
     "type": "issue_comment",
@@ -175,4 +175,4 @@ archive/issue_comments_049021.json:
 }
 ```
 
-Attachment
+Attachment [trac_6138-categories-symmetric_group_algebra-6138-nt.patch](tarball://root/attachments/some-uuid/ticket6138/trac_6138-categories-symmetric_group_algebra-6138-nt.patch) by mhansen created at 2009-11-19 17:00:03

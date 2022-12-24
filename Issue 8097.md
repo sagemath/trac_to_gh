@@ -47,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8097
 archive/issue_comments_071034.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [termcap-1.3.1.p1.patch](tarball://root/attachments/some-uuid/ticket8097/termcap-1.3.1.p1.patch) by jsp created at 2010-01-27 20:59:38",
     "created_at": "2010-01-27T20:59:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8097",
     "type": "issue_comment",
@@ -56,7 +56,7 @@ archive/issue_comments_071034.json:
 }
 ```
 
-Attachment
+Attachment [termcap-1.3.1.p1.patch](tarball://root/attachments/some-uuid/ticket8097/termcap-1.3.1.p1.patch) by jsp created at 2010-01-27 20:59:38
 
 
 
@@ -208,7 +208,7 @@ Sorry, I did not mean to offend by putting the same comment more than once.
 archive/issue_comments_071041.json:
 ```json
 {
-    "body": "Attachment\n\nChanged SPKG.txt to reflect the comments from David.\n\nNo change of patch level applied.\n\n[http://boxen.math.washington.edu/home/jsp/ports/termcap-1.3.1.p1.spkg](http://boxen.math.washington.edu/home/jsp/ports/termcap-1.3.1.p1.spkg)\n\ntermcap only builds a static library local/lib/libtermcap.a containing\n\n64 bit *.o files (I double checked that).\n\nJaap",
+    "body": "Attachment [termcap-1.3.1.p1+.patch](tarball://root/attachments/some-uuid/ticket8097/termcap-1.3.1.p1+.patch) by jsp created at 2010-01-28 13:49:30\n\nChanged SPKG.txt to reflect the comments from David.\n\nNo change of patch level applied.\n\n[http://boxen.math.washington.edu/home/jsp/ports/termcap-1.3.1.p1.spkg](http://boxen.math.washington.edu/home/jsp/ports/termcap-1.3.1.p1.spkg)\n\ntermcap only builds a static library local/lib/libtermcap.a containing\n\n64 bit *.o files (I double checked that).\n\nJaap",
     "created_at": "2010-01-28T13:49:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8097",
     "type": "issue_comment",
@@ -217,7 +217,7 @@ archive/issue_comments_071041.json:
 }
 ```
 
-Attachment
+Attachment [termcap-1.3.1.p1+.patch](tarball://root/attachments/some-uuid/ticket8097/termcap-1.3.1.p1+.patch) by jsp created at 2010-01-28 13:49:30
 
 Changed SPKG.txt to reflect the comments from David.
 

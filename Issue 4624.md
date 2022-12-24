@@ -124,7 +124,7 @@ Michael
 archive/issue_comments_034778.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [scripts-4624.patch](tarball://root/attachments/some-uuid/ticket4624/scripts-4624.patch) by was created at 2008-11-27 01:35:10",
     "created_at": "2008-11-27T01:35:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4624",
     "type": "issue_comment",
@@ -133,7 +133,7 @@ archive/issue_comments_034778.json:
 }
 ```
 
-Attachment
+Attachment [scripts-4624.patch](tarball://root/attachments/some-uuid/ticket4624/scripts-4624.patch) by was created at 2008-11-27 01:35:10
 
 
 
@@ -142,7 +142,7 @@ Attachment
 archive/issue_comments_034779.json:
 ```json
 {
-    "body": "Attachment\n\nWith the second patch this is good to go.\n\nCheers,\n\nMichael",
+    "body": "Attachment [scripts-4624-part2.patch](tarball://root/attachments/some-uuid/ticket4624/scripts-4624-part2.patch) by mabshoff created at 2008-11-27 01:41:24\n\nWith the second patch this is good to go.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-27T01:41:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4624",
     "type": "issue_comment",
@@ -151,7 +151,7 @@ archive/issue_comments_034779.json:
 }
 ```
 
-Attachment
+Attachment [scripts-4624-part2.patch](tarball://root/attachments/some-uuid/ticket4624/scripts-4624-part2.patch) by mabshoff created at 2008-11-27 01:41:24
 
 With the second patch this is good to go.
 

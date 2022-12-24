@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8691
 archive/issue_comments_079174.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8691_permutation_plainchange_tjb.patch](tarball://root/attachments/some-uuid/ticket8691/8691_permutation_plainchange_tjb.patch) by boothby created at 2010-04-15 22:03:32",
     "created_at": "2010-04-15T22:03:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8691",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_079174.json:
 }
 ```
 
-Attachment
+Attachment [8691_permutation_plainchange_tjb.patch](tarball://root/attachments/some-uuid/ticket8691/8691_permutation_plainchange_tjb.patch) by boothby created at 2010-04-15 22:03:32
 
 
 
@@ -167,7 +167,7 @@ replaces previous
 archive/issue_comments_079181.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8691_permutation_plainchange_tjb_v2.patch](tarball://root/attachments/some-uuid/ticket8691/8691_permutation_plainchange_tjb_v2.patch) by boothby created at 2010-04-28 22:06:18",
     "created_at": "2010-04-28T22:06:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8691",
     "type": "issue_comment",
@@ -176,7 +176,7 @@ archive/issue_comments_079181.json:
 }
 ```
 
-Attachment
+Attachment [8691_permutation_plainchange_tjb_v2.patch](tarball://root/attachments/some-uuid/ticket8691/8691_permutation_plainchange_tjb_v2.patch) by boothby created at 2010-04-28 22:06:18
 
 
 
@@ -221,7 +221,7 @@ replaces all previous
 archive/issue_comments_079184.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated version has changed the filename, and removed reference implementation because there's a better one in `sage/graphs/genus.pyx`.",
+    "body": "Attachment [8691_permutation_plainchange_tjb_v3.patch](tarball://root/attachments/some-uuid/ticket8691/8691_permutation_plainchange_tjb_v3.patch) by boothby created at 2010-05-21 21:35:02\n\nUpdated version has changed the filename, and removed reference implementation because there's a better one in `sage/graphs/genus.pyx`.",
     "created_at": "2010-05-21T21:35:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8691",
     "type": "issue_comment",
@@ -230,7 +230,7 @@ archive/issue_comments_079184.json:
 }
 ```
 
-Attachment
+Attachment [8691_permutation_plainchange_tjb_v3.patch](tarball://root/attachments/some-uuid/ticket8691/8691_permutation_plainchange_tjb_v3.patch) by boothby created at 2010-05-21 21:35:02
 
 Updated version has changed the filename, and removed reference implementation because there's a better one in `sage/graphs/genus.pyx`.
 
@@ -313,7 +313,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_079189.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8691_permutation_plainchange_tjb_v3_part2.patch](tarball://root/attachments/some-uuid/ticket8691/8691_permutation_plainchange_tjb_v3_part2.patch) by boothby created at 2010-05-22 03:55:58",
     "created_at": "2010-05-22T03:55:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8691",
     "type": "issue_comment",
@@ -322,7 +322,7 @@ archive/issue_comments_079189.json:
 }
 ```
 
-Attachment
+Attachment [8691_permutation_plainchange_tjb_v3_part2.patch](tarball://root/attachments/some-uuid/ticket8691/8691_permutation_plainchange_tjb_v3_part2.patch) by boothby created at 2010-05-22 03:55:58
 
 
 

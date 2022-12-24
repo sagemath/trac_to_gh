@@ -355,7 +355,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2814
 archive/issue_comments_019318.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac2814-gap-random-endianness.patch](tarball://root/attachments/some-uuid/ticket2814/trac2814-gap-random-endianness.patch) by cwitty created at 2008-04-10 02:58:39",
     "created_at": "2008-04-10T02:58:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2814",
     "type": "issue_comment",
@@ -364,7 +364,7 @@ archive/issue_comments_019318.json:
 }
 ```
 
-Attachment
+Attachment [trac2814-gap-random-endianness.patch](tarball://root/attachments/some-uuid/ticket2814/trac2814-gap-random-endianness.patch) by cwitty created at 2008-04-10 02:58:39
 
 
 

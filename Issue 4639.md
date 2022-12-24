@@ -323,7 +323,7 @@ I think I can dig further, this is just as far as I got last night. It's probabl
 archive/issue_comments_034903.json:
 ```json
 {
-    "body": "Attachment\n\nthis fixes the leak in coerce, not in exponentiation",
+    "body": "Attachment [4639-coerce-leak.patch](tarball://root/attachments/some-uuid/ticket4639/4639-coerce-leak.patch) by robertwb created at 2008-12-02 22:25:18\n\nthis fixes the leak in coerce, not in exponentiation",
     "created_at": "2008-12-02T22:25:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4639",
     "type": "issue_comment",
@@ -332,7 +332,7 @@ archive/issue_comments_034903.json:
 }
 ```
 
-Attachment
+Attachment [4639-coerce-leak.patch](tarball://root/attachments/some-uuid/ticket4639/4639-coerce-leak.patch) by robertwb created at 2008-12-02 22:25:18
 
 this fixes the leak in coerce, not in exponentiation
 
@@ -870,7 +870,7 @@ Therefore it seems to me that the problem is not exponentiation but a failure in
 archive/issue_comments_034921.json:
 ```json
 {
-    "body": "Attachment\n\nI believe I have located and resolved the issue. After tracing through all kinds of coercion and homset code, and reading tons of Cython code looking for memory leaks, it turns out that this was caused by all Parents ever created being cached due to old debugging code. (Wow, wish I'd looked there first! :)\n\nSome old, unnecessary code has been removed from the generic __call__ method as well.",
+    "body": "Attachment [4639-parent-memleak.patch](tarball://root/attachments/some-uuid/ticket4639/4639-parent-memleak.patch) by robertwb created at 2008-12-16 20:29:23\n\nI believe I have located and resolved the issue. After tracing through all kinds of coercion and homset code, and reading tons of Cython code looking for memory leaks, it turns out that this was caused by all Parents ever created being cached due to old debugging code. (Wow, wish I'd looked there first! :)\n\nSome old, unnecessary code has been removed from the generic __call__ method as well.",
     "created_at": "2008-12-16T20:29:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4639",
     "type": "issue_comment",
@@ -879,7 +879,7 @@ archive/issue_comments_034921.json:
 }
 ```
 
-Attachment
+Attachment [4639-parent-memleak.patch](tarball://root/attachments/some-uuid/ticket4639/4639-parent-memleak.patch) by robertwb created at 2008-12-16 20:29:23
 
 I believe I have located and resolved the issue. After tracing through all kinds of coercion and homset code, and reading tons of Cython code looking for memory leaks, it turns out that this was caused by all Parents ever created being cached due to old debugging code. (Wow, wish I'd looked there first! :)
 

@@ -53,7 +53,7 @@ Changing status from new to assigned.
 archive/issue_comments_022095.json:
 ```json
 {
-    "body": "Attachment\n\nThe updated spkg can be found at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.3/alpha0/r-2.6.1.p16.spkg\n\nCompile tested on Linux, 32 and 64 bit OSX.\n\nCheers,\n\nMichael",
+    "body": "Attachment [r-2.6.1.p15-spkg-install-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3196/r-2.6.1.p15-spkg-install-64bit-osx.patch) by mabshoff created at 2008-05-28 10:51:13\n\nThe updated spkg can be found at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.3/alpha0/r-2.6.1.p16.spkg\n\nCompile tested on Linux, 32 and 64 bit OSX.\n\nCheers,\n\nMichael",
     "created_at": "2008-05-28T10:51:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3196",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_022095.json:
 }
 ```
 
-Attachment
+Attachment [r-2.6.1.p15-spkg-install-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3196/r-2.6.1.p15-spkg-install-64bit-osx.patch) by mabshoff created at 2008-05-28 10:51:13
 
 The updated spkg can be found at
 

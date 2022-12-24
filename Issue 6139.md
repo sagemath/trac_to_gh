@@ -47,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6139
 archive/issue_comments_049022.json:
 ```json
 {
-    "body": "Attachment\n\nHi Minh, can I ask you to review this?",
+    "body": "Attachment [sbox_call_and_rest.patch](tarball://root/attachments/some-uuid/ticket6139/sbox_call_and_rest.patch) by malb created at 2009-06-02 13:55:11\n\nHi Minh, can I ask you to review this?",
     "created_at": "2009-06-02T13:55:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6139",
     "type": "issue_comment",
@@ -56,7 +56,7 @@ archive/issue_comments_049022.json:
 }
 ```
 
-Attachment
+Attachment [sbox_call_and_rest.patch](tarball://root/attachments/some-uuid/ticket6139/sbox_call_and_rest.patch) by malb created at 2009-06-02 13:55:11
 
 Hi Minh, can I ask you to review this?
 
@@ -89,7 +89,7 @@ Patch applies OK against sage-4.0.1.alpha0, all tests pass even with `-long` opt
 archive/issue_comments_049024.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6139-reviewer.patch](tarball://root/attachments/some-uuid/ticket6139/trac_6139-reviewer.patch) by mvngu created at 2009-06-03 21:17:42",
     "created_at": "2009-06-03T21:17:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6139",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_049024.json:
 }
 ```
 
-Attachment
+Attachment [trac_6139-reviewer.patch](tarball://root/attachments/some-uuid/ticket6139/trac_6139-reviewer.patch) by mvngu created at 2009-06-03 21:17:42
 
 
 

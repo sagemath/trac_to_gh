@@ -80,7 +80,7 @@ Changing status from new to needs_review.
 archive/issue_comments_067088.json:
 ```json
 {
-    "body": "Attachment\n\nWith correected comment about number of command line arguments.",
+    "body": "Attachment [testcc.sh](tarball://root/attachments/some-uuid/ticket7781/testcc.sh) by drkirkby created at 2009-12-31 20:35:16\n\nWith correected comment about number of command line arguments.",
     "created_at": "2009-12-31T20:35:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7781",
     "type": "issue_comment",
@@ -89,7 +89,7 @@ archive/issue_comments_067088.json:
 }
 ```
 
-Attachment
+Attachment [testcc.sh](tarball://root/attachments/some-uuid/ticket7781/testcc.sh) by drkirkby created at 2009-12-31 20:35:16
 
 With correected comment about number of command line arguments.
 

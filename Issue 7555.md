@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7555
 archive/issue_comments_064214.json:
 ```json
 {
-    "body": "Attachment\n\nExperimental Cayley table class, cut/paste into a notebook cell",
+    "body": "Attachment [trac_7555_cayley_table.txt](tarball://root/attachments/some-uuid/ticket7555/trac_7555_cayley_table.txt) by rbeezer created at 2009-11-29 18:57:39\n\nExperimental Cayley table class, cut/paste into a notebook cell",
     "created_at": "2009-11-29T18:57:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_064214.json:
 }
 ```
 
-Attachment
+Attachment [trac_7555_cayley_table.txt](tarball://root/attachments/some-uuid/ticket7555/trac_7555_cayley_table.txt) by rbeezer created at 2009-11-29 18:57:39
 
 Experimental Cayley table class, cut/paste into a notebook cell
 
@@ -155,7 +155,7 @@ It seems a better place to place this is within the categories framework, making
 archive/issue_comments_064220.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7555_operation_table.patch](tarball://root/attachments/some-uuid/ticket7555/trac_7555_operation_table.patch) by rbeezer created at 2010-03-18 04:44:07",
     "created_at": "2010-03-18T04:44:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
@@ -164,7 +164,7 @@ archive/issue_comments_064220.json:
 }
 ```
 
-Attachment
+Attachment [trac_7555_operation_table.patch](tarball://root/attachments/some-uuid/ticket7555/trac_7555_operation_table.patch) by rbeezer created at 2010-03-18 04:44:07
 
 
 
@@ -752,7 +752,7 @@ Illustrates doctest failure
 archive/issue_comments_064229.json:
 ```json
 {
-    "body": "Attachment\n\nIgnore that doctest failure patch - I found the problem.",
+    "body": "Attachment [trac_7555_doctest_failure.patch](tarball://root/attachments/some-uuid/ticket7555/trac_7555_doctest_failure.patch) by rbeezer created at 2010-03-20 18:10:57\n\nIgnore that doctest failure patch - I found the problem.",
     "created_at": "2010-03-20T18:10:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
@@ -761,7 +761,7 @@ archive/issue_comments_064229.json:
 }
 ```
 
-Attachment
+Attachment [trac_7555_doctest_failure.patch](tarball://root/attachments/some-uuid/ticket7555/trac_7555_doctest_failure.patch) by rbeezer created at 2010-03-20 18:10:57
 
 Ignore that doctest failure patch - I found the problem.
 
@@ -790,7 +790,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_064231.json:
 ```json
 {
-    "body": "Attachment\n\nPatch is complete enough to review.\n\n`__getitem__` implemented.\n\nrow_keys/column_keys are the latest name for elements in headings-order.\n\nLeft `translation` dictionary as-is.\n\n`addition_table` is a stub of sorts.  Has a doctest, and so on, but can be much better documented when `IntegerModRing` is settled at #8562.  It'll mostly be a cut/paste job from `multiplication_table` with new examples.  \n\nBut I'd like this to move forward independently, since my time will be limited for a few weeks.",
+    "body": "Attachment [trac_7555_operation_table-categories.patch](tarball://root/attachments/some-uuid/ticket7555/trac_7555_operation_table-categories.patch) by rbeezer created at 2010-03-20 21:25:41\n\nPatch is complete enough to review.\n\n`__getitem__` implemented.\n\nrow_keys/column_keys are the latest name for elements in headings-order.\n\nLeft `translation` dictionary as-is.\n\n`addition_table` is a stub of sorts.  Has a doctest, and so on, but can be much better documented when `IntegerModRing` is settled at #8562.  It'll mostly be a cut/paste job from `multiplication_table` with new examples.  \n\nBut I'd like this to move forward independently, since my time will be limited for a few weeks.",
     "created_at": "2010-03-20T21:25:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
@@ -799,7 +799,7 @@ archive/issue_comments_064231.json:
 }
 ```
 
-Attachment
+Attachment [trac_7555_operation_table-categories.patch](tarball://root/attachments/some-uuid/ticket7555/trac_7555_operation_table-categories.patch) by rbeezer created at 2010-03-20 21:25:41
 
 Patch is complete enough to review.
 
@@ -1268,7 +1268,7 @@ Replaces all the previous ones
 archive/issue_comments_064245.json:
 ```json
 {
-    "body": "Attachment\n\nDone. Diff to previous version on: http://combinat.sagemath.org/hgwebdir.cgi/patches/diff/233de3ecbcb7/trac_7555_operation_table-categories.patch",
+    "body": "Attachment [trac_7555_operation_table-categories.2.patch](tarball://root/attachments/some-uuid/ticket7555/trac_7555_operation_table-categories.2.patch) by nthiery created at 2010-03-23 16:37:54\n\nDone. Diff to previous version on: http://combinat.sagemath.org/hgwebdir.cgi/patches/diff/233de3ecbcb7/trac_7555_operation_table-categories.patch",
     "created_at": "2010-03-23T16:37:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
@@ -1277,7 +1277,7 @@ archive/issue_comments_064245.json:
 }
 ```
 
-Attachment
+Attachment [trac_7555_operation_table-categories.2.patch](tarball://root/attachments/some-uuid/ticket7555/trac_7555_operation_table-categories.2.patch) by nthiery created at 2010-03-23 16:37:54
 
 Done. Diff to previous version on: http://combinat.sagemath.org/hgwebdir.cgi/patches/diff/233de3ecbcb7/trac_7555_operation_table-categories.patch
 
@@ -1396,7 +1396,7 @@ Rob
 archive/issue_comments_064251.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7555_minor-fixups.patch](tarball://root/attachments/some-uuid/ticket7555/trac_7555_minor-fixups.patch) by rbeezer created at 2010-03-24 05:11:20",
     "created_at": "2010-03-24T05:11:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
@@ -1405,7 +1405,7 @@ archive/issue_comments_064251.json:
 }
 ```
 
-Attachment
+Attachment [trac_7555_minor-fixups.patch](tarball://root/attachments/some-uuid/ticket7555/trac_7555_minor-fixups.patch) by rbeezer created at 2010-03-24 05:11:20
 
 
 
@@ -1506,7 +1506,7 @@ free to set a positive review once you have double checked my changes.
 archive/issue_comments_064255.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7555_minor-fixups-nt.patch](tarball://root/attachments/some-uuid/ticket7555/trac_7555_minor-fixups-nt.patch) by nthiery created at 2010-03-24 08:47:45",
     "created_at": "2010-03-24T08:47:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
@@ -1515,7 +1515,7 @@ archive/issue_comments_064255.json:
 }
 ```
 
-Attachment
+Attachment [trac_7555_minor-fixups-nt.patch](tarball://root/attachments/some-uuid/ticket7555/trac_7555_minor-fixups-nt.patch) by nthiery created at 2010-03-24 08:47:45
 
 
 
@@ -1524,7 +1524,7 @@ Attachment
 archive/issue_comments_064256.json:
 ```json
 {
-    "body": "Attachment\n\nApply only this one",
+    "body": "Attachment [trac_7555_operation_table-categories-all-in-one.patch](tarball://root/attachments/some-uuid/ticket7555/trac_7555_operation_table-categories-all-in-one.patch) by nthiery created at 2010-03-24 08:49:27\n\nApply only this one",
     "created_at": "2010-03-24T08:49:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
@@ -1533,7 +1533,7 @@ archive/issue_comments_064256.json:
 }
 ```
 
-Attachment
+Attachment [trac_7555_operation_table-categories-all-in-one.patch](tarball://root/attachments/some-uuid/ticket7555/trac_7555_operation_table-categories-all-in-one.patch) by nthiery created at 2010-03-24 08:49:27
 
 Apply only this one
 

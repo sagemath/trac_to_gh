@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2417
 archive/issue_comments_016300.json:
 ```json
 {
-    "body": "Attachment\n\nThis is due to the fact that discriminants are computed via resultants, using a formula that sometimes divides the resultant by the leading coefficient.  When the coefficients are themselves polynomials, this makes the result appear in the fraction field.\n\nThe fix is very simple: just coerce the result back into the base ring before returning.  This is in the attached patch, together with a couple of typo fixes.  I've also replaced one of the doctests that was supposed to illustrate precisely this behavior (but didn't) with Carl's example.",
+    "body": "Attachment [2417_discriminant.patch](tarball://root/attachments/some-uuid/ticket2417/2417_discriminant.patch) by AlexGhitza created at 2008-03-24 02:16:34\n\nThis is due to the fact that discriminants are computed via resultants, using a formula that sometimes divides the resultant by the leading coefficient.  When the coefficients are themselves polynomials, this makes the result appear in the fraction field.\n\nThe fix is very simple: just coerce the result back into the base ring before returning.  This is in the attached patch, together with a couple of typo fixes.  I've also replaced one of the doctests that was supposed to illustrate precisely this behavior (but didn't) with Carl's example.",
     "created_at": "2008-03-24T02:16:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2417",
     "type": "issue_comment",
@@ -51,7 +51,7 @@ archive/issue_comments_016300.json:
 }
 ```
 
-Attachment
+Attachment [2417_discriminant.patch](tarball://root/attachments/some-uuid/ticket2417/2417_discriminant.patch) by AlexGhitza created at 2008-03-24 02:16:34
 
 This is due to the fact that discriminants are computed via resultants, using a formula that sometimes divides the resultant by the leading coefficient.  When the coefficients are themselves polynomials, this makes the result appear in the fraction field.
 

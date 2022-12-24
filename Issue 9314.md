@@ -263,7 +263,7 @@ It ended up begin an extended night. I'm looking at it right now.
 archive/issue_comments_087758.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9314-latex_mul.patch](tarball://root/attachments/some-uuid/ticket9314/trac_9314-latex_mul.patch) by burcin created at 2010-07-11 16:03:27",
     "created_at": "2010-07-11T16:03:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9314",
     "type": "issue_comment",
@@ -272,7 +272,7 @@ archive/issue_comments_087758.json:
 }
 ```
 
-Attachment
+Attachment [trac_9314-latex_mul.patch](tarball://root/attachments/some-uuid/ticket9314/trac_9314-latex_mul.patch) by burcin created at 2010-07-11 16:03:27
 
 
 

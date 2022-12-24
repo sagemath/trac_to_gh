@@ -46,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1732
 archive/issue_comments_010963.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [block_sum.diff](tarball://root/attachments/some-uuid/ticket1732/block_sum.diff) by robertwb created at 2008-01-09 08:26:09",
     "created_at": "2008-01-09T08:26:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1732",
     "type": "issue_comment",
@@ -55,7 +55,7 @@ archive/issue_comments_010963.json:
 }
 ```
 
-Attachment
+Attachment [block_sum.diff](tarball://root/attachments/some-uuid/ticket1732/block_sum.diff) by robertwb created at 2008-01-09 08:26:09
 
 
 
@@ -64,7 +64,7 @@ Attachment
 archive/issue_comments_010964.json:
 ```json
 {
-    "body": "Attachment\n\nMuch expanded functionality due to discussion at http://www.mail-archive.com/sage-devel`@`googlegroups.com/msg08958.html\n\nSee the docstrings in the patch for many examples.",
+    "body": "Attachment [1732-block-matrix.diff](tarball://root/attachments/some-uuid/ticket1732/1732-block-matrix.diff) by robertwb created at 2008-01-11 03:14:39\n\nMuch expanded functionality due to discussion at http://www.mail-archive.com/sage-devel`@`googlegroups.com/msg08958.html\n\nSee the docstrings in the patch for many examples.",
     "created_at": "2008-01-11T03:14:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1732",
     "type": "issue_comment",
@@ -73,7 +73,7 @@ archive/issue_comments_010964.json:
 }
 ```
 
-Attachment
+Attachment [1732-block-matrix.diff](tarball://root/attachments/some-uuid/ticket1732/1732-block-matrix.diff) by robertwb created at 2008-01-11 03:14:39
 
 Much expanded functionality due to discussion at http://www.mail-archive.com/sage-devel`@`googlegroups.com/msg08958.html
 
@@ -140,7 +140,7 @@ more memory friendly for constant entries
 archive/issue_comments_010968.json:
 ```json
 {
-    "body": "Attachment\n\nJust wanted to point out that this patch works great for me, both for block diagonal matrices and for creating block matrices from lists.",
+    "body": "Attachment [1732-block-matrix-mem.diff](tarball://root/attachments/some-uuid/ticket1732/1732-block-matrix-mem.diff) by dfdeshom created at 2008-01-15 01:40:14\n\nJust wanted to point out that this patch works great for me, both for block diagonal matrices and for creating block matrices from lists.",
     "created_at": "2008-01-15T01:40:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1732",
     "type": "issue_comment",
@@ -149,7 +149,7 @@ archive/issue_comments_010968.json:
 }
 ```
 
-Attachment
+Attachment [1732-block-matrix-mem.diff](tarball://root/attachments/some-uuid/ticket1732/1732-block-matrix-mem.diff) by dfdeshom created at 2008-01-15 01:40:14
 
 Just wanted to point out that this patch works great for me, both for block diagonal matrices and for creating block matrices from lists.
 

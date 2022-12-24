@@ -167,7 +167,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_078356.json:
 ```json
 {
-    "body": "Attachment\n\nscripts repo",
+    "body": "Attachment [trac_8641-sage-test.patch](tarball://root/attachments/some-uuid/ticket8641/trac_8641-sage-test.patch) by jhpalmieri created at 2010-04-13 22:34:25\n\nscripts repo",
     "created_at": "2010-04-13T22:34:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
@@ -176,7 +176,7 @@ archive/issue_comments_078356.json:
 }
 ```
 
-Attachment
+Attachment [trac_8641-sage-test.patch](tarball://root/attachments/some-uuid/ticket8641/trac_8641-sage-test.patch) by jhpalmieri created at 2010-04-13 22:34:25
 
 scripts repo
 
@@ -302,7 +302,7 @@ apply to scripts repo. Replaces previous.
 archive/issue_comments_078362.json:
 ```json
 {
-    "body": "Attachment\n\nThis isn't quite working for me: I get errors if I do \"sage -t -long FILE\".  I'm attaching a patch on top of yours which fixes it for me on my iMac, on sage.math, and on t2 (Solaris).",
+    "body": "Attachment [trac_8641.patch](tarball://root/attachments/some-uuid/ticket8641/trac_8641.patch) by jhpalmieri created at 2010-04-14 03:01:47\n\nThis isn't quite working for me: I get errors if I do \"sage -t -long FILE\".  I'm attaching a patch on top of yours which fixes it for me on my iMac, on sage.math, and on t2 (Solaris).",
     "created_at": "2010-04-14T03:01:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
@@ -311,7 +311,7 @@ archive/issue_comments_078362.json:
 }
 ```
 
-Attachment
+Attachment [trac_8641.patch](tarball://root/attachments/some-uuid/ticket8641/trac_8641.patch) by jhpalmieri created at 2010-04-14 03:01:47
 
 This isn't quite working for me: I get errors if I do "sage -t -long FILE".  I'm attaching a patch on top of yours which fixes it for me on my iMac, on sage.math, and on t2 (Solaris).
 
@@ -340,7 +340,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_078364.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of trac_8641.patch",
+    "body": "Attachment [trac_8641-part2.patch](tarball://root/attachments/some-uuid/ticket8641/trac_8641-part2.patch) by jhpalmieri created at 2010-04-14 03:02:14\n\napply on top of trac_8641.patch",
     "created_at": "2010-04-14T03:02:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
@@ -349,7 +349,7 @@ archive/issue_comments_078364.json:
 }
 ```
 
-Attachment
+Attachment [trac_8641-part2.patch](tarball://root/attachments/some-uuid/ticket8641/trac_8641-part2.patch) by jhpalmieri created at 2010-04-14 03:02:14
 
 apply on top of trac_8641.patch
 
@@ -491,7 +491,7 @@ Combined patch rebased vs 4.4.4.alpha0 + #8891.  Replaces all previous.
 archive/issue_comments_078370.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:13 mpatel]:\n\n> By the way, we may need to rebase these for #8891.\n\nI've attached a [attachment:trac_8641-doctest_exit_codes.patch combined, rebased patch].",
+    "body": "Attachment [trac_8641-doctest_exit_codes.patch](tarball://root/attachments/some-uuid/ticket8641/trac_8641-doctest_exit_codes.patch) by mpatel created at 2010-06-14 09:32:06\n\nReplying to [comment:13 mpatel]:\n\n> By the way, we may need to rebase these for #8891.\n\nI've attached a [attachment:trac_8641-doctest_exit_codes.patch combined, rebased patch].",
     "created_at": "2010-06-14T09:32:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
@@ -500,7 +500,7 @@ archive/issue_comments_078370.json:
 }
 ```
 
-Attachment
+Attachment [trac_8641-doctest_exit_codes.patch](tarball://root/attachments/some-uuid/ticket8641/trac_8641-doctest_exit_codes.patch) by mpatel created at 2010-06-14 09:32:06
 
 Replying to [comment:13 mpatel]:
 
@@ -617,7 +617,7 @@ Should you still want to try, the example in ticket #7993 will trigger one of th
 archive/issue_comments_078375.json:
 ```json
 {
-    "body": "Attachment\n\nModify `sage-ptest`, too.  Apply to 4.4.4.alpha0 + #8891.  Apply only this patch.",
+    "body": "Attachment [trac_8641-doctest_exit_codes.2.patch](tarball://root/attachments/some-uuid/ticket8641/trac_8641-doctest_exit_codes.2.patch) by mpatel created at 2010-06-15 09:25:57\n\nModify `sage-ptest`, too.  Apply to 4.4.4.alpha0 + #8891.  Apply only this patch.",
     "created_at": "2010-06-15T09:25:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
@@ -626,7 +626,7 @@ archive/issue_comments_078375.json:
 }
 ```
 
-Attachment
+Attachment [trac_8641-doctest_exit_codes.2.patch](tarball://root/attachments/some-uuid/ticket8641/trac_8641-doctest_exit_codes.2.patch) by mpatel created at 2010-06-15 09:25:57
 
 Modify `sage-ptest`, too.  Apply to 4.4.4.alpha0 + #8891.  Apply only this patch.
 
@@ -717,7 +717,7 @@ Use `err = err | 2` for `KeyboardInterrupt`.  Apply only this patch, to 4.4.4.al
 archive/issue_comments_078380.json:
 ```json
 {
-    "body": "Attachment\n\nDone.  [attachment:trac_8641-doctest_exit_codes.3.patch V3] uses `err = 2 | err` for `KeyboardInterrupt`s to both scripts.",
+    "body": "Attachment [trac_8641-doctest_exit_codes.3.patch](tarball://root/attachments/some-uuid/ticket8641/trac_8641-doctest_exit_codes.3.patch) by mpatel created at 2010-06-16 07:20:05\n\nDone.  [attachment:trac_8641-doctest_exit_codes.3.patch V3] uses `err = 2 | err` for `KeyboardInterrupt`s to both scripts.",
     "created_at": "2010-06-16T07:20:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
@@ -726,7 +726,7 @@ archive/issue_comments_078380.json:
 }
 ```
 
-Attachment
+Attachment [trac_8641-doctest_exit_codes.3.patch](tarball://root/attachments/some-uuid/ticket8641/trac_8641-doctest_exit_codes.3.patch) by mpatel created at 2010-06-16 07:20:05
 
 Done.  [attachment:trac_8641-doctest_exit_codes.3.patch V3] uses `err = 2 | err` for `KeyboardInterrupt`s to both scripts.
 

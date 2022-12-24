@@ -426,7 +426,7 @@ Tested on Sage 4.6
 archive/issue_comments_097762.json:
 ```json
 {
-    "body": "Attachment\n\nHi Alexandre,\n\ni started to work back on this ticket. This new patch is supposed to solve your four points. \n\nSince the `is_tangent()` method can now be applied to a word with more than 2 letters, i added a protection in the `FiniteWordPath_all` class into the file `paths.py` so that `is_tangent()` could not be applied for such word paths. Indeed, there is an extended definition for them, which is not yet written (see the paper).\n\nAlso, concerning a previous comment on using existing sage code, i looked for some \"run\" method and the only similar code i found was the `_delta_iterator()` method in the `Word_class` class. I tried to use it, but it seems that the use of the `groupby` itertool followed by `len` makes a slower code:\n\n\n```\nfrom itertools import groupby\n\ndef runs_groupby(self):\n    for letter, run in groupby(self):\n        yield letter, len(list(run))\n\ndef runs_homemade(self):\n    try:\n        previous_letter = self[0]\n    except IndexError:\n        return\n    current_run_length = 0\n    for i in self:\n        if i == previous_letter:\n            current_run_length += 1\n        else:\n            yield previous_letter , current_run_length\n            current_run_length = 1\n            previous_letter = i\n    yield previous_letter , current_run_length\n\ntimeit('for i in runs_groupby(words.FibonacciWord()[:1000]):\\n    print i')\n\ntimeit('for i in runs_homemade(words.FibonacciWord()[:1000]):\\n    print i')\n\n```\n\n\nThe first takes 28.6 ms per loop whereas the second takes 18.2 ms per loop. The problem is that the first method, though more low-level, is like passing twice on the word, which seems to be slower than the second (high-level) one-pass method.\n\nCiao,\nThierry",
+    "body": "Attachment [trac_9877_words_sturmian_desubstitution_attempt_2-tm.patch](tarball://root/attachments/some-uuid/ticket9877/trac_9877_words_sturmian_desubstitution_attempt_2-tm.patch) by tmonteil created at 2010-12-29 16:56:11\n\nHi Alexandre,\n\ni started to work back on this ticket. This new patch is supposed to solve your four points. \n\nSince the `is_tangent()` method can now be applied to a word with more than 2 letters, i added a protection in the `FiniteWordPath_all` class into the file `paths.py` so that `is_tangent()` could not be applied for such word paths. Indeed, there is an extended definition for them, which is not yet written (see the paper).\n\nAlso, concerning a previous comment on using existing sage code, i looked for some \"run\" method and the only similar code i found was the `_delta_iterator()` method in the `Word_class` class. I tried to use it, but it seems that the use of the `groupby` itertool followed by `len` makes a slower code:\n\n\n```\nfrom itertools import groupby\n\ndef runs_groupby(self):\n    for letter, run in groupby(self):\n        yield letter, len(list(run))\n\ndef runs_homemade(self):\n    try:\n        previous_letter = self[0]\n    except IndexError:\n        return\n    current_run_length = 0\n    for i in self:\n        if i == previous_letter:\n            current_run_length += 1\n        else:\n            yield previous_letter , current_run_length\n            current_run_length = 1\n            previous_letter = i\n    yield previous_letter , current_run_length\n\ntimeit('for i in runs_groupby(words.FibonacciWord()[:1000]):\\n    print i')\n\ntimeit('for i in runs_homemade(words.FibonacciWord()[:1000]):\\n    print i')\n\n```\n\n\nThe first takes 28.6 ms per loop whereas the second takes 18.2 ms per loop. The problem is that the first method, though more low-level, is like passing twice on the word, which seems to be slower than the second (high-level) one-pass method.\n\nCiao,\nThierry",
     "created_at": "2010-12-29T16:56:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9876",
     "type": "issue_comment",
@@ -435,7 +435,7 @@ archive/issue_comments_097762.json:
 }
 ```
 
-Attachment
+Attachment [trac_9877_words_sturmian_desubstitution_attempt_2-tm.patch](tarball://root/attachments/some-uuid/ticket9877/trac_9877_words_sturmian_desubstitution_attempt_2-tm.patch) by tmonteil created at 2010-12-29 16:56:11
 
 Hi Alexandre,
 
@@ -1015,7 +1015,7 @@ There is a problem building the documentation:
 archive/issue_comments_097787.json:
 ```json
 {
-    "body": "Attachment\n\nI have corrected the doc, back to positive review",
+    "body": "Attachment [trac_9777-sturm-review-fc.patch](tarball://root/attachments/some-uuid/ticket9877/trac_9777-sturm-review-fc.patch) by chapoton created at 2013-03-13 15:35:22\n\nI have corrected the doc, back to positive review",
     "created_at": "2013-03-13T15:35:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9876",
     "type": "issue_comment",
@@ -1024,7 +1024,7 @@ archive/issue_comments_097787.json:
 }
 ```
 
-Attachment
+Attachment [trac_9777-sturm-review-fc.patch](tarball://root/attachments/some-uuid/ticket9877/trac_9777-sturm-review-fc.patch) by chapoton created at 2013-03-13 15:35:22
 
 I have corrected the doc, back to positive review
 

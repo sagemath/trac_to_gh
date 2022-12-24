@@ -83,7 +83,7 @@ config.log of failed build 64-bit on host 'fulvia' which runs Solaris 10 on a qu
 archive/issue_comments_094847.json:
 ```json
 {
-    "body": "Attachment\n\nLog file generated when building a 64-bit iconv on host 'fulvia', which runs Solaris 10 on an quad core Intel Xeon",
+    "body": "Attachment [iconv-1.13.1.p2.log](tarball://root/attachments/some-uuid/ticket9718/iconv-1.13.1.p2.log) by drkirkby created at 2010-08-10 16:23:55\n\nLog file generated when building a 64-bit iconv on host 'fulvia', which runs Solaris 10 on an quad core Intel Xeon",
     "created_at": "2010-08-10T16:23:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9718",
     "type": "issue_comment",
@@ -92,7 +92,7 @@ archive/issue_comments_094847.json:
 }
 ```
 
-Attachment
+Attachment [iconv-1.13.1.p2.log](tarball://root/attachments/some-uuid/ticket9718/iconv-1.13.1.p2.log) by drkirkby created at 2010-08-10 16:23:55
 
 Log file generated when building a 64-bit iconv on host 'fulvia', which runs Solaris 10 on an quad core Intel Xeon
 
@@ -302,7 +302,7 @@ iconv now building on 'fulvia' at Skynet
 archive/issue_comments_094854.json:
 ```json
 {
-    "body": "Attachment\n\n**This ticket can be closed when #9603 gets merged**, since the relevant patch\n\n  http://trac.sagemath.org/sage_trac/attachment/ticket/9603/9603-move-from-CFLAGS-to-CC.patch\n\nis *there* (integrated into iconv-1.13.1.p3).",
+    "body": "Attachment [iconv-1.13.1.p3.log.txt](tarball://root/attachments/some-uuid/ticket9718/iconv-1.13.1.p3.log.txt) by leif created at 2010-09-08 12:27:44\n\n**This ticket can be closed when #9603 gets merged**, since the relevant patch\n\n  http://trac.sagemath.org/sage_trac/attachment/ticket/9603/9603-move-from-CFLAGS-to-CC.patch\n\nis *there* (integrated into iconv-1.13.1.p3).",
     "created_at": "2010-09-08T12:27:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9718",
     "type": "issue_comment",
@@ -311,7 +311,7 @@ archive/issue_comments_094854.json:
 }
 ```
 
-Attachment
+Attachment [iconv-1.13.1.p3.log.txt](tarball://root/attachments/some-uuid/ticket9718/iconv-1.13.1.p3.log.txt) by leif created at 2010-09-08 12:27:44
 
 **This ticket can be closed when #9603 gets merged**, since the relevant patch
 

@@ -132,7 +132,7 @@ Changing priority from minor to critical.
 archive/issue_comments_088900.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9361_maxima_timeout.patch](tarball://root/attachments/some-uuid/ticket9361/9361_maxima_timeout.patch) by jdemeyer created at 2012-01-13 16:29:33",
     "created_at": "2012-01-13T16:29:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9361",
     "type": "issue_comment",
@@ -141,7 +141,7 @@ archive/issue_comments_088900.json:
 }
 ```
 
-Attachment
+Attachment [9361_maxima_timeout.patch](tarball://root/attachments/some-uuid/ticket9361/9361_maxima_timeout.patch) by jdemeyer created at 2012-01-13 16:29:33
 
 
 

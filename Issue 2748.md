@@ -69,7 +69,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2748
 archive/issue_comments_018880.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [permutation-list-of-tuples.patch](tarball://root/attachments/some-uuid/ticket2748/permutation-list-of-tuples.patch) by ddrake created at 2008-04-07 07:39:35",
     "created_at": "2008-04-07T07:39:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2748",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_018880.json:
 }
 ```
 
-Attachment
+Attachment [permutation-list-of-tuples.patch](tarball://root/attachments/some-uuid/ticket2748/permutation-list-of-tuples.patch) by ddrake created at 2008-04-07 07:39:35
 
 
 

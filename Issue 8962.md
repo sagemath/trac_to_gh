@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8962
 archive/issue_comments_082605.json:
 ```json
 {
-    "body": "Attachment\n\nReady for review now.",
+    "body": "Attachment [trac-8962-realfield-latex.patch](tarball://root/attachments/some-uuid/ticket8962/trac-8962-realfield-latex.patch) by jason created at 2010-05-14 15:52:19\n\nReady for review now.",
     "created_at": "2010-05-14T15:52:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8962",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_082605.json:
 }
 ```
 
-Attachment
+Attachment [trac-8962-realfield-latex.patch](tarball://root/attachments/some-uuid/ticket8962/trac-8962-realfield-latex.patch) by jason created at 2010-05-14 15:52:19
 
 Ready for review now.
 

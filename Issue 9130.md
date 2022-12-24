@@ -226,7 +226,7 @@ Changing keywords from "special function, pynac" to "special function, pynac, be
 archive/issue_comments_085057.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9130_beta_function.patch](tarball://root/attachments/some-uuid/ticket9130/trac_9130_beta_function.patch) by ktkohl created at 2010-12-10 06:14:22",
     "created_at": "2010-12-10T06:14:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9130",
     "type": "issue_comment",
@@ -235,7 +235,7 @@ archive/issue_comments_085057.json:
 }
 ```
 
-Attachment
+Attachment [trac_9130_beta_function.patch](tarball://root/attachments/some-uuid/ticket9130/trac_9130_beta_function.patch) by ktkohl created at 2010-12-10 06:14:22
 
 
 
@@ -301,7 +301,7 @@ Changing status from new to needs_work.
 archive/issue_comments_085060.json:
 ```json
 {
-    "body": "Attachment\n\nfix segfault in py_float",
+    "body": "Attachment [trac_9130-py_float_segfault.patch](tarball://root/attachments/some-uuid/ticket9130/trac_9130-py_float_segfault.patch) by burcin created at 2011-05-25 17:44:25\n\nfix segfault in py_float",
     "created_at": "2011-05-25T17:44:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9130",
     "type": "issue_comment",
@@ -310,7 +310,7 @@ archive/issue_comments_085060.json:
 }
 ```
 
-Attachment
+Attachment [trac_9130-py_float_segfault.patch](tarball://root/attachments/some-uuid/ticket9130/trac_9130-py_float_segfault.patch) by burcin created at 2011-05-25 17:44:25
 
 fix segfault in py_float
 
@@ -398,7 +398,7 @@ Changing keywords from "special function, pynac" to "special function, pynac, sd
 archive/issue_comments_085064.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9130_beta_function.2.patch](tarball://root/attachments/some-uuid/ticket9130/trac_9130_beta_function.2.patch) by ktkohl created at 2012-01-10 04:14:59",
     "created_at": "2012-01-10T04:14:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9130",
     "type": "issue_comment",
@@ -407,7 +407,7 @@ archive/issue_comments_085064.json:
 }
 ```
 
-Attachment
+Attachment [trac_9130_beta_function.2.patch](tarball://root/attachments/some-uuid/ticket9130/trac_9130_beta_function.2.patch) by ktkohl created at 2012-01-10 04:14:59
 
 
 
@@ -452,7 +452,7 @@ include beta in random_tests
 archive/issue_comments_085067.json:
 ```json
 {
-    "body": "Attachment\n\nApply all patches in the order they were added:\n\n* trac_9130_beta_function.patch \n\n* trac_9130-py_float_segfault.patch\n\n* trac_9130_beta_function.2.patch\n\n* trac_9130_beta_function.3.patch",
+    "body": "Attachment [trac_9130_beta_function.3.patch](tarball://root/attachments/some-uuid/ticket9130/trac_9130_beta_function.3.patch) by ktkohl created at 2012-01-10 16:06:24\n\nApply all patches in the order they were added:\n\n* trac_9130_beta_function.patch \n\n* trac_9130-py_float_segfault.patch\n\n* trac_9130_beta_function.2.patch\n\n* trac_9130_beta_function.3.patch",
     "created_at": "2012-01-10T16:06:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9130",
     "type": "issue_comment",
@@ -461,7 +461,7 @@ archive/issue_comments_085067.json:
 }
 ```
 
-Attachment
+Attachment [trac_9130_beta_function.3.patch](tarball://root/attachments/some-uuid/ticket9130/trac_9130_beta_function.3.patch) by ktkohl created at 2012-01-10 16:06:24
 
 Apply all patches in the order they were added:
 
@@ -558,7 +558,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_085072.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9130_beta_function.4.patch](tarball://root/attachments/some-uuid/ticket9130/trac_9130_beta_function.4.patch) by ktkohl created at 2012-01-10 21:09:43",
     "created_at": "2012-01-10T21:09:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9130",
     "type": "issue_comment",
@@ -567,7 +567,7 @@ archive/issue_comments_085072.json:
 }
 ```
 
-Attachment
+Attachment [trac_9130_beta_function.4.patch](tarball://root/attachments/some-uuid/ticket9130/trac_9130_beta_function.4.patch) by ktkohl created at 2012-01-10 21:09:43
 
 
 
@@ -576,7 +576,7 @@ Attachment
 archive/issue_comments_085073.json:
 ```json
 {
-    "body": "Attachment\n\ncombined reviewer patch folding up previously uploaded 5 patches",
+    "body": "Attachment [trac_9130_combined.patch](tarball://root/attachments/some-uuid/ticket9130/trac_9130_combined.patch) by benjaminfjones created at 2012-01-11 05:21:40\n\ncombined reviewer patch folding up previously uploaded 5 patches",
     "created_at": "2012-01-11T05:21:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9130",
     "type": "issue_comment",
@@ -585,7 +585,7 @@ archive/issue_comments_085073.json:
 }
 ```
 
-Attachment
+Attachment [trac_9130_combined.patch](tarball://root/attachments/some-uuid/ticket9130/trac_9130_combined.patch) by benjaminfjones created at 2012-01-11 05:21:40
 
 combined reviewer patch folding up previously uploaded 5 patches
 
@@ -616,7 +616,7 @@ I'm running `make ptestlong` on Sage-4.8.alpha6 with the combined patch applied 
 archive/issue_comments_085075.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9130-py_float_segfault.take2.patch](tarball://root/attachments/some-uuid/ticket9130/trac_9130-py_float_segfault.take2.patch) by burcin created at 2012-01-12 17:02:54",
     "created_at": "2012-01-12T17:02:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9130",
     "type": "issue_comment",
@@ -625,7 +625,7 @@ archive/issue_comments_085075.json:
 }
 ```
 
-Attachment
+Attachment [trac_9130-py_float_segfault.take2.patch](tarball://root/attachments/some-uuid/ticket9130/trac_9130-py_float_segfault.take2.patch) by burcin created at 2012-01-12 17:02:54
 
 
 
@@ -670,7 +670,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_085078.json:
 ```json
 {
-    "body": "Attachment\n\nnew combined file replacement by trac_9130-py_float_segfault.take2.patch and removal of `__call__()` method",
+    "body": "Attachment [trac_9130_combined.2.patch](tarball://root/attachments/some-uuid/ticket9130/trac_9130_combined.2.patch) by ktkohl created at 2012-01-12 20:49:12\n\nnew combined file replacement by trac_9130-py_float_segfault.take2.patch and removal of `__call__()` method",
     "created_at": "2012-01-12T20:49:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9130",
     "type": "issue_comment",
@@ -679,7 +679,7 @@ archive/issue_comments_085078.json:
 }
 ```
 
-Attachment
+Attachment [trac_9130_combined.2.patch](tarball://root/attachments/some-uuid/ticket9130/trac_9130_combined.2.patch) by ktkohl created at 2012-01-12 20:49:12
 
 new combined file replacement by trac_9130-py_float_segfault.take2.patch and removal of `__call__()` method
 
@@ -814,7 +814,7 @@ It should be easy to edit the newest combined patch file to remove the changes f
 archive/issue_comments_085085.json:
 ```json
 {
-    "body": "Attachment\n\ncombined Karen's patches",
+    "body": "Attachment [trac_9130-beta_function.patch](tarball://root/attachments/some-uuid/ticket9130/trac_9130-beta_function.patch) by burcin created at 2012-02-06 14:41:42\n\ncombined Karen's patches",
     "created_at": "2012-02-06T14:41:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9130",
     "type": "issue_comment",
@@ -823,7 +823,7 @@ archive/issue_comments_085085.json:
 }
 ```
 
-Attachment
+Attachment [trac_9130-beta_function.patch](tarball://root/attachments/some-uuid/ticket9130/trac_9130-beta_function.patch) by burcin created at 2012-02-06 14:41:42
 
 combined Karen's patches
 
@@ -1061,7 +1061,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_085096.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9130-reviewer.2.patch](tarball://root/attachments/some-uuid/ticket9130/trac_9130-reviewer.2.patch) by kcrisman created at 2012-02-10 03:57:46",
     "created_at": "2012-02-10T03:57:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9130",
     "type": "issue_comment",
@@ -1070,7 +1070,7 @@ archive/issue_comments_085096.json:
 }
 ```
 
-Attachment
+Attachment [trac_9130-reviewer.2.patch](tarball://root/attachments/some-uuid/ticket9130/trac_9130-reviewer.2.patch) by kcrisman created at 2012-02-10 03:57:46
 
 
 
@@ -1097,7 +1097,7 @@ Apply last
 archive/issue_comments_085098.json:
 ```json
 {
-    "body": "Attachment\n\nTo finish:\n* Apply \n  * [attachment:trac_9130-beta_function.patch]\n  * [attachment:trac_9130-py_float_segfault.take2.patch]\n  * [attachment:trac_9130-reviewer.patch]\n* Check docbuild as above\n* Run tests on other.py, the only file that changed since the last positive review.",
+    "body": "Attachment [trac_9130-reviewer.patch](tarball://root/attachments/some-uuid/ticket9130/trac_9130-reviewer.patch) by kcrisman created at 2012-02-10 04:00:08\n\nTo finish:\n* Apply \n  * [attachment:trac_9130-beta_function.patch]\n  * [attachment:trac_9130-py_float_segfault.take2.patch]\n  * [attachment:trac_9130-reviewer.patch]\n* Check docbuild as above\n* Run tests on other.py, the only file that changed since the last positive review.",
     "created_at": "2012-02-10T04:00:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9130",
     "type": "issue_comment",
@@ -1106,7 +1106,7 @@ archive/issue_comments_085098.json:
 }
 ```
 
-Attachment
+Attachment [trac_9130-reviewer.patch](tarball://root/attachments/some-uuid/ticket9130/trac_9130-reviewer.patch) by kcrisman created at 2012-02-10 04:00:08
 
 To finish:
 * Apply 
@@ -1195,7 +1195,7 @@ This patch conflicts with #4498.  Either this one or #4498 should be rebased.
 archive/issue_comments_085103.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9130-beta_function.2.patch](tarball://root/attachments/some-uuid/ticket9130/trac_9130-beta_function.2.patch) by benjaminfjones created at 2012-02-12 20:27:50",
     "created_at": "2012-02-12T20:27:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9130",
     "type": "issue_comment",
@@ -1204,7 +1204,7 @@ archive/issue_comments_085103.json:
 }
 ```
 
-Attachment
+Attachment [trac_9130-beta_function.2.patch](tarball://root/attachments/some-uuid/ticket9130/trac_9130-beta_function.2.patch) by benjaminfjones created at 2012-02-12 20:27:50
 
 
 
@@ -1213,7 +1213,7 @@ Attachment
 archive/issue_comments_085104.json:
 ```json
 {
-    "body": "Attachment\n\nfixes random tests after rebasing against #4498",
+    "body": "Attachment [trac_9130-random-tests.patch](tarball://root/attachments/some-uuid/ticket9130/trac_9130-random-tests.patch) by benjaminfjones created at 2012-02-12 20:28:20\n\nfixes random tests after rebasing against #4498",
     "created_at": "2012-02-12T20:28:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9130",
     "type": "issue_comment",
@@ -1222,7 +1222,7 @@ archive/issue_comments_085104.json:
 }
 ```
 
-Attachment
+Attachment [trac_9130-random-tests.patch](tarball://root/attachments/some-uuid/ticket9130/trac_9130-random-tests.patch) by benjaminfjones created at 2012-02-12 20:28:20
 
 fixes random tests after rebasing against #4498
 
@@ -1376,7 +1376,7 @@ Just checked one *last* time - yes, everything is fine!  A very minor quibble is
 archive/issue_comments_085112.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9130-random-tests.2.patch](tarball://root/attachments/some-uuid/ticket9130/trac_9130-random-tests.2.patch) by jdemeyer created at 2012-02-21 11:24:15",
     "created_at": "2012-02-21T11:24:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9130",
     "type": "issue_comment",
@@ -1385,7 +1385,7 @@ archive/issue_comments_085112.json:
 }
 ```
 
-Attachment
+Attachment [trac_9130-random-tests.2.patch](tarball://root/attachments/some-uuid/ticket9130/trac_9130-random-tests.2.patch) by jdemeyer created at 2012-02-21 11:24:15
 
 
 
@@ -1394,7 +1394,7 @@ Attachment
 archive/issue_comments_085113.json:
 ```json
 {
-    "body": "Attachment\n\nRebased again.",
+    "body": "Attachment [trac_9130-beta_function.3.patch](tarball://root/attachments/some-uuid/ticket9130/trac_9130-beta_function.3.patch) by jdemeyer created at 2012-02-21 11:26:13\n\nRebased again.",
     "created_at": "2012-02-21T11:26:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9130",
     "type": "issue_comment",
@@ -1403,7 +1403,7 @@ archive/issue_comments_085113.json:
 }
 ```
 
-Attachment
+Attachment [trac_9130-beta_function.3.patch](tarball://root/attachments/some-uuid/ticket9130/trac_9130-beta_function.3.patch) by jdemeyer created at 2012-02-21 11:26:13
 
 Rebased again.
 

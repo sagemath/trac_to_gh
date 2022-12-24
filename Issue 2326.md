@@ -123,7 +123,7 @@ http://sage.math.washington.edu/home/rlmill/sage-memcheck.18970
 archive/issue_comments_015485.json:
 ```json
 {
-    "body": "Attachment\n\nSorry for the caps, but I just wanted to make sure mabshoff saw it :)  It looks good to me.",
+    "body": "Attachment [2326-final.patch](tarball://root/attachments/some-uuid/ticket2326/2326-final.patch) by jason created at 2008-03-01 10:24:41\n\nSorry for the caps, but I just wanted to make sure mabshoff saw it :)  It looks good to me.",
     "created_at": "2008-03-01T10:24:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2326",
     "type": "issue_comment",
@@ -132,7 +132,7 @@ archive/issue_comments_015485.json:
 }
 ```
 
-Attachment
+Attachment [2326-final.patch](tarball://root/attachments/some-uuid/ticket2326/2326-final.patch) by jason created at 2008-03-01 10:24:41
 
 Sorry for the caps, but I just wanted to make sure mabshoff saw it :)  It looks good to me.
 

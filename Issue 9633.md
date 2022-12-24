@@ -89,7 +89,7 @@ Two points: (1) I think "P = parent(x)" is simpler, if I'm reading sage.structur
 archive/issue_comments_093361.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9633_binomial_float.patch](tarball://root/attachments/some-uuid/ticket9633/trac_9633_binomial_float.patch) by johanbosman created at 2011-04-12 09:08:25",
     "created_at": "2011-04-12T09:08:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9633",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_093361.json:
 }
 ```
 
-Attachment
+Attachment [trac_9633_binomial_float.patch](tarball://root/attachments/some-uuid/ticket9633/trac_9633_binomial_float.patch) by johanbosman created at 2011-04-12 09:08:25
 
 
 

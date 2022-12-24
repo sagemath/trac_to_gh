@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2566
 archive/issue_comments_017494.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2566-mp-size-binary_code.patch](tarball://root/attachments/some-uuid/ticket2566/2566-mp-size-binary_code.patch) by rlm created at 2008-03-19 23:42:35",
     "created_at": "2008-03-19T23:42:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2566",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_017494.json:
 }
 ```
 
-Attachment
+Attachment [2566-mp-size-binary_code.patch](tarball://root/attachments/some-uuid/ticket2566/2566-mp-size-binary_code.patch) by rlm created at 2008-03-19 23:42:35
 
 
 

@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8178
 archive/issue_comments_072062.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [zn_poly-0.9.p2.patch](tarball://root/attachments/some-uuid/ticket8178/zn_poly-0.9.p2.patch) by jsp created at 2010-02-03 19:36:24",
     "created_at": "2010-02-03T19:36:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8178",
     "type": "issue_comment",
@@ -49,7 +49,7 @@ archive/issue_comments_072062.json:
 }
 ```
 
-Attachment
+Attachment [zn_poly-0.9.p2.patch](tarball://root/attachments/some-uuid/ticket8178/zn_poly-0.9.p2.patch) by jsp created at 2010-02-03 19:36:24
 
 
 
@@ -164,7 +164,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_072068.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:3 drkirkby]:\n> To avoid the risk of messing something up for everyone, I would make the chances in patches/makemakefile.py to specific to Solaris on 64-bit. \n\n\nI think it is pritty harmless to add $LDFLAGS here. If you don't agree I leave this one to you. I've enough of -m64 :)\n\nJaap",
+    "body": "Attachment [libpng-1.2.35.p0+.patch](tarball://root/attachments/some-uuid/ticket8178/libpng-1.2.35.p0+.patch) by jsp created at 2010-02-04 18:55:16\n\nReplying to [comment:3 drkirkby]:\n> To avoid the risk of messing something up for everyone, I would make the chances in patches/makemakefile.py to specific to Solaris on 64-bit. \n\n\nI think it is pritty harmless to add $LDFLAGS here. If you don't agree I leave this one to you. I've enough of -m64 :)\n\nJaap",
     "created_at": "2010-02-04T18:55:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8178",
     "type": "issue_comment",
@@ -173,7 +173,7 @@ archive/issue_comments_072068.json:
 }
 ```
 
-Attachment
+Attachment [libpng-1.2.35.p0+.patch](tarball://root/attachments/some-uuid/ticket8178/libpng-1.2.35.p0+.patch) by jsp created at 2010-02-04 18:55:16
 
 Replying to [comment:3 drkirkby]:
 > To avoid the risk of messing something up for everyone, I would make the chances in patches/makemakefile.py to specific to Solaris on 64-bit. 
@@ -379,7 +379,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_072077.json:
 ```json
 {
-    "body": "Attachment\n\nThe new spkg can be found here:\n\n[http://boxen.math.washington.edu/home/jsp/ports/zn_poly-0.9.p3.spkg](http://boxen.math.washington.edu/home/jsp/ports/zn_poly-0.9.p3.spkg)\n\nSee also the new attachment.\n\nJaap",
+    "body": "Attachment [zn_poly-0.9.p3.patch](tarball://root/attachments/some-uuid/ticket8178/zn_poly-0.9.p3.patch) by jsp created at 2010-02-21 17:52:25\n\nThe new spkg can be found here:\n\n[http://boxen.math.washington.edu/home/jsp/ports/zn_poly-0.9.p3.spkg](http://boxen.math.washington.edu/home/jsp/ports/zn_poly-0.9.p3.spkg)\n\nSee also the new attachment.\n\nJaap",
     "created_at": "2010-02-21T17:52:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8178",
     "type": "issue_comment",
@@ -388,7 +388,7 @@ archive/issue_comments_072077.json:
 }
 ```
 
-Attachment
+Attachment [zn_poly-0.9.p3.patch](tarball://root/attachments/some-uuid/ticket8178/zn_poly-0.9.p3.patch) by jsp created at 2010-02-21 17:52:25
 
 The new spkg can be found here:
 

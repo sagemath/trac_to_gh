@@ -53,7 +53,7 @@ Changing status from new to assigned.
 archive/issue_comments_022007.json:
 ```json
 {
-    "body": "Attachment\n\nThe updated spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.2/alpha1/freetype-2.3.5.p0.spkg\n\nCheers,\n\nMichael",
+    "body": "Attachment [freetype-2.3.5-spkg-install-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3178/freetype-2.3.5-spkg-install-64bit-osx.patch) by mabshoff created at 2008-05-19 03:08:37\n\nThe updated spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.2/alpha1/freetype-2.3.5.p0.spkg\n\nCheers,\n\nMichael",
     "created_at": "2008-05-19T03:08:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3178",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_022007.json:
 }
 ```
 
-Attachment
+Attachment [freetype-2.3.5-spkg-install-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3178/freetype-2.3.5-spkg-install-64bit-osx.patch) by mabshoff created at 2008-05-19 03:08:37
 
 The updated spkg is at
 

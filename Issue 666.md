@@ -63,7 +63,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/666
 archive/issue_comments_003454.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [matrix_latex_spacing.patch](tarball://root/attachments/some-uuid/ticket666/matrix_latex_spacing.patch) by pdenapo created at 2007-09-16 18:44:31",
     "created_at": "2007-09-16T18:44:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/666",
     "type": "issue_comment",
@@ -72,7 +72,7 @@ archive/issue_comments_003454.json:
 }
 ```
 
-Attachment
+Attachment [matrix_latex_spacing.patch](tarball://root/attachments/some-uuid/ticket666/matrix_latex_spacing.patch) by pdenapo created at 2007-09-16 18:44:31
 
 
 

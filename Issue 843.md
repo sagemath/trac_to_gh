@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/843
 archive/issue_comments_005219.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [quadratic.hg](tarball://root/attachments/some-uuid/ticket843/quadratic.hg) by mabshoff created at 2007-10-10 01:41:20",
     "created_at": "2007-10-10T01:41:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/843",
     "type": "issue_comment",
@@ -41,7 +41,7 @@ archive/issue_comments_005219.json:
 }
 ```
 
-Attachment
+Attachment [quadratic.hg](tarball://root/attachments/some-uuid/ticket843/quadratic.hg) by mabshoff created at 2007-10-10 01:41:20
 
 
 

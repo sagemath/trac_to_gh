@@ -119,7 +119,7 @@ Michael
 archive/issue_comments_029056.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4029.patch](tarball://root/attachments/some-uuid/ticket4029/trac_4029.patch) by mhansen created at 2009-10-05 07:18:06",
     "created_at": "2009-10-05T07:18:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4029",
     "type": "issue_comment",
@@ -128,7 +128,7 @@ archive/issue_comments_029056.json:
 }
 ```
 
-Attachment
+Attachment [trac_4029.patch](tarball://root/attachments/some-uuid/ticket4029/trac_4029.patch) by mhansen created at 2009-10-05 07:18:06
 
 
 
@@ -260,7 +260,7 @@ oh, now I remember doing that.
 archive/issue_comments_029060.json:
 ```json
 {
-    "body": "Attachment\n\nI used the very hacky (but effective)\n\n```\nreturn 1 2>/dev/null || exit 1\n```\n\ninstead of `return` or `exit`.",
+    "body": "Attachment [trac_4029.2.patch](tarball://root/attachments/some-uuid/ticket4029/trac_4029.2.patch) by iandrus created at 2010-12-29 20:31:59\n\nI used the very hacky (but effective)\n\n```\nreturn 1 2>/dev/null || exit 1\n```\n\ninstead of `return` or `exit`.",
     "created_at": "2010-12-29T20:31:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4029",
     "type": "issue_comment",
@@ -269,7 +269,7 @@ archive/issue_comments_029060.json:
 }
 ```
 
-Attachment
+Attachment [trac_4029.2.patch](tarball://root/attachments/some-uuid/ticket4029/trac_4029.2.patch) by iandrus created at 2010-12-29 20:31:59
 
 I used the very hacky (but effective)
 

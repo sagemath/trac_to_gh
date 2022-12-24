@@ -72,7 +72,7 @@ Relevant benchmarks: http://wiki.sagemath.org/days23.5/projects/relative_number_
 archive/issue_comments_091228.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9500.patch](tarball://root/attachments/some-uuid/ticket9500/trac_9500.patch) by was created at 2010-07-14 20:29:36",
     "created_at": "2010-07-14T20:29:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9500",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_091228.json:
 }
 ```
 
-Attachment
+Attachment [trac_9500.patch](tarball://root/attachments/some-uuid/ticket9500/trac_9500.patch) by was created at 2010-07-14 20:29:36
 
 
 

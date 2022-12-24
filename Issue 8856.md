@@ -49,7 +49,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8856
 archive/issue_comments_081384.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8856-cached_one_basis-fh.patch](tarball://root/attachments/some-uuid/ticket8856/trac_8856-cached_one_basis-fh.patch) by hivert created at 2010-05-03 14:54:33",
     "created_at": "2010-05-03T14:54:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8856",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_081384.json:
 }
 ```
 
-Attachment
+Attachment [trac_8856-cached_one_basis-fh.patch](tarball://root/attachments/some-uuid/ticket8856/trac_8856-cached_one_basis-fh.patch) by hivert created at 2010-05-03 14:54:33
 
 
 

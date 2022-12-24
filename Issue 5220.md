@@ -139,7 +139,7 @@ The problem is a str versus repr call in the interact code.  I've attached a pat
 archive/issue_comments_040008.json:
 ```json
 {
-    "body": "Attachment\n\nNote that the attached patch changes two other doctests in the affected function.  This should be discussed, as this changes how interacts work, I believe.",
+    "body": "Attachment [interact-quote.patch](tarball://root/attachments/some-uuid/ticket5220/interact-quote.patch) by jason created at 2009-02-09 20:22:39\n\nNote that the attached patch changes two other doctests in the affected function.  This should be discussed, as this changes how interacts work, I believe.",
     "created_at": "2009-02-09T20:22:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5220",
     "type": "issue_comment",
@@ -148,7 +148,7 @@ archive/issue_comments_040008.json:
 }
 ```
 
-Attachment
+Attachment [interact-quote.patch](tarball://root/attachments/some-uuid/ticket5220/interact-quote.patch) by jason created at 2009-02-09 20:22:39
 
 Note that the attached patch changes two other doctests in the affected function.  This should be discussed, as this changes how interacts work, I believe.
 
@@ -261,7 +261,7 @@ def plotfunction(f=input_box("'my string'")):
 archive/issue_comments_040011.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5220-referee.patch](tarball://root/attachments/some-uuid/ticket5220/trac_5220-referee.patch) by was created at 2009-03-05 05:18:39",
     "created_at": "2009-03-05T05:18:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5220",
     "type": "issue_comment",
@@ -270,7 +270,7 @@ archive/issue_comments_040011.json:
 }
 ```
 
-Attachment
+Attachment [trac_5220-referee.patch](tarball://root/attachments/some-uuid/ticket5220/trac_5220-referee.patch) by was created at 2009-03-05 05:18:39
 
 
 

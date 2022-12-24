@@ -51,7 +51,7 @@ based on Sage 4.3.rc0
 archive/issue_comments_065507.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7658-windows-install.patch](tarball://root/attachments/some-uuid/ticket7658/trac_7658-windows-install.patch) by mvngu created at 2009-12-14 04:57:53",
     "created_at": "2009-12-14T04:57:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7658",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_065507.json:
 }
 ```
 
-Attachment
+Attachment [trac_7658-windows-install.patch](tarball://root/attachments/some-uuid/ticket7658/trac_7658-windows-install.patch) by mvngu created at 2009-12-14 04:57:53
 
 
 

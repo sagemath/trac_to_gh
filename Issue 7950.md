@@ -97,7 +97,7 @@ Changing status from new to needs_review.
 archive/issue_comments_069367.json:
 ```json
 {
-    "body": "Attachment\n\ntrivial review please?",
+    "body": "Attachment [trac_7950-zero_variable_factor.patch](tarball://root/attachments/some-uuid/ticket7950/trac_7950-zero_variable_factor.patch) by burcin created at 2010-01-17 23:29:32\n\ntrivial review please?",
     "created_at": "2010-01-17T23:29:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7950",
     "type": "issue_comment",
@@ -106,7 +106,7 @@ archive/issue_comments_069367.json:
 }
 ```
 
-Attachment
+Attachment [trac_7950-zero_variable_factor.patch](tarball://root/attachments/some-uuid/ticket7950/trac_7950-zero_variable_factor.patch) by burcin created at 2010-01-17 23:29:32
 
 trivial review please?
 
@@ -179,7 +179,7 @@ So I think this patch needs work.
 archive/issue_comments_069370.json:
 ```json
 {
-    "body": "Attachment\n\nonly apply this patch",
+    "body": "Attachment [trac_7950-zero_variable_factor.take2.patch](tarball://root/attachments/some-uuid/ticket7950/trac_7950-zero_variable_factor.take2.patch) by burcin created at 2010-01-18 17:48:38\n\nonly apply this patch",
     "created_at": "2010-01-18T17:48:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7950",
     "type": "issue_comment",
@@ -188,7 +188,7 @@ archive/issue_comments_069370.json:
 }
 ```
 
-Attachment
+Attachment [trac_7950-zero_variable_factor.take2.patch](tarball://root/attachments/some-uuid/ticket7950/trac_7950-zero_variable_factor.take2.patch) by burcin created at 2010-01-18 17:48:38
 
 only apply this patch
 

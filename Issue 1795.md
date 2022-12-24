@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1795
 archive/issue_comments_011362.json:
 ```json
 {
-    "body": "Attachment\n\nAdds cdef, cpdef support to sage-coverage",
+    "body": "Attachment [cdef-coverage.patch](tarball://root/attachments/some-uuid/ticket1795/cdef-coverage.patch) by roed created at 2008-01-16 18:06:42\n\nAdds cdef, cpdef support to sage-coverage",
     "created_at": "2008-01-16T18:06:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1795",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_011362.json:
 }
 ```
 
-Attachment
+Attachment [cdef-coverage.patch](tarball://root/attachments/some-uuid/ticket1795/cdef-coverage.patch) by roed created at 2008-01-16 18:06:42
 
 Adds cdef, cpdef support to sage-coverage
 
@@ -89,7 +89,7 @@ A minor fix to how Python classes are printed
 archive/issue_comments_011365.json:
 ```json
 {
-    "body": "Attachment\n\nIt gives reasonable output on sage -coverageall and gives reasonable output on a few selected files (integer.pyx, padic_capped_relative_element.pyx, graph.py).",
+    "body": "Attachment [class-coverage.patch](tarball://root/attachments/some-uuid/ticket1795/class-coverage.patch) by roed created at 2008-01-16 19:31:14\n\nIt gives reasonable output on sage -coverageall and gives reasonable output on a few selected files (integer.pyx, padic_capped_relative_element.pyx, graph.py).",
     "created_at": "2008-01-16T19:31:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1795",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_011365.json:
 }
 ```
 
-Attachment
+Attachment [class-coverage.patch](tarball://root/attachments/some-uuid/ticket1795/class-coverage.patch) by roed created at 2008-01-16 19:31:14
 
 It gives reasonable output on sage -coverageall and gives reasonable output on a few selected files (integer.pyx, padic_capped_relative_element.pyx, graph.py).
 

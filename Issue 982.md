@@ -108,7 +108,7 @@ sage: latex(abs(x))
 archive/issue_comments_006012.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [982.patch](tarball://root/attachments/some-uuid/ticket982/982.patch) by mhansen created at 2007-10-24 17:50:02",
     "created_at": "2007-10-24T17:50:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/982",
     "type": "issue_comment",
@@ -117,7 +117,7 @@ archive/issue_comments_006012.json:
 }
 ```
 
-Attachment
+Attachment [982.patch](tarball://root/attachments/some-uuid/ticket982/982.patch) by mhansen created at 2007-10-24 17:50:02
 
 
 

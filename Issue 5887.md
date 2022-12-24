@@ -131,7 +131,7 @@ Total time for all tests: 3.4 seconds
 archive/issue_comments_046546.json:
 ```json
 {
-    "body": "Attachment\n\nOK, I fixed the patch.",
+    "body": "Attachment [trac_5887.patch](tarball://root/attachments/some-uuid/ticket5887/trac_5887.patch) by was created at 2009-04-24 07:03:49\n\nOK, I fixed the patch.",
     "created_at": "2009-04-24T07:03:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5887",
     "type": "issue_comment",
@@ -140,7 +140,7 @@ archive/issue_comments_046546.json:
 }
 ```
 
-Attachment
+Attachment [trac_5887.patch](tarball://root/attachments/some-uuid/ticket5887/trac_5887.patch) by was created at 2009-04-24 07:03:49
 
 OK, I fixed the patch.
 
@@ -226,7 +226,7 @@ this is rebased against 3.4.2.rc0
 archive/issue_comments_046550.json:
 ```json
 {
-    "body": "Attachment\n\nThis isn't being folded into #5882, and I do not view the \"current situation\" as at all messed up. There are three tickets: \n    #5886, #5887, and #5882.  \n\n#5886 is first, then #5887, then finally #5882.   \n\nI just applied #5886 and this rebased #5887 to my 3.4.2.rc0 tree on sage.math, and \"sage -t devel/sage/sage\" passes all tests.",
+    "body": "Attachment [trac_5887-rebased_3.4.2.rc0.2.patch](tarball://root/attachments/some-uuid/ticket5887/trac_5887-rebased_3.4.2.rc0.2.patch) by was created at 2009-05-02 08:43:57\n\nThis isn't being folded into #5882, and I do not view the \"current situation\" as at all messed up. There are three tickets: \n    #5886, #5887, and #5882.  \n\n#5886 is first, then #5887, then finally #5882.   \n\nI just applied #5886 and this rebased #5887 to my 3.4.2.rc0 tree on sage.math, and \"sage -t devel/sage/sage\" passes all tests.",
     "created_at": "2009-05-02T08:43:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5887",
     "type": "issue_comment",
@@ -235,7 +235,7 @@ archive/issue_comments_046550.json:
 }
 ```
 
-Attachment
+Attachment [trac_5887-rebased_3.4.2.rc0.2.patch](tarball://root/attachments/some-uuid/ticket5887/trac_5887-rebased_3.4.2.rc0.2.patch) by was created at 2009-05-02 08:43:57
 
 This isn't being folded into #5882, and I do not view the "current situation" as at all messed up. There are three tickets: 
     #5886, #5887, and #5882.  
@@ -275,7 +275,7 @@ Looks good!  I have only a few minor issues, in `matrix_morphism.py`:
 archive/issue_comments_046552.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5887-part2-referee_comments.patch](tarball://root/attachments/some-uuid/ticket5887/trac_5887-part2-referee_comments.patch) by was created at 2009-05-02 22:56:20",
     "created_at": "2009-05-02T22:56:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5887",
     "type": "issue_comment",
@@ -284,7 +284,7 @@ archive/issue_comments_046552.json:
 }
 ```
 
-Attachment
+Attachment [trac_5887-part2-referee_comments.patch](tarball://root/attachments/some-uuid/ticket5887/trac_5887-part2-referee_comments.patch) by was created at 2009-05-02 22:56:20
 
 
 

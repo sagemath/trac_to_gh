@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4686
 archive/issue_comments_035322.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4686-code.patch](tarball://root/attachments/some-uuid/ticket4686/4686-code.patch) by davidloeffler created at 2008-12-03 10:22:15",
     "created_at": "2008-12-03T10:22:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4686",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_035322.json:
 }
 ```
 
-Attachment
+Attachment [4686-code.patch](tarball://root/attachments/some-uuid/ticket4686/4686-code.patch) by davidloeffler created at 2008-12-03 10:22:15
 
 
 
@@ -49,7 +49,7 @@ Attachment
 archive/issue_comments_035323.json:
 ```json
 {
-    "body": "Attachment\n\nHere are two patches (one each for the hg_sage and hg_doc repositories).",
+    "body": "Attachment [4686-doc.patch](tarball://root/attachments/some-uuid/ticket4686/4686-doc.patch) by davidloeffler created at 2008-12-03 10:23:12\n\nHere are two patches (one each for the hg_sage and hg_doc repositories).",
     "created_at": "2008-12-03T10:23:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4686",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_035323.json:
 }
 ```
 
-Attachment
+Attachment [4686-doc.patch](tarball://root/attachments/some-uuid/ticket4686/4686-doc.patch) by davidloeffler created at 2008-12-03 10:23:12
 
 Here are two patches (one each for the hg_sage and hg_doc repositories).
 

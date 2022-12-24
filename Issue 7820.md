@@ -523,7 +523,7 @@ apply after the gfan-0.4plus spkg
 archive/issue_comments_067695.json:
 ```json
 {
-    "body": "Attachment\n\nOK, I have replaced the spkg with one that has the small fixes to David's version.  See the ticket description for the URL.  This spkg also patches `src/polynomial.cpp` to fix a bug that appeared in gfan-0.4plus and was caught by one of our doctests (YAY for doctests!)\n\nI have also replaced the patch to the Sage library with one that deals with all the issues raised by the upgrade.  All of this is now ready for review.",
+    "body": "Attachment [trac_7820.patch](tarball://root/attachments/some-uuid/ticket7820/trac_7820.patch) by AlexGhitza created at 2010-01-06 14:01:44\n\nOK, I have replaced the spkg with one that has the small fixes to David's version.  See the ticket description for the URL.  This spkg also patches `src/polynomial.cpp` to fix a bug that appeared in gfan-0.4plus and was caught by one of our doctests (YAY for doctests!)\n\nI have also replaced the patch to the Sage library with one that deals with all the issues raised by the upgrade.  All of this is now ready for review.",
     "created_at": "2010-01-06T14:01:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7820",
     "type": "issue_comment",
@@ -532,7 +532,7 @@ archive/issue_comments_067695.json:
 }
 ```
 
-Attachment
+Attachment [trac_7820.patch](tarball://root/attachments/some-uuid/ticket7820/trac_7820.patch) by AlexGhitza created at 2010-01-06 14:01:44
 
 OK, I have replaced the spkg with one that has the small fixes to David's version.  See the ticket description for the URL.  This spkg also patches `src/polynomial.cpp` to fix a bug that appeared in gfan-0.4plus and was caught by one of our doctests (YAY for doctests!)
 

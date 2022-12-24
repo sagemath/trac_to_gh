@@ -253,7 +253,7 @@ The attached patch addresses William's counterexample, and should be applied aft
 archive/issue_comments_017291.json:
 ```json
 {
-    "body": "Attachment\n\nFinal version of patch attached, with one or two small improvements over previous.",
+    "body": "Attachment [trac-2535-final.patch](tarball://root/attachments/some-uuid/ticket2535/trac-2535-final.patch) by craigcitro created at 2009-01-22 20:33:23\n\nFinal version of patch attached, with one or two small improvements over previous.",
     "created_at": "2009-01-22T20:33:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2535",
     "type": "issue_comment",
@@ -262,7 +262,7 @@ archive/issue_comments_017291.json:
 }
 ```
 
-Attachment
+Attachment [trac-2535-final.patch](tarball://root/attachments/some-uuid/ticket2535/trac-2535-final.patch) by craigcitro created at 2009-01-22 20:33:23
 
 Final version of patch attached, with one or two small improvements over previous.
 

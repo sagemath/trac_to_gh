@@ -74,7 +74,7 @@ Here's a patch; apply to the scripts repository.
 archive/issue_comments_035527.json:
 ```json
 {
-    "body": "Attachment\n\nFine by me.",
+    "body": "Attachment [trac_4712_scripts.patch](tarball://root/attachments/some-uuid/ticket4712/trac_4712_scripts.patch) by ncalexan created at 2009-06-15 19:09:00\n\nFine by me.",
     "created_at": "2009-06-15T19:09:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4712",
     "type": "issue_comment",
@@ -83,7 +83,7 @@ archive/issue_comments_035527.json:
 }
 ```
 
-Attachment
+Attachment [trac_4712_scripts.patch](tarball://root/attachments/some-uuid/ticket4712/trac_4712_scripts.patch) by ncalexan created at 2009-06-15 19:09:00
 
 Fine by me.
 

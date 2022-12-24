@@ -57,7 +57,7 @@ Michael
 archive/issue_comments_032954.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-4463.patch](tarball://root/attachments/some-uuid/ticket4463/trac-4463.patch) by craigcitro created at 2008-11-23 11:12:04",
     "created_at": "2008-11-23T11:12:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4463",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_032954.json:
 }
 ```
 
-Attachment
+Attachment [trac-4463.patch](tarball://root/attachments/some-uuid/ticket4463/trac-4463.patch) by craigcitro created at 2008-11-23 11:12:04
 
 
 
@@ -296,7 +296,7 @@ Michael
 archive/issue_comments_032965.json:
 ```json
 {
-    "body": "Attachment\n\nAdded a new patch that fixes the doctest failure. It was just a question of calling the free module constructor appropriately; this version is even ever so slightly faster than before.",
+    "body": "Attachment [trac-4463-pt2.patch](tarball://root/attachments/some-uuid/ticket4463/trac-4463-pt2.patch) by craigcitro created at 2008-11-24 04:31:16\n\nAdded a new patch that fixes the doctest failure. It was just a question of calling the free module constructor appropriately; this version is even ever so slightly faster than before.",
     "created_at": "2008-11-24T04:31:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4463",
     "type": "issue_comment",
@@ -305,7 +305,7 @@ archive/issue_comments_032965.json:
 }
 ```
 
-Attachment
+Attachment [trac-4463-pt2.patch](tarball://root/attachments/some-uuid/ticket4463/trac-4463-pt2.patch) by craigcitro created at 2008-11-24 04:31:16
 
 Added a new patch that fixes the doctest failure. It was just a question of calling the free module constructor appropriately; this version is even ever so slightly faster than before.
 

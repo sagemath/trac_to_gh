@@ -50,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6625
 archive/issue_comments_054277.json:
 ```json
 {
-    "body": "Attachment\n\nThe `sage-make_devel_packages` explicitly set the x bit on all `sage-*` files.",
+    "body": "Attachment [scripts_6625_no_x_bit.patch](tarball://root/attachments/some-uuid/ticket6625/scripts_6625_no_x_bit.patch) by wjp created at 2010-01-19 02:18:05\n\nThe `sage-make_devel_packages` explicitly set the x bit on all `sage-*` files.",
     "created_at": "2010-01-19T02:18:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6625",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_054277.json:
 }
 ```
 
-Attachment
+Attachment [scripts_6625_no_x_bit.patch](tarball://root/attachments/some-uuid/ticket6625/scripts_6625_no_x_bit.patch) by wjp created at 2010-01-19 02:18:05
 
 The `sage-make_devel_packages` explicitly set the x bit on all `sage-*` files.
 
@@ -88,7 +88,7 @@ Changing status from new to needs_review.
 archive/issue_comments_054279.json:
 ```json
 {
-    "body": "Attachment\n\nrebased against Sage 4.3.1.rc1; apply to SAGE_LOCAL/bin",
+    "body": "Attachment [trac_6625-no-x-bit.patch](tarball://root/attachments/some-uuid/ticket6625/trac_6625-no-x-bit.patch) by mvngu created at 2010-01-19 17:26:07\n\nrebased against Sage 4.3.1.rc1; apply to SAGE_LOCAL/bin",
     "created_at": "2010-01-19T17:26:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6625",
     "type": "issue_comment",
@@ -97,7 +97,7 @@ archive/issue_comments_054279.json:
 }
 ```
 
-Attachment
+Attachment [trac_6625-no-x-bit.patch](tarball://root/attachments/some-uuid/ticket6625/trac_6625-no-x-bit.patch) by mvngu created at 2010-01-19 17:26:07
 
 rebased against Sage 4.3.1.rc1; apply to SAGE_LOCAL/bin
 

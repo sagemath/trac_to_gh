@@ -71,7 +71,7 @@ Changing status from new to needs_review.
 archive/issue_comments_075489.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8422-chain_poset_fix-fh.patch](tarball://root/attachments/some-uuid/ticket8422/trac_8422-chain_poset_fix-fh.patch) by hivert created at 2010-03-02 18:13:37",
     "created_at": "2010-03-02T18:13:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8422",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_075489.json:
 }
 ```
 
-Attachment
+Attachment [trac_8422-chain_poset_fix-fh.patch](tarball://root/attachments/some-uuid/ticket8422/trac_8422-chain_poset_fix-fh.patch) by hivert created at 2010-03-02 18:13:37
 
 
 

@@ -162,7 +162,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_063681.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sagelib_7517.patch](tarball://root/attachments/some-uuid/ticket7517/sagelib_7517.patch) by AlexGhitza created at 2009-12-08 09:52:44",
     "created_at": "2009-12-08T09:52:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7517",
     "type": "issue_comment",
@@ -171,7 +171,7 @@ archive/issue_comments_063681.json:
 }
 ```
 
-Attachment
+Attachment [sagelib_7517.patch](tarball://root/attachments/some-uuid/ticket7517/sagelib_7517.patch) by AlexGhitza created at 2009-12-08 09:52:44
 
 
 

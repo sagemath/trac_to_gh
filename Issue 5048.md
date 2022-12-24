@@ -111,7 +111,7 @@ Changing component from number theory to modular forms.
 archive/issue_comments_038447.json:
 ```json
 {
-    "body": "Attachment\n\npatch against 4.6.1.alpha3",
+    "body": "Attachment [trac_5048-sl2z_coercion.patch](tarball://root/attachments/some-uuid/ticket5048/trac_5048-sl2z_coercion.patch) by davidloeffler created at 2010-12-09 20:51:47\n\npatch against 4.6.1.alpha3",
     "created_at": "2010-12-09T20:51:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5048",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_038447.json:
 }
 ```
 
-Attachment
+Attachment [trac_5048-sl2z_coercion.patch](tarball://root/attachments/some-uuid/ticket5048/trac_5048-sl2z_coercion.patch) by davidloeffler created at 2010-12-09 20:51:47
 
 patch against 4.6.1.alpha3
 
@@ -167,7 +167,7 @@ Here's a patch. I thought the simplest solution was to arrange that the parent o
 archive/issue_comments_038450.json:
 ```json
 {
-    "body": "Attachment\n\nVersion that will apply happily after #10452",
+    "body": "Attachment [trac_5048-sl2z_coercion-rebased_for_10452.patch](tarball://root/attachments/some-uuid/ticket5048/trac_5048-sl2z_coercion-rebased_for_10452.patch) by davidloeffler created at 2010-12-09 21:06:36\n\nVersion that will apply happily after #10452",
     "created_at": "2010-12-09T21:06:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5048",
     "type": "issue_comment",
@@ -176,7 +176,7 @@ archive/issue_comments_038450.json:
 }
 ```
 
-Attachment
+Attachment [trac_5048-sl2z_coercion-rebased_for_10452.patch](tarball://root/attachments/some-uuid/ticket5048/trac_5048-sl2z_coercion-rebased_for_10452.patch) by davidloeffler created at 2010-12-09 21:06:36
 
 Version that will apply happily after #10452
 
@@ -278,7 +278,7 @@ version rebased to 4.7.1.alpha4 + #11422
 archive/issue_comments_038456.json:
 ```json
 {
-    "body": "Attachment\n\nI've uploaded a version that is rebased to apply happily over the positively-reviewed patch #11422. This is intended to form part of a series #10335 - #11422 - #11598 - this ticket - #10453 -\n #11601; but the patch itself is **independent** of #11598 and of the tickets later in the series.",
+    "body": "Attachment [trac_5048-rebased_for_11422.patch](tarball://root/attachments/some-uuid/ticket5048/trac_5048-rebased_for_11422.patch) by davidloeffler created at 2011-07-15 15:29:44\n\nI've uploaded a version that is rebased to apply happily over the positively-reviewed patch #11422. This is intended to form part of a series #10335 - #11422 - #11598 - this ticket - #10453 -\n #11601; but the patch itself is **independent** of #11598 and of the tickets later in the series.",
     "created_at": "2011-07-15T15:29:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5048",
     "type": "issue_comment",
@@ -287,7 +287,7 @@ archive/issue_comments_038456.json:
 }
 ```
 
-Attachment
+Attachment [trac_5048-rebased_for_11422.patch](tarball://root/attachments/some-uuid/ticket5048/trac_5048-rebased_for_11422.patch) by davidloeffler created at 2011-07-15 15:29:44
 
 I've uploaded a version that is rebased to apply happily over the positively-reviewed patch #11422. This is intended to form part of a series #10335 - #11422 - #11598 - this ticket - #10453 -
  #11601; but the patch itself is **independent** of #11598 and of the tickets later in the series.
@@ -543,7 +543,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_038469.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5048-missingdoctest.patch](tarball://root/attachments/some-uuid/ticket5048/trac_5048-missingdoctest.patch) by davidloeffler created at 2011-12-17 22:35:40",
     "created_at": "2011-12-17T22:35:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5048",
     "type": "issue_comment",
@@ -552,7 +552,7 @@ archive/issue_comments_038469.json:
 }
 ```
 
-Attachment
+Attachment [trac_5048-missingdoctest.patch](tarball://root/attachments/some-uuid/ticket5048/trac_5048-missingdoctest.patch) by davidloeffler created at 2011-12-17 22:35:40
 
 
 
@@ -561,7 +561,7 @@ Attachment
 archive/issue_comments_038470.json:
 ```json
 {
-    "body": "Attachment\n\nNOT NEEDED! See comments",
+    "body": "Attachment [trac_5048-missingdoctest.2.patch](tarball://root/attachments/some-uuid/ticket5048/trac_5048-missingdoctest.2.patch) by davidloeffler created at 2011-12-17 22:39:29\n\nNOT NEEDED! See comments",
     "created_at": "2011-12-17T22:39:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5048",
     "type": "issue_comment",
@@ -570,7 +570,7 @@ archive/issue_comments_038470.json:
 }
 ```
 
-Attachment
+Attachment [trac_5048-missingdoctest.2.patch](tarball://root/attachments/some-uuid/ticket5048/trac_5048-missingdoctest.2.patch) by davidloeffler created at 2011-12-17 22:39:29
 
 NOT NEEDED! See comments
 

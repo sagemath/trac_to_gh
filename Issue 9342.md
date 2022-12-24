@@ -110,7 +110,7 @@ Applies to 4.4.4
 archive/issue_comments_088259.json:
 ```json
 {
-    "body": "Attachment\n\nI converted Lloyd's code into a patch.\n\nThe ticket description can now be abbreviated!",
+    "body": "Attachment [trac_9342-rank.patch](tarball://root/attachments/some-uuid/ticket9342/trac_9342-rank.patch) by cremona created at 2010-06-26 00:41:11\n\nI converted Lloyd's code into a patch.\n\nThe ticket description can now be abbreviated!",
     "created_at": "2010-06-26T00:41:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9342",
     "type": "issue_comment",
@@ -119,7 +119,7 @@ archive/issue_comments_088259.json:
 }
 ```
 
-Attachment
+Attachment [trac_9342-rank.patch](tarball://root/attachments/some-uuid/ticket9342/trac_9342-rank.patch) by cremona created at 2010-06-26 00:41:11
 
 I converted Lloyd's code into a patch.
 
@@ -150,7 +150,7 @@ replaces the previous patch
 archive/issue_comments_088261.json:
 ```json
 {
-    "body": "Attachment\n\nThis contains rank, rank_bounds, and gens all from simon_two_descent.  We also implemented caching in simon_two_descent.",
+    "body": "Attachment [trac_9342-rank.2.patch](tarball://root/attachments/some-uuid/ticket9342/trac_9342-rank.2.patch) by aly.deines created at 2010-06-29 05:44:49\n\nThis contains rank, rank_bounds, and gens all from simon_two_descent.  We also implemented caching in simon_two_descent.",
     "created_at": "2010-06-29T05:44:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9342",
     "type": "issue_comment",
@@ -159,7 +159,7 @@ archive/issue_comments_088261.json:
 }
 ```
 
-Attachment
+Attachment [trac_9342-rank.2.patch](tarball://root/attachments/some-uuid/ticket9342/trac_9342-rank.2.patch) by aly.deines created at 2010-06-29 05:44:49
 
 This contains rank, rank_bounds, and gens all from simon_two_descent.  We also implemented caching in simon_two_descent.
 
@@ -302,7 +302,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_088267.json:
 ```json
 {
-    "body": "Attachment\n\nPerhaps I was being a bit harsh: most of the ReST formatting errors were already present in the docstring of `simon_two_descent`, so they're not your fault. I've done a small patch which fixes these, and also slightly changes the behaviour of `rank` when 2-descent doesn't precisely nail the rank down (in the original version, it didn't report the upper and lower bounds in the error message, although the docstring claimed it did). \n\nIf you're happy with my changes, then feel free to set this to \"positive review\".",
+    "body": "Attachment [trac_9342_review.patch](tarball://root/attachments/some-uuid/ticket9342/trac_9342_review.patch) by davidloeffler created at 2010-06-29 14:08:52\n\nPerhaps I was being a bit harsh: most of the ReST formatting errors were already present in the docstring of `simon_two_descent`, so they're not your fault. I've done a small patch which fixes these, and also slightly changes the behaviour of `rank` when 2-descent doesn't precisely nail the rank down (in the original version, it didn't report the upper and lower bounds in the error message, although the docstring claimed it did). \n\nIf you're happy with my changes, then feel free to set this to \"positive review\".",
     "created_at": "2010-06-29T14:08:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9342",
     "type": "issue_comment",
@@ -311,7 +311,7 @@ archive/issue_comments_088267.json:
 }
 ```
 
-Attachment
+Attachment [trac_9342_review.patch](tarball://root/attachments/some-uuid/ticket9342/trac_9342_review.patch) by davidloeffler created at 2010-06-29 14:08:52
 
 Perhaps I was being a bit harsh: most of the ReST formatting errors were already present in the docstring of `simon_two_descent`, so they're not your fault. I've done a small patch which fixes these, and also slightly changes the behaviour of `rank` when 2-descent doesn't precisely nail the rank down (in the original version, it didn't report the upper and lower bounds in the error message, although the docstring claimed it did). 
 

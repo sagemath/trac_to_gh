@@ -51,7 +51,7 @@ Add the notebook key-bindings module to the reference manual.  Apply to sage rep
 archive/issue_comments_058799.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7104-add_keys_to_ref_manual.patch](tarball://root/attachments/some-uuid/ticket7104/trac_7104-add_keys_to_ref_manual.patch) by mpatel created at 2009-10-04 02:21:00",
     "created_at": "2009-10-04T02:21:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7104",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_058799.json:
 }
 ```
 
-Attachment
+Attachment [trac_7104-add_keys_to_ref_manual.patch](tarball://root/attachments/some-uuid/ticket7104/trac_7104-add_keys_to_ref_manual.patch) by mpatel created at 2009-10-04 02:21:00
 
 
 

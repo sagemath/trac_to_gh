@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9944
 archive/issue_comments_099003.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9944-poly-cat.patch](tarball://root/attachments/some-uuid/ticket9944/9944-poly-cat.patch) by robertwb created at 2010-09-18 22:41:54",
     "created_at": "2010-09-18T22:41:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_099003.json:
 }
 ```
 
-Attachment
+Attachment [9944-poly-cat.patch](tarball://root/attachments/some-uuid/ticket9944/9944-poly-cat.patch) by robertwb created at 2010-09-18 22:41:54
 
 
 
@@ -93,7 +93,7 @@ Cheers
 archive/issue_comments_099006.json:
 ```json
 {
-    "body": "Attachment\n\nI went ahead and moved the functionality to it's own category since we want the mathematical information at the category level. \u00a0Could someone look over these changes?",
+    "body": "Attachment [trac_9944.patch](tarball://root/attachments/some-uuid/ticket9944/trac_9944.patch) by mhansen created at 2010-09-20 05:22:42\n\nI went ahead and moved the functionality to it's own category since we want the mathematical information at the category level. \u00a0Could someone look over these changes?",
     "created_at": "2010-09-20T05:22:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -102,7 +102,7 @@ archive/issue_comments_099006.json:
 }
 ```
 
-Attachment
+Attachment [trac_9944.patch](tarball://root/attachments/some-uuid/ticket9944/trac_9944.patch) by mhansen created at 2010-09-20 05:22:42
 
 I went ahead and moved the functionality to it's own category since we want the mathematical information at the category level.  Could someone look over these changes?
 
@@ -151,7 +151,7 @@ Apply only 9944-poly-cat.patch
 archive/issue_comments_099009.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9944-poly-cat-doctests.patch](tarball://root/attachments/some-uuid/ticket9944/9944-poly-cat-doctests.patch) by robertwb created at 2011-01-26 06:26:13",
     "created_at": "2011-01-26T06:26:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -160,7 +160,7 @@ archive/issue_comments_099009.json:
 }
 ```
 
-Attachment
+Attachment [9944-poly-cat-doctests.patch](tarball://root/attachments/some-uuid/ticket9944/9944-poly-cat-doctests.patch) by robertwb created at 2011-01-26 06:26:13
 
 
 
@@ -187,7 +187,7 @@ Apply 9944-poly-cat.patch and 9944-poly-cat-doctests.patch .
 archive/issue_comments_099011.json:
 ```json
 {
-    "body": "Attachment\n\nI would give this a positive review for Robert's idea and I would open a new ticket for the multivariate rings. I'll just send a mail to Mike whether he is ok with that or no.",
+    "body": "Attachment [trac-9944-poly-cat-review.patch](tarball://root/attachments/some-uuid/ticket9944/trac-9944-poly-cat-review.patch) by mraum created at 2011-03-23 19:21:32\n\nI would give this a positive review for Robert's idea and I would open a new ticket for the multivariate rings. I'll just send a mail to Mike whether he is ok with that or no.",
     "created_at": "2011-03-23T19:21:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -196,7 +196,7 @@ archive/issue_comments_099011.json:
 }
 ```
 
-Attachment
+Attachment [trac-9944-poly-cat-review.patch](tarball://root/attachments/some-uuid/ticket9944/trac-9944-poly-cat-review.patch) by mraum created at 2011-03-23 19:21:32
 
 I would give this a positive review for Robert's idea and I would open a new ticket for the multivariate rings. I'll just send a mail to Mike whether he is ok with that or no.
 
@@ -411,7 +411,7 @@ Call Parent.__init__ during initialisation of a ring
 archive/issue_comments_099021.json:
 ```json
 {
-    "body": "Attachment\n\nI attached a small patch to solve part of the problem of the missing parent initialisation: I call `Parent.__init__` and `ParentWithGens.__init__` explicitly, during initialisation of a ring. In that way, the `__init_extra__` methods are correctly picked up.\n\nHowever, that does not solve the performance problem.\n\nQuestion one: How can one come to speed?\n\nQuestion two: Is my patch really trivial enough to be called a referee patch?\n\nFor the patchbot:\n\nApply 9944-poly-cat.patch 9944-poly-cat-doctests.patch trac-9944-poly-cat-review.patch trac9944_second_referee.patch",
+    "body": "Attachment [trac9944_second_referee.patch](tarball://root/attachments/some-uuid/ticket9944/trac9944_second_referee.patch) by SimonKing created at 2011-03-30 11:31:40\n\nI attached a small patch to solve part of the problem of the missing parent initialisation: I call `Parent.__init__` and `ParentWithGens.__init__` explicitly, during initialisation of a ring. In that way, the `__init_extra__` methods are correctly picked up.\n\nHowever, that does not solve the performance problem.\n\nQuestion one: How can one come to speed?\n\nQuestion two: Is my patch really trivial enough to be called a referee patch?\n\nFor the patchbot:\n\nApply 9944-poly-cat.patch 9944-poly-cat-doctests.patch trac-9944-poly-cat-review.patch trac9944_second_referee.patch",
     "created_at": "2011-03-30T11:31:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -420,7 +420,7 @@ archive/issue_comments_099021.json:
 }
 ```
 
-Attachment
+Attachment [trac9944_second_referee.patch](tarball://root/attachments/some-uuid/ticket9944/trac9944_second_referee.patch) by SimonKing created at 2011-03-30 11:31:40
 
 I attached a small patch to solve part of the problem of the missing parent initialisation: I call `Parent.__init__` and `ParentWithGens.__init__` explicitly, during initialisation of a ring. In that way, the `__init_extra__` methods are correctly picked up.
 
@@ -855,7 +855,7 @@ Cheers,
 archive/issue_comments_099034.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-9944-poly_cat_doctests.patch](tarball://root/attachments/some-uuid/ticket9944/trac-9944-poly_cat_doctests.patch) by mraum created at 2011-04-01 00:33:33",
     "created_at": "2011-04-01T00:33:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -864,7 +864,7 @@ archive/issue_comments_099034.json:
 }
 ```
 
-Attachment
+Attachment [trac-9944-poly_cat_doctests.patch](tarball://root/attachments/some-uuid/ticket9944/trac-9944-poly_cat_doctests.patch) by mraum created at 2011-04-01 00:33:33
 
 
 
@@ -1113,7 +1113,7 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_099046.json:
 ```json
 {
-    "body": "Attachment\n\nNow it seems solved. `sage -docbuild all html` did not complain!\n\nApply 9944-poly-cat.patch 9944-poly-cat-doctests.patch trac-9944-poly-cat-review.patch trac9944_polynomial_speedup.patch",
+    "body": "Attachment [trac9944_polynomial_speedup.patch](tarball://root/attachments/some-uuid/ticket9944/trac9944_polynomial_speedup.patch) by SimonKing created at 2011-04-13 14:14:03\n\nNow it seems solved. `sage -docbuild all html` did not complain!\n\nApply 9944-poly-cat.patch 9944-poly-cat-doctests.patch trac-9944-poly-cat-review.patch trac9944_polynomial_speedup.patch",
     "created_at": "2011-04-13T14:14:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -1122,7 +1122,7 @@ archive/issue_comments_099046.json:
 }
 ```
 
-Attachment
+Attachment [trac9944_polynomial_speedup.patch](tarball://root/attachments/some-uuid/ticket9944/trac9944_polynomial_speedup.patch) by SimonKing created at 2011-04-13 14:14:03
 
 Now it seems solved. `sage -docbuild all html` did not complain!
 
@@ -1451,7 +1451,7 @@ Simon
 archive/issue_comments_099060.json:
 ```json
 {
-    "body": "Attachment\n\nFix a problem with initialisation of endomorphism rings of abelian varieties on 32 bit",
+    "body": "Attachment [trac9944_abvar_endomorphism.patch](tarball://root/attachments/some-uuid/ticket9944/trac9944_abvar_endomorphism.patch) by SimonKing created at 2011-05-06 13:41:21\n\nFix a problem with initialisation of endomorphism rings of abelian varieties on 32 bit",
     "created_at": "2011-05-06T13:41:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -1460,7 +1460,7 @@ archive/issue_comments_099060.json:
 }
 ```
 
-Attachment
+Attachment [trac9944_abvar_endomorphism.patch](tarball://root/attachments/some-uuid/ticket9944/trac9944_abvar_endomorphism.patch) by SimonKing created at 2011-05-06 13:41:21
 
 Fix a problem with initialisation of endomorphism rings of abelian varieties on 32 bit
 
@@ -2739,7 +2739,7 @@ diff file for old and new patch version
 archive/issue_comments_099099.json:
 ```json
 {
-    "body": "Attachment\n\nI also added the result of `diff trac9944_faster_and_cleaner_coercion.patch.orig trac9944_faster_and_cleaner_coercion.patch`, where `trac9944_faster_and_cleaner_coercion.patch.orig` is the patch version from before Mai 16, if that helps with the review.",
+    "body": "Attachment [9944diff](tarball://root/attachments/some-uuid/ticket9944/9944diff) by SimonKing created at 2011-05-18 14:06:56\n\nI also added the result of `diff trac9944_faster_and_cleaner_coercion.patch.orig trac9944_faster_and_cleaner_coercion.patch`, where `trac9944_faster_and_cleaner_coercion.patch.orig` is the patch version from before Mai 16, if that helps with the review.",
     "created_at": "2011-05-18T14:06:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -2748,7 +2748,7 @@ archive/issue_comments_099099.json:
 }
 ```
 
-Attachment
+Attachment [9944diff](tarball://root/attachments/some-uuid/ticket9944/9944diff) by SimonKing created at 2011-05-18 14:06:56
 
 I also added the result of `diff trac9944_faster_and_cleaner_coercion.patch.orig trac9944_faster_and_cleaner_coercion.patch`, where `trac9944_faster_and_cleaner_coercion.patch.orig` is the patch version from before Mai 16, if that helps with the review.
 
@@ -2996,7 +2996,7 @@ Enforce uniqueness of parents for polynomial rings; further perfomance improveme
 archive/issue_comments_099109.json:
 ```json
 {
-    "body": "Attachment\n\nWith the new patch version, we have\n\n```\nsage: K.<a>=GF(next_prime(2**60)**3)\nsage: R.<x> = PolynomialRing(K,implementation='NTL')\nsage: R([3,'1234'])\n1234*x + 3\nsage: R([3,'12e34'])\nTraceback (most recent call last):\n...\nTypeError: unable to convert '12e34' into the base ring\nsage: R([3,x])\nTraceback (most recent call last):\n...\nTypeError: unable to convert x into the base ring\n```\n\nSo, a conversion is attempted, and the error message is mentioning conversion and not coercion.\n\nThe tests of polynomial_zz_pex.pyx pass. I didn't test the rest of Sage.",
+    "body": "Attachment [trac9944_faster_and_cleaner_coercion.patch](tarball://root/attachments/some-uuid/ticket9944/trac9944_faster_and_cleaner_coercion.patch) by SimonKing created at 2011-05-19 10:48:07\n\nWith the new patch version, we have\n\n```\nsage: K.<a>=GF(next_prime(2**60)**3)\nsage: R.<x> = PolynomialRing(K,implementation='NTL')\nsage: R([3,'1234'])\n1234*x + 3\nsage: R([3,'12e34'])\nTraceback (most recent call last):\n...\nTypeError: unable to convert '12e34' into the base ring\nsage: R([3,x])\nTraceback (most recent call last):\n...\nTypeError: unable to convert x into the base ring\n```\n\nSo, a conversion is attempted, and the error message is mentioning conversion and not coercion.\n\nThe tests of polynomial_zz_pex.pyx pass. I didn't test the rest of Sage.",
     "created_at": "2011-05-19T10:48:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -3005,7 +3005,7 @@ archive/issue_comments_099109.json:
 }
 ```
 
-Attachment
+Attachment [trac9944_faster_and_cleaner_coercion.patch](tarball://root/attachments/some-uuid/ticket9944/trac9944_faster_and_cleaner_coercion.patch) by SimonKing created at 2011-05-19 10:48:07
 
 With the new patch version, we have
 
@@ -3035,7 +3035,7 @@ The tests of polynomial_zz_pex.pyx pass. I didn't test the rest of Sage.
 archive/issue_comments_099110.json:
 ```json
 {
-    "body": "Attachment\n\nRebase to 4.7.1.alpha0",
+    "body": "Attachment [trac9944_faster_and_cleaner_coercion.2.patch](tarball://root/attachments/some-uuid/ticket9944/trac9944_faster_and_cleaner_coercion.2.patch) by mraum created at 2011-05-19 12:43:14\n\nRebase to 4.7.1.alpha0",
     "created_at": "2011-05-19T12:43:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -3044,7 +3044,7 @@ archive/issue_comments_099110.json:
 }
 ```
 
-Attachment
+Attachment [trac9944_faster_and_cleaner_coercion.2.patch](tarball://root/attachments/some-uuid/ticket9944/trac9944_faster_and_cleaner_coercion.2.patch) by mraum created at 2011-05-19 12:43:14
 
 Rebase to 4.7.1.alpha0
 
@@ -3073,7 +3073,7 @@ Rebase to 4.7.1.alpha0
 archive/issue_comments_099112.json:
 ```json
 {
-    "body": "Attachment\n\nI couldn't replace the patches so the rebased versions have new names. I will attach a diff file in a second (only line numbers changed).\n\nEverything looks good to me now. I just want to run all tests one more time and then this can get a positive review.",
+    "body": "Attachment [trac-9944-polynomial_speedup.patch](tarball://root/attachments/some-uuid/ticket9944/trac-9944-polynomial_speedup.patch) by mraum created at 2011-05-19 12:47:37\n\nI couldn't replace the patches so the rebased versions have new names. I will attach a diff file in a second (only line numbers changed).\n\nEverything looks good to me now. I just want to run all tests one more time and then this can get a positive review.",
     "created_at": "2011-05-19T12:47:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -3082,7 +3082,7 @@ archive/issue_comments_099112.json:
 }
 ```
 
-Attachment
+Attachment [trac-9944-polynomial_speedup.patch](tarball://root/attachments/some-uuid/ticket9944/trac-9944-polynomial_speedup.patch) by mraum created at 2011-05-19 12:47:37
 
 I couldn't replace the patches so the rebased versions have new names. I will attach a diff file in a second (only line numbers changed).
 
@@ -3095,7 +3095,7 @@ Everything looks good to me now. I just want to run all tests one more time and 
 archive/issue_comments_099113.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [coerce.diff](tarball://root/attachments/some-uuid/ticket9944/coerce.diff) by mraum created at 2011-05-19 12:48:11",
     "created_at": "2011-05-19T12:48:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -3104,7 +3104,7 @@ archive/issue_comments_099113.json:
 }
 ```
 
-Attachment
+Attachment [coerce.diff](tarball://root/attachments/some-uuid/ticket9944/coerce.diff) by mraum created at 2011-05-19 12:48:11
 
 
 
@@ -3113,7 +3113,7 @@ Attachment
 archive/issue_comments_099114.json:
 ```json
 {
-    "body": "Attachment\n\nUpdating the apply statements.",
+    "body": "Attachment [speedup.diff](tarball://root/attachments/some-uuid/ticket9944/speedup.diff) by mraum created at 2011-05-19 12:49:45\n\nUpdating the apply statements.",
     "created_at": "2011-05-19T12:49:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -3122,7 +3122,7 @@ archive/issue_comments_099114.json:
 }
 ```
 
-Attachment
+Attachment [speedup.diff](tarball://root/attachments/some-uuid/ticket9944/speedup.diff) by mraum created at 2011-05-19 12:49:45
 
 Updating the apply statements.
 
@@ -3437,7 +3437,7 @@ One minor issue: [attachment:trac9944_addendum.patch] needs a proper commit mess
 archive/issue_comments_099129.json:
 ```json
 {
-    "body": "Attachment\n\nMaking one doctest safer",
+    "body": "Attachment [trac9944_addendum.patch](tarball://root/attachments/some-uuid/ticket9944/trac9944_addendum.patch) by SimonKing created at 2011-05-24 13:51:46\n\nMaking one doctest safer",
     "created_at": "2011-05-24T13:51:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -3446,7 +3446,7 @@ archive/issue_comments_099129.json:
 }
 ```
 
-Attachment
+Attachment [trac9944_addendum.patch](tarball://root/attachments/some-uuid/ticket9944/trac9944_addendum.patch) by SimonKing created at 2011-05-24 13:51:46
 
 Making one doctest safer
 

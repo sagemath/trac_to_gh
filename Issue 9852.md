@@ -86,7 +86,7 @@ Changing component from numerical to linear programming.
 archive/issue_comments_097241.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9853.patch](tarball://root/attachments/some-uuid/ticket9853/trac_9853.patch) by ncohen created at 2010-09-19 10:52:28",
     "created_at": "2010-09-19T10:52:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9852",
     "type": "issue_comment",
@@ -95,7 +95,7 @@ archive/issue_comments_097241.json:
 }
 ```
 
-Attachment
+Attachment [trac_9853.patch](tarball://root/attachments/some-uuid/ticket9853/trac_9853.patch) by ncohen created at 2010-09-19 10:52:28
 
 
 

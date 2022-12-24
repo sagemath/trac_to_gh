@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2664
 archive/issue_comments_018331.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2664-ncalexan-symplectic-form-1.patch](tarball://root/attachments/some-uuid/ticket2664/2664-ncalexan-symplectic-form-1.patch) by ncalexan created at 2008-03-25 19:29:49",
     "created_at": "2008-03-25T19:29:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2664",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_018331.json:
 }
 ```
 
-Attachment
+Attachment [2664-ncalexan-symplectic-form-1.patch](tarball://root/attachments/some-uuid/ticket2664/2664-ncalexan-symplectic-form-1.patch) by ncalexan created at 2008-03-25 19:29:49
 
 
 
@@ -79,7 +79,7 @@ Patch looks **great**! There are one or two tiny things I'd like to see fixed:
 archive/issue_comments_018333.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2664-ncalexan-symplectic-form-2.patch](tarball://root/attachments/some-uuid/ticket2664/2664-ncalexan-symplectic-form-2.patch) by ncalexan created at 2008-03-28 21:33:56",
     "created_at": "2008-03-28T21:33:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2664",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_018333.json:
 }
 ```
 
-Attachment
+Attachment [2664-ncalexan-symplectic-form-2.patch](tarball://root/attachments/some-uuid/ticket2664/2664-ncalexan-symplectic-form-2.patch) by ncalexan created at 2008-03-28 21:33:56
 
 
 

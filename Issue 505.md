@@ -162,7 +162,7 @@ Changing assignee from somebody to malb.
 archive/issue_comments_002529.json:
 ```json
 {
-    "body": "Attachment\n\nThis fixes the m4ri not being cleaned up issue, I hope.",
+    "body": "Attachment [m4ri_cleanup.patch](tarball://root/attachments/some-uuid/ticket505/m4ri_cleanup.patch) by was created at 2007-08-28 23:52:25\n\nThis fixes the m4ri not being cleaned up issue, I hope.",
     "created_at": "2007-08-28T23:52:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/505",
     "type": "issue_comment",
@@ -171,7 +171,7 @@ archive/issue_comments_002529.json:
 }
 ```
 
-Attachment
+Attachment [m4ri_cleanup.patch](tarball://root/attachments/some-uuid/ticket505/m4ri_cleanup.patch) by was created at 2007-08-28 23:52:25
 
 This fixes the m4ri not being cleaned up issue, I hope.
 

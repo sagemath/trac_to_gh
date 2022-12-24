@@ -115,7 +115,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_070713.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [mpfr-2.4.1.p1.patch](tarball://root/attachments/some-uuid/ticket8069/mpfr-2.4.1.p1.patch) by jsp created at 2010-01-26 18:34:07",
     "created_at": "2010-01-26T18:34:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8069",
     "type": "issue_comment",
@@ -124,7 +124,7 @@ archive/issue_comments_070713.json:
 }
 ```
 
-Attachment
+Attachment [mpfr-2.4.1.p1.patch](tarball://root/attachments/some-uuid/ticket8069/mpfr-2.4.1.p1.patch) by jsp created at 2010-01-26 18:34:07
 
 
 
@@ -151,7 +151,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_070715.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [mpfi-1.3.4-cvs20071125.p8.patch](tarball://root/attachments/some-uuid/ticket8069/mpfi-1.3.4-cvs20071125.p8.patch) by jsp created at 2010-01-26 18:53:16",
     "created_at": "2010-01-26T18:53:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8069",
     "type": "issue_comment",
@@ -160,7 +160,7 @@ archive/issue_comments_070715.json:
 }
 ```
 
-Attachment
+Attachment [mpfi-1.3.4-cvs20071125.p8.patch](tarball://root/attachments/some-uuid/ticket8069/mpfi-1.3.4-cvs20071125.p8.patch) by jsp created at 2010-01-26 18:53:16
 
 
 

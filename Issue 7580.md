@@ -1080,7 +1080,7 @@ Fixing the expected 32-bit hash; fixing one bug in groebner_basis (added as a do
 archive/issue_comments_064577.json:
 ```json
 {
-    "body": "Attachment\n\nIn the patch 7580_follow_up.patch, which is to be applied after the first patch, I do the following:\n\n1. Replace the expected 32-bit hash value by the one that William provided\n2. Fix one bug in groebner_basis() -- I just found it by creating some random ideals and computing the symmetric Gr\u00f6bner basis. The problem was that at some point it was not properly tested whether an element is a unit. By consequence, the 0-ideal instead of the 1-ideal was returned.\n3. Add this previously failing example as another doc test.\n\nI keep it \"needs work\", until I get some advice what to do with the inconsistent polynomial conversion. Perhaps one could just check that `InfinitePolynomial(X,alpha_2) != alpha_2`? This would be the case on both sage.math and your 32-bit Ubuntu. Acceptable solution?\n\nCheers,\n\nSimon",
+    "body": "Attachment [7580_follow_up.patch](tarball://root/attachments/some-uuid/ticket7580/7580_follow_up.patch) by SimonKing created at 2009-12-10 22:25:18\n\nIn the patch 7580_follow_up.patch, which is to be applied after the first patch, I do the following:\n\n1. Replace the expected 32-bit hash value by the one that William provided\n2. Fix one bug in groebner_basis() -- I just found it by creating some random ideals and computing the symmetric Gr\u00f6bner basis. The problem was that at some point it was not properly tested whether an element is a unit. By consequence, the 0-ideal instead of the 1-ideal was returned.\n3. Add this previously failing example as another doc test.\n\nI keep it \"needs work\", until I get some advice what to do with the inconsistent polynomial conversion. Perhaps one could just check that `InfinitePolynomial(X,alpha_2) != alpha_2`? This would be the case on both sage.math and your 32-bit Ubuntu. Acceptable solution?\n\nCheers,\n\nSimon",
     "created_at": "2009-12-10T22:25:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
@@ -1089,7 +1089,7 @@ archive/issue_comments_064577.json:
 }
 ```
 
-Attachment
+Attachment [7580_follow_up.patch](tarball://root/attachments/some-uuid/ticket7580/7580_follow_up.patch) by SimonKing created at 2009-12-10 22:25:18
 
 In the patch 7580_follow_up.patch, which is to be applied after the first patch, I do the following:
 
@@ -1588,7 +1588,7 @@ will make it apply cleanly.
 archive/issue_comments_064593.json:
 ```json
 {
-    "body": "Attachment\n\nMajor bug fixes and extensions for infinite polynomial rings",
+    "body": "Attachment [7580_fixes_and_extensions.patch](tarball://root/attachments/some-uuid/ticket7580/7580_fixes_and_extensions.patch) by SimonKing created at 2010-01-20 22:21:06\n\nMajor bug fixes and extensions for infinite polynomial rings",
     "created_at": "2010-01-20T22:21:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
@@ -1597,7 +1597,7 @@ archive/issue_comments_064593.json:
 }
 ```
 
-Attachment
+Attachment [7580_fixes_and_extensions.patch](tarball://root/attachments/some-uuid/ticket7580/7580_fixes_and_extensions.patch) by SimonKing created at 2010-01-20 22:21:06
 
 Major bug fixes and extensions for infinite polynomial rings
 
@@ -1771,7 +1771,7 @@ Simon
 archive/issue_comments_064599.json:
 ```json
 {
-    "body": "Attachment\n\nAllows to read old pickles of infinite polynomial rings",
+    "body": "Attachment [7580_unpickling.patch](tarball://root/attachments/some-uuid/ticket7580/7580_unpickling.patch) by SimonKing created at 2010-01-26 12:14:31\n\nAllows to read old pickles of infinite polynomial rings",
     "created_at": "2010-01-26T12:14:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
@@ -1780,7 +1780,7 @@ archive/issue_comments_064599.json:
 }
 ```
 
-Attachment
+Attachment [7580_unpickling.patch](tarball://root/attachments/some-uuid/ticket7580/7580_unpickling.patch) by SimonKing created at 2010-01-26 12:14:31
 
 Allows to read old pickles of infinite polynomial rings
 
@@ -1994,7 +1994,7 @@ Stand-alone patch relative to sage-4.3.2.alpha1
 archive/issue_comments_064609.json:
 ```json
 {
-    "body": "Attachment\n\nI produced a new patch relative to sage-4.3.2.alpha1, that summarizes all other patches. So, just apply 7580_fixes_and_extensions_total.patch.\n\nNote that I merged the code of sage-4.3.2.alpha1 with my new code on a Windows laptop. But I transferred it to a Linux PC, used dos2unix, and all further edits happened there. Then, I created a patch, copied it to my Windows laptop, and there you are. I hope that in that way I avoided Windows EOL.\n\nNote that there is one additional change. It seems that the \"dir\" mechanism has changed in sage-4.3.2: Before, the documentation of dir stated that it would use a method !__dir!__ if available, but in fact it ignored such method. Instead, it used the attributes !__members!__ and !__methods!__ or so.\n\nThis has now changed (as I noticed when a doc test failed), and by consequence I now provide a !__dir!__ method *in addition* to the old form of tab completion.\n\nConcerning tests: I did not do sage -testall. But I did test the files that I have changed: pushout.py, symmetric_ideal.py, symmetric_reduction.pyx, infinite_polynomial_ring.py, and infinite_polynomial_element.py\n\nHopefully it works now...",
+    "body": "Attachment [7580_fixes_and_extensions_total.patch](tarball://root/attachments/some-uuid/ticket7580/7580_fixes_and_extensions_total.patch) by SimonKing created at 2010-02-02 16:03:10\n\nI produced a new patch relative to sage-4.3.2.alpha1, that summarizes all other patches. So, just apply 7580_fixes_and_extensions_total.patch.\n\nNote that I merged the code of sage-4.3.2.alpha1 with my new code on a Windows laptop. But I transferred it to a Linux PC, used dos2unix, and all further edits happened there. Then, I created a patch, copied it to my Windows laptop, and there you are. I hope that in that way I avoided Windows EOL.\n\nNote that there is one additional change. It seems that the \"dir\" mechanism has changed in sage-4.3.2: Before, the documentation of dir stated that it would use a method !__dir!__ if available, but in fact it ignored such method. Instead, it used the attributes !__members!__ and !__methods!__ or so.\n\nThis has now changed (as I noticed when a doc test failed), and by consequence I now provide a !__dir!__ method *in addition* to the old form of tab completion.\n\nConcerning tests: I did not do sage -testall. But I did test the files that I have changed: pushout.py, symmetric_ideal.py, symmetric_reduction.pyx, infinite_polynomial_ring.py, and infinite_polynomial_element.py\n\nHopefully it works now...",
     "created_at": "2010-02-02T16:03:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
@@ -2003,7 +2003,7 @@ archive/issue_comments_064609.json:
 }
 ```
 
-Attachment
+Attachment [7580_fixes_and_extensions_total.patch](tarball://root/attachments/some-uuid/ticket7580/7580_fixes_and_extensions_total.patch) by SimonKing created at 2010-02-02 16:03:10
 
 I produced a new patch relative to sage-4.3.2.alpha1, that summarizes all other patches. So, just apply 7580_fixes_and_extensions_total.patch.
 

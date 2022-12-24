@@ -83,7 +83,7 @@ Changing status from new to assigned.
 archive/issue_comments_012443.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1954.patch](tarball://root/attachments/some-uuid/ticket1954/1954.patch) by mhansen created at 2008-01-28 00:06:03",
     "created_at": "2008-01-28T00:06:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1954",
     "type": "issue_comment",
@@ -92,7 +92,7 @@ archive/issue_comments_012443.json:
 }
 ```
 
-Attachment
+Attachment [1954.patch](tarball://root/attachments/some-uuid/ticket1954/1954.patch) by mhansen created at 2008-01-28 00:06:03
 
 
 

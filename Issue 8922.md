@@ -392,7 +392,7 @@ Nathann
 archive/issue_comments_082197.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8922.patch](tarball://root/attachments/some-uuid/ticket8922/trac_8922.patch) by ncohen created at 2010-06-01 19:11:51",
     "created_at": "2010-06-01T19:11:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8922",
     "type": "issue_comment",
@@ -401,7 +401,7 @@ archive/issue_comments_082197.json:
 }
 ```
 
-Attachment
+Attachment [trac_8922.patch](tarball://root/attachments/some-uuid/ticket8922/trac_8922.patch) by ncohen created at 2010-06-01 19:11:51
 
 
 
@@ -449,7 +449,7 @@ Yes. I'm finalizing a reviewer patch.
 archive/issue_comments_082200.json:
 ```json
 {
-    "body": "Attachment\n\nChanges in reviewer patch:\n\n* Move the method `adjacency_sequence()` to the class `CGraph`, as I think that method is useful for both dense and sparse graphs.\n* Clean-up coding style in accordance with PEP 008.\n* In describing the algorithm used in `subgraph_search()` of the module `generic_graph_pyx.pyx`, you have the formula:\n {{{\n`\\binom k!{|V(G)|}{k}`\n }}}\n That won't typeset in LaTeX as you expected. Do you mean this?\n {{{\n`k! \\binom{|V(G)|}{k}`\n }}}\n I have used the latter formula in my reviewer patch. Please correct me if I'm wrong.\n* Unit tests for the `cdef` functions `vectors_equal()` and `vectors_inferior()`, and the method `adjacency_sequence()`. These functions/methods are defined using `cdef` and the doctest coverage script don't pick them up in its analysis. However, I still think it's important to provide unit tests for such functions/methods.\n* Amalgamate the methods `induced_subgraph_search()` and `subgraph_search()`. Their definitions are almost identical, except for the keyword `induced`. The combined method is defined to take the boolean keyword `induced` and pass it on to the relevant method.\n\nAnother pair of eyes is needed to look over my reviewer patch.",
+    "body": "Attachment [trac_8922-reviewer.patch](tarball://root/attachments/some-uuid/ticket8922/trac_8922-reviewer.patch) by mvngu created at 2010-06-05 01:16:12\n\nChanges in reviewer patch:\n\n* Move the method `adjacency_sequence()` to the class `CGraph`, as I think that method is useful for both dense and sparse graphs.\n* Clean-up coding style in accordance with PEP 008.\n* In describing the algorithm used in `subgraph_search()` of the module `generic_graph_pyx.pyx`, you have the formula:\n {{{\n`\\binom k!{|V(G)|}{k}`\n }}}\n That won't typeset in LaTeX as you expected. Do you mean this?\n {{{\n`k! \\binom{|V(G)|}{k}`\n }}}\n I have used the latter formula in my reviewer patch. Please correct me if I'm wrong.\n* Unit tests for the `cdef` functions `vectors_equal()` and `vectors_inferior()`, and the method `adjacency_sequence()`. These functions/methods are defined using `cdef` and the doctest coverage script don't pick them up in its analysis. However, I still think it's important to provide unit tests for such functions/methods.\n* Amalgamate the methods `induced_subgraph_search()` and `subgraph_search()`. Their definitions are almost identical, except for the keyword `induced`. The combined method is defined to take the boolean keyword `induced` and pass it on to the relevant method.\n\nAnother pair of eyes is needed to look over my reviewer patch.",
     "created_at": "2010-06-05T01:16:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8922",
     "type": "issue_comment",
@@ -458,7 +458,7 @@ archive/issue_comments_082200.json:
 }
 ```
 
-Attachment
+Attachment [trac_8922-reviewer.patch](tarball://root/attachments/some-uuid/ticket8922/trac_8922-reviewer.patch) by mvngu created at 2010-06-05 01:16:12
 
 Changes in reviewer patch:
 

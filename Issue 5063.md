@@ -51,7 +51,7 @@ Resolution: invalid
 archive/issue_comments_038572.json:
 ```json
 {
-    "body": "Attachment\n\nI'm going to mark this as invalid.",
+    "body": "Attachment [plot.patch](tarball://root/attachments/some-uuid/ticket5063/plot.patch) by mhansen created at 2010-01-18 22:39:52\n\nI'm going to mark this as invalid.",
     "created_at": "2010-01-18T22:39:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5063",
     "type": "issue_comment",
@@ -60,6 +60,6 @@ archive/issue_comments_038572.json:
 }
 ```
 
-Attachment
+Attachment [plot.patch](tarball://root/attachments/some-uuid/ticket5063/plot.patch) by mhansen created at 2010-01-18 22:39:52
 
 I'm going to mark this as invalid.

@@ -150,7 +150,7 @@ Changing assignee from mhansen to slabbe.
 archive/issue_comments_057025.json:
 ```json
 {
-    "body": "Attachment\n\nI just posted a patch which correspond to something better. All test pass in sage/combinat/words. I also tested the pickle jar using (from http://www.sagemath.org/doc/reference/sage/structure/sage_object.html) :\n\n\n```\nsage: std = os.environ['SAGE_DATA'] + '/extcode/pickle_jar/pickle_jar.tar.bz2'\nsage: sage.structure.sage_object.unpickle_all(std)\n```\n\n\nI keep the 'needs work' label, because there is still something I want to check. In fact, the code that changes the class of a word from `Word_class` to `FiniteWord_class` when it reaches the end of the word might be updated as well here, but I can't figure out where is that code!!! Franco should remember that.",
+    "body": "Attachment [trac_6903_word_improve_constructor-sl.patch](tarball://root/attachments/some-uuid/ticket6903/trac_6903_word_improve_constructor-sl.patch) by slabbe created at 2009-09-13 12:48:34\n\nI just posted a patch which correspond to something better. All test pass in sage/combinat/words. I also tested the pickle jar using (from http://www.sagemath.org/doc/reference/sage/structure/sage_object.html) :\n\n\n```\nsage: std = os.environ['SAGE_DATA'] + '/extcode/pickle_jar/pickle_jar.tar.bz2'\nsage: sage.structure.sage_object.unpickle_all(std)\n```\n\n\nI keep the 'needs work' label, because there is still something I want to check. In fact, the code that changes the class of a word from `Word_class` to `FiniteWord_class` when it reaches the end of the word might be updated as well here, but I can't figure out where is that code!!! Franco should remember that.",
     "created_at": "2009-09-13T12:48:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6903",
     "type": "issue_comment",
@@ -159,7 +159,7 @@ archive/issue_comments_057025.json:
 }
 ```
 
-Attachment
+Attachment [trac_6903_word_improve_constructor-sl.patch](tarball://root/attachments/some-uuid/ticket6903/trac_6903_word_improve_constructor-sl.patch) by slabbe created at 2009-09-13 12:48:34
 
 I just posted a patch which correspond to something better. All test pass in sage/combinat/words. I also tested the pickle jar using (from http://www.sagemath.org/doc/reference/sage/structure/sage_object.html) :
 
@@ -227,7 +227,7 @@ Apply on top of trac_6903_word_improve_constructor-sl.patch
 archive/issue_comments_057028.json:
 ```json
 {
-    "body": "Attachment\n\nApply on top of trac_6903_reviewer_patch_2.patch",
+    "body": "Attachment [trac_6903_reviewer_patch_1.patch](tarball://root/attachments/some-uuid/ticket6903/trac_6903_reviewer_patch_1.patch) by saliola created at 2009-09-16 20:57:13\n\nApply on top of trac_6903_reviewer_patch_2.patch",
     "created_at": "2009-09-16T20:57:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6903",
     "type": "issue_comment",
@@ -236,7 +236,7 @@ archive/issue_comments_057028.json:
 }
 ```
 
-Attachment
+Attachment [trac_6903_reviewer_patch_1.patch](tarball://root/attachments/some-uuid/ticket6903/trac_6903_reviewer_patch_1.patch) by saliola created at 2009-09-16 20:57:13
 
 Apply on top of trac_6903_reviewer_patch_2.patch
 
@@ -247,7 +247,7 @@ Apply on top of trac_6903_reviewer_patch_2.patch
 archive/issue_comments_057029.json:
 ```json
 {
-    "body": "Attachment\n\nModulo the changes in the reviewer patches, I give a positive review to S\u00e9bastien's patch.\n\nS\u00e9bastien, can you review my patches?",
+    "body": "Attachment [trac_6903_reviewer_patch_2.patch](tarball://root/attachments/some-uuid/ticket6903/trac_6903_reviewer_patch_2.patch) by saliola created at 2009-09-16 20:59:40\n\nModulo the changes in the reviewer patches, I give a positive review to S\u00e9bastien's patch.\n\nS\u00e9bastien, can you review my patches?",
     "created_at": "2009-09-16T20:59:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6903",
     "type": "issue_comment",
@@ -256,7 +256,7 @@ archive/issue_comments_057029.json:
 }
 ```
 
-Attachment
+Attachment [trac_6903_reviewer_patch_2.patch](tarball://root/attachments/some-uuid/ticket6903/trac_6903_reviewer_patch_2.patch) by saliola created at 2009-09-16 20:59:40
 
 Modulo the changes in the reviewer patches, I give a positive review to Sébastien's patch.
 
@@ -269,7 +269,7 @@ Sébastien, can you review my patches?
 archive/issue_comments_057030.json:
 ```json
 {
-    "body": "Attachment\n\nApplies over the precedent 3 patches.",
+    "body": "Attachment [trac_6903_review_3-sl.patch](tarball://root/attachments/some-uuid/ticket6903/trac_6903_review_3-sl.patch) by slabbe created at 2009-09-17 18:03:11\n\nApplies over the precedent 3 patches.",
     "created_at": "2009-09-17T18:03:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6903",
     "type": "issue_comment",
@@ -278,7 +278,7 @@ archive/issue_comments_057030.json:
 }
 ```
 
-Attachment
+Attachment [trac_6903_review_3-sl.patch](tarball://root/attachments/some-uuid/ticket6903/trac_6903_review_3-sl.patch) by slabbe created at 2009-09-17 18:03:11
 
 Applies over the precedent 3 patches.
 

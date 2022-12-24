@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4052
 archive/issue_comments_029210.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4052.patch](tarball://root/attachments/some-uuid/ticket4052/trac_4052.patch) by anakha created at 2008-09-03 19:01:18",
     "created_at": "2008-09-03T19:01:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4052",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_029210.json:
 }
 ```
 
-Attachment
+Attachment [trac_4052.patch](tarball://root/attachments/some-uuid/ticket4052/trac_4052.patch) by anakha created at 2008-09-03 19:01:18
 
 
 
@@ -75,7 +75,7 @@ Michael
 archive/issue_comments_029212.json:
 ```json
 {
-    "body": "Attachment\n\nThe new patch adds an entry to the SPKG.txt file.\n\nAlso is there special procedure to bump the patch version of a spkg?",
+    "body": "Attachment [trac_4052_spkg.txt.patch](tarball://root/attachments/some-uuid/ticket4052/trac_4052_spkg.txt.patch) by anakha created at 2008-09-03 19:24:56\n\nThe new patch adds an entry to the SPKG.txt file.\n\nAlso is there special procedure to bump the patch version of a spkg?",
     "created_at": "2008-09-03T19:24:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4052",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_029212.json:
 }
 ```
 
-Attachment
+Attachment [trac_4052_spkg.txt.patch](tarball://root/attachments/some-uuid/ticket4052/trac_4052_spkg.txt.patch) by anakha created at 2008-09-03 19:24:56
 
 The new patch adds an entry to the SPKG.txt file.
 

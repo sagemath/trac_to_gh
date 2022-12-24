@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3806
 archive/issue_comments_027047.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3806-1.patch](tarball://root/attachments/some-uuid/ticket3806/trac_3806-1.patch) by mhansen created at 2008-08-11 19:58:28",
     "created_at": "2008-08-11T19:58:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3806",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_027047.json:
 }
 ```
 
-Attachment
+Attachment [trac_3806-1.patch](tarball://root/attachments/some-uuid/ticket3806/trac_3806-1.patch) by mhansen created at 2008-08-11 19:58:28
 
 
 
@@ -57,7 +57,7 @@ Attachment
 archive/issue_comments_027048.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3806-2.patch](tarball://root/attachments/some-uuid/ticket3806/trac_3806-2.patch) by mhansen created at 2008-08-11 19:59:41",
     "created_at": "2008-08-11T19:59:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3806",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_027048.json:
 }
 ```
 
-Attachment
+Attachment [trac_3806-2.patch](tarball://root/attachments/some-uuid/ticket3806/trac_3806-2.patch) by mhansen created at 2008-08-11 19:59:41
 
 
 
@@ -170,7 +170,7 @@ sage: point((-1,1),pointsize=30, rgbcolor=(1,0,0))
 archive/issue_comments_027052.json:
 ```json
 {
-    "body": "Attachment\n\n+1 to rlm's patch",
+    "body": "Attachment [trac_3806-bug.patch](tarball://root/attachments/some-uuid/ticket3806/trac_3806-bug.patch) by mhansen created at 2008-08-12 06:00:36\n\n+1 to rlm's patch",
     "created_at": "2008-08-12T06:00:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3806",
     "type": "issue_comment",
@@ -179,7 +179,7 @@ archive/issue_comments_027052.json:
 }
 ```
 
-Attachment
+Attachment [trac_3806-bug.patch](tarball://root/attachments/some-uuid/ticket3806/trac_3806-bug.patch) by mhansen created at 2008-08-12 06:00:36
 
 +1 to rlm's patch
 

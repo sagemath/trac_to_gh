@@ -133,7 +133,7 @@ This is weird:  I evaluate a polynomial f in K[X,Y,Z] at a triple [x,y,z], but t
 archive/issue_comments_076715.json:
 ```json
 {
-    "body": "Attachment\n\nApplies to 4.3.4.alpha1",
+    "body": "Attachment [trac_8498-has_good_reduction.patch](tarball://root/attachments/some-uuid/ticket8498/trac_8498-has_good_reduction.patch) by cremona created at 2010-03-11 15:24:41\n\nApplies to 4.3.4.alpha1",
     "created_at": "2010-03-11T15:24:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8498",
     "type": "issue_comment",
@@ -142,7 +142,7 @@ archive/issue_comments_076715.json:
 }
 ```
 
-Attachment
+Attachment [trac_8498-has_good_reduction.patch](tarball://root/attachments/some-uuid/ticket8498/trac_8498-has_good_reduction.patch) by cremona created at 2010-03-11 15:24:41
 
 Applies to 4.3.4.alpha1
 

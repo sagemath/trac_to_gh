@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2683
 archive/issue_comments_018446.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch also includes some miscellaneous cleanup in permutation.py and partition.py",
+    "body": "Attachment [trac_2683-kschur.patch](tarball://root/attachments/some-uuid/ticket2683/trac_2683-kschur.patch) by mhansen created at 2008-03-27 10:04:44\n\nThe patch also includes some miscellaneous cleanup in permutation.py and partition.py",
     "created_at": "2008-03-27T10:04:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2683",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_018446.json:
 }
 ```
 
-Attachment
+Attachment [trac_2683-kschur.patch](tarball://root/attachments/some-uuid/ticket2683/trac_2683-kschur.patch) by mhansen created at 2008-03-27 10:04:44
 
 The patch also includes some miscellaneous cleanup in permutation.py and partition.py
 

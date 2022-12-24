@@ -117,7 +117,7 @@ One might put more information there, too.
 archive/issue_comments_060017.json:
 ```json
 {
-    "body": "Attachment\n\nI changed the line as suggested by Georg Weber.  I agree with his suggestion.",
+    "body": "Attachment [sage-README-osx.txt](tarball://root/attachments/some-uuid/ticket7235/sage-README-osx.txt) by was created at 2009-11-11 19:11:58\n\nI changed the line as suggested by Georg Weber.  I agree with his suggestion.",
     "created_at": "2009-11-11T19:11:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7235",
     "type": "issue_comment",
@@ -126,7 +126,7 @@ archive/issue_comments_060017.json:
 }
 ```
 
-Attachment
+Attachment [sage-README-osx.txt](tarball://root/attachments/some-uuid/ticket7235/sage-README-osx.txt) by was created at 2009-11-11 19:11:58
 
 I changed the line as suggested by Georg Weber.  I agree with his suggestion.
 

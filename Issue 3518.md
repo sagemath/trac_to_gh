@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3518
 archive/issue_comments_024786.json:
 ```json
 {
-    "body": "Attachment\n\n(don't worry about the possible two hunks that mail fail that involve deleting EXAMPLES: sage:)",
+    "body": "Attachment [sage-3518.patch](tarball://root/attachments/some-uuid/ticket3518/sage-3518.patch) by was created at 2008-06-27 01:06:53\n\n(don't worry about the possible two hunks that mail fail that involve deleting EXAMPLES: sage:)",
     "created_at": "2008-06-27T01:06:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3518",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_024786.json:
 }
 ```
 
-Attachment
+Attachment [sage-3518.patch](tarball://root/attachments/some-uuid/ticket3518/sage-3518.patch) by was created at 2008-06-27 01:06:53
 
 (don't worry about the possible two hunks that mail fail that involve deleting EXAMPLES: sage:)
 

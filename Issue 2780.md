@@ -86,7 +86,7 @@ Changing assignee from somebody to tbd.
 archive/issue_comments_019097.json:
 ```json
 {
-    "body": "Attachment\n\nSee the patch.",
+    "body": "Attachment [2780-factorization_unit.patch](tarball://root/attachments/some-uuid/ticket2780/2780-factorization_unit.patch) by AlexGhitza created at 2008-04-11 23:24:49\n\nSee the patch.",
     "created_at": "2008-04-11T23:24:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2780",
     "type": "issue_comment",
@@ -95,7 +95,7 @@ archive/issue_comments_019097.json:
 }
 ```
 
-Attachment
+Attachment [2780-factorization_unit.patch](tarball://root/attachments/some-uuid/ticket2780/2780-factorization_unit.patch) by AlexGhitza created at 2008-04-11 23:24:49
 
 See the patch.
 

@@ -175,7 +175,7 @@ This adds the coding directive
 archive/issue_comments_069910.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch should do the trick.",
+    "body": "Attachment [trac_8000-utf-8-coding-directive.patch](tarball://root/attachments/some-uuid/ticket8000/trac_8000-utf-8-coding-directive.patch) by timdumol created at 2010-01-19 21:05:33\n\nThis patch should do the trick.",
     "created_at": "2010-01-19T21:05:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8000",
     "type": "issue_comment",
@@ -184,7 +184,7 @@ archive/issue_comments_069910.json:
 }
 ```
 
-Attachment
+Attachment [trac_8000-utf-8-coding-directive.patch](tarball://root/attachments/some-uuid/ticket8000/trac_8000-utf-8-coding-directive.patch) by timdumol created at 2010-01-19 21:05:33
 
 This patch should do the trick.
 
@@ -269,7 +269,7 @@ Fix failed doctest.  Replaces previous.  sagenb repo.
 archive/issue_comments_069915.json:
 ```json
 {
-    "body": "Attachment\n\nRebased for SageNB 0.6 + queue in comment.  Replaces previous.",
+    "body": "Attachment [trac_8000-utf-8-coding-directive.3.patch](tarball://root/attachments/some-uuid/ticket8000/trac_8000-utf-8-coding-directive.3.patch) by mpatel created at 2010-01-25 00:44:54\n\nRebased for SageNB 0.6 + queue in comment.  Replaces previous.",
     "created_at": "2010-01-25T00:44:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8000",
     "type": "issue_comment",
@@ -278,7 +278,7 @@ archive/issue_comments_069915.json:
 }
 ```
 
-Attachment
+Attachment [trac_8000-utf-8-coding-directive.3.patch](tarball://root/attachments/some-uuid/ticket8000/trac_8000-utf-8-coding-directive.3.patch) by mpatel created at 2010-01-25 00:44:54
 
 Rebased for SageNB 0.6 + queue in comment.  Replaces previous.
 

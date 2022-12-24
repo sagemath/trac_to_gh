@@ -53,7 +53,7 @@ Spelling errors patch for Trac 4679.
 archive/issue_comments_035250.json:
 ```json
 {
-    "body": "Attachment\n\nAdded patch to fix spelling errors.",
+    "body": "Attachment [trac_4679.patch](tarball://root/attachments/some-uuid/ticket4679/trac_4679.patch) by tjlahey created at 2008-12-02 18:20:14\n\nAdded patch to fix spelling errors.",
     "created_at": "2008-12-02T18:20:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4679",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_035250.json:
 }
 ```
 
-Attachment
+Attachment [trac_4679.patch](tarball://root/attachments/some-uuid/ticket4679/trac_4679.patch) by tjlahey created at 2008-12-02 18:20:14
 
 Added patch to fix spelling errors.
 

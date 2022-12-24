@@ -129,7 +129,7 @@ Changing status from new to needs_review.
 archive/issue_comments_063347.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sagenb-7495.patch](tarball://root/attachments/some-uuid/ticket7495/sagenb-7495.patch) by was created at 2009-11-20 02:18:42",
     "created_at": "2009-11-20T02:18:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7495",
     "type": "issue_comment",
@@ -138,7 +138,7 @@ archive/issue_comments_063347.json:
 }
 ```
 
-Attachment
+Attachment [sagenb-7495.patch](tarball://root/attachments/some-uuid/ticket7495/sagenb-7495.patch) by was created at 2009-11-20 02:18:42
 
 
 
@@ -191,7 +191,7 @@ Actually, clicking to delete this file raises the error:
 archive/issue_comments_063350.json:
 ```json
 {
-    "body": "Attachment\n\nVersion 2.  Minor simplifications.  Apply only this patch to sagenb repo.",
+    "body": "Attachment [sagenb-7495.2.patch](tarball://root/attachments/some-uuid/ticket7495/sagenb-7495.2.patch) by mpatel created at 2009-11-20 05:56:10\n\nVersion 2.  Minor simplifications.  Apply only this patch to sagenb repo.",
     "created_at": "2009-11-20T05:56:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7495",
     "type": "issue_comment",
@@ -200,7 +200,7 @@ archive/issue_comments_063350.json:
 }
 ```
 
-Attachment
+Attachment [sagenb-7495.2.patch](tarball://root/attachments/some-uuid/ticket7495/sagenb-7495.2.patch) by mpatel created at 2009-11-20 05:56:10
 
 Version 2.  Minor simplifications.  Apply only this patch to sagenb repo.
 

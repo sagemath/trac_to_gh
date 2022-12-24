@@ -49,7 +49,7 @@ Changing status from new to needs_review.
 archive/issue_comments_072539.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8219.patch](tarball://root/attachments/some-uuid/ticket8219/trac_8219.patch) by mvngu created at 2010-02-09 06:02:41",
     "created_at": "2010-02-09T06:02:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8219",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_072539.json:
 }
 ```
 
-Attachment
+Attachment [trac_8219.patch](tarball://root/attachments/some-uuid/ticket8219/trac_8219.patch) by mvngu created at 2010-02-09 06:02:41
 
 
 

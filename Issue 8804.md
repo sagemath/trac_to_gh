@@ -69,7 +69,7 @@ Changing status from new to needs_review.
 archive/issue_comments_080784.json:
 ```json
 {
-    "body": "Attachment\n\nAlso fixes a few inconsistencies with formula for MobiusStrip that wasn't used and dual() that I checked with robertwb.",
+    "body": "Attachment [trac_8804-param-surface-docs.patch](tarball://root/attachments/some-uuid/ticket8804/trac_8804-param-surface-docs.patch) by kcrisman created at 2010-04-29 20:27:03\n\nAlso fixes a few inconsistencies with formula for MobiusStrip that wasn't used and dual() that I checked with robertwb.",
     "created_at": "2010-04-29T20:27:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8804",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_080784.json:
 }
 ```
 
-Attachment
+Attachment [trac_8804-param-surface-docs.patch](tarball://root/attachments/some-uuid/ticket8804/trac_8804-param-surface-docs.patch) by kcrisman created at 2010-04-29 20:27:03
 
 Also fixes a few inconsistencies with formula for MobiusStrip that wasn't used and dual() that I checked with robertwb.
 
@@ -89,7 +89,7 @@ Also fixes a few inconsistencies with formula for MobiusStrip that wasn't used a
 archive/issue_comments_080785.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8804-reviewer.patch](tarball://root/attachments/some-uuid/ticket8804/trac_8804-reviewer.patch) by mvngu created at 2010-05-10 00:56:44",
     "created_at": "2010-05-10T00:56:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8804",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_080785.json:
 }
 ```
 
-Attachment
+Attachment [trac_8804-reviewer.patch](tarball://root/attachments/some-uuid/ticket8804/trac_8804-reviewer.patch) by mvngu created at 2010-05-10 00:56:44
 
 
 

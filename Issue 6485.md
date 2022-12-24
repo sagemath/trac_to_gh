@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6485
 archive/issue_comments_052450.json:
 ```json
 {
-    "body": "Attachment\n\nThis ticket looks like a duplicate of #5550 to me. Since mpatel's already uploaded a patch here, I suggest we close #5550 as a duplicate and keep this one open.",
+    "body": "Attachment [trac_6485_website_links.patch](tarball://root/attachments/some-uuid/ticket6485/trac_6485_website_links.patch) by davidloeffler created at 2009-07-13 16:43:35\n\nThis ticket looks like a duplicate of #5550 to me. Since mpatel's already uploaded a patch here, I suggest we close #5550 as a duplicate and keep this one open.",
     "created_at": "2009-07-13T16:43:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6485",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_052450.json:
 }
 ```
 
-Attachment
+Attachment [trac_6485_website_links.patch](tarball://root/attachments/some-uuid/ticket6485/trac_6485_website_links.patch) by davidloeffler created at 2009-07-13 16:43:35
 
 This ticket looks like a duplicate of #5550 to me. Since mpatel's already uploaded a patch here, I suggest we close #5550 as a duplicate and keep this one open.
 

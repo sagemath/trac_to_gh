@@ -56,7 +56,7 @@ script that checks a patch's metadata; for demonstration purposes
 archive/issue_comments_087818.json:
 ```json
 {
-    "body": "Attachment\n\nattachment:check_patch_metadata.py is a script that, given a patch file and a ticket number, will check to see that the commit message contains the ticket number in the first line, and if it doesn't, it will prepend \"ticket xxxx:\" to the commit message and save the resulting patch in a a file with \".fixed\" appended. It should be easy to integrate this into sage-apply-ticket.\n\nIt bails if it cannot find a commit message or username in the patch. It issues a warning if it can't find a date, node ID or parent but continues. As a guess, I think \"sage -merge\" should fail if there's no commit message or username, and in the other cases, issue the warning and ask the user if they want to continue.",
+    "body": "Attachment [check_patch_metadata.py](tarball://root/attachments/some-uuid/ticket9319/check_patch_metadata.py) by ddrake created at 2010-07-22 06:08:39\n\nattachment:check_patch_metadata.py is a script that, given a patch file and a ticket number, will check to see that the commit message contains the ticket number in the first line, and if it doesn't, it will prepend \"ticket xxxx:\" to the commit message and save the resulting patch in a a file with \".fixed\" appended. It should be easy to integrate this into sage-apply-ticket.\n\nIt bails if it cannot find a commit message or username in the patch. It issues a warning if it can't find a date, node ID or parent but continues. As a guess, I think \"sage -merge\" should fail if there's no commit message or username, and in the other cases, issue the warning and ask the user if they want to continue.",
     "created_at": "2010-07-22T06:08:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9319",
     "type": "issue_comment",
@@ -65,7 +65,7 @@ archive/issue_comments_087818.json:
 }
 ```
 
-Attachment
+Attachment [check_patch_metadata.py](tarball://root/attachments/some-uuid/ticket9319/check_patch_metadata.py) by ddrake created at 2010-07-22 06:08:39
 
 attachment:check_patch_metadata.py is a script that, given a patch file and a ticket number, will check to see that the commit message contains the ticket number in the first line, and if it doesn't, it will prepend "ticket xxxx:" to the commit message and save the resulting patch in a a file with ".fixed" appended. It should be easy to integrate this into sage-apply-ticket.
 

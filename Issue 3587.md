@@ -212,7 +212,7 @@ This is definitely necessary. Currently there is no way to interact with an unev
 archive/issue_comments_025325.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:5 burcin]: \n> Here are some suggested changes:\n> \n>  * rename all instances of the method to `sum` or `symbolic_sum`\n>  * you should import your function before the doctests in `calculus.py` to make sure you call the right function\n>  * it would be good to add a comment to #6197 pointing to the comment you have in `calculus.py`\n>  * you could add your code for converting MMA output back to Sage to a `_sage_()` method in `sage.interfaces.mathematica.MathematicaElement`, see the `MagmaElement` class in `sage.interfaces.magma` for an example, similarly for Maple output\n>  * In the last lines of the docstring for `sage.symbolic.expression.Expression.summation`, choosen -> chosen\n\nI posted a new patch that takes care of these issues.\n\nThe second patch (sum.patch) renames summation to sum. This currently overwrites the python sum command.",
+    "body": "Attachment [summation.patch](tarball://root/attachments/some-uuid/ticket3587/summation.patch) by whuss created at 2009-06-07 12:16:53\n\nReplying to [comment:5 burcin]: \n> Here are some suggested changes:\n> \n>  * rename all instances of the method to `sum` or `symbolic_sum`\n>  * you should import your function before the doctests in `calculus.py` to make sure you call the right function\n>  * it would be good to add a comment to #6197 pointing to the comment you have in `calculus.py`\n>  * you could add your code for converting MMA output back to Sage to a `_sage_()` method in `sage.interfaces.mathematica.MathematicaElement`, see the `MagmaElement` class in `sage.interfaces.magma` for an example, similarly for Maple output\n>  * In the last lines of the docstring for `sage.symbolic.expression.Expression.summation`, choosen -> chosen\n\nI posted a new patch that takes care of these issues.\n\nThe second patch (sum.patch) renames summation to sum. This currently overwrites the python sum command.",
     "created_at": "2009-06-07T12:16:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3587",
     "type": "issue_comment",
@@ -221,7 +221,7 @@ archive/issue_comments_025325.json:
 }
 ```
 
-Attachment
+Attachment [summation.patch](tarball://root/attachments/some-uuid/ticket3587/summation.patch) by whuss created at 2009-06-07 12:16:53
 
 Replying to [comment:5 burcin]: 
 > Here are some suggested changes:
@@ -243,7 +243,7 @@ The second patch (sum.patch) renames summation to sum. This currently overwrites
 archive/issue_comments_025326.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sum.patch](tarball://root/attachments/some-uuid/ticket3587/sum.patch) by mhansen created at 2009-06-20 01:52:06",
     "created_at": "2009-06-20T01:52:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3587",
     "type": "issue_comment",
@@ -252,7 +252,7 @@ archive/issue_comments_025326.json:
 }
 ```
 
-Attachment
+Attachment [sum.patch](tarball://root/attachments/some-uuid/ticket3587/sum.patch) by mhansen created at 2009-06-20 01:52:06
 
 
 
@@ -317,7 +317,7 @@ Indefinite sums seem to be fine. In this case, we could check the inputs, and ra
 archive/issue_comments_025329.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3587-maxima_simplify_sum.patch](tarball://root/attachments/some-uuid/ticket3587/trac_3587-maxima_simplify_sum.patch) by burcin created at 2009-06-23 21:39:50",
     "created_at": "2009-06-23T21:39:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3587",
     "type": "issue_comment",
@@ -326,7 +326,7 @@ archive/issue_comments_025329.json:
 }
 ```
 
-Attachment
+Attachment [trac_3587-maxima_simplify_sum.patch](tarball://root/attachments/some-uuid/ticket3587/trac_3587-maxima_simplify_sum.patch) by burcin created at 2009-06-23 21:39:50
 
 
 
@@ -644,7 +644,7 @@ fixes the doctest errors reported by William
 archive/issue_comments_025340.json:
 ```json
 {
-    "body": "Attachment\n\nOkay, I fixed those tests; there were identical ones elsewhere I did fix but functional.py escaped me.  I also think I fixed the note issue.  \n\nSince #6197 is merged I also used the correct algorithm=maxima behavior.  I don't have Maple so I didn't feel comfortable changing the Maple behavior, but it would be easy to open a new ticket for that if the appropriate algorithm worked, which it certainly seems like it should post-#6197.\n\nI'm going to assume that the builtin sum is indeed okay - great!",
+    "body": "Attachment [trac_3587-fix_doctests.patch](tarball://root/attachments/some-uuid/ticket3587/trac_3587-fix_doctests.patch) by kcrisman created at 2009-09-14 14:10:38\n\nOkay, I fixed those tests; there were identical ones elsewhere I did fix but functional.py escaped me.  I also think I fixed the note issue.  \n\nSince #6197 is merged I also used the correct algorithm=maxima behavior.  I don't have Maple so I didn't feel comfortable changing the Maple behavior, but it would be easy to open a new ticket for that if the appropriate algorithm worked, which it certainly seems like it should post-#6197.\n\nI'm going to assume that the builtin sum is indeed okay - great!",
     "created_at": "2009-09-14T14:10:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3587",
     "type": "issue_comment",
@@ -653,7 +653,7 @@ archive/issue_comments_025340.json:
 }
 ```
 
-Attachment
+Attachment [trac_3587-fix_doctests.patch](tarball://root/attachments/some-uuid/ticket3587/trac_3587-fix_doctests.patch) by kcrisman created at 2009-09-14 14:10:38
 
 Okay, I fixed those tests; there were identical ones elsewhere I did fix but functional.py escaped me.  I also think I fixed the note issue.  
 
@@ -686,7 +686,7 @@ Use only the 5-19-1 patch.
 archive/issue_comments_025342.json:
 ```json
 {
-    "body": "Attachment\n\nremoves the workaround for binomials. Depends on #6197",
+    "body": "Attachment [trac_3587-binomial_workaround.patch](tarball://root/attachments/some-uuid/ticket3587/trac_3587-binomial_workaround.patch) by whuss created at 2009-09-14 14:13:00\n\nremoves the workaround for binomials. Depends on #6197",
     "created_at": "2009-09-14T14:13:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3587",
     "type": "issue_comment",
@@ -695,7 +695,7 @@ archive/issue_comments_025342.json:
 }
 ```
 
-Attachment
+Attachment [trac_3587-binomial_workaround.patch](tarball://root/attachments/some-uuid/ticket3587/trac_3587-binomial_workaround.patch) by whuss created at 2009-09-14 14:13:00
 
 removes the workaround for binomials. Depends on #6197
 
@@ -828,7 +828,7 @@ Based on 4.2.1, apply only this patch
 archive/issue_comments_025349.json:
 ```json
 {
-    "body": "Attachment\n\nPlease someone (beyond myself and the author) review this!  It would be perfect for the big 4.3 release coming up!",
+    "body": "Attachment [trac_3587-maxima_simplify_sum-with-maxima-5-19-1.patch](tarball://root/attachments/some-uuid/ticket3587/trac_3587-maxima_simplify_sum-with-maxima-5-19-1.patch) by kcrisman created at 2009-11-17 20:13:41\n\nPlease someone (beyond myself and the author) review this!  It would be perfect for the big 4.3 release coming up!",
     "created_at": "2009-11-17T20:13:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3587",
     "type": "issue_comment",
@@ -837,7 +837,7 @@ archive/issue_comments_025349.json:
 }
 ```
 
-Attachment
+Attachment [trac_3587-maxima_simplify_sum-with-maxima-5-19-1.patch](tarball://root/attachments/some-uuid/ticket3587/trac_3587-maxima_simplify_sum-with-maxima-5-19-1.patch) by kcrisman created at 2009-11-17 20:13:41
 
 Please someone (beyond myself and the author) review this!  It would be perfect for the big 4.3 release coming up!
 

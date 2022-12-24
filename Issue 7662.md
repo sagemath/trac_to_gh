@@ -234,7 +234,7 @@ Changing status from needs_info to needs_work.
 archive/issue_comments_065612.json:
 ```json
 {
-    "body": "Attachment\n\nWhat about this one, then ?\n\nIt was a good idea to explain it... I quite liked writing it `:-)`\n\nNathann",
+    "body": "Attachment [trac_7662.patch](tarball://root/attachments/some-uuid/ticket7662/trac_7662.patch) by ncohen created at 2010-11-26 11:19:46\n\nWhat about this one, then ?\n\nIt was a good idea to explain it... I quite liked writing it `:-)`\n\nNathann",
     "created_at": "2010-11-26T11:19:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7662",
     "type": "issue_comment",
@@ -243,7 +243,7 @@ archive/issue_comments_065612.json:
 }
 ```
 
-Attachment
+Attachment [trac_7662.patch](tarball://root/attachments/some-uuid/ticket7662/trac_7662.patch) by ncohen created at 2010-11-26 11:19:46
 
 What about this one, then ?
 

@@ -65,7 +65,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6627
 archive/issue_comments_054289.json:
 ```json
 {
-    "body": "Attachment\n\nbased on sage-4.1.1.alpha0",
+    "body": "Attachment [trac_6627-lyndon_words_fix.patch](tarball://root/attachments/some-uuid/ticket6627/trac_6627-lyndon_words_fix.patch) by saliola created at 2009-07-26 12:01:30\n\nbased on sage-4.1.1.alpha0",
     "created_at": "2009-07-26T12:01:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6627",
     "type": "issue_comment",
@@ -74,7 +74,7 @@ archive/issue_comments_054289.json:
 }
 ```
 
-Attachment
+Attachment [trac_6627-lyndon_words_fix.patch](tarball://root/attachments/some-uuid/ticket6627/trac_6627-lyndon_words_fix.patch) by saliola created at 2009-07-26 12:01:30
 
 based on sage-4.1.1.alpha0
 

@@ -63,7 +63,7 @@ initial wrapper for plural
 archive/issue_comments_033831.json:
 ```json
 {
-    "body": "Attachment\n\nbetter user interface for plural rings",
+    "body": "Attachment [plural_1.patch](tarball://root/attachments/some-uuid/ticket4539/plural_1.patch) by burcin created at 2008-11-17 15:29:20\n\nbetter user interface for plural rings",
     "created_at": "2008-11-17T15:29:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -72,7 +72,7 @@ archive/issue_comments_033831.json:
 }
 ```
 
-Attachment
+Attachment [plural_1.patch](tarball://root/attachments/some-uuid/ticket4539/plural_1.patch) by burcin created at 2008-11-17 15:29:20
 
 better user interface for plural rings
 
@@ -83,7 +83,7 @@ better user interface for plural rings
 archive/issue_comments_033832.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [plural_2.patch](tarball://root/attachments/some-uuid/ticket4539/plural_2.patch) by PolyBoRi created at 2009-10-15 11:20:31",
     "created_at": "2009-10-15T11:20:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -92,7 +92,7 @@ archive/issue_comments_033832.json:
 }
 ```
 
-Attachment
+Attachment [plural_2.patch](tarball://root/attachments/some-uuid/ticket4539/plural_2.patch) by PolyBoRi created at 2009-10-15 11:20:31
 
 
 
@@ -101,7 +101,7 @@ Attachment
 archive/issue_comments_033833.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [letterplace.py](tarball://root/attachments/some-uuid/ticket4539/letterplace.py) by AlexGhitza created at 2009-11-15 13:22:40",
     "created_at": "2009-11-15T13:22:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -110,7 +110,7 @@ archive/issue_comments_033833.json:
 }
 ```
 
-Attachment
+Attachment [letterplace.py](tarball://root/attachments/some-uuid/ticket4539/letterplace.py) by AlexGhitza created at 2009-11-15 13:22:40
 
 
 
@@ -155,7 +155,7 @@ The letterplace interface in attachment:letterplace.py is now at #7797.
 archive/issue_comments_033836.json:
 ```json
 {
-    "body": "Attachment\n\nrebased to 4.4.4",
+    "body": "Attachment [plural_1.sage-4.4.4.patch](tarball://root/attachments/some-uuid/ticket4539/plural_1.sage-4.4.4.patch) by burcin created at 2010-07-14 16:46:24\n\nrebased to 4.4.4",
     "created_at": "2010-07-14T16:46:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -164,7 +164,7 @@ archive/issue_comments_033836.json:
 }
 ```
 
-Attachment
+Attachment [plural_1.sage-4.4.4.patch](tarball://root/attachments/some-uuid/ticket4539/plural_1.sage-4.4.4.patch) by burcin created at 2010-07-14 16:46:24
 
 rebased to 4.4.4
 
@@ -193,7 +193,7 @@ rebased to 4.4.4
 archive/issue_comments_033838.json:
 ```json
 {
-    "body": "Attachment\n\nappy on top of 1 and 2, new classes for plural objects which don't inherit from the commutative ones",
+    "body": "Attachment [plural_3.patch](tarball://root/attachments/some-uuid/ticket4539/plural_3.patch) by burcin created at 2010-07-15 09:40:15\n\nappy on top of 1 and 2, new classes for plural objects which don't inherit from the commutative ones",
     "created_at": "2010-07-15T09:40:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -202,7 +202,7 @@ archive/issue_comments_033838.json:
 }
 ```
 
-Attachment
+Attachment [plural_3.patch](tarball://root/attachments/some-uuid/ticket4539/plural_3.patch) by burcin created at 2010-07-15 09:40:15
 
 appy on top of 1 and 2, new classes for plural objects which don't inherit from the commutative ones
 
@@ -213,7 +213,7 @@ appy on top of 1 and 2, new classes for plural objects which don't inherit from 
 archive/issue_comments_033839.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [plural_functions.2.patch](tarball://root/attachments/some-uuid/ticket4539/plural_functions.2.patch) by PolyBoRi created at 2010-07-15 21:03:31",
     "created_at": "2010-07-15T21:03:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -222,7 +222,7 @@ archive/issue_comments_033839.json:
 }
 ```
 
-Attachment
+Attachment [plural_functions.2.patch](tarball://root/attachments/some-uuid/ticket4539/plural_functions.2.patch) by PolyBoRi created at 2010-07-15 21:03:31
 
 
 
@@ -257,7 +257,7 @@ plural_functions.patch
 archive/issue_comments_033841.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [plural_functions.patch](tarball://root/attachments/some-uuid/ticket4539/plural_functions.patch) by mhansen created at 2010-07-20 00:14:47",
     "created_at": "2010-07-20T00:14:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -266,7 +266,7 @@ archive/issue_comments_033841.json:
 }
 ```
 
-Attachment
+Attachment [plural_functions.patch](tarball://root/attachments/some-uuid/ticket4539/plural_functions.patch) by mhansen created at 2010-07-20 00:14:47
 
 
 
@@ -293,7 +293,7 @@ i have just folded all the previous patches by Michael & Burcin into plural_fold
 archive/issue_comments_033843.json:
 ```json
 {
-    "body": "Attachment\n\nPart one Olekandr's work in Linz",
+    "body": "Attachment [plural_folded-4.4.4.patch](tarball://root/attachments/some-uuid/ticket4539/plural_folded-4.4.4.patch) by AlexanderDreyer created at 2010-07-20 14:28:54\n\nPart one Olekandr's work in Linz",
     "created_at": "2010-07-20T14:28:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -302,7 +302,7 @@ archive/issue_comments_033843.json:
 }
 ```
 
-Attachment
+Attachment [plural_folded-4.4.4.patch](tarball://root/attachments/some-uuid/ticket4539/plural_folded-4.4.4.patch) by AlexanderDreyer created at 2010-07-20 14:28:54
 
 Part one Olekandr's work in Linz
 
@@ -313,7 +313,7 @@ Part one Olekandr's work in Linz
 archive/issue_comments_033844.json:
 ```json
 {
-    "body": "Attachment\n\nDoctest fixes by Alexander",
+    "body": "Attachment [extplural-more](tarball://root/attachments/some-uuid/ticket4539/extplural-more) by AlexanderDreyer created at 2010-07-20 14:29:15\n\nDoctest fixes by Alexander",
     "created_at": "2010-07-20T14:29:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -322,7 +322,7 @@ archive/issue_comments_033844.json:
 }
 ```
 
-Attachment
+Attachment [extplural-more](tarball://root/attachments/some-uuid/ticket4539/extplural-more) by AlexanderDreyer created at 2010-07-20 14:29:15
 
 Doctest fixes by Alexander
 
@@ -333,7 +333,7 @@ Doctest fixes by Alexander
 archive/issue_comments_033845.json:
 ```json
 {
-    "body": "Attachment\n\nDoctest fixes by Alexander",
+    "body": "Attachment [extplural-more.patch](tarball://root/attachments/some-uuid/ticket4539/extplural-more.patch) by AlexanderDreyer created at 2010-07-20 14:30:35\n\nDoctest fixes by Alexander",
     "created_at": "2010-07-20T14:30:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -342,7 +342,7 @@ archive/issue_comments_033845.json:
 }
 ```
 
-Attachment
+Attachment [extplural-more.patch](tarball://root/attachments/some-uuid/ticket4539/extplural-more.patch) by AlexanderDreyer created at 2010-07-20 14:30:35
 
 Doctest fixes by Alexander
 
@@ -353,7 +353,7 @@ Doctest fixes by Alexander
 archive/issue_comments_033846.json:
 ```json
 {
-    "body": "Attachment\n\nnoncommunative ring functionality",
+    "body": "Attachment [extplural-more2.patch](tarball://root/attachments/some-uuid/ticket4539/extplural-more2.patch) by AlexanderDreyer created at 2010-07-21 10:23:52\n\nnoncommunative ring functionality",
     "created_at": "2010-07-21T10:23:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -362,7 +362,7 @@ archive/issue_comments_033846.json:
 }
 ```
 
-Attachment
+Attachment [extplural-more2.patch](tarball://root/attachments/some-uuid/ticket4539/extplural-more2.patch) by AlexanderDreyer created at 2010-07-21 10:23:52
 
 noncommunative ring functionality
 
@@ -373,7 +373,7 @@ noncommunative ring functionality
 archive/issue_comments_033847.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [extplural-more3.patch](tarball://root/attachments/some-uuid/ticket4539/extplural-more3.patch) by AlexanderDreyer created at 2010-07-21 15:47:26",
     "created_at": "2010-07-21T15:47:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -382,7 +382,7 @@ archive/issue_comments_033847.json:
 }
 ```
 
-Attachment
+Attachment [extplural-more3.patch](tarball://root/attachments/some-uuid/ticket4539/extplural-more3.patch) by AlexanderDreyer created at 2010-07-21 15:47:26
 
 
 
@@ -409,7 +409,7 @@ Changing assignee from burcin to OleksandrMotsak,AlexanderDreyer.
 archive/issue_comments_033849.json:
 ```json
 {
-    "body": "Attachment\n\nThis folds of the following patches, a crucial subset of the noncommutation fucntionality as well as extensive documentation and  doctests",
+    "body": "Attachment [plural-wrapper-2010-07-22.patch](tarball://root/attachments/some-uuid/ticket4539/plural-wrapper-2010-07-22.patch) by AlexanderDreyer created at 2010-07-22 12:33:11\n\nThis folds of the following patches, a crucial subset of the noncommutation fucntionality as well as extensive documentation and  doctests",
     "created_at": "2010-07-22T12:33:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -418,7 +418,7 @@ archive/issue_comments_033849.json:
 }
 ```
 
-Attachment
+Attachment [plural-wrapper-2010-07-22.patch](tarball://root/attachments/some-uuid/ticket4539/plural-wrapper-2010-07-22.patch) by AlexanderDreyer created at 2010-07-22 12:33:11
 
 This folds of the following patches, a crucial subset of the noncommutation fucntionality as well as extensive documentation and  doctests
 
@@ -507,7 +507,7 @@ Need input: what structures / what library?
 archive/issue_comments_033854.json:
 ```json
 {
-    "body": "Attachment\n\nFixed some broken doctests",
+    "body": "Attachment [plural-missing-docu.patch](tarball://root/attachments/some-uuid/ticket4539/plural-missing-docu.patch) by AlexanderDreyer created at 2010-07-23 06:02:31\n\nFixed some broken doctests",
     "created_at": "2010-07-23T06:02:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -516,7 +516,7 @@ archive/issue_comments_033854.json:
 }
 ```
 
-Attachment
+Attachment [plural-missing-docu.patch](tarball://root/attachments/some-uuid/ticket4539/plural-missing-docu.patch) by AlexanderDreyer created at 2010-07-23 06:02:31
 
 Fixed some broken doctests
 
@@ -527,7 +527,7 @@ Fixed some broken doctests
 archive/issue_comments_033855.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [plural-missing-docu.2.patch](tarball://root/attachments/some-uuid/ticket4539/plural-missing-docu.2.patch) by AlexanderDreyer created at 2010-07-24 07:22:41",
     "created_at": "2010-07-24T07:22:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -536,7 +536,7 @@ archive/issue_comments_033855.json:
 }
 ```
 
-Attachment
+Attachment [plural-missing-docu.2.patch](tarball://root/attachments/some-uuid/ticket4539/plural-missing-docu.2.patch) by AlexanderDreyer created at 2010-07-24 07:22:41
 
 
 
@@ -622,7 +622,7 @@ Accumulated patch for all patches above for Singular/Plural
 archive/issue_comments_033860.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [plural-wrapper-2010-07-27.patch](tarball://root/attachments/some-uuid/ticket4539/plural-wrapper-2010-07-27.patch) by AlexanderDreyer created at 2010-07-27 13:52:17",
     "created_at": "2010-07-27T13:52:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -631,7 +631,7 @@ archive/issue_comments_033860.json:
 }
 ```
 
-Attachment
+Attachment [plural-wrapper-2010-07-27.patch](tarball://root/attachments/some-uuid/ticket4539/plural-wrapper-2010-07-27.patch) by AlexanderDreyer created at 2010-07-27 13:52:17
 
 
 
@@ -911,7 +911,7 @@ rebased to 4.5.3
 archive/issue_comments_033871.json:
 ```json
 {
-    "body": "Attachment\n\nIt was indeed careless rebasing. attachment:plural-wrapper-2010-10-01.patch (patch with same name as before, to hide my shame :) ) seems to work.\n\nNicolas, it would be great if you could help with the review. We are pretty confident with the interface to Singular and low-level code, since, as you can also see from the comments on the ticket, many Singular and Sage developers were involved in writing the code. However, we added many of the noncommutative structures on the spot (in a late night coding sprint) as we needed them. Another pair of eyes checking the mathematical structures and design would be really useful.\n\nThough I think we should try to get this patch in as soon as possible. I'm sure quite a few people would be interested in the functionality of Plural. We can always work on providing a better interface later, as the number of users/developers increases.",
+    "body": "Attachment [plural-wrapper-2010-10-01.patch](tarball://root/attachments/some-uuid/ticket4539/plural-wrapper-2010-10-01.patch) by burcin created at 2010-10-01 14:44:23\n\nIt was indeed careless rebasing. attachment:plural-wrapper-2010-10-01.patch (patch with same name as before, to hide my shame :) ) seems to work.\n\nNicolas, it would be great if you could help with the review. We are pretty confident with the interface to Singular and low-level code, since, as you can also see from the comments on the ticket, many Singular and Sage developers were involved in writing the code. However, we added many of the noncommutative structures on the spot (in a late night coding sprint) as we needed them. Another pair of eyes checking the mathematical structures and design would be really useful.\n\nThough I think we should try to get this patch in as soon as possible. I'm sure quite a few people would be interested in the functionality of Plural. We can always work on providing a better interface later, as the number of users/developers increases.",
     "created_at": "2010-10-01T14:44:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -920,7 +920,7 @@ archive/issue_comments_033871.json:
 }
 ```
 
-Attachment
+Attachment [plural-wrapper-2010-10-01.patch](tarball://root/attachments/some-uuid/ticket4539/plural-wrapper-2010-10-01.patch) by burcin created at 2010-10-01 14:44:23
 
 It was indeed careless rebasing. attachment:plural-wrapper-2010-10-01.patch (patch with same name as before, to hide my shame :) ) seems to work.
 
@@ -1516,7 +1516,7 @@ experimental rebasement to 4.7.2alpha3-prerelease
 archive/issue_comments_033893.json:
 ```json
 {
-    "body": "Attachment\n\nCan you test, whether Attach:trac4539_libplural-2011-09-27-untested.patch does the job?",
+    "body": "Attachment [trac4539_libplural-2011-09-27-untested.patch](tarball://root/attachments/some-uuid/ticket4539/trac4539_libplural-2011-09-27-untested.patch) by AlexanderDreyer created at 2011-09-26 22:32:30\n\nCan you test, whether Attach:trac4539_libplural-2011-09-27-untested.patch does the job?",
     "created_at": "2011-09-26T22:32:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -1525,7 +1525,7 @@ archive/issue_comments_033893.json:
 }
 ```
 
-Attachment
+Attachment [trac4539_libplural-2011-09-27-untested.patch](tarball://root/attachments/some-uuid/ticket4539/trac4539_libplural-2011-09-27-untested.patch) by AlexanderDreyer created at 2011-09-26 22:32:30
 
 Can you test, whether Attach:trac4539_libplural-2011-09-27-untested.patch does the job?
 
@@ -1804,7 +1804,7 @@ Sorry, I forgot: It should be a dependency.
 archive/issue_comments_033904.json:
 ```json
 {
-    "body": "Attachment\n\nExperimental rebasement wrt sage-4.7.2.alpha3 plus #7797 plus #11856",
+    "body": "Attachment [trac4539_libplural_todo.patch](tarball://root/attachments/some-uuid/ticket4539/trac4539_libplural_todo.patch) by SimonKing created at 2011-09-27 16:10:14\n\nExperimental rebasement wrt sage-4.7.2.alpha3 plus #7797 plus #11856",
     "created_at": "2011-09-27T16:10:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -1813,7 +1813,7 @@ archive/issue_comments_033904.json:
 }
 ```
 
-Attachment
+Attachment [trac4539_libplural_todo.patch](tarball://root/attachments/some-uuid/ticket4539/trac4539_libplural_todo.patch) by SimonKing created at 2011-09-27 16:10:14
 
 Experimental rebasement wrt sage-4.7.2.alpha3 plus #7797 plus #11856
 
@@ -1862,7 +1862,7 @@ fixes at least some segfault (updated patch) - needs main patch applied before
 archive/issue_comments_033907.json:
 ```json
 {
-    "body": "Attachment\n\nI found out that the intended lmul implementation, namely using rmul *and* reverting left and right hand side, is an illegal for some right hand side objects. Up to now, this is only verified for schemes/elliptic_curves/ell_curve_isogeny.py More extensive tests follow.",
+    "body": "Attachment [trac4539_lmul.patch](tarball://root/attachments/some-uuid/ticket4539/trac4539_lmul.patch) by AlexanderDreyer created at 2011-09-27 22:11:45\n\nI found out that the intended lmul implementation, namely using rmul *and* reverting left and right hand side, is an illegal for some right hand side objects. Up to now, this is only verified for schemes/elliptic_curves/ell_curve_isogeny.py More extensive tests follow.",
     "created_at": "2011-09-27T22:11:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -1871,7 +1871,7 @@ archive/issue_comments_033907.json:
 }
 ```
 
-Attachment
+Attachment [trac4539_lmul.patch](tarball://root/attachments/some-uuid/ticket4539/trac4539_lmul.patch) by AlexanderDreyer created at 2011-09-27 22:11:45
 
 I found out that the intended lmul implementation, namely using rmul *and* reverting left and right hand side, is an illegal for some right hand side objects. Up to now, this is only verified for schemes/elliptic_curves/ell_curve_isogeny.py More extensive tests follow.
 
@@ -1900,7 +1900,7 @@ Hi Alexander, the description of your lmul patch says "needs main patch applied 
 archive/issue_comments_033909.json:
 ```json
 {
-    "body": "Attachment\n\nfixes \"keyword not found\" issue (revert unnecessary path of the big patch)",
+    "body": "Attachment [trac4539_kwds.patch](tarball://root/attachments/some-uuid/ticket4539/trac4539_kwds.patch) by AlexanderDreyer created at 2011-09-28 08:59:07\n\nfixes \"keyword not found\" issue (revert unnecessary path of the big patch)",
     "created_at": "2011-09-28T08:59:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -1909,7 +1909,7 @@ archive/issue_comments_033909.json:
 }
 ```
 
-Attachment
+Attachment [trac4539_kwds.patch](tarball://root/attachments/some-uuid/ticket4539/trac4539_kwds.patch) by AlexanderDreyer created at 2011-09-28 08:59:07
 
 fixes "keyword not found" issue (revert unnecessary path of the big patch)
 
@@ -1938,7 +1938,7 @@ Here another small patch reverts an unnecessary part of the big patch. It fixes 
 archive/issue_comments_033911.json:
 ```json
 {
-    "body": "Attachment\n\nPatch for using trac4539_libplural-2011-09-27-untested.patch together with #11856 (not needed for trac4539_libplural_todo.patch)",
+    "body": "Attachment [trac4539_is_monomial.patch](tarball://root/attachments/some-uuid/ticket4539/trac4539_is_monomial.patch) by AlexanderDreyer created at 2011-09-28 10:33:49\n\nPatch for using trac4539_libplural-2011-09-27-untested.patch together with #11856 (not needed for trac4539_libplural_todo.patch)",
     "created_at": "2011-09-28T10:33:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -1947,7 +1947,7 @@ archive/issue_comments_033911.json:
 }
 ```
 
-Attachment
+Attachment [trac4539_is_monomial.patch](tarball://root/attachments/some-uuid/ticket4539/trac4539_is_monomial.patch) by AlexanderDreyer created at 2011-09-28 10:33:49
 
 Patch for using trac4539_libplural-2011-09-27-untested.patch together with #11856 (not needed for trac4539_libplural_todo.patch)
 
@@ -1958,7 +1958,7 @@ Patch for using trac4539_libplural-2011-09-27-untested.patch together with #1185
 archive/issue_comments_033912.json:
 ```json
 {
-    "body": "Attachment\n\nmonomial_quotient should throw instead of return nonsense",
+    "body": "Attachment [trac4539_overflow.patch](tarball://root/attachments/some-uuid/ticket4539/trac4539_overflow.patch) by AlexanderDreyer created at 2011-09-28 10:54:41\n\nmonomial_quotient should throw instead of return nonsense",
     "created_at": "2011-09-28T10:54:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -1967,7 +1967,7 @@ archive/issue_comments_033912.json:
 }
 ```
 
-Attachment
+Attachment [trac4539_overflow.patch](tarball://root/attachments/some-uuid/ticket4539/trac4539_overflow.patch) by AlexanderDreyer created at 2011-09-28 10:54:41
 
 monomial_quotient should throw instead of return nonsense
 
@@ -1978,7 +1978,7 @@ monomial_quotient should throw instead of return nonsense
 archive/issue_comments_033913.json:
 ```json
 {
-    "body": "Attachment\n\nConcerning [attachment:trac4539_monomial_quotient.patch]: I am not sure if it is the right thing to do. I think that monomial_quotient is a method that should be as fast as possible, since in some situations it is used very frequently. In these situations, it is always the case that one monomial *does* divide the other. Hence, for the application, it is a bad idea to have a redundant sanity test in monomial_quotient. I'd rather have it return a wrong result when using it in a wrong way.\n\nNote that [attachment:trac4539_kwds.patch] is not needed for my patch - I already have *args in it.\n\nWe have already briefly discussed why I think that [attachment:trac4539_lmul.patch] probably is not a good approach: x._rmul_(c) and x._lmul_(c) (by specification of the coercion model) can assume that the argument c belongs to x.parent().base_ring(). In particular, I don't believe that c can actually be a non-commutative polynomial.\n\nCan you please provide an example that was segfaulting without the lmul-patch?",
+    "body": "Attachment [trac4539_monomial_quotient.patch](tarball://root/attachments/some-uuid/ticket4539/trac4539_monomial_quotient.patch) by SimonKing created at 2011-09-28 13:18:13\n\nConcerning [attachment:trac4539_monomial_quotient.patch]: I am not sure if it is the right thing to do. I think that monomial_quotient is a method that should be as fast as possible, since in some situations it is used very frequently. In these situations, it is always the case that one monomial *does* divide the other. Hence, for the application, it is a bad idea to have a redundant sanity test in monomial_quotient. I'd rather have it return a wrong result when using it in a wrong way.\n\nNote that [attachment:trac4539_kwds.patch] is not needed for my patch - I already have *args in it.\n\nWe have already briefly discussed why I think that [attachment:trac4539_lmul.patch] probably is not a good approach: x._rmul_(c) and x._lmul_(c) (by specification of the coercion model) can assume that the argument c belongs to x.parent().base_ring(). In particular, I don't believe that c can actually be a non-commutative polynomial.\n\nCan you please provide an example that was segfaulting without the lmul-patch?",
     "created_at": "2011-09-28T13:18:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -1987,7 +1987,7 @@ archive/issue_comments_033913.json:
 }
 ```
 
-Attachment
+Attachment [trac4539_monomial_quotient.patch](tarball://root/attachments/some-uuid/ticket4539/trac4539_monomial_quotient.patch) by SimonKing created at 2011-09-28 13:18:13
 
 Concerning [attachment:trac4539_monomial_quotient.patch]: I am not sure if it is the right thing to do. I think that monomial_quotient is a method that should be as fast as possible, since in some situations it is used very frequently. In these situations, it is always the case that one monomial *does* divide the other. Hence, for the application, it is a bad idea to have a redundant sanity test in monomial_quotient. I'd rather have it return a wrong result when using it in a wrong way.
 
@@ -2082,7 +2082,7 @@ Alexander just told me that he agrees in dropping the (redundant) test in monomi
 archive/issue_comments_033918.json:
 ```json
 {
-    "body": "Attachment\n\nCombined patch relative to sage-4.7.2.alpha3 plus #7797 plus #11856",
+    "body": "Attachment [trac4539_libplural.2.patch](tarball://root/attachments/some-uuid/ticket4539/trac4539_libplural.2.patch) by SimonKing created at 2011-09-28 14:10:45\n\nCombined patch relative to sage-4.7.2.alpha3 plus #7797 plus #11856",
     "created_at": "2011-09-28T14:10:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -2091,7 +2091,7 @@ archive/issue_comments_033918.json:
 }
 ```
 
-Attachment
+Attachment [trac4539_libplural.2.patch](tarball://root/attachments/some-uuid/ticket4539/trac4539_libplural.2.patch) by SimonKing created at 2011-09-28 14:10:45
 
 Combined patch relative to sage-4.7.2.alpha3 plus #7797 plus #11856
 
@@ -2562,7 +2562,7 @@ I fixed various wrong doc string formats. Of course, after the changes mentioned
 archive/issue_comments_033936.json:
 ```json
 {
-    "body": "Attachment\n\nCombined patch relative to sage-4.7.2.alpha3 plus #11068 plus #11856",
+    "body": "Attachment [trac4539_libplural.patch](tarball://root/attachments/some-uuid/ticket4539/trac4539_libplural.patch) by SimonKing created at 2011-09-29 08:10:33\n\nCombined patch relative to sage-4.7.2.alpha3 plus #11068 plus #11856",
     "created_at": "2011-09-29T08:10:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -2571,7 +2571,7 @@ archive/issue_comments_033936.json:
 }
 ```
 
-Attachment
+Attachment [trac4539_libplural.patch](tarball://root/attachments/some-uuid/ticket4539/trac4539_libplural.patch) by SimonKing created at 2011-09-29 08:10:33
 
 Combined patch relative to sage-4.7.2.alpha3 plus #11068 plus #11856
 
@@ -2633,7 +2633,7 @@ Apply trac4539_libplural.patch trac4539_pickling.patch
 archive/issue_comments_033939.json:
 ```json
 {
-    "body": "Attachment\n\nPickling of nc rings and polynomials",
+    "body": "Attachment [trac4539_pickling.patch](tarball://root/attachments/some-uuid/ticket4539/trac4539_pickling.patch) by SimonKing created at 2011-09-29 12:28:22\n\nPickling of nc rings and polynomials",
     "created_at": "2011-09-29T12:28:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -2642,7 +2642,7 @@ archive/issue_comments_033939.json:
 }
 ```
 
-Attachment
+Attachment [trac4539_pickling.patch](tarball://root/attachments/some-uuid/ticket4539/trac4539_pickling.patch) by SimonKing created at 2011-09-29 12:28:22
 
 Pickling of nc rings and polynomials
 
@@ -2741,7 +2741,7 @@ Normal forms, quotient rings, and ideal containment
 archive/issue_comments_033943.json:
 ```json
 {
-    "body": "Attachment\n\nSorry, I couldn't resist to add one more feature: Ideal containment, which is a direct application of normal form computation.\n\nWith the new version of the third patch, we have:\n\n```\nsage: A.<x,y,z> = FreeAlgebra(QQ, 3)\nsage: H.<x,y,z> = A.g_algebra({y*x:x*y-z, z*x:x*z+2*x, z*y:y*z-2*y})\nsage: JL = H.ideal([x^3, y^3, z^3 - 4*z])\nsage: JL.std()\nLeft Ideal (z^3 - 4*z, y*z^2 - 2*y*z, x*z^2 + 2*x*z, 2*x*y*z - z^2 - 2*z, y^3, x^3) of Noncommutative Multivariate Polynomial Ring in x, y, z over Rational Field, nc-relations: {y*x: x*y - z, z*y: y*z - 2*y, z*x: x*z + 2*x}\nsage: JT = H.ideal([x^3, y^3, z^3 - 4*z], side='twosided')\nsage: JT.std()\nTwosided Ideal (z^3 - 4*z, y*z^2 - 2*y*z, x*z^2 + 2*x*z, y^2*z - 2*y^2, 2*x*y*z - z^2 - 2*z, x^2*z + 2*x^2, y^3, x*y^2 - y*z, x^2*y - x*z - 2*x, x^3) of Noncommutative Multivariate Polynomial Ring in x, y, z over Rational Field, nc-relations: {y*x: x*y - z, z*y: y*z - 2*y, z*x: x*z + 2*x}\n```\n\nApparently, ``x*y^2-y*z`` should be in the two-sided, but not in the left ideal. And that is indeed what we get:\n\n```\nsage: x*y^2-y*z in JL\nFalse\nsage: x*y^2-y*z in JT\nTrue\n```\n\n\nDocs are still to fix. And I promise to focus on it - no new features...\n\nApply trac4539_libplural.patch trac4539_pickling.patch trac4539_normal_forms.patch",
+    "body": "Attachment [trac4539_normal_forms.patch](tarball://root/attachments/some-uuid/ticket4539/trac4539_normal_forms.patch) by SimonKing created at 2011-09-29 12:56:09\n\nSorry, I couldn't resist to add one more feature: Ideal containment, which is a direct application of normal form computation.\n\nWith the new version of the third patch, we have:\n\n```\nsage: A.<x,y,z> = FreeAlgebra(QQ, 3)\nsage: H.<x,y,z> = A.g_algebra({y*x:x*y-z, z*x:x*z+2*x, z*y:y*z-2*y})\nsage: JL = H.ideal([x^3, y^3, z^3 - 4*z])\nsage: JL.std()\nLeft Ideal (z^3 - 4*z, y*z^2 - 2*y*z, x*z^2 + 2*x*z, 2*x*y*z - z^2 - 2*z, y^3, x^3) of Noncommutative Multivariate Polynomial Ring in x, y, z over Rational Field, nc-relations: {y*x: x*y - z, z*y: y*z - 2*y, z*x: x*z + 2*x}\nsage: JT = H.ideal([x^3, y^3, z^3 - 4*z], side='twosided')\nsage: JT.std()\nTwosided Ideal (z^3 - 4*z, y*z^2 - 2*y*z, x*z^2 + 2*x*z, y^2*z - 2*y^2, 2*x*y*z - z^2 - 2*z, x^2*z + 2*x^2, y^3, x*y^2 - y*z, x^2*y - x*z - 2*x, x^3) of Noncommutative Multivariate Polynomial Ring in x, y, z over Rational Field, nc-relations: {y*x: x*y - z, z*y: y*z - 2*y, z*x: x*z + 2*x}\n```\n\nApparently, ``x*y^2-y*z`` should be in the two-sided, but not in the left ideal. And that is indeed what we get:\n\n```\nsage: x*y^2-y*z in JL\nFalse\nsage: x*y^2-y*z in JT\nTrue\n```\n\n\nDocs are still to fix. And I promise to focus on it - no new features...\n\nApply trac4539_libplural.patch trac4539_pickling.patch trac4539_normal_forms.patch",
     "created_at": "2011-09-29T12:56:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -2750,7 +2750,7 @@ archive/issue_comments_033943.json:
 }
 ```
 
-Attachment
+Attachment [trac4539_normal_forms.patch](tarball://root/attachments/some-uuid/ticket4539/trac4539_normal_forms.patch) by SimonKing created at 2011-09-29 12:56:09
 
 Sorry, I couldn't resist to add one more feature: Ideal containment, which is a direct application of normal form computation.
 
@@ -2910,7 +2910,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_033950.json:
 ```json
 {
-    "body": "Attachment\n\nIt turned out that the element constructor of ideal monoids changed a left ideal into a twosided ideal, which (together with the missing uniqueness of ideal monoids) led to errors in a `loads(dumps(...)==...` test.\n\nI hope all tests will pass by now!\n\nApply trac4539_libplural.patch trac4539_pickling.patch trac4539_normal_forms.patch trac4539_fix_docs.patch",
+    "body": "Attachment [trac4539_fix_docs.patch](tarball://root/attachments/some-uuid/ticket4539/trac4539_fix_docs.patch) by SimonKing created at 2011-09-29 16:32:53\n\nIt turned out that the element constructor of ideal monoids changed a left ideal into a twosided ideal, which (together with the missing uniqueness of ideal monoids) led to errors in a `loads(dumps(...)==...` test.\n\nI hope all tests will pass by now!\n\nApply trac4539_libplural.patch trac4539_pickling.patch trac4539_normal_forms.patch trac4539_fix_docs.patch",
     "created_at": "2011-09-29T16:32:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -2919,7 +2919,7 @@ archive/issue_comments_033950.json:
 }
 ```
 
-Attachment
+Attachment [trac4539_fix_docs.patch](tarball://root/attachments/some-uuid/ticket4539/trac4539_fix_docs.patch) by SimonKing created at 2011-09-29 16:32:53
 
 It turned out that the element constructor of ideal monoids changed a left ideal into a twosided ideal, which (together with the missing uniqueness of ideal monoids) led to errors in a `loads(dumps(...)==...` test.
 
@@ -3259,7 +3259,7 @@ Test: if SCA implementation is used then `y*y == 0;` for each non-commutative (o
 archive/issue_comments_033965.json:
 ```json
 {
-    "body": "Attachment\n\nFixed one doc test which faild in 32 bit",
+    "body": "Attachment [trac4539_fix_docs_32bit.patch](tarball://root/attachments/some-uuid/ticket4539/trac4539_fix_docs_32bit.patch) by AlexanderDreyer created at 2011-09-30 21:50:51\n\nFixed one doc test which faild in 32 bit",
     "created_at": "2011-09-30T21:50:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -3268,7 +3268,7 @@ archive/issue_comments_033965.json:
 }
 ```
 
-Attachment
+Attachment [trac4539_fix_docs_32bit.patch](tarball://root/attachments/some-uuid/ticket4539/trac4539_fix_docs_32bit.patch) by AlexanderDreyer created at 2011-09-30 21:50:51
 
 Fixed one doc test which faild in 32 bit
 
@@ -3635,7 +3635,7 @@ So, the old Singular version forgot to remove a redundant Syzygy.
 archive/issue_comments_033980.json:
 ```json
 {
-    "body": "Attachment\n\nCombined patch relative to sage-4.7.2.alpha3 plus #11068, #11856 and #10903",
+    "body": "Attachment [trac4539_libplural_rel10903.patch](tarball://root/attachments/some-uuid/ticket4539/trac4539_libplural_rel10903.patch) by SimonKing created at 2011-10-05 08:12:32\n\nCombined patch relative to sage-4.7.2.alpha3 plus #11068, #11856 and #10903",
     "created_at": "2011-10-05T08:12:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -3644,7 +3644,7 @@ archive/issue_comments_033980.json:
 }
 ```
 
-Attachment
+Attachment [trac4539_libplural_rel10903.patch](tarball://root/attachments/some-uuid/ticket4539/trac4539_libplural_rel10903.patch) by SimonKing created at 2011-10-05 08:12:32
 
 Combined patch relative to sage-4.7.2.alpha3 plus #11068, #11856 and #10903
 
@@ -3673,7 +3673,7 @@ Pickling of nc rings and polynomials, rel #10903
 archive/issue_comments_033982.json:
 ```json
 {
-    "body": "Attachment\n\nNormal forms, quotient rings, and ideal containment, rel #10903",
+    "body": "Attachment [trac4539_normal_forms_rel10903.patch](tarball://root/attachments/some-uuid/ticket4539/trac4539_normal_forms_rel10903.patch) by SimonKing created at 2011-10-05 08:13:40\n\nNormal forms, quotient rings, and ideal containment, rel #10903",
     "created_at": "2011-10-05T08:13:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -3682,7 +3682,7 @@ archive/issue_comments_033982.json:
 }
 ```
 
-Attachment
+Attachment [trac4539_normal_forms_rel10903.patch](tarball://root/attachments/some-uuid/ticket4539/trac4539_normal_forms_rel10903.patch) by SimonKing created at 2011-10-05 08:13:40
 
 Normal forms, quotient rings, and ideal containment, rel #10903
 
@@ -3888,7 +3888,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_033992.json:
 ```json
 {
-    "body": "Attachment\n\nFixing doc strings and doc tests , rel #10903",
+    "body": "Attachment [8800_functor_pushout_doc_and_fixes.patch](tarball://root/attachments/some-uuid/ticket4539/8800_functor_pushout_doc_and_fixes.patch) by SimonKing created at 2011-10-05 10:53:00\n\nFixing doc strings and doc tests , rel #10903",
     "created_at": "2011-10-05T10:53:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -3897,7 +3897,7 @@ archive/issue_comments_033992.json:
 }
 ```
 
-Attachment
+Attachment [8800_functor_pushout_doc_and_fixes.patch](tarball://root/attachments/some-uuid/ticket4539/8800_functor_pushout_doc_and_fixes.patch) by SimonKing created at 2011-10-05 10:53:00
 
 Fixing doc strings and doc tests , rel #10903
 
@@ -3908,7 +3908,7 @@ Fixing doc strings and doc tests , rel #10903
 archive/issue_comments_033993.json:
 ```json
 {
-    "body": "Attachment\n\nFixing doc strings and doc tests , rel #10903",
+    "body": "Attachment [trac4539_fix_docs_rel10903.2.patch](tarball://root/attachments/some-uuid/ticket4539/trac4539_fix_docs_rel10903.2.patch) by SimonKing created at 2011-10-05 10:53:53\n\nFixing doc strings and doc tests , rel #10903",
     "created_at": "2011-10-05T10:53:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -3917,7 +3917,7 @@ archive/issue_comments_033993.json:
 }
 ```
 
-Attachment
+Attachment [trac4539_fix_docs_rel10903.2.patch](tarball://root/attachments/some-uuid/ticket4539/trac4539_fix_docs_rel10903.2.patch) by SimonKing created at 2011-10-05 10:53:53
 
 Fixing doc strings and doc tests , rel #10903
 
@@ -3928,7 +3928,7 @@ Fixing doc strings and doc tests , rel #10903
 archive/issue_comments_033994.json:
 ```json
 {
-    "body": "Attachment\n\nFixing doc strings and doc tests , rel #10903",
+    "body": "Attachment [trac4539_fix_docs_rel10903.patch](tarball://root/attachments/some-uuid/ticket4539/trac4539_fix_docs_rel10903.patch) by SimonKing created at 2011-10-05 10:54:11\n\nFixing doc strings and doc tests , rel #10903",
     "created_at": "2011-10-05T10:54:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -3937,7 +3937,7 @@ archive/issue_comments_033994.json:
 }
 ```
 
-Attachment
+Attachment [trac4539_fix_docs_rel10903.patch](tarball://root/attachments/some-uuid/ticket4539/trac4539_fix_docs_rel10903.patch) by SimonKing created at 2011-10-05 10:54:11
 
 Fixing doc strings and doc tests , rel #10903
 
@@ -4038,7 +4038,7 @@ With that patch we are close to a positive review: I'm also running tests on OS 
 archive/issue_comments_033998.json:
 ```json
 {
-    "body": "Attachment\n\nHi Alexander,\n\nNote that there is a new patch at #10903 (where the docbuild crash was introduced), and it fixes the problem in a more satisfying way. The problem was that under certain circumstances the name of a deprecated Cython method could not be determined - but with the new patch from #10903 (actually there are TWO new patches) the problem is fixed.\n\nSo, the docbuild reviewer patch is not needed.",
+    "body": "Attachment [trac4539_docbuild_reviewer.patch](tarball://root/attachments/some-uuid/ticket4539/trac4539_docbuild_reviewer.patch) by SimonKing created at 2011-10-05 18:43:04\n\nHi Alexander,\n\nNote that there is a new patch at #10903 (where the docbuild crash was introduced), and it fixes the problem in a more satisfying way. The problem was that under certain circumstances the name of a deprecated Cython method could not be determined - but with the new patch from #10903 (actually there are TWO new patches) the problem is fixed.\n\nSo, the docbuild reviewer patch is not needed.",
     "created_at": "2011-10-05T18:43:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -4047,7 +4047,7 @@ archive/issue_comments_033998.json:
 }
 ```
 
-Attachment
+Attachment [trac4539_docbuild_reviewer.patch](tarball://root/attachments/some-uuid/ticket4539/trac4539_docbuild_reviewer.patch) by SimonKing created at 2011-10-05 18:43:04
 
 Hi Alexander,
 
@@ -4098,7 +4098,7 @@ Building, installing and testing succeeded on SuSE 11 Enterprise amd64 and OS X 
 archive/issue_comments_034001.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac4539_libplural_rel11761.patch](tarball://root/attachments/some-uuid/ticket4539/trac4539_libplural_rel11761.patch) by jdemeyer created at 2011-11-05 14:05:43",
     "created_at": "2011-11-05T14:05:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -4107,7 +4107,7 @@ archive/issue_comments_034001.json:
 }
 ```
 
-Attachment
+Attachment [trac4539_libplural_rel11761.patch](tarball://root/attachments/some-uuid/ticket4539/trac4539_libplural_rel11761.patch) by jdemeyer created at 2011-11-05 14:05:43
 
 
 

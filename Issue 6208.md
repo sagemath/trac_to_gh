@@ -146,7 +146,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6208
 archive/issue_comments_049599.json:
 ```json
 {
-    "body": "Attachment\n\nImproved performance of the gap interface by pre-compiling regular expressions",
+    "body": "Attachment [gap_interface_reg_expr.patch](tarball://root/attachments/some-uuid/ticket6208/gap_interface_reg_expr.patch) by SimonKing created at 2009-06-04 11:54:50\n\nImproved performance of the gap interface by pre-compiling regular expressions",
     "created_at": "2009-06-04T11:54:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6208",
     "type": "issue_comment",
@@ -155,7 +155,7 @@ archive/issue_comments_049599.json:
 }
 ```
 
-Attachment
+Attachment [gap_interface_reg_expr.patch](tarball://root/attachments/some-uuid/ticket6208/gap_interface_reg_expr.patch) by SimonKing created at 2009-06-04 11:54:50
 
 Improved performance of the gap interface by pre-compiling regular expressions
 

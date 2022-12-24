@@ -163,7 +163,7 @@ otherwise seems good to me.
 archive/issue_comments_049383.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached updated patch addresses the reviewer's comments. Is that a positive review then?",
+    "body": "Attachment [sbox_cnf.patch](tarball://root/attachments/some-uuid/ticket6185/sbox_cnf.patch) by malb created at 2009-06-11 11:36:35\n\nThe attached updated patch addresses the reviewer's comments. Is that a positive review then?",
     "created_at": "2009-06-11T11:36:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6185",
     "type": "issue_comment",
@@ -172,7 +172,7 @@ archive/issue_comments_049383.json:
 }
 ```
 
-Attachment
+Attachment [sbox_cnf.patch](tarball://root/attachments/some-uuid/ticket6185/sbox_cnf.patch) by malb created at 2009-06-11 11:36:35
 
 The attached updated patch addresses the reviewer's comments. Is that a positive review then?
 

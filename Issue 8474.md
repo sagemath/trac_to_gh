@@ -567,7 +567,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_076377.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8474-have-program.patch](tarball://root/attachments/some-uuid/ticket8474/trac_8474-have-program.patch) by mhansen created at 2010-03-08 20:56:14",
     "created_at": "2010-03-08T20:56:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8474",
     "type": "issue_comment",
@@ -576,7 +576,7 @@ archive/issue_comments_076377.json:
 }
 ```
 
-Attachment
+Attachment [trac_8474-have-program.patch](tarball://root/attachments/some-uuid/ticket8474/trac_8474-have-program.patch) by mhansen created at 2010-03-08 20:56:14
 
 
 

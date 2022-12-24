@@ -57,7 +57,7 @@ See http://trac.cython.org/cython_trac/ticket/339
 archive/issue_comments_034241.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4571-numpy-pxd.patch](tarball://root/attachments/some-uuid/ticket4571/4571-numpy-pxd.patch) by robertwb created at 2009-06-28 09:02:02",
     "created_at": "2009-06-28T09:02:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4571",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_034241.json:
 }
 ```
 
-Attachment
+Attachment [4571-numpy-pxd.patch](tarball://root/attachments/some-uuid/ticket4571/4571-numpy-pxd.patch) by robertwb created at 2009-06-28 09:02:02
 
 
 
@@ -93,7 +93,7 @@ Preliminary patch, need a new Cython spkg for it to work all the way.
 archive/issue_comments_034243.json:
 ```json
 {
-    "body": "Attachment\n\nHere are some more fixes. With this, and the latest state of the\n\nhttp://hg.cython.org/cython\n\nrepo, all the relevant tests seem to pass. I do get two failures (due to Cython upgrade? something else?), see test.log in\n\n/home/dagss/sage-4.0.2-sage.math.washington.edu-x86_64-Linux\n\nOnce this works let's tag http://hg.cython.org/cython as 0.11.2.1 for #6438?",
+    "body": "Attachment [4571-more-fixes.patch](tarball://root/attachments/some-uuid/ticket4571/4571-more-fixes.patch) by dagss created at 2009-07-07 15:54:38\n\nHere are some more fixes. With this, and the latest state of the\n\nhttp://hg.cython.org/cython\n\nrepo, all the relevant tests seem to pass. I do get two failures (due to Cython upgrade? something else?), see test.log in\n\n/home/dagss/sage-4.0.2-sage.math.washington.edu-x86_64-Linux\n\nOnce this works let's tag http://hg.cython.org/cython as 0.11.2.1 for #6438?",
     "created_at": "2009-07-07T15:54:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4571",
     "type": "issue_comment",
@@ -102,7 +102,7 @@ archive/issue_comments_034243.json:
 }
 ```
 
-Attachment
+Attachment [4571-more-fixes.patch](tarball://root/attachments/some-uuid/ticket4571/4571-more-fixes.patch) by dagss created at 2009-07-07 15:54:38
 
 Here are some more fixes. With this, and the latest state of the
 

@@ -137,7 +137,7 @@ I fixed the following issues raised by Nicolas on sage-combinat-devel
 archive/issue_comments_079400.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8704-integer_range_print-fh.patch](tarball://root/attachments/some-uuid/ticket8704/trac_8704-integer_range_print-fh.patch) by hivert created at 2010-05-31 21:51:51",
     "created_at": "2010-05-31T21:51:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8704",
     "type": "issue_comment",
@@ -146,7 +146,7 @@ archive/issue_comments_079400.json:
 }
 ```
 
-Attachment
+Attachment [trac_8704-integer_range_print-fh.patch](tarball://root/attachments/some-uuid/ticket8704/trac_8704-integer_range_print-fh.patch) by hivert created at 2010-05-31 21:51:51
 
 
 

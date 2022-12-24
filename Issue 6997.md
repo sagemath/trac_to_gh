@@ -72,7 +72,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6997
 archive/issue_comments_057866.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6997-minor-typo.patch](tarball://root/attachments/some-uuid/ticket6997/trac_6997-minor-typo.patch) by mvngu created at 2009-09-22 22:35:08",
     "created_at": "2009-09-22T22:35:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6997",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_057866.json:
 }
 ```
 
-Attachment
+Attachment [trac_6997-minor-typo.patch](tarball://root/attachments/some-uuid/ticket6997/trac_6997-minor-typo.patch) by mvngu created at 2009-09-22 22:35:08
 
 
 

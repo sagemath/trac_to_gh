@@ -96,7 +96,7 @@ This *should* fix the problem, but hasn't been tested on the target platform.
 archive/issue_comments_009336.json:
 ```json
 {
-    "body": "Attachment\n\nThe bundle also seems to contain the fix for #1661.\n\nCheers,\n\nMichael",
+    "body": "Attachment [1449.hg](tarball://root/attachments/some-uuid/ticket1449/1449.hg) by mabshoff created at 2008-01-03 05:01:32\n\nThe bundle also seems to contain the fix for #1661.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-03T05:01:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1449",
     "type": "issue_comment",
@@ -105,7 +105,7 @@ archive/issue_comments_009336.json:
 }
 ```
 
-Attachment
+Attachment [1449.hg](tarball://root/attachments/some-uuid/ticket1449/1449.hg) by mabshoff created at 2008-01-03 05:01:32
 
 The bundle also seems to contain the fix for #1661.
 
@@ -138,7 +138,7 @@ Works in Camino and Firefox for me, but not in Safari...
 archive/issue_comments_009338.json:
 ```json
 {
-    "body": "Attachment\n\nGreat idea!!\n\nI posted a slight polish patch.",
+    "body": "Attachment [referee.patch](tarball://root/attachments/some-uuid/ticket1449/referee.patch) by was created at 2008-01-05 02:11:23\n\nGreat idea!!\n\nI posted a slight polish patch.",
     "created_at": "2008-01-05T02:11:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1449",
     "type": "issue_comment",
@@ -147,7 +147,7 @@ archive/issue_comments_009338.json:
 }
 ```
 
-Attachment
+Attachment [referee.patch](tarball://root/attachments/some-uuid/ticket1449/referee.patch) by was created at 2008-01-05 02:11:23
 
 Great idea!!
 

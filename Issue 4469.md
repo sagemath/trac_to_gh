@@ -211,7 +211,7 @@ Changing status from closed to reopened.
 archive/issue_comments_033000.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-4469.patch](tarball://root/attachments/some-uuid/ticket4469/trac-4469.patch) by craigcitro created at 2008-11-18 09:31:42",
     "created_at": "2008-11-18T09:31:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4469",
     "type": "issue_comment",
@@ -220,7 +220,7 @@ archive/issue_comments_033000.json:
 }
 ```
 
-Attachment
+Attachment [trac-4469.patch](tarball://root/attachments/some-uuid/ticket4469/trac-4469.patch) by craigcitro created at 2008-11-18 09:31:42
 
 
 

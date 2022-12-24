@@ -38,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7521
 archive/issue_comments_063721.json:
 ```json
 {
-    "body": "Attachment\n\nBased on 4.2.1",
+    "body": "Attachment [trac_7521-R-typo.patch](tarball://root/attachments/some-uuid/ticket7521/trac_7521-R-typo.patch) by kcrisman created at 2009-12-14 15:48:01\n\nBased on 4.2.1",
     "created_at": "2009-12-14T15:48:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7521",
     "type": "issue_comment",
@@ -47,7 +47,7 @@ archive/issue_comments_063721.json:
 }
 ```
 
-Attachment
+Attachment [trac_7521-R-typo.patch](tarball://root/attachments/some-uuid/ticket7521/trac_7521-R-typo.patch) by kcrisman created at 2009-12-14 15:48:01
 
 Based on 4.2.1
 
@@ -132,7 +132,7 @@ You're right.  I'm not sure how to fix that; what the original looks like is in 
 archive/issue_comments_063726.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [pic.tiff](tarball://root/attachments/some-uuid/ticket7521/pic.tiff) by kcrisman created at 2009-12-14 16:28:51",
     "created_at": "2009-12-14T16:28:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7521",
     "type": "issue_comment",
@@ -141,7 +141,7 @@ archive/issue_comments_063726.json:
 }
 ```
 
-Attachment
+Attachment [pic.tiff](tarball://root/attachments/some-uuid/ticket7521/pic.tiff) by kcrisman created at 2009-12-14 16:28:51
 
 
 
@@ -186,7 +186,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_063729.json:
 ```json
 {
-    "body": "Attachment\n\nBased on 4.3.1, sort of depends on spkg in #6532",
+    "body": "Attachment [trac_7521-R-typo-take2.patch](tarball://root/attachments/some-uuid/ticket7521/trac_7521-R-typo-take2.patch) by kcrisman created at 2010-01-25 19:37:00\n\nBased on 4.3.1, sort of depends on spkg in #6532",
     "created_at": "2010-01-25T19:37:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7521",
     "type": "issue_comment",
@@ -195,7 +195,7 @@ archive/issue_comments_063729.json:
 }
 ```
 
-Attachment
+Attachment [trac_7521-R-typo-take2.patch](tarball://root/attachments/some-uuid/ticket7521/trac_7521-R-typo-take2.patch) by kcrisman created at 2010-01-25 19:37:00
 
 Based on 4.3.1, sort of depends on spkg in #6532
 

@@ -182,7 +182,7 @@ simple sage launcher
 archive/issue_comments_066055.json:
 ```json
 {
-    "body": "Attachment\n\nAn .app bundle can be dead simple without any binary blobs (except for the icon, of course). See attached, which is 3 folders and a 1-line bash script, and launches sage in a command line. This could be easy to adapt to do sage -notebook (and wouldn't even have to fire up terminal), and use a sage executable bundled with the app (e.g. in /Resources), though a bit of care should be taken to gracefully handle what happens when a notebook is already running, and what to do about quitting.",
+    "body": "Attachment [sage.app.tar](tarball://root/attachments/some-uuid/ticket7700/sage.app.tar) by robertwb created at 2009-12-20 09:20:19\n\nAn .app bundle can be dead simple without any binary blobs (except for the icon, of course). See attached, which is 3 folders and a 1-line bash script, and launches sage in a command line. This could be easy to adapt to do sage -notebook (and wouldn't even have to fire up terminal), and use a sage executable bundled with the app (e.g. in /Resources), though a bit of care should be taken to gracefully handle what happens when a notebook is already running, and what to do about quitting.",
     "created_at": "2009-12-20T09:20:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7700",
     "type": "issue_comment",
@@ -191,7 +191,7 @@ archive/issue_comments_066055.json:
 }
 ```
 
-Attachment
+Attachment [sage.app.tar](tarball://root/attachments/some-uuid/ticket7700/sage.app.tar) by robertwb created at 2009-12-20 09:20:19
 
 An .app bundle can be dead simple without any binary blobs (except for the icon, of course). See attached, which is 3 folders and a 1-line bash script, and launches sage in a command line. This could be easy to adapt to do sage -notebook (and wouldn't even have to fire up terminal), and use a sage executable bundled with the app (e.g. in /Resources), though a bit of care should be taken to gracefully handle what happens when a notebook is already running, and what to do about quitting.
 
@@ -300,7 +300,7 @@ Information about the contents of Sage.app
 archive/issue_comments_066061.json:
 ```json
 {
-    "body": "Attachment\n\nIf this doesn't answer your questions, or you would like anything else let me know.",
+    "body": "Attachment [readme_7700.patch](tarball://root/attachments/some-uuid/ticket7700/readme_7700.patch) by iandrus created at 2010-01-06 12:57:08\n\nIf this doesn't answer your questions, or you would like anything else let me know.",
     "created_at": "2010-01-06T12:57:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7700",
     "type": "issue_comment",
@@ -309,7 +309,7 @@ archive/issue_comments_066061.json:
 }
 ```
 
-Attachment
+Attachment [readme_7700.patch](tarball://root/attachments/some-uuid/ticket7700/readme_7700.patch) by iandrus created at 2010-01-06 12:57:08
 
 If this doesn't answer your questions, or you would like anything else let me know.
 

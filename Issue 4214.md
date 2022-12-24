@@ -321,7 +321,7 @@ Michael
 archive/issue_comments_030627.json:
 ```json
 {
-    "body": "Attachment\n\nGrrr.  Yes, I was careless (did I really not test gen.pyx?)\n\nAnyway, it was just a matter of giving a default value to the parameter precision.  It's in the new patch.",
+    "body": "Attachment [trac4214-elliptic-log.patch](tarball://root/attachments/some-uuid/ticket4214/trac4214-elliptic-log.patch) by AlexGhitza created at 2008-10-10 21:40:43\n\nGrrr.  Yes, I was careless (did I really not test gen.pyx?)\n\nAnyway, it was just a matter of giving a default value to the parameter precision.  It's in the new patch.",
     "created_at": "2008-10-10T21:40:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4214",
     "type": "issue_comment",
@@ -330,7 +330,7 @@ archive/issue_comments_030627.json:
 }
 ```
 
-Attachment
+Attachment [trac4214-elliptic-log.patch](tarball://root/attachments/some-uuid/ticket4214/trac4214-elliptic-log.patch) by AlexGhitza created at 2008-10-10 21:40:43
 
 Grrr.  Yes, I was careless (did I really not test gen.pyx?)
 

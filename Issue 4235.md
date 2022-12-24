@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4235
 archive/issue_comments_030771.json:
 ```json
 {
-    "body": "Attachment\n\nPatch looks good to me, positive review.\n\nMike: Please make sure the fixes make it into the ReST version of the documentation.\n\nCheers,\n\nMichael",
+    "body": "Attachment [652.patch](tarball://root/attachments/some-uuid/ticket4235/652.patch) by mabshoff created at 2008-10-02 03:30:16\n\nPatch looks good to me, positive review.\n\nMike: Please make sure the fixes make it into the ReST version of the documentation.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-02T03:30:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4235",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_030771.json:
 }
 ```
 
-Attachment
+Attachment [652.patch](tarball://root/attachments/some-uuid/ticket4235/652.patch) by mabshoff created at 2008-10-02 03:30:16
 
 Patch looks good to me, positive review.
 

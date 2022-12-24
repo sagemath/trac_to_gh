@@ -359,7 +359,7 @@ This algorithm has also been implemented in FLINT, so I am simply going to wrap 
 archive/issue_comments_006914.json:
 ```json
 {
-    "body": "Attachment\n\nI wasn't able to get FLINT to give me the correct answers, the algorithm turns out to be simple enough that I just implemented it right in the library. \n\nThere are several other minor optimizations in the patch too.",
+    "body": "Attachment [1138-sqrt-mod.patch](tarball://root/attachments/some-uuid/ticket1138/1138-sqrt-mod.patch) by robertwb created at 2008-02-18 22:51:59\n\nI wasn't able to get FLINT to give me the correct answers, the algorithm turns out to be simple enough that I just implemented it right in the library. \n\nThere are several other minor optimizations in the patch too.",
     "created_at": "2008-02-18T22:51:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1138",
     "type": "issue_comment",
@@ -368,7 +368,7 @@ archive/issue_comments_006914.json:
 }
 ```
 
-Attachment
+Attachment [1138-sqrt-mod.patch](tarball://root/attachments/some-uuid/ticket1138/1138-sqrt-mod.patch) by robertwb created at 2008-02-18 22:51:59
 
 I wasn't able to get FLINT to give me the correct answers, the algorithm turns out to be simple enough that I just implemented it right in the library. 
 
@@ -417,7 +417,7 @@ Robert's patch didn't apply cleanly to 2.10.2, I've rebased it, see new patch. I
 archive/issue_comments_006917.json:
 ```json
 {
-    "body": "Attachment\n\nHmmm.... I apply the rebased patch to 2.10.2, and I'm getting one weird doctest failure (mac OS 10.4.11, intel):\n\n\n```\nsage -t  devel/sage-1138b/sage/schemes/generic/projective_space.py\nA mysterious error (perphaps a memory error?) occurred, which may have crashed doctest.\n         [12.9 s]\nexit code: 256\n```\n\n\nRobert, could you take a look at this? (Also perhaps check that you agree I haven't mangled your patch during the rebasing.)\n\nOnce this is resolved, I'll continue reviewing the patch (I've been meaning to learn this algorithm for a while... :-))",
+    "body": "Attachment [1138-sqrt-mod-rebased.patch](tarball://root/attachments/some-uuid/ticket1138/1138-sqrt-mod-rebased.patch) by dmharvey created at 2008-02-23 16:16:01\n\nHmmm.... I apply the rebased patch to 2.10.2, and I'm getting one weird doctest failure (mac OS 10.4.11, intel):\n\n\n```\nsage -t  devel/sage-1138b/sage/schemes/generic/projective_space.py\nA mysterious error (perphaps a memory error?) occurred, which may have crashed doctest.\n         [12.9 s]\nexit code: 256\n```\n\n\nRobert, could you take a look at this? (Also perhaps check that you agree I haven't mangled your patch during the rebasing.)\n\nOnce this is resolved, I'll continue reviewing the patch (I've been meaning to learn this algorithm for a while... :-))",
     "created_at": "2008-02-23T16:16:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1138",
     "type": "issue_comment",
@@ -426,7 +426,7 @@ archive/issue_comments_006917.json:
 }
 ```
 
-Attachment
+Attachment [1138-sqrt-mod-rebased.patch](tarball://root/attachments/some-uuid/ticket1138/1138-sqrt-mod-rebased.patch) by dmharvey created at 2008-02-23 16:16:01
 
 Hmmm.... I apply the rebased patch to 2.10.2, and I'm getting one weird doctest failure (mac OS 10.4.11, intel):
 
@@ -450,7 +450,7 @@ Once this is resolved, I'll continue reviewing the patch (I've been meaning to l
 archive/issue_comments_006918.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1138-sqrt-mod-rebased-2.10.4.patch](tarball://root/attachments/some-uuid/ticket1138/1138-sqrt-mod-rebased-2.10.4.patch) by robertwb created at 2008-03-26 03:12:00",
     "created_at": "2008-03-26T03:12:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1138",
     "type": "issue_comment",
@@ -459,7 +459,7 @@ archive/issue_comments_006918.json:
 }
 ```
 
-Attachment
+Attachment [1138-sqrt-mod-rebased-2.10.4.patch](tarball://root/attachments/some-uuid/ticket1138/1138-sqrt-mod-rebased-2.10.4.patch) by robertwb created at 2008-03-26 03:12:00
 
 
 
@@ -486,7 +486,7 @@ I rebased it again against 2.10.4 and touched it up a bit. It should work now. `
 archive/issue_comments_006920.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.  I've attached 1138.patch which is rebased against sage-3.0.alpha0",
+    "body": "Attachment [1138.patch](tarball://root/attachments/some-uuid/ticket1138/1138.patch) by mhansen created at 2008-04-04 20:22:05\n\nLooks good to me.  I've attached 1138.patch which is rebased against sage-3.0.alpha0",
     "created_at": "2008-04-04T20:22:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1138",
     "type": "issue_comment",
@@ -495,7 +495,7 @@ archive/issue_comments_006920.json:
 }
 ```
 
-Attachment
+Attachment [1138.patch](tarball://root/attachments/some-uuid/ticket1138/1138.patch) by mhansen created at 2008-04-04 20:22:05
 
 Looks good to me.  I've attached 1138.patch which is rebased against sage-3.0.alpha0
 

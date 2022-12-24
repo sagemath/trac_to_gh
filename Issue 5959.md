@@ -72,7 +72,7 @@ Based on 3.4.2.rc0
 archive/issue_comments_047199.json:
 ```json
 {
-    "body": "Attachment\n\nThis is superseded by #5966.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_5959.patch](tarball://root/attachments/some-uuid/ticket5959/trac_5959.patch) by mabshoff created at 2009-05-03 01:47:22\n\nThis is superseded by #5966.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-03T01:47:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5959",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_047199.json:
 }
 ```
 
-Attachment
+Attachment [trac_5959.patch](tarball://root/attachments/some-uuid/ticket5959/trac_5959.patch) by mabshoff created at 2009-05-03 01:47:22
 
 This is superseded by #5966.
 

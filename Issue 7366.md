@@ -46,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7366
 archive/issue_comments_061732.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [finite_field_givaro_iter.patch](tarball://root/attachments/some-uuid/ticket7366/finite_field_givaro_iter.patch) by malb created at 2009-11-01 00:11:34",
     "created_at": "2009-11-01T00:11:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7366",
     "type": "issue_comment",
@@ -55,7 +55,7 @@ archive/issue_comments_061732.json:
 }
 ```
 
-Attachment
+Attachment [finite_field_givaro_iter.patch](tarball://root/attachments/some-uuid/ticket7366/finite_field_givaro_iter.patch) by malb created at 2009-11-01 00:11:34
 
 
 

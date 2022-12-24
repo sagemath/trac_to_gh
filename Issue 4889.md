@@ -151,7 +151,7 @@ Though I just spent a substantial amount of time on this ticket, I'm *seriously*
 archive/issue_comments_037060.json:
 ```json
 {
-    "body": "Attachment\n\npart 1, which does what is needed in the matrix directory; another part will mop up.",
+    "body": "Attachment [trac_4889-part1.patch](tarball://root/attachments/some-uuid/ticket4889/trac_4889-part1.patch) by was created at 2010-01-18 00:48:36\n\npart 1, which does what is needed in the matrix directory; another part will mop up.",
     "created_at": "2010-01-18T00:48:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4889",
     "type": "issue_comment",
@@ -160,7 +160,7 @@ archive/issue_comments_037060.json:
 }
 ```
 
-Attachment
+Attachment [trac_4889-part1.patch](tarball://root/attachments/some-uuid/ticket4889/trac_4889-part1.patch) by was created at 2010-01-18 00:48:36
 
 part 1, which does what is needed in the matrix directory; another part will mop up.
 
@@ -207,7 +207,7 @@ apply this instead of the previous
 archive/issue_comments_037063.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4889-document_instead_of_deprecate.patch](tarball://root/attachments/some-uuid/ticket4889/trac_4889-document_instead_of_deprecate.patch) by was created at 2010-01-18 01:08:24",
     "created_at": "2010-01-18T01:08:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4889",
     "type": "issue_comment",
@@ -216,7 +216,7 @@ archive/issue_comments_037063.json:
 }
 ```
 
-Attachment
+Attachment [trac_4889-document_instead_of_deprecate.patch](tarball://root/attachments/some-uuid/ticket4889/trac_4889-document_instead_of_deprecate.patch) by was created at 2010-01-18 01:08:24
 
 
 

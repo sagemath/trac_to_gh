@@ -88,7 +88,7 @@ Changing status from new to needs_review.
 archive/issue_comments_085901.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9182_hyper_el_points.patch](tarball://root/attachments/some-uuid/ticket9182/trac_9182_hyper_el_points.patch) by aly.deines created at 2010-06-08 00:54:17",
     "created_at": "2010-06-08T00:54:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9182",
     "type": "issue_comment",
@@ -97,7 +97,7 @@ archive/issue_comments_085901.json:
 }
 ```
 
-Attachment
+Attachment [trac_9182_hyper_el_points.patch](tarball://root/attachments/some-uuid/ticket9182/trac_9182_hyper_el_points.patch) by aly.deines created at 2010-06-08 00:54:17
 
 
 
@@ -128,7 +128,7 @@ Without those extra newlines, it won't process correctly. Also, the code coming 
 archive/issue_comments_085903.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9182_doc_fix.patch](tarball://root/attachments/some-uuid/ticket9182/trac_9182_doc_fix.patch) by aly.deines created at 2010-06-08 14:59:45",
     "created_at": "2010-06-08T14:59:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9182",
     "type": "issue_comment",
@@ -137,7 +137,7 @@ archive/issue_comments_085903.json:
 }
 ```
 
-Attachment
+Attachment [trac_9182_doc_fix.patch](tarball://root/attachments/some-uuid/ticket9182/trac_9182_doc_fix.patch) by aly.deines created at 2010-06-08 14:59:45
 
 
 

@@ -105,7 +105,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1445
 archive/issue_comments_009319.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [symmetrica-longint.patch](tarball://root/attachments/some-uuid/ticket1445/symmetrica-longint.patch) by mhansen created at 2007-12-10 04:32:18",
     "created_at": "2007-12-10T04:32:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1445",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_009319.json:
 }
 ```
 
-Attachment
+Attachment [symmetrica-longint.patch](tarball://root/attachments/some-uuid/ticket1445/symmetrica-longint.patch) by mhansen created at 2007-12-10 04:32:18
 
 
 
@@ -123,7 +123,7 @@ Attachment
 archive/issue_comments_009320.json:
 ```json
 {
-    "body": "Attachment\n\nMerged in 2.9.alpha3.",
+    "body": "Attachment [1445-doctest.patch](tarball://root/attachments/some-uuid/ticket1445/1445-doctest.patch) by mabshoff created at 2007-12-10 05:26:58\n\nMerged in 2.9.alpha3.",
     "created_at": "2007-12-10T05:26:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1445",
     "type": "issue_comment",
@@ -132,7 +132,7 @@ archive/issue_comments_009320.json:
 }
 ```
 
-Attachment
+Attachment [1445-doctest.patch](tarball://root/attachments/some-uuid/ticket1445/1445-doctest.patch) by mabshoff created at 2007-12-10 05:26:58
 
 Merged in 2.9.alpha3.
 

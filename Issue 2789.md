@@ -141,7 +141,7 @@ Changing keywords from "" to "residue field multivariate prime groebner basis".
 archive/issue_comments_019161.json:
 ```json
 {
-    "body": "Attachment\n\nreplaces some line numbers in verbose output by ...",
+    "body": "Attachment [trac_2789.2.patch](tarball://root/attachments/some-uuid/ticket2789/trac_2789.2.patch) by malb created at 2009-01-22 19:12:06\n\nreplaces some line numbers in verbose output by ...",
     "created_at": "2009-01-22T19:12:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2789",
     "type": "issue_comment",
@@ -150,7 +150,7 @@ archive/issue_comments_019161.json:
 }
 ```
 
-Attachment
+Attachment [trac_2789.2.patch](tarball://root/attachments/some-uuid/ticket2789/trac_2789.2.patch) by malb created at 2009-01-22 19:12:06
 
 replaces some line numbers in verbose output by ...
 

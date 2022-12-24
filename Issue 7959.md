@@ -92,7 +92,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7959
 archive/issue_comments_069456.json:
 ```json
 {
-    "body": "Attachment\n\nYour patch seems to leave the wrong objects in the docstring. I'm attaching a new patch that inverts that, and also changes a second occurence of the description of the output.",
+    "body": "Attachment [trac_7959.patch](tarball://root/attachments/some-uuid/ticket7959/trac_7959.patch) by wjp created at 2010-01-17 22:10:53\n\nYour patch seems to leave the wrong objects in the docstring. I'm attaching a new patch that inverts that, and also changes a second occurence of the description of the output.",
     "created_at": "2010-01-17T22:10:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7959",
     "type": "issue_comment",
@@ -101,7 +101,7 @@ archive/issue_comments_069456.json:
 }
 ```
 
-Attachment
+Attachment [trac_7959.patch](tarball://root/attachments/some-uuid/ticket7959/trac_7959.patch) by wjp created at 2010-01-17 22:10:53
 
 Your patch seems to leave the wrong objects in the docstring. I'm attaching a new patch that inverts that, and also changes a second occurence of the description of the output.
 
@@ -130,7 +130,7 @@ Changing status from new to needs_review.
 archive/issue_comments_069458.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [7959_associated_primes_docs.patch](tarball://root/attachments/some-uuid/ticket7959/7959_associated_primes_docs.patch) by wjp created at 2010-01-17 22:12:01",
     "created_at": "2010-01-17T22:12:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7959",
     "type": "issue_comment",
@@ -139,7 +139,7 @@ archive/issue_comments_069458.json:
 }
 ```
 
-Attachment
+Attachment [7959_associated_primes_docs.patch](tarball://root/attachments/some-uuid/ticket7959/7959_associated_primes_docs.patch) by wjp created at 2010-01-17 22:12:01
 
 
 

@@ -50,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4018
 archive/issue_comments_028980.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4018-pari-to-zz.patch](tarball://root/attachments/some-uuid/ticket4018/4018-pari-to-zz.patch) by robertwb created at 2008-08-31 08:43:30",
     "created_at": "2008-08-31T08:43:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4018",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_028980.json:
 }
 ```
 
-Attachment
+Attachment [4018-pari-to-zz.patch](tarball://root/attachments/some-uuid/ticket4018/4018-pari-to-zz.patch) by robertwb created at 2008-08-31 08:43:30
 
 
 

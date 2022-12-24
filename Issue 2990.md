@@ -234,7 +234,7 @@ Resolution: fixed
 archive/issue_comments_020582.json:
 ```json
 {
-    "body": "Attachment\n\nMerged in Sage 3.0.final",
+    "body": "Attachment [sage-2990.patch](tarball://root/attachments/some-uuid/ticket2990/sage-2990.patch) by mabshoff created at 2008-04-22 04:40:19\n\nMerged in Sage 3.0.final",
     "created_at": "2008-04-22T04:40:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2990",
     "type": "issue_comment",
@@ -243,6 +243,6 @@ archive/issue_comments_020582.json:
 }
 ```
 
-Attachment
+Attachment [sage-2990.patch](tarball://root/attachments/some-uuid/ticket2990/sage-2990.patch) by mabshoff created at 2008-04-22 04:40:19
 
 Merged in Sage 3.0.final

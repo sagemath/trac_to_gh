@@ -457,7 +457,7 @@ archive/issue_comments_086115.json:
 archive/issue_comments_086116.json:
 ```json
 {
-    "body": "Attachment\n\n/usr/include/stdlib.h from Solaris 10 on SPARC (03/05 release)",
+    "body": "Attachment [unistd.h](tarball://root/attachments/some-uuid/ticket9202/unistd.h) by drkirkby created at 2010-06-11 20:44:54\n\n/usr/include/stdlib.h from Solaris 10 on SPARC (03/05 release)",
     "created_at": "2010-06-11T20:44:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
@@ -466,7 +466,7 @@ archive/issue_comments_086116.json:
 }
 ```
 
-Attachment
+Attachment [unistd.h](tarball://root/attachments/some-uuid/ticket9202/unistd.h) by drkirkby created at 2010-06-11 20:44:54
 
 /usr/include/stdlib.h from Solaris 10 on SPARC (03/05 release)
 
@@ -477,7 +477,7 @@ Attachment
 archive/issue_comments_086117.json:
 ```json
 {
-    "body": "Attachment\n\nI've stuck a bug report, with a link to this on the matplotlib mailing list.",
+    "body": "Attachment [stdlib.h](tarball://root/attachments/some-uuid/ticket9202/stdlib.h) by drkirkby created at 2010-06-11 20:56:00\n\nI've stuck a bug report, with a link to this on the matplotlib mailing list.",
     "created_at": "2010-06-11T20:56:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
@@ -486,7 +486,7 @@ archive/issue_comments_086117.json:
 }
 ```
 
-Attachment
+Attachment [stdlib.h](tarball://root/attachments/some-uuid/ticket9202/stdlib.h) by drkirkby created at 2010-06-11 20:56:00
 
 I've stuck a bug report, with a link to this on the matplotlib mailing list.
 

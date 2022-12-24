@@ -55,7 +55,7 @@ Changing status from new to assigned.
 archive/issue_comments_037010.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4884.patch](tarball://root/attachments/some-uuid/ticket4884/trac_4884.patch) by abergeron created at 2008-12-27 23:03:15",
     "created_at": "2008-12-27T23:03:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4884",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_037010.json:
 }
 ```
 
-Attachment
+Attachment [trac_4884.patch](tarball://root/attachments/some-uuid/ticket4884/trac_4884.patch) by abergeron created at 2008-12-27 23:03:15
 
 
 
@@ -336,7 +336,7 @@ In short, I was suggesting a way that the list of all valid colormaps could be s
 archive/issue_comments_037018.json:
 ```json
 {
-    "body": "Attachment\n\nTo address was' comments (I hope), I killed the cmap_help() function, put the appropriate info in all the relevant docstrings and added a mention about how to obtain the colormap names.\n\nI know you said you would prefer to include the list directly in the docstring, but I don't think this would be productive as it would require adding a doctest somewhere to check that the list has not changed and then when that breaks, have the one responsible manually update all the colormap lists, making sure to not forget every place where this info could have been copy and pasted and to fix the doctest.\n\nIn short, it might be better, but I don't feel it is maintainable.  Now if there was some way to automatically include the current list in the docstrings, then that is another story.",
+    "body": "Attachment [trac_4884_2.patch](tarball://root/attachments/some-uuid/ticket4884/trac_4884_2.patch) by abergeron created at 2008-12-29 20:43:33\n\nTo address was' comments (I hope), I killed the cmap_help() function, put the appropriate info in all the relevant docstrings and added a mention about how to obtain the colormap names.\n\nI know you said you would prefer to include the list directly in the docstring, but I don't think this would be productive as it would require adding a doctest somewhere to check that the list has not changed and then when that breaks, have the one responsible manually update all the colormap lists, making sure to not forget every place where this info could have been copy and pasted and to fix the doctest.\n\nIn short, it might be better, but I don't feel it is maintainable.  Now if there was some way to automatically include the current list in the docstrings, then that is another story.",
     "created_at": "2008-12-29T20:43:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4884",
     "type": "issue_comment",
@@ -345,7 +345,7 @@ archive/issue_comments_037018.json:
 }
 ```
 
-Attachment
+Attachment [trac_4884_2.patch](tarball://root/attachments/some-uuid/ticket4884/trac_4884_2.patch) by abergeron created at 2008-12-29 20:43:33
 
 To address was' comments (I hope), I killed the cmap_help() function, put the appropriate info in all the relevant docstrings and added a mention about how to obtain the colormap names.
 

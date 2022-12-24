@@ -49,7 +49,7 @@ NOTE: In this patch, I fixed a weird design choice.  Namely, in the list of comp
 archive/issue_comments_019400.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-2825.patch](tarball://root/attachments/some-uuid/ticket2825/sage-2825.patch) by was created at 2008-04-06 09:48:08",
     "created_at": "2008-04-06T09:48:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2825",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_019400.json:
 }
 ```
 
-Attachment
+Attachment [sage-2825.patch](tarball://root/attachments/some-uuid/ticket2825/sage-2825.patch) by was created at 2008-04-06 09:48:08
 
 
 

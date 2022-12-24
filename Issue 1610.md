@@ -118,7 +118,7 @@ Changing status from new to needs_review.
 archive/issue_comments_010242.json:
 ```json
 {
-    "body": "Attachment\n\nApply #8206 before applying the \"cherry picking\" patch.",
+    "body": "Attachment [trac_1610_doc_cherry_picking.patch](tarball://root/attachments/some-uuid/ticket1610/trac_1610_doc_cherry_picking.patch) by rbeezer created at 2010-02-09 04:51:20\n\nApply #8206 before applying the \"cherry picking\" patch.",
     "created_at": "2010-02-09T04:51:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1610",
     "type": "issue_comment",
@@ -127,7 +127,7 @@ archive/issue_comments_010242.json:
 }
 ```
 
-Attachment
+Attachment [trac_1610_doc_cherry_picking.patch](tarball://root/attachments/some-uuid/ticket1610/trac_1610_doc_cherry_picking.patch) by rbeezer created at 2010-02-09 04:51:20
 
 Apply #8206 before applying the "cherry picking" patch.
 

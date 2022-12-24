@@ -159,7 +159,7 @@ Dave
 archive/issue_comments_098677.json:
 ```json
 {
-    "body": "Attachment\n\nMakes acouple of changes to the file dpp.c, which will remove a couple of compiler warnings which looked potentially harmful.",
+    "body": "Attachment [9917-makes-changes-to-dpp.c.patch](tarball://root/attachments/some-uuid/ticket9917/9917-makes-changes-to-dpp.c.patch) by drkirkby created at 2010-09-17 00:04:57\n\nMakes acouple of changes to the file dpp.c, which will remove a couple of compiler warnings which looked potentially harmful.",
     "created_at": "2010-09-17T00:04:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9916",
     "type": "issue_comment",
@@ -168,7 +168,7 @@ archive/issue_comments_098677.json:
 }
 ```
 
-Attachment
+Attachment [9917-makes-changes-to-dpp.c.patch](tarball://root/attachments/some-uuid/ticket9917/9917-makes-changes-to-dpp.c.patch) by drkirkby created at 2010-09-17 00:04:57
 
 Makes acouple of changes to the file dpp.c, which will remove a couple of compiler warnings which looked potentially harmful.
 
@@ -420,7 +420,7 @@ It's getting late...
 archive/issue_comments_098684.json:
 ```json
 {
-    "body": "Attachment\n\nSomehow the previous patch file I made was empty - this corrects that.",
+    "body": "Attachment [9917-non-empty-patch-file.patch](tarball://root/attachments/some-uuid/ticket9917/9917-non-empty-patch-file.patch) by drkirkby created at 2010-09-17 07:15:09\n\nSomehow the previous patch file I made was empty - this corrects that.",
     "created_at": "2010-09-17T07:15:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9916",
     "type": "issue_comment",
@@ -429,7 +429,7 @@ archive/issue_comments_098684.json:
 }
 ```
 
-Attachment
+Attachment [9917-non-empty-patch-file.patch](tarball://root/attachments/some-uuid/ticket9917/9917-non-empty-patch-file.patch) by drkirkby created at 2010-09-17 07:15:09
 
 Somehow the previous patch file I made was empty - this corrects that.
 

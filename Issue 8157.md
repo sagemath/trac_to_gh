@@ -51,7 +51,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8157
 archive/issue_comments_071738.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8157.patch](tarball://root/attachments/some-uuid/ticket8157/trac_8157.patch) by zimmerma created at 2010-02-23 21:51:07",
     "created_at": "2010-02-23T21:51:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8157",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_071738.json:
 }
 ```
 
-Attachment
+Attachment [trac_8157.patch](tarball://root/attachments/some-uuid/ticket8157/trac_8157.patch) by zimmerma created at 2010-02-23 21:51:07
 
 
 
@@ -150,7 +150,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_071743.json:
 ```json
 {
-    "body": "Attachment\n\napply after the first patch",
+    "body": "Attachment [trac_8157-doctest.patch](tarball://root/attachments/some-uuid/ticket8157/trac_8157-doctest.patch) by AlexGhitza created at 2010-02-25 10:49:40\n\napply after the first patch",
     "created_at": "2010-02-25T10:49:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8157",
     "type": "issue_comment",
@@ -159,7 +159,7 @@ archive/issue_comments_071743.json:
 }
 ```
 
-Attachment
+Attachment [trac_8157-doctest.patch](tarball://root/attachments/some-uuid/ticket8157/trac_8157-doctest.patch) by AlexGhitza created at 2010-02-25 10:49:40
 
 apply after the first patch
 

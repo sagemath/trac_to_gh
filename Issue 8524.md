@@ -109,7 +109,7 @@ Rebased against 4.3.4
 archive/issue_comments_077041.json:
 ```json
 {
-    "body": "Attachment\n\nI just rebased this patch against 4.3.4. \nNicolas: Please don't forget reviewing it. It is needed by #8519 which is close to be positive reviewed.",
+    "body": "Attachment [trac_8524-disjoint_union_classcall_private-fh.patch](tarball://root/attachments/some-uuid/ticket8524/trac_8524-disjoint_union_classcall_private-fh.patch) by hivert created at 2010-03-20 09:47:25\n\nI just rebased this patch against 4.3.4. \nNicolas: Please don't forget reviewing it. It is needed by #8519 which is close to be positive reviewed.",
     "created_at": "2010-03-20T09:47:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8524",
     "type": "issue_comment",
@@ -118,7 +118,7 @@ archive/issue_comments_077041.json:
 }
 ```
 
-Attachment
+Attachment [trac_8524-disjoint_union_classcall_private-fh.patch](tarball://root/attachments/some-uuid/ticket8524/trac_8524-disjoint_union_classcall_private-fh.patch) by hivert created at 2010-03-20 09:47:25
 
 I just rebased this patch against 4.3.4. 
 Nicolas: Please don't forget reviewing it. It is needed by #8519 which is close to be positive reviewed.
@@ -130,7 +130,7 @@ Nicolas: Please don't forget reviewing it. It is needed by #8519 which is close 
 archive/issue_comments_077042.json:
 ```json
 {
-    "body": "Attachment\n\nReplaces the previous ones",
+    "body": "Attachment [trac_8524-disjoint_union_classcall_private-fh.2.patch](tarball://root/attachments/some-uuid/ticket8524/trac_8524-disjoint_union_classcall_private-fh.2.patch) by nthiery created at 2010-04-16 21:18:58\n\nReplaces the previous ones",
     "created_at": "2010-04-16T21:18:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8524",
     "type": "issue_comment",
@@ -139,7 +139,7 @@ archive/issue_comments_077042.json:
 }
 ```
 
-Attachment
+Attachment [trac_8524-disjoint_union_classcall_private-fh.2.patch](tarball://root/attachments/some-uuid/ticket8524/trac_8524-disjoint_union_classcall_private-fh.2.patch) by nthiery created at 2010-04-16 21:18:58
 
 Replaces the previous ones
 

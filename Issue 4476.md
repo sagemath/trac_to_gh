@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4476
 archive/issue_comments_033056.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4476-cython-locals.patch](tarball://root/attachments/some-uuid/ticket4476/4476-cython-locals.patch) by robertwb created at 2008-11-09 06:02:11",
     "created_at": "2008-11-09T06:02:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4476",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_033056.json:
 }
 ```
 
-Attachment
+Attachment [4476-cython-locals.patch](tarball://root/attachments/some-uuid/ticket4476/4476-cython-locals.patch) by robertwb created at 2008-11-09 06:02:11
 
 
 

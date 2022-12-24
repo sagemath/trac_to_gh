@@ -91,7 +91,7 @@ AFAICS, this already had a positive review from was and only needed to be rebase
 archive/issue_comments_040975.json:
 ```json
 {
-    "body": "Attachment\n\nThe updated patch _only_ changes ` \\var{foo} ` to ` ``foo`` `.",
+    "body": "Attachment [sr_doctests.patch](tarball://root/attachments/some-uuid/ticket5321/sr_doctests.patch) by malb created at 2009-06-08 10:58:57\n\nThe updated patch _only_ changes ` \\var{foo} ` to ` ``foo`` `.",
     "created_at": "2009-06-08T10:58:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5321",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_040975.json:
 }
 ```
 
-Attachment
+Attachment [sr_doctests.patch](tarball://root/attachments/some-uuid/ticket5321/sr_doctests.patch) by malb created at 2009-06-08 10:58:57
 
 The updated patch _only_ changes ` \var{foo} ` to ` ``foo`` `.
 

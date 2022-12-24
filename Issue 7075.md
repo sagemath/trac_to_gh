@@ -51,7 +51,7 @@ Based on 4.1.2.alpha4
 archive/issue_comments_058514.json:
 ```json
 {
-    "body": "Attachment\n\nTo release manager: this is a duplicate of #7059, please close.",
+    "body": "Attachment [trac_7075-save-fig-smart.patch](tarball://root/attachments/some-uuid/ticket7075/trac_7075-save-fig-smart.patch) by kcrisman created at 2009-09-29 14:05:38\n\nTo release manager: this is a duplicate of #7059, please close.",
     "created_at": "2009-09-29T14:05:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7075",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_058514.json:
 }
 ```
 
-Attachment
+Attachment [trac_7075-save-fig-smart.patch](tarball://root/attachments/some-uuid/ticket7075/trac_7075-save-fig-smart.patch) by kcrisman created at 2009-09-29 14:05:38
 
 To release manager: this is a duplicate of #7059, please close.
 

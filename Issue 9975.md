@@ -55,7 +55,7 @@ Fixes the issue by patching Sage's version of Sphinx to look for a custom attrib
 archive/issue_comments_100087.json:
 ```json
 {
-    "body": "Attachment\n\nNote that the attached patch assumes Trac #9907 (which in turn assumes #9919). Sorry for the chain of Tracs, but I believe the others are just about finished, so it seems like wasted extra work to first make a version without the dependency and then patch this.",
+    "body": "Attachment [trac_9976_decorated_generic_sigs.patch](tarball://root/attachments/some-uuid/ticket9976/trac_9976_decorated_generic_sigs.patch) by jsrn created at 2010-09-23 12:16:35\n\nNote that the attached patch assumes Trac #9907 (which in turn assumes #9919). Sorry for the chain of Tracs, but I believe the others are just about finished, so it seems like wasted extra work to first make a version without the dependency and then patch this.",
     "created_at": "2010-09-23T12:16:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_100087.json:
 }
 ```
 
-Attachment
+Attachment [trac_9976_decorated_generic_sigs.patch](tarball://root/attachments/some-uuid/ticket9976/trac_9976_decorated_generic_sigs.patch) by jsrn created at 2010-09-23 12:16:35
 
 Note that the attached patch assumes Trac #9907 (which in turn assumes #9919). Sorry for the chain of Tracs, but I believe the others are just about finished, so it seems like wasted extra work to first make a version without the dependency and then patch this.
 
@@ -1422,7 +1422,7 @@ Ok, this seems to work (for me at least). I've made a patch for changing sageins
 archive/issue_comments_100135.json:
 ```json
 {
-    "body": "Attachment\n\nChanges sageinspect.sage_getargspec to return a named tuple ArgSpec",
+    "body": "Attachment [9976_change_to_argspec.patch](tarball://root/attachments/some-uuid/ticket9976/9976_change_to_argspec.patch) by jsrn created at 2011-04-06 13:01:35\n\nChanges sageinspect.sage_getargspec to return a named tuple ArgSpec",
     "created_at": "2011-04-06T13:01:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
@@ -1431,7 +1431,7 @@ archive/issue_comments_100135.json:
 }
 ```
 
-Attachment
+Attachment [9976_change_to_argspec.patch](tarball://root/attachments/some-uuid/ticket9976/9976_change_to_argspec.patch) by jsrn created at 2011-04-06 13:01:35
 
 Changes sageinspect.sage_getargspec to return a named tuple ArgSpec
 
@@ -1991,7 +1991,7 @@ No, groebner_basis has never worked with my patch; for my patch to work, it requ
 archive/issue_comments_100156.json:
 ```json
 {
-    "body": "Attachment\n\nImprove inspection on Cython objects; let sage_getargspec return an *ArgSpec*; let a plot raise an *AttributeError* if an attribute is missing",
+    "body": "Attachment [9976-inspection_of_cython_v2.patch](tarball://root/attachments/some-uuid/ticket9976/9976-inspection_of_cython_v2.patch) by jsrn created at 2011-04-07 06:43:28\n\nImprove inspection on Cython objects; let sage_getargspec return an *ArgSpec*; let a plot raise an *AttributeError* if an attribute is missing",
     "created_at": "2011-04-07T06:43:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
@@ -2000,7 +2000,7 @@ archive/issue_comments_100156.json:
 }
 ```
 
-Attachment
+Attachment [9976-inspection_of_cython_v2.patch](tarball://root/attachments/some-uuid/ticket9976/9976-inspection_of_cython_v2.patch) by jsrn created at 2011-04-07 06:43:28
 
 Improve inspection on Cython objects; let sage_getargspec return an *ArgSpec*; let a plot raise an *AttributeError* if an attribute is missing
 
@@ -4049,7 +4049,7 @@ I am now updating my patch doc_fixes patch.
 archive/issue_comments_100222.json:
 ```json
 {
-    "body": "Attachment\n\nApply to devel/sagenb repository: Fix some syntax errors in interact documentation",
+    "body": "Attachment [9976_notebook_doc_fixes.patch](tarball://root/attachments/some-uuid/ticket9976/9976_notebook_doc_fixes.patch) by SimonKing created at 2011-04-13 15:21:07\n\nApply to devel/sagenb repository: Fix some syntax errors in interact documentation",
     "created_at": "2011-04-13T15:21:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
@@ -4058,7 +4058,7 @@ archive/issue_comments_100222.json:
 }
 ```
 
-Attachment
+Attachment [9976_notebook_doc_fixes.patch](tarball://root/attachments/some-uuid/ticket9976/9976_notebook_doc_fixes.patch) by SimonKing created at 2011-04-13 15:21:07
 
 Apply to devel/sagenb repository: Fix some syntax errors in interact documentation
 
@@ -4846,7 +4846,7 @@ Sorry, I was mistaken. sage_getfile finds the wrong location, and so sage_getsou
 archive/issue_comments_100249.json:
 ```json
 {
-    "body": "Attachment\n\nFixing some wrongly formatted doc strings",
+    "body": "Attachment [9976_doc_fixes.patch](tarball://root/attachments/some-uuid/ticket9976/9976_doc_fixes.patch) by SimonKing created at 2011-04-14 12:24:42\n\nFixing some wrongly formatted doc strings",
     "created_at": "2011-04-14T12:24:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
@@ -4855,7 +4855,7 @@ archive/issue_comments_100249.json:
 }
 ```
 
-Attachment
+Attachment [9976_doc_fixes.patch](tarball://root/attachments/some-uuid/ticket9976/9976_doc_fixes.patch) by SimonKing created at 2011-04-14 12:24:42
 
 Fixing some wrongly formatted doc strings
 
@@ -5538,7 +5538,7 @@ I am now preparing a new and largely extended patch for #11115. After that, I wi
 archive/issue_comments_100274.json:
 ```json
 {
-    "body": "Attachment\n\nImprove inspection on Cython objects, functools.partial and other class instances; let sage_getargspec return an ArgSpec?; improve argument parsing; let a plot raise an AttributeError? if an attribute is missing; include cached functions in references",
+    "body": "Attachment [9976-inspection_of_cython.patch](tarball://root/attachments/some-uuid/ticket9976/9976-inspection_of_cython.patch) by SimonKing created at 2011-04-18 16:45:56\n\nImprove inspection on Cython objects, functools.partial and other class instances; let sage_getargspec return an ArgSpec?; improve argument parsing; let a plot raise an AttributeError? if an attribute is missing; include cached functions in references",
     "created_at": "2011-04-18T16:45:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
@@ -5547,7 +5547,7 @@ archive/issue_comments_100274.json:
 }
 ```
 
-Attachment
+Attachment [9976-inspection_of_cython.patch](tarball://root/attachments/some-uuid/ticket9976/9976-inspection_of_cython.patch) by SimonKing created at 2011-04-18 16:45:56
 
 Improve inspection on Cython objects, functools.partial and other class instances; let sage_getargspec return an ArgSpec?; improve argument parsing; let a plot raise an AttributeError? if an attribute is missing; include cached functions in references
 
@@ -5650,7 +5650,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_100280.json:
 ```json
 {
-    "body": "Attachment\n\nAlternative patch: more intrusive Sphinx patch which makes it easier to let decorators change the signature of the wrapped function.",
+    "body": "Attachment [trac_9976_decorated_generic_sigs_alternative.patch](tarball://root/attachments/some-uuid/ticket9976/trac_9976_decorated_generic_sigs_alternative.patch) by jsrn created at 2011-04-24 18:01:27\n\nAlternative patch: more intrusive Sphinx patch which makes it easier to let decorators change the signature of the wrapped function.",
     "created_at": "2011-04-24T18:01:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
@@ -5659,7 +5659,7 @@ archive/issue_comments_100280.json:
 }
 ```
 
-Attachment
+Attachment [trac_9976_decorated_generic_sigs_alternative.patch](tarball://root/attachments/some-uuid/ticket9976/trac_9976_decorated_generic_sigs_alternative.patch) by jsrn created at 2011-04-24 18:01:27
 
 Alternative patch: more intrusive Sphinx patch which makes it easier to let decorators change the signature of the wrapped function.
 
@@ -5742,7 +5742,7 @@ Patch rebased to sage-4.7
 archive/issue_comments_100285.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9976_doc_fixes_v2.patch](tarball://root/attachments/some-uuid/ticket9976/9976_doc_fixes_v2.patch) by jdemeyer created at 2011-05-24 10:36:19",
     "created_at": "2011-05-24T10:36:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
@@ -5751,4 +5751,4 @@ archive/issue_comments_100285.json:
 }
 ```
 
-Attachment
+Attachment [9976_doc_fixes_v2.patch](tarball://root/attachments/some-uuid/ticket9976/9976_doc_fixes_v2.patch) by jdemeyer created at 2011-05-24 10:36:19

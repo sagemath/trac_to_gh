@@ -179,7 +179,7 @@ k1*e^(sqrt(k)*x) + k2*e^(-sqrt(k)*x)
 archive/issue_comments_082259.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8931_doctest.patch](tarball://root/attachments/some-uuid/ticket8931/trac_8931_doctest.patch) by fstan created at 2010-12-09 02:15:04",
     "created_at": "2010-12-09T02:15:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8931",
     "type": "issue_comment",
@@ -188,7 +188,7 @@ archive/issue_comments_082259.json:
 }
 ```
 
-Attachment
+Attachment [trac_8931_doctest.patch](tarball://root/attachments/some-uuid/ticket8931/trac_8931_doctest.patch) by fstan created at 2010-12-09 02:15:04
 
 
 

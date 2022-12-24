@@ -53,7 +53,7 @@ Changing status from new to needs_review.
 archive/issue_comments_076207.json:
 ```json
 {
-    "body": "Attachment\n\nbased on Sage 4.3.4.alpha1",
+    "body": "Attachment [trac_8465-functional.patch](tarball://root/attachments/some-uuid/ticket8465/trac_8465-functional.patch) by mvngu created at 2010-03-10 05:57:34\n\nbased on Sage 4.3.4.alpha1",
     "created_at": "2010-03-10T05:57:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8465",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_076207.json:
 }
 ```
 
-Attachment
+Attachment [trac_8465-functional.patch](tarball://root/attachments/some-uuid/ticket8465/trac_8465-functional.patch) by mvngu created at 2010-03-10 05:57:34
 
 based on Sage 4.3.4.alpha1
 
@@ -347,7 +347,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_076219.json:
 ```json
 {
-    "body": "Attachment\n\nbased on 4.5.2.alpha1.  apply only this patch.",
+    "body": "Attachment [trac_8465-v2.patch](tarball://root/attachments/some-uuid/ticket8465/trac_8465-v2.patch) by jhpalmieri created at 2010-07-27 21:41:31\n\nbased on 4.5.2.alpha1.  apply only this patch.",
     "created_at": "2010-07-27T21:41:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8465",
     "type": "issue_comment",
@@ -356,7 +356,7 @@ archive/issue_comments_076219.json:
 }
 ```
 
-Attachment
+Attachment [trac_8465-v2.patch](tarball://root/attachments/some-uuid/ticket8465/trac_8465-v2.patch) by jhpalmieri created at 2010-07-27 21:41:31
 
 based on 4.5.2.alpha1.  apply only this patch.
 
@@ -486,7 +486,7 @@ apply on top of trac_8465-v2.patch
 archive/issue_comments_076226.json:
 ```json
 {
-    "body": "Attachment\n\nOkay, here you go.",
+    "body": "Attachment [trac_8442-config.patch](tarball://root/attachments/some-uuid/ticket8465/trac_8442-config.patch) by jhpalmieri created at 2010-07-28 01:31:40\n\nOkay, here you go.",
     "created_at": "2010-07-28T01:31:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8465",
     "type": "issue_comment",
@@ -495,7 +495,7 @@ archive/issue_comments_076226.json:
 }
 ```
 
-Attachment
+Attachment [trac_8442-config.patch](tarball://root/attachments/some-uuid/ticket8465/trac_8442-config.patch) by jhpalmieri created at 2010-07-28 01:31:40
 
 Okay, here you go.
 
@@ -641,7 +641,7 @@ Resolution: fixed
 archive/issue_comments_076234.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:19 leif]:\n> == Note to the release managers ==\n \n> **Apply only trac_8465-v2.patch and** (despite its name) **trac_8442-config.patch.**\n\nI'm merging these and a new [attachment:trac_8465-fix_typo.patch] into 4.5.2.rc0.  Can someone please check the latter?  There's no need to add me as an author.",
+    "body": "Attachment [trac_8465-fix_typo.patch](tarball://root/attachments/some-uuid/ticket8465/trac_8465-fix_typo.patch) by mpatel created at 2010-07-29 04:47:16\n\nReplying to [comment:19 leif]:\n> == Note to the release managers ==\n \n> **Apply only trac_8465-v2.patch and** (despite its name) **trac_8442-config.patch.**\n\nI'm merging these and a new [attachment:trac_8465-fix_typo.patch] into 4.5.2.rc0.  Can someone please check the latter?  There's no need to add me as an author.",
     "created_at": "2010-07-29T04:47:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8465",
     "type": "issue_comment",
@@ -650,7 +650,7 @@ archive/issue_comments_076234.json:
 }
 ```
 
-Attachment
+Attachment [trac_8465-fix_typo.patch](tarball://root/attachments/some-uuid/ticket8465/trac_8465-fix_typo.patch) by mpatel created at 2010-07-29 04:47:16
 
 Replying to [comment:19 leif]:
 > == Note to the release managers ==

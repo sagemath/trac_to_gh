@@ -87,7 +87,7 @@ Changing assignee from was to robertwb.
 archive/issue_comments_004865.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [805-trivial_nf_ideal.diff](tarball://root/attachments/some-uuid/ticket805/805-trivial_nf_ideal.diff) by robertwb created at 2007-11-04 02:37:43",
     "created_at": "2007-11-04T02:37:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/805",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_004865.json:
 }
 ```
 
-Attachment
+Attachment [805-trivial_nf_ideal.diff](tarball://root/attachments/some-uuid/ticket805/805-trivial_nf_ideal.diff) by robertwb created at 2007-11-04 02:37:43
 
 
 
@@ -105,7 +105,7 @@ Attachment
 archive/issue_comments_004866.json:
 ```json
 {
-    "body": "Attachment\n\nBoth patches above should be applied: Robert's handles the special case of number fields; mine fixes a bug in multipolynomial ideals and makes generic ideals more robust.",
+    "body": "Attachment [805-ncalexan-general-2.diff](tarball://root/attachments/some-uuid/ticket805/805-ncalexan-general-2.diff) by ncalexan created at 2007-11-04 03:07:59\n\nBoth patches above should be applied: Robert's handles the special case of number fields; mine fixes a bug in multipolynomial ideals and makes generic ideals more robust.",
     "created_at": "2007-11-04T03:07:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/805",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_004866.json:
 }
 ```
 
-Attachment
+Attachment [805-ncalexan-general-2.diff](tarball://root/attachments/some-uuid/ticket805/805-ncalexan-general-2.diff) by ncalexan created at 2007-11-04 03:07:59
 
 Both patches above should be applied: Robert's handles the special case of number fields; mine fixes a bug in multipolynomial ideals and makes generic ideals more robust.
 

@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2829
 archive/issue_comments_019418.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [pylint_crypto_mq_sr__py.patch](tarball://root/attachments/some-uuid/ticket2829/pylint_crypto_mq_sr__py.patch) by malb created at 2008-04-06 13:28:02",
     "created_at": "2008-04-06T13:28:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2829",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_019418.json:
 }
 ```
 
-Attachment
+Attachment [pylint_crypto_mq_sr__py.patch](tarball://root/attachments/some-uuid/ticket2829/pylint_crypto_mq_sr__py.patch) by malb created at 2008-04-06 13:28:02
 
 
 
@@ -111,7 +111,7 @@ Michael
 archive/issue_comments_019421.json:
 ```json
 {
-    "body": "Attachment\n\nthe good hunks from malb's patch",
+    "body": "Attachment [trac_2829_pylint_crypto_mq_sr__py-good_hunks.patch](tarball://root/attachments/some-uuid/ticket2829/trac_2829_pylint_crypto_mq_sr__py-good_hunks.patch) by mabshoff created at 2008-04-06 16:24:12\n\nthe good hunks from malb's patch",
     "created_at": "2008-04-06T16:24:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2829",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_019421.json:
 }
 ```
 
-Attachment
+Attachment [trac_2829_pylint_crypto_mq_sr__py-good_hunks.patch](tarball://root/attachments/some-uuid/ticket2829/trac_2829_pylint_crypto_mq_sr__py-good_hunks.patch) by mabshoff created at 2008-04-06 16:24:12
 
 the good hunks from malb's patch
 
@@ -131,7 +131,7 @@ the good hunks from malb's patch
 archive/issue_comments_019422.json:
 ```json
 {
-    "body": "Attachment\n\nThe four missing hunks that were in the previous patch",
+    "body": "Attachment [trac_2829_pylint_crypto_mq_sr__py-rebased_hunks.patch](tarball://root/attachments/some-uuid/ticket2829/trac_2829_pylint_crypto_mq_sr__py-rebased_hunks.patch) by mabshoff created at 2008-04-06 16:24:53\n\nThe four missing hunks that were in the previous patch",
     "created_at": "2008-04-06T16:24:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2829",
     "type": "issue_comment",
@@ -140,7 +140,7 @@ archive/issue_comments_019422.json:
 }
 ```
 
-Attachment
+Attachment [trac_2829_pylint_crypto_mq_sr__py-rebased_hunks.patch](tarball://root/attachments/some-uuid/ticket2829/trac_2829_pylint_crypto_mq_sr__py-rebased_hunks.patch) by mabshoff created at 2008-04-06 16:24:53
 
 The four missing hunks that were in the previous patch
 

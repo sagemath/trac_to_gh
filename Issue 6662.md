@@ -51,7 +51,7 @@ Why is the reference manual formatting broken? After doing "sage -docbuild refer
 archive/issue_comments_054679.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [general_discrete_distribution.patch](tarball://root/attachments/some-uuid/ticket6662/general_discrete_distribution.patch) by carlohamalainen created at 2009-07-31 17:32:14",
     "created_at": "2009-07-31T17:32:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6662",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_054679.json:
 }
 ```
 
-Attachment
+Attachment [general_discrete_distribution.patch](tarball://root/attachments/some-uuid/ticket6662/general_discrete_distribution.patch) by carlohamalainen created at 2009-07-31 17:32:14
 
 
 

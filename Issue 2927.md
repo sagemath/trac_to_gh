@@ -55,7 +55,7 @@ Changing status from new to assigned.
 archive/issue_comments_020149.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [singular-cf_gcd_charp.cc.patch](tarball://root/attachments/some-uuid/ticket2927/singular-cf_gcd_charp.cc.patch) by mabshoff created at 2008-04-15 05:27:22",
     "created_at": "2008-04-15T05:27:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2927",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_020149.json:
 }
 ```
 
-Attachment
+Attachment [singular-cf_gcd_charp.cc.patch](tarball://root/attachments/some-uuid/ticket2927/singular-cf_gcd_charp.cc.patch) by mabshoff created at 2008-04-15 05:27:22
 
 
 
@@ -73,7 +73,7 @@ Attachment
 archive/issue_comments_020150.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [singular-readcf.cc.patch](tarball://root/attachments/some-uuid/ticket2927/singular-readcf.cc.patch) by mabshoff created at 2008-04-15 05:27:31",
     "created_at": "2008-04-15T05:27:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2927",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_020150.json:
 }
 ```
 
-Attachment
+Attachment [singular-readcf.cc.patch](tarball://root/attachments/some-uuid/ticket2927/singular-readcf.cc.patch) by mabshoff created at 2008-04-15 05:27:31
 
 
 
@@ -91,7 +91,7 @@ Attachment
 archive/issue_comments_020151.json:
 ```json
 {
-    "body": "Attachment\n\nWorks for me",
+    "body": "Attachment [singular-readcf.y.patch](tarball://root/attachments/some-uuid/ticket2927/singular-readcf.y.patch) by gfurnish created at 2008-04-15 05:53:31\n\nWorks for me",
     "created_at": "2008-04-15T05:53:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2927",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_020151.json:
 }
 ```
 
-Attachment
+Attachment [singular-readcf.y.patch](tarball://root/attachments/some-uuid/ticket2927/singular-readcf.y.patch) by gfurnish created at 2008-04-15 05:53:31
 
 Works for me
 

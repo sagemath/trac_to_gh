@@ -122,7 +122,7 @@ Got:
 archive/issue_comments_093063.json:
 ```json
 {
-    "body": "Attachment\n\nPatch marks the test as random, which I think is the right thing to do, not just an expedient.\n\nThere is no way to know what extra packages a system will have, and this block of code is meant more as an illustration than as a test.  So in particular, the line in question could even be removed, but then there would be less of the behavior documented.",
+    "body": "Attachment [trac_9607-tikz-latex-missing.patch](tarball://root/attachments/some-uuid/ticket9607/trac_9607-tikz-latex-missing.patch) by rbeezer created at 2010-07-27 15:09:29\n\nPatch marks the test as random, which I think is the right thing to do, not just an expedient.\n\nThere is no way to know what extra packages a system will have, and this block of code is meant more as an illustration than as a test.  So in particular, the line in question could even be removed, but then there would be less of the behavior documented.",
     "created_at": "2010-07-27T15:09:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9607",
     "type": "issue_comment",
@@ -131,7 +131,7 @@ archive/issue_comments_093063.json:
 }
 ```
 
-Attachment
+Attachment [trac_9607-tikz-latex-missing.patch](tarball://root/attachments/some-uuid/ticket9607/trac_9607-tikz-latex-missing.patch) by rbeezer created at 2010-07-27 15:09:29
 
 Patch marks the test as random, which I think is the right thing to do, not just an expedient.
 
@@ -260,7 +260,7 @@ I'll put the ticket number in the commit string before I make 4.5.2.rc0.
 archive/issue_comments_093070.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9607-tikz-latex-missing-v2.patch](tarball://root/attachments/some-uuid/ticket9607/trac_9607-tikz-latex-missing-v2.patch) by rbeezer created at 2010-07-29 06:07:18",
     "created_at": "2010-07-29T06:07:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9607",
     "type": "issue_comment",
@@ -269,7 +269,7 @@ archive/issue_comments_093070.json:
 }
 ```
 
-Attachment
+Attachment [trac_9607-tikz-latex-missing-v2.patch](tarball://root/attachments/some-uuid/ticket9607/trac_9607-tikz-latex-missing-v2.patch) by rbeezer created at 2010-07-29 06:07:18
 
 
 

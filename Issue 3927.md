@@ -60,7 +60,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3927
 archive/issue_comments_028108.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-trac3927.patch](tarball://root/attachments/some-uuid/ticket3927/sage-trac3927.patch) by cremona created at 2008-08-22 15:26:51",
     "created_at": "2008-08-22T15:26:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3927",
     "type": "issue_comment",
@@ -69,7 +69,7 @@ archive/issue_comments_028108.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac3927.patch](tarball://root/attachments/some-uuid/ticket3927/sage-trac3927.patch) by cremona created at 2008-08-22 15:26:51
 
 
 
@@ -78,7 +78,7 @@ Attachment
 archive/issue_comments_028109.json:
 ```json
 {
-    "body": "Attachment\n\nTwo patches:  the first implements division, the second implements gcd() and lcm() for Factorizations.  The first also fixes a small gap discovered while testing those, namely that for FreeAlgebras, the element 1 could not be inverted.  Now, in any ring, for an element a for which a.is_unit() is true, a.__invert__() returns self.  (For many rings, 1 is the only element for which .is_unit() does not return a NotImplementedError).\n\nTheses patches are essentially orthogonal to the other one #2460 concerning factorization.py.\nThey are based on 3.1.1.\n\n\nJohn",
+    "body": "Attachment [sage-trac3927a.patch](tarball://root/attachments/some-uuid/ticket3927/sage-trac3927a.patch) by cremona created at 2008-08-22 15:34:09\n\nTwo patches:  the first implements division, the second implements gcd() and lcm() for Factorizations.  The first also fixes a small gap discovered while testing those, namely that for FreeAlgebras, the element 1 could not be inverted.  Now, in any ring, for an element a for which a.is_unit() is true, a.__invert__() returns self.  (For many rings, 1 is the only element for which .is_unit() does not return a NotImplementedError).\n\nTheses patches are essentially orthogonal to the other one #2460 concerning factorization.py.\nThey are based on 3.1.1.\n\n\nJohn",
     "created_at": "2008-08-22T15:34:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3927",
     "type": "issue_comment",
@@ -87,7 +87,7 @@ archive/issue_comments_028109.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac3927a.patch](tarball://root/attachments/some-uuid/ticket3927/sage-trac3927a.patch) by cremona created at 2008-08-22 15:34:09
 
 Two patches:  the first implements division, the second implements gcd() and lcm() for Factorizations.  The first also fixes a small gap discovered while testing those, namely that for FreeAlgebras, the element 1 could not be inverted.  Now, in any ring, for an element a for which a.is_unit() is true, a.__invert__() returns self.  (For many rings, 1 is the only element for which .is_unit() does not return a NotImplementedError).
 
@@ -104,7 +104,7 @@ John
 archive/issue_comments_028110.json:
 ```json
 {
-    "body": "Attachment\n\nThe third patch deals with the issues left from trac #2460.  Each Factorization now has a universe (cached as attribute `self.__universe`) computed using the Sequence idea proposed in trac #2460.  The base_ring() function has been changed to universe() and returns the universe.  If no universe is found it just sets it to None (for example, this is the case for Factorizations of modular symbol spaces).\n\nI also added a new function is_integral and changed the docstrings to reflect the fact that the exponents needs not be positive (for example, factor(2/3) has always worked and returned a prime factorization with a negative exponent).\n\nSince Factorization is used in a lot of different places I did -testall before posting this, and dealt with a few minor things which arose (no-one minded base_ring() being renamed universe(), but in 2 or 3 places unit_part() was changed to unit()).\n\nAll three patches should be applied in order;  based on 3.1.1.\n\nI think the __add__ and __sub__ methods are totally pointless but have left them in for now.",
+    "body": "Attachment [sage-trac3927b.patch](tarball://root/attachments/some-uuid/ticket3927/sage-trac3927b.patch) by cremona created at 2008-08-23 16:06:34\n\nThe third patch deals with the issues left from trac #2460.  Each Factorization now has a universe (cached as attribute `self.__universe`) computed using the Sequence idea proposed in trac #2460.  The base_ring() function has been changed to universe() and returns the universe.  If no universe is found it just sets it to None (for example, this is the case for Factorizations of modular symbol spaces).\n\nI also added a new function is_integral and changed the docstrings to reflect the fact that the exponents needs not be positive (for example, factor(2/3) has always worked and returned a prime factorization with a negative exponent).\n\nSince Factorization is used in a lot of different places I did -testall before posting this, and dealt with a few minor things which arose (no-one minded base_ring() being renamed universe(), but in 2 or 3 places unit_part() was changed to unit()).\n\nAll three patches should be applied in order;  based on 3.1.1.\n\nI think the __add__ and __sub__ methods are totally pointless but have left them in for now.",
     "created_at": "2008-08-23T16:06:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3927",
     "type": "issue_comment",
@@ -113,7 +113,7 @@ archive/issue_comments_028110.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac3927b.patch](tarball://root/attachments/some-uuid/ticket3927/sage-trac3927b.patch) by cremona created at 2008-08-23 16:06:34
 
 The third patch deals with the issues left from trac #2460.  Each Factorization now has a universe (cached as attribute `self.__universe`) computed using the Sequence idea proposed in trac #2460.  The base_ring() function has been changed to universe() and returns the universe.  If no universe is found it just sets it to None (for example, this is the case for Factorizations of modular symbol spaces).
 
@@ -152,7 +152,7 @@ Positive review.  (Apply all four patches.)
 archive/issue_comments_028112.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac3927-fix-gcd-lcm.patch](tarball://root/attachments/some-uuid/ticket3927/trac3927-fix-gcd-lcm.patch) by cwitty created at 2008-08-23 23:31:32",
     "created_at": "2008-08-23T23:31:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3927",
     "type": "issue_comment",
@@ -161,7 +161,7 @@ archive/issue_comments_028112.json:
 }
 ```
 
-Attachment
+Attachment [trac3927-fix-gcd-lcm.patch](tarball://root/attachments/some-uuid/ticket3927/trac3927-fix-gcd-lcm.patch) by cwitty created at 2008-08-23 23:31:32
 
 
 

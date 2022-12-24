@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1411
 archive/issue_comments_009101.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [README.2.txt](tarball://root/attachments/some-uuid/ticket1411/README.2.txt) by was created at 2007-12-06 14:53:11",
     "created_at": "2007-12-06T14:53:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1411",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_009101.json:
 }
 ```
 
-Attachment
+Attachment [README.2.txt](tarball://root/attachments/some-uuid/ticket1411/README.2.txt) by was created at 2007-12-06 14:53:11
 
 
 
@@ -49,7 +49,7 @@ Attachment
 archive/issue_comments_009102.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [README.3.txt](tarball://root/attachments/some-uuid/ticket1411/README.3.txt) by was created at 2007-12-06 14:53:16",
     "created_at": "2007-12-06T14:53:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1411",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_009102.json:
 }
 ```
 
-Attachment
+Attachment [README.3.txt](tarball://root/attachments/some-uuid/ticket1411/README.3.txt) by was created at 2007-12-06 14:53:16
 
 
 
@@ -67,7 +67,7 @@ Attachment
 archive/issue_comments_009103.json:
 ```json
 {
-    "body": "Attachment\n\nrevisid version by mabshoff",
+    "body": "Attachment [README.4.txt](tarball://root/attachments/some-uuid/ticket1411/README.4.txt) by mabshoff created at 2007-12-06 20:28:45\n\nrevisid version by mabshoff",
     "created_at": "2007-12-06T20:28:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1411",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_009103.json:
 }
 ```
 
-Attachment
+Attachment [README.4.txt](tarball://root/attachments/some-uuid/ticket1411/README.4.txt) by mabshoff created at 2007-12-06 20:28:45
 
 revisid version by mabshoff
 
@@ -105,7 +105,7 @@ Resolution: fixed
 archive/issue_comments_009105.json:
 ```json
 {
-    "body": "Attachment\n\nMerged in 2.9.alpha3.",
+    "body": "Attachment [README.5.txt](tarball://root/attachments/some-uuid/ticket1411/README.5.txt) by mabshoff created at 2007-12-10 05:12:36\n\nMerged in 2.9.alpha3.",
     "created_at": "2007-12-10T05:12:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1411",
     "type": "issue_comment",
@@ -114,6 +114,6 @@ archive/issue_comments_009105.json:
 }
 ```
 
-Attachment
+Attachment [README.5.txt](tarball://root/attachments/some-uuid/ticket1411/README.5.txt) by mabshoff created at 2007-12-10 05:12:36
 
 Merged in 2.9.alpha3.

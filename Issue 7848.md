@@ -78,7 +78,7 @@ I believe that some of it can be put into the documentation, under "The Notebook
 archive/issue_comments_067980.json:
 ```json
 {
-    "body": "Attachment\n\nChanges the tutorial help verbage regarding text (HTML) cells.  Also replaces all the <b> tags in the tutorial with <strong>",
+    "body": "Attachment [trac_7848-misleading_HTML_cells.patch](tarball://root/attachments/some-uuid/ticket7848/trac_7848-misleading_HTML_cells.patch) by acleone created at 2010-01-19 07:21:56\n\nChanges the tutorial help verbage regarding text (HTML) cells.  Also replaces all the <b> tags in the tutorial with <strong>",
     "created_at": "2010-01-19T07:21:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7848",
     "type": "issue_comment",
@@ -87,7 +87,7 @@ archive/issue_comments_067980.json:
 }
 ```
 
-Attachment
+Attachment [trac_7848-misleading_HTML_cells.patch](tarball://root/attachments/some-uuid/ticket7848/trac_7848-misleading_HTML_cells.patch) by acleone created at 2010-01-19 07:21:56
 
 Changes the tutorial help verbage regarding text (HTML) cells.  Also replaces all the <b> tags in the tutorial with <strong>
 

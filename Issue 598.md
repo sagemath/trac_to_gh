@@ -125,7 +125,7 @@ Changing assignee from jbmohler to mhansen.
 archive/issue_comments_003090.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_598.patch](tarball://root/attachments/some-uuid/ticket598/trac_598.patch) by mhansen created at 2010-01-16 19:04:29",
     "created_at": "2010-01-16T19:04:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/598",
     "type": "issue_comment",
@@ -134,7 +134,7 @@ archive/issue_comments_003090.json:
 }
 ```
 
-Attachment
+Attachment [trac_598.patch](tarball://root/attachments/some-uuid/ticket598/trac_598.patch) by mhansen created at 2010-01-16 19:04:29
 
 
 

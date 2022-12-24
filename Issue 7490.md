@@ -163,7 +163,7 @@ refactor symbolic functions
 archive/issue_comments_063258.json:
 ```json
 {
-    "body": "Attachment\n\nHi Jason,\n\nThis patch does not add a hold method to `integrate()` since it is not a *symbolic function*. Golam did some work in this direction at #6465, but more effort is needed to polish those patches.\n\nCheers,\n\nBurcin",
+    "body": "Attachment [trac_7490-refactor_symbolic_functions.patch](tarball://root/attachments/some-uuid/ticket7490/trac_7490-refactor_symbolic_functions.patch) by burcin created at 2009-11-19 11:58:58\n\nHi Jason,\n\nThis patch does not add a hold method to `integrate()` since it is not a *symbolic function*. Golam did some work in this direction at #6465, but more effort is needed to polish those patches.\n\nCheers,\n\nBurcin",
     "created_at": "2009-11-19T11:58:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7490",
     "type": "issue_comment",
@@ -172,7 +172,7 @@ archive/issue_comments_063258.json:
 }
 ```
 
-Attachment
+Attachment [trac_7490-refactor_symbolic_functions.patch](tarball://root/attachments/some-uuid/ticket7490/trac_7490-refactor_symbolic_functions.patch) by burcin created at 2009-11-19 11:58:58
 
 Hi Jason,
 
@@ -249,7 +249,7 @@ rebased to 4.3.alpha0
 archive/issue_comments_063262.json:
 ```json
 {
-    "body": "Attachment\n\nI rebased the patch to 4.3.alpha0:\n\nattachment:trac_7490-refactor_symbolic_functions.rebase-4.3.alpha0.patch",
+    "body": "Attachment [trac_7490-refactor_symbolic_functions.rebase-4.3.alpha0.patch](tarball://root/attachments/some-uuid/ticket7490/trac_7490-refactor_symbolic_functions.rebase-4.3.alpha0.patch) by burcin created at 2009-11-23 12:13:18\n\nI rebased the patch to 4.3.alpha0:\n\nattachment:trac_7490-refactor_symbolic_functions.rebase-4.3.alpha0.patch",
     "created_at": "2009-11-23T12:13:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7490",
     "type": "issue_comment",
@@ -258,7 +258,7 @@ archive/issue_comments_063262.json:
 }
 ```
 
-Attachment
+Attachment [trac_7490-refactor_symbolic_functions.rebase-4.3.alpha0.patch](tarball://root/attachments/some-uuid/ticket7490/trac_7490-refactor_symbolic_functions.rebase-4.3.alpha0.patch) by burcin created at 2009-11-23 12:13:18
 
 I rebased the patch to 4.3.alpha0:
 
@@ -390,7 +390,7 @@ revised patch based on 4.3.alpha0
 archive/issue_comments_063267.json:
 ```json
 {
-    "body": "Attachment\n\nThanks for your comments Mike.\n\nReplying to [comment:7 mhansen]:\n> Here's my review.\n> \n> There are a number of things which break old code -- they should be deprecated first.\n>\n {{{\n- exp(2,prec=100), gamma(pi,prec=100), etc.\n \n- sage: Q.<i> = NumberField(x^2+1) \n  sage: gamma(i) \n  sage: gamma(QQbar(I))\n }}}\n\nDone:\n\n\n```\nsage: exp(2,prec=100)\n...:...: DeprecationWarning: The prec keyword argument is deprecated. Explicitly set the precision of the input, for example exp(RealField(300)(1)), or use the prec argument to .n() for exact inputs, e.g., exp(1).n(300), instead.\n  # -*- coding: utf-8 -*-\n7.3890560989306502272304274606\n\nsage: gamma(2.5, prec=100)\n...:...: DeprecationWarning: The prec keyword argument is deprecated. Explicitly set the precision of the input, for example gamma(RealField(300)(1)), or use the prec argument to .n() for exact inputs, e.g., gamma(1).n(300), instead.\n  # -*- coding: utf-8 -*-\n1.3293403881791370224618731299\n\nsage: gamma(QQbar(I))\n-0.154949828301811 - 0.498015668118356*I\n\nsage: Q.<i> = NumberField(x^2+1)\nsage: gamma(i)\n...:...: DeprecationWarning: Calling symbolic functions with arguments that cannot be coerced into symbolic expressions is deprecated.\n  # -*- coding: utf-8 -*-\n-0.154949828301811 - 0.498015668118356*I\n```\n\n\n> Conversion of polylog to maxima is broken:\n {{{\n sage: polylog(2, x)._maxima_init_()\n 'polylog(2,x)'\n }}}\n> instead of `'li[2](x)'`.\n\nI don't know why I left `_maxima_init_evaled_()` commented. It works now:\n\n\n```\nsage: polylog(2, x)._maxima_()\nli[2](x)\nsage: polylog(4, x)._maxima_()\npolylog(4,x)\n```\n\n \n> Some doctests are missing:\n {{{\n sage/interfaces/maxima.py: _symbolic_\n sage/rings/number_field/number_field_element.pyx: _mpfr_, __complex__\n }}}\n\nDone.\n\n> Why do you have to use\n {{{\n f = CallableConvertMap(RR, RR, lambda x: x.exp(), parent_as_first_arg=False) \n }}}\n> instead of\n {{{\n f = CallableConvertMap(RR, RR, exp, parent_as_first_arg=False) \n }}}\n> , which is more natural?\n\nI converted the doctest back to the original form. Return values of `exp()` could be `int` for some inputs, even for arguments in `RR`. For example, `exp(RR(0))` used to return an `int(1)`. I added some code to wrap return values from GiNaC and convert them to something sensible in `sage.symbolic.function.GinacFunction.__call__()`.\n\n> In expression.pyx, some things are missing from the _convert docstring.  Also, f._convert(int) gives `-0.989992496600445*sqrt(2)` which seems unexpected.  Maybe the docstring can be clarified further?\n\nI wrote a little more for the docstring and added a few examples. The fact that GiNaC leaves the `power` objects exact is confusing, but I don't see any easy way to get around this.\n\n> Finally, there are some numerical issues it seems with evaluations: complex(I) gives 0.99999999999999967j instead of 1j.  I'm not sure where the discrepancy is occurring.\n\nThis seems to be an issue with complex embeddings of number field elements:\n\n\n```\nsage: complex(CDF.0)\n1j\nsage: complex(CC.0)\n1j\nsage: complex(CDF.0)\n1j\nsage: Q.<i> = NumberField(x^2+1)\nsage: complex(i)\n0.99999999999999967j\n```\n\n\nOf course, I added the last method that gets called for `complex(i)`, but all it does is to `return complex(self.complex_embedding())`. \n\nI suggest we open a separate ticket about this since it's independent of the symbolics code and someone who knows the number field code should take a look at it.",
+    "body": "Attachment [trac_7490-refactor_symbolic_functions.take2.patch](tarball://root/attachments/some-uuid/ticket7490/trac_7490-refactor_symbolic_functions.take2.patch) by burcin created at 2009-12-03 14:27:23\n\nThanks for your comments Mike.\n\nReplying to [comment:7 mhansen]:\n> Here's my review.\n> \n> There are a number of things which break old code -- they should be deprecated first.\n>\n {{{\n- exp(2,prec=100), gamma(pi,prec=100), etc.\n \n- sage: Q.<i> = NumberField(x^2+1) \n  sage: gamma(i) \n  sage: gamma(QQbar(I))\n }}}\n\nDone:\n\n\n```\nsage: exp(2,prec=100)\n...:...: DeprecationWarning: The prec keyword argument is deprecated. Explicitly set the precision of the input, for example exp(RealField(300)(1)), or use the prec argument to .n() for exact inputs, e.g., exp(1).n(300), instead.\n  # -*- coding: utf-8 -*-\n7.3890560989306502272304274606\n\nsage: gamma(2.5, prec=100)\n...:...: DeprecationWarning: The prec keyword argument is deprecated. Explicitly set the precision of the input, for example gamma(RealField(300)(1)), or use the prec argument to .n() for exact inputs, e.g., gamma(1).n(300), instead.\n  # -*- coding: utf-8 -*-\n1.3293403881791370224618731299\n\nsage: gamma(QQbar(I))\n-0.154949828301811 - 0.498015668118356*I\n\nsage: Q.<i> = NumberField(x^2+1)\nsage: gamma(i)\n...:...: DeprecationWarning: Calling symbolic functions with arguments that cannot be coerced into symbolic expressions is deprecated.\n  # -*- coding: utf-8 -*-\n-0.154949828301811 - 0.498015668118356*I\n```\n\n\n> Conversion of polylog to maxima is broken:\n {{{\n sage: polylog(2, x)._maxima_init_()\n 'polylog(2,x)'\n }}}\n> instead of `'li[2](x)'`.\n\nI don't know why I left `_maxima_init_evaled_()` commented. It works now:\n\n\n```\nsage: polylog(2, x)._maxima_()\nli[2](x)\nsage: polylog(4, x)._maxima_()\npolylog(4,x)\n```\n\n \n> Some doctests are missing:\n {{{\n sage/interfaces/maxima.py: _symbolic_\n sage/rings/number_field/number_field_element.pyx: _mpfr_, __complex__\n }}}\n\nDone.\n\n> Why do you have to use\n {{{\n f = CallableConvertMap(RR, RR, lambda x: x.exp(), parent_as_first_arg=False) \n }}}\n> instead of\n {{{\n f = CallableConvertMap(RR, RR, exp, parent_as_first_arg=False) \n }}}\n> , which is more natural?\n\nI converted the doctest back to the original form. Return values of `exp()` could be `int` for some inputs, even for arguments in `RR`. For example, `exp(RR(0))` used to return an `int(1)`. I added some code to wrap return values from GiNaC and convert them to something sensible in `sage.symbolic.function.GinacFunction.__call__()`.\n\n> In expression.pyx, some things are missing from the _convert docstring.  Also, f._convert(int) gives `-0.989992496600445*sqrt(2)` which seems unexpected.  Maybe the docstring can be clarified further?\n\nI wrote a little more for the docstring and added a few examples. The fact that GiNaC leaves the `power` objects exact is confusing, but I don't see any easy way to get around this.\n\n> Finally, there are some numerical issues it seems with evaluations: complex(I) gives 0.99999999999999967j instead of 1j.  I'm not sure where the discrepancy is occurring.\n\nThis seems to be an issue with complex embeddings of number field elements:\n\n\n```\nsage: complex(CDF.0)\n1j\nsage: complex(CC.0)\n1j\nsage: complex(CDF.0)\n1j\nsage: Q.<i> = NumberField(x^2+1)\nsage: complex(i)\n0.99999999999999967j\n```\n\n\nOf course, I added the last method that gets called for `complex(i)`, but all it does is to `return complex(self.complex_embedding())`. \n\nI suggest we open a separate ticket about this since it's independent of the symbolics code and someone who knows the number field code should take a look at it.",
     "created_at": "2009-12-03T14:27:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7490",
     "type": "issue_comment",
@@ -399,7 +399,7 @@ archive/issue_comments_063267.json:
 }
 ```
 
-Attachment
+Attachment [trac_7490-refactor_symbolic_functions.take2.patch](tarball://root/attachments/some-uuid/ticket7490/trac_7490-refactor_symbolic_functions.take2.patch) by burcin created at 2009-12-03 14:27:23
 
 Thanks for your comments Mike.
 

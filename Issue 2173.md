@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2173
 archive/issue_comments_014271.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch doesn't work as is for the non-Debianized build:\n\n```\nBuilding sage/matrix/matrix_dense.c because it depends on sage/matrix/matrix_dense.pyx.\npython2.5 cython --embed-positions --incref-local-binop -I/scratch/mabshoff/release-cycle/sage-2.10.2.alpha1/devel/sage-main -o sage/matrix/matrix_dense.c sage/matrix/matrix_dense.pyx\npython2.5: can't open file 'cython': [Errno 2] No such file or directory\nsage: Error running cython.\nsage: There was an error installing modified sage library code.\n```\n\nCheers,\n\nMichael",
+    "body": "Attachment [setup.py.diff](tarball://root/attachments/some-uuid/ticket2173/setup.py.diff) by mabshoff created at 2008-02-16 01:27:42\n\nThe patch doesn't work as is for the non-Debianized build:\n\n```\nBuilding sage/matrix/matrix_dense.c because it depends on sage/matrix/matrix_dense.pyx.\npython2.5 cython --embed-positions --incref-local-binop -I/scratch/mabshoff/release-cycle/sage-2.10.2.alpha1/devel/sage-main -o sage/matrix/matrix_dense.c sage/matrix/matrix_dense.pyx\npython2.5: can't open file 'cython': [Errno 2] No such file or directory\nsage: Error running cython.\nsage: There was an error installing modified sage library code.\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-02-16T01:27:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2173",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_014271.json:
 }
 ```
 
-Attachment
+Attachment [setup.py.diff](tarball://root/attachments/some-uuid/ticket2173/setup.py.diff) by mabshoff created at 2008-02-16 01:27:42
 
 The patch doesn't work as is for the non-Debianized build:
 
@@ -131,7 +131,7 @@ I think the changeset can be cleaned up to just create a symlink 'python' in SAG
 archive/issue_comments_014275.json:
 ```json
 {
-    "body": "Attachment\n\nsage-spkg-debian.patch looks good to me. Positive review.\n\nCheers,\n\nMichael",
+    "body": "Attachment [sage-spkg-debian.patch](tarball://root/attachments/some-uuid/ticket2173/sage-spkg-debian.patch) by mabshoff created at 2008-03-29 23:04:47\n\nsage-spkg-debian.patch looks good to me. Positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-03-29T23:04:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2173",
     "type": "issue_comment",
@@ -140,7 +140,7 @@ archive/issue_comments_014275.json:
 }
 ```
 
-Attachment
+Attachment [sage-spkg-debian.patch](tarball://root/attachments/some-uuid/ticket2173/sage-spkg-debian.patch) by mabshoff created at 2008-03-29 23:04:47
 
 sage-spkg-debian.patch looks good to me. Positive review.
 

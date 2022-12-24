@@ -53,7 +53,7 @@ Changing status from new to assigned.
 archive/issue_comments_007551.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch as is causes some problem on Linux, but I think it should work everywhere by linking pari instead if pari-gmp.\n\nCheers,\n\nMichael",
+    "body": "Attachment [Sage-2.8.13.rc0-fix-homspace-on-OSX-10.4-compile.patch](tarball://root/attachments/some-uuid/ticket1216/Sage-2.8.13.rc0-fix-homspace-on-OSX-10.4-compile.patch) by mabshoff created at 2007-11-20 16:46:25\n\nThe patch as is causes some problem on Linux, but I think it should work everywhere by linking pari instead if pari-gmp.\n\nCheers,\n\nMichael",
     "created_at": "2007-11-20T16:46:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1216",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_007551.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.8.13.rc0-fix-homspace-on-OSX-10.4-compile.patch](tarball://root/attachments/some-uuid/ticket1216/Sage-2.8.13.rc0-fix-homspace-on-OSX-10.4-compile.patch) by mabshoff created at 2007-11-20 16:46:25
 
 The patch as is causes some problem on Linux, but I think it should work everywhere by linking pari instead if pari-gmp.
 

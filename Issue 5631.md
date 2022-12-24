@@ -185,7 +185,7 @@ So I looked at algebraic_scheme.py and noticed that there is a method `X.exclude
 archive/issue_comments_043978.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5631.patch](tarball://root/attachments/some-uuid/ticket5631/trac_5631.patch) by AlexGhitza created at 2009-04-03 10:09:26",
     "created_at": "2009-04-03T10:09:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5631",
     "type": "issue_comment",
@@ -194,7 +194,7 @@ archive/issue_comments_043978.json:
 }
 ```
 
-Attachment
+Attachment [trac_5631.patch](tarball://root/attachments/some-uuid/ticket5631/trac_5631.patch) by AlexGhitza created at 2009-04-03 10:09:26
 
 
 
@@ -245,7 +245,7 @@ sage:
 archive/issue_comments_043980.json:
 ```json
 {
-    "body": "Attachment\n\napply instead of the previous patch",
+    "body": "Attachment [trac_5631_rebased.patch](tarball://root/attachments/some-uuid/ticket5631/trac_5631_rebased.patch) by AlexGhitza created at 2009-04-10 08:23:40\n\napply instead of the previous patch",
     "created_at": "2009-04-10T08:23:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5631",
     "type": "issue_comment",
@@ -254,7 +254,7 @@ archive/issue_comments_043980.json:
 }
 ```
 
-Attachment
+Attachment [trac_5631_rebased.patch](tarball://root/attachments/some-uuid/ticket5631/trac_5631_rebased.patch) by AlexGhitza created at 2009-04-10 08:23:40
 
 apply instead of the previous patch
 

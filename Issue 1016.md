@@ -56,7 +56,7 @@ Resolution: fixed
 archive/issue_comments_006238.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [flatten.patch](tarball://root/attachments/some-uuid/ticket1016/flatten.patch) by cwitty created at 2007-10-28 18:34:51",
     "created_at": "2007-10-28T18:34:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1016",
     "type": "issue_comment",
@@ -65,4 +65,4 @@ archive/issue_comments_006238.json:
 }
 ```
 
-Attachment
+Attachment [flatten.patch](tarball://root/attachments/some-uuid/ticket1016/flatten.patch) by cwitty created at 2007-10-28 18:34:51

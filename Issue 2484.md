@@ -83,7 +83,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2484
 archive/issue_comments_016830.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch *should* fix the above valgrind log, but I haven't run valgrind myself to check.  (I did run testall, which passed.)",
+    "body": "Attachment [trac2484-rqdf-uninit.patch](tarball://root/attachments/some-uuid/ticket2484/trac2484-rqdf-uninit.patch) by cwitty created at 2008-03-14 01:33:41\n\nThe attached patch *should* fix the above valgrind log, but I haven't run valgrind myself to check.  (I did run testall, which passed.)",
     "created_at": "2008-03-14T01:33:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2484",
     "type": "issue_comment",
@@ -92,7 +92,7 @@ archive/issue_comments_016830.json:
 }
 ```
 
-Attachment
+Attachment [trac2484-rqdf-uninit.patch](tarball://root/attachments/some-uuid/ticket2484/trac2484-rqdf-uninit.patch) by cwitty created at 2008-03-14 01:33:41
 
 The attached patch *should* fix the above valgrind log, but I haven't run valgrind myself to check.  (I did run testall, which passed.)
 

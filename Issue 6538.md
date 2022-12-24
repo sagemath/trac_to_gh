@@ -495,7 +495,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_053310.json:
 ```json
 {
-    "body": "Attachment\n\nRebased to sage-5.3.beta1",
+    "body": "Attachment [trac_6538-partitions_max_slope-ts.patch](tarball://root/attachments/some-uuid/ticket6538/trac_6538-partitions_max_slope-ts.patch) by jdemeyer created at 2012-08-13 10:09:55\n\nRebased to sage-5.3.beta1",
     "created_at": "2012-08-13T10:09:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6538",
     "type": "issue_comment",
@@ -504,7 +504,7 @@ archive/issue_comments_053310.json:
 }
 ```
 
-Attachment
+Attachment [trac_6538-partitions_max_slope-ts.patch](tarball://root/attachments/some-uuid/ticket6538/trac_6538-partitions_max_slope-ts.patch) by jdemeyer created at 2012-08-13 10:09:55
 
 Rebased to sage-5.3.beta1
 

@@ -193,7 +193,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_082898.json:
 ```json
 {
-    "body": "Attachment\n\nI have implemented all of the suggestions given by the reviewer above.\n\nPlease review the new version.",
+    "body": "Attachment [trac_8984_crystals_alcove_path_model_bj.patch](tarball://root/attachments/some-uuid/ticket8984/trac_8984_crystals_alcove_path_model_bj.patch) by brant.c.jones created at 2010-06-08 00:23:53\n\nI have implemented all of the suggestions given by the reviewer above.\n\nPlease review the new version.",
     "created_at": "2010-06-08T00:23:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8984",
     "type": "issue_comment",
@@ -202,7 +202,7 @@ archive/issue_comments_082898.json:
 }
 ```
 
-Attachment
+Attachment [trac_8984_crystals_alcove_path_model_bj.patch](tarball://root/attachments/some-uuid/ticket8984/trac_8984_crystals_alcove_path_model_bj.patch) by brant.c.jones created at 2010-06-08 00:23:53
 
 I have implemented all of the suggestions given by the reviewer above.
 

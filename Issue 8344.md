@@ -102,7 +102,7 @@ I can fix it if there are no takers...
 archive/issue_comments_074478.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-8344.patch](tarball://root/attachments/some-uuid/ticket8344/trac-8344.patch) by dimpase created at 2010-02-26 07:44:28",
     "created_at": "2010-02-26T07:44:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8344",
     "type": "issue_comment",
@@ -111,7 +111,7 @@ archive/issue_comments_074478.json:
 }
 ```
 
-Attachment
+Attachment [trac-8344.patch](tarball://root/attachments/some-uuid/ticket8344/trac-8344.patch) by dimpase created at 2010-02-26 07:44:28
 
 
 

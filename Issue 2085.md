@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2085
 archive/issue_comments_013498.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2085-auto_debug_and_bug_fix.hg](tarball://root/attachments/some-uuid/ticket2085/2085-auto_debug_and_bug_fix.hg) by rlm created at 2008-02-07 22:55:15",
     "created_at": "2008-02-07T22:55:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2085",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_013498.json:
 }
 ```
 
-Attachment
+Attachment [2085-auto_debug_and_bug_fix.hg](tarball://root/attachments/some-uuid/ticket2085/2085-auto_debug_and_bug_fix.hg) by rlm created at 2008-02-07 22:55:15
 
 
 
@@ -73,7 +73,7 @@ positive review for the 8314 plotting loops patch.
 archive/issue_comments_013500.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2085-helper_fn_names.patch](tarball://root/attachments/some-uuid/ticket2085/2085-helper_fn_names.patch) by rlm created at 2008-02-16 20:08:21",
     "created_at": "2008-02-16T20:08:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2085",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_013500.json:
 }
 ```
 
-Attachment
+Attachment [2085-helper_fn_names.patch](tarball://root/attachments/some-uuid/ticket2085/2085-helper_fn_names.patch) by rlm created at 2008-02-16 20:08:21
 
 
 
@@ -180,7 +180,7 @@ archive/issue_comments_013502.json:
 archive/issue_comments_013503.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2085-segfault-fix.patch](tarball://root/attachments/some-uuid/ticket2085/2085-segfault-fix.patch) by rlm created at 2008-02-19 00:50:38",
     "created_at": "2008-02-19T00:50:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2085",
     "type": "issue_comment",
@@ -189,7 +189,7 @@ archive/issue_comments_013503.json:
 }
 ```
 
-Attachment
+Attachment [2085-segfault-fix.patch](tarball://root/attachments/some-uuid/ticket2085/2085-segfault-fix.patch) by rlm created at 2008-02-19 00:50:38
 
 
 

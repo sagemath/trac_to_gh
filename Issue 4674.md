@@ -263,7 +263,7 @@ jsmath was standard ever since we used it with the notebook.  That wasn't the po
 archive/issue_comments_035217.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [jsmath-spkg.patch](tarball://root/attachments/some-uuid/ticket4674/jsmath-spkg.patch) by jason created at 2008-12-20 20:51:28",
     "created_at": "2008-12-20T20:51:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4674",
     "type": "issue_comment",
@@ -272,7 +272,7 @@ archive/issue_comments_035217.json:
 }
 ```
 
-Attachment
+Attachment [jsmath-spkg.patch](tarball://root/attachments/some-uuid/ticket4674/jsmath-spkg.patch) by jason created at 2008-12-20 20:51:28
 
 
 

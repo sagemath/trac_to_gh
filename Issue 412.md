@@ -67,7 +67,7 @@ Changing priority from major to blocker.
 archive/issue_comments_002034.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ntl_renaming.patch](tarball://root/attachments/some-uuid/ticket412/ntl_renaming.patch) by mabshoff created at 2007-08-29 20:24:32",
     "created_at": "2007-08-29T20:24:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/412",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_002034.json:
 }
 ```
 
-Attachment
+Attachment [ntl_renaming.patch](tarball://root/attachments/some-uuid/ticket412/ntl_renaming.patch) by mabshoff created at 2007-08-29 20:24:32
 
 
 

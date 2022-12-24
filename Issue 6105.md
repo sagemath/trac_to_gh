@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6105
 archive/issue_comments_048765.json:
 ```json
 {
-    "body": "Attachment\n\nPart 2",
+    "body": "Attachment [6105groupAlgebraPT2.patch](tarball://root/attachments/some-uuid/ticket6105/6105groupAlgebraPT2.patch) by jlefebvre created at 2009-05-21 05:33:35\n\nPart 2",
     "created_at": "2009-05-21T05:33:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6105",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_048765.json:
 }
 ```
 
-Attachment
+Attachment [6105groupAlgebraPT2.patch](tarball://root/attachments/some-uuid/ticket6105/6105groupAlgebraPT2.patch) by jlefebvre created at 2009-05-21 05:33:35
 
 Part 2
 
@@ -82,7 +82,7 @@ http://www.sagemath.org/doc/developer/conventions.html
 archive/issue_comments_048767.json:
 ```json
 {
-    "body": "Attachment\n\nFixed to follow coding convention",
+    "body": "Attachment [6105groupAlgebraPT3.patch](tarball://root/attachments/some-uuid/ticket6105/6105groupAlgebraPT3.patch) by jlefebvre created at 2009-05-21 06:28:04\n\nFixed to follow coding convention",
     "created_at": "2009-05-21T06:28:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6105",
     "type": "issue_comment",
@@ -91,7 +91,7 @@ archive/issue_comments_048767.json:
 }
 ```
 
-Attachment
+Attachment [6105groupAlgebraPT3.patch](tarball://root/attachments/some-uuid/ticket6105/6105groupAlgebraPT3.patch) by jlefebvre created at 2009-05-21 06:28:04
 
 Fixed to follow coding convention
 
@@ -138,7 +138,7 @@ Hey again, I noticed some bugs in my conversion from gap to Sage. I'm going to t
 archive/issue_comments_048770.json:
 ```json
 {
-    "body": "Attachment\n\nFix to gap to complex conversion",
+    "body": "Attachment [6105groupAlgebraPT4.patch](tarball://root/attachments/some-uuid/ticket6105/6105groupAlgebraPT4.patch) by jlefebvre created at 2009-05-21 19:23:12\n\nFix to gap to complex conversion",
     "created_at": "2009-05-21T19:23:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6105",
     "type": "issue_comment",
@@ -147,7 +147,7 @@ archive/issue_comments_048770.json:
 }
 ```
 
-Attachment
+Attachment [6105groupAlgebraPT4.patch](tarball://root/attachments/some-uuid/ticket6105/6105groupAlgebraPT4.patch) by jlefebvre created at 2009-05-21 19:23:12
 
 Fix to gap to complex conversion
 
@@ -158,7 +158,7 @@ Fix to gap to complex conversion
 archive/issue_comments_048771.json:
 ```json
 {
-    "body": "Attachment\n\nA new patch against sage 4.0.1",
+    "body": "Attachment [6105GroupAlgebraPT5.patch](tarball://root/attachments/some-uuid/ticket6105/6105GroupAlgebraPT5.patch) by jlefebvre created at 2009-06-10 03:17:58\n\nA new patch against sage 4.0.1",
     "created_at": "2009-06-10T03:17:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6105",
     "type": "issue_comment",
@@ -167,7 +167,7 @@ archive/issue_comments_048771.json:
 }
 ```
 
-Attachment
+Attachment [6105GroupAlgebraPT5.patch](tarball://root/attachments/some-uuid/ticket6105/6105GroupAlgebraPT5.patch) by jlefebvre created at 2009-06-10 03:17:58
 
 A new patch against sage 4.0.1
 

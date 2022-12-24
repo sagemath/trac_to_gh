@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8793
 archive/issue_comments_080533.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8793_v0.patch](tarball://root/attachments/some-uuid/ticket8793/trac_8793_v0.patch) by knsam created at 2013-02-26 03:21:38",
     "created_at": "2013-02-26T03:21:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8793",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_080533.json:
 }
 ```
 
-Attachment
+Attachment [trac_8793_v0.patch](tarball://root/attachments/some-uuid/ticket8793/trac_8793_v0.patch) by knsam created at 2013-02-26 03:21:38
 
 
 
@@ -85,7 +85,7 @@ Apply on top of v0.
 archive/issue_comments_080536.json:
 ```json
 {
-    "body": "Attachment\n\nApply on top of both v0 and doc_add_prep1",
+    "body": "Attachment [trac_8793_doc_add_prep2.patch](tarball://root/attachments/some-uuid/ticket8793/trac_8793_doc_add_prep2.patch) by knsam created at 2013-03-24 11:35:14\n\nApply on top of both v0 and doc_add_prep1",
     "created_at": "2013-03-24T11:35:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8793",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_080536.json:
 }
 ```
 
-Attachment
+Attachment [trac_8793_doc_add_prep2.patch](tarball://root/attachments/some-uuid/ticket8793/trac_8793_doc_add_prep2.patch) by knsam created at 2013-03-24 11:35:14
 
 Apply on top of both v0 and doc_add_prep1
 
@@ -141,7 +141,7 @@ I have added one more patch, that removes whitespaces and makes some changes in 
 archive/issue_comments_080539.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8793_doc_addon3.patch](tarball://root/attachments/some-uuid/ticket8793/trac_8793_doc_addon3.patch) by vbraun created at 2013-07-12 13:12:46",
     "created_at": "2013-07-12T13:12:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8793",
     "type": "issue_comment",
@@ -150,7 +150,7 @@ archive/issue_comments_080539.json:
 }
 ```
 
-Attachment
+Attachment [trac_8793_doc_addon3.patch](tarball://root/attachments/some-uuid/ticket8793/trac_8793_doc_addon3.patch) by vbraun created at 2013-07-12 13:12:46
 
 
 
@@ -271,7 +271,7 @@ You probably want
 archive/issue_comments_080545.json:
 ```json
 {
-    "body": "Attachment\n\nok, here is patch that makes sure that the doc build.\n\nIt also changes `.::` into `. ::`\n\nIt also remove *self* from the input in most functions\n\nIt also makes the code in pep8 standard\n\nNeeds review.",
+    "body": "Attachment [trac_8793_doc_addon4.patch](tarball://root/attachments/some-uuid/ticket8793/trac_8793_doc_addon4.patch) by chapoton created at 2013-07-26 08:09:27\n\nok, here is patch that makes sure that the doc build.\n\nIt also changes `.::` into `. ::`\n\nIt also remove *self* from the input in most functions\n\nIt also makes the code in pep8 standard\n\nNeeds review.",
     "created_at": "2013-07-26T08:09:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8793",
     "type": "issue_comment",
@@ -280,7 +280,7 @@ archive/issue_comments_080545.json:
 }
 ```
 
-Attachment
+Attachment [trac_8793_doc_addon4.patch](tarball://root/attachments/some-uuid/ticket8793/trac_8793_doc_addon4.patch) by chapoton created at 2013-07-26 08:09:27
 
 ok, here is patch that makes sure that the doc build.
 
@@ -391,7 +391,7 @@ This should be rebased to sage-5.12.beta1 + #14951.
 archive/issue_comments_080551.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8793_new_version_2013_10.patch](tarball://root/attachments/some-uuid/ticket8793/trac_8793_new_version_2013_10.patch) by chapoton created at 2013-10-04 18:58:49",
     "created_at": "2013-10-04T18:58:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8793",
     "type": "issue_comment",
@@ -400,7 +400,7 @@ archive/issue_comments_080551.json:
 }
 ```
 
-Attachment
+Attachment [trac_8793_new_version_2013_10.patch](tarball://root/attachments/some-uuid/ticket8793/trac_8793_new_version_2013_10.patch) by chapoton created at 2013-10-04 18:58:49
 
 
 

@@ -133,7 +133,7 @@ Changing priority from major to minor.
 archive/issue_comments_019908.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2894-notebookperformance.patch](tarball://root/attachments/some-uuid/ticket2894/2894-notebookperformance.patch) by boothby created at 2008-04-12 07:55:26",
     "created_at": "2008-04-12T07:55:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2894",
     "type": "issue_comment",
@@ -142,7 +142,7 @@ archive/issue_comments_019908.json:
 }
 ```
 
-Attachment
+Attachment [2894-notebookperformance.patch](tarball://root/attachments/some-uuid/ticket2894/2894-notebookperformance.patch) by boothby created at 2008-04-12 07:55:26
 
 
 
@@ -213,7 +213,7 @@ Since #2887 was merged only merge the extra comment from the previous patch
 archive/issue_comments_019912.json:
 ```json
 {
-    "body": "Attachment\n\nMerged trac_2887-comment-from-2894.patch in Sage 3.0.alpha4",
+    "body": "Attachment [trac_2887-comment-from-2894.patch](tarball://root/attachments/some-uuid/ticket2894/trac_2887-comment-from-2894.patch) by mabshoff created at 2008-04-12 12:51:23\n\nMerged trac_2887-comment-from-2894.patch in Sage 3.0.alpha4",
     "created_at": "2008-04-12T12:51:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2894",
     "type": "issue_comment",
@@ -222,6 +222,6 @@ archive/issue_comments_019912.json:
 }
 ```
 
-Attachment
+Attachment [trac_2887-comment-from-2894.patch](tarball://root/attachments/some-uuid/ticket2894/trac_2887-comment-from-2894.patch) by mabshoff created at 2008-04-12 12:51:23
 
 Merged trac_2887-comment-from-2894.patch in Sage 3.0.alpha4

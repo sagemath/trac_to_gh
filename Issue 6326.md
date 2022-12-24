@@ -167,7 +167,7 @@ Souvigner auto/isomorphism code tarball
 archive/issue_comments_050484.json:
 ```json
 {
-    "body": "Attachment\n\nI have attached the Souvigner tarball sent to me by Gabi Nebe in March 2008.  I'm not sure how to arrange Sage to build it, but the two files ISOM64 and AUTO64 that the makeflie produces need to renamed as Souvigner_ISOM and Souvigner_AUTO and moved to sage-4.x/local/bin.",
+    "body": "Attachment [export.V3.tar](tarball://root/attachments/some-uuid/ticket6326/export.V3.tar) by jonhanke created at 2011-01-09 08:01:07\n\nI have attached the Souvigner tarball sent to me by Gabi Nebe in March 2008.  I'm not sure how to arrange Sage to build it, but the two files ISOM64 and AUTO64 that the makeflie produces need to renamed as Souvigner_ISOM and Souvigner_AUTO and moved to sage-4.x/local/bin.",
     "created_at": "2011-01-09T08:01:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6326",
     "type": "issue_comment",
@@ -176,7 +176,7 @@ archive/issue_comments_050484.json:
 }
 ```
 
-Attachment
+Attachment [export.V3.tar](tarball://root/attachments/some-uuid/ticket6326/export.V3.tar) by jonhanke created at 2011-01-09 08:01:07
 
 I have attached the Souvigner tarball sent to me by Gabi Nebe in March 2008.  I'm not sure how to arrange Sage to build it, but the two files ISOM64 and AUTO64 that the makeflie produces need to renamed as Souvigner_ISOM and Souvigner_AUTO and moved to sage-4.x/local/bin.
 
@@ -293,7 +293,7 @@ Changing status from new to needs_review.
 archive/issue_comments_050490.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ticket_6326_bug_fix.patch](tarball://root/attachments/some-uuid/ticket6326/ticket_6326_bug_fix.patch) by jonhanke created at 2011-01-12 04:45:58",
     "created_at": "2011-01-12T04:45:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6326",
     "type": "issue_comment",
@@ -302,7 +302,7 @@ archive/issue_comments_050490.json:
 }
 ```
 
-Attachment
+Attachment [ticket_6326_bug_fix.patch](tarball://root/attachments/some-uuid/ticket6326/ticket_6326_bug_fix.patch) by jonhanke created at 2011-01-12 04:45:58
 
 
 
@@ -347,7 +347,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_050493.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [souvigner-2012-03-10.spkg](tarball://root/attachments/some-uuid/ticket6326/souvigner-2012-03-10.spkg) by jdemeyer created at 2013-08-13 15:35:53",
     "created_at": "2013-08-13T15:35:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6326",
     "type": "issue_comment",
@@ -356,7 +356,7 @@ archive/issue_comments_050493.json:
 }
 ```
 
-Attachment
+Attachment [souvigner-2012-03-10.spkg](tarball://root/attachments/some-uuid/ticket6326/souvigner-2012-03-10.spkg) by jdemeyer created at 2013-08-13 15:35:53
 
 
 

@@ -124,7 +124,7 @@ Changing keywords from "" to "spectrum ring call".
 archive/issue_comments_042508.json:
 ```json
 {
-    "body": "Attachment\n\nDavid Roe pointed out in IRC that \"generic point\" has a well-defined technical meaning so it shouldn't be used in the `_repr_` method of `SchemeMorphism`.  So I've attached an updated patch that fixes the handful of occurrences of \"Generic point\".",
+    "body": "Attachment [trac_5479.patch](tarball://root/attachments/some-uuid/ticket5479/trac_5479.patch) by AlexGhitza created at 2009-04-29 08:22:55\n\nDavid Roe pointed out in IRC that \"generic point\" has a well-defined technical meaning so it shouldn't be used in the `_repr_` method of `SchemeMorphism`.  So I've attached an updated patch that fixes the handful of occurrences of \"Generic point\".",
     "created_at": "2009-04-29T08:22:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5479",
     "type": "issue_comment",
@@ -133,7 +133,7 @@ archive/issue_comments_042508.json:
 }
 ```
 
-Attachment
+Attachment [trac_5479.patch](tarball://root/attachments/some-uuid/ticket5479/trac_5479.patch) by AlexGhitza created at 2009-04-29 08:22:55
 
 David Roe pointed out in IRC that "generic point" has a well-defined technical meaning so it shouldn't be used in the `_repr_` method of `SchemeMorphism`.  So I've attached an updated patch that fixes the handful of occurrences of "Generic point".
 

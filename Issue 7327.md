@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7327
 archive/issue_comments_061278.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-7327-integrate-range.patch](tarball://root/attachments/some-uuid/ticket7327/trac-7327-integrate-range.patch) by jason created at 2009-10-28 00:38:54",
     "created_at": "2009-10-28T00:38:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7327",
     "type": "issue_comment",
@@ -51,7 +51,7 @@ archive/issue_comments_061278.json:
 }
 ```
 
-Attachment
+Attachment [trac-7327-integrate-range.patch](tarball://root/attachments/some-uuid/ticket7327/trac-7327-integrate-range.patch) by jason created at 2009-10-28 00:38:54
 
 
 
@@ -114,7 +114,7 @@ Based on Sage 4.2
 archive/issue_comments_061282.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated patch includes the issues mentioned in previous comment, is ready for review.  Positive review to the parts I didn't write.",
+    "body": "Attachment [trac_7327-updated.patch](tarball://root/attachments/some-uuid/ticket7327/trac_7327-updated.patch) by kcrisman created at 2009-11-05 17:45:16\n\nUpdated patch includes the issues mentioned in previous comment, is ready for review.  Positive review to the parts I didn't write.",
     "created_at": "2009-11-05T17:45:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7327",
     "type": "issue_comment",
@@ -123,7 +123,7 @@ archive/issue_comments_061282.json:
 }
 ```
 
-Attachment
+Attachment [trac_7327-updated.patch](tarball://root/attachments/some-uuid/ticket7327/trac_7327-updated.patch) by kcrisman created at 2009-11-05 17:45:16
 
 Updated patch includes the issues mentioned in previous comment, is ready for review.  Positive review to the parts I didn't write.
 

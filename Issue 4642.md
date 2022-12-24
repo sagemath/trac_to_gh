@@ -114,7 +114,7 @@ Michael
 archive/issue_comments_034944.json:
 ```json
 {
-    "body": "Attachment\n\nI named the patch trac_4642_sage.patch but it should be trac_4642_scripts.patch",
+    "body": "Attachment [trac_4642_sage.patch](tarball://root/attachments/some-uuid/ticket4642/trac_4642_sage.patch) by was created at 2008-11-28 21:08:34\n\nI named the patch trac_4642_sage.patch but it should be trac_4642_scripts.patch",
     "created_at": "2008-11-28T21:08:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4642",
     "type": "issue_comment",
@@ -123,7 +123,7 @@ archive/issue_comments_034944.json:
 }
 ```
 
-Attachment
+Attachment [trac_4642_sage.patch](tarball://root/attachments/some-uuid/ticket4642/trac_4642_sage.patch) by was created at 2008-11-28 21:08:34
 
 I named the patch trac_4642_sage.patch but it should be trac_4642_scripts.patch
 
@@ -239,7 +239,7 @@ Resolution: fixed
 archive/issue_comments_034950.json:
 ```json
 {
-    "body": "Attachment\n\nMerged in Sage 3.2.1.rc0",
+    "body": "Attachment [trac_4642_sage.2.patch](tarball://root/attachments/some-uuid/ticket4642/trac_4642_sage.2.patch) by mabshoff created at 2008-11-29 04:28:57\n\nMerged in Sage 3.2.1.rc0",
     "created_at": "2008-11-29T04:28:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4642",
     "type": "issue_comment",
@@ -248,7 +248,7 @@ archive/issue_comments_034950.json:
 }
 ```
 
-Attachment
+Attachment [trac_4642_sage.2.patch](tarball://root/attachments/some-uuid/ticket4642/trac_4642_sage.2.patch) by mabshoff created at 2008-11-29 04:28:57
 
 Merged in Sage 3.2.1.rc0
 

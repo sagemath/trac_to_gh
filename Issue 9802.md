@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9803
 archive/issue_comments_096306.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9803-random-matrix-constructor-v1.patch](tarball://root/attachments/some-uuid/ticket9803/trac_9803-random-matrix-constructor-v1.patch) by rbeezer created at 2010-08-26 22:16:20",
     "created_at": "2010-08-26T22:16:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9802",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_096306.json:
 }
 ```
 
-Attachment
+Attachment [trac_9803-random-matrix-constructor-v1.patch](tarball://root/attachments/some-uuid/ticket9803/trac_9803-random-matrix-constructor-v1.patch) by rbeezer created at 2010-08-26 22:16:20
 
 
 
@@ -108,7 +108,7 @@ Changing status from new to needs_review.
 archive/issue_comments_096309.json:
 ```json
 {
-    "body": "Attachment\n\nStandalone patch",
+    "body": "Attachment [trac_9803-random-matrix-constructor-v2.patch](tarball://root/attachments/some-uuid/ticket9803/trac_9803-random-matrix-constructor-v2.patch) by rbeezer created at 2010-08-27 01:43:36\n\nStandalone patch",
     "created_at": "2010-08-27T01:43:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9802",
     "type": "issue_comment",
@@ -117,7 +117,7 @@ archive/issue_comments_096309.json:
 }
 ```
 
-Attachment
+Attachment [trac_9803-random-matrix-constructor-v2.patch](tarball://root/attachments/some-uuid/ticket9803/trac_9803-random-matrix-constructor-v2.patch) by rbeezer created at 2010-08-27 01:43:36
 
 Standalone patch
 

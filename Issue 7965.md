@@ -137,7 +137,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_069497.json:
 ```json
 {
-    "body": "Attachment\n\nAdd a doctest with the example from the description.",
+    "body": "Attachment [sage-trac_7965.patch](tarball://root/attachments/some-uuid/ticket7965/sage-trac_7965.patch) by jdemeyer created at 2012-01-17 16:01:02\n\nAdd a doctest with the example from the description.",
     "created_at": "2012-01-17T16:01:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7965",
     "type": "issue_comment",
@@ -146,7 +146,7 @@ archive/issue_comments_069497.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac_7965.patch](tarball://root/attachments/some-uuid/ticket7965/sage-trac_7965.patch) by jdemeyer created at 2012-01-17 16:01:02
 
 Add a doctest with the example from the description.
 

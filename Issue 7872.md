@@ -127,7 +127,7 @@ based on sage 4.3.1.alpha1
 archive/issue_comments_068341.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch I just attached represents my initial work on this issue. I added Oscar's code to plot3d() to implement the transformation keyword parameter, and I added the two new plotting functions spherical_plot3d and cylindrical_plot3d.\n\nI made some minor changes to the original code. I moved the formulae for the transformations for spherical and cylindrical coordinates out of the body of plot3d, and into the bodies of spherical_plot3d and cylindrical_plot3d, since I thought that was a better place for them. I also added some error handling; the urange and vrange given to plot3d may be 2-tuples, in which case the variables are implicit -- but we expect urange[0] and vrange[0] to be the plot variables.\n\nWe need to add some documentation for the new features. I think I can draw upon the examples Oscar provided in his published worksheets to create doctests for the new functions. Oscar, could you help me come up with descriptions of cylindrical_plot3d and spherical_plot3d for use in their docstrings? And more examples are always helpful.",
+    "body": "Attachment [trac_7872.patch](tarball://root/attachments/some-uuid/ticket7872/trac_7872.patch) by wcauchois created at 2010-01-12 05:46:29\n\nThe patch I just attached represents my initial work on this issue. I added Oscar's code to plot3d() to implement the transformation keyword parameter, and I added the two new plotting functions spherical_plot3d and cylindrical_plot3d.\n\nI made some minor changes to the original code. I moved the formulae for the transformations for spherical and cylindrical coordinates out of the body of plot3d, and into the bodies of spherical_plot3d and cylindrical_plot3d, since I thought that was a better place for them. I also added some error handling; the urange and vrange given to plot3d may be 2-tuples, in which case the variables are implicit -- but we expect urange[0] and vrange[0] to be the plot variables.\n\nWe need to add some documentation for the new features. I think I can draw upon the examples Oscar provided in his published worksheets to create doctests for the new functions. Oscar, could you help me come up with descriptions of cylindrical_plot3d and spherical_plot3d for use in their docstrings? And more examples are always helpful.",
     "created_at": "2010-01-12T05:46:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7872",
     "type": "issue_comment",
@@ -136,7 +136,7 @@ archive/issue_comments_068341.json:
 }
 ```
 
-Attachment
+Attachment [trac_7872.patch](tarball://root/attachments/some-uuid/ticket7872/trac_7872.patch) by wcauchois created at 2010-01-12 05:46:29
 
 The patch I just attached represents my initial work on this issue. I added Oscar's code to plot3d() to implement the transformation keyword parameter, and I added the two new plotting functions spherical_plot3d and cylindrical_plot3d.
 
@@ -187,7 +187,7 @@ I have attatced a proposal for a docstring in spherical_plot #7850 . Also, I che
 archive/issue_comments_068344.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [13535.patch](tarball://root/attachments/some-uuid/ticket7872/13535.patch) by olazo created at 2010-01-24 19:39:48",
     "created_at": "2010-01-24T19:39:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7872",
     "type": "issue_comment",
@@ -196,7 +196,7 @@ archive/issue_comments_068344.json:
 }
 ```
 
-Attachment
+Attachment [13535.patch](tarball://root/attachments/some-uuid/ticket7872/13535.patch) by olazo created at 2010-01-24 19:39:48
 
 
 
@@ -277,7 +277,7 @@ I will be uploading a patch very soon with some improvements to Oscar's code.
 archive/issue_comments_068349.json:
 ```json
 {
-    "body": "Attachment\n\nbased on sage 4.3.1.rc0",
+    "body": "Attachment [trac_7872_new.patch](tarball://root/attachments/some-uuid/ticket7872/trac_7872_new.patch) by wcauchois created at 2010-01-26 07:52:23\n\nbased on sage 4.3.1.rc0",
     "created_at": "2010-01-26T07:52:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7872",
     "type": "issue_comment",
@@ -286,7 +286,7 @@ archive/issue_comments_068349.json:
 }
 ```
 
-Attachment
+Attachment [trac_7872_new.patch](tarball://root/attachments/some-uuid/ticket7872/trac_7872_new.patch) by wcauchois created at 2010-01-26 07:52:23
 
 based on sage 4.3.1.rc0
 
@@ -522,7 +522,7 @@ based on sage 4.3.1.rc0
 archive/issue_comments_068358.json:
 ```json
 {
-    "body": "Attachment\n\nbased on sage 4.3.1",
+    "body": "Attachment [trac_7872_new-all.patch](tarball://root/attachments/some-uuid/ticket7872/trac_7872_new-all.patch) by wcauchois created at 2010-02-08 04:08:15\n\nbased on sage 4.3.1",
     "created_at": "2010-02-08T04:08:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7872",
     "type": "issue_comment",
@@ -531,7 +531,7 @@ archive/issue_comments_068358.json:
 }
 ```
 
-Attachment
+Attachment [trac_7872_new-all.patch](tarball://root/attachments/some-uuid/ticket7872/trac_7872_new-all.patch) by wcauchois created at 2010-02-08 04:08:15
 
 based on sage 4.3.1
 
@@ -899,7 +899,7 @@ ValueError: expected 3-tuple for urange and vrange
 archive/issue_comments_068372.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of trac_7872_new-all.patch; based on 4.3.2.",
+    "body": "Attachment [trac-7872-polish.patch](tarball://root/attachments/some-uuid/ticket7872/trac-7872-polish.patch) by jason created at 2010-02-27 10:11:53\n\napply on top of trac_7872_new-all.patch; based on 4.3.2.",
     "created_at": "2010-02-27T10:11:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7872",
     "type": "issue_comment",
@@ -908,7 +908,7 @@ archive/issue_comments_068372.json:
 }
 ```
 
-Attachment
+Attachment [trac-7872-polish.patch](tarball://root/attachments/some-uuid/ticket7872/trac-7872-polish.patch) by jason created at 2010-02-27 10:11:53
 
 apply on top of trac_7872_new-all.patch; based on 4.3.2.
 

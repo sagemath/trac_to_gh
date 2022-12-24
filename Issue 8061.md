@@ -58,7 +58,7 @@ Changing status from new to needs_review.
 archive/issue_comments_070659.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [genus2reduction-0.3.p6.patch](tarball://root/attachments/some-uuid/ticket8061/genus2reduction-0.3.p6.patch) by jsp created at 2010-01-26 17:50:03",
     "created_at": "2010-01-26T17:50:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8061",
     "type": "issue_comment",
@@ -67,7 +67,7 @@ archive/issue_comments_070659.json:
 }
 ```
 
-Attachment
+Attachment [genus2reduction-0.3.p6.patch](tarball://root/attachments/some-uuid/ticket8061/genus2reduction-0.3.p6.patch) by jsp created at 2010-01-26 17:50:03
 
 
 

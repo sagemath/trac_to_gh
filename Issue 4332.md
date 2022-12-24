@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4332
 archive/issue_comments_031767.json:
 ```json
 {
-    "body": "Attachment\n\nPatch attached. A lot of it is reformatting and typos, but I also added a reference to a new page on the wiki: http://wiki.sagemath.org/StartingTheNotebook. The installation guide only has a page on running a publically-accessible notebook server (http://sagemath.org/doc/inst/node10.html) and nothing on other single-user cases.\n\nAlso, that page on the installation guide is outdated; someone should go through and fix it up, and perhaps add something on using virtual machines, which these days seems to be the way to go; I have a start at that at http://wiki.sagemath.org/DanDrake/JustEnoughSageServer.",
+    "body": "Attachment [trac4332.patch](tarball://root/attachments/some-uuid/ticket4332/trac4332.patch) by ddrake created at 2008-10-24 02:50:21\n\nPatch attached. A lot of it is reformatting and typos, but I also added a reference to a new page on the wiki: http://wiki.sagemath.org/StartingTheNotebook. The installation guide only has a page on running a publically-accessible notebook server (http://sagemath.org/doc/inst/node10.html) and nothing on other single-user cases.\n\nAlso, that page on the installation guide is outdated; someone should go through and fix it up, and perhaps add something on using virtual machines, which these days seems to be the way to go; I have a start at that at http://wiki.sagemath.org/DanDrake/JustEnoughSageServer.",
     "created_at": "2008-10-24T02:50:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4332",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_031767.json:
 }
 ```
 
-Attachment
+Attachment [trac4332.patch](tarball://root/attachments/some-uuid/ticket4332/trac4332.patch) by ddrake created at 2008-10-24 02:50:21
 
 Patch attached. A lot of it is reformatting and typos, but I also added a reference to a new page on the wiki: http://wiki.sagemath.org/StartingTheNotebook. The installation guide only has a page on running a publically-accessible notebook server (http://sagemath.org/doc/inst/node10.html) and nothing on other single-user cases.
 

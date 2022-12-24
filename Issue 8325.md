@@ -77,7 +77,7 @@ Changing status from new to needs_review.
 archive/issue_comments_073892.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch should work for the cases in the description.",
+    "body": "Attachment [trac_8325-cython_argspec.patch](tarball://root/attachments/some-uuid/ticket8325/trac_8325-cython_argspec.patch) by mpatel created at 2010-02-22 05:58:34\n\nThe patch should work for the cases in the description.",
     "created_at": "2010-02-22T05:58:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8325",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_073892.json:
 }
 ```
 
-Attachment
+Attachment [trac_8325-cython_argspec.patch](tarball://root/attachments/some-uuid/ticket8325/trac_8325-cython_argspec.patch) by mpatel created at 2010-02-22 05:58:34
 
 The patch should work for the cases in the description.
 
@@ -191,7 +191,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_073898.json:
 ```json
 {
-    "body": "Attachment\n\nAST version.  sage repo.",
+    "body": "Attachment [trac_8325-cython_argspec.2.patch](tarball://root/attachments/some-uuid/ticket8325/trac_8325-cython_argspec.2.patch) by mpatel created at 2010-02-25 07:36:11\n\nAST version.  sage repo.",
     "created_at": "2010-02-25T07:36:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8325",
     "type": "issue_comment",
@@ -200,7 +200,7 @@ archive/issue_comments_073898.json:
 }
 ```
 
-Attachment
+Attachment [trac_8325-cython_argspec.2.patch](tarball://root/attachments/some-uuid/ticket8325/trac_8325-cython_argspec.2.patch) by mpatel created at 2010-02-25 07:36:11
 
 AST version.  sage repo.
 
@@ -282,7 +282,7 @@ Should we fix the first problem and then go ahead with this?  I also notice that
 archive/issue_comments_073902.json:
 ```json
 {
-    "body": "Attachment\n\nAnother clause.  More doctests.  Apply only this patch.   sage repo.",
+    "body": "Attachment [trac_8325-cython_argspec.3.patch](tarball://root/attachments/some-uuid/ticket8325/trac_8325-cython_argspec.3.patch) by mpatel created at 2010-03-04 08:45:05\n\nAnother clause.  More doctests.  Apply only this patch.   sage repo.",
     "created_at": "2010-03-04T08:45:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8325",
     "type": "issue_comment",
@@ -291,7 +291,7 @@ archive/issue_comments_073902.json:
 }
 ```
 
-Attachment
+Attachment [trac_8325-cython_argspec.3.patch](tarball://root/attachments/some-uuid/ticket8325/trac_8325-cython_argspec.3.patch) by mpatel created at 2010-03-04 08:45:05
 
 Another clause.  More doctests.  Apply only this patch.   sage repo.
 
@@ -403,7 +403,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_073908.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached a version for SageNB.",
+    "body": "Attachment [sagenb_8325-cython_argspec.patch](tarball://root/attachments/some-uuid/ticket8325/sagenb_8325-cython_argspec.patch) by mpatel created at 2010-03-04 23:46:46\n\nI've attached a version for SageNB.",
     "created_at": "2010-03-04T23:46:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8325",
     "type": "issue_comment",
@@ -412,7 +412,7 @@ archive/issue_comments_073908.json:
 }
 ```
 
-Attachment
+Attachment [sagenb_8325-cython_argspec.patch](tarball://root/attachments/some-uuid/ticket8325/sagenb_8325-cython_argspec.patch) by mpatel created at 2010-03-04 23:46:46
 
 I've attached a version for SageNB.
 
@@ -495,7 +495,7 @@ Fix doctest imports.  Replaces previous sagenb patch.
 archive/issue_comments_073913.json:
 ```json
 {
-    "body": "Attachment\n\nOops.  Sorry about that.  V2 is up.",
+    "body": "Attachment [sagenb_8325-cython_argspec.2.patch](tarball://root/attachments/some-uuid/ticket8325/sagenb_8325-cython_argspec.2.patch) by mpatel created at 2010-03-05 01:26:41\n\nOops.  Sorry about that.  V2 is up.",
     "created_at": "2010-03-05T01:26:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8325",
     "type": "issue_comment",
@@ -504,7 +504,7 @@ archive/issue_comments_073913.json:
 }
 ```
 
-Attachment
+Attachment [sagenb_8325-cython_argspec.2.patch](tarball://root/attachments/some-uuid/ticket8325/sagenb_8325-cython_argspec.2.patch) by mpatel created at 2010-03-05 01:26:41
 
 Oops.  Sorry about that.  V2 is up.
 

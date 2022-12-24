@@ -539,7 +539,7 @@ rebased to 4.6.2.alpha4
 archive/issue_comments_011511.json:
 ```json
 {
-    "body": "Attachment\n\ndiff of this version of the patch and the last version",
+    "body": "Attachment [trac_1819.patch.diff](tarball://root/attachments/some-uuid/ticket1819/trac_1819.patch.diff) by malb created at 2011-02-28 20:06:23\n\ndiff of this version of the patch and the last version",
     "created_at": "2011-02-28T20:06:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1819",
     "type": "issue_comment",
@@ -548,7 +548,7 @@ archive/issue_comments_011511.json:
 }
 ```
 
-Attachment
+Attachment [trac_1819.patch.diff](tarball://root/attachments/some-uuid/ticket1819/trac_1819.patch.diff) by malb created at 2011-02-28 20:06:23
 
 diff of this version of the patch and the last version
 

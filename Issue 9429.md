@@ -52,7 +52,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9429
 archive/issue_comments_090005.json:
 ```json
 {
-    "body": "Attachment\n\nmissed one occurrence",
+    "body": "Attachment [trac_9429_fix_derived_classes.patch](tarball://root/attachments/some-uuid/ticket9429/trac_9429_fix_derived_classes.patch) by vbraun created at 2010-07-05 11:03:44\n\nmissed one occurrence",
     "created_at": "2010-07-05T11:03:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9429",
     "type": "issue_comment",
@@ -61,7 +61,7 @@ archive/issue_comments_090005.json:
 }
 ```
 
-Attachment
+Attachment [trac_9429_fix_derived_classes.patch](tarball://root/attachments/some-uuid/ticket9429/trac_9429_fix_derived_classes.patch) by vbraun created at 2010-07-05 11:03:44
 
 missed one occurrence
 
@@ -193,7 +193,7 @@ True
 archive/issue_comments_090011.json:
 ```json
 {
-    "body": "Attachment\n\nVolker Braun's patch (with two print statements)",
+    "body": "Attachment [first_attempt.patch](tarball://root/attachments/some-uuid/ticket9429/first_attempt.patch) by novoselt created at 2010-07-06 16:04:09\n\nVolker Braun's patch (with two print statements)",
     "created_at": "2010-07-06T16:04:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9429",
     "type": "issue_comment",
@@ -202,7 +202,7 @@ archive/issue_comments_090011.json:
 }
 ```
 
-Attachment
+Attachment [first_attempt.patch](tarball://root/attachments/some-uuid/ticket9429/first_attempt.patch) by novoselt created at 2010-07-06 16:04:09
 
 Volker Braun's patch (with two print statements)
 
@@ -256,7 +256,7 @@ archive/issue_comments_090013.json:
 archive/issue_comments_090014.json:
 ```json
 {
-    "body": "Attachment\n\nI agree that your self.parent() version, of course. If we can't improve `QuotientRing` then we should go with the current version. I asked on sage-devel for help, maybe somebody can tell us more about the issue:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/efe93107ce004d3b",
+    "body": "Attachment [trac_9429_fix_derived_classes.2.patch](tarball://root/attachments/some-uuid/ticket9429/trac_9429_fix_derived_classes.2.patch) by vbraun created at 2010-07-07 18:36:06\n\nI agree that your self.parent() version, of course. If we can't improve `QuotientRing` then we should go with the current version. I asked on sage-devel for help, maybe somebody can tell us more about the issue:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/efe93107ce004d3b",
     "created_at": "2010-07-07T18:36:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9429",
     "type": "issue_comment",
@@ -265,7 +265,7 @@ archive/issue_comments_090014.json:
 }
 ```
 
-Attachment
+Attachment [trac_9429_fix_derived_classes.2.patch](tarball://root/attachments/some-uuid/ticket9429/trac_9429_fix_derived_classes.2.patch) by vbraun created at 2010-07-07 18:36:06
 
 I agree that your self.parent() version, of course. If we can't improve `QuotientRing` then we should go with the current version. I asked on sage-devel for help, maybe somebody can tell us more about the issue:
 

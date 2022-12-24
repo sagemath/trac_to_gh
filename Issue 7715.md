@@ -116,7 +116,7 @@ The attached patch might indeed depend on #3684.
 archive/issue_comments_066262.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [vector_mod2_dense.patch](tarball://root/attachments/some-uuid/ticket7715/vector_mod2_dense.patch) by malb created at 2009-12-16 17:38:51",
     "created_at": "2009-12-16T17:38:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7715",
     "type": "issue_comment",
@@ -125,7 +125,7 @@ archive/issue_comments_066262.json:
 }
 ```
 
-Attachment
+Attachment [vector_mod2_dense.patch](tarball://root/attachments/some-uuid/ticket7715/vector_mod2_dense.patch) by malb created at 2009-12-16 17:38:51
 
 
 

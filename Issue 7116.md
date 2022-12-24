@@ -137,7 +137,7 @@ Changing assignee from davidloeffler to cremona.
 archive/issue_comments_058978.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch tests for Q=0 in the functions `_line_` and `_miller_` and raise an error if so.  Doctests added.",
+    "body": "Attachment [trac_7116-miller_functions.patch](tarball://root/attachments/some-uuid/ticket7116/trac_7116-miller_functions.patch) by cremona created at 2009-10-04 20:25:51\n\nThe patch tests for Q=0 in the functions `_line_` and `_miller_` and raise an error if so.  Doctests added.",
     "created_at": "2009-10-04T20:25:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7116",
     "type": "issue_comment",
@@ -146,7 +146,7 @@ archive/issue_comments_058978.json:
 }
 ```
 
-Attachment
+Attachment [trac_7116-miller_functions.patch](tarball://root/attachments/some-uuid/ticket7116/trac_7116-miller_functions.patch) by cremona created at 2009-10-04 20:25:51
 
 The patch tests for Q=0 in the functions `_line_` and `_miller_` and raise an error if so.  Doctests added.
 

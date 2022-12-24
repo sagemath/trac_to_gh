@@ -203,7 +203,7 @@ The approach I'm taking is monkey-patching `inspect.getabsfile`, replacing it by
 archive/issue_comments_033157.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4489_ipython_getabsfile.patch](tarball://root/attachments/some-uuid/ticket4489/4489_ipython_getabsfile.patch) by wjp created at 2011-01-10 02:29:06",
     "created_at": "2011-01-10T02:29:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4489",
     "type": "issue_comment",
@@ -212,7 +212,7 @@ archive/issue_comments_033157.json:
 }
 ```
 
-Attachment
+Attachment [4489_ipython_getabsfile.patch](tarball://root/attachments/some-uuid/ticket4489/4489_ipython_getabsfile.patch) by wjp created at 2011-01-10 02:29:06
 
 
 
@@ -239,7 +239,7 @@ Changing status from new to needs_review.
 archive/issue_comments_033159.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sagenb_4489_ipython_getabsfile.patch](tarball://root/attachments/some-uuid/ticket4489/sagenb_4489_ipython_getabsfile.patch) by wjp created at 2011-01-10 02:29:13",
     "created_at": "2011-01-10T02:29:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4489",
     "type": "issue_comment",
@@ -248,7 +248,7 @@ archive/issue_comments_033159.json:
 }
 ```
 
-Attachment
+Attachment [sagenb_4489_ipython_getabsfile.patch](tarball://root/attachments/some-uuid/ticket4489/sagenb_4489_ipython_getabsfile.patch) by wjp created at 2011-01-10 02:29:13
 
 
 

@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5522
 archive/issue_comments_042946.json:
 ```json
 {
-    "body": "Attachment\n\nHi,\n\nright after\n\n```\nif handle == NULL\n```\n\none could do\n\n```\nprint \"cannot load libSINGULAR library\"\n```\n\nand only then try to call dlerror() or raise ImportError or whatsoever. If then the SegFault (sometimes) occurs, the user still knows why. With this change, I would consider this such an enhancement over the current situation, that I would vote to have it in.",
+    "body": "Attachment [sage-libsingular-nocrash.patch](tarball://root/attachments/some-uuid/ticket5522/sage-libsingular-nocrash.patch) by GeorgSWeber created at 2009-03-25 23:36:49\n\nHi,\n\nright after\n\n```\nif handle == NULL\n```\n\none could do\n\n```\nprint \"cannot load libSINGULAR library\"\n```\n\nand only then try to call dlerror() or raise ImportError or whatsoever. If then the SegFault (sometimes) occurs, the user still knows why. With this change, I would consider this such an enhancement over the current situation, that I would vote to have it in.",
     "created_at": "2009-03-25T23:36:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5522",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_042946.json:
 }
 ```
 
-Attachment
+Attachment [sage-libsingular-nocrash.patch](tarball://root/attachments/some-uuid/ticket5522/sage-libsingular-nocrash.patch) by GeorgSWeber created at 2009-03-25 23:36:49
 
 Hi,
 

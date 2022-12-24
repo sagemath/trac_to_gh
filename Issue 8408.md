@@ -76,7 +76,7 @@ Changing status from new to needs_review.
 archive/issue_comments_075335.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sqlite-update-allows-all-Solaris-doctests-to-pass.patch](tarball://root/attachments/some-uuid/ticket8408/sqlite-update-allows-all-Solaris-doctests-to-pass.patch) by drkirkby created at 2010-03-01 14:25:00",
     "created_at": "2010-03-01T14:25:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8408",
     "type": "issue_comment",
@@ -85,7 +85,7 @@ archive/issue_comments_075335.json:
 }
 ```
 
-Attachment
+Attachment [sqlite-update-allows-all-Solaris-doctests-to-pass.patch](tarball://root/attachments/some-uuid/ticket8408/sqlite-update-allows-all-Solaris-doctests-to-pass.patch) by drkirkby created at 2010-03-01 14:25:00
 
 
 

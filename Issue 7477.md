@@ -59,7 +59,7 @@ I don't have time right now to add this to Sage properly, due to teaching obliga
 archive/issue_comments_063022.json:
 ```json
 {
-    "body": "Attachment\n\nI attended a short course on matroids at the US national math meetings in January 2011, and spent the two days hacking up as much about matroids as I could.  I knew David Joyner had done something similar, but I purposely did not look at his work first.  So you will see some common ideas and some differences.\n\nThis is definitely not pretty, nor efficient.  The goal was to implement as much functionality as quickly as possible, so there are obvious places where things should be done differently.  But it is clear that much of the hard work can be shipped off to Sage routines for graph theory, linear algebra and combinatorics.\n\nImplements vector matroid, cycle matroid, bicircular matroid, transversal matroid, uniform matroid, and duals of matroids.",
+    "body": "Attachment [matroids-beezer-20110105.sage](tarball://root/attachments/some-uuid/ticket7477/matroids-beezer-20110105.sage) by rbeezer created at 2011-03-02 04:57:07\n\nI attended a short course on matroids at the US national math meetings in January 2011, and spent the two days hacking up as much about matroids as I could.  I knew David Joyner had done something similar, but I purposely did not look at his work first.  So you will see some common ideas and some differences.\n\nThis is definitely not pretty, nor efficient.  The goal was to implement as much functionality as quickly as possible, so there are obvious places where things should be done differently.  But it is clear that much of the hard work can be shipped off to Sage routines for graph theory, linear algebra and combinatorics.\n\nImplements vector matroid, cycle matroid, bicircular matroid, transversal matroid, uniform matroid, and duals of matroids.",
     "created_at": "2011-03-02T04:57:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7477",
     "type": "issue_comment",
@@ -68,7 +68,7 @@ archive/issue_comments_063022.json:
 }
 ```
 
-Attachment
+Attachment [matroids-beezer-20110105.sage](tarball://root/attachments/some-uuid/ticket7477/matroids-beezer-20110105.sage) by rbeezer created at 2011-03-02 04:57:07
 
 I attended a short course on matroids at the US national math meetings in January 2011, and spent the two days hacking up as much about matroids as I could.  I knew David Joyner had done something similar, but I purposely did not look at his work first.  So you will see some common ideas and some differences.
 
@@ -1334,7 +1334,7 @@ However, I think a better solution is to auto-generated this list. Volker, you k
 archive/issue_comments_063065.json:
 ```json
 {
-    "body": "Attachment\n\n(If you want, we can move my patch to a different ticket and have it be a prerequisite for this one.)",
+    "body": "Attachment [trac_7477-docbuild.patch](tarball://root/attachments/some-uuid/ticket7477/trac_7477-docbuild.patch) by jhpalmieri created at 2013-05-29 21:02:02\n\n(If you want, we can move my patch to a different ticket and have it be a prerequisite for this one.)",
     "created_at": "2013-05-29T21:02:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7477",
     "type": "issue_comment",
@@ -1343,7 +1343,7 @@ archive/issue_comments_063065.json:
 }
 ```
 
-Attachment
+Attachment [trac_7477-docbuild.patch](tarball://root/attachments/some-uuid/ticket7477/trac_7477-docbuild.patch) by jhpalmieri created at 2013-05-29 21:02:02
 
 (If you want, we can move my patch to a different ticket and have it be a prerequisite for this one.)
 
@@ -1822,7 +1822,7 @@ Ok, the bitset code is now separated into a patch in #14668 (where I also did a 
 archive/issue_comments_063082.json:
 ```json
 {
-    "body": "Attachment\n\nMatroid setup, autoload, documentation",
+    "body": "Attachment [trac_7477_setup_doc_load-oldish.patch](tarball://root/attachments/some-uuid/ticket7477/trac_7477_setup_doc_load-oldish.patch) by Stefan created at 2013-06-15 00:48:39\n\nMatroid setup, autoload, documentation",
     "created_at": "2013-06-15T00:48:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7477",
     "type": "issue_comment",
@@ -1831,7 +1831,7 @@ archive/issue_comments_063082.json:
 }
 ```
 
-Attachment
+Attachment [trac_7477_setup_doc_load-oldish.patch](tarball://root/attachments/some-uuid/ticket7477/trac_7477_setup_doc_load-oldish.patch) by Stefan created at 2013-06-15 00:48:39
 
 Matroid setup, autoload, documentation
 
@@ -2354,7 +2354,7 @@ Matroid code
 archive/issue_comments_063108.json:
 ```json
 {
-    "body": "Attachment\n\nReplaced some variable names. All doctests pass.",
+    "body": "Attachment [trac_7477_code.patch](tarball://root/attachments/some-uuid/ticket7477/trac_7477_code.patch) by Stefan created at 2013-06-21 14:14:39\n\nReplaced some variable names. All doctests pass.",
     "created_at": "2013-06-21T14:14:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7477",
     "type": "issue_comment",
@@ -2363,7 +2363,7 @@ archive/issue_comments_063108.json:
 }
 ```
 
-Attachment
+Attachment [trac_7477_code.patch](tarball://root/attachments/some-uuid/ticket7477/trac_7477_code.patch) by Stefan created at 2013-06-21 14:14:39
 
 Replaced some variable names. All doctests pass.
 
@@ -2564,7 +2564,7 @@ Please rebase to #8386.
 archive/issue_comments_063118.json:
 ```json
 {
-    "body": "Attachment\n\nMatroid setup, autoload, documentation",
+    "body": "Attachment [trac_7477_setup_doc_load.patch](tarball://root/attachments/some-uuid/ticket7477/trac_7477_setup_doc_load.patch) by Stefan created at 2013-07-30 16:07:25\n\nMatroid setup, autoload, documentation",
     "created_at": "2013-07-30T16:07:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7477",
     "type": "issue_comment",
@@ -2573,7 +2573,7 @@ archive/issue_comments_063118.json:
 }
 ```
 
-Attachment
+Attachment [trac_7477_setup_doc_load.patch](tarball://root/attachments/some-uuid/ticket7477/trac_7477_setup_doc_load.patch) by Stefan created at 2013-07-30 16:07:25
 
 Matroid setup, autoload, documentation
 

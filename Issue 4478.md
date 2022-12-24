@@ -135,7 +135,7 @@ Michael
 archive/issue_comments_033081.json:
 ```json
 {
-    "body": "Attachment\n\npatch for local/bin repository",
+    "body": "Attachment [trac-4478-bin.patch](tarball://root/attachments/some-uuid/ticket4478/trac-4478-bin.patch) by craigcitro created at 2009-05-27 04:33:42\n\npatch for local/bin repository",
     "created_at": "2009-05-27T04:33:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4478",
     "type": "issue_comment",
@@ -144,7 +144,7 @@ archive/issue_comments_033081.json:
 }
 ```
 
-Attachment
+Attachment [trac-4478-bin.patch](tarball://root/attachments/some-uuid/ticket4478/trac-4478-bin.patch) by craigcitro created at 2009-05-27 04:33:42
 
 patch for local/bin repository
 
@@ -213,7 +213,7 @@ Changing assignee from mabshoff to craigcitro.
 archive/issue_comments_033085.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-4478.patch](tarball://root/attachments/some-uuid/ticket4478/trac-4478.patch) by mhansen created at 2009-05-28 20:06:57",
     "created_at": "2009-05-28T20:06:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4478",
     "type": "issue_comment",
@@ -222,7 +222,7 @@ archive/issue_comments_033085.json:
 }
 ```
 
-Attachment
+Attachment [trac-4478.patch](tarball://root/attachments/some-uuid/ticket4478/trac-4478.patch) by mhansen created at 2009-05-28 20:06:57
 
 
 

@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3812
 archive/issue_comments_027094.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3812-ncalexan-number-field-ideal-apply-morphism.patch](tarball://root/attachments/some-uuid/ticket3812/3812-ncalexan-number-field-ideal-apply-morphism.patch) by ncalexan created at 2008-08-12 05:31:04",
     "created_at": "2008-08-12T05:31:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3812",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_027094.json:
 }
 ```
 
-Attachment
+Attachment [3812-ncalexan-number-field-ideal-apply-morphism.patch](tarball://root/attachments/some-uuid/ticket3812/3812-ncalexan-number-field-ideal-apply-morphism.patch) by ncalexan created at 2008-08-12 05:31:04
 
 
 
@@ -97,7 +97,7 @@ return phi(R)
 archive/issue_comments_027096.json:
 ```json
 {
-    "body": "Attachment\n\n`3812-ncalexan-number-field-ideal-apply-morphism-2.patch` replaces earlier patch and addresses referee comment.",
+    "body": "Attachment [3812-ncalexan-number-field-ideal-apply-morphism-2.patch](tarball://root/attachments/some-uuid/ticket3812/3812-ncalexan-number-field-ideal-apply-morphism-2.patch) by ncalexan created at 2008-08-13 22:03:26\n\n`3812-ncalexan-number-field-ideal-apply-morphism-2.patch` replaces earlier patch and addresses referee comment.",
     "created_at": "2008-08-13T22:03:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3812",
     "type": "issue_comment",
@@ -106,7 +106,7 @@ archive/issue_comments_027096.json:
 }
 ```
 
-Attachment
+Attachment [3812-ncalexan-number-field-ideal-apply-morphism-2.patch](tarball://root/attachments/some-uuid/ticket3812/3812-ncalexan-number-field-ideal-apply-morphism-2.patch) by ncalexan created at 2008-08-13 22:03:26
 
 `3812-ncalexan-number-field-ideal-apply-morphism-2.patch` replaces earlier patch and addresses referee comment.
 
@@ -177,7 +177,7 @@ Michael
 archive/issue_comments_027100.json:
 ```json
 {
-    "body": "Attachment\n\nApply after previous patch",
+    "body": "Attachment [3812_doctest.patch](tarball://root/attachments/some-uuid/ticket3812/3812_doctest.patch) by cremona created at 2009-04-06 09:35:00\n\nApply after previous patch",
     "created_at": "2009-04-06T09:35:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3812",
     "type": "issue_comment",
@@ -186,7 +186,7 @@ archive/issue_comments_027100.json:
 }
 ```
 
-Attachment
+Attachment [3812_doctest.patch](tarball://root/attachments/some-uuid/ticket3812/3812_doctest.patch) by cremona created at 2009-04-06 09:35:00
 
 Apply after previous patch
 

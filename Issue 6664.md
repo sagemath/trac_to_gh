@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6664
 archive/issue_comments_054697.json:
 ```json
 {
-    "body": "Attachment\n\n\"Depends\" on #6586.",
+    "body": "Attachment [trac_6664-skip_nested.patch](tarball://root/attachments/some-uuid/ticket6664/trac_6664-skip_nested.patch) by mpatel created at 2009-08-02 10:37:54\n\n\"Depends\" on #6586.",
     "created_at": "2009-08-02T10:37:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6664",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_054697.json:
 }
 ```
 
-Attachment
+Attachment [trac_6664-skip_nested.patch](tarball://root/attachments/some-uuid/ticket6664/trac_6664-skip_nested.patch) by mpatel created at 2009-08-02 10:37:54
 
 "Depends" on #6586.
 

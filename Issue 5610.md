@@ -396,7 +396,7 @@ Screenshot of garbled list_function() documentation (yellow highlight on "indire
 archive/issue_comments_043805.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:11 rbeezer]:\n>The new methods for setting matrix and vector delimiters are a very welcome addition, and the options for \"bolding\" rings provide a good example for future options like this. One should note that work still needs to be done to make this work for all rings, this patch appears to only demonstrate use for ZZ and GF (though I could have missed some). \n\nThe second patch also changes QQ, RR, and CC.  It leaves `\\mathbb{P`} and `\\mathbb{A`} unchanged.  (The first patch includes only the core of the customization code, and the relevant files happened not to use QQ, RR, or CC.)\n\n> The use of an instance of the Latex class, named \"latex\" had me confused for a while, since now `latex.__call__` replaces the functionality of the old `latex()`.  Some commentary highlighting the `latex` instance in the source (at some point - either now, or later) might save others the same confusion.\n\nDoes this affect end-users, or just developers?  I mean, does `latex(blah)` behave the same as it used to?  I hope so -- that was my intention.  You're right, though, that the syntax from the development end is different, but that seemed like the nicest way to do the customization: as methods (which could be tab-completed) attached to latex.  Do you have suggestions about what sorts of comments to add?\n\n> `sage -docbuild pdf reference` seemed to choke on the doctest for the `list_function` method in `misc/latex.py`.  \n\nI think this is easy to fix: put an \"r\" in front of the triple quotes at the beginning of the docstring.  It was there originally, and then I deleted it (I don't know why) in the new version.\n\nI'll produce a new patch soon with the \"r\", and with part 2 rebased against 3.4.1.rc4.",
+    "body": "Attachment [list-function-pdf.png](tarball://root/attachments/some-uuid/ticket5610/list-function-pdf.png) by jhpalmieri created at 2009-04-20 21:18:30\n\nReplying to [comment:11 rbeezer]:\n>The new methods for setting matrix and vector delimiters are a very welcome addition, and the options for \"bolding\" rings provide a good example for future options like this. One should note that work still needs to be done to make this work for all rings, this patch appears to only demonstrate use for ZZ and GF (though I could have missed some). \n\nThe second patch also changes QQ, RR, and CC.  It leaves `\\mathbb{P`} and `\\mathbb{A`} unchanged.  (The first patch includes only the core of the customization code, and the relevant files happened not to use QQ, RR, or CC.)\n\n> The use of an instance of the Latex class, named \"latex\" had me confused for a while, since now `latex.__call__` replaces the functionality of the old `latex()`.  Some commentary highlighting the `latex` instance in the source (at some point - either now, or later) might save others the same confusion.\n\nDoes this affect end-users, or just developers?  I mean, does `latex(blah)` behave the same as it used to?  I hope so -- that was my intention.  You're right, though, that the syntax from the development end is different, but that seemed like the nicest way to do the customization: as methods (which could be tab-completed) attached to latex.  Do you have suggestions about what sorts of comments to add?\n\n> `sage -docbuild pdf reference` seemed to choke on the doctest for the `list_function` method in `misc/latex.py`.  \n\nI think this is easy to fix: put an \"r\" in front of the triple quotes at the beginning of the docstring.  It was there originally, and then I deleted it (I don't know why) in the new version.\n\nI'll produce a new patch soon with the \"r\", and with part 2 rebased against 3.4.1.rc4.",
     "created_at": "2009-04-20T21:18:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5610",
     "type": "issue_comment",
@@ -405,7 +405,7 @@ archive/issue_comments_043805.json:
 }
 ```
 
-Attachment
+Attachment [list-function-pdf.png](tarball://root/attachments/some-uuid/ticket5610/list-function-pdf.png) by jhpalmieri created at 2009-04-20 21:18:30
 
 Replying to [comment:11 rbeezer]:
 >The new methods for setting matrix and vector delimiters are a very welcome addition, and the options for "bolding" rings provide a good example for future options like this. One should note that work still needs to be done to make this work for all rings, this patch appears to only demonstrate use for ZZ and GF (though I could have missed some). 
@@ -483,7 +483,7 @@ in latex.py.
 archive/issue_comments_043808.json:
 ```json
 {
-    "body": "Attachment\n\napply this one first",
+    "body": "Attachment [latex-customization.patch](tarball://root/attachments/some-uuid/ticket5610/latex-customization.patch) by jhpalmieri created at 2009-04-21 05:42:13\n\napply this one first",
     "created_at": "2009-04-21T05:42:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5610",
     "type": "issue_comment",
@@ -492,7 +492,7 @@ archive/issue_comments_043808.json:
 }
 ```
 
-Attachment
+Attachment [latex-customization.patch](tarball://root/attachments/some-uuid/ticket5610/latex-customization.patch) by jhpalmieri created at 2009-04-21 05:42:13
 
 apply this one first
 
@@ -503,7 +503,7 @@ apply this one first
 archive/issue_comments_043809.json:
 ```json
 {
-    "body": "Attachment\n\napply this one second (this is the same as latex-customization-part2.2.patch)",
+    "body": "Attachment [latex-customization-part2.patch](tarball://root/attachments/some-uuid/ticket5610/latex-customization-part2.patch) by jhpalmieri created at 2009-04-21 05:43:06\n\napply this one second (this is the same as latex-customization-part2.2.patch)",
     "created_at": "2009-04-21T05:43:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5610",
     "type": "issue_comment",
@@ -512,7 +512,7 @@ archive/issue_comments_043809.json:
 }
 ```
 
-Attachment
+Attachment [latex-customization-part2.patch](tarball://root/attachments/some-uuid/ticket5610/latex-customization-part2.patch) by jhpalmieri created at 2009-04-21 05:43:06
 
 apply this one second (this is the same as latex-customization-part2.2.patch)
 

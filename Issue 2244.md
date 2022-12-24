@@ -70,7 +70,7 @@ Ignore the comment above about also fixing endpoints -- #2236 also did so.
 archive/issue_comments_014871.json:
 ```json
 {
-    "body": "Attachment\n\napply after William's patch",
+    "body": "Attachment [wiggle-interior.patch](tarball://root/attachments/some-uuid/ticket2244/wiggle-interior.patch) by jason created at 2008-02-21 21:20:51\n\napply after William's patch",
     "created_at": "2008-02-21T21:20:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2244",
     "type": "issue_comment",
@@ -79,7 +79,7 @@ archive/issue_comments_014871.json:
 }
 ```
 
-Attachment
+Attachment [wiggle-interior.patch](tarball://root/attachments/some-uuid/ticket2244/wiggle-interior.patch) by jason created at 2008-02-21 21:20:51
 
 apply after William's patch
 
@@ -150,7 +150,7 @@ this should apply cleanly (it replaces the patch that was here before)
 archive/issue_comments_014875.json:
 ```json
 {
-    "body": "Attachment\n\nApply sage-2244-nowiggle.patch (which has now been rebased) followed by wiggle-interior.patch which will apply correctly with some \"fuzz\". \n\n -- William",
+    "body": "Attachment [sage-2244-nowiggle.patch](tarball://root/attachments/some-uuid/ticket2244/sage-2244-nowiggle.patch) by was created at 2008-02-24 04:58:06\n\nApply sage-2244-nowiggle.patch (which has now been rebased) followed by wiggle-interior.patch which will apply correctly with some \"fuzz\". \n\n -- William",
     "created_at": "2008-02-24T04:58:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2244",
     "type": "issue_comment",
@@ -159,7 +159,7 @@ archive/issue_comments_014875.json:
 }
 ```
 
-Attachment
+Attachment [sage-2244-nowiggle.patch](tarball://root/attachments/some-uuid/ticket2244/sage-2244-nowiggle.patch) by was created at 2008-02-24 04:58:06
 
 Apply sage-2244-nowiggle.patch (which has now been rebased) followed by wiggle-interior.patch which will apply correctly with some "fuzz". 
 
@@ -270,7 +270,7 @@ and the corresponding bit in plot.py in 2.10.3.rc1 is
 archive/issue_comments_014878.json:
 ```json
 {
-    "body": "Attachment\n\napply instead of the two above",
+    "body": "Attachment [2244_nowiggle_new.patch](tarball://root/attachments/some-uuid/ticket2244/2244_nowiggle_new.patch) by AlexGhitza created at 2008-03-15 18:11:16\n\napply instead of the two above",
     "created_at": "2008-03-15T18:11:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2244",
     "type": "issue_comment",
@@ -279,7 +279,7 @@ archive/issue_comments_014878.json:
 }
 ```
 
-Attachment
+Attachment [2244_nowiggle_new.patch](tarball://root/attachments/some-uuid/ticket2244/2244_nowiggle_new.patch) by AlexGhitza created at 2008-03-15 18:11:16
 
 apply instead of the two above
 

@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3965
 archive/issue_comments_028488.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review.",
+    "body": "Attachment [pbori_magma.patch](tarball://root/attachments/some-uuid/ticket3965/pbori_magma.patch) by burcin created at 2008-08-27 16:13:53\n\nPositive review.",
     "created_at": "2008-08-27T16:13:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3965",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_028488.json:
 }
 ```
 
-Attachment
+Attachment [pbori_magma.patch](tarball://root/attachments/some-uuid/ticket3965/pbori_magma.patch) by burcin created at 2008-08-27 16:13:53
 
 Positive review.
 

@@ -74,7 +74,7 @@ Changing assignee from mhampton to novoselt.
 archive/issue_comments_066135.json:
 ```json
 {
-    "body": "Attachment\n\nBased on 4.3.rc0",
+    "body": "Attachment [trac_7706_change_format_of_reflexive_polytope_databases.patch](tarball://root/attachments/some-uuid/ticket7706/trac_7706_change_format_of_reflexive_polytope_databases.patch) by novoselt created at 2009-12-17 06:38:57\n\nBased on 4.3.rc0",
     "created_at": "2009-12-17T06:38:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7706",
     "type": "issue_comment",
@@ -83,7 +83,7 @@ archive/issue_comments_066135.json:
 }
 ```
 
-Attachment
+Attachment [trac_7706_change_format_of_reflexive_polytope_databases.patch](tarball://root/attachments/some-uuid/ticket7706/trac_7706_change_format_of_reflexive_polytope_databases.patch) by novoselt created at 2009-12-17 06:38:57
 
 Based on 4.3.rc0
 
@@ -112,7 +112,7 @@ Must be placed in DB_HOME/reflexive_polytopes
 archive/issue_comments_066137.json:
 ```json
 {
-    "body": "Attachment\n\nMust be placed in DB_HOME/reflexive_polytopes",
+    "body": "Attachment [reflexive_polytopes_3d](tarball://root/attachments/some-uuid/ticket7706/reflexive_polytopes_3d) by novoselt created at 2009-12-17 06:42:26\n\nMust be placed in DB_HOME/reflexive_polytopes",
     "created_at": "2009-12-17T06:42:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7706",
     "type": "issue_comment",
@@ -121,7 +121,7 @@ archive/issue_comments_066137.json:
 }
 ```
 
-Attachment
+Attachment [reflexive_polytopes_3d](tarball://root/attachments/some-uuid/ticket7706/reflexive_polytopes_3d) by novoselt created at 2009-12-17 06:42:26
 
 Must be placed in DB_HOME/reflexive_polytopes
 
@@ -293,7 +293,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_066145.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [polytopes_db-20100210.spkg](tarball://root/attachments/some-uuid/ticket7706/polytopes_db-20100210.spkg) by novoselt created at 2010-02-11 04:19:45",
     "created_at": "2010-02-11T04:19:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7706",
     "type": "issue_comment",
@@ -302,7 +302,7 @@ archive/issue_comments_066145.json:
 }
 ```
 
-Attachment
+Attachment [polytopes_db-20100210.spkg](tarball://root/attachments/some-uuid/ticket7706/polytopes_db-20100210.spkg) by novoselt created at 2010-02-11 04:19:45
 
 
 

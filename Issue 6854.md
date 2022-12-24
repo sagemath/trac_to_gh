@@ -400,7 +400,7 @@ Introspection and tab completion(plus doc tests) for elements of InfinitePolynom
 archive/issue_comments_056518.json:
 ```json
 {
-    "body": "Attachment\n\nHi!\n\nYet another patch (still under the same name). This time, I added some doc tests. \n\n`dir()` provides a nice indirect doc test for `__getattr__` (after all, this is where the introspection eventually got implemented). But I still don't know how to properly test tab completion. Hence, I call the relevant method directly, although it is underscore. \n\nCheers,\nSimon",
+    "body": "Attachment [6854_tab_completion.patch](tarball://root/attachments/some-uuid/ticket6854/6854_tab_completion.patch) by SimonKing created at 2009-11-30 22:10:52\n\nHi!\n\nYet another patch (still under the same name). This time, I added some doc tests. \n\n`dir()` provides a nice indirect doc test for `__getattr__` (after all, this is where the introspection eventually got implemented). But I still don't know how to properly test tab completion. Hence, I call the relevant method directly, although it is underscore. \n\nCheers,\nSimon",
     "created_at": "2009-11-30T22:10:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6854",
     "type": "issue_comment",
@@ -409,7 +409,7 @@ archive/issue_comments_056518.json:
 }
 ```
 
-Attachment
+Attachment [6854_tab_completion.patch](tarball://root/attachments/some-uuid/ticket6854/6854_tab_completion.patch) by SimonKing created at 2009-11-30 22:10:52
 
 Hi!
 
@@ -445,7 +445,7 @@ Adding a better doc test for tab completion
 archive/issue_comments_056520.json:
 ```json
 {
-    "body": "Attachment\n\nThe second patch (to be applied after the first) provides a nice indirect doc test for tab completion, according to William's advice at [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/1bf6652891c4e45).",
+    "body": "Attachment [6854_tab_completion_doctest.patch](tarball://root/attachments/some-uuid/ticket6854/6854_tab_completion_doctest.patch) by SimonKing created at 2009-12-01 13:56:00\n\nThe second patch (to be applied after the first) provides a nice indirect doc test for tab completion, according to William's advice at [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/1bf6652891c4e45).",
     "created_at": "2009-12-01T13:56:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6854",
     "type": "issue_comment",
@@ -454,7 +454,7 @@ archive/issue_comments_056520.json:
 }
 ```
 
-Attachment
+Attachment [6854_tab_completion_doctest.patch](tarball://root/attachments/some-uuid/ticket6854/6854_tab_completion_doctest.patch) by SimonKing created at 2009-12-01 13:56:00
 
 The second patch (to be applied after the first) provides a nice indirect doc test for tab completion, according to William's advice at [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/1bf6652891c4e45).
 

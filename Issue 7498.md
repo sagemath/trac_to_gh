@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7498
 archive/issue_comments_063391.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [7498-no-matplotlib.patch](tarball://root/attachments/some-uuid/ticket7498/7498-no-matplotlib.patch) by robertwb created at 2009-11-20 06:40:45",
     "created_at": "2009-11-20T06:40:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7498",
     "type": "issue_comment",
@@ -53,7 +53,7 @@ archive/issue_comments_063391.json:
 }
 ```
 
-Attachment
+Attachment [7498-no-matplotlib.patch](tarball://root/attachments/some-uuid/ticket7498/7498-no-matplotlib.patch) by robertwb created at 2009-11-20 06:40:45
 
 
 
@@ -152,7 +152,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_063397.json:
 ```json
 {
-    "body": "Attachment\n\nRobert's changes look good, but it looks like we also need to make some changes in plot_field3d.py.\n\nI've attached a patch for that.",
+    "body": "Attachment [trac_7498-review.patch](tarball://root/attachments/some-uuid/ticket7498/trac_7498-review.patch) by mhansen created at 2009-12-01 09:01:26\n\nRobert's changes look good, but it looks like we also need to make some changes in plot_field3d.py.\n\nI've attached a patch for that.",
     "created_at": "2009-12-01T09:01:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7498",
     "type": "issue_comment",
@@ -161,7 +161,7 @@ archive/issue_comments_063397.json:
 }
 ```
 
-Attachment
+Attachment [trac_7498-review.patch](tarball://root/attachments/some-uuid/ticket7498/trac_7498-review.patch) by mhansen created at 2009-12-01 09:01:26
 
 Robert's changes look good, but it looks like we also need to make some changes in plot_field3d.py.
 

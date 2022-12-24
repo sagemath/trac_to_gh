@@ -67,7 +67,7 @@ Changing assignee from was to robertwb.
 archive/issue_comments_003168.json:
 ```json
 {
-    "body": "Attachment\n\nTurns out this was due to a bug in the rational __pow__ function. Fixed.",
+    "body": "Attachment [hyperelliptic.hg](tarball://root/attachments/some-uuid/ticket617/hyperelliptic.hg) by robertwb created at 2007-09-07 09:16:49\n\nTurns out this was due to a bug in the rational __pow__ function. Fixed.",
     "created_at": "2007-09-07T09:16:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/617",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_003168.json:
 }
 ```
 
-Attachment
+Attachment [hyperelliptic.hg](tarball://root/attachments/some-uuid/ticket617/hyperelliptic.hg) by robertwb created at 2007-09-07 09:16:49
 
 Turns out this was due to a bug in the rational __pow__ function. Fixed.
 

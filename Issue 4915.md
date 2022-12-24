@@ -49,7 +49,7 @@ Patch at http://sage.math.washington.edu/home/mhansen/trac_4915.patch
 archive/issue_comments_037305.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage.interfaces-final.patch](tarball://root/attachments/some-uuid/ticket4915/sage.interfaces-final.patch) by mhansen created at 2009-02-21 19:18:50",
     "created_at": "2009-02-21T19:18:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4915",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_037305.json:
 }
 ```
 
-Attachment
+Attachment [sage.interfaces-final.patch](tarball://root/attachments/some-uuid/ticket4915/sage.interfaces-final.patch) by mhansen created at 2009-02-21 19:18:50
 
 
 

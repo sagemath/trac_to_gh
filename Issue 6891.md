@@ -53,7 +53,7 @@ Based on 4.1.1
 archive/issue_comments_056938.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6891-spike-function.patch](tarball://root/attachments/some-uuid/ticket6891/trac_6891-spike-function.patch) by kcrisman created at 2009-09-04 21:04:00",
     "created_at": "2009-09-04T21:04:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6891",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_056938.json:
 }
 ```
 
-Attachment
+Attachment [trac_6891-spike-function.patch](tarball://root/attachments/some-uuid/ticket6891/trac_6891-spike-function.patch) by kcrisman created at 2009-09-04 21:04:00
 
 
 

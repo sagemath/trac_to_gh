@@ -98,7 +98,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_070698.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [linbox-1.1.6.p3.patch](tarball://root/attachments/some-uuid/ticket8067/linbox-1.1.6.p3.patch) by jsp created at 2010-01-26 18:15:23",
     "created_at": "2010-01-26T18:15:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8067",
     "type": "issue_comment",
@@ -107,7 +107,7 @@ archive/issue_comments_070698.json:
 }
 ```
 
-Attachment
+Attachment [linbox-1.1.6.p3.patch](tarball://root/attachments/some-uuid/ticket8067/linbox-1.1.6.p3.patch) by jsp created at 2010-01-26 18:15:23
 
 
 

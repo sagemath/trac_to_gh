@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6698
 archive/issue_comments_055028.json:
 ```json
 {
-    "body": "Attachment\n\nbased on Sage 4.1.1.rc2",
+    "body": "Attachment [trac_6698-spell-check-games.patch](tarball://root/attachments/some-uuid/ticket6698/trac_6698-spell-check-games.patch) by mvngu created at 2009-08-09 07:39:57\n\nbased on Sage 4.1.1.rc2",
     "created_at": "2009-08-09T07:39:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6698",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_055028.json:
 }
 ```
 
-Attachment
+Attachment [trac_6698-spell-check-games.patch](tarball://root/attachments/some-uuid/ticket6698/trac_6698-spell-check-games.patch) by mvngu created at 2009-08-09 07:39:57
 
 based on Sage 4.1.1.rc2
 

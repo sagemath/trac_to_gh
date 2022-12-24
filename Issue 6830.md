@@ -53,7 +53,7 @@ This patch depends on the basis of a Hecke algebra code from ticket #6768
 archive/issue_comments_056330.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ideal.patch](tarball://root/attachments/some-uuid/ticket6830/ideal.patch) by wakep created at 2009-08-27 15:33:49",
     "created_at": "2009-08-27T15:33:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6830",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_056330.json:
 }
 ```
 
-Attachment
+Attachment [ideal.patch](tarball://root/attachments/some-uuid/ticket6830/ideal.patch) by wakep created at 2009-08-27 15:33:49
 
 
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3937
 archive/issue_comments_028209.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3937_1.patch](tarball://root/attachments/some-uuid/ticket3937/sage-3937_1.patch) by TimothyClemans created at 2008-08-25 11:14:27",
     "created_at": "2008-08-25T11:14:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3937",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_028209.json:
 }
 ```
 
-Attachment
+Attachment [sage-3937_1.patch](tarball://root/attachments/some-uuid/ticket3937/sage-3937_1.patch) by TimothyClemans created at 2008-08-25 11:14:27
 
 
 
@@ -67,7 +67,7 @@ See #3923
 archive/issue_comments_028211.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3937.patch](tarball://root/attachments/some-uuid/ticket3937/trac_3937.patch) by mhansen created at 2008-10-23 23:11:46",
     "created_at": "2008-10-23T23:11:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3937",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_028211.json:
 }
 ```
 
-Attachment
+Attachment [trac_3937.patch](tarball://root/attachments/some-uuid/ticket3937/trac_3937.patch) by mhansen created at 2008-10-23 23:11:46
 
 
 
@@ -85,7 +85,7 @@ Attachment
 archive/issue_comments_028212.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [extcode_3937.patch](tarball://root/attachments/some-uuid/ticket3937/extcode_3937.patch) by mhansen created at 2008-10-23 23:12:55",
     "created_at": "2008-10-23T23:12:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3937",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_028212.json:
 }
 ```
 
-Attachment
+Attachment [extcode_3937.patch](tarball://root/attachments/some-uuid/ticket3937/extcode_3937.patch) by mhansen created at 2008-10-23 23:12:55
 
 
 

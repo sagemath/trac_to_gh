@@ -202,7 +202,7 @@ Apply trac_5512-species_equality.patch
 archive/issue_comments_042818.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5512-species_equality.patch](tarball://root/attachments/some-uuid/ticket5512/trac_5512-species_equality.patch) by jdemeyer created at 2012-08-03 10:28:33",
     "created_at": "2012-08-03T10:28:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5512",
     "type": "issue_comment",
@@ -211,7 +211,7 @@ archive/issue_comments_042818.json:
 }
 ```
 
-Attachment
+Attachment [trac_5512-species_equality.patch](tarball://root/attachments/some-uuid/ticket5512/trac_5512-species_equality.patch) by jdemeyer created at 2012-08-03 10:28:33
 
 
 

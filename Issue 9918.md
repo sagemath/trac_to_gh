@@ -161,7 +161,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_098707.json:
 ```json
 {
-    "body": "Attachment\n\nFixed the commit message. Changed back to positive review as the code hasn't changed since Robert Miller's review.",
+    "body": "Attachment [trac_9919_workaround_upd_wrapper_bug.patch](tarball://root/attachments/some-uuid/ticket9919/trac_9919_workaround_upd_wrapper_bug.patch) by jsrn created at 2010-11-11 12:56:58\n\nFixed the commit message. Changed back to positive review as the code hasn't changed since Robert Miller's review.",
     "created_at": "2010-11-11T12:56:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9918",
     "type": "issue_comment",
@@ -170,7 +170,7 @@ archive/issue_comments_098707.json:
 }
 ```
 
-Attachment
+Attachment [trac_9919_workaround_upd_wrapper_bug.patch](tarball://root/attachments/some-uuid/ticket9919/trac_9919_workaround_upd_wrapper_bug.patch) by jsrn created at 2010-11-11 12:56:58
 
 Fixed the commit message. Changed back to positive review as the code hasn't changed since Robert Miller's review.
 

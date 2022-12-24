@@ -301,7 +301,7 @@ Changing status from new to needs_info.
 archive/issue_comments_089725.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [deps.patch](tarball://root/attachments/some-uuid/ticket9412/deps.patch) by rlm created at 2010-07-05 21:39:03",
     "created_at": "2010-07-05T21:39:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9412",
     "type": "issue_comment",
@@ -310,7 +310,7 @@ archive/issue_comments_089725.json:
 }
 ```
 
-Attachment
+Attachment [deps.patch](tarball://root/attachments/some-uuid/ticket9412/deps.patch) by rlm created at 2010-07-05 21:39:03
 
 
 
@@ -319,7 +319,7 @@ Attachment
 archive/issue_comments_089726.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9412-scripts.patch](tarball://root/attachments/some-uuid/ticket9412/trac_9412-scripts.patch) by rlm created at 2010-07-05 21:39:59",
     "created_at": "2010-07-05T21:39:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9412",
     "type": "issue_comment",
@@ -328,7 +328,7 @@ archive/issue_comments_089726.json:
 }
 ```
 
-Attachment
+Attachment [trac_9412-scripts.patch](tarball://root/attachments/some-uuid/ticket9412/trac_9412-scripts.patch) by rlm created at 2010-07-05 21:39:59
 
 
 
@@ -355,7 +355,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_089728.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket9412/deps) by rlm created at 2010-07-05 21:40:19",
     "created_at": "2010-07-05T21:40:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9412",
     "type": "issue_comment",
@@ -364,7 +364,7 @@ archive/issue_comments_089728.json:
 }
 ```
 
-Attachment
+Attachment [deps](tarball://root/attachments/some-uuid/ticket9412/deps) by rlm created at 2010-07-05 21:40:19
 
 
 

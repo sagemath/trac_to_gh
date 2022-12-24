@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2184
 archive/issue_comments_014346.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch depends on the changes in #2085, and the patch in #2134.",
+    "body": "Attachment [readjust-arrows.patch](tarball://root/attachments/some-uuid/ticket2184/readjust-arrows.patch) by rlm created at 2008-02-16 23:34:37\n\nThis patch depends on the changes in #2085, and the patch in #2134.",
     "created_at": "2008-02-16T23:34:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2184",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_014346.json:
 }
 ```
 
-Attachment
+Attachment [readjust-arrows.patch](tarball://root/attachments/some-uuid/ticket2184/readjust-arrows.patch) by rlm created at 2008-02-16 23:34:37
 
 This patch depends on the changes in #2085, and the patch in #2134.
 

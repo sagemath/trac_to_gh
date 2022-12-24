@@ -54,7 +54,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6875
 archive/issue_comments_056755.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6875_fill_regression.patch](tarball://root/attachments/some-uuid/ticket6875/trac_6875_fill_regression.patch) by whuss created at 2009-09-03 11:06:29",
     "created_at": "2009-09-03T11:06:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6875",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_056755.json:
 }
 ```
 
-Attachment
+Attachment [trac_6875_fill_regression.patch](tarball://root/attachments/some-uuid/ticket6875/trac_6875_fill_regression.patch) by whuss created at 2009-09-03 11:06:29
 
 
 
@@ -90,7 +90,7 @@ It still doesn't seem like the first example above works for me---I get a single
 archive/issue_comments_056757.json:
 ```json
 {
-    "body": "Attachment\n\nThe correct output of the first example",
+    "body": "Attachment [polar_1.png](tarball://root/attachments/some-uuid/ticket6875/polar_1.png) by whuss created at 2009-09-15 09:20:33\n\nThe correct output of the first example",
     "created_at": "2009-09-15T09:20:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6875",
     "type": "issue_comment",
@@ -99,7 +99,7 @@ archive/issue_comments_056757.json:
 }
 ```
 
-Attachment
+Attachment [polar_1.png](tarball://root/attachments/some-uuid/ticket6875/polar_1.png) by whuss created at 2009-09-15 09:20:33
 
 The correct output of the first example
 
@@ -110,7 +110,7 @@ The correct output of the first example
 archive/issue_comments_056758.json:
 ```json
 {
-    "body": "Attachment\n\nThe correct output of the second example",
+    "body": "Attachment [polar_2.png](tarball://root/attachments/some-uuid/ticket6875/polar_2.png) by whuss created at 2009-09-15 09:21:50\n\nThe correct output of the second example",
     "created_at": "2009-09-15T09:21:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6875",
     "type": "issue_comment",
@@ -119,7 +119,7 @@ archive/issue_comments_056758.json:
 }
 ```
 
-Attachment
+Attachment [polar_2.png](tarball://root/attachments/some-uuid/ticket6875/polar_2.png) by whuss created at 2009-09-15 09:21:50
 
 The correct output of the second example
 

@@ -49,7 +49,7 @@ cong group code
 archive/issue_comments_000901.json:
 ```json
 {
-    "body": "Attachment\n\n\n```\nTo run:\n\ncd \\cygdrive\\c\\\ncd (directory where the file is)\nload \"conggroups.sage\"\n\nTo calculate a list of generators:\ngenerators(\"Gamma\",2,0)               (The third parameter is for inputing\ngenerators(\"GammaBar0\",11,0)           a list of coset representatives.\ngenerators(\"GammaBar\",3,0)             Putting 0 tells it to calculate the list)\n\nTo calculate a list of cusps:\ncusps(cosetreps(\"Gamma\",2))\n\nGroups:\n\"Gamma\"\n\"GammaBar\"      Gamma(N)/(I,-I)\n\"Gamma1\"        Gamma^1\n\"Gamma1Bar\"\n\"Gamma0\"        Gamma^0\n\"Gamma0Bar\"\n```\n",
+    "body": "Attachment [conggroups.sage](tarball://root/attachments/some-uuid/ticket199/conggroups.sage) by was created at 2007-01-19 11:37:42\n\n\n```\nTo run:\n\ncd \\cygdrive\\c\\\ncd (directory where the file is)\nload \"conggroups.sage\"\n\nTo calculate a list of generators:\ngenerators(\"Gamma\",2,0)               (The third parameter is for inputing\ngenerators(\"GammaBar0\",11,0)           a list of coset representatives.\ngenerators(\"GammaBar\",3,0)             Putting 0 tells it to calculate the list)\n\nTo calculate a list of cusps:\ncusps(cosetreps(\"Gamma\",2))\n\nGroups:\n\"Gamma\"\n\"GammaBar\"      Gamma(N)/(I,-I)\n\"Gamma1\"        Gamma^1\n\"Gamma1Bar\"\n\"Gamma0\"        Gamma^0\n\"Gamma0Bar\"\n```\n",
     "created_at": "2007-01-19T11:37:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/199",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_000901.json:
 }
 ```
 
-Attachment
+Attachment [conggroups.sage](tarball://root/attachments/some-uuid/ticket199/conggroups.sage) by was created at 2007-01-19 11:37:42
 
 
 ```

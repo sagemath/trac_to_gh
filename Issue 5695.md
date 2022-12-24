@@ -83,7 +83,7 @@ Changing status from new to assigned.
 archive/issue_comments_044520.json:
 ```json
 {
-    "body": "Attachment\n\nFranco or Florent, since either one of you broke this in #5308 feel free to review this trivial and obvious patch :P\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_5695.patch](tarball://root/attachments/some-uuid/ticket5695/trac_5695.patch) by mabshoff created at 2009-04-06 18:42:43\n\nFranco or Florent, since either one of you broke this in #5308 feel free to review this trivial and obvious patch :P\n\nCheers,\n\nMichael",
     "created_at": "2009-04-06T18:42:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5695",
     "type": "issue_comment",
@@ -92,7 +92,7 @@ archive/issue_comments_044520.json:
 }
 ```
 
-Attachment
+Attachment [trac_5695.patch](tarball://root/attachments/some-uuid/ticket5695/trac_5695.patch) by mabshoff created at 2009-04-06 18:42:43
 
 Franco or Florent, since either one of you broke this in #5308 feel free to review this trivial and obvious patch :P
 

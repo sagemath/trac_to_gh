@@ -109,7 +109,7 @@ based on Sage 4.1.2.alpha2
 archive/issue_comments_056438.json:
 ```json
 {
-    "body": "Attachment\n\nThe updated patch addresses rbeezer's comments on sanity checking the value of the encryption/decryption key. The sanity checking is done in the callable `__call__()` of the class `ShiftCryptosystem`. I have added doctests to that callable. Currently, methods beginning with an underscore \"`_`\" don't show up in the reference manual, so I have also added the doctests for checking key value to the docstring for the class `ShiftCryptosystem`. In this way, reading the reference manual for the shift cryptosystem should make it clear (hopefully) that the value of an encryption/decryption key must lie within the range of acceptable values, i.e. must be within the key space.",
+    "body": "Attachment [trac_6841-shift-cipher.patch](tarball://root/attachments/some-uuid/ticket6841/trac_6841-shift-cipher.patch) by mvngu created at 2009-09-24 03:26:33\n\nThe updated patch addresses rbeezer's comments on sanity checking the value of the encryption/decryption key. The sanity checking is done in the callable `__call__()` of the class `ShiftCryptosystem`. I have added doctests to that callable. Currently, methods beginning with an underscore \"`_`\" don't show up in the reference manual, so I have also added the doctests for checking key value to the docstring for the class `ShiftCryptosystem`. In this way, reading the reference manual for the shift cryptosystem should make it clear (hopefully) that the value of an encryption/decryption key must lie within the range of acceptable values, i.e. must be within the key space.",
     "created_at": "2009-09-24T03:26:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6841",
     "type": "issue_comment",
@@ -118,7 +118,7 @@ archive/issue_comments_056438.json:
 }
 ```
 
-Attachment
+Attachment [trac_6841-shift-cipher.patch](tarball://root/attachments/some-uuid/ticket6841/trac_6841-shift-cipher.patch) by mvngu created at 2009-09-24 03:26:33
 
 The updated patch addresses rbeezer's comments on sanity checking the value of the encryption/decryption key. The sanity checking is done in the callable `__call__()` of the class `ShiftCryptosystem`. I have added doctests to that callable. Currently, methods beginning with an underscore "`_`" don't show up in the reference manual, so I have also added the doctests for checking key value to the docstring for the class `ShiftCryptosystem`. In this way, reading the reference manual for the shift cryptosystem should make it clear (hopefully) that the value of an encryption/decryption key must lie within the range of acceptable values, i.e. must be within the key space.
 

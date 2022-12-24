@@ -196,7 +196,7 @@ Resolution changed from invalid to
 archive/issue_comments_008599.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1340-cython-spaces.patch](tarball://root/attachments/some-uuid/ticket1340/1340-cython-spaces.patch) by robertwb created at 2007-12-02 09:52:26",
     "created_at": "2007-12-02T09:52:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1340",
     "type": "issue_comment",
@@ -205,7 +205,7 @@ archive/issue_comments_008599.json:
 }
 ```
 
-Attachment
+Attachment [1340-cython-spaces.patch](tarball://root/attachments/some-uuid/ticket1340/1340-cython-spaces.patch) by robertwb created at 2007-12-02 09:52:26
 
 
 

@@ -81,7 +81,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7957
 archive/issue_comments_069431.json:
 ```json
 {
-    "body": "Attachment\n\nadd exception handling to sage/symbolic/pynac.pyx",
+    "body": "Attachment [trac_7957-pynac_exceptions.patch](tarball://root/attachments/some-uuid/ticket7957/trac_7957-pynac_exceptions.patch) by burcin created at 2010-01-17 09:49:42\n\nadd exception handling to sage/symbolic/pynac.pyx",
     "created_at": "2010-01-17T09:49:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7957",
     "type": "issue_comment",
@@ -90,7 +90,7 @@ archive/issue_comments_069431.json:
 }
 ```
 
-Attachment
+Attachment [trac_7957-pynac_exceptions.patch](tarball://root/attachments/some-uuid/ticket7957/trac_7957-pynac_exceptions.patch) by burcin created at 2010-01-17 09:49:42
 
 add exception handling to sage/symbolic/pynac.pyx
 

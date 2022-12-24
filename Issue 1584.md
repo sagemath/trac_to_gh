@@ -80,7 +80,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1584
 archive/issue_comments_010086.json:
 ```json
 {
-    "body": "Attachment\n\n+1",
+    "body": "Attachment [maxima-error2.9.1.alpha2.patch](tarball://root/attachments/some-uuid/ticket1584/maxima-error2.9.1.alpha2.patch) by was created at 2007-12-21 21:59:46\n\n+1",
     "created_at": "2007-12-21T21:59:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1584",
     "type": "issue_comment",
@@ -89,7 +89,7 @@ archive/issue_comments_010086.json:
 }
 ```
 
-Attachment
+Attachment [maxima-error2.9.1.alpha2.patch](tarball://root/attachments/some-uuid/ticket1584/maxima-error2.9.1.alpha2.patch) by was created at 2007-12-21 21:59:46
 
 +1
 

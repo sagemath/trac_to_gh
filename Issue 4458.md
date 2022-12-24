@@ -128,7 +128,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_032888.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:5 knsam]:\n> Hello! \n> \n> I have two comments about the patch: there is a grammatical error: \"an NameError\" and I think \"NameError\" should be codified -- by enclosing it with two backticks. \n> \n> So, needs_work. :) \n\nThanks for the input!",
+    "body": "Attachment [trac_4458_name_error_explanation.patch](tarball://root/attachments/some-uuid/ticket4458/trac_4458_name_error_explanation.patch) by afleckenstein created at 2013-02-01 14:01:20\n\nReplying to [comment:5 knsam]:\n> Hello! \n> \n> I have two comments about the patch: there is a grammatical error: \"an NameError\" and I think \"NameError\" should be codified -- by enclosing it with two backticks. \n> \n> So, needs_work. :) \n\nThanks for the input!",
     "created_at": "2013-02-01T14:01:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4458",
     "type": "issue_comment",
@@ -137,7 +137,7 @@ archive/issue_comments_032888.json:
 }
 ```
 
-Attachment
+Attachment [trac_4458_name_error_explanation.patch](tarball://root/attachments/some-uuid/ticket4458/trac_4458_name_error_explanation.patch) by afleckenstein created at 2013-02-01 14:01:20
 
 Replying to [comment:5 knsam]:
 > Hello! 
@@ -235,7 +235,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_032893.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:9 knsam]:\n> The description in the patch says: 'at the very least there should be something in the calculus section(s) to the effect of \"If you get a NameError?, check to see if you either misspelled something or forgot to define a variable with var(...)\"'. \n> \n> I think this could be done, by adding a note. Can you please do this, so that there is an explicit place where this is explained? I am also thinking if it might be possible to implement the first suggestion in the description. Hope you'd find an appropriate place to do so. \n\nDone! I added it to a separate patch, so you can pick either one, or both :-)",
+    "body": "Attachment [trac_4458_name_error_calculus.patch](tarball://root/attachments/some-uuid/ticket4458/trac_4458_name_error_calculus.patch) by afleckenstein created at 2013-02-07 14:15:52\n\nReplying to [comment:9 knsam]:\n> The description in the patch says: 'at the very least there should be something in the calculus section(s) to the effect of \"If you get a NameError?, check to see if you either misspelled something or forgot to define a variable with var(...)\"'. \n> \n> I think this could be done, by adding a note. Can you please do this, so that there is an explicit place where this is explained? I am also thinking if it might be possible to implement the first suggestion in the description. Hope you'd find an appropriate place to do so. \n\nDone! I added it to a separate patch, so you can pick either one, or both :-)",
     "created_at": "2013-02-07T14:15:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4458",
     "type": "issue_comment",
@@ -244,7 +244,7 @@ archive/issue_comments_032893.json:
 }
 ```
 
-Attachment
+Attachment [trac_4458_name_error_calculus.patch](tarball://root/attachments/some-uuid/ticket4458/trac_4458_name_error_calculus.patch) by afleckenstein created at 2013-02-07 14:15:52
 
 Replying to [comment:9 knsam]:
 > The description in the patch says: 'at the very least there should be something in the calculus section(s) to the effect of "If you get a NameError?, check to see if you either misspelled something or forgot to define a variable with var(...)"'. 

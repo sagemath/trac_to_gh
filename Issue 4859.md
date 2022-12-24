@@ -36,7 +36,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4859
 archive/issue_comments_036827.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [11113.patch](tarball://root/attachments/some-uuid/ticket4859/11113.patch) by dgordon created at 2008-12-23 17:21:04",
     "created_at": "2008-12-23T17:21:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4859",
     "type": "issue_comment",
@@ -45,7 +45,7 @@ archive/issue_comments_036827.json:
 }
 ```
 
-Attachment
+Attachment [11113.patch](tarball://root/attachments/some-uuid/ticket4859/11113.patch) by dgordon created at 2008-12-23 17:21:04
 
 
 
@@ -183,7 +183,7 @@ With the above issues addressed, this code should go into sage.
 archive/issue_comments_036831.json:
 ```json
 {
-    "body": "Attachment\n\nfix to problems in first patch pointed out by the reviewers",
+    "body": "Attachment [trac_4859-covering-designs2.patch](tarball://root/attachments/some-uuid/ticket4859/trac_4859-covering-designs2.patch) by dgordon created at 2009-01-27 23:13:15\n\nfix to problems in first patch pointed out by the reviewers",
     "created_at": "2009-01-27T23:13:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4859",
     "type": "issue_comment",
@@ -192,7 +192,7 @@ archive/issue_comments_036831.json:
 }
 ```
 
-Attachment
+Attachment [trac_4859-covering-designs2.patch](tarball://root/attachments/some-uuid/ticket4859/trac_4859-covering-designs2.patch) by dgordon created at 2009-01-27 23:13:15
 
 fix to problems in first patch pointed out by the reviewers
 

@@ -226,7 +226,7 @@ I added a patch that adds the extra check I mentioned to `sage_getdoc`. It seems
 archive/issue_comments_023212.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3342_builtin_introspection.patch](tarball://root/attachments/some-uuid/ticket3342/trac_3342_builtin_introspection.patch) by wjp created at 2010-07-09 20:26:21",
     "created_at": "2010-07-09T20:26:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3342",
     "type": "issue_comment",
@@ -235,7 +235,7 @@ archive/issue_comments_023212.json:
 }
 ```
 
-Attachment
+Attachment [trac_3342_builtin_introspection.patch](tarball://root/attachments/some-uuid/ticket3342/trac_3342_builtin_introspection.patch) by wjp created at 2010-07-09 20:26:21
 
 
 
@@ -298,7 +298,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_023216.json:
 ```json
 {
-    "body": "Attachment\n\nIt looks okay and seems to behave well.  For some reason, I only see the original problem from the command line, not the notebook, so the sagenb patch may not strictly be needed; however, I think the two sageinspect files are supposed to synchronized as much as possible.\n\nI didn't know about `types.StringTypes` before; that looks useful.",
+    "body": "Attachment [sagenb_3342_builtin_introspection.patch](tarball://root/attachments/some-uuid/ticket3342/sagenb_3342_builtin_introspection.patch) by jhpalmieri created at 2010-07-10 02:53:34\n\nIt looks okay and seems to behave well.  For some reason, I only see the original problem from the command line, not the notebook, so the sagenb patch may not strictly be needed; however, I think the two sageinspect files are supposed to synchronized as much as possible.\n\nI didn't know about `types.StringTypes` before; that looks useful.",
     "created_at": "2010-07-10T02:53:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3342",
     "type": "issue_comment",
@@ -307,7 +307,7 @@ archive/issue_comments_023216.json:
 }
 ```
 
-Attachment
+Attachment [sagenb_3342_builtin_introspection.patch](tarball://root/attachments/some-uuid/ticket3342/sagenb_3342_builtin_introspection.patch) by jhpalmieri created at 2010-07-10 02:53:34
 
 It looks okay and seems to behave well.  For some reason, I only see the original problem from the command line, not the notebook, so the sagenb patch may not strictly be needed; however, I think the two sageinspect files are supposed to synchronized as much as possible.
 

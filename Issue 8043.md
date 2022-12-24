@@ -67,7 +67,7 @@ Here's a patch.  See #8669 for a somewhat related ticket.
 archive/issue_comments_070292.json:
 ```json
 {
-    "body": "Attachment\n\nscripts repo",
+    "body": "Attachment [trac_8043-spkg-no-version.patch](tarball://root/attachments/some-uuid/ticket8043/trac_8043-spkg-no-version.patch) by jhpalmieri created at 2010-04-10 18:58:31\n\nscripts repo",
     "created_at": "2010-04-10T18:58:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8043",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_070292.json:
 }
 ```
 
-Attachment
+Attachment [trac_8043-spkg-no-version.patch](tarball://root/attachments/some-uuid/ticket8043/trac_8043-spkg-no-version.patch) by jhpalmieri created at 2010-04-10 18:58:31
 
 scripts repo
 

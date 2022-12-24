@@ -120,7 +120,7 @@ dave
 archive/issue_comments_059141.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [libpng.patch](tarball://root/attachments/some-uuid/ticket7130/libpng.patch) by drkirkby created at 2010-01-28 15:15:14",
     "created_at": "2010-01-28T15:15:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7130",
     "type": "issue_comment",
@@ -129,7 +129,7 @@ archive/issue_comments_059141.json:
 }
 ```
 
-Attachment
+Attachment [libpng.patch](tarball://root/attachments/some-uuid/ticket7130/libpng.patch) by drkirkby created at 2010-01-28 15:15:14
 
 
 

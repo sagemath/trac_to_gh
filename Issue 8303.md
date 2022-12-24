@@ -113,7 +113,7 @@ apply to sage_scripts spkg
 archive/issue_comments_073571.json:
 ```json
 {
-    "body": "Attachment\n\nPatch up. Apply to sage_scripts spkg, or equivalently, to the repo in SAGE_ROOT/local/bin.\n\nTo test, try making a file with spaces in its name, and passing arguments with spaces in them. If the file is \"script with spaces.sage\" and it contains:\n\n```\nimport sys\nprint integrate(x*cos(x)*sin(x), x)\nprint sys.argv\nsys.exit(int(5))\n```\n\nthen something like this should work properly:\n\n```\n$ sage \"script with spaces.sage\" \"foo bar\" arg2\n-1/4*x*cos(2*x) + 1/8*sin(2*x)\n['script with spaces.py', 'foo bar', 'arg2']\n$ echo $?\n5\n```\n\nI'd like to have the return code tested to make sure we don't get a regression on #2861.\n\nPlease test and review!",
+    "body": "Attachment [trac_8303.patch](tarball://root/attachments/some-uuid/ticket8303/trac_8303.patch) by ddrake created at 2010-02-21 08:05:42\n\nPatch up. Apply to sage_scripts spkg, or equivalently, to the repo in SAGE_ROOT/local/bin.\n\nTo test, try making a file with spaces in its name, and passing arguments with spaces in them. If the file is \"script with spaces.sage\" and it contains:\n\n```\nimport sys\nprint integrate(x*cos(x)*sin(x), x)\nprint sys.argv\nsys.exit(int(5))\n```\n\nthen something like this should work properly:\n\n```\n$ sage \"script with spaces.sage\" \"foo bar\" arg2\n-1/4*x*cos(2*x) + 1/8*sin(2*x)\n['script with spaces.py', 'foo bar', 'arg2']\n$ echo $?\n5\n```\n\nI'd like to have the return code tested to make sure we don't get a regression on #2861.\n\nPlease test and review!",
     "created_at": "2010-02-21T08:05:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8303",
     "type": "issue_comment",
@@ -122,7 +122,7 @@ archive/issue_comments_073571.json:
 }
 ```
 
-Attachment
+Attachment [trac_8303.patch](tarball://root/attachments/some-uuid/ticket8303/trac_8303.patch) by ddrake created at 2010-02-21 08:05:42
 
 Patch up. Apply to sage_scripts spkg, or equivalently, to the repo in SAGE_ROOT/local/bin.
 

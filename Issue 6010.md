@@ -89,7 +89,7 @@ abort: patch failed to apply
 archive/issue_comments_047828.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6010-genus-2-invariants-2.2.patch](tarball://root/attachments/some-uuid/ticket6010/trac_6010-genus-2-invariants-2.2.patch) by ncalexan created at 2009-05-12 06:08:01",
     "created_at": "2009-05-12T06:08:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6010",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_047828.json:
 }
 ```
 
-Attachment
+Attachment [trac_6010-genus-2-invariants-2.2.patch](tarball://root/attachments/some-uuid/ticket6010/trac_6010-genus-2-invariants-2.2.patch) by ncalexan created at 2009-05-12 06:08:01
 
 
 

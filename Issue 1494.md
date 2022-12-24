@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1494
 archive/issue_comments_009598.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-1494.patch](tarball://root/attachments/some-uuid/ticket1494/trac-1494.patch) by was created at 2007-12-13 22:15:50",
     "created_at": "2007-12-13T22:15:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1494",
     "type": "issue_comment",
@@ -49,7 +49,7 @@ archive/issue_comments_009598.json:
 }
 ```
 
-Attachment
+Attachment [trac-1494.patch](tarball://root/attachments/some-uuid/ticket1494/trac-1494.patch) by was created at 2007-12-13 22:15:50
 
 
 
@@ -76,7 +76,7 @@ I am wary of this patch, but will look into it more.
 archive/issue_comments_009600.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-1494-fixdoctest.patch](tarball://root/attachments/some-uuid/ticket1494/trac-1494-fixdoctest.patch) by cwitty created at 2007-12-15 08:16:56",
     "created_at": "2007-12-15T08:16:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1494",
     "type": "issue_comment",
@@ -85,7 +85,7 @@ archive/issue_comments_009600.json:
 }
 ```
 
-Attachment
+Attachment [trac-1494-fixdoctest.patch](tarball://root/attachments/some-uuid/ticket1494/trac-1494-fixdoctest.patch) by cwitty created at 2007-12-15 08:16:56
 
 
 

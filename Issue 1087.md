@@ -49,7 +49,7 @@ Changing status from new to assigned.
 archive/issue_comments_006572.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1087-sage.patch](tarball://root/attachments/some-uuid/ticket1087/1087-sage.patch) by mhansen created at 2007-11-03 22:12:23",
     "created_at": "2007-11-03T22:12:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1087",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_006572.json:
 }
 ```
 
-Attachment
+Attachment [1087-sage.patch](tarball://root/attachments/some-uuid/ticket1087/1087-sage.patch) by mhansen created at 2007-11-03 22:12:23
 
 
 
@@ -67,7 +67,7 @@ Attachment
 archive/issue_comments_006573.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1087-doc.patch.gz](tarball://root/attachments/some-uuid/ticket1087/1087-doc.patch.gz) by mhansen created at 2007-11-03 22:12:53",
     "created_at": "2007-11-03T22:12:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1087",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_006573.json:
 }
 ```
 
-Attachment
+Attachment [1087-doc.patch.gz](tarball://root/attachments/some-uuid/ticket1087/1087-doc.patch.gz) by mhansen created at 2007-11-03 22:12:53
 
 
 
@@ -334,7 +334,7 @@ new combinat.tex
 archive/issue_comments_006580.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [combinat.tex](tarball://root/attachments/some-uuid/ticket1087/combinat.tex) by mhansen created at 2007-11-04 00:10:51",
     "created_at": "2007-11-04T00:10:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1087",
     "type": "issue_comment",
@@ -343,7 +343,7 @@ archive/issue_comments_006580.json:
 }
 ```
 
-Attachment
+Attachment [combinat.tex](tarball://root/attachments/some-uuid/ticket1087/combinat.tex) by mhansen created at 2007-11-04 00:10:51
 
 
 
@@ -352,7 +352,7 @@ Attachment
 archive/issue_comments_006581.json:
 ```json
 {
-    "body": "Attachment\n\nI think 108-sage.patch has been applied already.\n\nAll that's left is for the above files to be touched and 1087-combinat.patch to be applied.",
+    "body": "Attachment [1087-combinat.patch](tarball://root/attachments/some-uuid/ticket1087/1087-combinat.patch) by mhansen created at 2007-11-06 06:20:29\n\nI think 108-sage.patch has been applied already.\n\nAll that's left is for the above files to be touched and 1087-combinat.patch to be applied.",
     "created_at": "2007-11-06T06:20:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1087",
     "type": "issue_comment",
@@ -361,7 +361,7 @@ archive/issue_comments_006581.json:
 }
 ```
 
-Attachment
+Attachment [1087-combinat.patch](tarball://root/attachments/some-uuid/ticket1087/1087-combinat.patch) by mhansen created at 2007-11-06 06:20:29
 
 I think 108-sage.patch has been applied already.
 

@@ -88,7 +88,7 @@ Changing status from new to needs_review.
 archive/issue_comments_078935.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8674_word_combinaorial_cmp-sl.patch](tarball://root/attachments/some-uuid/ticket8674/trac_8674_word_combinaorial_cmp-sl.patch) by slabbe created at 2010-04-11 14:41:40",
     "created_at": "2010-04-11T14:41:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8674",
     "type": "issue_comment",
@@ -97,7 +97,7 @@ archive/issue_comments_078935.json:
 }
 ```
 
-Attachment
+Attachment [trac_8674_word_combinaorial_cmp-sl.patch](tarball://root/attachments/some-uuid/ticket8674/trac_8674_word_combinaorial_cmp-sl.patch) by slabbe created at 2010-04-11 14:41:40
 
 
 
@@ -168,7 +168,7 @@ If it is a problem, maybe it's not necessary to fix the `__eq__` operator now bu
 archive/issue_comments_078938.json:
 ```json
 {
-    "body": "Attachment\n\nApplies over the precedent patch",
+    "body": "Attachment [trac_8674_fixes_after_review-sl.patch](tarball://root/attachments/some-uuid/ticket8674/trac_8674_fixes_after_review-sl.patch) by slabbe created at 2010-04-19 10:23:44\n\nApplies over the precedent patch",
     "created_at": "2010-04-19T10:23:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8674",
     "type": "issue_comment",
@@ -177,7 +177,7 @@ archive/issue_comments_078938.json:
 }
 ```
 
-Attachment
+Attachment [trac_8674_fixes_after_review-sl.patch](tarball://root/attachments/some-uuid/ticket8674/trac_8674_fixes_after_review-sl.patch) by slabbe created at 2010-04-19 10:23:44
 
 Applies over the precedent patch
 

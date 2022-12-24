@@ -68,7 +68,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6364
 archive/issue_comments_050912.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-6364-bin.patch](tarball://root/attachments/some-uuid/ticket6364/trac-6364-bin.patch) by craigcitro created at 2009-06-20 17:55:37",
     "created_at": "2009-06-20T17:55:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6364",
     "type": "issue_comment",
@@ -77,7 +77,7 @@ archive/issue_comments_050912.json:
 }
 ```
 
-Attachment
+Attachment [trac-6364-bin.patch](tarball://root/attachments/some-uuid/ticket6364/trac-6364-bin.patch) by craigcitro created at 2009-06-20 17:55:37
 
 
 
@@ -161,7 +161,7 @@ apply to 4.1 (instead of previous patch)
 archive/issue_comments_050917.json:
 ```json
 {
-    "body": "Attachment\n\nCraig's patch would not work for me, it failed to apply, perhaps because the script has changed in the interim.\n\nI have added a new patch and hope it can be reviewed before things  change again!",
+    "body": "Attachment [trac_6364.patch](tarball://root/attachments/some-uuid/ticket6364/trac_6364.patch) by cremona created at 2009-07-11 15:23:29\n\nCraig's patch would not work for me, it failed to apply, perhaps because the script has changed in the interim.\n\nI have added a new patch and hope it can be reviewed before things  change again!",
     "created_at": "2009-07-11T15:23:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6364",
     "type": "issue_comment",
@@ -170,7 +170,7 @@ archive/issue_comments_050917.json:
 }
 ```
 
-Attachment
+Attachment [trac_6364.patch](tarball://root/attachments/some-uuid/ticket6364/trac_6364.patch) by cremona created at 2009-07-11 15:23:29
 
 Craig's patch would not work for me, it failed to apply, perhaps because the script has changed in the interim.
 
@@ -183,7 +183,7 @@ I have added a new patch and hope it can be reviewed before things  change again
 archive/issue_comments_050918.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [scripts_6364_pre.patch](tarball://root/attachments/some-uuid/ticket6364/scripts_6364_pre.patch) by boothby created at 2009-07-17 22:08:52",
     "created_at": "2009-07-17T22:08:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6364",
     "type": "issue_comment",
@@ -192,7 +192,7 @@ archive/issue_comments_050918.json:
 }
 ```
 
-Attachment
+Attachment [scripts_6364_pre.patch](tarball://root/attachments/some-uuid/ticket6364/scripts_6364_pre.patch) by boothby created at 2009-07-17 22:08:52
 
 
 

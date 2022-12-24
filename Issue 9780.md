@@ -123,7 +123,7 @@ Jeroen, could you update the patch commit string with the ticket number?
 archive/issue_comments_096014.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:3 mpatel]:\n> Jeroen, could you update the patch commit string with the ticket number?\nDone.",
+    "body": "Attachment [9781.patch](tarball://root/attachments/some-uuid/ticket9781/9781.patch) by jdemeyer created at 2010-08-24 10:07:21\n\nReplying to [comment:3 mpatel]:\n> Jeroen, could you update the patch commit string with the ticket number?\nDone.",
     "created_at": "2010-08-24T10:07:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9780",
     "type": "issue_comment",
@@ -132,7 +132,7 @@ archive/issue_comments_096014.json:
 }
 ```
 
-Attachment
+Attachment [9781.patch](tarball://root/attachments/some-uuid/ticket9781/9781.patch) by jdemeyer created at 2010-08-24 10:07:21
 
 Replying to [comment:3 mpatel]:
 > Jeroen, could you update the patch commit string with the ticket number?

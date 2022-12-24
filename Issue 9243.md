@@ -83,7 +83,7 @@ Changing status from new to needs_review.
 archive/issue_comments_086927.json:
 ```json
 {
-    "body": "Attachment\n\napply to scripts repo",
+    "body": "Attachment [trac_9243.patch](tarball://root/attachments/some-uuid/ticket9243/trac_9243.patch) by ddrake created at 2010-06-18 01:59:30\n\napply to scripts repo",
     "created_at": "2010-06-18T01:59:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9243",
     "type": "issue_comment",
@@ -92,7 +92,7 @@ archive/issue_comments_086927.json:
 }
 ```
 
-Attachment
+Attachment [trac_9243.patch](tarball://root/attachments/some-uuid/ticket9243/trac_9243.patch) by ddrake created at 2010-06-18 01:59:30
 
 apply to scripts repo
 
@@ -202,7 +202,7 @@ apply after trac_9243.patch
 archive/issue_comments_086933.json:
 ```json
 {
-    "body": "Attachment\n\nI added a patch to address the internally used error code 5.\n\nPositive review for the rest of the patch. Could someone review my small reviewer patch?",
+    "body": "Attachment [trac_9243_2.patch](tarball://root/attachments/some-uuid/ticket9243/trac_9243_2.patch) by wjp created at 2010-07-06 20:53:48\n\nI added a patch to address the internally used error code 5.\n\nPositive review for the rest of the patch. Could someone review my small reviewer patch?",
     "created_at": "2010-07-06T20:53:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9243",
     "type": "issue_comment",
@@ -211,7 +211,7 @@ archive/issue_comments_086933.json:
 }
 ```
 
-Attachment
+Attachment [trac_9243_2.patch](tarball://root/attachments/some-uuid/ticket9243/trac_9243_2.patch) by wjp created at 2010-07-06 20:53:48
 
 I added a patch to address the internally used error code 5.
 

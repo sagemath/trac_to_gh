@@ -88,7 +88,7 @@ Changing status from new to needs_review.
 archive/issue_comments_079652.json:
 ```json
 {
-    "body": "Attachment\n\napply over patches at #8446",
+    "body": "Attachment [trac_8722.patch](tarball://root/attachments/some-uuid/ticket8722/trac_8722.patch) by davidloeffler created at 2010-04-20 09:56:16\n\napply over patches at #8446",
     "created_at": "2010-04-20T09:56:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8722",
     "type": "issue_comment",
@@ -97,7 +97,7 @@ archive/issue_comments_079652.json:
 }
 ```
 
-Attachment
+Attachment [trac_8722.patch](tarball://root/attachments/some-uuid/ticket8722/trac_8722.patch) by davidloeffler created at 2010-04-20 09:56:16
 
 apply over patches at #8446
 

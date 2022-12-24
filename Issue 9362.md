@@ -139,7 +139,7 @@ Changing status from new to needs_review.
 archive/issue_comments_088914.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9362_None_is_no_name.patch](tarball://root/attachments/some-uuid/ticket9362/trac_9362_None_is_no_name.patch) by brunellus created at 2011-12-31 01:05:18",
     "created_at": "2011-12-31T01:05:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9362",
     "type": "issue_comment",
@@ -148,7 +148,7 @@ archive/issue_comments_088914.json:
 }
 ```
 
-Attachment
+Attachment [trac_9362_None_is_no_name.patch](tarball://root/attachments/some-uuid/ticket9362/trac_9362_None_is_no_name.patch) by brunellus created at 2011-12-31 01:05:18
 
 
 
@@ -379,7 +379,7 @@ I'm sorry -- the current version isn't compatible with changes in #11739. Would 
 archive/issue_comments_088926.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9362_None_is_no_name.2.patch](tarball://root/attachments/some-uuid/ticket9362/trac_9362_None_is_no_name.2.patch) by brunellus created at 2012-01-31 14:04:52",
     "created_at": "2012-01-31T14:04:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9362",
     "type": "issue_comment",
@@ -388,7 +388,7 @@ archive/issue_comments_088926.json:
 }
 ```
 
-Attachment
+Attachment [trac_9362_None_is_no_name.2.patch](tarball://root/attachments/some-uuid/ticket9362/trac_9362_None_is_no_name.2.patch) by brunellus created at 2012-01-31 14:04:52
 
 
 

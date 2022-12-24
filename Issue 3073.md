@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3073
 archive/issue_comments_021209.json:
 ```json
 {
-    "body": "Attachment\n\nadds width option to input_box in interact",
+    "body": "Attachment [trac_3073_interact_width.patch](tarball://root/attachments/some-uuid/ticket3073/trac_3073_interact_width.patch) by mhampton created at 2008-05-01 17:52:43\n\nadds width option to input_box in interact",
     "created_at": "2008-05-01T17:52:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3073",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_021209.json:
 }
 ```
 
-Attachment
+Attachment [trac_3073_interact_width.patch](tarball://root/attachments/some-uuid/ticket3073/trac_3073_interact_width.patch) by mhampton created at 2008-05-01 17:52:43
 
 adds width option to input_box in interact
 

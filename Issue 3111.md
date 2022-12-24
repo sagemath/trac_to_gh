@@ -283,7 +283,7 @@ Hmm ... there doesn't seem to be a patch attached, despite the title saying "wit
 archive/issue_comments_021510.json:
 ```json
 {
-    "body": "Attachment\n\nSorry about that, it is there now.\n\nAnd as I looked at the patch after uploading it I saw that there are a couple of debugging print statements which need deleting, near the end (lines 1194/5) but I'll leave that until tomorrow.",
+    "body": "Attachment [sage-3111.patch](tarball://root/attachments/some-uuid/ticket3111/sage-3111.patch) by cremona created at 2008-05-08 21:26:16\n\nSorry about that, it is there now.\n\nAnd as I looked at the patch after uploading it I saw that there are a couple of debugging print statements which need deleting, near the end (lines 1194/5) but I'll leave that until tomorrow.",
     "created_at": "2008-05-08T21:26:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3111",
     "type": "issue_comment",
@@ -292,7 +292,7 @@ archive/issue_comments_021510.json:
 }
 ```
 
-Attachment
+Attachment [sage-3111.patch](tarball://root/attachments/some-uuid/ticket3111/sage-3111.patch) by cremona created at 2008-05-08 21:26:16
 
 Sorry about that, it is there now.
 
@@ -359,7 +359,7 @@ Additional tp sage-3111.patch
 archive/issue_comments_021514.json:
 ```json
 {
-    "body": "Attachment\n\nsage-3111-extra.patch does the following:\n\n* deleted two debuggin print lines\n* added doctest to show that the original post is fixed\n* passes all doctests in sage/schemes/elliptic_curves\n\nFor the doctest I check that it is OK for 10 random primes up to `10^4` rather than all of them since that takes about 18s to run.",
+    "body": "Attachment [sage-3111-extra.patch](tarball://root/attachments/some-uuid/ticket3111/sage-3111-extra.patch) by cremona created at 2008-05-12 21:29:57\n\nsage-3111-extra.patch does the following:\n\n* deleted two debuggin print lines\n* added doctest to show that the original post is fixed\n* passes all doctests in sage/schemes/elliptic_curves\n\nFor the doctest I check that it is OK for 10 random primes up to `10^4` rather than all of them since that takes about 18s to run.",
     "created_at": "2008-05-12T21:29:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3111",
     "type": "issue_comment",
@@ -368,7 +368,7 @@ archive/issue_comments_021514.json:
 }
 ```
 
-Attachment
+Attachment [sage-3111-extra.patch](tarball://root/attachments/some-uuid/ticket3111/sage-3111-extra.patch) by cremona created at 2008-05-12 21:29:57
 
 sage-3111-extra.patch does the following:
 
@@ -463,7 +463,7 @@ Michael
 archive/issue_comments_021518.json:
 ```json
 {
-    "body": "Attachment\n\nApply after previous two",
+    "body": "Attachment [sage-3111-extra2.patch](tarball://root/attachments/some-uuid/ticket3111/sage-3111-extra2.patch) by cremona created at 2008-05-12 21:47:04\n\nApply after previous two",
     "created_at": "2008-05-12T21:47:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3111",
     "type": "issue_comment",
@@ -472,7 +472,7 @@ archive/issue_comments_021518.json:
 }
 ```
 
-Attachment
+Attachment [sage-3111-extra2.patch](tarball://root/attachments/some-uuid/ticket3111/sage-3111-extra2.patch) by cremona created at 2008-05-12 21:47:04
 
 Apply after previous two
 
@@ -543,7 +543,7 @@ Runnning the doctest code for the 10 primes with an unpatched Sage does not trig
 archive/issue_comments_021522.json:
 ```json
 {
-    "body": "Attachment\n\napply after all previous",
+    "body": "Attachment [sage-3111-extra3.patch](tarball://root/attachments/some-uuid/ticket3111/sage-3111-extra3.patch) by cremona created at 2008-05-13 08:18:56\n\napply after all previous",
     "created_at": "2008-05-13T08:18:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3111",
     "type": "issue_comment",
@@ -552,7 +552,7 @@ archive/issue_comments_021522.json:
 }
 ```
 
-Attachment
+Attachment [sage-3111-extra3.patch](tarball://root/attachments/some-uuid/ticket3111/sage-3111-extra3.patch) by cremona created at 2008-05-13 08:18:56
 
 apply after all previous
 

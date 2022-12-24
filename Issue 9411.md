@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9411
 archive/issue_comments_089693.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9411-LLL_points.patch](tarball://root/attachments/some-uuid/ticket9411/trac_9411-LLL_points.patch) by aly.deines created at 2010-07-02 21:12:43",
     "created_at": "2010-07-02T21:12:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9411",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_089693.json:
 }
 ```
 
-Attachment
+Attachment [trac_9411-LLL_points.patch](tarball://root/attachments/some-uuid/ticket9411/trac_9411-LLL_points.patch) by aly.deines created at 2010-07-02 21:12:43
 
 
 
@@ -142,7 +142,7 @@ One note, this code isn't very robust.  For example, in many cases the height pa
 archive/issue_comments_089697.json:
 ```json
 {
-    "body": "Attachment\n\nThis replaces the previous patch.  It applies to sage-4.6.1.rc1",
+    "body": "Attachment [trac_9411_lll_reduce_number_field.patch](tarball://root/attachments/some-uuid/ticket9411/trac_9411_lll_reduce_number_field.patch) by aly.deines created at 2011-01-12 06:10:00\n\nThis replaces the previous patch.  It applies to sage-4.6.1.rc1",
     "created_at": "2011-01-12T06:10:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9411",
     "type": "issue_comment",
@@ -151,7 +151,7 @@ archive/issue_comments_089697.json:
 }
 ```
 
-Attachment
+Attachment [trac_9411_lll_reduce_number_field.patch](tarball://root/attachments/some-uuid/ticket9411/trac_9411_lll_reduce_number_field.patch) by aly.deines created at 2011-01-12 06:10:00
 
 This replaces the previous patch.  It applies to sage-4.6.1.rc1
 
@@ -437,7 +437,7 @@ I did the rebasing but am now also adding the tests suggested by Paul Zimmermann
 archive/issue_comments_089711.json:
 ```json
 {
-    "body": "Attachment\n\nrebased on 5.12.beta1 and added 2 new doctests",
+    "body": "Attachment [trac_9411_lll_reduce_number_field.2.patch](tarball://root/attachments/some-uuid/ticket9411/trac_9411_lll_reduce_number_field.2.patch) by cremona created at 2013-08-21 14:59:55\n\nrebased on 5.12.beta1 and added 2 new doctests",
     "created_at": "2013-08-21T14:59:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9411",
     "type": "issue_comment",
@@ -446,7 +446,7 @@ archive/issue_comments_089711.json:
 }
 ```
 
-Attachment
+Attachment [trac_9411_lll_reduce_number_field.2.patch](tarball://root/attachments/some-uuid/ticket9411/trac_9411_lll_reduce_number_field.2.patch) by cremona created at 2013-08-21 14:59:55
 
 rebased on 5.12.beta1 and added 2 new doctests
 
@@ -539,7 +539,7 @@ apply trac_9411_lll_reduce_number_field.2.patch, trac_9411_review.patch
 archive/issue_comments_089716.json:
 ```json
 {
-    "body": "Attachment\n\nrebased. Once again, if my minor changes are ok, you can set this to positive review",
+    "body": "Attachment [trac_9411_review.patch](tarball://root/attachments/some-uuid/ticket9411/trac_9411_review.patch) by chapoton created at 2013-11-25 19:07:06\n\nrebased. Once again, if my minor changes are ok, you can set this to positive review",
     "created_at": "2013-11-25T19:07:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9411",
     "type": "issue_comment",
@@ -548,7 +548,7 @@ archive/issue_comments_089716.json:
 }
 ```
 
-Attachment
+Attachment [trac_9411_review.patch](tarball://root/attachments/some-uuid/ticket9411/trac_9411_review.patch) by chapoton created at 2013-11-25 19:07:06
 
 rebased. Once again, if my minor changes are ok, you can set this to positive review
 

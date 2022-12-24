@@ -77,7 +77,7 @@ Here's a trivial patch.  Is this good enough?
 archive/issue_comments_035516.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [4710.patch](tarball://root/attachments/some-uuid/ticket4710/4710.patch) by jhpalmieri created at 2009-02-26 17:08:29",
     "created_at": "2009-02-26T17:08:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4710",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_035516.json:
 }
 ```
 
-Attachment
+Attachment [4710.patch](tarball://root/attachments/some-uuid/ticket4710/4710.patch) by jhpalmieri created at 2009-02-26 17:08:29
 
 
 

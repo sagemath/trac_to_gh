@@ -84,7 +84,7 @@ latex fix
 archive/issue_comments_015156.json:
 ```json
 {
-    "body": "Attachment\n\nOkay, submitted a fix; need a review.",
+    "body": "Attachment [latex.hg](tarball://root/attachments/some-uuid/ticket2284/latex.hg) by moretti created at 2008-02-24 00:36:40\n\nOkay, submitted a fix; need a review.",
     "created_at": "2008-02-24T00:36:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2284",
     "type": "issue_comment",
@@ -93,7 +93,7 @@ archive/issue_comments_015156.json:
 }
 ```
 
-Attachment
+Attachment [latex.hg](tarball://root/attachments/some-uuid/ticket2284/latex.hg) by moretti created at 2008-02-24 00:36:40
 
 Okay, submitted a fix; need a review.
 

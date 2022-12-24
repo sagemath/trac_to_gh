@@ -379,7 +379,7 @@ Is there an easy way to multiply out and gather like terms in sage?
 archive/issue_comments_008290.json:
 ```json
 {
-    "body": "Attachment\n\nYou also need the patches from #13242",
+    "body": "Attachment [Tuttepolynomial.sage](tarball://root/attachments/some-uuid/ticket1314/Tuttepolynomial.sage) by lkeough created at 2012-07-15 21:00:01\n\nYou also need the patches from #13242",
     "created_at": "2012-07-15T21:00:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1314",
     "type": "issue_comment",
@@ -388,7 +388,7 @@ archive/issue_comments_008290.json:
 }
 ```
 
-Attachment
+Attachment [Tuttepolynomial.sage](tarball://root/attachments/some-uuid/ticket1314/Tuttepolynomial.sage) by lkeough created at 2012-07-15 21:00:01
 
 You also need the patches from #13242
 
@@ -481,7 +481,7 @@ I was curious and went ahead an implemented the optimizations at http://homepage
 archive/issue_comments_008295.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [tutte.sage](tarball://root/attachments/some-uuid/ticket1314/tutte.sage) by Stefan created at 2012-07-18 04:24:01",
     "created_at": "2012-07-18T04:24:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1314",
     "type": "issue_comment",
@@ -490,7 +490,7 @@ archive/issue_comments_008295.json:
 }
 ```
 
-Attachment
+Attachment [tutte.sage](tarball://root/attachments/some-uuid/ticket1314/tutte.sage) by Stefan created at 2012-07-18 04:24:01
 
 
 
@@ -722,7 +722,7 @@ BTW, could you add yourself to the main TRAC page at the bottom so that I know w
 archive/issue_comments_008305.json:
 ```json
 {
-    "body": "Attachment\n\nOkay !\n\nAttached is the nhansen's code factored into Sage. Before having any changes of being positively reviewed I we need to figure out how can we allow the users to use the edge selectors in the code and document that.\n\nLet me know if you have any other comments and of course don't be shy to modify this yourself as well.",
+    "body": "Attachment [trac_1314_tuttePoly.patch](tarball://root/attachments/some-uuid/ticket1314/trac_1314_tuttePoly.patch) by azi created at 2013-06-22 10:16:12\n\nOkay !\n\nAttached is the nhansen's code factored into Sage. Before having any changes of being positively reviewed I we need to figure out how can we allow the users to use the edge selectors in the code and document that.\n\nLet me know if you have any other comments and of course don't be shy to modify this yourself as well.",
     "created_at": "2013-06-22T10:16:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1314",
     "type": "issue_comment",
@@ -731,7 +731,7 @@ archive/issue_comments_008305.json:
 }
 ```
 
-Attachment
+Attachment [trac_1314_tuttePoly.patch](tarball://root/attachments/some-uuid/ticket1314/trac_1314_tuttePoly.patch) by azi created at 2013-06-22 10:16:12
 
 Okay !
 
@@ -1084,7 +1084,7 @@ so that the cache is valid for only the computation of one "tree".  This does pl
 archive/issue_comments_008322.json:
 ```json
 {
-    "body": "Attachment\n\nThe docs seems to be ok now, thanks Mike !\n\nI have not taken care of the cache cleaning, as I do not know where to put the lines you suggested.\n\nStill I think it deserves to be \"need review\"",
+    "body": "Attachment [trac_1314_addon_fc.patch](tarball://root/attachments/some-uuid/ticket1314/trac_1314_addon_fc.patch) by chapoton created at 2013-10-03 17:02:14\n\nThe docs seems to be ok now, thanks Mike !\n\nI have not taken care of the cache cleaning, as I do not know where to put the lines you suggested.\n\nStill I think it deserves to be \"need review\"",
     "created_at": "2013-10-03T17:02:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1314",
     "type": "issue_comment",
@@ -1093,7 +1093,7 @@ archive/issue_comments_008322.json:
 }
 ```
 
-Attachment
+Attachment [trac_1314_addon_fc.patch](tarball://root/attachments/some-uuid/ticket1314/trac_1314_addon_fc.patch) by chapoton created at 2013-10-03 17:02:14
 
 The docs seems to be ok now, thanks Mike !
 

@@ -288,7 +288,7 @@ Nathann
 archive/issue_comments_064400.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7569.patch](tarball://root/attachments/some-uuid/ticket7569/trac_7569.patch) by ncohen created at 2010-03-22 09:51:55",
     "created_at": "2010-03-22T09:51:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7569",
     "type": "issue_comment",
@@ -297,7 +297,7 @@ archive/issue_comments_064400.json:
 }
 ```
 
-Attachment
+Attachment [trac_7569.patch](tarball://root/attachments/some-uuid/ticket7569/trac_7569.patch) by ncohen created at 2010-03-22 09:51:55
 
 
 
@@ -342,7 +342,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_064403.json:
 ```json
 {
-    "body": "Attachment\n\nI've tested this patch on sage 4.3.4. All tests passed, and the documentation generated with the `browse_sage_doc` function looks ok (we really need to include those graph files in the tree for the reference manual). I made a few changes, only consisting of formatting of code and documentation.\n\nPositive review.",
+    "body": "Attachment [trac_7569_review-abm.patch](tarball://root/attachments/some-uuid/ticket7569/trac_7569_review-abm.patch) by abmasse created at 2010-03-22 16:34:27\n\nI've tested this patch on sage 4.3.4. All tests passed, and the documentation generated with the `browse_sage_doc` function looks ok (we really need to include those graph files in the tree for the reference manual). I made a few changes, only consisting of formatting of code and documentation.\n\nPositive review.",
     "created_at": "2010-03-22T16:34:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7569",
     "type": "issue_comment",
@@ -351,7 +351,7 @@ archive/issue_comments_064403.json:
 }
 ```
 
-Attachment
+Attachment [trac_7569_review-abm.patch](tarball://root/attachments/some-uuid/ticket7569/trac_7569_review-abm.patch) by abmasse created at 2010-03-22 16:34:27
 
 I've tested this patch on sage 4.3.4. All tests passed, and the documentation generated with the `browse_sage_doc` function looks ok (we really need to include those graph files in the tree for the reference manual). I made a few changes, only consisting of formatting of code and documentation.
 

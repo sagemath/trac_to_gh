@@ -908,7 +908,7 @@ fixed few places where "Mixed Integer" was omitted
 archive/issue_comments_071988.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:33 dimpase]:\n> Replying to [comment:32 ncohen]:\n> > From the tests done in my lab since we are using this new license ( we were using CPLEX 10 before ), this one is *much* faster, especially for integer multiflows.\n> > \n> > Nathann\n> \n> works for me with the free academic CPLEX license on Linux x86_64 Debian!\n\nGood work!\nI am giving it a positive review, subject to the patch being updated to the one I just uploaded (that adds Mixed Integer here and there, to avoid a confusion stemming from the fact that Sage does have an LP solver, from cvxopt)\n\nDima",
+    "body": "Attachment [trac_8172-updated.patch](tarball://root/attachments/some-uuid/ticket8172/trac_8172-updated.patch) by dimpase created at 2010-04-09 06:38:28\n\nReplying to [comment:33 dimpase]:\n> Replying to [comment:32 ncohen]:\n> > From the tests done in my lab since we are using this new license ( we were using CPLEX 10 before ), this one is *much* faster, especially for integer multiflows.\n> > \n> > Nathann\n> \n> works for me with the free academic CPLEX license on Linux x86_64 Debian!\n\nGood work!\nI am giving it a positive review, subject to the patch being updated to the one I just uploaded (that adds Mixed Integer here and there, to avoid a confusion stemming from the fact that Sage does have an LP solver, from cvxopt)\n\nDima",
     "created_at": "2010-04-09T06:38:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8172",
     "type": "issue_comment",
@@ -917,7 +917,7 @@ archive/issue_comments_071988.json:
 }
 ```
 
-Attachment
+Attachment [trac_8172-updated.patch](tarball://root/attachments/some-uuid/ticket8172/trac_8172-updated.patch) by dimpase created at 2010-04-09 06:38:28
 
 Replying to [comment:33 dimpase]:
 > Replying to [comment:32 ncohen]:
@@ -997,7 +997,7 @@ Resolution: fixed
 archive/issue_comments_071992.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8172.patch](tarball://root/attachments/some-uuid/ticket8172/trac_8172.patch) by was created at 2010-04-29 05:16:38",
     "created_at": "2010-04-29T05:16:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8172",
     "type": "issue_comment",
@@ -1006,4 +1006,4 @@ archive/issue_comments_071992.json:
 }
 ```
 
-Attachment
+Attachment [trac_8172.patch](tarball://root/attachments/some-uuid/ticket8172/trac_8172.patch) by was created at 2010-04-29 05:16:38

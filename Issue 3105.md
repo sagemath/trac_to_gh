@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3105
 archive/issue_comments_021456.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch appliesw fine to 3.0.1 and the doctests in sage/rings/number_field all pass.\n\nIt looks fine to me.",
+    "body": "Attachment [9606.patch](tarball://root/attachments/some-uuid/ticket3105/9606.patch) by cremona created at 2008-05-05 16:14:20\n\nThis patch appliesw fine to 3.0.1 and the doctests in sage/rings/number_field all pass.\n\nIt looks fine to me.",
     "created_at": "2008-05-05T16:14:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3105",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_021456.json:
 }
 ```
 
-Attachment
+Attachment [9606.patch](tarball://root/attachments/some-uuid/ticket3105/9606.patch) by cremona created at 2008-05-05 16:14:20
 
 This patch appliesw fine to 3.0.1 and the doctests in sage/rings/number_field all pass.
 

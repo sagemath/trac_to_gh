@@ -243,7 +243,7 @@ Total time for all tests: 3.2 seconds
 archive/issue_comments_028576.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3978.patch](tarball://root/attachments/some-uuid/ticket3978/trac_3978.patch) by mabshoff created at 2008-09-12 23:14:59",
     "created_at": "2008-09-12T23:14:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3978",
     "type": "issue_comment",
@@ -252,7 +252,7 @@ archive/issue_comments_028576.json:
 }
 ```
 
-Attachment
+Attachment [trac_3978.patch](tarball://root/attachments/some-uuid/ticket3978/trac_3978.patch) by mabshoff created at 2008-09-12 23:14:59
 
 
 

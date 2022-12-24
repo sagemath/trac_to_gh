@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6712
 archive/issue_comments_055107.json:
 ```json
 {
-    "body": "Attachment\n\nbased on Sage 4.1.1.rc2",
+    "body": "Attachment [trac_6712-spell-check-interfaces.patch](tarball://root/attachments/some-uuid/ticket6712/trac_6712-spell-check-interfaces.patch) by mvngu created at 2009-08-11 12:08:21\n\nbased on Sage 4.1.1.rc2",
     "created_at": "2009-08-11T12:08:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6712",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_055107.json:
 }
 ```
 
-Attachment
+Attachment [trac_6712-spell-check-interfaces.patch](tarball://root/attachments/some-uuid/ticket6712/trac_6712-spell-check-interfaces.patch) by mvngu created at 2009-08-11 12:08:21
 
 based on Sage 4.1.1.rc2
 

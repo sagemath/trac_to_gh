@@ -75,7 +75,7 @@ Some notes for posterity:
 archive/issue_comments_048470.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6085-part-1.patch](tarball://root/attachments/some-uuid/ticket6085/trac_6085-part-1.patch) by rlm created at 2009-05-21 14:49:11",
     "created_at": "2009-05-21T14:49:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6085",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_048470.json:
 }
 ```
 
-Attachment
+Attachment [trac_6085-part-1.patch](tarball://root/attachments/some-uuid/ticket6085/trac_6085-part-1.patch) by rlm created at 2009-05-21 14:49:11
 
 
 
@@ -93,7 +93,7 @@ Attachment
 archive/issue_comments_048471.json:
 ```json
 {
-    "body": "Attachment\n\nAdd myself so I receive updates on this ticket :-)",
+    "body": "Attachment [trac_6085-part-2.patch](tarball://root/attachments/some-uuid/ticket6085/trac_6085-part-2.patch) by mvngu created at 2009-05-21 23:36:27\n\nAdd myself so I receive updates on this ticket :-)",
     "created_at": "2009-05-21T23:36:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6085",
     "type": "issue_comment",
@@ -102,7 +102,7 @@ archive/issue_comments_048471.json:
 }
 ```
 
-Attachment
+Attachment [trac_6085-part-2.patch](tarball://root/attachments/some-uuid/ticket6085/trac_6085-part-2.patch) by mvngu created at 2009-05-21 23:36:27
 
 Add myself so I receive updates on this ticket :-)
 
@@ -113,7 +113,7 @@ Add myself so I receive updates on this ticket :-)
 archive/issue_comments_048472.json:
 ```json
 {
-    "body": "Attachment\n\nThese patches applied cleanly against 4.0.1.a0 on an amd64 ubuntu 9.04 machine. After running \"sage -b\" and then \"sage -testall\", there were the following failures:\n\n\n```\nThe following tests failed:                                                                                         \n\n\n        sage -t  \"devel/sage/doc/en/constructions/graph_theory.rst\"\n        sage -t  \"devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\"\n        sage -t  \"devel/sage/sage/graphs/print_graphs.py\"                       \n        sage -t  \"devel/sage/sage/graphs/graph_database.py\"                     \n        sage -t  \"devel/sage/sage/graphs/graph_list.py\"                         \n        sage -t  \"devel/sage/sage/graphs/linearextensions.py\"                   \n        sage -t  \"devel/sage/sage/graphs/planarity.pyx\"                         \n        sage -t  \"devel/sage/sage/graphs/bipartite_graph.py\"                    \n        sage -t  \"devel/sage/sage/graphs/schnyder.py\"                           \n        sage -t  \"devel/sage/sage/graphs/graph_bundle.py\"                       \n        sage -t  \"devel/sage/sage/graphs/graph_plot.py\"                         \n        sage -t  \"devel/sage/sage/graphs/graph_generators.py\"                   \n        sage -t  \"devel/sage/sage/graphs/graph_coloring.py\"                     \n        sage -t  \"devel/sage/sage/graphs/graph_fast.pyx\"                        \n        sage -t  \"devel/sage/sage/graphs/graph.py\"                              \n        sage -t  \"devel/sage/sage/graphs/chrompoly.pyx\"                         \n        sage -t  \"devel/sage/sage/graphs/base/c_graph.pyx\"                      \n        sage -t  \"devel/sage/sage/graphs/base/sparse_graph.pyx\"                 \n        sage -t  \"devel/sage/sage/graphs/graph_isom.pyx\"                        \n        sage -t  \"devel/sage/sage/crypto/mq/mpolynomialsystem.py\"               \n        sage -t  \"devel/sage/sage/matrix/constructor.py\"                        \n        sage -t  \"devel/sage/sage/geometry/polyhedra.py\"                        \n        sage -t  \"devel/sage/sage/geometry/lattice_polytope.py\"                 \n        sage -t  \"devel/sage/sage/groups/perm_gps/partn_ref/refinement_graphs.pyx\"\n        sage -t  \"devel/sage/sage/plot/plot.py\"                                   \n        sage -t  \"devel/sage/sage/homology/simplicial_complex.py\"                 \n        sage -t  \"devel/sage/sage/combinat/posets/poset_examples.py\"              \n        sage -t  \"devel/sage/sage/combinat/posets/posets.py\"                      \n        sage -t  \"devel/sage/sage/combinat/posets/elements.py\"                    \n        sage -t  \"devel/sage/sage/combinat/posets/lattices.py\"                    \n        sage -t  \"devel/sage/sage/combinat/posets/hasse_diagram.py\"               \n        sage -t  \"devel/sage/sage/combinat/partition_algebra.py\"                  \n        sage -t  \"devel/sage/sage/combinat/skew_partition.py\"                     \n        sage -t  \"devel/sage/sage/combinat/ribbon.py\"                             \n        sage -t  \"devel/sage/sage/combinat/skew_tableau.py\"                       \n        sage -t  \"devel/sage/sage/combinat/words/suffix_trees.py\"                 \n        sage -t  \"devel/sage/sage/combinat/root_system/type_G.py\"                 \n        sage -t  \"devel/sage/sage/combinat/root_system/type_E.py\"                 \n        sage -t  \"devel/sage/sage/combinat/root_system/root_system.py\"            \n        sage -t  \"devel/sage/sage/combinat/root_system/type_D.py\"                 \n        sage -t  \"devel/sage/sage/combinat/root_system/root_lattice_realization.py\"\n        sage -t  \"devel/sage/sage/combinat/root_system/type_B.py\"                  \n        sage -t  \"devel/sage/sage/combinat/root_system/type_F.py\"                  \n        sage -t  \"devel/sage/sage/combinat/root_system/type_C.py\"                  \n        sage -t  \"devel/sage/sage/combinat/root_system/type_A.py\"                  \n        sage -t  \"devel/sage/sage/combinat/root_system/cartan_type.py\"             \n        sage -t  \"devel/sage/sage/combinat/root_system/weight_space.py\"            \n        sage -t  \"devel/sage/sage/combinat/root_system/coxeter_matrix.py\"          \n        sage -t  \"devel/sage/sage/combinat/root_system/weight_lattice_realization.py\"\n        sage -t  \"devel/sage/sage/combinat/root_system/type_dual.py\"                 \n        sage -t  \"devel/sage/sage/combinat/root_system/weyl_group.py\"                \"devel/sage/sage/misc/html.py\" \n        sage -t  \"devel/sage/sage/combinat/root_system/type_reducible.py\"            \n        sage -t  \"devel/sage/sage/combinat/root_system/dynkin_diagram.py\"            \n        sage -t  \"devel/sage/sage/combinat/root_system/root_space.py\"                \n        sage -t  \"devel/sage/sage/combinat/root_system/cartan_matrix.py\"             \n        sage -t  \"devel/sage/sage/combinat/permutation.py\"                           \n        sage -t  \"devel/sage/sage/combinat/species/species.py\"                       \n        sage -t  \"devel/sage/sage/combinat/species/recursive_species.py\"             \n        sage -t  \"devel/sage/sage/combinat/species/sum_species.py\"                   \n        sage -t  \"devel/sage/sage/combinat/species/product_species.py\"               \n        sage -t  \"devel/sage/sage/combinat/crystals/fast_crystals.py\"                \n        sage -t  \"devel/sage/sage/combinat/crystals/tensor_product.py\"               \n        sage -t  \"devel/sage/sage/combinat/crystals/spins.py\"                        \n        sage -t  \"devel/sage/sage/combinat/crystals/letters.py\"                      \n        sage -t  \"devel/sage/sage/combinat/crystals/crystals.py\"                     \n        sage -t  \"devel/sage/sage/combinat/graph_path.py\"                            \n        sage -t  \"devel/sage/sage/databases/database.py\"                             \n        sage -t  \"devel/sage/sage/misc/html.py\"                                      \n        sage -t  \"devel/sage/sage/misc/functional.py\"                                \n        sage -t  \"devel/sage/sage/misc/classgraph.py\"     \n```\n\n(I suspect that \"devel/sage/sage/misc/html.py\" failing was already reported as a separate issue. The others seem new.) In particular, there was the following:\n\n\n```\nwdj@hera:~/sagefiles/sage-4.0.1.alpha0$ ./sage -t  \"devel/sage/doc/en/constructions/graph_theory.rst\"\nsage -t  \"devel/sage/doc/en/constructions/graph_theory.rst\"                                          \n**********************************************************************                               \nFile \"/home/wdj/sagefiles/sage-4.0.1.alpha0/devel/sage/doc/en/constructions/graph_theory.rst\", line 31:\n    sage: D = DiGraph( { 0: [1], 1: [2], 2: [0]} )                                                     \nException raised:                                                                                      \n    Traceback (most recent call last):                                                                 \n      File \"/home/wdj/sagefiles/sage-4.0.1.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test \n        self.run_one_example(test, example, filename, compileflags)                                    \n      File \"/home/wdj/sagefiles/sage-4.0.1.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)                  \n      File \"/home/wdj/sagefiles/sage-4.0.1.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs                                                                   \n      File \"<doctest __main__.example_1[2]>\", line 1, in <module>                                        \n        D = DiGraph( { Integer(0): [Integer(1)], Integer(1): [Integer(2)], Integer(2): [Integer(0)]} )###line 31:\n    sage: D = DiGraph( { 0: [1], 1: [2], 2: [0]} )                                                               \n      File \"/home/wdj/sagefiles/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/graphs/graph.py\", line 10117, in __init__\n        self.add_vertices(verts)\n      File \"/home/wdj/sagefiles/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/graphs/graph.py\", line 2923, in add_vertices\n        self._backend.add_vertices(vertices)\n      File \"sparse_graph.pyx\", line 1627, in sage.graphs.base.sparse_graph.SparseGraphBackend.add_vertices (sage/graphs/base/sparse_graph.c:15334)\n      File \"sparse_graph.pyx\", line 404, in sage.graphs.base.sparse_graph.SparseGraph.add_vertices (sage/graphs/base/sparse_graph.c:5294)\n      File \"sparse_graph.pyx\", line 424, in sage.graphs.base.sparse_graph.SparseGraph.add_vertices (sage/graphs/base/sparse_graph.c:5217)\n    TypeError: 'int' object is not iterable\n**********************************************************************\n1 items had failures:\n   1 of   3 in __main__.example_1\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/wdj/sagefiles/sage-4.0.1.alpha0/tmp/.doctest_graph_theory.py\n         [3.3 s]\nexit code: 1024\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/doc/en/constructions/graph_theory.rst\"\n\n```\n\n\nHope this helps.",
+    "body": "Attachment [trac_6085-part-3.patch](tarball://root/attachments/some-uuid/ticket6085/trac_6085-part-3.patch) by wdj created at 2009-06-03 14:29:37\n\nThese patches applied cleanly against 4.0.1.a0 on an amd64 ubuntu 9.04 machine. After running \"sage -b\" and then \"sage -testall\", there were the following failures:\n\n\n```\nThe following tests failed:                                                                                         \n\n\n        sage -t  \"devel/sage/doc/en/constructions/graph_theory.rst\"\n        sage -t  \"devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\"\n        sage -t  \"devel/sage/sage/graphs/print_graphs.py\"                       \n        sage -t  \"devel/sage/sage/graphs/graph_database.py\"                     \n        sage -t  \"devel/sage/sage/graphs/graph_list.py\"                         \n        sage -t  \"devel/sage/sage/graphs/linearextensions.py\"                   \n        sage -t  \"devel/sage/sage/graphs/planarity.pyx\"                         \n        sage -t  \"devel/sage/sage/graphs/bipartite_graph.py\"                    \n        sage -t  \"devel/sage/sage/graphs/schnyder.py\"                           \n        sage -t  \"devel/sage/sage/graphs/graph_bundle.py\"                       \n        sage -t  \"devel/sage/sage/graphs/graph_plot.py\"                         \n        sage -t  \"devel/sage/sage/graphs/graph_generators.py\"                   \n        sage -t  \"devel/sage/sage/graphs/graph_coloring.py\"                     \n        sage -t  \"devel/sage/sage/graphs/graph_fast.pyx\"                        \n        sage -t  \"devel/sage/sage/graphs/graph.py\"                              \n        sage -t  \"devel/sage/sage/graphs/chrompoly.pyx\"                         \n        sage -t  \"devel/sage/sage/graphs/base/c_graph.pyx\"                      \n        sage -t  \"devel/sage/sage/graphs/base/sparse_graph.pyx\"                 \n        sage -t  \"devel/sage/sage/graphs/graph_isom.pyx\"                        \n        sage -t  \"devel/sage/sage/crypto/mq/mpolynomialsystem.py\"               \n        sage -t  \"devel/sage/sage/matrix/constructor.py\"                        \n        sage -t  \"devel/sage/sage/geometry/polyhedra.py\"                        \n        sage -t  \"devel/sage/sage/geometry/lattice_polytope.py\"                 \n        sage -t  \"devel/sage/sage/groups/perm_gps/partn_ref/refinement_graphs.pyx\"\n        sage -t  \"devel/sage/sage/plot/plot.py\"                                   \n        sage -t  \"devel/sage/sage/homology/simplicial_complex.py\"                 \n        sage -t  \"devel/sage/sage/combinat/posets/poset_examples.py\"              \n        sage -t  \"devel/sage/sage/combinat/posets/posets.py\"                      \n        sage -t  \"devel/sage/sage/combinat/posets/elements.py\"                    \n        sage -t  \"devel/sage/sage/combinat/posets/lattices.py\"                    \n        sage -t  \"devel/sage/sage/combinat/posets/hasse_diagram.py\"               \n        sage -t  \"devel/sage/sage/combinat/partition_algebra.py\"                  \n        sage -t  \"devel/sage/sage/combinat/skew_partition.py\"                     \n        sage -t  \"devel/sage/sage/combinat/ribbon.py\"                             \n        sage -t  \"devel/sage/sage/combinat/skew_tableau.py\"                       \n        sage -t  \"devel/sage/sage/combinat/words/suffix_trees.py\"                 \n        sage -t  \"devel/sage/sage/combinat/root_system/type_G.py\"                 \n        sage -t  \"devel/sage/sage/combinat/root_system/type_E.py\"                 \n        sage -t  \"devel/sage/sage/combinat/root_system/root_system.py\"            \n        sage -t  \"devel/sage/sage/combinat/root_system/type_D.py\"                 \n        sage -t  \"devel/sage/sage/combinat/root_system/root_lattice_realization.py\"\n        sage -t  \"devel/sage/sage/combinat/root_system/type_B.py\"                  \n        sage -t  \"devel/sage/sage/combinat/root_system/type_F.py\"                  \n        sage -t  \"devel/sage/sage/combinat/root_system/type_C.py\"                  \n        sage -t  \"devel/sage/sage/combinat/root_system/type_A.py\"                  \n        sage -t  \"devel/sage/sage/combinat/root_system/cartan_type.py\"             \n        sage -t  \"devel/sage/sage/combinat/root_system/weight_space.py\"            \n        sage -t  \"devel/sage/sage/combinat/root_system/coxeter_matrix.py\"          \n        sage -t  \"devel/sage/sage/combinat/root_system/weight_lattice_realization.py\"\n        sage -t  \"devel/sage/sage/combinat/root_system/type_dual.py\"                 \n        sage -t  \"devel/sage/sage/combinat/root_system/weyl_group.py\"                \"devel/sage/sage/misc/html.py\" \n        sage -t  \"devel/sage/sage/combinat/root_system/type_reducible.py\"            \n        sage -t  \"devel/sage/sage/combinat/root_system/dynkin_diagram.py\"            \n        sage -t  \"devel/sage/sage/combinat/root_system/root_space.py\"                \n        sage -t  \"devel/sage/sage/combinat/root_system/cartan_matrix.py\"             \n        sage -t  \"devel/sage/sage/combinat/permutation.py\"                           \n        sage -t  \"devel/sage/sage/combinat/species/species.py\"                       \n        sage -t  \"devel/sage/sage/combinat/species/recursive_species.py\"             \n        sage -t  \"devel/sage/sage/combinat/species/sum_species.py\"                   \n        sage -t  \"devel/sage/sage/combinat/species/product_species.py\"               \n        sage -t  \"devel/sage/sage/combinat/crystals/fast_crystals.py\"                \n        sage -t  \"devel/sage/sage/combinat/crystals/tensor_product.py\"               \n        sage -t  \"devel/sage/sage/combinat/crystals/spins.py\"                        \n        sage -t  \"devel/sage/sage/combinat/crystals/letters.py\"                      \n        sage -t  \"devel/sage/sage/combinat/crystals/crystals.py\"                     \n        sage -t  \"devel/sage/sage/combinat/graph_path.py\"                            \n        sage -t  \"devel/sage/sage/databases/database.py\"                             \n        sage -t  \"devel/sage/sage/misc/html.py\"                                      \n        sage -t  \"devel/sage/sage/misc/functional.py\"                                \n        sage -t  \"devel/sage/sage/misc/classgraph.py\"     \n```\n\n(I suspect that \"devel/sage/sage/misc/html.py\" failing was already reported as a separate issue. The others seem new.) In particular, there was the following:\n\n\n```\nwdj@hera:~/sagefiles/sage-4.0.1.alpha0$ ./sage -t  \"devel/sage/doc/en/constructions/graph_theory.rst\"\nsage -t  \"devel/sage/doc/en/constructions/graph_theory.rst\"                                          \n**********************************************************************                               \nFile \"/home/wdj/sagefiles/sage-4.0.1.alpha0/devel/sage/doc/en/constructions/graph_theory.rst\", line 31:\n    sage: D = DiGraph( { 0: [1], 1: [2], 2: [0]} )                                                     \nException raised:                                                                                      \n    Traceback (most recent call last):                                                                 \n      File \"/home/wdj/sagefiles/sage-4.0.1.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test \n        self.run_one_example(test, example, filename, compileflags)                                    \n      File \"/home/wdj/sagefiles/sage-4.0.1.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)                  \n      File \"/home/wdj/sagefiles/sage-4.0.1.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs                                                                   \n      File \"<doctest __main__.example_1[2]>\", line 1, in <module>                                        \n        D = DiGraph( { Integer(0): [Integer(1)], Integer(1): [Integer(2)], Integer(2): [Integer(0)]} )###line 31:\n    sage: D = DiGraph( { 0: [1], 1: [2], 2: [0]} )                                                               \n      File \"/home/wdj/sagefiles/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/graphs/graph.py\", line 10117, in __init__\n        self.add_vertices(verts)\n      File \"/home/wdj/sagefiles/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/graphs/graph.py\", line 2923, in add_vertices\n        self._backend.add_vertices(vertices)\n      File \"sparse_graph.pyx\", line 1627, in sage.graphs.base.sparse_graph.SparseGraphBackend.add_vertices (sage/graphs/base/sparse_graph.c:15334)\n      File \"sparse_graph.pyx\", line 404, in sage.graphs.base.sparse_graph.SparseGraph.add_vertices (sage/graphs/base/sparse_graph.c:5294)\n      File \"sparse_graph.pyx\", line 424, in sage.graphs.base.sparse_graph.SparseGraph.add_vertices (sage/graphs/base/sparse_graph.c:5217)\n    TypeError: 'int' object is not iterable\n**********************************************************************\n1 items had failures:\n   1 of   3 in __main__.example_1\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/wdj/sagefiles/sage-4.0.1.alpha0/tmp/.doctest_graph_theory.py\n         [3.3 s]\nexit code: 1024\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/doc/en/constructions/graph_theory.rst\"\n\n```\n\n\nHope this helps.",
     "created_at": "2009-06-03T14:29:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6085",
     "type": "issue_comment",
@@ -122,7 +122,7 @@ archive/issue_comments_048472.json:
 }
 ```
 
-Attachment
+Attachment [trac_6085-part-3.patch](tarball://root/attachments/some-uuid/ticket6085/trac_6085-part-3.patch) by wdj created at 2009-06-03 14:29:37
 
 These patches applied cleanly against 4.0.1.a0 on an amd64 ubuntu 9.04 machine. After running "sage -b" and then "sage -testall", there were the following failures:
 
@@ -320,7 +320,7 @@ G.add_vertices(range(5000))
 archive/issue_comments_048476.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6085-part-5.patch](tarball://root/attachments/some-uuid/ticket6085/trac_6085-part-5.patch) by rlm created at 2009-06-04 12:46:21",
     "created_at": "2009-06-04T12:46:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6085",
     "type": "issue_comment",
@@ -329,7 +329,7 @@ archive/issue_comments_048476.json:
 }
 ```
 
-Attachment
+Attachment [trac_6085-part-5.patch](tarball://root/attachments/some-uuid/ticket6085/trac_6085-part-5.patch) by rlm created at 2009-06-04 12:46:21
 
 
 
@@ -356,7 +356,7 @@ OK, latest version passes memory testing, and passes all tests except where pick
 archive/issue_comments_048478.json:
 ```json
 {
-    "body": "Attachment\n\nPart 6 brings dense graphs up to speed. Still need pickling.",
+    "body": "Attachment [trac_6085-part-6.patch](tarball://root/attachments/some-uuid/ticket6085/trac_6085-part-6.patch) by rlm created at 2009-06-05 16:32:21\n\nPart 6 brings dense graphs up to speed. Still need pickling.",
     "created_at": "2009-06-05T16:32:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6085",
     "type": "issue_comment",
@@ -365,7 +365,7 @@ archive/issue_comments_048478.json:
 }
 ```
 
-Attachment
+Attachment [trac_6085-part-6.patch](tarball://root/attachments/some-uuid/ticket6085/trac_6085-part-6.patch) by rlm created at 2009-06-05 16:32:21
 
 Part 6 brings dense graphs up to speed. Still need pickling.
 
@@ -718,7 +718,7 @@ Got:
 archive/issue_comments_048480.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6085-part-7.patch](tarball://root/attachments/some-uuid/ticket6085/trac_6085-part-7.patch) by rlm created at 2009-06-06 07:10:58",
     "created_at": "2009-06-06T07:10:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6085",
     "type": "issue_comment",
@@ -727,7 +727,7 @@ archive/issue_comments_048480.json:
 }
 ```
 
-Attachment
+Attachment [trac_6085-part-7.patch](tarball://root/attachments/some-uuid/ticket6085/trac_6085-part-7.patch) by rlm created at 2009-06-06 07:10:58
 
 
 
@@ -754,7 +754,7 @@ Species doctests now passing. The `sage/combinat/words` errors are a bit more my
 archive/issue_comments_048482.json:
 ```json
 {
-    "body": "Attachment\n\nA benchmark:\n\n\n```\nsage: time G = Graph(1000000)\nCPU times: user 7.31 s, sys: 0.29 s, total: 7.60 s\nWall time: 7.65 s\n```\n\n\n\n```\nsage: time G = Graph(1000000)\nCPU times: user 0.05 s, sys: 0.09 s, total: 0.13 s\nWall time: 0.14 s\n```\n",
+    "body": "Attachment [trac_6085-part-8.patch](tarball://root/attachments/some-uuid/ticket6085/trac_6085-part-8.patch) by rlm created at 2009-06-16 20:03:03\n\nA benchmark:\n\n\n```\nsage: time G = Graph(1000000)\nCPU times: user 7.31 s, sys: 0.29 s, total: 7.60 s\nWall time: 7.65 s\n```\n\n\n\n```\nsage: time G = Graph(1000000)\nCPU times: user 0.05 s, sys: 0.09 s, total: 0.13 s\nWall time: 0.14 s\n```\n",
     "created_at": "2009-06-16T20:03:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6085",
     "type": "issue_comment",
@@ -763,7 +763,7 @@ archive/issue_comments_048482.json:
 }
 ```
 
-Attachment
+Attachment [trac_6085-part-8.patch](tarball://root/attachments/some-uuid/ticket6085/trac_6085-part-8.patch) by rlm created at 2009-06-16 20:03:03
 
 A benchmark:
 
@@ -790,7 +790,7 @@ Wall time: 0.14 s
 archive/issue_comments_048483.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6085-part-4-rebased.patch](tarball://root/attachments/some-uuid/ticket6085/trac_6085-part-4-rebased.patch) by rlm created at 2009-06-17 17:02:47",
     "created_at": "2009-06-17T17:02:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6085",
     "type": "issue_comment",
@@ -799,7 +799,7 @@ archive/issue_comments_048483.json:
 }
 ```
 
-Attachment
+Attachment [trac_6085-part-4-rebased.patch](tarball://root/attachments/some-uuid/ticket6085/trac_6085-part-4-rebased.patch) by rlm created at 2009-06-17 17:02:47
 
 
 
@@ -808,7 +808,7 @@ Attachment
 archive/issue_comments_048484.json:
 ```json
 {
-    "body": "Attachment\n\nApply patches in *numerical* order, not the order listed. Patches are rebased on sage-4.0.2.rc2.",
+    "body": "Attachment [trac_6085-part-9-rebased.patch](tarball://root/attachments/some-uuid/ticket6085/trac_6085-part-9-rebased.patch) by rlm created at 2009-06-17 17:05:23\n\nApply patches in *numerical* order, not the order listed. Patches are rebased on sage-4.0.2.rc2.",
     "created_at": "2009-06-17T17:05:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6085",
     "type": "issue_comment",
@@ -817,7 +817,7 @@ archive/issue_comments_048484.json:
 }
 ```
 
-Attachment
+Attachment [trac_6085-part-9-rebased.patch](tarball://root/attachments/some-uuid/ticket6085/trac_6085-part-9-rebased.patch) by rlm created at 2009-06-17 17:05:23
 
 Apply patches in *numerical* order, not the order listed. Patches are rebased on sage-4.0.2.rc2.
 
@@ -846,7 +846,7 @@ Equivalent to applying parts 1 through 9
 archive/issue_comments_048486.json:
 ```json
 {
-    "body": "Attachment\n\nOne last bugfix in bitsets",
+    "body": "Attachment [trac_6085-part-10.patch](tarball://root/attachments/some-uuid/ticket6085/trac_6085-part-10.patch) by rlm created at 2009-06-18 15:47:27\n\nOne last bugfix in bitsets",
     "created_at": "2009-06-18T15:47:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6085",
     "type": "issue_comment",
@@ -855,7 +855,7 @@ archive/issue_comments_048486.json:
 }
 ```
 
-Attachment
+Attachment [trac_6085-part-10.patch](tarball://root/attachments/some-uuid/ticket6085/trac_6085-part-10.patch) by rlm created at 2009-06-18 15:47:27
 
 One last bugfix in bitsets
 
@@ -899,7 +899,7 @@ abort: patch failed to apply
 archive/issue_comments_048488.json:
 ```json
 {
-    "body": "Attachment\n\nPython 2.6 formatting changes",
+    "body": "Attachment [trac_6085-part-11.patch](tarball://root/attachments/some-uuid/ticket6085/trac_6085-part-11.patch) by rlm created at 2009-06-25 08:59:15\n\nPython 2.6 formatting changes",
     "created_at": "2009-06-25T08:59:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6085",
     "type": "issue_comment",
@@ -908,7 +908,7 @@ archive/issue_comments_048488.json:
 }
 ```
 
-Attachment
+Attachment [trac_6085-part-11.patch](tarball://root/attachments/some-uuid/ticket6085/trac_6085-part-11.patch) by rlm created at 2009-06-25 08:59:15
 
 Python 2.6 formatting changes
 

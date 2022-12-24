@@ -61,7 +61,7 @@ Example Sage notebook
 archive/issue_comments_076472.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [download_worksheets.zip](tarball://root/attachments/some-uuid/ticket8486/download_worksheets.zip) by klee created at 2010-03-10 07:46:41",
     "created_at": "2010-03-10T07:46:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8486",
     "type": "issue_comment",
@@ -70,7 +70,7 @@ archive/issue_comments_076472.json:
 }
 ```
 
-Attachment
+Attachment [download_worksheets.zip](tarball://root/attachments/some-uuid/ticket8486/download_worksheets.zip) by klee created at 2010-03-10 07:46:41
 
 
 
@@ -239,7 +239,7 @@ Thank you, Dan. I will work on that.
 archive/issue_comments_076479.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated the patch. Now all doctests pass.",
+    "body": "Attachment [trac_8486.patch](tarball://root/attachments/some-uuid/ticket8486/trac_8486.patch) by klee created at 2010-03-16 13:17:40\n\nUpdated the patch. Now all doctests pass.",
     "created_at": "2010-03-16T13:17:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8486",
     "type": "issue_comment",
@@ -248,7 +248,7 @@ archive/issue_comments_076479.json:
 }
 ```
 
-Attachment
+Attachment [trac_8486.patch](tarball://root/attachments/some-uuid/ticket8486/trac_8486.patch) by klee created at 2010-03-16 13:17:40
 
 Updated the patch. Now all doctests pass.
 
@@ -351,7 +351,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_076485.json:
 ```json
 {
-    "body": "Attachment\n\nUsing `os.system('which xelatex >/dev/null')` won't work right on Solaris: on that OS, \"which\" has a return value of 0 even if the command is not found, so \n\n```\nnot bool(os.system('which xelatex >/dev/null'))\n```\n\nwill always return True there.  Use the function `have_program` from #8474 instead.",
+    "body": "Attachment [trac_8486_extra_documentation.patch](tarball://root/attachments/some-uuid/ticket8486/trac_8486_extra_documentation.patch) by jhpalmieri created at 2010-03-17 15:47:19\n\nUsing `os.system('which xelatex >/dev/null')` won't work right on Solaris: on that OS, \"which\" has a return value of 0 even if the command is not found, so \n\n```\nnot bool(os.system('which xelatex >/dev/null'))\n```\n\nwill always return True there.  Use the function `have_program` from #8474 instead.",
     "created_at": "2010-03-17T15:47:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8486",
     "type": "issue_comment",
@@ -360,7 +360,7 @@ archive/issue_comments_076485.json:
 }
 ```
 
-Attachment
+Attachment [trac_8486_extra_documentation.patch](tarball://root/attachments/some-uuid/ticket8486/trac_8486_extra_documentation.patch) by jhpalmieri created at 2010-03-17 15:47:19
 
 Using `os.system('which xelatex >/dev/null')` won't work right on Solaris: on that OS, "which" has a return value of 0 even if the command is not found, so 
 
@@ -439,7 +439,7 @@ Sure, and thanks for offering to rebase it.  (I understand your point, but I don
 archive/issue_comments_076489.json:
 ```json
 {
-    "body": "Attachment\n\none-line change to use have_program",
+    "body": "Attachment [trac_8486_use_have_program.patch](tarball://root/attachments/some-uuid/ticket8486/trac_8486_use_have_program.patch) by ddrake created at 2010-03-18 01:08:09\n\none-line change to use have_program",
     "created_at": "2010-03-18T01:08:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8486",
     "type": "issue_comment",
@@ -448,7 +448,7 @@ archive/issue_comments_076489.json:
 }
 ```
 
-Attachment
+Attachment [trac_8486_use_have_program.patch](tarball://root/attachments/some-uuid/ticket8486/trac_8486_use_have_program.patch) by ddrake created at 2010-03-18 01:08:09
 
 one-line change to use have_program
 
@@ -531,7 +531,7 @@ Looks good to me.  One docstring is missing the "r" before the triple quotes, so
 archive/issue_comments_076494.json:
 ```json
 {
-    "body": "Attachment\n\ncombines and replaces all previous patches",
+    "body": "Attachment [trac_8486-referee.patch](tarball://root/attachments/some-uuid/ticket8486/trac_8486-referee.patch) by klee created at 2010-03-18 01:56:27\n\ncombines and replaces all previous patches",
     "created_at": "2010-03-18T01:56:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8486",
     "type": "issue_comment",
@@ -540,7 +540,7 @@ archive/issue_comments_076494.json:
 }
 ```
 
-Attachment
+Attachment [trac_8486-referee.patch](tarball://root/attachments/some-uuid/ticket8486/trac_8486-referee.patch) by klee created at 2010-03-18 01:56:27
 
 combines and replaces all previous patches
 
@@ -551,7 +551,7 @@ combines and replaces all previous patches
 archive/issue_comments_076495.json:
 ```json
 {
-    "body": "Attachment\n\nI looked at Dan's extra documentation. It is nice. But I deleted the last comment in the doc of \"engine\" because r\"\\usepackage...\" only fails in the notebook. See the discussion in \n\n!http://groups.google.com/group/sage-devel/browse_frm/thread/71cd8ec6313b7e16/da96b8c19ab45224#da96b8c19ab45224\n\nSee also the ticket 3154 at \n\nhttp://trac.sagemath.org/sage_trac/ticket/3154\n\nSo I think the problem of \"\\u\" in the raw string in notebook is only temporary, assuming the ticket 3154 is reviewed sooner or later.",
+    "body": "Attachment [trac_8486_v2.patch](tarball://root/attachments/some-uuid/ticket8486/trac_8486_v2.patch) by klee created at 2010-03-18 02:04:27\n\nI looked at Dan's extra documentation. It is nice. But I deleted the last comment in the doc of \"engine\" because r\"\\usepackage...\" only fails in the notebook. See the discussion in \n\n!http://groups.google.com/group/sage-devel/browse_frm/thread/71cd8ec6313b7e16/da96b8c19ab45224#da96b8c19ab45224\n\nSee also the ticket 3154 at \n\nhttp://trac.sagemath.org/sage_trac/ticket/3154\n\nSo I think the problem of \"\\u\" in the raw string in notebook is only temporary, assuming the ticket 3154 is reviewed sooner or later.",
     "created_at": "2010-03-18T02:04:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8486",
     "type": "issue_comment",
@@ -560,7 +560,7 @@ archive/issue_comments_076495.json:
 }
 ```
 
-Attachment
+Attachment [trac_8486_v2.patch](tarball://root/attachments/some-uuid/ticket8486/trac_8486_v2.patch) by klee created at 2010-03-18 02:04:27
 
 I looked at Dan's extra documentation. It is nice. But I deleted the last comment in the doc of "engine" because r"\usepackage..." only fails in the notebook. See the discussion in 
 

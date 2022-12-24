@@ -102,7 +102,7 @@ Changing status from new to needs_review.
 archive/issue_comments_064031.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch `trac_7544-sage-spkg.patch` should be applied to the script repository. It changes the file `SAGE_ROOT/local/bin/sage-spkg` so that one can install an spkg by passing any of the above four values to the options \"`-i`\" and \"`-f`\".",
+    "body": "Attachment [trac_7544-sage-spkg.patch](tarball://root/attachments/some-uuid/ticket7544/trac_7544-sage-spkg.patch) by mvngu created at 2009-11-27 16:53:13\n\nThe patch `trac_7544-sage-spkg.patch` should be applied to the script repository. It changes the file `SAGE_ROOT/local/bin/sage-spkg` so that one can install an spkg by passing any of the above four values to the options \"`-i`\" and \"`-f`\".",
     "created_at": "2009-11-27T16:53:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7544",
     "type": "issue_comment",
@@ -111,7 +111,7 @@ archive/issue_comments_064031.json:
 }
 ```
 
-Attachment
+Attachment [trac_7544-sage-spkg.patch](tarball://root/attachments/some-uuid/ticket7544/trac_7544-sage-spkg.patch) by mvngu created at 2009-11-27 16:53:13
 
 The patch `trac_7544-sage-spkg.patch` should be applied to the script repository. It changes the file `SAGE_ROOT/local/bin/sage-spkg` so that one can install an spkg by passing any of the above four values to the options "`-i`" and "`-f`".
 

@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1877
 archive/issue_comments_011875.json:
 ```json
 {
-    "body": "Attachment\n\nplot3d and parametric_plot3d should fail a tiny bit more gracefully if they're given two ranges using the same variable:\n\n```\nsage: var('x,y')\nsage: plot3d(sin(x*y), (x,-1,1), (x,-1,1))\nValueError: If the ranges in the argument of plot3d are 3-tuples, then the first components of those 3-tuples must be different.\nsage: var('u,v')\nsage: parametric_plot3d((cos(u), sin(u) + cos(v), sin(v)), (u, 0, 2*pi), (u, -pi, pi))\nValueError: If the ranges in the argument of parametric_plot3d are both 3-tuples, then the first components of those 3-tuples must be different.\n```\n",
+    "body": "Attachment [1877fix.hg](tarball://root/attachments/some-uuid/ticket1877/1877fix.hg) by thomag created at 2008-08-26 15:52:31\n\nplot3d and parametric_plot3d should fail a tiny bit more gracefully if they're given two ranges using the same variable:\n\n```\nsage: var('x,y')\nsage: plot3d(sin(x*y), (x,-1,1), (x,-1,1))\nValueError: If the ranges in the argument of plot3d are 3-tuples, then the first components of those 3-tuples must be different.\nsage: var('u,v')\nsage: parametric_plot3d((cos(u), sin(u) + cos(v), sin(v)), (u, 0, 2*pi), (u, -pi, pi))\nValueError: If the ranges in the argument of parametric_plot3d are both 3-tuples, then the first components of those 3-tuples must be different.\n```\n",
     "created_at": "2008-08-26T15:52:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1877",
     "type": "issue_comment",
@@ -50,7 +50,7 @@ archive/issue_comments_011875.json:
 }
 ```
 
-Attachment
+Attachment [1877fix.hg](tarball://root/attachments/some-uuid/ticket1877/1877fix.hg) by thomag created at 2008-08-26 15:52:31
 
 plot3d and parametric_plot3d should fail a tiny bit more gracefully if they're given two ranges using the same variable:
 
@@ -143,7 +143,7 @@ Please give a message with the raised value error. Pending that, I'd give a posi
 archive/issue_comments_011880.json:
 ```json
 {
-    "body": "Attachment\n\nthomag, your patch is along the right lines, but the implementation wasn't quite right.  You don't need to catch an error after raising it and then print something to the screen.  Just supply a message with the error, and it will show up unless it's caught somewhere else.  Also, when you fix a bug, you should add a doctest demonstrating the new, correct behavior.\n\nI've posted a new patch that raises an error in the usual way, and provides a briefer but still clear error message.  If this is accepted, only trac_1877.patch should be applied.",
+    "body": "Attachment [trac_1877.patch](tarball://root/attachments/some-uuid/ticket1877/trac_1877.patch) by jwmerrill created at 2008-09-02 23:15:50\n\nthomag, your patch is along the right lines, but the implementation wasn't quite right.  You don't need to catch an error after raising it and then print something to the screen.  Just supply a message with the error, and it will show up unless it's caught somewhere else.  Also, when you fix a bug, you should add a doctest demonstrating the new, correct behavior.\n\nI've posted a new patch that raises an error in the usual way, and provides a briefer but still clear error message.  If this is accepted, only trac_1877.patch should be applied.",
     "created_at": "2008-09-02T23:15:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1877",
     "type": "issue_comment",
@@ -152,7 +152,7 @@ archive/issue_comments_011880.json:
 }
 ```
 
-Attachment
+Attachment [trac_1877.patch](tarball://root/attachments/some-uuid/ticket1877/trac_1877.patch) by jwmerrill created at 2008-09-02 23:15:50
 
 thomag, your patch is along the right lines, but the implementation wasn't quite right.  You don't need to catch an error after raising it and then print something to the screen.  Just supply a message with the error, and it will show up unless it's caught somewhere else.  Also, when you fix a bug, you should add a doctest demonstrating the new, correct behavior.
 
@@ -165,7 +165,7 @@ I've posted a new patch that raises an error in the usual way, and provides a br
 archive/issue_comments_011881.json:
 ```json
 {
-    "body": "Attachment\n\ntrac_1877_review.patch does some minor cosmetic adjustements on top of trac_1877.patch (like not starting the error messages with a capital).  Otherwise this gets a positive review from me.\n\nIt might still my part still needs to be reviewed so I'll leave it as needs review.",
+    "body": "Attachment [trac_1877_review.patch](tarball://root/attachments/some-uuid/ticket1877/trac_1877_review.patch) by anakha created at 2008-09-06 15:43:29\n\ntrac_1877_review.patch does some minor cosmetic adjustements on top of trac_1877.patch (like not starting the error messages with a capital).  Otherwise this gets a positive review from me.\n\nIt might still my part still needs to be reviewed so I'll leave it as needs review.",
     "created_at": "2008-09-06T15:43:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1877",
     "type": "issue_comment",
@@ -174,7 +174,7 @@ archive/issue_comments_011881.json:
 }
 ```
 
-Attachment
+Attachment [trac_1877_review.patch](tarball://root/attachments/some-uuid/ticket1877/trac_1877_review.patch) by anakha created at 2008-09-06 15:43:29
 
 trac_1877_review.patch does some minor cosmetic adjustements on top of trac_1877.patch (like not starting the error messages with a capital).  Otherwise this gets a positive review from me.
 
@@ -241,7 +241,7 @@ Shame on me.  But with the new patch the doctests are changed and they pass.
 archive/issue_comments_011885.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_1877_doctests.patch](tarball://root/attachments/some-uuid/ticket1877/trac_1877_doctests.patch) by anakha created at 2008-09-06 16:14:40",
     "created_at": "2008-09-06T16:14:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1877",
     "type": "issue_comment",
@@ -250,7 +250,7 @@ archive/issue_comments_011885.json:
 }
 ```
 
-Attachment
+Attachment [trac_1877_doctests.patch](tarball://root/attachments/some-uuid/ticket1877/trac_1877_doctests.patch) by anakha created at 2008-09-06 16:14:40
 
 
 

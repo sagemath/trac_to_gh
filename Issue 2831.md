@@ -100,7 +100,7 @@ CPU times: user 0.03 s, sys: 0.01 s, total: 0.04 s
 archive/issue_comments_019430.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-2831.patch](tarball://root/attachments/some-uuid/ticket2831/sage-2831.patch) by was created at 2008-04-06 19:35:19",
     "created_at": "2008-04-06T19:35:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2831",
     "type": "issue_comment",
@@ -109,7 +109,7 @@ archive/issue_comments_019430.json:
 }
 ```
 
-Attachment
+Attachment [sage-2831.patch](tarball://root/attachments/some-uuid/ticket2831/sage-2831.patch) by was created at 2008-04-06 19:35:19
 
 
 
@@ -230,7 +230,7 @@ Michael
 archive/issue_comments_019435.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:6 mabshoff]:\n> Ok, somebody didn't doctest properly:\n\nYou may call me names is you like :-)!\n\nJaap",
+    "body": "Attachment [sage-2831_part2.patch](tarball://root/attachments/some-uuid/ticket2831/sage-2831_part2.patch) by jsp created at 2008-04-06 21:31:14\n\nReplying to [comment:6 mabshoff]:\n> Ok, somebody didn't doctest properly:\n\nYou may call me names is you like :-)!\n\nJaap",
     "created_at": "2008-04-06T21:31:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2831",
     "type": "issue_comment",
@@ -239,7 +239,7 @@ archive/issue_comments_019435.json:
 }
 ```
 
-Attachment
+Attachment [sage-2831_part2.patch](tarball://root/attachments/some-uuid/ticket2831/sage-2831_part2.patch) by jsp created at 2008-04-06 21:31:14
 
 Replying to [comment:6 mabshoff]:
 > Ok, somebody didn't doctest properly:

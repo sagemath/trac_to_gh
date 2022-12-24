@@ -259,7 +259,7 @@ New patch
 archive/issue_comments_030408.json:
 ```json
 {
-    "body": "Attachment\n\nI've uploaded a new patch, taking into account the changes to the coercion model, which works under 3.1.4 and 3.2.alpha1.",
+    "body": "Attachment [4190.patch](tarball://root/attachments/some-uuid/ticket4190/4190.patch) by davidloeffler created at 2008-10-31 22:29:45\n\nI've uploaded a new patch, taking into account the changes to the coercion model, which works under 3.1.4 and 3.2.alpha1.",
     "created_at": "2008-10-31T22:29:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4190",
     "type": "issue_comment",
@@ -268,7 +268,7 @@ archive/issue_comments_030408.json:
 }
 ```
 
-Attachment
+Attachment [4190.patch](tarball://root/attachments/some-uuid/ticket4190/4190.patch) by davidloeffler created at 2008-10-31 22:29:45
 
 I've uploaded a new patch, taking into account the changes to the coercion model, which works under 3.1.4 and 3.2.alpha1.
 
@@ -382,7 +382,7 @@ apply after previous patch
 archive/issue_comments_030413.json:
 ```json
 {
-    "body": "Attachment\n\nI could only find the duplicate line in one of the doctests, but I've killed it there. I also realised that while my patch fixed the div methods it didn't fix the separate invert methods, so I've added a similar fix to those.",
+    "body": "Attachment [4190-part2.patch](tarball://root/attachments/some-uuid/ticket4190/4190-part2.patch) by davidloeffler created at 2008-11-14 06:00:19\n\nI could only find the duplicate line in one of the doctests, but I've killed it there. I also realised that while my patch fixed the div methods it didn't fix the separate invert methods, so I've added a similar fix to those.",
     "created_at": "2008-11-14T06:00:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4190",
     "type": "issue_comment",
@@ -391,7 +391,7 @@ archive/issue_comments_030413.json:
 }
 ```
 
-Attachment
+Attachment [4190-part2.patch](tarball://root/attachments/some-uuid/ticket4190/4190-part2.patch) by davidloeffler created at 2008-11-14 06:00:19
 
 I could only find the duplicate line in one of the doctests, but I've killed it there. I also realised that while my patch fixed the div methods it didn't fix the separate invert methods, so I've added a similar fix to those.
 

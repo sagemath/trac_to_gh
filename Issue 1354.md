@@ -53,7 +53,7 @@ Resolution: fixed
 archive/issue_comments_008669.json:
 ```json
 {
-    "body": "Attachment\n\nMerged in 2.8.15.alpha2.",
+    "body": "Attachment [Sage-2.8.15.alpha1-fix-int64-in-Solaris-32bit-mode.patch](tarball://root/attachments/some-uuid/ticket1354/Sage-2.8.15.alpha1-fix-int64-in-Solaris-32bit-mode.patch) by mabshoff created at 2007-12-01 21:25:49\n\nMerged in 2.8.15.alpha2.",
     "created_at": "2007-12-01T21:25:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1354",
     "type": "issue_comment",
@@ -62,6 +62,6 @@ archive/issue_comments_008669.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.8.15.alpha1-fix-int64-in-Solaris-32bit-mode.patch](tarball://root/attachments/some-uuid/ticket1354/Sage-2.8.15.alpha1-fix-int64-in-Solaris-32bit-mode.patch) by mabshoff created at 2007-12-01 21:25:49
 
 Merged in 2.8.15.alpha2.

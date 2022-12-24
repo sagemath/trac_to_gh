@@ -98,7 +98,7 @@ jpflori reports this is fixed in #10187's package.  Maybe s/he will contribute a
 archive/issue_comments_069388.json:
 ```json
 {
-    "body": "Attachment\n\nAdd a doctest for the correct behavior.",
+    "body": "Attachment [sage-trac_7952.patch](tarball://root/attachments/some-uuid/ticket7952/sage-trac_7952.patch) by mjo created at 2011-12-14 00:29:37\n\nAdd a doctest for the correct behavior.",
     "created_at": "2011-12-14T00:29:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7952",
     "type": "issue_comment",
@@ -107,7 +107,7 @@ archive/issue_comments_069388.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac_7952.patch](tarball://root/attachments/some-uuid/ticket7952/sage-trac_7952.patch) by mjo created at 2011-12-14 00:29:37
 
 Add a doctest for the correct behavior.
 

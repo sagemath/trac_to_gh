@@ -128,7 +128,7 @@ Ok, the following binaries are installed my mwrank:
 archive/issue_comments_007856.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [Sage-2.9.alpha0-mwrank-cremona-transition.patch](tarball://root/attachments/some-uuid/ticket1256/Sage-2.9.alpha0-mwrank-cremona-transition.patch) by mabshoff created at 2007-12-06 01:47:58",
     "created_at": "2007-12-06T01:47:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1256",
     "type": "issue_comment",
@@ -137,7 +137,7 @@ archive/issue_comments_007856.json:
 }
 ```
 
-Attachment
+Attachment [Sage-2.9.alpha0-mwrank-cremona-transition.patch](tarball://root/attachments/some-uuid/ticket1256/Sage-2.9.alpha0-mwrank-cremona-transition.patch) by mabshoff created at 2007-12-06 01:47:58
 
 
 
@@ -146,7 +146,7 @@ Attachment
 archive/issue_comments_007857.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [install](tarball://root/attachments/some-uuid/ticket1256/install) by mabshoff created at 2007-12-06 01:48:22",
     "created_at": "2007-12-06T01:48:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1256",
     "type": "issue_comment",
@@ -155,7 +155,7 @@ archive/issue_comments_007857.json:
 }
 ```
 
-Attachment
+Attachment [install](tarball://root/attachments/some-uuid/ticket1256/install) by mabshoff created at 2007-12-06 01:48:22
 
 
 

@@ -69,7 +69,7 @@ The attached patch should fix the build issues
 archive/issue_comments_011266.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [hash_fix.patch](tarball://root/attachments/some-uuid/ticket1779/hash_fix.patch) by moretti created at 2008-01-14 23:31:29",
     "created_at": "2008-01-14T23:31:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1779",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_011266.json:
 }
 ```
 
-Attachment
+Attachment [hash_fix.patch](tarball://root/attachments/some-uuid/ticket1779/hash_fix.patch) by moretti created at 2008-01-14 23:31:29
 
 
 

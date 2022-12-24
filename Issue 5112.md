@@ -114,7 +114,7 @@ Michael
 archive/issue_comments_039070.json:
 ```json
 {
-    "body": "Attachment\n\npatch updated after trac-5098-doctest.patch",
+    "body": "Attachment [trac-5112.patch](tarball://root/attachments/some-uuid/ticket5112/trac-5112.patch) by ylchapuy created at 2009-02-11 10:19:29\n\npatch updated after trac-5098-doctest.patch",
     "created_at": "2009-02-11T10:19:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5112",
     "type": "issue_comment",
@@ -123,7 +123,7 @@ archive/issue_comments_039070.json:
 }
 ```
 
-Attachment
+Attachment [trac-5112.patch](tarball://root/attachments/some-uuid/ticket5112/trac-5112.patch) by ylchapuy created at 2009-02-11 10:19:29
 
 patch updated after trac-5098-doctest.patch
 
@@ -319,7 +319,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_039078.json:
 ```json
 {
-    "body": "Attachment\n\nbased on 4.3.alpha1 + #5098",
+    "body": "Attachment [trac-5112-rebased.patch](tarball://root/attachments/some-uuid/ticket5112/trac-5112-rebased.patch) by ylchapuy created at 2009-12-14 23:25:12\n\nbased on 4.3.alpha1 + #5098",
     "created_at": "2009-12-14T23:25:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5112",
     "type": "issue_comment",
@@ -328,7 +328,7 @@ archive/issue_comments_039078.json:
 }
 ```
 
-Attachment
+Attachment [trac-5112-rebased.patch](tarball://root/attachments/some-uuid/ticket5112/trac-5112-rebased.patch) by ylchapuy created at 2009-12-14 23:25:12
 
 based on 4.3.alpha1 + #5098
 
@@ -377,7 +377,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_039081.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-5112-pollard_review.patch](tarball://root/attachments/some-uuid/ticket5112/trac-5112-pollard_review.patch) by mraum created at 2009-12-15 09:26:49",
     "created_at": "2009-12-15T09:26:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5112",
     "type": "issue_comment",
@@ -386,7 +386,7 @@ archive/issue_comments_039081.json:
 }
 ```
 
-Attachment
+Attachment [trac-5112-pollard_review.patch](tarball://root/attachments/some-uuid/ticket5112/trac-5112-pollard_review.patch) by mraum created at 2009-12-15 09:26:49
 
 
 

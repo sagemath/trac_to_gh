@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3088
 archive/issue_comments_021322.json:
 ```json
 {
-    "body": "Attachment\n\nPatch looks good to me. The solution is correct as discussed on sage-devel. Positive review. Slipped into gfan-0.3.p3.spkg without bumping the release number.\n\nCheers,\n\nMichael",
+    "body": "Attachment [gfan-debian-fix.patch](tarball://root/attachments/some-uuid/ticket3088/gfan-debian-fix.patch) by mabshoff created at 2008-05-03 14:16:23\n\nPatch looks good to me. The solution is correct as discussed on sage-devel. Positive review. Slipped into gfan-0.3.p3.spkg without bumping the release number.\n\nCheers,\n\nMichael",
     "created_at": "2008-05-03T14:16:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3088",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_021322.json:
 }
 ```
 
-Attachment
+Attachment [gfan-debian-fix.patch](tarball://root/attachments/some-uuid/ticket3088/gfan-debian-fix.patch) by mabshoff created at 2008-05-03 14:16:23
 
 Patch looks good to me. The solution is correct as discussed on sage-devel. Positive review. Slipped into gfan-0.3.p3.spkg without bumping the release number.
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6118
 archive/issue_comments_048887.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6118-integer-shift.patch](tarball://root/attachments/some-uuid/ticket6118/6118-integer-shift.patch) by robertwb created at 2009-05-22 00:39:11",
     "created_at": "2009-05-22T00:39:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6118",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_048887.json:
 }
 ```
 
-Attachment
+Attachment [6118-integer-shift.patch](tarball://root/attachments/some-uuid/ticket6118/6118-integer-shift.patch) by robertwb created at 2009-05-22 00:39:11
 
 
 
@@ -271,7 +271,7 @@ I'm (pleasantly) surprised making it a cpdef function didn't slow it down. I don
 archive/issue_comments_048893.json:
 ```json
 {
-    "body": "Attachment\n\nI've added a new version of the second patch, which mostly just adds comments and removes the inconsistencies with things like `_lshift` and `_rshift_`. \n\nIn particular, I've come around to Robert's point that we want to speed up the `Integer << int` and `Integer >> int` cases the most -- I just did a `search_src('>>')`, and there seems to be a lot of code that shifts by literals (which will be Python `int`s). I also removed the one extra error check in `_shift_helper` and made a note about it. \n\nOne last question, though -- do we really need the case where `y = ZZ(y)` raises a `ValueError`? Looking at the `Integer` constructor, this seems to only happen when we're given a string in a base larger than 36; in this case, the code in the `except` clause won't work, anyway. So are there other cases where this is used that I'm not thinking of? (It's obviously not too important, but I'm curious.)",
+    "body": "Attachment [trac-6118-pt2.patch](tarball://root/attachments/some-uuid/ticket6118/trac-6118-pt2.patch) by craigcitro created at 2009-06-20 08:38:50\n\nI've added a new version of the second patch, which mostly just adds comments and removes the inconsistencies with things like `_lshift` and `_rshift_`. \n\nIn particular, I've come around to Robert's point that we want to speed up the `Integer << int` and `Integer >> int` cases the most -- I just did a `search_src('>>')`, and there seems to be a lot of code that shifts by literals (which will be Python `int`s). I also removed the one extra error check in `_shift_helper` and made a note about it. \n\nOne last question, though -- do we really need the case where `y = ZZ(y)` raises a `ValueError`? Looking at the `Integer` constructor, this seems to only happen when we're given a string in a base larger than 36; in this case, the code in the `except` clause won't work, anyway. So are there other cases where this is used that I'm not thinking of? (It's obviously not too important, but I'm curious.)",
     "created_at": "2009-06-20T08:38:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6118",
     "type": "issue_comment",
@@ -280,7 +280,7 @@ archive/issue_comments_048893.json:
 }
 ```
 
-Attachment
+Attachment [trac-6118-pt2.patch](tarball://root/attachments/some-uuid/ticket6118/trac-6118-pt2.patch) by craigcitro created at 2009-06-20 08:38:50
 
 I've added a new version of the second patch, which mostly just adds comments and removes the inconsistencies with things like `_lshift` and `_rshift_`. 
 

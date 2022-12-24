@@ -43,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8655
 archive/issue_comments_078536.json:
 ```json
 {
-    "body": "Attachment\n\nDepends on #8691",
+    "body": "Attachment [8655_genus.patch](tarball://root/attachments/some-uuid/ticket8655/8655_genus.patch) by boothby created at 2010-05-21 21:32:12\n\nDepends on #8691",
     "created_at": "2010-05-21T21:32:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8655",
     "type": "issue_comment",
@@ -52,7 +52,7 @@ archive/issue_comments_078536.json:
 }
 ```
 
-Attachment
+Attachment [8655_genus.patch](tarball://root/attachments/some-uuid/ticket8655/8655_genus.patch) by boothby created at 2010-05-21 21:32:12
 
 Depends on #8691
 
@@ -164,7 +164,7 @@ ammendments to satisfy reviewer
 archive/issue_comments_078542.json:
 ```json
 {
-    "body": "Attachment\n\nRegarding \"line 231 -> probably a bitset way to do this faster\", I agree, there probably is, but I'd rather not peek any further into the cgraph structure than necessary.",
+    "body": "Attachment [8655_genus_2.patch](tarball://root/attachments/some-uuid/ticket8655/8655_genus_2.patch) by boothby created at 2010-05-27 22:49:29\n\nRegarding \"line 231 -> probably a bitset way to do this faster\", I agree, there probably is, but I'd rather not peek any further into the cgraph structure than necessary.",
     "created_at": "2010-05-27T22:49:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8655",
     "type": "issue_comment",
@@ -173,7 +173,7 @@ archive/issue_comments_078542.json:
 }
 ```
 
-Attachment
+Attachment [8655_genus_2.patch](tarball://root/attachments/some-uuid/ticket8655/8655_genus_2.patch) by boothby created at 2010-05-27 22:49:29
 
 Regarding "line 231 -> probably a bitset way to do this faster", I agree, there probably is, but I'd rather not peek any further into the cgraph structure than necessary.
 

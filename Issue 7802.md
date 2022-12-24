@@ -51,7 +51,7 @@ Changing status from new to needs_review.
 archive/issue_comments_067503.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-7802-ties-to-even-doc.patch](tarball://root/attachments/some-uuid/ticket7802/trac-7802-ties-to-even-doc.patch) by jason created at 2010-01-20 06:14:08",
     "created_at": "2010-01-20T06:14:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7802",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_067503.json:
 }
 ```
 
-Attachment
+Attachment [trac-7802-ties-to-even-doc.patch](tarball://root/attachments/some-uuid/ticket7802/trac-7802-ties-to-even-doc.patch) by jason created at 2010-01-20 06:14:08
 
 
 

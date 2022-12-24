@@ -46,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2796
 archive/issue_comments_019197.json:
 ```json
 {
-    "body": "Attachment\n\nthe attached patch changes the default base to 10 for digits, so that digits and ndigits agree:\n\n```\nsage: n=15\nsage: n.digits()\n[5, 1]\nsage: n.ndigits()\n2\n```\n\nAs a consequence, calls to digits() were changed into digits(2).",
+    "body": "Attachment [trac_2796.patch](tarball://root/attachments/some-uuid/ticket2796/trac_2796.patch) by zimmerma created at 2008-10-19 13:10:18\n\nthe attached patch changes the default base to 10 for digits, so that digits and ndigits agree:\n\n```\nsage: n=15\nsage: n.digits()\n[5, 1]\nsage: n.ndigits()\n2\n```\n\nAs a consequence, calls to digits() were changed into digits(2).",
     "created_at": "2008-10-19T13:10:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2796",
     "type": "issue_comment",
@@ -55,7 +55,7 @@ archive/issue_comments_019197.json:
 }
 ```
 
-Attachment
+Attachment [trac_2796.patch](tarball://root/attachments/some-uuid/ticket2796/trac_2796.patch) by zimmerma created at 2008-10-19 13:10:18
 
 the attached patch changes the default base to 10 for digits, so that digits and ndigits agree:
 
@@ -94,7 +94,7 @@ I like this as far as it goes, but would also like n.bits() to return n.digits(2
 archive/issue_comments_019199.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:2 cremona]:\n> I like this as far as it goes, but would also like n.bits() to return n.digits(2) and n.nbits() to return what n.bits() currently does.  Can we add that too?\n\nThe second patch (to be applied after the 1st one) does this. sage -t -long * returned the following failures,\nbut I guess they are related to another patch. In any case the reviewer should check them before and after applying\nthe 2nd patch:\n\n```\n      sage -t -long devel/sage-main/sage/modular/modform/j_invariant.py\n      sage -t -long devel/sage-main/sage/schemes/elliptic_curves/padics.py\n      sage -t -long devel/sage-main/sage/schemes/elliptic_curves/ell_generic.py\n```\n",
+    "body": "Attachment [trac_2796a.patch](tarball://root/attachments/some-uuid/ticket2796/trac_2796a.patch) by zimmerma created at 2008-10-23 06:50:20\n\nReplying to [comment:2 cremona]:\n> I like this as far as it goes, but would also like n.bits() to return n.digits(2) and n.nbits() to return what n.bits() currently does.  Can we add that too?\n\nThe second patch (to be applied after the 1st one) does this. sage -t -long * returned the following failures,\nbut I guess they are related to another patch. In any case the reviewer should check them before and after applying\nthe 2nd patch:\n\n```\n      sage -t -long devel/sage-main/sage/modular/modform/j_invariant.py\n      sage -t -long devel/sage-main/sage/schemes/elliptic_curves/padics.py\n      sage -t -long devel/sage-main/sage/schemes/elliptic_curves/ell_generic.py\n```\n",
     "created_at": "2008-10-23T06:50:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2796",
     "type": "issue_comment",
@@ -103,7 +103,7 @@ archive/issue_comments_019199.json:
 }
 ```
 
-Attachment
+Attachment [trac_2796a.patch](tarball://root/attachments/some-uuid/ticket2796/trac_2796a.patch) by zimmerma created at 2008-10-23 06:50:20
 
 Replying to [comment:2 cremona]:
 > I like this as far as it goes, but would also like n.bits() to return n.digits(2) and n.nbits() to return what n.bits() currently does.  Can we add that too?
@@ -288,7 +288,7 @@ Hmm... this seems totally unrelated to the ticket. Given 3.2 is out soon, I'll s
 archive/issue_comments_019203.json:
 ```json
 {
-    "body": "Attachment\n\napply after the previous two patches",
+    "body": "Attachment [trac_2796b.patch](tarball://root/attachments/some-uuid/ticket2796/trac_2796b.patch) by AlexGhitza created at 2008-12-11 11:35:28\n\napply after the previous two patches",
     "created_at": "2008-12-11T11:35:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2796",
     "type": "issue_comment",
@@ -297,7 +297,7 @@ archive/issue_comments_019203.json:
 }
 ```
 
-Attachment
+Attachment [trac_2796b.patch](tarball://root/attachments/some-uuid/ticket2796/trac_2796b.patch) by AlexGhitza created at 2008-12-11 11:35:28
 
 apply after the previous two patches
 

@@ -567,7 +567,7 @@ Same patch as listed in the post, plus the addendum patch.
 archive/issue_comments_004625.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [#774.patch](tarball://root/attachments/some-uuid/ticket774/#774.patch) by was created at 2007-10-04 14:57:33",
     "created_at": "2007-10-04T14:57:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/774",
     "type": "issue_comment",
@@ -576,7 +576,7 @@ archive/issue_comments_004625.json:
 }
 ```
 
-Attachment
+Attachment [#774.patch](tarball://root/attachments/some-uuid/ticket774/#774.patch) by was created at 2007-10-04 14:57:33
 
 
 

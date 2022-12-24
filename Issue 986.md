@@ -43,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/986
 archive/issue_comments_006027.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached a patch that just sorts the output of .variety().",
+    "body": "Attachment [7129.patch](tarball://root/attachments/some-uuid/ticket986/7129.patch) by cwitty created at 2007-10-25 01:50:04\n\nI've attached a patch that just sorts the output of .variety().",
     "created_at": "2007-10-25T01:50:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/986",
     "type": "issue_comment",
@@ -52,7 +52,7 @@ archive/issue_comments_006027.json:
 }
 ```
 
-Attachment
+Attachment [7129.patch](tarball://root/attachments/some-uuid/ticket986/7129.patch) by cwitty created at 2007-10-25 01:50:04
 
 I've attached a patch that just sorts the output of .variety().
 

@@ -103,7 +103,7 @@ Changing status from new to needs_review.
 archive/issue_comments_067125.json:
 ```json
 {
-    "body": "Attachment\n\nIn the patch, I've added `setup.cfg` and `release_notes.txt` and attempted to remove unnecessary entries.  Please feel free to go further.",
+    "body": "Attachment [trac_7784-hgignore_update.patch](tarball://root/attachments/some-uuid/ticket7784/trac_7784-hgignore_update.patch) by mpatel created at 2010-01-25 03:43:14\n\nIn the patch, I've added `setup.cfg` and `release_notes.txt` and attempted to remove unnecessary entries.  Please feel free to go further.",
     "created_at": "2010-01-25T03:43:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7784",
     "type": "issue_comment",
@@ -112,7 +112,7 @@ archive/issue_comments_067125.json:
 }
 ```
 
-Attachment
+Attachment [trac_7784-hgignore_update.patch](tarball://root/attachments/some-uuid/ticket7784/trac_7784-hgignore_update.patch) by mpatel created at 2010-01-25 03:43:14
 
 In the patch, I've added `setup.cfg` and `release_notes.txt` and attempted to remove unnecessary entries.  Please feel free to go further.
 
@@ -141,7 +141,7 @@ I think I should restore `push` and `pull`.
 archive/issue_comments_067127.json:
 ```json
 {
-    "body": "Attachment\n\nInclude `pull` and `push`.  Replaces previous.",
+    "body": "Attachment [trac_7784-hgignore_update.2.patch](tarball://root/attachments/some-uuid/ticket7784/trac_7784-hgignore_update.2.patch) by mpatel created at 2010-01-25 04:29:29\n\nInclude `pull` and `push`.  Replaces previous.",
     "created_at": "2010-01-25T04:29:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7784",
     "type": "issue_comment",
@@ -150,7 +150,7 @@ archive/issue_comments_067127.json:
 }
 ```
 
-Attachment
+Attachment [trac_7784-hgignore_update.2.patch](tarball://root/attachments/some-uuid/ticket7784/trac_7784-hgignore_update.2.patch) by mpatel created at 2010-01-25 04:29:29
 
 Include `pull` and `push`.  Replaces previous.
 
@@ -217,7 +217,7 @@ Changing priority from minor to critical.
 archive/issue_comments_067131.json:
 ```json
 {
-    "body": "Attachment\n\nAdd Makefile; update .hgignore and spkg-related files.  Apply only this patch.",
+    "body": "Attachment [trac_7784-sagenb_spkg_files.patch](tarball://root/attachments/some-uuid/ticket7784/trac_7784-sagenb_spkg_files.patch) by mpatel created at 2010-02-01 03:39:31\n\nAdd Makefile; update .hgignore and spkg-related files.  Apply only this patch.",
     "created_at": "2010-02-01T03:39:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7784",
     "type": "issue_comment",
@@ -226,7 +226,7 @@ archive/issue_comments_067131.json:
 }
 ```
 
-Attachment
+Attachment [trac_7784-sagenb_spkg_files.patch](tarball://root/attachments/some-uuid/ticket7784/trac_7784-sagenb_spkg_files.patch) by mpatel created at 2010-02-01 03:39:31
 
 Add Makefile; update .hgignore and spkg-related files.  Apply only this patch.
 

@@ -69,7 +69,7 @@ Changing assignee from boothby to TimothyClemans.
 archive/issue_comments_024549.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3483.patch](tarball://root/attachments/some-uuid/ticket3483/sage-3483.patch) by TimothyClemans created at 2008-06-20 21:47:57",
     "created_at": "2008-06-20T21:47:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3483",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_024549.json:
 }
 ```
 
-Attachment
+Attachment [sage-3483.patch](tarball://root/attachments/some-uuid/ticket3483/sage-3483.patch) by TimothyClemans created at 2008-06-20 21:47:57
 
 
 
@@ -87,7 +87,7 @@ Attachment
 archive/issue_comments_024550.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [extcode-3483.patch](tarball://root/attachments/some-uuid/ticket3483/extcode-3483.patch) by TimothyClemans created at 2008-06-20 21:50:37",
     "created_at": "2008-06-20T21:50:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3483",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_024550.json:
 }
 ```
 
-Attachment
+Attachment [extcode-3483.patch](tarball://root/attachments/some-uuid/ticket3483/extcode-3483.patch) by TimothyClemans created at 2008-06-20 21:50:37
 
 
 

@@ -216,7 +216,7 @@ Changing priority from critical to major.
 archive/issue_comments_035128.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [botdist.py](tarball://root/attachments/some-uuid/ticket4666/botdist.py) by jdemeyer created at 2012-05-16 20:03:36",
     "created_at": "2012-05-16T20:03:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4666",
     "type": "issue_comment",
@@ -225,7 +225,7 @@ archive/issue_comments_035128.json:
 }
 ```
 
-Attachment
+Attachment [botdist.py](tarball://root/attachments/some-uuid/ticket4666/botdist.py) by jdemeyer created at 2012-05-16 20:03:36
 
 
 

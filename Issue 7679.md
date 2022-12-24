@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7679
 archive/issue_comments_065872.json:
 ```json
 {
-    "body": "Attachment\n\nbased on Sage 4.3.rc0",
+    "body": "Attachment [trac_7679-functional-programming.patch](tarball://root/attachments/some-uuid/ticket7679/trac_7679-functional-programming.patch) by mvngu created at 2009-12-14 03:36:02\n\nbased on Sage 4.3.rc0",
     "created_at": "2009-12-14T03:36:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7679",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_065872.json:
 }
 ```
 
-Attachment
+Attachment [trac_7679-functional-programming.patch](tarball://root/attachments/some-uuid/ticket7679/trac_7679-functional-programming.patch) by mvngu created at 2009-12-14 03:36:02
 
 based on Sage 4.3.rc0
 

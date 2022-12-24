@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8581
 archive/issue_comments_077720.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8581_multivariate_schubert_step_1-nb.patch](tarball://root/attachments/some-uuid/ticket8581/trac_8581_multivariate_schubert_step_1-nb.patch) by nborie created at 2010-03-22 23:42:58",
     "created_at": "2010-03-22T23:42:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8581",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_077720.json:
 }
 ```
 
-Attachment
+Attachment [trac_8581_multivariate_schubert_step_1-nb.patch](tarball://root/attachments/some-uuid/ticket8581/trac_8581_multivariate_schubert_step_1-nb.patch) by nborie created at 2010-03-22 23:42:58
 
 
 

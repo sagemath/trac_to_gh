@@ -49,7 +49,7 @@ Changing status from new to needs_review.
 archive/issue_comments_095960.json:
 ```json
 {
-    "body": "Attachment\n\nHello !!!\n\nNice patch ! Nothing to complain about, and they bring nice additions to Sage `:-)`\n\nI uploaded a (very short) patch with very small modifications. As usual, I give a positive review to your patch, and you can change the status of this ticket if you like mine `:-)`\n\n(btw, don't forget to set your tickets as \"needing review\" when you have uploaded your patch !)\n\nNathann",
+    "body": "Attachment [trac_9779 - minor edits.patch](tarball://root/attachments/some-uuid/ticket9779/trac_9779 - minor edits.patch) by ncohen created at 2010-09-03 20:18:47\n\nHello !!!\n\nNice patch ! Nothing to complain about, and they bring nice additions to Sage `:-)`\n\nI uploaded a (very short) patch with very small modifications. As usual, I give a positive review to your patch, and you can change the status of this ticket if you like mine `:-)`\n\n(btw, don't forget to set your tickets as \"needing review\" when you have uploaded your patch !)\n\nNathann",
     "created_at": "2010-09-03T20:18:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9778",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_095960.json:
 }
 ```
 
-Attachment
+Attachment [trac_9779 - minor edits.patch](tarball://root/attachments/some-uuid/ticket9779/trac_9779 - minor edits.patch) by ncohen created at 2010-09-03 20:18:47
 
 Hello !!!
 
@@ -170,7 +170,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_095966.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9779.2.patch](tarball://root/attachments/some-uuid/ticket9779/trac_9779.2.patch) by edward.scheinerman created at 2010-09-06 00:36:34",
     "created_at": "2010-09-06T00:36:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9778",
     "type": "issue_comment",
@@ -179,7 +179,7 @@ archive/issue_comments_095966.json:
 }
 ```
 
-Attachment
+Attachment [trac_9779.2.patch](tarball://root/attachments/some-uuid/ticket9779/trac_9779.2.patch) by edward.scheinerman created at 2010-09-06 00:36:34
 
 
 
@@ -188,7 +188,7 @@ Attachment
 archive/issue_comments_095967.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9779.patch](tarball://root/attachments/some-uuid/ticket9779/trac_9779.patch) by edward.scheinerman created at 2010-09-06 00:37:18",
     "created_at": "2010-09-06T00:37:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9778",
     "type": "issue_comment",
@@ -197,7 +197,7 @@ archive/issue_comments_095967.json:
 }
 ```
 
-Attachment
+Attachment [trac_9779.patch](tarball://root/attachments/some-uuid/ticket9779/trac_9779.patch) by edward.scheinerman created at 2010-09-06 00:37:18
 
 
 
@@ -278,7 +278,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_095972.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9779_rebase.patch](tarball://root/attachments/some-uuid/ticket9779/trac_9779_rebase.patch) by edward.scheinerman created at 2010-09-20 18:43:35",
     "created_at": "2010-09-20T18:43:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9778",
     "type": "issue_comment",
@@ -287,7 +287,7 @@ archive/issue_comments_095972.json:
 }
 ```
 
-Attachment
+Attachment [trac_9779_rebase.patch](tarball://root/attachments/some-uuid/ticket9779/trac_9779_rebase.patch) by edward.scheinerman created at 2010-09-20 18:43:35
 
 
 
@@ -332,7 +332,7 @@ I rebased the patch (I hope I did this correctly!).  -Ed
 archive/issue_comments_095975.json:
 ```json
 {
-    "body": "Attachment\n\nRebased for a working 4.6.alpha2.  Apply only this patch.",
+    "body": "Attachment [trac_9779_rebase.2.patch](tarball://root/attachments/some-uuid/ticket9779/trac_9779_rebase.2.patch) by mpatel created at 2010-09-29 09:27:03\n\nRebased for a working 4.6.alpha2.  Apply only this patch.",
     "created_at": "2010-09-29T09:27:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9778",
     "type": "issue_comment",
@@ -341,7 +341,7 @@ archive/issue_comments_095975.json:
 }
 ```
 
-Attachment
+Attachment [trac_9779_rebase.2.patch](tarball://root/attachments/some-uuid/ticket9779/trac_9779_rebase.2.patch) by mpatel created at 2010-09-29 09:27:03
 
 Rebased for a working 4.6.alpha2.  Apply only this patch.
 

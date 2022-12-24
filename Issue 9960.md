@@ -76,7 +76,7 @@ The patch fixes the problem, but we use strings in new optional argument of deso
 archive/issue_comments_099746.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9961.patch](tarball://root/attachments/some-uuid/ticket9961/trac_9961.patch) by robert.marik created at 2010-09-21 19:48:19",
     "created_at": "2010-09-21T19:48:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9960",
     "type": "issue_comment",
@@ -85,7 +85,7 @@ archive/issue_comments_099746.json:
 }
 ```
 
-Attachment
+Attachment [trac_9961.patch](tarball://root/attachments/some-uuid/ticket9961/trac_9961.patch) by robert.marik created at 2010-09-21 19:48:19
 
 
 
@@ -168,7 +168,7 @@ I appreciate the sentiment and idea, but adding a keyword exposes us to backward
 archive/issue_comments_099751.json:
 ```json
 {
-    "body": "Attachment\n\napply only this patch",
+    "body": "Attachment [trac_9961-assume_function.patch](tarball://root/attachments/some-uuid/ticket9961/trac_9961-assume_function.patch) by burcin created at 2010-09-21 21:03:06\n\napply only this patch",
     "created_at": "2010-09-21T21:03:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9960",
     "type": "issue_comment",
@@ -177,7 +177,7 @@ archive/issue_comments_099751.json:
 }
 ```
 
-Attachment
+Attachment [trac_9961-assume_function.patch](tarball://root/attachments/some-uuid/ticket9961/trac_9961-assume_function.patch) by burcin created at 2010-09-21 21:03:06
 
 apply only this patch
 
@@ -208,7 +208,7 @@ On the other hand, attachment:trac_9961-assume_function.patch might provide an a
 archive/issue_comments_099753.json:
 ```json
 {
-    "body": "Attachment\n\napply only this patch",
+    "body": "Attachment [trac_9961-assume_function.take2.patch](tarball://root/attachments/some-uuid/ticket9961/trac_9961-assume_function.take2.patch) by burcin created at 2010-09-22 16:04:48\n\napply only this patch",
     "created_at": "2010-09-22T16:04:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9960",
     "type": "issue_comment",
@@ -217,7 +217,7 @@ archive/issue_comments_099753.json:
 }
 ```
 
-Attachment
+Attachment [trac_9961-assume_function.take2.patch](tarball://root/attachments/some-uuid/ticket9961/trac_9961-assume_function.take2.patch) by burcin created at 2010-09-22 16:04:48
 
 apply only this patch
 
@@ -366,7 +366,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_099758.json:
 ```json
 {
-    "body": "Attachment\n\nBurcin's patch with doctest. Apply only this patch.",
+    "body": "Attachment [trac_9961-assume_function.take3.patch](tarball://root/attachments/some-uuid/ticket9961/trac_9961-assume_function.take3.patch) by robert.marik created at 2010-09-23 17:40:19\n\nBurcin's patch with doctest. Apply only this patch.",
     "created_at": "2010-09-23T17:40:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9960",
     "type": "issue_comment",
@@ -375,7 +375,7 @@ archive/issue_comments_099758.json:
 }
 ```
 
-Attachment
+Attachment [trac_9961-assume_function.take3.patch](tarball://root/attachments/some-uuid/ticket9961/trac_9961-assume_function.take3.patch) by robert.marik created at 2010-09-23 17:40:19
 
 Burcin's patch with doctest. Apply only this patch.
 

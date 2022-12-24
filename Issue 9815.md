@@ -52,7 +52,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9816
 archive/issue_comments_096798.json:
 ```json
 {
-    "body": "Attachment\n\napplies to 4.5.3.alpha2",
+    "body": "Attachment [trac_9816-ec-type.patch](tarball://root/attachments/some-uuid/ticket9816/trac_9816-ec-type.patch) by cremona created at 2010-08-27 09:06:58\n\napplies to 4.5.3.alpha2",
     "created_at": "2010-08-27T09:06:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9815",
     "type": "issue_comment",
@@ -61,7 +61,7 @@ archive/issue_comments_096798.json:
 }
 ```
 
-Attachment
+Attachment [trac_9816-ec-type.patch](tarball://root/attachments/some-uuid/ticket9816/trac_9816-ec-type.patch) by cremona created at 2010-08-27 09:06:58
 
 applies to 4.5.3.alpha2
 

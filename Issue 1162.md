@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1162
 archive/issue_comments_007108.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [7333.patch](tarball://root/attachments/some-uuid/ticket1162/7333.patch) by zimmerma created at 2007-11-13 00:05:18",
     "created_at": "2007-11-13T00:05:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1162",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_007108.json:
 }
 ```
 
-Attachment
+Attachment [7333.patch](tarball://root/attachments/some-uuid/ticket1162/7333.patch) by zimmerma created at 2007-11-13 00:05:18
 
 
 
@@ -88,7 +88,7 @@ roots() gives different results on different architectures. It shouldn't if mpfr
 archive/issue_comments_007111.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1162.patch](tarball://root/attachments/some-uuid/ticket1162/1162.patch) by cwitty created at 2007-12-02 00:02:22",
     "created_at": "2007-12-02T00:02:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1162",
     "type": "issue_comment",
@@ -97,7 +97,7 @@ archive/issue_comments_007111.json:
 }
 ```
 
-Attachment
+Attachment [1162.patch](tarball://root/attachments/some-uuid/ticket1162/1162.patch) by cwitty created at 2007-12-02 00:02:22
 
 
 

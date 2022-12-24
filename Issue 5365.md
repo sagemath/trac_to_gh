@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5365
 archive/issue_comments_041329.json:
 ```json
 {
-    "body": "Attachment\n\nThe picture attachment (t2.png) is the current buggy output.  I will post another picture example with my patch this evening.",
+    "body": "Attachment [t2.png](tarball://root/attachments/some-uuid/ticket5365/t2.png) by ekirkman created at 2009-02-24 23:48:52\n\nThe picture attachment (t2.png) is the current buggy output.  I will post another picture example with my patch this evening.",
     "created_at": "2009-02-24T23:48:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5365",
     "type": "issue_comment",
@@ -49,7 +49,7 @@ archive/issue_comments_041329.json:
 }
 ```
 
-Attachment
+Attachment [t2.png](tarball://root/attachments/some-uuid/ticket5365/t2.png) by ekirkman created at 2009-02-24 23:48:52
 
 The picture attachment (t2.png) is the current buggy output.  I will post another picture example with my patch this evening.
 

@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8844
 archive/issue_comments_081301.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8844-module_list.patch](tarball://root/attachments/some-uuid/ticket8844/trac_8844-module_list.patch) by mhansen created at 2010-05-03 13:25:08",
     "created_at": "2010-05-03T13:25:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8844",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_081301.json:
 }
 ```
 
-Attachment
+Attachment [trac_8844-module_list.patch](tarball://root/attachments/some-uuid/ticket8844/trac_8844-module_list.patch) by mhansen created at 2010-05-03 13:25:08
 
 
 
@@ -177,7 +177,7 @@ Reviewer patch, s/png/png12/ once as mentioned
 archive/issue_comments_081309.json:
 ```json
 {
-    "body": "Attachment\n\nNow **trying** to rebase #7987 on this one...",
+    "body": "Attachment [trac_8844-reviewer.patch](tarball://root/attachments/some-uuid/ticket8844/trac_8844-reviewer.patch) by leif created at 2010-05-20 07:36:04\n\nNow **trying** to rebase #7987 on this one...",
     "created_at": "2010-05-20T07:36:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8844",
     "type": "issue_comment",
@@ -186,7 +186,7 @@ archive/issue_comments_081309.json:
 }
 ```
 
-Attachment
+Attachment [trac_8844-reviewer.patch](tarball://root/attachments/some-uuid/ticket8844/trac_8844-reviewer.patch) by leif created at 2010-05-20 07:36:04
 
 Now **trying** to rebase #7987 on this one...
 

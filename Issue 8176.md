@@ -55,7 +55,7 @@ Changing status from new to needs_review.
 archive/issue_comments_072034.json:
 ```json
 {
-    "body": "Attachment\n\nAn spkgs can be found here:\n\n[http://boxen.math.washington.edu/home/jsp/ports/libpng-1.2.35.p0.spkg](http://boxen.math.washington.edu/home/jsp/ports/libpng-1.2.35.p0.spkg)\n\n\n\n\n```\nlib/libpng12.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\nlib/libpng12.so.0:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\nlib/libpng12.so.0.35.0:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\n\n```\n\n\nJaap",
+    "body": "Attachment [libpng-1.2.35.p0.patch](tarball://root/attachments/some-uuid/ticket8176/libpng-1.2.35.p0.patch) by jsp created at 2010-02-03 18:19:44\n\nAn spkgs can be found here:\n\n[http://boxen.math.washington.edu/home/jsp/ports/libpng-1.2.35.p0.spkg](http://boxen.math.washington.edu/home/jsp/ports/libpng-1.2.35.p0.spkg)\n\n\n\n\n```\nlib/libpng12.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\nlib/libpng12.so.0:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\nlib/libpng12.so.0.35.0:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\n\n```\n\n\nJaap",
     "created_at": "2010-02-03T18:19:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8176",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_072034.json:
 }
 ```
 
-Attachment
+Attachment [libpng-1.2.35.p0.patch](tarball://root/attachments/some-uuid/ticket8176/libpng-1.2.35.p0.patch) by jsp created at 2010-02-03 18:19:44
 
 An spkgs can be found here:
 
@@ -136,7 +136,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_072037.json:
 ```json
 {
-    "body": "Attachment\n\nSome stupid error I had corrected I thought.\n\n[http://boxen.math.washington.edu/home/jsp/ports/libpng-1.2.35.p0.spkg](http://boxen.math.washington.edu/home/jsp/ports/libpng-1.2.35.p0.spkg)\n\nDidn't change the patch level.\n\nJaap",
+    "body": "Attachment [libpng-1.2.35.p0+.patch](tarball://root/attachments/some-uuid/ticket8176/libpng-1.2.35.p0+.patch) by jsp created at 2010-02-04 18:44:05\n\nSome stupid error I had corrected I thought.\n\n[http://boxen.math.washington.edu/home/jsp/ports/libpng-1.2.35.p0.spkg](http://boxen.math.washington.edu/home/jsp/ports/libpng-1.2.35.p0.spkg)\n\nDidn't change the patch level.\n\nJaap",
     "created_at": "2010-02-04T18:44:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8176",
     "type": "issue_comment",
@@ -145,7 +145,7 @@ archive/issue_comments_072037.json:
 }
 ```
 
-Attachment
+Attachment [libpng-1.2.35.p0+.patch](tarball://root/attachments/some-uuid/ticket8176/libpng-1.2.35.p0+.patch) by jsp created at 2010-02-04 18:44:05
 
 Some stupid error I had corrected I thought.
 

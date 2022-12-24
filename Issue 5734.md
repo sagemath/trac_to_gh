@@ -130,7 +130,7 @@ David, I thought you might like this one too (when I have done it)  -J
 archive/issue_comments_044805.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch touches only sage/modular/modsym/manin_symbols.py, based on 3.4.1.rc2.\n\n```\n----------------------------------------------------------------------\nsage/modular/modsym/manin_symbols.py\nSCORE sage/modular/modsym/manin_symbols.py: 100% (59 of 59)\n----------------------------------------------------------------------\n```\n\n\nI also fixed some small bugs in functions which did not seem to be used, removed (by commenting out) a class `x__ManinSymbolList_gamma1` which was not used, and implemented a slightly more sensible cmp() function for class ManinSymbol (which used to return 1 for any two distinct symbols).  All doctests in sage/modular pass, and I also checked quite thoroughly through the resulting reference manual page, which also looks good.\n\nReview please!",
+    "body": "Attachment [trac_5734.patch](tarball://root/attachments/some-uuid/ticket5734/trac_5734.patch) by cremona created at 2009-04-14 21:53:34\n\nThe patch touches only sage/modular/modsym/manin_symbols.py, based on 3.4.1.rc2.\n\n```\n----------------------------------------------------------------------\nsage/modular/modsym/manin_symbols.py\nSCORE sage/modular/modsym/manin_symbols.py: 100% (59 of 59)\n----------------------------------------------------------------------\n```\n\n\nI also fixed some small bugs in functions which did not seem to be used, removed (by commenting out) a class `x__ManinSymbolList_gamma1` which was not used, and implemented a slightly more sensible cmp() function for class ManinSymbol (which used to return 1 for any two distinct symbols).  All doctests in sage/modular pass, and I also checked quite thoroughly through the resulting reference manual page, which also looks good.\n\nReview please!",
     "created_at": "2009-04-14T21:53:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5734",
     "type": "issue_comment",
@@ -139,7 +139,7 @@ archive/issue_comments_044805.json:
 }
 ```
 
-Attachment
+Attachment [trac_5734.patch](tarball://root/attachments/some-uuid/ticket5734/trac_5734.patch) by cremona created at 2009-04-14 21:53:34
 
 The patch touches only sage/modular/modsym/manin_symbols.py, based on 3.4.1.rc2.
 
@@ -180,7 +180,7 @@ apply over previous patch
 archive/issue_comments_044807.json:
 ```json
 {
-    "body": "Attachment\n\nThis looks great: applies fine to 3.4.1.rc2, all doctests pass, and documentation builds happily.\n\nI've made a few slight adjustments to the formatting (mainly enforcing a consistent convention that INPUT: is always followed by a bulleted list and OUTPUT: never is, which was true for most but not all of the new doctests), and I've added an x == loads(dumps(x)) doctest for each of the classes that are actually intended for direct use. (There was a loads(dumps()) test in the file already, so sage -coverage didn't protest, but it was commented out, and it was for a different class anyway.)\n\nJohn: if you're happy with the changes I've made, feel free to change this to \"positive review\".",
+    "body": "Attachment [trac_5734-2.patch](tarball://root/attachments/some-uuid/ticket5734/trac_5734-2.patch) by davidloeffler created at 2009-04-15 13:35:46\n\nThis looks great: applies fine to 3.4.1.rc2, all doctests pass, and documentation builds happily.\n\nI've made a few slight adjustments to the formatting (mainly enforcing a consistent convention that INPUT: is always followed by a bulleted list and OUTPUT: never is, which was true for most but not all of the new doctests), and I've added an x == loads(dumps(x)) doctest for each of the classes that are actually intended for direct use. (There was a loads(dumps()) test in the file already, so sage -coverage didn't protest, but it was commented out, and it was for a different class anyway.)\n\nJohn: if you're happy with the changes I've made, feel free to change this to \"positive review\".",
     "created_at": "2009-04-15T13:35:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5734",
     "type": "issue_comment",
@@ -189,7 +189,7 @@ archive/issue_comments_044807.json:
 }
 ```
 
-Attachment
+Attachment [trac_5734-2.patch](tarball://root/attachments/some-uuid/ticket5734/trac_5734-2.patch) by davidloeffler created at 2009-04-15 13:35:46
 
 This looks great: applies fine to 3.4.1.rc2, all doctests pass, and documentation builds happily.
 

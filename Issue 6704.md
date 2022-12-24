@@ -67,7 +67,7 @@ Resolution: fixed
 archive/issue_comments_055066.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch `trac_6704-spell-check-graphs.patch` is a rebase; it depends on #6684.",
+    "body": "Attachment [trac_6704-spell-check-graphs.patch](tarball://root/attachments/some-uuid/ticket6704/trac_6704-spell-check-graphs.patch) by mvngu created at 2009-08-12 05:41:14\n\nThe patch `trac_6704-spell-check-graphs.patch` is a rebase; it depends on #6684.",
     "created_at": "2009-08-12T05:41:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6704",
     "type": "issue_comment",
@@ -76,6 +76,6 @@ archive/issue_comments_055066.json:
 }
 ```
 
-Attachment
+Attachment [trac_6704-spell-check-graphs.patch](tarball://root/attachments/some-uuid/ticket6704/trac_6704-spell-check-graphs.patch) by mvngu created at 2009-08-12 05:41:14
 
 The patch `trac_6704-spell-check-graphs.patch` is a rebase; it depends on #6684.

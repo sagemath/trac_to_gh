@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8108
 archive/issue_comments_071159.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [how-to-develop.txt](tarball://root/attachments/some-uuid/ticket8108/how-to-develop.txt) by rbeezer created at 2010-01-28 05:47:10",
     "created_at": "2010-01-28T05:47:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8108",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_071159.json:
 }
 ```
 
-Attachment
+Attachment [how-to-develop.txt](tarball://root/attachments/some-uuid/ticket8108/how-to-develop.txt) by rbeezer created at 2010-01-28 05:47:10
 
 
 
@@ -71,7 +71,7 @@ based on Sage 4.3.2.alpha0
 archive/issue_comments_071161.json:
 ```json
 {
-    "body": "Attachment\n\nI have attached a patch that includes information from [how-to-develop.txt](http://trac.sagemath.org/sage_trac/attachment/ticket/8108/how-to-develop.txt). I also added more stuff, which means I can no longer review Rob's work. What's missing is a section on patch management using Mercurial queue. That could be for a separate ticket if necessary.",
+    "body": "Attachment [trac_8108-beginner-guide.patch](tarball://root/attachments/some-uuid/ticket8108/trac_8108-beginner-guide.patch) by mvngu created at 2010-01-30 23:22:58\n\nI have attached a patch that includes information from [how-to-develop.txt](http://trac.sagemath.org/sage_trac/attachment/ticket/8108/how-to-develop.txt). I also added more stuff, which means I can no longer review Rob's work. What's missing is a section on patch management using Mercurial queue. That could be for a separate ticket if necessary.",
     "created_at": "2010-01-30T23:22:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8108",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_071161.json:
 }
 ```
 
-Attachment
+Attachment [trac_8108-beginner-guide.patch](tarball://root/attachments/some-uuid/ticket8108/trac_8108-beginner-guide.patch) by mvngu created at 2010-01-30 23:22:58
 
 I have attached a patch that includes information from [how-to-develop.txt](http://trac.sagemath.org/sage_trac/attachment/ticket/8108/how-to-develop.txt). I also added more stuff, which means I can no longer review Rob's work. What's missing is a section on patch management using Mercurial queue. That could be for a separate ticket if necessary.
 
@@ -199,7 +199,7 @@ apply on top of other patch
 archive/issue_comments_071168.json:
 ```json
 {
-    "body": "Attachment\n\nJohn - thanks for the fixes (and the once-over).\n\nJohn's fixes look good to me.  Minh handled the formatting (and lots more), so hopefully this will pass for a review of John's changes.  ;-)\n\nRob",
+    "body": "Attachment [trac_8108-typos.patch](tarball://root/attachments/some-uuid/ticket8108/trac_8108-typos.patch) by rbeezer created at 2010-02-01 18:51:13\n\nJohn - thanks for the fixes (and the once-over).\n\nJohn's fixes look good to me.  Minh handled the formatting (and lots more), so hopefully this will pass for a review of John's changes.  ;-)\n\nRob",
     "created_at": "2010-02-01T18:51:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8108",
     "type": "issue_comment",
@@ -208,7 +208,7 @@ archive/issue_comments_071168.json:
 }
 ```
 
-Attachment
+Attachment [trac_8108-typos.patch](tarball://root/attachments/some-uuid/ticket8108/trac_8108-typos.patch) by rbeezer created at 2010-02-01 18:51:13
 
 John - thanks for the fixes (and the once-over).
 

@@ -199,7 +199,7 @@ Everything else looks nice.  I feel like I want to check the logic for numbers d
 archive/issue_comments_053572.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6567.patch](tarball://root/attachments/some-uuid/ticket6567/6567.patch) by roed created at 2013-02-27 11:36:46",
     "created_at": "2013-02-27T11:36:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6567",
     "type": "issue_comment",
@@ -208,7 +208,7 @@ archive/issue_comments_053572.json:
 }
 ```
 
-Attachment
+Attachment [6567.patch](tarball://root/attachments/some-uuid/ticket6567/6567.patch) by roed created at 2013-02-27 11:36:46
 
 
 
@@ -235,7 +235,7 @@ I'm not quite sure what you meant by the "# now self..." but I made some change 
 archive/issue_comments_053574.json:
 ```json
 {
-    "body": "Attachment\n\nFixes single line in self.is_primitive_root() to make compatible with new 12116.patch",
+    "body": "Attachment [6567_2.patch](tarball://root/attachments/some-uuid/ticket6567/6567_2.patch) by spice created at 2013-02-28 23:36:01\n\nFixes single line in self.is_primitive_root() to make compatible with new 12116.patch",
     "created_at": "2013-02-28T23:36:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6567",
     "type": "issue_comment",
@@ -244,7 +244,7 @@ archive/issue_comments_053574.json:
 }
 ```
 
-Attachment
+Attachment [6567_2.patch](tarball://root/attachments/some-uuid/ticket6567/6567_2.patch) by spice created at 2013-02-28 23:36:01
 
 Fixes single line in self.is_primitive_root() to make compatible with new 12116.patch
 

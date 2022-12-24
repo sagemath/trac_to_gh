@@ -325,7 +325,7 @@ Acronym "SAGE" replaced by original "Sage"
 archive/issue_comments_059592.json:
 ```json
 {
-    "body": "Attachment\n\nWhat is the status of this ticket? Is it ready for review?",
+    "body": "Attachment [index.rst](tarball://root/attachments/some-uuid/ticket7192/index.rst) by mvngu created at 2010-02-01 03:19:27\n\nWhat is the status of this ticket? Is it ready for review?",
     "created_at": "2010-02-01T03:19:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7192",
     "type": "issue_comment",
@@ -334,7 +334,7 @@ archive/issue_comments_059592.json:
 }
 ```
 
-Attachment
+Attachment [index.rst](tarball://root/attachments/some-uuid/ticket7192/index.rst) by mvngu created at 2010-02-01 03:19:27
 
 What is the status of this ticket? Is it ready for review?
 

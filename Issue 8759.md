@@ -69,7 +69,7 @@ Changing status from new to needs_review.
 archive/issue_comments_080145.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8759-sass-dir-change.patch](tarball://root/attachments/some-uuid/ticket8759/trac_8759-sass-dir-change.patch) by acleone created at 2010-04-24 23:22:43",
     "created_at": "2010-04-24T23:22:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8759",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_080145.json:
 }
 ```
 
-Attachment
+Attachment [trac_8759-sass-dir-change.patch](tarball://root/attachments/some-uuid/ticket8759/trac_8759-sass-dir-change.patch) by acleone created at 2010-04-24 23:22:43
 
 
 
@@ -87,7 +87,7 @@ Attachment
 archive/issue_comments_080146.json:
 ```json
 {
-    "body": "Attachment\n\nReplaces earlier patch.  Now in git-format so that files are just renamed instead of removed/added",
+    "body": "Attachment [trac_8759-sass-dir-change.git-format.patch](tarball://root/attachments/some-uuid/ticket8759/trac_8759-sass-dir-change.git-format.patch) by acleone created at 2010-04-25 00:47:39\n\nReplaces earlier patch.  Now in git-format so that files are just renamed instead of removed/added",
     "created_at": "2010-04-25T00:47:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8759",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_080146.json:
 }
 ```
 
-Attachment
+Attachment [trac_8759-sass-dir-change.git-format.patch](tarball://root/attachments/some-uuid/ticket8759/trac_8759-sass-dir-change.git-format.patch) by acleone created at 2010-04-25 00:47:39
 
 Replaces earlier patch.  Now in git-format so that files are just renamed instead of removed/added
 

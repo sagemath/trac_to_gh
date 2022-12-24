@@ -60,7 +60,7 @@ Changing status from new to needs_review.
 archive/issue_comments_082112.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac8914.patch](tarball://root/attachments/some-uuid/ticket8914/trac8914.patch) by wjlaffin created at 2010-05-07 16:25:17",
     "created_at": "2010-05-07T16:25:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8914",
     "type": "issue_comment",
@@ -69,7 +69,7 @@ archive/issue_comments_082112.json:
 }
 ```
 
-Attachment
+Attachment [trac8914.patch](tarball://root/attachments/some-uuid/ticket8914/trac8914.patch) by wjlaffin created at 2010-05-07 16:25:17
 
 
 

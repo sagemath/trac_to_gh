@@ -248,7 +248,7 @@ Traceback (most recent call last):
 archive/issue_comments_006832.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_1129.hg](tarball://root/attachments/some-uuid/ticket1129/trac_1129.hg) by craigcitro created at 2007-12-02 10:11:28",
     "created_at": "2007-12-02T10:11:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1129",
     "type": "issue_comment",
@@ -257,7 +257,7 @@ archive/issue_comments_006832.json:
 }
 ```
 
-Attachment
+Attachment [trac_1129.hg](tarball://root/attachments/some-uuid/ticket1129/trac_1129.hg) by craigcitro created at 2007-12-02 10:11:28
 
 
 
@@ -302,7 +302,7 @@ Mostly I like the patch.  I do have one question, though: you use the slow path 
 archive/issue_comments_006835.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1129_2.patch](tarball://root/attachments/some-uuid/ticket1129/1129_2.patch) by craigcitro created at 2007-12-02 19:07:38",
     "created_at": "2007-12-02T19:07:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1129",
     "type": "issue_comment",
@@ -311,7 +311,7 @@ archive/issue_comments_006835.json:
 }
 ```
 
-Attachment
+Attachment [1129_2.patch](tarball://root/attachments/some-uuid/ticket1129/1129_2.patch) by craigcitro created at 2007-12-02 19:07:38
 
 
 

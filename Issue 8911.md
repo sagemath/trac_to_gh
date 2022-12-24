@@ -107,7 +107,7 @@ This is the pickle jar from sage-4.4.2 (and most likely sage-4.4.3), with the cr
 archive/issue_comments_082093.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [pickle_jar.tar.bz2](tarball://root/attachments/some-uuid/ticket8911/pickle_jar.tar.bz2) by nthiery created at 2010-06-07 16:00:26",
     "created_at": "2010-06-07T16:00:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8911",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_082093.json:
 }
 ```
 
-Attachment
+Attachment [pickle_jar.tar.bz2](tarball://root/attachments/some-uuid/ticket8911/pickle_jar.tar.bz2) by nthiery created at 2010-06-07 16:00:26
 
 
 
@@ -125,7 +125,7 @@ Attachment
 archive/issue_comments_082094.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8911_categorification_crystals-as.patch](tarball://root/attachments/some-uuid/ticket8911/trac_8911_categorification_crystals-as.patch) by aschilling created at 2010-06-07 23:22:36",
     "created_at": "2010-06-07T23:22:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8911",
     "type": "issue_comment",
@@ -134,7 +134,7 @@ archive/issue_comments_082094.json:
 }
 ```
 
-Attachment
+Attachment [trac_8911_categorification_crystals-as.patch](tarball://root/attachments/some-uuid/ticket8911/trac_8911_categorification_crystals-as.patch) by aschilling created at 2010-06-07 23:22:36
 
 
 

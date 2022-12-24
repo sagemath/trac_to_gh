@@ -157,7 +157,7 @@ I forgot one more transposition of a matrix %-)  This version should be correct 
 archive/issue_comments_085979.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated patch",
+    "body": "Attachment [trac_9188_fix_facet_normal.patch](tarball://root/attachments/some-uuid/ticket9188/trac_9188_fix_facet_normal.patch) by vbraun created at 2010-06-08 18:45:30\n\nUpdated patch",
     "created_at": "2010-06-08T18:45:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9188",
     "type": "issue_comment",
@@ -166,7 +166,7 @@ archive/issue_comments_085979.json:
 }
 ```
 
-Attachment
+Attachment [trac_9188_fix_facet_normal.patch](tarball://root/attachments/some-uuid/ticket9188/trac_9188_fix_facet_normal.patch) by vbraun created at 2010-06-08 18:45:30
 
 Updated patch
 
@@ -213,7 +213,7 @@ Apply on top of the original patch.
 archive/issue_comments_085982.json:
 ```json
 {
-    "body": "Attachment\n\nOK, my patch looks big, but the only real change to the original is taking the absolute value of the dual scaling factor, so that normals remain inner.\n\nIn addition I (hopefully) made doctests more clear, since they do appear in the documentation. Polytopes are now created using coordinates of points with all the necessary transpositions after that. I also made doctest lines shorter for better looks of the documentation.\n\nI have changed \"parallel\" to \"orthogonal to integer kernel\" in the description of normals (and now I do remember that I didn't like this \"parallel\" when I wrote it...).\n\nIf you are fine with all these changes, I will switch it to positive review. Thank you for catching this bug!",
+    "body": "Attachment [trac_9188_fix_facet_normal_reviewer.patch](tarball://root/attachments/some-uuid/ticket9188/trac_9188_fix_facet_normal_reviewer.patch) by novoselt created at 2010-06-08 20:55:14\n\nOK, my patch looks big, but the only real change to the original is taking the absolute value of the dual scaling factor, so that normals remain inner.\n\nIn addition I (hopefully) made doctests more clear, since they do appear in the documentation. Polytopes are now created using coordinates of points with all the necessary transpositions after that. I also made doctest lines shorter for better looks of the documentation.\n\nI have changed \"parallel\" to \"orthogonal to integer kernel\" in the description of normals (and now I do remember that I didn't like this \"parallel\" when I wrote it...).\n\nIf you are fine with all these changes, I will switch it to positive review. Thank you for catching this bug!",
     "created_at": "2010-06-08T20:55:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9188",
     "type": "issue_comment",
@@ -222,7 +222,7 @@ archive/issue_comments_085982.json:
 }
 ```
 
-Attachment
+Attachment [trac_9188_fix_facet_normal_reviewer.patch](tarball://root/attachments/some-uuid/ticket9188/trac_9188_fix_facet_normal_reviewer.patch) by novoselt created at 2010-06-08 20:55:14
 
 OK, my patch looks big, but the only real change to the original is taking the absolute value of the dual scaling factor, so that normals remain inner.
 

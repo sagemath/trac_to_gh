@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6374
 archive/issue_comments_051016.json:
 ```json
 {
-    "body": "Attachment\n\nAt least twice, I ran into the failure (hopefully) fixed by this ticket. I already volunteered to review it (in a note on sage-release), but if somebody else is faster, OK.",
+    "body": "Attachment [trac-6234-pt2.patch](tarball://root/attachments/some-uuid/ticket6374/trac-6234-pt2.patch) by GeorgSWeber created at 2009-07-16 22:00:02\n\nAt least twice, I ran into the failure (hopefully) fixed by this ticket. I already volunteered to review it (in a note on sage-release), but if somebody else is faster, OK.",
     "created_at": "2009-07-16T22:00:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6374",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_051016.json:
 }
 ```
 
-Attachment
+Attachment [trac-6234-pt2.patch](tarball://root/attachments/some-uuid/ticket6374/trac-6234-pt2.patch) by GeorgSWeber created at 2009-07-16 22:00:02
 
 At least twice, I ran into the failure (hopefully) fixed by this ticket. I already volunteered to review it (in a note on sage-release), but if somebody else is faster, OK.
 

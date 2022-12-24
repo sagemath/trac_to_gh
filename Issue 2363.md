@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2363
 archive/issue_comments_015933.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [integer.pyx.patch](tarball://root/attachments/some-uuid/ticket2363/integer.pyx.patch) by gfurnish created at 2008-03-01 20:26:22",
     "created_at": "2008-03-01T20:26:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2363",
     "type": "issue_comment",
@@ -41,7 +41,7 @@ archive/issue_comments_015933.json:
 }
 ```
 
-Attachment
+Attachment [integer.pyx.patch](tarball://root/attachments/some-uuid/ticket2363/integer.pyx.patch) by gfurnish created at 2008-03-01 20:26:22
 
 
 

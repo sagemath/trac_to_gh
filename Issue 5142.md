@@ -47,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5142
 archive/issue_comments_039329.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5142.patch](tarball://root/attachments/some-uuid/ticket5142/5142.patch) by jhpalmieri created at 2009-01-30 22:32:17",
     "created_at": "2009-01-30T22:32:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5142",
     "type": "issue_comment",
@@ -56,7 +56,7 @@ archive/issue_comments_039329.json:
 }
 ```
 
-Attachment
+Attachment [5142.patch](tarball://root/attachments/some-uuid/ticket5142/5142.patch) by jhpalmieri created at 2009-01-30 22:32:17
 
 
 
@@ -161,7 +161,7 @@ Michael
 archive/issue_comments_039334.json:
 ```json
 {
-    "body": "Attachment\n\nrebased against 3.3.alpha6",
+    "body": "Attachment [5142-rebased.patch](tarball://root/attachments/some-uuid/ticket5142/5142-rebased.patch) by jhpalmieri created at 2009-02-09 16:45:14\n\nrebased against 3.3.alpha6",
     "created_at": "2009-02-09T16:45:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5142",
     "type": "issue_comment",
@@ -170,7 +170,7 @@ archive/issue_comments_039334.json:
 }
 ```
 
-Attachment
+Attachment [5142-rebased.patch](tarball://root/attachments/some-uuid/ticket5142/5142-rebased.patch) by jhpalmieri created at 2009-02-09 16:45:14
 
 rebased against 3.3.alpha6
 
@@ -232,7 +232,7 @@ simply fails with a mysterious TypeError in the current code, whereas with the p
 archive/issue_comments_039337.json:
 ```json
 {
-    "body": "Attachment\n\nonly apply this patch",
+    "body": "Attachment [5142-new.patch](tarball://root/attachments/some-uuid/ticket5142/5142-new.patch) by jhpalmieri created at 2009-02-10 18:00:39\n\nonly apply this patch",
     "created_at": "2009-02-10T18:00:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5142",
     "type": "issue_comment",
@@ -241,7 +241,7 @@ archive/issue_comments_039337.json:
 }
 ```
 
-Attachment
+Attachment [5142-new.patch](tarball://root/attachments/some-uuid/ticket5142/5142-new.patch) by jhpalmieri created at 2009-02-10 18:00:39
 
 only apply this patch
 

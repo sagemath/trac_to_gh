@@ -75,7 +75,7 @@ Changing status from new to needs_review.
 archive/issue_comments_066676.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch `trac_7746-blum-goldwasser.patch` introduces two new files:\n\n* `sage/crypto/public_key/blum_goldwasser.py` --- A class implementing the Blum-Goldwasser probabilistic public-key encryption scheme. This is a complete rewrite of the version by Mike Hogan and David Joyner, which was originally released as public domain software. The rewrite is licensed under GPLv2+. For reference, I have also attached the original public domain version.\n \n* `sage/crypto/util.py` --- A module containing miscellaneous functions for cryptographic purposes. The Blum-Goldwasser implementation makes use of various functions in this module.",
+    "body": "Attachment [BGcrypto2.sage](tarball://root/attachments/some-uuid/ticket7746/BGcrypto2.sage) by mvngu created at 2009-12-21 04:02:37\n\nThe patch `trac_7746-blum-goldwasser.patch` introduces two new files:\n\n* `sage/crypto/public_key/blum_goldwasser.py` --- A class implementing the Blum-Goldwasser probabilistic public-key encryption scheme. This is a complete rewrite of the version by Mike Hogan and David Joyner, which was originally released as public domain software. The rewrite is licensed under GPLv2+. For reference, I have also attached the original public domain version.\n \n* `sage/crypto/util.py` --- A module containing miscellaneous functions for cryptographic purposes. The Blum-Goldwasser implementation makes use of various functions in this module.",
     "created_at": "2009-12-21T04:02:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7746",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_066676.json:
 }
 ```
 
-Attachment
+Attachment [BGcrypto2.sage](tarball://root/attachments/some-uuid/ticket7746/BGcrypto2.sage) by mvngu created at 2009-12-21 04:02:37
 
 The patch `trac_7746-blum-goldwasser.patch` introduces two new files:
 
@@ -308,7 +308,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_066683.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:4 wdj]:\n> Sounds good.\n\nI have attached an updated patch which also implements the function `has_blum_prime()`.\n\n\n\n\n\n> Why not \n> \n\n```\nsage/crypto/stream_cipher.py\n```\n\n> instead?\n\nThe module `sage/crypto/stream_cipher.py` acts as a back-end for `sage/crypto/stream.py`. I believe a more appropriate place is to put `blum_blum_shub()` in  `sage/crypto/stream.py`. The latest version of the patch does this.",
+    "body": "Attachment [trac_7746-blum-goldwasser.patch](tarball://root/attachments/some-uuid/ticket7746/trac_7746-blum-goldwasser.patch) by mvngu created at 2010-02-12 05:36:43\n\nReplying to [comment:4 wdj]:\n> Sounds good.\n\nI have attached an updated patch which also implements the function `has_blum_prime()`.\n\n\n\n\n\n> Why not \n> \n\n```\nsage/crypto/stream_cipher.py\n```\n\n> instead?\n\nThe module `sage/crypto/stream_cipher.py` acts as a back-end for `sage/crypto/stream.py`. I believe a more appropriate place is to put `blum_blum_shub()` in  `sage/crypto/stream.py`. The latest version of the patch does this.",
     "created_at": "2010-02-12T05:36:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7746",
     "type": "issue_comment",
@@ -317,7 +317,7 @@ archive/issue_comments_066683.json:
 }
 ```
 
-Attachment
+Attachment [trac_7746-blum-goldwasser.patch](tarball://root/attachments/some-uuid/ticket7746/trac_7746-blum-goldwasser.patch) by mvngu created at 2010-02-12 05:36:43
 
 Replying to [comment:4 wdj]:
 > Sounds good.

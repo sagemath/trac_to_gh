@@ -45,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5753
 archive/issue_comments_044968.json:
 ```json
 {
-    "body": "Attachment\n\narithmetic with infinity",
+    "body": "Attachment [trac_5753-01-infinity.patch](tarball://root/attachments/some-uuid/ticket5753/trac_5753-01-infinity.patch) by burcin created at 2009-04-11 15:51:52\n\narithmetic with infinity",
     "created_at": "2009-04-11T15:51:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5753",
     "type": "issue_comment",
@@ -54,7 +54,7 @@ archive/issue_comments_044968.json:
 }
 ```
 
-Attachment
+Attachment [trac_5753-01-infinity.patch](tarball://root/attachments/some-uuid/ticket5753/trac_5753-01-infinity.patch) by burcin created at 2009-04-11 15:51:52
 
 arithmetic with infinity
 
@@ -65,7 +65,7 @@ arithmetic with infinity
 archive/issue_comments_044969.json:
 ```json
 {
-    "body": "Attachment\n\nfix coercion of complex i",
+    "body": "Attachment [trac_5753-02-complex_i.patch](tarball://root/attachments/some-uuid/ticket5753/trac_5753-02-complex_i.patch) by burcin created at 2009-04-11 15:52:25\n\nfix coercion of complex i",
     "created_at": "2009-04-11T15:52:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5753",
     "type": "issue_comment",
@@ -74,7 +74,7 @@ archive/issue_comments_044969.json:
 }
 ```
 
-Attachment
+Attachment [trac_5753-02-complex_i.patch](tarball://root/attachments/some-uuid/ticket5753/trac_5753-02-complex_i.patch) by burcin created at 2009-04-11 15:52:25
 
 fix coercion of complex i
 
@@ -103,7 +103,7 @@ fix doctests for printing changes
 archive/issue_comments_044971.json:
 ```json
 {
-    "body": "Attachment\n\nfix printing of latex parenthesis",
+    "body": "Attachment [trac_5753-04-latex_paren.patch](tarball://root/attachments/some-uuid/ticket5753/trac_5753-04-latex_paren.patch) by burcin created at 2009-04-11 15:53:21\n\nfix printing of latex parenthesis",
     "created_at": "2009-04-11T15:53:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5753",
     "type": "issue_comment",
@@ -112,7 +112,7 @@ archive/issue_comments_044971.json:
 }
 ```
 
-Attachment
+Attachment [trac_5753-04-latex_paren.patch](tarball://root/attachments/some-uuid/ticket5753/trac_5753-04-latex_paren.patch) by burcin created at 2009-04-11 15:53:21
 
 fix printing of latex parenthesis
 
@@ -141,7 +141,7 @@ call python for latex representation of symbols
 archive/issue_comments_044973.json:
 ```json
 {
-    "body": "Attachment\n\nallow custom printing methods in symbolic functions, move printing of function and fderivative to python",
+    "body": "Attachment [trac_5753-06-latex_function.patch](tarball://root/attachments/some-uuid/ticket5753/trac_5753-06-latex_function.patch) by burcin created at 2009-04-11 15:54:51\n\nallow custom printing methods in symbolic functions, move printing of function and fderivative to python",
     "created_at": "2009-04-11T15:54:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5753",
     "type": "issue_comment",
@@ -150,7 +150,7 @@ archive/issue_comments_044973.json:
 }
 ```
 
-Attachment
+Attachment [trac_5753-06-latex_function.patch](tarball://root/attachments/some-uuid/ticket5753/trac_5753-06-latex_function.patch) by burcin created at 2009-04-11 15:54:51
 
 allow custom printing methods in symbolic functions, move printing of function and fderivative to python
 

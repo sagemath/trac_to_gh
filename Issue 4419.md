@@ -47,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4419
 archive/issue_comments_032496.json:
 ```json
 {
-    "body": "Attachment\n\nI don't see how this fixes the original problem. I get this:\n\n\n```\nsage: p = gap(Permutation('(1,2,3)'))                                                                                              \nsage: q = gap(Permutation('()'))                                                                                       \n---------------------------------------------------------------------------                                            \nValueError                                Traceback (most recent call last)\n<snip>\n\n\nValueError: invalid literal for int() with base 10: ''\n```\n\n\nand this:\n\n\n```\nsage: q = gap(Permutation(()))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n<snip>\n\nTypeError: not enough arguments for format string\n```\n\n\nIt seems to me you want Permutation to work like\nPermutationGroupElement does here:\n\n```\nsage: p = gap(PermutationGroupElement('(1,2,3)'))\nsage: q = gap(PermutationGroupElement('()'))\nsage: gap.Group([p, q])\nGroup( [ (1,2,3), () ] )\nsage: gap.Group([p]) == gap.Group([p, q])\nTrue\n```\n\nIs that correct?",
+    "body": "Attachment [trac_4419.patch](tarball://root/attachments/some-uuid/ticket4419/trac_4419.patch) by wdj created at 2008-11-02 01:57:42\n\nI don't see how this fixes the original problem. I get this:\n\n\n```\nsage: p = gap(Permutation('(1,2,3)'))                                                                                              \nsage: q = gap(Permutation('()'))                                                                                       \n---------------------------------------------------------------------------                                            \nValueError                                Traceback (most recent call last)\n<snip>\n\n\nValueError: invalid literal for int() with base 10: ''\n```\n\n\nand this:\n\n\n```\nsage: q = gap(Permutation(()))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n<snip>\n\nTypeError: not enough arguments for format string\n```\n\n\nIt seems to me you want Permutation to work like\nPermutationGroupElement does here:\n\n```\nsage: p = gap(PermutationGroupElement('(1,2,3)'))\nsage: q = gap(PermutationGroupElement('()'))\nsage: gap.Group([p, q])\nGroup( [ (1,2,3), () ] )\nsage: gap.Group([p]) == gap.Group([p, q])\nTrue\n```\n\nIs that correct?",
     "created_at": "2008-11-02T01:57:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4419",
     "type": "issue_comment",
@@ -56,7 +56,7 @@ archive/issue_comments_032496.json:
 }
 ```
 
-Attachment
+Attachment [trac_4419.patch](tarball://root/attachments/some-uuid/ticket4419/trac_4419.patch) by wdj created at 2008-11-02 01:57:42
 
 I don't see how this fixes the original problem. I get this:
 

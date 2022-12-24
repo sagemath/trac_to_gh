@@ -449,7 +449,7 @@ Based on 3.4
 archive/issue_comments_042071.json:
 ```json
 {
-    "body": "Attachment\n\nThis has added doctest, clarified yet more stuff, changed f to f(x) in anticipation of the Pynac switch (since the doctests would happen outside of plotting), and also fixed one weird but inconsequential bug in the slope field plot (sqrt was imported twice, but only the second one counted - which was good, because symbolic is what you want there).  Hope this satisfies all concerns.",
+    "body": "Attachment [trac_5438.patch](tarball://root/attachments/some-uuid/ticket5438/trac_5438.patch) by kcrisman created at 2009-03-29 02:57:51\n\nThis has added doctest, clarified yet more stuff, changed f to f(x) in anticipation of the Pynac switch (since the doctests would happen outside of plotting), and also fixed one weird but inconsequential bug in the slope field plot (sqrt was imported twice, but only the second one counted - which was good, because symbolic is what you want there).  Hope this satisfies all concerns.",
     "created_at": "2009-03-29T02:57:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5438",
     "type": "issue_comment",
@@ -458,7 +458,7 @@ archive/issue_comments_042071.json:
 }
 ```
 
-Attachment
+Attachment [trac_5438.patch](tarball://root/attachments/some-uuid/ticket5438/trac_5438.patch) by kcrisman created at 2009-03-29 02:57:51
 
 This has added doctest, clarified yet more stuff, changed f to f(x) in anticipation of the Pynac switch (since the doctests would happen outside of plotting), and also fixed one weird but inconsequential bug in the slope field plot (sqrt was imported twice, but only the second one counted - which was good, because symbolic is what you want there).  Hope this satisfies all concerns.
 
@@ -566,7 +566,7 @@ Based on 3.4.2.alpha0
 archive/issue_comments_042076.json:
 ```json
 {
-    "body": "Attachment\n\nOk, if someone does inspect a couple of the plots before and after I am happy to merge this given that the number of points before and after is close enough.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_5438-rebase.patch](tarball://root/attachments/some-uuid/ticket5438/trac_5438-rebase.patch) by mabshoff created at 2009-05-04 18:46:30\n\nOk, if someone does inspect a couple of the plots before and after I am happy to merge this given that the number of points before and after is close enough.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-04T18:46:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5438",
     "type": "issue_comment",
@@ -575,7 +575,7 @@ archive/issue_comments_042076.json:
 }
 ```
 
-Attachment
+Attachment [trac_5438-rebase.patch](tarball://root/attachments/some-uuid/ticket5438/trac_5438-rebase.patch) by mabshoff created at 2009-05-04 18:46:30
 
 Ok, if someone does inspect a couple of the plots before and after I am happy to merge this given that the number of points before and after is close enough.
 

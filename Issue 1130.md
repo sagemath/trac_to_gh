@@ -64,7 +64,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1130
 archive/issue_comments_006840.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ell_bsgs.patch](tarball://root/attachments/some-uuid/ticket1130/ell_bsgs.patch) by mabshoff created at 2007-11-10 23:12:18",
     "created_at": "2007-11-10T23:12:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1130",
     "type": "issue_comment",
@@ -73,7 +73,7 @@ archive/issue_comments_006840.json:
 }
 ```
 
-Attachment
+Attachment [ell_bsgs.patch](tarball://root/attachments/some-uuid/ticket1130/ell_bsgs.patch) by mabshoff created at 2007-11-10 23:12:18
 
 
 
@@ -289,7 +289,7 @@ extra functionality for e.c.s over non-prime finite fields
 archive/issue_comments_006848.json:
 ```json
 {
-    "body": "Attachment\n\nNew patch fixes this and other issues (#1120, #262, even #29), providing full support for elliptic curves over non-prime finite fields, including intelligent point-counting (including over extension fields), group structure, disctrete log, and more.  All functions fully doctested.",
+    "body": "Attachment [8311.patch](tarball://root/attachments/some-uuid/ticket1130/8311.patch) by cremona created at 2008-02-15 09:45:18\n\nNew patch fixes this and other issues (#1120, #262, even #29), providing full support for elliptic curves over non-prime finite fields, including intelligent point-counting (including over extension fields), group structure, disctrete log, and more.  All functions fully doctested.",
     "created_at": "2008-02-15T09:45:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1130",
     "type": "issue_comment",
@@ -298,7 +298,7 @@ archive/issue_comments_006848.json:
 }
 ```
 
-Attachment
+Attachment [8311.patch](tarball://root/attachments/some-uuid/ticket1130/8311.patch) by cremona created at 2008-02-15 09:45:18
 
 New patch fixes this and other issues (#1120, #262, even #29), providing full support for elliptic curves over non-prime finite fields, including intelligent point-counting (including over extension fields), group structure, disctrete log, and more.  All functions fully doctested.
 
@@ -327,7 +327,7 @@ The attached ncalexan-1 bundle fixes a few small issues and formats docstrings a
 archive/issue_comments_006850.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1130-ncalexan-cleaning-1.hg](tarball://root/attachments/some-uuid/ticket1130/1130-ncalexan-cleaning-1.hg) by ncalexan created at 2008-02-16 18:49:30",
     "created_at": "2008-02-16T18:49:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1130",
     "type": "issue_comment",
@@ -336,7 +336,7 @@ archive/issue_comments_006850.json:
 }
 ```
 
-Attachment
+Attachment [1130-ncalexan-cleaning-1.hg](tarball://root/attachments/some-uuid/ticket1130/1130-ncalexan-cleaning-1.hg) by ncalexan created at 2008-02-16 18:49:30
 
 
 
@@ -345,7 +345,7 @@ Attachment
 archive/issue_comments_006851.json:
 ```json
 {
-    "body": "Attachment\n\naddition minor fixes",
+    "body": "Attachment [8312.patch](tarball://root/attachments/some-uuid/ticket1130/8312.patch) by cremona created at 2008-02-16 20:26:41\n\naddition minor fixes",
     "created_at": "2008-02-16T20:26:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1130",
     "type": "issue_comment",
@@ -354,7 +354,7 @@ archive/issue_comments_006851.json:
 }
 ```
 
-Attachment
+Attachment [8312.patch](tarball://root/attachments/some-uuid/ticket1130/8312.patch) by cremona created at 2008-02-16 20:26:41
 
 addition minor fixes
 
@@ -389,7 +389,7 @@ I have added a new patch 8312.patch which is to applied along with all the previ
 archive/issue_comments_006853.json:
 ```json
 {
-    "body": "Attachment\n\nThis bundle should apply to a clean sage-2.10.2.alpha0 and supersedes everything but malb's bsgs code, which is not ready for application.",
+    "body": "Attachment [1130-jcremona-ncalexan-final.hg](tarball://root/attachments/some-uuid/ticket1130/1130-jcremona-ncalexan-final.hg) by ncalexan created at 2008-02-16 21:25:08\n\nThis bundle should apply to a clean sage-2.10.2.alpha0 and supersedes everything but malb's bsgs code, which is not ready for application.",
     "created_at": "2008-02-16T21:25:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1130",
     "type": "issue_comment",
@@ -398,7 +398,7 @@ archive/issue_comments_006853.json:
 }
 ```
 
-Attachment
+Attachment [1130-jcremona-ncalexan-final.hg](tarball://root/attachments/some-uuid/ticket1130/1130-jcremona-ncalexan-final.hg) by ncalexan created at 2008-02-16 21:25:08
 
 This bundle should apply to a clean sage-2.10.2.alpha0 and supersedes everything but malb's bsgs code, which is not ready for application.
 
@@ -409,7 +409,7 @@ This bundle should apply to a clean sage-2.10.2.alpha0 and supersedes everything
 archive/issue_comments_006854.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1130-jcremona-ncalexan-final.patch](tarball://root/attachments/some-uuid/ticket1130/1130-jcremona-ncalexan-final.patch) by ncalexan created at 2008-02-16 21:47:01",
     "created_at": "2008-02-16T21:47:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1130",
     "type": "issue_comment",
@@ -418,7 +418,7 @@ archive/issue_comments_006854.json:
 }
 ```
 
-Attachment
+Attachment [1130-jcremona-ncalexan-final.patch](tarball://root/attachments/some-uuid/ticket1130/1130-jcremona-ncalexan-final.patch) by ncalexan created at 2008-02-16 21:47:01
 
 
 

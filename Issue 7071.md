@@ -81,7 +81,7 @@ Changing status from new to needs_review.
 archive/issue_comments_058482.json:
 ```json
 {
-    "body": "Attachment\n\nfor review purposes",
+    "body": "Attachment [palp-1.1.p4.patch](tarball://root/attachments/some-uuid/ticket7071/palp-1.1.p4.patch) by ohanar created at 2012-02-09 14:46:10\n\nfor review purposes",
     "created_at": "2012-02-09T14:46:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7071",
     "type": "issue_comment",
@@ -90,7 +90,7 @@ archive/issue_comments_058482.json:
 }
 ```
 
-Attachment
+Attachment [palp-1.1.p4.patch](tarball://root/attachments/some-uuid/ticket7071/palp-1.1.p4.patch) by ohanar created at 2012-02-09 14:46:10
 
 for review purposes
 
@@ -191,7 +191,7 @@ ok, I've based my changes off of the new version at #12055 and have made `CFLAGS
 archive/issue_comments_058488.json:
 ```json
 {
-    "body": "Attachment\n\nfor review purposes",
+    "body": "Attachment [palp-2.0.p1.patch](tarball://root/attachments/some-uuid/ticket7071/palp-2.0.p1.patch) by ohanar created at 2012-02-27 00:35:26\n\nfor review purposes",
     "created_at": "2012-02-27T00:35:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7071",
     "type": "issue_comment",
@@ -200,7 +200,7 @@ archive/issue_comments_058488.json:
 }
 ```
 
-Attachment
+Attachment [palp-2.0.p1.patch](tarball://root/attachments/some-uuid/ticket7071/palp-2.0.p1.patch) by ohanar created at 2012-02-27 00:35:26
 
 for review purposes
 
@@ -265,7 +265,7 @@ Patch from #12055 needs to be applied
 archive/issue_comments_058492.json:
 ```json
 {
-    "body": "Attachment\n\nI've switched the old ticket #12055 to invalid to not make Jeroen replace the spkg twice. But we still need the patch to the Sage library from there.",
+    "body": "Attachment [trac-12055-SAGELOCAL_BIN.patch](tarball://root/attachments/some-uuid/ticket7071/trac-12055-SAGELOCAL_BIN.patch) by vbraun created at 2012-02-27 01:09:59\n\nI've switched the old ticket #12055 to invalid to not make Jeroen replace the spkg twice. But we still need the patch to the Sage library from there.",
     "created_at": "2012-02-27T01:09:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7071",
     "type": "issue_comment",
@@ -274,7 +274,7 @@ archive/issue_comments_058492.json:
 }
 ```
 
-Attachment
+Attachment [trac-12055-SAGELOCAL_BIN.patch](tarball://root/attachments/some-uuid/ticket7071/trac-12055-SAGELOCAL_BIN.patch) by vbraun created at 2012-02-27 01:09:59
 
 I've switched the old ticket #12055 to invalid to not make Jeroen replace the spkg twice. But we still need the patch to the Sage library from there.
 

@@ -81,7 +81,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9657
 archive/issue_comments_093733.json:
 ```json
 {
-    "body": "Attachment\n\nMercurial patch to allow cvxopt to build with gcc 4.5.0 and later",
+    "body": "Attachment [9657.patch](tarball://root/attachments/some-uuid/ticket9657/9657.patch) by drkirkby created at 2010-08-01 07:43:53\n\nMercurial patch to allow cvxopt to build with gcc 4.5.0 and later",
     "created_at": "2010-08-01T07:43:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9657",
     "type": "issue_comment",
@@ -90,7 +90,7 @@ archive/issue_comments_093733.json:
 }
 ```
 
-Attachment
+Attachment [9657.patch](tarball://root/attachments/some-uuid/ticket9657/9657.patch) by drkirkby created at 2010-08-01 07:43:53
 
 Mercurial patch to allow cvxopt to build with gcc 4.5.0 and later
 

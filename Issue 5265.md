@@ -61,7 +61,7 @@ Changing status from new to assigned.
 archive/issue_comments_040420.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5265.patch](tarball://root/attachments/some-uuid/ticket5265/trac_5265.patch) by mabshoff created at 2009-02-14 09:54:45",
     "created_at": "2009-02-14T09:54:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5265",
     "type": "issue_comment",
@@ -70,7 +70,7 @@ archive/issue_comments_040420.json:
 }
 ```
 
-Attachment
+Attachment [trac_5265.patch](tarball://root/attachments/some-uuid/ticket5265/trac_5265.patch) by mabshoff created at 2009-02-14 09:54:45
 
 
 
@@ -79,7 +79,7 @@ Attachment
 archive/issue_comments_040421.json:
 ```json
 {
-    "body": "Attachment\n\nPlease review both patches. The second patch is needed to make 100% the extension is rebuild in case of an upgrade. Sorry for the two patches, but I couldn't fold them since I committed the first one to my local repo already.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_5265-part2.patch](tarball://root/attachments/some-uuid/ticket5265/trac_5265-part2.patch) by mabshoff created at 2009-02-14 10:01:03\n\nPlease review both patches. The second patch is needed to make 100% the extension is rebuild in case of an upgrade. Sorry for the two patches, but I couldn't fold them since I committed the first one to my local repo already.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-14T10:01:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5265",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_040421.json:
 }
 ```
 
-Attachment
+Attachment [trac_5265-part2.patch](tarball://root/attachments/some-uuid/ticket5265/trac_5265-part2.patch) by mabshoff created at 2009-02-14 10:01:03
 
 Please review both patches. The second patch is needed to make 100% the extension is rebuild in case of an upgrade. Sorry for the two patches, but I couldn't fold them since I committed the first one to my local repo already.
 

@@ -324,7 +324,7 @@ Michael
 archive/issue_comments_034071.json:
 ```json
 {
-    "body": "Attachment\n\nUpdate version of mhansen's patch that does pass doctests",
+    "body": "Attachment [trac_4547.patch](tarball://root/attachments/some-uuid/ticket4547/trac_4547.patch) by mabshoff created at 2009-03-23 21:52:13\n\nUpdate version of mhansen's patch that does pass doctests",
     "created_at": "2009-03-23T21:52:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4547",
     "type": "issue_comment",
@@ -333,7 +333,7 @@ archive/issue_comments_034071.json:
 }
 ```
 
-Attachment
+Attachment [trac_4547.patch](tarball://root/attachments/some-uuid/ticket4547/trac_4547.patch) by mabshoff created at 2009-03-23 21:52:13
 
 Update version of mhansen's patch that does pass doctests
 

@@ -55,7 +55,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4347
 archive/issue_comments_031932.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-4347.patch](tarball://root/attachments/some-uuid/ticket4347/sage-4347.patch) by was created at 2008-10-24 01:44:19",
     "created_at": "2008-10-24T01:44:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4347",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_031932.json:
 }
 ```
 
-Attachment
+Attachment [sage-4347.patch](tarball://root/attachments/some-uuid/ticket4347/sage-4347.patch) by was created at 2008-10-24 01:44:19
 
 
 
@@ -247,7 +247,7 @@ There was a bug in the modulus 1 case, which those doctests fortunately caught. 
 archive/issue_comments_031936.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-4347-part2.patch](tarball://root/attachments/some-uuid/ticket4347/sage-4347-part2.patch) by was created at 2008-10-26 23:17:45",
     "created_at": "2008-10-26T23:17:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4347",
     "type": "issue_comment",
@@ -256,7 +256,7 @@ archive/issue_comments_031936.json:
 }
 ```
 
-Attachment
+Attachment [sage-4347-part2.patch](tarball://root/attachments/some-uuid/ticket4347/sage-4347-part2.patch) by was created at 2008-10-26 23:17:45
 
 
 

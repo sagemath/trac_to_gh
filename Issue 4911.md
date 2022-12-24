@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4911
 archive/issue_comments_037270.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4911.patch](tarball://root/attachments/some-uuid/ticket4911/trac_4911.patch) by mhansen created at 2009-01-02 02:24:45",
     "created_at": "2009-01-02T02:24:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4911",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_037270.json:
 }
 ```
 
-Attachment
+Attachment [trac_4911.patch](tarball://root/attachments/some-uuid/ticket4911/trac_4911.patch) by mhansen created at 2009-01-02 02:24:45
 
 
 
@@ -69,7 +69,7 @@ Actually, why do you need :math: here at all?  I don't remember seeing it in the
 archive/issue_comments_037272.json:
 ```json
 {
-    "body": "Attachment\n\nI've posted a patch which fixes this issue.  The :math: was there because I had forgot to go through this file and remove them.",
+    "body": "Attachment [trac_4911-2.patch](tarball://root/attachments/some-uuid/ticket4911/trac_4911-2.patch) by mhansen created at 2009-01-08 21:16:25\n\nI've posted a patch which fixes this issue.  The :math: was there because I had forgot to go through this file and remove them.",
     "created_at": "2009-01-08T21:16:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4911",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_037272.json:
 }
 ```
 
-Attachment
+Attachment [trac_4911-2.patch](tarball://root/attachments/some-uuid/ticket4911/trac_4911-2.patch) by mhansen created at 2009-01-08 21:16:25
 
 I've posted a patch which fixes this issue.  The :math: was there because I had forgot to go through this file and remove them.
 
@@ -107,7 +107,7 @@ Great, positive review.
 archive/issue_comments_037274.json:
 ```json
 {
-    "body": "Attachment\n\nMerged sage.games-final.patch in Sage 3.4.alpha0.\n\nCheers,\n\nMichael",
+    "body": "Attachment [sage.games-final.patch](tarball://root/attachments/some-uuid/ticket4911/sage.games-final.patch) by mabshoff created at 2009-02-24 18:01:53\n\nMerged sage.games-final.patch in Sage 3.4.alpha0.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-24T18:01:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4911",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_037274.json:
 }
 ```
 
-Attachment
+Attachment [sage.games-final.patch](tarball://root/attachments/some-uuid/ticket4911/sage.games-final.patch) by mabshoff created at 2009-02-24 18:01:53
 
 Merged sage.games-final.patch in Sage 3.4.alpha0.
 

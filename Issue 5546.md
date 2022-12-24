@@ -147,7 +147,7 @@ allow forming matrices and vectors from pynac expressions
 archive/issue_comments_043143.json:
 ```json
 {
-    "body": "Attachment\n\nmake pynac expressions use the multi_derivative framework",
+    "body": "Attachment [trac_5546-2-pynac_derivative.patch](tarball://root/attachments/some-uuid/ticket5546/trac_5546-2-pynac_derivative.patch) by burcin created at 2009-03-24 16:33:56\n\nmake pynac expressions use the multi_derivative framework",
     "created_at": "2009-03-24T16:33:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5546",
     "type": "issue_comment",
@@ -156,7 +156,7 @@ archive/issue_comments_043143.json:
 }
 ```
 
-Attachment
+Attachment [trac_5546-2-pynac_derivative.patch](tarball://root/attachments/some-uuid/ticket5546/trac_5546-2-pynac_derivative.patch) by burcin created at 2009-03-24 16:33:56
 
 make pynac expressions use the multi_derivative framework
 
@@ -217,7 +217,7 @@ sage: v * (M * v)
 archive/issue_comments_043145.json:
 ```json
 {
-    "body": "Attachment\n\npatch to pynac to handle exceptions during hashing",
+    "body": "Attachment [pynac-hash_exception.patch](tarball://root/attachments/some-uuid/ticket5546/pynac-hash_exception.patch) by burcin created at 2009-04-24 15:34:24\n\npatch to pynac to handle exceptions during hashing",
     "created_at": "2009-04-24T15:34:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5546",
     "type": "issue_comment",
@@ -226,7 +226,7 @@ archive/issue_comments_043145.json:
 }
 ```
 
-Attachment
+Attachment [pynac-hash_exception.patch](tarball://root/attachments/some-uuid/ticket5546/pynac-hash_exception.patch) by burcin created at 2009-04-24 15:34:24
 
 patch to pynac to handle exceptions during hashing
 
@@ -255,7 +255,7 @@ doctests for the fix
 archive/issue_comments_043147.json:
 ```json
 {
-    "body": "Attachment\n\nattachment:pynac-hash_exception.patch fixes exception handling during hashing in pynac and the problems reported by Nick in comment:2.\n\nI will hold off on doing another pynac release to address this, since I don't know if mhansen made any changes which might be affected.\n\nBTW, another pynac release, 0.1.6 in this case, would introduce circular dependencies in trac. :)\n\nComments on how to proceed?",
+    "body": "Attachment [5546_doctests.patch](tarball://root/attachments/some-uuid/ticket5546/5546_doctests.patch) by burcin created at 2009-04-24 15:40:17\n\nattachment:pynac-hash_exception.patch fixes exception handling during hashing in pynac and the problems reported by Nick in comment:2.\n\nI will hold off on doing another pynac release to address this, since I don't know if mhansen made any changes which might be affected.\n\nBTW, another pynac release, 0.1.6 in this case, would introduce circular dependencies in trac. :)\n\nComments on how to proceed?",
     "created_at": "2009-04-24T15:40:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5546",
     "type": "issue_comment",
@@ -264,7 +264,7 @@ archive/issue_comments_043147.json:
 }
 ```
 
-Attachment
+Attachment [5546_doctests.patch](tarball://root/attachments/some-uuid/ticket5546/5546_doctests.patch) by burcin created at 2009-04-24 15:40:17
 
 attachment:pynac-hash_exception.patch fixes exception handling during hashing in pynac and the problems reported by Nick in comment:2.
 

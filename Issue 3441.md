@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3441
 archive/issue_comments_024279.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [binary_code_long.patch](tarball://root/attachments/some-uuid/ticket3441/binary_code_long.patch) by rlm created at 2008-06-16 21:42:43",
     "created_at": "2008-06-16T21:42:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3441",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_024279.json:
 }
 ```
 
-Attachment
+Attachment [binary_code_long.patch](tarball://root/attachments/some-uuid/ticket3441/binary_code_long.patch) by rlm created at 2008-06-16 21:42:43
 
 
 

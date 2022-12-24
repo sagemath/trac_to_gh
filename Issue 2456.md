@@ -144,7 +144,7 @@ REFEREE REPORT:
 archive/issue_comments_016636.json:
 ```json
 {
-    "body": "Attachment\n\nreplaced patch addresses my concern.",
+    "body": "Attachment [trac_2456.patch](tarball://root/attachments/some-uuid/ticket2456/trac_2456.patch) by was created at 2008-03-10 16:09:58\n\nreplaced patch addresses my concern.",
     "created_at": "2008-03-10T16:09:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2456",
     "type": "issue_comment",
@@ -153,7 +153,7 @@ archive/issue_comments_016636.json:
 }
 ```
 
-Attachment
+Attachment [trac_2456.patch](tarball://root/attachments/some-uuid/ticket2456/trac_2456.patch) by was created at 2008-03-10 16:09:58
 
 replaced patch addresses my concern.
 

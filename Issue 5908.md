@@ -69,7 +69,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5908
 archive/issue_comments_046695.json:
 ```json
 {
-    "body": "Attachment\n\nThis has an eval in there that seems really bad to me.  And no doctests.  (I once added the machinery to doctest such things, did it ever get merged?)",
+    "body": "Attachment [11803.patch](tarball://root/attachments/some-uuid/ticket5908/11803.patch) by ncalexan created at 2009-06-15 05:29:49\n\nThis has an eval in there that seems really bad to me.  And no doctests.  (I once added the machinery to doctest such things, did it ever get merged?)",
     "created_at": "2009-06-15T05:29:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5908",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_046695.json:
 }
 ```
 
-Attachment
+Attachment [11803.patch](tarball://root/attachments/some-uuid/ticket5908/11803.patch) by ncalexan created at 2009-06-15 05:29:49
 
 This has an eval in there that seems really bad to me.  And no doctests.  (I once added the machinery to doctest such things, did it ever get merged?)
 

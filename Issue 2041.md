@@ -223,7 +223,7 @@ Michael
 archive/issue_comments_013225.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2041-tut_long_lines.patch](tarball://root/attachments/some-uuid/ticket2041/2041-tut_long_lines.patch) by AlexGhitza created at 2008-02-17 20:09:49",
     "created_at": "2008-02-17T20:09:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2041",
     "type": "issue_comment",
@@ -232,7 +232,7 @@ archive/issue_comments_013225.json:
 }
 ```
 
-Attachment
+Attachment [2041-tut_long_lines.patch](tarball://root/attachments/some-uuid/ticket2041/2041-tut_long_lines.patch) by AlexGhitza created at 2008-02-17 20:09:49
 
 
 
@@ -353,7 +353,7 @@ I have uploaded a patch that is based on 2.10.2.alpha1 and passes all the tests 
 archive/issue_comments_013232.json:
 ```json
 {
-    "body": "Attachment\n\nThe new patch `tut_verbatim.patch` looks good to me except\n\n```\n999\t \tfor computation of gcd's and Gr\\\"obner basis \n \t999\tfor computation of gcd's and Gr\\\"obner bases \n```\n\n\nApplying with that hunk removed. Great work Alex.\n\nCheers,\n\nMichael",
+    "body": "Attachment [tut_verbatim.patch](tarball://root/attachments/some-uuid/ticket2041/tut_verbatim.patch) by mabshoff created at 2008-02-20 13:55:29\n\nThe new patch `tut_verbatim.patch` looks good to me except\n\n```\n999\t \tfor computation of gcd's and Gr\\\"obner basis \n \t999\tfor computation of gcd's and Gr\\\"obner bases \n```\n\n\nApplying with that hunk removed. Great work Alex.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-20T13:55:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2041",
     "type": "issue_comment",
@@ -362,7 +362,7 @@ archive/issue_comments_013232.json:
 }
 ```
 
-Attachment
+Attachment [tut_verbatim.patch](tarball://root/attachments/some-uuid/ticket2041/tut_verbatim.patch) by mabshoff created at 2008-02-20 13:55:29
 
 The new patch `tut_verbatim.patch` looks good to me except
 

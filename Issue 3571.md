@@ -115,7 +115,7 @@ sage: timeit('x*y')
 archive/issue_comments_025226.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-3571.patch](tarball://root/attachments/some-uuid/ticket3571/trac-3571.patch) by robertwb created at 2009-01-23 08:09:47",
     "created_at": "2009-01-23T08:09:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3571",
     "type": "issue_comment",
@@ -124,7 +124,7 @@ archive/issue_comments_025226.json:
 }
 ```
 
-Attachment
+Attachment [trac-3571.patch](tarball://root/attachments/some-uuid/ticket3571/trac-3571.patch) by robertwb created at 2009-01-23 08:09:47
 
 
 

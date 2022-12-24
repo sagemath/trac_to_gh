@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9542
 archive/issue_comments_091949.json:
 ```json
 {
-    "body": "Attachment\n\nspeeds up multiplication by a factor of *20* for many benchmarks... but causes a segfault when doctesting rings/arith.py",
+    "body": "Attachment [trac_9542-znpoly_timing.patch](tarball://root/attachments/some-uuid/ticket9542/trac_9542-znpoly_timing.patch) by was created at 2010-07-18 19:20:10\n\nspeeds up multiplication by a factor of *20* for many benchmarks... but causes a segfault when doctesting rings/arith.py",
     "created_at": "2010-07-18T19:20:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9542",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_091949.json:
 }
 ```
 
-Attachment
+Attachment [trac_9542-znpoly_timing.patch](tarball://root/attachments/some-uuid/ticket9542/trac_9542-znpoly_timing.patch) by was created at 2010-07-18 19:20:10
 
 speeds up multiplication by a factor of *20* for many benchmarks... but causes a segfault when doctesting rings/arith.py
 

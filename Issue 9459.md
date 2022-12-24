@@ -195,7 +195,7 @@ Resolution: fixed
 archive/issue_comments_090687.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9459.patch](tarball://root/attachments/some-uuid/ticket9459/9459.patch) by jdemeyer created at 2011-01-12 06:32:30",
     "created_at": "2011-01-12T06:32:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9459",
     "type": "issue_comment",
@@ -204,4 +204,4 @@ archive/issue_comments_090687.json:
 }
 ```
 
-Attachment
+Attachment [9459.patch](tarball://root/attachments/some-uuid/ticket9459/9459.patch) by jdemeyer created at 2011-01-12 06:32:30

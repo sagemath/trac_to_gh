@@ -46,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6803
 archive/issue_comments_056013.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6803-symbolic-kronecker-n-signum.patch](tarball://root/attachments/some-uuid/ticket6803/trac_6803-symbolic-kronecker-n-signum.patch) by gmhossain created at 2009-08-23 11:27:49",
     "created_at": "2009-08-23T11:27:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6803",
     "type": "issue_comment",
@@ -55,7 +55,7 @@ archive/issue_comments_056013.json:
 }
 ```
 
-Attachment
+Attachment [trac_6803-symbolic-kronecker-n-signum.patch](tarball://root/attachments/some-uuid/ticket6803/trac_6803-symbolic-kronecker-n-signum.patch) by gmhossain created at 2009-08-23 11:27:49
 
 
 
@@ -154,7 +154,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_056019.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6803-symbolic-kronecker-n-signum-review.patch](tarball://root/attachments/some-uuid/ticket6803/trac_6803-symbolic-kronecker-n-signum-review.patch) by kcrisman created at 2009-11-10 15:58:50",
     "created_at": "2009-11-10T15:58:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6803",
     "type": "issue_comment",
@@ -163,7 +163,7 @@ archive/issue_comments_056019.json:
 }
 ```
 
-Attachment
+Attachment [trac_6803-symbolic-kronecker-n-signum-review.patch](tarball://root/attachments/some-uuid/ticket6803/trac_6803-symbolic-kronecker-n-signum-review.patch) by kcrisman created at 2009-11-10 15:58:50
 
 
 
@@ -247,7 +247,7 @@ apply after previous
 archive/issue_comments_056024.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:6 kcrisman]:\n> Can you post that here, or at least the code in braces - just for posterity?  \n\nmhansen's patch is contained in `trac_6803-sgn.patch`",
+    "body": "Attachment [trac_6803-sgn.patch](tarball://root/attachments/some-uuid/ticket6803/trac_6803-sgn.patch) by mvngu created at 2009-12-09 03:35:36\n\nReplying to [comment:6 kcrisman]:\n> Can you post that here, or at least the code in braces - just for posterity?  \n\nmhansen's patch is contained in `trac_6803-sgn.patch`",
     "created_at": "2009-12-09T03:35:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6803",
     "type": "issue_comment",
@@ -256,7 +256,7 @@ archive/issue_comments_056024.json:
 }
 ```
 
-Attachment
+Attachment [trac_6803-sgn.patch](tarball://root/attachments/some-uuid/ticket6803/trac_6803-sgn.patch) by mvngu created at 2009-12-09 03:35:36
 
 Replying to [comment:6 kcrisman]:
 > Can you post that here, or at least the code in braces - just for posterity?  

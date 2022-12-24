@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2529
 archive/issue_comments_017251.json:
 ```json
 {
-    "body": "Attachment\n\nApplies to 2.10.4.alpha0 and passes tests for me.",
+    "body": "Attachment [2529-reduce-nx-dependence.patch](tarball://root/attachments/some-uuid/ticket2529/2529-reduce-nx-dependence.patch) by mhansen created at 2008-03-15 21:04:36\n\nApplies to 2.10.4.alpha0 and passes tests for me.",
     "created_at": "2008-03-15T21:04:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2529",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_017251.json:
 }
 ```
 
-Attachment
+Attachment [2529-reduce-nx-dependence.patch](tarball://root/attachments/some-uuid/ticket2529/2529-reduce-nx-dependence.patch) by mhansen created at 2008-03-15 21:04:36
 
 Applies to 2.10.4.alpha0 and passes tests for me.
 

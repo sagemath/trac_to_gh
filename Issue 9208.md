@@ -112,7 +112,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9208
 archive/issue_comments_086177.json:
 ```json
 {
-    "body": "Attachment\n\nPatch for sage-env",
+    "body": "Attachment [9208.patch](tarball://root/attachments/some-uuid/ticket9208/9208.patch) by drkirkby created at 2010-06-10 23:21:14\n\nPatch for sage-env",
     "created_at": "2010-06-10T23:21:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9208",
     "type": "issue_comment",
@@ -121,7 +121,7 @@ archive/issue_comments_086177.json:
 }
 ```
 
-Attachment
+Attachment [9208.patch](tarball://root/attachments/some-uuid/ticket9208/9208.patch) by drkirkby created at 2010-06-10 23:21:14
 
 Patch for sage-env
 
@@ -192,7 +192,7 @@ Incidentally, this will also probably solve some long-standing issues with macpo
 archive/issue_comments_086181.json:
 ```json
 {
-    "body": "Attachment\n\nSpelling mistake corrected",
+    "body": "Attachment [9208.2.patch](tarball://root/attachments/some-uuid/ticket9208/9208.2.patch) by drkirkby created at 2010-06-11 00:27:24\n\nSpelling mistake corrected",
     "created_at": "2010-06-11T00:27:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9208",
     "type": "issue_comment",
@@ -201,7 +201,7 @@ archive/issue_comments_086181.json:
 }
 ```
 
-Attachment
+Attachment [9208.2.patch](tarball://root/attachments/some-uuid/ticket9208/9208.2.patch) by drkirkby created at 2010-06-11 00:27:24
 
 Spelling mistake corrected
 

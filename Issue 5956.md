@@ -443,7 +443,7 @@ RuntimeError: Could not allocate memory for image
 archive/issue_comments_047122.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5956_figsize_units.patch](tarball://root/attachments/some-uuid/ticket5956/trac_5956_figsize_units.patch) by emchennyc created at 2013-01-05 14:43:56",
     "created_at": "2013-01-05T14:43:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
@@ -452,7 +452,7 @@ archive/issue_comments_047122.json:
 }
 ```
 
-Attachment
+Attachment [trac_5956_figsize_units.patch](tarball://root/attachments/some-uuid/ticket5956/trac_5956_figsize_units.patch) by emchennyc created at 2013-01-05 14:43:56
 
 
 
@@ -461,7 +461,7 @@ Attachment
 archive/issue_comments_047123.json:
 ```json
 {
-    "body": "Attachment\n\napply only this",
+    "body": "Attachment [trac_5956_figsize_units.1.patch](tarball://root/attachments/some-uuid/ticket5956/trac_5956_figsize_units.1.patch) by ppurka created at 2013-02-02 08:42:37\n\napply only this",
     "created_at": "2013-02-02T08:42:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
@@ -470,7 +470,7 @@ archive/issue_comments_047123.json:
 }
 ```
 
-Attachment
+Attachment [trac_5956_figsize_units.1.patch](tarball://root/attachments/some-uuid/ticket5956/trac_5956_figsize_units.1.patch) by ppurka created at 2013-02-02 08:42:37
 
 apply only this
 
@@ -481,7 +481,7 @@ apply only this
 archive/issue_comments_047124.json:
 ```json
 {
-    "body": "Attachment\n\nnot to be merged. only for review.",
+    "body": "Attachment [only_for_review.patch](tarball://root/attachments/some-uuid/ticket5956/only_for_review.patch) by ppurka created at 2013-02-02 08:43:03\n\nnot to be merged. only for review.",
     "created_at": "2013-02-02T08:43:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
@@ -490,7 +490,7 @@ archive/issue_comments_047124.json:
 }
 ```
 
-Attachment
+Attachment [only_for_review.patch](tarball://root/attachments/some-uuid/ticket5956/only_for_review.patch) by ppurka created at 2013-02-02 08:43:03
 
 not to be merged. only for review.
 
@@ -601,7 +601,7 @@ I'll add a reviewer patch momentarily.
 archive/issue_comments_047130.json:
 ```json
 {
-    "body": "Attachment\n\nI think this needs some review, since I add some assertions and so forth.   I hope this clarifies things more, though, and adds doc in the main plot page where it is probably needed.\n\nppurka, if you are an author too, feel free to add yourself.  Positive review to everything before my patch.\n\nPatchbot: apply trac_5956_figsize_units.1.patch and trac_5956-reviewer.patch to devel/sage.",
+    "body": "Attachment [trac_5956-reviewer.patch](tarball://root/attachments/some-uuid/ticket5956/trac_5956-reviewer.patch) by kcrisman created at 2013-03-23 02:24:38\n\nI think this needs some review, since I add some assertions and so forth.   I hope this clarifies things more, though, and adds doc in the main plot page where it is probably needed.\n\nppurka, if you are an author too, feel free to add yourself.  Positive review to everything before my patch.\n\nPatchbot: apply trac_5956_figsize_units.1.patch and trac_5956-reviewer.patch to devel/sage.",
     "created_at": "2013-03-23T02:24:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
@@ -610,7 +610,7 @@ archive/issue_comments_047130.json:
 }
 ```
 
-Attachment
+Attachment [trac_5956-reviewer.patch](tarball://root/attachments/some-uuid/ticket5956/trac_5956-reviewer.patch) by kcrisman created at 2013-03-23 02:24:38
 
 I think this needs some review, since I add some assertions and so forth.   I hope this clarifies things more, though, and adds doc in the main plot page where it is probably needed.
 

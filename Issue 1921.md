@@ -79,7 +79,7 @@ then I hope those really do disappear completely within 2 months (say). ??
 archive/issue_comments_012180.json:
 ```json
 {
-    "body": "Attachment\n\ndoc patch",
+    "body": "Attachment [1921-doc.patch](tarball://root/attachments/some-uuid/ticket1921/1921-doc.patch) by AlexGhitza created at 2008-04-17 02:36:01\n\ndoc patch",
     "created_at": "2008-04-17T02:36:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1921",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_012180.json:
 }
 ```
 
-Attachment
+Attachment [1921-doc.patch](tarball://root/attachments/some-uuid/ticket1921/1921-doc.patch) by AlexGhitza created at 2008-04-17 02:36:01
 
 doc patch
 
@@ -119,7 +119,7 @@ This change messes up a doctest in the tutorial, so there is also a small doc pa
 archive/issue_comments_012182.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1921-1.patch](tarball://root/attachments/some-uuid/ticket1921/1921-1.patch) by mhansen created at 2008-04-26 02:24:19",
     "created_at": "2008-04-26T02:24:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1921",
     "type": "issue_comment",
@@ -128,7 +128,7 @@ archive/issue_comments_012182.json:
 }
 ```
 
-Attachment
+Attachment [1921-1.patch](tarball://root/attachments/some-uuid/ticket1921/1921-1.patch) by mhansen created at 2008-04-26 02:24:19
 
 
 

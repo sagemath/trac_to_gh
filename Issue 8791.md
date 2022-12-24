@@ -378,7 +378,7 @@ Changing status from new to needs_review.
 archive/issue_comments_080503.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [mpmath_doctests.patch](tarball://root/attachments/some-uuid/ticket8791/mpmath_doctests.patch) by was created at 2011-11-14 20:10:02",
     "created_at": "2011-11-14T20:10:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8791",
     "type": "issue_comment",
@@ -387,7 +387,7 @@ archive/issue_comments_080503.json:
 }
 ```
 
-Attachment
+Attachment [mpmath_doctests.patch](tarball://root/attachments/some-uuid/ticket8791/mpmath_doctests.patch) by was created at 2011-11-14 20:10:02
 
 
 
@@ -537,7 +537,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_080511.json:
 ```json
 {
-    "body": "Attachment\n\nApply mpmath_doctests.patch, trac_8791-fix.patch\n\nThis is a one-line fix -- anyone willing to quickly sign off on it?",
+    "body": "Attachment [trac_8791-fix.patch](tarball://root/attachments/some-uuid/ticket8791/trac_8791-fix.patch) by davidloeffler created at 2012-03-25 15:00:30\n\nApply mpmath_doctests.patch, trac_8791-fix.patch\n\nThis is a one-line fix -- anyone willing to quickly sign off on it?",
     "created_at": "2012-03-25T15:00:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8791",
     "type": "issue_comment",
@@ -546,7 +546,7 @@ archive/issue_comments_080511.json:
 }
 ```
 
-Attachment
+Attachment [trac_8791-fix.patch](tarball://root/attachments/some-uuid/ticket8791/trac_8791-fix.patch) by davidloeffler created at 2012-03-25 15:00:30
 
 Apply mpmath_doctests.patch, trac_8791-fix.patch
 

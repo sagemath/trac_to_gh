@@ -196,7 +196,7 @@ Ah, #4547 is exactly what I was looking for.
 archive/issue_comments_039929.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5211.patch](tarball://root/attachments/some-uuid/ticket5211/trac_5211.patch) by ddrake created at 2009-03-02 06:51:19",
     "created_at": "2009-03-02T06:51:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5211",
     "type": "issue_comment",
@@ -205,7 +205,7 @@ archive/issue_comments_039929.json:
 }
 ```
 
-Attachment
+Attachment [trac_5211.patch](tarball://root/attachments/some-uuid/ticket5211/trac_5211.patch) by ddrake created at 2009-03-02 06:51:19
 
 
 

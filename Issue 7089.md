@@ -89,7 +89,7 @@ Changing keywords from "" to "makefile".
 archive/issue_comments_058591.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [makefile.patch](tarball://root/attachments/some-uuid/ticket7089/makefile.patch) by ddrake created at 2009-10-01 03:41:52",
     "created_at": "2009-10-01T03:41:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7089",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_058591.json:
 }
 ```
 
-Attachment
+Attachment [makefile.patch](tarball://root/attachments/some-uuid/ticket7089/makefile.patch) by ddrake created at 2009-10-01 03:41:52
 
 
 

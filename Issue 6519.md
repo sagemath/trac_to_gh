@@ -477,7 +477,7 @@ archive/issue_comments_053148.json:
 archive/issue_comments_053149.json:
 ```json
 {
-    "body": "Attachment\n\nDO NOT APPLY!",
+    "body": "Attachment [trac_6519-words_ng.patch](tarball://root/attachments/some-uuid/ticket6519/trac_6519-words_ng.patch) by saliola created at 2009-07-17 21:55:09\n\nDO NOT APPLY!",
     "created_at": "2009-07-17T21:55:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6519",
     "type": "issue_comment",
@@ -486,7 +486,7 @@ archive/issue_comments_053149.json:
 }
 ```
 
-Attachment
+Attachment [trac_6519-words_ng.patch](tarball://root/attachments/some-uuid/ticket6519/trac_6519-words_ng.patch) by saliola created at 2009-07-17 21:55:09
 
 DO NOT APPLY!
 
@@ -497,7 +497,7 @@ DO NOT APPLY!
 archive/issue_comments_053150.json:
 ```json
 {
-    "body": "Attachment\n\nTo make reviewing my fix easier: I've attached the file\n`old_pickle_support.patch`, which contains only the changes that I made\nto address the pickle issue. This patch has already been folded into o\n`trac_6519-words_ng.patch`, so do not apply it.\n\nBesides restoring the files `word_content.py` and `utils.py` (and\nadding warnings), I needed to touch `word.py`, so this is where the\nreviewer needs to concentrate their attention.",
+    "body": "Attachment [old_pickle_support.patch](tarball://root/attachments/some-uuid/ticket6519/old_pickle_support.patch) by saliola created at 2009-07-17 22:02:14\n\nTo make reviewing my fix easier: I've attached the file\n`old_pickle_support.patch`, which contains only the changes that I made\nto address the pickle issue. This patch has already been folded into o\n`trac_6519-words_ng.patch`, so do not apply it.\n\nBesides restoring the files `word_content.py` and `utils.py` (and\nadding warnings), I needed to touch `word.py`, so this is where the\nreviewer needs to concentrate their attention.",
     "created_at": "2009-07-17T22:02:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6519",
     "type": "issue_comment",
@@ -506,7 +506,7 @@ archive/issue_comments_053150.json:
 }
 ```
 
-Attachment
+Attachment [old_pickle_support.patch](tarball://root/attachments/some-uuid/ticket6519/old_pickle_support.patch) by saliola created at 2009-07-17 22:02:14
 
 To make reviewing my fix easier: I've attached the file
 `old_pickle_support.patch`, which contains only the changes that I made

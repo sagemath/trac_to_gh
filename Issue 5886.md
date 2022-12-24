@@ -79,7 +79,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5886
 archive/issue_comments_046539.json:
 ```json
 {
-    "body": "Attachment\n\nIt looks good. I'm having trouble running any doctests (applied to a pre-3.4.1 branch after upgrading) but the examples I tried manually work.",
+    "body": "Attachment [trac_5886.patch](tarball://root/attachments/some-uuid/ticket5886/trac_5886.patch) by robertwb created at 2009-04-24 04:42:19\n\nIt looks good. I'm having trouble running any doctests (applied to a pre-3.4.1 branch after upgrading) but the examples I tried manually work.",
     "created_at": "2009-04-24T04:42:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5886",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_046539.json:
 }
 ```
 
-Attachment
+Attachment [trac_5886.patch](tarball://root/attachments/some-uuid/ticket5886/trac_5886.patch) by robertwb created at 2009-04-24 04:42:19
 
 It looks good. I'm having trouble running any doctests (applied to a pre-3.4.1 branch after upgrading) but the examples I tried manually work.
 

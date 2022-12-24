@@ -79,7 +79,7 @@ Changing status from new to needs_review.
 archive/issue_comments_097230.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9851-sage-pkg.patch](tarball://root/attachments/some-uuid/ticket9851/9851-sage-pkg.patch) by SimonKing created at 2010-09-03 09:57:23",
     "created_at": "2010-09-03T09:57:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9850",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_097230.json:
 }
 ```
 
-Attachment
+Attachment [9851-sage-pkg.patch](tarball://root/attachments/some-uuid/ticket9851/9851-sage-pkg.patch) by SimonKing created at 2010-09-03 09:57:23
 
 
 

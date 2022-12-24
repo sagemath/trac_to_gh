@@ -175,7 +175,7 @@ The returned output is correct, so it should be included in the doctest.
 archive/issue_comments_017765.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-2596.patch](tarball://root/attachments/some-uuid/ticket2596/sage-2596.patch) by was created at 2008-03-28 05:17:44",
     "created_at": "2008-03-28T05:17:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2596",
     "type": "issue_comment",
@@ -184,7 +184,7 @@ archive/issue_comments_017765.json:
 }
 ```
 
-Attachment
+Attachment [sage-2596.patch](tarball://root/attachments/some-uuid/ticket2596/sage-2596.patch) by was created at 2008-03-28 05:17:44
 
 
 

@@ -392,7 +392,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_037427.json:
 ```json
 {
-    "body": "Attachment\n\nThis routine needs lots of work, has been \"Not Implemented\" for a long time, and with two routines for solving systems available (#7852), this should be removed.  Patch does just that.",
+    "body": "Attachment [trac_4932-remove-solve-left-LU.patch](tarball://root/attachments/some-uuid/ticket4932/trac_4932-remove-solve-left-LU.patch) by rbeezer created at 2011-02-24 22:46:37\n\nThis routine needs lots of work, has been \"Not Implemented\" for a long time, and with two routines for solving systems available (#7852), this should be removed.  Patch does just that.",
     "created_at": "2011-02-24T22:46:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4932",
     "type": "issue_comment",
@@ -401,7 +401,7 @@ archive/issue_comments_037427.json:
 }
 ```
 
-Attachment
+Attachment [trac_4932-remove-solve-left-LU.patch](tarball://root/attachments/some-uuid/ticket4932/trac_4932-remove-solve-left-LU.patch) by rbeezer created at 2011-02-24 22:46:37
 
 This routine needs lots of work, has been "Not Implemented" for a long time, and with two routines for solving systems available (#7852), this should be removed.  Patch does just that.
 

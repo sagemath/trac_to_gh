@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2346
 archive/issue_comments_015710.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [simple-api.hg](tarball://root/attachments/some-uuid/ticket2346/simple-api.hg) by robertwb created at 2008-02-28 08:54:07",
     "created_at": "2008-02-28T08:54:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2346",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_015710.json:
 }
 ```
 
-Attachment
+Attachment [simple-api.hg](tarball://root/attachments/some-uuid/ticket2346/simple-api.hg) by robertwb created at 2008-02-28 08:54:07
 
 
 
@@ -177,7 +177,7 @@ The Errno url error is strange, does your urllib not support secure http connect
 archive/issue_comments_015717.json:
 ```json
 {
-    "body": "Attachment\n\nI've re-implemented the waiting using LoopingCall, and also reduced the amount of time it spends blocking waiting for Sage input. \n\nI'm not sure what to do about the https error--we don't want to doctest with http as that would be a potential security vulnerability. \n\nmhansen: what system are you getting that error on. Is it the Sage python?",
+    "body": "Attachment [2346-loops.patch](tarball://root/attachments/some-uuid/ticket2346/2346-loops.patch) by robertwb created at 2008-03-07 19:59:13\n\nI've re-implemented the waiting using LoopingCall, and also reduced the amount of time it spends blocking waiting for Sage input. \n\nI'm not sure what to do about the https error--we don't want to doctest with http as that would be a potential security vulnerability. \n\nmhansen: what system are you getting that error on. Is it the Sage python?",
     "created_at": "2008-03-07T19:59:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2346",
     "type": "issue_comment",
@@ -186,7 +186,7 @@ archive/issue_comments_015717.json:
 }
 ```
 
-Attachment
+Attachment [2346-loops.patch](tarball://root/attachments/some-uuid/ticket2346/2346-loops.patch) by robertwb created at 2008-03-07 19:59:13
 
 I've re-implemented the waiting using LoopingCall, and also reduced the amount of time it spends blocking waiting for Sage input. 
 
@@ -221,7 +221,7 @@ Perhaps we can use http://twistedmatrix.com/documents/current/api/twisted.web.cl
 archive/issue_comments_015719.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2346-gnutls.patch](tarball://root/attachments/some-uuid/ticket2346/2346-gnutls.patch) by robertwb created at 2008-04-06 04:42:03",
     "created_at": "2008-04-06T04:42:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2346",
     "type": "issue_comment",
@@ -230,7 +230,7 @@ archive/issue_comments_015719.json:
 }
 ```
 
-Attachment
+Attachment [2346-gnutls.patch](tarball://root/attachments/some-uuid/ticket2346/2346-gnutls.patch) by robertwb created at 2008-04-06 04:42:03
 
 
 
@@ -257,7 +257,7 @@ Using twisted.web.client with the reactor and all is a major pain to do interact
 archive/issue_comments_015721.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2346-early-ssl-import.patch](tarball://root/attachments/some-uuid/ticket2346/2346-early-ssl-import.patch) by robertwb created at 2008-04-06 05:21:20",
     "created_at": "2008-04-06T05:21:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2346",
     "type": "issue_comment",
@@ -266,7 +266,7 @@ archive/issue_comments_015721.json:
 }
 ```
 
-Attachment
+Attachment [2346-early-ssl-import.patch](tarball://root/attachments/some-uuid/ticket2346/2346-early-ssl-import.patch) by robertwb created at 2008-04-06 05:21:20
 
 
 

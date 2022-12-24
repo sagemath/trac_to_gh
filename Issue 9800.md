@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9801
 archive/issue_comments_096292.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-9801-linear-programming-constructions-doc.patch](tarball://root/attachments/some-uuid/ticket9801/trac-9801-linear-programming-constructions-doc.patch) by rhinton created at 2010-08-25 14:01:24",
     "created_at": "2010-08-25T14:01:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9800",
     "type": "issue_comment",
@@ -49,7 +49,7 @@ archive/issue_comments_096292.json:
 }
 ```
 
-Attachment
+Attachment [trac-9801-linear-programming-constructions-doc.patch](tarball://root/attachments/some-uuid/ticket9801/trac-9801-linear-programming-constructions-doc.patch) by rhinton created at 2010-08-25 14:01:24
 
 
 

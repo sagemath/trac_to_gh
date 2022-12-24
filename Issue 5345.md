@@ -53,7 +53,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5345
 archive/issue_comments_041170.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-5345-transpose-optimize.patch](tarball://root/attachments/some-uuid/ticket5345/trac-5345-transpose-optimize.patch) by rbeezer created at 2009-02-23 02:03:28",
     "created_at": "2009-02-23T02:03:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5345",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_041170.json:
 }
 ```
 
-Attachment
+Attachment [trac-5345-transpose-optimize.patch](tarball://root/attachments/some-uuid/ticket5345/trac-5345-transpose-optimize.patch) by rbeezer created at 2009-02-23 02:03:28
 
 
 
@@ -207,7 +207,7 @@ PS: I also think that there should be an optimized version af transpose in matri
 archive/issue_comments_041176.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-5345-transpose-matrix-dense.patch](tarball://root/attachments/some-uuid/ticket5345/trac-5345-transpose-matrix-dense.patch) by ylchapuy created at 2009-02-24 21:26:12",
     "created_at": "2009-02-24T21:26:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5345",
     "type": "issue_comment",
@@ -216,7 +216,7 @@ archive/issue_comments_041176.json:
 }
 ```
 
-Attachment
+Attachment [trac-5345-transpose-matrix-dense.patch](tarball://root/attachments/some-uuid/ticket5345/trac-5345-transpose-matrix-dense.patch) by ylchapuy created at 2009-02-24 21:26:12
 
 
 

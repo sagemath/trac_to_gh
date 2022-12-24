@@ -38,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7377
 archive/issue_comments_061819.json:
 ```json
 {
-    "body": "Attachment\n\nexample package for how to accomplish said interface",
+    "body": "Attachment [sagemax.py](tarball://root/attachments/some-uuid/ticket7377/sagemax.py) by nbruin created at 2009-11-03 08:06:44\n\nexample package for how to accomplish said interface",
     "created_at": "2009-11-03T08:06:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
@@ -47,7 +47,7 @@ archive/issue_comments_061819.json:
 }
 ```
 
-Attachment
+Attachment [sagemax.py](tarball://root/attachments/some-uuid/ticket7377/sagemax.py) by nbruin created at 2009-11-03 08:06:44
 
 example package for how to accomplish said interface
 
@@ -199,7 +199,7 @@ at all.
 archive/issue_comments_061822.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [7377-abstract-maxima.patch](tarball://root/attachments/some-uuid/ticket7377/7377-abstract-maxima.patch) by robertwb created at 2010-01-17 06:33:44",
     "created_at": "2010-01-17T06:33:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
@@ -208,7 +208,7 @@ archive/issue_comments_061822.json:
 }
 ```
 
-Attachment
+Attachment [7377-abstract-maxima.patch](tarball://root/attachments/some-uuid/ticket7377/7377-abstract-maxima.patch) by robertwb created at 2010-01-17 06:33:44
 
 
 
@@ -287,7 +287,7 @@ Maxima via library; used by calculus
 archive/issue_comments_061826.json:
 ```json
 {
-    "body": "Attachment\n\nAnother update:\n\n* change to symbolic/assumptions.py to not try: ... error: pass (gentler removal of assumptions makes the interface behave a bit better)\n\n* monkey patch maxima to throw error on divergent integral instead of *printing* \"Principal Value\" and giving an answer.\n(maxima does behave as documented, so it is a matter of taste to change maxima's behaviour)\n\n* slightly more pretty/informative error messages\n\nDoctests failures on calculus.py are only 5 and are restricted to whitespace and differently formatted error messages (in other words, for real use, the two interfaces shouldn't be distinguishable anymore).",
+    "body": "Attachment [maxlib.patch](tarball://root/attachments/some-uuid/ticket7377/maxlib.patch) by nbruin created at 2010-01-19 09:15:05\n\nAnother update:\n\n* change to symbolic/assumptions.py to not try: ... error: pass (gentler removal of assumptions makes the interface behave a bit better)\n\n* monkey patch maxima to throw error on divergent integral instead of *printing* \"Principal Value\" and giving an answer.\n(maxima does behave as documented, so it is a matter of taste to change maxima's behaviour)\n\n* slightly more pretty/informative error messages\n\nDoctests failures on calculus.py are only 5 and are restricted to whitespace and differently formatted error messages (in other words, for real use, the two interfaces shouldn't be distinguishable anymore).",
     "created_at": "2010-01-19T09:15:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
@@ -296,7 +296,7 @@ archive/issue_comments_061826.json:
 }
 ```
 
-Attachment
+Attachment [maxlib.patch](tarball://root/attachments/some-uuid/ticket7377/maxlib.patch) by nbruin created at 2010-01-19 09:15:05
 
 Another update:
 
@@ -356,7 +356,7 @@ Patch to get faster calculus routines
 archive/issue_comments_061829.json:
 ```json
 {
-    "body": "Attachment\n\nThe latest patch must be applied after `abstract-maxima` and `maxlib`. It adds routines `sr_to_max` and `max_to_sr` that try to translate between maxima's internal datastructure and SR while avoiding string transformations as much as possible. It falls back to the old interface to establish many of its symbol and operator translations, but takes note of them and uses a dictionary directly the next time around. It also avoids the overhead of binding expressions to maxima variables.\n\nto go back and forth, `maxima_lib.MaximaElement()` as a new function {ecl()} which passes back the underlying EclObject. Conversely, `maxima_lib.maxima` accepts EclObjects and returns a corresponding expect interface object.\n\nThis patch also rewrite calculus integral, limit and sum to directly pass back and forth to maxima. There is a lot of overhead in SR itself, so speed gains are not that big. New times are:\n\n```\nsage: timeit(\"integral(cos(x),x)\")\n625 loops, best of 3: 1.1 ms per loop\nsage: timeit(\"integral(cos(x^2),x)\")\n5 loops, best of 3: 31.2 ms per loop\n```\n\nwhere old were\n\n```\nsage: timeit(\"integral(cos(x),x)\")\n25 loops, best of 3: 8.08 ms per loop\nsage: timeit(\"integral(cos(x^2),x)\")\n5 loops, best of 3: 37 ms per loop\n```\n\n\nIt is easy to swap the old and new interfaces: simply comment/uncomment the appropriate lines in `calculus.py` to define the appropriate calculus.maxima\n\nThere are 7 doctest failures in `calculus.py`. All of them are whitespace, errors and changed precision in floats:\nthe binary interface passes `double`s directly, so there are no digits rounded. This affects some doctests. In other words, as far is `calculus.py` is concerned the two interfaces are functionally equivalent.",
+    "body": "Attachment [fastcalculus.patch](tarball://root/attachments/some-uuid/ticket7377/fastcalculus.patch) by nbruin created at 2010-02-09 06:05:29\n\nThe latest patch must be applied after `abstract-maxima` and `maxlib`. It adds routines `sr_to_max` and `max_to_sr` that try to translate between maxima's internal datastructure and SR while avoiding string transformations as much as possible. It falls back to the old interface to establish many of its symbol and operator translations, but takes note of them and uses a dictionary directly the next time around. It also avoids the overhead of binding expressions to maxima variables.\n\nto go back and forth, `maxima_lib.MaximaElement()` as a new function {ecl()} which passes back the underlying EclObject. Conversely, `maxima_lib.maxima` accepts EclObjects and returns a corresponding expect interface object.\n\nThis patch also rewrite calculus integral, limit and sum to directly pass back and forth to maxima. There is a lot of overhead in SR itself, so speed gains are not that big. New times are:\n\n```\nsage: timeit(\"integral(cos(x),x)\")\n625 loops, best of 3: 1.1 ms per loop\nsage: timeit(\"integral(cos(x^2),x)\")\n5 loops, best of 3: 31.2 ms per loop\n```\n\nwhere old were\n\n```\nsage: timeit(\"integral(cos(x),x)\")\n25 loops, best of 3: 8.08 ms per loop\nsage: timeit(\"integral(cos(x^2),x)\")\n5 loops, best of 3: 37 ms per loop\n```\n\n\nIt is easy to swap the old and new interfaces: simply comment/uncomment the appropriate lines in `calculus.py` to define the appropriate calculus.maxima\n\nThere are 7 doctest failures in `calculus.py`. All of them are whitespace, errors and changed precision in floats:\nthe binary interface passes `double`s directly, so there are no digits rounded. This affects some doctests. In other words, as far is `calculus.py` is concerned the two interfaces are functionally equivalent.",
     "created_at": "2010-02-09T06:05:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
@@ -365,7 +365,7 @@ archive/issue_comments_061829.json:
 }
 ```
 
-Attachment
+Attachment [fastcalculus.patch](tarball://root/attachments/some-uuid/ticket7377/fastcalculus.patch) by nbruin created at 2010-02-09 06:05:29
 
 The latest patch must be applied after `abstract-maxima` and `maxlib`. It adds routines `sr_to_max` and `max_to_sr` that try to translate between maxima's internal datastructure and SR while avoiding string transformations as much as possible. It falls back to the old interface to establish many of its symbol and operator translations, but takes note of them and uses a dictionary directly the next time around. It also avoids the overhead of binding expressions to maxima variables.
 
@@ -533,7 +533,7 @@ I'm ready to have a look at all of this, if someone helps me launching Maxima as
 archive/issue_comments_061835.json:
 ```json
 {
-    "body": "Attachment\n\nRebased on Sage 4.6.1",
+    "body": "Attachment [trac_7377-abstract-maxima-rebased.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-abstract-maxima-rebased.patch) by jpflori created at 2011-01-24 09:25:24\n\nRebased on Sage 4.6.1",
     "created_at": "2011-01-24T09:25:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
@@ -542,7 +542,7 @@ archive/issue_comments_061835.json:
 }
 ```
 
-Attachment
+Attachment [trac_7377-abstract-maxima-rebased.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-abstract-maxima-rebased.patch) by jpflori created at 2011-01-24 09:25:24
 
 Rebased on Sage 4.6.1
 
@@ -571,7 +571,7 @@ Rebased on Sage 4.6.1
 archive/issue_comments_061837.json:
 ```json
 {
-    "body": "Attachment\n\nWhat happens if you just remove that line?\nI just noticed a typo - marking makes you terrible at that kind of things :)\n\"We begin here by initializing maxima in library more\"\n                                                   ^",
+    "body": "Attachment [trac_7377-maximalib-rebased.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-maximalib-rebased.patch) by fbissey created at 2011-01-24 09:38:15\n\nWhat happens if you just remove that line?\nI just noticed a typo - marking makes you terrible at that kind of things :)\n\"We begin here by initializing maxima in library more\"\n                                                   ^",
     "created_at": "2011-01-24T09:38:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
@@ -580,7 +580,7 @@ archive/issue_comments_061837.json:
 }
 ```
 
-Attachment
+Attachment [trac_7377-maximalib-rebased.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-maximalib-rebased.patch) by fbissey created at 2011-01-24 09:38:15
 
 What happens if you just remove that line?
 I just noticed a typo - marking makes you terrible at that kind of things :)
@@ -672,7 +672,7 @@ There are some problems left with what I uploaded earlier in sage.symbolic.integ
 archive/issue_comments_061841.json:
 ```json
 {
-    "body": "Attachment\n\nRebased on Sage 4.6.1, fixed changes in sage.symbolic.integration.external",
+    "body": "Attachment [trac_7377-fastcalculus-rebased.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-fastcalculus-rebased.patch) by jpflori created at 2011-01-24 11:39:35\n\nRebased on Sage 4.6.1, fixed changes in sage.symbolic.integration.external",
     "created_at": "2011-01-24T11:39:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
@@ -681,7 +681,7 @@ archive/issue_comments_061841.json:
 }
 ```
 
-Attachment
+Attachment [trac_7377-fastcalculus-rebased.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-fastcalculus-rebased.patch) by jpflori created at 2011-01-24 11:39:35
 
 Rebased on Sage 4.6.1, fixed changes in sage.symbolic.integration.external
 
@@ -1870,7 +1870,7 @@ It does make me a bit pessimistic, though: Maxima improves some of its error rep
 archive/issue_comments_061860.json:
 ```json
 {
-    "body": "Attachment\n\nimprove maxima-eval error reporting",
+    "body": "Attachment [errorcatching.patch](tarball://root/attachments/some-uuid/ticket7377/errorcatching.patch) by nbruin created at 2011-01-30 07:25:59\n\nimprove maxima-eval error reporting",
     "created_at": "2011-01-30T07:25:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
@@ -1879,7 +1879,7 @@ archive/issue_comments_061860.json:
 }
 ```
 
-Attachment
+Attachment [errorcatching.patch](tarball://root/attachments/some-uuid/ticket7377/errorcatching.patch) by nbruin created at 2011-01-30 07:25:59
 
 improve maxima-eval error reporting
 
@@ -2223,7 +2223,7 @@ Finally for (4): I know maxima functions like li[n] and psi[n] are not translate
 archive/issue_comments_061869.json:
 ```json
 {
-    "body": "Attachment\n\nimproved fastcalculus (includes previous fixes)",
+    "body": "Attachment [trac_7377-fastcalculus-p1.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-fastcalculus-p1.patch) by nbruin created at 2011-02-11 09:06:50\n\nimproved fastcalculus (includes previous fixes)",
     "created_at": "2011-02-11T09:06:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
@@ -2232,7 +2232,7 @@ archive/issue_comments_061869.json:
 }
 ```
 
-Attachment
+Attachment [trac_7377-fastcalculus-p1.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-fastcalculus-p1.patch) by nbruin created at 2011-02-11 09:06:50
 
 improved fastcalculus (includes previous fixes)
 
@@ -2345,7 +2345,7 @@ improved formatting of error message when maxima asks a question
 archive/issue_comments_061873.json:
 ```json
 {
-    "body": "Attachment\n\nthe lisp function `retrieve` in maxima is responsible for asking questions, so we just monkey-patch it to throw an error with an informative message instead. The patch trac_7377-better-ask-error.patch improves the readability of this message by executing exactly the original code in retrieve, but wrapped in a `(with-output-to-string (*standard-output*) ...)`. The method is generally applicable and may be useful in adapting other printing bits.\n\nOddly enough, this patch does not invalidate any additional doctests, but:\n\n```\nsage -t  \"devel/sage-devel/sage/interfaces/maxima_lib.py\"   \n**********************************************************************\nError: TAB character found.\n```\n\nso perhaps maxima inserts a TAB in the error message. Are TABs not allowed in doctest output?\n(it looks like one gets produced and matched by a \"...\" in the doctest template). A `sage -t --verbose` shows that no individual test fails.",
+    "body": "Attachment [trac_7377-better-ask-error.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-better-ask-error.patch) by nbruin created at 2011-02-14 07:12:01\n\nthe lisp function `retrieve` in maxima is responsible for asking questions, so we just monkey-patch it to throw an error with an informative message instead. The patch trac_7377-better-ask-error.patch improves the readability of this message by executing exactly the original code in retrieve, but wrapped in a `(with-output-to-string (*standard-output*) ...)`. The method is generally applicable and may be useful in adapting other printing bits.\n\nOddly enough, this patch does not invalidate any additional doctests, but:\n\n```\nsage -t  \"devel/sage-devel/sage/interfaces/maxima_lib.py\"   \n**********************************************************************\nError: TAB character found.\n```\n\nso perhaps maxima inserts a TAB in the error message. Are TABs not allowed in doctest output?\n(it looks like one gets produced and matched by a \"...\" in the doctest template). A `sage -t --verbose` shows that no individual test fails.",
     "created_at": "2011-02-14T07:12:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
@@ -2354,7 +2354,7 @@ archive/issue_comments_061873.json:
 }
 ```
 
-Attachment
+Attachment [trac_7377-better-ask-error.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-better-ask-error.patch) by nbruin created at 2011-02-14 07:12:01
 
 the lisp function `retrieve` in maxima is responsible for asking questions, so we just monkey-patch it to throw an error with an informative message instead. The patch trac_7377-better-ask-error.patch improves the readability of this message by executing exactly the original code in retrieve, but wrapped in a `(with-output-to-string (*standard-output*) ...)`. The method is generally applicable and may be useful in adapting other printing bits.
 
@@ -2618,7 +2618,7 @@ I'll post this set of patches asap.
 archive/issue_comments_061882.json:
 ```json
 {
-    "body": "Attachment\n\nPatch based on Sage 4.6.2.alpha4, ECL 11.1.1 and Maxima 5.23.1, apply 1",
+    "body": "Attachment [trac_7377-abstract-maxima_p2.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-abstract-maxima_p2.patch) by jpflori created at 2011-02-15 17:06:50\n\nPatch based on Sage 4.6.2.alpha4, ECL 11.1.1 and Maxima 5.23.1, apply 1",
     "created_at": "2011-02-15T17:06:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
@@ -2627,7 +2627,7 @@ archive/issue_comments_061882.json:
 }
 ```
 
-Attachment
+Attachment [trac_7377-abstract-maxima_p2.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-abstract-maxima_p2.patch) by jpflori created at 2011-02-15 17:06:50
 
 Patch based on Sage 4.6.2.alpha4, ECL 11.1.1 and Maxima 5.23.1, apply 1
 
@@ -2656,7 +2656,7 @@ Patch based on Sage 4.6.2.alpha4, ECL 11.1.1 and Maxima 5.23.1, apply 2
 archive/issue_comments_061884.json:
 ```json
 {
-    "body": "Attachment\n\nPatch based on Sage 4.6.2.alpha4, ECL 11.1.1 and Maxima 5.23.1, apply 3",
+    "body": "Attachment [trac_7377-maximalib_p2.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-maximalib_p2.patch) by jpflori created at 2011-02-15 17:07:24\n\nPatch based on Sage 4.6.2.alpha4, ECL 11.1.1 and Maxima 5.23.1, apply 3",
     "created_at": "2011-02-15T17:07:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
@@ -2665,7 +2665,7 @@ archive/issue_comments_061884.json:
 }
 ```
 
-Attachment
+Attachment [trac_7377-maximalib_p2.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-maximalib_p2.patch) by jpflori created at 2011-02-15 17:07:24
 
 Patch based on Sage 4.6.2.alpha4, ECL 11.1.1 and Maxima 5.23.1, apply 3
 
@@ -2676,7 +2676,7 @@ Patch based on Sage 4.6.2.alpha4, ECL 11.1.1 and Maxima 5.23.1, apply 3
 archive/issue_comments_061885.json:
 ```json
 {
-    "body": "Attachment\n\nPatch based on Sage 4.6.2.alpha4, ECL 11.1.1 and Maxima 5.23.1, apply 4",
+    "body": "Attachment [trac_7377-fastcalculus_p2.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-fastcalculus_p2.patch) by jpflori created at 2011-02-15 17:07:51\n\nPatch based on Sage 4.6.2.alpha4, ECL 11.1.1 and Maxima 5.23.1, apply 4",
     "created_at": "2011-02-15T17:07:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
@@ -2685,7 +2685,7 @@ archive/issue_comments_061885.json:
 }
 ```
 
-Attachment
+Attachment [trac_7377-fastcalculus_p2.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-fastcalculus_p2.patch) by jpflori created at 2011-02-15 17:07:51
 
 Patch based on Sage 4.6.2.alpha4, ECL 11.1.1 and Maxima 5.23.1, apply 4
 
@@ -2696,7 +2696,7 @@ Patch based on Sage 4.6.2.alpha4, ECL 11.1.1 and Maxima 5.23.1, apply 4
 archive/issue_comments_061886.json:
 ```json
 {
-    "body": "Attachment\n\n> The best idea I got so far is to split all the non-pexpect and non-communication things of Sage pexpect class into a parent class and make MaximaAbstract inherit from that class so that we still have access to all the nice features defined in Pexpect class.\n\nYes, we want to make sure that we can still use Maxima via the console as before, with all the usual stuff.   I don't know exactly the best way to do that, but we definitely want that.",
+    "body": "Attachment [trac_7377-better-ask-error_p2.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-better-ask-error_p2.patch) by kcrisman created at 2011-02-15 17:16:11\n\n> The best idea I got so far is to split all the non-pexpect and non-communication things of Sage pexpect class into a parent class and make MaximaAbstract inherit from that class so that we still have access to all the nice features defined in Pexpect class.\n\nYes, we want to make sure that we can still use Maxima via the console as before, with all the usual stuff.   I don't know exactly the best way to do that, but we definitely want that.",
     "created_at": "2011-02-15T17:16:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
@@ -2705,7 +2705,7 @@ archive/issue_comments_061886.json:
 }
 ```
 
-Attachment
+Attachment [trac_7377-better-ask-error_p2.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-better-ask-error_p2.patch) by kcrisman created at 2011-02-15 17:16:11
 
 > The best idea I got so far is to split all the non-pexpect and non-communication things of Sage pexpect class into a parent class and make MaximaAbstract inherit from that class so that we still have access to all the nice features defined in Pexpect class.
 
@@ -3219,7 +3219,7 @@ Version 0.2
 archive/issue_comments_061902.json:
 ```json
 {
-    "body": "Attachment\n\nGreat work! The patches don't apply on 4.6.1 so I can't test them at the moment. Reading through the patch:\n* Line 74\n\n```\n  (string-trim '(#\\Newline) (with-output-to-string (*standard-output*)\n      (terpri)\n```\n\nIf you're going to trim the newlines, don't bother with terpri. It just inserts a newline. Perhaps if you delete the terpri the trimming isn't necessary (I put it there because previously, the \"ask\" error messages had a newline before the question)\n* derivatives: If you want FDerivativeOperator handled by special_sage_to_max you'll need to change a bit more than just the API of the functions in that dictionary (for that, you can just put \"op\" as the first parameter and not use it in most cases)\n\nOne possibility is to index special_sage_to_max by type(op) rather than op. Then it makes a lot more sense to pass op as a parameter too (because currently, the op would be a constant for any entry in special_sage_to_max).\n\n* the line:\n\n```\n[deriv_max.extend([sr_to_max(args[i]), EclObject(params.count(i))]) for i in set(params)]\n```\n\nleads to an algorithm that is quadratic in the number of variables, but it should be (soft) linear. It should be interesting to design an example where this matters ...)",
+    "body": "Attachment [trac_7377-split_and_refactor.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-split_and_refactor.patch) by nbruin created at 2011-02-21 03:55:09\n\nGreat work! The patches don't apply on 4.6.1 so I can't test them at the moment. Reading through the patch:\n* Line 74\n\n```\n  (string-trim '(#\\Newline) (with-output-to-string (*standard-output*)\n      (terpri)\n```\n\nIf you're going to trim the newlines, don't bother with terpri. It just inserts a newline. Perhaps if you delete the terpri the trimming isn't necessary (I put it there because previously, the \"ask\" error messages had a newline before the question)\n* derivatives: If you want FDerivativeOperator handled by special_sage_to_max you'll need to change a bit more than just the API of the functions in that dictionary (for that, you can just put \"op\" as the first parameter and not use it in most cases)\n\nOne possibility is to index special_sage_to_max by type(op) rather than op. Then it makes a lot more sense to pass op as a parameter too (because currently, the op would be a constant for any entry in special_sage_to_max).\n\n* the line:\n\n```\n[deriv_max.extend([sr_to_max(args[i]), EclObject(params.count(i))]) for i in set(params)]\n```\n\nleads to an algorithm that is quadratic in the number of variables, but it should be (soft) linear. It should be interesting to design an example where this matters ...)",
     "created_at": "2011-02-21T03:55:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
@@ -3228,7 +3228,7 @@ archive/issue_comments_061902.json:
 }
 ```
 
-Attachment
+Attachment [trac_7377-split_and_refactor.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-split_and_refactor.patch) by nbruin created at 2011-02-21 03:55:09
 
 Great work! The patches don't apply on 4.6.1 so I can't test them at the moment. Reading through the patch:
 * Line 74
@@ -3444,7 +3444,7 @@ Improves startup time by lazily loading maxima_lib in calculus
 archive/issue_comments_061909.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:78 nbruin]:\n\n> ` sage -t  devel/sage-main/sage/interfaces/gap3.py # Time out ` this is a real error that was probably introduced by `split_and_refactor`. The timeout is caused by an infinite recursion upon exit (run with -verbose) and probably has to do with the fact that ` sage: gap3(\"1+2\") ` now fails differently. It seems that a \"name()\" attribute is missing. If you now try to \"quit()\", an infinite loop on some Exception resolution is triggered, but I expect the damage happened in the line above. gap3 is optional, by the way, but the error apparently already happens with tests that check the absence of gap3. Impressive progress indeed!\n\nThanks for that one, I do not have gap3 installed and get the time out, but did not bother. I'll have a look at it.",
+    "body": "Attachment [trac_7377-lazy-maxlib.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-lazy-maxlib.patch) by jpflori created at 2011-02-27 11:39:40\n\nReplying to [comment:78 nbruin]:\n\n> ` sage -t  devel/sage-main/sage/interfaces/gap3.py # Time out ` this is a real error that was probably introduced by `split_and_refactor`. The timeout is caused by an infinite recursion upon exit (run with -verbose) and probably has to do with the fact that ` sage: gap3(\"1+2\") ` now fails differently. It seems that a \"name()\" attribute is missing. If you now try to \"quit()\", an infinite loop on some Exception resolution is triggered, but I expect the damage happened in the line above. gap3 is optional, by the way, but the error apparently already happens with tests that check the absence of gap3. Impressive progress indeed!\n\nThanks for that one, I do not have gap3 installed and get the time out, but did not bother. I'll have a look at it.",
     "created_at": "2011-02-27T11:39:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
@@ -3453,7 +3453,7 @@ archive/issue_comments_061909.json:
 }
 ```
 
-Attachment
+Attachment [trac_7377-lazy-maxlib.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-lazy-maxlib.patch) by jpflori created at 2011-02-27 11:39:40
 
 Replying to [comment:78 nbruin]:
 
@@ -3468,7 +3468,7 @@ Thanks for that one, I do not have gap3 installed and get the time out, but did 
 archive/issue_comments_061910.json:
 ```json
 {
-    "body": "Attachment\n\nFixes gap3 timeout problem",
+    "body": "Attachment [trac_7377-interface-namefix.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-interface-namefix.patch) by nbruin created at 2011-02-27 19:09:05\n\nFixes gap3 timeout problem",
     "created_at": "2011-02-27T19:09:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
@@ -3477,7 +3477,7 @@ archive/issue_comments_061910.json:
 }
 ```
 
-Attachment
+Attachment [trac_7377-interface-namefix.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-interface-namefix.patch) by nbruin created at 2011-02-27 19:09:05
 
 Fixes gap3 timeout problem
 
@@ -3570,7 +3570,7 @@ So this seems to be not so much an error but more a non-compatible change. I am 
 archive/issue_comments_061913.json:
 ```json
 {
-    "body": "Attachment\n\nFixes MaximaFunction pickle issue",
+    "body": "Attachment [trac_7377-pickle-fix.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-pickle-fix.patch) by nbruin created at 2011-03-01 09:18:55\n\nFixes MaximaFunction pickle issue",
     "created_at": "2011-03-01T09:18:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
@@ -3579,7 +3579,7 @@ archive/issue_comments_061913.json:
 }
 ```
 
-Attachment
+Attachment [trac_7377-pickle-fix.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-pickle-fix.patch) by nbruin created at 2011-03-01 09:18:55
 
 Fixes MaximaFunction pickle issue
 
@@ -3814,7 +3814,7 @@ but it looks like nothing has changed. Perhaps my build is corrupted.
 archive/issue_comments_061920.json:
 ```json
 {
-    "body": "Attachment\n\nLazy import of maxima in calculus using sage.misc.lazy_import",
+    "body": "Attachment [trac_7377-lazy-maxlib.p2.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-lazy-maxlib.p2.patch) by nbruin created at 2011-03-01 18:20:22\n\nLazy import of maxima in calculus using sage.misc.lazy_import",
     "created_at": "2011-03-01T18:20:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
@@ -3823,7 +3823,7 @@ archive/issue_comments_061920.json:
 }
 ```
 
-Attachment
+Attachment [trac_7377-lazy-maxlib.p2.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-lazy-maxlib.p2.patch) by nbruin created at 2011-03-01 18:20:22
 
 Lazy import of maxima in calculus using sage.misc.lazy_import
 
@@ -3887,7 +3887,7 @@ make max_to_sr return RealDoubleElement rather than float
 archive/issue_comments_061923.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7377-floatcast.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-floatcast.patch) by nbruin created at 2011-03-01 21:52:22",
     "created_at": "2011-03-01T21:52:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
@@ -3896,7 +3896,7 @@ archive/issue_comments_061923.json:
 }
 ```
 
-Attachment
+Attachment [trac_7377-floatcast.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-floatcast.patch) by nbruin created at 2011-03-01 21:52:22
 
 
 
@@ -4018,7 +4018,7 @@ Convert unicode objects to str objects to build ecl objects.
 archive/issue_comments_061928.json:
 ```json
 {
-    "body": "Attachment\n\nDoes this patch means that sage won't be allergic to ecl being compiled with unicode support anymore?\n[https://github.com/cschwan/sage-on-gentoo/issues/closed#issue/2](https://github.com/cschwan/sage-on-gentoo/issues/closed#issue/2)",
+    "body": "Attachment [trac_7377-unicode_to_ecl.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-unicode_to_ecl.patch) by fbissey created at 2011-03-02 10:03:36\n\nDoes this patch means that sage won't be allergic to ecl being compiled with unicode support anymore?\n[https://github.com/cschwan/sage-on-gentoo/issues/closed#issue/2](https://github.com/cschwan/sage-on-gentoo/issues/closed#issue/2)",
     "created_at": "2011-03-02T10:03:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
@@ -4027,7 +4027,7 @@ archive/issue_comments_061928.json:
 }
 ```
 
-Attachment
+Attachment [trac_7377-unicode_to_ecl.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-unicode_to_ecl.patch) by fbissey created at 2011-03-02 10:03:36
 
 Does this patch means that sage won't be allergic to ecl being compiled with unicode support anymore?
 [https://github.com/cschwan/sage-on-gentoo/issues/closed#issue/2](https://github.com/cschwan/sage-on-gentoo/issues/closed#issue/2)
@@ -4363,7 +4363,7 @@ Got:
 archive/issue_comments_061938.json:
 ```json
 {
-    "body": "Attachment\n\nUpdatred version for newlines in error reporting.",
+    "body": "Attachment [trac_7377-split_and_refactor-p2.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-split_and_refactor-p2.patch) by jpflori created at 2011-03-03 09:52:22\n\nUpdatred version for newlines in error reporting.",
     "created_at": "2011-03-03T09:52:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
@@ -4372,7 +4372,7 @@ archive/issue_comments_061938.json:
 }
 ```
 
-Attachment
+Attachment [trac_7377-split_and_refactor-p2.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-split_and_refactor-p2.patch) by jpflori created at 2011-03-03 09:52:22
 
 Updatred version for newlines in error reporting.
 
@@ -4431,7 +4431,7 @@ Simpler patch not to slow exception propagation.
 archive/issue_comments_061941.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7377-unicode_to_ecl-p1.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-unicode_to_ecl-p1.patch) by jpflori created at 2011-03-03 10:00:15",
     "created_at": "2011-03-03T10:00:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
@@ -4440,7 +4440,7 @@ archive/issue_comments_061941.json:
 }
 ```
 
-Attachment
+Attachment [trac_7377-unicode_to_ecl-p1.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-unicode_to_ecl-p1.patch) by jpflori created at 2011-03-03 10:00:15
 
 
 
@@ -4721,7 +4721,7 @@ which I cannot explain.
 archive/issue_comments_061950.json:
 ```json
 {
-    "body": "Attachment\n\nTrial patch to improve assumption messages and documentation of helper functions",
+    "body": "Attachment [trac_7377-assumptions.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-assumptions.patch) by kcrisman created at 2011-03-10 21:26:20\n\nTrial patch to improve assumption messages and documentation of helper functions",
     "created_at": "2011-03-10T21:26:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
@@ -4730,7 +4730,7 @@ archive/issue_comments_061950.json:
 }
 ```
 
-Attachment
+Attachment [trac_7377-assumptions.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-assumptions.patch) by kcrisman created at 2011-03-10 21:26:20
 
 Trial patch to improve assumption messages and documentation of helper functions
 
@@ -4759,7 +4759,7 @@ Slightly reworked patch.
 archive/issue_comments_061952.json:
 ```json
 {
-    "body": "Attachment\n\n(Really) basic tests and doc for every functions in sage.interfaces.maxima*",
+    "body": "Attachment [trac_7377-doctests.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-doctests.patch) by jpflori created at 2011-03-14 15:59:06\n\n(Really) basic tests and doc for every functions in sage.interfaces.maxima*",
     "created_at": "2011-03-14T15:59:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
@@ -4768,7 +4768,7 @@ archive/issue_comments_061952.json:
 }
 ```
 
-Attachment
+Attachment [trac_7377-doctests.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-doctests.patch) by jpflori created at 2011-03-14 15:59:06
 
 (Really) basic tests and doc for every functions in sage.interfaces.maxima*
 
@@ -4824,7 +4824,7 @@ Thanks for catching the calculus/functional one.  I also noticed something that 
 archive/issue_comments_061955.json:
 ```json
 {
-    "body": "Attachment\n\ntrivial correction to p1 patch",
+    "body": "Attachment [trac_7377-assumptions-p2.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-assumptions-p2.patch) by kcrisman created at 2011-03-14 16:40:41\n\ntrivial correction to p1 patch",
     "created_at": "2011-03-14T16:40:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
@@ -4833,7 +4833,7 @@ archive/issue_comments_061955.json:
 }
 ```
 
-Attachment
+Attachment [trac_7377-assumptions-p2.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-assumptions-p2.patch) by kcrisman created at 2011-03-14 16:40:41
 
 trivial correction to p1 patch
 
@@ -5337,7 +5337,7 @@ Same thing for this one - we are catching it, but it still prints the question. 
 archive/issue_comments_061965.json:
 ```json
 {
-    "body": "Attachment\n\nMore fixes",
+    "body": "Attachment [trac_7377-assumptions-p3.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-assumptions-p3.patch) by jpflori created at 2011-03-15 09:33:18\n\nMore fixes",
     "created_at": "2011-03-15T09:33:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
@@ -5346,7 +5346,7 @@ archive/issue_comments_061965.json:
 }
 ```
 
-Attachment
+Attachment [trac_7377-assumptions-p3.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-assumptions-p3.patch) by jpflori created at 2011-03-15 09:33:18
 
 More fixes
 
@@ -5375,7 +5375,7 @@ Updated doctests.
 archive/issue_comments_061967.json:
 ```json
 {
-    "body": "Attachment\n\nI uploaded updated versions of both last patches. I accidently deleted two lines in the previous one which cause the principal error, they are restored now. I added pickling tests, not sure they make sense. Also some various fixes and cosmetic changes to reduce line lengths for sphynx and readibility.\n\nAfterwards \"make ptestlong\" reported no errors on my computer.\n\nDon't know if someone already took a look at what I did to split Interface class out of Expect class.\n\nIt seems functional now, but maybe I left some mistakes there.",
+    "body": "Attachment [trac_7377-doctests-p1.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-doctests-p1.patch) by jpflori created at 2011-03-15 13:08:08\n\nI uploaded updated versions of both last patches. I accidently deleted two lines in the previous one which cause the principal error, they are restored now. I added pickling tests, not sure they make sense. Also some various fixes and cosmetic changes to reduce line lengths for sphynx and readibility.\n\nAfterwards \"make ptestlong\" reported no errors on my computer.\n\nDon't know if someone already took a look at what I did to split Interface class out of Expect class.\n\nIt seems functional now, but maybe I left some mistakes there.",
     "created_at": "2011-03-15T13:08:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
@@ -5384,7 +5384,7 @@ archive/issue_comments_061967.json:
 }
 ```
 
-Attachment
+Attachment [trac_7377-doctests-p1.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-doctests-p1.patch) by jpflori created at 2011-03-15 13:08:08
 
 I uploaded updated versions of both last patches. I accidently deleted two lines in the previous one which cause the principal error, they are restored now. I added pickling tests, not sure they make sense. Also some various fixes and cosmetic changes to reduce line lengths for sphynx and readibility.
 
@@ -5480,7 +5480,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_061971.json:
 ```json
 {
-    "body": "Attachment\n\nCoverage is great, I haven't tested formatting in built html but looks like it will be fine overall, and in general very impressive work here.  The refactoring is at least working well with the interfaces in doctesting; it would be nice to have more testing of that by heavy users of (say) R or GAP, but at the very least we can set to 'needs review'.",
+    "body": "Attachment [trac_7377-doctests-p2.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-doctests-p2.patch) by kcrisman created at 2011-03-15 17:24:52\n\nCoverage is great, I haven't tested formatting in built html but looks like it will be fine overall, and in general very impressive work here.  The refactoring is at least working well with the interfaces in doctesting; it would be nice to have more testing of that by heavy users of (say) R or GAP, but at the very least we can set to 'needs review'.",
     "created_at": "2011-03-15T17:24:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
@@ -5489,7 +5489,7 @@ archive/issue_comments_061971.json:
 }
 ```
 
-Attachment
+Attachment [trac_7377-doctests-p2.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-doctests-p2.patch) by kcrisman created at 2011-03-15 17:24:52
 
 Coverage is great, I haven't tested formatting in built html but looks like it will be fine overall, and in general very impressive work here.  The refactoring is at least working well with the interfaces in doctesting; it would be nice to have more testing of that by heavy users of (say) R or GAP, but at the very least we can set to 'needs review'.
 
@@ -6036,7 +6036,7 @@ interface.py is missing in the trac_7377-split_and_refactor-p3.patch, it must ha
 archive/issue_comments_061994.json:
 ```json
 {
-    "body": "Attachment\n\nRebased on Sage 4.7.alpha3, put back forgotten interface.py",
+    "body": "Attachment [trac_7377-doctests-p3.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-doctests-p3.patch) by jpflori created at 2011-04-04 10:47:30\n\nRebased on Sage 4.7.alpha3, put back forgotten interface.py",
     "created_at": "2011-04-04T10:47:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
@@ -6045,7 +6045,7 @@ archive/issue_comments_061994.json:
 }
 ```
 
-Attachment
+Attachment [trac_7377-doctests-p3.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-doctests-p3.patch) by jpflori created at 2011-04-04 10:47:30
 
 Rebased on Sage 4.7.alpha3, put back forgotten interface.py
 
@@ -6222,7 +6222,7 @@ I'll post the patch this afternoon.
 archive/issue_comments_062001.json:
 ```json
 {
-    "body": "Attachment\n\nRebased on Sage 4.7.alpha3, put back forgotten interface.py",
+    "body": "Attachment [trac_7377-split_and_refactor-p3.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-split_and_refactor-p3.patch) by jpflori created at 2011-04-05 11:05:37\n\nRebased on Sage 4.7.alpha3, put back forgotten interface.py",
     "created_at": "2011-04-05T11:05:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
@@ -6231,7 +6231,7 @@ archive/issue_comments_062001.json:
 }
 ```
 
-Attachment
+Attachment [trac_7377-split_and_refactor-p3.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-split_and_refactor-p3.patch) by jpflori created at 2011-04-05 11:05:37
 
 Rebased on Sage 4.7.alpha3, put back forgotten interface.py
 

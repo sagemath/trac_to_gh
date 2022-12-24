@@ -47,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9684
 archive/issue_comments_094138.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [9684_dirty_model.patch](tarball://root/attachments/some-uuid/ticket9684/9684_dirty_model.patch) by arminstraub created at 2010-08-04 05:16:15",
     "created_at": "2010-08-04T05:16:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9684",
     "type": "issue_comment",
@@ -56,7 +56,7 @@ archive/issue_comments_094138.json:
 }
 ```
 
-Attachment
+Attachment [9684_dirty_model.patch](tarball://root/attachments/some-uuid/ticket9684/9684_dirty_model.patch) by arminstraub created at 2010-08-04 05:16:15
 
 
 
@@ -101,7 +101,7 @@ I will review this.  I'm afraid that I coined the phrase "tidy model", which I n
 archive/issue_comments_094141.json:
 ```json
 {
-    "body": "Attachment\n\nApply after previous",
+    "body": "Attachment [trac_9684-reviewer.patch](tarball://root/attachments/some-uuid/ticket9684/trac_9684-reviewer.patch) by cremona created at 2010-08-12 20:05:18\n\nApply after previous",
     "created_at": "2010-08-12T20:05:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9684",
     "type": "issue_comment",
@@ -110,7 +110,7 @@ archive/issue_comments_094141.json:
 }
 ```
 
-Attachment
+Attachment [trac_9684-reviewer.patch](tarball://root/attachments/some-uuid/ticket9684/trac_9684-reviewer.patch) by cremona created at 2010-08-12 20:05:18
 
 Apply after previous
 

@@ -125,7 +125,7 @@ Absent further discussion on this ticket, I will modify this function so it retu
 archive/issue_comments_012889.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac1990-zz-random-element.patch](tarball://root/attachments/some-uuid/ticket1990/trac1990-zz-random-element.patch) by cwitty created at 2008-03-29 18:35:19",
     "created_at": "2008-03-29T18:35:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1990",
     "type": "issue_comment",
@@ -134,7 +134,7 @@ archive/issue_comments_012889.json:
 }
 ```
 
-Attachment
+Attachment [trac1990-zz-random-element.patch](tarball://root/attachments/some-uuid/ticket1990/trac1990-zz-random-element.patch) by cwitty created at 2008-03-29 18:35:19
 
 
 

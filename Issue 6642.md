@@ -129,7 +129,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6642
 archive/issue_comments_054459.json:
 ```json
 {
-    "body": "Attachment\n\nBased on 4.1.1",
+    "body": "Attachment [trac_6642-solve-implicit-Maxima.patch](tarball://root/attachments/some-uuid/ticket6642/trac_6642-solve-implicit-Maxima.patch) by kcrisman created at 2009-08-26 21:19:24\n\nBased on 4.1.1",
     "created_at": "2009-08-26T21:19:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6642",
     "type": "issue_comment",
@@ -138,7 +138,7 @@ archive/issue_comments_054459.json:
 }
 ```
 
-Attachment
+Attachment [trac_6642-solve-implicit-Maxima.patch](tarball://root/attachments/some-uuid/ticket6642/trac_6642-solve-implicit-Maxima.patch) by kcrisman created at 2009-08-26 21:19:24
 
 Based on 4.1.1
 
@@ -266,7 +266,7 @@ Okay, that's progress: at least we (meaning you) understand what the problem is.
 archive/issue_comments_054465.json:
 ```json
 {
-    "body": "Attachment\n\nDepends on #4786",
+    "body": "Attachment [trac_6642-to-poly-solve-take2.patch](tarball://root/attachments/some-uuid/ticket6642/trac_6642-to-poly-solve-take2.patch) by kcrisman created at 2009-09-20 02:03:55\n\nDepends on #4786",
     "created_at": "2009-09-20T02:03:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6642",
     "type": "issue_comment",
@@ -275,7 +275,7 @@ archive/issue_comments_054465.json:
 }
 ```
 
-Attachment
+Attachment [trac_6642-to-poly-solve-take2.patch](tarball://root/attachments/some-uuid/ticket6642/trac_6642-to-poly-solve-take2.patch) by kcrisman created at 2009-09-20 02:03:55
 
 Depends on #4786
 
@@ -415,7 +415,7 @@ Sorry, this is silly.  I'll make a referee's patch since you already said exactl
 archive/issue_comments_054471.json:
 ```json
 {
-    "body": "Attachment\n\nBased on 4.1.2.rc1.alpha3",
+    "body": "Attachment [trac_6642-to-poly-solve-take3.patch](tarball://root/attachments/some-uuid/ticket6642/trac_6642-to-poly-solve-take3.patch) by kcrisman created at 2009-10-08 03:54:15\n\nBased on 4.1.2.rc1.alpha3",
     "created_at": "2009-10-08T03:54:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6642",
     "type": "issue_comment",
@@ -424,7 +424,7 @@ archive/issue_comments_054471.json:
 }
 ```
 
-Attachment
+Attachment [trac_6642-to-poly-solve-take3.patch](tarball://root/attachments/some-uuid/ticket6642/trac_6642-to-poly-solve-take3.patch) by kcrisman created at 2009-10-08 03:54:15
 
 Based on 4.1.2.rc1.alpha3
 
@@ -563,7 +563,7 @@ Just FYI, this will probably not get in before 4.1.2, and at #7112 William has a
 archive/issue_comments_054479.json:
 ```json
 {
-    "body": "Attachment\n\nBased on 4.1.2.rc1.alpha3",
+    "body": "Attachment [trac_6642-to-poly-solve-take3.2.patch](tarball://root/attachments/some-uuid/ticket6642/trac_6642-to-poly-solve-take3.2.patch) by kcrisman created at 2009-10-14 20:07:22\n\nBased on 4.1.2.rc1.alpha3",
     "created_at": "2009-10-14T20:07:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6642",
     "type": "issue_comment",
@@ -572,7 +572,7 @@ archive/issue_comments_054479.json:
 }
 ```
 
-Attachment
+Attachment [trac_6642-to-poly-solve-take3.2.patch](tarball://root/attachments/some-uuid/ticket6642/trac_6642-to-poly-solve-take3.2.patch) by kcrisman created at 2009-10-14 20:07:22
 
 Based on 4.1.2.rc1.alpha3
 

@@ -85,7 +85,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_003373.json:
 ```json
 {
-    "body": "Attachment\n\nI've posted a preliminary bundle. Something's up with the eigenvalues command however.",
+    "body": "Attachment [649-symbolic-matrices.hg](tarball://root/attachments/some-uuid/ticket649/649-symbolic-matrices.hg) by robertwb created at 2007-12-20 10:47:34\n\nI've posted a preliminary bundle. Something's up with the eigenvalues command however.",
     "created_at": "2007-12-20T10:47:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/649",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_003373.json:
 }
 ```
 
-Attachment
+Attachment [649-symbolic-matrices.hg](tarball://root/attachments/some-uuid/ticket649/649-symbolic-matrices.hg) by robertwb created at 2007-12-20 10:47:34
 
 I've posted a preliminary bundle. Something's up with the eigenvalues command however.
 
@@ -105,7 +105,7 @@ I've posted a preliminary bundle. Something's up with the eigenvalues command ho
 archive/issue_comments_003374.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [649.patch](tarball://root/attachments/some-uuid/ticket649/649.patch) by mhansen created at 2007-12-22 18:18:00",
     "created_at": "2007-12-22T18:18:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/649",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_003374.json:
 }
 ```
 
-Attachment
+Attachment [649.patch](tarball://root/attachments/some-uuid/ticket649/649.patch) by mhansen created at 2007-12-22 18:18:00
 
 
 

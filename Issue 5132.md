@@ -56,7 +56,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5132
 archive/issue_comments_039240.json:
 ```json
 {
-    "body": "Attachment\n\nThis is a duplicate of #825.",
+    "body": "Attachment [trac_5132-mpfr_mod.patch](tarball://root/attachments/some-uuid/ticket5132/trac_5132-mpfr_mod.patch) by zimmerma created at 2009-02-01 21:24:52\n\nThis is a duplicate of #825.",
     "created_at": "2009-02-01T21:24:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5132",
     "type": "issue_comment",
@@ -65,7 +65,7 @@ archive/issue_comments_039240.json:
 }
 ```
 
-Attachment
+Attachment [trac_5132-mpfr_mod.patch](tarball://root/attachments/some-uuid/ticket5132/trac_5132-mpfr_mod.patch) by zimmerma created at 2009-02-01 21:24:52
 
 This is a duplicate of #825.
 

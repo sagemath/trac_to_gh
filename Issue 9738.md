@@ -81,7 +81,7 @@ env SAGE_PEXPECT_LOG="yes" ./sage -t devel/sage/sage/interfaces/genus2reduction.
 archive/issue_comments_095208.json:
 ```json
 {
-    "body": "Attachment\n\nQuit on `quit`.  Diff of `genus2reduction.c` from g2r 0.3.p6.",
+    "body": "Attachment [genus2reduction.c.diff](tarball://root/attachments/some-uuid/ticket9738/genus2reduction.c.diff) by mpatel created at 2010-08-13 00:40:49\n\nQuit on `quit`.  Diff of `genus2reduction.c` from g2r 0.3.p6.",
     "created_at": "2010-08-13T00:40:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9738",
     "type": "issue_comment",
@@ -90,7 +90,7 @@ archive/issue_comments_095208.json:
 }
 ```
 
-Attachment
+Attachment [genus2reduction.c.diff](tarball://root/attachments/some-uuid/ticket9738/genus2reduction.c.diff) by mpatel created at 2010-08-13 00:40:49
 
 Quit on `quit`.  Diff of `genus2reduction.c` from g2r 0.3.p6.
 
@@ -140,7 +140,7 @@ I don't think there is a problem, this issue is independent of #9343 and #9591 (
 archive/issue_comments_095211.json:
 ```json
 {
-    "body": "Attachment\n\nAlternative patch to fix the issue",
+    "body": "Attachment [9738_genus2reduction_init_opts.patch](tarball://root/attachments/some-uuid/ticket9738/9738_genus2reduction_init_opts.patch) by jdemeyer created at 2010-08-13 22:49:53\n\nAlternative patch to fix the issue",
     "created_at": "2010-08-13T22:49:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9738",
     "type": "issue_comment",
@@ -149,7 +149,7 @@ archive/issue_comments_095211.json:
 }
 ```
 
-Attachment
+Attachment [9738_genus2reduction_init_opts.patch](tarball://root/attachments/some-uuid/ticket9738/9738_genus2reduction_init_opts.patch) by jdemeyer created at 2010-08-13 22:49:53
 
 Alternative patch to fix the issue
 

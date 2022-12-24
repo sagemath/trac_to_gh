@@ -90,7 +90,7 @@ Depends on #7196.
 archive/issue_comments_059777.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7204-sagenb_doc_jsmath.patch](tarball://root/attachments/some-uuid/ticket7204/trac_7204-sagenb_doc_jsmath.patch) by mpatel created at 2009-10-14 11:34:55",
     "created_at": "2009-10-14T11:34:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7204",
     "type": "issue_comment",
@@ -99,7 +99,7 @@ archive/issue_comments_059777.json:
 }
 ```
 
-Attachment
+Attachment [trac_7204-sagenb_doc_jsmath.patch](tarball://root/attachments/some-uuid/ticket7204/trac_7204-sagenb_doc_jsmath.patch) by mpatel created at 2009-10-14 11:34:55
 
 
 
@@ -144,7 +144,7 @@ Note that a version of this was already merged into 4.1.2, though not depending 
 archive/issue_comments_059780.json:
 ```json
 {
-    "body": "Attachment\n\nDepends on the released 4.1.2 and #7196.  Apply only this patch.",
+    "body": "Attachment [trac_7204-sagenb_doc_jsmath_v2.patch](tarball://root/attachments/some-uuid/ticket7204/trac_7204-sagenb_doc_jsmath_v2.patch) by mpatel created at 2009-10-15 20:05:23\n\nDepends on the released 4.1.2 and #7196.  Apply only this patch.",
     "created_at": "2009-10-15T20:05:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7204",
     "type": "issue_comment",
@@ -153,7 +153,7 @@ archive/issue_comments_059780.json:
 }
 ```
 
-Attachment
+Attachment [trac_7204-sagenb_doc_jsmath_v2.patch](tarball://root/attachments/some-uuid/ticket7204/trac_7204-sagenb_doc_jsmath_v2.patch) by mpatel created at 2009-10-15 20:05:23
 
 Depends on the released 4.1.2 and #7196.  Apply only this patch.
 

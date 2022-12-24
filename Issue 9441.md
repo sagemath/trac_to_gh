@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9441
 archive/issue_comments_090462.json:
 ```json
 {
-    "body": "Attachment\n\nApplies to 4.5.alpha3",
+    "body": "Attachment [trac_9441-atkin-lehner.patch](tarball://root/attachments/some-uuid/ticket9441/trac_9441-atkin-lehner.patch) by cremona created at 2010-07-06 20:37:04\n\nApplies to 4.5.alpha3",
     "created_at": "2010-07-06T20:37:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9441",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_090462.json:
 }
 ```
 
-Attachment
+Attachment [trac_9441-atkin-lehner.patch](tarball://root/attachments/some-uuid/ticket9441/trac_9441-atkin-lehner.patch) by cremona created at 2010-07-06 20:37:04
 
 Applies to 4.5.alpha3
 

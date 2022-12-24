@@ -66,7 +66,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3800
 archive/issue_comments_027019.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-3800.patch](tarball://root/attachments/some-uuid/ticket3800/trac-3800.patch) by craigcitro created at 2008-08-10 12:05:55",
     "created_at": "2008-08-10T12:05:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3800",
     "type": "issue_comment",
@@ -75,7 +75,7 @@ archive/issue_comments_027019.json:
 }
 ```
 
-Attachment
+Attachment [trac-3800.patch](tarball://root/attachments/some-uuid/ticket3800/trac-3800.patch) by craigcitro created at 2008-08-10 12:05:55
 
 
 
@@ -84,7 +84,7 @@ Attachment
 archive/issue_comments_027020.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3800-referee_touch_up.patch](tarball://root/attachments/some-uuid/ticket3800/sage-3800-referee_touch_up.patch) by was created at 2008-08-11 05:36:16",
     "created_at": "2008-08-11T05:36:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3800",
     "type": "issue_comment",
@@ -93,7 +93,7 @@ archive/issue_comments_027020.json:
 }
 ```
 
-Attachment
+Attachment [sage-3800-referee_touch_up.patch](tarball://root/attachments/some-uuid/ticket3800/sage-3800-referee_touch_up.patch) by was created at 2008-08-11 05:36:16
 
 
 

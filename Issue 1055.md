@@ -88,7 +88,7 @@ Changing status from new to assigned.
 archive/issue_comments_006418.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1055-quad-nf.diff](tarball://root/attachments/some-uuid/ticket1055/1055-quad-nf.diff) by robertwb created at 2007-11-03 22:17:38",
     "created_at": "2007-11-03T22:17:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1055",
     "type": "issue_comment",
@@ -97,7 +97,7 @@ archive/issue_comments_006418.json:
 }
 ```
 
-Attachment
+Attachment [1055-quad-nf.diff](tarball://root/attachments/some-uuid/ticket1055/1055-quad-nf.diff) by robertwb created at 2007-11-03 22:17:38
 
 
 

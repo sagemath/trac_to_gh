@@ -68,7 +68,7 @@ I've attached code to fix this bug.  It does things right.
 archive/issue_comments_056062.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6811.patch](tarball://root/attachments/some-uuid/ticket6811/trac_6811.patch) by was created at 2009-08-23 05:14:09",
     "created_at": "2009-08-23T05:14:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6811",
     "type": "issue_comment",
@@ -77,7 +77,7 @@ archive/issue_comments_056062.json:
 }
 ```
 
-Attachment
+Attachment [trac_6811.patch](tarball://root/attachments/some-uuid/ticket6811/trac_6811.patch) by was created at 2009-08-23 05:14:09
 
 
 
@@ -169,7 +169,7 @@ reviewer patch; fixes typos
 archive/issue_comments_056066.json:
 ```json
 {
-    "body": "Attachment\n\nThe reviewer patch `trac_6811-reviewer.patch` fixes some typos in `trac_6811.patch`. One of these typos results in a warning when building the reference manual.",
+    "body": "Attachment [trac_6811-reviewer.patch](tarball://root/attachments/some-uuid/ticket6811/trac_6811-reviewer.patch) by mvngu created at 2009-08-24 06:05:53\n\nThe reviewer patch `trac_6811-reviewer.patch` fixes some typos in `trac_6811.patch`. One of these typos results in a warning when building the reference manual.",
     "created_at": "2009-08-24T06:05:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6811",
     "type": "issue_comment",
@@ -178,7 +178,7 @@ archive/issue_comments_056066.json:
 }
 ```
 
-Attachment
+Attachment [trac_6811-reviewer.patch](tarball://root/attachments/some-uuid/ticket6811/trac_6811-reviewer.patch) by mvngu created at 2009-08-24 06:05:53
 
 The reviewer patch `trac_6811-reviewer.patch` fixes some typos in `trac_6811.patch`. One of these typos results in a warning when building the reference manual.
 

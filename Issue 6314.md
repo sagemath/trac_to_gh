@@ -113,7 +113,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6314
 archive/issue_comments_050400.json:
 ```json
 {
-    "body": "Attachment\n\napplies to 4.0.2.rc1",
+    "body": "Attachment [trac_6314.patch](tarball://root/attachments/some-uuid/ticket6314/trac_6314.patch) by wdj created at 2009-06-16 23:45:11\n\napplies to 4.0.2.rc1",
     "created_at": "2009-06-16T23:45:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6314",
     "type": "issue_comment",
@@ -122,7 +122,7 @@ archive/issue_comments_050400.json:
 }
 ```
 
-Attachment
+Attachment [trac_6314.patch](tarball://root/attachments/some-uuid/ticket6314/trac_6314.patch) by wdj created at 2009-06-16 23:45:11
 
 applies to 4.0.2.rc1
 

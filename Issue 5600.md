@@ -55,7 +55,7 @@ Changing keywords from "" to "integer compositions".
 archive/issue_comments_043659.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [compositions-cleanup-5600-nt.patch](tarball://root/attachments/some-uuid/ticket5600/compositions-cleanup-5600-nt.patch) by nthiery created at 2009-05-19 06:24:25",
     "created_at": "2009-05-19T06:24:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5600",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_043659.json:
 }
 ```
 
-Attachment
+Attachment [compositions-cleanup-5600-nt.patch](tarball://root/attachments/some-uuid/ticket5600/compositions-cleanup-5600-nt.patch) by nthiery created at 2009-05-19 06:24:25
 
 
 
@@ -148,7 +148,7 @@ The updated patch fixes the (the failure was actually actually a trivial thing i
 archive/issue_comments_043663.json:
 ```json
 {
-    "body": "Attachment\n\nApply only this one, yes, this one!",
+    "body": "Attachment [trac_5600-compositions_cleanup-nt.patch](tarball://root/attachments/some-uuid/ticket5600/trac_5600-compositions_cleanup-nt.patch) by nthiery created at 2009-07-29 12:33:00\n\nApply only this one, yes, this one!",
     "created_at": "2009-07-29T12:33:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5600",
     "type": "issue_comment",
@@ -157,7 +157,7 @@ archive/issue_comments_043663.json:
 }
 ```
 
-Attachment
+Attachment [trac_5600-compositions_cleanup-nt.patch](tarball://root/attachments/some-uuid/ticket5600/trac_5600-compositions_cleanup-nt.patch) by nthiery created at 2009-07-29 12:33:00
 
 Apply only this one, yes, this one!
 
@@ -186,7 +186,7 @@ Doctests pass, and it looks like Dan's issues have been resolved.  Positive revi
 archive/issue_comments_043665.json:
 ```json
 {
-    "body": "Attachment\n\nreviewer patch",
+    "body": "Attachment [trac_5600-reviewer.patch](tarball://root/attachments/some-uuid/ticket5600/trac_5600-reviewer.patch) by mvngu created at 2009-08-22 23:00:33\n\nreviewer patch",
     "created_at": "2009-08-22T23:00:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5600",
     "type": "issue_comment",
@@ -195,7 +195,7 @@ archive/issue_comments_043665.json:
 }
 ```
 
-Attachment
+Attachment [trac_5600-reviewer.patch](tarball://root/attachments/some-uuid/ticket5600/trac_5600-reviewer.patch) by mvngu created at 2009-08-22 23:00:33
 
 reviewer patch
 

@@ -73,7 +73,7 @@ Splits ell_rational_field, work in progress on Tate's algorithm
 archive/issue_comments_004195.json:
 ```json
 {
-    "body": "Attachment\n\nTHIS is the one you *really* want to apply!",
+    "body": "Attachment [6557.patch](tarball://root/attachments/some-uuid/ticket721/6557.patch) by was created at 2007-10-02 03:51:34\n\nTHIS is the one you *really* want to apply!",
     "created_at": "2007-10-02T03:51:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/721",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_004195.json:
 }
 ```
 
-Attachment
+Attachment [6557.patch](tarball://root/attachments/some-uuid/ticket721/6557.patch) by was created at 2007-10-02 03:51:34
 
 THIS is the one you *really* want to apply!
 
@@ -183,7 +183,7 @@ Do not apply any of the above patches yet!!!!
 archive/issue_comments_004201.json:
 ```json
 {
-    "body": "Attachment\n\nThis one is even better.",
+    "body": "Attachment [ell_curves.hg](tarball://root/attachments/some-uuid/ticket721/ell_curves.hg) by roed created at 2007-10-05 12:51:32\n\nThis one is even better.",
     "created_at": "2007-10-05T12:51:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/721",
     "type": "issue_comment",
@@ -192,7 +192,7 @@ archive/issue_comments_004201.json:
 }
 ```
 
-Attachment
+Attachment [ell_curves.hg](tarball://root/attachments/some-uuid/ticket721/ell_curves.hg) by roed created at 2007-10-05 12:51:32
 
 This one is even better.
 
@@ -247,7 +247,7 @@ Bundled against 2.8.6, with additional material (added ntl ZZ_pE and ZZ_pEX)
 archive/issue_comments_004204.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ntl_and_ell.hg](tarball://root/attachments/some-uuid/ticket721/ntl_and_ell.hg) by was created at 2007-10-13 07:46:08",
     "created_at": "2007-10-13T07:46:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/721",
     "type": "issue_comment",
@@ -256,7 +256,7 @@ archive/issue_comments_004204.json:
 }
 ```
 
-Attachment
+Attachment [ntl_and_ell.hg](tarball://root/attachments/some-uuid/ticket721/ntl_and_ell.hg) by was created at 2007-10-13 07:46:08
 
 
 

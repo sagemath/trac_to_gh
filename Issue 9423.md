@@ -82,7 +82,7 @@ Fixing two bugs (doctested) in the GAP interface of number fields
 archive/issue_comments_089875.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9423_gap_for_numberfields.patch](tarball://root/attachments/some-uuid/ticket9423/trac_9423_gap_for_numberfields.patch) by SimonKing created at 2010-07-04 12:23:57",
     "created_at": "2010-07-04T12:23:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9423",
     "type": "issue_comment",
@@ -91,7 +91,7 @@ archive/issue_comments_089875.json:
 }
 ```
 
-Attachment
+Attachment [trac_9423_gap_for_numberfields.patch](tarball://root/attachments/some-uuid/ticket9423/trac_9423_gap_for_numberfields.patch) by SimonKing created at 2010-07-04 12:23:57
 
 
 
@@ -140,7 +140,7 @@ I will not give it a positive review until #5618 is also ready to merge, since t
 archive/issue_comments_089878.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated headers",
+    "body": "Attachment [trac_9423_gap_for_numberfields.2.patch](tarball://root/attachments/some-uuid/ticket9423/trac_9423_gap_for_numberfields.2.patch) by lftabera created at 2010-12-29 14:25:24\n\nUpdated headers",
     "created_at": "2010-12-29T14:25:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9423",
     "type": "issue_comment",
@@ -149,7 +149,7 @@ archive/issue_comments_089878.json:
 }
 ```
 
-Attachment
+Attachment [trac_9423_gap_for_numberfields.2.patch](tarball://root/attachments/some-uuid/ticket9423/trac_9423_gap_for_numberfields.2.patch) by lftabera created at 2010-12-29 14:25:24
 
 Updated headers
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4717
 archive/issue_comments_035579.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [matrix_plot.patch](tarball://root/attachments/some-uuid/ticket4717/matrix_plot.patch) by whuss created at 2008-12-05 13:23:14",
     "created_at": "2008-12-05T13:23:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4717",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_035579.json:
 }
 ```
 
-Attachment
+Attachment [matrix_plot.patch](tarball://root/attachments/some-uuid/ticket4717/matrix_plot.patch) by whuss created at 2008-12-05 13:23:14
 
 
 
@@ -49,7 +49,7 @@ Attachment
 archive/issue_comments_035580.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4717.patch](tarball://root/attachments/some-uuid/ticket4717/trac_4717.patch) by mhansen created at 2008-12-08 01:46:29",
     "created_at": "2008-12-08T01:46:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4717",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_035580.json:
 }
 ```
 
-Attachment
+Attachment [trac_4717.patch](tarball://root/attachments/some-uuid/ticket4717/trac_4717.patch) by mhansen created at 2008-12-08 01:46:29
 
 
 
@@ -152,7 +152,7 @@ produces http://sage.math.washington.edu/home/mhansen/4717.png .
 archive/issue_comments_035584.json:
 ```json
 {
-    "body": "Attachment\n\nfinal version",
+    "body": "Attachment [trac_4717.2.patch](tarball://root/attachments/some-uuid/ticket4717/trac_4717.2.patch) by whuss created at 2008-12-09 08:43:36\n\nfinal version",
     "created_at": "2008-12-09T08:43:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4717",
     "type": "issue_comment",
@@ -161,7 +161,7 @@ archive/issue_comments_035584.json:
 }
 ```
 
-Attachment
+Attachment [trac_4717.2.patch](tarball://root/attachments/some-uuid/ticket4717/trac_4717.2.patch) by whuss created at 2008-12-09 08:43:36
 
 final version
 

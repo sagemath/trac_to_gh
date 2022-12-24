@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3218
 archive/issue_comments_022285.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [mercurial-0.9.5.p0-spkg-install-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3218/mercurial-0.9.5.p0-spkg-install-64bit-osx.patch) by mabshoff created at 2008-05-16 14:06:36",
     "created_at": "2008-05-16T14:06:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3218",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_022285.json:
 }
 ```
 
-Attachment
+Attachment [mercurial-0.9.5.p0-spkg-install-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3218/mercurial-0.9.5.p0-spkg-install-64bit-osx.patch) by mabshoff created at 2008-05-16 14:06:36
 
 
 

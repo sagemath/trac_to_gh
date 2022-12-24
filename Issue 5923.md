@@ -144,7 +144,7 @@ patch against 3.4.2.rc0
 archive/issue_comments_046831.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5923.patch](tarball://root/attachments/some-uuid/ticket5923/trac_5923.patch) by craigcitro created at 2009-05-07 08:45:22",
     "created_at": "2009-05-07T08:45:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5923",
     "type": "issue_comment",
@@ -153,7 +153,7 @@ archive/issue_comments_046831.json:
 }
 ```
 
-Attachment
+Attachment [trac_5923.patch](tarball://root/attachments/some-uuid/ticket5923/trac_5923.patch) by craigcitro created at 2009-05-07 08:45:22
 
 
 
@@ -162,7 +162,7 @@ Attachment
 archive/issue_comments_046832.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good -- I added one small patch that just slightly moved things around. (Mostly just removed cases where tests would end up getting run several times, even though this code isn't anywhere near performance-critical.)",
+    "body": "Attachment [trac_5923_pt2.patch](tarball://root/attachments/some-uuid/ticket5923/trac_5923_pt2.patch) by craigcitro created at 2009-05-07 09:11:32\n\nLooks good -- I added one small patch that just slightly moved things around. (Mostly just removed cases where tests would end up getting run several times, even though this code isn't anywhere near performance-critical.)",
     "created_at": "2009-05-07T09:11:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5923",
     "type": "issue_comment",
@@ -171,7 +171,7 @@ archive/issue_comments_046832.json:
 }
 ```
 
-Attachment
+Attachment [trac_5923_pt2.patch](tarball://root/attachments/some-uuid/ticket5923/trac_5923_pt2.patch) by craigcitro created at 2009-05-07 09:11:32
 
 Looks good -- I added one small patch that just slightly moved things around. (Mostly just removed cases where tests would end up getting run several times, even though this code isn't anywhere near performance-critical.)
 

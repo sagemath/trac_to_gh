@@ -72,7 +72,7 @@ sage: hash(bla['t'])
 archive/issue_comments_071331.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8119-parent-hash.patch](tarball://root/attachments/some-uuid/ticket8119/8119-parent-hash.patch) by robertwb created at 2010-03-12 09:57:30",
     "created_at": "2010-03-12T09:57:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8119",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_071331.json:
 }
 ```
 
-Attachment
+Attachment [8119-parent-hash.patch](tarball://root/attachments/some-uuid/ticket8119/8119-parent-hash.patch) by robertwb created at 2010-03-12 09:57:30
 
 
 
@@ -293,7 +293,7 @@ you can put a positive review on my behalf.
 archive/issue_comments_071341.json:
 ```json
 {
-    "body": "Attachment\n\nFlorent's review patch looks good. However ``consistant* should be written ``consistent* in the first patch. I also did not yet set a positive review because of the ongoing discussion on sage-devel. Please feel free to go ahead and set a positive review once the typo is fixed and if it is decided that the PolynomialRing issue shall be fixed in a follow up patch.\n\nCheers,\n                                   Nicolas",
+    "body": "Attachment [8119-parent-hash-review.patch](tarball://root/attachments/some-uuid/ticket8119/8119-parent-hash-review.patch) by nthiery created at 2011-04-21 01:45:08\n\nFlorent's review patch looks good. However ``consistant* should be written ``consistent* in the first patch. I also did not yet set a positive review because of the ongoing discussion on sage-devel. Please feel free to go ahead and set a positive review once the typo is fixed and if it is decided that the PolynomialRing issue shall be fixed in a follow up patch.\n\nCheers,\n                                   Nicolas",
     "created_at": "2011-04-21T01:45:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8119",
     "type": "issue_comment",
@@ -302,7 +302,7 @@ archive/issue_comments_071341.json:
 }
 ```
 
-Attachment
+Attachment [8119-parent-hash-review.patch](tarball://root/attachments/some-uuid/ticket8119/8119-parent-hash-review.patch) by nthiery created at 2011-04-21 01:45:08
 
 Florent's review patch looks good. However ``consistant* should be written ``consistent* in the first patch. I also did not yet set a positive review because of the ongoing discussion on sage-devel. Please feel free to go ahead and set a positive review once the typo is fixed and if it is decided that the PolynomialRing issue shall be fixed in a follow up patch.
 
@@ -352,7 +352,7 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_071344.json:
 ```json
 {
-    "body": "Attachment\n\nFixed the typo, I don't think the issue with sparse PolynomialRing #11231 should hold this ticket up any longer (it's had a patch sitting on it for over a year...)",
+    "body": "Attachment [8119-parent-hash.2.patch](tarball://root/attachments/some-uuid/ticket8119/8119-parent-hash.2.patch) by robertwb created at 2011-04-21 09:27:06\n\nFixed the typo, I don't think the issue with sparse PolynomialRing #11231 should hold this ticket up any longer (it's had a patch sitting on it for over a year...)",
     "created_at": "2011-04-21T09:27:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8119",
     "type": "issue_comment",
@@ -361,7 +361,7 @@ archive/issue_comments_071344.json:
 }
 ```
 
-Attachment
+Attachment [8119-parent-hash.2.patch](tarball://root/attachments/some-uuid/ticket8119/8119-parent-hash.2.patch) by robertwb created at 2011-04-21 09:27:06
 
 Fixed the typo, I don't think the issue with sparse PolynomialRing #11231 should hold this ticket up any longer (it's had a patch sitting on it for over a year...)
 
@@ -444,7 +444,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_071349.json:
 ```json
 {
-    "body": "Attachment\n\nI just re-uploaded roberts patch with a correct log message. I'm not sure I'm allowed to put a positive review though. \n\nFlorent",
+    "body": "Attachment [8119-parent-hash.3.patch](tarball://root/attachments/some-uuid/ticket8119/8119-parent-hash.3.patch) by hivert created at 2011-04-23 10:47:52\n\nI just re-uploaded roberts patch with a correct log message. I'm not sure I'm allowed to put a positive review though. \n\nFlorent",
     "created_at": "2011-04-23T10:47:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8119",
     "type": "issue_comment",
@@ -453,7 +453,7 @@ archive/issue_comments_071349.json:
 }
 ```
 
-Attachment
+Attachment [8119-parent-hash.3.patch](tarball://root/attachments/some-uuid/ticket8119/8119-parent-hash.3.patch) by hivert created at 2011-04-23 10:47:52
 
 I just re-uploaded roberts patch with a correct log message. I'm not sure I'm allowed to put a positive review though. 
 
@@ -748,7 +748,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_071364.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:23 jdemeyer]:\n> On boxen (Linux x86_64), I get:\n> {{{\n> sage -t  -force_lib devel/sage/sage/structure/category_object.pyx\n> **********************************************************************\n> File \"/padic/scratch/jdemeyer/merger/sage-5.0.beta14/devel/sage-main/sage/structure/category_object.pyx\", line 757:\n>     sage: hash(bla)\n> Expected:\n>     -1525918542791298668\n> Got:\n>     -5279516879544852222\n> **********************************************************************\n> File \"/padic/scratch/jdemeyer/merger/sage-5.0.beta14/devel/sage-main/sage/structure/category_object.pyx\", line 761:\n>     sage: hash(bla)\n> Expected:\n>     -1525918542791298668\n> Got:\n>     -5279516879544852222\n> **********************************************************************\n> }}}\n\nWeird, I get here the same result as you on boxen, both with 4.8 and 5.0.beta8. I don't know how a wrong return value ended up in the patch. \n\nOh well, I updated the patch to expect the result obtained on boxen.",
+    "body": "Attachment [8119-parent-hash-final-fix32.patch](tarball://root/attachments/some-uuid/ticket8119/8119-parent-hash-final-fix32.patch) by nthiery created at 2012-04-06 14:45:27\n\nReplying to [comment:23 jdemeyer]:\n> On boxen (Linux x86_64), I get:\n> {{{\n> sage -t  -force_lib devel/sage/sage/structure/category_object.pyx\n> **********************************************************************\n> File \"/padic/scratch/jdemeyer/merger/sage-5.0.beta14/devel/sage-main/sage/structure/category_object.pyx\", line 757:\n>     sage: hash(bla)\n> Expected:\n>     -1525918542791298668\n> Got:\n>     -5279516879544852222\n> **********************************************************************\n> File \"/padic/scratch/jdemeyer/merger/sage-5.0.beta14/devel/sage-main/sage/structure/category_object.pyx\", line 761:\n>     sage: hash(bla)\n> Expected:\n>     -1525918542791298668\n> Got:\n>     -5279516879544852222\n> **********************************************************************\n> }}}\n\nWeird, I get here the same result as you on boxen, both with 4.8 and 5.0.beta8. I don't know how a wrong return value ended up in the patch. \n\nOh well, I updated the patch to expect the result obtained on boxen.",
     "created_at": "2012-04-06T14:45:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8119",
     "type": "issue_comment",
@@ -757,7 +757,7 @@ archive/issue_comments_071364.json:
 }
 ```
 
-Attachment
+Attachment [8119-parent-hash-final-fix32.patch](tarball://root/attachments/some-uuid/ticket8119/8119-parent-hash-final-fix32.patch) by nthiery created at 2012-04-06 14:45:27
 
 Replying to [comment:23 jdemeyer]:
 > On boxen (Linux x86_64), I get:
@@ -829,7 +829,7 @@ Apply 8119-parent-hash-final-fix32.patch
 archive/issue_comments_071367.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8119-parent-hash-final.patch](tarball://root/attachments/some-uuid/ticket8119/8119-parent-hash-final.patch) by hivert created at 2012-04-26 22:17:25",
     "created_at": "2012-04-26T22:17:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8119",
     "type": "issue_comment",
@@ -838,7 +838,7 @@ archive/issue_comments_071367.json:
 }
 ```
 
-Attachment
+Attachment [8119-parent-hash-final.patch](tarball://root/attachments/some-uuid/ticket8119/8119-parent-hash-final.patch) by hivert created at 2012-04-26 22:17:25
 
 
 

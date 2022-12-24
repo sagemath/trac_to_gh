@@ -105,7 +105,7 @@ The attached patch fixes the issue by making sure that the defining polynomials 
 archive/issue_comments_040451.json:
 ```json
 {
-    "body": "Attachment\n\nPatch looks good and doctests pass.",
+    "body": "Attachment [trac_5269.patch](tarball://root/attachments/some-uuid/ticket5269/trac_5269.patch) by malb created at 2009-02-14 17:34:20\n\nPatch looks good and doctests pass.",
     "created_at": "2009-02-14T17:34:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5269",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_040451.json:
 }
 ```
 
-Attachment
+Attachment [trac_5269.patch](tarball://root/attachments/some-uuid/ticket5269/trac_5269.patch) by malb created at 2009-02-14 17:34:20
 
 Patch looks good and doctests pass.
 

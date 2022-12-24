@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1543
 archive/issue_comments_009853.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [rpy-1.0.1.spkg](tarball://root/attachments/some-uuid/ticket1543/rpy-1.0.1.spkg) by craigcitro created at 2007-12-17 02:58:06",
     "created_at": "2007-12-17T02:58:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1543",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_009853.json:
 }
 ```
 
-Attachment
+Attachment [rpy-1.0.1.spkg](tarball://root/attachments/some-uuid/ticket1543/rpy-1.0.1.spkg) by craigcitro created at 2007-12-17 02:58:06
 
 
 
@@ -67,7 +67,7 @@ Changing status from new to assigned.
 archive/issue_comments_009855.json:
 ```json
 {
-    "body": "Attachment\n\nAs mabshoff pointed out, this spkg name should probably get updated, since changes were made, and so I've added rpy-1.0.1.p0.spkg ... I'm also putting up a new patch for 1542, which will know about this new filename. (It has to appear in the r spkg-install, so these two should be handled simultaneously.)",
+    "body": "Attachment [rpy-1.0.1.p0.spkg](tarball://root/attachments/some-uuid/ticket1543/rpy-1.0.1.p0.spkg) by craigcitro created at 2007-12-17 04:59:39\n\nAs mabshoff pointed out, this spkg name should probably get updated, since changes were made, and so I've added rpy-1.0.1.p0.spkg ... I'm also putting up a new patch for 1542, which will know about this new filename. (It has to appear in the r spkg-install, so these two should be handled simultaneously.)",
     "created_at": "2007-12-17T04:59:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1543",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_009855.json:
 }
 ```
 
-Attachment
+Attachment [rpy-1.0.1.p0.spkg](tarball://root/attachments/some-uuid/ticket1543/rpy-1.0.1.p0.spkg) by craigcitro created at 2007-12-17 04:59:39
 
 As mabshoff pointed out, this spkg name should probably get updated, since changes were made, and so I've added rpy-1.0.1.p0.spkg ... I'm also putting up a new patch for 1542, which will know about this new filename. (It has to appear in the r spkg-install, so these two should be handled simultaneously.)
 

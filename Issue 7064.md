@@ -60,7 +60,7 @@ based on Sage 4.1.2.alpha4
 archive/issue_comments_058434.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7064-fix-warnings.patch](tarball://root/attachments/some-uuid/ticket7064/trac_7064-fix-warnings.patch) by mvngu created at 2009-09-29 09:15:32",
     "created_at": "2009-09-29T09:15:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7064",
     "type": "issue_comment",
@@ -69,7 +69,7 @@ archive/issue_comments_058434.json:
 }
 ```
 
-Attachment
+Attachment [trac_7064-fix-warnings.patch](tarball://root/attachments/some-uuid/ticket7064/trac_7064-fix-warnings.patch) by mvngu created at 2009-09-29 09:15:32
 
 
 

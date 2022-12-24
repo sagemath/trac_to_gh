@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4848
 archive/issue_comments_036760.json:
 ```json
 {
-    "body": "Attachment\n\nThe file is also from 2005 and hasn't been touched for ages:\n\n```\nchangeset:   1097:e9c1649fcc14\nuser:        wstein@gmail.com\ndate:        Fri Sep 01 02:31:25 2006 +0000\nsummary:     [project @ wstein@ucsd.edu --> wstein@gmail.com (hundreds of changes)]\n\nchangeset:   0:039f6310c6fe\nuser:        tornaria@math.utexas.edu\ndate:        Sat Feb 11 01:13:08 2006 +0000\nsummary:     [project @ original sage-0.10.12]\n```\n\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_4848.patch](tarball://root/attachments/some-uuid/ticket4848/trac_4848.patch) by mabshoff created at 2008-12-21 16:23:22\n\nThe file is also from 2005 and hasn't been touched for ages:\n\n```\nchangeset:   1097:e9c1649fcc14\nuser:        wstein@gmail.com\ndate:        Fri Sep 01 02:31:25 2006 +0000\nsummary:     [project @ wstein@ucsd.edu --> wstein@gmail.com (hundreds of changes)]\n\nchangeset:   0:039f6310c6fe\nuser:        tornaria@math.utexas.edu\ndate:        Sat Feb 11 01:13:08 2006 +0000\nsummary:     [project @ original sage-0.10.12]\n```\n\n\nCheers,\n\nMichael",
     "created_at": "2008-12-21T16:23:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4848",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_036760.json:
 }
 ```
 
-Attachment
+Attachment [trac_4848.patch](tarball://root/attachments/some-uuid/ticket4848/trac_4848.patch) by mabshoff created at 2008-12-21 16:23:22
 
 The file is also from 2005 and hasn't been touched for ages:
 

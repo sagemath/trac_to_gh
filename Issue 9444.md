@@ -57,7 +57,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9444
 archive/issue_comments_090491.json:
 ```json
 {
-    "body": "Attachment\n\nStep out of spkg/build/foo-x.y.z before deleting it.",
+    "body": "Attachment [trac_9444-spkg_build_dir_t2.patch](tarball://root/attachments/some-uuid/ticket9444/trac_9444-spkg_build_dir_t2.patch) by mpatel created at 2010-07-07 05:37:54\n\nStep out of spkg/build/foo-x.y.z before deleting it.",
     "created_at": "2010-07-07T05:37:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9444",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_090491.json:
 }
 ```
 
-Attachment
+Attachment [trac_9444-spkg_build_dir_t2.patch](tarball://root/attachments/some-uuid/ticket9444/trac_9444-spkg_build_dir_t2.patch) by mpatel created at 2010-07-07 05:37:54
 
 Step out of spkg/build/foo-x.y.z before deleting it.
 

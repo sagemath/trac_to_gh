@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5770
 archive/issue_comments_045130.json:
 ```json
 {
-    "body": "Attachment\n\nBased on 3.4.1.rc2",
+    "body": "Attachment [p1list-doc.patch](tarball://root/attachments/some-uuid/ticket5770/p1list-doc.patch) by cremona created at 2009-04-12 17:25:57\n\nBased on 3.4.1.rc2",
     "created_at": "2009-04-12T17:25:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5770",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_045130.json:
 }
 ```
 
-Attachment
+Attachment [p1list-doc.patch](tarball://root/attachments/some-uuid/ticket5770/p1list-doc.patch) by cremona created at 2009-04-12 17:25:57
 
 Based on 3.4.1.rc2
 
@@ -91,7 +91,7 @@ apply over previous patch
 archive/issue_comments_045133.json:
 ```json
 {
-    "body": "Attachment\n\nThanks, David.  Getting the documentation to build & look ok takes a long time!  As you can imagine there was a lot of cutting and pasting.  Much more of the same to com with manin_symbols.py, where there are about 5 classes each of which has a very similar set of methods (but not quite identical).",
+    "body": "Attachment [trac_5770-reviewer_fix.patch](tarball://root/attachments/some-uuid/ticket5770/trac_5770-reviewer_fix.patch) by cremona created at 2009-04-13 13:16:28\n\nThanks, David.  Getting the documentation to build & look ok takes a long time!  As you can imagine there was a lot of cutting and pasting.  Much more of the same to com with manin_symbols.py, where there are about 5 classes each of which has a very similar set of methods (but not quite identical).",
     "created_at": "2009-04-13T13:16:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5770",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_045133.json:
 }
 ```
 
-Attachment
+Attachment [trac_5770-reviewer_fix.patch](tarball://root/attachments/some-uuid/ticket5770/trac_5770-reviewer_fix.patch) by cremona created at 2009-04-13 13:16:28
 
 Thanks, David.  Getting the documentation to build & look ok takes a long time!  As you can imagine there was a lot of cutting and pasting.  Much more of the same to com with manin_symbols.py, where there are about 5 classes each of which has a very similar set of methods (but not quite identical).
 

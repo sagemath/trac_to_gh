@@ -64,7 +64,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5781
 archive/issue_comments_045256.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [empty_standard_tableau-fh-final.patch](tarball://root/attachments/some-uuid/ticket5781/empty_standard_tableau-fh-final.patch) by hivert created at 2009-04-13 22:04:07",
     "created_at": "2009-04-13T22:04:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5781",
     "type": "issue_comment",
@@ -73,7 +73,7 @@ archive/issue_comments_045256.json:
 }
 ```
 
-Attachment
+Attachment [empty_standard_tableau-fh-final.patch](tarball://root/attachments/some-uuid/ticket5781/empty_standard_tableau-fh-final.patch) by hivert created at 2009-04-13 22:04:07
 
 
 

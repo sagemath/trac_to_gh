@@ -186,7 +186,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_087291.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9267-charge_jb.patch](tarball://root/attachments/some-uuid/ticket9267/trac_9267-charge_jb.patch) by jbandlow created at 2010-06-30 18:04:08",
     "created_at": "2010-06-30T18:04:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9267",
     "type": "issue_comment",
@@ -195,7 +195,7 @@ archive/issue_comments_087291.json:
 }
 ```
 
-Attachment
+Attachment [trac_9267-charge_jb.patch](tarball://root/attachments/some-uuid/ticket9267/trac_9267-charge_jb.patch) by jbandlow created at 2010-06-30 18:04:08
 
 
 

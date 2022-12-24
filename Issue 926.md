@@ -61,7 +61,7 @@ Changing assignee from malb to robertwb.
 archive/issue_comments_005675.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [926.diff](tarball://root/attachments/some-uuid/ticket926/926.diff) by robertwb created at 2007-10-20 20:25:27",
     "created_at": "2007-10-20T20:25:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/926",
     "type": "issue_comment",
@@ -70,7 +70,7 @@ archive/issue_comments_005675.json:
 }
 ```
 
-Attachment
+Attachment [926.diff](tarball://root/attachments/some-uuid/ticket926/926.diff) by robertwb created at 2007-10-20 20:25:27
 
 
 

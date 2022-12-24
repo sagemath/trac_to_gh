@@ -111,7 +111,7 @@ This does not fix other issues with these scripts, as in #5153.
 archive/issue_comments_057518.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [ellQ.gp](tarball://root/attachments/some-uuid/ticket6955/ellQ.gp) by cremona created at 2010-04-03 16:37:19",
     "created_at": "2010-04-03T16:37:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6955",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_057518.json:
 }
 ```
 
-Attachment
+Attachment [ellQ.gp](tarball://root/attachments/some-uuid/ticket6955/ellQ.gp) by cremona created at 2010-04-03 16:37:19
 
 
 
@@ -129,7 +129,7 @@ Attachment
 archive/issue_comments_057519.json:
 ```json
 {
-    "body": "Attachment\n\nApplies to 4.3.5",
+    "body": "Attachment [trac_6955-simon-update.patch](tarball://root/attachments/some-uuid/ticket6955/trac_6955-simon-update.patch) by cremona created at 2010-04-03 16:42:29\n\nApplies to 4.3.5",
     "created_at": "2010-04-03T16:42:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6955",
     "type": "issue_comment",
@@ -138,7 +138,7 @@ archive/issue_comments_057519.json:
 }
 ```
 
-Attachment
+Attachment [trac_6955-simon-update.patch](tarball://root/attachments/some-uuid/ticket6955/trac_6955-simon-update.patch) by cremona created at 2010-04-03 16:42:29
 
 Applies to 4.3.5
 
@@ -203,7 +203,7 @@ Apply in SAGE_ROOT/data/extcode before other patch
 archive/issue_comments_057523.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch trac_6955-simon-update-extcode.patch should be applied in the directory SAGE_ROOT/data/extcode in addition to the usual patch for sage-main.  The gp files on the ticket are just for reference.",
+    "body": "Attachment [trac_6955-simon-update-extcode.patch](tarball://root/attachments/some-uuid/ticket6955/trac_6955-simon-update-extcode.patch) by cremona created at 2010-04-03 18:35:21\n\nThe patch trac_6955-simon-update-extcode.patch should be applied in the directory SAGE_ROOT/data/extcode in addition to the usual patch for sage-main.  The gp files on the ticket are just for reference.",
     "created_at": "2010-04-03T18:35:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6955",
     "type": "issue_comment",
@@ -212,7 +212,7 @@ archive/issue_comments_057523.json:
 }
 ```
 
-Attachment
+Attachment [trac_6955-simon-update-extcode.patch](tarball://root/attachments/some-uuid/ticket6955/trac_6955-simon-update-extcode.patch) by cremona created at 2010-04-03 18:35:21
 
 The patch trac_6955-simon-update-extcode.patch should be applied in the directory SAGE_ROOT/data/extcode in addition to the usual patch for sage-main.  The gp files on the ticket are just for reference.
 
@@ -327,7 +327,7 @@ The modified patch corrects this.
 archive/issue_comments_057527.json:
 ```json
 {
-    "body": "Attachment\n\nreplaces the previous patch of this name",
+    "body": "Attachment [trac_6955-simon-update_reviewer.patch](tarball://root/attachments/some-uuid/ticket6955/trac_6955-simon-update_reviewer.patch) by wuthrich created at 2010-04-09 17:17:37\n\nreplaces the previous patch of this name",
     "created_at": "2010-04-09T17:17:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6955",
     "type": "issue_comment",
@@ -336,7 +336,7 @@ archive/issue_comments_057527.json:
 }
 ```
 
-Attachment
+Attachment [trac_6955-simon-update_reviewer.patch](tarball://root/attachments/some-uuid/ticket6955/trac_6955-simon-update_reviewer.patch) by wuthrich created at 2010-04-09 17:17:37
 
 replaces the previous patch of this name
 

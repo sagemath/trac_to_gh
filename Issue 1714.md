@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1714
 archive/issue_comments_010864.json:
 ```json
 {
-    "body": "Attachment\n\nSince #1843 has been merged this patch needs to be revisited now.\n\nCheers,\n\nMichael",
+    "body": "Attachment [sage0_keywords.patch](tarball://root/attachments/some-uuid/ticket1714/sage0_keywords.patch) by mabshoff created at 2008-01-21 05:55:55\n\nSince #1843 has been merged this patch needs to be revisited now.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-21T05:55:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1714",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_010864.json:
 }
 ```
 
-Attachment
+Attachment [sage0_keywords.patch](tarball://root/attachments/some-uuid/ticket1714/sage0_keywords.patch) by mabshoff created at 2008-01-21 05:55:55
 
 Since #1843 has been merged this patch needs to be revisited now.
 
@@ -91,7 +91,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_010867.json:
 ```json
 {
-    "body": "Attachment\n\nThe new attached patch `sage0_keywords.2.patch` which replaces the old patch applies cleanly against `2.10.1.rc2`.",
+    "body": "Attachment [sage0_keywords.2.patch](tarball://root/attachments/some-uuid/ticket1714/sage0_keywords.2.patch) by malb created at 2008-01-29 16:24:52\n\nThe new attached patch `sage0_keywords.2.patch` which replaces the old patch applies cleanly against `2.10.1.rc2`.",
     "created_at": "2008-01-29T16:24:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1714",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_010867.json:
 }
 ```
 
-Attachment
+Attachment [sage0_keywords.2.patch](tarball://root/attachments/some-uuid/ticket1714/sage0_keywords.2.patch) by malb created at 2008-01-29 16:24:52
 
 The new attached patch `sage0_keywords.2.patch` which replaces the old patch applies cleanly against `2.10.1.rc2`.
 

@@ -94,7 +94,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1460
 archive/issue_comments_009406.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-1460.patch](tarball://root/attachments/some-uuid/ticket1460/trac-1460.patch) by was created at 2007-12-12 00:27:42",
     "created_at": "2007-12-12T00:27:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1460",
     "type": "issue_comment",
@@ -103,7 +103,7 @@ archive/issue_comments_009406.json:
 }
 ```
 
-Attachment
+Attachment [trac-1460.patch](tarball://root/attachments/some-uuid/ticket1460/trac-1460.patch) by was created at 2007-12-12 00:27:42
 
 
 
@@ -130,7 +130,7 @@ The attached patch also greatly improves doctests for the relevant functions.
 archive/issue_comments_009408.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.  One of the doctests failed on my machine due to numerical noise; I attached a trivial doctest patch to fix it.  After my patch, all doctests pass in sage/calculus/ and sage/rings/.",
+    "body": "Attachment [trac-1460-doctestnoise.patch](tarball://root/attachments/some-uuid/ticket1460/trac-1460-doctestnoise.patch) by cwitty created at 2007-12-15 04:09:06\n\nLooks good to me.  One of the doctests failed on my machine due to numerical noise; I attached a trivial doctest patch to fix it.  After my patch, all doctests pass in sage/calculus/ and sage/rings/.",
     "created_at": "2007-12-15T04:09:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1460",
     "type": "issue_comment",
@@ -139,7 +139,7 @@ archive/issue_comments_009408.json:
 }
 ```
 
-Attachment
+Attachment [trac-1460-doctestnoise.patch](tarball://root/attachments/some-uuid/ticket1460/trac-1460-doctestnoise.patch) by cwitty created at 2007-12-15 04:09:06
 
 Looks good to me.  One of the doctests failed on my machine due to numerical noise; I attached a trivial doctest patch to fix it.  After my patch, all doctests pass in sage/calculus/ and sage/rings/.
 

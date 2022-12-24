@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1970
 archive/issue_comments_012749.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-1970-notebook-gnutls.patch](tarball://root/attachments/some-uuid/ticket1970/trac-1970-notebook-gnutls.patch) by was created at 2008-01-29 11:57:58",
     "created_at": "2008-01-29T11:57:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1970",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_012749.json:
 }
 ```
 
-Attachment
+Attachment [trac-1970-notebook-gnutls.patch](tarball://root/attachments/some-uuid/ticket1970/trac-1970-notebook-gnutls.patch) by was created at 2008-01-29 11:57:58
 
 
 
@@ -67,7 +67,7 @@ updated patch use this instead
 archive/issue_comments_012751.json:
 ```json
 {
-    "body": "Attachment\n\nI've uploaded a new patch which replaces the old patch. This version checks for an OSError rather than any exception. It is better to check for a specific error only because this way we can spot errors and fix them. I've applied this patch against rc2 but the insecure notebook worked for me before and after the patch (I have GnuTLS installed system wide)",
+    "body": "Attachment [trac-1970-notebook-gnutls.2.patch](tarball://root/attachments/some-uuid/ticket1970/trac-1970-notebook-gnutls.2.patch) by malb created at 2008-01-29 16:13:13\n\nI've uploaded a new patch which replaces the old patch. This version checks for an OSError rather than any exception. It is better to check for a specific error only because this way we can spot errors and fix them. I've applied this patch against rc2 but the insecure notebook worked for me before and after the patch (I have GnuTLS installed system wide)",
     "created_at": "2008-01-29T16:13:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1970",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_012751.json:
 }
 ```
 
-Attachment
+Attachment [trac-1970-notebook-gnutls.2.patch](tarball://root/attachments/some-uuid/ticket1970/trac-1970-notebook-gnutls.2.patch) by malb created at 2008-01-29 16:13:13
 
 I've uploaded a new patch which replaces the old patch. This version checks for an OSError rather than any exception. It is better to check for a specific error only because this way we can spot errors and fix them. I've applied this patch against rc2 but the insecure notebook worked for me before and after the patch (I have GnuTLS installed system wide)
 

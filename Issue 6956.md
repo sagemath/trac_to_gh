@@ -61,7 +61,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6956
 archive/issue_comments_057540.json:
 ```json
 {
-    "body": "Attachment\n\nAdded _derivative() functions to all functions in `trig.py` and `hyperbolic.py`",
+    "body": "Attachment [trac_6956-derivatives.patch](tarball://root/attachments/some-uuid/ticket6956/trac_6956-derivatives.patch) by timdumol created at 2009-09-19 00:24:46\n\nAdded _derivative() functions to all functions in `trig.py` and `hyperbolic.py`",
     "created_at": "2009-09-19T00:24:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6956",
     "type": "issue_comment",
@@ -70,7 +70,7 @@ archive/issue_comments_057540.json:
 }
 ```
 
-Attachment
+Attachment [trac_6956-derivatives.patch](tarball://root/attachments/some-uuid/ticket6956/trac_6956-derivatives.patch) by timdumol created at 2009-09-19 00:24:46
 
 Added _derivative() functions to all functions in `trig.py` and `hyperbolic.py`
 
@@ -151,7 +151,7 @@ Added `_derivative_()` functions to all functions in trig.py and hyperbolic.py. 
 archive/issue_comments_057544.json:
 ```json
 {
-    "body": "Attachment\n\nFunctions that inherit from `PrimitiveFunction` are automatically given `nargs = 1` on L800 of `symbolic/function.pyx`. So the silent dropping of arguments is more of a usability problem on the Symbolic side.\n\nI've made the changes for the derivatives of `asech(x)` and `acsch(x)`. I've also generalized the derivatives for `asec(x)` and `acsc(x)`.\n\nAnyone who wants to review the derivatives can check: http://mathworld.wolfram.com/Derivative.html, http://mathworld.wolfram.com/InverseHyperbolicFunctions.html and http://mathworld.wolfram.com/InverseTrigonometricFunctions.html",
+    "body": "Attachment [trac_6956-derivatives.2.patch](tarball://root/attachments/some-uuid/ticket6956/trac_6956-derivatives.2.patch) by timdumol created at 2009-09-20 00:31:20\n\nFunctions that inherit from `PrimitiveFunction` are automatically given `nargs = 1` on L800 of `symbolic/function.pyx`. So the silent dropping of arguments is more of a usability problem on the Symbolic side.\n\nI've made the changes for the derivatives of `asech(x)` and `acsch(x)`. I've also generalized the derivatives for `asec(x)` and `acsc(x)`.\n\nAnyone who wants to review the derivatives can check: http://mathworld.wolfram.com/Derivative.html, http://mathworld.wolfram.com/InverseHyperbolicFunctions.html and http://mathworld.wolfram.com/InverseTrigonometricFunctions.html",
     "created_at": "2009-09-20T00:31:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6956",
     "type": "issue_comment",
@@ -160,7 +160,7 @@ archive/issue_comments_057544.json:
 }
 ```
 
-Attachment
+Attachment [trac_6956-derivatives.2.patch](tarball://root/attachments/some-uuid/ticket6956/trac_6956-derivatives.2.patch) by timdumol created at 2009-09-20 00:31:20
 
 Functions that inherit from `PrimitiveFunction` are automatically given `nargs = 1` on L800 of `symbolic/function.pyx`. So the silent dropping of arguments is more of a usability problem on the Symbolic side.
 

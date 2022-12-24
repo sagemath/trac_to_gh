@@ -138,7 +138,7 @@ EXAMPLE:
 archive/issue_comments_015266.json:
 ```json
 {
-    "body": "Attachment\n\nSorry for being late, and sorry for accidentally adding the same patch twice.\n\nI changed the patch according to the referee report, hence, the examples are indented, and it is `self.parent()(self.name())`. \n\nThe patch is relative to sage-2.10.3.alpha0",
+    "body": "Attachment [SingularElementCopy.patch](tarball://root/attachments/some-uuid/ticket2300/SingularElementCopy.patch) by SimonKing created at 2008-02-26 23:29:10\n\nSorry for being late, and sorry for accidentally adding the same patch twice.\n\nI changed the patch according to the referee report, hence, the examples are indented, and it is `self.parent()(self.name())`. \n\nThe patch is relative to sage-2.10.3.alpha0",
     "created_at": "2008-02-26T23:29:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2300",
     "type": "issue_comment",
@@ -147,7 +147,7 @@ archive/issue_comments_015266.json:
 }
 ```
 
-Attachment
+Attachment [SingularElementCopy.patch](tarball://root/attachments/some-uuid/ticket2300/SingularElementCopy.patch) by SimonKing created at 2008-02-26 23:29:10
 
 Sorry for being late, and sorry for accidentally adding the same patch twice.
 
@@ -216,7 +216,7 @@ Changing status from closed to reopened.
 archive/issue_comments_015270.json:
 ```json
 {
-    "body": "Attachment\n\nSorry, i have to re-open the ticket because i found a bug in my patch:\n\n\n```\nsage: R=singular.ring(0,'(x,y)','dp')\nsage: L=R.ringlist()\nsage: L[4]=singular.ideal('x**2-5')\nsage: Q=L.ring()\nsage: otherR=singular.ring(5,'(x)','dp')\nsage: cpQ=copy(Q)\n<snip>\n<type 'exceptions.TypeError'>: Singular error:\n   ? ring with polynomial data must be the base ring or compatible\n   ? error occurred in STDIN line 36: `def sage12=ringlist(sage10);`\n```\n\n\nThe problem is that `ringlist` contains polynomial data, and thus only works if the basering fits.\n\nSolution: If `self` is a ring/qring then we first make it active `basering`, copy `self` using `ringlist`, return to the old `basering`, and return the copy of `self`.\n\nI extended the doc tests accordingly. The new doc test would fail with the old version of `__copy__`.\n\nThe patch `bugfix__copy__.patch` is relative to `sage-2.10.3.rc0`.",
+    "body": "Attachment [bugfix__copy__.patch](tarball://root/attachments/some-uuid/ticket2300/bugfix__copy__.patch) by SimonKing created at 2008-02-28 12:01:17\n\nSorry, i have to re-open the ticket because i found a bug in my patch:\n\n\n```\nsage: R=singular.ring(0,'(x,y)','dp')\nsage: L=R.ringlist()\nsage: L[4]=singular.ideal('x**2-5')\nsage: Q=L.ring()\nsage: otherR=singular.ring(5,'(x)','dp')\nsage: cpQ=copy(Q)\n<snip>\n<type 'exceptions.TypeError'>: Singular error:\n   ? ring with polynomial data must be the base ring or compatible\n   ? error occurred in STDIN line 36: `def sage12=ringlist(sage10);`\n```\n\n\nThe problem is that `ringlist` contains polynomial data, and thus only works if the basering fits.\n\nSolution: If `self` is a ring/qring then we first make it active `basering`, copy `self` using `ringlist`, return to the old `basering`, and return the copy of `self`.\n\nI extended the doc tests accordingly. The new doc test would fail with the old version of `__copy__`.\n\nThe patch `bugfix__copy__.patch` is relative to `sage-2.10.3.rc0`.",
     "created_at": "2008-02-28T12:01:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2300",
     "type": "issue_comment",
@@ -225,7 +225,7 @@ archive/issue_comments_015270.json:
 }
 ```
 
-Attachment
+Attachment [bugfix__copy__.patch](tarball://root/attachments/some-uuid/ticket2300/bugfix__copy__.patch) by SimonKing created at 2008-02-28 12:01:17
 
 Sorry, i have to re-open the ticket because i found a bug in my patch:
 

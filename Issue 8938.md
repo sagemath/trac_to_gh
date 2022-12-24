@@ -43,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8938
 archive/issue_comments_082296.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch solves this problem, providing latex code which is modelled on that used for single-variable polynomials. \u00a0A few doctests have had to be adjusted and LaTeX output provided for elements of QQbar.",
+    "body": "Attachment [trac_8938.patch](tarball://root/attachments/some-uuid/ticket8938/trac_8938.patch) by fwclarke created at 2010-05-09 20:58:36\n\nThe patch solves this problem, providing latex code which is modelled on that used for single-variable polynomials. \u00a0A few doctests have had to be adjusted and LaTeX output provided for elements of QQbar.",
     "created_at": "2010-05-09T20:58:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8938",
     "type": "issue_comment",
@@ -52,7 +52,7 @@ archive/issue_comments_082296.json:
 }
 ```
 
-Attachment
+Attachment [trac_8938.patch](tarball://root/attachments/some-uuid/ticket8938/trac_8938.patch) by fwclarke created at 2010-05-09 20:58:36
 
 The patch solves this problem, providing latex code which is modelled on that used for single-variable polynomials.  A few doctests have had to be adjusted and LaTeX output provided for elements of QQbar.
 
@@ -292,7 +292,7 @@ so this bug has been fixed along the way.
 archive/issue_comments_082306.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8938_latex_test_for_cyclotomic_fields.patch](tarball://root/attachments/some-uuid/ticket8938/trac_8938_latex_test_for_cyclotomic_fields.patch) by novoselt created at 2011-07-22 16:41:33",
     "created_at": "2011-07-22T16:41:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8938",
     "type": "issue_comment",
@@ -301,7 +301,7 @@ archive/issue_comments_082306.json:
 }
 ```
 
-Attachment
+Attachment [trac_8938_latex_test_for_cyclotomic_fields.patch](tarball://root/attachments/some-uuid/ticket8938/trac_8938_latex_test_for_cyclotomic_fields.patch) by novoselt created at 2011-07-22 16:41:33
 
 
 

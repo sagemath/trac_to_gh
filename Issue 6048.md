@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6048
 archive/issue_comments_048184.json:
 ```json
 {
-    "body": "Attachment\n\nWoops, sorry.",
+    "body": "Attachment [non-ascii.patch](tarball://root/attachments/some-uuid/ticket6048/non-ascii.patch) by malb created at 2009-05-16 17:23:50\n\nWoops, sorry.",
     "created_at": "2009-05-16T17:23:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6048",
     "type": "issue_comment",
@@ -41,7 +41,7 @@ archive/issue_comments_048184.json:
 }
 ```
 
-Attachment
+Attachment [non-ascii.patch](tarball://root/attachments/some-uuid/ticket6048/non-ascii.patch) by malb created at 2009-05-16 17:23:50
 
 Woops, sorry.
 

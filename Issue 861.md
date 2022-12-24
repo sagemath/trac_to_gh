@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/861
 archive/issue_comments_005324.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [magma_set_verbose.patch](tarball://root/attachments/some-uuid/ticket861/magma_set_verbose.patch) by malb created at 2007-10-12 10:55:59",
     "created_at": "2007-10-12T10:55:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/861",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_005324.json:
 }
 ```
 
-Attachment
+Attachment [magma_set_verbose.patch](tarball://root/attachments/some-uuid/ticket861/magma_set_verbose.patch) by malb created at 2007-10-12 10:55:59
 
 
 

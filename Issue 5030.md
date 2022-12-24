@@ -49,7 +49,7 @@ this is against sage-3.3.alpha0
 archive/issue_comments_038315.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.",
+    "body": "Attachment [trac_5030.patch](tarball://root/attachments/some-uuid/ticket5030/trac_5030.patch) by mhansen created at 2009-01-20 21:36:45\n\nLooks good to me.",
     "created_at": "2009-01-20T21:36:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5030",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_038315.json:
 }
 ```
 
-Attachment
+Attachment [trac_5030.patch](tarball://root/attachments/some-uuid/ticket5030/trac_5030.patch) by mhansen created at 2009-01-20 21:36:45
 
 Looks good to me.
 

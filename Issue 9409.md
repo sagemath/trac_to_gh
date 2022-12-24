@@ -121,7 +121,7 @@ This should be tested after #9315 is in as that may well fix it.
 archive/issue_comments_089673.json:
 ```json
 {
-    "body": "Attachment\n\nTest script",
+    "body": "Attachment [9409.sage](tarball://root/attachments/some-uuid/ticket9409/9409.sage) by cremona created at 2010-08-14 17:15:13\n\nTest script",
     "created_at": "2010-08-14T17:15:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9409",
     "type": "issue_comment",
@@ -130,7 +130,7 @@ archive/issue_comments_089673.json:
 }
 ```
 
-Attachment
+Attachment [9409.sage](tarball://root/attachments/some-uuid/ticket9409/9409.sage) by cremona created at 2010-08-14 17:15:13
 
 Test script
 

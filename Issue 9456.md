@@ -229,7 +229,7 @@ Dave
 archive/issue_comments_090631.json:
 ```json
 {
-    "body": "Attachment\n\nspkg/standard/deps file, written by John and merged into sage-4.5.2.alpha1 which I overwrote by mistake. I'm 99% sure this is right.",
+    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket9456/deps) by drkirkby created at 2010-07-26 10:20:07\n\nspkg/standard/deps file, written by John and merged into sage-4.5.2.alpha1 which I overwrote by mistake. I'm 99% sure this is right.",
     "created_at": "2010-07-26T10:20:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9456",
     "type": "issue_comment",
@@ -238,7 +238,7 @@ archive/issue_comments_090631.json:
 }
 ```
 
-Attachment
+Attachment [deps](tarball://root/attachments/some-uuid/ticket9456/deps) by drkirkby created at 2010-07-26 10:20:07
 
 spkg/standard/deps file, written by John and merged into sage-4.5.2.alpha1 which I overwrote by mistake. I'm 99% sure this is right.
 
@@ -249,7 +249,7 @@ spkg/standard/deps file, written by John and merged into sage-4.5.2.alpha1 which
 archive/issue_comments_090632.json:
 ```json
 {
-    "body": "Attachment\n\ndiff of spkg/standard/deps written by john which I overwrote by mistake. I'm 99% sure this is right.",
+    "body": "Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket9456/deps.diff) by drkirkby created at 2010-07-26 10:21:07\n\ndiff of spkg/standard/deps written by john which I overwrote by mistake. I'm 99% sure this is right.",
     "created_at": "2010-07-26T10:21:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9456",
     "type": "issue_comment",
@@ -258,7 +258,7 @@ archive/issue_comments_090632.json:
 }
 ```
 
-Attachment
+Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket9456/deps.diff) by drkirkby created at 2010-07-26 10:21:07
 
 diff of spkg/standard/deps written by john which I overwrote by mistake. I'm 99% sure this is right.
 

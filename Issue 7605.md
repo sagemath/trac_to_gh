@@ -88,7 +88,7 @@ You need a doctest which illustrates the `sets` input option.
 archive/issue_comments_064884.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7605.patch](tarball://root/attachments/some-uuid/ticket7605/trac_7605.patch) by ncohen created at 2009-12-16 11:05:36",
     "created_at": "2009-12-16T11:05:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7605",
     "type": "issue_comment",
@@ -97,7 +97,7 @@ archive/issue_comments_064884.json:
 }
 ```
 
-Attachment
+Attachment [trac_7605.patch](tarball://root/attachments/some-uuid/ticket7605/trac_7605.patch) by ncohen created at 2009-12-16 11:05:36
 
 
 

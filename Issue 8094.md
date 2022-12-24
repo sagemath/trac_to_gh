@@ -170,7 +170,7 @@ doin' it the cython way
 archive/issue_comments_070932.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8094-shortcut-matrix-transpose.patch](tarball://root/attachments/some-uuid/ticket8094/8094-shortcut-matrix-transpose.patch) by schilly created at 2010-03-22 17:41:10",
     "created_at": "2010-03-22T17:41:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_comment",
@@ -179,7 +179,7 @@ archive/issue_comments_070932.json:
 }
 ```
 
-Attachment
+Attachment [8094-shortcut-matrix-transpose.patch](tarball://root/attachments/some-uuid/ticket8094/8094-shortcut-matrix-transpose.patch) by schilly created at 2010-03-22 17:41:10
 
 
 
@@ -314,7 +314,7 @@ apply on top of previous patches
 archive/issue_comments_070940.json:
 ```json
 {
-    "body": "Attachment\n\nOkay, maybe my changes should be reviewed (since they fix some of the doc issues).  \n\nDoctests pass in matrix/*.py[x] with these patches applied, and Harald's code looks good, so positive review for his patch (given that my doctest patch is applied).  \n\nSomeone should verify my doctest changes are good.",
+    "body": "Attachment [8094_matrix_shortcut_docs_reviewer.patch](tarball://root/attachments/some-uuid/ticket8094/8094_matrix_shortcut_docs_reviewer.patch) by jason created at 2010-12-18 20:25:25\n\nOkay, maybe my changes should be reviewed (since they fix some of the doc issues).  \n\nDoctests pass in matrix/*.py[x] with these patches applied, and Harald's code looks good, so positive review for his patch (given that my doctest patch is applied).  \n\nSomeone should verify my doctest changes are good.",
     "created_at": "2010-12-18T20:25:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_comment",
@@ -323,7 +323,7 @@ archive/issue_comments_070940.json:
 }
 ```
 
-Attachment
+Attachment [8094_matrix_shortcut_docs_reviewer.patch](tarball://root/attachments/some-uuid/ticket8094/8094_matrix_shortcut_docs_reviewer.patch) by jason created at 2010-12-18 20:25:25
 
 Okay, maybe my changes should be reviewed (since they fix some of the doc issues).  
 
@@ -402,7 +402,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_070944.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-8094_matrix_shortcut_docs_reviewer2.patch](tarball://root/attachments/some-uuid/ticket8094/trac-8094_matrix_shortcut_docs_reviewer2.patch) by mraum created at 2011-08-05 17:24:59",
     "created_at": "2011-08-05T17:24:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_comment",
@@ -411,7 +411,7 @@ archive/issue_comments_070944.json:
 }
 ```
 
-Attachment
+Attachment [trac-8094_matrix_shortcut_docs_reviewer2.patch](tarball://root/attachments/some-uuid/ticket8094/trac-8094_matrix_shortcut_docs_reviewer2.patch) by mraum created at 2011-08-05 17:24:59
 
 
 
@@ -458,7 +458,7 @@ I am not sure whether 1. can be addressed at all. Typing m.T? I get the document
 archive/issue_comments_070947.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8094-matrix-properties-more-documentation.patch](tarball://root/attachments/some-uuid/ticket8094/trac_8094-matrix-properties-more-documentation.patch) by rbeezer created at 2011-08-22 21:55:33",
     "created_at": "2011-08-22T21:55:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_comment",
@@ -467,7 +467,7 @@ archive/issue_comments_070947.json:
 }
 ```
 
-Attachment
+Attachment [trac_8094-matrix-properties-more-documentation.patch](tarball://root/attachments/some-uuid/ticket8094/trac_8094-matrix-properties-more-documentation.patch) by rbeezer created at 2011-08-22 21:55:33
 
 
 
@@ -660,7 +660,7 @@ Sorry, Harald. ;)
 archive/issue_comments_070957.json:
 ```json
 {
-    "body": "Attachment\n\nI did some maintenance on the main patch, naming it \"v2\".  Has Harald's user info and is now a proper hg patch.  I hope.  \n\nShould now be ready to go, since I did not change any code, so should not need a review.",
+    "body": "Attachment [8094-shortcut-matrix-transpose-v2.patch](tarball://root/attachments/some-uuid/ticket8094/8094-shortcut-matrix-transpose-v2.patch) by rbeezer created at 2011-09-18 04:15:56\n\nI did some maintenance on the main patch, naming it \"v2\".  Has Harald's user info and is now a proper hg patch.  I hope.  \n\nShould now be ready to go, since I did not change any code, so should not need a review.",
     "created_at": "2011-09-18T04:15:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_comment",
@@ -669,7 +669,7 @@ archive/issue_comments_070957.json:
 }
 ```
 
-Attachment
+Attachment [8094-shortcut-matrix-transpose-v2.patch](tarball://root/attachments/some-uuid/ticket8094/8094-shortcut-matrix-transpose-v2.patch) by rbeezer created at 2011-09-18 04:15:56
 
 I did some maintenance on the main patch, naming it "v2".  Has Harald's user info and is now a proper hg patch.  I hope.  
 
@@ -748,7 +748,7 @@ Same patch rebased on (prerelease) Sage 4.7.2.alpha3 because of fuzz 2.
 archive/issue_comments_070961.json:
 ```json
 {
-    "body": "Attachment\n\nSame patch rebased on (prerelease) Sage 4.7.2.alpha3 because of fuzz 2.",
+    "body": "Attachment [trac_8094-matrix-properties-more-documentation-rebased_on_4.7.2.alpha3.patch](tarball://root/attachments/some-uuid/ticket8094/trac_8094-matrix-properties-more-documentation-rebased_on_4.7.2.alpha3.patch) by leif created at 2011-09-18 07:01:49\n\nSame patch rebased on (prerelease) Sage 4.7.2.alpha3 because of fuzz 2.",
     "created_at": "2011-09-18T07:01:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_comment",
@@ -757,7 +757,7 @@ archive/issue_comments_070961.json:
 }
 ```
 
-Attachment
+Attachment [trac_8094-matrix-properties-more-documentation-rebased_on_4.7.2.alpha3.patch](tarball://root/attachments/some-uuid/ticket8094/trac_8094-matrix-properties-more-documentation-rebased_on_4.7.2.alpha3.patch) by leif created at 2011-09-18 07:01:49
 
 Same patch rebased on (prerelease) Sage 4.7.2.alpha3 because of fuzz 2.
 

@@ -152,7 +152,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6276
 archive/issue_comments_050125.json:
 ```json
 {
-    "body": "Attachment\n\nCompressd copy of install process.",
+    "body": "Attachment [install.log.gz](tarball://root/attachments/some-uuid/ticket6276/install.log.gz) by drkirkby created at 2009-06-13 15:17:51\n\nCompressd copy of install process.",
     "created_at": "2009-06-13T15:17:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6276",
     "type": "issue_comment",
@@ -161,7 +161,7 @@ archive/issue_comments_050125.json:
 }
 ```
 
-Attachment
+Attachment [install.log.gz](tarball://root/attachments/some-uuid/ticket6276/install.log.gz) by drkirkby created at 2009-06-13 15:17:51
 
 Compressd copy of install process.
 

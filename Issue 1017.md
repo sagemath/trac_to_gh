@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1017
 archive/issue_comments_006239.json:
 ```json
 {
-    "body": "Attachment\n\npatch is no longer a partial patch.\n\nI just noticed one modification.\n\n\n```\nsol_list_dict=blah\nreturn sol_list_dict\n```\n\ncould be shortened to\n\n```\nreturn blah\n```\n",
+    "body": "Attachment [solution_dict.patch](tarball://root/attachments/some-uuid/ticket1017/solution_dict.patch) by jason created at 2007-10-28 04:08:43\n\npatch is no longer a partial patch.\n\nI just noticed one modification.\n\n\n```\nsol_list_dict=blah\nreturn sol_list_dict\n```\n\ncould be shortened to\n\n```\nreturn blah\n```\n",
     "created_at": "2007-10-28T04:08:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1017",
     "type": "issue_comment",
@@ -51,7 +51,7 @@ archive/issue_comments_006239.json:
 }
 ```
 
-Attachment
+Attachment [solution_dict.patch](tarball://root/attachments/some-uuid/ticket1017/solution_dict.patch) by jason created at 2007-10-28 04:08:43
 
 patch is no longer a partial patch.
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3273
 archive/issue_comments_022645.json:
 ```json
 {
-    "body": "Attachment\n\nWorks for any type on which floor works.",
+    "body": "Attachment [3273-isqrt.patch](tarball://root/attachments/some-uuid/ticket3273/3273-isqrt.patch) by robertwb created at 2008-05-23 05:35:18\n\nWorks for any type on which floor works.",
     "created_at": "2008-05-23T05:35:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3273",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_022645.json:
 }
 ```
 
-Attachment
+Attachment [3273-isqrt.patch](tarball://root/attachments/some-uuid/ticket3273/3273-isqrt.patch) by robertwb created at 2008-05-23 05:35:18
 
 Works for any type on which floor works.
 

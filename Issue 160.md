@@ -181,7 +181,7 @@ Fixed by using files to move data.
 archive/issue_comments_000718.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5805.patch](tarball://root/attachments/some-uuid/ticket160/5805.patch) by was created at 2007-08-21 14:44:04",
     "created_at": "2007-08-21T14:44:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/160",
     "type": "issue_comment",
@@ -190,4 +190,4 @@ archive/issue_comments_000718.json:
 }
 ```
 
-Attachment
+Attachment [5805.patch](tarball://root/attachments/some-uuid/ticket160/5805.patch) by was created at 2007-08-21 14:44:04

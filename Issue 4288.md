@@ -61,7 +61,7 @@ This is related to #4277.
 archive/issue_comments_031388.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch seems to do the trick.  It's wrong to use \"magma_name\" since that just gives somethin like \"sage[0]\", while \"_magma_init_()\" return a string which can be passed to a fresh magma session to create the equivalent object.\n\n#4277 is ok now too.",
+    "body": "Attachment [sage-trac4288.patch](tarball://root/attachments/some-uuid/ticket4288/sage-trac4288.patch) by cremona created at 2008-10-19 19:50:37\n\nThe attached patch seems to do the trick.  It's wrong to use \"magma_name\" since that just gives somethin like \"sage[0]\", while \"_magma_init_()\" return a string which can be passed to a fresh magma session to create the equivalent object.\n\n#4277 is ok now too.",
     "created_at": "2008-10-19T19:50:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4288",
     "type": "issue_comment",
@@ -70,7 +70,7 @@ archive/issue_comments_031388.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac4288.patch](tarball://root/attachments/some-uuid/ticket4288/sage-trac4288.patch) by cremona created at 2008-10-19 19:50:37
 
 The attached patch seems to do the trick.  It's wrong to use "magma_name" since that just gives somethin like "sage[0]", while "_magma_init_()" return a string which can be passed to a fresh magma session to create the equivalent object.
 

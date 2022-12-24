@@ -66,7 +66,7 @@ I updated the formatting of the docstring to be compatible with the new document
 archive/issue_comments_041316.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-5362-transpose-matrix_double_dense.patch](tarball://root/attachments/some-uuid/ticket5362/trac-5362-transpose-matrix_double_dense.patch) by mhansen created at 2009-02-25 18:23:11",
     "created_at": "2009-02-25T18:23:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5362",
     "type": "issue_comment",
@@ -75,7 +75,7 @@ archive/issue_comments_041316.json:
 }
 ```
 
-Attachment
+Attachment [trac-5362-transpose-matrix_double_dense.patch](tarball://root/attachments/some-uuid/ticket5362/trac-5362-transpose-matrix_double_dense.patch) by mhansen created at 2009-02-25 18:23:11
 
 
 

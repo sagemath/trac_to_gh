@@ -63,7 +63,7 @@ Otherwise documentation has been updated for all these things as appropriate.
 archive/issue_comments_057318.json:
 ```json
 {
-    "body": "Attachment\n\nBased on 4.1.2.alpha4",
+    "body": "Attachment [trac_6935-mpl-upgrade-documentation.patch](tarball://root/attachments/some-uuid/ticket6935/trac_6935-mpl-upgrade-documentation.patch) by kcrisman created at 2009-10-05 18:05:18\n\nBased on 4.1.2.alpha4",
     "created_at": "2009-10-05T18:05:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6935",
     "type": "issue_comment",
@@ -72,7 +72,7 @@ archive/issue_comments_057318.json:
 }
 ```
 
-Attachment
+Attachment [trac_6935-mpl-upgrade-documentation.patch](tarball://root/attachments/some-uuid/ticket6935/trac_6935-mpl-upgrade-documentation.patch) by kcrisman created at 2009-10-05 18:05:18
 
 Based on 4.1.2.alpha4
 

@@ -404,7 +404,7 @@ I don't have a strong opinion about this, but given the discussion about how to 
 archive/issue_comments_054864.json:
 ```json
 {
-    "body": "Attachment\n\nbased on Sage 4.1.1.rc1",
+    "body": "Attachment [trac_6674-use-ascii.patch](tarball://root/attachments/some-uuid/ticket6674/trac_6674-use-ascii.patch) by mvngu created at 2009-08-05 13:10:27\n\nbased on Sage 4.1.1.rc1",
     "created_at": "2009-08-05T13:10:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6674",
     "type": "issue_comment",
@@ -413,7 +413,7 @@ archive/issue_comments_054864.json:
 }
 ```
 
-Attachment
+Attachment [trac_6674-use-ascii.patch](tarball://root/attachments/some-uuid/ticket6674/trac_6674-use-ascii.patch) by mvngu created at 2009-08-05 13:10:27
 
 based on Sage 4.1.1.rc1
 

@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9151
 archive/issue_comments_085434.json:
 ```json
 {
-    "body": "Attachment\n\nenables multi-threaded build in atlas-3.8.3.p12.spkg",
+    "body": "Attachment [atlas_pthread.patch](tarball://root/attachments/some-uuid/ticket9151/atlas_pthread.patch) by kilian created at 2010-06-05 17:25:08\n\nenables multi-threaded build in atlas-3.8.3.p12.spkg",
     "created_at": "2010-06-05T17:25:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9151",
     "type": "issue_comment",
@@ -50,7 +50,7 @@ archive/issue_comments_085434.json:
 }
 ```
 
-Attachment
+Attachment [atlas_pthread.patch](tarball://root/attachments/some-uuid/ticket9151/atlas_pthread.patch) by kilian created at 2010-06-05 17:25:08
 
 enables multi-threaded build in atlas-3.8.3.p12.spkg
 

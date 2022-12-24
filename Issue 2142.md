@@ -67,7 +67,7 @@ archive/issue_comments_014044.json:
 archive/issue_comments_014045.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2142-subdivisions.patch](tarball://root/attachments/some-uuid/ticket2142/2142-subdivisions.patch) by robertwb created at 2008-03-06 20:00:28",
     "created_at": "2008-03-06T20:00:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2142",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_014045.json:
 }
 ```
 
-Attachment
+Attachment [2142-subdivisions.patch](tarball://root/attachments/some-uuid/ticket2142/2142-subdivisions.patch) by robertwb created at 2008-03-06 20:00:28
 
 
 

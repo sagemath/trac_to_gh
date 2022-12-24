@@ -91,7 +91,7 @@ Michael
 archive/issue_comments_010874.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_1715.patch](tarball://root/attachments/some-uuid/ticket1715/trac_1715.patch) by malb created at 2008-01-17 13:23:12",
     "created_at": "2008-01-17T13:23:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1715",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_010874.json:
 }
 ```
 
-Attachment
+Attachment [trac_1715.patch](tarball://root/attachments/some-uuid/ticket1715/trac_1715.patch) by malb created at 2008-01-17 13:23:12
 
 
 

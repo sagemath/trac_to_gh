@@ -58,7 +58,7 @@ See also: http://wiki.moxiecode.com/index.php/TinyMCE:API/tinymce.Editor/onKeyDo
 archive/issue_comments_039345.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5143-tinymce-shift-enter.patch](tarball://root/attachments/some-uuid/ticket5143/trac_5143-tinymce-shift-enter.patch) by jason created at 2009-02-03 08:15:04",
     "created_at": "2009-02-03T08:15:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5143",
     "type": "issue_comment",
@@ -67,7 +67,7 @@ archive/issue_comments_039345.json:
 }
 ```
 
-Attachment
+Attachment [trac_5143-tinymce-shift-enter.patch](tarball://root/attachments/some-uuid/ticket5143/trac_5143-tinymce-shift-enter.patch) by jason created at 2009-02-03 08:15:04
 
 
 

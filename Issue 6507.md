@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6507
 archive/issue_comments_053021.json:
 ```json
 {
-    "body": "Attachment\n\nThe new toggle highlights itself on mouse-over, runs the length of the content, auto-resizes itself, uses cookies, and should work in the live, static, and offline documentation in most browsers.  This includes Firefox, Opera, and the Qt WebKit demo browser on Linux.  Chromium, it seems, does not yet let offline pages set cookies, but more polish is on order.",
+    "body": "Attachment [trac_6507_sidebar_toggle.patch](tarball://root/attachments/some-uuid/ticket6507/trac_6507_sidebar_toggle.patch) by mpatel created at 2009-07-10 11:21:47\n\nThe new toggle highlights itself on mouse-over, runs the length of the content, auto-resizes itself, uses cookies, and should work in the live, static, and offline documentation in most browsers.  This includes Firefox, Opera, and the Qt WebKit demo browser on Linux.  Chromium, it seems, does not yet let offline pages set cookies, but more polish is on order.",
     "created_at": "2009-07-10T11:21:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6507",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_053021.json:
 }
 ```
 
-Attachment
+Attachment [trac_6507_sidebar_toggle.patch](tarball://root/attachments/some-uuid/ticket6507/trac_6507_sidebar_toggle.patch) by mpatel created at 2009-07-10 11:21:47
 
 The new toggle highlights itself on mouse-over, runs the length of the content, auto-resizes itself, uses cookies, and should work in the live, static, and offline documentation in most browsers.  This includes Firefox, Opera, and the Qt WebKit demo browser on Linux.  Chromium, it seems, does not yet let offline pages set cookies, but more polish is on order.
 

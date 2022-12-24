@@ -53,7 +53,7 @@ Changing status from new to needs_review.
 archive/issue_comments_098563.json:
 ```json
 {
-    "body": "Attachment\n\nsorry for the two version, they're both the same `^^;`\n\nNathann",
+    "body": "Attachment [trac_9910.2.patch](tarball://root/attachments/some-uuid/ticket9910/trac_9910.2.patch) by ncohen created at 2010-10-20 12:16:05\n\nsorry for the two version, they're both the same `^^;`\n\nNathann",
     "created_at": "2010-10-20T12:16:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9909",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_098563.json:
 }
 ```
 
-Attachment
+Attachment [trac_9910.2.patch](tarball://root/attachments/some-uuid/ticket9910/trac_9910.2.patch) by ncohen created at 2010-10-20 12:16:05
 
 sorry for the two version, they're both the same `^^;`
 
@@ -131,7 +131,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_098567.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9910.patch](tarball://root/attachments/some-uuid/ticket9910/trac_9910.patch) by ncohen created at 2010-11-26 20:49:19",
     "created_at": "2010-11-26T20:49:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9909",
     "type": "issue_comment",
@@ -140,7 +140,7 @@ archive/issue_comments_098567.json:
 }
 ```
 
-Attachment
+Attachment [trac_9910.patch](tarball://root/attachments/some-uuid/ticket9910/trac_9910.patch) by ncohen created at 2010-11-26 20:49:19
 
 
 
@@ -149,7 +149,7 @@ Attachment
 archive/issue_comments_098568.json:
 ```json
 {
-    "body": "Attachment\n\nI'm OK with most of your patch. But here are some general comments:\n\n* I don't quite understand this documentation:\n\n```\n        - ``s`` (vertex) -- forces the source of the path. Set to               \n          ``None`` by default.                                                  \n                                                                                \n        - ``t`` (vertex) -- forces the destination of the path. Set to          \n          ``None`` by default.\n```\n\n What do you mean by \"forces\", etc. You need to elaborate here.\n\n* The following code block\n\n```\n            if self._directed:\n                from sage.graphs.all import DiGraph\n                return [0, DiGraph()] if weighted else DiGraph()\n            else:\n                from sage.graphs.all import Graph\n                return [0, Graph()] if weighted else Graph()\n```\n\n is equivalent to\n\n```\n            if self._directed:\n                from sage.graphs.all import DiGraph\n                return [0, DiGraph()] if weighted else DiGraph()\n            from sage.graphs.all import Graph\n            return [0, Graph()] if weighted else Graph()\n```\n\n\n* You really need to start seriously writing Python code that conforms to Python coding conventions (wherever possible); see [PEP 8](http://www.python.org/dev/peps/pep-0008/) for more information.\n\nMost of the above issues are fixed in my reviewer patch.",
+    "body": "Attachment [trac-9910_reviewer.patch](tarball://root/attachments/some-uuid/ticket9910/trac-9910_reviewer.patch) by mvngu created at 2010-11-27 19:24:52\n\nI'm OK with most of your patch. But here are some general comments:\n\n* I don't quite understand this documentation:\n\n```\n        - ``s`` (vertex) -- forces the source of the path. Set to               \n          ``None`` by default.                                                  \n                                                                                \n        - ``t`` (vertex) -- forces the destination of the path. Set to          \n          ``None`` by default.\n```\n\n What do you mean by \"forces\", etc. You need to elaborate here.\n\n* The following code block\n\n```\n            if self._directed:\n                from sage.graphs.all import DiGraph\n                return [0, DiGraph()] if weighted else DiGraph()\n            else:\n                from sage.graphs.all import Graph\n                return [0, Graph()] if weighted else Graph()\n```\n\n is equivalent to\n\n```\n            if self._directed:\n                from sage.graphs.all import DiGraph\n                return [0, DiGraph()] if weighted else DiGraph()\n            from sage.graphs.all import Graph\n            return [0, Graph()] if weighted else Graph()\n```\n\n\n* You really need to start seriously writing Python code that conforms to Python coding conventions (wherever possible); see [PEP 8](http://www.python.org/dev/peps/pep-0008/) for more information.\n\nMost of the above issues are fixed in my reviewer patch.",
     "created_at": "2010-11-27T19:24:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9909",
     "type": "issue_comment",
@@ -158,7 +158,7 @@ archive/issue_comments_098568.json:
 }
 ```
 
-Attachment
+Attachment [trac-9910_reviewer.patch](tarball://root/attachments/some-uuid/ticket9910/trac-9910_reviewer.patch) by mvngu created at 2010-11-27 19:24:52
 
 I'm OK with most of your patch. But here are some general comments:
 
@@ -446,7 +446,7 @@ Nathann
 archive/issue_comments_098572.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9910-fixing_documentation.patch](tarball://root/attachments/some-uuid/ticket9910/trac_9910-fixing_documentation.patch) by mvngu created at 2010-11-29 08:46:33",
     "created_at": "2010-11-29T08:46:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9909",
     "type": "issue_comment",
@@ -455,7 +455,7 @@ archive/issue_comments_098572.json:
 }
 ```
 
-Attachment
+Attachment [trac_9910-fixing_documentation.patch](tarball://root/attachments/some-uuid/ticket9910/trac_9910-fixing_documentation.patch) by mvngu created at 2010-11-29 08:46:33
 
 
 

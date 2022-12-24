@@ -128,7 +128,7 @@ sage-verify-pyc (this one is just weird)
 archive/issue_comments_026138.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage_scripts-shebang.patch](tarball://root/attachments/some-uuid/ticket3687/sage_scripts-shebang.patch) by tabbott created at 2009-04-26 05:26:09",
     "created_at": "2009-04-26T05:26:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3687",
     "type": "issue_comment",
@@ -137,7 +137,7 @@ archive/issue_comments_026138.json:
 }
 ```
 
-Attachment
+Attachment [sage_scripts-shebang.patch](tarball://root/attachments/some-uuid/ticket3687/sage_scripts-shebang.patch) by tabbott created at 2009-04-26 05:26:09
 
 
 

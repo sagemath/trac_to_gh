@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1596
 archive/issue_comments_010157.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [preparse_ellipsis.patch](tarball://root/attachments/some-uuid/ticket1596/preparse_ellipsis.patch) by wjp created at 2007-12-24 19:59:57",
     "created_at": "2007-12-24T19:59:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1596",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_010157.json:
 }
 ```
 
-Attachment
+Attachment [preparse_ellipsis.patch](tarball://root/attachments/some-uuid/ticket1596/preparse_ellipsis.patch) by wjp created at 2007-12-24 19:59:57
 
 
 
@@ -89,7 +89,7 @@ Changing component from algebraic geometry to user interface.
 archive/issue_comments_010160.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch fixes the problem. \n\nI agree that a syntax error would be preferable, see second patch (to replace the first). I also made the error on [1..] more explicit.",
+    "body": "Attachment [1596-ellipsis-bug.diff](tarball://root/attachments/some-uuid/ticket1596/1596-ellipsis-bug.diff) by robertwb created at 2008-01-04 20:30:13\n\nThis patch fixes the problem. \n\nI agree that a syntax error would be preferable, see second patch (to replace the first). I also made the error on [1..] more explicit.",
     "created_at": "2008-01-04T20:30:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1596",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_010160.json:
 }
 ```
 
-Attachment
+Attachment [1596-ellipsis-bug.diff](tarball://root/attachments/some-uuid/ticket1596/1596-ellipsis-bug.diff) by robertwb created at 2008-01-04 20:30:13
 
 This patch fixes the problem. 
 

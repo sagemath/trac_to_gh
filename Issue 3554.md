@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3554
 archive/issue_comments_025135.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [m2.patch](tarball://root/attachments/some-uuid/ticket3554/m2.patch) by mhansen created at 2008-07-05 21:10:00",
     "created_at": "2008-07-05T21:10:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3554",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_025135.json:
 }
 ```
 
-Attachment
+Attachment [m2.patch](tarball://root/attachments/some-uuid/ticket3554/m2.patch) by mhansen created at 2008-07-05 21:10:00
 
 
 
@@ -121,7 +121,7 @@ Resolution: fixed
 archive/issue_comments_025140.json:
 ```json
 {
-    "body": "Attachment\n\nbad mhansen - no cookie for you!",
+    "body": "Attachment [trac_3554_doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket3554/trac_3554_doctest_fixes.patch) by mabshoff created at 2008-07-15 01:28:38\n\nbad mhansen - no cookie for you!",
     "created_at": "2008-07-15T01:28:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3554",
     "type": "issue_comment",
@@ -130,7 +130,7 @@ archive/issue_comments_025140.json:
 }
 ```
 
-Attachment
+Attachment [trac_3554_doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket3554/trac_3554_doctest_fixes.patch) by mabshoff created at 2008-07-15 01:28:38
 
 bad mhansen - no cookie for you!
 

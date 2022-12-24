@@ -230,7 +230,7 @@ Change implementation to mpmath and PARI to fix bug
 archive/issue_comments_036444.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4807.patch](tarball://root/attachments/some-uuid/ticket4807/trac_4807.patch) by myurko created at 2009-09-29 20:09:06",
     "created_at": "2009-09-29T20:09:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4807",
     "type": "issue_comment",
@@ -239,7 +239,7 @@ archive/issue_comments_036444.json:
 }
 ```
 
-Attachment
+Attachment [trac_4807.patch](tarball://root/attachments/some-uuid/ticket4807/trac_4807.patch) by myurko created at 2009-09-29 20:09:06
 
 
 
@@ -248,7 +248,7 @@ Attachment
 archive/issue_comments_036445.json:
 ```json
 {
-    "body": "Attachment\n\nI posted a new patch with a few changes to the original patch.  I'm using mpmath for everything since for uniformity and because it handles the increased precision.  Also, I changed the second example to highlight the branch cut and added the failing example in the ticket as a test.\n\nMichael, if you're okay with my changes, then you can mark the patch as positive review.  I left the patch in your name.",
+    "body": "Attachment [trac_4807.2.patch](tarball://root/attachments/some-uuid/ticket4807/trac_4807.2.patch) by mhansen created at 2009-09-30 03:56:17\n\nI posted a new patch with a few changes to the original patch.  I'm using mpmath for everything since for uniformity and because it handles the increased precision.  Also, I changed the second example to highlight the branch cut and added the failing example in the ticket as a test.\n\nMichael, if you're okay with my changes, then you can mark the patch as positive review.  I left the patch in your name.",
     "created_at": "2009-09-30T03:56:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4807",
     "type": "issue_comment",
@@ -257,7 +257,7 @@ archive/issue_comments_036445.json:
 }
 ```
 
-Attachment
+Attachment [trac_4807.2.patch](tarball://root/attachments/some-uuid/ticket4807/trac_4807.2.patch) by mhansen created at 2009-09-30 03:56:17
 
 I posted a new patch with a few changes to the original patch.  I'm using mpmath for everything since for uniformity and because it handles the increased precision.  Also, I changed the second example to highlight the branch cut and added the failing example in the ticket as a test.
 

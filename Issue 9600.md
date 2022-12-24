@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9600
 archive/issue_comments_092892.json:
 ```json
 {
-    "body": "Attachment\n\nThis does not seem to be FreeBSD-specific!\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/4cfaff6722c62c9b",
+    "body": "Attachment [atlas-3.8.3.p12.patch](tarball://root/attachments/some-uuid/ticket9600/atlas-3.8.3.p12.patch) by dimpase created at 2010-08-02 12:43:42\n\nThis does not seem to be FreeBSD-specific!\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/4cfaff6722c62c9b",
     "created_at": "2010-08-02T12:43:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9600",
     "type": "issue_comment",
@@ -50,7 +50,7 @@ archive/issue_comments_092892.json:
 }
 ```
 
-Attachment
+Attachment [atlas-3.8.3.p12.patch](tarball://root/attachments/some-uuid/ticket9600/atlas-3.8.3.p12.patch) by dimpase created at 2010-08-02 12:43:42
 
 This does not seem to be FreeBSD-specific!
 See http://groups.google.com/group/sage-devel/browse_thread/thread/4cfaff6722c62c9b
@@ -388,7 +388,7 @@ Test script to convert static to shared libs. Run from $SAGE_LOCAL/lib.
 archive/issue_comments_092905.json:
 ```json
 {
-    "body": "Attachment\n\nmpatel also [had a suggestion](http://trac.sagemath.org/sage_trac/ticket/9356#comment:7) about creating shared libraries.  I know nothing about this; how do these approaches compare?",
+    "body": "Attachment [static2shared.sh](tarball://root/attachments/some-uuid/ticket9600/static2shared.sh) by jhpalmieri created at 2010-08-03 02:21:43\n\nmpatel also [had a suggestion](http://trac.sagemath.org/sage_trac/ticket/9356#comment:7) about creating shared libraries.  I know nothing about this; how do these approaches compare?",
     "created_at": "2010-08-03T02:21:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9600",
     "type": "issue_comment",
@@ -397,7 +397,7 @@ archive/issue_comments_092905.json:
 }
 ```
 
-Attachment
+Attachment [static2shared.sh](tarball://root/attachments/some-uuid/ticket9600/static2shared.sh) by jhpalmieri created at 2010-08-03 02:21:43
 
 mpatel also [had a suggestion](http://trac.sagemath.org/sage_trac/ticket/9356#comment:7) about creating shared libraries.  I know nothing about this; how do these approaches compare?
 
@@ -676,7 +676,7 @@ Output:
 archive/issue_comments_092910.json:
 ```json
 {
-    "body": "Attachment\n\nSecond version of script, which links maths and fortran libraries",
+    "body": "Attachment [static2shared-ver2.sh](tarball://root/attachments/some-uuid/ticket9600/static2shared-ver2.sh) by drkirkby created at 2010-08-03 09:53:55\n\nSecond version of script, which links maths and fortran libraries",
     "created_at": "2010-08-03T09:53:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9600",
     "type": "issue_comment",
@@ -685,7 +685,7 @@ archive/issue_comments_092910.json:
 }
 ```
 
-Attachment
+Attachment [static2shared-ver2.sh](tarball://root/attachments/some-uuid/ticket9600/static2shared-ver2.sh) by drkirkby created at 2010-08-03 09:53:55
 
 Second version of script, which links maths and fortran libraries
 
@@ -739,7 +739,7 @@ Dave
 archive/issue_comments_092912.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:15 drkirkby]:\n> I thought it might be wise to link in the Fortran and maths libraries. I note this was done in the original code (at least for some libraries), but when I tried to build something with libraries, it worked OK without that, so I did not include them. I've attached a second version. Let me know how that works\n\nAnd attached is my adapted variant of make_correct_shared.sh that basically replicates the shared library dependencies from the original.  I have cleaned up the overall structure but haven't touched the OS-X or Solaris since I don't know the correct OS-X incantation and am not sure whether the Solaris section is still valid (I suspect not).",
+    "body": "Attachment [make_correct_shared.sh](tarball://root/attachments/some-uuid/ticket9600/make_correct_shared.sh) by pjeremy created at 2010-08-03 10:58:43\n\nReplying to [comment:15 drkirkby]:\n> I thought it might be wise to link in the Fortran and maths libraries. I note this was done in the original code (at least for some libraries), but when I tried to build something with libraries, it worked OK without that, so I did not include them. I've attached a second version. Let me know how that works\n\nAnd attached is my adapted variant of make_correct_shared.sh that basically replicates the shared library dependencies from the original.  I have cleaned up the overall structure but haven't touched the OS-X or Solaris since I don't know the correct OS-X incantation and am not sure whether the Solaris section is still valid (I suspect not).",
     "created_at": "2010-08-03T10:58:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9600",
     "type": "issue_comment",
@@ -748,7 +748,7 @@ archive/issue_comments_092912.json:
 }
 ```
 
-Attachment
+Attachment [make_correct_shared.sh](tarball://root/attachments/some-uuid/ticket9600/make_correct_shared.sh) by pjeremy created at 2010-08-03 10:58:43
 
 Replying to [comment:15 drkirkby]:
 > I thought it might be wise to link in the Fortran and maths libraries. I note this was done in the original code (at least for some libraries), but when I tried to build something with libraries, it worked OK without that, so I did not include them. I've attached a second version. Let me know how that works

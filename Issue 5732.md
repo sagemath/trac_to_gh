@@ -100,7 +100,7 @@ Michael
 archive/issue_comments_044795.json:
 ```json
 {
-    "body": "Attachment\n\nrebased against 4.0",
+    "body": "Attachment [digits_exact_log_comprehensive.patch](tarball://root/attachments/some-uuid/ticket5732/digits_exact_log_comprehensive.patch) by jbmohler created at 2009-06-01 17:24:06\n\nrebased against 4.0",
     "created_at": "2009-06-01T17:24:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5732",
     "type": "issue_comment",
@@ -109,7 +109,7 @@ archive/issue_comments_044795.json:
 }
 ```
 
-Attachment
+Attachment [digits_exact_log_comprehensive.patch](tarball://root/attachments/some-uuid/ticket5732/digits_exact_log_comprehensive.patch) by jbmohler created at 2009-06-01 17:24:06
 
 rebased against 4.0
 

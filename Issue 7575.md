@@ -403,7 +403,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_064489.json:
 ```json
 {
-    "body": "Attachment\n\ndepends on #8184, #8155 (and possibly #8124)",
+    "body": "Attachment [trac_7575.patch](tarball://root/attachments/some-uuid/ticket7575/trac_7575.patch) by rlm created at 2010-02-04 21:01:45\n\ndepends on #8184, #8155 (and possibly #8124)",
     "created_at": "2010-02-04T21:01:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
@@ -412,7 +412,7 @@ archive/issue_comments_064489.json:
 }
 ```
 
-Attachment
+Attachment [trac_7575.patch](tarball://root/attachments/some-uuid/ticket7575/trac_7575.patch) by rlm created at 2010-02-04 21:01:45
 
 depends on #8184, #8155 (and possibly #8124)
 
@@ -524,7 +524,7 @@ Fixes default search bounds
 archive/issue_comments_064495.json:
 ```json
 {
-    "body": "Attachment\n\nThis last patch sets all defaults (and docstrings) to 12.",
+    "body": "Attachment [trac_7575-followup.patch](tarball://root/attachments/some-uuid/ticket7575/trac_7575-followup.patch) by rlm created at 2010-02-07 02:05:50\n\nThis last patch sets all defaults (and docstrings) to 12.",
     "created_at": "2010-02-07T02:05:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
@@ -533,7 +533,7 @@ archive/issue_comments_064495.json:
 }
 ```
 
-Attachment
+Attachment [trac_7575-followup.patch](tarball://root/attachments/some-uuid/ticket7575/trac_7575-followup.patch) by rlm created at 2010-02-07 02:05:50
 
 This last patch sets all defaults (and docstrings) to 12.
 
@@ -653,7 +653,7 @@ Add `PRIMES` to `.hgignore`.  Apply in addition to other patches.
 archive/issue_comments_064501.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached an \"hgignore\" patch we can use for 4.3.3.alpha0, if it's OK.",
+    "body": "Attachment [trac_7575-hgignore_PRIMES.patch](tarball://root/attachments/some-uuid/ticket7575/trac_7575-hgignore_PRIMES.patch) by mpatel created at 2010-02-11 10:47:30\n\nI've attached an \"hgignore\" patch we can use for 4.3.3.alpha0, if it's OK.",
     "created_at": "2010-02-11T10:47:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
@@ -662,7 +662,7 @@ archive/issue_comments_064501.json:
 }
 ```
 
-Attachment
+Attachment [trac_7575-hgignore_PRIMES.patch](tarball://root/attachments/some-uuid/ticket7575/trac_7575-hgignore_PRIMES.patch) by mpatel created at 2010-02-11 10:47:30
 
 I've attached an "hgignore" patch we can use for 4.3.3.alpha0, if it's OK.
 

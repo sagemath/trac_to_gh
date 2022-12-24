@@ -68,7 +68,7 @@ Changing assignee from tba to malb.
 archive/issue_comments_010137.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_1593.patch](tarball://root/attachments/some-uuid/ticket1593/trac_1593.patch) by malb created at 2007-12-25 16:17:49",
     "created_at": "2007-12-25T16:17:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1593",
     "type": "issue_comment",
@@ -77,7 +77,7 @@ archive/issue_comments_010137.json:
 }
 ```
 
-Attachment
+Attachment [trac_1593.patch](tarball://root/attachments/some-uuid/ticket1593/trac_1593.patch) by malb created at 2007-12-25 16:17:49
 
 
 

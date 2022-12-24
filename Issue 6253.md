@@ -137,7 +137,7 @@ Changing status from new to assigned.
 archive/issue_comments_049947.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6253-constant_function-nt.patch](tarball://root/attachments/some-uuid/ticket6253/trac_6253-constant_function-nt.patch) by nthiery created at 2009-07-26 23:07:12",
     "created_at": "2009-07-26T23:07:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6253",
     "type": "issue_comment",
@@ -146,7 +146,7 @@ archive/issue_comments_049947.json:
 }
 ```
 
-Attachment
+Attachment [trac_6253-constant_function-nt.patch](tarball://root/attachments/some-uuid/ticket6253/trac_6253-constant_function-nt.patch) by nthiery created at 2009-07-26 23:07:12
 
 
 
@@ -211,7 +211,7 @@ reviewer patch
 archive/issue_comments_049951.json:
 ```json
 {
-    "body": "Attachment\n\nThis is great stuff! So let's put it in the reference manual. The reviewer patch `trac_6253-reviewer.patch` adds the module `sage/misc/constant_function.py` to the reference manual. It also fixes some typos so that the reference manual builds without any warnings. If people are happy with my changes, then patches should be merged in this order:\n\n1. `trac_6253-constant_function-nt.patch`\n2. `trac_6253-reviewer.patch`",
+    "body": "Attachment [trac_6253-reviewer.patch](tarball://root/attachments/some-uuid/ticket6253/trac_6253-reviewer.patch) by mvngu created at 2009-08-23 01:54:36\n\nThis is great stuff! So let's put it in the reference manual. The reviewer patch `trac_6253-reviewer.patch` adds the module `sage/misc/constant_function.py` to the reference manual. It also fixes some typos so that the reference manual builds without any warnings. If people are happy with my changes, then patches should be merged in this order:\n\n1. `trac_6253-constant_function-nt.patch`\n2. `trac_6253-reviewer.patch`",
     "created_at": "2009-08-23T01:54:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6253",
     "type": "issue_comment",
@@ -220,7 +220,7 @@ archive/issue_comments_049951.json:
 }
 ```
 
-Attachment
+Attachment [trac_6253-reviewer.patch](tarball://root/attachments/some-uuid/ticket6253/trac_6253-reviewer.patch) by mvngu created at 2009-08-23 01:54:36
 
 This is great stuff! So let's put it in the reference manual. The reviewer patch `trac_6253-reviewer.patch` adds the module `sage/misc/constant_function.py` to the reference manual. It also fixes some typos so that the reference manual builds without any warnings. If people are happy with my changes, then patches should be merged in this order:
 

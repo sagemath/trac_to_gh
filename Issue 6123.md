@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6123
 archive/issue_comments_048926.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6123-python_partn_ref.patch](tarball://root/attachments/some-uuid/ticket6123/trac_6123-python_partn_ref.patch) by rlm created at 2009-05-24 07:42:14",
     "created_at": "2009-05-24T07:42:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6123",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_048926.json:
 }
 ```
 
-Attachment
+Attachment [trac_6123-python_partn_ref.patch](tarball://root/attachments/some-uuid/ticket6123/trac_6123-python_partn_ref.patch) by rlm created at 2009-05-24 07:42:14
 
 
 

@@ -57,7 +57,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4487
 archive/issue_comments_033133.json:
 ```json
 {
-    "body": "Attachment\n\npatch against version 3.2.rc0",
+    "body": "Attachment [group_character_4487.patch](tarball://root/attachments/some-uuid/ticket4487/group_character_4487.patch) by saliola created at 2008-11-13 17:01:01\n\npatch against version 3.2.rc0",
     "created_at": "2008-11-13T17:01:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4487",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_033133.json:
 }
 ```
 
-Attachment
+Attachment [group_character_4487.patch](tarball://root/attachments/some-uuid/ticket4487/group_character_4487.patch) by saliola created at 2008-11-13 17:01:01
 
 patch against version 3.2.rc0
 
@@ -305,7 +305,7 @@ I'm not sure what !-1 means. Any ideas?
 archive/issue_comments_033139.json:
 ```json
 {
-    "body": "Attachment\n\ndo NOT apply group_characters_4487.patch",
+    "body": "Attachment [class_functions_4487.patch](tarball://root/attachments/some-uuid/ticket4487/class_functions_4487.patch) by saliola created at 2008-11-17 10:39:26\n\ndo NOT apply group_characters_4487.patch",
     "created_at": "2008-11-17T10:39:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4487",
     "type": "issue_comment",
@@ -314,7 +314,7 @@ archive/issue_comments_033139.json:
 }
 ```
 
-Attachment
+Attachment [class_functions_4487.patch](tarball://root/attachments/some-uuid/ticket4487/class_functions_4487.patch) by saliola created at 2008-11-17 10:39:26
 
 do NOT apply group_characters_4487.patch
 
@@ -431,7 +431,7 @@ fixes the broken doctests; apply on top of class_functions_4487.patch
 archive/issue_comments_033144.json:
 ```json
 {
-    "body": "Attachment\n\nHello Michael,\n\nThe __repr__ for this class just returns \"Character of\" plus the string representation of the group. So perhaps something changed in subgroup between 3.2.rc1 and 3.2?\n\nAnyhow, I posted a patch to correct the docstring. Apply on top of class_functions_4487.patch.\n\nFranco",
+    "body": "Attachment [class_functions_4487-part2.patch](tarball://root/attachments/some-uuid/ticket4487/class_functions_4487-part2.patch) by saliola created at 2008-11-21 14:03:41\n\nHello Michael,\n\nThe __repr__ for this class just returns \"Character of\" plus the string representation of the group. So perhaps something changed in subgroup between 3.2.rc1 and 3.2?\n\nAnyhow, I posted a patch to correct the docstring. Apply on top of class_functions_4487.patch.\n\nFranco",
     "created_at": "2008-11-21T14:03:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4487",
     "type": "issue_comment",
@@ -440,7 +440,7 @@ archive/issue_comments_033144.json:
 }
 ```
 
-Attachment
+Attachment [class_functions_4487-part2.patch](tarball://root/attachments/some-uuid/ticket4487/class_functions_4487-part2.patch) by saliola created at 2008-11-21 14:03:41
 
 Hello Michael,
 

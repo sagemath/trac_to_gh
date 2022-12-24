@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5212
 archive/issue_comments_039934.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5212-normalize-names.patch](tarball://root/attachments/some-uuid/ticket5212/trac_5212-normalize-names.patch) by ncalexan created at 2009-02-09 04:23:07",
     "created_at": "2009-02-09T04:23:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5212",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_039934.json:
 }
 ```
 
-Attachment
+Attachment [trac_5212-normalize-names.patch](tarball://root/attachments/some-uuid/ticket5212/trac_5212-normalize-names.patch) by ncalexan created at 2009-02-09 04:23:07
 
 
 

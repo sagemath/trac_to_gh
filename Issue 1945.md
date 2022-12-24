@@ -64,7 +64,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1945
 archive/issue_comments_012345.json:
 ```json
 {
-    "body": "Attachment\n\nThe hg_doc part of the patch",
+    "body": "Attachment [trac-1945-doc.patch](tarball://root/attachments/some-uuid/ticket1945/trac-1945-doc.patch) by cwitty created at 2008-01-27 01:06:38\n\nThe hg_doc part of the patch",
     "created_at": "2008-01-27T01:06:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1945",
     "type": "issue_comment",
@@ -73,7 +73,7 @@ archive/issue_comments_012345.json:
 }
 ```
 
-Attachment
+Attachment [trac-1945-doc.patch](tarball://root/attachments/some-uuid/ticket1945/trac-1945-doc.patch) by cwitty created at 2008-01-27 01:06:38
 
 The hg_doc part of the patch
 
@@ -84,7 +84,7 @@ The hg_doc part of the patch
 archive/issue_comments_012346.json:
 ```json
 {
-    "body": "Attachment\n\nThe hg_sage part of the patch",
+    "body": "Attachment [trac-1945-sage.patch](tarball://root/attachments/some-uuid/ticket1945/trac-1945-sage.patch) by cwitty created at 2008-01-27 01:07:23\n\nThe hg_sage part of the patch",
     "created_at": "2008-01-27T01:07:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1945",
     "type": "issue_comment",
@@ -93,7 +93,7 @@ archive/issue_comments_012346.json:
 }
 ```
 
-Attachment
+Attachment [trac-1945-sage.patch](tarball://root/attachments/some-uuid/ticket1945/trac-1945-sage.patch) by cwitty created at 2008-01-27 01:07:23
 
 The hg_sage part of the patch
 

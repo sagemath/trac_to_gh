@@ -176,7 +176,7 @@ replaces previous patch, based on #6937
 archive/issue_comments_057242.json:
 ```json
 {
-    "body": "Attachment\n\nI'm not sure if this problem is local to this patch, but running:\n\n\n```\n@cached_function\ndef oddprime_factors(n):\n     l = [p for p,e in factor(n) if p != 2]\n     return len(l)\noddprime_factors.precompute(range(1,100), 4)\n```\n\n\n, which is in the doctets of `cachefunc.py`, in the Notebook throws a `NameError`:\n\n\n```\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/deadlyx/.sage/sage_notebook/worksheets/admin/0/code/1.py\", line 13, in <module>\n    oddprime_factors.precompute(range(_sage_const_1 ,_sage_const_100 ), _sage_const_4 )\n  File \"\", line 1, in <module>\n    \n  File \"/opt/sage-bin/local/lib/python2.6/site-packages/sage/misc/cachefunc.py\", line 226, in precompute\n    for ((args,kwargs), val) in P(arglist):\n  File \"/opt/sage-bin/local/lib/python2.6/site-packages/sage/parallel/multiprocessing.py\", line 66, in parallel_iter\n    for res in result:\n  File \"/opt/sage-bin/local/lib/python2.6/site-packages/processing/pool.py\", line 470, in next\n    raise value\nNameError: global name '_sage_const_2' is not defined\n```\n\n\nRunning it in the command line works perfectly.\n\n* The paths for `FileCache` are not OS agnostic: Windows uses backslashes, instead of slashes. Using `os.sep` instead should fix it.\n* The examples in the docstrings are not properly formatted. To display them as a code block, please use the ff. format:\n\n\n```\n\nEXAMPLES::\n\n    sage: foo()\n    bar\n    sage: bar()\n    baz\n\n:: # Another code block\n\n    sage: foo()\n    foo\n\n```\n\n\nEverything else seems to work well. Oh, it may be worth hashing the function being cached and adding that to the key. It should prevent problems with using the same directory for the cache folder.",
+    "body": "Attachment [6927-disk_cache.patch](tarball://root/attachments/some-uuid/ticket6927/6927-disk_cache.patch) by timdumol created at 2009-09-22 12:34:45\n\nI'm not sure if this problem is local to this patch, but running:\n\n\n```\n@cached_function\ndef oddprime_factors(n):\n     l = [p for p,e in factor(n) if p != 2]\n     return len(l)\noddprime_factors.precompute(range(1,100), 4)\n```\n\n\n, which is in the doctets of `cachefunc.py`, in the Notebook throws a `NameError`:\n\n\n```\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/deadlyx/.sage/sage_notebook/worksheets/admin/0/code/1.py\", line 13, in <module>\n    oddprime_factors.precompute(range(_sage_const_1 ,_sage_const_100 ), _sage_const_4 )\n  File \"\", line 1, in <module>\n    \n  File \"/opt/sage-bin/local/lib/python2.6/site-packages/sage/misc/cachefunc.py\", line 226, in precompute\n    for ((args,kwargs), val) in P(arglist):\n  File \"/opt/sage-bin/local/lib/python2.6/site-packages/sage/parallel/multiprocessing.py\", line 66, in parallel_iter\n    for res in result:\n  File \"/opt/sage-bin/local/lib/python2.6/site-packages/processing/pool.py\", line 470, in next\n    raise value\nNameError: global name '_sage_const_2' is not defined\n```\n\n\nRunning it in the command line works perfectly.\n\n* The paths for `FileCache` are not OS agnostic: Windows uses backslashes, instead of slashes. Using `os.sep` instead should fix it.\n* The examples in the docstrings are not properly formatted. To display them as a code block, please use the ff. format:\n\n\n```\n\nEXAMPLES::\n\n    sage: foo()\n    bar\n    sage: bar()\n    baz\n\n:: # Another code block\n\n    sage: foo()\n    foo\n\n```\n\n\nEverything else seems to work well. Oh, it may be worth hashing the function being cached and adding that to the key. It should prevent problems with using the same directory for the cache folder.",
     "created_at": "2009-09-22T12:34:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6927",
     "type": "issue_comment",
@@ -185,7 +185,7 @@ archive/issue_comments_057242.json:
 }
 ```
 
-Attachment
+Attachment [6927-disk_cache.patch](tarball://root/attachments/some-uuid/ticket6927/6927-disk_cache.patch) by timdumol created at 2009-09-22 12:34:45
 
 I'm not sure if this problem is local to this patch, but running:
 
@@ -307,7 +307,7 @@ Oh, I made `multiprocessing.py` import from stdlib's `multiprocessing` instead o
 archive/issue_comments_057246.json:
 ```json
 {
-    "body": "Attachment\n\nFixes docstrings and OS agnosticism issues. Also changes `processing` import to stdlib's `multiprocessing`",
+    "body": "Attachment [6927-disk_cache-ref.patch](tarball://root/attachments/some-uuid/ticket6927/6927-disk_cache-ref.patch) by timdumol created at 2009-11-30 16:30:28\n\nFixes docstrings and OS agnosticism issues. Also changes `processing` import to stdlib's `multiprocessing`",
     "created_at": "2009-11-30T16:30:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6927",
     "type": "issue_comment",
@@ -316,7 +316,7 @@ archive/issue_comments_057246.json:
 }
 ```
 
-Attachment
+Attachment [6927-disk_cache-ref.patch](tarball://root/attachments/some-uuid/ticket6927/6927-disk_cache-ref.patch) by timdumol created at 2009-11-30 16:30:28
 
 Fixes docstrings and OS agnosticism issues. Also changes `processing` import to stdlib's `multiprocessing`
 
@@ -327,7 +327,7 @@ Fixes docstrings and OS agnosticism issues. Also changes `processing` import to 
 archive/issue_comments_057247.json:
 ```json
 {
-    "body": "Attachment\n\nRelocate an import.  Fixed doctest failure. Rebased vs. 4.3.2.alpha0. Combined patch replaces all previous.",
+    "body": "Attachment [trac_6927-disk_cache_combined.patch](tarball://root/attachments/some-uuid/ticket6927/trac_6927-disk_cache_combined.patch) by mpatel created at 2010-01-31 04:21:27\n\nRelocate an import.  Fixed doctest failure. Rebased vs. 4.3.2.alpha0. Combined patch replaces all previous.",
     "created_at": "2010-01-31T04:21:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6927",
     "type": "issue_comment",
@@ -336,7 +336,7 @@ archive/issue_comments_057247.json:
 }
 ```
 
-Attachment
+Attachment [trac_6927-disk_cache_combined.patch](tarball://root/attachments/some-uuid/ticket6927/trac_6927-disk_cache_combined.patch) by mpatel created at 2010-01-31 04:21:27
 
 Relocate an import.  Fixed doctest failure. Rebased vs. 4.3.2.alpha0. Combined patch replaces all previous.
 
@@ -395,7 +395,7 @@ To the extent it counts, my review is positive, but someone should check the com
 archive/issue_comments_057249.json:
 ```json
 {
-    "body": "Attachment\n\nAvoid `sage -startuptime` error.  Replaces previous.",
+    "body": "Attachment [trac_6927-disk_cache_combined.2.patch](tarball://root/attachments/some-uuid/ticket6927/trac_6927-disk_cache_combined.2.patch) by mpatel created at 2010-02-03 05:35:41\n\nAvoid `sage -startuptime` error.  Replaces previous.",
     "created_at": "2010-02-03T05:35:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6927",
     "type": "issue_comment",
@@ -404,7 +404,7 @@ archive/issue_comments_057249.json:
 }
 ```
 
-Attachment
+Attachment [trac_6927-disk_cache_combined.2.patch](tarball://root/attachments/some-uuid/ticket6927/trac_6927-disk_cache_combined.2.patch) by mpatel created at 2010-02-03 05:35:41
 
 Avoid `sage -startuptime` error.  Replaces previous.
 
@@ -495,7 +495,7 @@ Nice catch on `P(arglist)`, which was for debugging only. Positive review for yo
 archive/issue_comments_057253.json:
 ```json
 {
-    "body": "Attachment\n\nRebase on sage-4.4.alpha0. Apply this patch only.",
+    "body": "Attachment [trac_6927-disk-cache-rebase.patch](tarball://root/attachments/some-uuid/ticket6927/trac_6927-disk-cache-rebase.patch) by timdumol created at 2010-04-18 13:44:07\n\nRebase on sage-4.4.alpha0. Apply this patch only.",
     "created_at": "2010-04-18T13:44:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6927",
     "type": "issue_comment",
@@ -504,7 +504,7 @@ archive/issue_comments_057253.json:
 }
 ```
 
-Attachment
+Attachment [trac_6927-disk-cache-rebase.patch](tarball://root/attachments/some-uuid/ticket6927/trac_6927-disk-cache-rebase.patch) by timdumol created at 2010-04-18 13:44:07
 
 Rebase on sage-4.4.alpha0. Apply this patch only.
 

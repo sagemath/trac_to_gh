@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6968
 archive/issue_comments_057649.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6968_vector_times_matrix.patch](tarball://root/attachments/some-uuid/ticket6968/trac_6968_vector_times_matrix.patch) by ylchapuy created at 2009-09-20 20:31:15",
     "created_at": "2009-09-20T20:31:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6968",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_057649.json:
 }
 ```
 
-Attachment
+Attachment [trac_6968_vector_times_matrix.patch](tarball://root/attachments/some-uuid/ticket6968/trac_6968_vector_times_matrix.patch) by ylchapuy created at 2009-09-20 20:31:15
 
 
 

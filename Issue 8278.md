@@ -119,7 +119,7 @@ hacked setup.py that allowed me to build and install cvxopt (though i had to mak
 archive/issue_comments_073302.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [setup.py](tarball://root/attachments/some-uuid/ticket8278/setup.py) by was created at 2010-02-15 23:07:57",
     "created_at": "2010-02-15T23:07:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8278",
     "type": "issue_comment",
@@ -128,7 +128,7 @@ archive/issue_comments_073302.json:
 }
 ```
 
-Attachment
+Attachment [setup.py](tarball://root/attachments/some-uuid/ticket8278/setup.py) by was created at 2010-02-15 23:07:57
 
 
 
@@ -137,7 +137,7 @@ Attachment
 archive/issue_comments_073303.json:
 ```json
 {
-    "body": "Attachment\n\nI would like to merge this with cvxopt-1.1.2.p2 (well, p3) that I just finished porting to Solaris, and cleaning up. For the latter, e.g. there is no random stuff in cvxopt any more, they can hook up to GSL (and we can enable this, as GSL is a standard Sage package).\n\nCan I use winxp2.math.washington.edu ?\nI suppose I need a login, and I don't seem to have one (I tried logging in from \nboxen...)\n\nDima",
+    "body": "Attachment [complex.h](tarball://root/attachments/some-uuid/ticket8278/complex.h) by dimpase created at 2010-03-18 14:06:04\n\nI would like to merge this with cvxopt-1.1.2.p2 (well, p3) that I just finished porting to Solaris, and cleaning up. For the latter, e.g. there is no random stuff in cvxopt any more, they can hook up to GSL (and we can enable this, as GSL is a standard Sage package).\n\nCan I use winxp2.math.washington.edu ?\nI suppose I need a login, and I don't seem to have one (I tried logging in from \nboxen...)\n\nDima",
     "created_at": "2010-03-18T14:06:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8278",
     "type": "issue_comment",
@@ -146,7 +146,7 @@ archive/issue_comments_073303.json:
 }
 ```
 
-Attachment
+Attachment [complex.h](tarball://root/attachments/some-uuid/ticket8278/complex.h) by dimpase created at 2010-03-18 14:06:04
 
 I would like to merge this with cvxopt-1.1.2.p2 (well, p3) that I just finished porting to Solaris, and cleaning up. For the latter, e.g. there is no random stuff in cvxopt any more, they can hook up to GSL (and we can enable this, as GSL is a standard Sage package).
 

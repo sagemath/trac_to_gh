@@ -234,7 +234,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6672
 archive/issue_comments_054821.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6672.patch](tarball://root/attachments/some-uuid/ticket6672/trac_6672.patch) by shumow created at 2009-08-04 07:44:25",
     "created_at": "2009-08-04T07:44:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6672",
     "type": "issue_comment",
@@ -243,7 +243,7 @@ archive/issue_comments_054821.json:
 }
 ```
 
-Attachment
+Attachment [trac_6672.patch](tarball://root/attachments/some-uuid/ticket6672/trac_6672.patch) by shumow created at 2009-08-04 07:44:25
 
 
 
@@ -270,7 +270,7 @@ Apply after previous
 archive/issue_comments_054823.json:
 ```json
 {
-    "body": "Attachment\n\nApply after previous",
+    "body": "Attachment [trac_6672-point_construction2.patch](tarball://root/attachments/some-uuid/ticket6672/trac_6672-point_construction2.patch) by cremona created at 2009-08-16 17:54:07\n\nApply after previous",
     "created_at": "2009-08-16T17:54:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6672",
     "type": "issue_comment",
@@ -279,7 +279,7 @@ archive/issue_comments_054823.json:
 }
 ```
 
-Attachment
+Attachment [trac_6672-point_construction2.patch](tarball://root/attachments/some-uuid/ticket6672/trac_6672-point_construction2.patch) by cremona created at 2009-08-16 17:54:07
 
 Apply after previous
 

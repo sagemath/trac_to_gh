@@ -203,7 +203,7 @@ archive/issue_comments_076403.json:
 archive/issue_comments_076404.json:
 ```json
 {
-    "body": "Attachment\n\nI've updated\n\n* http://sage.math.washington.edu/home/mpatel/trac/8477/palp-1.1.p2.spkg\n\nwith your suggestions, except for removing `CC=gcc`.  See the attached the patch, which also has a workaround for parallel spkg builds that seems to work on sage.math and bsd (at least).  The makefiles differ by\n\n```diff\n NEF_SRC= E_Poly.c Nefpart.c LG.c\n NEF_OBJ= $(NEF_SRC:.c=.o)\n \n-CC=cc \n+CC=gcc\n \n-CFLAGS=-O3 -fast\n+CFLAGS=-O3 -g -W -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE\n # CFLAGS=-O3 -g                                      # add -g for GNU debugger gdb\n # CFLAGS=-Ofast -O3 -mips4 -n32                      # SGI / 32 bit\n # CFLAGS=-Ofast -O3 -mips4 -64                # SGI / 64 bit\n```\n\nLooking at the source, I think `-D_FILE_OFFSET_BITS=64` and `-D_LARGEFILE_SOURCE` are intended for 32-bit architectures.  But it appears the first definition is not used and the makefiles don't check the architecture.",
+    "body": "Attachment [spkg_8477-palp_makefile.patch](tarball://root/attachments/some-uuid/ticket8477/spkg_8477-palp_makefile.patch) by mpatel created at 2010-03-12 17:58:02\n\nI've updated\n\n* http://sage.math.washington.edu/home/mpatel/trac/8477/palp-1.1.p2.spkg\n\nwith your suggestions, except for removing `CC=gcc`.  See the attached the patch, which also has a workaround for parallel spkg builds that seems to work on sage.math and bsd (at least).  The makefiles differ by\n\n```diff\n NEF_SRC= E_Poly.c Nefpart.c LG.c\n NEF_OBJ= $(NEF_SRC:.c=.o)\n \n-CC=cc \n+CC=gcc\n \n-CFLAGS=-O3 -fast\n+CFLAGS=-O3 -g -W -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE\n # CFLAGS=-O3 -g                                      # add -g for GNU debugger gdb\n # CFLAGS=-Ofast -O3 -mips4 -n32                      # SGI / 32 bit\n # CFLAGS=-Ofast -O3 -mips4 -64                # SGI / 64 bit\n```\n\nLooking at the source, I think `-D_FILE_OFFSET_BITS=64` and `-D_LARGEFILE_SOURCE` are intended for 32-bit architectures.  But it appears the first definition is not used and the makefiles don't check the architecture.",
     "created_at": "2010-03-12T17:58:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8477",
     "type": "issue_comment",
@@ -212,7 +212,7 @@ archive/issue_comments_076404.json:
 }
 ```
 
-Attachment
+Attachment [spkg_8477-palp_makefile.patch](tarball://root/attachments/some-uuid/ticket8477/spkg_8477-palp_makefile.patch) by mpatel created at 2010-03-12 17:58:02
 
 I've updated
 

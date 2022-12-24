@@ -123,7 +123,7 @@ Changing assignee from was to mhansen.
 archive/issue_comments_014635.json:
 ```json
 {
-    "body": "Attachment\n\nI created an hg bundle which modifies this patch. It makes it such that \nperm -> matrix(perm) is consistent with the corresponding map on perm gp\nelements and respects multiplication. It passes sage -t but sage -testall failed\nin *many* places, though none which seemed related to this patch.",
+    "body": "Attachment [2215.patch](tarball://root/attachments/some-uuid/ticket2215/2215.patch) by wdj created at 2008-02-20 18:17:02\n\nI created an hg bundle which modifies this patch. It makes it such that \nperm -> matrix(perm) is consistent with the corresponding map on perm gp\nelements and respects multiplication. It passes sage -t but sage -testall failed\nin *many* places, though none which seemed related to this patch.",
     "created_at": "2008-02-20T18:17:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2215",
     "type": "issue_comment",
@@ -132,7 +132,7 @@ archive/issue_comments_014635.json:
 }
 ```
 
-Attachment
+Attachment [2215.patch](tarball://root/attachments/some-uuid/ticket2215/2215.patch) by wdj created at 2008-02-20 18:17:02
 
 I created an hg bundle which modifies this patch. It makes it such that 
 perm -> matrix(perm) is consistent with the corresponding map on perm gp
@@ -245,7 +245,7 @@ Michael
 archive/issue_comments_014640.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8631.patch](tarball://root/attachments/some-uuid/ticket2215/8631.patch) by wdj created at 2008-02-20 19:04:32",
     "created_at": "2008-02-20T19:04:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2215",
     "type": "issue_comment",
@@ -254,7 +254,7 @@ archive/issue_comments_014640.json:
 }
 ```
 
-Attachment
+Attachment [8631.patch](tarball://root/attachments/some-uuid/ticket2215/8631.patch) by wdj created at 2008-02-20 19:04:32
 
 
 
@@ -380,7 +380,7 @@ Changing keywords from "" to "editor_mhansen".
 archive/issue_comments_014647.json:
 ```json
 {
-    "body": "Attachment\n\nIs anyone in favor of invalidating this? It seems to have hung around forever.\n\nCheers,\n\nMichael",
+    "body": "Attachment [test.hg](tarball://root/attachments/some-uuid/ticket2215/test.hg) by mabshoff created at 2009-02-02 06:06:21\n\nIs anyone in favor of invalidating this? It seems to have hung around forever.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-02T06:06:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2215",
     "type": "issue_comment",
@@ -389,7 +389,7 @@ archive/issue_comments_014647.json:
 }
 ```
 
-Attachment
+Attachment [test.hg](tarball://root/attachments/some-uuid/ticket2215/test.hg) by mabshoff created at 2009-02-02 06:06:21
 
 Is anyone in favor of invalidating this? It seems to have hung around forever.
 

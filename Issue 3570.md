@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3570
 archive/issue_comments_025220.json:
 ```json
 {
-    "body": "Attachment\n\nI checked the source tree and db.Storage is never used anywhere.",
+    "body": "Attachment [3570.patch](tarball://root/attachments/some-uuid/ticket3570/3570.patch) by mhansen created at 2008-07-06 20:17:39\n\nI checked the source tree and db.Storage is never used anywhere.",
     "created_at": "2008-07-06T20:17:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3570",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_025220.json:
 }
 ```
 
-Attachment
+Attachment [3570.patch](tarball://root/attachments/some-uuid/ticket3570/3570.patch) by mhansen created at 2008-07-06 20:17:39
 
 I checked the source tree and db.Storage is never used anywhere.
 

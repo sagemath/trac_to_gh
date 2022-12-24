@@ -50,7 +50,7 @@ HG Bundle with fix
 archive/issue_comments_001971.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [T400.hg](tarball://root/attachments/some-uuid/ticket400/T400.hg) by mabshoff created at 2007-08-23 11:32:34",
     "created_at": "2007-08-23T11:32:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/400",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_001971.json:
 }
 ```
 
-Attachment
+Attachment [T400.hg](tarball://root/attachments/some-uuid/ticket400/T400.hg) by mabshoff created at 2007-08-23 11:32:34
 
 
 
@@ -104,7 +104,7 @@ Resolution: fixed
 archive/issue_comments_001974.json:
 ```json
 {
-    "body": "Attachment\n\nFixed for sage-2.8.3.",
+    "body": "Attachment [5957.patch](tarball://root/attachments/some-uuid/ticket400/5957.patch) by was created at 2007-08-29 01:51:09\n\nFixed for sage-2.8.3.",
     "created_at": "2007-08-29T01:51:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/400",
     "type": "issue_comment",
@@ -113,6 +113,6 @@ archive/issue_comments_001974.json:
 }
 ```
 
-Attachment
+Attachment [5957.patch](tarball://root/attachments/some-uuid/ticket400/5957.patch) by was created at 2007-08-29 01:51:09
 
 Fixed for sage-2.8.3.

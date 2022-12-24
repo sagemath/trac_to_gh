@@ -60,7 +60,7 @@ Context diff of new, old versions of quadratic_forms/binary_qf.py
 archive/issue_comments_029825.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [diff](tarball://root/attachments/some-uuid/ticket4120/diff) by mabshoff created at 2008-09-14 19:48:35",
     "created_at": "2008-09-14T19:48:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
@@ -69,7 +69,7 @@ archive/issue_comments_029825.json:
 }
 ```
 
-Attachment
+Attachment [diff](tarball://root/attachments/some-uuid/ticket4120/diff) by mabshoff created at 2008-09-14 19:48:35
 
 
 
@@ -102,7 +102,7 @@ Michael
 archive/issue_comments_029827.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-4120.patch](tarball://root/attachments/some-uuid/ticket4120/sage-4120.patch) by justin created at 2008-09-24 02:56:05",
     "created_at": "2008-09-24T02:56:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
@@ -111,7 +111,7 @@ archive/issue_comments_029827.json:
 }
 ```
 
-Attachment
+Attachment [sage-4120.patch](tarball://root/attachments/some-uuid/ticket4120/sage-4120.patch) by justin created at 2008-09-24 02:56:05
 
 
 
@@ -216,7 +216,7 @@ To be applied on top of sage-4120.patch
 archive/issue_comments_029833.json:
 ```json
 {
-    "body": "Attachment\n\nThis is a third patch, applied on sage-4120-2.patch.\n\nThis one extends support for indefinite forms and fixes a few bugs (both in code and in the Buchmann/Vollmer algorithms).\n\nOne change in particular deserves discussion: I have changed the normalization and reduction procedures to return both the form in question and the transformation matrix used to derive that form.  This makes things a bit more awkward in the code, so there are two questions: is this really useful, and if yes, is there a better way to do it?\n\nAlso, I assigned this to me :-}.",
+    "body": "Attachment [sage-4120-2.patch](tarball://root/attachments/some-uuid/ticket4120/sage-4120-2.patch) by justin created at 2008-10-07 04:22:34\n\nThis is a third patch, applied on sage-4120-2.patch.\n\nThis one extends support for indefinite forms and fixes a few bugs (both in code and in the Buchmann/Vollmer algorithms).\n\nOne change in particular deserves discussion: I have changed the normalization and reduction procedures to return both the form in question and the transformation matrix used to derive that form.  This makes things a bit more awkward in the code, so there are two questions: is this really useful, and if yes, is there a better way to do it?\n\nAlso, I assigned this to me :-}.",
     "created_at": "2008-10-07T04:22:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
@@ -225,7 +225,7 @@ archive/issue_comments_029833.json:
 }
 ```
 
-Attachment
+Attachment [sage-4120-2.patch](tarball://root/attachments/some-uuid/ticket4120/sage-4120-2.patch) by justin created at 2008-10-07 04:22:34
 
 This is a third patch, applied on sage-4120-2.patch.
 
@@ -278,7 +278,7 @@ To be applied on top of sage-4120-2.patch
 archive/issue_comments_029836.json:
 ```json
 {
-    "body": "Attachment\n\nApplied all three patches against 3.1.3.rc0, one at a time, running the doctests each time.  All doctests succeeded.  No problems noted.",
+    "body": "Attachment [sage-4120-3.patch](tarball://root/attachments/some-uuid/ticket4120/sage-4120-3.patch) by justin created at 2008-10-14 04:31:21\n\nApplied all three patches against 3.1.3.rc0, one at a time, running the doctests each time.  All doctests succeeded.  No problems noted.",
     "created_at": "2008-10-14T04:31:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
@@ -287,7 +287,7 @@ archive/issue_comments_029836.json:
 }
 ```
 
-Attachment
+Attachment [sage-4120-3.patch](tarball://root/attachments/some-uuid/ticket4120/sage-4120-3.patch) by justin created at 2008-10-14 04:31:21
 
 Applied all three patches against 3.1.3.rc0, one at a time, running the doctests each time.  All doctests succeeded.  No problems noted.
 
@@ -298,7 +298,7 @@ Applied all three patches against 3.1.3.rc0, one at a time, running the doctests
 archive/issue_comments_029837.json:
 ```json
 {
-    "body": "Attachment\n\nREPLACES earlier patches",
+    "body": "Attachment [sage-trac4120.new.patch](tarball://root/attachments/some-uuid/ticket4120/sage-trac4120.new.patch) by cremona created at 2008-10-28 20:46:13\n\nREPLACES earlier patches",
     "created_at": "2008-10-28T20:46:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
@@ -307,7 +307,7 @@ archive/issue_comments_029837.json:
 }
 ```
 
-Attachment
+Attachment [sage-trac4120.new.patch](tarball://root/attachments/some-uuid/ticket4120/sage-trac4120.new.patch) by cremona created at 2008-10-28 20:46:13
 
 REPLACES earlier patches
 
@@ -519,7 +519,7 @@ Below are some comments about the code in `binary_qf.py`. I didn't make a differ
 archive/issue_comments_029843.json:
 ```json
 {
-    "body": "Attachment\n\nNew patch; replaces previous patches.",
+    "body": "Attachment [4120-110324.patch](tarball://root/attachments/some-uuid/ticket4120/4120-110324.patch) by justin created at 2011-03-24 22:55:02\n\nNew patch; replaces previous patches.",
     "created_at": "2011-03-24T22:55:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
@@ -528,7 +528,7 @@ archive/issue_comments_029843.json:
 }
 ```
 
-Attachment
+Attachment [4120-110324.patch](tarball://root/attachments/some-uuid/ticket4120/4120-110324.patch) by justin created at 2011-03-24 22:55:02
 
 New patch; replaces previous patches.
 

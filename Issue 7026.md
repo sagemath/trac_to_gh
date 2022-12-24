@@ -127,7 +127,7 @@ Linbox at least reconsises GMP on:
 archive/issue_comments_058179.json:
 ```json
 {
-    "body": "Attachment\n\nconfig.log seen on a SPARC using gcc in 64-bit mode",
+    "body": "Attachment [config.log.64-bit.gcc.SPARC.txt](tarball://root/attachments/some-uuid/ticket7026/config.log.64-bit.gcc.SPARC.txt) by drkirkby created at 2010-01-14 16:26:49\n\nconfig.log seen on a SPARC using gcc in 64-bit mode",
     "created_at": "2010-01-14T16:26:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7026",
     "type": "issue_comment",
@@ -136,7 +136,7 @@ archive/issue_comments_058179.json:
 }
 ```
 
-Attachment
+Attachment [config.log.64-bit.gcc.SPARC.txt](tarball://root/attachments/some-uuid/ticket7026/config.log.64-bit.gcc.SPARC.txt) by drkirkby created at 2010-01-14 16:26:49
 
 config.log seen on a SPARC using gcc in 64-bit mode
 

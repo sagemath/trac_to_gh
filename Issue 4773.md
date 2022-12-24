@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4773
 archive/issue_comments_036148.json:
 ```json
 {
-    "body": "Attachment\n\nTrivial patch is attached.",
+    "body": "Attachment [trac_4773.patch](tarball://root/attachments/some-uuid/ticket4773/trac_4773.patch) by AlexGhitza created at 2008-12-12 22:27:38\n\nTrivial patch is attached.",
     "created_at": "2008-12-12T22:27:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4773",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_036148.json:
 }
 ```
 
-Attachment
+Attachment [trac_4773.patch](tarball://root/attachments/some-uuid/ticket4773/trac_4773.patch) by AlexGhitza created at 2008-12-12 22:27:38
 
 Trivial patch is attached.
 

@@ -57,7 +57,7 @@ Changing status from new to needs_review.
 archive/issue_comments_062186.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7395_non_neg_integer_enumset-fh.patch](tarball://root/attachments/some-uuid/ticket7395/trac_7395_non_neg_integer_enumset-fh.patch) by hivert created at 2009-11-05 15:34:27",
     "created_at": "2009-11-05T15:34:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7395",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_062186.json:
 }
 ```
 
-Attachment
+Attachment [trac_7395_non_neg_integer_enumset-fh.patch](tarball://root/attachments/some-uuid/ticket7395/trac_7395_non_neg_integer_enumset-fh.patch) by hivert created at 2009-11-05 15:34:27
 
 
 
@@ -75,7 +75,7 @@ Attachment
 archive/issue_comments_062187.json:
 ```json
 {
-    "body": "Attachment\n\nThe updated patch fixes 3 typos which have been cross-reviewed by Florent",
+    "body": "Attachment [trac_7395_non_neg_integer_enumset-fh.2.patch](tarball://root/attachments/some-uuid/ticket7395/trac_7395_non_neg_integer_enumset-fh.2.patch) by nthiery created at 2009-11-05 16:17:57\n\nThe updated patch fixes 3 typos which have been cross-reviewed by Florent",
     "created_at": "2009-11-05T16:17:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7395",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_062187.json:
 }
 ```
 
-Attachment
+Attachment [trac_7395_non_neg_integer_enumset-fh.2.patch](tarball://root/attachments/some-uuid/ticket7395/trac_7395_non_neg_integer_enumset-fh.2.patch) by nthiery created at 2009-11-05 16:17:57
 
 The updated patch fixes 3 typos which have been cross-reviewed by Florent
 

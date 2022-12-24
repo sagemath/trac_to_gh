@@ -107,7 +107,7 @@ Changing assignee from cwitty to jhpalmieri.
 archive/issue_comments_045354.json:
 ```json
 {
-    "body": "Attachment\n\nPasses tests on misc/latex.py and misc/latex_macros.py in 3.4.2.alpha0, and works as advertised at command-line and in notebook.\n\nPDF version of documentation builds fine also.  Another great addition to Sage-LaTeX integration.\n\nSo this is ready to go - positive review.",
+    "body": "Attachment [latex-5791.patch](tarball://root/attachments/some-uuid/ticket5791/latex-5791.patch) by rbeezer created at 2009-04-25 04:47:11\n\nPasses tests on misc/latex.py and misc/latex_macros.py in 3.4.2.alpha0, and works as advertised at command-line and in notebook.\n\nPDF version of documentation builds fine also.  Another great addition to Sage-LaTeX integration.\n\nSo this is ready to go - positive review.",
     "created_at": "2009-04-25T04:47:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5791",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_045354.json:
 }
 ```
 
-Attachment
+Attachment [latex-5791.patch](tarball://root/attachments/some-uuid/ticket5791/latex-5791.patch) by rbeezer created at 2009-04-25 04:47:11
 
 Passes tests on misc/latex.py and misc/latex_macros.py in 3.4.2.alpha0, and works as advertised at command-line and in notebook.
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7906
 archive/issue_comments_068740.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [7906-AA-is_square.patch](tarball://root/attachments/some-uuid/ticket7906/7906-AA-is_square.patch) by robertwb created at 2010-01-12 09:28:02",
     "created_at": "2010-01-12T09:28:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7906",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_068740.json:
 }
 ```
 
-Attachment
+Attachment [7906-AA-is_square.patch](tarball://root/attachments/some-uuid/ticket7906/7906-AA-is_square.patch) by robertwb created at 2010-01-12 09:28:02
 
 
 
@@ -85,7 +85,7 @@ Changing status from new to needs_review.
 archive/issue_comments_068743.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review.  I took the liberty of adding to the patch correction of a typo which I fixed once but somehow got lost in the patches (merged in 4.3.1.alpha1) at #6887, which I came up against while testing, and which has come up on sage-devel (or perhaps sage-support) where I will report back.",
+    "body": "Attachment [7906-AA-is_square-2.patch](tarball://root/attachments/some-uuid/ticket7906/7906-AA-is_square-2.patch) by cremona created at 2010-01-12 10:14:49\n\nPositive review.  I took the liberty of adding to the patch correction of a typo which I fixed once but somehow got lost in the patches (merged in 4.3.1.alpha1) at #6887, which I came up against while testing, and which has come up on sage-devel (or perhaps sage-support) where I will report back.",
     "created_at": "2010-01-12T10:14:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7906",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_068743.json:
 }
 ```
 
-Attachment
+Attachment [7906-AA-is_square-2.patch](tarball://root/attachments/some-uuid/ticket7906/7906-AA-is_square-2.patch) by cremona created at 2010-01-12 10:14:49
 
 Positive review.  I took the liberty of adding to the patch correction of a typo which I fixed once but somehow got lost in the patches (merged in 4.3.1.alpha1) at #6887, which I came up against while testing, and which has come up on sage-devel (or perhaps sage-support) where I will report back.
 

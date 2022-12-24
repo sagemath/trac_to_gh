@@ -67,7 +67,7 @@ Changing priority from major to minor.
 archive/issue_comments_054597.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [CreateCellBeforeTextImpossible.sws](tarball://root/attachments/some-uuid/ticket6651/CreateCellBeforeTextImpossible.sws) by hemmecke created at 2009-07-28 21:30:16",
     "created_at": "2009-07-28T21:30:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6651",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_054597.json:
 }
 ```
 
-Attachment
+Attachment [CreateCellBeforeTextImpossible.sws](tarball://root/attachments/some-uuid/ticket6651/CreateCellBeforeTextImpossible.sws) by hemmecke created at 2009-07-28 21:30:16
 
 
 

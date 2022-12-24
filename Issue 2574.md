@@ -167,7 +167,7 @@ abelian group patch
 archive/issue_comments_017586.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8962.patch](tarball://root/attachments/some-uuid/ticket2574/8962.patch) by wdj created at 2008-03-18 10:46:11",
     "created_at": "2008-03-18T10:46:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2574",
     "type": "issue_comment",
@@ -176,7 +176,7 @@ archive/issue_comments_017586.json:
 }
 ```
 
-Attachment
+Attachment [8962.patch](tarball://root/attachments/some-uuid/ticket2574/8962.patch) by wdj created at 2008-03-18 10:46:11
 
 
 

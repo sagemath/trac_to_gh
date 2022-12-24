@@ -121,7 +121,7 @@ Changing component from packages: optional to combinatorics.
 archive/issue_comments_050469.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6323.patch](tarball://root/attachments/some-uuid/ticket6323/trac_6323.patch) by mhansen created at 2013-06-21 15:29:41",
     "created_at": "2013-06-21T15:29:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6323",
     "type": "issue_comment",
@@ -130,7 +130,7 @@ archive/issue_comments_050469.json:
 }
 ```
 
-Attachment
+Attachment [trac_6323.patch](tarball://root/attachments/some-uuid/ticket6323/trac_6323.patch) by mhansen created at 2013-06-21 15:29:41
 
 
 
@@ -179,7 +179,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_050472.json:
 ```json
 {
-    "body": "Attachment\n\nHmmmmmm... The doctests do not pass because of a bug in Sage's interface with sloane, and #10358 fixes the file anyway !\n\nNathann",
+    "body": "Attachment [trac_6323-rev.patch](tarball://root/attachments/some-uuid/ticket6323/trac_6323-rev.patch) by ncohen created at 2013-06-27 17:08:20\n\nHmmmmmm... The doctests do not pass because of a bug in Sage's interface with sloane, and #10358 fixes the file anyway !\n\nNathann",
     "created_at": "2013-06-27T17:08:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6323",
     "type": "issue_comment",
@@ -188,7 +188,7 @@ archive/issue_comments_050472.json:
 }
 ```
 
-Attachment
+Attachment [trac_6323-rev.patch](tarball://root/attachments/some-uuid/ticket6323/trac_6323-rev.patch) by ncohen created at 2013-06-27 17:08:20
 
 Hmmmmmm... The doctests do not pass because of a bug in Sage's interface with sloane, and #10358 fixes the file anyway !
 

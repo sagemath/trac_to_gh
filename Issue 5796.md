@@ -401,7 +401,7 @@ I'm happy with less changes in partn_ref. Thanks for offering to do that.
 archive/issue_comments_045467.json:
 ```json
 {
-    "body": "Attachment\n\nOkay, either Robert, I think the .3.patch file is a good final version.  Can you look at it one more time?  I drastically cut down on the number of changes to existing code, just doing the necessary bitset_clear to bitset_free transition talked about above.\n\nAll tests pass in groups/perm_gps/partn_ref/*.pyx, coding/binary_code.pyx, and misc/*.pyx\n\nYou can delete all patches prior to the .3.patch.\n\nFurthermore, after the patch:\n\n\n```\nsage: search_src('bitset_clear')\nmisc/misc_c.pyx:    bitset_clear(r)\nmisc/misc_c.pyx:        bitset_clear(r)\nmisc/misc_c.pyx:        bitset_clear(r)\nmisc/misc_c.pyx:        bitset_clear(r)\nmisc/misc_c.pyx:        bitset_clear(r)\nmisc/bitset.pxi:cdef inline void bitset_clear(bitset_t bits):\nmisc/bitset.pxi:    This function is the same as bitset_clear(bits).\nmisc/bitset.pxi:    bitset_clear(bits)\nmisc/bitset.pxi:        bitset_clear(r)\nmisc/bitset.pxi:        bitset_clear(r)\n```\n\n\nSo I took care of all bitset_clear functions in existing code (the ones above in the misc/ directory use the new bitset_clear).\n\nBecause this was such a massive revision of the original patch, I'm calling for review again.",
+    "body": "Attachment [trac-5796-bitset-docs-api-cleanup.3.patch](tarball://root/attachments/some-uuid/ticket5796/trac-5796-bitset-docs-api-cleanup.3.patch) by jason created at 2009-04-16 18:55:38\n\nOkay, either Robert, I think the .3.patch file is a good final version.  Can you look at it one more time?  I drastically cut down on the number of changes to existing code, just doing the necessary bitset_clear to bitset_free transition talked about above.\n\nAll tests pass in groups/perm_gps/partn_ref/*.pyx, coding/binary_code.pyx, and misc/*.pyx\n\nYou can delete all patches prior to the .3.patch.\n\nFurthermore, after the patch:\n\n\n```\nsage: search_src('bitset_clear')\nmisc/misc_c.pyx:    bitset_clear(r)\nmisc/misc_c.pyx:        bitset_clear(r)\nmisc/misc_c.pyx:        bitset_clear(r)\nmisc/misc_c.pyx:        bitset_clear(r)\nmisc/misc_c.pyx:        bitset_clear(r)\nmisc/bitset.pxi:cdef inline void bitset_clear(bitset_t bits):\nmisc/bitset.pxi:    This function is the same as bitset_clear(bits).\nmisc/bitset.pxi:    bitset_clear(bits)\nmisc/bitset.pxi:        bitset_clear(r)\nmisc/bitset.pxi:        bitset_clear(r)\n```\n\n\nSo I took care of all bitset_clear functions in existing code (the ones above in the misc/ directory use the new bitset_clear).\n\nBecause this was such a massive revision of the original patch, I'm calling for review again.",
     "created_at": "2009-04-16T18:55:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5796",
     "type": "issue_comment",
@@ -410,7 +410,7 @@ archive/issue_comments_045467.json:
 }
 ```
 
-Attachment
+Attachment [trac-5796-bitset-docs-api-cleanup.3.patch](tarball://root/attachments/some-uuid/ticket5796/trac-5796-bitset-docs-api-cleanup.3.patch) by jason created at 2009-04-16 18:55:38
 
 Okay, either Robert, I think the .3.patch file is a good final version.  Can you look at it one more time?  I drastically cut down on the number of changes to existing code, just doing the necessary bitset_clear to bitset_free transition talked about above.
 
@@ -512,7 +512,7 @@ Could you glance at the trac-5796-bitset-bugfix-len-function.patch and, if you l
 archive/issue_comments_045471.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of first patch.",
+    "body": "Attachment [trac-5796-bitset-bugfix-len-function.patch](tarball://root/attachments/some-uuid/ticket5796/trac-5796-bitset-bugfix-len-function.patch) by jason created at 2009-04-20 17:54:49\n\napply on top of first patch.",
     "created_at": "2009-04-20T17:54:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5796",
     "type": "issue_comment",
@@ -521,7 +521,7 @@ archive/issue_comments_045471.json:
 }
 ```
 
-Attachment
+Attachment [trac-5796-bitset-bugfix-len-function.patch](tarball://root/attachments/some-uuid/ticket5796/trac-5796-bitset-bugfix-len-function.patch) by jason created at 2009-04-20 17:54:49
 
 apply on top of first patch.
 
@@ -617,7 +617,7 @@ apply on top of previous patches
 archive/issue_comments_045476.json:
 ```json
 {
-    "body": "Attachment\n\nThe 64-bit-doctest.patch addresses the doctest failure on 64-bit machines.",
+    "body": "Attachment [64-bit-doctest.patch](tarball://root/attachments/some-uuid/ticket5796/64-bit-doctest.patch) by jason created at 2009-05-06 04:12:44\n\nThe 64-bit-doctest.patch addresses the doctest failure on 64-bit machines.",
     "created_at": "2009-05-06T04:12:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5796",
     "type": "issue_comment",
@@ -626,7 +626,7 @@ archive/issue_comments_045476.json:
 }
 ```
 
-Attachment
+Attachment [64-bit-doctest.patch](tarball://root/attachments/some-uuid/ticket5796/64-bit-doctest.patch) by jason created at 2009-05-06 04:12:44
 
 The 64-bit-doctest.patch addresses the doctest failure on 64-bit machines.
 

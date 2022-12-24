@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7151
 archive/issue_comments_059246.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7151_quaternion_group.patch](tarball://root/attachments/some-uuid/ticket7151/trac_7151_quaternion_group.patch) by rbeezer created at 2009-10-08 05:56:40",
     "created_at": "2009-10-08T05:56:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7151",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_059246.json:
 }
 ```
 
-Attachment
+Attachment [trac_7151_quaternion_group.patch](tarball://root/attachments/some-uuid/ticket7151/trac_7151_quaternion_group.patch) by rbeezer created at 2009-10-08 05:56:40
 
 
 

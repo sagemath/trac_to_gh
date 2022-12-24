@@ -47,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4337
 archive/issue_comments_031806.json:
 ```json
 {
-    "body": "Attachment\n\npatch against 3.4.2.final",
+    "body": "Attachment [trac_4337.patch](tarball://root/attachments/some-uuid/ticket4337/trac_4337.patch) by davidloeffler created at 2009-05-05 16:42:54\n\npatch against 3.4.2.final",
     "created_at": "2009-05-05T16:42:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4337",
     "type": "issue_comment",
@@ -56,7 +56,7 @@ archive/issue_comments_031806.json:
 }
 ```
 
-Attachment
+Attachment [trac_4337.patch](tarball://root/attachments/some-uuid/ticket4337/trac_4337.patch) by davidloeffler created at 2009-05-05 16:42:54
 
 patch against 3.4.2.final
 
@@ -123,7 +123,7 @@ Changing status from new to assigned.
 archive/issue_comments_031810.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4337_pt2.patch](tarball://root/attachments/some-uuid/ticket4337/trac_4337_pt2.patch) by craigcitro created at 2009-05-08 06:51:35",
     "created_at": "2009-05-08T06:51:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4337",
     "type": "issue_comment",
@@ -132,7 +132,7 @@ archive/issue_comments_031810.json:
 }
 ```
 
-Attachment
+Attachment [trac_4337_pt2.patch](tarball://root/attachments/some-uuid/ticket4337/trac_4337_pt2.patch) by craigcitro created at 2009-05-08 06:51:35
 
 
 
@@ -211,7 +211,7 @@ I think something is wrong with the third patch? trac tells me it's 225 bytes, w
 archive/issue_comments_031814.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4337_pt3.patch](tarball://root/attachments/some-uuid/ticket4337/trac_4337_pt3.patch) by davidloeffler created at 2009-05-08 10:07:38",
     "created_at": "2009-05-08T10:07:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4337",
     "type": "issue_comment",
@@ -220,7 +220,7 @@ archive/issue_comments_031814.json:
 }
 ```
 
-Attachment
+Attachment [trac_4337_pt3.patch](tarball://root/attachments/some-uuid/ticket4337/trac_4337_pt3.patch) by davidloeffler created at 2009-05-08 10:07:38
 
 
 
@@ -283,7 +283,7 @@ Looks like you weren't the only one that was sloppy: neither of us ran a full do
 archive/issue_comments_031818.json:
 ```json
 {
-    "body": "Attachment\n\napply over previous three",
+    "body": "Attachment [trac_4337_docfix.patch](tarball://root/attachments/some-uuid/ticket4337/trac_4337_docfix.patch) by davidloeffler created at 2009-05-11 07:06:10\n\napply over previous three",
     "created_at": "2009-05-11T07:06:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4337",
     "type": "issue_comment",
@@ -292,7 +292,7 @@ archive/issue_comments_031818.json:
 }
 ```
 
-Attachment
+Attachment [trac_4337_docfix.patch](tarball://root/attachments/some-uuid/ticket4337/trac_4337_docfix.patch) by davidloeffler created at 2009-05-11 07:06:10
 
 apply over previous three
 

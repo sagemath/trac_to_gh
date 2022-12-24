@@ -63,7 +63,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6238
 archive/issue_comments_049832.json:
 ```json
 {
-    "body": "Attachment\n\nThe problem is that you are never asking the graph to remember the embedding, so when you show the graph, you are just looking at some random embedding.\n\nThe way to do what you're trying to do is to ask the graph to remember the planar positioning:\n\n```\nsage: G.is_planar(set_embedding=True, set_pos=True)\n```\n\n\ni.e. change a 'False' to a 'True'. :)",
+    "body": "Attachment [is_planar-example.png](tarball://root/attachments/some-uuid/ticket6238/is_planar-example.png) by rlm created at 2009-07-13 21:32:00\n\nThe problem is that you are never asking the graph to remember the embedding, so when you show the graph, you are just looking at some random embedding.\n\nThe way to do what you're trying to do is to ask the graph to remember the planar positioning:\n\n```\nsage: G.is_planar(set_embedding=True, set_pos=True)\n```\n\n\ni.e. change a 'False' to a 'True'. :)",
     "created_at": "2009-07-13T21:32:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6238",
     "type": "issue_comment",
@@ -72,7 +72,7 @@ archive/issue_comments_049832.json:
 }
 ```
 
-Attachment
+Attachment [is_planar-example.png](tarball://root/attachments/some-uuid/ticket6238/is_planar-example.png) by rlm created at 2009-07-13 21:32:00
 
 The problem is that you are never asking the graph to remember the embedding, so when you show the graph, you are just looking at some random embedding.
 

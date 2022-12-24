@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4919
 archive/issue_comments_037324.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4919.patch](tarball://root/attachments/some-uuid/ticket4919/trac_4919.patch) by mhansen created at 2009-01-02 02:23:05",
     "created_at": "2009-01-02T02:23:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4919",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_037324.json:
 }
 ```
 
-Attachment
+Attachment [trac_4919.patch](tarball://root/attachments/some-uuid/ticket4919/trac_4919.patch) by mhansen created at 2009-01-02 02:23:05
 
 
 
@@ -117,7 +117,7 @@ trace.py: not part of the reference manual.  looks good anyway.
 archive/issue_comments_037326.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4919-2.patch](tarball://root/attachments/some-uuid/ticket4919/trac_4919-2.patch) by mhansen created at 2009-01-11 03:45:12",
     "created_at": "2009-01-11T03:45:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4919",
     "type": "issue_comment",
@@ -126,7 +126,7 @@ archive/issue_comments_037326.json:
 }
 ```
 
-Attachment
+Attachment [trac_4919-2.patch](tarball://root/attachments/some-uuid/ticket4919/trac_4919-2.patch) by mhansen created at 2009-01-11 03:45:12
 
 
 
@@ -175,7 +175,7 @@ archive/issue_comments_037328.json:
 archive/issue_comments_037329.json:
 ```json
 {
-    "body": "Attachment\n\nI still see the problem with lines 415-419 in hg.py: should be an itemized list, not a paragraph.",
+    "body": "Attachment [sage.misc-final.patch](tarball://root/attachments/some-uuid/ticket4919/sage.misc-final.patch) by jhpalmieri created at 2009-02-21 23:04:09\n\nI still see the problem with lines 415-419 in hg.py: should be an itemized list, not a paragraph.",
     "created_at": "2009-02-21T23:04:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4919",
     "type": "issue_comment",
@@ -184,7 +184,7 @@ archive/issue_comments_037329.json:
 }
 ```
 
-Attachment
+Attachment [sage.misc-final.patch](tarball://root/attachments/some-uuid/ticket4919/sage.misc-final.patch) by jhpalmieri created at 2009-02-21 23:04:09
 
 I still see the problem with lines 415-419 in hg.py: should be an itemized list, not a paragraph.
 

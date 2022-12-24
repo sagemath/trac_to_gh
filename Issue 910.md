@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/910
 archive/issue_comments_005593.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [grout.hg](tarball://root/attachments/some-uuid/ticket910/grout.hg) by ekirkman created at 2007-10-16 22:56:42",
     "created_at": "2007-10-16T22:56:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/910",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_005593.json:
 }
 ```
 
-Attachment
+Attachment [grout.hg](tarball://root/attachments/some-uuid/ticket910/grout.hg) by ekirkman created at 2007-10-16 22:56:42
 
 
 

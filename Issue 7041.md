@@ -209,7 +209,7 @@ Changing status from new to needs_review.
 archive/issue_comments_058294.json:
 ```json
 {
-    "body": "Attachment\n\nDiff between the previous spkg in Sage and my new p7 spkg.  For reference / review only.",
+    "body": "Attachment [gap-4.4.12.p6-p7.diff](tarball://root/attachments/some-uuid/ticket7041/gap-4.4.12.p6-p7.diff) by leif created at 2012-04-09 12:18:19\n\nDiff between the previous spkg in Sage and my new p7 spkg.  For reference / review only.",
     "created_at": "2012-04-09T12:18:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7041",
     "type": "issue_comment",
@@ -218,7 +218,7 @@ archive/issue_comments_058294.json:
 }
 ```
 
-Attachment
+Attachment [gap-4.4.12.p6-p7.diff](tarball://root/attachments/some-uuid/ticket7041/gap-4.4.12.p6-p7.diff) by leif created at 2012-04-09 12:18:19
 
 Diff between the previous spkg in Sage and my new p7 spkg.  For reference / review only.
 

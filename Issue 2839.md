@@ -87,7 +87,7 @@ Changing component from Cygwin to combinatorics.
 archive/issue_comments_019475.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2839.patch](tarball://root/attachments/some-uuid/ticket2839/2839.patch) by mhansen created at 2008-04-07 07:16:41",
     "created_at": "2008-04-07T07:16:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2839",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_019475.json:
 }
 ```
 
-Attachment
+Attachment [2839.patch](tarball://root/attachments/some-uuid/ticket2839/2839.patch) by mhansen created at 2008-04-07 07:16:41
 
 
 

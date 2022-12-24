@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2342
 archive/issue_comments_015682.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [graph-axes.patch](tarball://root/attachments/some-uuid/ticket2342/graph-axes.patch) by rlm created at 2008-02-28 05:22:19",
     "created_at": "2008-02-28T05:22:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2342",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_015682.json:
 }
 ```
 
-Attachment
+Attachment [graph-axes.patch](tarball://root/attachments/some-uuid/ticket2342/graph-axes.patch) by rlm created at 2008-02-28 05:22:19
 
 
 
@@ -67,7 +67,7 @@ applying the patch appears to fix the problem of axes; looks good to me.
 archive/issue_comments_015684.json:
 ```json
 {
-    "body": "Attachment\n\nMerged both patches in Sage 2.10.3.rc0",
+    "body": "Attachment [2342-doc.patch](tarball://root/attachments/some-uuid/ticket2342/2342-doc.patch) by mabshoff created at 2008-02-28 06:26:38\n\nMerged both patches in Sage 2.10.3.rc0",
     "created_at": "2008-02-28T06:26:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2342",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_015684.json:
 }
 ```
 
-Attachment
+Attachment [2342-doc.patch](tarball://root/attachments/some-uuid/ticket2342/2342-doc.patch) by mabshoff created at 2008-02-28 06:26:38
 
 Merged both patches in Sage 2.10.3.rc0
 

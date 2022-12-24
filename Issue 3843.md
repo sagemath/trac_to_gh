@@ -59,7 +59,7 @@ I don't see how to make it easier to figure out...
 archive/issue_comments_027330.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3843-come_on.patch](tarball://root/attachments/some-uuid/ticket3843/trac_3843-come_on.patch) by rlm created at 2008-08-13 22:18:56",
     "created_at": "2008-08-13T22:18:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3843",
     "type": "issue_comment",
@@ -68,7 +68,7 @@ archive/issue_comments_027330.json:
 }
 ```
 
-Attachment
+Attachment [trac_3843-come_on.patch](tarball://root/attachments/some-uuid/ticket3843/trac_3843-come_on.patch) by rlm created at 2008-08-13 22:18:56
 
 
 
@@ -77,7 +77,7 @@ Attachment
 archive/issue_comments_027331.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3843-plot-trees.patch](tarball://root/attachments/some-uuid/ticket3843/trac_3843-plot-trees.patch) by rlm created at 2008-08-13 23:32:49",
     "created_at": "2008-08-13T23:32:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3843",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_027331.json:
 }
 ```
 
-Attachment
+Attachment [trac_3843-plot-trees.patch](tarball://root/attachments/some-uuid/ticket3843/trac_3843-plot-trees.patch) by rlm created at 2008-08-13 23:32:49
 
 
 
@@ -115,7 +115,7 @@ One note- many doctests are deleted in this patch, since I have probably spent a
 archive/issue_comments_027333.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3843-docs.patch](tarball://root/attachments/some-uuid/ticket3843/trac_3843-docs.patch) by ekirkman created at 2008-08-14 01:08:35",
     "created_at": "2008-08-14T01:08:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3843",
     "type": "issue_comment",
@@ -124,7 +124,7 @@ archive/issue_comments_027333.json:
 }
 ```
 
-Attachment
+Attachment [trac_3843-docs.patch](tarball://root/attachments/some-uuid/ticket3843/trac_3843-docs.patch) by ekirkman created at 2008-08-14 01:08:35
 
 
 
@@ -173,7 +173,7 @@ diff file with my suggested changes
 archive/issue_comments_027336.json:
 ```json
 {
-    "body": "Attachment\n\n+1 to saliola's patch. I haven't tested it, but I completely agree with the idea.",
+    "body": "Attachment [trac_3843-reviewer-suggestions.patch](tarball://root/attachments/some-uuid/ticket3843/trac_3843-reviewer-suggestions.patch) by rlm created at 2008-08-14 17:53:50\n\n+1 to saliola's patch. I haven't tested it, but I completely agree with the idea.",
     "created_at": "2008-08-14T17:53:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3843",
     "type": "issue_comment",
@@ -182,7 +182,7 @@ archive/issue_comments_027336.json:
 }
 ```
 
-Attachment
+Attachment [trac_3843-reviewer-suggestions.patch](tarball://root/attachments/some-uuid/ticket3843/trac_3843-reviewer-suggestions.patch) by rlm created at 2008-08-14 17:53:50
 
 +1 to saliola's patch. I haven't tested it, but I completely agree with the idea.
 
@@ -213,7 +213,7 @@ Sorry, was. You were right. :-)
 archive/issue_comments_027338.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3843-plot-options.patch](tarball://root/attachments/some-uuid/ticket3843/trac_3843-plot-options.patch) by rlm created at 2008-08-16 21:06:20",
     "created_at": "2008-08-16T21:06:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3843",
     "type": "issue_comment",
@@ -222,7 +222,7 @@ archive/issue_comments_027338.json:
 }
 ```
 
-Attachment
+Attachment [trac_3843-plot-options.patch](tarball://root/attachments/some-uuid/ticket3843/trac_3843-plot-options.patch) by rlm created at 2008-08-16 21:06:20
 
 
 
@@ -294,7 +294,7 @@ Total time for all tests: 300.7 seconds
 archive/issue_comments_027341.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3843-flat-and-fixed.2.patch](tarball://root/attachments/some-uuid/ticket3843/trac_3843-flat-and-fixed.2.patch) by rlm created at 2008-08-30 19:58:50",
     "created_at": "2008-08-30T19:58:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3843",
     "type": "issue_comment",
@@ -303,7 +303,7 @@ archive/issue_comments_027341.json:
 }
 ```
 
-Attachment
+Attachment [trac_3843-flat-and-fixed.2.patch](tarball://root/attachments/some-uuid/ticket3843/trac_3843-flat-and-fixed.2.patch) by rlm created at 2008-08-30 19:58:50
 
 
 

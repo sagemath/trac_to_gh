@@ -46,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3811
 archive/issue_comments_027089.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3811-ncalexan-number-field-comparision.patch](tarball://root/attachments/some-uuid/ticket3811/3811-ncalexan-number-field-comparision.patch) by ncalexan created at 2008-08-12 05:07:27",
     "created_at": "2008-08-12T05:07:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3811",
     "type": "issue_comment",
@@ -55,7 +55,7 @@ archive/issue_comments_027089.json:
 }
 ```
 
-Attachment
+Attachment [3811-ncalexan-number-field-comparision.patch](tarball://root/attachments/some-uuid/ticket3811/3811-ncalexan-number-field-comparision.patch) by ncalexan created at 2008-08-12 05:07:27
 
 
 

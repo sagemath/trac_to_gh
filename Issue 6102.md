@@ -286,7 +286,7 @@ Because of this, I haven't tried to implement cup products for Delta complexes. 
 archive/issue_comments_048731.json:
 ```json
 {
-    "body": "Attachment\n\nBranch pushed to git repo; I updated commit sha1. New commits:",
+    "body": "Attachment [AT_model.py](tarball://root/attachments/some-uuid/ticket6102/AT_model.py) by git created at 2015-10-07 20:04:22\n\nBranch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2015-10-07T20:04:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6102",
     "type": "issue_comment",
@@ -295,7 +295,7 @@ archive/issue_comments_048731.json:
 }
 ```
 
-Attachment
+Attachment [AT_model.py](tarball://root/attachments/some-uuid/ticket6102/AT_model.py) by git created at 2015-10-07 20:04:22
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 

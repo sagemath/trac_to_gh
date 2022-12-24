@@ -97,7 +97,7 @@ Changing component from algebraic geometry to user interface.
 archive/issue_comments_000488.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [junk](tarball://root/attachments/some-uuid/ticket104/junk) by justin created at 2006-10-02 06:36:23",
     "created_at": "2006-10-02T06:36:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/104",
     "type": "issue_comment",
@@ -106,7 +106,7 @@ archive/issue_comments_000488.json:
 }
 ```
 
-Attachment
+Attachment [junk](tarball://root/attachments/some-uuid/ticket104/junk) by justin created at 2006-10-02 06:36:23
 
 
 

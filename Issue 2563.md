@@ -53,7 +53,7 @@ Caution: this is a GNU patch so that I do not dirty my commit history
 archive/issue_comments_017473.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_2653-doc-fixes.patch](tarball://root/attachments/some-uuid/ticket2563/trac_2653-doc-fixes.patch) by mabshoff created at 2008-03-17 00:25:19",
     "created_at": "2008-03-17T00:25:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2563",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_017473.json:
 }
 ```
 
-Attachment
+Attachment [trac_2653-doc-fixes.patch](tarball://root/attachments/some-uuid/ticket2563/trac_2653-doc-fixes.patch) by mabshoff created at 2008-03-17 00:25:19
 
 
 

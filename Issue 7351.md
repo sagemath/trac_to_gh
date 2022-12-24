@@ -46,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7351
 archive/issue_comments_061582.json:
 ```json
 {
-    "body": "Attachment\n\nthis fixes the issue for me",
+    "body": "Attachment [singular_startup_time.patch](tarball://root/attachments/some-uuid/ticket7351/singular_startup_time.patch) by malb created at 2009-11-18 13:01:41\n\nthis fixes the issue for me",
     "created_at": "2009-11-18T13:01:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7351",
     "type": "issue_comment",
@@ -55,7 +55,7 @@ archive/issue_comments_061582.json:
 }
 ```
 
-Attachment
+Attachment [singular_startup_time.patch](tarball://root/attachments/some-uuid/ticket7351/singular_startup_time.patch) by malb created at 2009-11-18 13:01:41
 
 this fixes the issue for me
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3764
 archive/issue_comments_026762.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3764_1.patch](tarball://root/attachments/some-uuid/ticket3764/sage-3764_1.patch) by TimothyClemans created at 2008-08-03 14:07:30",
     "created_at": "2008-08-03T14:07:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3764",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_026762.json:
 }
 ```
 
-Attachment
+Attachment [sage-3764_1.patch](tarball://root/attachments/some-uuid/ticket3764/sage-3764_1.patch) by TimothyClemans created at 2008-08-03 14:07:30
 
 
 
@@ -49,7 +49,7 @@ Attachment
 archive/issue_comments_026763.json:
 ```json
 {
-    "body": "Attachment\n\nNote: there is a script for applying the various Notebook patches. The base is sage-3.0.6. \n\nhttp://sage.math.washington.edu/home/tclemans/uw_contract_work/apply_patches.sage",
+    "body": "Attachment [sage-3764-2.patch](tarball://root/attachments/some-uuid/ticket3764/sage-3764-2.patch) by TimothyClemans created at 2008-08-03 14:32:19\n\nNote: there is a script for applying the various Notebook patches. The base is sage-3.0.6. \n\nhttp://sage.math.washington.edu/home/tclemans/uw_contract_work/apply_patches.sage",
     "created_at": "2008-08-03T14:32:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3764",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_026763.json:
 }
 ```
 
-Attachment
+Attachment [sage-3764-2.patch](tarball://root/attachments/some-uuid/ticket3764/sage-3764-2.patch) by TimothyClemans created at 2008-08-03 14:32:19
 
 Note: there is a script for applying the various Notebook patches. The base is sage-3.0.6. 
 
@@ -71,7 +71,7 @@ http://sage.math.washington.edu/home/tclemans/uw_contract_work/apply_patches.sag
 archive/issue_comments_026764.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3764_4.patch](tarball://root/attachments/some-uuid/ticket3764/sage-3764_4.patch) by TimothyClemans created at 2008-08-03 16:48:39",
     "created_at": "2008-08-03T16:48:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3764",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_026764.json:
 }
 ```
 
-Attachment
+Attachment [sage-3764_4.patch](tarball://root/attachments/some-uuid/ticket3764/sage-3764_4.patch) by TimothyClemans created at 2008-08-03 16:48:39
 
 
 
@@ -89,7 +89,7 @@ Attachment
 archive/issue_comments_026765.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3764_5.patch](tarball://root/attachments/some-uuid/ticket3764/sage-3764_5.patch) by TimothyClemans created at 2008-08-03 17:09:33",
     "created_at": "2008-08-03T17:09:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3764",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_026765.json:
 }
 ```
 
-Attachment
+Attachment [sage-3764_5.patch](tarball://root/attachments/some-uuid/ticket3764/sage-3764_5.patch) by TimothyClemans created at 2008-08-03 17:09:33
 
 
 
@@ -107,7 +107,7 @@ Attachment
 archive/issue_comments_026766.json:
 ```json
 {
-    "body": "Attachment\n\nremoved log_server stuff from Notebook class since it doesn't do anything",
+    "body": "Attachment [sage-3764_6.patch](tarball://root/attachments/some-uuid/ticket3764/sage-3764_6.patch) by TimothyClemans created at 2008-08-03 17:33:29\n\nremoved log_server stuff from Notebook class since it doesn't do anything",
     "created_at": "2008-08-03T17:33:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3764",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_026766.json:
 }
 ```
 
-Attachment
+Attachment [sage-3764_6.patch](tarball://root/attachments/some-uuid/ticket3764/sage-3764_6.patch) by TimothyClemans created at 2008-08-03 17:33:29
 
 removed log_server stuff from Notebook class since it doesn't do anything
 
@@ -151,7 +151,7 @@ Michael
 archive/issue_comments_026768.json:
 ```json
 {
-    "body": "Attachment\n\nfollowup upon refereeing the code",
+    "body": "Attachment [sage-3764_7.patch](tarball://root/attachments/some-uuid/ticket3764/sage-3764_7.patch) by was created at 2008-08-10 03:42:59\n\nfollowup upon refereeing the code",
     "created_at": "2008-08-10T03:42:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3764",
     "type": "issue_comment",
@@ -160,7 +160,7 @@ archive/issue_comments_026768.json:
 }
 ```
 
-Attachment
+Attachment [sage-3764_7.patch](tarball://root/attachments/some-uuid/ticket3764/sage-3764_7.patch) by was created at 2008-08-10 03:42:59
 
 followup upon refereeing the code
 

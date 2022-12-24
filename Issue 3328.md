@@ -58,7 +58,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3328
 archive/issue_comments_023079.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [spkg-install.patch](tarball://root/attachments/some-uuid/ticket3328/spkg-install.patch) by fbissey created at 2008-05-29 09:38:48",
     "created_at": "2008-05-29T09:38:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3328",
     "type": "issue_comment",
@@ -67,7 +67,7 @@ archive/issue_comments_023079.json:
 }
 ```
 
-Attachment
+Attachment [spkg-install.patch](tarball://root/attachments/some-uuid/ticket3328/spkg-install.patch) by fbissey created at 2008-05-29 09:38:48
 
 
 
@@ -76,7 +76,7 @@ Attachment
 archive/issue_comments_023080.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-env.patch](tarball://root/attachments/some-uuid/ticket3328/sage-env.patch) by fbissey created at 2008-05-29 09:39:18",
     "created_at": "2008-05-29T09:39:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3328",
     "type": "issue_comment",
@@ -85,7 +85,7 @@ archive/issue_comments_023080.json:
 }
 ```
 
-Attachment
+Attachment [sage-env.patch](tarball://root/attachments/some-uuid/ticket3328/sage-env.patch) by fbissey created at 2008-05-29 09:39:18
 
 
 

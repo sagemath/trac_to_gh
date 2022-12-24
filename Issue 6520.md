@@ -89,7 +89,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_053157.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6520_weakref-cached-function-dr.patch](tarball://root/attachments/some-uuid/ticket6520/trac_6520_weakref-cached-function-dr.patch) by nthiery created at 2009-07-13 06:36:07",
     "created_at": "2009-07-13T06:36:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6520",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_053157.json:
 }
 ```
 
-Attachment
+Attachment [trac_6520_weakref-cached-function-dr.patch](tarball://root/attachments/some-uuid/ticket6520/trac_6520_weakref-cached-function-dr.patch) by nthiery created at 2009-07-13 06:36:07
 
 
 

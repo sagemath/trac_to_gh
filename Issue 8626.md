@@ -127,7 +127,7 @@ sage: m.eigenvalues()
 archive/issue_comments_078208.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-8626-qqbar-sqrt-printing.patch](tarball://root/attachments/some-uuid/ticket8626/trac-8626-qqbar-sqrt-printing.patch) by jason created at 2010-04-21 02:47:08",
     "created_at": "2010-04-21T02:47:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8626",
     "type": "issue_comment",
@@ -136,7 +136,7 @@ archive/issue_comments_078208.json:
 }
 ```
 
-Attachment
+Attachment [trac-8626-qqbar-sqrt-printing.patch](tarball://root/attachments/some-uuid/ticket8626/trac-8626-qqbar-sqrt-printing.patch) by jason created at 2010-04-21 02:47:08
 
 
 
@@ -163,7 +163,7 @@ apply on top of previous patch
 archive/issue_comments_078210.json:
 ```json
 {
-    "body": "Attachment\n\nI've attached a work-in-progress patch that allows qqbar elements to be converted to symbolics elements in a smart way, i.e., square roots become symbolic square roots, etc.",
+    "body": "Attachment [trac-8626-qqbar-symbolics.patch](tarball://root/attachments/some-uuid/ticket8626/trac-8626-qqbar-symbolics.patch) by jason created at 2010-04-21 02:48:55\n\nI've attached a work-in-progress patch that allows qqbar elements to be converted to symbolics elements in a smart way, i.e., square roots become symbolic square roots, etc.",
     "created_at": "2010-04-21T02:48:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8626",
     "type": "issue_comment",
@@ -172,7 +172,7 @@ archive/issue_comments_078210.json:
 }
 ```
 
-Attachment
+Attachment [trac-8626-qqbar-symbolics.patch](tarball://root/attachments/some-uuid/ticket8626/trac-8626-qqbar-symbolics.patch) by jason created at 2010-04-21 02:48:55
 
 I've attached a work-in-progress patch that allows qqbar elements to be converted to symbolics elements in a smart way, i.e., square roots become symbolic square roots, etc.
 

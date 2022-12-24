@@ -158,7 +158,7 @@ Try it...
 archive/issue_comments_099630.json:
 ```json
 {
-    "body": "Attachment\n\nRenames \"GP/PARI\" to \"PARI/GP\"",
+    "body": "Attachment [9959_rename_pari_gp.patch](tarball://root/attachments/some-uuid/ticket9959/9959_rename_pari_gp.patch) by jdemeyer created at 2010-09-21 21:27:25\n\nRenames \"GP/PARI\" to \"PARI/GP\"",
     "created_at": "2010-09-21T21:27:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
@@ -167,7 +167,7 @@ archive/issue_comments_099630.json:
 }
 ```
 
-Attachment
+Attachment [9959_rename_pari_gp.patch](tarball://root/attachments/some-uuid/ticket9959/9959_rename_pari_gp.patch) by jdemeyer created at 2010-09-21 21:27:25
 
 Renames "GP/PARI" to "PARI/GP"
 
@@ -403,7 +403,7 @@ Don't set the 'breakloop' default in Sage
 archive/issue_comments_099642.json:
 ```json
 {
-    "body": "Attachment\n\nAdd doctest for error recovery",
+    "body": "Attachment [9959_gp_error_doctest.patch](tarball://root/attachments/some-uuid/ticket9959/9959_gp_error_doctest.patch) by jdemeyer created at 2010-09-23 07:47:39\n\nAdd doctest for error recovery",
     "created_at": "2010-09-23T07:47:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
@@ -412,7 +412,7 @@ archive/issue_comments_099642.json:
 }
 ```
 
-Attachment
+Attachment [9959_gp_error_doctest.patch](tarball://root/attachments/some-uuid/ticket9959/9959_gp_error_doctest.patch) by jdemeyer created at 2010-09-23 07:47:39
 
 Add doctest for error recovery
 
@@ -462,7 +462,7 @@ It's a pity that we had to patch the gp source code -- clearly that was an optio
 archive/issue_comments_099645.json:
 ```json
 {
-    "body": "Attachment\n\nPatch for the PARI spkg .p7 to .p8 (for review)",
+    "body": "Attachment [pari.p8.patch](tarball://root/attachments/some-uuid/ticket9959/pari.p8.patch) by jdemeyer created at 2010-09-23 08:31:20\n\nPatch for the PARI spkg .p7 to .p8 (for review)",
     "created_at": "2010-09-23T08:31:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
@@ -471,7 +471,7 @@ archive/issue_comments_099645.json:
 }
 ```
 
-Attachment
+Attachment [pari.p8.patch](tarball://root/attachments/some-uuid/ticket9959/pari.p8.patch) by jdemeyer created at 2010-09-23 08:31:20
 
 Patch for the PARI spkg .p7 to .p8 (for review)
 
@@ -731,7 +731,7 @@ Use $SAGE_ROOT/local/etc/gprc.expect as .gprc file
 archive/issue_comments_099657.json:
 ```json
 {
-    "body": "Attachment\n\nNew spkg: [http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-12577.p9.spkg](http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-12577.p9.spkg).  This is based on **p7** (not p8) and adds the `gprc.expect` file.  So installing the new spkg and applying all 4 patches should do it.",
+    "body": "Attachment [9959_gprc.patch](tarball://root/attachments/some-uuid/ticket9959/9959_gprc.patch) by jdemeyer created at 2010-09-24 14:40:01\n\nNew spkg: [http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-12577.p9.spkg](http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-12577.p9.spkg).  This is based on **p7** (not p8) and adds the `gprc.expect` file.  So installing the new spkg and applying all 4 patches should do it.",
     "created_at": "2010-09-24T14:40:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
@@ -740,7 +740,7 @@ archive/issue_comments_099657.json:
 }
 ```
 
-Attachment
+Attachment [9959_gprc.patch](tarball://root/attachments/some-uuid/ticket9959/9959_gprc.patch) by jdemeyer created at 2010-09-24 14:40:01
 
 New spkg: [http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-12577.p9.spkg](http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-12577.p9.spkg).  This is based on **p7** (not p8) and adds the `gprc.expect` file.  So installing the new spkg and applying all 4 patches should do it.
 
@@ -880,7 +880,7 @@ archive/issue_comments_099664.json:
 archive/issue_comments_099665.json:
 ```json
 {
-    "body": "Attachment\n\nPatch for the PARI spkg .p7 to .p9 (for review)",
+    "body": "Attachment [pari.p9.patch](tarball://root/attachments/some-uuid/ticket9959/pari.p9.patch) by jdemeyer created at 2010-09-24 17:07:30\n\nPatch for the PARI spkg .p7 to .p9 (for review)",
     "created_at": "2010-09-24T17:07:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
@@ -889,7 +889,7 @@ archive/issue_comments_099665.json:
 }
 ```
 
-Attachment
+Attachment [pari.p9.patch](tarball://root/attachments/some-uuid/ticket9959/pari.p9.patch) by jdemeyer created at 2010-09-24 17:07:30
 
 Patch for the PARI spkg .p7 to .p9 (for review)
 
@@ -936,7 +936,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_099668.json:
 ```json
 {
-    "body": "Attachment\n\nAll 4 sagelib patches combined",
+    "body": "Attachment [9959_combined.patch](tarball://root/attachments/some-uuid/ticket9959/9959_combined.patch) by jdemeyer created at 2010-09-26 17:35:35\n\nAll 4 sagelib patches combined",
     "created_at": "2010-09-26T17:35:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
@@ -945,7 +945,7 @@ archive/issue_comments_099668.json:
 }
 ```
 
-Attachment
+Attachment [9959_combined.patch](tarball://root/attachments/some-uuid/ticket9959/9959_combined.patch) by jdemeyer created at 2010-09-26 17:35:35
 
 All 4 sagelib patches combined
 

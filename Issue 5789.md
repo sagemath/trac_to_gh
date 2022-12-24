@@ -267,7 +267,7 @@ Michael
 archive/issue_comments_045320.json:
 ```json
 {
-    "body": "Attachment\n\nI updated the patch to take care of this.",
+    "body": "Attachment [trac_5789.patch](tarball://root/attachments/some-uuid/ticket5789/trac_5789.patch) by mhansen created at 2009-04-15 21:34:52\n\nI updated the patch to take care of this.",
     "created_at": "2009-04-15T21:34:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5789",
     "type": "issue_comment",
@@ -276,7 +276,7 @@ archive/issue_comments_045320.json:
 }
 ```
 
-Attachment
+Attachment [trac_5789.patch](tarball://root/attachments/some-uuid/ticket5789/trac_5789.patch) by mhansen created at 2009-04-15 21:34:52
 
 I updated the patch to take care of this.
 

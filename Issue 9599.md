@@ -215,7 +215,7 @@ The commit message will have to be changed to reflect number, also you should sp
 archive/issue_comments_092889.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9599.patch](tarball://root/attachments/some-uuid/ticket9599/trac_9599.patch) by malb created at 2011-01-26 20:22:11",
     "created_at": "2011-01-26T20:22:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9599",
     "type": "issue_comment",
@@ -224,7 +224,7 @@ archive/issue_comments_092889.json:
 }
 ```
 
-Attachment
+Attachment [trac_9599.patch](tarball://root/attachments/some-uuid/ticket9599/trac_9599.patch) by malb created at 2011-01-26 20:22:11
 
 
 

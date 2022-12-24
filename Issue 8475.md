@@ -211,7 +211,7 @@ That way, you provide more context for why you are writing that test. Plus, it m
 archive/issue_comments_076384.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:3 mvngu]:\n> In the \"TESTS:\" section, you should saying something like:\n> {{{\n> TESTS:\n> \n> Test that #8475 is fixed::\n> \n>     <put-your-tests-here>\n> }}}\n> That way, you provide more context for why you are writing that test. Plus, it makes it easier to locate the relevant ticket number. I leave it up to you to modify the patch as appropriate.\n\nDone. Please re-review.",
+    "body": "Attachment [trac_8475-alphabet_pickling_fix-fh.patch](tarball://root/attachments/some-uuid/ticket8475/trac_8475-alphabet_pickling_fix-fh.patch) by hivert created at 2010-03-10 08:09:39\n\nReplying to [comment:3 mvngu]:\n> In the \"TESTS:\" section, you should saying something like:\n> {{{\n> TESTS:\n> \n> Test that #8475 is fixed::\n> \n>     <put-your-tests-here>\n> }}}\n> That way, you provide more context for why you are writing that test. Plus, it makes it easier to locate the relevant ticket number. I leave it up to you to modify the patch as appropriate.\n\nDone. Please re-review.",
     "created_at": "2010-03-10T08:09:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8475",
     "type": "issue_comment",
@@ -220,7 +220,7 @@ archive/issue_comments_076384.json:
 }
 ```
 
-Attachment
+Attachment [trac_8475-alphabet_pickling_fix-fh.patch](tarball://root/attachments/some-uuid/ticket8475/trac_8475-alphabet_pickling_fix-fh.patch) by hivert created at 2010-03-10 08:09:39
 
 Replying to [comment:3 mvngu]:
 > In the "TESTS:" section, you should saying something like:

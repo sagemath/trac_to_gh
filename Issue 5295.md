@@ -177,7 +177,7 @@ Changing status from new to needs_review.
 archive/issue_comments_040735.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [bug5295.patch](tarball://root/attachments/some-uuid/ticket5295/bug5295.patch) by nbruin created at 2010-01-17 00:43:55",
     "created_at": "2010-01-17T00:43:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5295",
     "type": "issue_comment",
@@ -186,7 +186,7 @@ archive/issue_comments_040735.json:
 }
 ```
 
-Attachment
+Attachment [bug5295.patch](tarball://root/attachments/some-uuid/ticket5295/bug5295.patch) by nbruin created at 2010-01-17 00:43:55
 
 
 

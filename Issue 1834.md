@@ -165,7 +165,7 @@ PS As this is not "algebraic geometry" I changed the Component to Linear Algebra
 archive/issue_comments_011612.json:
 ```json
 {
-    "body": "Attachment\n\nGood idea.  I have made the changes and replaced the patch with a new one.",
+    "body": "Attachment [1834-gl_z_call.patch](tarball://root/attachments/some-uuid/ticket1834/1834-gl_z_call.patch) by AlexGhitza created at 2008-09-01 23:09:28\n\nGood idea.  I have made the changes and replaced the patch with a new one.",
     "created_at": "2008-09-01T23:09:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1834",
     "type": "issue_comment",
@@ -174,7 +174,7 @@ archive/issue_comments_011612.json:
 }
 ```
 
-Attachment
+Attachment [1834-gl_z_call.patch](tarball://root/attachments/some-uuid/ticket1834/1834-gl_z_call.patch) by AlexGhitza created at 2008-09-01 23:09:28
 
 Good idea.  I have made the changes and replaced the patch with a new one.
 

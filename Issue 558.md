@@ -123,7 +123,7 @@ free_integer_pool() is also called on exit() if the attached patch is applied.
 archive/issue_comments_002883.json:
 ```json
 {
-    "body": "Attachment\n\nwork in progress for freeing the integer pool on exit",
+    "body": "Attachment [6169.patch](tarball://root/attachments/some-uuid/ticket558/6169.patch) by malb created at 2007-09-06 18:26:40\n\nwork in progress for freeing the integer pool on exit",
     "created_at": "2007-09-06T18:26:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/558",
     "type": "issue_comment",
@@ -132,7 +132,7 @@ archive/issue_comments_002883.json:
 }
 ```
 
-Attachment
+Attachment [6169.patch](tarball://root/attachments/some-uuid/ticket558/6169.patch) by malb created at 2007-09-06 18:26:40
 
 work in progress for freeing the integer pool on exit
 
@@ -143,7 +143,7 @@ work in progress for freeing the integer pool on exit
 archive/issue_comments_002884.json:
 ```json
 {
-    "body": "Attachment\n\nPatch 6170.patch makes sure no new elements are added tot he pool once its free'd.",
+    "body": "Attachment [6170.patch](tarball://root/attachments/some-uuid/ticket558/6170.patch) by malb created at 2007-09-06 18:48:44\n\nPatch 6170.patch makes sure no new elements are added tot he pool once its free'd.",
     "created_at": "2007-09-06T18:48:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/558",
     "type": "issue_comment",
@@ -152,7 +152,7 @@ archive/issue_comments_002884.json:
 }
 ```
 
-Attachment
+Attachment [6170.patch](tarball://root/attachments/some-uuid/ticket558/6170.patch) by malb created at 2007-09-06 18:48:44
 
 Patch 6170.patch makes sure no new elements are added tot he pool once its free'd.
 
@@ -287,7 +287,7 @@ Resolution: fixed
 archive/issue_comments_002891.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [6253.patch](tarball://root/attachments/some-uuid/ticket558/6253.patch) by malb created at 2007-09-07 11:11:23",
     "created_at": "2007-09-07T11:11:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/558",
     "type": "issue_comment",
@@ -296,4 +296,4 @@ archive/issue_comments_002891.json:
 }
 ```
 
-Attachment
+Attachment [6253.patch](tarball://root/attachments/some-uuid/ticket558/6253.patch) by malb created at 2007-09-07 11:11:23

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5606
 archive/issue_comments_043750.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [zeta.png](tarball://root/attachments/some-uuid/ticket5606/zeta.png) by robertwb created at 2009-03-25 03:59:52",
     "created_at": "2009-03-25T03:59:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5606",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_043750.json:
 }
 ```
 
-Attachment
+Attachment [zeta.png](tarball://root/attachments/some-uuid/ticket5606/zeta.png) by robertwb created at 2009-03-25 03:59:52
 
 
 
@@ -211,7 +211,7 @@ Michael
 archive/issue_comments_043756.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5606-complex-plot.patch](tarball://root/attachments/some-uuid/ticket5606/5606-complex-plot.patch) by robertwb created at 2009-04-10 06:41:42",
     "created_at": "2009-04-10T06:41:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5606",
     "type": "issue_comment",
@@ -220,7 +220,7 @@ archive/issue_comments_043756.json:
 }
 ```
 
-Attachment
+Attachment [5606-complex-plot.patch](tarball://root/attachments/some-uuid/ticket5606/5606-complex-plot.patch) by robertwb created at 2009-04-10 06:41:42
 
 
 
@@ -339,7 +339,7 @@ Sorry, I will post a separate patch next time. Ironically, I've had people compl
 archive/issue_comments_043761.json:
 ```json
 {
-    "body": "Attachment\n\nThis version of the patch removes the two hunk in Robert's patch that are already in 3.4.1.rc1",
+    "body": "Attachment [trac_5606-complex-plot.patch](tarball://root/attachments/some-uuid/ticket5606/trac_5606-complex-plot.patch) by mabshoff created at 2009-04-10 20:38:52\n\nThis version of the patch removes the two hunk in Robert's patch that are already in 3.4.1.rc1",
     "created_at": "2009-04-10T20:38:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5606",
     "type": "issue_comment",
@@ -348,7 +348,7 @@ archive/issue_comments_043761.json:
 }
 ```
 
-Attachment
+Attachment [trac_5606-complex-plot.patch](tarball://root/attachments/some-uuid/ticket5606/trac_5606-complex-plot.patch) by mabshoff created at 2009-04-10 20:38:52
 
 This version of the patch removes the two hunk in Robert's patch that are already in 3.4.1.rc1
 

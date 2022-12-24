@@ -54,7 +54,7 @@ applies to 4.1.alpha1
 archive/issue_comments_051897.json:
 ```json
 {
-    "body": "Attachment\n\nThis applies to 4.1.alpha1. This passed sage -testall except for\n\n\n```\nThe following tests failed:                                                                             \n\n\n        sage -t  \"devel/sage/doc/fr/tutorial/programming.rst\"\n        sage -t  \"devel/sage/sage/misc/darwin_utilities.pyx\" \nTotal time for all tests: 6017.1 seconds                     \n```\n\nNeither of these failures seem related to this ticket.",
+    "body": "Attachment [trac_6452-codes-over-rings.patch](tarball://root/attachments/some-uuid/ticket6452/trac_6452-codes-over-rings.patch) by wdj created at 2009-07-01 01:09:02\n\nThis applies to 4.1.alpha1. This passed sage -testall except for\n\n\n```\nThe following tests failed:                                                                             \n\n\n        sage -t  \"devel/sage/doc/fr/tutorial/programming.rst\"\n        sage -t  \"devel/sage/sage/misc/darwin_utilities.pyx\" \nTotal time for all tests: 6017.1 seconds                     \n```\n\nNeither of these failures seem related to this ticket.",
     "created_at": "2009-07-01T01:09:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6452",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_051897.json:
 }
 ```
 
-Attachment
+Attachment [trac_6452-codes-over-rings.patch](tarball://root/attachments/some-uuid/ticket6452/trac_6452-codes-over-rings.patch) by wdj created at 2009-07-01 01:09:02
 
 This applies to 4.1.alpha1. This passed sage -testall except for
 
@@ -122,7 +122,7 @@ ignore the previous patch; this applies to 4.1.2.rc2
 archive/issue_comments_051900.json:
 ```json
 {
-    "body": "Attachment\n\nThis latest patch fixes some problems prointed out in private emails from Dan Gordon.",
+    "body": "Attachment [trac_6452-ring-codes.patch](tarball://root/attachments/some-uuid/ticket6452/trac_6452-ring-codes.patch) by wdj created at 2009-10-18 19:52:43\n\nThis latest patch fixes some problems prointed out in private emails from Dan Gordon.",
     "created_at": "2009-10-18T19:52:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6452",
     "type": "issue_comment",
@@ -131,7 +131,7 @@ archive/issue_comments_051900.json:
 }
 ```
 
-Attachment
+Attachment [trac_6452-ring-codes.patch](tarball://root/attachments/some-uuid/ticket6452/trac_6452-ring-codes.patch) by wdj created at 2009-10-18 19:52:43
 
 This latest patch fixes some problems prointed out in private emails from Dan Gordon.
 

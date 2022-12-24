@@ -233,7 +233,7 @@ BTW, +1 to the functionality enhancement proposed.  I keep getting annoyed that 
 archive/issue_comments_017620.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2577-1.patch](tarball://root/attachments/some-uuid/ticket2577/2577-1.patch) by dfdeshom created at 2008-04-10 15:27:15",
     "created_at": "2008-04-10T15:27:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2577",
     "type": "issue_comment",
@@ -242,7 +242,7 @@ archive/issue_comments_017620.json:
 }
 ```
 
-Attachment
+Attachment [2577-1.patch](tarball://root/attachments/some-uuid/ticket2577/2577-1.patch) by dfdeshom created at 2008-04-10 15:27:15
 
 
 

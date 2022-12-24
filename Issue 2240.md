@@ -69,7 +69,7 @@ Changing keywords from "" to "docstring, doctest".
 archive/issue_comments_014838.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8311_ff813e90293c.patch](tarball://root/attachments/some-uuid/ticket2240/8311_ff813e90293c.patch) by cswiercz created at 2008-02-25 20:59:54",
     "created_at": "2008-02-25T20:59:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2240",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_014838.json:
 }
 ```
 
-Attachment
+Attachment [8311_ff813e90293c.patch](tarball://root/attachments/some-uuid/ticket2240/8311_ff813e90293c.patch) by cswiercz created at 2008-02-25 20:59:54
 
 
 
@@ -87,7 +87,7 @@ Attachment
 archive/issue_comments_014839.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8313_2fbe4cb29f57.patch](tarball://root/attachments/some-uuid/ticket2240/8313_2fbe4cb29f57.patch) by cswiercz created at 2008-02-25 21:00:52",
     "created_at": "2008-02-25T21:00:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2240",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_014839.json:
 }
 ```
 
-Attachment
+Attachment [8313_2fbe4cb29f57.patch](tarball://root/attachments/some-uuid/ticket2240/8313_2fbe4cb29f57.patch) by cswiercz created at 2008-02-25 21:00:52
 
 
 
@@ -159,7 +159,7 @@ Changing priority from minor to major.
 archive/issue_comments_014843.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [8311_ff813e90293c.2.patch](tarball://root/attachments/some-uuid/ticket2240/8311_ff813e90293c.2.patch) by mhansen created at 2008-02-26 05:08:54",
     "created_at": "2008-02-26T05:08:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2240",
     "type": "issue_comment",
@@ -168,7 +168,7 @@ archive/issue_comments_014843.json:
 }
 ```
 
-Attachment
+Attachment [8311_ff813e90293c.2.patch](tarball://root/attachments/some-uuid/ticket2240/8311_ff813e90293c.2.patch) by mhansen created at 2008-02-26 05:08:54
 
 
 
@@ -241,7 +241,7 @@ Michael
 archive/issue_comments_014846.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2240.patch](tarball://root/attachments/some-uuid/ticket2240/2240.patch) by mhansen created at 2008-02-26 05:54:45",
     "created_at": "2008-02-26T05:54:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2240",
     "type": "issue_comment",
@@ -250,7 +250,7 @@ archive/issue_comments_014846.json:
 }
 ```
 
-Attachment
+Attachment [2240.patch](tarball://root/attachments/some-uuid/ticket2240/2240.patch) by mhansen created at 2008-02-26 05:54:45
 
 
 

@@ -66,7 +66,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/570
 archive/issue_comments_002953.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [cube-trac570fix-20070905.hg](tarball://root/attachments/some-uuid/ticket570/cube-trac570fix-20070905.hg) by wdj created at 2007-09-06 01:52:44",
     "created_at": "2007-09-06T01:52:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/570",
     "type": "issue_comment",
@@ -75,7 +75,7 @@ archive/issue_comments_002953.json:
 }
 ```
 
-Attachment
+Attachment [cube-trac570fix-20070905.hg](tarball://root/attachments/some-uuid/ticket570/cube-trac570fix-20070905.hg) by wdj created at 2007-09-06 01:52:44
 
 
 
@@ -114,7 +114,7 @@ Total time for all tests: 31.2 seconds
 archive/issue_comments_002955.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [cubegroup-fix.hg](tarball://root/attachments/some-uuid/ticket570/cubegroup-fix.hg) by robertwb created at 2007-09-06 19:19:47",
     "created_at": "2007-09-06T19:19:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/570",
     "type": "issue_comment",
@@ -123,7 +123,7 @@ archive/issue_comments_002955.json:
 }
 ```
 
-Attachment
+Attachment [cubegroup-fix.hg](tarball://root/attachments/some-uuid/ticket570/cubegroup-fix.hg) by robertwb created at 2007-09-06 19:19:47
 
 
 

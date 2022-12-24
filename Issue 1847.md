@@ -94,7 +94,7 @@ Michael
 archive/issue_comments_011691.json:
 ```json
 {
-    "body": "Attachment\n\nPatch updated.",
+    "body": "Attachment [trac-1847.patch](tarball://root/attachments/some-uuid/ticket1847/trac-1847.patch) by rlm created at 2009-01-26 15:34:26\n\nPatch updated.",
     "created_at": "2009-01-26T15:34:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1847",
     "type": "issue_comment",
@@ -103,7 +103,7 @@ archive/issue_comments_011691.json:
 }
 ```
 
-Attachment
+Attachment [trac-1847.patch](tarball://root/attachments/some-uuid/ticket1847/trac-1847.patch) by rlm created at 2009-01-26 15:34:26
 
 Patch updated.
 

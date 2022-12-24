@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6687
 archive/issue_comments_054986.json:
 ```json
 {
-    "body": "Attachment\n\nbased on Sage 4.1.1.rc2",
+    "body": "Attachment [trac_6687-spell-check-algebras.patch](tarball://root/attachments/some-uuid/ticket6687/trac_6687-spell-check-algebras.patch) by mvngu created at 2009-08-08 16:38:25\n\nbased on Sage 4.1.1.rc2",
     "created_at": "2009-08-08T16:38:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6687",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_054986.json:
 }
 ```
 
-Attachment
+Attachment [trac_6687-spell-check-algebras.patch](tarball://root/attachments/some-uuid/ticket6687/trac_6687-spell-check-algebras.patch) by mvngu created at 2009-08-08 16:38:25
 
 based on Sage 4.1.1.rc2
 

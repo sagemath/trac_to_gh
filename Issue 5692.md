@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5692
 archive/issue_comments_044507.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [accents.patch](tarball://root/attachments/some-uuid/ticket5692/accents.patch) by was created at 2009-04-06 16:52:33",
     "created_at": "2009-04-06T16:52:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5692",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_044507.json:
 }
 ```
 
-Attachment
+Attachment [accents.patch](tarball://root/attachments/some-uuid/ticket5692/accents.patch) by was created at 2009-04-06 16:52:33
 
 
 

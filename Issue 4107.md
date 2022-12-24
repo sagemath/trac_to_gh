@@ -103,7 +103,7 @@ Looks good to me.
 archive/issue_comments_029744.json:
 ```json
 {
-    "body": "Attachment\n\nUpdated patch with changes commited in Minh Nguyen's name",
+    "body": "Attachment [trac_4107.patch](tarball://root/attachments/some-uuid/ticket4107/trac_4107.patch) by mabshoff created at 2008-09-13 00:42:50\n\nUpdated patch with changes commited in Minh Nguyen's name",
     "created_at": "2008-09-13T00:42:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4107",
     "type": "issue_comment",
@@ -112,7 +112,7 @@ archive/issue_comments_029744.json:
 }
 ```
 
-Attachment
+Attachment [trac_4107.patch](tarball://root/attachments/some-uuid/ticket4107/trac_4107.patch) by mabshoff created at 2008-09-13 00:42:50
 
 Updated patch with changes commited in Minh Nguyen's name
 

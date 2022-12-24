@@ -266,7 +266,7 @@ This is because the whole of the coercion branch was not merged over, just the c
 archive/issue_comments_006370.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch should resolve this issue.",
+    "body": "Attachment [1046-mpoly-coerce-speed.patch](tarball://root/attachments/some-uuid/ticket1046/1046-mpoly-coerce-speed.patch) by robertwb created at 2008-10-16 20:39:35\n\nThe attached patch should resolve this issue.",
     "created_at": "2008-10-16T20:39:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1046",
     "type": "issue_comment",
@@ -275,7 +275,7 @@ archive/issue_comments_006370.json:
 }
 ```
 
-Attachment
+Attachment [1046-mpoly-coerce-speed.patch](tarball://root/attachments/some-uuid/ticket1046/1046-mpoly-coerce-speed.patch) by robertwb created at 2008-10-16 20:39:35
 
 The attached patch should resolve this issue.
 
@@ -415,7 +415,7 @@ Oh, I didn't test -t -long. I'll look into that.
 archive/issue_comments_006375.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1046-fixes.patch](tarball://root/attachments/some-uuid/ticket1046/1046-fixes.patch) by robertwb created at 2008-10-21 17:34:42",
     "created_at": "2008-10-21T17:34:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1046",
     "type": "issue_comment",
@@ -424,7 +424,7 @@ archive/issue_comments_006375.json:
 }
 ```
 
-Attachment
+Attachment [1046-fixes.patch](tarball://root/attachments/some-uuid/ticket1046/1046-fixes.patch) by robertwb created at 2008-10-21 17:34:42
 
 
 

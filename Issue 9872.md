@@ -75,7 +75,7 @@ A readme for Sage.app
 archive/issue_comments_097577.json:
 ```json
 {
-    "body": "Attachment\n\nThis will supersede #5296 if it gets in first.",
+    "body": "Attachment [README.txt](tarball://root/attachments/some-uuid/ticket9873/README.txt) by iandrus created at 2010-09-08 13:15:17\n\nThis will supersede #5296 if it gets in first.",
     "created_at": "2010-09-08T13:15:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_097577.json:
 }
 ```
 
-Attachment
+Attachment [README.txt](tarball://root/attachments/some-uuid/ticket9873/README.txt) by iandrus created at 2010-09-08 13:15:17
 
 This will supersede #5296 if it gets in first.
 
@@ -1581,7 +1581,7 @@ Looking back over the comments, I believe that I addressed all concerns raised s
 archive/issue_comments_097625.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [README.2.txt](tarball://root/attachments/some-uuid/ticket9873/README.2.txt) by iandrus created at 2010-09-10 12:37:00",
     "created_at": "2010-09-10T12:37:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -1590,7 +1590,7 @@ archive/issue_comments_097625.json:
 }
 ```
 
-Attachment
+Attachment [README.2.txt](tarball://root/attachments/some-uuid/ticket9873/README.2.txt) by iandrus created at 2010-09-10 12:37:00
 
 
 
@@ -2328,7 +2328,7 @@ I mean in Xcode for 10.5, of course, not in the Mac app!  There the extras are g
 archive/issue_comments_097648.json:
 ```json
 {
-    "body": "Attachment\n\nPatch to plug into bdist",
+    "body": "Attachment [trac_9873_scripts_sage_deluxe.patch](tarball://root/attachments/some-uuid/ticket9873/trac_9873_scripts_sage_deluxe.patch) by iandrus created at 2010-09-16 12:01:01\n\nPatch to plug into bdist",
     "created_at": "2010-09-16T12:01:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -2337,7 +2337,7 @@ archive/issue_comments_097648.json:
 }
 ```
 
-Attachment
+Attachment [trac_9873_scripts_sage_deluxe.patch](tarball://root/attachments/some-uuid/ticket9873/trac_9873_scripts_sage_deluxe.patch) by iandrus created at 2010-09-16 12:01:01
 
 Patch to plug into bdist
 
@@ -2493,7 +2493,7 @@ Patch for the extcode repository
 archive/issue_comments_097655.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:78 kcrisman]:\n> Did you add something in one place but not another, related to checking whether Sage is running?  It didn't build the bundle on one of my 10.4 boxes this time.  This is based off of 4.6.alpha1.\n\nYep, I forgot to add the script to the repository.  Fixed now.  Sorry.",
+    "body": "Attachment [trac_9873_extcode_sage_deluxe.patch](tarball://root/attachments/some-uuid/ticket9873/trac_9873_extcode_sage_deluxe.patch) by iandrus created at 2010-09-21 06:23:44\n\nReplying to [comment:78 kcrisman]:\n> Did you add something in one place but not another, related to checking whether Sage is running?  It didn't build the bundle on one of my 10.4 boxes this time.  This is based off of 4.6.alpha1.\n\nYep, I forgot to add the script to the repository.  Fixed now.  Sorry.",
     "created_at": "2010-09-21T06:23:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -2502,7 +2502,7 @@ archive/issue_comments_097655.json:
 }
 ```
 
-Attachment
+Attachment [trac_9873_extcode_sage_deluxe.patch](tarball://root/attachments/some-uuid/ticket9873/trac_9873_extcode_sage_deluxe.patch) by iandrus created at 2010-09-21 06:23:44
 
 Replying to [comment:78 kcrisman]:
 > Did you add something in one place but not another, related to checking whether Sage is running?  It didn't build the bundle on one of my 10.4 boxes this time.  This is based off of 4.6.alpha1.
@@ -2698,7 +2698,7 @@ It looks like sage-README-osx.txt is in .hgignore and is not checked into mercur
 archive/issue_comments_097663.json:
 ```json
 {
-    "body": "Attachment\n\nTo edit the file sage-README-osx.txt, you should edit the one in local/bin (the one in the sage-scripts repo); this should automatically be copied to the top level directory of the relevant dmg.\n\n(As kcrisman will also tell you, the one in SAGE_ROOT shouldn't even be there in the first place. See #6938, the resolution of which was to delete SAGE_ROOT/sage-README-osx.txt.)",
+    "body": "Attachment [sage-README-osx.txt](tarball://root/attachments/some-uuid/ticket9873/sage-README-osx.txt) by jhpalmieri created at 2010-09-21 21:39:55\n\nTo edit the file sage-README-osx.txt, you should edit the one in local/bin (the one in the sage-scripts repo); this should automatically be copied to the top level directory of the relevant dmg.\n\n(As kcrisman will also tell you, the one in SAGE_ROOT shouldn't even be there in the first place. See #6938, the resolution of which was to delete SAGE_ROOT/sage-README-osx.txt.)",
     "created_at": "2010-09-21T21:39:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -2707,7 +2707,7 @@ archive/issue_comments_097663.json:
 }
 ```
 
-Attachment
+Attachment [sage-README-osx.txt](tarball://root/attachments/some-uuid/ticket9873/sage-README-osx.txt) by jhpalmieri created at 2010-09-21 21:39:55
 
 To edit the file sage-README-osx.txt, you should edit the one in local/bin (the one in the sage-scripts repo); this should automatically be copied to the top level directory of the relevant dmg.
 
@@ -3021,7 +3021,7 @@ Hopefully that is more understandable.
 archive/issue_comments_097675.json:
 ```json
 {
-    "body": "Attachment\n\nGreat!   It applies fine once I remove the old file, still builds fine, and it even knows that it can't open from within the disk image (just tried that, but read-only filesystem).\n\nVERY nice work and I hope that it all goes well with merging - I'm cc:ing the release manager, since this should be quite orthogonal to anything else (unless someone messed with sage-bdist) in 4.6.",
+    "body": "Attachment [trac_9873_scripts_sage_deluxe_plus_readme.patch](tarball://root/attachments/some-uuid/ticket9873/trac_9873_scripts_sage_deluxe_plus_readme.patch) by kcrisman created at 2010-09-23 18:56:27\n\nGreat!   It applies fine once I remove the old file, still builds fine, and it even knows that it can't open from within the disk image (just tried that, but read-only filesystem).\n\nVERY nice work and I hope that it all goes well with merging - I'm cc:ing the release manager, since this should be quite orthogonal to anything else (unless someone messed with sage-bdist) in 4.6.",
     "created_at": "2010-09-23T18:56:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -3030,7 +3030,7 @@ archive/issue_comments_097675.json:
 }
 ```
 
-Attachment
+Attachment [trac_9873_scripts_sage_deluxe_plus_readme.patch](tarball://root/attachments/some-uuid/ticket9873/trac_9873_scripts_sage_deluxe_plus_readme.patch) by kcrisman created at 2010-09-23 18:56:27
 
 Great!   It applies fine once I remove the old file, still builds fine, and it even knows that it can't open from within the disk image (just tried that, but read-only filesystem).
 

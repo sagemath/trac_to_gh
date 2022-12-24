@@ -73,7 +73,7 @@ Michael
 archive/issue_comments_025515.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_3614.patch](tarball://root/attachments/some-uuid/ticket3614/trac_3614.patch) by gfurnish created at 2008-07-10 09:03:57",
     "created_at": "2008-07-10T09:03:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3614",
     "type": "issue_comment",
@@ -82,7 +82,7 @@ archive/issue_comments_025515.json:
 }
 ```
 
-Attachment
+Attachment [trac_3614.patch](tarball://root/attachments/some-uuid/ticket3614/trac_3614.patch) by gfurnish created at 2008-07-10 09:03:57
 
 
 

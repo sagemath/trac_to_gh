@@ -75,7 +75,7 @@ Changing status from new to needs_review.
 archive/issue_comments_069741.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [fix-annoying-doctest.patch](tarball://root/attachments/some-uuid/ticket7985/fix-annoying-doctest.patch) by wjp created at 2010-01-19 04:39:07",
     "created_at": "2010-01-19T04:39:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7985",
     "type": "issue_comment",
@@ -84,7 +84,7 @@ archive/issue_comments_069741.json:
 }
 ```
 
-Attachment
+Attachment [fix-annoying-doctest.patch](tarball://root/attachments/some-uuid/ticket7985/fix-annoying-doctest.patch) by wjp created at 2010-01-19 04:39:07
 
 
 

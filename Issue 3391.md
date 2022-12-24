@@ -295,7 +295,7 @@ I'm attaching a patch which fixes many of the errors and deprecations.  There ar
 archive/issue_comments_023750.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [scipy-0.7-update.patch](tarball://root/attachments/some-uuid/ticket3391/scipy-0.7-update.patch) by jason created at 2009-05-27 20:22:55",
     "created_at": "2009-05-27T20:22:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3391",
     "type": "issue_comment",
@@ -304,7 +304,7 @@ archive/issue_comments_023750.json:
 }
 ```
 
-Attachment
+Attachment [scipy-0.7-update.patch](tarball://root/attachments/some-uuid/ticket3391/scipy-0.7-update.patch) by jason created at 2009-05-27 20:22:55
 
 
 

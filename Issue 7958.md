@@ -74,7 +74,7 @@ Changing component from algebra to coercion.
 archive/issue_comments_069441.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac7958.patch](tarball://root/attachments/some-uuid/ticket7958/trac7958.patch) by spancratz created at 2010-01-16 21:00:19",
     "created_at": "2010-01-16T21:00:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7958",
     "type": "issue_comment",
@@ -83,7 +83,7 @@ archive/issue_comments_069441.json:
 }
 ```
 
-Attachment
+Attachment [trac7958.patch](tarball://root/attachments/some-uuid/ticket7958/trac7958.patch) by spancratz created at 2010-01-16 21:00:19
 
 
 
@@ -162,7 +162,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_069445.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac7958_c.patch](tarball://root/attachments/some-uuid/ticket7958/trac7958_c.patch) by spancratz created at 2010-01-17 21:29:16",
     "created_at": "2010-01-17T21:29:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7958",
     "type": "issue_comment",
@@ -171,7 +171,7 @@ archive/issue_comments_069445.json:
 }
 ```
 
-Attachment
+Attachment [trac7958_c.patch](tarball://root/attachments/some-uuid/ticket7958/trac7958_c.patch) by spancratz created at 2010-01-17 21:29:16
 
 
 
@@ -251,7 +251,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_069449.json:
 ```json
 {
-    "body": "Attachment\n\n\n```\n\nsage: _.<x> = ZZ[]\nsage: K.<a> = NumberField(x^5-3*x^4+2424*x^3+2*x-232)\nsage: R.<b> = K.ring_of_integers()\nsage: S.<y> = R[]\nsage: F = Frac(S)\nsage: F(1/a)\na^4 - 3*a^3 + 2424*a^2 + 2/232\nsage: F(1/a).numerator()\na^4 - 3*a^3 + 2424*a^2 + 2\nsage: F(1/a).denominator()\n232\n\n```\n",
+    "body": "Attachment [trac7958_d.patch](tarball://root/attachments/some-uuid/ticket7958/trac7958_d.patch) by mhansen created at 2010-01-20 04:16:42\n\n\n```\n\nsage: _.<x> = ZZ[]\nsage: K.<a> = NumberField(x^5-3*x^4+2424*x^3+2*x-232)\nsage: R.<b> = K.ring_of_integers()\nsage: S.<y> = R[]\nsage: F = Frac(S)\nsage: F(1/a)\na^4 - 3*a^3 + 2424*a^2 + 2/232\nsage: F(1/a).numerator()\na^4 - 3*a^3 + 2424*a^2 + 2\nsage: F(1/a).denominator()\n232\n\n```\n",
     "created_at": "2010-01-20T04:16:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7958",
     "type": "issue_comment",
@@ -260,7 +260,7 @@ archive/issue_comments_069449.json:
 }
 ```
 
-Attachment
+Attachment [trac7958_d.patch](tarball://root/attachments/some-uuid/ticket7958/trac7958_d.patch) by mhansen created at 2010-01-20 04:16:42
 
 
 ```
@@ -305,7 +305,7 @@ Combined version of the above patches.
 archive/issue_comments_069451.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7958-atomic.patch](tarball://root/attachments/some-uuid/ticket7958/trac_7958-atomic.patch) by mhansen created at 2010-01-20 05:50:41",
     "created_at": "2010-01-20T05:50:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7958",
     "type": "issue_comment",
@@ -314,7 +314,7 @@ archive/issue_comments_069451.json:
 }
 ```
 
-Attachment
+Attachment [trac_7958-atomic.patch](tarball://root/attachments/some-uuid/ticket7958/trac_7958-atomic.patch) by mhansen created at 2010-01-20 05:50:41
 
 
 

@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7008
 archive/issue_comments_057950.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-7008-refactor-setup-eval-on-grid.patch](tarball://root/attachments/some-uuid/ticket7008/trac-7008-refactor-setup-eval-on-grid.patch) by jason created at 2009-09-25 04:14:51",
     "created_at": "2009-09-25T04:14:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7008",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_057950.json:
 }
 ```
 
-Attachment
+Attachment [trac-7008-refactor-setup-eval-on-grid.patch](tarball://root/attachments/some-uuid/ticket7008/trac-7008-refactor-setup-eval-on-grid.patch) by jason created at 2009-09-25 04:14:51
 
 
 
@@ -379,7 +379,7 @@ apply on top of previous patch
 archive/issue_comments_057958.json:
 ```json
 {
-    "body": "Attachment\n\nI posted about the parametric_plot deprecation and no one opposed the deprecation.  So the new patch should fix everything up just right.",
+    "body": "Attachment [trac-7008-doctests.patch](tarball://root/attachments/some-uuid/ticket7008/trac-7008-doctests.patch) by jason created at 2009-09-29 06:08:12\n\nI posted about the parametric_plot deprecation and no one opposed the deprecation.  So the new patch should fix everything up just right.",
     "created_at": "2009-09-29T06:08:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7008",
     "type": "issue_comment",
@@ -388,7 +388,7 @@ archive/issue_comments_057958.json:
 }
 ```
 
-Attachment
+Attachment [trac-7008-doctests.patch](tarball://root/attachments/some-uuid/ticket7008/trac-7008-doctests.patch) by jason created at 2009-09-29 06:08:12
 
 I posted about the parametric_plot deprecation and no one opposed the deprecation.  So the new patch should fix everything up just right.
 

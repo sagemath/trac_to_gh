@@ -343,7 +343,7 @@ New patch "cliquer.patch" containing all the modifications for cliquer since the
 archive/issue_comments_045380.json:
 ```json
 {
-    "body": "Attachment\n\nCliquer, from the beginning to the end, with the good directory's name !",
+    "body": "Attachment [cliquer.patch](tarball://root/attachments/some-uuid/ticket5793/cliquer.patch) by ncohen created at 2009-07-17 19:26:48\n\nCliquer, from the beginning to the end, with the good directory's name !",
     "created_at": "2009-07-17T19:26:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
@@ -352,7 +352,7 @@ archive/issue_comments_045380.json:
 }
 ```
 
-Attachment
+Attachment [cliquer.patch](tarball://root/attachments/some-uuid/ticket5793/cliquer.patch) by ncohen created at 2009-07-17 19:26:48
 
 Cliquer, from the beginning to the end, with the good directory's name !
 
@@ -474,7 +474,7 @@ Second patch
 archive/issue_comments_045384.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [cliquer-2.patch](tarball://root/attachments/some-uuid/ticket5793/cliquer-2.patch) by ncohen created at 2009-07-20 11:24:06",
     "created_at": "2009-07-20T11:24:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
@@ -483,7 +483,7 @@ archive/issue_comments_045384.json:
 }
 ```
 
-Attachment
+Attachment [cliquer-2.patch](tarball://root/attachments/some-uuid/ticket5793/cliquer-2.patch) by ncohen created at 2009-07-20 11:24:06
 
 
 
@@ -629,7 +629,7 @@ in cliquer.pyx. I thought it may come from the difference between 0....n-1 and 1
 archive/issue_comments_045390.json:
 ```json
 {
-    "body": "Attachment\n\nDO NOT APPLY!",
+    "body": "Attachment [trac_5793_debug_only.patch](tarball://root/attachments/some-uuid/ticket5793/trac_5793_debug_only.patch) by rlm created at 2009-07-20 18:26:29\n\nDO NOT APPLY!",
     "created_at": "2009-07-20T18:26:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
@@ -638,7 +638,7 @@ archive/issue_comments_045390.json:
 }
 ```
 
-Attachment
+Attachment [trac_5793_debug_only.patch](tarball://root/attachments/some-uuid/ticket5793/trac_5793_debug_only.patch) by rlm created at 2009-07-20 18:26:29
 
 DO NOT APPLY!
 
@@ -747,7 +747,7 @@ New patch !!
 archive/issue_comments_045394.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [cliquer-3.patch](tarball://root/attachments/some-uuid/ticket5793/cliquer-3.patch) by ncohen created at 2009-07-20 18:39:33",
     "created_at": "2009-07-20T18:39:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
@@ -756,7 +756,7 @@ archive/issue_comments_045394.json:
 }
 ```
 
-Attachment
+Attachment [cliquer-3.patch](tarball://root/attachments/some-uuid/ticket5793/cliquer-3.patch) by ncohen created at 2009-07-20 18:39:33
 
 
 
@@ -944,7 +944,7 @@ Patch number 4 :
 archive/issue_comments_045398.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [cliquer-4.patch](tarball://root/attachments/some-uuid/ticket5793/cliquer-4.patch) by ncohen created at 2009-07-21 08:16:27",
     "created_at": "2009-07-21T08:16:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
@@ -953,7 +953,7 @@ archive/issue_comments_045398.json:
 }
 ```
 
-Attachment
+Attachment [cliquer-4.patch](tarball://root/attachments/some-uuid/ticket5793/cliquer-4.patch) by ncohen created at 2009-07-21 08:16:27
 
 
 
@@ -1006,7 +1006,7 @@ Thanks again !
 archive/issue_comments_045401.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [cliquer-4-rebased-sage.4.1.patch](tarball://root/attachments/some-uuid/ticket5793/cliquer-4-rebased-sage.4.1.patch) by rlm created at 2009-07-21 17:18:06",
     "created_at": "2009-07-21T17:18:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
@@ -1015,7 +1015,7 @@ archive/issue_comments_045401.json:
 }
 ```
 
-Attachment
+Attachment [cliquer-4-rebased-sage.4.1.patch](tarball://root/attachments/some-uuid/ticket5793/cliquer-4-rebased-sage.4.1.patch) by rlm created at 2009-07-21 17:18:06
 
 
 
@@ -1063,7 +1063,7 @@ Editing.
 archive/issue_comments_045404.json:
 ```json
 {
-    "body": "Attachment\n\nFlattened patch based on sage-4.1.",
+    "body": "Attachment [trac_5793-cliquer-flattened.patch](tarball://root/attachments/some-uuid/ticket5793/trac_5793-cliquer-flattened.patch) by rlm created at 2009-07-21 18:57:50\n\nFlattened patch based on sage-4.1.",
     "created_at": "2009-07-21T18:57:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
@@ -1072,7 +1072,7 @@ archive/issue_comments_045404.json:
 }
 ```
 
-Attachment
+Attachment [trac_5793-cliquer-flattened.patch](tarball://root/attachments/some-uuid/ticket5793/trac_5793-cliquer-flattened.patch) by rlm created at 2009-07-21 18:57:50
 
 Flattened patch based on sage-4.1.
 
@@ -1223,7 +1223,7 @@ Apply on top of flattened patch
 archive/issue_comments_045410.json:
 ```json
 {
-    "body": "Attachment\n\nNathann,\n\nThanks for spotting that. The patch is updated!",
+    "body": "Attachment [trac_5793-part-6.patch](tarball://root/attachments/some-uuid/ticket5793/trac_5793-part-6.patch) by rlm created at 2009-07-23 17:37:50\n\nNathann,\n\nThanks for spotting that. The patch is updated!",
     "created_at": "2009-07-23T17:37:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
@@ -1232,7 +1232,7 @@ archive/issue_comments_045410.json:
 }
 ```
 
-Attachment
+Attachment [trac_5793-part-6.patch](tarball://root/attachments/some-uuid/ticket5793/trac_5793-part-6.patch) by rlm created at 2009-07-23 17:37:50
 
 Nathann,
 

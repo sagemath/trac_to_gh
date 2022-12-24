@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4186
 archive/issue_comments_030382.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.",
+    "body": "Attachment [4186-faster-call.patch](tarball://root/attachments/some-uuid/ticket4186/4186-faster-call.patch) by mhansen created at 2008-09-24 09:23:14\n\nLooks good to me.",
     "created_at": "2008-09-24T09:23:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4186",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_030382.json:
 }
 ```
 
-Attachment
+Attachment [4186-faster-call.patch](tarball://root/attachments/some-uuid/ticket4186/4186-faster-call.patch) by mhansen created at 2008-09-24 09:23:14
 
 Looks good to me.
 

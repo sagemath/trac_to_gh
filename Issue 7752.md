@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7752
 archive/issue_comments_066764.json:
 ```json
 {
-    "body": "Attachment\n\nQuits a worksheet only if the only user viewing the worksheet is the person trashing it.",
+    "body": "Attachment [trac_7752-delete-worksheet-quit.patch](tarball://root/attachments/some-uuid/ticket7752/trac_7752-delete-worksheet-quit.patch) by timdumol created at 2010-01-19 10:42:08\n\nQuits a worksheet only if the only user viewing the worksheet is the person trashing it.",
     "created_at": "2010-01-19T10:42:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7752",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_066764.json:
 }
 ```
 
-Attachment
+Attachment [trac_7752-delete-worksheet-quit.patch](tarball://root/attachments/some-uuid/ticket7752/trac_7752-delete-worksheet-quit.patch) by timdumol created at 2010-01-19 10:42:08
 
 Quits a worksheet only if the only user viewing the worksheet is the person trashing it.
 

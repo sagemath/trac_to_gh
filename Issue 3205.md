@@ -38,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3205
 archive/issue_comments_022155.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3205-jsmath-button.patch](tarball://root/attachments/some-uuid/ticket3205/sage-3205-jsmath-button.patch) by jason created at 2008-05-14 22:21:28",
     "created_at": "2008-05-14T22:21:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3205",
     "type": "issue_comment",
@@ -47,7 +47,7 @@ archive/issue_comments_022155.json:
 }
 ```
 
-Attachment
+Attachment [sage-3205-jsmath-button.patch](tarball://root/attachments/some-uuid/ticket3205/sage-3205-jsmath-button.patch) by jason created at 2008-05-14 22:21:28
 
 
 

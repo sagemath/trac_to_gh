@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/703
 archive/issue_comments_003700.json:
 ```json
 {
-    "body": "Attachment\n\nthis is a patch jaap emailed to me",
+    "body": "Attachment [prog_cython_doc.hg](tarball://root/attachments/some-uuid/ticket703/prog_cython_doc.hg) by was created at 2007-09-20 13:39:02\n\nthis is a patch jaap emailed to me",
     "created_at": "2007-09-20T13:39:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/703",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_003700.json:
 }
 ```
 
-Attachment
+Attachment [prog_cython_doc.hg](tarball://root/attachments/some-uuid/ticket703/prog_cython_doc.hg) by was created at 2007-09-20 13:39:02
 
 this is a patch jaap emailed to me
 

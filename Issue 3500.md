@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3500
 archive/issue_comments_024690.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch looks correct and fixes the bug. \nThe docstrings pass on 3.0.4alpha1.",
+    "body": "Attachment [trac-3500.patch](tarball://root/attachments/some-uuid/ticket3500/trac-3500.patch) by cpernet created at 2008-06-24 23:37:58\n\nThis patch looks correct and fixes the bug. \nThe docstrings pass on 3.0.4alpha1.",
     "created_at": "2008-06-24T23:37:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3500",
     "type": "issue_comment",
@@ -53,7 +53,7 @@ archive/issue_comments_024690.json:
 }
 ```
 
-Attachment
+Attachment [trac-3500.patch](tarball://root/attachments/some-uuid/ticket3500/trac-3500.patch) by cpernet created at 2008-06-24 23:37:58
 
 This patch looks correct and fixes the bug. 
 The docstrings pass on 3.0.4alpha1.

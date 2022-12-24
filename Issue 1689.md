@@ -161,7 +161,7 @@ this is a modified version of README.txt from sage-3.0.alpha3
 archive/issue_comments_010733.json:
 ```json
 {
-    "body": "Attachment\n\nThe \"patch\" is just a new README.txt",
+    "body": "Attachment [README.txt](tarball://root/attachments/some-uuid/ticket1689/README.txt) by was created at 2008-04-11 00:08:55\n\nThe \"patch\" is just a new README.txt",
     "created_at": "2008-04-11T00:08:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1689",
     "type": "issue_comment",
@@ -170,7 +170,7 @@ archive/issue_comments_010733.json:
 }
 ```
 
-Attachment
+Attachment [README.txt](tarball://root/attachments/some-uuid/ticket1689/README.txt) by was created at 2008-04-11 00:08:55
 
 The "patch" is just a new README.txt
 
@@ -181,7 +181,7 @@ The "patch" is just a new README.txt
 archive/issue_comments_010734.json:
 ```json
 {
-    "body": "Attachment\n\ncorrected  version which also removes the outdated Solaris section",
+    "body": "Attachment [README-update.diff](tarball://root/attachments/some-uuid/ticket1689/README-update.diff) by mabshoff created at 2008-04-11 20:44:34\n\ncorrected  version which also removes the outdated Solaris section",
     "created_at": "2008-04-11T20:44:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1689",
     "type": "issue_comment",
@@ -190,7 +190,7 @@ archive/issue_comments_010734.json:
 }
 ```
 
-Attachment
+Attachment [README-update.diff](tarball://root/attachments/some-uuid/ticket1689/README-update.diff) by mabshoff created at 2008-04-11 20:44:34
 
 corrected  version which also removes the outdated Solaris section
 

@@ -181,7 +181,7 @@ Maybe so.  Maybe it was just exposed with new tests?
 archive/issue_comments_092557.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9582-workaround-printing-differences.patch](tarball://root/attachments/some-uuid/ticket9582/trac_9582-workaround-printing-differences.patch) by cwitty created at 2010-07-28 20:57:58",
     "created_at": "2010-07-28T20:57:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9582",
     "type": "issue_comment",
@@ -190,7 +190,7 @@ archive/issue_comments_092557.json:
 }
 ```
 
-Attachment
+Attachment [trac_9582-workaround-printing-differences.patch](tarball://root/attachments/some-uuid/ticket9582/trac_9582-workaround-printing-differences.patch) by cwitty created at 2010-07-28 20:57:58
 
 
 

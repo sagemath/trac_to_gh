@@ -237,7 +237,7 @@ Nice catch. I've written a fix for _from_im and have mostly done writing up code
 archive/issue_comments_035683.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4726_enhance_relative_number_morphism_constructor.patch](tarball://root/attachments/some-uuid/ticket4726/trac_4726_enhance_relative_number_morphism_constructor.patch) by robharron created at 2013-04-18 18:55:50",
     "created_at": "2013-04-18T18:55:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4726",
     "type": "issue_comment",
@@ -246,7 +246,7 @@ archive/issue_comments_035683.json:
 }
 ```
 
-Attachment
+Attachment [trac_4726_enhance_relative_number_morphism_constructor.patch](tarball://root/attachments/some-uuid/ticket4726/trac_4726_enhance_relative_number_morphism_constructor.patch) by robharron created at 2013-04-18 18:55:50
 
 
 
@@ -353,7 +353,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_035688.json:
 ```json
 {
-    "body": "Attachment\n\nTo be applied on top of trac_4726_enhance_relative_number_morphism_constructor.patch",
+    "body": "Attachment [trac_4726_reviewer.patch](tarball://root/attachments/some-uuid/ticket4726/trac_4726_reviewer.patch) by fwclarke created at 2013-04-23 18:15:46\n\nTo be applied on top of trac_4726_enhance_relative_number_morphism_constructor.patch",
     "created_at": "2013-04-23T18:15:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4726",
     "type": "issue_comment",
@@ -362,6 +362,6 @@ archive/issue_comments_035688.json:
 }
 ```
 
-Attachment
+Attachment [trac_4726_reviewer.patch](tarball://root/attachments/some-uuid/ticket4726/trac_4726_reviewer.patch) by fwclarke created at 2013-04-23 18:15:46
 
 To be applied on top of trac_4726_enhance_relative_number_morphism_constructor.patch

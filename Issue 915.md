@@ -84,7 +84,7 @@ Changing status from new to assigned.
 archive/issue_comments_005618.json:
 ```json
 {
-    "body": "Attachment\n\nRemove the usage of GMP-Integer implementation of Z",
+    "body": "Attachment [trac915.patch](tarball://root/attachments/some-uuid/ticket915/trac915.patch) by cpernet created at 2008-02-17 02:39:43\n\nRemove the usage of GMP-Integer implementation of Z",
     "created_at": "2008-02-17T02:39:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/915",
     "type": "issue_comment",
@@ -93,7 +93,7 @@ archive/issue_comments_005618.json:
 }
 ```
 
-Attachment
+Attachment [trac915.patch](tarball://root/attachments/some-uuid/ticket915/trac915.patch) by cpernet created at 2008-02-17 02:39:43
 
 Remove the usage of GMP-Integer implementation of Z
 
@@ -104,7 +104,7 @@ Remove the usage of GMP-Integer implementation of Z
 archive/issue_comments_005619.json:
 ```json
 {
-    "body": "Attachment\n\nRemove the work-around with gmp-integers",
+    "body": "Attachment [trac915.2.patch](tarball://root/attachments/some-uuid/ticket915/trac915.2.patch) by cpernet created at 2008-02-17 02:49:05\n\nRemove the work-around with gmp-integers",
     "created_at": "2008-02-17T02:49:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/915",
     "type": "issue_comment",
@@ -113,7 +113,7 @@ archive/issue_comments_005619.json:
 }
 ```
 
-Attachment
+Attachment [trac915.2.patch](tarball://root/attachments/some-uuid/ticket915/trac915.2.patch) by cpernet created at 2008-02-17 02:49:05
 
 Remove the work-around with gmp-integers
 

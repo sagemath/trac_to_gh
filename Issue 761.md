@@ -196,7 +196,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/761
 archive/issue_comments_004512.json:
 ```json
 {
-    "body": "Attachment\n\nSame patch as listed in the post.",
+    "body": "Attachment [#761.patch](tarball://root/attachments/some-uuid/ticket761/#761.patch) by jason created at 2007-10-03 07:53:52\n\nSame patch as listed in the post.",
     "created_at": "2007-10-03T07:53:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/761",
     "type": "issue_comment",
@@ -205,7 +205,7 @@ archive/issue_comments_004512.json:
 }
 ```
 
-Attachment
+Attachment [#761.patch](tarball://root/attachments/some-uuid/ticket761/#761.patch) by jason created at 2007-10-03 07:53:52
 
 Same patch as listed in the post.
 

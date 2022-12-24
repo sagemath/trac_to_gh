@@ -147,7 +147,7 @@ I guess I'm a little confused -- you've mentioned that the problem you were hitt
 archive/issue_comments_051044.json:
 ```json
 {
-    "body": "Attachment\n\nflattened & based on 4.0.2",
+    "body": "Attachment [scripts-6378-automerge.patch](tarball://root/attachments/some-uuid/ticket6378/scripts-6378-automerge.patch) by boothby created at 2009-06-26 05:48:28\n\nflattened & based on 4.0.2",
     "created_at": "2009-06-26T05:48:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6378",
     "type": "issue_comment",
@@ -156,7 +156,7 @@ archive/issue_comments_051044.json:
 }
 ```
 
-Attachment
+Attachment [scripts-6378-automerge.patch](tarball://root/attachments/some-uuid/ticket6378/scripts-6378-automerge.patch) by boothby created at 2009-06-26 05:48:28
 
 flattened & based on 4.0.2
 
@@ -234,7 +234,7 @@ apply to bin repo
 archive/issue_comments_051048.json:
 ```json
 {
-    "body": "Attachment\n\napply to main repo",
+    "body": "Attachment [trac-6378-bin.patch](tarball://root/attachments/some-uuid/ticket6378/trac-6378-bin.patch) by craigcitro created at 2009-08-28 07:22:52\n\napply to main repo",
     "created_at": "2009-08-28T07:22:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6378",
     "type": "issue_comment",
@@ -243,7 +243,7 @@ archive/issue_comments_051048.json:
 }
 ```
 
-Attachment
+Attachment [trac-6378-bin.patch](tarball://root/attachments/some-uuid/ticket6378/trac-6378-bin.patch) by craigcitro created at 2009-08-28 07:22:52
 
 apply to main repo
 
@@ -254,7 +254,7 @@ apply to main repo
 archive/issue_comments_051049.json:
 ```json
 {
-    "body": "Attachment\n\nQuestion:  how well is this documented?  As well as all the functions in the scripts having docstrings, I think we need to have this all properly in the developers manual.  Recently I wanted to demonstrate the merge feature to a newcomer, and found that I couldn't remember what all the command line options were, and could not find them documented.  (Of course, it is possible that they are somewhere!  I remember seeing them in a sage-devel post, but that is hardly acceptable!)",
+    "body": "Attachment [trac-6378-main.patch](tarball://root/attachments/some-uuid/ticket6378/trac-6378-main.patch) by cremona created at 2009-08-31 13:17:57\n\nQuestion:  how well is this documented?  As well as all the functions in the scripts having docstrings, I think we need to have this all properly in the developers manual.  Recently I wanted to demonstrate the merge feature to a newcomer, and found that I couldn't remember what all the command line options were, and could not find them documented.  (Of course, it is possible that they are somewhere!  I remember seeing them in a sage-devel post, but that is hardly acceptable!)",
     "created_at": "2009-08-31T13:17:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6378",
     "type": "issue_comment",
@@ -263,7 +263,7 @@ archive/issue_comments_051049.json:
 }
 ```
 
-Attachment
+Attachment [trac-6378-main.patch](tarball://root/attachments/some-uuid/ticket6378/trac-6378-main.patch) by cremona created at 2009-08-31 13:17:57
 
 Question:  how well is this documented?  As well as all the functions in the scripts having docstrings, I think we need to have this all properly in the developers manual.  Recently I wanted to demonstrate the merge feature to a newcomer, and found that I couldn't remember what all the command line options were, and could not find them documented.  (Of course, it is possible that they are somewhere!  I remember seeing them in a sage-devel post, but that is hardly acceptable!)
 
@@ -389,7 +389,7 @@ Rebase on #8712. Apply this patch only. See comments for more info.
 archive/issue_comments_051055.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch to the main Sage respository is unneeded now, as it's been fixed already by sage-4.4.alpha0. The patch to the scripts repository works fine, except for the email part. It doesn't get the mail argument. Calling it with, say,\n\n\n```\nsage -merge -a -e timdumol@gmail.com\n```\n\n\nresults in an error after merging everything, stating that the email address, which is the null string (''), is invalid.\n\nThis patch rebases it on #8712, while adding the requested documentation. This seems to detect the email argument.",
+    "body": "Attachment [trac_6378-scripts-rebase.patch](tarball://root/attachments/some-uuid/ticket6378/trac_6378-scripts-rebase.patch) by timdumol created at 2010-04-18 13:23:22\n\nThe patch to the main Sage respository is unneeded now, as it's been fixed already by sage-4.4.alpha0. The patch to the scripts repository works fine, except for the email part. It doesn't get the mail argument. Calling it with, say,\n\n\n```\nsage -merge -a -e timdumol@gmail.com\n```\n\n\nresults in an error after merging everything, stating that the email address, which is the null string (''), is invalid.\n\nThis patch rebases it on #8712, while adding the requested documentation. This seems to detect the email argument.",
     "created_at": "2010-04-18T13:23:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6378",
     "type": "issue_comment",
@@ -398,7 +398,7 @@ archive/issue_comments_051055.json:
 }
 ```
 
-Attachment
+Attachment [trac_6378-scripts-rebase.patch](tarball://root/attachments/some-uuid/ticket6378/trac_6378-scripts-rebase.patch) by timdumol created at 2010-04-18 13:23:22
 
 The patch to the main Sage respository is unneeded now, as it's been fixed already by sage-4.4.alpha0. The patch to the scripts repository works fine, except for the email part. It doesn't get the mail argument. Calling it with, say,
 
@@ -439,7 +439,7 @@ Otherwise, I'm happy with it.
 archive/issue_comments_051057.json:
 ```json
 {
-    "body": "Attachment\n\nuse this patch only",
+    "body": "Attachment [trac_6378-scripts-rebase.v2.patch](tarball://root/attachments/some-uuid/ticket6378/trac_6378-scripts-rebase.v2.patch) by jhpalmieri created at 2010-06-23 21:16:05\n\nuse this patch only",
     "created_at": "2010-06-23T21:16:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6378",
     "type": "issue_comment",
@@ -448,7 +448,7 @@ archive/issue_comments_051057.json:
 }
 ```
 
-Attachment
+Attachment [trac_6378-scripts-rebase.v2.patch](tarball://root/attachments/some-uuid/ticket6378/trac_6378-scripts-rebase.v2.patch) by jhpalmieri created at 2010-06-23 21:16:05
 
 use this patch only
 

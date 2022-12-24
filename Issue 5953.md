@@ -43,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5953
 archive/issue_comments_047087.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_5953.patch](tarball://root/attachments/some-uuid/ticket5953/trac_5953.patch) by mabshoff created at 2009-05-01 05:34:49",
     "created_at": "2009-05-01T05:34:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5953",
     "type": "issue_comment",
@@ -52,7 +52,7 @@ archive/issue_comments_047087.json:
 }
 ```
 
-Attachment
+Attachment [trac_5953.patch](tarball://root/attachments/some-uuid/ticket5953/trac_5953.patch) by mabshoff created at 2009-05-01 05:34:49
 
 
 
@@ -97,7 +97,7 @@ referee's patch
 archive/issue_comments_047090.json:
 ```json
 {
-    "body": "Attachment\n\nFor the record: Reviewer patch looks good to me.\n\nCheers,\n\nMichael",
+    "body": "Attachment [ref_5953.patch](tarball://root/attachments/some-uuid/ticket5953/ref_5953.patch) by mabshoff created at 2009-05-01 05:50:23\n\nFor the record: Reviewer patch looks good to me.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-01T05:50:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5953",
     "type": "issue_comment",
@@ -106,7 +106,7 @@ archive/issue_comments_047090.json:
 }
 ```
 
-Attachment
+Attachment [ref_5953.patch](tarball://root/attachments/some-uuid/ticket5953/ref_5953.patch) by mabshoff created at 2009-05-01 05:50:23
 
 For the record: Reviewer patch looks good to me.
 

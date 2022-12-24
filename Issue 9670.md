@@ -60,7 +60,7 @@ I'm posting a partial patch, but before I spend more time on this, I'd like to k
 archive/issue_comments_093926.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9670-prelim.patch](tarball://root/attachments/some-uuid/ticket9670/trac_9670-prelim.patch) by kcrisman created at 2010-08-02 20:04:14",
     "created_at": "2010-08-02T20:04:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9670",
     "type": "issue_comment",
@@ -69,7 +69,7 @@ archive/issue_comments_093926.json:
 }
 ```
 
-Attachment
+Attachment [trac_9670-prelim.patch](tarball://root/attachments/some-uuid/ticket9670/trac_9670-prelim.patch) by kcrisman created at 2010-08-02 20:04:14
 
 
 
@@ -495,7 +495,7 @@ This is my attempt to make probability/random_variable.py better.  This patch wi
 archive/issue_comments_093937.json:
 ```json
 {
-    "body": "Attachment\n\nI don't know how to change the last message, so I am writing it more clearly.\n\nThis is my attempt to make probability/random_variable.py better.  This patch will make it possible to\n\n-assign probability spaces with probabilities as symbolic variables (like p, q)\n\n-assign random variables on such probability spaces with the possibility that they also can have values  in the symbolic ring\n\n-do basic operations with these random variables (like sums products..) - the ring of random variables has been added\n\n-I have also made some changes to the way we calculate variance, and covariance\n\nThe new classes are called FiniteRandomVariable, FiniteProbabilitySpace, while the old classes (DiscreteProbabilitySpace, DiscreteRandomVariable) are still supported. (Things will work a bit differently, but I think all the things described in the manual for these classes are supported.) \n\nSince, this is my first contribution to Sage, I am glad to hear any comments and suggestions.",
+    "body": "Attachment [finite_prob.patch](tarball://root/attachments/some-uuid/ticket9670/finite_prob.patch) by ttadic created at 2012-03-23 19:14:27\n\nI don't know how to change the last message, so I am writing it more clearly.\n\nThis is my attempt to make probability/random_variable.py better.  This patch will make it possible to\n\n-assign probability spaces with probabilities as symbolic variables (like p, q)\n\n-assign random variables on such probability spaces with the possibility that they also can have values  in the symbolic ring\n\n-do basic operations with these random variables (like sums products..) - the ring of random variables has been added\n\n-I have also made some changes to the way we calculate variance, and covariance\n\nThe new classes are called FiniteRandomVariable, FiniteProbabilitySpace, while the old classes (DiscreteProbabilitySpace, DiscreteRandomVariable) are still supported. (Things will work a bit differently, but I think all the things described in the manual for these classes are supported.) \n\nSince, this is my first contribution to Sage, I am glad to hear any comments and suggestions.",
     "created_at": "2012-03-23T19:14:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9670",
     "type": "issue_comment",
@@ -504,7 +504,7 @@ archive/issue_comments_093937.json:
 }
 ```
 
-Attachment
+Attachment [finite_prob.patch](tarball://root/attachments/some-uuid/ticket9670/finite_prob.patch) by ttadic created at 2012-03-23 19:14:27
 
 I don't know how to change the last message, so I am writing it more clearly.
 

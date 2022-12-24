@@ -255,7 +255,7 @@ archive/issue_comments_060518.json:
 archive/issue_comments_060519.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7273-sage-bdist.spkg](tarball://root/attachments/some-uuid/ticket7273/trac_7273-sage-bdist.spkg) by timdumol created at 2009-10-29 06:29:46",
     "created_at": "2009-10-29T06:29:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7273",
     "type": "issue_comment",
@@ -264,7 +264,7 @@ archive/issue_comments_060519.json:
 }
 ```
 
-Attachment
+Attachment [trac_7273-sage-bdist.spkg](tarball://root/attachments/some-uuid/ticket7273/trac_7273-sage-bdist.spkg) by timdumol created at 2009-10-29 06:29:46
 
 
 

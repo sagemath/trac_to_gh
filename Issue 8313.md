@@ -72,7 +72,7 @@ http://www.sagemath.org/doc/reference/sage/coding/code_constructions.html
 archive/issue_comments_073726.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8313-typo_codeconstruction-fh.patch](tarball://root/attachments/some-uuid/ticket8313/trac_8313-typo_codeconstruction-fh.patch) by hivert created at 2010-04-10 09:17:10",
     "created_at": "2010-04-10T09:17:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8313",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_073726.json:
 }
 ```
 
-Attachment
+Attachment [trac_8313-typo_codeconstruction-fh.patch](tarball://root/attachments/some-uuid/ticket8313/trac_8313-typo_codeconstruction-fh.patch) by hivert created at 2010-04-10 09:17:10
 
 
 

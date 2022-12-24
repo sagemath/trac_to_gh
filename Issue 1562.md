@@ -49,7 +49,7 @@ Integrate Dan Drake's code.
 archive/issue_comments_009945.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [inversetrig.hg](tarball://root/attachments/some-uuid/ticket1562/inversetrig.hg) by mabshoff created at 2007-12-19 07:04:14",
     "created_at": "2007-12-19T07:04:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1562",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_009945.json:
 }
 ```
 
-Attachment
+Attachment [inversetrig.hg](tarball://root/attachments/some-uuid/ticket1562/inversetrig.hg) by mabshoff created at 2007-12-19 07:04:14
 
 
 

@@ -118,7 +118,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_027809.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [polynomial_is_square.patch](tarball://root/attachments/some-uuid/ticket3891/polynomial_is_square.patch) by jhpalmieri created at 2008-11-19 21:57:40",
     "created_at": "2008-11-19T21:57:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3891",
     "type": "issue_comment",
@@ -127,7 +127,7 @@ archive/issue_comments_027809.json:
 }
 ```
 
-Attachment
+Attachment [polynomial_is_square.patch](tarball://root/attachments/some-uuid/ticket3891/polynomial_is_square.patch) by jhpalmieri created at 2008-11-19 21:57:40
 
 
 
@@ -136,7 +136,7 @@ Attachment
 archive/issue_comments_027810.json:
 ```json
 {
-    "body": "Attachment\n\nPositive review for polynomial_is_square.patch, after my own trac3891-reviewer-fixes.patch is applied (so only my patch needs further review).\n\nI think Cremona may have been hoping for a polynomial sqrt that was more efficient than squarefree_decomposition; maybe that should be opened as a new wishlist ticket after this one is closed.",
+    "body": "Attachment [trac3891-reviewer-fixes.patch](tarball://root/attachments/some-uuid/ticket3891/trac3891-reviewer-fixes.patch) by cwitty created at 2008-11-23 00:52:29\n\nPositive review for polynomial_is_square.patch, after my own trac3891-reviewer-fixes.patch is applied (so only my patch needs further review).\n\nI think Cremona may have been hoping for a polynomial sqrt that was more efficient than squarefree_decomposition; maybe that should be opened as a new wishlist ticket after this one is closed.",
     "created_at": "2008-11-23T00:52:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3891",
     "type": "issue_comment",
@@ -145,7 +145,7 @@ archive/issue_comments_027810.json:
 }
 ```
 
-Attachment
+Attachment [trac3891-reviewer-fixes.patch](tarball://root/attachments/some-uuid/ticket3891/trac3891-reviewer-fixes.patch) by cwitty created at 2008-11-23 00:52:29
 
 Positive review for polynomial_is_square.patch, after my own trac3891-reviewer-fixes.patch is applied (so only my patch needs further review).
 

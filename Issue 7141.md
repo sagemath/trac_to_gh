@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7141
 archive/issue_comments_059180.json:
 ```json
 {
-    "body": "Attachment\n\nFixes math_parse in sagenb.notebook.jsmath to skip <script> tags. Apply to sagenb repo.",
+    "body": "Attachment [trac_7141-sagenb-math_parse.patch](tarball://root/attachments/some-uuid/ticket7141/trac_7141-sagenb-math_parse.patch) by timdumol created at 2009-10-06 15:37:55\n\nFixes math_parse in sagenb.notebook.jsmath to skip <script> tags. Apply to sagenb repo.",
     "created_at": "2009-10-06T15:37:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7141",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_059180.json:
 }
 ```
 
-Attachment
+Attachment [trac_7141-sagenb-math_parse.patch](tarball://root/attachments/some-uuid/ticket7141/trac_7141-sagenb-math_parse.patch) by timdumol created at 2009-10-06 15:37:55
 
 Fixes math_parse in sagenb.notebook.jsmath to skip <script> tags. Apply to sagenb repo.
 

@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2275
 archive/issue_comments_015092.json:
 ```json
 {
-    "body": "Attachment\n\nHere is a link:  http://sage.math.washington.edu/home/mhansen/2275.patch",
+    "body": "Attachment [2275.patch.gz](tarball://root/attachments/some-uuid/ticket2275/2275.patch.gz) by mhansen created at 2008-02-23 05:21:43\n\nHere is a link:  http://sage.math.washington.edu/home/mhansen/2275.patch",
     "created_at": "2008-02-23T05:21:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2275",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_015092.json:
 }
 ```
 
-Attachment
+Attachment [2275.patch.gz](tarball://root/attachments/some-uuid/ticket2275/2275.patch.gz) by mhansen created at 2008-02-23 05:21:43
 
 Here is a link:  http://sage.math.washington.edu/home/mhansen/2275.patch
 

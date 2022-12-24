@@ -282,7 +282,7 @@ Please fix them, and look for TODO's in the file!
 archive/issue_comments_080867.json:
 ```json
 {
-    "body": "Attachment\n\nThanks Nicolas!\n\nI was not sure how one usually goes about incorporating modifications from a reviewer's patch, so I hope what I did was alright.  I incorporated your changes into my patch, added documentation and fixed the TODO's, and then disabled your reviewer patch in the combinat queue.  The latest patch is now in the combinat queue and on the trac server.",
+    "body": "Attachment [trac_8810_stanley_symmetric_functions-sp-as.patch](tarball://root/attachments/some-uuid/ticket8810/trac_8810_stanley_symmetric_functions-sp-as.patch) by stevenpon created at 2010-06-20 01:02:45\n\nThanks Nicolas!\n\nI was not sure how one usually goes about incorporating modifications from a reviewer's patch, so I hope what I did was alright.  I incorporated your changes into my patch, added documentation and fixed the TODO's, and then disabled your reviewer patch in the combinat queue.  The latest patch is now in the combinat queue and on the trac server.",
     "created_at": "2010-06-20T01:02:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8810",
     "type": "issue_comment",
@@ -291,7 +291,7 @@ archive/issue_comments_080867.json:
 }
 ```
 
-Attachment
+Attachment [trac_8810_stanley_symmetric_functions-sp-as.patch](tarball://root/attachments/some-uuid/ticket8810/trac_8810_stanley_symmetric_functions-sp-as.patch) by stevenpon created at 2010-06-20 01:02:45
 
 Thanks Nicolas!
 
@@ -474,7 +474,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_080874.json:
 ```json
 {
-    "body": "Attachment\n\nNicolas Thiery did the technical review of this patch.\nThomas Lam did the mathematical review of this patch. His comments are:\n\nAnne,\n\nI dont really know with the code, but I looked at some of the examples\nand I could not find any problem.\n\nThomas\n\nHence I am setting a positive review on this patch.\n\nRelease manager, please merge only:\n\ntrac_8810_stanley_symmetric_functions-sp-as.2.patch",
+    "body": "Attachment [trac_8810_stanley_symmetric_functions-sp-as.2.patch](tarball://root/attachments/some-uuid/ticket8810/trac_8810_stanley_symmetric_functions-sp-as.2.patch) by aschilling created at 2010-06-25 03:14:33\n\nNicolas Thiery did the technical review of this patch.\nThomas Lam did the mathematical review of this patch. His comments are:\n\nAnne,\n\nI dont really know with the code, but I looked at some of the examples\nand I could not find any problem.\n\nThomas\n\nHence I am setting a positive review on this patch.\n\nRelease manager, please merge only:\n\ntrac_8810_stanley_symmetric_functions-sp-as.2.patch",
     "created_at": "2010-06-25T03:14:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8810",
     "type": "issue_comment",
@@ -483,7 +483,7 @@ archive/issue_comments_080874.json:
 }
 ```
 
-Attachment
+Attachment [trac_8810_stanley_symmetric_functions-sp-as.2.patch](tarball://root/attachments/some-uuid/ticket8810/trac_8810_stanley_symmetric_functions-sp-as.2.patch) by aschilling created at 2010-06-25 03:14:33
 
 Nicolas Thiery did the technical review of this patch.
 Thomas Lam did the mathematical review of this patch. His comments are:
@@ -508,7 +508,7 @@ trac_8810_stanley_symmetric_functions-sp-as.2.patch
 archive/issue_comments_080875.json:
 ```json
 {
-    "body": "Attachment\n\nVersion without tabs - apply only this patch",
+    "body": "Attachment [trac_8810_stanley_symmetric_functions-untabified.patch](tarball://root/attachments/some-uuid/ticket8810/trac_8810_stanley_symmetric_functions-untabified.patch) by davidloeffler created at 2010-06-30 17:16:43\n\nVersion without tabs - apply only this patch",
     "created_at": "2010-06-30T17:16:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8810",
     "type": "issue_comment",
@@ -517,7 +517,7 @@ archive/issue_comments_080875.json:
 }
 ```
 
-Attachment
+Attachment [trac_8810_stanley_symmetric_functions-untabified.patch](tarball://root/attachments/some-uuid/ticket8810/trac_8810_stanley_symmetric_functions-untabified.patch) by davidloeffler created at 2010-06-30 17:16:43
 
 Version without tabs - apply only this patch
 
@@ -683,7 +683,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_080884.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8810_stanley_symmetric_functions-docfix.patch](tarball://root/attachments/some-uuid/ticket8810/trac_8810_stanley_symmetric_functions-docfix.patch) by mpatel created at 2010-07-21 01:40:08",
     "created_at": "2010-07-21T01:40:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8810",
     "type": "issue_comment",
@@ -692,7 +692,7 @@ archive/issue_comments_080884.json:
 }
 ```
 
-Attachment
+Attachment [trac_8810_stanley_symmetric_functions-docfix.patch](tarball://root/attachments/some-uuid/ticket8810/trac_8810_stanley_symmetric_functions-docfix.patch) by mpatel created at 2010-07-21 01:40:08
 
 
 

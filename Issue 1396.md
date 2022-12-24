@@ -161,7 +161,7 @@ archive/issue_comments_008978.json:
 archive/issue_comments_008979.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [singular_options.patch](tarball://root/attachments/some-uuid/ticket1396/singular_options.patch) by john_perry created at 2009-01-24 03:00:59",
     "created_at": "2009-01-24T03:00:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1396",
     "type": "issue_comment",
@@ -170,7 +170,7 @@ archive/issue_comments_008979.json:
 }
 ```
 
-Attachment
+Attachment [singular_options.patch](tarball://root/attachments/some-uuid/ticket1396/singular_options.patch) by john_perry created at 2009-01-24 03:00:59
 
 
 
@@ -370,7 +370,7 @@ One remark: It turned out to be impossible to doctest `libSingular's` protocol o
 archive/issue_comments_008986.json:
 ```json
 {
-    "body": "Attachment\n\nReplaces the first patch. Full support for all Singular options in both Singular and libSingular",
+    "body": "Attachment [trac1396-singular_options.patch](tarball://root/attachments/some-uuid/ticket1396/trac1396-singular_options.patch) by malb created at 2010-07-15 21:25:24\n\nReplaces the first patch. Full support for all Singular options in both Singular and libSingular",
     "created_at": "2010-07-15T21:25:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1396",
     "type": "issue_comment",
@@ -379,7 +379,7 @@ archive/issue_comments_008986.json:
 }
 ```
 
-Attachment
+Attachment [trac1396-singular_options.patch](tarball://root/attachments/some-uuid/ticket1396/trac1396-singular_options.patch) by malb created at 2010-07-15 21:25:24
 
 Replaces the first patch. Full support for all Singular options in both Singular and libSingular
 
@@ -473,7 +473,7 @@ I'll ignore the rejects, refresh the patch, and attach the refreshed patch here.
 archive/issue_comments_008990.json:
 ```json
 {
-    "body": "Attachment\n\nRebased for 4.5.2.alpha0 queue.  See comment 9.  Replaces all previous patches.",
+    "body": "Attachment [trac1396-singular_options.2.patch](tarball://root/attachments/some-uuid/ticket1396/trac1396-singular_options.2.patch) by mpatel created at 2010-07-21 01:19:31\n\nRebased for 4.5.2.alpha0 queue.  See comment 9.  Replaces all previous patches.",
     "created_at": "2010-07-21T01:19:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1396",
     "type": "issue_comment",
@@ -482,7 +482,7 @@ archive/issue_comments_008990.json:
 }
 ```
 
-Attachment
+Attachment [trac1396-singular_options.2.patch](tarball://root/attachments/some-uuid/ticket1396/trac1396-singular_options.2.patch) by mpatel created at 2010-07-21 01:19:31
 
 Rebased for 4.5.2.alpha0 queue.  See comment 9.  Replaces all previous patches.
 

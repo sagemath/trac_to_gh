@@ -155,7 +155,7 @@ Note: #2144 is (a) a dupe of this, and (b) actually doesn't fix the problem.
 archive/issue_comments_000239.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-37.patch](tarball://root/attachments/some-uuid/ticket37/sage-37.patch) by was created at 2008-02-28 05:07:11",
     "created_at": "2008-02-28T05:07:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/37",
     "type": "issue_comment",
@@ -164,7 +164,7 @@ archive/issue_comments_000239.json:
 }
 ```
 
-Attachment
+Attachment [sage-37.patch](tarball://root/attachments/some-uuid/ticket37/sage-37.patch) by was created at 2008-02-28 05:07:11
 
 
 

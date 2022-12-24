@@ -69,7 +69,7 @@ based on Sage 3.4.1
 archive/issue_comments_045805.json:
 ```json
 {
-    "body": "Attachment\n\nOnly apply `trac_5827-subset-sum.2.patch`.",
+    "body": "Attachment [trac_5827-subset-sum.patch](tarball://root/attachments/some-uuid/ticket5827/trac_5827-subset-sum.patch) by mvngu created at 2009-05-09 06:02:46\n\nOnly apply `trac_5827-subset-sum.2.patch`.",
     "created_at": "2009-05-09T06:02:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5827",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_045805.json:
 }
 ```
 
-Attachment
+Attachment [trac_5827-subset-sum.patch](tarball://root/attachments/some-uuid/ticket5827/trac_5827-subset-sum.patch) by mvngu created at 2009-05-09 06:02:46
 
 Only apply `trac_5827-subset-sum.2.patch`.
 
@@ -89,7 +89,7 @@ Only apply `trac_5827-subset-sum.2.patch`.
 archive/issue_comments_045806.json:
 ```json
 {
-    "body": "Attachment\n\nbased on Sage 4.0",
+    "body": "Attachment [trac_5827-subset-sum.2.patch](tarball://root/attachments/some-uuid/ticket5827/trac_5827-subset-sum.2.patch) by mvngu created at 2009-06-01 08:09:01\n\nbased on Sage 4.0",
     "created_at": "2009-06-01T08:09:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5827",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_045806.json:
 }
 ```
 
-Attachment
+Attachment [trac_5827-subset-sum.2.patch](tarball://root/attachments/some-uuid/ticket5827/trac_5827-subset-sum.2.patch) by mvngu created at 2009-06-01 08:09:01
 
 based on Sage 4.0
 

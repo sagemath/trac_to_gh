@@ -61,7 +61,7 @@ Applies to 4.3 + patches at #7595
 archive/issue_comments_067886.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch is based on 4.3 + the patches at #7595.  I tested all files which use either CRT_list or CRT_basis.",
+    "body": "Attachment [trac_7836-CRT.patch](tarball://root/attachments/some-uuid/ticket7836/trac_7836-CRT.patch) by cremona created at 2010-01-04 17:22:50\n\nThe attached patch is based on 4.3 + the patches at #7595.  I tested all files which use either CRT_list or CRT_basis.",
     "created_at": "2010-01-04T17:22:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7836",
     "type": "issue_comment",
@@ -70,7 +70,7 @@ archive/issue_comments_067886.json:
 }
 ```
 
-Attachment
+Attachment [trac_7836-CRT.patch](tarball://root/attachments/some-uuid/ticket7836/trac_7836-CRT.patch) by cremona created at 2010-01-04 17:22:50
 
 The attached patch is based on 4.3 + the patches at #7595.  I tested all files which use either CRT_list or CRT_basis.
 

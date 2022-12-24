@@ -491,7 +491,7 @@ Florent
 archive/issue_comments_069634.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_7980-multiple-realizations-nt.patch](tarball://root/attachments/some-uuid/ticket7980/trac_7980-multiple-realizations-nt.patch) by nthiery created at 2012-03-16 16:44:10",
     "created_at": "2012-03-16T16:44:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7980",
     "type": "issue_comment",
@@ -500,7 +500,7 @@ archive/issue_comments_069634.json:
 }
 ```
 
-Attachment
+Attachment [trac_7980-multiple-realizations-nt.patch](tarball://root/attachments/some-uuid/ticket7980/trac_7980-multiple-realizations-nt.patch) by nthiery created at 2012-03-16 16:44:10
 
 
 

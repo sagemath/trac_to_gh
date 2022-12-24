@@ -58,7 +58,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5072
 archive/issue_comments_038623.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [mpoly_gcd_sigsegv.patch](tarball://root/attachments/some-uuid/ticket5072/mpoly_gcd_sigsegv.patch) by malb created at 2009-01-23 23:18:42",
     "created_at": "2009-01-23T23:18:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5072",
     "type": "issue_comment",
@@ -67,7 +67,7 @@ archive/issue_comments_038623.json:
 }
 ```
 
-Attachment
+Attachment [mpoly_gcd_sigsegv.patch](tarball://root/attachments/some-uuid/ticket5072/mpoly_gcd_sigsegv.patch) by malb created at 2009-01-23 23:18:42
 
 
 

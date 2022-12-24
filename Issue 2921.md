@@ -53,7 +53,7 @@ Changing status from new to assigned.
 archive/issue_comments_020111.json:
 ```json
 {
-    "body": "Attachment\n\nThe updated spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0/alpha5/flintqs-20070817.p3.spkg\n\nCheers,\n\nMichael",
+    "body": "Attachment [flintqs-gcc-4.3-fix.patch](tarball://root/attachments/some-uuid/ticket2921/flintqs-gcc-4.3-fix.patch) by mabshoff created at 2008-04-14 21:30:22\n\nThe updated spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0/alpha5/flintqs-20070817.p3.spkg\n\nCheers,\n\nMichael",
     "created_at": "2008-04-14T21:30:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2921",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_020111.json:
 }
 ```
 
-Attachment
+Attachment [flintqs-gcc-4.3-fix.patch](tarball://root/attachments/some-uuid/ticket2921/flintqs-gcc-4.3-fix.patch) by mabshoff created at 2008-04-14 21:30:22
 
 The updated spkg is at
 

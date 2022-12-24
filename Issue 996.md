@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/996
 archive/issue_comments_006067.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [7087.patch](tarball://root/attachments/some-uuid/ticket996/7087.patch) by rlm created at 2007-10-25 06:23:58",
     "created_at": "2007-10-25T06:23:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/996",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_006067.json:
 }
 ```
 
-Attachment
+Attachment [7087.patch](tarball://root/attachments/some-uuid/ticket996/7087.patch) by rlm created at 2007-10-25 06:23:58
 
 
 
@@ -69,7 +69,7 @@ This patches cleanly onto 2.8.9.
 archive/issue_comments_006069.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [fix_typo.patch](tarball://root/attachments/some-uuid/ticket996/fix_typo.patch) by cwitty created at 2007-10-27 03:08:44",
     "created_at": "2007-10-27T03:08:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/996",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_006069.json:
 }
 ```
 
-Attachment
+Attachment [fix_typo.patch](tarball://root/attachments/some-uuid/ticket996/fix_typo.patch) by cwitty created at 2007-10-27 03:08:44
 
 
 

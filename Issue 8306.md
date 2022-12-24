@@ -167,7 +167,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_073605.json:
 ```json
 {
-    "body": "Attachment\n\nTweak eclib `Makefile`s so it builds with `+`.  eclib src repo.",
+    "body": "Attachment [eclib_makefiles.patch](tarball://root/attachments/some-uuid/ticket8306/eclib_makefiles.patch) by mpatel created at 2010-02-27 05:26:18\n\nTweak eclib `Makefile`s so it builds with `+`.  eclib src repo.",
     "created_at": "2010-02-27T05:26:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -176,7 +176,7 @@ archive/issue_comments_073605.json:
 }
 ```
 
-Attachment
+Attachment [eclib_makefiles.patch](tarball://root/attachments/some-uuid/ticket8306/eclib_makefiles.patch) by mpatel created at 2010-02-27 05:26:18
 
 Tweak eclib `Makefile`s so it builds with `+`.  eclib src repo.
 
@@ -412,7 +412,7 @@ My motivation for making the new feature optional, for now, is so we can get fee
 archive/issue_comments_073616.json:
 ```json
 {
-    "body": "Attachment\n\nMake `sage -i foo.spkg` also append to `spkg/logs/foo.spkg`.  **scripts** repo.",
+    "body": "Attachment [trac_8306_scripts-spkg_log_files.patch](tarball://root/attachments/some-uuid/ticket8306/trac_8306_scripts-spkg_log_files.patch) by mpatel created at 2010-03-01 05:11:59\n\nMake `sage -i foo.spkg` also append to `spkg/logs/foo.spkg`.  **scripts** repo.",
     "created_at": "2010-03-01T05:11:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -421,7 +421,7 @@ archive/issue_comments_073616.json:
 }
 ```
 
-Attachment
+Attachment [trac_8306_scripts-spkg_log_files.patch](tarball://root/attachments/some-uuid/ticket8306/trac_8306_scripts-spkg_log_files.patch) by mpatel created at 2010-03-01 05:11:59
 
 Make `sage -i foo.spkg` also append to `spkg/logs/foo.spkg`.  **scripts** repo.
 
@@ -1204,7 +1204,7 @@ Two comments:
 archive/issue_comments_073644.json:
 ```json
 {
-    "body": "Attachment\n\nnew version of SAGE_ROOT/makefile",
+    "body": "Attachment [makefile](tarball://root/attachments/some-uuid/ticket8306/makefile) by jhpalmieri created at 2010-04-06 05:50:54\n\nnew version of SAGE_ROOT/makefile",
     "created_at": "2010-04-06T05:50:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -1213,7 +1213,7 @@ archive/issue_comments_073644.json:
 }
 ```
 
-Attachment
+Attachment [makefile](tarball://root/attachments/some-uuid/ticket8306/makefile) by jhpalmieri created at 2010-04-06 05:50:54
 
 new version of SAGE_ROOT/makefile
 
@@ -1242,7 +1242,7 @@ diff of SAGE_ROOT/makefile
 archive/issue_comments_073646.json:
 ```json
 {
-    "body": "Attachment\n\nscripts repo: add pipestatus to source distribution",
+    "body": "Attachment [makefile.diff](tarball://root/attachments/some-uuid/ticket8306/makefile.diff) by jhpalmieri created at 2010-04-06 21:20:36\n\nscripts repo: add pipestatus to source distribution",
     "created_at": "2010-04-06T21:20:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -1251,7 +1251,7 @@ archive/issue_comments_073646.json:
 }
 ```
 
-Attachment
+Attachment [makefile.diff](tarball://root/attachments/some-uuid/ticket8306/makefile.diff) by jhpalmieri created at 2010-04-06 21:20:36
 
 scripts repo: add pipestatus to source distribution
 
@@ -1280,7 +1280,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_073648.json:
 ```json
 {
-    "body": "Attachment\n\nRunning \"sage -sdist\" with these changes doesn't work because pipestatus doesn't get copied over.  The patch \"trac_8306_scripts-pipestatus.patch\" fixes this.\n\nI was able to successfully build this on sage.math, but I had problems on my mac (with two cores, using \"make -j2\").  I think it's with singular; I get lots of lines like\n\n```\nsage/libs/singular/singular.cpp:162:21: error: factory.h: No such file or directory\n```\n\nIt seems to be building singular at the same time as the main Sage spkg; does that sound okay?",
+    "body": "Attachment [trac_8306_scripts-pipestatus.patch](tarball://root/attachments/some-uuid/ticket8306/trac_8306_scripts-pipestatus.patch) by jhpalmieri created at 2010-04-06 22:18:57\n\nRunning \"sage -sdist\" with these changes doesn't work because pipestatus doesn't get copied over.  The patch \"trac_8306_scripts-pipestatus.patch\" fixes this.\n\nI was able to successfully build this on sage.math, but I had problems on my mac (with two cores, using \"make -j2\").  I think it's with singular; I get lots of lines like\n\n```\nsage/libs/singular/singular.cpp:162:21: error: factory.h: No such file or directory\n```\n\nIt seems to be building singular at the same time as the main Sage spkg; does that sound okay?",
     "created_at": "2010-04-06T22:18:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -1289,7 +1289,7 @@ archive/issue_comments_073648.json:
 }
 ```
 
-Attachment
+Attachment [trac_8306_scripts-pipestatus.patch](tarball://root/attachments/some-uuid/ticket8306/trac_8306_scripts-pipestatus.patch) by jhpalmieri created at 2010-04-06 22:18:57
 
 Running "sage -sdist" with these changes doesn't work because pipestatus doesn't get copied over.  The patch "trac_8306_scripts-pipestatus.patch" fixes this.
 
@@ -1555,7 +1555,7 @@ By the way, I still can't get singular and ecl to compile on my iMac if SAGE_PAR
 archive/issue_comments_073658.json:
 ```json
 {
-    "body": "Attachment\n\nversion of pipestatus using pipefail",
+    "body": "Attachment [pipestatus-new](tarball://root/attachments/some-uuid/ticket8306/pipestatus-new) by jhpalmieri created at 2010-04-11 15:22:28\n\nversion of pipestatus using pipefail",
     "created_at": "2010-04-11T15:22:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -1564,7 +1564,7 @@ archive/issue_comments_073658.json:
 }
 ```
 
-Attachment
+Attachment [pipestatus-new](tarball://root/attachments/some-uuid/ticket8306/pipestatus-new) by jhpalmieri created at 2010-04-11 15:22:28
 
 version of pipestatus using pipefail
 
@@ -1622,7 +1622,7 @@ Allow redirection of stderr and other file descriptors.  Add comp.os.unix FAQ re
 archive/issue_comments_073661.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:59 mpatel]:\n> > By the way, I still can't get singular and ecl to compile on my iMac if SAGE_PARALLEL_SPKG_BUILD is set to \"yes\". Any help with that issue would be appreciated.\n> \n> I'll try to investigate soon.\n\nI've attached updated versions of `deps`, `install`, and `pipestatus` to accompany the `makefile` and the two `trac_8306_scripts-*` patches.  With these and the forthcoming spkgs at #9185, #9186, and #9187, I can build 4.4.4.alpha0 with SAGE_PARALLEL_SPKG_BUILD=\"yes\"`.",
+    "body": "Attachment [pipestatus](tarball://root/attachments/some-uuid/ticket8306/pipestatus) by mpatel created at 2010-06-08 09:04:43\n\nReplying to [comment:59 mpatel]:\n> > By the way, I still can't get singular and ecl to compile on my iMac if SAGE_PARALLEL_SPKG_BUILD is set to \"yes\". Any help with that issue would be appreciated.\n> \n> I'll try to investigate soon.\n\nI've attached updated versions of `deps`, `install`, and `pipestatus` to accompany the `makefile` and the two `trac_8306_scripts-*` patches.  With these and the forthcoming spkgs at #9185, #9186, and #9187, I can build 4.4.4.alpha0 with SAGE_PARALLEL_SPKG_BUILD=\"yes\"`.",
     "created_at": "2010-06-08T09:04:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -1631,7 +1631,7 @@ archive/issue_comments_073661.json:
 }
 ```
 
-Attachment
+Attachment [pipestatus](tarball://root/attachments/some-uuid/ticket8306/pipestatus) by mpatel created at 2010-06-08 09:04:43
 
 Replying to [comment:59 mpatel]:
 > > By the way, I still can't get singular and ecl to compile on my iMac if SAGE_PARALLEL_SPKG_BUILD is set to "yes". Any help with that issue would be appreciated.
@@ -1686,7 +1686,7 @@ Rebased for 4.4.4.alpha0.  Replaces previous version.
 archive/issue_comments_073664.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_8306_scripts-spkg_log_files.2.patch](tarball://root/attachments/some-uuid/ticket8306/trac_8306_scripts-spkg_log_files.2.patch) by mpatel created at 2010-06-09 09:40:38",
     "created_at": "2010-06-09T09:40:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -1695,7 +1695,7 @@ archive/issue_comments_073664.json:
 }
 ```
 
-Attachment
+Attachment [trac_8306_scripts-spkg_log_files.2.patch](tarball://root/attachments/some-uuid/ticket8306/trac_8306_scripts-spkg_log_files.2.patch) by mpatel created at 2010-06-09 09:40:38
 
 
 
@@ -1957,7 +1957,7 @@ I've opened #9201 for this problem.
 archive/issue_comments_073676.json:
 ```json
 {
-    "body": "Attachment\n\n`spkg/install`.  Rebased for 4.4.4.",
+    "body": "Attachment [install](tarball://root/attachments/some-uuid/ticket8306/install) by mpatel created at 2010-06-24 07:51:37\n\n`spkg/install`.  Rebased for 4.4.4.",
     "created_at": "2010-06-24T07:51:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -1966,7 +1966,7 @@ archive/issue_comments_073676.json:
 }
 ```
 
-Attachment
+Attachment [install](tarball://root/attachments/some-uuid/ticket8306/install) by mpatel created at 2010-06-24 07:51:37
 
 `spkg/install`.  Rebased for 4.4.4.
 
@@ -1977,7 +1977,7 @@ Attachment
 archive/issue_comments_073677.json:
 ```json
 {
-    "body": "Attachment\n\n`spkg/standard/deps`.  Rebased for 4.4.4.",
+    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket8306/deps) by mpatel created at 2010-06-24 07:52:32\n\n`spkg/standard/deps`.  Rebased for 4.4.4.",
     "created_at": "2010-06-24T07:52:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -1986,7 +1986,7 @@ archive/issue_comments_073677.json:
 }
 ```
 
-Attachment
+Attachment [deps](tarball://root/attachments/some-uuid/ticket8306/deps) by mpatel created at 2010-06-24 07:52:32
 
 `spkg/standard/deps`.  Rebased for 4.4.4.
 
@@ -2145,7 +2145,7 @@ spkg/standard/deps. Rebased for 4.4.4.
 archive/issue_comments_073684.json:
 ```json
 {
-    "body": "Attachment\n\ndiff between \"deps\" in 4.4.4 and \"deps-new\"",
+    "body": "Attachment [deps-new](tarball://root/attachments/some-uuid/ticket8306/deps-new) by jhpalmieri created at 2010-06-25 00:12:08\n\ndiff between \"deps\" in 4.4.4 and \"deps-new\"",
     "created_at": "2010-06-25T00:12:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -2154,7 +2154,7 @@ archive/issue_comments_073684.json:
 }
 ```
 
-Attachment
+Attachment [deps-new](tarball://root/attachments/some-uuid/ticket8306/deps-new) by jhpalmieri created at 2010-06-25 00:12:08
 
 diff between "deps" in 4.4.4 and "deps-new"
 
@@ -2165,7 +2165,7 @@ diff between "deps" in 4.4.4 and "deps-new"
 archive/issue_comments_073685.json:
 ```json
 {
-    "body": "Attachment\n\ndiff between mpatel's \"deps\" and \"deps-new\"",
+    "body": "Attachment [deps-deps-new.diff](tarball://root/attachments/some-uuid/ticket8306/deps-deps-new.diff) by jhpalmieri created at 2010-06-25 00:12:19\n\ndiff between mpatel's \"deps\" and \"deps-new\"",
     "created_at": "2010-06-25T00:12:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -2174,7 +2174,7 @@ archive/issue_comments_073685.json:
 }
 ```
 
-Attachment
+Attachment [deps-deps-new.diff](tarball://root/attachments/some-uuid/ticket8306/deps-deps-new.diff) by jhpalmieri created at 2010-06-25 00:12:19
 
 diff between mpatel's "deps" and "deps-new"
 
@@ -2221,7 +2221,7 @@ Resolution: fixed
 archive/issue_comments_073688.json:
 ```json
 {
-    "body": "Attachment\n\nDiff of `spkg/standard/deps` vs 4.4.4.",
+    "body": "Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket8306/deps.diff) by mpatel created at 2010-06-26 07:47:50\n\nDiff of `spkg/standard/deps` vs 4.4.4.",
     "created_at": "2010-06-26T07:47:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -2230,7 +2230,7 @@ archive/issue_comments_073688.json:
 }
 ```
 
-Attachment
+Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket8306/deps.diff) by mpatel created at 2010-06-26 07:47:50
 
 Diff of `spkg/standard/deps` vs 4.4.4.
 
@@ -2259,7 +2259,7 @@ Diff of `spkg/install` vs 4.4.4.
 archive/issue_comments_073690.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:75 jhpalmieri]:\n> I think twistedweb2 used to be a package but is no longer.  I can't find the relevant ticket, but I'm going to remove references to it from deps.  (See also a comment at #9274.)\n\nI mentioned twistedweb2 in an [older version of the description](http://trac.sagemath.org/sage_trac/ticket/8306?action=diff&version=70&old_version=3).\n\nMaybe we should add the missing targets (Sphinx, etc.) at #9274?  It does seem better to be explicit about the dependencies.",
+    "body": "Attachment [install.diff](tarball://root/attachments/some-uuid/ticket8306/install.diff) by mpatel created at 2010-06-26 08:04:42\n\nReplying to [comment:75 jhpalmieri]:\n> I think twistedweb2 used to be a package but is no longer.  I can't find the relevant ticket, but I'm going to remove references to it from deps.  (See also a comment at #9274.)\n\nI mentioned twistedweb2 in an [older version of the description](http://trac.sagemath.org/sage_trac/ticket/8306?action=diff&version=70&old_version=3).\n\nMaybe we should add the missing targets (Sphinx, etc.) at #9274?  It does seem better to be explicit about the dependencies.",
     "created_at": "2010-06-26T08:04:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -2268,7 +2268,7 @@ archive/issue_comments_073690.json:
 }
 ```
 
-Attachment
+Attachment [install.diff](tarball://root/attachments/some-uuid/ticket8306/install.diff) by mpatel created at 2010-06-26 08:04:42
 
 Replying to [comment:75 jhpalmieri]:
 > I think twistedweb2 used to be a package but is no longer.  I can't find the relevant ticket, but I'm going to remove references to it from deps.  (See also a comment at #9274.)

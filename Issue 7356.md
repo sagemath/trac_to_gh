@@ -71,7 +71,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7356
 archive/issue_comments_061634.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch for 4.2 is attached. When running tests I got two errors not related to the change in this trac. The first one is solved in #6479.\n\n\n```\nsage -t  \"devel/sage/sage/calculus/desolvers.py\"\nsage -t  \"devel/sage/sage/interfaces/maxima.py\"\n```\n",
+    "body": "Attachment [trac_7356_marik.patch](tarball://root/attachments/some-uuid/ticket7356/trac_7356_marik.patch) by robert.marik created at 2009-10-30 10:42:44\n\nThe patch for 4.2 is attached. When running tests I got two errors not related to the change in this trac. The first one is solved in #6479.\n\n\n```\nsage -t  \"devel/sage/sage/calculus/desolvers.py\"\nsage -t  \"devel/sage/sage/interfaces/maxima.py\"\n```\n",
     "created_at": "2009-10-30T10:42:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7356",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_061634.json:
 }
 ```
 
-Attachment
+Attachment [trac_7356_marik.patch](tarball://root/attachments/some-uuid/ticket7356/trac_7356_marik.patch) by robert.marik created at 2009-10-30 10:42:44
 
 The patch for 4.2 is attached. When running tests I got two errors not related to the change in this trac. The first one is solved in #6479.
 
@@ -232,7 +232,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_061642.json:
 ```json
 {
-    "body": "Attachment\n\nUse instead of other, applies on top of #7328",
+    "body": "Attachment [latex-float-4.2.1.patch](tarball://root/attachments/some-uuid/ticket7356/latex-float-4.2.1.patch) by robertwb created at 2009-11-20 05:30:03\n\nUse instead of other, applies on top of #7328",
     "created_at": "2009-11-20T05:30:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7356",
     "type": "issue_comment",
@@ -241,7 +241,7 @@ archive/issue_comments_061642.json:
 }
 ```
 
-Attachment
+Attachment [latex-float-4.2.1.patch](tarball://root/attachments/some-uuid/ticket7356/latex-float-4.2.1.patch) by robertwb created at 2009-11-20 05:30:03
 
 Use instead of other, applies on top of #7328
 
@@ -270,7 +270,7 @@ I agree, less digits should be printed. Floats are more like RDF than RR, so I'v
 archive/issue_comments_061644.json:
 ```json
 {
-    "body": "Attachment\n\napply on top of latex-float-4.2.1.patch",
+    "body": "Attachment [latex-float-4.2.1-reviewer.patch](tarball://root/attachments/some-uuid/ticket7356/latex-float-4.2.1-reviewer.patch) by robert.marik created at 2009-11-20 07:44:59\n\napply on top of latex-float-4.2.1.patch",
     "created_at": "2009-11-20T07:44:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7356",
     "type": "issue_comment",
@@ -279,7 +279,7 @@ archive/issue_comments_061644.json:
 }
 ```
 
-Attachment
+Attachment [latex-float-4.2.1-reviewer.patch](tarball://root/attachments/some-uuid/ticket7356/latex-float-4.2.1-reviewer.patch) by robert.marik created at 2009-11-20 07:44:59
 
 apply on top of latex-float-4.2.1.patch
 

@@ -117,7 +117,7 @@ Adds the construct_sequence function.
 archive/issue_comments_074461.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [construct_sequence.patch](tarball://root/attachments/some-uuid/ticket8342/construct_sequence.patch) by colah created at 2010-03-14 06:05:57",
     "created_at": "2010-03-14T06:05:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8342",
     "type": "issue_comment",
@@ -126,7 +126,7 @@ archive/issue_comments_074461.json:
 }
 ```
 
-Attachment
+Attachment [construct_sequence.patch](tarball://root/attachments/some-uuid/ticket8342/construct_sequence.patch) by colah created at 2010-03-14 06:05:57
 
 
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1905
 archive/issue_comments_012067.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1905-kill-L_series.patch](tarball://root/attachments/some-uuid/ticket1905/1905-kill-L_series.patch) by AlexGhitza created at 2008-01-24 09:23:14",
     "created_at": "2008-01-24T09:23:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1905",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_012067.json:
 }
 ```
 
-Attachment
+Attachment [1905-kill-L_series.patch](tarball://root/attachments/some-uuid/ticket1905/1905-kill-L_series.patch) by AlexGhitza created at 2008-01-24 09:23:14
 
 
 

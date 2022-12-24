@@ -529,7 +529,7 @@ scripts repo
 archive/issue_comments_090261.json:
 ```json
 {
-    "body": "Attachment\n\nThe new patch also modifies sage-make_devel_packages: when preparing the scripts package, it no longer indiscriminately copies all *.txt files from SAGE_ROOT into the scripts spkg, it just copies COPYING.txt and README.txt.  (Thus it won't copy VERSION.txt.)",
+    "body": "Attachment [trac_9434-VERSION.txt.patch](tarball://root/attachments/some-uuid/ticket9434/trac_9434-VERSION.txt.patch) by jhpalmieri created at 2010-09-29 22:12:45\n\nThe new patch also modifies sage-make_devel_packages: when preparing the scripts package, it no longer indiscriminately copies all *.txt files from SAGE_ROOT into the scripts spkg, it just copies COPYING.txt and README.txt.  (Thus it won't copy VERSION.txt.)",
     "created_at": "2010-09-29T22:12:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9434",
     "type": "issue_comment",
@@ -538,7 +538,7 @@ archive/issue_comments_090261.json:
 }
 ```
 
-Attachment
+Attachment [trac_9434-VERSION.txt.patch](tarball://root/attachments/some-uuid/ticket9434/trac_9434-VERSION.txt.patch) by jhpalmieri created at 2010-09-29 22:12:45
 
 The new patch also modifies sage-make_devel_packages: when preparing the scripts package, it no longer indiscriminately copies all *.txt files from SAGE_ROOT into the scripts spkg, it just copies COPYING.txt and README.txt.  (Thus it won't copy VERSION.txt.)
 
@@ -1028,7 +1028,7 @@ Hunk #1 succeeded at 35 (offset 4 lines).
 archive/issue_comments_090276.json:
 ```json
 {
-    "body": "Attachment\n\nversion 2: replaces earlier patch. scripts repo",
+    "body": "Attachment [trac_9434-VERSION.txt.v2.patch](tarball://root/attachments/some-uuid/ticket9434/trac_9434-VERSION.txt.v2.patch) by jhpalmieri created at 2010-11-11 21:00:41\n\nversion 2: replaces earlier patch. scripts repo",
     "created_at": "2010-11-11T21:00:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9434",
     "type": "issue_comment",
@@ -1037,7 +1037,7 @@ archive/issue_comments_090276.json:
 }
 ```
 
-Attachment
+Attachment [trac_9434-VERSION.txt.v2.patch](tarball://root/attachments/some-uuid/ticket9434/trac_9434-VERSION.txt.v2.patch) by jhpalmieri created at 2010-11-11 21:00:41
 
 version 2: replaces earlier patch. scripts repo
 
@@ -1120,7 +1120,7 @@ The patch looks okay to me (apart from this minor UTC issue).  I will do some mo
 archive/issue_comments_090280.json:
 ```json
 {
-    "body": "Attachment\n\nReviewer scripts patch, apply on top of previous",
+    "body": "Attachment [9434_no_UTC.patch](tarball://root/attachments/some-uuid/ticket9434/9434_no_UTC.patch) by jdemeyer created at 2010-11-26 22:42:45\n\nReviewer scripts patch, apply on top of previous",
     "created_at": "2010-11-26T22:42:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9434",
     "type": "issue_comment",
@@ -1129,7 +1129,7 @@ archive/issue_comments_090280.json:
 }
 ```
 
-Attachment
+Attachment [9434_no_UTC.patch](tarball://root/attachments/some-uuid/ticket9434/9434_no_UTC.patch) by jdemeyer created at 2010-11-26 22:42:45
 
 Reviewer scripts patch, apply on top of previous
 
@@ -1794,7 +1794,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_090310.json:
 ```json
 {
-    "body": "Attachment\n\nscripts repo; apply on top of other patches",
+    "body": "Attachment [trac_9434-VERSION-update.patch](tarball://root/attachments/some-uuid/ticket9434/trac_9434-VERSION-update.patch) by jhpalmieri created at 2010-12-16 21:26:11\n\nscripts repo; apply on top of other patches",
     "created_at": "2010-12-16T21:26:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9434",
     "type": "issue_comment",
@@ -1803,7 +1803,7 @@ archive/issue_comments_090310.json:
 }
 ```
 
-Attachment
+Attachment [trac_9434-VERSION-update.patch](tarball://root/attachments/some-uuid/ticket9434/trac_9434-VERSION-update.patch) by jhpalmieri created at 2010-12-16 21:26:11
 
 scripts repo; apply on top of other patches
 
@@ -1814,7 +1814,7 @@ scripts repo; apply on top of other patches
 archive/issue_comments_090311.json:
 ```json
 {
-    "body": "Attachment\n\nscripts repo; this patch is optional, so reviewing it should have lower priority",
+    "body": "Attachment [trac_9434-os.path.join.patch](tarball://root/attachments/some-uuid/ticket9434/trac_9434-os.path.join.patch) by jhpalmieri created at 2010-12-16 21:27:08\n\nscripts repo; this patch is optional, so reviewing it should have lower priority",
     "created_at": "2010-12-16T21:27:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9434",
     "type": "issue_comment",
@@ -1823,7 +1823,7 @@ archive/issue_comments_090311.json:
 }
 ```
 
-Attachment
+Attachment [trac_9434-os.path.join.patch](tarball://root/attachments/some-uuid/ticket9434/trac_9434-os.path.join.patch) by jhpalmieri created at 2010-12-16 21:27:08
 
 scripts repo; this patch is optional, so reviewing it should have lower priority
 

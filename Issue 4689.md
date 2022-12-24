@@ -226,7 +226,7 @@ I think your idea of having a doctest which saves an image somewhere temporary w
 archive/issue_comments_035348.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-4689-save-docstring.patch](tarball://root/attachments/some-uuid/ticket4689/trac-4689-save-docstring.patch) by jason created at 2010-01-20 06:56:08",
     "created_at": "2010-01-20T06:56:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4689",
     "type": "issue_comment",
@@ -235,7 +235,7 @@ archive/issue_comments_035348.json:
 }
 ```
 
-Attachment
+Attachment [trac-4689-save-docstring.patch](tarball://root/attachments/some-uuid/ticket4689/trac-4689-save-docstring.patch) by jason created at 2010-01-20 06:56:08
 
 
 

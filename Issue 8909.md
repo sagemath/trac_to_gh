@@ -108,7 +108,7 @@ Changing status from new to needs_review.
 archive/issue_comments_082066.json:
 ```json
 {
-    "body": "Attachment\n\nSorry, I forgot to label it \"needs review\"",
+    "body": "Attachment [8909_gap2cyclotomic.patch](tarball://root/attachments/some-uuid/ticket8909/8909_gap2cyclotomic.patch) by SimonKing created at 2010-05-08 12:16:57\n\nSorry, I forgot to label it \"needs review\"",
     "created_at": "2010-05-08T12:16:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8909",
     "type": "issue_comment",
@@ -117,7 +117,7 @@ archive/issue_comments_082066.json:
 }
 ```
 
-Attachment
+Attachment [8909_gap2cyclotomic.patch](tarball://root/attachments/some-uuid/ticket8909/8909_gap2cyclotomic.patch) by SimonKing created at 2010-05-08 12:16:57
 
 Sorry, I forgot to label it "needs review"
 
@@ -275,7 +275,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_082075.json:
 ```json
 {
-    "body": "Attachment\n\nReplying to [comment:5 SimonKing]:\n> Replying to [comment:4 mhansen]:\n> > There's a bare except clause at 6767 which should be fixed.\n> \n> By 'bare', you mean that it is not specified what error is raised? So, `except TypeError:` instead of `except:`? Well this would be easy enough to fix.\n> \n\nUnder the assumption that I understood you correctly, I provided a second patch that specifies that we only want to catch a `TypeError`, and return to needs_review.",
+    "body": "Attachment [trac_8909_catch_exception.patch](tarball://root/attachments/some-uuid/ticket8909/trac_8909_catch_exception.patch) by SimonKing created at 2010-07-04 19:12:30\n\nReplying to [comment:5 SimonKing]:\n> Replying to [comment:4 mhansen]:\n> > There's a bare except clause at 6767 which should be fixed.\n> \n> By 'bare', you mean that it is not specified what error is raised? So, `except TypeError:` instead of `except:`? Well this would be easy enough to fix.\n> \n\nUnder the assumption that I understood you correctly, I provided a second patch that specifies that we only want to catch a `TypeError`, and return to needs_review.",
     "created_at": "2010-07-04T19:12:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8909",
     "type": "issue_comment",
@@ -284,7 +284,7 @@ archive/issue_comments_082075.json:
 }
 ```
 
-Attachment
+Attachment [trac_8909_catch_exception.patch](tarball://root/attachments/some-uuid/ticket8909/trac_8909_catch_exception.patch) by SimonKing created at 2010-07-04 19:12:30
 
 Replying to [comment:5 SimonKing]:
 > Replying to [comment:4 mhansen]:

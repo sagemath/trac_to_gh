@@ -127,7 +127,7 @@ sage: set(Primes())
 archive/issue_comments_028178.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-3933.patch](tarball://root/attachments/some-uuid/ticket3933/trac-3933.patch) by rlm created at 2009-01-23 14:13:26",
     "created_at": "2009-01-23T14:13:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3933",
     "type": "issue_comment",
@@ -136,7 +136,7 @@ archive/issue_comments_028178.json:
 }
 ```
 
-Attachment
+Attachment [trac-3933.patch](tarball://root/attachments/some-uuid/ticket3933/trac-3933.patch) by rlm created at 2009-01-23 14:13:26
 
 
 

@@ -71,7 +71,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1935
 archive/issue_comments_012277.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [1935-legendre.patch](tarball://root/attachments/some-uuid/ticket1935/1935-legendre.patch) by craigcitro created at 2008-01-26 09:34:25",
     "created_at": "2008-01-26T09:34:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1935",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_012277.json:
 }
 ```
 
-Attachment
+Attachment [1935-legendre.patch](tarball://root/attachments/some-uuid/ticket1935/1935-legendre.patch) by craigcitro created at 2008-01-26 09:34:25
 
 
 

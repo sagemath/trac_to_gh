@@ -128,7 +128,7 @@ Wow.  I'll report this upstream.  Your proposed solution looks good to me.
 archive/issue_comments_042731.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5501-RIF-pickle.patch](tarball://root/attachments/some-uuid/ticket5501/5501-RIF-pickle.patch) by robertwb created at 2010-01-17 10:21:42",
     "created_at": "2010-01-17T10:21:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5501",
     "type": "issue_comment",
@@ -137,7 +137,7 @@ archive/issue_comments_042731.json:
 }
 ```
 
-Attachment
+Attachment [5501-RIF-pickle.patch](tarball://root/attachments/some-uuid/ticket5501/5501-RIF-pickle.patch) by robertwb created at 2010-01-17 10:21:42
 
 
 

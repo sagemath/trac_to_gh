@@ -129,7 +129,7 @@ Changing assignee from malb to tbd.
 archive/issue_comments_038578.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [5064-unique-steenrod.patch](tarball://root/attachments/some-uuid/ticket5064/5064-unique-steenrod.patch) by boothby created at 2009-01-24 10:09:02",
     "created_at": "2009-01-24T10:09:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5064",
     "type": "issue_comment",
@@ -138,7 +138,7 @@ archive/issue_comments_038578.json:
 }
 ```
 
-Attachment
+Attachment [5064-unique-steenrod.patch](tarball://root/attachments/some-uuid/ticket5064/5064-unique-steenrod.patch) by boothby created at 2009-01-24 10:09:02
 
 
 

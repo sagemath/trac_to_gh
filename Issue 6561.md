@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6561
 archive/issue_comments_053513.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_6561-empty_cartesian_product.patch](tarball://root/attachments/some-uuid/ticket6561/trac_6561-empty_cartesian_product.patch) by davidloeffler created at 2009-07-20 11:46:54",
     "created_at": "2009-07-20T11:46:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6561",
     "type": "issue_comment",
@@ -46,7 +46,7 @@ archive/issue_comments_053513.json:
 }
 ```
 
-Attachment
+Attachment [trac_6561-empty_cartesian_product.patch](tarball://root/attachments/some-uuid/ticket6561/trac_6561-empty_cartesian_product.patch) by davidloeffler created at 2009-07-20 11:46:54
 
 
 
@@ -111,7 +111,7 @@ rebased to 4.1.1
 archive/issue_comments_053517.json:
 ```json
 {
-    "body": "Attachment\n\nHere is a new rebased patch; I have checked it passes doctests in 4.1.1.",
+    "body": "Attachment [trac_6561-empty_cartesian_product-rebased.patch](tarball://root/attachments/some-uuid/ticket6561/trac_6561-empty_cartesian_product-rebased.patch) by davidloeffler created at 2009-08-19 10:22:11\n\nHere is a new rebased patch; I have checked it passes doctests in 4.1.1.",
     "created_at": "2009-08-19T10:22:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6561",
     "type": "issue_comment",
@@ -120,7 +120,7 @@ archive/issue_comments_053517.json:
 }
 ```
 
-Attachment
+Attachment [trac_6561-empty_cartesian_product-rebased.patch](tarball://root/attachments/some-uuid/ticket6561/trac_6561-empty_cartesian_product-rebased.patch) by davidloeffler created at 2009-08-19 10:22:11
 
 Here is a new rebased patch; I have checked it passes doctests in 4.1.1.
 

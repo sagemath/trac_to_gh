@@ -60,7 +60,7 @@ patch correcting problem with weights for crystal graphs of type A and speeding 
 archive/issue_comments_019579.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [crystal_weights.patch](tarball://root/attachments/some-uuid/ticket2853/crystal_weights.patch) by mabshoff created at 2008-04-08 08:57:44",
     "created_at": "2008-04-08T08:57:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2853",
     "type": "issue_comment",
@@ -69,7 +69,7 @@ archive/issue_comments_019579.json:
 }
 ```
 
-Attachment
+Attachment [crystal_weights.patch](tarball://root/attachments/some-uuid/ticket2853/crystal_weights.patch) by mabshoff created at 2008-04-08 08:57:44
 
 
 
@@ -78,7 +78,7 @@ Attachment
 archive/issue_comments_019580.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2853.patch](tarball://root/attachments/some-uuid/ticket2853/2853.patch) by mhansen created at 2008-04-08 09:28:25",
     "created_at": "2008-04-08T09:28:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2853",
     "type": "issue_comment",
@@ -87,7 +87,7 @@ archive/issue_comments_019580.json:
 }
 ```
 
-Attachment
+Attachment [2853.patch](tarball://root/attachments/some-uuid/ticket2853/2853.patch) by mhansen created at 2008-04-08 09:28:25
 
 
 
@@ -228,7 +228,7 @@ Dan
 archive/issue_comments_019585.json:
 ```json
 {
-    "body": "Attachment\n\nIt turns out that I had forgotten the G2 patch that went in on Saturday.\n\nI corrected the patch and added it as 2853.1.patch. I believe it is now\ncorrect.\n\nDan",
+    "body": "Attachment [2853.1.patch](tarball://root/attachments/some-uuid/ticket2853/2853.1.patch) by bump created at 2008-04-08 23:17:29\n\nIt turns out that I had forgotten the G2 patch that went in on Saturday.\n\nI corrected the patch and added it as 2853.1.patch. I believe it is now\ncorrect.\n\nDan",
     "created_at": "2008-04-08T23:17:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2853",
     "type": "issue_comment",
@@ -237,7 +237,7 @@ archive/issue_comments_019585.json:
 }
 ```
 
-Attachment
+Attachment [2853.1.patch](tarball://root/attachments/some-uuid/ticket2853/2853.1.patch) by bump created at 2008-04-08 23:17:29
 
 It turns out that I had forgotten the G2 patch that went in on Saturday.
 

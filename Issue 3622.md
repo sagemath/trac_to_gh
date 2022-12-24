@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3622
 archive/issue_comments_025598.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3622-fast_float_integration.patch](tarball://root/attachments/some-uuid/ticket3622/3622-fast_float_integration.patch) by robertwb created at 2008-08-06 07:23:53",
     "created_at": "2008-08-06T07:23:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3622",
     "type": "issue_comment",
@@ -41,7 +41,7 @@ archive/issue_comments_025598.json:
 }
 ```
 
-Attachment
+Attachment [3622-fast_float_integration.patch](tarball://root/attachments/some-uuid/ticket3622/3622-fast_float_integration.patch) by robertwb created at 2008-08-06 07:23:53
 
 
 
@@ -165,7 +165,7 @@ This is a duplicate of #2881, although maybe we should keep this version since i
 archive/issue_comments_025602.json:
 ```json
 {
-    "body": "Attachment\n\nupdated",
+    "body": "Attachment [3622-fast_float_integration.2.patch](tarball://root/attachments/some-uuid/ticket3622/3622-fast_float_integration.2.patch) by robertwb created at 2008-09-02 03:40:30\n\nupdated",
     "created_at": "2008-09-02T03:40:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3622",
     "type": "issue_comment",
@@ -174,7 +174,7 @@ archive/issue_comments_025602.json:
 }
 ```
 
-Attachment
+Attachment [3622-fast_float_integration.2.patch](tarball://root/attachments/some-uuid/ticket3622/3622-fast_float_integration.2.patch) by robertwb created at 2008-09-02 03:40:30
 
 updated
 
@@ -203,7 +203,7 @@ one more optimization
 archive/issue_comments_025604.json:
 ```json
 {
-    "body": "Attachment\n\nI added some more documentation to show that the old behavior is not lost. I also fixed it so constant functions work (that never worked before either, but it was an easy fix). \n\nFast float construction has been optimized in the meantime, so now it's always faster. \n\n\n```\nsage: f = lambda x: sin(x)^3 + sin(x)\nsage: timeit('numerical_integral(f, 0, pi)')\n625 loops, best of 3: 869 \u00b5s per loop\nsage: f = sin(x)^3 + sin(x)\nsage: timeit('numerical_integral(f, 0, pi)')\n5 loops, best of 3: 134 \u00b5s per loop\n```\n\n\n(Note that `timeit('numerical_integral(sin(x)^3 + sin(x),  0, pi)')` is a bit unfair because it constructs the symbolic expression every loop, but this isn't a typical use case anyways...)",
+    "body": "Attachment [3622-fast_float_integration.3.patch](tarball://root/attachments/some-uuid/ticket3622/3622-fast_float_integration.3.patch) by robertwb created at 2008-09-02 03:54:32\n\nI added some more documentation to show that the old behavior is not lost. I also fixed it so constant functions work (that never worked before either, but it was an easy fix). \n\nFast float construction has been optimized in the meantime, so now it's always faster. \n\n\n```\nsage: f = lambda x: sin(x)^3 + sin(x)\nsage: timeit('numerical_integral(f, 0, pi)')\n625 loops, best of 3: 869 \u00b5s per loop\nsage: f = sin(x)^3 + sin(x)\nsage: timeit('numerical_integral(f, 0, pi)')\n5 loops, best of 3: 134 \u00b5s per loop\n```\n\n\n(Note that `timeit('numerical_integral(sin(x)^3 + sin(x),  0, pi)')` is a bit unfair because it constructs the symbolic expression every loop, but this isn't a typical use case anyways...)",
     "created_at": "2008-09-02T03:54:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3622",
     "type": "issue_comment",
@@ -212,7 +212,7 @@ archive/issue_comments_025604.json:
 }
 ```
 
-Attachment
+Attachment [3622-fast_float_integration.3.patch](tarball://root/attachments/some-uuid/ticket3622/3622-fast_float_integration.3.patch) by robertwb created at 2008-09-02 03:54:32
 
 I added some more documentation to show that the old behavior is not lost. I also fixed it so constant functions work (that never worked before either, but it was an easy fix). 
 

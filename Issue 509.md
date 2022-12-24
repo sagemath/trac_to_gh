@@ -51,7 +51,7 @@ Patch adding option to run ipython with gdb.
 archive/issue_comments_002557.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [gdb-ipython.hg_export](tarball://root/attachments/some-uuid/ticket509/gdb-ipython.hg_export) by mabshoff created at 2007-09-09 06:08:15",
     "created_at": "2007-09-09T06:08:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/509",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_002557.json:
 }
 ```
 
-Attachment
+Attachment [gdb-ipython.hg_export](tarball://root/attachments/some-uuid/ticket509/gdb-ipython.hg_export) by mabshoff created at 2007-09-09 06:08:15
 
 
 

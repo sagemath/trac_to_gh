@@ -250,7 +250,7 @@ Same patch as listed in the post.
 archive/issue_comments_004835.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [#801.patch](tarball://root/attachments/some-uuid/ticket801/#801.patch) by was created at 2007-10-04 14:56:43",
     "created_at": "2007-10-04T14:56:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/801",
     "type": "issue_comment",
@@ -259,7 +259,7 @@ archive/issue_comments_004835.json:
 }
 ```
 
-Attachment
+Attachment [#801.patch](tarball://root/attachments/some-uuid/ticket801/#801.patch) by was created at 2007-10-04 14:56:43
 
 
 

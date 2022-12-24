@@ -258,7 +258,7 @@ x - y
 archive/issue_comments_031670.json:
 ```json
 {
-    "body": "Attachment\n\nThe attached patch removes the uses of polydict.",
+    "body": "Attachment [trac_4322.patch](tarball://root/attachments/some-uuid/ticket4322/trac_4322.patch) by AlexGhitza created at 2009-01-23 18:40:41\n\nThe attached patch removes the uses of polydict.",
     "created_at": "2009-01-23T18:40:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4322",
     "type": "issue_comment",
@@ -267,7 +267,7 @@ archive/issue_comments_031670.json:
 }
 ```
 
-Attachment
+Attachment [trac_4322.patch](tarball://root/attachments/some-uuid/ticket4322/trac_4322.patch) by AlexGhitza created at 2009-01-23 18:40:41
 
 The attached patch removes the uses of polydict.
 

@@ -56,7 +56,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3910
 archive/issue_comments_027970.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac3910-interval-integers.patch](tarball://root/attachments/some-uuid/ticket3910/trac3910-interval-integers.patch) by cwitty created at 2008-08-20 14:23:57",
     "created_at": "2008-08-20T14:23:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3910",
     "type": "issue_comment",
@@ -65,7 +65,7 @@ archive/issue_comments_027970.json:
 }
 ```
 
-Attachment
+Attachment [trac3910-interval-integers.patch](tarball://root/attachments/some-uuid/ticket3910/trac3910-interval-integers.patch) by cwitty created at 2008-08-20 14:23:57
 
 
 

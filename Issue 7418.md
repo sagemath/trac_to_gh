@@ -240,7 +240,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_062425.json:
 ```json
 {
-    "body": "Attachment\n\nV2 adds one --- I hope it's in the right place.  The queue:\n\n```\nSageNB 0.7 / #8051\ntrac_7784-hgignore_update.patch\ntrac_5712-interrupt-notification.5.patch\ntrac_6069-missing_pub_ws.2.patch\ntrac_8038-email_plus_addressing_v2.patch\ntrac_7506-notebook_object-documentation.2.patch\ntrac_693-spawn_notebook.3.patch\ntrac_5177-delete-cell-dirs.2.patch\ntrac_7418-maxima_cells.2.patch\n```\n\nThe patch version numbers may be off by one or so.\n\nPositive review, but someone should review my change.",
+    "body": "Attachment [trac_7418-maxima_cells.2.patch](tarball://root/attachments/some-uuid/ticket7418/trac_7418-maxima_cells.2.patch) by mpatel created at 2010-01-25 08:07:53\n\nV2 adds one --- I hope it's in the right place.  The queue:\n\n```\nSageNB 0.7 / #8051\ntrac_7784-hgignore_update.patch\ntrac_5712-interrupt-notification.5.patch\ntrac_6069-missing_pub_ws.2.patch\ntrac_8038-email_plus_addressing_v2.patch\ntrac_7506-notebook_object-documentation.2.patch\ntrac_693-spawn_notebook.3.patch\ntrac_5177-delete-cell-dirs.2.patch\ntrac_7418-maxima_cells.2.patch\n```\n\nThe patch version numbers may be off by one or so.\n\nPositive review, but someone should review my change.",
     "created_at": "2010-01-25T08:07:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7418",
     "type": "issue_comment",
@@ -249,7 +249,7 @@ archive/issue_comments_062425.json:
 }
 ```
 
-Attachment
+Attachment [trac_7418-maxima_cells.2.patch](tarball://root/attachments/some-uuid/ticket7418/trac_7418-maxima_cells.2.patch) by mpatel created at 2010-01-25 08:07:53
 
 V2 adds one --- I hope it's in the right place.  The queue:
 

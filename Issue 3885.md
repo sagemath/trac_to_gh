@@ -53,7 +53,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3885
 archive/issue_comments_027716.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac-3885.patch](tarball://root/attachments/some-uuid/ticket3885/trac-3885.patch) by craigcitro created at 2008-08-17 21:59:43",
     "created_at": "2008-08-17T21:59:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3885",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_027716.json:
 }
 ```
 
-Attachment
+Attachment [trac-3885.patch](tarball://root/attachments/some-uuid/ticket3885/trac-3885.patch) by craigcitro created at 2008-08-17 21:59:43
 
 
 
@@ -199,7 +199,7 @@ Yep, thank god for doctests. This was really hard to track down: elements of `Cy
 archive/issue_comments_027722.json:
 ```json
 {
-    "body": "Attachment\n\nWith Craig's second patch all doctests pass. Somebody more knowledgeable in this area of the code please check that this is the correct fix.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac-3885-pt2.patch](tarball://root/attachments/some-uuid/ticket3885/trac-3885-pt2.patch) by mabshoff created at 2008-09-02 09:06:36\n\nWith Craig's second patch all doctests pass. Somebody more knowledgeable in this area of the code please check that this is the correct fix.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-02T09:06:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3885",
     "type": "issue_comment",
@@ -208,7 +208,7 @@ archive/issue_comments_027722.json:
 }
 ```
 
-Attachment
+Attachment [trac-3885-pt2.patch](tarball://root/attachments/some-uuid/ticket3885/trac-3885-pt2.patch) by mabshoff created at 2008-09-02 09:06:36
 
 With Craig's second patch all doctests pass. Somebody more knowledgeable in this area of the code please check that this is the correct fix.
 

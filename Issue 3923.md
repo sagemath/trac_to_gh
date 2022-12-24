@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3923
 archive/issue_comments_028064.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3923_1.patch](tarball://root/attachments/some-uuid/ticket3923/sage-3923_1.patch) by TimothyClemans created at 2008-08-22 00:16:46",
     "created_at": "2008-08-22T00:16:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3923",
     "type": "issue_comment",
@@ -40,7 +40,7 @@ archive/issue_comments_028064.json:
 }
 ```
 
-Attachment
+Attachment [sage-3923_1.patch](tarball://root/attachments/some-uuid/ticket3923/sage-3923_1.patch) by TimothyClemans created at 2008-08-22 00:16:46
 
 
 
@@ -49,7 +49,7 @@ Attachment
 archive/issue_comments_028065.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [extcode-3923_1.patch](tarball://root/attachments/some-uuid/ticket3923/extcode-3923_1.patch) by TimothyClemans created at 2008-08-23 17:25:29",
     "created_at": "2008-08-23T17:25:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3923",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_028065.json:
 }
 ```
 
-Attachment
+Attachment [extcode-3923_1.patch](tarball://root/attachments/some-uuid/ticket3923/extcode-3923_1.patch) by TimothyClemans created at 2008-08-23 17:25:29
 
 
 
@@ -67,7 +67,7 @@ Attachment
 archive/issue_comments_028066.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [sage-3923_2.patch](tarball://root/attachments/some-uuid/ticket3923/sage-3923_2.patch) by TimothyClemans created at 2008-08-23 17:26:03",
     "created_at": "2008-08-23T17:26:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3923",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_028066.json:
 }
 ```
 
-Attachment
+Attachment [sage-3923_2.patch](tarball://root/attachments/some-uuid/ticket3923/sage-3923_2.patch) by TimothyClemans created at 2008-08-23 17:26:03
 
 
 
@@ -85,7 +85,7 @@ Attachment
 archive/issue_comments_028067.json:
 ```json
 {
-    "body": "Attachment\n\nremoves old files",
+    "body": "Attachment [sage-3923_3.patch](tarball://root/attachments/some-uuid/ticket3923/sage-3923_3.patch) by TimothyClemans created at 2008-08-23 17:53:41\n\nremoves old files",
     "created_at": "2008-08-23T17:53:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3923",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_028067.json:
 }
 ```
 
-Attachment
+Attachment [sage-3923_3.patch](tarball://root/attachments/some-uuid/ticket3923/sage-3923_3.patch) by TimothyClemans created at 2008-08-23 17:53:41
 
 removes old files
 
@@ -105,7 +105,7 @@ removes old files
 archive/issue_comments_028068.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [extcode-3923_3.patch](tarball://root/attachments/some-uuid/ticket3923/extcode-3923_3.patch) by TimothyClemans created at 2008-08-23 17:54:06",
     "created_at": "2008-08-23T17:54:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3923",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_028068.json:
 }
 ```
 
-Attachment
+Attachment [extcode-3923_3.patch](tarball://root/attachments/some-uuid/ticket3923/extcode-3923_3.patch) by TimothyClemans created at 2008-08-23 17:54:06
 
 
 
@@ -231,7 +231,7 @@ Changing assignee from boothby to mhansen.
 archive/issue_comments_028074.json:
 ```json
 {
-    "body": "Attachment\n\nI rebased the patches against 3.2.alpha0, moved the templates from extcode to sage/server/notebook/templates/, and changed the imports to use Jinja1 instead of Jinja2.\n\nApply only trac_3923.patch.",
+    "body": "Attachment [trac_3923.patch](tarball://root/attachments/some-uuid/ticket3923/trac_3923.patch) by mhansen created at 2008-10-23 23:15:22\n\nI rebased the patches against 3.2.alpha0, moved the templates from extcode to sage/server/notebook/templates/, and changed the imports to use Jinja1 instead of Jinja2.\n\nApply only trac_3923.patch.",
     "created_at": "2008-10-23T23:15:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3923",
     "type": "issue_comment",
@@ -240,7 +240,7 @@ archive/issue_comments_028074.json:
 }
 ```
 
-Attachment
+Attachment [trac_3923.patch](tarball://root/attachments/some-uuid/ticket3923/trac_3923.patch) by mhansen created at 2008-10-23 23:15:22
 
 I rebased the patches against 3.2.alpha0, moved the templates from extcode to sage/server/notebook/templates/, and changed the imports to use Jinja1 instead of Jinja2.
 

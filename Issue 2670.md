@@ -146,7 +146,7 @@ sage: m.find(lambda x:x>2)
 archive/issue_comments_018380.json:
 ```json
 {
-    "body": "Attachment\n\nA patch is up. Turns out you cannot create a matrix with True and False entries, so I returned one with entries in GF(2).",
+    "body": "Attachment [2670.patch](tarball://root/attachments/some-uuid/ticket2670/2670.patch) by dfdeshom created at 2008-04-03 15:36:39\n\nA patch is up. Turns out you cannot create a matrix with True and False entries, so I returned one with entries in GF(2).",
     "created_at": "2008-04-03T15:36:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2670",
     "type": "issue_comment",
@@ -155,7 +155,7 @@ archive/issue_comments_018380.json:
 }
 ```
 
-Attachment
+Attachment [2670.patch](tarball://root/attachments/some-uuid/ticket2670/2670.patch) by dfdeshom created at 2008-04-03 15:36:39
 
 A patch is up. Turns out you cannot create a matrix with True and False entries, so I returned one with entries in GF(2).
 

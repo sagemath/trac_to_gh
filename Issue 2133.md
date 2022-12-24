@@ -59,7 +59,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2133
 archive/issue_comments_013986.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [2133-dimensions_weight_0.patch](tarball://root/attachments/some-uuid/ticket2133/2133-dimensions_weight_0.patch) by AlexGhitza created at 2008-02-17 01:40:04",
     "created_at": "2008-02-17T01:40:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2133",
     "type": "issue_comment",
@@ -68,7 +68,7 @@ archive/issue_comments_013986.json:
 }
 ```
 
-Attachment
+Attachment [2133-dimensions_weight_0.patch](tarball://root/attachments/some-uuid/ticket2133/2133-dimensions_weight_0.patch) by AlexGhitza created at 2008-02-17 01:40:04
 
 
 
@@ -95,7 +95,7 @@ archive/issue_comments_013987.json:
 archive/issue_comments_013988.json:
 ```json
 {
-    "body": "Attachment\n\napply this and the previous patch; this just adds a doctest",
+    "body": "Attachment [2133-doctest.patch](tarball://root/attachments/some-uuid/ticket2133/2133-doctest.patch) by was created at 2008-02-19 16:07:19\n\napply this and the previous patch; this just adds a doctest",
     "created_at": "2008-02-19T16:07:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2133",
     "type": "issue_comment",
@@ -104,7 +104,7 @@ archive/issue_comments_013988.json:
 }
 ```
 
-Attachment
+Attachment [2133-doctest.patch](tarball://root/attachments/some-uuid/ticket2133/2133-doctest.patch) by was created at 2008-02-19 16:07:19
 
 apply this and the previous patch; this just adds a doctest
 

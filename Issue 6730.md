@@ -49,7 +49,7 @@ based on Sage 4.1.1.rc2
 archive/issue_comments_055190.json:
 ```json
 {
-    "body": "Attachment\n\nAll looks good",
+    "body": "Attachment [trac_6730-spell-check-rings.patch](tarball://root/attachments/some-uuid/ticket6730/trac_6730-spell-check-rings.patch) by fwclarke created at 2009-08-13 22:38:56\n\nAll looks good",
     "created_at": "2009-08-13T22:38:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6730",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_055190.json:
 }
 ```
 
-Attachment
+Attachment [trac_6730-spell-check-rings.patch](tarball://root/attachments/some-uuid/ticket6730/trac_6730-spell-check-rings.patch) by fwclarke created at 2009-08-13 22:38:56
 
 All looks good
 

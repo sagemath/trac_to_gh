@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5542
 archive/issue_comments_043123.json:
 ```json
 {
-    "body": "Attachment\n\nThe patch **trac_5542-docstring-fixes.patch** fixes formatting problems I found while reviewing ticket #5536. This patch depends on #5536, and the patch at #5536 should be applied first.",
+    "body": "Attachment [trac_5542-docstring-fixes.patch](tarball://root/attachments/some-uuid/ticket5542/trac_5542-docstring-fixes.patch) by mvngu created at 2009-03-17 07:54:23\n\nThe patch **trac_5542-docstring-fixes.patch** fixes formatting problems I found while reviewing ticket #5536. This patch depends on #5536, and the patch at #5536 should be applied first.",
     "created_at": "2009-03-17T07:54:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5542",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_043123.json:
 }
 ```
 
-Attachment
+Attachment [trac_5542-docstring-fixes.patch](tarball://root/attachments/some-uuid/ticket5542/trac_5542-docstring-fixes.patch) by mvngu created at 2009-03-17 07:54:23
 
 The patch **trac_5542-docstring-fixes.patch** fixes formatting problems I found while reviewing ticket #5536. This patch depends on #5536, and the patch at #5536 should be applied first.
 
@@ -121,7 +121,7 @@ Should have been `\\times` instead.  Here's a replacement patch.
 archive/issue_comments_043127.json:
 ```json
 {
-    "body": "Attachment\n\nOK, the (new) patch **5542-referee.patch** applies fine against Sage 3.4, all doctests passed, the HTML version of the reference manual builds without problems, and the macro `\\\\times` now renders as expected. The HTML manual page for `sage/groups/perm_gps/permgroup.py` now looks ridiculously beautiful :-)  Positive review.",
+    "body": "Attachment [5542-referee.patch](tarball://root/attachments/some-uuid/ticket5542/5542-referee.patch) by mvngu created at 2009-03-18 23:24:25\n\nOK, the (new) patch **5542-referee.patch** applies fine against Sage 3.4, all doctests passed, the HTML version of the reference manual builds without problems, and the macro `\\\\times` now renders as expected. The HTML manual page for `sage/groups/perm_gps/permgroup.py` now looks ridiculously beautiful :-)  Positive review.",
     "created_at": "2009-03-18T23:24:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5542",
     "type": "issue_comment",
@@ -130,7 +130,7 @@ archive/issue_comments_043127.json:
 }
 ```
 
-Attachment
+Attachment [5542-referee.patch](tarball://root/attachments/some-uuid/ticket5542/5542-referee.patch) by mvngu created at 2009-03-18 23:24:25
 
 OK, the (new) patch **5542-referee.patch** applies fine against Sage 3.4, all doctests passed, the HTML version of the reference manual builds without problems, and the macro `\\times` now renders as expected. The HTML manual page for `sage/groups/perm_gps/permgroup.py` now looks ridiculously beautiful :-)  Positive review.
 

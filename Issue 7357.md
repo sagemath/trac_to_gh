@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7357
 archive/issue_comments_061648.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [li(x).patch](tarball://root/attachments/some-uuid/ticket7357/li(x).patch) by myurko created at 2009-10-30 16:53:13",
     "created_at": "2009-10-30T16:53:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7357",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_061648.json:
 }
 ```
 
-Attachment
+Attachment [li(x).patch](tarball://root/attachments/some-uuid/ticket7357/li(x).patch) by myurko created at 2009-10-30 16:53:13
 
 
 
@@ -105,7 +105,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_061652.json:
 ```json
 {
-    "body": "Attachment\n\nThis patch adds these tests.  It still depends on the (newest) patch at #3401, and in fact gets rid of one final thing which was only needed by the previous implementation of Li.",
+    "body": "Attachment [non-offset-log-int.patch](tarball://root/attachments/some-uuid/ticket7357/non-offset-log-int.patch) by kcrisman created at 2010-01-18 17:11:39\n\nThis patch adds these tests.  It still depends on the (newest) patch at #3401, and in fact gets rid of one final thing which was only needed by the previous implementation of Li.",
     "created_at": "2010-01-18T17:11:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7357",
     "type": "issue_comment",
@@ -114,7 +114,7 @@ archive/issue_comments_061652.json:
 }
 ```
 
-Attachment
+Attachment [non-offset-log-int.patch](tarball://root/attachments/some-uuid/ticket7357/non-offset-log-int.patch) by kcrisman created at 2010-01-18 17:11:39
 
 This patch adds these tests.  It still depends on the (newest) patch at #3401, and in fact gets rid of one final thing which was only needed by the previous implementation of Li.
 

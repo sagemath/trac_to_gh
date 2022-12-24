@@ -61,7 +61,7 @@ fixed typos in files under sage/algebras
 archive/issue_comments_041268.json:
 ```json
 {
-    "body": "Attachment\n\nfixed typos in files under sage/calculus",
+    "body": "Attachment [algebras.patch](tarball://root/attachments/some-uuid/ticket5357/algebras.patch) by mvngu created at 2009-02-24 08:10:27\n\nfixed typos in files under sage/calculus",
     "created_at": "2009-02-24T08:10:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5357",
     "type": "issue_comment",
@@ -70,7 +70,7 @@ archive/issue_comments_041268.json:
 }
 ```
 
-Attachment
+Attachment [algebras.patch](tarball://root/attachments/some-uuid/ticket5357/algebras.patch) by mvngu created at 2009-02-24 08:10:27
 
 fixed typos in files under sage/calculus
 
@@ -81,7 +81,7 @@ fixed typos in files under sage/calculus
 archive/issue_comments_041269.json:
 ```json
 {
-    "body": "Attachment\n\nfixed typos in files under sage/coding",
+    "body": "Attachment [calculus.patch](tarball://root/attachments/some-uuid/ticket5357/calculus.patch) by mvngu created at 2009-02-24 08:10:46\n\nfixed typos in files under sage/coding",
     "created_at": "2009-02-24T08:10:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5357",
     "type": "issue_comment",
@@ -90,7 +90,7 @@ archive/issue_comments_041269.json:
 }
 ```
 
-Attachment
+Attachment [calculus.patch](tarball://root/attachments/some-uuid/ticket5357/calculus.patch) by mvngu created at 2009-02-24 08:10:46
 
 fixed typos in files under sage/coding
 
@@ -101,7 +101,7 @@ fixed typos in files under sage/coding
 archive/issue_comments_041270.json:
 ```json
 {
-    "body": "Attachment\n\nfixed typos in files under sage/combinat; part 1",
+    "body": "Attachment [combinat-1.patch](tarball://root/attachments/some-uuid/ticket5357/combinat-1.patch) by mvngu created at 2009-02-24 08:11:19\n\nfixed typos in files under sage/combinat; part 1",
     "created_at": "2009-02-24T08:11:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5357",
     "type": "issue_comment",
@@ -110,7 +110,7 @@ archive/issue_comments_041270.json:
 }
 ```
 
-Attachment
+Attachment [combinat-1.patch](tarball://root/attachments/some-uuid/ticket5357/combinat-1.patch) by mvngu created at 2009-02-24 08:11:19
 
 fixed typos in files under sage/combinat; part 1
 
@@ -139,7 +139,7 @@ fixed typos in files under sage/combinat; part 2
 archive/issue_comments_041272.json:
 ```json
 {
-    "body": "Attachment\n\nfixed typos in files under sage/crypto",
+    "body": "Attachment [crypto.patch](tarball://root/attachments/some-uuid/ticket5357/crypto.patch) by mvngu created at 2009-02-24 08:12:04\n\nfixed typos in files under sage/crypto",
     "created_at": "2009-02-24T08:12:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5357",
     "type": "issue_comment",
@@ -148,7 +148,7 @@ archive/issue_comments_041272.json:
 }
 ```
 
-Attachment
+Attachment [crypto.patch](tarball://root/attachments/some-uuid/ticket5357/crypto.patch) by mvngu created at 2009-02-24 08:12:04
 
 fixed typos in files under sage/crypto
 
@@ -177,7 +177,7 @@ fixed typos in files under sage/databases
 archive/issue_comments_041274.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [databases.patch](tarball://root/attachments/some-uuid/ticket5357/databases.patch) by mvngu created at 2009-02-24 08:14:00",
     "created_at": "2009-02-24T08:14:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5357",
     "type": "issue_comment",
@@ -186,7 +186,7 @@ archive/issue_comments_041274.json:
 }
 ```
 
-Attachment
+Attachment [databases.patch](tarball://root/attachments/some-uuid/ticket5357/databases.patch) by mvngu created at 2009-02-24 08:14:00
 
 
 
@@ -267,7 +267,7 @@ Actually, I can take care of it as I had already made a number of the SAGE -> Sa
 archive/issue_comments_041278.json:
 ```json
 {
-    "body": "Attachment\n\nLooks good to me.  I made a rebased trac_5357.patch.",
+    "body": "Attachment [trac_5357.patch](tarball://root/attachments/some-uuid/ticket5357/trac_5357.patch) by mhansen created at 2009-02-28 16:51:38\n\nLooks good to me.  I made a rebased trac_5357.patch.",
     "created_at": "2009-02-28T16:51:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5357",
     "type": "issue_comment",
@@ -276,7 +276,7 @@ archive/issue_comments_041278.json:
 }
 ```
 
-Attachment
+Attachment [trac_5357.patch](tarball://root/attachments/some-uuid/ticket5357/trac_5357.patch) by mhansen created at 2009-02-28 16:51:38
 
 Looks good to me.  I made a rebased trac_5357.patch.
 

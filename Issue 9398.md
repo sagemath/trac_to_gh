@@ -83,7 +83,7 @@ Changing status from new to needs_review.
 archive/issue_comments_089519.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [preserve_rlimits.patch](tarball://root/attachments/some-uuid/ticket9398/preserve_rlimits.patch) by nbruin created at 2010-06-30 22:14:07",
     "created_at": "2010-06-30T22:14:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9398",
     "type": "issue_comment",
@@ -92,7 +92,7 @@ archive/issue_comments_089519.json:
 }
 ```
 
-Attachment
+Attachment [preserve_rlimits.patch](tarball://root/attachments/some-uuid/ticket9398/preserve_rlimits.patch) by nbruin created at 2010-06-30 22:14:07
 
 
 

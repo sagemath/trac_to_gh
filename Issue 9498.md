@@ -112,7 +112,7 @@ Look into whether the comment malb posted on #5074 is really just an indication 
 archive/issue_comments_091212.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9498-rebased_to_apply_after_5074.patch](tarball://root/attachments/some-uuid/ticket9498/trac_9498-rebased_to_apply_after_5074.patch) by was created at 2010-07-14 22:13:45",
     "created_at": "2010-07-14T22:13:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9498",
     "type": "issue_comment",
@@ -121,7 +121,7 @@ archive/issue_comments_091212.json:
 }
 ```
 
-Attachment
+Attachment [trac_9498-rebased_to_apply_after_5074.patch](tarball://root/attachments/some-uuid/ticket9498/trac_9498-rebased_to_apply_after_5074.patch) by was created at 2010-07-14 22:13:45
 
 
 
@@ -130,7 +130,7 @@ Attachment
 archive/issue_comments_091213.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_9498.patch](tarball://root/attachments/some-uuid/ticket9498/trac_9498.patch) by was created at 2010-07-14 22:15:38",
     "created_at": "2010-07-14T22:15:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9498",
     "type": "issue_comment",
@@ -139,7 +139,7 @@ archive/issue_comments_091213.json:
 }
 ```
 
-Attachment
+Attachment [trac_9498.patch](tarball://root/attachments/some-uuid/ticket9498/trac_9498.patch) by was created at 2010-07-14 22:15:38
 
 
 
@@ -204,7 +204,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_091217.json:
 ```json
 {
-    "body": "Attachment\n\nSame patch, fixed commit message",
+    "body": "Attachment [trac_9498.2.patch](tarball://root/attachments/some-uuid/ticket9498/trac_9498.2.patch) by jdemeyer created at 2011-01-19 02:07:38\n\nSame patch, fixed commit message",
     "created_at": "2011-01-19T02:07:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9498",
     "type": "issue_comment",
@@ -213,7 +213,7 @@ archive/issue_comments_091217.json:
 }
 ```
 
-Attachment
+Attachment [trac_9498.2.patch](tarball://root/attachments/some-uuid/ticket9498/trac_9498.2.patch) by jdemeyer created at 2011-01-19 02:07:38
 
 Same patch, fixed commit message
 

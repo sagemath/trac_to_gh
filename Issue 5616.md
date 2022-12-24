@@ -69,7 +69,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5616
 archive/issue_comments_043853.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac5616-fast-callable-gen-pxd.patch](tarball://root/attachments/some-uuid/ticket5616/trac5616-fast-callable-gen-pxd.patch) by cwitty created at 2009-03-28 20:27:47",
     "created_at": "2009-03-28T20:27:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5616",
     "type": "issue_comment",
@@ -78,7 +78,7 @@ archive/issue_comments_043853.json:
 }
 ```
 
-Attachment
+Attachment [trac5616-fast-callable-gen-pxd.patch](tarball://root/attachments/some-uuid/ticket5616/trac5616-fast-callable-gen-pxd.patch) by cwitty created at 2009-03-28 20:27:47
 
 
 
@@ -87,7 +87,7 @@ Attachment
 archive/issue_comments_043854.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac5616-fast-callable-cdef-interface.patch](tarball://root/attachments/some-uuid/ticket5616/trac5616-fast-callable-cdef-interface.patch) by cwitty created at 2009-03-28 20:28:15",
     "created_at": "2009-03-28T20:28:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5616",
     "type": "issue_comment",
@@ -96,7 +96,7 @@ archive/issue_comments_043854.json:
 }
 ```
 
-Attachment
+Attachment [trac5616-fast-callable-cdef-interface.patch](tarball://root/attachments/some-uuid/ticket5616/trac5616-fast-callable-cdef-interface.patch) by cwitty created at 2009-03-28 20:28:15
 
 
 

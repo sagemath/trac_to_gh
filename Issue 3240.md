@@ -49,7 +49,7 @@ depends on #3050
 archive/issue_comments_022436.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3240.patch](tarball://root/attachments/some-uuid/ticket3240/3240.patch) by TimothyClemans created at 2008-05-17 23:11:55",
     "created_at": "2008-05-17T23:11:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3240",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_022436.json:
 }
 ```
 
-Attachment
+Attachment [3240.patch](tarball://root/attachments/some-uuid/ticket3240/3240.patch) by TimothyClemans created at 2008-05-17 23:11:55
 
 
 
@@ -160,7 +160,7 @@ The notebook files are stored in: misc
 archive/issue_comments_022439.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [3240_2.patch](tarball://root/attachments/some-uuid/ticket3240/3240_2.patch) by TimothyClemans created at 2008-05-19 05:35:08",
     "created_at": "2008-05-19T05:35:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3240",
     "type": "issue_comment",
@@ -169,7 +169,7 @@ archive/issue_comments_022439.json:
 }
 ```
 
-Attachment
+Attachment [3240_2.patch](tarball://root/attachments/some-uuid/ticket3240/3240_2.patch) by TimothyClemans created at 2008-05-19 05:35:08
 
 
 
@@ -178,7 +178,7 @@ Attachment
 archive/issue_comments_022440.json:
 ```json
 {
-    "body": "Attachment\n\ndocstring for Worksheet_publish",
+    "body": "Attachment [3240_3.patch](tarball://root/attachments/some-uuid/ticket3240/3240_3.patch) by TimothyClemans created at 2008-05-19 06:15:02\n\ndocstring for Worksheet_publish",
     "created_at": "2008-05-19T06:15:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3240",
     "type": "issue_comment",
@@ -187,7 +187,7 @@ archive/issue_comments_022440.json:
 }
 ```
 
-Attachment
+Attachment [3240_3.patch](tarball://root/attachments/some-uuid/ticket3240/3240_3.patch) by TimothyClemans created at 2008-05-19 06:15:02
 
 docstring for Worksheet_publish
 
@@ -252,7 +252,7 @@ I tried to publish a worksheet with auto-publish on, and got an internal sever e
 archive/issue_comments_022442.json:
 ```json
 {
-    "body": "Attachment\n\nfixes issue found by Tom",
+    "body": "Attachment [3240_4.patch](tarball://root/attachments/some-uuid/ticket3240/3240_4.patch) by TimothyClemans created at 2008-06-15 04:51:13\n\nfixes issue found by Tom",
     "created_at": "2008-06-15T04:51:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3240",
     "type": "issue_comment",
@@ -261,7 +261,7 @@ archive/issue_comments_022442.json:
 }
 ```
 
-Attachment
+Attachment [3240_4.patch](tarball://root/attachments/some-uuid/ticket3240/3240_4.patch) by TimothyClemans created at 2008-06-15 04:51:13
 
 fixes issue found by Tom
 

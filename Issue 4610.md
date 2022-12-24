@@ -106,7 +106,7 @@ Michael
 archive/issue_comments_034600.json:
 ```json
 {
-    "body": "Attachment",
+    "body": "Attachment [trac_4610_bin.patch](tarball://root/attachments/some-uuid/ticket4610/trac_4610_bin.patch) by gfurnish created at 2008-12-05 04:06:42",
     "created_at": "2008-12-05T04:06:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4610",
     "type": "issue_comment",
@@ -115,7 +115,7 @@ archive/issue_comments_034600.json:
 }
 ```
 
-Attachment
+Attachment [trac_4610_bin.patch](tarball://root/attachments/some-uuid/ticket4610/trac_4610_bin.patch) by gfurnish created at 2008-12-05 04:06:42
 
 
 
